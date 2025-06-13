@@ -4,7 +4,7 @@
     @php
         use Jenssegers\Agent\Agent;
         $agent = new Agent();
-        $displayMovies = $movies;
+        $displayMovies = $agent->isMobile() ? $movies->take(3) : $movies;
         $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
     @endphp
 
