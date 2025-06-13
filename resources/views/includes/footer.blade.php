@@ -100,7 +100,7 @@
      window.addEventListener('load', () => {
          setTimeout(() => {
              document.getElementById('xslider-autoplay')?.classList.add('autoplay-track');
-         }, 1000);
+         }, 3000);
      });
 
      window.onload = function() {
