@@ -16,7 +16,7 @@
                         <div class="xslide-frame xframe-{{ $i + 1 }}">
                             <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['title'] ?? $movie['name'] }}"
                                 loading="{{ $i === 0 ? 'eager' : 'lazy' }}" fetchpriority="{{ $i === 0 ? 'high' : 'auto' }}"
-                                decoding="async" width="364" height="220">
+                                decoding="async" width="428" height="220">
                             <div class="xslide-text">
                                 <h5>{{ $movie['title'] ?? $movie['name'] }}</h5>
                                 <p>{{ \Illuminate\Support\Str::limit($movie['overview'], 100) }}</p>
