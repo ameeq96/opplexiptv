@@ -4,7 +4,7 @@
     @php
         use Jenssegers\Agent\Agent;
         $agent = new Agent();
-        $displayMovies = $agent->isMobile() ? $movies->take(3) : $movies;
+        $displayMovies = $movies;
         $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
     @endphp
 
@@ -20,7 +20,11 @@
                             <div class="xslide-text">
                                 <h5>{{ $movie['title'] ?? $movie['name'] }}</h5>
                                 <p>{{ \Illuminate\Support\Str::limit($movie['overview'], 100) }}</p>
-                                <a href="{{ route('movies') }}" class="xslide-btn">Explore More</a>
+                                <div class="btns-box">
+                                    <a href="{{ route('movies') }}" class="theme-btn btn-style-two">
+                                        <span class="txt">Explore More <i class="lnr lnr-arrow-right"></i></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     @endforeach

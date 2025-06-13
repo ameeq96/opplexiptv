@@ -47,7 +47,7 @@ class HomeController extends Controller
         foreach ($movies as &$movie) {
             if (!empty($movie['backdrop_path'])) {
                 if ($isMobile) {
-                    $movie['webp_image_url'] = $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 428, 220);
+                    $movie['webp_image_url'] = $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 364, 220);
                 } else {
                     $movie['webp_image_url'] = $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 1280, 720);
                 }
