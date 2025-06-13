@@ -11,7 +11,7 @@
     @if ($isMobile)
         <section class="xmobile-slider">
             <div class="xslider-box">
-                <div class="xslide-wrapper autoplay-track">
+                <div class="xslide-wrapper" id="xslider-autoplay">
                     @foreach ($displayMovies as $i => $movie)
                         <div class="xslide-frame xframe-{{ $i + 1 }}">
                             <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['title'] ?? $movie['name'] }}"

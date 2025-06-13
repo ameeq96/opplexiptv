@@ -97,6 +97,12 @@
 
      });
 
+     window.addEventListener('load', () => {
+         setTimeout(() => {
+             document.getElementById('xslider-autoplay')?.classList.add('autoplay-track');
+         }, 1000);
+     });
+
      window.onload = function() {
          const toggle = document.getElementById('resellerToggle');
          const normal = document.getElementById('normalPackages');
