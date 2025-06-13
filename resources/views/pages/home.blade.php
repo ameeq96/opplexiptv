@@ -16,15 +16,11 @@
                         <div class="xslide-frame xframe-{{ $i + 1 }}">
                             <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['title'] ?? $movie['name'] }}"
                                 loading="{{ $i === 0 ? 'eager' : 'lazy' }}" fetchpriority="{{ $i === 0 ? 'high' : 'auto' }}"
-                                decoding="async" width="428" height="220">
+                                decoding="async" width="364" height="220">
                             <div class="xslide-text">
                                 <h5>{{ $movie['title'] ?? $movie['name'] }}</h5>
                                 <p>{{ \Illuminate\Support\Str::limit($movie['overview'], 100) }}</p>
-                                <div class="btns-box">
-                                    <a href="{{ route('movies') }}" class="theme-btn btn-style-two">
-                                        <span class="txt">Explore More <i class="lnr lnr-arrow-right"></i></span>
-                                    </a>
-                                </div>
+                                <a href="{{ route('movies') }}" class="xslide-btn">Explore More</a>
                             </div>
                         </div>
                     @endforeach
