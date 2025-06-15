@@ -3,6 +3,105 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>@yield('title')</title>
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
+
+<style>
+    .xmobile-slider {
+        width: 100%;
+        max-width: 428px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .xslide-frame {
+        width: 100%;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .xslide-frame img {
+        width: 100%;
+        height: auto;
+    }
+
+    .xslide-text {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        color: #fff;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .xslide-text h5 {
+        margin: 0 0 5px;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .xslide-btn,
+    .xslide-text p {
+        color: #fff;
+        font-size: 0.85rem;
+    }
+
+    .xslide-text p {
+        margin: 0 0 10px;
+    }
+
+    .xslide-btn {
+        background: #df0303;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .xslide-dots {
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .xslide-wrapper {
+        display: flex;
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .xslide-wrapper.autoplay-track {
+        animation: 10s ease-in-out infinite autoplaySlider;
+    }
+
+    @keyframes autoplaySlider {
+
+        0%,
+        100%,
+        20%,
+        75% {
+            transform: translateX(0);
+        }
+
+        25%,
+        45% {
+            transform: translateX(-100%);
+        }
+
+        50%,
+        70% {
+            transform: translateX(-200%);
+        }
+    }
+</style>
+<script>
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('xslider-autoplay').classList.add('autoplay-track');
+        }, 3000);
+    });
+</script>
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
 
