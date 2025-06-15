@@ -21,9 +21,7 @@
 <link rel="preload" href="{{ asset('css/font-awesome.css') }}" as="style">
 <link rel="preload" href="{{ asset('css/flaticon.css') }}" as="style">
 <link rel="preload" href="{{ asset('css/animate.css') }}" as="style">
-@if (!$agent->isMobile())
-    <link rel="preload" href="{{ asset('css/owl.css') }}" as="style">
-@endif
+<link rel="preload" href="{{ asset('css/owl.css') }}" as="style">
 <link rel="preload" href="{{ asset('css/swiper.css') }}" as="style">
 <link rel="preload" href="{{ asset('css/linearicons.css') }}" as="style">
 <link rel="preload" href="{{ asset('css/jquery-ui.css') }}" as="style">
@@ -42,9 +40,7 @@
 <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
 <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
 <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-@if (!$agent->isMobile())
-    <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
-@endif
+<link rel="stylesheet" href="{{ asset('css/owl.css') }}">
 <link rel="stylesheet" href="{{ asset('css/swiper.css') }}">
 <link rel="stylesheet" href="{{ asset('css/linearicons.css') }}">
 <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
@@ -62,9 +58,7 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    @if (!$agent->isMobile())
-        <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
-    @endif
+    <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
     <link rel="stylesheet" href="{{ asset('css/swiper.css') }}">
     <link rel="stylesheet" href="{{ asset('css/linearicons.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
