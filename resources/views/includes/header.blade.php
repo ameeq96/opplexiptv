@@ -1,30 +1,32 @@
 <header class="main-header">
 
-    <div class="header-top">
-        <div class="auto-container clearfix">
+    @if (!$agent->isMobile())
+        <div class="header-top">
+            <div class="auto-container clearfix">
 
-            <div class="pull-left">
-                <ul class="info">
-                    <li><a href="https://wa.me/923121108582" target="_blank" rel="noopener noreferrer"><span
-                                class="icon flaticon-maps-and-flags"></span> WhatsApp: +923121108582</a></li>
-                    <li><a href="mailto:info@opplexiptv.com"><span
-                                class="icon flaticon-email-2"></span>Info@opplexiptv.com</a></li>
-                </ul>
+                <div class="pull-left">
+                    <ul class="info">
+                        <li><a href="https://wa.me/923121108582" target="_blank" rel="noopener noreferrer"><span
+                                    class="icon flaticon-maps-and-flags"></span> WhatsApp: +923121108582</a></li>
+                        <li><a href="mailto:info@opplexiptv.com"><span
+                                    class="icon flaticon-email-2"></span>Info@opplexiptv.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="pull-right clearfix">
+                    <ul class="social-box">
+                        <li><a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
+                                target="_blank"></a></li>
+                        <li><a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
+                                target="_blank"></a></li>
+                        <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
+                                rel="noopener noreferrer"></a></li>
+                    </ul>
+                </div>
+
             </div>
-
-            <div class="pull-right clearfix">
-                <ul class="social-box">
-                    <li><a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
-                            target="_blank"></a></li>
-                    <li><a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
-                            target="_blank"></a></li>
-                    <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                            rel="noopener noreferrer"></a></li>
-                </ul>
-            </div>
-
         </div>
-    </div>
+    @endif
 
     <div class="header-lower">
 
