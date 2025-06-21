@@ -1,5 +1,5 @@
 @if ($agent->isMobile())
-    <div class="hero-section-mobile text-center">
+    <section class="hero-section-mobile text-center">
         <div class="auto-container">
             <p class="subtitle">Stream Smarter in Europe!</p>
             <h2 class="heading mb-2">Experience Premium IPTV Services in Italy & Beyond</h2>
@@ -17,7 +17,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
 @else
     <section class="main-slider-two">
         <div class="main-slider-carousel owl-carousel owl-theme">
