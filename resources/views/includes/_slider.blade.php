@@ -5,11 +5,10 @@
                 <div class="col-md-6 text-center text-md-left">
                     <p class="subtitle m-0">Stream Smarter in Europe!</p>
                     <h2>Experience Premium IPTV Services in Italy & Beyond</h2>
-                    <p class="hero-description m-0">
+                    <span class="m-0">
                         Welcome to Opplex IPTV — your ultimate destination for premium IPTV streaming across Italy and
-                        all of Europe.
-                        Enjoy HD quality, 24/7 access, and hundreds of international channels without interruptions.
-                    </p>
+                        all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without interruptions.
+                    </span>
                     <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
                         <a href="{{ route('contact') }}" class="btn btn-dark mr-3 mb-2">
                             START FREE TRIAL <span class="ml-1">↗</span>
