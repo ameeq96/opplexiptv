@@ -1,24 +1,20 @@
 @if ($agent->isMobile())
     <section class="hero-section-mobile text-center">
         <div class="auto-container">
-            <div class="hero-row">
-                <div class="hero-content">
-                    <p class="subtitle">Stream Smarter in Europe!</p>
-                    <h2 class="heading mb-2">Experience Premium IPTV Services in Italy & Beyond</h2>
-                    <span class="description">
-                        Welcome to Opplex IPTV — your ultimate destination for premium IPTV streaming across Italy and
-                        all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without
-                        interruptions.
-                    </span>
-                    <div class="btn-group mt-4">
-                        <a href="{{ route('contact') }}" class="btn btn-primary">
-                            START FREE TRIAL <span>↗</span>
-                        </a>
-                        <a href="#pricing-section" class="btn btn-outline">
-                            SEE PRICING PLANS <span>➤</span>
-                        </a>
-                    </div>
-                </div>
+            <p class="subtitle">Stream Smarter in Europe!</p>
+            <h2 class="heading mb-2">Experience Premium IPTV Services in Italy & Beyond</h2>
+            <span class="description">
+                Welcome to Opplex IPTV — your ultimate destination for premium IPTV streaming across Italy and
+                all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without
+                interruptions.
+            </span>
+            <div class="btn-group mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-primary">
+                    START FREE TRIAL <span>↗</span>
+                </a>
+                <a href="#pricing-section" class="btn btn-outline">
+                    SEE PRICING PLANS <span>➤</span>
+                </a>
             </div>
         </div>
     </section>
