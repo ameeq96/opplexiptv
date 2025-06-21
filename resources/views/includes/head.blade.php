@@ -2,6 +2,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hero-section {
+            padding: 2rem 1rem;
+            background-color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-section .heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section .description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-outline {
+            border: 2px solid #007bff;
+            color: #007bff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
 
     <title>@yield('title')</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
