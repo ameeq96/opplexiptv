@@ -1,5 +1,5 @@
 @if ($agent->isMobile())
-    <section class="hero-section text-center">
+    <section class="hero-section-mobile text-center">
         <div class="auto-container">
             <div class="hero-row">
                 <div class="hero-content">
