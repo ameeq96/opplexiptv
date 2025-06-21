@@ -1,24 +1,24 @@
 @if ($agent->isMobile())
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-left">
-                    <p class="subtitle m-0">Stream Smarter in Europe!</p>
-                    <h2>Experience Premium IPTV Services in Italy & Beyond</h2>
-                    <span class="m-0">
+    <section class="hero-section text-center">
+        <div class="auto-container">
+            <div class="hero-row">
+                <div class="hero-content">
+                    <p class="subtitle">Stream Smarter in Europe!</p>
+                    <h2 class="heading mb-2">Experience Premium IPTV Services in Italy & Beyond</h2>
+                    <span class="description">
                         Welcome to Opplex IPTV — your ultimate destination for premium IPTV streaming across Italy and
-                        all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without interruptions.
+                        all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without
+                        interruptions.
                     </span>
-                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
-                        <a href="{{ route('contact') }}" class="btn btn-dark mr-3 mb-2">
-                            START FREE TRIAL <span class="ml-1">↗</span>
+                    <div class="btn-group mt-4">
+                        <a href="{{ route('contact') }}" class="btn btn-primary">
+                            START FREE TRIAL <span>↗</span>
                         </a>
-                        <a href="#pricing-section" class="btn btn-outline-custom mb-2">
-                            SEE PRICING PLANS <span class="ml-1">➤</span>
+                        <a href="#pricing-section" class="btn btn-outline">
+                            SEE PRICING PLANS <span>➤</span>
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
