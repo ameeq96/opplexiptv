@@ -3,57 +3,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .hero-section {
+        .hero-section-mobile {
             padding: 2rem 1rem;
             background-color: #fff;
+            text-align: center;
+        }
+
+        .hero-section-mobile .container {
             max-width: 600px;
             margin: 0 auto;
         }
 
-        .hero-section .subtitle {
-            font-size: 1rem;
-            font-weight: 500;
-            color: #666;
+        .hero-section-mobile .subtitle {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: #555;
             margin-bottom: 0.5rem;
         }
 
-        .hero-section .heading {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #000;
+        .hero-section-mobile .heading {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #111;
             margin-bottom: 1rem;
         }
 
-        .hero-section .description {
+        .hero-section-mobile .description {
+            margin-top: 1rem;
+            color: #333;
             font-size: 1rem;
             line-height: 1.6;
-            color: #444;
-            margin-bottom: 1.5rem;
         }
 
-        .btn-group {
+        .hero-section-mobile .btn-group {
+            margin-top: 2rem;
             display: flex;
-            gap: 1rem;
             justify-content: center;
+            gap: 1rem;
             flex-wrap: wrap;
         }
 
-        .btn-primary {
-            background-color: #007bff;
-            color: #fff;
-            padding: 0.75rem 1.25rem;
-            border-radius: 5px;
-            text-decoration: none;
+        .hero-section-mobile .btn {
+            padding: 0.75rem 1.5rem;
             font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
         }
 
-        .btn-outline {
+        .hero-section-mobile .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .hero-section-mobile .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .hero-section-mobile .btn-outline {
             border: 2px solid #007bff;
             color: #007bff;
-            padding: 0.75rem 1.25rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
+            background-color: transparent;
+        }
+
+        .hero-section-mobile .btn-outline:hover {
+            background-color: #f0f8ff;
         }
     </style>
 
