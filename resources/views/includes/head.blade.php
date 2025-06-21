@@ -6,21 +6,33 @@
     <title>@yield('title')</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
 
-    @if (!empty($movies[0]['webp_image_url']))
-        <link rel="preload" as="image" href="{{ $movies[0]['webp_image_url'] }}" fetchpriority="high">
+    @if (!empty($displayMovies[0]['webp_image_url']))
+        <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
     @endif
 
     <link rel="preload" href="{{ asset('css/style.css') }}" as="style">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
+        crossorigin>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        media="all">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all">
 
     @php
         $nonCriticalStyles = [
-            'global.css', 'header.css', 'footer.css', 'font-awesome.css', 'flaticon.css',
-            'animate.css', 'owl.css', 'swiper.css', 'linearicons.css', 'jquery-ui.css',
-            'custom-animate.css', 'jquery.fancybox.min.css', 'jquery.mCustomScrollbar.min.css'
+            'global.css',
+            'header.css',
+            'footer.css',
+            'font-awesome.css',
+            'flaticon.css',
+            'animate.css',
+            'owl.css',
+            'swiper.css',
+            'linearicons.css',
+            'jquery-ui.css',
+            'custom-animate.css',
+            'jquery.fancybox.min.css',
+            'jquery.mCustomScrollbar.min.css',
         ];
     @endphp
 
@@ -51,7 +63,7 @@
             dataLayer.push(arguments);
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function() {
             let hasLoaded = false;
 
             function loadGTM() {
@@ -63,14 +75,16 @@
                 script.async = true;
                 document.head.appendChild(script);
 
-                script.onload = function () {
+                script.onload = function() {
                     gtag('js', new Date());
                     gtag('config', 'G-L98JG9ZT7H');
                 };
             }
 
             ['scroll', 'mousemove', 'touchstart'].forEach(event =>
-                window.addEventListener(event, loadGTM, { once: true })
+                window.addEventListener(event, loadGTM, {
+                    once: true
+                })
             );
         });
     </script>
