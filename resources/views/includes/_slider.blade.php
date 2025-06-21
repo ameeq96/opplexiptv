@@ -20,9 +20,6 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 text-center hero-image">
-                    <img src="{{ asset('images/bgmobile.webp') }}" alt="Opplex IPTV Devices" class="img-fluid" />
-                </div>
             </div>
         </div>
     </section>
