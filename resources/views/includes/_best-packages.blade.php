@@ -54,7 +54,7 @@
 
 @endphp
 
-<section class="pricing-section style-two">
+<section class="pricing-section style-two" id="pricing-section">
     <div class="auto-container">
 
         <div class="{{ $containerClass }}">
