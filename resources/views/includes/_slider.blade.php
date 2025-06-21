@@ -1,5 +1,28 @@
 @if ($agent->isMobile())
-    <div id="hero-placeholder"></div>
+    <section class="hero-section-mobile">
+        <div class="container">
+            <p class="subtitle">Stream Smarter in Europe!</p>
+
+            <h2 class="heading">
+                Experience Premium IPTV Services in Italy & Beyond
+            </h2>
+
+            <p class="description">
+                Welcome to <strong>Opplex IPTV</strong> — your ultimate destination for premium IPTV streaming across
+                Italy and all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without
+                interruptions.
+            </p>
+
+            <div class="btn-group">
+                <a href="{{ route('contact') }}" class="btn btn-primary">
+                    START FREE TRIAL <span>↗</span>
+                </a>
+                <a href="#pricing-section" class="btn btn-outline">
+                    SEE PRICING PLANS <span>➤</span>
+                </a>
+            </div>
+        </div>
+    </section>
 @else
     <section class="main-slider-two">
         <div class="main-slider-carousel owl-carousel owl-theme">
