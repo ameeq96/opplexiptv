@@ -1,6 +1,6 @@
 @if ($agent->isMobile())
     <section class="hero-section-mobile text-center">
-        <div class="auto-container">
+        <div class="custom-container-mobile">
             <p class="subtitle">Stream Smarter in Europe!</p>
             <h2 class="heading mb-2">Experience Premium IPTV Services in Italy & Beyond</h2>
             <span class="description">
