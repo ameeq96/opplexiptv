@@ -1,23 +1,28 @@
 @if ($agent->isMobile())
-    <section class="hero-section-mobile text-center">
-        <div class="auto-container">
-            <p class="subtitle">Stream Smarter in Europe!</p>
-            <h2 class="heading mb-2">Experience Premium IPTV Services in Italy & Beyond</h2>
-            <span class="description">
-                Welcome to Opplex IPTV — your ultimate destination for premium IPTV streaming across Italy and
-                all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without
-                interruptions.
-            </span>
-            <div class="btn-group mt-4">
-                <a href="{{ route('contact') }}" class="btn btn-primary">
-                    START FREE TRIAL <span>↗</span>
-                </a>
-                <a href="#pricing-section" class="btn btn-outline">
-                    SEE PRICING PLANS <span>➤</span>
-                </a>
-            </div>
-        </div>
-    </section>
+  <section class="hero-section-mobile text-center" style="padding: 2rem 1rem; background-color: #fff;">
+  <div class="auto-container">
+    <p class="subtitle" style="font-weight: 600; font-size: 1.2rem; color: #555;">Stream Smarter in Europe!</p>
+
+    <h2 class="heading mb-2" style="font-size: 1.6rem; font-weight: bold; color: #111;">
+      Experience Premium IPTV Services in Italy & Beyond
+    </h2>
+
+    <p class="description" style="margin-top: 1rem; color: #333; font-size: 1rem; line-height: 1.6;">
+      Welcome to <strong>Opplex IPTV</strong> — your ultimate destination for premium IPTV streaming across Italy and all of Europe.
+      Enjoy HD quality, 24/7 access, and hundreds of international channels without interruptions.
+    </p>
+
+    <div class="btn-group mt-4" style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="{{ route('contact') }}" class="btn btn-primary" style="padding: 0.75rem 1.5rem; background-color: #007bff; color: white; border-radius: 5px; font-weight: 600; text-decoration: none;">
+        START FREE TRIAL <span style="margin-left: 0.5rem;">↗</span>
+      </a>
+      <a href="#pricing-section" class="btn btn-outline" style="padding: 0.75rem 1.5rem; border: 2px solid #007bff; color: #007bff; border-radius: 5px; font-weight: 600; text-decoration: none;">
+        SEE PRICING PLANS <span style="margin-left: 0.5rem;">➤</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 @else
     <section class="main-slider-two">
         <div class="main-slider-carousel owl-carousel owl-theme">
