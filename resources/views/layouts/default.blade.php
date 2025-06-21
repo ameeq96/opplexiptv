@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 
+@php
+    use Jenssegers\Agent\Agent;
+    $agent = new Agent();
+@endphp
+
 <head>
     @include('includes.head')
 </head>
