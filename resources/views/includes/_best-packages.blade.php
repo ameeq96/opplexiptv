@@ -85,7 +85,7 @@
         <div class="scroll-wrapper normal-wrapper" id="normalPackages">
             @foreach ($packages as $package)
                 <div class="price-block scroll-item">
-                    <div class="inner-box">
+                    <div class="inner-box custom-color">
                         <div class="upper-box"
                             style="{{ !$agent->isMobile() ? 'background-image: url(images/background/pattern-4.webp);' : '' }}">
                             <ul class="icon-list">
