@@ -4,7 +4,7 @@
             <p class="subtitle">Stream Smarter in Europe!</p>
 
             <h2 class="heading">
-                Experience Premium IPTV Services in Italy & Beyond
+                Experience Premium IPTV
             </h2>
 
             <p class="description">
