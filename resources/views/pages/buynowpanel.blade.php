@@ -3,6 +3,12 @@
 @section('content')
 
 @php
+    use Jenssegers\Agent\Agent;
+    $agent = new Agent();
+    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+@endphp
+
+@php
 $packages = [
     [
         'value' => '20_credits_PKR_4399.00',

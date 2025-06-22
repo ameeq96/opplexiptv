@@ -2,6 +2,12 @@
 @section('title', 'IPTV Applications | Opplex IPTV - Best Apps for Streaming IPTV Services')
 @section('content')
 
+@php
+    use Jenssegers\Agent\Agent;
+    $agent = new Agent();
+    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+@endphp
+
     <section class="page-title" style="background-image: url(images/background/10.webp)">
         <div class="auto-container">
             <h2>IPTV Applications</h2>

@@ -2,6 +2,12 @@
 @section('title', 'Frequently Asked Questions | Opplex IPTV - Your IPTV Queries Answered')
 @section('content')
 
+@php
+    use Jenssegers\Agent\Agent;
+    $agent = new Agent();
+    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+@endphp
+
     @php
         $faqs = [
             [

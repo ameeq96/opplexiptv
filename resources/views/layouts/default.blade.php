@@ -5,7 +5,6 @@
     use Jenssegers\Agent\Agent;
     $agent = new Agent();
     $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-
 @endphp
 
 <head>

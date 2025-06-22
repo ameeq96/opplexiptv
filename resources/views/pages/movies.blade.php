@@ -2,7 +2,11 @@
 @section('title', 'Movies | Opplex IPTV - Stream the Latest Movies and Classic Hits')
 @section('content')
 
-
+@php
+    use Jenssegers\Agent\Agent;
+    $agent = new Agent();
+    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+@endphp
 
     <!-- Page Title -->
     <section class="movie-page-section">
