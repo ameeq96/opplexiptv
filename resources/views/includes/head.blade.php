@@ -79,9 +79,6 @@
         <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
     @endif
 
-    <link rel="preload" as="image" href="{{asset('images/icons/service-1.svg')}}">
-    <link rel="preload" as="image" href="{{asset('images/background/pattern-4.webp')}}">
-
     <link rel="preload" href="{{ asset('css/style.css') }}" as="style">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
         crossorigin>
