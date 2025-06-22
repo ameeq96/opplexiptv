@@ -115,11 +115,10 @@
             @endforeach
         </div>
 
-
         <div id="resellerPackages" style="display: none;">
-            <div class="scroll-wrapper row">
+            <div class="scroll-wrapper-reseller reseller-wrapper" style="display: flex; overflow-x: auto; gap: 20px;">
                 @foreach ($resellerPlans as $plan)
-                    <div class="price-block reseller-price-block scroll-item  col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="price-block reseller-price-block scroll-item-reseller" style="min-width: 300px; flex-shrink: 0;">
                         <div class="inner-box custom-color">
                             <div class="upper-box"
                                 style="{{ !$agent->isMobile() ? 'background-image: url(images/background/pattern-4.webp);' : '' }}">
@@ -151,6 +150,7 @@
                 @endforeach
             </div>
         </div>
+
 
 
 
