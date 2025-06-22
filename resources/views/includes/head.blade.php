@@ -53,17 +53,17 @@
         }
 
         .hero-section-mobile .btn-primary {
-            background-color: #007bff;
+            background-color: #df0303;
             color: white;
         }
 
         .hero-section-mobile .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: #df0303;
         }
 
         .hero-section-mobile .btn-outline {
-            border: 2px solid #007bff;
-            color: #007bff;
+            border: 2px solid #df0303;
+            color: #df0303;
             background-color: transparent;
         }
 
