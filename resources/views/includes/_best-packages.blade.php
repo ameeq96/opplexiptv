@@ -120,7 +120,7 @@
             <div class="scroll-wrapper row">
                 @foreach ($resellerPlans as $plan)
                     <div class="price-block reseller-price-block scroll-item  col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
+                        <div class="inner-box custom-color">
                             <div class="upper-box"
                                 style="{{ !$agent->isMobile() ? 'background-image: url(images/background/pattern-4.webp);' : '' }}">
                                 <ul class="icon-list">
