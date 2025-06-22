@@ -90,7 +90,7 @@
                             style="{{ !$agent->isMobile() ? 'background-image: url(images/background/pattern-4.webp);' : '' }}">
                             <ul class="icon-list">
                                 <li><span class="icon"><img src="images/icons/service-1.svg" alt=""
-                                            width="48" height="48" loading="lazy" /></span></li>
+                                            width="48" height="48" /></span></li>
                             </ul>
                             <h4>{{ $package['title'] }}<span>{{ $package['price'] }}</span></h4>
                         </div>
