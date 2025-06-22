@@ -8,12 +8,10 @@
             </h2>
 
             <p class="description">
-                Welcome to <strong>Opplex IPTV</strong> — your ultimate destination for premium IPTV streaming across
-                Italy and all of Europe. Enjoy HD quality, 24/7 access, and hundreds of international channels without
-                interruptions.
+                Welcome to <strong>Opplex IPTV</strong> — your ultimate destination for premium IPTV streaming
             </p>
 
-            <div class="btn-group">
+            <div class="btn-group"> 
                 <a href="{{ route('contact') }}" class="btn btn-primary">
                     START FREE TRIAL <span>↗</span>
                 </a>
