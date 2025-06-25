@@ -10,7 +10,6 @@ h4,
 h5,
 h6,
 p {
-    font-family: var(--font-family-poppins);
     font-display: swap;
 }
 .scroll-to-top,
@@ -1055,7 +1054,6 @@ ul {
     display: inline-grid;
     padding: 14px 36px;
     font-size: var(--font-16);
-    font-family: var(--font-family-poppins);
     text-transform: capitalize;
     font-display: swap;
 }
