@@ -126,6 +126,10 @@
     </noscript>
 
     <script>
+        requestAnimationFrame(() => {
+            document.querySelector('.description').style.willChange = 'transform';
+        });
+
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
