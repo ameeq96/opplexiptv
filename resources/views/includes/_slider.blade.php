@@ -8,7 +8,7 @@
             </h2>
 
             <p class="description">
-                Welcome to <strong>Opplex IPTV</strong> — your ultimate destination for premium IPTV streaming
+                Welcome to Opplex IPTV — your ultimate destination for premium IPTV streaming
             </p>
 
             <div class="btn-group"> 
