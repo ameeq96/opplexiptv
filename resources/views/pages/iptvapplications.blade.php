@@ -28,9 +28,6 @@
                     rather than enterprise-wide methods of empowerment. </p>
 
                 @php
-
-                    $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL);
-
                     $platforms = [
                         'android' => [
                             [
@@ -88,11 +85,14 @@
                         <div class="{{ $platform }} mb-5">
                             <h6 class="mb-2">For {{ ucfirst($platform) }} Devices</h6>
                             @foreach ($apps as $app)
+                                @php
+                                    $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL);
+                                @endphp
                                 <a target="_blank" href="{{ $isExternal ? $app['file'] : 'downloads/' . $app['file'] }}"
                                     class="btn btn-light" keywords="{{ $app['keywords'] }}"
                                     {{ $isExternal ? '' : 'download' }}>
-                                    <img width="40px" src="images/{{ $app['image'] }}" alt="icon"> Download
-                                    {{ $app['version'] }}
+                                    <img width="40px" src="images/{{ $app['image'] }}" alt="icon">
+                                    Download {{ $app['version'] }}
                                 </a>
                             @endforeach
                         </div>
