@@ -52,6 +52,20 @@
                                     'latest-IPTV-smarters-android IPTV-smarters-android-download IPTV-smarters-mobile IPTV-smarters-LCD IPTV-APK-download IPTV-smarters-for-Android IPTV-smarters-for-TV latest-IPTV-APK IPTV-for-Android-TV iptv-samsung-apk',
                             ],
                             [
+                                'version' => 'IPTV Smarters Pro APK 4.0.3 (Latest)',
+                                'file' => 'iptv-smarters-pro-4-0-3.apk',
+                                'image' => 'iptv_smarter.webp',
+                                'keywords' =>
+                                    'latest-IPTV-smarters-android IPTV-smarters-android-download IPTV-smarters-mobile IPTV-smarters-LCD IPTV-APK-download IPTV-smarters-for-Android IPTV-smarters-for-TV latest-IPTV-APK IPTV-for-Android-TV iptv-samsung-apk',
+                            ],
+                            [
+                                'version' => 'Opplex TV App',
+                                'file' => 'OPPLEXTV3.0.apk',
+                                'image' => 'opplextv.webp',
+                                'keywords' =>
+                                    'Opplex-TV-App Opplex-TV-APK-Download Opplex-IPTV-App Opplex-TV-for-Android Opplex-TV-Mobile-Streaming Android-IPTV-Opplex-App',
+                            ],
+                            [
                                 'version' => 'XTV Live APK',
                                 'file' => 'XTVPLAYER3.0.apk',
                                 'image' => 'xtv.webp',
@@ -66,6 +80,13 @@
                                 'image' => 'smarterlite.webp',
                                 'keywords' =>
                                     'latest-IPTV-smarters-iOS IPTV-smarters-iOS-download IPTV-iOS-app IPTV-smarters-iOS-APK-download IPTV-smarters-iOS-app-download IPTV-smarters-for-iPhone IPTV-smarters-for-iPad',
+                            ],
+                            [
+                                'version' => '000 Player (Latest)',
+                                'file' => 'https://apps.apple.com/app/000-player/id1665441224',
+                                'image' => '000.webp',
+                                'keywords' =>
+                                    '000-Player-iOS-download 000-Player-App-Store IPTV-000-player-iPhone 000-player-iPad-app IPTV-iOS-streaming-app',
                             ],
                         ],
                         'windows' => [
