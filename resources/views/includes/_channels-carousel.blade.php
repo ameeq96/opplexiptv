@@ -1,10 +1,20 @@
-<section class="clients-section">
+<section class="clients-section" aria-label="Trusted Brands Using Opplex IPTV">
     <div class="auto-container">
-        <ul class="sponsors-carousel owl-carousel owl-theme">
+        <ul class="sponsors-carousel owl-carousel owl-theme" role="region" aria-label="Client logos carousel">
             @foreach ($logos as $index => $logo)
-                <li>
+                @php
+                    // Extract brand name from filename if possible
+                    $brandName = pathinfo($logo, PATHINFO_FILENAME);
+                    $altText = ucfirst(str_replace(['-', '_'], ' ', $brandName)) . ' logo';
+                @endphp
+                <li role="group" aria-label="Client logo: {{ $altText }}">
                     <div class="image-box">
-                        <div class="wrapper-circle"><img src="{{ asset($logo) }}" alt=""></div>
+                        <div class="wrapper-circle">
+                            <img src="{{ asset($logo) }}"
+                                 alt="{{ $altText }}"
+                                 width="100" height="100"
+                                 loading="lazy" />
+                        </div>
                     </div>
                 </li>
             @endforeach

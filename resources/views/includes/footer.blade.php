@@ -1,26 +1,30 @@
  <!-- Main Footer -->
  <footer class="main-footer">
-     <div class="pattern-layer-one" style="background-image: url(images/background/pattern-12.webp)"></div>
-     <div class="pattern-layer-two" style="background-image: url(images/background/pattern-13.webp)"></div>
+     <div class="pattern-layer-one" style="background-image: url('{{ asset('images/background/pattern-12.webp') }}')">
+     </div>
+     <div class="pattern-layer-two" style="background-image: url('{{ asset('images/background/pattern-13.webp') }}')">
+     </div>
+
      <div class="auto-container">
          <div class="widgets-section">
              <div class="logo">
-                 <img src="images/opplexiptvlogo.webp" alt="Logo" title="" width="386" height="100" />
+                 <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title="" width="386"
+                     height="100" />
              </div>
              <ul class="contact-info-list">
                  <li>
-                     <span class="icon"><img src="images/icons/icon-1.webp" alt="" /></span>
+                     <span class="icon"><img src="{{ asset('images/icons/icon-1.webp') }}" alt="" /></span>
                      {{-- <a href="tel:+3453-909-6565">+3453-909-6565</a> --}}<br>
-                     <a href="tel:+923121108582">+923121108582</a>
+                     <a href="tel:+923121108582">{{ __('messages.footer_phone') }}</a>
                  </li>
                  <li>
-                     <span class="icon"><img src="images/icons/icon-2.webp" alt="" /></span>
-                     <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a><br>
-                     <a href="mailto:support@opplexiptv.com">support@opplexiptv.com</a><br>
+                     <span class="icon"><img src="{{ asset('images/icons/icon-2.webp') }}" alt="" /></span>
+                     <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
+                     <a href="mailto:support@opplexiptv.com">{{ __('messages.footer_email_2') }}</a><br>
                  </li>
                  <li>
-                     <span class="icon"><img src="images/icons/icon-3.webp" alt="" /></span>
-                     <br> Karachi , Pakistan
+                     <span class="icon"><img src="{{ asset('images/icons/icon-3.webp') }}" alt="" /></span>
+                     <br> {{ __('messages.footer_address') }}
                  </li>
              </ul>
 
@@ -41,7 +45,8 @@
      <!-- Footer Bottom -->
      <div class="footer-bottom">
          <div class="auto-container">
-             <div class="copyright">&copy; 2022 - {{ date('Y') }} Opplex IPTV. All Rights Reserved.</div>
+             <div class="copyright">&copy; 2022 - {{ date('Y') }} Opplex IPTV. {{ __('messages.footer_rights') }}
+             </div>
          </div>
      </div>
  </footer>

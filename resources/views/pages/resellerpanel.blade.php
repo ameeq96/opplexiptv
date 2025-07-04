@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'Reseller Panel | Opplex IPTV - Manage Your IPTV Reselling Business')
+@section('title', __('messages.reseller.panel.title'))
 @section('content')
 
     @php
@@ -8,19 +8,21 @@
         $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
     @endphp
 
-    <section class="page-title" style="background-image: url(images/background/7.webp)">
+    <section class="page-title" style="background-image: url('{{ asset('images/background/7.webp') }}')"
+        aria-label="Opplex IPTV Reseller Panel Page Title">
         <div class="auto-container">
-            <h2>Reseller Panel</h2>
-            <ul class="bread-crumb clearfix">
-                <li><a href="/">Home</a></li>
-                <li>Reseller Panel</li>
+            <h2>{{ __('messages.reseller.panel.title') }}</h2>
+            <ul class="bread-crumb clearfix" aria-label="Breadcrumb Navigation">
+                <li><a href="/" aria-label="Go to Home">{{ __('messages.app.breadcrumb.home') }}</a></li>
+                <li aria-current="page">{{ __('messages.reseller.panel.title') }}</li>
             </ul>
         </div>
     </section>
 
-    <!-- START Reseller pricing Section -->
-    @include('includes._reseller-packages')
-    <!-- END Reseller pricing Section -->
+
+    <!-- Pricing Section -->
+    @include('includes._best-packages')
+    <!-- END Pricing Section -->
 
 
     <!-- Start We provide unlimited Section -->
@@ -32,26 +34,58 @@
     <!-- Start Check Trail Section -->
 
     <!-- Services Section Three -->
-    <section class="services-section-three" style="background-image: url(images/background/pattern-6.webp)">
+    <section class="services-section-three" style="background-image: url('{{ asset('images/background/pattern-6.webp') }}')"
+        aria-label="Why Choose Opplex IPTV - HD Streaming, Flexible Subscriptions, Easy Setup, Reliable Service">
         <div class="auto-container">
             <div class="sec-title clearfix">
                 <div class="pull-left">
                     <div class="separator"></div>
-                    <h2>Few Great Reasons Make <br> You Choose us</h2>
+                    <h2>{{ __('messages.reasons.title') }}</h2>
                 </div>
                 <div class="pull-right">
-                    <a href="{{ route('packages') }}" class="theme-btn btn-style-four"><span class="txt">View Services <i
-                                class="lnr lnr-arrow-right"></i></span></a>
+                    <a href="{{ route('packages') }}" class="theme-btn btn-style-four" aria-label="View IPTV plans">
+                        <span class="txt">{{ __('messages.view.services') }} <i class="lnr lnr-arrow-right"></i></span>
+                    </a>
                 </div>
             </div>
             <div class="row clearfix">
-                @foreach ([['icon' => 'flaticon-swimming-pool', 'title' => 'HD Quality Streaming', 'description' => 'Enjoy crystal-clear visuals and immersive audio for an unparalleled viewing experience.'], ['icon' => 'flaticon-5g', 'title' => 'Flexible Packages', 'description' => 'Choose from a variety of packages tailored to your preferences and budget.'], ['icon' => 'flaticon-8k', 'title' => 'Reliable Service', 'description' => 'Experience seamless streaming with minimal downtime.'], ['icon' => 'flaticon-customer-service', 'title' => 'Easy Setup', 'description' => 'Get started quickly and effortlessly with our user-friendly setup process. Choose us for top-notch entertainment at your fingertips!']] as $service)
+                @php
+                    $seoServices = [
+                        [
+                            'icon' => 'flaticon-swimming-pool',
+                            'title' => 'IPTV in HD & 4K Quality',
+                            'description' =>
+                                'Enjoy IPTV streaming with crystal-clear HD and 4K resolution, perfect for movies, sports, and live TV on any device.',
+                        ],
+                        [
+                            'icon' => 'flaticon-5g',
+                            'title' => 'Flexible IPTV Subscriptions',
+                            'description' =>
+                                'Choose from monthly or yearly IPTV plans tailored for France, Italy, and UK users – affordable and easy to upgrade.',
+                        ],
+                        [
+                            'icon' => 'flaticon-8k',
+                            'title' => 'Reliable IPTV Across Europe',
+                            'description' =>
+                                'Stream over 12,000 channels with 99.9% uptime and zero buffering. Ideal for Smart TVs, Firestick, and Android devices.',
+                        ],
+                        [
+                            'icon' => 'flaticon-customer-service',
+                            'title' => 'Easy IPTV Setup on Any Device',
+                            'description' =>
+                                'Start streaming instantly on Smart TV, Firestick, MAG, Android, and iOS – no tech skills needed. Our IPTV setup is beginner-friendly.',
+                        ],
+                    ];
+                @endphp
+
+                @foreach ($seoServices as $service)
                     <div class="facility-block col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="pattern-layer" style="background-image: url(images/background/pattern-14.webp)">
-                            </div>
+                        <div class="inner-box" aria-label="{{ $service['title'] }}">
+                            <div class="pattern-layer"
+                                style="background-image: url('{{ asset('images/background/pattern-14.webp') }}')"></div>
                             <div class="icon-box {{ $service['icon'] }}"></div>
-                            <h5><a href="{{ route('packages') }}">{{ $service['title'] }}</a></h5>
+                            <h5><a href="{{ route('packages') }}"
+                                    aria-label="{{ $service['title'] }}">{{ $service['title'] }}</a></h5>
                             <div class="text">{{ $service['description'] }}</div>
                         </div>
                     </div>
@@ -74,33 +108,47 @@
                 <!--Sponsors Slider-->
                 <ul class="sponsors-carousel owl-carousel owl-theme">
                     <li>
-                        <div class="image-box"><a href="#"><img src="images/resource/1.webp" alt=""></a></div>
+                        <div class="image-box"><a href="#" aria-label="Channel Logo 1"><img
+                                    src="{{ asset('images/resource/1.webp') }}" alt="Channel Logo 1" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box"><a href="#"><img src="images/resource/5.webp" alt=""></a></div>
+                        <div class="image-box"><a href="#" aria-label="Channel Logo 5"><img
+                                    src="{{ asset('images/resource/5.webp') }}" alt="Channel Logo 5" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box ptv-sports"><a href="#"><img src="images/resource/4.webp"
-                                    alt=""></a></div>
+                        <div class="image-box ptv-sports"><a href="#" aria-label="PTV Sports"><img
+                                    src="{{ asset('images/resource/4.webp') }}" alt="PTV Sports Logo" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box ary-digital"><a href="#"><img src="images/resource/3.webp"
-                                    alt=""></a></div>
+                        <div class="image-box ary-digital"><a href="#" aria-label="ARY Digital"><img
+                                    src="{{ asset('images/resource/3.webp') }}" alt="ARY Digital Logo" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box"><a href="#"><img src="images/resource/6.webp" alt=""></a></div>
+                        <div class="image-box"><a href="#" aria-label="Channel Logo 6"><img
+                                    src="{{ asset('images/resource/6.webp') }}" alt="Channel Logo 6" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box star-plus"><a href="#"><img src="images/resource/7.webp"
-                                    alt=""></a></div>
+                        <div class="image-box star-plus"><a href="#" aria-label="Star Plus"><img
+                                    src="{{ asset('images/resource/7.webp') }}" alt="Star Plus Logo" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box"><a href="#"><img src="images/resource/8.webp" alt=""></a></div>
+                        <div class="image-box"><a href="#" aria-label="Channel Logo 8"><img
+                                    src="{{ asset('images/resource/8.webp') }}" alt="Channel Logo 8" loading="lazy"></a>
+                        </div>
                     </li>
                     <li>
-                        <div class="image-box"><a href="#"><img src="images/resource/9.webp" alt=""></a></div>
+                        <div class="image-box"><a href="#" aria-label="Channel Logo 9"><img
+                                    src="{{ asset('images/resource/9.webp') }}" alt="Channel Logo 9" loading="lazy"></a>
+                        </div>
                     </li>
                 </ul>
+
             </div>
 
         </div>
@@ -110,3 +158,27 @@
 
 
 @stop
+
+@section('jsonld')
+    <!-- Reseller Panel JSON-LD -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Opplex IPTV Reseller Panel",
+  "image": "{{ asset('images/icons/service-5.webp') }}",
+  "description": "Join Opplex IPTV’s reseller program and start earning by selling IPTV subscriptions in France, Italy, UK, and across Europe. Instant activation, panel access, and 24/7 support.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Opplex IPTV"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ route('reseller-panel') }}",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "price": "49.99"
+  }
+}
+</script>
+@endsection

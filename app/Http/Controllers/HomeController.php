@@ -18,6 +18,17 @@ class HomeController extends Controller
         $imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
         $posterBaseUrl = "https://image.tmdb.org/t/p/w500";
 
+
+        $locale = app()->getLocale();
+
+        $languageCode = match ($locale) {
+            'fr' => 'fr-FR',
+            'it' => 'it-IT',
+            'ur' => 'ur-PK',
+            default => 'en-US',
+        };
+
+
         $agent = new Agent();
         $isMobile = $agent->isMobile();
 
@@ -36,11 +47,14 @@ class HomeController extends Controller
             return $this->convertToWebp($localPath, 100);
         }, $logos);
 
-        $movies = Cache::remember('trending_movies', now()->addHour(), function () use ($baseUrl, $apiKey) {
-            $response = Http::withoutVerifying()->get("$baseUrl/trending/all/day", [
-                'api_key' => $apiKey,
-            ]);
+        $cacheKey = 'trending_movies_' . $languageCode;
 
+
+
+
+        $moviesUrl = $baseUrl . '/trending/movie/day?api_key=504f8cb78e140a66dc170c28614f2e50&language=' . $languageCode;
+        $movies = Cache::remember($cacheKey, now()->addHour(), function () use ($moviesUrl) {
+            $response = Http::withoutVerifying()->get($moviesUrl);
             return $response->json()['results'] ?? [];
         });
 
@@ -59,17 +73,6 @@ class HomeController extends Controller
 
             $movieId = $movie['id'];
             $mediaType = $movie['media_type'];
-
-            $movie['trailer_url'] = Cache::remember("movie_{$movieId}_trailer", now()->addDay(), function () use ($baseUrl, $mediaType, $movieId, $apiKey) {
-                $trailerResponse = Http::withoutVerifying()->get("$baseUrl/$mediaType/$movieId/videos", [
-                    'api_key' => $apiKey,
-                ]);
-
-                $trailers = $trailerResponse->json()['results'] ?? [];
-                $youtubeTrailer = collect($trailers)->firstWhere('site', 'YouTube');
-
-                return $youtubeTrailer ? "https://www.youtube.com/watch?v={$youtubeTrailer['key']}" : null;
-            });
         }
 
         $movies = collect($movies)->take(10);
@@ -155,35 +158,37 @@ class HomeController extends Controller
         $page = $request->input('page', 1);
         $query = $request->input('search');
 
+        // Get language code based on locale
+        $locale = app()->getLocale();
+        $languageCode = match ($locale) {
+            'fr' => 'fr-FR',
+            'it' => 'it-IT',
+            default => 'en-US',
+        };
+
         $cacheKey = $query
-            ? "search_{$query}_page_{$page}"
-            : "trending_page_{$page}";
+            ? "search_{$query}_page_{$page}_{$locale}"
+            : "trending_page_{$page}_{$locale}";
 
-        $movies = Cache::remember($cacheKey, now()->addHour(), function () use ($baseUrl, $apiKey, $query, $page) {
-            if ($query) {
-                $response = Http::withoutVerifying()->get("$baseUrl/search/multi", [
-                    'api_key' => $apiKey,
-                    'query' => $query,
-                    'page' => $page,
-                ]);
-            } else {
-                $response = Http::withoutVerifying()->get("$baseUrl/trending/all/day", [
-                    'api_key' => $apiKey,
-                    'page' => $page,
-                ]);
-            }
+        // Build the URL like in the home() method
+        $moviesUrl = $query
+            ? $baseUrl . "/search/multi?api_key={$apiKey}&query=" . urlencode($query) . "&page={$page}&language={$languageCode}"
+            : $baseUrl . "/trending/all/day?api_key={$apiKey}&page={$page}&language={$languageCode}";
 
+        // Fetch and cache movies
+        $movies = Cache::remember($cacheKey, now()->addHour(), function () use ($moviesUrl) {
+            $response = Http::withoutVerifying()->get($moviesUrl);
             return $response->json()['results'] ?? [];
         });
 
+        // Add trailer URLs
         foreach ($movies as &$movie) {
             $movieId = $movie['id'];
-            $mediaType = $movie['media_type'];
+            $mediaType = $movie['media_type'] ?? 'movie';
 
-            $movie['trailer_url'] = Cache::remember("movie_{$movieId}_trailer", now()->addDay(), function () use ($baseUrl, $mediaType, $movieId, $apiKey) {
-                $trailerResponse = Http::withoutVerifying()->get("$baseUrl/$mediaType/$movieId/videos", [
-                    'api_key' => $apiKey,
-                ]);
+            $movie['trailer_url'] = Cache::remember("movie_{$movieId}_trailer_{$locale}", now()->addDay(), function () use ($baseUrl, $mediaType, $movieId, $apiKey, $languageCode) {
+                $trailerUrl = "$baseUrl/$mediaType/$movieId/videos?api_key={$apiKey}&language={$languageCode}";
+                $trailerResponse = Http::withoutVerifying()->get($trailerUrl);
 
                 $trailers = $trailerResponse->json()['results'] ?? [];
                 $youtubeTrailer = collect($trailers)->firstWhere('site', 'YouTube');
@@ -192,6 +197,7 @@ class HomeController extends Controller
             });
         }
 
+        // Group filtered results
         $filteredMovies = [
             'movies' => collect($movies)->where('media_type', 'movie'),
             'series' => collect($movies)->where('media_type', 'tv'),
@@ -200,29 +206,24 @@ class HomeController extends Controller
             }),
         ];
 
+        // Cache total pages
         $totalPagesCacheKey = $query
-            ? "search_{$query}_total_pages"
-            : "trending_total_pages";
+            ? "search_{$query}_total_pages_{$locale}"
+            : "trending_total_pages_{$locale}";
 
-        $totalPages = Cache::remember($totalPagesCacheKey, now()->addHour(), function () use ($baseUrl, $apiKey, $query, $page) {
-            if ($query) {
-                $response = Http::withoutVerifying()->get("$baseUrl/search/multi", [
-                    'api_key' => $apiKey,
-                    'query' => $query,
-                    'page' => $page,
-                ]);
-            } else {
-                $response = Http::withoutVerifying()->get("$baseUrl/trending/all/day", [
-                    'api_key' => $apiKey,
-                    'page' => $page,
-                ]);
-            }
+        $totalPages = Cache::remember($totalPagesCacheKey, now()->addHour(), function () use ($baseUrl, $apiKey, $query, $page, $languageCode) {
+            $url = $query
+                ? "$baseUrl/search/multi?api_key={$apiKey}&query=" . urlencode($query) . "&page={$page}&language={$languageCode}"
+                : "$baseUrl/trending/all/day?api_key={$apiKey}&page={$page}&language={$languageCode}";
 
+            $response = Http::withoutVerifying()->get($url);
             return $response->json()['total_pages'] ?? 1;
         });
 
         return view('pages.movies', compact('filteredMovies', 'page', 'totalPages', 'query'));
     }
+
+
 
     public function packages()
     {

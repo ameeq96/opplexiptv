@@ -1,37 +1,35 @@
 @extends('layouts.default')
-@section('title', 'Buy Now | Opplex IPTV - Affordable IPTV Packages, IPTV Smarters Pro, XTV Live & More')
+@section('title', __('messages.buynow.title'))
 @section('content')
 
-@php
-    use Jenssegers\Agent\Agent;
-    $agent = new Agent();
-    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-@endphp
-
     @php
+        use Jenssegers\Agent\Agent;
+        $agent = new Agent();
+        $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+
         $packages = [
             [
                 'value' => 'monthly_PKR_350.00',
-                'label' => 'Monthly PKR 350.00',
+                'label' => __('messages.buynow.packages.monthly'),
             ],
             [
                 'value' => 'half_yearly_PKR_1799.00',
-                'label' => 'Half-Yearly PKR 1799.00',
+                'label' => __('messages.buynow.packages.half_yearly'),
             ],
             [
                 'value' => 'yearly_PKR_3399.00',
-                'label' => 'Yearly PKR 3399.00',
+                'label' => __('messages.buynow.packages.yearly'),
             ],
         ];
     @endphp
 
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url(images/background/10.webp)">
+    <section class="page-title" style="background-image: url('{{ asset('images/background/10.webp') }}')">
         <div class="auto-container">
-            <h2>Buy Packages</h2>
+            <h2>{{ __('messages.buynow.heading') }}</h2>
             <ul class="bread-crumb clearfix">
-                <li><a href="/">Home</a></li>
-                <li>Buy Packages</li>
+                <li><a href="/">{{ __('messages.nav.home') }}</a></li>
+                <li>{{ __('messages.buynow.heading') }}</li>
             </ul>
         </div>
     </section>
@@ -42,32 +40,33 @@
         <div class="auto-container">
             <div class="row clearfix">
 
-                <!-- Map Column -->
                 <div class="map-column col-lg-12 col-md-12 col-sm-12">
                     <div class="inner-column">
-                        <!-- Contact Form Box -->
+
                         <div class="contact-form-box">
-                            <!-- Form Title Box -->
                             <div class="form-title-box">
-                                <h3>Buy IPTV Now</h3>
+                                <h3>{{ __('messages.buynow.form_title') }}</h3>
                             </div>
-                            <!-- Contact Form -->
+
                             <div class="contact-form">
                                 <form method="POST" action="{{ route('buynow.send') }}" id="contact-form">
                                     @csrf
                                     <div class="row clearfix">
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="username" placeholder="Name" required>
+                                            <input type="text" name="username"
+                                                placeholder="{{ __('messages.form.name') }}" required>
                                         </div>
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="email" name="email" placeholder="Email Address" required>
+                                            <input type="email" name="email"
+                                                placeholder="{{ __('messages.form.email') }}" required>
                                         </div>
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <select name="package" required>
-                                                <option value="" disabled selected>Select Package</option>
+                                                <option value="" disabled selected>
+                                                    {{ __('messages.form.select_package') }}</option>
                                                 @foreach ($packages as $pkg)
                                                     <option value="{{ $pkg['value'] }}">{{ $pkg['label'] }}</option>
                                                 @endforeach
@@ -75,18 +74,19 @@
                                         </div>
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="phone" placeholder="Phone" required>
+                                            <input type="text" name="phone"
+                                                placeholder="{{ __('messages.form.phone') }}" required>
                                         </div>
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                             <input type="text" name="captcha"
-                                                placeholder="What is {{ $num1 }} + {{ $num2 }}?" required>
+                                                placeholder="{{ __('messages.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}"
+                                                required>
                                         </div>
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea class="darma" name="message" placeholder="Write Your Message..." required></textarea>
+                                            <textarea class="darma" name="message" placeholder="{{ __('messages.form.message') }}" required></textarea>
                                         </div>
-
 
                                         @if (session('success'))
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -105,8 +105,9 @@
                                         @endif
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-                                            <button class="theme-btn btn-style-four" type="submit" name="submit-form"><span
-                                                    class="txt">Submit Now</span></button>
+                                            <button class="theme-btn btn-style-four" type="submit" name="submit-form">
+                                                <span class="txt">{{ __('messages.form.submit') }}</span>
+                                            </button>
                                         </div>
 
                                     </div>
@@ -114,16 +115,10 @@
                             </div>
 
                         </div>
-                        <!-- End Contact Form Box -->
                     </div>
                 </div>
 
             </div>
-
-
-
         </div>
     </section>
-    <!-- End Contact Page Section -->
-
 @stop

@@ -2,36 +2,36 @@
 @section('title', 'Reseller Panel | Opplex IPTV - Manage Your IPTV Business Easily')
 @section('content')
 
-@php
-    use Jenssegers\Agent\Agent;
-    $agent = new Agent();
-    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-@endphp
+    @php
+        use Jenssegers\Agent\Agent;
+        $agent = new Agent();
+        $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+    @endphp
 
-@php
-$packages = [
-    [
-        'value' => '20_credits_PKR_4399.00',
-        'label' => 'Starter Reseller Package 20 Credits - PKR 4399.00',
-    ],
-    [
-        'value' => '50_credits_PKR_10499.00',
-        'label' => 'Essential Reseller Bundle 50 Credits - PKR 10499.00',
-    ],
-    [
-        'value' => '100_credits_PKR_18999.00',
-        'label' => 'Pro Reseller Suite 100 Credits - PKR 18999.00',
-    ],
-    [
-        'value' => '200_credits_PKR_35999.00',
-        'label' => 'Advanced Reseller Toolkit 200 Credits - PKR 35999.00',
-    ],
-];
-@endphp
+    @php
+        $packages = [
+            [
+                'value' => '20_credits_PKR_4399.00',
+                'label' => 'Starter Reseller Package 20 Credits - PKR 4399.00',
+            ],
+            [
+                'value' => '50_credits_PKR_10499.00',
+                'label' => 'Essential Reseller Bundle 50 Credits - PKR 10499.00',
+            ],
+            [
+                'value' => '100_credits_PKR_18999.00',
+                'label' => 'Pro Reseller Suite 100 Credits - PKR 18999.00',
+            ],
+            [
+                'value' => '200_credits_PKR_35999.00',
+                'label' => 'Advanced Reseller Toolkit 200 Credits - PKR 35999.00',
+            ],
+        ];
+    @endphp
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url(images/background/10.webp)">
+    <section class="page-title" style="background-image: url('{{ asset('images/background/10.webp') }}')">
         <div class="auto-container">
-            <h2>Buy Panel</h2>
+            <h2>{{ __('reseller.heading') }}</h2>
             <ul class="bread-crumb clearfix">
                 <li><a href="/">Home</a></li>
                 <li>Buy Panel</li>
@@ -61,7 +61,8 @@ $packages = [
                                     <div class="row clearfix">
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="username" placeholder="Name" required>
+                                            <input type="text" name="username" placeholder="{{ __('form.name') }}"
+                                                required>
                                         </div>
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -70,11 +71,11 @@ $packages = [
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <select name="package" required>
-                                                <option value="" disabled selected>Select Panel Credits</option>
-                                                @foreach($packages as $package)
+                                                <option value="">{{ __('form.select_panel') }}</option>
+                                                @foreach ($packages as $package)
                                                     <option value="{{ $package['value'] }}">{{ $package['label'] }}</option>
                                                 @endforeach
-                                            </select>                                            
+                                            </select>
                                         </div>
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">

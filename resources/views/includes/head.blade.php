@@ -1,7 +1,48 @@
 <head>
+
+    @php
+
+        $route = Request::route()->getName() ?? 'home';
+        $locale = app()->getLocale();
+
+        $meta = trans("meta.$route");
+
+        $metaTitle = $meta['title'] ?? 'Default Title';
+        $metaDescription = $meta['description'] ?? 'Default Description';
+        $keywords = $meta['keywords'] ?? '';
+    @endphp
+
+    <title>{{ $metaTitle }}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{ $metaDescription }}">
+    <meta name="keywords" content="{{ $keywords }}">
+    <meta name="robots" content="index, follow">
+
+    {{-- OpenGraph / Facebook --}}
+    <meta property="og:title" content="{{ $metaTitle }}">
+    <meta property="og:description" content="{{ $metaDescription }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('images/seo-banner.webp') }}">
+
+    {{-- Twitter Cards --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $metaTitle }}">
+    <meta name="twitter:description" content="{{ $metaDescription }}">
+    <meta name="twitter:image" content="{{ asset('images/seo-banner.webp') }}">
+
+    {{-- Multilingual hreflang (important for Europe targeting) --}}
+    <link rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en') }}" />
+    <link rel="alternate" hreflang="fr" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" />
+    <link rel="alternate" hreflang="it" href="{{ LaravelLocalization::getLocalizedURL('it') }}" />
+    <link rel="alternate" hreflang="x-default"
+        href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
+
+    @yield('jsonld') {{-- For page-specific schema --}}
+
     <style>
         .hero-section-mobile {
             padding: 2rem 1rem;
@@ -22,7 +63,7 @@
         }
 
         .hero-section-mobile .heading {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: bold;
             color: #111;
             margin-bottom: 1rem;
@@ -72,8 +113,11 @@
         }
     </style>
 
-    <title>@yield('title')</title>
+    {{-- Translatable Page Title --}}
+    <title>@yield('title', __('messages.site_title'))</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.webp') }}">
 
     @if (!empty($displayMovies[0]['webp_image_url']))
         <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
@@ -125,6 +169,7 @@
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     </noscript>
 
+    {{-- Google Analytics Load Optimization --}}
     <script>
         window.dataLayer = window.dataLayer || [];
 

@@ -7,9 +7,10 @@
                 <div class="pull-left">
                     <ul class="info">
                         <li><a href="https://wa.me/923121108582" target="_blank" rel="noopener noreferrer"><span
-                                    class="icon flaticon-maps-and-flags"></span> WhatsApp: +923121108582</a></li>
+                                    class="icon flaticon-maps-and-flags"></span> {{ __('messages.header_whatsapp') }}</a>
+                        </li>
                         <li><a href="mailto:info@opplexiptv.com"><span
-                                    class="icon flaticon-email-2"></span>Info@opplexiptv.com</a></li>
+                                    class="icon flaticon-email-2"></span>{{ __('messages.header_email') }}</a></li>
                     </ul>
                 </div>
 
@@ -35,8 +36,8 @@
 
                 <div class="pull-left logo-box">
                     <div class="logo transparent-logo"><a href="/">
-                            <img src="images/opplexiptvlogo.webp" alt="Logo" title="" width="300"
-                                height="78" /> </a>
+                            <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title=""
+                                width="300" height="78" /> </a>
                     </div>
                 </div>
                 <div class="nav-outer clearfix">
@@ -56,25 +57,48 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li class="current dropdown">
-                                    <a class="nav-link home-cls" href="{{ route('home') }}">Home</a>
+                                    <a class="nav-link home-cls"
+                                        href="{{ route('home') }}">{{ __('messages.nav_home') }}</a>
                                 </li>
-                                <li class="dropdown"><a href="{{ route('about') }}">About</a>
+                                <li class="dropdown"><a href="{{ route('about') }}">{{ __('messages.nav_about') }}</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('about') }}">About Us</a></li>
-                                        <li><a href="{{ route('pricing') }}">Pricing</a></li>
-                                        <li><a href="{{ route('movies') }}">Movies/Series</a></li>
+                                        <li><a href="{{ route('about') }}">{{ __('messages.nav_about_us') }}</a></li>
+                                        <li><a href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a></li>
+                                        <li><a href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="{{ route('packages') }}">Services</a>
+                                <li class="dropdown"><a
+                                        href="{{ route('packages') }}">{{ __('messages.nav_services') }}</a>
                                     <ul class="sub-menu">
-                                        <li><a href="{{ route('reseller-panel') }}">Reseller Panel</a></li>
-                                        <li><a href="{{ route('packages') }}">Our Packages</a></li>
+                                        <li><a
+                                                href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a>
+                                        </li>
+                                        <li><a href="{{ route('packages') }}">{{ __('messages.nav_packages') }}</a>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ route('iptv-applications') }}">IPTV Applications</a>
-                                <li><a href="{{ route('faqs') }}">FAQ's</a>
+                                <li><a href="{{ route('iptv-applications') }}">{{ __('messages.nav_iptv_apps') }}</a>
+                                <li><a href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a>
                                 </li>
-                                <li><a href="contact">Contact us</a></li>
+                                <li><a href="contact">{{ __('messages.nav_contact') }}</a></li>
+                                <li class="dropdown language-switcher nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                        role="button" aria-expanded="false">
+                                        {{ LaravelLocalization::getCurrentLocaleNative() }}
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                            <li>
+                                                <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}"
+                                                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                    {{ $properties['native'] }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
 
@@ -92,11 +116,22 @@
 
         <nav class="menu-box">
             <div class="nav-logo"><a href="/">
-                    <img src="images/opplexiptvlogo.webp" alt="Logo" title="" width="300" height="78" />
+                    <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title="" width="300"
+                        height="78" />
                 </a>
                 </a>
             </div>
             <div class="menu-outer">
+                <div class="language-switcher-mobile" style="margin: 15px;">
+                    <select onchange="location = this.value;" class="form-select">
+                        @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                            <option value="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                {{ app()->getLocale() == $localeCode ? 'selected' : '' }}>
+                                {{ $properties['native'] }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
             </div>
         </nav>
     </div>

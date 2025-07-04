@@ -139,6 +139,7 @@ return [
     |
     */
 
+    Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
     'maintenance' => [
         'driver' => 'file',
         // 'store' => 'redis',
@@ -168,6 +169,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+
     ])->toArray(),
 
     /*

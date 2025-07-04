@@ -1,20 +1,20 @@
 @extends('layouts.default')
-@section('title', 'Contact Us | Opplex IPTV - Get in Touch for Support and Inquiries')
-@section('content')
+@section('title', __('messages.contact.title'))
 
-@php
-    use Jenssegers\Agent\Agent;
-    $agent = new Agent();
-    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-@endphp
+@section('content')
+    @php
+        use Jenssegers\Agent\Agent;
+        $agent = new Agent();
+        $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
+    @endphp
 
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url(images/background/10.webp)">
+    <section class="page-title" style="background-image: url('{{ asset('images/background/10.webp') }}')">
         <div class="auto-container">
-            <h2>Contact us</h2>
+            <h2>{{ __('messages.contact.heading') }}</h2>
             <ul class="bread-crumb clearfix">
-                <li><a href="/">Home</a></li>
-                <li>Contact us</li>
+                <li><a href="/">{{ __('messages.contact.breadcrumb.home') }}</a></li>
+                <li>{{ __('messages.contact.breadcrumb.current') }}</li>
             </ul>
         </div>
     </section>
@@ -29,34 +29,41 @@
                 <div class="info-column col-lg-4 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="title-box">
-                            <h4>Contact Details</h4>
+                            <h4>{{ __('messages.contact.details.title') }}</h4>
                         </div>
                         <div class="lower-box">
                             <ul class="info-list">
                                 <li>
                                     <span class="icon flaticon-map"></span></br>
-                                    Karachi, Pakistan
+                                    {{ __('messages.contact.details.location') }}
                                 </li>
                                 <li>
                                     <span class="icon flaticon-call"></span></br>
-                                    <a href="tel:+923121108582">+923121108582</a>
+                                    <a href="tel:+923121108582">{{ __('messages.contact.details.phone') }}</a>
                                 </li>
                                 <li>
                                     <span class="icon flaticon-email-1"></span>
-                                    <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a><br>
-                                    <a href="mailto:support@opplexiptv.com">support@opplexiptv.com</a><br>
+                                    <a href="mailto:info@opplexiptv.com">{{ __('messages.contact.details.email1') }}</a><br>
+                                    <a
+                                        href="mailto:support@opplexiptv.com">{{ __('messages.contact.details.email2') }}</a><br>
                                 </li>
                             </ul>
-                            <div class="timing">Working hours 24/7</div>
+                            <div class="timing">{{ __('messages.contact.details.hours') }}</div>
 
                             <!-- Social Box -->
                             <ul class="social-box">
-                                <li class="facebook"><a href="https://www.facebook.com/profile.php?id=61565476366548"
-                                        class="fa fa-facebook-f" target="_blank"></a></li>
-                                <li class="linkedin"><a href="https://www.linkedin.com/company/digitalize-store/"
-                                        class="fa fa-linkedin" target="_blank"></a></li>
-                                <li class="instagram"><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram"
-                                        target="_blank"></a></li>
+                                <li class="facebook">
+                                    <a href="https://www.facebook.com/profile.php?id=61565476366548"
+                                        class="fa fa-facebook-f" target="_blank"></a>
+                                </li>
+                                <li class="linkedin">
+                                    <a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
+                                        target="_blank"></a>
+                                </li>
+                                <li class="instagram">
+                                    <a href="https://www.instagram.com/oplextv/" class="fa fa-instagram"
+                                        target="_blank"></a>
+                                </li>
                             </ul>
 
                         </div>
@@ -70,33 +77,32 @@
                         <div class="contact-form-box">
                             <!-- Form Title Box -->
                             <div class="form-title-box">
-                                <h3>Send a Message</h3>
+                                <h3>{{ __('messages.contact.form.title') }}</h3>
                             </div>
                             <!-- Contact Form -->
                             <div class="contact-form">
                                 <form method="POST" action="{{ route('contact.send') }}" id="contact-form">
                                     @csrf
                                     <div class="row clearfix">
-
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="username" placeholder="Name" required>
+                                            <input type="text" name="username"
+                                                placeholder="{{ __('messages.contact.form.name') }}" required>
                                         </div>
-
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="email" name="email" placeholder="Email Address" required>
+                                            <input type="email" name="email"
+                                                placeholder="{{ __('messages.contact.form.email') }}" required>
                                         </div>
-
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" placeholder="Phone" required>
+                                            <input type="text" name="phone"
+                                                placeholder="{{ __('messages.contact.form.phone') }}" required>
                                         </div>
-
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="captcha" placeholder="What is {{ $num1 }} + {{ $num2 }}?" required>
+                                            <input type="text" name="captcha"
+                                                placeholder="{{ __('messages.contact.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}"
+                                                required>
                                         </div>
-
-
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea class="darma" name="message" placeholder="Write Your Message..." required></textarea>
+                                            <textarea class="darma" name="message" placeholder="{{ __('messages.contact.form.message') }}" required></textarea>
                                         </div>
 
                                         @if (session('success'))
@@ -116,8 +122,9 @@
                                         @endif
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-                                            <button class="theme-btn btn-style-four" type="submit" name="submit-form"><span
-                                                    class="txt">Submit Now</span></button>
+                                            <button class="theme-btn btn-style-four" type="submit" name="submit-form">
+                                                <span class="txt">{{ __('messages.contact.form.submit') }}</span>
+                                            </button>
                                         </div>
 
                                     </div>
@@ -130,11 +137,20 @@
                 </div>
 
             </div>
-
-
-
         </div>
     </section>
     <!-- End Contact Page Section -->
-
 @stop
+
+@section('jsonld')
+<!-- Contact Page JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Opplex IPTV",
+  "url": "{{ url('contact') }}",
+  "description": "Need help? Contact Opplex IPTV for support with packages, apps, payments, and setup. Available 24/7."
+}
+</script>
+@endsection

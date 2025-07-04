@@ -5,6 +5,11 @@
 
     RewriteEngine On
 
+    # Remove X-Powered-By header for security
+    <IfModule mod_headers.c>
+        Header unset X-Powered-By
+    </IfModule>
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

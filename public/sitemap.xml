@@ -1,67 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://opplexiptv.com/</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/about</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/pricing</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/movies</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/packages</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/reseller-panel</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/iptv-applications</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/faqs</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/contact</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/buynow</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://opplexiptv.com/buy-now-panel</loc>
-  <lastmod>2024-08-24T16:05:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>http://localhost</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/about" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/about" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/about" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/faqs</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/faqs" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/faqs" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/faqs" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/buy-now-panel</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/buy-now-panel" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/buy-now-panel" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/buy-now-panel" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/contact" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/contact" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/contact" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/buynow</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/buynow" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/buynow" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/buynow" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/pricing</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/pricing" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/pricing" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/pricing" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/movies</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/movies" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/movies" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/movies" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/packages</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/packages" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/packages" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/packages" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/reseller-panel</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/reseller-panel" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/reseller-panel" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/reseller-panel" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/iptv-applications</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/iptv-applications" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/iptv-applications" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/iptv-applications" />
+    
+            </url>
+    <url>
+        <loc>http://localhost/trending</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="http://localhost/trending" />
+        <xhtml:link rel="alternate" hreflang="fr" href="http://localhost/fr/trending" />
+        <xhtml:link rel="alternate" hreflang="it" href="http://localhost/it/trending" />
+    
+            </url>
 </urlset>

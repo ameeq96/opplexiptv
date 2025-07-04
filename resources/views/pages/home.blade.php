@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@section('title', 'Opplex IPTV | IPTV Smarters Pro | XTV Live | Opplex TV App | Best IPTV Service')
+@section('title', __('messages.site_title'))
 @section('content')
     @php
         use Jenssegers\Agent\Agent;
@@ -41,3 +41,24 @@
     <!-- Start Check Trail Section -->
 
 @stop
+
+@section('jsonld')
+<!-- Homepage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Opplex IPTV",
+  "url": "{{ route('home') }}",
+  "description": "Stream 12,000+ live channels, 50,000+ movies, and 5,000+ series in HD & 4K. Available across Europe — France, Italy, UK, and more.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Opplex IPTV"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Europe"
+  }
+}
+</script>
+@endsection
