@@ -30,6 +30,7 @@
             @foreach ($displayMovies as $index => $movie)
                 <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"
                     @if ($index !== 0) data-bg="{{ $movie['webp_image_url'] }}" loading="lazy" @endif>
+                    
                     @if ($index === 0)
                         <img src="{{ $movie['webp_image_url'] }}"
                             alt="{{ $movie['title'] ?? $movie['name'] }} - IPTV Movie Poster"
@@ -39,7 +40,16 @@
                     <div class="auto-container custom-height">
                         <div class="content-boxed">
                             <div class="inner-box slider-font">
-                                <h1>{{ $movie['title'] ?? $movie['title'] }}</h1>
+                                @if ($index === 0)
+                                    <h1>
+                                        Watch {{ $movie['title'] ?? 'Our Featured IPTV Content' }} Live in HD
+                                    </h1>
+                                @else
+                                    <h2 class="text-white">
+                                        {{ $movie['title'] ?? 'Featured IPTV Content' }}
+                                    </h2>
+                                @endif
+
                                 <div class="text">
                                     <span class="d-none d-sm-inline">{{ $movie['overview'] }}</span>
                                     <span
