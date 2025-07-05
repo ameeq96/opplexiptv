@@ -12,6 +12,7 @@
         $keywords = $meta['keywords'] ?? '';
     @endphp
 
+    <title>{{ $metaTitle }}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme" content="Opplex IPTV UI Theme">
@@ -114,9 +115,6 @@
             background-color: #f0f8ff;
         }
     </style>
-
-    {{-- Translatable Page Title --}}
-    <title>@yield('title', __('messages.site_title'))</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.webp') }}">
