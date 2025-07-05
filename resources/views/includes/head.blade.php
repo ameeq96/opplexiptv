@@ -60,7 +60,7 @@
 
         .hero-section-mobile .subtitle {
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #555;
             margin-bottom: 0.5rem;
         }
