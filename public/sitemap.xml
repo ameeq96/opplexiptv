@@ -77,11 +77,5 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/iptv-applications" />
     
             </url>
-    <url>
-        <loc>https://opplexiptv.com/trending</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/trending" />
-        <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/trending" />
-        <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/trending" />
-    
-            </url>
+   
 </urlset>
