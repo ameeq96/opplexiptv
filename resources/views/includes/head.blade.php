@@ -2,7 +2,7 @@
 
     @php
 
-        $route = Request::route()->getName() ?? 'home';
+        $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
 
         $meta = trans("meta.$route");

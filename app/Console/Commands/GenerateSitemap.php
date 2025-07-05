@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
@@ -43,7 +44,8 @@ class GenerateSitemap extends Command
 
             $urlItem = Url::create($fullDefaultUrl)
                 ->setPriority(0.8)
-                ->setChangeFrequency('weekly');
+                ->setChangeFrequency('weekly')
+                ->setLastModificationDate(Carbon::now());
 
             // Add hreflang links for all locales, default language WITHOUT prefix
             foreach ($locales as $altLocale) {

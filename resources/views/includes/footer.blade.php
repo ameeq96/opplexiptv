@@ -13,20 +13,26 @@
              </div>
              <ul class="contact-info-list">
                  <li>
-                     <span class="icon"><img src="{{ asset('images/icons/icon-1.webp') }}" alt="" /></span>
-                     {{-- <a href="tel:+3453-909-6565">+3453-909-6565</a> --}}<br>
+                     <span class="icon">
+                         <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" />
+                     </span><br>
                      <a href="tel:+923121108582">{{ __('messages.footer_phone') }}</a>
                  </li>
                  <li>
-                     <span class="icon"><img src="{{ asset('images/icons/icon-2.webp') }}" alt="" /></span>
+                     <span class="icon">
+                         <img src="{{ asset('images/icons/icon-2.webp') }}" alt="Email Icon" />
+                     </span>
                      <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
                      <a href="mailto:support@opplexiptv.com">{{ __('messages.footer_email_2') }}</a><br>
                  </li>
                  <li>
-                     <span class="icon"><img src="{{ asset('images/icons/icon-3.webp') }}" alt="" /></span>
-                     <br> {{ __('messages.footer_address') }}
+                     <span class="icon">
+                         <img src="{{ asset('images/icons/icon-3.webp') }}" alt="Address Icon" />
+                     </span><br>
+                     {{ __('messages.footer_address') }}
                  </li>
              </ul>
+
 
              <!-- Social Box -->
              <ul class="social-box">
