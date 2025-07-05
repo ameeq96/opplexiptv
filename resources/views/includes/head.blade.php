@@ -12,7 +12,6 @@
         $keywords = $meta['keywords'] ?? '';
     @endphp
 
-    <title>{{ $metaTitle }}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme" content="Opplex IPTV UI Theme">
