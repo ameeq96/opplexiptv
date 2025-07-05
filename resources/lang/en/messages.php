@@ -6,7 +6,7 @@ return [
     'description_prefix' => 'Discover premium IPTV in Europe with',
     'description_suffix' => '— streaming Hindi, English, French & Italian content in HD & 4K.',
     'start_trial' => 'Start Free Trial',
-    'see_pricing' => 'See Plans & Pricing',
+    'see_pricing' => 'Activate My IPTV Plan',
     'explore_more' => 'Explore More Movies',
     'pricing_heading' => 'Discover Our Best Packages',
     'show_reseller_packages' => 'Show Reseller Packages',

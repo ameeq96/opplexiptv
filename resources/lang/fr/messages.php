@@ -6,7 +6,7 @@ return [
     'description_prefix' => 'Découvrez l’IPTV premium en Europe avec',
     'description_suffix' => '— films et séries en français, hindi, anglais et italien en HD & 4K.',
     'start_trial' => 'Commencer l’essai gratuit',
-    'see_pricing' => 'Voir les forfaits',
+    'see_pricing' => 'Activer Mon Abonnement IPTV',
     'explore_more' => 'Découvrir plus de films',
 
     'pricing_heading' => 'Découvrez nos meilleurs forfaits',

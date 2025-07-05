@@ -44,7 +44,7 @@
     <link rel="alternate" hreflang="x-default"
         href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
 
-    @yield('jsonld') {{-- For page-specific schema --}}
+    @yield('jsonld')
 
     <style>
         .hero-section-mobile {

@@ -5,12 +5,19 @@
             <div class="auto-container clearfix">
 
                 <div class="pull-left">
-                    <ul class="info">
+                    <ul class="info d-flex justify-content-center align-items-center">
                         <li><a href="https://wa.me/923121108582" target="_blank" rel="noopener noreferrer"><span
                                     class="icon flaticon-maps-and-flags"></span> {{ __('messages.header_whatsapp') }}</a>
                         </li>
-                        <li><a href="mailto:info@opplexiptv.com"><span
-                                    class="icon flaticon-email-2"></span>{{ __('messages.header_email') }}</a></li>
+                        <li>
+                            <marquee behavior="scroll" direction="left" scrollamount="6">
+                                <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="color: #25D366; font-weight: bold; text-decoration: underline;">
+                                    📢 Stay Updated for FREE - Click to Join Our WhatsApp Channel!
+                                </a>
+                            </marquee>
+                        </li>
                     </ul>
                 </div>
 
@@ -27,7 +34,22 @@
 
             </div>
         </div>
+    @else
+        <div class="header-top">
+            <div class="auto-container clearfix">
+                <div class="text-center py-2">
+                    <marquee behavior="scroll" direction="left" scrollamount="6">
+                        <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
+                            rel="noopener noreferrer"
+                            style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
+                            📢 Stay Updated for FREE - Click to Join Our WhatsApp Channel!
+                        </a>
+                    </marquee>
+                </div>
+            </div>
+        </div>
     @endif
+
 
     <div class="header-lower">
 
@@ -85,6 +107,7 @@
                                 <li class="dropdown language-switcher nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                                         role="button" aria-expanded="false">
+                                        <i class="fa fa-language"></i>
                                         {{ LaravelLocalization::getCurrentLocaleNative() }}
                                     </a>
                                     <ul class="dropdown-menu">
@@ -98,7 +121,6 @@
                                         @endforeach
                                     </ul>
                                 </li>
-
                             </ul>
                         </div>
 
@@ -116,8 +138,8 @@
 
         <nav class="menu-box">
             <div class="nav-logo"><a href="/">
-                    <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title="" width="300"
-                        height="78" />
+                    <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title=""
+                        width="300" height="78" />
                 </a>
                 </a>
             </div>
