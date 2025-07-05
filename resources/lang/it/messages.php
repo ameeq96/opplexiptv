@@ -320,5 +320,6 @@ return [
     'reseller_title' => 'Pannello Rivenditore | Opplex IPTV - Gestisci la tua attività di rivendita IPTV',
 
     'movies_title' => 'Movies | Opplex IPTV - Gestisci la tua attività di rivendita IPTV',
+    'whatsapp_channel' => '📢 Rimani aggiornato GRATIS - Clicca per unirti al nostro canale WhatsApp!',
 
 ];

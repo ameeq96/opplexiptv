@@ -106,26 +106,26 @@ return [
 
     'few_reasons' => 'Quelques bonnes raisons de nous choisir',
 
-   'feature_hd' => 'Streaming IPTV en qualité HD & 4K',
-'feature_hd_desc' => 'Regardez vos chaînes IPTV, films et sports préférés en HD et 4K – compatible Smart TV, Android, Firestick.',
+    'feature_hd' => 'Streaming IPTV en qualité HD & 4K',
+    'feature_hd_desc' => 'Regardez vos chaînes IPTV, films et sports préférés en HD et 4K – compatible Smart TV, Android, Firestick.',
 
-'feature_flexible' => 'Abonnements IPTV Flexibles',
-'feature_flexible_desc' => 'Choisissez un forfait mensuel ou annuel adapté à vos besoins – parfait pour les particuliers et revendeurs en Europe.',
+    'feature_flexible' => 'Abonnements IPTV Flexibles',
+    'feature_flexible_desc' => 'Choisissez un forfait mensuel ou annuel adapté à vos besoins – parfait pour les particuliers et revendeurs en Europe.',
 
-'feature_reliable' => 'Service IPTV Fiable en Europe',
-'feature_reliable_desc' => 'Streaming stable avec un taux de disponibilité de 99,9 % – sans coupures, apprécié en France, Belgique, Suisse.',
+    'feature_reliable' => 'Service IPTV Fiable en Europe',
+    'feature_reliable_desc' => 'Streaming stable avec un taux de disponibilité de 99,9 % – sans coupures, apprécié en France, Belgique, Suisse.',
 
-'feature_easy' => 'Installation IPTV Facile',
-'feature_easy_desc' => 'Configuration simple pour Smart TV, Android Box, iOS, MAG – commencez à regarder en quelques minutes.',
+    'feature_easy' => 'Installation IPTV Facile',
+    'feature_easy_desc' => 'Configuration simple pour Smart TV, Android Box, iOS, MAG – commencez à regarder en quelques minutes.',
 
-'feature_multidevice' => 'Compatible Multi-Écrans',
-'feature_multidevice_desc' => 'Regardez IPTV sur TV, mobile, tablette et PC – sans limites, pour toute la famille.',
+    'feature_multidevice' => 'Compatible Multi-Écrans',
+    'feature_multidevice_desc' => 'Regardez IPTV sur TV, mobile, tablette et PC – sans limites, pour toute la famille.',
 
-'feature_support' => 'Assistance IPTV 24h/24',
-'feature_support_desc' => 'Notre équipe de support est disponible 24h/24 via WhatsApp et e-mail pour vous aider à chaque étape.',
+    'feature_support' => 'Assistance IPTV 24h/24',
+    'feature_support_desc' => 'Notre équipe de support est disponible 24h/24 via WhatsApp et e-mail pour vous aider à chaque étape.',
 
-'feature_sports_movies' => 'Sports en direct et films premium',
-'feature_sports_movies_desc' => 'Suivez la Ligue des Champions, UFC, F1, et profitez de milliers de films hollywoodiens et indiens inclus.',
+    'feature_sports_movies' => 'Sports en direct et films premium',
+    'feature_sports_movies_desc' => 'Suivez la Ligue des Champions, UFC, F1, et profitez de milliers de films hollywoodiens et indiens inclus.',
 
     'reseller_starter' => 'Forfait Revendeur Débutant',
     'reseller_essential' => 'Pack Revendeur Essentiel',
@@ -322,6 +322,7 @@ return [
     'reseller_title' => 'Panneau Revendeur | Opplex IPTV - Gérez votre activité de revente IPTV',
 
     'movies_title' => 'Films | Opplex IPTV - Gérez votre activité de revente IPTV',
+    'whatsapp_channel' => '📢 Restez informé GRATUITEMENT - Cliquez pour rejoindre notre chaîne WhatsApp !',
 
 
 ];

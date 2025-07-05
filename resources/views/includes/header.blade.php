@@ -13,9 +13,10 @@
                             <marquee behavior="scroll" direction="left" scrollamount="6">
                                 <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
                                     rel="noopener noreferrer"
-                                    style="color: #25D366; font-weight: bold; text-decoration: underline;">
-                                    📢 Stay Updated for FREE - Click to Join Our WhatsApp Channel!
+                                    style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
+                                    {{ __('messages.whatsapp_channel') }}
                                 </a>
+
                             </marquee>
                         </li>
                     </ul>
@@ -42,8 +43,9 @@
                         <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
                             rel="noopener noreferrer"
                             style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
-                            📢 Stay Updated for FREE - Click to Join Our WhatsApp Channel!
+                            {{ __('messages.whatsapp_channel') }}
                         </a>
+
                     </marquee>
                 </div>
             </div>
