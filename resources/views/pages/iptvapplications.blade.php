@@ -197,11 +197,6 @@
         }
       }
     },
-    "hasMerchantReturnPolicy": {
-    "@type": "MerchantReturnPolicy",
-    "applicableCountry": "PK",
-    "returnPolicyCategory": "NoReturns"
-    }
   }
 }
 </script>
