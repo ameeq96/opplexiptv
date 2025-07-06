@@ -163,29 +163,74 @@
 @stop
 
 @section('jsonld')
-    <!-- FAQ Page JSON-LD -->
-    <script type="application/ld+json">
+   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Can I hide adult channels?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, go to IPTV Smarters Pro settings > Parental Controls and enable password protection."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need a VPN?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Using a VPN is recommended for streaming stability and privacy protection."
-      }
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is Opplex IPTV ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs PKR 350/month and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in Pakistan."
     }
-  ]
+  },{
+    "@type": "Question",
+    "name": "Does Opplex IPTV have a Trial ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, a trial is available for only PKR 50."
+    }
+  },{
+    "@type": "Question",
+    "name": "How to Login Opplex IPTV with Codes ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "When a customer purchases an Opplex IPTV subscription, they receive login codes. The customer needs to enter these codes, along with the provided URL, into the app in the specified fields. Refer to the picture below for better understanding."
+    }
+  },{
+    "@type": "Question",
+    "name": "Sometimes when I watch a movie it keeps buffering ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "This may happen due to low internet speed or high traffic. Pause for 10-15 seconds and then resume playback."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the advantages of IPTV ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "IPTV offers cost-effective and scalable TV service through internet protocol, allowing providers to offer innovative new services."
+    }
+  },{
+    "@type": "Question",
+    "name": "Does Opplex IPTV work on My Laptop/PC ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, Opplex IPTV works on laptops and personal computers."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I Become a Reseller of Opplex IPTV?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, after buying at least 20 credits."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I ask Opplex IPTV if my favorite content is available ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, you can check availability before purchasing."
+    }
+  },{
+    "@type": "Question",
+    "name": "Can I Hide The Adult Or Any Other Section On My IPTV Application ?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Lock/unlock channels on IPTV Smarters Pro by going to Settings > Parental Control, setting a password, and selecting channels to lock or unlock."
+    }
+  }]
 }
 </script>
 @endsection

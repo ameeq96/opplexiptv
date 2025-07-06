@@ -130,81 +130,84 @@
 @stop
 
 @section('jsonld')
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Opplex IPTV Premium Plan",
-  "image": [
-    "https://opplexiptv.com/images/plan.jpg"
-  ],
-  "description": "Opplex IPTV offers 12,000+ live channels, 50,000+ movies and 5,000+ series in HD and 4K.",
-  "sku": "opplex-premium",
-  "brand": {
-    "@type": "Brand",
-    "name": "Opplex"
-  },
-  "review": {
-    "@type": "Review",
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "5",
-      "bestRating": "5"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Areeb Khan"
-    }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "372"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "https://opplexiptv.com/buy-now",
-    "priceCurrency": "USD",
-    "price": "5.00",
-    "priceValidUntil": "2025-12-31",
-    "itemCondition": "https://schema.org/NewCondition",
-    "availability": "https://schema.org/InStock",
-    "offerCount": "1",
-    "shippingDetails": {
-      "@type": "OfferShippingDetails",
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "PK"
-      },
-      "shippingRate": {
-        "@type": "MonetaryAmount",
-        "value": "0.00",
-        "currency": "USD"
-      },
-      "deliveryTime": {
-        "@type": "ShippingDeliveryTime",
-        "handlingTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 1,
-          "unitCode": "d"
-        },
-        "transitTime": {
-          "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 1,
-          "unitCode": "d"
+<script type="application/ld+json">
+@php
+    // Prepara los datos para el JSON-LD
+    $itemList = [];
+    $position = 1;
+    foreach ($platforms as $platform => $apps) {
+        foreach ($apps as $app) {
+            $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL);
+            $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
+            
+            $itemList[] = [
+                "@type" => "SoftwareApplication",
+                "name" => $app['version'],
+                "operatingSystem" => ucfirst($platform),
+                "applicationCategory" => "MultimediaApplication",
+                "downloadUrl" => $downloadUrl,
+                "keywords" => $app['keywords'],
+                "offers" => [
+                    "@type" => "Offer",
+                    "price" => "0",
+                    "priceCurrency" => "USD"
+                ]
+            ];
+            $position++;
         }
-      }
-    },
-    "hasMerchantReturnPolicy": {
-    "@type": "MerchantReturnPolicy",
-    "applicableCountry": "PK",
-    "returnPolicyCategory": "NoReturns"
     }
-  }
+@endphp
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "{{ url('/') }}#organization",
+            "name": "{{ config('app.name', 'IPTV Service Provider') }}",
+            "url": "{{ url('/') }}",
+            "logo": "{{ asset('images/logo.png') }}"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "{{ url('/') }}#website",
+            "url": "{{ url('/') }}",
+            "name": "{{ config('app.name', 'IPTV Service Provider') }}",
+            "publisher": {
+                "@id": "{{ url('/') }}#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "{{ route('app') }}#webpage",
+            "url": "{{ route('app') }}",
+            "name": "{{ __('messages.app.title') }}",
+            "isPartOf": {
+                "@id": "{{ url('/') }}#website"
+            },
+            "breadcrumb": {
+                "@id": "{{ route('app') }}#breadcrumb"
+            },
+            "inLanguage": "{{ app()->getLocale() }}"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "{{ route('app') }}#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "{{ __('messages.app.breadcrumb.home') }}",
+                    "item": "{{ url('/') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "{{ __('messages.app.breadcrumb.current') }}"
+                }
+            ]
+        },
+        @json($itemList)
+    ]
 }
 </script>
-
-
 @endsection

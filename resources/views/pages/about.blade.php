@@ -88,12 +88,12 @@
 @section('jsonld')
     <!-- About Page JSON-LD -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "About Opplex IPTV",
-  "url": "{{ route('about') }}",
-  "description": "Learn about Opplex IPTV – Europe's trusted IPTV provider with flexible packages, 4K streaming, and multi-language support."
-}
-</script>
+        {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Opplex IPTV",
+        "url": "{{ route('about') }}",
+        "description": "Learn about Opplex IPTV - Europe's trusted IPTV provider with flexible packages, 4K streaming, and multi-language support."
+        }
+    </script>
 @endsection
