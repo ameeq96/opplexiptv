@@ -178,20 +178,20 @@
         },
         {
             "@type": "WebPage",
-            "@id": "{{ route('app') }}#webpage",
-            "url": "{{ route('app') }}",
+            "@id": "{{ url()->current() }}#webpage",
+            "url": "{{ url()->current() }}",
             "name": "{{ __('messages.app.title') }}",
             "isPartOf": {
                 "@id": "{{ url('/') }}#website"
             },
             "breadcrumb": {
-                "@id": "{{ route('app') }}#breadcrumb"
+                "@id": "{{ url()->current() }}#breadcrumb"
             },
             "inLanguage": "{{ app()->getLocale() }}"
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "{{ route('app') }}#breadcrumb",
+            "@id": "{{ url()->current() }}#breadcrumb",
             "itemListElement": [
                 {
                     "@type": "ListItem",
