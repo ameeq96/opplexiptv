@@ -203,6 +203,14 @@
                 "applicableCountry": "PK",
                 "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
             },
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "PKR"
+                }
+            },
             "itemOffered": {
                 "@type": "Service",
                 "name": "20 Reseller Credits"
@@ -219,6 +227,14 @@
                 "@type": "MerchantReturnPolicy",
                 "applicableCountry": "PK",
                 "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
+            },
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "PKR"
+                }
             },
             "itemOffered": {
                 "@type": "Service",
@@ -237,6 +253,14 @@
                 "applicableCountry": "PK",
                 "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
             },
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "PKR"
+                }
+            },
             "itemOffered": {
                 "@type": "Service",
                 "name": "100 Reseller Credits"
@@ -253,6 +277,14 @@
                 "@type": "MerchantReturnPolicy",
                 "applicableCountry": "PK",
                 "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
+            },
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "PKR"
+                }
             },
             "itemOffered": {
                 "@type": "Service",
