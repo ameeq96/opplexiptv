@@ -76,7 +76,7 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Opplex IPTV Packages",
-    "image": "{{ asset('images/background/9.webp') }}",
+    "image": "{{ asset('images/opplexiptvlogo.webp') }}",
     "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
     "brand": {
         "@type": "Brand",
