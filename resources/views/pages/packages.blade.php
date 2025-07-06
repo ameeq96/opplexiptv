@@ -55,3 +55,111 @@
     @include('includes._choose-us')
 
 @stop
+
+@section('jsonld')
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "{{ url('/') }}#organization",
+            "name": "{{ config('app.name', 'IPTV Service Provider') }}",
+            "url": "{{ url('/') }}",
+            "logo": "{{ asset('images/logo.png') }}"
+        },
+        {
+            "@type": "WebSite",
+            "@id": "{{ url('/') }}#website",
+            "url": "{{ url('/') }}",
+            "name": "{{ config('app.name', 'IPTV Service Provider') }}",
+            "publisher": {
+                "@id": "{{ url('/') }}#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "{{ url()->current() }}#webpage",
+            "url": "{{ url()->current() }}",
+            "name": "{{ __('messages.heading') }}",
+            "isPartOf": {
+                "@id": "{{ url('/') }}#website"
+            },
+            "breadcrumb": {
+                "@id": "{{ url()->current() }}#breadcrumb"
+            },
+            "inLanguage": "{{ app()->getLocale() }}"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "{{ url()->current() }}#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "{{ __('messages.breadcrumb.home') }}",
+                    "item": "{{ url('/') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "{{ __('messages.breadcrumb.current') }}"
+                }
+            ]
+        },
+        {
+            "@type": "Product",
+            "name": "IPTV Subscription Service",
+            "description": "{{ __('messages.description') }}",
+            "image": "{{ asset('images/background/9.webp') }}",
+            "brand": {
+                "@type": "Organization",
+                "name": "{{ config('app.name', 'IPTV Service Provider') }}"
+            },
+            // Se listan los diferentes planes como "offers" (ofertas)
+            "offers": [
+                {
+                    "@type": "Offer",
+                    "name": "Monthly Plan",
+                    "price": "350",
+                    "priceCurrency": "PKR",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "350",
+                        "priceCurrency": "PKR",
+                        "valueAddedTaxIncluded": true,
+                        "billingIncrement": "P1M" // ISO 8601 duration for 1 month
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Half Yearly Plan",
+                    "price": "1799",
+                    "priceCurrency": "PKR",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "1799",
+                        "priceCurrency": "PKR",
+                        "valueAddedTaxIncluded": true,
+                        "billingIncrement": "P6M" // ISO 8601 duration for 6 months
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Yearly Plan",
+                    "price": "3400",
+                    "priceCurrency": "PKR",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "3400",
+                        "priceCurrency": "PKR",
+                        "valueAddedTaxIncluded": true,
+                        "billingIncrement": "P1Y" // ISO 8601 duration for 1 year
+                    }
+                }
+            ]
+        }
+    ]
+}
+</script>
+@endsection

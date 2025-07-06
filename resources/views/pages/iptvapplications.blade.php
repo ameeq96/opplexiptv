@@ -130,7 +130,7 @@
 @stop
 
 @section('jsonld')
-<script type="application/ld+json">
+    <script type="application/ld+json">
 @php
     // Prepara los datos para el JSON-LD
     $itemList = [];
