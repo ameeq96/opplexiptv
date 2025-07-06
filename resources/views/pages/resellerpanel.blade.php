@@ -197,6 +197,7 @@
             "price": "4399",
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2026-12-31",
             "itemOffered": {
                 "@type": "Service",
                 "name": "20 Reseller Credits"
@@ -208,6 +209,7 @@
             "price": "10499",
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2026-12-31",
             "itemOffered": {
                 "@type": "Service",
                 "name": "50 Reseller Credits"
@@ -219,6 +221,7 @@
             "price": "18999",
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2026-12-31",
             "itemOffered": {
                 "@type": "Service",
                 "name": "100 Reseller Credits"
@@ -230,6 +233,7 @@
             "price": "35999",
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2026-12-31",
             "itemOffered": {
                 "@type": "Service",
                 "name": "200 Reseller Credits"
