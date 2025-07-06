@@ -70,24 +70,26 @@
 @stop
 
 @section('jsonld')
-<!-- Pricing Page JSON-LD -->
+<!-- Pricing Page JSON-LD (Corrected) -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Opplex IPTV Packages",
-    "url": "{{ url()->current() }}",
+    "image": "{{ asset('images/background/9.webp') }}",
     "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
     "brand": {
         "@type": "Brand",
         "name": "Opplex IPTV"
     },
+    "url": "{{ url()->current() }}",
     "offers": [
         {
             "@type": "Offer",
             "name": "Monthly Plan",
             "price": "350",
             "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "price": "350",
@@ -101,6 +103,7 @@
             "name": "Half Yearly Plan",
             "price": "1799",
             "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "price": "1799",
@@ -114,6 +117,7 @@
             "name": "Yearly Plan",
             "price": "3400",
             "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
             "priceSpecification": {
                 "@type": "PriceSpecification",
                 "price": "3400",
