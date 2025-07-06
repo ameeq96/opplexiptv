@@ -132,17 +132,79 @@
 @section('jsonld')
     <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "SoftwareApplication",
-"name": "Opplex IPTV App",
-"operatingSystem": "Android, iOS, Windows",
-"applicationCategory": "MultimediaApplication",
-"downloadUrl": "{{ url('/downloads') }}",
-"aggregateRating": {
-"@type": "AggregateRating",
-"ratingValue": "4.8",
-"reviewCount": "372"
-}
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Opplex IPTV Premium Plan",
+  "image": [
+    "https://opplexiptv.com/images/plan.jpg"
+  ],
+  "description": "Opplex IPTV offers 12,000+ live channels, 50,000+ movies and 5,000+ series in HD and 4K.",
+  "sku": "opplex-premium",
+  "brand": {
+    "@type": "Brand",
+    "name": "Opplex"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Areeb Khan"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "372"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://opplexiptv.com/buy-now",
+    "priceCurrency": "USD",
+    "price": "5.00",
+    "priceValidUntil": "2025-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "offerCount": "1",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "PK"
+      },
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0.00",
+        "currency": "USD"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "d"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "d"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "PK",
+      "returnPolicyCategory": "https://schema.org/NoReturns"
+    }
+  }
 }
 </script>
+
+
 @endsection

@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserClientController;
+use App\Http\Controllers\WhatsAppController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter;
@@ -16,6 +20,23 @@ use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/admin/login', [AdminController::class, 'showLogin'])->name('admin.login');
+Route::get('/admin', [AdminController::class, 'showLogin'])->name('admin.login');
+Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login.submit');
+Route::post('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
+
+Route::middleware('admin')->group(function () {
+    
+    Route::get('/admin/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+
+    Route::get('whatsapp-broadcast', [WhatsAppController::class, 'broadcast'])->name('admin.whatsapp.broadcast');
+
+    Route::resource('clients', UserClientController::class);
+    Route::resource('orders', OrderController::class);
+});
 
 Route::group(
     [
