@@ -198,9 +198,9 @@
       }
     },
     "hasMerchantReturnPolicy": {
-      "@type": "MerchantReturnPolicy",
-      "applicableCountry": "PK",
-      "returnPolicyCategory": "https://schema.org/NoReturns"
+    "@type": "MerchantReturnPolicy",
+    "applicableCountry": "PK",
+    "returnPolicyCategory": "NoReturns"
     }
   }
 }
