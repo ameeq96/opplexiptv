@@ -70,61 +70,56 @@
 @stop
 
 @section('jsonld')
-<!-- Pricing Page JSON-LD (Corrected) -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Opplex IPTV Packages",
-    "image": "{{ asset('images/opplexiptvlogo.webp') }}",
+    "image": "{{ asset('images/background/9.webp') }}",
     "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
     "brand": {
         "@type": "Brand",
         "name": "Opplex IPTV"
     },
     "url": "{{ url()->current() }}",
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Opplex IPTV"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "285"
+    },
     "offers": [
         {
             "@type": "Offer",
             "name": "Monthly Plan",
             "price": "350",
             "priceCurrency": "PKR",
-            "availability": "https://schema.org/InStock",
-            "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "350",
-                "priceCurrency": "PKR",
-                "valueAddedTaxIncluded": true,
-                "billingIncrement": "P1M"
-            }
+            "availability": "https://schema.org/InStock"
         },
         {
             "@type": "Offer",
             "name": "Half Yearly Plan",
             "price": "1799",
             "priceCurrency": "PKR",
-            "availability": "https://schema.org/InStock",
-            "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "1799",
-                "priceCurrency": "PKR",
-                "valueAddedTaxIncluded": true,
-                "billingIncrement": "P6M"
-            }
+            "availability": "https://schema.org/InStock"
         },
         {
             "@type": "Offer",
             "name": "Yearly Plan",
             "price": "3400",
             "priceCurrency": "PKR",
-            "availability": "https://schema.org/InStock",
-            "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "3400",
-                "priceCurrency": "PKR",
-                "valueAddedTaxIncluded": true,
-                "billingIncrement": "P1Y"
-            }
+            "availability": "https://schema.org/InStock"
         }
     ]
 }

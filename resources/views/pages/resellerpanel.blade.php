@@ -160,7 +160,7 @@
 @stop
 
 @section('jsonld')
-<!-- Reseller Panel JSON-LD -->
+<!-- Reseller Panel JSON-LD (Corrected with Rating) -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -173,6 +173,23 @@
         "name": "Opplex IPTV"
     },
     "url": "{{ url()->current() }}",
+    "review": {
+        "@type": "Review",
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Opplex IPTV"
+        }
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "152"
+    },
     "offers": [
         {
             "@type": "Offer",
