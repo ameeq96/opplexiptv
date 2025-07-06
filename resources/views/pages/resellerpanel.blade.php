@@ -160,25 +160,65 @@
 @stop
 
 @section('jsonld')
-    <!-- Reseller Panel JSON-LD -->
-    <script type="application/ld+json">
+<!-- Reseller Panel JSON-LD -->
+<script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Opplex IPTV Reseller Panel",
-  "image": "{{ asset('images/icons/service-5.webp') }}",
-  "description": "Join Opplex IPTV’s reseller program and start earning by selling IPTV subscriptions in France, Italy, UK, and across Europe. Instant activation, panel access, and 24/7 support.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Opplex IPTV"
-  },
-  "offers": {
-    "@type": "Offer",
-    "url": "{{ route('reseller-panel') }}",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "price": "49.99"
-  }
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Opplex IPTV Reseller Panel",
+    "image": "{{ asset('images/icons/service-5.webp') }}",
+    "description": "Join Opplex IPTV’s reseller program and start earning by selling IPTV subscriptions in France, Italy, UK, and across Europe. Instant activation, panel access, and 24/7 support.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Opplex IPTV"
+    },
+    "url": "{{ url()->current() }}",
+    "offers": [
+        {
+            "@type": "Offer",
+            "name": "Starter Reseller Package",
+            "price": "4399",
+            "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "20 Reseller Credits"
+            }
+        },
+        {
+            "@type": "Offer",
+            "name": "Essential Reseller Bundle",
+            "price": "10499",
+            "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "50 Reseller Credits"
+            }
+        },
+        {
+            "@type": "Offer",
+            "name": "Pro Reseller Suite",
+            "price": "18999",
+            "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "100 Reseller Credits"
+            }
+        },
+        {
+            "@type": "Offer",
+            "name": "Advanced Reseller Toolkit",
+            "price": "35999",
+            "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "200 Reseller Credits"
+            }
+        }
+    ]
 }
 </script>
 @endsection

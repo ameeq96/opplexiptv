@@ -70,24 +70,59 @@
 @stop
 
 @section('jsonld')
-    <!-- Pricing Page JSON-LD -->
-    <script type="application/ld+json">
+<!-- Pricing Page JSON-LD -->
+<script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Opplex IPTV Packages",
-  "url": "{{ route('pricing') }}",
-  "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Opplex IPTV"
-  },
-  "offers": {
-    "@type": "AggregateOffer",
-    "lowPrice": "9.99",
-    "highPrice": "59.99",
-    "priceCurrency": "EUR"
-  }
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Opplex IPTV Packages",
+    "url": "{{ url()->current() }}",
+    "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
+    "brand": {
+        "@type": "Brand",
+        "name": "Opplex IPTV"
+    },
+    "offers": [
+        {
+            "@type": "Offer",
+            "name": "Monthly Plan",
+            "price": "350",
+            "priceCurrency": "PKR",
+            "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "350",
+                "priceCurrency": "PKR",
+                "valueAddedTaxIncluded": true,
+                "billingIncrement": "P1M"
+            }
+        },
+        {
+            "@type": "Offer",
+            "name": "Half Yearly Plan",
+            "price": "1799",
+            "priceCurrency": "PKR",
+            "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "1799",
+                "priceCurrency": "PKR",
+                "valueAddedTaxIncluded": true,
+                "billingIncrement": "P6M"
+            }
+        },
+        {
+            "@type": "Offer",
+            "name": "Yearly Plan",
+            "price": "3400",
+            "priceCurrency": "PKR",
+            "priceSpecification": {
+                "@type": "PriceSpecification",
+                "price": "3400",
+                "priceCurrency": "PKR",
+                "valueAddedTaxIncluded": true,
+                "billingIncrement": "P1Y"
+            }
+        }
+    ]
 }
 </script>
 @endsection
