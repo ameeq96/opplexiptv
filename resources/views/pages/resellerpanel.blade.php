@@ -198,6 +198,11 @@
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "PK",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
+            },
             "itemOffered": {
                 "@type": "Service",
                 "name": "20 Reseller Credits"
@@ -210,6 +215,11 @@
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "PK",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
+            },
             "itemOffered": {
                 "@type": "Service",
                 "name": "50 Reseller Credits"
@@ -222,6 +232,11 @@
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "PK",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
+            },
             "itemOffered": {
                 "@type": "Service",
                 "name": "100 Reseller Credits"
@@ -234,6 +249,11 @@
             "priceCurrency": "PKR",
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2026-12-31",
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "PK",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnNonRefundable"
+            },
             "itemOffered": {
                 "@type": "Service",
                 "name": "200 Reseller Credits"
