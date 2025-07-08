@@ -20,7 +20,7 @@ class WhatsAppController extends Controller
             });
         }
 
-        $users = $query->orderBy('name')->get();
+        $users = $query->orderBy('name')->paginate(10);
 
         return view('admin.whatsapp.broadcast', compact('users'));
     }

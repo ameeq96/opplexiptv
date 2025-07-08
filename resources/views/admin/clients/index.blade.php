@@ -12,35 +12,36 @@
     @endif
 
     <div class="card shadow-sm mb-4">
-    <div class="card-body">
-        <div class="row g-2 align-items-center">
-            <div class="col-md-4">
-                <form action="{{ route('clients.index') }}" method="GET">
-                    <div class="input-group">
-                        <input type="text" name="search" value="{{ request('search') }}" class="form-control" placeholder="Search clients...">
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </div>
-                </form>
-            </div>
+        <div class="card-body">
+            <div class="row g-2 align-items-center">
+                <div class="col-md-4">
+                    <form action="{{ route('clients.index') }}" method="GET">
+                        <div class="input-group">
+                            <input type="text" name="search" value="{{ request('search') }}" class="form-control"
+                                placeholder="Search clients...">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
 
-            <div class="col-md-5">
-                <form action="{{ route('clients.import') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <div class="input-group">
-                        <input type="file" name="csv_file" accept=".csv" class="form-control" required>
-                        <button type="submit" class="btn btn-success">Import CSV</button>
-                    </div>
-                </form>
-            </div>
+                <div class="col-md-5">
+                    <form action="{{ route('clients.import') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="input-group">
+                            <input type="file" name="csv_file" accept=".csv" class="form-control" required>
+                            <button type="submit" class="btn btn-success">Import CSV</button>
+                        </div>
+                    </form>
+                </div>
 
-            <div class="col-md-3 text-end pe-md-2">
-                <a href="{{ route('clients.create') }}" class="btn btn-dark">
-                    <i class="bi bi-plus-lg me-1"></i> Add New Client
-                </a>
+                <div class="col-md-3 text-end pe-md-2">
+                    <a href="{{ route('clients.create') }}" class="btn btn-dark">
+                        <i class="bi bi-plus-lg me-1"></i> Add New Client
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <div class="table-responsive">
@@ -50,6 +51,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
+                    <th>Country</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -59,6 +61,7 @@
                         <td>{{ $client->name }}</td>
                         <td>{{ $client->email }}</td>
                         <td>{{ $client->phone }}</td>
+                        <td>{{ $client->country ?? 'N/A' }}</td>
                         <td>
                             <a href="{{ route('clients.edit', $client) }}"
                                 class="btn btn-sm btn-outline-primary me-1">Edit</a>
@@ -72,15 +75,15 @@
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="4" class="text-muted">No clients found.</td>
+                        <td colspan="5" class="text-muted">No clients found.</td>
                     </tr>
                 @endforelse
             </tbody>
         </table>
     </div>
 
-    <div class="mt-3">
-        {{ $clients->withQueryString()->links() }}
+    <div class="mt-3 d-flex justify-content-center flex-column">
+        {{ $clients->appends(request()->query())->links('pagination::bootstrap-5') }}
     </div>
 
 @endsection
