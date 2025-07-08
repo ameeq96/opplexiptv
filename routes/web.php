@@ -27,12 +27,12 @@ Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.logi
 Route::post('/admin/logout', [AdminController::class, 'logout'])->name('admin.logout');
 
 Route::middleware('admin')->group(function () {
-    
-    Route::get('/admin/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('admin.dashboard');
 
-    Route::get('whatsapp-broadcast', [WhatsAppController::class, 'broadcast'])->name('admin.whatsapp.broadcast');
+    Route::get('admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::post('clients/import', [UserClientController::class, 'import'])->name('clients.import');
+
+
+    Route::get('whatsapp-broadcast', [WhatsAppController::class, 'broadcast'])->name('whatsapp.broadcast');
 
     Route::resource('clients', UserClientController::class);
     Route::resource('orders', OrderController::class);

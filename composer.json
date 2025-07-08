@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "mcamara/laravel-localization": "^2.3",
+        "nakanakaii/countries": "^1.0",
         "spatie/laravel-mix-preload": "^1.4",
         "spatie/laravel-sitemap": "^7.3",
         "torann/geoip": "^3.0"

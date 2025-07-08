@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
+use App\Models\Order;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
@@ -35,5 +37,18 @@ class AdminController extends Controller
     {
         Session::forget('admin_id');
         return redirect()->route('admin.login');
+    }
+
+    public function dashboard()
+    {
+        $users = User::count();
+        $orders = Order::count();
+        $admins = Admin::count();
+
+        return view('admin.dashboard', [
+            'users' => $users,
+            'orders' => $orders,
+            'admins' => $admins,
+        ]);
     }
 }
