@@ -159,4 +159,17 @@ class UserClientController extends Controller
 
         return redirect()->route('clients.index')->with('success', "$imported clients imported successfully.");
     }
+
+    public function bulkDelete(Request $request)
+    {
+        $ids = $request->input('client_ids');
+
+        if (!$ids) {
+            return back()->with('success', 'No clients selected.');
+        }
+
+        User::whereIn('id', $ids)->delete();
+
+        return back()->with('success', count($ids) . ' client(s) deleted successfully.');
+    }
 }

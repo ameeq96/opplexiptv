@@ -48,7 +48,7 @@ class OrderController extends Controller
             'payment_method' => 'nullable',
             'custom_payment_method' => 'nullable',
             'expiry_date' => 'nullable|date',
-            'screenshot' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'screenshot' => 'nullable|image',
             'currency' => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR',
         ]);
 
@@ -77,31 +77,51 @@ class OrderController extends Controller
     public function update(Request $request, Order $order)
     {
         $request->validate([
-            'user_id' => 'required|exists:users,id',
-            'package' => 'required',
-            'price' => 'required|numeric',
-            'duration' => 'required|integer',
-            'status' => 'required|in:pending,active,expired',
+            'user_id'   => 'required|exists:users,id',
+            'package'   => 'required',
+            'price'     => 'required|numeric',
+            'duration'  => 'required|integer',
+            'status'    => 'required|in:pending,active,expired',
             'payment_method' => 'nullable',
-            'currency' => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR',
+            'currency'  => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR',
+            'screenshot' => 'nullable|image',
         ]);
 
-        $data = $request->all();
+        $data = $request->except('screenshot');
 
         if ($request->hasFile('screenshot')) {
+            // delete old file
             if ($order->screenshot && Storage::disk('public')->exists($order->screenshot)) {
                 Storage::disk('public')->delete($order->screenshot);
             }
-            $data['screenshot'] = $request->file('screenshot')->store('screenshots', 'public');
+            // store new file
+            $data['screenshot'] = $request->file('screenshot')
+                ->store('screenshots', 'public');
         }
 
         $order->update($data);
-        return redirect()->route('orders.index')->with('success', 'Order updated.');
+
+        return redirect()->route('orders.index')
+            ->with('success', 'Order updated.');
     }
+
 
     public function destroy(Order $order)
     {
         $order->delete();
         return back()->with('success', 'Order deleted.');
+    }
+
+    public function bulkDelete(Request $request)
+    {
+        $ids = $request->input('order_ids', []);
+
+        if (empty($ids)) {
+            return back()->with('success', 'No orders selected.');
+        }
+
+        Order::whereIn('id', $ids)->delete();
+
+        return back()->with('success', count($ids) . ' order(s) deleted successfully.');
     }
 }

@@ -33,6 +33,8 @@ Route::middleware('admin')->group(function () {
 
 
     Route::get('whatsapp-broadcast', [WhatsAppController::class, 'broadcast'])->name('whatsapp.broadcast');
+    Route::delete('clients/bulk-delete', [UserClientController::class, 'bulkDelete'])->name('clients.bulkDelete');
+    Route::delete('orders/bulk-delete', [OrderController::class, 'bulkDelete'])->name('orders.bulkDelete');
 
     Route::resource('clients', UserClientController::class);
     Route::resource('orders', OrderController::class);

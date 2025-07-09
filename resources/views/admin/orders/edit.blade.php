@@ -100,6 +100,25 @@
                         value="{{ $isOther ? $order->payment_method : '' }}" placeholder="Enter other payment method">
                 </div>
 
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="screenshot" class="form-label">Upload New Screenshot</label>
+                        <input type="file" name="screenshot" class="form-control" accept="image/*">
+                        <small class="text-muted">Accepted formats: jpg, jpeg, png | Max size: 2MB</small>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Current Screenshot</label><br>
+                        @if ($order->screenshot)
+                            <img src="{{ asset('storage/' . $order->screenshot) }}" alt="Current Screenshot" width="100"
+                                height="100" style="object-fit: cover; border: 1px solid #ccc; border-radius: 6px;">
+                        @else
+                            <span class="text-muted">No screenshot uploaded.</span>
+                        @endif
+                    </div>
+                </div>
+
+
                 <div class="d-flex justify-content-between mt-4">
                     <a href="{{ route('orders.index') }}" class="btn btn-outline-secondary">Cancel</a>
                     <button type="submit" class="btn btn-dark">Update Order</button>
