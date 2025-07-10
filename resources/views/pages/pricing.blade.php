@@ -72,56 +72,153 @@
 @section('jsonld')
 <script type="application/ld+json">
 {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Opplex IPTV Packages",
-    "image": "{{ asset('images/background/9.webp') }}",
-    "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
-    "brand": {
-        "@type": "Brand",
-        "name": "Opplex IPTV"
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Opplex IPTV Packages",
+  "image": "{{ asset('images/background/9.webp') }}",
+  "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Opplex IPTV"
+  },
+  "url": "{{ url()->current() }}",
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
     },
-    "url": "{{ url()->current() }}",
-    "review": {
-        "@type": "Review",
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+    "author": {
+      "@type": "Organization",
+      "name": "Opplex IPTV"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "285"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Monthly Plan",
+      "price": "350",
+      "priceCurrency": "PKR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/NoReturns"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "PKR"
         },
-        "author": {
-            "@type": "Organization",
-            "name": "Opplex IPTV"
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "PK"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          }
         }
+      }
     },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "285"
-    },
-    "offers": [
-        {
-            "@type": "Offer",
-            "name": "Monthly Plan",
-            "price": "350",
-            "priceCurrency": "PKR",
-            "availability": "https://schema.org/InStock"
+    {
+      "@type": "Offer",
+      "name": "Half Yearly Plan",
+      "price": "1799",
+      "priceCurrency": "PKR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/NoReturns"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "PKR"
         },
-        {
-            "@type": "Offer",
-            "name": "Half Yearly Plan",
-            "price": "1799",
-            "priceCurrency": "PKR",
-            "availability": "https://schema.org/InStock"
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "PK"
         },
-        {
-            "@type": "Offer",
-            "name": "Yearly Plan",
-            "price": "3400",
-            "priceCurrency": "PKR",
-            "availability": "https://schema.org/InStock"
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          }
         }
-    ]
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Yearly Plan",
+      "price": "3400",
+      "priceCurrency": "PKR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/NoReturns"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "PKR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "PK"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          }
+        }
+      }
+    }
+  ]
 }
 </script>
 @endsection
+

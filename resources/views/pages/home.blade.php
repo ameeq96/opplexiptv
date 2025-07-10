@@ -46,46 +46,76 @@
     <!-- Homepage JSON-LD -->
     <script type="application/ld+json">
 {
-  "@context": "https://schema.org/", 
-  "@type": "Product", 
-  "name": "Opplex IPTV",
-  "image": "https://opplexiptv.com/images/opplexiptvlogo.webp",
-  "description": "Opplex IPTV offers a premium streaming service with over 20,000 live TV channels and more than 100,000 VOD (Video on Demand) options, including the latest movies and series. The service is compatible with all devices and operating systems and features 4K, FHD, and HD picture quality. It includes an Anti-Freeze system for stable viewing and provides 24/7 customer support.",
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Opplex IPTV Packages",
+  "image": "https://opplexiptv.com/images/background/9.webp",
+  "description": "Affordable IPTV pricing with HD & 4K streaming. Monthly and yearly plans with access to 12,000+ channels and 50,000+ VOD content.",
   "brand": {
     "@type": "Brand",
     "name": "Opplex IPTV"
   },
-  "sku": "5434534534",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://opplexiptv.com",
-    "priceCurrency": "USD",
-    "price": "2",
-    "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "bestRating": "5",
-    "worstRating": "1",
-    "ratingCount": "1",
-    "reviewCount": "1"
-  },
+  "url": "https://opplexiptv.com/pricing",
   "review": {
     "@type": "Review",
-    "name": "Giulia Romano",
-    "reviewBody": "Great service! I watch Netflix, Prime Video, and Italian series all in one place via IPTV.",
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "5",
-      "bestRating": "5",
-      "worstRating": "1"
+      "bestRating": "5"
     },
-    "datePublished": "2025-07-01",
-    "author": {"@type": "Person", "name": "Giulia Romano"},
-    "publisher": {"@type": "Organization", "name": "Opplex IPTV"}
-  }
+    "author": {
+      "@type": "Organization",
+      "name": "Opplex IPTV"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "285"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Monthly Plan",
+      "price": "350",
+      "priceCurrency": "PKR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2025-12-31",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "returnPolicyCategory": "https://schema.org/NoReturns"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "PKR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "PK"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          }
+        }
+      }
+    }
+  ]
 }
+
+
 </script>
 @endsection
