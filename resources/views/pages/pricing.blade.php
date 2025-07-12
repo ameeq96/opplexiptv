@@ -70,7 +70,7 @@
 @stop
 
 @section('jsonld')
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -109,8 +109,10 @@
       "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
       "hasMerchantReturnPolicy": {
         "@type": "MerchantReturnPolicy",
-        "returnPolicyCategory": "https://schema.org/NoReturns"
-      },
+        "returnPolicyCategory": "NoReturns",
+        "applicableCountry": "PK"
+      }
+
       "shippingDetails": {
         "@type": "OfferShippingDetails",
         "shippingRate": {
@@ -221,4 +223,3 @@
 }
 </script>
 @endsection
-
