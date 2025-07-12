@@ -29,19 +29,50 @@
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="user_id" class="form-label">Client</label>
-                        <select name="user_id" class="form-select" required>
+                        <select name="user_id" class="form-select select2" required>
                             @foreach ($clients as $client)
                                 <option value="{{ $client->id }}" {{ $order->user_id == $client->id ? 'selected' : '' }}>
                                     {{ $client->name }} ({{ $client->phone }})
                                 </option>
                             @endforeach
                         </select>
+
                     </div>
 
                     <div class="col-md-6">
                         <label for="package" class="form-label">Package Name</label>
-                        <input type="text" name="package" class="form-control" value="{{ $order->package }}" required>
+                        <select name="package" class="form-select" required>
+                            <option value="">-- Select Package --</option>
+                            <optgroup label="Opplex IPTV">
+                                <option value="1 Month Opplex IPTV Account"
+                                    {{ $order->package == '1 Month Opplex IPTV Account' ? 'selected' : '' }}>1 Month
+                                </option>
+                                <option value="3 Months Opplex IPTV Account"
+                                    {{ $order->package == '3 Months Opplex IPTV Account' ? 'selected' : '' }}>3 Months
+                                </option>
+                                <option value="6 Months Opplex IPTV Account"
+                                    {{ $order->package == '6 Months Opplex IPTV Account' ? 'selected' : '' }}>6 Months
+                                </option>
+                                <option value="12 Months Opplex IPTV Account"
+                                    {{ $order->package == '12 Months Opplex IPTV Account' ? 'selected' : '' }}>12 Months
+                                </option>
+                            </optgroup>
+                            <optgroup label="Starshare">
+                                <option value="1 Month Starshare Account"
+                                    {{ $order->package == '1 Month Starshare Account' ? 'selected' : '' }}>1 Month</option>
+                                <option value="3 Months Starshare Account"
+                                    {{ $order->package == '3 Months Starshare Account' ? 'selected' : '' }}>3 Months
+                                </option>
+                                <option value="6 Months Starshare Account"
+                                    {{ $order->package == '6 Months Starshare Account' ? 'selected' : '' }}>6 Months
+                                </option>
+                                <option value="12 Months Starshare Account"
+                                    {{ $order->package == '12 Months Starshare Account' ? 'selected' : '' }}>12 Months
+                                </option>
+                            </optgroup>
+                        </select>
                     </div>
+
                 </div>
 
                 <div class="row mb-3">
@@ -53,6 +84,7 @@
 
                             <select name="currency" class="form-select" style="max-width: 120px;">
                                 <option value="PKR" {{ $order->currency == 'PKR' ? 'selected' : '' }}>PKR</option>
+                                <option value="CAD" {{ $order->currency == 'CAD' ? 'selected' : '' }}>CAD</option>
                                 <option value="USD" {{ $order->currency == 'USD' ? 'selected' : '' }}>USD</option>
                                 <option value="AED" {{ $order->currency == 'AED' ? 'selected' : '' }}>AED</option>
                                 <option value="EUR" {{ $order->currency == 'EUR' ? 'selected' : '' }}>EUR</option>
@@ -102,6 +134,18 @@
 
                 <div class="row mb-3">
                     <div class="col-md-6">
+                        <label for="buying_date" class="form-label">Buying Date</label>
+                        <input type="date" name="buying_date" class="form-control"
+                            value="{{ old('buying_date', $order->buying_date) }}" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="expiry_date" class="form-label">Subscription Expiry Date</label>
+                        <input type="date" name="expiry_date" class="form-control"
+                            value="{{ old('expiry_date', $order->expiry_date) }}">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
                         <label for="screenshot" class="form-label">Upload New Screenshot</label>
                         <input type="file" name="screenshot" class="form-control" accept="image/*">
                         <small class="text-muted">Accepted formats: jpg, jpeg, png | Max size: 2MB</small>
@@ -110,8 +154,9 @@
                     <div class="col-md-6">
                         <label class="form-label">Current Screenshot</label><br>
                         @if ($order->screenshot)
-                            <img src="{{ asset('storage/' . $order->screenshot) }}" alt="Current Screenshot" width="100"
-                                height="100" style="object-fit: cover; border: 1px solid #ccc; border-radius: 6px;">
+                            <img src="{{ asset('storage/' . $order->screenshot) }}" alt="Current Screenshot"
+                                width="100" height="100"
+                                style="object-fit: cover; border: 1px solid #ccc; border-radius: 6px;">
                         @else
                             <span class="text-muted">No screenshot uploaded.</span>
                         @endif

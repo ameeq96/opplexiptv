@@ -7,12 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <style>
         body {
             margin: 0;
+        }
+
+        .select2-container--default .select2-selection--single {
+            height: 38px;
+            padding: 6px 8px;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 38px;
+            right: 6px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: inherit;
         }
 
         .sidebar {
@@ -131,7 +148,6 @@
     </div>
 
     <script>
-        
         document.getElementById('checkAll')?.addEventListener('click', function() {
             document.querySelectorAll('input[name="client_ids[]"], input[name="order_ids[]"]')
                 .forEach(cb => cb.checked = this.checked);
@@ -149,20 +165,6 @@
             document.getElementById('sidebar').classList.remove('show');
             document.getElementById('sidebar-overlay').style.display = 'none';
         }
-
-        const phoneInput = document.querySelector("#phone");
-
-        const iti = window.intlTelInput(phoneInput, {
-            initialCountry: "pk",
-            separateDialCode: false,
-            nationalMode: false,
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
-        });
-
-        const form = phoneInput.closest('form');
-        form.addEventListener('submit', function() {
-            phoneInput.value = iti.getNumber();
-        });
 
         function toggleOtherField() {
             const select = document.getElementById('payment_method');
@@ -187,6 +189,13 @@
                 window.open(a.href, '_blank');
             });
         }
+
+        $(document).ready(function() {
+            $('.select2').select2({
+                placeholder: "Select a client",
+                allowClear: true
+            });
+        });
     </script>
 
 </body>

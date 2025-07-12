@@ -21,7 +21,7 @@
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="user_id" class="form-label">Client</label>
-                        <select name="user_id" class="form-select" required>
+                        <select name="user_id" class="form-select select2" required>
                             <option value="">Select Client</option>
                             @foreach ($clients as $client)
                                 <option value="{{ $client->id }}">
@@ -33,8 +33,23 @@
 
                     <div class="col-md-6">
                         <label for="package" class="form-label">Package Name</label>
-                        <input type="text" name="package" class="form-control" required>
+                        <select name="package" class="form-select" required>
+                            <option value="">-- Select Package --</option>
+                            <optgroup label="Opplex IPTV">
+                                <option value="1 Month Opplex IPTV Account">1 Month</option>
+                                <option value="3 Months Opplex IPTV Account">3 Months</option>
+                                <option value="6 Months Opplex IPTV Account">6 Months</option>
+                                <option value="12 Months Opplex IPTV Account">12 Months</option>
+                            </optgroup>
+                            <optgroup label="Starshare">
+                                <option value="1 Month Starshare Account">1 Month</option>
+                                <option value="3 Months Starshare Account">3 Months</option>
+                                <option value="6 Months Starshare Account">6 Months</option>
+                                <option value="12 Months Starshare Account">12 Months</option>
+                            </optgroup>
+                        </select>
                     </div>
+
                 </div>
 
                 <div class="row mb-3">
@@ -44,6 +59,7 @@
                             <input type="number" step="0.01" name="price" class="form-control" required>
                             <select name="currency" class="form-select" style="max-width: 120px;">
                                 <option value="PKR">PKR</option>
+                                <option value="CAD">CAD</option>
                                 <option value="USD">USD</option>
                                 <option value="AED">AED</option>
                                 <option value="EUR">EUR</option>
@@ -103,6 +119,13 @@
                         <input type="date" name="expiry_date" class="form-control"
                             value="{{ old('expiry_date', $order->expiry_date ?? '') }}">
                     </div>
+
+                    <div class="col-md-6">
+                        <label for="buying_date" class="form-label">Buying Date</label>
+                        <input type="date" name="buying_date" class="form-control" value="{{ old('buying_date') }}"
+                            required>
+                    </div>
+
 
                     <div class="col-md-6">
                         <label for="screenshot" class="form-label">Upload Screenshot</label>

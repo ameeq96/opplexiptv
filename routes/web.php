@@ -1,14 +1,10 @@
 <?php
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\UserClientController;
-use App\Http\Controllers\WhatsAppController;
+use App\Http\Controllers\{AdminController, HomeController, OrderController, UserClientController, WhatsAppController};
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter;
-use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
+use Illuminate\Support\Facades\Artisan;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +35,11 @@ Route::middleware('admin')->group(function () {
     Route::resource('clients', UserClientController::class);
     Route::resource('orders', OrderController::class);
 });
+
+Route::get('storage-link', function () {
+    Artisan::call('storage:link');
+    return 'Storage link created successfully.';
+})->middleware('auth');
 
 Route::group(
     [

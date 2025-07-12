@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Admin;
-use App\Models\Order;
-use App\Models\User;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Session;
+use App\Models\{Admin, Order, User};
+use Illuminate\Support\Facades\{Hash, Session};
 use Illuminate\Http\Request;
 
 class AdminController extends Controller

@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Order;
-use App\Models\User;
+use App\Models\{Order, User};
 use Illuminate\Support\Facades\Storage;
 
 class OrderController extends Controller
@@ -48,9 +47,11 @@ class OrderController extends Controller
             'payment_method' => 'nullable',
             'custom_payment_method' => 'nullable',
             'expiry_date' => 'nullable|date',
+            'buying_date' => 'required|date',
             'screenshot' => 'nullable|image',
-            'currency' => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR',
+            'currency' => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
         ]);
+
 
         $data = $request->all();
 
@@ -83,7 +84,8 @@ class OrderController extends Controller
             'duration'  => 'required|integer',
             'status'    => 'required|in:pending,active,expired',
             'payment_method' => 'nullable',
-            'currency'  => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR',
+            'currency'  => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
+            'buying_date' => 'required|date',
             'screenshot' => 'nullable|image',
         ]);
 
@@ -104,7 +106,6 @@ class OrderController extends Controller
         return redirect()->route('orders.index')
             ->with('success', 'Order updated.');
     }
-
 
     public function destroy(Order $order)
     {
