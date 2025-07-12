@@ -29,7 +29,6 @@ class OrderController extends Controller
         return view('admin.orders.index', compact('orders'));
     }
 
-
     public function create()
     {
         $clients = User::orderBy('name')->get();

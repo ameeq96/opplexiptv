@@ -39,12 +39,14 @@ class AdminController extends Controller
     public function dashboard()
     {
         $users = User::count();
-        $orders = Order::count();
+        $activeOrders = Order::where("status", "active")->count();
+        $expiredOrders = Order::where("status", "expired")->count();
         $admins = Admin::count();
 
         return view('admin.dashboard', [
             'users' => $users,
-            'orders' => $orders,
+            'activeOrders' => $activeOrders,
+            'expiredOrders' => $expiredOrders,
             'admins' => $admins,
         ]);
     }

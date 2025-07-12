@@ -39,7 +39,7 @@ Route::middleware('admin')->group(function () {
 Route::get('storage-link', function () {
     Artisan::call('storage:link');
     return 'Storage link created successfully.';
-})->middleware('auth');
+});
 
 Route::group(
     [
