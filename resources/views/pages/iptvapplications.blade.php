@@ -109,7 +109,7 @@
                             </h6>
                             @foreach ($apps as $app)
                                 @php $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL); @endphp
-                                <a target="_blank" href="{{ $isExternal ? $app['file'] : 'downloads/' . $app['file'] }}"
+                                <a target="_blank" href="{{ $isExternal ? $app['file'] : asset('downloads/' . $app['file']) }}"
                                     class="btn btn-light" keywords="{{ $app['keywords'] }}"
                                     aria-label="Download {{ $app['version'] }} for {{ ucfirst($platform) }}"
                                     {{ $isExternal ? '' : 'download' }}>
