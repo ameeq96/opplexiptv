@@ -56,8 +56,9 @@ class OrderController extends Controller
 
         if ($request->hasFile('screenshot')) {
             $file = $request->file('screenshot');
-            $path = $file->store('screenshots', 'public');
-            $data['screenshot'] = $path;
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('screenshots'), $filename);
+            $data['screenshot'] = 'screenshots/' . $filename;
         }
 
         if (($data['payment_method'] ?? null) === 'other') {
@@ -91,14 +92,17 @@ class OrderController extends Controller
         $data = $request->except('screenshot');
 
         if ($request->hasFile('screenshot')) {
-            // delete old file
-            if ($order->screenshot && Storage::disk('public')->exists($order->screenshot)) {
-                Storage::disk('public')->delete($order->screenshot);
+            $oldPath = public_path($order->screenshot);
+            if ($order->screenshot && file_exists($oldPath)) {
+                unlink($oldPath);
             }
-            // store new file
-            $data['screenshot'] = $request->file('screenshot')
-                ->store('screenshots', 'public');
+
+            $file = $request->file('screenshot');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('screenshots'), $filename);
+            $data['screenshot'] = 'screenshots/' . $filename;
         }
+
 
         $order->update($data);
 

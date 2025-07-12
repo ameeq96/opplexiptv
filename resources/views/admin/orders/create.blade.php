@@ -136,7 +136,7 @@
                 @if (isset($order) && $order->screenshot)
                     <div class="mb-3">
                         <p class="mb-1">Current Screenshot:</p>
-                        <img src="{{ asset('storage/' . $order->screenshot) }}" width="150">
+                        <img src="{{ asset($order->screenshot) }}" width="150">
                     </div>
                 @endif
 

@@ -154,7 +154,7 @@
                     <div class="col-md-6">
                         <label class="form-label">Current Screenshot</label><br>
                         @if ($order->screenshot)
-                            <img src="{{ asset('storage/' . $order->screenshot) }}" alt="Current Screenshot"
+                            <img src="{{ asset($order->screenshot) }}" alt="Current Screenshot"
                                 width="100" height="100"
                                 style="object-fit: cover; border: 1px solid #ccc; border-radius: 6px;">
                         @else

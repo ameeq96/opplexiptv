@@ -77,7 +77,7 @@
                             <td>{{ ucfirst($order->payment_method) }}</td>
                             <td>
                                 @if ($order->screenshot)
-                                    <img src="{{ asset('storage/' . $order->screenshot) }}" alt="Screenshot" width="50"
+                                    <img src="{{ asset($order->screenshot) }}" alt="Screenshot" width="50"
                                         height="50" style="object-fit: cover; border-radius: 4px;">
                                 @else
                                     <span class="text-muted">N/A</span>
