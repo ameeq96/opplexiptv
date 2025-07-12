@@ -50,6 +50,8 @@
                         <th>Price</th>
                         <th>Status</th>
                         <th>Payment</th>
+                        <th>Buying Date</th>
+                        <th>Expiry Date</th>
                         <th>Screenshot</th>
                         <th>Actions</th>
                     </tr>
@@ -75,6 +77,15 @@
                                 </span>
                             </td>
                             <td>{{ ucfirst($order->payment_method) }}</td>
+                            <td>{{ \Carbon\Carbon::parse($order->buying_date)->format('d M Y') }}</td>
+                            <td>
+                                @if ($order->expiry_date)
+                                    {{ \Carbon\Carbon::parse($order->expiry_date)->format('d M Y') }}
+                                @else
+                                    <span class="text-muted">N/A</span>
+                                @endif
+                            </td>
+
                             <td>
                                 @if ($order->screenshot)
                                     <img src="{{ asset($order->screenshot) }}" alt="Screenshot" width="50"
@@ -83,7 +94,7 @@
                                     <span class="text-muted">N/A</span>
                                 @endif
                             </td>
-                            <td>
+                            <td class="d-flex pt-3 align-items-center justify-content-center">
                                 <a href="{{ route('orders.edit', $order) }}" class="btn btn-sm btn-outline-primary me-1">
                                     Edit
                                 </a>

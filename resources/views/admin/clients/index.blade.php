@@ -55,7 +55,6 @@
                             <input type="checkbox" id="checkAll">
                         </th>
                         <th>Name</th>
-                        <th>Email</th>
                         <th>Phone</th>
                         <th>Country</th>
                         <th>Actions</th>
@@ -68,7 +67,6 @@
                                 <input type="checkbox" name="client_ids[]" value="{{ $client->id }}">
                             </td>
                             <td>{{ $client->name }}</td>
-                            <td>{{ $client->email }}</td>
                             <td>{{ $client->phone }}</td>
                             <td>{{ $client->country ?? 'N/A' }}</td>
                             <td>
