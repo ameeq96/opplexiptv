@@ -253,6 +253,9 @@ return [
   'faq.q14' => 'Can I Hide The Adult Or Any Other Section On My IPTV Application?',
   'faq.a14' => 'Yes, follow these steps on IPTV Smarters Pro:<br><br>1. Go to the main page.<br>2. Press the 3 dots.<br>3. Go to settings.<br>4. Go to parental control.<br>5. Set your password.<br>6. Save it.<br>7. Select category/channels to lock.<br><br>Status: Your channel was locked.<br><br>To see locked channels:<br>1. Go to settings.<br>2. Enter password.<br>3. Unlock your channels.<br>4. Save it.',
 
+  'faq.q15' => 'Where can I buy Opplex IPTV?',
+  'faq.a15' => 'You can buy it directly from OpplexIPTV.com - the official source for Opplex IPTV subscriptions. For quick purchase or queries, contact +92-312-1108582.',
+
   // Captions
   'faq.samsung' => 'On Samsung TV',
   'faq.mobile' => 'On Mobile Phone',

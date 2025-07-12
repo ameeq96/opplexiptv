@@ -95,6 +95,11 @@
                 'answer' => __('messages.faq.a14'),
                 'images' => [],
             ],
+            [
+                'question' => __('messages.faq.q15'),
+                'answer' => __('messages.faq.a15'),
+                'images' => [],
+            ],
         ];
     @endphp
 

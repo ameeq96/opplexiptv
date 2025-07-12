@@ -253,6 +253,9 @@ return [
     'faq.q14' => 'Puis-je masquer les sections pour adultes ?',
     'faq.a14' => 'Oui, suivez ces étapes sur IPTV Smarters Pro:<br><br>1. Page d’accueil > 3 points > Paramètres > Contrôle parental > Mot de passe > Sauvegarder > Verrouiller catégories.<br><br>Pour les voir : Paramètres > Entrer le mot de passe > Déverrouiller > Sauvegarder.',
 
+    'faq.q15' => 'Où puis-je acheter Opplex IPTV ?',
+    'faq.a15' => 'Vous pouvez l’acheter directement sur OpplexIPTV.com – la source officielle pour les abonnements Opplex IPTV. Pour un achat rapide ou des questions, contactez le +92-312-1108582.',
+
     // Captions
     'faq.samsung' => 'Sur TV Samsung',
     'faq.mobile' => 'Sur téléphone portable',

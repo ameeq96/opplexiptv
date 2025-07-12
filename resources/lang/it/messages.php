@@ -251,6 +251,9 @@ return [
     'faq.q14' => 'Posso nascondere la sezione adulti?',
     'faq.a14' => 'Sì, segui questi passaggi su IPTV Smarters Pro:<br><br>1. Vai alla homepage > 3 punti > Impostazioni > Controllo genitori > Password > Salva > Blocca categorie.<br><br>Per vederle: Impostazioni > Inserisci password > Sblocca > Salva.',
 
+    'faq.q15' => 'Dove posso acquistare Opplex IPTV?',
+    'faq.a15' => 'Puoi acquistarlo direttamente da OpplexIPTV.com – la fonte ufficiale per gli abbonamenti Opplex IPTV. Per acquisti rapidi o domande, contatta il numero +92-312-1108582.',
+
     // Captions
     'faq.samsung' => 'Su TV Samsung',
     'faq.mobile' => 'Su cellulare',
