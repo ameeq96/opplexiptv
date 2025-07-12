@@ -36,21 +36,6 @@ Route::middleware('admin')->group(function () {
     Route::resource('orders', OrderController::class);
 });
 
-Route::get('/storage-link', function () {
-    $target = storage_path('app/public');
-    $link = public_path('storage');
-
-    if (file_exists($link)) {
-        return 'Link already exists.';
-    }
-
-    // Only works if shell_exec is enabled and safe_mode is off
-    shell_exec("ln -s $target $link");
-
-    return 'Storage link created using shell_exec.';
-});
-
-
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
