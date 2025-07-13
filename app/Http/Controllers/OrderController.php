@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\{Order, User};
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 
 class OrderController extends Controller
@@ -22,6 +23,45 @@ class OrderController extends Controller
                     ->orWhere('package', 'like', "%$search%")
                     ->orWhere('status', 'like', "%$search%");
             });
+        }
+
+        $today = Carbon::today();
+
+        if ($request->filled('date_filter')) {
+            switch ($request->date_filter) {
+                case 'today':
+                    $query->whereDate('buying_date', $today);
+                    break;
+                case 'yesterday':
+                    $query->whereDate('buying_date', $today->copy()->subDay());
+                    break;
+                case '7days':
+                    $query->whereBetween('buying_date', [Carbon::now()->subDays(6), Carbon::now()]);
+                    break;
+                case '30days':
+                    $query->whereBetween('buying_date', [Carbon::now()->subDays(29), Carbon::now()]);
+                    break;
+                case '90days':
+                    $query->whereBetween('buying_date', [Carbon::now()->subDays(89), Carbon::now()]);
+                    break;
+                case 'year':
+                    $query->whereYear('buying_date', Carbon::now()->year);
+                    break;
+            }
+        }
+
+        if ($request->filled('start_date') && $request->filled('end_date')) {
+            $query->whereBetween('buying_date', [$request->start_date, $request->end_date]);
+        }
+
+        if ($request->filled('expiry_status')) {
+            if ($request->expiry_status === 'expired') {
+                $query->whereNotNull('expiry_date')
+                    ->whereDate('expiry_date', '<', $today);
+            } elseif ($request->expiry_status === 'soon') {
+                $query->whereNotNull('expiry_date')
+                    ->whereBetween('expiry_date', [$today, $today->copy()->addDays(3)]);
+            }
         }
 
         $orders = $query->orderBy('id', 'desc')->paginate(10);

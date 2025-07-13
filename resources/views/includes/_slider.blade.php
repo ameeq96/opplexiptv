@@ -30,7 +30,7 @@
             @foreach ($displayMovies as $index => $movie)
                 <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"
                     @if ($index !== 0) data-bg="{{ $movie['webp_image_url'] }}" loading="lazy" @endif>
-                    
+
                     @if ($index === 0)
                         <img src="{{ $movie['webp_image_url'] }}"
                             alt="{{ $movie['title'] ?? $movie['name'] }} - IPTV Movie Poster"
@@ -51,10 +51,9 @@
                                 @endif
 
                                 <div class="text">
-                                    <span class="d-none d-sm-inline">{{ $movie['overview'] }}</span>
-                                    <span
-                                        class="d-inline d-sm-none">{{ \Illuminate\Support\Str::limit($movie['overview'], 100) }}</span>
+                                    {{ isset($movie['overview']) ? Str::limit($movie['overview'], 150) : 'No overview available' }}
                                 </div>
+
                                 <div class="btns-box">
                                     <a href="{{ route('movies') }}" class="theme-btn btn-style-two">
                                         <span class="txt">{{ __('messages.explore_more') }} <i

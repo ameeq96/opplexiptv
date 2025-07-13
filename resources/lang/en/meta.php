@@ -2,58 +2,48 @@
 
 return [
     'home' => [
-        'title' => 'Opplex IPTV - Live TV, Movies & Sports in HD',
-        'description' => 'Stream over 12,000+ live channels, 50k+ movies, and 5k+ web series in HD and 4K across France, Italy, UK, and more. Best IPTV service in Europe.',
-        'keywords' => 'IPTV Europe, IPTV France, IPTV Italy, IPTV UK, HD IPTV, IPTV Smarters, IPTV Netflix, IPTV Reseller',
+        'title' => 'Best IPTV Service - HD, 4K Live Streaming | Opplex IPTV',
+        'description' => 'Get the best IPTV experience with 4K live IPTV, 12,000+ channels, and VOD. Includes xtreme hd iptv, iptv smart player, and free trial. Stream across Europe and USA.',
+        'keywords' => 'best iptv, iptv box, xtreme hd iptv, aroma iptv, iptv smart player, iptv free trial, 4k live iptv',
     ],
     'about' => [
-        'title' => 'About Opplex IPTV - Premium IPTV Europe',
-        'description' =>
-        'Learn more about Opplex IPTV and our mission to provide the best IPTV experience across Europe with 24/7 support and high-quality content.',
-        'keywords' => 'about IPTV, IPTV service Europe, best IPTV provider France Italy UK, IPTV support',
+        'title' => 'About Opplex IPTV - Premium 4K Live IPTV Provider',
+        'description' => 'Opplex IPTV offers xtreme hd iptv with 4K streaming, free trial, and 24/7 support. Learn about our mission to provide the best iptv services in Europe & USA.',
+        'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
-        'title' => 'Affordable IPTV Plans & Prices Europe',
-        'description' =>
-        'Check out our affordable IPTV pricing plans for France, Italy, and UK. Choose monthly or yearly packages with HD/4K streaming.',
-        'keywords' => 'IPTV subscription price, IPTV plans, IPTV cost France Italy UK, cheap IPTV Europe',
+        'title' => 'IPTV Subscription Plans | Affordable IPTV Box & 4K Streaming',
+        'description' => 'Explore cheap IPTV pricing for best iptv services. Get xtreme hd iptv with iptv smart player, 4K live iptv, and free trial options across US, France, Italy, UK.',
+        'keywords' => 'iptv box, xtreme hd iptv, best iptv, aroma iptv, iptv subscription price, 4k live iptv, iptv free trial',
     ],
     'movies' => [
-        'title' => 'Stream 50,000+ Movies & Series',
-        'description' =>
-        'Explore our vast library of over 50k movies and 5k web series including Netflix, Prime Video, Bollywood and Hollywood hits.',
-        'keywords' =>
-        'IPTV movies, watch IPTV Netflix, stream Bollywood movies, IPTV Prime Video, IPTV series Europe',
+        'title' => 'Watch IPTV Movies, Series in HD & 4K - Opplex IPTV',
+        'description' => 'Enjoy 50,000+ IPTV movies and 5,000+ series in 4K. Supports iptv smart player, xtreme hd iptv, and free trials. Watch Netflix, Bollywood, Hollywood content.',
+        'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
-        'title' => 'Best IPTV Packages for Europe',
-        'description' =>
-        'Choose from flexible IPTV packages for every need. Stream 12k+ channels, VOD, sports & more across France, Italy, and the UK.',
-        'keywords' =>
-        'IPTV packages, IPTV subscription Europe, IPTV sports, IPTV VOD, IPTV for France Italy UK',
+        'title' => 'Best IPTV Packages with Free Trial | 4K Streaming Europe & USA',
+        'description' => 'Flexible IPTV packages include xtreme hd iptv, iptv box access, 4K channels, and iptv smart player compatibility. Free trial available in France, Italy, UK, US.',
+        'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
     'reseller-panel' => [
-        'title' => 'Become an IPTV Reseller - Europe Panel',
-        'description' =>
-        'Join the Opplex IPTV reseller program and start selling IPTV subscriptions across Europe. Get instant panel access and reseller tools.',
-        'keywords' => 'IPTV reseller Europe, IPTV reseller France, IPTV panel, IPTV reseller Italy UK',
+        'title' => 'Become IPTV Reseller | Opplex IPTV Panel Access',
+        'description' => 'Join Opplex IPTV reseller program. Sell xtreme hd iptv and smart IPTV boxes across Europe & USA. Panel access with 4K iptv, free trial, and full support.',
+        'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
     'iptv-applications' => [
-        'title' => 'Top IPTV Apps for Android, iOS, Smart TV',
-        'description' =>
-        'Download recommended IPTV applications like IPTV Smarters, TiviMate, Smart STB, and more for smooth streaming across devices.',
-        'keywords' => 'IPTV Smarters, TiviMate, IPTV app Smart TV, IPTV app Android, best IPTV app iOS',
+        'title' => 'Top IPTV Apps: Smarters, Player, Android TV & More',
+        'description' => 'Download IPTV apps including iptv smart player and Smarters Pro. Compatible with xtreme hd iptv, Android, iOS, and 4K devices. Best iptv experience.',
+        'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, best iptv, aroma iptv, 4k live iptv',
     ],
     'faqs' => [
-        'title' => 'Opplex IPTV FAQs & Support',
-        'description' =>
-        'Find answers to frequently asked questions about Opplex IPTV including setup, features, payments, channels, and support.',
-        'keywords' => 'IPTV FAQ, IPTV troubleshooting, IPTV support, IPTV setup guide',
+        'title' => 'Opplex IPTV FAQs | Setup, Support & Free Trial Help',
+        'description' => 'Find answers about xtreme hd iptv, iptv smart player setup, 4K streaming, and iptv free trial. Full support for USA, UK, France, Italy.',
+        'keywords' => 'iptv support, iptv setup, xtreme hd iptv, iptv smart player, aroma iptv, best iptv, 4k live iptv',
     ],
     'contact' => [
-        'title' => 'Contact Opplex IPTV - Support & Trial',
-        'description' =>
-        'Need help or want to try Opplex IPTV? Contact our support team via WhatsApp or email. Start your IPTV trial today.',
-        'keywords' => 'IPTV support, contact IPTV, IPTV WhatsApp, IPTV help Europe, start IPTV trial',
+        'title' => 'Contact Opplex IPTV | Free Trial & Support',
+        'description' => 'Need help with best iptv setup? Contact Opplex for free trial, reseller info, xtreme hd iptv, 4K streaming and iptv smart player support.',
+        'keywords' => 'iptv support, iptv free trial, contact iptv, xtreme hd iptv, iptv box, aroma iptv, iptv smart player',
     ],
 ];

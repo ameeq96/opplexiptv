@@ -7,7 +7,6 @@
         </div>
 
         <div class="four-item-carousel owl-carousel owl-theme" role="region" aria-label="IPTV Services Carousel">
-            {{-- IPTV Packages --}}
             <div class="service-block-two" aria-label="IPTV Packages - Flexible & Affordable Plans">
                 <div class="inner-box">
                     <div class="color-layer" aria-hidden="true"></div>
@@ -24,7 +23,6 @@
                 </div>
             </div>
 
-            {{-- Reseller Panel --}}
             <div class="service-block-two" aria-label="IPTV Reseller Panel - Start Selling Subscriptions">
                 <div class="inner-box">
                     <div class="color-layer" aria-hidden="true"></div>
@@ -41,7 +39,6 @@
                 </div>
             </div>
 
-            {{-- Sports & Live TV --}}
             <div class="service-block-two" aria-label="IPTV Sports and Live TV - Watch in HD/4K">
                 <div class="inner-box">
                     <div class="color-layer" aria-hidden="true"></div>
@@ -58,7 +55,6 @@
                 </div>
             </div>
 
-            {{-- VOD Library --}}
             <div class="service-block-two" aria-label="VOD Library - 50,000+ Movies and Series">
                 <div class="inner-box">
                     <div class="color-layer" aria-hidden="true"></div>
@@ -75,7 +71,6 @@
                 </div>
             </div>
 
-            {{-- Multi-Device IPTV --}}
             <div class="service-block-two" aria-label="Multi-Device IPTV - Compatible with Smart TV, Android, iOS">
                 <div class="inner-box">
                     <div class="color-layer" aria-hidden="true"></div>

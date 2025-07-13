@@ -196,6 +196,10 @@
                 allowClear: true
             });
         });
+
+        document.getElementById('excludeIPTV').addEventListener('change', function() {
+            this.form.submit();
+        });
     </script>
 
 </body>

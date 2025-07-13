@@ -53,6 +53,13 @@
                 </div>
 
                 <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label for="iptv_username" class="form-label">IPTV Username</label>
+                        <input type="text" name="iptv_username" class="form-control" placeholder="e.g. opplex_1234">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
                     <div class="col-md-6">
                         <label class="form-label">Price</label>
                         <div class="input-group">

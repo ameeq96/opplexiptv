@@ -3,29 +3,57 @@
 @section('page_title', 'All Orders')
 
 @section('content')
-
     <div class="card shadow-sm mb-4">
         <div class="card-body">
             <div class="row g-2 align-items-center justify-content-between">
-                <div class="col-md-4">
-                    <form action="{{ route('orders.index') }}" method="GET">
-                        <div class="input-group">
-                            <input type="text" name="search" value="{{ request('search') }}" class="form-control"
-                                placeholder="Search orders...">
-                            <button class="btn btn-primary" type="submit">Search</button>
-                        </div>
+                <div class="col-md-11">
+                    <form action="{{ route('orders.index') }}" method="GET"
+                        class="d-flex flex-wrap gap-2 align-items-center">
+
+                        <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
+                            placeholder="Search orders...">
+
+                        <select name="date_filter" class="form-select w-auto" onchange="this.form.submit()">
+                            <option value="">-- Date Filter --</option>
+                            <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
+                            <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>
+                                Yesterday</option>
+                            <option value="7days" {{ request('date_filter') == '7days' ? 'selected' : '' }}>Last 7 Days
+                            </option>
+                            <option value="30days" {{ request('date_filter') == '30days' ? 'selected' : '' }}>Last 30 Days
+                            </option>
+                            <option value="90days" {{ request('date_filter') == '90days' ? 'selected' : '' }}>Last 90 Days
+                            </option>
+                            <option value="year" {{ request('date_filter') == 'year' ? 'selected' : '' }}>This Year
+                            </option>
+                        </select>
+
+                        <select name="expiry_status" class="form-select w-auto" onchange="this.form.submit()">
+                            <option value="">-- Expiry Filter --</option>
+                            <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon
+                                (Next 3 Days)</option>
+                            <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already
+                                Expired</option>
+                        </select>
+
+                        <input type="date" name="start_date" value="{{ request('start_date') }}"
+                            class="form-control w-auto">
+                        <input type="date" name="end_date" value="{{ request('end_date') }}"
+                            class="form-control w-auto">
+
+                        <button class="btn btn-primary" type="submit">Filter</button>
                     </form>
                 </div>
 
-                <div class="col-md-4 text-end">
-                    <a href="{{ route('orders.create') }}" class="btn btn-dark">
-                        <i class="bi bi-plus-lg me-1"></i> Add New Order
+                <div class="col-md-1 text-end">
+                    <a href="{{ route('orders.create') }}" class="btn btn-dark w-100">
+                        <i class="bi bi-plus-lg me-1"></i> Add
                     </a>
                 </div>
             </div>
+
         </div>
     </div>
-
 
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -47,6 +75,7 @@
                         </th>
                         <th>Client</th>
                         <th>Package</th>
+                        <th>IPTV Username</th>
                         <th>Price</th>
                         <th>Status</th>
                         <th>Payment</th>
@@ -64,18 +93,26 @@
                             </td>
                             <td>{{ $order->user->name }}</td>
                             <td>{{ $order->package }}</td>
+                            <td>{{ $order->iptv_username ?? '-' }}</td>
                             <td>{{ $order->currency }} {{ number_format($order->price, 2) }}</td>
                             <td>
+                                @php
+                                    $isExpired =
+                                        $order->expiry_date && \Carbon\Carbon::parse($order->expiry_date)->lt(now());
+                                    $statusToShow = $isExpired ? 'expired' : $order->status;
+                                @endphp
+
                                 <span
                                     class="badge
-                                {{ $order->status == 'active'
+                                {{ $statusToShow == 'active'
                                     ? 'bg-success'
-                                    : ($order->status == 'pending'
+                                    : ($statusToShow == 'pending'
                                         ? 'bg-warning text-dark'
                                         : 'bg-secondary') }}">
-                                    {{ ucfirst($order->status) }}
+                                    {{ ucfirst($statusToShow) }}
                                 </span>
                             </td>
+
                             <td>{{ ucfirst($order->payment_method) }}</td>
                             <td>{{ \Carbon\Carbon::parse($order->buying_date)->format('d M Y') }}</td>
                             <td>

@@ -162,8 +162,9 @@
         <div id="resellerPackages" style="display: none;" aria-label="Reseller IPTV Packages">
             <div class="scroll-wrapper-reseller reseller-wrapper" style="display: flex; overflow-x: auto; gap: 20px;">
                 @foreach ($resellerPlans as $plan)
-                    <div class="price-block reseller-price-block scroll-item-reseller"
-                        style="min-width: 300px; flex-shrink: 0;" aria-label="{{ $plan['title'] }} Reseller Plan">
+                    <div class="price-block reseller-price-block scroll-item-reseller d-flex flex-column justify-content-between"
+                        style="min-width: 300px; flex-shrink: 0; height: 100%;"
+                        aria-label="{{ $plan['title'] }} Reseller Plan">
                         <div class="inner-box custom-color">
                             <div class="upper-box"
                                 style="{{ !$agent->isMobile() ? 'background-image: url(' . asset('images/background/pattern-4.webp') . ');' : '' }}">

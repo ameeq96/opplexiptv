@@ -13,33 +13,33 @@
 
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <div class="row g-2 align-items-center">
-                <div class="col-md-4">
-                    <form action="{{ route('clients.index') }}" method="GET">
-                        <div class="input-group">
-                            <input type="text" name="search" value="{{ request('search') }}" class="form-control"
-                                placeholder="Search clients...">
-                            <button type="submit" class="btn btn-primary">Search</button>
-                        </div>
-                    </form>
+            <form action="{{ route('clients.index') }}" method="GET" enctype="multipart/form-data"
+                class="d-flex flex-wrap align-items-center gap-2">
+
+                <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
+                    placeholder="Search clients...">
+
+                <button type="submit" class="btn btn-primary">Search</button>
+
+                <input type="file" name="csv_file" accept=".csv" class="form-control w-auto">
+                @csrf
+                <button type="submit" formaction="{{ route('clients.import') }}" class="btn btn-success"
+                    onclick="event.preventDefault(); this.closest('form').submit();">
+                    Import CSV
+                </button>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="exclude_iptv" value="1" id="excludeIPTV"
+                        onchange="this.form.submit()" {{ request('exclude_iptv') ? 'checked' : '' }}>
+                    <label class="form-check-label" for="excludeIPTV">
+                        Exclude IPTV Clients
+                    </label>
                 </div>
 
-                <div class="col-md-5">
-                    <form action="{{ route('clients.import') }}" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <div class="input-group">
-                            <input type="file" name="csv_file" accept=".csv" class="form-control" required>
-                            <button type="submit" class="btn btn-success">Import CSV</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-md-3 text-end pe-md-2">
-                    <a href="{{ route('clients.create') }}" class="btn btn-dark">
-                        <i class="bi bi-plus-lg me-1"></i> Add New Client
-                    </a>
-                </div>
-            </div>
+                <a href="{{ route('clients.create') }}" class="btn btn-dark ms-auto">
+                    <i class="bi bi-plus-lg me-1"></i> Add New Client
+                </a>
+            </form>
         </div>
     </div>
 

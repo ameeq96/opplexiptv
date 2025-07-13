@@ -24,6 +24,7 @@ return new class extends Migration
             $table->date('expiry_date')->nullable();
             $table->string('screenshot')->nullable();
             $table->string('currency')->nullable();
+            $table->string('iptv_username')->nullable();
             $table->timestamps();
         });
     }

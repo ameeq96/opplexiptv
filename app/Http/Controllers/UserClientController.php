@@ -23,6 +23,10 @@ class UserClientController extends Controller
             });
         }
 
+        if ($request->filled('exclude_iptv')) {
+            $query->where('name', 'not like', '%iptv%');
+        }
+
         $clients = $query->orderBy('id', 'desc')->paginate(10);
 
         return view('admin.clients.index', compact('clients'));
