@@ -31,6 +31,11 @@ return [
         'description' => 'Join Opplex IPTV reseller program. Sell xtreme hd iptv and smart IPTV boxes across Europe & USA. Panel access with 4K iptv, free trial, and full support.',
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
+    'buynow' => [
+        'title' => 'Buy IPTV Now | Access 4K IPTV and HD Streaming Instantly',
+        'description' => 'Buy IPTV today and enjoy instant access to top-quality IPTV services, including 4K streaming, HD channels, and a free trial. Get the best IPTV boxes and start streaming worldwide across Europe & USA.',
+        'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
+    ],
     'iptv-applications' => [
         'title' => 'Top IPTV Apps: Smarters, Player, Android TV & More',
         'description' => 'Download IPTV apps including iptv smart player and Smarters Pro. Compatible with xtreme hd iptv, Android, iOS, and 4K devices. Best iptv experience.',

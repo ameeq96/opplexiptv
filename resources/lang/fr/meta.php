@@ -31,6 +31,12 @@ return [
         'description' => 'Lancez votre business IPTV avec code IPTV, box et accès au panneau revendeur. Compatible IPTV smart player, décodeur IPTV avec code.',
         'keywords' => 'revendeur IPTV, IPTV box, IPTV m3u, Xtream IPTV, code IPTV, décodeur IPTV, IPTV illégal, dev IPTV pro, France Italie UK',
     ],
+    'buynow' => [
+        'title' => 'Achetez IPTV maintenant | Accédez instantanément à la diffusion IPTV 4K et HD',
+        'description' => 'Achetez IPTV aujourd\'hui et profitez d\'un accès instantané aux services IPTV de haute qualité, y compris la diffusion 4K, des chaînes HD et un essai gratuit. Obtenez les meilleurs boîtiers IPTV et commencez à diffuser dans le monde entier en Europe et aux États-Unis.',
+        'keywords' => 'acheter IPTV maintenant, IPTV 4K, acheter service IPTV, acheter boîtier IPTV, diffusion IPTV, abonnement IPTV, IPTV HD, accès IPTV instantané',
+    ],
+
     'iptv-applications' => [
         'title' => 'Top apps IPTV - Xtream IPTV, IPTV player, IPTV box',
         'description' => 'Téléchargez IPTV Smarters, Xtream IPTV, TiviMate, Smart STB, 000 Player - fonctionne sur IPTV stream player, IPTV m3u, IPTV box et iOS.',
