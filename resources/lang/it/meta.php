@@ -36,7 +36,6 @@ return [
         'description' => 'Acquista IPTV oggi e goditi l\'accesso immediato ai servizi IPTV di alta qualità, inclusi lo streaming 4K, canali HD e una prova gratuita. Acquista i migliori box IPTV e inizia a trasmettere in tutto il mondo in Europa e negli Stati Uniti.',
         'keywords' => 'compra IPTV ora, IPTV 4K, acquisto servizio IPTV, acquisto box IPTV, streaming IPTV, abbonamento IPTV, IPTV HD, accesso IPTV immediato',
     ],
-
     'iptv-applications' => [
         'title' => 'Top App IPTV per Android, iOS, Smart TV',
         'description' => 'Scarica IPTV Smarters Pro, IPTV Extreme APK, Smart IPTV, 000 Player, TiviMate e altro – compatibili con IPTV player e liste IPTV.',
