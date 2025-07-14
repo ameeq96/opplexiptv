@@ -44,8 +44,8 @@
 
 @section('jsonld')
     <!-- Homepage JSON-LD -->
-    <script type="application/ld+json">
-{
+<script type="application/ld+json">
+    {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Opplex IPTV Packages",
@@ -83,7 +83,8 @@
       "priceValidUntil": "2025-12-31",
       "hasMerchantReturnPolicy": {
         "@type": "MerchantReturnPolicy",
-        "returnPolicyCategory": "https://schema.org/NoReturns"
+        "returnPolicyCategory": "https://schema.org/NoReturns",
+        "applicableCountry": "PK"
       },
       "shippingDetails": {
         "@type": "OfferShippingDetails",
@@ -115,7 +116,6 @@
     }
   ]
 }
-
 
 </script>
 @endsection
