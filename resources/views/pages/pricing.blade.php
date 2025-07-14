@@ -111,8 +111,7 @@
         "@type": "MerchantReturnPolicy",
         "returnPolicyCategory": "NoReturns",
         "applicableCountry": "PK"
-      }
-
+      },
       "shippingDetails": {
         "@type": "OfferShippingDetails",
         "shippingRate": {
