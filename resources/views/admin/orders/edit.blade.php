@@ -163,7 +163,10 @@
                         <label class="form-label">Current Screenshot</label><br>
                         @if ($order->screenshot)
                             <img src="{{ asset($order->screenshot) }}" alt="Current Screenshot" width="100"
-                                height="100" style="object-fit: cover; border: 1px solid #ccc; border-radius: 6px;">
+                                height="100"
+                                style="object-fit: cover; border: 1px solid #ccc; border-radius: 6px; cursor: pointer;"
+                                data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                onclick="showScreenshot('{{ asset($order->screenshot) }}')">
                         @else
                             <span class="text-muted">No screenshot uploaded.</span>
                         @endif
@@ -178,5 +181,26 @@
             </form>
         </div>
     </div>
+
+    <!-- Screenshot Lightbox Modal -->
+    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark position-relative border-0">
+
+                <!-- Close button -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image -->
+                <div class="modal-body p-0 text-center">
+                    <img id="modalScreenshot" src="" class="img-fluid" style="width: 100%; max-height: 90vh;"
+                        alt="Screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 @endsection

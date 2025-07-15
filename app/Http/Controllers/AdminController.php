@@ -36,37 +36,72 @@ class AdminController extends Controller
         return redirect()->route('admin.login');
     }
 
-    public function dashboard()
+    public function dashboard(Request $request)
     {
-        $users = User::count();
-        $activeOrders = Order::where('status', 'active')->count();
-        $expiredOrders = Order::where('status', 'expired')->count();
-        $totalOrders = Order::count();
-        $admins = Admin::count();
+        $filter = $request->input('filter', 'all');
+        $startDate = null;
+        $endDate = null;
+
+        switch ($filter) {
+            case 'today':
+                $startDate = now()->startOfDay();
+                break;
+            case '7days':
+                $startDate = now()->subDays(6);
+                break;
+            case '30days':
+                $startDate = now()->subDays(29);
+                break;
+            case 'custom':
+                $startDate = $request->input('start_date');
+                $endDate = $request->input('end_date');
+                break;
+            case 'all':
+            default:
+                $startDate = null;
+                $endDate = null;
+                break;
+        }
+
+        if ($startDate && !$endDate) {
+            $endDate = now()->endOfDay();
+        }
+
+        // Base order query
+        $ordersQuery = Order::whereIn('status', ['active', 'expired']);
+
+        if ($startDate && $endDate) {
+            $ordersQuery = $ordersQuery->whereBetween('buying_date', [$startDate, $endDate]);
+        }
+
+        $totalOrders = (clone $ordersQuery)->count();
+        $activeOrders = (clone $ordersQuery)->where('status', 'active')->count();
+        $expiredOrders = (clone $ordersQuery)->where('status', 'expired')->count();
+        $users = User::count(); // Keep as total
 
         $currencies = ['PKR', 'USD', 'CAD', 'AED', 'EUR', 'GBP', 'SAR', 'INR'];
         $earningsByCurrency = [];
-        $dailyEarningsByCurrency = [];
 
         foreach ($currencies as $currency) {
-            $earningsByCurrency[$currency] = Order::whereIn('status', ['active', 'expired'])
-                ->where('currency', $currency)
-                ->sum('price');
+            $query = Order::whereIn('status', ['active', 'expired'])
+                ->where('currency', $currency);
 
-            $dailyEarningsByCurrency[$currency] = Order::whereIn('status', ['active', 'expired'])
-                ->where('currency', $currency)
-                ->whereDate('buying_date', now())
-                ->sum('price');
+            if ($startDate && $endDate) {
+                $query->whereBetween('buying_date', [$startDate, $endDate]);
+            }
+
+            $earningsByCurrency[$currency] = $query->sum('price');
         }
 
-        return view('admin.dashboard', [
-            'users' => $users,
-            'activeOrders' => $activeOrders,
-            'expiredOrders' => $expiredOrders,
-            'totalOrders' => $totalOrders,
-            'admins' => $admins,
-            'earningsByCurrency' => $earningsByCurrency,
-            'dailyEarningsByCurrency' => $dailyEarningsByCurrency, // ✅ NEW
-        ]);
+        return view('admin.dashboard', compact(
+            'users',
+            'activeOrders',
+            'expiredOrders',
+            'totalOrders',
+            'earningsByCurrency',
+            'filter',
+            'startDate',
+            'endDate'
+        ));
     }
 }
