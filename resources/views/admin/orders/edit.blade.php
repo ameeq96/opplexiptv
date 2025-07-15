@@ -194,7 +194,7 @@
 
                 <!-- Image -->
                 <div class="modal-body p-0 text-center">
-                    <img id="modalScreenshot" src="" class="img-fluid" style="width: 100%; max-height: 90vh;"
+                    <img id="modalScreenshot" src="" class="img-fluid" style="width: 100%; max-height: 90vh; object-fit: contain;"
                         alt="Screenshot">
                 </div>
             </div>
