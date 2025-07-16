@@ -121,11 +121,6 @@
                 </div>
 
                 <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="expiry_date" class="form-label">Subscription Expiry Date</label>
-                        <input type="date" name="expiry_date" class="form-control"
-                            value="{{ old('expiry_date', $order->expiry_date ?? '') }}">
-                    </div>
 
                     <div class="col-md-6">
                         <label for="buying_date" class="form-label">Buying Date</label>
@@ -133,6 +128,12 @@
                             required>
                     </div>
 
+
+                    <div class="col-md-6">
+                        <label for="expiry_date" class="form-label">Subscription Expiry Date</label>
+                        <input type="date" name="expiry_date" class="form-control"
+                            value="{{ old('expiry_date', $order->expiry_date ?? '') }}">
+                    </div>
 
                     <div class="col-md-6">
                         <label for="screenshot" class="form-label">Upload Screenshot</label>
