@@ -36,6 +36,11 @@ return [
         'description' => 'Acquista IPTV oggi e goditi l\'accesso immediato ai servizi IPTV di alta qualità, inclusi lo streaming 4K, canali HD e una prova gratuita. Acquista i migliori box IPTV e inizia a trasmettere in tutto il mondo in Europa e negli Stati Uniti.',
         'keywords' => 'compra IPTV ora, IPTV 4K, acquisto servizio IPTV, acquisto box IPTV, streaming IPTV, abbonamento IPTV, IPTV HD, accesso IPTV immediato',
     ],
+    'buynowpanel' => [
+        'title' => 'Acquista Pannello IPTV | Dashboard Rivenditore e Attivazione Immediata',
+        'description' => 'Acquista ora il tuo pannello IPTV e ottieni accesso immediato a una dashboard avanzata per gestire utenti, attivare linee e trasmettere in 4K e HD. Perfetto per rivenditori IPTV in Europa, USA e nel resto del mondo.',
+        'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, accesso immediato pannello IPTV, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
+    ],
     'iptv-applications' => [
         'title' => 'Top App IPTV per Android, iOS, Smart TV',
         'description' => 'Scarica IPTV Smarters Pro, IPTV Extreme APK, Smart IPTV, 000 Player, TiviMate e altro – compatibili con IPTV player e liste IPTV.',

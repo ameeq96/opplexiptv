@@ -36,6 +36,11 @@ return [
         'description' => 'Achetez IPTV aujourd\'hui et profitez d\'un accès instantané aux services IPTV de haute qualité, y compris la diffusion 4K, des chaînes HD et un essai gratuit. Obtenez les meilleurs boîtiers IPTV et commencez à diffuser dans le monde entier en Europe et aux États-Unis.',
         'keywords' => 'acheter IPTV maintenant, IPTV 4K, acheter service IPTV, acheter boîtier IPTV, diffusion IPTV, abonnement IPTV, IPTV HD, accès IPTV instantané',
     ],
+    'buynowpanel' => [
+        'title' => 'Acheter un Panel IPTV | Tableau de Bord Revendeur & Activation Instantanée',
+        'description' => 'Achetez votre panel IPTV dès maintenant et accédez instantanément à un tableau de bord puissant pour gérer les utilisateurs, activer des lignes, et diffuser en 4K et HD. Idéal pour les revendeurs IPTV en Europe, aux États-Unis et dans le monde entier.',
+        'keywords' => 'acheter panel IPTV, tableau de bord revendeur IPTV, gestion IPTV, accès instantané panel IPTV, panel IPTV 4K, panel IPTV HD, outils revendeur IPTV',
+    ],
     'iptv-applications' => [
         'title' => 'Top apps IPTV - Xtream IPTV, IPTV player, IPTV box',
         'description' => 'Téléchargez IPTV Smarters, Xtream IPTV, TiviMate, Smart STB, 000 Player - fonctionne sur IPTV stream player, IPTV m3u, IPTV box et iOS.',
