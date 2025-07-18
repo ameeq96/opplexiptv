@@ -36,7 +36,7 @@ return [
         'description' => 'Buy IPTV today and enjoy instant access to top-quality IPTV services, including 4K streaming, HD channels, and a free trial. Get the best IPTV boxes and start streaming worldwide across Europe & USA.',
         'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
     ],
-    'buynowpanel' => [
+    'buy-now-panel' => [
         'title' => 'Buy IPTV Panel | Reseller IPTV Dashboard & Instant Activation',
         'description' => 'Buy your IPTV panel now and get instant access to a powerful IPTV dashboard for managing users, activating lines, and streaming in 4K & HD. Perfect for IPTV resellers in Europe, USA, and worldwide.',
         'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',

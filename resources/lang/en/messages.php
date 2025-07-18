@@ -176,6 +176,8 @@ return [
   'buynow.packages.half_yearly' => 'Half-Yearly - PKR 1799 (Best IPTV Box Deal)',
   'buynow.packages.yearly' => 'Yearly - PKR 3399 (Full 4K IPTV with Aroma Access)',
 
+  'reseller.heading' => 'Buy IPTV Reseller Panel – Start Your IPTV Business Today',
+
   'form.name' => 'Name',
   'form.email' => 'Email Address',
   'form.phone' => 'Phone',

@@ -190,6 +190,8 @@ return [
     'buynow.packages.half_yearly' => 'Semestriel PKR 1799.00',
     'buynow.packages.yearly' => 'Annuel PKR 3399.00',
 
+    'reseller.heading' => 'Achetez un Panneau Revendeur IPTV – Lancez Votre Entreprise IPTV',
+
     'form.name' => 'Nom',
     'form.email' => 'Adresse e-mail',
     'form.phone' => 'Téléphone',
