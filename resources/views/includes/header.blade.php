@@ -6,7 +6,7 @@
 
                 <div class="pull-left">
                     <ul class="info d-flex justify-content-center align-items-center">
-                        <li><a href="https://wa.me/923121108582" target="_blank" rel="noopener noreferrer"><span
+                        <li><a href="https://wa.me/16393903194" target="_blank" rel="noopener noreferrer"><span
                                     class="icon flaticon-maps-and-flags"></span> {{ __('messages.header_whatsapp') }}</a>
                         </li>
                         <li>

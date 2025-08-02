@@ -16,7 +16,7 @@
                      <span class="icon">
                          <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" />
                      </span><br>
-                     <a href="tel:+923121108582">{{ __('messages.footer_phone') }}</a>
+                     <a href="tel:+16393903194">{{ __('messages.footer_phone') }}</a>
                  </li>
                  <li>
                      <span class="icon">

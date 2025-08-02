@@ -195,7 +195,7 @@
       "@type": "Offer",
       "name": "Starter Reseller Package",
       "price": "4399",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2026-12-31",
       "hasMerchantReturnPolicy": {
@@ -208,7 +208,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "deliveryTime": {
           "@type": "ShippingDeliveryTime",
@@ -239,7 +239,7 @@
       "@type": "Offer",
       "name": "Essential Reseller Bundle",
       "price": "10499",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2026-12-31",
       "hasMerchantReturnPolicy": {
@@ -252,7 +252,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "deliveryTime": {
           "@type": "ShippingDeliveryTime",
@@ -283,7 +283,7 @@
       "@type": "Offer",
       "name": "Pro Reseller Suite",
       "price": "18999",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2026-12-31",
       "hasMerchantReturnPolicy": {
@@ -296,7 +296,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "deliveryTime": {
           "@type": "ShippingDeliveryTime",
@@ -327,7 +327,7 @@
       "@type": "Offer",
       "name": "Advanced Reseller Toolkit",
       "price": "35999",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2026-12-31",
       "hasMerchantReturnPolicy": {
@@ -340,7 +340,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "deliveryTime": {
           "@type": "ShippingDeliveryTime",

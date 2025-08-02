@@ -18,13 +18,13 @@ return [
   'buy_now' => 'Buy Now',
   'get_started' => 'Get started',
   'starter_reseller' => 'Starter Reseller Package',
-  'starter_price' => 'PKR 4,399 / 20 Credits',
+  'starter_price' => '$15.99 / 20 Credits',
   'essential_reseller' => 'Essential Reseller Bundle',
-  'essential_price' => 'PKR 10,499 / 50 Credits',
+  'essential_price' => '$36.99 / 50 Credits',
   'pro_reseller' => 'Pro Reseller Suite',
-  'pro_price' => 'PKR 18,999 / 100 Credits',
+  'pro_price' => '$66.99 / 100 Credits',
   'advanced_reseller' => 'Advanced Reseller Toolkit',
-  'advanced_price' => 'PKR 35,999 / 200 Credits',
+  'advanced_price' => '$127.99 / 200 Credits',
   'uptime' => '99.9% Uptime',
   'no_credit_expiry' => 'No Credit Expiry',
   'unlimited_trials' => 'Unlimited Trials',
@@ -33,9 +33,9 @@ return [
   'monthly' => 'Monthly',
   'half_yearly' => 'Half Yearly',
   'yearly' => 'Yearly',
-  'monthly_price' => 'PKR 350 / monthly',
-  'half_yearly_price' => 'PKR 1799 / half yearly',
-  'yearly_price' => 'PKR 3400 / yearly',
+  'monthly_price' => '$1.99 / monthly',
+  'half_yearly_price' => '$6.99 / half yearly',
+  'yearly_price' => '$11.99 / yearly',
   'no_buffer' => 'Zero Buffer IPTV Streaming in 4K',
   'support_24_7' => '24/7 Customer Support for IPTV Smart Player',
   'regular_updates' => 'Regular IPTV Box Updates & Maintenance',
@@ -80,7 +80,7 @@ return [
   'trial_title' => 'Try Our IPTV Free Trial with 4K Streaming & 12k Channels!',
   'trial_button' => 'Start Free IPTV Trial Now',
 
-  'header_whatsapp' => 'WhatsApp: +923121108582',
+  'header_whatsapp' => 'WhatsApp: +1 (639) 390-3194',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'Home',
@@ -94,10 +94,10 @@ return [
   'nav_iptv_apps' => 'IPTV Applications',
   'nav_faqs' => "FAQ's",
   'nav_contact' => 'Contact Us',
-  'footer_phone' => '+923121108582',
+  'footer_phone' => '+1 (639) 390-3194',
   'footer_email_1' => 'info@opplexiptv.com',
   'footer_email_2' => 'support@opplexiptv.com',
-  'footer_address' => 'Karachi, United States',
+  'footer_address' => 'SASKATOON SK, Canada',
   'footer_rights' => 'All Rights Reserved.',
 
   'few_reasons' => 'Why Choose Opplex - Best IPTV with 4K, Smart Player & Free Trial',
@@ -172,9 +172,9 @@ return [
   'buynow.title' => 'Buy IPTV Now | Xtreme HD IPTV, Aroma IPTV, 4K Streaming & Free Trial',
   'buynow.heading' => 'Buy IPTV Packages - Smart Player Ready',
   'buynow.form_title' => 'Buy Best IPTV Now with Trial Included',
-  'buynow.packages.monthly' => 'Monthly - PKR 350 (Includes IPTV Smart Player Access)',
-  'buynow.packages.half_yearly' => 'Half-Yearly - PKR 1799 (Best IPTV Box Deal)',
-  'buynow.packages.yearly' => 'Yearly - PKR 3399 (Full 4K IPTV with Aroma Access)',
+  'buynow.packages.monthly' => 'Monthly - $1.99 (Includes IPTV Smart Player Access)',
+  'buynow.packages.half_yearly' => 'Half-Yearly - $6.99 (Best IPTV Box Deal)',
+  'buynow.packages.yearly' => 'Yearly - $11.99 (Full 4K IPTV with Aroma Access)',
 
   'reseller.heading' => 'Buy IPTV Reseller Panel – Start Your IPTV Business Today',
 
@@ -193,8 +193,8 @@ return [
   'contact.breadcrumb.current' => 'Contact Us - IPTV Free Trial & Box Setup Help',
 
   'contact.details.title' => 'Contact Details',
-  'contact.details.location' => 'Karachi, United States',
-  'contact.details.phone' => '+923121108582',
+  'contact.details.location' => 'SASKATOON SK, Canada',
+  'contact.details.phone' => '+1 (639) 390-3194',
   'contact.details.email1' => 'info@opplexiptv.com',
   'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'Working hours 24/7',
@@ -218,7 +218,7 @@ return [
 
   // Questions & Answers - remain 100% unchanged as requested
   'faq.q1' => 'What is Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs PKR 350/month and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in United States.',
+  'faq.a1' => 'OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs $1.99/month and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in Canada.',
 
   'faq.q2' => 'What does IPTV look like?',
   'faq.a2' => 'Here are some screenshots of how IPTV Application looks like on different devices.',
@@ -227,7 +227,7 @@ return [
   'faq.a3' => 'When a customer purchases an Opplex IPTV subscription, they receive login codes. The customer needs to enter these codes, along with the provided URL, into the app in the specified fields. Refer to the picture below for better understanding.',
 
   'faq.q4' => 'Does Opplex IPTV have a Trial?',
-  'faq.a4' => 'Yes, a trial is available for only PKR 50.',
+  'faq.a4' => 'Yes, a trial is available for only $1.',
 
   'faq.q5' => 'Sometimes when I watch a movie it keeps buffering?',
   'faq.a5' => 'This may happen due to low internet speed or high traffic. Pause for 10-15 seconds and then resume playback.',
@@ -318,7 +318,7 @@ return [
   'breadcrumb.current' => 'Our IPTV Packages',
   'sub_heading' => 'Find Your IPTV Subscription - Only a Few Left',
   'description' => 'Hurry! Secure your IPTV box or smart player subscription now. Opplex offers xtreme HD IPTV and aroma IPTV with 4K live IPTV support.',
-  'price' => 'PKR 350/ per month - Includes Free IPTV Trial',
+  'price' => '$1.99/ per month - Includes Free IPTV Trial',
   'read_more' => 'Read More About IPTV Features',
 
   // Pricing Page
@@ -330,7 +330,7 @@ return [
   ],
   'sub_heading' => 'Find Your Subscription Now - Limited Spots Available',
   'description' => 'Buy the best IPTV subscription today. Includes smart player, 4K IPTV streaming, and aroma IPTV access with every package.',
-  'price' => 'PKR 350/ per month - IPTV Free Trial Included',
+  'price' => '$1.99/ per month - IPTV Free Trial Included',
   'read_more' => 'Explore Full IPTV Details',
 
   // Reseller Panel

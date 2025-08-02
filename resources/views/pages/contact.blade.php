@@ -39,7 +39,7 @@
                                 </li>
                                 <li>
                                     <span class="icon flaticon-call"></span></br>
-                                    <a href="tel:+923121108582">{{ __('messages.contact.details.phone') }}</a>
+                                    <a href="tel:+16393903194">{{ __('messages.contact.details.phone') }}</a>
                                 </li>
                                 <li>
                                     <span class="icon flaticon-email-1"></span>

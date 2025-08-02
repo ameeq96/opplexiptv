@@ -177,14 +177,14 @@
     "name": "What is Opplex IPTV ?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs PKR 350/month and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in Pakistan."
+      "text": "OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs $1.99/month and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in Canada."
     }
   },{
     "@type": "Question",
     "name": "Does Opplex IPTV have a Trial ?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes, a trial is available for only PKR 50."
+      "text": "Yes, a trial is available for only $1."
     }
   },{
     "@type": "Question",

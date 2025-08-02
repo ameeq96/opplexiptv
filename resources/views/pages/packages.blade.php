@@ -122,11 +122,11 @@
                     "@type": "Offer",
                     "name": "Monthly Plan",
                     "price": "350",
-                    "priceCurrency": "PKR",
+                    "priceCurrency": "USD",
                     "priceSpecification": {
                         "@type": "PriceSpecification",
                         "price": "350",
-                        "priceCurrency": "PKR",
+                        "priceCurrency": "USD",
                         "valueAddedTaxIncluded": true,
                         "billingIncrement": "P1M" // ISO 8601 duration for 1 month
                     }
@@ -135,11 +135,11 @@
                     "@type": "Offer",
                     "name": "Half Yearly Plan",
                     "price": "1799",
-                    "priceCurrency": "PKR",
+                    "priceCurrency": "USD",
                     "priceSpecification": {
                         "@type": "PriceSpecification",
                         "price": "1799",
-                        "priceCurrency": "PKR",
+                        "priceCurrency": "USD",
                         "valueAddedTaxIncluded": true,
                         "billingIncrement": "P6M" // ISO 8601 duration for 6 months
                     }
@@ -148,11 +148,11 @@
                     "@type": "Offer",
                     "name": "Yearly Plan",
                     "price": "3400",
-                    "priceCurrency": "PKR",
+                    "priceCurrency": "USD",
                     "priceSpecification": {
                         "@type": "PriceSpecification",
                         "price": "3400",
-                        "priceCurrency": "PKR",
+                        "priceCurrency": "USD",
                         "valueAddedTaxIncluded": true,
                         "billingIncrement": "P1Y" // ISO 8601 duration for 1 year
                     }

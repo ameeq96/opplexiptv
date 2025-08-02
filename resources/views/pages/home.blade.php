@@ -78,7 +78,7 @@
       "@type": "Offer",
       "name": "Monthly Plan",
       "price": "350",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "2025-12-31",
       "hasMerchantReturnPolicy": {
@@ -91,7 +91,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "shippingDestination": {
           "@type": "DefinedRegion",

@@ -13,11 +13,11 @@
             </p>
 
             <div class="btn-group">
-                <a href="https://wa.me/923121108582" target="_blank" class="btn btn-primary"
+                <a href="https://wa.me/16393903194" target="_blank" class="btn btn-primary"
                     aria-label="Start Free IPTV Trial on WhatsApp">
                     {{ __('messages.start_trial') }} <span>↗</span>
                 </a>
-                <a href="https://wa.me/923121108582" target="_blank" class="btn btn-outline"
+                <a href="https://wa.me/16393903194" target="_blank" class="btn btn-outline"
                     aria-label="View IPTV Pricing Plans">
                     {{ __('messages.see_pricing') }} <span>➤</span>
                 </a>

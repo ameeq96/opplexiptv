@@ -147,7 +147,7 @@
                                     aria-label="Buy Now {{ $package['title'] }}">
                                     <span class="txt">{{ __('messages.buy_now') }}</span>
                                 </a>
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=923121108582"
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=16393903194"
                                     aria-label="Contact via WhatsApp">
                                     <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                         height="32" alt="WhatsApp Icon" loading="lazy" />

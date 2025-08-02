@@ -2,7 +2,7 @@
     $resellerPlans = [
         [
             'title' => __('messages.reseller_starter'),
-            'price' => 'PKR 4,399 / 20 Credits',
+            'price' => '$15.99 / 20 Credits',
             'icons' => ['images/icons/service-1.svg'],
             'features' => [
                 __('messages.uptime'),
@@ -15,7 +15,7 @@
         ],
         [
             'title' => __('messages.reseller_essential'),
-            'price' => 'PKR 10,499 / 50 Credits',
+            'price' => '$36.99 / 50 Credits',
             'icons' => ['images/icons/service-2.svg'],
             'features' => [
                 __('messages.uptime'),
@@ -28,7 +28,7 @@
         ],
         [
             'title' => __('messages.reseller_pro'),
-            'price' => 'PKR 18,999 / 100 Credits',
+            'price' => '$66.99 / 100 Credits',
             'icons' => ['images/icons/service-3.svg'],
             'features' => [
                 __('messages.uptime'),
@@ -41,7 +41,7 @@
         ],
         [
             'title' => __('messages.reseller_advanced'),
-            'price' => 'PKR 35,999 / 200 Credits',
+            'price' => '$127.99 / 200 Credits',
             'icons' => ['images/icons/service-1.svg', 'images/icons/service-2.svg', 'images/icons/service-3.svg'],
             'features' => [
                 __('messages.uptime'),

@@ -104,7 +104,7 @@
       "@type": "Offer",
       "name": "Monthly Plan",
       "price": "350",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
       "hasMerchantReturnPolicy": {
@@ -117,7 +117,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "shippingDestination": {
           "@type": "DefinedRegion",
@@ -144,7 +144,7 @@
       "@type": "Offer",
       "name": "Half Yearly Plan",
       "price": "1799",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
       "hasMerchantReturnPolicy": {
@@ -156,7 +156,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "shippingDestination": {
           "@type": "DefinedRegion",
@@ -183,7 +183,7 @@
       "@type": "Offer",
       "name": "Yearly Plan",
       "price": "3400",
-      "priceCurrency": "PKR",
+      "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "priceValidUntil": "{{ now()->addMonths(6)->format('Y-m-d') }}",
       "hasMerchantReturnPolicy": {
@@ -195,7 +195,7 @@
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "PKR"
+          "currency": "USD"
         },
         "shippingDestination": {
           "@type": "DefinedRegion",
