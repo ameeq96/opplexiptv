@@ -178,28 +178,51 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            let hasLoaded = false;
+            let hasLoadedGTM = false;
+            let hasLoadedClarity = false;
 
             function loadGTM() {
-                if (hasLoaded) return;
-                hasLoaded = true;
+                if (hasLoadedGTM) return;
+                hasLoadedGTM = true;
 
-                let script = document.createElement("script");
-                script.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
-                script.async = true;
-                document.head.appendChild(script);
+                let gtmScript = document.createElement("script");
+                gtmScript.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
+                gtmScript.async = true;
+                document.head.appendChild(gtmScript);
 
-                script.onload = function() {
+                gtmScript.onload = function() {
                     gtag('js', new Date());
                     gtag('config', 'G-L98JG9ZT7H');
                 };
             }
 
+            function loadClarity() {
+                if (hasLoadedClarity) return;
+                hasLoadedClarity = true;
+
+                (function(c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function() {
+                        (c[a].q = c[a].q || []).push(arguments)
+                    };
+                    t = l.createElement(r);
+                    t.async = 1;
+                    t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0];
+                    y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", "sq6nn3dn69");
+            }
+
+            const loadTrackingScripts = () => {
+                loadGTM();
+                loadClarity();
+            };
+
             ['scroll', 'mousemove', 'touchstart'].forEach(event =>
-                window.addEventListener(event, loadGTM, {
+                window.addEventListener(event, loadTrackingScripts, {
                     once: true
                 })
             );
         });
     </script>
+
 </head>
