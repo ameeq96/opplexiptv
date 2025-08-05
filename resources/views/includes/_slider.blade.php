@@ -55,7 +55,7 @@
                                 </div>
 
                                 <div class="btns-box">
-                                    <a href="{{ route('movies') }}" class="theme-btn btn-style-two">
+                                    <a href="https://wa.me/16393903194" class="theme-btn btn-style-two">
                                         <span class="txt">{{ __('messages.explore_more') }} <i
                                                 class="lnr lnr-arrow-right"></i></span>
                                     </a>

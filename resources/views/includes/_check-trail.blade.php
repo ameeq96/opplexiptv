@@ -17,7 +17,7 @@
                 <div class="inner-column">
                     <div class="appointment-form" role="form" aria-label="Start IPTV Free Trial Form">
                         <div class="form-group">
-                            <a href="{{ route('contact') }}" aria-label="Start your IPTV free trial now">
+                            <a href="https://wa.me/16393903194" aria-label="Start your IPTV free trial now">
                                 <button class="theme-btn btn-style-five">
                                     <span class="txt">{{ __('messages.trial_button') }}
                                         <i class="lnr lnr-arrow-right" aria-hidden="true"></i>

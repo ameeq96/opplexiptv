@@ -8,7 +8,7 @@ return [
 
     'start_trial' => 'Commencer l’essai gratuit',
     'see_pricing' => 'Activer Mon Abonnement IPTV',
-    'explore_more' => 'Découvrir plus de films et chaînes IPTV',
+    'explore_more' => 'acheter plus de films et chaînes IPTV',
 
     'pricing_heading' => 'Obtenez les Meilleures Offres IPTV - Streaming 4K, Lecteur Intelligent, Essai Gratuit',
     'show_reseller_packages' => 'Afficher les Packs Revendeur IPTV avec Essai Gratuit',

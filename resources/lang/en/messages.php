@@ -7,7 +7,7 @@ return [
   'description_suffix' => '— try our IPTV smart player & IPTV box with free trial across Europe & USA.',
   'start_trial' => 'Start Free IPTV Trial',
   'see_pricing' => 'View IPTV Box Plans',
-  'explore_more' => 'Explore IPTV Movies & Series',
+  'explore_more' => 'Buy IPTV Movies & Series',
 
   'pricing_heading' => 'Get Best IPTV Plans - 4K Streaming, Smart Player, Free Trial',
   'show_reseller_packages' => 'Show IPTV Reseller Packages with Free Trial',

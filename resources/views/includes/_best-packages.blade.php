@@ -143,7 +143,7 @@
                                 @endforeach
                             </ul>
                             <div class="button-box package-price-button d-flex align-items-center">
-                                <a href="{{ route('buynow') }}" class="theme-btn btn-style-four"
+                                <a href="https://wa.me/16393903194" class="theme-btn btn-style-four"
                                     aria-label="Buy Now {{ $package['title'] }}">
                                     <span class="txt">{{ __('messages.buy_now') }}</span>
                                 </a>

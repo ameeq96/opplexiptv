@@ -9,7 +9,7 @@ return [
 
     'start_trial' => 'Inizia prova gratuita',
     'see_pricing' => 'Attiva il Mio Abbonamento IPTV',
-    'explore_more' => 'Esplora più film e canali con il miglior IPTV streaming',
+    'explore_more' => 'comprare più film e canali con il miglior IPTV streaming',
 
     'pricing_heading' => 'Ottieni i Migliori Piani IPTV - Streaming 4K, Smart Player, Prova Gratuita',
     'show_reseller_packages' => 'Mostra i Pacchetti Rivenditore IPTV con Prova Gratuita',
