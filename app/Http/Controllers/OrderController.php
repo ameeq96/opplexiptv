@@ -21,7 +21,8 @@ class OrderController extends Controller
                     $qu->where('name', 'like', "%$search%");
                 })
                     ->orWhere('package', 'like', "%$search%")
-                    ->orWhere('status', 'like', "%$search%");
+                    ->orWhere('status', 'like', "%$search%")
+                    ->orWhere('iptv_username', 'like', "%$search%");
             });
         }
 
