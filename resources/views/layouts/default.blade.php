@@ -21,6 +21,11 @@
 
     </div>
 
+    <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
+        class="whatsapp-icon" title="Chat with us on WhatsApp">
+        <img src="{{ asset('images/whatsapp-img.webp') }}" alt="WhatsApp" />
+    </a>
+
     @include('includes.footer')
 
     @yield('script')

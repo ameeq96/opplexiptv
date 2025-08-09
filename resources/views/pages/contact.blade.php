@@ -39,13 +39,14 @@
                                 </li>
                                 <li>
                                     <span class="icon flaticon-call"></span></br>
-                                    <a href="tel:+16393903194">{{ __('messages.contact.details.phone') }}</a>
+                                    <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
+                                        target="_blank">
+                                        {{ __('messages.contact.details.phone') }}
+                                    </a>
                                 </li>
-                                <li>
+                                <li class="d-flex align-items-center">
                                     <span class="icon flaticon-email-1"></span>
                                     <a href="mailto:info@opplexiptv.com">{{ __('messages.contact.details.email1') }}</a><br>
-                                    <a
-                                        href="mailto:support@opplexiptv.com">{{ __('messages.contact.details.email2') }}</a><br>
                                 </li>
                             </ul>
                             <div class="timing">{{ __('messages.contact.details.hours') }}</div>
@@ -143,8 +144,8 @@
 @stop
 
 @section('jsonld')
-<!-- Contact Page JSON-LD -->
-<script type="application/ld+json">
+    <!-- Contact Page JSON-LD -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ContactPage",

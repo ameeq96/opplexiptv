@@ -4,7 +4,7 @@
 
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
-
+        
         $meta = trans("meta.$route");
 
         $metaTitle = $meta['title'] ?? 'Default Title';

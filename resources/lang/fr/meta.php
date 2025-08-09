@@ -56,4 +56,9 @@ return [
         'description' => 'Contactez notre équipe : WhatsApp, email - demandez un essai IPTV gratuit ou support pour IPTV box, Xtream IPTV, IPTV stream player.',
         'keywords' => 'contact IPTV, support IPTV, IPTV gratuit sans code, WhatsApp IPTV, IPTV smart player, IPTV stream player, code IPTV, essai IPTV',
     ],
+    'redirect.ad' => [
+        'title' => 'Préparation de votre téléchargement...',
+        'description' => 'Veuillez patienter pendant que nous préparons votre contenu. Obtenez la meilleure configuration IPTV avec Opplex — essai gratuit, opportunités pour revendeurs, Xtreme HD IPTV, streaming 4K et assistance pour lecteur IPTV intelligent.',
+        'keywords' => 'Configuration IPTV, essai IPTV gratuit, Opplex IPTV, Xtreme HD IPTV, revendeur IPTV, streaming IPTV 4K, assistance lecteur IPTV intelligent',
+    ],
 ];

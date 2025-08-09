@@ -97,7 +97,8 @@
                                 @endforeach
                             </ul>
                             <div class="button-box">
-                                <a href="{{ url($plan['button_link']) }}" class="theme-btn btn-style-four">
+                                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_reseller', ['plan' => $plan['title'], 'price' => $plan['price']])) }}"
+                                    class="theme-btn btn-style-four" target="_blank">
                                     <span class="txt">{{ __('messages.get_started') }}</span>
                                 </a>
                             </div>

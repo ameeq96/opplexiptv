@@ -115,7 +115,7 @@ return [
     'nav_contact' => 'Contactez-nous',
     'footer_phone' => '+1 (639) 390-3194',
     'footer_email_1' => 'info@opplexiptv.com',
-    'footer_email_2' => 'support@opplexiptv.com',
+    // 'footer_email_2' => 'support@opplexiptv.com',
     'footer_address' => 'SASKATOON SK, Canada',
     'footer_rights' => 'Tous droits réservés.',
 
@@ -211,7 +211,7 @@ return [
     'contact.details.location' => 'SASKATOON SK, Canada',
     'contact.details.phone' => '+1 (639) 390-3194',
     'contact.details.email1' => 'info@opplexiptv.com',
-    'contact.details.email2' => 'support@opplexiptv.com',
+    // 'contact.details.email2' => 'support@opplexiptv.com',
     'contact.details.hours' => 'Heures d’ouverture 24h/24 7j/7 - Support pour IPTV m3u, box, et stream player',
 
     'contact.form.title' => 'Envoyer un message IPTV',
@@ -346,6 +346,42 @@ return [
     'reseller_title' => 'Panneau Revendeur | Opplex IPTV - Gérez votre activité de revente IPTV stream player, box et m3u',
 
     'movies_title' => 'Films | Opplex IPTV - Regardez vos films via Xtream IPTV, IPTV m3u ou IPTV player',
-    'whatsapp_channel' => '📢 Listes IPTV gratuites sur notre WhatsApp',
+    'whatsapp_channel' => '🎁 Essai IPTV Gratuit ! Rejoignez notre WhatsApp maintenant pour votre essai + offres exclusives ! 🚀',
 
+    'whatsapp_trial' => 'Bonjour, je souhaite commencer mon essai IPTV gratuit. Veuillez me fournir les étapes pour commencer.',
+    'whatsapp_pricing' => 'Bonjour, je souhaite en savoir plus sur vos tarifs et forfaits IPTV. Veuillez m\'envoyer les détails.',
+    'whatsapp_explore' => 'Bonjour, j\'ai vu votre contenu IPTV en vedette et je suis intéressé. Veuillez partager les détails de l\'abonnement et comment commencer.',
+    'whatsapp_reseller' => 'Bonjour, je suis intéressé par le forfait :plan (:price). Veuillez m\'envoyer plus de détails sur le package.',
+    'whatsapp_package' => 'Bonjour, je suis intéressé par le forfait :plan (:price). Veuillez m\'envoyer plus de détails sur le package.',
+    'whatsapp_footer' => 'Bonjour, je voudrais obtenir plus d\'informations sur vos services.',
+    'whatsapp_contact' => 'Bonjour, je voudrais en savoir plus sur vos coordonnées et vos services.',
+
+    'name' => 'Nom',
+    'select_panel' => 'Sélectionner le panneau',
+    'redirect.title' => 'Redirection.....',
+
+    'redirect' => [
+        'preparing' => 'Préparation de votre téléchargement...',
+        'ad_loading' => 'Publicité en cours de chargement, cliquez ci-dessous pour continuer.',
+        'click_to_download' => 'Cliquez ici pour télécharger',
+    ],
+
+
+    'email_title'   => 'Merci - Opplex IPTV',
+    'dear'          => 'Cher :name,',
+    'thank_you'     => "Merci pour votre intérêt pour notre abonnement IPTV. Vous êtes au bon endroit pour la meilleure expérience TV dans le monde.",
+    'package_details' => 'Détails de votre forfait :',
+    'package'       => 'Forfait',
+    'email'         => 'E-mail',
+    'phone'         => 'Téléphone',
+    'message'       => 'Message',
+    'contact_whatsapp' => 'Pour des réponses rapides et pour poursuivre votre abonnement, veuillez nous contacter sur WhatsApp :',
+    'regards'       => 'Cordialement,',
+    'tagline'       => "La meilleure télévision du monde",
+
+    'contact' => [
+        'intro' => 'Cher client, Merci de votre intérêt pour notre abonnement IPTV. Vous êtes au bon endroit pour la meilleure expérience télévisuelle dans le monde.',
+        'whatsapp_info' => 'Pour une réponse rapide et pour poursuivre votre abonnement, veuillez nous contacter sur WhatsApp',
+        'signature' => 'Cordialement, Opplex IPTV - La meilleure télévision au monde',
+    ],
 ];

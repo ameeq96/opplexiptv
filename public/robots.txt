@@ -6,6 +6,7 @@ Disallow: /trending
 Disallow: /fr/trending
 Disallow: /it/trending
 Disallow: /en/trending
+Disallow: /redirect
 Allow: /
 
 Sitemap: https://opplexiptv.com/sitemap.xml

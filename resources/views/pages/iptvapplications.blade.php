@@ -71,6 +71,27 @@
                                 'keywords' =>
                                     'latest-XTV-live-iptv XTV-live-iptv-download XTV-live-iptv-APK XTV-IPTV-app-download XTV-live-APK-download XTV-live-streaming-app XTV-live-TV-APK free-XTV-iptv-APK XTV-iptv-pro-APK latest-XTV-IPTV-app',
                             ],
+                            [
+                                'version' => '9Xtream Player & Downloader',
+                                'file' =>
+                                    'https://play.google.com/store/apps/details?id=com.divergentftb.xtreamplayeranddownloader',
+                                'image' => '9xtream.webp',
+                                'keywords' =>
+                                    '9Xtream-Android-App IPTV-9Xtream-Player Android-IPTV-Player-Download Xtream-Downloader-App',
+                            ],
+                            [
+                                'version' => 'IBO Player (Android)',
+                                'file' => 'https://iboplayer.com/app_downloads/ibop.apk',
+                                'image' => 'ibo.webp',
+                                'keywords' =>
+                                    'IBO-Player-Android IPTV-Player-APK IPTV-Player-for-Android IPTV-App-Download',
+                            ],
+                            [
+                                'version' => 'Star Share New (Android)',
+                                'file' => 'http://starapk1.com/starsharenew.apk',
+                                'image' => 'starshare.webp',
+                                'keywords' => 'Star-Share-IPTV-App Star-Share-Android-APK IPTV-StarShare-Download',
+                            ],
                         ],
                         'ios' => [
                             [
@@ -87,6 +108,13 @@
                                 'keywords' =>
                                     '000-Player-iOS-download 000-Player-App-Store IPTV-000-player-iPhone 000-player-iPad-app IPTV-iOS-streaming-app',
                             ],
+                            [
+                                'version' => '9Xtream Download & Play IPTV',
+                                'file' => 'https://apps.apple.com/us/app/9xtream-download-play-iptv/id6504282945',
+                                'image' => '9xtream.webp',
+                                'keywords' =>
+                                    '9Xtream-iOS-App IPTV-Player-iPhone IPTV-Player-iPad Xtream-Downloader-iOS-App',
+                            ],
                         ],
                         'windows' => [
                             [
@@ -95,6 +123,30 @@
                                 'image' => 'iptv_smarter.webp',
                                 'keywords' =>
                                     'latest-IPTV-smarters-windows IPTV-smarters-windows-download IPTV-smarters-PC IPTV-smarters-laptop IPTV-windows-app-download IPTV-smarters-for-PC IPTV-smarters-for-windows',
+                            ],
+                            [
+                                'version' => 'IBO Player (Windows x64 10+)',
+                                'file' => 'https://iboplayer.com/app_downloads/ibo_installer.exe',
+                                'image' => 'ibo.webp',
+                                'keywords' =>
+                                    'IBO-Player-Windows IPTV-Player-for-PC IPTV-Player-for-Windows IPTV-Windows-App',
+                            ],
+                        ],
+                        'macos' => [
+                            [
+                                'version' => 'IBO Player (MacOS Intel x64)',
+                                'file' => 'https://iboplayer.com/app_downloads/iboPlayer.dmg',
+                                'image' => 'ibo.webp',
+                                'keywords' =>
+                                    'IBO-Player-Mac IPTV-Player-for-MacOS IPTV-Player-MacOS-Intel IPTV-Mac-App',
+                            ],
+                        ],
+                        'linux' => [
+                            [
+                                'version' => 'IBO Player (Linux Debian/Ubuntu)',
+                                'file' => 'https://iboplayer.com/app_downloads/ibo-player_1.0.0_amd64.snap',
+                                'image' => 'ibo.webp',
+                                'keywords' => 'IBO-Player-Linux IPTV-Player-Debian IPTV-Player-Ubuntu IPTV-Linux-App',
                             ],
                         ],
                     ];
@@ -106,14 +158,18 @@
                     @foreach ($platforms as $platform => $apps)
                         <div class="{{ $platform }} mb-5">
                             <h6 class="mb-2">{{ __('messages.app.platform', ['platform' => ucfirst($platform)]) }}</h6>
-                            </h6>
+
                             @foreach ($apps as $app)
-                                @php $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL); @endphp
-                                <a target="_blank" href="{{ $isExternal ? $app['file'] : asset('downloads/' . $app['file']) }}"
-                                    class="btn btn-light" keywords="{{ $app['keywords'] }}"
-                                    aria-label="Download {{ $app['version'] }} for {{ ucfirst($platform) }}"
-                                    {{ $isExternal ? '' : 'download' }}>
-                                    <img width="40px" height="40" loading="lazy"
+                                @php
+                                    $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL);
+                                    $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
+                                    $redirectUrl = route('redirect.ad') . '?target=' . urlencode($downloadUrl);
+                                @endphp
+
+                                <a target="_blank" href="{{ $redirectUrl }}" class="btn btn-light"
+                                    keywords="{{ $app['keywords'] }}"
+                                    aria-label="Download {{ $app['version'] }} for {{ ucfirst($platform) }}">
+                                    <img width="40" height="40" loading="lazy"
                                         src="{{ asset('images/' . $app['image']) }}" alt="{{ $app['version'] }}">
                                     {{ __('messages.app.download_button', ['version' => $app['version']]) }}
                                 </a>

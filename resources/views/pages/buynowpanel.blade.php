@@ -61,7 +61,7 @@
                                     <div class="row clearfix">
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="username" placeholder="{{ __('form.name') }}"
+                                            <input type="text" name="username" placeholder="{{ __('messages.name') }}"
                                                 required>
                                         </div>
 
@@ -71,7 +71,7 @@
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <select name="package" required>
-                                                <option value="">{{ __('form.select_panel') }}</option>
+                                                <option value="">{{ __('messages.select_panel') }}</option>
                                                 @foreach ($packages as $package)
                                                     <option value="{{ $package['value'] }}">{{ $package['label'] }}</option>
                                                 @endforeach
@@ -80,6 +80,12 @@
 
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <input type="text" name="phone" placeholder="Phone" required>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                            <input type="text" name="captcha"
+                                                placeholder="{{ __('messages.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}"
+                                                required>
                                         </div>
 
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">

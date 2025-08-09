@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\{BuyNowEmail, ContactEmail, SubscribeEmail};
+use App\Mail\{BuyNowAutoReply, BuyNowEmail, ContactAutoReply, ContactEmail, SubscribeEmail};
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{Cache, Http, Mail};
+use Illuminate\Support\Facades\{Cache, Http, Log, Mail};
 use Jenssegers\Agent\Agent;
 
 class HomeController extends Controller
@@ -247,7 +247,12 @@ class HomeController extends Controller
 
     public function buynowpanel()
     {
-        return view("pages.buynowpanel");
+        $num1 = rand(1, 10);
+        $num2 = rand(1, 10);
+
+        session(['captcha_sum' => $num1 + $num2]);
+
+        return view("pages.buynowpanel", compact('num1', 'num2'));
     }
 
     public function iptvApplications()
@@ -284,6 +289,8 @@ class HomeController extends Controller
 
             Mail::to('info@opplexiptv.com')->send(new ContactEmail($details));
 
+            Mail::to($request->email)->send(new ContactAutoReply($details));
+
             return back()->with('success', 'Your message has been sent successfully!');
         } catch (Exception $e) {
             return back()->with('error', 'There was an error sending your message. Please try again later.');
@@ -315,8 +322,10 @@ class HomeController extends Controller
 
             Mail::to('info@opplexiptv.com')->send(new BuyNowEmail($details));
 
+            Mail::to($request->email)->send(new BuyNowAutoReply($details));
+
             return back()->with('success', 'Your message has been sent successfully!');
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return back()->with('error', 'There was an error sending your message. Please try again later.');
         }
     }

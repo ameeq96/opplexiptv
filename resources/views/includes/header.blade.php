@@ -5,9 +5,12 @@
             <div class="auto-container clearfix">
 
                 <div class="pull-left">
-                    <ul class="info d-flex justify-content-center align-items-center">
-                        <li><a href="https://wa.me/16393903194" target="_blank" rel="noopener noreferrer"><span
-                                    class="icon flaticon-maps-and-flags"></span> {{ __('messages.header_whatsapp') }}</a>
+                    <ul class="info d-flex justify-content-center align-items-center position-absolute">
+                        <li>
+                            <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-phone"></i> {{ __('messages.header_whatsapp') }}
+                            </a>
                         </li>
                         <li>
                             <marquee behavior="scroll" direction="left" scrollamount="6">
@@ -16,7 +19,6 @@
                                     style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
                                     {{ __('messages.whatsapp_channel') }}
                                 </a>
-
                             </marquee>
                         </li>
                     </ul>
@@ -45,7 +47,6 @@
                             style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
                             {{ __('messages.whatsapp_channel') }}
                         </a>
-
                     </marquee>
                 </div>
             </div>

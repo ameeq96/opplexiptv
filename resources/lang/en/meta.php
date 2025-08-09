@@ -56,4 +56,9 @@ return [
         'description' => 'Need help with best iptv setup? Contact Opplex for free trial, reseller info, xtreme hd iptv, 4K streaming and iptv smart player support.',
         'keywords' => 'iptv support, iptv free trial, contact iptv, xtreme hd iptv, iptv box, aroma iptv, iptv smart player',
     ],
+    'redirect.ad' => [
+        'title' => 'Preparing Your Download...',
+        'description' => 'Please wait while we prepare your content. Get the best IPTV setup with Opplex — free trial, reseller opportunities, Xtreme HD IPTV, 4K streaming, and IPTV smart player support.',
+        'keywords' => 'IPTV setup, IPTV free trial, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player support',
+    ],
 ];

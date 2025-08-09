@@ -16,14 +16,16 @@
                      <span class="icon">
                          <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" />
                      </span><br>
-                     <a href="tel:+16393903194">{{ __('messages.footer_phone') }}</a>
+                     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_footer')) }}"
+                         target="_blank">
+                         {{ __('messages.footer_phone') }}
+                     </a>
                  </li>
                  <li>
                      <span class="icon">
                          <img src="{{ asset('images/icons/icon-2.webp') }}" alt="Email Icon" />
-                     </span>
+                     </span><br>
                      <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
-                     <a href="mailto:support@opplexiptv.com">{{ __('messages.footer_email_2') }}</a><br>
                  </li>
                  <li>
                      <span class="icon">

@@ -56,4 +56,9 @@ return [
         'description' => 'Hai bisogno di aiuto o vuoi testare la nostra IPTV? Contattaci via WhatsApp o email per ricevere lista IPTV m3u gratuita o prova su IPTV Smarters.',
         'keywords' => 'supporto IPTV, contattare IPTV, WhatsApp IPTV Italia, IPTV gratis senza codice, IPTV Smarters Pro, IPTV player Italia',
     ],
+    'redirect.ad' => [
+        'title' => 'Preparazione del download...',
+        'description' => 'Attendere mentre prepariamo il contenuto. Ottieni la migliore configurazione IPTV con Opplex — prova gratuita, opportunità per rivenditori, Xtreme HD IPTV, streaming 4K e supporto per IPTV smart player.',
+        'keywords' => 'Configurazione IPTV, prova IPTV gratuita, Opplex IPTV, Xtreme HD IPTV, rivenditore IPTV, streaming IPTV 4K, supporto IPTV smart player',
+    ],
 ];

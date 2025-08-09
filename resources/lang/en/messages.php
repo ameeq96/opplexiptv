@@ -96,7 +96,7 @@ return [
   'nav_contact' => 'Contact Us',
   'footer_phone' => '+1 (639) 390-3194',
   'footer_email_1' => 'info@opplexiptv.com',
-  'footer_email_2' => 'support@opplexiptv.com',
+  // 'footer_email_2' => 'support@opplexiptv.com',
   'footer_address' => 'SASKATOON SK, Canada',
   'footer_rights' => 'All Rights Reserved.',
 
@@ -196,7 +196,7 @@ return [
   'contact.details.location' => 'SASKATOON SK, Canada',
   'contact.details.phone' => '+1 (639) 390-3194',
   'contact.details.email1' => 'info@opplexiptv.com',
-  'contact.details.email2' => 'support@opplexiptv.com',
+  // 'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'Working hours 24/7',
 
   'contact.form.title' => 'Send a Message',
@@ -346,5 +346,45 @@ return [
   'movies_title' => 'Movies | Opplex IPTV - Watch via IPTV Box, Xtreme HD, and Aroma IPTV',
 
   // WhatsApp CTA
-  'whatsapp_channel' => '📢 Stay Updated - Join Our WhatsApp Channel for IPTV News & Offers!',
+  'whatsapp_channel' => '🎁 Free IPTV Trial! Join Our WhatsApp Now for Your Trial + Hot Offers! 🚀',
+
+  'whatsapp_trial' => 'Hello, I would like to start my free IPTV trial. Please provide me with the steps to get started.',
+  'whatsapp_pricing' => 'Hi, I want to know more about your IPTV pricing plans and packages. Please send me details.',
+  'whatsapp_explore' => 'Hi, I saw your featured IPTV content and I am interested. Please share subscription details and how to start.',
+  'whatsapp_reseller' => 'Hello, I am interested in the :plan plan (:price). Please send me more details about the package.',
+  'whatsapp_package' => 'Hello, I am interested in the :plan plan (:price). Please send me more details about the package.',
+  'whatsapp_footer' => 'Hello, I would like to get more information about your services.',
+  'whatsapp_contact' => 'Hello, I would like to know more about your contact details and services.',
+
+
+  // Buy Now
+  'name' => 'Name',
+  'select_panel' => 'Select Panel',
+
+  'redirect.title' => 'Redirecting.....',
+
+  'redirect' => [
+    'preparing' => 'Preparing your download...',
+    'ad_loading' => 'Ad is loading, please click below to continue.',
+    'click_to_download' => 'Click here to Download',
+  ],
+
+
+  'email_title'   => 'Thank You - Opplex IPTV',
+  'dear'          => 'Dear :name,',
+  'thank_you'     => "Thank you for your interest in our IPTV subscription. You're in the right place for the best TV experience worldwide.",
+  'package_details' => 'Your Package Details:',
+  'package'       => 'Package',
+  'email'         => 'Email',
+  'phone'         => 'Phone',
+  'message'       => 'Message',
+  'contact_whatsapp' => 'For quick responses and to proceed with your subscription, please contact us on WhatsApp:',
+  'regards'       => 'Best regards,',
+  'tagline'       => "The World's Best TV",
+
+  'contact' => [
+    'intro' => 'Dear Customer, Thank you for your interest in our IPTV subscription. You’re in the right place for the best TV experience worldwide.',
+    'whatsapp_info' => 'For quick responses and to proceed with your subscription, please contact us on WhatsApp',
+    'signature' => 'Best regards, Opplex IPTV - The World’s Best TV',
+  ],
 ];

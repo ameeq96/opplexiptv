@@ -112,7 +112,7 @@ return [
 
     'footer_phone' => '+1 (639) 390-3194',
     'footer_email_1' => 'info@opplexiptv.com',
-    'footer_email_2' => 'support@opplexiptv.com',
+    // 'footer_email_2' => 'support@opplexiptv.com',
     'footer_address' => 'SASKATOON SK, Canada',
     'footer_rights' => 'Tutti i diritti riservati.',
 
@@ -206,7 +206,7 @@ return [
     'contact.details.location' => 'SASKATOON SK, Canada',
     'contact.details.phone' => '+1 (639) 390-3194',
     'contact.details.email1' => 'info@opplexiptv.com',
-    'contact.details.email2' => 'support@opplexiptv.com',
+    // 'contact.details.email2' => 'support@opplexiptv.com',
     'contact.details.hours' => 'Orari lavorativi 24/7 - supporto per IPTV Smarters, Smart IPTV e liste IPTV gratuite',
 
     'contact.form.title' => 'Invia un messaggio',
@@ -341,6 +341,41 @@ return [
     'view.services' => 'Vedi i servizi IPTV streaming ora',
 
     'movies_title' => 'Movies | Opplex IPTV - Guarda film tramite IPTV Smarters, Smart IPTV e IPTV Extreme',
-    'whatsapp_channel' => '📢 Unisciti al nostro canale WhatsApp per liste IPTV gratis',
+    'whatsapp_channel' => '🎁 Prova IPTV Gratis! Unisciti al nostro WhatsApp ora per la tua prova + offerte imperdibili! 🚀',
 
+    'whatsapp_trial' => 'Ciao, vorrei iniziare la mia prova gratuita di IPTV. Per favore, inviami i passaggi per iniziare.',
+    'whatsapp_pricing' => 'Ciao, vorrei sapere di più sui vostri piani e pacchetti IPTV. Per favore, inviami i dettagli.',
+    'whatsapp_explore' => 'Ciao, ho visto il tuo contenuto IPTV in evidenza e sono interessato. Per favore, condividi i dettagli dell\'abbonamento e come iniziare.',
+    'whatsapp_reseller' => 'Ciao, sono interessato al piano :plan (:price). Per favore, inviami maggiori dettagli sul pacchetto.',
+    'whatsapp_package' => 'Ciao, sono interessato al piano :plan (:price). Per favore, inviami maggiori dettagli sul pacchetto.',
+    'whatsapp_footer' => 'Ciao, vorrei avere maggiori informazioni sui vostri servizi.',
+    'whatsapp_contact' => 'Ciao, vorrei saperne di più sui vostri recapiti e servizi.',
+
+    'name' => 'Nome',
+    'select_panel' => 'Seleziona pannello',
+    'redirect.title' => 'Reindirizzamento.....',
+
+    'redirect' => [
+        'preparing' => 'Preparazione del download...',
+        'ad_loading' => 'Annuncio in caricamento, clicca qui sotto per continuare.',
+        'click_to_download' => 'Clicca qui per scaricare',
+    ],
+
+    'email_title'   => 'Grazie - Opplex IPTV',
+    'dear'          => 'Caro :name,',
+    'thank_you'     => "Grazie per il tuo interesse per il nostro abbonamento IPTV. Sei nel posto giusto per la migliore esperienza TV in tutto il mondo.",
+    'package_details' => 'Dettagli del tuo pacchetto:',
+    'package'       => 'Pacchetto',
+    'email'         => 'Email',
+    'phone'         => 'Telefono',
+    'message'       => 'Messaggio',
+    'contact_whatsapp' => 'Per risposte rapide e per procedere con il tuo abbonamento, contattaci su WhatsApp:',
+    'regards'       => 'Cordiali saluti,',
+    'tagline'       => "La migliore TV del mondo",
+
+    'contact' => [
+        'intro' => 'Caro cliente, Grazie per il tuo interesse nel nostro abbonamento IPTV. Sei nel posto giusto per la migliore esperienza televisiva al mondo.',
+        'whatsapp_info' => 'Per risposte rapide e per procedere con il tuo abbonamento, contattaci su WhatsApp',
+        'signature' => 'Cordiali saluti, Opplex IPTV - La migliore TV del mondo',
+    ],
 ];
