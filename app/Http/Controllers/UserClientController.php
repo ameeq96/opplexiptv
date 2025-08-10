@@ -27,10 +27,17 @@ class UserClientController extends Controller
             $query->where('name', 'not like', '%iptv%');
         }
 
-        $clients = $query->orderBy('id', 'desc')->paginate(10);
+        // Default to 10 if not provided
+        $perPage = $request->get('per_page', 10);
+
+        $clients = $query->orderBy('id', 'desc')->paginate($perPage);
+
+        // Keep per_page & other query params in pagination links
+        $clients->appends($request->all());
 
         return view('admin.clients.index', compact('clients'));
     }
+
 
 
     public function create()

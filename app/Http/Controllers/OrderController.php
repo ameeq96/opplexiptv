@@ -13,6 +13,7 @@ class OrderController extends Controller
     public function index(Request $request)
     {
         $query = Order::with('user');
+        $today = Carbon::today();
 
         if ($request->has('search') && $request->search != '') {
             $search = $request->search;
@@ -25,8 +26,6 @@ class OrderController extends Controller
                     ->orWhere('iptv_username', 'like', "%$search%");
             });
         }
-
-        $today = Carbon::today();
 
         if ($request->filled('date_filter')) {
             switch ($request->date_filter) {
@@ -65,10 +64,13 @@ class OrderController extends Controller
             }
         }
 
-        $orders = $query->orderBy('id', 'desc')->paginate(10);
+        $perPage = $request->get('per_page', 10);
+        $orders = $query->orderBy('id', 'desc')->paginate($perPage);
+        $orders->appends($request->all());
 
         return view('admin.orders.index', compact('orders'));
     }
+
 
     public function create()
     {

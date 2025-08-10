@@ -16,6 +16,14 @@
             <form action="{{ route('clients.index') }}" method="GET" enctype="multipart/form-data"
                 class="d-flex flex-wrap align-items-center gap-2">
 
+                <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
+                    @foreach ([10, 20, 30, 40, 100] as $size)
+                        <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
+                            Show {{ $size }}
+                        </option>
+                    @endforeach
+                </select>
+
                 <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
                     placeholder="Search clients...">
 
