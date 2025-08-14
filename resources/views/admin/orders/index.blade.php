@@ -42,7 +42,7 @@
                     <select name="expiry_status" class="form-select" onchange="this.form.submit()">
                         <option value="">-- Expiry Filter --</option>
                         <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon
-                            (Next 3 Days)</option>
+                            (Next 5 Days)</option>
                         <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already
                             Expired</option>
                     </select>

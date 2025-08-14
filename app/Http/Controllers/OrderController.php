@@ -60,17 +60,18 @@ class OrderController extends Controller
                     ->whereDate('expiry_date', '<', $today);
             } elseif ($request->expiry_status === 'soon') {
                 $query->whereNotNull('expiry_date')
-                    ->whereBetween('expiry_date', [$today, $today->copy()->addDays(3)]);
+                    ->whereBetween('expiry_date', [$today, $today->copy()->addDays(5)]);
             }
         }
 
         $query->orderByRaw("
-        CASE 
-            WHEN expiry_date IS NULL THEN 999999
-            WHEN expiry_date < NOW() THEN 0
-            ELSE DATEDIFF(expiry_date, NOW())
-        END ASC
-    ");
+            CASE 
+                WHEN expiry_date IS NULL THEN 999999
+                WHEN expiry_date BETWEEN NOW() AND DATE_ADD(NOW(), INTERVAL 7 DAY) THEN 0
+                WHEN expiry_date >= NOW() THEN DATEDIFF(expiry_date, NOW())
+                ELSE 999998
+            END ASC
+        ");
 
         $perPage = $request->get('per_page', 10);
         $orders = $query->paginate($perPage);
