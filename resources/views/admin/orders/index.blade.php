@@ -209,12 +209,14 @@
                                             strtoupper($order->status) .
                                             '.',
                                     );
-                                    $waUrl = "https://wa.me/{$phone}?text={$message}";
+
+                                    $waBusinessUrl = "intent://send?phone={$phone}&text={$message}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end";
                                 @endphp
 
-                                <a href="{{ $waUrl }}" target="_blank" class="btn btn-sm btn-outline-success me-1">
-                                    WhatsApp
+                                <a href="{{ $waBusinessUrl }}" target="_blank" class="btn btn-sm btn-outline-success me-1">
+                                    WhatsApp Business
                                 </a>
+
 
                                 <form action="{{ route('orders.destroy', $order) }}" method="POST" class="d-inline"
                                     onsubmit="return confirm('Delete this order?')">
