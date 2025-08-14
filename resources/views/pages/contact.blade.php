@@ -142,16 +142,3 @@
     </section>
     <!-- End Contact Page Section -->
 @stop
-
-@section('jsonld')
-    <!-- Contact Page JSON-LD -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contact Opplex IPTV",
-  "url": "{{ url('contact') }}",
-  "description": "Need help? Contact Opplex IPTV for support with packages, apps, payments, and setup. Available 24/7."
-}
-</script>
-@endsection

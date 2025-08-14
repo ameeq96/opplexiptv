@@ -194,17 +194,3 @@
 
 
 @stop
-
-@section('jsonld')
-    <!-- Movies & Series Page JSON-LD -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "IPTV Movies & Web Series",
-  "url": "{{ route('movies') }}",
-  "description": "Access 50,000+ movies and 5,000+ web series through Opplex IPTV, including Netflix, Prime Video, and more.",
-  "numberOfItems": 55000
-}
-</script>
-@endsection
