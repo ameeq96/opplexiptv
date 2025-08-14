@@ -18,7 +18,7 @@
             <form action="{{ route('orders.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
 
-                <div class="row mb-3">
+                <div class="row mb-2">
                     <div class="col-md-6">
                         <label for="user_id" class="form-label">Client</label>
                         <select name="user_id" class="form-select select2" required>
@@ -33,7 +33,7 @@
 
                     <div class="col-md-6">
                         <label for="package" class="form-label">Package Name</label>
-                        <select name="package" class="form-select" required>
+                        <select name="package" id="package" class="form-select" required>
                             <option value="">-- Select Package --</option>
                             <optgroup label="Opplex IPTV">
                                 <option value="1 Month Opplex IPTV Account">1 Month</option>
@@ -47,12 +47,20 @@
                                 <option value="6 Months Starshare Account">6 Months</option>
                                 <option value="12 Months Starshare Account">12 Months</option>
                             </optgroup>
+                            <option value="other">Other</option>
                         </select>
                     </div>
 
                 </div>
 
-                <div class="row mb-3">
+                <div class="col-md-12" id="custom_package_field" style="display:none;">
+                    <label for="custom_package" class="form-label">Custom Package Name</label>
+                    <input type="text" name="custom_package" id="custom_package" class="form-control"
+                        placeholder="Enter your package name">
+                </div>
+
+
+                <div class="row mb-2 mt-1">
                     <div class="col-md-12">
                         <label for="iptv_username" class="form-label">IPTV Username</label>
                         <input type="text" name="iptv_username" class="form-control" placeholder="e.g. opplex_1234">

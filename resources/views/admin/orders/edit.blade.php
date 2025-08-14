@@ -41,7 +41,7 @@
 
                     <div class="col-md-6">
                         <label for="package" class="form-label">Package Name</label>
-                        <select name="package" class="form-select" required>
+                        <select name="package" id="package" class="form-select" required>
                             <option value="">-- Select Package --</option>
                             <optgroup label="Opplex IPTV">
                                 <option value="1 Month Opplex IPTV Account"
@@ -59,7 +59,8 @@
                             </optgroup>
                             <optgroup label="Starshare">
                                 <option value="1 Month Starshare Account"
-                                    {{ $order->package == '1 Month Starshare Account' ? 'selected' : '' }}>1 Month</option>
+                                    {{ $order->package == '1 Month Starshare Account' ? 'selected' : '' }}>1 Month
+                                </option>
                                 <option value="3 Months Starshare Account"
                                     {{ $order->package == '3 Months Starshare Account' ? 'selected' : '' }}>3 Months
                                 </option>
@@ -70,7 +71,27 @@
                                     {{ $order->package == '12 Months Starshare Account' ? 'selected' : '' }}>12 Months
                                 </option>
                             </optgroup>
+                            <option value="other" {{ $order->package == 'other' ? 'selected' : '' }}>Other</option>
                         </select>
+                    </div>
+
+                    <div class="col-md-12 mt-2" id="custom_package_field" style="display: none;">
+                        <label for="custom_package" class="form-label">Custom Package Name</label>
+                        <input type="text" name="custom_package" id="custom_package" class="form-control"
+                            placeholder="Enter your package name"
+                            value="{{ $order->package != 'other' &&
+                            !in_array($order->package, [
+                                '1 Month Opplex IPTV Account',
+                                '3 Months Opplex IPTV Account',
+                                '6 Months Opplex IPTV Account',
+                                '12 Months Opplex IPTV Account',
+                                '1 Month Starshare Account',
+                                '3 Months Starshare Account',
+                                '6 Months Starshare Account',
+                                '12 Months Starshare Account',
+                            ])
+                                ? $order->package
+                                : '' }}">
                     </div>
 
                 </div>

@@ -134,7 +134,7 @@
                                     </span>
                                 </li>
                             </ul>
-                            <h4>{{ $package['title'] }}<span aria-label="Price">{{ $package['price'] }}</span></h4>
+                            <h4>{{ $package['title'] }}<span aria-label="Price">{!! $package['price'] !!}</span></h4>
                         </div>
                         <div class="lower-box">
                             <ul class="price-list" aria-label="Package Features">
@@ -180,7 +180,7 @@
                                         </li>
                                     @endforeach
                                 </ul>
-                                <h4>{{ $plan['title'] }}<span aria-label="Price">{{ $plan['price'] }}</span></h4>
+                                <h4>{{ $plan['title'] }}<span aria-label="Price">{!! $plan['price'] !!}</span></h4>
                             </div>
                             <div class="lower-box">
                                 <ul class="price-list" aria-label="Reseller Plan Features">

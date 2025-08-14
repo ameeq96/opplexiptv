@@ -20,6 +20,7 @@ return new class extends Migration
             $table->enum('status', ['pending', 'active', 'expired'])->default('pending');
             $table->string('payment_method')->nullable();
             $table->string('custom_payment_method')->nullable();
+            $table->string('custom_package')->nullable();
             $table->date('buying_date')->nullable();
             $table->date('expiry_date')->nullable();
             $table->string('screenshot')->nullable();

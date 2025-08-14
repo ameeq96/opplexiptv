@@ -185,6 +185,36 @@
             }
         });
 
+        function toggleOtherField2() {
+            const select = document.getElementById('payment_method');
+            const other = document.getElementById('other-payment-method');
+
+            if (!select || !other) return;
+
+            other.style.display = select.value === 'other' ? 'block' : 'none';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let packageSelect = document.getElementById('package');
+            let customField = document.getElementById('custom_package_field');
+            let customInput = document.getElementById('custom_package');
+
+            if (packageSelect) {
+                packageSelect.addEventListener('change', function() {
+                    if (this.value === 'other') {
+                        customField.style.display = 'block';
+                    } else {
+                        customField.style.display = 'none';
+                        customInput.value = '';
+                    }
+                });
+
+                if (packageSelect.value === 'other') {
+                    customField.style.display = 'block';
+                }
+            }
+        });
+
         function sendAll() {
             document.querySelectorAll('table a.btn-outline-success').forEach(a => {
                 window.open(a.href, '_blank');
@@ -198,8 +228,13 @@
             });
         });
 
-        document.getElementById('excludeIPTV').addEventListener('change', function() {
-            this.form.submit();
+        document.addEventListener('DOMContentLoaded', function() {
+            let exclude = document.getElementById('excludeIPTV');
+            if (exclude) {
+                exclude.addEventListener('change', function() {
+                    this.form.submit();
+                });
+            }
         });
 
         function showScreenshot(src) {

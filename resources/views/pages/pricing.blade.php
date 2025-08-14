@@ -30,17 +30,8 @@
             <div class="row clearfix">
 
                 <!-- Image Column -->
-                <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="transparent-image">
-                            <iframe title="Opplex IPTV Video Overview" aria-label="Opplex IPTV Introduction Video"
-                                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F61565476366548%2Fvideos%2F8317598665026269%2F&show_text=false&width=476&t=0"
-                                width="476" height="476" style="border:none;overflow:hidden" scrolling="no"
-                                frameborder="0" allowfullscreen="true"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                            </iframe>
-                        </div>
-                    </div>
+                <div class="image-column col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+                       
                 </div>
 
                 <!-- Content Column -->
@@ -51,7 +42,7 @@
                             <h2>{{ __('messages.sub_heading') }}</h2>
                         </div>
                         <div class="text">{{ __('messages.description') }}</div>
-                        <div class="price">{{ __('messages.price') }}</div>
+                        <div class="price">{!! __('messages.price') !!}</div>
                         <a href="{{ route('about') }}" class="theme-btn btn-style-two"
                             aria-label="Read more about Opplex IPTV">
                             <span class="txt">{{ __('messages.read_more') }} <i class="lnr lnr-arrow-right"

@@ -152,47 +152,44 @@
 
     <!-- End Page Title -->
 
-    <div class="pagination-wrapper mb-4">
-        <ul class="pagination justify-content-center">
-            <!-- Previous Arrow -->
-            @if ($page > 1)
-                <li class="page-item">
-                    <a class="page-link" href="{{ route('movies', ['page' => $page - 1, 'search' => $query]) }}"
-                        aria-label="Go to previous page">
-                        &laquo;
-                    </a>
-                </li>
-            @endif
+  <div class="pagination-wrapper mb-4">
+    <ul class="pagination justify-content-center flex-nowrap" style="overflow-x:auto; padding:0 10px;">
+        <!-- Previous Arrow -->
+        @if ($page > 1)
+            <li class="page-item me-1">
+                <a class="page-link" href="{{ route('movies', ['page' => $page - 1, 'search' => $query]) }}"
+                   aria-label="Go to previous page">&laquo;</a>
+            </li>
+        @endif
 
-            <!-- Dynamic Pagination -->
-            @php
-                $start = max(1, $page - 5);
-                $end = min($start + 9, $totalPages);
-                if ($end - $start < 9) {
-                    $start = max(1, $end - 9);
-                }
-            @endphp
+        <!-- Dynamic Pagination -->
+        @php
+            $start = max(1, $page - 2); // show 5 pages total
+            $end = min($start + 4, $totalPages);
+            if ($end - $start < 4) {
+                $start = max(1, $end - 4);
+            }
+        @endphp
 
-            @for ($i = $start; $i <= $end; $i++)
-                <li class="page-item {{ $i == $page ? 'active' : '' }}">
-                    <a class="page-link" href="{{ route('movies', ['page' => $i]) }}"
-                        aria-label="Go to page {{ $i }}">
-                        {{ $i }}
-                    </a>
-                </li>
-            @endfor
+        @for ($i = $start; $i <= $end; $i++)
+            <li class="page-item {{ $i == $page ? 'active' : '' }} me-1">
+                <a class="page-link" href="{{ route('movies', ['page' => $i]) }}"
+                   aria-label="Go to page {{ $i }}">
+                    {{ $i }}
+                </a>
+            </li>
+        @endfor
 
-            <!-- Next Arrow -->
-            @if ($page < $totalPages)
-                <li class="page-item">
-                    <a class="page-link" href="{{ route('movies', ['page' => $page + 1]) }}"
-                        aria-label="Go to next page">
-                        {{ __('messages.next') }} &raquo;
-                    </a>
-                </li>
-            @endif
-        </ul>
-    </div>
+        <!-- Next Arrow -->
+        @if ($page < $totalPages)
+            <li class="page-item ms-1">
+                <a class="page-link" href="{{ route('movies', ['page' => $page + 1]) }}"
+                   aria-label="Go to next page">{{ __('messages.next') }} &raquo;</a>
+            </li>
+        @endif
+    </ul>
+</div>
+
 
 
 

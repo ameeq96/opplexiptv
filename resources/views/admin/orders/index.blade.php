@@ -4,65 +4,71 @@
 
 @section('content')
     <div class="card shadow-sm mb-4">
-    <div class="card-body">
-        <form action="{{ route('orders.index') }}" method="GET" class="row g-2 align-items-center">
+        <div class="card-body">
+            <form action="{{ route('orders.index') }}" method="GET" class="row g-2 align-items-center">
 
-            <div class="col-auto">
-                <select name="per_page" class="form-select" onchange="this.form.submit()">
-                    @foreach ([10, 20, 30, 40, 100] as $size)
-                        <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
-                            Show {{ $size }}
+                <div class="col-auto">
+                    <select name="per_page" class="form-select" onchange="this.form.submit()">
+                        @foreach ([10, 20, 30, 40, 100] as $size)
+                            <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
+                                Show {{ $size }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+
+                <div class="col-auto">
+                    <input type="text" name="search" value="{{ request('search') }}" class="form-control"
+                        placeholder="Search orders...">
+                </div>
+
+                <div class="col-auto">
+                    <select name="date_filter" class="form-select" onchange="this.form.submit()">
+                        <option value="">-- Date Filter --</option>
+                        <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
+                        <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday
                         </option>
-                    @endforeach
-                </select>
-            </div>
+                        <option value="7days" {{ request('date_filter') == '7days' ? 'selected' : '' }}>Last 7 Days
+                        </option>
+                        <option value="30days" {{ request('date_filter') == '30days' ? 'selected' : '' }}>Last 30 Days
+                        </option>
+                        <option value="90days" {{ request('date_filter') == '90days' ? 'selected' : '' }}>Last 90 Days
+                        </option>
+                        <option value="year" {{ request('date_filter') == 'year' ? 'selected' : '' }}>This Year</option>
+                    </select>
+                </div>
 
-            <div class="col-auto">
-                <input type="text" name="search" value="{{ request('search') }}" class="form-control"
-                    placeholder="Search orders...">
-            </div>
+                <div class="col-auto">
+                    <select name="expiry_status" class="form-select" onchange="this.form.submit()">
+                        <option value="">-- Expiry Filter --</option>
+                        <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon
+                            (Next 3 Days)</option>
+                        <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already
+                            Expired</option>
+                    </select>
+                </div>
 
-            <div class="col-auto">
-                <select name="date_filter" class="form-select" onchange="this.form.submit()">
-                    <option value="">-- Date Filter --</option>
-                    <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
-                    <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday</option>
-                    <option value="7days" {{ request('date_filter') == '7days' ? 'selected' : '' }}>Last 7 Days</option>
-                    <option value="30days" {{ request('date_filter') == '30days' ? 'selected' : '' }}>Last 30 Days</option>
-                    <option value="90days" {{ request('date_filter') == '90days' ? 'selected' : '' }}>Last 90 Days</option>
-                    <option value="year" {{ request('date_filter') == 'year' ? 'selected' : '' }}>This Year</option>
-                </select>
-            </div>
+                <div class="col-auto">
+                    <input type="date" name="start_date" value="{{ request('start_date') }}" class="form-control">
+                </div>
 
-            <div class="col-auto">
-                <select name="expiry_status" class="form-select" onchange="this.form.submit()">
-                    <option value="">-- Expiry Filter --</option>
-                    <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon (Next 3 Days)</option>
-                    <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already Expired</option>
-                </select>
-            </div>
+                <div class="col-auto">
+                    <input type="date" name="end_date" value="{{ request('end_date') }}" class="form-control">
+                </div>
 
-            <div class="col-auto">
-                <input type="date" name="start_date" value="{{ request('start_date') }}" class="form-control">
-            </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" type="submit">Filter</button>
+                </div>
 
-            <div class="col-auto">
-                <input type="date" name="end_date" value="{{ request('end_date') }}" class="form-control">
-            </div>
+                <div class="col ms-auto text-end">
+                    <a href="{{ route('orders.create') }}" class="btn btn-dark">
+                        <i class="bi bi-plus-lg me-1"></i>
+                    </a>
+                </div>
 
-            <div class="col-auto">
-                <button class="btn btn-primary" type="submit">Filter</button>
-            </div>
-
-            <div class="col ms-auto text-end">
-                <a href="{{ route('orders.create') }}" class="btn btn-dark">
-                    <i class="bi bi-plus-lg me-1"></i>
-                </a>
-            </div>
-
-        </form>
+            </form>
+        </div>
     </div>
-</div>
 
 
     @if (session('success'))
@@ -85,6 +91,7 @@
                         </th>
                         <th>Client</th>
                         <th>Package</th>
+                        <th>Days Left</th>
                         <th>IPTV Username</th>
                         <th>Price</th>
                         <th>Status</th>
@@ -102,7 +109,49 @@
                                 <input type="checkbox" name="order_ids[]" value="{{ $order->id }}">
                             </td>
                             <td>{{ $order->user->name }}</td>
-                            <td>{{ $order->package }}</td>
+                            <td>
+                                @php
+                                    // All predefined packages list
+                                    $defaultPackages = [
+                                        '1 Month Opplex IPTV Account',
+                                        '3 Months Opplex IPTV Account',
+                                        '6 Months Opplex IPTV Account',
+                                        '12 Months Opplex IPTV Account',
+                                        '1 Month Starshare Account',
+                                        '3 Months Starshare Account',
+                                        '6 Months Starshare Account',
+                                        '12 Months Starshare Account',
+                                    ];
+                                @endphp
+
+                                @if (!in_array($order->package, $defaultPackages))
+                                    <span>{{ $order->custom_package }}</span>
+                                @else
+                                    {{ $order->package }}
+                                @endif
+                            </td>   
+                            <td>
+                                @if ($order->expiry_date)
+                                    @php
+                                        $daysLeft = \Carbon\Carbon::now()->diffInDays(
+                                            \Carbon\Carbon::parse($order->expiry_date),
+                                            false,
+                                        );
+                                    @endphp
+
+                                    @if ($daysLeft < 0)
+                                        <span class="text-danger">Expired</span>
+                                    @else
+                                        <span class="{{ $daysLeft <= 3 ? 'text-warning fw-bold' : '' }}">
+                                            {{ $daysLeft }} days
+                                        </span>
+                                    @endif
+                                @else
+                                    <span class="text-muted">N/A</span>
+                                @endif
+                            </td>
+
+
                             <td>{{ $order->iptv_username ?? '-' }}</td>
                             <td>{{ $order->currency }} {{ number_format($order->price, 2) }}</td>
                             <td>
@@ -192,7 +241,8 @@
     </div>
 
     <!-- Screenshot Lightbox Modal -->
-    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel" aria-hidden="true">
+    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark position-relative border-0">
 

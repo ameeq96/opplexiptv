@@ -34,7 +34,7 @@
                 <div class="content-column">
                     <h2>{{ __('messages.sub_heading') }}</h2>
                     <div class="text">{{ __('messages.description') }}</div>
-                    <div class="price">{{ __('messages.price') }}</div>
+                    <div class="price">{!! __('messages.price') !!}</div>
                     <a href="{{ route('about') }}" class="theme-btn btn-style-four"
                         aria-label="Read more about Opplex IPTV">
                         <span class="txt">{{ __('messages.read_more') }}

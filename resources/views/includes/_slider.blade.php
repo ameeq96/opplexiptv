@@ -13,15 +13,17 @@
             </p>
 
             <div class="btn-group">
-                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}" target="_blank"
+
+                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_pricing')) }}" target="_blank"
                     class="btn btn-primary">
+                    {{ __('messages.see_pricing') }} <span>➤</span>
+                </a>
+
+                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}" target="_blank"
+                    class="btn btn-outline">
                     {{ __('messages.start_trial') }} <span>↗</span>
                 </a>
 
-                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_pricing')) }}"
-                    target="_blank" class="btn btn-outline">
-                    {{ __('messages.see_pricing') }} <span>➤</span>
-                </a>
             </div>
         </div>
     </section>

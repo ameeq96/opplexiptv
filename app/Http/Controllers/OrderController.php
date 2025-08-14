@@ -64,12 +64,21 @@ class OrderController extends Controller
             }
         }
 
+        $query->orderByRaw("
+        CASE 
+            WHEN expiry_date IS NULL THEN 999999
+            WHEN expiry_date < NOW() THEN 0
+            ELSE DATEDIFF(expiry_date, NOW())
+        END ASC
+    ");
+
         $perPage = $request->get('per_page', 10);
-        $orders = $query->orderBy('id', 'desc')->paginate($perPage);
+        $orders = $query->paginate($perPage);
         $orders->appends($request->all());
 
-        return view('admin.orders.index', compact('orders'));
+        return view('admin.orders.index', compact('orders', 'today'));
     }
+
 
 
     public function create()
@@ -106,6 +115,10 @@ class OrderController extends Controller
 
         if (($data['payment_method'] ?? null) === 'other') {
             $data['payment_method'] = $data['custom_payment_method'] ?? null;
+        }
+
+        if (($data['package'] ?? null) === 'other') {
+            $data['package'] = $data['custom_package'] ?? null;
         }
 
         Order::create($data);
