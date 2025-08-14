@@ -88,7 +88,7 @@
 
                     <div class="col-md-6">
                         <label for="duration" class="form-label">Duration (days)</label>
-                        <input type="number" name="duration" class="form-control" required>
+                        <input type="number" name="duration" class="form-control">
                     </div>
                 </div>
 

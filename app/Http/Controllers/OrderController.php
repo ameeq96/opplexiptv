@@ -80,8 +80,6 @@ class OrderController extends Controller
         return view('admin.orders.index', compact('orders', 'today'));
     }
 
-
-
     public function create()
     {
         $clients = User::orderBy('name')->get();
@@ -94,7 +92,7 @@ class OrderController extends Controller
             'user_id' => 'required|exists:users,id',
             'package' => 'required',
             'price' => 'required|numeric',
-            'duration' => 'required|integer',
+            'duration' => 'nullable|integer',
             'status' => 'required|in:pending,active,expired',
             'payment_method' => 'nullable',
             'custom_payment_method' => 'nullable',
@@ -103,7 +101,6 @@ class OrderController extends Controller
             'screenshot' => 'nullable|image',
             'currency' => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
         ]);
-
 
         $data = $request->all();
 
@@ -138,7 +135,7 @@ class OrderController extends Controller
             'user_id'   => 'required|exists:users,id',
             'package'   => 'required',
             'price'     => 'required|numeric',
-            'duration'  => 'required|integer',
+            'duration'  => 'nullable|integer',
             'status'    => 'required|in:pending,active,expired',
             'payment_method' => 'nullable',
             'currency'  => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
