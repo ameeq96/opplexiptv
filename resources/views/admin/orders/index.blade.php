@@ -129,7 +129,7 @@
                                 @else
                                     {{ $order->package }}
                                 @endif
-                            </td>   
+                            </td>
                             <td>
                                 @if ($order->expiry_date)
                                     @php
@@ -140,16 +140,17 @@
                                     @endphp
 
                                     @if ($daysLeft < 0)
-                                        <span class="text-danger">Expired</span>
+                                        <strong class="text-danger">Expired</strong>
                                     @else
-                                        <span class="{{ $daysLeft <= 3 ? 'text-warning fw-bold' : '' }}">
+                                        <strong class="{{ $daysLeft <= 3 ? 'text-warning' : '' }}">
                                             {{ $daysLeft }} days
-                                        </span>
+                                        </strong>
                                     @endif
                                 @else
-                                    <span class="text-muted">N/A</span>
+                                    <strong class="text-muted">N/A</strong>
                                 @endif
                             </td>
+
 
 
                             <td>{{ $order->iptv_username ?? '-' }}</td>
