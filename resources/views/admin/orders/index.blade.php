@@ -214,7 +214,7 @@
                                 @endphp
 
                                 <a href="{{ $waBusinessUrl }}" target="_blank" class="btn btn-sm btn-outline-success me-1">
-                                    WhatsApp Business
+                                    WhatsApp
                                 </a>
 
 
