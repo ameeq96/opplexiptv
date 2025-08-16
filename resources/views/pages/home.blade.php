@@ -301,66 +301,67 @@
   }
 </script>
 
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://opplexiptv.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Pricing",
-        "item": "https://opplexiptv.com/pricing"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "About",
-        "item": "https://opplexiptv.com/about"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Movies",
-        "item": "https://opplexiptv.com/movies"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "name": "Reseller Panel",
-        "item": "https://opplexiptv.com/reseller-panel"
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "name": "Our Packages",
-        "item": "https://opplexiptv.com/packages"
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "name": "IPTV Applications",
-        "item": "https://opplexiptv.com/iptv-applications"
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "name": "FAQ's",
-        "item": "https://opplexiptv.com/faqs"
-      },
-      {
-        "@type": "ListItem",
-        "position": 9,
-        "name": "Contact Us",
-        "item": "https://opplexiptv.com/contact"
-      },
-    ]
-  }
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://opplexiptv.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Pricing",
+      "item": "https://opplexiptv.com/pricing"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "About",
+      "item": "https://opplexiptv.com/about"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Movies",
+      "item": "https://opplexiptv.com/movies"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Reseller Panel",
+      "item": "https://opplexiptv.com/reseller-panel"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Our Packages",
+      "item": "https://opplexiptv.com/packages"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "IPTV Applications",
+      "item": "https://opplexiptv.com/iptv-applications"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "FAQ's",
+      "item": "https://opplexiptv.com/faqs"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Contact Us",
+      "item": "https://opplexiptv.com/contact"
+    }
+  ]
+}
 </script>
+
 @endsection
