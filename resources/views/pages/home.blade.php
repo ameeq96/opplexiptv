@@ -44,7 +44,7 @@
 
 @section('jsonld')
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -117,7 +117,7 @@
   }
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -190,7 +190,7 @@
   }
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -264,31 +264,31 @@
 </script>
 
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Opplex IPTV",
-    "url": "https://opplexiptv.com",
-    "logo": "https://opplexiptv.com/images/opplexiptvlogo.webp",
-    "sameAs": [
-      "https://www.facebook.com/profile.php?id=61565476366548",
-      "https://www.linkedin.com/company/digitalize-store/company/digitalize-store",
-      "https://www.instagram.com/oplextv",
-    ],
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "telephone": "+1-639-390-3194",
-        "contactType": "customer service",
-        "areaServed": "Worldwide",
-        "availableLanguage": ["English", "Italian", "French"]
-      }
-    ]
-  }
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Opplex IPTV",
+  "url": "https://opplexiptv.com",
+  "logo": "https://opplexiptv.com/images/opplexiptvlogo.webp",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61565476366548",
+    "https://www.linkedin.com/company/digitalize-store",
+    "https://www.instagram.com/oplextv"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-639-390-3194",
+      "contactType": "customer service",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English", "Italian", "French"]
+    }
+  ]
+}
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -301,7 +301,7 @@
   }
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
