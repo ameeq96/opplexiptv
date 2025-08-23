@@ -19,10 +19,10 @@ return [
   'get_started' => 'Get started',
   'starter_reseller' => 'Starter Reseller Package',
   'essential_reseller' => 'Essential Reseller Bundle',
-  'starter_price' => '<span style="text-decoration: line-through; color: #999;">$45.99</span> <span style="color: #e60000; font-weight:bold;">$15.99 / 20 Credits</span>',
-  'essential_price' => '<span style="text-decoration: line-through; color: #999;">$66.99</span> <span style="color: #e60000; font-weight:bold;">$36.99 / 50 Credits</span>',
-  'pro_price' => '<span style="text-decoration: line-through; color: #999;">$99.99</span> <span style="color: #e60000; font-weight:bold;">$66.99 / 100 Credits</span>',
-  'advanced_price' => '<span style="text-decoration: line-through; color: #999;">$157.99</span> <span style="color: #e60000; font-weight:bold;">$127.99 / 200 Credits</span>',
+  'starter_price' => '<span style="text-decoration: line-through; color: #999;">$45.99</span> <span style="color: #e60000; font-weight:bold;">$16.99 / 20 Credits</span>',
+  'essential_price' => '<span style="text-decoration: line-through; color: #999;">$66.99</span> <span style="color: #e60000; font-weight:bold;">$40.99 / 50 Credits</span>',
+  'pro_price' => '<span style="text-decoration: line-through; color: #999;">$99.99</span> <span style="color: #e60000; font-weight:bold;">$77.99 / 100 Credits</span>',
+  'advanced_price' => '<span style="text-decoration: line-through; color: #999;">$157.99</span> <span style="color: #e60000; font-weight:bold;">$149.99 / 200 Credits</span>',
 
   'pro_reseller' => 'Pro Reseller Suite',
   'advanced_reseller' => 'Advanced Reseller Toolkit',
@@ -34,9 +34,9 @@ return [
   'monthly' => 'Monthly',
   'half_yearly' => 'Half Yearly',
   'yearly' => 'Yearly',
-  'monthly_price' => '<span style="text-decoration: line-through; color: #999;">$29.99</span> <span style="color: #e60000; font-weight:bold;">$1.99 / monthly</span>',
-  'half_yearly_price' => '<span style="text-decoration: line-through; color: #999;">$34.99</span> <span style="color: #e60000; font-weight:bold;">$6.99 / half yearly</span>',
-  'yearly_price' => '<span style="text-decoration: line-through; color: #999;">$44.99</span> <span style="color: #e60000; font-weight:bold;">$11.99 / yearly</span>',
+  'monthly_price' => '<span style="text-decoration: line-through; color: #999;">$29.99</span> <span style="color: #e60000; font-weight:bold;">$2.99 / monthly</span>',
+  'half_yearly_price' => '<span style="text-decoration: line-through; color: #999;">$34.99</span> <span style="color: #e60000; font-weight:bold;">$14.99 / half yearly</span>',
+  'yearly_price' => '<span style="text-decoration: line-through; color: #999;">$44.99</span> <span style="color: #e60000; font-weight:bold;">$23.99 / yearly</span>',
 
   'no_buffer' => 'Zero Buffer IPTV Streaming in 4K',
   'support_24_7' => '24/7 Customer Support for IPTV Smart Player',
@@ -174,9 +174,9 @@ return [
   'buynow.title' => 'Buy IPTV Now | Xtreme HD IPTV, Aroma IPTV, 4K Streaming & Free Trial',
   'buynow.heading' => 'Buy IPTV Packages - Smart Player Ready',
   'buynow.form_title' => 'Buy Best IPTV Now with Trial Included',
-  'buynow.packages.monthly' => 'Monthly - $1.99 (Includes IPTV Smart Player Access)',
-  'buynow.packages.half_yearly' => 'Half-Yearly - $6.99 (Best IPTV Box Deal)',
-  'buynow.packages.yearly' => 'Yearly - $11.99 (Full 4K IPTV with Aroma Access)',
+  'buynow.packages.monthly' => 'Monthly - $2.99 (Includes IPTV Smart Player Access)',
+  'buynow.packages.half_yearly' => 'Half-Yearly - $14.99 (Best IPTV Box Deal)',
+  'buynow.packages.yearly' => 'Yearly - $23.99 (Full 4K IPTV with Aroma Access)',
 
   'reseller.heading' => 'Buy IPTV Reseller Panel – Start Your IPTV Business Today',
 
@@ -220,7 +220,7 @@ return [
 
   // Questions & Answers - remain 100% unchanged as requested
   'faq.q1' => 'What is Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs <span style="text-decoration: line-through; color: #999;">$31.99/month</span> <span style="color: #000000ff; font-weight:bold;">$1.99/month</span> and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in Canada.',
+  'faq.a1' => 'OPPLEXTV is an IPTV service that hosts over <strong>12,000 live channels, 50000+ MOVIES, 5000+ Latest TV Series</strong>. Along with several VOD options. The OPPLEXTV IPTV standard subscription plan costs <span style="text-decoration: line-through; color: #999;">$31.99/month</span> <span style="color: #000000ff; font-weight:bold;">$2.99/month</span> and includes international, sports, PPV, entertainment, news, and other channel categories. OPPLEXTV IPTV can be installed on any Android-powered / IOS devices, including the Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield, and more. OPPLEX IPTV is the best IPTV server in Canada.',
 
   'faq.q2' => 'What does IPTV look like?',
   'faq.a2' => 'Here are some screenshots of how IPTV Application looks like on different devices.',
@@ -320,7 +320,7 @@ return [
   'breadcrumb.current' => 'Our IPTV Packages',
   'sub_heading' => 'Find Your IPTV Subscription - Only a Few Left',
   'description' => 'Hurry! Secure your IPTV box or smart player subscription now. Opplex offers xtreme HD IPTV and aroma IPTV with 4K live IPTV support.',
-  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$1.99 / per month - Includes Free IPTV Trial</span>',
+  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / per month - Includes Free IPTV Trial</span>',
   'read_more' => 'Read More About IPTV Features',
 
   // Pricing Page
@@ -332,7 +332,7 @@ return [
   ],
   'sub_heading' => 'Find Your Subscription Now - Limited Spots Available',
   'description' => 'Buy the best IPTV subscription today. Includes smart player, 4K IPTV streaming, and aroma IPTV access with every package.',
-  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$1.99 / per month - IPTV Free Trial Included</span>',
+  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / per month - IPTV Free Trial Included</span>',
   'read_more' => 'Explore Full IPTV Details',
 
   // Reseller Panel

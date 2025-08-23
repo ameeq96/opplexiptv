@@ -20,7 +20,7 @@ return [
     'buy_now' => 'Acquista Ora',
     'get_started' => 'Inizia Ora',
     'starter_reseller' => 'Pacchetto Starter Rivenditore',
-    'starter_price' => '<span style="text-decoration: line-through; color: #999;">$45.99</span> <span style="color: #e60000; font-weight:bold;">$15.99 / 20 Crediti</span>',
+    'starter_price' => '<span style="text-decoration: line-through; color: #999;">$45.99</span> <span style="color: #e60000; font-weight:bold;">$16.99 / 20 Crediti</span>',
     'essential_price' => '<span style="text-decoration: line-through; color: #999;">$66.99</span> <span style="color: #e60000; font-weight:bold;">$36.99 / 50 Crediti</span>',
     'pro_price' => '<span style="text-decoration: line-through; color: #999;">$99.99</span> <span style="color: #e60000; font-weight:bold;">$66.99 / 100 Crediti</span>',
     'advanced_price' => '<span style="text-decoration: line-through; color: #999;">$157.99</span> <span style="color: #e60000; font-weight:bold;">$127.99 / 200 Crediti</span>',
@@ -36,9 +36,9 @@ return [
     'monthly' => 'Mensile',
     'half_yearly' => 'Semestrale',
     'yearly' => 'Annuale',
-    'monthly_price' => '<span style="text-decoration: line-through; color: #999;">$29.99</span> <span style="color: #e60000; font-weight:bold;">$1.99 / al mese</span>',
-    'half_yearly_price' => '<span style="text-decoration: line-through; color: #999;">$34.99</span> <span style="color: #e60000; font-weight:bold;">$6.99 / ogni sei mesi</span>',
-    'yearly_price' => '<span style="text-decoration: line-through; color: #999;">$44.99</span> <span style="color: #e60000; font-weight:bold;">$11.99 / all’anno</span>',
+    'monthly_price' => '<span style="text-decoration: line-through; color: #999;">$29.99</span> <span style="color: #e60000; font-weight:bold;">$2.99 / al mese</span>',
+    'half_yearly_price' => '<span style="text-decoration: line-through; color: #999;">$34.99</span> <span style="color: #e60000; font-weight:bold;">$14.99 / ogni sei mesi</span>',
+    'yearly_price' => '<span style="text-decoration: line-through; color: #999;">$44.99</span> <span style="color: #e60000; font-weight:bold;">$23.99 / all’anno</span>',
 
     'no_buffer' => 'Streaming IPTV 4K Senza Buffer',
     'support_24_7' => 'Assistenza Clienti 24/7 per IPTV Smart Player',
@@ -46,10 +46,10 @@ return [
     'quality_content' => 'Contenuti di Qualità - Film, Serie, Canali Live',
 
     'starter_reseller' => 'Pacchetto Rivenditore Base',
-    'starter_price' => '<span style="text-decoration: line-through; color: #999;">$45.99</span> <span style="color: #e60000; font-weight:bold;">$15.99 / 20 Crediti</span>',
-    'essential_price' => '<span style="text-decoration: line-through; color: #999;">$66.99</span> <span style="color: #e60000; font-weight:bold;">$36.99 / 50 Crediti</span>',
-    'pro_price' => '<span style="text-decoration: line-through; color: #999;">$99.99</span> <span style="color: #e60000; font-weight:bold;">$66.99 / 100 Crediti</span>',
-    'advanced_price' => '<span style="text-decoration: line-through; color: #999;">$157.99</span> <span style="color: #e60000; font-weight:bold;">$127.99 / 200 Crediti</span>',
+    'starter_price' => '<span style="text-decoration: line-through; color: #999;">$45.99</span> <span style="color: #e60000; font-weight:bold;">$16.99 / 20 Crediti</span>',
+    'essential_price' => '<span style="text-decoration: line-through; color: #999;">$66.99</span> <span style="color: #e60000; font-weight:bold;">$40.99 / 50 Crediti</span>',
+    'pro_price' => '<span style="text-decoration: line-through; color: #999;">$99.99</span> <span style="color: #e60000; font-weight:bold;">$77.99 / 100 Crediti</span>',
+    'advanced_price' => '<span style="text-decoration: line-through; color: #999;">$157.99</span> <span style="color: #e60000; font-weight:bold;">$149.99 / 200 Crediti</span>',
 
     'essential_reseller' => 'Bundle Rivenditore Essenziale',
     'pro_reseller' => 'Suite Rivenditore Pro',
@@ -186,7 +186,7 @@ return [
     'buynow.title' => 'Acquista Ora | Opplex IPTV - Pacchetti IPTV convenienti, IPTV Smarters Pro, XTV Live, IPTV Extreme e altro',
     'buynow.heading' => 'Acquista Pacchetti IPTV Streaming',
     'buynow.form_title' => 'Acquista IPTV Ora',
-    'buynow.packages.monthly' => 'Mensile $1.99',
+    'buynow.packages.monthly' => 'Mensile $2.99',
     'buynow.packages.half_yearly' => 'Semestrale $6.99',
     'buynow.packages.yearly' => 'Annuale $11.99',
 
@@ -227,7 +227,7 @@ return [
     'faq.section_title' => 'Domande Frequenti (FAQ) su IPTV Player, Streaming e Liste IPTV M3U Gratis',
 
     'faq.q1' => 'Che cos\'è Opplex IPTV?',
-    'faq.a1' => 'OPPLEXTV è un servizio IPTV di alta qualità con oltre <strong>12.000 canali live, 50.000+ FILM, 5.000+ Serie TV</strong> tramite IPTV Smarters Pro e Smart IPTV. Include VOD, è compatibile con IPTV Extreme APK, e costa solo <span style="text-decoration: line-through; color: #999;">$31.99/mese</span> <span style="color: #000000ff; font-weight:bold;">$1.99/mese</span>.',
+    'faq.a1' => 'OPPLEXTV è un servizio IPTV di alta qualità con oltre <strong>12.000 canali live, 50.000+ FILM, 5.000+ Serie TV</strong> tramite IPTV Smarters Pro e Smart IPTV. Include VOD, è compatibile con IPTV Extreme APK, e costa solo <span style="text-decoration: line-through; color: #999;">$31.99/mese</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mese</span>.',
 
     'faq.q2' => 'Come appare l’IPTV?',
     'faq.a2' => 'Ecco alcuni screenshot che mostrano l’interfaccia di app IPTV popolari come IPTV Smarters, Smart IPTV e IPTV Extreme su diversi dispositivi.',
@@ -323,7 +323,7 @@ return [
     'breadcrumb.current' => 'I nostri pacchetti IPTV',
     'sub_heading' => 'Trova il tuo abbonamento IPTV - Disponibilità limitata',
     'description' => 'Affrettati! Blocca subito il tuo pacchetto IPTV. Offerta esclusiva su Smart IPTV, IPTV Smarters Pro e le migliori liste IPTV Sky e DAZN Telegram.',
-    'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$1.99 / al mese con app IPTV player inclusa</span>',
+    'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / al mese con app IPTV player inclusa</span>',
     'read_more' => 'Scopri di più su IPTV Extreme, Smarters e Smart IPTV',
 
     'title' => 'Prezzi | Opplex IPTV - Tariffe Competitive per IPTV Streaming con miglior IPTV APK',
@@ -334,7 +334,7 @@ return [
     ],
     'sub_heading' => 'Abbonati ora - supporto completo per liste IPTV m3u gratis',
     'description' => 'Blocca il tuo piano IPTV. I pacchetti includono supporto per app IPTV Smarters, IPTV Extreme APK, Smart IPTV, e altro.',
-    'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$1.99 / al mese</span>',
+    'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / al mese</span>',
     'read_more' => 'Scopri di più',
 
     'reseller.panel.title' => 'Pannello Rivenditore | Opplex IPTV - Crea la tua rete con le migliori liste IPTV m3u e contenuti in HD',
