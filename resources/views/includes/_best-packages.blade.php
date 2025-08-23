@@ -149,11 +149,17 @@
                                 </a>
 
                                 <a target="_blank"
-                                    href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $package['title'], 'price' => $package['price']])) }}"
+                                    href="https://wa.me/16393903194?text={{ urlencode(
+                                        __('messages.whatsapp_package', [
+                                            'plan' => $package['title'],
+                                            'price' => preg_replace('/^\$(\d+\.\d+)/', '', strip_tags($package['price'])),
+                                        ]),
+                                    ) }}"
                                     aria-label="Contact via WhatsApp">
                                     <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                         height="32" alt="WhatsApp Icon" loading="lazy" />
                                 </a>
+
                             </div>
                         </div>
                     </div>
@@ -189,8 +195,7 @@
                                     @endforeach
                                 </ul>
                                 <div class="button-box button-box-2">
-                                    <a href="{{route("buy-now-panel")}}"
-                                        class="theme-btn btn-style-four">
+                                    <a href="{{ route('buy-now-panel') }}" class="theme-btn btn-style-four">
                                         <span class="txt">{{ __('messages.buy_now') }}</span>
                                     </a>
                                     <a target="_blank"
