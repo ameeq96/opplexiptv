@@ -148,7 +148,7 @@
                             {{-- Screenshot --}}
                             <td>
                                 @if ($order->screenshot)
-                                    <img src="{{ asset('storage/' . $order->screenshot) }}" width="60">
+                                    <img src="{{ asset($order->screenshot) }}" width="60">
                                 @else
                                     -
                                 @endif

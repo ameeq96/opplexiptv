@@ -73,8 +73,8 @@ class PanelOrderController extends Controller
 
         if ($request->hasFile('screenshot')) {
             $fileName = time() . '_' . $request->file('screenshot')->getClientOriginalName();
-            $path = $request->file('screenshot')->storeAs('screenshots', $fileName, 'public');
-            $data['screenshot'] = $path;
+            $request->file('screenshot')->move(public_path('screenshots'), $fileName);
+            $data['screenshot'] = 'screenshots/' . $fileName;
         }
 
         $data['type'] = 'reseller';
@@ -115,9 +115,10 @@ class PanelOrderController extends Controller
 
         if ($request->hasFile('screenshot')) {
             $fileName = time() . '_' . $request->file('screenshot')->getClientOriginalName();
-            $path = $request->file('screenshot')->storeAs('screenshots', $fileName, 'public');
-            $data['screenshot'] = $path;
+            $request->file('screenshot')->move(public_path('screenshots'), $fileName);
+            $data['screenshot'] = 'screenshots/' . $fileName;
         }
+
 
         $data['profit'] = $data['sell_price'] - $data['price'];
 

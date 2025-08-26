@@ -62,9 +62,9 @@ class PurchasingController extends Controller
         $data = $request->all();
 
         if ($request->hasFile('screenshot')) {
-            $fileName = time() . '_' . $request->screenshot->getClientOriginalName();
-            $filePath = $request->screenshot->storeAs('uploads/purchases', $fileName, 'public');
-            $data['screenshot'] = 'storage/' . $filePath;
+            $fileName = time() . '_' . $request->file('screenshot')->getClientOriginalName();
+            $request->file('screenshot')->move(public_path('uploads/purchases'), $fileName);
+            $data['screenshot'] = 'uploads/purchases/' . $fileName;
         }
 
         Purchasing::create($data);
@@ -91,9 +91,9 @@ class PurchasingController extends Controller
         $data = $request->all();
 
         if ($request->hasFile('screenshot')) {
-            $fileName = time() . '_' . $request->screenshot->getClientOriginalName();
-            $filePath = $request->screenshot->storeAs('uploads/purchases', $fileName, 'public');
-            $data['screenshot'] = 'storage/' . $filePath;
+            $fileName = time() . '_' . $request->file('screenshot')->getClientOriginalName();
+            $request->file('screenshot')->move(public_path('screenshots'), $fileName);
+            $data['screenshot'] = 'screenshots/' . $fileName;
         }
 
         $purchasing->update($data);

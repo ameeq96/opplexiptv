@@ -160,7 +160,7 @@
                     <div class="col-md-12">
                         <label>Current Screenshot</label><br>
                         @if ($order->screenshot)
-                            <img src="{{ asset('storage/' . $order->screenshot) }}" width="150" class="rounded shadow-sm mb-2">
+                            <img src="{{ asset($order->screenshot) }}" width="150" class="rounded shadow-sm mb-2">
                         @else
                             <p>No screenshot uploaded.</p>
                         @endif
