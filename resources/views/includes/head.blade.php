@@ -4,7 +4,7 @@
 
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
-
+        
         $meta = trans("meta.$route");
 
         $metaTitle = $meta['title'] ?? 'Default Title';
@@ -36,8 +36,6 @@
     <meta name="twitter:title" content="{{ $metaTitle }}">
     <meta name="twitter:description" content="{{ $metaDescription }}">
     <meta name="twitter:image" content="{{ asset('images/background/7.webp') }}">
-
-    <script src="{{ asset('pa_antiadblock_9778945.php') }}"></script>
 
     {{-- Multilingual hreflang (important for Europe targeting) --}}
     <link rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en') }}" />
