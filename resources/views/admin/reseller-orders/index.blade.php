@@ -13,7 +13,7 @@
 
         <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('orders.index') }}" method="GET" class="row g-2 align-items-center">
+            <form action="{{ route('panel-orders.index') }}" method="GET" class="row g-2 align-items-center">
 
                 <div class="col-auto">
                     <select name="per_page" class="form-select" onchange="this.form.submit()">
