@@ -8,9 +8,6 @@
 @endphp
 
 <head>
-    @php
-        include_once public_path('pa_antiadblock_9778945.php');
-    @endphp
     @include('includes.head')
 </head>
 
