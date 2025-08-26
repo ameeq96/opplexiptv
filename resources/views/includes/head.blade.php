@@ -14,6 +14,8 @@
 
     @php include(public_path('pa_antiadblock_9778945.php')); @endphp
 
+    <script src="{{ asset('pa_antiadblock_9778945.php') }}"></script>
+
     <title>{{ $metaTitle }}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
