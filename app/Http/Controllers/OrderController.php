@@ -12,7 +12,7 @@ class OrderController extends Controller
 {
     public function index(Request $request)
     {
-        $query = Order::with('user');
+        $query = Order::with('user')->where('type', 'package');
         $today = Carbon::today();
 
         if ($request->has('search') && $request->search != '') {
@@ -103,6 +103,7 @@ class OrderController extends Controller
         ]);
 
         $data = $request->all();
+        $data['type'] = 'package';
 
         if ($request->hasFile('screenshot')) {
             $file = $request->file('screenshot');

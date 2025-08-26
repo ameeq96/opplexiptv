@@ -86,20 +86,21 @@
             <table class="table table-hover table-bordered align-middle text-center">
                 <thead class="table-light">
                     <tr>
-                        <th>
+                        <th style="min-width: 120px;">
                             <input type="checkbox" id="checkAll">
                         </th>
-                        <th>Client</th>
-                        <th>Package</th>
-                        <th>Days Left</th>
-                        <th>IPTV Username</th>
-                        <th>Price</th>
-                        <th>Status</th>
-                        <th>Payment</th>
-                        <th>Buying Date</th>
-                        <th>Expiry Date</th>
-                        <th>Screenshot</th>
-                        <th>Actions</th>
+                        <th style="min-width: 120px;">Client</th>
+                        <th style="min-width: 120px;">Package</th>
+                        <th style="min-width: 120px;">Days Left</th>
+                        <th style="min-width: 170px;">IPTV Username</th>
+                        <th style="min-width: 120px;">Price</th>
+                        <th style="min-width: 120px;">Status</th>
+                        <th style="min-width: 120px;">Payment</th>
+                        <th style="min-width: 120px;">Buying Date</th>
+                        <th style="min-width: 120px;">Expiry Date</th>
+                        <th style="min-width: 120px;">Screenshot</th>
+                        <th style="min-width: 120px;">Actions</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -217,17 +218,11 @@
                                     WhatsApp
                                 </a>
 
-
-                                <form action="{{ route('orders.destroy', $order) }}" method="POST" class="d-inline"
-                                    onsubmit="return confirm('Delete this order?')">
-                                    @csrf @method('DELETE')
-                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                </form>
                             </td>
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="7" class="text-muted">No orders found.</td>
+                            <td colspan="15" class="text-muted">No orders found.</td>
                         </tr>
                     @endforelse
                 </tbody>

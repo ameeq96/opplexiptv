@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{Admin, Order, User};
+use App\Models\{Admin, Order, Purchasing, User};
 use Illuminate\Support\Facades\{Hash, Session};
 use Illuminate\Http\Request;
 
@@ -83,14 +83,28 @@ class AdminController extends Controller
         $earningsByCurrency = [];
 
         foreach ($currencies as $currency) {
-            $query = Order::whereIn('status', ['active', 'expired'])
+            $orderQuery = Order::where("type", "package")->whereIn('status', ['active', 'expired'])
                 ->where('currency', $currency);
 
             if ($startDate && $endDate) {
-                $query->whereBetween('buying_date', [$startDate, $endDate]);
+                $orderQuery->whereBetween('buying_date', [$startDate, $endDate]);
             }
 
-            $earningsByCurrency[$currency] = $query->sum('price');
+            $panelOrders = Order::where("type", "reseller")->whereIn('status', ['active', 'expired'])
+                ->where('currency', $currency);
+
+            $orderSum = $orderQuery->sum('price');
+            $panelSum = $panelOrders->sum('profit');
+
+            $purchaseQuery = Purchasing::where('currency', $currency);
+
+            if ($startDate && $endDate) {
+                $purchaseQuery->whereBetween('purchase_date', [$startDate, $endDate]);
+            }
+
+            $purchaseSum = $purchaseQuery->sum('cost_price');
+
+            $earningsByCurrency[$currency] = ($orderSum + $panelSum) - $purchaseSum;
         }
 
         return view('admin.dashboard', compact(

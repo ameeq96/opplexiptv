@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\{AdminController, HomeController, OrderController, UserClientController, WhatsAppController};
+use App\Http\Controllers\{AdminController, HomeController, OrderController, PanelOrderController, PurchasingController, UserClientController, WhatsAppController};
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Facades\Artisan;
@@ -31,9 +31,13 @@ Route::middleware('admin')->group(function () {
     Route::get('whatsapp-broadcast', [WhatsAppController::class, 'broadcast'])->name('whatsapp.broadcast');
     Route::delete('clients/bulk-delete', [UserClientController::class, 'bulkDelete'])->name('clients.bulkDelete');
     Route::delete('orders/bulk-delete', [OrderController::class, 'bulkDelete'])->name('orders.bulkDelete');
+    Route::delete('reseller-orders/bulk-delete', [PanelOrderController::class, 'bulkDelete'])->name('reseller-orders.bulkDelete');
+    Route::delete('purchasing/bulk-delete', [PurchasingController::class, 'bulkDelete'])->name('purchasing.bulkDelete');
 
     Route::resource('clients', UserClientController::class);
     Route::resource('orders', OrderController::class);
+    Route::resource('panel-orders', PanelOrderController::class);
+    Route::resource('purchasing', PurchasingController::class);
 });
 
 Route::group(

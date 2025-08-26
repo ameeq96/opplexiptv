@@ -38,8 +38,6 @@ class UserClientController extends Controller
         return view('admin.clients.index', compact('clients'));
     }
 
-
-
     public function create()
     {
         $countries = collect(Countries::all())->sortBy('name');

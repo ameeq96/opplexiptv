@@ -14,9 +14,13 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->string('package');
+            $table->string('package')->nullable();
             $table->decimal('price', 8, 2);
-            $table->integer('duration');
+            $table->decimal('cost_price', 8, 2)->nullable();
+            $table->decimal('sell_price', 8, 2)->nullable();
+            $table->decimal('profit', 8, 2)->nullable();
+            $table->integer('credits')->nullable();
+            $table->integer('duration')->nullable();
             $table->enum('status', ['pending', 'active', 'expired'])->default('pending');
             $table->string('payment_method')->nullable();
             $table->string('custom_payment_method')->nullable();
@@ -26,6 +30,7 @@ return new class extends Migration
             $table->string('screenshot')->nullable();
             $table->string('currency')->nullable();
             $table->string('iptv_username')->nullable();
+            $table->enum('type', ['package', 'reseller'])->default('package');
             $table->timestamps();
         });
     }

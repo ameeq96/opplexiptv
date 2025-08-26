@@ -80,12 +80,7 @@
                             <td>
                                 <a href="{{ route('clients.edit', $client) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
-                                <form action="{{ route('clients.destroy', $client) }}" method="POST" class="d-inline"
-                                    onsubmit="return confirm('Delete this client?')">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                </form>
+                                
                             </td>
                         </tr>
                     @empty
