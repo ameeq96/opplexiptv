@@ -4,7 +4,7 @@
 
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
-        
+
         $meta = trans("meta.$route");
 
         $metaTitle = $meta['title'] ?? 'Default Title';
@@ -18,6 +18,9 @@
     <meta name="theme" content="Opplex IPTV UI Theme">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <?php include_once base_path('pa_antiadblock_9778945.php'); ?>
+    <script src="/pa_antiadblock_9778945.php"></script>
+    
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="{{ $keywords }}">
     <meta name="robots" content="index, follow">
