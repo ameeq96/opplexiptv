@@ -45,7 +45,7 @@
         href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
 
     @php
-        include public_path('pa_antiadblock_9778945.php');
+        include $_SERVER['DOCUMENT_ROOT'] . '/pa_antiadblock_9778945.php';
     @endphp
 
     @yield('jsonld')
