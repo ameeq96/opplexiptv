@@ -4,7 +4,7 @@
 
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
-        
+
         $meta = trans("meta.$route");
 
         $metaTitle = $meta['title'] ?? 'Default Title';
@@ -43,6 +43,10 @@
     <link rel="alternate" hreflang="it" href="{{ LaravelLocalization::getLocalizedURL('it') }}" />
     <link rel="alternate" hreflang="x-default"
         href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
+
+    @php
+        include $_SERVER['DOCUMENT_ROOT'] . '/pa_antiadblock_9778945.php';
+    @endphp
 
     @yield('jsonld')
 
