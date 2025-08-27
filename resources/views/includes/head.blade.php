@@ -19,8 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php include_once base_path('pa_antiadblock_9778945.php'); ?>
-    <script src="/pa_antiadblock_9778945.php"></script>
-    
+    <script src="{{ asset('pa_antiadblock_9778945.php') }}"></script>
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="{{ $keywords }}">
     <meta name="robots" content="index, follow">
