@@ -44,9 +44,15 @@
     <link rel="alternate" hreflang="x-default"
         href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
 
-    @php
-        include $_SERVER['DOCUMENT_ROOT'] . '/pa_antiadblock_9778945.php';
-    @endphp
+@php
+    $path = public_path('pa_antiadblock_9778945.php');
+    if (file_exists($path)) {
+        include $path;
+    } else {
+        echo "<!-- Monetag file missing -->";
+    }
+@endphp
+
 
     @yield('jsonld')
 
