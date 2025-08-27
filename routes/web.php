@@ -77,3 +77,7 @@ Route::group(
         })->name('redirect.ad');
     }
 );
+
+Route::get('/test-antiadblock', function () {
+    include public_path('pa_antiadblock_9778945.php');
+});
