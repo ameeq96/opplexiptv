@@ -274,7 +274,7 @@ return [
     'faq.a14' => 'Oui, sur IPTV Smarters Pro ou IPTV player :<br><br>1. Page d’accueil > Paramètres > Contrôle parental > Mot de passe > Verrouiller catégories.<br><br>Pour voir : Entrez le mot de passe et déverrouillez.',
 
     'faq.q15' => 'Où puis-je acheter Opplex IPTV ?',
-    'faq.a15' => 'Achetez directement sur <a href="https://www.opplexiptv.com">OpplexIPTV.com</a> - l’original pour IPTV m3u, Xtream IPTV, IPTV gratuit sans code, etc. Support : +92-312-1108582.',
+    'faq.a15' => 'Achetez directement sur <a href="https://www.opplexiptv.com">OpplexIPTV.com</a> - l’original pour IPTV m3u, Xtream IPTV, IPTV gratuit sans code, etc. Support : +1 (639) 390-3194.',
 
     // Captions
     'faq.samsung' => 'Sur TV Samsung avec IPTV smart player',
