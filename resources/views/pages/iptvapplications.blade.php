@@ -88,7 +88,7 @@
                             ],
                             [
                                 'version' => 'Star Share New (Android)',
-                                'file' => 'http://starapk1.com/starsharenew.apk',
+                                'file' => 'starsharenew.apk',
                                 'image' => 'starshare.webp',
                                 'keywords' => 'Star-Share-IPTV-App Star-Share-Android-APK IPTV-StarShare-Download',
                             ],
