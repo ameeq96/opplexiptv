@@ -42,7 +42,7 @@ return [
         'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, accesso immediato pannello IPTV, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
     ],
     'iptv-applications' => [
-        'title' => 'Top App IPTV per Android, iOS, Smart TV',
+        'title' => 'Migliori app IPTV per Android, iOS, Smart TV',
         'description' => 'Scarica IPTV Smarters Pro, IPTV Extreme APK, Smart IPTV, 000 Player, TiviMate e altro – compatibili con IPTV player e liste IPTV.',
         'keywords' => 'IPTV Smarters Pro, IPTV Extreme APK, Smart IPTV, app IPTV Italia, IPTV player, IPTV m3u gratis, miglior app IPTV 2025',
     ],
