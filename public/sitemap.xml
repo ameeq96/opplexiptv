@@ -1,89 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" 
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    
     <url>
         <loc>https://opplexiptv.com</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/about</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/about" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/about" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/about" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/about" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/about" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/about" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/faqs</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/faqs" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/faqs" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/faqs" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/faqs" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/faqs" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/faqs" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/buy-now-panel</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/buy-now-panel" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/buy-now-panel" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/buy-now-panel" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/buy-now-panel" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/buy-now-panel" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/buy-now-panel" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/contact</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/contact" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/contact" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/contact" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/contact" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/contact" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/contact" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/buynow</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/buynow" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/buynow" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/buynow" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/buynow" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/buynow" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/buynow" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/pricing</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/pricing" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/pricing" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/pricing" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/pricing" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/pricing" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/pricing" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
     </url>
+
     <url>
         <loc>https://opplexiptv.com/movies</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/movies" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/movies" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/movies" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/movies" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/movies" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/movies" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
     </url>
+
     <url>
         <loc>https://opplexiptv.com/packages</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/packages" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/packages" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/packages" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/packages" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/packages" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/packages" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/reseller-panel</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/reseller-panel" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/reseller-panel" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/reseller-panel" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/reseller-panel" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/reseller-panel" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/reseller-panel" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
     <url>
         <loc>https://opplexiptv.com/iptv-applications</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://opplexiptv.com/iptv-applications" />
         <xhtml:link rel="alternate" hreflang="fr" href="https://opplexiptv.com/fr/iptv-applications" />
         <xhtml:link rel="alternate" hreflang="it" href="https://opplexiptv.com/it/iptv-applications" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://opplexiptv.com/ru/iptv-applications" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://opplexiptv.com/es/iptv-applications" />
+        <xhtml:link rel="alternate" hreflang="pt" href="https://opplexiptv.com/pt/iptv-applications" />
         <lastmod>2025-07-05T10:53:45+00:00</lastmod>
+    </url>
 
-            </url>
 </urlset>

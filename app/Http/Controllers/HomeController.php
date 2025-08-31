@@ -25,6 +25,9 @@ class HomeController extends Controller
             'fr' => 'fr-FR',
             'it' => 'it-IT',
             'ur' => 'ur-PK',
+            'ru' => 'ru-RU',
+            'es' => 'es-ES',
+            'pt' => 'pt-BR',
             default => 'en-US',
         };
 
