@@ -381,4 +381,26 @@ return [
         'whatsapp_info' => 'Per risposte rapide e per procedere con il tuo abbonamento, contattaci su WhatsApp',
         'signature' => 'Cordiali saluti, Opplex IPTV - La migliore TV del mondo',
     ],
+    'seo_services' => [
+        [
+            'icon' => 'flaticon-swimming-pool',
+            'title' => 'IPTV in qualità HD e 4K',
+            'description' => 'Goditi lo streaming IPTV in qualità HD e 4K cristallina, perfetto per film, sport e TV in diretta su qualsiasi dispositivo.',
+        ],
+        [
+            'icon' => 'flaticon-5g',
+            'title' => 'Abbonamenti IPTV flessibili',
+            'description' => 'Scegli tra piani IPTV mensili o annuali pensati per utenti in Francia, Italia e Regno Unito – convenienti e facili da aggiornare.',
+        ],
+        [
+            'icon' => 'flaticon-8k',
+            'title' => 'IPTV affidabile in tutta Europa',
+            'description' => 'Guarda oltre 12.000 canali con il 99,9% di uptime e senza buffering. Ideale per Smart TV, Firestick e dispositivi Android.',
+        ],
+        [
+            'icon' => 'flaticon-customer-service',
+            'title' => 'Configurazione IPTV facile su qualsiasi dispositivo',
+            'description' => 'Inizia subito a guardare su Smart TV, Firestick, MAG, Android e iOS – nessuna competenza tecnica richiesta.',
+        ],
+    ],
 ];

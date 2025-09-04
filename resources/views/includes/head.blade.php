@@ -4,7 +4,7 @@
 
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
-        
+
         $meta = trans("meta.$route");
 
         $metaTitle = $meta['title'] ?? 'Default Title';
@@ -21,6 +21,10 @@
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="{{ $keywords }}">
     <meta name="robots" content="index, follow">
+
+    <script>
+        var isRtl = {{ $isRtl ? 'true' : 'false' }};
+    </script>
 
     {{-- OpenGraph / Facebook --}}
     <meta property="og:title" content="{{ $metaTitle }}">

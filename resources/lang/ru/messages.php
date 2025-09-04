@@ -386,4 +386,26 @@ return [
     'whatsapp_info' => 'Dlya bistrogo otveta i prodolzheniya podpisku, pozhaluysta, svyazhsya s nami v WhatsApp',
     'signature' => 'S uvazheniem, Opplex IPTV - Luchshee TV v Mire',
   ],
+  'seo_services' => [
+    [
+      'icon' => 'flaticon-swimming-pool',
+      'title' => 'IPTV в качестве HD и 4K',
+      'description' => 'Наслаждайтесь IPTV в кристально чистом HD и 4K, идеально подходит для фильмов, спорта и прямых трансляций на любом устройстве.',
+    ],
+    [
+      'icon' => 'flaticon-5g',
+      'title' => 'Гибкие подписки IPTV',
+      'description' => 'Выбирайте между ежемесячными или годовыми планами IPTV для пользователей во Франции, Италии и Великобритании – доступно и удобно.',
+    ],
+    [
+      'icon' => 'flaticon-8k',
+      'title' => 'Надёжное IPTV по всей Европе',
+      'description' => 'Более 12 000 каналов с 99,9% доступности и без буферизации. Идеально для Smart TV, Firestick и Android-устройств.',
+    ],
+    [
+      'icon' => 'flaticon-customer-service',
+      'title' => 'Простая настройка IPTV на любом устройстве',
+      'description' => 'Начните смотреть мгновенно на Smart TV, Firestick, MAG, Android и iOS – технические навыки не нужны.',
+    ],
+  ],
 ];

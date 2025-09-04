@@ -1,55 +1,88 @@
  <!-- Main Footer -->
  <footer class="main-footer">
-     <div class="pattern-layer-one" style="background-image: url('{{ asset('images/background/pattern-12.webp') }}')">
-     </div>
-     <div class="pattern-layer-two" style="background-image: url('{{ asset('images/background/pattern-13.webp') }}')">
-     </div>
+     @if (!$agent->isMobile())
+         <div class="pattern-layer-one" style="background-image: url('{{ asset('images/background/pattern-12.webp') }}')">
+         </div>
+         <div class="pattern-layer-two" style="background-image: url('{{ asset('images/background/pattern-13.webp') }}')">
+         </div>
+     @endif
 
-     <div class="auto-container">
+     <div class="auto-container" style="direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
          <div class="widgets-section">
-             <div class="logo">
+
+             <!-- Logo -->
+             <div class="logo" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                  <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title="" width="386"
                      height="100" />
              </div>
-             <ul class="contact-info-list">
-                 <li>
-                     <span class="icon">
-                         <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" />
-                     </span><br>
-                     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_footer')) }}"
-                         target="_blank">
-                         {{ __('messages.footer_phone') }}
-                     </a>
-                 </li>
-                 <li>
-                     <span class="icon">
-                         <img src="{{ asset('images/icons/icon-2.webp') }}" alt="Email Icon" />
-                     </span><br>
-                     <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
-                 </li>
-                 <li>
-                     <span class="icon">
-                         <img src="{{ asset('images/icons/icon-3.webp') }}" alt="Address Icon" />
-                     </span><br>
-                     {{ __('messages.footer_address') }}
-                 </li>
-             </ul>
 
+             @if ($agent->isMobile())
+                 <!-- Contact Info -->
+                 <ul class="contact-info-list" style="text-align: center;">
+                     <li>
+                         <span class="icon">
+                             <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" />
+                         </span><br>
+                         <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_footer')) }}"
+                             target="_blank">
+                             {{ $isRtl ? '4913-093 (936) 1+' : __('messages.footer_phone') }}
+                         </a>
+                     </li>
+                     <li class="icon-center-footer">
+                         <span class="icon">
+                             <img src="{{ asset('images/icons/icon-2.webp') }}" alt="Email Icon" />
+                         </span><br>
+                         <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
+                     </li>
+                     <li>
+                         <span class="icon">
+                             <img src="{{ asset('images/icons/icon-3.webp') }}" alt="Address Icon" />
+                         </span><br>
+                         {{ __('messages.footer_address') }}
+                     </li>
+                 </ul>
+             @else
+                 <!-- Contact Info -->
+                 <ul class="contact-info-list" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
+                     <li>
+                         <span class="icon">
+                             <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" />
+                         </span><br>
+                         <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_footer')) }}"
+                             target="_blank">
+                             {{ $isRtl ? '4913-093 (936) 1+' : __('messages.footer_phone') }}
+                         </a>
+                     </li>
+                     <li class="icon-center-footer">
+                         <span class="icon">
+                             <img src="{{ asset('images/icons/icon-2.webp') }}" alt="Email Icon" />
+                         </span><br>
+                         <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
+                     </li>
+                     <li>
+                         <span class="icon">
+                             <img src="{{ asset('images/icons/icon-3.webp') }}" alt="Address Icon" />
+                         </span><br>
+                         {{ __('messages.footer_address') }}
+                     </li>
+                 </ul>
+             @endif
 
              <!-- Social Box -->
-             <ul class="social-box">
+             <ul class="social-box"
+                 style="display: flex; justify-content: {{ $isRtl ? 'flex-end' : 'flex-start' }}; gap: 10px;">
                  <li><a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
                          target="_blank"></a></li>
                  <li><a href="https://www.linkedin.com/company/digitalize-store/company/digitalize-store/"
                          class="fa fa-linkedin" target="_blank"></a></li>
                  <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
                          rel="noopener noreferrer"></a></li>
-
              </ul>
 
-         </div>
 
+         </div>
      </div>
+
      <!-- Footer Bottom -->
      <div class="footer-bottom">
          <div class="auto-container">

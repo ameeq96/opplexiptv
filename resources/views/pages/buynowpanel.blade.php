@@ -29,15 +29,9 @@
         ];
     @endphp
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url('{{ asset('images/background/10.webp') }}')">
-        <div class="auto-container">
-            <h2>{{ __('messages.reseller.heading') }}</h2>
-            <ul class="bread-crumb clearfix">
-                <li><a href="/">Home</a></li>
-                <li>Buy Panel</li>
-            </ul>
-        </div>
-    </section>
+    <x-page-title :title="__('messages.reseller.heading')" :breadcrumbs="[['url' => '/', 'label' => 'Home'], ['label' => 'Buy Panel']]" background="images/background/10.webp" :rtl="$isRtl"
+        aria-label="Reseller Buy Panel Page" />
+
     <!-- End Page Title -->
 
     <!-- Contact Page Section -->

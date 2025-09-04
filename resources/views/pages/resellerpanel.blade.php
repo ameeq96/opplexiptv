@@ -8,17 +8,11 @@
         $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
     @endphp
 
-    <section class="page-title" style="background-image: url('{{ asset('images/background/7.webp') }}')"
-        aria-label="Opplex IPTV Reseller Panel Page Title">
-        <div class="auto-container">
-            <h2>{{ __('messages.reseller.panel.title') }}</h2>
-            <ul class="bread-crumb clearfix" aria-label="Breadcrumb Navigation">
-                <li><a href="/" aria-label="Go to Home">{{ __('messages.app.breadcrumb.home') }}</a></li>
-                <li aria-current="page">{{ __('messages.reseller.panel.title') }}</li>
-            </ul>
-        </div>
-    </section>
-
+    <x-page-title :title="__('messages.reseller.panel.title')" :breadcrumbs="[
+        ['url' => '/', 'label' => __('messages.app.breadcrumb.home'), 'aria' => 'Go to Home'],
+        ['label' => __('messages.reseller.panel.title')],
+    ]" background="images/background/7.webp" :rtl="$isRtl"
+        aria-label="Opplex IPTV Reseller Panel Page Title" />
 
     <!-- Pricing Section -->
     @include('includes._best-packages')
@@ -43,39 +37,19 @@
                     <h2>{{ __('messages.reasons.title') }}</h2>
                 </div>
                 <div class="pull-right">
-                    <a href="{{ route('packages') }}" class="theme-btn btn-style-four" aria-label="View IPTV plans">
-                        <span class="txt">{{ __('messages.view.services') }} <i class="lnr lnr-arrow-right"></i></span>
+                    <a href="{{ route('packages') }}" class="theme-btn btn-style-four"
+                        aria-label="{{ __('messages.view.services') }}">
+                        <span class="txt">
+                            {{ __('messages.view.services') }}
+                            <i class="lnr {{ $isRtl ? 'lnr-arrow-left' : 'lnr-arrow-right' }}"></i>
+                        </span>
                     </a>
+
                 </div>
             </div>
             <div class="row clearfix">
                 @php
-                    $seoServices = [
-                        [
-                            'icon' => 'flaticon-swimming-pool',
-                            'title' => 'IPTV in HD & 4K Quality',
-                            'description' =>
-                                'Enjoy IPTV streaming with crystal-clear HD and 4K resolution, perfect for movies, sports, and live TV on any device.',
-                        ],
-                        [
-                            'icon' => 'flaticon-5g',
-                            'title' => 'Flexible IPTV Subscriptions',
-                            'description' =>
-                                'Choose from monthly or yearly IPTV plans tailored for France, Italy, and UK users – affordable and easy to upgrade.',
-                        ],
-                        [
-                            'icon' => 'flaticon-8k',
-                            'title' => 'Reliable IPTV Across Europe',
-                            'description' =>
-                                'Stream over 12,000 channels with 99.9% uptime and zero buffering. Ideal for Smart TVs, Firestick, and Android devices.',
-                        ],
-                        [
-                            'icon' => 'flaticon-customer-service',
-                            'title' => 'Easy IPTV Setup on Any Device',
-                            'description' =>
-                                'Start streaming instantly on Smart TV, Firestick, MAG, Android, and iOS – no tech skills needed. Our IPTV setup is beginner-friendly.',
-                        ],
-                    ];
+                    $seoServices = __('messages.seo_services');
                 @endphp
 
                 @foreach ($seoServices as $service)
@@ -84,13 +58,17 @@
                             <div class="pattern-layer"
                                 style="background-image: url('{{ asset('images/background/pattern-14.webp') }}')"></div>
                             <div class="icon-box {{ $service['icon'] }}"></div>
-                            <h5><a href="{{ route('packages') }}"
-                                    aria-label="{{ $service['title'] }}">{{ $service['title'] }}</a></h5>
+                            <h5>
+                                <a href="{{ route('packages') }}" aria-label="{{ $service['title'] }}">
+                                    {{ $service['title'] }}
+                                </a>
+                            </h5>
                             <div class="text">{{ $service['description'] }}</div>
                         </div>
                     </div>
                 @endforeach
             </div>
+
         </div>
     </section>
     <!-- End Services Section Three -->
@@ -100,60 +78,11 @@
     <!-- End Testimonial Section -->
 
 
-    <!-- Clients Section -->
-    <section class="clients-section">
-        <div class="auto-container">
-
-            <div class="carousel-outer">
-                <!--Sponsors Slider-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li>
-                        <div class="image-box"><a href="#" aria-label="Channel Logo 1"><img
-                                    src="{{ asset('images/resource/1.webp') }}" alt="Channel Logo 1" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box"><a href="#" aria-label="Channel Logo 5"><img
-                                    src="{{ asset('images/resource/5.webp') }}" alt="Channel Logo 5" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box ptv-sports"><a href="#" aria-label="PTV Sports"><img
-                                    src="{{ asset('images/resource/4.webp') }}" alt="PTV Sports Logo" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box ary-digital"><a href="#" aria-label="ARY Digital"><img
-                                    src="{{ asset('images/resource/3.webp') }}" alt="ARY Digital Logo" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box"><a href="#" aria-label="Channel Logo 6"><img
-                                    src="{{ asset('images/resource/6.webp') }}" alt="Channel Logo 6" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box star-plus"><a href="#" aria-label="Star Plus"><img
-                                    src="{{ asset('images/resource/7.webp') }}" alt="Star Plus Logo" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box"><a href="#" aria-label="Channel Logo 8"><img
-                                    src="{{ asset('images/resource/8.webp') }}" alt="Channel Logo 8" loading="lazy"></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="image-box"><a href="#" aria-label="Channel Logo 9"><img
-                                    src="{{ asset('images/resource/9.webp') }}" alt="Channel Logo 9" loading="lazy"></a>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- End Clients Section / Style Two -->
+    <!-- Channels Section -->
+    @if (!$agent->isMobile())
+        @include('includes._channels-carousel')
+    @endif
+    <!-- End Channels Section -->
 
 
 

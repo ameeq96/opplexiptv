@@ -1,23 +1,44 @@
 @php
     $features = [
         ['title' => __('messages.feature_hd'), 'description' => __('messages.feature_hd_desc'), 'active' => false],
-        ['title' => __('messages.feature_flexible'), 'description' => __('messages.feature_flexible_desc'), 'active' => true],
-        ['title' => __('messages.feature_reliable'), 'description' => __('messages.feature_reliable_desc'), 'active' => false],
+        [
+            'title' => __('messages.feature_flexible'),
+            'description' => __('messages.feature_flexible_desc'),
+            'active' => true,
+        ],
+        [
+            'title' => __('messages.feature_reliable'),
+            'description' => __('messages.feature_reliable_desc'),
+            'active' => false,
+        ],
         ['title' => __('messages.feature_easy'), 'description' => __('messages.feature_easy_desc'), 'active' => false],
-        ['title' => __('messages.feature_multidevice'), 'description' => __('messages.feature_multidevice_desc'), 'active' => false],
-        ['title' => __('messages.feature_support'), 'description' => __('messages.feature_support_desc'), 'active' => false],
-        ['title' => __('messages.feature_sports_movies'), 'description' => __('messages.feature_sports_movies_desc'), 'active' => false],
+        [
+            'title' => __('messages.feature_multidevice'),
+            'description' => __('messages.feature_multidevice_desc'),
+            'active' => false,
+        ],
+        [
+            'title' => __('messages.feature_support'),
+            'description' => __('messages.feature_support_desc'),
+            'active' => false,
+        ],
+        [
+            'title' => __('messages.feature_sports_movies'),
+            'description' => __('messages.feature_sports_movies_desc'),
+            'active' => false,
+        ],
     ];
 @endphp
 
 <!-- Start Choose US Section -->
-<section class="faq-section" style="background-image: url('{{ asset('images/background/4.webp') }}')">
+<section class="faq-section"
+    style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
     <div class="auto-container">
-        <div class="row clearfix">
+        <div class="row clearfix {{ $isRtl ? 'flex-row-reverse' : '' }}">
 
             <!-- Accordion Column -->
             <div class="accordion-column col-lg-5 col-md-12 col-sm-12">
-                <div class="inner-column">
+                <div class="inner-column" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                     <div class="sec-title">
                         <div class="separator"></div>
                         <h3>{{ __('messages.few_reasons') }}</h3>
@@ -26,12 +47,13 @@
                     <ul class="accordion-box">
                         @foreach ($features as $feature)
                             <li class="accordion block {{ $feature['active'] ? 'active-block' : '' }}">
-                                <div class="acc-btn {{ $feature['active'] ? 'active' : '' }}">
+                                <div
+                                    class="acc-btn {{ $feature['active'] ? 'active' : '' }} d-flex {{ $isRtl ? 'flex-row-reverse text-end' : '' }}">
                                     <div class="icon-outer">
                                         <span class="icon icon-plus fa fa-plus"></span>
                                         <span class="icon icon-minus fa fa-minus"></span>
                                     </div>
-                                    {{ $feature['title'] }}
+                                    <span class="ms-2 {{$isRtl ? 'text-right' : ''}}">{{ $feature['title'] }}</span>
                                 </div>
                                 <div class="acc-content {{ $feature['active'] ? 'current' : '' }}">
                                     <div class="content">
@@ -50,8 +72,8 @@
                     <div class="pattern-layer"
                         style="background-image: url('{{ asset('images/resource/faq-pattern.webp') }}')"></div>
                     <div class="image titlt" data-tilt data-tilt-max="5">
-                        <img src="images/resource/faq.webp" alt="" width="472px" height="683px"
-                            loading="lazy" />
+                        <img src="{{ asset('images/resource/faq.webp') }}" alt="FAQ Image" width="472"
+                            height="683" loading="lazy" />
                     </div>
                 </div>
             </div>

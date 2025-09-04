@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\{BuyNowAutoReply, BuyNowEmail, ContactAutoReply, ContactEmail, SubscribeEmail};
+use App\Traits\HelperFunction;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{Cache, Http, Log, Mail};
@@ -10,6 +11,7 @@ use Jenssegers\Agent\Agent;
 
 class HomeController extends Controller
 {
+    use HelperFunction;
 
     public function home()
     {
@@ -17,7 +19,6 @@ class HomeController extends Controller
         $baseUrl = env('TMDB_BASE_URL');
         $imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
         $posterBaseUrl = "https://image.tmdb.org/t/p/w500";
-
 
         $locale = app()->getLocale();
 
@@ -28,9 +29,11 @@ class HomeController extends Controller
             'ru' => 'ru-RU',
             'es' => 'es-ES',
             'pt' => 'pt-BR',
+            'nl' => 'nl-NL',
+            'ar' => 'ar-SA',
+            'hi' => 'hi-IN',
             default => 'en-US',
         };
-
 
         $agent = new Agent();
         $isMobile = $agent->isMobile();
@@ -52,10 +55,7 @@ class HomeController extends Controller
 
         $cacheKey = 'trending_movies_' . $languageCode;
 
-
-
-
-        $moviesUrl = $baseUrl . '/trending/movie/day?api_key=504f8cb78e140a66dc170c28614f2e50&language=' . $languageCode;
+        $moviesUrl = $baseUrl . '/trending/movie/day?api_key=' . $apiKey . '&language=' . $languageCode;
         $movies = Cache::remember($cacheKey, now()->addHour(), function () use ($moviesUrl) {
             $response = Http::withoutVerifying()->get($moviesUrl);
             return $response->json()['results'] ?? [];
@@ -63,11 +63,9 @@ class HomeController extends Controller
 
         foreach ($movies as &$movie) {
             if (!empty($movie['backdrop_path'])) {
-                if ($isMobile) {
-                    $movie['webp_image_url'] = $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 428, 220);
-                } else {
-                    $movie['webp_image_url'] = $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 1280, 720);
-                }
+                $movie['webp_image_url'] = $isMobile
+                    ? $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 428, 220)
+                    : $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 1280, 720);
             }
 
             if (!empty($movie['poster_path'])) {
@@ -75,12 +73,14 @@ class HomeController extends Controller
             }
 
             $movieId = $movie['id'];
-            $mediaType = $movie['media_type'];
+            $mediaType = $movie['media_type'] ?? 'movie';
         }
 
         $movies = collect($movies)->take(10);
 
-        return view('pages.home', compact('movies', 'logos', 'isMobile'));
+        $isRtl = $this->isRtl($locale);
+
+        return view('pages.home', compact('movies', 'logos', 'isMobile', 'isRtl'));
     }
 
     private function convertToWebp($imageUrl, $width = 308, $height = 462)
@@ -126,6 +126,12 @@ class HomeController extends Controller
 
     public function about()
     {
+        $agent = new Agent();
+        $isMobile = $agent->isMobile();
+
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
         $logos = [
             'images/resource/5.webp',
             'images/resource/4.webp',
@@ -136,26 +142,49 @@ class HomeController extends Controller
             'images/resource/9.webp',
         ];
 
-        return view("pages.about", compact('logos'));
+        return view("pages.about", compact('logos', 'isRtl', 'isMobile'));
     }
 
     public function contact()
     {
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
 
         session(['captcha_sum' => $num1 + $num2]);
 
-        return view("pages.contact", compact('num1', 'num2'));
+        return view("pages.contact", compact('num1', 'num2', 'isRtl'));
     }
 
     public function pricing()
     {
-        return view("pages.pricing");
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
+        return view("pages.pricing", compact('isRtl'));
+    }
+
+    public function redirect(Request $request)
+    {
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
+        $target = $request->query('target');
+
+        if (!$target || !filter_var($target, FILTER_VALIDATE_URL)) {
+            abort(404);
+        }
+
+        return view("pages.redirect", compact('isRtl', 'target'));
     }
 
     public function movies(Request $request)
     {
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
         $apiKey = env('TMDB_API_KEY');
         $baseUrl = env('TMDB_BASE_URL');
         $page = $request->input('page', 1);
@@ -223,49 +252,77 @@ class HomeController extends Controller
             return $response->json()['total_pages'] ?? 1;
         });
 
-        return view('pages.movies', compact('filteredMovies', 'page', 'totalPages', 'query'));
+        return view('pages.movies', compact('filteredMovies', 'page', 'totalPages', 'query', 'isRtl'));
     }
 
 
 
     public function packages()
     {
-        return view("pages.packages");
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
+        return view("pages.packages", compact('isRtl'));
     }
 
     public function resellerPanel()
     {
-        return view("pages.resellerpanel");
+        $logos = [
+            'images/resource/5.webp',
+            'images/resource/4.webp',
+            'images/resource/3.webp',
+            'images/resource/6.webp',
+            'images/resource/7.webp',
+            'images/resource/8.webp',
+            'images/resource/9.webp',
+        ];
+
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
+        return view("pages.resellerpanel", compact('isRtl', 'logos'));
     }
 
     public function buynow()
     {
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
 
         session(['captcha_sum' => $num1 + $num2]);
 
-        return view("pages.buynow", compact('num1', 'num2'));
+        return view("pages.buynow", compact('num1', 'num2', 'isRtl'));
     }
 
     public function buynowpanel()
     {
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
         $num1 = rand(1, 10);
         $num2 = rand(1, 10);
 
         session(['captcha_sum' => $num1 + $num2]);
 
-        return view("pages.buynowpanel", compact('num1', 'num2'));
+        return view("pages.buynowpanel", compact('num1', 'num2', 'isRtl'));
     }
 
     public function iptvApplications()
     {
-        return view("pages.iptvapplications");
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
+        return view("pages.iptvapplications", compact('isRtl'));
     }
 
     public function faq()
     {
-        return view("pages.faq");
+        $locale = app()->getLocale();
+        $isRtl = $this->isRtl($locale);
+
+        return view("pages.faq", compact('isRtl'));
     }
 
     public function send(Request $request)

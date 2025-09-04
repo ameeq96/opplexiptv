@@ -67,13 +67,6 @@ Route::group(
         Route::post('/buy-now-panel', [HomeController::class, 'postBuyNowPanel'])->name('buynow.panel');
         Route::post('/subscribe', [HomeController::class, 'subscribe'])->name('subscribe');
         Route::get('/trending', [HomeController::class, 'getTrending']);
-
-        Route::get('/redirect', function () {
-            $target = request('target');
-            if (!$target || !filter_var($target, FILTER_VALIDATE_URL)) {
-                abort(404);
-            }
-            return view('pages.redirect', compact('target'));
-        })->name('redirect.ad');
+        Route::get('/redirect', [HomeController::class, 'redirect'])->name('redirect.ad');
     }
 );

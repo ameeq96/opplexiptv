@@ -24,15 +24,9 @@
     @endphp
 
     <!-- Page Title -->
-    <section class="page-title" style="background-image: url('{{ asset('images/background/10.webp') }}')">
-        <div class="auto-container">
-            <h2>{{ __('messages.buynow.heading') }}</h2>
-            <ul class="bread-crumb clearfix">
-                <li><a href="/">{{ __('messages.nav.home') }}</a></li>
-                <li>{{ __('messages.buynow.heading') }}</li>
-            </ul>
-        </div>
-    </section>
+    <x-page-title :title="__('messages.buynow.heading')" :breadcrumbs="[['url' => '/', 'label' => __('messages.nav.home')], ['label' => __('messages.buynow.heading')]]" background="images/background/10.webp" :rtl="$isRtl"
+        aria-label="Buy Now Page" />
+
     <!-- End Page Title -->
 
     <!-- Contact Page Section -->

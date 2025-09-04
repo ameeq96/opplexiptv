@@ -8,15 +8,12 @@
         $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
     @endphp
 
-    <section class="page-title" style="background-image: url('{{ asset('images/background/10.webp') }}')">
-        <div class="auto-container">
-            <h2>{{ __('messages.app.heading') }}</h2>
-            <ul class="bread-crumb clearfix">
-                <li><a href="/">{{ __('messages.app.breadcrumb.home') }}</a></li>
-                <li>{{ __('messages.app.breadcrumb.current') }}</li>
-            </ul>
-        </div>
-    </section>
+    <x-page-title :title="__('messages.app.heading')" :breadcrumbs="[
+        ['url' => '/', 'label' => __('messages.app.breadcrumb.home')],
+        ['label' => __('messages.app.breadcrumb.current')],
+    ]" background="images/background/10.webp" :rtl="$isRtl"
+        aria-label="App Download Page" />
+
 
     <div class="section sec-application text-center d-flex justify-content-center align-items-center mt-2"
         style="background-image: url('{{ asset('images/background/pattern-6.webp') }}')">
