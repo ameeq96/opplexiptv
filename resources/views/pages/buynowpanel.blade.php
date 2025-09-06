@@ -11,19 +11,19 @@
     @php
         $packages = [
             [
-                'value' => '20_credits_USD_15.99',
+                'value' => '20_credits_USD_16.99',
                 'label' => 'Starter Reseller Package 20 Credits - $16.99',
             ],
             [
-                'value' => '50_credits_USD_36.99',
+                'value' => '50_credits_USD_40.99',
                 'label' => 'Essential Reseller Bundle 50 Credits - $40.99',
             ],
             [
-                'value' => '100_credits_USD_66.99',
+                'value' => '100_credits_USD_77.99',
                 'label' => 'Pro Reseller Suite 100 Credits - $77.99',
             ],
             [
-                'value' => '200_credits_USD_127.99',
+                'value' => '200_credits_USD_149.99',
                 'label' => 'Advanced Reseller Toolkit 200 Credits - $149.99',
             ],
         ];

@@ -187,10 +187,10 @@ return [
     'buynow.heading' => 'Acquista Pacchetti IPTV Streaming',
     'buynow.form_title' => 'Acquista IPTV Ora',
     'buynow.packages.monthly' => 'Mensile $2.99',
-    'buynow.packages.half_yearly' => 'Semestrale $6.99',
-    'buynow.packages.yearly' => 'Annuale $11.99',
+    'buynow.packages.half_yearly' => 'Semestrale $14.99',
+    'buynow.packages.yearly' => 'Annuale $23.99',
 
-    'reseller.heading' => 'Acquista il Pannello Rivenditore IPTV – Avvia il Tuo Business IPTV',
+    'reseller.heading' => 'Acquista il Pannello Rivenditore IPTV - Avvia il Tuo Business IPTV',
 
     'form.name' => 'Nome',
     'form.email' => 'Indirizzo email',
@@ -390,7 +390,7 @@ return [
         [
             'icon' => 'flaticon-5g',
             'title' => 'Abbonamenti IPTV flessibili',
-            'description' => 'Scegli tra piani IPTV mensili o annuali pensati per utenti in Francia, Italia e Regno Unito – convenienti e facili da aggiornare.',
+            'description' => 'Scegli tra piani IPTV mensili o annuali pensati per utenti in Francia, Italia e Regno Unito - convenienti e facili da aggiornare.',
         ],
         [
             'icon' => 'flaticon-8k',
@@ -400,7 +400,7 @@ return [
         [
             'icon' => 'flaticon-customer-service',
             'title' => 'Configurazione IPTV facile su qualsiasi dispositivo',
-            'description' => 'Inizia subito a guardare su Smart TV, Firestick, MAG, Android e iOS – nessuna competenza tecnica richiesta.',
+            'description' => 'Inizia subito a guardare su Smart TV, Firestick, MAG, Android e iOS - nessuna competenza tecnica richiesta.',
         ],
     ],
 ];

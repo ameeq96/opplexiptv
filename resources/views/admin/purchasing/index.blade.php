@@ -61,10 +61,12 @@
                             <td><input type="checkbox" name="purchase_ids[]" value="{{ $purchase->id }}"></td>
                             <td>
                                 @if ($purchase->screenshot)
-                                    <img src="{{ asset($purchase->screenshot) }}" 
-                                         alt="purchase-img" class="img-thumbnail" width="60" height="60">
+                                    <img src="{{ asset($purchase->screenshot) }}" alt="Screenshot" width="50"
+                                        height="50" style="object-fit: cover; border-radius: 4px; cursor: pointer;"
+                                        data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                        onclick="showScreenshot('{{ asset($purchase->screenshot) }}')">
                                 @else
-                                    <span class="text-muted">No Image</span>
+                                    <span class="text-muted">N/A</span>
                                 @endif
                             </td>
                             <td>{{ $purchase->item_name }}</td>
@@ -92,6 +94,25 @@
 
     <div class="mt-3 d-flex justify-content-center flex-column">
         {{ $purchases->appends(request()->query())->links('pagination::bootstrap-5') }}
+    </div>
+
+     <!-- Screenshot Lightbox Modal -->
+    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark position-relative border-0">
+
+                <!-- Close button -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Image -->
+                <div class="modal-body p-0 text-center">
+                    <img id="modalScreenshot" src="" class="img-fluid"
+                        style="width: 100%; max-height: 90vh; object-fit: contain;" alt="Screenshot">
+                </div>
+            </div>
+        </div>
     </div>
 
 @endsection

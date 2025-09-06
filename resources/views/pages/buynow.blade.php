@@ -9,15 +9,15 @@
 
         $packages = [
             [
-                'value' => 'monthly_USD_1.99',
+                'value' => 'monthly_USD_2.99',
                 'label' => __('messages.buynow.packages.monthly'),
             ],
             [
-                'value' => 'half_yearly_USD_6.99',
+                'value' => 'half_yearly_USD_14.99',
                 'label' => __('messages.buynow.packages.half_yearly'),
             ],
             [
-                'value' => 'yearly_USD_11.99',
+                'value' => 'yearly_USD_23.99',
                 'label' => __('messages.buynow.packages.yearly'),
             ],
         ];
