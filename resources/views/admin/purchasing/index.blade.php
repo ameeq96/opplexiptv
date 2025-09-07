@@ -43,7 +43,7 @@
             <table class="table table-bordered table-hover align-middle text-center">
                 <thead class="table-light">
                     <tr>
-                        <th style="width:40px;">
+                        <th style="min-width: 120px;">
                             <input type="checkbox" id="checkAll">
                         </th>
                         <th style="min-width: 80px;">Image</th>

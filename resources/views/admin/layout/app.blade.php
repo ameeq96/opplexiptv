@@ -152,9 +152,11 @@
 
     <script>
         document.getElementById('checkAll')?.addEventListener('click', function() {
-            document.querySelectorAll('input[name="client_ids[]"], input[name="order_ids[]"]')
-                .forEach(cb => cb.checked = this.checked);
+            document.querySelectorAll(
+                'input[name="client_ids[]"], input[name="order_ids[]"], input[name="purchase_ids[]"]'
+            ).forEach(cb => cb.checked = this.checked);
         });
+
 
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');

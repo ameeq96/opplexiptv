@@ -86,12 +86,13 @@
             <table class="table table-bordered table-hover align-middle text-center">
                 <thead class="table-light">
                     <tr>
-                        <th style="width: 40px;">
-                            <input type="checkbox" id="select-all">
+                        <th style="min-width: 120px;">
+                            <input type="checkbox" id="checkAll">
                         </th>
                         <th style="width: 50px;">#ID</th>
                         <th style="min-width: 120px;">Client</th>
                         <th style="min-width: 100px;">Package</th>
+                        <th style="min-width: 100px;">Credits</th>
                         <th style="min-width: 90px;">Days Left</th>
                         <th style="min-width: 170px;">IPTV Username</th>
                         <th style="min-width: 90px;">Duration</th>
@@ -110,16 +111,26 @@
                 <tbody>
                     @forelse ($orders as $order)
                         <tr>
-                            <td><input type="checkbox" name="order_ids[]" value="{{ $order->id }}"></td>
-                            <td>{{ $order->id }}</td>
+                            <td>
+                                <input type="checkbox" name="order_ids[]" value="{{ $order->id }}">
+                            </td>
+
+                            {{-- ID --}}
+                            <td>{{ $loop->iteration }}</td>
+
+                            {{-- Client --}}
                             <td>{{ $order->user->name ?? 'N/A' }}</td>
-                            <td>{{ $order->duration ?? 'N/A' }}</td>
+
+                            {{-- Package --}}
                             <td>{{ $order->custom_package ? $order->custom_package : $order->package }}</td>
+
+                            {{-- Credits --}}
+                            <td>{{ $order->credits }}</td>
 
                             {{-- Days Left --}}
                             <td>
                                 @if ($order->expiry_date)
-                                    {{ \Carbon\Carbon::parse($order->expiry_date)->diffInDays(now(), false) > 0
+                                    {{ \Carbon\Carbon::parse($order->expiry_date)->isPast()
                                         ? 'Expired'
                                         : \Carbon\Carbon::now()->diffInDays($order->expiry_date) . ' days' }}
                                 @else
@@ -129,6 +140,9 @@
 
                             {{-- IPTV Username --}}
                             <td>{{ $order->iptv_username ?? '-' }}</td>
+
+                            {{-- Duration --}}
+                            <td>{{ $order->duration ?? 'N/A' }}</td>
 
                             {{-- Prices --}}
                             <td>{{ $order->price }} {{ $order->currency }}</td>
@@ -165,13 +179,13 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="15" class="text-muted">No reseller orders found.</td>
+                            <td colspan="16" class="text-muted">No reseller orders found.</td>
                         </tr>
                     @endforelse
                 </tbody>
-
             </table>
         </div>
+
 
         <button type="submit" class="btn btn-danger mt-2" onclick="return confirm('Delete selected orders?')">Delete
             Selected</button>
@@ -201,12 +215,3 @@
     </div>
 
 @endsection
-
-@push('scripts')
-    <script>
-        document.getElementById('checkAll').addEventListener('change', function() {
-            let checkboxes = document.querySelectorAll('input[name="order_ids[]"]');
-            checkboxes.forEach(cb => cb.checked = this.checked);
-        });
-    </script>
-@endpush
