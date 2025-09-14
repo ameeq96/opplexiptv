@@ -44,6 +44,12 @@ Route::middleware('admin')->group(function () {
         '/purchasing/{purchasing}/pictures/{picture}',
         [PurchasingController::class, 'destroyPicture']
     )->name('purchasing.pictures.destroy');
+
+    Route::post('orders/bulk-action', [OrderController::class, 'bulkAction'])->name('orders.bulkAction');
+    Route::post('panel-orders/bulk-action', [PanelOrderController::class, 'bulkAction'])
+        ->name('reseller-orders.bulkAction');
+    Route::post('orders/{order}/mark-messaged', [OrderController::class, 'markOneMessaged'])
+        ->name('orders.markOneMessaged');
 });
 
 Route::group(

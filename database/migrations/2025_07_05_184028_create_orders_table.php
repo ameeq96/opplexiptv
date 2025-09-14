@@ -29,6 +29,8 @@ return new class extends Migration
             $table->date('expiry_date')->nullable();
             $table->string('currency')->nullable();
             $table->text('note')->nullable();
+            $table->boolean('messaged_by')->default(false);
+            $table->timestamp('messaged_at')->nullable();
             $table->string('iptv_username')->nullable();
             $table->enum('type', ['package', 'reseller'])->default('package');
             $table->timestamps();
