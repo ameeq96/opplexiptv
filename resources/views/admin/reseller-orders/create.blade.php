@@ -48,25 +48,25 @@
 
                     <div class="col-md-6">
                         <label for="payment_method" class="form-label">Payment Method</label>
-                        <select name="payment_method" id="payment_method" class="form-select" onchange="toggleOtherField()">
+                        <select name="payment_method" id="payment_method" class="form-select">
                             <option value="">-- Select Payment Method --</option>
-                            <option value="easypaisa">Easypaisa</option>
-                            <option value="jazzcash">Jazzcash</option>
-                            <option value="nayapay">Nayapay</option>
-                            <option value="meezan bank">Meezan Bank</option>
-                            <option value="alfalah bank">Alfalah Bank</option>
-                            <option value="sadapay">Sadapay</option>
-                            <option value="skrill">Skrill</option>
-                            <option value="binance">Binance</option>
-                            <option value="bitget">Bitget</option>
-                            <option value="remitly">Remitly</option>
-                            <option value="mexc">MEXC</option>
-                            <option value="other">Other</option>
+                            <option value="easypaisa" {{ old('payment_method')=='easypaisa'?'selected':'' }}>Easypaisa</option>
+                            <option value="jazzcash"  {{ old('payment_method')=='jazzcash'?'selected':'' }}>Jazzcash</option>
+                            <option value="nayapay"   {{ old('payment_method')=='nayapay'?'selected':'' }}>Nayapay</option>
+                            <option value="meezan bank" {{ old('payment_method')=='meezan bank'?'selected':'' }}>Meezan Bank</option>
+                            <option value="alfalah bank" {{ old('payment_method')=='alfalah bank'?'selected':'' }}>Alfalah Bank</option>
+                            <option value="sadapay"   {{ old('payment_method')=='sadapay'?'selected':'' }}>Sadapay</option>
+                            <option value="skrill"    {{ old('payment_method')=='skrill'?'selected':'' }}>Skrill</option>
+                            <option value="binance"   {{ old('payment_method')=='binance'?'selected':'' }}>Binance</option>
+                            <option value="bitget"    {{ old('payment_method')=='bitget'?'selected':'' }}>Bitget</option>
+                            <option value="remitly"   {{ old('payment_method')=='remitly'?'selected':'' }}>Remitly</option>
+                            <option value="mexc"      {{ old('payment_method')=='mexc'?'selected':'' }}>MEXC</option>
+                            <option value="other"     {{ old('payment_method')=='other'?'selected':'' }}>Other</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="mb-3" id="other-payment-method" style="display: none;">
+                <div class="mb-3" id="other-payment-method" style="{{ old('payment_method')=='other' ? '' : 'display:none;' }}">
                     <label for="custom_payment_method" class="form-label">Enter Custom Payment Method</label>
                     <input type="text" name="custom_payment_method" id="custom_payment_method"
                            value="{{ old('custom_payment_method') }}" class="form-control"
@@ -109,10 +109,10 @@
                     <div class="col-md-6">
                         <label for="package" class="form-label">Package Name</label>
                         <select name="package" id="package" class="form-select" required>
-                            <option value="" disabled selected>-- Select Package --</option>
+                            <option value="" disabled {{ old('package') ? '' : 'selected' }}>-- Select Package --</option>
                             <option value="starshare" {{ old('package') == 'starshare' ? 'selected' : '' }}>Starshare</option>
-                            <option value="opplex" {{ old('package') == 'opplex' ? 'selected' : '' }}>Opplex</option>
-                            <option value="other" {{ old('package') == 'other' ? 'selected' : '' }}>Other</option>
+                            <option value="opplex"    {{ old('package') == 'opplex' ? 'selected' : '' }}>Opplex</option>
+                            <option value="other"     {{ old('package') == 'other' ? 'selected' : '' }}>Other</option>
                         </select>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         <label>Status</label>
                         <select name="status" class="form-select">
                             <option value="pending" {{ old('status') == 'pending' ? 'selected' : '' }}>Pending</option>
-                            <option value="active" {{ old('status') == 'active' ? 'selected' : '' }}>Active</option>
+                            <option value="active"  {{ old('status') == 'active'  ? 'selected' : '' }}>Active</option>
                             <option value="expired" {{ old('status') == 'expired' ? 'selected' : '' }}>Expired</option>
                         </select>
                     </div>
@@ -149,8 +149,20 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label>Upload Screenshot</label>
-                        <input type="file" name="screenshot" class="form-control">
+                        <label>Upload Screenshots (multiple)</label>
+                        <input type="file" name="screenshots[]" class="form-control" multiple accept="image/*">
+                        <small class="text-muted d-block">Allowed: images up to 5MB each.</small>
+                        @error('screenshots') <div class="text-danger">{{ $message }}</div> @enderror
+                        @error('screenshots.*') <div class="text-danger">{{ $message }}</div> @enderror
+                    </div>
+                </div>
+
+                {{-- NOTE (optional) --}}
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label for="note" class="form-label">Note (optional)</label>
+                        <textarea name="note" id="note" class="form-control" rows="3" placeholder="Write any notes...">{{ old('note') }}</textarea>
+                        @error('note') <div class="text-danger">{{ $message }}</div> @enderror
                     </div>
                 </div>
 
@@ -163,14 +175,34 @@
     </div>
 
     <script>
-        document.getElementById('package').addEventListener('change', function() {
-            const customField = document.getElementById('custom_package_field');
-            if (this.value === 'other') {
-                customField.style.display = 'block';
-            } else {
-                customField.style.display = 'none';
+        // Payment "other" toggler
+        (function () {
+            const paymentSelect = document.getElementById('payment_method');
+            const otherWrap = document.getElementById('other-payment-method');
+            const customInput = document.getElementById('custom_payment_method');
+            function toggleOtherField(){
+                const show = paymentSelect && paymentSelect.value === 'other';
+                otherWrap.style.display = show ? 'block' : 'none';
+                if (!show && customInput) customInput.value = '';
             }
-        });
+            if (paymentSelect) {
+                toggleOtherField();
+                paymentSelect.addEventListener('change', toggleOtherField);
+            }
+        })();
+
+        // Package "other" toggler
+        (function () {
+            const pkg = document.getElementById('package');
+            const customPkg = document.getElementById('custom_package_field');
+            function togglePkg(){
+                customPkg.style.display = (pkg && pkg.value === 'other') ? 'block' : 'none';
+            }
+            if (pkg) {
+                togglePkg();
+                pkg.addEventListener('change', togglePkg);
+            }
+        })();
     </script>
 
 @endsection

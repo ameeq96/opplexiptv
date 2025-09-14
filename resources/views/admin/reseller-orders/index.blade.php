@@ -34,14 +34,10 @@
                     <select name="date_filter" class="form-select" onchange="this.form.submit()">
                         <option value="">-- Date Filter --</option>
                         <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
-                        <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday
-                        </option>
-                        <option value="7days" {{ request('date_filter') == '7days' ? 'selected' : '' }}>Last 7 Days
-                        </option>
-                        <option value="30days" {{ request('date_filter') == '30days' ? 'selected' : '' }}>Last 30 Days
-                        </option>
-                        <option value="90days" {{ request('date_filter') == '90days' ? 'selected' : '' }}>Last 90 Days
-                        </option>
+                        <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday</option>
+                        <option value="7days" {{ request('date_filter') == '7days' ? 'selected' : '' }}>Last 7 Days</option>
+                        <option value="30days" {{ request('date_filter') == '30days' ? 'selected' : '' }}>Last 30 Days</option>
+                        <option value="90days" {{ request('date_filter') == '90days' ? 'selected' : '' }}>Last 90 Days</option>
                         <option value="year" {{ request('date_filter') == 'year' ? 'selected' : '' }}>This Year</option>
                     </select>
                 </div>
@@ -49,10 +45,8 @@
                 <div class="col-auto">
                     <select name="expiry_status" class="form-select" onchange="this.form.submit()">
                         <option value="">-- Expiry Filter --</option>
-                        <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon
-                            (Next 5 Days)</option>
-                        <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already
-                            Expired</option>
+                        <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon (Next 5 Days)</option>
+                        <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already Expired</option>
                     </select>
                 </div>
 
@@ -103,7 +97,8 @@
                         <th style="min-width: 120px;">Payment</th>
                         <th style="min-width: 120px;">Buying Date</th>
                         <th style="min-width: 120px;">Expiry Date</th>
-                        <th style="min-width: 120px;">Screenshot</th>
+                        <th style="min-width: 160px;">Note</th> {{-- NEW --}}
+                        <th style="min-width: 160px;">Screenshots</th>
                         <th style="min-width: 100px;">Actions</th>
                     </tr>
                 </thead>
@@ -159,13 +154,33 @@
                             <td>{{ $order->buying_date }}</td>
                             <td>{{ $order->expiry_date ?? '-' }}</td>
 
-                            {{-- Screenshot --}}
+                            {{-- Note (truncated inline) --}}
                             <td>
-                                @if ($order->screenshot)
-                                    <img src="{{ asset($order->screenshot) }}" alt="Screenshot" width="50"
-                                        height="50" style="object-fit: cover; border-radius: 4px; cursor: pointer;"
-                                        data-bs-toggle="modal" data-bs-target="#screenshotModal"
-                                        onclick="showScreenshot('{{ asset($order->screenshot) }}')">
+                                @if (!empty($order->note))
+                                    <span class="d-inline-block text-truncate" style="max-width: 220px;" title="{{ $order->note }}">
+                                        {{ $order->note }}
+                                    </span>
+                                @else
+                                    <span class="text-muted">-</span>
+                                @endif
+                            </td>
+
+                            {{-- Screenshots: horizontal strip --}}
+                            <td>
+                                @php
+                                    $pics = $order->pictures ?? collect();
+                                    $count = $pics->count();
+                                @endphp
+
+                                @if ($count)
+                                    <div class="d-flex overflow-auto" style="max-width: 260px; gap: 6px;">
+                                        @foreach ($pics as $pic)
+                                            <img src="{{ asset($pic->path) }}" alt="ss" width="50" height="50"
+                                                style="object-fit: cover; border-radius: 4px; cursor: pointer; flex-shrink: 0;"
+                                                data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                                onclick="showScreenshot('{{ asset($pic->path) }}')">
+                                        @endforeach
+                                    </div>
                                 @else
                                     <span class="text-muted">N/A</span>
                                 @endif
@@ -179,16 +194,16 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="16" class="text-muted">No reseller orders found.</td>
+                            <td colspan="17" class="text-muted">No reseller orders found.</td>
                         </tr>
                     @endforelse
                 </tbody>
             </table>
         </div>
 
-
-        <button type="submit" class="btn btn-danger mt-2" onclick="return confirm('Delete selected orders?')">Delete
-            Selected</button>
+        <button type="submit" class="btn btn-danger mt-2" onclick="return confirm('Delete selected orders?')">
+            Delete Selected
+        </button>
     </form>
 
     <div class="mt-3 d-flex justify-content-center flex-column">
@@ -196,16 +211,11 @@
     </div>
 
     <!-- Screenshot Lightbox Modal -->
-    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark position-relative border-0">
-
-                <!-- Close button -->
                 <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2"
                     data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <!-- Image -->
                 <div class="modal-body p-0 text-center">
                     <img id="modalScreenshot" src="" class="img-fluid"
                         style="width: 100%; max-height: 90vh; object-fit: contain;" alt="Screenshot">
@@ -213,5 +223,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // simple helper for the modal
+        function showScreenshot(url) {
+            const img = document.getElementById('modalScreenshot');
+            if (img) img.src = url;
+        }
+    </script>
 
 @endsection

@@ -93,6 +93,10 @@ class AdminController extends Controller
             $panelOrders = Order::where("type", "reseller")->whereIn('status', ['active', 'expired'])
                 ->where('currency', $currency);
 
+            if ($startDate && $endDate) {
+                $panelOrders->whereBetween('buying_date', [$startDate, $endDate]);
+            }
+
             $orderSum = $orderQuery->sum('price');
             $panelSum = $panelOrders->sum('profit');
 
@@ -104,7 +108,11 @@ class AdminController extends Controller
 
             $purchaseSum = $purchaseQuery->sum('cost_price');
 
-            $earningsByCurrency[$currency] = ($orderSum + $panelSum) - $purchaseSum;
+            if ($filter === 'all') {
+                $earningsByCurrency[$currency] = ($orderSum + $panelSum) - $purchaseSum;
+            } else {
+                $earningsByCurrency[$currency] = ($orderSum + $panelSum);
+            }
         }
 
         return view('admin.dashboard', compact(

@@ -9,4 +9,9 @@ class Purchasing extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function pictures()
+    {
+        return $this->morphMany(\App\Models\Picture::class, 'imageable');
+    }
 }

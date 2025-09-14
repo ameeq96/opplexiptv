@@ -4,15 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\{Order, User};
+use App\Models\{Order, Picture, User};
 use Carbon\Carbon;
-use Illuminate\Support\Facades\Storage;
 
 class OrderController extends Controller
 {
     public function index(Request $request)
     {
-        $query = Order::with('user')->where('type', 'package');
+        $query = Order::with(['user', 'pictures'])->where('type', 'package');
         $today = Carbon::today();
 
         if ($request->has('search') && $request->search != '') {
@@ -21,9 +20,9 @@ class OrderController extends Controller
                 $q->whereHas('user', function ($qu) use ($search) {
                     $qu->where('name', 'like', "%$search%");
                 })
-                    ->orWhere('package', 'like', "%$search%")
-                    ->orWhere('status', 'like', "%$search%")
-                    ->orWhere('iptv_username', 'like', "%$search%");
+                ->orWhere('package', 'like', "%$search%")
+                ->orWhere('status', 'like', "%$search%")
+                ->orWhere('iptv_username', 'like', "%$search%");
             });
         }
 
@@ -57,10 +56,10 @@ class OrderController extends Controller
         if ($request->filled('expiry_status')) {
             if ($request->expiry_status === 'expired') {
                 $query->whereNotNull('expiry_date')
-                    ->whereDate('expiry_date', '<', $today);
+                      ->whereDate('expiry_date', '<', $today);
             } elseif ($request->expiry_status === 'soon') {
                 $query->whereNotNull('expiry_date')
-                    ->whereBetween('expiry_date', [$today, $today->copy()->addDays(5)]);
+                      ->whereBetween('expiry_date', [$today, $today->copy()->addDays(5)]);
             }
         }
 
@@ -74,7 +73,7 @@ class OrderController extends Controller
         ");
 
         $perPage = $request->get('per_page', 10);
-        $orders = $query->paginate($perPage);
+        $orders  = $query->paginate($perPage);
         $orders->appends($request->all());
 
         return view('admin.orders.index', compact('orders', 'today'));
@@ -89,38 +88,71 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'user_id' => 'required|exists:users,id',
-            'package' => 'required',
-            'price' => 'required|numeric',
-            'duration' => 'nullable|integer',
-            'status' => 'required|in:pending,active,expired',
-            'payment_method' => 'nullable',
-            'custom_payment_method' => 'nullable',
-            'expiry_date' => 'nullable|date',
-            'buying_date' => 'required|date',
-            'screenshot' => 'nullable|image',
-            'currency' => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
+            'user_id'                => 'required|exists:users,id',
+            'package'                => 'required',
+            'price'                  => 'required|numeric',
+            'duration'               => 'nullable|integer',
+            'status'                 => 'required|in:pending,active,expired',
+            'payment_method'         => 'nullable|string|max:255',
+            'custom_payment_method'  => 'nullable|string|max:255',
+            'expiry_date'            => 'nullable|date',
+            'buying_date'            => 'required|date',
+            'screenshots'            => 'nullable|array',
+            'screenshots.*'          => 'image|max:5120',
+            'currency'               => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
+            'iptv_username'          => 'nullable|string|max:255',
+            'custom_package'         => 'nullable|string|max:255',
+            'note'                   => 'nullable|string|max:2000', // NEW
         ]);
 
-        $data = $request->all();
+        $data = $request->only([
+            'user_id',
+            'package',
+            'price',
+            'duration',
+            'status',
+            'payment_method',
+            'currency',
+            'buying_date',
+            'expiry_date',
+            'iptv_username',
+            'note', // NEW
+        ]);
+
+        if ($request->payment_method === 'other' && $request->filled('custom_payment_method')) {
+            $data['payment_method'] = $request->string('custom_payment_method');
+        }
+        if ($request->package === 'other' && $request->filled('custom_package')) {
+            $data['package'] = $request->string('custom_package');
+        }
+
         $data['type'] = 'package';
 
-        if ($request->hasFile('screenshot')) {
-            $file = $request->file('screenshot');
-            $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('screenshots'), $filename);
-            $data['screenshot'] = 'screenshots/' . $filename;
+        $order = Order::create($data);
+
+        // UPLOAD MULTIPLE IMAGES (meta move se pehle)
+        if ($request->hasFile('screenshots')) {
+            foreach ($request->file('screenshots') as $file) {
+                if (!$file->isValid()) {
+                    return back()->withErrors(['screenshots' => 'One of the files failed to upload.']);
+                }
+
+                $originalName = $file->getClientOriginalName();
+                $mime         = $file->getClientMimeType();
+                $size         = $file->getSize();
+
+                $filename = time() . '_' . uniqid() . '_' . $originalName;
+                $file->move(public_path('screenshots'), $filename);
+
+                $order->pictures()->create([
+                    'path'          => 'screenshots/' . $filename,
+                    'original_name' => $originalName,
+                    'mime'          => $mime,
+                    'size'          => $size,
+                ]);
+            }
         }
 
-        if (($data['payment_method'] ?? null) === 'other') {
-            $data['payment_method'] = $data['custom_payment_method'] ?? null;
-        }
-
-        if (($data['package'] ?? null) === 'other') {
-            $data['package'] = $data['custom_package'] ?? null;
-        }
-
-        Order::create($data);
         return redirect()->route('orders.index')->with('success', 'Order added!');
     }
 
@@ -133,36 +165,84 @@ class OrderController extends Controller
     public function update(Request $request, Order $order)
     {
         $request->validate([
-            'user_id'   => 'required|exists:users,id',
-            'package'   => 'required',
-            'price'     => 'required|numeric',
-            'duration'  => 'nullable|integer',
-            'status'    => 'required|in:pending,active,expired',
-            'payment_method' => 'nullable',
-            'currency'  => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
-            'buying_date' => 'required|date',
-            'screenshot' => 'nullable|image',
+            'user_id'                => 'required|exists:users,id',
+            'package'                => 'required',
+            'price'                  => 'required|numeric',
+            'duration'               => 'nullable|integer',
+            'status'                 => 'required|in:pending,active,expired',
+            'payment_method'         => 'nullable|string|max:255',
+            'currency'               => 'required|in:PKR,USD,AED,EUR,GBP,SAR,INR,CAD',
+            'buying_date'            => 'required|date',
+            'expiry_date'            => 'nullable|date',
+            'screenshots'            => 'nullable|array',
+            'screenshots.*'          => 'image|max:5120',
+            'custom_payment_method'  => 'nullable|string|max:255',
+            'custom_package'         => 'nullable|string|max:255',
+            'iptv_username'          => 'nullable|string|max:255',
+            'note'                   => 'nullable|string|max:2000', // NEW
         ]);
 
-        $data = $request->except('screenshot');
+        $data = $request->only([
+            'user_id',
+            'package',
+            'price',
+            'duration',
+            'status',
+            'payment_method',
+            'currency',
+            'buying_date',
+            'expiry_date',
+            'iptv_username',
+            'note', // NEW
+        ]);
 
-        if ($request->hasFile('screenshot')) {
-            $oldPath = public_path($order->screenshot);
-            if ($order->screenshot && file_exists($oldPath)) {
-                unlink($oldPath);
-            }
-
-            $file = $request->file('screenshot');
-            $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('screenshots'), $filename);
-            $data['screenshot'] = 'screenshots/' . $filename;
+        if ($request->payment_method === 'other' && $request->filled('custom_payment_method')) {
+            $data['payment_method'] = $request->string('custom_payment_method');
         }
-
+        if ($request->package === 'other' && $request->filled('custom_package')) {
+            $data['package'] = $request->string('custom_package');
+        }
 
         $order->update($data);
 
-        return redirect()->route('orders.index')
-            ->with('success', 'Order updated.');
+        // add new images only (NO batch remove)
+        if ($request->hasFile('screenshots')) {
+            foreach ($request->file('screenshots') as $file) {
+                if (!$file->isValid()) continue;
+
+                $originalName = $file->getClientOriginalName();
+                $mime         = $file->getClientMimeType();
+                $size         = $file->getSize();
+
+                $filename = time() . '_' . uniqid() . '_' . $originalName;
+                $file->move(public_path('screenshots'), $filename);
+
+                $order->pictures()->create([
+                    'path'          => 'screenshots/' . $filename,
+                    'original_name' => $originalName,
+                    'mime'          => $mime,
+                    'size'          => $size,
+                ]);
+            }
+        }
+
+        return redirect()->route('orders.index')->with('success', 'Order updated.');
+    }
+
+    public function destroyPicture(Order $order, Picture $picture)
+    {
+        if ($picture->imageable_id !== $order->id || $picture->imageable_type !== Order::class) {
+            abort(404);
+        }
+
+        $fullPath = public_path($picture->path);
+        if (file_exists($fullPath)) {
+            unlink($fullPath);
+        }
+
+        $picture->delete();
+
+        return back()->with('success', 'Screenshot deleted.');
     }
 
     public function destroy(Order $order)

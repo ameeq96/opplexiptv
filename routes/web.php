@@ -36,8 +36,14 @@ Route::middleware('admin')->group(function () {
 
     Route::resource('clients', UserClientController::class);
     Route::resource('orders', OrderController::class);
+    Route::delete('orders/{order}/pictures/{picture}', [OrderController::class, 'destroyPicture'])
+        ->name('orders.pictures.destroy');
     Route::resource('panel-orders', PanelOrderController::class);
     Route::resource('purchasing', PurchasingController::class);
+    Route::delete(
+        '/purchasing/{purchasing}/pictures/{picture}',
+        [PurchasingController::class, 'destroyPicture']
+    )->name('purchasing.pictures.destroy');
 });
 
 Route::group(

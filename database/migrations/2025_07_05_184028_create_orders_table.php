@@ -27,8 +27,8 @@ return new class extends Migration
             $table->string('custom_package')->nullable();
             $table->date('buying_date')->nullable();
             $table->date('expiry_date')->nullable();
-            $table->string('screenshot')->nullable();
             $table->string('currency')->nullable();
+            $table->text('note')->nullable();
             $table->string('iptv_username')->nullable();
             $table->enum('type', ['package', 'reseller'])->default('package');
             $table->timestamps();

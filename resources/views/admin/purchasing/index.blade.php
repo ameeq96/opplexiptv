@@ -46,12 +46,13 @@
                         <th style="min-width: 120px;">
                             <input type="checkbox" id="checkAll">
                         </th>
-                        <th style="min-width: 80px;">Image</th>
+                        <th style="min-width: 80px;">Images</th>
                         <th style="min-width: 150px;">Panel Name</th>
                         <th style="min-width: 120px;">Cost Price</th>
                         <th style="min-width: 90px;">Currency</th>
                         <th style="min-width: 100px;">Quantity</th>
                         <th style="min-width: 140px;">Purchase Date</th>
+                        <th style="min-width: 220px;">Note</th>
                         <th style="min-width: 120px;">Actions</th>
                     </tr>
                 </thead>
@@ -59,35 +60,60 @@
                     @forelse ($purchases as $purchase)
                         <tr>
                             <td><input type="checkbox" name="purchase_ids[]" value="{{ $purchase->id }}"></td>
+
+                            {{-- Images (horizontal strip) --}}
                             <td>
-                                @if ($purchase->screenshot)
-                                    <img src="{{ asset($purchase->screenshot) }}" alt="Screenshot" width="50"
-                                        height="50" style="object-fit: cover; border-radius: 4px; cursor: pointer;"
-                                        data-bs-toggle="modal" data-bs-target="#screenshotModal"
-                                        onclick="showScreenshot('{{ asset($purchase->screenshot) }}')">
+                                @php
+                                    $pics = $purchase->pictures ?? collect();
+                                    $count = $pics->count();
+                                @endphp
+
+                                @if ($count)
+                                    <div class="d-flex overflow-auto" style="max-width: 260px; gap: 6px;">
+                                        @foreach ($pics as $pic)
+                                            <img src="{{ asset($pic->path) }}" alt="ss" width="50" height="50"
+                                                style="object-fit: cover; border-radius: 4px; cursor: pointer; flex-shrink: 0;"
+                                                data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                                onclick="showScreenshot('{{ asset($pic->path) }}')">
+                                        @endforeach
+                                    </div>
                                 @else
                                     <span class="text-muted">N/A</span>
                                 @endif
                             </td>
+
                             <td>{{ $purchase->item_name }}</td>
                             <td>{{ $purchase->cost_price }}</td>
                             <td>{{ $purchase->currency }}</td>
                             <td>{{ $purchase->quantity }}</td>
                             <td>{{ $purchase->purchase_date }}</td>
+
+                            {{-- Note (truncated) --}}
+                            <td class="text-start">
+                                @if (!empty($purchase->note))
+                                    <span title="{{ $purchase->note }}">
+                                        {{ \Illuminate\Support\Str::limit($purchase->note, 120) }}
+                                    </span>
+                                @else
+                                    <span class="text-muted">-</span>
+                                @endif
+                            </td>
+
                             <td>
                                 <a href="{{ route('purchasing.edit', $purchase) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
                             </td>
                         </tr>
                     @empty
-                        <tr><td colspan="8" class="text-muted">No purchases found.</td></tr>
+                        <tr>
+                            <td colspan="9" class="text-muted">No purchases found.</td>
+                        </tr>
                     @endforelse
                 </tbody>
             </table>
         </div>
 
-        <button type="submit" class="btn btn-danger mt-2" 
-            onclick="return confirm('Delete selected purchases?')">
+        <button type="submit" class="btn btn-danger mt-2" onclick="return confirm('Delete selected purchases?')">
             Delete Selected
         </button>
     </form>
@@ -96,9 +122,8 @@
         {{ $purchases->appends(request()->query())->links('pagination::bootstrap-5') }}
     </div>
 
-     <!-- Screenshot Lightbox Modal -->
-    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel"
-        aria-hidden="true">
+    <!-- Screenshot Lightbox Modal -->
+    <div class="modal fade" id="screenshotModal" tabindex="-1" aria-labelledby="screenshotModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content bg-dark position-relative border-0">
 
@@ -114,5 +139,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Lightbox setter
+        function showScreenshot(src) {
+            const img = document.getElementById('modalScreenshot');
+            if (img) img.src = src;
+        }
+
+        // Select all
+        (function () {
+            const all = document.getElementById('checkAll');
+            if (!all) return;
+            all.addEventListener('change', function () {
+                document.querySelectorAll('input[name="purchase_ids[]"]').forEach(el => el.checked = all.checked);
+            });
+        })();
+    </script>
 
 @endsection
