@@ -11,7 +11,7 @@
     <div class="card shadow rounded-4 p-4 w-100" style="max-width: 400px;">
         <h3 class="text-center mb-4">Admin Login</h3>
 
-        <form method="POST" action="{{ route('admin.login.submit') }}">
+        <form method="POST" action="{{ route('admin.login.attempt') }}">
             @csrf
 
             <div class="mb-3">

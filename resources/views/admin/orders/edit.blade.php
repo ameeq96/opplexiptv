@@ -19,7 +19,7 @@
   <div class="card-body">
 
     {{-- ===================== UPDATE FORM (fields only) ===================== --}}
-    <form id="updateForm" action="{{ route('orders.update', $order) }}" method="POST" enctype="multipart/form-data">
+    <form id="updateForm" action="{{ route('admin.orders.update', $order) }}" method="POST" enctype="multipart/form-data">
       @csrf @method('PUT')
 
       {{-- Client + Package --}}
@@ -166,7 +166,7 @@
                   <img src="{{ asset($pic->path) }}" class="img-fluid rounded" alt="screenshot">
                 </a>
                 {{-- Each delete has its own small form (NOT nested inside update form) --}}
-                <form action="{{ route('orders.pictures.destroy', [$order->id, $pic->id]) }}" method="POST">
+                <form action="{{ route('admin.orders.pictures.destroy', [$order->id, $pic->id]) }}" method="POST">
                   @csrf @method('DELETE')
                   <button type="submit" class="btn btn-sm btn-danger w-100">Delete</button>
                 </form>
@@ -180,7 +180,7 @@
 
     {{-- ===================== BUTTONS (OUTSIDE FORM BUT SUBMIT updateForm) ===================== --}}
     <div class="d-flex justify-content-between mt-4">
-      <a href="{{ route('orders.index') }}" class="btn btn-outline-secondary">Cancel</a>
+      <a href="{{ route('admin.orders.index') }}" class="btn btn-outline-secondary">Cancel</a>
       <button type="submit" class="btn btn-dark" form="updateForm">Update Order</button>
     </div>
     {{-- ===================== /BUTTONS ===================== --}}

@@ -26,7 +26,7 @@
   <div class="card-body">
 
     {{-- ===== UPDATE FORM (FIELDS ONLY) ===== --}}
-    <form id="updateForm" action="{{ route('panel-orders.update', $order->id) }}" method="POST" enctype="multipart/form-data">
+    <form id="updateForm" action="{{ route('admin.panel-orders.update', $order->id) }}" method="POST" enctype="multipart/form-data">
       @csrf
       @method('PUT')
 
@@ -184,7 +184,7 @@
                   <img src="{{ asset($pic->path) }}" class="img-fluid rounded" alt="screenshot"
                        style="object-fit: cover; width: 100%; height: 140px;">
                 </a>
-                <form action="{{ route('orders.pictures.destroy', [$order->id, $pic->id]) }}" method="POST" class="mt-auto">
+                <form action="{{ route('admin.orders.pictures.destroy', [$order->id, $pic->id]) }}" method="POST" class="mt-auto">
                   @csrf @method('DELETE')
                   <button type="submit" class="btn btn-sm btn-danger w-100">Delete</button>
                 </form>
@@ -198,7 +198,7 @@
 
     {{-- BUTTON ROW --}}
     <div class="d-flex justify-content-between">
-      <a href="{{ route('panel-orders.index') }}" class="btn btn-outline-secondary">Back</a>
+      <a href="{{ route('admin.panel-orders.index') }}" class="btn btn-outline-secondary">Back</a>
       <button type="submit" class="btn btn-dark" form="updateForm">Update Order</button>
     </div>
 

@@ -16,7 +16,7 @@
 
     <div class="card shadow-sm">
         <div class="card-body">
-            <form action="{{ route('clients.update', $client) }}" method="POST">
+            <form action="{{ route('admin.clients.update', $client) }}" method="POST">
                 @csrf
                 @method('PUT')
 
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="d-flex justify-content-between">
-                    <a href="{{ route('clients.index') }}" class="btn btn-outline-secondary">Cancel</a>
+                    <a href="{{ route('admin.clients.index') }}" class="btn btn-outline-secondary">Cancel</a>
                     <button type="submit" class="btn btn-dark">Update Client</button>
                 </div>
             </form>

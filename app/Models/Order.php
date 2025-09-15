@@ -32,4 +32,24 @@ class Order extends Model
     {
         return $q->whereNotNull('messaged_at');
     }
+
+    public function scopeStatusIn($q, array $statuses)
+    {
+        return $q->whereIn('status', $statuses);
+    }
+    public function scopeType($q, string $type)
+    {
+        return $q->where('type', $type);
+    }
+    public function scopeCurrency($q, string $currency)
+    {
+        return $q->where('currency', $currency);
+    }
+    public function scopeBetweenBuying($q, ?\App\Support\DateRange $range)
+    {
+        if ($range?->isBounded()) {
+            $q->whereBetween('buying_date', [$range->start, $range->end]);
+        }
+        return $q;
+    }
 }

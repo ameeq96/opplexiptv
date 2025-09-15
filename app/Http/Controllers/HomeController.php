@@ -2,453 +2,186 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\{BuyNowAutoReply, BuyNowEmail, ContactAutoReply, ContactEmail, SubscribeEmail};
-use App\Traits\HelperFunction;
-use Exception;
+use App\Http\Requests\Site\{ContactRequest, BuyNowRequest, SubscribeRequest};
+use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService};
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{Cache, Http, Log, Mail};
 use Jenssegers\Agent\Agent;
 
 class HomeController extends Controller
 {
-    use HelperFunction;
+    public function __construct(
+        private TmdbService $tmdb,
+        private ImageService $images,
+        private LocaleService $locale,
+        private ContactService $contact,
+        private CaptchaService $captcha,
+    ) {}
 
     public function home()
     {
-        $apiKey = env('TMDB_API_KEY');
-        $baseUrl = env('TMDB_BASE_URL');
-        $imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
-        $posterBaseUrl = "https://image.tmdb.org/t/p/w500";
+        $isMobile = (new Agent())->isMobile();
+        $isRtl    = $this->locale->isRtl();
 
-        $locale = app()->getLocale();
+        $payload = $this->tmdb->trending('movie', 'day', 1);
+        $movies  = $payload['results'] ?? [];
 
-        $languageCode = match ($locale) {
-            'fr' => 'fr-FR',
-            'it' => 'it-IT',
-            'ur' => 'ur-PK',
-            'ru' => 'ru-RU',
-            'es' => 'es-ES',
-            'pt' => 'pt-BR',
-            'nl' => 'nl-NL',
-            'ar' => 'ar-SA',
-            'hi' => 'hi-IN',
-            default => 'en-US',
-        };
-
-        $agent = new Agent();
-        $isMobile = $agent->isMobile();
-
-        $logos = [
-            'images/resource/5.webp',
-            'images/resource/4.webp',
-            'images/resource/3.webp',
-            'images/resource/6.webp',
-            'images/resource/7.webp',
-            'images/resource/8.webp',
-            'images/resource/9.webp',
-        ];
-
-        $optimizedLogos = array_map(function ($logo) {
-            $localPath = public_path($logo);
-            return $this->convertToWebp($localPath, 100);
-        }, $logos);
-
-        $cacheKey = 'trending_movies_' . $languageCode;
-
-        $moviesUrl = $baseUrl . '/trending/movie/day?api_key=' . $apiKey . '&language=' . $languageCode;
-        $movies = Cache::remember($cacheKey, now()->addHour(), function () use ($moviesUrl) {
-            $response = Http::withoutVerifying()->get($moviesUrl);
-            return $response->json()['results'] ?? [];
-        });
-
-        foreach ($movies as &$movie) {
-            if (!empty($movie['backdrop_path'])) {
-                $movie['webp_image_url'] = $isMobile
-                    ? $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 428, 220)
-                    : $this->convertToWebp($imageBaseUrl . $movie['backdrop_path'], 1280, 720);
+        foreach ($movies as &$m) {
+            if (!empty($m['backdrop_path'])) {
+                $src = $this->images->tmdbImage($m['backdrop_path'], $isMobile ? 'w500' : 'w1280');
+                $m['webp_image_url'] = $this->images->toWebp($src, $isMobile ? 428 : 1280, $isMobile ? 220 : 720);
             }
-
-            if (!empty($movie['poster_path'])) {
-                $movie['webp_poster_url'] = $this->convertToWebp($posterBaseUrl . $movie['poster_path'], 308, 462);
+            if (!empty($m['poster_path'])) {
+                $src = $this->images->tmdbImage($m['poster_path'], 'w500');
+                $m['webp_poster_url'] = $this->images->toWebp($src, 308, 462);
             }
-
-            $movieId = $movie['id'];
-            $mediaType = $movie['media_type'] ?? 'movie';
         }
+        unset($m);
 
-        $movies = collect($movies)->take(10);
-
-        $isRtl = $this->isRtl($locale);
-
-        return view('pages.home', compact('movies', 'logos', 'isMobile', 'isRtl'));
-    }
-
-    private function convertToWebp($imageUrl, $width = 308, $height = 462)
-    {
-        $webpDir = public_path('webp_images');
-        $webpPath = 'webp_images/' . md5($imageUrl . $width . $height) . '.webp';
-        $fullPath = public_path($webpPath);
-
-        if (file_exists($fullPath)) {
-            return asset($webpPath);
-        }
-
-        try {
-            $imageData = Http::timeout(10)->withoutVerifying()->get($imageUrl)->body();
-            $image = @imagecreatefromstring($imageData);
-
-            if (!$image) {
-                return $imageUrl;
-            }
-
-            $resizedImage = imagecreatetruecolor($width, $height);
-            imagealphablending($resizedImage, false);
-            imagesavealpha($resizedImage, true);
-            $transparent = imagecolorallocatealpha($resizedImage, 0, 0, 0, 127);
-            imagefill($resizedImage, 0, 0, $transparent);
-
-            imagecopyresampled($resizedImage, $image, 0, 0, 0, 0, $width, $height, imagesx($image), imagesy($image));
-
-            if (!file_exists($webpDir)) {
-                mkdir($webpDir, 0755, true);
-            }
-
-            imagewebp($resizedImage, $fullPath, 75);
-
-            imagedestroy($image);
-            imagedestroy($resizedImage);
-
-            return asset($webpPath);
-        } catch (\Exception $e) {
-            return $imageUrl;
-        }
+        return view('pages.home', [
+            'movies'   => collect($movies)->take(10),
+            'logos'    => $this->images->logos(),
+            'isMobile' => $isMobile,
+            'isRtl'    => $isRtl,
+        ]);
     }
 
     public function about()
     {
-        $agent = new Agent();
-        $isMobile = $agent->isMobile();
-
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        $logos = [
-            'images/resource/5.webp',
-            'images/resource/4.webp',
-            'images/resource/3.webp',
-            'images/resource/6.webp',
-            'images/resource/7.webp',
-            'images/resource/8.webp',
-            'images/resource/9.webp',
-        ];
-
-        return view("pages.about", compact('logos', 'isRtl', 'isMobile'));
+        return view('pages.about', [
+            'logos'    => $this->images->logos(),
+            'isRtl'    => $this->locale->isRtl(),
+            'isMobile' => (new Agent())->isMobile(),
+        ]);
     }
 
     public function contact()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        $num1 = rand(1, 10);
-        $num2 = rand(1, 10);
-
-        session(['captcha_sum' => $num1 + $num2]);
-
-        return view("pages.contact", compact('num1', 'num2', 'isRtl'));
+        ['num1' => $num1, 'num2' => $num2] = $this->captcha->generate();
+        return view('pages.contact', [
+            'num1' => $num1,
+            'num2' => $num2,
+            'isRtl' => $this->locale->isRtl(),
+        ]);
     }
 
     public function pricing()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        return view("pages.pricing", compact('isRtl'));
+        return view('pages.pricing', ['isRtl' => $this->locale->isRtl()]);
     }
 
     public function redirect(Request $request)
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
         $target = $request->query('target');
-
-        if (!$target || !filter_var($target, FILTER_VALIDATE_URL)) {
-            abort(404);
-        }
-
-        return view("pages.redirect", compact('isRtl', 'target'));
+        abort_unless($target && filter_var($target, FILTER_VALIDATE_URL), 404);
+        return view('pages.redirect', [
+            'isRtl' => $this->locale->isRtl(),
+            'target' => $target
+        ]);
     }
 
     public function movies(Request $request)
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
+        $page   = max(1, (int) $request->input('page', 1));
+        $query  = (string) $request->input('search', '');
+        $isRtl  = $this->locale->isRtl();
 
-        $apiKey = env('TMDB_API_KEY');
-        $baseUrl = env('TMDB_BASE_URL');
-        $page = $request->input('page', 1);
-        $query = $request->input('search');
-
-        // Get language code based on locale
-        $locale = app()->getLocale();
-        $languageCode = match ($locale) {
-            'fr' => 'fr-FR',
-            'it' => 'it-IT',
-            default => 'en-US',
-        };
-
-        $cacheKey = $query
-            ? "search_{$query}_page_{$page}_{$locale}"
-            : "trending_page_{$page}_{$locale}";
-
-        // Build the URL like in the home() method
-        $moviesUrl = $query
-            ? $baseUrl . "/search/multi?api_key={$apiKey}&query=" . urlencode($query) . "&page={$page}&language={$languageCode}"
-            : $baseUrl . "/trending/all/day?api_key={$apiKey}&page={$page}&language={$languageCode}";
-
-        // Fetch and cache movies
-        $movies = Cache::remember($cacheKey, now()->addHour(), function () use ($moviesUrl) {
-            $response = Http::withoutVerifying()->get($moviesUrl);
-            return $response->json()['results'] ?? [];
-        });
-
-        // Add trailer URLs
-        foreach ($movies as &$movie) {
-            $movieId = $movie['id'];
-            $mediaType = $movie['media_type'] ?? 'movie';
-
-            $movie['trailer_url'] = Cache::remember("movie_{$movieId}_trailer_{$locale}", now()->addDay(), function () use ($baseUrl, $mediaType, $movieId, $apiKey, $languageCode) {
-                $trailerUrl = "$baseUrl/$mediaType/$movieId/videos?api_key={$apiKey}&language={$languageCode}";
-                $trailerResponse = Http::withoutVerifying()->get($trailerUrl);
-
-                $trailers = $trailerResponse->json()['results'] ?? [];
-                $youtubeTrailer = collect($trailers)->firstWhere('site', 'YouTube');
-
-                return $youtubeTrailer ? "https://www.youtube.com/watch?v={$youtubeTrailer['key']}" : null;
-            });
+        if ($query !== '') {
+            $payload    = $this->tmdb->searchMulti($query, $page);
+        } else {
+            $payload    = $this->tmdb->trending('all', 'day', $page);
         }
 
-        // Group filtered results
+        $results    = $payload['results']      ?? [];
+        $totalPages = (int) ($payload['total_pages'] ?? 1);
+        $totalPages = max(1, $totalPages);
+
+        foreach ($results as &$movie) {
+            $movie['trailer_url'] = $this->tmdb->trailerUrl(
+                $movie['id'],
+                $movie['media_type'] ?? 'movie'
+            );
+        }
+        unset($movie);
+
+        $collection = collect($results);
         $filteredMovies = [
-            'movies' => collect($movies)->where('media_type', 'movie'),
-            'series' => collect($movies)->where('media_type', 'tv'),
-            'cartoons' => collect($movies)->filter(function ($movie) {
-                return in_array(16, $movie['genre_ids'] ?? []);
-            }),
+            'movies'   => $collection->where('media_type', 'movie'),
+            'series'   => $collection->where('media_type', 'tv'),
+            'cartoons' => $collection->filter(fn($m) => in_array(16, $m['genre_ids'] ?? [])),
         ];
-
-        // Cache total pages
-        $totalPagesCacheKey = $query
-            ? "search_{$query}_total_pages_{$locale}"
-            : "trending_total_pages_{$locale}";
-
-        $totalPages = Cache::remember($totalPagesCacheKey, now()->addHour(), function () use ($baseUrl, $apiKey, $query, $page, $languageCode) {
-            $url = $query
-                ? "$baseUrl/search/multi?api_key={$apiKey}&query=" . urlencode($query) . "&page={$page}&language={$languageCode}"
-                : "$baseUrl/trending/all/day?api_key={$apiKey}&page={$page}&language={$languageCode}";
-
-            $response = Http::withoutVerifying()->get($url);
-            return $response->json()['total_pages'] ?? 1;
-        });
 
         return view('pages.movies', compact('filteredMovies', 'page', 'totalPages', 'query', 'isRtl'));
     }
 
 
-
     public function packages()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        return view("pages.packages", compact('isRtl'));
+        return view('pages.packages',     ['isRtl' => $this->locale->isRtl()]);
     }
 
     public function resellerPanel()
     {
-        $logos = [
-            'images/resource/5.webp',
-            'images/resource/4.webp',
-            'images/resource/3.webp',
-            'images/resource/6.webp',
-            'images/resource/7.webp',
-            'images/resource/8.webp',
-            'images/resource/9.webp',
-        ];
-
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        return view("pages.resellerpanel", compact('isRtl', 'logos'));
+        return view('pages.resellerpanel', ['isRtl' => $this->locale->isRtl(), 'logos' => $this->images->logos()]);
     }
 
     public function buynow()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        $num1 = rand(1, 10);
-        $num2 = rand(1, 10);
-
-        session(['captcha_sum' => $num1 + $num2]);
-
-        return view("pages.buynow", compact('num1', 'num2', 'isRtl'));
+        ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
+        return view('pages.buynow',      ['num1' => $a, 'num2' => $b, 'isRtl' => $this->locale->isRtl()]);
     }
 
     public function buynowpanel()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        $num1 = rand(1, 10);
-        $num2 = rand(1, 10);
-
-        session(['captcha_sum' => $num1 + $num2]);
-
-        return view("pages.buynowpanel", compact('num1', 'num2', 'isRtl'));
+        ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
+        return view('pages.buynowpanel', ['num1' => $a, 'num2' => $b, 'isRtl' => $this->locale->isRtl()]);
     }
 
     public function iptvApplications()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        return view("pages.iptvapplications", compact('isRtl'));
+        return view('pages.iptvapplications', ['isRtl' => $this->locale->isRtl()]);
     }
 
     public function faq()
     {
-        $locale = app()->getLocale();
-        $isRtl = $this->isRtl($locale);
-
-        return view("pages.faq", compact('isRtl'));
+        return view('pages.faq', ['isRtl' => $this->locale->isRtl()]);
     }
 
-    public function send(Request $request)
+    public function send(ContactRequest $request)
     {
-        $request->validate([
-            'username' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:255',
-            'message' => 'required|string',
-        ]);
-
-        if ($request->captcha != session('captcha_sum')) {
+        if (!app(CaptchaService::class)->check($request->captcha)) {
             return back()->with('error', 'Invalid Captcha. Please try again.');
         }
-
-        try {
-
-            $details = [
-                'username' => $request->username,
-                'email' => $request->email,
-                'phone' => $request->phone,
-                'message' => $request->message,
-            ];
-
-            Mail::to('info@opplexiptv.com')->send(new ContactEmail($details));
-
-            Mail::to($request->email)->send(new ContactAutoReply($details));
-
-            return back()->with('success', 'Your message has been sent successfully!');
-        } catch (Exception $e) {
-            return back()->with('error', 'There was an error sending your message. Please try again later.');
-        }
+        $this->contact->contact($request->only('username', 'email', 'phone', 'message'));
+        return back()->with('success', 'Your message has been sent successfully!');
     }
 
-    public function sendBuynow(Request $request)
+    public function sendBuynow(BuyNowRequest $request)
     {
-        $request->validate([
-            'username' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'package' => 'required|string|max:255',
-            'phone' => 'required|string|max:255',
-            'message' => 'required|string',
-        ]);
-
-        if ($request->captcha != session('captcha_sum')) {
+        if (!app(CaptchaService::class)->check($request->captcha)) {
             return back()->with('error', 'Invalid Captcha. Please try again.');
         }
-
-        try {
-            $details = [
-                'username' => $request->username,
-                'email' => $request->email,
-                'package' => $request->package,
-                'phone' => $request->phone,
-                'message' => $request->message,
-            ];
-
-            Mail::to('info@opplexiptv.com')->send(new BuyNowEmail($details));
-
-            Mail::to($request->email)->send(new BuyNowAutoReply($details));
-
-            return back()->with('success', 'Your message has been sent successfully!');
-        } catch (\Exception $e) {
-            return back()->with('error', 'There was an error sending your message. Please try again later.');
-        }
+        $this->contact->buyNow($request->only('username', 'email', 'package', 'phone', 'message'));
+        return back()->with('success', 'Your message has been sent successfully!');
     }
 
-    public function postBuyNowPanel(Request $request)
+    public function postBuyNowPanel(BuyNowRequest $request)
     {
-        $request->validate([
-            'username' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'package' => 'required|string|max:255',
-            'phone' => 'required|string|max:255',
-            'message' => 'required|string',
-        ]);
-
-        if ($request->captcha != session('captcha_sum')) {
+        if (!app(CaptchaService::class)->check($request->captcha)) {
             return back()->with('error', 'Invalid Captcha. Please try again.');
         }
-
-        try {
-            $details = [
-                'username' => $request->username,
-                'email' => $request->email,
-                'package' => $request->package,
-                'phone' => $request->phone,
-                'message' => $request->message,
-            ];
-
-            Mail::to('info@opplexiptv.com')->send(new BuyNowEmail($details));
-
-            return back()->with('success', 'Your message has been sent successfully!');
-        } catch (Exception $e) {
-            return back()->with('error', 'There was an error sending your message. Please try again later.');
-        }
+        $this->contact->buyNow($request->only('username', 'email', 'package', 'phone', 'message'));
+        return back()->with('success', 'Your message has been sent successfully!');
     }
 
-    public function subscribe(Request $request)
+    public function subscribe(SubscribeRequest $request)
     {
-        $request->validate([
-            'email' => 'required|email',
-        ]);
-
-        $details = [
-            'email' => $request->email,
-        ];
-
-        Mail::to('info@opplexiptv.com')->send(new SubscribeEmail($details));
-
-        return redirect()->back()->with('success', 'Thank you for subscribing!');
+        $this->contact->subscribe($request->email);
+        return back()->with('success', 'Thank you for subscribing!');
     }
 
     public function getTrending()
     {
-        $apiKey = env('TMDB_API_KEY');
-        $baseUrl = env('TMDB_BASE_URL');
-
-        $response = Http::withoutVerifying()->get("$baseUrl/trending/all/day", [
-            'api_key' => $apiKey,
-        ]);
-
-        if ($response->successful()) {
-            return response()->json($response->json());
-        }
-
-        return response()->json(['error' => 'Unable to fetch trending data'], 500);
+        $data = $this->tmdb->trending('all', 'day');
+        return !empty($data) ? response()->json(['results' => $data]) : response()->json(['error' => 'Unable to fetch trending data'], 500);
     }
 }

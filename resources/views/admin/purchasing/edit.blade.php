@@ -18,7 +18,7 @@
   <div class="card-body">
 
     {{-- ===== UPDATE FORM (fields only) ===== --}}
-    <form id="updatePurchaseForm" action="{{ route('purchasing.update', $purchasing->id) }}" method="POST" enctype="multipart/form-data">
+    <form id="updatePurchaseForm" action="{{ route('admin.purchasing.update', $purchasing->id) }}" method="POST" enctype="multipart/form-data">
       @csrf
       @method('PUT')
 
@@ -93,7 +93,7 @@
                   <img src="{{ asset($pic->path) }}" class="img-fluid rounded" alt="screenshot"
                        style="object-fit: cover; width: 100%; height: 140px;">
                 </a>
-                <form action="{{ route('purchasing.pictures.destroy', [$purchasing->id, $pic->id]) }}" method="POST" class="mt-auto">
+                <form action="{{ route('admin.purchasing.pictures.destroy', [$purchasing->id, $pic->id]) }}" method="POST" class="mt-auto">
                   @csrf @method('DELETE')
                   <button type="submit" class="btn btn-sm btn-danger w-100">Delete</button>
                 </form>
@@ -107,7 +107,7 @@
 
     {{-- BUTTON ROW (outside, submits the form by id) --}}
     <div class="d-flex justify-content-between">
-      <a href="{{ route('purchasing.index') }}" class="btn btn-outline-secondary">Back</a>
+      <a href="{{ route('admin.purchasing.index') }}" class="btn btn-outline-secondary">Back</a>
       <button type="submit" class="btn btn-dark" form="updatePurchaseForm">Update Purchase</button>
     </div>
 

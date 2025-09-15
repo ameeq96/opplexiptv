@@ -13,7 +13,7 @@
 
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('purchasing.index') }}" method="GET" class="d-flex flex-wrap align-items-center gap-2">
+            <form action="{{ route('admin.purchasing.index') }}" method="GET" class="d-flex flex-wrap align-items-center gap-2">
 
                 <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
                     @foreach ([10, 20, 30, 40, 100] as $size)
@@ -28,7 +28,7 @@
 
                 <button type="submit" class="btn btn-primary">Search</button>
 
-                <a href="{{ route('purchasing.create') }}" class="btn btn-dark ms-auto">
+                <a href="{{ route('admin.purchasing.create') }}" class="btn btn-dark ms-auto">
                     <i class="bi bi-plus-lg me-1"></i> Add New Purchase
                 </a>
             </form>
@@ -36,7 +36,7 @@
     </div>
 
 
-    <form id="bulkDeleteForm" action="{{ route('purchasing.bulkDelete') }}" method="POST">
+    <form id="bulkDeleteForm" action="{{ route('admin.purchasing.bulkDelete') }}" method="POST">
         @csrf
         @method('DELETE')
         <div class="table-responsive">
@@ -100,7 +100,7 @@
                             </td>
 
                             <td>
-                                <a href="{{ route('purchasing.edit', $purchase) }}"
+                                <a href="{{ route('admin.purchasing.edit', $purchase) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
                             </td>
                         </tr>

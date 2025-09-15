@@ -3,37 +3,34 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\Admin\Clients\{
+    StoreClientRequest,
+    UpdateClientRequest,
+    ImportClientsRequest
+};
 use App\Models\User;
-use Illuminate\Support\Facades\{Hash, Validator};
+use App\Services\Clients\{
+    ClientQueryService,
+    ClientCrudService,
+    ClientImportService
+};
+use Illuminate\Http\Request;
 use Nakanakaii\Countries\Countries;
 
 class UserClientController extends Controller
 {
+    public function __construct(
+        private ClientQueryService $query,
+        private ClientCrudService $crud,
+        private ClientImportService $importer,
+    ) {}
+
     public function index(Request $request)
     {
-        $query = User::query();
-
-        if ($request->has('search') && $request->search != '') {
-            $search = $request->search;
-            $query->where(function ($q) use ($search) {
-                $q->where('name', 'like', "%$search%")
-                    ->orWhere('email', 'like', "%$search%")
-                    ->orWhere('phone', 'like', "%$search%");
-            });
-        }
-
-        if ($request->filled('exclude_iptv')) {
-            $query->where('name', 'not like', '%iptv%');
-        }
-
-        // Default to 10 if not provided
-        $perPage = $request->get('per_page', 10);
-
-        $clients = $query->orderBy('id', 'desc')->paginate($perPage);
-
-        // Keep per_page & other query params in pagination links
-        $clients->appends($request->all());
+        $builder = $this->query->base();
+        $this->query->applyFilters($builder, $request);
+        $this->query->applySorting($builder);
+        $clients = $this->query->paginate($builder, $request);
 
         return view('admin.clients.index', compact('clients'));
     }
@@ -44,20 +41,10 @@ class UserClientController extends Controller
         return view('admin.clients.create', compact('countries'));
     }
 
-    public function store(Request $request)
+    public function store(StoreClientRequest $request)
     {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'nullable|email|unique:users',
-            'phone' => 'required|unique:users',
-        ]);
-
-        $data = $request->all();
-        $data['password'] = bcrypt('defaultpassword');
-
-        User::create($data);
-
-        return redirect()->route('clients.index')->with('success', 'Client added successfully.');
+        $this->crud->create($request->validated());
+        return redirect()->route('admin.clients.index')->with('success', 'Client added successfully.');
     }
 
     public function edit(User $client)
@@ -66,118 +53,33 @@ class UserClientController extends Controller
         return view('admin.clients.edit', compact('client', 'countries'));
     }
 
-    public function update(Request $request, User $client)
+    public function update(UpdateClientRequest $request, User $client)
     {
-        $request->validate([
-            'name' => 'required',
-            'email' => 'nullable|email|unique:users,email,' . $client->id,
-            'phone' => 'required|unique:users,phone,' . $client->id,
-        ]);
-
-        $client->update($request->all());
-
-        return redirect()->route('clients.index')->with('success', 'Client updated.');
+        $this->crud->update($request->validated(), $client);
+        return redirect()->route('admin.clients.index')->with('success', 'Client updated.');
     }
 
     public function destroy(User $client)
     {
-        $client->delete();
+        $this->crud->delete($client);
         return back()->with('success', 'Client deleted.');
     }
 
-    public function import(Request $request)
+    public function import(ImportClientsRequest $request)
     {
-        set_time_limit(800);
-
-        $request->validate([
-            'csv_file' => 'required|mimes:csv,txt',
-        ]);
-
-        $file = fopen($request->file('csv_file'), 'r');
-        $header = fgetcsv($file);
-
-        $imported = 0;
-
-        while (($row = fgetcsv($file)) !== false) {
-            $data = array_combine($header, $row);
-
-            $rawPhone = (string) $data['phone'];
-
-            if (stripos($rawPhone, 'e') !== false) {
-                $phone = number_format((float)$rawPhone, 0, '', '');
-            } else {
-                $phone = preg_replace('/[^0-9]/', '', $rawPhone);
-            }
-
-            if (substr($phone, 0, 1) === '0') {
-                $phone = '+92' . substr($phone, 1);
-            }
-
-            if (User::where('phone', $phone)->exists()) {
-                continue;
-            }
-
-            $email = $data['email'] ?? null;
-
-            if (!empty($email) && User::where('email', $email)->exists()) {
-                continue;
-            }
-
-            if (empty($email)) {
-                $namePart = preg_replace('/[^A-Za-z0-9]/', '', $data['name']);
-                $namePart = substr($namePart, 0, 30);
-                $baseEmail = strtolower($namePart . '@gmail.com');
-                $email = $baseEmail;
-
-                $counter = 1;
-                while (User::where('email', $email)->exists()) {
-                    $email = strtolower($namePart . $counter . '@gmail.com');
-                    $counter++;
-                }
-            }
-
-            $validator = Validator::make([
-                'name' => $data['name'],
-                'email' => $email,
-                'phone' => $phone,
-                'country' => $data['country'] ?? null,
-            ], [
-                'name' => 'required',
-                'email' => 'nullable|email',
-                'phone' => 'required',
-                'country' => 'nullable|string|max:100',
-            ]);
-
-            if ($validator->fails()) {
-                continue;
-            }
-
-            User::create([
-                'name' => $data['name'],
-                'email' => $email,
-                'phone' => $phone,
-                'country' => $data['country'] ?? null,
-                'password' => Hash::make('defaultpassword'),
-            ]);
-
-            $imported++;
-        }
-
-        fclose($file);
-
-        return redirect()->route('clients.index')->with('success', "$imported clients imported successfully.");
+        @set_time_limit(800);
+        $count = $this->importer->importFromCsv($request->file('csv_file'));
+        return redirect()->route('admin.clients.index')->with('success', "{$count} clients imported successfully.");
     }
 
     public function bulkDelete(Request $request)
     {
-        $ids = $request->input('client_ids');
-
-        if (!$ids) {
+        $ids = $request->input('client_ids', []);
+        if (empty($ids)) {
             return back()->with('success', 'No clients selected.');
         }
 
-        User::whereIn('id', $ids)->delete();
-
-        return back()->with('success', count($ids) . ' client(s) deleted successfully.');
+        $deleted = $this->crud->bulkDelete($ids);
+        return back()->with('success', "{$deleted} client(s) deleted successfully.");
     }
 }

@@ -9,13 +9,13 @@
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <a class="nav-link {{ ($tab ?? 'unmessaged') === 'unmessaged' ? 'active' : '' }}"
-                    href="{{ route('orders.index', array_merge(request()->query(), ['tab' => 'unmessaged'])) }}">
+                    href="{{ route('admin.orders.index', array_merge(request()->query(), ['tab' => 'unmessaged'])) }}">
                     Unmessaged
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ ($tab ?? '') === 'messaged' ? 'active' : '' }}"
-                    href="{{ route('orders.index', array_merge(request()->query(), ['tab' => 'messaged'])) }}">
+                    href="{{ route('admin.orders.index', array_merge(request()->query(), ['tab' => 'messaged'])) }}">
                     Messaged
                 </a>
             </li>
@@ -25,7 +25,7 @@
     {{-- Filters --}}
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('orders.index') }}" method="GET" class="row g-2 align-items-center">
+            <form action="{{ route('admin.orders.index') }}" method="GET" class="row g-2 align-items-center">
                 {{-- keep current tab while filtering --}}
                 <input type="hidden" name="tab" value="{{ $tab ?? 'unmessaged' }}">
                 <input type="hidden" name="type" value="{{ $type ?? 'package' }}">
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="col ms-auto text-end">
-                    <a href="{{ route('orders.create') }}" class="btn btn-dark">
+                    <a href="{{ route('admin.orders.create') }}" class="btn btn-dark">
                         <i class="bi bi-plus-lg me-1"></i>
                     </a>
                 </div>
@@ -101,7 +101,7 @@
     @endif
 
     {{-- BULK ACTIONS + TABLE --}}
-    <form id="bulkActionForm" action="{{ route('orders.bulkAction') }}" method="POST">
+    <form id="bulkActionForm" action="{{ route('admin.orders.bulkAction') }}" method="POST">
         @csrf
         <input type="hidden" name="action" id="bulkActionInput" value="">
 
@@ -249,7 +249,7 @@
                             </td>
 
                             <td class="d-flex pt-3 align-items-center justify-content-center">
-                                <a href="{{ route('orders.edit', $order) }}"
+                                <a href="{{ route('admin.orders.edit', $order) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
 
                                 @php

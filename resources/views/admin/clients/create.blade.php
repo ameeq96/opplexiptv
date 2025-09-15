@@ -16,7 +16,7 @@
 
     <div class="card shadow-sm">
         <div class="card-body">
-            <form action="{{ route('clients.store') }}" method="POST">
+            <form action="{{ route('admin.clients.store') }}" method="POST">
                 @csrf
 
                 <div class="row mb-3">
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="d-flex justify-content-between">
-                    <a href="{{ route('clients.index') }}" class="btn btn-outline-secondary">Cancel</a>
+                    <a href="{{ route('admin.clients.index') }}" class="btn btn-outline-secondary">Cancel</a>
                     <button type="submit" class="btn btn-dark">Save Client</button>
                 </div>
             </form>

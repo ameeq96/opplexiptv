@@ -16,7 +16,7 @@
 
 <div class="card shadow-sm">
   <div class="card-body">
-    <form action="{{ route('purchasing.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('admin.purchasing.store') }}" method="POST" enctype="multipart/form-data">
       @csrf
 
       <div class="row mb-3">
@@ -70,7 +70,7 @@
       </div>
 
       <div class="d-flex justify-content-between">
-        <a href="{{ route('purchasing.index') }}" class="btn btn-outline-secondary">Cancel</a>
+        <a href="{{ route('admin.purchasing.index') }}" class="btn btn-outline-secondary">Cancel</a>
         <button type="submit" class="btn btn-dark">Save Purchase</button>
       </div>
     </form>

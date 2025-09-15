@@ -9,12 +9,12 @@
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <a class="nav-link {{ ($tab ?? 'unmessaged') === 'unmessaged' ? 'active' : '' }}"
-                    href="{{ route('panel-orders.index', array_merge(request()->except('tab', 'page'), ['tab' => 'unmessaged'])) }}">
+                    href="{{ route('admin.panel-orders.index', array_merge(request()->except('tab', 'page'), ['tab' => 'unmessaged'])) }}">
                     Unmessaged
                 </a </li>
             <li class="nav-item">
                 <a class="nav-link {{ ($tab ?? '') === 'messaged' ? 'active' : '' }}"
-                    href="{{ route('panel-orders.index', array_merge(request()->except('tab', 'page'), ['tab' => 'messaged'])) }}">
+                    href="{{ route('admin.panel-orders.index', array_merge(request()->except('tab', 'page'), ['tab' => 'messaged'])) }}">
                     Messaged
                 </a>
             </li>
@@ -36,7 +36,7 @@
 
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('panel-orders.index') }}" method="GET" class="row g-2 align-items-center">
+            <form action="{{ route('admin.panel-orders.index') }}" method="GET" class="row g-2 align-items-center">
                 {{-- keep current tab while filtering --}}
                 <input type="hidden" name="tab" value="{{ $tab ?? 'unmessaged' }}">
                 <input type="hidden" name="type" value="{{ $type ?? 'reseller' }}">
@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="col ms-auto text-end">
-                    <a href="{{ route('panel-orders.create') }}" class="btn btn-dark">
+                    <a href="{{ route('admin.panel-orders.create') }}" class="btn btn-dark">
                         <i class="bi bi-plus-lg me-1"></i>
                     </a>
                 </div>
@@ -105,7 +105,7 @@
     </div>
 
     {{-- BULK ACTIONS + TABLE --}}
-    <form id="bulkActionFormReseller" action="{{ route('reseller-orders.bulkAction') }}" method="POST">
+    <form id="bulkActionFormReseller" action="{{ route('admin.reseller-orders.bulkAction') }}" method="POST">
         @csrf
         <input type="hidden" name="action" id="bulkActionInputReseller" value="">
 
@@ -202,7 +202,7 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="{{ route('panel-orders.edit', $order->id) }}"
+                                <a href="{{ route('admin.panel-orders.edit', $order->id) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
                             </td>
                         </tr>

@@ -120,42 +120,45 @@
  <script src="{{ asset('js/script.js') }}" defer></script>
 
  <script>
-     document.addEventListener("DOMContentLoaded", function() {
+     document.addEventListener('DOMContentLoaded', function() {
+         // Lazy backgrounds (your existing code)
          const lazyBackgrounds = document.querySelectorAll('.lazy-background');
-
-         const observer = new IntersectionObserver((entries, observer) => {
+         const observer = new IntersectionObserver((entries, obs) => {
              entries.forEach(entry => {
                  if (entry.isIntersecting) {
-                     const element = entry.target;
-                     const bgUrl = element.getAttribute('data-bg');
-                     element.style.backgroundImage = `url(${bgUrl})`;
-                     observer.unobserve(element);
+                     const el = entry.target;
+                     const bgUrl = el.getAttribute('data-bg');
+                     if (bgUrl) el.style.backgroundImage = `url(${bgUrl})`;
+                     obs.unobserve(el);
                  }
              });
          });
-
-         lazyBackgrounds.forEach(element => {
-             observer.observe(element);
-         });
+         lazyBackgrounds.forEach(el => observer.observe(el));
 
          const realToggle = document.getElementById('real-toggle');
-
          if (realToggle) realToggle.style.display = 'block';
 
-     });
-
-     window.onload = function() {
+         // ---- FIXED TOGGLE BLOCK ----
          const toggle = document.getElementById('resellerToggle');
          const normal = document.getElementById('normalPackages');
          const reseller = document.getElementById('resellerPackages');
          const creditInfo = document.getElementById('creditInfo');
 
-         toggle.addEventListener('change', function() {
-             const isChecked = this.checked;
+         // Only wire up if ALL elements exist on this page
+         if (toggle && normal && reseller && creditInfo) {
+             // Set initial UI based on current toggle state
+             const applyState = (isChecked) => {
+                 normal.style.display = isChecked ? 'none' : 'flex';
+                 reseller.style.display = isChecked ? 'flex' : 'none';
+                 creditInfo.style.display = isChecked ? 'block' : 'none';
+             };
 
-             normal.style.display = isChecked ? 'none' : 'flex';
-             reseller.style.display = isChecked ? 'flex' : 'none';
-             creditInfo.style.display = isChecked ? 'block' : 'none';
-         });
-     };
+             applyState(!!toggle.checked);
+
+             toggle.addEventListener('change', function() {
+                 applyState(this.checked);
+             });
+         }
+         // (Else: page doesn't have these elements; do nothing — no error)
+     });
  </script>

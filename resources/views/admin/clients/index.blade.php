@@ -13,7 +13,7 @@
 
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('clients.index') }}" method="GET" enctype="multipart/form-data"
+            <form action="{{ route('admin.clients.index') }}" method="GET" enctype="multipart/form-data"
                 class="d-flex flex-wrap align-items-center gap-2">
 
                 <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
@@ -31,7 +31,7 @@
 
                 <input type="file" name="csv_file" accept=".csv" class="form-control w-auto">
                 @csrf
-                <button type="submit" formaction="{{ route('clients.import') }}" class="btn btn-success"
+                <button type="submit" formaction="{{ route('admin.clients.import') }}" class="btn btn-success"
                     onclick="event.preventDefault(); this.closest('form').submit();">
                     Import CSV
                 </button>
@@ -44,7 +44,7 @@
                     </label>
                 </div>
 
-                <a href="{{ route('clients.create') }}" class="btn btn-dark ms-auto">
+                <a href="{{ route('admin.clients.create') }}" class="btn btn-dark ms-auto">
                     <i class="bi bi-plus-lg me-1"></i> Add New Client
                 </a>
             </form>
@@ -52,7 +52,7 @@
     </div>
 
 
-    <form id="bulkDeleteForm" action="{{ route('clients.bulkDelete') }}" method="POST">
+    <form id="bulkDeleteForm" action="{{ route('admin.clients.bulkDelete') }}" method="POST">
         @csrf
         @method('DELETE')
         <div class="table-responsive">
@@ -78,7 +78,7 @@
                             <td>{{ $client->phone }}</td>
                             <td>{{ $client->country ?? 'N/A' }}</td>
                             <td>
-                                <a href="{{ route('clients.edit', $client) }}"
+                                <a href="{{ route('admin.clients.edit', $client) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
                                 
                             </td>
