@@ -411,4 +411,10 @@ return [
       'description' => 'Start streaming instantly on Smart TV, Firestick, MAG, Android, and iOS – no tech skills needed. Our IPTV setup is beginner-friendly.',
     ],
   ],
+  'buy_now_heading' => 'Buy Panel Now',
+  'redirecting' => 'Redirecting...',
+  'order_created'   => 'Order created successfully.',
+  'order_updated'   => 'Order updated successfully.',
+  'order_deleted'   => 'Order deleted successfully.',
+  'screenshot_deleted' => 'Screenshot deleted successfully.',
 ];

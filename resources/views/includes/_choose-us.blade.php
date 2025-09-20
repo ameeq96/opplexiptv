@@ -1,35 +1,3 @@
-@php
-    $features = [
-        ['title' => __('messages.feature_hd'), 'description' => __('messages.feature_hd_desc'), 'active' => false],
-        [
-            'title' => __('messages.feature_flexible'),
-            'description' => __('messages.feature_flexible_desc'),
-            'active' => true,
-        ],
-        [
-            'title' => __('messages.feature_reliable'),
-            'description' => __('messages.feature_reliable_desc'),
-            'active' => false,
-        ],
-        ['title' => __('messages.feature_easy'), 'description' => __('messages.feature_easy_desc'), 'active' => false],
-        [
-            'title' => __('messages.feature_multidevice'),
-            'description' => __('messages.feature_multidevice_desc'),
-            'active' => false,
-        ],
-        [
-            'title' => __('messages.feature_support'),
-            'description' => __('messages.feature_support_desc'),
-            'active' => false,
-        ],
-        [
-            'title' => __('messages.feature_sports_movies'),
-            'description' => __('messages.feature_sports_movies_desc'),
-            'active' => false,
-        ],
-    ];
-@endphp
-
 <!-- Start Choose US Section -->
 <section class="faq-section"
     style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
@@ -45,24 +13,32 @@
                     </div>
 
                     <ul class="accordion-box">
-                        @foreach ($features as $feature)
-                            <li class="accordion block {{ $feature['active'] ? 'active-block' : '' }}">
+                        @foreach ($features as $i => $feature)
+                            @php
+                                $idx = $i;
+                                $activeIndex = $activeIndex ?? 0;
+                                $isActive = $feature['active'] ?? $idx === $activeIndex;
+                            @endphp
+
+                            <li class="accordion block {{ $isActive ? 'active-block' : '' }}">
                                 <div
-                                    class="acc-btn {{ $feature['active'] ? 'active' : '' }} d-flex {{ $isRtl ? 'flex-row-reverse text-end' : '' }}">
+                                    class="acc-btn {{ $isActive ? 'active' : '' }} d-flex {{ $isRtl ? 'flex-row-reverse text-end' : '' }}">
                                     <div class="icon-outer">
                                         <span class="icon icon-plus fa fa-plus"></span>
                                         <span class="icon icon-minus fa fa-minus"></span>
                                     </div>
-                                    <span class="ms-2 {{$isRtl ? 'text-right' : ''}}">{{ $feature['title'] }}</span>
+                                    <span
+                                        class="ms-2 {{ $isRtl ? 'text-right' : '' }}">{{ $feature['title'] ?? '' }}</span>
                                 </div>
-                                <div class="acc-content {{ $feature['active'] ? 'current' : '' }}">
+                                <div class="acc-content {{ $isActive ? 'current' : '' }}">
                                     <div class="content">
-                                        <div class="text">{{ $feature['description'] }}</div>
+                                        <div class="text">{{ $feature['description'] ?? '' }}</div>
                                     </div>
                                 </div>
                             </li>
                         @endforeach
                     </ul>
+
                 </div>
             </div>
 

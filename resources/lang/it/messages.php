@@ -403,4 +403,10 @@ return [
             'description' => 'Inizia subito a guardare su Smart TV, Firestick, MAG, Android e iOS - nessuna competenza tecnica richiesta.',
         ],
     ],
+    'buy_now_heading' => 'Acquista il pannello ora',
+    'redirecting' => 'Reindirizzamento in corso...',
+    'order_created'   => 'Ordine creato con successo.',
+    'order_updated'   => 'Ordine aggiornato con successo.',
+    'order_deleted'   => 'Ordine eliminato con successo.',
+    'screenshot_deleted' => 'Screenshot eliminato con successo.',
 ];

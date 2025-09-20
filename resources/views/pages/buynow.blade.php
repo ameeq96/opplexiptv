@@ -1,90 +1,111 @@
 @extends('layouts.default')
+
 @section('title', __('messages.buynow.title'))
+
 @section('content')
-
-    @php
-        use Jenssegers\Agent\Agent;
-        $agent = new Agent();
-        $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-
-        $packages = [
-            [
-                'value' => 'monthly_USD_2.99',
-                'label' => __('messages.buynow.packages.monthly'),
-            ],
-            [
-                'value' => 'half_yearly_USD_14.99',
-                'label' => __('messages.buynow.packages.half_yearly'),
-            ],
-            [
-                'value' => 'yearly_USD_23.99',
-                'label' => __('messages.buynow.packages.yearly'),
-            ],
-        ];
-    @endphp
-
     <!-- Page Title -->
     <x-page-title :title="__('messages.buynow.heading')" :breadcrumbs="[['url' => '/', 'label' => __('messages.nav.home')], ['label' => __('messages.buynow.heading')]]" background="images/background/10.webp" :rtl="$isRtl"
         aria-label="Buy Now Page" />
-
     <!-- End Page Title -->
 
     <!-- Contact Page Section -->
-    <section class="contact-page-section">
+    <section class="contact-page-section" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <div class="auto-container">
             <div class="row clearfix">
-
                 <div class="map-column col-lg-12 col-md-12 col-sm-12">
                     <div class="inner-column">
 
-                        <div class="contact-form-box">
-                            <div class="form-title-box">
-                                <h3>{{ __('messages.buynow.form_title') }}</h3>
+                        <div class="contact-form-box" aria-labelledby="buynow-form-title">
+                            <div class="{{ $containerClass }}">
+                                <h3 id="buynow-form-title">{{ __('messages.buynow.form_title') }}</h3>
                             </div>
 
                             <div class="contact-form">
-                                <form method="POST" action="{{ route('buynow.send') }}" id="contact-form">
+                                <form method="POST" action="{{ route('buynow.send') }}" id="contact-form" novalidate>
                                     @csrf
+
                                     <div class="row clearfix">
-
+                                        {{-- Name --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="username"
-                                                placeholder="{{ __('messages.form.name') }}" required>
+                                            <input type="text" name="username" value="{{ old('username') }}"
+                                                placeholder="{{ __('messages.form.name') }}" required
+                                                aria-invalid="@error('username') true @else false @enderror"
+                                                aria-describedby="@error('username') username-error @enderror">
+                                            @error('username')
+                                                <small id="username-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
+                                        {{-- Email --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="email" name="email"
-                                                placeholder="{{ __('messages.form.email') }}" required>
+                                            <input type="email" name="email" value="{{ old('email') }}"
+                                                placeholder="{{ __('messages.form.email') }}" required
+                                                aria-invalid="@error('email') true @else false @enderror"
+                                                aria-describedby="@error('email') email-error @enderror">
+                                            @error('email')
+                                                <small id="email-error" class="text-danger d-block">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
+                                        {{-- Package --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <select name="package" required>
-                                                <option value="" disabled selected>
-                                                    {{ __('messages.form.select_package') }}</option>
-                                                @foreach ($packages as $pkg)
-                                                    <option value="{{ $pkg['value'] }}">{{ $pkg['label'] }}</option>
+                                            <select name="package" required
+                                                aria-invalid="@error('package') true @else false @enderror"
+                                                aria-describedby="@error('package') package-error @enderror">
+                                                <option value="" disabled @selected(old('package') === null)>
+                                                    {{ __('messages.form.select_package') }}
+                                                </option>
+                                                @foreach ($packagesDropdown as $pkg)
+                                                    <option value="{{ $pkg['value'] }}" @selected(old('package') === $pkg['value'])>
+                                                        {{ $pkg['label'] }}
+                                                    </option>
                                                 @endforeach
                                             </select>
+                                            @error('package')
+                                                <small id="package-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
+                                        {{-- Phone --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input type="text" name="phone"
-                                                placeholder="{{ __('messages.form.phone') }}" required>
+                                            <input type="text" name="phone" value="{{ old('phone') }}"
+                                                placeholder="{{ __('messages.form.phone') }}" required inputmode="tel"
+                                                aria-invalid="@error('phone') true @else false @enderror"
+                                                aria-describedby="@error('phone') phone-error @enderror">
+                                            @error('phone')
+                                                <small id="phone-error" class="text-danger d-block">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
+                                        {{-- Captcha --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                             <input type="text" name="captcha"
                                                 placeholder="{{ __('messages.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}"
-                                                required>
+                                                required aria-invalid="@error('captcha') true @else false @enderror"
+                                                aria-describedby="@error('captcha') captcha-error @enderror">
+                                            @error('captcha')
+                                                <small id="captcha-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
+                                        {{-- Message --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea class="darma" name="message" placeholder="{{ __('messages.form.message') }}" required></textarea>
+                                            <textarea class="darma" name="message" placeholder="{{ __('messages.form.message') }}" required
+                                                aria-invalid="@error('message') true @else false @enderror"
+                                                aria-describedby="@error('message') message-error @enderror">{{ old('message') }}</textarea>
+                                            @error('message')
+                                                <small id="message-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
+                                            @enderror
                                         </div>
 
+                                        {{-- Flash messages --}}
                                         @if (session('success'))
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                <div class="alert alert-success">
+                                                <div class="alert alert-success" role="status">
                                                     {{ session('success') }}
                                                 </div>
                                             </div>
@@ -92,26 +113,25 @@
 
                                         @if (session('error'))
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                <div class="alert alert-danger">
+                                                <div class="alert alert-danger" role="alert">
                                                     {{ session('error') }}
                                                 </div>
                                             </div>
                                         @endif
 
+                                        {{-- Submit --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
                                             <button class="theme-btn btn-style-four" type="submit" name="submit-form">
                                                 <span class="txt">{{ __('messages.form.submit') }}</span>
                                             </button>
                                         </div>
-
                                     </div>
                                 </form>
-                            </div>
+                            </div><!-- contact-form -->
+                        </div><!-- contact-form-box -->
 
-                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

@@ -410,5 +410,11 @@ return [
       'description' => 'Empieza a ver al instante en Smart TV, Firestick, MAG, Android e iOS – sin necesidad de conocimientos técnicos.',
     ],
   ],
+  'buy_now_heading' => 'Compra el panel ahora',
+  'redirecting' => 'Redirigiendo...',
+  'order_created'   => 'Pedido creado con éxito.',
+  'order_updated'   => 'Pedido actualizado con éxito.',
+  'order_deleted'   => 'Pedido eliminado con éxito.',
+  'screenshot_deleted' => 'Captura eliminada con éxito.',
 
 ];

@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Admin\Orders\{StoreOrderRequest, UpdateOrderRequest};
 use App\Models\{Order, Picture, User};
 use App\Services\Orders\{OrderService, OrderMediaService};
+use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
 class OrderController extends Controller
 {
+    use HelperFunction;
+
     public function __construct(
         private OrderService $orders,
         private OrderMediaService $media
@@ -18,64 +21,57 @@ class OrderController extends Controller
 
     public function index(Request $request)
     {
-        $query = $this->orders->query();
-        $this->orders->applyFilters($query, $request);
-        $this->orders->applySorting($query, $request);
-
-        $orders = $this->orders->paginate($query, $request);
-        $today  = Carbon::today();
-        $tab    = $request->query('tab', 'unmessaged');
-        $type   = $request->query('type', 'package');
-
-        return view('admin.orders.index', compact('orders','today','tab','type'));
+        $orders = $this->runIndex($this->orders, $request);
+        return view('admin.orders.index', [
+            'orders' => $orders,
+            'today'  => Carbon::today(),
+            'tab'    => $request->query('tab', 'unmessaged'),
+            'type'   => $request->query('type', 'package'),
+        ]);
     }
 
     public function create()
     {
-        $clients = User::orderBy('name')->get();
-        return view('admin.orders.create', compact('clients'));
+        return view('admin.orders.create', [
+            'clients' => User::orderBy('name')->get(),
+        ]);
     }
 
     public function store(StoreOrderRequest $request)
     {
-        $order = $this->orders->createOrder($request);
-        if ($request->hasFile('screenshots')) {
-            $this->media->storeScreenshots($order, $request->file('screenshots'));
-        }
-        return redirect()->route('admin.orders.index')->with('success', 'Order added!');
+        $this->handleStore($this->orders, $this->media, $request);
+        return redirect()->route('admin.orders.index')->with('success', __('messages.order_created'));
     }
 
     public function edit(Order $order)
     {
-        $clients = User::orderBy('name')->get();
-        return view('admin.orders.edit', compact('order','clients'));
+        return view('admin.orders.edit', [
+            'order'   => $order,
+            'clients' => User::orderBy('name')->get(),
+        ]);
     }
 
     public function update(UpdateOrderRequest $request, Order $order)
     {
-        $this->orders->updateOrder($request, $order);
-        if ($request->hasFile('screenshots')) {
-            $this->media->storeScreenshots($order, $request->file('screenshots'));
-        }
-        return redirect()->route('admin.orders.index')->with('success', 'Order updated.');
+        $this->handleUpdate($this->orders, $this->media, $request, $order);
+        return redirect()->route('admin.orders.index')->with('success', __('messages.order_updated'));
     }
 
     public function destroyPicture(Order $order, Picture $picture)
     {
         $this->media->deletePicture($order, $picture);
-        return back()->with('success', 'Screenshot deleted.');
+        return back()->with('success', __('messages.screenshot_deleted'));
     }
 
     public function destroy(Order $order)
     {
         $this->orders->deleteOrder($order);
-        return back()->with('success', 'Order deleted.');
+        return back()->with('success', __('messages.order_deleted'));
     }
 
     public function bulkDelete(Request $request)
     {
-        $deleted = $this->orders->bulkDelete($request->input('order_ids', []));
-        return back()->with('success', "{$deleted} order(s) deleted successfully.");
+        return $this->bulkDelete($request, 'order_ids', $this->orders);
     }
 
     public function bulkAction(Request $request)

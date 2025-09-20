@@ -4,7 +4,6 @@ namespace App\Services;
 
 use App\Data\DashboardData;
 use App\Models\Order;
-use App\Models\Purchasing;
 use App\Models\User;
 use App\Support\DateRange;
 use Illuminate\Support\Facades\Cache;

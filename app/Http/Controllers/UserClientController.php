@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Clients\{
     StoreClientRequest,
     UpdateClientRequest,
@@ -14,11 +13,14 @@ use App\Services\Clients\{
     ClientCrudService,
     ClientImportService
 };
+use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
 use Nakanakaii\Countries\Countries;
 
 class UserClientController extends Controller
 {
+    use HelperFunction;
+
     public function __construct(
         private ClientQueryService $query,
         private ClientCrudService $crud,
@@ -27,11 +29,7 @@ class UserClientController extends Controller
 
     public function index(Request $request)
     {
-        $builder = $this->query->base();
-        $this->query->applyFilters($builder, $request);
-        $this->query->applySorting($builder);
-        $clients = $this->query->paginate($builder, $request);
-
+        $clients = $this->runIndex($this->query, $request);
         return view('admin.clients.index', compact('clients'));
     }
 
@@ -44,7 +42,7 @@ class UserClientController extends Controller
     public function store(StoreClientRequest $request)
     {
         $this->crud->create($request->validated());
-        return redirect()->route('admin.clients.index')->with('success', 'Client added successfully.');
+        return redirect()->route('admin.clients.index')->with('success', __('messages.client_created'));
     }
 
     public function edit(User $client)
@@ -56,13 +54,13 @@ class UserClientController extends Controller
     public function update(UpdateClientRequest $request, User $client)
     {
         $this->crud->update($request->validated(), $client);
-        return redirect()->route('admin.clients.index')->with('success', 'Client updated.');
+        return redirect()->route('admin.clients.index')->with('success', __('messages.client_updated'));
     }
 
     public function destroy(User $client)
     {
         $this->crud->delete($client);
-        return back()->with('success', 'Client deleted.');
+        return back()->with('success', __('messages.client_deleted'));
     }
 
     public function import(ImportClientsRequest $request)
@@ -76,7 +74,7 @@ class UserClientController extends Controller
     {
         $ids = $request->input('client_ids', []);
         if (empty($ids)) {
-            return back()->with('success', 'No clients selected.');
+            return back()->with('error', __('messages.no_clients_selected'));
         }
 
         $deleted = $this->crud->bulkDelete($ids);

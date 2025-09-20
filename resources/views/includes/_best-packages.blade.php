@@ -1,104 +1,14 @@
-@php
-    $packages = [
-        [
-            'title' => __('messages.monthly'),
-            'price' => __('messages.monthly_price'),
-            'features' => [
-                __('messages.no_buffer'),
-                __('messages.support_24_7'),
-                __('messages.regular_updates'),
-                __('messages.quality_content'),
-            ],
-        ],
-        [
-            'title' => __('messages.half_yearly'),
-            'price' => __('messages.half_yearly_price'),
-            'features' => [
-                __('messages.no_buffer'),
-                __('messages.support_24_7'),
-                __('messages.regular_updates'),
-                __('messages.quality_content'),
-            ],
-        ],
-        [
-            'title' => __('messages.yearly'),
-            'price' => __('messages.yearly_price'),
-            'features' => [
-                __('messages.no_buffer'),
-                __('messages.support_24_7'),
-                __('messages.regular_updates'),
-                __('messages.quality_content'),
-            ],
-        ],
-    ];
-
-    $resellerPlans = [
-        [
-            'title' => __('messages.starter_reseller'),
-            'price' => __('messages.starter_price'),
-            'icons' => ['images/icons/service-1.svg'],
-            'features' => [
-                __('messages.uptime'),
-                __('messages.no_credit_expiry'),
-                __('messages.unlimited_trials'),
-                __('messages.no_subreseller'),
-            ],
-            'button_link' => 'buy-now-panel',
-            'delay' => '0ms',
-        ],
-        [
-            'title' => __('messages.essential_reseller'),
-            'price' => __('messages.essential_price'),
-            'icons' => ['images/icons/service-2.svg'],
-            'features' => [
-                __('messages.uptime'),
-                __('messages.no_credit_expiry'),
-                __('messages.unlimited_trials'),
-                __('messages.no_subreseller'),
-            ],
-            'button_link' => 'buy-now-panel',
-            'delay' => '150ms',
-        ],
-        [
-            'title' => __('messages.pro_reseller'),
-            'price' => __('messages.pro_price'),
-            'icons' => ['images/icons/service-3.svg'],
-            'features' => [
-                __('messages.uptime'),
-                __('messages.no_credit_expiry'),
-                __('messages.unlimited_trials'),
-                __('messages.no_subreseller'),
-            ],
-            'button_link' => 'buy-now-panel',
-            'delay' => '300ms',
-        ],
-        [
-            'title' => __('messages.advanced_reseller'),
-            'price' => __('messages.advanced_price'),
-            'icons' => ['images/icons/service-1.svg', 'images/icons/service-2.svg', 'images/icons/service-3.svg'],
-            'features' => [
-                __('messages.uptime'),
-                __('messages.no_credit_expiry'),
-                __('messages.unlimited_trials'),
-                __('messages.yes_subreseller'),
-            ],
-            'button_link' => 'buy-now-panel',
-            'delay' => '450ms',
-        ],
-    ];
-@endphp
-
 <section class="pricing-section style-two" id="pricing-section" aria-label="IPTV Pricing Plans and Reseller Packages">
     <div class="auto-container">
 
         <div class="{{ $containerClass }}">
-            @if (!$agent->isMobile())
+            @unless ($isMobile)
                 <div class="separator"></div>
-            @endif
+            @endunless
             <h2 aria-label="Choose Your IPTV Plan">{{ __('messages.pricing_heading') }}</h2>
         </div>
 
-        <div id="real-toggle" class="text-center mb-4 mt-4" style="display: none;"
+        <div id="real-toggle" class="text-center mb-4 mt-4" style="display:none"
             aria-label="Toggle to view reseller packages">
             <label class="form-switch">
                 <input type="checkbox" id="resellerToggle" aria-label="Reseller Package Toggle">
@@ -107,16 +17,13 @@
             </label>
         </div>
 
-        <div id="creditInfo" class="sec-title centered mb-4" style="display: none;"
-            aria-label="IPTV Credit System Info">
+        <div id="creditInfo" class="sec-title centered mb-4" style="display:none" aria-label="IPTV Credit System Info">
             <p><strong>
-                    <span style="color: red;">1 {{ __('messages.credit') }}</span> =
-                    {{ __('messages.1_month') }}&nbsp;&nbsp;
-                    <i class="fa fa-plus"></i>&nbsp;&nbsp;
-                    <span style="color: red;">5 {{ __('messages.credit') }}</span> =
-                    {{ __('messages.6_months') }}&nbsp;&nbsp;
-                    <i class="fa fa-plus"></i>&nbsp;&nbsp;
-                    <span style="color: red;">10 {{ __('messages.credit') }}</span> = {{ __('messages.12_months') }}
+                    <span style="color:red;">1 {{ __('messages.credit') }}</span> = {{ __('messages.1_month') }} &nbsp;
+                    <i class="fa fa-plus"></i>&nbsp;
+                    <span style="color:red;">5 {{ __('messages.credit') }}</span> = {{ __('messages.6_months') }} &nbsp;
+                    <i class="fa fa-plus"></i>&nbsp;
+                    <span style="color:red;">10 {{ __('messages.credit') }}</span> = {{ __('messages.12_months') }}
                 </strong></p>
         </div>
 
@@ -125,7 +32,7 @@
                 <div class="price-block scroll-item" aria-label="{{ $package['title'] }} IPTV Package">
                     <div class="inner-box custom-color">
                         <div class="upper-box"
-                            style="{{ !$agent->isMobile() ? 'background-image: url(' . asset('images/background/pattern-4.webp') . ');' : '' }}">
+                            @unless ($isMobile) style="background-image:url('{{ asset('images/background/pattern-4.webp') }}');" @endunless>
                             <ul class="icon-list" aria-label="IPTV Service Icons">
                                 <li>
                                     <span class="icon">
@@ -175,7 +82,7 @@
                         aria-label="{{ $plan['title'] }} Reseller Plan">
                         <div class="inner-box custom-color">
                             <div class="upper-box"
-                                style="{{ !$agent->isMobile() ? 'background-image: url(' . asset('images/background/pattern-4.webp') . ');' : '' }}">
+                                @unless ($isMobile) style="background-image:url('{{ asset('images/background/pattern-4.webp') }}');" @endunless>
                                 <ul class="icon-list" aria-label="Reseller Plan Icons">
                                     @foreach ($plan['icons'] as $icon)
                                         <li>
@@ -194,12 +101,19 @@
                                         <li>{{ $feature }}</li>
                                     @endforeach
                                 </ul>
-                                <div class="button-box button-box-2">
-                                    <a href="{{ route('buy-now-panel') }}" class="theme-btn btn-style-four">
+                                <div class="button-box button-box-2 d-flex align-items-center">
+                                    <a href="{{ route('buy-now-panel') }}" class="theme-btn btn-style-four"
+                                        aria-label="Buy Now {{ $plan['title'] }}">
                                         <span class="txt">{{ __('messages.buy_now') }}</span>
                                     </a>
+
                                     <a target="_blank"
-                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $package['title'], 'price' => $package['price']])) }}"
+                                        href="https://wa.me/16393903194?text={{ urlencode(
+                                            __('messages.whatsapp_package', [
+                                                'plan' => $plan['title'],
+                                                'price' => preg_replace('/^\$(\d+\.\d+)/', '', strip_tags($plan['price'])),
+                                            ]),
+                                        ) }}"
                                         aria-label="Contact via WhatsApp">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                             height="32" alt="WhatsApp Icon" loading="lazy" />

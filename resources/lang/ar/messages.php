@@ -408,4 +408,10 @@ return [
       'description' => 'ابدأ المشاهدة فوراً على Smart TV و Firestick و MAG و Android و iOS – بدون الحاجة لمهارات تقنية.',
     ],
   ],
+  'buy_now_heading' => 'اشترِ اللوحة الآن',
+  'redirecting' => '...جارٍ إعادة التوجيه',
+  'order_created'   => 'تم إنشاء الطلب بنجاح.',
+  'order_updated'   => 'تم تحديث الطلب بنجاح.',
+  'order_deleted'   => 'تم حذف الطلب بنجاح.',
+  'screenshot_deleted' => 'تم حذف لقطة الشاشة بنجاح.',
 ];

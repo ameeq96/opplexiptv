@@ -2,9 +2,9 @@
 @section('title', __('messages.redirect.title'))
 
 @section('content')
-    <div class="section text-center p-5">
+    <div class="section text-center p-5" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <h2>{{ __('messages.redirect.preparing') }}</h2>
-        <p id="statusText">{{ __('messages.redirect.ad_loading') }}</p>
+        <p id="statusText" class="mb-3">{{ __('messages.redirect.ad_loading') }}</p>
 
         <div class="mt-2 mb-2">
             <button id="clickToDownload" class="btn btn-primary btn-lg">
@@ -12,71 +12,71 @@
             </button>
         </div>
 
-        {{-- (optional) aapke ad network ke widgets --}}
+        {{-- (optional) Ad network widget --}}
         <script async data-cfasync="false" src="//handhighlight.com/cbb33e2ef96d697fc1deef53ebb64e5b/invoke.js"></script>
         <div id="container-cbb33e2ef96d697fc1deef53ebb64e5b"></div>
+
+        <noscript>
+            <p class="mt-3">
+                {{ __('messages.redirect.noscript') }}
+                <a class="btn btn-outline-primary mt-2" href="{{ $target }}">{{ __('messages.redirect.open_direct') }}</a>
+            </p>
+        </noscript>
     </div>
 
     <script>
-      // Safe JSON me Blade vars
-      const TARGET = @json($target ?? '');
-      const AD_URL = 'https://handhighlight.com/sgtebuerf8?key=6085cca57bba1090342bc3bcbd3ee779';
+      (function () {
+        'use strict';
 
-      const btn = document.getElementById('clickToDownload');
-      const statusText = document.getElementById('statusText');
+        const TARGET = @json($target ?? '');
+        const AD_URL = @json($adUrl ?? '');
 
-      // Sirf direct ad URL new tab me open karo (no about:blank)
-      function openAdNewTabDirect() {
-        try {
-          const popup = window.open(AD_URL, '_blank', 'noopener');
-          if (popup && !popup.closed) return true;
-        } catch (e) {
-          console.error('window.open failed', e);
+        const btn = document.getElementById('clickToDownload');
+        const statusText = document.getElementById('statusText');
+
+        function openInNewTab(url) {
+          try {
+            const w = window.open(url, '_blank', 'noopener');
+            if (w && !w.closed) return true;
+          } catch (e) {}
+          try {
+            const a = document.createElement('a');
+            a.href = url;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            return true;
+          } catch (e) { return false; }
         }
 
-        // Fallback: synthetic anchor (Safari/iOS friendly)
-        try {
-          const a = document.createElement('a');
-          a.href = AD_URL;
-          a.target = '_blank';
-          a.rel = 'noopener noreferrer';
-          a.style.display = 'none';
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          return true;
-        } catch (e) {
-          console.error('anchor fallback failed', e);
-        }
-        return false;
-      }
+        btn.addEventListener('click', function () {
+          if (!TARGET) return;
 
-      btn.addEventListener('click', function () {
-        if (!TARGET) {
-          console.error('TARGET download URL missing');
-          return;
-        }
+          btn.disabled = true;
 
-        btn.disabled = true;
+          let seconds = 3;
+          statusText.textContent = 'Please wait ' + seconds + ' seconds...';
 
-        let countdown = 3;
-        const timer = setInterval(() => {
-          statusText.innerText = 'Please wait ' + countdown + ' seconds...';
-          countdown--;
+          const timer = setInterval(() => {
+            seconds--;
+            if (seconds >= 0) {
+              statusText.textContent = 'Please wait ' + seconds + ' seconds...';
+            }
+            if (seconds < 0) {
+              clearInterval(timer);
 
-          if (countdown < 0) {
-            clearInterval(timer);
+              if (AD_URL) openInNewTab(AD_URL);
 
-            // 1) Ad ko NEW TAB me open karo (direct)
-            openAdNewTabDirect();
-
-            // 2) Current tab: download/start redirect
-            statusText.innerText = 'Redirecting to your download...';
-            setTimeout(() => {
-              window.location.href = TARGET; // or window.location.assign(TARGET);
-            }, 1200);
-          }
-        }, 1000);
-      });
+              statusText.textContent = '{{ __('messages.redirecting') }}';
+              setTimeout(() => {
+                window.location.assign(TARGET);
+              }, 900);
+            }
+          }, 1000);
+        });
+      })();
     </script>
 @endsection

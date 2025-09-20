@@ -9,10 +9,13 @@ use App\Services\Purchasing\{
     PurchasingCrudService,
     PurchasingMediaService
 };
+use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
 
 class PurchasingController extends Controller
 {
+    use HelperFunction;
+
     public function __construct(
         private PurchasingQueryService $query,
         private PurchasingCrudService $crud,
@@ -21,26 +24,13 @@ class PurchasingController extends Controller
 
     public function index(Request $request)
     {
-        $builder = $this->query->base();
-        $this->query->applySearch($builder, $request);
-        $this->query->applySorting($builder);
-        $purchases = $this->query->paginate($builder, $request);
-
+        $purchases = $this->runIndex($this->query, $request);
         return view('admin.purchasing.index', compact('purchases'));
     }
 
     public function bulkDelete(Request $request)
     {
-        $ids = $request->input('purchase_ids', []);
-        if (empty($ids)) {
-            return back()->with('error', 'No purchases selected.');
-        }
-
-        $purchases = \App\Models\Purchasing::whereIn('id', $ids)->with('pictures')->get();
-        $this->media->cleanupPictures($purchases);
-
-        $count = $this->crud->bulkDelete($ids);
-        return back()->with('success', "{$count} purchase(s) deleted successfully.");
+        return $this->bulkDelete($request, 'purchase_ids', $this->crud, $this->media, Purchasing::class);
     }
 
     public function create()
@@ -50,13 +40,8 @@ class PurchasingController extends Controller
 
     public function store(StorePurchasingRequest $request)
     {
-        $purchase = $this->crud->create($request);
-
-        if ($request->hasFile('screenshots')) {
-            $this->media->storeScreenshots($purchase, $request->file('screenshots'));
-        }
-
-        return redirect()->route('admin.purchasing.index')->with('success', 'Purchase added successfully.');
+        $this->handleStore($this->crud, $this->media, $request);
+        return redirect()->route('admin.purchasing.index')->with('success', __('messages.purchase_created'));
     }
 
     public function edit(Purchasing $purchasing)
@@ -66,28 +51,22 @@ class PurchasingController extends Controller
 
     public function update(UpdatePurchasingRequest $request, Purchasing $purchasing)
     {
-        $this->crud->update($request, $purchasing);
-
-        if ($request->hasFile('screenshots')) {
-            $this->media->storeScreenshots($purchasing, $request->file('screenshots'));
-        }
-
-        return redirect()->route('admin.purchasing.index')->with('success', 'Purchase updated successfully.');
+        $this->handleUpdate($this->crud, $this->media, $request, $purchasing);
+        return redirect()->route('admin.purchasing.index')->with('success', __('messages.purchase_updated'));
     }
 
     public function destroy(Purchasing $purchasing)
     {
         $purchasing->load('pictures');
         $this->media->cleanupPictures([$purchasing]);
-
         $this->crud->delete($purchasing);
 
-        return redirect()->route('admin.purchasing.index')->with('success', 'Purchase deleted successfully.');
+        return redirect()->route('admin.purchasing.index')->with('success', __('messages.purchase_deleted'));
     }
 
     public function destroyPicture(Purchasing $purchasing, Picture $picture)
     {
         $this->media->deletePicture($purchasing, $picture);
-        return back()->with('success', 'Screenshot deleted.');
+        return back()->with('success', __('messages.screenshot_deleted'));
     }
 }

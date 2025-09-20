@@ -10,11 +10,14 @@ use App\Services\PanelOrders\{
     PanelOrderMediaService,
     PanelOrderBulkService
 };
+use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class PanelOrderController extends Controller
 {
+    use HelperFunction;
+
     public function __construct(
         private PanelOrderQueryService $query,
         private PanelOrderCrudService $crud,
@@ -24,15 +27,12 @@ class PanelOrderController extends Controller
 
     public function index(Request $request)
     {
-        $builder = $this->query->base();
-        $this->query->applyFilters($builder, $request);
-        $this->query->applySorting($builder, $request);
-        $orders = $this->query->paginate($builder, $request);
-
-        $tab  = $request->query('tab', 'unmessaged');
-        $type = $request->query('type', 'reseller');
-
-        return view('admin.reseller-orders.index', compact('orders','tab','type'));
+        $orders = $this->runIndex($this->query, $request);
+        return view('admin.reseller-orders.index', [
+            'orders' => $orders,
+            'tab'    => $request->query('tab', 'unmessaged'),
+            'type'   => $request->query('type', 'reseller'),
+        ]);
     }
 
     public function create()
@@ -44,11 +44,8 @@ class PanelOrderController extends Controller
 
     public function store(StorePanelOrderRequest $request)
     {
-        $order = $this->crud->create($request);
-        if ($request->hasFile('screenshots')) {
-            $this->media->storeScreenshots($order, $request->file('screenshots'));
-        }
-        return redirect()->route('admin.panel-orders.index')->with('success', 'Reseller order created!');
+        $this->handleStore($this->crud, $this->media, $request);
+        return redirect()->route('admin.panel-orders.index')->with('success', __('messages.reseller_order_created'));
     }
 
     public function edit(Order $panel_order)
@@ -61,11 +58,8 @@ class PanelOrderController extends Controller
 
     public function update(UpdatePanelOrderRequest $request, Order $panel_order)
     {
-        $this->crud->update($request, $panel_order);
-        if ($request->hasFile('screenshots')) {
-            $this->media->storeScreenshots($panel_order, $request->file('screenshots'));
-        }
-        return redirect()->route('admin.panel-orders.index')->with('success', 'Reseller order updated!');
+        $this->handleUpdate($this->crud, $this->media, $request, $panel_order);
+        return redirect()->route('admin.panel-orders.index')->with('success', __('messages.reseller_order_updated'));
     }
 
     public function destroy(Order $panel_order)
@@ -78,13 +72,13 @@ class PanelOrderController extends Controller
         }
         $this->crud->delete($panel_order);
 
-        return redirect()->route('admin.panel-orders.index')->with('success', 'Reseller order deleted!');
+        return redirect()->route('admin.panel-orders.index')->with('success', __('messages.reseller_order_deleted'));
     }
 
     public function destroyPicture(Order $order, Picture $picture)
     {
         $this->media->deletePicture($order, $picture);
-        return back()->with('success', 'Screenshot deleted.');
+        return back()->with('success', __('messages.screenshot_deleted'));
     }
 
     public function bulkAction(Request $request)

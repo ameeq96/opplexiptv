@@ -408,4 +408,10 @@ return [
       'description' => 'Comece a assistir instantaneamente em Smart TV, Firestick, MAG, Android e iOS – sem necessidade de conhecimento técnico.',
     ],
   ],
+  'buy_now_heading' => 'Compre o painel agora',
+  'redirecting' => 'Redirecionando...',
+  'order_created'   => 'Pedido criado com sucesso.',
+  'order_updated'   => 'Pedido atualizado com sucesso.',
+  'order_deleted'   => 'Pedido excluído com sucesso.',
+  'screenshot_deleted' => 'Captura de tela excluída com sucesso.',
 ];

@@ -408,4 +408,10 @@ return [
       'description' => 'Начните смотреть мгновенно на Smart TV, Firestick, MAG, Android и iOS – технические навыки не нужны.',
     ],
   ],
+  'buy_now_heading' => 'Купите панель сейчас',
+  'redirecting' => 'Перенаправление...',
+  'order_created'   => 'Заказ успешно создан.',
+  'order_updated'   => 'Заказ успешно обновлён.',
+  'order_deleted'   => 'Заказ успешно удалён.',
+  'screenshot_deleted' => 'Скриншот успешно удалён.',
 ];

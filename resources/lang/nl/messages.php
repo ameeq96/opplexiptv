@@ -408,4 +408,10 @@ return [
       'description' => 'Begin direct met kijken op Smart TV, Firestick, MAG, Android en iOS – geen technische kennis vereist.',
     ],
   ],
+  'buy_now_heading' => 'Koop het paneel nu',
+  'redirecting' => 'Bezig met doorsturen...',
+  'order_created'   => 'Bestelling succesvol aangemaakt.',
+  'order_updated'   => 'Bestelling succesvol bijgewerkt.',
+  'order_deleted'   => 'Bestelling succesvol verwijderd.',
+  'screenshot_deleted' => 'Screenshot succesvol verwijderd.',
 ];

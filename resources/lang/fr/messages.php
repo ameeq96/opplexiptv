@@ -409,4 +409,10 @@ return [
             'description' => 'Commencez à regarder instantanément sur Smart TV, Firestick, MAG, Android et iOS – aucune compétence technique requise. Installation simple et rapide.',
         ],
     ],
+    'buy_now_heading' => 'Acheter le panneau maintenant',
+    'redirecting' => 'Redirection en cours...',
+    'order_created'   => 'Commande créée avec succès.',
+    'order_updated'   => 'Commande mise à jour avec succès.',
+    'order_deleted'   => 'Commande supprimée avec succès.',
+    'screenshot_deleted' => 'Capture d\'écran supprimée avec succès.',
 ];

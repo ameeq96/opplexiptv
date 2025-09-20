@@ -247,30 +247,29 @@
                                     <span class="text-muted">N/A</span>
                                 @endif
                             </td>
-
-                            <td class="d-flex pt-3 align-items-center justify-content-center">
-                                <a href="{{ route('admin.orders.edit', $order) }}"
-                                    class="btn btn-sm btn-outline-primary me-1">Edit</a>
-
+                            <td>
                                 @php
-                                    $phone = preg_replace('/[^0-9]/', '', $order->user->phone);
+                                    $phone = preg_replace('/[^0-9]/', '', $order->user->phone ?? '');
                                     $message = urlencode(
-                                        'Hello ' .
-                                            $order->user->name .
-                                            ", your IPTV order for package '" .
-                                            $order->package .
-                                            "' is now " .
+                                        "Hello {$order->user->name}, your IPTV order for package '{$order->package}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );
-                                    $waBusinessUrl = "intent://send?phone={$phone}&text={$message}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end";
+                                    $waBusinessUrl = $phone ? "https://wa.me/{$phone}?text={$message}" : null;
                                 @endphp
 
-                                <a href="{{ $waBusinessUrl }}" target="_blank"
-                                    class="btn btn-sm btn-outline-success me-1 wa-btn" data-id="{{ $order->id }}">
-                                    WhatsApp
-                                </a>
+                                <div class="d-flex justify-content-center gap-1">
+                                    @if ($waBusinessUrl)
+                                        <a href="{{ $waBusinessUrl }}" target="_blank"
+                                            class="btn btn-sm btn-outline-success wa-btn" data-id="{{ $order->id }}">
+                                            WhatsApp
+                                        </a>
+                                    @endif
+                                    <a href="{{ route('admin.orders.edit', $order) }}"
+                                        class="btn btn-sm btn-outline-primary">Edit</a>
+                                </div>
                             </td>
+
                         </tr>
                     @empty
                         <tr>
@@ -321,52 +320,55 @@
 @endsection
 
 <script>
-  // Select all
-  document.getElementById('checkAll')?.addEventListener('change', function() {
-    document.querySelectorAll('input[name="order_ids[]"]').forEach(cb => cb.checked = this.checked);
-  });
-
-  // Lightbox helper
-  function showScreenshot(src) {
-    const img = document.getElementById('modalScreenshot');
-    if (img) img.src = src;
-  }
-
-  // Bulk buttons: event delegation
-  document.addEventListener('click', function(e){
-    const btn = e.target.closest('.js-bulk');
-    if (!btn) return;
-
-    const form  = document.getElementById('bulkActionForm');
-    const input = document.getElementById('bulkActionInput');
-    if (!form || !input) {
-      alert('Bulk action form ya hidden input missing!');
-      return;
-    }
-
-    // ensure at least one checkbox
-    const anyChecked = !!document.querySelector('input[name="order_ids[]"]:checked');
-    if (!anyChecked) {
-      alert('Please select at least one order.');
-      return;
-    }
-
-    const action = btn.dataset.action;
-    if (action === 'delete' && !confirm('Delete selected orders?')) return;
-
-    input.value = action;
-    console.log('Submitting bulkAction:', action);
-    form.submit();
-  });
-
-  // Optional: WA click => mark one as messaged
-  document.querySelectorAll('.wa-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const id = this.dataset.id;
-      fetch(`{{ url('orders') }}/${id}/mark-messaged`, {
-        method: 'POST',
-        headers: { 'X-CSRF-TOKEN': '{{ csrf_token() }}', 'Accept': 'application/json' }
-      }).catch(() => {});
+    // Select all
+    document.getElementById('checkAll')?.addEventListener('change', function() {
+        document.querySelectorAll('input[name="order_ids[]"]').forEach(cb => cb.checked = this.checked);
     });
-  });
+
+    // Lightbox helper
+    function showScreenshot(src) {
+        const img = document.getElementById('modalScreenshot');
+        if (img) img.src = src;
+    }
+
+    // Bulk buttons: event delegation
+    document.addEventListener('click', function(e) {
+        const btn = e.target.closest('.js-bulk');
+        if (!btn) return;
+
+        const form = document.getElementById('bulkActionForm');
+        const input = document.getElementById('bulkActionInput');
+        if (!form || !input) {
+            alert('Bulk action form ya hidden input missing!');
+            return;
+        }
+
+        // ensure at least one checkbox
+        const anyChecked = !!document.querySelector('input[name="order_ids[]"]:checked');
+        if (!anyChecked) {
+            alert('Please select at least one order.');
+            return;
+        }
+
+        const action = btn.dataset.action;
+        if (action === 'delete' && !confirm('Delete selected orders?')) return;
+
+        input.value = action;
+        console.log('Submitting bulkAction:', action);
+        form.submit();
+    });
+
+    // Optional: WA click => mark one as messaged
+    document.querySelectorAll('.wa-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const id = this.dataset.id;
+            fetch(`{{ url('orders') }}/${id}/mark-messaged`, {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                    'Accept': 'application/json'
+                }
+            }).catch(() => {});
+        });
+    });
 </script>

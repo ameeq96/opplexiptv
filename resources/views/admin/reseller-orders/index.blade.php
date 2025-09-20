@@ -202,9 +202,27 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="{{ route('admin.panel-orders.edit', $order->id) }}"
-                                    class="btn btn-sm btn-outline-primary me-1">Edit</a>
+                                @php
+                                    $phone = preg_replace('/[^0-9]/', '', $order->user->phone ?? '');
+                                    $message = urlencode(
+                                        "Hello {$order->user->name}, your IPTV reseller order for package '{$order->package}' is now " .
+                                            strtoupper($order->status) .
+                                            '.',
+                                    );
+                                    $waUrl = $phone ? "https://wa.me/{$phone}?text={$message}" : null;
+                                @endphp
+
+                                <div class="d-flex justify-content-center gap-1">
+                                    @if ($waUrl)
+                                        <a href="{{ $waUrl }}" target="_blank"
+                                            class="btn btn-sm btn-outline-success">WhatsApp</a>
+                                    @endif
+
+                                    <a href="{{ route('admin.panel-orders.edit', $order->id) }}"
+                                        class="btn btn-sm btn-outline-primary">Edit</a>
+                                </div>
                             </td>
+
                         </tr>
                     @empty
                         <tr>
