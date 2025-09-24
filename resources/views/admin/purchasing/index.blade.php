@@ -13,7 +13,8 @@
 
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('admin.purchasing.index') }}" method="GET" class="d-flex flex-wrap align-items-center gap-2">
+            <form action="{{ route('admin.purchasing.index') }}" method="GET"
+                class="d-flex flex-wrap align-items-center gap-2">
 
                 <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
                     @foreach ([10, 20, 30, 40, 100] as $size)
@@ -39,6 +40,14 @@
     <form id="bulkDeleteForm" action="{{ route('admin.purchasing.bulkDelete') }}" method="POST">
         @csrf
         @method('DELETE')
+
+        <div class="d-flex align-items-center mb-2 justify-content-start">
+            <div class="d-flex align-items-center gap-2">
+                <button type="button" id="clearSelectionPurchases" class="btn btn-sm btn-outline-secondary">Clear</button>
+                <span id="selectedCounterPurchases" class="badge bg-primary">0 Selected</span>
+            </div>
+        </div>
+
         <div class="table-responsive">
             <table class="table table-bordered table-hover align-middle text-center">
                 <thead class="table-light">
@@ -141,20 +150,70 @@
     </div>
 
     <script>
-        // Lightbox setter
-        function showScreenshot(src) {
-            const img = document.getElementById('modalScreenshot');
-            if (img) img.src = src;
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('bulkDeleteForm');
+            const checkAll = document.getElementById('checkAll');
+            const counterEl = document.getElementById('selectedCounterPurchases');
+            const clearBtn = document.getElementById('clearSelectionPurchases');
+            const deleteBtn = form?.querySelector('button[type="submit"].btn-danger');
 
-        // Select all
-        (function () {
-            const all = document.getElementById('checkAll');
-            if (!all) return;
-            all.addEventListener('change', function () {
-                document.querySelectorAll('input[name="purchase_ids[]"]').forEach(el => el.checked = all.checked);
+            function rowBoxes() {
+                return Array.from(document.querySelectorAll('input[name="purchase_ids[]"]'));
+            }
+
+            function updateSelectedState() {
+                const boxes = rowBoxes();
+                const total = boxes.length;
+                const checked = boxes.filter(cb => cb.checked).length;
+
+                if (counterEl) counterEl.textContent = `${checked} Selected`;
+                if (deleteBtn) deleteBtn.disabled = (checked === 0);
+
+                if (checkAll) {
+                    if (checked === 0) {
+                        checkAll.indeterminate = false;
+                        checkAll.checked = false;
+                    } else if (checked === total) {
+                        checkAll.indeterminate = false;
+                        checkAll.checked = true;
+                    } else {
+                        checkAll.indeterminate = true;
+                    }
+                }
+            }
+
+            // Header "Select All"
+            checkAll?.addEventListener('change', function() {
+                rowBoxes().forEach(cb => cb.checked = this.checked);
+                updateSelectedState();
             });
-        })();
+
+            // Row checkbox change
+            document.addEventListener('change', function(e) {
+                if (e.target && e.target.matches('input[name="purchase_ids[]"]')) {
+                    updateSelectedState();
+                }
+            });
+
+            // Clear selection
+            clearBtn?.addEventListener('click', function() {
+                rowBoxes().forEach(cb => cb.checked = false);
+                if (checkAll) {
+                    checkAll.indeterminate = false;
+                    checkAll.checked = false;
+                }
+                updateSelectedState();
+            });
+
+            // Lightbox setter (keep your existing function available)
+            window.showScreenshot = function(src) {
+                const img = document.getElementById('modalScreenshot');
+                if (img) img.src = src;
+            };
+
+            // Initial render
+            updateSelectedState();
+        });
     </script>
 
 @endsection

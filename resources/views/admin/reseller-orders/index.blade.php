@@ -109,6 +109,13 @@
         @csrf
         <input type="hidden" name="action" id="bulkActionInputReseller" value="">
 
+        <div class="d-flex align-items-center mb-2 justify-content-start">
+            <div class="d-flex align-items-center gap-2">
+                <button type="button" id="clearSelectionReseller" class="btn btn-sm btn-outline-secondary">Clear</button>
+                <span id="selectedCounterReseller" class="badge bg-primary">0 Selected</span>
+            </div>
+        </div>
+
         <div class="table-responsive">
             <table class="table table-bordered table-hover align-middle text-center">
                 <thead class="table-light">
@@ -203,26 +210,36 @@
                             </td>
                             <td>
                                 @php
+                                    // Phone number se sirf digits rakho
                                     $phone = preg_replace('/[^0-9]/', '', $order->user->phone ?? '');
+
+                                    // Message encode karo
                                     $message = urlencode(
                                         "Hello {$order->user->name}, your IPTV reseller order for package '{$order->package}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );
-                                    $waUrl = $phone ? "https://wa.me/{$phone}?text={$message}" : null;
+
+                                    // WhatsApp Business URL
+                                    $waUrl = $phone
+                                        ? "https://api.whatsapp.com/send?phone={$phone}&text={$message}"
+                                        : null;
                                 @endphp
 
                                 <div class="d-flex justify-content-center gap-1">
                                     @if ($waUrl)
                                         <a href="{{ $waUrl }}" target="_blank"
-                                            class="btn btn-sm btn-outline-success">WhatsApp</a>
+                                            class="btn btn-sm btn-outline-success">
+                                            WhatsApp
+                                        </a>
                                     @endif
 
                                     <a href="{{ route('admin.panel-orders.edit', $order->id) }}"
-                                        class="btn btn-sm btn-outline-primary">Edit</a>
+                                        class="btn btn-sm btn-outline-primary">
+                                        Edit
+                                    </a>
                                 </div>
                             </td>
-
                         </tr>
                     @empty
                         <tr>
@@ -273,40 +290,91 @@
 @endsection
 
 <script>
-    // Select all
-    document.getElementById('checkAll')?.addEventListener('change', function() {
-        document.querySelectorAll('input[name="order_ids[]"]').forEach(cb => cb.checked = this.checked);
-    });
-
-    // Lightbox helper
-    function showScreenshot(url) {
-        const img = document.getElementById('modalScreenshot');
-        if (img) img.src = url;
-    }
-
-    // Bulk buttons (event delegation)
-    document.addEventListener('click', function(e) {
-        const btn = e.target.closest('.js-bulk-reseller');
-        if (!btn) return;
-
+    document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('bulkActionFormReseller');
-        const input = document.getElementById('bulkActionInputReseller');
-        if (!form || !input) {
-            alert('Bulk action form ya hidden input missing!');
-            return;
+        const actionIn = document.getElementById('bulkActionInputReseller');
+        const checkAll = document.getElementById('checkAll');
+        const counter = document.getElementById('selectedCounterReseller');
+        const clearBtn = document.getElementById('clearSelectionReseller');
+
+        function rowBoxes() {
+            return Array.from(document.querySelectorAll('input[name="order_ids[]"]'));
         }
 
-        // ensure at least one checkbox
-        const anyChecked = !!document.querySelector('input[name="order_ids[]"]:checked');
-        if (!anyChecked) {
-            alert('Please select at least one order.');
-            return;
+        function updateSelectedState() {
+            const boxes = rowBoxes();
+            const total = boxes.length;
+            const checked = boxes.filter(cb => cb.checked).length;
+
+            if (counter) counter.textContent = `${checked} Selected`;
+
+            // bulk buttons enable/disable
+            document.querySelectorAll('.js-bulk-reseller').forEach(btn => {
+                btn.disabled = (checked === 0);
+            });
+
+            // tri-state for Select All
+            if (checkAll) {
+                if (checked === 0) {
+                    checkAll.indeterminate = false;
+                    checkAll.checked = false;
+                } else if (checked === total) {
+                    checkAll.indeterminate = false;
+                    checkAll.checked = true;
+                } else {
+                    checkAll.indeterminate = true;
+                }
+            }
         }
 
-        const action = btn.dataset.action;
-        if (action === 'delete' && !confirm('Delete selected orders?')) return;
+        // Header "Select All"
+        checkAll?.addEventListener('change', function() {
+            rowBoxes().forEach(cb => cb.checked = this.checked);
+            updateSelectedState();
+        });
 
-        input.value = action;
-        form.submit();
+        // Row checkbox
+        document.addEventListener('change', function(e) {
+            if (e.target && e.target.matches('input[name="order_ids[]"]')) {
+                updateSelectedState();
+            }
+        });
+
+        // Clear button
+        clearBtn?.addEventListener('click', function() {
+            rowBoxes().forEach(cb => cb.checked = false);
+            if (checkAll) {
+                checkAll.indeterminate = false;
+                checkAll.checked = false;
+            }
+            updateSelectedState();
+        });
+
+        // Bulk buttons (existing flow)
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.js-bulk-reseller');
+            if (!btn) return;
+
+            const anyChecked = !!document.querySelector('input[name="order_ids[]"]:checked');
+            if (!anyChecked) {
+                alert('Please select at least one order.');
+                return;
+            }
+
+            const action = btn.dataset.action;
+            if (action === 'delete' && !confirm('Delete selected orders?')) return;
+
+            actionIn.value = action;
+            form.submit();
+        });
+
+        // Lightbox helper (as-is)
+        window.showScreenshot = function(url) {
+            const img = document.getElementById('modalScreenshot');
+            if (img) img.src = url;
+        };
+
+        // Initial render
+        updateSelectedState();
     });
 </script>

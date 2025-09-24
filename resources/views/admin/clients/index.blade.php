@@ -55,6 +55,14 @@
     <form id="bulkDeleteForm" action="{{ route('admin.clients.bulkDelete') }}" method="POST">
         @csrf
         @method('DELETE')
+
+        <div class="d-flex align-items-center mb-2 justify-content-start">
+            <div class="d-flex align-items-center gap-2">
+                <button type="button" id="clearSelectionClients" class="btn btn-sm btn-outline-secondary">Clear</button>
+                <span id="selectedCounterClients" class="badge bg-primary">0 Selected</span>
+            </div>
+        </div>
+
         <div class="table-responsive">
             <table class="table table-bordered table-hover align-middle text-center">
                 <thead class="table-light">
@@ -80,7 +88,7 @@
                             <td>
                                 <a href="{{ route('admin.clients.edit', $client) }}"
                                     class="btn btn-sm btn-outline-primary me-1">Edit</a>
-                                
+
                             </td>
                         </tr>
                     @empty
@@ -101,3 +109,64 @@
     </div>
 
 @endsection
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form       = document.getElementById('bulkDeleteForm');
+    const checkAll   = document.getElementById('checkAll');
+    const counterEl  = document.getElementById('selectedCounterClients');
+    const clearBtn   = document.getElementById('clearSelectionClients');
+    const deleteBtn  = form?.querySelector('button[type="submit"].btn-danger');
+
+    function rowBoxes() {
+        return Array.from(document.querySelectorAll('input[name="client_ids[]"]'));
+    }
+
+    function updateSelectedState() {
+        const boxes   = rowBoxes();
+        const total   = boxes.length;
+        const checked = boxes.filter(cb => cb.checked).length;
+
+        if (counterEl) counterEl.textContent = `${checked} Selected`;
+        if (deleteBtn) deleteBtn.disabled = (checked === 0);
+
+        if (checkAll) {
+            if (checked === 0) {
+                checkAll.indeterminate = false;
+                checkAll.checked = false;
+            } else if (checked === total) {
+                checkAll.indeterminate = false;
+                checkAll.checked = true;
+            } else {
+                checkAll.indeterminate = true;
+            }
+        }
+    }
+
+    // Header Select All
+    checkAll?.addEventListener('change', function () {
+        rowBoxes().forEach(cb => cb.checked = this.checked);
+        updateSelectedState();
+    });
+
+    // Row checkbox changes
+    document.addEventListener('change', function (e) {
+        if (e.target && e.target.matches('input[name="client_ids[]"]')) {
+            updateSelectedState();
+        }
+    });
+
+    // Clear selection
+    clearBtn?.addEventListener('click', function () {
+        rowBoxes().forEach(cb => cb.checked = false);
+        if (checkAll) {
+            checkAll.indeterminate = false;
+            checkAll.checked = false;
+        }
+        updateSelectedState();
+    });
+
+    // On first render
+    updateSelectedState();
+});
+</script>

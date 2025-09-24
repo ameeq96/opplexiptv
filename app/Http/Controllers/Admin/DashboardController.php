@@ -20,31 +20,38 @@ class DashboardController extends Controller
         $startInput = $request->validated('start_date') ?? null;
         $endInput   = $request->validated('end_date') ?? null;
 
-        $now     = now();
-        $today   = $now->toDateString();
-        $isToday = $filter === 'today';
-        $isRange = !$isToday && $startInput && $endInput;
+        $now = now();
 
-        $start = $isRange ? Carbon::parse($startInput)->startOfDay() : null;
-        $end   = $isRange ? Carbon::parse($endInput)->endOfDay()   : null;
+        [$start, $end] = match ($filter) {
+            'today'     => [$now->clone()->startOfDay(), $now->clone()->endOfDay()],
+            'yesterday' => [$now->clone()->subDay()->startOfDay(), $now->clone()->subDay()->endOfDay()],
+            '7days'     => [$now->clone()->subDays(6)->startOfDay(), $now->clone()->endOfDay()],
+            '30days'    => [$now->clone()->subDays(29)->startOfDay(), $now->clone()->endOfDay()],
+            '90days'    => [$now->clone()->subDays(89)->startOfDay(), $now->clone()->endOfDay()],
+            'year'      => [$now->clone()->startOfYear(), $now->clone()->endOfDay()],
+            default     => [null, null],
+        };
+
+        if ($startInput && $endInput) {
+            $start  = \Carbon\Carbon::parse($startInput)->startOfDay();
+            $end    = \Carbon\Carbon::parse($endInput)->endOfDay();
+            $filter = 'custom';
+        }
+        $hasRange = $start && $end;
 
         $baseOrders = Order::query()
-            ->whereIn('status', ['active', 'expired'])
-            ->when($isToday, fn($q) => $q->whereDate('buying_date', $today))
-            ->when($isRange, fn($q) => $q->whereBetween('buying_date', [$start, $end]));
+            ->when($hasRange, fn($q) => $q->whereBetween('buying_date', [$start, $end]));
 
-        $counts = (clone $baseOrders)
-            ->toBase()
-            ->selectRaw("
-            COUNT(*)                                             AS total,
-            SUM(CASE WHEN status = 'active'  THEN 1 ELSE 0 END) AS active,
-            SUM(CASE WHEN status = 'expired' THEN 1 ELSE 0 END) AS expired
-        ")
-            ->first();
+        $totalOrders = (clone $baseOrders)->count();
+        $activeOrders = (clone $baseOrders)
+            ->whereNotNull('expiry_date')
+            ->where('expiry_date', '>=', $now)
+            ->count();
 
-        $totalOrders   = (int) ($counts->total   ?? 0);
-        $activeOrders  = (int) ($counts->active  ?? 0);
-        $expiredOrders = (int) ($counts->expired ?? 0);
+        $expiredOrders = (clone $baseOrders)
+            ->whereNotNull('expiry_date')
+            ->where('expiry_date', '<', $now)
+            ->count();
 
         $users = User::query()->count();
 
@@ -54,24 +61,19 @@ class DashboardController extends Controller
             SUM(CASE WHEN type = 'package'  THEN price  ELSE 0 END) AS package_sum,
             SUM(CASE WHEN type = 'reseller' THEN profit ELSE 0 END) AS reseller_sum
         ")
-            ->when($isToday, fn($q) => $q->whereDate('buying_date', $today))
-            ->when($isRange, fn($q) => $q->whereBetween('buying_date', [$start, $end]))
+            ->when($hasRange, fn($q) => $q->whereBetween('buying_date', [$start, $end]))
             ->groupBy('currency')
             ->get()
             ->keyBy('currency');
 
         $purchaseAgg = Purchasing::query()
             ->selectRaw('currency, SUM(cost_price) AS purchase_sum')
-            ->when($isToday, fn($q) => $q->whereDate('purchase_date', $today))
-            ->when($isRange, fn($q) => $q->whereBetween('purchase_date', [$start, $end]))
+            ->when($hasRange, fn($q) => $q->whereBetween('purchase_date', [$start, $end]))
             ->groupBy('currency')
             ->get()
             ->keyBy('currency');
 
-        $currencies = collect($ordersAgg->keys())
-            ->merge($purchaseAgg->keys())
-            ->unique()
-            ->values();
+        $currencies = collect($ordersAgg->keys())->merge($purchaseAgg->keys())->unique()->values();
 
         $earningsByCurrency = [];
         foreach ($currencies as $ccy) {
@@ -91,8 +93,8 @@ class DashboardController extends Controller
             'totalOrders'        => $totalOrders,
             'earningsByCurrency' => $earningsByCurrency,
             'filter'             => $filter,
-            'startDate'          => $isToday ? $now->startOfDay()->toDateTimeString() : $start?->toDateTimeString(),
-            'endDate'            => $isToday ? $now->endOfDay()->toDateTimeString()   : $end?->toDateTimeString(),
+            'startDate'          => $hasRange ? $start->toDateTimeString() : null,
+            'endDate'            => $hasRange ? $end->toDateTimeString()   : null,
         ]);
     }
 }

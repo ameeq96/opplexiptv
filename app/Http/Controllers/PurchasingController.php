@@ -14,7 +14,9 @@ use Illuminate\Http\Request;
 
 class PurchasingController extends Controller
 {
-    use HelperFunction;
+    use HelperFunction {
+        bulkDelete as helperBulkDelete;
+    }
 
     public function __construct(
         private PurchasingQueryService $query,
@@ -30,7 +32,7 @@ class PurchasingController extends Controller
 
     public function bulkDelete(Request $request)
     {
-        return $this->bulkDelete($request, 'purchase_ids', $this->crud, $this->media, Purchasing::class);
+        return $this->helperBulkDelete($request, 'purchase_ids', $this->crud, $this->media, Purchasing::class);
     }
 
     public function create()
