@@ -241,7 +241,7 @@ return [
   'faq.a7' => 'Sí, Opplex IPTV funciona en laptops y computadoras personales.',
 
   'faq.q8' => '¿Cuántos dispositivos puedo usar con una suscripción?',
-  'faq.a8' => 'Puedes usar dos dispositivos con una suscripción.',
+  'faq.a8' => 'Puedes usar un dispositivo con una suscripción.',
 
   'faq.q9' => '¿Cómo puedo descargar la aplicación?',
   'faq.a9' => 'Haz clic aquí para descargar: <a href="https://www.opplexiptv.com/iptv-applications">Descargar Ahora</a>',

@@ -240,7 +240,7 @@ return [
   'faq.a7' => 'Ja, Opplex IPTV werkt op laptops en pc’s.',
 
   'faq.q8' => 'Hoeveel apparaten kan ik gebruiken met één abonnement?',
-  'faq.a8' => 'U kunt twee apparaten gebruiken met één abonnement.',
+  'faq.a8' => 'U kunt één apparaat gebruiken met één abonnement.',
 
   'faq.q9' => 'Hoe kan ik de applicatie downloaden?',
   'faq.a9' => 'Klik hier om te downloaden: <a href="https://www.opplexiptv.com/iptv-applications">Nu downloaden</a>',

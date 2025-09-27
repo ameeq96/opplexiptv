@@ -253,8 +253,7 @@ return [
     'faq.a7' => 'Oui, Opplex IPTV est compatible avec IPTV smart player sur PC ou IPTV player Windows. Même les décodeurs IPTV peuvent être utilisés avec code.',
 
     'faq.q8' => 'Combien d’appareils peuvent utiliser un abonnement ?',
-    'faq.a8' => 'Deux appareils peuvent se connecter avec un seul code IPTV - TV + téléphone ou box IPTV + tablette.',
-
+    'faq.a8' => 'Vous pouvez utiliser un appareil avec un abonnement.',
     'faq.q9' => 'Comment télécharger l’application ?',
     'faq.a9' => 'Téléchargez ici : <a href="https://www.opplexiptv.com/iptv-applications">Télécharger</a> - choisissez IPTV Smarters Pro, Xtream IPTV ou IPTV stream player selon votre appareil.',
 

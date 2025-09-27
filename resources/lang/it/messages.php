@@ -248,7 +248,7 @@ return [
     'faq.a7' => 'Sì, puoi usare IPTV anche su PC o laptop usando IPTV Player compatibili o emulatori Android per IPTV Extreme APK.',
 
     'faq.q8' => 'Quanti dispositivi posso usare con un abbonamento?',
-    'faq.a8' => 'Un singolo abbonamento Opplex IPTV può essere utilizzato su 2 dispositivi - Smart IPTV, Firestick, Android TV, ecc.',
+    'faq.a8' => 'Puoi usare un dispositivo con un abbonamento.',
 
     'faq.q9' => 'Come posso scaricare l’applicazione?',
     'faq.a9' => 'Puoi scaricare l’app da <a href="https://www.opplexiptv.com/iptv-applications">qui</a> — troverai IPTV Smarters, IPTV Extreme APK e altri miglior IPTV APK.',

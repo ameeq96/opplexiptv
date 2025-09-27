@@ -241,7 +241,7 @@ return [
   'faq.a7' => 'Da, Opplex IPTV rabotayet na noutbukah i personalnih kompyuterah.',
 
   'faq.q8' => 'Skolko ustroystv mozhno ispolzovat s odnoi podpiski?',
-  'faq.a8' => 'Mozhno ispolzovat dva ustroystva s odnoy podpiski.',
+  'faq.a8' => 'Можно использовать одно устройство с одной подпиской.',
 
   'faq.q9' => 'Kak skachat prilozhenie?',
   'faq.a9' => 'Klikni zdes dlya skachivaniya: <a href="https://www.opplexiptv.com/iptv-applications">Skachat seychas</a>',
