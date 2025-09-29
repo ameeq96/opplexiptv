@@ -414,4 +414,18 @@ return [
   'order_updated'   => 'Pedido atualizado com sucesso.',
   'order_deleted'   => 'Pedido excluído com sucesso.',
   'screenshot_deleted' => 'Captura de tela excluída com sucesso.',
+
+  'discount_title'   => 'Garanta o seu desconto 🎉',
+  'discount_sub'     => 'Gire a roleta para ganhar: :percents',
+  'spin_now'         => 'Girar agora',
+  'spin_center'      => 'GIRAR',
+  'off'              => 'de desconto',
+  'good_luck'        => 'Boa sorte!',
+  'congrats'         => 'Parabéns! Seu desconto está pronto.',
+  'already_unlocked' => 'Desconto já liberado: :value%',
+  'whatsapp_message' => 'Olá, consegui :discount% de desconto. Podem ativar minha assinatura?',
+  'whatsapp_btn'     => 'Enviar no WhatsApp (anexar captura de tela)',
+  'close'            => 'Fechar',
+  'require_screenshot' => 'Envie a captura de tela do seu giro pelo WhatsApp; caso contrário, o desconto não será concedido.',
+
 ];

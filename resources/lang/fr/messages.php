@@ -414,4 +414,18 @@ return [
     'order_updated'   => 'Commande mise à jour avec succès.',
     'order_deleted'   => 'Commande supprimée avec succès.',
     'screenshot_deleted' => 'Capture d\'écran supprimée avec succès.',
+
+    'discount_title'   => 'Profitez de votre réduction 🎉',
+    'discount_sub'     => 'Faites tourner la roue pour obtenir :percents',
+    'spin_now'         => 'Lancer',
+    'spin_center'      => 'TOURNEZ',
+    'off'              => 'de réduction',
+    'good_luck'        => 'Bonne chance !',
+    'congrats'         => 'Félicitations ! Votre réduction est prête.',
+    'already_unlocked' => 'Réduction déjà débloquée : :value%',
+    'whatsapp_message' => 'Bonjour, j’ai obtenu :discount% de réduction. Pouvez-vous activer mon abonnement ?',
+    'whatsapp_btn'     => 'Envoyer sur WhatsApp (joindre une capture)',
+    'close'            => 'Fermer',
+    'require_screenshot' => 'Veuillez envoyer la capture d’écran de votre tour sur WhatsApp ; sinon la remise ne sera pas accordée.',
+
 ];
