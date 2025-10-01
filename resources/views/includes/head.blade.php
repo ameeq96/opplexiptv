@@ -176,6 +176,7 @@
 
     {{-- Google Analytics Load Optimization --}}
     <script>
+        // ---- Google Analytics (as you had) ----
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -218,6 +219,7 @@
                 })(window, document, "clarity", "script", "sq6nn3dn69");
             }
 
+            // ---------- META PIXEL ----------
             function loadFBPixel() {
                 if (hasLoadedFBPixel) return;
                 hasLoadedFBPixel = true;
@@ -239,17 +241,103 @@
                     s.parentNode.insertBefore(t, s);
                 }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
+                // --- Your Pixel ID ---
                 fbq('init', '1467807554407581');
-                fbq('track', 'PageView');
+                fbq('track', 'PageView'); // base page view
+
+                // when fbq is ready, bind events
+                whenFBQReady(bindMetaEvents);
             }
 
+            // wait until fbq is callable
+            function whenFBQReady(cb) {
+                if (window.fbq && fbq.callMethod) return cb();
+                const iv = setInterval(function() {
+                    if (window.fbq && fbq.callMethod) {
+                        clearInterval(iv);
+                        cb();
+                    }
+                }, 100);
+                setTimeout(() => clearInterval(iv), 10000);
+            }
+
+            // ---------- EVENT BINDINGS (edit URLs/IDs if needed) ----------
+            function bindMetaEvents() {
+                // Toggle this to true to see console logs:
+                const DEBUG = false;
+                const log = (...a) => {
+                    if (DEBUG) console.log('[PIXEL]', ...a);
+                };
+
+                const path = location.pathname.toLowerCase();
+
+                // a) ViewContent for key content pages (home + iptv apps/services)
+                if (path === '/' || path.includes('/iptv-applications') || path.includes('/services')) {
+                    fbq('track', 'ViewContent');
+                    log('ViewContent');
+                }
+
+                // b) WhatsApp clicks -> Contact
+                document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(a => {
+                    a.addEventListener('click', function() {
+                        fbq('track', 'Contact');
+                        log('Contact (WhatsApp)');
+                    }, {
+                        passive: true
+                    });
+                });
+
+                // c) CTA / pricing / checkout clicks -> InitiateCheckout
+                document.querySelectorAll(
+                    'a[href*="/buy"], a[href*="pricing"], a[href*="/cart"], a[href*="/checkout"]').forEach(
+                a => {
+                    a.addEventListener('click', function() {
+                        fbq('track', 'InitiateCheckout');
+                        log('InitiateCheckout');
+                    }, {
+                        passive: true
+                    });
+                });
+
+                // d) Thank-you/success pages -> Lead
+                if (path.includes('thank') || path.includes('/success') || path.includes('/trial-submitted')) {
+                    fbq('track', 'Lead');
+                    log('Lead (thank-you/success)');
+                }
+
+                // e) Purchase page (placeholder — adjust to your real success URL & value)
+                // e.g., WooCommerce: /checkout/order-received/
+                if (path.includes('/order-received') || path.includes('/purchase-complete')) {
+                    // If amount is available in your DOM, read and send it; else keep 0
+                    fbq('track', 'Purchase', {
+                        value: 0,
+                        currency: 'USD'
+                    });
+                    log('Purchase (placeholder)');
+                    // Prevent double-fire on refresh:
+                    sessionStorage.setItem('purchaseFired', '1');
+                }
+                if (sessionStorage.getItem('purchaseFired') === '1' && (path.includes('/order-received') || path
+                        .includes('/purchase-complete'))) {
+                    // do nothing on subsequent reloads
+                }
+
+                // Utility: manual test trigger from console
+                window.__pixelTest = function() {
+                    fbq('track', 'ViewContent');
+                    fbq('track', 'Lead');
+                    console.log('Test events fired');
+                };
+            }
+
+            // Load all trackers together
             const loadTrackingScripts = () => {
                 loadGTM();
                 loadClarity();
                 loadFBPixel();
             };
 
-            // Load on first user interaction (broader set of events)
+            // Load on first interaction (wide set of events)
             const onceOpts = {
                 once: true,
                 passive: true
@@ -258,7 +346,7 @@
                 window.addEventListener(ev, loadTrackingScripts, onceOpts);
             });
 
-            // Fallback: agar interaction na aaye (e.g., Meta Event Setup Tool overlay), 4s baad load kar do
+            // Fallback: overlay/ETT ki wajah se interaction na aaye to 4s baad auto-load
             setTimeout(loadTrackingScripts, 4000);
         });
     </script>
@@ -268,6 +356,7 @@
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1467807554407581&ev=PageView&noscript=1" />
     </noscript>
+
 
 
 
