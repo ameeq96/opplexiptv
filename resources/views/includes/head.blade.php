@@ -176,6 +176,7 @@
 
     {{-- Google Analytics Load Optimization --}}
     <script>
+        // GA4 datalayer
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -183,29 +184,28 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            let hasLoadedGTM = false;
-            let hasLoadedClarity = false;
-            let hasLoadedFBPixel = false;
+            const loaded = {
+                ga: false,
+                clarity: false,
+                pixel: false
+            };
 
-            function loadGTM() {
-                if (hasLoadedGTM) return;
-                hasLoadedGTM = true;
-
-                const gtmScript = document.createElement("script");
-                gtmScript.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
-                gtmScript.async = true;
-                document.head.appendChild(gtmScript);
-
-                gtmScript.onload = function() {
+            function loadGA() {
+                if (loaded.ga) return;
+                loaded.ga = true;
+                const s = document.createElement("script");
+                s.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
+                s.async = true;
+                (document.head || document.body).appendChild(s);
+                s.onload = function() {
                     gtag('js', new Date());
                     gtag('config', 'G-L98JG9ZT7H');
                 };
             }
 
             function loadClarity() {
-                if (hasLoadedClarity) return;
-                hasLoadedClarity = true;
-
+                if (loaded.clarity) return;
+                loaded.clarity = true;
                 (function(c, l, a, r, i, t, y) {
                     c[a] = c[a] || function() {
                         (c[a].q = c[a].q || []).push(arguments)
@@ -219,9 +219,8 @@
             }
 
             function loadFBPixel() {
-                if (hasLoadedFBPixel) return;
-                hasLoadedFBPixel = true;
-
+                if (loaded.pixel) return;
+                loaded.pixel = true;
                 ! function(f, b, e, v, n, t, s) {
                     if (f.fbq) return;
                     n = f.fbq = function() {
@@ -243,23 +242,27 @@
                 fbq('track', 'PageView');
             }
 
-            const loadTrackingScripts = () => {
-                loadGTM();
+            function loadAll() {
+                loadGA();
                 loadClarity();
                 loadFBPixel();
-            };
+                // remove listeners after first run
+                events.forEach(ev => window.removeEventListener(ev, loadAll, opts));
+            }
 
-            // Load on first user interaction (broader set of events)
-            const onceOpts = {
+            // 1) Force-load now (FIX: Event Setup Tool me "No events" issue solve)
+            loadAll();
+
+            // 2) User interaction se bhi trigger (no harm; flags prevent duplicates)
+            const events = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'];
+            const opts = {
                 once: true,
                 passive: true
             };
-            ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'].forEach(ev => {
-                window.addEventListener(ev, loadTrackingScripts, onceOpts);
-            });
+            events.forEach(ev => window.addEventListener(ev, loadAll, opts));
 
-            // Fallback: agar interaction na aaye (e.g., Meta Event Setup Tool overlay), 4s baad load kar do
-            setTimeout(loadTrackingScripts, 4000);
+            // 3) Fallback: 4s baad phir se ensure
+            setTimeout(loadAll, 4000);
         });
     </script>
 
@@ -268,7 +271,5 @@
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1467807554407581&ev=PageView&noscript=1" />
     </noscript>
-
-
 
 </head>
