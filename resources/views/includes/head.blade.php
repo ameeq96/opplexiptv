@@ -191,7 +191,7 @@
                 if (hasLoadedGTM) return;
                 hasLoadedGTM = true;
 
-                let gtmScript = document.createElement("script");
+                const gtmScript = document.createElement("script");
                 gtmScript.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
                 gtmScript.async = true;
                 document.head.appendChild(gtmScript);
@@ -249,19 +249,26 @@
                 loadFBPixel();
             };
 
-            ['scroll', 'mousemove', 'touchstart'].forEach(event =>
-                window.addEventListener(event, loadTrackingScripts, {
-                    once: true,
-                    passive: true
-                })
-            );
+            // Load on first user interaction (broader set of events)
+            const onceOpts = {
+                once: true,
+                passive: true
+            };
+            ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'].forEach(ev => {
+                window.addEventListener(ev, loadTrackingScripts, onceOpts);
+            });
+
+            // Fallback: agar interaction na aaye (e.g., Meta Event Setup Tool overlay), 4s baad load kar do
+            setTimeout(loadTrackingScripts, 4000);
         });
     </script>
 
+    <!-- No-JS fallback for Meta Pixel -->
     <noscript>
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1467807554407581&ev=PageView&noscript=1" />
     </noscript>
+
 
 
 </head>
