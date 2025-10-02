@@ -33,6 +33,10 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('images/background/7.webp') }}">
 
+    @if (config('facebook.domain_verification'))
+        <meta name="facebook-domain-verification" content="{{ config('facebook.domain_verification') }}" />
+    @endif
+
     <link rel="canonical" href="{{ url()->current() }}">
 
     {{-- Twitter Cards --}}
@@ -238,7 +242,7 @@
                     s.parentNode.insertBefore(t, s);
                 }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-                fbq('init', '1467807554407581');
+                fbq('init', '{{ config('facebook.pixel_id') }}');
                 fbq('track', 'PageView');
             }
 
@@ -266,10 +270,100 @@
         });
     </script>
 
+    @if (session('fb_event'))
+        <script>
+            window.__fb_flash_event = @json(session('fb_event'));
+            if (typeof fbq === 'function' && window.__fb_flash_event && window.__fb_flash_event.name) {
+                var e = window.__fb_flash_event;
+                var payload = {
+                    eventID: e.id
+                };
+                if (e.value) {
+                    payload.value = e.value;
+                    payload.currency = "{{ config('facebook.default_currency') }}";
+                }
+                fbq('track', e.name, payload);
+            }
+        </script>
+    @endif
+
+    <script>
+        // localized absolute URL (e.g. /en/track/whatsapp)
+        window.TRACK_WHATSAPP_URL = "{{ route('track.whatsapp') }}";
+    </script>
+
+    <script>
+        (function() {
+            function isWaLink(href) {
+                return /(?:wa\.me\/|api\.whatsapp\.com\/send|whatsapp:)/i.test(href || '');
+            }
+
+            function extractPhone(href) {
+                if (!href) return '';
+                var m = href.match(/wa\.me\/(\d+)/i) || href.match(/[?&]phone=(\d+)/i);
+                return m ? m[1] : '';
+            }
+
+            function genId() {
+                return 'wa-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
+            }
+
+            function trackWhatsAppClick(href) {
+                var eid = genId();
+
+                // 1) Browser event (if fbq loaded)
+                try {
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Contact', {
+                            content_name: 'WhatsApp',
+                            content_category: 'click',
+                            eventID: eid
+                        });
+                    }
+                } catch (e) {}
+
+                // 2) Server event (CAPI) — same eventID for dedup
+                try {
+                    var url = (window.TRACK_WHATSAPP_URL || '/track/whatsapp') +
+                        '?eid=' + encodeURIComponent(eid) +
+                        '&href=' + encodeURIComponent(href || location.href) +
+                        '&phone=' + encodeURIComponent(extractPhone(href));
+
+                    // fire-and-forget without blocking navigation
+                    if (navigator.sendBeacon) {
+                        var blob = new Blob([], {
+                            type: 'application/octet-stream'
+                        });
+                        navigator.sendBeacon(url, blob);
+                    } else {
+                        fetch(url, {
+                            method: 'GET',
+                            mode: 'no-cors',
+                            keepalive: true
+                        });
+                    }
+                } catch (e) {}
+            }
+
+            // Event delegation — sab <a> par kaam karega
+            document.addEventListener('click', function(ev) {
+                var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+                if (!a) return;
+                var href = a.getAttribute('href') || '';
+
+                if (isWaLink(href)) {
+                    // bas track karo; navigation ko block nahi kar rahe
+                    trackWhatsAppClick(a.href || href);
+                }
+            }, true);
+        })();
+    </script>
+
+
     <!-- No-JS fallback for Meta Pixel -->
     <noscript>
         <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1467807554407581&ev=PageView&noscript=1" />
+            src="https://www.facebook.com/tr?id={{ config('facebook.pixel_id') }}&ev=PageView&noscript=1" />
     </noscript>
 
 </head>

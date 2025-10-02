@@ -246,6 +246,64 @@
         }
     </script>
 
+    <script>
+        window.TRACK_WHATSAPP_URL = "{{ route('track.whatsapp') }}";
+    </script>
+
+    <script>
+        (function() {
+            function isWaLink(href) {
+                return /(?:wa\.me\/|api\.whatsapp\.com\/send|whatsapp:)/i.test(href || '');
+            }
+
+            function extractPhone(href) {
+                if (!href) return '';
+                var m = href.match(/wa\.me\/(\d+)/i) || href.match(/[?&]phone=(\d+)/i);
+                return m ? m[1] : '';
+            }
+
+            function genId() {
+                return 'wa-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
+            }
+
+            function trackWhatsAppClick(href) {
+                var eid = genId();
+                try {
+                    if (typeof fbq === 'function') fbq('track', 'Contact', {
+                        content_name: 'WhatsApp',
+                        content_category: 'click',
+                        eventID: eid
+                    });
+                } catch (e) {}
+                try {
+                    var url = (window.TRACK_WHATSAPP_URL || '/track/whatsapp') +
+                        '?eid=' + encodeURIComponent(eid) +
+                        '&href=' + encodeURIComponent(href || location.href) +
+                        '&phone=' + encodeURIComponent(extractPhone(href));
+                    if (navigator.sendBeacon) {
+                        var b = new Blob([], {
+                            type: 'application/octet-stream'
+                        });
+                        navigator.sendBeacon(url, b);
+                    } else {
+                        fetch(url, {
+                            method: 'GET',
+                            mode: 'no-cors',
+                            keepalive: true
+                        });
+                    }
+                } catch (e) {}
+            }
+            document.addEventListener('click', function(ev) {
+                var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+                if (!a) return;
+                var href = a.getAttribute('href') || '';
+                if (isWaLink(href)) trackWhatsAppClick(a.href || href);
+            }, true);
+        })();
+    </script>
+
+
 </body>
 
 </html>
