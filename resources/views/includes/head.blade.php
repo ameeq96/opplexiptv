@@ -1,6 +1,7 @@
 <head>
 
     @php
+
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
 
@@ -31,11 +32,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('images/background/7.webp') }}">
-
-    @if (config('facebook.domain_verification'))
-        <meta name="facebook-domain-verification" content="{{ config('facebook.domain_verification') }}" />
-    @endif
-    {{-- (Optional) Agar upar wala dynamic token use ho raha ho to yeh hardcoded line hata bhi sakte ho: --}}
     <meta name="facebook-domain-verification" content="rnsb3eqoa06k3dwo6gyqpphgu2imo2" />
 
     <link rel="canonical" href="{{ url()->current() }}">
@@ -46,26 +42,83 @@
     <meta name="twitter:description" content="{{ $metaDescription }}">
     <meta name="twitter:image" content="{{ asset('images/background/7.webp') }}">
 
-    {{-- Multilingual hreflang --}}
+    {{-- Multilingual hreflang (important for Europe targeting) --}}
     <link rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en') }}" />
     <link rel="alternate" hreflang="fr" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" />
     <link rel="alternate" hreflang="it" href="{{ LaravelLocalization::getLocalizedURL('it') }}" />
-    <link rel="alternate" hreflang="x-default" href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
+    <link rel="alternate" hreflang="x-default"
+        href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
 
     @yield('jsonld')
 
     <style>
-        .hero-section-mobile{padding:2rem 1rem;background-color:#fff;text-align:center}
-        .hero-section-mobile .container{max-width:600px;margin:0 auto}
-        .hero-section-mobile .subtitle{font-weight:600;font-size:1rem;color:#555;margin-bottom:.5rem}
-        .hero-section-mobile .heading{font-size:1.4rem;font-weight:bold;color:#111;margin-bottom:1rem}
-        .hero-section-mobile .description{margin-top:1rem;color:#333;font-size:1rem;line-height:1.6}
-        .hero-section-mobile .btn-group{margin-top:2rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-        .hero-section-mobile .btn{padding:.75rem 1.5rem;font-weight:600;text-decoration:none;border-radius:5px;transition:all .3s ease;display:inline-block}
-        .hero-section-mobile .btn-primary{background-color:#df0303;color:#fff}
-        .hero-section-mobile .btn-primary:hover{background-color:#df0303}
-        .hero-section-mobile .btn-outline{border:2px solid #df0303;color:#df0303;background-color:transparent}
-        .hero-section-mobile .btn-outline:hover{background-color:#f0f8ff}
+        .hero-section-mobile {
+            padding: 2rem 1rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .hero-section-mobile .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-section-mobile .subtitle {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-section-mobile .heading {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section-mobile .description {
+            margin-top: 1rem;
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .hero-section-mobile .btn-group {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-section-mobile .btn {
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .hero-section-mobile .btn-primary {
+            background-color: #df0303;
+            color: white;
+        }
+
+        .hero-section-mobile .btn-primary:hover {
+            background-color: #df0303;
+        }
+
+        .hero-section-mobile .btn-outline {
+            border: 2px solid #df0303;
+            color: #df0303;
+            background-color: transparent;
+        }
+
+        .hero-section-mobile .btn-outline:hover {
+            background-color: #f0f8ff;
+        }
     </style>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
@@ -76,16 +129,29 @@
     @endif
 
     <link rel="preload" href="{{ asset('css/style.css') }}" as="style">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
+        crossorigin>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        media="all">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all">
     <link rel="stylesheet" href="{{ asset('css/discount-wheel.css') }}" media="all">
 
     @php
         $nonCriticalStyles = [
-            'global.css','header.css','footer.css','font-awesome.css','flaticon.css','animate.css','owl.css',
-            'swiper.css','linearicons.css','jquery-ui.css','custom-animate.css','jquery.fancybox.min.css','jquery.mCustomScrollbar.min.css',
+            'global.css',
+            'header.css',
+            'footer.css',
+            'font-awesome.css',
+            'flaticon.css',
+            'animate.css',
+            'owl.css',
+            'swiper.css',
+            'linearicons.css',
+            'jquery-ui.css',
+            'custom-animate.css',
+            'jquery.fancybox.min.css',
+            'jquery.mCustomScrollbar.min.css',
         ];
     @endphp
 
@@ -109,117 +175,102 @@
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     </noscript>
 
-    {{-- Google Analytics + Clarity + Meta Pixel (lazy-safe) --}}
+    {{-- Google Analytics Load Optimization --}}
     <script>
+        // GA4 datalayer
         window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
         document.addEventListener("DOMContentLoaded", function() {
-            const loaded = { ga:false, clarity:false, pixel:false };
+            const loaded = {
+                ga: false,
+                clarity: false,
+                pixel: false
+            };
 
-            function loadGA(){
-                if (loaded.ga) return; loaded.ga = true;
+            function loadGA() {
+                if (loaded.ga) return;
+                loaded.ga = true;
                 const s = document.createElement("script");
                 s.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
-                s.async = true; (document.head||document.body).appendChild(s);
-                s.onload = function(){ gtag('js', new Date()); gtag('config','G-L98JG9ZT7H'); };
+                s.async = true;
+                (document.head || document.body).appendChild(s);
+                s.onload = function() {
+                    gtag('js', new Date());
+                    gtag('config', 'G-L98JG9ZT7H');
+                };
             }
-            function loadClarity(){
-                if (loaded.clarity) return; loaded.clarity = true;
-                (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                    t=l.createElement(r); t.async=1; t.src="https://www.clarity.ms/tag/"+i;
-                    y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
-                })(window,document,"clarity","script","sq6nn3dn69");
-            }
-            function loadFBPixel(){
-                if (loaded.pixel) return; loaded.pixel = true;
-                !function(f,b,e,v,n,t,s){ if(f.fbq) return; n=f.fbq=function(){ n.callMethod?
-                    n.callMethod.apply(n,arguments):n.queue.push(arguments) }; if(!f._fbq) f._fbq=n;
-                    n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[]; t=b.createElement(e); t.async=!0; t.src=v;
-                    s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);
-                }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-                fbq('init', '{{ config('facebook.pixel_id') }}');
+            function loadClarity() {
+                if (loaded.clarity) return;
+                loaded.clarity = true;
+                (function(c, l, a, r, i, t, y) {
+                    c[a] = c[a] || function() {
+                        (c[a].q = c[a].q || []).push(arguments)
+                    };
+                    t = l.createElement(r);
+                    t.async = 1;
+                    t.src = "https://www.clarity.ms/tag/" + i;
+                    y = l.getElementsByTagName(r)[0];
+                    y.parentNode.insertBefore(t, y);
+                })(window, document, "clarity", "script", "sq6nn3dn69");
+            }
+
+            function loadFBPixel() {
+                if (loaded.pixel) return;
+                loaded.pixel = true;
+                ! function(f, b, e, v, n, t, s) {
+                    if (f.fbq) return;
+                    n = f.fbq = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n;
+                    n.push = n;
+                    n.loaded = !0;
+                    n.version = '2.0';
+                    n.queue = [];
+                    t = b.createElement(e);
+                    t.async = !0;
+                    t.src = v;
+                    s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+                fbq('init', '1467807554407581');
                 fbq('track', 'PageView');
             }
 
-            function loadAll(){ loadGA(); loadClarity(); loadFBPixel();
-                events.forEach(ev => window.removeEventListener(ev, loadAll, opts)); }
+            function loadAll() {
+                loadGA();
+                loadClarity();
+                loadFBPixel();
+                // remove listeners after first run
+                events.forEach(ev => window.removeEventListener(ev, loadAll, opts));
+            }
 
-            // Force + interactions + fallback
+            // 1) Force-load now (FIX: Event Setup Tool me "No events" issue solve)
             loadAll();
-            const events = ['scroll','mousemove','touchstart','pointerdown','keydown'];
-            const opts = { once:true, passive:true };
+
+            // 2) User interaction se bhi trigger (no harm; flags prevent duplicates)
+            const events = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'];
+            const opts = {
+                once: true,
+                passive: true
+            };
             events.forEach(ev => window.addEventListener(ev, loadAll, opts));
+
+            // 3) Fallback: 4s baad phir se ensure
             setTimeout(loadAll, 4000);
         });
-    </script>
-
-    {{-- Flash FB Event (server dedup) --}}
-    @if (session('fb_event'))
-        <script>
-            window.__fb_flash_event = @json(session('fb_event'));
-            if (typeof fbq === 'function' && window.__fb_flash_event && window.__fb_flash_event.name) {
-                var e = window.__fb_flash_event, payload = { eventID: e.id };
-                if (e.value) { payload.value = e.value; payload.currency = "{{ config('facebook.default_currency') }}"; }
-                fbq('track', e.name, payload);
-            }
-        </script>
-    @endif
-
-    {{-- TRACK_WHATSAPP_URL ko relative rakho (bulletproof) --}}
-    <script>
-      window.TRACK_WHATSAPP_URL = "{{ route('track.whatsapp', [], false) }}" || "/track/whatsapp";
-    </script>
-
-    {{-- WhatsApp Click → Browser (fbq Contact) + Server (CAPI) via image beacon --}}
-    <script>
-    (function () {
-        function isWaLink(href){ return /(?:wa\.me\/|api\.whatsapp\.com\/send|whatsapp:)/i.test(href||''); }
-        function extractPhone(href){
-            if(!href) return '';
-            var m = href.match(/wa\.me\/(\d+)/i) || href.match(/[?&]phone=(\d+)/i);
-            return m ? m[1] : '';
-        }
-        function genId(){ return 'wa-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2,10); }
-
-        function trackWhatsAppClick(href){
-            var eid = genId();
-
-            // 1) Browser event
-            try {
-                if (typeof fbq === 'function') {
-                    fbq('track', 'Contact', { content_name:'WhatsApp', content_category:'click', eventID:eid });
-                }
-            } catch(e){}
-
-            // 2) Server ping (reliable, even on navigation)
-            try {
-                var url = (window.TRACK_WHATSAPP_URL || '/track/whatsapp')
-                    + '?eid=' + encodeURIComponent(eid)
-                    + '&href=' + encodeURIComponent(href || location.href)
-                    + '&phone=' + encodeURIComponent(extractPhone(href))
-                    + '&_cb=' + Date.now(); // cache-buster
-
-                var img = new Image();
-                img.src = url; // GET /track/whatsapp?... → returns 204
-            } catch(e){}
-        }
-
-        // Global delegation
-        document.addEventListener('click', function(ev){
-            var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
-            if(!a) return;
-            var href = a.getAttribute('href') || '';
-            if (isWaLink(href)) { trackWhatsAppClick(a.href || href); }
-        }, true);
-    })();
     </script>
 
     <!-- No-JS fallback for Meta Pixel -->
     <noscript>
         <img height="1" width="1" style="display:none"
-             src="https://www.facebook.com/tr?id={{ config('facebook.pixel_id') }}&ev=PageView&noscript=1" />
+            src="https://www.facebook.com/tr?id=1467807554407581&ev=PageView&noscript=1" />
     </noscript>
 
 </head>

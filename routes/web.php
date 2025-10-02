@@ -11,7 +11,6 @@ use App\Http\Controllers\{
     OrderController,
     PanelOrderController,
     PurchasingController,
-    TrackingController,
     UserClientController,
 };
 
@@ -101,5 +100,3 @@ Route::group(
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
     }
 );
-
-Route::get('track/whatsapp', [TrackingController::class, 'whatsapp'])->name('track.whatsapp');
