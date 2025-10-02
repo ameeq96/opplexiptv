@@ -330,19 +330,11 @@
                         '&href=' + encodeURIComponent(href || location.href) +
                         '&phone=' + encodeURIComponent(extractPhone(href));
 
-                    // fire-and-forget without blocking navigation
-                    if (navigator.sendBeacon) {
-                        var blob = new Blob([], {
-                            type: 'application/octet-stream'
-                        });
-                        navigator.sendBeacon(url, blob);
-                    } else {
-                        fetch(url, {
-                            method: 'GET',
-                            mode: 'no-cors',
-                            keepalive: true
-                        });
-                    }
+                    fetch(url, {
+                        method: 'GET',
+                        mode: 'no-cors',
+                        keepalive: true
+                    });
                 } catch (e) {}
             }
 

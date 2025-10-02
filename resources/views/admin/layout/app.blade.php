@@ -280,18 +280,12 @@
                         '?eid=' + encodeURIComponent(eid) +
                         '&href=' + encodeURIComponent(href || location.href) +
                         '&phone=' + encodeURIComponent(extractPhone(href));
-                    if (navigator.sendBeacon) {
-                        var b = new Blob([], {
-                            type: 'application/octet-stream'
-                        });
-                        navigator.sendBeacon(url, b);
-                    } else {
-                        fetch(url, {
-                            method: 'GET',
-                            mode: 'no-cors',
-                            keepalive: true
-                        });
-                    }
+
+                    fetch(url, {
+                        method: 'GET',
+                        mode: 'no-cors',
+                        keepalive: true
+                    });
                 } catch (e) {}
             }
             document.addEventListener('click', function(ev) {
