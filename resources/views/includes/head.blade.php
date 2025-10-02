@@ -135,7 +135,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         media="all">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all">
-    <link rel="stylesheet" href="{{ asset('css/discount-wheel.css') }}" media="all">
 
     @php
         $nonCriticalStyles = [

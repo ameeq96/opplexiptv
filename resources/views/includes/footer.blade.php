@@ -75,8 +75,6 @@
 </footer>
 <!-- End Main Footer -->
 
-@include('includes.spin-popup')
-
 </div><!-- End pagewrapper -->
 
 <div class="scroll-to-top scroll-to-target" data-target="html" aria-label="Scroll to top">
@@ -98,7 +96,6 @@
 
 <!-- Local scripts last -->
 <script src="{{ asset('js/nav-tool.js') }}" defer></script>
-<script src="{{ asset('js/discount-wheel.js') }}" defer></script>
 <script src="{{ asset('js/script.js') }}" defer></script>
 
 <script>

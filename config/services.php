@@ -25,10 +25,6 @@ return [
         'token' => env('POSTMARK_TOKEN'),
     ],
 
-    'discount' => [
-        'phone' => env('DISCOUNT_WA_PHONE', '16393903194'),
-    ],
-
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),

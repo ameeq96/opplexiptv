@@ -414,18 +414,4 @@ return [
   'order_updated'   => 'Bestelling succesvol bijgewerkt.',
   'order_deleted'   => 'Bestelling succesvol verwijderd.',
   'screenshot_deleted' => 'Screenshot succesvol verwijderd.',
-
-  'discount_title'   => 'Pak je korting 🎉',
-  'discount_sub'     => 'Draai aan het rad en ontvang: :percents',
-  'spin_now'         => 'Nu draaien',
-  'spin_center'      => 'DRAAI',
-  'off'              => 'korting',
-  'good_luck'        => 'Veel succes!',
-  'congrats'         => 'Gefeliciteerd! Je korting is klaar.',
-  'already_unlocked' => 'Korting al vrijgegeven: :value%',
-  'whatsapp_message' => 'Hallo, ik heb :discount% korting gekregen. Kunnen jullie mijn abonnement activeren?',
-  'whatsapp_btn'     => 'Versturen via WhatsApp (screenshot bijvoegen)',
-  'close'            => 'Sluiten',
-  'require_screenshot' => 'Stuur de screenshot van je draai via WhatsApp; anders wordt de korting niet toegekend.',
-
 ];

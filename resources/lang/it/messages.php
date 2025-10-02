@@ -409,18 +409,4 @@ return [
     'order_updated'   => 'Ordine aggiornato con successo.',
     'order_deleted'   => 'Ordine eliminato con successo.',
     'screenshot_deleted' => 'Screenshot eliminato con successo.',
-
-    'discount_title'   => 'Prendi il tuo sconto 🎉',
-    'discount_sub'     => 'Gira la ruota per ottenere: :percents',
-    'spin_now'         => 'Gira ora',
-    'spin_center'      => 'GIRA',
-    'off'              => 'di sconto',
-    'good_luck'        => 'Buona fortuna!',
-    'congrats'         => 'Congratulazioni! Il tuo sconto è pronto.',
-    'already_unlocked' => 'Sconto già sbloccato: :value%',
-    'whatsapp_message' => 'Ciao, ho ottenuto uno sconto del :discount%. Potete attivare il mio abbonamento?',
-    'whatsapp_btn'     => 'Invia su WhatsApp (allega screenshot)',
-    'close'            => 'Chiudi',
-    'require_screenshot' => 'Invia lo screenshot del tuo spin su WhatsApp; altrimenti lo sconto non verrà applicato.',
-
 ];
