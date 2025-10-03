@@ -1,7 +1,6 @@
 <head>
 
     @php
-
         $route = Request::route() ? Request::route()->getName() : 'home';
         $locale = app()->getLocale();
 
@@ -10,6 +9,12 @@
         $metaTitle = $meta['title'] ?? 'Default Title';
         $metaDescription = $meta['description'] ?? 'Default Description';
         $keywords = $meta['keywords'] ?? '';
+
+        // ---- Facebook Pixel IDs (multi-pixel supported) ----
+        // Single ID:
+        // $fbPixels = ['1467807554407581'];
+        // Ya future-proof: env/config se read karo (agar services.php me mapped ho)
+        $fbPixels = ['1467807554407581'];
     @endphp
 
     <title>{{ $metaTitle }}</title>
@@ -174,7 +179,63 @@
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     </noscript>
 
-    {{-- Google Analytics Load Optimization --}}
+    {{-- Optimized Meta Pixel (duplicate-safe, multi-pixel) --}}
+    @if (!empty($fbPixels))
+        <script>
+            (function(w, d) {
+                w.__fbqScriptLoaded = w.__fbqScriptLoaded || false;
+                w.__fbqPixelIds = w.__fbqPixelIds || [];
+
+                // fbq shim (official pattern)
+                if (!w.fbq) {
+                    var n = w.fbq = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+                    };
+                    if (!w._fbq) w._fbq = n;
+                    n.push = n;
+                    n.loaded = false;
+                    n.version = '2.0';
+                    n.queue = [];
+                }
+
+                // init all pixels once
+                var pixelIds = @json($fbPixels);
+                pixelIds.forEach(function(id) {
+                    if (w.__fbqPixelIds.indexOf(id) === -1) {
+                        w.__fbqPixelIds.push(id);
+                        fbq('init', id);
+                    }
+                });
+
+                // queue PageView immediately (script may load slightly later)
+                fbq('track', 'PageView');
+
+                // small utility to inject script idempotently
+                function ensureFBScript() {
+                    if (w.__fbqScriptLoaded) return;
+                    var t = d.createElement('script');
+                    t.async = true;
+                    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+                    var s = d.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(t, s);
+                    w.__fbqScriptLoaded = true;
+                }
+
+                // make available globally so other loaders can call too
+                w.__ensureFBScript = ensureFBScript;
+            })(window, document);
+        </script>
+
+        {{-- No-JS fallback for each pixel --}}
+        @foreach ($fbPixels as $pId)
+            <noscript>
+                <img height="1" width="1" style="display:none"
+                    src="https://www.facebook.com/tr?id={{ $pId }}&ev=PageView&noscript=1" />
+            </noscript>
+        @endforeach
+    @endif
+
+    {{-- Google Analytics + Clarity + Pixel Load Optimization --}}
     <script>
         // GA4 datalayer
         window.dataLayer = window.dataLayer || [];
@@ -221,39 +282,30 @@
             function loadFBPixel() {
                 if (loaded.pixel) return;
                 loaded.pixel = true;
-                ! function(f, b, e, v, n, t, s) {
-                    if (f.fbq) return;
-                    n = f.fbq = function() {
-                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                    };
-                    if (!f._fbq) f._fbq = n;
-                    n.push = n;
-                    n.loaded = !0;
-                    n.version = '2.0';
-                    n.queue = [];
-                    t = b.createElement(e);
-                    t.async = !0;
-                    t.src = v;
-                    s = b.getElementsByTagName(e)[0];
-                    s.parentNode.insertBefore(t, s);
-                }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-
-                fbq('init', '1467807554407581');
-                fbq('track', 'PageView');
+                // ensure network script (init + PageView already queued above)
+                if (window.__ensureFBScript) {
+                    window.__ensureFBScript();
+                    return;
+                }
+                // fallback if top block removed
+                var t = document.createElement('script');
+                t.async = true;
+                t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(t, s);
             }
 
             function loadAll() {
                 loadGA();
                 loadClarity();
                 loadFBPixel();
-                // remove listeners after first run
                 events.forEach(ev => window.removeEventListener(ev, loadAll, opts));
             }
 
-            // 1) Force-load now (FIX: Event Setup Tool me "No events" issue solve)
+            // 1) Force-load now (Event Setup Tool "no events" ke issues ke liye)
             loadAll();
 
-            // 2) User interaction se bhi trigger (no harm; flags prevent duplicates)
+            // 2) User interaction triggers (idempotent)
             const events = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'];
             const opts = {
                 once: true,
@@ -261,15 +313,9 @@
             };
             events.forEach(ev => window.addEventListener(ev, loadAll, opts));
 
-            // 3) Fallback: 4s baad phir se ensure
+            // 3) Fallback: 4s baad ensure
             setTimeout(loadAll, 4000);
         });
     </script>
-
-    <!-- No-JS fallback for Meta Pixel -->
-    <noscript>
-        <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1467807554407581&ev=PageView&noscript=1" />
-    </noscript>
 
 </head>
