@@ -10,11 +10,18 @@
         $metaDescription = $meta['description'] ?? 'Default Description';
         $keywords = $meta['keywords'] ?? '';
 
-        // ---- Facebook Pixel IDs (multi-pixel supported) ----
-        // Single ID:
-        // $fbPixels = ['1467807554407581'];
-        // Ya future-proof: env/config se read karo (agar services.php me mapped ho)
-        $fbPixels = ['1467807554407581'];
+        // ---- Facebook Pixel IDs (multi-pixel supported)
+        // Prefer config/env; fallback to hardcoded
+        $fbPixels = config('services.facebook.pixel_ids');
+        if (empty($fbPixels) && config('services.facebook.pixel_id')) {
+            $fbPixels = [config('services.facebook.pixel_id')];
+        }
+        if (empty($fbPixels)) {
+            $fbPixels = ['1467807554407581']; // fallback
+        }
+
+        // Currency for events
+        $currency = config('services.app.default_currency', 'USD');
     @endphp
 
     <title>{{ $metaTitle }}</title>
@@ -52,78 +59,22 @@
     <link rel="alternate" hreflang="fr" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" />
     <link rel="alternate" hreflang="it" href="{{ LaravelLocalization::getLocalizedURL('it') }}" />
     <link rel="alternate" hreflang="x-default"
-        href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
+          href="{{ LaravelLocalization::getLocalizedURL(LaravelLocalization::getDefaultLocale()) }}" />
 
     @yield('jsonld')
 
     <style>
-        .hero-section-mobile {
-            padding: 2rem 1rem;
-            background-color: #fff;
-            text-align: center;
-        }
-
-        .hero-section-mobile .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .hero-section-mobile .subtitle {
-            font-weight: 600;
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-section-mobile .heading {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: #111;
-            margin-bottom: 1rem;
-        }
-
-        .hero-section-mobile .description {
-            margin-top: 1rem;
-            color: #333;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .hero-section-mobile .btn-group {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .hero-section-mobile .btn {
-            padding: 0.75rem 1.5rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .hero-section-mobile .btn-primary {
-            background-color: #df0303;
-            color: white;
-        }
-
-        .hero-section-mobile .btn-primary:hover {
-            background-color: #df0303;
-        }
-
-        .hero-section-mobile .btn-outline {
-            border: 2px solid #df0303;
-            color: #df0303;
-            background-color: transparent;
-        }
-
-        .hero-section-mobile .btn-outline:hover {
-            background-color: #f0f8ff;
-        }
+        .hero-section-mobile { padding: 2rem 1rem; background-color: #fff; text-align: center; }
+        .hero-section-mobile .container { max-width: 600px; margin: 0 auto; }
+        .hero-section-mobile .subtitle { font-weight: 600; font-size: 1rem; color: #555; margin-bottom: 0.5rem; }
+        .hero-section-mobile .heading { font-size: 1.4rem; font-weight: bold; color: #111; margin-bottom: 1rem; }
+        .hero-section-mobile .description { margin-top: 1rem; color: #333; font-size: 1rem; line-height: 1.6; }
+        .hero-section-mobile .btn-group { margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .hero-section-mobile .btn { padding: 0.75rem 1.5rem; font-weight: 600; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; display: inline-block; }
+        .hero-section-mobile .btn-primary { background-color: #df0303; color: white; }
+        .hero-section-mobile .btn-primary:hover { background-color: #df0303; }
+        .hero-section-mobile .btn-outline { border: 2px solid #df0303; color: #df0303; background-color: transparent; }
+        .hero-section-mobile .btn-outline:hover { background-color: #f0f8ff; }
     </style>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
@@ -134,11 +85,9 @@
     @endif
 
     <link rel="preload" href="{{ asset('css/style.css') }}" as="style">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
-        crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style" crossorigin>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all">
 
     @php
@@ -179,58 +128,82 @@
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     </noscript>
 
+    {{-- ===== Optimized Meta Pixel (multi-pixel, duplicate-safe) ===== --}}
+    @if (!empty($fbPixels))
+    <script>
+    (function(w,d){
+        w.__fbqScriptLoaded = w.__fbqScriptLoaded || false;
+        w.__fbqPixelIds = w.__fbqPixelIds || [];
+
+        // fbq shim
+        if(!w.fbq){
+            var n=w.fbq=function(){ n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments); };
+            if(!w._fbq) w._fbq=n;
+            n.push=n; n.loaded=false; n.version='2.0'; n.queue=[];
+        }
+
+        // init all pixels once
+        var ids = @json($fbPixels);
+        ids.forEach(function(id){
+            if(w.__fbqPixelIds.indexOf(id)===-1){
+                w.__fbqPixelIds.push(id);
+                fbq('init', id);
+            }
+        });
+
+        // queue PageView immediately
+        fbq('track','PageView');
+
+        // idempotent loader
+        function ensureFBScript(){
+            if(w.__fbqScriptLoaded) return;
+            var t=d.createElement('script'); t.async=true; t.src='https://connect.facebook.net/en_US/fbevents.js';
+            var s=d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(t,s);
+            w.__fbqScriptLoaded=true;
+        }
+        w.__ensureFBScript = ensureFBScript;
+    })(window, document);
+    </script>
+
+    {{-- No-JS fallback for each pixel --}}
+    @foreach ($fbPixels as $pId)
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id={{ $pId }}&ev=PageView&noscript=1" />
+    </noscript>
+    @endforeach
+    @endif
+
     {{-- Google Analytics + Clarity + Pixel Load Optimization --}}
     <script>
         // GA4 datalayer
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag(){ dataLayer.push(arguments); }
 
         document.addEventListener("DOMContentLoaded", function() {
-            const loaded = {
-                ga: false,
-                clarity: false,
-                pixel: false
-            };
+            const loaded = { ga:false, clarity:false, pixel:false };
 
             function loadGA() {
-                if (loaded.ga) return;
-                loaded.ga = true;
+                if (loaded.ga) return; loaded.ga = true;
                 const s = document.createElement("script");
                 s.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
                 s.async = true;
                 (document.head || document.body).appendChild(s);
-                s.onload = function() {
-                    gtag('js', new Date());
-                    gtag('config', 'G-L98JG9ZT7H');
-                };
+                s.onload = function(){ gtag('js', new Date()); gtag('config', 'G-L98JG9ZT7H'); };
             }
 
             function loadClarity() {
-                if (loaded.clarity) return;
-                loaded.clarity = true;
-                (function(c, l, a, r, i, t, y) {
-                    c[a] = c[a] || function() {
-                        (c[a].q = c[a].q || []).push(arguments)
-                    };
-                    t = l.createElement(r);
-                    t.async = 1;
-                    t.src = "https://www.clarity.ms/tag/" + i;
-                    y = l.getElementsByTagName(r)[0];
-                    y.parentNode.insertBefore(t, y);
+                if (loaded.clarity) return; loaded.clarity = true;
+                (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){ (c[a].q=c[a].q||[]).push(arguments) };
+                    t=l.createElement(r); t.async=1; t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
                 })(window, document, "clarity", "script", "sq6nn3dn69");
             }
 
             function loadFBPixel() {
-                if (loaded.pixel) return;
-                loaded.pixel = true;
+                if (loaded.pixel) return; loaded.pixel = true;
                 // ensure network script (init + PageView already queued above)
-                if (window.__ensureFBScript) {
-                    window.__ensureFBScript();
-                    return;
-                }
+                if (window.__ensureFBScript) { window.__ensureFBScript(); return; }
                 // fallback if top block removed
                 var t = document.createElement('script');
                 t.async = true;
@@ -246,63 +219,50 @@
                 events.forEach(ev => window.removeEventListener(ev, loadAll, opts));
             }
 
-            // 1) Force-load now (Event Setup Tool "no events" ke issues ke liye)
+            // 1) Force-load now
             loadAll();
 
             // 2) User interaction triggers (idempotent)
             const events = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'];
-            const opts = {
-                once: true,
-                passive: true
-            };
+            const opts = { once: true, passive: true };
             events.forEach(ev => window.addEventListener(ev, loadAll, opts));
 
-            // 3) Fallback: 4s baad ensure
+            // 3) Fallback: 4s later ensure
             setTimeout(loadAll, 4000);
         });
     </script>
 
+    {{-- WhatsApp Trial tracking: StartTrial (browser) + CAPI (server) with SAME eventID --}}
     <script>
         (function() {
-            // UUID for dedup
             function uuidv4() {
                 if (crypto && crypto.randomUUID) return crypto.randomUUID();
                 return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-                    const r = Math.random() * 16 | 0,
-                        v = c === 'x' ? r : (r & 0x3 | 0x8);
+                    const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
                     return v.toString(16);
                 });
             }
-
             function isWhatsApp(href) {
                 if (!href) return false;
                 href = href.toLowerCase();
-                return href.startsWith('https://wa.me/') ||
-                    href.startsWith('https://api.whatsapp.com/send') ||
-                    href.startsWith('whatsapp://send');
+                return href.startsWith('https://wa.me/')
+                    || href.startsWith('https://api.whatsapp.com/send')
+                    || href.startsWith('whatsapp://send');
             }
-
             function sendCAPI(eventId, dest) {
                 var payload = {
                     event_id: eventId,
                     destination: dest,
                     page: location.href,
-                    _token: "{{ csrf_token() }}" // CSRF for Laravel
+                    _token: "{{ csrf_token() }}"
                 };
-                // Prefer sendBeacon (non-blocking)
                 if (navigator.sendBeacon) {
-                    const blob = new Blob([JSON.stringify(payload)], {
-                        type: 'application/json'
-                    });
+                    const blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
                     navigator.sendBeacon("{{ route('track.whatsapp.trial') }}", blob);
                 } else {
-                    // Fallback
                     fetch("{{ route('track.whatsapp.trial') }}", {
                         method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-TOKEN': "{{ csrf_token() }}"
-                        },
+                        headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': "{{ csrf_token() }}" },
                         body: JSON.stringify(payload),
                         keepalive: true
                     });
@@ -313,14 +273,12 @@
                 const el = e.target.closest('a[data-trial], button[data-trial]');
                 if (!el) return;
 
-                // WhatsApp destination
                 const href = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('data-wa-href');
                 if (!href || !isWhatsApp(href)) return;
 
-                // Generate eventID once per click
                 const eventId = uuidv4();
 
-                // 1) Browser pixel
+                // 1) Browser Pixel
                 try {
                     fbq('track', 'StartTrial', {
                         value: 0,
@@ -328,27 +286,19 @@
                         content_name: 'WhatsApp',
                         contact_channel: 'whatsapp',
                         destination: href
-                    }, {
-                        eventID: eventId
-                    });
-                } catch (e) {
-                    /* ignore */ }
+                    }, { eventID: eventId });
+                } catch (e) {}
 
-                // 2) Server-side CAPI (dedup with same eventID)
+                // 2) Server-side CAPI (dedup)
                 sendCAPI(eventId, href);
 
-                // For <button>, open link manually (anchor natural behavior rehne do)
+                // For <button>, open WA manually
                 if (el.tagName === 'BUTTON') {
                     e.preventDefault();
-                    setTimeout(function() {
-                        window.open(href, '_blank', 'noopener');
-                    }, 50);
+                    setTimeout(function(){ window.open(href, '_blank', 'noopener'); }, 50);
                 }
-            }, {
-                passive: true
-            });
+            }, { passive: true });
         })();
     </script>
-
 
 </head>
