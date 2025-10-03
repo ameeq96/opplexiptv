@@ -14,8 +14,8 @@
                     {{ __('messages.see_pricing') }} <span>➤</span>
                 </a>
 
-                <a href="{{ $waTrial }}" target="_blank" rel="noopener" class="btn btn-outline" data-trial
-                    data-channel="whatsapp">
+                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
+                    class="btn btn-outline" target="_blank" rel="noopener" data-trial>
                     {{ __('messages.start_trial') }} <span>↗</span>
                 </a>
             </div>

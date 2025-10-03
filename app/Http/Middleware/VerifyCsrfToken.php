@@ -13,6 +13,5 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         'track/whatsapp-trial',
-        '/track/whatsapp-trial',
     ];
 }

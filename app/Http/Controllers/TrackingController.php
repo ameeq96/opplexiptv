@@ -9,9 +9,12 @@ class TrackingController extends Controller
 {
     public function whatsappTrial(Request $request, FacebookCapiService $capi)
     {
-        $eventId = $request->input('event_id');   // client-generated UUID
-        $dest    = $request->input('destination'); // wa.me link
-        $page    = $request->input('page');        // current page URL
+        // Quick debug (enable temporarily):
+        \Log::info('WA trial hit', ['all' => $request->all(), 'cookies' => $request->cookies->all()]);
+
+        $eventId = $request->input('event_id');
+        $dest    = $request->input('destination');
+        $page    = $request->input('page');
 
         $payload = [
             'event_time'       => time(),
@@ -23,7 +26,7 @@ class TrackingController extends Controller
                 'client_user_agent' => session('fb.ua') ?: $request->userAgent(),
             ],
             'custom_data' => [
-                'currency' => config('services.app.default_currency','USD'),
+                'currency' => config('services.app.default_currency', 'USD'),
                 'value'    => 0,
                 'content_name'    => 'WhatsApp',
                 'contact_channel' => 'whatsapp',

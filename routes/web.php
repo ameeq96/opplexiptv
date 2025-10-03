@@ -103,4 +103,5 @@ Route::group(
 );
 
 Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'])
-     ->name('track.whatsapp.trial');
+    ->name('track.whatsapp.trial')
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);

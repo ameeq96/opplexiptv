@@ -16,7 +16,7 @@
                             <a href="https://wa.me/16393903194" rel="noopener"
                                 aria-label="Start your IPTV free trial now">
                                 <button class="theme-btn btn-style-five" type="button" data-trial
-                                    data-channel="whatsapp" data-wa-href="{{ $waTrial }}">
+                                    data-wa-href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}">
                                     <span class="txt">
                                         {{ __('messages.trial_button') }}
                                         <i class="lnr lnr-arrow-right {{ $isRtl ? 'rtl-rotate' : '' }}"
