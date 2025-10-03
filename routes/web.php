@@ -11,6 +11,7 @@ use App\Http\Controllers\{
     OrderController,
     PanelOrderController,
     PurchasingController,
+    TrackingController,
     UserClientController,
 };
 
