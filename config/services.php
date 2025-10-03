@@ -31,4 +31,17 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'facebook' => [
+        'pixel_id'   => env('FACEBOOK_PIXEL_ID'),
+        'pixel_ids'  => array_values(array_filter(array_map('trim', explode(',', env('FACEBOOK_PIXEL_IDS', ''))))),
+        'capi_token' => env('FACEBOOK_CAPI_TOKEN'),
+        'test_code'  => env('FB_TEST_EVENT_CODE'),
+    ],
+    'app' => [
+        'default_currency' => env('DEFAULT_CURRENCY', 'USD'),
+    ],
+    'whatsapp' => [
+        'number' => env('WHATSAPP_NUMBER'),
+    ],
+
 ];

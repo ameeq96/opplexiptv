@@ -1,6 +1,10 @@
 @extends('layouts.default')
 @section('title', __('messages.site_title'))
 @section('content')
+@php
+  $waTrial = "https://wa.me/16393903194?text=" . urlencode(__('messages.whatsapp_trial'));
+  $currency = config('services.app.default_currency', 'USD');
+@endphp
 
     @include('includes._slider')
 

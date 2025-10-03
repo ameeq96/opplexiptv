@@ -40,6 +40,7 @@ class Kernel extends HttpKernel
             \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
             \App\Http\Middleware\DetectLocaleByIP::class,
             \App\Http\Middleware\RedirectToNonWww::class,
+            \App\Http\Middleware\CaptureFacebookAttribution::class,
         ],
 
         'api' => [

@@ -179,62 +179,6 @@
         <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     </noscript>
 
-    {{-- Optimized Meta Pixel (duplicate-safe, multi-pixel) --}}
-    @if (!empty($fbPixels))
-        <script>
-            (function(w, d) {
-                w.__fbqScriptLoaded = w.__fbqScriptLoaded || false;
-                w.__fbqPixelIds = w.__fbqPixelIds || [];
-
-                // fbq shim (official pattern)
-                if (!w.fbq) {
-                    var n = w.fbq = function() {
-                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-                    };
-                    if (!w._fbq) w._fbq = n;
-                    n.push = n;
-                    n.loaded = false;
-                    n.version = '2.0';
-                    n.queue = [];
-                }
-
-                // init all pixels once
-                var pixelIds = @json($fbPixels);
-                pixelIds.forEach(function(id) {
-                    if (w.__fbqPixelIds.indexOf(id) === -1) {
-                        w.__fbqPixelIds.push(id);
-                        fbq('init', id);
-                    }
-                });
-
-                // queue PageView immediately (script may load slightly later)
-                fbq('track', 'PageView');
-
-                // small utility to inject script idempotently
-                function ensureFBScript() {
-                    if (w.__fbqScriptLoaded) return;
-                    var t = d.createElement('script');
-                    t.async = true;
-                    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
-                    var s = d.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(t, s);
-                    w.__fbqScriptLoaded = true;
-                }
-
-                // make available globally so other loaders can call too
-                w.__ensureFBScript = ensureFBScript;
-            })(window, document);
-        </script>
-
-        {{-- No-JS fallback for each pixel --}}
-        @foreach ($fbPixels as $pId)
-            <noscript>
-                <img height="1" width="1" style="display:none"
-                    src="https://www.facebook.com/tr?id={{ $pId }}&ev=PageView&noscript=1" />
-            </noscript>
-        @endforeach
-    @endif
-
     {{-- Google Analytics + Clarity + Pixel Load Optimization --}}
     <script>
         // GA4 datalayer
@@ -317,5 +261,94 @@
             setTimeout(loadAll, 4000);
         });
     </script>
+
+    <script>
+        (function() {
+            // UUID for dedup
+            function uuidv4() {
+                if (crypto && crypto.randomUUID) return crypto.randomUUID();
+                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    const r = Math.random() * 16 | 0,
+                        v = c === 'x' ? r : (r & 0x3 | 0x8);
+                    return v.toString(16);
+                });
+            }
+
+            function isWhatsApp(href) {
+                if (!href) return false;
+                href = href.toLowerCase();
+                return href.startsWith('https://wa.me/') ||
+                    href.startsWith('https://api.whatsapp.com/send') ||
+                    href.startsWith('whatsapp://send');
+            }
+
+            function sendCAPI(eventId, dest) {
+                var payload = {
+                    event_id: eventId,
+                    destination: dest,
+                    page: location.href,
+                    _token: "{{ csrf_token() }}" // CSRF for Laravel
+                };
+                // Prefer sendBeacon (non-blocking)
+                if (navigator.sendBeacon) {
+                    const blob = new Blob([JSON.stringify(payload)], {
+                        type: 'application/json'
+                    });
+                    navigator.sendBeacon("{{ route('track.whatsapp.trial') }}", blob);
+                } else {
+                    // Fallback
+                    fetch("{{ route('track.whatsapp.trial') }}", {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': "{{ csrf_token() }}"
+                        },
+                        body: JSON.stringify(payload),
+                        keepalive: true
+                    });
+                }
+            }
+
+            document.addEventListener('click', function(e) {
+                const el = e.target.closest('a[data-trial], button[data-trial]');
+                if (!el) return;
+
+                // WhatsApp destination
+                const href = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('data-wa-href');
+                if (!href || !isWhatsApp(href)) return;
+
+                // Generate eventID once per click
+                const eventId = uuidv4();
+
+                // 1) Browser pixel
+                try {
+                    fbq('track', 'StartTrial', {
+                        value: 0,
+                        currency: "{{ $currency }}",
+                        content_name: 'WhatsApp',
+                        contact_channel: 'whatsapp',
+                        destination: href
+                    }, {
+                        eventID: eventId
+                    });
+                } catch (e) {
+                    /* ignore */ }
+
+                // 2) Server-side CAPI (dedup with same eventID)
+                sendCAPI(eventId, href);
+
+                // For <button>, open link manually (anchor natural behavior rehne do)
+                if (el.tagName === 'BUTTON') {
+                    e.preventDefault();
+                    setTimeout(function() {
+                        window.open(href, '_blank', 'noopener');
+                    }, 50);
+                }
+            }, {
+                passive: true
+            });
+        })();
+    </script>
+
 
 </head>

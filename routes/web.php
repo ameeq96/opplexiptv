@@ -100,3 +100,6 @@ Route::group(
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
     }
 );
+
+Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'])
+     ->name('track.whatsapp.trial');
