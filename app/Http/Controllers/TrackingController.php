@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TrialClick;
 use Illuminate\Http\Request;
 use App\Services\FacebookCapiService;
 
@@ -9,21 +10,48 @@ class TrackingController extends Controller
 {
     public function whatsappTrial(Request $request, FacebookCapiService $capi)
     {
-        // Quick debug (enable temporarily):
-        \Log::info('WA trial hit', ['all' => $request->all(), 'cookies' => $request->cookies->all()]);
-
         $eventId = $request->input('event_id');
         $dest    = $request->input('destination');
         $page    = $request->input('page');
 
+        $fbp = $request->input('fbp') ?: $request->cookie('_fbp');
+        $fbc = $request->input('fbc') ?: $request->cookie('_fbc');
+
+        $utm = ['utm_source' => null, 'utm_medium' => null, 'utm_campaign' => null, 'utm_term' => null, 'utm_content' => null];
+        if ($page) {
+            $qs = parse_url($page, PHP_URL_QUERY);
+            if ($qs) {
+                parse_str($qs, $out);
+                foreach ($utm as $k => $v) {
+                    if (!empty($out[$k])) $utm[$k] = $out[$k];
+                }
+            }
+        }
+
+        TrialClick::create([
+            'event_id'     => $eventId,
+            'destination'  => $dest,
+            'page'         => $page,
+            'fbp'          => $fbp,
+            'fbc'          => $fbc,
+            'ip'           => $request->ip(),
+            'user_agent'   => $request->userAgent(),
+            'utm_source'   => $utm['utm_source'],
+            'utm_medium'   => $utm['utm_medium'],
+            'utm_campaign' => $utm['utm_campaign'],
+            'utm_term'     => $utm['utm_term'],
+            'utm_content'  => $utm['utm_content'],
+            'referrer'     => $request->headers->get('referer'),
+        ]);
+
         $payload = [
             'event_time'       => time(),
-            'event_source_url' => $page ?: session('fb.last_touch_url') ?: url('/'),
+            'event_source_url' => $page ?: url('/'),
             'user_data' => [
-                'fbp' => request()->cookie('_fbp') ? [request()->cookie('_fbp')] : null,
-                'fbc' => request()->cookie('_fbc') ? [request()->cookie('_fbc')] : null,
-                'client_ip_address' => session('fb.ip') ?: $request->ip(),
-                'client_user_agent' => session('fb.ua') ?: $request->userAgent(),
+                'fbp' => $fbp ?: null,
+                'fbc' => $fbc ?: null,
+                'client_ip_address' => $request->ip(),
+                'client_user_agent' => $request->userAgent(),
             ],
             'custom_data' => [
                 'currency' => config('services.app.default_currency', 'USD'),
