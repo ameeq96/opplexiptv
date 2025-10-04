@@ -124,6 +124,8 @@
         <a href="{{ route('admin.orders.index') }}">📦 Package Orders</a>
         <a href="{{ route('admin.panel-orders.index') }}">🖥️ Panel Orders</a>
         <a href="{{ route('admin.purchasing.index') }}">💳 Purchasing</a>
+        <a href="{{ route('admin.trial_clicks.index') }}">📱 WhatsApp Trials</a>
+
 
         <form method="POST" action="{{ route('admin.logout') }}">
             @csrf

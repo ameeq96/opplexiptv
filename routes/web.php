@@ -14,6 +14,7 @@ use App\Http\Controllers\{
     TrackingController,
     UserClientController,
 };
+use App\Http\Controllers\Admin\TrialClickController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,6 +67,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::post('orders/{order}/mark-messaged', [OrderController::class, 'markOneMessaged'])
             ->name('orders.markOneMessaged');
+
+        Route::get('/trial-clicks', [TrialClickController::class, 'index'])
+            ->name('trial_clicks.index');
+
+        Route::get('/trial-clicks/export', [TrialClickController::class, 'export'])
+            ->name('trial_clicks.export');
     });
 });
 
