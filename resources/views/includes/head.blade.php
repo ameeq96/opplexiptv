@@ -11,6 +11,7 @@
         $keywords = $meta['keywords'] ?? '';
 
         // ---- Facebook Pixel IDs (multi-pixel supported)
+        // Prefer config/env; fallback to hardcoded
         $fbPixels = config('services.facebook.pixel_ids');
         if (empty($fbPixels) && config('services.facebook.pixel_id')) {
             $fbPixels = [config('services.facebook.pixel_id')];
@@ -21,9 +22,6 @@
 
         // Currency for events
         $currency = config('services.app.default_currency', 'USD');
-
-        // ---- Google Tag Manager ID (from .env -> GTM_CONTAINER_ID=GTM-XXXXXXX)
-        $gtmId = config('services.google.tag_manager_id'); // set in config/services.php
     @endphp
 
     <title>{{ $metaTitle }}</title>
@@ -39,19 +37,6 @@
     <script>
         var isRtl = {{ $isRtl ? 'true' : 'false' }};
     </script>
-
-    {{-- ===== Google Tag Manager (HEAD) ===== --}}
-    @if (!empty($gtmId))
-    <!-- Google Tag Manager -->
-    <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','{{ $gtmId }}');
-    </script>
-    <!-- End Google Tag Manager -->
-    @endif
-    {{-- ===== /GTM ===== --}}
 
     {{-- OpenGraph / Facebook --}}
     <meta property="og:title" content="{{ $metaTitle }}">
@@ -69,7 +54,7 @@
     <meta name="twitter:description" content="{{ $metaDescription }}">
     <meta name="twitter:image" content="{{ asset('images/background/7.webp') }}">
 
-    {{-- Multilingual hreflang --}}
+    {{-- Multilingual hreflang (important for Europe targeting) --}}
     <link rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en') }}" />
     <link rel="alternate" hreflang="fr" href="{{ LaravelLocalization::getLocalizedURL('fr') }}" />
     <link rel="alternate" hreflang="it" href="{{ LaravelLocalization::getLocalizedURL('it') }}" />
@@ -107,9 +92,19 @@
 
     @php
         $nonCriticalStyles = [
-            'global.css','header.css','footer.css','font-awesome.css','flaticon.css','animate.css',
-            'owl.css','swiper.css','linearicons.css','jquery-ui.css','custom-animate.css',
-            'jquery.fancybox.min.css','jquery.mCustomScrollbar.min.css',
+            'global.css',
+            'header.css',
+            'footer.css',
+            'font-awesome.css',
+            'flaticon.css',
+            'animate.css',
+            'owl.css',
+            'swiper.css',
+            'linearicons.css',
+            'jquery-ui.css',
+            'custom-animate.css',
+            'jquery.fancybox.min.css',
+            'jquery.mCustomScrollbar.min.css',
         ];
     @endphp
 
@@ -140,11 +135,14 @@
         w.__fbqScriptLoaded = w.__fbqScriptLoaded || false;
         w.__fbqPixelIds = w.__fbqPixelIds || [];
 
+        // fbq shim
         if(!w.fbq){
             var n=w.fbq=function(){ n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments); };
             if(!w._fbq) w._fbq=n;
             n.push=n; n.loaded=false; n.version='2.0'; n.queue=[];
         }
+
+        // init all pixels once
         var ids = @json($fbPixels);
         ids.forEach(function(id){
             if(w.__fbqPixelIds.indexOf(id)===-1){
@@ -152,8 +150,11 @@
                 fbq('init', id);
             }
         });
+
+        // queue PageView immediately
         fbq('track','PageView');
 
+        // idempotent loader
         function ensureFBScript(){
             if(w.__fbqScriptLoaded) return;
             var t=d.createElement('script'); t.async=true; t.src='https://connect.facebook.net/en_US/fbevents.js';
@@ -175,25 +176,20 @@
 
     {{-- Google Analytics + Clarity + Pixel Load Optimization --}}
     <script>
-        // shared dataLayer for GTM/GA
+        // GA4 datalayer
         window.dataLayer = window.dataLayer || [];
         function gtag(){ dataLayer.push(arguments); }
 
         document.addEventListener("DOMContentLoaded", function() {
             const loaded = { ga:false, clarity:false, pixel:false };
-            const HAS_GTM = {{ !empty($gtmId) ? 'true' : 'false' }};
 
             function loadGA() {
-                if (HAS_GTM) return; // If GTM present, don't load gtag.js directly (avoid duplicates)
                 if (loaded.ga) return; loaded.ga = true;
                 const s = document.createElement("script");
                 s.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
                 s.async = true;
                 (document.head || document.body).appendChild(s);
-                s.onload = function(){
-                    gtag('js', new Date());
-                    gtag('config', 'G-L98JG9ZT7H');
-                };
+                s.onload = function(){ gtag('js', new Date()); gtag('config', 'G-L98JG9ZT7H'); };
             }
 
             function loadClarity() {
@@ -206,7 +202,9 @@
 
             function loadFBPixel() {
                 if (loaded.pixel) return; loaded.pixel = true;
+                // ensure network script (init + PageView already queued above)
                 if (window.__ensureFBScript) { window.__ensureFBScript(); return; }
+                // fallback if top block removed
                 var t = document.createElement('script');
                 t.async = true;
                 t.src = 'https://connect.facebook.net/en_US/fbevents.js';
@@ -215,7 +213,7 @@
             }
 
             function loadAll() {
-                loadGA();        // will no-op if HAS_GTM=true
+                loadGA();
                 loadClarity();
                 loadFBPixel();
                 events.forEach(ev => window.removeEventListener(ev, loadAll, opts));
@@ -225,8 +223,8 @@
             loadAll();
 
             // 2) User interaction triggers (idempotent)
-            const events = ['scroll','mousemove','touchstart','pointerdown','keydown'];
-            const opts = { once:true, passive:true };
+            const events = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown'];
+            const opts = { once: true, passive: true };
             events.forEach(ev => window.addEventListener(ev, loadAll, opts));
 
             // 3) Fallback: 4s later ensure
@@ -234,7 +232,7 @@
         });
     </script>
 
-    {{-- WhatsApp Trial tracking: StartTrial (browser) + CAPI (server) + dataLayer push for GTM --}}
+    {{-- WhatsApp Trial tracking: StartTrial (browser) + CAPI (server) with SAME eventID --}}
     <script>
         (function() {
             function uuidv4() {
@@ -279,19 +277,6 @@
                 if (!href || !isWhatsApp(href)) return;
 
                 const eventId = uuidv4();
-
-                // 0) Push to GTM dataLayer (so you can build tags/triggers on it)
-                try {
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({
-                        event: 'start_trial',
-                        method: 'whatsapp',
-                        destination: href,
-                        value: 0,
-                        currency: "{{ $currency }}",
-                        event_id: eventId
-                    });
-                } catch (e) {}
 
                 // 1) Browser Pixel
                 try {
