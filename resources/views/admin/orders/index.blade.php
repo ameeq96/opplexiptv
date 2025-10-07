@@ -339,6 +339,54 @@
         const counterEl = document.getElementById('selectedCounter');
         const clearBtn = document.getElementById('clearSelection');
 
+        document.querySelectorAll('.wa-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // default navigation rok do; hum khud handle karenge
+                e.preventDefault();
+
+                const id = this.dataset.id;
+                const phone = this.dataset.phone;
+                const text = this.dataset.text; // already URL-encoded from Blade
+
+                if (!phone) return;
+
+                const ua = navigator.userAgent || '';
+
+                // ANDROID → WhatsApp Business package
+                if (/Android/i.test(ua)) {
+                    const intentUrl =
+                        `intent://send/?phone=${phone}&text=${text}` +
+                        `#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end`;
+                    window.location.href = intentUrl;
+
+                    // iOS → try Business scheme, then fallback to normal WA
+                } else if (/iPhone|iPad|iPod/i.test(ua)) {
+                    // Business first
+                    window.location.href =
+                        `whatsapp-business://send?phone=${phone}&text=${text}`;
+                    // quick fallback if Business scheme unavailable
+                    setTimeout(() => {
+                        window.location.href =
+                            `whatsapp://send?phone=${phone}&text=${text}`;
+                    }, 800);
+
+                    // DESKTOP → Web WhatsApp
+                } else {
+                    window.open(`https://web.whatsapp.com/send?phone=${phone}&text=${text}`,
+                        '_blank');
+                }
+
+                // mark as messaged (existing)
+                fetch(`{{ url('orders') }}/${id}/mark-messaged`, {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Accept': 'application/json'
+                    }
+                }).catch(() => {});
+            });
+        });
+
         function getRowCheckboxes() {
             return Array.from(document.querySelectorAll('input[name="order_ids[]"]'));
         }
