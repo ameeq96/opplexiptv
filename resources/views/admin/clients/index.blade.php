@@ -86,9 +86,48 @@
                             <td>{{ $client->phone }}</td>
                             <td>{{ $client->country ?? 'N/A' }}</td>
                             <td>
-                                <a href="{{ route('admin.clients.edit', $client) }}"
-                                    class="btn btn-sm btn-outline-primary me-1">Edit</a>
+                                @php
+                                    $phone = preg_replace('/\D+/', '', $client->phone ?? '');
 
+                                    $packagesUrl = $packagesUrl ?? null;
+
+                                    $payOrReply = $packagesUrl
+                                        ? "View & buy: {$packagesUrl}"
+                                        : "Reply *YES* and I'll recommend the best package for you";
+
+                                    $lines = array_filter([
+                                        "👋 *{$client->name}*, looking for premium IPTV?",
+                                        '✅ Live TV + VOD | HD/4K ready | Smooth streaming',
+                                        '📱 Works on all devices | 24/7 support',
+                                        '',
+                                        "🎉 Today's deal: Free setup + instant activation",
+                                        "👉 {$payOrReply}",
+                                    ]);
+
+                                    $message = rawurlencode(implode("\n", $lines));
+
+                                    $waUniversal = $phone ? "https://wa.me/{$phone}?text={$message}" : null;
+                                    $waWeb = $phone
+                                        ? "https://web.whatsapp.com/send?phone={$phone}&text={$message}"
+                                        : null;
+                                    $waBusinessAndroid = $phone
+                                        ? "intent://send/?phone={$phone}&text={$message}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end"
+                                        : null;
+                                @endphp
+
+
+                                <div class="d-inline-flex align-items-center gap-1">
+                                    @if ($waUniversal)
+                                        <a href="{{ $waUniversal }}" target="_blank" rel="noopener"
+                                            class="btn btn-sm btn-outline-success wa-btn"
+                                            data-android="{{ $waBusinessAndroid }}" data-web="{{ $waWeb }}">
+                                            WhatsApp
+                                        </a>
+                                    @endif
+
+                                    <a href="{{ route('admin.clients.edit', $client) }}"
+                                        class="btn btn-sm btn-outline-primary">Edit</a>
+                                </div>
                             </td>
                         </tr>
                     @empty
@@ -111,62 +150,80 @@
 @endsection
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const form       = document.getElementById('bulkDeleteForm');
-    const checkAll   = document.getElementById('checkAll');
-    const counterEl  = document.getElementById('selectedCounterClients');
-    const clearBtn   = document.getElementById('clearSelectionClients');
-    const deleteBtn  = form?.querySelector('button[type="submit"].btn-danger');
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('bulkDeleteForm');
+        const checkAll = document.getElementById('checkAll');
+        const counterEl = document.getElementById('selectedCounterClients');
+        const clearBtn = document.getElementById('clearSelectionClients');
+        const deleteBtn = form?.querySelector('button[type="submit"].btn-danger');
 
-    function rowBoxes() {
-        return Array.from(document.querySelectorAll('input[name="client_ids[]"]'));
-    }
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.wa-btn');
+            if (!btn) return;
 
-    function updateSelectedState() {
-        const boxes   = rowBoxes();
-        const total   = boxes.length;
-        const checked = boxes.filter(cb => cb.checked).length;
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            const isAndroid = /Android/i.test(ua);
+            const isDesktop = !/Android|iPhone|iPad|iPod/i.test(ua);
 
-        if (counterEl) counterEl.textContent = `${checked} Selected`;
-        if (deleteBtn) deleteBtn.disabled = (checked === 0);
+            if (isAndroid && btn.dataset.android) {
+                btn.href = btn.dataset.android;
+                btn.removeAttribute('target');
+            } else if (isDesktop && btn.dataset.web) {
+                btn.href = btn.dataset.web;
+            }
+        }, {
+            capture: true
+        });
 
-        if (checkAll) {
-            if (checked === 0) {
-                checkAll.indeterminate = false;
-                checkAll.checked = false;
-            } else if (checked === total) {
-                checkAll.indeterminate = false;
-                checkAll.checked = true;
-            } else {
-                checkAll.indeterminate = true;
+        function rowBoxes() {
+            return Array.from(document.querySelectorAll('input[name="client_ids[]"]'));
+        }
+
+        function updateSelectedState() {
+            const boxes = rowBoxes();
+            const total = boxes.length;
+            const checked = boxes.filter(cb => cb.checked).length;
+
+            if (counterEl) counterEl.textContent = `${checked} Selected`;
+            if (deleteBtn) deleteBtn.disabled = (checked === 0);
+
+            if (checkAll) {
+                if (checked === 0) {
+                    checkAll.indeterminate = false;
+                    checkAll.checked = false;
+                } else if (checked === total) {
+                    checkAll.indeterminate = false;
+                    checkAll.checked = true;
+                } else {
+                    checkAll.indeterminate = true;
+                }
             }
         }
-    }
 
-    // Header Select All
-    checkAll?.addEventListener('change', function () {
-        rowBoxes().forEach(cb => cb.checked = this.checked);
-        updateSelectedState();
-    });
-
-    // Row checkbox changes
-    document.addEventListener('change', function (e) {
-        if (e.target && e.target.matches('input[name="client_ids[]"]')) {
+        // Header Select All
+        checkAll?.addEventListener('change', function() {
+            rowBoxes().forEach(cb => cb.checked = this.checked);
             updateSelectedState();
-        }
-    });
+        });
 
-    // Clear selection
-    clearBtn?.addEventListener('click', function () {
-        rowBoxes().forEach(cb => cb.checked = false);
-        if (checkAll) {
-            checkAll.indeterminate = false;
-            checkAll.checked = false;
-        }
+        // Row checkbox changes
+        document.addEventListener('change', function(e) {
+            if (e.target && e.target.matches('input[name="client_ids[]"]')) {
+                updateSelectedState();
+            }
+        });
+
+        // Clear selection
+        clearBtn?.addEventListener('click', function() {
+            rowBoxes().forEach(cb => cb.checked = false);
+            if (checkAll) {
+                checkAll.indeterminate = false;
+                checkAll.checked = false;
+            }
+            updateSelectedState();
+        });
+
+        // On first render
         updateSelectedState();
     });
-
-    // On first render
-    updateSelectedState();
-});
 </script>

@@ -210,26 +210,31 @@
                             </td>
                             <td>
                                 @php
-                                    // Phone number se sirf digits rakho
-                                    $phone = preg_replace('/[^0-9]/', '', $order->user->phone ?? '');
+                                    // --- CHANGES: WhatsApp Business aware links ---
+                                    $phone = preg_replace('/\D+/', '', $order->user->phone ?? '');
 
-                                    // Message encode karo
-                                    $message = urlencode(
+                                    // NOTE: Phone ko international format me rakhna best (e.g., 447...).
+                                    // $message me rawurlencode use kiya hai
+                                    $message = rawurlencode(
                                         "Hello {$order->user->name}, your IPTV reseller order for package '{$order->package}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );
 
-                                    // WhatsApp Business URL
-                                    $waUrl = $phone
-                                        ? "https://api.whatsapp.com/send?phone={$phone}&text={$message}"
-                                        : null;
+                                    $waUniversal = $phone ? "https://wa.me/{$phone}?text={$message}" : null; // iOS/others
+                                    $waWeb = $phone
+                                        ? "https://web.whatsapp.com/send?phone={$phone}&text={$message}"
+                                        : null; // Desktop
+                                    $waBusinessAndroid = $phone
+                                        ? "intent://send/?phone={$phone}&text={$message}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end"
+                                        : null; // Android Business
                                 @endphp
 
                                 <div class="d-flex justify-content-center gap-1">
-                                    @if ($waUrl)
-                                        <a href="{{ $waUrl }}" target="_blank"
-                                            class="btn btn-sm btn-outline-success">
+                                    @if ($waUniversal)
+                                        <a href="{{ $waUniversal }}" target="_blank" rel="noopener"
+                                            class="btn btn-sm btn-outline-success wa-btn"
+                                            data-android="{{ $waBusinessAndroid }}" data-web="{{ $waWeb }}">
                                             WhatsApp
                                         </a>
                                     @endif
@@ -296,6 +301,28 @@
         const checkAll = document.getElementById('checkAll');
         const counter = document.getElementById('selectedCounterReseller');
         const clearBtn = document.getElementById('clearSelectionReseller');
+
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.wa-btn');
+            if (!btn) return;
+
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            const isAndroid = /Android/i.test(ua);
+            const isDesktop = !/Android|iPhone|iPad|iPod/i.test(ua);
+
+            if (isAndroid && btn.dataset.android) {
+                // Force WhatsApp Business app
+                btn.href = btn.dataset.android;
+                btn.removeAttribute('target'); // intent links ko _self best
+            } else if (isDesktop && btn.dataset.web) {
+                // Desktop par WhatsApp Web
+                btn.href = btn.dataset.web;
+                // target _blank theek hai (already set)
+            }
+            // iOS/others -> wa.me default (no change)
+        }, {
+            capture: true
+        });
 
         function rowBoxes() {
             return Array.from(document.querySelectorAll('input[name="order_ids[]"]'));
