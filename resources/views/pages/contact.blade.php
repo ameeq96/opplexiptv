@@ -107,11 +107,13 @@
 
                                         {{-- Phone --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input type="text" name="phone" value="{{ old('phone') }}"
-                                                placeholder="{{ __('messages.contact.form.phone') }}" required
-                                                inputmode="tel" @class([$isRtl ? 'text-end' : ''])
+                                            <input type="tel" name="phone" id="phone" value="{{ old('phone') }}"
+                                                placeholder="{{ __('messages.contact.form.phone') }}"
+                                                class="@if ($isRtl) text-end @endif form-control"
+                                                inputmode="tel" dir="ltr"
                                                 aria-invalid="@error('phone') true @else false @enderror"
-                                                aria-describedby="@error('phone') phone-error @enderror">
+                                                aria-describedby="@error('phone') phone-error @enderror" required>
+                                            <small id="phone-client-error" class="text-danger d-none"></small>
                                             @error('phone')
                                                 <small id="phone-error" class="text-danger d-block">{{ $message }}</small>
                                             @enderror

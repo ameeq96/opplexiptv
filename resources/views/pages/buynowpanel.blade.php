@@ -4,16 +4,8 @@
 
 @section('content')
     <!-- Page Title -->
-    <x-page-title
-        :title="__('messages.reseller.heading')"
-        :breadcrumbs="[
-            ['url' => '/', 'label' => __('messages.nav.home')],
-            ['label' => __('messages.buy_now_heading')],
-        ]"
-        background="images/background/10.webp"
-        :rtl="$isRtl"
-        aria-label="Reseller Buy Panel Page"
-    />
+    <x-page-title :title="__('messages.reseller.heading')" :breadcrumbs="[['url' => '/', 'label' => __('messages.nav.home')], ['label' => __('messages.buy_now_heading')]]" background="images/background/10.webp" :rtl="$isRtl"
+        aria-label="Reseller Buy Panel Page" />
     <!-- End Page Title -->
 
     <!-- Contact Page Section -->
@@ -25,7 +17,8 @@
 
                         <div class="contact-form-box" aria-labelledby="reseller-form-title">
                             <div class="{{ $containerClass }}">
-                                <h3 id="reseller-form-title">{{ __('messages.buy_now_heading', [], false) ?: 'Buy Panel Now' }}</h3>
+                                <h3 id="reseller-form-title">
+                                    {{ __('messages.buy_now_heading', [], false) ?: 'Buy Panel Now' }}</h3>
                             </div>
 
                             <div class="contact-form">
@@ -35,31 +28,22 @@
 
                                         {{-- Name --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input
-                                                type="text"
-                                                name="username"
-                                                value="{{ old('username') }}"
-                                                placeholder="{{ __('messages.name') }}"
-                                                required
+                                            <input type="text" name="username" value="{{ old('username') }}"
+                                                placeholder="{{ __('messages.name') }}" required
                                                 aria-invalid="@error('username') true @else false @enderror"
-                                                aria-describedby="@error('username') username-error @enderror"
-                                            >
+                                                aria-describedby="@error('username') username-error @enderror">
                                             @error('username')
-                                                <small id="username-error" class="text-danger d-block">{{ $message }}</small>
+                                                <small id="username-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
                                             @enderror
                                         </div>
 
                                         {{-- Email --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                value="{{ old('email') }}"
-                                                placeholder="{{ __('messages.form.email') ?: 'Email Address' }}"
-                                                required
+                                            <input type="email" name="email" value="{{ old('email') }}"
+                                                placeholder="{{ __('messages.form.email') ?: 'Email Address' }}" required
                                                 aria-invalid="@error('email') true @else false @enderror"
-                                                aria-describedby="@error('email') email-error @enderror"
-                                            >
+                                                aria-describedby="@error('email') email-error @enderror">
                                             @error('email')
                                                 <small id="email-error" class="text-danger d-block">{{ $message }}</small>
                                             @enderror
@@ -67,12 +51,9 @@
 
                                         {{-- Package --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <select
-                                                name="package"
-                                                required
+                                            <select name="package" required
                                                 aria-invalid="@error('package') true @else false @enderror"
-                                                aria-describedby="@error('package') package-error @enderror"
-                                            >
+                                                aria-describedby="@error('package') package-error @enderror">
                                                 <option value="" disabled @selected(old('package') === null)>
                                                     {{ __('messages.select_panel') }}
                                                 </option>
@@ -83,22 +64,20 @@
                                                 @endforeach
                                             </select>
                                             @error('package')
-                                                <small id="package-error" class="text-danger d-block">{{ $message }}</small>
+                                                <small id="package-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
                                             @enderror
                                         </div>
 
                                         {{-- Phone --}}
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                            <input
-                                                type="text"
-                                                name="phone"
-                                                value="{{ old('phone') }}"
-                                                placeholder="{{ __('messages.form.phone') ?: 'Phone' }}"
-                                                required
-                                                inputmode="tel"
+                                            <input type="tel" name="phone" id="phone" value="{{ old('phone') }}"
+                                                placeholder="{{ __('messages.contact.form.phone') }}"
+                                                class="@if ($isRtl) text-end @endif form-control"
+                                                inputmode="tel" dir="ltr"
                                                 aria-invalid="@error('phone') true @else false @enderror"
-                                                aria-describedby="@error('phone') phone-error @enderror"
-                                            >
+                                                aria-describedby="@error('phone') phone-error @enderror" required>
+                                            <small id="phone-client-error" class="text-danger d-none"></small>
                                             @error('phone')
                                                 <small id="phone-error" class="text-danger d-block">{{ $message }}</small>
                                             @enderror
@@ -106,31 +85,24 @@
 
                                         {{-- Captcha --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <input
-                                                type="text"
-                                                name="captcha"
+                                            <input type="text" name="captcha"
                                                 placeholder="{{ __('messages.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}"
-                                                required
-                                                aria-invalid="@error('captcha') true @else false @enderror"
-                                                aria-describedby="@error('captcha') captcha-error @enderror"
-                                            >
+                                                required aria-invalid="@error('captcha') true @else false @enderror"
+                                                aria-describedby="@error('captcha') captcha-error @enderror">
                                             @error('captcha')
-                                                <small id="captcha-error" class="text-danger d-block">{{ $message }}</small>
+                                                <small id="captcha-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
                                             @enderror
                                         </div>
 
                                         {{-- Message --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <textarea
-                                                class="darma"
-                                                name="message"
-                                                placeholder="{{ __('messages.form.message') ?: 'Write Your Message...' }}"
-                                                required
-                                                aria-invalid="@error('message') true @else false @enderror"
-                                                aria-describedby="@error('message') message-error @enderror"
-                                            >{{ old('message') }}</textarea>
+                                            <textarea class="darma" name="message" placeholder="{{ __('messages.form.message') ?: 'Write Your Message...' }}"
+                                                required aria-invalid="@error('message') true @else false @enderror"
+                                                aria-describedby="@error('message') message-error @enderror">{{ old('message') }}</textarea>
                                             @error('message')
-                                                <small id="message-error" class="text-danger d-block">{{ $message }}</small>
+                                                <small id="message-error"
+                                                    class="text-danger d-block">{{ $message }}</small>
                                             @enderror
                                         </div>
 
@@ -154,7 +126,8 @@
                                         {{-- Submit --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
                                             <button class="theme-btn btn-style-four" type="submit" name="submit-form">
-                                                <span class="txt">{{ __('messages.form.submit') ?: 'Submit Now' }}</span>
+                                                <span
+                                                    class="txt">{{ __('messages.form.submit') ?: 'Submit Now' }}</span>
                                             </button>
                                         </div>
 

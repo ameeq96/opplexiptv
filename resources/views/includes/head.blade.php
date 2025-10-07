@@ -131,10 +131,28 @@
         .hero-section-mobile .btn-outline:hover {
             background-color: #f0f8ff;
         }
+
+        .iti {
+            width: 100%;
+        }
+
+        /* RTL helpers */
+        [dir="rtl"] .iti__country-list {
+            text-align: right;
+        }
+
+        [dir="ltr"] #phone {
+            text-indent: 30px;
+        }
+
+        [dir="ltr"] .iti__country-list {
+            text-align: left;
+        }
     </style>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.webp') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
 
     @if (!empty($displayMovies[0]['webp_image_url']))
         <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
