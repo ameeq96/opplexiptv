@@ -257,26 +257,34 @@
                             </td>
                             <td>
                                 @php
-                                    $phone = preg_replace('/[^0-9]/', '', $order->user->phone ?? '');
+                                    $phone = preg_replace('/\D+/', '', $order->user->phone ?? '');
                                     $message = urlencode(
                                         "Hello {$order->user->name}, your IPTV order for package '{$order->package}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );
 
-                                    $waBusinessUrl = $phone
-                                        ? "https://api.whatsapp.com/send?phone={$phone}&text={$message}"
+                                    // Defaults
+                                    $waUniversal = $phone ? "https://wa.me/{$phone}?text={$message}" : null; // iOS/others
+                                    $waWeb = $phone
+                                        ? "https://web.whatsapp.com/send?phone={$phone}&text={$message}"
+                                        : null; // Desktop
+                                    // Force WhatsApp Business on Android
+                                    $waBusinessAndroid = $phone
+                                        ? "intent://send/?phone={$phone}&text={$message}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end"
                                         : null;
                                 @endphp
 
 
                                 <div class="d-flex justify-content-center gap-1">
-                                    @if ($waBusinessUrl)
-                                        <a href="{{ $waBusinessUrl }}" target="_blank"
-                                            class="btn btn-sm btn-outline-success wa-btn" data-id="{{ $order->id }}">
+                                    @if ($waUniversal)
+                                        <a href="{{ $waUniversal }}" target="_blank" rel="noopener"
+                                            class="btn btn-sm btn-outline-success wa-btn" data-id="{{ $order->id }}"
+                                            data-android="{{ $waBusinessAndroid }}" data-web="{{ $waWeb }}">
                                             WhatsApp
                                         </a>
                                     @endif
+
                                     <a href="{{ route('admin.orders.edit', $order) }}"
                                         class="btn btn-sm btn-outline-primary">Edit</a>
                                 </div>
@@ -338,6 +346,26 @@
         const checkAllEl = document.getElementById('checkAll');
         const counterEl = document.getElementById('selectedCounter');
         const clearBtn = document.getElementById('clearSelection');
+
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.wa-btn');
+            if (!btn) return;
+
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            const isAndroid = /Android/i.test(ua);
+            const isDesktop = !/Android|iPhone|iPad|iPod/i.test(ua);
+
+            if (isAndroid && btn.dataset.android) {
+                // Force open WhatsApp Business on Android
+                btn.setAttribute('href', btn.dataset.android);
+            } else if (isDesktop && btn.dataset.web) {
+                // Open WhatsApp Web (login with Business to use it)
+                btn.setAttribute('href', btn.dataset.web);
+            }
+            // iOS/others: default wa.me already set
+        }, {
+            capture: true
+        });
 
         function getRowCheckboxes() {
             return Array.from(document.querySelectorAll('input[name="order_ids[]"]'));
