@@ -265,7 +265,7 @@
                                     );
 
                                     $waBusinessUrl = $phone
-                                        ? "https://api.whatsapp.com/send?phone={$phone}&text={$message}"
+                                        ? "https://wa.me/send?phone={$phone}&text={$message}"
                                         : null;
                                 @endphp
 
