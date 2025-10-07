@@ -1,6 +1,6 @@
 <!-- Main Footer -->
 <footer class="main-footer">
-    @unless ($isMobile)
+    @unless($isMobile)
         <div class="pattern-layer-one" style="background-image:url('{{ asset('images/background/pattern-12.webp') }}')"></div>
         <div class="pattern-layer-two" style="background-image:url('{{ asset('images/background/pattern-13.webp') }}')"></div>
     @endunless
@@ -9,8 +9,8 @@
         <div class="widgets-section">
             <!-- Logo -->
             <div class="logo" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV Logo" width="386"
-                    height="100" loading="lazy" />
+                <img src="{{ asset('images/opplexiptvlogo.webp') }}"
+                     alt="Opplex IPTV Logo" width="386" height="100" loading="lazy" />
             </div>
 
             @php
@@ -24,7 +24,7 @@
                         <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" loading="lazy" />
                     </span><br>
                     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_footer')) }}"
-                        target="_blank" rel="noopener noreferrer">
+                       target="_blank" rel="noopener noreferrer">
                         {{ $isRtl ? '4913-093 (936) 1+' : __('messages.footer_phone') }}
                     </a>
                 </li>
@@ -46,16 +46,19 @@
             <ul class="social-box"
                 style="display:flex; justify-content:{{ $isRtl ? 'flex-end' : 'flex-start' }}; gap:10px;">
                 <li>
-                    <a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
-                        target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61565476366548"
+                       class="fa fa-facebook-f" target="_blank" rel="noopener noreferrer"
+                       aria-label="Facebook"></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn"></a>
+                    <a href="https://www.linkedin.com/company/digitalize-store/"
+                       class="fa fa-linkedin" target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn"></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                        rel="noopener noreferrer" aria-label="Instagram"></a>
+                    <a href="https://www.instagram.com/oplextv/"
+                       class="fa fa-instagram" target="_blank" rel="noopener noreferrer"
+                       aria-label="Instagram"></a>
                 </li>
             </ul>
         </div>
@@ -84,8 +87,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
-    defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
@@ -97,103 +99,60 @@
 <script src="{{ asset('js/script.js') }}" defer></script>
 
 <script>
-    (function() {
-        'use strict';
+(function () {
+  'use strict';
 
-        const onReady = (fn) => {
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', fn, {
-                    once: true
-                });
-            } else {
-                fn();
-            }
-        };
+  const onReady = (fn) => {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fn, { once: true });
+    } else {
+      fn();
+    }
+  };
 
-        onReady(() => {
-            // Lazy background images
-            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+  onReady(() => {
+    // Lazy background images
+    const lazyBackgrounds = document.querySelectorAll('.lazy-background');
 
-            const applyBg = (el) => {
-                const bgUrl = el.getAttribute('data-bg');
-                if (bgUrl) el.style.backgroundImage = `url(${bgUrl})`;
-            };
+    const applyBg = (el) => {
+      const bgUrl = el.getAttribute('data-bg');
+      if (bgUrl) el.style.backgroundImage = `url(${bgUrl})`;
+    };
 
-            if ('IntersectionObserver' in window) {
-                const io = new IntersectionObserver((entries, obs) => {
-                    for (const entry of entries) {
-                        if (entry.isIntersecting) {
-                            applyBg(entry.target);
-                            obs.unobserve(entry.target);
-                        }
-                    }
-                }, {
-                    rootMargin: '200px 0px'
-                });
-                lazyBackgrounds.forEach(el => io.observe(el));
-            } else {
-                // Fallback: apply immediately
-                lazyBackgrounds.forEach(applyBg);
-            }
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries, obs) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            applyBg(entry.target);
+            obs.unobserve(entry.target);
+          }
+        }
+      }, { rootMargin: '200px 0px' });
+      lazyBackgrounds.forEach(el => io.observe(el));
+    } else {
+      // Fallback: apply immediately
+      lazyBackgrounds.forEach(applyBg);
+    }
 
-            // Reseller toggle (guard all elements)
-            const toggle = document.getElementById('resellerToggle');
-            const normal = document.getElementById('normalPackages');
-            const reseller = document.getElementById('resellerPackages');
-            const creditInfo = document.getElementById('creditInfo');
-            const realToggle = document.getElementById('real-toggle');
+    // Reseller toggle (guard all elements)
+    const toggle    = document.getElementById('resellerToggle');
+    const normal    = document.getElementById('normalPackages');
+    const reseller  = document.getElementById('resellerPackages');
+    const creditInfo= document.getElementById('creditInfo');
+    const realToggle= document.getElementById('real-toggle');
 
-            if (realToggle) realToggle.style.display = 'block';
+    if (realToggle) realToggle.style.display = 'block';
 
-            if (toggle && normal && reseller && creditInfo) {
-                const applyState = (checked) => {
-                    normal.style.display = checked ? 'none' : 'flex';
-                    reseller.style.display = checked ? 'flex' : 'none';
-                    creditInfo.style.display = checked ? 'block' : 'none';
-                };
-                applyState(!!toggle.checked);
-                toggle.addEventListener('change', (e) => applyState(e.target.checked));
-            }
-            // else: elements not on this page — silently skip
-        });
-    })();
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var isAndroid = /Android/i.test(navigator.userAgent);
-        if (!isAndroid) return; // iOS/desktop: normal wa.me behavior
-
-        // Target ALL wa.me links on the page (mobile+desktop sections)
-        document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(a) {
-            a.addEventListener('click', function(e) {
-                try {
-                    var u = new URL(a.href);
-                    var m = u.pathname.match(/\/(\d+)/);
-                    if (!m) return; // if no phone, let default happen
-
-                    var phone = m[1];
-                    var text = u.searchParams.get('text') || '';
-
-                    // Try WhatsApp Business first
-                    var intent = 'intent://send?phone=' + phone +
-                        (text ? '&text=' + encodeURIComponent(text) : '') +
-                        '#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end';
-
-                    e.preventDefault();
-                    var fallback = a.href;
-
-                    // Fallback to wa.me if Business app not installed/handled
-                    var timer = setTimeout(function() {
-                        window.location.href = fallback;
-                    }, 1200);
-
-                    window.location.href = intent;
-                    setTimeout(function() {
-                        clearTimeout(timer);
-                    }, 1000);
-                } catch (err) {
-                    // If anything goes wrong, let the normal link work
-                }
-            });
-        });
-    });
+    if (toggle && normal && reseller && creditInfo) {
+      const applyState = (checked) => {
+        normal.style.display    = checked ? 'none'  : 'flex';
+        reseller.style.display  = checked ? 'flex'  : 'none';
+        creditInfo.style.display= checked ? 'block' : 'none';
+      };
+      applyState(!!toggle.checked);
+      toggle.addEventListener('change', (e) => applyState(e.target.checked));
+    }
+    // else: elements not on this page — silently skip
+  });
+})();
 </script>
