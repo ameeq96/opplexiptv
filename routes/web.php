@@ -44,6 +44,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         // === Everything that was previously under Route::middleware('admin') ===
         Route::post('clients/import', [UserClientController::class, 'import'])->name('clients.import');
 
+        Route::get(
+            'clients/export/facebook-csv',
+            [UserClientController::class, 'exportFacebookCsv']
+        )->name('clients.export.facebook');
+
         Route::delete('clients/bulk-delete', [UserClientController::class, 'bulkDelete'])->name('clients.bulkDelete');
         Route::delete('orders/bulk-delete', [OrderController::class, 'bulkDelete'])->name('orders.bulkDelete');
         Route::delete('reseller-orders/bulk-delete', [PanelOrderController::class, 'bulkDelete'])->name('reseller-orders.bulkDelete');

@@ -36,6 +36,10 @@
                     Import CSV
                 </button>
 
+                <a href="{{ route('admin.clients.export.facebook') }}" class="btn btn-warning">
+                    Export CSV
+                </a>
+
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="exclude_iptv" value="1" id="excludeIPTV"
                         onchange="this.form.submit()" {{ request('exclude_iptv') ? 'checked' : '' }}>
@@ -45,7 +49,7 @@
                 </div>
 
                 <a href="{{ route('admin.clients.create') }}" class="btn btn-dark ms-auto">
-                    <i class="bi bi-plus-lg me-1"></i> Add New Client
+                    <i class="bi bi-plus-lg me-1"></i> Add
                 </a>
             </form>
         </div>
