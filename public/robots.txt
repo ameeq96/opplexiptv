@@ -1,12 +1,9 @@
 User-agent: *
-Disallow: /admin
-Disallow: /*/movies?page=
-Disallow: /movies?page=
-Disallow: /trending
-Disallow: /fr/trending
-Disallow: /it/trending
-Disallow: /en/trending
+Disallow: /admin/
+Disallow: /send-email
 Disallow: /redirect
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
 Allow: /
 
 Sitemap: https://opplexiptv.com/sitemap.xml

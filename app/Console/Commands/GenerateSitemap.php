@@ -2,69 +2,102 @@
 
 namespace App\Console\Commands;
 
-use Carbon\Carbon;
 use Illuminate\Console\Command;
-use Spatie\Sitemap\Sitemap;
-use Spatie\Sitemap\Tags\Url;
-use Illuminate\Support\Facades\URL as LaravelURL;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class GenerateSitemap extends Command
 {
-    protected $signature = 'generate:sitemap';
-    protected $description = 'Generate multilingual sitemap with hreflang tags';
+    protected $signature = 'sitemap:generate';
+    protected $description = 'Generate XML sitemap with hreflang alternates for all locales';
 
     public function handle()
     {
-        $sitemap = Sitemap::create();
+        // Locales from config
+        $locales       = array_keys(config('laravellocalization.supportedLocales') ?? ['en' => []]);
+        $defaultLocale = LaravelLocalization::getDefaultLocale();
+        $hideDefault   = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
 
-        // Your supported locales
-        $locales = ['en', 'fr', 'it'];
-
-        // Your route slugs
-        $routes = [
-            '', // home
+        // Public named routes only (from your routes)
+        $namedRoutes = [
+            'home',
             'about',
-            'faqs',
-            'buy-now-panel',
-            'contact',
-            'buynow',
             'pricing',
             'movies',
-            'packages',
             'reseller-panel',
+            'packages',
             'iptv-applications',
-            'trending',
+            'faqs',
+            'contact',
         ];
 
-        foreach ($routes as $route) {
+        // XML init - correct namespaces (note: xmlns:xhtml on root only)
+        $xml = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset/>');
+        $xml->addAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+        $xml->addAttribute('xmlns:xhtml', 'http://www.w3.org/1999/xhtml');
 
-            // Generate main URL for default language 'en' WITHOUT /en prefix
-            $defaultUrl = $route === '' ? '/' : "/$route";
-            $fullDefaultUrl = LaravelURL::to($defaultUrl);
-
-            $urlItem = Url::create($fullDefaultUrl)
-                ->setPriority(0.8)
-                ->setChangeFrequency('weekly')
-                ->setLastModificationDate(Carbon::now());
-
-            // Add hreflang links for all locales, default language WITHOUT prefix
-            foreach ($locales as $altLocale) {
-                if ($altLocale === 'en') {
-                    // For English, no prefix
-                    $altPath = $route === '' ? '/' : "/$route";
-                } else {
-                    // For other languages, prefix with locale
-                    $altPath = $route === '' ? "/$altLocale" : "/$altLocale/$route";
-                }
-
-                $urlItem->addAlternate(LaravelURL::to($altPath), $altLocale);
+        foreach ($namedRoutes as $routeName) {
+            if (!Route::has($routeName)) {
+                $this->warn("Route missing: {$routeName}");
+                continue;
             }
 
-            $sitemap->add($urlItem);
+            // Relative path for this named route (e.g. '/', 'about')
+            $base = route($routeName, [], false); // relative
+            if ($base === '') { $base = '/'; }
+
+            // Build SAME-PAGE alternates per locale
+            $cluster = [];
+            foreach ($locales as $loc) {
+                if ($loc === $defaultLocale && $hideDefault) {
+                    // Force non-localized absolute URL for default locale
+                    $abs   = url($base); // absolute current route
+                    $href  = LaravelLocalization::getNonLocalizedURL($abs);
+                } else {
+                    // Localized absolute URL for non-default (or if not hiding default)
+                    $href = LaravelLocalization::getLocalizedURL($loc, $base, [], true);
+                }
+
+                // Normalize any accidental double slashes before query
+                $href = preg_replace('~(?<!:)//+~', '/', $href);
+                $href = Str::startsWith($href, 'http') ? $href : url($href);
+
+                $cluster[$loc] = $href;
+            }
+
+            // Canonical = default locale version (respects hideDefaultLocaleInURL)
+            $canonicalLoc = in_array($defaultLocale, $locales, true) ? $defaultLocale : $locales[0];
+            $canonicalUrl = $cluster[$canonicalLoc] ?? reset($cluster);
+
+            // <url> node
+            $urlNode = $xml->addChild('url');
+            $urlNode->addChild('loc', htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'));
+            $urlNode->addChild('lastmod', now()->toAtomString());
+            $urlNode->addChild('changefreq', 'weekly');
+            $urlNode->addChild('priority', '0.8');
+
+            // xhtml:link alternates (no per-tag xmlns attributes!)
+            foreach ($cluster as $lg => $href) {
+                $link = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
+                $link->addAttribute('rel', 'alternate');
+                $link->addAttribute('hreflang', $lg);
+                $link->addAttribute('href', $href);
+            }
+
+            // x-default -> canonical
+            $xdef = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
+            $xdef->addAttribute('rel', 'alternate');
+            $xdef->addAttribute('hreflang', 'x-default');
+            $xdef->addAttribute('href', $canonicalUrl);
         }
 
-        $sitemap->writeToFile(public_path('sitemap.xml'));
+        // Write to public/sitemap.xml
+        $path = public_path('sitemap.xml');
+        File::put($path, $xml->asXML());
 
-        $this->info('✅ Sitemap with hreflang generated successfully!');
+        $this->info("Sitemap generated at: {$path}");
+        return self::SUCCESS;
     }
 }
