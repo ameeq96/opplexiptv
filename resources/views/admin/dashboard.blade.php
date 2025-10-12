@@ -43,7 +43,8 @@
         <div class="col">
             <div class="card shadow-sm border-0 h-100 bg-light">
                 <div class="card-body">
-                    <h6 class="text-muted mb-1">Total Orders {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}</h6>
+                    <h6 class="text-muted mb-1">Total Orders {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}
+                    </h6>
                     <h2 class="fw-bold">{{ $totalOrders }}</h2>
                 </div>
             </div>
@@ -52,7 +53,8 @@
         <div class="col">
             <div class="card shadow-sm border-0 h-100 bg-light">
                 <div class="card-body">
-                    <h6 class="text-muted mb-1">Active Orders {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}</h6>
+                    <h6 class="text-muted mb-1">Active Orders {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}
+                    </h6>
                     <h2 class="fw-bold">{{ $activeOrders }}</h2>
                 </div>
             </div>
@@ -61,7 +63,8 @@
         <div class="col">
             <div class="card shadow-sm border-0 h-100 bg-light">
                 <div class="card-body">
-                    <h6 class="text-muted mb-1">Expired Orders {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}</h6>
+                    <h6 class="text-muted mb-1">Expired Orders {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}
+                    </h6>
                     <h2 class="fw-bold">{{ $expiredOrders }}</h2>
                 </div>
             </div>
@@ -72,7 +75,24 @@
                 <div class="col">
                     <div class="card shadow-sm border-0 h-100 bg-light">
                         <div class="card-body">
-                            <h6 class="text-muted mb-1">Total Earnings ({{ $currency }}) {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}</h6>
+                            <h6 class="text-muted mb-1">Total Earnings ({{ $currency }})
+                                {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}</h6>
+                            <h2 class="fw-bold">{{ $currency }} {{ number_format($amount, 2) }}</h2>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        @endforeach
+
+        @foreach ($purchasingByCurrency as $currency => $amount)
+            @if ($amount > 0)
+                <div class="col">
+                    <div class="card shadow-sm border-0 h-100 bg-light">
+                        <div class="card-body">
+                            <h6 class="text-muted mb-1">
+                                Total Purchasing ({{ $currency }})
+                                {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}
+                            </h6>
                             <h2 class="fw-bold">{{ $currency }} {{ number_format($amount, 2) }}</h2>
                         </div>
                     </div>
@@ -88,16 +108,29 @@
         </div>
     </div>
 
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+            <h5 class="fw-bold mb-4">Purchasing Chart {{ $filter != 'all' ? '(' . ucfirst($filter) . ')' : '' }}</h5>
+            <div id="purchasingChart"></div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script>
         const options = {
             chart: {
                 type: 'area',
                 height: 350,
-                toolbar: { show: false },
-                zoom: { enabled: true }
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: true
+                }
             },
-            dataLabels: { enabled: false },
+            dataLabels: {
+                enabled: false
+            },
             stroke: {
                 curve: 'smooth',
                 width: 3
@@ -108,15 +141,25 @@
             }],
             xaxis: {
                 categories: {!! json_encode(array_keys($earningsByCurrency)) !!},
-                title: { text: 'Currency' },
-                labels: { style: { fontSize: '14px' } }
+                title: {
+                    text: 'Currency'
+                },
+                labels: {
+                    style: {
+                        fontSize: '14px'
+                    }
+                }
             },
             yaxis: {
                 labels: {
                     formatter: val => val.toFixed(0),
-                    style: { fontSize: '14px' }
+                    style: {
+                        fontSize: '14px'
+                    }
                 },
-                title: { text: 'Earnings' }
+                title: {
+                    text: 'Earnings'
+                }
             },
             fill: {
                 type: 'gradient',
@@ -137,11 +180,80 @@
                 borderColor: '#e0e0e0',
                 strokeDashArray: 4,
                 yaxis: {
-                    lines: { show: true }
+                    lines: {
+                        show: true
+                    }
                 }
             }
         };
 
+        const purchasingOptions = {
+            chart: {
+                type: 'area',
+                height: 350,
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: true
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth',
+                width: 3
+            },
+            series: {!! json_encode($purchasingSeriesForChart) !!}, // [ {name:'USD', data:[{x:'2025-10-01', y:123}, ...]}, ... ]
+            xaxis: {
+                type: 'datetime',
+                labels: {
+                    style: {
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    formatter: val => val.toFixed(0),
+                    style: {
+                        fontSize: '12px'
+                    }
+                },
+                title: {
+                    text: 'Purchasing'
+                }
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    opacityFrom: 0.4,
+                    opacityTo: 0,
+                    stops: [0, 90, 100]
+                }
+            },
+            tooltip: {
+                x: {
+                    format: 'yyyy-MM-dd'
+                },
+                y: {
+                    formatter: val => `${val.toFixed(2)}`
+                }
+            },
+            grid: {
+                borderColor: '#e0e0e0',
+                strokeDashArray: 4,
+                yaxis: {
+                    lines: {
+                        show: true
+                    }
+                }
+            }
+        };
+
+        new ApexCharts(document.querySelector("#purchasingChart"), purchasingOptions).render();
         const chart = new ApexCharts(document.querySelector("#earningsChart"), options);
         chart.render();
     </script>

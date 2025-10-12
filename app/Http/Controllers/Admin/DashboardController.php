@@ -73,6 +73,38 @@ class DashboardController extends Controller
             ->get()
             ->keyBy('currency');
 
+        $purchasingByCurrency = [];
+        foreach ($purchaseAgg as $ccy => $row) {
+            $purchasingByCurrency[$ccy] = (float) ($row->purchase_sum ?? 0);
+        }
+
+        $tsStart = $hasRange ? $start->clone() : now()->subDays(29)->startOfDay();
+        $tsEnd   = $hasRange ? $end->clone()   : now()->endOfDay();
+
+        $purchaseRows = Purchasing::query()
+            ->selectRaw("currency, DATE(purchase_date) as d, SUM(cost_price) as total")
+            ->whereBetween('purchase_date', [$tsStart, $tsEnd])
+            ->groupBy('currency', 'd')
+            ->orderBy('d')
+            ->get();
+
+        $purchasingSeries = [];
+        foreach ($purchaseRows as $row) {
+            $currency = $row->currency ?: 'USD';
+            $purchasingSeries[$currency][] = [
+                'x' => $row->d,
+                'y' => (float) $row->total,
+            ];
+        }
+
+        $purchasingSeriesForChart = [];
+        foreach ($purchasingSeries as $ccy => $points) {
+            $purchasingSeriesForChart[] = [
+                'name' => $ccy,
+                'data' => $points,
+            ];
+        }
+
         $currencies = collect($ordersAgg->keys())->merge($purchaseAgg->keys())->unique()->values();
 
         $earningsByCurrency = [];
@@ -92,6 +124,8 @@ class DashboardController extends Controller
             'expiredOrders'      => $expiredOrders,
             'totalOrders'        => $totalOrders,
             'earningsByCurrency' => $earningsByCurrency,
+            'purchasingByCurrency'    => $purchasingByCurrency,
+            'purchasingSeriesForChart' => $purchasingSeriesForChart,
             'filter'             => $filter,
             'startDate'          => $hasRange ? $start->toDateTimeString() : null,
             'endDate'            => $hasRange ? $end->toDateTimeString()   : null,
