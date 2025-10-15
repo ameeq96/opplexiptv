@@ -99,7 +99,7 @@ Route::group(
         Route::get('contact',         [HomeController::class, 'contact'])->name('contact');
         Route::get('buynow',          [HomeController::class, 'buynow'])->name('buynow');
         Route::get('pricing',         [HomeController::class, 'pricing'])->name('pricing');
-        Route::get('movies',          [HomeController::class, 'movies'])->name('movies');
+        Route::get('movies',          [HomeController::class, 'movies'])->name('movies')->middleware('noindex.pagination');
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');

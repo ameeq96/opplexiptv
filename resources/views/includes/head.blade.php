@@ -24,11 +24,13 @@
         $currency = config('services.app.default_currency', 'USD');
 
         $routeName = optional(Request::route())->getName();
-        $noindexRoutes = [
-            'redirect.ad',
-            'buynow',
-            'buy-now-panel',
-        ];
+        $noindexRoutes = ['redirect.ad', 'buynow', 'buy-now-panel'];
+
+        $pageParam = (int) request()->input('page', 1);
+        $hasSearch = trim((string) request()->input('search', '')) !== '';
+
+        $shouldNoindex =
+            in_array($routeName, $noindexRoutes, true) || ($routeName === 'movies' && ($pageParam > 1 || $hasSearch));
 
         $default = LaravelLocalization::getDefaultLocale();
         $hideDefault = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
@@ -51,7 +53,7 @@
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="keywords" content="{{ $keywords }}">
 
-    @if (in_array($routeName, $noindexRoutes, true))
+    @if ($shouldNoindex)
         <meta name="robots" content="noindex,follow">
     @else
         <meta name="robots" content="index,follow">
