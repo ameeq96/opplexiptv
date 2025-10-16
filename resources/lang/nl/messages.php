@@ -414,4 +414,9 @@ return [
   'order_updated'   => 'Bestelling succesvol bijgewerkt.',
   'order_deleted'   => 'Bestelling succesvol verwijderd.',
   'screenshot_deleted' => 'Screenshot succesvol verwijderd.',
+  'pricing_subheading' => 'Live tv, Sport, Films, Series, 4K & Terugkijken',
+  'subheadingiptv' => 'IPTV-probleemoplossing, installatie, betalingen, zenders en ondersteuning voor resellers',
+  'subheadingcontact' => 'Contact & ondersteuning — 24/7 chat, WhatsApp, e-mail, facturatie en technische hulp',
+  'movies_subheading' => 'Blader door films, series en cartoons',
+
 ];

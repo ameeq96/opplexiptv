@@ -95,6 +95,8 @@ Route::group(
         Route::get('/',               [HomeController::class, 'home'])->name('home');
         Route::get('about',           [HomeController::class, 'about'])->name('about');
         Route::get('faqs',            [HomeController::class, 'faq'])->name('faqs');
+        Route::get('activate',        [HomeController::class, 'activate'])->name('activate');
+        Route::get('activate-info',   [HomeController::class, 'activateInfo'])->name('activate-info');
         Route::get('buy-now-panel',   [HomeController::class, 'buynowpanel'])->name('buy-now-panel');
         Route::get('contact',         [HomeController::class, 'contact'])->name('contact');
         Route::get('buynow',          [HomeController::class, 'buynow'])->name('buynow');

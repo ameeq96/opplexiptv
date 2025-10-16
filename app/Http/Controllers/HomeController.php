@@ -65,6 +65,15 @@ class HomeController extends Controller
     {
         return view('pages.faq');
     }
+    public function activate()
+    {
+        return view('pages.activate');
+    }
+
+    public function activateInfo()
+    {
+        return view('pages.activate-info');
+    }
 
     public function iptvApplications()
     {

@@ -414,4 +414,10 @@ return [
     'order_updated'   => 'Commande mise à jour avec succès.',
     'order_deleted'   => 'Commande supprimée avec succès.',
     'screenshot_deleted' => 'Capture d\'écran supprimée avec succès.',
+    'pricing_subheading' => 'TV en direct, Sport, Films, Séries, 4K & Replay',
+    'subheadingiptv' => 'Dépannage IPTV, configuration, paiements, chaînes et support revendeurs',
+    'subheadingcontact' => 'Contact & support — chat 24/7, WhatsApp, e-mail, facturation et assistance technique',
+    'movies_subheading' => 'Parcourez films, séries et dessins animés',
+
+
 ];

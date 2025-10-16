@@ -61,4 +61,14 @@ return [
         'description' => 'कृपया इंतज़ार करें जब तक हम आपका कंटेंट तैयार करते हैं। Opplex के साथ बेस्ट IPTV सेटअप पाएं — मुफ्त ट्रायल, रिसेलर अवसर, Xtreme HD IPTV, 4K स्ट्रीमिंग और IPTV smart player सपोर्ट।',
         'keywords' => 'IPTV setup, IPTV free trial, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player support',
     ],
+    'activate' => [
+        'title'       => 'लीगल IPTV गाइड - सुरक्षित, लाइसेंसयुक्त और अनुपालक स्ट्रीमिंग',
+        'description' => 'IPTV को कानूनी रूप से उपयोग करने की स्पष्ट गाइड: लाइसेंसिंग बेसिक्स, संगत ऐप/डिवाइस, क्षेत्रीय नोट्स (EU/UK/US) और पायरेसी से बचने के व्यावहारिक सुझाव।',
+        'keywords'    => 'कानूनी IPTV, IPTV गाइड, IPTV अनुपालन, लाइसेंसयुक्त स्ट्रीमिंग, IPTV EU, IPTV UK, IPTV USA, कॉपीराइट, सुरक्षित IPTV',
+    ],
+    'activate-info' => [
+        'title'       => 'एक्टिवेशन जानकारी — ऑर्डर नंबर दर्ज करें और लीगल IPTV शुरू करें',
+        'description' => 'IPTV को कानूनी रूप से सक्रिय कैसे करें: अपना ऑर्डर नंबर दर्ज करें, अकाउंट वेरिफाई करें और स्ट्रीमिंग शुरू करें। QR व WhatsApp एक्टिवेशन (EU/UK/US) समर्थित।',
+        'keywords'    => 'IPTV एक्टिवेशन, ऑर्डर नंबर, WhatsApp एक्टिवेशन, QR कोड, कानूनी IPTV, अकाउंट वेरिफिकेशन, IPTV EU, IPTV UK, IPTV USA',
+    ],
 ];

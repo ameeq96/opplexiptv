@@ -30,7 +30,7 @@
             <div class="sec-title clearfix">
                 <div class="pull-left">
                     <div class="separator"></div>
-                    <h2>{{ __('messages.reasons.title') }}</h2>
+                    <h3>{{ __('messages.reasons.title') }}</h3>
                 </div>
                 <div class="pull-right">
                     <a href="{{ route('packages') }}" class="theme-btn btn-style-four"

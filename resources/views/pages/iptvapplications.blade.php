@@ -18,8 +18,7 @@
         <div class="container">
             <div class="call-to-action">
                 <div class="box-icon"><span class="ti-mobile gradient-fill ti-3x"></span></div>
-                <h2>{{ __('messages.app.download_heading') }}</h2>
-                <p class="tagline">{{ __('messages.app.tagline') }}</p>
+                <h1 class="h2">{{ __('messages.app.download_heading') }}</h1>
 
                 {{-- Platform download buttons --}}
                 <div class="my-4" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">

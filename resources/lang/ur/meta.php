@@ -61,4 +61,14 @@ return [
         'description' => 'براہ کرم انتظار کریں جب تک ہم آپ کا مواد تیار کرتے ہیں۔ Opplex کے ساتھ بہترین IPTV سیٹ اپ پائیں — مفت ٹرائل، ریسیلر مواقع، Xtreme HD IPTV، 4K اسٹریمنگ اور IPTV اسمارٹ پلیئر سپورٹ۔',
         'keywords' => 'IPTV setup, IPTV free trial, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player support',
     ],
+    'activate' => [
+        'title'       => 'لیگل IPTV گائیڈ - محفوظ، لائسنس یافتہ اور قواعد کے مطابق اسٹریمنگ',
+        'description' => 'IPTV کو قانونی طور پر استعمال کرنے کی واضح گائیڈ: لائسنسنگ کی بنیادی باتیں، مطابقت رکھنے والی ایپس/ڈیوائسز، علاقائی نوٹس (EU/UK/US) اور پائریسی سے بچنے کے عملی مشورے۔',
+        'keywords'    => 'لیگل IPTV, IPTV گائیڈ, IPTV کمپلائنس, لائسنس یافتہ اسٹریمنگ, IPTV EU, IPTV UK, IPTV USA, کاپی رائٹ, محفوظ IPTV',
+    ],
+    'activate-info' => [
+        'title'       => 'ایکٹیویشن معلومات — آرڈر نمبر درج کریں اور لیگل IPTV شروع کریں',
+        'description' => 'IPTV کو قانونی طور پر ایکٹیویٹ کرنے کا طریقہ: اپنا آرڈر نمبر درج کریں، اکاؤنٹ کی تصدیق کریں اور اسٹریمنگ شروع کریں۔ QR اور واٹس ایپ ایکٹیویشن (EU/UK/US) سپورٹڈ۔',
+        'keywords'    => 'IPTV ایکٹیویشن, آرڈر نمبر, واٹس ایپ ایکٹیویشن, QR کوڈ, لیگل IPTV, اکاؤنٹ تصدیق, IPTV EU, IPTV UK, IPTV USA',
+    ],
 ];

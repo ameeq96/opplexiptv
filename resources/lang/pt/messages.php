@@ -414,4 +414,9 @@ return [
   'order_updated'   => 'Pedido atualizado com sucesso.',
   'order_deleted'   => 'Pedido excluído com sucesso.',
   'screenshot_deleted' => 'Captura de tela excluída com sucesso.',
+  'pricing_subheading' => 'TV ao vivo, Esportes, Filmes, Séries, 4K e Replay',
+  'subheadingiptv' => 'Solução de problemas de IPTV, configuração, pagamentos, canais e suporte para revendedores',
+  'subheadingcontact' => 'Contato e suporte — chat 24/7, WhatsApp, e-mail, faturamento e ajuda técnica',
+  'movies_subheading' => 'Explore filmes, séries e desenhos animados',
+
 ];

@@ -417,4 +417,9 @@ return [
   'order_updated'   => 'Order updated successfully.',
   'order_deleted'   => 'Order deleted successfully.',
   'screenshot_deleted' => 'Screenshot deleted successfully.',
+  'pricing_subheading' => 'Live TV, Sports, Movies, Series, 4K & Catch-Up',
+  'subheadingiptv' => 'IPTV troubleshooting, setup, payments, channels & reseller support',
+  'subheadingcontact' => 'Contact support — 24/7 chat, WhatsApp, email, billing & technical help',
+  'movies_subheading' => 'Browse Movies, Series & Cartoons',
+
 ];

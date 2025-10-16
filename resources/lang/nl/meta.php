@@ -61,4 +61,14 @@ return [
         'description' => 'Even geduld terwijl we je content voorbereiden. Krijg de beste IPTV-installatie met Opplex — gratis proefperiode, resellerkansen, Xtreme HD IPTV, 4K streaming en iptv smart player ondersteuning.',
         'keywords' => 'IPTV installatie, IPTV gratis proefperiode, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player ondersteuning',
     ],
+    'activate' => [
+        'title'       => 'Legale IPTV-gids - Veilige, gelicentieerde en conforme streaming',
+        'description' => 'Een heldere gids om IPTV legaal te gebruiken: basis van licenties, conforme apps/apparaten, regionale aandachtspunten (EU/VK/VS) en praktische tips om piraterij te vermijden.',
+        'keywords'    => 'legale IPTV, IPTV-gids, IPTV-naleving, gelicentieerde streaming, IPTV EU, IPTV VK, IPTV VS, auteursrecht, veilige IPTV',
+    ],
+    'activate-info' => [
+        'title'       => 'Activatie-informatie – Voer je ordernummer in en start legale IPTV',
+        'description' => 'Zo activeer je IPTV legaal: voer je ordernummer in, verifieer je account en start met streamen. QR- en WhatsApp-activatie ondersteund (EU/VK/VS).',
+        'keywords'    => 'IPTV-activatie, ordernummer, WhatsApp-activatie, QR-code, legale IPTV, accountverificatie, IPTV EU, IPTV VK, IPTV VS',
+    ],
 ];

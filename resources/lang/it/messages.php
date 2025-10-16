@@ -409,4 +409,9 @@ return [
     'order_updated'   => 'Ordine aggiornato con successo.',
     'order_deleted'   => 'Ordine eliminato con successo.',
     'screenshot_deleted' => 'Screenshot eliminato con successo.',
+    'pricing_subheading' => 'TV in diretta, Sport, Film, Serie, 4K e Replay',
+    'subheadingiptv' => 'Risoluzione dei problemi IPTV, configurazione, pagamenti, canali e supporto rivenditori',
+    'subheadingcontact' => 'Contatti e supporto — chat 24/7, WhatsApp, e-mail, fatturazione e assistenza tecnica',
+    'movies_subheading' => 'Sfoglia film, serie e cartoni',
+
 ];

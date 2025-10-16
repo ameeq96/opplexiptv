@@ -61,4 +61,14 @@ return [
         'description' => 'Please wait while we prepare your content. Get the best IPTV setup with Opplex — free trial, reseller opportunities, Xtreme HD IPTV, 4K streaming, and IPTV smart player support.',
         'keywords' => 'IPTV setup, IPTV free trial, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player support',
     ],
+    'activate' => [
+        'title'       => 'Legal IPTV Guide - Safe, Licensed & Compliant Streaming',
+        'description' => 'A clear guide to using IPTV legally: licensing basics, compliant apps/devices, regional notes (EU/UK/US), and practical tips to avoid piracy.',
+        'keywords'    => 'legal IPTV, IPTV guide, IPTV compliance, licensed streaming, IPTV EU, IPTV UK, IPTV USA, copyright, safe IPTV',
+    ],
+    'activate-info' => [
+        'title'       => 'Activation Info – Enter Order Number & Start Legal IPTV',
+        'description' => 'How to activate IPTV legally: enter your order number, verify your account, and start streaming. QR and WhatsApp activation supported (EU/UK/US).',
+        'keywords'    => 'IPTV activation, order number, WhatsApp activation, QR code, legal IPTV, account verification, IPTV EU, IPTV UK, IPTV USA',
+    ],
 ];

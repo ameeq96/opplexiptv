@@ -3,7 +3,7 @@
     <div class="auto-container">
         <div class="sec-title light centered">
             <div class="separator"></div>
-            <h2 aria-label="Explore Opplex IPTV Services">{{ __('messages.explore_services') }}</h2>
+            <h3 class="text-white" aria-label="Explore Opplex IPTV Services">{{ __('messages.explore_services') }}</h3>
         </div>
 
         <div class="four-item-carousel owl-carousel owl-theme" role="region" aria-label="IPTV Services Carousel">

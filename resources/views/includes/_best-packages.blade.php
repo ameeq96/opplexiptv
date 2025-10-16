@@ -5,7 +5,14 @@
             @unless ($isMobile)
                 <div class="separator"></div>
             @endunless
-            <h2 aria-label="Choose Your IPTV Plan">{{ __('messages.pricing_heading') }}</h2>
+
+            <h1 class="h2" aria-label="Choose Your IPTV Plan">
+                <b>{{ __('messages.pricing_heading') }}</b>
+            </h1>
+
+            @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
+                <h2 class="h4">{{ __('messages.pricing_subheading') }}</h2>
+            @endunless
         </div>
 
         <div id="real-toggle" class="text-center mb-4 mt-4" style="display:none"

@@ -416,5 +416,9 @@ return [
   'order_updated'   => 'Pedido actualizado con éxito.',
   'order_deleted'   => 'Pedido eliminado con éxito.',
   'screenshot_deleted' => 'Captura eliminada con éxito.',
+  'pricing_subheading' => 'TV en vivo, Deportes, Películas, Series, 4K y a la carta',
+  'subheadingiptv' => 'Solución de problemas de IPTV, configuración, pagos, canales y soporte para revendedores',
+  'subheadingcontact' => 'Contacto y soporte — chat 24/7, WhatsApp, correo, facturación y ayuda técnica',
+  'movies_subheading' => 'Explora películas, series y dibujos animados',
 
 ];

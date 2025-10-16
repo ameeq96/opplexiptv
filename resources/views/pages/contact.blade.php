@@ -13,6 +13,11 @@
     <!-- Contact Page Section -->
     <section class="contact-page-section" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <div class="auto-container">
+
+            <h1 class="h2 my-3" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
+                {{ __('messages.contact.heading') }}
+            </h1>
+
             <div @class(['row', 'clearfix', $isRtl ? 'rtl-row' : ''])>
 
                 <!-- Info Column -->

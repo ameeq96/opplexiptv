@@ -26,7 +26,7 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="content-column">
-                    <h2>{{ __('messages.sub_heading') }}</h2>
+                    <h3>{{ __('messages.sub_heading') }}</h3>
                     <div class="text text-dark">{{ __('messages.description') }}</div>
                     <div class="price">{!! __('messages.price') !!}</div>
                     <a href="{{ route('about') }}" class="theme-btn btn-style-four"

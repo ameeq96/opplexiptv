@@ -2,7 +2,7 @@
     <div class="auto-container">
         <div class="sec-title centered">
             <div class="title" aria-label="Testimonials Section Subheading">{{ __('messages.testimonials_title') }}</div>
-            <h2 aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h2>
+            <h3 aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h3>
         </div>
 
         <div class="testimonial-carousel owl-carousel owl-theme" role="region" aria-label="Testimonial carousel of IPTV customer feedback">

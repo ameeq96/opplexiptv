@@ -25,7 +25,7 @@
             <div @class(['sec-title','clearfix','section-header', $isRtl ? 'rtl' : 'ltr'])>
                 <div class="pull-left">
                     <div class="separator"></div>
-                    <h2 id="choose-us-title">{!! __('messages.choose_us.title') !!}</h2>
+                    <h3 id="choose-us-title">{!! __('messages.choose_us.title') !!}</h3>
                 </div>
 
                 <div class="pull-right">

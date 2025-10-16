@@ -19,7 +19,7 @@
                     <div class="inner-column">
                         <div class="sec-title" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                             <div class="separator"></div>
-                            <h3>{{ __('messages.faq.section_title') }}</h3>
+                            <h1 class="h3">{{ __('messages.faq.section_title') }}</h1>
                         </div>
 
                         <ul class="accordion-box">

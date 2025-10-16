@@ -61,4 +61,14 @@ return [
         'description' => 'Veuillez patienter pendant que nous préparons votre contenu. Obtenez la meilleure configuration IPTV avec Opplex — essai gratuit, opportunités pour revendeurs, Xtreme HD IPTV, streaming 4K et assistance pour lecteur IPTV intelligent.',
         'keywords' => 'Configuration IPTV, essai IPTV gratuit, Opplex IPTV, Xtreme HD IPTV, revendeur IPTV, streaming IPTV 4K, assistance lecteur IPTV intelligent',
     ],
+    'activate' => [
+        'title'       => 'Guide IPTV légal - Streaming sûr, sous licence et conforme',
+        'description' => 'Un guide clair pour utiliser l’IPTV légalement : bases des licences, applications/appareils compatibles, notes régionales (UE/R.-U./États-Unis) et conseils pratiques pour éviter le piratage.',
+        'keywords'    => 'IPTV légal, guide IPTV, conformité IPTV, streaming sous licence, IPTV UE, IPTV Royaume-Uni, IPTV États-Unis, droit d’auteur, IPTV sécurisé',
+    ],
+    'activate-info' => [
+        'title'       => 'Infos d’activation – Saisissez votre numéro de commande et démarrez l’IPTV légal',
+        'description' => 'Comment activer votre IPTV légalement : saisie du numéro de commande, vérification du compte et démarrage du streaming. Activation par QR et WhatsApp prise en charge (UE/R.-U./États-Unis).',
+        'keywords'    => 'activation IPTV, numéro de commande, activation WhatsApp, code QR, IPTV légal, vérification de compte, IPTV UE, IPTV Royaume-Uni, IPTV États-Unis',
+    ],
 ];

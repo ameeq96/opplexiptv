@@ -3,7 +3,7 @@
     <section class="hero-section-mobile" aria-label="Opplex IPTV Hero Section – Start Your IPTV Trial in HD/4K">
         <div class="container text-center">
             <p class="subtitle">{{ __('messages.subtitle') }}</p>
-            <h2 class="heading">{{ __('messages.heading-mobile') }}</h2>
+            <h3 class="heading">{{ __('messages.heading-mobile') }}</h2>
             <p class="description">
                 {{ __('messages.description_prefix') }} <strong>Opplex IPTV</strong>
                 {{ __('messages.description_suffix') }}
@@ -81,7 +81,7 @@
                                         @endswitch
                                     </h1>
                                 @else
-                                    <h2 class="text-white">{{ $movie['safe_title'] }}</h2>
+                                    <h3 class="text-white">{{ $movie['safe_title'] }}</h3>
                                 @endif
 
                                 <div class="text">{{ $movie['safe_overview'] }}</div>
