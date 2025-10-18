@@ -112,6 +112,10 @@ Route::group(
         Route::post('subscribe',      [HomeController::class, 'subscribe'])->name('subscribe');
         Route::get('trending',        [HomeController::class, 'getTrending']);
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
+
+        Route::view('terms-of-service', 'policies.terms')->name('terms-of-service');
+        Route::view('privacy-policy', 'policies.privacy')->name('privacy-policy');
+        Route::view('refund-policy', 'policies.refund')->name('refund-policy');
     }
 );
 

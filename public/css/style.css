@@ -8931,3 +8931,253 @@ html[dir="rtl"] .network-list li strong {
 [dir="ltr"] .iti__country-list {
     text-align: left;
 }
+
+.fx-footer {
+    --fx-bg: #0e1220;
+    --fx-card: #171c2e;
+    --fx-fg: #e9ecf5;
+    --fx-muted: #b5bbcf;
+    --fx-border: rgba(255, 255, 255, 0.08);
+    --fx-accent: #ef2c2c; /* Opplex red */
+    position: relative;
+    color: var(--fx-fg);
+    background: var(--fx-bg);
+    overflow: hidden;
+    font-family: inherit;
+}
+.fx-footer__grad {
+    position: absolute;
+    inset: -40% -20% auto -20%;
+    height: 380px;
+    background: radial-gradient(
+            60% 120% at 10% 0%,
+            rgba(239, 44, 44, 0.22),
+            transparent 60%
+        ),
+        radial-gradient(
+            60% 120% at 90% 0%,
+            rgba(79, 97, 255, 0.18),
+            transparent 60%
+        );
+    filter: blur(20px);
+    pointer-events: none;
+}
+.fx-footer__dots {
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.06;
+    pointer-events: none;
+}
+.fx-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+.fx-footer__head {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--fx-border);
+    flex-wrap: wrap;
+}
+.fx-brand__logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
+}
+.fx-brand__tag {
+    margin: 8px 0 0;
+    color: var(--fx-muted);
+    font-size: 0.95rem;
+}
+.fx-social {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+.fx-social__btn {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--fx-card);
+    color: var(--fx-fg);
+    transition: 0.25s transform, 0.25s background;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), inset 0 0 0 1px var(--fx-border);
+}
+.fx-social__btn:hover {
+    transform: translateY(-2px);
+    background: #1d2440;
+    color: #fff;
+}
+
+.fx-grid {
+    display: grid;
+    gap: 28px;
+    padding: 28px 0 10px;
+    grid-template-columns: repeat(12, 1fr);
+}
+.fx-col {
+    grid-column: span 3;
+    min-width: 220px;
+}
+.fx-col:first-child {
+    grid-column: span 4;
+}
+.fx-col--payments {
+    grid-column: span 2;
+    min-width: 180px;
+}
+
+.fx-title {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+    color: #dfe3f3;
+}
+.fx-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fx-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 8px 0;
+    color: var(--fx-fg);
+}
+.fx-list__icon {
+    opacity: 0.9;
+    line-height: 1.2rem;
+    width: 22px;
+    text-align: center;
+}
+.fx-sep {
+    opacity: 0.5;
+    padding: 0 6px;
+}
+.fx-link {
+    color: var(--fx-fg);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: 0.2s;
+}
+.fx-link:hover {
+    color: #fff;
+    border-bottom-color: var(--fx-accent);
+}
+
+.fx-pay {
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.fx-pay img {
+    display: block;
+    filter: grayscale(0.1) contrast(1.1);
+    background: var(--fx-card);
+    border-radius: 10px;
+    padding: 6px 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), inset 0 0 0 1px var(--fx-border);
+}
+
+.fx-footer__bottom {
+    border-top: 1px solid var(--fx-border);
+    margin-top: 10px;
+    padding: 14px 0;
+}
+.fx-copy {
+    color: #cdd3e6;
+}
+.fx-legal-note {
+    color: #9aa3ba;
+    max-width: 620px;
+}
+
+/* RTL tweaks */
+[dir="rtl"] .fx-legal-note {
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .fx-col {
+        grid-column: span 6;
+    }
+    .fx-col--payments {
+        grid-column: span 6;
+    }
+}
+@media (max-width: 680px) {
+    .fx-grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+    }
+    .fx-col,
+    .fx-col--payments {
+        grid-column: span 12;
+    }
+    .fx-footer__head {
+        justify-content: center;
+        text-align: center;
+    }
+    .fx-legal-note {
+        max-width: none;
+        text-align: center;
+        margin-top: 8px;
+    }
+    .fx-footer__bottom {
+        text-align: center;
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+h2 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+.text-muted {
+    color: #6b7280;
+}
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    padding-left: 1.1rem;
+}
+
+
+.fx-pay img {
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 8px;
+  width: 50;
+  height: auto;
+  box-shadow: 0 0 8px rgba(255,255,255,0.1);
+  transition: transform .25s ease, box-shadow .25s ease;
+}

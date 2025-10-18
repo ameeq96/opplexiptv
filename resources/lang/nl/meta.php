@@ -71,4 +71,19 @@ return [
         'description' => 'Zo activeer je IPTV legaal: voer je ordernummer in, verifieer je account en start met streamen. QR- en WhatsApp-activatie ondersteund (EU/VK/VS).',
         'keywords'    => 'IPTV-activatie, ordernummer, WhatsApp-activatie, QR-code, legale IPTV, accountverificatie, IPTV EU, IPTV VK, IPTV VS',
     ],
+    'terms-of-service' => [
+        'title'       => 'Gebruiksvoorwaarden en Wettelijk Beleid',
+        'description' => 'Lees de Opplex IPTV gebruiksvoorwaarden over accountregels, betalingen, hernieuwingen en servicebeschikbaarheid.',
+        'keywords'    => 'IPTV voorwaarden, Opplex IPTV, legaal IPTV, betalingen, automatisch verlengen',
+    ],
+    'privacy-policy' => [
+        'title'       => 'Privacybeleid en Gegevensbescherming',
+        'description' => 'Ons privacybeleid legt uit hoe we gegevens verzamelen, cookies gebruiken en jouw informatie beschermen bij het kopen van IPTV-abonnementen.',
+        'keywords'    => 'privacy IPTV, Opplex IPTV, gegevensbescherming, cookies, persoonlijke data',
+    ],
+    'refund-policy' => [
+        'title'       => 'Restitutie- en Retourbeleid',
+        'description' => 'Bekijk ons restitutiebeleid voor IPTV-abonnementen: voorwaarden, niet-restitueerbare items en annuleringsregels.',
+        'keywords'    => 'refund IPTV, Opplex IPTV, retourbeleid, annulering IPTV',
+    ],
 ];

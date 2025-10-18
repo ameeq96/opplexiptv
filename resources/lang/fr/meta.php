@@ -71,4 +71,19 @@ return [
         'description' => 'Comment activer votre IPTV légalement : saisie du numéro de commande, vérification du compte et démarrage du streaming. Activation par QR et WhatsApp prise en charge (UE/R.-U./États-Unis).',
         'keywords'    => 'activation IPTV, numéro de commande, activation WhatsApp, code QR, IPTV légal, vérification de compte, IPTV UE, IPTV Royaume-Uni, IPTV États-Unis',
     ],
+     'terms-of-service' => [
+        'title'       => 'Conditions d’Utilisation et Politique d’Usage Légal',
+        'description' => 'Lisez les Conditions d’Utilisation d’Opplex IPTV. Découvrez les règles de compte, le paiement, la disponibilité du service et les limitations de responsabilité.',
+        'keywords'    => 'conditions IPTV, Opplex IPTV, politique légale, paiement IPTV, utilisation acceptable',
+    ],
+    'privacy-policy' => [
+        'title'       => 'Politique de Confidentialité et Protection des Données',
+        'description' => 'Notre politique de confidentialité explique la collecte, l’utilisation et la protection de vos données personnelles lors de l’achat d’abonnements IPTV légaux.',
+        'keywords'    => 'confidentialité IPTV, données personnelles, cookies, Opplex IPTV, sécurité des données',
+    ],
+    'refund-policy' => [
+        'title'       => 'Politique de Remboursement et de Retour',
+        'description' => 'Consultez notre politique de remboursement pour les abonnements IPTV légaux : conditions, non-remboursables et procédure de demande.',
+        'keywords'    => 'remboursement IPTV, Opplex IPTV, politique de retour, annulation IPTV',
+    ],
 ];

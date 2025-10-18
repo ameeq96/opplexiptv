@@ -1,76 +1,106 @@
-<!-- Main Footer -->
-<footer class="main-footer">
+<!-- ======= Pro Footer v2 ======= -->
+<footer class="fx-footer" data-theme="dark">
+@php
+    // Safe defaults
+    $isMobile = $isMobile ?? false;
+    $isRtl    = $isRtl ?? false;
+
+    // Translations with fallbacks
+    $tPhone   = __('messages.footer_phone');    if ($tPhone   === 'messages.footer_phone')   $tPhone = '+1 (639) 390-3194';
+    $tEmail   = __('messages.footer_email_1');  if ($tEmail   === 'messages.footer_email_1') $tEmail = 'info@opplexiptv.com';
+    $tAddress = __('messages.footer_address');  if ($tAddress === 'messages.footer_address') $tAddress = 'Saskatoon SK, Canada';
+    $tRights  = __('messages.footer_rights');   if ($tRights  === 'messages.footer_rights')  $tRights = 'All Rights Reserved.';
+    $waText   = __('messages.whatsapp_footer'); if ($waText   === 'messages.whatsapp_footer')$waText = 'Hello! I need help with Opplex IPTV.';
+@endphp
+
+    <!-- Background layers -->
     @unless ($isMobile)
-        <div class="pattern-layer-one" style="background-image:url('{{ asset('images/background/pattern-12.webp') }}')"></div>
-        <div class="pattern-layer-two" style="background-image:url('{{ asset('images/background/pattern-13.webp') }}')"></div>
+        <div class="fx-footer__dots" style="background-image:url('{{ asset('images/background/pattern-13.webp') }}')"></div>
+        <div class="fx-footer__grad"></div>
     @endunless
 
-    <div class="auto-container" style="direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
-        <div class="widgets-section">
-            <!-- Logo -->
-            <div class="logo" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV Logo" width="386"
-                    height="100" loading="lazy" />
+    <div class="fx-container" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
+        <!-- Top: brand + socials -->
+        <div class="fx-footer__head">
+            <div class="fx-brand">
+                <img class="fx-brand__logo"
+                     src="{{ asset('images/opplexiptvlogo.webp') }}"
+                     alt="Opplex IPTV" width="340" height="90" loading="lazy">
+                <p class="fx-brand__tag">{{ $isRtl ? 'ہم Cryptomus کے ذریعے کرپٹو ادائیگی قبول کرتے ہیں۔' : 'We accept crypto payments via Cryptomus.' }}</p>
             </div>
 
-            @php
-                $contactAlign = $isMobile ? 'center' : ($isRtl ? 'right' : 'left');
-            @endphp
-
-            <!-- Contact Info (single DRY block) -->
-            <ul class="contact-info-list" style="text-align: {{ $contactAlign }};">
-                <li>
-                    <span class="icon">
-                        <img src="{{ asset('images/icons/icon-1.webp') }}" alt="Phone Icon" loading="lazy" />
-                    </span><br>
-                    <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_footer')) }}"
-                        target="_blank" rel="noopener noreferrer">
-                        {{ $isRtl ? '4913-093 (936) 1+' : __('messages.footer_phone') }}
-                    </a>
-                </li>
-                <li class="icon-center-footer">
-                    <span class="icon">
-                        <img src="{{ asset('images/icons/icon-2.webp') }}" alt="Email Icon" loading="lazy" />
-                    </span><br>
-                    <a href="mailto:info@opplexiptv.com">{{ __('messages.footer_email_1') }}</a><br>
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="{{ asset('images/icons/icon-3.webp') }}" alt="Address Icon" loading="lazy" />
-                    </span><br>
-                    {{ __('messages.footer_address') }}
-                </li>
-            </ul>
-
-            <!-- Social Box -->
-            <ul class="social-box"
-                style="display:flex; justify-content:{{ $isRtl ? 'flex-end' : 'flex-start' }}; gap:10px;">
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
-                        target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                        rel="noopener noreferrer" aria-label="Instagram"></a>
-                </li>
+            <ul class="fx-social">
+                <li><a href="https://www.facebook.com/profile.php?id=61565476366548"  class="fx-social__btn" aria-label="Facebook"  target="_blank" rel="noopener"><i class="fa fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/digitalize-store/"       class="fx-social__btn" aria-label="LinkedIn"  target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/oplextv/"                       class="fx-social__btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </div>
-    </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-        <div class="auto-container">
-            <div class="copyright">
-                &copy; 2022 - {{ date('Y') }} Opplex IPTV. {{ __('messages.footer_rights') }}
+        <!-- Mid: grid -->
+        <div class="fx-grid">
+            <!-- Contact -->
+            <div class="fx-col">
+                <h4 class="fx-title">{{ $isRtl ? 'رابطہ' : 'Contact' }}</h4>
+                <ul class="fx-list">
+                    <li class="fx-list__item">
+                        <span class="fx-list__icon">📱</span>
+                        <a href="https://wa.me/16393903194?text={{ urlencode($waText) }}" target="_blank" rel="noopener" class="fx-link">{{ $tPhone }}</a>
+                    </li>
+                    <li class="fx-list__item">
+                        <span class="fx-list__icon">✉️</span>
+                        <a href="mailto:info@opplexiptv.com" class="fx-link">{{ $tEmail }}</a>
+                    </li>
+                    <li class="fx-list__item">
+                        <span class="fx-list__icon">📍</span>
+                        <span>{{ $tAddress }}</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="fx-col">
+                <h4 class="fx-title">{{ $isRtl ? 'کمپنی' : 'Company' }}</h4>
+                <ul class="fx-list">
+                    <li><a class="fx-link" href="{{ url('/about-us') }}">{{ $isRtl ? 'ہمارے بارے میں' : 'About Us' }}</a></li>
+                    <li><a class="fx-link" href="{{ url('/contact-us') }}">{{ $isRtl ? 'ہم سے رابطہ' : 'Contact Us' }}</a></li>
+                    <li><a class="fx-link" href="{{ url('/faq') }}">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="fx-col">
+                <h4 class="fx-title">{{ $isRtl ? 'قانونی' : 'Legal' }}</h4>
+                <ul class="fx-list">
+                    <li><a class="fx-link" href="{{ url('/terms-of-service') }}">{{ $isRtl ? 'سروس کی شرائط' : 'Terms of Service' }}</a></li>
+                    <li><a class="fx-link" href="{{ url('/privacy-policy') }}">{{ $isRtl ? 'رازداری پالیسی' : 'Privacy Policy' }}</a></li>
+                    <li><a class="fx-link" href="{{ url('/refund-policy') }}">{{ $isRtl ? 'ریفنڈ و منسوخی' : 'Refund & Cancellation' }}</a></li>
+                </ul>
+            </div>
+
+            <!-- Payments -->
+            <div class="fx-col fx-col--payments">
+                <h4 class="fx-title">{{ $isRtl ? 'ادائیگیاں' : 'Payments' }}</h4>
+                <ul class="fx-pay">
+                    <li><img src="{{ asset('images/payments/visa.png') }}"  alt="Visa"  width="50" loading="lazy"></li>
+                    <li><img src="{{ asset('images/payments/mastercard.png') }}"  alt="Mastercard" width="50" loading="lazy"></li>
+                    <li><img src="{{ asset('images/payments/cryptomus.png') }}"  alt="Cryptomus"  width="50" loading="lazy"></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="fx-footer__bottom">
+            <div class="fx-copy">&copy; 2022 - {{ date('Y') }} <strong>Opplex IPTV</strong>. {{ $tRights }}</div>
+            <div class="fx-legal-note">
+                {{ $isRtl
+                    ? 'کرپٹو ادائیگیوں کا استعمال مقامی قوانین کے مطابق ہونا چاہیے۔ مزید معلومات کے لیے Privacy Policy اور ریفنڈ پالیسی دیکھیں۔'
+                    : 'Use of crypto payments must comply with your local laws. See our Privacy Policy and Refund policies for details.' }}
             </div>
         </div>
     </div>
 </footer>
-<!-- End Main Footer -->
+<!-- ======= /Pro Footer v2 ======= -->
+
 
 </div><!-- End pagewrapper -->
 
