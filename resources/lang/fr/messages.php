@@ -2,9 +2,9 @@
 
 return [
     'subtitle' => 'Streaming IPTV illimité pour l’Europe avec IPTV stream player et IPTV smart player',
-    'heading-mobile' => 'Regardez 12 000+ chaînes en direct, 50k+ films, et accédez à IPTV box et IPTV pro instantanément',
-    'description_prefix' => 'Découvrez l’IPTV premium en Europe avec Xtream IPTV, IPTV smart player, IPTV m3u et plus',
-    'description_suffix' => '— films et séries en français, hindi, anglais et italien en HD & 4K. Compatible avec IPTV player et décodeur IPTV avec code.',
+    'heading-mobile' => 'Regardez des chaînes en direct et du contenu à la demande avec nos applications IPTV légales',
+    'description_prefix' => 'Accédez à un IPTV légal avec flux 4K en direct et contenu à la demande via nos applications IPTV',
+    'description_suffix' => '— service légal et sous licence ; essayez notre application et boîtier IPTV avec essai gratuit dans les régions éligibles (hors États-Unis).',
 
     'see_pricing' => 'Obtenez IPTV Now',
     'start_trial' => 'Accès Essai Base',

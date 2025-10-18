@@ -51,6 +51,7 @@
 <title>{{ $metaTitle }}</title>
 <meta name="description" content="{{ $metaDescription }}">
 <meta name="keywords" content="{{ $keywords }}">
+<meta name="cryptomus" content="72ee2329" />
 
 @if ($shouldNoindex)
     <meta name="robots" content="noindex,follow">

@@ -2,9 +2,9 @@
 
 return [
   'subtitle' => 'Beste IPTV | 4K Streaming | Gratis Proefperiode | Smart IPTV Player',
-  'heading-mobile' => 'Stream 12.000+ Live Kanalen & 50k Films met Beste IPTV Apps',
-  'description_prefix' => 'Toegang tot de beste IPTV met 4K live IPTV, aroma IPTV en xtreme HD IPTV via',
-  'description_suffix' => '— probeer onze IPTV smart player & IPTV box met gratis proefperiode in Europa & de VS.',
+  'heading-mobile' => 'Stream live-zenders en on-demand content met onze legale IPTV-apps',
+  'description_prefix' => 'Krijg toegang tot legale IPTV met 4K live-streams en on-demand content via onze IPTV-apps',
+  'description_suffix' => '— legale, gelicentieerde dienst; probeer onze IPTV-app en IPTV-box met proefperiode in in aanmerking komende regio’s (uitgezonderd VS).',
   'start_trial' => 'Basis Proeftoegang',
   'see_pricing' => 'Claim IPTV Box Nu',
   'explore_more' => 'Koop IPTV Films & Series',

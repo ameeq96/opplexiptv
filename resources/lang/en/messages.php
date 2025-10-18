@@ -3,8 +3,8 @@
 return [
   'subtitle' => 'Best IPTV | 4K Streaming | Free Trial | Smart IPTV Player',
   'heading-mobile' => 'Stream live channels & on-demand content with our Legal IPTV apps',
-  'description_prefix' => 'Access the best IPTV with 4K live IPTV, aroma IPTV, and xtreme HD IPTV via',
-  'description_suffix' => '— try our IPTV smart player & IPTV box with free trial in eligible regions (ex-US).',
+'description_prefix' => 'Access legal IPTV with 4K live streams and on-demand content via our IPTV apps',
+'description_suffix' => '— legal, licensed service; try our IPTV app & IPTV box with a free trial in eligible regions (ex-US).',
   'start_trial' => 'Basic Trial Access',
   'see_pricing' => 'Claim IPTV Box Now',
   'explore_more' => 'Buy IPTV Movies & Series',

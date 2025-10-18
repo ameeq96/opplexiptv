@@ -2,9 +2,9 @@
 
 return [
   'subtitle' => 'Melhor IPTV | Streaming 4K | Teste Gratuito | Smart IPTV Player',
-  'heading-mobile' => 'Assista a mais de 12.000 canais ao vivo e 50k filmes com os melhores apps IPTV',
-  'description_prefix' => 'Acesse o melhor IPTV com 4K ao vivo, aroma IPTV e xtreme HD IPTV via',
-  'description_suffix' => '— experimente nosso IPTV smart player & IPTV box com teste gratuito na Europa e EUA.',
+  'heading-mobile' => 'Assista a canais ao vivo e conteúdo sob demanda com nossos apps de IPTV legais',
+  'description_prefix' => 'Acesse IPTV legal com transmissões ao vivo em 4K e conteúdo sob demanda via nossos apps de IPTV',
+  'description_suffix' => '— serviço legal e licenciado; experimente nosso app e TV box IPTV com período de teste em regiões elegíveis (exceto EUA).',
   'start_trial' => 'Acesso ao Teste Básico',
   'see_pricing' => 'Adquirir IPTV Box Agora',
   'explore_more' => 'Comprar Filmes & Séries IPTV',
