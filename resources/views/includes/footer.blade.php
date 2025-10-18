@@ -61,9 +61,9 @@
             <div class="fx-col">
                 <h4 class="fx-title">{{ $isRtl ? 'کمپنی' : 'Company' }}</h4>
                 <ul class="fx-list">
-                    <li><a class="fx-link" href="{{ url('/about-us') }}">{{ $isRtl ? 'ہمارے بارے میں' : 'About Us' }}</a></li>
-                    <li><a class="fx-link" href="{{ url('/contact-us') }}">{{ $isRtl ? 'ہم سے رابطہ' : 'Contact Us' }}</a></li>
-                    <li><a class="fx-link" href="{{ url('/faq') }}">FAQ</a></li>
+                    <li><a class="fx-link" href="{{ url('/about') }}">{{ $isRtl ? 'ہمارے بارے میں' : 'About Us' }}</a></li>
+                    <li><a class="fx-link" href="{{ url('/contact') }}">{{ $isRtl ? 'ہم سے رابطہ' : 'Contact Us' }}</a></li>
+                    <li><a class="fx-link" href="{{ url('/faqs') }}">FAQ</a></li>
                 </ul>
             </div>
 
