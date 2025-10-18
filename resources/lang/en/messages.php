@@ -2,9 +2,9 @@
 
 return [
   'subtitle' => 'Best IPTV | 4K Streaming | Free Trial | Smart IPTV Player',
-  'heading-mobile' => 'Stream 12,000+ Live Channels & 50k Movies with Best IPTV Apps',
+  'heading-mobile' => 'Stream live channels & on-demand content with our Legal IPTV apps',
   'description_prefix' => 'Access the best IPTV with 4K live IPTV, aroma IPTV, and xtreme HD IPTV via',
-  'description_suffix' => '— try our IPTV smart player & IPTV box with free trial across Europe & USA.',
+  'description_suffix' => '— try our IPTV smart player & IPTV box with free trial in eligible regions (ex-US).',
   'start_trial' => 'Basic Trial Access',
   'see_pricing' => 'Claim IPTV Box Now',
   'explore_more' => 'Buy IPTV Movies & Series',
