@@ -2,9 +2,9 @@
 
 return [
   'subtitle' => 'Best IPTV | 4K स्ट्रीमिंग | Free Trial | Smart IPTV Player',
-  'heading-mobile' => 'हमारे कानूनी IPTV ऐप्स के साथ लाइव चैनल और ऑन-डिमांड सामग्री स्ट्रीम करें',
-  'description_prefix' => 'हमारी कानूनी IPTV सेवा का उपयोग करें—4K लाइव स्ट्रीम और ऑन-डिमांड सामग्री हमारी IPTV ऐप्स के माध्यम से',
-  'description_suffix' => '— कानूनी, लाइसेंसधारी सेवा; पात्र क्षेत्रों (US को छोड़कर) में फ्री ट्रायल के साथ हमारी IPTV ऐप और IPTV बॉक्स आज़माएँ।',
+  'heading-mobile' => '12,000+ लाइव चैनल्स और 50k मूवीज़ स्ट्रीम करें Best IPTV ऐप्स के साथ',
+  'description_prefix' => 'सबसे अच्छा IPTV पाएं 4K लाइव IPTV, aroma IPTV और xtreme HD IPTV के साथ',
+  'description_suffix' => '— यूरोप और USA में Free Trial के साथ IPTV Smart Player और IPTV Box ट्राई करें।',
   'start_trial' => 'बेसिक ट्रायल एक्सेस',
   'see_pricing' => 'अभी IPTV बॉक्स पाएं',
   'explore_more' => 'IPTV मूवीज़ और सीरीज़ खरीदें',

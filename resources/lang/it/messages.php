@@ -3,7 +3,7 @@
 return [
     'site_title' => 'Opplex IPTV - Guarda in Modo Intelligente con IPTV Smarters e Smart IPTV',
     'subtitle' => 'Streaming IPTV illimitato per l’Europa con Smart IPTV e IPTV Smarters Pro',
-    'heading-mobile' => 'Guarda canali live e contenuti on-demand con le nostre app IPTV legali',
+    'heading-mobile' => 'Guarda oltre 12.000 canali live e 50k+ film subito con IPTV Extreme e Smart IPTV',
     'description_prefix' => 'Scopri l’IPTV premium in Europa con IPTV Smarters, IPTV Extreme e le migliori liste IPTV',
     'description_suffix' => '— contenuti in italiano, hindi, inglese e francese in HD e 4K. Supporta anche liste IPTV Sky e DAZN da Telegram.',
 
