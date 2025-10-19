@@ -87,7 +87,7 @@
                                 <div class="text">{{ $movie['safe_overview'] }}</div>
 
                                 <div class="btns-box {{ $isRtl ? 'text-right' : 'text-left' }}">
-                                    <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}"
+                                    <a target="__blank" href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}"
                                         class="theme-btn btn-style-two {{ $isRtl ? 'rtl-btn' : 'ltr-btn' }}">
                                         <span class="txt">
                                             {{ __('messages.explore_more') }}
