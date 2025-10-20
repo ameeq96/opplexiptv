@@ -104,6 +104,8 @@
 
 </div><!-- End pagewrapper -->
 
+@include('includes.spin-popup')
+
 <div class="scroll-to-top scroll-to-target" data-target="html" aria-label="Scroll to top">
     <span class="fa fa-arrow-up" aria-hidden="true"></span>
 </div>
@@ -126,6 +128,7 @@
 
 <!-- Local scripts last -->
 <script src="{{ asset('js/nav-tool.js') }}" defer></script>
+<script src="{{ asset('js/discount-wheel.js') }}" defer></script>
 <script src="{{ asset('js/script.js') }}" defer></script>
 
 <script>

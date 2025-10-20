@@ -422,4 +422,17 @@ return [
   'subheadingcontact' => 'Contact support — 24/7 chat, WhatsApp, email, billing & technical help',
   'movies_subheading' => 'Browse Movies, Series & Cartoons',
 
+  'discount_title'   => 'Grab your discount 🎉',
+  'discount_sub'     => 'Spin the wheel to get :percents',
+  'spin_now'         => 'Spin now',
+  'spin_center'      => 'SPIN',
+  'off'              => 'OFF',
+  'good_luck'        => 'Good luck!',
+  'congrats'         => 'Congratulations! Your discount is ready.',
+  'already_unlocked' => 'Discount already unlocked: :value%',
+  'whatsapp_message' => 'Hello, I got :discount% discount. Can you activate my subscription?',
+  'whatsapp_btn'     => 'Send on WhatsApp (attach screenshot)',
+  'close'            => 'Close',
+  'require_screenshot' => 'Please send the screenshot of your spin on WhatsApp; otherwise the discount will not be given.',
+
 ];

@@ -419,4 +419,17 @@ return [
   'subheadingcontact' => 'Contact & ondersteuning — 24/7 chat, WhatsApp, e-mail, facturatie en technische hulp',
   'movies_subheading' => 'Blader door films, series en cartoons',
 
+  'discount_title'   => 'Pak je korting 🎉',
+  'discount_sub'     => 'Draai aan het rad en ontvang: :percents',
+  'spin_now'         => 'Nu draaien',
+  'spin_center'      => 'DRAAI',
+  'off'              => 'korting',
+  'good_luck'        => 'Veel succes!',
+  'congrats'         => 'Gefeliciteerd! Je korting is klaar.',
+  'already_unlocked' => 'Korting al vrijgegeven: :value%',
+  'whatsapp_message' => 'Hallo, ik heb :discount% korting gekregen. Kunnen jullie mijn abonnement activeren?',
+  'whatsapp_btn'     => 'Versturen via WhatsApp (screenshot bijvoegen)',
+  'close'            => 'Sluiten',
+  'require_screenshot' => 'Stuur de screenshot van je draai via WhatsApp; anders wordt de korting niet toegekend.',
+
 ];

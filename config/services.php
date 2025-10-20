@@ -47,5 +47,8 @@ return [
         'tag_manager_id' => env('GTM_CONTAINER_ID'),
         'analytics_id'   => env('GA_MEASUREMENT_ID'),
     ],
+    'discount' => [
+        'phone' => env('DISCOUNT_WA_PHONE', '16393903194'),
+    ],
 
 ];

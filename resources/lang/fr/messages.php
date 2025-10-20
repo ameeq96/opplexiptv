@@ -419,5 +419,16 @@ return [
     'subheadingcontact' => 'Contact & support — chat 24/7, WhatsApp, e-mail, facturation et assistance technique',
     'movies_subheading' => 'Parcourez films, séries et dessins animés',
 
-
+    'discount_title'   => 'Profitez de votre réduction 🎉',
+    'discount_sub'     => 'Faites tourner la roue pour obtenir :percents',
+    'spin_now'         => 'Lancer',
+    'spin_center'      => 'TOURNEZ',
+    'off'              => 'de réduction',
+    'good_luck'        => 'Bonne chance !',
+    'congrats'         => 'Félicitations ! Votre réduction est prête.',
+    'already_unlocked' => 'Réduction déjà débloquée : :value%',
+    'whatsapp_message' => 'Bonjour, j’ai obtenu :discount% de réduction. Pouvez-vous activer mon abonnement ?',
+    'whatsapp_btn'     => 'Envoyer sur WhatsApp (joindre une capture)',
+    'close'            => 'Fermer',
+    'require_screenshot' => 'Veuillez envoyer la capture d’écran de votre tour sur WhatsApp ; sinon la remise ne sera pas accordée.',
 ];

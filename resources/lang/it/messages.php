@@ -414,4 +414,17 @@ return [
     'subheadingcontact' => 'Contatti e supporto — chat 24/7, WhatsApp, e-mail, fatturazione e assistenza tecnica',
     'movies_subheading' => 'Sfoglia film, serie e cartoni',
 
+    'discount_title'   => 'Prendi il tuo sconto 🎉',
+    'discount_sub'     => 'Gira la ruota per ottenere: :percents',
+    'spin_now'         => 'Gira ora',
+    'spin_center'      => 'GIRA',
+    'off'              => 'di sconto',
+    'good_luck'        => 'Buona fortuna!',
+    'congrats'         => 'Congratulazioni! Il tuo sconto è pronto.',
+    'already_unlocked' => 'Sconto già sbloccato: :value%',
+    'whatsapp_message' => 'Ciao, ho ottenuto uno sconto del :discount%. Potete attivare il mio abbonamento?',
+    'whatsapp_btn'     => 'Invia su WhatsApp (allega screenshot)',
+    'close'            => 'Chiudi',
+    'require_screenshot' => 'Invia lo screenshot del tuo spin su WhatsApp; altrimenti lo sconto non verrà applicato.',
+
 ];
