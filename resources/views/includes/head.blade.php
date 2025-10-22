@@ -6,6 +6,14 @@
 @php
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
+    function v(string $path)
+    {
+        $rel = ltrim($path, '/');
+        $full = public_path($rel);
+        $ver = is_file($full) ? filemtime($full) : time();
+        return asset($rel) . '?v=' . $ver;
+    }
+
     $route = Request::route() ? Request::route()->getName() : 'home';
     $locale = app()->getLocale();
     $meta = trans("meta.$route");
@@ -66,7 +74,7 @@
 <meta property="og:description" content="{{ $metaDescription }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ $canonical }}">
-<meta property="og:image" content="{{ asset('images/background/7.webp') }}">
+<meta property="og:image" content="{{ v('images/background/7.webp') }}">
 <meta name="facebook-domain-verification" content="rnsb3eqoa06k3dwo6gyqpphgu2imo2" />
 
 <link rel="canonical" href="{{ $canonical }}">
@@ -96,16 +104,15 @@
 
 @yield('jsonld')
 
-<link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/fav-icon.webp') }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.webp') }}">
+<link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
-<link rel="preload" href="{{ asset('css/style.css') }}" as="style">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
     crossorigin>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ asset('css/discount-wheel.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
 
 @php
     $nonCriticalStyles = [
@@ -136,7 +143,9 @@
 <link rel="stylesheet" href="{{ asset('css/fonts.css') }}" media="all">
 
 @if (!empty($displayMovies[0]['webp_image_url'] ?? null))
-    <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
+    <link rel="preload" as="image"
+        href="{{ !empty($displayMovies[0]['webp_image_url']) ? $displayMovies[0]['webp_image_url'] : v('images/placeholder.webp') }}"
+        fetchpriority="high">
 @endif
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
