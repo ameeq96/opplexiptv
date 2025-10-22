@@ -86,4 +86,9 @@ return [
         'description' => 'Consulta nuestra política de reembolsos para IPTV legal: período de elegibilidad, artículos no reembolsables, cancelaciones y cómo solicitar un reembolso.',
         'keywords'    => 'reembolso IPTV, política de devolución, cancelación IPTV, Opplex IPTV reembolso',
     ],
+     'shop' => [
+        'title'       => 'Tienda | Dispositivos de streaming y accesorios de TV – Android TV Box, Fire TV, Roku y más',
+        'description' => 'Explora una selección de equipos para streaming y televisión: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick y Ultra, además de soportes de pared y mandos de repuesto para Samsung y VIZIO. Compatibilidad con 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E y H.265. Compra de forma segura con enlaces de Amazon.',
+        'keywords'    => 'tienda streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, mando Samsung repuesto, VIZIO XRT136, soporte de pared TV, Mounting Dream MD2380, INSIGNIA F40, accesorios TV, Amazon',
+    ],
 ];

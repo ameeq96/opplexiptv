@@ -64,3 +64,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Performance Tips
+
+- Use cached config, routes, and views in production:
+  - `php artisan config:cache`
+  - `php artisan route:cache`
+  - `php artisan view:cache`
+- Optimize Composer autoloading for deploys:
+  - `composer install --no-dev --optimize-autoloader`
+- Enable OPcache in your PHP runtime and set `APP_ENV=production`, `APP_DEBUG=false` in `.env`.
+- Use queues for email and heavy tasks; set `QUEUE_CONNECTION=database` or a faster driver and run `php artisan queue:work`.

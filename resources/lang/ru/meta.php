@@ -86,4 +86,9 @@ return [
         'description' => 'Ознакомьтесь с политикой возврата Opplex IPTV: условия, невозвратные услуги и как подать заявку на возврат.',
         'keywords'    => 'возврат IPTV, Opplex IPTV, политика возврата, отмена подписки, поддержка IPTV',
     ],
+    'shop' => [
+        'title'       => 'Магазин | Приставки для стриминга и аксессуары для ТВ – Android TV Box, Fire TV, Roku',
+        'description' => 'Подборка устройств для стриминга и ТВ: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick и Ultra, а также настенные кронштейны и пульты-замены для Samsung и VIZIO. Поддержка 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E и H.265. Покупки по ссылкам Amazon.',
+        'keywords'    => 'магазин стриминга, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, смарт-ТВ, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, пульт Samsung, VIZIO XRT136, настенный кронштейн для ТВ, Mounting Dream MD2380, INSIGNIA F40, аксессуары для ТВ, Amazon',
+    ],
 ];

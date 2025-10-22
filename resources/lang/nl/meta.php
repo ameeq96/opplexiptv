@@ -86,4 +86,9 @@ return [
         'description' => 'Bekijk ons restitutiebeleid voor IPTV-abonnementen: voorwaarden, niet-restitueerbare items en annuleringsregels.',
         'keywords'    => 'refund IPTV, Opplex IPTV, retourbeleid, annulering IPTV',
     ],
+    'shop' => [
+        'title'       => 'Shop | Streamingapparaten & tv-accessoires – Android TV Box, Fire TV, Roku',
+        'description' => 'Ontdek een selectie streaming- en tvproducten: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick en Ultra, plus muurbeugels en vervangende afstandsbedieningen voor Samsung en VIZIO. Ondersteuning voor 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E en H.265. Veilig kopen via Amazon-links.',
+        'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart tv, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung afstandsbediening, VIZIO XRT136, tv-muurbeugel, Mounting Dream MD2380, INSIGNIA F40, tv-accessoires, Amazon',
+    ],
 ];

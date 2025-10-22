@@ -86,4 +86,9 @@ return [
         'description' => 'Opplex IPTV کی ریفنڈ پالیسی دیکھیں: اہلیت کی شرائط، نان ریفنڈیبل آئٹمز اور ریفنڈ کے لیے درخواست دینے کا طریقہ۔',
         'keywords'    => 'Opplex IPTV ریفنڈ، ریٹرن پالیسی، کینسلیشن IPTV، سپورٹ IPTV',
     ],
+    'shop' => [
+        'title'       => 'شاپ | اسٹریمنگ ڈیوائسز اور ٹی وی لوازمات – Android TV Box، Fire TV، Roku',
+        'description' => 'اسٹریمِنگ اور ٹی وی کے منتخب پراڈکٹس دیکھیں: Android TV Box، Fire TV Stick 4K Max، Roku Streaming Stick اور Roku Ultra۔ ساتھ میں ٹی وی وال ماؤنٹ اور Samsung/VIZIO کے متبادل ریموٹ۔ 4K/6K، HDR10+/Dolby Vision، Dolby Atmos، Wi-Fi 6/6E اور H.265 کی سپورٹ۔ Amazon لنکس کے ذریعے پُراعتماد خریداری۔',
+        'keywords'    => 'اسٹریمنگ شاپ, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, اسمارٹ ٹی وی, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung ریموٹ, VIZIO XRT136, ٹی وی وال ماؤنٹ, Mounting Dream MD2380, INSIGNIA F40, ٹی وی ایکسِسریز, Amazon',
+    ],
 ];

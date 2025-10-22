@@ -434,5 +434,6 @@ return [
   'whatsapp_btn'     => 'Send on WhatsApp (attach screenshot)',
   'close'            => 'Close',
   'require_screenshot' => 'Please send the screenshot of your spin on WhatsApp; otherwise the discount will not be given.',
+  'our_products' => 'Our Products',
 
 ];

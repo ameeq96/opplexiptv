@@ -12,7 +12,7 @@ use Carbon\Carbon;
 
 class OrderController extends Controller
 {
-    use HelperFunction;
+    use HelperFunction { bulkDelete as helperBulkDelete; }
 
     public function __construct(
         private OrderService $orders,
@@ -71,7 +71,7 @@ class OrderController extends Controller
 
     public function bulkDelete(Request $request)
     {
-        return $this->bulkDelete($request, 'order_ids', $this->orders);
+        return $this->helperBulkDelete($request, 'order_ids', $this->orders);
     }
 
     public function bulkAction(Request $request)

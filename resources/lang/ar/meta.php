@@ -86,4 +86,9 @@ return [
         'description' => 'تعرف على سياسة الاسترداد الخاصة بـ Opplex IPTV: شروط الاستحقاق، والخدمات غير القابلة للاسترداد، وكيفية طلب استرداد.',
         'keywords'    => 'استرداد IPTV, Opplex IPTV, سياسة الإرجاع, إلغاء الاشتراك, دعم IPTV',
     ],
+    'shop' => [
+        'title'       => 'متجر أجهزة البث والملحقات التلفزيونية | Android TV Box وFire TV وRoku وملحقاتها',
+        'description' => 'اكتشف مجموعة مختارة من أجهزة البث والتلفزيون: Android TV Box، Fire TV Stick 4K Max، Roku Streaming Stick وRoku Ultra، بالإضافة إلى حوامل الجدار للتلفاز وريموتات بديلة لسامسونج وVIZIO. دعم 4K/6K وHDR10+/Dolby Vision وWi-Fi 6/6E وH.265. روابط شراء موثوقة عبر Amazon.',
+        'keywords'    => 'متجر أجهزة البث, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, تلفزيون ذكي, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, ريموت سامسونج بديل, ريموت VIZIO XRT136, حامل تلفاز جداري, Mounting Dream MD2380, INSIGNIA F40, إكسسوارات التلفاز, شراء Amazon',
+    ],
 ];

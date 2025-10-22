@@ -426,5 +426,6 @@ return [
     'whatsapp_btn'     => 'Invia su WhatsApp (allega screenshot)',
     'close'            => 'Chiudi',
     'require_screenshot' => 'Invia lo screenshot del tuo spin su WhatsApp; altrimenti lo sconto non verrà applicato.',
+'our_products' => 'I nostri prodotti',
 
 ];

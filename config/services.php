@@ -50,5 +50,6 @@ return [
     'discount' => [
         'phone' => env('DISCOUNT_WA_PHONE', '16393903194'),
     ],
+    'amazon_affiliate_tag' => env('AMAZON_AFFILIATE_TAG', 'opplexstore-20'),
 
 ];

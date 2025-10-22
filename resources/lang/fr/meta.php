@@ -86,4 +86,9 @@ return [
         'description' => 'Consultez notre politique de remboursement pour les abonnements IPTV légaux : conditions, non-remboursables et procédure de demande.',
         'keywords'    => 'remboursement IPTV, Opplex IPTV, politique de retour, annulation IPTV',
     ],
+    'shop' => [
+        'title'       => 'Boutique | Lecteurs de streaming & accessoires TV – Android TV Box, Fire TV, Roku…',
+        'description' => 'Découvrez une sélection d’appareils pour le streaming et la TV : Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick et Ultra, ainsi que supports muraux et télécommandes de remplacement pour Samsung et VIZIO. Prise en charge 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E et H.265. Achats via liens Amazon.',
+        'keywords'    => 'boutique streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, télécommande Samsung, VIZIO XRT136, support mural TV, Mounting Dream MD2380, INSIGNIA F40, accessoires TV, Amazon',
+    ],
 ];

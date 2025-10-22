@@ -433,5 +433,5 @@ return [
   'whatsapp_btn'     => 'Enviar por WhatsApp (adjunta captura)',
   'close'            => 'Cerrar',
   'require_screenshot' => 'Envía la captura de pantalla de tu giro por WhatsApp; de lo contrario no se aplicará el descuento.',
-
+  'our_products' => 'Nuestros productos',
 ];

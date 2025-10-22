@@ -88,4 +88,9 @@ return [
         'description' => 'View our Refund & Return Policy for legal IPTV subscriptions: eligibility window, non-refundable items, cancellation terms, and how to request a refund via support.',
         'keywords'    => 'Opplex IPTV refund, IPTV return policy, refund eligibility, cancellation policy, non-refundable, IPTV support, request refund',
     ],
+    'shop' => [
+        'title'       => 'Shop | Streaming Devices & TV Accessories – Android TV Box, Fire TV, Roku & More',
+        'description' => 'Discover a curated selection of streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and replacement remotes for Samsung and VIZIO. Support for 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E, and H.265. Buy confidently via Amazon links.',
+        'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung remote replacement, VIZIO XRT136 remote, TV wall mount, Mounting Dream MD2380, INSIGNIA F40, TV accessories, Amazon',
+    ],
 ];

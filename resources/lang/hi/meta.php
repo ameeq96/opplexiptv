@@ -86,4 +86,9 @@ return [
         'description' => 'हमारी IPTV रिफंड नीति पढ़ें: पात्रता, गैर-रिफंड योग्य आइटम और रिफंड का अनुरोध कैसे करें।',
         'keywords'    => 'Opplex IPTV रिफंड, रिटर्न नीति, कैंसिलेशन IPTV, सपोर्ट IPTV',
     ],
+    'shop' => [
+        'title'       => 'शॉप | स्ट्रीमिंग डिवाइस और टीवी एक्सेसरीज़ – Android TV Box, Fire TV, Roku',
+        'description' => 'Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick और Roku Ultra सहित चुनिंदा स्ट्रीमिंग/टीवी प्रोडक्ट्स देखें। साथ ही TV वॉल माउंट व Samsung/VIZIO के रिप्लेसमेंट रिमोट। 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E और H.265 सपोर्ट। Amazon लिंक से भरोसेमंद ख़रीदारी।',
+        'keywords'    => 'स्ट्रीमिंग शॉप, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, स्मार्ट टीवी, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, सैमसंग रिमोट, VIZIO XRT136, TV वॉल माउंट, Mounting Dream MD2380, INSIGNIA F40, टीवी एक्सेसरीज़, Amazon',
+    ],
 ];

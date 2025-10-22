@@ -86,4 +86,9 @@ return [
         'description' => 'Consulta la nostra politica di rimborso per abbonamenti IPTV legali: termini, esclusioni e procedura di richiesta.',
         'keywords'    => 'rimborso IPTV, Opplex IPTV, politica resi, cancellazione IPTV',
     ],
+    'shop' => [
+        'title'       => 'Shop | Dispositivi di streaming e accessori TV – Android TV Box, Fire TV, Roku',
+        'description' => 'Scopri una selezione di prodotti per lo streaming e la TV: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick e Ultra, oltre a supporti da parete e telecomandi sostitutivi per Samsung e VIZIO. Supporto 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E e H.265. Acquisti sicuri tramite link Amazon.',
+        'keywords'    => 'shop streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, telecomando Samsung, VIZIO XRT136, staffa TV a parete, Mounting Dream MD2380, INSIGNIA F40, accessori TV, Amazon',
+    ],
 ];

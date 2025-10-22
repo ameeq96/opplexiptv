@@ -431,5 +431,6 @@ return [
   'whatsapp_btn'     => 'Versturen via WhatsApp (screenshot bijvoegen)',
   'close'            => 'Sluiten',
   'require_screenshot' => 'Stuur de screenshot van je draai via WhatsApp; anders wordt de korting niet toegekend.',
+'our_products' => 'Onze producten',
 
 ];

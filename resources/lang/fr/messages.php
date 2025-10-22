@@ -431,4 +431,6 @@ return [
     'whatsapp_btn'     => 'Envoyer sur WhatsApp (joindre une capture)',
     'close'            => 'Fermer',
     'require_screenshot' => 'Veuillez envoyer la capture d’écran de votre tour sur WhatsApp ; sinon la remise ne sera pas accordée.',
+    'our_products' => 'Nos produits',
+
 ];

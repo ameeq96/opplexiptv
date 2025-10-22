@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 class PanelOrderController extends Controller
 {
-    use HelperFunction;
+    use HelperFunction { bulkDelete as helperBulkDelete; }
 
     public function __construct(
         private PanelOrderQueryService $query,
@@ -88,5 +88,10 @@ class PanelOrderController extends Controller
         $msg = $this->bulk->handle($action, $ids, Auth::id());
 
         return back()->with(str_starts_with($msg, 'No') ? 'error' : 'success', $msg);
+    }
+
+    public function bulkDelete(Request $request)
+    {
+        return $this->helperBulkDelete($request, 'order_ids', $this->crud, $this->media, \App\Models\Order::class);
     }
 }

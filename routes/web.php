@@ -105,6 +105,7 @@ Route::group(
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
+        Route::get('shop', [HomeController::class, 'shop'])->name('shop');
 
         Route::post('send-email',     [HomeController::class, 'send'])->name('contact.send');
         Route::post('buy-now',        [HomeController::class, 'sendBuynow'])->name('buynow.send');
