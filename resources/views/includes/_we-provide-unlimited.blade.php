@@ -8,15 +8,15 @@
                     <div class="images-column col-lg-7 col-md-12 col-sm-12" aria-hidden="true">
                         <div class="inner-column">
                             <div class="image wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <img src="{{ asset('images/resource/network-4.webp') }}" alt="IPTV streaming setup image" />
+                                <img src="{{ asset('images/resource/network-4.webp') }}" alt="IPTV streaming setup image" width="472" height="350" decoding="async" loading="lazy" />
                             </div>
                             <div class="image-two wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                                 <img src="{{ asset('images/resource/network-5.webp') }}"
-                                    alt="IPTV content preview screen" />
+                                    alt="IPTV content preview screen" width="472" height="350" decoding="async" loading="lazy" />
                             </div>
                             <div class="image-three titlt" data-tilt data-tilt-max="6">
                                 <img src="{{ asset('images/resource/network-3.webp') }}"
-                                    alt="High-quality IPTV connection graphic" />
+                                    alt="High-quality IPTV connection graphic" width="450" height="338" decoding="async" loading="lazy" />
                             </div>
                         </div>
                     </div>
