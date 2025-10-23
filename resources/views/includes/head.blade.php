@@ -164,11 +164,11 @@
     $deferredStyles = $nonCriticalStyles; // all noncritical are deferred to cut render-blocking
 @endphp
 
-<!-- All other theme CSS deferred to avoid blocking -->
-@foreach ($deferredStyles as $style)
+@foreach ($nonCriticalStyles as $style)
     <link rel="preload" href="{{ v("css/$style") }}" as="style">
 @endforeach
-@foreach ($deferredStyles as $style)
+
+@foreach ($nonCriticalStyles as $style)
     <link rel="preload" as="style" href="{{ v("css/$style") }}" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ v("css/$style") }}"></noscript>
 @endforeach
