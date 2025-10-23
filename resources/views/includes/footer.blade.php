@@ -127,9 +127,9 @@
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>
 
 <!-- Local scripts last -->
-<script src="{{ asset('js/nav-tool.js') }}" defer></script>
-<script src="{{ asset('js/discount-wheel.js') }}" defer></script>
-<script src="{{ asset('js/script.js') }}" defer></script>
+<script src="{{ v('js/nav-tool.js') }}" defer></script>
+<script src="{{ v('js/discount-wheel.js') }}" defer></script>
+<script src="{{ v('js/script.js') }}" defer></script>
 
 <script>
     (function() {
