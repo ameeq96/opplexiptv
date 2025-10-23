@@ -109,6 +109,11 @@
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://code.jquery.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style" crossorigin>
 <!-- Defer non‑critical Bootstrap styles to avoid render blocking -->
 <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin onload="this.onload=null;this.rel='stylesheet'">

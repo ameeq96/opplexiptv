@@ -126,10 +126,28 @@
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>
 
-<!-- Local scripts last -->
-<script src="{{ v('js/nav-tool.js') }}" defer></script>
-<script src="{{ v('js/discount-wheel.js') }}" defer></script>
-<script src="{{ v('js/script.js') }}" defer></script>
+<!-- Local scripts: load after onload/idle to avoid early reflow -->
+<script>
+  (function(){
+    function loadAll(){
+      var files = [
+        '{{ v('js/nav-tool.js') }}',
+        '{{ v('js/discount-wheel.js') }}',
+        '{{ v('js/script.js') }}'
+      ];
+      files.forEach(function(src){
+        var s = document.createElement('script');
+        s.src = src; s.async = true; // async so they don't block
+        document.body.appendChild(s);
+      });
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadAll, { timeout: 2000 });
+    } else {
+      window.addEventListener('load', loadAll, { once: true });
+    }
+  })();
+  </script>
 
 <script>
     (function() {
