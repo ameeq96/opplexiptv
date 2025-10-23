@@ -171,6 +171,7 @@
 
 <!-- Defer responsive and font-face CSS to reduce critical path -->
 <link rel="preload" as="style" href="{{ v('css/responsive.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="{{ v('css/cls-fixes.css') }}" media="all">
 <noscript><link rel="stylesheet" href="{{ v('css/responsive.css') }}"></noscript>
 <link rel="preload" as="style" href="{{ v('css/fonts.css') }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ v('css/fonts.css') }}"></noscript>
