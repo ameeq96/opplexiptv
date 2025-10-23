@@ -108,12 +108,17 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
-    crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style" crossorigin>
+<!-- Defer non‑critical Bootstrap styles to avoid render blocking -->
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin></noscript>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
+<!-- Keep core site CSS render‑blocking for stable initial paint -->
 <link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
+<!-- Discount wheel styles are non‑critical; load async -->
+<link rel="preload" as="style" href="{{ v('css/discount-wheel.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}"></noscript>
 
 @php
     $nonCriticalStyles = [
@@ -137,11 +142,15 @@
     <link rel="preload" href="{{ v("css/$style") }}" as="style">
 @endforeach
 @foreach ($nonCriticalStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
+    <link rel="preload" as="style" href="{{ v("css/$style") }}" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ v("css/$style") }}"></noscript>
 @endforeach
 
-<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
+<!-- Defer responsive and font-face CSS to reduce critical path -->
+<link rel="preload" as="style" href="{{ v('css/responsive.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ v('css/responsive.css') }}"></noscript>
+<link rel="preload" as="style" href="{{ v('css/fonts.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ v('css/fonts.css') }}"></noscript>
 
 @if (!empty($displayMovies[0]['webp_image_url'] ?? null))
     <link rel="preload" as="image"
@@ -149,7 +158,9 @@
         fetchpriority="high">
 @endif
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+<!-- Defer intlTelInput styles (not needed for above-the-fold) -->
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css"></noscript>
 
 <noscript>
     <link rel="stylesheet" href="{{ v('css/style.css') }}">
