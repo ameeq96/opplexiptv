@@ -57,6 +57,23 @@
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
 @endphp
 
+<!-- Critical inline: CLS guards + preloader styles -->
+<style>
+  /* Reserve space for common icon fonts to avoid CLS */
+  .fa{display:inline-block;width:1em;text-align:center}
+  .lnr{display:inline-block;width:1em;text-align:center}
+  /* Product images keep aspect while loading */
+  .product-card__image{width:100%;height:auto;aspect-ratio:466/350;object-fit:cover}
+  /* Preloader overlay */
+  html.is-loading{overflow-y:hidden}
+  .fx-preloader{position:fixed;inset:0;background:#0b1430;display:flex;align-items:center;justify-content:center;z-index:99999}
+  .fx-preloader__dot{width:12px;height:12px;margin:6px;border-radius:50%;background:#fff;opacity:.85;animation:fx-bounce .9s infinite ease-in-out}
+  .fx-preloader__dot:nth-child(2){animation-delay:.15s}
+  .fx-preloader__dot:nth-child(3){animation-delay:.3s}
+  @keyframes fx-bounce{0%,80%,100%{transform:scale(0)}40%{transform:scale(1)}}
+</style>
+<script>document.documentElement.classList.add('is-loading');</script>
+
 <title>{{ $metaTitle }}</title>
 <meta name="description" content="{{ $metaDescription }}">
 <meta name="keywords" content="{{ $keywords }}">
@@ -119,8 +136,9 @@
 <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin></noscript>
 
-<!-- Keep core site CSS render‑blocking for stable initial paint -->
-<link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
+<!-- Core site CSS loaded asynchronously (preloader covers initial paint) -->
+<link rel="preload" as="style" href="{{ v('css/style.css') }}" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ v('css/style.css') }}"></noscript>
 <!-- Discount wheel styles are non‑critical; load async -->
 <link rel="preload" as="style" href="{{ v('css/discount-wheel.css') }}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}"></noscript>
@@ -143,14 +161,10 @@
     ];
 
     // Keep navigation-related styles render-blocking to avoid CLS
-    $criticalStyles = ['global.css','header.css','font-awesome.css','linearicons.css'];
-    $deferredStyles = array_values(array_diff($nonCriticalStyles, $criticalStyles));
+    $deferredStyles = $nonCriticalStyles; // all noncritical are deferred to cut render-blocking
 @endphp
 
-@foreach ($criticalStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
-@endforeach
-<link rel="stylesheet" href="{{ v('css/cls-fixes.css') }}" media="all">
+<!-- All other theme CSS deferred to avoid blocking -->
 @foreach ($deferredStyles as $style)
     <link rel="preload" href="{{ v("css/$style") }}" as="style">
 @endforeach

@@ -14,6 +14,12 @@
 </head>
 
 <body>
+    <!-- Simple preloader overlay -->
+    <div id="fx-preloader" class="fx-preloader" aria-live="polite" aria-label="Loading">
+        <div class="fx-preloader__dot"></div>
+        <div class="fx-preloader__dot"></div>
+        <div class="fx-preloader__dot"></div>
+    </div>
 
     @include('includes.header')
 
@@ -33,6 +39,14 @@
     @yield('script')
 
     </div>
+    <script>
+      // Hide preloader once everything has loaded
+      window.addEventListener('load', function(){
+        document.documentElement.classList.remove('is-loading');
+        var el = document.getElementById('fx-preloader');
+        if(el){ el.style.opacity='0'; el.style.transition='opacity .25s ease'; setTimeout(function(){ el.parentNode && el.parentNode.removeChild(el); }, 260); }
+      });
+    </script>
 </body>
 
 </html>
