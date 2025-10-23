@@ -1,0 +1,6 @@
+/* CLS fixes: reserve space for icons and key images */
+.fa{display:inline-block;width:1em;text-align:center}
+.lnr{display:inline-block;width:1em;text-align:center}
+.product-card__image{width:100%;height:auto;aspect-ratio:466/350;object-fit:cover}
+/* Ensure header logo doesn’t stretch on swap */
+.logo img{height:auto}

@@ -141,12 +141,20 @@
         'jquery.fancybox.min.css',
         'jquery.mCustomScrollbar.min.css',
     ];
+
+    // Keep navigation-related styles render-blocking to avoid CLS
+    $criticalStyles = ['global.css','header.css','font-awesome.css','linearicons.css'];
+    $deferredStyles = array_values(array_diff($nonCriticalStyles, $criticalStyles));
 @endphp
 
-@foreach ($nonCriticalStyles as $style)
+@foreach ($criticalStyles as $style)
+    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
+@endforeach
+<link rel="stylesheet" href="{{ v('css/cls-fixes.css') }}" media="all">
+@foreach ($deferredStyles as $style)
     <link rel="preload" href="{{ v("css/$style") }}" as="style">
 @endforeach
-@foreach ($nonCriticalStyles as $style)
+@foreach ($deferredStyles as $style)
     <link rel="preload" as="style" href="{{ v("css/$style") }}" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ v("css/$style") }}"></noscript>
 @endforeach
