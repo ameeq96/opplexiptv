@@ -41,18 +41,10 @@
     </div>
     <script>
       // Hide preloader once everything has loaded
-      function hidePreloader(){
+      window.addEventListener('load', function(){
         document.documentElement.classList.remove('is-loading');
         var el = document.getElementById('fx-preloader');
         if(el){ el.style.opacity='0'; el.style.transition='opacity .25s ease'; setTimeout(function(){ el.parentNode && el.parentNode.removeChild(el); }, 260); }
-      }
-      window.addEventListener('load', function(){
-        if (window.__fxScriptsReady) { hidePreloader(); }
-        else {
-          // Wait until dynamic scripts finish, but cap wait to 4s
-          var t = setTimeout(hidePreloader, 4000);
-          window.addEventListener('fx:ready', function(){ clearTimeout(t); hidePreloader(); }, { once: true });
-        }
       });
     </script>
 </body>

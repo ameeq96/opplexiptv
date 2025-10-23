@@ -110,56 +110,44 @@
     <span class="fa fa-arrow-up" aria-hidden="true"></span>
 </div>
 
-<!-- Scripts: load all libraries and local scripts after idle/load to avoid early reflow -->
-<script>
-(function(){
-  function loadInOrder(urls, done){
-    var i = 0;
-    function next(){
-      if(i >= urls.length){ if(done) done(); return; }
-      var s = document.createElement('script');
-      s.src = urls[i++];
-      s.async = true;
-      s.onload = next; s.onerror = next;
-      document.body.appendChild(s);
-    }
-    next();
-  }
+<!-- Scripts: keep order; defer ensures execution after parse (preserves order across tags) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>
 
-  function loadAll(){
-    var cdn = [
-      'https://code.jquery.com/jquery-1.12.4.min.js',
-      'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js',
-      'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js',
-      'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js',
-      'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js',
-      'https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js',
-      'https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js'
-    ];
-    loadInOrder(cdn, function(){
-      var local = [
+<!-- Local scripts: load after onload/idle to avoid early reflow -->
+<script>
+  (function(){
+    function loadAll(){
+      var files = [
         '{{ v('js/nav-tool.js') }}',
         '{{ v('js/discount-wheel.js') }}',
         '{{ v('js/script.js') }}'
       ];
-      loadInOrder(local, function(){
-        try { window.__fxScriptsReady = true; window.dispatchEvent(new Event('fx:ready')); } catch(e) { window.__fxScriptsReady = true; }
+      files.forEach(function(src){
+        var s = document.createElement('script');
+        s.src = src; s.async = true; // async so they don't block
+        document.body.appendChild(s);
       });
-    });
-  }
-  if('requestIdleCallback' in window){
-    requestIdleCallback(loadAll, { timeout: 1500 });
-  }else{
-    window.addEventListener('load', loadAll, { once: true });
-  }
-})();
-</script>
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadAll, { timeout: 2000 });
+    } else {
+      window.addEventListener('load', loadAll, { once: true });
+    }
+  })();
+  </script>
 
 <script>
     (function() {
