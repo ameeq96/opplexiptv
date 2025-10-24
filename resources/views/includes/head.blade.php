@@ -99,62 +99,6 @@
 
 <style>
 
-
-/* Stabilize page height (fix .body_wrap spike on mobile) */
-.body_wrap {
-  min-height: 100svh;                /* avoid URL-bar jank */
-  content-visibility: auto;
-  contain: layout paint style;
-  contain-intrinsic-size: 800px;     /* safe fallback during first paint */
-}
-@supports (min-height: 100dvh) {
-  .body_wrap { min-height: 100dvh; }
-}
-
-/* Full-screen overlay that doesn't affect layout */
-.loader-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: grid;
-  place-items: center;
-  background: #fff;                  /* match your page bg to avoid flash */
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity .25s ease, visibility 0s linear 0s;
-}
-
-/* Spinner with intrinsic size (no CLS) */
-.spinner {
-  width: 64px;
-  height: 64px;
-  aspect-ratio: 1 / 1;
-  border: 6px solid rgba(0,0,0,.12);
-  border-top-color: currentColor;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* When page is ready, fade the overlay out without reflow */
-.page-ready .loader-overlay {
-  opacity: 0;
-  visibility: hidden;                /* hidden after fade, stays out of flow */
-  pointer-events: none;
-  transition: opacity .25s ease, visibility 0s linear .25s;
-}
-
-/* If your spinner is an <img> or <video>, size it so CLS = 0 */
-.loader-overlay img,
-.loader-overlay video {
-  display: block;
-  width: 64px;
-  height: 64px;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-}
-
     /* --- Viewport-stable wrapper --- */
 .body_wrap {
   /* Use small-viewport height to avoid address-bar jank on iOS/Chrome */
@@ -194,7 +138,6 @@ main { padding-top: var(--header-h); }  /* prevents push-down when header sticks
 
 /* If you use a JS slider (Swiper/Owl/etc.), lock its height early */
 .hero .swiper, .hero .owl-carousel { min-height: 520px; }
-
   /* Reserve space for small service icons (PNG/WebP/SVG) */
   .icon { display:inline-flex; width:48px; height:48px; line-height:0; }
   .icon img {
