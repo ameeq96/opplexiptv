@@ -98,6 +98,47 @@
 <link rel="canonical" href="{{ $canonical }}">
 
 <style>
+
+    /* --- Viewport-stable wrapper --- */
+.body_wrap {
+  /* Use small-viewport height to avoid address-bar jank on iOS/Chrome */
+  min-height: 100svh;
+  content-visibility: auto;          /* keeps off-screen layout from shifting */
+  contain: layout paint style;        /* isolate layout changes */
+  contain-intrinsic-size: 800px;     /* fallback size during early paint */
+}
+/* Prefer dvh if supported (most modern browsers) */
+@supports (height: 100dvh) {
+  .body_wrap { min-height: 100dvh; }
+}
+
+/* --- Sticky header: reserve the space from first paint --- */
+:root { --header-h: 64px; }          /* set to your real mobile header height */
+.header { position: sticky; top: 0; height: var(--header-h); }
+main { padding-top: var(--header-h); }  /* prevents push-down when header sticks */
+
+/* If you sometimes show a cookie/promo banner at the top, reserve a slot */
+.banner-slot { min-height: 48px; }   /* keep even when hidden to avoid reflow */
+
+/* --- Hero section: give it a fixed minimum and media that doesn't reflow --- */
+.hero, .hero-section {
+  min-height: 520px;                  /* match your design */
+  content-visibility: auto;
+  contain-intrinsic-size: 520px;
+}
+.hero img,
+.hero video,
+.hero picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;               /* or whatever your hero media actually is */
+  object-fit: cover;
+}
+
+/* If you use a JS slider (Swiper/Owl/etc.), lock its height early */
+.hero .swiper, .hero .owl-carousel { min-height: 520px; }
+
   /* Reserve space for small service icons (PNG/WebP/SVG) */
   .icon { display:inline-flex; width:48px; height:48px; line-height:0; }
   .icon img {
