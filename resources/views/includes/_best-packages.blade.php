@@ -57,9 +57,8 @@
                                 @endforeach
                             </ul>
                             <div class="button-box package-price-button d-flex align-items-center">
-                                <a target="__blank"
-                                    href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}"
-                                    class="theme-btn btn-style-four" aria-label="Buy Now {{ $package['title'] }}">
+                                <a target="__blank" href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" class="theme-btn btn-style-four"
+                                    aria-label="Buy Now {{ $package['title'] }}">
                                     <span class="txt">{{ __('messages.buy_now') }}</span>
                                 </a>
 
@@ -110,9 +109,8 @@
                                     @endforeach
                                 </ul>
                                 <div class="button-box button-box-2 d-flex align-items-center">
-                                    <a target="__blank"
-                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}"
-                                        class="theme-btn btn-style-four" aria-label="Buy Now {{ $plan['title'] }}">
+                                    <a target="__blank" href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" class="theme-btn btn-style-four"
+                                        aria-label="Buy Now {{ $plan['title'] }}">
                                         <span class="txt">{{ __('messages.buy_now') }}</span>
                                     </a>
 
