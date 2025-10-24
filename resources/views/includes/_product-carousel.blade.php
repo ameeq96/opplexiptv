@@ -17,7 +17,7 @@
       <div class="pcarousel__item">
         <article class="product-card" aria-label="{{ $name }}">
           <a href="{{ $link }}" target="_blank" rel="nofollow sponsored noopener" title="{{ $name }}" style="display:block; position:relative;">
-            <img class="product-card__image" src="{{ asset('images/shop/' . $image) }}" alt="{{ $name }}" loading="lazy" decoding="async" width="466" height="350">
+            <img class="product-card__image" src="{{ asset('images/shop/' . $image) }}" alt="{{ $name }}" loading="lazy">
             <span class="product-card__badge" aria-hidden="true">Amazon</span>
             <span class="product-card__cta" aria-hidden="true">View</span>
           </a>
