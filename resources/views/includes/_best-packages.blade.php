@@ -43,11 +43,8 @@
                             <ul class="icon-list" aria-label="IPTV Service Icons">
                                 <li>
                                     <span class="icon">
-                                        <div class="pricing-card__media">
                                         <img src="{{ asset('images/icons/service-1.svg') }}" alt="Live IPTV Icon"
                                             width="48" height="48" />
-
-                                        </div>
                                     </span>
                                 </li>
                             </ul>
