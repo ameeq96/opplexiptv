@@ -97,6 +97,51 @@
 
 <link rel="canonical" href="{{ $canonical }}">
 
+<style>
+  /* Reserve space for small service icons (PNG/WebP/SVG) */
+  .icon { display:inline-flex; width:48px; height:48px; line-height:0; }
+  .icon img {
+    display:block;
+    width:100%; height:100%;
+    aspect-ratio:1/1;         /* space reserved before image loads */
+    object-fit:contain;
+  }
+
+  /* Generic, safe default for any list of icons */
+  .mx-width {
+    display:block;
+    width:auto; height:auto;
+    aspect-ratio:1/1;         /* prevents layout jolt if CSS scales later */
+  }
+
+  /* Prevent card/thumbnail jumps in pricing/services areas */
+  .pricing-section .inner-box img,
+  .services-section-two .inner-box img {
+    display:block;
+    height:auto;
+  }
+
+  /* Reserve hero/wrapper space (eliminates biggest mobile CLS) */
+  .body_wrap { min-height:100vh; }
+  .hero, .hero-section {
+    min-height:520px;
+    content-visibility:auto;
+    contain-intrinsic-size:520px; /* mobile fallback for first paint */
+  }
+
+  /* If header becomes sticky, prevent push-down */
+  :root { --header-h: 64px; }
+  .header { position:sticky; top:0; height:var(--header-h); }
+  main { padding-top:var(--header-h); }
+
+  /* Optional: if you have a cookie banner/promo, reserve its slot */
+  .banner-slot { min-height:48px; }
+
+  .pricing-card__media { width:100%; aspect-ratio:4/3; background:rgba(0,0,0,0.04); }
+.pricing-card__media img { width:100%; height:100%; object-fit:cover; display:block; }
+
+</style>
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $metaTitle }}">
 <meta name="twitter:description" content="{{ $metaDescription }}">

@@ -15,7 +15,7 @@
                     <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                     <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                     <div class="icon">
-                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="IPTV Packages Icon - Best IPTV Plans for Europe" loading="lazy" />
+                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="IPTV Packages Icon - Best IPTV Plans for Europe" width="64" height="64" loading="lazy" decoding="async" />
                     </div>
                     <h4><a href="{{ route('packages') }}" aria-label="View IPTV Packages">{{ __('messages.iptv_packages') }}</a></h4>
                     <div class="text">{{ __('messages.iptv_packages_desc') }}</div>
@@ -30,7 +30,7 @@
                     <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                     <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                     <div class="icon">
-                        <img class="mx-width" src="{{ asset('images/icons/service-5.webp') }}" alt="Reseller Panel Icon - IPTV Reseller Platform" loading="lazy" />
+                        <img class="mx-width" src="{{ asset('images/icons/service-5.webp') }}" alt="Reseller Panel Icon - IPTV Reseller Platform" width="64" height="64" loading="lazy" decoding="async" />
                     </div>
                     <h4><a href="{{ route('packages') }}" aria-label="View IPTV Reseller Panel">{{ __('messages.reseller_panel') }}</a></h4>
                     <div class="text">{{ __('messages.reseller_panel_desc') }}</div>
@@ -45,7 +45,7 @@
                     <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                     <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                     <div class="icon">
-                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="IPTV Sports Icon - Live Sports & Channels" loading="lazy" />
+                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="IPTV Sports Icon - Live Sports & Channels" width="64" height="64" loading="lazy" decoding="async" />
                     </div>
                     <h4><a href="{{ route('packages') }}" aria-label="Watch IPTV Sports">{{ __('messages.iptv_sports') }}</a></h4>
                     <div class="text">{{ __('messages.iptv_sports_desc') }}</div>
@@ -60,7 +60,7 @@
                     <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                     <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                     <div class="icon">
-                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="VOD Icon - Access Movies and TV Shows" loading="lazy" />
+                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="VOD Icon - Access Movies and TV Shows" width="64" height="64" loading="lazy" decoding="async" />
                     </div>
                     <h4><a href="{{ route('movies') }}" aria-label="Explore IPTV VOD Library">{{ __('messages.iptv_vod') }}</a></h4>
                     <div class="text">{{ __('messages.iptv_vod_desc') }}</div>
@@ -75,7 +75,7 @@
                     <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                     <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                     <div class="icon">
-                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="Multi-Device IPTV Icon - Stream on all devices" loading="lazy" />
+                        <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="Multi-Device IPTV Icon - Stream on all devices" width="64" height="64" loading="lazy" decoding="async" />
                     </div>
                     <h4><a href="{{ route('packages') }}" aria-label="Multi-Device IPTV Access">{{ __('messages.iptv_devices') }}</a></h4>
                     <div class="text">{{ __('messages.iptv_devices_desc') }}</div>

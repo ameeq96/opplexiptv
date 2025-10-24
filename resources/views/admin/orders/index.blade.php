@@ -331,8 +331,9 @@
                 <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2"
                     data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body p-0 text-center">
-                    <img id="modalScreenshot" src="" class="img-fluid"
-                        style="width: 100%; max-height: 90vh; object-fit: contain;" alt="Screenshot">
+                    <img id="modalScreenshot" src="" class="img-fluid" width="1200" height="800"
+                        style="width:100%; height:auto; max-height:90vh; object-fit:contain; aspect-ratio:3/2;"
+                        alt="Screenshot" decoding="async">
                 </div>
             </div>
         </div>

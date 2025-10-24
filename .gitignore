@@ -8,6 +8,7 @@
 /storage/*.key
 /vendor
 /node_modules
+opplexiptv.zip
 .env
 .env.backup
 .env.production

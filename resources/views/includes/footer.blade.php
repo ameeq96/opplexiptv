@@ -81,9 +81,9 @@
             <div class="fx-col fx-col--payments">
                 <h4 class="fx-title">{{ $isRtl ? 'ادائیگیاں' : 'Payments' }}</h4>
                 <ul class="fx-pay">
-                    <li><img src="{{ asset('images/payments/visa.png') }}"  alt="Visa"  width="50" loading="lazy"></li>
-                    <li><img src="{{ asset('images/payments/mastercard.png') }}"  alt="Mastercard" width="50" loading="lazy"></li>
-                    <li><img src="{{ asset('images/payments/cryptomus.png') }}"  alt="Cryptomus"  width="50" loading="lazy"></li>
+                    <li><img src="{{ asset('images/payments/visa.png') }}"  alt="Visa"  width="50" height="50" loading="lazy" decoding="async"></li>
+                    <li><img src="{{ asset('images/payments/mastercard.png') }}"  alt="Mastercard" width="50" height="50" loading="lazy" decoding="async"></li>
+                    <li><img src="{{ asset('images/payments/cryptomus.png') }}"  alt="Cryptomus"  width="50" height="50" loading="lazy" decoding="async"></li>
                 </ul>
             </div>
         </div>
