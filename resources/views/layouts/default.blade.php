@@ -31,7 +31,7 @@
 
     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
         class="whatsapp-icon" title="Chat with us on WhatsApp">
-        <img src="{{ asset('images/whatsapp.webp') }}" alt="WhatsApp" width="50" height="50" decoding="async" loading="lazy" />
+        <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" width="60" height="60" decoding="async" loading="lazy" />
     </a>
 
     @include('includes.footer')
@@ -39,14 +39,6 @@
     @yield('script')
 
     </div>
-    <script>
-      // Hide preloader once everything has loaded
-      window.addEventListener('load', function(){
-        document.documentElement.classList.remove('is-loading');
-        var el = document.getElementById('fx-preloader');
-        if(el){ el.style.opacity='0'; el.style.transition='opacity .25s ease'; setTimeout(function(){ el.parentNode && el.parentNode.removeChild(el); }, 260); }
-      });
-    </script>
 </body>
 
 </html>
