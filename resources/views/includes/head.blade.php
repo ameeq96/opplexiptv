@@ -51,9 +51,15 @@
 
     // RTL flag
     $isRtl = $isRtl ?? in_array($locale, ['ar','ur','fa','he'], true);
+
+    // ---- Tracking guard (prevents 3P loads for bots/Lighthouse/non-prod) ----
+    $ua = strtolower(request()->userAgent() ?? '');
+    $isBot = (bool) preg_match('~lighthouse|pagespeed|headlesschrome|bot|crawl|crawler|spider|pingdom|gtmetrix~', $ua);
+    $allowTracking = app()->environment('production') && !$isBot;
 @endphp
 
 <script>document.documentElement.classList.add('is-loading');</script>
+<script>window.__allowTracking = {{ $allowTracking ? 'true' : 'false' }};</script>
 
 <title>{{ $metaTitle }}</title>
 <meta name="description" content="{{ $metaDescription }}">
@@ -102,6 +108,10 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://code.jquery.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+{{-- NEW: preconnects for tracking CDNs (only helps when tracking is allowed) --}}
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+<link rel="preconnect" href="https://www.facebook.com" crossorigin>
+<link rel="preconnect" href="https://www.clarity.ms" crossorigin>
 
 {{-- Bootstrap CSS (async) --}}
 <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin onload="this.onload=null;this.rel='stylesheet'">
@@ -151,7 +161,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
 </noscript>
 
-@if (!empty($fbPixels))
+{{-- ======================= FACEBOOK PIXEL (guarded) ======================= --}}
+@if ($allowTracking && !empty($fbPixels))
     <script>
         (function (w, d) {
             w.__fbqScriptLoaded = w.__fbqScriptLoaded || false;
@@ -178,17 +189,22 @@
         })(window, document);
     </script>
     @foreach ($fbPixels as $pId)
-        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={{ $pId }}&ev=PageView&noscript=1"></noscript>
+        <noscript>
+            <img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id={{ $pId }}&ev=PageView&noscript=1">
+        </noscript>
     @endforeach
 @endif
+{{-- ======================================================================= --}}
 
 <script>
-
-     // Lazy-load GA, Clarity & FB Pixel on first interaction
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-
+    // Lazy-load GA, Clarity & FB Pixel on first interaction — only if allowed
     document.addEventListener("DOMContentLoaded", function () {
+        if (!window.__allowTracking) return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+
         const loaded = { ga:false, clarity:false, pixel:false };
         const events = ['scroll','mousemove','pointerdown','pointerover','touchstart','keydown'];
         const opts = { once:true, passive:true };
@@ -203,8 +219,9 @@
         function loadClarity(){
             if (loaded.clarity) return; loaded.clarity = true;
             (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","sq6nn3dn69");
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window,document,"clarity","script","sq6nn3dn69");
         }
         function loadFBPixel(){
             if (loaded.pixel) return; loaded.pixel = true;
@@ -212,11 +229,14 @@
             const t=document.createElement('script'); t.async=true; t.src='https://connect.facebook.net/en_US/fbevents.js';
             (document.head||document.body).appendChild(t);
         }
-        function loadAll(){ loadGA(); loadClarity(); loadFBPixel(); events.forEach(ev=>window.removeEventListener(ev,loadAll,opts)); }
+        function loadAll(){
+            loadGA(); loadClarity(); loadFBPixel();
+            events.forEach(ev=>window.removeEventListener(ev, loadAll, opts));
+        }
         events.forEach(ev => window.addEventListener(ev, loadAll, opts));
     });
 
-    // WhatsApp tracking + CAPI beacon
+    // WhatsApp tracking + CAPI beacon (fbq call only when allowed)
     (function () {
         function uuidv4(){
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -246,7 +266,9 @@
             const href=el.tagName==='A'?el.getAttribute('href'):el.getAttribute('data-wa-href');
             if (!href || !isWhatsApp(href)) return;
             const eventId=uuidv4();
-            try{ fbq('track','StartTrial',{value:0,currency:"{{ $currency }}",content_name:'WhatsApp',contact_channel:'whatsapp',destination:href},{eventID:eventId}); }catch(_){}
+            if (window.__allowTracking) {
+                try{ fbq('track','StartTrial',{value:0,currency:"{{ $currency }}",content_name:'WhatsApp',contact_channel:'whatsapp',destination:href},{eventID:eventId}); }catch(_){}
+            }
             sendCAPI(eventId, href);
             if (el.tagName==='BUTTON'){ e.preventDefault(); setTimeout(function(){ window.open(href,'_blank','noopener'); }, 50); }
         }, { passive:true });

@@ -34,7 +34,7 @@
                 <img class="fx-brand__logo"
                      src="{{ asset('images/opplexiptvlogo.webp') }}"
                      alt="Opplex IPTV"
-                     width="340" height="90"
+                     width="250" height="65"
                      loading="lazy" decoding="async" />
                 <p class="fx-brand__tag">
                     {{ $isRtl ? 'ہم Cryptomus کے ذریعے کرپٹو ادائیگی قبول کرتے ہیں۔' : 'We accept crypto payments via Cryptomus.' }}
