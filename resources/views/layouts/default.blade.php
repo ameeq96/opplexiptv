@@ -14,6 +14,11 @@
 </head>
 
 <body>
+
+    <div id="app-loader" class="loader-overlay" aria-live="polite" aria-busy="true">
+    <div class="spinner" role="status" aria-label="Loading"></div>
+  </div>
+  
     <!-- Simple preloader overlay -->
     <div id="fx-preloader" class="fx-preloader" aria-live="polite" aria-label="Loading">
         <div class="fx-preloader__dot"></div>
@@ -46,6 +51,14 @@
         var el = document.getElementById('fx-preloader');
         if(el){ el.style.opacity='0'; el.style.transition='opacity .25s ease'; setTimeout(function(){ el.parentNode && el.parentNode.removeChild(el); }, 260); }
       });
+
+        document.documentElement.classList.remove('page-ready');
+
+  // Mark page ready on window load (or when your main content is ready)
+  window.addEventListener('load', function () {
+    document.documentElement.classList.add('page-ready');
+  });
+
     </script>
 </body>
 
