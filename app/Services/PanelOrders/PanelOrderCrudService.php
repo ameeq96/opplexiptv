@@ -42,6 +42,14 @@ class PanelOrderCrudService
             'buying_date','expiry_date','iptv_username','credits','duration','note',
         ])->all();
 
+        // If dates are left empty on edit, keep existing DB values
+        if (!$request->filled('buying_date')) {
+            unset($clean['buying_date']);
+        }
+        if (!$request->filled('expiry_date')) {
+            unset($clean['expiry_date']);
+        }
+
         $clean['profit'] = $clean['sell_price'] - $clean['price'];
 
         $order->update($clean);

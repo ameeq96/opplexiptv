@@ -182,15 +182,6 @@
         <div class="hero-sub">{{ __('messages.checkout_complete_sub') }}</div>
     </div>
 
-    <div class="container mt-3">
-        <div class="notice rounded p-2 px-3">
-            <small>
-                <i class="fa fa-info-circle mr-1"></i>
-                {{ __('messages.checkout_notice_single_item') }}
-            </small>
-        </div>
-    </div>
-
     <div class="container my-4">
         <div class="row">
             {{-- Billing --}}
@@ -243,7 +234,8 @@
 
                         <div class="form-group">
                             <label class="required">{{ __('messages.checkout_phone') }}</label>
-                            <input type="tel" name="phone" class="form-control" value="{{ old('phone') }}">
+                            <input type="tel" id="phone" name="phone" class="form-control" value="{{ old('phone') }}">
+                            <small id="phone-client-error" class="text-danger d-none"></small>
                         </div>
 
                         <div class="form-group">

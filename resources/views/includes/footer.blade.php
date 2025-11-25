@@ -167,7 +167,7 @@
                 passive: true
             });
 
-            const form = document.getElementById('contact-form');
+            const form = input.closest('form');
             if (form) {
                 form.addEventListener('submit', (e) => {
                     showError('');

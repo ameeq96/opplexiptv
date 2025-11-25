@@ -140,6 +140,14 @@ class OrderService
             'currency','buying_date','expiry_date','iptv_username','note'
         ]), $request);
 
+        // If dates are left empty in the form, keep existing values
+        if (!$request->filled('buying_date')) {
+            unset($data['buying_date']);
+        }
+        if (!$request->filled('expiry_date')) {
+            unset($data['expiry_date']);
+        }
+
         $order->update($data);
     }
 

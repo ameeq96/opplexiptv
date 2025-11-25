@@ -12,6 +12,8 @@ class Order extends Model
 
     protected $casts = [
         'messaged_at' => 'datetime',
+        'buying_date' => 'datetime',
+        'expiry_date' => 'datetime',
     ];
 
     public function user()
