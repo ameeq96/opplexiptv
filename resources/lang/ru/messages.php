@@ -433,4 +433,92 @@ return [
   'require_screenshot' => 'Отправьте скриншот вашего вращения в WhatsApp; иначе скидка не будет предоставлена.',
   'our_products' => 'Наши продукты',
 
+
+  // ==== CONFIGURE STEP ====
+  'checkout_step_title'              => 'Um último passo antes do pagamento!',
+  'checkout_step_subtitle'           => 'Selecione seu dispositivo e plano/pacote para continuar.',
+  'checkout_device_title'            => 'Escolha seu dispositivo',
+  'checkout_iptv_title'              => 'Escolha sua IPTV',
+  'checkout_iptv_small'              => 'Selecione o provedor de IPTV',
+  'checkout_iptv_lock_hint'          => 'Para escolher um plano de conexão, primeiro selecione um provedor de IPTV.',
+  'checkout_connection_title'        => 'Escolha seu plano de conexão',
+  'checkout_connection_lock_msg'     => 'Escolha sua IPTV primeiro.',
+  'checkout_one_connection_label'    => '1 conexão',
+  'checkout_one_connection_hint'     => '1 dispositivo = 1 conexão',
+  'checkout_two_connection_label'    => '2 conexões (anual)',
+  'checkout_two_connection_hint'     => '2 dispositivos – apenas anual',
+  'checkout_four_connection_label'   => '4 conexões (anual)',
+  'checkout_four_connection_hint'    => '4 dispositivos – apenas anual',
+  'checkout_subscription_title'      => 'Escolha seu pacote de assinatura',
+  'checkout_iptv_packages_label'     => 'Pacotes IPTV',
+  'checkout_reseller_packages_label' => 'Pacotes revendedor',
+  'checkout_continue_button'         => 'Continuar para o pagamento',
+
+  // ==== CHECKOUT STEP ====
+  'checkout_complete_title_page'     => 'Concluir seu pedido',
+
+  'checkout_badge_secure'            => 'Checkout seguro',
+  'checkout_badge_safe_info'         => 'Suas informações estão protegidas',
+  'checkout_badge_encryption'        => 'Criptografia de 256 bits',
+
+  'checkout_complete_title'          => 'Concluir seu pedido',
+  'checkout_complete_sub'            => 'Pagamento seguro e ativação imediata',
+  'checkout_notice_single_item'      => 'O item anterior foi removido. Apenas um produto é permitido no carrinho por vez.',
+
+  'checkout_billing_details'         => 'Detalhes de faturamento',
+  'checkout_package_type'            => 'Tipo de pacote',
+  'checkout_package_type_iptv'       => 'Pacote IPTV',
+  'checkout_package_type_reseller'   => 'Pacote revendedor',
+  'checkout_type_iptv'               => 'Pacote IPTV',
+  'checkout_type_reseller'           => 'Pacote revendedor',
+
+  'checkout_email'                   => 'Endereço de e-mail',
+  'checkout_first_name'              => 'Nome',
+  'checkout_last_name'               => 'Sobrenome',
+  'checkout_phone'                   => 'Telefone',
+  'checkout_notes_label'             => 'Observações do pedido (opcional)',
+  'checkout_notes_placeholder'       => 'Observações sobre o seu pedido, por exemplo instruções especiais de entrega.',
+
+  'checkout_your_order'              => 'Seu pedido',
+  'checkout_selected_package_fallback' => 'Pacote selecionado',
+  'checkout_provider'                => 'Fornecedor',
+  'checkout_device'                  => 'Dispositivo',
+  'checkout_type'                    => 'Tipo',
+  'checkout_edit_options'            => 'Editar opções',
+
+  'checkout_subscription_label'      => 'Assinatura',
+  'checkout_subtotal_label'          => 'Subtotal',
+  'checkout_total_label'             => 'Total',
+
+  'checkout_pay_card_title'          => 'Pagamento com cartão de crédito/débito',
+  'checkout_pay_card_desc'           => 'Você será redirecionado para nossa página de pagamento para concluir o pagamento com cartão. Sua assinatura será entregue imediatamente após a compra.',
+  'checkout_pay_crypto_title'        => 'Pagamento com criptomoeda',
+  'checkout_pay_crypto_desc'         => 'Pague com segurança utilizando criptomoedas populares.',
+  'checkout_place_order_btn'         => 'Finalizar pedido e pagar',
+
+
+  'thankyou_page' => [
+    'title'       => 'Спасибо за ваш заказ',
+    'description' => 'Ваш заказ успешно получен. Вы получите данные по IPTV-подписке на e-mail и WhatsApp после подтверждения оплаты.',
+    'keywords'    => 'спасибо, заказ завершён, заказ IPTV, успешный заказ, ожидание оплаты, активация IPTV, стриминговый сервис',
+
+    'heading'     => 'Спасибо за ваш заказ! 🎉',
+    'sub_text'    => 'Ваш заказ получен. Детали подписки будут отправлены на e-mail и WhatsApp после подтверждения оплаты.',
+    'badge_text'  => 'Шаг оплаты успешно создан',
+
+    'order_status' => 'Статус заказа',
+    'pending'     => 'Ожидает оплаты',
+    'delivery'    => 'Доставка',
+    'delivery_text' => 'Мгновенная доставка после подтверждения оплаты',
+    'support'     => 'Поддержка',
+    'support_text' => 'Круглосуточная поддержка через WhatsApp и e-mail',
+
+    'next'        => 'Что дальше?',
+    'next_text'   => 'Завершите оплату для активации',
+
+    'home_btn'    => 'На главную',
+    'support_btn' => 'Связаться с поддержкой',
+
+    'footnote'    => 'Не получили письмо в течение нескольких минут? Проверьте папку «Спам» или свяжитесь со службой поддержки.',
+  ],
 ];

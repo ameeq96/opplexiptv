@@ -26,7 +26,6 @@ return [
     'advanced_price' => '<span style="text-decoration: line-through; color: #999;">$157.99</span> <span style="color: #e60000; font-weight:bold;">$127.99 / 200 Crediti</span>',
 
     'essential_reseller' => 'Pacchetto Essenziale Rivenditore',
-    'pro_reseller' => 'Suite Rivenditore Pro',
     'advanced_reseller' => 'Strumenti Avanzati per Rivenditori',
     'uptime' => 'Uptime del 99,9%',
     'no_credit_expiry' => 'Crediti Senza Scadenza',
@@ -426,6 +425,94 @@ return [
     'whatsapp_btn'     => 'Invia su WhatsApp (allega screenshot)',
     'close'            => 'Chiudi',
     'require_screenshot' => 'Invia lo screenshot del tuo spin su WhatsApp; altrimenti lo sconto non verrà applicato.',
-'our_products' => 'I nostri prodotti',
+    'our_products' => 'I nostri prodotti',
 
+
+    // ==== CONFIGURE STEP ====
+    'checkout_step_title'              => 'Un ultimo passaggio prima del checkout!',
+    'checkout_step_subtitle'           => 'Seleziona il tuo dispositivo e il piano/pacchetto per continuare.',
+    'checkout_device_title'            => 'Scegli il tuo dispositivo',
+    'checkout_iptv_title'              => 'Scegli la tua IPTV',
+    'checkout_iptv_small'              => 'Seleziona il provider IPTV',
+    'checkout_iptv_lock_hint'          => 'Per scegliere un piano di connessione devi prima selezionare un provider IPTV.',
+    'checkout_connection_title'        => 'Scegli il tuo piano di connessione',
+    'checkout_connection_lock_msg'     => 'Seleziona prima la tua IPTV.',
+    'checkout_one_connection_label'    => '1 connessione',
+    'checkout_one_connection_hint'     => '1 dispositivo = 1 connessione',
+    'checkout_two_connection_label'    => '2 connessioni (annuale)',
+    'checkout_two_connection_hint'     => '2 dispositivi – solo annuale',
+    'checkout_four_connection_label'   => '4 connessioni (annuale)',
+    'checkout_four_connection_hint'    => '4 dispositivi – solo annuale',
+    'checkout_subscription_title'      => 'Scegli il tuo pacchetto di abbonamento',
+    'checkout_iptv_packages_label'     => 'Pacchetti IPTV',
+    'checkout_reseller_packages_label' => 'Pacchetti rivenditore',
+    'checkout_continue_button'         => 'Procedi al checkout',
+
+    // ==== CHECKOUT STEP ====
+    'checkout_complete_title_page'     => 'Completa il tuo ordine',
+
+    'checkout_badge_secure'            => 'Checkout sicuro',
+    'checkout_badge_safe_info'         => 'I tuoi dati sono al sicuro',
+    'checkout_badge_encryption'        => 'Crittografia a 256 bit',
+
+    'checkout_complete_title'          => 'Completa il tuo ordine',
+    'checkout_complete_sub'            => 'Pagamento sicuro e attivazione immediata',
+    'checkout_notice_single_item'      => 'L’articolo precedente è stato rimosso. È consentito un solo prodotto nel carrello alla volta.',
+
+    'checkout_billing_details'         => 'Dettagli di fatturazione',
+    'checkout_package_type'            => 'Tipo di pacchetto',
+    'checkout_package_type_iptv'       => 'Pacchetto IPTV',
+    'checkout_package_type_reseller'   => 'Pacchetto rivenditore',
+    'checkout_type_iptv'               => 'Pacchetto IPTV',
+    'checkout_type_reseller'           => 'Pacchetto rivenditore',
+
+    'checkout_email'                   => 'Indirizzo e-mail',
+    'checkout_first_name'              => 'Nome',
+    'checkout_last_name'               => 'Cognome',
+    'checkout_phone'                   => 'Telefono',
+    'checkout_notes_label'             => 'Note sull’ordine (opzionale)',
+    'checkout_notes_placeholder'       => 'Note sul tuo ordine, ad esempio istruzioni speciali per la consegna.',
+
+    'checkout_your_order'              => 'Il tuo ordine',
+    'checkout_selected_package_fallback' => 'Pacchetto selezionato',
+    'checkout_provider'                => 'Provider',
+    'checkout_device'                  => 'Dispositivo',
+    'checkout_type'                    => 'Tipo',
+    'checkout_edit_options'            => 'Modifica opzioni',
+
+    'checkout_subscription_label'      => 'Abbonamento',
+    'checkout_subtotal_label'          => 'Subtotale',
+    'checkout_total_label'             => 'Totale',
+
+    'checkout_pay_card_title'          => 'Pagamento con carta di credito/debito',
+    'checkout_pay_card_desc'           => 'Verrai reindirizzato alla nostra pagina di pagamento per completare il pagamento con carta. Il tuo abbonamento verrà attivato immediatamente dopo l’acquisto.',
+    'checkout_pay_crypto_title'        => 'Pagamento in criptovaluta',
+    'checkout_pay_crypto_desc'         => 'Paga in modo sicuro utilizzando le principali criptovalute.',
+    'checkout_place_order_btn'         => 'Conferma ordine e paga',
+
+
+    'thankyou_page' => [
+        'title'       => 'Grazie per il tuo ordine',
+        'description' => 'Il tuo ordine è stato ricevuto con successo. Riceverai i dettagli del tuo abbonamento IPTV via e-mail e WhatsApp una volta confermato il pagamento.',
+        'keywords'    => 'grazie, ordine completato, ordine IPTV, successo ordine, pagamento in sospeso, attivazione IPTV, servizio di streaming',
+
+        'heading'     => 'Grazie per il tuo ordine! 🎉',
+        'sub_text'    => 'Il tuo ordine è stato ricevuto. Riceverai i dettagli dell’abbonamento via e-mail e WhatsApp dopo la conferma del pagamento.',
+        'badge_text'  => 'Fase di pagamento creata con successo',
+
+        'order_status' => 'Stato dell’ordine',
+        'pending'     => 'Pagamento in sospeso',
+        'delivery'    => 'Consegna',
+        'delivery_text' => 'Consegna immediata dopo la conferma del pagamento',
+        'support'     => 'Assistenza',
+        'support_text' => 'Assistenza 24/7 via WhatsApp ed e-mail',
+
+        'next'        => 'E adesso?',
+        'next_text'   => 'Completa il pagamento per attivare',
+
+        'home_btn'    => 'Torna alla home',
+        'support_btn' => 'Contatta l’assistenza',
+
+        'footnote'    => 'Non hai ricevuto l’e-mail entro pochi minuti? Controlla la cartella spam o contatta il supporto.',
+    ],
 ];

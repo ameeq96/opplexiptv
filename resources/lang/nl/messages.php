@@ -431,6 +431,94 @@ return [
   'whatsapp_btn'     => 'Versturen via WhatsApp (screenshot bijvoegen)',
   'close'            => 'Sluiten',
   'require_screenshot' => 'Stuur de screenshot van je draai via WhatsApp; anders wordt de korting niet toegekend.',
-'our_products' => 'Onze producten',
+  'our_products' => 'Onze producten',
 
+
+  // ==== CONFIGURE STEP ====
+  'checkout_step_title'              => 'Nog één stap vóór afrekenen!',
+  'checkout_step_subtitle'           => 'Selecteer je apparaat en plan/pakket om verder te gaan.',
+  'checkout_device_title'            => 'Kies je apparaat',
+  'checkout_iptv_title'              => 'Kies je IPTV',
+  'checkout_iptv_small'              => 'Selecteer een IPTV-provider',
+  'checkout_iptv_lock_hint'          => 'Om een verbindingsplan te kiezen moet je eerst een IPTV-provider selecteren.',
+  'checkout_connection_title'        => 'Kies je verbindingsplan',
+  'checkout_connection_lock_msg'     => 'Kies eerst je IPTV.',
+  'checkout_one_connection_label'    => '1 verbinding',
+  'checkout_one_connection_hint'     => '1 apparaat = 1 verbinding',
+  'checkout_two_connection_label'    => '2 verbindingen (jaar)',
+  'checkout_two_connection_hint'     => '2 apparaten – alleen jaarabonnement',
+  'checkout_four_connection_label'   => '4 verbindingen (jaar)',
+  'checkout_four_connection_hint'    => '4 apparaten – alleen jaarabonnement',
+  'checkout_subscription_title'      => 'Kies je abonnements­pakket',
+  'checkout_iptv_packages_label'     => 'IPTV-pakketten',
+  'checkout_reseller_packages_label' => 'Reseller-pakketten',
+  'checkout_continue_button'         => 'Doorgaan naar afrekenen',
+
+  // ==== CHECKOUT STEP ====
+  'checkout_complete_title_page'     => 'Rond je bestelling af',
+
+  'checkout_badge_secure'            => 'Veilig afrekenen',
+  'checkout_badge_safe_info'         => 'Je gegevens zijn veilig',
+  'checkout_badge_encryption'        => '256-bits versleuteling',
+
+  'checkout_complete_title'          => 'Rond je bestelling af',
+  'checkout_complete_sub'            => 'Veilige betaling en directe activatie',
+  'checkout_notice_single_item'      => 'Vorige artikel verwijderd. Er mag maar één product tegelijk in de winkelwagen staan.',
+
+  'checkout_billing_details'         => 'Factuurgegevens',
+  'checkout_package_type'            => 'Pakkettype',
+  'checkout_package_type_iptv'       => 'IPTV-pakket',
+  'checkout_package_type_reseller'   => 'Reseller-pakket',
+  'checkout_type_iptv'               => 'IPTV-pakket',
+  'checkout_type_reseller'           => 'Reseller-pakket',
+
+  'checkout_email'                   => 'E-mailadres',
+  'checkout_first_name'              => 'Voornaam',
+  'checkout_last_name'               => 'Achternaam',
+  'checkout_phone'                   => 'Telefoon',
+  'checkout_notes_label'             => 'Opmerkingen bij bestelling (optioneel)',
+  'checkout_notes_placeholder'       => 'Opmerkingen over je bestelling, bijvoorbeeld speciale bezorginstructies.',
+
+  'checkout_your_order'              => 'Je bestelling',
+  'checkout_selected_package_fallback' => 'Geselecteerd pakket',
+  'checkout_provider'                => 'Provider',
+  'checkout_device'                  => 'Apparaat',
+  'checkout_type'                    => 'Type',
+  'checkout_edit_options'            => 'Opties wijzigen',
+
+  'checkout_subscription_label'      => 'Abonnement',
+  'checkout_subtotal_label'          => 'Subtotaal',
+  'checkout_total_label'             => 'Totaal',
+
+  'checkout_pay_card_title'          => 'Betalen met creditcard/debitcard',
+  'checkout_pay_card_desc'           => 'Je wordt doorgestuurd naar onze betaalpagina om de kaartbetaling te voltooien. Je abonnement wordt direct na aankoop geleverd.',
+  'checkout_pay_crypto_title'        => 'Betalen met crypto',
+  'checkout_pay_crypto_desc'         => 'Betaal veilig met populaire cryptovaluta.',
+  'checkout_place_order_btn'         => 'Bestelling plaatsen en betalen',
+
+
+  'thankyou_page' => [
+    'title'       => 'Bedankt voor je bestelling',
+    'description' => 'Je bestelling is succesvol ontvangen. Je ontvangt de IPTV-abonnementsgegevens per e-mail en WhatsApp zodra de betaling is bevestigd.',
+    'keywords'    => 'bedankt, bestelling voltooid, IPTV bestelling, bestelling geslaagd, betaling in behandeling, IPTV activatie, streamingdienst',
+
+    'heading'     => 'Bedankt voor je bestelling! 🎉',
+    'sub_text'    => 'We hebben je bestelling ontvangen. Je krijgt de abonnementsgegevens via e-mail en WhatsApp zodra de betaling is bevestigd.',
+    'badge_text'  => 'Betalingsstap succesvol aangemaakt',
+
+    'order_status' => 'Bestelstatus',
+    'pending'     => 'Betaling in behandeling',
+    'delivery'    => 'Levering',
+    'delivery_text' => 'Directe levering na betalingsbevestiging',
+    'support'     => 'Support',
+    'support_text' => '24/7 via WhatsApp en e-mail',
+
+    'next'        => 'Wat nu?',
+    'next_text'   => 'Maak de betaling af om te activeren',
+
+    'home_btn'    => 'Terug naar home',
+    'support_btn' => 'Contact met support',
+
+    'footnote'    => 'Geen e-mail ontvangen binnen enkele minuten? Controleer je spamfolder of neem contact op met onze support.',
+  ],
 ];

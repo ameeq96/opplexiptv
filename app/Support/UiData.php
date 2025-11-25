@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Support;
 
+use App\Models\Package;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang};
@@ -283,65 +284,33 @@ class UiData
     /** @return array<int,array<string,mixed>> */
     private function packages(): array
     {
-        $common = [
-            __('messages.no_buffer'),
-            __('messages.support_24_7'),
-            __('messages.regular_updates'),
-            __('messages.quality_content'),
-        ];
-
-        return [
-            ['title' => __('messages.monthly'),     'price' => __('messages.monthly_price'),     'features' => $common],
-            ['title' => __('messages.half_yearly'), 'price' => __('messages.half_yearly_price'), 'features' => $common],
-            ['title' => __('messages.yearly'),      'price' => __('messages.yearly_price'),      'features' => $common],
-        ];
+        return \App\Models\Package::query()
+            ->where('active', true)
+            // Only IPTV rows; show both vendors
+            ->where('type', 'iptv')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, duration_months, id)")
+            ->get()
+            ->map(fn($p) => $p->toIptvArray())
+            ->values()
+            ->all();
     }
 
     /** @return array<int,array<string,mixed>> */
     private function resellerPlans(): array
     {
-        $common = [
-            __('messages.uptime'),
-            __('messages.no_credit_expiry'),
-            __('messages.unlimited_trials'),
-        ];
-
-        return [
-            [
-                'title'       => __('messages.starter_reseller'),
-                'price'       => __('messages.starter_price'),
-                'icons'       => ['images/icons/service-1.svg'],
-                'features'    => array_merge($common, [__('messages.no_subreseller')]),
-                'button_link' => 'buy-now-panel',
-                'delay'       => '0ms',
-            ],
-            [
-                'title'       => __('messages.essential_reseller'),
-                'price'       => __('messages.essential_price'),
-                'icons'       => ['images/icons/service-2.svg'],
-                'features'    => array_merge($common, [__('messages.no_subreseller')]),
-                'button_link' => 'buy-now-panel',
-                'delay'       => '150ms',
-            ],
-            [
-                'title'       => __('messages.pro_reseller'),
-                'price'       => __('messages.pro_price'),
-                'icons'       => ['images/icons/service-3.svg'],
-                'features'    => array_merge($common, [__('messages.no_subreseller')]),
-                'button_link' => 'buy-now-panel',
-                'delay'       => '300ms',
-            ],
-            [
-                'title'       => __('messages.advanced_reseller'),
-                'price'       => __('messages.advanced_price'),
-                'icons'       => ['images/icons/service-1.svg', 'images/icons/service-2.svg', 'images/icons/service-3.svg'],
-                'features'    => array_merge($common, [__('messages.yes_subreseller')]),
-                'button_link' => 'buy-now-panel',
-                'delay'       => '450ms',
-            ],
-        ];
+        return \App\Models\Package::query()
+            ->where('active', true)
+            // Only Reseller rows; show both vendors
+            ->where('type', 'reseller')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
+            ->get()
+            ->map(fn($p) => $p->toResellerArray())
+            ->values()
+            ->all();
     }
-
+    
     /** @return array<int,array<string,string>> */
     private function testimonials(): array
     {

@@ -126,6 +126,7 @@
         'owl.css',
         'swiper.css',
         'linearicons.css',
+        'checkout.css',
         'jquery-ui.css',
         'custom-animate.css',
         'jquery.fancybox.min.css',

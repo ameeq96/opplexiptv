@@ -71,7 +71,7 @@ return [
         'description' => 'Comment activer votre IPTV légalement : saisie du numéro de commande, vérification du compte et démarrage du streaming. Activation par QR et WhatsApp prise en charge (UE/R.-U./États-Unis).',
         'keywords'    => 'activation IPTV, numéro de commande, activation WhatsApp, code QR, IPTV légal, vérification de compte, IPTV UE, IPTV Royaume-Uni, IPTV États-Unis',
     ],
-     'terms-of-service' => [
+    'terms-of-service' => [
         'title'       => 'Conditions d’Utilisation et Politique d’Usage Légal',
         'description' => 'Lisez les Conditions d’Utilisation d’Opplex IPTV. Découvrez les règles de compte, le paiement, la disponibilité du service et les limitations de responsabilité.',
         'keywords'    => 'conditions IPTV, Opplex IPTV, politique légale, paiement IPTV, utilisation acceptable',
@@ -90,5 +90,20 @@ return [
         'title'       => 'Boutique | Lecteurs de streaming & accessoires TV – Android TV Box, Fire TV, Roku…',
         'description' => 'Découvrez une sélection d’appareils pour le streaming et la TV : Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick et Ultra, ainsi que supports muraux et télécommandes de remplacement pour Samsung et VIZIO. Prise en charge 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E et H.265. Achats via liens Amazon.',
         'keywords'    => 'boutique streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, télécommande Samsung, VIZIO XRT136, support mural TV, Mounting Dream MD2380, INSIGNIA F40, accessoires TV, Amazon',
+    ],
+    'configure' => [
+        'title'       => 'Configuration IPTV | Choisissez appareil, fournisseur et offre – Dernière étape avant le paiement',
+        'description' => 'Configurez votre commande IPTV en une seule étape : choisissez votre appareil, votre fournisseur IPTV, le nombre de connexions (1, 2 ou 4 appareils) et votre formule d’abonnement (mensuelle ou annuelle). Paiement sécurisé, activation instantanée et support 24h/24 et 7j/7.',
+        'keywords'    => 'configuration IPTV, réglage IPTV, offres IPTV, revendeur IPTV, formule d’abonnement, box Android TV, Firestick, smart TV, 1 connexion, 2 connexions, 4 connexions, IPTV annuel, IPTV mensuel, service de streaming',
+    ],
+    'checkout' => [
+        'title'       => 'Paiement sécurisé IPTV | Finalisez votre commande avec activation instantanée',
+        'description' => 'Finalisez votre commande IPTV via un paiement sécurisé : vérifiez votre appareil, votre fournisseur IPTV, votre plan de connexion et votre formule d’abonnement, puis payez par carte ou crypto. Activation instantanée et support 24h/24 et 7j/7.',
+        'keywords'    => 'checkout IPTV, paiement sécurisé IPTV, finaliser commande, paiement IPTV, abonnement IPTV, paiement par carte, paiement crypto, activation instantanée, récapitulatif de commande, service de streaming',
+    ],
+    'thankyou' => [
+        'title'       => 'Merci | Commande confirmée et prochaines étapes pour votre abonnement IPTV',
+        'description' => 'Merci pour votre commande. Votre abonnement IPTV a bien été reçu et est en cours de traitement. Vous recevrez un e-mail avec les détails de votre commande, les instructions d’activation et, si nécessaire, vos identifiants. Pour toute question, notre équipe support est à votre disposition.',
+        'keywords'    => 'page de remerciement, commande confirmée, commande IPTV, abonnement IPTV, succès de commande, instructions d’activation, détails du compte, support client, service de streaming',
     ],
 ];

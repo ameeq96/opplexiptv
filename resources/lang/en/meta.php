@@ -93,4 +93,19 @@ return [
         'description' => 'Discover a curated selection of streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and replacement remotes for Samsung and VIZIO. Support for 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E, and H.265. Buy confidently via Amazon links.',
         'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung remote replacement, VIZIO XRT136 remote, TV wall mount, Mounting Dream MD2380, INSIGNIA F40, TV accessories, Amazon',
     ],
+    'configure' => [
+        'title'       => 'IPTV Configuration | Choose Device, Provider & Plan – One Last Step Before Checkout',
+        'description' => 'Configure your IPTV order in one simple step: select your device, IPTV provider, connection (1, 2 or 4 devices) and subscription package (monthly or yearly). Secure checkout with instant activation and 24/7 support.',
+        'keywords'    => 'IPTV configuration, IPTV setup, IPTV packages, IPTV reseller, subscription plan, Android TV box, Firestick, smart TV, 1 connection, 2 connections, 4 connections, yearly IPTV, monthly IPTV, streaming service',
+    ],
+    'checkout' => [
+        'title'       => 'Secure IPTV Checkout | Complete Your Order with Instant Activation',
+        'description' => 'Complete your IPTV order with our secure checkout: review your selected device, IPTV provider, connection plan and subscription package, then pay safely by card or crypto. Instant activation and 24/7 customer support.',
+        'keywords'    => 'IPTV checkout, secure checkout, complete order, IPTV payment, IPTV subscription, card payment, crypto payment, instant activation, IPTV order summary, streaming service',
+    ],
+    'thankyou' => [
+        'title'       => 'Thank You | Order Confirmed & Next Steps for Your IPTV Subscription',
+        'description' => 'Thank you for your order. Your IPTV subscription has been received and is now being processed. You will receive an email with your order details, activation instructions and any required account credentials. If you have questions, our support team is here to help.',
+        'keywords'    => 'thank you page, order confirmed, IPTV order, IPTV subscription, order success, activation instructions, account details, customer support, streaming service',
+    ],
 ];

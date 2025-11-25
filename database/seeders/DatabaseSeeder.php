@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            DevicesSeeder::class,
+            ConnectionPlanSeeder::class,
+            PackagesSeeder::class,
+        ]);
 
         Admin::create([
             'name' => 'Ameeq',

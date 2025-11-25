@@ -91,4 +91,19 @@ return [
         'description' => 'Scopri una selezione di prodotti per lo streaming e la TV: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick e Ultra, oltre a supporti da parete e telecomandi sostitutivi per Samsung e VIZIO. Supporto 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E e H.265. Acquisti sicuri tramite link Amazon.',
         'keywords'    => 'shop streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, telecomando Samsung, VIZIO XRT136, staffa TV a parete, Mounting Dream MD2380, INSIGNIA F40, accessori TV, Amazon',
     ],
+    'configure' => [
+        'title'       => 'Configurazione IPTV | Scegli dispositivo, provider e piano – Ultimo passo prima del checkout',
+        'description' => 'Configura il tuo ordine IPTV in un unico passaggio: scegli il dispositivo, il provider IPTV, il numero di connessioni (1, 2 o 4 dispositivi) e il pacchetto di abbonamento (mensile o annuale). Pagamento sicuro con attivazione immediata e supporto 24/7.',
+        'keywords'    => 'configurazione IPTV, impostazione IPTV, pacchetti IPTV, rivenditore IPTV, piano di abbonamento, Android TV Box, Firestick, smart TV, 1 connessione, 2 connessioni, 4 connessioni, IPTV annuale, IPTV mensile, servizio di streaming',
+    ],
+    'checkout' => [
+        'title'       => 'Checkout IPTV sicuro | Completa il tuo ordine con attivazione immediata',
+        'description' => 'Completa il tuo ordine IPTV tramite checkout sicuro: controlla il dispositivo scelto, il provider IPTV, il piano di connessione e il pacchetto di abbonamento, quindi paga con carta o criptovalute. Attivazione immediata e supporto 24/7.',
+        'keywords'    => 'checkout IPTV, pagamento sicuro IPTV, completare ordine, pagamento IPTV, abbonamento IPTV, pagamento con carta, pagamento in crypto, attivazione immediata, riepilogo ordine, servizio di streaming',
+    ],
+    'thankyou' => [
+        'title'       => 'Grazie | Ordine confermato e prossimi passi per il tuo abbonamento IPTV',
+        'description' => 'Grazie per il tuo ordine. Il tuo abbonamento IPTV è stato ricevuto ed è in fase di elaborazione. Riceverai un’e-mail con i dettagli dell’ordine, le istruzioni di attivazione e, se necessario, le credenziali di accesso. Per qualsiasi domanda il nostro supporto è a tua disposizione.',
+        'keywords'    => 'pagina di ringraziamento, ordine confermato, ordine IPTV, abbonamento IPTV, ordine riuscito, istruzioni di attivazione, dati account, assistenza clienti, servizio di streaming',
+    ],
 ];

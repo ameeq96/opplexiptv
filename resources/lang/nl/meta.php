@@ -91,4 +91,19 @@ return [
         'description' => 'Ontdek een selectie streaming- en tvproducten: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick en Ultra, plus muurbeugels en vervangende afstandsbedieningen voor Samsung en VIZIO. Ondersteuning voor 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E en H.265. Veilig kopen via Amazon-links.',
         'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart tv, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung afstandsbediening, VIZIO XRT136, tv-muurbeugel, Mounting Dream MD2380, INSIGNIA F40, tv-accessoires, Amazon',
     ],
+    'configure' => [
+        'title'       => 'IPTV-configuratie | Kies apparaat, provider en pakket – Laatste stap voor afrekenen',
+        'description' => 'Configureer je IPTV-bestelling in één stap: kies je apparaat, IPTV-provider, aantal verbindingen (1, 2 of 4 apparaten) en abonnements­pakket (maandelijks of jaarlijks). Veilige checkout met directe activatie en 24/7 ondersteuning.',
+        'keywords'    => 'IPTV configuratie, IPTV installatie, IPTV pakketten, IPTV reseller, abonnement, Android TV box, Firestick, smart-tv, 1 verbinding, 2 verbindingen, 4 verbindingen, jaarlijks IPTV, maandelijks IPTV, streamingdienst',
+    ],
+    'checkout' => [
+        'title'       => 'Veilige IPTV-checkout | Rond je bestelling af met directe activatie',
+        'description' => 'Rond je IPTV-bestelling af via onze veilige checkout: controleer je gekozen apparaat, IPTV-provider, verbindings­plan en abonnements­pakket en betaal daarna eenvoudig met kaart of crypto. Directe activatie en 24/7 ondersteuning.',
+        'keywords'    => 'IPTV checkout, veilige checkout, bestelling afronden, IPTV-betaling, IPTV-abonnement, betalen met kaart, betalen met crypto, directe activatie, besteloverzicht, streamingdienst',
+    ],
+    'thankyou' => [
+        'title'       => 'Bedankt | Bestelling bevestigd & volgende stappen voor je IPTV-abonnement',
+        'description' => 'Bedankt voor je bestelling. Je IPTV-abonnement is ontvangen en wordt nu verwerkt. Je ontvangt een e-mail met je bestelgegevens, activatie-instructies en eventuele inloggegevens. Heb je vragen, dan staat ons supportteam voor je klaar.',
+        'keywords'    => 'bedankpagina, bestelling bevestigd, IPTV-bestelling, IPTV-abonnement, succesvolle bestelling, activatie-instructies, accountgegevens, klantenservice, streamingdienst',
+    ],
 ];

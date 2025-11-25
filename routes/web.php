@@ -117,6 +117,11 @@ Route::group(
         Route::view('terms-of-service', 'policies.terms')->name('terms-of-service');
         Route::view('privacy-policy', 'policies.privacy')->name('privacy-policy');
         Route::view('refund-policy', 'policies.refund')->name('refund-policy');
+
+        Route::get('configure',        [HomeController::class, 'configure'])->name('configure');
+        Route::get('checkout',         [HomeController::class, 'checkoutStep1'])->name('checkout');
+        Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->name('step2');
+        Route::get('thank-you', [HomeController::class, 'thankYou'])->name('thankyou');
     }
 );
 

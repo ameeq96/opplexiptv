@@ -32,6 +32,8 @@ return new class extends Migration
             $table->boolean('messaged_by')->default(false);
             $table->timestamp('messaged_at')->nullable();
             $table->string('iptv_username')->nullable();
+            $table->integer('device_id')->nullable();
+            $table->integer('package_id')->nullable();
             $table->enum('type', ['package', 'reseller'])->default('package');
             $table->timestamps();
         });

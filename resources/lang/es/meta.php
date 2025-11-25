@@ -86,9 +86,24 @@ return [
         'description' => 'Consulta nuestra política de reembolsos para IPTV legal: período de elegibilidad, artículos no reembolsables, cancelaciones y cómo solicitar un reembolso.',
         'keywords'    => 'reembolso IPTV, política de devolución, cancelación IPTV, Opplex IPTV reembolso',
     ],
-     'shop' => [
+    'shop' => [
         'title'       => 'Tienda | Dispositivos de streaming y accesorios de TV – Android TV Box, Fire TV, Roku y más',
         'description' => 'Explora una selección de equipos para streaming y televisión: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick y Ultra, además de soportes de pared y mandos de repuesto para Samsung y VIZIO. Compatibilidad con 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E y H.265. Compra de forma segura con enlaces de Amazon.',
         'keywords'    => 'tienda streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, mando Samsung repuesto, VIZIO XRT136, soporte de pared TV, Mounting Dream MD2380, INSIGNIA F40, accesorios TV, Amazon',
+    ],
+    'configure' => [
+        'title'       => 'Configuración IPTV | Elige dispositivo, proveedor y plan – Último paso antes del pago',
+        'description' => 'Configura tu pedido de IPTV en un solo paso: elige tu dispositivo, proveedor de IPTV, número de conexiones (1, 2 o 4 dispositivos) y paquete de suscripción (mensual o anual). Pago seguro con activación instantánea y soporte 24/7.',
+        'keywords'    => 'configuración IPTV, instalación IPTV, paquetes IPTV, revendedor IPTV, plan de suscripción, Android TV Box, Firestick, smart TV, 1 conexión, 2 conexiones, 4 conexiones, IPTV anual, IPTV mensual, servicio de streaming',
+    ],
+    'checkout' => [
+        'title'       => 'Pago seguro IPTV | Completa tu pedido con activación instantánea',
+        'description' => 'Completa tu pedido de IPTV mediante un pago seguro: revisa tu dispositivo, proveedor IPTV, plan de conexión y paquete de suscripción, y paga con tarjeta o criptomonedas. Activación instantánea y soporte 24/7.',
+        'keywords'    => 'checkout IPTV, pago seguro IPTV, completar pedido, pago IPTV, suscripción IPTV, pago con tarjeta, pago con criptomonedas, activación instantánea, resumen del pedido, servicio de streaming',
+    ],
+    'thankyou' => [
+        'title'       => 'Gracias | Pedido confirmado y próximos pasos para tu suscripción IPTV',
+        'description' => 'Gracias por tu pedido. Tu suscripción IPTV ha sido recibida y está siendo procesada. Recibirás un correo electrónico con los detalles del pedido, instrucciones de activación y, si es necesario, los datos de acceso. Si tienes dudas, nuestro equipo de soporte está listo para ayudarte.',
+        'keywords'    => 'página de gracias, pedido confirmado, pedido IPTV, suscripción IPTV, pedido exitoso, instrucciones de activación, detalles de cuenta, soporte al cliente, servicio de streaming',
     ],
 ];

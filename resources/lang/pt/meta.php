@@ -91,4 +91,19 @@ return [
         'description' => 'Conheça uma seleção de produtos para streaming e TV: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick e Ultra, além de suportes de parede e controles substitutos para Samsung e VIZIO. Suporte a 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E e H.265. Compre com segurança pelos links da Amazon.',
         'keywords'    => 'loja streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, controle Samsung, VIZIO XRT136, suporte de parede para TV, Mounting Dream MD2380, INSIGNIA F40, acessórios para TV, Amazon',
     ],
+    'configure' => [
+        'title'       => 'Configuração IPTV | Escolha dispositivo, provedor e plano – Último passo antes do pagamento',
+        'description' => 'Configure seu pedido IPTV em uma única etapa: escolha o dispositivo, o provedor IPTV, o número de conexões (1, 2 ou 4 dispositivos) e o pacote de assinatura (mensal ou anual). Checkout seguro com ativação imediata e suporte 24/7.',
+        'keywords'    => 'configuração IPTV, instalação IPTV, pacotes IPTV, revenda IPTV, plano de assinatura, Android TV Box, Firestick, smart TV, 1 conexão, 2 conexões, 4 conexões, IPTV anual, IPTV mensal, serviço de streaming',
+    ],
+    'checkout' => [
+        'title'       => 'Checkout IPTV Seguro | Complete seu pedido com ativação imediata',
+        'description' => 'Conclua seu pedido IPTV em uma página de checkout segura: revise o dispositivo selecionado, o provedor IPTV, o plano de conexão e o pacote de assinatura, depois pague com cartão ou criptomoeda. Ativação imediata e suporte 24/7.',
+        'keywords'    => 'checkout IPTV, pagamento seguro IPTV, concluir pedido, pagamento IPTV, assinatura IPTV, pagamento com cartão, pagamento com cripto, ativação imediata, resumo do pedido, serviço de streaming',
+    ],
+    'thankyou' => [
+        'title'       => 'Obrigado | Pedido confirmado e próximos passos do seu IPTV',
+        'description' => 'Obrigado pelo seu pedido. A sua assinatura IPTV foi recebida e está a ser processada. Você receberá um e-mail com os detalhes do pedido, instruções de ativação e, se necessário, os dados da sua conta. Em caso de dúvidas, nossa equipa de suporte está pronta para ajudar.',
+        'keywords'    => 'página de agradecimento, pedido confirmado, pedido IPTV, assinatura IPTV, pedido concluído, instruções de ativação, detalhes da conta, suporte ao cliente, serviço de streaming',
+    ],
 ];
