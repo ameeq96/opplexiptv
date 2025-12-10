@@ -215,8 +215,9 @@
 
                                     // NOTE: Phone ko international format me rakhna best (e.g., 447...).
                                     // $message me rawurlencode use kiya hai
+                                    $custName = $order->user->name ?? 'Customer';
                                     $message = rawurlencode(
-                                        "Hello {$order->user->name}, your IPTV reseller order for package '{$order->package}' is now " .
+                                        "Hello {$custName}, your IPTV reseller order for package '{$order->package}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );

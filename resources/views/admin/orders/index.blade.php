@@ -143,7 +143,7 @@
                                 <input type="checkbox" name="order_ids[]" value="{{ $order->id }}">
                             </td>
 
-                            <td>{{ $order->user->name ?? null }}</td>
+                            <td>{{ $order->user->name ?? 'N/A' }}</td>
 
                             <td>
                                 @php
@@ -258,8 +258,9 @@
                             <td>
                                 @php
                                     $phone = preg_replace('/\D+/', '', $order->user->phone ?? '');
+                                    $custName = $order->user->name ?? 'Customer';
                                     $message = urlencode(
-                                        "Hello {$order->user->name}, your IPTV order for package '{$order->package}' is now " .
+                                        "Hello {$custName}, your IPTV order for package '{$order->package}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );
