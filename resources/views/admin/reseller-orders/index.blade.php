@@ -36,12 +36,14 @@
 
     <div class="card shadow-sm mb-4">
         <div class="card-body">
-            <form action="{{ route('admin.panel-orders.index') }}" method="GET" class="row g-2 align-items-center">
+            <form action="{{ route('admin.panel-orders.index') }}" method="GET"
+                  class="row g-2 g-md-3 align-items-end">
                 {{-- keep current tab while filtering --}}
                 <input type="hidden" name="tab" value="{{ $tab ?? 'unmessaged' }}">
                 <input type="hidden" name="type" value="{{ $type ?? 'reseller' }}">
 
-                <div class="col-auto">
+                <div class="col-12 col-md-3 col-lg-2">
+                    <label class="form-label small text-muted mb-1">Per Page</label>
                     <select name="per_page" class="form-select" onchange="this.form.submit()">
                         @foreach ([10, 20, 30, 40, 100] as $size)
                             <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
@@ -51,15 +53,17 @@
                     </select>
                 </div>
 
-                <div class="col-auto">
+                <div class="col-12 col-md-9 col-lg-4">
+                    <label class="form-label small text-muted mb-1">Search</label>
                     <input type="text" name="search" value="{{ request('search') }}" class="form-control"
                         placeholder="Search orders...">
                 </div>
 
                 {{-- Optional same filters as package list (if you want to keep UI parity) --}}
-                <div class="col-auto">
+                <div class="col-12 col-md-4 col-lg-2">
+                    <label class="form-label small text-muted mb-1">Date</label>
                     <select name="date_filter" class="form-select" onchange="this.form.submit()">
-                        <option value="">-- Date Filter --</option>
+                        <option value="">Date Filter</option>
                         <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
                         <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday
                         </option>
@@ -73,9 +77,10 @@
                     </select>
                 </div>
 
-                <div class="col-auto">
+                <div class="col-12 col-md-4 col-lg-2">
+                    <label class="form-label small text-muted mb-1">Expiry</label>
                     <select name="expiry_status" class="form-select" onchange="this.form.submit()">
-                        <option value="">-- Expiry Filter --</option>
+                        <option value="">Expiry Filter</option>
                         <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon
                             (Next 5 Days)</option>
                         <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already
@@ -83,21 +88,31 @@
                     </select>
                 </div>
 
-                <div class="col-auto">
+                <div class="col-12 col-md-4 col-lg-2">
+                    <label class="form-label small text-muted mb-1">Status</label>
+                    <select name="status" class="form-select" onchange="this.form.submit()">
+                        @php $statusVal = request('status', 'all'); @endphp
+                        <option value="all" {{ $statusVal === 'all' ? 'selected' : '' }}>All Statuses</option>
+                        <option value="pending" {{ $statusVal === 'pending' ? 'selected' : '' }}>Pending</option>
+                        <option value="active" {{ $statusVal === 'active' ? 'selected' : '' }}>Active</option>
+                        <option value="expired" {{ $statusVal === 'expired' ? 'selected' : '' }}>Expired</option>
+                    </select>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <label class="form-label small text-muted mb-1">Start</label>
                     <input type="date" name="start_date" value="{{ request('start_date') }}" class="form-control">
                 </div>
 
-                <div class="col-auto">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <label class="form-label small text-muted mb-1">End</label>
                     <input type="date" name="end_date" value="{{ request('end_date') }}" class="form-control">
                 </div>
 
-                <div class="col-auto">
+                <div class="col-12 col-lg d-flex justify-content-start align-items-end gap-2">
                     <button class="btn btn-primary" type="submit">Filter</button>
-                </div>
-
-                <div class="col ms-auto text-end">
                     <a href="{{ route('admin.panel-orders.create') }}" class="btn btn-dark">
-                        <i class="bi bi-plus-lg me-1"></i>
+                        Add <i class="bi bi-plus-lg me-1"></i> 
                     </a>
                 </div>
             </form>

@@ -84,6 +84,11 @@ class OrderService
                 $query->whereNotNull('expiry_date')->whereBetween('expiry_date', [$today, $today->copy()->addDays(5)]);
             }
         }
+
+        // status filter
+        if ($request->filled('status') && $request->status !== 'all') {
+            $query->where('status', $request->status);
+        }
     }
 
     public function applySorting(Builder $query, Request $request): void
