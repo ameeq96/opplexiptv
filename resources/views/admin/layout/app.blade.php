@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Opplex Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -101,6 +102,18 @@
             font-size: 24px;
         }
 
+        .notif-bell {
+            position: relative;
+        }
+
+        .notif-badge {
+            position: absolute;
+            top: -4px;
+            right: -6px;
+            font-size: 10px;
+            padding: 2px 6px;
+        }
+
         #sidebar-overlay {
             position: fixed;
             top: 0;
@@ -144,7 +157,22 @@
                 </button>
                 <h2 class="m-0">@yield('page_title', 'Dashboard')</h2>
             </div>
-            <span class="d-none d-md-inline">Welcome, Admin</span>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dropdown">
+                    <button class="btn btn-light notif-bell" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-danger notif-badge d-none" id="notifCount">0</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end p-0" style="min-width: 320px; max-height: 360px; overflow-y: auto;">
+                        <div class="d-flex align-items-center justify-content-between px-3 py-2 border-bottom">
+                            <strong>Notifications</strong>
+                            <button class="btn btn-link btn-sm p-0" id="notifMarkAll" type="button">Mark all read</button>
+                        </div>
+                        <div id="notifList" class="list-group list-group-flush"></div>
+                    </div>
+                </div>
+                <span class="d-none d-md-inline">Welcome, Admin</span>
+            </div>
         </div>
 
         <main>
@@ -246,6 +274,115 @@
         function showScreenshot(src) {
             document.getElementById('modalScreenshot').src = src;
         }
+
+        // Notifications (bell)
+        (() => {
+            const notifListEl = document.getElementById('notifList');
+            const countEl = document.getElementById('notifCount');
+            const token = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+            const routes = {
+                index: "{{ route('admin.notifications.index') }}",
+                readAll: "{{ route('admin.notifications.readAll') }}",
+                readOne: "{{ route('admin.notifications.read', ['id' => '__ID__']) }}",
+                viewPackage: "{{ route('admin.orders.show', ['order' => '__ID__']) }}",
+                viewReseller: "{{ route('admin.panel-orders.show', ['panel_order' => '__ID__']) }}",
+            };
+
+            function buildRow(item) {
+                const link = item.order_id
+                    ? (item.type === 'reseller'
+                        ? routes.viewReseller.replace('__ID__', item.order_id)
+                        : routes.viewPackage.replace('__ID__', item.order_id))
+                    : null;
+
+                const row = document.createElement('button');
+                row.type = 'button';
+                row.className = 'list-group-item list-group-item-action text-start d-flex flex-column';
+                row.dataset.id = item.id;
+                row.dataset.link = link || '';
+                if (!item.read_at) row.classList.add('fw-bold');
+
+                row.innerHTML = `
+                    <div class="d-flex justify-content-between">
+                        <div>${item.title || 'New order'}</div>
+                        <small class="text-muted ms-2">${item.created_at || ''}</small>
+                    </div>
+                    <div class="text-muted small">${item.body || ''}</div>
+                    <div class="small mt-1">
+                        <span class="badge bg-secondary me-1">${item.type || 'order'}</span>
+                        ${item.package ? `<span class="badge bg-light text-dark">${item.package}</span>` : ''}
+                    </div>
+                `;
+                row.addEventListener('click', () => {
+                    markOne(item.id).then(() => {
+                        if (link) window.location.href = link;
+                    });
+                });
+                return row;
+            }
+
+            function render(list, unread) {
+                notifListEl.innerHTML = '';
+                if (!list.length) {
+                    notifListEl.innerHTML = '<div class="px-3 py-3 text-muted small">No notifications.</div>';
+                } else {
+                    list.forEach(item => notifListEl.appendChild(buildRow(item)));
+                }
+                if (unread > 0) {
+                    countEl.classList.remove('d-none');
+                    countEl.textContent = unread > 99 ? '99+' : unread;
+                } else {
+                    countEl.classList.add('d-none');
+                }
+            }
+
+            async function load() {
+                try {
+                    const res = await fetch(routes.index);
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    render(data.items || [], data.unread_count || 0);
+                } catch (e) {
+                    console.error('Notification fetch failed', e);
+                }
+            }
+
+            async function markOne(id) {
+                try {
+                    await fetch(routes.readOne.replace('__ID__', id), {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRF-TOKEN': token,
+                            'Accept': 'application/json',
+                        },
+                    });
+                } catch (e) {
+                    console.error('Mark read failed', e);
+                } finally {
+                    load();
+                }
+            }
+
+            async function markAll() {
+                try {
+                    await fetch(routes.readAll, {
+                        method: 'POST',
+                        headers: {
+                            'X-CSRF-TOKEN': token,
+                            'Accept': 'application/json',
+                        },
+                    });
+                } catch (e) {
+                    console.error('Mark all failed', e);
+                } finally {
+                    load();
+                }
+            }
+
+            document.getElementById('notifMarkAll')?.addEventListener('click', markAll);
+
+            load();
+        })();
     </script>
 
 </body>

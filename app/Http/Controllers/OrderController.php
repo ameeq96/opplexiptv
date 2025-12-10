@@ -30,6 +30,15 @@ class OrderController extends Controller
         ]);
     }
 
+    public function show(Order $order)
+    {
+        $order->load(['user', 'pictures']);
+        return view('admin.orders.show', [
+            'order'      => $order,
+            'isReseller' => $order->type === 'reseller',
+        ]);
+    }
+
     public function create()
     {
         return view('admin.orders.create', [

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\CheckoutOrderMail;
 use App\Http\Requests\Site\{BuyNowRequest, ContactRequest, SubscribeRequest};
+use App\Models\Admin;
 use App\Models\Device;
 use App\Models\Order;
 use App\Models\Package;
@@ -11,11 +12,13 @@ use App\Models\Plan;
 use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService, ProductCatalogService};
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
 use App\Models\User;
 use Illuminate\Support\Str;
+use App\Notifications\NewOrderNotification;
 
 class HomeController extends Controller
 {
@@ -433,6 +436,22 @@ class HomeController extends Controller
 
             $adminEmail = config('mail.from.address', 'info@opplexiptv.com');
             Mail::to($adminEmail)->send(new CheckoutOrderMail($emailData, true));
+
+            $admins = Admin::all();
+            if ($admins->count() > 0) {
+                Notification::send($admins, new NewOrderNotification([
+                    'title'   => 'New order received',
+                    'body'    => "{$fullName} placed an order ({$data['package_type']}).",
+                    'order_id'=> $order->id,
+                    'package' => $data['plan_name'],
+                    'type'    => $data['package_type'],
+                    'client'  => $fullName,
+                    'phone'   => $data['phone'],
+                    'payment' => $data['paymethod'],
+                    'price'   => $sellPrice,
+                    'created' => $now->toDateTimeString(),
+                ]));
+            }
         } catch (\Throwable $e) {
             Log::error('Failed to send checkout emails', [
                 'order_id' => $order->id,

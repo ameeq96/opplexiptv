@@ -285,6 +285,11 @@
                                         </a>
                                     @endif
 
+                                    <a href="{{ route('admin.orders.show', $order) }}"
+                                        class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </a>
+
                                     <a href="{{ route('admin.orders.edit', $order) }}"
                                         class="btn btn-sm btn-outline-primary">Edit</a>
                                 </div>

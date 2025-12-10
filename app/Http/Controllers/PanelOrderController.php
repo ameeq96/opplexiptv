@@ -35,6 +35,15 @@ class PanelOrderController extends Controller
         ]);
     }
 
+    public function show(Order $panel_order)
+    {
+        $panel_order->load(['user', 'pictures']);
+        return view('admin.orders.show', [
+            'order'      => $panel_order,
+            'isReseller' => true,
+        ]);
+    }
+
     public function create()
     {
         return view('admin.reseller-orders.create', [

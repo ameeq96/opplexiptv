@@ -239,6 +239,11 @@
                                         </a>
                                     @endif
 
+                                    <a href="{{ route('admin.panel-orders.show', $order->id) }}"
+                                        class="btn btn-sm btn-outline-secondary">
+                                        View
+                                    </a>
+
                                     <a href="{{ route('admin.panel-orders.edit', $order->id) }}"
                                         class="btn btn-sm btn-outline-primary">
                                         Edit

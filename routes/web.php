@@ -13,6 +13,7 @@ use App\Http\Controllers\{
     PurchasingController,
     TrackingController,
     UserClientController,
+    AdminNotificationController,
 };
 use App\Http\Controllers\Admin\TrialClickController;
 
@@ -72,6 +73,13 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::post('orders/{order}/mark-messaged', [OrderController::class, 'markOneMessaged'])
             ->name('orders.markOneMessaged');
+
+        // Notifications
+        Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');
+        Route::post('notifications/{id}/read', [AdminNotificationController::class, 'markAsRead'])
+            ->name('notifications.read');
+        Route::post('notifications/read-all', [AdminNotificationController::class, 'markAllAsRead'])
+            ->name('notifications.readAll');
 
         Route::get('/trial-clicks', [TrialClickController::class, 'index'])->name('trial_clicks.index');
         Route::get('/trial-clicks/export', [TrialClickController::class, 'export'])->name('trial_clicks.export');
