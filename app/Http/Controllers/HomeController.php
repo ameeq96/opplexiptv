@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CheckoutOrderMail;
 use App\Http\Requests\Site\{BuyNowRequest, ContactRequest, SubscribeRequest};
 use App\Models\Device;
 use App\Models\Order;
 use App\Models\Package;
 use App\Models\Plan;
 use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService, ProductCatalogService};
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
@@ -369,6 +372,13 @@ class HomeController extends Controller
         $now      = now();
         $expiry   = $duration > 0 ? $now->copy()->addMonths($duration) : null;
 
+        $cleanMoney = static function ($v) {
+            if (is_null($v)) return null;
+            if (is_numeric($v)) return (float) $v;
+            $s = preg_replace('/[^0-9.]/', '', (string) $v);
+            return $s === '' ? null : (float) $s;
+        };
+
         // 3) Order create
         $order = Order::create([
             'user_id'        => $user->id,
@@ -398,6 +408,37 @@ class HomeController extends Controller
             'device_id'      => $data['device_id']  ?? null,
             'package_id'     => $data['package_id'] ?? null,
         ]);
+
+        $emailData = [
+            'order_id'          => $order->id,
+            'customer_name'     => $fullName,
+            'customer_email'    => $data['email'],
+            'phone'             => $data['phone'],
+            'package'           => $data['plan_name'],
+            'package_type'      => $data['package_type'],
+            'vendor'            => $data['iptv_vendor'] ?? null,
+            'device'            => $data['device'] ?? null,
+            'quantity'          => $qty,
+            'payment_method'    => $data['paymethod'],
+            'subscription_price'=> $cleanMoney($request->input('pkg_price')),
+            'connection_price'  => $cleanMoney($request->input('connection_price')),
+            'unit_price'        => $sellPriceSingle,
+            'total_price'       => $sellPrice,
+            'expiry'            => $expiry ? $expiry->toDateString() : null,
+            'notes'             => $data['notes'] ?? null,
+        ];
+
+        try {
+            Mail::to($user->email)->send(new CheckoutOrderMail($emailData, false));
+
+            $adminEmail = config('mail.from.address', 'info@opplexiptv.com');
+            Mail::to($adminEmail)->send(new CheckoutOrderMail($emailData, true));
+        } catch (\Throwable $e) {
+            Log::error('Failed to send checkout emails', [
+                'order_id' => $order->id,
+                'error'    => $e->getMessage(),
+            ]);
+        }
 
         return redirect()
             ->route('thankyou')
