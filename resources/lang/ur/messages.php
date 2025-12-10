@@ -473,6 +473,7 @@ return [
   'checkout_first_name'              => 'پہلا نام',
   'checkout_last_name'               => 'آخری نام',
   'checkout_phone'                   => 'فون',
+  'checkout_phone_hint'              => 'براہ کرم اپنا واٹس ایپ نمبر درج کریں (کنٹری کوڈ کے ساتھ).',
   'checkout_notes_label'             => 'آرڈر نوٹس (اختیاری)',
   'checkout_notes_placeholder'       => 'اپنے آرڈر کے بارے میں نوٹس لکھیں، مثلاً خصوصی ہدایات وغیرہ۔',
 

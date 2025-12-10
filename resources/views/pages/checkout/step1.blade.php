@@ -7,36 +7,56 @@
             font-weight: 600;
             color: #059669
         }
-        .checkout-badges i { margin-right: .35rem }
-        .hero-title { font-weight: 700; letter-spacing: .2px }
-        .hero-sub { color: #6b7280 }
+
+        .checkout-badges i {
+            margin-right: .35rem
+        }
+
+        .hero-title {
+            font-weight: 700;
+            letter-spacing: .2px
+        }
+
+        .hero-sub {
+            color: #6b7280
+        }
+
         .notice {
             border: 1px solid #e5e7eb;
             border-left: 4px solid #60a5fa;
             background: #f8fafc;
             color: #334155
         }
+
         .card-soft {
             border: 1px solid #e5e7eb;
             border-radius: .75rem;
             box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .02)
         }
-        .required:after { content: " *"; color: #ef4444 }
+
+        .required:after {
+            content: " *";
+            color: #ef4444
+        }
+
         .order-box {
             border: 1.5px solid #dbeafe;
             border-radius: .75rem;
             background: #f8fbff
         }
+
         .order-line {
             display: flex;
             justify-content: space-between;
             color: #374151
         }
+
         .order-meta {
             font-size: .85rem;
             color: #6b7280;
             margin-top: .35rem
         }
+
         .order-total {
             display: flex;
             justify-content: space-between;
@@ -46,13 +66,19 @@
             font-weight: 700;
             font-size: 1.25rem
         }
+
         .pay-option {
             border: 1px solid #e5e7eb;
             border-radius: .75rem;
             padding: .5rem .75rem;
             display: flex
         }
-        .pay-option.active { border-color: #bfdbfe; background: #eff6ff }
+
+        .pay-option.active {
+            border-color: #bfdbfe;
+            background: #eff6ff
+        }
+
         .place-order {
             background: #2563eb;
             border: 0;
@@ -60,28 +86,39 @@
             padding: .85rem 1rem;
             width: 100%
         }
-        .place-order:hover { background: #1d4ed8 }
-        .small-note { font-size: .85rem; color: #6b7280 }
+
+        .place-order:hover {
+            background: #1d4ed8
+        }
+
+        .small-note {
+            font-size: .85rem;
+            color: #6b7280
+        }
     </style>
 
     @php
         // ------------------------------
         // Gather selections from request
         // ------------------------------
-        $selectedDevice     = $device      ?? request('device');
-        $selectedDeviceId   = $device_id   ?? request('device_id');
-        $selectedPackageId  = $package_id  ?? request('package_id');
-        $selectedVendor     = $iptv_vendor ?? request('iptv_vendor');
-        $selectedPlanName   = $plan_name   ?? request('plan_name');
+        $selectedDevice = $device ?? request('device');
+        $selectedDeviceId = $device_id ?? request('device_id');
+        $selectedPackageId = $package_id ?? request('package_id');
+        $selectedVendor = $iptv_vendor ?? request('iptv_vendor');
+        $selectedPlanName = $plan_name ?? request('plan_name');
 
         // Optional component prices coming from configure page
         $connectionPriceParam = request('connection_price');
-        $pkgPriceParam        = request('pkg_price');
+        $pkgPriceParam = request('pkg_price');
 
         // Clean numeric helpers
         $cleanNumber = function ($v) {
-            if (is_null($v)) return null;
-            if (is_numeric($v)) return (float) $v;
+            if (is_null($v)) {
+                return null;
+            }
+            if (is_numeric($v)) {
+                return (float) $v;
+            }
             $s = preg_replace('/[^0-9.]/', '', (string) $v);
             return $s === '' ? null : (float) $s;
         };
@@ -96,7 +133,9 @@
         // (detect via connection_price)
         // ------------------------------
         $match = function ($val, $target) {
-            if (is_null($val)) return false;
+            if (is_null($val)) {
+                return false;
+            }
             return abs($val - $target) < 0.01;
         };
 
@@ -132,7 +171,7 @@
         // Connection price sirf show hoga
         // ------------------------------
         if (!is_null($ppNum)) {
-            $planPrice = $ppNum;                       // charge only subscription
+            $planPrice = $ppNum; // charge only subscription
         } elseif (!is_null(request('plan_price'))) {
             $planPrice = $cleanNumber(request('plan_price')) ?? 0.0;
         } elseif (!is_null($planPriceDb)) {
@@ -143,22 +182,21 @@
 
         // Package type normalization
         $selectedTypeRaw = $package_type ?? request('package_type'); // 'iptv'/'package' or 'reseller'
-        $selectedType    = old('package_type', $selectedTypeRaw);
+        $selectedType = old('package_type', $selectedTypeRaw);
         if ($selectedType === 'iptv') {
             $selectedType = 'package'; // DB enum: package | reseller
         }
-        $typeLabel = $selectedType === 'reseller'
-            ? __('messages.checkout_type_reseller')
-            : __('messages.checkout_type_iptv');
+        $typeLabel =
+            $selectedType === 'reseller' ? __('messages.checkout_type_reseller') : __('messages.checkout_type_iptv');
 
         // Totals (based only on planPrice)
-        $qty      = 1;
+        $qty = 1;
         $subtotal = $planPrice * $qty;
-        $total    = $subtotal;
+        $total = $subtotal;
 
         // Carry values forward to step2 (safe defaults)
         $carryConn = number_format((float) ($cpNum ?? 0), 2, '.', '');
-        $carryPkg  = number_format((float) ($ppNum ?? 0), 2, '.', '');
+        $carryPkg = number_format((float) ($ppNum ?? 0), 2, '.', '');
     @endphp
 
     <div class="container text-center mt-3">
@@ -224,7 +262,7 @@
                             <div class="form-group col-md-6">
                                 <label class="required">{{ __('messages.checkout_first_name') }}</label>
                                 <input type="text" name="first_name" class="form-control"
-                                       value="{{ old('first_name') }}">
+                                    value="{{ old('first_name') }}">
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="required">{{ __('messages.checkout_last_name') }}</label>
@@ -234,14 +272,16 @@
 
                         <div class="form-group">
                             <label class="required">{{ __('messages.checkout_phone') }}</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" value="{{ old('phone') }}">
+                            <input type="tel" id="phone" name="phone" class="form-control"
+                                value="{{ old('phone') }}">
                             <small id="phone-client-error" class="text-danger d-none"></small>
+                            <small class="text-muted d-block mt-1">{{ __('messages.checkout_phone_hint') }}</small>
                         </div>
 
                         <div class="form-group">
                             <label>{{ __('messages.checkout_notes_label') }}</label>
                             <textarea rows="4" name="notes" class="form-control"
-                                      placeholder="{{ __('messages.checkout_notes_placeholder') }}">{{ old('notes') }}</textarea>
+                                placeholder="{{ __('messages.checkout_notes_placeholder') }}">{{ old('notes') }}</textarea>
                         </div>
 
                         <div class="d-block d-lg-none mt-3">
@@ -261,7 +301,8 @@
                         <div class="d-flex justify-content-between">
                             <div>
                                 <div class="font-weight-bold">
-                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} × {{ $qty }}
+                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} ×
+                                    {{ $qty }}
                                 </div>
 
                                 <div class="order-meta">
@@ -285,8 +326,7 @@
                                     @endif
                                 </div>
 
-                                <a class="small mt-1 d-inline-block"
-                                   href="{{ route('configure', request()->query()) }}">
+                                <a class="small mt-1 d-inline-block" href="{{ route('configure', request()->query()) }}">
                                     {{ __('messages.checkout_edit_options') }}
                                 </a>
                             </div>
@@ -317,7 +357,7 @@
                 <div class="card-soft p-4">
                     <div class="pay-option active mb-3">
                         <input class="mr-2 mt-1" type="radio" name="paymethod" id="pm1" value="card"
-                               form="checkoutForm" checked>
+                            form="checkoutForm" checked>
                         <label class="w-100" for="pm1">
                             <div class="font-weight-bold">
                                 {{ __('messages.checkout_pay_card_title') }}
@@ -330,7 +370,7 @@
 
                     <div class="pay-option mb-3">
                         <input class="mr-2 mt-1" type="radio" name="paymethod" id="pm2" value="crypto"
-                               form="checkoutForm">
+                            form="checkoutForm">
                         <label class="w-100" for="pm2">
                             <div class="font-weight-bold">
                                 {{ __('messages.checkout_pay_crypto_title') }}

@@ -469,7 +469,8 @@ return [
     'checkout_email'                   => 'Indirizzo e-mail',
     'checkout_first_name'              => 'Nome',
     'checkout_last_name'               => 'Cognome',
-    'checkout_phone'                   => 'Telefono',
+  'checkout_phone'                   => 'Telefono',
+  'checkout_phone_hint'              => 'Inserisci il tuo numero WhatsApp (includi il prefisso internazionale).',
     'checkout_notes_label'             => 'Note sull’ordine (opzionale)',
     'checkout_notes_placeholder'       => 'Note sul tuo ordine, ad esempio istruzioni speciali per la consegna.',
 

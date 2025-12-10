@@ -474,6 +474,7 @@ return [
   'checkout_first_name'              => 'الاسم الأول',
   'checkout_last_name'               => 'اسم العائلة',
   'checkout_phone'                   => 'رقم الهاتف',
+  'checkout_phone_hint'              => 'يرجى إدخال رقم واتساب الخاص بك (مع رمز الدولة).',
   'checkout_notes_label'             => 'ملاحظات على الطلب (اختياري)',
   'checkout_notes_placeholder'       => 'ملاحظات حول طلبك، مثل تعليمات خاصة بالتسليم.',
 

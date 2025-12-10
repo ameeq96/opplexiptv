@@ -475,7 +475,8 @@ return [
   'checkout_email'                   => 'Endereço de e-mail',
   'checkout_first_name'              => 'Nome',
   'checkout_last_name'               => 'Sobrenome',
-  'checkout_phone'                   => 'Telefone',
+  'checkout_phone'                   => 'Телефон',
+  'checkout_phone_hint'              => 'Укажите ваш номер WhatsApp (с кодом страны).',
   'checkout_notes_label'             => 'Observações do pedido (opcional)',
   'checkout_notes_placeholder'       => 'Observações sobre o seu pedido, por exemplo instruções especiais de entrega.',
 

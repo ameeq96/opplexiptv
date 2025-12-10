@@ -476,6 +476,7 @@ return [
   'checkout_first_name'              => 'Voornaam',
   'checkout_last_name'               => 'Achternaam',
   'checkout_phone'                   => 'Telefoon',
+  'checkout_phone_hint'              => 'Voer je WhatsApp-nummer in (inclusief landcode).',
   'checkout_notes_label'             => 'Opmerkingen bij bestelling (optioneel)',
   'checkout_notes_placeholder'       => 'Opmerkingen over je bestelling, bijvoorbeeld speciale bezorginstructies.',
 

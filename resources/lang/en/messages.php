@@ -476,6 +476,7 @@ return [
   'checkout_first_name'            => 'First Name',
   'checkout_last_name'             => 'Last Name',
   'checkout_phone'                 => 'Phone',
+  'checkout_phone_hint'            => 'Please enter your WhatsApp number (include country code).',
   'checkout_notes_label'           => 'Order notes (optional)',
   'checkout_notes_placeholder'     => 'Notes about your order, e.g. special notes for delivery.',
 

@@ -475,6 +475,7 @@ return [
   'checkout_first_name'              => 'पहला नाम',
   'checkout_last_name'               => 'अंतिम नाम',
   'checkout_phone'                   => 'फ़ोन',
+  'checkout_phone_hint'              => 'कृपया अपना व्हाट्सऐप नंबर दर्ज करें (देश कोड सहित).',
   'checkout_notes_label'             => 'ऑर्डर नोट्स (वैकल्पिक)',
   'checkout_notes_placeholder'       => 'अपने ऑर्डर के बारे में नोट्स लिखें, जैसे विशेष डिलीवरी निर्देश आदि।',
 
