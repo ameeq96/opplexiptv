@@ -6,6 +6,13 @@
     $user = $order->user;
     $payment = $order->payment_method ?: ($order->custom_payment_method ?? 'N/A');
     $packageName = $order->package === 'other' ? ($order->custom_package ?? 'Custom') : $order->package;
+    $phoneRaw   = $user?->phone ?? '';
+    $phoneClean = preg_replace('/\D+/', '', $phoneRaw);
+    $waText     = rawurlencode("Hello {$user?->name}, about order #{$order->id}");
+    $waUniversal = $phoneClean ? "https://wa.me/{$phoneClean}?text={$waText}" : null; // general/fallback
+    $waBusinessAndroid = $phoneClean
+        ? "intent://send/?phone={$phoneClean}&text={$waText}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end"
+        : null;
 @endphp
 
 @section('content')
@@ -47,7 +54,16 @@
                             <div class="small text-muted">Client</div>
                             <div class="fw-semibold">{{ $user?->name }}</div>
                             <div class="text-muted">{{ $user?->email }}</div>
-                            <div class="text-muted">{{ $user?->phone }}</div>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="text-muted">{{ $user?->phone ?: 'N/A' }}</span>
+                                @if ($waUniversal)
+                                    <button type="button"
+                                            class="btn btn-sm btn-outline-success"
+                                            onclick="openWA('{{ $waBusinessAndroid }}','{{ $waUniversal }}')">
+                                        WhatsApp
+                                    </button>
+                                @endif
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="small text-muted">IPTV Username</div>
