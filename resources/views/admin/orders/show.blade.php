@@ -54,16 +54,16 @@
                             <div class="small text-muted">Client</div>
                             <div class="fw-semibold">{{ $user?->name }}</div>
                             <div class="text-muted">{{ $user?->email }}</div>
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="text-muted">{{ $user?->phone ?: 'N/A' }}</span>
-                                @if ($waUniversal)
-                                    <button type="button"
-                                            class="btn btn-sm btn-outline-success"
-                                            onclick="openWA('{{ $waBusinessAndroid }}','{{ $waUniversal }}')">
-                                        WhatsApp
-                                    </button>
-                                @endif
-                            </div>
+                            @if ($waUniversal && $user?->phone)
+                                <a href="javascript:void(0);"
+                                   onclick="openWA('{{ $waBusinessAndroid }}','{{ $waUniversal }}')"
+                                   class="text-decoration-none d-inline-flex align-items-center gap-1">
+                                    <span class="text-muted">{{ $user->phone }}</span>
+                                    <i class="bi bi-whatsapp text-success"></i>
+                                </a>
+                            @else
+                                <div class="text-muted">{{ $user?->phone ?: 'N/A' }}</div>
+                            @endif
                         </div>
                         <div class="col-md-6">
                             <div class="small text-muted">IPTV Username</div>
@@ -155,4 +155,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openWA(androidBusiness, fallback) {
+            if (androidBusiness && /Android/i.test(navigator.userAgent)) {
+                window.location.href = androidBusiness;
+                setTimeout(function() { window.location.href = fallback; }, 400);
+            } else if (fallback) {
+                window.location.href = fallback;
+            }
+        }
+    </script>
 @endsection
