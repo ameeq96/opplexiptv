@@ -32,7 +32,7 @@
     $currency = config('services.app.default_currency', 'USD');
 
     $routeName = optional(Request::route())->getName();
-    $noindexRoutes = ['redirect.ad', 'buynow', 'buy-now-panel'];
+    $noindexRoutes = ['redirect.ad'];
 
     $pageParam = (int) request()->input('page', 1);
     $hasSearch = trim((string) request()->input('search', '')) !== '';

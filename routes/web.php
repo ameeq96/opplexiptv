@@ -105,9 +105,7 @@ Route::group(
         Route::get('faqs',            [HomeController::class, 'faq'])->name('faqs');
         Route::get('activate',        [HomeController::class, 'activate'])->name('activate');
         Route::get('activate-info',   [HomeController::class, 'activateInfo'])->name('activate-info');
-        Route::get('buy-now-panel',   [HomeController::class, 'buynowpanel'])->name('buy-now-panel');
         Route::get('contact',         [HomeController::class, 'contact'])->name('contact');
-        Route::get('buynow',          [HomeController::class, 'buynow'])->name('buynow');
         Route::get('pricing',         [HomeController::class, 'pricing'])->name('pricing');
         Route::get('movies',          [HomeController::class, 'movies'])->name('movies')->middleware('noindex.pagination');
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
@@ -116,8 +114,6 @@ Route::group(
         Route::get('shop', [HomeController::class, 'shop'])->name('shop');
 
         Route::post('send-email',     [HomeController::class, 'send'])->name('contact.send');
-        Route::post('buy-now',        [HomeController::class, 'sendBuynow'])->name('buynow.send');
-        Route::post('buy-now-panel',  [HomeController::class, 'postBuyNowPanel'])->name('buynow.panel');
         Route::post('subscribe',      [HomeController::class, 'subscribe'])->name('subscribe');
         Route::get('trending',        [HomeController::class, 'getTrending']);
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');

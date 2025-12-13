@@ -57,6 +57,20 @@
                 </ul>
             </div>
 
+                        <!-- Payments -->
+            <div class="fx-col fx-col--payments">
+                <h4 class="fx-title">{{ $isRtl ? 'ایکسپلور' : 'Explore' }}</h4>
+                <ul class="fx-list">
+                    <li><a class="fx-link" href="{{ url('/') }}">Home</a></li>
+                    <li><a class="fx-link" href="{{ url('/pricing') }}">Pricing</a></li>
+                    <li><a class="fx-link" href="{{ url('/packages') }}">Packages</a></li>
+                    <li><a class="fx-link" href="{{ url('/reseller-panel') }}">Reseller Panel</a></li>
+                    <li><a class="fx-link" href="{{ url('/movies') }}">Movies</a></li>
+                    <li><a class="fx-link" href="{{ url('/iptv-applications') }}">IPTV Apps</a></li>
+                    <li><a class="fx-link" href="{{ url('/shop') }}">Shop</a></li>
+                </ul>
+            </div>
+
             <!-- Company -->
             <div class="fx-col">
                 <h4 class="fx-title">{{ $isRtl ? 'کمپنی' : 'Company' }}</h4>
@@ -76,16 +90,6 @@
                     <li><a class="fx-link" href="{{ url('/refund-policy') }}">{{ $isRtl ? 'ریفنڈ و منسوخی' : 'Refund & Cancellation' }}</a></li>
                 </ul>
             </div>
-
-            <!-- Payments -->
-            <div class="fx-col fx-col--payments">
-                <h4 class="fx-title">{{ $isRtl ? 'ادائیگیاں' : 'Payments' }}</h4>
-                <ul class="fx-pay">
-                    <li><img src="{{ asset('images/payments/visa.png') }}"  alt="Visa"  width="50" loading="lazy"></li>
-                    <li><img src="{{ asset('images/payments/mastercard.png') }}"  alt="Mastercard" width="50" loading="lazy"></li>
-                    <li><img src="{{ asset('images/payments/cryptomus.png') }}"  alt="Cryptomus"  width="50" loading="lazy"></li>
-                </ul>
-            </div>
         </div>
 
         <!-- Bottom -->
@@ -95,7 +99,12 @@
                 {{ $isRtl
                     ? 'کرپٹو ادائیگیوں کا استعمال مقامی قوانین کے مطابق ہونا چاہیے۔ مزید معلومات کے لیے Privacy Policy اور ریفنڈ پالیسی دیکھیں۔'
                     : 'Use of crypto payments must comply with your local laws. See our Privacy Policy and Refund policies for details.' }}
-            </div>
+                        <div class="fx-deeplinks" style="font-size:12px; margin-top:6px; color:#aaa;">
+                <a href="{{ url('/activate') }}">Activate</a> |
+                <a href="{{ url('/configure') }}">Configure</a> |
+                <a href="{{ url('/checkout') }}">Checkout</a> |
+                <a href="{{ url('/thank-you') }}">Thank You</a>
+            </div></div>
         </div>
     </div>
 </footer>
