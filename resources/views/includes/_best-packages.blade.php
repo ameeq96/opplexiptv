@@ -23,6 +23,21 @@
                 padding: .375rem;
             }
 
+            .pricing-controls {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            #real-toggle label.form-switch {
+               font-size: 15px !important;
+               justify-content: start !important
+            }
+
+            #real-toggle label.form-switch span {
+                white-space: normal;
+                line-height: 1.3;
+            }
+
             .vendor-toggle .tg,
             .vendor-toggle-reseller .tg {
                 border: 0;
@@ -40,6 +55,23 @@
                 background: #2563eb;
                 color: #fff;
                 box-shadow: 0 6px 14px rgba(37, 99, 235, .25);
+            }
+
+            .pkg-item .price-block,
+            .pkg-item .inner-box {
+                height: 100%;
+            }
+
+            .pkg-item .inner-box {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .pkg-item .lower-box {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             #normalPackages,
@@ -79,9 +111,34 @@
                     grid-template-columns: 1fr;
                 }
             }
+
+            @media (max-width: 768px) {
+
+                #normalPackages,
+                #resellerPackages .reseller-wrapper {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-auto-columns: minmax(85%, 1fr);
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+                    overscroll-behavior-x: contain;
+                    padding-bottom: 12px;
+                    gap: 16px;
+                }
+
+                .pkg-item {
+                    scroll-snap-align: start;
+                    min-width: 85vw;
+                    max-width: 85vw;
+                }
+
+                .price-block {
+                    height: 100%;
+                }
+            }
         </style>
 
-        <div class="d-flex align-items-center justify-content-between mb-3 mt-3">
+        <div class="pricing-controls d-flex align-items-center justify-content-between mb-3 mt-3">
             <div id="real-toggle">
                 <label class="form-switch m-0">
                     <input type="checkbox" id="resellerToggle">
