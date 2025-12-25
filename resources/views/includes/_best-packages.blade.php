@@ -90,6 +90,21 @@
                 flex-shrink: 0;
             }
 
+            /* Stabilize card height to reduce layout shifts while fonts load */
+            .price-block {
+                min-height: 520px;
+            }
+            @media (max-width: 992px) {
+                .price-block {
+                    min-height: 500px;
+                }
+            }
+            @media (max-width: 576px) {
+                .price-block {
+                    min-height: 460px;
+                }
+            }
+
             #normalPackages,
             #resellerPackages .reseller-wrapper {
                 display: grid;
