@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Jobs\GenerateWebpImage;
 use Illuminate\Support\Facades\Http;
 
 class ImageService
@@ -34,27 +35,8 @@ class ImageService
 
         if (file_exists($fullPath)) return asset($webpPath);
 
-        try {
-            $imageData = Http::timeout(10)->withoutVerifying()->get($imageUrl)->body();
-            $image = @imagecreatefromstring($imageData);
-            if (!$image) return $imageUrl;
+        GenerateWebpImage::dispatch($imageUrl, $width, $height, $quality, $webpPath);
 
-            $resized = imagecreatetruecolor($width, $height);
-            imagealphablending($resized, false);
-            imagesavealpha($resized, true);
-            $transparent = imagecolorallocatealpha($resized, 0, 0, 0, 127);
-            imagefill($resized, 0, 0, $transparent);
-            imagecopyresampled($resized, $image, 0, 0, 0, 0, $width, $height, imagesx($image), imagesy($image));
-
-            if (!is_dir($webpDir)) mkdir($webpDir, 0755, true);
-            imagewebp($resized, $fullPath, $quality);
-
-            imagedestroy($image);
-            imagedestroy($resized);
-
-            return asset($webpPath);
-        } catch (\Throwable $e) {
-            return $imageUrl;
-        }
+        return $imageUrl;
     }
 }

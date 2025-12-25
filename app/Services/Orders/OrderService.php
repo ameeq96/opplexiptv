@@ -190,7 +190,7 @@ class OrderService
         if ($action === 'unmark_messaged') {
             Order::whereIn('id', $ids)->update([
                 'messaged_at' => null,
-                'messaged_by' => null,
+                'messaged_by' => false,
             ]);
             return 'Selected orders moved back to Unmessaged.';
         }

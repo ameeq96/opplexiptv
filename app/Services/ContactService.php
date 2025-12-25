@@ -9,18 +9,18 @@ class ContactService
 {
     public function contact(array $details): void
     {
-        Mail::to('info@opplexiptv.com')->send(new ContactEmail($details));
-        Mail::to($details['email'])->send(new ContactAutoReply($details));
+        Mail::to('info@opplexiptv.com')->queue(new ContactEmail($details));
+        Mail::to($details['email'])->queue(new ContactAutoReply($details));
     }
 
     public function buyNow(array $details): void
     {
-        Mail::to('info@opplexiptv.com')->send(new BuyNowEmail($details));
-        Mail::to($details['email'])->send(new BuyNowAutoReply($details));
+        Mail::to('info@opplexiptv.com')->queue(new BuyNowEmail($details));
+        Mail::to($details['email'])->queue(new BuyNowAutoReply($details));
     }
 
     public function subscribe(string $email): void
     {
-        Mail::to('info@opplexiptv.com')->send(new SubscribeEmail(['email' => $email]));
+        Mail::to('info@opplexiptv.com')->queue(new SubscribeEmail(['email' => $email]));
     }
 }

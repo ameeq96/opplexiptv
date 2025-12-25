@@ -34,7 +34,7 @@ class PanelOrderBulkService
         }
 
         if ($action === 'unmark_messaged') {
-            $base->update(['messaged_at' => null, 'messaged_by' => null]);
+            $base->update(['messaged_at' => null, 'messaged_by' => false]);
             return 'Selected reseller orders moved back to Unmessaged.';
         }
 

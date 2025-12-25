@@ -152,15 +152,15 @@
                                         {{-- Flash messages --}}
                                         @if (session('success'))
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                <div class="alert alert-success text-center" role="status">
+                                                <div class="alert alert-success" role="status">
                                                     {{ session('success') }}
                                                 </div>
                                             </div>
                                         @endif
                                         @if (session('error'))
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                                <div class="alert alert-danger text-center" role="alert">
-                                                    {{ session('error') }}
+                                                <div class="alert alert-danger" role="alert">
+                                                    {{ session('error') }}class="h2 my-3"
                                                 </div>
                                             </div>
                                         @endif

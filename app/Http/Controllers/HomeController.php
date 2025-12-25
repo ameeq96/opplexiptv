@@ -401,7 +401,7 @@ class HomeController extends Controller
             'expiry_date'    => $expiry,
             'currency'       => $currency,
             'note'           => $data['notes'] ?? null,
-            'messaged_by'    => null,
+            'messaged_by'    => false,
             'messaged_at'    => null,
             'iptv_username'  => null,
 
@@ -432,10 +432,10 @@ class HomeController extends Controller
         ];
 
         try {
-            Mail::to($user->email)->send(new CheckoutOrderMail($emailData, false));
+            Mail::to($user->email)->queue(new CheckoutOrderMail($emailData, false));
 
             $adminEmail = config('mail.from.address', 'info@opplexiptv.com');
-            Mail::to($adminEmail)->send(new CheckoutOrderMail($emailData, true));
+            Mail::to($adminEmail)->queue(new CheckoutOrderMail($emailData, true));
 
             $admins = Admin::all();
             if ($admins->count() > 0) {
