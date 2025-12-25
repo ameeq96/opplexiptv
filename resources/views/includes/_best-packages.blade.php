@@ -28,6 +28,15 @@
                 flex-wrap: wrap;
             }
 
+            /* Prevent initial flash/LCP shift: hide secondary vendors + reseller by default (JS toggles later) */
+            .pkg-item[data-type="iptv"][data-vendor="starshare"],
+            .pkg-item[data-type="reseller"],
+            #resellerPackages,
+            #vendorToggleReseller,
+            #creditInfo {
+                display: none;
+            }
+
             #real-toggle label.form-switch {
                font-size: 15px !important;
                justify-content: start !important
@@ -313,7 +322,8 @@
             const vendor = getActiveVendor(iptvVendorToggle);
             iptvCards.forEach(card => {
                 const cardVendor = norm(card.dataset.vendor);
-                card.style.setProperty('display', cardVendor === vendor ? '' : 'none', 'important');
+                const show = cardVendor === vendor;
+                card.style.setProperty('display', show ? 'block' : 'none', 'important');
             });
         }
 
@@ -322,10 +332,10 @@
             const vendor = getActiveVendor(resellerVendorToggle);
 
             if (resellerWrap) {
-                resellerWrap.style.setProperty('display', showReseller ? '' : 'none', 'important');
+                resellerWrap.style.setProperty('display', showReseller ? 'block' : 'none', 'important');
             }
             if (creditInfo) {
-                creditInfo.style.setProperty('display', showReseller ? '' : 'none', 'important');
+                creditInfo.style.setProperty('display', showReseller ? 'block' : 'none', 'important');
             }
 
             if (iptvVendorToggle) {
@@ -338,7 +348,7 @@
             resellerCards.forEach(card => {
                 const cardVendor = norm(card.dataset.vendor);
                 const showCard = showReseller && cardVendor === vendor;
-                card.style.setProperty('display', showCard ? '' : 'none', 'important');
+                card.style.setProperty('display', showCard ? 'block' : 'none', 'important');
             });
         }
 
