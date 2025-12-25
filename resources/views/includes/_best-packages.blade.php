@@ -83,6 +83,13 @@
                 justify-content: space-between;
             }
 
+            /* Reserve space for plan icons to prevent CLS */
+            .pkg-item .icon-list img {
+                width: 48px;
+                height: 48px;
+                flex-shrink: 0;
+            }
+
             #normalPackages,
             #resellerPackages .reseller-wrapper {
                 display: grid;
