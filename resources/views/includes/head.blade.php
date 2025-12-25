@@ -144,6 +144,12 @@
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
 
+{{-- Preload critical fonts to reduce CLS --}}
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+
 @if (!empty($displayMovies[0]['webp_image_url'] ?? null))
     <link rel="preload" as="image"
         href="{{ !empty($displayMovies[0]['webp_image_url']) ? $displayMovies[0]['webp_image_url'] : v('images/placeholder.webp') }}"
