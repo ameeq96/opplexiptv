@@ -118,7 +118,10 @@ class UiData
      */
     private function fetchTrendingMovies(int $page = 1): array
     {
-        return Cache::remember("ui:tmdb:trending:all:day:p{$page}", now()->addMinutes(30), function () use ($page): array {
+        $locale = app()->getLocale();
+        $cacheKey = "ui:tmdb:trending:all:day:{$locale}:p{$page}";
+
+        return Cache::remember($cacheKey, now()->addMinutes(30), function () use ($page): array {
             try {
                 $payload = $this->tmdb->trending('all', 'day', $page);
                 return Arr::get($payload, 'results', []) ?: [];
@@ -130,7 +133,8 @@ class UiData
 
     private function searchTmdb(string $query, int $page = 1): array
     {
-        $key = "ui:tmdb:search:" . md5($query) . ":p{$page}";
+        $locale = app()->getLocale();
+        $key = "ui:tmdb:search:" . md5($locale . '|' . $query) . ":p{$page}";
 
         return Cache::remember($key, now()->addMinutes(10), function () use ($query, $page) {
             try {
