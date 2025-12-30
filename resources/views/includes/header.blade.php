@@ -1,10 +1,5 @@
 <header class="main-header">
 
-    @php
-        $defaultLocale = LaravelLocalization::getDefaultLocale();
-        $hideDefaultLocale = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
-    @endphp
-
     @if (!$agent->isMobile())
         <div class="header-top">
     <div class="auto-container clearfix custom-max">
@@ -131,15 +126,9 @@
                                         <ul class="dropdown-menu">
                                             @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                                                 <li>
-                                            @php
-                                                $localeHref = ($localeCode === $defaultLocale && $hideDefaultLocale)
-                                                    ? LaravelLocalization::getNonLocalizedURL()
-                                                    : LaravelLocalization::getLocalizedURL($localeCode);
-                                                $localeHref = \preg_replace('~(?<!:)//+~', '/', $localeHref);
-                                            @endphp
                                             <a class="dropdown-item {{$isRtl ? 'text-right' : ''}}" rel="alternate"
                                                 hreflang="{{ $localeCode }}"
-                                                href="{{ $localeHref }}">
+                                                href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}">
                                                         {{ $properties['native'] }}
                                                     </a>
                                                 </li>
@@ -178,14 +167,8 @@
                             <select onchange="location = this.value;" class="custom-select custom-select-sm border-0"
                                 style="box-shadow: none; padding-right: 24px;">
                                 @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                    @php
-                                        $localeHref = ($localeCode === $defaultLocale && $hideDefaultLocale)
-                                            ? LaravelLocalization::getNonLocalizedURL()
-                                            : LaravelLocalization::getLocalizedURL($localeCode);
-                                        $localeHref = \preg_replace('~(?<!:)//+~', '/', $localeHref);
-                                    @endphp
                                     <option
-                                        value="{{ $localeHref }}"
+                                        value="{{ LaravelLocalization::getLocalizedURL($localeCode) }}"
                                         {{ app()->getLocale() == $localeCode ? 'selected' : '' }}>
                                         {{ $properties['native'] }}
                                     </option>
