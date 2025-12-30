@@ -62,12 +62,6 @@
     @endif
 
 
-    @php
-        $supportedLocales = LaravelLocalization::getSupportedLocales();
-        $defaultLocale = LaravelLocalization::getDefaultLocale();
-        $hideDefaultLocale = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
-    @endphp
-
     <div class="header-lower">
 
         <div class="auto-container clearfix">
@@ -130,20 +124,15 @@
                                             {{ LaravelLocalization::getCurrentLocaleNative() }}
                                         </a>
                                         <ul class="dropdown-menu">
-                                        @foreach ($supportedLocales as $localeCode => $properties)
-                                            <li>
-                                            @php
-                                                $localeUrl = ($localeCode === $defaultLocale && $hideDefaultLocale)
-                                                    ? LaravelLocalization::getNonLocalizedURL()
-                                                    : LaravelLocalization::getLocalizedURL($localeCode);
-                                            @endphp
-                                            <a class="dropdown-item {{$isRtl ? 'text-right' : ''}}" rel="alternate"
-                                                hreflang="{{ $localeCode }}"
-                                                href="{{ $localeUrl }}">
-                                                    {{ $properties['native'] }}
-                                                </a>
-                                            </li>
-                                        @endforeach
+                                            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                                <li>
+                                                    <a class="dropdown-item {{$isRtl ? 'text-right' : ''}}" rel="alternate"
+                                                        hreflang="{{ $localeCode }}"
+                                                        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                                        {{ $properties['native'] }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
                                         </ul>
 
                                     </li>
@@ -172,22 +161,20 @@
             </div>
             <div class="menu-outer">
                 <div class="d-flex justify-content-center mt-4">
-                        <div class="d-flex align-items-center px-3 py-2 rounded border"
-                            style="background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <i class="fa fa-globe mr-2" style="font-size: 18px;"></i>
-                            <select onchange="location = this.value;" class="custom-select custom-select-sm border-0"
-                                style="box-shadow: none; padding-right: 24px;">
-                                @foreach ($supportedLocales as $localeCode => $properties)
-                                    <option
-                                        value="{{ ($localeCode === $defaultLocale && $hideDefaultLocale)
-                                            ? LaravelLocalization::getNonLocalizedURL()
-                                            : LaravelLocalization::getLocalizedURL($localeCode) }}"
-                                        {{ app()->getLocale() == $localeCode ? 'selected' : '' }}>
-                                        {{ $properties['native'] }}
-                                    </option>
-                                @endforeach
-                            </select>
-                        </div>
+                    <div class="d-flex align-items-center px-3 py-2 rounded border"
+                        style="background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                        <i class="fa fa-globe mr-2" style="font-size: 18px;"></i>
+                        <select onchange="location = this.value;" class="custom-select custom-select-sm border-0"
+                            style="box-shadow: none; padding-right: 24px;">
+                            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                <option
+                                    value="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+                                    {{ app()->getLocale() == $localeCode ? 'selected' : '' }}>
+                                    {{ $properties['native'] }}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
                 </div>
 
             </div>
