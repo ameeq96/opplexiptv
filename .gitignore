@@ -4,6 +4,7 @@
 /public/webp_images
 /public/hot
 /public/storage
+/bootstrap/cache/routes-*.php
 /public/downloads
 /storage/*.key
 /vendor
