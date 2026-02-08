@@ -531,4 +531,13 @@ return [
   'back_to_blogs' => 'Back to blogs',
   'share' => 'Copy link',
 
+
+    'blog' => [
+        'heading' => 'Blogs',
+        'breadcrumb' => [
+            'home' => 'Home',
+            'current' => 'Blogs',
+        ],
+    ],
+
 ];

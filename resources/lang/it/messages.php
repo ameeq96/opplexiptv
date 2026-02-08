@@ -517,17 +517,26 @@ return [
         'footnote'    => 'Non hai ricevuto l’e-mail entro pochi minuti? Controlla la cartella spam o contatta il supporto.',
     ],
 
-  // Blog
-  'blogs' => 'Blog',
-  'blog' => 'Blog',
-  'read_more' => 'Leggi di pi?',
-  'search' => 'Cerca',
-  'latest_posts' => 'Ultimi articoli',
-  'featured' => 'In evidenza',
-  'related_posts' => 'Post correlati',
-  'minutes_read' => ':minutes min di lettura',
-  'no_results' => 'Nessun risultato.',
-  'back_to_blogs' => 'Torna ai blog',
-  'share' => 'Copia link',
+// Blog
+'blogs' => 'Blog',
+'blog' => 'Blog',
+'read_more' => 'Leggi di più',
+'search' => 'Cerca',
+'latest_posts' => 'Ultimi post',
+'featured' => 'In evidenza',
+'related_posts' => 'Post correlati',
+'minutes_read' => ':minutes min di lettura',
+'no_results' => 'Nessun risultato trovato.',
+'back_to_blogs' => 'Torna ai blog',
+'share' => 'Copia link',
+
+
+   'blog' => [
+        'heading' => 'Blogs',
+        'breadcrumb' => [
+            'home' => 'Home',
+            'current' => 'Blogs',
+        ],
+    ],
 
 ];

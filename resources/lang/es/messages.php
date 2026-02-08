@@ -525,17 +525,26 @@ return [
   ],
 
 
-  // Blog
-  'blogs' => 'Blogs',
-  'blog' => 'Blog',
-  'read_more' => 'Leer m?s',
-  'search' => 'Buscar',
-  'latest_posts' => '?ltimas publicaciones',
-  'featured' => 'Destacado',
-  'related_posts' => 'Publicaciones relacionadas',
-  'minutes_read' => ':minutes min de lectura',
-  'no_results' => 'No hay resultados.',
-  'back_to_blogs' => 'Volver a blogs',
-  'share' => 'Copiar enlace',
+// Blog
+'blogs' => 'Blogs',
+'blog' => 'Blog',
+'read_more' => 'Leer más',
+'search' => 'Buscar',
+'latest_posts' => 'Últimas publicaciones',
+'featured' => 'Destacado',
+'related_posts' => 'Publicaciones relacionadas',
+'minutes_read' => ':minutes min de lectura',
+'no_results' => 'No se encontraron resultados.',
+'back_to_blogs' => 'Volver a los blogs',
+'share' => 'Copiar enlace',
+
+
+    'blog' => [
+        'heading' => 'Blogs',
+        'breadcrumb' => [
+            'home' => 'Inicio',
+            'current' => 'Blogs',
+        ],
+    ],
 
 ];

@@ -515,17 +515,26 @@ return [
     'footnote'    => 'کچھ منٹ میں ای میل موصول نہ ہو تو اسپام فولڈر چیک کریں یا سپورٹ سے رابطہ کریں۔',
   ],
 
-  // Blog
-  'blogs' => '?????',
-  'blog' => '????',
-  'read_more' => '???? ?????',
-  'search' => '????',
-  'latest_posts' => '???? ???? ?????',
-  'featured' => '??????',
-  'related_posts' => '?????? ?????',
-  'minutes_read' => ':minutes ??? ?????',
-  'no_results' => '???? ????? ???? ????',
-  'back_to_blogs' => '????? ?? ???? ?????',
-  'share' => '??? ???? ????',
+// Blog
+'blogs' => 'بلاگز',
+'blog' => 'بلاگ',
+'read_more' => 'مزید پڑھیں',
+'search' => 'تلاش',
+'latest_posts' => 'تازہ ترین پوسٹس',
+'featured' => 'نمایاں',
+'related_posts' => 'متعلقہ پوسٹس',
+'minutes_read' => ':minutes منٹ پڑھنے کا وقت',
+'no_results' => 'کوئی نتیجہ نہیں ملا۔',
+'back_to_blogs' => 'بلاگز پر واپس جائیں',
+'share' => 'لنک کاپی کریں',
+
+
+   'blog' => [
+        'heading' => 'بلاگ',
+        'breadcrumb' => [
+            'home' => 'ہوم',
+            'current' => 'بلاگ',
+        ],
+    ],
 
 ];

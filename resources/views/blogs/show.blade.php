@@ -21,7 +21,7 @@
 
 @section('content')
     <section class="blogs-wrap {{ $isRtl ? 'rtl' : '' }}">
-        <div class="container">
+        <div class="auto-container">
             <div class="blog-breadcrumbs mb-3">
                 <a href="{{ route('home') }}">{{ __('messages.nav_home') ?? __('messages.home') ?? 'Home' }}</a>
                 <span>/</span>
@@ -70,9 +70,12 @@
                     <h3>{{ __('messages.related_posts') }}</h3>
                     <div class="blog-grid">
                         @foreach ($related as $rel)
-                            @php $translation = $rel->translation(); @endphp
+                            @php
+                                $translation = $rel->translation();
+                                $slug = $translation?->slug ?? $rel->translations->first()?->slug;
+                            @endphp
                             <article class="blog-card">
-                                <a href="{{ route('blogs.show', $translation?->slug) }}">
+                                <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                     @if ($rel->cover_image)
                                         <img src="{{ asset(Storage::url($rel->cover_image)) }}" alt="{{ $translation?->title }}">
                                     @else
@@ -87,7 +90,7 @@
                                             <span>{{ __('messages.minutes_read', ['minutes' => $rel->reading_time]) }}</span>
                                         @endif
                                     </div>
-                                    <a class="btn btn-link px-0" href="{{ route('blogs.show', $translation?->slug) }}">
+                                    <a class="btn btn-link px-0" href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                         {{ __('messages.read_more') }}
                                     </a>
                                 </div>

@@ -523,17 +523,26 @@ return [
     'footnote'    => 'Geen e-mail ontvangen binnen enkele minuten? Controleer je spamfolder of neem contact op met onze support.',
   ],
 
-  // Blog
-  'blogs' => 'Blogs',
-  'blog' => 'Blog',
-  'read_more' => 'Lees meer',
-  'search' => 'Zoeken',
-  'latest_posts' => 'Laatste berichten',
-  'featured' => 'Uitgelicht',
-  'related_posts' => 'Gerelateerde berichten',
-  'minutes_read' => ':minutes min lezen',
-  'no_results' => 'Geen resultaten.',
-  'back_to_blogs' => 'Terug naar blogs',
-  'share' => 'Kopieer link',
+// Blog
+'blogs' => 'Blogs',
+'blog' => 'Blog',
+'read_more' => 'Lees meer',
+'search' => 'Zoeken',
+'latest_posts' => 'Laatste berichten',
+'featured' => 'Uitgelicht',
+'related_posts' => 'Gerelateerde berichten',
+'minutes_read' => ':minutes min leestijd',
+'no_results' => 'Geen resultaten gevonden.',
+'back_to_blogs' => 'Terug naar blogs',
+'share' => 'Link kopiëren',
+
+
+  'blog' => [
+        'heading' => 'Blogs',
+        'breadcrumb' => [
+            'home' => 'Home',
+            'current' => 'Blogs',
+        ],
+    ],
 
 ];

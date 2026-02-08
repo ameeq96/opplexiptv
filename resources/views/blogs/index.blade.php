@@ -10,13 +10,16 @@
 @endpush
 
 @section('content')
+
+    <!-- Page Title --> 
+    <x-page-title :title="__('messages.blog.heading')" :breadcrumbs="[
+        ['url' => '/', 'label' => __('messages.blog.breadcrumb.home')],
+        ['label' => __('messages.blog.breadcrumb.current')],
+    ]" background="images/background/10.webp"
+        :rtl="$isRtl" aria-label="Blog Page" />
+
     <section class="blogs-wrap {{ $isRtl ? 'rtl' : '' }}">
         <div class="auto-container">
-            <div class="blog-breadcrumbs mb-3">
-                <a href="{{ route('home') }}">{{ __('messages.nav_home') ?? __('messages.home') ?? 'Home' }}</a>
-                <span>/</span>
-                <span>{{ __('messages.blogs') }}</span>
-            </div>
 
             <div class="blog-hero">
                 <h1>{{ __('messages.blogs') }}</h1>
@@ -24,14 +27,14 @@
 
                 <div class="blog-filters" aria-label="Blog filters">
                     <a class="blog-filter-pill {{ $categorySlug === '' ? 'active' : '' }}"
-                       href="{{ route('blogs.index', array_filter(['q' => $search ?: null])) }}">
+                        href="{{ route('blogs.index', array_filter(['q' => $search ?: null])) }}">
                         All
                     </a>
                     @foreach ($categories as $cat)
                         @php $catT = $cat->translation(); @endphp
                         @if ($catT)
                             <a class="blog-filter-pill {{ $categorySlug === $catT->slug ? 'active' : '' }}"
-                               href="{{ route('blogs.index', array_filter(['q' => $search ?: null, 'category' => $catT->slug])) }}">
+                                href="{{ route('blogs.index', array_filter(['q' => $search ?: null, 'category' => $catT->slug])) }}">
                                 {{ $catT->title }}
                             </a>
                         @endif
@@ -39,13 +42,17 @@
                 </div>
 
                 <form class="blog-search" method="GET" action="{{ route('blogs.index') }}" role="search">
-                    <input type="text" name="q" value="{{ $search }}" placeholder="{{ __('messages.search') }}" aria-label="{{ __('messages.search') }}">
+                    <input type="text" name="q" value="{{ $search }}"
+                        placeholder="{{ __('messages.search') }}" aria-label="{{ __('messages.search') }}">
                     <button type="submit">{{ __('messages.search') }}</button>
                 </form>
             </div>
 
             @if ($featured)
-                @php $featuredTranslation = $featured->translation(); @endphp
+                @php
+                    $featuredTranslation = $featured->translation();
+                    $featuredSlug = $featuredTranslation?->slug ?? $featured->translations->first()?->slug;
+                @endphp
                 <div class="blog-featured" aria-label="{{ __('messages.featured') }}">
                     <div class="blog-featured__content">
                         <span class="blog-tag">{{ __('messages.featured') }}</span>
@@ -57,14 +64,16 @@
                                 <span>{{ __('messages.minutes_read', ['minutes' => $featured->reading_time]) }}</span>
                             @endif
                         </div>
-                        <a class="blog-featured__cta mt-3" href="{{ route('blogs.show', $featuredTranslation?->slug) }}">
+                        <a class="blog-featured__cta mt-3"
+                            href="{{ $featuredSlug ? route('blogs.show', $featuredSlug) : '#' }}">
                             <span>?</span>
                             {{ __('messages.read_more') }}
                         </a>
                     </div>
                     <div class="blog-featured__media">
                         @if ($featured->cover_image)
-                            <img src="{{ asset(Storage::url($featured->cover_image)) }}" alt="{{ $featuredTranslation?->title }}">
+                            <img src="{{ asset(Storage::url($featured->cover_image)) }}"
+                                alt="{{ $featuredTranslation?->title }}">
                         @else
                             <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $featuredTranslation?->title }}">
                         @endif
@@ -84,13 +93,18 @@
                 @if ($topThree->count())
                     <div class="blog-grid mb-4">
                         @foreach ($topThree as $blog)
-                            @php $translation = $blog->translation(); @endphp
+                            @php
+                                $translation = $blog->translation();
+                                $slug = $translation?->slug ?? $blog->translations->first()?->slug;
+                            @endphp
                             <article class="blog-card">
-                                <a href="{{ route('blogs.show', $translation?->slug) }}">
+                                <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                     @if ($blog->cover_image)
-                                        <img src="{{ asset(Storage::url($blog->cover_image)) }}" alt="{{ $translation?->title }}">
+                                        <img src="{{ asset(Storage::url($blog->cover_image)) }}"
+                                            alt="{{ $translation?->title }}">
                                     @else
-                                        <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $translation?->title }}">
+                                        <img src="{{ asset('images/placeholder.webp') }}"
+                                            alt="{{ $translation?->title }}">
                                     @endif
                                 </a>
                                 <div class="blog-card__body">
@@ -104,7 +118,7 @@
                                     <p class="blog-card__excerpt">{{ $translation?->excerpt }}</p>
                                     <div class="blog-card__footer">
                                         <span class="blog-tag">{{ __('messages.featured') }}</span>
-                                        <a href="{{ route('blogs.show', $translation?->slug) }}">
+                                        <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                             {{ __('messages.read_more') }} ?
                                         </a>
                                     </div>
@@ -116,11 +130,15 @@
 
                 <div class="blog-grid">
                     @foreach ($rest as $blog)
-                        @php $translation = $blog->translation(); @endphp
+                        @php
+                            $translation = $blog->translation();
+                            $slug = $translation?->slug ?? $blog->translations->first()?->slug;
+                        @endphp
                         <article class="blog-card">
-                            <a href="{{ route('blogs.show', $translation?->slug) }}">
+                            <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                 @if ($blog->cover_image)
-                                    <img src="{{ asset(Storage::url($blog->cover_image)) }}" alt="{{ $translation?->title }}">
+                                    <img src="{{ asset(Storage::url($blog->cover_image)) }}"
+                                        alt="{{ $translation?->title }}">
                                 @else
                                     <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $translation?->title }}">
                                 @endif
@@ -136,7 +154,7 @@
                                 <p class="blog-card__excerpt">{{ $translation?->excerpt }}</p>
                                 <div class="blog-card__footer">
                                     <span class="blog-tag">{{ __('messages.featured') }}</span>
-                                    <a href="{{ route('blogs.show', $translation?->slug) }}">
+                                    <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                         {{ __('messages.read_more') }} ?
                                     </a>
                                 </div>

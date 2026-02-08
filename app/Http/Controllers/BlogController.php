@@ -14,32 +14,36 @@ class BlogController extends Controller
     public function index(Request $request)
     {
         $locale = app()->getLocale();
-        $fallback = config('app.fallback_locale');
         $search = trim((string) $request->query('q', ''));
         $categorySlug = trim((string) $request->query('category', ''));
 
         $featuredQuery = Blog::published()
             ->where('is_featured', true)
-            ->with(['translations' => function ($q) use ($locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback]);
-            }, 'categories.translations' => function ($q) use ($locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback]);
+            ->whereHas('translations', function ($q) use ($locale) {
+                $q->where('locale', $locale);
+            })
+            ->with(['translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
+            }, 'categories.translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
             }]);
 
         if ($categorySlug !== '') {
-            $featuredQuery->whereHas('categories.translations', function ($q) use ($categorySlug, $locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback])
-                    ->where('slug', $categorySlug);
+            $featuredQuery->whereHas('categories.translations', function ($q) use ($categorySlug, $locale) {
+                $q->where('locale', $locale)->where('slug', $categorySlug);
             });
         }
 
         $featured = $featuredQuery->orderByDesc('published_at')->first();
 
         $blogsQuery = Blog::published()
-            ->with(['translations' => function ($q) use ($locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback]);
-            }, 'categories.translations' => function ($q) use ($locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback]);
+            ->whereHas('translations', function ($q) use ($locale) {
+                $q->where('locale', $locale);
+            })
+            ->with(['translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
+            }, 'categories.translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
             }]);
 
         if ($featured) {
@@ -47,8 +51,8 @@ class BlogController extends Controller
         }
 
         if ($search !== '') {
-            $blogsQuery->whereHas('translations', function ($q) use ($search, $locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback])
+            $blogsQuery->whereHas('translations', function ($q) use ($search, $locale) {
+                $q->where('locale', $locale)
                     ->where(function ($qq) use ($search) {
                         $qq->where('title', 'like', "%{$search}%")
                             ->orWhere('excerpt', 'like', "%{$search}%");
@@ -57,17 +61,16 @@ class BlogController extends Controller
         }
 
         if ($categorySlug !== '') {
-            $blogsQuery->whereHas('categories.translations', function ($q) use ($categorySlug, $locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback])
-                    ->where('slug', $categorySlug);
+            $blogsQuery->whereHas('categories.translations', function ($q) use ($categorySlug, $locale) {
+                $q->where('locale', $locale)->where('slug', $categorySlug);
             });
         }
 
         $blogs = $blogsQuery->orderByDesc('published_at')->paginate(12)->withQueryString();
 
         $categories = BlogCategory::query()
-            ->with(['translations' => function ($q) use ($locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback]);
+            ->with(['translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
             }])
             ->orderBy('id')
             ->get();
@@ -91,10 +94,9 @@ class BlogController extends Controller
     public function show(string $slug)
     {
         $locale = app()->getLocale();
-        $fallback = config('app.fallback_locale');
 
         $translation = BlogTranslation::where('slug', $slug)
-            ->whereIn('locale', [$locale, $fallback])
+            ->where('locale', $locale)
             ->firstOrFail();
 
         $blog = Blog::with(['translations', 'author'])->findOrFail($translation->blog_id);
@@ -114,8 +116,8 @@ class BlogController extends Controller
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);
             })
-            ->with(['translations' => function ($q) use ($locale, $fallback) {
-                $q->whereIn('locale', [$locale, $fallback]);
+            ->with(['translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
             }])
             ->orderByDesc('published_at')
             ->limit(3)
