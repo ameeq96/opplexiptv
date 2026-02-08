@@ -18,6 +18,7 @@ use App\Http\Controllers\{
     AdminNotificationController,
 };
 use App\Http\Controllers\Admin\TrialClickController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -146,3 +147,13 @@ Route::group(
 Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'])
     ->name('track.whatsapp.trial')
     ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
+
+Route::post('maintenance/clear', function () {
+    Artisan::call('optimize:clear');
+    Artisan::call('config:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('cache:clear');
+
+    return back()->with('success', 'Caches cleared successfully.');
+})->name('maintenance.clear');
