@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 
 @section('page_title', 'WhatsApp Trial Clicks')
 
@@ -34,7 +34,7 @@
                 <button type="submit" class="btn btn-primary">Search</button>
 
                 <a href="{{ route('admin.trial_clicks.export') }}" class="btn btn-outline-secondary ms-auto">
-                    ⬇️ Export CSV
+                    Export CSV
                 </a>
             </form>
         </div>
@@ -86,7 +86,7 @@
 
                             <td>{{ $c->created_at->format('Y-m-d H:i') }}</td>
                             <td title="{{ $c->event_id }}">
-                                {{ \Illuminate\Support\Str::limit($c->event_id, 16, '…') }}
+                                {{ \Illuminate\Support\Str::limit($c->event_id, 16, 'â€¦') }}
                             </td>
 
                             <td class="text-start">
@@ -101,8 +101,8 @@
                                 @if ($c->utm_source || $c->utm_medium || $c->utm_campaign)
                                     <div class="small text-muted">
                                         {{ $c->utm_source ? 'src='.$c->utm_source : '' }}
-                                        {{ $c->utm_medium ? ' • med='.$c->utm_medium : '' }}
-                                        {{ $c->utm_campaign ? ' • cmp='.$c->utm_campaign : '' }}
+                                        {{ $c->utm_medium ? ' â€¢ med='.$c->utm_medium : '' }}
+                                        {{ $c->utm_campaign ? ' â€¢ cmp='.$c->utm_campaign : '' }}
                                     </div>
                                 @endif
                             </td>
@@ -118,10 +118,10 @@
                                 @endif
                             </td>
 
-                            <td>{{ $c->utm_campaign ?: '—' }}</td>
-                            <td title="{{ $c->fbp }}">{{ \Illuminate\Support\Str::limit($c->fbp, 18, '…') ?: '—' }}</td>
-                            <td title="{{ $c->fbc }}">{{ \Illuminate\Support\Str::limit($c->fbc, 18, '…') ?: '—' }}</td>
-                            <td>{{ $c->ip ?: '—' }}</td>
+                            <td>{{ $c->utm_campaign ?: 'â€”' }}</td>
+                            <td title="{{ $c->fbp }}">{{ \Illuminate\Support\Str::limit($c->fbp, 18, 'â€¦') ?: 'â€”' }}</td>
+                            <td title="{{ $c->fbc }}">{{ \Illuminate\Support\Str::limit($c->fbc, 18, 'â€¦') ?: 'â€”' }}</td>
+                            <td>{{ $c->ip ?: 'â€”' }}</td>
 
                             <td>
                                 <form action="{{ route('admin.trial_clicks.destroy', $c) }}" method="POST"
@@ -209,3 +209,4 @@
     </script>
 
 @endsection
+

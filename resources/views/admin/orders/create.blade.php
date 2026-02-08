@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 @section('page_title', isset($order) ? 'Edit Order' : 'Create Order')
 
 @section('content')
@@ -174,3 +174,4 @@
   }
 </script>
 @endpush
+

@@ -52,6 +52,15 @@
     }
     $canonical = preg_replace('~(?<!:)//+~', '/', $canonical);
 
+    $metaTitle = $pageMetaTitle ?? $metaTitle;
+    $metaDescription = $pageMetaDescription ?? $metaDescription;
+    $keywords = $pageMetaKeywords ?? $keywords;
+    $canonical = $pageCanonical ?? $canonical;
+    $ogTitle = $pageOgTitle ?? $metaTitle;
+    $ogDescription = $pageOgDescription ?? $metaDescription;
+    $ogImage = $pageMetaImage ?? v('images/background/7.webp');
+    $ogType = $pageOgType ?? 'website';
+
     $supported = array_keys(config('laravellocalization.supportedLocales') ?? []);
 
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
@@ -71,19 +80,19 @@
     var isRtl = {{ $isRtl ? 'true' : 'false' }};
 </script>
 
-<meta property="og:title" content="{{ $metaTitle }}">
-<meta property="og:description" content="{{ $metaDescription }}">
-<meta property="og:type" content="website">
+<meta property="og:title" content="{{ $ogTitle }}">
+<meta property="og:description" content="{{ $ogDescription }}">
+<meta property="og:type" content="{{ $ogType }}">
 <meta property="og:url" content="{{ $canonical }}">
-<meta property="og:image" content="{{ v('images/background/7.webp') }}">
+<meta property="og:image" content="{{ $ogImage }}">
 <meta name="facebook-domain-verification" content="rnsb3eqoa06k3dwo6gyqpphgu2imo2" />
 
 <link rel="canonical" href="{{ $canonical }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $metaTitle }}">
-<meta name="twitter:description" content="{{ $metaDescription }}">
-<meta name="twitter:image" content="{{ v('images/background/7.webp') }}">
+<meta name="twitter:title" content="{{ $ogTitle }}">
+<meta name="twitter:description" content="{{ $ogDescription }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
 
 @foreach ($supported as $lg)
     @php
@@ -143,6 +152,7 @@
 
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
+@stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
 <link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>

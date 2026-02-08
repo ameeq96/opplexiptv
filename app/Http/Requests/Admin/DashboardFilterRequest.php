@@ -2,9 +2,7 @@
 
 namespace App\Http\Requests\Admin;
 
-
 use Illuminate\Foundation\Http\FormRequest;
-
 
 class DashboardFilterRequest extends FormRequest
 {
@@ -13,11 +11,10 @@ class DashboardFilterRequest extends FormRequest
         return true;
     }
 
-
     public function rules(): array
     {
         return [
-            'filter' => ['sometimes', 'in:all,today,7days,30days,custom'],
+            'filter' => ['sometimes', 'in:all,today,yesterday,7days,30days,90days,year,custom'],
             'start_date' => ['nullable', 'date'],
             'end_date' => ['nullable', 'date', 'after_or_equal:start_date'],
         ];

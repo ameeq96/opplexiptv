@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 
 @section('page_title', 'All Clients')
 
@@ -11,48 +11,46 @@
         </div>
     @endif
 
-    <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            <form action="{{ route('admin.clients.index') }}" method="GET" enctype="multipart/form-data"
-                class="d-flex flex-wrap align-items-center gap-2">
+    <div class="admin-card mb-4">
+        <form action="{{ route('admin.clients.index') }}" method="GET" enctype="multipart/form-data" class="admin-toolbar">
+            <select name="per_page" class="form-select" onchange="this.form.submit()">
+                @foreach ([10, 20, 30, 40, 100] as $size)
+                    <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
+                        Show {{ $size }}
+                    </option>
+                @endforeach
+            </select>
 
-                <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
-                    @foreach ([10, 20, 30, 40, 100] as $size)
-                        <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
-                            Show {{ $size }}
-                        </option>
-                    @endforeach
-                </select>
+            <input type="text" name="search" value="{{ request('search') }}" class="form-control"
+                placeholder="Search clients...">
 
-                <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
-                    placeholder="Search clients...">
+            <button type="submit" class="btn btn-primary">Search</button>
 
-                <button type="submit" class="btn btn-primary">Search</button>
+            <input type="file" name="csv_file" accept=".csv" class="form-control file-input">
+            @csrf
+            <button type="submit" formaction="{{ route('admin.clients.import') }}" class="btn btn-success"
+                onclick="event.preventDefault(); this.closest('form').submit();">
+                Import CSV
+            </button>
 
-                <input type="file" name="csv_file" accept=".csv" class="form-control w-auto">
-                @csrf
-                <button type="submit" formaction="{{ route('admin.clients.import') }}" class="btn btn-success"
-                    onclick="event.preventDefault(); this.closest('form').submit();">
-                    Import CSV
-                </button>
+            <a href="{{ route('admin.clients.export.facebook') }}" class="btn btn-warning">
+                Export CSV
+            </a>
 
-                <a href="{{ route('admin.clients.export.facebook') }}" class="btn btn-warning">
-                    Export CSV
-                </a>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="exclude_iptv" value="1" id="excludeIPTV"
+                    onchange="this.form.submit()" {{ request('exclude_iptv') ? 'checked' : '' }}>
+                <label class="form-check-label" for="excludeIPTV">
+                    Exclude IPTV Clients
+                </label>
+            </div>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="exclude_iptv" value="1" id="excludeIPTV"
-                        onchange="this.form.submit()" {{ request('exclude_iptv') ? 'checked' : '' }}>
-                    <label class="form-check-label" for="excludeIPTV">
-                        Exclude IPTV Clients
-                    </label>
-                </div>
-
-                <a href="{{ route('admin.clients.create') }}" class="btn btn-dark ms-auto">
+            <div class="actions">
+                <a href="{{ route('admin.clients.create') }}" class="btn btn-dark">
                     <i class="bi bi-plus-lg me-1"></i> Add
                 </a>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
 
 
@@ -100,12 +98,12 @@
                                         : "Reply *YES* and I'll recommend the best package for you";
 
                                     $lines = array_filter([
-                                        "👋 *{$client->name}*, looking for premium IPTV?",
-                                        '✅ Live TV + VOD | HD/4K ready | Smooth streaming',
-                                        '📱 Works on all devices | 24/7 support',
+                                        "ðŸ‘‹ *{$client->name}*, looking for premium IPTV?",
+                                        'âœ… Live TV + VOD | HD/4K ready | Smooth streaming',
+                                        'ðŸ“± Works on all devices | 24/7 support',
                                         '',
-                                        "🎉 Today's deal: Free setup + instant activation",
-                                        "👉 {$payOrReply}",
+                                        "ðŸŽ‰ Today's deal: Free setup + instant activation",
+                                        "ðŸ‘‰ {$payOrReply}",
                                     ]);
 
                                     $message = rawurlencode(implode("\n", $lines));
@@ -231,3 +229,4 @@
         updateSelectedState();
     });
 </script>
+

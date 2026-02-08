@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             DevicesSeeder::class,
             ConnectionPlanSeeder::class,
             PackagesSeeder::class,
+            BlogSeeder::class,
         ]);
 
         Admin::create([

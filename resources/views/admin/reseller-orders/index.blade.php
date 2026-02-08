@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 
 @section('page_title', 'All Reseller Orders')
 
@@ -426,3 +426,4 @@
         updateSelectedState();
     });
 </script>
+

@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 
 @section('page_title', 'All Purchases')
 
@@ -217,3 +217,4 @@
     </script>
 
 @endsection
+

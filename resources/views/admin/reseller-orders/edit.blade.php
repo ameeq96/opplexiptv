@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 
 @section('page_title', 'Edit Panel Order')
 
@@ -232,3 +232,4 @@
 </script>
 
 @endsection
+

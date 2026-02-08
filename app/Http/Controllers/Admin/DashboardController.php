@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Http\Controllers\Admin;
-
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\DashboardFilterRequest;
@@ -10,10 +8,10 @@ use App\Models\Order;
 use App\Models\Purchasing;
 use App\Models\User;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-
     public function index(DashboardFilterRequest $request)
     {
         $filter     = $request->validated('filter') ?? 'all';
@@ -130,5 +128,14 @@ class DashboardController extends Controller
             'startDate'          => $hasRange ? $start->toDateTimeString() : null,
             'endDate'            => $hasRange ? $end->toDateTimeString()   : null,
         ]);
+    }
+
+    public function setLocale(Request $request)
+    {
+        $locale = $request->input('locale');
+        if (in_array($locale, admin_locales(), true)) {
+            session(['admin_locale' => $locale]);
+        }
+        return back();
     }
 }

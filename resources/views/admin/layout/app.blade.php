@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ v('css/admin-2026.css') }}" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -32,27 +33,6 @@
 
         .select2-container--default .select2-selection--single .select2-selection__rendered {
             line-height: inherit;
-        }
-
-        .sidebar {
-            background: #343a40;
-            color: white;
-            min-height: 100vh;
-        }
-
-        .sidebar a,
-        .logout-link {
-            color: white;
-            text-decoration: none;
-            padding: 12px 20px;
-            display: block;
-            transition: background 0.3s ease, border-radius 0.3s ease;
-        }
-
-        .sidebar a:hover,
-        .logout-link:hover {
-            background: #495057;
-            border-radius: 10px;
         }
 
         .logout-link {
@@ -130,27 +110,28 @@
 
     <div id="sidebar-overlay" class="d-md-none" onclick="closeSidebar()" style="display: none;"></div>
 
-    <div class="sidebar d-flex flex-column p-3" id="sidebar">
-        <h4 class="text-center mb-4">Opplex IPTV</h4>
-        <a href="{{ route('admin.dashboard') }}">🏠 Dashboard</a>
-        <a href="{{ route('admin.clients.index') }}">👤 Clients</a>
-        <a href="{{ route('admin.orders.index') }}">📦 Package Orders</a>
-        <a href="{{ route('admin.panel-orders.index') }}">🖥️ Panel Orders</a>
-        <a href="{{ route('admin.purchasing.index') }}">💳 Purchasing</a>
-        <a href="{{ route('admin.trial_clicks.index') }}">📱 WhatsApp Trials</a>
+    <div class="sidebar admin-sidebar d-flex flex-column p-3" id="sidebar">
+        <div class="brand text-center mb-4">Opplex IPTV</div>
+        <a href="{{ route('admin.dashboard') }}">ðŸ  Dashboard</a>
+        <a href="{{ route('admin.clients.index') }}">ðŸ‘¤ Clients</a>
+        <a href="{{ route('admin.orders.index') }}">ðŸ“¦ Package Orders</a>
+        <a href="{{ route('admin.panel-orders.index') }}">ðŸ–¥ï¸ Panel Orders</a>
+        <a href="{{ route('admin.purchasing.index') }}">ðŸ’³ Purchasing</a>
+        <a href="{{ route('admin.trial_clicks.index') }}">ðŸ“± WhatsApp Trials</a>
+        <a href="{{ route('admin.blogs.index') }}">ðŸ“ Blogs</a>
 
 
         <form method="POST" action="{{ route('admin.logout') }}">
             @csrf
-            <button type="submit" class="logout-link">🚪 Logout</button>
+            <button type="submit" class="logout-link">ðŸšª Logout</button>
         </form>
     </div>
 
 
 
     <!-- Content -->
-    <div class="content">
-        <div class="d-flex justify-content-between align-items-center mb-4">
+    <div class="content admin-content">
+        <div class="admin-topbar d-flex justify-content-between align-items-center mb-4">
             <div class="d-flex align-items-center gap-3">
                 <button class="toggle-btn d-md-none" onclick="toggleSidebar()">
                     <i class="bi bi-list"></i>

@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 
 @section('page_title', 'Add New Purchase')
 
@@ -63,7 +63,7 @@
         <div class="col-md-12">
           <label class="form-label">Upload Screenshots (multiple)</label>
           <input type="file" name="screenshots[]" class="form-control" multiple accept="image/*">
-          <small class="text-muted">Allowed: JPG, JPEG, PNG — max 5MB each.</small>
+          <small class="text-muted">Allowed: JPG, JPEG, PNG â€” max 5MB each.</small>
           @error('screenshots') <div class="text-danger">{{ $message }}</div> @enderror
           @error('screenshots.*') <div class="text-danger">{{ $message }}</div> @enderror
         </div>
@@ -78,3 +78,4 @@
 </div>
 
 @endsection
+

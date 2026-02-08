@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+@extends('admin.layouts.app')
 @section('page_title', 'Edit Order')
 
 @php
@@ -216,3 +216,4 @@
   // (Optional) Preview code is omitted intentionally since preview UI isn't present.
 </script>
 @endpush
+

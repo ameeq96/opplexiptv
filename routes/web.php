@@ -5,9 +5,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 
 use App\Http\Controllers\{
     HomeController,
+    BlogController,
     OrderController,
     PanelOrderController,
     PurchasingController,
@@ -28,8 +30,12 @@ use App\Http\Controllers\Admin\TrialClickController;
 // ---------------------------
 Route::prefix('admin')->name('admin.')->group(function () {
 
-    // Optional: keep /admin -> login (like your old setup)
-    Route::get('/', fn() => redirect()->route('admin.login'));
+    // Admin dashboard landing
+    Route::get('/', function () {
+        return auth('admin')->check()
+            ? redirect()->route('admin.dashboard')
+            : redirect()->route('admin.login');
+    });
 
     // Guests (not logged in as admin)
     Route::middleware('guest:admin')->group(function () {
@@ -74,6 +80,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('orders/{order}/mark-messaged', [OrderController::class, 'markOneMessaged'])
             ->name('orders.markOneMessaged');
 
+        Route::post('locale', [DashboardController::class, 'setLocale'])->name('locale');
+        Route::resource('blogs', AdminBlogController::class);
+        Route::post('blogs/{blog}/publish', [AdminBlogController::class, 'publish'])->name('blogs.publish');
+        Route::post('blogs/{blog}/archive', [AdminBlogController::class, 'archive'])->name('blogs.archive');
+        Route::post('blogs/{blog}/duplicate', [AdminBlogController::class, 'duplicate'])->name('blogs.duplicate');
+
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');
         Route::post('notifications/{id}/read', [AdminNotificationController::class, 'markAsRead'])
@@ -112,6 +124,8 @@ Route::group(
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
         Route::get('shop', [HomeController::class, 'shop'])->name('shop');
+        Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
+        Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 
         Route::post('send-email',     [HomeController::class, 'send'])->name('contact.send');
         Route::post('subscribe',      [HomeController::class, 'subscribe'])->name('subscribe');
