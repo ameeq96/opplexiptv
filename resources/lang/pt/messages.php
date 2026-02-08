@@ -521,4 +521,18 @@ return [
 
     'footnote'    => 'Não recebeu nenhum e-mail em alguns minutos? Verifique a pasta de spam ou fale com a nossa equipe de suporte.',
   ],
+
+  // Blog
+  'blogs' => 'Blogs',
+  'blog' => 'Blog',
+  'read_more' => 'Ler mais',
+  'search' => 'Pesquisar',
+  'latest_posts' => '?ltimos posts',
+  'featured' => 'Destaque',
+  'related_posts' => 'Posts relacionados',
+  'minutes_read' => ':minutes min de leitura',
+  'no_results' => 'Nenhum resultado.',
+  'back_to_blogs' => 'Voltar aos blogs',
+  'share' => 'Copiar link',
+
 ];

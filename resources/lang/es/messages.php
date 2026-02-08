@@ -524,4 +524,18 @@ return [
     'footnote'    => '¿No recibiste ningún correo en unos minutos? Revisa la carpeta de spam o contacta con nuestro equipo de soporte.',
   ],
 
+
+  // Blog
+  'blogs' => 'Blogs',
+  'blog' => 'Blog',
+  'read_more' => 'Leer m?s',
+  'search' => 'Buscar',
+  'latest_posts' => '?ltimas publicaciones',
+  'featured' => 'Destacado',
+  'related_posts' => 'Publicaciones relacionadas',
+  'minutes_read' => ':minutes min de lectura',
+  'no_results' => 'No hay resultados.',
+  'back_to_blogs' => 'Volver a blogs',
+  'share' => 'Copiar enlace',
+
 ];

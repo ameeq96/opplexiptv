@@ -517,4 +517,18 @@ return [
     'footnote'    => 'Didn’t receive any email within a few minutes? Check your spam folder or contact support.',
   ],
 
+
+  // Blog
+  'blogs' => 'Blogs',
+  'blog' => 'Blog',
+  'read_more' => 'Read more',
+  'search' => 'Search',
+  'latest_posts' => 'Latest posts',
+  'featured' => 'Featured',
+  'related_posts' => 'Related posts',
+  'minutes_read' => ':minutes min read',
+  'no_results' => 'No results found.',
+  'back_to_blogs' => 'Back to blogs',
+  'share' => 'Copy link',
+
 ];

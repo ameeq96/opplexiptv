@@ -515,4 +515,18 @@ return [
         'support_btn' => 'Contacter le support',
         'footnote'    => 'Vous n’avez pas reçu d’email ? Vérifiez les spams ou contactez le support.',
     ],
+
+  // Blog
+  'blogs' => 'Blogs',
+  'blog' => 'Blog',
+  'read_more' => 'Lire la suite',
+  'search' => 'Rechercher',
+  'latest_posts' => 'Derniers articles',
+  'featured' => '? la une',
+  'related_posts' => 'Articles connexes',
+  'minutes_read' => ':minutes min de lecture',
+  'no_results' => 'Aucun r?sultat.',
+  'back_to_blogs' => 'Retour aux blogs',
+  'share' => 'Copier le lien',
+
 ];
