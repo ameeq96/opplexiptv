@@ -148,7 +148,7 @@ Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'
     ->name('track.whatsapp.trial')
     ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
 
-Route::post('maintenance/clear', function () {
+Route::get('maintenance/clear', function () {
     Artisan::call('optimize:clear');
     Artisan::call('config:clear');
     Artisan::call('route:clear');
