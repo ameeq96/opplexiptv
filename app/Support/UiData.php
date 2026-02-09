@@ -6,6 +6,7 @@ namespace App\Support;
 
 use App\Models\Package;
 use App\Models\HomeService;
+use App\Models\Testimonial;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang};
@@ -338,6 +339,15 @@ class UiData
     /** @return array<int,array<string,string>> */
     private function testimonials(): array
     {
+        if (\Illuminate\Support\Facades\Schema::hasTable('testimonials')) {
+            return Testimonial::query()
+                ->where('is_active', true)
+                ->orderBy('sort_order')
+                ->orderByDesc('id')
+                ->get(['text', 'author_name', 'image'])
+                ->toArray();
+        }
+
         return [
             ['text' => __('messages.testimonial_1'),  'author_name' => 'Amaan Khalid', 'image' => 'images/img-test-2.webp'],
             ['text' => __('messages.testimonial_2'),  'author_name' => 'Nouman Shahid', 'image' => 'images/img-test-3.webp'],

@@ -121,6 +121,7 @@
         <a href="{{ route('admin.blogs.index') }}">ðŸ“ Blogs</a>
         <a href="{{ route('admin.shop-products.index') }}">ðŸ›’ Shop Products</a>
         <a href="{{ route('admin.home-services.index') }}">ðŸ§© Home Services</a>
+        <a href="{{ route('admin.testimonials.index') }}">ðŸ’¬ Testimonials</a>
 
 
         <form method="POST" action="{{ route('admin.logout') }}">

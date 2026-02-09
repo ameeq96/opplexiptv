@@ -18,10 +18,11 @@
 
                             <div class="author-image-outer">
                                 <span class="quote-icon fa fa-quote-left" aria-hidden="true"></span>
-                                <div class="author-image">
-                                    <img src="{{ asset($testimonial['image']) }}" alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                         width="150" height="150" loading="lazy" />
-                                </div>
+                            <div class="author-image">
+                                <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
+                                     alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
+                                     width="150" height="150" loading="lazy" />
+                            </div>
                             </div>
 
                             <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>

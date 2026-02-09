@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\ShopProductController as AdminShopProductController;
 use App\Http\Controllers\Admin\HomeServiceController as AdminHomeServiceController;
+use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 
 use App\Http\Controllers\{
     HomeController,
@@ -91,6 +92,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::resource('shop-products', AdminShopProductController::class);
         Route::resource('home-services', AdminHomeServiceController::class);
+        Route::resource('testimonials', AdminTestimonialController::class);
 
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');

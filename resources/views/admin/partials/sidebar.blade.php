@@ -34,6 +34,9 @@
         <a href="{{ route('admin.home-services.index') }}" class="{{ request()->routeIs('admin.home-services.*') ? 'active' : '' }}">
             <i class="bi bi-layout-text-window-reverse"></i> <span>Home Services</span>
         </a>
+        <a href="{{ route('admin.testimonials.index') }}" class="{{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}">
+            <i class="bi bi-chat-quote"></i> <span>Testimonials</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">
