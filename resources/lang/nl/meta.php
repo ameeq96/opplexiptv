@@ -106,4 +106,16 @@ return [
         'description' => 'Bedankt voor je bestelling. Je IPTV-abonnement is ontvangen en wordt nu verwerkt. Je ontvangt een e-mail met je bestelgegevens, activatie-instructies en eventuele inloggegevens. Heb je vragen, dan staat ons supportteam voor je klaar.',
         'keywords'    => 'bedankpagina, bestelling bevestigd, IPTV-bestelling, IPTV-abonnement, succesvolle bestelling, activatie-instructies, accountgegevens, klantenservice, streamingdienst',
     ],
+    'blogs' => [
+        'index' => [
+            'title' => 'Blog | Opplex IPTV-nieuws & gidsen',
+            'description' => 'Lees IPTV-tips, installatiegidsen en de nieuwste updates van Opplex IPTV. Leer over apps, apparaten, streamkwaliteit en legaal IPTV-gebruik.',
+            'keywords' => 'IPTV-blog, IPTV-gidsen, IPTV-tips, Opplex IPTV-nieuws, streaming-updates, IPTV-installatie',
+        ],
+        'show' => [
+            'title' => 'Blogbericht | Opplex IPTV',
+            'description' => 'Lees het nieuwste IPTV-artikel van Opplex IPTV. Tips, gidsen en updates voor beter streamen.',
+            'keywords' => 'IPTV-blogbericht, IPTV-artikel, Opplex IPTV, IPTV-tips, streaminggids',
+        ],
+    ],
 ];

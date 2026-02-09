@@ -66,8 +66,8 @@
                         </div>
                         <a class="blog-featured__cta mt-3"
                             href="{{ $featuredSlug ? route('blogs.show', $featuredSlug) : '#' }}">
-                            <span>?</span>
                             {{ __('messages.read_more') }}
+                            <span>?</span>
                         </a>
                     </div>
                     <div class="blog-featured__media">

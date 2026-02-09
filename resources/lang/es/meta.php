@@ -106,4 +106,16 @@ return [
         'description' => 'Gracias por tu pedido. Tu suscripción IPTV ha sido recibida y está siendo procesada. Recibirás un correo electrónico con los detalles del pedido, instrucciones de activación y, si es necesario, los datos de acceso. Si tienes dudas, nuestro equipo de soporte está listo para ayudarte.',
         'keywords'    => 'página de gracias, pedido confirmado, pedido IPTV, suscripción IPTV, pedido exitoso, instrucciones de activación, detalles de cuenta, soporte al cliente, servicio de streaming',
     ],
+    'blogs' => [
+        'index' => [
+            'title' => 'Blog | Noticias y guías de Opplex IPTV',
+            'description' => 'Lee consejos de IPTV, guías de configuración y las últimas actualizaciones de Opplex IPTV. Aprende sobre apps, dispositivos, calidad de streaming y uso legal de IPTV.',
+            'keywords' => 'blog de IPTV, guías de IPTV, consejos de IPTV, noticias de Opplex IPTV, actualizaciones de streaming, configuración de IPTV',
+        ],
+        'show' => [
+            'title' => 'Entrada del blog | Opplex IPTV',
+            'description' => 'Lee el último artículo de IPTV de Opplex IPTV. Consejos, guías y actualizaciones para un mejor streaming.',
+            'keywords' => 'entrada de blog de IPTV, artículo de IPTV, Opplex IPTV, consejos de IPTV, guía de streaming',
+        ],
+    ],
 ];
