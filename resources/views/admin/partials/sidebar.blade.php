@@ -28,6 +28,9 @@
         <a href="{{ route('admin.blogs.index') }}" class="{{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}">
             <i class="bi bi-journal-text"></i> <span>Blogs</span>
         </a>
+        <a href="{{ route('admin.shop-products.index') }}" class="{{ request()->routeIs('admin.shop-products.*') ? 'active' : '' }}">
+            <i class="bi bi-bag"></i> <span>Shop Products</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">
