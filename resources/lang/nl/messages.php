@@ -535,7 +535,7 @@ return [
 'no_results' => 'Geen resultaten gevonden.',
 'back_to_blogs' => 'Terug naar blogs',
 'share' => 'Link kopiëren',
-
+'more' => 'Meer +',
 
   'blog' => [
         'heading' => 'Blogs',

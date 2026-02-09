@@ -534,7 +534,7 @@ return [
 'no_results' => 'Nenhum resultado encontrado.',
 'back_to_blogs' => 'Voltar para os blogs',
 'share' => 'Copiar link',
-
+'more' => 'Mais +',
 
     'blog' => [
         'heading' => 'Blogs',

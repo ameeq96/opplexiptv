@@ -530,14 +530,14 @@ return [
   'no_results' => 'No results found.',
   'back_to_blogs' => 'Back to blogs',
   'share' => 'Copy link',
+  'more' => 'More +',
 
-
-    'blog' => [
-        'heading' => 'Blogs',
-        'breadcrumb' => [
-            'home' => 'Home',
-            'current' => 'Blogs',
-        ],
+  'blog' => [
+    'heading' => 'Blogs',
+    'breadcrumb' => [
+      'home' => 'Home',
+      'current' => 'Blogs',
     ],
+  ],
 
 ];

@@ -529,7 +529,7 @@ return [
 'no_results' => 'Nessun risultato trovato.',
 'back_to_blogs' => 'Torna ai blog',
 'share' => 'Copia link',
-
+'more' => 'Altro +',
 
    'blog' => [
         'heading' => 'Blogs',

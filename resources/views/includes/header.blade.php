@@ -99,7 +99,7 @@
                                 <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                         href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
 
-                                <li class="dropdown"><a href="#">{{__('More +')}}</a>
+                                <li class="dropdown"><a href="#">{{ __('more') }}</a>
                                     <ul class="sub-menu">
 
                                         <li><a class="{{ $isRtl ? 'text-right' : '' }}"
