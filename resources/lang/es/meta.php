@@ -12,7 +12,7 @@ return [
         'keywords' => 'mejor iptv, xtreme hd iptv, iptv smart player, aroma iptv, prueba gratuita iptv, iptv en vivo 4k, caja iptv',
     ],
     'pricing' => [
-        'title' => 'Planes de Suscripción IPTV | Caja IPTV Asequible y Streaming 4K',
+        'title' => 'Planes de Suscripción IPTV | Caja IPTV Asequible',
         'description' => 'Explora precios económicos de IPTV para los mejores servicios. Obtén xtreme hd iptv con iptv smart player, IPTV en vivo 4K y opciones de prueba gratuita en EE. UU., Francia, Italia y Reino Unido.',
         'keywords' => 'caja iptv, xtreme hd iptv, mejor iptv, aroma iptv, precio suscripción iptv, iptv en vivo 4k, prueba gratuita iptv',
     ],
@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, películas iptv, iptv Netflix, aroma iptv, iptv en vivo 4k, caja iptv',
     ],
     'packages' => [
-        'title' => 'Mejores Paquetes IPTV con Prueba Gratis | Streaming 4K Europa & EE. UU.',
+        'title' => 'Mejores Paquetes IPTV con Prueba Gratis | Streaming 4K',
         'description' => 'Paquetes IPTV flexibles incluyen xtreme hd iptv, acceso a caja IPTV, canales 4K y compatibilidad con iptv smart player. Prueba gratuita disponible en Francia, Italia, Reino Unido y EE. UU.',
         'keywords' => 'prueba gratuita iptv, xtreme hd iptv, iptv smart player, iptv en vivo 4k, caja iptv, mejor iptv, aroma iptv',
     ],
@@ -32,12 +32,12 @@ return [
         'keywords' => 'reseller iptv, xtreme hd iptv, caja iptv, aroma iptv, iptv smart player, iptv en vivo 4k, mejor iptv',
     ],
     'buynow' => [
-        'title' => 'Compra IPTV Ahora | Acceso a IPTV 4K y Streaming HD Instantáneo',
+        'title' => 'Compra IPTV Ahora | Acceso a IPTV 4K y Streaming HD',
         'description' => 'Compra IPTV hoy y disfruta de acceso instantáneo a servicios IPTV de alta calidad, incluyendo streaming 4K, canales HD y prueba gratuita. Obtén las mejores cajas IPTV y comienza a transmitir en todo el mundo, Europa y EE. UU.',
         'keywords' => 'comprar IPTV ahora, IPTV 4K, comprar servicio IPTV, comprar caja IPTV, streaming IPTV, suscripción IPTV, IPTV HD, acceso instantáneo IPTV',
     ],
     'buy-now-panel' => [
-        'title' => 'Comprar Panel IPTV | Dashboard Reseller IPTV y Activación Instantánea',
+        'title' => 'Comprar Panel IPTV | Dashboard Reseller IPTV y Activación',
         'description' => 'Compra tu panel IPTV ahora y obtén acceso instantáneo a un poderoso panel IPTV para gestionar usuarios, activar líneas y transmitir en 4K & HD. Perfecto para resellers IPTV en Europa, EE. UU. y el mundo.',
         'keywords' => 'comprar panel IPTV, dashboard reseller IPTV, panel de gestión IPTV, acceso instantáneo panel IPTV, panel IPTV 4K, panel IPTV HD, panel de control IPTV, herramientas reseller IPTV',
     ],
@@ -47,7 +47,7 @@ return [
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, caja iptv, mejor iptv, aroma iptv, iptv en vivo 4k',
     ],
     'faqs' => [
-        'title' => 'FAQs de Opplex IPTV | Configuración, Soporte y Prueba Gratuita',
+        'title' => 'FAQs de Opplex IPTV | Configuración, Soporte y Prueba',
         'description' => 'Encuentra respuestas sobre xtreme hd iptv, configuración de iptv smart player, streaming 4K y prueba gratuita IPTV. Soporte completo para EE. UU., Reino Unido, Francia e Italia.',
         'keywords' => 'soporte iptv, configuración iptv, xtreme hd iptv, iptv smart player, aroma iptv, mejor iptv, iptv en vivo 4k',
     ],

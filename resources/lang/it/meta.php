@@ -2,7 +2,7 @@
 
 return [
     'home' => [
-        'title' => 'Opplex IPTV - TV Live, Film & Sport HD con IPTV Smarters e IPTV Extreme',
+        'title' => 'Opplex IPTV - TV Live, Film & Sport HD con IPTV Smarters',
         'description' => 'Guarda oltre 12.000 canali live, 50.000+ film e 5.000+ serie TV in HD/4K su IPTV Smarters Pro, Smart IPTV e IPTV Extreme APK in Italia, Francia, UK e altro.',
         'keywords' => 'IPTV Italia, IPTV Europa, IPTV streaming, IPTV Extreme APK, Smart IPTV, IPTV Smarters Pro, IPTV m3u gratis, IPTV player, rivenditore IPTV, liste IPTV',
     ],
@@ -32,12 +32,12 @@ return [
         'keywords' => 'rivenditore IPTV Italia, pannello IPTV, IPTV Smarters Pro rivenditore, IPTV Extreme APK, crediti IPTV, lista IPTV Sky Italia',
     ],
     'buynow' => [
-        'title' => 'Acquista IPTV ora | Accesso immediato a IPTV 4K e streaming HD',
+        'title' => 'Acquista IPTV ora | Accesso immediato a IPTV 4K e',
         'description' => 'Acquista IPTV oggi e goditi l\'accesso immediato ai servizi IPTV di alta qualità, inclusi lo streaming 4K, canali HD e una prova gratuita. Acquista i migliori box IPTV e inizia a trasmettere in tutto il mondo in Europa e negli Stati Uniti.',
         'keywords' => 'compra IPTV ora, IPTV 4K, acquisto servizio IPTV, acquisto box IPTV, streaming IPTV, abbonamento IPTV, IPTV HD, accesso IPTV immediato',
     ],
     'buy-now-panel' => [
-        'title' => 'Acquista Pannello IPTV | Dashboard Rivenditore e Attivazione Immediata',
+        'title' => 'Acquista Pannello IPTV | Dashboard Rivenditore',
         'description' => 'Acquista ora il tuo pannello IPTV e ottieni accesso immediato a una dashboard avanzata per gestire utenti, attivare linee e trasmettere in 4K e HD. Perfetto per rivenditori IPTV in Europa, USA e nel resto del mondo.',
         'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, accesso immediato pannello IPTV, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
     ],

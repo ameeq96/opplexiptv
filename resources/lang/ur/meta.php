@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
-        'title' => 'بہترین IPTV پیکجز مفت ٹرائل کے ساتھ | 4K اسٹریمنگ یورپ اور USA',
+        'title' => 'بہترین IPTV پیکجز مفت ٹرائل کے ساتھ | 4K اسٹریمنگ یورپ اور',
         'description' => 'لچکدار IPTV پیکجز میں xtreme hd iptv، iptv باکس ایکسس، 4K چینلز اور iptv اسمارٹ پلیئر مطابقت شامل ہے۔ فرانس، اٹلی، UK، US میں مفت ٹرائل دستیاب۔',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],

@@ -12,7 +12,7 @@ return [
         'keywords' => 'melhor iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv teste gratuito, iptv ao vivo 4k, iptv box',
     ],
     'pricing' => [
-        'title' => 'Planos de Assinatura IPTV | IPTV Box Acessível & Streaming 4K',
+        'title' => 'Planos de Assinatura IPTV | IPTV Box Acessível & Streaming',
         'description' => 'Explore preços acessíveis de IPTV para os melhores serviços. Obtenha xtreme hd iptv com iptv smart player, IPTV ao vivo em 4K e opções de teste gratuito nos EUA, França, Itália e Reino Unido.',
         'keywords' => 'iptv box, xtreme hd iptv, melhor iptv, aroma iptv, preço assinatura iptv, iptv ao vivo 4k, iptv teste gratuito',
     ],
@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, filmes iptv, Netflix iptv, aroma iptv, iptv ao vivo 4k, iptv box',
     ],
     'packages' => [
-        'title' => 'Melhores Pacotes IPTV com Teste Gratuito | Streaming 4K Europa & EUA',
+        'title' => 'Melhores Pacotes IPTV com Teste Gratuito | Streaming 4K',
         'description' => 'Pacotes IPTV flexíveis incluem xtreme hd iptv, acesso a iptv box, canais 4K e compatibilidade com iptv smart player. Teste gratuito disponível na França, Itália, Reino Unido e EUA.',
         'keywords' => 'iptv teste gratuito, xtreme hd iptv, iptv smart player, iptv ao vivo 4k, iptv box, melhor iptv, aroma iptv',
     ],
@@ -37,7 +37,7 @@ return [
         'keywords' => 'compre IPTV agora, IPTV 4K, comprar serviço IPTV, adquirir IPTV box, streaming IPTV, assinatura IPTV, IPTV HD, acesso instantâneo IPTV',
     ],
     'buy-now-panel' => [
-        'title' => 'Comprar Painel IPTV | Dashboard de Revendedor & Ativação Instantânea',
+        'title' => 'Comprar Painel IPTV | Dashboard de Revendedor & Ativação',
         'description' => 'Compre seu painel IPTV agora e obtenha acesso instantâneo a um poderoso dashboard IPTV para gerenciar usuários, ativar linhas e transmitir em 4K & HD. Perfeito para revendedores IPTV na Europa, EUA e mundo todo.',
         'keywords' => 'comprar painel IPTV, dashboard revendedor IPTV, painel de gestão IPTV, acesso instantâneo painel IPTV, painel IPTV 4K, painel IPTV HD, painel de controle IPTV, ferramentas revendedor IPTV',
     ],
@@ -47,7 +47,7 @@ return [
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, melhor iptv, aroma iptv, iptv ao vivo 4k',
     ],
     'faqs' => [
-        'title' => 'FAQ Opplex IPTV | Configuração, Suporte & Ajuda Teste Gratuito',
+        'title' => 'FAQ Opplex IPTV | Configuração, Suporte & Ajuda Teste',
         'description' => 'Encontre respostas sobre xtreme hd iptv, configuração de iptv smart player, streaming 4K e teste gratuito IPTV. Suporte completo para EUA, Reino Unido, França, Itália.',
         'keywords' => 'suporte iptv, configuração iptv, xtreme hd iptv, iptv smart player, aroma iptv, melhor iptv, iptv ao vivo 4k',
     ],

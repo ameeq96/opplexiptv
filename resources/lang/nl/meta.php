@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv films, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
-        'title' => 'Beste IPTV-pakketten met gratis proefperiode | 4K Streaming Europa & VS',
+        'title' => 'Beste IPTV-pakketten met gratis proefperiode | 4K',
         'description' => 'Flexibele IPTV-pakketten inclusief xtreme hd iptv, toegang tot iptv box, 4K-kanalen en compatibiliteit met iptv smart player. Gratis proefperiode beschikbaar in Frankrijk, Italië, VK en VS.',
         'keywords' => 'iptv gratis proefperiode, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, beste iptv, aroma iptv',
     ],
@@ -37,7 +37,7 @@ return [
         'keywords' => 'iptv nu kopen, 4K IPTV, iptv service kopen, iptv box aanschaffen, IPTV streaming, iptv abonnement kopen, HD IPTV, directe iptv toegang',
     ],
     'buy-now-panel' => [
-        'title' => 'Koop IPTV Paneel | Reseller IPTV Dashboard & Directe Activatie',
+        'title' => 'Koop IPTV Paneel | Reseller IPTV Dashboard & Directe',
         'description' => 'Koop nu je IPTV-paneel en krijg direct toegang tot een krachtig IPTV-dashboard voor gebruikersbeheer, lijnactivering en 4K & HD streaming. Perfect voor IPTV-resellers in Europa, de VS en wereldwijd.',
         'keywords' => 'iptv paneel kopen, IPTV reseller dashboard, IPTV beheerpaneel, directe IPTV paneeltoegang, 4K IPTV paneel, HD IPTV paneel, IPTV controlepaneel, reseller IPTV tools',
     ],
@@ -47,7 +47,7 @@ return [
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, beste iptv, aroma iptv, 4k live iptv',
     ],
     'faqs' => [
-        'title' => 'Opplex IPTV FAQ | Installatie, Ondersteuning & Gratis Proefperiode',
+        'title' => 'Opplex IPTV FAQ | Installatie, Ondersteuning & Gratis',
         'description' => 'Vind antwoorden over xtreme hd iptv, installatie van iptv smart player, 4K streaming en iptv gratis proefperiode. Volledige ondersteuning voor VS, VK, Frankrijk en Italië.',
         'keywords' => 'iptv ondersteuning, iptv installatie, xtreme hd iptv, iptv smart player, aroma iptv, beste iptv, 4k live iptv',
     ],

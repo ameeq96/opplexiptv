@@ -22,7 +22,7 @@ return [
         'keywords' => 'مشغل iptv الذكي، xtreme hd iptv، أفلام iptv، iptv Netflix، aroma iptv، iptv مباشر 4k، جهاز iptv',
     ],
     'packages' => [
-        'title' => 'أفضل باقات IPTV مع تجربة مجانية | بث مباشر 4K في أوروبا وأمريكا',
+        'title' => 'أفضل باقات IPTV مع تجربة مجانية | بث مباشر 4K في أوروبا',
         'description' => 'باقات IPTV مرنة تشمل Xtreme HD IPTV، أجهزة iptv، قنوات 4K ودعم مشغل iptv الذكي. تجربة مجانية متاحة في فرنسا، إيطاليا، المملكة المتحدة والولايات المتحدة.',
         'keywords' => 'تجربة iptv مجانية، xtreme hd iptv، مشغل iptv الذكي، iptv مباشر 4k، جهاز iptv، أفضل iptv، aroma iptv',
     ],
@@ -47,7 +47,7 @@ return [
         'keywords' => 'مشغل iptv الذكي، iptv Smarters، xtreme hd iptv، جهاز iptv، أفضل iptv، aroma iptv، iptv مباشر 4k',
     ],
     'faqs' => [
-        'title' => 'الأسئلة الشائعة حول Opplex IPTV | الإعداد، الدعم والتجربة المجانية',
+        'title' => 'الأسئلة الشائعة حول Opplex IPTV | الإعداد، الدعم والتجربة',
         'description' => 'ابحث عن إجابات حول Xtreme HD IPTV، إعداد مشغل IPTV الذكي، بث 4K وتجربة IPTV مجانية. دعم كامل للولايات المتحدة، المملكة المتحدة، فرنسا وإيطاليا.',
         'keywords' => 'دعم iptv، إعداد iptv، xtreme hd iptv، مشغل iptv الذكي، aroma iptv، أفضل iptv، iptv مباشر 4k',
     ],

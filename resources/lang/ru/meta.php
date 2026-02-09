@@ -12,7 +12,7 @@ return [
         'keywords' => 'лучший iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv бесплатный тест, 4k iptv онлайн, iptv приставка',
     ],
     'pricing' => [
-        'title' => 'Тарифные планы IPTV | Доступная IPTV приставка и 4K трансляции',
+        'title' => 'Тарифные планы IPTV | Доступная IPTV приставка и 4K',
         'description' => 'Изучите доступные цены на IPTV. Получите xtreme hd iptv с iptv smart player, 4K трансляциями и бесплатным тестовым периодом в США, Франции, Италии и Великобритании.',
         'keywords' => 'iptv приставка, xtreme hd iptv, лучший iptv, aroma iptv, цена подписки iptv, 4k iptv онлайн, iptv бесплатный тест',
     ],
@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv фильмы, iptv Netflix, aroma iptv, 4k iptv онлайн, iptv приставка',
     ],
     'packages' => [
-        'title' => 'Лучшие IPTV пакеты с бесплатным тестом | 4K трансляции Европа и США',
+        'title' => 'Лучшие IPTV пакеты с бесплатным тестом | 4K трансляции',
         'description' => 'Гибкие IPTV пакеты включают xtreme hd iptv, доступ с iptv приставок, 4K каналы и совместимость с iptv smart player. Бесплатный тест доступен во Франции, Италии, Великобритании и США.',
         'keywords' => 'iptv бесплатный тест, xtreme hd iptv, iptv smart player, 4k iptv онлайн, iptv приставка, лучший iptv, aroma iptv',
     ],
@@ -37,17 +37,17 @@ return [
         'keywords' => 'купить IPTV сейчас, 4K IPTV, купить IPTV сервис, заказать IPTV приставку, IPTV трансляции, подписка IPTV, HD IPTV, мгновенный доступ IPTV',
     ],
     'buy-now-panel' => [
-        'title' => 'Купить IPTV панель | Панель реселлера с мгновенной активацией',
+        'title' => 'Купить IPTV панель | Панель реселлера с мгновенной',
         'description' => 'Купите IPTV панель и получите мгновенный доступ к мощной панели управления IPTV для управления пользователями, активации линий и 4K/HD трансляций. Идеально для реселлеров в Европе, США и по всему миру.',
         'keywords' => 'купить IPTV панель, панель реселлера IPTV, панель управления IPTV, мгновенный доступ IPTV, 4K IPTV панель, HD IPTV панель, контрольная панель IPTV, инструменты реселлера IPTV',
     ],
     'iptv-applications' => [
-        'title' => 'Лучшие IPTV приложения: Smarters, Player, Android TV и другие',
+        'title' => 'Лучшие IPTV приложения: Smarters, Player, Android TV',
         'description' => 'Скачайте IPTV приложения, включая iptv smart player и Smarters Pro. Совместимы с xtreme hd iptv, Android, iOS и 4K устройствами. Лучший IPTV опыт.',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv приставка, лучший iptv, aroma iptv, 4k iptv онлайн',
     ],
     'faqs' => [
-        'title' => 'Часто задаваемые вопросы Opplex IPTV | Настройка, поддержка и бесплатный тест',
+        'title' => 'Часто задаваемые вопросы Opplex IPTV | Настройка',
         'description' => 'Найдите ответы о xtreme hd iptv, настройке iptv smart player, 4K трансляциях и бесплатном тесте IPTV. Полная поддержка для США, Великобритании, Франции и Италии.',
         'keywords' => 'поддержка iptv, настройка iptv, xtreme hd iptv, iptv smart player, aroma iptv, лучший iptv, 4k iptv онлайн',
     ],

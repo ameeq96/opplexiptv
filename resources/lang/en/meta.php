@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
-        'title' => 'Best IPTV Packages with Free Trial | 4K Streaming Europe & USA',
+        'title' => 'Best IPTV Packages with Free Trial | 4K Streaming Europe',
         'description' => 'Flexible IPTV packages include xtreme hd iptv, iptv box access, 4K channels, and iptv smart player compatibility. Free trial available in France, Italy, UK, US.',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
@@ -37,7 +37,7 @@ return [
         'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
     ],
     'buy-now-panel' => [
-        'title' => 'Buy IPTV Panel | Reseller IPTV Dashboard & Instant Activation',
+        'title' => 'Buy IPTV Panel | Reseller IPTV Dashboard & Instant',
         'description' => 'Buy your IPTV panel now and get instant access to a powerful IPTV dashboard for managing users, activating lines, and streaming in 4K & HD. Perfect for IPTV resellers in Europe, USA, and worldwide.',
         'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
     ],

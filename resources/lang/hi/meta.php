@@ -12,7 +12,7 @@ return [
         'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
-        'title' => 'IPTV सब्सक्रिप्शन प्लान्स | किफायती IPTV बॉक्स और 4K स्ट्रीमिंग',
+        'title' => 'IPTV सब्सक्रिप्शन प्लान्स | किफायती IPTV बॉक्स और 4K',
         'description' => 'सबसे अच्छी iptv सेवाओं के लिए सस्ती कीमतें देखें। xtreme hd iptv पाएं iptv smart player, 4K लाइव iptv और मुफ्त ट्रायल विकल्पों के साथ US, France, Italy, UK में।',
         'keywords' => 'iptv box, xtreme hd iptv, best iptv, aroma iptv, iptv subscription price, 4k live iptv, iptv free trial',
     ],
@@ -22,7 +22,7 @@ return [
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
-        'title' => 'Best IPTV पैकेजेज़ मुफ्त ट्रायल के साथ | 4K स्ट्रीमिंग यूरोप और USA',
+        'title' => 'Best IPTV पैकेजेज़ मुफ्त ट्रायल के साथ | 4K स्ट्रीमिंग',
         'description' => 'लचीले IPTV पैकेजों में xtreme hd iptv, iptv box एक्सेस, 4K चैनल्स और iptv smart player सपोर्ट शामिल है। मुफ्त ट्रायल France, Italy, UK, US में उपलब्ध है।',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
@@ -37,7 +37,7 @@ return [
         'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
     ],
     'buy-now-panel' => [
-        'title' => 'IPTV पैनल खरीदें | रिसेलर IPTV डैशबोर्ड और इंस्टेंट एक्टिवेशन',
+        'title' => 'IPTV पैनल खरीदें | रिसेलर IPTV डैशबोर्ड और इंस्टेंट',
         'description' => 'अभी अपना IPTV पैनल खरीदें और उपयोगकर्ताओं को मैनेज करने, लाइन्स एक्टिवेट करने और 4K व HD में स्ट्रीमिंग के लिए पावरफुल IPTV डैशबोर्ड का तुरंत एक्सेस पाएं। यूरोप, USA और दुनिया भर के रिसेलर्स के लिए बेस्ट।',
         'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
     ],

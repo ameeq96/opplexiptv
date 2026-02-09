@@ -2,7 +2,7 @@
 
 return [
     'home' => [
-        'title' => 'Opplex IPTV - TV en direct, films & sports HD via IPTV stream player & box',
+        'title' => 'Opplex IPTV - TV en direct, films & sports HD via IPTV',
         'description' => 'Diffusez plus de 12 000 chaînes, 50 000+ films, 5 000+ séries en HD/4K en France, Italie, Royaume-Uni. Compatible IPTV smart player, Xtream IPTV, IPTV box.',
         'keywords' => 'IPTV Europe, IPTV France, IPTV Italie, IPTV UK, IPTV stream player, IPTV m3u, IPTV gratuit sans code, IPTV smart player, Xtream IPTV, IPTV box, code IPTV',
     ],
@@ -12,7 +12,7 @@ return [
         'keywords' => 'à propos IPTV, dev IPTV pro, IPTV player, IPTV m3u, fournisseur IPTV France Italie UK, IPTV pro, assistance IPTV box',
     ],
     'pricing' => [
-        'title' => 'Forfaits IPTV flexibles & abordables - IPTV box et Xtream IPTV',
+        'title' => 'Forfaits IPTV flexibles & abordables - IPTV box et Xtream',
         'description' => 'Découvrez nos plans IPTV pro, stream player, m3u et IPTV box. Tarifs abordables pour la France, l’Italie et toute l’Europe.',
         'keywords' => 'tarifs IPTV, IPTV stream player, IPTV gratuit sans code, IPTV m3u, IPTV pro, IPTV France Italie UK, code IPTV, IPTV player',
     ],
@@ -27,17 +27,17 @@ return [
         'keywords' => 'forfaits IPTV, IPTV player, abonnement IPTV France, IPTV m3u, IPTV sport, IPTV stream player, code IPTV, IPTV gratuit sans code',
     ],
     'reseller-panel' => [
-        'title' => 'Devenez revendeur IPTV - Panneau avec Xtream IPTV & room IPTV',
+        'title' => 'Devenez revendeur IPTV - Panneau avec Xtream IPTV & room',
         'description' => 'Lancez votre business IPTV avec code IPTV, box et accès au panneau revendeur. Compatible IPTV smart player, décodeur IPTV avec code.',
         'keywords' => 'revendeur IPTV, IPTV box, IPTV m3u, Xtream IPTV, code IPTV, décodeur IPTV, IPTV illégal, dev IPTV pro, France Italie UK',
     ],
     'buynow' => [
-        'title' => 'Achetez IPTV maintenant | Accédez instantanément à la diffusion IPTV 4K et HD',
+        'title' => 'Achetez IPTV maintenant | Accédez instantanément à la',
         'description' => 'Achetez IPTV aujourd\'hui et profitez d\'un accès instantané aux services IPTV de haute qualité, y compris la diffusion 4K, des chaînes HD et un essai gratuit. Obtenez les meilleurs boîtiers IPTV et commencez à diffuser dans le monde entier en Europe et aux États-Unis.',
         'keywords' => 'acheter IPTV maintenant, IPTV 4K, acheter service IPTV, acheter boîtier IPTV, diffusion IPTV, abonnement IPTV, IPTV HD, accès IPTV instantané',
     ],
     'buy-now-panel' => [
-        'title' => 'Acheter un Panel IPTV | Tableau de Bord Revendeur & Activation Instantanée',
+        'title' => 'Acheter un Panel IPTV | Tableau de Bord Revendeur',
         'description' => 'Achetez votre panel IPTV dès maintenant et accédez instantanément à un tableau de bord puissant pour gérer les utilisateurs, activer des lignes, et diffuser en 4K et HD. Idéal pour les revendeurs IPTV en Europe, aux États-Unis et dans le monde entier.',
         'keywords' => 'acheter panel IPTV, tableau de bord revendeur IPTV, gestion IPTV, accès instantané panel IPTV, panel IPTV 4K, panel IPTV HD, outils revendeur IPTV',
     ],
@@ -52,7 +52,7 @@ return [
         'keywords' => 'FAQ IPTV, code IPTV, IPTV gratuit sans code, IPTV m3u, IPTV stream player, room IPTV, DAZN IPTV, assistance IPTV box',
     ],
     'contact' => [
-        'title' => 'Contactez Opplex IPTV - Code IPTV, IPTV player, essai gratuit',
+        'title' => 'Contactez Opplex IPTV - Code IPTV, IPTV player, essai',
         'description' => 'Contactez notre équipe : WhatsApp, email - demandez un essai IPTV gratuit ou support pour IPTV box, Xtream IPTV, IPTV stream player.',
         'keywords' => 'contact IPTV, support IPTV, IPTV gratuit sans code, WhatsApp IPTV, IPTV smart player, IPTV stream player, code IPTV, essai IPTV',
     ],
