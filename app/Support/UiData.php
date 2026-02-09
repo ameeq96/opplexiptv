@@ -157,17 +157,19 @@ class UiData
      */
     private function prepareMovies(array $raw, bool $isMobile): Collection
     {
-        $imgWidth  = $isMobile ? 428 : 1280;
-        $imgHeight = $isMobile ? 220 : 720;
+        // Keep slider images under ~100 KB by reducing dimensions + quality
+        $imgWidth  = $isMobile ? 420 : 960;
+        $imgHeight = $isMobile ? 220 : 540;
 
         return collect($raw)->map(function (array $m) use ($isMobile, $imgWidth, $imgHeight) {
             if (!empty($m['backdrop_path'])) {
-                $src = $this->images->tmdbImage($m['backdrop_path'], $isMobile ? 'w500' : 'w1280');
-                $m['webp_image_url'] = $this->images->toWebp($src, $imgWidth, $imgHeight);
+                $src = $this->images->tmdbImage($m['backdrop_path'], $isMobile ? 'w342' : 'w780');
+                $m['webp_image_url'] = $this->images->toWebp($src, $imgWidth, $imgHeight, 70);
             }
 
             if (!empty($m['poster_path'])) {
-                $src = $this->images->tmdbImage($m['poster_path'], 'w500');
+                // Use smaller poster size to reduce bytes on card grids
+                $src = $this->images->tmdbImage($m['poster_path'], 'w342');
                 $m['webp_poster_url'] = $this->images->toWebp($src, 308, 462);
             }
 
@@ -198,7 +200,7 @@ class UiData
             $poster  = $m['poster_path'] ?? null;
 
             $posterUrl = $poster
-                ? "https://image.tmdb.org/t/p/w500{$poster}"
+                ? "https://image.tmdb.org/t/p/w342{$poster}"
                 : asset('images/placeholders/poster.webp');
 
             $vote = isset($m['vote_average'])
