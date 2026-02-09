@@ -3,27 +3,27 @@
 return [
     'home' => [
         'title' => 'Best IPTV Service - HD, 4K Live Streaming | Opplex IPTV',
-        'description' => 'Get the best IPTV experience with 4K live IPTV, 12,000+ channels, and VOD. Includes xtreme hd iptv, iptv smart player, and free trial. Stream across Europe and USA.',
+        'description' => 'Get the best IPTV experience with 4K live IPTV, 12,000+ channels, and VOD. Includes xtreme hd iptv, iptv smart player, and free trial.',
         'keywords' => 'best iptv, iptv box, xtreme hd iptv, aroma iptv, iptv smart player, iptv free trial, 4k live iptv',
     ],
     'about' => [
         'title' => 'About Opplex IPTV - Premium 4K Live IPTV Provider',
-        'description' => 'Opplex IPTV offers xtreme hd iptv with 4K streaming, free trial, and 24/7 support. Learn about our mission to provide the best iptv services in Europe & USA.',
+        'description' => 'Opplex IPTV offers xtreme hd iptv with 4K streaming, free trial, and 24/7 support.',
         'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
         'title' => 'IPTV Subscription Plans | Affordable IPTV Box & 4K Streaming',
-        'description' => 'Explore cheap IPTV pricing for best iptv services. Get xtreme hd iptv with iptv smart player, 4K live iptv, and free trial options across US, France, Italy, UK.',
+        'description' => 'Explore cheap IPTV pricing for best iptv services. Get xtreme hd iptv with iptv smart player, 4K live iptv, and free trial options across US, France,',
         'keywords' => 'iptv box, xtreme hd iptv, best iptv, aroma iptv, iptv subscription price, 4k live iptv, iptv free trial',
     ],
     'movies' => [
         'title' => 'Watch IPTV Movies, Series in HD & 4K - Opplex IPTV',
-        'description' => 'Enjoy 50,000+ IPTV movies and 5,000+ series in 4K. Supports iptv smart player, xtreme hd iptv, and free trials. Watch Netflix, Bollywood, Hollywood content.',
+        'description' => 'Enjoy 50,000+ IPTV movies and 5,000+ series in 4K. Supports iptv smart player, xtreme hd iptv, and free trials.',
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'Best IPTV Packages with Free Trial | 4K Streaming Europe',
-        'description' => 'Flexible IPTV packages include xtreme hd iptv, iptv box access, 4K channels, and iptv smart player compatibility. Free trial available in France, Italy, UK, US.',
+        'description' => 'Flexible IPTV packages include xtreme hd iptv, iptv box access, 4K channels, and iptv smart player compatibility.',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
     'reseller-panel' => [
@@ -33,12 +33,12 @@ return [
     ],
     'buynow' => [
         'title' => 'Buy IPTV Now | Access 4K IPTV and HD Streaming Instantly',
-        'description' => 'Buy IPTV today and enjoy instant access to top-quality IPTV services, including 4K streaming, HD channels, and a free trial. Get the best IPTV boxes and start streaming worldwide across Europe & USA.',
+        'description' => 'Buy IPTV today and enjoy instant access to top-quality IPTV services, including 4K streaming, HD channels, and a free trial.',
         'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
     ],
     'buy-now-panel' => [
         'title' => 'Buy IPTV Panel | Reseller IPTV Dashboard & Instant',
-        'description' => 'Buy your IPTV panel now and get instant access to a powerful IPTV dashboard for managing users, activating lines, and streaming in 4K & HD. Perfect for IPTV resellers in Europe, USA, and worldwide.',
+        'description' => 'Buy your IPTV panel now and get instant access to a powerful IPTV dashboard for managing users, activating lines, and streaming in 4K & HD.',
         'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
     ],
     'iptv-applications' => [
@@ -58,7 +58,7 @@ return [
     ],
     'redirect.ad' => [
         'title' => 'Preparing Your Download...',
-        'description' => 'Please wait while we prepare your content. Get the best IPTV setup with Opplex — free trial, reseller opportunities, Xtreme HD IPTV, 4K streaming, and IPTV smart player support.',
+        'description' => 'Please wait while we prepare your content. Get the best IPTV setup with Opplex — free trial, reseller opportunities, Xtreme HD IPTV, 4K streaming, and',
         'keywords' => 'IPTV setup, IPTV free trial, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player support',
     ],
     'activate' => [
@@ -73,39 +73,39 @@ return [
     ],
     'terms-of-service' => [
         'title'       => 'Terms of Service & Legal Use Policy',
-        'description' => 'Read the Opplex IPTV Terms of Service. Learn about account rules, acceptable use, payments, renewals, service availability, and liability limits for our legal IPTV subscriptions.',
+        'description' => 'Read the Opplex IPTV Terms of Service. Learn about account rules, acceptable use, payments, renewals, service availability, and liability limits for our',
         'keywords'    => 'Opplex IPTV terms, IPTV terms of service, acceptable use, IPTV rules, IPTV payments, auto renewal, IPTV liability, legal IPTV policy',
     ],
 
     'privacy-policy' => [
         'title'       => 'Privacy Policy & Data Protection',
-        'description' => 'Our Privacy Policy explains what data we collect, how we use cookies, how we process payments, and how we protect your information when you purchase legal IPTV subscriptions.',
+        'description' => 'Our Privacy Policy explains what data we collect, how we use cookies, how we process payments, and how we protect your information when you purchase legal',
         'keywords'    => 'Opplex IPTV privacy, IPTV privacy policy, data protection, cookies, personal data, GDPR, data security, IPTV subscriptions',
     ],
 
     'refund-policy' => [
         'title'       => 'Refund & Return Policy',
-        'description' => 'View our Refund & Return Policy for legal IPTV subscriptions: eligibility window, non-refundable items, cancellation terms, and how to request a refund via support.',
+        'description' => 'View our Refund & Return Policy for legal IPTV subscriptions: eligibility window, non-refundable items, cancellation terms, and how to request a refund',
         'keywords'    => 'Opplex IPTV refund, IPTV return policy, refund eligibility, cancellation policy, non-refundable, IPTV support, request refund',
     ],
     'shop' => [
         'title'       => 'Shop | Streaming Devices & TV Accessories – Android TV Box, Fire TV, Roku & More',
-        'description' => 'Discover a curated selection of streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and replacement remotes for Samsung and VIZIO. Support for 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E, and H.265. Buy confidently via Amazon links.',
+        'description' => 'Discover a curated selection of streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and',
         'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung remote replacement, VIZIO XRT136 remote, TV wall mount, Mounting Dream MD2380, INSIGNIA F40, TV accessories, Amazon',
     ],
     'configure' => [
         'title'       => 'IPTV Configuration | Choose Device, Provider & Plan – One Last Step Before Checkout',
-        'description' => 'Configure your IPTV order in one simple step: select your device, IPTV provider, connection (1, 2 or 4 devices) and subscription package (monthly or yearly). Secure checkout with instant activation and 24/7 support.',
+        'description' => 'Configure your IPTV order in one simple step: select your device, IPTV provider, connection (1, 2 or 4 devices) and subscription package (monthly or',
         'keywords'    => 'IPTV configuration, IPTV setup, IPTV packages, IPTV reseller, subscription plan, Android TV box, Firestick, smart TV, 1 connection, 2 connections, 4 connections, yearly IPTV, monthly IPTV, streaming service',
     ],
     'checkout' => [
         'title'       => 'Secure IPTV Checkout | Complete Your Order with Instant Activation',
-        'description' => 'Complete your IPTV order with our secure checkout: review your selected device, IPTV provider, connection plan and subscription package, then pay safely by card or crypto. Instant activation and 24/7 customer support.',
+        'description' => 'Complete your IPTV order with our secure checkout: review your selected device, IPTV provider, connection plan and subscription package, then pay safely',
         'keywords'    => 'IPTV checkout, secure checkout, complete order, IPTV payment, IPTV subscription, card payment, crypto payment, instant activation, IPTV order summary, streaming service',
     ],
     'thankyou' => [
         'title'       => 'Thank You | Order Confirmed & Next Steps for Your IPTV Subscription',
-        'description' => 'Thank you for your order. Your IPTV subscription has been received and is now being processed. You will receive an email with your order details, activation instructions and any required account credentials. If you have questions, our support team is here to help.',
+        'description' => 'Thank you for your order. Your IPTV subscription has been received and is now being processed.',
         'keywords'    => 'thank you page, order confirmed, IPTV order, IPTV subscription, order success, activation instructions, account details, customer support, streaming service',
     ],
     'blogs' => [

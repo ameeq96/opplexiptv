@@ -5,9 +5,12 @@
     <section class="section sec-activation d-flex justify-content-center align-items-center py-5"
         style="background-image:url('{{ asset('images/background/pattern-6.webp') }}')" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <div class="container" style="max-width:720px;">
-            <h1 class="text-center mb-5" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
+            <h1 class="text-center mb-2" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                 Legal IPTV Guide
             </h1>
+            <h2 class="text-muted mb-5 text-center mt-4" style="font-size:1rem; text-align: {{ $isRtl ? 'right' : 'left' }};">
+                {{ __('meta.activate.title') }}
+            </h2>
 
             <div class="card p-4 shadow-sm">
                 <a href="{{ route('activate-info') }}">

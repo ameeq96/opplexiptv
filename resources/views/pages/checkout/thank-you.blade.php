@@ -167,9 +167,9 @@
 
     <h1 class="thank-title">{{ __('messages.thankyou_page.heading') }}</h1>
 
-    <p class="thank-sub">
+    <h2 class="thank-sub" style="font-size:1rem; font-weight:600;">
       {{ __('messages.thankyou_page.sub_text') }}
-    </p>
+    </h2>
 
     @if($successMessage)
       <p class="mb-3" style="font-size:.9rem;color:#4b5563;">

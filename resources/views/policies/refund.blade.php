@@ -5,7 +5,7 @@
 @section('content')
 <section class="container py-5">
   <h1 class="mb-2 h2"><b>{{ __('refund.title') }}</b></h1>
-  <p class="text-muted">{{ __('refund.effective') }}</p>
+  <h2 class="h5 text-muted mb-1">{{ __('refund.effective') }}</h2>
   <hr class="my-4">
 
   <p>{!! __('refund.intro') !!}</p>

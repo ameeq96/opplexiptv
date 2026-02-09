@@ -3,12 +3,12 @@
 return [
     'home' => [
         'title' => 'Opplex IPTV - TV Live, Film & Sport HD con IPTV Smarters',
-        'description' => 'Guarda oltre 12.000 canali live, 50.000+ film e 5.000+ serie TV in HD/4K su IPTV Smarters Pro, Smart IPTV e IPTV Extreme APK in Italia, Francia, UK e altro.',
+        'description' => 'Guarda oltre 12.000 canali live, 50.000+ film e 5.000+ serie TV in HD/4K su IPTV Smarters Pro, Smart IPTV e IPTV Extreme APK in Italia, Francia, UK e',
         'keywords' => 'IPTV Italia, IPTV Europa, IPTV streaming, IPTV Extreme APK, Smart IPTV, IPTV Smarters Pro, IPTV m3u gratis, IPTV player, rivenditore IPTV, liste IPTV',
     ],
     'about' => [
         'title' => 'Info Opplex IPTV - Servizio IPTV Premium in Italia',
-        'description' => 'Scopri Opplex IPTV: contenuti IPTV in HD/4K, lista IPTV sky e DAZN Telegram, supporto 24/7, compatibile con IPTV Smarters, IPTV Extreme, IPTV player e app Android.',
+        'description' => 'Scopri Opplex IPTV: contenuti IPTV in HD/4K, lista IPTV sky e DAZN Telegram, supporto 24/7, compatibile con IPTV Smarters, IPTV Extreme, IPTV player e app',
         'keywords' => 'info IPTV, IPTV Italia, servizio IPTV Smarters Pro, IPTV Extreme APK, IPTV smart player, IPTV gratis, IPTV player Italia',
     ],
     'pricing' => [
@@ -38,7 +38,7 @@ return [
     ],
     'buy-now-panel' => [
         'title' => 'Acquista Pannello IPTV | Dashboard Rivenditore',
-        'description' => 'Acquista ora il tuo pannello IPTV e ottieni accesso immediato a una dashboard avanzata per gestire utenti, attivare linee e trasmettere in 4K e HD. Perfetto per rivenditori IPTV in Europa, USA e nel resto del mondo.',
+        'description' => 'Acquista ora il tuo pannello IPTV e ottieni accesso immediato a una dashboard avanzata per gestire utenti, attivare linee e trasmettere in 4K e HD.',
         'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, accesso immediato pannello IPTV, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
     ],
     'iptv-applications' => [
@@ -58,17 +58,17 @@ return [
     ],
     'redirect.ad' => [
         'title' => 'Preparazione del download...',
-        'description' => 'Attendere mentre prepariamo il contenuto. Ottieni la migliore configurazione IPTV con Opplex — prova gratuita, opportunità per rivenditori, Xtreme HD IPTV, streaming 4K e supporto per IPTV smart player.',
+        'description' => 'Attendere mentre prepariamo il contenuto. Ottieni la migliore configurazione IPTV con Opplex — prova gratuita, opportunità per rivenditori, Xtreme HD',
         'keywords' => 'Configurazione IPTV, prova IPTV gratuita, Opplex IPTV, Xtreme HD IPTV, rivenditore IPTV, streaming IPTV 4K, supporto IPTV smart player',
     ],
     'activate' => [
         'title'       => 'Guida IPTV legale - Streaming sicuro, con licenza e conforme',
-        'description' => 'Una guida chiara per utilizzare l’IPTV legalmente: basi delle licenze, app/dispositivi conformi, note regionali (UE/Regno Unito/USA) e consigli pratici per evitare la pirateria.',
+        'description' => 'Una guida chiara per utilizzare l’IPTV legalmente: basi delle licenze, app/dispositivi conformi, note regionali (UE/Regno Unito/USA) e consigli pratici',
         'keywords'    => 'IPTV legale, guida IPTV, conformità IPTV, streaming con licenza, IPTV UE, IPTV Regno Unito, IPTV USA, copyright, IPTV sicuro',
     ],
     'activate-info' => [
         'title'       => 'Info attivazione – Inserisci il numero d’ordine e avvia l’IPTV legale',
-        'description' => 'Come attivare l’IPTV in modo legale: inserisci il numero d’ordine, verifica l’account e inizia lo streaming. Attivazione tramite QR e WhatsApp supportata (UE/Regno Unito/USA).',
+        'description' => 'Come attivare l’IPTV in modo legale: inserisci il numero d’ordine, verifica l’account e inizia lo streaming.',
         'keywords'    => 'attivazione IPTV, numero d’ordine, attivazione WhatsApp, codice QR, IPTV legale, verifica account, IPTV UE, IPTV Regno Unito, IPTV USA',
     ],
     'terms-of-service' => [
@@ -88,28 +88,28 @@ return [
     ],
     'shop' => [
         'title'       => 'Shop | Dispositivi di streaming e accessori TV – Android TV Box, Fire TV, Roku',
-        'description' => 'Scopri una selezione di prodotti per lo streaming e la TV: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick e Ultra, oltre a supporti da parete e telecomandi sostitutivi per Samsung e VIZIO. Supporto 4K/6K, HDR10+/Dolby Vision, Dolby Atmos, Wi-Fi 6/6E e H.265. Acquisti sicuri tramite link Amazon.',
+        'description' => 'Scopri una selezione di prodotti per lo streaming e la TV: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick e Ultra, oltre a supporti da parete',
         'keywords'    => 'shop streaming, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, telecomando Samsung, VIZIO XRT136, staffa TV a parete, Mounting Dream MD2380, INSIGNIA F40, accessori TV, Amazon',
     ],
     'configure' => [
         'title'       => 'Configurazione IPTV | Scegli dispositivo, provider e piano – Ultimo passo prima del checkout',
-        'description' => 'Configura il tuo ordine IPTV in un unico passaggio: scegli il dispositivo, il provider IPTV, il numero di connessioni (1, 2 o 4 dispositivi) e il pacchetto di abbonamento (mensile o annuale). Pagamento sicuro con attivazione immediata e supporto 24/7.',
+        'description' => 'Configura il tuo ordine IPTV in un unico passaggio: scegli il dispositivo, il provider IPTV, il numero di connessioni (1, 2 o 4 dispositivi) e il',
         'keywords'    => 'configurazione IPTV, impostazione IPTV, pacchetti IPTV, rivenditore IPTV, piano di abbonamento, Android TV Box, Firestick, smart TV, 1 connessione, 2 connessioni, 4 connessioni, IPTV annuale, IPTV mensile, servizio di streaming',
     ],
     'checkout' => [
         'title'       => 'Checkout IPTV sicuro | Completa il tuo ordine con attivazione immediata',
-        'description' => 'Completa il tuo ordine IPTV tramite checkout sicuro: controlla il dispositivo scelto, il provider IPTV, il piano di connessione e il pacchetto di abbonamento, quindi paga con carta o criptovalute. Attivazione immediata e supporto 24/7.',
+        'description' => 'Completa il tuo ordine IPTV tramite checkout sicuro: controlla il dispositivo scelto, il provider IPTV, il piano di connessione e il pacchetto di',
         'keywords'    => 'checkout IPTV, pagamento sicuro IPTV, completare ordine, pagamento IPTV, abbonamento IPTV, pagamento con carta, pagamento in crypto, attivazione immediata, riepilogo ordine, servizio di streaming',
     ],
     'thankyou' => [
         'title'       => 'Grazie | Ordine confermato e prossimi passi per il tuo abbonamento IPTV',
-        'description' => 'Grazie per il tuo ordine. Il tuo abbonamento IPTV è stato ricevuto ed è in fase di elaborazione. Riceverai un’e-mail con i dettagli dell’ordine, le istruzioni di attivazione e, se necessario, le credenziali di accesso. Per qualsiasi domanda il nostro supporto è a tua disposizione.',
+        'description' => 'Grazie per il tuo ordine. Il tuo abbonamento IPTV è stato ricevuto ed è in fase di elaborazione.',
         'keywords'    => 'pagina di ringraziamento, ordine confermato, ordine IPTV, abbonamento IPTV, ordine riuscito, istruzioni di attivazione, dati account, assistenza clienti, servizio di streaming',
     ],
     'blogs' => [
         'index' => [
             'title' => 'Blog | Notizie e guide di Opplex IPTV',
-            'description' => 'Leggi consigli IPTV, guide di configurazione e gli ultimi aggiornamenti di Opplex IPTV. Scopri app, dispositivi, qualità dello streaming e l’uso legale dell’IPTV.',
+            'description' => 'Leggi consigli IPTV, guide di configurazione e gli ultimi aggiornamenti di Opplex IPTV.',
             'keywords' => 'blog IPTV, guide IPTV, consigli IPTV, notizie Opplex IPTV, aggiornamenti streaming, configurazione IPTV',
         ],
         'show' => [
