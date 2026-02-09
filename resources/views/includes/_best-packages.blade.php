@@ -6,10 +6,10 @@
                 <div class="separator"></div>
             @endunless
 
-            <h1 class="h2"><b>{{ __('messages.pricing_heading') }}</b></h1>
+            <h1 class="h2"><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h1>
 
             @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
-                <h2 class="h4">{{ __('messages.pricing_subheading') }}</h2>
+                <h2 class="h4">{{ $pricingSection['subheading'] ?? __('messages.pricing_subheading') }}</h2>
             @endunless
         </div>
 
@@ -174,7 +174,7 @@
                 <label class="form-switch m-0">
                     <input type="checkbox" id="resellerToggle">
                     <i></i>
-                    <span>{{ __('messages.show_reseller_packages') }}</span>
+                    <span>{{ $pricingSection['show_reseller_label'] ?? __('messages.show_reseller_packages') }}</span>
                 </label>
             </div>
 
@@ -192,12 +192,14 @@
 
         <div id="creditInfo" class="sec-title centered mb-4" style="display:none">
             <p><strong>
-                    <span style="color:red;">1 {{ __('messages.credit') }}</span> = {{ __('messages.1_month') }}
-                    &nbsp;<i class="fa fa-plus"></i>&nbsp;
-                    <span style="color:red;">5 {{ __('messages.credit') }}</span> = {{ __('messages.6_months') }}
-                    &nbsp;<i class="fa fa-plus"></i>&nbsp;
-                    <span style="color:red;">10 {{ __('messages.credit') }}</span> = {{ __('messages.12_months') }}
-                </strong></p>
+                {!! $pricingSection['credit_info'] ?? (
+                    '<span style="color:red;">1 '.__('messages.credit').'</span> = '.__('messages.1_month').
+                    ' &nbsp;<i class="fa fa-plus"></i>&nbsp; '.
+                    '<span style="color:red;">5 '.__('messages.credit').'</span> = '.__('messages.6_months').
+                    ' &nbsp;<i class="fa fa-plus"></i>&nbsp; '.
+                    '<span style="color:red;">10 '.__('messages.credit').'</span> = '.__('messages.12_months')
+                ) !!}
+            </strong></p>
         </div>
 
         <div class="scroll-wrapper normal-wrapper" id="normalPackages">

@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\HomeServiceController as AdminHomeServiceControll
 use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 use App\Http\Controllers\Admin\ChannelLogoController as AdminChannelLogoController;
 use App\Http\Controllers\Admin\MenuItemController as AdminMenuItemController;
+use App\Http\Controllers\Admin\PackageController as AdminPackageController;
+use App\Http\Controllers\Admin\PricingSectionController as AdminPricingSectionController;
 
 use App\Http\Controllers\{
     HomeController,
@@ -97,6 +99,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::resource('testimonials', AdminTestimonialController::class);
         Route::resource('channel-logos', AdminChannelLogoController::class);
         Route::resource('menu-items', AdminMenuItemController::class);
+        Route::resource('packages', AdminPackageController::class);
+        Route::get('pricing-section', [AdminPricingSectionController::class, 'edit'])->name('pricing-section.edit');
+        Route::put('pricing-section', [AdminPricingSectionController::class, 'update'])->name('pricing-section.update');
 
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');

@@ -43,6 +43,12 @@
         <a href="{{ route('admin.menu-items.index') }}" class="{{ request()->routeIs('admin.menu-items.*') ? 'active' : '' }}">
             <i class="bi bi-list"></i> <span>Menu Items</span>
         </a>
+        <a href="{{ route('admin.packages.index') }}" class="{{ request()->routeIs('admin.packages.*') ? 'active' : '' }}">
+            <i class="bi bi-tags"></i> <span>Packages</span>
+        </a>
+        <a href="{{ route('admin.pricing-section.edit') }}" class="{{ request()->routeIs('admin.pricing-section.*') ? 'active' : '' }}">
+            <i class="bi bi-ui-checks"></i> <span>Pricing Section</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">

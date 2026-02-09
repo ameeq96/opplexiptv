@@ -10,6 +10,7 @@ class Package extends Model
 {
     protected $fillable = [
         'type',
+        'vendor',
         'title',
         'display_price',
         'price_amount',

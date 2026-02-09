@@ -8,6 +8,7 @@ use App\Models\Package;
 use App\Models\HomeService;
 use App\Models\Testimonial;
 use App\Models\MenuItem;
+use App\Models\PricingSection;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang};
@@ -77,6 +78,7 @@ class UiData
         $features      = $this->features();
         $serviceCards  = $this->serviceCards();
         $menuItems     = $this->menuItems();
+        $pricingSection = $this->pricingSection();
         $packages      = $this->packages();
         $resellerPlans = $this->resellerPlans();
         $testimonials  = $this->testimonials();
@@ -96,6 +98,7 @@ class UiData
             'features'       => $features,
             'serviceCards'   => $serviceCards,
             'menuItems'      => $menuItems,
+            'pricingSection' => $pricingSection,
             'packages'       => $packages,
             'resellerPlans'  => $resellerPlans,
             'testimonials'   => $testimonials,
@@ -329,6 +332,15 @@ class UiData
         }
 
         return [];
+    }
+
+    private function pricingSection(): ?array
+    {
+        if (\Illuminate\Support\Facades\Schema::hasTable('pricing_sections')) {
+            return PricingSection::query()->latest()->first()?->toArray();
+        }
+
+        return null;
     }
 
     /** @return array<int,array<string,mixed>> */

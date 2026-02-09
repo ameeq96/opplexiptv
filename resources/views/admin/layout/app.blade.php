@@ -124,6 +124,8 @@
         <a href="{{ route('admin.testimonials.index') }}">ðŸ’¬ Testimonials</a>
         <a href="{{ route('admin.channel-logos.index') }}">ðŸ–¼ Channel Logos</a>
         <a href="{{ route('admin.menu-items.index') }}">ðŸ—‚ Menu Items</a>
+        <a href="{{ route('admin.packages.index') }}">ðŸ· Packages</a>
+        <a href="{{ route('admin.pricing-section.edit') }}">ðŸ§¾ Pricing Section</a>
 
 
         <form method="POST" action="{{ route('admin.logout') }}">
