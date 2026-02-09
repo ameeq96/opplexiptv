@@ -133,6 +133,6 @@
     </div>
 
     <div class="mt-3">
-        {{ $blogs->links() }}
+        {{ $blogs->appends(request()->query())->links('pagination::bootstrap-5') }}
     </div>
 @endsection
