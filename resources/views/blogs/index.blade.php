@@ -22,8 +22,8 @@
         <div class="auto-container">
 
             <div class="blog-hero">
-                <h1>{{ __('messages.blogs') }}</h1>
-                <p>{{ __('messages.latest_posts') }}</p>
+                {{-- <h1>{{ __('messages.blogs') }}</h1>
+                <p>{{ __('messages.latest_posts') }}</p> --}}
 
                 <div class="blog-filters" aria-label="Blog filters">
                     <a class="blog-filter-pill {{ $categorySlug === '' ? 'active' : '' }}"
