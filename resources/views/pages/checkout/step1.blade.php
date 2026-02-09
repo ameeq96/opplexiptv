@@ -97,6 +97,11 @@
         }
     </style>
 
+    <div class="container pt-3">
+        <h1 class="hero-title mb-2">{{ __('messages.checkout_complete_title_page', [], app()->getLocale()) ?? 'Complete Your Order' }}</h1>
+        <p class="hero-sub mb-4">{{ __('messages.checkout_complete_subtitle') ?? __('messages.checkout_step_subtitle') }}</p>
+    </div>
+
     @php
         // ------------------------------
         // Gather selections from request

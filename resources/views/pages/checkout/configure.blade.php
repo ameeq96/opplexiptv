@@ -55,12 +55,12 @@
   <div class="container">
 
     <div class="text-center mb-4">
-      <h2 class="fw-bold">
+      <h1 class="fw-bold change-font">
           {{ __('messages.checkout_step_title') }}
-      </h2>
-      <p class="text-muted mb-0">
+      </h1>
+      <h2 class="text-muted mb-0" style="font-size:1rem; font-weight:600;">
           {{ __('messages.checkout_step_subtitle') }}
-      </p>
+      </h2>
     </div>
 
     <form action="{{ route('checkout') }}" method="get" id="configForm">
