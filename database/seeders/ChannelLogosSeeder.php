@@ -10,13 +10,13 @@ class ChannelLogosSeeder extends Seeder
     public function run(): void
     {
         $logos = [
-            'images/resource/pogo.webp',
-            'images/resource/ptv-sports.webp',
-            'images/resource/ary-digital.webp',
-            'images/resource/cartoon-network.webp',
-            'images/resource/star-plus.webp',
-            'images/resource/sony.webp',
-            'images/resource/star-sports.webp',
+            'images/resource/8.webp',
+            'images/resource/2.webp',
+            'images/resource/3.webp',
+            'images/resource/4.webp',
+            'images/resource/5.webp',
+            'images/resource/6.webp',
+            'images/resource/7.webp',
         ];
 
         foreach ($logos as $i => $logo) {
