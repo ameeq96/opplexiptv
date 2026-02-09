@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             ShopProductsSeeder::class,
             HomeServicesSeeder::class,
             TestimonialsSeeder::class,
+            ChannelLogosSeeder::class,
         ]);
 
         Admin::create([

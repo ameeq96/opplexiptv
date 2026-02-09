@@ -35,7 +35,10 @@ class UiData
         $isRtl          = $this->locale->isRtl();
         $containerClass = $isMobile ? 'centered' : 'sec-title centered';
 
-        $logos = Cache::remember('ui:logos', now()->addDay(), fn() => $this->images->logos());
+        $logos = Cache::remember('ui:logos', now()->addDay(), function () {
+            $dbLogos = app(\App\Services\ProductCatalogService::class)->getLogos();
+            return !empty($dbLogos) ? $dbLogos : $this->images->logos();
+        });
 
         ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
         session(['captcha_sum' => $a + $b]);

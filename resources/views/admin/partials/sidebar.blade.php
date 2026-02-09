@@ -37,6 +37,9 @@
         <a href="{{ route('admin.testimonials.index') }}" class="{{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}">
             <i class="bi bi-chat-quote"></i> <span>Testimonials</span>
         </a>
+        <a href="{{ route('admin.channel-logos.index') }}" class="{{ request()->routeIs('admin.channel-logos.*') ? 'active' : '' }}">
+            <i class="bi bi-images"></i> <span>Channel Logos</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">
