@@ -31,6 +31,9 @@
         <a href="{{ route('admin.shop-products.index') }}" class="{{ request()->routeIs('admin.shop-products.*') ? 'active' : '' }}">
             <i class="bi bi-bag"></i> <span>Shop Products</span>
         </a>
+        <a href="{{ route('admin.home-services.index') }}" class="{{ request()->routeIs('admin.home-services.*') ? 'active' : '' }}">
+            <i class="bi bi-layout-text-window-reverse"></i> <span>Home Services</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">

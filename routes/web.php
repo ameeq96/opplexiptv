@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\ShopProductController as AdminShopProductController;
+use App\Http\Controllers\Admin\HomeServiceController as AdminHomeServiceController;
 
 use App\Http\Controllers\{
     HomeController,
@@ -89,6 +90,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('blogs/{blog}/duplicate', [AdminBlogController::class, 'duplicate'])->name('blogs.duplicate');
 
         Route::resource('shop-products', AdminShopProductController::class);
+        Route::resource('home-services', AdminHomeServiceController::class);
 
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');

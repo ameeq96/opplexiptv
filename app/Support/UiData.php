@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Support;
 
 use App\Models\Package;
+use App\Models\HomeService;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang};
@@ -69,6 +70,7 @@ class UiData
         );
 
         $features      = $this->features();
+        $serviceCards  = $this->serviceCards();
         $packages      = $this->packages();
         $resellerPlans = $this->resellerPlans();
         $testimonials  = $this->testimonials();
@@ -86,6 +88,7 @@ class UiData
             'logos'          => $logos,
 
             'features'       => $features,
+            'serviceCards'   => $serviceCards,
             'packages'       => $packages,
             'resellerPlans'  => $resellerPlans,
             'testimonials'   => $testimonials,
@@ -285,6 +288,21 @@ class UiData
                 'link'        => route('contact'),
             ],
         ];
+    }
+
+    /** @return array<int,array<string,string>> */
+    private function serviceCards(): array
+    {
+        if (\Illuminate\Support\Facades\Schema::hasTable('home_services')) {
+            return HomeService::query()
+                ->where('is_active', true)
+                ->orderBy('sort_order')
+                ->orderByDesc('id')
+                ->get(['title', 'description', 'link', 'icon'])
+                ->toArray();
+        }
+
+        return [];
     }
 
     /** @return array<int,array<string,mixed>> */

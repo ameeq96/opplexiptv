@@ -120,6 +120,7 @@
         <a href="{{ route('admin.trial_clicks.index') }}">ðŸ“± WhatsApp Trials</a>
         <a href="{{ route('admin.blogs.index') }}">ðŸ“ Blogs</a>
         <a href="{{ route('admin.shop-products.index') }}">ðŸ›’ Shop Products</a>
+        <a href="{{ route('admin.home-services.index') }}">ðŸ§© Home Services</a>
 
 
         <form method="POST" action="{{ route('admin.logout') }}">

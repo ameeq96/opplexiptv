@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             PackagesSeeder::class,
             BlogSeeder::class,
             ShopProductsSeeder::class,
+            HomeServicesSeeder::class,
         ]);
 
         Admin::create([
