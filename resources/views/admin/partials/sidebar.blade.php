@@ -40,6 +40,9 @@
         <a href="{{ route('admin.channel-logos.index') }}" class="{{ request()->routeIs('admin.channel-logos.*') ? 'active' : '' }}">
             <i class="bi bi-images"></i> <span>Channel Logos</span>
         </a>
+        <a href="{{ route('admin.menu-items.index') }}" class="{{ request()->routeIs('admin.menu-items.*') ? 'active' : '' }}">
+            <i class="bi bi-list"></i> <span>Menu Items</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">

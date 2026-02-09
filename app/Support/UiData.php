@@ -7,6 +7,7 @@ namespace App\Support;
 use App\Models\Package;
 use App\Models\HomeService;
 use App\Models\Testimonial;
+use App\Models\MenuItem;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang};
@@ -75,6 +76,7 @@ class UiData
 
         $features      = $this->features();
         $serviceCards  = $this->serviceCards();
+        $menuItems     = $this->menuItems();
         $packages      = $this->packages();
         $resellerPlans = $this->resellerPlans();
         $testimonials  = $this->testimonials();
@@ -93,6 +95,7 @@ class UiData
 
             'features'       => $features,
             'serviceCards'   => $serviceCards,
+            'menuItems'      => $menuItems,
             'packages'       => $packages,
             'resellerPlans'  => $resellerPlans,
             'testimonials'   => $testimonials,
@@ -303,6 +306,25 @@ class UiData
                 ->orderBy('sort_order')
                 ->orderByDesc('id')
                 ->get(['title', 'description', 'link', 'icon'])
+                ->toArray();
+        }
+
+        return [];
+    }
+
+    /** @return array<int,array<string,mixed>> */
+    private function menuItems(): array
+    {
+        if (\Illuminate\Support\Facades\Schema::hasTable('menu_items')) {
+            return MenuItem::query()
+                ->whereNull('parent_id')
+                ->where('is_active', true)
+                ->with(['children' => function ($q) {
+                    $q->where('is_active', true);
+                }])
+                ->orderBy('sort_order')
+                ->orderByDesc('id')
+                ->get()
                 ->toArray();
         }
 

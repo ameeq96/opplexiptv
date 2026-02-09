@@ -123,6 +123,7 @@
         <a href="{{ route('admin.home-services.index') }}">ðŸ§© Home Services</a>
         <a href="{{ route('admin.testimonials.index') }}">ðŸ’¬ Testimonials</a>
         <a href="{{ route('admin.channel-logos.index') }}">ðŸ–¼ Channel Logos</a>
+        <a href="{{ route('admin.menu-items.index') }}">ðŸ—‚ Menu Items</a>
 
 
         <form method="POST" action="{{ route('admin.logout') }}">

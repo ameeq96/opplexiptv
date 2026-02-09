@@ -83,49 +83,67 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown">
-                                    <a class="nav-link home-cls"
-                                        href="{{ route('home') }}">{{ __('messages.nav_home') }}</a>
-                                </li>
-
-                                <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                        href="{{ route('packages') }}">{{ __('messages.nav_packages') }}</a>
-                                </li>
-
-                                <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                        href="{{ route('iptv-applications') }}">{{ __('messages.nav_iptv_apps') }}</a>
-                                </li>
-
-                                <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                        href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
-
-                                <li class="dropdown"><a href="#">{{ __('more') }}</a>
-                                    <ul class="sub-menu">
-
-                                        <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                href="{{ route('about') }}">{{ __('messages.nav_about_us') }}</a></li>
-
-                                        <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                href="contact">{{ __('messages.nav_contact') }}</a></li>
-
-
-                                        <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
-
-                                        <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a>
+                                @if (!empty($menuItems))
+                                    @foreach ($menuItems as $item)
+                                        @php
+                                            $hasChildren = !empty($item['children']);
+                                            $target = !empty($item['open_new_tab']) ? '_blank' : null;
+                                            $rel = !empty($item['open_new_tab']) ? 'noopener' : null;
+                                        @endphp
+                                        <li class="{{ $hasChildren ? 'dropdown' : '' }}">
+                                            <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $item['url'] }}"
+                                               @if($target) target="{{ $target }}" rel="{{ $rel }}" @endif>
+                                                {{ $item['label'] }}
+                                            </a>
+                                            @if ($hasChildren)
+                                                <ul class="sub-menu">
+                                                    @foreach ($item['children'] as $child)
+                                                        <li>
+                                                            <a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                               href="{{ $child['url'] }}"
+                                                               @if(!empty($child['open_new_tab'])) target="_blank" rel="noopener" @endif>
+                                                                {{ $child['label'] }}
+                                                            </a>
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            @endif
                                         </li>
-
-
-                                        <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a>
-                                        </li>
-
-                                        <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                    @endforeach
+                                @else
+                                    {{-- Fallback hardcoded menu --}}
+                                    <li class="current dropdown">
+                                        <a class="nav-link home-cls"
+                                            href="{{ route('home') }}">{{ __('messages.nav_home') }}</a>
+                                    </li>
+                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            href="{{ route('packages') }}">{{ __('messages.nav_packages') }}</a>
+                                    </li>
+                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            href="{{ route('iptv-applications') }}">{{ __('messages.nav_iptv_apps') }}</a>
+                                    </li>
+                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
+                                    <li class="dropdown"><a href="#">{{ __('more') }}</a>
+                                        <ul class="sub-menu">
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('about') }}">{{ __('messages.nav_about_us') }}</a></li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="contact">{{ __('messages.nav_contact') }}</a></li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a>
+                                            </li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a>
+                                            </li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                @endif
                                 @if (!$agent->isMobile())
                                     <li
                                         class="dropdown language-switcher nav-item dropdown {{ $isRtl ? 'mr-4' : '' }}">
@@ -172,6 +190,31 @@
                 </a>
             </div>
             <div class="menu-outer">
+                <ul class="navigation clearfix">
+                    @if (!empty($menuItems))
+                        @foreach ($menuItems as $item)
+                            @php
+                                $hasChildren = !empty($item['children']);
+                            @endphp
+                            <li class="{{ $hasChildren ? 'dropdown' : '' }}">
+                                <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $item['url'] }}">
+                                    {{ $item['label'] }}
+                                </a>
+                                @if ($hasChildren)
+                                    <ul class="sub-menu">
+                                        @foreach ($item['children'] as $child)
+                                            <li>
+                                                <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $child['url'] }}">
+                                                    {{ $child['label'] }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </li>
+                        @endforeach
+                    @endif
+                </ul>
                 <div class="d-flex justify-content-center mt-4">
                     <div class="d-flex align-items-center px-3 py-2 rounded border"
                         style="background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">

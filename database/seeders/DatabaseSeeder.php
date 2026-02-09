@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             HomeServicesSeeder::class,
             TestimonialsSeeder::class,
             ChannelLogosSeeder::class,
+            MenuItemsSeeder::class,
         ]);
 
         Admin::create([
