@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     <link href="{{ v('css/admin-2026.css') }}" rel="stylesheet">
     @stack('styles')
 </head>
@@ -24,6 +25,8 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     function toggleAdminSidebar() {
@@ -74,6 +77,28 @@
             this.dataset.touched = '1';
         });
     });
+
+    function initAdminSelect2() {
+        if (!window.jQuery || !jQuery.fn || !jQuery.fn.select2) return;
+        jQuery('select.form-select').not('.no-select2').each(function () {
+            const $el = jQuery(this);
+            if ($el.data('select2')) return;
+            const placeholder = $el.data('placeholder') || $el.find('option:first').text() || 'Select';
+            const hasEmpty = $el.find('option[value=""]').length > 0;
+            $el.select2({
+                width: '100%',
+                placeholder,
+                allowClear: hasEmpty,
+                dropdownParent: jQuery('body')
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initAdminSelect2, { once: true });
+    } else {
+        initAdminSelect2();
+    }
 </script>
 @stack('scripts')
 </body>
