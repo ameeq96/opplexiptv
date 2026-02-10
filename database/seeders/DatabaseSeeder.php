@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             ChannelLogosSeeder::class,
             MenuItemsSeeder::class,
             PricingSectionSeeder::class,
+            FooterSeeder::class,
         ]);
 
         Admin::create([

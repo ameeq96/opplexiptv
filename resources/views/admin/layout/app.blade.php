@@ -126,6 +126,9 @@
         <a href="{{ route('admin.menu-items.index') }}">ðŸ—‚ Menu Items</a>
         <a href="{{ route('admin.packages.index') }}">ðŸ· Packages</a>
         <a href="{{ route('admin.pricing-section.edit') }}">ðŸ§¾ Pricing Section</a>
+        <a href="{{ route('admin.footer-settings.edit') }}">ðŸ§© Footer Settings</a>
+        <a href="{{ route('admin.footer-links.index') }}">ðŸ”— Footer Links</a>
+        <a href="{{ route('admin.social-links.index') }}">ðŸ—£ Social Links</a>
 
 
         <form method="POST" action="{{ route('admin.logout') }}">
@@ -244,9 +247,16 @@
         }
 
         $(document).ready(function() {
-            $('.select2').select2({
-                placeholder: "Select a client",
-                allowClear: true
+            // Apply Select2 to all dropdowns (unless explicitly opted out)
+            $('select.form-select').not('.no-select2').each(function () {
+                const $el = $(this);
+                const placeholder = $el.data('placeholder') || $el.find('option:first').text() || 'Select';
+                const hasEmpty = $el.find('option[value=\"\"]').length > 0;
+                $el.select2({
+                    width: '100%',
+                    placeholder,
+                    allowClear: hasEmpty
+                });
             });
         });
 

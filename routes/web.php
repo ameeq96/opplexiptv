@@ -13,6 +13,9 @@ use App\Http\Controllers\Admin\ChannelLogoController as AdminChannelLogoControll
 use App\Http\Controllers\Admin\MenuItemController as AdminMenuItemController;
 use App\Http\Controllers\Admin\PackageController as AdminPackageController;
 use App\Http\Controllers\Admin\PricingSectionController as AdminPricingSectionController;
+use App\Http\Controllers\Admin\FooterSettingController as AdminFooterSettingController;
+use App\Http\Controllers\Admin\FooterLinkController as AdminFooterLinkController;
+use App\Http\Controllers\Admin\SocialLinkController as AdminSocialLinkController;
 
 use App\Http\Controllers\{
     HomeController,
@@ -102,6 +105,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::resource('packages', AdminPackageController::class);
         Route::get('pricing-section', [AdminPricingSectionController::class, 'edit'])->name('pricing-section.edit');
         Route::put('pricing-section', [AdminPricingSectionController::class, 'update'])->name('pricing-section.update');
+        Route::get('footer-settings', [AdminFooterSettingController::class, 'edit'])->name('footer-settings.edit');
+        Route::put('footer-settings', [AdminFooterSettingController::class, 'update'])->name('footer-settings.update');
+        Route::resource('footer-links', AdminFooterLinkController::class);
+        Route::resource('social-links', AdminSocialLinkController::class);
 
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');

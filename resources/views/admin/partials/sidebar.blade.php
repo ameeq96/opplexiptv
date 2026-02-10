@@ -49,6 +49,15 @@
         <a href="{{ route('admin.pricing-section.edit') }}" class="{{ request()->routeIs('admin.pricing-section.*') ? 'active' : '' }}">
             <i class="bi bi-ui-checks"></i> <span>Pricing Section</span>
         </a>
+        <a href="{{ route('admin.footer-settings.edit') }}" class="{{ request()->routeIs('admin.footer-settings.*') ? 'active' : '' }}">
+            <i class="bi bi-layout-text-sidebar-reverse"></i> <span>Footer Settings</span>
+        </a>
+        <a href="{{ route('admin.footer-links.index') }}" class="{{ request()->routeIs('admin.footer-links.*') ? 'active' : '' }}">
+            <i class="bi bi-link-45deg"></i> <span>Footer Links</span>
+        </a>
+        <a href="{{ route('admin.social-links.index') }}" class="{{ request()->routeIs('admin.social-links.*') ? 'active' : '' }}">
+            <i class="bi bi-share"></i> <span>Social Links</span>
+        </a>
 
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">

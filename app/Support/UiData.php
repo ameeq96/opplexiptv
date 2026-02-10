@@ -9,6 +9,9 @@ use App\Models\HomeService;
 use App\Models\Testimonial;
 use App\Models\MenuItem;
 use App\Models\PricingSection;
+use App\Models\FooterSetting;
+use App\Models\FooterLink;
+use App\Models\SocialLink;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang};
@@ -79,6 +82,7 @@ class UiData
         $serviceCards  = $this->serviceCards();
         $menuItems     = $this->menuItems();
         $pricingSection = $this->pricingSection();
+        $footer = $this->footerData();
         $packages      = $this->packages();
         $resellerPlans = $this->resellerPlans();
         $testimonials  = $this->testimonials();
@@ -99,6 +103,7 @@ class UiData
             'serviceCards'   => $serviceCards,
             'menuItems'      => $menuItems,
             'pricingSection' => $pricingSection,
+            'footer'         => $footer,
             'packages'       => $packages,
             'resellerPlans'  => $resellerPlans,
             'testimonials'   => $testimonials,
@@ -341,6 +346,34 @@ class UiData
         }
 
         return null;
+    }
+
+    private function footerData(): array
+    {
+        if (!\Illuminate\Support\Facades\Schema::hasTable('footer_settings')) {
+            return [];
+        }
+
+        $settings = FooterSetting::query()->latest()->first();
+        $links = FooterLink::query()
+            ->where('is_active', true)
+            ->orderBy('group')
+            ->orderBy('sort_order')
+            ->get()
+            ->groupBy('group')
+            ->toArray();
+
+        $socials = SocialLink::query()
+            ->where('is_active', true)
+            ->orderBy('sort_order')
+            ->get()
+            ->toArray();
+
+        return [
+            'settings' => $settings?->toArray(),
+            'links' => $links,
+            'socials' => $socials,
+        ];
     }
 
     /** @return array<int,array<string,mixed>> */
