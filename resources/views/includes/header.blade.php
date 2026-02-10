@@ -190,31 +190,7 @@
                 </a>
             </div>
             <div class="menu-outer">
-                <ul class="navigation clearfix">
-                    @if (!empty($menuItems))
-                        @foreach ($menuItems as $item)
-                            @php
-                                $hasChildren = !empty($item['children']);
-                            @endphp
-                            <li class="{{ $hasChildren ? 'dropdown' : '' }}">
-                                <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $item['url'] }}">
-                                    {{ $item['label'] }}
-                                </a>
-                                @if ($hasChildren)
-                                    <ul class="sub-menu">
-                                        @foreach ($item['children'] as $child)
-                                            <li>
-                                                <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $child['url'] }}">
-                                                    {{ $child['label'] }}
-                                                </a>
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                @endif
-                            </li>
-                        @endforeach
-                    @endif
-                </ul>
+                {{-- Mobile menu is populated by JS cloning main menu --}}
                 <div class="d-flex justify-content-center mt-4">
                     <div class="d-flex align-items-center px-3 py-2 rounded border"
                         style="background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
