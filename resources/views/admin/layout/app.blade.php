@@ -246,19 +246,28 @@
             });
         }
 
-        $(document).ready(function() {
+        function initSelect2() {
+            if (!window.jQuery || !jQuery.fn || !jQuery.fn.select2) return;
             // Apply Select2 to all dropdowns (unless explicitly opted out)
-            $('select.form-select').not('.no-select2').each(function () {
-                const $el = $(this);
+            jQuery('select.form-select').not('.no-select2').each(function () {
+                const $el = jQuery(this);
+                if ($el.data('select2')) return; // avoid double init
                 const placeholder = $el.data('placeholder') || $el.find('option:first').text() || 'Select';
                 const hasEmpty = $el.find('option[value=\"\"]').length > 0;
                 $el.select2({
                     width: '100%',
                     placeholder,
-                    allowClear: hasEmpty
+                    allowClear: hasEmpty,
+                    dropdownParent: jQuery('body')
                 });
             });
-        });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSelect2, { once: true });
+        } else {
+            initSelect2();
+        }
 
         document.addEventListener('DOMContentLoaded', function() {
             let exclude = document.getElementById('excludeIPTV');
