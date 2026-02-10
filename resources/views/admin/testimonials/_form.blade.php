@@ -31,6 +31,38 @@
     </div>
 </div>
 
+@if (!empty($locales))
+    <div class="mt-4">
+        <h5 class="mb-3">Translations</h5>
+        <ul class="nav nav-tabs" role="tablist">
+            @foreach ($locales as $locale)
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link @if ($loop->first) active @endif" data-bs-toggle="tab"
+                        data-bs-target="#ts-{{ $locale }}" type="button" role="tab">
+                        {{ strtoupper($locale) }}
+                    </button>
+                </li>
+            @endforeach
+        </ul>
+        <div class="tab-content border border-top-0 p-3">
+            @foreach ($locales as $locale)
+                @php $t = $testimonial->translation($locale); @endphp
+                <div class="tab-pane fade @if ($loop->first) show active @endif" id="ts-{{ $locale }}" role="tabpanel">
+                    <div class="mb-3">
+                        <label class="form-label">Author Name ({{ strtoupper($locale) }})</label>
+                        <input type="text" name="translations[{{ $locale }}][author_name]" class="form-control"
+                            value="{{ old("translations.$locale.author_name", $t?->author_name) }}">
+                    </div>
+                    <div>
+                        <label class="form-label">Review Text ({{ strtoupper($locale) }})</label>
+                        <textarea name="translations[{{ $locale }}][text]" class="form-control" rows="3">{{ old("translations.$locale.text", $t?->text) }}</textarea>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+@endif
+
 <div class="mt-4 d-flex gap-2">
     <button type="submit" class="btn btn-primary">{{ $submitLabel ?? 'Save' }}</button>
     <a href="{{ route('admin.testimonials.index') }}" class="btn btn-outline-secondary">Cancel</a>

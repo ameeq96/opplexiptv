@@ -36,6 +36,32 @@
     </div>
 </div>
 
+@if (!empty($locales))
+    <div class="mt-4">
+        <h5 class="mb-3">Translations</h5>
+        <ul class="nav nav-tabs" role="tablist">
+            @foreach ($locales as $locale)
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link @if ($loop->first) active @endif" data-bs-toggle="tab"
+                        data-bs-target="#sp-{{ $locale }}" type="button" role="tab">
+                        {{ strtoupper($locale) }}
+                    </button>
+                </li>
+            @endforeach
+        </ul>
+        <div class="tab-content border border-top-0 p-3">
+            @foreach ($locales as $locale)
+                @php $t = $product->translation($locale); @endphp
+                <div class="tab-pane fade @if ($loop->first) show active @endif" id="sp-{{ $locale }}" role="tabpanel">
+                    <label class="form-label">Product Name ({{ strtoupper($locale) }})</label>
+                    <input type="text" name="translations[{{ $locale }}][name]" class="form-control"
+                        value="{{ old("translations.$locale.name", $t?->name) }}">
+                </div>
+            @endforeach
+        </div>
+    </div>
+@endif
+
 <div class="mt-4 d-flex gap-2">
     <button type="submit" class="btn btn-primary">{{ $submitLabel ?? 'Save' }}</button>
     <a href="{{ route('admin.shop-products.index') }}" class="btn btn-outline-secondary">Cancel</a>

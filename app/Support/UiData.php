@@ -309,11 +309,26 @@ class UiData
     private function serviceCards(): array
     {
         if (\Illuminate\Support\Facades\Schema::hasTable('home_services')) {
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
+
             return HomeService::query()
                 ->where('is_active', true)
                 ->orderBy('sort_order')
                 ->orderByDesc('id')
-                ->get(['title', 'description', 'link', 'icon'])
+                ->with(['translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }])
+                ->get(['id', 'title', 'description', 'link', 'icon'])
+                ->map(function (HomeService $s) {
+                    $t = $s->translation();
+                    return [
+                        'title' => $t?->title ?: $s->title,
+                        'description' => $t?->description ?: $s->description,
+                        'link' => $s->link,
+                        'icon' => $s->icon,
+                    ];
+                })
                 ->toArray();
         }
 
@@ -324,15 +339,40 @@ class UiData
     private function menuItems(): array
     {
         if (\Illuminate\Support\Facades\Schema::hasTable('menu_items')) {
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
+
             return MenuItem::query()
                 ->whereNull('parent_id')
                 ->where('is_active', true)
                 ->with(['children' => function ($q) {
                     $q->where('is_active', true);
+                }, 'translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }, 'children.translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
                 }])
                 ->orderBy('sort_order')
                 ->orderByDesc('id')
                 ->get()
+                ->map(function (MenuItem $item) {
+                    $t = $item->translation();
+                    return [
+                        'id' => $item->id,
+                        'label' => $t?->label ?: $item->label,
+                        'url' => $item->url,
+                        'open_new_tab' => $item->open_new_tab,
+                        'children' => $item->children->map(function (MenuItem $child) {
+                            $tc = $child->translation();
+                            return [
+                                'id' => $child->id,
+                                'label' => $tc?->label ?: $child->label,
+                                'url' => $child->url,
+                                'open_new_tab' => $child->open_new_tab,
+                            ];
+                        })->toArray(),
+                    ];
+                })
                 ->toArray();
         }
 
@@ -342,7 +382,26 @@ class UiData
     private function pricingSection(): ?array
     {
         if (\Illuminate\Support\Facades\Schema::hasTable('pricing_sections')) {
-            return PricingSection::query()->latest()->first()?->toArray();
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
+            $section = PricingSection::query()
+                ->with(['translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }])
+                ->latest()
+                ->first();
+
+            if (!$section) {
+                return null;
+            }
+
+            $t = $section->translation();
+            return [
+                'heading' => $t?->heading ?: $section->heading,
+                'subheading' => $t?->subheading ?: $section->subheading,
+                'show_reseller_label' => $t?->show_reseller_label ?: $section->show_reseller_label,
+                'credit_info' => $t?->credit_info ?: $section->credit_info,
+            ];
         }
 
         return null;
@@ -354,23 +413,68 @@ class UiData
             return [];
         }
 
-        $settings = FooterSetting::query()->latest()->first();
+        $locale = app()->getLocale();
+        $fallback = config('app.fallback_locale');
+
+        $settings = FooterSetting::query()
+            ->with(['translations' => function ($q) use ($locale, $fallback) {
+                $q->whereIn('locale', array_unique([$locale, $fallback]));
+            }])
+            ->latest()
+            ->first();
+
+        $settingsArr = null;
+        if ($settings) {
+            $t = $settings->translation();
+            $settingsArr = [
+                'brand_text' => $t?->brand_text ?: $settings->brand_text,
+                'crypto_note' => $t?->crypto_note ?: $settings->crypto_note,
+                'phone' => $settings->phone,
+                'email' => $settings->email,
+                'address' => $t?->address ?: $settings->address,
+                'rights_text' => $t?->rights_text ?: $settings->rights_text,
+                'legal_note' => $t?->legal_note ?: $settings->legal_note,
+            ];
+        }
+
         $links = FooterLink::query()
             ->where('is_active', true)
             ->orderBy('group')
             ->orderBy('sort_order')
+            ->with(['translations' => function ($q) use ($locale, $fallback) {
+                $q->whereIn('locale', array_unique([$locale, $fallback]));
+            }])
             ->get()
+            ->map(function (FooterLink $link) {
+                $t = $link->translation();
+                return [
+                    'group' => $link->group,
+                    'label' => $t?->label ?: $link->label,
+                    'url' => $link->url,
+                ];
+            })
             ->groupBy('group')
             ->toArray();
 
         $socials = SocialLink::query()
             ->where('is_active', true)
             ->orderBy('sort_order')
+            ->with(['translations' => function ($q) use ($locale, $fallback) {
+                $q->whereIn('locale', array_unique([$locale, $fallback]));
+            }])
             ->get()
+            ->map(function (SocialLink $link) {
+                $t = $link->translation();
+                return [
+                    'platform' => $t?->platform ?: $link->platform,
+                    'url' => $link->url,
+                    'icon_class' => $link->icon_class,
+                ];
+            })
             ->toArray();
 
         return [
-            'settings' => $settings?->toArray(),
+            'settings' => $settingsArr,
             'links' => $links,
             'socials' => $socials,
         ];
@@ -385,6 +489,7 @@ class UiData
             ->where('type', 'iptv')
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, duration_months, id)")
+            ->with('translations')
             ->get()
             ->map(fn($p) => $p->toIptvArray())
             ->values()
@@ -400,6 +505,7 @@ class UiData
             ->where('type', 'reseller')
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
+            ->with('translations')
             ->get()
             ->map(fn($p) => $p->toResellerArray())
             ->values()
@@ -410,11 +516,25 @@ class UiData
     private function testimonials(): array
     {
         if (\Illuminate\Support\Facades\Schema::hasTable('testimonials')) {
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
+
             return Testimonial::query()
                 ->where('is_active', true)
                 ->orderBy('sort_order')
                 ->orderByDesc('id')
-                ->get(['text', 'author_name', 'image'])
+                ->with(['translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }])
+                ->get(['id', 'text', 'author_name', 'image'])
+                ->map(function (Testimonial $t) {
+                    $tr = $t->translation();
+                    return [
+                        'text' => $tr?->text ?: $t->text,
+                        'author_name' => $tr?->author_name ?: $t->author_name,
+                        'image' => $t->image,
+                    ];
+                })
                 ->toArray();
         }
 

@@ -5,6 +5,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Package extends Model
 {
@@ -36,6 +37,24 @@ class Package extends Model
         'sort_order'      => 'integer',
         'active'          => 'boolean',
     ];
+
+    public function translations(): HasMany
+    {
+        return $this->hasMany(PackageTranslation::class);
+    }
+
+    public function translation(?string $locale = null): ?PackageTranslation
+    {
+        $locale = $locale ?: app()->getLocale();
+        $fallback = config('app.fallback_locale');
+        $translations = $this->relationLoaded('translations')
+            ? $this->translations
+            : $this->translations()->get();
+
+        return $translations->firstWhere('locale', $locale)
+            ?: $translations->firstWhere('locale', $fallback)
+            ?: $translations->first();
+    }
 
     /* ───────────────────────────── Scopes ───────────────────────────── */
 
@@ -202,13 +221,17 @@ class Package extends Model
             $priceStr = self::formatMoney($this->price_amount) . ' / ' . $unit;
         }
 
+        $translation = $this->translation();
+        $title = $translation?->title ?: $this->title;
+        $features = $translation?->features ?: $this->features;
+
         return [
             'id'       => $this->id,
             'type'     => $this->type,
             'vendor'   => $vendor,
-            'title'    => $this->title,
+            'title'    => $title,
             'price'    => $priceStr,
-            'features' => $this->features ?: self::defaultIptvFeatures(),
+            'features' => $features ?: self::defaultIptvFeatures(),
             'icon'     => $this->icon ?? 'images/icons/service-1.svg',
         ];
     }
@@ -236,14 +259,18 @@ class Package extends Model
             $icons = $this->icon ? [$this->icon] : ['images/icons/service-1.svg'];
         }
 
+        $translation = $this->translation();
+        $title = $translation?->title ?: $this->title;
+        $features = $translation?->features ?: $this->features;
+
         return [
             'id'          => $this->id,
             'type'        => $this->type,                     // e.g. reseller_opplex | reseller_starshare
             'vendor'      => $vendor,                         // opplex | starshare (normalized)
-            'title'       => $this->title,
+            'title'       => $title,
             'price'       => $priceStr,
             'icons'       => $icons,
-            'features'    => $this->features ?: self::defaultResellerFeatures(),
+            'features'    => $features ?: self::defaultResellerFeatures(),
             'button_link' => $this->button_link,
             'delay'       => $this->delay,
         ];

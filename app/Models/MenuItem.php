@@ -32,4 +32,22 @@ class MenuItem extends Model
     {
         return $this->belongsTo(self::class, 'parent_id');
     }
+
+    public function translations(): HasMany
+    {
+        return $this->hasMany(MenuItemTranslation::class);
+    }
+
+    public function translation(?string $locale = null): ?MenuItemTranslation
+    {
+        $locale = $locale ?: app()->getLocale();
+        $fallback = config('app.fallback_locale');
+        $translations = $this->relationLoaded('translations')
+            ? $this->translations
+            : $this->translations()->get();
+
+        return $translations->firstWhere('locale', $locale)
+            ?: $translations->firstWhere('locale', $fallback)
+            ?: $translations->first();
+    }
 }

@@ -21,13 +21,15 @@ class SocialLinkController extends Controller
     {
         return view('admin.social-links.create', [
             'link' => new SocialLink(),
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
     public function store(Request $request)
     {
         $data = $this->validateData($request);
-        SocialLink::create($data);
+        $link = SocialLink::create($data);
+        $this->syncTranslations($link, $request);
 
         return redirect()->route('admin.social-links.index')->with('success', 'Social link added.');
     }
@@ -36,6 +38,7 @@ class SocialLinkController extends Controller
     {
         return view('admin.social-links.edit', [
             'link' => $social_link,
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -43,6 +46,7 @@ class SocialLinkController extends Controller
     {
         $data = $this->validateData($request);
         $social_link->update($data);
+        $this->syncTranslations($social_link, $request);
 
         return redirect()->route('admin.social-links.index')->with('success', 'Social link updated.');
     }
@@ -56,17 +60,42 @@ class SocialLinkController extends Controller
 
     private function validateData(Request $request): array
     {
-        $data = $request->validate([
+        $rules = [
             'platform' => ['required', 'string', 'max:100'],
             'url' => ['required', 'string', 'max:500'],
             'icon_class' => ['nullable', 'string', 'max:255'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],
-        ]);
+        ];
+
+        foreach (config('app.locales', [app()->getLocale()]) as $locale) {
+            $rules["translations.$locale.platform"] = ['nullable', 'string', 'max:100'];
+        }
+
+        $data = $request->validate($rules);
 
         $data['is_active'] = (bool) ($data['is_active'] ?? false);
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
 
         return $data;
+    }
+
+    private function syncTranslations(SocialLink $link, Request $request): void
+    {
+        $locales = config('app.locales', [app()->getLocale()]);
+        foreach ($locales as $locale) {
+            $payload = $request->input("translations.$locale", []);
+            $platform = trim((string) ($payload['platform'] ?? ''));
+
+            if ($platform === '') {
+                $link->translations()->where('locale', $locale)->delete();
+                continue;
+            }
+
+            $link->translations()->updateOrCreate(
+                ['locale' => $locale],
+                ['platform' => $platform]
+            );
+        }
     }
 }

@@ -16,7 +16,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('pricing_sections', function (Blueprint $table) {
-            $table->string('credit_info')->nullable()->change();
+            $table->text('credit_info')->nullable()->change();
         });
     }
 };

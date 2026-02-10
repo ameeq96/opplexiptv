@@ -30,6 +30,7 @@ class ChannelLogoController extends Controller
     {
         return view('admin.channel-logos.create', [
             'logo' => new ChannelLogo(),
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -38,7 +39,8 @@ class ChannelLogoController extends Controller
         $data = $this->validateData($request, true);
         $data['image'] = $this->storeImage($request);
 
-        ChannelLogo::create($data);
+        $logo = ChannelLogo::create($data);
+        $this->syncTranslations($logo, $request);
 
         return redirect()->route('admin.channel-logos.index')->with('success', 'Logo added.');
     }
@@ -47,6 +49,7 @@ class ChannelLogoController extends Controller
     {
         return view('admin.channel-logos.edit', [
             'logo' => $channel_logo,
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -60,6 +63,7 @@ class ChannelLogoController extends Controller
         }
 
         $channel_logo->update($data);
+        $this->syncTranslations($channel_logo, $request);
 
         return redirect()->route('admin.channel-logos.index')->with('success', 'Logo updated.');
     }
@@ -79,6 +83,10 @@ class ChannelLogoController extends Controller
             'is_active' => ['nullable', 'boolean'],
         ];
 
+        foreach (config('app.locales', [app()->getLocale()]) as $locale) {
+            $rules["translations.$locale.alt_text"] = ['nullable', 'string', 'max:255'];
+        }
+
         $rules['image'] = $isCreate
             ? ['required', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048']
             : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048'];
@@ -88,6 +96,25 @@ class ChannelLogoController extends Controller
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
 
         return $data;
+    }
+
+    private function syncTranslations(ChannelLogo $logo, Request $request): void
+    {
+        $locales = config('app.locales', [app()->getLocale()]);
+        foreach ($locales as $locale) {
+            $payload = $request->input("translations.$locale", []);
+            $alt = trim((string) ($payload['alt_text'] ?? ''));
+
+            if ($alt === '') {
+                $logo->translations()->where('locale', $locale)->delete();
+                continue;
+            }
+
+            $logo->translations()->updateOrCreate(
+                ['locale' => $locale],
+                ['alt_text' => $alt]
+            );
+        }
     }
 
     private function storeImage(Request $request): string

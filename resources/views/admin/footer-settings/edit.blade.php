@@ -44,6 +44,53 @@
                 </div>
             </div>
 
+            @if (!empty($locales))
+                <div class="mt-4">
+                    <h5 class="mb-3">Translations</h5>
+                    <ul class="nav nav-tabs" role="tablist">
+                        @foreach ($locales as $locale)
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link @if ($loop->first) active @endif" data-bs-toggle="tab"
+                                    data-bs-target="#fs-{{ $locale }}" type="button" role="tab">
+                                    {{ strtoupper($locale) }}
+                                </button>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <div class="tab-content border border-top-0 p-3">
+                        @foreach ($locales as $locale)
+                            @php $t = $setting->translation($locale); @endphp
+                            <div class="tab-pane fade @if ($loop->first) show active @endif" id="fs-{{ $locale }}" role="tabpanel">
+                                <div class="mb-3">
+                                    <label class="form-label">Brand Text ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][brand_text]" class="form-control"
+                                        value="{{ old("translations.$locale.brand_text", $t?->brand_text) }}">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Crypto Note ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][crypto_note]" class="form-control"
+                                        value="{{ old("translations.$locale.crypto_note", $t?->crypto_note) }}">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Address ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][address]" class="form-control"
+                                        value="{{ old("translations.$locale.address", $t?->address) }}">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Rights Text ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][rights_text]" class="form-control"
+                                        value="{{ old("translations.$locale.rights_text", $t?->rights_text) }}">
+                                </div>
+                                <div>
+                                    <label class="form-label">Legal Note ({{ strtoupper($locale) }})</label>
+                                    <textarea name="translations[{{ $locale }}][legal_note]" class="form-control" rows="3">{{ old("translations.$locale.legal_note", $t?->legal_note) }}</textarea>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
+
             <div class="mt-4">
                 <button type="submit" class="btn btn-primary">Save</button>
             </div>

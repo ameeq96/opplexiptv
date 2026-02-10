@@ -37,6 +37,7 @@ class HomeServiceController extends Controller
     {
         return view('admin.home-services.create', [
             'service' => new HomeService(),
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -45,7 +46,8 @@ class HomeServiceController extends Controller
         $data = $this->validateData($request, true);
         $data['icon'] = $this->storeIcon($request);
 
-        HomeService::create($data);
+        $service = HomeService::create($data);
+        $this->syncTranslations($service, $request);
 
         return redirect()->route('admin.home-services.index')->with('success', 'Service added.');
     }
@@ -54,6 +56,7 @@ class HomeServiceController extends Controller
     {
         return view('admin.home-services.edit', [
             'service' => $home_service,
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -67,6 +70,7 @@ class HomeServiceController extends Controller
         }
 
         $home_service->update($data);
+        $this->syncTranslations($home_service, $request);
 
         return redirect()->route('admin.home-services.index')->with('success', 'Service updated.');
     }
@@ -89,6 +93,11 @@ class HomeServiceController extends Controller
             'is_active' => ['nullable', 'boolean'],
         ];
 
+        foreach (config('app.locales', [app()->getLocale()]) as $locale) {
+            $rules["translations.$locale.title"] = ['nullable', 'string', 'max:255'];
+            $rules["translations.$locale.description"] = ['nullable', 'string', 'max:1000'];
+        }
+
         $rules['icon'] = $isCreate
             ? ['required', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048']
             : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048'];
@@ -98,6 +107,29 @@ class HomeServiceController extends Controller
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
 
         return $data;
+    }
+
+    private function syncTranslations(HomeService $service, Request $request): void
+    {
+        $locales = config('app.locales', [app()->getLocale()]);
+        foreach ($locales as $locale) {
+            $payload = $request->input("translations.$locale", []);
+            $title = trim((string) ($payload['title'] ?? ''));
+            $description = trim((string) ($payload['description'] ?? ''));
+
+            if ($title === '' && $description === '') {
+                $service->translations()->where('locale', $locale)->delete();
+                continue;
+            }
+
+            $service->translations()->updateOrCreate(
+                ['locale' => $locale],
+                [
+                    'title' => $title ?: null,
+                    'description' => $description ?: null,
+                ]
+            );
+        }
     }
 
     private function storeIcon(Request $request): string

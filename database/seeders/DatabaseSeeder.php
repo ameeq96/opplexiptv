@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
             MenuItemsSeeder::class,
             PricingSectionSeeder::class,
             FooterSeeder::class,
+            AdminTranslationsSeeder::class,
         ]);
 
         Admin::create([

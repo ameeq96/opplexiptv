@@ -38,6 +38,7 @@ class TestimonialController extends Controller
     {
         return view('admin.testimonials.create', [
             'testimonial' => new Testimonial(),
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -46,7 +47,8 @@ class TestimonialController extends Controller
         $data = $this->validateData($request, true);
         $data['image'] = $this->storeImage($request);
 
-        Testimonial::create($data);
+        $testimonial = Testimonial::create($data);
+        $this->syncTranslations($testimonial, $request);
 
         return redirect()->route('admin.testimonials.index')->with('success', 'Testimonial added.');
     }
@@ -55,6 +57,7 @@ class TestimonialController extends Controller
     {
         return view('admin.testimonials.edit', [
             'testimonial' => $testimonial,
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -68,6 +71,7 @@ class TestimonialController extends Controller
         }
 
         $testimonial->update($data);
+        $this->syncTranslations($testimonial, $request);
 
         return redirect()->route('admin.testimonials.index')->with('success', 'Testimonial updated.');
     }
@@ -89,6 +93,11 @@ class TestimonialController extends Controller
             'is_active' => ['nullable', 'boolean'],
         ];
 
+        foreach (config('app.locales', [app()->getLocale()]) as $locale) {
+            $rules["translations.$locale.author_name"] = ['nullable', 'string', 'max:120'];
+            $rules["translations.$locale.text"] = ['nullable', 'string', 'max:1000'];
+        }
+
         $rules['image'] = $isCreate
             ? ['required', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048']
             : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048'];
@@ -98,6 +107,29 @@ class TestimonialController extends Controller
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
 
         return $data;
+    }
+
+    private function syncTranslations(Testimonial $testimonial, Request $request): void
+    {
+        $locales = config('app.locales', [app()->getLocale()]);
+        foreach ($locales as $locale) {
+            $payload = $request->input("translations.$locale", []);
+            $author = trim((string) ($payload['author_name'] ?? ''));
+            $text = trim((string) ($payload['text'] ?? ''));
+
+            if ($author === '' && $text === '') {
+                $testimonial->translations()->where('locale', $locale)->delete();
+                continue;
+            }
+
+            $testimonial->translations()->updateOrCreate(
+                ['locale' => $locale],
+                [
+                    'author_name' => $author ?: null,
+                    'text' => $text ?: null,
+                ]
+            );
+        }
     }
 
     private function storeImage(Request $request): string

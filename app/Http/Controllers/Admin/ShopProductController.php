@@ -42,6 +42,7 @@ class ShopProductController extends Controller
     {
         return view('admin.shop-products.create', [
             'product' => new ShopProduct(),
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -52,7 +53,8 @@ class ShopProductController extends Controller
         $imageName = $this->storeImage($request, $data['asin'] ?? null);
         $data['image'] = $imageName;
 
-        ShopProduct::create($data);
+        $product = ShopProduct::create($data);
+        $this->syncTranslations($product, $request);
 
         return redirect()->route('admin.shop-products.index')->with('success', 'Product added.');
     }
@@ -61,6 +63,7 @@ class ShopProductController extends Controller
     {
         return view('admin.shop-products.edit', [
             'product' => $shop_product,
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -74,6 +77,7 @@ class ShopProductController extends Controller
         }
 
         $shop_product->update($data);
+        $this->syncTranslations($shop_product, $request);
 
         return redirect()->route('admin.shop-products.index')->with('success', 'Product updated.');
     }
@@ -96,6 +100,10 @@ class ShopProductController extends Controller
             'is_active' => ['nullable', 'boolean'],
         ];
 
+        foreach (config('app.locales', [app()->getLocale()]) as $locale) {
+            $rules["translations.$locale.name"] = ['nullable', 'string', 'max:255'];
+        }
+
         if ($isCreate) {
             $rules['image'] = ['required', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048'];
         } else {
@@ -107,6 +115,25 @@ class ShopProductController extends Controller
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
 
         return $data;
+    }
+
+    private function syncTranslations(ShopProduct $product, Request $request): void
+    {
+        $locales = config('app.locales', [app()->getLocale()]);
+        foreach ($locales as $locale) {
+            $payload = $request->input("translations.$locale", []);
+            $name = trim((string) ($payload['name'] ?? ''));
+
+            if ($name === '') {
+                $product->translations()->where('locale', $locale)->delete();
+                continue;
+            }
+
+            $product->translations()->updateOrCreate(
+                ['locale' => $locale],
+                ['name' => $name]
+            );
+        }
     }
 
     private function storeImage(Request $request, ?string $asin): string

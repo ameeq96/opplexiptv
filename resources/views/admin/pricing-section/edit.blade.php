@@ -32,6 +32,48 @@
                 </div>
             </div>
 
+            @if (!empty($locales))
+                <div class="mt-4">
+                    <h5 class="mb-3">Translations</h5>
+                    <ul class="nav nav-tabs" role="tablist">
+                        @foreach ($locales as $locale)
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link @if ($loop->first) active @endif" data-bs-toggle="tab"
+                                    data-bs-target="#ps-{{ $locale }}" type="button" role="tab">
+                                    {{ strtoupper($locale) }}
+                                </button>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <div class="tab-content border border-top-0 p-3">
+                        @foreach ($locales as $locale)
+                            @php $t = $section->translation($locale); @endphp
+                            <div class="tab-pane fade @if ($loop->first) show active @endif" id="ps-{{ $locale }}" role="tabpanel">
+                                <div class="mb-3">
+                                    <label class="form-label">Heading ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][heading]" class="form-control"
+                                        value="{{ old("translations.$locale.heading", $t?->heading) }}">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Subheading ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][subheading]" class="form-control"
+                                        value="{{ old("translations.$locale.subheading", $t?->subheading) }}">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Reseller Toggle Label ({{ strtoupper($locale) }})</label>
+                                    <input type="text" name="translations[{{ $locale }}][show_reseller_label]" class="form-control"
+                                        value="{{ old("translations.$locale.show_reseller_label", $t?->show_reseller_label) }}">
+                                </div>
+                                <div>
+                                    <label class="form-label">Credit Info ({{ strtoupper($locale) }})</label>
+                                    <textarea name="translations[{{ $locale }}][credit_info]" class="form-control" rows="3">{{ old("translations.$locale.credit_info", $t?->credit_info) }}</textarea>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
+
             <div class="mt-4">
                 <button type="submit" class="btn btn-primary">Save</button>
             </div>

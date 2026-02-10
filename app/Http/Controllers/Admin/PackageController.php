@@ -40,13 +40,15 @@ class PackageController extends Controller
     {
         return view('admin.packages.create', [
             'package' => new Package(),
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
     public function store(Request $request)
     {
         $data = $this->validateData($request);
-        Package::create($data);
+        $package = Package::create($data);
+        $this->syncTranslations($package, $request);
 
         return redirect()->route('admin.packages.index')->with('success', 'Package added.');
     }
@@ -55,6 +57,7 @@ class PackageController extends Controller
     {
         return view('admin.packages.edit', [
             'package' => $package,
+            'locales' => config('app.locales', [app()->getLocale()]),
         ]);
     }
 
@@ -62,6 +65,7 @@ class PackageController extends Controller
     {
         $data = $this->validateData($request);
         $package->update($data);
+        $this->syncTranslations($package, $request);
 
         return redirect()->route('admin.packages.index')->with('success', 'Package updated.');
     }
@@ -74,7 +78,7 @@ class PackageController extends Controller
 
     private function validateData(Request $request): array
     {
-        $data = $request->validate([
+        $rules = [
             'type' => ['required', 'in:iptv,reseller'],
             'vendor' => ['required', 'in:opplex,starshare'],
             'title' => ['required', 'string', 'max:255'],
@@ -89,7 +93,14 @@ class PackageController extends Controller
             'button_link' => ['nullable', 'string', 'max:255'],
             'delay' => ['nullable', 'string', 'max:50'],
             'active' => ['nullable', 'boolean'],
-        ]);
+        ];
+
+        foreach (config('app.locales', [app()->getLocale()]) as $locale) {
+            $rules["translations.$locale.title"] = ['nullable', 'string', 'max:255'];
+            $rules["translations.$locale.features"] = ['nullable', 'string'];
+        }
+
+        $data = $request->validate($rules);
 
         $data['active'] = (bool) ($data['active'] ?? false);
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
@@ -111,5 +122,29 @@ class PackageController extends Controller
         $parts = preg_split('/[\r\n,]+/', $value);
         $parts = array_values(array_filter(array_map('trim', $parts)));
         return $parts ?: null;
+    }
+
+    private function syncTranslations(Package $package, Request $request): void
+    {
+        $locales = config('app.locales', [app()->getLocale()]);
+        foreach ($locales as $locale) {
+            $payload = $request->input("translations.$locale", []);
+            $title = trim((string) ($payload['title'] ?? ''));
+            $featuresRaw = (string) ($payload['features'] ?? '');
+            $features = $this->splitLines($featuresRaw);
+
+            if ($title === '' && empty($features)) {
+                $package->translations()->where('locale', $locale)->delete();
+                continue;
+            }
+
+            $package->translations()->updateOrCreate(
+                ['locale' => $locale],
+                [
+                    'title' => $title ?: null,
+                    'features' => $features,
+                ]
+            );
+        }
     }
 }
