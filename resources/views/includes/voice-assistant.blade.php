@@ -2,6 +2,11 @@
     $vaGuidePrefix = 'messages.voice_guide.';
     $vaUiPrefix = 'messages.voice_assistant.';
 
+    $vaDoneLabel = __($vaGuidePrefix . 'done');
+    if ($vaDoneLabel === $vaGuidePrefix . 'done') {
+        $vaDoneLabel = 'Done';
+    }
+
     $assistantRoutes = [
         'home' => route('home'),
         'pricing' => route('pricing'),
@@ -104,7 +109,11 @@
         <div class="va-onboarding__footer">
             <button type="button" class="va-onboarding__btn va-onboarding__btn--ghost" data-prev="1">{{ __($vaGuidePrefix . 'back') }}</button>
             <button type="button" class="va-onboarding__btn va-onboarding__btn--skip" data-skip="1">{{ __($vaGuidePrefix . 'skip') }}</button>
-            <button type="button" class="va-onboarding__btn va-onboarding__btn--next" data-next="1">{{ __($vaGuidePrefix . 'next') }}</button>
+            <button type="button"
+                class="va-onboarding__btn va-onboarding__btn--next"
+                data-next="1"
+                data-next-text="{{ __($vaGuidePrefix . 'next') }}"
+                data-done-text="{{ $vaDoneLabel }}">{{ __($vaGuidePrefix . 'next') }}</button>
         </div>
 
         <p class="va-onboarding__hint">{{ __($vaGuidePrefix . 'hint') }}</p>

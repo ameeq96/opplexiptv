@@ -111,6 +111,26 @@
         var nextBtn = onboarding.querySelector('[data-next]');
         var skipBtn = onboarding.querySelector('[data-skip]');
         var closeEls = onboarding.querySelectorAll('[data-close]');
+        var locale = String(container.getAttribute('data-locale') || 'en').toLowerCase();
+        var localeBase = locale.split('-')[0];
+        var doneByLocale = {
+            en: 'Done',
+            ur: 'مکمل',
+            ar: 'تم',
+            es: 'Listo',
+            fr: 'Terminé',
+            hi: 'पूरा',
+            it: 'Fatto',
+            nl: 'Klaar',
+            pt: 'Concluir',
+            ru: 'Готово'
+        };
+        var nextLabel = nextBtn ? (nextBtn.getAttribute('data-next-text') || nextBtn.textContent || 'Next') : 'Next';
+        var doneRaw = nextBtn ? (nextBtn.getAttribute('data-done-text') || '') : '';
+        var doneLabel = doneRaw;
+        if (!doneLabel || doneLabel === 'Done' || doneLabel === 'messages.voice_guide.done') {
+            doneLabel = doneByLocale[locale] || doneByLocale[localeBase] || 'Done';
+        }
         var stepIndex = 0;
 
         function renderStep() {
@@ -120,7 +140,7 @@
 
             steps.forEach(function (s, i) { s.classList.toggle('active', i === stepIndex); });
             if (prevBtn) prevBtn.disabled = stepIndex === 0;
-            if (nextBtn) nextBtn.textContent = stepIndex === steps.length - 1 ? 'Done' : 'Next';
+            if (nextBtn) nextBtn.textContent = stepIndex === steps.length - 1 ? doneLabel : nextLabel;
         }
 
         function openGuide(markSeen) {
