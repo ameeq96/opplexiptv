@@ -102,7 +102,7 @@ class AdminTranslationsSeeder extends Seeder
         if (Schema::hasTable('packages')) {
             $iptvTitleMap = [
                 1 => 'messages.buynow.packages.monthly',
-                3 => 'messages.buynow.packages.monthly',
+                3 => 'messages.buynow.packages.three_months',
                 6 => 'messages.buynow.packages.half_yearly',
                 12 => 'messages.buynow.packages.yearly',
             ];

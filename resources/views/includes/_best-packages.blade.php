@@ -212,6 +212,12 @@
                     $plainPrice = trim(strip_tags(data_get($package, 'price', '')));
                     preg_match_all('/\d+(?:\.\d+)?/', $plainPrice, $m);
                     $buyPrice = $m[0] ? end($m[0]) : null;
+
+                    // Remove text in parentheses + embedded price from title.
+                    $rawTitle = (string) data_get($package, 'title', '');
+                    $titleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $rawTitle);
+                    $titleBase = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $titleNoParen, 1));
+                    $displayTitle = $titleBase;
                 @endphp
 
                 <div class="price-block scroll-item pkg-item" data-type="iptv" data-vendor="{{ $vendorKey }}">
@@ -222,7 +228,7 @@
                                 <li><span class="icon"><img src="{{ asset('images/icons/service-1.svg') }}"
                                             alt="IPTV" width="48" height="48"></span></li>
                             </ul>
-                            <h4>{{ $package['title'] ?? '' }}<span>{!! $package['price'] ?? '' !!}</span></h4>
+                            <h4>{{ $displayTitle }}<span>{!! $package['price'] ?? '' !!}</span></h4>
                         </div>
 
                         <div class="lower-box">
@@ -239,7 +245,7 @@
                                     href="{{ route('configure', [
                                         'price' => $buyPrice,
                                         'ptype' => 'iptv',
-                                        'plan' => $package['title'] ?? '',
+                                        'plan' => $displayTitle,
                                         'vendor' => $vendorKey,
                                     ]) }}"
                                     class="theme-btn btn-style-four">
@@ -248,7 +254,7 @@
 
                                 @if ($buyPrice)
                                     <a  rel="noopener"
-                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $package['title'] ?? '', 'price' => $buyPrice])) }}">
+                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $displayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                             height="32" alt="WhatsApp" loading="lazy" />
                                     </a>
@@ -269,6 +275,9 @@
                         $plainPrice = trim(strip_tags($plan['price'] ?? ''));
                         preg_match_all('/\d+(?:\.\d+)?/', $plainPrice, $m);
                         $buyPrice = $m[0] ? end($m[0]) : null;
+                        $resellerRawTitle = (string) data_get($plan, 'title', '');
+                        $resellerTitleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $resellerRawTitle);
+                        $resellerDisplayTitle = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $resellerTitleNoParen, 1));
                     @endphp
 
                     <div class="price-block reseller-price-block pkg-item d-flex flex-column justify-content-between"
@@ -284,7 +293,7 @@
                                                     width="48" height="48"></span></li>
                                     @endforeach
                                 </ul>
-                                <h4>{{ $plan['title'] }}<span>{!! $plan['price'] !!}</span></h4>
+                                <h4>{{ $resellerDisplayTitle }}<span>{!! $plan['price'] !!}</span></h4>
                             </div>
 
                             <div class="lower-box">
@@ -299,7 +308,7 @@
                                         href="{{ route('configure', [
                                             'price' => $buyPrice,
                                             'ptype' => 'reseller',
-                                            'plan' => $plan['title'],
+                                            'plan' => $resellerDisplayTitle,
                                             'vendor' => $vendorResKey,
                                         ]) }}"
                                         class="theme-btn btn-style-four">
@@ -307,7 +316,7 @@
                                     </a>
 
                                     <a  rel="noopener"
-                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $plan['title'], 'price' => $buyPrice])) }}">
+                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $resellerDisplayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}"
                                             width="32" height="32" alt="WhatsApp" loading="lazy" />
                                     </a>

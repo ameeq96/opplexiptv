@@ -52,7 +52,12 @@
           } catch (e) { return false; }
         }
 
-        btn.addEventListener('click', function () {
+        let started = false;
+
+        function startDownloadFlow() {
+          if (started || !TARGET) return;
+          started = true;
+
           if (!TARGET) return;
 
           btn.disabled = true;
@@ -76,7 +81,12 @@
               }, 900);
             }
           }, 1000);
-        });
+        }
+
+        btn.addEventListener('click', startDownloadFlow);
+
+        // Auto-start so user does not need to click manually.
+        setTimeout(startDownloadFlow, 500);
       })();
     </script>
 @endsection

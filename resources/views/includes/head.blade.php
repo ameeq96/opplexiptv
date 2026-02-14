@@ -152,6 +152,7 @@
 
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}

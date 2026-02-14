@@ -97,11 +97,6 @@
         }
     </style>
 
-    <div class="container pt-3">
-        <h1 class="hero-title mb-2">{{ __('messages.checkout_complete_title_page', [], app()->getLocale()) ?? 'Complete Your Order' }}</h1>
-        <p class="hero-sub mb-4">{{ __('messages.checkout_complete_subtitle') ?? __('messages.checkout_step_subtitle') }}</p>
-    </div>
-
     @php
         // ------------------------------
         // Gather selections from request
@@ -221,8 +216,8 @@
     </div>
 
     <div class="container text-center mt-3">
-        <h2 class="hero-title">{{ __('messages.checkout_complete_title') }}</h2>
-        <div class="hero-sub">{{ __('messages.checkout_complete_sub') }}</div>
+        <h1 class="hero-title change-font">{{ __('messages.checkout_complete_title') }}</h1>
+        <h2 class="hero-sub change-font">{{ __('messages.checkout_complete_sub') }}</h2>
     </div>
 
     <div class="container my-4">

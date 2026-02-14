@@ -84,16 +84,57 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 @if (!empty($menuItems))
-                                    @foreach ($menuItems as $item)
+                                    @php
+                                        $norm = static fn($v) => mb_strtolower(trim((string) $v));
+                                        $moreLabels = ['more', 'services', $norm(__('messages.nav_services'))];
+                                        $blogLabels = ['blogs', $norm(__('messages.blogs'))];
+
+                                        $headerItems = [];
+                                        foreach ($menuItems as $item) {
+                                            $itemLabel = $norm($item['label'] ?? '');
+                                            $children = $item['children'] ?? [];
+
+                                            if (in_array($itemLabel, $moreLabels, true) && !empty($children)) {
+                                                $remaining = [];
+                                                foreach ($children as $child) {
+                                                    $childLabel = $norm($child['label'] ?? '');
+                                                    $childUrl = trim((string) ($child['url'] ?? ''));
+                                                    $isBlogs = in_array($childLabel, $blogLabels, true) || str_contains($childUrl, '/blogs');
+
+                                                    if ($isBlogs) {
+                                                        $headerItems[] = [
+                                                            'id' => $child['id'] ?? null,
+                                                            'label' => $child['label'] ?? __('messages.blogs'),
+                                                            'url' => $child['url'] ?? route('blogs.index'),
+                                                            'open_new_tab' => $child['open_new_tab'] ?? false,
+                                                            'children' => [],
+                                                        ];
+                                                    } else {
+                                                        $remaining[] = $child;
+                                                    }
+                                                }
+                                                $item['children'] = $remaining;
+                                            }
+
+                                            $headerItems[] = $item;
+                                        }
+                                    @endphp
+                                    @foreach ($headerItems as $item)
                                         @php
                                             $hasChildren = !empty($item['children']);
                                             $target = !empty($item['open_new_tab']) ? '_blank' : null;
                                             $rel = !empty($item['open_new_tab']) ? 'noopener' : null;
+                                            $itemLabelNorm = mb_strtolower(trim((string) ($item['label'] ?? '')));
+                                            $isMore = in_array($itemLabelNorm, [
+                                                'more',
+                                                'services',
+                                                mb_strtolower(trim((string) __('messages.nav_services'))),
+                                            ], true);
                                         @endphp
                                         <li class="{{ $hasChildren ? 'dropdown' : '' }}">
                                             <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $item['url'] }}"
                                                @if($target) target="{{ $target }}" rel="{{ $rel }}" @endif>
-                                                {{ $item['label'] }}
+                                                {{ $item['label'] }}@if($isMore) +@endif
                                             </a>
                                             @if ($hasChildren)
                                                 <ul class="sub-menu">
@@ -124,14 +165,14 @@
                                     </li>
                                     <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                             href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
-                                    <li class="dropdown"><a href="#">{{ __('more') }}</a>
+                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
+                                    <li class="dropdown"><a href="#">{{ __('more') }} +</a>
                                         <ul class="sub-menu">
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     href="{{ route('about') }}">{{ __('messages.nav_about_us') }}</a></li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                    href="contact">{{ __('messages.nav_contact') }}</a></li>
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                    href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
+                                                    href="{{ route('contact') }}">{{ __('messages.nav_contact') }}</a></li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a>
                                             </li>

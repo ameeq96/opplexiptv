@@ -10,20 +10,24 @@
     @foreach ($items as $p)
       @php
         $name = $p['name'] ?? '';
+        $displayName = trim((string) preg_replace('/^\s*[\(\[][^\)\]]*[\)\]]\s*/', '', (string) $name));
+        if ($displayName === '') {
+          $displayName = $name;
+        }
         $asin = $p['asin'] ?? '';
         $link = $p['link'] ?? '#';
         $image = $p['image'] ?? '';
-        $altText = trim((string) \Illuminate\Support\Str::limit($name, 90, '')) ?: 'Shop product';
+        $altText = trim((string) \Illuminate\Support\Str::limit($displayName, 90, '')) ?: 'Shop product';
       @endphp
       <div class="pcarousel__item">
-        <article class="product-card" aria-label="{{ $name }}">
-          <a href="{{ $link }}" target="_blank" rel="nofollow sponsored noopener" title="{{ $name }}" style="display:block; position:relative;">
+        <article class="product-card" aria-label="{{ $displayName }}">
+          <a href="{{ $link }}" target="_blank" rel="nofollow sponsored noopener" title="{{ $displayName }}" style="display:block; position:relative;">
             <img class="product-card__image" src="{{ asset('images/shop/' . $image) }}" alt="{{ $altText }}" loading="lazy">
             <span class="product-card__badge" aria-hidden="true">Amazon</span>
             <span class="product-card__cta" aria-hidden="true">View</span>
           </a>
           <div class="product-card__body">
-            <h3 class="product-card__title">{{ \Illuminate\Support\Str::limit($name, 120) }}</h3>
+            <h3 class="product-card__title">{{ \Illuminate\Support\Str::limit($displayName, 120) }}</h3>
             @if($asin)
               <div class="product-card__meta">ASIN: {{ $asin }}</div>
             @endif

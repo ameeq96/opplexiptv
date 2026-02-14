@@ -126,6 +126,7 @@ class UiData
             'seoServices'                   => $seoServices,
             'packagesDropdown'              => $packagesDropdown,
             'resellerPanelPackagesDropdown' => $resellerPanelPackagesDropdown,
+            'assistant'                    => config('assistant'),
         ];
     }
 
@@ -357,17 +358,19 @@ class UiData
                 ->get()
                 ->map(function (MenuItem $item) {
                     $t = $item->translation();
+                    $label = $t?->label ?: $item->label;
                     return [
                         'id' => $item->id,
-                        'label' => $t?->label ?: $item->label,
-                        'url' => $item->url,
+                        'label' => $label,
+                        'url' => $this->resolveMenuUrl($item->url, $label),
                         'open_new_tab' => $item->open_new_tab,
                         'children' => $item->children->map(function (MenuItem $child) {
                             $tc = $child->translation();
+                            $childLabel = $tc?->label ?: $child->label;
                             return [
                                 'id' => $child->id,
-                                'label' => $tc?->label ?: $child->label,
-                                'url' => $child->url,
+                                'label' => $childLabel,
+                                'url' => $this->resolveMenuUrl($child->url, $childLabel),
                                 'open_new_tab' => $child->open_new_tab,
                             ];
                         })->toArray(),
@@ -377,6 +380,68 @@ class UiData
         }
 
         return [];
+    }
+
+    private function resolveMenuUrl(?string $url, ?string $label = null): string
+    {
+        $value = trim((string) $url);
+        if ($value === '') {
+            return '#';
+        }
+
+        // Keep external, special protocols, and hash links unchanged.
+        if (
+            Str::startsWith($value, ['http://', 'https://', 'mailto:', 'tel:', '#', 'javascript:']) ||
+            Str::startsWith($value, '//')
+        ) {
+            return $value;
+        }
+
+        $path = '/' . ltrim($value, '/');
+        $pathLower = Str::lower($path);
+
+        $pathToRoute = [
+            '/' => 'home',
+            '/home' => 'home',
+            '/about' => 'about',
+            '/contact' => 'contact',
+            '/blogs' => 'blogs.index',
+            '/reseller-panel' => 'reseller-panel',
+            '/pricing' => 'pricing',
+            '/movies' => 'movies',
+            '/movies/series' => 'movies',
+            '/faqs' => 'faqs',
+            '/faq' => 'faqs',
+            '/packages' => 'packages',
+            '/iptv-applications' => 'iptv-applications',
+            '/activate' => 'activate',
+        ];
+
+        if (isset($pathToRoute[$pathLower])) {
+            return route($pathToRoute[$pathLower]);
+        }
+
+        $labelKey = Str::of((string) $label)->lower()->squish()->value();
+        $labelToRoute = [
+            'home' => 'home',
+            'our packages' => 'packages',
+            'iptv applications' => 'iptv-applications',
+            "faq's" => 'faqs',
+            'faqs' => 'faqs',
+            'about us' => 'about',
+            'about' => 'about',
+            'contact us' => 'contact',
+            'blogs' => 'blogs.index',
+            'reseller panel' => 'reseller-panel',
+            'pricing' => 'pricing',
+            'movies/series' => 'movies',
+        ];
+
+        if (isset($labelToRoute[$labelKey])) {
+            return route($labelToRoute[$labelKey]);
+        }
+
+        return $path;
     }
 
     private function pricingSection(): ?array
