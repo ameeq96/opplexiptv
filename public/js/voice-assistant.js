@@ -39,6 +39,8 @@
     var HELP_MESSAGE = container.getAttribute('data-help-message') || 'Try: \"open pricing\", \"go to packages\", \"download opplex app\", \"checkout\", \"contact support\", or \"my email is ...\".';
     var VOICE_ON_TEXT = container.getAttribute('data-voice-on') || 'Voice On';
     var VOICE_OFF_TEXT = container.getAttribute('data-voice-off') || 'Voice Off';
+    var ACTIVE_LOCALE = String(container.getAttribute('data-locale') || document.documentElement.lang || 'en').toLowerCase();
+    var LOCALE_BASE = ACTIVE_LOCALE.split('-')[0];
     var memory = {
         fullName: '',
         firstName: '',
@@ -303,7 +305,8 @@
     function normalizeText(text) {
         return (text || '')
             .toLowerCase()
-            .replace(/[^a-z0-9\s]/g, ' ')
+            .normalize('NFKC')
+            .replace(/[^\p{L}\p{N}\s]/gu, ' ')
             .replace(/\s+/g, ' ')
             .trim();
     }
@@ -338,6 +341,115 @@
         // Email spoken variants
         s = s.replace(/\bat the rate\b/g, ' at ');
         s = s.replace(/\bat[-\s]?rate\b/g, ' at ');
+
+        return s.replace(/\s+/g, ' ').trim();
+    }
+
+    function canonicalizeMultilingualInput(text) {
+        var s = String(text || '').normalize('NFKC');
+        if (!s) return s;
+
+        function apply(words, token) {
+            if (!words || !words.length) return;
+            var escaped = words.map(function (w) { return String(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+            var rx = new RegExp('(?:^|\\s)(' + escaped.join('|') + ')(?=$|\\s)', 'giu');
+            s = s.replace(rx, ' ' + token + ' ');
+        }
+
+        var byLocale = {
+            ar: {
+                open: ['\u0627\u0641\u062a\u062d', '\u0627\u0641\u062a\u062d \u0627\u0644\u0635\u0641\u062d\u0629', '\u0627\u0630\u0647\u0628', '\u0627\u0630\u0647\u0628 \u0625\u0644\u0649', '\u0627\u0646\u062a\u0642\u0644', '\u0627\u0639\u0631\u0636', '\u0623\u0638\u0647\u0631'],
+                pricing: ['\u0627\u0644\u0627\u0633\u0639\u0627\u0631', '\u0627\u0644\u0623\u0633\u0639\u0627\u0631', '\u0627\u0644\u0633\u0639\u0631', '\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u0648\u0627\u0644\u0628\u0627\u0642\u0627\u062a', '\u0627\u0644\u062a\u0633\u0639\u064a\u0631'],
+                packages: ['\u0627\u0644\u0628\u0627\u0642\u0627\u062a', '\u0628\u0627\u0642\u0629', '\u0627\u0644\u0628\u0627\u0642\u0629', '\u062d\u0632\u0645', '\u0627\u0634\u062a\u0631\u0627\u0643'],
+                checkout: ['\u0627\u0644\u062f\u0641\u0639', '\u0627\u0644\u062f\u0641\u0639 \u0627\u0644\u0622\u0646', '\u0634\u0631\u0627\u0621', '\u0627\u0634\u062a\u0631', '\u0623\u0637\u0644\u0628', '\u062a\u0623\u0643\u064a\u062f \u0627\u0644\u0637\u0644\u0628', '\u0623\u0643\u0645\u0644 \u0627\u0644\u062f\u0641\u0639'],
+                contact: ['\u0627\u062a\u0635\u0644', '\u062a\u0648\u0627\u0635\u0644', '\u062f\u0639\u0645', '\u062e\u062f\u0645\u0629 \u0627\u0644\u0639\u0645\u0644\u0627\u0621', '\u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629'],
+                close: ['\u0627\u063a\u0644\u0642', '\u0625\u063a\u0644\u0627\u0642', '\u0633\u0643\u0631', '\u0627\u063a\u0644\u0642 \u0647\u0630\u0627'],
+                search: ['\u0627\u0628\u062d\u062b', '\u0628\u062d\u062b', '\u0627\u0628\u062d\u062b \u0639\u0646', '\u0628\u062d\u062b \u0639\u0646']
+            },
+            ur: {
+                open: ['\u06a9\u06be\u0648\u0644\u0648', '\u06a9\u06be\u0648\u0644', '\u062f\u06a9\u06be\u0627\u0624', '\u062f\u06a9\u06be\u0627\u0624', '\u062c\u0627\u0624', '\u062c\u0627\u0648', 'khol', 'kholo', 'open karo', 'dikhao'],
+                pricing: ['\u0642\u06cc\u0645\u062a', '\u067e\u0631\u0627\u0626\u0633', '\u067e\u0631\u0627\u0626\u0633\u0646\u06af', 'pricing', 'price', 'rates'],
+                packages: ['\u067e\u06cc\u06a9\u06cc\u062c', '\u067e\u06cc\u06a9\u06cc\u062c\u0632', '\u067e\u0644\u0627\u0646', '\u067e\u0644\u0627\u0646\u0632', 'packages', 'plans', 'subscription'],
+                checkout: ['\u0686\u06cc\u06a9 \u0622\u0624\u0679', '\u0686\u06cc\u06a9\u0622\u0624\u0679', '\u0627\u062f\u0627\u0626\u06cc\u06af\u06cc', '\u067e\u06cc\u0645\u0646\u0679', '\u0622\u0631\u0688\u0631', 'checkout', 'payment', 'pay', 'order', 'place order'],
+                contact: ['\u0631\u0627\u0628\u0637\u06c1', '\u0633\u067e\u0648\u0631\u0679', '\u0645\u062f\u062f', 'contact', 'support', 'help'],
+                close: ['\u0628\u0646\u062f', '\u0628\u0646\u062f \u06a9\u0631\u0648', 'close'],
+                search: ['\u062a\u0644\u0627\u0634', '\u0688\u06be\u0648\u0646\u0688\u0648', 'search', 'find']
+            },
+            es: {
+                open: ['abrir', 'mostrar', 'ir', 'ir a'],
+                pricing: ['precio', 'precios'],
+                packages: ['paquete', 'paquetes', 'planes'],
+                checkout: ['pago', 'comprar', 'pedido', 'checkout'],
+                contact: ['contacto', 'soporte', 'ayuda'],
+                close: ['cerrar'],
+                search: ['buscar', 'busqueda', 'b?squeda']
+            },
+            fr: {
+                open: ['ouvrir', 'afficher', 'aller', 'aller a', 'aller ?'],
+                pricing: ['prix', 'tarif', 'tarifs'],
+                packages: ['forfait', 'forfaits', 'package', 'packages'],
+                checkout: ['paiement', 'acheter', 'commande', 'checkout'],
+                contact: ['contact', 'support', 'aide'],
+                close: ['fermer'],
+                search: ['chercher', 'rechercher']
+            },
+            hi: {
+                open: ['\u0916\u094b\u0932\u094b', '\u0916\u094b\u0932\u0947\u0902', '\u0926\u093f\u0916\u093e\u0913', '\u0926\u093f\u0916\u093e\u090f\u0902', '\u091c\u093e\u0913', '\u091c\u093e\u090f\u0902'],
+                pricing: ['\u0915\u0940\u092e\u0924', '\u0926\u093e\u092e', '\u092a\u094d\u0930\u093e\u0907\u0938', '\u092a\u094d\u0930\u093e\u0907\u0938\u093f\u0902\u0917'],
+                packages: ['\u092a\u0948\u0915\u0947\u091c', '\u092a\u0948\u0915\u0947\u091c\u0938', '\u092a\u094d\u0932\u093e\u0928', '\u092a\u094d\u0932\u093e\u0928\u094d\u0938', '\u0938\u092c\u094d\u0938\u0915\u094d\u0930\u093f\u092a\u094d\u0936\u0928'],
+                checkout: ['\u091a\u0947\u0915\u0906\u0909\u091f', '\u092a\u0947\u092e\u0947\u0902\u091f', '\u0911\u0930\u094d\u0921\u0930', '\u0916\u0930\u0940\u0926\u094b', '\u0905\u092d\u0940 \u0916\u0930\u0940\u0926\u0947\u0902', '\u092d\u0941\u0917\u0924\u093e\u0928'],
+                contact: ['\u0938\u0902\u092a\u0930\u094d\u0915', '\u0938\u092a\u094b\u0930\u094d\u091f', '\u092e\u0926\u0926', '\u0938\u0939\u093e\u092f\u0924\u093e'],
+                close: ['\u092c\u0902\u0926', '\u092c\u0902\u0926 \u0915\u0930\u094b', '\u0915\u094d\u0932\u094b\u091c'],
+                search: ['\u0916\u094b\u091c\u094b', '\u0924\u0932\u093e\u0936', '\u0938\u0930\u094d\u091a']
+            },
+            it: {
+                open: ['apri', 'mostra', 'vai', 'vai a'],
+                pricing: ['prezzo', 'prezzi'],
+                packages: ['pacchetto', 'pacchetti', 'piani'],
+                checkout: ['pagamento', 'compra', 'ordine', 'checkout'],
+                contact: ['contatto', 'supporto', 'aiuto'],
+                close: ['chiudi'],
+                search: ['cerca', 'ricerca']
+            },
+            nl: {
+                open: ['open', 'openen', 'toon', 'ga', 'ga naar', 'laat zien', 'naar'],
+                pricing: ['prijs', 'prijzen', 'tarief', 'tarieven'],
+                packages: ['pakket', 'pakketten', 'plan', 'plannen', 'abonnement', 'abonnementen'],
+                checkout: ['afrekenen', 'betaling', 'bestellen', 'koop', 'bestel', 'nu kopen'],
+                contact: ['contact', 'ondersteuning', 'support', 'hulp', 'klantenservice'],
+                close: ['sluiten', 'dicht', 'sluit'],
+                search: ['zoeken', 'zoek', 'opzoeken']
+            },
+            pt: {
+                open: ['abrir', 'mostrar', 'ir', 'ir para', 'abrir página', 'abrir pagina'],
+                pricing: ['preco', 'preço', 'precos', 'preços', 'valor', 'valores'],
+                packages: ['pacote', 'pacotes', 'plano', 'planos', 'assinatura', 'assinaturas'],
+                checkout: ['pagamento', 'comprar', 'pedido', 'checkout', 'finalizar compra', 'pagar agora'],
+                contact: ['contato', 'suporte', 'ajuda', 'falar com suporte', 'atendimento'],
+                close: ['fechar', 'encerrar'],
+                search: ['buscar', 'pesquisar', 'procurar']
+            },
+            ru: {
+                open: ['\u043e\u0442\u043a\u0440\u044b\u0442\u044c', '\u043f\u043e\u043a\u0430\u0437\u0430\u0442\u044c', '\u043f\u0435\u0440\u0435\u0439\u0442\u0438', '\u043f\u0435\u0440\u0435\u0439\u0442\u0438 \u043d\u0430'],
+                pricing: ['\u0446\u0435\u043d\u0430', '\u0446\u0435\u043d\u044b', '\u043f\u0440\u0430\u0439\u0441', '\u0442\u0430\u0440\u0438\u0444'],
+                packages: ['\u043f\u0430\u043a\u0435\u0442', '\u043f\u0430\u043a\u0435\u0442\u044b', '\u043f\u043b\u0430\u043d', '\u043f\u043b\u0430\u043d\u044b', '\u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0430'],
+                checkout: ['\u043e\u043f\u043b\u0430\u0442\u0430', '\u043a\u0443\u043f\u0438\u0442\u044c', '\u0437\u0430\u043a\u0430\u0437', '\u0447\u0435\u043a\u0430\u0443\u0442', '\u043e\u0444\u043e\u0440\u043c\u0438\u0442\u044c \u0437\u0430\u043a\u0430\u0437'],
+                contact: ['\u043a\u043e\u043d\u0442\u0430\u043a\u0442', '\u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430', '\u043f\u043e\u043c\u043e\u0449\u044c', '\u0441\u0432\u044f\u0437\u0430\u0442\u044c\u0441\u044f'],
+                close: ['\u0437\u0430\u043a\u0440\u044b\u0442\u044c', '\u0437\u0430\u043a\u0440\u043e\u0439'],
+                search: ['\u043f\u043e\u0438\u0441\u043a', '\u0438\u0441\u043a\u0430\u0442\u044c', '\u043d\u0430\u0439\u0442\u0438']
+            }
+        };
+
+        var d = byLocale[LOCALE_BASE];
+        if (d) {
+            apply(d.open, 'open');
+            apply(d.pricing, 'pricing');
+            apply(d.packages, 'packages');
+            apply(d.checkout, 'checkout');
+            apply(d.contact, 'contact');
+            apply(d.close, 'close');
+            apply(d.search, 'search');
+        }
 
         return s.replace(/\s+/g, ' ').trim();
     }
@@ -1576,8 +1688,13 @@
     }
 
     function confirmIfPending(text) {
-        var confirmWords = ['yes', 'confirm', 'ok', 'okay', 'sure', 'haan', 'ha', 'jee', 'theek', 'thik'];
-        var lower = text.toLowerCase();
+        var confirmWords = [
+            'yes', 'confirm', 'ok', 'okay', 'sure',
+            'haan', 'ha', 'jee', 'theek', 'thik',
+            's?', 'si', 'oui', 'da', 'sim', 'ja', 'hai',
+            '\u0646\u0639\u0645', '\u062c\u06cc', '\u06c1\u0627\u06ba'
+        ];
+        var lower = canonicalizeMultilingualInput(text).toLowerCase();
         var confirmed = confirmWords.some(function (w) { return lower.indexOf(w) !== -1; });
         if (confirmed && pendingAction) {
             var action = pendingAction;
@@ -1589,10 +1706,11 @@
     }
 
     function handleIntent(text) {
-        var raw = (text || '').trim();
-        if (!raw) return;
+        var rawOriginal = (text || '').trim();
+        if (!rawOriginal) return;
+        var raw = canonicalizeMultilingualInput(rawOriginal);
 
-        addMessage('user', raw);
+        addMessage('user', rawOriginal);
 
         if (confirmIfPending(raw)) return;
 
@@ -1800,7 +1918,19 @@
 
     if (SpeechRecognition) {
         recognizer = new SpeechRecognition();
-        recognizer.lang = document.documentElement.lang || 'en-US';
+        var speechLangMap = {
+            ar: 'ar-SA',
+            ur: 'ur-PK',
+            en: 'en-US',
+            es: 'es-ES',
+            fr: 'fr-FR',
+            hi: 'hi-IN',
+            it: 'it-IT',
+            nl: 'nl-NL',
+            pt: 'pt-BR',
+            ru: 'ru-RU'
+        };
+        recognizer.lang = speechLangMap[LOCALE_BASE] || (document.documentElement.lang || 'en-US');
         recognizer.interimResults = false;
         recognizer.onresult = function (event) {
             var transcript = event.results[0][0].transcript || '';
