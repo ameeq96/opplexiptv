@@ -91,10 +91,12 @@
 
     function openPanel() {
         panel.classList.add('open');
+        document.body.classList.add('va-panel-open');
     }
 
     function closePanel() {
         panel.classList.remove('open');
+        document.body.classList.remove('va-panel-open');
     }
 
     function setOnboardingSeen() {

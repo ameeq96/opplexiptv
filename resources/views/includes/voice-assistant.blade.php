@@ -39,15 +39,15 @@
     data-voice-off="{{ __($vaUiPrefix . 'voice_off') }}"
     data-rtl="{{ $isRtl ? '1' : '0' }}">
     <button type="button" class="va-fab" aria-label="{{ __($vaUiPrefix . 'open_aria') }}">
-        <span class="va-fab-icon">{{ __($vaUiPrefix . 'fab_mic') }}</span>
-        <span class="va-fab-text">{{ __($vaUiPrefix . 'fab_ask') }}</span>
+        <span class="va-fab-icon" aria-hidden="true"><i class="fa fa-microphone"></i></span>
+        <span class="va-fab-text">Ask AI</span>
     </button>
 
     <div class="va-panel" role="dialog" aria-label="{{ __($vaUiPrefix . 'panel_aria') }}">
         <div class="va-header">
             <div class="va-title">
                 <div class="va-name">{{ __($vaUiPrefix . 'name') }}</div>
-                <div class="va-sub">{{ __($vaUiPrefix . 'subtitle') }}</div>
+                {{-- <div class="va-sub">{{ __($vaUiPrefix . 'subtitle') }}</div> --}}
             </div>
             <button type="button" class="va-close" aria-label="{{ __($vaUiPrefix . 'close_aria') }}">&times;</button>
         </div>
