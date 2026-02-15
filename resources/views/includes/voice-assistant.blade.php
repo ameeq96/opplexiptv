@@ -62,7 +62,9 @@
         </div>
 
         <div class="va-input">
-            <button type="button" class="va-mic" aria-label="{{ __($vaUiPrefix . 'start_voice_aria') }}">{{ __($vaUiPrefix . 'mic_btn') }}</button>
+            <button type="button" class="va-mic" aria-label="{{ __($vaUiPrefix . 'start_voice_aria') }}">
+                <i class="fa fa-microphone" aria-hidden="true"></i>
+            </button>
             <input type="text" class="va-text" placeholder="{{ __($vaUiPrefix . 'input_placeholder') }}" />
             <button type="button" class="va-send" aria-label="{{ __($vaUiPrefix . 'send_aria') }}">{{ __($vaUiPrefix . 'send_btn') }}</button>
         </div>
