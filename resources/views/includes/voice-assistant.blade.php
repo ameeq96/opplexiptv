@@ -40,7 +40,7 @@
     data-rtl="{{ $isRtl ? '1' : '0' }}">
     <button type="button" class="va-fab" aria-label="{{ __($vaUiPrefix . 'open_aria') }}">
         <span class="va-fab-icon" aria-hidden="true"><i class="fa fa-microphone"></i></span>
-        <span class="va-fab-text">Ask AI</span>
+        <span class="va-fab-text">{{__('messages.Ask AI')}}</span>
     </button>
 
     <div class="va-panel" role="dialog" aria-label="{{ __($vaUiPrefix . 'panel_aria') }}">

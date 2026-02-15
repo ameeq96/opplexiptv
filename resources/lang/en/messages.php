@@ -540,7 +540,7 @@ return [
     ],
   ],
 
-   'voice_guide' => [
+  'voice_guide' => [
     'badge' => 'New Feature',
     'title' => 'OPPLEX Voice Assistant is now live',
     'step1_title' => 'Step 1: Open Assistant',
@@ -585,5 +585,5 @@ return [
     'welcome_message' => 'Hi! Tell me what you want to do. I can open pages, help with checkout, or fill forms.',
     'help_message' => 'Try: "open pricing", "go to packages", "download opplex app", "checkout", "contact support", or "my email is ...".',
   ],
-
+  'Ask AI'   => 'Ask AI',
 ];
