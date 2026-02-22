@@ -6,6 +6,10 @@ Disallow: /*?page=
 Disallow: /*&page=
 Disallow: /*?price=
 Disallow: /*&price=
+Disallow: /*?category=
+Disallow: /*&category=
+Disallow: /*?target=
+Disallow: /*&target=
 Disallow: /*?*utm_
 Disallow: /*?*fbclid=
 Allow: /

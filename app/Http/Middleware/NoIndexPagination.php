@@ -14,9 +14,9 @@ class NoIndexPagination
         $isMovies = $request->routeIs('movies');
         $page = (int) $request->query('page', 1);
         $hasSearch = trim((string) $request->query('search', '')) !== '';
-        $hasPageOrPriceQuery = $request->has('page') || $request->has('price');
+        $hasBlockedQuery = $request->has('page') || $request->has('price') || $request->has('category') || $request->has('target');
 
-        if (($isMovies && ($page > 1 || $hasSearch)) || $hasPageOrPriceQuery) {
+        if (($isMovies && ($page > 1 || $hasSearch)) || $hasBlockedQuery) {
             $response->headers->set('X-Robots-Tag', 'noindex, follow');
         }
 
