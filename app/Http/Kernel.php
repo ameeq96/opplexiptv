@@ -41,6 +41,7 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\DetectLocaleByIP::class,
             \App\Http\Middleware\RedirectToNonWww::class,
             \App\Http\Middleware\CaptureFacebookAttribution::class,
+            \App\Http\Middleware\NoIndexPagination::class,
         ],
 
         'api' => [

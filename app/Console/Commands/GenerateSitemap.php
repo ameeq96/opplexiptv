@@ -63,8 +63,18 @@ class GenerateSitemap extends Command
                 // Normalize any accidental double slashes before query
                 $href = preg_replace('~(?<!:)//+~', '/', $href);
                 $href = Str::startsWith($href, 'http') ? $href : url($href);
+                $href = $this->withoutQueryAndFragment($href);
+
+                if ($href === null) {
+                    continue;
+                }
 
                 $cluster[$loc] = $href;
+            }
+
+            if ($cluster === []) {
+                $this->warn("Skipped route due to invalid URL cluster: {$routeName}");
+                continue;
             }
 
             // Canonical = default locale version (respects hideDefaultLocaleInURL)
@@ -99,5 +109,36 @@ class GenerateSitemap extends Command
 
         $this->info("Sitemap generated at: {$path}");
         return self::SUCCESS;
+    }
+
+    private function withoutQueryAndFragment(string $url): ?string
+    {
+        $parts = parse_url($url);
+        if ($parts === false || !isset($parts['scheme'], $parts['host'])) {
+            return null;
+        }
+
+        $base = $parts['scheme'] . '://';
+
+        if (isset($parts['user'])) {
+            $base .= $parts['user'];
+            if (isset($parts['pass'])) {
+                $base .= ':' . $parts['pass'];
+            }
+            $base .= '@';
+        }
+
+        $base .= $parts['host'];
+
+        if (isset($parts['port'])) {
+            $base .= ':' . $parts['port'];
+        }
+
+        $path = $parts['path'] ?? '/';
+        if ($path === '') {
+            $path = '/';
+        }
+
+        return $base . $path;
     }
 }

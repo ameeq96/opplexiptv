@@ -36,9 +36,12 @@
 
     $pageParam = (int) request()->input('page', 1);
     $hasSearch = trim((string) request()->input('search', '')) !== '';
+    $hasPageOrPriceQuery = request()->has('page') || request()->has('price');
 
     $shouldNoindex =
-        in_array($routeName, $noindexRoutes, true) || ($routeName === 'movies' && ($pageParam > 1 || $hasSearch));
+        in_array($routeName, $noindexRoutes, true) ||
+        ($routeName === 'movies' && ($pageParam > 1 || $hasSearch)) ||
+        $hasPageOrPriceQuery;
 
     $default = LaravelLocalization::getDefaultLocale();
     $hideDefault = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
