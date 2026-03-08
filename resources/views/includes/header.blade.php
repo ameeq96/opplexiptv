@@ -95,6 +95,26 @@
                                             $children = $item['children'] ?? [];
 
                                             if (in_array($itemLabel, $moreLabels, true) && !empty($children)) {
+                                                $hasShop = false;
+                                                foreach ($children as $childCheck) {
+                                                    $childLabel = $norm($childCheck['label'] ?? '');
+                                                    $childUrl = trim((string) ($childCheck['url'] ?? ''));
+                                                    if ($childLabel === 'shop' || str_contains($childUrl, '/shop')) {
+                                                        $hasShop = true;
+                                                        break;
+                                                    }
+                                                }
+
+                                                if (!$hasShop) {
+                                                    $children[] = [
+                                                        'id' => null,
+                                                        'label' => 'Shop',
+                                                        'url' => route('shop'),
+                                                        'open_new_tab' => false,
+                                                        'children' => [],
+                                                    ];
+                                                }
+
                                                 $remaining = [];
                                                 foreach ($children as $child) {
                                                     $childLabel = $norm($child['label'] ?? '');
@@ -167,6 +187,8 @@
                                             href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
                                     <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                             href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
+                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            href="{{ route('shop') }}">Products</a></li>
                                     <li class="dropdown"><a href="#">{{ __('more') }} +</a>
                                         <ul class="sub-menu">
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
@@ -181,6 +203,9 @@
                                             </li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a>
+                                            </li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('shop') }}">Shop</a>
                                             </li>
                                         </ul>
                                     </li>

@@ -96,7 +96,7 @@
                         <li><a class="fx-link" href="{{ url('/reseller-panel') }}">Reseller Panel</a></li>
                         <li><a class="fx-link" href="{{ url('/movies') }}">Movies</a></li>
                         <li><a class="fx-link" href="{{ url('/iptv-applications') }}">IPTV Apps</a></li>
-                        <li><a class="fx-link" href="{{ url('/shop') }}">Shop</a></li>
+                        <li><a class="fx-link" href="{{ url('/shop') }}">Products</a></li>
                     @endif
                 </ul>
             </div>

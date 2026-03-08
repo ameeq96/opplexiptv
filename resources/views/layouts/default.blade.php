@@ -18,9 +18,7 @@
     @include('includes.header')
 
     <div class="body_wrap">
-
         @yield('content')
-
     </div>
 
     @include('includes.voice-assistant')
@@ -35,8 +33,6 @@
     @yield('script')
 
     <script src="{{ v('js/voice-assistant.js') }}"></script>
-
-    </div>
 </body>
 
 </html>

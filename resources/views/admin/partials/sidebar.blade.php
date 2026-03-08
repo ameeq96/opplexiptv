@@ -28,8 +28,17 @@
         <a href="{{ route('admin.blogs.index') }}" class="{{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}">
             <i class="bi bi-journal-text"></i> <span>Blogs</span>
         </a>
-        <a href="{{ route('admin.shop-products.index') }}" class="{{ request()->routeIs('admin.shop-products.*') ? 'active' : '' }}">
-            <i class="bi bi-bag"></i> <span>Shop Products</span>
+        <a href="{{ route('admin.products.index') }}" class="{{ request()->routeIs('admin.products.*') || request()->routeIs('admin.shop-products.*') || request()->routeIs('admin.digital-products.*') ? 'active' : '' }}">
+            <i class="bi bi-bag"></i> <span>Products</span>
+        </a>
+        <a href="{{ route('admin.digital-categories.index') }}" class="{{ request()->routeIs('admin.digital-categories.*') ? 'active' : '' }}">
+            <i class="bi bi-collection"></i> <span>Digital Categories</span>
+        </a>
+        <a href="{{ route('admin.digital-delivery-payloads.index') }}" class="{{ request()->routeIs('admin.digital-delivery-payloads.*') ? 'active' : '' }}">
+            <i class="bi bi-key"></i> <span>Delivery Inventory</span>
+        </a>
+        <a href="{{ route('admin.digital-orders.index') }}" class="{{ request()->routeIs('admin.digital-orders.*') ? 'active' : '' }}">
+            <i class="bi bi-receipt"></i> <span>Digital Orders</span>
         </a>
         <a href="{{ route('admin.home-services.index') }}" class="{{ request()->routeIs('admin.home-services.*') ? 'active' : '' }}">
             <i class="bi bi-layout-text-window-reverse"></i> <span>Home Services</span>

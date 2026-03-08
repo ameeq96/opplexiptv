@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             PricingSectionSeeder::class,
             FooterSeeder::class,
             AdminTranslationsSeeder::class,
+            DigitalCommerceSeeder::class,
         ]);
 
         Admin::create([

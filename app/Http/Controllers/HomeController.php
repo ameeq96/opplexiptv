@@ -9,7 +9,7 @@ use App\Models\Device;
 use App\Models\Order;
 use App\Models\Package;
 use App\Models\Plan;
-use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService, ProductCatalogService};
+use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService};
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -19,6 +19,7 @@ use Illuminate\Pagination\Paginator;
 use App\Models\User;
 use Illuminate\Support\Str;
 use App\Notifications\NewOrderNotification;
+use App\Services\UnifiedProductService;
 
 class HomeController extends Controller
 {
@@ -28,16 +29,23 @@ class HomeController extends Controller
         private LocaleService $locale,
         private ContactService $contact,
         private CaptchaService $captcha,
-        private ProductCatalogService $catalog,
+        private UnifiedProductService $unifiedProducts,
     ) {}
 
     public function home()
     {
-        $products = $this->catalog->getAll();
-        $homeProducts = array_slice($products, 0, 8);
+        $allProducts = $this->unifiedProducts->frontendProducts();
+
+        $homeProducts = $allProducts
+            ->where('type', 'digital')
+            ->values();
+        $homeAffiliateProducts = $allProducts
+            ->where('type', 'affiliate')
+            ->values();
 
         return view('pages.home', [
-            'shopProducts' => $homeProducts,
+            'homeProducts' => $homeProducts,
+            'homeAffiliateProducts' => $homeAffiliateProducts,
             'isRtl'        => $this->locale->isRtl(),
         ]);
     }
@@ -89,7 +97,11 @@ class HomeController extends Controller
 
     public function shop()
     {
-        $products = $this->catalog->getAll();
+        $type = (string) request()->query('type', 'all');
+        $products = $this->unifiedProducts->frontendProducts();
+        if (in_array($type, ['affiliate', 'digital'], true)) {
+            $products = $products->where('type', $type)->values();
+        }
 
         $isRtl = $this->locale->isRtl();
 
@@ -113,6 +125,7 @@ class HomeController extends Controller
 
         return view('pages.shop', [
             'products' => $paginatedProducts,
+            'selectedType' => $type,
             'isRtl'    => $isRtl,
         ]);
     }

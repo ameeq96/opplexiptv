@@ -16,6 +16,11 @@ use App\Http\Controllers\Admin\PricingSectionController as AdminPricingSectionCo
 use App\Http\Controllers\Admin\FooterSettingController as AdminFooterSettingController;
 use App\Http\Controllers\Admin\FooterLinkController as AdminFooterLinkController;
 use App\Http\Controllers\Admin\SocialLinkController as AdminSocialLinkController;
+use App\Http\Controllers\Admin\ProductHubController as AdminProductHubController;
+use App\Http\Controllers\Admin\DigitalCommerce\DigitalCategoryController as AdminDigitalCategoryController;
+use App\Http\Controllers\Admin\DigitalCommerce\DigitalProductController as AdminDigitalProductController;
+use App\Http\Controllers\Admin\DigitalCommerce\DigitalDeliveryPayloadController as AdminDigitalDeliveryPayloadController;
+use App\Http\Controllers\Admin\DigitalCommerce\DigitalOrderController as AdminDigitalOrderController;
 
 use App\Http\Controllers\{
     HomeController,
@@ -27,6 +32,10 @@ use App\Http\Controllers\{
     UserClientController,
     AdminNotificationController,
 };
+use App\Http\Controllers\DigitalCommerce\ProductController as DigitalProductController;
+use App\Http\Controllers\DigitalCommerce\CartController as DigitalCartController;
+use App\Http\Controllers\DigitalCommerce\CheckoutController as DigitalCheckoutController;
+use App\Http\Controllers\DigitalCommerce\CustomerOrderController as DigitalCustomerOrderController;
 use App\Http\Controllers\Admin\TrialClickController;
 use Illuminate\Support\Facades\Artisan;
 
@@ -98,6 +107,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('blogs/{blog}/duplicate', [AdminBlogController::class, 'duplicate'])->name('blogs.duplicate');
 
         Route::resource('shop-products', AdminShopProductController::class);
+        Route::get('products', [AdminProductHubController::class, 'index'])->name('products.index');
+        Route::post('products/toggle-status', [AdminProductHubController::class, 'toggleStatus'])->name('products.toggle-status');
         Route::resource('home-services', AdminHomeServiceController::class);
         Route::resource('testimonials', AdminTestimonialController::class);
         Route::resource('channel-logos', AdminChannelLogoController::class);
@@ -109,6 +120,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::put('footer-settings', [AdminFooterSettingController::class, 'update'])->name('footer-settings.update');
         Route::resource('footer-links', AdminFooterLinkController::class);
         Route::resource('social-links', AdminSocialLinkController::class);
+        Route::resource('digital-categories', AdminDigitalCategoryController::class)->except(['show']);
+        Route::resource('digital-products', AdminDigitalProductController::class)->except(['show']);
+        Route::resource('digital-delivery-payloads', AdminDigitalDeliveryPayloadController::class)
+            ->only(['index', 'create', 'store', 'destroy']);
+        Route::get('digital-orders', [AdminDigitalOrderController::class, 'index'])->name('digital-orders.index');
+        Route::get('digital-orders/{digital_order}', [AdminDigitalOrderController::class, 'show'])->name('digital-orders.show');
+        Route::post('digital-orders/{digital_order}/mark-paid', [AdminDigitalOrderController::class, 'markPaid'])->name('digital-orders.mark-paid');
+        Route::post('digital-orders/{digital_order}/mark-delivered', [AdminDigitalOrderController::class, 'markDelivered'])->name('digital-orders.mark-delivered');
+        Route::post('digital-orders/{digital_order}/items/{item}/assign-delivery', [AdminDigitalOrderController::class, 'assignDelivery'])->name('digital-orders.assign-delivery');
+        Route::post('digital-orders/{digital_order}/resend-email', [AdminDigitalOrderController::class, 'resendEmail'])->name('digital-orders.resend-email');
 
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');
@@ -148,6 +169,17 @@ Route::group(
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
         Route::get('shop', [HomeController::class, 'shop'])->name('shop');
+        Route::get('digital-shop', [DigitalProductController::class, 'index'])->name('digital.shop');
+        Route::get('digital-shop/{slug}', [DigitalProductController::class, 'show'])->name('digital.product.show');
+        Route::get('digital-cart', [DigitalCartController::class, 'index'])->name('digital.cart.index');
+        Route::post('digital-cart/{digital_product}', [DigitalCartController::class, 'add'])->name('digital.cart.add')->middleware('throttle:40,1');
+        Route::patch('digital-cart/{digital_product}', [DigitalCartController::class, 'update'])->name('digital.cart.update')->middleware('throttle:40,1');
+        Route::delete('digital-cart/{digital_product}', [DigitalCartController::class, 'remove'])->name('digital.cart.remove')->middleware('throttle:40,1');
+        Route::get('digital-checkout', [DigitalCheckoutController::class, 'show'])->name('digital.checkout.show');
+        Route::post('digital-checkout', [DigitalCheckoutController::class, 'store'])->name('digital.checkout.store')->middleware('throttle:10,1');
+        Route::get('digital-orders/access/{token}', [DigitalCustomerOrderController::class, 'access'])->name('digital.orders.access');
+        Route::get('digital-orders', [DigitalCustomerOrderController::class, 'index'])->name('digital.orders.index');
+        Route::get('digital-orders/{digital_order}', [DigitalCustomerOrderController::class, 'show'])->name('digital.orders.show');
         Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
         Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 
