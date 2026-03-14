@@ -2,6 +2,126 @@
 @section('title', __('messages.site_title'))
 @push('styles')
 <style>
+    .native-carousel {
+        --native-gap: 30px;
+        --native-items: 1;
+        position: relative;
+    }
+
+    .native-carousel__viewport {
+        overflow: hidden;
+    }
+
+    .native-carousel__track {
+        display: flex;
+        gap: var(--native-gap);
+        transition: transform .55s ease;
+        will-change: transform;
+    }
+
+    .native-carousel__slide {
+        min-width: 0;
+        flex: 0 0 calc((100% - (var(--native-gap) * (var(--native-items) - 1))) / var(--native-items));
+    }
+
+    .native-carousel__arrow {
+        width: 42px;
+        height: 42px;
+        border: 1px solid #e6ebf3;
+        border-radius: 999px;
+        background: #ffffff;
+        color: #0b1526;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 24px rgba(17, 27, 46, .12);
+        transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+    }
+
+    .native-carousel__arrow:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 32px rgba(17, 27, 46, .16);
+    }
+
+    .native-carousel__arrow.is-hidden {
+        opacity: .45;
+    }
+
+    .native-carousel--hero {
+        height: 100%;
+    }
+
+    .native-carousel--hero .native-carousel__viewport,
+    .native-carousel--hero .native-carousel__track,
+    .native-carousel--hero .native-carousel__slide {
+        height: 100%;
+    }
+
+    .native-carousel--hero .native-carousel__viewport {
+        position: relative;
+    }
+
+    .native-carousel--hero .native-carousel__track {
+        display: block;
+    }
+
+    .native-carousel--hero .native-carousel__slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .7s ease, visibility .7s ease;
+    }
+
+    .native-carousel--hero .native-carousel__slide.is-active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .native-home-hero .slide::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(8, 15, 28, .85) 0%, rgba(8, 15, 28, .52) 40%, rgba(8, 15, 28, .2) 100%);
+        z-index: 0;
+    }
+
+    .native-home-hero .slide {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .native-home-hero .slide .auto-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .native-home-hero .inner-box > * {
+        animation: nativeHeroReveal .8s ease both;
+    }
+
+    .native-home-hero .native-carousel__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .native-home-hero .native-carousel__arrow:hover {
+        transform: translateY(-50%) scale(1.03);
+    }
+
+    .native-home-hero .native-carousel__arrow--prev {
+        left: 24px;
+    }
+
+    .native-home-hero .native-carousel__arrow--next {
+        right: 24px;
+    }
+
     .home-products-shell {
         position: relative;
     }
@@ -94,35 +214,151 @@
         padding:10px 12px;
         letter-spacing:.2px;
     }
-    .home-products-carousel .owl-stage-outer {
+    .home-products-carousel {
+        --native-gap: 0px;
+    }
+
+    .home-products-carousel .native-carousel__viewport {
         padding: 6px 2px 16px;
     }
-    .home-products-carousel .owl-nav {
+
+    .home-products-carousel .native-carousel__arrow {
         margin-top: 0;
-        display: flex;
-        justify-content: flex-end;
         gap: 10px;
         position: absolute;
         right: 0;
         top: -78px;
         z-index: 3;
     }
-    [dir="rtl"] .home-products-carousel .owl-nav {
+
+    .home-products-carousel .native-carousel__arrow--prev {
+        right: 46px;
+    }
+
+    .home-products-carousel .native-carousel__arrow--next {
+        right: 0;
+    }
+
+    [dir="rtl"] .home-products-carousel .native-carousel__arrow--prev,
+    [dir="rtl"] .home-products-carousel .native-carousel__arrow--next {
         right: auto;
+    }
+
+    [dir="rtl"] .home-products-carousel .native-carousel__arrow--prev {
+        left: 46px;
+    }
+
+    [dir="rtl"] .home-products-carousel .native-carousel__arrow--next {
         left: 0;
     }
-    .home-products-carousel .owl-nav .owl-prev,
-    .home-products-carousel .owl-nav .owl-next {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background: #ffffff !important;
-        border: 1px solid #e6ebf3 !important;
-        color: #0b1526 !important;
-        display: inline-flex !important;
+
+    .native-carousel--services,
+    .native-carousel--testimonials,
+    .native-carousel--logos {
+        padding: 0 58px;
+    }
+
+    .native-carousel--services .native-carousel__arrow,
+    .native-carousel--testimonials .native-carousel__arrow,
+    .native-carousel--logos .native-carousel__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .native-carousel--services .native-carousel__arrow--prev,
+    .native-carousel--testimonials .native-carousel__arrow--prev,
+    .native-carousel--logos .native-carousel__arrow--prev {
+        left: 0;
+    }
+
+    .native-carousel--services .native-carousel__arrow--next,
+    .native-carousel--testimonials .native-carousel__arrow--next,
+    .native-carousel--logos .native-carousel__arrow--next {
+        right: 0;
+    }
+
+    .native-carousel--logos .native-carousel__slide {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    .native-carousel--logos .image-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .native-carousel--testimonials .testimonial-block,
+    .native-carousel--services .service-block-two {
+        height: 100%;
+    }
+
+    .native-carousel--testimonials .testimonial-block .inner-box,
+    .native-carousel--services .service-block-two .inner-box {
+        height: 100%;
+    }
+
+    .native-carousel--testimonials .testimonial-block .inner-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .native-carousel--testimonials .testimonial-block .upper-box {
+        flex: 1 1 auto;
+        display: flex;
+    }
+
+    .native-carousel--testimonials .testimonial-block .upper-box .text {
+        width: 100%;
+    }
+
+    .native-carousel--testimonials .testimonial-block .lower-box {
+        margin-top: auto;
+    }
+
+    .native-carousel--services .service-block-two .inner-box {
+        padding: 18px 16px;
+        min-height: 235px;
+    }
+
+    .native-carousel--services .service-block-two h4 {
+        margin-bottom: 8px;
+        font-size: 19px;
+        line-height: 1.25;
+    }
+
+    .native-carousel--services .service-block-two .text {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.45;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .native-carousel--services .service-block-two .icon {
+        margin-bottom: 10px;
+    }
+
+    .native-carousel--services .service-block-two .learn-more {
+        margin-top: auto;
+    }
+
+    @keyframes nativeHeroReveal {
+        from {
+            opacity: 0;
+            transform: translateY(24px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     @media (max-width: 991px) {
         .home-products-shell {
             padding: 20px 16px 16px;
@@ -131,21 +367,60 @@
         .home-product-media {
             height: 200px;
         }
-        .home-products-carousel .owl-nav {
+        .native-home-hero .native-carousel__arrow {
+            top: auto;
+            bottom: 82px;
+            transform: none;
+        }
+
+        .native-home-hero .native-carousel__arrow:hover {
+            transform: none;
+        }
+
+        .native-home-hero .native-carousel__arrow--prev {
+            left: 16px;
+        }
+
+        .native-home-hero .native-carousel__arrow--next {
+            right: 16px;
+        }
+
+        .native-carousel--services,
+        .native-carousel--testimonials,
+        .native-carousel--logos {
+            padding: 0 0 58px;
+        }
+
+        .native-carousel--services .service-block-two .inner-box {
+            min-height: 210px;
+            padding: 16px 14px;
+        }
+
+        .native-carousel--services .native-carousel__arrow,
+        .native-carousel--testimonials .native-carousel__arrow,
+        .native-carousel--logos .native-carousel__arrow,
+        .home-products-carousel .native-carousel__arrow {
             position: static;
-            justify-content: center;
             margin-top: 10px;
         }
+
+        .home-products-carousel .native-carousel__arrow--prev,
+        .home-products-carousel .native-carousel__arrow--next {
+            right: auto;
+            left: auto;
+        }
     }
+
 </style>
 @endpush
 @section('content')
     @php
         $waTrial = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
         $currency = config('services.app.default_currency', 'USD');
+        $useNativeHomeCarousel = true;
     @endphp
 
-    @include('includes._slider')
+    @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
 
     @include('includes._best-packages')
 
@@ -165,15 +440,21 @@
                         </div>
                     </div>
 
-                    <div class="home-products-carousel spotlight-carousel owl-carousel owl-theme">
+                    <div class="home-products-carousel native-carousel native-carousel--cards"
+                        data-native-carousel
+                        data-items-desktop="4"
+                        data-items-tablet="2"
+                        data-items-mobile="1"
+                        data-gap="30"
+                        data-autoplay="5000">
+                        <div class="native-carousel__viewport">
+                            <div class="native-carousel__track">
                         @foreach($homeProducts as $p)
-                            <div class="item px-2">
+                            <div class="native-carousel__slide px-2">
                                 <article class="home-product-card h-100">
                                     <a class="home-product-media" href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif>
                                         @if(!empty($p['image']))
-                                            <img class="owl-lazy"
-                                                 data-src="{{ $p['image'] }}"
-                                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                                            <img src="{{ $p['image'] }}"
                                                  alt="{{ $p['name'] }}"
                                                  loading="lazy"
                                                  decoding="async">
@@ -202,6 +483,8 @@
                                 </article>
                             </div>
                         @endforeach
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,7 +492,7 @@
     @endif
 
     @if(!empty($homeAffiliateProducts) && count($homeAffiliateProducts) > 0)
-        <section class="shop-section shop-section-2 mt-4"
+        <section class="shop-section shop-section-2 mt-5"
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
             <div class="auto-container">
                 <div class="home-products-shell">
@@ -224,15 +507,21 @@
                         </div>
                     </div>
 
-                    <div class="home-products-carousel spotlight-carousel owl-carousel owl-theme">
+                    <div class="home-products-carousel native-carousel native-carousel--cards"
+                        data-native-carousel
+                        data-items-desktop="4"
+                        data-items-tablet="2"
+                        data-items-mobile="1"
+                        data-gap="30"
+                        data-autoplay="5000">
+                        <div class="native-carousel__viewport">
+                            <div class="native-carousel__track">
                         @foreach($homeAffiliateProducts as $p)
-                            <div class="item px-2">
+                            <div class="native-carousel__slide px-2">
                                 <article class="home-product-card h-100">
                                     <a class="home-product-media" href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif>
                                         @if(!empty($p['image']))
-                                            <img class="owl-lazy"
-                                                 data-src="{{ $p['image'] }}"
-                                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                                            <img src="{{ $p['image'] }}"
                                                  alt="{{ $p['name'] }}"
                                                  loading="lazy"
                                                  decoding="async">
@@ -261,6 +550,8 @@
                                 </article>
                             </div>
                         @endforeach
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,11 +560,11 @@
 
     @include('includes._we-provide-unlimited')
 
-    @include('includes._services')
+    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel])
 
     @unless ($isMobile)
-        @include('includes._testimonials')
-        @include('includes._channels-carousel')
+        @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel])
+        @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
     @endunless
 
     @include('includes._check-trail')

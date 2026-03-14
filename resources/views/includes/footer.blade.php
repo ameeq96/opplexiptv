@@ -286,6 +286,183 @@
                 lazyBackgrounds.forEach(applyBg);
             }
 
+            const nativeCarousels = document.querySelectorAll('[data-native-carousel]');
+
+            const bindNativeCarousel = (root) => {
+                const viewport = root.querySelector('.native-carousel__viewport');
+                const track = root.querySelector('.native-carousel__track');
+                const slides = Array.from(root.querySelectorAll('.native-carousel__slide'));
+                const prev = root.querySelector('[data-native-prev]');
+                const next = root.querySelector('[data-native-next]');
+                const dots = Array.from(root.querySelectorAll('[data-native-dot]'));
+                const autoplay = parseInt(root.getAttribute('data-autoplay') || '0', 10);
+                const isHero = root.getAttribute('data-carousel-type') === 'hero';
+                const isRtlCarousel = root.getAttribute('data-rtl') === 'true';
+
+                if (!viewport || !track || slides.length === 0) {
+                    return;
+                }
+
+                let index = 0;
+                let visibleItems = 1;
+                let timer = null;
+                let startX = 0;
+                let isPointerDown = false;
+
+                const getVisibleItems = () => {
+                    if (isHero) return 1;
+                    const width = window.innerWidth;
+                    if (width <= 767) return parseInt(root.getAttribute('data-items-mobile') || '1', 10);
+                    if (width <= 1024) return parseInt(root.getAttribute('data-items-tablet') || root.getAttribute('data-items-mobile') || '1', 10);
+                    return parseInt(root.getAttribute('data-items-desktop') || '1', 10);
+                };
+
+                const maxIndex = () => Math.max(0, slides.length - visibleItems);
+
+                const lazyLoadSlide = (slide) => {
+                    if (!slide) return;
+                    const bg = slide.getAttribute('data-bg');
+                    if (bg && !slide.style.backgroundImage) {
+                        slide.style.backgroundImage = `url(${bg})`;
+                    }
+                };
+
+                const updateDots = () => {
+                    dots.forEach((dot, dotIndex) => {
+                        dot.classList.toggle('is-active', dotIndex === index);
+                    });
+                };
+
+                const updateArrows = () => {
+                    const disabled = slides.length <= visibleItems;
+                    if (prev) {
+                        prev.classList.toggle('is-hidden', disabled);
+                        prev.disabled = disabled;
+                    }
+                    if (next) {
+                        next.classList.toggle('is-hidden', disabled);
+                        next.disabled = disabled;
+                    }
+                };
+
+                const render = () => {
+                    visibleItems = getVisibleItems();
+                    root.style.setProperty('--native-items', String(visibleItems));
+                    root.style.setProperty('--native-gap', `${parseInt(root.getAttribute('data-gap') || '30', 10)}px`);
+                    root.style.setProperty('--native-autoplay', `${autoplay}ms`);
+
+                    if (index > maxIndex()) {
+                        index = maxIndex();
+                    }
+
+                    if (isHero) {
+                        slides.forEach((slide, slideIndex) => {
+                            const isActive = slideIndex === index;
+                            slide.classList.toggle('is-active', isActive);
+                            slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+                            if (isActive) lazyLoadSlide(slide);
+                        });
+                        updateDots();
+                        updateArrows();
+                        return;
+                    }
+
+                    const gap = parseInt(root.getAttribute('data-gap') || '30', 10);
+                    const viewportWidth = viewport.clientWidth;
+                    const slideWidth = visibleItems > 0 ? (viewportWidth - (gap * (visibleItems - 1))) / visibleItems : viewportWidth;
+                    const direction = isRtlCarousel ? 1 : -1;
+                    track.style.transform = `translate3d(${direction * index * (slideWidth + gap)}px, 0, 0)`;
+                    slides.slice(index, index + visibleItems + 1).forEach(lazyLoadSlide);
+                    updateArrows();
+                };
+
+                const goTo = (nextIndex) => {
+                    if (isHero) {
+                        if (nextIndex < 0) nextIndex = slides.length - 1;
+                        if (nextIndex >= slides.length) nextIndex = 0;
+                    } else {
+                        if (nextIndex < 0) nextIndex = maxIndex();
+                        if (nextIndex > maxIndex()) nextIndex = 0;
+                    }
+
+                    index = nextIndex;
+                    render();
+                    updateDots();
+                };
+
+                const stopAutoplay = () => {
+                    if (timer) {
+                        window.clearInterval(timer);
+                        timer = null;
+                    }
+                };
+
+                const startAutoplay = () => {
+                    stopAutoplay();
+                    if (!autoplay) return;
+                    if (!isHero && slides.length <= visibleItems) return;
+
+                    timer = window.setInterval(() => {
+                        goTo(index + 1);
+                    }, autoplay);
+                };
+
+                if (prev) {
+                    prev.addEventListener('click', () => {
+                        goTo(index - 1);
+                        startAutoplay();
+                    });
+                }
+
+                if (next) {
+                    next.addEventListener('click', () => {
+                        goTo(index + 1);
+                        startAutoplay();
+                    });
+                }
+
+                dots.forEach((dot) => {
+                    dot.addEventListener('click', () => {
+                        goTo(parseInt(dot.getAttribute('data-native-dot') || '0', 10));
+                        startAutoplay();
+                    });
+                });
+
+                if (!isHero) {
+                    root.addEventListener('mouseenter', stopAutoplay);
+                    root.addEventListener('mouseleave', startAutoplay);
+                    root.addEventListener('focusin', stopAutoplay);
+                    root.addEventListener('focusout', startAutoplay);
+                }
+
+                viewport.addEventListener('pointerdown', (event) => {
+                    isPointerDown = true;
+                    startX = event.clientX;
+                });
+
+                viewport.addEventListener('pointerup', (event) => {
+                    if (!isPointerDown) return;
+                    const delta = event.clientX - startX;
+                    isPointerDown = false;
+                    if (Math.abs(delta) < 40) return;
+                    goTo(index + (delta > 0 ? -1 : 1));
+                    startAutoplay();
+                });
+
+                viewport.addEventListener('pointerleave', () => {
+                    isPointerDown = false;
+                });
+
+                window.addEventListener('resize', render, { passive: true });
+
+                lazyLoadSlide(slides[0]);
+                render();
+                updateDots();
+                startAutoplay();
+            };
+
+            nativeCarousels.forEach(bindNativeCarousel);
+
             // Reseller toggle (guard all elements)
             const toggle = document.getElementById('resellerToggle');
             const normal = document.getElementById('normalPackages');

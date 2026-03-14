@@ -5,31 +5,74 @@
             <h3 aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h3>
         </div>
 
-        <div class="testimonial-carousel owl-carousel owl-theme" role="region" aria-label="Testimonial carousel of IPTV customer feedback">
-            @foreach ($testimonials as $testimonial)
-                <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="text" aria-label="Customer Feedback">"{{ $testimonial['text'] }}"</div>
-                        </div>
-                        <div class="lower-box">
-                            <div class="color-layer" aria-hidden="true"></div>
-                            <div class="pattern-layer" style="background-image:url('{{ asset('images/background/pattern-8.webp') }}')" aria-hidden="true"></div>
+        @if (!empty($useNativeCarousel))
+            <div class="native-carousel native-carousel--cards native-carousel--testimonials"
+                data-native-carousel
+                data-items-desktop="3"
+                data-items-tablet="2"
+                data-items-mobile="1"
+                data-gap="30"
+                data-autoplay="4000"
+                role="region"
+                aria-label="Testimonial carousel of IPTV customer feedback">
+                <div class="native-carousel__viewport">
+                    <div class="native-carousel__track">
+                        @foreach ($testimonials as $testimonial)
+                            <div class="native-carousel__slide">
+                                <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
+                                    <div class="inner-box">
+                                        <div class="upper-box">
+                                            <div class="text" aria-label="Customer Feedback">"{{ $testimonial['text'] }}"</div>
+                                        </div>
+                                        <div class="lower-box">
+                                            <div class="color-layer" aria-hidden="true"></div>
+                                            <div class="pattern-layer" style="background-image:url('{{ asset('images/background/pattern-8.webp') }}')" aria-hidden="true"></div>
 
-                            <div class="author-image-outer">
-                                <span class="quote-icon fa fa-quote-left" aria-hidden="true"></span>
-                            <div class="author-image">
-                                <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
-                                     alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                     width="150" height="150" loading="lazy" />
-                            </div>
-                            </div>
+                                            <div class="author-image-outer">
+                                                <span class="quote-icon fa fa-quote-left" aria-hidden="true"></span>
+                                                <div class="author-image">
+                                                    <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
+                                                        alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
+                                                        width="150" height="150" loading="lazy" />
+                                                </div>
+                                            </div>
 
-                            <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                        </div>
+                                            <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-            @endforeach
-        </div>
+            </div>
+        @else
+            <div class="testimonial-carousel owl-carousel owl-theme" role="region" aria-label="Testimonial carousel of IPTV customer feedback">
+                @foreach ($testimonials as $testimonial)
+                    <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
+                        <div class="inner-box">
+                            <div class="upper-box">
+                                <div class="text" aria-label="Customer Feedback">"{{ $testimonial['text'] }}"</div>
+                            </div>
+                            <div class="lower-box">
+                                <div class="color-layer" aria-hidden="true"></div>
+                                <div class="pattern-layer" style="background-image:url('{{ asset('images/background/pattern-8.webp') }}')" aria-hidden="true"></div>
+
+                                <div class="author-image-outer">
+                                    <span class="quote-icon fa fa-quote-left" aria-hidden="true"></span>
+                                <div class="author-image">
+                                    <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
+                                         alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
+                                         width="150" height="150" loading="lazy" />
+                                </div>
+                                </div>
+
+                                <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        @endif
     </div>
 </section>
