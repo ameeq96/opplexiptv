@@ -23,7 +23,7 @@
         inset: 0;
         z-index: 6;
         pointer-events: none;
-        background: linear-gradient(135deg, rgba(8, 15, 28, .96) 0%, rgba(16, 24, 48, .92) 100%);
+        background: linear-gradient(135deg, rgba(244, 247, 252, .98) 0%, rgba(232, 238, 248, .94) 100%);
     }
 
     .section-skeleton__overlay::before {
@@ -50,7 +50,7 @@
     .section-skeleton__button {
         display: block;
         border-radius: 999px;
-        background: rgba(255, 255, 255, .14);
+        background: rgba(148, 163, 184, .22);
     }
 
     .section-skeleton__pill {
