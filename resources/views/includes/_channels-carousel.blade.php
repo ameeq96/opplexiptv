@@ -1,4 +1,21 @@
-<section class="clients-section" aria-label="Trusted Brands Using Opplex IPTV">
+<section class="clients-section {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--logos' : '' }}"
+    @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
+    aria-label="Trusted Brands Using Opplex IPTV">
+    @if (!empty($useSectionSkeletons))
+        <div class="section-skeleton__overlay" aria-hidden="true">
+            <div class="section-skeleton__content">
+                <span class="section-skeleton__pill"></span>
+                <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                <div class="section-skeleton__cards">
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                </div>
+            </div>
+        </div>
+    @endif
     <div class="auto-container">
         @if (!empty($useNativeCarousel))
             <div class="native-carousel native-carousel--cards native-carousel--logos"

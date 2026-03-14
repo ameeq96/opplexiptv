@@ -1,6 +1,19 @@
-<section class="appointment-section style-two"
+<section class="appointment-section style-two {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--cta' : '' }}"
+    @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
     style="background-image:url('{{ asset('images/background/pattern-21.webp') }}');" dir="{{ $isRtl ? 'rtl' : 'ltr' }}"
     aria-label="Start Your IPTV Free Trial with Opplex" role="region">
+    @if (!empty($useSectionSkeletons))
+        <div class="section-skeleton__overlay" aria-hidden="true">
+            <div class="section-skeleton__content">
+                <div class="section-skeleton__meta">
+                    <span class="section-skeleton__pill"></span>
+                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                    <span class="section-skeleton__line section-skeleton__line--md"></span>
+                </div>
+                <span class="section-skeleton__button"></span>
+            </div>
+        </div>
+    @endif
     <div class="auto-container">
         <div class="row clearfix {{ $isRtl ? 'rtl-row' : '' }}">
             <div class="title-column col-lg-6 col-md-12 col-sm-12" role="heading" aria-level="2"

@@ -463,6 +463,65 @@
 
             nativeCarousels.forEach(bindNativeCarousel);
 
+            const skeletonSections = document.querySelectorAll('[data-skeleton-section]');
+
+            const markSectionReady = (section) => {
+                section.classList.add('is-loaded');
+            };
+
+            const waitForSectionAssets = (section) => {
+                const images = Array.from(section.querySelectorAll('img')).filter((img) => {
+                    return !img.closest('.section-skeleton__overlay');
+                });
+
+                if (images.length === 0) {
+                    return new Promise((resolve) => window.setTimeout(resolve, 250));
+                }
+
+                return Promise.all(images.map((img) => {
+                    if (img.complete && img.naturalWidth > 0) {
+                        return Promise.resolve();
+                    }
+
+                    return new Promise((resolve) => {
+                        const done = () => {
+                            img.removeEventListener('load', done);
+                            img.removeEventListener('error', done);
+                            resolve();
+                        };
+
+                        img.addEventListener('load', done, { once: true });
+                        img.addEventListener('error', done, { once: true });
+                    });
+                }));
+            };
+
+            if ('IntersectionObserver' in window && skeletonSections.length) {
+                const skeletonObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) return;
+
+                        const section = entry.target;
+                        observer.unobserve(section);
+
+                        Promise.race([
+                            waitForSectionAssets(section),
+                            new Promise((resolve) => window.setTimeout(resolve, 1200))
+                        ]).then(() => {
+                            window.requestAnimationFrame(() => markSectionReady(section));
+                        });
+                    });
+                }, {
+                    rootMargin: '220px 0px'
+                });
+
+                skeletonSections.forEach((section) => skeletonObserver.observe(section));
+            } else {
+                skeletonSections.forEach((section, index) => {
+                    window.setTimeout(() => markSectionReady(section), 250 + (index * 80));
+                });
+            }
+
             // Reseller toggle (guard all elements)
             const toggle = document.getElementById('resellerToggle');
             const normal = document.getElementById('normalPackages');

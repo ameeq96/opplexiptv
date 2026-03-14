@@ -1,5 +1,17 @@
 @if ($isMobile)
-    <section class="hero-section-mobile" aria-label="Opplex IPTV Hero Section - Start Your IPTV Trial in HD/4K">
+    <section class="hero-section-mobile {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--hero' : '' }}"
+        @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
+        aria-label="Opplex IPTV Hero Section - Start Your IPTV Trial in HD/4K">
+        @if (!empty($useSectionSkeletons))
+            <div class="section-skeleton__overlay" aria-hidden="true">
+                <div class="section-skeleton__content">
+                    <span class="section-skeleton__pill"></span>
+                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                    <span class="section-skeleton__line section-skeleton__line--md"></span>
+                    <span class="section-skeleton__button"></span>
+                </div>
+            </div>
+        @endif
         <div class="container text-center">
             <p class="subtitle">{{ __('messages.subtitle') }}</p>
             <h3 class="heading">{{ __('messages.heading-mobile') }}</h3>
@@ -26,7 +38,19 @@
     @endphp
 
     @if (!empty($useNativeCarousel))
-        <section class="main-slider-two native-home-hero" aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
+        <section class="main-slider-two native-home-hero {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--hero' : '' }}"
+            @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
+            aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
+            @if (!empty($useSectionSkeletons))
+                <div class="section-skeleton__overlay" aria-hidden="true">
+                    <div class="section-skeleton__content">
+                        <span class="section-skeleton__pill"></span>
+                        <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                        <span class="section-skeleton__line section-skeleton__line--md"></span>
+                        <span class="section-skeleton__button"></span>
+                    </div>
+                </div>
+            @endif
             <div class="native-carousel native-carousel--hero"
                 data-native-carousel
                 data-carousel-type="hero"
@@ -108,7 +132,19 @@
             </div>
         </section>
     @else
-        <section class="main-slider-two" aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
+        <section class="main-slider-two {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--hero' : '' }}"
+            @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
+            aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
+            @if (!empty($useSectionSkeletons))
+                <div class="section-skeleton__overlay" aria-hidden="true">
+                    <div class="section-skeleton__content">
+                        <span class="section-skeleton__pill"></span>
+                        <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                        <span class="section-skeleton__line section-skeleton__line--md"></span>
+                        <span class="section-skeleton__button"></span>
+                    </div>
+                </div>
+            @endif
             <div class="main-slider-carousel owl-carousel owl-theme" data-rtl="{{ $isRtl ? 'true' : 'false' }}">
                 @foreach ($movies as $index => $movie)
                     <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"

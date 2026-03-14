@@ -2,6 +2,175 @@
 @section('title', __('messages.site_title'))
 @push('styles')
 <style>
+    .skeleton-section {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skeleton-section:not(.is-loaded) > *:not(.section-skeleton__overlay) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .skeleton-section.is-loaded > *:not(.section-skeleton__overlay) {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .35s ease;
+    }
+
+    .section-skeleton__overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 6;
+        pointer-events: none;
+        background: linear-gradient(135deg, rgba(8, 15, 28, .96) 0%, rgba(16, 24, 48, .92) 100%);
+    }
+
+    .section-skeleton__overlay::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .12) 48%, transparent 100%);
+        transform: translateX(-100%);
+        animation: sectionSkeletonShimmer 1.5s linear infinite;
+    }
+
+    .section-skeleton__content {
+        position: relative;
+        height: 100%;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .section-skeleton__pill,
+    .section-skeleton__line,
+    .section-skeleton__card,
+    .section-skeleton__button {
+        display: block;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, .14);
+    }
+
+    .section-skeleton__pill {
+        width: 110px;
+        height: 12px;
+    }
+
+    .section-skeleton__line {
+        height: 16px;
+        width: 100%;
+        max-width: 520px;
+        border-radius: 10px;
+    }
+
+    .section-skeleton__line--lg {
+        height: 22px;
+        max-width: 620px;
+    }
+
+    .section-skeleton__line--md {
+        max-width: 420px;
+    }
+
+    .section-skeleton__button {
+        width: 220px;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 14px;
+    }
+
+    .section-skeleton__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 16px;
+    }
+
+    .section-skeleton__card {
+        height: 180px;
+        border-radius: 22px;
+    }
+
+    .skeleton-section--hero {
+        min-height: 560px;
+    }
+
+    .skeleton-section--hero .section-skeleton__content {
+        justify-content: center;
+        padding: 70px 7vw;
+    }
+
+    .skeleton-section--hero .section-skeleton__cards {
+        display: none;
+    }
+
+    .skeleton-section--pricing .section-skeleton__cards,
+    .skeleton-section--products .section-skeleton__cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .skeleton-section--pricing .section-skeleton__card {
+        height: 360px;
+    }
+
+    .skeleton-section--products .section-skeleton__card {
+        height: 300px;
+    }
+
+    .skeleton-section--services .section-skeleton__card {
+        height: 220px;
+    }
+
+    .skeleton-section--testimonials .section-skeleton__card {
+        height: 260px;
+    }
+
+    .skeleton-section--logos .section-skeleton__cards {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .skeleton-section--logos .section-skeleton__card {
+        height: 90px;
+        border-radius: 18px;
+    }
+
+    .skeleton-section--cta .section-skeleton__content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skeleton-section--cta .section-skeleton__cards {
+        display: none;
+    }
+
+    .skeleton-section--cta .section-skeleton__meta {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex: 1 1 auto;
+    }
+
+    .skeleton-section--cta .section-skeleton__button {
+        margin-top: 0;
+        width: 280px;
+        flex: 0 0 auto;
+    }
+
+    .skeleton-section.is-loaded .section-skeleton__overlay {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .28s ease, visibility .28s ease;
+    }
+
+    @keyframes sectionSkeletonShimmer {
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
     .native-carousel {
         --native-gap: 30px;
         --native-items: 1;
@@ -360,6 +529,28 @@
     }
 
     @media (max-width: 991px) {
+        .section-skeleton__content {
+            padding: 24px 18px;
+        }
+
+        .section-skeleton__cards,
+        .skeleton-section--pricing .section-skeleton__cards,
+        .skeleton-section--products .section-skeleton__cards,
+        .skeleton-section--logos .section-skeleton__cards {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .skeleton-section--cta .section-skeleton__content {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .skeleton-section--cta .section-skeleton__button {
+            width: 220px;
+        }
+
         .home-products-shell {
             padding: 20px 16px 16px;
             border-radius: 18px;
@@ -411,6 +602,19 @@
         }
     }
 
+    @media (max-width: 767px) {
+        .skeleton-section--hero {
+            min-height: 320px;
+        }
+
+        .section-skeleton__cards,
+        .skeleton-section--pricing .section-skeleton__cards,
+        .skeleton-section--products .section-skeleton__cards,
+        .skeleton-section--logos .section-skeleton__cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
 </style>
 @endpush
 @section('content')
@@ -418,15 +622,30 @@
         $waTrial = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
         $currency = config('services.app.default_currency', 'USD');
         $useNativeHomeCarousel = true;
+        $useSectionSkeletons = true;
     @endphp
 
-    @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
+    @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
 
-    @include('includes._best-packages')
+    @include('includes._best-packages', ['useSectionSkeletons' => $useSectionSkeletons])
 
     @if(!empty($homeProducts) && count($homeProducts) > 0)
-        <section class="shop-section shop-section-2"
+        <section class="shop-section shop-section-2 skeleton-section skeleton-section--products"
+            data-skeleton-section
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
+            <div class="section-skeleton__overlay" aria-hidden="true">
+                <div class="section-skeleton__content">
+                    <span class="section-skeleton__pill"></span>
+                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                    <span class="section-skeleton__line section-skeleton__line--md"></span>
+                    <div class="section-skeleton__cards">
+                        <span class="section-skeleton__card"></span>
+                        <span class="section-skeleton__card"></span>
+                        <span class="section-skeleton__card"></span>
+                        <span class="section-skeleton__card"></span>
+                    </div>
+                </div>
+            </div>
             <div class="auto-container">
                 <div class="home-products-shell">
                     <div class="sec-title mb-4" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
@@ -492,8 +711,22 @@
     @endif
 
     @if(!empty($homeAffiliateProducts) && count($homeAffiliateProducts) > 0)
-        <section class="shop-section shop-section-2 mt-5"
+        <section class="shop-section shop-section-2 mt-5 skeleton-section skeleton-section--products"
+            data-skeleton-section
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
+            <div class="section-skeleton__overlay" aria-hidden="true">
+                <div class="section-skeleton__content">
+                    <span class="section-skeleton__pill"></span>
+                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                    <span class="section-skeleton__line section-skeleton__line--md"></span>
+                    <div class="section-skeleton__cards">
+                        <span class="section-skeleton__card"></span>
+                        <span class="section-skeleton__card"></span>
+                        <span class="section-skeleton__card"></span>
+                        <span class="section-skeleton__card"></span>
+                    </div>
+                </div>
+            </div>
             <div class="auto-container">
                 <div class="home-products-shell">
                     <div class="sec-title mb-4" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
@@ -558,16 +791,16 @@
         </section>
     @endif
 
-    @include('includes._we-provide-unlimited')
+    @include('includes._we-provide-unlimited', ['useSectionSkeletons' => $useSectionSkeletons])
 
-    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel])
+    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
 
     @unless ($isMobile)
-        @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel])
-        @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
+        @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
+        @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
     @endunless
 
-    @include('includes._check-trail')
+    @include('includes._check-trail', ['useSectionSkeletons' => $useSectionSkeletons])
 @stop
 
 @section('jsonld')

@@ -1,4 +1,21 @@
-<section class="pricing-section style-two" id="pricing-section" aria-label="IPTV Pricing Plans and Reseller Packages">
+<section class="pricing-section style-two {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--pricing' : '' }}"
+    @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
+    id="pricing-section" aria-label="IPTV Pricing Plans and Reseller Packages">
+    @if (!empty($useSectionSkeletons))
+        <div class="section-skeleton__overlay" aria-hidden="true">
+            <div class="section-skeleton__content">
+                <span class="section-skeleton__pill"></span>
+                <span class="section-skeleton__line section-skeleton__line--lg"></span>
+                <span class="section-skeleton__line section-skeleton__line--md"></span>
+                <div class="section-skeleton__cards">
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                    <span class="section-skeleton__card"></span>
+                </div>
+            </div>
+        </div>
+    @endif
     <div class="auto-container">
 
         <div class="{{ $containerClass ?? 'container' }}">
