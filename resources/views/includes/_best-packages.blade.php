@@ -23,7 +23,7 @@
                 <div class="separator"></div>
             @endunless
 
-            <h1 class="h2"><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h1>
+            <h3><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h3>
 
             @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
                 <h2 class="h4">{{ $pricingSection['subheading'] ?? __('messages.pricing_subheading') }}</h2>
@@ -31,18 +31,48 @@
         </div>
 
         <style>
+
+            .pricing-section.style-two .separator {
+                width: 78px;
+                height: 6px;
+                margin: 0 auto 22px;
+                border-radius: 999px;
+                background: linear-gradient(90deg, #ff2e18 0%, #ff4d3a 100%);
+            }
+
+            .pricing-section.style-two h1.h2 {
+                margin: 0;
+                color: #0f172a;
+                font-size: clamp(34px, 4vw, 58px);
+                line-height: 1.03;
+                letter-spacing: -.04em;
+                text-align: center;
+            }
+
+            .pricing-section.style-two h2.h4 {
+                margin: 14px 0 0;
+                color: #475569;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.5;
+                text-align: center;
+            }
+
             .vendor-toggle,
             .vendor-toggle-reseller {
                 display: inline-flex;
-                gap: .5rem;
-                background: #eef2ff;
-                border-radius: 12px;
-                padding: .375rem;
+                gap: .4rem;
+                background: #edf3ff;
+                border: 1px solid #dbe7fb;
+                border-radius: 16px;
+                padding: .4rem;
             }
 
             .pricing-controls {
                 gap: 1rem;
                 flex-wrap: wrap;
+                margin-top: 28px !important;
+                margin-bottom: 26px !important;
             }
 
             /* Prevent initial flash/LCP shift: hide secondary vendors + reseller by default (JS toggles later) */
@@ -56,7 +86,9 @@
 
             #real-toggle label.form-switch {
                font-size: 15px !important;
-               justify-content: start !important
+               justify-content: start !important;
+               color: #0f172a;
+               font-weight: 600;
             }
 
             #real-toggle label.form-switch span {
@@ -68,8 +100,8 @@
             .vendor-toggle-reseller .tg {
                 border: 0;
                 background: transparent;
-                padding: .5rem .9rem;
-                border-radius: 10px;
+                padding: .7rem 1.1rem;
+                border-radius: 12px;
                 font-weight: 700;
                 color: #1e293b;
                 cursor: pointer;
@@ -78,9 +110,9 @@
 
             .vendor-toggle .tg.active,
             .vendor-toggle-reseller .tg.active {
-                background: #2563eb;
+                background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
                 color: #fff;
-                box-shadow: 0 6px 14px rgba(37, 99, 235, .25);
+                box-shadow: 0 10px 24px rgba(37, 99, 235, .24);
             }
 
             .pkg-item .price-block,
@@ -107,38 +139,141 @@
                 flex-shrink: 0;
             }
 
-            /* Stabilize card height to reduce layout shifts while fonts load */
             .price-block {
-                min-height: 520px;
-            }
-            @media (max-width: 992px) {
-                .price-block {
-                    min-height: 500px;
-                }
-            }
-            @media (max-width: 576px) {
-                .price-block {
-                    min-height: 460px;
-                }
+                min-height: 100%;
             }
 
-            #normalPackages,
+            .pricing-section.style-two .price-block .inner-box {
+                border-radius: 30px;
+                border: 1px solid #e8edf5;
+                background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+                box-shadow: 0 20px 50px rgba(15, 23, 42, .08);
+                overflow: hidden;
+            }
+
+            .pricing-section.style-two .price-block .upper-box {
+                padding: 34px 26px 28px;
+                background: radial-gradient(circle at top center, rgba(255, 70, 52, .16) 0%, rgba(255, 70, 52, 0) 56%) !important;
+            }
+
+            .pricing-section.style-two .price-block .icon-list {
+                justify-content: center;
+                margin-bottom: 18px;
+            }
+
+            .pricing-section.style-two .price-block .icon-list li {
+                width: 86px;
+                height: 86px;
+                padding: 0;
+                border-radius: 50%;
+                background: #ffffff;
+                box-shadow: 0 16px 34px rgba(15, 23, 42, .08);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .pricing-section.style-two .price-block .upper-box h4 {
+                margin: 0;
+                color: #0f172a;
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 1.14;
+                letter-spacing: -.03em;
+            }
+
+            .pricing-section.style-two .price-block .upper-box h4 span {
+                margin-top: 10px;
+                color: #ff2e18;
+                font-size: 18px;
+                font-weight: 800;
+                line-height: 1.3;
+            }
+
+            .pricing-section.style-two .price-block .lower-box {
+                padding: 0 30px 30px;
+            }
+
+            .pricing-section.style-two .price-block .price-list li {
+                margin-bottom: 16px;
+                color: #1e293b;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 1.45;
+            }
+
+            .pricing-section.style-two .price-block .price-list li:before {
+                color: #ff2e18;
+                font-weight: 700;
+            }
+
+            .pricing-section.style-two .package-price-button,
+            .pricing-section.style-two .button-box-2 {
+                gap: 14px;
+                margin-top: 12px;
+            }
+
+            .pricing-section.style-two .price-block .button-box .theme-btn {
+                min-width: 0;
+                flex: 1 1 auto;
+                border-radius: 16px;
+                padding: 16px 20px;
+                background: linear-gradient(135deg, #ff1d09 0%, #e10600 100%);
+                box-shadow: none;
+            }
+
+            .pricing-section.style-two .price-block .button-box .theme-btn:before {
+                display: none;
+            }
+
+            .pricing-section.style-two .price-block .button-box .theme-btn .txt {
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 800;
+            }
+
+            .pricing-section.style-two .price-block .button-box .whatsapp {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                box-shadow: 0 10px 22px rgba(34, 197, 94, .18);
+            }
+
+            #creditInfo {
+                padding: 18px 22px;
+                border-radius: 20px;
+                background: #fff4f2;
+                border: 1px solid #ffd7d1;
+            }
+
+            #creditInfo p {
+                margin: 0;
+                color: #0f172a;
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            #normalPackages.scroll-wrapper.normal-wrapper,
             #resellerPackages .reseller-wrapper {
-                display: grid;
-                gap: 20px;
-            }
-
-            #normalPackages {
+                display: grid !important;
                 grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 24px;
+                overflow: visible;
+                scroll-snap-type: none;
+                padding-bottom: 0;
             }
 
-            #resellerPackages .reseller-wrapper {
-                grid-template-columns: repeat(4, minmax(0, 1fr));
+            #normalPackages .pkg-item,
+            #resellerPackages .reseller-wrapper .pkg-item {
+                width: auto !important;
+                min-width: 0 !important;
+                max-width: none !important;
+                flex: initial !important;
             }
 
-            @media (max-width: 1200px) {
+            @media (max-width: 991px) {
 
-                #normalPackages,
+                #normalPackages.scroll-wrapper.normal-wrapper,
                 #resellerPackages .reseller-wrapper {
                     grid-template-columns: repeat(3, minmax(0, 1fr));
                 }
@@ -146,7 +281,7 @@
 
             @media (max-width: 992px) {
 
-                #normalPackages,
+                #normalPackages.scroll-wrapper.normal-wrapper,
                 #resellerPackages .reseller-wrapper {
                     grid-template-columns: repeat(2, minmax(0, 1fr));
                 }
@@ -154,7 +289,7 @@
 
             @media (max-width: 576px) {
 
-                #normalPackages,
+                #normalPackages.scroll-wrapper.normal-wrapper,
                 #resellerPackages .reseller-wrapper {
                     grid-template-columns: 1fr;
                 }
@@ -162,7 +297,7 @@
 
             @media (max-width: 768px) {
 
-                #normalPackages,
+                #normalPackages.scroll-wrapper.normal-wrapper,
                 #resellerPackages .reseller-wrapper {
                     display: grid;
                     grid-auto-flow: column;
@@ -182,6 +317,24 @@
 
                 .price-block {
                     height: 100%;
+                }
+            }
+
+            @media (max-width: 991px) {
+                .pricing-section.style-two {
+                    padding: 72px 0 50px;
+                }
+
+                .pricing-section.style-two .price-block .inner-box {
+                    border-radius: 24px;
+                }
+
+                .pricing-section.style-two .price-block .upper-box {
+                    padding: 28px 18px 24px;
+                }
+
+                .pricing-section.style-two .price-block .lower-box {
+                    padding: 0 20px 22px;
                 }
             }
         </style>
@@ -287,7 +440,8 @@
             <div class="reseller-wrapper">
                 @foreach ($resellerPlans as $plan)
                     @php
-                        $vendorResKey = strtolower(data_get($plan, 'vendor', 'opplex'));
+                        $vendorResRaw = strtolower(data_get($plan, 'vendor', 'opplex'));
+                        $vendorResKey = in_array($vendorResRaw, ['opplex', 'starshare']) ? $vendorResRaw : 'opplex';
 
                         $plainPrice = trim(strip_tags($plan['price'] ?? ''));
                         preg_match_all('/\d+(?:\.\d+)?/', $plainPrice, $m);
@@ -305,10 +459,13 @@
                                     style="background-image:url('{{ asset('images/background/pattern-4.webp') }}');"
                                 @endunless>
                                 <ul class="icon-list">
-                                    @foreach ($plan['icons'] ?? [] as $icon)
-                                        <li><span class="icon"><img src="{{ asset($icon) }}" alt="Reseller Icon"
+                                    @php
+                                        $primaryResellerIcon = collect($plan['icons'] ?? [])->first();
+                                    @endphp
+                                    @if ($primaryResellerIcon)
+                                        <li><span class="icon"><img src="{{ asset($primaryResellerIcon) }}" alt="Reseller Icon"
                                                     width="48" height="48"></span></li>
-                                    @endforeach
+                                    @endif
                                 </ul>
                                 <h4>{{ $resellerDisplayTitle }}<span>{!! $plan['price'] !!}</span></h4>
                             </div>
@@ -354,6 +511,7 @@
         const iptvVendorToggle = document.getElementById('vendorToggle');
         const resellerVendorToggle = document.getElementById('vendorToggleReseller');
 
+        const normalPackagesWrap = document.getElementById('normalPackages');
         const resellerWrap = document.getElementById('resellerPackages');
         const creditInfo = document.getElementById('creditInfo');
 
@@ -369,10 +527,11 @@
         }
 
         function renderIptv() {
+            const showReseller = resellerToggle && resellerToggle.checked;
             const vendor = getActiveVendor(iptvVendorToggle);
             iptvCards.forEach(card => {
                 const cardVendor = norm(card.dataset.vendor);
-                const show = cardVendor === vendor;
+                const show = !showReseller && cardVendor === vendor;
                 card.style.setProperty('display', show ? 'block' : 'none', 'important');
             });
         }
@@ -380,7 +539,11 @@
         function renderReseller() {
             const showReseller = resellerToggle && resellerToggle.checked;
             const vendor = getActiveVendor(resellerVendorToggle);
+            let visibleCount = 0;
 
+            if (normalPackagesWrap) {
+                normalPackagesWrap.style.setProperty('display', showReseller ? 'none' : 'grid', 'important');
+            }
             if (resellerWrap) {
                 resellerWrap.style.setProperty('display', showReseller ? 'block' : 'none', 'important');
             }
@@ -398,8 +561,21 @@
             resellerCards.forEach(card => {
                 const cardVendor = norm(card.dataset.vendor);
                 const showCard = showReseller && cardVendor === vendor;
+                if (showCard) visibleCount += 1;
                 card.style.setProperty('display', showCard ? 'block' : 'none', 'important');
             });
+
+            if (showReseller && visibleCount === 0) {
+                resellerCards.forEach(card => {
+                    card.style.setProperty('display', 'block', 'important');
+                });
+            }
+
+            if (showReseller) {
+                iptvCards.forEach(card => {
+                    card.style.setProperty('display', 'none', 'important');
+                });
+            }
         }
 
         if (iptvVendorToggle) {
@@ -436,6 +612,7 @@
 
         if (resellerToggle) {
             resellerToggle.addEventListener('change', function() {
+                renderIptv();
                 renderReseller();
             });
         }

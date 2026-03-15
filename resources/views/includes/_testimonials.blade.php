@@ -16,9 +16,10 @@
         </div>
     @endif
     <div class="auto-container">
-        <div class="sec-title centered">
+        <div class="sec-title centered testimonial-showcase__heading">
             <div class="title" aria-label="Testimonials Section Subheading">{{ __('messages.testimonials_title') }}</div>
             <h3 aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h3>
+            <p>Verified customer feedback from viewers using Opplex IPTV across live TV, sports and on-demand streaming.</p>
         </div>
 
         @if (!empty($useNativeCarousel))
@@ -36,24 +37,23 @@
                         @foreach ($testimonials as $testimonial)
                             <div class="native-carousel__slide">
                                 <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
-                                    <div class="inner-box">
-                                        <div class="upper-box">
-                                            <div class="text" aria-label="Customer Feedback">"{{ $testimonial['text'] }}"</div>
+                                    <div class="inner-box testimonial-card">
+                                        <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+                                        <div class="upper-box testimonial-card__body">
+                                            <div class="text" aria-label="Customer Feedback">{{ $testimonial['text'] }}</div>
                                         </div>
-                                        <div class="lower-box">
-                                            <div class="color-layer" aria-hidden="true"></div>
-                                            <div class="pattern-layer" style="background-image:url('{{ asset('images/background/pattern-8.webp') }}')" aria-hidden="true"></div>
-
-                                            <div class="author-image-outer">
-                                                <span class="quote-icon fa fa-quote-left" aria-hidden="true"></span>
+                                        <div class="lower-box testimonial-card__footer">
+                                            <div class="author-image-outer testimonial-card__author">
                                                 <div class="author-image">
                                                     <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
                                                         alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
                                                         width="150" height="150" loading="lazy" />
                                                 </div>
+                                                <div class="testimonial-card__author-copy">
+                                                    <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
+                                                    <div class="testimonial-card__author-role">Verified IPTV Customer</div>
+                                                </div>
                                             </div>
-
-                                            <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -66,24 +66,23 @@
             <div class="testimonial-carousel owl-carousel owl-theme" role="region" aria-label="Testimonial carousel of IPTV customer feedback">
                 @foreach ($testimonials as $testimonial)
                     <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
-                        <div class="inner-box">
-                            <div class="upper-box">
-                                <div class="text" aria-label="Customer Feedback">"{{ $testimonial['text'] }}"</div>
+                        <div class="inner-box testimonial-card">
+                            <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+                            <div class="upper-box testimonial-card__body">
+                                <div class="text" aria-label="Customer Feedback">{{ $testimonial['text'] }}</div>
                             </div>
-                            <div class="lower-box">
-                                <div class="color-layer" aria-hidden="true"></div>
-                                <div class="pattern-layer" style="background-image:url('{{ asset('images/background/pattern-8.webp') }}')" aria-hidden="true"></div>
-
-                                <div class="author-image-outer">
-                                    <span class="quote-icon fa fa-quote-left" aria-hidden="true"></span>
-                                <div class="author-image">
-                                    <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
-                                         alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                         width="150" height="150" loading="lazy" />
+                            <div class="lower-box testimonial-card__footer">
+                                <div class="author-image-outer testimonial-card__author">
+                                    <div class="author-image">
+                                        <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
+                                             alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
+                                             width="150" height="150" loading="lazy" />
+                                    </div>
+                                    <div class="testimonial-card__author-copy">
+                                        <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
+                                        <div class="testimonial-card__author-role">Verified IPTV Customer</div>
+                                    </div>
                                 </div>
-                                </div>
-
-                                <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
                             </div>
                         </div>
                     </div>

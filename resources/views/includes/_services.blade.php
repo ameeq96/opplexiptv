@@ -17,9 +17,10 @@
         </div>
     @endif
     <div class="auto-container">
-        <div class="sec-title light centered">
-            <div class="separator"></div>
+        <div class="sec-title light centered services-showcase__heading">
+            <div class="services-showcase__eyebrow">Premium Features</div>
             <h3 class="text-white" aria-label="Explore Opplex IPTV Services">{{ __('messages.explore_services') }}</h3>
+            <p>Powerful streaming, smarter access and a cleaner IPTV experience across every device.</p>
         </div>
 
         @if (!empty($useNativeCarousel))

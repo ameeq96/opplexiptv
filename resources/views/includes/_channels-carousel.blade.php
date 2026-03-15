@@ -17,6 +17,7 @@
         </div>
     @endif
     <div class="auto-container">
+        <div class="channel-showcase">
         @if (!empty($useNativeCarousel))
             <div class="native-carousel native-carousel--cards native-carousel--logos"
                 data-native-carousel
@@ -39,7 +40,7 @@
                                 }
                             @endphp
                             <div class="native-carousel__slide">
-                                <div role="group" aria-label="Client logo: {{ $altText }}">
+                                <div class="channel-showcase__card" role="group" aria-label="Client logo: {{ $altText }}">
                                     <div class="image-box">
                                         <div class="wrapper-circle">
                                             <img src="{{ asset($logoPath) }}" alt="{{ $altText }}" width="100" height="100" loading="lazy" />
@@ -63,14 +64,17 @@
                         }
                     @endphp
                     <li role="group" aria-label="Client logo: {{ $altText }}">
-                        <div class="image-box">
+                        <div class="channel-showcase__card">
+                            <div class="image-box">
                             <div class="wrapper-circle">
                                 <img src="{{ asset($logoPath) }}" alt="{{ $altText }}" width="100" height="100" loading="lazy" />
+                            </div>
                             </div>
                         </div>
                     </li>
                 @endforeach
             </ul>
         @endif
+        </div>
     </div>
 </section>

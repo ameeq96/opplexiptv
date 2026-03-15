@@ -295,13 +295,32 @@
         position: relative;
     }
 
-        .home-products-headline {
+    .home-products-headline {
         display: inline-block;
-        width: 92px;
+        width: 78px;
         height: 6px;
         border-radius: 999px;
-        margin-bottom: 14px;
-        background: linear-gradient(90deg, #df0303 0%, #ff4d4d 100%);
+        margin-bottom: 18px;
+        background: linear-gradient(90deg, #ff2e18 0%, #ff6b5d 100%);
+    }
+
+    .home-products-shell .sec-title {
+        margin-bottom: 28px !important;
+    }
+
+    .home-products-shell .sec-title h2 {
+        color: #0f172a;
+        font-size: clamp(34px, 4vw, 54px);
+        line-height: 1.03;
+        letter-spacing: -.04em;
+    }
+
+    .home-products-shell .sec-title p {
+        max-width: 560px;
+        color: #64748b !important;
+        font-size: 17px !important;
+        line-height: 1.7;
+        margin-top: 10px;
     }
 
     .home-products-filter {
@@ -331,33 +350,40 @@
         background: linear-gradient(90deg, #0454f7, #0a67ff);
     }
     .home-product-card {
-        background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
-        border-radius: 18px;
-        border: 1px solid #e9edf3;
+        background: #ffffff;
+        border-radius: 26px;
+        border: 1px solid #e6edf7;
         overflow: hidden;
-        box-shadow: 0 10px 26px rgba(17, 27, 46, .08);
-        transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+        box-shadow: none;
+        transition: transform .22s ease, border-color .22s ease;
     }
     .home-product-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 36px rgba(17, 27, 46, .14);
-        border-color: rgba(4, 84, 247, 0.24);
+        transform: translateY(-8px);
+        border-color: rgba(37, 99, 235, 0.2);
     }
-    .home-product-media { display:block; height:270px; background:#eef2f8; }
+    .home-product-media {
+        display:block;
+        height:292px;
+        padding: 12px;
+        background: transparent;
+    }
     .home-product-media img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         display: block;
+        border-radius: 20px;
     }
-    .home-product-body { padding:14px 14px 15px; }
+    .home-product-body {
+        padding: 4px 18px 18px;
+    }
     .home-product-title {
-        font-size: 19px;
-        line-height: 1.25;
-        margin-bottom: 6px;
-        font-weight: 700;
-        min-height: 48px;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 0;
+        font-weight: 800;
+        min-height: 44px;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -366,46 +392,56 @@
     .home-product-title a { color:#141414; text-decoration:none; }
     .home-product-title a:hover { color:#0454f7; }
     .home-product-price {
-        font-size:20px;
+        font-size:32px;
         font-weight:800;
         color:#0f172a;
-        margin-bottom:10px;
-        letter-spacing: .1px;
+        margin-bottom:14px;
+        letter-spacing: -.03em;
     }
-    .home-product-badge { border-radius:999px; padding:4px 10px; font-size:11px; font-weight:700; }
-    .home-product-badge--digital { color:#065f46; background:#d1fae5; }
-    .home-product-badge--affiliate { color:#374151; background:#e5e7eb; }
+    .home-product-badge {
+        border-radius:999px;
+        padding:8px 12px;
+        font-size:12px;
+        font-weight:800;
+        letter-spacing: .02em;
+        white-space: nowrap;
+    }
+    .home-product-badge--digital { color:#0f766e; background:#ccfbf1; }
+    .home-product-badge--affiliate { color:#1d4ed8; background:#dbeafe; }
     .home-product-action {
         width:100%;
-        border-radius:11px;
-        font-size:13px;
-        font-weight:700;
-        padding:10px 12px;
-        letter-spacing:.2px;
+        border-radius:16px;
+        font-size:15px;
+        font-weight:800;
+        padding:14px 16px;
+        letter-spacing:-.01em;
+        box-shadow: none !important;
     }
     .home-product-actions {
         display:grid;
-        grid-template-columns: 1fr 50px;
-        gap:10px;
+        grid-template-columns: 1fr 56px;
+        gap:12px;
         margin-top:auto;
     }
     .home-product-share {
-        border-radius: 12px;
+        border-radius: 16px;
         border: 1px solid #dbe4f3;
         background: #f8fbff;
         color: #1d4ed8;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
+        box-shadow: none;
     }
     .home-products-carousel {
         --native-gap: 0px;
     }
 
     .home-products-carousel .native-carousel__viewport {
-        padding: 6px 2px 16px;
+        padding: 8px 2px 18px;
+        background: transparent;
     }
 
     .home-products-carousel .native-carousel__arrow {
@@ -471,10 +507,120 @@
         justify-content: center;
     }
 
+    .channel-showcase {
+        padding: 8px 0 0;
+    }
+
+    .channel-showcase__header {
+        display: block;
+        margin-bottom: 26px;
+    }
+
+    .channel-showcase__content {
+        display: flex;
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .channel-showcase__copy h2 {
+        text-align: center;
+        margin: 0 0 10px;
+        color: #09162b;
+        font-size: 40px;
+        line-height: 1.08;
+        letter-spacing: -.03em;
+    }
+
+    .channel-showcase__copy p {
+        margin: 0;
+        max-width: 620px;
+        color: #5a6780;
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
     .native-carousel--logos .image-box {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .channel-showcase__card {
+        border-radius: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        border: 1px solid #e6ecf5;
+        box-shadow: none;
+    }
+
+    .channel-showcase__card .wrapper-circle {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .channel-showcase__card img {
+        width: 72px;
+        height: 72px;
+        object-fit: contain;
+    }
+
+    .services-section-two {
+        padding: 110px 0;
+        background-image: none !important;
+        background:
+            radial-gradient(circle at top left, rgba(255, 255, 255, .08), transparent 26%),
+            linear-gradient(180deg, #0c1530 0%, #111d3e 56%, #132248 100%) !important;
+    }
+
+    .services-section-two::before {
+        opacity: 1;
+        background:
+            linear-gradient(180deg, rgba(8, 13, 29, .18) 0%, rgba(8, 13, 29, .08) 100%);
+    }
+
+    .services-showcase__heading {
+        margin-bottom: 42px;
+    }
+
+    .services-showcase__eyebrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 34px;
+        padding: 0 14px;
+        margin-bottom: 16px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, .08);
+        border: 1px solid rgba(255, 255, 255, .12);
+        color: #dbe7ff;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+    }
+
+    .services-showcase__heading h3 {
+        margin-bottom: 14px;
+        color: #ffffff;
+        font-size: 52px;
+        line-height: 1.03;
+        letter-spacing: -.04em;
+    }
+
+    .services-showcase__heading p {
+        max-width: 760px;
+        margin: 0 auto;
+        color: rgba(223, 232, 250, .78);
+        font-size: 17px;
+        line-height: 1.7;
     }
 
     .native-carousel--testimonials .testimonial-block,
@@ -492,6 +638,79 @@
         flex-direction: column;
     }
 
+    .testimonial-showcase__heading .title {
+        margin-bottom: 12px;
+        letter-spacing: .12em;
+    }
+
+    .testimonial-showcase__heading h3 {
+        margin-bottom: 16px;
+        font-size: 54px;
+        line-height: 1.05;
+        letter-spacing: -.04em;
+    }
+
+    .testimonial-showcase__heading p {
+        max-width: 760px;
+        margin: 0 auto;
+        color: #607089;
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .native-carousel--testimonials .testimonial-card,
+    .testimonial-carousel .testimonial-card {
+        position: relative;
+        padding: 34px 30px 28px;
+        border-radius: 28px;
+        background: #ffffff;
+        border: 1px solid #e8edf5;
+        box-shadow: none;
+        overflow: hidden;
+        transition: border-color .2s ease;
+    }
+
+    .native-carousel--testimonials .testimonial-card .upper-box,
+    .native-carousel--testimonials .testimonial-card .lower-box,
+    .testimonial-carousel .testimonial-card .upper-box,
+    .testimonial-carousel .testimonial-card .lower-box {
+        padding: 0;
+    }
+
+    .native-carousel--testimonials .testimonial-card .lower-box::before,
+    .testimonial-carousel .testimonial-card .lower-box::before,
+    .native-carousel--testimonials .testimonial-card .color-layer,
+    .native-carousel--testimonials .testimonial-card .pattern-layer,
+    .testimonial-carousel .testimonial-card .color-layer,
+    .testimonial-carousel .testimonial-card .pattern-layer {
+        display: none !important;
+    }
+
+    .native-carousel--testimonials .testimonial-card:hover,
+    .testimonial-carousel .testimonial-card:hover {
+        border-color: #dce6f5;
+    }
+
+    .native-carousel--testimonials .testimonial-card::before,
+    .testimonial-carousel .testimonial-card::before {
+        display: none;
+    }
+
+    .native-carousel--testimonials .testimonial-card::after,
+    .testimonial-carousel .testimonial-card::after {
+        display: none;
+    }
+
+    .native-carousel--testimonials .testimonial-card__quote-mark,
+    .testimonial-carousel .testimonial-card__quote-mark {
+        margin-bottom: 24px;
+        color: #d7deea;
+        font-size: 62px;
+        font-weight: 600;
+        line-height: .8;
+        text-align: left;
+    }
+
     .native-carousel--testimonials .testimonial-block .upper-box {
         flex: 1 1 auto;
         display: flex;
@@ -499,39 +718,187 @@
 
     .native-carousel--testimonials .testimonial-block .upper-box .text {
         width: 100%;
+        color: #1c2740;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.8;
+        letter-spacing: -.01em;
+        text-align: left;
     }
 
     .native-carousel--testimonials .testimonial-block .lower-box {
         margin-top: auto;
     }
 
+    .native-carousel--testimonials .testimonial-card__footer,
+    .testimonial-carousel .testimonial-card__footer {
+        margin-top: 30px;
+        padding-top: 22px;
+        border-top: 1px solid #ecf1f7;
+        background: transparent;
+    }
+
+    .native-carousel--testimonials .testimonial-card__author,
+    .testimonial-carousel .testimonial-card__author {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .native-carousel--testimonials .testimonial-card__author.author-image-outer,
+    .testimonial-carousel .testimonial-card__author.author-image-outer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        margin-top: 10px;
+        vertical-align: top;
+    }
+
+    .native-carousel--testimonials .testimonial-card__author .author-image,
+    .testimonial-carousel .testimonial-card__author .author-image {
+        width: 62px;
+        height: 62px;
+        flex: 0 0 62px;
+        margin: 0;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #ffffff;
+        box-shadow: 0 12px 24px rgba(15, 23, 42, .12);
+    }
+
+    .native-carousel--testimonials .testimonial-card__author .author-image img,
+    .testimonial-carousel .testimonial-card__author .author-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .native-carousel--testimonials .testimonial-card__author-copy,
+    .testimonial-carousel .testimonial-card__author-copy {
+        min-width: 0;
+    }
+
+    .native-carousel--testimonials .author-name,
+    .testimonial-carousel .author-name {
+        margin-top: 0;
+        color: #09162b;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .native-carousel--testimonials .testimonial-card__author-role,
+    .testimonial-carousel .testimonial-card__author-role {
+        margin-top: 6px;
+        color: #73819a;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .native-carousel--testimonials .testimonial-block .inner-box:hover .author-name,
+    .native-carousel--testimonials .testimonial-block .inner-box:hover .designation,
+    .native-carousel--testimonials .testimonial-block .inner-box:hover .text,
+    .testimonial-carousel .testimonial-block .inner-box:hover .author-name,
+    .testimonial-carousel .testimonial-block .inner-box:hover .designation,
+    .testimonial-carousel .testimonial-block .inner-box:hover .text,
+    .native-carousel--testimonials .testimonial-card:hover .author-name,
+    .native-carousel--testimonials .testimonial-card:hover .testimonial-card__author-role,
+    .native-carousel--testimonials .testimonial-card:hover .text,
+    .testimonial-carousel .testimonial-card:hover .author-name,
+    .testimonial-carousel .testimonial-card:hover .testimonial-card__author-role,
+    .testimonial-carousel .testimonial-card:hover .text {
+        color: inherit !important;
+    }
+
     .native-carousel--services .service-block-two .inner-box {
-        padding: 18px 16px;
-        min-height: 235px;
+        padding: 28px 26px 24px;
+        min-height: 0;
+        border-radius: 26px;
+        text-align: left;
+        background:
+            linear-gradient(180deg, rgba(255, 255, 255, .08) 0%, rgba(255, 255, 255, .03) 100%);
+        border: 1px solid rgba(255, 255, 255, .12);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05);
+        backdrop-filter: blur(10px);
     }
 
     .native-carousel--services .service-block-two h4 {
-        margin-bottom: 8px;
-        font-size: 19px;
-        line-height: 1.25;
+        margin-bottom: 12px;
+        font-size: 29px;
+        line-height: 1.14;
+        letter-spacing: -.03em;
+    }
+
+    .native-carousel--services .service-block-two h4 a,
+    .native-carousel--services .service-block-two h4 a:hover {
+        color: #ffffff;
+    }
+
+    .native-carousel--services .service-block-two h4 a:focus,
+    .native-carousel--services .service-block-two h4 a:active,
+    .native-carousel--services .service-block-two .learn-more:hover,
+    .native-carousel--services .service-block-two .learn-more:focus,
+    .native-carousel--services .service-block-two .learn-more:active,
+    .native-carousel--services .service-block-two .text:hover {
+        color: #ffffff !important;
     }
 
     .native-carousel--services .service-block-two .text {
-        margin-bottom: 10px;
-        font-size: 14px;
-        line-height: 1.45;
+        margin-bottom: 18px;
+        color: rgba(223, 232, 250, .78);
+        font-size: 15px;
+        line-height: 1.75;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
 
     .native-carousel--services .service-block-two .icon {
-        margin-bottom: 10px;
+        width: 62px;
+        height: 62px;
+        margin-bottom: 18px;
+        border-radius: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, .08);
+        border: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .native-carousel--services .service-block-two .icon img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
     }
 
     .native-carousel--services .service-block-two .learn-more {
         margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding-right: 0;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -.01em;
+    }
+
+    .native-carousel--services .service-block-two .learn-more::before,
+    .native-carousel--services .service-block-two .color-layer,
+    .native-carousel--services .service-block-two .icon-layer-one,
+    .native-carousel--services .service-block-two .icon-layer-two {
+        display: none !important;
+    }
+
+    .native-carousel--services .service-block-two .inner-box:hover .icon {
+        background: rgba(255, 255, 255, .08) !important;
+        border-color: rgba(255, 255, 255, .12) !important;
     }
 
     @keyframes nativeHeroReveal {
@@ -569,11 +936,28 @@
         }
 
         .home-products-shell {
-            padding: 20px 16px 16px;
-            border-radius: 18px;
+            padding: 0;
+            border-radius: 0;
+        }
+
+        .home-products-shell .sec-title h2 {
+            font-size: 38px;
+        }
+
+        .home-products-shell .sec-title p {
+            font-size: 15px !important;
+            line-height: 1.6;
         }
         .home-product-media {
-            height: 200px;
+            height: 230px;
+        }
+
+        .home-product-body {
+            padding: 4px 16px 16px;
+        }
+
+        .home-product-price {
+            font-size: 28px;
         }
         .native-home-hero .native-carousel__arrow {
             top: auto;
@@ -599,6 +983,45 @@
             padding: 0 0 58px;
         }
 
+        .channel-showcase {
+            padding: 4px 0 0;
+        }
+
+        .channel-showcase__header {
+            margin-bottom: 22px;
+        }
+
+        .channel-showcase__copy h2 {
+            font-size: 30px;
+        }
+
+        .services-showcase__heading h3 {
+            font-size: 40px;
+        }
+
+        .native-carousel--services .service-block-two .inner-box {
+            min-height: 0;
+            padding: 24px 20px 22px;
+        }
+
+        .native-carousel--services .service-block-two h4 {
+            font-size: 24px;
+        }
+
+        .testimonial-showcase__heading h3 {
+            font-size: 40px;
+        }
+
+        .native-carousel--testimonials .testimonial-card,
+        .testimonial-carousel .testimonial-card {
+            padding: 28px 22px 24px;
+            border-radius: 24px;
+        }
+
+        .native-carousel--testimonials .testimonial-block .upper-box .text {
+            font-size: 18px;
+        }
+
         .native-carousel--services .service-block-two .inner-box {
             min-height: 210px;
             padding: 16px 14px;
@@ -622,6 +1045,142 @@
     @media (max-width: 767px) {
         .skeleton-section--hero {
             min-height: 320px;
+        }
+
+        .channel-showcase {
+            padding: 0;
+        }
+
+        .home-products-shell .sec-title h2 {
+            font-size: 28px;
+        }
+
+        .home-product-media {
+            height: 210px;
+            padding: 10px;
+        }
+
+        .home-product-media img {
+            border-radius: 16px;
+        }
+
+        .home-product-card {
+            border-radius: 20px;
+        }
+
+        .home-product-body {
+            padding: 2px 14px 14px;
+        }
+
+        .home-product-title {
+            font-size: 17px;
+            min-height: 40px;
+        }
+
+        .home-product-price {
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .home-product-action {
+            border-radius: 14px;
+            font-size: 14px;
+            padding: 12px 14px;
+        }
+
+        .home-product-actions {
+            grid-template-columns: 1fr 52px;
+            gap: 10px;
+        }
+
+        .home-product-share {
+            border-radius: 14px;
+            font-size: 16px;
+        }
+
+        .channel-showcase__copy h2 {
+            font-size: 24px;
+        }
+
+        .channel-showcase__copy p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .services-section-two {
+            padding: 86px 0;
+        }
+
+        .services-showcase__heading h3 {
+            font-size: 30px;
+        }
+
+        .services-showcase__heading p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .testimonial-showcase__heading h3 {
+            font-size: 28px;
+        }
+
+        .testimonial-showcase__heading p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .channel-showcase__card {
+            min-height: 128px;
+            padding: 18px 12px;
+            border-radius: 18px;
+        }
+
+        .channel-showcase__card .wrapper-circle {
+            width: 84px;
+            height: 84px;
+            border-radius: 0;
+        }
+
+        .channel-showcase__card img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .native-carousel--services .service-block-two .inner-box {
+            min-height: 0;
+            padding: 20px 18px;
+            border-radius: 20px;
+        }
+
+        .native-carousel--services .service-block-two h4 {
+            font-size: 21px;
+        }
+
+        .native-carousel--services .service-block-two .text {
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+        .native-carousel--testimonials .testimonial-card,
+        .testimonial-carousel .testimonial-card {
+            padding: 24px 18px 20px;
+            border-radius: 20px;
+        }
+
+        .native-carousel--testimonials .testimonial-card__quote-mark,
+        .testimonial-carousel .testimonial-card__quote-mark {
+            margin-bottom: 18px;
+            font-size: 42px;
+        }
+
+        .native-carousel--testimonials .testimonial-block .upper-box .text {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .native-carousel--testimonials .author-name,
+        .testimonial-carousel .author-name {
+            font-size: 20px;
         }
 
         .section-skeleton__cards,
@@ -669,7 +1228,7 @@
                         <span class="home-products-headline" aria-hidden="true"></span>
                         <div style="display:flex; align-items:center; justify-content: space-between; gap:12px; flex-wrap:wrap;">
                             <div>
-                                <h2 class="h3" style="margin:0;">Digital Products</h2>
+                                <h3>Digital Products</h3>
                                 <p class="text-muted mb-0" style="font-size:14px;">Premium digital subscriptions and services.</p>
                             </div>
                             <span></span>
@@ -714,7 +1273,7 @@
                                             @if($p['type'] === 'digital' && !empty($p['buy_now_url']))
                                                 <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary home-product-action">Buy Now</a>
                                             @else
-                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-outline-primary home-product-action">Open Link</a>
+                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-primary home-product-action">Open Link</a>
                                             @endif
                                             <button type="button"
                                                 class="home-product-share"
@@ -760,7 +1319,7 @@
                         <span class="home-products-headline" aria-hidden="true"></span>
                         <div style="display:flex; align-items:center; justify-content: space-between; gap:12px; flex-wrap:wrap;">
                             <div>
-                                <h2 class="h3" style="margin:0;">Affiliate Products</h2>
+                                <h3>Affiliate Products</h3>
                                 <p class="text-muted mb-0" style="font-size:14px;">Top affiliate gadgets and device picks.</p>
                             </div>
                             <span></span>
@@ -805,7 +1364,7 @@
                                             @if($p['type'] === 'digital' && !empty($p['buy_now_url']))
                                                 <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary home-product-action">Buy Now</a>
                                             @else
-                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-outline-primary home-product-action">Open Link</a>
+                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-primary home-product-action">Open Link</a>
                                             @endif
                                             <button type="button"
                                                 class="home-product-share"
