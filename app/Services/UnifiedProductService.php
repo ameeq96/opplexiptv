@@ -35,6 +35,8 @@ class UnifiedProductService
                     'can_add_to_cart' => false,
                     'add_to_cart_url' => null,
                     'buy_now_url' => null,
+                    'share_url' => route('products.share', ['type' => 'affiliate', 'id' => $p->id]),
+                    'share_text' => "Check out {$name} on Opplex IPTV.",
                 ];
             });
 
@@ -64,6 +66,8 @@ class UnifiedProductService
                     'can_add_to_cart' => false,
                     'add_to_cart_url' => null,
                     'buy_now_url' => $waBase . $waText,
+                    'share_url' => route('products.share', ['type' => 'digital', 'id' => $p->id]),
+                    'share_text' => "Check out {$p->title} on Opplex IPTV.",
                 ];
             });
 

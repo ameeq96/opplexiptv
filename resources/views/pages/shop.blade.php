@@ -101,8 +101,26 @@
         font-weight: 600;
         padding: 9px 12px;
     }
+    .unified-actions {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: 1fr 48px;
+        gap: 10px;
+        align-items: stretch;
+    }
     .unified-action-wrap {
         margin-top: auto;
+    }
+    .unified-share {
+        border-radius: 12px;
+        border: 1px solid #d9e2f1;
+        background: #f8fbff;
+        color: #1d4ed8;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 700;
     }
 </style>
 @endpush
@@ -158,11 +176,21 @@
                                         <div class="unified-card__price">{{ $p['currency'] }} {{ number_format((float) $p['price'], 2) }}</div>
                                     @endif
                                     <div class="unified-action-wrap">
+                                        <div class="unified-actions">
                                         @if($p['type'] === 'digital' && !empty($p['buy_now_url']))
                                             <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary unified-action">Buy Now</a>
                                         @else
                                             <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-outline-primary unified-action">Open Link</a>
                                         @endif
+                                            <button type="button"
+                                                class="unified-share"
+                                                aria-label="Share {{ $p['name'] }}"
+                                                data-share-url="{{ $p['share_url'] ?? $p['url'] }}"
+                                                data-share-title="{{ $p['name'] }}"
+                                                data-share-text="{{ $p['share_text'] ?? ('Check out ' . $p['name']) }}">
+                                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </article>

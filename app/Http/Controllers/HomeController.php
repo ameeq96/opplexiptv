@@ -6,9 +6,11 @@ use App\Mail\CheckoutOrderMail;
 use App\Http\Requests\Site\{BuyNowRequest, ContactRequest, SubscribeRequest};
 use App\Models\Admin;
 use App\Models\Device;
+use App\Models\Digital\DigitalProduct;
 use App\Models\Order;
 use App\Models\Package;
 use App\Models\Plan;
+use App\Models\ShopProduct;
 use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService};
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -127,6 +129,62 @@ class HomeController extends Controller
             'products' => $paginatedProducts,
             'selectedType' => $type,
             'isRtl'    => $isRtl,
+        ]);
+    }
+
+    public function sharedProduct(string $type, int $id)
+    {
+        $type = strtolower($type);
+
+        if (!in_array($type, ['digital', 'affiliate'], true)) {
+            abort(404);
+        }
+
+        if ($type === 'digital') {
+            $product = DigitalProduct::query()
+                ->where('id', $id)
+                ->where('is_active', true)
+                ->firstOrFail();
+
+            $name = $product->title;
+            $image = $product->image ? asset('images/digital-products/' . $product->image) : asset('images/placeholder.webp');
+            $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
+            $actionUrl = route('digital.product.show', $product->slug);
+            $actionLabel = 'View Product';
+            $description = "Buy {$name} on Opplex IPTV. Price: {$price}.";
+            $badge = 'Digital';
+        } else {
+            $product = ShopProduct::query()
+                ->with('translations')
+                ->where('id', $id)
+                ->where('is_active', true)
+                ->firstOrFail();
+
+            $name = $product->translation()?->name ?: $product->name;
+            $image = $product->image ? asset('images/shop/' . $product->image) : asset('images/placeholder.webp');
+            $price = null;
+            $actionUrl = $product->link;
+            $actionLabel = 'Open Product';
+            $description = "Explore {$name} on Opplex IPTV.";
+            $badge = 'Affiliate';
+        }
+
+        return view('pages.products.share', [
+            'productName' => $name,
+            'productImage' => $image,
+            'productPrice' => $price,
+            'productType' => strtolower($badge),
+            'productTypeLabel' => $badge,
+            'productDescription' => $description,
+            'productActionUrl' => $actionUrl,
+            'productActionLabel' => $actionLabel,
+            'isRtl' => $this->locale->isRtl(),
+            'pageMetaTitle' => $name . ' | Opplex IPTV',
+            'pageMetaDescription' => $description,
+            'pageMetaImage' => $image,
+            'pageCanonical' => route('products.share', ['type' => $type, 'id' => $id]),
+            'pageOgTitle' => $name . ' | Opplex IPTV',
+            'pageOgDescription' => $description,
         ]);
     }
 

@@ -522,6 +522,33 @@
                 });
             }
 
+            const shareButtons = document.querySelectorAll('[data-share-url]');
+
+            shareButtons.forEach((button) => {
+                button.addEventListener('click', async () => {
+                    const url = button.getAttribute('data-share-url') || window.location.href;
+                    const title = button.getAttribute('data-share-title') || document.title;
+                    const text = button.getAttribute('data-share-text') || title;
+                    const original = button.innerHTML;
+
+                    try {
+                        if (navigator.share) {
+                            await navigator.share({ title, text, url });
+                        } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                            await navigator.clipboard.writeText(url);
+                            button.innerHTML = '<i class="fa fa-check" aria-hidden="true"></i>';
+                            window.setTimeout(() => {
+                                button.innerHTML = original;
+                            }, 1600);
+                        } else {
+                            window.prompt('Copy this link:', url);
+                        }
+                    } catch (error) {
+                        // User cancelled share sheet or clipboard write failed.
+                    }
+                });
+            });
+
             // Reseller toggle (guard all elements)
             const toggle = document.getElementById('resellerToggle');
             const normal = document.getElementById('normalPackages');

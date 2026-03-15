@@ -169,6 +169,7 @@ Route::group(
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
         Route::get('shop', [HomeController::class, 'shop'])->name('shop');
+        Route::get('product-share/{type}/{id}', [HomeController::class, 'sharedProduct'])->name('products.share');
         Route::get('digital-shop', [DigitalProductController::class, 'index'])->name('digital.shop');
         Route::get('digital-shop/{slug}', [DigitalProductController::class, 'show'])->name('digital.product.show');
         Route::get('digital-cart', [DigitalCartController::class, 'index'])->name('digital.cart.index');
