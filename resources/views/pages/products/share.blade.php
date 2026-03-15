@@ -124,7 +124,8 @@
                             <div class="product-share-actions">
                                 <a href="{{ $productActionUrl }}"
                                     class="btn btn-primary"
-                                    @if ($productType === 'affiliate') target="_blank" rel="nofollow sponsored noopener" @endif>
+                                    target="_blank"
+                                    rel="noopener noreferrer">
                                     {{ $productActionLabel }}
                                 </a>
                                 <button type="button"

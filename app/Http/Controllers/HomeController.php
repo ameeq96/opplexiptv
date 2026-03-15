@@ -140,6 +140,8 @@ class HomeController extends Controller
             abort(404);
         }
 
+        $shareLandingUrl = route('products.share', ['type' => $type, 'id' => $id]);
+
         if ($type === 'digital') {
             $product = DigitalProduct::query()
                 ->where('id', $id)
@@ -149,8 +151,10 @@ class HomeController extends Controller
             $name = $product->title;
             $image = $product->image ? asset('images/digital-products/' . $product->image) : asset('images/placeholder.webp');
             $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
-            $actionUrl = route('digital.product.show', $product->slug);
-            $actionLabel = 'View Product';
+            $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
+                "Hi, I want to buy {$name} ({$price}). Product link: {$shareLandingUrl}"
+            );
+            $actionLabel = 'Buy Product';
             $description = "Buy {$name} on Opplex IPTV. Price: {$price}.";
             $badge = 'Digital';
         } else {
@@ -163,8 +167,10 @@ class HomeController extends Controller
             $name = $product->translation()?->name ?: $product->name;
             $image = $product->image ? asset('images/shop/' . $product->image) : asset('images/placeholder.webp');
             $price = null;
-            $actionUrl = $product->link;
-            $actionLabel = 'Open Product';
+            $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
+                "Hi, I am interested in {$name}. Product link: {$shareLandingUrl}"
+            );
+            $actionLabel = 'Buy Product';
             $description = "Explore {$name} on Opplex IPTV.";
             $badge = 'Affiliate';
         }
@@ -182,7 +188,7 @@ class HomeController extends Controller
             'pageMetaTitle' => $name . ' | Opplex IPTV',
             'pageMetaDescription' => $description,
             'pageMetaImage' => $image,
-            'pageCanonical' => route('products.share', ['type' => $type, 'id' => $id]),
+            'pageCanonical' => $shareLandingUrl,
             'pageOgTitle' => $name . ' | Opplex IPTV',
             'pageOgDescription' => $description,
         ]);
