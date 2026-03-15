@@ -10,15 +10,6 @@
         position: relative;
     }
 
-    .unlimited-showcase__panel {
-        position: relative;
-        padding: 28px;
-        border-radius: 34px;
-        background: #ffffff;
-        border: 1px solid #e8edf5;
-        box-shadow: 0 24px 60px rgba(15, 23, 42, .08);
-    }
-
     .unlimited-showcase__grid {
         display: grid;
         grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);

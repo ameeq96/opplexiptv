@@ -42,9 +42,9 @@
     </section>
     <!-- End Internet Section -->
 
-    <!-- Check Trial Section -->
-    @include('includes._check-trail')
-
     <!-- Choose Us Section -->
     @include('includes._choose-us')
+
+        <!-- Check Trial Section -->
+    @include('includes._check-trail')
 @stop

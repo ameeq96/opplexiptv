@@ -19,9 +19,6 @@
     {{-- We provide unlimited --}}
     @include('includes._we-provide-unlimited')
 
-    {{-- Trial --}}
-    @include('includes._check-trail')
-
     {{-- Why choose us / services --}}
     <section class="services-section-three"
              style="background-image:url('{{ asset('images/background/pattern-6.webp') }}')"
@@ -73,4 +70,8 @@
     @unless ($isMobile)
         @include('includes._channels-carousel')
     @endunless
+
+    
+    {{-- Trial --}}
+    @include('includes._check-trail')
 @stop
