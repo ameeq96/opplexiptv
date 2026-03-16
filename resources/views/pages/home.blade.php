@@ -1228,8 +1228,8 @@
                         <span class="home-products-headline" aria-hidden="true"></span>
                         <div style="display:flex; align-items:center; justify-content: space-between; gap:12px; flex-wrap:wrap;">
                             <div>
-                                <h3>Digital Products</h3>
-                                <p class="text-muted mb-0" style="font-size:14px;">Premium digital subscriptions and services.</p>
+                                <h3>{{ __('messages.home_products_digital_title') }}</h3>
+                                <p class="text-muted mb-0" style="font-size:14px;">{{ __('messages.home_products_digital_desc') }}</p>
                             </div>
                             <span></span>
                         </div>
@@ -1263,7 +1263,7 @@
                                                 </a>
                                             </h3>
                                             <span class="home-product-badge {{ $p['type'] === 'digital' ? 'home-product-badge--digital' : 'home-product-badge--affiliate' }}">
-                                                {{ ucfirst($p['type']) }}
+                                                {{ $p['type'] === 'digital' ? __('messages.home_products_type_digital') : __('messages.home_products_type_affiliate') }}
                                             </span>
                                         </div>
                                         @if(!empty($p['price']))
@@ -1271,16 +1271,16 @@
                                         @endif
                                         <div class="home-product-actions">
                                             @if($p['type'] === 'digital' && !empty($p['buy_now_url']))
-                                                <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary home-product-action">Buy Now</a>
+                                                <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary home-product-action">{{ __('messages.buy_now') }}</a>
                                             @else
-                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-primary home-product-action">Open Link</a>
+                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-primary home-product-action">{{ __('messages.home_products_open_link') }}</a>
                                             @endif
                                             <button type="button"
                                                 class="home-product-share"
-                                                aria-label="Share {{ $p['name'] }}"
+                                                aria-label="{{ __('messages.home_products_share_label', ['name' => $p['name']]) }}"
                                                 data-share-url="{{ $p['share_url'] ?? $p['url'] }}"
                                                 data-share-title="{{ $p['name'] }}"
-                                                data-share-text="{{ $p['share_text'] ?? ('Check out ' . $p['name']) }}">
+                                                data-share-text="{{ $p['share_text'] ?? __('messages.home_products_share_text', ['name' => $p['name']]) }}">
                                                 <i class="fa fa-share-alt" aria-hidden="true"></i>
                                             </button>
                                         </div>
@@ -1319,8 +1319,8 @@
                         <span class="home-products-headline" aria-hidden="true"></span>
                         <div style="display:flex; align-items:center; justify-content: space-between; gap:12px; flex-wrap:wrap;">
                             <div>
-                                <h3>Affiliate Products</h3>
-                                <p class="text-muted mb-0" style="font-size:14px;">Top affiliate gadgets and device picks.</p>
+                                <h3>{{ __('messages.home_products_affiliate_title') }}</h3>
+                                <p class="text-muted mb-0" style="font-size:14px;">{{ __('messages.home_products_affiliate_desc') }}</p>
                             </div>
                             <span></span>
                         </div>
@@ -1354,7 +1354,7 @@
                                                 </a>
                                             </h3>
                                             <span class="home-product-badge {{ $p['type'] === 'digital' ? 'home-product-badge--digital' : 'home-product-badge--affiliate' }}">
-                                                {{ ucfirst($p['type']) }}
+                                                {{ $p['type'] === 'digital' ? __('messages.home_products_type_digital') : __('messages.home_products_type_affiliate') }}
                                             </span>
                                         </div>
                                         @if(!empty($p['price']))
@@ -1362,16 +1362,16 @@
                                         @endif
                                         <div class="home-product-actions">
                                             @if($p['type'] === 'digital' && !empty($p['buy_now_url']))
-                                                <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary home-product-action">Buy Now</a>
+                                                <a href="{{ $p['buy_now_url'] }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary home-product-action">{{ __('messages.buy_now') }}</a>
                                             @else
-                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-primary home-product-action">Open Link</a>
+                                                <a href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif class="btn btn-primary home-product-action">{{ __('messages.home_products_open_link') }}</a>
                                             @endif
                                             <button type="button"
                                                 class="home-product-share"
-                                                aria-label="Share {{ $p['name'] }}"
+                                                aria-label="{{ __('messages.home_products_share_label', ['name' => $p['name']]) }}"
                                                 data-share-url="{{ $p['share_url'] ?? $p['url'] }}"
                                                 data-share-title="{{ $p['name'] }}"
-                                                data-share-text="{{ $p['share_text'] ?? ('Check out ' . $p['name']) }}">
+                                                data-share-text="{{ $p['share_text'] ?? __('messages.home_products_share_text', ['name' => $p['name']]) }}">
                                                 <i class="fa fa-share-alt" aria-hidden="true"></i>
                                             </button>
                                         </div>

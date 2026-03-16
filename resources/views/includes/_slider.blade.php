@@ -73,7 +73,8 @@
                                     <div class="content-boxed">
                                         <div class="inner-box slider-font {{ textAlignment($isRtl) }}">
                                             @if ($index === 0)
-                                                <h1>
+                                                <h1>{{ __('messages.home_hero_watch_live', ['title' => $movie['safe_title']]) }}</h1>
+                                                <h1 class="d-none">
                                                     @switch($locale)
                                                         @case('ar')
                                                             شاهد {{ $movie['safe_title'] }} مباشرة بجودة HD
@@ -159,7 +160,8 @@
                             <div class="content-boxed">
                                 <div class="inner-box slider-font {{ textAlignment($isRtl) }}">
                                     @if ($index === 0)
-                                        <h1>
+                                        <h1>{{ __('messages.home_hero_watch_live', ['title' => $movie['safe_title']]) }}</h1>
+                                        <h1 class="d-none">
                                             @switch($locale)
                                                 @case('ar')
                                                     شاهد {{ $movie['safe_title'] }} مباشرة بجودة HD

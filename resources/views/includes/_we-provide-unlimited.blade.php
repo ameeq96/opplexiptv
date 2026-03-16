@@ -339,12 +339,12 @@
                 @endunless
 
                 <div class="unlimited-showcase__content" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                    <div class="unlimited-showcase__eyebrow">Unlimited Access</div>
+                    <div class="unlimited-showcase__eyebrow">{{ __('messages.home_unlimited_eyebrow') }}</div>
                     <h3 aria-label="IPTV Network Features Heading">{{ __('messages.network_heading') }}</h3>
                     @unless (request()->routeIs('home') || request()->is('/') || request()->routeIs('about') || request()->is('reseller-panel'))
                         <h3 class="h6" aria-label="IPTV Network Features Heading">{{ __('messages.subheadingiptv') }}</h3>
                     @endunless
-                    <p class="unlimited-showcase__intro">Stream premium live TV and VOD with faster access, stronger stability and flexible plans built for modern viewing.</p>
+                    <p class="unlimited-showcase__intro">{{ __('messages.home_unlimited_intro') }}</p>
 
                     <ul class="unlimited-showcase__list" aria-label="List of IPTV Features">
                         @foreach ($features as $feature)

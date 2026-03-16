@@ -19,7 +19,7 @@
         <div class="sec-title centered testimonial-showcase__heading">
             <div class="title" aria-label="Testimonials Section Subheading">{{ __('messages.testimonials_title') }}</div>
             <h3 aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h3>
-            <p>Verified customer feedback from viewers using Opplex IPTV across live TV, sports and on-demand streaming.</p>
+            <p>{{ __('messages.home_testimonials_intro') }}</p>
         </div>
 
         @if (!empty($useNativeCarousel))
@@ -51,7 +51,7 @@
                                                 </div>
                                                 <div class="testimonial-card__author-copy">
                                                     <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                                                    <div class="testimonial-card__author-role">Verified IPTV Customer</div>
+                                                    <div class="testimonial-card__author-role">{{ __('messages.home_testimonials_verified_customer') }}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="testimonial-card__author-copy">
                                         <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                                        <div class="testimonial-card__author-role">Verified IPTV Customer</div>
+                                        <div class="testimonial-card__author-role">{{ __('messages.home_testimonials_verified_customer') }}</div>
                                     </div>
                                 </div>
                             </div>
