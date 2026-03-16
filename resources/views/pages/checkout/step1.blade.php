@@ -1,103 +1,9 @@
-@extends('layouts.default')
+﻿@extends('layouts.default')
 @section('title', __('messages.checkout_complete_title_page', [], app()->getLocale()) ?? 'Complete Your Order')
 
 @section('content')
-    <style>
-        .checkout-badges {
-            font-weight: 600;
-            color: #059669
-        }
-
-        .checkout-badges i {
-            margin-right: .35rem
-        }
-
-        .hero-title {
-            font-weight: 700;
-            letter-spacing: .2px
-        }
-
-        .hero-sub {
-            color: #6b7280
-        }
-
-        .notice {
-            border: 1px solid #e5e7eb;
-            border-left: 4px solid #60a5fa;
-            background: #f8fafc;
-            color: #334155
-        }
-
-        .card-soft {
-            border: 1px solid #e5e7eb;
-            border-radius: .75rem;
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .02)
-        }
-
-        .required:after {
-            content: " *";
-            color: #ef4444
-        }
-
-        .order-box {
-            border: 1.5px solid #dbeafe;
-            border-radius: .75rem;
-            background: #f8fbff
-        }
-
-        .order-line {
-            display: flex;
-            justify-content: space-between;
-            color: #374151
-        }
-
-        .order-meta {
-            font-size: .85rem;
-            color: #6b7280;
-            margin-top: .35rem
-        }
-
-        .order-total {
-            display: flex;
-            justify-content: space-between;
-            border-top: 1px dashed #e5e7eb;
-            margin-top: .5rem;
-            padding-top: .5rem;
-            font-weight: 700;
-            font-size: 1.25rem
-        }
-
-        .pay-option {
-            border: 1px solid #e5e7eb;
-            border-radius: .75rem;
-            padding: .5rem .75rem;
-            display: flex
-        }
-
-        .pay-option.active {
-            border-color: #bfdbfe;
-            background: #eff6ff
-        }
-
-        .place-order {
-            background: #2563eb;
-            border: 0;
-            font-weight: 600;
-            padding: .85rem 1rem;
-            width: 100%
-        }
-
-        .place-order:hover {
-            background: #1d4ed8
-        }
-
-        .small-note {
-            font-size: .85rem;
-            color: #6b7280
-        }
-    </style>
-
-    @php
+<div class="checkout-step1-page">
+@php
         // ------------------------------
         // Gather selections from request
         // ------------------------------
@@ -204,11 +110,11 @@
             <div class="mr-3 d-flex align-items-center">
                 <i class="fa fa-shield"></i> {{ __('messages.checkout_badge_secure') }}
             </div>
-            <span class="text-secondary mr-3">•</span>
+            <span class="text-secondary mr-3">â€¢</span>
             <div class="mr-3 d-flex align-items-center">
                 <i class="fa fa-check-circle"></i> {{ __('messages.checkout_badge_safe_info') }}
             </div>
-            <span class="text-secondary mr-3">•</span>
+            <span class="text-secondary mr-3">â€¢</span>
             <div class="d-flex align-items-center">
                 <i class="fa fa-lock"></i> {{ __('messages.checkout_badge_encryption') }}
             </div>
@@ -301,7 +207,7 @@
                         <div class="d-flex justify-content-between">
                             <div>
                                 <div class="font-weight-bold">
-                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} ×
+                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} Ã—
                                     {{ $qty }}
                                 </div>
 
@@ -400,4 +306,5 @@
                 });
             });
     </script>
+</div>
 @endsection

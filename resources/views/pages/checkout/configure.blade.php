@@ -1,55 +1,8 @@
-@extends('layouts.default')
+﻿@extends('layouts.default')
 @section('title', __('messages.checkout_step_title'))
 
 @section('content')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-<style>
-/* --- page look --- */
-.config-wrap{background:#eef2f7}
-.config-card{background:#fff;border:1px solid #e6eaf0;border-radius:14px;box-shadow:0 8px 30px rgba(16,24,40,.04)}
-.head-num{width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#1d4ed8;color:#fff;font-weight:700;margin-right:10px}
-.section-title{font-weight:700;color:#0f172a}
-.section-label{font-weight:700;color:#64748b;margin:8px 0 14px}
-
-/* items */
-.item-flex{display:flex;flex-wrap:wrap;gap:18px}
-.pick{flex:0 0 auto;width:160px;padding:16px;border:1.5px solid #e7eef5;border-radius:14px;background:#fff;text-align:center;cursor:pointer;transition:.2s ease}
-.pick:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(16,24,40,.06)}
-.pick.active{background:#eff6ff;border-color:#93c5fd;box-shadow:0 10px 28px rgba(37,99,235,.08)}
-.pick .ico{font-size:34px;margin-bottom:6px}
-.pick small{display:block;color:#475569}
-
-/* lock state for connection section */
-.locked .pick{opacity:.55;cursor:not-allowed}
-.lock-hint{font-size:13px;color:#64748b}
-
-/* packages grid */
-.pkg-grid{display:grid;gap:22px;grid-template-columns:repeat(3,minmax(0,1fr))}
-@media (max-width: 992px){ .pkg-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
-@media (max-width: 576px){ .pkg-grid{grid-template-columns:1fr} }
-
-/* package card */
-.pick.pkg-card{width:100%}
-.pkg-card{position:relative;padding:26px 22px 20px;border-radius:16px;border:1.5px solid #e7eef5;background:#fff}
-.pkg-card:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(16,24,40,.06)}
-.pkg-card.active{background:#eff6ff;border-color:#93c5fd;box-shadow:0 10px 28px rgba(37,99,235,.08)}
-.pkg-badge{position:absolute;top:-20px;left:22px;width:56px;height:56px;border-radius:99px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 12px 26px rgba(2,6,23,.10)}
-.pkg-title{font-weight:800;font-size:20px;color:#0f172a;margin:6px 0 6px;line-height:1.1}
-.pkg-old{color:#94a3b8;text-decoration:line-through;font-weight:700;margin-bottom:2px}
-.pkg-new{color:#dc2626;font-weight:800;font-size:20px}
-.pkg-unit{color:#111827;font-weight:600}
-
-/* CTA */
-.cta{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:10px;padding:12px 18px;font-weight:700;background:#2563eb;color:#fff;text-decoration:none}
-.cta[disabled]{opacity:.6;pointer-events:none}
-
-/* toggle */
-.toggle-wrap{display:inline-flex;gap:6px;background:#eef2ff;border-radius:12px;padding:6px}
-.tg-btn{border:0;background:transparent;padding:8px 14px;border-radius:10px;font-weight:700;color:#254;cursor:pointer}
-.tg-btn.active{background:#2563eb;color:#fff;box-shadow:0 6px 14px rgba(37,99,235,.25)}
-.hidden{display:none !important}
-</style>
 
 <div class="config-wrap py-5">
   <div class="container">
@@ -149,7 +102,7 @@
         </div>
 
         <div class="item-flex">
-          {{-- 1 connection – always available, price from DB/old config --}}
+          {{-- 1 connection â€“ always available, price from DB/old config --}}
           <div class="pick"
                data-kind="connection"
                data-max="1"
@@ -161,7 +114,7 @@
             <small>{{ __('messages.checkout_one_connection_hint') }}</small>
           </div>
 
-          {{-- 2 connections – yearly only, $69.99 --}}
+          {{-- 2 connections â€“ yearly only, $69.99 --}}
           <div class="pick"
                data-kind="connection"
                data-max="2"
@@ -173,7 +126,7 @@
             <small>{{ __('messages.checkout_two_connection_hint') }}</small>
           </div>
 
-          {{-- 4 connections – yearly only, $139.99 --}}
+          {{-- 4 connections â€“ yearly only, $139.99 --}}
           <div class="pick"
                data-kind="connection"
                data-max="4"
@@ -547,7 +500,7 @@
   });
   setPackageTab('iptv');
 
-  // ---------- Deep-link support (pricing → configure) ----------
+  // ---------- Deep-link support (pricing â†’ configure) ----------
   (function () {
     const url     = new URL(window.location.href);
     const ptype   = url.searchParams.get('ptype');
@@ -635,3 +588,4 @@
 })();
 </script>
 @endsection
+
