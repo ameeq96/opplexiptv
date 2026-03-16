@@ -550,23 +550,6 @@
             });
 
             // Reseller toggle (guard all elements)
-            const toggle = document.getElementById('resellerToggle');
-            const normal = document.getElementById('normalPackages');
-            const reseller = document.getElementById('resellerPackages');
-            const creditInfo = document.getElementById('creditInfo');
-            const realToggle = document.getElementById('real-toggle');
-
-            if (realToggle) realToggle.style.display = 'block';
-
-            if (toggle && normal && reseller && creditInfo) {
-                const applyState = (checked) => {
-                    normal.style.display = checked ? 'none' : 'flex';
-                    reseller.style.display = checked ? 'flex' : 'none';
-                    creditInfo.style.display = checked ? 'block' : 'none';
-                };
-                applyState(!!toggle.checked);
-                toggle.addEventListener('change', (e) => applyState(e.target.checked));
-            }
             // else: elements not on this page — silently skip
         });
     })();

@@ -299,24 +299,51 @@
 
                 #normalPackages.scroll-wrapper.normal-wrapper,
                 #resellerPackages .reseller-wrapper {
-                    display: grid;
-                    grid-auto-flow: column;
-                    grid-auto-columns: minmax(85%, 1fr);
-                    overflow-x: auto;
-                    scroll-snap-type: x mandatory;
-                    overscroll-behavior-x: contain;
-                    padding-bottom: 12px;
+                    display: flex !important;
+                    flex-wrap: nowrap;
+                    align-items: stretch;
                     gap: 16px;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    scroll-snap-type: x mandatory;
+                    -webkit-overflow-scrolling: touch;
+                    padding: 0 4px 10px;
+                    scrollbar-width: none;
                 }
 
-                .pkg-item {
+                #normalPackages.scroll-wrapper.normal-wrapper::-webkit-scrollbar,
+                #resellerPackages .reseller-wrapper::-webkit-scrollbar {
+                    display: none;
+                }
+
+                #normalPackages .pkg-item,
+                #resellerPackages .reseller-wrapper .pkg-item {
+                    display: block !important;
+                    flex: 0 0 min(84vw, 360px) !important;
+                    width: min(84vw, 360px) !important;
+                    min-width: min(84vw, 360px) !important;
+                    max-width: min(84vw, 360px) !important;
+                    margin: 0;
                     scroll-snap-align: start;
-                    min-width: 85vw;
-                    max-width: 85vw;
+                    align-self: stretch;
                 }
 
-                .price-block {
-                    height: 100%;
+                .pricing-section.style-two .pkg-item,
+                .pricing-section.style-two .price-block,
+                .pricing-section.style-two .pkg-item .price-block,
+                .pricing-section.style-two .pkg-item .inner-box {
+                    height: auto !important;
+                    min-height: 0 !important;
+                }
+
+                .pricing-section.style-two .pkg-item .lower-box {
+                    flex: 0 0 auto;
+                    justify-content: flex-start;
+                }
+
+                .pricing-section.style-two .package-price-button,
+                .pricing-section.style-two .button-box-2 {
+                    margin-top: 8px;
                 }
             }
 
@@ -519,6 +546,8 @@
         const resellerCards = document.querySelectorAll('.pkg-item[data-type="reseller"]');
 
         const norm = s => (s || '').toString().trim().toLowerCase();
+        const isMobilePricing = () => window.matchMedia('(max-width: 768px)').matches;
+        const getNormalPackagesDisplay = () => (isMobilePricing() ? 'flex' : 'grid');
 
         function getActiveVendor(toggleEl, fallback = 'opplex') {
             if (!toggleEl) return fallback;
@@ -542,7 +571,7 @@
             let visibleCount = 0;
 
             if (normalPackagesWrap) {
-                normalPackagesWrap.style.setProperty('display', showReseller ? 'none' : 'grid', 'important');
+                normalPackagesWrap.style.setProperty('display', showReseller ? 'none' : getNormalPackagesDisplay(), 'important');
             }
             if (resellerWrap) {
                 resellerWrap.style.setProperty('display', showReseller ? 'block' : 'none', 'important');
@@ -616,6 +645,11 @@
                 renderReseller();
             });
         }
+
+        window.addEventListener('resize', function() {
+            renderIptv();
+            renderReseller();
+        });
 
         renderIptv();
         renderReseller();
