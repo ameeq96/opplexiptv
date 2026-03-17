@@ -211,11 +211,29 @@
 <script type="application/ld+json">
     {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "OnlineStore",
+    "@id": "{{ url('/') }}#organization",
     "name": "Opplex IPTV",
-    "url": "https://opplexiptv.com/",
+    "url": "{{ url('/') }}",
     "description": "Opplex IPTV provides IPTV subscription services with live TV, sports, movies, and premium entertainment channels.",
-    "logo": "https://opplexiptv.com/logo.png"
+    "logo": "{{ asset('images/opplexiptvlogo.webp') }}",
+    "telephone": "+1-639-390-3194",
+    "email": "info@opplexiptv.com",
+    "areaServed": "Worldwide",
+    "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "merchantReturnLink": "{{ route('refund-policy') }}"
+    },
+    "hasShippingService": {
+        "@type": "ShippingService",
+        "name": "Digital delivery only",
+        "shippingConditions": [
+            {
+                "@type": "ShippingConditions",
+                "doesNotShip": true
+            }
+        ]
+    }
     }
 </script>
 
@@ -230,23 +248,6 @@
     },
     "serviceType": "IPTV Streaming Service",
     "areaServed": "Worldwide"
-    }
-</script>
-
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Opplex IPTV Subscription",
-    "brand": {
-        "@type": "Brand",
-        "name": "Opplex IPTV"
-    },
-    "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-    }
     }
 </script>
 
