@@ -13,7 +13,7 @@
 
     @include('includes._best-packages', ['useSectionSkeletons' => $useSectionSkeletons])
 
-    @if(!empty($homeProducts) && count($homeProducts) > 0)
+    {{-- @if(!empty($homeProducts) && count($homeProducts) > 0)
         <section class="shop-section shop-section-2 skeleton-section skeleton-section--products"
             data-skeleton-section
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </section>
-    @endif
+    @endif --}}
 
     @if(!empty($homeAffiliateProducts) && count($homeAffiliateProducts) > 0)
         <section class="shop-section shop-section-2 mt-5 skeleton-section skeleton-section--products"
