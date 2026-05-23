@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use App\Jobs\GenerateWebpImage;
-use Illuminate\Support\Facades\Http;
 
 class ImageService
 {
@@ -24,18 +23,19 @@ class ImageService
 
     public function tmdbImage(string $path, string $size): string
     {
-        return rtrim(self::TMDB_IMG_BASE, '/') . '/' . $size . $path;
+        return rtrim(self::TMDB_IMG_BASE, '/').'/'.$size.$path;
     }
 
     public function toWebp(string $imageUrl, int $width, int $height, int $quality = 75): string
     {
-        $webpDir  = public_path('webp_images');
-        $webpPath = 'webp_images/' . md5($imageUrl . $width . $height . $quality) . '.webp';
+        $webpPath = 'webp_images/'.md5($imageUrl.$width.$height.$quality).'.webp';
         $fullPath = public_path($webpPath);
 
-        if (file_exists($fullPath)) return asset($webpPath);
+        if (file_exists($fullPath)) {
+            return asset($webpPath);
+        }
 
-        GenerateWebpImage::dispatch($imageUrl, $width, $height, $quality, $webpPath);
+        GenerateWebpImage::dispatchAfterResponse($imageUrl, $width, $height, $quality, $webpPath);
 
         return $imageUrl;
     }

@@ -1,8 +1,11 @@
 ﻿@extends('layouts.default')
 @section('title', __('messages.checkout_step_title'))
 
-@section('content')
+@push('styles')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+@endpush
+
+@section('content')
 
 <div class="config-wrap py-5">
   <div class="container">
@@ -588,4 +591,3 @@
 })();
 </script>
 @endsection
-

@@ -71,6 +71,36 @@
     $supported = array_keys(config('laravellocalization.supportedLocales') ?? []);
 
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
+
+    $pageTitleLcpBackgrounds = [
+        'about' => 'images/background/7.webp',
+        'pricing' => 'images/background/7.webp',
+        'packages' => 'images/background/9.webp',
+        'faqs' => 'images/background/10.webp',
+        'contact' => 'images/background/10.webp',
+        'reseller-panel' => 'images/background/7.webp',
+        'iptv-applications' => 'images/background/10.webp',
+        'shop' => 'images/background/10.webp',
+        'buynow' => 'images/background/10.webp',
+        'buynowpanel' => 'images/background/10.webp',
+    ];
+
+    $phoneInputRoutes = ['contact', 'checkout', 'buynow', 'buynowpanel'];
+    $needsPhoneInputAssets = in_array($routeName, $phoneInputRoutes, true);
+    $needsTmdbPreconnect = in_array($routeName, ['home', 'movies'], true);
+    $needsCheckoutStyles =
+        in_array($routeName, ['configure', 'checkout', 'thankyou', 'products.share'], true) ||
+        str_starts_with((string) $routeName, 'digital.');
+
+    $lcpImageHref = null;
+    if ($routeName === 'home' && !empty($displayMovies[0]['webp_image_url'] ?? null)) {
+        $lcpImageHref = $displayMovies[0]['webp_image_url'];
+    } elseif (isset($pageTitleLcpBackgrounds[$routeName])) {
+        $lcpImageHref = asset($pageTitleLcpBackgrounds[$routeName]);
+    }
+
+    $lcpImagePath = $lcpImageHref ? (parse_url($lcpImageHref, PHP_URL_PATH) ?: '') : '';
+    $lcpImageType = str_ends_with($lcpImagePath, '.webp') ? 'image/webp' : null;
 @endphp
 
 <title>{{ $metaTitle }}</title>
@@ -124,42 +154,60 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+@if ($needsTmdbPreconnect)
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+@endif
+
+@if ($lcpImageHref)
+    <link rel="preload" as="image" href="{{ $lcpImageHref }}" fetchpriority="high"
+        @if($lcpImageType) type="{{ $lcpImageType }}" @endif>
+@endif
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
     crossorigin>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
 <link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/global.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/header.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/font-awesome.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/flaticon.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/linearicons.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
+@if ($needsCheckoutStyles)
+    <link rel="stylesheet" href="{{ v('css/checkout.css') }}" media="all">
+@endif
 
 @php
-    $nonCriticalStyles = [
-        'global.css',
-        'header.css',
+    $deferredStyles = [
+        'discount-wheel.css',
         'footer.css',
-        'font-awesome.css',
-        'flaticon.css',
         'animate.css',
         'owl.css',
         'swiper.css',
-        'linearicons.css',
-        'checkout.css',
         'jquery-ui.css',
         'custom-animate.css',
         'jquery.fancybox.min.css',
         'jquery.mCustomScrollbar.min.css',
+        'voice-assistant.css',
     ];
+
+    if (!$needsCheckoutStyles) {
+        $deferredStyles[] = 'checkout.css';
+    }
 @endphp
 
-@foreach ($nonCriticalStyles as $style)
-    <link rel="preload" href="{{ v("css/$style") }}" as="style">
-@endforeach
-@foreach ($nonCriticalStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
+@foreach ($deferredStyles as $style)
+    <link rel="preload" href="{{ v("css/$style") }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 @endforeach
 
-<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
+@if ($needsPhoneInputAssets)
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css"
+        as="style" crossorigin onload="this.onload=null;this.rel='stylesheet'">
+@endif
+
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
@@ -168,21 +216,21 @@
 <link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
 
-@if (!empty($displayMovies[0]['webp_image_url'] ?? null))
-    <link rel="preload" as="image"
-        href="{{ !empty($displayMovies[0]['webp_image_url']) ? $displayMovies[0]['webp_image_url'] : v('images/placeholder.webp') }}"
-        fetchpriority="high">
-@endif
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
-
 <noscript>
     <link rel="stylesheet" href="{{ v('css/style.css') }}">
-    @foreach ($nonCriticalStyles as $style)
+    <link rel="stylesheet" href="{{ v('css/global.css') }}">
+    <link rel="stylesheet" href="{{ v('css/header.css') }}">
+    <link rel="stylesheet" href="{{ v('css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ v('css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ v('css/linearicons.css') }}">
+    @foreach ($deferredStyles as $style)
         <link rel="stylesheet" href="{{ v("css/$style") }}">
     @endforeach
     <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
+    @if ($needsPhoneInputAssets)
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+    @endif
 </noscript>
 
 @if (!empty($fbPixels))
