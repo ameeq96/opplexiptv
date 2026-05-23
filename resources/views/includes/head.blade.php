@@ -15,7 +15,8 @@
         }
     }
 
-    $route = Request::route() ? Request::route()->getName() : 'home';
+    $routeName = optional(Request::route())->getName() ?: 'home';
+    $route = $routeName;
     $locale = app()->getLocale();
     $meta = trans("meta.$route");
     $metaTitle = $meta['title'] ?? 'Default Title';
@@ -31,7 +32,6 @@
     }
     $currency = config('services.app.default_currency', 'USD');
 
-    $routeName = optional(Request::route())->getName();
     $noindexRoutes = ['redirect.ad'];
 
     $pageParam = (int) request()->input('page', 1);
@@ -71,6 +71,29 @@
     $supported = array_keys(config('laravellocalization.supportedLocales') ?? []);
 
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
+    $phoneInputAssetRoutes = ['contact', 'checkout', 'buynow', 'buynowpanel'];
+    $needsPhoneInputAssets = in_array($routeName, $phoneInputAssetRoutes, true);
+    $checkoutStyleRoutes = ['configure', 'checkout'];
+    $needsBlockingCheckoutStyles = in_array($routeName, $checkoutStyleRoutes, true);
+
+    $pageTitleLcpBackgrounds = [
+        'about' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+        'packages' => ['images/background/9-lcp.webp', 'images/background/9-mobile.webp'],
+        'pricing' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+        'faqs' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'contact' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'reseller-panel' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+        'iptv-applications' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'shop' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'buynow' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'buynowpanel' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+    ];
+    $pageTitleLcpBackground = $pageTitleLcpBackgrounds[$routeName] ?? null;
+    $firstHeroImage = null;
+    if ($routeName === 'home' && !empty($displayMovies[0]['webp_image_url'] ?? null)) {
+        $firstHeroImage = $displayMovies[0]['webp_image_url'];
+    }
+    $preconnectTmdb = $firstHeroImage && str_contains($firstHeroImage, 'https://image.tmdb.org/');
 @endphp
 
 <title>{{ $metaTitle }}</title>
@@ -131,17 +154,23 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
-    crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+@if ($preconnectTmdb)
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+    <link rel="dns-prefetch" href="//image.tmdb.org">
+@endif
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
 <link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/global.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/header.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
 
 @php
-    $nonCriticalStyles = [
-        'global.css',
-        'header.css',
+    $asyncStyles = [
+        'discount-wheel.css',
         'footer.css',
         'font-awesome.css',
         'flaticon.css',
@@ -149,24 +178,22 @@
         'owl.css',
         'swiper.css',
         'linearicons.css',
-        'checkout.css',
         'jquery-ui.css',
         'custom-animate.css',
         'jquery.fancybox.min.css',
         'jquery.mCustomScrollbar.min.css',
+        'voice-assistant.css',
     ];
 @endphp
 
-@foreach ($nonCriticalStyles as $style)
-    <link rel="preload" href="{{ v("css/$style") }}" as="style">
+@foreach ($asyncStyles as $style)
+    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.media='all'">
 @endforeach
-@foreach ($nonCriticalStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
-@endforeach
-
-<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
+@if ($needsBlockingCheckoutStyles)
+    <link rel="stylesheet" href="{{ v('css/checkout.css') }}" media="all">
+@else
+    <link rel="stylesheet" href="{{ v('css/checkout.css') }}" media="print" onload="this.media='all'">
+@endif
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
@@ -175,21 +202,35 @@
 <link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
 
-@if (!empty($displayMovies[0]['webp_image_url'] ?? null))
-    <link rel="preload" as="image"
-        href="{{ !empty($displayMovies[0]['webp_image_url']) ? $displayMovies[0]['webp_image_url'] : v('images/placeholder.webp') }}"
-        fetchpriority="high">
+@if ($firstHeroImage)
+    <link rel="preload" as="image" href="{{ $firstHeroImage }}" type="image/webp" fetchpriority="high">
 @endif
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+@if ($pageTitleLcpBackground)
+    <link rel="preload" as="image" href="{{ asset($pageTitleLcpBackground[0]) }}" type="image/webp"
+        media="(min-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ asset($pageTitleLcpBackground[1]) }}" type="image/webp"
+        media="(max-width: 767px)" fetchpriority="high">
+@endif
+
+@if ($needsPhoneInputAssets)
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+@endif
 
 <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ v('css/style.css') }}">
-    @foreach ($nonCriticalStyles as $style)
+    <link rel="stylesheet" href="{{ v('css/global.css') }}">
+    <link rel="stylesheet" href="{{ v('css/header.css') }}">
+    @foreach ($asyncStyles as $style)
         <link rel="stylesheet" href="{{ v("css/$style") }}">
     @endforeach
     <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
+    <link rel="stylesheet" href="{{ v('css/checkout.css') }}">
+    @if ($needsPhoneInputAssets)
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+    @endif
 </noscript>
 
 @if (!empty($fbPixels))

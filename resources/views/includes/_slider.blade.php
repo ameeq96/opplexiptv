@@ -66,7 +66,8 @@
 
                                 @if ($index === 0)
                                     <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
-                                        aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}">
+                                        aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
+                                        width="960" height="540" loading="eager" fetchpriority="high" decoding="async">
                                 @endif
 
                                 <div class="auto-container custom-height">
@@ -153,7 +154,8 @@
 
                         @if ($index === 0)
                             <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
-                                aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}">
+                                aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
+                                width="960" height="540" loading="eager" fetchpriority="high" decoding="async">
                         @endif
 
                         <div class="auto-container custom-height">
