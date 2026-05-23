@@ -1,5 +1,5 @@
 <section class="page-title"
-    style="background-image: url('{{ asset($background) }}'); direction: {{ $rtl ? 'rtl' : 'ltr' }};"
+    style="--page-title-bg-desktop: url('{{ asset($desktopBackground) }}'); --page-title-bg-mobile: url('{{ asset($mobileBackground) }}'); background-image: var(--page-title-bg-desktop); direction: {{ $rtl ? 'rtl' : 'ltr' }};"
     @if($ariaLabel) aria-label="{{ $ariaLabel }}" @endif>
     <div class="auto-container" style="text-align: {{ $rtl ? 'right' : 'left' }};">
         <h2>{{ $title }}</h2>

@@ -33,7 +33,7 @@
 
     @yield('script')
 
-    <script src="{{ v('js/voice-assistant.js') }}"></script>
+    <script src="{{ v('js/voice-assistant.js') }}" defer></script>
 </body>
 
 </html>

@@ -66,25 +66,45 @@ class LcpHintsTest extends TestCase
     public function test_page_title_routes_preload_their_lcp_backgrounds(): void
     {
         $routes = [
-            'about' => 'images/background/7.webp',
-            'packages' => 'images/background/9.webp',
-            'pricing' => 'images/background/7.webp',
-            'faqs' => 'images/background/10.webp',
-            'contact' => 'images/background/10.webp',
-            'reseller-panel' => 'images/background/7.webp',
-            'iptv-applications' => 'images/background/10.webp',
-            'shop' => 'images/background/10.webp',
-            'buynow' => 'images/background/10.webp',
-            'buynowpanel' => 'images/background/10.webp',
+            'about' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+            'packages' => ['images/background/9-lcp.webp', 'images/background/9-mobile.webp'],
+            'pricing' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+            'faqs' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+            'contact' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+            'reseller-panel' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+            'iptv-applications' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+            'shop' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+            'buynow' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+            'buynowpanel' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
         ];
 
-        foreach ($routes as $route => $asset) {
+        foreach ($routes as $route => [$desktopAsset, $mobileAsset]) {
             $html = $this->renderHeadForRoute($route);
 
             $this->assertStringContainsString('rel="preload" as="image"', $html);
-            $this->assertStringContainsString('href="'.asset($asset).'"', $html);
+            $this->assertStringContainsString('href="'.asset($desktopAsset).'"', $html);
+            $this->assertStringContainsString('href="'.asset($mobileAsset).'"', $html);
+            $this->assertStringContainsString('media="(max-width: 767px)"', $html);
+            $this->assertStringContainsString('media="(min-width: 768px)"', $html);
             $this->assertStringContainsString('type="image/webp"', $html);
         }
+    }
+
+    public function test_page_title_uses_responsive_lcp_background_variants(): void
+    {
+        $html = view('components.page-title', [
+            'title' => 'Packages',
+            'breadcrumbs' => [],
+            'background' => 'images/background/9.webp',
+            'desktopBackground' => 'images/background/9-lcp.webp',
+            'mobileBackground' => 'images/background/9-mobile.webp',
+            'rtl' => false,
+            'ariaLabel' => null,
+        ])->render();
+
+        $this->assertStringContainsString('--page-title-bg-desktop: url(\''.asset('images/background/9-lcp.webp').'\')', $html);
+        $this->assertStringContainsString('--page-title-bg-mobile: url(\''.asset('images/background/9-mobile.webp').'\')', $html);
+        $this->assertStringNotContainsString('background-image: url(\''.asset('images/background/9.webp').'\')', $html);
     }
 
     public function test_phone_input_assets_only_load_on_phone_form_pages(): void
@@ -127,7 +147,10 @@ class LcpHintsTest extends TestCase
             '/<link rel="stylesheet" href="[^"]*\/css\/checkout\.css[^"]*" media="all">/',
             $packagesHtml
         );
-        $this->assertStringContainsString('<link rel="preload" href="'.asset('css/checkout.css'), $packagesHtml);
+        $this->assertMatchesRegularExpression(
+            '/<link rel="stylesheet" href="[^"]*\/css\/checkout\.css[^"]*" media="print" onload="this\.media=\'all\'">/',
+            $packagesHtml
+        );
     }
 
     public function test_non_movie_routes_do_not_preconnect_to_tmdb(): void

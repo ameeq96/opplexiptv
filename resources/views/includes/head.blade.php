@@ -73,34 +73,36 @@
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
 
     $pageTitleLcpBackgrounds = [
-        'about' => 'images/background/7.webp',
-        'pricing' => 'images/background/7.webp',
-        'packages' => 'images/background/9.webp',
-        'faqs' => 'images/background/10.webp',
-        'contact' => 'images/background/10.webp',
-        'reseller-panel' => 'images/background/7.webp',
-        'iptv-applications' => 'images/background/10.webp',
-        'shop' => 'images/background/10.webp',
-        'buynow' => 'images/background/10.webp',
-        'buynowpanel' => 'images/background/10.webp',
+        'about' => ['desktop' => 'images/background/7-lcp.webp', 'mobile' => 'images/background/7-mobile.webp'],
+        'pricing' => ['desktop' => 'images/background/7-lcp.webp', 'mobile' => 'images/background/7-mobile.webp'],
+        'packages' => ['desktop' => 'images/background/9-lcp.webp', 'mobile' => 'images/background/9-mobile.webp'],
+        'faqs' => ['desktop' => 'images/background/10-lcp.webp', 'mobile' => 'images/background/10-mobile.webp'],
+        'contact' => ['desktop' => 'images/background/10-lcp.webp', 'mobile' => 'images/background/10-mobile.webp'],
+        'reseller-panel' => ['desktop' => 'images/background/7-lcp.webp', 'mobile' => 'images/background/7-mobile.webp'],
+        'iptv-applications' => ['desktop' => 'images/background/10-lcp.webp', 'mobile' => 'images/background/10-mobile.webp'],
+        'shop' => ['desktop' => 'images/background/10-lcp.webp', 'mobile' => 'images/background/10-mobile.webp'],
+        'buynow' => ['desktop' => 'images/background/10-lcp.webp', 'mobile' => 'images/background/10-mobile.webp'],
+        'buynowpanel' => ['desktop' => 'images/background/10-lcp.webp', 'mobile' => 'images/background/10-mobile.webp'],
     ];
 
     $phoneInputRoutes = ['contact', 'checkout', 'buynow', 'buynowpanel'];
     $needsPhoneInputAssets = in_array($routeName, $phoneInputRoutes, true);
-    $needsTmdbPreconnect = in_array($routeName, ['home', 'movies'], true);
     $needsCheckoutStyles =
         in_array($routeName, ['configure', 'checkout', 'thankyou', 'products.share'], true) ||
         str_starts_with((string) $routeName, 'digital.');
 
     $lcpImageHref = null;
+    $lcpMobileImageHref = null;
     if ($routeName === 'home' && !empty($displayMovies[0]['webp_image_url'] ?? null)) {
         $lcpImageHref = $displayMovies[0]['webp_image_url'];
     } elseif (isset($pageTitleLcpBackgrounds[$routeName])) {
-        $lcpImageHref = asset($pageTitleLcpBackgrounds[$routeName]);
+        $lcpImageHref = asset($pageTitleLcpBackgrounds[$routeName]['desktop']);
+        $lcpMobileImageHref = asset($pageTitleLcpBackgrounds[$routeName]['mobile']);
     }
 
     $lcpImagePath = $lcpImageHref ? (parse_url($lcpImageHref, PHP_URL_PATH) ?: '') : '';
     $lcpImageType = str_ends_with($lcpImagePath, '.webp') ? 'image/webp' : null;
+    $needsTmdbPreconnect = $routeName === 'movies' || str_contains((string) $lcpImageHref, 'https://image.tmdb.org');
 @endphp
 
 <title>{{ $metaTitle }}</title>
@@ -116,6 +118,13 @@
 <script>
     var isRtl = {{ $isRtl ? 'true' : 'false' }};
 </script>
+<style>
+    @media (max-width: 767px) {
+        .page-title {
+            background-image: var(--page-title-bg-mobile) !important;
+        }
+    }
+</style>
 
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">
@@ -159,7 +168,12 @@
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
 
-@if ($lcpImageHref)
+@if ($lcpImageHref && $lcpMobileImageHref)
+    <link rel="preload" as="image" href="{{ $lcpMobileImageHref }}" fetchpriority="high" media="(max-width: 767px)"
+        type="image/webp">
+    <link rel="preload" as="image" href="{{ $lcpImageHref }}" fetchpriority="high" media="(min-width: 768px)"
+        type="image/webp">
+@elseif ($lcpImageHref)
     <link rel="preload" as="image" href="{{ $lcpImageHref }}" fetchpriority="high"
         @if($lcpImageType) type="{{ $lcpImageType }}" @endif>
 @endif
@@ -171,9 +185,6 @@
 <link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/global.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/header.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/font-awesome.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/flaticon.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/linearicons.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
 @if ($needsCheckoutStyles)
@@ -184,6 +195,9 @@
     $deferredStyles = [
         'discount-wheel.css',
         'footer.css',
+        'font-awesome.css',
+        'flaticon.css',
+        'linearicons.css',
         'animate.css',
         'owl.css',
         'swiper.css',
@@ -200,12 +214,12 @@
 @endphp
 
 @foreach ($deferredStyles as $style)
-    <link rel="preload" href="{{ v("css/$style") }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.media='all'">
 @endforeach
 
 @if ($needsPhoneInputAssets)
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css"
-        as="style" crossorigin onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css"
+        media="print" crossorigin onload="this.media='all'">
 @endif
 
 @stack('styles')
@@ -220,9 +234,6 @@
     <link rel="stylesheet" href="{{ v('css/style.css') }}">
     <link rel="stylesheet" href="{{ v('css/global.css') }}">
     <link rel="stylesheet" href="{{ v('css/header.css') }}">
-    <link rel="stylesheet" href="{{ v('css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ v('css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ v('css/linearicons.css') }}">
     @foreach ($deferredStyles as $style)
         <link rel="stylesheet" href="{{ v("css/$style") }}">
     @endforeach
