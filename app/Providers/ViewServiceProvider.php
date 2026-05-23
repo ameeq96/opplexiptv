@@ -15,13 +15,7 @@ class ViewServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        View::composer([
-            'layouts.default',
-            'pages.*',
-            'blogs.*',
-            'policies.*',
-            'errors.*',
-        ], function ($view) {
+        View::composer('*', function ($view) {
             static $shared = null;
 
             if ($shared === null) {
