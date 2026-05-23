@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use App\Support\UiData;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+use App\Support\UiData;
 
 class ViewServiceProvider extends ServiceProvider
 {
@@ -16,18 +16,16 @@ class ViewServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::composer('*', function ($view) {
-            $request = request();
-            $attribute = 'opplex_ui_data';
+            static $shared = null;
 
-            if (! $request->attributes->has($attribute)) {
-                $request->attributes->set($attribute, resolve(UiData::class)->build());
+            if ($shared === null) {
+                $shared = resolve(UiData::class)->build();
             }
 
-            $shared = $request->attributes->get($attribute, []);
             $data = $view->getData();
             $toShare = array_diff_key($shared, $data);
 
-            if (! empty($toShare)) {
+            if (!empty($toShare)) {
                 $view->with($toShare);
             }
         });

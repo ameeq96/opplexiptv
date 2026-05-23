@@ -4,25 +4,19 @@ declare(strict_types=1);
 
 namespace App\Support;
 
-use App\Models\FooterLink;
-use App\Models\FooterSetting;
+use App\Models\Package;
 use App\Models\HomeService;
+use App\Models\Testimonial;
 use App\Models\MenuItem;
 use App\Models\PricingSection;
+use App\Models\FooterSetting;
+use App\Models\FooterLink;
 use App\Models\SocialLink;
-use App\Models\Testimonial;
-use App\Services\CaptchaService;
-use App\Services\ImageService;
-use App\Services\LocaleService;
-use App\Services\TmdbService;
-use Illuminate\Http\Request;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Lang;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Str;
+use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
+use Illuminate\Support\{Arr, Collection, Str};
+use Illuminate\Support\Facades\{Cache, Lang};
 use Jenssegers\Agent\Agent;
+use Illuminate\Http\Request;
 
 class UiData
 {
@@ -42,130 +36,41 @@ class UiData
      */
     public function build(): array
     {
-        $isMobile = $this->agent->isMobile();
-        $isRtl = $this->locale->isRtl();
+        $isMobile       = $this->agent->isMobile();
+        $isRtl          = $this->locale->isRtl();
         $containerClass = $isMobile ? 'centered' : 'sec-title centered';
-        $routeName = optional($this->request->route())->getName();
 
         $logos = Cache::remember('ui:logos', now()->addDay(), function () {
-            try {
-                $dbLogos = app(\App\Services\ProductCatalogService::class)->getLogos();
-            } catch (\Throwable) {
-                $dbLogos = [];
-            }
-
-            return ! empty($dbLogos) ? $dbLogos : $this->images->logos();
+            $dbLogos = app(\App\Services\ProductCatalogService::class)->getLogos();
+            return !empty($dbLogos) ? $dbLogos : $this->images->logos();
         });
 
-        $num1 = null;
-        $num2 = null;
-        if ($this->routeNeedsCaptcha($routeName)) {
-            ['num1' => $num1, 'num2' => $num2] = $this->captcha->generate();
-            session(['captcha_sum' => $num1 + $num2]);
-        }
+        ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
+        session(['captcha_sum' => $a + $b]);
 
-        $moviePayload = $this->routeNeedsMovies($routeName)
-            ? $this->moviePayload($isMobile, $routeName)
-            : $this->emptyMoviePayload();
-
-        $features = $this->features();
-        $serviceCards = $this->serviceCards();
-        $menuItems = $this->menuItems();
-        $pricingSection = $this->pricingSection();
-        $footer = $this->footerData();
-        $packages = $this->packages();
-        $resellerPlans = $this->resellerPlans();
-        $testimonials = $this->testimonials();
-        $faqs = $this->faqs();
-
-        $platforms = $this->enrichPlatforms($this->platforms());
-        [$packagesDropdown, $resellerPanelPackagesDropdown] = $this->dropdowns();
-
-        $seoServices = array_values((array) Lang::get('messages.seo_services'));
-
-        return [
-            'isMobile' => $isMobile,
-            'isRtl' => $isRtl,
-            'containerClass' => $containerClass,
-            'logos' => $logos,
-
-            'features' => $features,
-            'serviceCards' => $serviceCards,
-            'menuItems' => $menuItems,
-            'pricingSection' => $pricingSection,
-            'footer' => $footer,
-            'packages' => $packages,
-            'resellerPlans' => $resellerPlans,
-            'testimonials' => $testimonials,
-            'faqs' => $faqs,
-            'platforms' => $platforms,
-
-            'num1' => $num1,
-            'num2' => $num2,
-
-            'movies' => $moviePayload['movies'],
-            'displayMovies' => $moviePayload['displayMovies'],
-            'filteredMovies' => $moviePayload['filteredMovies'],
-
-            'page' => $moviePayload['page'],
-            'totalPages' => $moviePayload['totalPages'],
-            'pageStart' => $moviePayload['pageStart'],
-            'pageEnd' => $moviePayload['pageEnd'],
-            'query' => $moviePayload['query'],
-
-            'seoServices' => $seoServices,
-            'packagesDropdown' => $packagesDropdown,
-            'resellerPanelPackagesDropdown' => $resellerPanelPackagesDropdown,
-            'assistant' => config('assistant'),
-        ];
-    }
-
-    private function routeNeedsMovies(?string $routeName): bool
-    {
-        return in_array($routeName, ['home', 'movies'], true);
-    }
-
-    private function routeNeedsCaptcha(?string $routeName): bool
-    {
-        return in_array($routeName, ['contact', 'buynow', 'buynowpanel'], true);
-    }
-
-    /**
-     * @return array<string,mixed>
-     */
-    private function moviePayload(bool $isMobile, ?string $routeName): array
-    {
-        $page = max(1, (int) $this->request->input('page', 1));
+        $page  = max(1, (int) $this->request->input('page', 1));
         $query = trim((string) $this->request->input('search', ''));
 
         if ($query !== '') {
-            $payload = $this->searchTmdb($query, $page);
-            $results = $payload['results'] ?? [];
+            $payload    = $this->searchTmdb($query, $page);
+            $results    = $payload['results'] ?? [];
             $totalPages = max(1, (int) ($payload['total_pages'] ?? 1));
         } else {
-            $results = $this->fetchTrendingMovies($page);
+            $results    = $this->fetchTrendingMovies($page);
             $totalPages = 10;
         }
 
-        $rawLimited = \array_slice($results, 0, 10);
-        $prepared = $this->prepareMovies($rawLimited, $isMobile);
-        $movies = $prepared->values();
-        $displayMovies = $isMobile ? $movies->take(3)->values() : $movies;
+        $rawLimited     = \array_slice($results, 0, 10);
+        $prepared       = $this->prepareMovies($rawLimited, $isMobile);
+        $movies         = $prepared->values();
+        $displayMovies  = $isMobile ? $movies->take(3)->values() : $movies;
 
+        $normalized     = $this->normalizeMovies($movies);
         $filteredMovies = [
-            'movies' => collect(),
-            'series' => collect(),
-            'cartoons' => collect(),
+            'movies'   => $normalized->where('media_type', 'movie')->values(),
+            'series'   => $normalized->where('media_type', 'tv')->values(),
+            'cartoons' => $normalized->filter(static fn($m) => \in_array(16, $m['genre_ids'] ?? [], true))->values(),
         ];
-
-        if ($routeName === 'movies') {
-            $normalized = $this->normalizeMovies($movies);
-            $filteredMovies = [
-                'movies' => $normalized->where('media_type', 'movie')->values(),
-                'series' => $normalized->where('media_type', 'tv')->values(),
-                'cartoons' => $normalized->filter(static fn ($m) => \in_array(16, $m['genre_ids'] ?? [], true))->values(),
-            ];
-        }
 
         $pagination = $this->computePagination(
             page: $page,
@@ -173,58 +78,56 @@ class UiData
             window: 5
         );
 
+        $features      = $this->features();
+        $serviceCards  = $this->serviceCards();
+        $menuItems     = $this->menuItems();
+        $pricingSection = $this->pricingSection();
+        $footer = $this->footerData();
+        $packages      = $this->packages();
+        $resellerPlans = $this->resellerPlans();
+        $testimonials  = $this->testimonials();
+        $faqs          = $this->faqs();
+
+        $platforms = $this->enrichPlatforms($this->platforms());
+        [$packagesDropdown, $resellerPanelPackagesDropdown] = $this->dropdowns();
+
+        $seoServices = array_values((array) Lang::get('messages.seo_services'));
+
         return [
-            'movies' => $movies,
-            'displayMovies' => $displayMovies,
+            'isMobile'       => $isMobile,
+            'isRtl'          => $isRtl,
+            'containerClass' => $containerClass,
+            'logos'          => $logos,
+
+            'features'       => $features,
+            'serviceCards'   => $serviceCards,
+            'menuItems'      => $menuItems,
+            'pricingSection' => $pricingSection,
+            'footer'         => $footer,
+            'packages'       => $packages,
+            'resellerPlans'  => $resellerPlans,
+            'testimonials'   => $testimonials,
+            'faqs'           => $faqs,
+            'platforms'      => $platforms,
+
+            'num1' => $a,
+            'num2' => $b,
+
+            'movies'         => $movies,
+            'displayMovies'  => $displayMovies,
             'filteredMovies' => $filteredMovies,
-            'page' => $pagination['page'],
+
+            'page'       => $pagination['page'],
             'totalPages' => $pagination['total'],
-            'pageStart' => $pagination['start'],
-            'pageEnd' => $pagination['end'],
-            'query' => $query,
+            'pageStart'  => $pagination['start'],
+            'pageEnd'    => $pagination['end'],
+            'query'      => $query,
+
+            'seoServices'                   => $seoServices,
+            'packagesDropdown'              => $packagesDropdown,
+            'resellerPanelPackagesDropdown' => $resellerPanelPackagesDropdown,
+            'assistant'                    => config('assistant'),
         ];
-    }
-
-    /**
-     * @return array<string,mixed>
-     */
-    private function emptyMoviePayload(): array
-    {
-        $empty = collect();
-
-        return [
-            'movies' => $empty,
-            'displayMovies' => $empty,
-            'filteredMovies' => [
-                'movies' => $empty,
-                'series' => $empty,
-                'cartoons' => $empty,
-            ],
-            'page' => 1,
-            'totalPages' => 1,
-            'pageStart' => 1,
-            'pageEnd' => 1,
-            'query' => '',
-        ];
-    }
-
-    private function localeCacheKey(string $name): string
-    {
-        return 'ui:'.$name.':'.app()->getLocale();
-    }
-
-    private function rememberLocale(string $name, \Closure $callback): mixed
-    {
-        return Cache::remember($this->localeCacheKey($name), now()->addMinutes(10), $callback);
-    }
-
-    private function hasTable(string $table): bool
-    {
-        try {
-            return Schema::hasTable($table);
-        } catch (\Throwable) {
-            return false;
-        }
     }
 
     /**
@@ -240,7 +143,6 @@ class UiData
         return Cache::remember($cacheKey, now()->addMinutes(30), function () use ($page): array {
             try {
                 $payload = $this->tmdb->trending('all', 'day', $page);
-
                 return Arr::get($payload, 'results', []) ?: [];
             } catch (\Throwable) {
                 return [];
@@ -251,15 +153,14 @@ class UiData
     private function searchTmdb(string $query, int $page = 1): array
     {
         $locale = app()->getLocale();
-        $key = 'ui:tmdb:search:'.md5($locale.'|'.$query).":p{$page}";
+        $key = "ui:tmdb:search:" . md5($locale . '|' . $query) . ":p{$page}";
 
         return Cache::remember($key, now()->addMinutes(10), function () use ($query, $page) {
             try {
                 $payload = $this->tmdb->searchMulti($query, $page);
-
                 return [
-                    'results' => Arr::get($payload, 'results', []) ?: [],
-                    'total_pages' => (int) (Arr::get($payload, 'total_pages', 1) ?: 1),
+                    'results'      => Arr::get($payload, 'results', []) ?: [],
+                    'total_pages'  => (int) (Arr::get($payload, 'total_pages', 1) ?: 1),
                 ];
             } catch (\Throwable) {
                 return ['results' => [], 'total_pages' => 1];
@@ -270,28 +171,28 @@ class UiData
     /**
      * Add safe fields and generate responsive WEBP URLs.
      *
-     * @param  array<int,array<string,mixed>>  $raw
+     * @param array<int,array<string,mixed>> $raw
      * @return Collection<int,array<string,mixed>>
      */
     private function prepareMovies(array $raw, bool $isMobile): Collection
     {
         // Keep slider images under ~100 KB by reducing dimensions + quality
-        $imgWidth = $isMobile ? 420 : 960;
+        $imgWidth  = $isMobile ? 420 : 960;
         $imgHeight = $isMobile ? 220 : 540;
 
         return collect($raw)->map(function (array $m) use ($isMobile, $imgWidth, $imgHeight) {
-            if (! empty($m['backdrop_path'])) {
+            if (!empty($m['backdrop_path'])) {
                 $src = $this->images->tmdbImage($m['backdrop_path'], $isMobile ? 'w342' : 'w780');
                 $m['webp_image_url'] = $this->images->toWebp($src, $imgWidth, $imgHeight, 70);
             }
 
-            if (! empty($m['poster_path'])) {
+            if (!empty($m['poster_path'])) {
                 // Use smaller poster size to reduce bytes on card grids
                 $src = $this->images->tmdbImage($m['poster_path'], 'w342');
                 $m['webp_poster_url'] = $this->images->toWebp($src, 308, 462);
             }
 
-            $m['safe_title'] = $m['title'] ?? $m['name'] ?? 'Featured IPTV Content';
+            $m['safe_title']    = $m['title'] ?? $m['name'] ?? 'Featured IPTV Content';
             $m['safe_overview'] = isset($m['overview'])
                 ? Str::limit((string) $m['overview'], 150)
                 : __('messages.no_overview');
@@ -303,7 +204,7 @@ class UiData
     /**
      * Normalize for cards/filters and add trailer URL.
      *
-     * @param  Collection<int,array<string,mixed>>  $movies
+     * @param Collection<int,array<string,mixed>> $movies
      * @return Collection<int,array<string,mixed>>
      */
     private function normalizeMovies(Collection $movies): Collection
@@ -312,10 +213,10 @@ class UiData
             $mediaType = $m['media_type']
                 ?? (isset($m['title']) ? 'movie' : (isset($m['name']) ? 'tv' : 'movie'));
 
-            $title = $m['title'] ?? $m['name'] ?? '';
+            $title   = $m['title'] ?? $m['name'] ?? '';
             $dateRaw = $m['release_date'] ?? $m['first_air_date'] ?? '';
-            $year = $dateRaw ? substr((string) $dateRaw, 0, 4) : '—';
-            $poster = $m['poster_path'] ?? null;
+            $year    = $dateRaw ? substr((string) $dateRaw, 0, 4) : '—';
+            $poster  = $m['poster_path'] ?? null;
 
             $posterUrl = $poster
                 ? "https://image.tmdb.org/t/p/w342{$poster}"
@@ -336,13 +237,13 @@ class UiData
             }
 
             return [
-                'id' => $id,
-                'media_type' => $mediaType,
-                'title' => $title,
-                'year' => $year,
-                'poster_url' => $posterUrl,
-                'vote' => $vote,
-                'genre_ids' => $m['genre_ids'] ?? [],
+                'id'          => $id,
+                'media_type'  => $mediaType,
+                'title'       => $title,
+                'year'        => $year,
+                'poster_url'  => $posterUrl,
+                'vote'        => $vote,
+                'genre_ids'   => $m['genre_ids'] ?? [],
                 'trailer_url' => $trailerUrl,
             ];
         })->values();
@@ -355,21 +256,21 @@ class UiData
      */
     private function computePagination(int $page, int $totalPages, int $window = 5): array
     {
-        $page = max(1, $page);
+        $page       = max(1, $page);
         $totalPages = max(1, $totalPages);
 
-        $half = intdiv($window, 2);
+        $half  = intdiv($window, 2);
         $start = max(1, $page - $half);
-        $end = min($totalPages, $start + $window - 1);
+        $end   = min($totalPages, $start + $window - 1);
 
         if (($end - $start + 1) < $window) {
             $start = max(1, $end - $window + 1);
         }
 
         return [
-            'page' => $page,
+            'page'  => $page,
             'start' => $start,
-            'end' => $end,
+            'end'   => $end,
             'total' => $totalPages,
         ];
     }
@@ -379,28 +280,28 @@ class UiData
     {
         return [
             [
-                'icon' => 'flaticon-swimming-pool',
-                'title' => __('messages.features.hd_quality.title'),
+                'icon'        => 'flaticon-swimming-pool',
+                'title'       => __('messages.features.hd_quality.title'),
                 'description' => __('messages.features.hd_quality.description'),
-                'link' => route('packages'),
+                'link'        => route('packages'),
             ],
             [
-                'icon' => 'flaticon-5g',
-                'title' => __('messages.features.flexible_packages.title'),
+                'icon'        => 'flaticon-5g',
+                'title'       => __('messages.features.flexible_packages.title'),
                 'description' => __('messages.features.flexible_packages.description'),
-                'link' => route('packages'),
+                'link'        => route('packages'),
             ],
             [
-                'icon' => 'flaticon-8k',
-                'title' => __('messages.features.reliable_service.title'),
+                'icon'        => 'flaticon-8k',
+                'title'       => __('messages.features.reliable_service.title'),
                 'description' => __('messages.features.reliable_service.description'),
-                'link' => route('packages'),
+                'link'        => route('packages'),
             ],
             [
-                'icon' => 'flaticon-customer-service',
-                'title' => __('messages.features.easy_setup.title'),
+                'icon'        => 'flaticon-customer-service',
+                'title'       => __('messages.features.easy_setup.title'),
                 'description' => __('messages.features.easy_setup.description'),
-                'link' => route('contact'),
+                'link'        => route('contact'),
             ],
         ];
     }
@@ -408,84 +309,77 @@ class UiData
     /** @return array<int,array<string,string>> */
     private function serviceCards(): array
     {
-        return $this->rememberLocale('service-cards', function (): array {
-            if ($this->hasTable('home_services')) {
-                $locale = app()->getLocale();
-                $fallback = config('app.fallback_locale');
+        if (\Illuminate\Support\Facades\Schema::hasTable('home_services')) {
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
 
-                return HomeService::query()
-                    ->where('is_active', true)
-                    ->orderBy('sort_order')
-                    ->orderByDesc('id')
-                    ->with(['translations' => function ($q) use ($locale, $fallback) {
-                        $q->whereIn('locale', array_unique([$locale, $fallback]));
-                    }])
-                    ->get(['id', 'title', 'description', 'link', 'icon'])
-                    ->map(function (HomeService $s) {
-                        $t = $s->translation();
+            return HomeService::query()
+                ->where('is_active', true)
+                ->orderBy('sort_order')
+                ->orderByDesc('id')
+                ->with(['translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }])
+                ->get(['id', 'title', 'description', 'link', 'icon'])
+                ->map(function (HomeService $s) {
+                    $t = $s->translation();
+                    return [
+                        'title' => $t?->title ?: $s->title,
+                        'description' => $t?->description ?: $s->description,
+                        'link' => $s->link,
+                        'icon' => $s->icon,
+                    ];
+                })
+                ->toArray();
+        }
 
-                        return [
-                            'title' => $t?->title ?: $s->title,
-                            'description' => $t?->description ?: $s->description,
-                            'link' => $s->link,
-                            'icon' => $s->icon,
-                        ];
-                    })
-                    ->toArray();
-            }
-
-            return [];
-        });
+        return [];
     }
 
     /** @return array<int,array<string,mixed>> */
     private function menuItems(): array
     {
-        return $this->rememberLocale('menu-items', function (): array {
-            if ($this->hasTable('menu_items')) {
-                $locale = app()->getLocale();
-                $fallback = config('app.fallback_locale');
+        if (\Illuminate\Support\Facades\Schema::hasTable('menu_items')) {
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
 
-                return MenuItem::query()
-                    ->whereNull('parent_id')
-                    ->where('is_active', true)
-                    ->with(['children' => function ($q) {
-                        $q->where('is_active', true);
-                    }, 'translations' => function ($q) use ($locale, $fallback) {
-                        $q->whereIn('locale', array_unique([$locale, $fallback]));
-                    }, 'children.translations' => function ($q) use ($locale, $fallback) {
-                        $q->whereIn('locale', array_unique([$locale, $fallback]));
-                    }])
-                    ->orderBy('sort_order')
-                    ->orderByDesc('id')
-                    ->get()
-                    ->map(function (MenuItem $item) {
-                        $t = $item->translation();
-                        $label = $t?->label ?: $item->label;
+            return MenuItem::query()
+                ->whereNull('parent_id')
+                ->where('is_active', true)
+                ->with(['children' => function ($q) {
+                    $q->where('is_active', true);
+                }, 'translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }, 'children.translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }])
+                ->orderBy('sort_order')
+                ->orderByDesc('id')
+                ->get()
+                ->map(function (MenuItem $item) {
+                    $t = $item->translation();
+                    $label = $t?->label ?: $item->label;
+                    return [
+                        'id' => $item->id,
+                        'label' => $label,
+                        'url' => $this->resolveMenuUrl($item->url, $label),
+                        'open_new_tab' => $item->open_new_tab,
+                        'children' => $item->children->map(function (MenuItem $child) {
+                            $tc = $child->translation();
+                            $childLabel = $tc?->label ?: $child->label;
+                            return [
+                                'id' => $child->id,
+                                'label' => $childLabel,
+                                'url' => $this->resolveMenuUrl($child->url, $childLabel),
+                                'open_new_tab' => $child->open_new_tab,
+                            ];
+                        })->toArray(),
+                    ];
+                })
+                ->toArray();
+        }
 
-                        return [
-                            'id' => $item->id,
-                            'label' => $label,
-                            'url' => $this->resolveMenuUrl($item->url, $label),
-                            'open_new_tab' => $item->open_new_tab,
-                            'children' => $item->children->map(function (MenuItem $child) {
-                                $tc = $child->translation();
-                                $childLabel = $tc?->label ?: $child->label;
-
-                                return [
-                                    'id' => $child->id,
-                                    'label' => $childLabel,
-                                    'url' => $this->resolveMenuUrl($child->url, $childLabel),
-                                    'open_new_tab' => $child->open_new_tab,
-                                ];
-                            })->toArray(),
-                        ];
-                    })
-                    ->toArray();
-            }
-
-            return [];
-        });
+        return [];
     }
 
     private function resolveMenuUrl(?string $url, ?string $label = null): string
@@ -503,7 +397,7 @@ class UiData
             return $value;
         }
 
-        $path = '/'.ltrim($value, '/');
+        $path = '/' . ltrim($value, '/');
         $pathLower = Str::lower($path);
 
         $pathToRoute = [
@@ -552,197 +446,175 @@ class UiData
 
     private function pricingSection(): ?array
     {
-        return $this->rememberLocale('pricing-section', function (): ?array {
-            if ($this->hasTable('pricing_sections')) {
-                $locale = app()->getLocale();
-                $fallback = config('app.fallback_locale');
-                $section = PricingSection::query()
-                    ->with(['translations' => function ($q) use ($locale, $fallback) {
-                        $q->whereIn('locale', array_unique([$locale, $fallback]));
-                    }])
-                    ->latest()
-                    ->first();
-
-                if (! $section) {
-                    return null;
-                }
-
-                $t = $section->translation();
-
-                return [
-                    'heading' => $t?->heading ?: $section->heading,
-                    'subheading' => $t?->subheading ?: $section->subheading,
-                    'show_reseller_label' => $t?->show_reseller_label ?: $section->show_reseller_label,
-                    'credit_info' => $t?->credit_info ?: $section->credit_info,
-                ];
-            }
-
-            return null;
-        });
-    }
-
-    private function footerData(): array
-    {
-        return $this->rememberLocale('footer', function (): array {
-            if (! $this->hasTable('footer_settings')) {
-                return [];
-            }
-
+        if (\Illuminate\Support\Facades\Schema::hasTable('pricing_sections')) {
             $locale = app()->getLocale();
             $fallback = config('app.fallback_locale');
-
-            $settings = FooterSetting::query()
+            $section = PricingSection::query()
                 ->with(['translations' => function ($q) use ($locale, $fallback) {
                     $q->whereIn('locale', array_unique([$locale, $fallback]));
                 }])
                 ->latest()
                 ->first();
 
-            $settingsArr = null;
-            if ($settings) {
-                $t = $settings->translation();
-                $settingsArr = [
-                    'brand_text' => $t?->brand_text ?: $settings->brand_text,
-                    'crypto_note' => $t?->crypto_note ?: $settings->crypto_note,
-                    'phone' => $settings->phone,
-                    'email' => $settings->email,
-                    'address' => $t?->address ?: $settings->address,
-                    'rights_text' => $t?->rights_text ?: $settings->rights_text,
-                    'legal_note' => $t?->legal_note ?: $settings->legal_note,
-                ];
+            if (!$section) {
+                return null;
             }
 
-            $links = FooterLink::query()
-                ->where('is_active', true)
-                ->orderBy('group')
-                ->orderBy('sort_order')
-                ->with(['translations' => function ($q) use ($locale, $fallback) {
-                    $q->whereIn('locale', array_unique([$locale, $fallback]));
-                }])
-                ->get()
-                ->map(function (FooterLink $link) {
-                    $t = $link->translation();
-
-                    return [
-                        'group' => $link->group,
-                        'label' => $t?->label ?: $link->label,
-                        'url' => $link->url,
-                    ];
-                })
-                ->groupBy('group')
-                ->toArray();
-
-            $socials = SocialLink::query()
-                ->where('is_active', true)
-                ->orderBy('sort_order')
-                ->with(['translations' => function ($q) use ($locale, $fallback) {
-                    $q->whereIn('locale', array_unique([$locale, $fallback]));
-                }])
-                ->get()
-                ->map(function (SocialLink $link) {
-                    $t = $link->translation();
-
-                    return [
-                        'platform' => $t?->platform ?: $link->platform,
-                        'url' => $link->url,
-                        'icon_class' => $link->icon_class,
-                    ];
-                })
-                ->toArray();
-
+            $t = $section->translation();
             return [
-                'settings' => $settingsArr,
-                'links' => $links,
-                'socials' => $socials,
+                'heading' => $t?->heading ?: $section->heading,
+                'subheading' => $t?->subheading ?: $section->subheading,
+                'show_reseller_label' => $t?->show_reseller_label ?: $section->show_reseller_label,
+                'credit_info' => $t?->credit_info ?: $section->credit_info,
             ];
-        });
+        }
+
+        return null;
+    }
+
+    private function footerData(): array
+    {
+        if (!\Illuminate\Support\Facades\Schema::hasTable('footer_settings')) {
+            return [];
+        }
+
+        $locale = app()->getLocale();
+        $fallback = config('app.fallback_locale');
+
+        $settings = FooterSetting::query()
+            ->with(['translations' => function ($q) use ($locale, $fallback) {
+                $q->whereIn('locale', array_unique([$locale, $fallback]));
+            }])
+            ->latest()
+            ->first();
+
+        $settingsArr = null;
+        if ($settings) {
+            $t = $settings->translation();
+            $settingsArr = [
+                'brand_text' => $t?->brand_text ?: $settings->brand_text,
+                'crypto_note' => $t?->crypto_note ?: $settings->crypto_note,
+                'phone' => $settings->phone,
+                'email' => $settings->email,
+                'address' => $t?->address ?: $settings->address,
+                'rights_text' => $t?->rights_text ?: $settings->rights_text,
+                'legal_note' => $t?->legal_note ?: $settings->legal_note,
+            ];
+        }
+
+        $links = FooterLink::query()
+            ->where('is_active', true)
+            ->orderBy('group')
+            ->orderBy('sort_order')
+            ->with(['translations' => function ($q) use ($locale, $fallback) {
+                $q->whereIn('locale', array_unique([$locale, $fallback]));
+            }])
+            ->get()
+            ->map(function (FooterLink $link) {
+                $t = $link->translation();
+                return [
+                    'group' => $link->group,
+                    'label' => $t?->label ?: $link->label,
+                    'url' => $link->url,
+                ];
+            })
+            ->groupBy('group')
+            ->toArray();
+
+        $socials = SocialLink::query()
+            ->where('is_active', true)
+            ->orderBy('sort_order')
+            ->with(['translations' => function ($q) use ($locale, $fallback) {
+                $q->whereIn('locale', array_unique([$locale, $fallback]));
+            }])
+            ->get()
+            ->map(function (SocialLink $link) {
+                $t = $link->translation();
+                return [
+                    'platform' => $t?->platform ?: $link->platform,
+                    'url' => $link->url,
+                    'icon_class' => $link->icon_class,
+                ];
+            })
+            ->toArray();
+
+        return [
+            'settings' => $settingsArr,
+            'links' => $links,
+            'socials' => $socials,
+        ];
     }
 
     /** @return array<int,array<string,mixed>> */
     private function packages(): array
     {
-        return $this->rememberLocale('packages', function (): array {
-            if (! $this->hasTable('packages')) {
-                return [];
-            }
-
-            return \App\Models\Package::query()
-                ->where('active', true)
-                // Only IPTV rows; show both vendors
-                ->where('type', 'iptv')
-                ->whereIn('vendor', ['opplex', 'starshare'])
-                ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, duration_months, id)")
-                ->with('translations')
-                ->get()
-                ->map(fn ($p) => $p->toIptvArray())
-                ->values()
-                ->all();
-        });
+        return \App\Models\Package::query()
+            ->where('active', true)
+            // Only IPTV rows; show both vendors
+            ->where('type', 'iptv')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, duration_months, id)")
+            ->with('translations')
+            ->get()
+            ->map(fn($p) => $p->toIptvArray())
+            ->values()
+            ->all();
     }
 
     /** @return array<int,array<string,mixed>> */
     private function resellerPlans(): array
     {
-        return $this->rememberLocale('reseller-plans', function (): array {
-            if (! $this->hasTable('packages')) {
-                return [];
-            }
-
-            return \App\Models\Package::query()
-                ->where('active', true)
-                // Only Reseller rows; show both vendors
-                ->where('type', 'reseller')
-                ->whereIn('vendor', ['opplex', 'starshare'])
-                ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
-                ->with('translations')
-                ->get()
-                ->map(fn ($p) => $p->toResellerArray())
-                ->values()
-                ->all();
-        });
+        return \App\Models\Package::query()
+            ->where('active', true)
+            // Only Reseller rows; show both vendors
+            ->where('type', 'reseller')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
+            ->with('translations')
+            ->get()
+            ->map(fn($p) => $p->toResellerArray())
+            ->values()
+            ->all();
     }
-
+    
     /** @return array<int,array<string,string>> */
     private function testimonials(): array
     {
-        return $this->rememberLocale('testimonials', function (): array {
-            if ($this->hasTable('testimonials')) {
-                $locale = app()->getLocale();
-                $fallback = config('app.fallback_locale');
+        if (\Illuminate\Support\Facades\Schema::hasTable('testimonials')) {
+            $locale = app()->getLocale();
+            $fallback = config('app.fallback_locale');
 
-                return Testimonial::query()
-                    ->where('is_active', true)
-                    ->orderBy('sort_order')
-                    ->orderByDesc('id')
-                    ->with(['translations' => function ($q) use ($locale, $fallback) {
-                        $q->whereIn('locale', array_unique([$locale, $fallback]));
-                    }])
-                    ->get(['id', 'text', 'author_name', 'image'])
-                    ->map(function (Testimonial $t) {
-                        $tr = $t->translation();
+            return Testimonial::query()
+                ->where('is_active', true)
+                ->orderBy('sort_order')
+                ->orderByDesc('id')
+                ->with(['translations' => function ($q) use ($locale, $fallback) {
+                    $q->whereIn('locale', array_unique([$locale, $fallback]));
+                }])
+                ->get(['id', 'text', 'author_name', 'image'])
+                ->map(function (Testimonial $t) {
+                    $tr = $t->translation();
+                    return [
+                        'text' => $tr?->text ?: $t->text,
+                        'author_name' => $tr?->author_name ?: $t->author_name,
+                        'image' => $t->image,
+                    ];
+                })
+                ->toArray();
+        }
 
-                        return [
-                            'text' => $tr?->text ?: $t->text,
-                            'author_name' => $tr?->author_name ?: $t->author_name,
-                            'image' => $t->image,
-                        ];
-                    })
-                    ->toArray();
-            }
-
-            return [
-                ['text' => __('messages.testimonial_1'),  'author_name' => 'Amaan Khalid', 'image' => 'images/img-test-2.webp'],
-                ['text' => __('messages.testimonial_2'),  'author_name' => 'Nouman Shahid', 'image' => 'images/img-test-3.webp'],
-                ['text' => __('messages.testimonial_3'),  'author_name' => 'Michael',      'image' => 'images/resource/author-1.webp'],
-                ['text' => __('messages.testimonial_4'),  'author_name' => 'Sarah',        'image' => 'images/resource/author-2.webp'],
-                ['text' => __('messages.testimonial_5'),  'author_name' => 'Ameeq Khan',   'image' => 'images/img-test.webp'],
-                ['text' => __('messages.testimonial_6'),  'author_name' => 'Luc Dubois',   'image' => 'images/resource/author-3.webp'],
-                ['text' => __('messages.testimonial_7'),  'author_name' => 'Giulia Romano', 'image' => 'images/resource/author-5.webp'],
-                ['text' => __('messages.testimonial_8'),  'author_name' => 'Oliver Smith', 'image' => 'images/resource/author-6.webp'],
-                ['text' => __('messages.testimonial_9'),  'author_name' => 'Fatima B.',    'image' => 'images/resource/author-7.webp'],
-                ['text' => __('messages.testimonial_10'), 'author_name' => 'Marco L.',     'image' => 'images/resource/author-8.webp'],
-            ];
-        });
+        return [
+            ['text' => __('messages.testimonial_1'),  'author_name' => 'Amaan Khalid', 'image' => 'images/img-test-2.webp'],
+            ['text' => __('messages.testimonial_2'),  'author_name' => 'Nouman Shahid', 'image' => 'images/img-test-3.webp'],
+            ['text' => __('messages.testimonial_3'),  'author_name' => 'Michael',      'image' => 'images/resource/author-1.webp'],
+            ['text' => __('messages.testimonial_4'),  'author_name' => 'Sarah',        'image' => 'images/resource/author-2.webp'],
+            ['text' => __('messages.testimonial_5'),  'author_name' => 'Ameeq Khan',   'image' => 'images/img-test.webp'],
+            ['text' => __('messages.testimonial_6'),  'author_name' => 'Luc Dubois',   'image' => 'images/resource/author-3.webp'],
+            ['text' => __('messages.testimonial_7'),  'author_name' => 'Giulia Romano', 'image' => 'images/resource/author-5.webp'],
+            ['text' => __('messages.testimonial_8'),  'author_name' => 'Oliver Smith', 'image' => 'images/resource/author-6.webp'],
+            ['text' => __('messages.testimonial_9'),  'author_name' => 'Fatima B.',    'image' => 'images/resource/author-7.webp'],
+            ['text' => __('messages.testimonial_10'), 'author_name' => 'Marco L.',     'image' => 'images/resource/author-8.webp'],
+        ];
     }
 
     /** @return array<int,array<string,mixed>> */
@@ -751,13 +623,13 @@ class UiData
         return [
             [
                 'question' => __('messages.faq.q1'),
-                'answer' => __('messages.faq.a1'),
-                'images' => [],
+                'answer'   => __('messages.faq.a1'),
+                'images'   => [],
             ],
             [
                 'question' => __('messages.faq.q2'),
-                'answer' => __('messages.faq.a2'),
-                'images' => [
+                'answer'   => __('messages.faq.a2'),
+                'images'   => [
                     ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => __('messages.faq.samsung')],
                     ['url' => 'images/resource/mobileimg1.webp',   'caption' => __('messages.faq.mobile')],
                     ['url' => 'images/resource/onmobile.webp',     'caption' => __('messages.faq.front')],
@@ -777,8 +649,8 @@ class UiData
             ],
             [
                 'question' => __('messages.faq.q3'),
-                'answer' => __('messages.faq.a3'),
-                'images' => [
+                'answer'   => __('messages.faq.a3'),
+                'images'   => [
                     ['url' => 'images/resource/loginguide.webp', 'caption' => __('messages.faq.login_guide')],
                 ],
             ],
@@ -837,18 +709,18 @@ class UiData
     /**
      * Add redirect + asset image URLs.
      *
-     * @param  array<string, array<int, array<string,string>>>  $platforms
+     * @param array<string, array<int, array<string,string>>> $platforms
      * @return array<string, array<int, array<string,string>>>
      */
     private function enrichPlatforms(array $platforms): array
     {
         foreach ($platforms as &$apps) {
             foreach ($apps as &$app) {
-                $isExternal = filter_var($app['file'], FILTER_VALIDATE_URL);
-                $downloadUrl = $isExternal ? $app['file'] : asset('downloads/'.$app['file']);
+                $isExternal  = filter_var($app['file'], FILTER_VALIDATE_URL);
+                $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
 
-                $app['href'] = route('redirect.ad', ['target' => $downloadUrl]);
-                $app['image_url'] = asset('images/'.$app['image']);
+                $app['href']      = route('redirect.ad', ['target' => $downloadUrl]);
+                $app['image_url'] = asset('images/' . $app['image']);
             }
             unset($app);
         }

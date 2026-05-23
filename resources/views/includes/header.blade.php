@@ -64,7 +64,7 @@
                 <div class="pull-left logo-box">
                     <div class="logo transparent-logo"><a href="/">
                             <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title=""
-                                width="250" height="65" loading="eager" decoding="async" fetchpriority="high" /> </a>
+                                width="250" height="65" /> </a>
                     </div>
                 </div>
                 <div class="nav-outer clearfix">
@@ -251,7 +251,7 @@
         <nav class="menu-box">
             <div class="nav-logo"><a href="/">
                     <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title=""
-                        width="250" height="65" loading="lazy" decoding="async" />
+                        width="250" height="65" />
                 </a>
                 </a>
             </div>
