@@ -178,17 +178,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" defer></script>
-@if (in_array(optional(Request::route())->getName() ?? 'home', ['contact', 'checkout', 'buynow', 'buynowpanel'], true))
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>
-@endif
 
 <!-- Local scripts last -->
 <script src="{{ v('js/nav-tool.js') }}" defer></script>
 <script src="{{ v('js/discount-wheel.js') }}" defer></script>
 <script src="{{ v('js/script.js') }}" defer></script>
 
-@if (in_array(optional(Request::route())->getName() ?? 'home', ['contact', 'checkout', 'buynow', 'buynowpanel'], true))
 <script>
     (function() {
         function initPhone() {
@@ -249,10 +246,7 @@
             initPhone();
         }
     })();
-</script>
-@endif
 
-<script>
     (function() {
         'use strict';
 
