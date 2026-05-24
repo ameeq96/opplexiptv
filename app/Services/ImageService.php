@@ -27,6 +27,22 @@ class ImageService
         return rtrim(self::TMDB_IMG_BASE, '/') . '/' . $size . $path;
     }
 
+    public function optimizedLocalAsset(string $relativePath): string
+    {
+        $rel = ltrim($relativePath, '/');
+        $fullPath = public_path($rel);
+
+        if (!is_file($fullPath)) {
+            return asset($rel);
+        }
+
+        $info = pathinfo($rel);
+        $dir = ($info['dirname'] ?? '.') === '.' ? '' : $info['dirname'] . '/';
+        $optimized = $dir . 'optimized/' . ($info['filename'] ?? '') . '.webp';
+
+        return is_file(public_path($optimized)) ? asset($optimized) : asset($rel);
+    }
+
     public function toWebp(string $imageUrl, int $width, int $height, int $quality = 75): string
     {
         $webpDir  = public_path('webp_images');

@@ -34,7 +34,13 @@
                             <article class="unified-card h-100">
                                 <a class="unified-card__media" href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif>
                                     @if(!empty($p['image']))
-                                        <img src="{{ $p['image'] }}" alt="{{ $p['name'] }}">
+                                        <img src="{{ $p['image'] }}"
+                                             alt="{{ $p['name'] }}"
+                                             width="720"
+                                             height="720"
+                                             loading="{{ $loop->first ? 'eager' : 'lazy' }}"
+                                             decoding="async"
+                                             @if($loop->first) fetchpriority="high" @endif>
                                     @endif
                                 </a>
                                 <div class="unified-card__body">
@@ -87,4 +93,3 @@
         </div>
     </section>
 @endsection
-

@@ -149,7 +149,9 @@ class HomeController extends Controller
                 ->firstOrFail();
 
             $name = $product->title;
-            $image = $product->image ? asset('images/digital-products/' . $product->image) : asset('images/placeholder.webp');
+            $image = $product->image
+                ? $this->images->optimizedLocalAsset('images/digital-products/' . $product->image)
+                : asset('images/placeholder.webp');
             $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
             $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
                 "Hi, I want to buy {$name} ({$price}). Product link: {$shareLandingUrl}"
@@ -165,7 +167,9 @@ class HomeController extends Controller
                 ->firstOrFail();
 
             $name = $product->translation()?->name ?: $product->name;
-            $image = $product->image ? asset('images/shop/' . $product->image) : asset('images/placeholder.webp');
+            $image = $product->image
+                ? $this->images->optimizedLocalAsset('images/shop/' . $product->image)
+                : asset('images/placeholder.webp');
             $price = null;
             $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
                 "Hi, I am interested in {$name}. Product link: {$shareLandingUrl}"

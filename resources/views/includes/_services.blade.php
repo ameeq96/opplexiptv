@@ -1,4 +1,4 @@
-<section class="services-section-two" style="background-image:url({{ asset('images/background/3.webp') }})"
+<section class="services-section-two lazy-background" data-bg="{{ asset('images/background/3.webp') }}" style="background-color:#010c3a"
          aria-label="Explore IPTV Services like Packages, Sports, VOD and Multi-Device Access">
     <div class="auto-container">
         <div class="sec-title light centered services-showcase__heading">

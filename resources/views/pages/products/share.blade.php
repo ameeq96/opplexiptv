@@ -8,7 +8,8 @@
                 <div class="row g-0 align-items-stretch">
                     <div class="col-lg-6">
                         <div class="product-share-media">
-                            <img src="{{ $productImage }}" alt="{{ $productName }}" loading="eager">
+                            <img src="{{ $productImage }}" alt="{{ $productName }}" width="720" height="720"
+                                loading="eager" decoding="async" fetchpriority="high">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -41,4 +42,3 @@
         </div>
     </section>
 @endsection
-

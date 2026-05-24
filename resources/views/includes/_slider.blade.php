@@ -24,6 +24,9 @@
 @else
     @php
         $locale = app()->getLocale();
+        $homeHeroLcpImage = is_file(public_path('images/home-hero-lcp.webp'))
+            ? asset('images/home-hero-lcp.webp')
+            : asset('images/background/7.webp');
     @endphp
 
     @if (!empty($useNativeCarousel))
@@ -37,13 +40,18 @@
                 <div class="native-carousel__viewport">
                     <div class="native-carousel__track">
                         @foreach ($movies as $index => $movie)
+                            @php
+                                $slideImage = $index === 0
+                                    ? $homeHeroLcpImage
+                                    : ($movie['webp_image_url'] ?? $homeHeroLcpImage);
+                            @endphp
                             <div class="native-carousel__slide slide {{ $index !== 0 ? 'lazy-background' : '' }} {{ $index === 0 ? 'is-active' : '' }}"
                                 data-native-slide
                                 aria-hidden="{{ $index === 0 ? 'false' : 'true' }}"
-                                @if ($index !== 0) data-bg="{{ $movie['webp_image_url'] }}" @endif>
+                                @if ($index !== 0) data-bg="{{ $slideImage }}" @endif>
 
                                 @if ($index === 0)
-                                    <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
+                                    <img src="{{ $slideImage }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
                                         aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
                                         width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
                                 @endif
@@ -115,11 +123,16 @@
         <section class="main-slider-two" aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
             <div class="main-slider-carousel owl-carousel owl-theme" data-rtl="{{ $isRtl ? 'true' : 'false' }}">
                 @foreach ($movies as $index => $movie)
+                    @php
+                        $slideImage = $index === 0
+                            ? $homeHeroLcpImage
+                            : ($movie['webp_image_url'] ?? $homeHeroLcpImage);
+                    @endphp
                     <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"
-                        @if ($index !== 0) data-bg="{{ $movie['webp_image_url'] }}" @endif>
+                        @if ($index !== 0) data-bg="{{ $slideImage }}" @endif>
 
                         @if ($index === 0)
-                            <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
+                            <img src="{{ $slideImage }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
                                 aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
                                 width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
                         @endif

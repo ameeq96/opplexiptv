@@ -10,9 +10,11 @@ use Illuminate\Support\Collection;
 
 class UnifiedProductService
 {
+    public function __construct(private ImageService $images) {}
+
     public function frontendProducts(): Collection
     {
-        $key = 'ui:' . app()->getLocale() . ':frontend-products';
+        $key = 'ui:' . app()->getLocale() . ':frontend-products:v2';
 
         try {
             return Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts());
@@ -41,7 +43,7 @@ class UnifiedProductService
                         'description' => '',
                         'price' => null,
                         'currency' => null,
-                        'image' => $p->image ? asset('images/shop/' . $p->image) : null,
+                        'image' => $p->image ? $this->images->optimizedLocalAsset('images/shop/' . $p->image) : null,
                         'url' => $p->link,
                         'target' => '_blank',
                         'rel' => 'nofollow sponsored noopener',
@@ -74,7 +76,7 @@ class UnifiedProductService
                         'description' => '',
                         'price' => (float) $p->price,
                         'currency' => (string) $p->currency,
-                        'image' => $p->image ? asset('images/digital-products/' . $p->image) : null,
+                        'image' => $p->image ? $this->images->optimizedLocalAsset('images/digital-products/' . $p->image) : null,
                         'url' => route('digital.product.show', $p->slug),
                         'target' => null,
                         'rel' => null,
