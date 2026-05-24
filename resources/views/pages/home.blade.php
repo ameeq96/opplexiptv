@@ -8,9 +8,9 @@
         $useNativeHomeCarousel = true;
     @endphp
 
-    {{-- @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel]) --}}
+    @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
 
-    {{-- @include('includes._best-packages') --}}
+    @include('includes._best-packages')
 
     {{-- @if(!empty($homeProducts) && count($homeProducts) > 0)
         <section class="shop-section shop-section-2"
@@ -166,16 +166,16 @@
         </section>
     @endif
 
-    @include('includes._we-provide-unlimited')
+    {{-- @include('includes._we-provide-unlimited')
 
-    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel])
+    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel]) --}}
 
     @unless ($isMobile)
         @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel])
         @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
     @endunless
 
-    @include('includes._check-trail')
+    {{-- @include('includes._check-trail') --}}
 @stop
 
 @section('jsonld')
