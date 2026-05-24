@@ -76,6 +76,7 @@
     $checkoutCssRoutes = ['checkout', 'configure', 'digital.checkout.show', 'digital.checkout.store'];
     $needsPhoneAssets = in_array($routeName, $phoneAssetRoutes, true);
     $needsBlockingCheckoutCss = in_array($routeName, $checkoutCssRoutes, true);
+    $deferHomeMobileMainStyle = $routeName === 'home' && !empty($isMobile);
 
     $pageTitleLcpBackgrounds = [
         'about' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
@@ -166,6 +167,34 @@
                 font-size: 1rem;
                 line-height: 1.6;
             }
+
+            .hero-section-mobile .btn-group {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .hero-section-mobile .btn {
+                display: inline-block;
+                padding: .75rem 1.5rem;
+                border-radius: 5px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .hero-section-mobile .btn-primary {
+                border: 1px solid #df0303;
+                background-color: #df0303;
+                color: #fff;
+            }
+
+            .hero-section-mobile .btn-outline {
+                border: 2px solid #df0303;
+                background-color: transparent;
+                color: #df0303;
+            }
         }
     </style>
 @endif
@@ -207,6 +236,13 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
+{{-- Preload critical fonts before blocking styles so text LCP can paint sooner --}}
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 @if ($preconnectTmdb)
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
@@ -225,8 +261,12 @@
     crossorigin>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
-<link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
+@if ($deferHomeMobileMainStyle)
+    <link rel="stylesheet" href="{{ v('css/style.css') }}" media="print" onload="this.media='all'">
+@else
+    <link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
+@endif
+<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="print" onload="this.media='all'">
 
 @php
     $criticalStyles = [
@@ -264,15 +304,9 @@
 
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="print" onload="this.media='all'">
 @stack('styles')
-
-{{-- Preload critical fonts to reduce CLS --}}
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
 
 @if ($needsPhoneAssets)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">

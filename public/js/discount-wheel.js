@@ -1,1 +1,270 @@
-!function(){"use strict";let e=[5,10,15,20,25],t=["#fff5f5","#ffe1e1","#ffc9c9","#ffacac","#df0303"],n=(e,t=document)=>t.querySelector(e),l={get nSpins(){return+localStorage.getItem("dw.spins")||0},set nSpins(v){localStorage.setItem("dw.spins",String(v))},get claimed(){return localStorage.getItem("dw.claimed")},set claimed(v){localStorage.setItem("dw.claimed",v)},get closedAt(){return+localStorage.getItem("dw.closedAt")||0},set closedAt(v){localStorage.setItem("dw.closedAt",String(v))}};async function o(e){let t=await html2canvas(e,{backgroundColor:null,scale:Math.min(2,window.devicePixelRatio||1.5)});return new Promise(e=>t.toBlob(t=>e(t),"image/png",.92))}function i(e=4e3){let n=document.createElement("canvas");n.style.position="fixed",n.style.inset="0",n.style.pointerEvents="none",n.style.zIndex="100000",document.body.appendChild(n);let l=n.getContext("2d"),o,i,a=()=>{o=n.width=innerWidth,i=n.height=innerHeight};a(),addEventListener("resize",a);let s=Math.min(300,Math.floor(o*i/12e3)),d=Array.from({length:s},()=>({x:Math.random()*o,y:-20-Math.random()*i*.3,s:5+7*Math.random(),a:Math.random()*Math.PI,v:1.5+3.5*Math.random(),w:.2*Math.random()+.05,c:t[Math.floor(Math.random()*t.length)]})),r=performance.now();!function t(s){l.clearRect(0,0,o,i),d.forEach(e=>{e.y+=e.v+2*Math.random(),e.x+=.8*Math.sin(e.a+=e.w),l.save(),l.translate(e.x,e.y),l.rotate(2*e.a),l.fillStyle=e.c,l.fillRect(-e.s/2,-e.s/2,e.s,e.s),l.restore()}),s-r<e?requestAnimationFrame(t):(document.body.removeChild(n),removeEventListener("resize",a))}(r)}function a(){let o=n("#dw-overlay");if(!o)return;let a=n("#dw-canvas",o),s=n("#dw-spin",o),d=o.querySelector(".dw-close"),r=n("#dw-result",o),c=n("#dw-result-value",o),$=n("#dw-copy",o),u=n("#dw-note",o);!function n(l){let o=l.getContext("2d"),i=l.width,a=l.height,s=i/2,d=a/2,r=Math.min(i,a)/2-4;o.clearRect(0,0,i,a);let c=2*Math.PI/e.length;for(let $=0;$<e.length;$++){let u=$*c,f=u+c;o.beginPath(),o.moveTo(s,d),o.arc(s,d,r,u,f),o.closePath(),o.fillStyle=t[$%t.length],o.fill(),o.save(),o.translate(s,d);let m=u+c/2;o.rotate(m),o.textAlign="right",o.fillStyle="#111",o.font="bold 22px system-ui,-apple-system,Segoe UI,Roboto,Arial",o.fillText(e[$]+"%",r-16,8),o.restore()}o.beginPath(),o.arc(s,d,50,0,2*Math.PI),o.fillStyle="#fff",o.fill(),o.lineWidth=2,o.strokeStyle="#111",o.stroke(),o.fillStyle="#111",o.font="bold 14px system-ui,-apple-system,Segoe UI,Roboto,Arial",o.textAlign="center";let h=window.DW_I18N&&window.DW_I18N.spin_center||"SPIN";o.fillText(h.toUpperCase(),s,d+5)}(a);let f=!1,m=e.length,h=360/m;function _(){o.classList.add("show"),o.setAttribute("aria-hidden","false")}function g(){o.classList.remove("show"),o.setAttribute("aria-hidden","true"),l.closedAt=Date.now()}window.DiscountWheel={show:_,hide:g},!l.claimed&&Date.now()-l.closedAt>432e5&&setTimeout(_,1e3),d.addEventListener("click",g),o.addEventListener("click",e=>{e.target===o&&g()}),s.addEventListener("click",()=>{if(f)return;s.hidden=!0;let t=window.DW_I18N||{};if(l.claimed){let n=(t.already_unlocked||"Discount already unlocked: :value%").replace(":value",l.claimed);u.textContent=n,c.textContent=l.claimed+"%",r.hidden=!1,i(2500);return}f=!0,u.textContent=t.good_luck||"Good luck!",s.disabled=!0;let o=function e(t){let n=t>=2?[78,22]:[65,35],l=Math.random()*(n[0]+n[1]);return l<n[0]?0:1}(l.nSpins),d=e[o];a.style.transform=`rotate(${360*(4+Math.floor(2*Math.random()))+(270-(o+.5)*h)}deg)`,setTimeout(()=>{l.nSpins=l.nSpins+1,c.textContent=d+"%",r.hidden=!1,l.claimed=String(d),u.textContent=t.congrats||"Congratulations! Your discount is ready.",i(3800),f=!1,s.disabled=!0},6100)}),$.addEventListener("click",()=>{let e=l.claimed||"5",t=$.dataset.waPhone||"16393903194",n=$.dataset.waTemplate||"Hello, I got :discount% discount. Can you activate my subscription?",i=n.replace(":discount",e),a=`https://wa.me/${t}?text=${encodeURIComponent(i)}`;"function"==typeof window.DiscountWheel?.hide?window.DiscountWheel.hide():(o.classList.remove("show"),o.setAttribute("aria-hidden","true"),l.closedAt=Date.now()),setTimeout(()=>{window.location.href=a},120)})}"loading"===document.readyState?document.addEventListener("DOMContentLoaded",a,{once:!0}):a()}();
+(() => {
+    "use strict";
+
+    const DISCOUNTS = [5, 10, 15, 20, 25];
+    const COLORS = ["#fff5f5", "#ffe1e1", "#ffc9c9", "#ffacac", "#df0303"];
+    const AUTO_SHOW_DELAY = 8000;
+    const DISMISS_DELAY = 12 * 60 * 60 * 1000;
+    const $ = (selector, root = document) => root.querySelector(selector);
+
+    const storage = {
+        get nSpins() {
+            return Number(localStorage.getItem("dw.spins")) || 0;
+        },
+        set nSpins(value) {
+            localStorage.setItem("dw.spins", String(value));
+        },
+        get claimed() {
+            return localStorage.getItem("dw.claimed");
+        },
+        set claimed(value) {
+            localStorage.setItem("dw.claimed", value);
+        },
+        get closedAt() {
+            return Number(localStorage.getItem("dw.closedAt")) || 0;
+        },
+        set closedAt(value) {
+            localStorage.setItem("dw.closedAt", String(value));
+        },
+    };
+
+    function shouldAutoShow() {
+        return !storage.claimed && Date.now() - storage.closedAt > DISMISS_DELAY;
+    }
+
+    function runWhenIdle(callback) {
+        if ("requestIdleCallback" in window) {
+            window.requestIdleCallback(callback, { timeout: 2000 });
+            return;
+        }
+
+        window.setTimeout(callback, 0);
+    }
+
+    function scheduleAutoShow(show) {
+        if (!shouldAutoShow()) return;
+
+        const schedule = () => {
+            window.setTimeout(() => {
+                if (document.visibilityState === "visible" && shouldAutoShow()) {
+                    runWhenIdle(show);
+                }
+            }, AUTO_SHOW_DELAY);
+        };
+
+        if (document.readyState === "complete") {
+            schedule();
+        } else {
+            window.addEventListener("load", schedule, { once: true });
+        }
+    }
+
+    function celebrate(duration = 4000) {
+        const canvas = document.createElement("canvas");
+        canvas.style.position = "fixed";
+        canvas.style.inset = "0";
+        canvas.style.pointerEvents = "none";
+        canvas.style.zIndex = "100000";
+        document.body.appendChild(canvas);
+
+        const context = canvas.getContext("2d");
+        let width;
+        let height;
+
+        const resize = () => {
+            width = canvas.width = innerWidth;
+            height = canvas.height = innerHeight;
+        };
+
+        resize();
+        addEventListener("resize", resize);
+
+        const count = Math.min(300, Math.floor((width * height) / 12000));
+        const pieces = Array.from({ length: count }, () => ({
+            x: Math.random() * width,
+            y: -20 - Math.random() * height * 0.3,
+            size: 5 + 7 * Math.random(),
+            angle: Math.random() * Math.PI,
+            velocity: 1.5 + 3.5 * Math.random(),
+            wobble: 0.05 + 0.2 * Math.random(),
+            color: COLORS[Math.floor(Math.random() * COLORS.length)],
+        }));
+        const startedAt = performance.now();
+
+        const draw = (now) => {
+            context.clearRect(0, 0, width, height);
+            pieces.forEach((piece) => {
+                piece.y += piece.velocity + 2 * Math.random();
+                piece.x += 0.8 * Math.sin(piece.angle += piece.wobble);
+                context.save();
+                context.translate(piece.x, piece.y);
+                context.rotate(2 * piece.angle);
+                context.fillStyle = piece.color;
+                context.fillRect(-piece.size / 2, -piece.size / 2, piece.size, piece.size);
+                context.restore();
+            });
+
+            if (now - startedAt < duration) {
+                requestAnimationFrame(draw);
+            } else {
+                document.body.removeChild(canvas);
+                removeEventListener("resize", resize);
+            }
+        };
+
+        requestAnimationFrame(draw);
+    }
+
+    function drawWheel(canvas) {
+        const context = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+        const centerX = width / 2;
+        const centerY = height / 2;
+        const radius = Math.min(width, height) / 2 - 4;
+        const slice = (2 * Math.PI) / DISCOUNTS.length;
+
+        context.clearRect(0, 0, width, height);
+
+        DISCOUNTS.forEach((discount, index) => {
+            const start = index * slice;
+            const end = start + slice;
+
+            context.beginPath();
+            context.moveTo(centerX, centerY);
+            context.arc(centerX, centerY, radius, start, end);
+            context.closePath();
+            context.fillStyle = COLORS[index % COLORS.length];
+            context.fill();
+
+            context.save();
+            context.translate(centerX, centerY);
+            context.rotate(start + slice / 2);
+            context.textAlign = "right";
+            context.fillStyle = "#111";
+            context.font = "bold 22px system-ui,-apple-system,Segoe UI,Roboto,Arial";
+            context.fillText(discount + "%", radius - 16, 8);
+            context.restore();
+        });
+
+        context.beginPath();
+        context.arc(centerX, centerY, 50, 0, 2 * Math.PI);
+        context.fillStyle = "#fff";
+        context.fill();
+        context.lineWidth = 2;
+        context.strokeStyle = "#111";
+        context.stroke();
+        context.fillStyle = "#111";
+        context.font = "bold 14px system-ui,-apple-system,Segoe UI,Roboto,Arial";
+        context.textAlign = "center";
+        context.fillText((window.DW_I18N?.spin_center || "SPIN").toUpperCase(), centerX, centerY + 5);
+    }
+
+    function pickDiscount(spins) {
+        const weights = spins >= 2 ? [78, 22] : [65, 35];
+        const roll = Math.random() * (weights[0] + weights[1]);
+        return roll < weights[0] ? 0 : 1;
+    }
+
+    function init() {
+        const overlay = $("#dw-overlay");
+        if (!overlay) return;
+
+        const canvas = $("#dw-canvas", overlay);
+        const spin = $("#dw-spin", overlay);
+        const close = overlay.querySelector(".dw-close");
+        const result = $("#dw-result", overlay);
+        const resultValue = $("#dw-result-value", overlay);
+        const copy = $("#dw-copy", overlay);
+        const note = $("#dw-note", overlay);
+
+        if (!canvas || !spin || !close || !result || !resultValue || !copy || !note) return;
+
+        drawWheel(canvas);
+
+        let spinning = false;
+        const sliceDegrees = 360 / DISCOUNTS.length;
+
+        function show() {
+            overlay.classList.add("show");
+            overlay.setAttribute("aria-hidden", "false");
+        }
+
+        function hide() {
+            overlay.classList.remove("show");
+            overlay.setAttribute("aria-hidden", "true");
+            storage.closedAt = Date.now();
+        }
+
+        window.DiscountWheel = { show, hide };
+        scheduleAutoShow(show);
+
+        close.addEventListener("click", hide);
+        overlay.addEventListener("click", (event) => {
+            if (event.target === overlay) hide();
+        });
+
+        spin.addEventListener("click", () => {
+            if (spinning) return;
+
+            spin.hidden = true;
+            const text = window.DW_I18N || {};
+
+            if (storage.claimed) {
+                note.textContent = (text.already_unlocked || "Discount already unlocked: :value%").replace(":value", storage.claimed);
+                resultValue.textContent = storage.claimed + "%";
+                result.hidden = false;
+                celebrate(2500);
+                return;
+            }
+
+            spinning = true;
+            note.textContent = text.good_luck || "Good luck!";
+            spin.disabled = true;
+
+            const pickedIndex = pickDiscount(storage.nSpins);
+            const discount = DISCOUNTS[pickedIndex];
+            const spinTurns = 4 + Math.floor(2 * Math.random());
+            const rotation = 360 * spinTurns + (270 - (pickedIndex + 0.5) * sliceDegrees);
+
+            canvas.style.transform = `rotate(${rotation}deg)`;
+
+            window.setTimeout(() => {
+                storage.nSpins = storage.nSpins + 1;
+                resultValue.textContent = discount + "%";
+                result.hidden = false;
+                storage.claimed = String(discount);
+                note.textContent = text.congrats || "Congratulations! Your discount is ready.";
+                celebrate(3800);
+                spinning = false;
+                spin.disabled = true;
+            }, 6100);
+        });
+
+        copy.addEventListener("click", () => {
+            const discount = storage.claimed || "5";
+            const phone = copy.dataset.waPhone || "16393903194";
+            const template = copy.dataset.waTemplate || "Hello, I got :discount% discount. Can you activate my subscription?";
+            const message = template.replace(":discount", discount);
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+            if (typeof window.DiscountWheel?.hide === "function") {
+                window.DiscountWheel.hide();
+            } else {
+                overlay.classList.remove("show");
+                overlay.setAttribute("aria-hidden", "true");
+                storage.closedAt = Date.now();
+            }
+
+            window.setTimeout(() => {
+                window.location.href = url;
+            }, 120);
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init, { once: true });
+    } else {
+        init();
+    }
+})();

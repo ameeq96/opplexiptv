@@ -72,6 +72,51 @@ class LcpHintsTest extends TestCase
         $this->assertStringContainsString('animation: none !important', $html);
     }
 
+    public function test_home_head_prioritizes_mobile_text_lcp_resources(): void
+    {
+        $html = $this->renderHeadForRoute('home', [
+            'isMobile' => true,
+        ]);
+        $fontCss = file_get_contents(public_path('css/fonts.css'));
+
+        $regularFont = 'fonts/poppins/poppins-v21-latin-regular.woff2';
+        $this->assertStringContainsString($regularFont, $html);
+        $this->assertStringContainsString('font-weight:400', $fontCss);
+        $this->assertStringContainsString('poppins-v21-latin-regular.woff2', $fontCss);
+        $this->assertLessThan(
+            strpos($html, 'bootstrap@4.6.2/dist/css/bootstrap.min.css'),
+            strpos($html, $regularFont)
+        );
+        $this->assertMatchesRegularExpression(
+            '/<link rel="stylesheet" href="[^"]*\/css\/style\.css[^"]*" media="print" onload="this\.media=\'all\'">/',
+            $html
+        );
+
+        foreach (['discount-wheel.css', 'voice-assistant.css', 'accessibility-fixes.css'] as $style) {
+            $this->assertMatchesRegularExpression(
+                '/<link rel="stylesheet" href="[^"]*\/css\/'.preg_quote($style, '/').'[^"]*" media="print" onload="this\.media=\'all\'">/',
+                $html
+            );
+        }
+    }
+
+    public function test_main_styles_remain_blocking_outside_mobile_home(): void
+    {
+        $desktopHome = $this->renderHeadForRoute('home', [
+            'isMobile' => false,
+        ]);
+        $packages = $this->renderHeadForRoute('packages', [
+            'isMobile' => true,
+        ]);
+
+        foreach ([$desktopHome, $packages] as $html) {
+            $this->assertMatchesRegularExpression(
+                '/<link rel="stylesheet" href="[^"]*\/css\/style\.css[^"]*" media="all">/',
+                $html
+            );
+        }
+    }
+
     public function test_home_hero_renders_without_skeleton_loader_on_mobile_and_desktop(): void
     {
         $mobileHtml = view('includes._slider', [
@@ -229,5 +274,14 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('importScripts', $contents);
         $this->assertStringNotContainsString('eval(', $contents);
         $this->assertStringNotContainsString('aiharsoreersu.net', $contents);
+    }
+
+    public function test_discount_wheel_auto_popup_is_delayed_past_lcp_window(): void
+    {
+        $contents = file_get_contents(public_path('js/discount-wheel.js'));
+
+        $this->assertStringContainsString('const AUTO_SHOW_DELAY = 8000', $contents);
+        $this->assertStringContainsString('window.addEventListener("load", schedule', $contents);
+        $this->assertStringNotContainsString('setTimeout(_,1e3)', $contents);
     }
 }

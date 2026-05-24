@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="{{ app()->getLocale() }}"
+<html lang="{{ app()->getLocale() }}"
     dir="{{ in_array(app()->getLocale(), ['ar', 'ur']) ? 'rtl' : 'ltr' }}"
     data-textdirection="{{ in_array(app()->getLocale(), ['ar', 'ur']) ? 'rtl' : 'ltr' }}">
 
