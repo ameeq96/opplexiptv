@@ -89,7 +89,7 @@
         </section>
     @endif --}}
 
-    @if(!empty($homeAffiliateProducts) && count($homeAffiliateProducts) > 0)
+    {{-- @if(!empty($homeAffiliateProducts) && count($homeAffiliateProducts) > 0)
         <section class="shop-section shop-section-2 mt-5"
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
             <div class="auto-container">
@@ -164,7 +164,7 @@
                 </div>
             </div>
         </section>
-    @endif
+    @endif --}}
 
     @include('includes._we-provide-unlimited')
 
