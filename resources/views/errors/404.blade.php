@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>404 - Page Not Found</title>
-    <link rel="preload" href="{{ asset('css/style.css') }}?v={{ filemtime(public_path('css/style.css')) }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ filemtime(public_path('css/style.css')) }}">
-    </noscript>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ filemtime(public_path('css/style.css')) }}">
     
 </head>
 <body class="error-404-page">
@@ -26,4 +23,5 @@
     </div>
 </body>
 </html>
+
 
