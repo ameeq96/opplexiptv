@@ -21,7 +21,7 @@
                         <span class="home-products-headline" aria-hidden="true"></span>
                         <div style="display:flex; align-items:center; justify-content: space-between; gap:12px; flex-wrap:wrap;">
                             <div>
-                                <h3>{{ __('messages.home_products_digital_title') }}</h3>
+                                <h2 class="h3">{{ __('messages.home_products_digital_title') }}</h2>
                                 <p class="text-muted mb-0" style="font-size:14px;">{{ __('messages.home_products_digital_desc') }}</p>
                             </div>
                             <span></span>
@@ -98,7 +98,7 @@
                         <span class="home-products-headline" aria-hidden="true"></span>
                         <div style="display:flex; align-items:center; justify-content: space-between; gap:12px; flex-wrap:wrap;">
                             <div>
-                                <h3>{{ __('messages.home_products_affiliate_title') }}</h3>
+                                <h2 class="h3">{{ __('messages.home_products_affiliate_title') }}</h2>
                                 <p class="text-muted mb-0" style="font-size:14px;">{{ __('messages.home_products_affiliate_desc') }}</p>
                             </div>
                             <span></span>

@@ -3,7 +3,7 @@
         aria-label="Opplex IPTV Hero Section - Start Your IPTV Trial in HD/4K">
         <div class="container text-center">
             <p class="subtitle">{{ __('messages.subtitle') }}</p>
-            <h3 class="heading">{{ __('messages.heading-mobile') }}</h3>
+            <h1 class="heading">{{ __('messages.heading-mobile') }}</h1>
             <p class="description">
                 {{ __('messages.description_prefix') }} <strong>Opplex IPTV</strong>
                 {{ __('messages.description_suffix') }}

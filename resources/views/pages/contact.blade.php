@@ -58,15 +58,16 @@
                             ])>
                                 <li class="facebook">
                                     <a href="https://www.facebook.com/profile.php?id=61565476366548"
-                                        class="fa fa-facebook-f" target="_blank" rel="noopener"></a>
+                                        class="fa fa-facebook-f" target="_blank" rel="noopener"
+                                        aria-label="Facebook" title="Facebook"></a>
                                 </li>
                                 <li class="linkedin">
                                     <a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
-                                        target="_blank" rel="noopener"></a>
+                                        target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a>
                                 </li>
                                 <li class="instagram">
                                     <a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                                        rel="noopener"></a>
+                                        rel="noopener" aria-label="Instagram" title="Instagram"></a>
                                 </li>
                             </ul>
                         </div>

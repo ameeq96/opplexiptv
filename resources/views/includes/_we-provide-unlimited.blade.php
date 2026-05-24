@@ -27,7 +27,7 @@
 
                 <div class="unlimited-showcase__content" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                     <div class="unlimited-showcase__eyebrow">{{ __('messages.home_unlimited_eyebrow') }}</div>
-                    <h3 aria-label="IPTV Network Features Heading">{{ __('messages.network_heading') }}</h3>
+                    <h2 aria-label="IPTV Network Features Heading">{{ __('messages.network_heading') }}</h2>
                     @unless (request()->routeIs('home') || request()->is('/') || request()->routeIs('about') || request()->is('reseller-panel'))
                         <h3 class="h6" aria-label="IPTV Network Features Heading">{{ __('messages.subheadingiptv') }}</h3>
                     @endunless

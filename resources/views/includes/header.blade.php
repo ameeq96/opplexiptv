@@ -27,11 +27,11 @@
                 <div class="pull-right clearfix">
                     <ul class="social-box">
                         <li><a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
-                                target="_blank"></a></li>
+                                target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"></a></li>
                         <li><a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
-                                target="_blank"></a></li>
+                                target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a></li>
                         <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                                rel="noopener noreferrer"></a></li>
+                                rel="noopener noreferrer" aria-label="Instagram" title="Instagram"></a></li>
                     </ul>
                 </div>
 

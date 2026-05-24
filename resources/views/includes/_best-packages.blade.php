@@ -6,10 +6,10 @@
                 <div class="separator"></div>
             @endunless
 
-            <h3><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h3>
+            <h2 class="h3"><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h2>
 
             @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
-                <h2 class="h4">{{ $pricingSection['subheading'] ?? __('messages.pricing_subheading') }}</h2>
+                <p class="h4">{{ $pricingSection['subheading'] ?? __('messages.pricing_subheading') }}</p>
             @endunless
         </div>
 
@@ -24,12 +24,12 @@
                 </label>
             </div>
 
-            <div id="vendorToggle" class="vendor-toggle" role="tablist" aria-label="Choose IPTV vendor">
+            <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="Choose IPTV vendor">
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
                 <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
             </div>
 
-            <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="tablist"
+            <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="group"
                 aria-label="Choose reseller vendor" style="display:none">
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
                 <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
@@ -74,7 +74,7 @@
                                 <li><span class="icon"><img src="{{ asset('images/icons/service-1.svg') }}"
                                             alt="IPTV" width="48" height="48"></span></li>
                             </ul>
-                            <h4>{{ $displayTitle }}<span>{!! $package['price'] ?? '' !!}</span></h4>
+                            <h3 class="package-plan-title">{{ $displayTitle }}<span>{!! $package['price'] ?? '' !!}</span></h3>
                         </div>
 
                         <div class="lower-box">
@@ -143,7 +143,7 @@
                                                     width="48" height="48"></span></li>
                                     @endif
                                 </ul>
-                                <h4>{{ $resellerDisplayTitle }}<span>{!! $plan['price'] !!}</span></h4>
+                                <h3 class="package-plan-title">{{ $resellerDisplayTitle }}<span>{!! $plan['price'] !!}</span></h3>
                             </div>
 
                             <div class="lower-box">

@@ -8,7 +8,7 @@
             <div class="trial-cta__grid {{ $isRtl ? 'rtl-row' : '' }}">
                 <div class="trial-cta__content" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                     <span class="trial-cta__eyebrow">{{ __('messages.home_trial_eyebrow') }}</span>
-                    <h3 class="trial-cta__title">{{ __('messages.trial_title') }}</h3>
+                    <h2 class="trial-cta__title">{{ __('messages.trial_title') }}</h2>
                     <p class="trial-cta__text">{{ __('messages.home_trial_text') }}</p>
                     <div class="trial-cta__meta">
                         <span class="trial-cta__chip">{{ __('messages.home_trial_chip_streaming') }}</span>

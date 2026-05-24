@@ -16,11 +16,11 @@
 
                 <!-- Filter -->
                 <div class="filters clearfix">
-                    <ul class="filter-tabs filter-btns text-center clearfix" role="tablist" aria-label="Content filters">
-                        <li class="active filter" data-role="button" data-filter="all">{{ __('messages.all') }}</li>
-                        <li class="filter" data-role="button" data-filter=".movies">{{ __('messages.movies') }}</li>
-                        <li class="filter" data-role="button" data-filter=".series">{{ __('messages.series') }}</li>
-                        <li class="filter" data-role="button" data-filter=".cartoons">{{ __('messages.cartoons') }}</li>
+                    <ul class="filter-tabs filter-btns text-center clearfix" role="group" aria-label="Content filters">
+                        <li class="active filter" role="button" tabindex="0" data-filter="all">{{ __('messages.all') }}</li>
+                        <li class="filter" role="button" tabindex="0" data-filter=".movies">{{ __('messages.movies') }}</li>
+                        <li class="filter" role="button" tabindex="0" data-filter=".series">{{ __('messages.series') }}</li>
+                        <li class="filter" role="button" tabindex="0" data-filter=".cartoons">{{ __('messages.cartoons') }}</li>
                     </ul>
                 </div>
 

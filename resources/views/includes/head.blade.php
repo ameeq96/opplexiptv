@@ -265,6 +265,7 @@
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="all">
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
@@ -286,6 +287,7 @@
     <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
     <link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}">
+    <link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}">
     @if ($needsPhoneAssets)
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
     @endif

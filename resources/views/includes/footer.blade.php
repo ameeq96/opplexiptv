@@ -50,7 +50,7 @@
                 @if (!empty($footerSocials))
                     @foreach ($footerSocials as $s)
                         <li>
-                            <a href="{{ $s['url'] }}" class="fx-social__btn" aria-label="{{ $s['platform'] }}"
+                            <a href="{{ $s['url'] }}" class="fx-social__btn" aria-label="{{ $s['platform'] ?: 'Social profile' }}"
                                target="_blank" rel="noopener">
                                 <i class="{{ $s['icon_class'] ?: 'fa fa-link' }}"></i>
                             </a>
