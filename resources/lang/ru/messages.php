@@ -256,7 +256,7 @@ return [
   'faq.a12' => 'Da, posle pokupki minimum 20 kreditov.',
 
   'faq.q13' => 'Mogu li poluchit skidku na podpisku?',
-  'faq.a13' => 'Pozhaluysta svyazhites s nami po email ili WhatsApp dlya zaprosa skidki.',
+  'faq.a13' => 'Пожалуйста, свяжитесь с нами по email или WhatsApp, чтобы запросить скидку.',
 
   'faq.q14' => 'Mogu li ya skrit vzozrosliy ili drugie razdeli v IPTV prilozhenii?',
   'faq.a14' => 'Da, sledyuyte etim shagom v IPTV Smarters Pro:<br><br>1. Idi na glavnyu stranicu.<br>2. Nazhmi 3 tochki.<br>3. Idi v nastroiki.<br>4. Idi v roditelskiy kontrol.<br>5. Ustanovi parol.<br>6. Sohrani.<br>7. Vibiri kategoriya/kanali dlya blokirovki.<br><br>Status: Tvoi kanal zablockirovan.<br><br>Dlya prosmotra zablockirovannih kanalov:<br>1. Idi v nastroiki.<br>2. Vvedi parol.<br>3. Razblokirui kanali.<br>4. Sohrani.',
@@ -319,11 +319,11 @@ return [
   'breadcrumb.current' => 'Nashi IPTV Paketi',
   'sub_heading' => 'Naydi Svoyu IPTV Podpisku - Ostalos Malo',
   'description' => 'Speshi! Zabezopas svoyu IPTV box ili smart player podpisku seychas. Opplex predlagaet xtreme HD IPTV i aroma IPTV s 4K pryamoy podderzhkoy.',
-  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / v mesyats - Vklyuchaet Besplatniy IPTV Test</span>',
+  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / месяц — включает бесплатный IPTV тест</span>',
   'read_more' => 'Uznay Bolshe o IPTV Vozmozhnostyah',
 
   // Pricing Page
-  'title' => 'Tseni | Opplex IPTV - Luchshie IPTV Box Tarifi, Besplatniy Test, 4K',
+  'title' => 'Цены | Opplex IPTV — лучшие IPTV Box тарифы, бесплатный тест, 4K',
   'heading' => 'Nashi Paketi - Xtreme HD IPTV, Aroma & Drugoe',
   'breadcrumb' => [
     'home' => 'Glavnaya',
@@ -331,14 +331,14 @@ return [
   ],
   'sub_heading' => 'Naydi Svoyu Podpisku Seichas - Dostupno Malo Mesta',
   'description' => 'Kupite luchshuyu IPTV podpisku seychas. Vklyucheno: smart player, 4K IPTV strim i aroma IPTV dostup s kazhdim paketom.',
-  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / v mesyats - Vklyuchen IPTV Besplatniy Test</span>',
+  'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / месяц — включён бесплатный IPTV тест</span>',
   'read_more' => 'Prosmotri Polnie IPTV Detali',
 
   // Reseller Panel
   'reseller.panel.title' => 'Panel Dilerov - Upravlyay IPTV Reselling dlya Box & Player',
 
   // Reasons Section
-  'reasons.title' => 'Pochemu Vibrayut Nas - Luchshie IPTV Vozmozhnosti, Besplatniy Test i Smart Player',
+  'reasons.title' => 'Почему выбирают нас — лучшие IPTV возможности, бесплатный тест и Smart Player',
 
   // Services CTA
   'view.services' => 'Smotret IPTV Uslugi - 4K, Smart Player i Drugoe',
@@ -347,15 +347,15 @@ return [
   'movies_title' => 'Filmi | Opplex IPTV - Smotret cherez IPTV Box, Xtreme HD i Aroma IPTV',
 
   // WhatsApp CTA
-  'whatsapp_channel' => '🎁 Besplatniy IPTV Test! Prisoedinyaysya k Nashemu WhatsApp Seychas dlya Testa + Goryachie Predlozheniya! 🚀',
+  'whatsapp_channel' => '🎁 Бесплатный IPTV тест! Присоединяйтесь к нашему WhatsApp сейчас: тест + горячие предложения! 🚀',
 
-  'whatsapp_trial' => 'Privet, ya hochu nachat moy besplatniy IPTV test. Pozhaluysta, dayte mne instruktsii.',
-  'whatsapp_pricing' => 'Privet, ya hochu uznat bolshe o vasheh IPTV tarifah i paketah. Pozhaluysta, otpravte mne detali.',
-  'whatsapp_explore' => 'Privet, ya uvidel vash IPTV kontent i mne interesno. Pozhaluysta, podrobnosti o podpiskah i kak nachat.',
-  'whatsapp_reseller' => 'Privet, menya interesuet plan :plan (:price). Pozhaluysta, otpravte bolshe informatsii o pakete.',
-  'whatsapp_package' => 'Privet, menya interesuet plan :plan (:price). Pozhaluysta, otpravte bolshe informatsii o pakete.',
-  'whatsapp_footer' => 'Privet, ya hochu poluchit bolshe informatsii o vasheh uslugah.',
-  'whatsapp_contact' => 'Privet, ya hochu uznat bolshe o vashih kontaktah i uslugah.',
+  'whatsapp_trial' => 'Привет, я хочу начать мой бесплатный IPTV тест. Пожалуйста, отправьте мне инструкции.',
+  'whatsapp_pricing' => 'Привет, я хочу узнать больше о ваших IPTV тарифах и пакетах. Пожалуйста, отправьте мне детали.',
+  'whatsapp_explore' => 'Привет, я увидел ваш IPTV контент, и мне интересно. Пожалуйста, отправьте подробности о подписках и как начать.',
+  'whatsapp_reseller' => 'Привет, меня интересует план :plan (:price). Пожалуйста, отправьте больше информации о пакете.',
+  'whatsapp_package' => 'Привет, меня интересует план :plan (:price). Пожалуйста, отправьте больше информации о пакете.',
+  'whatsapp_footer' => 'Привет, я хочу получить больше информации о ваших услугах.',
+  'whatsapp_contact' => 'Привет, я хочу узнать больше о ваших контактах и услугах.',
 
   // Buy Now
   'name' => 'Imya',
@@ -377,13 +377,13 @@ return [
   'email'         => 'Email',
   'phone'         => 'Telefon',
   'message'       => 'Soobshenie',
-  'contact_whatsapp' => 'Dlya bistrogo otveta i prodolzheniya podpisku, pozhaluysta, svyazhsya s nami v WhatsApp:',
+  'contact_whatsapp' => 'Для быстрого ответа и продолжения подписки, пожалуйста, свяжитесь с нами в WhatsApp:',
   'regards'       => 'S uvazheniem,',
   'tagline'       => "Luchshee TV v Mire",
 
   'contact' => [
     'intro' => 'Uvazhaemiy Klient, Spasibo za interes k nashey IPTV podpiske. Vi na pravylnom meste dlya luchshego TV opita vo vsem mire.',
-    'whatsapp_info' => 'Dlya bistrogo otveta i prodolzheniya podpisku, pozhaluysta, svyazhsya s nami v WhatsApp',
+    'whatsapp_info' => 'Для быстрого ответа и продолжения подписки, пожалуйста, свяжитесь с нами в WhatsApp',
     'signature' => 'S uvazheniem, Opplex IPTV - Luchshee TV v Mire',
   ],
   'seo_services' => [
