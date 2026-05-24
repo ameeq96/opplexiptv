@@ -1,20 +1,4 @@
-<section class="testimonial-section style-two {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--testimonials' : '' }}"
-    @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
-    aria-label="Customer Testimonials about Opplex IPTV">
-    @if (!empty($useSectionSkeletons))
-        <div class="section-skeleton__overlay" aria-hidden="true">
-            <div class="section-skeleton__content">
-                <span class="section-skeleton__pill"></span>
-                <span class="section-skeleton__line section-skeleton__line--lg"></span>
-                <span class="section-skeleton__line section-skeleton__line--md"></span>
-                <div class="section-skeleton__cards">
-                    <span class="section-skeleton__card"></span>
-                    <span class="section-skeleton__card"></span>
-                    <span class="section-skeleton__card"></span>
-                </div>
-            </div>
-        </div>
-    @endif
+<section class="testimonial-section style-two" aria-label="Customer Testimonials about Opplex IPTV">
     <div class="auto-container">
         <div class="sec-title centered testimonial-showcase__heading">
             <div class="title" aria-label="Testimonials Section Subheading">{{ __('messages.testimonials_title') }}</div>

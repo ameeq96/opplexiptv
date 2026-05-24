@@ -6,30 +6,15 @@
         $waTrial = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
         $currency = config('services.app.default_currency', 'USD');
         $useNativeHomeCarousel = true;
-        $useSectionSkeletons = true;
     @endphp
 
-    @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
+    @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
 
-    @include('includes._best-packages', ['useSectionSkeletons' => $useSectionSkeletons])
+    @include('includes._best-packages')
 
     {{-- @if(!empty($homeProducts) && count($homeProducts) > 0)
-        <section class="shop-section shop-section-2 skeleton-section skeleton-section--products"
-            data-skeleton-section
+        <section class="shop-section shop-section-2"
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
-            <div class="section-skeleton__overlay" aria-hidden="true">
-                <div class="section-skeleton__content">
-                    <span class="section-skeleton__pill"></span>
-                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
-                    <span class="section-skeleton__line section-skeleton__line--md"></span>
-                    <div class="section-skeleton__cards">
-                        <span class="section-skeleton__card"></span>
-                        <span class="section-skeleton__card"></span>
-                        <span class="section-skeleton__card"></span>
-                        <span class="section-skeleton__card"></span>
-                    </div>
-                </div>
-            </div>
             <div class="auto-container">
                 <div class="home-products-shell">
                     <div class="sec-title mb-4" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
@@ -105,22 +90,8 @@
     @endif --}}
 
     @if(!empty($homeAffiliateProducts) && count($homeAffiliateProducts) > 0)
-        <section class="shop-section shop-section-2 mt-5 skeleton-section skeleton-section--products"
-            data-skeleton-section
+        <section class="shop-section shop-section-2 mt-5"
             style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
-            <div class="section-skeleton__overlay" aria-hidden="true">
-                <div class="section-skeleton__content">
-                    <span class="section-skeleton__pill"></span>
-                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
-                    <span class="section-skeleton__line section-skeleton__line--md"></span>
-                    <div class="section-skeleton__cards">
-                        <span class="section-skeleton__card"></span>
-                        <span class="section-skeleton__card"></span>
-                        <span class="section-skeleton__card"></span>
-                        <span class="section-skeleton__card"></span>
-                    </div>
-                </div>
-            </div>
             <div class="auto-container">
                 <div class="home-products-shell">
                     <div class="sec-title mb-4" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
@@ -195,16 +166,16 @@
         </section>
     @endif
 
-    @include('includes._we-provide-unlimited', ['useSectionSkeletons' => $useSectionSkeletons])
+    @include('includes._we-provide-unlimited')
 
-    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
+    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel])
 
     @unless ($isMobile)
-        @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
-        @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel, 'useSectionSkeletons' => $useSectionSkeletons])
+        @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel])
+        @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
     @endunless
 
-    @include('includes._check-trail', ['useSectionSkeletons' => $useSectionSkeletons])
+    @include('includes._check-trail')
 @stop
 
 @section('jsonld')
@@ -266,4 +237,3 @@
     }
 </script>
 @endsection
-

@@ -1,23 +1,8 @@
 ﻿
 
-<section class="trial-cta {{ !empty($useSectionSkeletons) ? 'skeleton-section skeleton-section--cta' : '' }}"
-    @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
-    dir="{{ $isRtl ? 'rtl' : 'ltr' }}"
+<section class="trial-cta" dir="{{ $isRtl ? 'rtl' : 'ltr' }}"
     aria-label="Start Your IPTV Free Trial with Opplex"
     role="region">
-    @if (!empty($useSectionSkeletons))
-        <div class="section-skeleton__overlay" aria-hidden="true">
-            <div class="section-skeleton__content">
-                <div class="section-skeleton__meta">
-                    <span class="section-skeleton__pill"></span>
-                    <span class="section-skeleton__line section-skeleton__line--lg"></span>
-                    <span class="section-skeleton__line section-skeleton__line--md"></span>
-                </div>
-                <span class="section-skeleton__button"></span>
-            </div>
-        </div>
-    @endif
-
     <div class="trial-cta__shell">
         <div class="trial-cta__panel">
             <div class="trial-cta__grid {{ $isRtl ? 'rtl-row' : '' }}">
@@ -51,4 +36,3 @@
         </div>
     </div>
 </section>
-

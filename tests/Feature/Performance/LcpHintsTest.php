@@ -63,6 +63,66 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('intl-tel-input@19.5.7', $html);
     }
 
+    public function test_home_head_inlines_mobile_hero_lcp_visibility_rules(): void
+    {
+        $html = $this->renderHeadForRoute('home');
+
+        $this->assertStringContainsString('.hero-section-mobile .description', $html);
+        $this->assertStringContainsString('visibility: visible !important', $html);
+        $this->assertStringContainsString('animation: none !important', $html);
+    }
+
+    public function test_home_hero_renders_without_skeleton_loader_on_mobile_and_desktop(): void
+    {
+        $mobileHtml = view('includes._slider', [
+            'isMobile' => true,
+            'isRtl' => false,
+            'movies' => collect(),
+        ])->render();
+
+        $desktopHtml = view('includes._slider', [
+            'isMobile' => false,
+            'isRtl' => false,
+            'useNativeCarousel' => true,
+            'movies' => collect([[
+                'webp_image_url' => 'https://image.tmdb.org/t/p/w780/speed-check.jpg',
+                'safe_title' => 'Speed Check',
+                'safe_overview' => 'Performance test slide',
+            ]]),
+        ])->render();
+
+        $this->assertStringContainsString('class="hero-section-mobile"', $mobileHtml);
+        $this->assertStringContainsString('class="description"', $mobileHtml);
+        $this->assertStringContainsString('class="main-slider-two native-home-hero"', $desktopHtml);
+        $this->assertStringNotContainsString('data-skeleton-section', $mobileHtml.$desktopHtml);
+        $this->assertStringNotContainsString('section-skeleton__overlay', $mobileHtml.$desktopHtml);
+        $this->assertStringNotContainsString('skeleton-section', $mobileHtml.$desktopHtml);
+    }
+
+    public function test_views_footer_and_css_do_not_output_skeleton_loader_hooks(): void
+    {
+        $paths = new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator(resource_path('views'), \FilesystemIterator::SKIP_DOTS)
+        );
+
+        foreach ($paths as $path) {
+            if ($path->getExtension() !== 'php') {
+                continue;
+            }
+
+            $contents = file_get_contents($path->getPathname());
+
+            $this->assertStringNotContainsString('data-skeleton-section', $contents, $path->getPathname());
+            $this->assertStringNotContainsString('section-skeleton', $contents, $path->getPathname());
+            $this->assertStringNotContainsString('skeleton-section', $contents, $path->getPathname());
+        }
+
+        $css = file_get_contents(public_path('css/style.css'));
+
+        $this->assertStringNotContainsString('section-skeleton', $css);
+        $this->assertStringNotContainsString('skeleton-section', $css);
+    }
+
     public function test_page_title_routes_preload_their_lcp_backgrounds(): void
     {
         $routes = [

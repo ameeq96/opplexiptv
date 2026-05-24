@@ -119,6 +119,56 @@
         }
     }
 </style>
+@if ($routeName === 'home')
+    <style>
+        @media (max-width: 767px) {
+            .hero-section-mobile {
+                min-height: 320px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem 1rem;
+                background-color: #fff;
+                text-align: center;
+            }
+
+            .hero-section-mobile .container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .hero-section-mobile .subtitle,
+            .hero-section-mobile .heading,
+            .hero-section-mobile .description {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+                animation: none !important;
+            }
+
+            .hero-section-mobile .subtitle {
+                font-weight: 600;
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: .5rem;
+            }
+
+            .hero-section-mobile .heading {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #111;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section-mobile .description {
+                margin-top: 1rem;
+                color: #333;
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+@endif
 
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">

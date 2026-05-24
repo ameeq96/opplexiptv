@@ -1,22 +1,7 @@
 ﻿
 
-<section class="network-section unlimited-showcase @unless ($isMobile) @else p-0 @endunless {{ !empty($useSectionSkeletons) ? 'skeleton-section' : '' }}"
-    @if (!empty($useSectionSkeletons)) data-skeleton-section @endif
+<section class="network-section unlimited-showcase @unless ($isMobile) @else p-0 @endunless"
     aria-label="Opplex IPTV Features Section">
-    @if (!empty($useSectionSkeletons))
-        <div class="section-skeleton__overlay" aria-hidden="true">
-            <div class="section-skeleton__content">
-                <span class="section-skeleton__pill"></span>
-                <span class="section-skeleton__line section-skeleton__line--lg"></span>
-                <span class="section-skeleton__line section-skeleton__line--md"></span>
-                <div class="section-skeleton__cards">
-                    <span class="section-skeleton__card"></span>
-                    <span class="section-skeleton__card"></span>
-                    <span class="section-skeleton__card"></span>
-                </div>
-            </div>
-        </div>
-    @endif
 
     <div class="auto-container unlimited-showcase__shell">
         <div class="inner-container unlimited-showcase__panel">
@@ -64,4 +49,3 @@
         </div>
     </div>
 </section>
-
