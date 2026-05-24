@@ -71,6 +71,32 @@
     $supported = array_keys(config('laravellocalization.supportedLocales') ?? []);
 
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
+
+    $phoneAssetRoutes = ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'];
+    $checkoutCssRoutes = ['checkout', 'configure', 'digital.checkout.show', 'digital.checkout.store'];
+    $needsPhoneAssets = in_array($routeName, $phoneAssetRoutes, true);
+    $needsBlockingCheckoutCss = in_array($routeName, $checkoutCssRoutes, true);
+
+    $pageTitleLcpBackgrounds = [
+        'about' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+        'packages' => ['images/background/9-lcp.webp', 'images/background/9-mobile.webp'],
+        'pricing' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+        'faqs' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'contact' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'reseller-panel' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
+        'iptv-applications' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'shop' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'buynow' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'buynowpanel' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+        'blogs.index' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
+    ];
+
+    $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
+    $firstHeroImage = null;
+    if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null)) {
+        $firstHeroImage = $displayMovies[0]['webp_image_url'];
+    }
+    $preconnectTmdb = $firstHeroImage && str_starts_with((string) $firstHeroImage, 'https://image.tmdb.org/');
 @endphp
 
 <title>{{ $metaTitle }}</title>
@@ -131,6 +157,20 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+@if ($preconnectTmdb)
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+@endif
+@if ($pageTitleLcp)
+    <link rel="preload" as="image" href="{{ asset($pageTitleLcp[0]) }}" type="image/webp"
+        media="(min-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ asset($pageTitleLcp[1]) }}" type="image/webp"
+        media="(max-width: 767px)" fetchpriority="high">
+@endif
+@if ($firstHeroImage)
+    <link rel="preload" as="image" href="{{ $firstHeroImage }}" fetchpriority="high">
+@endif
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
     crossorigin>
 
@@ -139,29 +179,37 @@
 <link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
 
 @php
-    $nonCriticalStyles = [
+    $criticalStyles = [
         'global.css',
         'header.css',
         'footer.css',
         'font-awesome.css',
         'flaticon.css',
+        'linearicons.css',
+    ];
+
+    $deferredStyles = [
         'animate.css',
         'owl.css',
         'swiper.css',
-        'linearicons.css',
-        'checkout.css',
         'jquery-ui.css',
         'custom-animate.css',
         'jquery.fancybox.min.css',
         'jquery.mCustomScrollbar.min.css',
     ];
+
+    if ($needsBlockingCheckoutCss) {
+        $criticalStyles[] = 'checkout.css';
+    } else {
+        $deferredStyles[] = 'checkout.css';
+    }
 @endphp
 
-@foreach ($nonCriticalStyles as $style)
-    <link rel="preload" href="{{ v("css/$style") }}" as="style">
-@endforeach
-@foreach ($nonCriticalStyles as $style)
+@foreach ($criticalStyles as $style)
     <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
+@endforeach
+@foreach ($deferredStyles as $style)
+    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.media='all'">
 @endforeach
 
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
@@ -175,21 +223,22 @@
 <link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
 
-@if (!empty($displayMovies[0]['webp_image_url'] ?? null))
-    <link rel="preload" as="image"
-        href="{{ !empty($displayMovies[0]['webp_image_url']) ? $displayMovies[0]['webp_image_url'] : v('images/placeholder.webp') }}"
-        fetchpriority="high">
+@if ($needsPhoneAssets)
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
 @endif
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
 
 <noscript>
     <link rel="stylesheet" href="{{ v('css/style.css') }}">
-    @foreach ($nonCriticalStyles as $style)
+    <link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}">
+    @foreach (array_merge($criticalStyles, $deferredStyles) as $style)
         <link rel="stylesheet" href="{{ v("css/$style") }}">
     @endforeach
     <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
+    <link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}">
+    @if ($needsPhoneAssets)
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+    @endif
 </noscript>
 
 @if (!empty($fbPixels))
@@ -311,15 +360,28 @@
                 || href.startsWith('whatsapp://send');
         }
 
+        function readCookie(name) {
+            const value = '; ' + document.cookie;
+            const parts = value.split('; ' + name + '=');
+            if (parts.length !== 2) return null;
+            return decodeURIComponent(parts.pop().split(';').shift() || '');
+        }
+
         function sendCAPI(eventId, dest) {
-            var payload = { event_id:eventId, destination:dest, page:location.href, _token:"{{ csrf_token() }}" };
+            var payload = {
+                event_id:eventId,
+                destination:dest,
+                page:location.href,
+                fbp:readCookie('_fbp'),
+                fbc:readCookie('_fbc')
+            };
             if (navigator.sendBeacon) {
                 const blob = new Blob([JSON.stringify(payload)], { type:'application/json' });
                 navigator.sendBeacon("{{ route('track.whatsapp.trial') }}", blob);
             } else {
                 fetch("{{ route('track.whatsapp.trial') }}", {
                     method:'POST',
-                    headers:{ 'Content-Type':'application/json', 'X-CSRF-TOKEN':"{{ csrf_token() }}" },
+                    headers:{ 'Content-Type':'application/json' },
                     body: JSON.stringify(payload),
                     keepalive:true
                 });

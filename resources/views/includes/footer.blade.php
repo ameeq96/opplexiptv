@@ -23,6 +23,9 @@
     $brandText = $footerSettings['brand_text'] ?? null;
     $cryptoNote = $footerSettings['crypto_note'] ?? null;
     $legalNote = $footerSettings['legal_note'] ?? null;
+
+    $routeName = optional(request()->route())->getName();
+    $needsPhoneAssets = in_array($routeName, ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
 @endphp
 
     <!-- Background layers -->
@@ -178,8 +181,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>
+@if ($needsPhoneAssets)
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>
+@endif
 
 <!-- Local scripts last -->
 <script src="{{ v('js/nav-tool.js') }}" defer></script>
@@ -187,6 +192,7 @@
 <script src="{{ v('js/script.js') }}" defer></script>
 
 <script>
+    @if ($needsPhoneAssets)
     (function() {
         function initPhone() {
             const input = document.getElementById('phone');
@@ -246,6 +252,7 @@
             initPhone();
         }
     })();
+    @endif
 
     (function() {
         'use strict';

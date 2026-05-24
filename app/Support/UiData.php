@@ -14,7 +14,7 @@ use App\Models\FooterLink;
 use App\Models\SocialLink;
 use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
-use Illuminate\Support\Facades\{Cache, Lang};
+use Illuminate\Support\Facades\{Cache, Lang, Schema};
 use Jenssegers\Agent\Agent;
 use Illuminate\Http\Request;
 
@@ -36,61 +36,82 @@ class UiData
      */
     public function build(): array
     {
+        $routeName = optional($this->request->route())->getName() ?: 'home';
         $isMobile       = $this->agent->isMobile();
         $isRtl          = $this->locale->isRtl();
         $containerClass = $isMobile ? 'centered' : 'sec-title centered';
 
-        $logos = Cache::remember('ui:logos', now()->addDay(), function () {
+        $logos = $this->remember('logos', now()->addDay(), function () {
             $dbLogos = app(\App\Services\ProductCatalogService::class)->getLogos();
             return !empty($dbLogos) ? $dbLogos : $this->images->logos();
-        });
+        }, $this->images->logos());
 
-        ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
-        session(['captcha_sum' => $a + $b]);
-
-        $page  = max(1, (int) $this->request->input('page', 1));
-        $query = trim((string) $this->request->input('search', ''));
-
-        if ($query !== '') {
-            $payload    = $this->searchTmdb($query, $page);
-            $results    = $payload['results'] ?? [];
-            $totalPages = max(1, (int) ($payload['total_pages'] ?? 1));
-        } else {
-            $results    = $this->fetchTrendingMovies($page);
-            $totalPages = 10;
+        $a = 0;
+        $b = 0;
+        if ($this->routeIs($routeName, ['contact', 'buynow', 'buynowpanel'])) {
+            ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
         }
 
-        $rawLimited     = \array_slice($results, 0, 10);
-        $prepared       = $this->prepareMovies($rawLimited, $isMobile);
-        $movies         = $prepared->values();
-        $displayMovies  = $isMobile ? $movies->take(3)->values() : $movies;
-
-        $normalized     = $this->normalizeMovies($movies);
+        $movies = collect();
+        $displayMovies = collect();
         $filteredMovies = [
-            'movies'   => $normalized->where('media_type', 'movie')->values(),
-            'series'   => $normalized->where('media_type', 'tv')->values(),
-            'cartoons' => $normalized->filter(static fn($m) => \in_array(16, $m['genre_ids'] ?? [], true))->values(),
+            'movies' => collect(),
+            'series' => collect(),
+            'cartoons' => collect(),
         ];
+        $page  = max(1, (int) $this->request->input('page', 1));
+        $query = trim((string) $this->request->input('search', ''));
+        $pagination = $this->computePagination(page: $page, totalPages: 1, window: 5);
 
-        $pagination = $this->computePagination(
-            page: $page,
-            totalPages: $totalPages,
-            window: 5
-        );
+        if ($this->routeIs($routeName, ['home', 'movies'])) {
+            if ($routeName === 'movies' && $query !== '') {
+                $payload    = $this->searchTmdb($query, $page);
+                $results    = $payload['results'] ?? [];
+                $totalPages = max(1, (int) ($payload['total_pages'] ?? 1));
+            } else {
+                $results    = $this->fetchTrendingMovies($routeName === 'movies' ? $page : 1);
+                $totalPages = $routeName === 'movies' ? 10 : 1;
+            }
 
-        $features      = $this->features();
-        $serviceCards  = $this->serviceCards();
-        $menuItems     = $this->menuItems();
-        $pricingSection = $this->pricingSection();
-        $footer = $this->footerData();
-        $packages      = $this->packages();
-        $resellerPlans = $this->resellerPlans();
-        $testimonials  = $this->testimonials();
-        $faqs          = $this->faqs();
+            $rawLimited     = \array_slice($results, 0, 10);
+            $prepared       = $this->prepareMovies($rawLimited, $isMobile);
+            $movies         = $prepared->values();
+            $displayMovies  = $isMobile ? $movies->take(3)->values() : $movies;
 
-        $platforms = $this->enrichPlatforms($this->platforms());
-        [$packagesDropdown, $resellerPanelPackagesDropdown] = $this->dropdowns();
+            if ($routeName === 'movies') {
+                $normalized     = $this->normalizeMovies($movies);
+                $filteredMovies = [
+                    'movies'   => $normalized->where('media_type', 'movie')->values(),
+                    'series'   => $normalized->where('media_type', 'tv')->values(),
+                    'cartoons' => $normalized->filter(static fn($m) => \in_array(16, $m['genre_ids'] ?? [], true))->values(),
+                ];
+            }
 
+            $pagination = $this->computePagination(
+                page: $page,
+                totalPages: $totalPages,
+                window: 5
+            );
+        }
+
+        $needsFeatures = $this->routeIs($routeName, ['home', 'about', 'packages', 'pricing', 'reseller-panel']);
+        $needsPricing = $this->routeIs($routeName, ['home', 'packages', 'pricing', 'reseller-panel']);
+        $needsTestimonials = $this->routeIs($routeName, ['home', 'about', 'reseller-panel']);
+
+        $features      = $needsFeatures ? $this->features() : [];
+        $serviceCards  = $routeName === 'home' ? $this->remember('home-services', now()->addMinutes(30), fn () => $this->serviceCards(), []) : [];
+        $menuItems     = $this->remember('menu-items', now()->addMinutes(30), fn () => $this->menuItems(), []);
+        $pricingSection = $needsPricing ? $this->remember('pricing-section', now()->addMinutes(30), fn () => $this->pricingSection(), null) : null;
+        $footer = $this->remember('footer', now()->addMinutes(30), fn () => $this->footerData(), []);
+        $packages      = $needsPricing ? $this->remember('packages:iptv', now()->addMinutes(30), fn () => $this->packages(), []) : [];
+        $resellerPlans = $needsPricing ? $this->remember('packages:reseller', now()->addMinutes(30), fn () => $this->resellerPlans(), []) : [];
+        $testimonials  = $needsTestimonials ? $this->remember('testimonials', now()->addMinutes(30), fn () => $this->testimonials(), $this->fallbackTestimonials()) : [];
+        $faqs          = $routeName === 'faqs' ? $this->faqs() : [];
+
+        $platforms = $routeName === 'iptv-applications' ? $this->enrichPlatforms($this->platforms()) : [];
+        [$packagesDropdown, $resellerPanelPackagesDropdown] = $this->routeIs($routeName, ['buynow', 'buynowpanel'])
+            ? $this->dropdowns()
+            : [[], []];
         $seoServices = array_values((array) Lang::get('messages.seo_services'));
 
         return [
@@ -128,6 +149,39 @@ class UiData
             'resellerPanelPackagesDropdown' => $resellerPanelPackagesDropdown,
             'assistant'                    => config('assistant'),
         ];
+    }
+
+    /** @param array<int,string> $routes */
+    private function routeIs(string $routeName, array $routes): bool
+    {
+        return in_array($routeName, $routes, true);
+    }
+
+    /**
+     * @template T
+     * @param  callable():T  $callback
+     * @param  T  $fallback
+     * @return T
+     */
+    private function remember(string $key, mixed $ttl, callable $callback, mixed $fallback): mixed
+    {
+        $locale = app()->getLocale();
+        $cacheKey = "ui:{$locale}:{$key}";
+
+        try {
+            return Cache::remember($cacheKey, $ttl, $callback);
+        } catch (\Throwable) {
+            return $fallback;
+        }
+    }
+
+    private function hasTable(string $table): bool
+    {
+        try {
+            return Schema::hasTable($table);
+        } catch (\Throwable) {
+            return false;
+        }
     }
 
     /**
@@ -309,7 +363,7 @@ class UiData
     /** @return array<int,array<string,string>> */
     private function serviceCards(): array
     {
-        if (\Illuminate\Support\Facades\Schema::hasTable('home_services')) {
+        if ($this->hasTable('home_services')) {
             $locale = app()->getLocale();
             $fallback = config('app.fallback_locale');
 
@@ -339,7 +393,7 @@ class UiData
     /** @return array<int,array<string,mixed>> */
     private function menuItems(): array
     {
-        if (\Illuminate\Support\Facades\Schema::hasTable('menu_items')) {
+        if ($this->hasTable('menu_items')) {
             $locale = app()->getLocale();
             $fallback = config('app.fallback_locale');
 
@@ -446,7 +500,7 @@ class UiData
 
     private function pricingSection(): ?array
     {
-        if (\Illuminate\Support\Facades\Schema::hasTable('pricing_sections')) {
+        if ($this->hasTable('pricing_sections')) {
             $locale = app()->getLocale();
             $fallback = config('app.fallback_locale');
             $section = PricingSection::query()
@@ -474,7 +528,7 @@ class UiData
 
     private function footerData(): array
     {
-        if (!\Illuminate\Support\Facades\Schema::hasTable('footer_settings')) {
+        if (!$this->hasTable('footer_settings')) {
             return [];
         }
 
@@ -548,6 +602,10 @@ class UiData
     /** @return array<int,array<string,mixed>> */
     private function packages(): array
     {
+        if (!$this->hasTable('packages')) {
+            return [];
+        }
+
         return \App\Models\Package::query()
             ->where('active', true)
             // Only IPTV rows; show both vendors
@@ -564,6 +622,10 @@ class UiData
     /** @return array<int,array<string,mixed>> */
     private function resellerPlans(): array
     {
+        if (!$this->hasTable('packages')) {
+            return [];
+        }
+
         return \App\Models\Package::query()
             ->where('active', true)
             // Only Reseller rows; show both vendors
@@ -580,7 +642,7 @@ class UiData
     /** @return array<int,array<string,string>> */
     private function testimonials(): array
     {
-        if (\Illuminate\Support\Facades\Schema::hasTable('testimonials')) {
+        if ($this->hasTable('testimonials')) {
             $locale = app()->getLocale();
             $fallback = config('app.fallback_locale');
 
@@ -603,6 +665,12 @@ class UiData
                 ->toArray();
         }
 
+        return $this->fallbackTestimonials();
+    }
+
+    /** @return array<int,array<string,string>> */
+    private function fallbackTestimonials(): array
+    {
         return [
             ['text' => __('messages.testimonial_1'),  'author_name' => 'Amaan Khalid', 'image' => 'images/img-test-2.webp'],
             ['text' => __('messages.testimonial_2'),  'author_name' => 'Nouman Shahid', 'image' => 'images/img-test-3.webp'],
