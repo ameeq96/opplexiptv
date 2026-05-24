@@ -13,8 +13,7 @@
         <div class="row g-4 align-items-start">
             <div class="col-lg-5">
                 <div class="bg-white rounded p-3">
-                    <img src="{{ $productImage }}" alt="{{ $product->title }}" width="720" height="720"
-                        loading="eager" decoding="async" fetchpriority="high" style="width:100%;height:auto;border-radius:10px;">
+                    <img src="{{ $productImage }}" alt="{{ $product->title }}" style="width:100%;border-radius:10px;">
                 </div>
             </div>
             <div class="col-lg-7">

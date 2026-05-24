@@ -92,17 +92,11 @@
     ];
 
     $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
-    $homeHeroLcpImage = is_file(public_path('images/home-hero-lcp.webp'))
-        ? asset('images/home-hero-lcp.webp')
-        : asset('images/background/7.webp');
     $firstHeroImage = null;
     if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null)) {
-        $firstHeroImage = $homeHeroLcpImage;
+        $firstHeroImage = $displayMovies[0]['webp_image_url'];
     }
-    $firstRemoteHeroImage = $routeName === 'home' && empty($isMobile)
-        ? ($displayMovies[0]['webp_image_url'] ?? null)
-        : null;
-    $preconnectTmdb = $firstRemoteHeroImage && str_starts_with((string) $firstRemoteHeroImage, 'https://image.tmdb.org/');
+    $preconnectTmdb = $firstHeroImage && str_starts_with((string) $firstHeroImage, 'https://image.tmdb.org/');
 @endphp
 
 <title>{{ $metaTitle }}</title>
@@ -119,385 +113,62 @@
     var isRtl = {{ $isRtl ? 'true' : 'false' }};
 </script>
 <style>
-    :root {
-        --main-color: rgb(223, 3, 3);
-        --main-color-two: rgb(1, 12, 58);
-        --white-color: rgb(255, 255, 255);
-        --font-family-poppins: "Poppins", Arial, sans-serif;
-        --font-14: 14px;
-        --font-15: 15px;
-        --font-16: 16px;
-        --font-20: 20px;
-        --font-34: 34px;
-        --font-50: 50px;
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-
-    html {
-        -webkit-text-size-adjust: 100%;
-    }
-
-    body {
-        margin: 0;
-        color: #252525;
-        background: #fff;
-        font-family: var(--font-family-poppins);
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        border-style: none;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    .auto-container,
-    .container {
-        width: 100%;
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .clearfix::after {
-        display: block;
-        clear: both;
-        content: "";
-    }
-
-    .pull-left {
-        float: left;
-    }
-
-    .pull-right {
-        float: right;
-    }
-
-    .d-flex {
-        display: flex !important;
-    }
-
-    .justify-content-start {
-        justify-content: flex-start !important;
-    }
-
-    .justify-content-between {
-        justify-content: space-between !important;
-    }
-
-    .justify-content-center {
-        justify-content: center !important;
-    }
-
-    .align-items-center {
-        align-items: center !important;
-    }
-
-    .flex-wrap {
-        flex-wrap: wrap !important;
-    }
-
-    .text-center {
-        text-align: center !important;
-    }
-
-    .text-left {
-        text-align: left !important;
-    }
-
-    .text-right {
-        text-align: right !important;
-    }
-
-    .text-white {
-        color: #fff !important;
-    }
-
-    .mb-0 {
-        margin-bottom: 0 !important;
-    }
-
-    .py-2 {
-        padding-top: .5rem !important;
-        padding-bottom: .5rem !important;
-    }
-
-    .gap-2 {
-        gap: .5rem !important;
-    }
-
-    .d-none {
-        display: none !important;
-    }
-
-    .btn,
-    .theme-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        border: 0;
-        cursor: pointer;
-        transition: color .2s ease, background-color .2s ease, border-color .2s ease;
-    }
-
-    .btn {
-        min-height: 44px;
-        padding: .55rem 1rem;
-        border-radius: .25rem;
-        font-weight: 600;
-        line-height: 1.2;
-    }
-
-    .btn-primary {
-        color: #fff !important;
-        background-color: #df0303;
-        border: 1px solid #df0303;
-    }
-
-    .btn-outline,
-    .btn-outline-primary {
-        color: #df0303 !important;
-        background-color: transparent;
-        border: 1px solid #df0303;
-    }
-
-    .page-title {
-        position: relative;
-        overflow: hidden;
-        padding: 200px 0;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .page-title::before {
-        position: absolute;
-        content: "";
-        inset: 0;
-        background: linear-gradient(to right, #010c3a 0, rgba(255, 255, 255, 0) 100%);
-    }
-
-    .page-title .auto-container {
-        position: relative;
-        z-index: 1;
-    }
-
-    .page-title h2 {
-        margin: 0 0 15px;
-        color: #fff;
-        font-size: var(--font-50);
-        line-height: 1.15;
-    }
-
-    .page-title .bread-crumb li {
-        position: relative;
-        display: inline-block;
-        margin-right: 15px;
-        padding-right: 15px;
-        color: #fff;
-        font-size: var(--font-15);
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-
-    .page-title .bread-crumb li::before {
-        position: absolute;
-        right: -3px;
-        top: 0;
-        content: "|";
-        color: #fff;
-    }
-
-    .page-title .bread-crumb li:last-child {
-        margin-right: 0;
-        padding-right: 0;
-    }
-
-    .page-title .bread-crumb li:last-child::before {
-        display: none;
-    }
-
-    .page-title .bread-crumb li a {
-        color: var(--main-color);
-    }
-
-    .main-slider-two,
-    .native-home-hero {
-        position: relative;
-        width: 100%;
-        height: 720px;
-        overflow: hidden;
-        background: #010c3a;
-    }
-
-    .native-carousel {
-        position: relative;
-    }
-
-    .native-carousel--hero,
-    .native-carousel--hero .native-carousel__viewport,
-    .native-carousel--hero .native-carousel__track,
-    .native-carousel--hero .native-carousel__slide {
-        height: 100%;
-        position: relative;
-    }
-
-    .native-carousel--hero .native-carousel__track {
-        display: block;
-    }
-
-    .native-carousel--hero .native-carousel__slide {
-        position: absolute;
-        inset: 0;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .native-carousel--hero .native-carousel__slide.is-active {
-        opacity: 1;
-        visibility: visible;
-        z-index: 1;
-    }
-
-    .main-slider-two .slide {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center right;
-    }
-
-    .main-slider-two .slide::before {
-        position: absolute;
-        content: "";
-        inset: 0;
-        z-index: 1;
-        background: linear-gradient(to right, #010c3a 0, rgba(1, 12, 58, .84) 34%, rgba(255, 255, 255, 0) 100%);
-    }
-
-    .main-slider-two .slide img {
-        position: absolute;
-        inset: 0;
-        z-index: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .main-slider-two .auto-container {
-        position: relative;
-        z-index: 2;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .main-slider-two .content-boxed {
-        position: relative;
-        z-index: 10;
-        max-width: 750px;
-    }
-
-    .main-slider-two h1 {
-        margin: 0 0 25px;
-        color: #fff;
-        font-size: 64px;
-        line-height: 1.08;
-        font-weight: 800;
-    }
-
-    .main-slider-two .text {
-        max-width: 600px;
-        margin-bottom: 30px;
-        color: #fff;
-        font-size: var(--font-16);
-        line-height: 2;
-    }
-
-    .btn-style-two {
-        min-height: 52px;
-        padding: 14px 24px;
-        color: #fff !important;
-        background: var(--main-color);
-        border-radius: 4px;
-        font-weight: 700;
-    }
-
     @media (max-width: 767px) {
         .page-title {
-            padding: 100px 0;
             background-image: var(--page-title-bg-mobile) !important;
-        }
-
-        .page-title h2 {
-            font-size: var(--font-34);
-        }
-
-        .hero-section-mobile {
-            min-height: 320px !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
-            background-color: #fff;
-            text-align: center;
-        }
-
-        .hero-section-mobile .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .hero-section-mobile .subtitle,
-        .hero-section-mobile .heading,
-        .hero-section-mobile .description {
-            opacity: 1 !important;
-            visibility: visible !important;
-            transform: none !important;
-            animation: none !important;
-        }
-
-        .hero-section-mobile .subtitle {
-            margin-bottom: .5rem;
-            color: #555;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .hero-section-mobile .heading {
-            margin-bottom: 1rem;
-            color: #111;
-            font-size: 1.4rem;
-            font-weight: 700;
-            line-height: 1.3;
-        }
-
-        .hero-section-mobile .description {
-            margin-top: 1rem;
-            color: #333;
-            font-size: 1rem;
-            line-height: 1.6;
         }
     }
 </style>
+@if ($routeName === 'home')
+    <style>
+        @media (max-width: 767px) {
+            .hero-section-mobile {
+                min-height: 320px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem 1rem;
+                background-color: #fff;
+                text-align: center;
+            }
+
+            .hero-section-mobile .container {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .hero-section-mobile .subtitle,
+            .hero-section-mobile .heading,
+            .hero-section-mobile .description {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: none !important;
+                animation: none !important;
+            }
+
+            .hero-section-mobile .subtitle {
+                font-weight: 600;
+                font-size: 1rem;
+                color: #555;
+                margin-bottom: .5rem;
+            }
+
+            .hero-section-mobile .heading {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #111;
+                margin-bottom: 1rem;
+            }
+
+            .hero-section-mobile .description {
+                margin-top: 1rem;
+                color: #333;
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+@endif
 
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">
@@ -531,6 +202,8 @@
 @endphp
 <link rel="alternate" hreflang="x-default" href="{{ $xDefaultHref }}" />
 
+@yield('jsonld')
+
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
@@ -545,34 +218,27 @@
         media="(max-width: 767px)" fetchpriority="high">
 @endif
 @if ($firstHeroImage)
-    <link rel="preload" as="image" href="{{ $firstHeroImage }}" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ $firstHeroImage }}" fetchpriority="high">
 @endif
 
-{{-- Preload critical fonts before stylesheets compete for bandwidth --}}
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
-
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
-    crossorigin onload="this.onload=null;this.rel='stylesheet'">
+    crossorigin>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
 
 @php
     $criticalStyles = [
         'global.css',
         'header.css',
-        'fonts.css',
-    ];
-
-    $deferredStyles = [
-        'style.css',
-        'responsive.css',
-        'discount-wheel.css',
         'footer.css',
         'font-awesome.css',
         'flaticon.css',
         'linearicons.css',
-        'voice-assistant.css',
-        'accessibility-fixes.css',
+    ];
+
+    $deferredStyles = [
         'animate.css',
         'owl.css',
         'swiper.css',
@@ -593,25 +259,39 @@
     <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
 @endforeach
 @foreach ($deferredStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.onload=null;this.media='all'">
+    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.media='all'">
 @endforeach
+
+<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
+<link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="all">
 @stack('styles')
 
+{{-- Preload critical fonts to reduce CLS --}}
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+
 @if ($needsPhoneAssets)
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css" media="print" onload="this.onload=null;this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
 @endif
 
 <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ v('css/style.css') }}">
+    <link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}">
     @foreach (array_merge($criticalStyles, $deferredStyles) as $style)
         <link rel="stylesheet" href="{{ v("css/$style") }}">
     @endforeach
+    <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
+    <link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}">
+    <link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}">
     @if ($needsPhoneAssets)
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
     @endif
 </noscript>
-
-@yield('jsonld')
 
 @if (!empty($fbPixels))
     <script>

@@ -4,13 +4,10 @@ namespace App\Http\Controllers\DigitalCommerce;
 
 use App\Http\Controllers\Controller;
 use App\Models\Digital\DigitalProduct;
-use App\Services\ImageService;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
 {
-    public function __construct(private ImageService $images) {}
-
     public function index()
     {
         return redirect()->route('shop', ['type' => 'digital']);
@@ -26,7 +23,7 @@ class ProductController extends Controller
 
         $productUrl = route('digital.product.show', $product->slug);
         $productImage = $product->image
-            ? $this->images->optimizedLocalAsset('images/digital-products/' . $product->image)
+            ? asset('images/digital-products/' . $product->image)
             : asset('images/placeholder.webp');
         $descriptionSource = $product->short_description
             ?: $product->full_description

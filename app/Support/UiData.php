@@ -69,13 +69,11 @@ class UiData
                 $results    = $payload['results'] ?? [];
                 $totalPages = max(1, (int) ($payload['total_pages'] ?? 1));
             } else {
-                $results    = $routeName === 'home'
-                    ? $this->fetchTrendingMovies(1, false)
-                    : $this->fetchTrendingMovies($page);
+                $results    = $this->fetchTrendingMovies($routeName === 'movies' ? $page : 1);
                 $totalPages = $routeName === 'movies' ? 10 : 1;
             }
 
-            $rawLimited     = \array_slice($results, 0, $routeName === 'home' ? 5 : 10);
+            $rawLimited     = \array_slice($results, 0, 10);
             $prepared       = $this->prepareMovies($rawLimited, $isMobile);
             $movies         = $prepared->values();
             $displayMovies  = $isMobile ? $movies->take(3)->values() : $movies;
@@ -191,15 +189,10 @@ class UiData
      *
      * @return array<int,array<string,mixed>>
      */
-    private function fetchTrendingMovies(int $page = 1, bool $allowColdFetch = true): array
+    private function fetchTrendingMovies(int $page = 1): array
     {
         $locale = app()->getLocale();
         $cacheKey = "ui:tmdb:trending:all:day:{$locale}:p{$page}";
-
-        if (!$allowColdFetch) {
-            $cached = Cache::get($cacheKey);
-            return is_array($cached) && $cached !== [] ? $cached : $this->fallbackHomeMovies();
-        }
 
         return Cache::remember($cacheKey, now()->addMinutes(30), function () use ($page): array {
             try {
@@ -209,27 +202,6 @@ class UiData
                 return [];
             }
         });
-    }
-
-    /**
-     * Fast home fallback avoids making the homepage LCP depend on a cold TMDB request.
-     *
-     * @return array<int,array<string,mixed>>
-     */
-    private function fallbackHomeMovies(): array
-    {
-        $hero = is_file(public_path('images/home-hero-lcp.webp'))
-            ? asset('images/home-hero-lcp.webp')
-            : asset('images/background/7.webp');
-
-        return [[
-            'id' => 0,
-            'media_type' => 'movie',
-            'title' => 'Opplex IPTV',
-            'overview' => 'Stream live channels, sports, movies, and series in HD and 4K on every device.',
-            'webp_image_url' => $hero,
-            'genre_ids' => [],
-        ]];
     }
 
     private function searchTmdb(string $query, int $page = 1): array

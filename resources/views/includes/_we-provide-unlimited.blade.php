@@ -9,18 +9,18 @@
                 @unless ($isMobile)
                     <div class="unlimited-showcase__media" aria-hidden="true">
                         <div class="unlimited-showcase__main">
-                            <img src="{{ asset('images/resource/network-4.webp') }}" alt="IPTV streaming setup image" loading="lazy" decoding="async" />
+                            <img src="{{ asset('images/resource/network-4.webp') }}" alt="IPTV streaming setup image" />
                         </div>
                         <div class="unlimited-showcase__screen">
-                            <img src="{{ asset('images/resource/network-5.webp') }}" alt="IPTV content preview screen" loading="lazy" decoding="async" />
+                            <img src="{{ asset('images/resource/network-5.webp') }}" alt="IPTV content preview screen" />
                         </div>
                         <div class="unlimited-showcase__person-wrap">
                             <div class="unlimited-showcase__person">
-                                <img src="{{ asset('images/resource/network-3.webp') }}" alt="High-quality IPTV connection graphic" loading="lazy" decoding="async" />
+                                <img src="{{ asset('images/resource/network-3.webp') }}" alt="High-quality IPTV connection graphic" />
                             </div>
                         </div>
                         <div class="unlimited-showcase__signal">
-                            <img src="{{ asset('images/icons/service-4.webp') }}" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                            <img src="{{ asset('images/icons/service-4.webp') }}" alt="" aria-hidden="true" />
                         </div>
                     </div>
                 @endunless
