@@ -6,7 +6,10 @@
 @endphp
 
 @push('styles')
-    <link rel="stylesheet" href="{{ v('css/blogs.css') }}">
+    <link rel="stylesheet" href="{{ v('css/blogs.css') }}" media="print" onload="this.onload=null;this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="{{ v('css/blogs.css') }}">
+    </noscript>
 @endpush
 
 @section('content')

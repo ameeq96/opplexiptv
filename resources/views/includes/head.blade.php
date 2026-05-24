@@ -221,51 +221,521 @@
     <link rel="preload" as="image" href="{{ $firstHeroImage }}" fetchpriority="high">
 @endif
 
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
-    crossorigin>
+<style>
+    @font-face {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url('{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}') format('woff2');
+    }
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
-<link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
+    @font-face {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}') format('woff2');
+    }
+
+    @font-face {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}') format('woff2');
+    }
+
+    :root {
+        --main-color: rgb(223, 3, 3);
+        --main-color-two: rgb(1, 12, 58);
+        --white-color: rgb(255, 255, 255);
+        --dark-color: rgb(37, 37, 37);
+        --dark-color-two: rgb(1, 1, 1);
+        --heading-color: rgb(1, 1, 1);
+        --font-family-poppins: "Poppins", sans-serif;
+        --font-14: 14px;
+        --font-15: 15px;
+        --font-16: 16px;
+        --font-18: 18px;
+        --font-24: 24px;
+        --font-26: 26px;
+        --font-36: 36px;
+        --font-50: 50px;
+        --font-80: 80px;
+        --margin-zero: 0;
+        --margin-right-20: 20px;
+        --margin-right-25: 25px;
+        --margin-right-35: 35px;
+        --margin-bottom-15: 15px;
+        --margin-bottom-25: 25px;
+        --margin-bottom-30: 30px;
+        --padding-zero: 0;
+        --padding-left-25: 25px;
+        --padding-bottom-15: 15px;
+    }
+
+    *, ::before, ::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        margin: 0;
+        color: var(--dark-color);
+        background: #fff;
+        font-family: var(--font-family-poppins);
+        font-size: 14px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    article, aside, footer, header, nav, section {
+        display: block;
+    }
+
+    a {
+        color: var(--main-color);
+        text-decoration: none;
+    }
+
+    img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+        border-style: none;
+        vertical-align: middle;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--heading-color);
+        font-weight: 600;
+    }
+
+    .container,
+    .auto-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .clearfix::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+
+    .pull-left {
+        float: left;
+    }
+
+    .pull-right {
+        float: right;
+    }
+
+    .d-flex {
+        display: flex !important;
+    }
+
+    .d-none {
+        display: none !important;
+    }
+
+    .align-items-center {
+        align-items: center !important;
+    }
+
+    .align-items-start {
+        align-items: flex-start !important;
+    }
+
+    .justify-content-between {
+        justify-content: space-between !important;
+    }
+
+    .justify-content-center {
+        justify-content: center !important;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap !important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .text-left {
+        text-align: left !important;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+
+    .py-2 {
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+    }
+
+    .gap-2 {
+        gap: .5rem !important;
+    }
+
+    .btn,
+    .theme-btn {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background: var(--main-color);
+        border-color: var(--main-color);
+    }
+
+    .main-header {
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        background: #fff;
+    }
+
+    .main-header .header-top {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--main-color-two);
+    }
+
+    .main-header .header-top .info,
+    .main-header .header-top .social-box {
+        position: relative;
+        padding: 13px 0;
+    }
+
+    .main-header .header-top .info li,
+    .main-header .header-top .social-box li {
+        position: relative;
+        display: inline-block;
+    }
+
+    .main-header .header-top .info li {
+        margin-right: var(--margin-right-20);
+        color: #fff;
+        font-size: var(--font-15);
+    }
+
+    .main-header .header-top .info li a,
+    .main-header .header-top .social-box li a {
+        color: #fff;
+    }
+
+    .main-header .header-top .social-box li {
+        margin-left: 25px;
+    }
+
+    .main-header .header-lower {
+        position: relative;
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, .06);
+    }
+
+    .main-header .logo-box {
+        position: relative;
+        z-index: 10;
+        float: left;
+        padding: 10px 0;
+    }
+
+    .main-header .logo-box .logo img {
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .main-header .header-lower .nav-outer {
+        position: relative;
+        float: right;
+    }
+
+    .main-header .main-menu,
+    .main-header .main-menu .navigation > li {
+        position: relative;
+        float: left;
+    }
+
+    .main-header .main-menu .navbar-collapse {
+        display: block !important;
+        float: left;
+        padding: 0;
+    }
+
+    .main-header .main-menu .navigation {
+        position: relative;
+        margin: 0;
+    }
+
+    .main-header .main-menu .navigation > li {
+        margin-right: var(--margin-right-35);
+    }
+
+    .main-header .main-menu .navigation > li > a {
+        position: relative;
+        display: block;
+        padding: 35px 0;
+        color: var(--dark-color);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .main-header .main-menu .navigation > li > ul {
+        position: absolute;
+        width: 15rem;
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        background-color: var(--main-color);
+    }
+
+    .main-header .main-menu .navigation > li.dropdown:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .main-header .nav-outer .mobile-nav-toggler {
+        position: relative;
+        float: right;
+        width: 44px;
+        height: 44px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-size: var(--font-26);
+        line-height: 44px;
+        cursor: pointer;
+    }
+
+    .main-slider-two {
+        position: relative;
+        overflow: hidden;
+        background: var(--main-color-two);
+    }
+
+    .main-slider-two .slide {
+        position: relative;
+        overflow: hidden;
+        background-position: center right;
+        background-size: cover;
+    }
+
+    .main-slider-two .slide::before {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        content: "";
+        background: linear-gradient(to right, #010c3a 0, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .main-slider-two .slide > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .custom-height {
+        min-height: 720px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-slider-two .content-boxed {
+        position: relative;
+        z-index: 10;
+        max-width: 750px;
+    }
+
+    .main-slider-two h1 {
+        margin-bottom: var(--margin-bottom-25);
+        color: #fff;
+        font-size: var(--font-80);
+        line-height: 1.1;
+    }
+
+    .main-slider-two .text {
+        max-width: 600px;
+        margin-bottom: var(--margin-bottom-30);
+        color: #fff;
+        font-size: var(--font-16);
+        line-height: 2;
+    }
+
+    .btn-style-two {
+        position: relative;
+        overflow: hidden;
+        display: inline-grid;
+        padding: 13px 40px;
+        border-radius: 3px;
+        color: #fff;
+        background-color: var(--main-color);
+        font-size: var(--font-16);
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .hero-section-mobile {
+        min-height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        text-align: center;
+        background: #fff;
+    }
+
+    .hero-section-mobile .heading {
+        margin-bottom: 1rem;
+        color: #111;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .hero-section-mobile .subtitle {
+        margin-bottom: .5rem;
+        color: #555;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .hero-section-mobile .description {
+        margin-top: 1rem;
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 1023px) {
+        .main-header .nav-outer .mobile-nav-toggler {
+            display: inline-flex;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .pull-left,
+        .pull-right,
+        .main-header .logo-box,
+        .main-header .header-lower .nav-outer {
+            float: none;
+        }
+
+        .main-header .main-menu {
+            display: none;
+        }
+
+        .main-header .logo-box {
+            padding-bottom: var(--padding-bottom-15);
+        }
+
+        .main-slider-two,
+        .main-slider-two .slide {
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+        }
+
+        .custom-height {
+            min-height: 220px;
+        }
+
+        .main-slider-two h1 {
+            font-size: 15px;
+        }
+
+        .main-slider-two .text {
+            max-height: 300px;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .btn-style-two {
+            padding: 7px 10px;
+        }
+    }
+</style>
 
 @php
-    $criticalStyles = [
-        'global.css',
-        'header.css',
-        'footer.css',
-        'font-awesome.css',
-        'flaticon.css',
-        'linearicons.css',
+    $preloadedStyles = [
+        ['href' => 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css', 'crossorigin' => true],
+        ['href' => v('css/style.css')],
+        ['href' => v('css/global.css')],
+        ['href' => v('css/header.css')],
+        ['href' => v('css/responsive.css')],
+        ['href' => v('css/fonts.css')],
     ];
 
     $deferredStyles = [
-        'animate.css',
-        'owl.css',
-        'swiper.css',
-        'jquery-ui.css',
-        'custom-animate.css',
-        'jquery.fancybox.min.css',
-        'jquery.mCustomScrollbar.min.css',
+        ['href' => v('css/discount-wheel.css')],
+        ['href' => v('css/footer.css')],
+        ['href' => v('css/font-awesome.css')],
+        ['href' => v('css/flaticon.css')],
+        ['href' => v('css/linearicons.css')],
+        ['href' => v('css/voice-assistant.css')],
+        ['href' => v('css/accessibility-fixes.css')],
+        ['href' => v('css/animate.css')],
+        ['href' => v('css/owl.css')],
+        ['href' => v('css/swiper.css')],
+        ['href' => v('css/jquery-ui.css')],
+        ['href' => v('css/custom-animate.css')],
+        ['href' => v('css/jquery.fancybox.min.css')],
+        ['href' => v('css/jquery.mCustomScrollbar.min.css')],
     ];
 
     if ($needsBlockingCheckoutCss) {
-        $criticalStyles[] = 'checkout.css';
+        $preloadedStyles[] = ['href' => v('css/checkout.css')];
     } else {
-        $deferredStyles[] = 'checkout.css';
+        $deferredStyles[] = ['href' => v('css/checkout.css')];
+    }
+
+    if ($needsPhoneAssets) {
+        $deferredStyles[] = ['href' => 'https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css'];
     }
 @endphp
 
-@foreach ($criticalStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
+@foreach ($preloadedStyles as $style)
+    <link rel="preload" href="{{ $style['href'] }}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" @if (!empty($style['crossorigin'])) crossorigin @endif>
 @endforeach
 @foreach ($deferredStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ $style['href'] }}" media="print" onload="this.onload=null;this.media='all'">
 @endforeach
 
-<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="all">
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
@@ -274,23 +744,10 @@
 <link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
 
-@if ($needsPhoneAssets)
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
-@endif
-
 <noscript>
-    <link rel="stylesheet" href="{{ v('css/style.css') }}">
-    <link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}">
-    @foreach (array_merge($criticalStyles, $deferredStyles) as $style)
-        <link rel="stylesheet" href="{{ v("css/$style") }}">
+    @foreach (array_merge($preloadedStyles, $deferredStyles) as $style)
+        <link rel="stylesheet" href="{{ $style['href'] }}" @if (!empty($style['crossorigin'])) crossorigin @endif>
     @endforeach
-    <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
-    <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}">
-    <link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}">
-    @if ($needsPhoneAssets)
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
-    @endif
 </noscript>
 
 @if (!empty($fbPixels))
