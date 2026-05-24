@@ -166,16 +166,16 @@
         </section>
     @endif
 
-    {{-- @include('includes._we-provide-unlimited')
+    @include('includes._we-provide-unlimited')
 
-    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel]) --}}
+    @include('includes._services', ['useNativeCarousel' => $useNativeHomeCarousel])
 
     @unless ($isMobile)
         @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel])
         @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
     @endunless
 
-    {{-- @include('includes._check-trail') --}}
+    @include('includes._check-trail')
 @stop
 
 @section('jsonld')
