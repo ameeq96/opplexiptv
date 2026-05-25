@@ -69,7 +69,9 @@ class UiData
                 $results    = $payload['results'] ?? [];
                 $totalPages = max(1, (int) ($payload['total_pages'] ?? 1));
             } else {
-                $results    = $this->fetchTrendingMovies($routeName === 'movies' ? $page : 1);
+                $results    = $routeName === 'home'
+                    ? $this->fetchLatestHeroMovies()
+                    : $this->fetchTrendingMovies($page);
                 $totalPages = $routeName === 'movies' ? 10 : 1;
             }
 
@@ -214,6 +216,57 @@ class UiData
             try {
                 $payload = $this->tmdb->trending('all', 'day', $page);
                 return Arr::get($payload, 'results', []) ?: [];
+            } catch (\Throwable) {
+                return [];
+            }
+        });
+    }
+
+    /**
+     * Latest released movies and TV shows for the home hero.
+     *
+     * @return array<int,array<string,mixed>>
+     */
+    private function fetchLatestHeroMovies(): array
+    {
+        if (!$this->tmdb->configured()) {
+            return [];
+        }
+
+        $locale = app()->getLocale();
+        $today = now()->toDateString();
+        $cacheKey = "ui:tmdb:v3:latest-hero:{$locale}:{$today}";
+
+        return Cache::remember($cacheKey, now()->addMinutes(30), function () use ($today): array {
+            try {
+                $moviePayload = $this->tmdb->discoverMovies(1, [
+                    'primary_release_date.lte' => $today,
+                ]);
+                $tvPayload = $this->tmdb->discoverTv(1, [
+                    'first_air_date.lte' => $today,
+                ]);
+
+                $movies = collect(Arr::get($moviePayload, 'results', []))
+                    ->map(function (array $movie) {
+                        $movie['media_type'] = 'movie';
+                        $movie['latest_sort_date'] = $movie['release_date'] ?? '';
+                        return $movie;
+                    });
+
+                $shows = collect(Arr::get($tvPayload, 'results', []))
+                    ->map(function (array $show) {
+                        $show['media_type'] = 'tv';
+                        $show['latest_sort_date'] = $show['first_air_date'] ?? '';
+                        return $show;
+                    });
+
+                return $movies
+                    ->merge($shows)
+                    ->filter(static fn (array $item) => !empty($item['backdrop_path']) && !empty($item['latest_sort_date']))
+                    ->sortByDesc('latest_sort_date')
+                    ->take(20)
+                    ->values()
+                    ->all();
             } catch (\Throwable) {
                 return [];
             }

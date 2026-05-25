@@ -122,6 +122,23 @@
 </style>
 @if ($routeName === 'home')
     <style>
+        .main-slider-two {
+            background-color: #010c3a;
+        }
+
+        .main-slider-two .slide,
+        .native-home-hero .native-carousel__slide {
+            background-color: #010c3a;
+            background-position: center right !important;
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+        }
+
+        .main-slider-two .slide img {
+            object-fit: contain !important;
+            object-position: center right;
+        }
+
         @media (max-width: 767px) {
             .hero-section-mobile {
                 min-height: 320px !important;
