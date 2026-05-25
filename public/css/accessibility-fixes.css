@@ -47,23 +47,6 @@
     margin-top: 18px;
 }
 
-.main-slider-two {
-    background-color: #010c3a;
-}
-
-.main-slider-two .slide,
-.native-home-hero .native-carousel__slide {
-    background-color: #010c3a;
-    background-position: center right !important;
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
-}
-
-.main-slider-two .slide img {
-    object-fit: contain !important;
-    object-position: center right;
-}
-
 .native-carousel--testimonials .testimonial-card .text,
 .native-carousel--testimonials .testimonial-card:hover .text,
 .testimonial-carousel .testimonial-card .text,

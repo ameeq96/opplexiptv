@@ -15,24 +15,12 @@ class TmdbService
     }
     private function key(): string
     {
-        return trim((string) env('TMDB_API_KEY', ''));
+        return (string) env('TMDB_API_KEY', '');
     }
 
     public function configured(): bool
     {
-        $key = strtolower($this->key());
-
-        return $key !== '' && !in_array($key, [
-            'your_tmdb_key_here',
-            'your_tmdb_api_key',
-            'tmdb_api_key',
-            'changeme',
-        ], true);
-    }
-
-    private function redact(string $message): string
-    {
-        return preg_replace('/api_key=([^&\s]+)/', 'api_key=[redacted]', $message) ?? $message;
+        return $this->key() !== '';
     }
 
     private function get(string $path, array $params = [], int $ttlMinutes = 60): array
@@ -68,10 +56,10 @@ class TmdbService
                 Log::warning('TMDB non-success', ['url' => $url, 'status' => $resp->status()]);
                 return Cache::get($staleKey, []);
             } catch (ConnectionException $e) {
-                Log::warning('TMDB connection error', ['url' => $url, 'e' => $this->redact($e->getMessage())]);
+                Log::warning('TMDB connection error', ['url' => $url, 'e' => $e->getMessage()]);
                 return Cache::get($staleKey, []);
             } catch (\Throwable $e) {
-                Log::error('TMDB unexpected error', ['url' => $url, 'e' => $this->redact($e->getMessage())]);
+                Log::error('TMDB unexpected error', ['url' => $url, 'e' => $e->getMessage()]);
                 return Cache::get($staleKey, []);
             }
         });
@@ -80,26 +68,6 @@ class TmdbService
     public function trending(string $media, string $window, int $page = 1): array
     {
         return $this->get("/trending/{$media}/{$window}", ['page' => $page]);
-    }
-
-    public function discoverMovies(int $page = 1, array $params = []): array
-    {
-        return $this->get('/discover/movie', array_merge([
-            'page' => $page,
-            'sort_by' => 'primary_release_date.desc',
-            'include_adult' => 'false',
-            'include_video' => 'false',
-        ], $params), 30);
-    }
-
-    public function discoverTv(int $page = 1, array $params = []): array
-    {
-        return $this->get('/discover/tv', array_merge([
-            'page' => $page,
-            'sort_by' => 'first_air_date.desc',
-            'include_adult' => 'false',
-            'include_null_first_air_dates' => 'false',
-        ], $params), 30);
     }
 
     public function searchMulti(string $query, int $page = 1, int $ttl = 60): array
