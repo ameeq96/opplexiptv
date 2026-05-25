@@ -32,7 +32,16 @@
 
     @yield('script')
 
-    <script src="{{ v('js/voice-assistant.js') }}" defer></script>
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                var s = document.createElement('script');
+                s.src = "{{ v('js/voice-assistant.js') }}";
+                s.defer = true;
+                document.body.appendChild(s);
+            }, 4000);
+        });
+    </script>
 </body>
 
 </html>

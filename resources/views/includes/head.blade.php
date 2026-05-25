@@ -92,12 +92,12 @@
     ];
 
     $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
-    $firstHeroImage = null;
-    if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null)) {
-        $firstHeroImage = $displayMovies[0]['webp_image_url'];
-    }
-    $preconnectTmdb = $firstHeroImage && str_starts_with((string) $firstHeroImage, 'https://image.tmdb.org/');
 @endphp
+
+@if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null))
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+    <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
+@endif
 
 <title>{{ $metaTitle }}</title>
 <meta name="description" content="{{ $metaDescription }}">
@@ -208,17 +208,11 @@
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-@if ($preconnectTmdb)
-    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
-@endif
 @if ($pageTitleLcp)
     <link rel="preload" as="image" href="{{ asset($pageTitleLcp[0]) }}" type="image/webp"
         media="(min-width: 768px)" fetchpriority="high">
     <link rel="preload" as="image" href="{{ asset($pageTitleLcp[1]) }}" type="image/webp"
         media="(max-width: 767px)" fetchpriority="high">
-@endif
-@if ($firstHeroImage)
-    <link rel="preload" as="image" href="{{ $firstHeroImage }}" fetchpriority="high">
 @endif
 
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
@@ -226,7 +220,6 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
 <link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}" media="all">
 
 @php
     $criticalStyles = [
@@ -239,6 +232,8 @@
     ];
 
     $deferredStyles = [
+        'discount-wheel.css',
+        'voice-assistant.css',
         'animate.css',
         'owl.css',
         'swiper.css',
@@ -264,7 +259,6 @@
 
 <link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}" media="all">
 <link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="all">
 @stack('styles')
 
@@ -280,13 +274,11 @@
 
 <noscript>
     <link rel="stylesheet" href="{{ v('css/style.css') }}">
-    <link rel="stylesheet" href="{{ v('css/discount-wheel.css') }}">
     @foreach (array_merge($criticalStyles, $deferredStyles) as $style)
         <link rel="stylesheet" href="{{ v("css/$style") }}">
     @endforeach
     <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ v('css/voice-assistant.css') }}">
     <link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}">
     @if ($needsPhoneAssets)
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">

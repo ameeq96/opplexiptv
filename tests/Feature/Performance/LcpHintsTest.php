@@ -2,8 +2,10 @@
 
 namespace Tests\Feature\Performance;
 
+use App\Services\ImageService;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Queue;
 use Tests\TestCase;
 
 class LcpHintsTest extends TestCase
@@ -60,6 +62,8 @@ class LcpHintsTest extends TestCase
         $this->assertStringContainsString('rel="preconnect" href="https://image.tmdb.org"', $html);
         $this->assertStringContainsString('href="https://image.tmdb.org/t/p/w780/speed-check.jpg"', $html);
         $this->assertStringContainsString('fetchpriority="high"', $html);
+        $this->assertSame(1, substr_count($html, 'href="https://image.tmdb.org/t/p/w780/speed-check.jpg"'));
+        $this->assertSame(1, substr_count($html, 'href="https://image.tmdb.org"'));
         $this->assertStringNotContainsString('intl-tel-input@19.5.7', $html);
     }
 
@@ -97,6 +101,150 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('data-skeleton-section', $mobileHtml.$desktopHtml);
         $this->assertStringNotContainsString('section-skeleton__overlay', $mobileHtml.$desktopHtml);
         $this->assertStringNotContainsString('skeleton-section', $mobileHtml.$desktopHtml);
+    }
+
+    public function test_first_desktop_hero_image_keeps_priority_attributes_in_both_sliders(): void
+    {
+        foreach ([true, false] as $useNativeCarousel) {
+            $html = view('includes._slider', [
+                'isMobile' => false,
+                'isRtl' => false,
+                'useNativeCarousel' => $useNativeCarousel,
+                'movies' => collect([[
+                    'webp_image_url' => 'https://image.tmdb.org/t/p/w780/speed-check.jpg',
+                    'safe_title' => 'Speed Check',
+                    'safe_overview' => 'Performance test slide',
+                ]]),
+            ])->render();
+
+            $this->assertMatchesRegularExpression(
+                '/<img[^>]+width="960"[^>]+height="540"[^>]+loading="eager"[^>]+decoding="async"[^>]+fetchpriority="high"[^>]*>/s',
+                $html
+            );
+            $this->assertStringNotContainsString('loading="lazy"', $html);
+        }
+    }
+
+    public function test_non_critical_styles_are_deferred_with_noscript_fallbacks(): void
+    {
+        $html = $this->renderHeadForRoute('home');
+
+        foreach ([
+            'discount-wheel.css',
+            'voice-assistant.css',
+            'animate.css',
+            'owl.css',
+            'swiper.css',
+            'jquery-ui.css',
+            'custom-animate.css',
+            'jquery.fancybox.min.css',
+            'jquery.mCustomScrollbar.min.css',
+        ] as $style) {
+            $quotedStyle = preg_quote($style, '/');
+
+            $this->assertMatchesRegularExpression(
+                '/<link rel="stylesheet" href="[^"]*\/css\/'.$quotedStyle.'[^"]*" media="print" onload="this\.media=\'all\'">/',
+                $html
+            );
+            $this->assertMatchesRegularExpression(
+                '/<noscript>.*<link rel="stylesheet" href="[^"]*\/css\/'.$quotedStyle.'[^"]*">.*<\/noscript>/s',
+                $html
+            );
+        }
+
+        foreach (['style.css', 'global.css', 'header.css', 'responsive.css', 'fonts.css'] as $style) {
+            $quotedStyle = preg_quote($style, '/');
+
+            $this->assertMatchesRegularExpression(
+                '/<link rel="stylesheet" href="[^"]*\/css\/'.$quotedStyle.'[^"]*" media="all">/',
+                $html
+            );
+        }
+    }
+
+    public function test_voice_assistant_and_discount_wheel_scripts_are_delayed(): void
+    {
+        $layout = file_get_contents(resource_path('views/layouts/default.blade.php'));
+        $footer = file_get_contents(resource_path('views/includes/footer.blade.php'));
+
+        $this->assertStringContainsString("s.src = \"{{ v('js/voice-assistant.js') }}\";", $layout);
+        $this->assertStringContainsString('}, 4000);', $layout);
+        $this->assertStringNotContainsString('<script src="{{ v(\'js/voice-assistant.js\') }}" defer></script>', $layout);
+
+        $this->assertStringContainsString("s.src = \"{{ v('js/discount-wheel.js') }}\";", $footer);
+        $this->assertStringContainsString('}, 5000);', $footer);
+        $this->assertStringNotContainsString('<script src="{{ v(\'js/discount-wheel.js\') }}" defer></script>', $footer);
+    }
+
+    public function test_below_fold_home_images_use_lazy_async_decoding(): void
+    {
+        $unlimited = view('includes._we-provide-unlimited', [
+            'isMobile' => false,
+            'isRtl' => false,
+            'features' => [],
+        ])->render();
+        $services = view('includes._services', [
+            'isRtl' => false,
+            'useNativeCarousel' => true,
+            'serviceCards' => [[
+                'title' => 'Sports',
+                'description' => 'Live sports',
+                'link' => route('packages'),
+                'icon' => null,
+            ]],
+        ])->render();
+        $channels = view('includes._channels-carousel', [
+            'logos' => ['images/resource/5.webp'],
+            'useNativeCarousel' => true,
+        ])->render();
+        $testimonials = view('includes._testimonials', [
+            'testimonials' => [[
+                'text' => 'Great service',
+                'author_name' => 'Customer',
+                'image' => 'images/placeholder.webp',
+            ]],
+            'useNativeCarousel' => true,
+        ])->render();
+
+        foreach ([$unlimited, $services, $channels, $testimonials] as $html) {
+            $this->assertStringContainsString('loading="lazy" decoding="async"', $html);
+        }
+
+        $footer = $this->renderFooterForRoute('home');
+        $this->assertStringContainsString('width="250" height="65" loading="lazy" decoding="async"', $footer);
+    }
+
+    public function test_image_service_returns_generated_webp_when_it_already_exists(): void
+    {
+        Queue::fake();
+
+        $imageUrl = 'https://image.tmdb.org/t/p/w780/existing-generated.jpg';
+        $width = 960;
+        $height = 540;
+        $quality = 70;
+        $webpPath = 'webp_images/' . md5($imageUrl . $width . $height . $quality) . '.webp';
+        $fullPath = public_path($webpPath);
+        $dir = dirname($fullPath);
+        $createdDir = ! is_dir($dir);
+
+        if ($createdDir) {
+            mkdir($dir, 0755, true);
+        }
+
+        file_put_contents($fullPath, 'webp');
+
+        try {
+            $url = app(ImageService::class)->toWebp($imageUrl, $width, $height, $quality);
+
+            $this->assertSame(asset($webpPath), $url);
+            Queue::assertNothingPushed();
+        } finally {
+            @unlink($fullPath);
+
+            if ($createdDir) {
+                @rmdir($dir);
+            }
+        }
     }
 
     public function test_views_footer_and_css_do_not_output_skeleton_loader_hooks(): void

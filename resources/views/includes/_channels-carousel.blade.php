@@ -26,7 +26,7 @@
                                 <div class="channel-showcase__card" role="group" aria-label="Client logo: {{ $altText }}">
                                     <div class="image-box">
                                         <div class="wrapper-circle">
-                                            <img src="{{ asset($logoPath) }}" alt="{{ $altText }}" width="100" height="100" loading="lazy" />
+                                            <img src="{{ asset($logoPath) }}" alt="{{ $altText }}" width="100" height="100" loading="lazy" decoding="async" />
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                         <div class="channel-showcase__card">
                             <div class="image-box">
                             <div class="wrapper-circle">
-                                <img src="{{ asset($logoPath) }}" alt="{{ $altText }}" width="100" height="100" loading="lazy" />
+                                <img src="{{ asset($logoPath) }}" alt="{{ $altText }}" width="100" height="100" loading="lazy" decoding="async" />
                             </div>
                             </div>
                         </div>

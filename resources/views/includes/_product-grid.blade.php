@@ -20,7 +20,7 @@
       @endphp
       <article class="product-card" aria-label="{{ $displayName }}">
         <a href="{{ $link }}" target="_blank" rel="nofollow sponsored noopener" title="{{ $displayName }}" style="display:block; position:relative;">
-          <img class="product-card__image" src="{{ asset('images/shop/' . $image) }}" alt="{{ $altText }}" loading="lazy">
+          <img class="product-card__image" src="{{ asset('images/shop/' . $image) }}" alt="{{ $altText }}" loading="lazy" decoding="async">
           <span class="product-card__badge" aria-hidden="true">Amazon</span>
           <span class="product-card__cta" aria-hidden="true">View</span>
         </a>

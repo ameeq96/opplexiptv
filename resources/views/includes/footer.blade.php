@@ -40,7 +40,7 @@
             <div class="fx-brand">
                 <img class="fx-brand__logo"
                      src="{{ asset('images/opplexiptvlogo.webp') }}"
-                     alt="Opplex IPTV" width="250" height="65" loading="lazy">
+                     alt="Opplex IPTV" width="250" height="65" loading="lazy" decoding="async">
                 <p class="fx-brand__tag">
                     {{ $cryptoNote ?? ($isRtl ? 'ہم Cryptomus کے ذریعے کرپٹو ادائیگی قبول کرتے ہیں۔' : 'We accept crypto payments via Cryptomus.') }}
                 </p>
@@ -188,7 +188,16 @@
 
 <!-- Local scripts last -->
 <script src="{{ v('js/nav-tool.js') }}" defer></script>
-<script src="{{ v('js/discount-wheel.js') }}" defer></script>
+<script>
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var s = document.createElement('script');
+            s.src = "{{ v('js/discount-wheel.js') }}";
+            s.defer = true;
+            document.body.appendChild(s);
+        }, 5000);
+    });
+</script>
 <script src="{{ v('js/script.js') }}" defer></script>
 
 <script>

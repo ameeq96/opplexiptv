@@ -72,7 +72,7 @@
                             @unless ($isMobile ?? false) style="background-image:url('{{ asset('images/background/pattern-4.webp') }}');" @endunless>
                             <ul class="icon-list">
                                 <li><span class="icon"><img src="{{ asset('images/icons/service-1.svg') }}"
-                                            alt="IPTV" width="48" height="48"></span></li>
+                                            alt="IPTV" width="48" height="48" loading="lazy" decoding="async"></span></li>
                             </ul>
                             <h3 class="package-plan-title">{{ $displayTitle }}<span>{!! $package['price'] ?? '' !!}</span></h3>
                         </div>
@@ -102,7 +102,7 @@
                                     <a  rel="noopener"
                                         href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $displayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
-                                            height="32" alt="WhatsApp" loading="lazy" />
+                                            height="32" alt="WhatsApp" loading="lazy" decoding="async" />
                                     </a>
                                 @endif
                             </div>
@@ -140,7 +140,7 @@
                                     @endphp
                                     @if ($primaryResellerIcon)
                                         <li><span class="icon"><img src="{{ asset($primaryResellerIcon) }}" alt="Reseller Icon"
-                                                    width="48" height="48"></span></li>
+                                                    width="48" height="48" loading="lazy" decoding="async"></span></li>
                                     @endif
                                 </ul>
                                 <h3 class="package-plan-title">{{ $resellerDisplayTitle }}<span>{!! $plan['price'] !!}</span></h3>
@@ -168,7 +168,7 @@
                                     <a  rel="noopener"
                                         href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $resellerDisplayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}"
-                                            width="32" height="32" alt="WhatsApp" loading="lazy" />
+                                            width="32" height="32" alt="WhatsApp" loading="lazy" decoding="async" />
                                     </a>
                                 </div>
                             </div>

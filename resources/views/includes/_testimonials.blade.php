@@ -31,7 +31,7 @@
                                                 <div class="author-image">
                                                     <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
                                                         alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                                        width="150" height="150" loading="lazy" />
+                                                        width="150" height="150" loading="lazy" decoding="async" />
                                                 </div>
                                                 <div class="testimonial-card__author-copy">
                                                     <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
@@ -60,7 +60,7 @@
                                     <div class="author-image">
                                         <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
                                              alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                             width="150" height="150" loading="lazy" />
+                                             width="150" height="150" loading="lazy" decoding="async" />
                                     </div>
                                     <div class="testimonial-card__author-copy">
                                         <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>

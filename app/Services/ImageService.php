@@ -29,11 +29,12 @@ class ImageService
 
     public function toWebp(string $imageUrl, int $width, int $height, int $quality = 75): string
     {
-        $webpDir  = public_path('webp_images');
         $webpPath = 'webp_images/' . md5($imageUrl . $width . $height . $quality) . '.webp';
         $fullPath = public_path($webpPath);
 
-        if (file_exists($fullPath)) return asset($webpPath);
+        if (is_file($fullPath)) {
+            return asset($webpPath);
+        }
 
         GenerateWebpImage::dispatch($imageUrl, $width, $height, $quality, $webpPath);
 
