@@ -73,8 +73,20 @@ class UiData
                 $totalPages = $routeName === 'movies' ? 10 : 1;
             }
 
-            $rawLimited     = \array_slice($results, 0, 10);
+            $rawLimited     = \array_slice($results, 0, $routeName === 'home' ? 20 : 10);
             $prepared       = $this->prepareMovies($rawLimited, $isMobile);
+
+            if ($routeName === 'home') {
+                $prepared = $prepared
+                    ->filter(static fn (array $movie) => !empty($movie['webp_image_url']))
+                    ->take(10)
+                    ->values();
+
+                if ($prepared->isEmpty()) {
+                    $prepared = $this->fallbackHeroMovies();
+                }
+            }
+
             $movies         = $prepared->values();
             $displayMovies  = $isMobile ? $movies->take(3)->values() : $movies;
 
@@ -191,8 +203,12 @@ class UiData
      */
     private function fetchTrendingMovies(int $page = 1): array
     {
+        if (!$this->tmdb->configured()) {
+            return [];
+        }
+
         $locale = app()->getLocale();
-        $cacheKey = "ui:tmdb:trending:all:day:{$locale}:p{$page}";
+        $cacheKey = "ui:tmdb:v2:trending:all:day:{$locale}:p{$page}";
 
         return Cache::remember($cacheKey, now()->addMinutes(30), function () use ($page): array {
             try {
@@ -206,8 +222,12 @@ class UiData
 
     private function searchTmdb(string $query, int $page = 1): array
     {
+        if (!$this->tmdb->configured()) {
+            return ['results' => [], 'total_pages' => 1];
+        }
+
         $locale = app()->getLocale();
-        $key = "ui:tmdb:search:" . md5($locale . '|' . $query) . ":p{$page}";
+        $key = "ui:tmdb:v2:search:" . md5($locale . '|' . $query) . ":p{$page}";
 
         return Cache::remember($key, now()->addMinutes(10), function () use ($query, $page) {
             try {
@@ -253,6 +273,33 @@ class UiData
 
             return $m;
         })->values();
+    }
+
+    /**
+     * Local backup so the hero never renders empty when TMDB is not configured
+     * or the API is temporarily unavailable.
+     *
+     * @return Collection<int,array<string,string>>
+     */
+    private function fallbackHeroMovies(): Collection
+    {
+        return collect([
+            [
+                'safe_title' => 'Fast X',
+                'safe_overview' => 'Stream premium movies, live channels, sports, and entertainment in HD/4K with Opplex IPTV.',
+                'webp_image_url' => asset('images/resource/fastx.webp'),
+            ],
+            [
+                'safe_title' => 'Squid Game',
+                'safe_overview' => 'Enjoy popular series and global entertainment with smooth IPTV streaming on every device.',
+                'webp_image_url' => asset('images/resource/squidgame.webp'),
+            ],
+            [
+                'safe_title' => 'Extraction 2',
+                'safe_overview' => 'Watch action, sports, news, and family content through reliable IPTV plans.',
+                'webp_image_url' => asset('images/resource/extraction2.webp'),
+            ],
+        ]);
     }
 
     /**

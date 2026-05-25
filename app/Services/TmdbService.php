@@ -11,15 +11,24 @@ class TmdbService
 
     private function base(): string
     {
-        return rtrim(env('TMDB_BASE_URL', ''), '/');
+        return rtrim(env('TMDB_BASE_URL', 'https://api.themoviedb.org/3'), '/');
     }
     private function key(): string
     {
         return (string) env('TMDB_API_KEY', '');
     }
 
+    public function configured(): bool
+    {
+        return $this->key() !== '';
+    }
+
     private function get(string $path, array $params = [], int $ttlMinutes = 60): array
     {
+        if (!$this->configured()) {
+            return [];
+        }
+
         $url = $this->base() . $path;
         $all = array_filter([
             'api_key'  => $this->key(),

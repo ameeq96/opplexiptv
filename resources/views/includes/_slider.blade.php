@@ -24,6 +24,9 @@
 @else
     @php
         $locale = app()->getLocale();
+        $sliderMovies = collect($movies ?? [])
+            ->filter(static fn ($movie) => !empty($movie['webp_image_url']))
+            ->values();
     @endphp
 
     @if (!empty($useNativeCarousel))
@@ -36,14 +39,18 @@
                 data-rtl="{{ $isRtl ? 'true' : 'false' }}">
                 <div class="native-carousel__viewport">
                     <div class="native-carousel__track">
-                        @foreach ($movies as $index => $movie)
+                        @foreach ($sliderMovies as $index => $movie)
+                            @php
+                                $imageUrl = $movie['webp_image_url'];
+                            @endphp
                             <div class="native-carousel__slide slide {{ $index !== 0 ? 'lazy-background' : '' }} {{ $index === 0 ? 'is-active' : '' }}"
                                 data-native-slide
+                                data-bg="{{ $imageUrl }}"
                                 aria-hidden="{{ $index === 0 ? 'false' : 'true' }}"
-                                @if ($index !== 0) data-bg="{{ $movie['webp_image_url'] }}" @endif>
+                                @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
 
                                 @if ($index === 0)
-                                    <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
+                                    <img src="{{ $imageUrl }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
                                         aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
                                         width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
                                 @endif
@@ -114,12 +121,16 @@
     @else
         <section class="main-slider-two" aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
             <div class="main-slider-carousel owl-carousel owl-theme" data-rtl="{{ $isRtl ? 'true' : 'false' }}">
-                @foreach ($movies as $index => $movie)
+                @foreach ($sliderMovies as $index => $movie)
+                    @php
+                        $imageUrl = $movie['webp_image_url'];
+                    @endphp
                     <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"
-                        @if ($index !== 0) data-bg="{{ $movie['webp_image_url'] }}" @endif>
+                        data-bg="{{ $imageUrl }}"
+                        @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
 
                         @if ($index === 0)
-                            <img src="{{ $movie['webp_image_url'] }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
+                            <img src="{{ $imageUrl }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
                                 aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
                                 width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
                         @endif

@@ -72,6 +72,36 @@ class HomeController extends Controller
         return view('pages.movies');
     }
 
+    public function getTrending(Request $request)
+    {
+        $page = max(1, (int) $request->query('page', 1));
+        $payload = $this->tmdb->trending('all', 'day', $page);
+
+        $movies = collect($payload['results'] ?? [])
+            ->filter(static fn (array $movie) => !empty($movie['backdrop_path']))
+            ->take(10)
+            ->map(function (array $movie) {
+                $imageUrl = $this->images->tmdbImage($movie['backdrop_path'], 'w780');
+
+                return [
+                    'id' => $movie['id'] ?? null,
+                    'media_type' => $movie['media_type'] ?? null,
+                    'safe_title' => $movie['title'] ?? $movie['name'] ?? 'Featured IPTV Content',
+                    'safe_overview' => isset($movie['overview'])
+                        ? Str::limit((string) $movie['overview'], 150)
+                        : __('messages.no_overview'),
+                    'webp_image_url' => $this->images->toWebp($imageUrl, 960, 540, 70),
+                ];
+            })
+            ->values();
+
+        return response()->json([
+            'results' => $movies,
+            'page' => (int) ($payload['page'] ?? $page),
+            'total_pages' => (int) ($payload['total_pages'] ?? 1),
+        ]);
+    }
+
     public function packages()
     {
         return view('pages.packages', ['activeIndex' => 1]);
