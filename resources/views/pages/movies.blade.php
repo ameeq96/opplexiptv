@@ -59,7 +59,7 @@
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
                                     <img src="{{ $movie['poster_url'] }}" alt="Poster of {{ $movie['title'] }}"
-                                        loading="lazy" width="300" height="450" />
+                                        loading="lazy" decoding="async" width="300" height="450" />
                                     <div class="overlay-box">
                                         <ul class="post-meta" aria-label="Movie rating">
                                             <li><span class="icon fa fa-star"></span>{{ $movie['vote'] }}</li>
@@ -96,7 +96,7 @@
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
                                     <img src="{{ $series['poster_url'] }}" alt="Poster of {{ $series['title'] }}"
-                                        loading="lazy" width="300" height="450" />
+                                        loading="lazy" decoding="async" width="300" height="450" />
                                     <div class="overlay-box">
                                         <ul class="post-meta" aria-label="Series rating">
                                             <li><span class="icon fa fa-star"></span>{{ $series['vote'] }}</li>
@@ -130,7 +130,7 @@
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
                                     <img src="{{ $cartoon['poster_url'] }}" alt="Poster of {{ $cartoon['title'] }}"
-                                        loading="lazy" width="300" height="450" />
+                                        loading="lazy" decoding="async" width="300" height="450" />
                                     <div class="overlay-box">
                                         <ul class="post-meta" aria-label="Cartoon rating">
                                             <li><span class="icon fa fa-star"></span>{{ $cartoon['vote'] }}</li>

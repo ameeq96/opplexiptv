@@ -25,7 +25,14 @@
     $legalNote = $footerSettings['legal_note'] ?? null;
 
     $routeName = optional(request()->route())->getName();
-    $isLeanAssetRoute = in_array($routeName, ['packages', 'faqs'], true);
+    $targetOptimizedRoutes = ['packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index'];
+    $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
+    $needsMixItUp = !$isTargetOptimizedRoute || $routeName === 'movies';
+    $needsFancybox = !$isTargetOptimizedRoute || $routeName === 'movies';
+    $needsAppear = !$isTargetOptimizedRoute;
+    $needsParallax = !$isTargetOptimizedRoute;
+    $needsParoller = !$isTargetOptimizedRoute;
+    $needsOwlCarousel = !$isTargetOptimizedRoute || in_array($routeName, ['about', 'reseller-panel'], true);
     $needsPhoneAssets = in_array($routeName, ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
 @endphp
 
@@ -172,20 +179,28 @@
 <!-- Scripts: keep order; defer ensures execution after parse (preserves order across tags) -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
-@unless ($isLeanAssetRoute)
+@if ($needsMixItUp)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
-@endunless
+@endif
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
     defer></script>
-@unless ($isLeanAssetRoute)
+@if ($needsFancybox)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
+@endif
+@if ($needsAppear)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" defer></script>
+@endif
+@if ($needsParallax)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
+@endif
+@if ($needsParoller)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js" defer></script>
+@endif
+@if ($needsOwlCarousel)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js" defer></script>
-@endunless
+@endif
 @if ($needsPhoneAssets)
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js" defer></script>

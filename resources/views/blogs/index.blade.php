@@ -73,9 +73,9 @@
                     <div class="blog-featured__media">
                         @if ($featured->cover_image)
                             <img src="{{ asset(Storage::url($featured->cover_image)) }}"
-                                alt="{{ $featuredTranslation?->title }}">
+                                alt="{{ $featuredTranslation?->title }}" loading="lazy" decoding="async">
                         @else
-                            <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $featuredTranslation?->title }}">
+                            <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $featuredTranslation?->title }}" loading="lazy" decoding="async">
                         @endif
                     </div>
                 </div>
@@ -101,10 +101,10 @@
                                 <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                     @if ($blog->cover_image)
                                         <img src="{{ asset(Storage::url($blog->cover_image)) }}"
-                                            alt="{{ $translation?->title }}">
+                                            alt="{{ $translation?->title }}" loading="lazy" decoding="async">
                                     @else
                                         <img src="{{ asset('images/placeholder.webp') }}"
-                                            alt="{{ $translation?->title }}">
+                                            alt="{{ $translation?->title }}" loading="lazy" decoding="async">
                                     @endif
                                 </a>
                                 <div class="blog-card__body">
@@ -138,9 +138,9 @@
                             <a href="{{ $slug ? route('blogs.show', $slug) : '#' }}">
                                 @if ($blog->cover_image)
                                     <img src="{{ asset(Storage::url($blog->cover_image)) }}"
-                                        alt="{{ $translation?->title }}">
+                                        alt="{{ $translation?->title }}" loading="lazy" decoding="async">
                                 @else
-                                    <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $translation?->title }}">
+                                    <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $translation?->title }}" loading="lazy" decoding="async">
                                 @endif
                             </a>
                             <div class="blog-card__body">

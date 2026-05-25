@@ -93,11 +93,17 @@
     ];
 
     $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
+    $pageTitleCriticalRoutes = ['about', 'contact', 'reseller-panel', 'pricing', 'shop', 'blogs.index'];
+    $staticBelowFoldRoutes = ['about', 'reseller-panel', 'pricing'];
+    $leanFontRoutes = array_merge(['packages', 'faqs'], $pageTitleCriticalRoutes, ['movies']);
 @endphp
 
 @if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null))
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
     <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
+@endif
+@if ($routeName === 'movies')
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
 
 <title>{{ $metaTitle }}</title>
@@ -345,6 +351,162 @@
         }
     </style>
 @endif
+@if (in_array($routeName, $pageTitleCriticalRoutes, true))
+    <style>
+        .page-title {
+            position: relative;
+            overflow: hidden;
+            padding: 200px 0;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .page-title:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #010c3a 0, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .page-title .auto-container {
+            position: static;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .page-title h2 {
+            position: relative;
+            color: #fff;
+            padding-bottom: 15px;
+        }
+
+        .page-title .bread-crumb {
+            position: relative;
+        }
+
+        .page-title .bread-crumb li {
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #fff;
+            margin-right: 15px;
+            padding-right: 15px;
+        }
+
+        .page-title .bread-crumb li:before {
+            position: absolute;
+            right: -3px;
+            top: 0;
+            content: "|";
+            font-weight: 400;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .page-title .bread-crumb li:last-child {
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        .page-title .bread-crumb li:last-child:before {
+            display: none;
+        }
+
+        .page-title .bread-crumb li a {
+            font-weight: 500;
+            color: #df0303;
+        }
+
+        .pricing-section.style-two {
+            background-color: #fff;
+            display: block;
+            height: auto;
+        }
+
+        .contact-page-section {
+            position: relative;
+            padding: 110px 0;
+        }
+
+        .contact-page-section .contact-form-box {
+            position: relative;
+            max-width: 920px;
+            width: 100%;
+            margin: 45px auto 0;
+            border-radius: 5px;
+            padding: 60px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+        }
+
+        .shop-section {
+            position: relative;
+        }
+
+        .blogs-wrap {
+            padding: 50px 0 90px;
+        }
+
+        @media (max-width: 767px) {
+            .page-title {
+                padding: 100px 0;
+            }
+        }
+    </style>
+@endif
+@if ($routeName === 'movies')
+    <style>
+        .movie-page-section {
+            position: relative;
+            padding: 110px 0 80px;
+        }
+
+        .movie-page-section .filters {
+            position: relative;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .movie-page-section .feature-block {
+            position: relative;
+            width: 20%;
+            padding: 0 15px;
+        }
+
+        @media (max-width: 1023px) {
+            .movie-page-section .feature-block {
+                width: 33.3333%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .movie-page-section .feature-block {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 479px) {
+            .movie-page-section .feature-block {
+                width: 100%;
+            }
+        }
+    </style>
+@endif
+@if (in_array($routeName, $staticBelowFoldRoutes, true))
+    <style>
+        .services-section-three,
+        .trial-cta,
+        .internet-section-three {
+            content-visibility: auto;
+            contain-intrinsic-size: 800px;
+        }
+    </style>
+@endif
 @if ($routeName === 'home')
     <style>
         @media (max-width: 767px) {
@@ -450,7 +612,7 @@
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
-@if (in_array($routeName, ['packages', 'faqs'], true))
+@if (in_array($routeName, $leanFontRoutes, true))
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
 @else
