@@ -187,18 +187,18 @@
 @endif
 
 <!-- Local scripts last -->
-<script src="{{ v('js/nav-tool.js') }}" defer></script>
 <script>
     window.addEventListener('load', function () {
         setTimeout(function () {
             var s = document.createElement('script');
-            s.src = "{{ v('js/discount-wheel.js') }}";
+            s.src = "{{ \Illuminate\Support\Facades\Vite::asset('resources/js/discount-wheel.js') }}";
+            s.type = 'module';
             s.defer = true;
             document.body.appendChild(s);
         }, 5000);
     });
 </script>
-<script src="{{ v('js/script.js') }}" defer></script>
+@vite('resources/js/site.js')
 
 <script>
     @if ($needsPhoneAssets)

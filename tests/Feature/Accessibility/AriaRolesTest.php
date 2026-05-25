@@ -51,10 +51,10 @@ class AriaRolesTest extends TestCase
 
     public function test_accessibility_fix_styles_are_loaded_and_cover_audit_targets(): void
     {
-        $head = file_get_contents(resource_path('views/includes/head.blade.php'));
+        $criticalCssEntry = file_get_contents(resource_path('css/site-critical.css'));
         $css = file_get_contents(public_path('css/accessibility-fixes.css'));
 
-        $this->assertStringContainsString("v('css/accessibility-fixes.css')", $head);
+        $this->assertStringContainsString('../../public/css/accessibility-fixes.css', $criticalCssEntry);
         $this->assertStringContainsString('.testimonial-card__author-role', $css);
         $this->assertStringContainsString('color: #475569 !important', $css);
         $this->assertStringContainsString('.home-product-action', $css);

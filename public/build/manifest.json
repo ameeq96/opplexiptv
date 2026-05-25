@@ -1,14 +1,173 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-l0sNRNKZ.js",
-    "name": "app",
-    "src": "resources/css/app.css",
+  "public/fonts/Linearicons-Free.eot": {
+    "file": "assets/Linearicons-Free-oZKath84.eot",
+    "src": "public/fonts/Linearicons-Free.eot"
+  },
+  "public/fonts/Linearicons-Free.svg": {
+    "file": "assets/Linearicons-Free-PF4LO5wD.svg",
+    "src": "public/fonts/Linearicons-Free.svg"
+  },
+  "public/fonts/Linearicons-Free.ttf": {
+    "file": "assets/Linearicons-Free-W-LatyLF.ttf",
+    "src": "public/fonts/Linearicons-Free.ttf"
+  },
+  "public/fonts/Linearicons-Free.woff": {
+    "file": "assets/Linearicons-Free-Bc5Qqeqv.woff",
+    "src": "public/fonts/Linearicons-Free.woff"
+  },
+  "public/fonts/Linearicons-Free.woff2": {
+    "file": "assets/Linearicons-Free-wAKUI212.woff2",
+    "src": "public/fonts/Linearicons-Free.woff2"
+  },
+  "public/fonts/flaticon.eot": {
+    "file": "assets/flaticon-BHZdvwHI.eot",
+    "src": "public/fonts/flaticon.eot"
+  },
+  "public/fonts/flaticon.svg": {
+    "file": "assets/flaticon-BpJNRUzN.svg",
+    "src": "public/fonts/flaticon.svg"
+  },
+  "public/fonts/flaticon.ttf": {
+    "file": "assets/flaticon-eUAqf4Cp.ttf",
+    "src": "public/fonts/flaticon.ttf"
+  },
+  "public/fonts/flaticon.woff": {
+    "file": "assets/flaticon-D6qCkdV0.woff",
+    "src": "public/fonts/flaticon.woff"
+  },
+  "public/fonts/fontawesome-webfont.eot": {
+    "file": "assets/fontawesome-webfont-C7hRAymh.eot",
+    "src": "public/fonts/fontawesome-webfont.eot"
+  },
+  "public/fonts/fontawesome-webfont.svg": {
+    "file": "assets/fontawesome-webfont-BKBKvXmA.svg",
+    "src": "public/fonts/fontawesome-webfont.svg"
+  },
+  "public/fonts/fontawesome-webfont.ttf": {
+    "file": "assets/fontawesome-webfont-DYfWyl7r.ttf",
+    "src": "public/fonts/fontawesome-webfont.ttf"
+  },
+  "public/fonts/fontawesome-webfont.woff": {
+    "file": "assets/fontawesome-webfont-D1RX9NVh.woff",
+    "src": "public/fonts/fontawesome-webfont.woff"
+  },
+  "public/fonts/fontawesome-webfont.woff2": {
+    "file": "assets/fontawesome-webfont-BBOCxDGX.woff2",
+    "src": "public/fonts/fontawesome-webfont.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-100.woff2": {
+    "file": "assets/poppins-v21-latin-100-CY-M_i9k.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-100.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-300.woff2": {
+    "file": "assets/poppins-v21-latin-300-Dku2WoCh.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-300.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-500.woff2": {
+    "file": "assets/poppins-v21-latin-500-C8OXljZJ.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-500.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-600.woff2": {
+    "file": "assets/poppins-v21-latin-600-zEkxB9Mr.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-600.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-700.woff2": {
+    "file": "assets/poppins-v21-latin-700-Qrb0O0WB.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-700.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-800.woff2": {
+    "file": "assets/poppins-v21-latin-800-Bd8-pIP1.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-800.woff2"
+  },
+  "public/fonts/poppins/poppins-v21-latin-900.woff2": {
+    "file": "assets/poppins-v21-latin-900-BmL1zqjw.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-900.woff2"
+  },
+  "public/images/cross-out.webp": {
+    "file": "assets/cross-out-CIJBgXqa.webp",
+    "src": "public/images/cross-out.webp"
+  },
+  "public/images/icons/circle.webp": {
+    "file": "assets/circle-D9jSc18P.webp",
+    "src": "public/images/icons/circle.webp"
+  },
+  "public/images/icons/icon-select-2.webp": {
+    "file": "assets/icon-select-2-BHe_zOfF.webp",
+    "src": "public/images/icons/icon-select-2.webp"
+  },
+  "public/images/icons/icon-select.webp": {
+    "file": "assets/icon-select-Dhc7uOZv.webp",
+    "src": "public/images/icons/icon-select.webp"
+  },
+  "public/images/icons/preloader.svg": {
+    "file": "assets/preloader-DLuGRUgt.svg",
+    "src": "public/images/icons/preloader.svg"
+  },
+  "public/images/icons/team-icon.webp": {
+    "file": "assets/team-icon-BWthKmUB.webp",
+    "src": "public/images/icons/team-icon.webp"
+  },
+  "public/images/icons/waves-shape.webp": {
+    "file": "assets/waves-shape-yXIwdw8p.webp",
+    "src": "public/images/icons/waves-shape.webp"
+  },
+  "public/images/main-slider/pattern-1.webp": {
+    "file": "assets/pattern-1-BdD9AgC7.webp",
+    "src": "public/images/main-slider/pattern-1.webp"
+  },
+  "public/images/resource/facility-1.webp": {
+    "file": "assets/facility-1-gFEzz6ZR.webp",
+    "src": "public/images/resource/facility-1.webp"
+  },
+  "public/images/resource/service-border-layer.webp": {
+    "file": "assets/service-border-layer-CE_P-PXI.webp",
+    "src": "public/images/resource/service-border-layer.webp"
+  },
+  "public/images/resource/service-pattern-layer.webp": {
+    "file": "assets/service-pattern-layer-CILS_VHF.webp",
+    "src": "public/images/resource/service-pattern-layer.webp"
+  },
+  "resources/css/admin.css": {
+    "file": "assets/admin-CHCIwnxE.css",
+    "src": "resources/css/admin.css",
     "isEntry": true
   },
-  "resources/js/app.js": {
-    "file": "assets/app-eMHK6VFw.js",
-    "name": "app",
-    "src": "resources/js/app.js",
+  "resources/css/blogs.css": {
+    "file": "assets/blogs-Dnxtuz1P.css",
+    "src": "resources/css/blogs.css",
+    "isEntry": true
+  },
+  "resources/css/checkout.css": {
+    "file": "assets/checkout-8CgkGC8F.css",
+    "src": "resources/css/checkout.css",
+    "isEntry": true
+  },
+  "resources/css/site-critical.css": {
+    "file": "assets/site-critical-B7exHe8t.css",
+    "src": "resources/css/site-critical.css",
+    "isEntry": true
+  },
+  "resources/css/site-deferred.css": {
+    "file": "assets/site-deferred-DwbgeZ-m.css",
+    "src": "resources/css/site-deferred.css",
+    "isEntry": true
+  },
+  "resources/js/discount-wheel.js": {
+    "file": "assets/discount-wheel-DB1RVW7O.js",
+    "name": "discount-wheel",
+    "src": "resources/js/discount-wheel.js",
+    "isEntry": true
+  },
+  "resources/js/site.js": {
+    "file": "assets/site-CGJFQoQG.js",
+    "name": "site",
+    "src": "resources/js/site.js",
+    "isEntry": true
+  },
+  "resources/js/voice-assistant.js": {
+    "file": "assets/voice-assistant-CCEkVoFf.js",
+    "name": "voice-assistant",
+    "src": "resources/js/voice-assistant.js",
     "isEntry": true
   }
 }

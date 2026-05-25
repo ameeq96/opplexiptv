@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 @php
+    use Illuminate\Support\Facades\Vite;
     use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
     if (!function_exists('v')) {
@@ -219,47 +220,13 @@
     crossorigin>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
-<link rel="stylesheet" href="{{ v('css/style.css') }}" media="all">
-
-@php
-    $criticalStyles = [
-        'global.css',
-        'header.css',
-        'footer.css',
-        'font-awesome.css',
-        'flaticon.css',
-        'linearicons.css',
-    ];
-
-    $deferredStyles = [
-        'discount-wheel.css',
-        'voice-assistant.css',
-        'animate.css',
-        'owl.css',
-        'swiper.css',
-        'jquery-ui.css',
-        'custom-animate.css',
-        'jquery.fancybox.min.css',
-        'jquery.mCustomScrollbar.min.css',
-    ];
-
-    if ($needsBlockingCheckoutCss) {
-        $criticalStyles[] = 'checkout.css';
-    } else {
-        $deferredStyles[] = 'checkout.css';
-    }
-@endphp
-
-@foreach ($criticalStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="all">
-@endforeach
-@foreach ($deferredStyles as $style)
-    <link rel="stylesheet" href="{{ v("css/$style") }}" media="print" onload="this.media='all'">
-@endforeach
-
-<link rel="stylesheet" href="{{ v('css/responsive.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/fonts.css') }}" media="all">
-<link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}" media="all">
+@vite('resources/css/site-critical.css')
+@if ($needsBlockingCheckoutCss)
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}" media="all">
+@else
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}" media="print" onload="this.media='all'">
+@endif
+<link rel="stylesheet" href="{{ Vite::asset('resources/css/site-deferred.css') }}" media="print" onload="this.media='all'">
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
@@ -273,13 +240,10 @@
 @endif
 
 <noscript>
-    <link rel="stylesheet" href="{{ v('css/style.css') }}">
-    @foreach (array_merge($criticalStyles, $deferredStyles) as $style)
-        <link rel="stylesheet" href="{{ v("css/$style") }}">
-    @endforeach
-    <link rel="stylesheet" href="{{ v('css/responsive.css') }}">
-    <link rel="stylesheet" href="{{ v('css/fonts.css') }}">
-    <link rel="stylesheet" href="{{ v('css/accessibility-fixes.css') }}">
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-deferred.css') }}">
+    @unless ($needsBlockingCheckoutCss)
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}">
+    @endunless
     @if ($needsPhoneAssets)
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
     @endif

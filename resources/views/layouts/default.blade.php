@@ -36,7 +36,8 @@
         window.addEventListener('load', function () {
             setTimeout(function () {
                 var s = document.createElement('script');
-                s.src = "{{ v('js/voice-assistant.js') }}";
+                s.src = "{{ \Illuminate\Support\Facades\Vite::asset('resources/js/voice-assistant.js') }}";
+                s.type = 'module';
                 s.defer = true;
                 document.body.appendChild(s);
             }, 4000);

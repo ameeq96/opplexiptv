@@ -6,6 +6,7 @@ use App\Services\ImageService;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Queue;
+use Illuminate\Support\Facades\Vite;
 use Tests\TestCase;
 
 class LcpHintsTest extends TestCase
@@ -128,6 +129,18 @@ class LcpHintsTest extends TestCase
     public function test_non_critical_styles_are_deferred_with_noscript_fallbacks(): void
     {
         $html = $this->renderHeadForRoute('home');
+        $deferredHref = Vite::asset('resources/css/site-deferred.css');
+        $criticalEntry = file_get_contents(resource_path('css/site-critical.css'));
+        $deferredEntry = file_get_contents(resource_path('css/site-deferred.css'));
+
+        $this->assertStringContainsString(
+            '<link rel="stylesheet" href="'.$deferredHref.'" media="print" onload="this.media=\'all\'">',
+            $html
+        );
+        $this->assertMatchesRegularExpression(
+            '/<noscript>.*<link rel="stylesheet" href="'.preg_quote($deferredHref, '/').'">.*<\/noscript>/s',
+            $html
+        );
 
         foreach ([
             'discount-wheel.css',
@@ -140,25 +153,11 @@ class LcpHintsTest extends TestCase
             'jquery.fancybox.min.css',
             'jquery.mCustomScrollbar.min.css',
         ] as $style) {
-            $quotedStyle = preg_quote($style, '/');
-
-            $this->assertMatchesRegularExpression(
-                '/<link rel="stylesheet" href="[^"]*\/css\/'.$quotedStyle.'[^"]*" media="print" onload="this\.media=\'all\'">/',
-                $html
-            );
-            $this->assertMatchesRegularExpression(
-                '/<noscript>.*<link rel="stylesheet" href="[^"]*\/css\/'.$quotedStyle.'[^"]*">.*<\/noscript>/s',
-                $html
-            );
+            $this->assertStringContainsString('../../public/css/'.$style, $deferredEntry);
         }
 
         foreach (['style.css', 'global.css', 'header.css', 'responsive.css', 'fonts.css'] as $style) {
-            $quotedStyle = preg_quote($style, '/');
-
-            $this->assertMatchesRegularExpression(
-                '/<link rel="stylesheet" href="[^"]*\/css\/'.$quotedStyle.'[^"]*" media="all">/',
-                $html
-            );
+            $this->assertStringContainsString('../../public/css/'.$style, $criticalEntry);
         }
     }
 
@@ -167,13 +166,18 @@ class LcpHintsTest extends TestCase
         $layout = file_get_contents(resource_path('views/layouts/default.blade.php'));
         $footer = file_get_contents(resource_path('views/includes/footer.blade.php'));
 
-        $this->assertStringContainsString("s.src = \"{{ v('js/voice-assistant.js') }}\";", $layout);
+        $this->assertStringContainsString("resources/js/voice-assistant.js", $layout);
+        $this->assertStringContainsString("s.type = 'module';", $layout);
         $this->assertStringContainsString('}, 4000);', $layout);
         $this->assertStringNotContainsString('<script src="{{ v(\'js/voice-assistant.js\') }}" defer></script>', $layout);
 
-        $this->assertStringContainsString("s.src = \"{{ v('js/discount-wheel.js') }}\";", $footer);
+        $this->assertStringContainsString("resources/js/discount-wheel.js", $footer);
+        $this->assertStringContainsString("s.type = 'module';", $footer);
         $this->assertStringContainsString('}, 5000);', $footer);
         $this->assertStringNotContainsString('<script src="{{ v(\'js/discount-wheel.js\') }}" defer></script>', $footer);
+        $this->assertStringContainsString("@vite('resources/js/site.js')", $footer);
+        $this->assertStringNotContainsString("v('js/nav-tool.js')", $footer);
+        $this->assertStringNotContainsString("v('js/script.js')", $footer);
     }
 
     public function test_below_fold_home_images_use_lazy_async_decoding(): void
@@ -342,8 +346,8 @@ class LcpHintsTest extends TestCase
         foreach (['configure', 'checkout'] as $route) {
             $html = $this->renderHeadForRoute($route);
 
-            $this->assertMatchesRegularExpression(
-                '/<link rel="stylesheet" href="[^"]*\/css\/checkout\.css[^"]*" media="all">/',
+            $this->assertStringContainsString(
+                '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'" media="all">',
                 $html
             );
             $this->assertStringNotContainsString('<link rel="preload" href="'.asset('css/checkout.css'), $html);
@@ -351,12 +355,12 @@ class LcpHintsTest extends TestCase
 
         $packagesHtml = $this->renderHeadForRoute('packages');
 
-        $this->assertDoesNotMatchRegularExpression(
-            '/<link rel="stylesheet" href="[^"]*\/css\/checkout\.css[^"]*" media="all">/',
+        $this->assertStringNotContainsString(
+            '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'" media="all">',
             $packagesHtml
         );
-        $this->assertMatchesRegularExpression(
-            '/<link rel="stylesheet" href="[^"]*\/css\/checkout\.css[^"]*" media="print" onload="this\.media=\'all\'">/',
+        $this->assertStringContainsString(
+            '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'" media="print" onload="this.media=\'all\'">',
             $packagesHtml
         );
     }

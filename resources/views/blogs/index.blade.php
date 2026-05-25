@@ -6,7 +6,7 @@
 @endphp
 
 @push('styles')
-    <link rel="stylesheet" href="{{ v('css/blogs.css') }}">
+    @vite('resources/css/blogs.css')
 @endpush
 
 @section('content')
