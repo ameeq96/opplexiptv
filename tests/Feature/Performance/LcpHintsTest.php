@@ -77,6 +77,24 @@ class LcpHintsTest extends TestCase
         $this->assertStringContainsString('animation: none !important', $html);
     }
 
+    public function test_critical_font_preloads_match_vite_built_font_urls(): void
+    {
+        $html = $this->renderHeadForRoute('home');
+
+        foreach ([
+            'public/fonts/poppins/poppins-v21-latin-regular.woff2',
+            'public/fonts/poppins/poppins-v21-latin-700.woff2',
+            'public/fonts/poppins/poppins-v21-latin-600.woff2',
+            'public/fonts/poppins/poppins-v21-latin-500.woff2',
+            'public/fonts/Linearicons-Free.woff2',
+        ] as $font) {
+            $this->assertStringContainsString('href="'.Vite::asset($font).'"', $html);
+        }
+
+        $this->assertStringContainsString('font-weight:400', file_get_contents(public_path('css/fonts.css')));
+        $this->assertStringNotContainsString(asset('fonts/poppins/poppins-v21-latin-700.woff2'), $html);
+    }
+
     public function test_home_hero_renders_without_skeleton_loader_on_mobile_and_desktop(): void
     {
         $mobileHtml = view('includes._slider', [
@@ -156,9 +174,12 @@ class LcpHintsTest extends TestCase
             $this->assertStringContainsString('../../public/css/'.$style, $deferredEntry);
         }
 
-        foreach (['style.css', 'global.css', 'header.css', 'responsive.css', 'fonts.css'] as $style) {
+        foreach (['bootstrap.css', 'style.css', 'global.css', 'header.css', 'responsive.css', 'fonts.css'] as $style) {
             $this->assertStringContainsString('../../public/css/'.$style, $criticalEntry);
         }
+
+        $this->assertStringNotContainsString('bootstrap@4.6.2/dist/css/bootstrap.min.css', $html);
+        $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
     }
 
     public function test_voice_assistant_and_discount_wheel_scripts_are_delayed(): void
@@ -216,6 +237,43 @@ class LcpHintsTest extends TestCase
 
         $footer = $this->renderFooterForRoute('home');
         $this->assertStringContainsString('width="250" height="65" loading="lazy" decoding="async"', $footer);
+    }
+
+    public function test_initial_pricing_render_hides_inactive_vendor_cards_before_javascript_runs(): void
+    {
+        $html = view('includes._best-packages', [
+            'isMobile' => true,
+            'isRtl' => false,
+            'containerClass' => 'centered',
+            'pricingSection' => [
+                'heading' => 'Pricing',
+                'subheading' => 'Packages',
+            ],
+            'packages' => [
+                [
+                    'vendor' => 'opplex',
+                    'title' => 'Monthly - $10',
+                    'price' => '$10',
+                    'features' => ['One connection'],
+                ],
+                [
+                    'vendor' => 'starshare',
+                    'title' => 'Monthly - $11',
+                    'price' => '$11',
+                    'features' => ['One connection'],
+                ],
+            ],
+            'resellerPlans' => [],
+        ])->render();
+
+        $this->assertMatchesRegularExpression(
+            '/data-type="iptv" data-vendor="starshare"\s+style="display:none!important"/',
+            $html
+        );
+        $this->assertDoesNotMatchRegularExpression(
+            '/data-type="iptv" data-vendor="opplex"\s+style="display:none!important"/',
+            $html
+        );
     }
 
     public function test_image_service_returns_generated_webp_when_it_already_exists(): void

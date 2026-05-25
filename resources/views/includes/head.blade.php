@@ -208,7 +208,6 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 @if ($pageTitleLcp)
     <link rel="preload" as="image" href="{{ asset($pageTitleLcp[0]) }}" type="image/webp"
         media="(min-width: 768px)" fetchpriority="high">
@@ -216,10 +215,6 @@
         media="(max-width: 767px)" fetchpriority="high">
 @endif
 
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" as="style"
-    crossorigin>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" media="all">
 @vite('resources/css/site-critical.css')
 @if ($needsBlockingCheckoutCss)
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}" media="all">
@@ -230,10 +225,11 @@
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ asset('fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
 
 @if ($needsPhoneAssets)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">

@@ -66,7 +66,8 @@
                     $displayTitle = $titleBase;
                 @endphp
 
-                <div class="price-block scroll-item pkg-item" data-type="iptv" data-vendor="{{ $vendorKey }}">
+                <div class="price-block scroll-item pkg-item" data-type="iptv" data-vendor="{{ $vendorKey }}"
+                    @if ($vendorKey !== 'opplex') style="display:none!important" @endif>
                     <div class="inner-box custom-color">
                         <div class="upper-box"
                             @unless ($isMobile ?? false) style="background-image:url('{{ asset('images/background/pattern-4.webp') }}');" @endunless>

@@ -83,6 +83,10 @@
     "file": "assets/poppins-v21-latin-900-BmL1zqjw.woff2",
     "src": "public/fonts/poppins/poppins-v21-latin-900.woff2"
   },
+  "public/fonts/poppins/poppins-v21-latin-regular.woff2": {
+    "file": "assets/poppins-v21-latin-regular-cpxAROuN.woff2",
+    "src": "public/fonts/poppins/poppins-v21-latin-regular.woff2"
+  },
   "public/images/cross-out.webp": {
     "file": "assets/cross-out-CIJBgXqa.webp",
     "src": "public/images/cross-out.webp"
@@ -143,7 +147,7 @@
     "isEntry": true
   },
   "resources/css/site-critical.css": {
-    "file": "assets/site-critical-B7exHe8t.css",
+    "file": "assets/site-critical-BjkIMo7i.css",
     "src": "resources/css/site-critical.css",
     "isEntry": true
   },
