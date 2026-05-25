@@ -25,7 +25,7 @@
     $legalNote = $footerSettings['legal_note'] ?? null;
 
     $routeName = optional(request()->route())->getName();
-    $isPackagesRoute = $routeName === 'packages';
+    $isLeanAssetRoute = in_array($routeName, ['packages', 'faqs'], true);
     $needsPhoneAssets = in_array($routeName, ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
 @endphp
 
@@ -172,14 +172,14 @@
 <!-- Scripts: keep order; defer ensures execution after parse (preserves order across tags) -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
-@unless ($isPackagesRoute)
+@unless ($isLeanAssetRoute)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
 @endunless
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
     defer></script>
-@unless ($isPackagesRoute)
+@unless ($isLeanAssetRoute)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>

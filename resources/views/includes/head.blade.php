@@ -204,6 +204,147 @@
         }
     </style>
 @endif
+@if ($routeName === 'faqs')
+    <style>
+        .page-title {
+            position: relative;
+            overflow: hidden;
+            padding: 200px 0;
+            background-size: cover;
+        }
+
+        .page-title:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #010c3a 0, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .page-title .auto-container {
+            position: static;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .page-title h2 {
+            position: relative;
+            color: #fff;
+            padding-bottom: 15px;
+        }
+
+        .page-title .bread-crumb {
+            position: relative;
+        }
+
+        .page-title .bread-crumb li {
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #fff;
+            margin-right: 15px;
+            padding-right: 15px;
+        }
+
+        .page-title .bread-crumb li:before {
+            position: absolute;
+            right: -3px;
+            top: 0;
+            content: "|";
+            font-weight: 400;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .page-title .bread-crumb li:last-child {
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        .page-title .bread-crumb li:last-child:before {
+            display: none;
+        }
+
+        .page-title .bread-crumb li a {
+            font-weight: 500;
+            color: #df0303;
+        }
+
+        .faq-section {
+            position: relative;
+            padding: 100px 0;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .faq-section .accordion-column {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .faq-section .accordion-column .inner-column,
+        .faq-section .accordion-box {
+            position: relative;
+        }
+
+        .faq-section .sec-title {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .faq-section .sec-title .separator {
+            position: relative;
+            width: 88px;
+            height: 5px;
+            background-color: #df0303;
+            margin-bottom: 25px;
+        }
+
+        .faq-section .accordion-box .block {
+            position: relative;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+        }
+
+        .faq-section .accordion-box .block .acc-btn {
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 700;
+            padding: 18px 30px;
+            text-transform: capitalize;
+            color: #010101;
+        }
+
+        .faq-section .accordion-box .block .acc-content {
+            position: relative;
+            display: none;
+        }
+
+        .faq-section .accordion-box .block .acc-content.current {
+            display: block;
+        }
+
+        .faq-section .accordion-box .block .content {
+            position: relative;
+            padding: 0 25px 25px 30px;
+        }
+
+        @media (max-width: 767px) {
+            .page-title {
+                padding: 100px 0;
+            }
+        }
+    </style>
+@endif
 @if ($routeName === 'home')
     <style>
         @media (max-width: 767px) {
@@ -309,7 +450,7 @@
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
-@if ($routeName === 'packages')
+@if (in_array($routeName, ['packages', 'faqs'], true))
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
 @else

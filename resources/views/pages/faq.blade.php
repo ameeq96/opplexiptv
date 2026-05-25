@@ -50,6 +50,7 @@
                                                             <figure>
                                                                 <img src="{{ asset($image['url']) }}"
                                                                     alt="{{ $image['caption'] }}" loading="lazy"
+                                                                    decoding="async"
                                                                     width="100%" />
                                                                 <figcaption class="text-center mt-2">
                                                                     {{ $image['caption'] }}
