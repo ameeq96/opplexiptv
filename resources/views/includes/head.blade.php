@@ -120,6 +120,90 @@
         }
     }
 </style>
+@if ($routeName === 'packages')
+    <style>
+        .page-title {
+            position: relative;
+            overflow: hidden;
+            padding: 200px 0;
+            background-size: cover;
+        }
+
+        .page-title:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, #010c3a 0, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .page-title .auto-container {
+            position: static;
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .page-title h2 {
+            position: relative;
+            color: #fff;
+            padding-bottom: 15px;
+        }
+
+        .page-title .bread-crumb {
+            position: relative;
+        }
+
+        .page-title .bread-crumb li {
+            position: relative;
+            font-weight: 500;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #fff;
+            margin-right: 15px;
+            padding-right: 15px;
+        }
+
+        .page-title .bread-crumb li:before {
+            position: absolute;
+            right: -3px;
+            top: 0;
+            content: "|";
+            font-weight: 400;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .page-title .bread-crumb li:last-child {
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        .page-title .bread-crumb li:last-child:before {
+            display: none;
+        }
+
+        .page-title .bread-crumb li a {
+            font-weight: 500;
+            color: #df0303;
+        }
+
+        .pricing-section.style-two {
+            background-color: #fff;
+            display: block;
+            height: auto;
+        }
+
+        @media (max-width: 767px) {
+            .page-title {
+                padding: 100px 0;
+            }
+        }
+    </style>
+@endif
 @if ($routeName === 'home')
     <style>
         @media (max-width: 767px) {
@@ -225,11 +309,16 @@
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
-<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+@if ($routeName === 'packages')
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+@else
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+@endif
 
 @if ($needsPhoneAssets)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">

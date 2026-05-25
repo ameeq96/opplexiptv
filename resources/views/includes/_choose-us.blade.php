@@ -49,7 +49,7 @@
                         style="background-image: url('{{ asset('images/resource/faq-pattern.webp') }}')"></div>
                     <div class="image titlt" data-tilt data-tilt-max="5">
                         <img src="{{ asset('images/resource/faq.webp') }}" alt="FAQ Image" width="472"
-                            height="683" loading="lazy" />
+                            height="683" loading="lazy" decoding="async" />
                     </div>
                 </div>
             </div>
