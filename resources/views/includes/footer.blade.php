@@ -25,10 +25,15 @@
     $legalNote = $footerSettings['legal_note'] ?? null;
 
     $routeName = optional(request()->route())->getName();
+    $isMoviesRoute = $routeName === 'movies';
     $targetOptimizedRoutes = ['packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index'];
     $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
-    $needsMixItUp = !$isTargetOptimizedRoute || $routeName === 'movies';
-    $needsFancybox = !$isTargetOptimizedRoute || $routeName === 'movies';
+    $needsJquery = !$isMoviesRoute;
+    $needsStandalonePopper = !$isMoviesRoute;
+    $needsBootstrap = !$isMoviesRoute;
+    $needsCustomScrollbar = !$isMoviesRoute;
+    $needsMixItUp = !$isTargetOptimizedRoute;
+    $needsFancybox = !$isTargetOptimizedRoute;
     $needsAppear = !$isTargetOptimizedRoute;
     $needsParallax = !$isTargetOptimizedRoute;
     $needsParoller = !$isTargetOptimizedRoute;
@@ -178,17 +183,25 @@
 </div>
 
 <!-- Scripts: keep order; defer ensures execution after parse (preserves order across tags) -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
+@if ($needsJquery)
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
+@endif
+@if ($needsStandalonePopper)
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
+@endif
 @if ($needsMixItUp)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
 @endif
 @if ($needsValidation)
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
 @endif
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
-    defer></script>
+@if ($needsBootstrap)
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
+@endif
+@if ($needsCustomScrollbar)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+        defer></script>
+@endif
 @if ($needsFancybox)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
 @endif
@@ -221,7 +234,224 @@
         }, 5000);
     });
 </script>
-@vite('resources/js/site.js')
+@unless ($isMoviesRoute)
+    @vite('resources/js/site.js')
+@endunless
+
+@if ($isMoviesRoute)
+    <script>
+        (function () {
+            'use strict';
+
+            var fancyboxReady = null;
+
+            function onReady(fn) {
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', fn, { once: true });
+                } else {
+                    fn();
+                }
+            }
+
+            function firstChildByTag(parent, tagName) {
+                if (!parent) return null;
+                tagName = tagName.toUpperCase();
+                for (var i = 0; i < parent.children.length; i += 1) {
+                    if (parent.children[i].tagName === tagName) return parent.children[i];
+                }
+                return null;
+            }
+
+            function loadScript(src) {
+                return new Promise(function (resolve, reject) {
+                    var existing = document.querySelector('script[src="' + src + '"]');
+                    if (existing) {
+                        if (existing.dataset.loaded === 'true') {
+                            resolve();
+                            return;
+                        }
+                        existing.addEventListener('load', resolve, { once: true });
+                        existing.addEventListener('error', reject, { once: true });
+                        return;
+                    }
+
+                    var script = document.createElement('script');
+                    script.src = src;
+                    script.defer = true;
+                    script.onload = function () {
+                        script.dataset.loaded = 'true';
+                        resolve();
+                    };
+                    script.onerror = reject;
+                    document.body.appendChild(script);
+                });
+            }
+
+            function loadCss(href) {
+                if (document.querySelector('link[href="' + href + '"]')) return;
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = href;
+                document.head.appendChild(link);
+            }
+
+            function ensureFancybox() {
+                if (window.jQuery && window.jQuery.fancybox) {
+                    return Promise.resolve();
+                }
+
+                if (!fancyboxReady) {
+                    loadCss('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css');
+                    fancyboxReady = loadScript('https://code.jquery.com/jquery-1.12.4.min.js')
+                        .then(function () {
+                            return loadScript('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js');
+                        });
+                }
+
+                return fancyboxReady;
+            }
+
+            function applyFilter(filter) {
+                var selector = filter ? filter.getAttribute('data-filter') : 'all';
+                if (!selector) selector = 'all';
+
+                document.querySelectorAll('.filter-tabs .filter').forEach(function (item) {
+                    item.classList.toggle('active', item === filter);
+                });
+
+                document.querySelectorAll('.filter-list .feature-block').forEach(function (card) {
+                    var visible = selector === 'all' || card.matches(selector);
+                    card.style.display = visible ? 'block' : 'none';
+                });
+            }
+
+            function initMovieFilters() {
+                var filters = document.querySelectorAll('.filter-tabs .filter');
+                if (!filters.length) return;
+
+                filters.forEach(function (filter) {
+                    filter.addEventListener('click', function () {
+                        applyFilter(filter);
+                    });
+
+                    filter.addEventListener('keydown', function (event) {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            applyFilter(filter);
+                        }
+                    });
+                });
+
+                applyFilter(document.querySelector('.filter-tabs .filter.active') || filters[0]);
+            }
+
+            function initMobileMenu() {
+                var source = document.querySelector('.main-header .main-menu .navigation');
+                var target = document.querySelector('.mobile-menu .menu-outer');
+                if (source && target && !target.querySelector('.navigation')) {
+                    target.insertBefore(source.cloneNode(true), target.firstChild);
+                }
+
+                document.querySelectorAll('.mobile-menu .navigation li.dropdown').forEach(function (item) {
+                    var submenu = firstChildByTag(item, 'ul');
+                    if (!submenu || item.querySelector('.dropdown-btn')) return;
+
+                    var button = document.createElement('div');
+                    button.className = 'dropdown-btn';
+                    button.innerHTML = '<span class="fa fa-angle-down"></span>';
+                    item.appendChild(button);
+
+                    var toggle = function (event) {
+                        if (event) event.preventDefault();
+                        button.classList.toggle('open');
+                        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+                    };
+
+                    button.addEventListener('click', toggle);
+
+                    var link = firstChildByTag(item, 'a');
+                    if (link && (link.getAttribute('href') === '#' || link.getAttribute('href') === '')) {
+                        link.addEventListener('click', toggle);
+                    }
+                });
+
+                var open = document.querySelector('.mobile-nav-toggler');
+                var backdrop = document.querySelector('.mobile-menu .menu-backdrop');
+                var close = document.querySelector('.mobile-menu .close-btn');
+
+                if (open) {
+                    open.addEventListener('click', function () {
+                        document.body.classList.add('mobile-menu-visible');
+                    });
+                }
+
+                [backdrop, close].forEach(function (el) {
+                    if (!el) return;
+                    el.addEventListener('click', function () {
+                        document.body.classList.remove('mobile-menu-visible');
+                    });
+                });
+            }
+
+            function initScrollUi() {
+                var header = document.querySelector('.main-header');
+                var scrollButton = document.querySelector('.scroll-to-target');
+
+                function updateHeader() {
+                    if (!header) return;
+                    var fixed = window.scrollY >= header.offsetHeight;
+                    header.classList.toggle('fixed-header', fixed);
+                    if (scrollButton) scrollButton.style.display = fixed ? 'block' : 'none';
+                }
+
+                if (scrollButton) {
+                    scrollButton.addEventListener('click', function () {
+                        var target = scrollButton.getAttribute('data-target') || 'html';
+                        var targetEl = document.querySelector(target) || document.documentElement;
+                        window.scrollTo({ top: targetEl.offsetTop || 0, behavior: 'smooth' });
+                    });
+                }
+
+                window.addEventListener('scroll', updateHeader, { passive: true });
+                updateHeader();
+            }
+
+            function initLightbox() {
+                document.addEventListener('click', function (event) {
+                    var link = event.target.closest('.lightbox-image');
+                    if (!link) return;
+
+                    var href = link.getAttribute('href');
+                    if (!href) return;
+
+                    event.preventDefault();
+                    ensureFancybox()
+                        .then(function () {
+                            window.jQuery.fancybox.open({
+                                src: href,
+                                type: 'iframe',
+                                opts: {
+                                    iframe: {
+                                        preload: false
+                                    }
+                                }
+                            });
+                        })
+                        .catch(function () {
+                            window.open(href, '_blank', 'noopener');
+                        });
+                });
+            }
+
+            onReady(function () {
+                initMovieFilters();
+                initMobileMenu();
+                initScrollUi();
+                initLightbox();
+            });
+        })();
+    </script>
+@endif
 
 <script>
     @if ($needsPhoneAssets)
