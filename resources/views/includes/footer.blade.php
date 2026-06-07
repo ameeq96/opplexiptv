@@ -33,6 +33,7 @@
     $needsParallax = !$isTargetOptimizedRoute;
     $needsParoller = !$isTargetOptimizedRoute;
     $needsOwlCarousel = !$isTargetOptimizedRoute || in_array($routeName, ['about', 'reseller-panel'], true);
+    $needsValidation = $routeName !== 'movies';
     $needsPhoneAssets = in_array($routeName, ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
 @endphp
 
@@ -182,7 +183,9 @@
 @if ($needsMixItUp)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
 @endif
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
+@if ($needsValidation)
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" defer></script>
+@endif
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
     defer></script>
