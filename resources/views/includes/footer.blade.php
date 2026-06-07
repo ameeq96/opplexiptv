@@ -27,7 +27,6 @@
     $routeName = optional(request()->route())->getName();
     $targetOptimizedRoutes = ['packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index'];
     $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
-    $needsStandalonePopper = $routeName !== 'movies';
     $needsMixItUp = !$isTargetOptimizedRoute || $routeName === 'movies';
     $needsFancybox = !$isTargetOptimizedRoute || $routeName === 'movies';
     $needsAppear = !$isTargetOptimizedRoute;
@@ -180,9 +179,7 @@
 
 <!-- Scripts: keep order; defer ensures execution after parse (preserves order across tags) -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
-@if ($needsStandalonePopper)
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
-@endif
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
 @if ($needsMixItUp)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
 @endif
