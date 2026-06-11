@@ -84,6 +84,7 @@ class AdminTranslationsSeeder extends Seeder
                 'reseller panel' => 'messages.nav_reseller',
                 'pricing' => 'messages.nav_pricing',
                 'movies/series' => 'messages.nav_movies_series',
+                'iptv subscription service' => 'messages.nav_iptv_subscription_service',
             ];
 
             MenuItem::with('translations')->get()->each(function (MenuItem $m) use ($locales, $menuKeyMap) {

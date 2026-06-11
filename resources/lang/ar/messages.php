@@ -94,6 +94,7 @@ return [
   'nav_reseller' => 'لوحة الموزعين',
   'nav_packages' => 'باقاتنا',
   'nav_iptv_apps' => 'تطبيقات IPTV',
+  'nav_iptv_subscription_service' => 'خدمة اشتراك IPTV',
   'nav_faqs' => 'الأسئلة الشائعة',
   'nav_contact' => 'اتصل بنا',
   'footer_phone' => '+1 (639) 390-3194',
@@ -344,6 +345,34 @@ return [
 
   // Movies Section SEO Title Fix
   'movies_title' => 'الأفلام | Opplex IPTV - شاهد عبر IPTV Box، Xtreme HD و Aroma IPTV',
+
+  'iptv_subscription_service' => [
+    'title' => 'خدمة اشتراك IPTV',
+    'heading' => 'خدمة IPTV مميزة للتلفزيون المباشر والرياضة والافلام والمسلسلات وبث 4K',
+    'breadcrumb' => [
+      'home' => 'الرئيسية',
+      'current' => 'خدمة اشتراك IPTV',
+    ],
+    'intro_eyebrow' => 'خطط بث مميزة',
+    'intro_text' => 'اختر اشتراك IPTV مرن مع قنوات مباشرة ورياضة وافلام ومسلسلات وجودة 4K ودعم سريع لجهازك المفضل.',
+    'primary_cta' => 'كوّن خطة IPTV',
+    'secondary_cta' => 'ابدأ تجربة مجانية',
+    'benefits' => [
+      ['icon' => 'flaticon-8k', 'title' => 'بث HD و 4K', 'description' => 'شاهد محتوى IPTV مميز بجودة HD و 4K على الشاشات المتوافقة.'],
+      ['icon' => 'flaticon-5g', 'title' => 'اكثر من 12K قناة مباشرة', 'description' => 'تابع الرياضة والاخبار والترفيه والقنوات العالمية من خطة IPTV واحدة.'],
+      ['icon' => 'flaticon-swimming-pool', 'title' => 'افلام ومسلسلات', 'description' => 'استمتع بمكتبة VOD كبيرة تضم افلاما ومسلسلات ومحتوى عائليا.'],
+      ['icon' => 'flaticon-customer-service', 'title' => 'دعم اعداد سريع', 'description' => 'احصل على مساعدة لاجهزة Smart TV و Firestick و Android و iOS و MAG ومشغلات IPTV.'],
+    ],
+    'setup_title' => 'اختر اشتراكك، وصل جهازك، وابدأ المشاهدة',
+    'setup_text' => 'اختر مزود IPTV وخطة الاتصال ثم اكمل الدفع. يساعدك فريقنا على تثبيت تطبيق IPTV المناسب بسرعة.',
+    'setup_points' => [
+      'يعمل مع Smart TV و Firestick و Android TV والجوال والتابلت و MAG ومشغلات IPTV.',
+      'خيارات شهرية ونصف سنوية وسنوية وخيارات موزعين متاحة في قسم الاسعار.',
+      'دعم WhatsApp متاح للتجربة والاعداد والتجديدات واسئلة الباقات.',
+    ],
+    'support_note' => '<strong>تحتاج مساعدة؟</strong> اخبرنا بجهازك والقنوات المفضلة وسنقترح افضل اشتراك IPTV.',
+    'apps_cta' => 'تحميل تطبيقات IPTV',
+  ],
 
   // WhatsApp CTA
   'whatsapp_channel' => '🎁 تجربة IPTV مجانية! انضم إلى WhatsApp الآن للحصول على التجربة + عروض حصرية! 🚀',

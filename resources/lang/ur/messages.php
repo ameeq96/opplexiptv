@@ -94,6 +94,7 @@ return [
   'nav_reseller' => 'ری سیلر پینل',
   'nav_packages' => 'ہمارے پیکیجز',
   'nav_iptv_apps' => 'آئی پی ٹی وی ایپلیکیشنز',
+  'nav_iptv_subscription_service' => 'آئی پی ٹی وی سبسکرپشن سروس',
   'nav_faqs' => 'عمومی سوالات',
   'nav_contact' => 'ہم سے رابطہ کریں',
 
@@ -343,6 +344,34 @@ return [
 
   // Movies Section SEO Title Fix
   'movies_title' => 'موویز | اوپلیکس آئی پی ٹی وی - آئی پی ٹی وی باکس، ایکسٹریم ایچ ڈی اور اروما کے ذریعے دیکھیں',
+
+  'iptv_subscription_service' => [
+    'title' => 'آئی پی ٹی وی سبسکرپشن سروس',
+    'heading' => 'لائیو ٹی وی، اسپورٹس، موویز، سیریز اور 4K اسٹریمنگ کے لئے پریمیم IPTV سروس',
+    'breadcrumb' => [
+      'home' => 'ہوم',
+      'current' => 'آئی پی ٹی وی سبسکرپشن سروس',
+    ],
+    'intro_eyebrow' => 'پریمیم اسٹریمنگ پلانز',
+    'intro_text' => 'لائیو چینلز، اسپورٹس، موویز، سیریز، 4K کوالٹی اور فوری سیٹ اپ سپورٹ کے ساتھ لچکدار IPTV سبسکرپشن منتخب کریں۔',
+    'primary_cta' => 'اپنا IPTV پلان بنائیں',
+    'secondary_cta' => 'فری ٹرائل شروع کریں',
+    'benefits' => [
+      ['icon' => 'flaticon-8k', 'title' => 'HD اور 4K اسٹریمنگ', 'description' => 'مطابقت رکھنے والی اسکرینز پر پریمیم IPTV مواد HD اور 4K کوالٹی میں دیکھیں۔'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ لائیو چینلز', 'description' => 'ایک IPTV پلان میں اسپورٹس، نیوز، انٹرٹینمنٹ اور انٹرنیشنل چینلز اسٹریم کریں۔'],
+      ['icon' => 'flaticon-swimming-pool', 'title' => 'موویز اور سیریز', 'description' => 'موویز، سیریز اور فیملی مواد کے ساتھ بڑی VOD لائبریری حاصل کریں۔'],
+      ['icon' => 'flaticon-customer-service', 'title' => 'فوری سیٹ اپ سپورٹ', 'description' => 'Smart TV، Firestick، Android، iOS، MAG اور IPTV player کے لئے مدد حاصل کریں۔'],
+    ],
+    'setup_title' => 'سبسکرپشن منتخب کریں، ڈیوائس کنیکٹ کریں اور اسٹریمنگ شروع کریں',
+    'setup_text' => 'اپنا IPTV پرووائیڈر منتخب کریں، کنیکشن پلان چنیں اور چیک آؤٹ مکمل کریں۔ ہماری ٹیم درست IPTV app انسٹال کرنے میں مدد دیتی ہے۔',
+    'setup_points' => [
+      'Smart TV، Firestick، Android TV، موبائل، ٹیبلیٹ، MAG اور IPTV players کے ساتھ کام کرتا ہے۔',
+      'ماہانہ، ششماہی، سالانہ اور reseller آپشنز pricing section میں دستیاب ہیں۔',
+      'ٹرائل، سیٹ اپ، renewals اور package سوالات کے لئے WhatsApp support دستیاب ہے۔',
+    ],
+    'support_note' => '<strong>مدد چاہیے؟</strong> اپنی ڈیوائس اور پسندیدہ چینلز بتائیں، ہم بہترین IPTV سبسکرپشن recommend کریں گے۔',
+    'apps_cta' => 'IPTV Apps ڈاؤن لوڈ کریں',
+  ],
 
   // WhatsApp CTA
   'whatsapp_channel' => '🎁 مفت آئی پی ٹی وی ٹرائل! ابھی ہمارے واٹس ایپ میں شامل ہوں اور ٹرائل + زبردست آفرز حاصل کریں! 🚀',

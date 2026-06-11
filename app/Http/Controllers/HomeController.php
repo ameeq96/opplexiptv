@@ -107,6 +107,11 @@ class HomeController extends Controller
         return view('pages.packages', ['activeIndex' => 1]);
     }
 
+    public function iptvSubscriptionService()
+    {
+        return view('pages.iptv-subscription-service', ['activeIndex' => 0]);
+    }
+
     public function resellerPanel()
     {
         return view('pages.resellerpanel');

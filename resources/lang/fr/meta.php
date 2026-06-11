@@ -26,6 +26,11 @@ return [
         'description' => 'Regardez 12 000+ chaînes, VOD et sports HD sur IPTV box, smart player et stream player. Activation instantanée avec décodeur IPTV avec code.',
         'keywords' => 'forfaits IPTV, IPTV player, abonnement IPTV France, IPTV m3u, IPTV sport, IPTV stream player, code IPTV, IPTV gratuit sans code',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'Service abonnement IPTV | Forfaits IPTV 4K Premium',
+        'description' => 'Choisissez un service abonnement IPTV avec chaines en direct, sport, films, series, streaming 4K, essai gratuit et aide rapide.',
+        'keywords' => 'service IPTV, abonnement IPTV, meilleur IPTV, IPTV 4K, essai IPTV gratuit, forfaits IPTV, tv en direct IPTV',
+    ],
     'reseller-panel' => [
         'title' => 'Devenez revendeur IPTV - Panneau avec Xtream IPTV & room',
         'description' => 'Lancez votre business IPTV avec code IPTV, box et accès au panneau revendeur. Compatible IPTV smart player, décodeur IPTV avec code.',

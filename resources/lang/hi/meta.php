@@ -26,6 +26,11 @@ return [
         'description' => 'लचीले IPTV पैकेजों में xtreme hd iptv, iptv box एक्सेस, 4K चैनल्स और iptv smart player सपोर्ट शामिल है। मुफ्त ट्रायल France, Italy, UK, US में उपलब्ध है।',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'IPTV सब्सक्रिप्शन सर्विस | प्रीमियम 4K IPTV प्लान',
+        'description' => 'लाइव चैनल, स्पोर्ट्स, मूवीज, सीरीज, 4K स्ट्रीमिंग, फ्री ट्रायल और तेज सेटअप सपोर्ट के साथ IPTV सब्सक्रिप्शन चुनें।',
+        'keywords' => 'iptv subscription service, iptv subscription, best iptv, 4k iptv, iptv free trial, iptv plans, live tv iptv',
+    ],
     'reseller-panel' => [
         'title' => 'IPTV रिसेलर बनें | Opplex IPTV पैनल एक्सेस',
         'description' => 'Opplex IPTV रिसेलर प्रोग्राम से जुड़ें। यूरोप और USA में xtreme hd iptv और smart IPTV बॉक्स बेचें। 4K iptv, मुफ्त ट्रायल और फुल सपोर्ट के साथ पैनल एक्सेस',

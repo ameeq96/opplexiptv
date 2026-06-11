@@ -26,6 +26,11 @@ return [
         'description' => 'Гибкие IPTV пакеты включают xtreme hd iptv, доступ с iptv приставок, 4K каналы и совместимость с iptv smart player.',
         'keywords' => 'iptv бесплатный тест, xtreme hd iptv, iptv smart player, 4k iptv онлайн, iptv приставка, лучший iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'Servis IPTV podpiski | Premium 4K IPTV plany',
+        'description' => 'Vyberite IPTV servis s live kanalami, sportom, filmami, serialami, 4K strimingom, besplatnym trial i bystroi podderzhkoi.',
+        'keywords' => 'iptv podpiska, iptv servis, luchshii iptv, 4k iptv, iptv trial, iptv plany, live tv iptv',
+    ],
     'reseller-panel' => [
         'title' => 'Станьте реселлером IPTV | Панель Opplex IPTV',
         'description' => 'Присоединяйтесь к программе реселлеров Opplex IPTV. Продавайте xtreme hd iptv и smart IPTV приставки по всей Европе и США.',

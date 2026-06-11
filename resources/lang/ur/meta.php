@@ -26,6 +26,11 @@ return [
         'description' => 'لچکدار IPTV پیکجز میں xtreme hd iptv، iptv باکس ایکسس، 4K چینلز اور iptv اسمارٹ پلیئر مطابقت شامل ہے۔ فرانس، اٹلی، UK، US میں مفت ٹرائل دستیاب۔',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'آئی پی ٹی وی سبسکرپشن سروس | پریمیم 4K IPTV پلانز',
+        'description' => 'لائیو چینلز، اسپورٹس، موویز، سیریز، 4K اسٹریمنگ، فری ٹرائل اور فوری سیٹ اپ سپورٹ کے ساتھ IPTV سبسکرپشن منتخب کریں۔',
+        'keywords' => 'iptv subscription service, iptv subscription, best iptv, 4k iptv, iptv free trial, iptv plans, live tv iptv',
+    ],
     'reseller-panel' => [
         'title' => 'IPTV ریسیلر بنیں | Opplex IPTV پینل ایکسس',
         'description' => 'Opplex IPTV ریسیلر پروگرام جوائن کریں۔ xtreme hd iptv اور اسمارٹ IPTV باکسز بیچیں یورپ اور USA میں۔ 4K iptv، مفت ٹرائل اور مکمل سپورٹ کے ساتھ پینل ایکسس',

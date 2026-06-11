@@ -26,6 +26,11 @@ return [
         'description' => 'Flexible IPTV packages include xtreme hd iptv, iptv box access, 4K channels, and iptv smart player compatibility.',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'IPTV Subscription Service | Premium 4K IPTV Plans',
+        'description' => 'Choose an IPTV subscription service with live channels, sports, movies, series, 4K streaming, free trial, and fast setup support.',
+        'keywords' => 'iptv subscription service, iptv subscription, best iptv service, 4k iptv, iptv free trial, iptv plans, live tv iptv',
+    ],
     'reseller-panel' => [
         'title' => 'Become IPTV Reseller | Opplex IPTV Panel Access',
         'description' => 'Join Opplex IPTV reseller program. Sell xtreme hd iptv and smart IPTV boxes across Europe & USA. Panel access with 4K iptv, free trial, and full support.',

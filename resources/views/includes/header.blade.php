@@ -205,6 +205,9 @@
                                                     href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a>
                                             </li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    href="{{ route('iptv-subscription-service') }}">{{ __('messages.nav_iptv_subscription_service') }}</a>
+                                            </li>
+                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     href="{{ route('shop') }}">Shop</a>
                                             </li>
                                         </ul>

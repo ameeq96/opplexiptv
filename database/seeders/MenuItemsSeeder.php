@@ -32,6 +32,7 @@ class MenuItemsSeeder extends Seeder
             ['label' => 'Reseller Panel', 'url' => '/reseller-panel', 'sort_order' => 3],
             ['label' => 'Pricing', 'url' => '/pricing', 'sort_order' => 4],
             ['label' => 'Movies/Series', 'url' => '/movies', 'sort_order' => 5],
+            ['label' => 'IPTV Subscription Service', 'url' => '/iptv-subscription-service', 'sort_order' => 6],
         ];
 
         foreach ($more as $item) {

@@ -26,6 +26,11 @@ return [
         'description' => 'باقات IPTV مرنة تشمل Xtreme HD IPTV، أجهزة iptv، قنوات 4K ودعم مشغل iptv الذكي. تجربة مجانية متاحة في فرنسا، إيطاليا، المملكة المتحدة والولايات المتحدة.',
         'keywords' => 'تجربة iptv مجانية، xtreme hd iptv، مشغل iptv الذكي، iptv مباشر 4k، جهاز iptv، أفضل iptv، aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'خدمة اشتراك IPTV | خطط IPTV 4K مميزة',
+        'description' => 'اختر خدمة IPTV مع قنوات مباشرة ورياضة وافلام ومسلسلات وبث 4K وتجربة مجانية ودعم اعداد سريع.',
+        'keywords' => 'خدمة IPTV, اشتراك IPTV, افضل IPTV, IPTV 4K, تجربة IPTV مجانية, خطط IPTV, تلفزيون مباشر IPTV',
+    ],
     'reseller-panel' => [
         'title' => 'كن موزع IPTV | وصول إلى لوحة Opplex IPTV',
         'description' => 'انضم إلى برنامج موزعي Opplex IPTV. قم ببيع Xtreme HD IPTV وأجهزة IPTV الذكية عبر أوروبا والولايات المتحدة.',

@@ -26,6 +26,11 @@ return [
         'description' => 'Paquetes IPTV flexibles incluyen xtreme hd iptv, acceso a caja IPTV, canales 4K y compatibilidad con iptv smart player.',
         'keywords' => 'prueba gratuita iptv, xtreme hd iptv, iptv smart player, iptv en vivo 4k, caja iptv, mejor iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'Servicio de Suscripcion IPTV | Planes IPTV 4K Premium',
+        'description' => 'Elige un servicio de suscripcion IPTV con canales en vivo, deportes, peliculas, series, streaming 4K, prueba gratis y soporte rapido.',
+        'keywords' => 'servicio IPTV, suscripcion IPTV, mejor IPTV, IPTV 4K, prueba IPTV gratis, planes IPTV, tv en vivo IPTV',
+    ],
     'reseller-panel' => [
         'title' => 'Conviértete en Reseller IPTV | Acceso al Panel Opplex IPTV',
         'description' => 'Únete al programa de resellers de Opplex IPTV. Vende xtreme hd iptv y cajas IPTV inteligentes en toda Europa y EE. UU.',

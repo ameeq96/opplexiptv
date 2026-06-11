@@ -26,6 +26,11 @@ return [
         'description' => 'Pacchetti IPTV con più di 12.000 canali live, VOD, sport – compatibili con IPTV Smarters, IPTV Extreme, IPTV box e liste IPTV m3u.',
         'keywords' => 'pacchetti IPTV, abbonamento IPTV Italia, IPTV Sky e DAZN Telegram, IPTV m3u, IPTV player, IPTV streaming Italia',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'Servizio abbonamento IPTV | Piani IPTV 4K Premium',
+        'description' => 'Scegli un servizio IPTV con canali live, sport, film, serie, streaming 4K, prova gratuita e supporto rapido.',
+        'keywords' => 'servizio IPTV, abbonamento IPTV, miglior IPTV, IPTV 4K, prova IPTV gratuita, piani IPTV, tv live IPTV',
+    ],
     'reseller-panel' => [
         'title' => 'Diventa Rivenditore IPTV - Accesso Pannello IPTV',
         'description' => 'Unisciti al nostro programma rivenditori IPTV per vendere liste IPTV m3u gratis e codici IPTV – pannello disponibile per Italia, Francia, Europa.',

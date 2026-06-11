@@ -94,6 +94,7 @@ return [
   'nav_reseller' => 'Reseller Paneel',
   'nav_packages' => 'Onze Pakketten',
   'nav_iptv_apps' => 'IPTV Applicaties',
+  'nav_iptv_subscription_service' => 'IPTV Abonnement Service',
   'nav_faqs' => "FAQ's",
   'nav_contact' => 'Contacteer Ons',
   'footer_phone' => '+1 (639) 390-3194',
@@ -345,6 +346,34 @@ return [
 
   // Movies Section SEO Title Fix
   'movies_title' => 'Films | Opplex IPTV - Bekijk via IPTV Box, Xtreme HD en Aroma IPTV',
+
+  'iptv_subscription_service' => [
+    'title' => 'IPTV Abonnement Service',
+    'heading' => 'Premium IPTV abonnement service voor live tv, sport, films, series en 4K streaming',
+    'breadcrumb' => [
+      'home' => 'Home',
+      'current' => 'IPTV Abonnement Service',
+    ],
+    'intro_eyebrow' => 'Premium streaming plannen',
+    'intro_text' => 'Kies een flexibel IPTV abonnement met live kanalen, sport, films, series, 4K kwaliteit en snelle hulp voor je favoriete apparaat.',
+    'primary_cta' => 'Stel je IPTV plan samen',
+    'secondary_cta' => 'Start gratis proef',
+    'benefits' => [
+      ['icon' => 'flaticon-8k', 'title' => 'HD en 4K streaming', 'description' => 'Bekijk premium IPTV content in scherpe HD en 4K kwaliteit op geschikte schermen.'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ live kanalen', 'description' => 'Stream sport, nieuws, entertainment en internationale kanalen met een IPTV plan.'],
+      ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series', 'description' => 'Geniet van een grote VOD bibliotheek met films, series en familiecontent inbegrepen.'],
+      ['icon' => 'flaticon-customer-service', 'title' => 'Snelle setup hulp', 'description' => 'Krijg hulp met Smart TV, Firestick, Android, iOS, MAG en IPTV players.'],
+    ],
+    'setup_title' => 'Kies je abonnement, verbind je apparaat en begin met kijken',
+    'setup_text' => 'Kies je IPTV provider, selecteer een verbindingsplan en rond checkout af. Ons team helpt je de juiste IPTV app te installeren.',
+    'setup_points' => [
+      'Werkt met Smart TV, Firestick, Android TV, mobiel, tablet, MAG en IPTV players.',
+      'Maandelijkse, halfjaarlijkse, jaarlijkse en reseller opties staan in de prijzensectie.',
+      'WhatsApp support voor proefperiode, installatie, verlengingen en pakketvragen.',
+    ],
+    'support_note' => '<strong>Hulp nodig?</strong> Vertel ons je apparaat en favoriete kanalen, dan adviseren wij het beste IPTV abonnement.',
+    'apps_cta' => 'Download IPTV apps',
+  ],
 
   // WhatsApp CTA
   'whatsapp_channel' => '🎁 Gratis IPTV Proef! Word Nu Lid van Onze WhatsApp voor Je Proef + Hete Aanbiedingen! 🚀',

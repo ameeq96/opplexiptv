@@ -94,6 +94,7 @@ return [
   'nav_reseller' => 'रिसेलर पैनल',
   'nav_packages' => 'हमारे पैकेज',
   'nav_iptv_apps' => 'IPTV एप्लिकेशन्स',
+  'nav_iptv_subscription_service' => 'IPTV सब्सक्रिप्शन सर्विस',
   'nav_faqs' => "FAQ's",
   'nav_contact' => 'कॉन्टैक्ट करें',
   'footer_phone' => '+1 (639) 390-3194',
@@ -345,6 +346,34 @@ return [
 
   // Movies Section SEO Title Fix
   'movies_title' => 'फिल्में | Opplex IPTV - IPTV बॉक्स, Xtreme HD और Aroma IPTV के साथ देखें',
+
+  'iptv_subscription_service' => [
+    'title' => 'IPTV सब्सक्रिप्शन सर्विस',
+    'heading' => 'लाइव टीवी, स्पोर्ट्स, मूवीज, सीरीज और 4K स्ट्रीमिंग के लिए प्रीमियम IPTV सर्विस',
+    'breadcrumb' => [
+      'home' => 'होम',
+      'current' => 'IPTV सब्सक्रिप्शन सर्विस',
+    ],
+    'intro_eyebrow' => 'प्रीमियम स्ट्रीमिंग प्लान',
+    'intro_text' => 'लाइव चैनल, स्पोर्ट्स, मूवीज, सीरीज, 4K क्वालिटी और तेज सेटअप सपोर्ट के साथ फ्लेक्सिबल IPTV सब्सक्रिप्शन चुनें।',
+    'primary_cta' => 'अपना IPTV प्लान बनाएं',
+    'secondary_cta' => 'फ्री ट्रायल शुरू करें',
+    'benefits' => [
+      ['icon' => 'flaticon-8k', 'title' => 'HD और 4K स्ट्रीमिंग', 'description' => 'कम्पैटिबल स्क्रीन पर प्रीमियम IPTV कंटेंट HD और 4K क्वालिटी में देखें।'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ लाइव चैनल', 'description' => 'एक IPTV प्लान में स्पोर्ट्स, न्यूज, एंटरटेनमेंट और इंटरनेशनल चैनल स्ट्रीम करें।'],
+      ['icon' => 'flaticon-swimming-pool', 'title' => 'मूवीज और सीरीज', 'description' => 'मूवीज, सीरीज और फैमिली कंटेंट वाली बड़ी VOD लाइब्रेरी पाएं।'],
+      ['icon' => 'flaticon-customer-service', 'title' => 'फास्ट सेटअप सपोर्ट', 'description' => 'Smart TV, Firestick, Android, iOS, MAG और IPTV players के लिए मदद पाएं।'],
+    ],
+    'setup_title' => 'सब्सक्रिप्शन चुनें, डिवाइस कनेक्ट करें और स्ट्रीमिंग शुरू करें',
+    'setup_text' => 'अपना IPTV provider चुनें, connection plan select करें और checkout complete करें। हमारी team सही IPTV app install करने में मदद करती है।',
+    'setup_points' => [
+      'Smart TV, Firestick, Android TV, mobile, tablet, MAG और IPTV players के साथ काम करता है।',
+      'Monthly, half-yearly, yearly और reseller options pricing section में उपलब्ध हैं।',
+      'Trial, setup, renewals और package questions के लिए WhatsApp support available है।',
+    ],
+    'support_note' => '<strong>मदद चाहिए?</strong> अपना device और पसंदीदा channels बताएं, हम best IPTV subscription recommend करेंगे।',
+    'apps_cta' => 'IPTV Apps डाउनलोड करें',
+  ],
 
   // WhatsApp CTA
   'whatsapp_channel' => '🎁 फ्री IPTV ट्रायल! अभी हमारे WhatsApp से जुड़ें और पाएं ट्रायल + हॉट ऑफ़र्स! 🚀',

@@ -338,6 +338,7 @@ class LcpHintsTest extends TestCase
         $routes = [
             'about' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
             'packages' => ['images/background/9-lcp.webp', 'images/background/9-mobile.webp'],
+            'iptv-subscription-service' => ['images/background/9-lcp.webp', 'images/background/9-mobile.webp'],
             'pricing' => ['images/background/7-lcp.webp', 'images/background/7-mobile.webp'],
             'faqs' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],
             'contact' => ['images/background/10-lcp.webp', 'images/background/10-mobile.webp'],

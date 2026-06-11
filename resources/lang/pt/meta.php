@@ -26,6 +26,11 @@ return [
         'description' => 'Pacotes IPTV flexíveis incluem xtreme hd iptv, acesso a iptv box, canais 4K e compatibilidade com iptv smart player.',
         'keywords' => 'iptv teste gratuito, xtreme hd iptv, iptv smart player, iptv ao vivo 4k, iptv box, melhor iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'Servico de Assinatura IPTV | Planos IPTV 4K Premium',
+        'description' => 'Escolha um servico IPTV com canais ao vivo, esportes, filmes, series, streaming 4K, teste gratis e suporte rapido.',
+        'keywords' => 'servico IPTV, assinatura IPTV, melhor IPTV, IPTV 4K, teste IPTV gratis, planos IPTV, tv ao vivo IPTV',
+    ],
     'reseller-panel' => [
         'title' => 'Torne-se Revendedor IPTV | Acesso ao Painel Opplex IPTV',
         'description' => 'Participe do programa de revendedores Opplex IPTV. Venda xtreme hd iptv e smart IPTV boxes pela Europa & EUA.',

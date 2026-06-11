@@ -94,6 +94,7 @@ return [
   'nav_reseller' => 'Панель реселлера',
   'nav_packages' => 'Наши пакеты',
   'nav_iptv_apps' => 'IPTV приложения',
+  'nav_iptv_subscription_service' => 'Servis IPTV podpiski',
   'nav_faqs' => "FAQ",
   'nav_contact' => 'Контакты',
   'footer_phone' => '+1 (639) 390-3194',
@@ -345,6 +346,34 @@ return [
 
   // Movies Section SEO Title Fix
   'movies_title' => 'Filmi | Opplex IPTV - Smotret cherez IPTV Box, Xtreme HD i Aroma IPTV',
+
+  'iptv_subscription_service' => [
+    'title' => 'Servis IPTV podpiski',
+    'heading' => 'Premium IPTV servis dlya live TV, sporta, filmov, serialov i 4K striminga',
+    'breadcrumb' => [
+      'home' => 'Glavnaya',
+      'current' => 'Servis IPTV podpiski',
+    ],
+    'intro_eyebrow' => 'Premium plany striminga',
+    'intro_text' => 'Vyberite gibkuyu IPTV podpisku s live kanalami, sportom, filmami, serialami, 4K kachestvom i bystroi pomoshchyu dlya vashego ustroistva.',
+    'primary_cta' => 'Nastroit IPTV plan',
+    'secondary_cta' => 'Nachat besplatnyi trial',
+    'benefits' => [
+      ['icon' => 'flaticon-8k', 'title' => 'HD i 4K striming', 'description' => 'Smotrite premium IPTV kontent v HD i 4K na sovmestimyh ekranah.'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ live kanalov', 'description' => 'Sport, novosti, razvlecheniya i mezhdunarodnye kanaly v odnom IPTV plane.'],
+      ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmy i serialy', 'description' => 'Bolshaya VOD biblioteka s filmami, serialami i semeinym kontentom.'],
+      ['icon' => 'flaticon-customer-service', 'title' => 'Bystraya nastroyka', 'description' => 'Pomoshch dlya Smart TV, Firestick, Android, iOS, MAG i IPTV playerov.'],
+    ],
+    'setup_title' => 'Vyberite podpisku, podklyuchite ustroistvo i smotrite',
+    'setup_text' => 'Vyberite IPTV provaidra, plan podklyuchenii i zavershite checkout. Komanda pomozhet ustanovit nuzhnoe IPTV prilozhenie.',
+    'setup_points' => [
+      'Rabotayet so Smart TV, Firestick, Android TV, mobilnym, planshetom, MAG i IPTV playerami.',
+      'Est mesyachnye, polugodovye, godovye i reseller opcii v razdele cen.',
+      'WhatsApp podderzhka dlya trial, ustanovki, prodlenii i voprosov po paketom.',
+    ],
+    'support_note' => '<strong>Nuzhna pomoshch?</strong> Skazhite vashe ustroistvo i kanaly, i my posovetuem luchshuyu IPTV podpisku.',
+    'apps_cta' => 'Skachat IPTV prilozheniya',
+  ],
 
   // WhatsApp CTA
   'whatsapp_channel' => '🎁 Бесплатный IPTV тест! Присоединяйтесь к нашему WhatsApp сейчас: тест + горячие предложения! 🚀',

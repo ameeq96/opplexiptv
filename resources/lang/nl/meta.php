@@ -26,6 +26,11 @@ return [
         'description' => 'Flexibele IPTV-pakketten inclusief xtreme hd iptv, toegang tot iptv box, 4K-kanalen en compatibiliteit met iptv smart player.',
         'keywords' => 'iptv gratis proefperiode, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, beste iptv, aroma iptv',
     ],
+    'iptv-subscription-service' => [
+        'title' => 'IPTV Abonnement Service | Premium 4K IPTV Plannen',
+        'description' => 'Kies een IPTV abonnement service met live kanalen, sport, films, series, 4K streaming, gratis proef en snelle setup hulp.',
+        'keywords' => 'iptv abonnement service, iptv abonnement, beste iptv, 4k iptv, iptv gratis proef, iptv plannen, live tv iptv',
+    ],
     'reseller-panel' => [
         'title' => 'Word IPTV-reseller | Opplex IPTV Paneeltoegang',
         'description' => 'Word lid van het Opplex IPTV-resellerprogramma. Verkoop xtreme hd iptv en smart IPTV-boxen in Europa en de VS.',

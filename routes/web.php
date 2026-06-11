@@ -166,6 +166,7 @@ Route::group(
         Route::get('pricing',         [HomeController::class, 'pricing'])->name('pricing');
         Route::get('movies',          [HomeController::class, 'movies'])->name('movies')->middleware('noindex.pagination');
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
+        Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
         Route::get('shop', [HomeController::class, 'shop'])->name('shop');

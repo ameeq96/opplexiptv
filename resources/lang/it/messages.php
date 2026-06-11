@@ -109,6 +109,7 @@ return [
     'nav_reseller' => 'Pannello Rivenditore',
     'nav_packages' => 'I Nostri Pacchetti',
     'nav_iptv_apps' => 'App IPTV',
+    'nav_iptv_subscription_service' => 'Servizio abbonamento IPTV',
     'nav_faqs' => 'FAQ',
     'nav_contact' => 'Contattaci',
 
@@ -343,6 +344,34 @@ return [
     'view.services' => 'Vedi i servizi IPTV streaming ora',
 
     'movies_title' => 'Movies | Opplex IPTV - Guarda film tramite IPTV Smarters, Smart IPTV e IPTV Extreme',
+
+    'iptv_subscription_service' => [
+        'title' => 'Servizio abbonamento IPTV',
+        'heading' => 'Servizio IPTV premium per TV live, sport, film, serie e streaming 4K',
+        'breadcrumb' => [
+            'home' => 'Home',
+            'current' => 'Servizio abbonamento IPTV',
+        ],
+        'intro_eyebrow' => 'Piani streaming premium',
+        'intro_text' => 'Scegli un abbonamento IPTV flessibile con canali live, sport, film, serie, qualita 4K e supporto rapido per il tuo dispositivo.',
+        'primary_cta' => 'Configura il piano IPTV',
+        'secondary_cta' => 'Avvia prova gratuita',
+        'benefits' => [
+            ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'description' => 'Guarda contenuti IPTV premium in qualita HD e 4K su schermi compatibili.'],
+            ['icon' => 'flaticon-5g', 'title' => '12K+ canali live', 'description' => 'Guarda sport, notizie, intrattenimento e canali internazionali con un solo piano IPTV.'],
+            ['icon' => 'flaticon-swimming-pool', 'title' => 'Film e serie', 'description' => 'Accedi a una grande libreria VOD con film, serie e contenuti per famiglia inclusi.'],
+            ['icon' => 'flaticon-customer-service', 'title' => 'Supporto installazione', 'description' => 'Ricevi aiuto per Smart TV, Firestick, Android, iOS, MAG e player IPTV.'],
+        ],
+        'setup_title' => 'Scegli l abbonamento, collega il dispositivo e inizia',
+        'setup_text' => 'Scegli il provider IPTV, seleziona il piano connessioni e completa il checkout. Il nostro team ti aiuta a installare la app IPTV corretta.',
+        'setup_points' => [
+            'Funziona con Smart TV, Firestick, Android TV, mobile, tablet, MAG e player IPTV.',
+            'Opzioni mensili, semestrali, annuali e reseller disponibili nella sezione prezzi.',
+            'Supporto WhatsApp per prova, installazione, rinnovi e domande sui pacchetti.',
+        ],
+        'support_note' => '<strong>Serve aiuto?</strong> Indicaci dispositivo e canali preferiti e ti consigliamo il miglior abbonamento IPTV.',
+        'apps_cta' => 'Scarica app IPTV',
+    ],
     'whatsapp_channel' => '🎁 Prova IPTV Gratis! Unisciti al nostro WhatsApp ora per la tua prova + offerte imperdibili! 🚀',
 
     'whatsapp_trial' => 'Ciao, vorrei iniziare la mia prova gratuita di IPTV. Per favore, inviami i passaggi per iniziare.',
@@ -589,7 +618,7 @@ return [
 
   'home_hero_watch_live' => 'Guarda :title in diretta in HD',
   'home_services_eyebrow' => 'Funzionalità premium',
-  'home_services_intro' => 'Streaming potente, accesso più intelligente e un'esperienza IPTV più pulita su ogni dispositivo.',
+  'home_services_intro' => 'Streaming potente, accesso più intelligente e un\'esperienza IPTV più pulita su ogni dispositivo.',
   'home_testimonials_intro' => 'Recensioni verificate di clienti che usano Opplex IPTV per TV in diretta, sport e contenuti on demand.',
   'home_testimonials_verified_customer' => 'Cliente IPTV verificato',
   'home_unlimited_eyebrow' => 'Accesso illimitato',

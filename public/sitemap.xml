@@ -18,6 +18,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://opplexiptv.com/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://opplexiptv.com/iptv-applications</loc>
   <lastmod>2026-02-22T18:50:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -185,6 +190,51 @@
 <url>
   <loc>https://opplexiptv.com/hi/packages</loc>
   <lastmod>2026-02-22T18:50:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/es/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/fr/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/it/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/nl/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/pt/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/ru/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/ur/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/ar/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opplexiptv.com/hi/iptv-subscription-service</loc>
+  <lastmod>2026-06-11T00:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>

@@ -94,6 +94,7 @@ return [
   'nav_reseller' => 'Painel Revendedor',
   'nav_packages' => 'Nossos Pacotes',
   'nav_iptv_apps' => 'Aplicativos IPTV',
+  'nav_iptv_subscription_service' => 'Servico de Assinatura IPTV',
   'nav_faqs' => "FAQ's",
   'nav_contact' => 'Contato',
   'footer_phone' => '+1 (639) 390-3194',
@@ -345,6 +346,34 @@ return [
 
   // Correção de Título SEO da Seção Filmes
   'movies_title' => 'Filmes | Opplex IPTV - Assista via IPTV Box, Xtreme HD e Aroma IPTV',
+
+  'iptv_subscription_service' => [
+    'title' => 'Servico de Assinatura IPTV',
+    'heading' => 'Servico IPTV premium para TV ao vivo, esportes, filmes, series e streaming 4K',
+    'breadcrumb' => [
+      'home' => 'Inicio',
+      'current' => 'Servico de Assinatura IPTV',
+    ],
+    'intro_eyebrow' => 'Planos premium de streaming',
+    'intro_text' => 'Escolha uma assinatura IPTV flexivel com canais ao vivo, esportes, filmes, series, qualidade 4K e suporte rapido para seu dispositivo.',
+    'primary_cta' => 'Montar meu plano IPTV',
+    'secondary_cta' => 'Iniciar teste gratis',
+    'benefits' => [
+      ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'description' => 'Assista conteudo IPTV premium em qualidade HD e 4K em telas compativeis.'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ canais ao vivo', 'description' => 'Veja esportes, noticias, entretenimento e canais internacionais em um plano IPTV.'],
+      ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e series', 'description' => 'Acesse uma grande biblioteca VOD com filmes, series e conteudo familiar incluido.'],
+      ['icon' => 'flaticon-customer-service', 'title' => 'Suporte rapido', 'description' => 'Receba ajuda com Smart TV, Firestick, Android, iOS, MAG e players IPTV.'],
+    ],
+    'setup_title' => 'Escolha sua assinatura, conecte o dispositivo e comece',
+    'setup_text' => 'Escolha o provedor IPTV, selecione um plano de conexoes e conclua o checkout. Nossa equipe ajuda voce a instalar o app IPTV correto.',
+    'setup_points' => [
+      'Funciona com Smart TV, Firestick, Android TV, celular, tablet, MAG e players IPTV.',
+      'Opcoes mensais, semestrais, anuais e revendedor estao disponiveis na secao de precos.',
+      'Suporte por WhatsApp para teste, instalacao, renovacoes e duvidas sobre pacotes.',
+    ],
+    'support_note' => '<strong>Precisa de ajuda?</strong> Informe seu dispositivo e canais preferidos para recomendarmos a melhor assinatura IPTV.',
+    'apps_cta' => 'Baixar apps IPTV',
+  ],
 
   // CTA WhatsApp
   'whatsapp_channel' => '🎁 Teste Gratuito IPTV! Entre no nosso WhatsApp agora para seu teste + ofertas quentes! 🚀',

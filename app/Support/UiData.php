@@ -106,9 +106,9 @@ class UiData
             );
         }
 
-        $needsFeatures = $this->routeIs($routeName, ['home', 'about', 'packages', 'pricing', 'reseller-panel']);
-        $needsPricing = $this->routeIs($routeName, ['home', 'packages', 'pricing', 'reseller-panel']);
-        $needsTestimonials = $this->routeIs($routeName, ['home', 'about', 'reseller-panel']);
+        $needsFeatures = $this->routeIs($routeName, ['home', 'about', 'packages', 'pricing', 'reseller-panel', 'iptv-subscription-service']);
+        $needsPricing = $this->routeIs($routeName, ['home', 'packages', 'pricing', 'reseller-panel', 'iptv-subscription-service']);
+        $needsTestimonials = $this->routeIs($routeName, ['home', 'about', 'reseller-panel', 'iptv-subscription-service']);
 
         $features      = $needsFeatures ? $this->features() : [];
         $serviceCards  = $routeName === 'home' ? $this->remember('home-services', now()->addMinutes(30), fn () => $this->serviceCards(), []) : [];
@@ -431,10 +431,47 @@ class UiData
                         'icon' => $s->icon,
                     ];
                 })
-                ->toArray();
+                ->pipe(fn ($items) => $this->withIptvSubscriptionMenuItem($items->toArray()));
         }
 
         return [];
+    }
+
+    /** @param array<int,array<string,mixed>> $items */
+    private function withIptvSubscriptionMenuItem(array $items): array
+    {
+        $targetPath = '/iptv-subscription-service';
+
+        foreach ($items as &$item) {
+            $label = Str::of((string) ($item['label'] ?? ''))->lower()->squish()->value();
+            $isMore = in_array($label, ['more', 'services', Str::of(__('messages.nav_services'))->lower()->squish()->value()], true);
+
+            if (! $isMore) {
+                continue;
+            }
+
+            $children = $item['children'] ?? [];
+            $hasLink = collect($children)->contains(function ($child) use ($targetPath) {
+                $url = (string) ($child['url'] ?? '');
+                return Str::contains($url, $targetPath);
+            });
+
+            if (! $hasLink) {
+                $children[] = [
+                    'id' => null,
+                    'label' => __('messages.nav_iptv_subscription_service'),
+                    'url' => route('iptv-subscription-service'),
+                    'open_new_tab' => false,
+                    'children' => [],
+                ];
+            }
+
+            $item['children'] = $children;
+            break;
+        }
+        unset($item);
+
+        return $items;
     }
 
     /** @return array<int,array<string,mixed>> */
@@ -514,6 +551,7 @@ class UiData
             '/faqs' => 'faqs',
             '/faq' => 'faqs',
             '/packages' => 'packages',
+            '/iptv-subscription-service' => 'iptv-subscription-service',
             '/iptv-applications' => 'iptv-applications',
             '/activate' => 'activate',
         ];
@@ -536,6 +574,7 @@ class UiData
             'reseller panel' => 'reseller-panel',
             'pricing' => 'pricing',
             'movies/series' => 'movies',
+            'iptv subscription service' => 'iptv-subscription-service',
         ];
 
         if (isset($labelToRoute[$labelKey])) {
