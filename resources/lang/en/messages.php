@@ -637,4 +637,171 @@ return [
   'home_products_share_text' => 'Check out :name',
   'home_products_type_digital' => 'Digital',
   'home_products_type_affiliate' => 'Affiliate',
+
+  // Home — two-column image + text section
+  'home_split_eyebrow' => 'Entertainment Without Limits',
+  'home_split_heading' => 'Stream on Any Device, Anywhere You Are',
+  'home_split_text' => 'From the smart TV in your living room to the phone in your pocket, OpplexIPTV keeps your favourite live channels and on-demand titles within reach. One subscription delivers a smooth, reliable picture across every screen in your home, with simple setup and steady performance designed to fit the way you watch today.',
+  'home_split_image_alt' => 'Live TV and on-demand content streaming across multiple devices with OpplexIPTV',
+
+  // Home — map embed section (last)
+  'home_map_heading' => 'Find Us in Saskatoon',
+  'home_map_text' => 'We are proudly based in Saskatoon, Saskatchewan, Canada, and serving viewers everywhere. Use the map below to see our location, and reach out any time if you would like to learn more about our service.',
+  'home_map_title' => 'Map showing the OpplexIPTV location in Saskatoon, SK, Canada',
+  'home_map_aria' => 'Our business location map for Saskatoon, Saskatchewan, Canada',
+
+  /*
+  |----------------------------------------------------------------------
+  | Page-specific FAQ sections (distinct content per page)
+  |----------------------------------------------------------------------
+  */
+  'page_faq' => [
+    'section_title' => 'Frequently Asked Questions',
+
+    // Home
+    'home' => [
+      'q1' => 'What is Opplex IPTV?',
+      'a1' => 'Opplex IPTV is a premium streaming service that gives you 12,000+ live TV channels, 50,000+ movies and 5,000+ TV series in one app — no cable box or contract required.',
+      'q2' => 'Can I try Opplex IPTV before I buy?',
+      'a2' => 'Yes. We offer a low-cost trial so you can test channel quality and stability on your own device before choosing a full subscription.',
+      'q3' => 'Which devices can I watch on?',
+      'a3' => 'Opplex IPTV runs on Amazon Firestick, Android TV, Smart TVs (Samsung & LG), Android & iOS phones, tablets, and Windows/Mac computers.',
+      'q4' => 'Do I need any extra hardware?',
+      'a4' => 'No special hardware is needed. You only need an internet connection and a compatible device with an IPTV player app installed.',
+      'q5' => 'How fast is activation after I order?',
+      'a5' => 'Most subscriptions are activated within minutes of payment, and your login details are sent to you by email and WhatsApp.',
+      'q6' => 'Is Opplex IPTV available worldwide?',
+      'a6' => 'Yes, our service works anywhere with a stable internet connection, including across Europe, the USA, Canada and the Middle East.',
+    ],
+
+    // Packages
+    'packages' => [
+      'q1' => 'What is included in each Opplex IPTV package?',
+      'a1' => 'Every package includes full access to our 12,000+ live channels, complete movie and series library, EPG guide and 4K/HD streaming where available.',
+      'q2' => 'What is the difference between the monthly and yearly packages?',
+      'a2' => 'The content is identical — longer plans simply cost less per month and save you from renewing as often.',
+      'q3' => 'How many devices can I use on one package?',
+      'a3' => 'A standard package supports one device (connection) at a time. If you need more simultaneous streams, contact us about a multi-connection plan.',
+      'q4' => 'Can I upgrade or extend my package later?',
+      'a4' => 'Absolutely. You can renew or move to a longer plan at any time and we will simply extend your existing line.',
+      'q5' => 'Do packages renew automatically?',
+      'a5' => 'No. There is no auto-billing — you stay in control and renew only when you choose to.',
+      'q6' => 'Is there a discount for longer subscriptions?',
+      'a6' => 'Yes, the longer the plan you choose the lower the effective monthly price. Reach out on WhatsApp for current offers.',
+    ],
+
+    // Pricing
+    'pricing' => [
+      'q1' => 'How much does Opplex IPTV cost?',
+      'a1' => 'Plans start from just a few dollars a month, with bigger savings on quarterly and yearly subscriptions. Check the pricing table above for live rates.',
+      'q2' => 'What payment methods do you accept?',
+      'a2' => 'We accept major cards and popular online payment methods. For other options, message us and we will help you complete your order.',
+      'q3' => 'Are there any hidden or setup fees?',
+      'a3' => 'No. The price you see is the price you pay — there are no activation or setup charges.',
+      'q4' => 'Is my payment information secure?',
+      'a4' => 'Yes. All payments are processed over encrypted, industry-standard secure connections and we never store your card details.',
+      'q5' => 'Do you offer refunds?',
+      'a5' => 'We offer a trial so you can test the service first. Refunds are handled according to our refund policy — contact support if you have an issue.',
+      'q6' => 'Why is Opplex IPTV cheaper than cable TV?',
+      'a6' => 'Because we stream over the internet there are no installation crews or hardware rentals, so we pass those savings on to you.',
+    ],
+
+    // About
+    'about' => [
+      'q1' => 'Who is Opplex IPTV?',
+      'a1' => 'Opplex IPTV is an established streaming provider focused on delivering reliable, high-quality live TV and on-demand content to viewers around the world.',
+      'q2' => 'How reliable is your streaming service?',
+      'a2' => 'Our infrastructure is built on high-capacity servers with anti-buffering technology to keep playback smooth, even during peak hours.',
+      'q3' => 'What customer support do you provide?',
+      'a3' => 'We provide friendly support by email and WhatsApp to help with setup, activation and any playback questions you may have.',
+      'q4' => 'Do you keep adding new channels and content?',
+      'a4' => 'Yes. Our channel list and VOD library are updated continuously so you always have access to the latest content.',
+      'q5' => 'How do I get started with Opplex IPTV?',
+      'a5' => 'Choose a plan, complete your order, and we will send your login details within minutes so you can start watching right away.',
+    ],
+
+    // Reseller panel
+    'reseller' => [
+      'q1' => 'How do I become an Opplex IPTV reseller?',
+      'a1' => 'Sign up for a reseller panel and purchase a starter pack of credits. Each credit lets you create or renew a customer subscription.',
+      'q2' => 'How does the reseller credit system work?',
+      'a2' => 'You buy credits in bulk at wholesale rates, then spend them to activate subscriptions for your own customers whenever you like.',
+      'q3' => 'Can I set my own prices as a reseller?',
+      'a3' => 'Yes. You are free to set your own retail prices and keep the full margin between your selling price and the credit cost.',
+      'q4' => 'Is there a minimum order to start reselling?',
+      'a4' => 'Reseller pricing begins once you purchase the minimum starter pack of credits — contact us for the current entry amount.',
+      'q5' => 'What support do resellers receive?',
+      'a5' => 'Resellers get a dedicated management panel plus priority WhatsApp support to help you grow and manage your customer base.',
+    ],
+
+    // IPTV subscription service
+    'subscription' => [
+      'q1' => 'What is included in an Opplex IPTV subscription?',
+      'a1' => 'Your subscription unlocks all live channels, the full movies and series library, the on-screen TV guide and multi-device app support.',
+      'q2' => 'How do I activate my subscription?',
+      'a2' => 'After payment we send you login codes and a URL. Enter them into your IPTV player app and your channels load automatically.',
+      'q3' => 'Can I use my subscription while travelling abroad?',
+      'a3' => 'Yes. Your subscription works anywhere you have a stable internet connection, so you can keep watching while you travel.',
+      'q4' => 'What internet speed do I need?',
+      'a4' => 'We recommend at least 15-25 Mbps for smooth HD/4K streaming. Lower speeds work but may reduce picture quality.',
+      'q5' => 'What happens when my subscription expires?',
+      'a5' => 'Playback simply pauses until you renew. Renewing keeps the same line active without any new setup.',
+    ],
+
+    // IPTV applications
+    'apps' => [
+      'q1' => 'Which apps work with Opplex IPTV?',
+      'a1' => 'Opplex IPTV works with popular players such as IPTV Smarters Pro, our own Opplex/XTV apps, IBO Player and other Xtream-compatible apps.',
+      'q2' => 'How do I install the IPTV app on my device?',
+      'a2' => 'Download the app for your platform from this page, install it, and then sign in with the login details we send you.',
+      'q3' => 'Where do I enter my login or Xtream codes?',
+      'a3' => 'Open the app, choose "Login with Xtream Codes / username", then enter the username, password and server URL from your activation email.',
+      'q4' => 'The app will not load my channels — what should I do?',
+      'a4' => 'Check your internet connection, confirm your subscription is active, and re-enter your codes exactly as provided. If it persists, contact support.',
+      'q5' => 'Are the apps free to download?',
+      'a5' => 'Yes, the player apps are free. You only pay for your Opplex IPTV subscription, which provides the content.',
+    ],
+
+    // Contact
+    'contact' => [
+      'q1' => 'How can I contact Opplex IPTV support?',
+      'a1' => 'You can reach us using the form on this page, by email, or instantly on WhatsApp at +1 (639) 390-3194.',
+      'q2' => 'How quickly will I get a reply?',
+      'a2' => 'We aim to respond within minutes during working hours and as soon as possible at all other times.',
+      'q3' => 'I have not received my login details — what do I do?',
+      'a3' => 'Please check your spam folder first. If they are still missing, message us on WhatsApp with your order email and we will resend them.',
+      'q4' => 'Can you help me set up my device?',
+      'a4' => 'Yes. Our team is happy to guide you step by step through installation and activation on any supported device.',
+      'q5' => 'Do you offer support in other languages?',
+      'a5' => 'Our site supports multiple languages and our team can assist customers around the world.',
+    ],
+
+    // Movies / VOD
+    'movies' => [
+      'q1' => 'How many movies and series are available?',
+      'a1' => 'Opplex IPTV includes 50,000+ movies and 5,000+ TV series on demand, spanning the latest releases and timeless classics.',
+      'q2' => 'Is the content available in 4K or HD?',
+      'a2' => 'Many titles stream in Full HD and 4K where the source supports it, so you get the best picture your device and connection allow.',
+      'q3' => 'How often is new content added?',
+      'a3' => 'Our video-on-demand library is refreshed regularly with new movies and the latest episodes of popular series.',
+      'q4' => 'Why does a title sometimes buffer?',
+      'a4' => 'Buffering is usually caused by a slow connection or peak-time traffic. Pausing for 10-15 seconds before resuming usually clears it.',
+      'q5' => 'Can I request a movie or series that is not listed?',
+      'a5' => 'Yes. Message us on WhatsApp with the title and we will check availability and add it where possible.',
+    ],
+
+    // Shop
+    'shop' => [
+      'q1' => 'What can I buy in the Opplex shop?',
+      'a1' => 'Our shop offers streaming devices, accessories and digital products that make getting started with Opplex IPTV quick and easy.',
+      'q2' => 'Do I need to buy a device to use Opplex IPTV?',
+      'a2' => 'No. If you already own a Firestick, Smart TV, phone or computer you can use that. A dedicated device is optional for the best experience.',
+      'q3' => 'Do the streaming devices come pre-configured?',
+      'a3' => 'Where offered, devices can come ready to stream so you can plug in and watch with minimal setup.',
+      'q4' => 'How are shop orders delivered?',
+      'a4' => 'Physical items are shipped to your address, while digital products and codes are delivered instantly by email after payment.',
+      'q5' => 'Can you help me choose the right device?',
+      'a5' => 'Of course. Contact us on WhatsApp with your needs and budget and we will recommend the best option for you.',
+    ],
+  ],
 ];

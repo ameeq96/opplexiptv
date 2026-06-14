@@ -120,6 +120,11 @@ class UiData
         $testimonials  = $needsTestimonials ? $this->remember('testimonials', now()->addMinutes(30), fn () => $this->testimonials(), $this->fallbackTestimonials()) : [];
         $faqs          = $routeName === 'faqs' ? $this->faqs() : [];
 
+        $pageFaqRoutes = ['home', 'packages', 'pricing', 'about', 'reseller-panel', 'iptv-subscription-service', 'iptv-applications', 'contact', 'movies', 'shop'];
+        $pageFaqs      = $this->routeIs($routeName, $pageFaqRoutes)
+            ? $this->remember("page-faqs:{$routeName}", now()->addMinutes(30), fn () => $this->pageFaqs($routeName), [])
+            : [];
+
         $platforms = $routeName === 'iptv-applications' ? $this->enrichPlatforms($this->platforms()) : [];
         [$packagesDropdown, $resellerPanelPackagesDropdown] = $this->routeIs($routeName, ['buynow', 'buynowpanel'])
             ? $this->dropdowns()
@@ -141,6 +146,7 @@ class UiData
             'resellerPlans'  => $resellerPlans,
             'testimonials'   => $testimonials,
             'faqs'           => $faqs,
+            'pageFaqs'       => $pageFaqs,
             'platforms'      => $platforms,
 
             'num1' => $a,
@@ -821,6 +827,52 @@ class UiData
             ['question' => __('messages.faq.q14'), 'answer' => __('messages.faq.a14'), 'images' => []],
             ['question' => __('messages.faq.q15'), 'answer' => __('messages.faq.a15'), 'images' => []],
         ];
+    }
+
+    /**
+     * Page-specific FAQ items. Each page gets its own distinct set of
+     * questions so the accordion content never repeats across the site.
+     *
+     * @return array<int,array<string,mixed>>
+     */
+    private function pageFaqs(string $routeName): array
+    {
+        $key = match ($routeName) {
+            'home'                      => 'home',
+            'packages'                  => 'packages',
+            'pricing'                   => 'pricing',
+            'about'                     => 'about',
+            'reseller-panel'            => 'reseller',
+            'iptv-subscription-service' => 'subscription',
+            'iptv-applications'         => 'apps',
+            'contact'                   => 'contact',
+            'movies'                    => 'movies',
+            'shop'                      => 'shop',
+            default                     => null,
+        };
+
+        if ($key === null) {
+            return [];
+        }
+
+        $items = [];
+        for ($i = 1; $i <= 6; $i++) {
+            $question = __("messages.page_faq.{$key}.q{$i}");
+
+            // Stop once we run past the defined questions for this page
+            // (a missing translation returns the key itself).
+            if ($question === "messages.page_faq.{$key}.q{$i}") {
+                break;
+            }
+
+            $items[] = [
+                'question' => $question,
+                'answer'   => __("messages.page_faq.{$key}.a{$i}"),
+                'images'   => [],
+            ];
+        }
+
+        return $items;
     }
 
     /**

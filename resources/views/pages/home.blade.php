@@ -10,6 +10,9 @@
 
     @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
 
+    {{-- Two-column section: image + heading/paragraph --}}
+    @include('includes._home-feature-split')
+
     @include('includes._best-packages')
 
     {{-- @if(!empty($homeProducts) && count($homeProducts) > 0)
@@ -175,7 +178,15 @@
         @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
     @endunless
 
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
+
+    {{-- Map embed (last section) --}}
+    @include('includes._home-map')
+
     @include('includes._check-trail')
+
+
 @stop
 
 @section('jsonld')

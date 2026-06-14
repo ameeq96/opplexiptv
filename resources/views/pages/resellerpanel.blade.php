@@ -72,6 +72,9 @@
     @endunless
 
     
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
+
     {{-- Trial --}}
     @include('includes._check-trail')
 @stop

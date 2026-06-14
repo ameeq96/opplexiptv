@@ -45,6 +45,9 @@
     <!-- Choose Us Section -->
     @include('includes._choose-us')
 
+        <!-- FAQ Section -->
+    @include('includes._faq-section')
+
         <!-- Check Trial Section -->
     @include('includes._check-trail')
 @stop

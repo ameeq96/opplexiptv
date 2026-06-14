@@ -57,5 +57,7 @@
 
     <!-- End Internet Section Three -->
 
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
 
 @stop

@@ -189,4 +189,7 @@
             @endif
         </ul>
     </div>
+
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
 @stop

@@ -102,5 +102,8 @@
         @include('includes._channels-carousel')
     @endunless
 
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
+
     @include('includes._check-trail')
 @stop

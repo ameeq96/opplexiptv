@@ -86,4 +86,7 @@
             </div>
         </div>
     </section>
+
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
 @endsection

@@ -183,4 +183,7 @@
         </div>
     </section>
     <!-- End Contact Page Section -->
+
+    {{-- FAQ Section --}}
+    @include('includes._faq-section')
 @stop
