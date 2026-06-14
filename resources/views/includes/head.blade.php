@@ -149,7 +149,7 @@
 
         .page-title .auto-container {
             position: static;
-            max-width: 1200px;
+            max-width: 1340px;
             padding: 0 15px;
             margin: 0 auto;
         }
@@ -233,7 +233,7 @@
 
         .page-title .auto-container {
             position: static;
-            max-width: 1200px;
+            max-width: 1340px;
             padding: 0 15px;
             margin: 0 auto;
         }
@@ -375,7 +375,7 @@
 
         .page-title .auto-container {
             position: static;
-            max-width: 1200px;
+            max-width: 1340px;
             padding: 0 15px;
             margin: 0 auto;
         }
@@ -550,7 +550,7 @@
 
         .auto-container {
             position: static;
-            max-width: 1200px;
+            max-width: 1340px;
             padding: 0 15px;
             margin: 0 auto;
         }
