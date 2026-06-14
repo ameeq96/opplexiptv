@@ -5,7 +5,7 @@
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <img src="{{ asset('images/resource/streaming-3.webp') }}"
                     alt="{{ __('messages.home_split_image_alt') }}" loading="lazy" decoding="async"
-                    width="600" height="400" class="img-fluid" style="width: 100%; height: auto;" />
+                    width="390" height="475" class="img-fluid" style="width: 100%; height: auto;" />
             </div>
             <div class="col-lg-6" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                 <div class="home-split-section__eyebrow mb-2">{{ __('messages.home_split_eyebrow') }}</div>

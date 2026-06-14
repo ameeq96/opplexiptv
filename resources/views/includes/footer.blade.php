@@ -32,7 +32,7 @@
     $needsStandalonePopper = !$isMoviesRoute;
     $needsBootstrap = !$isMoviesRoute;
     $needsCustomScrollbar = !$isMoviesRoute;
-    $needsMixItUp = !$isTargetOptimizedRoute;
+    $needsMixItUp = false; // MixItUp not used anywhere: movie filtering uses vanilla JS (applyFilter). Avoids shipping legacy JS.
     $needsFancybox = !$isTargetOptimizedRoute;
     $needsAppear = !$isTargetOptimizedRoute;
     $needsParallax = !$isTargetOptimizedRoute;
