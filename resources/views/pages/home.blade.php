@@ -10,10 +10,10 @@
 
     @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
 
+    @include('includes._best-packages')
+
     {{-- Two-column section: image + heading/paragraph --}}
     @include('includes._home-feature-split')
-
-    @include('includes._best-packages')
 
     {{-- @if(!empty($homeProducts) && count($homeProducts) > 0)
         <section class="shop-section shop-section-2"
