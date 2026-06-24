@@ -63,7 +63,7 @@ class HomeController extends Controller
     }
 
     public function pricing()
-    {
+    {   
         return view('pages.pricing');
     }
 
@@ -515,7 +515,7 @@ class HomeController extends Controller
             ->with('success', 'Order created with ID #' . $order->id);
     }
 
-    public function thankYou() 
+    public function thankYou()
     {
         return view('pages.checkout.thank-you');
     }

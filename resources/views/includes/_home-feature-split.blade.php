@@ -4,9 +4,9 @@
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 {{-- Below-fold image after pricing; keep it lazy so the hero stays fast. --}}
-                <img src="{{ asset('images/resource/streaming-3.webp') }}"
+                <img src="{{ asset('images/resource/movie-night-tv.webp') }}"
                     alt="{{ __('messages.home_split_image_alt') }}" loading="lazy" fetchpriority="low" decoding="async"
-                    width="390" height="475" class="img-fluid" style="width: 100%; height: auto;" />
+                    width="1600" height="900" class="img-fluid" style="width: 100%; height: auto;" />
             </div>
             <div class="col-lg-6" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                 <div class="home-split-section__eyebrow mb-2">{{ __('messages.home_split_eyebrow') }}</div>
