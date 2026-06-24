@@ -47,7 +47,7 @@
                             @if (!$isRtl)
                                 <div class="separator"></div>
                             @endif
-                            <h3>{{ __('messages.sub_heading') }}</h3>
+                            <h1 class="h3">{{ __('messages.sub_heading') }}</h1>
                         </div>
                         <div class="text">{{ __('messages.description') }}</div>
                         <div class="price">{!! __('messages.price') !!}</div>

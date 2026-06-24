@@ -26,7 +26,7 @@
                     <div class="inner-column">
                         <div class="sec-title" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                             <div class="separator"></div>
-                            <h2 class="h3">{{ $faqTitle }}</h2>
+                            <h3 class="h3">{{ $faqTitle }}</h3>
                         </div>
 
                         <ul class="accordion-box">

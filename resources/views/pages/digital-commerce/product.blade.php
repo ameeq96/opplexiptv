@@ -18,7 +18,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="bg-white rounded p-4">
-                    <h2>{{ $product->title }}</h2>
+                    <h1 class="h2">{{ $product->title }}</h1>
                     <p class="mb-3">{{ $productDescription }}</p>
                     <div class="mb-2"><strong>Type:</strong> {{ ucfirst($product->delivery_type) }}</div>
                     <div class="mb-3"><strong>Price:</strong> {{ strtoupper((string) ($product->currency ?: 'USD')) }} {{ number_format((float) $product->price, 2) }}</div>

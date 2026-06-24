@@ -1,0 +1,28 @@
+/*
+ * SEO heading-hierarchy fix.
+ *
+ * The site now uses exactly one <h1> and one <h2> per page; several section
+ * headings were demoted from <h2> to <h3>. Some of those headings were sized
+ * by element-qualified selectors (".sec-title h2", ".unlimited-showcase__content h2")
+ * rather than by utility classes, so the rules below re-apply the SAME visual
+ * size/color to their <h3> form. Nothing about the design changes — only the tag.
+ */
+
+/* Section titles that previously rendered as ".sec-title h2" (clamp 34–54px) */
+.pricing-section.style-two .sec-title h3,
+.home-map-section .sec-title h3,
+.faq-section .sec-title h3 {
+    color: #0f172a;
+    font-size: clamp(34px, 4vw, 54px);
+    line-height: 1.03;
+    letter-spacing: -0.04em;
+}
+
+/* "We provide unlimited" heading (previously ".unlimited-showcase__content h2") */
+.unlimited-showcase__content h3:not(.h6) {
+    margin: 0 0 16px;
+    color: #0f172a;
+    font-size: clamp(32px, 4vw, 58px);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}

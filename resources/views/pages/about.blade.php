@@ -27,7 +27,7 @@
             ])>
                 <div class="pull-left">
                     <div class="separator"></div>
-                    <h3 id="choose-us-title">{!! __('messages.choose_us.title') !!}</h3>
+                    <h1 id="choose-us-title" class="h3">{!! __('messages.choose_us.title') !!}</h1>
                 </div>
 
                 <div class="pull-right">

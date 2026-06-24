@@ -3,7 +3,7 @@
     <div class="auto-container">
         <div class="sec-title mb-4" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
             <div class="separator"></div>
-            <h2 id="home-map-heading" class="h3">{{ __('messages.home_map_heading') }}</h2>
+            <h3 id="home-map-heading" class="h3">{{ __('messages.home_map_heading') }}</h3>
             <p class="mb-0">{{ __('messages.home_map_text') }}</p>
         </div>
         <div class="home-map-section__embed" role="region" aria-label="{{ __('messages.home_map_aria') }}"

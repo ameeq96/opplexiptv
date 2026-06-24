@@ -10,7 +10,7 @@
             </div>
             <div class="col-lg-6" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                 <div class="home-split-section__eyebrow mb-2">{{ __('messages.home_split_eyebrow') }}</div>
-                <h2 id="home-split-heading" class="mb-3">{{ __('messages.home_split_heading') }}</h2>
+                <h3 id="home-split-heading" class="mb-3">{{ __('messages.home_split_heading') }}</h3>
                 <p class="home-split-section__text mb-0">{{ __('messages.home_split_text') }}</p>
             </div>
         </div>

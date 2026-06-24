@@ -5,7 +5,7 @@
 <section class="shop-section mt-5" style="background-image:url('{{ asset('images/background/4.webp') }}');">
     <div class="auto-container">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="h3 text-white mb-0">Digital Shop</h2>
+            <h1 class="h3 text-white mb-0">Digital Shop</h1>
             <span></span>
         </div>
 

@@ -3,7 +3,7 @@
     <div class="auto-container">
         <div class="sec-title light centered services-showcase__heading">
             <div class="services-showcase__eyebrow">{{ __('messages.home_services_eyebrow') }}</div>
-            <h2 class="text-white" aria-label="Explore Opplex IPTV Services">{{ __('messages.explore_services') }}</h2>
+            <h3 class="text-white" aria-label="Explore Opplex IPTV Services">{{ __('messages.explore_services') }}</h3>
             <p>{{ __('messages.home_services_intro') }}</p>
         </div>
 

@@ -81,7 +81,7 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="content-column">
-                    <h2 id="iptv-subscription-setup-title" class="h3">{{ $page['setup_title'] ?? '' }}</h2>
+                    <h3 id="iptv-subscription-setup-title" class="h3">{{ $page['setup_title'] ?? '' }}</h3>
                     <div class="text text-dark">{{ $page['setup_text'] ?? '' }}</div>
 
                     @if ($setupPoints)

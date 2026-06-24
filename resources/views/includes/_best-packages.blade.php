@@ -6,7 +6,7 @@
                 <div class="separator"></div>
             @endunless
 
-            <h2 class="h3"><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h2>
+            <h3 class="h3"><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h3>
 
             @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
                 <p class="h4">{{ $pricingSection['subheading'] ?? __('messages.pricing_subheading') }}</p>

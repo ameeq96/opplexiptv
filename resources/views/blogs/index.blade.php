@@ -78,7 +78,7 @@
                 <div class="blog-featured" aria-label="{{ __('messages.featured') }}">
                     <div class="blog-featured__content">
                         <span class="blog-tag">{{ __('messages.featured') }}</span>
-                        <h2 class="mt-3 text-white">{{ $featuredTranslation?->title }}</h2>
+                        <h1 class="h2 mt-3 text-white">{{ $featuredTranslation?->title }}</h1>
                         <p class="mt-2">{{ $featuredTranslation?->excerpt }}</p>
                         <div class="blog-card__meta mt-3">
                             <span>{{ optional($featured->published_at)->format('M d, Y') }}</span>

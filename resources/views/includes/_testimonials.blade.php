@@ -2,7 +2,7 @@
     <div class="auto-container">
         <div class="sec-title centered testimonial-showcase__heading">
             <div class="title" aria-label="Testimonials Section Subheading">{{ __('messages.testimonials_title') }}</div>
-            <h2 class="h3" aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h2>
+            <h3 class="h3" aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h3>
             <p>{{ __('messages.home_testimonials_intro') }}</p>
         </div>
 

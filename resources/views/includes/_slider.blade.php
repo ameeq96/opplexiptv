@@ -60,7 +60,7 @@
                                         <div class="inner-box slider-font {{ textAlignment($isRtl) }}">
                                             @if ($index === 0)
                                                 <h1>{{ __('messages.home_hero_watch_live', ['title' => $movie['safe_title']]) }}</h1>
-                                                <h1 class="d-none">
+                                                <span class="d-none">
                                                     @switch($locale)
                                                         @case('ar')
                                                             شاهد {{ $movie['safe_title'] }} مباشرة بجودة HD
@@ -92,7 +92,7 @@
                                                         @default
                                                             Watch {{ $movie['safe_title'] }} Live in HD
                                                     @endswitch
-                                                </h1>
+                                                </span>
                                             @else
                                                 <h3 class="text-white">{{ $movie['safe_title'] }}</h3>
                                             @endif
@@ -140,7 +140,7 @@
                                 <div class="inner-box slider-font {{ textAlignment($isRtl) }}">
                                     @if ($index === 0)
                                         <h1>{{ __('messages.home_hero_watch_live', ['title' => $movie['safe_title']]) }}</h1>
-                                        <h1 class="d-none">
+                                        <span class="d-none">
                                             @switch($locale)
                                                 @case('ar')
                                                     شاهد {{ $movie['safe_title'] }} مباشرة بجودة HD
@@ -172,7 +172,7 @@
                                                 @default
                                                     Watch {{ $movie['safe_title'] }} Live in HD
                                             @endswitch
-                                        </h1>
+                                        </span>
                                     @else
                                         <h3 class="text-white">{{ $movie['safe_title'] }}</h3>
                                     @endif
