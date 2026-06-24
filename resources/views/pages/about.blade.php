@@ -2,6 +2,14 @@
 
 @section('title', __('messages.about.title'))
 
+@push('schema')
+    {!! jsonld(seo()->aboutPage(
+        __('messages.about.title'),
+        'Learn about Opplex IPTV — a premium IPTV provider offering 4K live streaming, 12,000+ channels, a free trial and 24/7 support worldwide.',
+        route('about'),
+    )) !!}
+@endpush
+
 @section('content')
     <x-page-title :title="__('messages.about.title_short')" :breadcrumbs="[['url' => '/', 'label' => __('messages.nav.home')], ['label' => __('messages.nav.about_us')]]" background="images/background/7.webp" :rtl="$isRtl"
         aria-label="About Us Page" />

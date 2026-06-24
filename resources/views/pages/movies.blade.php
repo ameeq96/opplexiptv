@@ -1,6 +1,14 @@
 @extends('layouts.default')
 @section('title', __('messages.movies_title'))
 
+@push('schema')
+    {!! jsonld(seo()->collectionPage(
+        __('messages.movies_title'),
+        trans('meta.movies.description'),
+        route('movies'),
+    )) !!}
+@endpush
+
 @section('content')
     <section class="movie-page-section">
         <div class="auto-container">

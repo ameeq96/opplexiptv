@@ -42,6 +42,39 @@ if (!function_exists('v')) {
     }
 }
 
+if (!function_exists('seo')) {
+    /**
+     * Resolve the central JSON-LD schema builder.
+     */
+    function seo(): \App\Services\SchemaService
+    {
+        return app(\App\Services\SchemaService::class);
+    }
+}
+
+if (!function_exists('jsonld')) {
+    /**
+     * Render a schema array into a <script type="application/ld+json"> tag.
+     * Returns an empty string for null/empty input so callers can emit
+     * unconditionally.
+     *
+     * @param  array<string,mixed>|null  $schema
+     */
+    function jsonld(?array $schema): string
+    {
+        if (empty($schema)) {
+            return '';
+        }
+
+        $json = json_encode($schema, \App\Services\SchemaService::JSON_FLAGS);
+        if ($json === false) {
+            return '';
+        }
+
+        return '<script type="application/ld+json">' . $json . '</script>';
+    }
+}
+
 if (!function_exists('admin_is_rtl')) {
     function admin_is_rtl(): bool
     {

@@ -1,6 +1,14 @@
 ﻿@extends('layouts.default')
 @section('title', 'Shop')
 
+@push('schema')
+    {!! jsonld(seo()->collectionPage(
+        'Shop — Streaming Devices & TV Accessories',
+        'Curated streaming and TV gear: Android TV boxes, Fire TV, Roku, wall mounts and accessories.',
+        route('shop'),
+    )) !!}
+@endpush
+
 @section('content')
     <x-page-title
         :title="'Shop'"

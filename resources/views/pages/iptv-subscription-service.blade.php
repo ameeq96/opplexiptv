@@ -2,6 +2,15 @@
 
 @section('title', __('messages.iptv_subscription_service.title'))
 
+@push('schema')
+    {!! jsonld(seo()->service(
+        'IPTV Subscription Service',
+        'Premium IPTV subscription service with live channels, sports, movies, series and 4K streaming, fast setup and a free trial.',
+        route('iptv-subscription-service'),
+        seo()->packageOffers('iptv'),
+    )) !!}
+@endpush
+
 @section('content')
     @php
         $page = __('messages.iptv_subscription_service');

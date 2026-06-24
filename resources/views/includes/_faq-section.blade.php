@@ -15,6 +15,9 @@
 @endphp
 
 @if (!empty($faqItems))
+    @push('schema')
+        {!! jsonld(seo()->faqPage($faqItems)) !!}
+    @endpush
     <section class="faq-section"
         style="background-image: url('{{ asset('images/background/4.webp') }}'); direction: {{ $isRtl ? 'rtl' : 'ltr' }};">
         <div class="auto-container">

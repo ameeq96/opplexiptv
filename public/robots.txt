@@ -1,7 +1,46 @@
+# Opplex IPTV — robots.txt
+
+# Default rules for all crawlers
 User-agent: *
 Disallow: /admin/
 Disallow: /send-email
+Disallow: /*/send-email
 Disallow: /redirect
+Disallow: /*/redirect
+Disallow: /*?page=
+Disallow: /*&page=
+Disallow: /*?price=
+Disallow: /*&price=
+Disallow: /*?category=
+Disallow: /*&category=
+Disallow: /*?target=
+Disallow: /*&target=
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
+Allow: /
+
+# AI & answer-engine crawlers are welcome to read and cite our content.
+# (Admin, redirect/email endpoints and faceted/parameter URLs stay blocked.)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: Meta-ExternalAgent
+Disallow: /admin/
+Disallow: /send-email
+Disallow: /*/send-email
+Disallow: /redirect
+Disallow: /*/redirect
 Disallow: /*?page=
 Disallow: /*&page=
 Disallow: /*?price=

@@ -43,6 +43,11 @@
             }, 4000);
         });
     </script>
+
+    {{-- Per-page JSON-LD (breadcrumbs, FAQ, HowTo, Service, page-type nodes).
+         Placed at end of <body> so @push('schema') from page top-level, components
+         (x-page-title) and includes (_faq-section) are all captured. --}}
+    @stack('schema')
 </body>
 
 </html>

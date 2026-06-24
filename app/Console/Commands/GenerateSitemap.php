@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -20,17 +21,24 @@ class GenerateSitemap extends Command
         $defaultLocale = LaravelLocalization::getDefaultLocale();
         $hideDefault   = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
 
-        // Public named routes only (from your routes)
+        // Public, indexable named routes (localized, with hreflang clusters).
         $namedRoutes = [
             'home',
             'about',
             'pricing',
-            'movies',
-            'reseller-panel',
             'iptv-subscription-service',
+            'reseller-panel',
             'iptv-applications',
             'faqs',
             'contact',
+            'shop',
+            'movies',
+            'activate',
+            'blogs.index',
+            'digital.shop',
+            'terms-of-service',
+            'privacy-policy',
+            'refund-policy',
         ];
 
         // XML init - correct namespaces (note: xmlns:xhtml on root only)
@@ -85,8 +93,8 @@ class GenerateSitemap extends Command
             $urlNode = $xml->addChild('url');
             $urlNode->addChild('loc', htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'));
             $urlNode->addChild('lastmod', now()->toAtomString());
-            $urlNode->addChild('changefreq', 'weekly');
-            $urlNode->addChild('priority', '0.8');
+            $urlNode->addChild('changefreq', $routeName === 'home' ? 'daily' : 'weekly');
+            $urlNode->addChild('priority', $routeName === 'home' ? '1.0' : '0.8');
 
             // xhtml:link alternates (no per-tag xmlns attributes!)
             foreach ($cluster as $lg => $href) {
@@ -103,12 +111,102 @@ class GenerateSitemap extends Command
             $xdef->addAttribute('href', $canonicalUrl);
         }
 
+        // Dynamic, DB-driven URLs (canonical only). Wrapped so a missing DB
+        // never breaks the static portion of the sitemap.
+        $this->addBlogPosts($xml, $defaultLocale);
+        $this->addDigitalProducts($xml);
+
         // Write to public/sitemap.xml
         $path = public_path('sitemap.xml');
         File::put($path, $xml->asXML());
 
         $this->info("Sitemap generated at: {$path}");
         return self::SUCCESS;
+    }
+
+    /** Add published blog posts (using the default-locale slug as canonical). */
+    private function addBlogPosts(\SimpleXMLElement $xml, string $defaultLocale): void
+    {
+        if (!$this->hasTable('blogs') || !$this->hasTable('blog_translations') || !Route::has('blogs.show')) {
+            return;
+        }
+
+        try {
+            $blogs = \App\Models\Blog::query()
+                ->when(method_exists(\App\Models\Blog::class, 'scopePublished'), fn ($q) => $q->published())
+                ->with('translations')
+                ->get();
+        } catch (\Throwable $e) {
+            $this->warn('Skipped blog posts in sitemap: ' . $e->getMessage());
+            return;
+        }
+
+        foreach ($blogs as $blog) {
+            $translation = optional($blog->translations)->firstWhere('locale', $defaultLocale)
+                ?? optional($blog->translations)->first();
+
+            $slug = $translation->slug ?? null;
+            if (!$slug) {
+                continue;
+            }
+
+            $loc = $this->withoutQueryAndFragment(route('blogs.show', $slug));
+            if ($loc === null) {
+                continue;
+            }
+
+            $lastmod = optional($blog->updated_at ?? $blog->published_at)->toAtomString() ?? now()->toAtomString();
+            $this->addSimpleUrl($xml, $loc, $lastmod, '0.6');
+        }
+    }
+
+    /** Add active digital products. */
+    private function addDigitalProducts(\SimpleXMLElement $xml): void
+    {
+        if (!$this->hasTable('digital_products') || !Route::has('digital.product.show')) {
+            return;
+        }
+
+        try {
+            $products = \App\Models\Digital\DigitalProduct::query()
+                ->where('is_active', true)
+                ->get(['id', 'slug', 'updated_at']);
+        } catch (\Throwable $e) {
+            $this->warn('Skipped digital products in sitemap: ' . $e->getMessage());
+            return;
+        }
+
+        foreach ($products as $product) {
+            if (empty($product->slug)) {
+                continue;
+            }
+
+            $loc = $this->withoutQueryAndFragment(route('digital.product.show', $product->slug));
+            if ($loc === null) {
+                continue;
+            }
+
+            $lastmod = optional($product->updated_at)->toAtomString() ?? now()->toAtomString();
+            $this->addSimpleUrl($xml, $loc, $lastmod, '0.6');
+        }
+    }
+
+    private function addSimpleUrl(\SimpleXMLElement $xml, string $loc, string $lastmod, string $priority): void
+    {
+        $urlNode = $xml->addChild('url');
+        $urlNode->addChild('loc', htmlspecialchars($loc, ENT_QUOTES, 'UTF-8'));
+        $urlNode->addChild('lastmod', $lastmod);
+        $urlNode->addChild('changefreq', 'weekly');
+        $urlNode->addChild('priority', $priority);
+    }
+
+    private function hasTable(string $table): bool
+    {
+        try {
+            return Schema::hasTable($table);
+        } catch (\Throwable) {
+            return false;
+        }
     }
 
     private function withoutQueryAndFragment(string $url): ?string

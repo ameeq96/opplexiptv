@@ -13,7 +13,7 @@ return [
     ],
     'pricing' => [
         'title' => 'IPTV Subscription Plans | Affordable IPTV Box & 4K Streaming',
-        'description' => 'Explore cheap IPTV pricing for best iptv services. Get xtreme hd iptv with iptv smart player, 4K live iptv, and free trial options across US, France,',
+        'description' => 'Explore affordable IPTV subscription plans with 12,000+ channels, 4K live IPTV, VOD and a free trial. Monthly, half-yearly and yearly options available.',
         'keywords' => 'iptv box, xtreme hd iptv, best iptv, aroma iptv, iptv subscription price, 4k live iptv, iptv free trial',
     ],
     'movies' => [
@@ -63,7 +63,7 @@ return [
     ],
     'redirect.ad' => [
         'title' => 'Preparing Your Download...',
-        'description' => 'Please wait while we prepare your content. Get the best IPTV setup with Opplex — free trial, reseller opportunities, Xtreme HD IPTV, 4K streaming, and',
+        'description' => 'Please wait while we prepare your content. Get the best IPTV setup with Opplex — free trial, reseller options, Xtreme HD IPTV and 4K streaming.',
         'keywords' => 'IPTV setup, IPTV free trial, Opplex IPTV, Xtreme HD IPTV, IPTV reseller, IPTV 4K streaming, IPTV smart player support',
     ],
     'activate' => [
@@ -78,13 +78,13 @@ return [
     ],
     'terms-of-service' => [
         'title'       => 'Terms of Service & Legal Use Policy',
-        'description' => 'Read the Opplex IPTV Terms of Service. Learn about account rules, acceptable use, payments, renewals, service availability, and liability limits for our',
+        'description' => 'Read the Opplex IPTV Terms of Service: account rules, acceptable use, payments, renewals, service availability and liability limits for our IPTV plans.',
         'keywords'    => 'Opplex IPTV terms, IPTV terms of service, acceptable use, IPTV rules, IPTV payments, auto renewal, IPTV liability, legal IPTV policy',
     ],
 
     'privacy-policy' => [
         'title'       => 'Privacy Policy & Data Protection',
-        'description' => 'Our Privacy Policy explains what data we collect, how we use cookies, how we process payments, and how we protect your information when you purchase legal',
+        'description' => 'Our Privacy Policy explains what data we collect, how we use cookies, how we process payments and how we protect your information on Opplex IPTV.',
         'keywords'    => 'Opplex IPTV privacy, IPTV privacy policy, data protection, cookies, personal data, GDPR, data security, IPTV subscriptions',
     ],
 
@@ -95,12 +95,12 @@ return [
     ],
     'shop' => [
         'title'       => 'Shop | Streaming Devices & TV Accessories – Android TV Box, Fire TV, Roku & More',
-        'description' => 'Discover a curated selection of streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and',
+        'description' => 'Shop streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and accessories for your setup.',
         'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung remote replacement, VIZIO XRT136 remote, TV wall mount, Mounting Dream MD2380, INSIGNIA F40, TV accessories, Amazon',
     ],
     'configure' => [
         'title'       => 'IPTV Configuration | Choose Device, Provider & Plan – One Last Step Before Checkout',
-        'description' => 'Configure your IPTV order in one simple step: select your device, IPTV provider, connection (1, 2 or 4 devices) and subscription package (monthly or',
+        'description' => 'Configure your IPTV order in one step: choose your device, IPTV provider, connection (1, 2 or 4 devices) and subscription package (monthly or yearly).',
         'keywords'    => 'IPTV configuration, IPTV setup, IPTV packages, IPTV reseller, subscription plan, Android TV box, Firestick, smart TV, 1 connection, 2 connections, 4 connections, yearly IPTV, monthly IPTV, streaming service',
     ],
     'checkout' => [

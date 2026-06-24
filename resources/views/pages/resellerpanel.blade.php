@@ -1,6 +1,16 @@
 @extends('layouts.default')
 @section('title', __('messages.reseller.panel.title'))
 
+@push('schema')
+    {!! jsonld(seo()->service(
+        'IPTV Reseller Panel',
+        'Become an IPTV reseller with Opplex IPTV: panel access, credit-based plans, instant activation and 24/7 support across Europe and the USA.',
+        route('reseller-panel'),
+        seo()->packageOffers('reseller'),
+        'IPTV Reseller Service',
+    )) !!}
+@endpush
+
 @section('content')
     <x-page-title
         :title="__('messages.reseller.panel.title')"

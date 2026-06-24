@@ -189,62 +189,11 @@
 
 @stop
 
-@section('jsonld')
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "OnlineStore",
-    "@id": "{{ url('/') }}#organization",
-    "name": "Opplex IPTV",
-    "url": "{{ url('/') }}",
-    "description": "Opplex IPTV provides IPTV subscription services with live TV, sports, movies, and premium entertainment channels.",
-    "logo": "{{ asset('images/opplexiptvlogo.webp') }}",
-    "telephone": "+1-639-390-3194",
-    "email": "info@opplexiptv.com",
-    "areaServed": "Worldwide",
-    "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "merchantReturnLink": "{{ route('refund-policy') }}"
-    },
-    "hasShippingService": {
-        "@type": "ShippingService",
-        "name": "Digital delivery only",
-        "shippingConditions": [
-            {
-                "@type": "ShippingConditions",
-                "doesNotShip": true
-            }
-        ]
-    }
-    }
-</script>
-
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "IPTV Subscription Service",
-    "provider": {
-        "@type": "Organization",
-        "name": "Opplex IPTV"
-    },
-    "serviceType": "IPTV Streaming Service",
-    "areaServed": "Worldwide"
-    }
-</script>
-
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://opplexiptv.com/"
-        }
-    ]
-    }
-</script>
-@endsection
+@push('schema')
+    {{-- Organization + WebSite are emitted site-wide from includes/head.blade.php. --}}
+    {!! jsonld(seo()->service(
+        'IPTV Subscription Service',
+        'Premium IPTV with 12,000+ live channels, sports, movies and VOD in HD & 4K, compatible with every device, plus a free trial and 24/7 support.',
+        url('/'),
+    )) !!}
+@endpush

@@ -1244,6 +1244,10 @@
 @endphp
 <link rel="alternate" hreflang="x-default" href="{{ $xDefaultHref }}" />
 
+{{-- Structured data: site-wide brand entity graph (Organization + WebSite) --}}
+{!! jsonld(seo()->globalGraph($footer['socials'] ?? [])) !!}
+{{-- Per-page nodes (breadcrumbs, FAQ, HowTo, Service…) are pushed via @push('schema')
+     and rendered by the single @stack('schema') just before </body> in layouts/default. --}}
 @yield('jsonld')
 
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">

@@ -1,6 +1,14 @@
 @extends('layouts.default')
 @section('title', __('messages.contact.title'))
 
+@push('schema')
+    {!! jsonld(seo()->contactPage(
+        __('messages.contact.heading'),
+        'Contact Opplex IPTV for free trial, setup help, reseller information and 24/7 support.',
+        route('contact'),
+    )) !!}
+@endpush
+
 @section('content')
     <!-- Page Title -->
     <x-page-title :title="__('messages.contact.heading')" :breadcrumbs="[
@@ -161,7 +169,7 @@
                                         @if (session('error'))
                                             <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                                 <div class="alert alert-danger" role="alert">
-                                                    {{ session('error') }}class="h2 my-3"
+                                                    {{ session('error') }}
                                                 </div>
                                             </div>
                                         @endif

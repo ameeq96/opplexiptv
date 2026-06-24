@@ -1,6 +1,19 @@
 @extends('layouts.default')
 @section('title', 'Legal IPTV Guide')
 
+@push('schema')
+    {!! jsonld(seo()->howTo(
+        'How to activate your Opplex IPTV subscription',
+        'Activate your IPTV subscription in a few simple steps after purchase.',
+        [
+            ['name' => 'Enter your order number', 'text' => 'Open the activation page and type the order number you received after purchase.'],
+            ['name' => 'Send your activation request', 'text' => 'Tap Activate to send your order number to our support team on WhatsApp.'],
+            ['name' => 'We verify and activate', 'text' => 'Our team verifies your order and activates your IPTV line, usually within minutes.'],
+            ['name' => 'Start streaming', 'text' => 'Open your IPTV app, sign in with the details we send you, and start watching on any device.'],
+        ],
+    )) !!}
+@endpush
+
 @section('content')
     <section class="section sec-activation d-flex justify-content-center align-items-center py-5"
         style="background-image:url('{{ asset('images/background/pattern-6.webp') }}')" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">

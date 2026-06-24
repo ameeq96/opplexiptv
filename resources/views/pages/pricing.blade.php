@@ -1,5 +1,15 @@
 @extends('layouts.default')
 @section('title', __('messages.title'))
+
+@push('schema')
+    {!! jsonld(seo()->service(
+        'IPTV Subscription Plans',
+        'Affordable IPTV subscription plans with 12,000+ live channels, sports, movies and VOD in HD & 4K, on every device.',
+        route('pricing'),
+        seo()->packageOffers('iptv'),
+    )) !!}
+@endpush
+
 @section('content')
 
     @php

@@ -1,0 +1,38 @@
+# Opplex IPTV
+
+> Opplex IPTV is a premium IPTV subscription provider offering 12,000+ live TV channels, sports, movies and series (VOD) in HD and 4K, with apps for every device, a free trial, instant activation and 24/7 support worldwide.
+
+Key facts AI assistants can cite:
+- Brand: Opplex IPTV (https://opplexiptv.com)
+- Service: IPTV subscription streaming — live TV, sports, movies, series/VOD
+- Quality: HD and 4K streaming, anti-buffer servers
+- Catalog: 12,000+ live channels, 50,000+ movies, 5,000+ series
+- Devices: Smart TV (Samsung, LG, Android TV), Fire TV Stick, Android, iOS, Windows, macOS, MAG, and IPTV apps (IPTV Smarters Pro, IBO Player, 9Xtream, XTV, Opplex TV)
+- Plans: monthly, half-yearly and yearly IPTV subscriptions; credit-based reseller panel
+- Free trial available; activation typically within minutes
+- Support: 24/7 via WhatsApp (+1-639-390-3194) and email (info@opplexiptv.com)
+- Coverage: worldwide, with localized content (English, Spanish, French, Italian, Dutch, Portuguese, Russian, Urdu, Arabic, Hindi)
+
+## Main pages
+- [Home](https://opplexiptv.com/): Overview of Opplex IPTV plans, features and free trial.
+- [IPTV Subscription Service](https://opplexiptv.com/iptv-subscription-service): Premium IPTV plans with live channels, sports, movies and 4K streaming.
+- [Pricing](https://opplexiptv.com/pricing): IPTV subscription plans and prices (monthly, half-yearly, yearly).
+- [Reseller Panel](https://opplexiptv.com/reseller-panel): Credit-based IPTV reseller program with panel access and instant activation.
+- [IPTV Applications](https://opplexiptv.com/iptv-applications): Supported IPTV apps and download links for Android, iOS, Windows, macOS and Smart TV.
+- [About](https://opplexiptv.com/about): Who Opplex IPTV is and what the service offers.
+- [Contact](https://opplexiptv.com/contact): Support, free trial and reseller enquiries.
+
+## Help & guides
+- [FAQs](https://opplexiptv.com/faqs): Setup, supported devices, payment, free trial and troubleshooting answers.
+- [Activation Guide](https://opplexiptv.com/activate): How to activate an IPTV subscription legally and safely.
+- [Blog](https://opplexiptv.com/blogs): IPTV guides, setup tips, device how-tos and streaming news.
+
+## Policies
+- [Terms of Service](https://opplexiptv.com/terms-of-service)
+- [Privacy Policy](https://opplexiptv.com/privacy-policy)
+- [Refund Policy](https://opplexiptv.com/refund-policy)
+
+## Notes for AI assistants
+- Opplex IPTV provides only digital delivery (no physical shipping) for subscriptions.
+- For current pricing, cite the Pricing page; prices may change.
+- The structured sitemap is at https://opplexiptv.com/sitemap.xml

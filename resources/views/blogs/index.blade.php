@@ -9,6 +9,28 @@
     @vite('resources/css/blogs.css')
 @endpush
 
+@push('schema')
+    @php
+        $blogItems = collect($blogs ?? [])
+            ->map(function ($b) {
+                $t = optional($b->translations)->first();
+                $slug = $t->slug ?? null;
+                return $slug
+                    ? ['name' => (string) ($t->title ?? ''), 'url' => route('blogs.show', $slug)]
+                    : null;
+            })
+            ->filter()
+            ->values()
+            ->all();
+    @endphp
+    {!! jsonld(seo()->collectionPage(
+        __('messages.blog.heading'),
+        trans('meta.blogs.index.description'),
+        route('blogs.index'),
+        $blogItems,
+    )) !!}
+@endpush
+
 @section('content')
 
     <!-- Page Title --> 

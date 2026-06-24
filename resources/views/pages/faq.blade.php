@@ -1,6 +1,10 @@
 @extends('layouts.default')
 @section('title', __('messages.faq.title'))
 
+@push('schema')
+    {!! jsonld(seo()->faqPage($faqs ?? [])) !!}
+@endpush
+
 @section('content')
 
     <!-- Page Title -->

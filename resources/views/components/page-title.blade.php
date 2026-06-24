@@ -1,3 +1,10 @@
+@php($breadcrumbSchema = seo()->breadcrumbList($breadcrumbs))
+@if($breadcrumbSchema)
+    @push('schema')
+        {!! jsonld($breadcrumbSchema) !!}
+    @endpush
+@endif
+
 <section class="page-title"
     style="--page-title-bg-desktop: url('{{ asset($desktopBackground) }}'); --page-title-bg-mobile: url('{{ asset($mobileBackground) }}'); background-image: var(--page-title-bg-desktop); direction: {{ $rtl ? 'rtl' : 'ltr' }};"
     @if($ariaLabel) aria-label="{{ $ariaLabel }}" @endif>
