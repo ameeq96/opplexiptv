@@ -104,7 +104,7 @@ class HomeController extends Controller
 
     public function packages()
     {
-        return view('pages.packages', ['activeIndex' => 1]);
+        return redirect()->route('iptv-subscription-service', [], 301);
     }
 
     public function iptvSubscriptionService()

@@ -27,7 +27,7 @@ class GenerateSitemap extends Command
             'pricing',
             'movies',
             'reseller-panel',
-            'packages',
+            'iptv-subscription-service',
             'iptv-applications',
             'faqs',
             'contact',
