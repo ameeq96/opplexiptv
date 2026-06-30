@@ -22,7 +22,7 @@ class BlogController extends Controller
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);
             })
-            ->with(['translations' => function ($q) use ($locale) {
+            ->with(['author', 'translations' => function ($q) use ($locale) {
                 $q->where('locale', $locale);
             }, 'categories.translations' => function ($q) use ($locale) {
                 $q->where('locale', $locale);
@@ -40,7 +40,7 @@ class BlogController extends Controller
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);
             })
-            ->with(['translations' => function ($q) use ($locale) {
+            ->with(['author', 'translations' => function ($q) use ($locale) {
                 $q->where('locale', $locale);
             }, 'categories.translations' => function ($q) use ($locale) {
                 $q->where('locale', $locale);
@@ -116,7 +116,9 @@ class BlogController extends Controller
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);
             })
-            ->with(['translations' => function ($q) use ($locale) {
+            ->with(['author', 'translations' => function ($q) use ($locale) {
+                $q->where('locale', $locale);
+            }, 'categories.translations' => function ($q) use ($locale) {
                 $q->where('locale', $locale);
             }])
             ->orderByDesc('published_at')
