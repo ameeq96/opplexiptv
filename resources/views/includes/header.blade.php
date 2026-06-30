@@ -6,13 +6,13 @@
 
                 <div class="pull-left">
                     <ul class="info d-flex justify-content-start align-items-center">
-                        <li>
+                        <li class="header-top__phone">
                             <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
                                 target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-phone"></i> {{ __('messages.header_whatsapp') }}
                             </a>
                         </li>
-                        <li>
+                        <li class="header-top__promo">
                             <marquee behavior="scroll" direction="{{ $isRtl ? 'right' : 'left' }}" scrollamount="6">
                                 <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
                                     rel="noopener noreferrer"

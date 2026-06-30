@@ -1,0 +1,138 @@
+/* ============================================================
+   Header top bar — responsive layout fix
+   ------------------------------------------------------------
+   Keeps the navy bar and the red diagonal social area, but:
+   • lays the bar out with flexbox (3 zones: phone | promo | social)
+   • bounds the scrolling promo (marquee) so its text is clipped at
+     its OWN box and can never slide under the red wedge
+   • stops the red wedge from reaching left into the promo text
+   • stacks cleanly on tablet / small-desktop widths
+   Loaded after responsive.css so these rules win on equal specificity.
+   ============================================================ */
+
+.main-header .header-top .auto-container.custom-max {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    flex-wrap: nowrap;
+}
+
+/* Left + center zone (phone + promo) takes the free space */
+.main-header .header-top .pull-left {
+    float: none;
+    flex: 1 1 auto;
+    min-width: 0;
+    /* lets the promo shrink/clip */
+}
+
+/* Social zone keeps its natural width on the right */
+.main-header .header-top .pull-right {
+    float: none;
+    flex: 0 0 auto;
+}
+
+.main-header .header-top .info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    gap: 22px;
+    margin: 0;
+}
+
+/* Slimmer bar: trim the vertical padding (was 13px top/bottom) */
+.main-header .header-top .info,
+.main-header .header-top .social-box {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* WhatsApp number: fixed, never wraps, never shrinks */
+.main-header .header-top .info .header-top__phone {
+    flex: 0 0 auto;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Promo marquee: fills the middle, clips its own overflow so the
+   scrolling text stops well before the red diagonal */
+.main-header .header-top .info .header-top__promo {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-header .header-top .info .header-top__promo marquee {
+    display: block;
+    width: 100%;
+}
+
+/* Red diagonal: begin it at the social box (no leftward intrusion)
+   so it never paints over the promo text */
+.main-header .header-top .social-box {
+    position: relative;
+    z-index: 1;
+}
+
+.main-header .header-top .social-box::before {
+    left: 0;
+    right: -1500px;
+    min-height: 0;
+    /* drop the 60px floor so the red wedge matches the slimmer bar height */
+}
+
+.main-header .header-top .social-box li {
+    position: relative;
+    z-index: 1;
+}
+
+/* ---- Tablet / small desktop windows ---- */
+@media (max-width: 991px) {
+    .main-header .header-top .auto-container.custom-max {
+        gap: 18px;
+    }
+
+    .main-header .header-top .info {
+        gap: 14px;
+    }
+}
+
+/* ---- Narrow widths: stack into a centered column ---- */
+@media (max-width: 599px) {
+    .main-header .header-top .auto-container.custom-max {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .main-header .header-top .pull-left,
+    .main-header .header-top .pull-right {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .main-header .header-top .info {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .main-header .header-top .info .header-top__phone,
+    .main-header .header-top .info .header-top__promo {
+        width: 100%;
+    }
+
+    .main-header .header-top .social-box {
+        text-align: center;
+    }
+}
+
+/* RTL: mirror the diagonal direction */
+.main-header[dir="rtl"] .header-top .social-box::before,
+html[dir="rtl"] .main-header .header-top .social-box::before {
+    left: -1500px;
+    right: 0;
+    transform: skewX(30deg);
+}

@@ -27,7 +27,7 @@
     $encUrl = rawurlencode($shareUrl);
     $encTitle = rawurlencode($currentTranslation->title);
     $shareLinks = [
-        'x'  => "https://twitter.com/intent/tweet?url={$encUrl}&text={$encTitle}",
+        'x'  => "https://x.com/intent/tweet?url={$encUrl}&text={$encTitle}",
         'fb' => "https://www.facebook.com/sharer/sharer.php?u={$encUrl}",
         'in' => "https://www.linkedin.com/sharing/share-offsite/?url={$encUrl}",
         'wa' => "https://api.whatsapp.com/send?text={$encTitle}%20{$encUrl}",
