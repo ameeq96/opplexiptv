@@ -134,11 +134,11 @@ class HomeController extends Controller
 
     public function shop()
     {
-        $type = (string) request()->query('type', 'all');
-        $products = $this->unifiedProducts->frontendProducts();
-        if (in_array($type, ['affiliate', 'digital'], true)) {
-            $products = $products->where('type', $type)->values();
-        }
+        // Affiliate-only storefront (digital products are not shown).
+        $type = 'affiliate';
+        $products = $this->unifiedProducts->frontendProducts()
+            ->where('type', 'affiliate')
+            ->values();
 
         $isRtl = $this->locale->isRtl();
 

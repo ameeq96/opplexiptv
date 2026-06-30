@@ -114,7 +114,7 @@ class GenerateSitemap extends Command
         // Dynamic, DB-driven URLs (canonical only). Wrapped so a missing DB
         // never breaks the static portion of the sitemap.
         $this->addBlogPosts($xml, $defaultLocale);
-        $this->addDigitalProducts($xml);
+        // Digital-commerce feature is disabled — digital products are excluded from the sitemap.
 
         // Write to public/sitemap.xml
         $path = public_path('sitemap.xml');

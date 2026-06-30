@@ -120,6 +120,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::put('footer-settings', [AdminFooterSettingController::class, 'update'])->name('footer-settings.update');
         Route::resource('footer-links', AdminFooterLinkController::class);
         Route::resource('social-links', AdminSocialLinkController::class);
+        /* ----- Digital-commerce admin routes DISABLED (feature hidden) -----
         Route::resource('digital-categories', AdminDigitalCategoryController::class)->except(['show']);
         Route::resource('digital-products', AdminDigitalProductController::class)->except(['show']);
         Route::resource('digital-delivery-payloads', AdminDigitalDeliveryPayloadController::class)
@@ -130,6 +131,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('digital-orders/{digital_order}/mark-delivered', [AdminDigitalOrderController::class, 'markDelivered'])->name('digital-orders.mark-delivered');
         Route::post('digital-orders/{digital_order}/items/{item}/assign-delivery', [AdminDigitalOrderController::class, 'assignDelivery'])->name('digital-orders.assign-delivery');
         Route::post('digital-orders/{digital_order}/resend-email', [AdminDigitalOrderController::class, 'resendEmail'])->name('digital-orders.resend-email');
+        ------------------------------------------------------------------- */
 
         // Notifications
         Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');
@@ -171,6 +173,7 @@ Route::group(
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
         Route::get('shop', [HomeController::class, 'shop'])->name('shop');
         Route::get('product-share/{type}/{id}', [HomeController::class, 'sharedProduct'])->name('products.share');
+        /* ----- Digital-commerce public routes DISABLED (feature hidden) -----
         Route::get('digital-shop', [DigitalProductController::class, 'index'])->name('digital.shop');
         Route::get('digital-shop/{slug}', [DigitalProductController::class, 'show'])->name('digital.product.show');
         Route::get('digital-cart', [DigitalCartController::class, 'index'])->name('digital.cart.index');
@@ -182,6 +185,7 @@ Route::group(
         Route::get('digital-orders/access/{token}', [DigitalCustomerOrderController::class, 'access'])->name('digital.orders.access');
         Route::get('digital-orders', [DigitalCustomerOrderController::class, 'index'])->name('digital.orders.index');
         Route::get('digital-orders/{digital_order}', [DigitalCustomerOrderController::class, 'show'])->name('digital.orders.show');
+        ------------------------------------------------------------------- */
         Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
         Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 

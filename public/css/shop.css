@@ -1,0 +1,167 @@
+/* =============================================================
+   Shop page — product grid reskin
+   Scoped under .shopx. Keeps the share button JS hook
+   (.unified-share / data-share-*) and pagination.
+   Brand: red rgb(223,3,3) · navy rgb(1,12,58)
+   ============================================================= */
+
+.shopx {
+    --s-ink: #0a1438;
+    --s-body: #3c4360;
+    --s-muted: #6b7187;
+    --s-faint: #9aa0b4;
+    --s-accent: rgb(223, 3, 3);
+    --s-accent-strong: #b80a0a;
+    --s-navy: rgb(1, 12, 58);
+    --s-bg: #f4f6fb;
+    --s-surface: #ffffff;
+    --s-surface-2: #f7f9fe;
+    --s-border: #e7e9f1;
+    --s-border-strong: #d7dae6;
+    --s-shadow-sm: 0 1px 2px rgba(10, 20, 56, .05), 0 6px 16px rgba(10, 20, 56, .06);
+    --s-shadow-md: 0 16px 40px rgba(10, 20, 56, .14);
+    --s-ease: cubic-bezier(.2, .7, .3, 1);
+
+    background: var(--s-bg);
+    padding: 50px 0 70px;
+    font-family: var(--font-family-poppins), system-ui, sans-serif;
+}
+
+.shopx .products-shell { background: transparent; }
+
+/* Header */
+.shopx__head { margin-bottom: 28px; }
+.shopx__bar { width: 44px; height: 4px; border-radius: 4px; background: var(--s-accent); margin-bottom: 14px; }
+.shopx__title {
+    font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: var(--s-ink);
+    margin: 0;
+}
+.shopx__sub { margin: 6px 0 0; font-size: .95rem; color: var(--s-muted); }
+
+/* Card */
+.shopx .unified-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--s-surface);
+    border: 1px solid var(--s-border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--s-shadow-sm);
+    transition: transform .26s var(--s-ease), box-shadow .26s var(--s-ease), border-color .26s var(--s-ease);
+}
+.shopx .unified-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--s-shadow-md);
+    border-color: var(--s-border-strong);
+}
+.shopx .unified-card__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    padding: 18px;
+    background: var(--s-surface-2);
+    border-bottom: 1px solid var(--s-border);
+    overflow: hidden;
+}
+.shopx .unified-card__media img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform .4s var(--s-ease);
+}
+.shopx .unified-card:hover .unified-card__media img { transform: scale(1.05); }
+
+.shopx .unified-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px 16px 18px;
+}
+.shopx .unified-card__title {
+    font-size: 1rem;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin: 0 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.shopx .unified-card__title a { color: var(--s-ink); }
+.shopx .unified-card__title a:hover { color: var(--s-accent-strong); }
+.shopx .unified-card__price {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--s-ink);
+    margin-bottom: 12px;
+}
+
+/* Actions */
+.shopx .unified-action-wrap { margin-top: auto; }
+.shopx .unified-actions { display: flex; align-items: center; gap: 10px; }
+.shopx .unified-action {
+    flex: 1 1 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 46px;
+    padding: 0 16px;
+    border-radius: 12px;
+    font-size: .9rem;
+    font-weight: 700;
+    border: 1.5px solid var(--s-accent);
+    background: var(--s-accent);
+    color: #fff;
+    transition: background .2s var(--s-ease), border-color .2s var(--s-ease), color .2s var(--s-ease), transform .2s var(--s-ease);
+}
+.shopx .unified-action:hover { background: var(--s-accent-strong); border-color: var(--s-accent-strong); color: #fff; transform: translateY(-1px); }
+.shopx .unified-action.btn-outline-primary {
+    background: transparent;
+    color: var(--s-accent-strong);
+}
+.shopx .unified-action.btn-outline-primary:hover { background: var(--s-accent); color: #fff; }
+
+.shopx .unified-share {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    border: 1.5px solid var(--s-border-strong);
+    background: var(--s-surface);
+    color: var(--s-navy);
+    cursor: pointer;
+    transition: border-color .2s var(--s-ease), color .2s var(--s-ease), background .2s var(--s-ease);
+}
+.shopx .unified-share:hover { border-color: var(--s-navy); background: var(--s-surface-2); }
+.shopx .unified-share i { font-size: 1rem; }
+
+/* Empty state */
+.shopx .alert-info {
+    background: var(--s-surface);
+    border: 1px dashed var(--s-border-strong);
+    color: var(--s-muted);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .shopx { padding: 36px 0 52px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .shopx *, .shopx *::before, .shopx *::after { transition-duration: .01ms !important; }
+    .shopx .unified-card:hover { transform: none; }
+    .shopx .unified-card:hover .unified-card__media img { transform: none; }
+}

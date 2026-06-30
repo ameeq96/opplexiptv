@@ -5,32 +5,17 @@
 @section('content')
 <div class="admin-card mb-3">
     <form method="GET" class="row g-2">
-        <div class="col-md-5">
+        <div class="col-md-9">
             <input type="text" class="form-control" name="q" value="{{ $search }}" placeholder="Search products">
         </div>
-        <div class="col-md-4">
-            <select class="form-select" name="type">
-                <option value="all" @selected($type === 'all')>All Types</option>
-                <option value="affiliate" @selected($type === 'affiliate')>Affiliate</option>
-                <option value="digital" @selected($type === 'digital')>Digital</option>
-            </select>
-        </div>
         <div class="col-md-3 d-grid">
-            <button class="btn btn-primary" type="submit">Filter</button>
+            <button class="btn btn-primary" type="submit">Search</button>
         </div>
     </form>
 </div>
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <div class="btn-group" role="group">
-        <a href="{{ route('admin.products.index', ['type' => 'all']) }}" class="btn btn-sm {{ $type === 'all' ? 'btn-primary' : 'btn-light' }}">All</a>
-        <a href="{{ route('admin.products.index', ['type' => 'affiliate']) }}" class="btn btn-sm {{ $type === 'affiliate' ? 'btn-primary' : 'btn-light' }}">Affiliate</a>
-        <a href="{{ route('admin.products.index', ['type' => 'digital']) }}" class="btn btn-sm {{ $type === 'digital' ? 'btn-primary' : 'btn-light' }}">Digital</a>
-    </div>
-    <div class="d-flex gap-2">
-        <a href="{{ route('admin.shop-products.create') }}" class="btn btn-outline-primary">+ New Affiliate</a>
-        <a href="{{ route('admin.digital-products.create') }}" class="btn btn-primary">+ New Digital</a>
-    </div>
+<div class="d-flex justify-content-end align-items-center mb-3">
+    <a href="{{ route('admin.shop-products.create') }}" class="btn btn-primary">+ New Product</a>
 </div>
 
 <div class="admin-card p-0">

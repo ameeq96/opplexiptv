@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://opplexiptv.com/</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -30,7 +30,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/about</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -58,7 +58,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/pricing</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -86,7 +86,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/iptv-subscription-service</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -114,7 +114,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/reseller-panel</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -142,7 +142,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/iptv-applications</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -170,7 +170,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/faqs</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -198,7 +198,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/contact</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -226,7 +226,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/shop</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -254,7 +254,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/movies</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -282,7 +282,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/activate</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -310,7 +310,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/blogs</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -337,36 +337,8 @@
             href="https://opplexiptv.com/blogs" />
     </url>
     <url>
-        <loc>https://opplexiptv.com/digital-shop</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
-            href="https://opplexiptv.com/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es"
-            href="https://opplexiptv.com/es/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr"
-            href="https://opplexiptv.com/fr/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="it"
-            href="https://opplexiptv.com/it/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="nl"
-            href="https://opplexiptv.com/nl/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="pt"
-            href="https://opplexiptv.com/pt/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ru"
-            href="https://opplexiptv.com/ru/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ur"
-            href="https://opplexiptv.com/ur/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ar"
-            href="https://opplexiptv.com/ar/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="hi"
-            href="https://opplexiptv.com/hi/digital-shop" />
-        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default"
-            href="https://opplexiptv.com/digital-shop" />
-    </url>
-    <url>
         <loc>https://opplexiptv.com/terms-of-service</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -394,7 +366,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/privacy-policy</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -422,7 +394,7 @@
     </url>
     <url>
         <loc>https://opplexiptv.com/refund-policy</loc>
-        <lastmod>2026-06-30T07:40:14+00:00</lastmod>
+        <lastmod>2026-06-30T10:22:37+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en"
@@ -625,108 +597,6 @@
     <url>
         <loc>https://opplexiptv.com/blogs/aysy-spor-aaadat-go-churn-km-kry</loc>
         <lastmod>2026-06-30T04:55:31+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/netflix</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/prime-video</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/hbo-max-premium</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/nordvpn</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/crunchyroll-premium</loc>
-        <lastmod>2026-06-30T04:55:33+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/youtube-premium</loc>
-        <lastmod>2026-06-30T04:55:33+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/expressvpn-premium</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/hulu</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/paramount-plus</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/curiosity-stream</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/windscribe-1-month</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/jiocinema-with-vpn</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/windscribe-vpn-unlimited</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/hotstar</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/espn-plus</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/zee5-premium</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://opplexiptv.com/digital-shop/sling-tv</loc>
-        <lastmod>2026-06-30T04:55:34+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>

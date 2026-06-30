@@ -38,37 +38,8 @@ class ProductHubController extends Controller
                 ];
             });
 
-        $digital = DigitalProduct::query()
-            ->when($search !== '', function ($q) use ($search) {
-                $q->where('title', 'like', "%{$search}%")
-                  ->orWhere('slug', 'like', "%{$search}%");
-            })
-            ->get()
-            ->map(function (DigitalProduct $p) {
-                return [
-                    'id' => $p->id,
-                    'type' => 'digital',
-                    'name' => $p->title,
-                    'description' => $p->short_description ?: '-',
-                    'price' => (float) $p->price,
-                    'currency' => (string) $p->currency,
-                    'is_active' => (bool) $p->is_active,
-                    'sort_order' => (int) $p->sort_order,
-                    'edit_url' => route('admin.digital-products.edit', $p),
-                ];
-            });
-
-        $rows = collect();
-
-        if ($type === 'affiliate') {
-            $rows = $affiliate;
-        } elseif ($type === 'digital') {
-            $rows = $digital;
-        } else {
-            $rows = $affiliate->concat($digital);
-        }
-
-        $rows = $rows
+        // Affiliate-only product hub (digital-commerce feature is disabled).
+        $rows = $affiliate
             ->sortBy([
                 ['sort_order', 'asc'],
                 ['id', 'desc'],
