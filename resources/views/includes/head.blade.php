@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="theme" content="Opplex IPTV UI Theme">
+<meta name="theme-color" content="#010c3a">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 @php
@@ -34,7 +34,7 @@
 
     $routeName = optional(Request::route())->getName();
     $isMoviesRoute = $routeName === 'movies';
-    $noindexRoutes = ['redirect.ad'];
+    $noindexRoutes = ['redirect.ad', 'checkout', 'configure', 'thankyou', 'digital.checkout.show', 'digital.cart.index'];
 
     $pageParam = (int) request()->input('page', 1);
     $hasSearch = trim((string) request()->input('search', '')) !== '';
@@ -110,7 +110,6 @@
 
 <title>{{ $metaTitle }}</title>
 <meta name="description" content="{{ $metaDescription }}">
-<meta name="keywords" content="{{ $keywords }}">
 
 @if ($shouldNoindex)
     <meta name="robots" content="noindex,follow">
@@ -1212,19 +1211,30 @@
     </style>
 @endif
 
+<meta property="og:site_name" content="Opplex IPTV">
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDescription }}">
 <meta property="og:type" content="{{ $ogType }}">
 <meta property="og:url" content="{{ $canonical }}">
 <meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:alt" content="{{ $ogTitle }}">
+<meta property="og:locale" content="{{ str_replace('-', '_', $locale) }}">
+@foreach ($supported as $altLocale)
+    @if ($altLocale !== $locale)
+        <meta property="og:locale:alternate" content="{{ str_replace('-', '_', $altLocale) }}">
+    @endif
+@endforeach
 <meta name="facebook-domain-verification" content="rnsb3eqoa06k3dwo6gyqpphgu2imo2" />
 
 <link rel="canonical" href="{{ $canonical }}">
 
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@opplex_iptv">
+<meta name="twitter:creator" content="@opplex_iptv">
 <meta name="twitter:title" content="{{ $ogTitle }}">
 <meta name="twitter:description" content="{{ $ogDescription }}">
 <meta name="twitter:image" content="{{ $ogImage }}">
+<meta name="twitter:image:alt" content="{{ $ogTitle }}">
 
 @foreach ($supported as $lg)
     @php

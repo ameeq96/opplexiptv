@@ -10,59 +10,43 @@
     )) !!}
 @endpush
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}?v={{ @filemtime(public_path('css/about.css')) ?: 1 }}">
+@endpush
+
 @section('content')
     <x-page-title :title="__('messages.about.title_short')" :breadcrumbs="[['url' => '/', 'label' => __('messages.nav.home')], ['label' => __('messages.nav.about_us')]]" background="images/background/7.webp" :rtl="$isRtl"
         aria-label="About Us Page" />
 
     @include('includes._we-provide-unlimited')
 
-    <section class="services-section-three" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" aria-labelledby="choose-us-title"
-        style="background-image:url('{{ asset('images/background/pattern-6.webp') }}')">
+    <section class="abtx {{ $isRtl ? 'rtl' : '' }}" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" aria-labelledby="choose-us-title">
         <div class="auto-container">
-            <div @class([
-                'sec-title',
-                'clearfix',
-                'section-header',
-                $isRtl ? 'rtl' : 'ltr',
-            ])>
-                <div class="pull-left">
-                    <div class="separator"></div>
-                    <h1 id="choose-us-title" class="h3">{!! __('messages.choose_us.title') !!}</h1>
+            <div class="abtx__head">
+                <div class="abtx__titles">
+                    <div class="abtx__bar" aria-hidden="true"></div>
+                    <h1 id="choose-us-title" class="abtx__title">{!! __('messages.choose_us.title') !!}</h1>
                 </div>
 
-                <div class="pull-right">
-                    <a href="{{ route('packages') }}" class="theme-btn btn-style-four">
-                        <span class="txt">
-                            {{ __('messages.choose_us.button') }}
-                            <i class="lnr lnr-arrow-right"
-                                style="display:inline-block; transform: {{ $isRtl ? 'rotate(180deg)' : 'none' }};">
-                            </i>
-                        </span>
-                    </a>
-                </div>
+                <a href="{{ route('packages') }}" class="abtx__cta">
+                    {{ __('messages.choose_us.button') }}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
             </div>
 
-            <div class="row clearfix" role="list">
+            <div class="abtx-grid" role="list">
                 @foreach ($features as $feature)
-                    <div class="facility-block col-lg-3 col-md-6 col-sm-12" role="listitem" @style(['text-align: right' => $isRtl])>
-                        <div class="inner-box" aria-label="{{ $feature['title'] }}">
-                            <div class="pattern-layer"
-                                style="background-image:url('{{ asset('images/background/pattern-14.webp') }}')">
-                            </div>
-
-                            <div class="icon-box {{ $feature['icon'] }}" role="img"
-                                aria-label="{{ $feature['title'] }} icon"></div>
-
-                            <h5>
-                                <a href="{{ $feature['link'] }}"
-                                    aria-label="{{ __('Read more about :title', ['title' => $feature['title']]) }}">
-                                    {{ $feature['title'] }}
-                                </a>
-                            </h5>
-
-                            <div class="text">{{ $feature['description'] }}</div>
-                        </div>
-                    </div>
+                    <a class="abtx-card" role="listitem" href="{{ $feature['link'] }}"
+                        aria-label="{{ __('Read more about :title', ['title' => $feature['title']]) }}">
+                        <span class="abtx-card__icon {{ $feature['icon'] }}" aria-hidden="true"></span>
+                        <h3 class="abtx-card__title">{{ $feature['title'] }}</h3>
+                        <p class="abtx-card__text">{{ $feature['description'] }}</p>
+                        <span class="abtx-card__arrow" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </span>
+                    </a>
                 @endforeach
             </div>
         </div>

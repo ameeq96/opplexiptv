@@ -1,0 +1,17 @@
+/* ============================================================
+   Small site-wide UI tweaks / overrides (loaded last so these
+   win over the theme on equal specificity).
+   ============================================================ */
+
+/* Channel logos carousel — add breathing room between the cards.
+   Works in both render modes (native flex carousel + owl carousel),
+   since the spacing is applied to the card itself, not the track. */
+.channel-showcase__card {
+    margin: 0 10px;
+}
+
+@media (max-width: 575px) {
+    .channel-showcase__card {
+        margin: 0 6px;
+    }
+}

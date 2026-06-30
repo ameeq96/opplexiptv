@@ -10,6 +10,10 @@
     )) !!}
 @endpush
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/pricing.css') }}?v={{ @filemtime(public_path('css/pricing.css')) ?: 1 }}">
+@endpush
+
 @section('content')
 
     @php
@@ -30,42 +34,38 @@
     @include('includes._best-packages')
     <!-- End Pricing Section -->
 
-    <!-- Internet Section Three -->
-    <section class="internet-section-three" style="background-image: url('{{ asset('images/background/1.webp') }}')">
+    <!-- Pricing promo band -->
+    <section class="prcx {{ $isRtl ? 'rtl' : '' }}" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" aria-labelledby="pricing-promo-title">
         <div class="auto-container">
-            <div class="row clearfix">
-
-                <!-- Image Column -->
-                <div class="image-column col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
-
-                </div>
-
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="sec-title light">
-                            @if (!$isRtl)
-                                <div class="separator"></div>
-                            @endif
-                            <h1 class="h3">{{ __('messages.sub_heading') }}</h1>
-                        </div>
-                        <div class="text">{{ __('messages.description') }}</div>
-                        <div class="price">{!! __('messages.price') !!}</div>
-                        <a href="{{ route('about') }}" class="theme-btn btn-style-two"
-                            aria-label="{{ __('messages.read_more') }}">
-                            <span class="txt">
-                                {{ __('messages.read_more') }}
-                                <i class="lnr {{ $isRtl ? 'lnr-arrow-left' : 'lnr-arrow-right' }}" aria-hidden="true"></i>
-                            </span>
+            <div class="prcx__panel">
+                <div class="prcx__content">
+                    <div class="prcx__bar" aria-hidden="true"></div>
+                    <h1 id="pricing-promo-title" class="prcx__title">{{ __('messages.sub_heading') }}</h1>
+                    <p class="prcx__text">{{ __('messages.description') }}</p>
+                    @if (trim((string) __('messages.price')) !== '')
+                        <div class="prcx__price">{!! __('messages.price') !!}</div>
+                    @endif
+                    <div>
+                        <a href="{{ route('about') }}" class="prcx__cta" aria-label="{{ __('messages.read_more') }}">
+                            {{ __('messages.read_more') }}
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                         </a>
                     </div>
                 </div>
 
+                <div class="prcx__visual" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3.5" width="20" height="13" rx="2.5"/>
+                        <path d="M8 20.5h8M12 16.5v4"/>
+                        <path d="M10 7.2v5.6l5-2.8-5-2.8z" fill="currentColor" stroke="none"/>
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- End Internet Section Three -->
+    <!-- End Pricing promo band -->
 
     {{-- FAQ Section --}}
     @include('includes._faq-section')

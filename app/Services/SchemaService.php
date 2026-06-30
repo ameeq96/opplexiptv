@@ -504,6 +504,18 @@ class SchemaService
             ];
         }
 
+        // Always include the official X profile so the brand entity resolves there.
+        $hasX = false;
+        foreach ($urls as $u) {
+            if (preg_match('~(?:^|\.)(?:x|twitter)\.com/~i', $u)) {
+                $hasX = true;
+                break;
+            }
+        }
+        if (!$hasX) {
+            $urls[] = 'https://x.com/opplex_iptv';
+        }
+
         return array_values(array_unique($urls));
     }
 

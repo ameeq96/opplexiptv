@@ -1,0 +1,212 @@
+/* =============================================================
+   FAQs page — Opplex IPTV
+   Scoped under .faqx. The theme's accordion rules are global and
+   specific (.accordion-box .block .acc-btn …), so every override
+   here is prefixed with `.faqx .accordion-box .block` to win the
+   cascade. The +/- marker is drawn in pure CSS (the FontAwesome
+   glyphs are hidden) so it never depends on the icon font.
+   Brand: red rgb(223,3,3) · navy rgb(1,12,58)
+   ============================================================= */
+
+.faqx {
+    --f-ink: #0a1438;
+    --f-body: #3c4360;
+    --f-muted: #6b7187;
+    --f-accent: rgb(223, 3, 3);
+    --f-accent-strong: #b80a0a;
+    --f-navy: rgb(1, 12, 58);
+    --f-navy-2: #1c2c78;
+    --f-bg: #f4f6fb;
+    --f-surface: #ffffff;
+    --f-surface-2: #f7f9fe;
+    --f-border: #e7e9f1;
+    --f-border-strong: #d7dae6;
+    --f-r: 16px;
+    --f-shadow-sm: 0 1px 2px rgba(10, 20, 56, .05), 0 6px 18px rgba(10, 20, 56, .05);
+    --f-shadow-md: 0 14px 36px rgba(10, 20, 56, .10);
+    --f-ease: cubic-bezier(.2, .7, .3, 1);
+
+    background: var(--f-bg);
+    padding: 56px 0 76px;
+    color: var(--f-body);
+    font-family: var(--font-family-poppins), system-ui, sans-serif;
+}
+
+/* ---------- Head ---------- */
+.faqx__head { text-align: center; max-width: 680px; margin: 0 auto 40px; }
+.faqx__chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    background: linear-gradient(140deg, var(--f-navy), var(--f-navy-2));
+    color: #fff;
+    box-shadow: 0 14px 30px rgba(10, 20, 56, .26);
+    margin-bottom: 20px;
+}
+.faqx__chip svg { width: 32px; height: 32px; }
+.faqx__title {
+    font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+    line-height: 1.14;
+    font-weight: 800;
+    letter-spacing: -.025em;
+    color: var(--f-ink);
+    margin: 0;
+    text-wrap: balance;
+}
+
+/* ---------- Accordion container ---------- */
+.faqx .accordion-box {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Card */
+.faqx .accordion-box .block {
+    background: var(--f-surface);
+    border: 1px solid var(--f-border);
+    border-radius: var(--f-r);
+    box-shadow: var(--f-shadow-sm);
+    margin: 0;
+    overflow: hidden;
+    transition: border-color .25s var(--f-ease), box-shadow .25s var(--f-ease);
+}
+.faqx .accordion-box .block.active-block {
+    border-color: var(--f-border-strong);
+    box-shadow: var(--f-shadow-md);
+}
+
+/* Question row */
+.faqx .accordion-box .block .acc-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 22px;
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--f-ink);
+    text-transform: none;
+    cursor: pointer;
+    transition: color .2s var(--f-ease), background .2s var(--f-ease);
+}
+.faqx .accordion-box .block .acc-btn > span {
+    flex: 1 1 auto;
+    order: 1;
+    margin: 0;
+}
+.faqx .accordion-box .block .acc-btn:hover { color: var(--f-accent-strong); }
+.faqx .accordion-box .block .acc-btn.active {
+    color: var(--f-accent-strong);
+    background: var(--f-surface-2);
+}
+
+/* +/- chip — override the theme's absolute 50px glyph, draw it in CSS */
+.faqx .accordion-box .block .icon-outer {
+    position: relative;
+    inset: auto;
+    order: 2;
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    margin: 0;
+    border-radius: 50%;
+    background: var(--f-surface-2);
+    border: 1px solid var(--f-border);
+    color: var(--f-muted);
+    font-size: 0;
+    transition: background .2s var(--f-ease), color .2s var(--f-ease), border-color .2s var(--f-ease);
+}
+/* hide the FontAwesome plus/minus glyphs entirely */
+.faqx .accordion-box .block .icon-outer .icon {
+    display: none;
+}
+/* horizontal + vertical bars => a plus */
+.faqx .accordion-box .block .icon-outer::before,
+.faqx .accordion-box .block .icon-outer::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: currentColor;
+    border-radius: 2px;
+    transition: transform .25s var(--f-ease), opacity .25s var(--f-ease);
+}
+.faqx .accordion-box .block .icon-outer::before {
+    width: 12px;
+    height: 2.5px;
+    transform: translate(-50%, -50%);
+}
+.faqx .accordion-box .block .icon-outer::after {
+    width: 2.5px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+}
+/* active => red chip + the vertical bar collapses, leaving a minus */
+.faqx .accordion-box .block .acc-btn.active .icon-outer {
+    background: var(--f-accent);
+    border-color: var(--f-accent);
+    color: #fff;
+}
+.faqx .accordion-box .block .acc-btn.active .icon-outer::after {
+    transform: translate(-50%, -50%) scaleY(0);
+    opacity: 0;
+}
+
+/* Answer (show/hide stays with the theme JS; we only style the look) */
+.faqx .accordion-box .block .content {
+    position: relative;
+    padding: 2px 22px 22px;
+    border-top: 1px solid var(--f-border);
+}
+.faqx .accordion-box .block .content .text {
+    padding-top: 16px;
+    font-size: .96rem;
+    line-height: 1.75;
+    color: var(--f-body);
+}
+.faqx .accordion-box .block .content .text p {
+    margin: 0 0 .9em;
+    color: var(--f-body);
+}
+.faqx .accordion-box .block .content .text p:last-child { margin-bottom: 0; }
+.faqx .accordion-box .block .content .text :where(ul, ol) {
+    margin: 0 0 .9em;
+    padding-inline-start: 1.3em;
+}
+.faqx .accordion-box .block .content .text li { margin-bottom: .4em; }
+.faqx .accordion-box .block .content .text li::marker { color: var(--f-accent); }
+.faqx .accordion-box .block .content .text a {
+    color: var(--f-accent-strong);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.faqx .accordion-box .block .content figure { margin: 0; }
+.faqx .accordion-box .block .content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--f-border);
+}
+.faqx .accordion-box .block .content figcaption {
+    color: var(--f-muted);
+    font-size: .85rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 575px) {
+    .faqx { padding: 40px 0 56px; }
+    .faqx .accordion-box .block .acc-btn { padding: 16px 16px; font-size: .96rem; gap: 12px; }
+    .faqx .accordion-box .block .content { padding: 2px 16px 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .faqx *, .faqx *::before, .faqx *::after { transition-duration: .01ms !important; }
+}

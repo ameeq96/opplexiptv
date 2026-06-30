@@ -1,0 +1,236 @@
+/* =============================================================
+   Movies page — reskin only
+   Scoped under .mvx (added to .movie-page-section) and .mvx-pager.
+   The MixItUp filtering (.filter / .mix / .filter-list), the trailer
+   lightbox (.video-box), the 20%-width card layout and the search/
+   pagination forms are all preserved — this only restyles the look.
+   Loaded after style.css so equal-specificity rules win.
+   Brand: red rgb(223,3,3) · navy rgb(1,12,58)
+   ============================================================= */
+
+.mvx {
+    --m-ink: #0a1438;
+    --m-body: #3c4360;
+    --m-muted: #6b7187;
+    --m-faint: #9aa0b4;
+    --m-accent: rgb(223, 3, 3);
+    --m-accent-strong: #b80a0a;
+    --m-navy: rgb(1, 12, 58);
+    --m-bg: #f4f6fb;
+    --m-surface: #ffffff;
+    --m-surface-2: #f7f9fe;
+    --m-border: #e7e9f1;
+    --m-border-strong: #d7dae6;
+    --m-shadow-sm: 0 1px 2px rgba(10, 20, 56, .05), 0 6px 16px rgba(10, 20, 56, .06);
+    --m-shadow-md: 0 16px 40px rgba(10, 20, 56, .16);
+    --m-ease: cubic-bezier(.2, .7, .3, 1);
+}
+
+/* Section + header */
+.mvx.movie-page-section { padding: 50px 0 70px; background: var(--m-bg); }
+.mvx > .auto-container > h1 {
+    font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: var(--m-ink);
+    margin: 0 0 8px;
+    text-wrap: balance;
+}
+.mvx > .auto-container > h2 {
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: var(--m-muted);
+    margin: 0 0 30px;
+}
+
+/* Filter pills */
+.mvx .filters { margin-bottom: 26px; }
+.mvx .filters .filter-tabs {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px;
+    background: var(--m-surface);
+    border: 1px solid var(--m-border);
+    border-radius: 999px;
+    box-shadow: var(--m-shadow-sm);
+}
+.mvx .filters .filter {
+    margin: 0;
+    padding: 9px 20px;
+    border: 0;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--m-body);
+    background: transparent;
+    transition: background .2s var(--m-ease), color .2s var(--m-ease);
+}
+.mvx .filters .filter:hover { color: var(--m-accent-strong); border: 0; }
+.mvx .filters .filter.active {
+    color: #fff;
+    background: var(--m-accent);
+    border: 0;
+    box-shadow: 0 6px 16px rgba(223, 3, 3, .28);
+}
+
+/* Search */
+.mvx .search-bar form {
+    background: var(--m-surface);
+    border: 1px solid var(--m-border-strong);
+    border-radius: 999px;
+    padding: 6px 6px 6px 8px;
+    box-shadow: var(--m-shadow-sm);
+    transition: border-color .2s var(--m-ease), box-shadow .2s var(--m-ease);
+}
+.mvx .search-bar form:focus-within { border-color: var(--m-accent); box-shadow: 0 0 0 4px rgba(223, 3, 3, .12); }
+.mvx .search-bar input.form-control {
+    height: 46px !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    font-size: 1rem !important;
+    color: var(--m-ink);
+}
+.mvx .search-bar .btn-search {
+    height: 46px !important;
+    border-radius: 999px !important;
+    background: var(--m-accent) !important;
+    color: #fff !important;
+    font-size: .95rem !important;
+    font-weight: 700;
+    border: 0;
+    transition: background .2s var(--m-ease);
+}
+.mvx .search-bar .btn-search:hover { background: var(--m-accent-strong) !important; }
+
+/* Cards */
+.mvx .feature-block { margin-bottom: 30px; }
+.mvx .feature-block .inner-box {
+    background: var(--m-surface);
+    border: 1px solid var(--m-border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--m-shadow-sm);
+    transition: transform .28s var(--m-ease), box-shadow .28s var(--m-ease), border-color .28s var(--m-ease);
+}
+.mvx .feature-block .inner-box:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--m-shadow-md);
+    border-color: var(--m-border-strong);
+}
+.mvx .feature-block .inner-box .image {
+    position: relative;
+    overflow: hidden;
+    background: #0c1024;
+}
+.mvx .feature-block .inner-box .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .5s var(--m-ease);
+}
+.mvx .feature-block .inner-box:hover .image img { transform: scale(1.05); }
+
+/* Rating chip (replace the always-on dark cover) */
+.mvx .feature-block .inner-box .image .overlay-box {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    pointer-events: none;
+}
+.mvx .feature-block .inner-box .image .post-meta {
+    position: absolute;
+    top: 10px;
+    inset-inline-start: 10px;
+    display: inline-flex;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(10, 16, 36, .72);
+    backdrop-filter: blur(3px);
+    color: #fff;
+    font-size: .76rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.mvx .feature-block .inner-box .image .post-meta li { margin: 0; color: #fff; font-size: .76rem; display: inline-flex; align-items: center; gap: 4px; }
+.mvx .feature-block .inner-box .image .post-meta li .icon { color: #ffc93c; font-size: .8rem; }
+/* hide the placeholder "25 comments" item */
+.mvx .feature-block .inner-box .image .post-meta li:last-child { display: none; }
+
+/* Trailer play button (keeps the theme's hover wipe) */
+.mvx .feature-block .inner-box .video-box span {
+    width: 58px;
+    height: 58px;
+    margin-top: -29px;
+    margin-left: -29px;
+    line-height: 58px;
+    color: #fff;
+    background: var(--m-accent);
+    border-color: #fff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .35);
+}
+
+/* Lower content */
+.mvx .feature-block .inner-box .lower-content { padding: 14px 16px 16px; }
+.mvx .feature-block .inner-box .lower-content h6 { font-size: .96rem; line-height: 1.35; margin: 0; }
+.mvx .feature-block .inner-box .lower-content h6 a {
+    color: var(--m-ink);
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.mvx .feature-block .inner-box .lower-content h6 a:hover { color: var(--m-accent-strong); }
+.mvx .feature-block .inner-box .lower-content .year {
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--m-muted);
+    background: var(--m-surface-2);
+    border: 1px solid var(--m-border);
+    border-radius: 999px;
+    padding: 2px 9px;
+}
+
+/* Empty state */
+.mvx .mixitup-gallery > p.text-muted { font-size: 1rem; }
+
+/* ---------- Pagination ---------- */
+.mvx-pager { background: var(--m-bg); padding-bottom: 8px; }
+.mvx-pager .pagination { gap: 6px; }
+.mvx-pager .page-item { margin: 0 !important; }
+.mvx-pager .page-link {
+    min-width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--m-border-strong);
+    border-radius: 11px;
+    color: var(--m-ink);
+    font-weight: 600;
+    background: var(--m-surface);
+    transition: background .2s var(--m-ease), color .2s var(--m-ease), border-color .2s var(--m-ease);
+}
+.mvx-pager .page-link:hover { border-color: var(--m-navy); color: var(--m-navy); background: var(--m-surface-2); }
+.mvx-pager .page-item.active .page-link {
+    background: var(--m-accent);
+    border-color: var(--m-accent);
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(223, 3, 3, .26);
+}
+
+/* ---------- Responsive (keep theme column widths, just tidy) ---------- */
+@media (max-width: 575px) {
+    .mvx.movie-page-section { padding: 36px 0 52px; }
+    .mvx .search-bar form { flex-wrap: nowrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mvx *, .mvx *::before, .mvx *::after { transition-duration: .01ms !important; animation: none !important; }
+    .mvx .feature-block .inner-box:hover { transform: none; }
+    .mvx .feature-block .inner-box:hover .image img { transform: none; }
+}

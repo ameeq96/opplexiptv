@@ -1,0 +1,134 @@
+/* =============================================================
+   Pricing page — promo / CTA band below the plans
+   Scoped under .prcx. The plans table (_best-packages) and other
+   shared includes are intentionally left untouched.
+   Brand: red rgb(223,3,3) · navy rgb(1,12,58)
+   ============================================================= */
+
+.prcx {
+    --p-ink: #0a1438;
+    --p-body: #3c4360;
+    --p-accent: rgb(223, 3, 3);
+    --p-accent-strong: #b80a0a;
+    --p-navy: rgb(1, 12, 58);
+    --p-navy-2: #1c2c78;
+    --p-bg: #f4f6fb;
+    --p-r: 26px;
+    --p-shadow: 0 26px 60px rgba(10, 20, 56, .22);
+    --p-ease: cubic-bezier(.2, .7, .3, 1);
+
+    background: var(--p-bg);
+    padding: 56px 0 76px;
+    font-family: var(--font-family-poppins), system-ui, sans-serif;
+}
+.prcx a { text-decoration: none; }
+
+/* Panel */
+.prcx__panel {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--p-r);
+    background:
+        radial-gradient(90% 120% at 92% 0%, rgba(223, 3, 3, .26) 0%, rgba(223, 3, 3, 0) 52%),
+        linear-gradient(155deg, var(--p-navy) 0%, #0a1540 58%, var(--p-navy-2) 130%);
+    color: #eef1fb;
+    box-shadow: var(--p-shadow);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 38px 30px;
+}
+@media (min-width: 992px) {
+    .prcx__panel { grid-template-columns: 1.5fr 1fr; align-items: center; padding: 52px 52px; }
+}
+
+.prcx__content { min-width: 0; }
+.prcx__bar { width: 44px; height: 4px; border-radius: 4px; background: var(--p-accent); margin-bottom: 18px; }
+.prcx__title {
+    font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+    line-height: 1.16;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #fff;
+    margin: 0;
+    text-wrap: balance;
+}
+.prcx__text {
+    margin: 16px 0 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .82);
+    max-width: 56ch;
+}
+.prcx__price {
+    margin: 20px 0 0;
+    padding: 14px 18px;
+    display: inline-block;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .14);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.prcx__price strong,
+.prcx__price b,
+.prcx__price span { color: #ff8a8a; }
+
+.prcx__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+    height: 54px;
+    padding: 0 28px;
+    border-radius: 14px;
+    background: var(--p-accent);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 14px 30px rgba(223, 3, 3, .34);
+    transition: transform .2s var(--p-ease), box-shadow .25s var(--p-ease), background .2s var(--p-ease);
+}
+.prcx__cta:hover { background: var(--p-accent-strong); color: #fff; transform: translateY(-2px); box-shadow: 0 20px 38px rgba(223, 3, 3, .42); }
+.prcx__cta svg { width: 18px; height: 18px; transition: transform .2s var(--p-ease); }
+.prcx__cta:hover svg { transform: translateX(3px); }
+[dir="rtl"] .prcx__cta:hover svg { transform: translateX(-3px); }
+
+/* Decorative visual */
+.prcx__visual {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+@media (min-width: 992px) { .prcx__visual { display: flex; } }
+.prcx__visual::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, .14) 0%, rgba(255, 255, 255, 0) 68%);
+}
+.prcx__visual svg {
+    position: relative;
+    width: 168px;
+    height: 168px;
+    color: rgba(255, 255, 255, .9);
+    filter: drop-shadow(0 12px 30px rgba(0, 0, 0, .35));
+}
+
+/* Responsive */
+@media (max-width: 575px) {
+    .prcx { padding: 40px 0 56px; }
+    .prcx__panel { padding: 30px 22px; }
+    .prcx__cta { width: 100%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .prcx *, .prcx *::before, .prcx *::after { transition-duration: .01ms !important; }
+    .prcx__cta:hover { transform: none; }
+}

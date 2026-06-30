@@ -9,8 +9,12 @@
     )) !!}
 @endpush
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/movies.css') }}?v={{ @filemtime(public_path('css/movies.css')) ?: 1 }}">
+@endpush
+
 @section('content')
-    <section class="movie-page-section">
+    <section class="movie-page-section mvx" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <div class="auto-container">
 
             <h1 class="h3 text-center my-3">{{ __('messages.movies_title') }}</h1>
@@ -168,7 +172,7 @@
     </section>
 
     {{-- Pagination --}}
-    <div class="pagination-wrapper mb-4">
+    <div class="pagination-wrapper mvx-pager mb-4">
         <ul class="pagination justify-content-center flex-nowrap" style="overflow-x:auto; padding:0 10px;">
             {{-- Prev --}}
             @if ($page > 1)

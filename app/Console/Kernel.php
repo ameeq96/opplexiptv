@@ -12,7 +12,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
+        // Regenerate the XML sitemap (hreflang clusters + blog/product URLs) daily,
+        // then push the fresh URLs to IndexNow for near-instant discovery.
+        // Requires the system cron to run `php artisan schedule:run` every minute.
+        $schedule->command('sitemap:generate')->dailyAt('03:30');
+        $schedule->command('indexnow:submit')->dailyAt('03:35');
     }
 
     /**

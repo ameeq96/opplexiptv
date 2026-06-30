@@ -43,6 +43,8 @@
     <section class="blogs-wrap {{ $isRtl ? 'rtl' : '' }}">
         <div class="auto-container">
 
+            <h1 class="sr-only">{{ __('messages.blog.heading') }} — IPTV Guides, Setup Tips &amp; Streaming News</h1>
+
             {{-- Toolbar: categories + search --}}
             <div class="blog-toolbar">
                 <nav class="blog-filters" aria-label="{{ __('messages.blog.heading') }}">

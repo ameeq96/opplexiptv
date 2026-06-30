@@ -21,6 +21,25 @@ class ProductController extends Controller
             ->where('is_active', true)
             ->firstOrFail();
 
+        $related = DigitalProduct::query()
+            ->with('category:id,name,slug')
+            ->where('is_active', true)
+            ->where('id', '!=', $product->id)
+            ->when($product->digital_category_id, fn ($q) => $q->where('digital_category_id', $product->digital_category_id))
+            ->orderByDesc('id')
+            ->limit(4)
+            ->get();
+
+        if ($related->count() < 4) {
+            $related = DigitalProduct::query()
+                ->with('category:id,name,slug')
+                ->where('is_active', true)
+                ->where('id', '!=', $product->id)
+                ->orderByDesc('id')
+                ->limit(4)
+                ->get();
+        }
+
         $productUrl = route('digital.product.show', $product->slug);
         $productImage = $product->image
             ? asset('images/digital-products/' . $product->image)
@@ -99,6 +118,7 @@ class ProductController extends Controller
 
         return view('pages.digital-commerce.product', [
             'product' => $product,
+            'related' => $related,
             'jsonLd' => $jsonLd,
             'productImage' => $productImage,
             'productDescription' => $productDescription,

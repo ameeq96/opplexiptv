@@ -9,6 +9,10 @@
     )) !!}
 @endpush
 
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ @filemtime(public_path('css/contact.css')) ?: 1 }}">
+@endpush
+
 @section('content')
     <!-- Page Title -->
     <x-page-title :title="__('messages.contact.heading')" :breadcrumbs="[
@@ -19,78 +23,58 @@
     <!-- End Page Title -->
 
     <!-- Contact Page Section -->
-    <section class="contact-page-section" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
+    <section class="ctx {{ $isRtl ? 'rtl' : '' }}" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <div class="auto-container">
 
-            <h1 class="h2 my-3" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                {{ __('messages.contact.heading') }}
-            </h1>
+            <div class="ctx__head">
+                <div class="ctx__bar" aria-hidden="true"></div>
+                <h1 class="ctx__title">{{ __('messages.contact.heading') }}</h1>
+            </div>
 
-            <div @class(['row', 'clearfix', $isRtl ? 'rtl-row' : ''])>
+            <div class="ctx-grid">
 
-                <!-- Info Column -->
-                <div class="info-column col-lg-4 col-md-12 col-sm-12" @style(['text-align: right' => $isRtl])>
-                    <div class="inner-column">
-                        <div class="title-box">
-                            <h4>{{ __('messages.contact.details.title') }}</h4>
-                        </div>
+                <!-- Info panel -->
+                <aside class="ctx-info">
+                    <h2 class="ctx-info__title">{{ __('messages.contact.details.title') }}</h2>
 
-                        <div class="lower-box">
-                            <ul @class(['info-list', $isRtl ? 'text-end' : 'text-start'])>
-                                <li class="d-flex align-items-start">
-                                    <span class="icon flaticon-map me-2"></span>
-                                    <span>{{ __('messages.contact.details.location') }}</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <span class="icon flaticon-call me-2"></span>
-                                    <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
-                                        target="_blank" rel="noopener">
-                                        {{ $isRtl ? '4913-093 (936) 1+' : __('messages.contact.details.phone') }}
-                                    </a>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <span class="icon flaticon-email-1 me-2"></span>
-                                    <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a>
-                                </li>
-                            </ul>
+                    <ul class="ctx-methods">
+                        <li class="ctx-method">
+                            <span class="ctx-method__icon icon flaticon-map" aria-hidden="true"></span>
+                            <span class="ctx-method__val">{{ __('messages.contact.details.location') }}</span>
+                        </li>
+                        <li class="ctx-method">
+                            <span class="ctx-method__icon icon flaticon-call" aria-hidden="true"></span>
+                            <span class="ctx-method__val">
+                                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
+                                    target="_blank" rel="noopener">
+                                    {{ $isRtl ? '4913-093 (936) 1+' : __('messages.contact.details.phone') }}
+                                </a>
+                            </span>
+                        </li>
+                        <li class="ctx-method">
+                            <span class="ctx-method__icon icon flaticon-email-1" aria-hidden="true"></span>
+                            <span class="ctx-method__val"><a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a></span>
+                        </li>
+                    </ul>
 
-                            <div @class(['timing', $isRtl ? 'text-end' : 'text-start'])>
-                                {{ __('messages.contact.details.hours') }}
-                            </div>
+                    <div class="ctx-hours">{{ __('messages.contact.details.hours') }}</div>
 
-                            <!-- Social Box -->
-                            <ul @class([
-                                'social-box',
-                                'd-flex',
-                                $isRtl ? 'justify-content-end flex-row-reverse' : 'justify-content-start',
-                            ])>
-                                <li class="facebook">
-                                    <a href="https://www.facebook.com/profile.php?id=61565476366548"
-                                        class="fa fa-facebook-f" target="_blank" rel="noopener"
-                                        aria-label="Facebook" title="Facebook"></a>
-                                </li>
-                                <li class="linkedin">
-                                    <a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
-                                        target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a>
-                                </li>
-                                <li class="instagram">
-                                    <a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                                        rel="noopener" aria-label="Instagram" title="Instagram"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    <ul class="ctx-social">
+                        <li><a href="https://www.facebook.com/profile.php?id=61565476366548"
+                                class="fa fa-facebook-f" target="_blank" rel="noopener"
+                                aria-label="Facebook" title="Facebook"></a></li>
+                        <li><a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
+                                target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a></li>
+                        <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
+                                rel="noopener" aria-label="Instagram" title="Instagram"></a></li>
+                    </ul>
+                </aside>
 
-                <!-- Form Column -->
-                <div class="map-column col-lg-8 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="contact-form-box" aria-labelledby="contact-form-title">
-                            <div class="{{ $containerClass }}" @style(['text-align: right' => $isRtl])>
-                                <h3 id="contact-form-title">{{ __('messages.contact.form.title') }}</h3>
-                            </div>
+                <!-- Form card -->
+                <div class="ctx-form" aria-labelledby="contact-form-title">
+                    <h3 id="contact-form-title" class="ctx-form__title">{{ __('messages.contact.form.title') }}</h3>
 
-                            <div class="contact-form">
+                    <div class="contact-form">
                                 <form method="POST" action="{{ route('contact.send') }}" id="contact-form" novalidate>
                                     @csrf
                                     <div class="row clearfix">
@@ -175,20 +159,20 @@
                                         @endif
 
                                         {{-- Submit --}}
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group text-center">
-                                            <button class="theme-btn btn-style-four" type="submit" name="submit-form">
-                                                <span class="txt">{{ __('messages.contact.form.submit') }}</span>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                            <button class="ctx-submit" type="submit" name="submit-form">
+                                                {{ __('messages.contact.form.submit') }}
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                                             </button>
                                         </div>
                                     </div>
                                 </form>
                             </div><!-- contact-form -->
-                        </div><!-- contact-form-box -->
-                    </div>
-                </div>
+                        </div><!-- ctx-form -->
 
-            </div>
-        </div>
+                    </div><!-- ctx-grid -->
+        </div><!-- auto-container -->
     </section>
     <!-- End Contact Page Section -->
 

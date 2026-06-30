@@ -8,7 +8,7 @@ return [
     ],
     'about' => [
         'title' => 'About Opplex IPTV - Premium 4K Live IPTV Provider',
-        'description' => 'Opplex IPTV offers xtreme hd iptv with 4K streaming, free trial, and 24/7 support.',
+        'description' => 'Learn about Opplex IPTV — a premium provider streaming 12,000+ live TV channels, sports and 50,000+ movies in HD and 4K, with a free trial and 24/7 support.',
         'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
@@ -18,12 +18,12 @@ return [
     ],
     'movies' => [
         'title' => 'Watch IPTV Movies, Series in HD & 4K - Opplex IPTV',
-        'description' => 'Enjoy 50,000+ IPTV movies and 5,000+ series in 4K. Supports iptv smart player, xtreme hd iptv, and free trials.',
+        'description' => 'Stream 50,000+ on-demand movies and 5,000+ TV series in HD and 4K with Opplex IPTV — Hollywood, Bollywood and more, with a free trial and support on every device.',
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'Best IPTV Packages with Free Trial | 4K Streaming Europe',
-        'description' => 'Flexible IPTV packages include xtreme hd iptv, iptv box access, 4K channels, and iptv smart player compatibility.',
+        'description' => 'Compare Opplex IPTV packages — monthly, half-yearly and yearly plans with 12,000+ live channels, sports, movies and 4K streaming, plus a free trial on any device.',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
