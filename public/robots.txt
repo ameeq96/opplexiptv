@@ -12,7 +12,9 @@ Disallow: /*?*fbclid=
 Allow: /
 
 # AI & answer-engine crawlers are welcome to read and cite our content.
-# (Admin, redirect/email endpoints and faceted/parameter URLs stay blocked.)
+# (Admin, redirect and email endpoints stay blocked. Faceted/parameter URLs
+#  like ?page=, ?price=, ?category=, ?target= are intentionally NOT blocked here
+#  so crawlers can read their on-page "noindex" tag and drop them from results.)
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
