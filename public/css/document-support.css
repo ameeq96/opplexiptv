@@ -584,7 +584,7 @@
     font-weight: 700;
 }
 
-.document-support__response-note {
+.document-support p.document-support__response-note {
     max-width: 760px;
     margin: 44px auto 0;
     text-align: center;

@@ -390,19 +390,19 @@ class UiData
                 'icon'        => 'flaticon-swimming-pool',
                 'title'       => __('messages.features.hd_quality.title'),
                 'description' => __('messages.features.hd_quality.description'),
-                'link'        => route('packages'),
+                'link'        => route('packages', ['direct' => 1]),
             ],
             [
                 'icon'        => 'flaticon-5g',
                 'title'       => __('messages.features.flexible_packages.title'),
                 'description' => __('messages.features.flexible_packages.description'),
-                'link'        => route('packages'),
+                'link'        => route('packages', ['direct' => 1]),
             ],
             [
                 'icon'        => 'flaticon-8k',
                 'title'       => __('messages.features.reliable_service.title'),
                 'description' => __('messages.features.reliable_service.description'),
-                'link'        => route('packages'),
+                'link'        => route('packages', ['direct' => 1]),
             ],
             [
                 'icon'        => 'flaticon-customer-service',

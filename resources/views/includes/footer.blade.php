@@ -109,7 +109,7 @@
                     @if (empty($footerLinks['explore']))
                         <li><a class="fx-link" href="{{ url('/') }}">Home</a></li>
                         <li><a class="fx-link" href="{{ url('/pricing') }}">Pricing</a></li>
-                        <li><a class="fx-link" href="{{ url('/packages') }}">Packages</a></li>
+                        <li><a class="fx-link" href="{{ route('packages', ['direct' => 1]) }}">Packages</a></li>
                         <li><a class="fx-link" href="{{ url('/reseller-panel') }}">Reseller Panel</a></li>
                         <li><a class="fx-link" href="{{ url('/movies') }}">Movies</a></li>
                         <li><a class="fx-link" href="{{ url('/iptv-applications') }}">IPTV Apps</a></li>

@@ -108,7 +108,7 @@
                                     <div class="clearfix">
                                         <div class="pull-left">
                                             <h6>
-                                                <a href="{{ route('packages') }}"
+                                                <a href="{{ route('packages', ['direct' => 1]) }}"
                                                     aria-label="Subscribe to watch {{ $movie['title'] }}">
                                                     {{ $movie['title'] }}
                                                 </a>
@@ -145,7 +145,7 @@
                                     <div class="clearfix">
                                         <div class="pull-left">
                                             <h6>
-                                                <a href="{{ route('packages') }}">{{ $series['title'] }}</a>
+                                                <a href="{{ route('packages', ['direct' => 1]) }}">{{ $series['title'] }}</a>
                                             </h6>
                                         </div>
                                         <div class="pull-right">
@@ -179,7 +179,7 @@
                                     <div class="clearfix">
                                         <div class="pull-left">
                                             <h6>
-                                                <a href="{{ route('packages') }}">{{ $cartoon['title'] }}</a>
+                                                <a href="{{ route('packages', ['direct' => 1]) }}">{{ $cartoon['title'] }}</a>
                                             </h6>
                                         </div>
                                         <div class="pull-right">

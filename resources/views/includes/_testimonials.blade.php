@@ -1,82 +1,56 @@
-<section class="testimonial-section style-two" aria-label="Customer Testimonials about Opplex IPTV">
-    @php
-        $isDocumentEnglishTestimonials = request()->routeIs('home') && app()->getLocale() === 'en';
-        $documentTestimonials = $isDocumentEnglishTestimonials ? __('messages.home_document.testimonials') : [];
-    @endphp
+@php
+    $isDocumentEnglishTestimonials = request()->routeIs('home') && app()->getLocale() === 'en';
+    $documentTestimonials = $isDocumentEnglishTestimonials ? __('messages.home_document.testimonials') : [];
+    $reviewItems = collect($testimonials ?? [])
+        ->filter(fn ($testimonial) => !empty($testimonial['text']) && !empty($testimonial['author_name']))
+        ->take(8)
+        ->values();
+    $reviewEyebrow = $reviewEyebrow
+        ?? ($isDocumentEnglishTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title'));
+    $reviewHeading = $reviewHeading
+        ?? ($isDocumentEnglishTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading'));
+    $verifiedLabel = $verifiedLabel
+        ?? ($isDocumentEnglishTestimonials
+            ? $documentTestimonials['verified_label']
+            : __('messages.home_testimonials_verified_customer'));
+    $reviewSectionId = $reviewSectionId ?? 'customer-reviews-title';
+    $isReviewRtl = $isRtl ?? in_array(app()->getLocale(), ['ar', 'ur'], true);
+@endphp
 
-    <div class="auto-container">
-        <div class="sec-title centered testimonial-showcase__heading">
-            <div class="title" aria-label="Testimonials Section Subheading">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title') }}</div>
-            <h3 class="h3" aria-label="Hear from our satisfied IPTV customers">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading') }}</h3>
-            <p>{{ $isDocumentEnglishTestimonials ? $documentTestimonials['intro'] : __('messages.home_testimonials_intro') }}</p>
-        </div>
-
-        @if (!empty($useNativeCarousel))
-            <div class="native-carousel native-carousel--cards native-carousel--testimonials"
-                data-native-carousel
-                data-items-desktop="3"
-                data-items-tablet="2"
-                data-items-mobile="1"
-                data-gap="30"
-                data-autoplay="4000"
-                role="region"
-                aria-label="Testimonial carousel of IPTV customer feedback">
-                <div class="native-carousel__viewport">
-                    <div class="native-carousel__track">
-                        @foreach ($testimonials as $testimonial)
-                            <div class="native-carousel__slide">
-                                <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
-                                    <div class="inner-box testimonial-card">
-                                        <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
-                                        <div class="upper-box testimonial-card__body">
-                                            <div class="text" aria-label="Customer Feedback">{{ $testimonial['text'] }}</div>
-                                        </div>
-                                        <div class="lower-box testimonial-card__footer">
-                                            <div class="author-image-outer testimonial-card__author">
-                                                <div class="author-image">
-                                                    <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
-                                                        alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                                        width="150" height="150" loading="lazy" decoding="async" />
-                                                </div>
-                                                <div class="testimonial-card__author-copy">
-                                                    <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                                                    <div class="testimonial-card__author-role">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['verified_label'] : __('messages.home_testimonials_verified_customer') }}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
+@if ($reviewItems->isNotEmpty())
+    <section class="testimonial-section review-showcase" aria-labelledby="{{ $reviewSectionId }}" dir="{{ $isReviewRtl ? 'rtl' : 'ltr' }}">
+        <div class="auto-container">
+            <header class="testimonial-showcase__heading review-showcase__heading">
+                <div class="review-showcase__eyebrow">
+                    <span aria-hidden="true"></span>
+                    {{ $reviewEyebrow }}
                 </div>
-            </div>
-        @else
-            <div class="testimonial-carousel owl-carousel owl-theme" role="region" aria-label="Testimonial carousel of IPTV customer feedback">
-                @foreach ($testimonials as $testimonial)
-                    <div class="testimonial-block" role="group" aria-label="Testimonial from {{ $testimonial['author_name'] }}">
-                        <div class="inner-box testimonial-card">
-                            <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
-                            <div class="upper-box testimonial-card__body">
-                                <div class="text" aria-label="Customer Feedback">{{ $testimonial['text'] }}</div>
-                            </div>
-                            <div class="lower-box testimonial-card__footer">
-                                <div class="author-image-outer testimonial-card__author">
-                                    <div class="author-image">
-                                        <img src="{{ $testimonial['image'] ? asset($testimonial['image']) : asset('images/placeholder.webp') }}"
-                                             alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
-                                             width="150" height="150" loading="lazy" decoding="async" />
-                                    </div>
-                                    <div class="testimonial-card__author-copy">
-                                        <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                                        <div class="testimonial-card__author-role">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['verified_label'] : __('messages.home_testimonials_verified_customer') }}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <h2 id="{{ $reviewSectionId }}">{{ $reviewHeading }}</h2>
+            </header>
+
+            <div class="review-showcase__grid" role="list">
+                @foreach ($reviewItems as $testimonial)
+                    <figure class="testimonial-card review-showcase__card" role="listitem">
+                        <blockquote class="review-showcase__quote">
+                            <span class="review-showcase__quote-mark" aria-hidden="true">&ldquo;</span>
+                            <p>{{ $testimonial['text'] }}</p>
+                        </blockquote>
+
+                        <figcaption class="review-showcase__author">
+                            <img
+                                src="{{ asset(($testimonial['image'] ?? null) ?: 'images/placeholder.webp') }}"
+                                alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
+                                width="56"
+                                height="56"
+                                loading="lazy" decoding="async">
+                            <span class="review-showcase__author-copy">
+                                <strong>{{ $testimonial['author_name'] }}</strong>
+                                <small class="testimonial-card__author-role">{{ $verifiedLabel }}</small>
+                            </span>
+                        </figcaption>
+                    </figure>
                 @endforeach
             </div>
-        @endif
-    </div>
-</section>
+        </div>
+    </section>
+@endif

@@ -10,7 +10,7 @@
     $assistantRoutes = [
         'home' => route('home'),
         'pricing' => route('pricing'),
-        'packages' => route('packages'),
+        'packages' => route('packages', ['direct' => 1]),
         'about' => route('about'),
         'reseller' => route('reseller-panel'),
         'apps' => route('iptv-applications'),

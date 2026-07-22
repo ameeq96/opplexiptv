@@ -135,8 +135,6 @@
                 'faqItems' => $page['faq']['items'],
                 'faqTitle' => $page['faq']['heading'],
             ])
-
-            @include('includes._check-trail')
         </main>
     @else
         <x-page-title
@@ -166,7 +164,7 @@
                         <h1 class="abtx__title">{{ __('messages.reasons.title') }}</h1>
                     </div>
 
-                    <a href="{{ route('packages') }}" class="abtx__cta" aria-label="{{ __('messages.view.services') }}">
+                    <a href="{{ route('packages', ['direct' => 1]) }}" class="abtx__cta" aria-label="{{ __('messages.view.services') }}">
                         {{ __('messages.view.services') }}
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -175,7 +173,7 @@
 
                 <div class="abtx-grid" role="list">
                     @foreach ($seoServices as $service)
-                        <a class="abtx-card" role="listitem" href="{{ route('packages') }}"
+                        <a class="abtx-card" role="listitem" href="{{ route('packages', ['direct' => 1]) }}"
                             aria-label="{{ $service['title'] ?? '' }}">
                             <span @class(['abtx-card__icon', $service['icon'] ?? '']) aria-hidden="true"></span>
                             <h3 class="abtx-card__title">{{ $service['title'] ?? '' }}</h3>
@@ -201,8 +199,5 @@
 
         {{-- FAQ Section --}}
         @include('includes._faq-section')
-
-        {{-- Trial --}}
-        @include('includes._check-trail')
     @endif
 @stop

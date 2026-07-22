@@ -212,12 +212,11 @@
     @if ($isDocumentEnglish)
         @include('includes._home-devices')
         @include('includes._testimonials', [
-            'useNativeCarousel' => $useNativeHomeCarousel,
             'testimonials' => $documentTestimonials,
         ])
     @else
+        @include('includes._testimonials')
         @unless ($isMobile)
-            @include('includes._testimonials', ['useNativeCarousel' => $useNativeHomeCarousel])
             @include('includes._channels-carousel', ['useNativeCarousel' => $useNativeHomeCarousel])
         @endunless
     @endif

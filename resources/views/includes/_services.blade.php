@@ -2,9 +2,10 @@
     $isDocumentEnglishServices = request()->routeIs('home') && app()->getLocale() === 'en';
     $documentServices = $isDocumentEnglishServices ? __('messages.home_document.services') : [];
     $displayServiceCards = $serviceCards ?? [];
+    $packagesUrl = route('packages', ['direct' => 1]);
 
     if ($isDocumentEnglishServices) {
-        $serviceRoutes = [route('packages'), route('reseller-panel'), route('packages')];
+        $serviceRoutes = [$packagesUrl, route('reseller-panel'), $packagesUrl];
         $serviceIcons = ['service-4.webp', 'service-5.webp', 'service-4.webp'];
         $displayServiceCards = [];
 
@@ -41,7 +42,7 @@
                         @forelse ($displayServiceCards as $card)
                             @php
                                 $icon = $card['icon'] ? asset('images/icons/' . $card['icon']) : asset('images/icons/service-4.webp');
-                                $link = $card['link'] ?: route('packages');
+                                $link = $card['link'] ?: $packagesUrl;
                             @endphp
                             <div class="native-carousel__slide">
                                 <div class="service-block-two" aria-label="{{ $card['title'] }}">
@@ -68,9 +69,9 @@
                                         <div class="icon">
                                             <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="{{ __('messages.iptv_sports') }}" loading="lazy" decoding="async" />
                                         </div>
-                                        <h4><a href="{{ route('packages') }}">{{ __('messages.iptv_sports') }}</a></h4>
+                                        <h4><a href="{{ $packagesUrl }}">{{ __('messages.iptv_sports') }}</a></h4>
                                         <div class="text">{{ __('messages.iptv_sports_desc') }}</div>
-                                        <a class="learn-more" href="{{ route('packages') }}">{{ __('messages.learn_more') }}</a>
+                                        <a class="learn-more" href="{{ $packagesUrl }}">{{ __('messages.learn_more') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +84,7 @@
                 @forelse ($displayServiceCards as $card)
                     @php
                         $icon = $card['icon'] ? asset('images/icons/' . $card['icon']) : asset('images/icons/service-4.webp');
-                        $link = $card['link'] ?: route('packages');
+                        $link = $card['link'] ?: $packagesUrl;
                     @endphp
                     <div class="service-block-two" aria-label="{{ $card['title'] }}">
                         <div class="inner-box">
@@ -107,9 +108,9 @@
                             <div class="icon">
                                 <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="{{ __('messages.iptv_sports') }}" loading="lazy" decoding="async" />
                             </div>
-                            <h4><a href="{{ route('packages') }}">{{ __('messages.iptv_sports') }}</a></h4>
+                            <h4><a href="{{ $packagesUrl }}">{{ __('messages.iptv_sports') }}</a></h4>
                             <div class="text">{{ __('messages.iptv_sports_desc') }}</div>
-                            <a class="learn-more" href="{{ route('packages') }}">{{ __('messages.learn_more') }}</a>
+                            <a class="learn-more" href="{{ $packagesUrl }}">{{ __('messages.learn_more') }}</a>
                         </div>
                     </div>
                 @endforelse

@@ -46,7 +46,7 @@
                         @endforeach
                     </div>
                     <div class="document-support__actions">
-                        <a class="document-support__button" href="{{ route('packages') }}">
+                        <a class="document-support__button" href="{{ route('packages', ['direct' => 1]) }}">
                             {{ $documentAbout['hero']['plans_cta'] }}
                         </a>
                         <a class="document-support__button document-support__button--outline"
@@ -173,7 +173,7 @@
                         <h1 id="choose-us-title" class="abtx__title">{!! __('messages.choose_us.title') !!}</h1>
                     </div>
 
-                    <a href="{{ route('packages') }}" class="abtx__cta">
+                    <a href="{{ route('packages', ['direct' => 1]) }}" class="abtx__cta">
                         {{ __('messages.choose_us.button') }}
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>

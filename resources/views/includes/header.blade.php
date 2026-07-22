@@ -236,7 +236,7 @@
                                     </li>
                                     <li class="{{ request()->routeIs('packages') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                             @if(request()->routeIs('packages')) aria-current="page" @endif
-                                            href="{{ route('packages') }}">{{ __('messages.nav_packages') }}</a>
+                                            href="{{ route('packages', ['direct' => 1]) }}">{{ __('messages.nav_packages') }}</a>
                                     </li>
                                     <li class="{{ request()->routeIs('iptv-applications') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                             @if(request()->routeIs('iptv-applications')) aria-current="page" @endif

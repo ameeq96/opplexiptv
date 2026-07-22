@@ -107,7 +107,7 @@
                             target="_blank" rel="noopener">
                             {{ $documentFaq['cta']['trial'] }}
                         </a>
-                        <a class="document-support__button document-support__button--outline-light" href="{{ route('packages') }}">
+                        <a class="document-support__button document-support__button--outline-light" href="{{ route('packages', ['direct' => 1]) }}">
                             {{ $documentFaq['cta']['plans'] }}
                         </a>
                         <a class="document-support__button document-support__button--outline-light"

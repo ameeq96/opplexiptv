@@ -104,11 +104,7 @@ class HomeController extends Controller
 
     public function packages()
     {
-        if (app()->getLocale() === 'en') {
-            return view('pages.packages');
-        }
-
-        return redirect()->route('iptv-subscription-service', [], 301);
+        return view('pages.packages');
     }
 
     public function iptvSubscriptionService()

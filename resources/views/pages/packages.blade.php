@@ -140,37 +140,13 @@
                 </div>
             </section>
 
-            <section class="dc-section dc-section--soft" aria-labelledby="packages-reviews-title">
-                <div class="auto-container">
-                    <div class="dc-section__header">
-                        <span class="dc-eyebrow">Customer Reviews</span>
-                        <h2 id="packages-reviews-title">{{ $page['reviews']['heading'] }}</h2>
-                    </div>
-                    @if ($packageTestimonials->isNotEmpty())
-                        <div class="dc-review-grid" role="list">
-                            @foreach ($packageTestimonials->take(8) as $testimonial)
-                                <figure class="dc-review-card" role="listitem">
-                                    <blockquote>
-                                        <span class="dc-review-card__quote" aria-hidden="true">“</span>
-                                        <p>{{ $testimonial['text'] ?? '' }}</p>
-                                    </blockquote>
-                                    <figcaption>
-                                        @if (!empty($testimonial['image']))
-                                            <img src="{{ asset($testimonial['image']) }}"
-                                                alt="Photo of {{ $testimonial['author_name'] ?? '' }}, IPTV customer"
-                                                width="56" height="56" loading="lazy" decoding="async">
-                                        @endif
-                                        <span>
-                                            <strong>{{ $testimonial['author_name'] ?? '' }}</strong>
-                                            <small>{{ $page['reviews']['verified'] }}</small>
-                                        </span>
-                                    </figcaption>
-                                </figure>
-                            @endforeach
-                        </div>
-                    @endif
-                </div>
-            </section>
+            @include('includes._testimonials', [
+                'testimonials' => $packageTestimonials,
+                'reviewEyebrow' => 'Customer Reviews',
+                'reviewHeading' => $page['reviews']['heading'],
+                'verifiedLabel' => $page['reviews']['verified'],
+                'reviewSectionId' => 'packages-reviews-title',
+            ])
 
             @include('includes._faq-section', [
                 'faqItems' => $page['faq']['items'],

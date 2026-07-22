@@ -279,5 +279,4 @@
         @include('includes._faq-section')
     @endif
 
-    @include('includes._check-trail')
 @stop

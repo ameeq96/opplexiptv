@@ -273,6 +273,10 @@
     transform: translateY(-2px);
 }
 
+.home-document-trial {
+    padding-bottom: 56px;
+}
+
 .home-document-trial .trial-cta__buttons {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -315,6 +319,10 @@
 }
 
 @media (max-width: 767px) {
+    .home-document-trial {
+        padding-bottom: 36px;
+    }
+
     .home-document-devices,
     .home-document-stats {
         padding: 56px 0;
