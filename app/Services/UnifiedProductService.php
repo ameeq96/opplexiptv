@@ -12,7 +12,7 @@ class UnifiedProductService
 {
     public function frontendProducts(): Collection
     {
-        $key = 'ui:' . app()->getLocale() . ':frontend-products';
+        $key = 'ui:' . app()->getLocale() . ':frontend-products:v2';
 
         try {
             return Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts());
@@ -24,6 +24,7 @@ class UnifiedProductService
     private function buildFrontendProducts(): Collection
     {
         $waBase = 'https://wa.me/16393903194?text=';
+        $isDocumentEnglish = app()->getLocale() === 'en';
 
         $affiliate = $this->hasTable('shop_products')
             ? ShopProduct::query()
@@ -37,6 +38,8 @@ class UnifiedProductService
                     return [
                         'id' => $p->id,
                         'type' => 'affiliate',
+                        'identifier' => $p->asin,
+                        'asin' => $p->asin,
                         'name' => $name,
                         'description' => '',
                         'price' => null,
@@ -55,7 +58,7 @@ class UnifiedProductService
                 })
             : collect();
 
-        $digital = $this->hasTable('digital_products')
+        $digital = $isDocumentEnglish && $this->hasTable('digital_products')
             ? DigitalProduct::query()
                 ->with('category:id,name')
                 ->where('is_active', true)
@@ -70,14 +73,16 @@ class UnifiedProductService
                     return [
                         'id' => $p->id,
                         'type' => 'digital',
+                        'identifier' => $p->slug,
+                        'slug' => $p->slug,
                         'name' => $p->title,
-                        'description' => '',
+                        'description' => (string) ($p->short_description ?? ''),
                         'price' => (float) $p->price,
                         'currency' => (string) $p->currency,
                         'image' => $p->image ? asset('images/digital-products/' . $p->image) : null,
-                        'url' => route('digital.product.show', $p->slug),
-                        'target' => null,
-                        'rel' => null,
+                        'url' => $waBase . $waText,
+                        'target' => '_blank',
+                        'rel' => 'noopener noreferrer',
                         'sort_order' => (int) $p->sort_order,
                         'can_add_to_cart' => false,
                         'add_to_cart_url' => null,

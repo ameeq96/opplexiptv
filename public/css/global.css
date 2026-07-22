@@ -1302,3 +1302,11 @@ img {
     color: #666;
     margin-top: var(--margin-top-5)
 }
+
+/* Keep the current page visible in desktop, sticky, and mobile menus. */
+.main-header .main-menu .navigation > li.current > a,
+.main-header .sticky-header .main-menu .navigation > li.current > a,
+.main-header .mobile-menu .navigation li.current > a {
+    color: var(--main-color) !important;
+    -webkit-text-fill-color: var(--main-color) !important;
+}

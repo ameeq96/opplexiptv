@@ -644,6 +644,225 @@ return [
   'home_split_text' => 'From the smart TV in your living room to the phone in your pocket, OpplexIPTV keeps your favourite live channels and on-demand titles within reach. One subscription delivers a smooth, reliable picture across every screen in your home, with simple setup and steady performance designed to fit the way you watch today.',
   'home_split_image_alt' => 'Live TV and on-demand content streaming across multiple devices with OpplexIPTV',
 
+  // Homepage copy from the Opplex IPTV content document
+  'home_document' => [
+    'hero' => [
+      'heading' => 'Best IPTV Subscription Service Provider | Live TV, Sports & 4K Streaming',
+      'text' => 'Stop paying for cable you barely use. Get some of the best IPTV subscription deals as Opplex gives you 12,000+ live channels, 50,000+ movies, and crystal-clear 4K, all on the devices you already own. Pick a plan, plug in, and start watching today.',
+      'primary_cta' => 'Start Free Trial',
+      'secondary_cta' => 'View IPTV Plans',
+    ],
+    'split' => [
+      'eyebrow' => 'Enjoyment Beyond Limits',
+      'heading' => 'Watch What You Want, When You Want',
+      'text' => "Opplex is one of the best IPTV streaming services available right now, especially if you're in the USA or anywhere across Europe. One subscription covers live sports, news, movies, and series in HD and 4K. It runs on your Smart TV, Fire TV Stick, Android box, phone, or tablet. Setup takes a few minutes, and we're here if you need a hand.",
+      'image_alt' => 'Watch Opplex IPTV on your TV, streaming device, phone, or tablet',
+    ],
+    'pricing' => [
+      'heading' => 'Smart IPTV Plans. No Hidden Fees. Enjoy 4K Streaming & Free Trial',
+      'subheading' => 'Get Real Value For What You Pay For.',
+      'intro' => "Every plan includes 4K streaming, 24/7 support, and access to our full channel and VOD library. Choose how long you want to subscribe, that's it.",
+      'plans' => [
+        'monthly' => [
+          'title' => 'Monthly',
+          'features' => [
+            '4K Live Channels With No Buffering',
+            'All Movies, Series & Sports Included',
+            'Works On Any Device: Fire TV Stick, Smart TV, Android, or iOS',
+            '24/7 WhatsApp Support',
+          ],
+        ],
+        'three_months' => [
+          'title' => '3 Months',
+          'features' => [
+            'Same Full Access As Monthly Package',
+            'Better Value Per Month',
+            '24/7 Priority Customer Facilitation',
+          ],
+        ],
+        'half_yearly' => [
+          'title' => 'Half-Yearly',
+          'features' => [
+            'Same Full Access as the 3 Months Package',
+            'Six Months Of Uninterrupted Streaming',
+            'Top Choice For Regular Viewers',
+          ],
+        ],
+        'yearly' => [
+          'title' => 'Yearly',
+          'features' => [
+            'Best Value, Less Than $2 A Month',
+            'Full Year Of Live TV, Sports & VOD in 4K',
+          ],
+        ],
+      ],
+    ],
+    'affiliate' => [
+      'heading' => 'Gear Up for Better Streaming',
+      'text' => 'The right device makes a real difference. Below are some of the most popular picks among IPTV users, from plug-and-play streaming sticks to full Android boxes that run Opplex straight out of the box. All are compatible devices with your Opplex subscription.',
+    ],
+    'unlimited' => [
+      'eyebrow' => 'Uninterrupted IPTV With Countless Options',
+      'heading' => 'Unlimited IPTV Access | 4K Quality, Free Trial Included',
+      'intro' => "We built Opplex for people who are tired of buffering, poor picture quality, and channels that just don't work. Here's what you actually get:",
+      'features' => [
+        [
+          'title' => 'HD & 4K Live Channels - Zero Buffer',
+          'description' => 'Stream every channel in sharp HD or full 4K. No freezing. No pixelated picture. Works on Smart TVs, Android boxes, and IPTV players.',
+        ],
+        [
+          'title' => 'Variety of Plans with a Free Trial',
+          'description' => 'Not sure yet? Try us first. Our IPTV free trial lets you check channel quality on your own device before you spend anything. Pick monthly, half-yearly, or yearly after that.',
+        ],
+        [
+          'title' => '99.9% Uptime - Trusted Across Europe and the USA',
+          'description' => "Our servers stay up. Viewers in the UK, France, Italy, and the US use Opplex daily without drops. That consistency is something most IPTV providers simply can't match.",
+        ],
+        [
+          'title' => 'Easy Setup on Any Device',
+          'description' => 'Fire TV Stick, MAG box, iOS, Android, Smart TV, we support them all. Installation takes under five minutes, and our team walks you through it on WhatsApp if needed.',
+        ],
+      ],
+    ],
+    'services' => [
+      'eyebrow' => 'Premium Features',
+      'heading' => 'Everything You Need from an IPTV Service',
+      'intro' => 'Get everything you need from smooth streaming, improved access, and a clear IPTV experience on every device.',
+      'cards' => [
+        [
+          'title' => 'Best IPTV Subscription Packages with Smart Player Access',
+          'description' => 'Enjoy a range of affordable IPTV subscription plans, including Xtreme HD IPTV, aroma IPTV & IPTV smart player with 12k+ live channels & 4K support.',
+          'cta' => 'More Details About IPTV Plans',
+        ],
+        [
+          'title' => 'Start IPTV Reselling with Free Trial & Credits',
+          'description' => 'Want to sell IPTV? Our reseller panel gives you credits, a dashboard, and flexible pricing so you can build your own customer base and earn on your own terms. Earn by selling Xtreme HD IPTV, IPTV boxes, and aroma IPTV in UK, France, Italy & worldwide.',
+          'cta' => 'Details About IPTV Reseller Programs',
+        ],
+        [
+          'title' => 'Live Sports in HD via IPTV Smart Player',
+          'description' => 'Football, cricket, UFC, NBA, all live, all in HD or 4K. No extra sports package. No blackouts. Just tap the channel and watch.',
+          'cta' => 'More Details About Sports Channels',
+        ],
+      ],
+    ],
+    'devices' => [
+      'heading' => 'Works on Every Device You Already Own',
+      'intro' => "You don't need to buy anything special. Opplex runs on:",
+      'items' => [
+        'Amazon Firestick & Fire TV',
+        'Smart TVs including Samsung, LG & Sony',
+        'Android TV boxes & MAG devices',
+        'Android & iOS phones and tablets',
+        'Windows and Mac via any IPTV player',
+      ],
+      'note' => "If you're not sure which player to use, just ask us on WhatsApp. We'll tell you exactly what to download and how to set it up.",
+      'whatsapp_message' => 'Hi, I need help choosing and setting up an IPTV player for my device.',
+    ],
+    'testimonials' => [
+      'title' => 'Customer Reviews - Best IPTV Experience',
+      'heading' => 'Hear What Viewers Say About Opplex IPTV',
+      'intro' => 'These are genuine reviews from customers streaming with us every day using Opplex IPTV across live TV, sports, and on-demand streaming.',
+      'verified_label' => 'Verified IPTV Customer',
+      'reviews' => [
+        [
+          'author' => 'Alex McCarthy',
+          'text' => 'Best IPTV ever, will surely give 10 out of 10. Like the HD streaming that doesn’t lag anytime, and the variety I get to browse.',
+        ],
+        [
+          'author' => 'Elsa Houdini',
+          'text' => 'I love Aroma IPTV and their WhatsApp support. Great device!',
+        ],
+        [
+          'author' => 'Becky Sobers',
+          'text' => 'Switched from cable to Opplex IPTV, glad that was the right call.',
+        ],
+        [
+          'author' => 'Sarah',
+          'text' => 'No buffer on IPTV smart player, great support, and runs smoothly even on Fire TV Stick, totally worth it!',
+        ],
+        [
+          'author' => 'Ameeq Khan',
+          'text' => 'Top-quality IPTV that works perfectly on Android.',
+        ],
+        [
+          'author' => 'Luc Dubois',
+          'text' => 'Watched every La Liga match in 4K live IPTV with no lag.',
+        ],
+        [
+          'author' => 'Giulia Romano',
+          'text' => 'Their IPTV trial is cool! It lets me stream all my favorite Italian and French shows via Aroma IPTV.',
+        ],
+        [
+          'author' => 'Oliver Smith',
+          'text' => 'This IPTV subscription has 12k+ channels, works on IPTV smart player, and is super stable across the UK.',
+        ],
+      ],
+    ],
+    'faq' => [
+      'heading' => 'Frequently Asked Questions',
+      'items' => [
+        [
+          'question' => 'What exactly is Opplex IPTV?',
+          'answer' => 'Opplex is an IPTV subscription service. That means you stream live TV, sports, movies, and series over your internet connection. No satellite dish, no cable box, no contract. You get 12,000+ live channels and 50,000+ on-demand titles in one app.',
+        ],
+        [
+          'question' => 'Is there a free trial before I subscribe?',
+          'answer' => "Yes. We offer a low-cost trial you can use to test picture quality, channel stability, and performance on your own device. Just message us on WhatsApp, and we'll get you set up.",
+        ],
+        [
+          'question' => 'Which devices can I watch on?',
+          'answer' => 'Fire TV Stick, Android TV, Smart TVs (Samsung & LG), Android phones, iPhones, tablets, MAG boxes, and Windows/Mac computers. If it can run an IPTV player, Opplex works on it.',
+        ],
+        [
+          'question' => 'Do I need any special hardware or equipment?',
+          'answer' => "No. Just a decent internet connection and a device you already own. We recommend at least 15 Mbps for HD and 25 Mbps for 4K. That's it.",
+        ],
+        [
+          'question' => 'How fast is activation after I order?',
+          'answer' => "Most accounts go live within minutes. You'll get your login details by email and WhatsApp as soon as payment goes through.",
+        ],
+        [
+          'question' => 'Does it work outside the U.S. and Europe?',
+          'answer' => 'Yes. As long as you have a stable internet connection, Opplex works anywhere in the world, the USA, UK, Canada, the Middle East, or anywhere else.',
+        ],
+      ],
+    ],
+    'stats' => [
+      'heading' => 'Numbers That Speak for Themselves!',
+      'items' => [
+        [
+          'value' => '12,000+',
+          'label' => 'Live Channels',
+        ],
+        [
+          'value' => '50,000+',
+          'label' => 'Movies & Series',
+        ],
+        [
+          'value' => '99.9%',
+          'label' => 'Server Uptime',
+        ],
+        [
+          'value' => '24/7',
+          'label' => 'Customer Support',
+        ],
+      ],
+    ],
+    'trial' => [
+      'heading' => 'Try Opplex IPTV For Free | No Commitment Needed',
+      'text' => 'Stream 12,000+ channels in 4K. Test the quality yourself before you subscribe. Activation takes minutes.',
+      'chips' => [
+        'Enjoy 4K Streams',
+        'More than 12K+ channels',
+        'Quick setup activation',
+      ],
+      'action_label' => 'WhatsApp Trial',
+      'primary_cta' => 'Avail Free IPTV Trial',
+      'secondary_cta' => 'Explore Plans',
+    ],
+  ],
+
   // Home — map embed section (last)
   'home_map_heading' => 'Find Us in Saskatoon',
   'home_map_text' => 'We are proudly based in Saskatoon, Saskatchewan, Canada, and serving viewers everywhere. Use the map below to see our location, and reach out any time if you would like to learn more about our service.',

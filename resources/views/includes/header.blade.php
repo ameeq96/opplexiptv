@@ -82,6 +82,39 @@
                         </div>
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                            @php
+                                $supportedMenuLocales = array_keys(LaravelLocalization::getSupportedLocales());
+                                $normaliseMenuPath = static function ($path) use ($supportedMenuLocales): string {
+                                    $segments = array_values(array_filter(
+                                        explode('/', trim(rawurldecode((string) $path), '/')),
+                                        static fn ($segment) => $segment !== ''
+                                    ));
+
+                                    if (isset($segments[0]) && in_array($segments[0], $supportedMenuLocales, true)) {
+                                        array_shift($segments);
+                                    }
+
+                                    return implode('/', $segments);
+                                };
+                                $currentMenuPath = $normaliseMenuPath(request()->path());
+                                $menuUrlIsActive = static function ($url) use ($currentMenuPath, $normaliseMenuPath): bool {
+                                    $url = trim((string) $url);
+
+                                    if ($url === '' || str_starts_with($url, '#') || preg_match('/^(?:javascript|mailto|tel):/i', $url)) {
+                                        return false;
+                                    }
+
+                                    $menuPath = parse_url($url, PHP_URL_PATH);
+                                    if (!is_string($menuPath)) {
+                                        return false;
+                                    }
+
+                                    $menuPath = $normaliseMenuPath($menuPath);
+
+                                    return $menuPath === $currentMenuPath
+                                        || ($menuPath !== '' && str_starts_with($currentMenuPath, $menuPath . '/'));
+                                };
+                            @endphp
                             <ul class="navigation clearfix">
                                 @if (!empty($menuItems))
                                     @php
@@ -150,18 +183,41 @@
                                                 'services',
                                                 mb_strtolower(trim((string) __('messages.nav_services'))),
                                             ], true);
+                                            $isCurrentItem = $menuUrlIsActive($item['url'] ?? '');
+                                            $hasCurrentChild = false;
+
+                                            foreach ($item['children'] ?? [] as $child) {
+                                                if (!$menuUrlIsActive($child['url'] ?? '')) {
+                                                    continue;
+                                                }
+
+                                                $childLabelNorm = mb_strtolower(trim((string) ($child['label'] ?? '')));
+                                                $childUrl = trim((string) ($child['url'] ?? ''));
+                                                $isDuplicateShopChild = $isMore
+                                                    && ($childLabelNorm === 'shop' || str_contains($childUrl, '/shop'));
+
+                                                if (!$isDuplicateShopChild) {
+                                                    $hasCurrentChild = true;
+                                                    break;
+                                                }
+                                            }
+
+                                            $isCurrentItem = $isCurrentItem || $hasCurrentChild;
                                         @endphp
-                                        <li class="{{ $hasChildren ? 'dropdown' : '' }}">
+                                        <li class="{{ trim(($hasChildren ? 'dropdown ' : '') . ($isCurrentItem ? 'current' : '')) }}">
                                             <a class="{{ $isRtl ? 'text-right' : '' }}" href="{{ $item['url'] }}"
+                                               @if($isCurrentItem) aria-current="page" @endif
                                                @if($target) target="{{ $target }}" rel="{{ $rel }}" @endif>
                                                 {{ $item['label'] }}@if($isMore) +@endif
                                             </a>
                                             @if ($hasChildren)
                                                 <ul class="sub-menu">
                                                     @foreach ($item['children'] as $child)
-                                                        <li>
+                                                        @php($isCurrentChild = $menuUrlIsActive($child['url'] ?? ''))
+                                                        <li class="{{ $isCurrentChild ? 'current' : '' }}">
                                                             <a class="{{ $isRtl ? 'text-right' : '' }}"
                                                                href="{{ $child['url'] }}"
+                                                               @if($isCurrentChild) aria-current="page" @endif
                                                                @if(!empty($child['open_new_tab'])) target="_blank" rel="noopener" @endif>
                                                                 {{ $child['label'] }}
                                                             </a>
@@ -173,38 +229,51 @@
                                     @endforeach
                                 @else
                                     {{-- Fallback hardcoded menu --}}
-                                    <li class="current dropdown">
+                                    <li class="{{ request()->routeIs('home') ? 'current' : '' }}">
                                         <a class="nav-link home-cls"
+                                            @if(request()->routeIs('home')) aria-current="page" @endif
                                             href="{{ route('home') }}">{{ __('messages.nav_home') }}</a>
                                     </li>
-                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                    <li class="{{ request()->routeIs('packages') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            @if(request()->routeIs('packages')) aria-current="page" @endif
                                             href="{{ route('packages') }}">{{ __('messages.nav_packages') }}</a>
                                     </li>
-                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                    <li class="{{ request()->routeIs('iptv-applications') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            @if(request()->routeIs('iptv-applications')) aria-current="page" @endif
                                             href="{{ route('iptv-applications') }}">{{ __('messages.nav_iptv_apps') }}</a>
                                     </li>
-                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                    <li class="{{ request()->routeIs('faqs') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            @if(request()->routeIs('faqs')) aria-current="page" @endif
                                             href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
-                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                    <li class="{{ request()->routeIs('blogs.*') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            @if(request()->routeIs('blogs.*')) aria-current="page" @endif
                                             href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
-                                    <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                    <li class="{{ request()->routeIs('shop', 'products.share') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            @if(request()->routeIs('shop', 'products.share')) aria-current="page" @endif
                                             href="{{ route('shop') }}">Products</a></li>
-                                    <li class="dropdown"><a href="#">{{ __('more') }} +</a>
+                                    <li class="dropdown {{ request()->routeIs('about', 'contact', 'reseller-panel', 'pricing', 'movies', 'iptv-subscription-service') ? 'current' : '' }}">
+                                        <a href="#" @if(request()->routeIs('about', 'contact', 'reseller-panel', 'pricing', 'movies', 'iptv-subscription-service')) aria-current="page" @endif>{{ __('more') }} +</a>
                                         <ul class="sub-menu">
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            <li class="{{ request()->routeIs('about') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    @if(request()->routeIs('about')) aria-current="page" @endif
                                                     href="{{ route('about') }}">{{ __('messages.nav_about_us') }}</a></li>
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            <li class="{{ request()->routeIs('contact') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    @if(request()->routeIs('contact')) aria-current="page" @endif
                                                     href="{{ route('contact') }}">{{ __('messages.nav_contact') }}</a></li>
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            <li class="{{ request()->routeIs('reseller-panel') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    @if(request()->routeIs('reseller-panel')) aria-current="page" @endif
                                                     href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a>
                                             </li>
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            <li class="{{ request()->routeIs('pricing') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    @if(request()->routeIs('pricing')) aria-current="page" @endif
                                                     href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a>
                                             </li>
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            <li class="{{ request()->routeIs('movies') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    @if(request()->routeIs('movies')) aria-current="page" @endif
                                                     href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a>
                                             </li>
-                                            <li><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                            <li class="{{ request()->routeIs('iptv-subscription-service') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
+                                                    @if(request()->routeIs('iptv-subscription-service')) aria-current="page" @endif
                                                     href="{{ route('iptv-subscription-service') }}">{{ __('messages.nav_iptv_subscription_service') }}</a>
                                             </li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"

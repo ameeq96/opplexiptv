@@ -1,34 +1,96 @@
 @extends('layouts.default')
-@section('title', __('messages.contact.title'))
+
+@php
+    $isDocumentEnglish = app()->getLocale() === 'en';
+    $documentContact = $isDocumentEnglish ? __('document_support.contact') : [];
+@endphp
+
+@section('title', $isDocumentEnglish ? $documentContact['hero']['heading'] : __('messages.contact.title'))
 
 @push('schema')
     {!! jsonld(seo()->contactPage(
-        __('messages.contact.heading'),
-        'Contact Opplex IPTV for free trial, setup help, reseller information and 24/7 support.',
+        $isDocumentEnglish ? $documentContact['hero']['heading'] : __('messages.contact.heading'),
+        $isDocumentEnglish
+            ? $documentContact['hero']['text']
+            : 'Contact Opplex IPTV for free trial, setup help, reseller information and 24/7 support.',
         route('contact'),
     )) !!}
 @endpush
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ @filemtime(public_path('css/contact.css')) ?: 1 }}">
+    @if ($isDocumentEnglish)
+        <link rel="stylesheet" href="{{ asset('css/document-support.css') }}?v={{ @filemtime(public_path('css/document-support.css')) ?: 1 }}">
+    @endif
 @endpush
 
 @section('content')
     <!-- Page Title -->
-    <x-page-title :title="__('messages.contact.heading')" :breadcrumbs="[
-        ['url' => '/', 'label' => __('messages.contact.breadcrumb.home')],
-        ['label' => __('messages.contact.breadcrumb.current')],
-    ]" background="images/background/10.webp" :rtl="$isRtl"
+    <x-page-title
+        :title="$isDocumentEnglish ? $documentContact['page_title'] : __('messages.contact.heading')"
+        :breadcrumbs="$isDocumentEnglish
+            ? [['url' => route('home'), 'label' => 'Home'], ['label' => $documentContact['page_title']]]
+            : [
+                ['url' => '/', 'label' => __('messages.contact.breadcrumb.home')],
+                ['label' => __('messages.contact.breadcrumb.current')],
+            ]"
+        background="images/background/10.webp" :rtl="$isRtl"
         aria-label="Contact Page" />
     <!-- End Page Title -->
 
+    @if ($isDocumentEnglish)
+        <div class="document-support document-support--contact">
+            <section class="document-support__hero document-support__hero--compact" aria-labelledby="document-contact-title">
+                <div class="auto-container document-support__hero-inner">
+                    <span class="document-support__eyebrow">{{ $documentContact['hero']['eyebrow'] }}</span>
+                    <h1 id="document-contact-title">{{ $documentContact['hero']['heading'] }}</h1>
+                    <p>{{ $documentContact['hero']['text'] }}</p>
+                </div>
+            </section>
+
+            <section class="document-support__section document-support__section--tint" aria-labelledby="document-contact-channels-title">
+                <div class="auto-container">
+                    <div class="document-support__section-heading">
+                        <span class="document-support__eyebrow">Contact Channels</span>
+                        <h2 id="document-contact-channels-title">{{ $documentContact['channels']['heading'] }}</h2>
+                    </div>
+                    <div class="document-support__card-grid document-support__card-grid--three">
+                        @foreach ($documentContact['channels']['items'] as $channel)
+                            @php
+                                $channelUrl = match ($channel['type']) {
+                                    'whatsapp' => 'https://wa.me/16393903194?text=' . urlencode(__('document_support.whatsapp_messages.support')),
+                                    'email' => 'mailto:info@opplexiptv.com',
+                                    default => '#contact-form',
+                                };
+                                $opensNewTab = $channel['type'] === 'whatsapp';
+                            @endphp
+                            <article class="document-support__card document-support__contact-card">
+                                <span class="document-support__card-icon {{ $channel['icon'] }}" aria-hidden="true"></span>
+                                <h3>{{ $channel['title'] }}</h3>
+                                <p>{{ $channel['text'] }}</p>
+                                <a href="{{ $channelUrl }}" @if ($opensNewTab) target="_blank" rel="noopener" @endif>
+                                    {{ $channel['cta'] }}
+                                    <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                                </a>
+                            </article>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        </div>
+    @endif
+
     <!-- Contact Page Section -->
-    <section class="ctx {{ $isRtl ? 'rtl' : '' }}" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
+    <section class="ctx {{ $isRtl ? 'rtl' : '' }}" id="contact-details-form" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
         <div class="auto-container">
 
             <div class="ctx__head">
                 <div class="ctx__bar" aria-hidden="true"></div>
-                <h1 class="ctx__title">{{ __('messages.contact.heading') }}</h1>
+                @if ($isDocumentEnglish)
+                    <h2 class="ctx__title">{{ __('messages.contact.heading') }}</h2>
+                @else
+                    <h1 class="ctx__title">{{ __('messages.contact.heading') }}</h1>
+                @endif
             </div>
 
             <div class="ctx-grid">
@@ -176,6 +238,71 @@
     </section>
     <!-- End Contact Page Section -->
 
-    {{-- FAQ Section --}}
-    @include('includes._faq-section')
+    @if ($isDocumentEnglish)
+        <div class="document-support document-support--contact">
+            <section class="document-support__section document-support__section--tint" aria-labelledby="document-contact-reasons-title">
+                <div class="auto-container">
+                    <div class="document-support__section-heading">
+                        <span class="document-support__eyebrow">Common Contact Reasons</span>
+                        <h2 id="document-contact-reasons-title">{{ $documentContact['reasons']['heading'] }}</h2>
+                    </div>
+                    <div class="document-support__reason-grid">
+                        @foreach ($documentContact['reasons']['items'] as $reason)
+                            <article class="document-support__reason">
+                                <span class="document-support__reason-icon {{ $reason['icon'] }}" aria-hidden="true"></span>
+                                <div>
+                                    <h3>{{ $reason['title'] }}</h3>
+                                    <p>{{ $reason['text'] }}</p>
+                                </div>
+                            </article>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+
+            <section class="document-support__section document-support__section--dark" aria-labelledby="document-contact-response-title">
+                <div class="auto-container">
+                    <div class="document-support__section-heading">
+                        <h2 id="document-contact-response-title">{{ $documentContact['response']['heading'] }}</h2>
+                    </div>
+                    <div class="document-support__response-grid">
+                        @foreach ($documentContact['response']['items'] as $response)
+                            <article>
+                                <strong>{{ $response['value'] }}</strong>
+                                <span>{{ $response['label'] }}</span>
+                            </article>
+                        @endforeach
+                    </div>
+                    <p class="document-support__response-note">{{ $documentContact['response']['text'] }}</p>
+                </div>
+            </section>
+
+            @include('includes._faq-section', [
+                'faqItems' => $documentContact['faq']['items'],
+                'faqTitle' => $documentContact['faq']['heading'],
+            ])
+
+            <section class="document-support__cta" aria-labelledby="document-contact-cta-title">
+                <div class="auto-container document-support__cta-inner">
+                    <div>
+                        <h2 id="document-contact-cta-title">{{ $documentContact['cta']['heading'] }}</h2>
+                        <p>{{ $documentContact['cta']['text'] }}</p>
+                    </div>
+                    <div class="document-support__actions">
+                        <a class="document-support__button document-support__button--light"
+                            href="https://wa.me/16393903194?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
+                            target="_blank" rel="noopener">
+                            {{ $documentContact['cta']['whatsapp'] }}
+                        </a>
+                        <a class="document-support__button document-support__button--outline-light" href="mailto:info@opplexiptv.com">
+                            {{ $documentContact['cta']['email'] }}
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    @else
+        {{-- FAQ Section --}}
+        @include('includes._faq-section')
+    @endif
 @stop

@@ -3,6 +3,12 @@
 <section class="network-section unlimited-showcase @unless ($isMobile) @else p-0 @endunless"
     aria-label="Opplex IPTV Features Section">
 
+    @php
+        $isDocumentEnglishUnlimited = request()->routeIs('home') && app()->getLocale() === 'en';
+        $documentUnlimited = $isDocumentEnglishUnlimited ? __('messages.home_document.unlimited') : [];
+        $displayFeatures = $isDocumentEnglishUnlimited ? $documentUnlimited['features'] : $features;
+    @endphp
+
     <div class="auto-container unlimited-showcase__shell">
         <div class="inner-container unlimited-showcase__panel">
             <div class="unlimited-showcase__grid">
@@ -26,15 +32,15 @@
                 @endunless
 
                 <div class="unlimited-showcase__content" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                    <div class="unlimited-showcase__eyebrow">{{ __('messages.home_unlimited_eyebrow') }}</div>
-                    <h3 aria-label="IPTV Network Features Heading">{{ __('messages.network_heading') }}</h3>
+                    <div class="unlimited-showcase__eyebrow">{{ $isDocumentEnglishUnlimited ? $documentUnlimited['eyebrow'] : __('messages.home_unlimited_eyebrow') }}</div>
+                    <h3 aria-label="IPTV Network Features Heading">{{ $isDocumentEnglishUnlimited ? $documentUnlimited['heading'] : __('messages.network_heading') }}</h3>
                     @unless (request()->routeIs('home') || request()->is('/') || request()->routeIs('about') || request()->is('reseller-panel'))
                         <h3 class="h6" aria-label="IPTV Network Features Heading">{{ __('messages.subheadingiptv') }}</h3>
                     @endunless
-                    <p class="unlimited-showcase__intro">{{ __('messages.home_unlimited_intro') }}</p>
+                    <p class="unlimited-showcase__intro">{{ $isDocumentEnglishUnlimited ? $documentUnlimited['intro'] : __('messages.home_unlimited_intro') }}</p>
 
                     <ul class="unlimited-showcase__list" aria-label="List of IPTV Features">
-                        @foreach ($features as $feature)
+                        @foreach ($displayFeatures as $feature)
                             <li class="unlimited-showcase__item" aria-label="{{ $feature['title'] }}" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                                 <span class="unlimited-showcase__icon flaticon-tick-1" aria-hidden="true"></span>
                                 <div class="unlimited-showcase__copy">

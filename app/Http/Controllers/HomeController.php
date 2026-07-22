@@ -104,6 +104,10 @@ class HomeController extends Controller
 
     public function packages()
     {
+        if (app()->getLocale() === 'en') {
+            return view('pages.packages');
+        }
+
         return redirect()->route('iptv-subscription-service', [], 301);
     }
 
@@ -134,11 +138,45 @@ class HomeController extends Controller
 
     public function shop()
     {
-        // Affiliate-only storefront (digital products are not shown).
-        $type = 'affiliate';
-        $products = $this->unifiedProducts->frontendProducts()
-            ->where('type', 'affiliate')
-            ->values();
+        $isDocumentEnglish = app()->getLocale() === 'en';
+        $type = $isDocumentEnglish ? 'all' : 'affiliate';
+        $allProducts = $this->unifiedProducts->frontendProducts();
+
+        if ($isDocumentEnglish) {
+            $documentProductPriority = [
+                'affiliate:B08CRV62C4' => 0,
+                'affiliate:B0BP9SNVH9' => 1,
+                'affiliate:B0DXXYS4BJ' => 2,
+                'affiliate:B00SFSU53G' => 3,
+                'digital:netflix' => 4,
+                'digital:prime-video' => 5,
+                'digital:hbo-max-premium' => 6,
+                'digital:nordvpn' => 7,
+            ];
+            $documentProductKey = static function (array $product): string {
+                $type = strtolower((string) data_get($product, 'type', 'affiliate'));
+                $identifier = (string) data_get(
+                    $product,
+                    'identifier',
+                    $type === 'digital'
+                        ? data_get($product, 'slug', '')
+                        : data_get($product, 'asin', '')
+                );
+
+                return $type . ':' . $identifier;
+            };
+
+            $documentProducts = $allProducts
+                ->filter(static fn (array $product) => isset($documentProductPriority[$documentProductKey($product)]))
+                ->sortBy(static fn (array $product) => $documentProductPriority[$documentProductKey($product)])
+                ->values();
+            $remainingProducts = $allProducts
+                ->reject(static fn (array $product) => isset($documentProductPriority[$documentProductKey($product)]))
+                ->values();
+            $products = $documentProducts->concat($remainingProducts)->values();
+        } else {
+            $products = $allProducts->where('type', 'affiliate')->values();
+        }
 
         $isRtl = $this->locale->isRtl();
 

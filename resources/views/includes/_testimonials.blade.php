@@ -1,9 +1,14 @@
 <section class="testimonial-section style-two" aria-label="Customer Testimonials about Opplex IPTV">
+    @php
+        $isDocumentEnglishTestimonials = request()->routeIs('home') && app()->getLocale() === 'en';
+        $documentTestimonials = $isDocumentEnglishTestimonials ? __('messages.home_document.testimonials') : [];
+    @endphp
+
     <div class="auto-container">
         <div class="sec-title centered testimonial-showcase__heading">
-            <div class="title" aria-label="Testimonials Section Subheading">{{ __('messages.testimonials_title') }}</div>
-            <h3 class="h3" aria-label="Hear from our satisfied IPTV customers">{{ __('messages.testimonials_heading') }}</h3>
-            <p>{{ __('messages.home_testimonials_intro') }}</p>
+            <div class="title" aria-label="Testimonials Section Subheading">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title') }}</div>
+            <h3 class="h3" aria-label="Hear from our satisfied IPTV customers">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading') }}</h3>
+            <p>{{ $isDocumentEnglishTestimonials ? $documentTestimonials['intro'] : __('messages.home_testimonials_intro') }}</p>
         </div>
 
         @if (!empty($useNativeCarousel))
@@ -35,7 +40,7 @@
                                                 </div>
                                                 <div class="testimonial-card__author-copy">
                                                     <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                                                    <div class="testimonial-card__author-role">{{ __('messages.home_testimonials_verified_customer') }}</div>
+                                                    <div class="testimonial-card__author-role">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['verified_label'] : __('messages.home_testimonials_verified_customer') }}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,7 +69,7 @@
                                     </div>
                                     <div class="testimonial-card__author-copy">
                                         <div class="author-name" aria-label="Customer Name">{{ $testimonial['author_name'] }}</div>
-                                        <div class="testimonial-card__author-role">{{ __('messages.home_testimonials_verified_customer') }}</div>
+                                        <div class="testimonial-card__author-role">{{ $isDocumentEnglishTestimonials ? $documentTestimonials['verified_label'] : __('messages.home_testimonials_verified_customer') }}</div>
                                     </div>
                                 </div>
                             </div>

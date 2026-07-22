@@ -1,19 +1,241 @@
 ﻿@extends('layouts.default')
-@section('title', 'Shop')
+@php
+    $isDocumentEnglish = app()->getLocale() === 'en';
+    $documentPage = $isDocumentEnglish ? __('document_product.shop') : [];
+@endphp
+@section('title', $isDocumentEnglish ? $documentPage['hero']['heading'] : 'Shop')
 
 @push('schema')
     {!! jsonld(seo()->collectionPage(
-        'Shop — Streaming Devices & TV Accessories',
-        'Curated streaming and TV gear: Android TV boxes, Fire TV, Roku, wall mounts and accessories.',
+        $isDocumentEnglish ? $documentPage['hero']['heading'] : 'Shop — Streaming Devices & TV Accessories',
+        $isDocumentEnglish ? $documentPage['hero']['text'] : 'Curated streaming and TV gear: Android TV boxes, Fire TV, Roku, wall mounts and accessories.',
         route('shop'),
     )) !!}
 @endpush
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/shop.css') }}?v={{ @filemtime(public_path('css/shop.css')) ?: 1 }}">
+    @if ($isDocumentEnglish)
+        <link rel="stylesheet" href="{{ asset('css/document-product.css') }}?v={{ @filemtime(public_path('css/document-product.css')) ?: 1 }}">
+    @endif
 @endpush
 
 @section('content')
+    @if ($isDocumentEnglish)
+        @php
+            $productItems = collect(method_exists($products, 'items') ? $products->items() : $products);
+            $deviceProducts = isset($affiliateProducts)
+                ? collect($affiliateProducts)->values()
+                : $productItems
+                    ->filter(static fn ($product) => strtolower((string) data_get($product, 'type', 'affiliate')) === 'affiliate')
+                    ->values();
+            $digitalProducts = isset($digitalProducts)
+                ? collect($digitalProducts)->values()
+                : $productItems
+                    ->filter(static fn ($product) => strtolower((string) data_get($product, 'type', 'affiliate')) === 'digital')
+                    ->values();
+
+            $resolveAffiliateKey = static function ($product): ?string {
+                $asin = strtoupper(trim((string) data_get($product, 'asin', '')));
+                if ($asin !== '') {
+                    return $asin;
+                }
+
+                $name = strtolower((string) data_get($product, 'name', ''));
+                return match (true) {
+                    str_contains($name, 'fire tv stick 4k max') => 'B0BP9SNVH9',
+                    str_contains($name, 'roku streaming stick hd 2025') => 'B0DXXYS4BJ',
+                    str_contains($name, 'mounting dream') && str_contains($name, 'md2380') => 'B00SFSU53G',
+                    str_contains($name, 'android tv box') && str_contains($name, '4gb') => 'B08CRV62C4',
+                    default => null,
+                };
+            };
+
+            $resolveDigitalKey = static function ($product): string {
+                $slug = trim((string) data_get($product, 'slug', ''));
+                return $slug !== '' ? $slug : \Illuminate\Support\Str::slug((string) data_get($product, 'name', ''));
+            };
+        @endphp
+
+        <x-page-title
+            :title="$documentPage['page_title']"
+            :breadcrumbs="[
+                ['url' => route('home'), 'label' => __('messages.nav_home')],
+                ['label' => $documentPage['page_title']],
+            ]"
+            background="images/background/10.webp"
+            :rtl="false"
+            aria-label="Shop Page"
+        />
+
+        <main class="document-product-page document-product-shop" dir="ltr">
+            <section class="document-product-hero document-product-shop-hero" aria-labelledby="document-shop-title">
+                <div class="auto-container">
+                    <span class="document-product-eyebrow">{{ $documentPage['hero']['eyebrow'] }}</span>
+                    <h1 id="document-shop-title">{{ $documentPage['hero']['heading'] }}</h1>
+                    <p>{{ $documentPage['hero']['text'] }}</p>
+                    <p class="document-product-support">
+                        <a href="{{ route('iptv-subscription-service') }}">{{ $documentPage['hero']['note'] }}</a>
+                    </p>
+                    <div class="document-product-actions">
+                        <a class="document-product-button" href="#devices">{{ $documentPage['hero']['devices'] }}</a>
+                        <a class="document-product-button document-product-button--secondary" href="#digital-products">{{ $documentPage['hero']['digital'] }}</a>
+                        <a class="document-product-button document-product-button--outline" href="{{ route('iptv-subscription-service') }}">{{ $documentPage['hero']['plans'] }}</a>
+                    </div>
+                </div>
+            </section>
+
+            @foreach ([
+                ['id' => 'devices', 'type' => 'affiliate', 'items' => $deviceProducts],
+                ['id' => 'digital-products', 'type' => 'digital', 'items' => $digitalProducts],
+            ] as $group)
+                @php
+                    $isDigitalGroup = $group['type'] === 'digital';
+                    $headingKey = $isDigitalGroup ? 'digital' : 'devices';
+                @endphp
+                <section id="{{ $group['id'] }}" class="shopx document-product-shop-products {{ $isDigitalGroup ? 'document-product-shop-products--digital' : '' }}"
+                    aria-labelledby="document-shop-{{ $group['id'] }}-title">
+                    <div class="auto-container">
+                        <header class="document-product-section__heading">
+                            <span class="document-product-eyebrow">{{ $isDigitalGroup ? 'Delivered directly' : 'Affiliate picks' }}</span>
+                            <h2 id="document-shop-{{ $group['id'] }}-title">{{ $documentPage['section_headings'][$headingKey] }}</h2>
+                            <p>{{ $documentPage['section_headings'][$headingKey . '_intro'] }}</p>
+                        </header>
+
+                        <div class="row g-4">
+                            @forelse ($group['items'] as $product)
+                                @php
+                                    $productType = strtolower((string) data_get($product, 'type', 'affiliate'));
+                                    $name = (string) data_get($product, 'name', '');
+                                    $productUrl = (string) data_get($product, 'url', '#');
+                                    $actionUrl = $productType === 'digital'
+                                        ? ((string) data_get($product, 'buy_now_url', '') ?: $productUrl)
+                                        : $productUrl;
+                                    $target = (string) data_get($product, 'target', '');
+                                    $rel = (string) data_get($product, 'rel', '');
+                                    $copyKey = $productType === 'digital'
+                                        ? $resolveDigitalKey($product)
+                                        : $resolveAffiliateKey($product);
+                                    $productCopy = $copyKey
+                                        ? data_get($documentPage, "product_descriptions.{$productType}.{$copyKey}", [])
+                                        : [];
+                                @endphp
+                                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                    <article class="unified-card document-product-shop-card h-100">
+                                        <a class="unified-card__media" href="{{ $productUrl }}"
+                                            @if ($target !== '') target="{{ $target }}" @endif
+                                            @if ($rel !== '') rel="{{ $rel }}" @endif>
+                                            @if (data_get($product, 'image'))
+                                                <img src="{{ data_get($product, 'image') }}" alt="{{ $name }}" loading="lazy" decoding="async">
+                                            @endif
+                                            <span class="document-product-shop-card__badge">{{ $productType === 'digital' ? 'Digital' : 'Amazon' }}</span>
+                                        </a>
+                                        <div class="unified-card__body">
+                                            <h3 class="unified-card__title">
+                                                <a href="{{ $productUrl }}"
+                                                    @if ($target !== '') target="{{ $target }}" @endif
+                                                    @if ($rel !== '') rel="{{ $rel }}" @endif>{{ $name }}</a>
+                                            </h3>
+
+                                            @if (!empty($productCopy['label']))
+                                                <p class="document-product-shop-card__label">{{ $productCopy['label'] }}</p>
+                                            @endif
+
+                                            @if (!empty($productCopy['price_label']))
+                                                <div class="unified-card__price">{{ $productCopy['price_label'] }}</div>
+                                            @elseif (data_get($product, 'price') !== null)
+                                                <div class="unified-card__price">{{ data_get($product, 'currency') }} {{ number_format((float) data_get($product, 'price'), 2) }}</div>
+                                            @endif
+
+                                            @if (!empty($productCopy['text']))
+                                                <p class="document-product-shop-card__description">{{ $productCopy['text'] }}</p>
+                                            @endif
+
+                                            <div class="unified-action-wrap">
+                                                <div class="unified-actions">
+                                                    <a href="{{ $actionUrl }}"
+                                                        @if ($target !== '' || $productType === 'digital') target="_blank" @endif
+                                                        @if ($rel !== '') rel="{{ $rel }}" @elseif ($productType === 'digital') rel="noopener" @endif
+                                                        class="unified-action">
+                                                        {{ $productType === 'digital' ? 'Buy Now' : 'View on Amazon' }}
+                                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                                                    </a>
+                                                    <button type="button"
+                                                        class="unified-share"
+                                                        aria-label="Share {{ $name }}"
+                                                        data-share-url="{{ data_get($product, 'share_url', $productUrl) }}"
+                                                        data-share-title="{{ $name }}"
+                                                        data-share-text="{{ data_get($product, 'share_text', 'Check out ' . $name) }}">
+                                                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            @empty
+                                <div class="col-12">
+                                    <p class="document-product-empty">{{ $isDigitalGroup ? 'No digital products found.' : 'No devices found.' }}</p>
+                                </div>
+                            @endforelse
+                        </div>
+                    </div>
+                </section>
+            @endforeach
+
+            @if (method_exists($products, 'links'))
+                <div class="document-product-pagination">
+                    @include('includes._pagination', ['paginator' => $products, 'isRtl' => false])
+                </div>
+            @endif
+
+            <section class="document-product-section document-product-section--light" aria-labelledby="document-shop-guide-title">
+                <div class="auto-container">
+                    <header class="document-product-section__heading">
+                        <span class="document-product-eyebrow">Choose with confidence</span>
+                        <h2 id="document-shop-guide-title">{{ $documentPage['guide']['heading'] }}</h2>
+                    </header>
+                    <div class="document-product-card-grid document-product-card-grid--guide">
+                        @foreach ($documentPage['guide']['items'] as $item)
+                            <article class="document-product-card">
+                                <span class="document-product-card__number" aria-hidden="true">{{ str_pad((string) $loop->iteration, 2, '0', STR_PAD_LEFT) }}</span>
+                                <h3>{{ $item['title'] }}</h3>
+                                <p>{{ $item['text'] }}</p>
+                            </article>
+                        @endforeach
+                    </div>
+                    <p class="document-product-support">{{ $documentPage['guide']['support'] }}</p>
+                </div>
+            </section>
+
+            <section class="document-product-section document-product-section--navy" aria-labelledby="document-shop-digital-orders-title">
+                <div class="auto-container">
+                    <div class="document-product-split">
+                        <div>
+                            <span class="document-product-eyebrow document-product-eyebrow--inverse">Simple WhatsApp ordering</span>
+                            <h2 id="document-shop-digital-orders-title">{{ $documentPage['digital_orders']['heading'] }}</h2>
+                            <p>{{ $documentPage['digital_orders']['intro'] }}</p>
+                            <ol class="document-product-step-list">
+                                @foreach ($documentPage['digital_orders']['steps'] as $step)
+                                    <li><span>{{ $loop->iteration }}</span><p>{{ $step }}</p></li>
+                                @endforeach
+                            </ol>
+                        </div>
+                        <aside class="document-product-callout document-product-callout--inverse">
+                            <p>{{ $documentPage['digital_orders']['timing'] }}</p>
+                            <p>{{ $documentPage['digital_orders']['delivery'] }}</p>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @include('includes._faq-section', [
+            'faqItems' => $documentPage['faq']['items'],
+            'faqTitle' => $documentPage['faq']['heading'],
+        ])
+    @else
     <x-page-title
         :title="'Shop'"
         :breadcrumbs="[
@@ -91,4 +313,5 @@
 
     {{-- FAQ Section --}}
     @include('includes._faq-section')
+    @endif
 @endsection

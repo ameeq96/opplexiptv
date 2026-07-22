@@ -1,10 +1,29 @@
+@php
+    $isDocumentEnglishServices = request()->routeIs('home') && app()->getLocale() === 'en';
+    $documentServices = $isDocumentEnglishServices ? __('messages.home_document.services') : [];
+    $displayServiceCards = $serviceCards ?? [];
+
+    if ($isDocumentEnglishServices) {
+        $serviceRoutes = [route('packages'), route('reseller-panel'), route('packages')];
+        $serviceIcons = ['service-4.webp', 'service-5.webp', 'service-4.webp'];
+        $displayServiceCards = [];
+
+        foreach ($documentServices['cards'] as $index => $card) {
+            $displayServiceCards[] = $card + [
+                'link' => $serviceRoutes[$index],
+                'icon' => $serviceIcons[$index],
+            ];
+        }
+    }
+@endphp
+
 <section class="services-section-two" style="background-image:url({{ asset('images/background/3.webp') }})"
          aria-label="Explore IPTV Services like Packages, Sports, VOD and Multi-Device Access">
     <div class="auto-container">
         <div class="sec-title light centered services-showcase__heading">
-            <div class="services-showcase__eyebrow">{{ __('messages.home_services_eyebrow') }}</div>
-            <h3 class="text-white" aria-label="Explore Opplex IPTV Services">{{ __('messages.explore_services') }}</h3>
-            <p>{{ __('messages.home_services_intro') }}</p>
+            <div class="services-showcase__eyebrow">{{ $isDocumentEnglishServices ? $documentServices['eyebrow'] : __('messages.home_services_eyebrow') }}</div>
+            <h3 class="text-white" aria-label="Explore Opplex IPTV Services">{{ $isDocumentEnglishServices ? $documentServices['heading'] : __('messages.explore_services') }}</h3>
+            <p>{{ $isDocumentEnglishServices ? $documentServices['intro'] : __('messages.home_services_intro') }}</p>
         </div>
 
         @if (!empty($useNativeCarousel))
@@ -19,7 +38,7 @@
                 aria-label="IPTV Services Carousel">
                 <div class="native-carousel__viewport">
                     <div class="native-carousel__track">
-                        @forelse ($serviceCards ?? [] as $card)
+                        @forelse ($displayServiceCards as $card)
                             @php
                                 $icon = $card['icon'] ? asset('images/icons/' . $card['icon']) : asset('images/icons/service-4.webp');
                                 $link = $card['link'] ?: route('packages');
@@ -35,7 +54,7 @@
                                         </div>
                                         <h4><a href="{{ $link }}">{{ $card['title'] }}</a></h4>
                                         <div class="text">{{ $card['description'] }}</div>
-                                        <a class="learn-more" href="{{ $link }}">{{ __('messages.learn_more') }}</a>
+                                        <a class="learn-more" href="{{ $link }}">{{ $card['cta'] ?? __('messages.learn_more') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +80,7 @@
             </div>
         @else
             <div class="four-item-carousel owl-carousel owl-theme" role="region" aria-label="IPTV Services Carousel">
-                @forelse ($serviceCards ?? [] as $card)
+                @forelse ($displayServiceCards as $card)
                     @php
                         $icon = $card['icon'] ? asset('images/icons/' . $card['icon']) : asset('images/icons/service-4.webp');
                         $link = $card['link'] ?: route('packages');
@@ -76,7 +95,7 @@
                             </div>
                             <h4><a href="{{ $link }}">{{ $card['title'] }}</a></h4>
                             <div class="text">{{ $card['description'] }}</div>
-                            <a class="learn-more" href="{{ $link }}">{{ __('messages.learn_more') }}</a>
+                            <a class="learn-more" href="{{ $link }}">{{ $card['cta'] ?? __('messages.learn_more') }}</a>
                         </div>
                     </div>
                 @empty

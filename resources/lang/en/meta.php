@@ -2,38 +2,38 @@
 
 return [
     'home' => [
-        'title' => 'Best IPTV Service - HD, 4K Live Streaming | Opplex IPTV',
-        'description' => 'Get the best IPTV experience with 4K live IPTV, 12,000+ channels, and VOD. Includes xtreme hd iptv, iptv smart player, and free trial.',
+        'title' => 'Best IPTV Subscription Service Provider | Live TV, Sports & 4K Streaming',
+        'description' => 'Stop paying for cable you barely use. Get some of the best IPTV subscription deals as Opplex gives you 12,000+ live channels, 50,000+ movies, and crystal-clear 4K, all on the devices you already own. Pick a plan, plug in, and start watching today.',
         'keywords' => 'best iptv, iptv box, xtreme hd iptv, aroma iptv, iptv smart player, iptv free trial, 4k live iptv',
     ],
     'about' => [
-        'title' => 'About Opplex IPTV - Premium 4K Live IPTV Provider',
-        'description' => 'Learn about Opplex IPTV — a premium provider streaming 12,000+ live TV channels, sports and 50,000+ movies in HD and 4K, with a free trial and 24/7 support.',
+        'title' => 'We Started Opplex Because We Were Tired of Bad IPTV Too',
+        'description' => 'Meet the Saskatoon team behind Opplex IPTV, serving viewers in 40+ countries with stable streaming, honest pricing and responsive support since 2022.',
         'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
-        'title' => 'IPTV Subscription Plans | Affordable IPTV Box & 4K Streaming',
-        'description' => 'Explore affordable IPTV subscription plans with 12,000+ channels, 4K live IPTV, VOD and a free trial. Monthly, half-yearly and yearly options available.',
+        'title' => 'IPTV Subscription Pricing | Simple Plans, No Surprises',
+        'description' => 'Pick an Opplex IPTV plan, pay once and stream 12,000+ live channels, 50,000+ movies and supported 4K content with no hidden fees.',
         'keywords' => 'iptv box, xtreme hd iptv, best iptv, aroma iptv, iptv subscription price, 4k live iptv, iptv free trial',
     ],
     'movies' => [
-        'title' => 'Watch IPTV Movies, Series in HD & 4K - Opplex IPTV',
-        'description' => 'Stream 50,000+ on-demand movies and 5,000+ TV series in HD and 4K with Opplex IPTV — Hollywood, Bollywood and more, with a free trial and support on every device.',
+        'title' => '50,000+ Movies and Series | Stream in HD and 4K',
+        'description' => 'Browse Opplex movies, series and cartoons on demand in HD and supported 4K, included with every subscription and available across your existing devices.',
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
-        'title' => 'Best IPTV Packages with Free Trial | 4K Streaming Europe',
-        'description' => 'Compare Opplex IPTV packages — monthly, half-yearly and yearly plans with 12,000+ live channels, sports, movies and 4K streaming, plus a free trial on any device.',
+        'title' => 'Most In-Demand IPTV Subscription Service | Opplex Packages',
+        'description' => 'Compare Opplex monthly, three-month, half-yearly and yearly plans with live channels, on-demand content, 4K quality and fast setup support.',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
-        'title' => 'IPTV Subscription Service | Premium 4K IPTV Plans',
-        'description' => 'Choose an IPTV subscription service with live channels, sports, movies, series, 4K streaming, free trial, and fast setup support.',
+        'title' => 'IPTV Subscription Service | Everything You Want from $2.99',
+        'description' => 'Opplex includes 12,000+ live channels, 50,000+ movies and series, HD and supported 4K streaming, fast setup and real WhatsApp support.',
         'keywords' => 'iptv subscription service, iptv subscription, best iptv service, 4k iptv, iptv free trial, iptv plans, live tv iptv',
     ],
     'reseller-panel' => [
-        'title' => 'Become IPTV Reseller | Opplex IPTV Panel Access',
-        'description' => 'Join Opplex IPTV reseller program. Sell xtreme hd iptv and smart IPTV boxes across Europe & USA. Panel access with 4K iptv, free trial, and full support.',
+        'title' => 'IPTV Reseller Panel | Build Your Own IPTV Business',
+        'description' => 'Buy credits, activate customer subscriptions, offer unlimited trials and set your own prices through the Opplex and Starshare reseller panel.',
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
     'buynow' => [
@@ -47,18 +47,18 @@ return [
         'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
     ],
     'iptv-applications' => [
-        'title' => 'Top IPTV Apps: Smarters, Player, Android TV & More',
-        'description' => 'Download IPTV apps including iptv smart player and Smarters Pro. Compatible with xtreme hd iptv, Android, iOS, and 4K devices. Best iptv experience.',
+        'title' => 'Best IPTV Apps for Android, iOS, Windows & Smart TV',
+        'description' => 'Download a compatible IPTV player for Android, iOS, Windows, macOS or Linux and sign in with the Opplex details sent after activation.',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, best iptv, aroma iptv, 4k live iptv',
     ],
     'faqs' => [
-        'title' => 'Opplex IPTV FAQs | Setup, Support & Free Trial Help',
-        'description' => 'Find answers about xtreme hd iptv, iptv smart player setup, 4K streaming, and iptv free trial. Full support for USA, UK, France, Italy.',
+        'title' => 'Frequently Asked Questions | Opplex IPTV',
+        'description' => 'Get clear answers about Opplex subscriptions, trials, pricing, compatible devices, streaming quality, content, setup and reseller access.',
         'keywords' => 'iptv support, iptv setup, xtreme hd iptv, iptv smart player, aroma iptv, best iptv, 4k live iptv',
     ],
     'contact' => [
-        'title' => 'Contact Opplex IPTV | Free Trial & Support',
-        'description' => 'Need help with best iptv setup? Contact Opplex for free trial, reseller info, xtreme hd iptv, 4K streaming and iptv smart player support.',
+        'title' => 'Get in Touch | We Usually Reply Within Minutes',
+        'description' => 'Contact Opplex on WhatsApp, by email or through the contact form for trial activation, setup help, billing questions and reseller enquiries.',
         'keywords' => 'iptv support, iptv free trial, contact iptv, xtreme hd iptv, iptv box, aroma iptv, iptv smart player',
     ],
     'redirect.ad' => [
@@ -94,8 +94,8 @@ return [
         'keywords'    => 'Opplex IPTV refund, IPTV return policy, refund eligibility, cancellation policy, non-refundable, IPTV support, request refund',
     ],
     'shop' => [
-        'title'       => 'Shop | Streaming Devices & TV Accessories – Android TV Box, Fire TV, Roku & More',
-        'description' => 'Shop streaming and TV gear: Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick and Ultra, plus wall mounts and accessories for your setup.',
+        'title'       => 'Streaming Devices, Accessories and Digital Subscriptions | Opplex Shop',
+        'description' => 'Browse streaming hardware and digital subscriptions, compare the right device for your setup and order supported digital products through WhatsApp.',
         'keywords'    => 'streaming shop, Android TV Box, Fire TV Stick 4K Max, Roku Streaming Stick, Roku Ultra, smart TV, Wi-Fi 6, Wi-Fi 6E, Dolby Vision, Dolby Atmos, HDR10+, H.265, 4K, 6K, Samsung remote replacement, VIZIO XRT136 remote, TV wall mount, Mounting Dream MD2380, INSIGNIA F40, TV accessories, Amazon',
     ],
     'configure' => [

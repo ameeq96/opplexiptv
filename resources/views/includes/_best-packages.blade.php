@@ -1,4 +1,34 @@
 ﻿<section class="pricing-section style-two" id="pricing-section" aria-label="IPTV Pricing Plans and Reseller Packages">
+    @php
+        $providedPricingCopy = $pricingCopy ?? ($documentPricing ?? null);
+        $isDocumentEnglishPricing = app()->getLocale() === 'en'
+            && (request()->routeIs('home') || is_array($providedPricingCopy));
+        $documentPricing = is_array($providedPricingCopy)
+            ? $providedPricingCopy
+            : ($isDocumentEnglishPricing ? __('messages.home_document.pricing') : []);
+        $initialMode = $initialMode ?? 'iptv';
+        $showResellerInitially = $initialMode === 'reseller';
+        $displayPackages = collect($packages ?? [])->values()->all();
+
+        if ($isDocumentEnglishPricing && empty($displayPackages)) {
+            $documentPlanPrices = [
+                'monthly' => '$2.99 / 1 month',
+                'three_months' => '$7.99 / 3 months',
+                'half_yearly' => '$14.99 / 6 months',
+                'yearly' => '$23.99 / 12 months',
+            ];
+
+            foreach ($documentPlanPrices as $planKey => $price) {
+                $displayPackages[] = [
+                    'vendor' => 'opplex',
+                    'title' => $documentPricing['plans'][$planKey]['title'],
+                    'price' => $price,
+                    'features' => $documentPricing['plans'][$planKey]['features'],
+                ];
+            }
+        }
+    @endphp
+
     <div class="auto-container">
 
         <div class="{{ $containerClass ?? 'container' }}">
@@ -6,11 +36,15 @@
                 <div class="separator"></div>
             @endunless
 
-            <h3 class="h3"><b>{{ $pricingSection['heading'] ?? __('messages.pricing_heading') }}</b></h3>
+            <h3 class="h3"><b>{{ $isDocumentEnglishPricing ? $documentPricing['heading'] : ($pricingSection['heading'] ?? __('messages.pricing_heading')) }}</b></h3>
 
             @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
-                <p class="h4">{{ $pricingSection['subheading'] ?? __('messages.pricing_subheading') }}</p>
+                <p class="h4">{{ $isDocumentEnglishPricing ? ($documentPricing['subheading'] ?? ($pricingSection['subheading'] ?? __('messages.pricing_subheading'))) : ($pricingSection['subheading'] ?? __('messages.pricing_subheading')) }}</p>
             @endunless
+
+            @if ($isDocumentEnglishPricing)
+                <p class="home-document-pricing__intro">{{ $documentPricing['intro'] }}</p>
+            @endif
         </div>
 
         
@@ -18,25 +52,26 @@
         <div class="pricing-controls d-flex align-items-center justify-content-between mb-3 mt-3">
             <div id="real-toggle">
                 <label class="form-switch m-0">
-                    <input type="checkbox" id="resellerToggle">
+                    <input type="checkbox" id="resellerToggle" @checked($showResellerInitially)>
                     <i></i>
                     <span>{{ $pricingSection['show_reseller_label'] ?? __('messages.show_reseller_packages') }}</span>
                 </label>
             </div>
 
-            <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="Choose IPTV vendor">
+            <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="Choose IPTV vendor"
+                @if ($showResellerInitially) style="display:none" @endif>
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
                 <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
             </div>
 
             <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="group"
-                aria-label="Choose reseller vendor" style="display:none">
+                aria-label="Choose reseller vendor" style="display:{{ $showResellerInitially ? 'inline-flex' : 'none' }}">
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
                 <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
             </div>
         </div>
 
-        <div id="creditInfo" class="sec-title centered mb-4" style="display:none">
+        <div id="creditInfo" class="sec-title centered mb-4" style="display:{{ $showResellerInitially ? 'block' : 'none' }}">
             <p><strong>
                 {!! $pricingSection['credit_info'] ?? (
                     '<span style="color:red;">1 '.__('messages.credit').'</span> = '.__('messages.1_month').
@@ -48,8 +83,9 @@
             </strong></p>
         </div>
 
-        <div class="scroll-wrapper normal-wrapper" id="normalPackages">
-            @foreach ($packages as $package)
+        <div class="scroll-wrapper normal-wrapper" id="normalPackages"
+            @if ($showResellerInitially) style="display:none!important" @endif>
+            @foreach ($displayPackages as $package)
                 @php
                     $vendorRaw = strtolower(data_get($package, 'vendor', 'opplex'));
                     $vendorRaw = in_array($vendorRaw, ['opplex', 'starshare']) ? $vendorRaw : 'opplex';
@@ -64,6 +100,23 @@
                     $titleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $rawTitle);
                     $titleBase = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $titleNoParen, 1));
                     $displayTitle = $titleBase;
+                    $displayFeatures = $package['features'] ?? [];
+
+                    if ($isDocumentEnglishPricing) {
+                        $normalizedPlanTitle = strtolower(str_replace('-', ' ', $titleBase));
+                        $documentPlanKey = match (true) {
+                            str_contains($normalizedPlanTitle, '3 month') => 'three_months',
+                            str_contains($normalizedPlanTitle, 'half'), str_contains($normalizedPlanTitle, '6 month') => 'half_yearly',
+                            str_contains($normalizedPlanTitle, 'year'), str_contains($normalizedPlanTitle, '12 month') => 'yearly',
+                            default => 'monthly',
+                        };
+                        $documentPlan = $documentPricing['plans'][$documentPlanKey] ?? null;
+
+                        if ($documentPlan) {
+                            $displayTitle = $documentPlan['title'];
+                            $displayFeatures = $documentPlan['features'];
+                        }
+                    }
                 @endphp
 
                 <div class="price-block scroll-item pkg-item" data-type="iptv" data-vendor="{{ $vendorKey }}"
@@ -79,9 +132,9 @@
                         </div>
 
                         <div class="lower-box">
-                            @if (!empty($package['features']))
+                            @if (!empty($displayFeatures))
                                 <ul class="price-list">
-                                    @foreach ($package['features'] as $feature)
+                                    @foreach ($displayFeatures as $feature)
                                         <li>{{ $feature }}</li>
                                     @endforeach
                                 </ul>
@@ -113,7 +166,7 @@
             @endforeach
         </div>
 
-        <div id="resellerPackages" style="display:none" aria-label="Reseller IPTV Packages">
+        <div id="resellerPackages" style="display:{{ $showResellerInitially ? 'block' : 'none' }}" aria-label="Reseller IPTV Packages">
             <div class="reseller-wrapper">
                 @foreach ($resellerPlans as $plan)
                     @php
