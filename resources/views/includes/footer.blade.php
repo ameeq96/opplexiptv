@@ -26,20 +26,29 @@
 
     $routeName = optional(request()->route())->getName();
     $isMoviesRoute = $routeName === 'movies';
-    $targetOptimizedRoutes = ['packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index'];
+    $isPackagesRoute = $routeName === 'packages';
+    $isBlogsIndexRoute = $routeName === 'blogs.index';
+    $isContactRoute = $routeName === 'contact';
+    $isIptvSubscriptionRoute = $routeName === 'iptv-subscription-service';
+    $usesLegacySiteAssets = !$isMoviesRoute
+        && !$isPackagesRoute
+        && !$isBlogsIndexRoute
+        && !$isContactRoute
+        && !$isIptvSubscriptionRoute;
+    $targetOptimizedRoutes = ['packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index', 'iptv-subscription-service'];
     $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
-    $needsJquery = !$isMoviesRoute;
-    $needsStandalonePopper = !$isMoviesRoute;
-    $needsBootstrap = !$isMoviesRoute;
-    $needsCustomScrollbar = !$isMoviesRoute;
+    $needsJquery = $usesLegacySiteAssets;
+    $needsStandalonePopper = $usesLegacySiteAssets;
+    $needsBootstrap = $usesLegacySiteAssets;
+    $needsCustomScrollbar = $usesLegacySiteAssets;
     $needsMixItUp = false; // MixItUp not used anywhere: movie filtering uses vanilla JS (applyFilter). Avoids shipping legacy JS.
     $needsFancybox = !$isTargetOptimizedRoute;
     $needsAppear = !$isTargetOptimizedRoute;
     $needsParallax = !$isTargetOptimizedRoute;
     $needsParoller = !$isTargetOptimizedRoute;
     $needsOwlCarousel = !$isTargetOptimizedRoute || in_array($routeName, ['about', 'reseller-panel'], true);
-    $needsValidation = $routeName !== 'movies';
-    $needsPhoneAssets = in_array($routeName, ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
+    $needsValidation = $usesLegacySiteAssets;
+    $needsPhoneAssets = in_array($routeName, ['checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
 @endphp
 
     <!-- Background layers -->
@@ -234,9 +243,9 @@
         }, 5000);
     });
 </script>
-@unless ($isMoviesRoute)
+@if ($usesLegacySiteAssets)
     @vite('resources/js/site.js')
-@endunless
+@endif
 
 @if ($isMoviesRoute)
     <script>

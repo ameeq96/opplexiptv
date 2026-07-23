@@ -208,39 +208,61 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
     }
 
-    public function test_home_inlines_foundational_styles_while_other_routes_keep_their_loading_strategy(): void
+    public function test_target_pages_inline_foundational_styles_while_other_routes_keep_their_loading_strategy(): void
     {
         $criticalHref = Vite::asset('resources/css/site-critical.css');
         $homeHtml = $this->renderHeadForRoute('home');
         $packagesHtml = $this->renderHeadForRoute('packages');
+        $blogsIndexHtml = $this->renderHeadForRoute('blogs.index');
+        $contactHtml = $this->renderHeadForRoute('contact');
+        $iptvSubscriptionHtml = $this->renderHeadForRoute('iptv-subscription-service');
+        $faqsHtml = $this->renderHeadForRoute('faqs');
         $moviesHtml = $this->renderHeadForRoute('movies');
         $homeBeforeNoscript = strstr($homeHtml, '<noscript>', true);
         $packagesBeforeNoscript = strstr($packagesHtml, '<noscript>', true);
+        $blogsIndexBeforeNoscript = strstr($blogsIndexHtml, '<noscript>', true);
+        $contactBeforeNoscript = strstr($contactHtml, '<noscript>', true);
+        $iptvSubscriptionBeforeNoscript = strstr($iptvSubscriptionHtml, '<noscript>', true);
+        $faqsBeforeNoscript = strstr($faqsHtml, '<noscript>', true);
         $moviesBeforeNoscript = strstr($moviesHtml, '<noscript>', true);
 
         $this->assertIsString($homeBeforeNoscript);
         $this->assertIsString($packagesBeforeNoscript);
+        $this->assertIsString($blogsIndexBeforeNoscript);
+        $this->assertIsString($contactBeforeNoscript);
+        $this->assertIsString($iptvSubscriptionBeforeNoscript);
+        $this->assertIsString($faqsBeforeNoscript);
         $this->assertIsString($moviesBeforeNoscript);
-        $this->assertSame(
-            1,
-            preg_match('/<style id="home-critical-styles">(.*?)<\/style>/s', $homeBeforeNoscript, $matches)
-        );
-        $this->assertSame(
-            hash('sha256', Vite::content('resources/css/site-critical.css')),
-            hash('sha256', $matches[1])
-        );
-        $this->assertStringNotContainsString(
-            'rel="stylesheet" href="'.$criticalHref.'"',
-            $homeBeforeNoscript
-        );
-        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $packagesBeforeNoscript);
+
+        foreach ([
+            'home-critical-styles' => $homeBeforeNoscript,
+            'packages-critical-styles' => $packagesBeforeNoscript,
+            'blogs-index-critical-styles' => $blogsIndexBeforeNoscript,
+            'contact-critical-styles' => $contactBeforeNoscript,
+            'iptv-subscription-critical-styles' => $iptvSubscriptionBeforeNoscript,
+        ] as $styleId => $html) {
+            $this->assertSame(
+                1,
+                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $html, $matches)
+            );
+            $this->assertSame(
+                hash('sha256', Vite::content('resources/css/site-critical.css')),
+                hash('sha256', $matches[1])
+            );
+            $this->assertStringNotContainsString(
+                'rel="stylesheet" href="'.$criticalHref.'"',
+                $html
+            );
+            $this->assertStringNotContainsString(
+                '<link rel="preload" href="'.$criticalHref.'" as="style"',
+                $html
+            );
+        }
+
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $faqsBeforeNoscript);
         $this->assertStringNotContainsString(
             '<link rel="preload" href="'.$criticalHref.'" as="style"',
-            $homeBeforeNoscript
-        );
-        $this->assertStringNotContainsString(
-            '<link rel="preload" href="'.$criticalHref.'" as="style"',
-            $packagesBeforeNoscript
+            $faqsBeforeNoscript
         );
         $this->assertStringContainsString(
             '<link rel="preload" href="'.$criticalHref.'" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">',
@@ -269,6 +291,40 @@ class LcpHintsTest extends TestCase
         $this->assertStringContainsString("@vite('resources/js/site.js')", $footer);
         $this->assertStringNotContainsString("v('js/nav-tool.js')", $footer);
         $this->assertStringNotContainsString("v('js/script.js')", $footer);
+    }
+
+    public function test_target_pages_use_native_shells_without_the_legacy_jquery_stack(): void
+    {
+        $packagesHtml = $this->renderFooterForRoute('packages');
+        $blogsIndexHtml = $this->renderFooterForRoute('blogs.index');
+        $contactHtml = $this->renderFooterForRoute('contact');
+        $iptvSubscriptionHtml = $this->renderFooterForRoute('iptv-subscription-service');
+        $blogsShowHtml = $this->renderFooterForRoute('blogs.show');
+        $homeHtml = $this->renderFooterForRoute('home');
+        $legacyAssets = [
+            'https://code.jquery.com/jquery-1.12.4.min.js',
+            'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
+            'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js',
+            'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js',
+        ];
+
+        foreach ($legacyAssets as $asset) {
+            $this->assertStringNotContainsString($asset, $packagesHtml);
+            $this->assertStringNotContainsString($asset, $blogsIndexHtml);
+            $this->assertStringNotContainsString($asset, $contactHtml);
+            $this->assertStringNotContainsString($asset, $iptvSubscriptionHtml);
+            $this->assertStringContainsString($asset, $blogsShowHtml);
+            $this->assertStringContainsString($asset, $homeHtml);
+        }
+
+        $siteScript = Vite::asset('resources/js/site.js');
+        $this->assertStringNotContainsString($siteScript, $packagesHtml);
+        $this->assertStringNotContainsString($siteScript, $blogsIndexHtml);
+        $this->assertStringNotContainsString($siteScript, $contactHtml);
+        $this->assertStringNotContainsString($siteScript, $iptvSubscriptionHtml);
+        $this->assertStringContainsString($siteScript, $blogsShowHtml);
+        $this->assertStringContainsString($siteScript, $homeHtml);
     }
 
     public function test_below_fold_home_images_use_lazy_async_decoding(): void
@@ -448,21 +504,28 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('background-image: url(\''.asset('images/background/9.webp').'\')', $html);
     }
 
-    public function test_phone_input_assets_only_load_on_phone_form_pages(): void
+    public function test_contact_uses_native_phone_ui_while_checkout_and_buy_now_routes_keep_intl_phone_assets(): void
     {
         $contactHead = $this->renderHeadForRoute('contact');
         $contactFooter = $this->renderFooterForRoute('contact');
-        $checkoutHead = $this->renderHeadForRoute('checkout');
-        $checkoutFooter = $this->renderFooterForRoute('checkout');
         $packagesHead = $this->renderHeadForRoute('packages');
         $packagesFooter = $this->renderFooterForRoute('packages');
         $configureHead = $this->renderHeadForRoute('configure');
         $configureFooter = $this->renderFooterForRoute('configure');
 
-        $this->assertStringContainsString('intl-tel-input@19.5.7', $contactHead);
-        $this->assertStringContainsString('intl-tel-input@19.5.7', $contactFooter);
-        $this->assertStringContainsString('intl-tel-input@19.5.7', $checkoutHead);
-        $this->assertStringContainsString('intl-tel-input@19.5.7', $checkoutFooter);
+        $this->assertStringNotContainsString('intl-tel-input@19.5.7', $contactHead);
+        $this->assertStringNotContainsString('intl-tel-input@19.5.7', $contactFooter);
+
+        foreach (['checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'] as $routeName) {
+            $this->assertStringContainsString(
+                'intl-tel-input@19.5.7',
+                $this->renderHeadForRoute($routeName)
+            );
+            $this->assertStringContainsString(
+                'intl-tel-input@19.5.7',
+                $this->renderFooterForRoute($routeName)
+            );
+        }
 
         $this->assertStringNotContainsString('intl-tel-input@19.5.7', $packagesHead);
         $this->assertStringNotContainsString('intl-tel-input@19.5.7', $packagesFooter);

@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\BlogCategory;
 use App\Models\BlogTranslation;
+use App\Services\BlogCoverImageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, BlogCoverImageService $coverImages)
     {
         $locale = app()->getLocale();
         $search = trim((string) $request->query('q', ''));
@@ -35,6 +36,9 @@ class BlogController extends Controller
         }
 
         $featured = $featuredQuery->orderByDesc('published_at')->first();
+        $featuredCoverImage = $featured?->cover_image
+            ? $coverImages->featured($featured->cover_image)
+            : null;
 
         $blogsQuery = Blog::published()
             ->whereHas('translations', function ($q) use ($locale) {
@@ -82,6 +86,7 @@ class BlogController extends Controller
         return view('blogs.index', compact(
             'blogs',
             'featured',
+            'featuredCoverImage',
             'search',
             'categories',
             'categorySlug',

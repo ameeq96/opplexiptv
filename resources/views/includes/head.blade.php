@@ -74,7 +74,7 @@
 
     $isRtl = $isRtl ?? in_array($locale, ['ar', 'ur', 'fa', 'he'], true);
 
-    $phoneAssetRoutes = ['contact', 'checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'];
+    $phoneAssetRoutes = ['checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'];
     $checkoutCssRoutes = ['checkout', 'configure', 'digital.checkout.show', 'digital.checkout.store'];
     $needsPhoneAssets = in_array($routeName, $phoneAssetRoutes, true);
     $needsBlockingCheckoutCss = in_array($routeName, $checkoutCssRoutes, true);
@@ -1279,9 +1279,17 @@
         media="(max-width: 767px)" fetchpriority="high">
 @endif
 
-{{-- Keep the homepage styled on first paint without a render-blocking stylesheet request. --}}
+{{-- Keep optimized landing pages styled on first paint without a render-blocking stylesheet request. --}}
 @if ($routeName === 'home' && ! Vite::isRunningHot())
     <style id="home-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($routeName === 'packages' && ! Vite::isRunningHot())
+    <style id="packages-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($routeName === 'blogs.index' && ! Vite::isRunningHot())
+    <style id="blogs-index-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($routeName === 'contact' && ! Vite::isRunningHot())
+    <style id="contact-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($routeName === 'iptv-subscription-service' && ! Vite::isRunningHot())
+    <style id="iptv-subscription-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
 @elseif ($isMoviesRoute)
     <link rel="preload" href="{{ Vite::asset('resources/css/site-critical.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 @else

@@ -2,11 +2,16 @@
 
 @php
     use Illuminate\Support\Facades\Storage;
+    use Illuminate\Support\Facades\Vite;
     $isRtl = in_array(app()->getLocale(), ['ar', 'ur'], true);
 @endphp
 
 @push('styles')
-    @vite('resources/css/blogs.css')
+    @if (! Vite::isRunningHot())
+        <style id="blogs-index-styles">{!! Vite::content('resources/css/blogs.css') !!}</style>
+    @else
+        @vite('resources/css/blogs.css')
+    @endif
 @endpush
 
 @push('schema')
@@ -90,10 +95,21 @@
                 <article class="blog-featured" aria-label="{{ __('messages.featured') }}">
                     <a class="blog-featured__media" href="{{ $featuredUrl }}" aria-label="{{ $featuredTranslation?->title }}">
                         @if ($featured->cover_image)
-                            <img src="{{ asset(Storage::url($featured->cover_image)) }}"
-                                alt="{{ $featuredTranslation?->title }}" loading="lazy" decoding="async">
+                            @if ($featuredCoverImage)
+                                <img src="{{ $featuredCoverImage['src'] }}"
+                                    srcset="{{ $featuredCoverImage['srcset'] }}"
+                                    sizes="(min-width: 1340px) 672px, (min-width: 768px) 51vw, calc(100vw - 30px)"
+                                    width="{{ $featuredCoverImage['width'] }}"
+                                    height="{{ $featuredCoverImage['height'] }}"
+                                    alt="{{ $featuredTranslation?->title }}" loading="lazy" decoding="async">
+                            @else
+                                <img src="{{ asset(Storage::url($featured->cover_image)) }}"
+                                    width="672" height="420"
+                                    alt="{{ $featuredTranslation?->title }}" loading="lazy" decoding="async">
+                            @endif
                         @else
                             <img src="{{ asset('images/placeholder.webp') }}"
+                                width="672" height="420"
                                 alt="{{ $featuredTranslation?->title }}" loading="lazy" decoding="async">
                         @endif
                         <span class="blog-featured__badge">
@@ -184,4 +200,161 @@
             @endif
         </div>
     </section>
+@endsection
+
+@section('script')
+    <script id="blogs-native-shell">
+        (function () {
+            'use strict';
+
+            function directChildByTag(parent, tagName) {
+                if (!parent) return null;
+                const expectedTag = tagName.toUpperCase();
+
+                return Array.from(parent.children).find((child) => child.tagName === expectedTag) || null;
+            }
+
+            function initBlogsScrollUi() {
+                const header = document.querySelector('.main-header');
+                const scrollButton = document.querySelector('.scroll-to-target');
+                let scheduled = false;
+
+                const update = () => {
+                    const isPastHeader = window.scrollY >= 300;
+                    if (header) header.classList.toggle('fixed-header', isPastHeader);
+                    if (scrollButton) scrollButton.style.display = isPastHeader ? 'block' : 'none';
+                    scheduled = false;
+                };
+
+                const scheduleUpdate = () => {
+                    if (scheduled) return;
+                    scheduled = true;
+                    window.requestAnimationFrame(update);
+                };
+
+                window.addEventListener('scroll', scheduleUpdate, { passive: true });
+
+                if (scrollButton) {
+                    scrollButton.addEventListener('click', () => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                }
+
+                update();
+            }
+
+            function initBlogsMobileMenu() {
+                const source = document.querySelector('.main-header .main-menu .navigation');
+                const target = document.querySelector('.mobile-menu .menu-outer');
+
+                if (source && target && !target.querySelector('.navigation')) {
+                    target.insertBefore(source.cloneNode(true), target.firstChild);
+                }
+
+                document.querySelectorAll('.mobile-menu .navigation li.dropdown').forEach((item) => {
+                    const submenu = directChildByTag(item, 'ul');
+                    if (!submenu || item.querySelector(':scope > .dropdown-btn')) return;
+
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = 'dropdown-btn';
+                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-expanded', 'false');
+                    button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
+                    item.appendChild(button);
+
+                    const toggle = (event) => {
+                        if (event) event.preventDefault();
+                        const willOpen = submenu.style.display !== 'block';
+                        submenu.style.display = willOpen ? 'block' : 'none';
+                        button.classList.toggle('open', willOpen);
+                        button.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+                    };
+
+                    button.addEventListener('click', toggle);
+
+                    const link = directChildByTag(item, 'a');
+                    if (link && (link.getAttribute('href') === '#' || link.getAttribute('href') === '')) {
+                        link.addEventListener('click', toggle);
+                    }
+                });
+
+                const openButton = document.querySelector('.mobile-nav-toggler');
+                const backdrop = document.querySelector('.mobile-menu .menu-backdrop');
+                const closeButton = document.querySelector('.mobile-menu .close-btn');
+                const closeMenu = () => document.body.classList.remove('mobile-menu-visible');
+
+                if (openButton) {
+                    openButton.addEventListener('click', () => {
+                        document.body.classList.add('mobile-menu-visible');
+                    });
+                }
+
+                if (backdrop) backdrop.addEventListener('click', closeMenu);
+                if (closeButton) closeButton.addEventListener('click', closeMenu);
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') closeMenu();
+                });
+            }
+
+            function initBlogsDropdowns() {
+                const dropdowns = document.querySelectorAll('.main-header .main-menu .navigation > li.dropdown');
+
+                const closeDropdowns = (except) => {
+                    dropdowns.forEach((item) => {
+                        if (item === except) return;
+                        item.classList.remove('native-dropdown-open');
+                        const submenu = directChildByTag(item, 'ul');
+                        if (submenu) {
+                            submenu.style.removeProperty('transform');
+                            submenu.style.removeProperty('opacity');
+                            submenu.style.removeProperty('visibility');
+                        }
+                        const link = directChildByTag(item, 'a');
+                        if (link) link.setAttribute('aria-expanded', 'false');
+                    });
+                };
+
+                dropdowns.forEach((item) => {
+                    const link = directChildByTag(item, 'a');
+                    const submenu = directChildByTag(item, 'ul');
+                    if (!link || !submenu || !['', '#'].includes(link.getAttribute('href') || '')) return;
+
+                    link.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        const willOpen = !item.classList.contains('native-dropdown-open');
+                        closeDropdowns(item);
+                        item.classList.toggle('native-dropdown-open', willOpen);
+                        submenu.style.transform = willOpen ? 'scaleY(1)' : '';
+                        submenu.style.opacity = willOpen ? '1' : '';
+                        submenu.style.visibility = willOpen ? 'visible' : '';
+                        link.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+                    });
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (!event.target.closest('.main-header .main-menu .navigation > li.dropdown')) {
+                        closeDropdowns();
+                    }
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') closeDropdowns();
+                });
+            }
+
+            function initBlogsNativeShell() {
+                initBlogsScrollUi();
+                initBlogsMobileMenu();
+                initBlogsDropdowns();
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initBlogsNativeShell, { once: true });
+            } else {
+                initBlogsNativeShell();
+            }
+        })();
+    </script>
 @endsection

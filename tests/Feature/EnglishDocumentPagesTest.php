@@ -6,6 +6,7 @@ use App\Models\Digital\DigitalProduct;
 use App\Models\ShopProduct;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Vite;
 use Tests\TestCase;
 
 class EnglishDocumentPagesTest extends TestCase
@@ -80,6 +81,57 @@ class EnglishDocumentPagesTest extends TestCase
                 'When You Can Expect a Reply',
             ]],
         ];
+    }
+
+    public function test_packages_inlines_document_styles_and_uses_the_native_shell(): void
+    {
+        Cache::flush();
+        Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
+
+        $response = $this->get('/packages');
+
+        $response->assertOk();
+        $html = $response->getContent();
+
+        $this->assertSame(
+            1,
+            preg_match('/<style id="packages-document-styles">(.*?)<\/style>/s', $html, $styleMatches)
+        );
+        $this->assertSame(
+            hash('sha256', file_get_contents(public_path('css/document-commerce.css'))),
+            hash('sha256', $styleMatches[1])
+        );
+        $this->assertStringNotContainsString(
+            'href="'.asset('css/document-commerce.css'),
+            $html
+        );
+
+        foreach ([
+            'https://code.jquery.com/jquery-1.12.4.min.js',
+            'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
+            'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js',
+            'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js',
+            Vite::asset('resources/js/site.js'),
+        ] as $legacyAsset) {
+            $this->assertStringNotContainsString($legacyAsset, $html);
+        }
+
+        $this->assertSame(
+            1,
+            preg_match('/<script id="packages-native-shell">(.*?)<\/script>/s', $html, $scriptMatches)
+        );
+        foreach ([
+            'initPackagesMobileMenu',
+            'initPackagesFaqs',
+            'initPackagesScrollUi',
+            'window.requestAnimationFrame(update)',
+        ] as $nativeMarker) {
+            $this->assertStringContainsString($nativeMarker, $scriptMatches[1]);
+        }
+        foreach (['offsetHeight', 'offsetWidth', 'clientWidth', 'getBoundingClientRect'] as $layoutRead) {
+            $this->assertStringNotContainsString($layoutRead, $scriptMatches[1]);
+        }
     }
 
     public function test_shop_prioritises_all_eight_document_products_on_the_first_page(): void

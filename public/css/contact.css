@@ -160,8 +160,39 @@
 .ctx-form input[aria-invalid="true"],
 .ctx-form textarea[aria-invalid="true"] { border-color: var(--c-accent); }
 
-/* intl-tel-input phone field fills the row */
-.ctx-form .iti { width: 100%; display: block; }
+/* Native dial-code picker: no third-party flag sprite or layout script. */
+.ctx-phone {
+    display: grid;
+    grid-template-columns: minmax(112px, .34fr) minmax(0, 1fr);
+    gap: 10px;
+}
+.ctx-phone input { min-width: 0; }
+.ctx-phone__country {
+    width: 100%;
+    height: 52px;
+    padding: 0 12px;
+    border: 1.5px solid var(--c-border-strong);
+    border-radius: 12px;
+    outline: none;
+    background: var(--c-surface-2);
+    color: var(--c-ink);
+    font-family: inherit;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: border-color .2s var(--c-ease), box-shadow .2s var(--c-ease), background .2s var(--c-ease);
+}
+.ctx-phone__country:focus {
+    border-color: var(--c-accent);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(223, 3, 3, .12);
+}
+.ctx-phone__hint {
+    display: block;
+    margin-top: 6px;
+    color: var(--c-muted);
+    font-size: .78rem;
+    line-height: 1.4;
+}
 
 .ctx-form .text-danger { font-size: .82rem; margin-top: 6px; }
 
@@ -198,6 +229,7 @@
 @media (max-width: 575px) {
     .ctx { padding: 40px 0 56px; }
     .ctx-info, .ctx-form { padding: 24px 20px; }
+    .ctx-phone { grid-template-columns: 118px minmax(0, 1fr); }
     .ctx-submit { width: 100%; }
 }
 

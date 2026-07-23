@@ -256,15 +256,32 @@
 }
 .ipts-support strong { color: var(--i-accent-strong); }
 
+/* ---------- Channel logos: static grid, no layout-reading carousel ---------- */
+.ipts-channels {
+    padding: 54px 0;
+}
+.ipts-channel-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+.ipts-channel-grid .channel-showcase__card {
+    height: 100%;
+    margin: 0;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 991px) {
     .ipts-benefits { grid-template-columns: repeat(2, 1fr); }
     .ipts-setup__panel { grid-template-columns: 1fr; gap: 28px; }
+    .ipts-channel-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 540px) {
     .ipts-hero { padding: 44px 0 50px; }
     .ipts-benefits { grid-template-columns: 1fr; gap: 16px; }
     .ipts-btn { flex: 1 1 100%; }
+    .ipts-channels { padding: 34px 0; }
+    .ipts-channel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 }
 
 /* RTL */
