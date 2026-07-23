@@ -46,6 +46,24 @@ class HomeDocumentContentTest extends TestCase
         $response->assertSeeText('Try Opplex IPTV For Free | No Commitment Needed');
 
         $html = $response->getContent();
+        $homeSplitImage = $this->homeSplitImageTag($html);
+
+        $this->assertStringContainsString('<style id="home-document-styles">', $html);
+        $this->assertStringContainsString('.home-document-devices', $html);
+        $this->assertStringNotContainsString('/css/home-document.css', $html);
+        foreach ([
+            'movie-night-tv-480.webp',
+            'movie-night-tv-720.webp',
+            'movie-night-tv-1024.webp',
+            'movie-night-tv-1280.webp',
+            'sizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"',
+            'loading="eager"',
+            'fetchpriority="high"',
+            'decoding="async"',
+            'width="1024" height="1024"',
+        ] as $expected) {
+            $this->assertStringContainsString($expected, $homeSplitImage);
+        }
         $this->assertSame(
             1,
             substr_count($html, '<h1>Best IPTV Subscription Service Provider | Live TV, Sports &amp; 4K Streaming</h1>'),
@@ -81,11 +99,16 @@ class HomeDocumentContentTest extends TestCase
             'homeAffiliateProducts' => collect(),
             'isRtl' => false,
         ])->render();
+        $homeSplitImage = $this->homeSplitImageTag($html);
 
         $this->assertStringNotContainsString('home-document-devices', $html);
         $this->assertStringNotContainsString('home-document-stats', $html);
         $this->assertStringNotContainsString('home-document-trial', $html);
+        $this->assertStringNotContainsString('home-document-styles', $html);
+        $this->assertStringNotContainsString('home-document.css', $html);
         $this->assertStringNotContainsString('Watch What You Want, When You Want', $html);
+        $this->assertStringContainsString('loading="lazy"', $homeSplitImage);
+        $this->assertStringContainsString('fetchpriority="low"', $homeSplitImage);
         $this->assertLessThan(
             strpos($html, 'home-split-section'),
             strpos($html, 'pricing-section style-two'),
@@ -116,5 +139,14 @@ class HomeDocumentContentTest extends TestCase
             $this->assertGreaterThan($previousPosition, $position, "Homepage marker is out of order: {$marker}");
             $previousPosition = $position;
         }
+    }
+
+    private function homeSplitImageTag(string $html): string
+    {
+        $matched = preg_match('/<img[^>]+movie-night-tv-1024\.webp[^>]*>/s', $html, $matches);
+
+        $this->assertSame(1, $matched, 'The responsive homepage split image is missing.');
+
+        return $matches[0];
     }
 }

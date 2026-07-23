@@ -182,6 +182,39 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
     }
 
+    public function test_home_keeps_foundational_styles_blocking_while_movies_remains_deferred(): void
+    {
+        $criticalHref = Vite::asset('resources/css/site-critical.css');
+        $homeHtml = $this->renderHeadForRoute('home');
+        $packagesHtml = $this->renderHeadForRoute('packages');
+        $moviesHtml = $this->renderHeadForRoute('movies');
+        $homeBeforeNoscript = strstr($homeHtml, '<noscript>', true);
+        $packagesBeforeNoscript = strstr($packagesHtml, '<noscript>', true);
+        $moviesBeforeNoscript = strstr($moviesHtml, '<noscript>', true);
+
+        $this->assertIsString($homeBeforeNoscript);
+        $this->assertIsString($packagesBeforeNoscript);
+        $this->assertIsString($moviesBeforeNoscript);
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $homeBeforeNoscript);
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $packagesBeforeNoscript);
+        $this->assertStringNotContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style"',
+            $homeBeforeNoscript
+        );
+        $this->assertStringNotContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style"',
+            $packagesBeforeNoscript
+        );
+        $this->assertStringContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">',
+            $moviesBeforeNoscript
+        );
+        $this->assertMatchesRegularExpression(
+            '/<noscript>.*<link rel="stylesheet" href="'.preg_quote($criticalHref, '/').'">.*<\/noscript>/s',
+            $moviesHtml
+        );
+    }
+
     public function test_voice_assistant_and_discount_wheel_scripts_are_delayed(): void
     {
         $layout = file_get_contents(resource_path('views/layouts/default.blade.php'));
