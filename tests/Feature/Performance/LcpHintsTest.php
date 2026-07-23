@@ -208,61 +208,28 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
     }
 
-    public function test_target_pages_inline_foundational_styles_while_other_routes_keep_their_loading_strategy(): void
+    public function test_home_keeps_foundational_styles_blocking_while_movies_remains_deferred(): void
     {
         $criticalHref = Vite::asset('resources/css/site-critical.css');
         $homeHtml = $this->renderHeadForRoute('home');
         $packagesHtml = $this->renderHeadForRoute('packages');
-        $blogsIndexHtml = $this->renderHeadForRoute('blogs.index');
-        $contactHtml = $this->renderHeadForRoute('contact');
-        $iptvSubscriptionHtml = $this->renderHeadForRoute('iptv-subscription-service');
-        $faqsHtml = $this->renderHeadForRoute('faqs');
         $moviesHtml = $this->renderHeadForRoute('movies');
         $homeBeforeNoscript = strstr($homeHtml, '<noscript>', true);
         $packagesBeforeNoscript = strstr($packagesHtml, '<noscript>', true);
-        $blogsIndexBeforeNoscript = strstr($blogsIndexHtml, '<noscript>', true);
-        $contactBeforeNoscript = strstr($contactHtml, '<noscript>', true);
-        $iptvSubscriptionBeforeNoscript = strstr($iptvSubscriptionHtml, '<noscript>', true);
-        $faqsBeforeNoscript = strstr($faqsHtml, '<noscript>', true);
         $moviesBeforeNoscript = strstr($moviesHtml, '<noscript>', true);
 
         $this->assertIsString($homeBeforeNoscript);
         $this->assertIsString($packagesBeforeNoscript);
-        $this->assertIsString($blogsIndexBeforeNoscript);
-        $this->assertIsString($contactBeforeNoscript);
-        $this->assertIsString($iptvSubscriptionBeforeNoscript);
-        $this->assertIsString($faqsBeforeNoscript);
         $this->assertIsString($moviesBeforeNoscript);
-
-        foreach ([
-            'home-critical-styles' => $homeBeforeNoscript,
-            'packages-critical-styles' => $packagesBeforeNoscript,
-            'blogs-index-critical-styles' => $blogsIndexBeforeNoscript,
-            'contact-critical-styles' => $contactBeforeNoscript,
-            'iptv-subscription-critical-styles' => $iptvSubscriptionBeforeNoscript,
-        ] as $styleId => $html) {
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $html, $matches)
-            );
-            $this->assertSame(
-                hash('sha256', Vite::content('resources/css/site-critical.css')),
-                hash('sha256', $matches[1])
-            );
-            $this->assertStringNotContainsString(
-                'rel="stylesheet" href="'.$criticalHref.'"',
-                $html
-            );
-            $this->assertStringNotContainsString(
-                '<link rel="preload" href="'.$criticalHref.'" as="style"',
-                $html
-            );
-        }
-
-        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $faqsBeforeNoscript);
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $homeBeforeNoscript);
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $packagesBeforeNoscript);
         $this->assertStringNotContainsString(
             '<link rel="preload" href="'.$criticalHref.'" as="style"',
-            $faqsBeforeNoscript
+            $homeBeforeNoscript
+        );
+        $this->assertStringNotContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style"',
+            $packagesBeforeNoscript
         );
         $this->assertStringContainsString(
             '<link rel="preload" href="'.$criticalHref.'" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">',

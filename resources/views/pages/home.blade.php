@@ -8,8 +8,6 @@
         @endphp
         @if ($homeDocumentCss !== false)
             <style id="home-document-styles">{!! $homeDocumentCss !!}</style>
-        @else
-            <link rel="stylesheet" href="{{ asset('css/home-document.css') }}">
         @endif
     @endpush
 @endif
