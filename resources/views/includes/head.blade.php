@@ -104,6 +104,15 @@
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
     <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
 @endif
+@if ($routeName === 'home' && $locale === 'en')
+    <link rel="preload" as="image" href="{{ asset('images/resource/movie-night-tv-1024.webp') }}"
+        imagesrcset="{{ asset('images/resource/movie-night-tv-480.webp') }} 480w,
+            {{ asset('images/resource/movie-night-tv-720.webp') }} 720w,
+            {{ asset('images/resource/movie-night-tv-1024.webp') }} 1024w,
+            {{ asset('images/resource/movie-night-tv-1280.webp') }} 1280w"
+        imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"
+        fetchpriority="high">
+@endif
 @if ($isMoviesRoute)
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
@@ -1270,7 +1279,10 @@
         media="(max-width: 767px)" fetchpriority="high">
 @endif
 
-@if ($isMoviesRoute)
+{{-- Keep the homepage styled on first paint without a render-blocking stylesheet request. --}}
+@if ($routeName === 'home' && ! Vite::isRunningHot())
+    <style id="home-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($isMoviesRoute)
     <link rel="preload" href="{{ Vite::asset('resources/css/site-critical.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 @else
     @vite('resources/css/site-critical.css')

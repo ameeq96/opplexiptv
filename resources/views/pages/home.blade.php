@@ -3,7 +3,14 @@
 
 @if (app()->getLocale() === 'en')
     @push('styles')
-        <link rel="stylesheet" href="{{ asset('css/home-document.css') }}?v={{ @filemtime(public_path('css/home-document.css')) ?: 1 }}">
+        @php
+            $homeDocumentCss = @file_get_contents(public_path('css/home-document.css'));
+        @endphp
+        @if ($homeDocumentCss !== false)
+            <style id="home-document-styles">{!! $homeDocumentCss !!}</style>
+        @else
+            <link rel="stylesheet" href="{{ asset('css/home-document.css') }}">
+        @endif
     @endpush
 @endif
 

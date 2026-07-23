@@ -68,6 +68,32 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('intl-tel-input@19.5.7', $html);
     }
 
+    public function test_english_home_preloads_the_responsive_split_lcp_image(): void
+    {
+        $html = $this->renderHeadForRoute('home');
+
+        $this->assertMatchesRegularExpression(
+            '/<link rel="preload" as="image" href="[^"]*movie-night-tv-1024\.webp"[^>]+fetchpriority="high">/s',
+            $html
+        );
+        foreach ([
+            'movie-night-tv-480.webp',
+            'movie-night-tv-720.webp',
+            'movie-night-tv-1024.webp',
+            'movie-night-tv-1280.webp',
+            'imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"',
+        ] as $expected) {
+            $this->assertStringContainsString($expected, $html);
+        }
+
+        app()->setLocale('es');
+
+        $this->assertStringNotContainsString(
+            'movie-night-tv-1024.webp',
+            $this->renderHeadForRoute('home')
+        );
+    }
+
     public function test_home_head_inlines_mobile_hero_lcp_visibility_rules(): void
     {
         $html = $this->renderHeadForRoute('home');
@@ -180,6 +206,50 @@ class LcpHintsTest extends TestCase
 
         $this->assertStringNotContainsString('bootstrap@4.6.2/dist/css/bootstrap.min.css', $html);
         $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
+    }
+
+    public function test_home_inlines_foundational_styles_while_other_routes_keep_their_loading_strategy(): void
+    {
+        $criticalHref = Vite::asset('resources/css/site-critical.css');
+        $homeHtml = $this->renderHeadForRoute('home');
+        $packagesHtml = $this->renderHeadForRoute('packages');
+        $moviesHtml = $this->renderHeadForRoute('movies');
+        $homeBeforeNoscript = strstr($homeHtml, '<noscript>', true);
+        $packagesBeforeNoscript = strstr($packagesHtml, '<noscript>', true);
+        $moviesBeforeNoscript = strstr($moviesHtml, '<noscript>', true);
+
+        $this->assertIsString($homeBeforeNoscript);
+        $this->assertIsString($packagesBeforeNoscript);
+        $this->assertIsString($moviesBeforeNoscript);
+        $this->assertSame(
+            1,
+            preg_match('/<style id="home-critical-styles">(.*?)<\/style>/s', $homeBeforeNoscript, $matches)
+        );
+        $this->assertSame(
+            hash('sha256', Vite::content('resources/css/site-critical.css')),
+            hash('sha256', $matches[1])
+        );
+        $this->assertStringNotContainsString(
+            'rel="stylesheet" href="'.$criticalHref.'"',
+            $homeBeforeNoscript
+        );
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $packagesBeforeNoscript);
+        $this->assertStringNotContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style"',
+            $homeBeforeNoscript
+        );
+        $this->assertStringNotContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style"',
+            $packagesBeforeNoscript
+        );
+        $this->assertStringContainsString(
+            '<link rel="preload" href="'.$criticalHref.'" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">',
+            $moviesBeforeNoscript
+        );
+        $this->assertMatchesRegularExpression(
+            '/<noscript>.*<link rel="stylesheet" href="'.preg_quote($criticalHref, '/').'">.*<\/noscript>/s',
+            $moviesHtml
+        );
     }
 
     public function test_voice_assistant_and_discount_wheel_scripts_are_delayed(): void
