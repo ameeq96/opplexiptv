@@ -25,17 +25,23 @@
     $legalNote = $footerSettings['legal_note'] ?? null;
 
     $routeName = optional(request()->route())->getName();
+    $isHomeRoute = $routeName === 'home';
     $isMoviesRoute = $routeName === 'movies';
     $isPackagesRoute = $routeName === 'packages';
     $isBlogsIndexRoute = $routeName === 'blogs.index';
     $isContactRoute = $routeName === 'contact';
     $isIptvSubscriptionRoute = $routeName === 'iptv-subscription-service';
-    $usesLegacySiteAssets = !$isMoviesRoute
+    $isAboutRoute = $routeName === 'about';
+    $isResellerPanelRoute = $routeName === 'reseller-panel';
+    $usesLegacySiteAssets = !$isHomeRoute
+        && !$isMoviesRoute
         && !$isPackagesRoute
         && !$isBlogsIndexRoute
         && !$isContactRoute
-        && !$isIptvSubscriptionRoute;
-    $targetOptimizedRoutes = ['packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index', 'iptv-subscription-service'];
+        && !$isIptvSubscriptionRoute
+        && !$isAboutRoute
+        && !$isResellerPanelRoute;
+    $targetOptimizedRoutes = ['home', 'packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index', 'iptv-subscription-service'];
     $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
     $needsJquery = $usesLegacySiteAssets;
     $needsStandalonePopper = $usesLegacySiteAssets;
@@ -46,7 +52,7 @@
     $needsAppear = !$isTargetOptimizedRoute;
     $needsParallax = !$isTargetOptimizedRoute;
     $needsParoller = !$isTargetOptimizedRoute;
-    $needsOwlCarousel = !$isTargetOptimizedRoute || in_array($routeName, ['about', 'reseller-panel'], true);
+    $needsOwlCarousel = !$isTargetOptimizedRoute;
     $needsValidation = $usesLegacySiteAssets;
     $needsPhoneAssets = in_array($routeName, ['checkout', 'digital.checkout.show', 'buynow', 'buynowpanel'], true);
 @endphp
@@ -528,6 +534,8 @@
     (function() {
         'use strict';
 
+        const usePercentageCarouselOffsets = @json($isHomeRoute || $isAboutRoute || $isResellerPanelRoute);
+
         const onReady = (fn) => {
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', fn, {
@@ -589,6 +597,17 @@
 
                 const getVisibleItems = () => {
                     if (isHero) return 1;
+
+                    if (usePercentageCarouselOffsets) {
+                        if (window.matchMedia('(max-width: 767px)').matches) {
+                            return parseInt(root.getAttribute('data-items-mobile') || '1', 10);
+                        }
+                        if (window.matchMedia('(max-width: 1024px)').matches) {
+                            return parseInt(root.getAttribute('data-items-tablet') || root.getAttribute('data-items-mobile') || '1', 10);
+                        }
+                        return parseInt(root.getAttribute('data-items-desktop') || '1', 10);
+                    }
+
                     const width = window.innerWidth;
                     if (width <= 767) return parseInt(root.getAttribute('data-items-mobile') || '1', 10);
                     if (width <= 1024) return parseInt(root.getAttribute('data-items-tablet') || root.getAttribute('data-items-mobile') || '1', 10);
@@ -646,10 +665,18 @@
                     }
 
                     const gap = parseInt(root.getAttribute('data-gap') || '30', 10);
-                    const viewportWidth = viewport.clientWidth;
-                    const slideWidth = visibleItems > 0 ? (viewportWidth - (gap * (visibleItems - 1))) / visibleItems : viewportWidth;
                     const direction = isRtlCarousel ? 1 : -1;
-                    track.style.transform = `translate3d(${direction * index * (slideWidth + gap)}px, 0, 0)`;
+
+                    if (usePercentageCarouselOffsets) {
+                        const offsetPercent = index * (100 / visibleItems);
+                        const offsetGap = index * (gap / visibleItems);
+                        track.style.transform = `translate3d(${direction * offsetPercent}%, 0, 0) translateX(${direction * offsetGap}px)`;
+                    } else {
+                        const viewportWidth = viewport.clientWidth;
+                        const slideWidth = visibleItems > 0 ? (viewportWidth - (gap * (visibleItems - 1))) / visibleItems : viewportWidth;
+                        track.style.transform = `translate3d(${direction * index * (slideWidth + gap)}px, 0, 0)`;
+                    }
+
                     slides.slice(index, index + visibleItems + 1).forEach(lazyLoadSlide);
                     updateArrows();
                 };

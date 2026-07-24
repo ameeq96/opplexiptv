@@ -6,6 +6,7 @@ use App\Models\ShopProduct;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Vite;
 use Tests\TestCase;
 
 class HomeDocumentContentTest extends TestCase
@@ -113,6 +114,74 @@ class HomeDocumentContentTest extends TestCase
             strpos($html, 'home-split-section'),
             strpos($html, 'pricing-section style-two'),
             'The non-English homepage should retain pricing before the split section.'
+        );
+    }
+
+    public function test_home_uses_a_native_shell_without_the_legacy_jquery_stack(): void
+    {
+        Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
+
+        $response = $this->get('/');
+
+        $response->assertOk();
+        $html = $response->getContent();
+
+        foreach ([
+            'https://code.jquery.com/jquery-1.12.4.min.js',
+            'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
+            'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js',
+            'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js',
+            Vite::asset('resources/js/site.js'),
+        ] as $legacyAsset) {
+            $this->assertStringNotContainsString($legacyAsset, $html);
+        }
+
+        $this->assertSame(
+            1,
+            preg_match('/<script id="home-native-shell">(.*?)<\/script>/s', $html, $scriptMatches)
+        );
+
+        foreach ([
+            'initHomeScrollUi',
+            'initHomeMobileMenu',
+            'initHomeDropdowns',
+            'initHomeFaqs',
+            "submenu.style.removeProperty('display')",
+            "submenu.style.display = willOpen ? 'block' : ''",
+            "button.setAttribute('role', 'button')",
+            'window.requestAnimationFrame(update)',
+            'window.scrollTo(0, 0)',
+        ] as $nativeMarker) {
+            $this->assertStringContainsString($nativeMarker, $scriptMatches[1]);
+        }
+
+        foreach ([
+            'offsetHeight',
+            'offsetWidth',
+            'offsetTop',
+            'clientWidth',
+            'clientHeight',
+            'getBoundingClientRect',
+            'getComputedStyle',
+            'jQuery',
+            'mCustomScrollbar',
+            'owlCarousel',
+        ] as $layoutOrLegacyMarker) {
+            $this->assertStringNotContainsString($layoutOrLegacyMarker, $scriptMatches[1]);
+        }
+
+        $this->assertStringContainsString('const usePercentageCarouselOffsets = true;', $html);
+        $this->assertStringContainsString("window.matchMedia('(max-width: 767px)').matches", $html);
+        $this->assertStringContainsString('.mobile-menu .dropdown-btn', $html);
+        $this->assertStringContainsString(
+            'const offsetPercent = index * (100 / visibleItems);',
+            $html
         );
     }
 

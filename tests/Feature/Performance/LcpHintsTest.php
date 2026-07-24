@@ -106,16 +106,41 @@ class LcpHintsTest extends TestCase
     public function test_critical_font_preloads_match_vite_built_font_urls(): void
     {
         $html = $this->renderHeadForRoute('home');
+        $criticalStylePosition = strpos($html, '<style id="home-critical-styles">');
+        $this->assertNotFalse($criticalStylePosition);
 
         foreach ([
-            'public/fonts/poppins/poppins-v21-latin-regular.woff2',
-            'public/fonts/poppins/poppins-v21-latin-700.woff2',
-            'public/fonts/poppins/poppins-v21-latin-600.woff2',
-            'public/fonts/poppins/poppins-v21-latin-500.woff2',
-            'public/fonts/Linearicons-Free.woff2',
-        ] as $font) {
-            $this->assertStringContainsString('href="'.Vite::asset($font).'"', $html);
+            Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2'),
+            Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2'),
+            Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2'),
+            Vite::asset('public/fonts/fontawesome-webfont.woff2').'?v=4.3.0',
+            Vite::asset('public/fonts/flaticon.woff'),
+            Vite::asset('public/fonts/Linearicons-Free.woff2'),
+        ] as $fontUrl) {
+            $fontHref = 'href="'.$fontUrl.'"';
+            $fontPosition = strpos($html, $fontHref);
+
+            $this->assertNotFalse($fontPosition);
+            $this->assertSame(1, substr_count($html, $fontHref));
+            $this->assertLessThan($criticalStylePosition, $fontPosition);
         }
+
+        $this->assertStringNotContainsString(
+            'href="'.Vite::asset('public/fonts/poppins/poppins-v21-latin-500.woff2').'"',
+            $html
+        );
+        $this->assertStringContainsString(
+            'href="'.Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2').'" as="font" type="font/woff2" crossorigin>',
+            $html
+        );
+        $this->assertStringContainsString(
+            'href="'.Vite::asset('public/fonts/fontawesome-webfont.woff2').'?v=4.3.0" as="font" type="font/woff2" crossorigin fetchpriority="low"',
+            $html
+        );
+        $this->assertStringContainsString(
+            'href="'.Vite::asset('public/fonts/flaticon.woff').'" as="font" type="font/woff" crossorigin media="(max-width: 767px)" fetchpriority="low"',
+            $html
+        );
 
         $this->assertStringContainsString('font-weight:400', file_get_contents(public_path('css/fonts.css')));
         $this->assertStringNotContainsString(asset('fonts/poppins/poppins-v21-latin-700.woff2'), $html);
@@ -208,29 +233,44 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
     }
 
-    public function test_home_keeps_foundational_styles_blocking_while_movies_remains_deferred(): void
+    public function test_target_pages_inline_foundational_styles_while_other_routes_keep_their_loading_strategy(): void
     {
+        $criticalCss = Vite::content('resources/css/site-critical.css');
         $criticalHref = Vite::asset('resources/css/site-critical.css');
-        $homeHtml = $this->renderHeadForRoute('home');
-        $packagesHtml = $this->renderHeadForRoute('packages');
         $moviesHtml = $this->renderHeadForRoute('movies');
-        $homeBeforeNoscript = strstr($homeHtml, '<noscript>', true);
-        $packagesBeforeNoscript = strstr($packagesHtml, '<noscript>', true);
+        $legacyHtml = $this->renderHeadForRoute('blogs.show');
         $moviesBeforeNoscript = strstr($moviesHtml, '<noscript>', true);
+        $legacyBeforeNoscript = strstr($legacyHtml, '<noscript>', true);
 
-        $this->assertIsString($homeBeforeNoscript);
-        $this->assertIsString($packagesBeforeNoscript);
         $this->assertIsString($moviesBeforeNoscript);
-        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $homeBeforeNoscript);
-        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $packagesBeforeNoscript);
-        $this->assertStringNotContainsString(
-            '<link rel="preload" href="'.$criticalHref.'" as="style"',
-            $homeBeforeNoscript
-        );
-        $this->assertStringNotContainsString(
-            '<link rel="preload" href="'.$criticalHref.'" as="style"',
-            $packagesBeforeNoscript
-        );
+        $this->assertIsString($legacyBeforeNoscript);
+
+        foreach ([
+            'home' => 'home-critical-styles',
+            'about' => 'about-critical-styles',
+            'reseller-panel' => 'reseller-panel-critical-styles',
+            'packages' => 'packages-critical-styles',
+            'blogs.index' => 'blogs-index-critical-styles',
+            'contact' => 'contact-critical-styles',
+            'iptv-subscription-service' => 'iptv-subscription-critical-styles',
+        ] as $routeName => $styleId) {
+            $html = $this->renderHeadForRoute($routeName);
+            $beforeNoscript = strstr($html, '<noscript>', true);
+
+            $this->assertIsString($beforeNoscript);
+            $this->assertSame(
+                1,
+                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $beforeNoscript, $styleMatches)
+            );
+            $this->assertSame(hash('sha256', $criticalCss), hash('sha256', $styleMatches[1]));
+            $this->assertStringNotContainsString('href="'.$criticalHref.'"', $beforeNoscript);
+            $this->assertStringNotContainsString(
+                '<link rel="preload" href="'.$criticalHref.'" as="style"',
+                $beforeNoscript
+            );
+        }
+
+        $this->assertStringContainsString('rel="stylesheet" href="'.$criticalHref.'"', $legacyBeforeNoscript);
         $this->assertStringContainsString(
             '<link rel="preload" href="'.$criticalHref.'" as="style" onload="this.onload=null;this.rel=\'stylesheet\'">',
             $moviesBeforeNoscript
@@ -266,6 +306,8 @@ class LcpHintsTest extends TestCase
         $blogsIndexHtml = $this->renderFooterForRoute('blogs.index');
         $contactHtml = $this->renderFooterForRoute('contact');
         $iptvSubscriptionHtml = $this->renderFooterForRoute('iptv-subscription-service');
+        $aboutHtml = $this->renderFooterForRoute('about');
+        $resellerHtml = $this->renderFooterForRoute('reseller-panel');
         $blogsShowHtml = $this->renderFooterForRoute('blogs.show');
         $homeHtml = $this->renderFooterForRoute('home');
         $legacyAssets = [
@@ -274,6 +316,11 @@ class LcpHintsTest extends TestCase
             'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js',
             'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js',
             'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/paroller.js/1.4.6/jquery.paroller.min.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js',
         ];
 
         foreach ($legacyAssets as $asset) {
@@ -281,8 +328,10 @@ class LcpHintsTest extends TestCase
             $this->assertStringNotContainsString($asset, $blogsIndexHtml);
             $this->assertStringNotContainsString($asset, $contactHtml);
             $this->assertStringNotContainsString($asset, $iptvSubscriptionHtml);
+            $this->assertStringNotContainsString($asset, $aboutHtml);
+            $this->assertStringNotContainsString($asset, $resellerHtml);
+            $this->assertStringNotContainsString($asset, $homeHtml);
             $this->assertStringContainsString($asset, $blogsShowHtml);
-            $this->assertStringContainsString($asset, $homeHtml);
         }
 
         $siteScript = Vite::asset('resources/js/site.js');
@@ -290,8 +339,19 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString($siteScript, $blogsIndexHtml);
         $this->assertStringNotContainsString($siteScript, $contactHtml);
         $this->assertStringNotContainsString($siteScript, $iptvSubscriptionHtml);
+        $this->assertStringNotContainsString($siteScript, $aboutHtml);
+        $this->assertStringNotContainsString($siteScript, $resellerHtml);
+        $this->assertStringNotContainsString($siteScript, $homeHtml);
         $this->assertStringContainsString($siteScript, $blogsShowHtml);
-        $this->assertStringContainsString($siteScript, $homeHtml);
+        $this->assertStringContainsString('const usePercentageCarouselOffsets = true;', $homeHtml);
+        $this->assertStringContainsString('const usePercentageCarouselOffsets = true;', $aboutHtml);
+        $this->assertStringContainsString('const usePercentageCarouselOffsets = true;', $resellerHtml);
+        $this->assertStringContainsString('const usePercentageCarouselOffsets = false;', $blogsShowHtml);
+        $this->assertStringContainsString("window.matchMedia('(max-width: 767px)').matches", $homeHtml);
+        $this->assertStringContainsString(
+            'const offsetPercent = index * (100 / visibleItems);',
+            $homeHtml
+        );
     }
 
     public function test_below_fold_home_images_use_lazy_async_decoding(): void

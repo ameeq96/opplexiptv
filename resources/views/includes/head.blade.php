@@ -113,6 +113,15 @@
         imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"
         fetchpriority="high">
 @endif
+@if ($routeName === 'home')
+    {{-- Discover homepage fonts before parsing the large inline critical-style block. --}}
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ Vite::asset('public/fonts/fontawesome-webfont.woff2') }}?v=4.3.0" as="font" type="font/woff2" crossorigin fetchpriority="low">
+    <link rel="preload" href="{{ Vite::asset('public/fonts/flaticon.woff') }}" as="font" type="font/woff" crossorigin media="(max-width: 767px)" fetchpriority="low">
+    <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin media="(min-width: 768px)" fetchpriority="low">
+@endif
 @if ($isMoviesRoute)
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
@@ -1171,6 +1180,15 @@
 @endif
 @if ($routeName === 'home')
     <style>
+        .mobile-menu .dropdown-btn {
+            appearance: none;
+            -webkit-appearance: none;
+            border: 0;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+        }
+
         @media (max-width: 767px) {
             .hero-section-mobile {
                 min-height: 320px !important;
@@ -1282,6 +1300,10 @@
 {{-- Keep optimized landing pages styled on first paint without a render-blocking stylesheet request. --}}
 @if ($routeName === 'home' && ! Vite::isRunningHot())
     <style id="home-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($routeName === 'about' && ! Vite::isRunningHot())
+    <style id="about-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
+@elseif ($routeName === 'reseller-panel' && ! Vite::isRunningHot())
+    <style id="reseller-panel-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
 @elseif ($routeName === 'packages' && ! Vite::isRunningHot())
     <style id="packages-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
 @elseif ($routeName === 'blogs.index' && ! Vite::isRunningHot())
@@ -1321,16 +1343,18 @@
 @stack('styles')
 
 {{-- Preload critical fonts to reduce CLS --}}
-@if (in_array($routeName, $leanFontRoutes, true))
-    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
-@else
-    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
-@endif
+@unless ($routeName === 'home')
+    @if (in_array($routeName, $leanFontRoutes, true))
+        <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+    @else
+        <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-600.woff2') }}" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-500.woff2') }}" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin>
+    @endif
+@endunless
 
 @if ($needsPhoneAssets)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
