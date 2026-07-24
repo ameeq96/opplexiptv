@@ -9,6 +9,9 @@
                 data-items-mobile="2"
                 data-gap="0"
                 data-autoplay="3500"
+                @isset($nativeCarouselRtl)
+                    data-rtl="{{ $nativeCarouselRtl ? 'true' : 'false' }}"
+                @endisset
                 role="region"
                 aria-label="Client logos carousel">
                 <div class="native-carousel__viewport">

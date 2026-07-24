@@ -39,7 +39,10 @@ class ResellerPanelPerformanceTest extends TestCase
         }
 
         $this->assertStringContainsString('data-native-carousel', $html);
+        $this->assertStringContainsString('data-rtl="false"', $html);
         $this->assertStringNotContainsString('sponsors-carousel owl-carousel', $html);
+        $this->assertStringContainsString('id="reseller-panel-native-control-styles"', $html);
+        $this->assertStringContainsString('background: transparent;', $html);
         $this->assertMatchesRegularExpression('/<input[^>]+id="resellerToggle"[^>]+checked/', $html);
         $this->assertMatchesRegularExpression(
             '/id="normalPackages"\s+style="display:none!important"/',
@@ -80,11 +83,18 @@ class ResellerPanelPerformanceTest extends TestCase
         $this->assertStringNotContainsString('href="'.asset('css/about.css'), $html);
         $this->assertStringNotContainsString('href="'.asset('css/document-commerce.css'), $html);
         $this->assertStringContainsString('data-native-carousel', $html);
+        $this->assertStringContainsString('data-rtl="false"', $html);
         $this->assertStringNotContainsString('sponsors-carousel owl-carousel', $html);
         $this->assertStringContainsString('const usePercentageCarouselOffsets = true;', $html);
 
         $this->assertResellerPanelDoesNotShipLegacyAssets($html);
         $this->assertResellerPanelUsesNativeShell($html);
+
+        app()->setLocale('ur');
+
+        $rtlResponse = $this->get('/reseller-panel');
+        $rtlResponse->assertOk();
+        $this->assertStringContainsString('data-rtl="true"', $rtlResponse->getContent());
     }
 
     private function assertResellerPanelDoesNotShipLegacyAssets(string $html): void

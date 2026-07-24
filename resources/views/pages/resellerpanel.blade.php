@@ -32,6 +32,16 @@
     @else
         <link rel="stylesheet" href="{{ asset('css/about.css') }}?v={{ @filemtime(public_path('css/about.css')) ?: 1 }}">
     @endif
+    <style id="reseller-panel-native-control-styles">
+        .main-header .mobile-menu .navigation li.dropdown > .dropdown-btn {
+            appearance: none;
+            -webkit-appearance: none;
+            border: 0;
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+        }
+    </style>
 @endpush
 
 @section('content')
@@ -144,7 +154,10 @@
             @include('includes._testimonials')
 
             @unless ($isMobile)
-                @include('includes._channels-carousel', ['useNativeCarousel' => true])
+                @include('includes._channels-carousel', [
+                    'useNativeCarousel' => true,
+                    'nativeCarouselRtl' => $isRtl,
+                ])
             @endunless
 
             @include('includes._faq-section', [
@@ -209,7 +222,10 @@
 
         {{-- Channels (desktop only) --}}
         @unless ($isMobile)
-            @include('includes._channels-carousel', ['useNativeCarousel' => true])
+            @include('includes._channels-carousel', [
+                'useNativeCarousel' => true,
+                'nativeCarouselRtl' => $isRtl,
+            ])
         @endunless
 
 
