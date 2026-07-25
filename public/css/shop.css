@@ -108,6 +108,7 @@
 .shopx .unified-actions { display: flex; align-items: center; gap: 10px; }
 .shopx .unified-action {
     flex: 1 1 auto;
+    min-width: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +121,15 @@
     border: 1.5px solid var(--s-accent);
     background: var(--s-accent);
     color: #fff;
+    line-height: 1.25;
+    text-align: center;
     transition: background .2s var(--s-ease), border-color .2s var(--s-ease), color .2s var(--s-ease), transform .2s var(--s-ease);
+}
+.shopx .unified-action svg {
+    display: block;
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
 }
 .shopx .unified-action:hover { background: var(--s-accent-strong); border-color: var(--s-accent-strong); color: #fff; transform: translateY(-1px); }
 .shopx .unified-action.btn-outline-primary {
