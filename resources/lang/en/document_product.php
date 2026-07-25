@@ -2,7 +2,7 @@
 
 return [
     'applications' => [
-        'page_title' => 'IPTV Applications',
+        'page_title' => 'IPTV applications',
         'hero' => [
             'heading' => 'Best IPTV Apps for Android, iOS, Windows & Smart TV',
             'text' => "All the apps below work with your Opplex subscription. Pick the one that fits your device, download it for free, and sign in with the login details we send you. That's all there is to it.",
@@ -12,7 +12,7 @@ return [
             'android' => [
                 'eyebrow' => 'For Android Devices',
                 'heading' => 'Best IPTV Apps for Android',
-                'intro' => 'These apps work on Android phones, tablets, Fire TV Stick, Android TV boxes, and MAG devices. IPTV Smarters Pro is the most popular choice. The Opplex and XTV apps are our own lighter versions and were built specifically for our platform.',
+                'intro' => 'These apps work on Android phones, tablets, Fire TV Stick, Android TV boxes, and MAG devices. IPTV Smarters Pro is the most popular choice. The Opplex and XTV apps are our own lighter aversions nd were built specifically for our platform.',
             ],
             'ios' => [
                 'eyebrow' => 'For iOS Devices',
@@ -50,6 +50,21 @@ return [
             'ibo_macos' => 'Works on Intel-based Mac systems. Download the .dmg file, install it, and log in with your Opplex credentials.',
             'ibo_linux' => 'Available as a .snap package for Debian and Ubuntu systems. Install via snap and sign in with your Xtream Codes.',
         ],
+        'app_titles' => [
+            'smarters_android' => 'IPTV Smarters Pro',
+            'opplex' => 'Opplex IPTV App',
+            'xtv' => 'XTV Live',
+            'xtream_android' => '9Xtream Player',
+            'ibo_android' => 'IBO Player (Android)',
+            'star_share' => 'Star Share',
+            'smarters_ios' => 'Smarters Player Lite (iOS)',
+            'player_000' => '000 Player',
+            'xtream_ios' => '9Xtream (iOS)',
+            'smarters_windows' => 'IPTV Smarters Pro (Windows)',
+            'ibo_windows' => 'IBO Player (Windows x64)',
+            'ibo_macos' => 'IBO Player (macOS)',
+            'ibo_linux' => 'IBO Player (Linux)',
+        ],
         'compatibility_note' => 'All apps on this page are free to download. You only pay for your Opplex IPTV subscription. Compatible with iOS 10.0.5 and above, Android 4.4 (Kitkat) and above.',
         'faq' => [
             'heading' => 'Common Questions About IPTV Apps',
@@ -72,7 +87,7 @@ return [
                 ],
                 [
                     'question' => 'Are these apps free to download?',
-                    'answer' => 'Yes, every app on this page is free. You only pay for your Opplex IPTV subscription, which is what gives you access to the channels and content.',
+                    'answer' => 'Yes,  every app on this page is free. You only pay for your Opplex IPTV subscription, which is what gives you access to the channels and content.',
                 ],
             ],
         ],
@@ -86,7 +101,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ Movies and Series — Stream in HD and 4K on Any Device',
+            'heading' => '50,000+ Movies and Series Stream in HD and 4K on Any Device',
             'text' => "Your Opplex subscription comes with a full on-demand library from day one. No extra cost, no separate VOD package to buy. Browse movies, series, and cartoons or search for something specific. New content gets added on an ongoing basis, and if you can't find a title, just ask us on WhatsApp.",
             'plans' => 'View Plans',
             'trial' => 'Start Free Trial',
@@ -95,15 +110,15 @@ return [
             'heading' => "What's in the Library",
             'items' => [
                 [
-                    'title' => 'Movies — Hollywood, Bollywood and Beyond',
+                    'title' => 'Movies Hollywood, Bollywood and Beyond',
                     'text' => "The movie section covers all major genres: action, thriller, drama, comedy, horror, sci-fi, romance, and documentary. Hollywood blockbusters sit alongside Bollywood releases, European cinema, and international titles. New releases are added regularly; you won't find yourself stuck rewatching the same ten films.",
                 ],
                 [
-                    'title' => 'Series — Current Shows and Classic TV',
+                    'title' => 'Series Current Shows and Classic TV',
                     'text' => "From ongoing US and UK series to older shows you've been meaning to catch up on, the series library is updated as new episodes air. Think prestige dramas, crime shows, comedies, reality, and international productions, all in one place without needing five separate streaming subscriptions.",
                 ],
                 [
-                    'title' => 'Cartoons — Something for the Whole Household',
+                    'title' => 'Cartoons Something for the Whole Household',
                     'text' => "A dedicated cartoon section covers animated content for kids and families. If you've got children at home, this means the whole family gets what they want from a single Opplex subscription.",
                 ],
             ],
@@ -114,7 +129,7 @@ return [
             'steps' => [
                 'Open the Movies, Series, or Cartoons tab from the app home screen',
                 'Browse by genre or use the search bar to find a title by name',
-                'Tap to play — content loads in seconds',
+                'Tap to play content loads in seconds',
                 'Pause, rewind, and fast-forward just like any regular streaming app',
             ],
             'devices' => 'It works the same way on Firestick, Smart TV, Android TV box, Android and iOS phones, MAG devices, and Windows or Mac via any supported IPTV player.',
@@ -136,11 +151,11 @@ return [
             'plans' => 'View Subscription Plans',
         ],
         'faq' => [
-            'heading' => 'Movies and Series — Common Questions',
+            'heading' => 'Movies and Series Common Questions',
             'items' => [
                 [
                     'question' => "What's the difference between the Movies, Series, and Cartoons tabs?",
-                    'answer' => 'Movies cover standalone films. Series cover multi-episode shows, both ongoing and completed. Cartoons are a separate section focused on animated content for kids and families. The All tab shows everything together. You can also use the search bar to skip the categories entirely.',
+                    'answer' => 'Movie covers standalone films. The series covers multi-episode shows, both ongoing and completed. Cartoons are a separate section focused on animated content for kids and families. The All tab shows everything together. You can also use the search bar to skip the categories entirely.',
                 ],
                 [
                     'question' => 'Are new releases available?',
@@ -148,7 +163,7 @@ return [
                 ],
                 [
                     'question' => 'Can I download content to watch offline?',
-                    'answer' => 'No, Opplex is a streaming service, not a download service. You need an active internet connection to watch. We recommend at least 15 Mbps for HD and 25 Mbps for 4K.',
+                    'answer' => 'N, Opplex is a streaming service, not a download service. You need an active internet connection to watch. We recommend at least 15 Mbps for HD and 25 Mbps for 4K.',
                 ],
                 [
                     'question' => 'Why does a film sometimes stop or buffer midway?',
@@ -171,7 +186,7 @@ return [
     ],
 
     'subscription' => [
-        'page_title' => 'IPTV Subscription Service',
+        'page_title' => 'IPTV Subscription Services',
         'hero' => [
             'eyebrow' => 'Live TV, Sports, Movies, Series, 4K, and Catch-Up',
             'heading' => 'IPTV Subscription Service: Everything You Want to Watch, Starting at $2.99',
@@ -183,17 +198,17 @@ return [
             'secondary_cta' => 'Start Free Trial on WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD and 4K Streaming', 'text' => 'Sharp picture on every device. If the channel supports 4K, you get 4K. No compression, no quality cap.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels', 'text' => 'Sports, news, entertainment, and international content. Every channel that matters is in there.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Movies and Series on Demand', 'text' => '50,000+ titles available from the moment you subscribe. No extra VOD package needed.'],
-                ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup on Any Device', 'text' => 'We help you get going on Firestick, Smart TV, Android, iOS, or MAG. Most setups take under five minutes.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels:', 'text' => 'Sports, news, entertainment, and international content. Every channel that matters is in there.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Movies and Series on Demand:', 'text' => '50,000+ titles available from the moment you subscribe. No extra VOD package needed.'],
+                ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup on Any Device:', 'text' => 'We help you get going on Firestick, Smart TV, Android, iOS, or MAG. Most setups take under five minutes.'],
             ],
         ],
         'steps' => [
             'heading' => 'Three Steps from Signup to Streaming',
             'items' => [
-                ['title' => 'Pick Your Plan', 'text' => 'Choose how long you want to subscribe: monthly, half-yearly, or yearly. All plans cover the same channels and content. The only difference is the duration and the per-month cost.'],
-                ['title' => 'Get Your Login Details', 'text' => 'After checkout, we send your username, password, and server URL to you by email and WhatsApp. This usually lands within minutes of payment going through.'],
-                ['title' => 'Open Your App and Start Watching', 'text' => 'Download your IPTV player, tap "Login with Xtream Codes", and enter the three details we sent you. Your channels load automatically. Done.'],
+                ['title' => 'Pick Your Plan.', 'text' => 'Choose how long you want to subscribe:e, monthly, half-yearly, or yearly. All plans cover the same channels and content. The only difference is the duration and the per-month cost.'],
+                ['title' => 'Get Your Login Details.', 'text' => 'After checkout, we send your username, password, and server URL to you by email and WhatsApp. This usually lands within minutes of payment going through.'],
+                ['title' => 'Open Your App and Start Watching.', 'text' => 'Download your IPTV player, tap "Login with Xtream Codes", and enter the three details we sent you. Your channels load automatically. Done.'],
             ],
             'support' => "Need help at any point? Message us on WhatsApp, and we'll walk you through the whole thing.",
             'cta' => 'See Compatible Apps',
@@ -202,9 +217,9 @@ return [
             'heading' => 'Why People Switch to Opplex and Stay',
             'items' => [
                 ['title' => 'No Buffer. Genuinely.', 'text' => 'We know every IPTV provider says this. The difference with Opplex is our server infrastructure, built specifically to handle peak-hour traffic across multiple regions without slowing down. Our uptime has sat at 99.9% for three consecutive years.'],
-                ['title' => 'Prices That Stay Honest', 'text' => "$2.99 a month is $2.99 a month. We don't offer a low intro rate and then raise it at renewal. You won't find a hidden activation fee at checkout either. What you see in the pricing table is what you pay."],
-                ['title' => 'Works Wherever You Are', 'text' => "Opplex runs in 40+ countries. Whether you're at home in the UK, travelling through Europe, or based in the USA, your subscription works the same. No geo-locks, no restrictions based on where you log in from."],
-                ['title' => 'Team You Can Actually Reach', 'text' => "WhatsApp support, seven days a week. When you message us, a real person reads it and responds, usually within minutes. We don't outsource support, and we don't use automated bots to stall you."],
+                ['title' => 'Prices That Stay Honest:', 'text' => "$2.99 a month is $2.99 a month. We don't offer a low intro rate and then raise it at renewal. You won't find a hidden activation fee at checkout either. What you see in the pricing table is what you pay."],
+                ['title' => 'Works Wherever You Are.', 'text' => "Opplex runs in 40+ countries. Whether you're at home in the UK, travelling through Europe, or based in the USA, your subscription works the same. No geo-locks, no restrictions based on where you log in from."],
+                ['title' => 'Team You Can Actually Reach:', 'text' => "WhatsApp support, seven days a week. When you message us, a real person reads it and responds, usually within minutes. We don't outsource support, and we don't use automated bots to stall you."],
             ],
         ],
         'included' => [
@@ -217,7 +232,7 @@ return [
                 'HD and 4K quality on supported content',
                 "Built-in EPG so you can see what's on and what's coming up",
                 'Catch-up TV on selected channels',
-                'Works on Firestick, Smart TV, Android, iOS, MAG, Windows, and Mac',
+                'Works on Firestick, Smart TV, Android, iOS, MAG, Windows,s and Mac',
                 'Support for multiple IPTV player apps',
                 '24/7 WhatsApp and email support',
                 'Free trial available before you commit',
@@ -240,12 +255,12 @@ return [
         ],
         'comparison' => [
             'heading' => "IPTV vs Cable | What's Actually Different",
-            'intro' => 'A lot of people switch from cable to IPTV and wonder why they waited so long. Here’s what changes:',
+            'intro' => "A lot of people switch from cable to IPTV and wonder why they waited so long. Here's what changes:",
             'items' => [
-                ['title' => 'Price', 'text' => 'A typical cable package runs $60 to $120 a month in the USA and the UK. Opplex starts at $2.99. You get more channels for a fraction of the cost.'],
+                ['title' => 'Price:', 'text' => 'A typical cable package runs $60 to $120 a month in the USA and the UK. Opplex starts at $2.99. You get more channels for a fraction of the cost.'],
                 ['title' => 'Content', 'text' => "Cable gives you a fixed bundle, often with 70% of channels you'll never watch. Opplex includes 12,000+ channels plus a full on-demand library, so you watch what you want, when you want it."],
-                ['title' => 'Setup', 'text' => "No engineer visit, no installation window, no hardware to rent. Sign up, download an app, enter your details. That's it."],
-                ['title' => 'Flexibility', 'text' => "Cable usually locks you into a 12- or 24-month contract. Opplex plans are monthly, half-yearly, or yearly, and none of them auto-renew. You're in control."],
+                ['title' => 'Setup:', 'text' => "No engineer visit, no installation window, no hardware to rent. Sign up, download an app, enter your details. That's it."],
+                ['title' => 'Flexibility', 'text' => "Cable usually locks you into a12-2 or 24-month contract. Opplex plans are monthly, half-yearly, or yearly, and none of them auto-renew. You're in control."],
             ],
         ],
         'faq' => [
@@ -282,25 +297,25 @@ return [
         'product_descriptions' => [
             'affiliate' => [
                 'B08CRV62C4' => ['label' => 'Android TV Box (4GB RAM, 32GB ROM, 6K, Wi-Fi 5.0, Bluetooth 5.0)', 'text' => 'A capable all-rounder that runs every major IPTV app straight out of the box. Quad-core processor keeps playback smooth, and the dual-band Wi-Fi handles 4K without a wired connection. A solid pick if you want a dedicated device that lives behind the TV.'],
-                'B0BP9SNVH9' => ['label' => 'Amazon Fire TV Stick 4K Max (Wi-Fi 6E)', 'text' => "The most popular device among Opplex users. Plug it into any HDMI port, download the IPTV app of your choice, and you're watching in minutes. Wi-Fi 6E support means lower latency even on a busy home network. A good upgrade if you're still on an older Firestick."],
-                'B0DXXYS4BJ' => ['label' => 'Roku Streaming Stick HD 2025', 'text' => "Clean, simple streaming with a voice remote. Good option if you prefer a familiar TV-style interface. Note: Roku has a closed app store, so check app compatibility before purchasing if you're planning to use a third-party IPTV player."],
-                'B00SFSU53G' => ['label' => 'Mounting Dream TV Wall Mount (32 to 65 inches, MD2380)', 'text' => "A full-motion mount with swivel and tilt; it holds up to 99 lbs and covers most modern TV sizes. VESA 400x400 compatible. Useful if you're tidying up a room or mounting in a spot where the viewing angle isn't straight on."],
+                'B0BP9SNVH9' => ['label' => 'Amazon Fire TV Stick 4K Max (Wi-Fi 6E)', 'text' => "is the most popular device among Opplex users. Plug it into any HDMI port, download the IPTV app of your choice, and you're watching in minutes. Wi-Fi 6E support means lower latency even on a busy home network. A good upgrade if you're still on an older Firestick."],
+                'B0DXXYS4BJ' => ['label' => 'Roku Streaming Stick HD 2025:', 'text' => "Clean, simple streaming with a voice remote. Good option if you prefer a familiar TV-style interface. Note: Roku has a closed app store, so check app compatibility before purchasing if you're planning to use a third-party IPTV player."],
+                'B00SFSU53G' => ['label' => 'Mounting Dream TV Wall Mount (32 to 65 inches, MD2380)', 'text' => "is a full-motion mount with swivel and tilt; it holds up to 99 lbs and covers most modern TV sizes. VESA 400x400 compatible. Useful if you're tidying up a room or mounting in a spot where the viewing angle isn't straight on."],
             ],
             'digital' => [
-                'netflix' => ['price_label' => 'From $2.29', 'text' => 'Standard Netflix access at a rate well below retail. Same content as a regular subscription. Complete your order via WhatsApp after clicking Buy Now.'],
-                'prime-video' => ['price_label' => 'From $1.54', 'text' => 'Prime Video at a discounted rate. Access the full Prime Video library, same as a standard subscription, at a better price. Order through WhatsApp.'],
-                'hbo-max-premium' => ['price_label' => 'From $1.89', 'text' => 'Full HBO Max Premium access, including all Max Originals and licensed content. Message us on WhatsApp after purchase to get your details.'],
-                'nordvpn' => ['price_label' => 'From $1.89', 'text' => "Useful if you want extra privacy while streaming or need to access content that's region-locked in your country. NordVPN is one of the more reliable VPN options available. Order via WhatsApp."],
+                'netflix' => ['price_label' => '(from $2.29):', 'text' => 'Standard Netflix access at a rate well below retail. Same content as a regular subscription. Complete your order via WhatsApp after clicking Buy Now.'],
+                'prime-video' => ['price_label' => '(from $1.54):', 'text' => 'Prime Video at a discounted rate. Access the full Prime Video library, same as a standard subscription, at a better price. Order through WhatsApp.'],
+                'hbo-max-premium' => ['price_label' => '(from $1.89):', 'text' => 'Full HBO Max Premium access, including all Max Originals and licensed content. Message us on WhatsApp after purchase to get your details.'],
+                'nordvpn' => ['price_label' => '(from $1.89)', 'text' => "Useful if you want extra privacy while streaming or need to access content that's region-locked in your country. NordVPN is one of the more reliable VPN options available. Order via WhatsApp."],
             ],
         ],
         'guide' => [
             'heading' => "Not Sure Which Device to Get? Here's a Quick Guide",
             'items' => [
-                ['title' => 'You have a regular TV with an HDMI port', 'text' => "Get the Firestick 4K Max. It plugs straight in, runs the Opplex app or IPTV Smarters Pro, and turns any TV into a smart streaming screen. It's what most of our users start with."],
-                ['title' => 'You want a full Android box with more storage and control', 'text' => 'The Android TV Box is the better choice. More RAM, more storage, and you can install any app directly without going through a closed store.'],
-                ['title' => 'You already have a Smart TV (Samsung, LG, Sony)', 'text' => "You probably don't need a new device. Download an IPTV player app directly from your TV's app store, or sideload it if your TV supports it. Check the Applications page for which players work best."],
-                ['title' => "You're on a PC or Mac", 'text' => 'Download IPTV Smarters Pro for Windows or IBO Player for Mac. Both are free and work with your Opplex subscription login. No extra hardware needed.'],
-                ['title' => 'You want to tidy up your setup', 'text' => 'The Mounting Dream wall mount gives you a clean installation and lets you adjust the viewing angle without tools after the initial install. Works on most TVs 32 to 65 inches.'],
+                ['title' => 'You have a regular TV with an HDMI port.', 'text' => "Get the Firestick 4K Max. It plugs straight in, runs the Opplex app or IPTV Smarters Pro, and turns any TV into a smart streaming screen. It's what most of our users start with."],
+                ['title' => 'You want a full Android box with more storage and control.', 'text' => 'The Android TV Box is the better choice. More RAM, more storage, and you can install any app directly without going through a closed store.'],
+                ['title' => 'You already have a Smart TV (Samsung, LG, Sony).', 'text' => "You probably don't need a new device. Download an IPTV player app directly from your TV's app store, or sideload it if your TV supports it. Check the Applications page for which players work best."],
+                ['title' => "You're on a PC or Mac.", 'text' => 'Download IPTV Smarters Pro for Windows or IBO Player for Mac. Both are free and work with your Opplex subscription login. No extra hardware needed.'],
+                ['title' => 'You want to tidy up your setup.p', 'text' => 'The Mounting Dream wall mount gives you a clean installation and lets you adjust the viewing angle without tools after the initial install. Works on most TVs 32 to 65 inches.'],
             ],
             'support' => "Still not sure? Message us on WhatsApp with your TV model and what you're trying to do; we'll tell you exactly what to get.",
         ],
@@ -310,15 +325,15 @@ return [
             'steps' => [
                 'Tap the Buy Now button on the product card',
                 'It opens a WhatsApp chat with us',
-                "Tell us which product you want, and we'll complete your order and send your access details.",
+                "Tell us which product you want, and we'll complete your order and send your access details.s",
             ],
             'timing' => "That's it. Most digital product orders are handled within minutes during active hours. If you order outside of those times, we'll get to you as soon as we're back online.",
             'delivery' => 'All digital products are delivered to you directly, no physical delivery, no wait.',
         ],
         'faq' => [
-            'heading' => 'Shop Questions — Quick Answers',
+            'heading' => 'Shop Questions Quick Answers',
             'items' => [
-                ['question' => 'Do the affiliate devices come with Opplex pre-installed?', 'answer' => 'No, as they ship directly from Amazon as standard consumer devices. Setting up Opplex on them takes a few minutes, and our team walks you through it on WhatsApp if you need help.'],
+                ['question' => 'Do the affiliate devices come with Opplex pre-installed?', 'answer' => 'No, as they ship directly from Amazon as standard consumer devices. Setting up Opplex on them takes a few minutes, es and our team walks you through it on WhatsApp if you need help.'],
                 ['question' => 'Do I need to buy a device to use Opplex?', 'answer' => 'If you already have a Firestick, Smart TV, Android phone, tablet, or PC, you can start an Opplex subscription and use it on what you already own. The devices in the shop are there if you want a better or dedicated setup.'],
                 ['question' => 'How do I receive a digital product after I buy it?', 'answer' => "We send your access details by WhatsApp once your order is confirmed. Most digital products are delivered within minutes. If anything is delayed, message us, and we'll check immediately."],
                 ['question' => 'Are the digital subscription prices the same as retail?', 'answer' => "No, they're lower. That's the whole point. The prices shown are what you pay through Opplex, not the standard retail rate you'd pay direct."],

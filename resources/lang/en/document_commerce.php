@@ -38,6 +38,7 @@ return [
             'plans' => [
                 'monthly' => [
                     'title' => 'Monthly',
+                    'price' => '$2.99/month',
                     'features' => [
                         'Stream 12,000+ channels in HD and 4K, no buffering',
                         'All movies, series, and live sports',
@@ -47,6 +48,7 @@ return [
                 ],
                 'three_months' => [
                     'title' => '3 Months',
+                    'price' => '$7.99',
                     'features' => [
                         'Save 11% vs monthly billing',
                         'Same full channel and VOD access',
@@ -55,6 +57,7 @@ return [
                 ],
                 'half_yearly' => [
                     'title' => 'Half-Yearly',
+                    'price' => '$14.99',
                     'features' => [
                         'Our most popular IPTV subscription plan',
                         'Six months of stable, uninterrupted streaming',
@@ -63,8 +66,9 @@ return [
                 ],
                 'yearly' => [
                     'title' => 'Yearly',
+                    'price' => '$23.99',
                     'features' => [
-                        'Best IPTV subscription deal on the site — under $2/month',
+                        'Best IPTV subscription deal on the site  under $2/month',
                         'Full year with no price changes',
                         'Ideal for households that stream daily',
                     ],
@@ -75,15 +79,15 @@ return [
             'heading' => 'How to Buy an IPTV Subscription: 3 Easy Steps',
             'steps' => [
                 [
-                    'title' => 'Pick Your Plan',
+                    'title' => 'Step 1: Pick Your Plan',
                     'description' => 'Choose monthly, half-yearly, or yearly. All plans include the same channels and content, just pick how long you want to subscribe.',
                 ],
                 [
-                    'title' => 'Complete Checkout',
+                    'title' => 'Step 2: Complete Checkout',
                     'description' => 'Pay securely. Your login credentials are sent to you by email and WhatsApp within minutes.',
                 ],
                 [
-                    'title' => 'Start Watching',
+                    'title' => 'Step 3: Start Watching',
                     'description' => "Open your IPTV player, enter your details, and your channels load automatically. If you need help, our team is on WhatsApp.",
                 ],
             ],
@@ -106,7 +110,7 @@ return [
                     'description' => 'Viewers in the UK, France, Italy, and the United States rely on Opplex every day. Our infrastructure is built to handle global traffic without slowing down.',
                 ],
                 [
-                    'title' => 'Setup Help on Every Device',
+                    'title' => 'Set up Help on Every Device',
                     'description' => "We support Fire TV Stick, MAG box, Android TV, Smart TV, iOS, and IPTV players. Just tell us your device on WhatsApp, and we'll walk you through the installation step by step.",
                 ],
             ],
@@ -119,7 +123,7 @@ return [
                 '50,000+ movies and 5,000+ TV series on demand',
                 '4K and HD stream quality on supported channels',
                 'Electronic Programme Guide (EPG) included',
-                'Multi-device support for up to 2 screens simultaneously',
+                'Multi-device support is used on up to 2 screens simultaneously',
                 'Catch-up TV for select channels',
                 '24/7 WhatsApp and email support',
             ],
@@ -129,7 +133,7 @@ return [
             'verified' => 'Verified IPTV Customer',
         ],
         'faq' => [
-            'heading' => 'IPTV Subscription — Frequently Asked Questions',
+            'heading' => 'IPTV Subscription  Frequently Asked Questions',
             'items' => [
                 [
                     'question' => "What's included in my Opplex IPTV subscription?",
@@ -158,7 +162,7 @@ return [
             ],
         ],
         'trial' => [
-            'heading' => 'Try Our IPTV Free Trial — 12,000+ Channels, Full 4K Quality',
+            'heading' => 'Try Our IPTV Free Trial  12,000+ Channels, Full 4K Quality',
             'text' => 'Not ready to commit yet? Test Opplex with a free trial first. Stream live channels, check picture quality, and see how stable it is all on your own device, before you pay.',
             'items' => [
                 '4K streaming',
@@ -173,22 +177,22 @@ return [
         'page_title' => 'Pricing',
         'hero' => [
             'eyebrow' => 'Every plan includes the full package. No hidden fees.',
-            'heading' => 'IPTV Subscription Pricing — Simple Plans, No Surprises',
+            'heading' => 'IPTV Subscription Pricing  Simple Plans, No Surprises',
             'paragraphs' => [
-                'Pick a plan length, pay once, and start watching. Every Opplex plan gives you the same 12,000+ live channels, 50,000+ movies, and 4K quality. Longer plans cost less per month; that’s the only difference.',
+                "Pick a plan length, pay once, and start watching. Every Opplex plan gives you the same 12,000+ live channels, 50,000+ movies, and 4K quality. Longer plans cost less per month; that's the only difference.",
                 'Starshare is also available for viewers who want a different channel mix at a slightly higher rate. Both run through the same setup process and the same apps.',
                 'Not sure which plan suits you? Start with the monthly. You can always go yearly later.',
             ],
         ],
         'included' => [
-            'heading' => 'Every Plan Includes All of This — No Add-Ons, No Tiers',
+            'heading' => 'Every Plan Includes All of This  No Add-Ons, No Tiers',
             'intro' => "A lot of streaming services make you pay extra for sports, for 4K, for VOD. Opplex doesn't. Here's what you get from day one on any plan:",
             'items' => [
                 '12,000+ live channels: sports, news, entertainment, UK, USA, international',
                 '50,000+ movies on demand',
                 '5,000+ TV series, current and classic',
                 'HD and 4K quality on supported channels and devices',
-                'Built-in EPG so you know what’s on and when',
+                "Built-in EPG so you know what's on and when",
                 'Catch-up TV on selected channels',
                 'Works on Firestick, Smart TV, Android, iOS, MAG, PC, and Mac',
                 '24/7 WhatsApp and email support',
@@ -200,22 +204,22 @@ return [
             'items' => [
                 [
                     'title' => 'Go Monthly',
-                    'description' => "If you want to test Opplex properly before locking in. Monthly is also good if you're not sure how much you'll use it. At $2.99, it's a low-risk way to start.",
+                    'description' => "if you want to test Opplex properly before locking in. Monthly is also good if you're not sure how much you'll use it. At $2.99, it's a low-risk way to start.",
                 ],
                 [
                     'title' => 'Go 3 Months',
-                    'description' => "If you've tried the trial and liked it, but aren't ready to go all-in. It saves you a bit vs monthly and gives you three uninterrupted months to settle into the service.",
+                    'description' => "if: You've tried the trial and liked it, but aren't ready to go all-in. It saves you a bit vs monthly and gives you three uninterrupted months to settle into the service.",
                 ],
                 [
                     'title' => 'Go Half-Yearly',
-                    'description' => "If you already know you want Opplex for a while. Six months at $14.99 works out to $2.50 a month; it's our most popular plan for a reason.",
+                    'description' => "if: You already know you want Opplex for a while. Six months at $14.99 works out to $2.50 a month; it's our most popular plan for a reason.",
                 ],
                 [
                     'title' => 'Go Yearly',
-                    'description' => 'If you watch TV regularly and want the best rate. $23.99 for a full year is under $2 a month. No renewal pressure, no price creep, just a full year of access from the moment you sign up.',
+                    'description' => 'if you watch TV regularly and want the best rate. $23.99 for a full year is under $2 a month. No renewal pressure, no price creep, just a full year of access from the moment you sign up.',
                 ],
             ],
-            'trial_heading' => 'Unsure? Try before you buy',
+            'trial_heading' => 'Unsure? Try before you buy:',
             'trial_text' => "Message us on WhatsApp and ask for a trial. You'll get access to test channel quality and stability on your own device before spending anything.",
         ],
         'payment' => [
@@ -227,7 +231,7 @@ return [
             ],
         ],
         'faq' => [
-            'heading' => 'Pricing Questions — Straight Answers',
+            'heading' => 'Pricing Questions  Straight Answers',
             'items' => [
                 [
                     'question' => 'How much does Opplex cost?',
@@ -239,7 +243,7 @@ return [
                 ],
                 [
                     'question' => 'What payment methods work?',
-                    'answer' => "Major credit and debit cards and crypto via Cryptomus. If you want to pay another way, message us on WhatsApp, and we'll see what we can arrange.",
+                    'answer' => "Major credit and debit cards and crypto via Cryptomus. If you want to pay another way, message us on WhatsApp , and we'll see what we can arrange.",
                 ],
                 [
                     'question' => 'Are there any extra fees at checkout?',
@@ -255,7 +259,7 @@ return [
                 ],
                 [
                     'question' => "Is Opplex cheaper than cable because it's lower quality?",
-                    'answer' => 'No. IPTV runs over your existing internet connection, so there’s no physical infrastructure to maintain and no hardware to rent out. Those savings go into the price you pay, not the quality you get.',
+                    'answer' => "No. IPTV runs over your existing internet connection, so there's no physical infrastructure to maintain and no hardware to rent out. Those savings go into the price you pay, not the quality you get.",
                 ],
             ],
         ],
@@ -265,19 +269,19 @@ return [
         'page_title' => 'IPTV Reseller',
         'hero' => [
             'eyebrow' => 'Start selling IPTV. No monthly fee. Credits never expire.',
-            'heading' => 'IPTV Reseller Panel — Build Your Own IPTV Business with Opplex',
+            'heading' => 'IPTV Reseller Panel  Build Your Own IPTV Business with Opplex',
             'paragraphs' => [
                 'Whether you want to sell to five people or five hundred, the Opplex reseller panel gives you everything you need. Buy credits in bulk, activate subscriptions for your customers straight from your dashboard, and set your own prices. No tech background needed. No contracts.',
-                'Both Opplex and Starshare are available from the same panel. Pick one; offer both, that’s your call.',
+                "Both Opplex and Starshare are available from the same panel. Pick one; offer both, that's your call.",
             ],
             'primary_cta' => 'View Reseller Packages',
             'secondary_cta' => 'Ask Us on WhatsApp',
             'whatsapp_message' => 'Hello, I would like to know more about the Opplex IPTV reseller panel and credit packages.',
         ],
         'credits' => [
-            'heading' => 'How the Credit System Works — Simple as It Gets',
+            'heading' => 'How the Credit System Works  Simple as It Gets',
             'paragraphs' => [
-                'You buy a block of credits. Each credit activates one month of IPTV for one of your customers. That’s it.',
+                "You buy a block of credits. Each credit activates one month of IPTV for one of your customers. That's it.",
                 "When a customer wants three months, you spend three credits. When they want a year, you spend ten. The credits sit in your panel until you need them; there's no expiry date, no monthly minimum, and no pressure to spend by a deadline.",
             ],
             'label' => 'Credit conversion at a glance:',
@@ -292,19 +296,19 @@ return [
             'heading' => 'What Comes with Your Reseller Account',
             'items' => [
                 [
-                    'title' => 'Your Own Panel',
-                    'description' => 'A dedicated dashboard where you manage every customer line. Activate new subscriptions, check expiry dates, and renew existing ones, all in one place without needing to contact us for every action.',
+                    'title' => 'Your Own Panel:',
+                    'description' => 'A dedicated dashboard where you manage every customer line. Activate new subscriptions, check expiry dates, and renew existing ones,  all in one place without needing to contact us for every action.',
                 ],
                 [
-                    'title' => 'Credits That Never Expire',
+                    'title' => 'Credits That Never Expire.',
                     'description' => "Buy in bulk when you want. Spend them when a customer is ready. There's no deadline hanging over your balance and no wasted credits if business slows down for a month.",
                 ],
                 [
-                    'title' => 'Unlimited Free Trials',
+                    'title' => 'Unlimited Free Trials:',
                     'description' => 'You can give as many trials as you want. This makes closing new customers much easier; they see the channel quality on their own device before paying you a penny.',
                 ],
                 [
-                    'title' => 'Set Your Own Prices',
+                    'title' => 'Set Your Own Prices.',
                     'description' => 'We give you a wholesale credit rate. What you charge your customers is completely up to you. The gap between our rate and yours is your margin; we never interfere with that.',
                 ],
                 [
@@ -312,7 +316,7 @@ return [
                     'description' => 'Manage Opplex and Starshare subscriptions from the same place. If a customer wants to compare both or switch later, you can handle it without jumping between platforms.',
                 ],
                 [
-                    'title' => 'Priority WhatsApp Support',
+                    'title' => 'Priority WhatsApp Support:',
                     'description' => "Resellers get faster responses. If one of your customers has a setup issue, message us, and we'll help you resolve it quickly so you can keep your customer happy.",
                 ],
             ],
@@ -322,7 +326,7 @@ return [
             'intro' => "You don't need to be a tech professional or run a formal business to resell IPTV. Most of our resellers started small and scaled when they were ready. This works well for:",
             'items' => [
                 [
-                    'title' => 'Friends and Family Networks',
+                    'title' => 'Friends and Family Network:s',
                     'description' => "You're already recommending Opplex to people around you. The reseller panel means you can earn from it instead of just sending people to the website.",
                 ],
                 [
@@ -334,13 +338,13 @@ return [
                     'description' => 'If you already help people with their home setup, adding IPTV subscriptions is a natural extension. Recurring customers mean recurring credits and recurring income.',
                 ],
                 [
-                    'title' => 'People Who Want Side Income',
+                    'title' => 'People Who Want Side Income:',
                     'description' => "No office, no inventory, no shipping. You manage everything from your phone through the panel. It's as low-overhead as it gets.",
                 ],
             ],
         ],
         'faq' => [
-            'heading' => 'Reseller Questions — Answered',
+            'heading' => 'Reseller Questions  Answered',
             'items' => [
                 [
                     'question' => 'How do I get started?',
@@ -348,7 +352,7 @@ return [
                 ],
                 [
                     'question' => "What's the difference between Opplex and Starshare reseller credits?",
-                    'answer' => 'Opplex credits are used to activate Opplex subscriptions. Starshare credits are for Starshare, which has a different channel lineup at a higher price point. Both work through the same panel; you can offer one or both to your customers.',
+                    'answer' => 'Opplex credits are used to activate Opplex subscriptions. Starshare credits are for Starshare, which has a different channel lineup at a higher price point. Both work through the same pane;  you can offer one or both to your customers.',
                 ],
                 [
                     'question' => 'Can I give trials without spending credits?',

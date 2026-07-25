@@ -1,6 +1,7 @@
 ﻿@extends('layouts.default')
 @php
     $isDocumentEnglish = true;
+    $isExactEnglishContent = app()->getLocale() === 'en';
     $documentPage = __('document_product.shop');
 @endphp
 @section('title', $isDocumentEnglish ? $documentPage['hero']['heading'] : 'Shop')
@@ -34,6 +35,8 @@
                 : $productItems
                     ->filter(static fn ($product) => strtolower((string) data_get($product, 'type', 'affiliate')) === 'digital')
                     ->values();
+            $shouldAddDocumentFallbacks = $isExactEnglishContent
+                && (!method_exists($products, 'currentPage') || $products->currentPage() === 1);
 
             $resolveAffiliateKey = static function ($product): ?string {
                 $asin = strtoupper(trim((string) data_get($product, 'asin', '')));
@@ -55,6 +58,70 @@
                 $slug = trim((string) data_get($product, 'slug', ''));
                 return $slug !== '' ? $slug : \Illuminate\Support\Str::slug((string) data_get($product, 'name', ''));
             };
+
+            $affiliateFallbacks = collect($documentPage['product_descriptions']['affiliate'])
+                ->map(static function (array $copy, string $asin): array {
+                    return [
+                        'id' => 'document-' . $asin,
+                        'type' => 'affiliate',
+                        'identifier' => $asin,
+                        'asin' => $asin,
+                        'name' => $copy['label'],
+                        'image' => asset('images/shop/' . $asin . '.webp'),
+                        'url' => 'https://www.amazon.com/dp/' . $asin,
+                        'target' => '_blank',
+                        'rel' => 'nofollow sponsored noopener',
+                    ];
+                });
+            $existingAffiliateKeys = $deviceProducts
+                ->map($resolveAffiliateKey)
+                ->filter()
+                ->values();
+            if ($shouldAddDocumentFallbacks) {
+                $deviceProducts = $deviceProducts
+                    ->concat($affiliateFallbacks->reject(
+                        static fn (array $product): bool => $existingAffiliateKeys->contains($product['asin'])
+                    ))
+                    ->values();
+            }
+
+            $digitalNames = [
+                'netflix' => 'Netflix',
+                'prime-video' => 'Prime Video',
+                'hbo-max-premium' => 'HBO Max Premium',
+                'nordvpn' => 'NordVPN',
+            ];
+            $digitalFallbacks = collect($documentPage['product_descriptions']['digital'])
+                ->map(static function (array $copy, string $slug) use ($digitalNames): array {
+                    $name = $digitalNames[$slug] ?? \Illuminate\Support\Str::headline($slug);
+                    $url = 'https://wa.me/16393903194?text=' . rawurlencode(
+                        'Hello, I would like to buy ' . $name . '.'
+                    );
+
+                    return [
+                        'id' => 'document-' . $slug,
+                        'type' => 'digital',
+                        'identifier' => $slug,
+                        'slug' => $slug,
+                        'name' => $name,
+                        'image' => asset('images/digital-products/' . $slug . '.webp'),
+                        'url' => $url,
+                        'buy_now_url' => $url,
+                        'target' => '_blank',
+                        'rel' => 'noopener noreferrer',
+                    ];
+                });
+            $existingDigitalKeys = $digitalProducts
+                ->map($resolveDigitalKey)
+                ->filter()
+                ->values();
+            if ($shouldAddDocumentFallbacks) {
+                $digitalProducts = $digitalProducts
+                    ->concat($digitalFallbacks->reject(
+                        static fn (array $product): bool => $existingDigitalKeys->contains($product['slug'])
+                    ))
+                    ->values();
+            }
         @endphp
 
         <x-page-title
@@ -119,6 +186,11 @@
                                     $productCopy = $copyKey
                                         ? data_get($documentPage, "product_descriptions.{$productType}.{$copyKey}", [])
                                         : [];
+                                    $displayName = $isExactEnglishContent
+                                        ? ($productType === 'digital'
+                                            ? ($digitalNames[$copyKey] ?? $name)
+                                            : ((string) data_get($productCopy, 'label', $name)))
+                                        : $name;
                                 @endphp
                                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                                     <article class="unified-card document-product-shop-card h-100">
@@ -126,7 +198,7 @@
                                             @if ($target !== '') target="{{ $target }}" @endif
                                             @if ($rel !== '') rel="{{ $rel }}" @endif>
                                             @if (data_get($product, 'image'))
-                                                <img src="{{ data_get($product, 'image') }}" alt="{{ $name }}" loading="lazy" decoding="async">
+                                                <img src="{{ data_get($product, 'image') }}" alt="{{ $displayName }}" loading="lazy" decoding="async">
                                             @endif
                                             <span class="document-product-shop-card__badge">{{ $productType === 'digital' ? __('document_ui.shop.digital_badge') : __('document_ui.shop.amazon_badge') }}</span>
                                         </a>
@@ -134,10 +206,10 @@
                                             <h3 class="unified-card__title">
                                                 <a href="{{ $productUrl }}"
                                                     @if ($target !== '') target="{{ $target }}" @endif
-                                                    @if ($rel !== '') rel="{{ $rel }}" @endif>{{ $name }}</a>
+                                                    @if ($rel !== '') rel="{{ $rel }}" @endif>{{ $displayName }}</a>
                                             </h3>
 
-                                            @if (!empty($productCopy['label']))
+                                            @if (!$isExactEnglishContent && !empty($productCopy['label']))
                                                 <p class="document-product-shop-card__label">{{ $productCopy['label'] }}</p>
                                             @endif
 
@@ -163,10 +235,10 @@
                                                     </a>
                                                     <button type="button"
                                                         class="unified-share"
-                                                        aria-label="{{ __('document_ui.shared.share', ['name' => $name]) }}"
+                                                        aria-label="{{ __('document_ui.shared.share', ['name' => $displayName]) }}"
                                                         data-share-url="{{ data_get($product, 'share_url', $productUrl) }}"
-                                                        data-share-title="{{ $name }}"
-                                                        data-share-text="{{ data_get($product, 'share_text', __('document_ui.shop.share_message', ['name' => $name])) }}">
+                                                        data-share-title="{{ $displayName }}"
+                                                        data-share-text="{{ data_get($product, 'share_text', __('document_ui.shop.share_message', ['name' => $displayName])) }}">
                                                         <i class="fa fa-share-alt" aria-hidden="true"></i>
                                                     </button>
                                                 </div>

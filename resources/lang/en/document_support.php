@@ -15,7 +15,7 @@ return [
                     ],
                     [
                         'question' => 'What does Opplex IPTV look like on a device?',
-                        'answer' => 'It looks just like a regular streaming app. You\'ll see a home screen with sections for live channels, movies, series, and sports. On a Smart TV, it fills the full screen. On a phone, it\'s laid out like a mobile app. The screenshots on this page show what the interface looks like across different devices.',
+                        'answer' => 'It looks just like a regular streaming app. You\'ll see a home screen with sections for live channels, movies, series, and sports. On a Smart TV, it fills the full screen. On a phone,e it\'s laid out like a mobile app. The screenshots on this page show what the interface looks like across different devices.',
                         'images' => [
                             ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'On Samsung TV'],
                             ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'On Mobile Phone'],
@@ -53,7 +53,7 @@ return [
                     ],
                     [
                         'question' => 'How much does a subscription cost?',
-                        'answer' => 'Plans start at $2.99 for one month. You can also choose 3 months ($7.99), 6 months ($14.99), or a full year ($23.99). Every plan includes the same channels and content; the price just reflects how long you subscribe.',
+                        'answer' => 'Plans start at $2.99 for one month. You can also choose 3 months ($7.99), 6 months ($14.99), or a full year ($23.99). Every plan includes the same channels and content the price just reflects how long you subscribe.',
                     ],
                     [
                         'question' => 'Can I get a discount?',
@@ -70,7 +70,7 @@ return [
                 'items' => [
                     [
                         'question' => 'How do I log in to Opplex IPTV?',
-                        'answer' => 'After you subscribe, we send you a username, password, and server URL by email and WhatsApp. Open your IPTV app, choose “Login with Xtream Codes”, enter those three details, and your channels load automatically. See the login guide image on this page for a visual walkthrough.',
+                        'answer' => 'After you subscribe, we send you a username, password, and server URL by email and WhatsApp. Open your IPTV app, choose \'Login with Xtream Codes\', enter those three details, and your channels load automatically. See the login guide image on this page for a visual walkthrough.',
                         'images' => [
                             ['url' => 'images/resource/loginguide.webp', 'caption' => 'Login Guide'],
                         ],
@@ -157,7 +157,7 @@ return [
             'paragraphs' => [
                 'Opplex has been running since 2022. In that time, we\'ve expanded the channel list, rebuilt our server infrastructure twice, added two of our own IPTV apps, and kept the price at a level that actually makes sense compared to a cable bill.',
                 'We operate out of Saskatoon, Canada, a small team that\'s genuinely into streaming, not a faceless operation farming subscriptions. That matters when something goes wrong, because the person who answers your WhatsApp message is the same person who cares about whether the server stays up tonight.',
-                'Most of our subscribers found us through a recommendation, someone saying “this one actually works” to a friend or in a forum. That word of mouth is the thing we\'re most proud of.',
+                'Most of our subscribers found us through a recommendation, someone saying "this one actually works" to a friend or in a forum. That word of mouth is the thing we\'re most proud of.',
             ],
             'image_alt' => 'Opplex IPTV network and streaming infrastructure',
         ],
@@ -256,21 +256,21 @@ return [
             'heading' => 'Three Ways to Reach Us',
             'items' => [
                 [
-                    'title' => 'WhatsApp (fastest)',
+                    'title' => 'WhatsApp (fastest):',
                     'text' => 'Message us at +1 (639) 390-3194. We monitor WhatsApp throughout the day and reply in minutes. Best for trial requests, setup help, login issues, billing questions, and reseller enquiries.',
                     'cta' => 'Message on WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
                 ],
                 [
-                    'title' => 'Email',
+                    'title' => 'Email:',
                     'text' => 'Send us a message at info@opplexiptv.com. We respond within a few hours during business hours. Best for detailed questions, billing receipts, and formal enquiries.',
                     'cta' => 'Send an Email',
                     'type' => 'email',
                     'icon' => 'fa fa-envelope-o',
                 ],
                 [
-                    'title' => 'Contact Form',
+                    'title' => 'Contact Form:',
                     'text' => 'Fill in the form below, and we\'ll get back to you by email. Best for general questions when you\'d prefer not to message directly.',
                     'cta' => 'Scroll to Form',
                     'type' => 'form',
@@ -281,12 +281,12 @@ return [
         'reasons' => [
             'heading' => 'Not Sure What to Write? Here Are the Most Common Reasons People Message Us',
             'items' => [
-                ['title' => 'Starting a Free Trial', 'text' => 'Message us on WhatsApp and tell us which device you want to test on. We\'ll activate a trial and walk you through the setup.', 'icon' => 'fa fa-play-circle-o'],
-                ['title' => 'Setup and Installation Help', 'text' => 'Tell us your device type on WhatsApp. We respond with step-by-step instructions, usually with screenshots, within minutes.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Missing Login Details', 'text' => 'Check your spam folder first. If your details still haven\'t arrived, message us with the email you used at checkout, and we\'ll resend them immediately.', 'icon' => 'fa fa-key'],
-                ['title' => 'Billing and Payment Questions', 'text' => 'Questions about charges, receipts, renewal pricing, or switching plans via WhatsApp or email. We keep a record of every order and can pull up your details quickly.', 'icon' => 'fa fa-credit-card'],
-                ['title' => 'Reseller Enquiries', 'text' => 'Interested in the reseller panel? Message us on WhatsApp. We\'ll walk you through how credits work and how to set up your first customer line.', 'icon' => 'fa fa-users'],
-                ['title' => 'Channel Requests or Buffering Reports', 'text' => 'Can\'t find a specific channel? Experiencing buffering? Let us know on WhatsApp, and we\'ll investigate, fix it, or add it where possible.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Starting a Free Trial:', 'text' => 'Message us on WhatsApp and tell us which device you want to test on. We\'ll activate a trial and walk you through the setup.', 'icon' => 'fa fa-play-circle-o'],
+                ['title' => 'Setup and Installation Help:', 'text' => 'Tell us your device type on WhatsApp. We respond with step-by-step instructions, usually with screenshots, within minutes.', 'icon' => 'fa fa-wrench'],
+                ['title' => 'Missing Login Details:', 'text' => 'Check your spam folder first. If your details still haven\'t arrived, message us with the email you used at checkout, and we\'ll resend them immediately.', 'icon' => 'fa fa-key'],
+                ['title' => 'Billing and Payment Questions:', 'text' => 'Questions about charges, receipts, renewal pricing, or switching plans via WhatsApp or email. We keep a record of every order and can pull up your details quickly.', 'icon' => 'fa fa-credit-card'],
+                ['title' => 'Reseller Enquiries:', 'text' => 'Interested in the reseller panel? Message us on WhatsApp. We\'ll walk you through how credits work and how to set up your first customer line.', 'icon' => 'fa fa-users'],
+                ['title' => 'Channel Requests or Buffering Reports:', 'text' => 'Can\'t find a specific channel? Experiencing buffering? Let us know on WhatsApp, and we\'ll investigate, fix it, or add it where possible.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
@@ -303,7 +303,7 @@ return [
             'items' => [
                 ['question' => 'What\'s the fastest way to get help?', 'answer' => 'WhatsApp at +1 (639) 390-3194. It\'s monitored throughout the day, and most questions are answered within minutes.'],
                 ['question' => 'I just paid, but my login details haven\'t arrived. What do I do?', 'answer' => 'Check your spam or junk folder first. If they\'re not there after 10 minutes, message us on WhatsApp with the email address you used at checkout, and we\'ll resend them right away.'],
-                ['question' => 'Can you help me set up Opplex on my specific device?', 'answer' => 'Yes. Tell us your device: Firestick, Smart TV model, MAG, Android box, iPhone, etc., and we\'ll send you the exact steps. Most setups take under five minutes with the right instructions.'],
+                ['question' => 'Can you help me set up Opplex on my specific device?', 'answer' => 'Yes. Tell us your device: Firestick, Smart TV model, MAG, Android box, iPhone, etc and we\'ll send you the exact steps. Most setups take under five minutes with the right instructions.'],
                 ['question' => 'What information should I include when I contact you?', 'answer' => 'Your order email address, the device you\'re using, and a description of the issue. Screenshots help if something\'s going wrong on screen. The more detail upfront, the faster we can help.'],
                 ['question' => 'Do you offer support in other languages?', 'answer' => 'Our site is available in 10 languages. Our support team can assist with several of them. If English isn\'t your first language, feel free to message us in your own, and we\'ll do our best.'],
                 ['question' => 'I want to cancel. What do I do?', 'answer' => 'Subscriptions don\'t auto-renew; they simply expire when the period ends. If you have a billing concern, see our Refund and Cancellation policy in the footer, or email us at info@opplexiptv.com.'],

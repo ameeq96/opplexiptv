@@ -29,6 +29,7 @@
         ?? ($usesDocumentTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title'));
     $reviewHeading = $reviewHeading
         ?? ($usesDocumentTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading'));
+    $reviewIntro = $reviewIntro ?? null;
     $verifiedLabel = $verifiedLabel
         ?? ($usesDocumentTestimonials
             ? $documentTestimonials['verified_label']
@@ -46,6 +47,9 @@
                     {{ $reviewEyebrow }}
                 </div>
                 <h2 id="{{ $reviewSectionId }}">{{ $reviewHeading }}</h2>
+                @if (filled($reviewIntro))
+                    <p class="review-showcase__intro">{{ $reviewIntro }}</p>
+                @endif
             </header>
 
             <div class="review-showcase__grid" role="list">

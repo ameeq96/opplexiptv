@@ -665,6 +665,7 @@ return [
       'plans' => [
         'monthly' => [
           'title' => 'Monthly',
+          'price' => '$2.99 / 1 month',
           'features' => [
             '4K Live Channels With No Buffering',
             'All Movies, Series & Sports Included',
@@ -674,6 +675,7 @@ return [
         ],
         'three_months' => [
           'title' => '3 Months',
+          'price' => '$7.99 / 3 months',
           'features' => [
             'Same Full Access As Monthly Package',
             'Better Value Per Month',
@@ -682,6 +684,7 @@ return [
         ],
         'half_yearly' => [
           'title' => 'Half-Yearly',
+          'price' => '$14.99 / 6 months',
           'features' => [
             'Same Full Access as the 3 Months Package',
             'Six Months Of Uninterrupted Streaming',
@@ -690,6 +693,7 @@ return [
         ],
         'yearly' => [
           'title' => 'Yearly',
+          'price' => '$23.99 / 12 months',
           'features' => [
             'Best Value, Less Than $2 A Month',
             'Full Year Of Live TV, Sports & VOD in 4K',
@@ -775,7 +779,7 @@ return [
         ],
         [
           'author' => 'Becky Sobers',
-          'text' => 'Switched from cable to Opplex IPTV, glad that was the right call.',
+          'text' => '“Switched from cable to Opplex IPTV, glad that was the right call.”',
         ],
         [
           'author' => 'Sarah',

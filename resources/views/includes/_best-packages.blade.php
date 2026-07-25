@@ -11,10 +11,14 @@
 
         if ($isDocumentEnglishPricing && empty($displayPackages)) {
             $documentPlanPrices = [
-                'monthly' => '$2.99 / ' . $documentPricing['plans']['monthly']['title'],
-                'three_months' => '$7.99 / ' . $documentPricing['plans']['three_months']['title'],
-                'half_yearly' => '$14.99 / ' . $documentPricing['plans']['half_yearly']['title'],
-                'yearly' => '$23.99 / ' . $documentPricing['plans']['yearly']['title'],
+                'monthly' => $documentPricing['plans']['monthly']['price']
+                    ?? ('$2.99 / ' . $documentPricing['plans']['monthly']['title']),
+                'three_months' => $documentPricing['plans']['three_months']['price']
+                    ?? ('$7.99 / ' . $documentPricing['plans']['three_months']['title']),
+                'half_yearly' => $documentPricing['plans']['half_yearly']['price']
+                    ?? ('$14.99 / ' . $documentPricing['plans']['half_yearly']['title']),
+                'yearly' => $documentPricing['plans']['yearly']['price']
+                    ?? ('$23.99 / ' . $documentPricing['plans']['yearly']['title']),
             ];
 
             foreach ($documentPlanPrices as $planKey => $price) {
@@ -105,6 +109,7 @@
                     $titleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $rawTitle);
                     $titleBase = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $titleNoParen, 1));
                     $displayTitle = $titleBase;
+                    $displayPrice = $package['price'] ?? '';
                     $displayFeatures = $package['features'] ?? [];
 
                     if ($isDocumentEnglishPricing) {
@@ -126,6 +131,7 @@
 
                         if ($documentPlan) {
                             $displayTitle = $documentPlan['title'];
+                            $displayPrice = $documentPlan['price'] ?? ($package['price'] ?? '');
                             $displayFeatures = $documentPlan['features'];
                         }
                     }
@@ -140,7 +146,7 @@
                                 <li><span class="icon"><img src="{{ asset('images/icons/service-1.svg') }}"
                                             alt="IPTV" width="48" height="48" loading="lazy" decoding="async"></span></li>
                             </ul>
-                            <h3 class="package-plan-title">{{ $displayTitle }}<span>{!! $package['price'] ?? '' !!}</span></h3>
+                            <h3 class="package-plan-title">{{ $displayTitle }} <span>{{ $displayPrice }}</span></h3>
                         </div>
 
                         <div class="lower-box">

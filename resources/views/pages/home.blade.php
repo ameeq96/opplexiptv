@@ -16,6 +16,7 @@
         $currency = config('services.app.default_currency', 'USD');
         $useNativeHomeCarousel = true;
         $isDocumentEnglish = true;
+        $isExactEnglishContent = app()->getLocale() === 'en';
         $documentHome = __('document_home');
         $documentTestimonials = [];
 
@@ -39,6 +40,41 @@
                 ];
             }
         }
+
+        $homeDocumentPackages = $packages ?? [];
+
+        if ($isExactEnglishContent) {
+            $homeDocumentPackages = collect($homeDocumentPackages)->map(function (array $package) use ($documentHome) {
+                $durationMonths = (int) data_get($package, 'duration_months', 0);
+                $planKey = match ($durationMonths) {
+                    3 => 'three_months',
+                    6 => 'half_yearly',
+                    12 => 'yearly',
+                    default => 'monthly',
+                };
+
+                $package['price'] = $documentHome['pricing']['plans'][$planKey]['price'];
+
+                return $package;
+            })->values()->all();
+
+            if (empty($homeDocumentPackages)) {
+                foreach ($documentHome['pricing']['plans'] as $planKey => $plan) {
+                    $homeDocumentPackages[] = [
+                        'vendor' => 'opplex',
+                        'title' => $plan['title'],
+                        'price' => $plan['price'],
+                        'duration_months' => match ($planKey) {
+                            'three_months' => 3,
+                            'half_yearly' => 6,
+                            'yearly' => 12,
+                            default => 1,
+                        },
+                        'features' => $plan['features'],
+                    ];
+                }
+            }
+        }
     @endphp
 
     @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
@@ -46,7 +82,7 @@
     @if ($isDocumentEnglish)
         {{-- Document section 1: image + introduction, followed by section 2 pricing. --}}
         @include('includes._home-feature-split')
-        @include('includes._best-packages')
+        @include('includes._best-packages', ['packages' => $homeDocumentPackages])
     @else
         @include('includes._best-packages')
         @include('includes._home-feature-split')
@@ -218,6 +254,7 @@
         @include('includes._home-devices')
         @include('includes._testimonials', [
             'testimonials' => $documentTestimonials,
+            'reviewIntro' => $isExactEnglishContent ? $documentHome['testimonials']['intro'] : null,
         ])
     @else
         @include('includes._testimonials')

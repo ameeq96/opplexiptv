@@ -231,6 +231,14 @@
     line-height: 1.5;
 }
 
+.review-showcase__intro {
+    max-width: 820px;
+    margin: 16px auto 0;
+    color: #526079;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
 .home-document-pricing__intro {
     max-width: 760px;
     margin: 16px auto 0;

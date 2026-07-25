@@ -3,6 +3,7 @@
 
 @php
     $isDocumentEnglish = true;
+    $isExactEnglishContent = app()->getLocale() === 'en';
     $documentPage = __('document_product.applications');
     $platformLabels = [
         'android' => 'Android',
@@ -101,6 +102,9 @@
                                     $description = $descriptionKey
                                         ? ($documentPage['app_descriptions'][$descriptionKey] ?? '')
                                         : '';
+                                    $canonicalTitle = $isExactEnglishContent && $descriptionKey
+                                        ? ($documentPage['app_titles'][$descriptionKey] ?? $app['version'])
+                                        : $app['version'];
                                 @endphp
                                 <a target="_blank" rel="noopener noreferrer"
                                    href="{{ $app['href'] }}"
@@ -112,7 +116,10 @@
                                              src="{{ $app['image_url'] }}" alt="">
                                     </span>
                                     <span class="document-product-app-card__body">
-                                        <span class="iptva-app__name">{{ $app['version'] }}</span>
+                                        <span class="iptva-app__name">{{ $canonicalTitle }}</span>
+                                         @if ($canonicalTitle !== $app['version'])
+                                             <span class="document-product-app-card__availability">{{ $app['version'] }}</span>
+                                         @endif
                                          @if ($description !== '')
                                              <span class="document-product-app-card__description">{{ $description }}</span>
                                          @endif
