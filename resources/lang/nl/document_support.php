@@ -256,21 +256,21 @@ return [
             'heading' => 'Drie manieren om ons te bereiken',
             'items' => [
                 [
-                    'title' => 'WhatsApp (snelste)',
+                    'title' => 'WhatsApp (snelste):',
                     'text' => 'Stuur ons een bericht op +1 (639) 390-3194. We houden WhatsApp de hele dag in de gaten en reageren binnen enkele minuten. Het meest geschikt voor aanvragen van proefperiodes, hulp bij installatie, inlogproblemen, factureringsvragen en resellerinformatie.',
                     'cta' => 'Stuur een bericht via WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
                 ],
                 [
-                    'title' => 'E-mail',
+                    'title' => 'E-mail:',
                     'text' => 'Stuur ons een bericht op info@opplexiptv.com. Tijdens kantooruren reageren we binnen enkele uren. Het meest geschikt voor uitgebreide vragen, betalingsbewijzen en formele vragen.',
                     'cta' => 'Stuur een e-mail',
                     'type' => 'email',
                     'icon' => 'fa fa-envelope-o',
                 ],
                 [
-                    'title' => 'Contactformulier',
+                    'title' => 'Contactformulier:',
                     'text' => 'Vul het onderstaande formulier in en we reageren per e-mail. Het meest geschikt voor algemene vragen als je liever geen rechtstreeks bericht stuurt.',
                     'cta' => 'Scroll naar het formulier',
                     'type' => 'form',
@@ -281,12 +281,12 @@ return [
         'reasons' => [
             'heading' => 'Weet je niet wat je moet schrijven? Dit zijn de meest voorkomende redenen waarom mensen ons berichten',
             'items' => [
-                ['title' => 'Een gratis proefperiode starten', 'text' => 'Stuur ons een bericht via WhatsApp en vertel op welk apparaat je wilt testen. We activeren een proefperiode en begeleiden je bij de installatie.', 'icon' => 'fa fa-play-circle-o'],
-                ['title' => 'Hulp bij installatie en configuratie', 'text' => 'Vertel ons via WhatsApp welk type apparaat je hebt. We reageren binnen enkele minuten met stapsgewijze instructies, meestal inclusief screenshots.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Ontbrekende inloggegevens', 'text' => 'Controleer eerst je spammap. Zijn je gegevens nog steeds niet aangekomen, stuur ons dan de e-mail die je bij het afrekenen hebt gebruikt en wij verzenden ze direct opnieuw.', 'icon' => 'fa fa-key'],
-                ['title' => 'Vragen over facturering en betaling', 'text' => 'Stel vragen over bedragen, betalingsbewijzen, prijzen bij verlenging of wisselen van abonnement via WhatsApp of e-mail. We bewaren elke bestelling en kunnen je gegevens snel opzoeken.', 'icon' => 'fa fa-credit-card'],
-                ['title' => 'Resellervragen', 'text' => 'Interesse in het resellerpaneel? Stuur ons een bericht via WhatsApp. We leggen uit hoe credits werken en hoe je je eerste klantlijn instelt.', 'icon' => 'fa fa-users'],
-                ['title' => 'Kanaalverzoeken of meldingen van buffering', 'text' => 'Kun je een specifiek kanaal niet vinden? Heb je last van buffering? Laat het ons weten via WhatsApp en wij onderzoeken het, herstellen het of voegen het waar mogelijk toe.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Een gratis proefperiode starten:', 'text' => 'Stuur ons een bericht via WhatsApp en vertel op welk apparaat je wilt testen. We activeren een proefperiode en begeleiden je bij de installatie.', 'icon' => 'fa fa-play-circle-o'],
+                ['title' => 'Hulp bij installatie en configuratie:', 'text' => 'Vertel ons via WhatsApp welk type apparaat je hebt. We reageren binnen enkele minuten met stapsgewijze instructies, meestal inclusief screenshots.', 'icon' => 'fa fa-wrench'],
+                ['title' => 'Ontbrekende inloggegevens:', 'text' => 'Controleer eerst je spammap. Zijn je gegevens nog steeds niet aangekomen, stuur ons dan de e-mail die je bij het afrekenen hebt gebruikt en wij verzenden ze direct opnieuw.', 'icon' => 'fa fa-key'],
+                ['title' => 'Vragen over facturering en betaling:', 'text' => 'Stel vragen over bedragen, betalingsbewijzen, prijzen bij verlenging of wisselen van abonnement via WhatsApp of e-mail. We bewaren elke bestelling en kunnen je gegevens snel opzoeken.', 'icon' => 'fa fa-credit-card'],
+                ['title' => 'Resellervragen:', 'text' => 'Interesse in het resellerpaneel? Stuur ons een bericht via WhatsApp. We leggen uit hoe credits werken en hoe je je eerste klantlijn instelt.', 'icon' => 'fa fa-users'],
+                ['title' => 'Kanaalverzoeken of meldingen van buffering:', 'text' => 'Kun je een specifiek kanaal niet vinden? Heb je last van buffering? Laat het ons weten via WhatsApp en wij onderzoeken het, herstellen het of voegen het waar mogelijk toe.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [

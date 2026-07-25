@@ -95,6 +95,7 @@ return [
     'subscription' => [
         'page_aria' => 'IPTV सब्सक्रिप्शन सेवा पेज का शीर्षक',
         'steps_eyebrow' => 'यह कैसे काम करता है',
+        'step_label' => 'चरण',
         'why_eyebrow' => 'Opplex क्यों चुनें',
         'included_eyebrow' => 'कोई बंद सुविधा नहीं',
         'comparison_eyebrow' => 'देखने का अधिक सरल तरीका',

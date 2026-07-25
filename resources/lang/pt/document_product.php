@@ -50,6 +50,21 @@ return [
             'ibo_macos' => 'Funciona em sistemas Mac com processador Intel. Transfira o ficheiro .dmg, instale-o e inicie sessão com as suas credenciais Opplex.',
             'ibo_linux' => 'Disponível como pacote .snap para sistemas Debian e Ubuntu. Instale através de snap e inicie sessão com os seus Xtream Codes.',
         ],
+        'app_titles' => [
+            'smarters_android' => 'IPTV Smarters Pro',
+            'opplex' => 'Opplex IPTV App',
+            'xtv' => 'XTV Live',
+            'xtream_android' => '9Xtream Player',
+            'ibo_android' => 'IBO Player (Android)',
+            'star_share' => 'Star Share',
+            'smarters_ios' => 'Smarters Player Lite (iOS)',
+            'player_000' => '000 Player',
+            'xtream_ios' => '9Xtream (iOS)',
+            'smarters_windows' => 'IPTV Smarters Pro (Windows)',
+            'ibo_windows' => 'IBO Player (Windows x64)',
+            'ibo_macos' => 'IBO Player (macOS)',
+            'ibo_linux' => 'IBO Player (Linux)',
+        ],
         'compatibility_note' => 'Todas as aplicações desta página podem ser transferidas gratuitamente. Paga apenas pela sua subscrição Opplex IPTV. Compatível com iOS 10.0.5 e versões posteriores e Android 4.4 (Kitkat) e versões posteriores.',
         'faq' => [
             'heading' => 'Perguntas frequentes sobre aplicações IPTV',
@@ -171,7 +186,7 @@ return [
     ],
 
     'subscription' => [
-        'page_title' => 'Serviço de subscrição IPTV',
+        'page_title' => 'Serviços de subscrição IPTV',
         'hero' => [
             'eyebrow' => 'TV em direto, desporto, filmes, séries, 4K e Catch-Up',
             'heading' => 'Serviço de subscrição IPTV: tudo o que pretende ver a partir de $2.99',
@@ -183,17 +198,17 @@ return [
             'secondary_cta' => 'Iniciar teste gratuito pelo WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'text' => 'Imagem nítida em todos os dispositivos. Se o canal suportar 4K, recebe 4K. Sem compressão nem limite de qualidade.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ canais em direto', 'text' => 'Desporto, notícias, entretenimento e conteúdo internacional. Todos os canais importantes estão incluídos.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e séries a pedido', 'text' => '50,000+ títulos disponíveis desde o momento da subscrição. Não precisa de qualquer pacote VOD adicional.'],
-                ['icon' => 'flaticon-customer-service', 'title' => 'Configuração rápida em qualquer dispositivo', 'text' => 'Ajudamos a começar em Firestick, Smart TV, Android, iOS ou MAG. A maioria das configurações demora menos de cinco minutos.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ canais em direto:', 'text' => 'Desporto, notícias, entretenimento e conteúdo internacional. Todos os canais importantes estão incluídos.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e séries a pedido:', 'text' => '50,000+ títulos disponíveis desde o momento da subscrição. Não precisa de qualquer pacote VOD adicional.'],
+                ['icon' => 'flaticon-customer-service', 'title' => 'Configuração rápida em qualquer dispositivo:', 'text' => 'Ajudamos a começar em Firestick, Smart TV, Android, iOS ou MAG. A maioria das configurações demora menos de cinco minutos.'],
             ],
         ],
         'steps' => [
             'heading' => 'Três passos desde a adesão até ao streaming',
             'items' => [
-                ['title' => 'Escolha o seu plano', 'text' => 'Escolha a duração da subscrição: mensal, semestral ou anual. Todos os planos incluem os mesmos canais e conteúdos. A única diferença é a duração e o custo mensal.'],
-                ['title' => 'Receba os seus dados de acesso', 'text' => 'Depois do pagamento, enviamos o nome de utilizador, a palavra-passe e a URL do servidor por e-mail e WhatsApp. Normalmente chegam poucos minutos após a conclusão do pagamento.'],
-                ['title' => 'Abra a aplicação e comece a ver', 'text' => 'Transfira o seu leitor IPTV, toque em «Login with Xtream Codes» e introduza os três dados enviados. Os canais serão carregados automaticamente. Concluído.'],
+                ['title' => 'Escolha o seu plano.', 'text' => 'Escolha a duração da subscrição: mensal, semestral ou anual. Todos os planos incluem os mesmos canais e conteúdos. A única diferença é a duração e o custo mensal.'],
+                ['title' => 'Receba os seus dados de acesso.', 'text' => 'Depois do pagamento, enviamos o nome de utilizador, a palavra-passe e a URL do servidor por e-mail e WhatsApp. Normalmente chegam poucos minutos após a conclusão do pagamento.'],
+                ['title' => 'Abra a aplicação e comece a ver.', 'text' => 'Transfira o seu leitor IPTV, toque em «Login with Xtream Codes» e introduza os três dados enviados. Os canais serão carregados automaticamente. Concluído.'],
             ],
             'support' => 'Precisa de ajuda em algum momento? Envie-nos uma mensagem pelo WhatsApp e orientaremos todo o processo.',
             'cta' => 'Ver aplicações compatíveis',
@@ -202,9 +217,9 @@ return [
             'heading' => 'Porque as pessoas mudam para a Opplex e ficam',
             'items' => [
                 ['title' => 'Sem buffering. A sério.', 'text' => 'Sabemos que todos os fornecedores de IPTV dizem isto. A diferença da Opplex é a nossa infraestrutura de servidores, criada especificamente para lidar com tráfego de hora de ponta em várias regiões sem abrandar. A nossa disponibilidade manteve-se em 99.9% durante três anos consecutivos.'],
-                ['title' => 'Preços que se mantêm honestos', 'text' => '$2.99 por mês são $2.99 por mês. Não oferecemos um preço inicial baixo para aumentá-lo na renovação. Também não encontrará uma taxa de ativação oculta no pagamento. O valor apresentado na tabela de preços é o que paga.'],
-                ['title' => 'Funciona onde quer que esteja', 'text' => 'A Opplex funciona em 40+ países. Quer esteja em casa no Reino Unido, a viajar pela Europa ou nos EUA, a sua subscrição funciona da mesma forma. Sem bloqueios geográficos nem restrições baseadas no local de acesso.'],
-                ['title' => 'Uma equipa com quem pode realmente falar', 'text' => 'Apoio por WhatsApp, sete dias por semana. Quando nos envia uma mensagem, uma pessoa real lê e responde, normalmente em poucos minutos. Não subcontratamos o apoio nem utilizamos bots automáticos para fazê-lo esperar.'],
+                ['title' => 'Preços que se mantêm honestos:', 'text' => '$2.99 por mês são $2.99 por mês. Não oferecemos um preço inicial baixo para aumentá-lo na renovação. Também não encontrará uma taxa de ativação oculta no pagamento. O valor apresentado na tabela de preços é o que paga.'],
+                ['title' => 'Funciona onde quer que esteja.', 'text' => 'A Opplex funciona em 40+ países. Quer esteja em casa no Reino Unido, a viajar pela Europa ou nos EUA, a sua subscrição funciona da mesma forma. Sem bloqueios geográficos nem restrições baseadas no local de acesso.'],
+                ['title' => 'Uma equipa com quem pode realmente falar:', 'text' => 'Apoio por WhatsApp, sete dias por semana. Quando nos envia uma mensagem, uma pessoa real lê e responde, normalmente em poucos minutos. Não subcontratamos o apoio nem utilizamos bots automáticos para fazê-lo esperar.'],
             ],
         ],
         'included' => [
@@ -242,9 +257,9 @@ return [
             'heading' => 'IPTV ou cabo | O que é realmente diferente?',
             'intro' => 'Muitas pessoas trocam o cabo pela IPTV e perguntam porque esperaram tanto tempo. Eis o que muda:',
             'items' => [
-                ['title' => 'Preço', 'text' => 'Um pacote de cabo típico custa entre $60 e $120 por mês nos EUA e no Reino Unido. A Opplex começa em $2.99. Recebe mais canais por uma fração do custo.'],
+                ['title' => 'Preço:', 'text' => 'Um pacote de cabo típico custa entre $60 e $120 por mês nos EUA e no Reino Unido. A Opplex começa em $2.99. Recebe mais canais por uma fração do custo.'],
                 ['title' => 'Conteúdo', 'text' => 'O cabo oferece um pacote fixo, muitas vezes com 70% de canais que nunca verá. A Opplex inclui 12,000+ canais e uma biblioteca completa a pedido, para ver o que quiser quando quiser.'],
-                ['title' => 'Configuração', 'text' => 'Sem visita de técnico, horário de instalação ou hardware para alugar. Subscreva, transfira uma aplicação e introduza os seus dados. É tudo.'],
+                ['title' => 'Configuração:', 'text' => 'Sem visita de técnico, horário de instalação ou hardware para alugar. Subscreva, transfira uma aplicação e introduza os seus dados. É tudo.'],
                 ['title' => 'Flexibilidade', 'text' => 'O cabo normalmente exige um contrato de 12 ou 24 meses. Os planos Opplex são mensais, semestrais ou anuais, e nenhum renova automaticamente. Mantém o controlo.'],
             ],
         ],

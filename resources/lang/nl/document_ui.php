@@ -95,6 +95,7 @@ return [
     'subscription' => [
         'page_aria' => 'Paginatitel IPTV-abonnementsdienst',
         'steps_eyebrow' => 'Hoe het werkt',
+        'step_label' => 'Stap',
         'why_eyebrow' => 'Waarom kiezen voor Opplex',
         'included_eyebrow' => 'Geen vergrendelde functies',
         'comparison_eyebrow' => 'Een eenvoudigere manier om te kijken',

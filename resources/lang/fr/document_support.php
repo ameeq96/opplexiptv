@@ -256,21 +256,21 @@ return [
             'heading' => 'Trois moyens de nous joindre',
             'items' => [
                 [
-                    'title' => 'WhatsApp (le plus rapide)',
+                    'title' => 'WhatsApp (le plus rapide) :',
                     'text' => 'Écrivez-nous au +1 (639) 390-3194. Nous surveillons WhatsApp toute la journée et répondons en quelques minutes. Idéal pour les demandes d’essai, l’aide à la configuration, les problèmes de connexion, les questions de facturation et les demandes concernant la revente.',
                     'cta' => 'Écrire sur WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
                 ],
                 [
-                    'title' => 'E-mail',
+                    'title' => 'E-mail :',
                     'text' => 'Envoyez-nous un message à info@opplexiptv.com. Nous répondons sous quelques heures pendant les heures d’ouverture. Idéal pour les questions détaillées, les reçus de facturation et les demandes formelles.',
                     'cta' => 'Envoyer un e-mail',
                     'type' => 'email',
                     'icon' => 'fa fa-envelope-o',
                 ],
                 [
-                    'title' => 'Formulaire de contact',
+                    'title' => 'Formulaire de contact :',
                     'text' => 'Remplissez le formulaire ci-dessous et nous vous répondrons par e-mail. Idéal pour les questions générales si vous préférez ne pas nous écrire directement.',
                     'cta' => 'Accéder au formulaire',
                     'type' => 'form',
@@ -281,12 +281,12 @@ return [
         'reasons' => [
             'heading' => 'Vous ne savez pas quoi écrire ? Voici les motifs de contact les plus fréquents',
             'items' => [
-                ['title' => 'Démarrer un essai gratuit', 'text' => 'Écrivez-nous sur WhatsApp et indiquez-nous l’appareil sur lequel vous souhaitez effectuer le test. Nous activerons un essai et vous guiderons pendant la configuration.', 'icon' => 'fa fa-play-circle-o'],
-                ['title' => 'Aide à la configuration et à l’installation', 'text' => 'Indiquez-nous votre type d’appareil sur WhatsApp. Nous vous répondons en quelques minutes avec des instructions étape par étape, généralement accompagnées de captures d’écran.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Identifiants manquants', 'text' => 'Vérifiez d’abord votre dossier de courriers indésirables. Si vous n’avez toujours pas reçu vos informations, écrivez-nous en indiquant l’e-mail utilisé lors du paiement et nous vous les renverrons immédiatement.', 'icon' => 'fa fa-key'],
-                ['title' => 'Questions de facturation et de paiement', 'text' => 'Posez vos questions sur les frais, les reçus, les tarifs de renouvellement ou les changements de formule par WhatsApp ou e-mail. Nous conservons une trace de chaque commande et pouvons retrouver rapidement vos informations.', 'icon' => 'fa fa-credit-card'],
-                ['title' => 'Demandes concernant la revente', 'text' => 'Le panneau revendeur vous intéresse ? Écrivez-nous sur WhatsApp. Nous vous expliquerons le fonctionnement des crédits et la configuration de votre première ligne client.', 'icon' => 'fa fa-users'],
-                ['title' => 'Demandes de chaînes ou signalements de mise en mémoire tampon', 'text' => 'Vous ne trouvez pas une chaîne précise ? Vous rencontrez des problèmes de mise en mémoire tampon ? Informez-nous sur WhatsApp et nous examinerons le problème, le corrigerons ou ajouterons la chaîne lorsque cela sera possible.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Démarrer un essai gratuit :', 'text' => 'Écrivez-nous sur WhatsApp et indiquez-nous l’appareil sur lequel vous souhaitez effectuer le test. Nous activerons un essai et vous guiderons pendant la configuration.', 'icon' => 'fa fa-play-circle-o'],
+                ['title' => 'Aide à la configuration et à l’installation :', 'text' => 'Indiquez-nous votre type d’appareil sur WhatsApp. Nous vous répondons en quelques minutes avec des instructions étape par étape, généralement accompagnées de captures d’écran.', 'icon' => 'fa fa-wrench'],
+                ['title' => 'Identifiants manquants :', 'text' => 'Vérifiez d’abord votre dossier de courriers indésirables. Si vous n’avez toujours pas reçu vos informations, écrivez-nous en indiquant l’e-mail utilisé lors du paiement et nous vous les renverrons immédiatement.', 'icon' => 'fa fa-key'],
+                ['title' => 'Questions de facturation et de paiement :', 'text' => 'Posez vos questions sur les frais, les reçus, les tarifs de renouvellement ou les changements de formule par WhatsApp ou e-mail. Nous conservons une trace de chaque commande et pouvons retrouver rapidement vos informations.', 'icon' => 'fa fa-credit-card'],
+                ['title' => 'Demandes concernant la revente :', 'text' => 'Le panneau revendeur vous intéresse ? Écrivez-nous sur WhatsApp. Nous vous expliquerons le fonctionnement des crédits et la configuration de votre première ligne client.', 'icon' => 'fa fa-users'],
+                ['title' => 'Demandes de chaînes ou signalements de mise en mémoire tampon :', 'text' => 'Vous ne trouvez pas une chaîne précise ? Vous rencontrez des problèmes de mise en mémoire tampon ? Informez-nous sur WhatsApp et nous examinerons le problème, le corrigerons ou ajouterons la chaîne lorsque cela sera possible.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [

@@ -20,6 +20,7 @@ return [
         'plans' => [
             'monthly' => [
                 'title' => 'Maandelijks',
+                'price' => '$2.99 / 1 maand',
                 'features' => [
                     '4K-livekanalen zonder buffering',
                     'Alle films, series en sport inbegrepen',
@@ -29,6 +30,7 @@ return [
             ],
             'three_months' => [
                 'title' => '3 maanden',
+                'price' => '$7.99 / 3 maanden',
                 'features' => [
                     'Dezelfde volledige toegang als bij het maandpakket',
                     'Meer voordeel per maand',
@@ -37,6 +39,7 @@ return [
             ],
             'half_yearly' => [
                 'title' => 'Halfjaarlijks',
+                'price' => '$14.99 / 6 maanden',
                 'features' => [
                     'Dezelfde volledige toegang als bij het pakket van 3 maanden',
                     'Zes maanden ononderbroken streamen',
@@ -45,6 +48,7 @@ return [
             ],
             'yearly' => [
                 'title' => 'Jaarlijks',
+                'price' => '$23.99 / 12 maanden',
                 'features' => [
                     'Beste prijs-kwaliteitverhouding, minder dan $2 per maand',
                     'Een heel jaar live TV, sport en VOD in 4K',
@@ -130,7 +134,7 @@ return [
             ],
             [
                 'author' => 'Becky Sobers',
-                'text' => 'Ik ben van kabel-tv overgestapt naar Opplex IPTV en ben blij dat dit de juiste keuze was.',
+                'text' => '“Ik ben van kabel-tv overgestapt naar Opplex IPTV en ben blij dat dit de juiste keuze was.”',
             ],
             [
                 'author' => 'Sarah',

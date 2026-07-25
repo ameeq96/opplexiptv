@@ -1,7 +1,7 @@
 ﻿@extends('layouts.default')
 @php
     $isDocumentEnglish = true;
-    $isExactEnglishContent = app()->getLocale() === 'en';
+    $usesSynchronizedDocumentContent = in_array(app()->getLocale(), config('app.locales', ['en']), true);
     $documentPage = __('document_product.shop');
 @endphp
 @section('title', $isDocumentEnglish ? $documentPage['hero']['heading'] : 'Shop')
@@ -35,7 +35,7 @@
                 : $productItems
                     ->filter(static fn ($product) => strtolower((string) data_get($product, 'type', 'affiliate')) === 'digital')
                     ->values();
-            $shouldAddDocumentFallbacks = $isExactEnglishContent
+            $shouldAddDocumentFallbacks = $usesSynchronizedDocumentContent
                 && (!method_exists($products, 'currentPage') || $products->currentPage() === 1);
 
             $resolveAffiliateKey = static function ($product): ?string {
@@ -94,8 +94,12 @@
             $digitalFallbacks = collect($documentPage['product_descriptions']['digital'])
                 ->map(static function (array $copy, string $slug) use ($digitalNames): array {
                     $name = $digitalNames[$slug] ?? \Illuminate\Support\Str::headline($slug);
+                    $price = trim((string) ($copy['price_label'] ?? ''), "(): \t\n\r\0\x0B");
                     $url = 'https://wa.me/16393903194?text=' . rawurlencode(
-                        'Hello, I would like to buy ' . $name . '.'
+                        __('document_ui.shop.purchase_message', [
+                            'product' => $name,
+                            'price' => $price,
+                        ])
                     );
 
                     return [
@@ -186,7 +190,7 @@
                                     $productCopy = $copyKey
                                         ? data_get($documentPage, "product_descriptions.{$productType}.{$copyKey}", [])
                                         : [];
-                                    $displayName = $isExactEnglishContent
+                                    $displayName = $usesSynchronizedDocumentContent
                                         ? ($productType === 'digital'
                                             ? ($digitalNames[$copyKey] ?? $name)
                                             : ((string) data_get($productCopy, 'label', $name)))
@@ -209,7 +213,7 @@
                                                     @if ($rel !== '') rel="{{ $rel }}" @endif>{{ $displayName }}</a>
                                             </h3>
 
-                                            @if (!$isExactEnglishContent && !empty($productCopy['label']))
+                                            @if (!$usesSynchronizedDocumentContent && !empty($productCopy['label']))
                                                 <p class="document-product-shop-card__label">{{ $productCopy['label'] }}</p>
                                             @endif
 

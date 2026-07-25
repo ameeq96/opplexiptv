@@ -20,6 +20,7 @@ return [
         'plans' => [
             'monthly' => [
                 'title' => 'Mensuel',
+                'price' => '$2.99 / 1 mois',
                 'features' => [
                     'Chaînes en direct 4K sans mise en mémoire tampon',
                     'Tous les films, séries et sports inclus',
@@ -29,6 +30,7 @@ return [
             ],
             'three_months' => [
                 'title' => '3 mois',
+                'price' => '$7.99 / 3 mois',
                 'features' => [
                     'Le même accès complet que la formule mensuelle',
                     'Meilleur rapport qualité-prix par mois',
@@ -37,6 +39,7 @@ return [
             ],
             'half_yearly' => [
                 'title' => 'Semestriel',
+                'price' => '$14.99 / 6 mois',
                 'features' => [
                     'Le même accès complet que la formule de 3 mois',
                     'Six mois de streaming ininterrompu',
@@ -45,6 +48,7 @@ return [
             ],
             'yearly' => [
                 'title' => 'Annuel',
+                'price' => '$23.99 / 12 mois',
                 'features' => [
                     'Meilleur rapport qualité-prix, moins de $2 par mois',
                     'Une année complète de TV en direct, de sports et de VOD en 4K',
@@ -130,7 +134,7 @@ return [
             ],
             [
                 'author' => 'Becky Sobers',
-                'text' => 'J’ai remplacé le câble par Opplex IPTV et je suis ravie d’avoir fait le bon choix.',
+                'text' => '« J’ai remplacé le câble par Opplex IPTV et je suis ravie d’avoir fait le bon choix. »',
             ],
             [
                 'author' => 'Sarah',

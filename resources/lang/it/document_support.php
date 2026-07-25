@@ -256,21 +256,21 @@ return [
             'heading' => 'Tre modi per contattarci',
             'items' => [
                 [
-                    'title' => 'WhatsApp (più rapido)',
+                    'title' => 'WhatsApp (più rapido):',
                     'text' => 'Scrivici al +1 (639) 390-3194. Monitoriamo WhatsApp durante tutta la giornata e rispondiamo entro pochi minuti. Ideale per richieste di prova, assistenza alla configurazione, problemi di accesso, domande sulla fatturazione e richieste dei rivenditori.',
                     'cta' => 'Scrivi su WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
                 ],
                 [
-                    'title' => 'Email',
+                    'title' => 'Email:',
                     'text' => 'Scrivici a info@opplexiptv.com. Durante l’orario di attività rispondiamo entro poche ore. Ideale per domande dettagliate, ricevute di pagamento e richieste formali.',
                     'cta' => 'Invia un’email',
                     'type' => 'email',
                     'icon' => 'fa fa-envelope-o',
                 ],
                 [
-                    'title' => 'Modulo di contatto',
+                    'title' => 'Modulo di contatto:',
                     'text' => 'Compila il modulo qui sotto e ti risponderemo tramite email. Ideale per domande generali se preferisci non inviare un messaggio diretto.',
                     'cta' => 'Vai al modulo',
                     'type' => 'form',
@@ -281,12 +281,12 @@ return [
         'reasons' => [
             'heading' => 'Non sai cosa scrivere? Ecco i motivi più comuni per cui le persone ci contattano',
             'items' => [
-                ['title' => 'Iniziare una prova gratuita', 'text' => 'Scrivici su WhatsApp e indicaci il dispositivo su cui desideri effettuare la prova. Attiveremo una prova e ti guideremo nella configurazione.', 'icon' => 'fa fa-play-circle-o'],
-                ['title' => 'Assistenza per configurazione e installazione', 'text' => 'Indicaci il tipo di dispositivo su WhatsApp. Risponderemo entro pochi minuti con istruzioni dettagliate, di solito corredate da schermate.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Dati di accesso mancanti', 'text' => 'Controlla prima la cartella spam. Se i dati non sono ancora arrivati, scrivici indicando l’email utilizzata al pagamento e li invieremo di nuovo immediatamente.', 'icon' => 'fa fa-key'],
-                ['title' => 'Domande su fatturazione e pagamenti', 'text' => 'Puoi fare domande su addebiti, ricevute, prezzi di rinnovo o cambio di piano tramite WhatsApp o email. Conserviamo i dati di ogni ordine e possiamo recuperarli rapidamente.', 'icon' => 'fa fa-credit-card'],
-                ['title' => 'Richieste dei rivenditori', 'text' => 'Ti interessa il pannello rivenditori? Scrivici su WhatsApp. Ti spiegheremo il funzionamento dei crediti e come configurare la tua prima linea cliente.', 'icon' => 'fa fa-users'],
-                ['title' => 'Richieste di canali o segnalazioni di buffering', 'text' => 'Non trovi un canale specifico? Hai problemi di buffering? Comunicacelo su WhatsApp: indagheremo, risolveremo il problema o aggiungeremo il canale, se possibile.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Iniziare una prova gratuita:', 'text' => 'Scrivici su WhatsApp e indicaci il dispositivo su cui desideri effettuare la prova. Attiveremo una prova e ti guideremo nella configurazione.', 'icon' => 'fa fa-play-circle-o'],
+                ['title' => 'Assistenza per configurazione e installazione:', 'text' => 'Indicaci il tipo di dispositivo su WhatsApp. Risponderemo entro pochi minuti con istruzioni dettagliate, di solito corredate da schermate.', 'icon' => 'fa fa-wrench'],
+                ['title' => 'Dati di accesso mancanti:', 'text' => 'Controlla prima la cartella spam. Se i dati non sono ancora arrivati, scrivici indicando l’email utilizzata al pagamento e li invieremo di nuovo immediatamente.', 'icon' => 'fa fa-key'],
+                ['title' => 'Domande su fatturazione e pagamenti:', 'text' => 'Puoi fare domande su addebiti, ricevute, prezzi di rinnovo o cambio di piano tramite WhatsApp o email. Conserviamo i dati di ogni ordine e possiamo recuperarli rapidamente.', 'icon' => 'fa fa-credit-card'],
+                ['title' => 'Richieste dei rivenditori:', 'text' => 'Ti interessa il pannello rivenditori? Scrivici su WhatsApp. Ti spiegheremo il funzionamento dei crediti e come configurare la tua prima linea cliente.', 'icon' => 'fa fa-users'],
+                ['title' => 'Richieste di canali o segnalazioni di buffering:', 'text' => 'Non trovi un canale specifico? Hai problemi di buffering? Comunicacelo su WhatsApp: indagheremo, risolveremo il problema o aggiungeremo il canale, se possibile.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [

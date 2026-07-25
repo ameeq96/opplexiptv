@@ -38,6 +38,7 @@ return [
             'plans' => [
                 'monthly' => [
                     'title' => 'Maandelijks',
+                    'price' => '$2.99/maand',
                     'features' => [
                         'Stream 12,000+ kanalen in HD en 4K, zonder buffering',
                         'Alle films, series en live sport',
@@ -47,6 +48,7 @@ return [
                 ],
                 'three_months' => [
                     'title' => '3 maanden',
+                    'price' => '$7.99',
                     'features' => [
                         'Bespaar 11% ten opzichte van maandelijkse betaling',
                         'Dezelfde volledige toegang tot kanalen en VOD',
@@ -55,6 +57,7 @@ return [
                 ],
                 'half_yearly' => [
                     'title' => 'Halfjaarlijks',
+                    'price' => '$14.99',
                     'features' => [
                         'Ons populairste IPTV-abonnement',
                         'Zes maanden stabiel en ononderbroken streamen',
@@ -63,6 +66,7 @@ return [
                 ],
                 'yearly' => [
                     'title' => 'Jaarlijks',
+                    'price' => '$23.99',
                     'features' => [
                         'Beste IPTV-abonnementsdeal op de site — minder dan $2/maand',
                         'Een heel jaar zonder prijswijzigingen',
@@ -75,15 +79,15 @@ return [
             'heading' => 'Een IPTV-abonnement kopen: 3 eenvoudige stappen',
             'steps' => [
                 [
-                    'title' => 'Kies je abonnement',
+                    'title' => 'Stap 1: Kies je abonnement',
                     'description' => 'Kies maandelijks, halfjaarlijks of jaarlijks. Alle abonnementen omvatten dezelfde kanalen en content; kies alleen hoelang je een abonnement wilt.',
                 ],
                 [
-                    'title' => 'Rond de betaling af',
+                    'title' => 'Stap 2: Rond de betaling af',
                     'description' => 'Betaal veilig. Je inloggegevens worden binnen enkele minuten per e-mail en WhatsApp naar je verzonden.',
                 ],
                 [
-                    'title' => 'Begin met kijken',
+                    'title' => 'Stap 3: Begin met kijken',
                     'description' => 'Open je IPTV-speler, voer je gegevens in en je kanalen worden automatisch geladen. Heb je hulp nodig, dan staat ons team klaar via WhatsApp.',
                 ],
             ],
@@ -215,7 +219,7 @@ return [
                     'description' => 'Als je regelmatig TV kijkt en het beste tarief wilt. $23.99 voor een heel jaar is minder dan $2 per maand. Geen druk om te verlengen, geen geleidelijke prijsstijging, gewoon een heel jaar toegang vanaf het moment dat je je aanmeldt.',
                 ],
             ],
-            'trial_heading' => 'Twijfel je? Probeer voordat je koopt',
+            'trial_heading' => 'Twijfel je? Probeer voordat je koopt:',
             'trial_text' => 'Stuur ons een bericht via WhatsApp en vraag om een proefperiode. Je krijgt toegang om de kanaalkwaliteit en stabiliteit op je eigen apparaat te testen voordat je iets uitgeeft.',
         ],
         'payment' => [
@@ -292,19 +296,19 @@ return [
             'heading' => 'Wat je bij je reselleraccount krijgt',
             'items' => [
                 [
-                    'title' => 'Je eigen paneel',
+                    'title' => 'Je eigen paneel:',
                     'description' => 'Een speciaal dashboard waarin je elke klantlijn beheert. Activeer nieuwe abonnementen, controleer vervaldata en verleng bestaande abonnementen, allemaal op één plek zonder voor elke handeling contact met ons te hoeven opnemen.',
                 ],
                 [
-                    'title' => 'Credits die nooit verlopen',
+                    'title' => 'Credits die nooit verlopen.',
                     'description' => 'Koop in bulk wanneer je wilt. Besteed ze wanneer een klant er klaar voor is. Er hangt geen deadline boven je saldo en er gaan geen credits verloren als het een maand rustiger is.',
                 ],
                 [
-                    'title' => 'Onbeperkte gratis proefperiodes',
+                    'title' => 'Onbeperkte gratis proefperiodes:',
                     'description' => 'Je kunt zoveel proefperiodes geven als je wilt. Daardoor kun je nieuwe klanten veel makkelijker overtuigen; ze zien de kanaalkwaliteit op hun eigen apparaat voordat ze je ook maar één cent betalen.',
                 ],
                 [
-                    'title' => 'Bepaal je eigen prijzen',
+                    'title' => 'Bepaal je eigen prijzen.',
                     'description' => 'Wij bieden je credits tegen een groothandelstarief. Wat jij je klanten laat betalen, bepaal je volledig zelf. Het verschil tussen ons tarief en het jouwe is je marge; daar bemoeien we ons nooit mee.',
                 ],
                 [
@@ -312,7 +316,7 @@ return [
                     'description' => 'Beheer Opplex- en Starshare-abonnementen vanuit dezelfde omgeving. Wil een klant beide vergelijken of later overstappen, dan regel je dat zonder tussen platforms te wisselen.',
                 ],
                 [
-                    'title' => 'Voorrang bij WhatsApp-ondersteuning',
+                    'title' => 'Voorrang bij WhatsApp-ondersteuning:',
                     'description' => 'Resellers krijgen sneller antwoord. Heeft een van je klanten een installatieprobleem, stuur ons dan een bericht. We helpen je het snel op te lossen, zodat je klant tevreden blijft.',
                 ],
             ],
@@ -334,7 +338,7 @@ return [
                     'description' => 'Als je mensen al helpt met hun installatie thuis, zijn IPTV-abonnementen een logische uitbreiding. Terugkerende klanten betekenen terugkerende credits en terugkerende inkomsten.',
                 ],
                 [
-                    'title' => 'Mensen die extra inkomen willen',
+                    'title' => 'Mensen die extra inkomen willen:',
                     'description' => 'Geen kantoor, geen voorraad, geen verzending. Je beheert alles vanaf je telefoon via het paneel. De overheadkosten kunnen haast niet lager.',
                 ],
             ],

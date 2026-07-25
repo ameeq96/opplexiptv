@@ -3,7 +3,7 @@
 
 @php
     $isDocumentEnglish = true;
-    $isExactEnglishContent = app()->getLocale() === 'en';
+    $usesSynchronizedDocumentContent = in_array(app()->getLocale(), config('app.locales', ['en']), true);
     $documentPage = __('document_product.applications');
     $platformLabels = [
         'android' => 'Android',
@@ -102,7 +102,7 @@
                                     $description = $descriptionKey
                                         ? ($documentPage['app_descriptions'][$descriptionKey] ?? '')
                                         : '';
-                                    $canonicalTitle = $isExactEnglishContent && $descriptionKey
+                                    $canonicalTitle = $usesSynchronizedDocumentContent && $descriptionKey
                                         ? ($documentPage['app_titles'][$descriptionKey] ?? $app['version'])
                                         : $app['version'];
                                 @endphp

@@ -108,7 +108,7 @@ class DocumentTranslationParityTest extends TestCase
     /** @return array<int,string> */
     private function placeholders(string $value): array
     {
-        preg_match_all('/:[a-z_]+/i', $value, $matches);
+        preg_match_all('/(?<![a-z0-9_]):[a-z_]+/i', $value, $matches);
         $placeholders = array_values(array_unique($matches[0]));
         sort($placeholders);
 

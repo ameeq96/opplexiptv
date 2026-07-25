@@ -95,6 +95,7 @@ return [
     'subscription' => [
         'page_aria' => 'Titre de la page du service d’abonnement IPTV',
         'steps_eyebrow' => 'Fonctionnement',
+        'step_label' => 'Étape',
         'why_eyebrow' => 'Pourquoi choisir Opplex',
         'included_eyebrow' => 'Aucune fonctionnalité verrouillée',
         'comparison_eyebrow' => 'Une façon plus simple de regarder',

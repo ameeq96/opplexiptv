@@ -442,7 +442,7 @@
     font-size: .92rem;
 }
 
-.document-product-subscription-steps--exact-English .document-product-process__number {
+.document-product-subscription-steps--synchronized .document-product-process__number {
     width: auto;
     min-width: 78px;
     flex-basis: auto;

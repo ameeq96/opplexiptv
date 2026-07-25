@@ -38,6 +38,7 @@ return [
             'plans' => [
                 'monthly' => [
                     'title' => 'Mensual',
+                    'price' => '$2.99/mes',
                     'features' => [
                         'Reproduce 12,000+ canales en HD y 4K, sin buffering',
                         'Todas las películas, series y deportes en directo',
@@ -47,6 +48,7 @@ return [
                 ],
                 'three_months' => [
                     'title' => '3 meses',
+                    'price' => '$7.99',
                     'features' => [
                         'Ahorra un 11% frente a la facturación mensual',
                         'El mismo acceso completo a canales y VOD',
@@ -55,6 +57,7 @@ return [
                 ],
                 'half_yearly' => [
                     'title' => 'Semestral',
+                    'price' => '$14.99',
                     'features' => [
                         'Nuestro plan de suscripción IPTV más popular',
                         'Seis meses de streaming estable e ininterrumpido',
@@ -63,6 +66,7 @@ return [
                 ],
                 'yearly' => [
                     'title' => 'Anual',
+                    'price' => '$23.99',
                     'features' => [
                         'La mejor oferta de suscripción IPTV del sitio: menos de $2 al mes',
                         'Un año completo sin cambios de precio',
@@ -75,15 +79,15 @@ return [
             'heading' => 'Cómo comprar una suscripción IPTV: 3 sencillos pasos',
             'steps' => [
                 [
-                    'title' => 'Elige tu plan',
+                    'title' => 'Paso 1: Elige tu plan',
                     'description' => 'Elige un plan mensual, semestral o anual. Todos incluyen los mismos canales y contenidos; solo tienes que decidir durante cuánto tiempo quieres suscribirte.',
                 ],
                 [
-                    'title' => 'Completa el pago',
+                    'title' => 'Paso 2: Completa el pago',
                     'description' => 'Paga de forma segura. Recibirás tus datos de acceso por correo electrónico y WhatsApp en pocos minutos.',
                 ],
                 [
-                    'title' => 'Empieza a ver contenido',
+                    'title' => 'Paso 3: Empieza a ver contenido',
                     'description' => 'Abre tu reproductor IPTV, introduce tus datos y los canales se cargarán automáticamente. Si necesitas ayuda, nuestro equipo está disponible en WhatsApp.',
                 ],
             ],
@@ -106,7 +110,7 @@ return [
                     'description' => 'Espectadores del Reino Unido, Francia, Italia y Estados Unidos confían en Opplex cada día. Nuestra infraestructura está diseñada para gestionar tráfico mundial sin ralentizarse.',
                 ],
                 [
-                    'title' => 'Ayuda para configurar todos los dispositivos',
+                    'title' => 'Ayuda para configurar cada dispositivo',
                     'description' => 'Somos compatibles con Fire TV Stick, MAG box, Android TV, Smart TV, iOS y reproductores IPTV. Solo dinos qué dispositivo tienes por WhatsApp y te guiaremos paso a paso durante la instalación.',
                 ],
             ],
@@ -119,7 +123,7 @@ return [
                 '50,000+ películas y 5,000+ series de TV bajo demanda',
                 'Calidad de streaming 4K y HD en los canales compatibles',
                 'Guía electrónica de programación (EPG) incluida',
-                'Compatibilidad con varios dispositivos para hasta 2 pantallas simultáneas',
+                'La compatibilidad con varios dispositivos se utiliza en hasta 2 pantallas simultáneamente',
                 'Catch-up TV en determinados canales',
                 'Asistencia 24/7 por WhatsApp y correo electrónico',
             ],
@@ -215,7 +219,7 @@ return [
                     'description' => 'Si ves TV con frecuencia y quieres el mejor precio. $23.99 por un año completo equivale a menos de $2 al mes. Sin presión para renovar ni subidas de precio: tendrás un año completo de acceso desde el momento en que te registres.',
                 ],
             ],
-            'trial_heading' => '¿Tienes dudas? Prueba antes de comprar',
+            'trial_heading' => '¿Tienes dudas? Prueba antes de comprar:',
             'trial_text' => 'Escríbenos por WhatsApp y solicita una prueba. Obtendrás acceso para comprobar la calidad y estabilidad de los canales en tu propio dispositivo antes de gastar nada.',
         ],
         'payment' => [
@@ -292,19 +296,19 @@ return [
             'heading' => 'Qué incluye tu cuenta de revendedor',
             'items' => [
                 [
-                    'title' => 'Tu propio panel',
+                    'title' => 'Tu propio panel:',
                     'description' => 'Un panel de control exclusivo desde el que gestionas todas las líneas de tus clientes. Activa nuevas suscripciones, consulta las fechas de caducidad y renueva las existentes, todo desde un único lugar y sin tener que contactarnos para cada acción.',
                 ],
                 [
-                    'title' => 'Créditos que nunca caducan',
+                    'title' => 'Créditos que nunca caducan.',
                     'description' => 'Compra al por mayor cuando quieras. Gástalos cuando un cliente esté listo. No hay fechas límite sobre tu saldo ni créditos desperdiciados si el negocio se ralentiza durante un mes.',
                 ],
                 [
-                    'title' => 'Pruebas gratuitas ilimitadas',
+                    'title' => 'Pruebas gratuitas ilimitadas:',
                     'description' => 'Puedes ofrecer tantas pruebas como quieras. Así resulta mucho más fácil captar nuevos clientes: ven la calidad de los canales en su propio dispositivo antes de pagarte un céntimo.',
                 ],
                 [
-                    'title' => 'Establece tus propios precios',
+                    'title' => 'Establece tus propios precios.',
                     'description' => 'Te ofrecemos una tarifa de créditos al por mayor. Tú decides cuánto cobrar a tus clientes. La diferencia entre nuestra tarifa y la tuya es tu margen; nunca interferimos en él.',
                 ],
                 [
@@ -312,7 +316,7 @@ return [
                     'description' => 'Gestiona las suscripciones de Opplex y Starshare desde el mismo lugar. Si un cliente quiere comparar ambas o cambiar más adelante, puedes hacerlo sin saltar de una plataforma a otra.',
                 ],
                 [
-                    'title' => 'Asistencia prioritaria por WhatsApp',
+                    'title' => 'Asistencia prioritaria por WhatsApp:',
                     'description' => 'Los revendedores obtienen respuestas más rápidas. Si uno de tus clientes tiene un problema de configuración, escríbenos y te ayudaremos a resolverlo rápidamente para que tu cliente quede satisfecho.',
                 ],
             ],
@@ -334,7 +338,7 @@ return [
                     'description' => 'Si ya ayudas a otras personas a configurar sus equipos domésticos, añadir suscripciones IPTV es una extensión natural. Los clientes recurrentes se traducen en créditos e ingresos recurrentes.',
                 ],
                 [
-                    'title' => 'Personas que quieren ingresos adicionales',
+                    'title' => 'Personas que quieren ingresos adicionales:',
                     'description' => 'Sin oficina, inventario ni envíos. Lo gestionas todo desde tu teléfono mediante el panel. Los gastos generales son mínimos.',
                 ],
             ],

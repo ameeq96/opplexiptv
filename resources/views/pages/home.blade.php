@@ -16,7 +16,7 @@
         $currency = config('services.app.default_currency', 'USD');
         $useNativeHomeCarousel = true;
         $isDocumentEnglish = true;
-        $isExactEnglishContent = app()->getLocale() === 'en';
+        $usesSynchronizedDocumentContent = in_array(app()->getLocale(), config('app.locales', ['en']), true);
         $documentHome = __('document_home');
         $documentTestimonials = [];
 
@@ -43,7 +43,7 @@
 
         $homeDocumentPackages = $packages ?? [];
 
-        if ($isExactEnglishContent) {
+        if ($usesSynchronizedDocumentContent) {
             $homeDocumentPackages = collect($homeDocumentPackages)->map(function (array $package) use ($documentHome) {
                 $durationMonths = (int) data_get($package, 'duration_months', 0);
                 $planKey = match ($durationMonths) {
@@ -53,7 +53,8 @@
                     default => 'monthly',
                 };
 
-                $package['price'] = $documentHome['pricing']['plans'][$planKey]['price'];
+                $package['price'] = $documentHome['pricing']['plans'][$planKey]['price']
+                    ?? $package['price'];
 
                 return $package;
             })->values()->all();
@@ -63,7 +64,7 @@
                     $homeDocumentPackages[] = [
                         'vendor' => 'opplex',
                         'title' => $plan['title'],
-                        'price' => $plan['price'],
+                        'price' => $plan['price'] ?? '',
                         'duration_months' => match ($planKey) {
                             'three_months' => 3,
                             'half_yearly' => 6,
@@ -254,7 +255,9 @@
         @include('includes._home-devices')
         @include('includes._testimonials', [
             'testimonials' => $documentTestimonials,
-            'reviewIntro' => $isExactEnglishContent ? $documentHome['testimonials']['intro'] : null,
+            'reviewIntro' => $usesSynchronizedDocumentContent
+                ? ($documentHome['testimonials']['intro'] ?? null)
+                : null,
         ])
     @else
         @include('includes._testimonials')

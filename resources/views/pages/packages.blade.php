@@ -1,7 +1,6 @@
 @extends('layouts.default')
 @php
     $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
-    $isExactEnglishContent = app()->getLocale() === 'en';
 @endphp
 @section('title', $usesDocumentLayout ? __('document_commerce.packages.page_title') : __('messages.title'))
 
@@ -96,9 +95,6 @@
                     <ol class="dc-step-grid">
                         @foreach ($page['how_it_works']['steps'] as $step)
                             <li class="dc-step-card">
-                                @unless ($isExactEnglishContent)
-                                    <span class="dc-step-card__number" aria-hidden="true">{{ $loop->iteration }}</span>
-                                @endunless
                                 <div>
                                     <h3>{{ $step['title'] }}</h3>
                                     <p>{{ $step['description'] }}</p>

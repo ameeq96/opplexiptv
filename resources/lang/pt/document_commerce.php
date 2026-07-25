@@ -38,6 +38,7 @@ return [
             'plans' => [
                 'monthly' => [
                     'title' => 'Mensal',
+                    'price' => '$2.99/mês',
                     'features' => [
                         'Veja 12,000+ canais em HD e 4K, sem buffering',
                         'Todos os filmes, séries e desportos em direto',
@@ -47,6 +48,7 @@ return [
                 ],
                 'three_months' => [
                     'title' => '3 meses',
+                    'price' => '$7.99',
                     'features' => [
                         'Poupe 11% em relação à faturação mensal',
                         'O mesmo acesso completo a canais e VOD',
@@ -55,6 +57,7 @@ return [
                 ],
                 'half_yearly' => [
                     'title' => 'Semestral',
+                    'price' => '$14.99',
                     'features' => [
                         'O nosso plano de subscrição IPTV mais popular',
                         'Seis meses de streaming estável e ininterrupto',
@@ -63,6 +66,7 @@ return [
                 ],
                 'yearly' => [
                     'title' => 'Anual',
+                    'price' => '$23.99',
                     'features' => [
                         'A melhor oferta de subscrição IPTV do site: menos de $2 por mês',
                         'Um ano completo sem alterações de preço',
@@ -75,15 +79,15 @@ return [
             'heading' => 'Como comprar uma subscrição IPTV: 3 passos simples',
             'steps' => [
                 [
-                    'title' => 'Escolha o seu plano',
+                    'title' => 'Passo 1: Escolha o seu plano',
                     'description' => 'Escolha o plano mensal, semestral ou anual. Todos incluem os mesmos canais e conteúdos; basta selecionar a duração pretendida.',
                 ],
                 [
-                    'title' => 'Conclua o pagamento',
+                    'title' => 'Passo 2: Conclua o pagamento',
                     'description' => 'Pague de forma segura. Os seus dados de acesso são enviados por e-mail e WhatsApp em poucos minutos.',
                 ],
                 [
-                    'title' => 'Comece a ver',
+                    'title' => 'Passo 3: Comece a ver',
                     'description' => 'Abra o seu leitor IPTV, introduza os seus dados e os canais serão carregados automaticamente. Se precisar de ajuda, a nossa equipa está disponível no WhatsApp.',
                 ],
             ],
@@ -215,7 +219,7 @@ return [
                     'description' => 'Se vê TV regularmente e pretende o melhor preço. $23.99 por um ano completo equivale a menos de $2 por mês. Sem pressão para renovar nem aumentos de preço: apenas um ano completo de acesso desde o momento da adesão.',
                 ],
             ],
-            'trial_heading' => 'Tem dúvidas? Experimente antes de comprar',
+            'trial_heading' => 'Tem dúvidas? Experimente antes de comprar:',
             'trial_text' => 'Envie-nos uma mensagem pelo WhatsApp e peça um teste. Terá acesso para verificar a qualidade e estabilidade dos canais no seu próprio dispositivo antes de gastar qualquer valor.',
         ],
         'payment' => [
@@ -292,19 +296,19 @@ return [
             'heading' => 'O que está incluído na sua conta de revendedor',
             'items' => [
                 [
-                    'title' => 'O seu próprio painel',
+                    'title' => 'O seu próprio painel:',
                     'description' => 'Um painel de controlo dedicado onde gere todas as linhas dos clientes. Ative novas subscrições, verifique datas de validade e renove linhas existentes, tudo no mesmo lugar e sem precisar de nos contactar para cada ação.',
                 ],
                 [
-                    'title' => 'Créditos que nunca expiram',
+                    'title' => 'Créditos que nunca expiram.',
                     'description' => 'Compre em quantidade quando quiser. Utilize-os quando um cliente estiver preparado. Não existe qualquer prazo sobre o saldo nem créditos desperdiçados se o negócio abrandar durante um mês.',
                 ],
                 [
-                    'title' => 'Testes gratuitos ilimitados',
+                    'title' => 'Testes gratuitos ilimitados:',
                     'description' => 'Pode oferecer quantos testes quiser. Isto facilita muito a conquista de novos clientes: eles veem a qualidade dos canais no próprio dispositivo antes de lhe pagarem qualquer valor.',
                 ],
                 [
-                    'title' => 'Defina os seus próprios preços',
+                    'title' => 'Defina os seus próprios preços.',
                     'description' => 'Oferecemos uma tarifa grossista para os créditos. O valor que cobra aos seus clientes depende inteiramente de si. A diferença entre a nossa tarifa e a sua é a sua margem; nunca interferimos.',
                 ],
                 [
@@ -312,7 +316,7 @@ return [
                     'description' => 'Faça a gestão das subscrições Opplex e Starshare no mesmo lugar. Se um cliente quiser comparar ambas ou mudar mais tarde, pode tratar de tudo sem alternar entre plataformas.',
                 ],
                 [
-                    'title' => 'Apoio prioritário por WhatsApp',
+                    'title' => 'Apoio prioritário por WhatsApp:',
                     'description' => 'Os revendedores recebem respostas mais rápidas. Se um dos seus clientes tiver um problema de configuração, envie-nos uma mensagem e ajudaremos a resolvê-lo rapidamente para manter o cliente satisfeito.',
                 ],
             ],
@@ -334,7 +338,7 @@ return [
                     'description' => 'Se já ajuda outras pessoas a configurar equipamentos em casa, adicionar subscrições IPTV é uma extensão natural. Clientes recorrentes significam créditos e rendimentos recorrentes.',
                 ],
                 [
-                    'title' => 'Pessoas que procuram rendimento extra',
+                    'title' => 'Pessoas que procuram rendimento extra:',
                     'description' => 'Sem escritório, stock ou envios. Gere tudo pelo telemóvel através do painel. Os custos gerais são mínimos.',
                 ],
             ],

@@ -50,6 +50,21 @@ return [
             'ibo_macos' => 'Werkt op Mac-systemen met Intel-processor. Download het .dmg-bestand, installeer het en meld je aan met je Opplex-inloggegevens.',
             'ibo_linux' => 'Beschikbaar als .snap-pakket voor Debian- en Ubuntu-systemen. Installeer via snap en meld je aan met je Xtream Codes.',
         ],
+        'app_titles' => [
+            'smarters_android' => 'IPTV Smarters Pro',
+            'opplex' => 'Opplex IPTV App',
+            'xtv' => 'XTV Live',
+            'xtream_android' => '9Xtream Player',
+            'ibo_android' => 'IBO Player (Android)',
+            'star_share' => 'Star Share',
+            'smarters_ios' => 'Smarters Player Lite (iOS)',
+            'player_000' => '000 Player',
+            'xtream_ios' => '9Xtream (iOS)',
+            'smarters_windows' => 'IPTV Smarters Pro (Windows)',
+            'ibo_windows' => 'IBO Player (Windows x64)',
+            'ibo_macos' => 'IBO Player (macOS)',
+            'ibo_linux' => 'IBO Player (Linux)',
+        ],
         'compatibility_note' => 'Alle apps op deze pagina zijn gratis te downloaden. Je betaalt alleen voor je Opplex IPTV-abonnement. Compatibel met iOS 10.0.5 en hoger en Android 4.4 (Kitkat) en hoger.',
         'faq' => [
             'heading' => 'Veelgestelde vragen over IPTV-apps',
@@ -171,7 +186,7 @@ return [
     ],
 
     'subscription' => [
-        'page_title' => 'IPTV-abonnementsdienst',
+        'page_title' => 'IPTV-abonnementsdiensten',
         'hero' => [
             'eyebrow' => 'Live TV, sport, films, series, 4K en catch-up',
             'heading' => 'IPTV-abonnementsdienst: alles wat je wilt bekijken, vanaf $2.99',
@@ -183,17 +198,17 @@ return [
             'secondary_cta' => 'Start gratis proefperiode via WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD- en 4K-streaming', 'text' => 'Scherp beeld op elk apparaat. Ondersteunt het kanaal 4K, dan krijg je 4K. Geen compressie, geen kwaliteitslimiet.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen', 'text' => 'Sport, nieuws, entertainment en internationale content. Elk belangrijk kanaal staat ertussen.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand', 'text' => '50,000+ titels beschikbaar vanaf het moment dat je een abonnement neemt. Geen extra VOD-pakket nodig.'],
-                ['icon' => 'flaticon-customer-service', 'title' => 'Snelle installatie op elk apparaat', 'text' => 'We helpen je op weg op Firestick, Smart TV, Android, iOS of MAG. De meeste installaties duren minder dan vijf minuten.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen:', 'text' => 'Sport, nieuws, entertainment en internationale content. Elk belangrijk kanaal staat ertussen.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand:', 'text' => '50,000+ titels beschikbaar vanaf het moment dat je een abonnement neemt. Geen extra VOD-pakket nodig.'],
+                ['icon' => 'flaticon-customer-service', 'title' => 'Snelle installatie op elk apparaat:', 'text' => 'We helpen je op weg op Firestick, Smart TV, Android, iOS of MAG. De meeste installaties duren minder dan vijf minuten.'],
             ],
         ],
         'steps' => [
             'heading' => 'In drie stappen van aanmelden naar streamen',
             'items' => [
-                ['title' => 'Kies je abonnement', 'text' => 'Kies hoelang je een abonnement wilt: maandelijks, halfjaarlijks of jaarlijks. Alle abonnementen omvatten dezelfde kanalen en content. Het enige verschil is de looptijd en de kosten per maand.'],
-                ['title' => 'Ontvang je inloggegevens', 'text' => 'Na het afrekenen sturen we je gebruikersnaam, wachtwoord en server-URL per e-mail en WhatsApp. Meestal ontvang je deze binnen enkele minuten nadat de betaling is verwerkt.'],
-                ['title' => 'Open je app en begin met kijken', 'text' => 'Download je IPTV-speler, tik op "Login with Xtream Codes" en voer de drie gegevens in die we je hebben gestuurd. Je kanalen worden automatisch geladen. Klaar.'],
+                ['title' => 'Kies je abonnement.', 'text' => 'Kies hoelang je een abonnement wilt: maandelijks, halfjaarlijks of jaarlijks. Alle abonnementen omvatten dezelfde kanalen en content. Het enige verschil is de looptijd en de kosten per maand.'],
+                ['title' => 'Ontvang je inloggegevens.', 'text' => 'Na het afrekenen sturen we je gebruikersnaam, wachtwoord en server-URL per e-mail en WhatsApp. Meestal ontvang je deze binnen enkele minuten nadat de betaling is verwerkt.'],
+                ['title' => 'Open je app en begin met kijken.', 'text' => 'Download je IPTV-speler, tik op "Login with Xtream Codes" en voer de drie gegevens in die we je hebben gestuurd. Je kanalen worden automatisch geladen. Klaar.'],
             ],
             'support' => 'Op enig moment hulp nodig? Stuur ons een bericht via WhatsApp en we begeleiden je door het hele proces.',
             'cta' => 'Bekijk compatibele apps',
@@ -202,9 +217,9 @@ return [
             'heading' => 'Waarom mensen naar Opplex overstappen en blijven',
             'items' => [
                 ['title' => 'Echt geen buffering.', 'text' => 'We weten dat elke IPTV-aanbieder dit zegt. Het verschil bij Opplex is onze serverinfrastructuur, speciaal gebouwd om piekverkeer in meerdere regio\'s zonder vertraging te verwerken. Onze uptime is drie opeenvolgende jaren 99.9% geweest.'],
-                ['title' => 'Prijzen die eerlijk blijven', 'text' => '$2.99 per maand blijft $2.99 per maand. We bieden geen laag introductietarief dat we bij verlenging verhogen. Je vindt bij het afrekenen ook geen verborgen activeringskosten. Wat je in de prijstabel ziet, is wat je betaalt.'],
-                ['title' => 'Werkt waar je ook bent', 'text' => 'Opplex werkt in 40+ landen. Of je nu thuis bent in de UK, door Europa reist of in de USA woont, je abonnement werkt hetzelfde. Geen geografische blokkades of beperkingen op basis van waar je je aanmeldt.'],
-                ['title' => 'Een team dat je echt kunt bereiken', 'text' => 'Ondersteuning via WhatsApp, zeven dagen per week. Als je ons een bericht stuurt, leest en beantwoordt een echte persoon het, meestal binnen enkele minuten. We besteden onze ondersteuning niet uit en gebruiken geen automatische bots om je aan het lijntje te houden.'],
+                ['title' => 'Prijzen die eerlijk blijven:', 'text' => '$2.99 per maand blijft $2.99 per maand. We bieden geen laag introductietarief dat we bij verlenging verhogen. Je vindt bij het afrekenen ook geen verborgen activeringskosten. Wat je in de prijstabel ziet, is wat je betaalt.'],
+                ['title' => 'Werkt waar je ook bent.', 'text' => 'Opplex werkt in 40+ landen. Of je nu thuis bent in de UK, door Europa reist of in de USA woont, je abonnement werkt hetzelfde. Geen geografische blokkades of beperkingen op basis van waar je je aanmeldt.'],
+                ['title' => 'Een team dat je echt kunt bereiken:', 'text' => 'Ondersteuning via WhatsApp, zeven dagen per week. Als je ons een bericht stuurt, leest en beantwoordt een echte persoon het, meestal binnen enkele minuten. We besteden onze ondersteuning niet uit en gebruiken geen automatische bots om je aan het lijntje te houden.'],
             ],
         ],
         'included' => [
@@ -242,9 +257,9 @@ return [
             'heading' => 'IPTV versus kabel | Wat is nu echt anders?',
             'intro' => 'Veel mensen stappen over van kabel naar IPTV en vragen zich af waarom ze zo lang hebben gewacht. Dit verandert er:',
             'items' => [
-                ['title' => 'Prijs', 'text' => 'Een doorsnee kabelpakket kost in de USA en UK $60 tot $120 per maand. Opplex begint bij $2.99. Je krijgt meer kanalen voor een fractie van de kosten.'],
+                ['title' => 'Prijs:', 'text' => 'Een doorsnee kabelpakket kost in de USA en UK $60 tot $120 per maand. Opplex begint bij $2.99. Je krijgt meer kanalen voor een fractie van de kosten.'],
                 ['title' => 'Inhoud', 'text' => 'Kabel biedt je een vast pakket, vaak met 70% kanalen die je nooit bekijkt. Opplex omvat 12,000+ kanalen plus een volledige on-demandbibliotheek, zodat je kijkt wat je wilt, wanneer je dat wilt.'],
-                ['title' => 'Installatie', 'text' => 'Geen bezoek van een monteur, geen installatieafspraak en geen hardware om te huren. Meld je aan, download een app en voer je gegevens in. Dat is alles.'],
+                ['title' => 'Installatie:', 'text' => 'Geen bezoek van een monteur, geen installatieafspraak en geen hardware om te huren. Meld je aan, download een app en voer je gegevens in. Dat is alles.'],
                 ['title' => 'Flexibiliteit', 'text' => 'Kabel legt je meestal vast in een contract van 12 of 24 maanden. Opplex-abonnementen zijn maandelijks, halfjaarlijks of jaarlijks en geen ervan wordt automatisch verlengd. Jij houdt de controle.'],
             ],
         ],

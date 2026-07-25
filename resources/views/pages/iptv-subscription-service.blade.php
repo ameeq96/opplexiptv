@@ -2,7 +2,7 @@
 
 @php
     $isDocumentEnglish = true;
-    $isExactEnglishContent = app()->getLocale() === 'en';
+    $usesSynchronizedDocumentContent = in_array(app()->getLocale(), config('app.locales', ['en']), true);
     $documentPage = __('document_product.subscription');
 @endphp
 
@@ -138,7 +138,7 @@
     @include('includes._best-packages')
 
     @if ($isDocumentEnglish)
-        <section class="document-product-section document-product-subscription-steps {{ $isExactEnglishContent ? 'document-product-subscription-steps--exact-English' : '' }}" aria-labelledby="iptv-subscription-setup-title">
+        <section class="document-product-section document-product-subscription-steps {{ $usesSynchronizedDocumentContent ? 'document-product-subscription-steps--synchronized' : '' }}" aria-labelledby="iptv-subscription-setup-title">
             <div class="auto-container">
                 <header class="document-product-section__heading">
                     <span class="document-product-eyebrow">{{ __('document_ui.subscription.steps_eyebrow') }}</span>
@@ -147,7 +147,11 @@
                 <ol class="document-product-process">
                     @foreach ($documentPage['steps']['items'] as $step)
                         <li>
-                            <span class="document-product-process__number">{{ $isExactEnglishContent ? 'Step ' . $loop->iteration . ' |' : $loop->iteration }}</span>
+                            <span class="document-product-process__number">
+                                {{ $usesSynchronizedDocumentContent
+                                    ? __('document_ui.subscription.step_label') . ' ' . $loop->iteration . ' |'
+                                    : $loop->iteration }}
+                            </span>
                             <div>
                                 <h3>{{ $step['title'] }}</h3>
                                 <p>{{ $step['text'] }}</p>

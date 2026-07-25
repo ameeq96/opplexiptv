@@ -20,6 +20,7 @@ return [
         'plans' => [
             'monthly' => [
                 'title' => 'Mensal',
+                'price' => '$2.99 / 1 mês',
                 'features' => [
                     'Canais em direto 4K sem buffering',
                     'Todos os filmes, séries e desportos incluídos',
@@ -29,6 +30,7 @@ return [
             ],
             'three_months' => [
                 'title' => '3 meses',
+                'price' => '$7.99 / 3 meses',
                 'features' => [
                     'O mesmo acesso completo do pacote mensal',
                     'Melhor valor por mês',
@@ -37,6 +39,7 @@ return [
             ],
             'half_yearly' => [
                 'title' => 'Semestral',
+                'price' => '$14.99 / 6 meses',
                 'features' => [
                     'O mesmo acesso completo do pacote de 3 meses',
                     'Seis meses de streaming ininterrupto',
@@ -45,6 +48,7 @@ return [
             ],
             'yearly' => [
                 'title' => 'Anual',
+                'price' => '$23.99 / 12 meses',
                 'features' => [
                     'Melhor valor, menos de $2 por mês',
                     'Um ano completo de TV em direto, desporto e VOD em 4K',
@@ -130,7 +134,7 @@ return [
             ],
             [
                 'author' => 'Becky Sobers',
-                'text' => 'Troquei o cabo pela Opplex IPTV e fico contente por ter tomado a decisão certa.',
+                'text' => '“Troquei o cabo pela Opplex IPTV e fico contente por ter tomado a decisão certa.”',
             ],
             [
                 'author' => 'Sarah',

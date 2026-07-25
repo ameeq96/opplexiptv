@@ -256,21 +256,21 @@ return [
             'heading' => 'Tres formas de contactar con nosotros',
             'items' => [
                 [
-                    'title' => 'WhatsApp (la más rápida)',
+                    'title' => 'WhatsApp (la más rápida):',
                     'text' => 'Escríbenos al +1 (639) 390-3194. Supervisamos WhatsApp durante todo el día y respondemos en pocos minutos. Es la mejor opción para solicitar pruebas, recibir ayuda con la configuración, resolver problemas de acceso, hacer preguntas de facturación y consultar sobre reventa.',
                     'cta' => 'Escribir por WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
                 ],
                 [
-                    'title' => 'Correo electrónico',
+                    'title' => 'Correo electrónico:',
                     'text' => 'Envíanos un mensaje a info@opplexiptv.com. Respondemos en unas horas durante el horario comercial. Es la mejor opción para preguntas detalladas, recibos de facturación y consultas formales.',
                     'cta' => 'Enviar un correo electrónico',
                     'type' => 'email',
                     'icon' => 'fa fa-envelope-o',
                 ],
                 [
-                    'title' => 'Formulario de contacto',
+                    'title' => 'Formulario de contacto:',
                     'text' => 'Rellena el formulario siguiente y te responderemos por correo electrónico. Es la mejor opción para preguntas generales si prefieres no escribirnos directamente.',
                     'cta' => 'Ir al formulario',
                     'type' => 'form',
@@ -281,12 +281,12 @@ return [
         'reasons' => [
             'heading' => '¿No sabes qué escribir? Estos son los motivos más habituales por los que nos contactan',
             'items' => [
-                ['title' => 'Iniciar una prueba gratuita', 'text' => 'Escríbenos por WhatsApp y dinos en qué dispositivo quieres hacer la prueba. Activaremos una prueba y te guiaremos durante la configuración.', 'icon' => 'fa fa-play-circle-o'],
-                ['title' => 'Ayuda con la configuración y la instalación', 'text' => 'Dinos por WhatsApp qué tipo de dispositivo tienes. Te responderemos en pocos minutos con instrucciones paso a paso, normalmente acompañadas de capturas de pantalla.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Faltan los datos de acceso', 'text' => 'Comprueba primero la carpeta de spam. Si tus datos aún no han llegado, escríbenos indicando el correo electrónico que utilizaste al finalizar la compra y te los reenviaremos de inmediato.', 'icon' => 'fa fa-key'],
-                ['title' => 'Preguntas sobre facturación y pagos', 'text' => 'Haz por WhatsApp o correo electrónico tus preguntas sobre cargos, recibos, precios de renovación o cambios de plan. Conservamos un registro de todos los pedidos y podemos consultar rápidamente tus datos.', 'icon' => 'fa fa-credit-card'],
-                ['title' => 'Consultas sobre reventa', 'text' => '¿Te interesa el panel de revendedor? Escríbenos por WhatsApp. Te explicaremos cómo funcionan los créditos y cómo configurar la primera línea de un cliente.', 'icon' => 'fa fa-users'],
-                ['title' => 'Solicitudes de canales o avisos de buffering', 'text' => '¿No encuentras un canal concreto? ¿Tienes buffering? Avísanos por WhatsApp y lo investigaremos, repararemos o añadiremos cuando sea posible.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Iniciar una prueba gratuita:', 'text' => 'Escríbenos por WhatsApp y dinos en qué dispositivo quieres hacer la prueba. Activaremos una prueba y te guiaremos durante la configuración.', 'icon' => 'fa fa-play-circle-o'],
+                ['title' => 'Ayuda con la configuración y la instalación:', 'text' => 'Dinos por WhatsApp qué tipo de dispositivo tienes. Te responderemos en pocos minutos con instrucciones paso a paso, normalmente acompañadas de capturas de pantalla.', 'icon' => 'fa fa-wrench'],
+                ['title' => 'Faltan los datos de acceso:', 'text' => 'Comprueba primero la carpeta de spam. Si tus datos aún no han llegado, escríbenos indicando el correo electrónico que utilizaste al finalizar la compra y te los reenviaremos de inmediato.', 'icon' => 'fa fa-key'],
+                ['title' => 'Preguntas sobre facturación y pagos:', 'text' => 'Haz por WhatsApp o correo electrónico tus preguntas sobre cargos, recibos, precios de renovación o cambios de plan. Conservamos un registro de todos los pedidos y podemos consultar rápidamente tus datos.', 'icon' => 'fa fa-credit-card'],
+                ['title' => 'Consultas sobre reventa:', 'text' => '¿Te interesa el panel de revendedor? Escríbenos por WhatsApp. Te explicaremos cómo funcionan los créditos y cómo configurar la primera línea de un cliente.', 'icon' => 'fa fa-users'],
+                ['title' => 'Solicitudes de canales o avisos de buffering:', 'text' => '¿No encuentras un canal concreto? ¿Tienes buffering? Avísanos por WhatsApp y lo investigaremos, repararemos o añadiremos cuando sea posible.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
