@@ -134,7 +134,7 @@ return [
     ],
 
     'shop' => [
-        'menu_label' => 'Products',
+        'menu_label' => 'Shop',
         'page_aria' => 'Shop Page',
         'delivered_directly' => 'Delivered directly',
         'affiliate_picks' => 'Affiliate picks',
