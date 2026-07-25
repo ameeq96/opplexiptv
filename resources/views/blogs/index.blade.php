@@ -258,7 +258,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);

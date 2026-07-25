@@ -1,4 +1,4 @@
-/* English commerce-page content sourced from Opplex IPTV (1).docx. */
+/* Shared document-led commerce layouts for every supported locale. */
 .doc-commerce {
     --dc-accent: #df0303;
     --dc-accent-dark: #a90000;
@@ -703,4 +703,30 @@
     .doc-commerce .dc-button:hover {
         transform: none;
     }
+}
+
+html[dir="rtl"] .doc-commerce {
+    text-align: right;
+}
+
+html[dir="rtl"] .doc-commerce .dc-title,
+html[dir="rtl"] .doc-commerce .dc-section h2,
+html[dir="rtl"] .doc-commerce .dc-trial h2,
+html[dir="rtl"] .doc-commerce .dc-payment-panel h2,
+html[dir="rtl"] .doc-commerce .dc-eyebrow {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .doc-commerce .dc-eyebrow {
+    text-transform: none;
+}
+
+html[dir="rtl"] .dc-hero::after {
+    right: auto;
+    left: -90px;
+}
+
+html[dir="rtl"] .dc-content-card__number {
+    right: auto;
+    left: 20px;
 }

@@ -42,7 +42,7 @@ class AboutPerformanceTest extends TestCase
         $this->assertAboutUsesNativeShell($html);
     }
 
-    public function test_localized_about_keeps_its_page_styles_and_native_logo_carousel_without_legacy_assets(): void
+    public function test_localized_about_uses_the_document_styles_and_native_shell(): void
     {
         app()->setLocale('es');
 
@@ -53,7 +53,7 @@ class AboutPerformanceTest extends TestCase
 
         foreach ([
             'about-critical-styles' => Vite::content('resources/css/site-critical.css'),
-            'about-page-styles' => file_get_contents(public_path('css/about.css')),
+            'about-document-styles' => file_get_contents(public_path('css/document-support.css')),
         ] as $styleId => $expectedCss) {
             $this->assertIsString($expectedCss);
             $this->assertSame(
@@ -63,7 +63,7 @@ class AboutPerformanceTest extends TestCase
             $this->assertSame(hash('sha256', $expectedCss), hash('sha256', $matches[1]));
         }
 
-        $this->assertStringNotContainsString('id="about-document-styles"', $html);
+        $this->assertStringNotContainsString('id="about-page-styles"', $html);
         $this->assertStringNotContainsString('href="'.asset('css/about.css'), $html);
         $this->assertStringNotContainsString('href="'.asset('css/document-support.css'), $html);
         $this->assertStringContainsString('data-native-carousel', $html);

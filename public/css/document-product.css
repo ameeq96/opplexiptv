@@ -1,4 +1,4 @@
-/* English document-led content for product and streaming pages. */
+/* Shared document-led layouts for product and streaming pages. */
 .document-product-page,
 .document-product-section,
 .document-product-cta {
@@ -740,4 +740,46 @@
         scroll-behavior: auto !important;
         transition-duration: .01ms !important;
     }
+}
+
+html[dir="rtl"] .document-product-page,
+html[dir="rtl"] .document-product-section,
+html[dir="rtl"] .document-product-cta {
+    text-align: right;
+}
+
+html[dir="rtl"] .document-product-page h1,
+html[dir="rtl"] .document-product-page h2,
+html[dir="rtl"] .document-product-page h3,
+html[dir="rtl"] .document-product-section h2,
+html[dir="rtl"] .document-product-section h3,
+html[dir="rtl"] .document-product-cta h2,
+html[dir="rtl"] .document-product-eyebrow,
+html[dir="rtl"] .document-product-shop-card__badge {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .document-product-eyebrow,
+html[dir="rtl"] .document-product-shop-card__badge {
+    text-transform: none;
+}
+
+html[dir="rtl"] .document-product-check-grid li {
+    padding-right: 44px;
+    padding-left: 14px;
+}
+
+html[dir="rtl"] .document-product-check-grid li::before {
+    right: 16px;
+    left: auto;
+}
+
+html[dir="rtl"] .document-product-shop-card__badge {
+    right: 12px;
+    left: auto;
+}
+
+html[dir="rtl"] .document-product-contact-card .fa-arrow-right,
+html[dir="rtl"] .document-product-button .fa-arrow-right {
+    transform: rotate(180deg);
 }

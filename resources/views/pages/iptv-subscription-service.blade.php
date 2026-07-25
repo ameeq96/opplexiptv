@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentPage = $isDocumentEnglish ? __('document_product.subscription') : [];
+    $isDocumentEnglish = true;
+    $documentPage = __('document_product.subscription');
 @endphp
 
 @section('title', $isDocumentEnglish ? $documentPage['hero']['heading'] : __('messages.iptv_subscription_service.title'))
@@ -47,12 +47,12 @@
     <x-page-title
         :title="$isDocumentEnglish ? $documentPage['page_title'] : ($page['title'] ?? __('messages.iptv_subscription_service.title'))"
         :breadcrumbs="[
-            ['url' => route('home'), 'label' => $page['breadcrumb']['home'] ?? __('messages.nav_home'), 'aria' => 'Go to Home'],
+            ['url' => route('home'), 'label' => $page['breadcrumb']['home'] ?? __('messages.nav_home'), 'aria' => __('document_ui.shared.go_home')],
             ['label' => $page['breadcrumb']['current'] ?? __('messages.nav_iptv_subscription_service')],
         ]"
         background="images/background/9.webp"
         :rtl="$isRtl"
-        aria-label="IPTV Subscription Service Page Title"
+        aria-label="{{ __('document_ui.subscription.page_aria') }}"
     />
 
     @php
@@ -60,7 +60,7 @@
     @endphp
 
     @if ($isDocumentEnglish)
-        <section class="ipts-hero document-product-page document-product-subscription" dir="ltr"
+        <section class="ipts-hero document-product-page document-product-subscription" dir="{{ $isRtl ? 'rtl' : 'ltr' }}"
             aria-labelledby="iptv-subscription-service-title">
             <div class="auto-container">
                 <div class="ipts-hero__head document-product-hero document-product-hero--compact">
@@ -140,7 +140,7 @@
         <section class="document-product-section document-product-subscription-steps" aria-labelledby="iptv-subscription-setup-title">
             <div class="auto-container">
                 <header class="document-product-section__heading">
-                    <span class="document-product-eyebrow">How it works</span>
+                    <span class="document-product-eyebrow">{{ __('document_ui.subscription.steps_eyebrow') }}</span>
                     <h2 id="iptv-subscription-setup-title">{{ $documentPage['steps']['heading'] }}</h2>
                 </header>
                 <ol class="document-product-process">
@@ -204,7 +204,7 @@
         <section class="document-product-section document-product-section--light" aria-labelledby="document-subscription-why-title">
             <div class="auto-container">
                 <header class="document-product-section__heading">
-                    <span class="document-product-eyebrow">Why choose Opplex</span>
+                    <span class="document-product-eyebrow">{{ __('document_ui.subscription.why_eyebrow') }}</span>
                     <h2 id="document-subscription-why-title">{{ $documentPage['why']['heading'] }}</h2>
                 </header>
                 <div class="document-product-card-grid document-product-card-grid--four">
@@ -223,7 +223,7 @@
             <div class="auto-container">
                 <div class="document-product-split">
                     <header>
-                        <span class="document-product-eyebrow">No locked features</span>
+                        <span class="document-product-eyebrow">{{ __('document_ui.subscription.included_eyebrow') }}</span>
                         <h2 id="document-subscription-included-title">{{ $documentPage['included']['heading'] }}</h2>
                         <p>{{ $documentPage['included']['intro'] }}</p>
                     </header>
@@ -240,7 +240,7 @@
             <div class="auto-container">
                 <div class="document-product-split document-product-split--devices">
                     <div>
-                        <span class="document-product-eyebrow document-product-eyebrow--inverse">Device compatibility</span>
+                        <span class="document-product-eyebrow document-product-eyebrow--inverse">{{ __('document_ui.shared.device_compatibility') }}</span>
                         <h2 id="document-subscription-devices-title">{{ $documentPage['devices']['heading'] }}</h2>
                         <p>{{ $documentPage['devices']['intro'] }}</p>
                         <ul class="document-product-check-grid">
@@ -260,7 +260,7 @@
         <section class="document-product-section document-product-comparison" aria-labelledby="document-subscription-comparison-title">
             <div class="auto-container">
                 <header class="document-product-section__heading">
-                    <span class="document-product-eyebrow">A simpler way to watch</span>
+                    <span class="document-product-eyebrow">{{ __('document_ui.subscription.comparison_eyebrow') }}</span>
                     <h2 id="document-subscription-comparison-title">{{ $documentPage['comparison']['heading'] }}</h2>
                     <p>{{ $documentPage['comparison']['intro'] }}</p>
                 </header>
@@ -280,7 +280,7 @@
     @include('includes._testimonials')
 
     @unless ($isMobile)
-        <section class="clients-section ipts-channels" aria-label="Trusted Brands Using Opplex IPTV">
+        <section class="clients-section ipts-channels" aria-label="{{ __('document_ui.subscription.brands_aria') }}">
             <div class="auto-container">
                 <div id="iptv-subscription-channel-grid" class="ipts-channel-grid" role="list">
                     @foreach ($logos as $logo)
@@ -288,11 +288,11 @@
                             $logoPath = is_array($logo) ? ($logo['image'] ?? '') : $logo;
                             $altText = is_array($logo) ? ($logo['alt'] ?? '') : '';
                             if (!$altText) {
-                                $brandName = pathinfo($logoPath, PATHINFO_FILENAME);
-                                $altText = ucfirst(str_replace(['-', '_'], ' ', $brandName)) . ' logo';
+                                $brandName = ucfirst(str_replace(['-', '_'], ' ', pathinfo($logoPath, PATHINFO_FILENAME)));
+                                $altText = __('document_ui.subscription.client_logo_aria', ['name' => $brandName]);
                             }
                         @endphp
-                        <div class="channel-showcase__card" role="listitem" aria-label="Client logo: {{ $altText }}">
+                        <div class="channel-showcase__card" role="listitem" aria-label="{{ $altText }}">
                             <div class="image-box">
                                 <div class="wrapper-circle">
                                     <img src="{{ asset($logoPath) }}" alt="{{ $altText }}"
@@ -374,7 +374,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);

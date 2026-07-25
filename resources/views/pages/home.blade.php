@@ -1,24 +1,22 @@
 ﻿@extends('layouts.default')
 @section('title', __('messages.site_title'))
 
-@if (app()->getLocale() === 'en')
-    @push('styles')
-        @php
-            $homeDocumentCss = @file_get_contents(public_path('css/home-document.css'));
-        @endphp
-        @if ($homeDocumentCss !== false)
-            <style id="home-document-styles">{!! $homeDocumentCss !!}</style>
-        @endif
-    @endpush
-@endif
+@push('styles')
+    @php
+        $homeDocumentCss = @file_get_contents(public_path('css/home-document.css'));
+    @endphp
+    @if ($homeDocumentCss !== false)
+        <style id="home-document-styles">{!! $homeDocumentCss !!}</style>
+    @endif
+@endpush
 
 @section('content')
     @php
         $waTrial = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
         $currency = config('services.app.default_currency', 'USD');
         $useNativeHomeCarousel = true;
-        $isDocumentEnglish = app()->getLocale() === 'en';
-        $documentHome = $isDocumentEnglish ? __('messages.home_document') : [];
+        $isDocumentEnglish = true;
+        $documentHome = __('document_home');
         $documentTestimonials = [];
 
         if ($isDocumentEnglish) {
@@ -76,7 +74,8 @@
                         data-items-tablet="2"
                         data-items-mobile="1"
                         data-gap="30"
-                        data-autoplay="5000">
+                        data-autoplay="5000"
+                        data-rtl="{{ $isRtl ? 'true' : 'false' }}">
                         <div class="native-carousel__viewport">
                             <div class="native-carousel__track">
                         @foreach($homeProducts as $p)
@@ -154,7 +153,8 @@
                             data-items-tablet="2"
                             data-items-mobile="1"
                             data-gap="30"
-                            data-autoplay="5000">
+                            data-autoplay="5000"
+                            data-rtl="{{ $isRtl ? 'true' : 'false' }}">
                             <div class="native-carousel__viewport">
                                 <div class="native-carousel__track">
                             @foreach($homeAffiliateProducts as $p)
@@ -301,7 +301,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);
@@ -459,8 +459,8 @@
 @push('schema')
     {{-- Organization + WebSite are emitted site-wide from includes/head.blade.php. --}}
     {!! jsonld(seo()->service(
-        app()->getLocale() === 'en' ? __('messages.home_document.hero.heading') : 'IPTV Subscription Service',
-        app()->getLocale() === 'en' ? __('messages.home_document.hero.text') : 'Premium IPTV with 12,000+ live channels, sports, movies and VOD in HD & 4K, compatible with every device, plus a free trial and 24/7 support.',
+        __('document_home.hero.heading'),
+        __('document_home.hero.text'),
         url('/'),
     )) !!}
 @endpush

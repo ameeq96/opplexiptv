@@ -86,7 +86,7 @@ class HomeDocumentContentTest extends TestCase
         ]);
     }
 
-    public function test_non_english_home_keeps_the_existing_flow(): void
+    public function test_localized_home_uses_the_translated_document_flow(): void
     {
         Cache::put('ui:tmdb:v2:trending:all:day:es:p1', [], now()->addMinutes(10));
         app()->setLocale('es');
@@ -102,19 +102,29 @@ class HomeDocumentContentTest extends TestCase
         ])->render();
         $homeSplitImage = $this->homeSplitImageTag($html);
 
-        $this->assertStringNotContainsString('home-document-devices', $html);
-        $this->assertStringNotContainsString('home-document-stats', $html);
-        $this->assertStringNotContainsString('home-document-trial', $html);
-        $this->assertStringNotContainsString('home-document-styles', $html);
+        $this->assertStringContainsString('home-document-devices', $html);
+        $this->assertStringContainsString('home-document-stats', $html);
+        $this->assertStringContainsString('home-document-trial', $html);
+        $this->assertStringContainsString('home-document-styles', $html);
         $this->assertStringNotContainsString('home-document.css', $html);
         $this->assertStringNotContainsString('Watch What You Want, When You Want', $html);
-        $this->assertStringContainsString('loading="lazy"', $homeSplitImage);
-        $this->assertStringContainsString('fetchpriority="low"', $homeSplitImage);
-        $this->assertLessThan(
-            strpos($html, 'home-split-section'),
-            strpos($html, 'pricing-section style-two'),
-            'The non-English homepage should retain pricing before the split section.'
-        );
+        $this->assertStringContainsString('Mira lo que quieras, cuando quieras', $html);
+        foreach (['Mensual', '3 meses', 'Semestral', 'Anual'] as $translatedPlanTitle) {
+            $this->assertStringContainsString($translatedPlanTitle, $html);
+        }
+        $this->assertStringContainsString('loading="eager"', $homeSplitImage);
+        $this->assertStringContainsString('fetchpriority="high"', $homeSplitImage);
+        $this->assertMarkersAreOrdered($html, [
+            '<section class="main-slider-two native-home-hero',
+            '<section class="home-split-section',
+            '<section class="pricing-section style-two',
+            '<section class="home-document-devices"',
+            '<section class="testimonial-section',
+            '<section class="faq-section"',
+            '<section class="home-document-stats"',
+            '<section class="home-map-section',
+            '<section class="trial-cta home-document-trial',
+        ]);
     }
 
     public function test_home_uses_a_native_shell_without_the_legacy_jquery_stack(): void

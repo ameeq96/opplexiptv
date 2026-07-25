@@ -1,4 +1,4 @@
-/* English home-page sections sourced from the Opplex IPTV content document. */
+/* Shared home-page sections sourced from the Opplex IPTV content document. */
 .home-document-devices,
 .home-document-stats {
     position: relative;
@@ -398,4 +398,10 @@
         scroll-behavior: auto;
         transition-duration: 0.01ms;
     }
+}
+
+html[dir="rtl"] .home-document-devices__header h3,
+html[dir="rtl"] .home-document-stats__header h3,
+html[dir="rtl"] .home-document-stats__value {
+    letter-spacing: 0;
 }

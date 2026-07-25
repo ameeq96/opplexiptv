@@ -12,7 +12,7 @@ class UnifiedProductService
 {
     public function frontendProducts(): Collection
     {
-        $key = 'ui:' . app()->getLocale() . ':frontend-products:v2';
+        $key = 'ui:' . app()->getLocale() . ':frontend-products:v3';
 
         try {
             return Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts());
@@ -24,7 +24,7 @@ class UnifiedProductService
     private function buildFrontendProducts(): Collection
     {
         $waBase = 'https://wa.me/16393903194?text=';
-        $isDocumentEnglish = app()->getLocale() === 'en';
+        $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
 
         $affiliate = $this->hasTable('shop_products')
             ? ShopProduct::query()
@@ -53,12 +53,12 @@ class UnifiedProductService
                         'add_to_cart_url' => null,
                         'buy_now_url' => null,
                         'share_url' => route('products.share', ['type' => 'affiliate', 'id' => $p->id]),
-                        'share_text' => "Check out {$name} on Opplex IPTV.",
+                        'share_text' => __('document_ui.shop.share_message', ['name' => $name]),
                     ];
                 })
             : collect();
 
-        $digital = $isDocumentEnglish && $this->hasTable('digital_products')
+        $digital = $usesDocumentLayout && $this->hasTable('digital_products')
             ? DigitalProduct::query()
                 ->with('category:id,name')
                 ->where('is_active', true)
@@ -68,7 +68,10 @@ class UnifiedProductService
                 ->map(function (DigitalProduct $p) use ($waBase) {
                     $price = (float) $p->price;
                     $priceText = (string) $p->currency . number_format($price, 2);
-                    $waText = rawurlencode("Hi, I want to buy {$p->title} ({$priceText}).");
+                    $waText = rawurlencode(__('document_ui.shop.purchase_message', [
+                        'product' => $p->title,
+                        'price' => $priceText,
+                    ]));
 
                     return [
                         'id' => $p->id,
@@ -88,7 +91,7 @@ class UnifiedProductService
                         'add_to_cart_url' => null,
                         'buy_now_url' => $waBase . $waText,
                         'share_url' => route('products.share', ['type' => 'digital', 'id' => $p->id]),
-                        'share_text' => "Check out {$p->title} on Opplex IPTV.",
+                        'share_text' => __('document_ui.shop.share_message', ['name' => $p->title]),
                     ];
                 })
             : collect();

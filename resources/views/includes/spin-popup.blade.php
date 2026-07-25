@@ -6,7 +6,7 @@
 <div id="dw-overlay" class="dw-overlay" aria-hidden="true">
     <div class="dw-modal" role="dialog" aria-modal="true" aria-labelledby="dw-title" aria-describedby="dw-desc"
         dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
-        <button class="dw-close" type="button" aria-label="{{ __('Close') }}">&times;</button>
+        <button class="dw-close" type="button" aria-label="{{ __('messages.close') }}">&times;</button>
 
         <div class="dw-head">
             <h3 id="dw-title">{{ __('messages.discount_title') }}</h3>

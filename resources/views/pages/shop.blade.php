@@ -1,7 +1,7 @@
 ﻿@extends('layouts.default')
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentPage = $isDocumentEnglish ? __('document_product.shop') : [];
+    $isDocumentEnglish = true;
+    $documentPage = __('document_product.shop');
 @endphp
 @section('title', $isDocumentEnglish ? $documentPage['hero']['heading'] : 'Shop')
 
@@ -64,11 +64,11 @@
                 ['label' => $documentPage['page_title']],
             ]"
             background="images/background/10.webp"
-            :rtl="false"
-            aria-label="Shop Page"
+            :rtl="$isRtl"
+            :aria-label="__('document_ui.shop.page_aria')"
         />
 
-        <main class="document-product-page document-product-shop" dir="ltr">
+        <main class="document-product-page document-product-shop" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
             <section class="document-product-hero document-product-shop-hero" aria-labelledby="document-shop-title">
                 <div class="auto-container">
                     <span class="document-product-eyebrow">{{ $documentPage['hero']['eyebrow'] }}</span>
@@ -97,7 +97,7 @@
                     aria-labelledby="document-shop-{{ $group['id'] }}-title">
                     <div class="auto-container">
                         <header class="document-product-section__heading">
-                            <span class="document-product-eyebrow">{{ $isDigitalGroup ? 'Delivered directly' : 'Affiliate picks' }}</span>
+                            <span class="document-product-eyebrow">{{ $isDigitalGroup ? __('document_ui.shop.delivered_directly') : __('document_ui.shop.affiliate_picks') }}</span>
                             <h2 id="document-shop-{{ $group['id'] }}-title">{{ $documentPage['section_headings'][$headingKey] }}</h2>
                             <p>{{ $documentPage['section_headings'][$headingKey . '_intro'] }}</p>
                         </header>
@@ -128,7 +128,7 @@
                                             @if (data_get($product, 'image'))
                                                 <img src="{{ data_get($product, 'image') }}" alt="{{ $name }}" loading="lazy" decoding="async">
                                             @endif
-                                            <span class="document-product-shop-card__badge">{{ $productType === 'digital' ? 'Digital' : 'Amazon' }}</span>
+                                            <span class="document-product-shop-card__badge">{{ $productType === 'digital' ? __('document_ui.shop.digital_badge') : __('document_ui.shop.amazon_badge') }}</span>
                                         </a>
                                         <div class="unified-card__body">
                                             <h3 class="unified-card__title">
@@ -157,16 +157,16 @@
                                                         @if ($target !== '' || $productType === 'digital') target="_blank" @endif
                                                         @if ($rel !== '') rel="{{ $rel }}" @elseif ($productType === 'digital') rel="noopener" @endif
                                                         class="unified-action">
-                                                        {{ $productType === 'digital' ? 'Buy Now' : 'View on Amazon' }}
+                                                        {{ $productType === 'digital' ? __('document_ui.shop.buy_now') : __('document_ui.shop.view_amazon') }}
                                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
                                                     </a>
                                                     <button type="button"
                                                         class="unified-share"
-                                                        aria-label="Share {{ $name }}"
+                                                        aria-label="{{ __('document_ui.shared.share', ['name' => $name]) }}"
                                                         data-share-url="{{ data_get($product, 'share_url', $productUrl) }}"
                                                         data-share-title="{{ $name }}"
-                                                        data-share-text="{{ data_get($product, 'share_text', 'Check out ' . $name) }}">
+                                                        data-share-text="{{ data_get($product, 'share_text', __('document_ui.shop.share_message', ['name' => $name])) }}">
                                                         <i class="fa fa-share-alt" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
@@ -176,7 +176,7 @@
                                 </div>
                             @empty
                                 <div class="col-12">
-                                    <p class="document-product-empty">{{ $isDigitalGroup ? 'No digital products found.' : 'No devices found.' }}</p>
+                                    <p class="document-product-empty">{{ $isDigitalGroup ? __('document_ui.shop.empty_digital') : __('document_ui.shop.empty_devices') }}</p>
                                 </div>
                             @endforelse
                         </div>
@@ -186,14 +186,14 @@
 
             @if (method_exists($products, 'links'))
                 <div class="document-product-pagination">
-                    @include('includes._pagination', ['paginator' => $products, 'isRtl' => false])
+                    @include('includes._pagination', ['paginator' => $products, 'isRtl' => $isRtl])
                 </div>
             @endif
 
             <section class="document-product-section document-product-section--light" aria-labelledby="document-shop-guide-title">
                 <div class="auto-container">
                     <header class="document-product-section__heading">
-                        <span class="document-product-eyebrow">Choose with confidence</span>
+                        <span class="document-product-eyebrow">{{ __('document_ui.shop.guide_eyebrow') }}</span>
                         <h2 id="document-shop-guide-title">{{ $documentPage['guide']['heading'] }}</h2>
                     </header>
                     <div class="document-product-card-grid document-product-card-grid--guide">
@@ -213,7 +213,7 @@
                 <div class="auto-container">
                     <div class="document-product-split">
                         <div>
-                            <span class="document-product-eyebrow document-product-eyebrow--inverse">Simple WhatsApp ordering</span>
+                            <span class="document-product-eyebrow document-product-eyebrow--inverse">{{ __('document_ui.shop.ordering_eyebrow') }}</span>
                             <h2 id="document-shop-digital-orders-title">{{ $documentPage['digital_orders']['heading'] }}</h2>
                             <p>{{ $documentPage['digital_orders']['intro'] }}</p>
                             <ol class="document-product-step-list">

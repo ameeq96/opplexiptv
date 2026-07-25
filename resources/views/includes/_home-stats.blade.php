@@ -1,5 +1,5 @@
 @php
-    $stats = __('messages.home_document.stats');
+    $stats = __('document_home.stats');
 @endphp
 
 <section class="home-document-stats"

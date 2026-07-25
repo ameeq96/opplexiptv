@@ -27,9 +27,9 @@ return [
         'keywords' => 'iptv бесплатный тест, xtreme hd iptv, iptv smart player, 4k iptv онлайн, iptv приставка, лучший iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
-        'title' => 'Servis IPTV podpiski | Premium 4K IPTV plany',
-        'description' => 'Vyberite IPTV servis s live kanalami, sportom, filmami, serialami, 4K strimingom, besplatnym trial i bystroi podderzhkoi.',
-        'keywords' => 'iptv podpiska, iptv servis, luchshii iptv, 4k iptv, iptv trial, iptv plany, live tv iptv',
+        'title' => 'Сервис подписки IPTV | Премиум-тарифы IPTV в 4K',
+        'description' => 'Выберите IPTV-сервис с прямыми телеканалами, спортом, фильмами, сериалами, 4K-стримингом, бесплатным пробным периодом и быстрой поддержкой.',
+        'keywords' => 'подписка IPTV, сервис IPTV, лучший IPTV, IPTV 4K, пробный период IPTV, тарифы IPTV, прямое телевидение IPTV',
     ],
     'reseller-panel' => [
         'title' => 'Станьте реселлером IPTV | Панель Opplex IPTV',

@@ -134,11 +134,11 @@ class HomeController extends Controller
 
     public function shop()
     {
-        $isDocumentEnglish = app()->getLocale() === 'en';
-        $type = $isDocumentEnglish ? 'all' : 'affiliate';
+        $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
+        $type = $usesDocumentLayout ? 'all' : 'affiliate';
         $allProducts = $this->unifiedProducts->frontendProducts();
 
-        if ($isDocumentEnglish) {
+        if ($usesDocumentLayout) {
             $documentProductPriority = [
                 'affiliate:B08CRV62C4' => 0,
                 'affiliate:B0BP9SNVH9' => 1,
@@ -296,34 +296,34 @@ class HomeController extends Controller
     public function send(ContactRequest $request)
     {
         if (!$this->captcha->check($request->captcha)) {
-            return back()->with('error', 'Invalid Captcha. Please try again.');
+            return back()->with('error', __('document_ui.contact.captcha_error'));
         }
         $this->contact->contact($request->only('username', 'email', 'phone', 'message'));
-        return back()->with('success', 'Your message has been sent successfully!');
+        return back()->with('success', __('document_ui.contact.message_sent'));
     }
 
     public function sendBuynow(BuyNowRequest $request)
     {
         if (!$this->captcha->check($request->captcha)) {
-            return back()->with('error', 'Invalid Captcha. Please try again.');
+            return back()->with('error', __('document_ui.contact.captcha_error'));
         }
         $this->contact->buyNow($request->only('username', 'email', 'package', 'phone', 'message'));
-        return back()->with('success', 'Your message has been sent successfully!');
+        return back()->with('success', __('document_ui.contact.message_sent'));
     }
 
     public function postBuyNowPanel(BuyNowRequest $request)
     {
         if (!$this->captcha->check($request->captcha)) {
-            return back()->with('error', 'Invalid Captcha. Please try again.');
+            return back()->with('error', __('document_ui.contact.captcha_error'));
         }
         $this->contact->buyNow($request->only('username', 'email', 'package', 'phone', 'message'));
-        return back()->with('success', 'Your message has been sent successfully!');
+        return back()->with('success', __('document_ui.contact.message_sent'));
     }
 
     public function subscribe(SubscribeRequest $request)
     {
         $this->contact->subscribe($request->email);
-        return back()->with('success', 'Thank you for subscribing!');
+        return back()->with('success', __('document_ui.contact.subscription_success'));
     }
 
     public function configure(Request $request)

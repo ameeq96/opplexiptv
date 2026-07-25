@@ -12,7 +12,7 @@
         <h2>{{ $title }}</h2>
         <ul class="bread-crumb clearfix"
             style="display: flex; justify-content: {{ $rtl ? 'flex-end' : 'flex-start' }}; flex-direction: {{ $rtl ? 'row-reverse' : 'row' }};"
-            @if($ariaLabel) aria-label="Breadcrumb navigation" @endif>
+            @if($ariaLabel) aria-label="{{ __('document_ui.shared.breadcrumb_navigation') }}" @endif>
             @foreach($breadcrumbs as $crumb)
                 <li @if($loop->last) aria-current="page" @endif>
                     @if(isset($crumb['url']))

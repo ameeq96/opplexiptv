@@ -22,4 +22,26 @@ class BuyNowRequest extends FormRequest
             'captcha'  => 'required',
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            '*.required' => __('document_ui.validation.required'),
+            'email.email' => __('document_ui.validation.email'),
+            '*.string' => __('document_ui.validation.string'),
+            '*.max' => __('document_ui.validation.max'),
+        ];
+    }
+
+    public function attributes(): array
+    {
+        return [
+            'username' => __('messages.form.name'),
+            'email' => __('messages.form.email'),
+            'package' => __('messages.form.select_package'),
+            'phone' => __('messages.form.phone'),
+            'message' => __('messages.form.message'),
+            'captcha' => 'CAPTCHA',
+        ];
+    }
 }

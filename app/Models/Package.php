@@ -214,10 +214,14 @@ class Package extends Model
         $vendor = self::normalizedVendor($this->vendor ?? $this->type);
 
         $months = (int) ($this->duration_months ?: 1);
-        $unit   = $months === 1 ? '1 month' : ($months . ' months');
+        $unit = $months === 1
+            ? '1 ' . __('messages.month')
+            : $months . ' ' . __('messages.months');
 
         $priceStr = $this->display_price;
-        if (!$priceStr && $this->price_amount !== null) {
+        $shouldLocalizePrice = app()->getLocale() !== config('app.fallback_locale', 'en')
+            && in_array(app()->getLocale(), config('app.locales', ['en']), true);
+        if (($shouldLocalizePrice || ! $priceStr) && $this->price_amount !== null) {
             $priceStr = self::formatMoney($this->price_amount) . ' / ' . $unit;
         }
 
@@ -231,6 +235,7 @@ class Package extends Model
             'vendor'   => $vendor,
             'title'    => $title,
             'price'    => $priceStr,
+            'duration_months' => $months,
             'features' => $features ?: self::defaultIptvFeatures(),
             'icon'     => $this->icon ?? 'images/icons/service-1.svg',
         ];
@@ -246,10 +251,12 @@ class Package extends Model
 
         // Prefer display_price; else derive from numeric + credits
         $priceStr = $this->display_price;
-        if (!$priceStr && $this->price_amount !== null) {
+        $shouldLocalizePrice = app()->getLocale() !== config('app.fallback_locale', 'en')
+            && in_array(app()->getLocale(), config('app.locales', ['en']), true);
+        if (($shouldLocalizePrice || ! $priceStr) && $this->price_amount !== null) {
             $priceStr = self::formatMoney($this->price_amount);
             if ($this->credits) {
-                $priceStr .= ' / ' . $this->credits . ' Credits';
+                $priceStr .= ' / ' . $this->credits . ' ' . __('document_ui.reseller.credits_unit');
             }
         }
 

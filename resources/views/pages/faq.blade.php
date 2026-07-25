@@ -1,13 +1,14 @@
 @extends('layouts.default')
 
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentFaq = $isDocumentEnglish ? __('document_support.faq') : [];
-    $documentFaqGroups = $isDocumentEnglish ? ($documentFaq['groups'] ?? []) : [];
-    $documentFaqItems = $isDocumentEnglish
-        ? collect($documentFaqGroups)->flatMap(fn ($group) => $group['items'] ?? [])->values()->all()
-        : [];
-    $faqSchemaItems = $isDocumentEnglish ? $documentFaqItems : ($faqs ?? []);
+    $isDocumentEnglish = true;
+    $documentFaq = __('document_support.faq');
+    $documentFaqGroups = $documentFaq['groups'] ?? [];
+    $documentFaqItems = collect($documentFaqGroups)
+        ->flatMap(fn ($group) => $group['items'] ?? [])
+        ->values()
+        ->all();
+    $faqSchemaItems = $documentFaqItems;
 @endphp
 
 @section('title', $isDocumentEnglish ? $documentFaq['heading'] : __('messages.faq.title'))
@@ -27,20 +28,20 @@
     <x-page-title
         :title="$isDocumentEnglish ? $documentFaq['page_title'] : __('messages.faq.heading')"
         :breadcrumbs="$isDocumentEnglish
-            ? [['url' => route('home'), 'label' => 'Home'], ['label' => $documentFaq['page_title']]]
+            ? [['url' => route('home'), 'label' => __('document_ui.shared.home')], ['label' => $documentFaq['page_title']]]
             : [
                 ['url' => '/', 'label' => __('messages.faq.breadcrumb.home')],
                 ['label' => __('messages.faq.breadcrumb.current')],
             ]"
         background="images/background/10.webp"
         :rtl="$isRtl"
-        aria-label="FAQ Page" />
+        aria-label="{{ __('document_ui.faq.page_aria') }}" />
 
     @if ($isDocumentEnglish)
         <main class="document-support document-support--faq" aria-labelledby="document-faq-title">
             <section class="document-support__hero document-support__hero--compact">
                 <div class="auto-container document-support__hero-inner">
-                    <span class="document-support__eyebrow">FAQS</span>
+                    <span class="document-support__eyebrow">{{ __('document_ui.faq.eyebrow') }}</span>
                     <h1 id="document-faq-title">{{ $documentFaq['heading'] }}</h1>
                     <p>{{ $documentFaq['intro'] }}</p>
                 </div>

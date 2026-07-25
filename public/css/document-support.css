@@ -775,3 +775,84 @@
         transition: none;
     }
 }
+
+html[dir="rtl"] .document-support {
+    text-align: right;
+}
+
+html[dir="rtl"] .document-support h1,
+html[dir="rtl"] .document-support h2,
+html[dir="rtl"] .document-support__eyebrow {
+    letter-spacing: 0;
+}
+
+html[dir="rtl"] .document-support__eyebrow {
+    text-transform: none;
+}
+
+html[dir="rtl"] .document-support__section-heading--left {
+    text-align: right;
+}
+
+html[dir="rtl"] .document-support__hero::after {
+    right: auto;
+    left: -110px;
+}
+
+html[dir="rtl"] .document-support__stat {
+    border-right: 0;
+    border-left: 1px solid rgba(21, 94, 239, .14);
+}
+
+html[dir="rtl"] .document-support__stat:last-child {
+    border-left: 0;
+}
+
+html[dir="rtl"] .document-support__network-screen {
+    right: auto;
+    left: 20px;
+}
+
+html[dir="rtl"] .document-support__timeline::before {
+    right: 74px;
+    left: auto;
+}
+
+html[dir="rtl"] .document-support__timeline li::before {
+    right: 68px;
+    left: auto;
+}
+
+html[dir="rtl"] .document-support__timeline p {
+    padding-right: 18px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .document-support__contact-card .fa-arrow-right {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 767px) {
+    html[dir="rtl"] .document-support__stat {
+        border-left: 0;
+    }
+
+    html[dir="rtl"] .document-support__timeline::before {
+        right: 12px;
+        left: auto;
+    }
+
+    html[dir="rtl"] .document-support__timeline li {
+        padding-right: 36px;
+        padding-left: 0;
+    }
+
+    html[dir="rtl"] .document-support__timeline li::before {
+        right: 6px;
+        left: auto;
+    }
+
+    html[dir="rtl"] .document-support__timeline p {
+        padding-right: 0;
+    }
+}

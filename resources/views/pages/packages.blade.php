@@ -1,7 +1,10 @@
 @extends('layouts.default')
-@section('title', app()->getLocale() === 'en' ? __('document_commerce.packages.page_title') : __('messages.title'))
+@php
+    $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
+@endphp
+@section('title', $usesDocumentLayout ? __('document_commerce.packages.page_title') : __('messages.title'))
 
-@if (app()->getLocale() === 'en')
+@if ($usesDocumentLayout)
     @push('styles')
         @php
             $packagesDocumentCss = @file_get_contents(public_path('css/document-commerce.css'));
@@ -15,7 +18,7 @@
 @endif
 
 @section('content')
-    @if (app()->getLocale() === 'en')
+    @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.packages');
             $trialUrl = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
@@ -29,28 +32,24 @@
                 'images/resource/author-5.webp',
                 'images/resource/author-6.webp',
             ];
-            $packageTestimonials = collect($testimonials ?? [])->values();
-
-            if ($packageTestimonials->isEmpty()) {
-                $packageTestimonials = collect(__('messages.home_document.testimonials.reviews'))
-                    ->values()
-                    ->map(fn (array $review, int $index) => [
-                        'author_name' => $review['author'] ?? '',
-                        'text' => $review['text'] ?? '',
-                        'image' => $reviewImages[$index] ?? null,
-                    ]);
-            }
+            $packageTestimonials = collect(__('document_home.testimonials.reviews'))
+                ->values()
+                ->map(fn (array $review, int $index) => [
+                    'author_name' => $review['author'] ?? '',
+                    'text' => $review['text'] ?? '',
+                    'image' => $reviewImages[$index] ?? null,
+                ]);
         @endphp
 
         <x-page-title
             :title="$page['page_title']"
             :breadcrumbs="[
-                ['url' => route('home'), 'label' => __('messages.nav_home'), 'aria' => 'Go to Home'],
+                ['url' => route('home'), 'label' => __('messages.nav_home'), 'aria' => __('document_ui.shared.go_home')],
                 ['label' => $page['page_title']],
             ]"
             background="images/background/9.webp"
             :rtl="$isRtl"
-            aria-label="Our IPTV packages page"
+            aria-label="{{ __('document_ui.packages.page_aria') }}"
         />
 
         <main class="doc-commerce doc-commerce--packages">
@@ -89,7 +88,7 @@
             <section class="dc-section dc-section--soft" aria-labelledby="packages-how-title">
                 <div class="auto-container">
                     <div class="dc-section__header">
-                        <span class="dc-eyebrow">How It Works</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.packages.how_eyebrow') }}</span>
                         <h2 id="packages-how-title">{{ $page['how_it_works']['heading'] }}</h2>
                     </div>
 
@@ -117,7 +116,7 @@
             <section class="dc-section" aria-labelledby="packages-why-title">
                 <div class="auto-container">
                     <div class="dc-section__header">
-                        <span class="dc-eyebrow">Why Choose Opplex</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.packages.why_eyebrow') }}</span>
                         <h2 id="packages-why-title">{{ $page['why_choose']['heading'] }}</h2>
                     </div>
                     <div class="dc-content-grid dc-content-grid--four" role="list">
@@ -135,7 +134,7 @@
             <section class="dc-section dc-section--dark" aria-labelledby="packages-included-title">
                 <div class="auto-container dc-split">
                     <div class="dc-split__intro">
-                        <span class="dc-eyebrow">Included in Every Plan</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.packages.included_eyebrow') }}</span>
                         <h2 id="packages-included-title">{{ $page['included']['heading'] }}</h2>
                         <p>{{ $page['included']['intro'] }}</p>
                     </div>
@@ -149,7 +148,7 @@
 
             @include('includes._testimonials', [
                 'testimonials' => $packageTestimonials,
-                'reviewEyebrow' => 'Customer Reviews',
+                'reviewEyebrow' => __('document_ui.shared.customer_reviews'),
                 'reviewHeading' => $page['reviews']['heading'],
                 'verifiedLabel' => $page['reviews']['verified'],
                 'reviewSectionId' => 'packages-reviews-title',
@@ -164,10 +163,10 @@
                 <div class="auto-container">
                     <div class="dc-trial__panel">
                         <div>
-                            <span class="dc-eyebrow">Free IPTV Trial</span>
+                            <span class="dc-eyebrow">{{ __('document_ui.shared.free_trial') }}</span>
                             <h2 id="packages-trial-title">{{ $page['trial']['heading'] }}</h2>
                             <p>{{ $page['trial']['text'] }}</p>
-                            <ul class="dc-chip-list" aria-label="Free trial benefits">
+                            <ul class="dc-chip-list" aria-label="{{ __('document_ui.shared.free_trial_benefits') }}">
                                 @foreach ($page['trial']['items'] as $item)
                                     <li>{{ $item }}</li>
                                 @endforeach
@@ -289,7 +288,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);

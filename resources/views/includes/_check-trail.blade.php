@@ -1,11 +1,11 @@
 ﻿
 
-<section class="trial-cta {{ request()->routeIs('home') && app()->getLocale() === 'en' ? 'home-document-trial' : '' }}" dir="{{ $isRtl ? 'rtl' : 'ltr' }}"
-    aria-label="Start Your IPTV Free Trial with Opplex"
+<section class="trial-cta {{ request()->routeIs('home') ? 'home-document-trial' : '' }}" dir="{{ $isRtl ? 'rtl' : 'ltr' }}"
+    aria-label="{{ __('document_ui.home.trial_aria') }}"
     role="region">
     @php
-        $isDocumentEnglishTrial = request()->routeIs('home') && app()->getLocale() === 'en';
-        $documentTrial = $isDocumentEnglishTrial ? __('messages.home_document.trial') : [];
+        $isDocumentEnglishTrial = request()->routeIs('home');
+        $documentTrial = $isDocumentEnglishTrial ? __('document_home.trial') : [];
     @endphp
 
     <div class="trial-cta__shell">
@@ -39,13 +39,13 @@
                                     class="trial-cta__button"
                                     data-trial
                                     data-wa-href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
-                                    aria-label="Start your IPTV free trial now">
+                                    aria-label="{{ __('document_ui.home.trial_action_aria') }}">
                                     <span>{{ $documentTrial['primary_cta'] }}</span>
                                     <i class="lnr lnr-arrow-right {{ $isRtl ? 'rtl-rotate' : '' }}" aria-hidden="true"></i>
                                 </a>
                                 <a href="#pricing-section" class="trial-cta__button trial-cta__button--secondary">
                                     <span>{{ $documentTrial['secondary_cta'] }}</span>
-                                    <i class="lnr lnr-arrow-right" aria-hidden="true"></i>
+                                    <i class="lnr lnr-arrow-right {{ $isRtl ? 'rtl-rotate' : '' }}" aria-hidden="true"></i>
                                 </a>
                             </div>
                         @else
@@ -55,7 +55,7 @@
                                 class="trial-cta__button"
                                 data-trial
                                 data-wa-href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
-                                aria-label="Start your IPTV free trial now">
+                                    aria-label="{{ __('document_ui.home.trial_action_aria') }}">
                                 <span>{{ __('messages.trial_button') }}</span>
                                 <i class="lnr lnr-arrow-right {{ $isRtl ? 'rtl-rotate' : '' }}" aria-hidden="true"></i>
                             </a>

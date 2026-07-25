@@ -1,19 +1,22 @@
 @extends('layouts.default')
-@section('title', app()->getLocale() === 'en' ? __('document_commerce.reseller.page_title') : __('messages.reseller.panel.title'))
+@php
+    $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
+@endphp
+@section('title', $usesDocumentLayout ? __('document_commerce.reseller.page_title') : __('messages.reseller.panel.title'))
 
 @push('schema')
     {!! jsonld(seo()->service(
-        'IPTV Reseller Panel',
-        'Become an IPTV reseller with Opplex IPTV: panel access, credit-based plans, instant activation and 24/7 support across Europe and the USA.',
+        __('document_commerce.reseller.hero.heading'),
+        implode(' ', __('document_commerce.reseller.hero.paragraphs')),
         route('reseller-panel'),
         seo()->packageOffers('reseller'),
-        'IPTV Reseller Service',
+        __('document_commerce.reseller.page_title'),
     )) !!}
 @endpush
 
 @push('styles')
     @php
-        $isDocumentEnglish = app()->getLocale() === 'en';
+        $isDocumentEnglish = $usesDocumentLayout;
         $resellerPageCss = $isDocumentEnglish
             ? false
             : @file_get_contents(public_path('css/about.css'));
@@ -21,7 +24,7 @@
             ? @file_get_contents(public_path('css/document-commerce.css'))
             : false;
     @endphp
-    @if (app()->getLocale() === 'en')
+    @if ($usesDocumentLayout)
         @if ($resellerDocumentCss !== false)
             <style id="reseller-panel-document-styles">{!! $resellerDocumentCss !!}</style>
         @else
@@ -45,7 +48,7 @@
 @endpush
 
 @section('content')
-    @if (app()->getLocale() === 'en')
+    @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.reseller');
             $resellerWhatsAppUrl = 'https://wa.me/16393903194?text=' . urlencode($page['hero']['whatsapp_message']);
@@ -54,12 +57,12 @@
         <x-page-title
             :title="$page['page_title']"
             :breadcrumbs="[
-                ['url' => route('home'), 'label' => __('messages.nav_home'), 'aria' => 'Go to Home'],
+                ['url' => route('home'), 'label' => __('messages.nav_home'), 'aria' => __('document_ui.shared.go_home')],
                 ['label' => $page['page_title']],
             ]"
             background="images/background/7.webp"
             :rtl="$isRtl"
-            aria-label="Opplex IPTV reseller panel page"
+            aria-label="{{ __('document_ui.reseller.page_aria') }}"
         />
 
         <main class="doc-commerce doc-commerce--reseller">
@@ -89,7 +92,7 @@
             <section class="dc-section dc-section--soft" aria-labelledby="reseller-credits-title">
                 <div class="auto-container">
                     <div class="dc-section__header">
-                        <span class="dc-eyebrow">How Credits Work</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.reseller.credits_eyebrow') }}</span>
                         <h2 id="reseller-credits-title">{{ $page['credits']['heading'] }}</h2>
                     </div>
                     <div class="dc-prose dc-prose--centered">
@@ -115,7 +118,7 @@
             <section class="dc-section" aria-labelledby="reseller-account-title">
                 <div class="auto-container">
                     <div class="dc-section__header">
-                        <span class="dc-eyebrow">Your Reseller Account</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.reseller.account_eyebrow') }}</span>
                         <h2 id="reseller-account-title">{{ $page['account']['heading'] }}</h2>
                     </div>
                     <div class="dc-content-grid dc-content-grid--three" role="list">
@@ -135,7 +138,7 @@
             <section class="dc-section dc-section--soft" aria-labelledby="reseller-audience-title">
                 <div class="auto-container">
                     <div class="dc-section__header">
-                        <span class="dc-eyebrow">Who Should Resell</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.reseller.audience_eyebrow') }}</span>
                         <h2 id="reseller-audience-title">{{ $page['audience']['heading'] }}</h2>
                         <p>{{ $page['audience']['intro'] }}</p>
                     </div>
@@ -290,7 +293,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);

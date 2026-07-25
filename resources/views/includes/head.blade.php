@@ -104,7 +104,7 @@
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
     <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
 @endif
-@if ($routeName === 'home' && $locale === 'en')
+@if ($routeName === 'home')
     <link rel="preload" as="image" href="{{ asset('images/resource/movie-night-tv-1024.webp') }}"
         imagesrcset="{{ asset('images/resource/movie-night-tv-480.webp') }} 480w,
             {{ asset('images/resource/movie-night-tv-720.webp') }} 720w,

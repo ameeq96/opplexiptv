@@ -1,10 +1,13 @@
 @extends('layouts.default')
-@section('title', app()->getLocale() === 'en' ? __('document_commerce.pricing.page_title') : __('messages.title'))
+@php
+    $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
+@endphp
+@section('title', $usesDocumentLayout ? __('document_commerce.pricing.page_title') : __('messages.title'))
 
 @push('schema')
     {!! jsonld(seo()->service(
-        'IPTV Subscription Plans',
-        'Affordable IPTV subscription plans with 12,000+ live channels, sports, movies and VOD in HD & 4K, on every device.',
+        __('document_commerce.pricing.hero.heading'),
+        implode(' ', __('document_commerce.pricing.hero.paragraphs')),
         route('pricing'),
         seo()->packageOffers('iptv'),
     )) !!}
@@ -12,7 +15,7 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/pricing.css') }}?v={{ @filemtime(public_path('css/pricing.css')) ?: 1 }}">
-    @if (app()->getLocale() === 'en')
+    @if ($usesDocumentLayout)
         <link rel="stylesheet" href="{{ asset('css/document-commerce.css') }}?v={{ @filemtime(public_path('css/document-commerce.css')) ?: 1 }}">
     @endif
 @endpush
@@ -25,7 +28,7 @@
         $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
     @endphp
 
-    @if (app()->getLocale() === 'en')
+    @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.pricing');
             $trialUrl = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
@@ -35,7 +38,7 @@
             ['url' => route('home'), 'label' => __('messages.nav_home')],
             ['label' => $page['page_title']],
         ]" background="images/background/7.webp" :rtl="$isRtl"
-            aria-label="IPTV subscription pricing page" />
+        aria-label="{{ __('document_ui.pricing.page_aria') }}" />
 
         <main class="doc-commerce doc-commerce--pricing">
             <section class="dc-hero dc-hero--compact" aria-labelledby="pricing-document-title">
@@ -57,7 +60,7 @@
             <section class="dc-section dc-section--dark" aria-labelledby="pricing-included-title">
                 <div class="auto-container dc-split">
                     <div class="dc-split__intro">
-                        <span class="dc-eyebrow">Included in Every Plan</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.pricing.included_eyebrow') }}</span>
                         <h2 id="pricing-included-title">{{ $page['included']['heading'] }}</h2>
                         <p>{{ $page['included']['intro'] }}</p>
                     </div>
@@ -103,7 +106,7 @@
             <section class="dc-section dc-section--soft" aria-labelledby="pricing-guide-title">
                 <div class="auto-container">
                     <div class="dc-section__header">
-                        <span class="dc-eyebrow">Plan Guide</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.pricing.guide_eyebrow') }}</span>
                         <h2 id="pricing-guide-title">{{ $page['guide']['heading'] }}</h2>
                     </div>
                     <div class="dc-plan-grid" role="list">
@@ -115,13 +118,13 @@
                             </article>
                         @endforeach
                     </div>
-                    <aside class="dc-note" aria-label="Try Opplex before choosing a plan">
+                    <aside class="dc-note" aria-label="{{ __('document_ui.pricing.trial_aria') }}">
                         <div>
                             <h3>{{ $page['guide']['trial_heading'] }}</h3>
                             <p>{{ $page['guide']['trial_text'] }}</p>
                         </div>
                         <a class="dc-button dc-button--primary" href="{{ $trialUrl }}" target="_blank" rel="noopener"
-                            data-trial data-wa-href="{{ $trialUrl }}">Start Free Trial</a>
+                            data-trial data-wa-href="{{ $trialUrl }}">{{ __('document_ui.shared.start_free_trial') }}</a>
                     </aside>
                 </div>
             </section>
@@ -131,7 +134,7 @@
                     <div class="dc-payment-panel">
                         <div class="dc-payment-panel__icon fa fa-lock" aria-hidden="true"></div>
                         <div>
-                            <span class="dc-eyebrow">Payment and Security</span>
+                        <span class="dc-eyebrow">{{ __('document_ui.pricing.payment_eyebrow') }}</span>
                             <h2 id="pricing-payment-title">{{ $page['payment']['heading'] }}</h2>
                             <div class="dc-prose">
                                 @foreach ($page['payment']['paragraphs'] as $paragraph)

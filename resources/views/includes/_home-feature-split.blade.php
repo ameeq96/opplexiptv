@@ -1,7 +1,7 @@
 {{-- Home two-column section: image | heading + paragraph (stacks on mobile, RTL-aware) --}}
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentSplit = $isDocumentEnglish ? __('messages.home_document.split') : [];
+    $isDocumentEnglish = true;
+    $documentSplit = __('document_home.split');
 @endphp
 <section class="home-split-section py-5" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" aria-labelledby="home-split-heading">
     <div class="auto-container">

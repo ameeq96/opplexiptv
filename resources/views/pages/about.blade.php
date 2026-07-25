@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentAbout = $isDocumentEnglish ? __('document_support.about') : [];
+    $isDocumentEnglish = true;
+    $documentAbout = __('document_support.about');
 @endphp
 
 @section('title', $isDocumentEnglish ? $documentAbout['page_title'] : __('messages.about.title'))
@@ -43,11 +43,11 @@
     <x-page-title
         :title="$isDocumentEnglish ? $documentAbout['page_title'] : __('messages.about.title_short')"
         :breadcrumbs="$isDocumentEnglish
-            ? [['url' => route('home'), 'label' => 'Home'], ['label' => $documentAbout['page_title']]]
+            ? [['url' => route('home'), 'label' => __('document_ui.shared.home')], ['label' => $documentAbout['page_title']]]
             : [['url' => '/', 'label' => __('messages.nav.home')], ['label' => __('messages.nav.about_us')]]"
         background="images/background/7.webp"
         :rtl="$isRtl"
-        aria-label="About Us Page" />
+        aria-label="{{ __('document_ui.about.page_aria') }}" />
 
     @if ($isDocumentEnglish)
         <main class="document-support document-support--about">
@@ -73,7 +73,7 @@
                 </div>
             </section>
 
-            <section class="document-support__stats" aria-label="Opplex IPTV service statistics">
+            <section class="document-support__stats" aria-label="{{ __('document_ui.about.stats_aria') }}">
                 <div class="auto-container document-support__stats-grid">
                     @foreach ($documentAbout['stats'] as $stat)
                         <article class="document-support__stat">
@@ -88,7 +88,7 @@
             <section class="document-support__section" aria-labelledby="document-about-story-title">
                 <div class="auto-container document-support__split">
                     <div class="document-support__copy">
-                        <span class="document-support__eyebrow">Our Story</span>
+                        <span class="document-support__eyebrow">{{ __('document_ui.about.story_eyebrow') }}</span>
                         <h2 id="document-about-story-title">{{ $documentAbout['story']['heading'] }}</h2>
                         @foreach ($documentAbout['story']['paragraphs'] as $paragraph)
                             <p>{{ $paragraph }}</p>
@@ -111,7 +111,7 @@
             <section class="document-support__section document-support__section--tint" aria-labelledby="document-about-values-title">
                 <div class="auto-container">
                     <div class="document-support__section-heading">
-                        <span class="document-support__eyebrow">What We Stand For</span>
+                        <span class="document-support__eyebrow">{{ __('document_ui.about.values_eyebrow') }}</span>
                         <h2 id="document-about-values-title">{{ $documentAbout['values']['heading'] }}</h2>
                     </div>
                     <div class="document-support__card-grid document-support__card-grid--three">
@@ -129,7 +129,7 @@
             <section class="document-support__section" aria-labelledby="document-about-regions-title">
                 <div class="auto-container">
                     <div class="document-support__section-heading">
-                        <span class="document-support__eyebrow">Where We Serve</span>
+                        <span class="document-support__eyebrow">{{ __('document_ui.about.regions_eyebrow') }}</span>
                         <h2 id="document-about-regions-title">{{ $documentAbout['regions']['heading'] }}</h2>
                         <p>{{ $documentAbout['regions']['intro'] }}</p>
                     </div>
@@ -147,7 +147,7 @@
 
             <section class="document-support__section document-support__section--dark" aria-labelledby="document-about-team-title">
                 <div class="auto-container document-support__narrow">
-                    <span class="document-support__eyebrow">The Team</span>
+                    <span class="document-support__eyebrow">{{ __('document_ui.about.team_eyebrow') }}</span>
                     <h2 id="document-about-team-title">{{ $documentAbout['team']['heading'] }}</h2>
                     @foreach ($documentAbout['team']['paragraphs'] as $paragraph)
                         <p>{{ $paragraph }}</p>
@@ -158,7 +158,7 @@
             <section class="document-support__section" aria-labelledby="document-about-timeline-title">
                 <div class="auto-container">
                     <div class="document-support__section-heading">
-                        <span class="document-support__eyebrow">Milestones</span>
+                        <span class="document-support__eyebrow">{{ __('document_ui.about.timeline_eyebrow') }}</span>
                         <h2 id="document-about-timeline-title">{{ $documentAbout['timeline']['heading'] }}</h2>
                     </div>
                     <ol class="document-support__timeline">
@@ -279,7 +279,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);

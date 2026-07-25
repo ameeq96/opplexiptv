@@ -88,7 +88,7 @@ class LcpHintsTest extends TestCase
 
         app()->setLocale('es');
 
-        $this->assertStringNotContainsString(
+        $this->assertStringContainsString(
             'movie-night-tv-1024.webp',
             $this->renderHeadForRoute('home')
         );

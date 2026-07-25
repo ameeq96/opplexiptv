@@ -1,16 +1,36 @@
 @php
-    $isDocumentEnglishTestimonials = request()->routeIs('home') && app()->getLocale() === 'en';
-    $documentTestimonials = $isDocumentEnglishTestimonials ? __('messages.home_document.testimonials') : [];
-    $reviewItems = collect($testimonials ?? [])
-        ->filter(fn ($testimonial) => !empty($testimonial['text']) && !empty($testimonial['author_name']))
-        ->take(8)
-        ->values();
+    $documentReviewRoutes = ['home', 'packages', 'about', 'reseller-panel', 'iptv-subscription-service'];
+    $usesDocumentTestimonials = in_array(optional(request()->route())->getName(), $documentReviewRoutes, true)
+        && in_array(app()->getLocale(), config('app.locales', ['en']), true);
+    $documentTestimonials = $usesDocumentTestimonials ? __('document_home.testimonials') : [];
+    $documentReviewImages = [
+        'images/img-test-2.webp',
+        'images/img-test-3.webp',
+        'images/resource/author-1.webp',
+        'images/resource/author-2.webp',
+        'images/img-test.webp',
+        'images/resource/author-3.webp',
+        'images/resource/author-5.webp',
+        'images/resource/author-6.webp',
+    ];
+    $reviewItems = $usesDocumentTestimonials
+        ? collect($documentTestimonials['reviews'])
+            ->values()
+            ->map(fn (array $review, int $index) => [
+                'author_name' => $review['author'],
+                'text' => $review['text'],
+                'image' => $documentReviewImages[$index] ?? null,
+            ])
+        : collect($testimonials ?? [])
+            ->filter(fn ($testimonial) => !empty($testimonial['text']) && !empty($testimonial['author_name']))
+            ->take(8)
+            ->values();
     $reviewEyebrow = $reviewEyebrow
-        ?? ($isDocumentEnglishTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title'));
+        ?? ($usesDocumentTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title'));
     $reviewHeading = $reviewHeading
-        ?? ($isDocumentEnglishTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading'));
+        ?? ($usesDocumentTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading'));
     $verifiedLabel = $verifiedLabel
-        ?? ($isDocumentEnglishTestimonials
+        ?? ($usesDocumentTestimonials
             ? $documentTestimonials['verified_label']
             : __('messages.home_testimonials_verified_customer'));
     $reviewSectionId = $reviewSectionId ?? 'customer-reviews-title';
@@ -39,7 +59,7 @@
                         <figcaption class="review-showcase__author">
                             <img
                                 src="{{ asset(($testimonial['image'] ?? null) ?: 'images/placeholder.webp') }}"
-                                alt="Photo of {{ $testimonial['author_name'] }}, IPTV customer"
+                                alt="{{ __('document_ui.home.review_photo_alt', ['name' => $testimonial['author_name']]) }}"
                                 width="56"
                                 height="56"
                                 loading="lazy" decoding="async">

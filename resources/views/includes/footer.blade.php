@@ -23,6 +23,62 @@
     $brandText = $footerSettings['brand_text'] ?? null;
     $cryptoNote = $footerSettings['crypto_note'] ?? null;
     $legalNote = $footerSettings['legal_note'] ?? null;
+    $usesDocumentTranslations = in_array(app()->getLocale(), config('app.locales', ['en']), true);
+
+    if ($usesDocumentTranslations) {
+        $cryptoNote = __('document_ui.footer.crypto_note');
+        $legalNote = __('document_ui.footer.legal_note');
+    }
+
+    $footerLinkLabels = [
+        '/' => __('messages.nav_home'),
+        '/pricing' => __('messages.nav_pricing'),
+        '/packages' => __('messages.nav_packages'),
+        '/reseller-panel' => __('messages.nav_reseller'),
+        '/movies' => __('messages.nav_movies_series'),
+        '/iptv-applications' => __('messages.nav_iptv_apps'),
+        '/shop' => __('document_ui.shop.menu_label'),
+        '/about' => __('messages.nav_about_us'),
+        '/contact' => __('messages.nav_contact'),
+        '/faqs' => __('messages.nav_faqs'),
+        '/terms-of-service' => __('document_ui.footer.terms'),
+        '/privacy-policy' => __('document_ui.footer.privacy'),
+        '/refund-policy' => __('document_ui.footer.refund'),
+        '/activate' => __('document_ui.footer.activate'),
+        '/configure' => __('document_ui.footer.configure'),
+        '/checkout' => __('document_ui.footer.checkout'),
+        '/thank-you' => __('document_ui.footer.thank_you'),
+    ];
+    $footerLinkLabel = static function (array $link) use ($footerLinkLabels): string {
+        $path = parse_url((string) ($link['url'] ?? ''), PHP_URL_PATH);
+
+        return $footerLinkLabels[$path] ?? (string) ($link['label'] ?? '');
+    };
+    $footerLinkRoutes = [
+        '/' => 'home',
+        '/pricing' => 'pricing',
+        '/packages' => 'packages',
+        '/reseller-panel' => 'reseller-panel',
+        '/movies' => 'movies',
+        '/iptv-applications' => 'iptv-applications',
+        '/shop' => 'shop',
+        '/about' => 'about',
+        '/contact' => 'contact',
+        '/faqs' => 'faqs',
+        '/terms-of-service' => 'terms-of-service',
+        '/privacy-policy' => 'privacy-policy',
+        '/refund-policy' => 'refund-policy',
+        '/activate' => 'activate',
+        '/configure' => 'configure',
+        '/checkout' => 'checkout',
+        '/thank-you' => 'thankyou',
+    ];
+    $footerLinkUrl = static function (array $link) use ($footerLinkRoutes): string {
+        $url = (string) ($link['url'] ?? '#');
+        $path = parse_url($url, PHP_URL_PATH);
+
+        return isset($footerLinkRoutes[$path]) ? route($footerLinkRoutes[$path]) : $url;
+    };
 
     $routeName = optional(request()->route())->getName();
     $isHomeRoute = $routeName === 'home';
@@ -71,7 +127,7 @@
                      src="{{ asset('images/opplexiptvlogo.webp') }}"
                      alt="Opplex IPTV" width="250" height="65" loading="lazy" decoding="async">
                 <p class="fx-brand__tag">
-                    {{ $cryptoNote ?? ($isRtl ? 'ہم Cryptomus کے ذریعے کرپٹو ادائیگی قبول کرتے ہیں۔' : 'We accept crypto payments via Cryptomus.') }}
+                    {{ $cryptoNote ?? __('document_ui.footer.crypto_note') }}
                 </p>
             </div>
 
@@ -79,7 +135,7 @@
                 @if (!empty($footerSocials))
                     @foreach ($footerSocials as $s)
                         <li>
-                            <a href="{{ $s['url'] }}" class="fx-social__btn" aria-label="{{ $s['platform'] ?: 'Social profile' }}"
+                            <a href="{{ $s['url'] }}" class="fx-social__btn" aria-label="{{ $s['platform'] ?: __('document_ui.footer.social_profile') }}"
                                target="_blank" rel="noopener">
                                 <i class="{{ $s['icon_class'] ?: 'fa fa-link' }}"></i>
                             </a>
@@ -97,15 +153,15 @@
         <div class="fx-grid">
             <!-- Contact -->
             <div class="fx-col">
-                <h4 class="fx-title">{{ $isRtl ? 'رابطہ' : 'Contact' }}</h4>
+                <h4 class="fx-title">{{ __('document_ui.footer.contact') }}</h4>
                 <ul class="fx-list">
                     <li class="fx-list__item">
                         <span class="fx-list__icon">📱</span>
-                        <a href="https://wa.me/16393903194?text={{ urlencode($waText) }}" target="_blank" rel="noopener" class="fx-link">{{ $tPhone }}</a>
+                        <a href="https://wa.me/16393903194?text={{ urlencode($waText) }}" target="_blank" rel="noopener" class="fx-link"><bdi>{{ $tPhone }}</bdi></a>
                     </li>
                     <li class="fx-list__item">
                         <span class="fx-list__icon">✉️</span>
-                        <a href="mailto:info@opplexiptv.com" class="fx-link">{{ $tEmail }}</a>
+                        <a href="mailto:info@opplexiptv.com" class="fx-link"><bdi>{{ $tEmail }}</bdi></a>
                     </li>
                     <li class="fx-list__item">
                         <span class="fx-list__icon">📍</span>
@@ -116,49 +172,49 @@
 
                         <!-- Payments -->
             <div class="fx-col fx-col--payments">
-                <h4 class="fx-title">{{ $isRtl ? 'ایکسپلور' : 'Explore' }}</h4>
+                <h4 class="fx-title">{{ __('document_ui.footer.explore') }}</h4>
                 <ul class="fx-list">
                     @foreach (($footerLinks['explore'] ?? []) as $l)
-                        <li><a class="fx-link" href="{{ $l['url'] }}">{{ $l['label'] }}</a></li>
+                        <li><a class="fx-link" href="{{ $footerLinkUrl($l) }}">{{ $footerLinkLabel($l) }}</a></li>
                     @endforeach
                     @if (empty($footerLinks['explore']))
-                        <li><a class="fx-link" href="{{ url('/') }}">Home</a></li>
-                        <li><a class="fx-link" href="{{ url('/pricing') }}">Pricing</a></li>
-                        <li><a class="fx-link" href="{{ route('packages', ['direct' => 1]) }}">Packages</a></li>
-                        <li><a class="fx-link" href="{{ url('/reseller-panel') }}">Reseller Panel</a></li>
-                        <li><a class="fx-link" href="{{ url('/movies') }}">Movies</a></li>
-                        <li><a class="fx-link" href="{{ url('/iptv-applications') }}">IPTV Apps</a></li>
-                        <li><a class="fx-link" href="{{ url('/shop') }}">Products</a></li>
+                        <li><a class="fx-link" href="{{ route('home') }}">{{ __('messages.nav_home') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('packages', ['direct' => 1]) }}">{{ __('messages.nav_packages') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('iptv-applications') }}">{{ __('messages.nav_iptv_apps') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('shop') }}">{{ __('document_ui.shop.menu_label') }}</a></li>
                     @endif
                 </ul>
             </div>
 
             <!-- Company -->
             <div class="fx-col">
-                <h4 class="fx-title">{{ $isRtl ? 'کمپنی' : 'Company' }}</h4>
+                <h4 class="fx-title">{{ __('document_ui.footer.company') }}</h4>
                 <ul class="fx-list">
                     @foreach (($footerLinks['company'] ?? []) as $l)
-                        <li><a class="fx-link" href="{{ $l['url'] }}">{{ $l['label'] }}</a></li>
+                        <li><a class="fx-link" href="{{ $footerLinkUrl($l) }}">{{ $footerLinkLabel($l) }}</a></li>
                     @endforeach
                     @if (empty($footerLinks['company']))
-                        <li><a class="fx-link" href="{{ url('/about') }}">{{ $isRtl ? 'ہمارے بارے میں' : 'About Us' }}</a></li>
-                        <li><a class="fx-link" href="{{ url('/contact') }}">{{ $isRtl ? 'ہم سے رابطہ' : 'Contact Us' }}</a></li>
-                        <li><a class="fx-link" href="{{ url('/faqs') }}">FAQ</a></li>
+                        <li><a class="fx-link" href="{{ route('about') }}">{{ __('messages.nav_about_us') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('contact') }}">{{ __('messages.nav_contact') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('faqs') }}">{{ __('messages.nav_faqs') }}</a></li>
                     @endif
                 </ul>
             </div>
 
             <!-- Legal -->
             <div class="fx-col">
-                <h4 class="fx-title">{{ $isRtl ? 'قانونی' : 'Legal' }}</h4>
+                <h4 class="fx-title">{{ __('document_ui.footer.legal') }}</h4>
                 <ul class="fx-list">
                     @foreach (($footerLinks['legal'] ?? []) as $l)
-                        <li><a class="fx-link" href="{{ $l['url'] }}">{{ $l['label'] }}</a></li>
+                        <li><a class="fx-link" href="{{ $footerLinkUrl($l) }}">{{ $footerLinkLabel($l) }}</a></li>
                     @endforeach
                     @if (empty($footerLinks['legal']))
-                        <li><a class="fx-link" href="{{ url('/terms-of-service') }}">{{ $isRtl ? 'سروس کی شرائط' : 'Terms of Service' }}</a></li>
-                        <li><a class="fx-link" href="{{ url('/privacy-policy') }}">{{ $isRtl ? 'رازداری پالیسی' : 'Privacy Policy' }}</a></li>
-                        <li><a class="fx-link" href="{{ url('/refund-policy') }}">{{ $isRtl ? 'ریفنڈ و منسوخی' : 'Refund & Cancellation' }}</a></li>
+                        <li><a class="fx-link" href="{{ route('terms-of-service') }}">{{ __('document_ui.footer.terms') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('privacy-policy') }}">{{ __('document_ui.footer.privacy') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('refund-policy') }}">{{ __('document_ui.footer.refund') }}</a></li>
                     @endif
                 </ul>
             </div>
@@ -168,18 +224,16 @@
         <div class="fx-footer__bottom">
             <div class="fx-copy">&copy; 2022 - {{ date('Y') }} <strong>Opplex IPTV</strong>. {{ $tRights }}</div>
             <div class="fx-legal-note">
-                {{ $legalNote ?? ($isRtl
-                    ? 'کرپٹو ادائیگیوں کا استعمال مقامی قوانین کے مطابق ہونا چاہیے۔ مزید معلومات کے لیے Privacy Policy اور ریفنڈ پالیسی دیکھیں۔'
-                    : 'Use of crypto payments must comply with your local laws. See our Privacy Policy and Refund policies for details.') }}
+                {{ $legalNote ?? __('document_ui.footer.legal_note') }}
                 <div class="fx-deeplinks" style="font-size:12px; margin-top:6px; color:#aaa;">
                     @foreach (($footerLinks['deeplink'] ?? []) as $l)
-                        <a href="{{ $l['url'] }}">{{ $l['label'] }}</a>@if(!$loop->last) | @endif
+                        <a href="{{ $footerLinkUrl($l) }}">{{ $footerLinkLabel($l) }}</a>@if(!$loop->last) | @endif
                     @endforeach
                     @if (empty($footerLinks['deeplink']))
-                        <a href="{{ url('/activate') }}">Activate</a> |
-                        <a href="{{ url('/configure') }}">Configure</a> |
-                        <a href="{{ url('/checkout') }}">Checkout</a> |
-                        <a href="{{ url('/thank-you') }}">Thank You</a>
+                        <a href="{{ route('activate') }}">{{ __('document_ui.footer.activate') }}</a> |
+                        <a href="{{ route('configure') }}">{{ __('document_ui.footer.configure') }}</a> |
+                        <a href="{{ route('checkout') }}">{{ __('document_ui.footer.checkout') }}</a> |
+                        <a href="{{ route('thankyou') }}">{{ __('document_ui.footer.thank_you') }}</a>
                     @endif
                 </div>
             </div>
@@ -193,7 +247,7 @@
 
 @include('includes.spin-popup')
 
-<div class="scroll-to-top scroll-to-target" data-target="html" aria-label="Scroll to top">
+<div class="scroll-to-top scroll-to-target" data-target="html" aria-label="{{ __('document_ui.footer.scroll_to_top') }}">
     <span class="fa fa-arrow-up" aria-hidden="true"></span>
 </div>
 
@@ -750,7 +804,8 @@
                     const delta = event.clientX - startX;
                     isPointerDown = false;
                     if (Math.abs(delta) < 40) return;
-                    goTo(index + (delta > 0 ? -1 : 1));
+                    const swipeDirection = delta > 0 ? -1 : 1;
+                    goTo(index + (isRtlCarousel ? -swipeDirection : swipeDirection));
                     startAutoplay();
                 });
 

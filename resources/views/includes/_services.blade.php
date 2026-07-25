@@ -1,6 +1,6 @@
 @php
-    $isDocumentEnglishServices = request()->routeIs('home') && app()->getLocale() === 'en';
-    $documentServices = $isDocumentEnglishServices ? __('messages.home_document.services') : [];
+    $isDocumentEnglishServices = request()->routeIs('home');
+    $documentServices = $isDocumentEnglishServices ? __('document_home.services') : [];
     $displayServiceCards = $serviceCards ?? [];
     $packagesUrl = route('packages', ['direct' => 1]);
 
@@ -19,11 +19,11 @@
 @endphp
 
 <section class="services-section-two" style="background-image:url({{ asset('images/background/3.webp') }})"
-         aria-label="Explore IPTV Services like Packages, Sports, VOD and Multi-Device Access">
+         aria-label="{{ __('document_ui.home.services_aria') }}">
     <div class="auto-container">
         <div class="sec-title light centered services-showcase__heading">
             <div class="services-showcase__eyebrow">{{ $isDocumentEnglishServices ? $documentServices['eyebrow'] : __('messages.home_services_eyebrow') }}</div>
-            <h3 class="text-white" aria-label="Explore Opplex IPTV Services">{{ $isDocumentEnglishServices ? $documentServices['heading'] : __('messages.explore_services') }}</h3>
+            <h3 class="text-white" aria-label="{{ __('document_ui.home.services_heading_aria') }}">{{ $isDocumentEnglishServices ? $documentServices['heading'] : __('messages.explore_services') }}</h3>
             <p>{{ $isDocumentEnglishServices ? $documentServices['intro'] : __('messages.home_services_intro') }}</p>
         </div>
 
@@ -35,8 +35,9 @@
                 data-items-mobile="1"
                 data-gap="30"
                 data-autoplay="4000"
+                data-rtl="{{ $isRtl ? 'true' : 'false' }}"
                 role="region"
-                aria-label="IPTV Services Carousel">
+                aria-label="{{ __('document_ui.home.services_carousel_aria') }}">
                 <div class="native-carousel__viewport">
                     <div class="native-carousel__track">
                         @forelse ($displayServiceCards as $card)
@@ -80,7 +81,7 @@
                 </div>
             </div>
         @else
-            <div class="four-item-carousel owl-carousel owl-theme" role="region" aria-label="IPTV Services Carousel">
+            <div class="four-item-carousel owl-carousel owl-theme" role="region" aria-label="{{ __('document_ui.home.services_carousel_aria') }}">
                 @forelse ($displayServiceCards as $card)
                     @php
                         $icon = $card['icon'] ? asset('images/icons/' . $card['icon']) : asset('images/icons/service-4.webp');

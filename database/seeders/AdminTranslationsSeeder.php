@@ -77,6 +77,9 @@ class AdminTranslationsSeeder extends Seeder
                 'our packages' => 'messages.nav_packages',
                 'iptv applications' => 'messages.nav_iptv_apps',
                 "faq's" => 'messages.nav_faqs',
+                'blogs' => 'messages.blogs',
+                'shop' => 'document_ui.shop.menu_label',
+                'products' => 'document_ui.shop.menu_label',
                 'more' => 'messages.nav_services',
                 'about us' => 'messages.nav_about_us',
                 'about' => 'messages.nav_about',
@@ -181,10 +184,10 @@ class AdminTranslationsSeeder extends Seeder
                         ['locale' => $locale],
                         [
                             'brand_text' => $f->brand_text,
-                            'crypto_note' => $f->crypto_note,
+                            'crypto_note' => Lang::get('document_ui.footer.crypto_note', [], $locale),
                             'address' => Lang::get('messages.footer_address', [], $locale),
                             'rights_text' => Lang::get('messages.footer_rights', [], $locale),
-                            'legal_note' => $f->legal_note,
+                            'legal_note' => Lang::get('document_ui.footer.legal_note', [], $locale),
                         ]
                     );
                 }
@@ -201,6 +204,14 @@ class AdminTranslationsSeeder extends Seeder
                 '/faqs' => 'messages.nav_faqs',
                 '/about' => 'messages.nav_about_us',
                 '/contact' => 'messages.nav_contact',
+                '/shop' => 'document_ui.shop.menu_label',
+                '/terms-of-service' => 'document_ui.footer.terms',
+                '/privacy-policy' => 'document_ui.footer.privacy',
+                '/refund-policy' => 'document_ui.footer.refund',
+                '/activate' => 'document_ui.footer.activate',
+                '/configure' => 'document_ui.footer.configure',
+                '/checkout' => 'document_ui.footer.checkout',
+                '/thank-you' => 'document_ui.footer.thank_you',
                 '/' => 'messages.nav_home',
             ];
 

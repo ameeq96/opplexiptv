@@ -1,14 +1,14 @@
 @extends('layouts.default')
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentPage = $isDocumentEnglish ? __('document_product.movies') : [];
+    $isDocumentEnglish = true;
+    $documentPage = __('document_product.movies');
 @endphp
 @section('title', $isDocumentEnglish ? $documentPage['hero']['heading'] : __('messages.movies_title'))
 
 @push('schema')
     {!! jsonld(seo()->collectionPage(
-        __('messages.movies_title'),
-        trans('meta.movies.description'),
+        $documentPage['hero']['heading'],
+        $documentPage['hero']['text'],
         route('movies'),
     )) !!}
 @endpush
@@ -25,7 +25,7 @@
         <div class="auto-container">
             @if ($isDocumentEnglish)
                 <header class="document-product-hero document-product-hero--movies">
-                    <span class="document-product-eyebrow">Watch IPTV movies</span>
+                    <span class="document-product-eyebrow">{{ __('document_ui.movies.eyebrow') }}</span>
                     <h1>{{ $documentPage['hero']['heading'] }}</h1>
                     <p>{{ $documentPage['hero']['text'] }}</p>
                     <div class="document-product-actions">
@@ -53,7 +53,7 @@
 
                 <!-- Filter -->
                 <div class="filters clearfix">
-                    <ul class="filter-tabs filter-btns text-center clearfix" role="group" aria-label="Content filters">
+                    <ul class="filter-tabs filter-btns text-center clearfix" role="group" aria-label="{{ __('document_ui.movies.filters_aria') }}">
                         <li class="active filter" role="button" tabindex="0" data-filter="all">{{ __('messages.all') }}</li>
                         <li class="filter" role="button" tabindex="0" data-filter=".movies">{{ __('messages.movies') }}</li>
                         <li class="filter" role="button" tabindex="0" data-filter=".series">{{ __('messages.series') }}</li>
@@ -63,11 +63,12 @@
 
                 <!-- Search -->
                 <div class="search-bar mb-4 d-flex justify-content-center">
-                    <form method="GET" action="{{ route('movies') }}" aria-label="Search Movies and Series"
+                    <form method="GET" action="{{ route('movies') }}" data-movies-search-form
+                        aria-label="{{ __('document_ui.movies.search_aria') }}"
                         class="d-flex align-items-center w-100" style="max-width: 800px;">
                         <input type="text" name="search" class="form-control mx-2"
                             placeholder="{{ __('messages.search_placeholder') }}" value="{{ $query ?? '' }}"
-                            style="height: 50px; font-size: 1.2rem; flex: 1;" aria-label="Search by title or keyword">
+                            style="height: 50px; font-size: 1.2rem; flex: 1;" aria-label="{{ __('document_ui.movies.search_input_aria') }}">
                         <button type="submit" class="btn btn-search px-4" style="height: 50px; font-size: 1.2rem;">
                             {{ __('messages.search_button') }}
                         </button>
@@ -92,13 +93,13 @@
                             <div class="inner-box">
                                 <div class="image">
                                     <a href="{{ $movie['trailer_url'] }}" class="lightbox-image video-box"
-                                        aria-label="Watch trailer of {{ $movie['title'] }}">
+                                        aria-label="{{ __('document_ui.movies.watch_trailer_aria', ['title' => $movie['title']]) }}">
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
-                                    <img src="{{ $movie['poster_url'] }}" alt="Poster of {{ $movie['title'] }}"
+                                    <img src="{{ $movie['poster_url'] }}" alt="{{ __('document_ui.movies.poster_alt', ['title' => $movie['title']]) }}"
                                         loading="lazy" decoding="async" width="300" height="450" />
                                     <div class="overlay-box">
-                                        <ul class="post-meta" aria-label="Movie rating">
+                                        <ul class="post-meta" aria-label="{{ __('document_ui.movies.movie_rating_aria') }}">
                                             <li><span class="icon fa fa-star"></span>{{ $movie['vote'] }}</li>
                                             <li><span class="icon fa fa-comment"></span>25</li>
                                         </ul>
@@ -109,7 +110,7 @@
                                         <div class="pull-left">
                                             <h6>
                                                 <a href="{{ route('packages', ['direct' => 1]) }}"
-                                                    aria-label="Subscribe to watch {{ $movie['title'] }}">
+                                                    aria-label="{{ __('document_ui.movies.subscribe_aria', ['title' => $movie['title']]) }}">
                                                     {{ $movie['title'] }}
                                                 </a>
                                             </h6>
@@ -129,13 +130,13 @@
                             <div class="inner-box">
                                 <div class="image">
                                     <a href="{{ $series['trailer_url'] }}" class="lightbox-image video-box"
-                                        aria-label="Watch trailer of {{ $series['title'] }}">
+                                        aria-label="{{ __('document_ui.movies.watch_trailer_aria', ['title' => $series['title']]) }}">
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
-                                    <img src="{{ $series['poster_url'] }}" alt="Poster of {{ $series['title'] }}"
+                                    <img src="{{ $series['poster_url'] }}" alt="{{ __('document_ui.movies.poster_alt', ['title' => $series['title']]) }}"
                                         loading="lazy" decoding="async" width="300" height="450" />
                                     <div class="overlay-box">
-                                        <ul class="post-meta" aria-label="Series rating">
+                                        <ul class="post-meta" aria-label="{{ __('document_ui.movies.series_rating_aria') }}">
                                             <li><span class="icon fa fa-star"></span>{{ $series['vote'] }}</li>
                                             <li><span class="icon fa fa-comment"></span>25</li>
                                         </ul>
@@ -163,13 +164,13 @@
                             <div class="inner-box">
                                 <div class="image">
                                     <a href="{{ $cartoon['trailer_url'] }}" class="lightbox-image video-box"
-                                        aria-label="Watch trailer of {{ $cartoon['title'] }}">
+                                        aria-label="{{ __('document_ui.movies.watch_trailer_aria', ['title' => $cartoon['title']]) }}">
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
-                                    <img src="{{ $cartoon['poster_url'] }}" alt="Poster of {{ $cartoon['title'] }}"
+                                    <img src="{{ $cartoon['poster_url'] }}" alt="{{ __('document_ui.movies.poster_alt', ['title' => $cartoon['title']]) }}"
                                         loading="lazy" decoding="async" width="300" height="450" />
                                     <div class="overlay-box">
-                                        <ul class="post-meta" aria-label="Cartoon rating">
+                                        <ul class="post-meta" aria-label="{{ __('document_ui.movies.cartoon_rating_aria') }}">
                                             <li><span class="icon fa fa-star"></span>{{ $cartoon['vote'] }}</li>
                                             <li><span class="icon fa fa-comment"></span>25</li>
                                         </ul>
@@ -203,7 +204,7 @@
             @if ($page > 1)
                 <li class="page-item me-1">
                     <a class="page-link" href="{{ route('movies', ['page' => $page - 1, 'search' => $query ?: null]) }}"
-                        aria-label="Go to previous page">&laquo;</a>
+                        aria-label="{{ __('document_ui.movies.previous_page_aria') }}">&laquo;</a>
                 </li>
             @endif
 
@@ -211,7 +212,7 @@
             @for ($i = $pageStart; $i <= $pageEnd; $i++)
                 <li class="page-item {{ $i == $page ? 'active' : '' }} me-1">
                     <a class="page-link" href="{{ route('movies', ['page' => $i, 'search' => $query ?: null]) }}"
-                        aria-label="Go to page {{ $i }}">
+                        aria-label="{{ __('document_ui.movies.page_aria', ['page' => $i]) }}">
                         {{ $i }}
                     </a>
                 </li>
@@ -221,7 +222,7 @@
             @if ($page < $totalPages)
                 <li class="page-item ms-1">
                     <a class="page-link" href="{{ route('movies', ['page' => $page + 1, 'search' => $query ?: null]) }}"
-                        aria-label="Go to next page">{{ __('messages.next') }} &raquo;</a>
+                        aria-label="{{ __('document_ui.movies.next_page_aria') }}">{{ __('messages.next') }} &raquo;</a>
                 </li>
             @endif
         </ul>
@@ -249,7 +250,7 @@
             <div class="auto-container">
                 <div class="document-product-split">
                     <div>
-                        <span class="document-product-eyebrow">Included with every subscription</span>
+                        <span class="document-product-eyebrow">{{ __('document_ui.movies.included_eyebrow') }}</span>
                         <h2 id="document-how-watch-title">{{ $documentPage['how_to_watch']['heading'] }}</h2>
                         <p>{{ $documentPage['how_to_watch']['intro'] }}</p>
                         <ol class="document-product-step-list">
@@ -270,7 +271,7 @@
             <div class="auto-container">
                 <div class="document-product-split document-product-split--devices">
                     <div>
-                        <span class="document-product-eyebrow document-product-eyebrow--inverse">Device compatibility</span>
+                        <span class="document-product-eyebrow document-product-eyebrow--inverse">{{ __('document_ui.shared.device_compatibility') }}</span>
                         <h2 id="document-movie-devices-title">{{ $documentPage['devices']['heading'] }}</h2>
                         <p>{{ $documentPage['devices']['intro'] }}</p>
                         <ul class="document-product-check-grid">

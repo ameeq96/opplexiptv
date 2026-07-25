@@ -1,11 +1,11 @@
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentHero = $isDocumentEnglish ? __('messages.home_document.hero') : [];
+    $isDocumentEnglish = true;
+    $documentHero = __('document_home.hero');
 @endphp
 
 @if ($isMobile)
     <section class="hero-section-mobile"
-        aria-label="Opplex IPTV Hero Section - Start Your IPTV Trial in HD/4K">
+        aria-label="{{ __('document_ui.home.hero_aria') }}">
         <div class="container text-center">
             @if ($isDocumentEnglish)
                 <h1 class="heading">{{ $documentHero['heading'] }}</h1>
@@ -54,8 +54,8 @@
     @endphp
 
     @if (!empty($useNativeCarousel))
-        <section class="main-slider-two native-home-hero"
-            aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
+    <section class="main-slider-two native-home-hero"
+        aria-label="{{ __('document_ui.home.slider_aria') }}">
             <div class="native-carousel native-carousel--hero"
                 data-native-carousel
                 data-carousel-type="hero"
@@ -74,8 +74,8 @@
                                 @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
 
                                 @if ($index === 0)
-                                    <img src="{{ $imageUrl }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
-                                        aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
+                                    <img src="{{ $imageUrl }}" alt="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
+                                            aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
                                         width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
                                 @endif
 
@@ -156,7 +156,7 @@
             </div>
         </section>
     @else
-        <section class="main-slider-two" aria-label="Opplex IPTV HD/4K Movie Slider - Discover Our Content">
+        <section class="main-slider-two" aria-label="{{ __('document_ui.home.slider_aria') }}">
             <div class="main-slider-carousel owl-carousel owl-theme" data-rtl="{{ $isRtl ? 'true' : 'false' }}">
                 @foreach ($sliderMovies as $index => $movie)
                     @php
@@ -167,8 +167,8 @@
                         @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
 
                         @if ($index === 0)
-                            <img src="{{ $imageUrl }}" alt="{{ $movie['safe_title'] }} - IPTV Movie Poster"
-                                aria-label="IPTV Movie Poster - {{ $movie['safe_title'] }}"
+                            <img src="{{ $imageUrl }}" alt="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
+                                    aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
                                 width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
                         @endif
 

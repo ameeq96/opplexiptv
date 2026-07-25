@@ -1,5 +1,5 @@
 @php
-    $devices = __('messages.home_document.devices');
+    $devices = __('document_home.devices');
     $deviceIcons = [
         'fa-play-circle',
         'fa-desktop',

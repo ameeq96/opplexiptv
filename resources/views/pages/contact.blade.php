@@ -1,8 +1,8 @@
 @extends('layouts.default')
 
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentContact = $isDocumentEnglish ? __('document_support.contact') : [];
+    $isDocumentEnglish = true;
+    $documentContact = __('document_support.contact');
     $phoneCountries = [
         'PK' => ['dialCode' => '+92', 'minDigits' => 10, 'maxDigits' => 10],
         'CA / US' => ['dialCode' => '+1', 'minDigits' => 10, 'maxDigits' => 10],
@@ -24,7 +24,7 @@
         'NG' => ['dialCode' => '+234', 'minDigits' => 10, 'maxDigits' => 11],
         'BD' => ['dialCode' => '+880', 'minDigits' => 10, 'maxDigits' => 10],
         'LK' => ['dialCode' => '+94', 'minDigits' => 9, 'maxDigits' => 9],
-        'OTHER +' => ['dialCode' => '', 'minDigits' => 7, 'maxDigits' => 15],
+        'OTHER' => ['dialCode' => '', 'minDigits' => 7, 'maxDigits' => 15],
     ];
 @endphp
 
@@ -66,13 +66,13 @@
     <x-page-title
         :title="$isDocumentEnglish ? $documentContact['page_title'] : __('messages.contact.heading')"
         :breadcrumbs="$isDocumentEnglish
-            ? [['url' => route('home'), 'label' => 'Home'], ['label' => $documentContact['page_title']]]
+            ? [['url' => route('home'), 'label' => __('document_ui.shared.home')], ['label' => $documentContact['page_title']]]
             : [
                 ['url' => '/', 'label' => __('messages.contact.breadcrumb.home')],
                 ['label' => __('messages.contact.breadcrumb.current')],
             ]"
         background="images/background/10.webp" :rtl="$isRtl"
-        aria-label="Contact Page" />
+        aria-label="{{ __('document_ui.contact.page_aria') }}" />
     <!-- End Page Title -->
 
     @if ($isDocumentEnglish)
@@ -88,7 +88,7 @@
             <section class="document-support__section document-support__section--tint" aria-labelledby="document-contact-channels-title">
                 <div class="auto-container">
                     <div class="document-support__section-heading">
-                        <span class="document-support__eyebrow">Contact Channels</span>
+                        <span class="document-support__eyebrow">{{ __('document_ui.contact.channels_eyebrow') }}</span>
                         <h2 id="document-contact-channels-title">{{ $documentContact['channels']['heading'] }}</h2>
                     </div>
                     <div class="document-support__card-grid document-support__card-grid--three">
@@ -146,7 +146,7 @@
                             <span class="ctx-method__val">
                                 <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
                                     target="_blank" rel="noopener">
-                                    {{ $isRtl ? '4913-093 (936) 1+' : __('messages.contact.details.phone') }}
+                                    <bdi>{{ __('messages.contact.details.phone') }}</bdi>
                                 </a>
                             </span>
                         </li>
@@ -205,16 +205,16 @@
                                         {{-- Phone --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                             <div class="ctx-phone">
-                                                <label class="sr-only" for="phone-country-code">{{ __('Country calling code') }}</label>
+                                                <label class="sr-only" for="phone-country-code">{{ __('document_ui.contact.country_code') }}</label>
                                                 <select id="phone-country-code" class="ctx-phone__country"
-                                                    aria-label="{{ __('Country calling code') }}" dir="ltr">
+                                                    aria-label="{{ __('document_ui.contact.country_code') }}" dir="ltr">
                                                     @foreach ($phoneCountries as $country => $phoneCountry)
                                                         <option value="{{ $phoneCountry['dialCode'] }}"
                                                             data-min-digits="{{ $phoneCountry['minDigits'] }}"
                                                             data-max-digits="{{ $phoneCountry['maxDigits'] }}"
                                                             @if ($country === 'IT') data-preserve-leading-zero="true" @endif
                                                             @selected($country === 'PK')>
-                                                            {{ $country }} {{ $phoneCountry['dialCode'] }}
+                                                            {{ $country === 'OTHER' ? __('document_ui.contact.other_country') : $country }} {{ $phoneCountry['dialCode'] }}
                                                         </option>
                                                     @endforeach
                                                 </select>
@@ -228,7 +228,7 @@
                                                     required>
                                             </div>
                                             <small id="phone-format-hint" class="ctx-phone__hint">
-                                                {{ __('Other country? Enter the complete number starting with + or 00.') }}
+                                                {{ __('document_ui.contact.other_country_hint') }}
                                             </small>
                                             <small id="phone-client-error" class="text-danger d-none"></small>
                                             @error('phone')
@@ -300,7 +300,7 @@
             <section class="document-support__section document-support__section--tint" aria-labelledby="document-contact-reasons-title">
                 <div class="auto-container">
                     <div class="document-support__section-heading">
-                        <span class="document-support__eyebrow">Common Contact Reasons</span>
+                        <span class="document-support__eyebrow">{{ __('document_ui.contact.reasons_eyebrow') }}</span>
                         <h2 id="document-contact-reasons-title">{{ $documentContact['reasons']['heading'] }}</h2>
                     </div>
                     <div class="document-support__reason-grid">
@@ -420,7 +420,7 @@
                     const button = document.createElement('button');
                     button.type = 'button';
                     button.className = 'dropdown-btn';
-                    button.setAttribute('aria-label', 'Toggle submenu');
+                    button.setAttribute('aria-label', @json(__('document_ui.shared.menu_toggle')));
                     button.setAttribute('aria-expanded', 'false');
                     button.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
                     item.appendChild(button);
@@ -559,7 +559,7 @@
                 const input = document.getElementById('phone');
                 const country = document.getElementById('phone-country-code');
                 const error = document.getElementById('phone-client-error');
-                const invalidMessage = @json(__('Invalid phone number'));
+                const invalidMessage = @json(__('document_ui.contact.invalid_phone'));
 
                 if (!form || !input || !country || !error) return;
 

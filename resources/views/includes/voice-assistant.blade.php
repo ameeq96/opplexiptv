@@ -4,7 +4,7 @@
 
     $vaDoneLabel = __($vaGuidePrefix . 'done');
     if ($vaDoneLabel === $vaGuidePrefix . 'done') {
-        $vaDoneLabel = 'Done';
+        $vaDoneLabel = __('messages.close');
     }
 
     $assistantRoutes = [
@@ -37,6 +37,14 @@
     data-help-message="{{ __($vaUiPrefix . 'help_message') }}"
     data-voice-on="{{ __($vaUiPrefix . 'voice_on') }}"
     data-voice-off="{{ __($vaUiPrefix . 'voice_off') }}"
+    data-assistant-opening="{{ __('document_ui.assistant.opening') }}"
+    data-assistant-action-complete="{{ __('document_ui.assistant.action_complete') }}"
+    data-assistant-not-found="{{ __('document_ui.assistant.not_found') }}"
+    data-assistant-details-saved="{{ __('document_ui.assistant.details_saved') }}"
+    data-assistant-complete-required="{{ __('document_ui.assistant.complete_required') }}"
+    data-assistant-voice-unsupported="{{ __('document_ui.assistant.voice_unsupported') }}"
+    data-assistant-confirm-checkout="{{ __('document_ui.assistant.confirm_checkout') }}"
+    data-assistant-confirm-submit="{{ __('document_ui.assistant.confirm_submit') }}"
     data-rtl="{{ $isRtl ? '1' : '0' }}">
     <button type="button" class="va-fab" aria-label="{{ __($vaUiPrefix . 'open_aria') }}">
         <span class="va-fab-icon" aria-hidden="true"><i class="fa fa-microphone"></i></span>

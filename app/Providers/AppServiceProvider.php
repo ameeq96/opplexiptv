@@ -43,9 +43,7 @@ class AppServiceProvider extends ServiceProvider
             if (!array_key_exists('isRtl', $data)) {
                 $view->with(
                     'isRtl',
-                    app()->bound('locale') && method_exists(app('locale'), 'isRtl')
-                        ? app('locale')->isRtl()
-                        : false
+                    app(\App\Services\LocaleService::class)->isRtl()
                 );
             }
         });

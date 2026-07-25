@@ -1,21 +1,20 @@
-﻿<section class="pricing-section style-two" id="pricing-section" aria-label="IPTV Pricing Plans and Reseller Packages">
+﻿<section class="pricing-section style-two" id="pricing-section" aria-label="{{ __('document_ui.home.pricing_aria') }}">
     @php
         $providedPricingCopy = $pricingCopy ?? ($documentPricing ?? null);
-        $isDocumentEnglishPricing = app()->getLocale() === 'en'
-            && (request()->routeIs('home') || is_array($providedPricingCopy));
+        $isDocumentEnglishPricing = request()->routeIs('home') || is_array($providedPricingCopy);
         $documentPricing = is_array($providedPricingCopy)
             ? $providedPricingCopy
-            : ($isDocumentEnglishPricing ? __('messages.home_document.pricing') : []);
+            : ($isDocumentEnglishPricing ? __('document_home.pricing') : []);
         $initialMode = $initialMode ?? 'iptv';
         $showResellerInitially = $initialMode === 'reseller';
         $displayPackages = collect($packages ?? [])->values()->all();
 
         if ($isDocumentEnglishPricing && empty($displayPackages)) {
             $documentPlanPrices = [
-                'monthly' => '$2.99 / 1 month',
-                'three_months' => '$7.99 / 3 months',
-                'half_yearly' => '$14.99 / 6 months',
-                'yearly' => '$23.99 / 12 months',
+                'monthly' => '$2.99 / ' . $documentPricing['plans']['monthly']['title'],
+                'three_months' => '$7.99 / ' . $documentPricing['plans']['three_months']['title'],
+                'half_yearly' => '$14.99 / ' . $documentPricing['plans']['half_yearly']['title'],
+                'yearly' => '$23.99 / ' . $documentPricing['plans']['yearly']['title'],
             ];
 
             foreach ($documentPlanPrices as $planKey => $price) {
@@ -23,6 +22,12 @@
                     'vendor' => 'opplex',
                     'title' => $documentPricing['plans'][$planKey]['title'],
                     'price' => $price,
+                    'duration_months' => match ($planKey) {
+                        'three_months' => 3,
+                        'half_yearly' => 6,
+                        'yearly' => 12,
+                        default => 1,
+                    },
                     'features' => $documentPricing['plans'][$planKey]['features'],
                 ];
             }
@@ -58,14 +63,14 @@
                 </label>
             </div>
 
-            <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="Choose IPTV vendor"
+            <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}"
                 @if ($showResellerInitially) style="display:none" @endif>
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
                 <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
             </div>
 
             <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="group"
-                aria-label="Choose reseller vendor" style="display:{{ $showResellerInitially ? 'inline-flex' : 'none' }}">
+                aria-label="{{ __('document_ui.home.choose_reseller_vendor') }}" style="display:{{ $showResellerInitially ? 'inline-flex' : 'none' }}">
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
                 <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
             </div>
@@ -92,8 +97,8 @@
                     $vendorKey = $vendorRaw;
 
                     $plainPrice = trim(strip_tags(data_get($package, 'price', '')));
-                    preg_match_all('/\d+(?:\.\d+)?/', $plainPrice, $m);
-                    $buyPrice = $m[0] ? end($m[0]) : null;
+                    preg_match_all('/(?:USD\s*)?\$\s*(\d+(?:\.\d+)?)/i', $plainPrice, $priceMatches);
+                    $buyPrice = $priceMatches[1] ? end($priceMatches[1]) : null;
 
                     // Remove text in parentheses + embedded price from title.
                     $rawTitle = (string) data_get($package, 'title', '');
@@ -103,12 +108,19 @@
                     $displayFeatures = $package['features'] ?? [];
 
                     if ($isDocumentEnglishPricing) {
-                        $normalizedPlanTitle = strtolower(str_replace('-', ' ', $titleBase));
-                        $documentPlanKey = match (true) {
-                            str_contains($normalizedPlanTitle, '3 month') => 'three_months',
-                            str_contains($normalizedPlanTitle, 'half'), str_contains($normalizedPlanTitle, '6 month') => 'half_yearly',
-                            str_contains($normalizedPlanTitle, 'year'), str_contains($normalizedPlanTitle, '12 month') => 'yearly',
-                            default => 'monthly',
+                        $durationMonths = (int) data_get($package, 'duration_months', 0);
+                        $documentPlanKey = match ($durationMonths) {
+                            3 => 'three_months',
+                            6 => 'half_yearly',
+                            12 => 'yearly',
+                            default => match (true) {
+                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), '3 month') => 'three_months',
+                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), 'half'),
+                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), '6 month') => 'half_yearly',
+                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), 'year'),
+                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), '12 month') => 'yearly',
+                                default => 'monthly',
+                            },
                         };
                         $documentPlan = $documentPricing['plans'][$documentPlanKey] ?? null;
 
@@ -166,7 +178,8 @@
             @endforeach
         </div>
 
-        <div id="resellerPackages" style="display:{{ $showResellerInitially ? 'block' : 'none' }}" aria-label="Reseller IPTV Packages">
+        <div id="resellerPackages" style="display:{{ $showResellerInitially ? 'block' : 'none' }}"
+            aria-label="{{ __('document_ui.home.reseller_packages_aria') }}">
             <div class="reseller-wrapper">
                 @foreach ($resellerPlans as $plan)
                     @php
@@ -174,8 +187,8 @@
                         $vendorResKey = in_array($vendorResRaw, ['opplex', 'starshare']) ? $vendorResRaw : 'opplex';
 
                         $plainPrice = trim(strip_tags($plan['price'] ?? ''));
-                        preg_match_all('/\d+(?:\.\d+)?/', $plainPrice, $m);
-                        $buyPrice = $m[0] ? end($m[0]) : null;
+                        preg_match_all('/(?:USD\s*)?\$\s*(\d+(?:\.\d+)?)/i', $plainPrice, $priceMatches);
+                        $buyPrice = $priceMatches[1] ? end($priceMatches[1]) : null;
                         $resellerRawTitle = (string) data_get($plan, 'title', '');
                         $resellerTitleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $resellerRawTitle);
                         $resellerDisplayTitle = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $resellerTitleNoParen, 1));
@@ -193,7 +206,7 @@
                                         $primaryResellerIcon = collect($plan['icons'] ?? [])->first();
                                     @endphp
                                     @if ($primaryResellerIcon)
-                                        <li><span class="icon"><img src="{{ asset($primaryResellerIcon) }}" alt="Reseller Icon"
+                                        <li><span class="icon"><img src="{{ asset($primaryResellerIcon) }}" alt="{{ __('document_ui.home.reseller_icon_alt') }}"
                                                     width="48" height="48" loading="lazy" decoding="async"></span></li>
                                     @endif
                                 </ul>

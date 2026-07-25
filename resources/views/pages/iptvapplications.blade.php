@@ -1,9 +1,9 @@
 @extends('layouts.default')
-@section('title', __('messages.app.title'))
+@section('title', __('document_product.applications.page_title'))
 
 @php
-    $isDocumentEnglish = app()->getLocale() === 'en';
-    $documentPage = $isDocumentEnglish ? __('document_product.applications') : [];
+    $isDocumentEnglish = true;
+    $documentPage = __('document_product.applications');
     $platformLabels = [
         'android' => 'Android',
         'ios'     => 'iOS',
@@ -51,11 +51,11 @@
                 ['label' => $documentPage['page_title']],
             ]"
             background="images/background/10.webp"
-            :rtl="false"
-            aria-label="IPTV Applications Page"
+            :rtl="$isRtl"
+            :aria-label="__('document_ui.applications.page_aria')"
         />
 
-        <main class="iptva document-product-page document-product-apps" dir="ltr" aria-labelledby="document-apps-title">
+        <main class="iptva document-product-page document-product-apps" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" aria-labelledby="document-apps-title">
             <div class="auto-container">
                 <header class="iptva-hero document-product-hero document-product-hero--compact">
                     <span class="iptva-hero__chip" aria-hidden="true">
@@ -73,8 +73,8 @@
                     @php
                         $label = $platformLabels[$platform] ?? ucfirst($platform);
                         $platformCopy = $documentPage['platforms'][$platform] ?? [
-                            'eyebrow' => 'For ' . $label . ' Devices',
-                            'heading' => 'IPTV Apps for ' . $label,
+                            'eyebrow' => __('document_ui.applications.for_devices', ['platform' => $label]),
+                            'heading' => __('document_ui.applications.apps_for', ['platform' => $label]),
                             'intro' => '',
                         ];
                     @endphp
@@ -90,7 +90,8 @@
                                     <p>{{ $platformCopy['intro'] }}</p>
                                 @endif
                             </div>
-                            <span class="iptva-platform__count" aria-label="{{ count($apps) }} available apps">{{ count($apps) }}</span>
+                            <span class="iptva-platform__count"
+                                aria-label="{{ __('document_ui.applications.available_apps', ['count' => count($apps)]) }}">{{ count($apps) }}</span>
                         </div>
 
                         <div class="iptva-grid document-product-app-grid">
@@ -105,7 +106,7 @@
                                    href="{{ $app['href'] }}"
                                    class="iptva-app document-product-app-card"
                                    data-keywords="{{ $app['keywords'] }}"
-                                   aria-label="{{ !empty($app['uses_support_fallback']) ? 'Request the download link for ' . $app['version'] . ' on WhatsApp' : __('messages.app.download_button', ['version' => $app['version']]) . ' (' . $label . ')' }}">
+                                   aria-label="{{ !empty($app['uses_support_fallback']) ? __('document_ui.applications.request_download_aria', ['version' => $app['version']]) : __('messages.app.download_button', ['version' => $app['version']]) . ' (' . $label . ')' }}">
                                     <span class="iptva-app__icon">
                                         <img width="40" height="40" loading="lazy" decoding="async"
                                              src="{{ $app['image_url'] }}" alt="">
@@ -116,7 +117,7 @@
                                              <span class="document-product-app-card__description">{{ $description }}</span>
                                          @endif
                                          @if (!empty($app['uses_support_fallback']))
-                                             <span class="document-product-app-card__availability">Request download link on WhatsApp</span>
+                                             <span class="document-product-app-card__availability">{{ __('document_ui.applications.request_download') }}</span>
                                          @endif
                                      </span>
                                     <span class="iptva-app__dl" aria-hidden="true">
@@ -128,7 +129,7 @@
                     </section>
                 @endforeach
 
-                <aside class="iptva-note document-product-note" aria-label="App compatibility">
+                <aside class="iptva-note document-product-note" aria-label="{{ __('document_ui.applications.compatibility_aria') }}">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
                     <p>{{ $documentPage['compatibility_note'] }}</p>
                 </aside>

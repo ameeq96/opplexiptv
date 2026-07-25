@@ -112,7 +112,7 @@ class UiData
 
         $features      = $needsFeatures ? $this->features() : [];
         $serviceCards  = $routeName === 'home' ? $this->remember('home-services', now()->addMinutes(30), fn () => $this->serviceCards(), []) : [];
-        $menuItems     = $this->remember('menu-items', now()->addMinutes(30), fn () => $this->menuItems(), []);
+        $menuItems     = $this->remember('menu-items:v2', now()->addMinutes(30), fn () => $this->menuItems(), []);
         $pricingSection = $needsPricing ? $this->remember('pricing-section', now()->addMinutes(30), fn () => $this->pricingSection(), null) : null;
         $footer = $this->remember('footer', now()->addMinutes(30), fn () => $this->footerData(), []);
         $packages      = $needsPricing ? $this->remember('packages:iptv', now()->addMinutes(30), fn () => $this->packages(), []) : [];
@@ -502,7 +502,7 @@ class UiData
                 ->get()
                 ->map(function (MenuItem $item) {
                     $t = $item->translation();
-                    $label = $t?->label ?: $item->label;
+                    $label = $this->localizedMenuLabel($item->url, $t?->label ?: $item->label);
                     return [
                         'id' => $item->id,
                         'label' => $label,
@@ -510,7 +510,7 @@ class UiData
                         'open_new_tab' => $item->open_new_tab,
                         'children' => $item->children->map(function (MenuItem $child) {
                             $tc = $child->translation();
-                            $childLabel = $tc?->label ?: $child->label;
+                            $childLabel = $this->localizedMenuLabel($child->url, $tc?->label ?: $child->label);
                             return [
                                 'id' => $child->id,
                                 'label' => $childLabel,
@@ -524,6 +524,29 @@ class UiData
         }
 
         return [];
+    }
+
+    private function localizedMenuLabel(?string $url, string $fallback): string
+    {
+        $path = parse_url(trim((string) $url), PHP_URL_PATH);
+        $path = '/' . ltrim(Str::lower((string) $path), '/');
+        $translationKeys = [
+            '/' => 'messages.nav_home',
+            '/home' => 'messages.nav_home',
+            '/packages' => 'messages.nav_packages',
+            '/iptv-applications' => 'messages.nav_iptv_apps',
+            '/faqs' => 'messages.nav_faqs',
+            '/blogs' => 'messages.blogs',
+            '/shop' => 'document_ui.shop.menu_label',
+            '/about' => 'messages.nav_about_us',
+            '/contact' => 'messages.nav_contact',
+            '/reseller-panel' => 'messages.nav_reseller',
+            '/pricing' => 'messages.nav_pricing',
+            '/movies' => 'messages.nav_movies_series',
+            '/iptv-subscription-service' => 'messages.nav_iptv_subscription_service',
+        ];
+
+        return isset($translationKeys[$path]) ? __($translationKeys[$path]) : $fallback;
     }
 
     private function resolveMenuUrl(?string $url, ?string $label = null): string
@@ -923,18 +946,17 @@ class UiData
         foreach ($platforms as &$apps) {
             foreach ($apps as &$app) {
                 $isExternal = (bool) filter_var($app['file'], FILTER_VALIDATE_URL);
-                $needsEnglishSupportLink = app()->getLocale() === 'en'
-                    && !$isExternal
+                $needsSupportLink = !$isExternal
                     && !is_file(public_path('downloads/' . $app['file']));
                 $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
 
-                $app['href'] = $needsEnglishSupportLink
+                $app['href'] = $needsSupportLink
                     ? 'https://wa.me/16393903194?text=' . rawurlencode(
-                        'Hello, please send me the download link for ' . $app['version'] . '.'
+                        __('document_support.whatsapp_messages.support') . ' ' . $app['version']
                     )
                     : route('redirect.ad', ['target' => $downloadUrl]);
                 $app['image_url'] = asset('images/' . $app['image']);
-                $app['uses_support_fallback'] = $needsEnglishSupportLink;
+                $app['uses_support_fallback'] = $needsSupportLink;
             }
             unset($app);
         }

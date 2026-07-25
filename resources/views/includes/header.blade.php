@@ -41,7 +41,7 @@
         <div class="header-top">
             <div class="auto-container clearfix">
                 <div class="text-center py-2">
-                    <marquee behavior="scroll" direction="left" scrollamount="6">
+                    <marquee behavior="scroll" direction="{{ $isRtl ? 'right' : 'left' }}" scrollamount="6">
                         <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
                             rel="noopener noreferrer"
                             style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
@@ -62,8 +62,8 @@
         {{ $isRtl ? 'flex-row-reverse' : '' }}">
 
                 <div class="pull-left logo-box">
-                    <div class="logo transparent-logo"><a href="/">
-                            <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title=""
+                    <div class="logo transparent-logo"><a href="{{ route('home') }}">
+                            <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV" title=""
                                 width="250" height="65" /> </a>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                         <div class="navbar-header">
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                                aria-expanded="false" aria-label="{{ __('document_ui.shared.menu_toggle') }}">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -141,7 +141,7 @@
                                                 if (!$hasShop) {
                                                     $children[] = [
                                                         'id' => null,
-                                                        'label' => 'Shop',
+                                                        'label' => __('document_ui.shop.menu_label'),
                                                         'url' => route('shop'),
                                                         'open_new_tab' => false,
                                                         'children' => [],
@@ -250,9 +250,9 @@
                                             href="{{ route('blogs.index') }}">{{ __('messages.blogs') }}</a></li>
                                     <li class="{{ request()->routeIs('shop', 'products.share') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                             @if(request()->routeIs('shop', 'products.share')) aria-current="page" @endif
-                                            href="{{ route('shop') }}">Products</a></li>
+                                            href="{{ route('shop') }}">{{ __('document_ui.shop.menu_label') }}</a></li>
                                     <li class="dropdown {{ request()->routeIs('about', 'contact', 'reseller-panel', 'pricing', 'movies', 'iptv-subscription-service') ? 'current' : '' }}">
-                                        <a href="#" @if(request()->routeIs('about', 'contact', 'reseller-panel', 'pricing', 'movies', 'iptv-subscription-service')) aria-current="page" @endif>{{ __('more') }} +</a>
+                                        <a href="#" @if(request()->routeIs('about', 'contact', 'reseller-panel', 'pricing', 'movies', 'iptv-subscription-service')) aria-current="page" @endif>{{ __('messages.more') }}</a>
                                         <ul class="sub-menu">
                                             <li class="{{ request()->routeIs('about') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     @if(request()->routeIs('about')) aria-current="page" @endif
@@ -277,7 +277,7 @@
                                                     href="{{ route('iptv-subscription-service') }}">{{ __('messages.nav_iptv_subscription_service') }}</a>
                                             </li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
-                                                    href="{{ route('shop') }}">Shop</a>
+                                                    href="{{ route('shop') }}">{{ __('document_ui.shop.menu_label') }}</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -321,8 +321,8 @@
         <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 
         <nav class="menu-box">
-            <div class="nav-logo"><a href="/">
-                    <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Logo" title=""
+            <div class="nav-logo"><a href="{{ route('home') }}">
+                    <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV" title=""
                         width="250" height="65" />
                 </a>
                 </a>
