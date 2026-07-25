@@ -119,15 +119,61 @@
                                 @if (!empty($menuItems))
                                     @php
                                         $norm = static fn($v) => mb_strtolower(trim((string) $v));
-                                        $moreLabels = ['more', 'services', $norm(__('messages.nav_services'))];
+                                        $localizedMoreLabel = preg_replace(
+                                            '/\s*\+\s*$/u',
+                                            '',
+                                            trim((string) __('messages.more'))
+                                        ) ?: __('messages.nav_services');
+                                        $moreLabels = [
+                                            'more',
+                                            'services',
+                                            $norm(__('messages.nav_services')),
+                                            $norm($localizedMoreLabel),
+                                        ];
+                                        $moreChildPaths = [
+                                            'about',
+                                            'contact',
+                                            'reseller-panel',
+                                            'pricing',
+                                            'movies',
+                                            'iptv-subscription-service',
+                                        ];
                                         $blogLabels = ['blogs', $norm(__('messages.blogs'))];
 
                                         $headerItems = [];
                                         foreach ($menuItems as $item) {
                                             $itemLabel = $norm($item['label'] ?? '');
                                             $children = $item['children'] ?? [];
+                                            $matchedMoreChildren = 0;
 
-                                            if (in_array($itemLabel, $moreLabels, true) && !empty($children)) {
+                                            foreach ($children as $childCheck) {
+                                                $childPath = parse_url(
+                                                    trim((string) ($childCheck['url'] ?? '')),
+                                                    PHP_URL_PATH
+                                                );
+                                                $childPath = is_string($childPath)
+                                                    ? $normaliseMenuPath($childPath)
+                                                    : '';
+
+                                                if (in_array($childPath, $moreChildPaths, true)) {
+                                                    $matchedMoreChildren++;
+                                                }
+                                            }
+
+                                            $isMoreGroup = !empty($children)
+                                                && (
+                                                    in_array($itemLabel, $moreLabels, true)
+                                                    || $matchedMoreChildren >= 2
+                                                );
+
+                                            if ($isMoreGroup) {
+                                                // Recognise the services dropdown by its children as well as its
+                                                // database label. This prevents stale live data from rendering it
+                                                // as a second "Home" menu item.
+                                                $item['label'] = $localizedMoreLabel;
+                                                $item['url'] = '#';
+                                                $item['_is_more'] = true;
+
                                                 $hasShop = false;
                                                 foreach ($children as $childCheck) {
                                                     $childLabel = $norm($childCheck['label'] ?? '');
@@ -178,11 +224,8 @@
                                             $target = !empty($item['open_new_tab']) ? '_blank' : null;
                                             $rel = !empty($item['open_new_tab']) ? 'noopener' : null;
                                             $itemLabelNorm = mb_strtolower(trim((string) ($item['label'] ?? '')));
-                                            $isMore = in_array($itemLabelNorm, [
-                                                'more',
-                                                'services',
-                                                mb_strtolower(trim((string) __('messages.nav_services'))),
-                                            ], true);
+                                            $isMore = !empty($item['_is_more'])
+                                                || in_array($itemLabelNorm, $moreLabels, true);
                                             $isCurrentItem = $menuUrlIsActive($item['url'] ?? '');
                                             $hasCurrentChild = false;
 
