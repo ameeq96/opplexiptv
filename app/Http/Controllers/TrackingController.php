@@ -2,20 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendFacebookCapiEvent;
 use App\Models\TrialClick;
 use Illuminate\Http\Request;
-use App\Services\FacebookCapiService;
 
 class TrackingController extends Controller
 {
-    public function whatsappTrial(Request $request, FacebookCapiService $capi)
+    public function whatsappTrial(Request $request)
     {
-        $eventId = $request->input('event_id');
-        $dest    = $request->input('destination');
-        $page    = $request->input('page');
+        $data = $request->validate([
+            'event_id' => ['required', 'uuid'],
+            'destination' => ['required', 'string', 'max:512'],
+            'page' => ['nullable', 'url', 'max:512'],
+            'fbp' => ['nullable', 'string', 'max:128'],
+            'fbc' => ['nullable', 'string', 'max:256'],
+        ]);
 
-        $fbp = $request->input('fbp') ?: $request->cookie('_fbp');
-        $fbc = $request->input('fbc') ?: $request->cookie('_fbc');
+        $eventId = $data['event_id'];
+        $dest = $data['destination'];
+        $page = $data['page'] ?? null;
+        $fbp = ($data['fbp'] ?? null) ?: $request->cookie('_fbp');
+        $fbc = ($data['fbc'] ?? null) ?: $request->cookie('_fbc');
 
         $utm = ['utm_source' => null, 'utm_medium' => null, 'utm_campaign' => null, 'utm_term' => null, 'utm_content' => null];
         if ($page) {
@@ -28,21 +35,23 @@ class TrackingController extends Controller
             }
         }
 
-        TrialClick::create([
-            'event_id'     => $eventId,
-            'destination'  => $dest,
-            'page'         => $page,
-            'fbp'          => $fbp,
-            'fbc'          => $fbc,
-            'ip'           => $request->ip(),
-            'user_agent'   => $request->userAgent(),
-            'utm_source'   => $utm['utm_source'],
-            'utm_medium'   => $utm['utm_medium'],
-            'utm_campaign' => $utm['utm_campaign'],
-            'utm_term'     => $utm['utm_term'],
-            'utm_content'  => $utm['utm_content'],
-            'referrer'     => $request->headers->get('referer'),
-        ]);
+        $click = TrialClick::firstOrCreate(
+            ['event_id' => $eventId],
+            [
+                'destination'  => $dest,
+                'page'         => $page,
+                'fbp'          => $fbp,
+                'fbc'          => $fbc,
+                'ip'           => $request->ip(),
+                'user_agent'   => $request->userAgent(),
+                'utm_source'   => $utm['utm_source'],
+                'utm_medium'   => $utm['utm_medium'],
+                'utm_campaign' => $utm['utm_campaign'],
+                'utm_term'     => $utm['utm_term'],
+                'utm_content'  => $utm['utm_content'],
+                'referrer'     => $request->headers->get('referer'),
+            ]
+        );
 
         $payload = [
             'event_time'       => time(),
@@ -62,8 +71,13 @@ class TrackingController extends Controller
             ],
         ];
 
-        $resp = $capi->send('StartTrial', $payload, $eventId);
+        if ($click->wasRecentlyCreated) {
+            SendFacebookCapiEvent::dispatchAfterResponse('StartTrial', $payload, $eventId);
+        }
 
-        return response()->json(['ok' => true, 'resp' => $resp]);
+        return response()->json([
+            'ok' => true,
+            'duplicate' => !$click->wasRecentlyCreated,
+        ], 202);
     }
 }

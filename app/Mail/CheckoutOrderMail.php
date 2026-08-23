@@ -33,7 +33,9 @@ class CheckoutOrderMail extends Mailable implements ShouldQueue
         $orderId = $this->details['order_id'] ?? null;
         $subject = $this->isAdmin
             ? 'New checkout order' . ($orderId ? ' #' . $orderId : '')
-            : 'Your order has been received' . ($orderId ? ' (#' . $orderId . ')' : '');
+            : trim(__('interface.email.checkout.customer_subject', [
+                'order_suffix' => $orderId ? '(#' . $orderId . ')' : '',
+            ]));
 
         return new Envelope(
             subject: $subject,

@@ -31,7 +31,7 @@ class IptvSubscriptionServicePageTest extends TestCase
         $response->assertDontSee('meta.iptv-subscription-service', false);
     }
 
-    public function test_iptv_subscription_service_inlines_styles_and_uses_a_native_page_shell(): void
+    public function test_iptv_subscription_service_links_cacheable_styles_and_uses_a_native_page_shell(): void
     {
         $response = $this->get(route('iptv-subscription-service'));
 
@@ -41,27 +41,18 @@ class IptvSubscriptionServicePageTest extends TestCase
         $headHtml = $headMatches[0];
 
         foreach ([
-            'iptv-subscription-critical-styles' => Vite::content('resources/css/site-critical.css'),
-            'iptv-subscription-page-styles' => file_get_contents(public_path('css/iptv-service.css')),
-            'iptv-subscription-document-styles' => file_get_contents(public_path('css/document-product.css')),
-        ] as $styleId => $expectedCss) {
-            $this->assertIsString($expectedCss);
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $headHtml, $styleMatches)
-            );
-            $this->assertSame(
-                hash('sha256', $expectedCss),
-                hash('sha256', $styleMatches[1])
-            );
-        }
-
-        foreach ([
             Vite::asset('resources/css/site-critical.css'),
             asset('css/iptv-service.css'),
             asset('css/document-product.css'),
         ] as $stylesheet) {
-            $this->assertStringNotContainsString('href="'.$stylesheet, $html);
+            $this->assertStringContainsString('href="'.$stylesheet, $headHtml);
+        }
+        foreach ([
+            'iptv-subscription-critical-styles',
+            'iptv-subscription-page-styles',
+            'iptv-subscription-document-styles',
+        ] as $styleId) {
+            $this->assertStringNotContainsString('id="'.$styleId.'"', $headHtml);
         }
 
         foreach ([
@@ -87,22 +78,32 @@ class IptvSubscriptionServicePageTest extends TestCase
         $this->assertStringContainsString('function renderIptv()', $html);
         $this->assertStringContainsString('function renderReseller()', $html);
 
-        $this->assertSame(
-            1,
-            preg_match('/<script id="iptv-subscription-native-shell">(.*?)<\/script>/s', $html, $scriptMatches)
-        );
+        $this->assertStringContainsString(Vite::asset('resources/js/native-shell.js'), $html);
 
         foreach ([
-            'initIptvSubscriptionScrollUi',
-            'initIptvSubscriptionMobileMenu',
-            'initIptvSubscriptionDropdowns',
-            'initIptvSubscriptionFaqs',
+            'data-native-shell-config',
+            'data-scroll-behavior="smooth"',
+            'data-initial-scroll-update="immediate"',
+            'data-manage-dropdown-display="true"',
+            'data-enrich-faq-aria="true"',
+        ] as $configMarker) {
+            $this->assertStringContainsString($configMarker, $html);
+        }
+
+        $nativeShell = file_get_contents(resource_path('js/native-shell.js'));
+        $this->assertIsString($nativeShell);
+
+        foreach ([
+            'initScrollUi',
+            'initMobileMenu',
+            'initDropdowns',
+            'initFaqs',
             "button.setAttribute('role', 'button')",
             "submenu.style.removeProperty('display')",
             "submenu.style.display = willOpen ? 'block' : ''",
             'window.requestAnimationFrame(update)',
         ] as $nativeMarker) {
-            $this->assertStringContainsString($nativeMarker, $scriptMatches[1]);
+            $this->assertStringContainsString($nativeMarker, $nativeShell);
         }
 
         foreach ([
@@ -117,7 +118,7 @@ class IptvSubscriptionServicePageTest extends TestCase
             'mCustomScrollbar',
             'owlCarousel',
         ] as $layoutOrLegacyMarker) {
-            $this->assertStringNotContainsString($layoutOrLegacyMarker, $scriptMatches[1]);
+            $this->assertStringNotContainsString($layoutOrLegacyMarker, $nativeShell);
         }
     }
 

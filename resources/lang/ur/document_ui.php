@@ -174,6 +174,10 @@ return [
         'email' => 'درست ای میل پتہ درج کریں۔',
         'string' => ':attribute متن ہونا چاہیے۔',
         'max' => ':attribute کی لمبائی :max حروف سے زیادہ نہیں ہونی چاہیے۔',
+        'numeric' => ':attribute ایک عدد ہونا چاہیے۔',
+        'integer' => ':attribute ایک صحیح عدد ہونا چاہیے۔',
+        'min_numeric' => ':attribute کم از کم :min ہونا چاہیے۔',
+        'invalid_selection' => ':attribute کے لیے منتخب کردہ قدر درست نہیں ہے۔',
     ],
 
     'assistant' => [

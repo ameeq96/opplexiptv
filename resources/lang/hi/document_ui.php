@@ -174,6 +174,10 @@ return [
         'email' => 'मान्य ईमेल पता दर्ज करें।',
         'string' => ':attribute टेक्स्ट होना चाहिए।',
         'max' => ':attribute में :max से अधिक अक्षर नहीं होने चाहिए।',
+        'numeric' => ':attribute एक संख्या होनी चाहिए।',
+        'integer' => ':attribute एक पूर्णांक होना चाहिए।',
+        'min_numeric' => ':attribute कम से कम :min होना चाहिए।',
+        'invalid_selection' => ':attribute के लिए चुना गया मान अमान्य है।',
     ],
 
     'assistant' => [

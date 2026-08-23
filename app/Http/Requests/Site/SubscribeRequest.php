@@ -15,4 +15,19 @@ class SubscribeRequest extends FormRequest
     {
         return ['email' => 'required|email'];
     }
+
+    public function messages(): array
+    {
+        return [
+            'email.required' => __('document_ui.validation.required'),
+            'email.email' => __('document_ui.validation.email'),
+        ];
+    }
+
+    public function attributes(): array
+    {
+        return [
+            'email' => __('messages.email'),
+        ];
+    }
 }

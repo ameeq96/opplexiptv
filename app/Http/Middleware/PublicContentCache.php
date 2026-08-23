@@ -19,6 +19,7 @@ class PublicContentCache
         'movies',
         'packages',
         'reseller-panel',
+        'iptv-subscription-service',
         'iptv-applications',
         'shop',
         'blogs.index',
@@ -43,6 +44,7 @@ class PublicContentCache
             'Cache-Control',
             'public, max-age=60, s-maxage=600, stale-while-revalidate=86400'
         );
+        $response->setVary('User-Agent', false);
         $response->headers->remove('Pragma');
         $response->headers->remove('Expires');
 

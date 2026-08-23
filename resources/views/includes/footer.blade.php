@@ -100,7 +100,6 @@
     $targetOptimizedRoutes = ['home', 'packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index', 'iptv-subscription-service'];
     $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
     $needsJquery = $usesLegacySiteAssets;
-    $needsStandalonePopper = $usesLegacySiteAssets;
     $needsBootstrap = $usesLegacySiteAssets;
     $needsCustomScrollbar = $usesLegacySiteAssets;
     $needsMixItUp = false; // MixItUp not used anywhere: movie filtering uses vanilla JS (applyFilter). Avoids shipping legacy JS.
@@ -255,9 +254,6 @@
 @if ($needsJquery)
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" defer></script>
 @endif
-@if ($needsStandalonePopper)
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
-@endif
 @if ($needsMixItUp)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js" defer></script>
 @endif
@@ -313,6 +309,20 @@
             'use strict';
 
             var fancyboxReady = null;
+            var fancyboxTranslations = {
+                CLOSE: @json(__('interface.fancybox.close')),
+                NEXT: @json(__('interface.fancybox.next')),
+                PREV: @json(__('interface.fancybox.previous')),
+                ERROR: @json(__('interface.fancybox.error')),
+                PLAY_START: @json(__('interface.fancybox.play_start')),
+                PLAY_STOP: @json(__('interface.fancybox.play_stop')),
+                FULL_SCREEN: @json(__('interface.fancybox.full_screen')),
+                THUMBS: @json(__('interface.fancybox.thumbnails')),
+                DOWNLOAD: @json(__('interface.fancybox.download')),
+                SHARE: @json(__('interface.fancybox.share')),
+                ZOOM: @json(__('interface.fancybox.zoom'))
+            };
+            var trailerUnavailableMessage = @json(__('interface.fancybox.trailer_unavailable'));
 
             function onReady(fn) {
                 if (document.readyState === 'loading') {
@@ -486,16 +496,14 @@
             }
 
             function initLightbox() {
-                document.addEventListener('click', function (event) {
-                    var link = event.target.closest('.lightbox-image');
-                    if (!link) return;
-
-                    var href = link.getAttribute('href');
-                    if (!href) return;
-
-                    event.preventDefault();
-                    ensureFancybox()
+                function openTrailer(href) {
+                    return ensureFancybox()
                         .then(function () {
+                            var defaults = window.jQuery.fancybox.defaults;
+                            defaults.i18n = defaults.i18n || {};
+                            defaults.i18n.site = fancyboxTranslations;
+                            defaults.lang = 'site';
+
                             window.jQuery.fancybox.open({
                                 src: href,
                                 type: 'iframe',
@@ -508,6 +516,45 @@
                         })
                         .catch(function () {
                             window.open(href, '_blank', 'noopener');
+                        });
+                }
+
+                document.addEventListener('click', function (event) {
+                    var link = event.target.closest('.lightbox-image');
+                    if (!link) return;
+
+                    var href = link.getAttribute('href');
+                    var endpoint = link.getAttribute('data-trailer-endpoint');
+                    if (!href && !endpoint) return;
+
+                    event.preventDefault();
+                    if (!endpoint) {
+                        openTrailer(href);
+                        return;
+                    }
+
+                    if (link.dataset.loading === 'true') return;
+                    link.dataset.loading = 'true';
+
+                    fetch(endpoint, {
+                        headers: { 'Accept': 'application/json' },
+                        credentials: 'same-origin'
+                    })
+                        .then(function (response) {
+                            if (!response.ok) throw new Error(trailerUnavailableMessage);
+                            return response.json();
+                        })
+                        .then(function (payload) {
+                            if (!payload.url) throw new Error(trailerUnavailableMessage);
+                            link.setAttribute('href', payload.url);
+                            link.removeAttribute('data-trailer-endpoint');
+                            openTrailer(payload.url);
+                        })
+                        .catch(function () {
+                            // Keep the endpoint so a transient network failure can be retried.
+                        })
+                        .finally(function () {
+                            delete link.dataset.loading;
                         });
                 });
             }
@@ -525,6 +572,50 @@
 <script>
     @if ($needsPhoneAssets)
     (function() {
+        const invalidPhoneMessage = @json(__('interface.common.invalid_phone'));
+        const countryListLabel = @json(__('interface.phone.country_list_aria'));
+
+        function localizedCountryNames() {
+            const countryApi = window.intlTelInputGlobals;
+            if (!countryApi || typeof countryApi.getCountryData !== 'function') {
+                return {};
+            }
+
+            const countryData = countryApi.getCountryData();
+            const fallbackNames = countryData.reduce((names, country) => {
+                if (country.iso2) names[country.iso2] = country.iso2.toUpperCase();
+                return names;
+            }, {});
+
+            if (!window.Intl || typeof window.Intl.DisplayNames !== 'function') {
+                return fallbackNames;
+            }
+
+            try {
+                const locale = document.documentElement.lang || 'en';
+                if (!window.Intl.DisplayNames.supportedLocalesOf([locale]).length) {
+                    return fallbackNames;
+                }
+                const regionNames = new window.Intl.DisplayNames([locale], { type: 'region' });
+
+                return countryData.reduce((names, country) => {
+                    const regionCode = String(country.iso2 || '').toUpperCase();
+                    if (!regionCode) return names;
+
+                    try {
+                        const localizedName = regionNames.of(regionCode);
+                        if (localizedName && localizedName.toUpperCase() !== regionCode) {
+                            names[country.iso2] = localizedName;
+                        }
+                    } catch (e) {}
+
+                    return names;
+                }, fallbackNames);
+            } catch (e) {
+                return fallbackNames;
+            }
+        }
+
         function initPhone() {
             const input = document.getElementById('phone');
             const errEl = document.getElementById('phone-client-error');
@@ -536,8 +627,14 @@
                 separateDialCode: true,
                 nationalMode: true,
                 placeholderNumberType: "MOBILE",
+                localizedCountries: localizedCountryNames(),
                 utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js"
             });
+
+            const countryList = input.parentElement
+                ? input.parentElement.querySelector('.iti__country-list')
+                : null;
+            if (countryList) countryList.setAttribute('aria-label', countryListLabel);
 
             if (input.value && input.value.trim().startsWith('+')) {
                 try {
@@ -554,7 +651,7 @@
             input.addEventListener('blur', () => {
                 showError('');
                 if (!input.value.trim()) return;
-                if (!iti.isValidNumber()) showError("{{ __('Invalid phone number') }}");
+                if (!iti.isValidNumber()) showError(invalidPhoneMessage);
             }, {
                 passive: true
             });
@@ -565,7 +662,7 @@
                     showError('');
                     if (input.value.trim() && !iti.isValidNumber()) {
                         e.preventDefault();
-                        showError("{{ __('Invalid phone number') }}");
+                        showError(invalidPhoneMessage);
                         input.focus();
                         return false;
                     }
@@ -602,7 +699,8 @@
 
         onReady(() => {
             // Lazy background images
-            const lazyBackgrounds = document.querySelectorAll('.lazy-background');
+            const lazyBackgrounds = Array.from(document.querySelectorAll('.lazy-background'))
+                .filter((element) => !element.closest('[data-carousel-type="hero"]'));
 
             const applyBg = (el) => {
                 const bgUrl = el.getAttribute('data-bg');
@@ -842,7 +940,7 @@
                                 button.innerHTML = original;
                             }, 1600);
                         } else {
-                            window.prompt('Copy this link:', url);
+                            window.prompt(@json(__('interface.common.copy_link_prompt')), url);
                         }
                     } catch (error) {
                         // User cancelled share sheet or clipboard write failed.

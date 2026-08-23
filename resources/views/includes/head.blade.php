@@ -11,16 +11,17 @@
         function v(string $path) {
             $rel  = ltrim($path, '/');
             $full = public_path($rel);
-            $ver  = is_file($full) ? filemtime($full) : time();
-            return asset($rel) . '?v=' . $ver;
+            $ver  = is_file($full) ? filemtime($full) : null;
+
+            return asset($rel) . ($ver ? '?v=' . $ver : '');
         }
     }
 
     $route = Request::route() ? Request::route()->getName() : 'home';
     $locale = app()->getLocale();
     $meta = trans("meta.$route");
-    $metaTitle = $meta['title'] ?? 'Default Title';
-    $metaDescription = $meta['description'] ?? 'Default Description';
+    $metaTitle = $meta['title'] ?? __('interface.common.default_meta_title');
+    $metaDescription = $meta['description'] ?? __('interface.common.default_meta_description');
     $keywords = $meta['keywords'] ?? '';
 
     $fbPixels = config('services.facebook.pixel_ids');
@@ -103,15 +104,6 @@
 @if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null))
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
     <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
-@endif
-@if ($routeName === 'home')
-    <link rel="preload" as="image" href="{{ asset('images/resource/movie-night-tv-1024.webp') }}"
-        imagesrcset="{{ asset('images/resource/movie-night-tv-480.webp') }} 480w,
-            {{ asset('images/resource/movie-night-tv-720.webp') }} 720w,
-            {{ asset('images/resource/movie-night-tv-1024.webp') }} 1024w,
-            {{ asset('images/resource/movie-night-tv-1280.webp') }} 1280w"
-        imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"
-        fetchpriority="high">
 @endif
 @if ($routeName === 'home')
     {{-- Discover homepage fonts before parsing the large inline critical-style block. --}}
@@ -1297,33 +1289,15 @@
         media="(max-width: 767px)" fetchpriority="high">
 @endif
 
-{{-- Keep optimized landing pages styled on first paint without a render-blocking stylesheet request. --}}
-@if ($routeName === 'home' && ! Vite::isRunningHot())
-    <style id="home-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($routeName === 'about' && ! Vite::isRunningHot())
-    <style id="about-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($routeName === 'reseller-panel' && ! Vite::isRunningHot())
-    <style id="reseller-panel-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($routeName === 'packages' && ! Vite::isRunningHot())
-    <style id="packages-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($routeName === 'blogs.index' && ! Vite::isRunningHot())
-    <style id="blogs-index-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($routeName === 'contact' && ! Vite::isRunningHot())
-    <style id="contact-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($routeName === 'iptv-subscription-service' && ! Vite::isRunningHot())
-    <style id="iptv-subscription-critical-styles">{!! Vite::content('resources/css/site-critical.css') !!}</style>
-@elseif ($isMoviesRoute)
+{{-- Keep critical CSS cacheable across pages instead of duplicating it inside every HTML response. --}}
+@if ($isMoviesRoute)
     <link rel="preload" href="{{ Vite::asset('resources/css/site-critical.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 @else
     @vite('resources/css/site-critical.css')
 @endif
-@unless ($isMoviesRoute)
-    @if ($needsBlockingCheckoutCss)
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}" media="all">
-    @else
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}" media="print" onload="this.media='all'">
-    @endif
-@endunless
+@if ($needsBlockingCheckoutCss)
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}">
+@endif
 @if ($isMoviesRoute)
     <script>
         window.addEventListener('load', function () {
@@ -1365,9 +1339,6 @@
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-critical.css') }}">
     @endif
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-deferred.css') }}">
-    @unless ($needsBlockingCheckoutCss || $isMoviesRoute)
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}">
-    @endunless
     @if ($needsPhoneAssets)
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
     @endif
@@ -1426,7 +1397,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
         const loaded = { ga:false, clarity:false, pixel:false };
-        const events = ['scroll','mousemove','touchstart','pointerdown','keydown'];
+        const events = ['scroll','touchstart','pointerdown','keydown'];
         const opts = { once:true, passive:true };
 
         function loadGA() {

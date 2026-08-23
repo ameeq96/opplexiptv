@@ -10,6 +10,9 @@ use Illuminate\Support\Collection;
 
 class UnifiedProductService
 {
+    /** @var array<string,bool> */
+    private array $tableAvailability = [];
+
     public function frontendProducts(): Collection
     {
         $key = 'ui:' . app()->getLocale() . ':frontend-products:v3';
@@ -107,10 +110,14 @@ class UnifiedProductService
 
     private function hasTable(string $table): bool
     {
+        if (array_key_exists($table, $this->tableAvailability)) {
+            return $this->tableAvailability[$table];
+        }
+
         try {
-            return Schema::hasTable($table);
+            return $this->tableAvailability[$table] = Schema::hasTable($table);
         } catch (\Throwable) {
-            return false;
+            return $this->tableAvailability[$table] = false;
         }
     }
 }

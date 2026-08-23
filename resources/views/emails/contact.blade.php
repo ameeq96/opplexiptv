@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app()->getLocale() }}" dir="{{ in_array(app()->getLocale(), ['ar', 'ur'], true) ? 'rtl' : 'ltr' }}">
 <head>
-    <title>Contact Form Submission</title>
+    <title>{{ __('interface.email.contact.page_title') }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,17 +40,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Contact Form</h1>
-        <p>Hi there,</p>
-        <p>You have received a new message from the contact form on your website. Here are the details:</p>
+        <h1>{{ __('interface.email.contact.heading') }}</h1>
+        <p>{{ __('interface.email.common.greeting') }}</p>
+        <p>{{ __('interface.email.contact.intro') }}</p>
         <div class="details">
-            <p><strong>Name:</strong> {{ $details['username'] }}</p>
-            <p><strong>Email:</strong> {{ $details['email'] }}</p>
-            <p><strong>Phone:</strong> {{ $details['phone'] }}</p>
-            <p><strong>Message:</strong></p>
+            <p><strong>{{ __('interface.email.common.name') }}:</strong> {{ $details['username'] }}</p>
+            <p><strong>{{ __('interface.email.common.email') }}:</strong> {{ $details['email'] }}</p>
+            <p><strong>{{ __('interface.email.common.phone') }}:</strong> {{ $details['phone'] }}</p>
+            <p><strong>{{ __('interface.email.common.message') }}:</strong></p>
             <p>{{ $details['message'] }}</p>
         </div>
-        <p>Best regards,</p>
+        <p>{{ __('interface.email.common.regards') }}</p>
         <p>OPPLEX IPTV</p>
     </div>
 </body>

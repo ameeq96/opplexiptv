@@ -174,6 +174,10 @@ return [
         'email' => 'Introduza um endereço de e-mail válido.',
         'string' => 'O campo :attribute deve conter texto.',
         'max' => 'O campo :attribute não pode ter mais de :max caracteres.',
+        'numeric' => 'O campo :attribute deve ser um número.',
+        'integer' => 'O campo :attribute deve ser um número inteiro.',
+        'min_numeric' => 'O campo :attribute deve ser pelo menos :min.',
+        'invalid_selection' => 'A opção selecionada para :attribute é inválida.',
     ],
 
     'assistant' => [

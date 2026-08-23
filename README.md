@@ -69,8 +69,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 - Use cached config, routes, and views in production:
   - `php artisan config:cache`
-  - `php artisan route:cache`
+  - `php artisan route:trans:cache` (required so every localized URL is cached)
   - `php artisan view:cache`
+- Build versioned frontend assets with `npm ci && npm run build`.
 - Optimize Composer autoloading for deploys:
   - `composer install --no-dev --optimize-autoloader`
 - Enable OPcache in your PHP runtime and set `APP_ENV=production`, `APP_DEBUG=false` in `.env`.

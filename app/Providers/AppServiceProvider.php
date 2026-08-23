@@ -2,10 +2,9 @@
 
 namespace App\Providers;
 
+use App\Services\SchemaService;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\View;
-use Jenssegers\Agent\Agent;
 use Illuminate\Support\Facades\URL;
 
 
@@ -16,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->scoped(SchemaService::class);
     }
 
     /**
@@ -32,20 +31,5 @@ class AppServiceProvider extends ServiceProvider
             URL::forceRootUrl(config('app.url'));
         }
 
-        View::composer('*', function ($view) {
-            $agent = app(Agent::class);
-
-            $data = $view->getData();
-
-            if (!array_key_exists('isMobile', $data)) {
-                $view->with('isMobile', $agent->isMobile());
-            }
-            if (!array_key_exists('isRtl', $data)) {
-                $view->with(
-                    'isRtl',
-                    app(\App\Services\LocaleService::class)->isRtl()
-                );
-            }
-        });
     }
 }

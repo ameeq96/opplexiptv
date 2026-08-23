@@ -10,7 +10,7 @@ class ResellerPanelPerformanceTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_english_reseller_panel_inlines_required_styles_and_uses_native_interactions(): void
+    public function test_english_reseller_panel_links_cacheable_styles_and_uses_native_interactions(): void
     {
         $response = $this->get('/reseller-panel');
 
@@ -18,25 +18,19 @@ class ResellerPanelPerformanceTest extends TestCase
         $html = $response->getContent();
 
         foreach ([
-            'reseller-panel-critical-styles' => Vite::content('resources/css/site-critical.css'),
-            'reseller-panel-document-styles' => file_get_contents(public_path('css/document-commerce.css')),
-        ] as $styleId => $expectedCss) {
-            $this->assertIsString($expectedCss);
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $html, $matches)
-            );
-            $this->assertSame(hash('sha256', $expectedCss), hash('sha256', $matches[1]));
-        }
-
-        $this->assertStringNotContainsString('id="reseller-panel-page-styles"', $html);
-        foreach ([
             Vite::asset('resources/css/site-critical.css'),
-            asset('css/about.css'),
             asset('css/document-commerce.css'),
         ] as $stylesheet) {
-            $this->assertStringNotContainsString('href="'.$stylesheet, $html);
+            $this->assertStringContainsString('href="'.$stylesheet, $html);
         }
+        foreach ([
+            'reseller-panel-critical-styles',
+            'reseller-panel-document-styles',
+            'reseller-panel-page-styles',
+        ] as $styleId) {
+            $this->assertStringNotContainsString('id="'.$styleId.'"', $html);
+        }
+        $this->assertStringNotContainsString('href="'.asset('css/about.css'), $html);
 
         $this->assertStringContainsString('data-native-carousel', $html);
         $this->assertStringContainsString('data-rtl="false"', $html);
@@ -58,7 +52,7 @@ class ResellerPanelPerformanceTest extends TestCase
         $this->assertResellerPanelUsesNativeShell($html);
     }
 
-    public function test_localized_reseller_panel_inlines_document_styles_and_keeps_native_carousel(): void
+    public function test_localized_reseller_panel_links_document_styles_and_keeps_native_carousel(): void
     {
         app()->setLocale('es');
 
@@ -68,20 +62,19 @@ class ResellerPanelPerformanceTest extends TestCase
         $html = $response->getContent();
 
         foreach ([
-            'reseller-panel-critical-styles' => Vite::content('resources/css/site-critical.css'),
-            'reseller-panel-document-styles' => file_get_contents(public_path('css/document-commerce.css')),
-        ] as $styleId => $expectedCss) {
-            $this->assertIsString($expectedCss);
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $html, $matches)
-            );
-            $this->assertSame(hash('sha256', $expectedCss), hash('sha256', $matches[1]));
+            Vite::asset('resources/css/site-critical.css'),
+            asset('css/document-commerce.css'),
+        ] as $stylesheet) {
+            $this->assertStringContainsString('href="'.$stylesheet, $html);
         }
-
-        $this->assertStringNotContainsString('id="reseller-panel-page-styles"', $html);
+        foreach ([
+            'reseller-panel-critical-styles',
+            'reseller-panel-document-styles',
+            'reseller-panel-page-styles',
+        ] as $styleId) {
+            $this->assertStringNotContainsString('id="'.$styleId.'"', $html);
+        }
         $this->assertStringNotContainsString('href="'.asset('css/about.css'), $html);
-        $this->assertStringNotContainsString('href="'.asset('css/document-commerce.css'), $html);
         $this->assertStringContainsString('data-native-carousel', $html);
         $this->assertStringContainsString('data-rtl="false"', $html);
         $this->assertStringNotContainsString('sponsors-carousel owl-carousel', $html);
@@ -114,19 +107,29 @@ class ResellerPanelPerformanceTest extends TestCase
 
     private function assertResellerPanelUsesNativeShell(string $html): void
     {
-        $this->assertSame(
-            1,
-            preg_match('/<script id="reseller-panel-native-shell">(.*?)<\/script>/s', $html, $scriptMatches)
-        );
+        $this->assertStringContainsString(Vite::asset('resources/js/native-shell.js'), $html);
 
         foreach ([
-            'initResellerPanelScrollUi',
-            'initResellerPanelMobileMenu',
-            'initResellerPanelDropdowns',
-            'initResellerPanelFaqs',
+            'data-native-shell-config',
+            'data-scroll-behavior="instant"',
+            'data-initial-scroll-update="animation-frame"',
+            'data-manage-dropdown-display="true"',
+            'data-enrich-faq-aria="true"',
+        ] as $configMarker) {
+            $this->assertStringContainsString($configMarker, $html);
+        }
+
+        $nativeShell = file_get_contents(resource_path('js/native-shell.js'));
+        $this->assertIsString($nativeShell);
+
+        foreach ([
+            'initScrollUi',
+            'initMobileMenu',
+            'initDropdowns',
+            'initFaqs',
             'window.requestAnimationFrame(update)',
         ] as $nativeMarker) {
-            $this->assertStringContainsString($nativeMarker, $scriptMatches[1]);
+            $this->assertStringContainsString($nativeMarker, $nativeShell);
         }
 
         foreach ([
@@ -139,7 +142,7 @@ class ResellerPanelPerformanceTest extends TestCase
             'jQuery',
             'mCustomScrollbar',
         ] as $layoutOrLegacyMarker) {
-            $this->assertStringNotContainsString($layoutOrLegacyMarker, $scriptMatches[1]);
+            $this->assertStringNotContainsString($layoutOrLegacyMarker, $nativeShell);
         }
     }
 }

@@ -54,7 +54,9 @@
                     <span class="blog-meta__sep" aria-hidden="true"></span>
                 @endif
                 <span class="blog-meta__item">
-                    {{ optional($blog->published_at)->format('M d, Y') }}
+                    {{ $blog->published_at
+                        ? $blog->published_at->locale(app()->getLocale())->translatedFormat(__('interface.blog.date_format'))
+                        : '' }}
                 </span>
                 @if ($blog->reading_time)
                     <span class="blog-meta__sep" aria-hidden="true"></span>

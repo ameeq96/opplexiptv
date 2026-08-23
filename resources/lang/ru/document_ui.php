@@ -174,6 +174,10 @@ return [
         'email' => 'Введите корректный адрес электронной почты.',
         'string' => 'Поле «:attribute» должно содержать текст.',
         'max' => 'Поле «:attribute» не должно превышать :max символов.',
+        'numeric' => 'Поле «:attribute» должно быть числом.',
+        'integer' => 'Поле «:attribute» должно быть целым числом.',
+        'min_numeric' => 'Поле «:attribute» должно быть не меньше :min.',
+        'invalid_selection' => 'Выбранное значение поля «:attribute» недопустимо.',
     ],
 
     'assistant' => [

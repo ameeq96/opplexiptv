@@ -2,16 +2,11 @@
 
 @php
     use Illuminate\Support\Facades\Storage;
-    use Illuminate\Support\Facades\Vite;
     $isRtl = in_array(app()->getLocale(), ['ar', 'ur'], true);
 @endphp
 
 @push('styles')
-    @if (! Vite::isRunningHot())
-        <style id="blogs-index-styles">{!! Vite::content('resources/css/blogs.css') !!}</style>
-    @else
-        @vite('resources/css/blogs.css')
-    @endif
+    @vite('resources/css/blogs.css')
 @endpush
 
 @push('schema')
@@ -43,12 +38,12 @@
         ['url' => '/', 'label' => __('messages.blog.breadcrumb.home')],
         ['label' => __('messages.blog.breadcrumb.current')],
     ]" background="images/background/10.webp"
-        :rtl="$isRtl" aria-label="Blog Page" />
+        :rtl="$isRtl" :aria-label="__('interface.blog.page_aria')" />
 
     <section class="blogs-wrap {{ $isRtl ? 'rtl' : '' }}">
         <div class="auto-container">
 
-            <h1 class="sr-only">{{ __('messages.blog.heading') }} — IPTV Guides, Setup Tips &amp; Streaming News</h1>
+            <h1 class="sr-only">{{ __('messages.blog.heading') }} — {{ __('interface.blog.page_summary') }}</h1>
 
             {{-- Toolbar: categories + search --}}
             <div class="blog-toolbar">
@@ -138,7 +133,11 @@
                                 </span>
                                 <span class="blog-meta__sep" aria-hidden="true"></span>
                             @endif
-                            <span class="blog-meta__item">{{ optional($featured->published_at)->format('M d, Y') }}</span>
+                            <span class="blog-meta__item">
+                                {{ $featured->published_at
+                                    ? $featured->published_at->locale(app()->getLocale())->translatedFormat(__('interface.blog.date_format'))
+                                    : '' }}
+                            </span>
                             @if ($featured->reading_time)
                                 <span class="blog-meta__sep" aria-hidden="true"></span>
                                 <span class="blog-meta__item">

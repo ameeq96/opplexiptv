@@ -1,13 +1,10 @@
+@php
+    $layoutIsRtl = $isRtl ?? in_array(app()->getLocale(), ['ar', 'ur'], true);
+@endphp
 <!DOCTYPE html>
 <html class="loading" lang="{{ app()->getLocale() }}"
-    dir="{{ in_array(app()->getLocale(), ['ar', 'ur']) ? 'rtl' : 'ltr' }}"
-    data-textdirection="{{ in_array(app()->getLocale(), ['ar', 'ur']) ? 'rtl' : 'ltr' }}">
-
-@php
-    use Jenssegers\Agent\Agent;
-    $agent = new Agent();
-    $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-@endphp
+    dir="{{ $layoutIsRtl ? 'rtl' : 'ltr' }}"
+    data-textdirection="{{ $layoutIsRtl ? 'rtl' : 'ltr' }}">
 
 <head>
     @include('includes.head')
@@ -27,8 +24,14 @@
 
     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
         class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp">
-        <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" />
+        <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" width="60" height="60"
+            decoding="async" />
     </a>
+
+    @hasSection('native-shell')
+        @yield('native-shell')
+        @vite('resources/js/native-shell.js')
+    @endif
 
     @yield('script')
 

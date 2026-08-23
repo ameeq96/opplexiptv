@@ -37,9 +37,26 @@ class TrialClickController extends Controller
         $clicks = $q->paginate($perPage)->withQueryString();
 
         // Metrics
-        $today  = TrialClick::whereDate('created_at', today())->count();
-        $last7  = TrialClick::where('created_at', '>=', now()->subDays(7))->count();
-        $last30 = TrialClick::where('created_at', '>=', now()->subDays(30))->count();
+        $now = now();
+        $todayStart = $now->clone()->startOfDay();
+        $tomorrowStart = $todayStart->clone()->addDay();
+        $metrics = TrialClick::query()
+            ->selectRaw(
+                'SUM(CASE WHEN created_at >= ? AND created_at < ? THEN 1 ELSE 0 END) AS today_count,
+                 SUM(CASE WHEN created_at >= ? THEN 1 ELSE 0 END) AS last_7_count,
+                 SUM(CASE WHEN created_at >= ? THEN 1 ELSE 0 END) AS last_30_count',
+                [
+                    $todayStart,
+                    $tomorrowStart,
+                    $now->clone()->subDays(7),
+                    $now->clone()->subDays(30),
+                ]
+            )
+            ->first();
+
+        $today = (int) ($metrics?->today_count ?? 0);
+        $last7 = (int) ($metrics?->last_7_count ?? 0);
+        $last30 = (int) ($metrics?->last_30_count ?? 0);
 
         return view('admin.trial_clicks.index', compact('clicks','today','last7','last30'));
     }

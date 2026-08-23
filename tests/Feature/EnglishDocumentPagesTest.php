@@ -83,7 +83,7 @@ class EnglishDocumentPagesTest extends TestCase
         ];
     }
 
-    public function test_packages_inlines_document_styles_and_uses_the_native_shell(): void
+    public function test_packages_links_document_styles_and_uses_the_native_shell(): void
     {
         Cache::flush();
         Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
@@ -93,18 +93,11 @@ class EnglishDocumentPagesTest extends TestCase
         $response->assertOk();
         $html = $response->getContent();
 
-        $this->assertSame(
-            1,
-            preg_match('/<style id="packages-document-styles">(.*?)<\/style>/s', $html, $styleMatches)
-        );
-        $this->assertSame(
-            hash('sha256', file_get_contents(public_path('css/document-commerce.css'))),
-            hash('sha256', $styleMatches[1])
-        );
-        $this->assertStringNotContainsString(
+        $this->assertStringContainsString(
             'href="'.asset('css/document-commerce.css'),
             $html
         );
+        $this->assertStringNotContainsString('id="packages-document-styles"', $html);
 
         foreach ([
             'https://code.jquery.com/jquery-1.12.4.min.js',
@@ -117,20 +110,32 @@ class EnglishDocumentPagesTest extends TestCase
             $this->assertStringNotContainsString($legacyAsset, $html);
         }
 
-        $this->assertSame(
-            1,
-            preg_match('/<script id="packages-native-shell">(.*?)<\/script>/s', $html, $scriptMatches)
-        );
+        $this->assertStringContainsString(Vite::asset('resources/js/native-shell.js'), $html);
+
         foreach ([
-            'initPackagesMobileMenu',
-            'initPackagesFaqs',
-            'initPackagesScrollUi',
+            'data-native-shell-config',
+            'data-scroll-behavior="smooth"',
+            'data-initial-scroll-update="immediate"',
+            'data-manage-dropdown-display="false"',
+            'data-enrich-faq-aria="false"',
+        ] as $configMarker) {
+            $this->assertStringContainsString($configMarker, $html);
+        }
+
+        $nativeShell = file_get_contents(resource_path('js/native-shell.js'));
+        $this->assertIsString($nativeShell);
+
+        foreach ([
+            'initMobileMenu',
+            'initFaqs',
+            'initScrollUi',
             'window.requestAnimationFrame(update)',
         ] as $nativeMarker) {
-            $this->assertStringContainsString($nativeMarker, $scriptMatches[1]);
+            $this->assertStringContainsString($nativeMarker, $nativeShell);
         }
+
         foreach (['offsetHeight', 'offsetWidth', 'clientWidth', 'getBoundingClientRect'] as $layoutRead) {
-            $this->assertStringNotContainsString($layoutRead, $scriptMatches[1]);
+            $this->assertStringNotContainsString($layoutRead, $nativeShell);
         }
     }
 

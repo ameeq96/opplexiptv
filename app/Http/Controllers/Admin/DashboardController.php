@@ -40,16 +40,18 @@ class DashboardController extends Controller
         $baseOrders = Order::query()
             ->when($hasRange, fn($q) => $q->whereBetween('buying_date', [$start, $end]));
 
-        $totalOrders = (clone $baseOrders)->count();
-        $activeOrders = (clone $baseOrders)
-            ->whereNotNull('expiry_date')
-            ->where('expiry_date', '>=', $now)
-            ->count();
+        $orderCounts = (clone $baseOrders)
+            ->selectRaw(
+                'COUNT(*) AS total_count,
+                 SUM(CASE WHEN expiry_date IS NOT NULL AND expiry_date >= ? THEN 1 ELSE 0 END) AS active_count,
+                 SUM(CASE WHEN expiry_date IS NOT NULL AND expiry_date < ? THEN 1 ELSE 0 END) AS expired_count',
+                [$now, $now]
+            )
+            ->first();
 
-        $expiredOrders = (clone $baseOrders)
-            ->whereNotNull('expiry_date')
-            ->where('expiry_date', '<', $now)
-            ->count();
+        $totalOrders = (int) ($orderCounts?->total_count ?? 0);
+        $activeOrders = (int) ($orderCounts?->active_count ?? 0);
+        $expiredOrders = (int) ($orderCounts?->expired_count ?? 0);
 
         $users = User::query()->count();
 

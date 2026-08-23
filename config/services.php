@@ -47,6 +47,10 @@ return [
         'tag_manager_id' => env('GTM_CONTAINER_ID'),
         'analytics_id'   => env('GA_MEASUREMENT_ID'),
     ],
+    'tmdb' => [
+        'base_url' => env('TMDB_BASE_URL', 'https://api.themoviedb.org/3'),
+        'api_key'  => env('TMDB_API_KEY', ''),
+    ],
     'discount' => [
         'phone' => env('DISCOUNT_WA_PHONE', '16393903194'),
     ],

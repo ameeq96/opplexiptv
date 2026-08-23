@@ -1,15 +1,15 @@
 @extends('layouts.default')
-@section('title', 'Legal IPTV Guide')
+@section('title', __('interface.activation.page_title'))
 
 @push('schema')
     {!! jsonld(seo()->howTo(
-        'How to activate your Opplex IPTV subscription',
-        'Activate your IPTV subscription in a few simple steps after purchase.',
+        __('interface.activation.howto_title'),
+        __('interface.activation.howto_description'),
         [
-            ['name' => 'Enter your order number', 'text' => 'Open the activation page and type the order number you received after purchase.'],
-            ['name' => 'Send your activation request', 'text' => 'Tap Activate to send your order number to our support team on WhatsApp.'],
-            ['name' => 'We verify and activate', 'text' => 'Our team verifies your order and activates your IPTV line, usually within minutes.'],
-            ['name' => 'Start streaming', 'text' => 'Open your IPTV app, sign in with the details we send you, and start watching on any device.'],
+            ['name' => __('interface.activation.steps.enter_name'), 'text' => __('interface.activation.steps.enter_text')],
+            ['name' => __('interface.activation.steps.request_name'), 'text' => __('interface.activation.steps.request_text')],
+            ['name' => __('interface.activation.steps.verify_name'), 'text' => __('interface.activation.steps.verify_text')],
+            ['name' => __('interface.activation.steps.stream_name'), 'text' => __('interface.activation.steps.stream_text')],
         ],
     )) !!}
 @endpush
@@ -20,30 +20,31 @@
         <div class="container" style="max-width:720px;">
             <!-- H1 -->
             <h1 class="text-center mb-2" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                Legal IPTV Guide
+                {{ __('interface.activation.page_title') }}
             </h1>
             <!-- H2 -->
             <h2 class="text-muted text-center mb-4" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
-                Enter your order number
+                {{ __('interface.activation.instructions_heading') }}
             </h2>
 
             <div class="card p-4 shadow-sm">
-                <label for="orderNumber" class="form-label">{{ __('Order number') }}</label>
+                <label for="orderNumber" class="form-label">{{ __('interface.activation.order_number') }}</label>
                 <input type="text" id="orderNumber" class="form-control mb-3 {{ $isRtl ? 'text-end' : '' }}"
-                    placeholder="{{ __('e.g. 12345 or ABC-789') }}" inputmode="text" autocomplete="off" required
+                    placeholder="{{ __('interface.activation.order_placeholder') }}" inputmode="text" autocomplete="off" required
                     aria-describedby="orderHelp">
-                <div id="orderHelp" class="form-text">{{ __('We’ll send your activation request.') }}</div>
+                <div id="orderHelp" class="form-text">{{ __('interface.activation.request_help') }}</div>
 
-                <button id="waBtn" class="btn btn-danger mt-3 w-100" type="button" aria-label="Send"
+                <button id="waBtn" class="btn btn-danger mt-3 w-100" type="button"
+                    aria-label="{{ __('interface.activation.send_label') }}"
                     disabled>
-                    <i class="fa fa me-1"></i> {{ __('Activate') }}
+                    <i class="fa fa me-1"></i> {{ __('interface.activation.activate') }}
                 </button>
 
-                <small id="errorText" class="text-danger d-none mt-2">{{ __('Please enter a valid order number.') }}</small>
+                <small id="errorText" class="text-danger d-none mt-2">{{ __('interface.activation.valid_order') }}</small>
             </div>
 
             <p class="text-center mt-3">
-                <small>{{ __('Having trouble? You can also message us directly after entering your code.') }}</small>
+                <small>{{ __('interface.activation.trouble') }}</small>
             </p>
         </div>
     </section>
@@ -54,7 +55,9 @@
             const input = document.getElementById('orderNumber');
             const btn = document.getElementById('waBtn');
             const err = document.getElementById('errorText');
-            const rtl = {{ $isRtl ? 'true' : 'false' }};
+            const requestLabel = @json(__('interface.activation.whatsapp_request'));
+            const orderTemplate = @json(__('interface.activation.whatsapp_order', ['order' => ':order']));
+            const fromTemplate = @json(__('interface.activation.whatsapp_from', ['url' => ':url']));
 
             const isValid = (val) => /^[A-Za-z0-9\-\_]{3,32}$/.test(val.trim());
 
@@ -73,9 +76,9 @@
                     return;
                 }
                 const msgLines = [
-                    'Activation request',
-                    'Order #: ' + code,
-                    'From: ' + window.location.origin
+                    requestLabel,
+                    orderTemplate.replace(':order', code),
+                    fromTemplate.replace(':url', window.location.origin)
                 ];
                 const url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msgLines.join('\n'));
                 window.open(url, '_blank');

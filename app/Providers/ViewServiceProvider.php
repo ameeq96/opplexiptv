@@ -15,11 +15,13 @@ class ViewServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        View::composer('*', function ($view) {
-            static $shared = null;
+        View::composer(['pages.*', 'blogs.*', 'policies.*', 'layouts.default'], function ($view) {
+            $request = request();
+            $shared = $request->attributes->get('_opplex_ui_data');
 
-            if ($shared === null) {
+            if (!is_array($shared)) {
                 $shared = resolve(UiData::class)->build();
+                $request->attributes->set('_opplex_ui_data', $shared);
             }
 
             $data = $view->getData();

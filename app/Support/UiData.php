@@ -20,6 +20,9 @@ use Illuminate\Http\Request;
 
 class UiData
 {
+    /** @var array<string,bool> */
+    private array $tableAvailability = [];
+
     public function __construct(
         private Agent $agent,
         private ImageService $images,
@@ -115,8 +118,16 @@ class UiData
         $menuItems     = $this->remember('menu-items:v2', now()->addMinutes(30), fn () => $this->menuItems(), []);
         $pricingSection = $needsPricing ? $this->remember('pricing-section', now()->addMinutes(30), fn () => $this->pricingSection(), null) : null;
         $footer = $this->remember('footer', now()->addMinutes(30), fn () => $this->footerData(), []);
-        $packages      = $needsPricing ? $this->remember('packages:iptv', now()->addMinutes(30), fn () => $this->packages(), []) : [];
-        $resellerPlans = $needsPricing ? $this->remember('packages:reseller', now()->addMinutes(30), fn () => $this->resellerPlans(), []) : [];
+        $packageGroups = $needsPricing
+            ? $this->remember(
+                'packages:v2',
+                now()->addMinutes(30),
+                fn () => $this->packageGroups(),
+                ['iptv' => [], 'reseller' => []]
+            )
+            : ['iptv' => [], 'reseller' => []];
+        $packages = $packageGroups['iptv'];
+        $resellerPlans = $packageGroups['reseller'];
         $testimonials  = $needsTestimonials ? $this->remember('testimonials', now()->addMinutes(30), fn () => $this->testimonials(), $this->fallbackTestimonials()) : [];
         $faqs          = $routeName === 'faqs' ? $this->faqs() : [];
 
@@ -195,10 +206,14 @@ class UiData
 
     private function hasTable(string $table): bool
     {
+        if (array_key_exists($table, $this->tableAvailability)) {
+            return $this->tableAvailability[$table];
+        }
+
         try {
-            return Schema::hasTable($table);
+            return $this->tableAvailability[$table] = Schema::hasTable($table);
         } catch (\Throwable) {
-            return false;
+            return $this->tableAvailability[$table] = false;
         }
     }
 
@@ -272,10 +287,10 @@ class UiData
                 $m['webp_poster_url'] = $this->images->toWebp($src, 308, 462);
             }
 
-            $m['safe_title']    = $m['title'] ?? $m['name'] ?? 'Featured IPTV Content';
+            $m['safe_title']    = $m['title'] ?? $m['name'] ?? __('interface.movies.featured_title');
             $m['safe_overview'] = isset($m['overview'])
                 ? Str::limit((string) $m['overview'], 150)
-                : __('messages.no_overview');
+                : __('interface.movies.no_overview');
 
             return $m;
         })->values();
@@ -292,24 +307,24 @@ class UiData
         return collect([
             [
                 'safe_title' => 'Fast X',
-                'safe_overview' => 'Stream premium movies, live channels, sports, and entertainment in HD/4K with Opplex IPTV.',
+                'safe_overview' => __('interface.movies.fallback_movies'),
                 'webp_image_url' => asset('images/resource/fastx.webp'),
             ],
             [
                 'safe_title' => 'Squid Game',
-                'safe_overview' => 'Enjoy popular series and global entertainment with smooth IPTV streaming on every device.',
+                'safe_overview' => __('interface.movies.fallback_series'),
                 'webp_image_url' => asset('images/resource/squidgame.webp'),
             ],
             [
                 'safe_title' => 'Extraction 2',
-                'safe_overview' => 'Watch action, sports, news, and family content through reliable IPTV plans.',
+                'safe_overview' => __('interface.movies.fallback_action'),
                 'webp_image_url' => asset('images/resource/extraction2.webp'),
             ],
         ]);
     }
 
     /**
-     * Normalize for cards/filters and add trailer URL.
+     * Normalize cards/filters and expose a lazy trailer endpoint.
      *
      * @param Collection<int,array<string,mixed>> $movies
      * @return Collection<int,array<string,mixed>>
@@ -334,24 +349,19 @@ class UiData
                 : '—';
 
             $id = $m['id'] ?? null;
-            $trailerUrl = null;
-            if ($id !== null) {
-                try {
-                    $trailerUrl = $this->tmdb->trailerUrl($id, $mediaType);
-                } catch (\Throwable) {
-                    $trailerUrl = null;
-                }
-            }
+            $trailerEndpoint = $id !== null
+                ? route('movies.trailer', ['mediaType' => $mediaType, 'id' => $id])
+                : null;
 
             return [
-                'id'          => $id,
-                'media_type'  => $mediaType,
-                'title'       => $title,
-                'year'        => $year,
-                'poster_url'  => $posterUrl,
-                'vote'        => $vote,
-                'genre_ids'   => $m['genre_ids'] ?? [],
-                'trailer_url' => $trailerUrl,
+                'id'               => $id,
+                'media_type'       => $mediaType,
+                'title'            => $title,
+                'year'             => $year,
+                'poster_url'       => $posterUrl,
+                'vote'             => $vote,
+                'genre_ids'        => $m['genre_ids'] ?? [],
+                'trailer_endpoint' => $trailerEndpoint,
             ];
         })->values();
     }
@@ -714,46 +724,46 @@ class UiData
         ];
     }
 
-    /** @return array<int,array<string,mixed>> */
-    private function packages(): array
+    /**
+     * Load both package families in one query.
+     *
+     * @return array{iptv:array<int,array<string,mixed>>,reseller:array<int,array<string,mixed>>}
+     */
+    private function packageGroups(): array
     {
         if (!$this->hasTable('packages')) {
-            return [];
+            return ['iptv' => [], 'reseller' => []];
         }
 
-        return \App\Models\Package::query()
+        $rows = Package::query()
             ->where('active', true)
-            // Only IPTV rows; show both vendors
-            ->where('type', 'iptv')
+            ->whereIn('type', ['iptv', 'reseller'])
             ->whereIn('vendor', ['opplex', 'starshare'])
-            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, duration_months, id)")
+            ->orderByRaw("FIELD(vendor,'opplex','starshare')")
+            ->orderByRaw(
+                "CASE WHEN type = 'reseller'
+                    THEN COALESCE(sort_order, credits, id)
+                    ELSE COALESCE(sort_order, duration_months, id)
+                END"
+            )
+            // Keep Package::translation()'s third fallback to the first available locale.
             ->with('translations')
-            ->get()
-            ->map(fn($p) => $p->toIptvArray())
-            ->values()
-            ->all();
+            ->get();
+
+        return [
+            'iptv' => $rows
+                ->where('type', 'iptv')
+                ->map(fn (Package $package) => $package->toIptvArray())
+                ->values()
+                ->all(),
+            'reseller' => $rows
+                ->where('type', 'reseller')
+                ->map(fn (Package $package) => $package->toResellerArray())
+                ->values()
+                ->all(),
+        ];
     }
 
-    /** @return array<int,array<string,mixed>> */
-    private function resellerPlans(): array
-    {
-        if (!$this->hasTable('packages')) {
-            return [];
-        }
-
-        return \App\Models\Package::query()
-            ->where('active', true)
-            // Only Reseller rows; show both vendors
-            ->where('type', 'reseller')
-            ->whereIn('vendor', ['opplex', 'starshare'])
-            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
-            ->with('translations')
-            ->get()
-            ->map(fn($p) => $p->toResellerArray())
-            ->values()
-            ->all();
-    }
-    
     /** @return array<int,array<string,string>> */
     private function testimonials(): array
     {

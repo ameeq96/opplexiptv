@@ -1,14 +1,14 @@
 @extends('layouts.default')
-@section('title', __('messages.redirect.title'))
+@section('title', __('interface.redirect.title'))
 
 @section('content')
     <div class="section text-center p-5" dir="{{ $isRtl ? 'rtl' : 'ltr' }}">
-        <h2>{{ __('messages.redirect.preparing') }}</h2>
-        <p id="statusText" class="mb-3">{{ __('messages.redirect.ad_loading') }}</p>
+        <h2>{{ __('interface.redirect.preparing') }}</h2>
+        <p id="statusText" class="mb-3">{{ __('interface.redirect.ad_loading') }}</p>
 
         <div class="mt-2 mb-2">
             <button id="clickToDownload" class="btn btn-primary btn-lg">
-                {{ __('messages.redirect.click_to_download') }}
+                {{ __('interface.redirect.click_to_download') }}
             </button>
         </div>
 
@@ -18,8 +18,8 @@
 
         <noscript>
             <p class="mt-3">
-                {{ __('messages.redirect.noscript') }}
-                <a class="btn btn-outline-primary mt-2" href="{{ $target }}">{{ __('messages.redirect.open_direct') }}</a>
+                {{ __('interface.redirect.noscript') }}
+                <a class="btn btn-outline-primary mt-2" href="{{ $target }}">{{ __('interface.redirect.open_direct') }}</a>
             </p>
         </noscript>
     </div>
@@ -30,6 +30,10 @@
 
         const TARGET = @json($target ?? '');
         const AD_URL = @json($adUrl ?? '');
+        const WAIT_SECONDS = @json(__('interface.redirect.wait_seconds', ['seconds' => ':seconds']));
+        const WAIT_ONE_SECOND = @json(__('interface.redirect.wait_one_second'));
+        const WAIT_MOMENT = @json(__('interface.redirect.wait_moment'));
+        const REDIRECTING = @json(__('interface.redirect.redirecting'));
 
         const btn = document.getElementById('clickToDownload');
         const statusText = document.getElementById('statusText');
@@ -54,6 +58,12 @@
 
         let started = false;
 
+        function waitMessage(seconds) {
+          if (seconds === 1) return WAIT_ONE_SECOND;
+          if (seconds === 0) return WAIT_MOMENT;
+          return WAIT_SECONDS.replace(':seconds', String(seconds));
+        }
+
         function startDownloadFlow() {
           if (started || !TARGET) return;
           started = true;
@@ -63,19 +73,19 @@
           btn.disabled = true;
 
           let seconds = 3;
-          statusText.textContent = 'Please wait ' + seconds + ' seconds...';
+          statusText.textContent = waitMessage(seconds);
 
           const timer = setInterval(() => {
             seconds--;
             if (seconds >= 0) {
-              statusText.textContent = 'Please wait ' + seconds + ' seconds...';
+              statusText.textContent = waitMessage(seconds);
             }
             if (seconds < 0) {
               clearInterval(timer);
 
               if (AD_URL) openInNewTab(AD_URL);
 
-              statusText.textContent = '{{ __('messages.redirecting') }}';
+              statusText.textContent = REDIRECTING;
               setTimeout(() => {
                 window.location.assign(TARGET);
               }, 900);

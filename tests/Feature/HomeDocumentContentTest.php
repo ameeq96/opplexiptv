@@ -49,9 +49,9 @@ class HomeDocumentContentTest extends TestCase
         $html = $response->getContent();
         $homeSplitImage = $this->homeSplitImageTag($html);
 
-        $this->assertStringContainsString('<style id="home-document-styles">', $html);
+        $this->assertStringContainsString('href="'.asset('css/home-document.css'), $html);
+        $this->assertStringNotContainsString('id="home-document-styles"', $html);
         $this->assertStringContainsString('.home-document-devices', $html);
-        $this->assertStringNotContainsString('/css/home-document.css', $html);
         foreach ([
             'movie-night-tv-480.webp',
             'movie-night-tv-720.webp',
@@ -105,8 +105,8 @@ class HomeDocumentContentTest extends TestCase
         $this->assertStringContainsString('home-document-devices', $html);
         $this->assertStringContainsString('home-document-stats', $html);
         $this->assertStringContainsString('home-document-trial', $html);
-        $this->assertStringContainsString('home-document-styles', $html);
-        $this->assertStringNotContainsString('home-document.css', $html);
+        $this->assertStringContainsString('href="'.asset('css/home-document.css'), $html);
+        $this->assertStringNotContainsString('id="home-document-styles"', $html);
         $this->assertStringNotContainsString('Watch What You Want, When You Want', $html);
         $this->assertStringContainsString('Mira lo que quieras, cuando quieras', $html);
         foreach (['Mensual', '3 meses', 'Semestral', 'Anual'] as $translatedPlanTitle) {
@@ -152,23 +152,33 @@ class HomeDocumentContentTest extends TestCase
             $this->assertStringNotContainsString($legacyAsset, $html);
         }
 
-        $this->assertSame(
-            1,
-            preg_match('/<script id="home-native-shell">(.*?)<\/script>/s', $html, $scriptMatches)
-        );
+        $this->assertStringContainsString(Vite::asset('resources/js/native-shell.js'), $html);
 
         foreach ([
-            'initHomeScrollUi',
-            'initHomeMobileMenu',
-            'initHomeDropdowns',
-            'initHomeFaqs',
+            'data-native-shell-config',
+            'data-scroll-behavior="instant"',
+            'data-initial-scroll-update="animation-frame"',
+            'data-manage-dropdown-display="true"',
+            'data-enrich-faq-aria="true"',
+        ] as $configMarker) {
+            $this->assertStringContainsString($configMarker, $html);
+        }
+
+        $nativeShell = file_get_contents(resource_path('js/native-shell.js'));
+        $this->assertIsString($nativeShell);
+
+        foreach ([
+            'initScrollUi',
+            'initMobileMenu',
+            'initDropdowns',
+            'initFaqs',
             "submenu.style.removeProperty('display')",
             "submenu.style.display = willOpen ? 'block' : ''",
             "button.setAttribute('role', 'button')",
             'window.requestAnimationFrame(update)',
             'window.scrollTo(0, 0)',
         ] as $nativeMarker) {
-            $this->assertStringContainsString($nativeMarker, $scriptMatches[1]);
+            $this->assertStringContainsString($nativeMarker, $nativeShell);
         }
 
         foreach ([
@@ -183,7 +193,7 @@ class HomeDocumentContentTest extends TestCase
             'mCustomScrollbar',
             'owlCarousel',
         ] as $layoutOrLegacyMarker) {
-            $this->assertStringNotContainsString($layoutOrLegacyMarker, $scriptMatches[1]);
+            $this->assertStringNotContainsString($layoutOrLegacyMarker, $nativeShell);
         }
 
         $this->assertStringContainsString('const usePercentageCarouselOffsets = true;', $html);

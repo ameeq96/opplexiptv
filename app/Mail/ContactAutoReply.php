@@ -28,7 +28,7 @@ class ContactAutoReply extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Thank You for Your Interest - Opplex IPTV',
+            subject: __('interface.email.contact_reply.subject'),
         );
     }
 

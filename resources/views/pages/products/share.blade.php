@@ -31,7 +31,7 @@
                                     data-share-url="{{ url()->current() }}"
                                     data-share-title="{{ $productName }}"
                                     data-share-text="{{ $productDescription }}">
-                                    Share Product
+                                    {{ __('interface.product.share') }}
                                 </button>
                             </div>
                         </div>
@@ -41,4 +41,3 @@
         </div>
     </section>
 @endsection
-

@@ -11,11 +11,15 @@ class TmdbService
 
     private function base(): string
     {
-        return rtrim(env('TMDB_BASE_URL', 'https://api.themoviedb.org/3'), '/');
+        return rtrim(
+            (string) config('services.tmdb.base_url', 'https://api.themoviedb.org/3'),
+            '/'
+        );
     }
+
     private function key(): string
     {
-        return (string) env('TMDB_API_KEY', '');
+        return (string) config('services.tmdb.api_key', '');
     }
 
     public function configured(): bool

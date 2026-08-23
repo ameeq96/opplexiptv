@@ -174,6 +174,10 @@ return [
         'email' => 'Voer een geldig e-mailadres in.',
         'string' => ':attribute moet tekst bevatten.',
         'max' => ':attribute mag niet langer zijn dan :max tekens.',
+        'numeric' => ':attribute moet een getal zijn.',
+        'integer' => ':attribute moet een geheel getal zijn.',
+        'min_numeric' => ':attribute moet minimaal :min zijn.',
+        'invalid_selection' => 'De geselecteerde waarde voor :attribute is ongeldig.',
     ],
 
     'assistant' => [

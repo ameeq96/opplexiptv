@@ -54,7 +54,7 @@ class PanelOrderController extends Controller
     public function store(StorePanelOrderRequest $request)
     {
         $this->handleStore($this->crud, $this->media, $request);
-        return redirect()->route('admin.panel-orders.index')->with('success', __('messages.reseller_order_created'));
+        return redirect()->route('admin.panel-orders.index')->with('success', __('interface.admin.flash.reseller_order_created'));
     }
 
     public function edit(Order $panel_order)
@@ -68,7 +68,7 @@ class PanelOrderController extends Controller
     public function update(UpdatePanelOrderRequest $request, Order $panel_order)
     {
         $this->handleUpdate($this->crud, $this->media, $request, $panel_order);
-        return redirect()->route('admin.panel-orders.index')->with('success', __('messages.reseller_order_updated'));
+        return redirect()->route('admin.panel-orders.index')->with('success', __('interface.admin.flash.reseller_order_updated'));
     }
 
     public function destroy(Order $panel_order)
@@ -81,7 +81,7 @@ class PanelOrderController extends Controller
         }
         $this->crud->delete($panel_order);
 
-        return redirect()->route('admin.panel-orders.index')->with('success', __('messages.reseller_order_deleted'));
+        return redirect()->route('admin.panel-orders.index')->with('success', __('interface.admin.flash.reseller_order_deleted'));
     }
 
     public function destroyPicture(Order $order, Picture $picture)

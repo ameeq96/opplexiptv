@@ -162,6 +162,12 @@
     "src": "resources/js/discount-wheel.js",
     "isEntry": true
   },
+  "resources/js/native-shell.js": {
+    "file": "assets/native-shell-Bu2M_c6w.js",
+    "name": "native-shell",
+    "src": "resources/js/native-shell.js",
+    "isEntry": true
+  },
   "resources/js/site.js": {
     "file": "assets/site-CGJFQoQG.js",
     "name": "site",
@@ -169,7 +175,7 @@
     "isEntry": true
   },
   "resources/js/voice-assistant.js": {
-    "file": "assets/voice-assistant-D9pPlKem.js",
+    "file": "assets/voice-assistant-biWP1lz0.js",
     "name": "voice-assistant",
     "src": "resources/js/voice-assistant.js",
     "isEntry": true

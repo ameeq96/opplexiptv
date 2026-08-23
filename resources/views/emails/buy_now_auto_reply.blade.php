@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app()->getLocale() }}" dir="{{ in_array(app()->getLocale(), ['ar', 'ur'], true) ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="UTF-8">
@@ -24,14 +24,10 @@
         $packageName = str_replace('_', ' ', explode('_USD_', $details['package'])[0]);
         $packagePrice = '$' . explode('_USD_', $details['package'])[1];
 
-        $waMessages = [
-            'en' => "Hello, I am interested in the {$packageName} ({$packagePrice}) package.",
-            'fr' => "Bonjour, je suis intéressé par le forfait {$packageName} ({$packagePrice}).",
-            'it' => "Ciao, sono interessato al pacchetto {$packageName} ({$packagePrice}).",
-        ];
-
-        $lang = app()->getLocale();
-        $waText = $waMessages[$lang] ?? $waMessages['en'];
+        $waText = __('interface.email.buy_now.whatsapp_message', [
+            'package' => $packageName,
+            'price' => $packagePrice,
+        ]);
     @endphp
 
     <p>{{ __('messages.contact_whatsapp') }}

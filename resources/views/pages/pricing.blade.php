@@ -22,12 +22,6 @@
 
 @section('content')
 
-    @php
-        use Jenssegers\Agent\Agent;
-        $agent = new Agent();
-        $containerClass = $agent->isMobile() ? 'centered' : 'sec-title centered';
-    @endphp
-
     @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.pricing');

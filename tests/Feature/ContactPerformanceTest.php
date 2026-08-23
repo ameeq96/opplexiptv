@@ -18,7 +18,7 @@ class ContactPerformanceTest extends TestCase
         $this->app['config']->set('database.connections.sqlite.database', ':memory:');
     }
 
-    public function test_contact_inlines_critical_styles_and_uses_a_native_phone_and_page_shell(): void
+    public function test_contact_links_cacheable_styles_and_uses_a_native_phone_and_page_shell(): void
     {
         $response = $this->get('/contact');
 
@@ -26,27 +26,18 @@ class ContactPerformanceTest extends TestCase
         $html = $response->getContent();
 
         foreach ([
-            'contact-critical-styles' => Vite::content('resources/css/site-critical.css'),
-            'contact-page-styles' => file_get_contents(public_path('css/contact.css')),
-            'contact-document-styles' => file_get_contents(public_path('css/document-support.css')),
-        ] as $styleId => $expectedCss) {
-            $this->assertIsString($expectedCss);
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $html, $matches)
-            );
-            $this->assertSame(
-                hash('sha256', $expectedCss),
-                hash('sha256', $matches[1])
-            );
-        }
-
-        foreach ([
             Vite::asset('resources/css/site-critical.css'),
             asset('css/contact.css'),
             asset('css/document-support.css'),
         ] as $stylesheet) {
-            $this->assertStringNotContainsString('href="'.$stylesheet, $html);
+            $this->assertStringContainsString('href="'.$stylesheet, $html);
+        }
+        foreach ([
+            'contact-critical-styles',
+            'contact-page-styles',
+            'contact-document-styles',
+        ] as $styleId) {
+            $this->assertStringNotContainsString('id="'.$styleId.'"', $html);
         }
 
         foreach ([

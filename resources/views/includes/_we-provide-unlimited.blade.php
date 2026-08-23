@@ -15,18 +15,22 @@
                 @unless ($isMobile)
                     <div class="unlimited-showcase__media" aria-hidden="true">
                         <div class="unlimited-showcase__main">
-                            <img src="{{ asset('images/resource/network-4.webp') }}" alt="{{ __('document_ui.home.network_main_alt') }}" loading="lazy" decoding="async" />
+                            <img src="{{ asset('images/resource/network-4.webp') }}" alt="{{ __('document_ui.home.network_main_alt') }}"
+                                loading="lazy" decoding="async" width="396" height="527" />
                         </div>
                         <div class="unlimited-showcase__screen">
-                            <img src="{{ asset('images/resource/network-5.webp') }}" alt="{{ __('document_ui.home.network_screen_alt') }}" loading="lazy" decoding="async" />
+                            <img src="{{ asset('images/resource/network-5.webp') }}" alt="{{ __('document_ui.home.network_screen_alt') }}"
+                                loading="lazy" decoding="async" width="312" height="173" />
                         </div>
                         <div class="unlimited-showcase__person-wrap">
                             <div class="unlimited-showcase__person">
-                                <img src="{{ asset('images/resource/network-3.webp') }}" alt="{{ __('document_ui.home.network_person_alt') }}" loading="lazy" decoding="async" />
+                                <img src="{{ asset('images/resource/network-3.webp') }}" alt="{{ __('document_ui.home.network_person_alt') }}"
+                                    loading="lazy" decoding="async" width="345" height="285" />
                             </div>
                         </div>
                         <div class="unlimited-showcase__signal">
-                            <img src="{{ asset('images/icons/service-4.webp') }}" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                            <img src="{{ asset('images/icons/service-4.webp') }}" alt="" aria-hidden="true"
+                                loading="lazy" decoding="async" width="80" height="70" />
                         </div>
                     </div>
                 @endunless

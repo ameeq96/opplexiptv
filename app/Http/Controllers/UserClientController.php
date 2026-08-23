@@ -172,7 +172,7 @@ class UserClientController extends Controller
     public function store(StoreClientRequest $request)
     {
         $this->crud->create($request->validated());
-        return redirect()->route('admin.clients.index')->with('success', __('messages.client_created'));
+        return redirect()->route('admin.clients.index')->with('success', __('interface.admin.flash.client_created'));
     }
 
     public function edit(User $client)
@@ -184,13 +184,13 @@ class UserClientController extends Controller
     public function update(UpdateClientRequest $request, User $client)
     {
         $this->crud->update($request->validated(), $client);
-        return redirect()->route('admin.clients.index')->with('success', __('messages.client_updated'));
+        return redirect()->route('admin.clients.index')->with('success', __('interface.admin.flash.client_updated'));
     }
 
     public function destroy(User $client)
     {
         $this->crud->delete($client);
-        return back()->with('success', __('messages.client_deleted'));
+        return back()->with('success', __('interface.admin.flash.client_deleted'));
     }
 
     public function import(ImportClientsRequest $request)
@@ -204,7 +204,7 @@ class UserClientController extends Controller
     {
         $ids = $request->input('client_ids', []);
         if (empty($ids)) {
-            return back()->with('error', __('messages.no_clients_selected'));
+            return back()->with('error', __('interface.admin.flash.no_clients_selected'));
         }
 
         $deleted = $this->crud->bulkDelete($ids);

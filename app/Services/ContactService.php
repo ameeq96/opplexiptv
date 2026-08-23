@@ -10,13 +10,17 @@ class ContactService
     public function contact(array $details): void
     {
         Mail::to('info@opplexiptv.com')->queue(new ContactEmail($details));
-        Mail::to($details['email'])->queue(new ContactAutoReply($details));
+        Mail::to($details['email'])->queue(
+            (new ContactAutoReply($details))->locale(app()->getLocale())
+        );
     }
 
     public function buyNow(array $details): void
     {
         Mail::to('info@opplexiptv.com')->queue(new BuyNowEmail($details));
-        Mail::to($details['email'])->queue(new BuyNowAutoReply($details));
+        Mail::to($details['email'])->queue(
+            (new BuyNowAutoReply($details))->locale(app()->getLocale())
+        );
     }
 
     public function subscribe(string $email): void

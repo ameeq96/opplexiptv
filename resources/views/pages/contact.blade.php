@@ -41,23 +41,9 @@
 @endpush
 
 @push('styles')
-    @php
-        $contactPageCss = @file_get_contents(public_path('css/contact.css'));
-        $contactDocumentCss = $isDocumentEnglish
-            ? @file_get_contents(public_path('css/document-support.css'))
-            : false;
-    @endphp
-    @if ($contactPageCss !== false)
-        <style id="contact-page-styles">{!! $contactPageCss !!}</style>
-    @else
-        <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ @filemtime(public_path('css/contact.css')) ?: 1 }}">
-    @endif
+    <link rel="stylesheet" href="{{ asset('css/contact.css') }}?v={{ @filemtime(public_path('css/contact.css')) ?: 1 }}">
     @if ($isDocumentEnglish)
-        @if ($contactDocumentCss !== false)
-            <style id="contact-document-styles">{!! $contactDocumentCss !!}</style>
-        @else
-            <link rel="stylesheet" href="{{ asset('css/document-support.css') }}?v={{ @filemtime(public_path('css/document-support.css')) ?: 1 }}">
-        @endif
+        <link rel="stylesheet" href="{{ asset('css/document-support.css') }}?v={{ @filemtime(public_path('css/document-support.css')) ?: 1 }}">
     @endif
 @endpush
 

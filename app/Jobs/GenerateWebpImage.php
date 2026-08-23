@@ -3,15 +3,18 @@
 namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Http;
 
-class GenerateWebpImage implements ShouldQueue
+class GenerateWebpImage implements ShouldQueue, ShouldBeUnique
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
+    public int $uniqueFor = 300;
 
     public function __construct(
         public string $imageUrl,
@@ -20,6 +23,11 @@ class GenerateWebpImage implements ShouldQueue
         public int $quality,
         public string $webpPath
     ) {}
+
+    public function uniqueId(): string
+    {
+        return $this->webpPath;
+    }
 
     public function handle(): void
     {

@@ -43,7 +43,7 @@ class PurchasingController extends Controller
     public function store(StorePurchasingRequest $request)
     {
         $this->handleStore($this->crud, $this->media, $request);
-        return redirect()->route('admin.purchasing.index')->with('success', __('messages.purchase_created'));
+        return redirect()->route('admin.purchasing.index')->with('success', __('interface.admin.flash.purchase_created'));
     }
 
     public function edit(Purchasing $purchasing)
@@ -54,7 +54,7 @@ class PurchasingController extends Controller
     public function update(UpdatePurchasingRequest $request, Purchasing $purchasing)
     {
         $this->handleUpdate($this->crud, $this->media, $request, $purchasing);
-        return redirect()->route('admin.purchasing.index')->with('success', __('messages.purchase_updated'));
+        return redirect()->route('admin.purchasing.index')->with('success', __('interface.admin.flash.purchase_updated'));
     }
 
     public function destroy(Purchasing $purchasing)
@@ -63,7 +63,7 @@ class PurchasingController extends Controller
         $this->media->cleanupPictures([$purchasing]);
         $this->crud->delete($purchasing);
 
-        return redirect()->route('admin.purchasing.index')->with('success', __('messages.purchase_deleted'));
+        return redirect()->route('admin.purchasing.index')->with('success', __('interface.admin.flash.purchase_deleted'));
     }
 
     public function destroyPicture(Purchasing $purchasing, Picture $picture)

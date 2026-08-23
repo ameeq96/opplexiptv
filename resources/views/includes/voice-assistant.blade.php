@@ -63,10 +63,10 @@
         <div class="va-messages" aria-live="polite"></div>
 
         <div class="va-quick">
-            <button type="button" data-quick="pricing">{{ __($vaUiPrefix . 'quick_pricing') }}</button>
-            <button type="button" data-quick="packages">{{ __($vaUiPrefix . 'quick_packages') }}</button>
-            <button type="button" data-quick="checkout">{{ __($vaUiPrefix . 'quick_checkout') }}</button>
-            <button type="button" data-quick="contact">{{ __($vaUiPrefix . 'quick_contact') }}</button>
+            <button type="button" data-quick="pricing" data-quick-echo="{{ __('interface.assistant.quick_echo', ['target' => __($vaUiPrefix . 'quick_pricing')]) }}">{{ __($vaUiPrefix . 'quick_pricing') }}</button>
+            <button type="button" data-quick="packages" data-quick-echo="{{ __('interface.assistant.quick_echo', ['target' => __($vaUiPrefix . 'quick_packages')]) }}">{{ __($vaUiPrefix . 'quick_packages') }}</button>
+            <button type="button" data-quick="checkout" data-quick-echo="{{ __('interface.assistant.quick_echo', ['target' => __($vaUiPrefix . 'quick_checkout')]) }}">{{ __($vaUiPrefix . 'quick_checkout') }}</button>
+            <button type="button" data-quick="contact" data-quick-echo="{{ __('interface.assistant.quick_echo', ['target' => __($vaUiPrefix . 'quick_contact')]) }}">{{ __($vaUiPrefix . 'quick_contact') }}</button>
         </div>
 
         <div class="va-input">

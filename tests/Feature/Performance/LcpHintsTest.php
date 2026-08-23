@@ -106,7 +106,10 @@ class LcpHintsTest extends TestCase
     public function test_critical_font_preloads_match_vite_built_font_urls(): void
     {
         $html = $this->renderHeadForRoute('home');
-        $criticalStylePosition = strpos($html, '<style id="home-critical-styles">');
+        $criticalStylePosition = strpos(
+            $html,
+            'href="'.Vite::asset('resources/css/site-critical.css').'"'
+        );
         $this->assertNotFalse($criticalStylePosition);
 
         foreach ([
@@ -233,9 +236,8 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css', $html);
     }
 
-    public function test_target_pages_inline_foundational_styles_while_other_routes_keep_their_loading_strategy(): void
+    public function test_target_pages_link_cacheable_foundational_styles_while_movies_keeps_its_loading_strategy(): void
     {
-        $criticalCss = Vite::content('resources/css/site-critical.css');
         $criticalHref = Vite::asset('resources/css/site-critical.css');
         $moviesHtml = $this->renderHeadForRoute('movies');
         $legacyHtml = $this->renderHeadForRoute('blogs.show');
@@ -258,12 +260,11 @@ class LcpHintsTest extends TestCase
             $beforeNoscript = strstr($html, '<noscript>', true);
 
             $this->assertIsString($beforeNoscript);
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $beforeNoscript, $styleMatches)
+            $this->assertStringContainsString(
+                'rel="stylesheet" href="'.$criticalHref.'"',
+                $beforeNoscript
             );
-            $this->assertSame(hash('sha256', $criticalCss), hash('sha256', $styleMatches[1]));
-            $this->assertStringNotContainsString('href="'.$criticalHref.'"', $beforeNoscript);
+            $this->assertStringNotContainsString('id="'.$styleId.'"', $beforeNoscript);
             $this->assertStringNotContainsString(
                 '<link rel="preload" href="'.$criticalHref.'" as="style"',
                 $beforeNoscript
@@ -566,20 +567,19 @@ class LcpHintsTest extends TestCase
             $html = $this->renderHeadForRoute($route);
 
             $this->assertStringContainsString(
-                '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'" media="all">',
+                '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'">',
                 $html
             );
-            $this->assertStringNotContainsString('<link rel="preload" href="'.asset('css/checkout.css'), $html);
+            $this->assertSame(
+                1,
+                substr_count($html, 'href="'.Vite::asset('resources/css/checkout.css').'"')
+            );
         }
 
         $packagesHtml = $this->renderHeadForRoute('packages');
 
         $this->assertStringNotContainsString(
-            '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'" media="all">',
-            $packagesHtml
-        );
-        $this->assertStringContainsString(
-            '<link rel="stylesheet" href="'.Vite::asset('resources/css/checkout.css').'" media="print" onload="this.media=\'all\'">',
+            'href="'.Vite::asset('resources/css/checkout.css').'"',
             $packagesHtml
         );
     }

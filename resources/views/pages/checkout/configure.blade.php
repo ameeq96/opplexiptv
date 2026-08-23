@@ -87,7 +87,7 @@
                 $onePlan = $plans[0] ?? null;
             }
         }
-        $onePlanName  = $onePlan->name  ?? __('messages.checkout_one_connection_label');
+        $onePlanName  = __('messages.checkout_one_connection_label');
         $onePlanPrice = isset($onePlan) ? number_format($onePlan->price, 2, '.', '') : '0.00';
       @endphp
 
@@ -588,4 +588,3 @@
 })();
 </script>
 @endsection
-

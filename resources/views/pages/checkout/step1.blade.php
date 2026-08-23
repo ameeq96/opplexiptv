@@ -1,5 +1,5 @@
 ﻿@extends('layouts.default')
-@section('title', __('messages.checkout_complete_title_page', [], app()->getLocale()) ?? 'Complete Your Order')
+@section('title', __('messages.checkout_complete_title_page'))
 
 @section('content')
 <div class="checkout-step1-page">
@@ -59,11 +59,11 @@
         $planPriceDb = null;
         try {
             if (!empty($selectedPackageId)) {
-                $pkg = \App\Models\Package::find($selectedPackageId);
+                $pkg = \App\Models\Package::with('translations')->find($selectedPackageId);
                 if ($pkg && isset($pkg->price_amount)) {
                     $planPriceDb = (float) $pkg->price_amount;
                     if (empty($selectedPlanName)) {
-                        $selectedPlanName = $pkg->title ?? $selectedPlanName;
+                        $selectedPlanName = $pkg->translation()?->title ?: ($pkg->title ?? $selectedPlanName);
                     }
                 }
             }
@@ -110,11 +110,11 @@
             <div class="mr-3 d-flex align-items-center">
                 <i class="fa fa-shield"></i> {{ __('messages.checkout_badge_secure') }}
             </div>
-            <span class="text-secondary mr-3">â€¢</span>
+            <span class="text-secondary mr-3">&bull;</span>
             <div class="mr-3 d-flex align-items-center">
                 <i class="fa fa-check-circle"></i> {{ __('messages.checkout_badge_safe_info') }}
             </div>
-            <span class="text-secondary mr-3">â€¢</span>
+            <span class="text-secondary mr-3">&bull;</span>
             <div class="d-flex align-items-center">
                 <i class="fa fa-lock"></i> {{ __('messages.checkout_badge_encryption') }}
             </div>
@@ -207,7 +207,7 @@
                         <div class="d-flex justify-content-between">
                             <div>
                                 <div class="font-weight-bold">
-                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} Ã—
+                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} &times;
                                     {{ $qty }}
                                 </div>
 

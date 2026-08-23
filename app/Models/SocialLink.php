@@ -29,9 +29,8 @@ class SocialLink extends Model
     {
         $locale = $locale ?: app()->getLocale();
         $fallback = config('app.fallback_locale');
-        $translations = $this->relationLoaded('translations')
-            ? $this->translations
-            : $this->translations()->get();
+        $this->loadMissing('translations');
+        $translations = $this->translations;
 
         return $translations->firstWhere('locale', $locale)
             ?: $translations->firstWhere('locale', $fallback)

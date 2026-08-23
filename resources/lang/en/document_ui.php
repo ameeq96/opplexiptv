@@ -174,6 +174,10 @@ return [
         'email' => 'Enter a valid email address.',
         'string' => ':attribute must be text.',
         'max' => ':attribute must not exceed :max characters.',
+        'numeric' => ':attribute must be a number.',
+        'integer' => ':attribute must be a whole number.',
+        'min_numeric' => ':attribute must be at least :min.',
+        'invalid_selection' => 'The selected :attribute is invalid.',
     ],
 
     'assistant' => [

@@ -61,10 +61,16 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-    # Aggressive caching for versioned static assets
+    # Stable-path assets can change in place, so allow periodic revalidation.
     <FilesMatch "\.(?:css|js|mjs|png|jpe?g|gif|webp|svg|ico|ttf|otf|woff|woff2)$">
-        Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Cache-Control "public, max-age=604800"
     </FilesMatch>
+
+    # Vite filenames are content-hashed and safe to cache permanently.
+    <IfModule mod_setenvif.c>
+        SetEnvIf Request_URI "^/build/assets/" immutable_asset=1
+        Header set Cache-Control "public, max-age=31536000, immutable" env=immutable_asset
+    </IfModule>
 
     # Do not cache HTML/PHP responses (dynamic)
     <FilesMatch "\.(?:html|php)$">

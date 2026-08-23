@@ -29,7 +29,7 @@ class BlogPerformanceTest extends TestCase
         Storage::fake('public');
     }
 
-    public function test_blog_index_inlines_styles_and_uses_native_navigation_without_legacy_assets(): void
+    public function test_blog_index_links_cacheable_styles_and_uses_native_navigation_without_legacy_assets(): void
     {
         $this->createPublishedBlog('blogs/missing-cover.jpg');
 
@@ -39,21 +39,16 @@ class BlogPerformanceTest extends TestCase
         $html = $response->getContent();
 
         foreach ([
-            'blogs-index-critical-styles' => 'resources/css/site-critical.css',
-            'blogs-index-styles' => 'resources/css/blogs.css',
-        ] as $styleId => $entry) {
-            $this->assertSame(
-                1,
-                preg_match('/<style id="'.preg_quote($styleId, '/').'">(.*?)<\/style>/s', $html, $matches)
-            );
-            $this->assertSame(
-                hash('sha256', Vite::content($entry)),
-                hash('sha256', $matches[1])
-            );
-            $this->assertStringNotContainsString(
-                'href="'.Vite::asset($entry).'"',
-                $html
-            );
+            'resources/css/site-critical.css',
+            'resources/css/blogs.css',
+        ] as $entry) {
+            $this->assertStringContainsString('href="'.Vite::asset($entry).'"', $html);
+        }
+        foreach ([
+            'blogs-index-critical-styles',
+            'blogs-index-styles',
+        ] as $styleId) {
+            $this->assertStringNotContainsString('id="'.$styleId.'"', $html);
         }
 
         foreach ([

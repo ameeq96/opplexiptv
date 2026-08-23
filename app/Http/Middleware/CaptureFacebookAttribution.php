@@ -18,7 +18,14 @@ class CaptureFacebookAttribution
     {
         $fbclid = $request->query('fbclid');
         $utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
-        $hasUtm = collect($utmKeys)->contains(fn (string $utm) => $request->filled($utm));
+        $hasUtm = false;
+
+        foreach ($utmKeys as $utm) {
+            if ($request->filled($utm)) {
+                $hasUtm = true;
+                break;
+            }
+        }
 
         if (!$fbclid && !$hasUtm) {
             return $next($request);

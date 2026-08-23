@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ app()->getLocale() }}" dir="{{ in_array(app()->getLocale(), ['ar', 'ur'], true) ? 'rtl' : 'ltr' }}">
 <head>
-    <title>Contact Form Submission</title>
+    <title>{{ __('interface.email.subscribe.page_title') }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,13 +40,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Subscription Confirmation</h1>
-        <p>Hi there,</p>
-        <p>Thank you for subscribing to our newsletter. Here is the information we have received:</p>
+        <h1>{{ __('interface.email.subscribe.heading') }}</h1>
+        <p>{{ __('interface.email.common.greeting') }}</p>
+        <p>{{ __('interface.email.subscribe.intro') }}</p>
         <div class="details">
-            <p><strong>Email:</strong> {{ $details['email'] }}</p>
+            <p><strong>{{ __('interface.email.common.email') }}:</strong> {{ $details['email'] }}</p>
         </div>
-        <p>Best regards,</p>
+        <p>{{ __('interface.email.common.regards') }}</p>
         <p>OPPLEX IPTV</p>
     </div>
 </body>

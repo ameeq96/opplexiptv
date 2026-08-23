@@ -1,6 +1,6 @@
 <header class="main-header">
 
-    @if (!$agent->isMobile())
+    @if (!$isMobile)
         <div class="header-top">
             <div class="auto-container clearfix custom-max">
 
@@ -325,7 +325,7 @@
                                         </ul>
                                     </li>
                                 @endif
-                                @if (!$agent->isMobile())
+                                @if (!$isMobile)
                                     <li
                                         class="dropdown language-switcher nav-item dropdown {{ $isRtl ? 'mr-4' : '' }}">
                                         <a href="#"

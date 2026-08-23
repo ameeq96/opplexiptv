@@ -31,6 +31,12 @@ class SchemaService
     /** JSON flags shared by every rendered node. JSON_HEX_TAG prevents `</script>` breakouts. */
     public const JSON_FLAGS = JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG;
 
+    /** @var array<string,bool> */
+    private array $tableAvailability = [];
+
+    /** @var array<string,array<int,array{name:string,price:float,priceCurrency:string,category:string}>> */
+    private array $packageOfferCache = [];
+
     /* ───────────────────────── Identity helpers ───────────────────────── */
 
     /** Absolute site root with a single trailing slash. */
@@ -90,7 +96,7 @@ class SchemaService
             'url'         => $this->siteUrl(),
             'logo'        => asset(self::LOGO),
             'image'       => asset(self::LOGO),
-            'description' => 'Opplex IPTV provides premium IPTV subscription services with 12,000+ live TV channels, sports, movies, and VOD in HD and 4K, with apps for every device, a free trial, and 24/7 support.',
+            'description' => __('meta.home.description'),
             'telephone'   => self::PHONE,
             'email'       => self::EMAIL,
             'areaServed'  => 'Worldwide',
@@ -319,6 +325,12 @@ class SchemaService
      */
     public function packageOffers(string $kind): array
     {
+        $kind = $kind === 'reseller' ? 'reseller' : 'iptv';
+
+        if (array_key_exists($kind, $this->packageOfferCache)) {
+            return $this->packageOfferCache[$kind];
+        }
+
         if (!$this->hasTable('packages')) {
             return [];
         }
@@ -326,7 +338,7 @@ class SchemaService
         try {
             $rows = Package::query()
                 ->where('active', true)
-                ->where('type', $kind === 'reseller' ? 'reseller' : 'iptv')
+                ->where('type', $kind)
                 ->whereIn('vendor', ['opplex', 'starshare'])
                 ->orderByRaw('COALESCE(sort_order, duration_months, credits, id)')
                 ->with('translations')
@@ -351,7 +363,7 @@ class SchemaService
             ];
         }
 
-        return $offers;
+        return $this->packageOfferCache[$kind] = $offers;
     }
 
     /** @return array<string,mixed> */
@@ -538,10 +550,14 @@ class SchemaService
 
     private function hasTable(string $table): bool
     {
+        if (array_key_exists($table, $this->tableAvailability)) {
+            return $this->tableAvailability[$table];
+        }
+
         try {
-            return Schema::hasTable($table);
+            return $this->tableAvailability[$table] = Schema::hasTable($table);
         } catch (\Throwable) {
-            return false;
+            return $this->tableAvailability[$table] = false;
         }
     }
 

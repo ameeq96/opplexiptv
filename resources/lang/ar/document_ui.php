@@ -174,6 +174,10 @@ return [
         'email' => 'أدخل عنوان بريد إلكتروني صالحًا.',
         'string' => 'يجب أن يحتوي حقل :attribute على نص.',
         'max' => 'يجب ألا يتجاوز حقل :attribute عدد :max حرفًا.',
+        'numeric' => 'يجب أن يكون حقل :attribute رقمًا.',
+        'integer' => 'يجب أن يكون حقل :attribute عددًا صحيحًا.',
+        'min_numeric' => 'يجب ألا يقل حقل :attribute عن :min.',
+        'invalid_selection' => 'القيمة المحددة لحقل :attribute غير صالحة.',
     ],
 
     'assistant' => [

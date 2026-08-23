@@ -57,7 +57,7 @@ class AdminNotificationController extends Controller
         $admin = $request->user('admin');
         if (!$admin) abort(403);
 
-        $admin->unreadNotifications->markAsRead();
+        $admin->unreadNotifications()->update(['read_at' => now()]);
 
         return response()->json(['ok' => true]);
     }

@@ -35,10 +35,14 @@ class FacebookCapiService
         $body = ['data' => $data];
         if ($testCode) $body['test_event_code'] = $testCode;
 
-        $resp = Http::asJson()->post(
-            "https://graph.facebook.com/v18.0/{$pixelId}/events?access_token={$accessToken}",
-            $body
-        );
+        $resp = Http::asJson()
+            ->retry(2, 200)
+            ->connectTimeout(3)
+            ->timeout(8)
+            ->post(
+                "https://graph.facebook.com/v18.0/{$pixelId}/events?access_token={$accessToken}",
+                $body
+            );
 
         return ['status' => $resp->status(), 'body' => $resp->json()];
     }

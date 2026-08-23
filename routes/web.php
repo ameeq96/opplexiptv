@@ -144,6 +144,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/trial-clicks/export', [TrialClickController::class, 'export'])->name('trial_clicks.export');
         Route::delete('/trial-clicks/bulk-delete', [TrialClickController::class, 'bulkDelete'])->name('trial_clicks.bulkDelete');
         Route::delete('/trial-clicks/{trialClick}', [TrialClickController::class, 'destroy'])->name('trial_clicks.destroy');
+
+        Route::post('maintenance/clear', function () {
+            Artisan::call('optimize:clear');
+
+            return back()->with('success', 'Caches cleared successfully.');
+        })->middleware('throttle:3,1')->name('maintenance.clear');
     });
 });
 
@@ -166,7 +172,11 @@ Route::group(
         Route::get('activate-info',   [HomeController::class, 'activateInfo'])->name('activate-info');
         Route::get('contact',         [HomeController::class, 'contact'])->name('contact');
         Route::get('pricing',         [HomeController::class, 'pricing'])->name('pricing');
-        Route::get('movies',          [HomeController::class, 'movies'])->name('movies')->middleware('noindex.pagination');
+        Route::get('movies',          [HomeController::class, 'movies'])->name('movies');
+        Route::get('movies/{mediaType}/{id}/trailer', [HomeController::class, 'movieTrailer'])
+            ->where(['mediaType' => 'movie|tv', 'id' => '[0-9]+'])
+            ->middleware('throttle:60,1')
+            ->name('movies.trailer');
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
         Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
@@ -207,14 +217,5 @@ Route::group(
 
 Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'])
     ->name('track.whatsapp.trial')
+    ->middleware('throttle:30,1')
     ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
-
-Route::get('maintenance/clear', function () {
-    Artisan::call('optimize:clear');
-    Artisan::call('config:clear');
-    Artisan::call('route:clear');
-    Artisan::call('view:clear');
-    Artisan::call('cache:clear');
-
-    return back()->with('success', 'Caches cleared successfully.');
-})->name('maintenance.clear');

@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use App\Jobs\GenerateWebpImage;
-use Illuminate\Support\Facades\Http;
 
 class ImageService
 {
@@ -36,7 +35,7 @@ class ImageService
             return asset($webpPath);
         }
 
-        GenerateWebpImage::dispatch($imageUrl, $width, $height, $quality, $webpPath);
+        GenerateWebpImage::dispatchAfterResponse($imageUrl, $width, $height, $quality, $webpPath);
 
         return $imageUrl;
     }

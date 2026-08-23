@@ -92,7 +92,7 @@
                         <div class="feature-block style-two mix all movies">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="{{ $movie['trailer_url'] }}" class="lightbox-image video-box"
+                                    <a href="#" data-trailer-endpoint="{{ $movie['trailer_endpoint'] }}" class="lightbox-image video-box"
                                         aria-label="{{ __('document_ui.movies.watch_trailer_aria', ['title' => $movie['title']]) }}">
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
@@ -129,7 +129,7 @@
                         <div class="feature-block style-two mix all series">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="{{ $series['trailer_url'] }}" class="lightbox-image video-box"
+                                    <a href="#" data-trailer-endpoint="{{ $series['trailer_endpoint'] }}" class="lightbox-image video-box"
                                         aria-label="{{ __('document_ui.movies.watch_trailer_aria', ['title' => $series['title']]) }}">
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>
@@ -163,7 +163,7 @@
                         <div class="feature-block style-two mix all cartoons">
                             <div class="inner-box">
                                 <div class="image">
-                                    <a href="{{ $cartoon['trailer_url'] }}" class="lightbox-image video-box"
+                                    <a href="#" data-trailer-endpoint="{{ $cartoon['trailer_endpoint'] }}" class="lightbox-image video-box"
                                         aria-label="{{ __('document_ui.movies.watch_trailer_aria', ['title' => $cartoon['title']]) }}">
                                         <span class="flaticon-play-arrow"><i class="ripple"></i></span>
                                     </a>

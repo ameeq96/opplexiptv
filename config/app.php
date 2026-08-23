@@ -140,7 +140,6 @@ return [
     |
     */
 
-    Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
     'maintenance' => [
         'driver' => 'file',
         // 'store' => 'redis',

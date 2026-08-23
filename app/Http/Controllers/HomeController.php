@@ -72,6 +72,16 @@ class HomeController extends Controller
         return view('pages.movies');
     }
 
+    public function movieTrailer(string $mediaType, int $id)
+    {
+        abort_unless(in_array($mediaType, ['movie', 'tv'], true), 404);
+
+        $url = $this->tmdb->trailerUrl($id, $mediaType);
+        $response = response()->json(['url' => $url], $url ? 200 : 404);
+
+        return $response->header('Cache-Control', 'public, max-age=86400');
+    }
+
     public function getTrending(Request $request)
     {
         $page = max(1, (int) $request->query('page', 1));
@@ -86,10 +96,10 @@ class HomeController extends Controller
                 return [
                     'id' => $movie['id'] ?? null,
                     'media_type' => $movie['media_type'] ?? null,
-                    'safe_title' => $movie['title'] ?? $movie['name'] ?? 'Featured IPTV Content',
+                    'safe_title' => $movie['title'] ?? $movie['name'] ?? __('interface.movies.featured_title'),
                     'safe_overview' => isset($movie['overview'])
                         ? Str::limit((string) $movie['overview'], 150)
-                        : __('messages.no_overview'),
+                        : __('interface.movies.no_overview'),
                     'webp_image_url' => $this->images->toWebp($imageUrl, 960, 540, 70),
                 ];
             })
@@ -221,11 +231,18 @@ class HomeController extends Controller
             $image = $product->image ? asset('images/digital-products/' . $product->image) : asset('images/placeholder.webp');
             $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
             $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
-                "Hi, I want to buy {$name} ({$price}). Product link: {$shareLandingUrl}"
+                __('interface.product.digital_purchase_message', [
+                    'name' => $name,
+                    'price' => $price,
+                    'url' => $shareLandingUrl,
+                ])
             );
-            $actionLabel = 'Buy Product';
-            $description = "Buy {$name} on Opplex IPTV. Price: {$price}.";
-            $badge = 'Digital';
+            $actionLabel = __('interface.product.buy');
+            $description = __('interface.product.digital_description', [
+                'name' => $name,
+                'price' => $price,
+            ]);
+            $badge = __('interface.product.digital_badge');
         } else {
             $product = ShopProduct::query()
                 ->with('translations')
@@ -237,18 +254,21 @@ class HomeController extends Controller
             $image = $product->image ? asset('images/shop/' . $product->image) : asset('images/placeholder.webp');
             $price = null;
             $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
-                "Hi, I am interested in {$name}. Product link: {$shareLandingUrl}"
+                __('interface.product.affiliate_purchase_message', [
+                    'name' => $name,
+                    'url' => $shareLandingUrl,
+                ])
             );
-            $actionLabel = 'Buy Product';
-            $description = "Explore {$name} on Opplex IPTV.";
-            $badge = 'Affiliate';
+            $actionLabel = __('interface.product.buy');
+            $description = __('interface.product.affiliate_description', ['name' => $name]);
+            $badge = __('interface.product.affiliate_badge');
         }
 
         return view('pages.products.share', [
             'productName' => $name,
             'productImage' => $image,
             'productPrice' => $price,
-            'productType' => strtolower($badge),
+            'productType' => $type,
             'productTypeLabel' => $badge,
             'productDescription' => $description,
             'productActionUrl' => $actionUrl,
@@ -346,6 +366,7 @@ class HomeController extends Controller
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->orderByRaw("FIELD(vendor,'opplex','starshare')")
             ->orderByRaw("COALESCE(sort_order, duration_months, id)")
+            ->with('translations')
             ->get(['id', 'vendor', 'title', 'price_amount', 'duration_months', 'icon']);
 
         $iptvPackages = [];
@@ -355,10 +376,12 @@ class HomeController extends Controller
             $iptvPackages[] = [
                 'id'     => $r->id,                           // <--- ID SEND HO RAHA
                 'vendor' => strtolower($r->vendor),           // opplex | starshare
-                'title'  => $r->title,
+                'title'  => $r->translation()?->title ?: $r->title,
                 'old'    => 0.00,
                 'price'  => (float) $r->price_amount,
-                'unit'   => '/ ' . $dur . ' month' . ($dur > 1 ? 's' : ''),
+                'unit'   => $dur === 1
+                    ? __('interface.checkout.month_one')
+                    : __('interface.checkout.months', ['count' => $dur]),
                 'icon'   => $r->icon ?: 'bi-router',
             ];
         }
@@ -369,6 +392,7 @@ class HomeController extends Controller
             ->where('type', 'reseller')
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
+            ->with('translations')
             ->get(['id', 'vendor', 'title', 'price_amount', 'credits', 'icon']);
 
         $resellerPackages = [];
@@ -378,10 +402,12 @@ class HomeController extends Controller
             $resellerPackages[] = [
                 'id'     => $r->id,                           // <--- ID SEND HO RAHA
                 'vendor' => strtolower($r->vendor),
-                'title'  => $r->title,
+                'title'  => $r->translation()?->title ?: $r->title,
                 'old'    => 0.00,
                 'price'  => (float) $r->price_amount,
-                'unit'   => $credits > 0 ? '/ ' . $credits . ' Credits' : '/ Credits',
+                'unit'   => $credits > 0
+                    ? __('interface.checkout.credits', ['count' => $credits])
+                    : __('interface.checkout.credits_label'),
                 'icon'   => $r->icon ?: 'bi-router',
             ];
         }
@@ -401,27 +427,57 @@ class HomeController extends Controller
 
     public function checkoutStep2(Request $request)
     {
-        $data = $request->validate([
-            'device'       => 'nullable|string',
-            'device_id'    => 'nullable|integer|exists:devices,id',
-            'iptv_vendor'  => 'nullable|string',
-            'plan_name'    => 'required|string',
-            'plan_price'   => 'required|numeric|min:0',
+        $data = $request->validate(
+            [
+                'device'       => 'nullable|string',
+                'device_id'    => 'nullable|integer|exists:devices,id',
+                'iptv_vendor'  => 'nullable|string',
+                'plan_name'    => 'required|string',
+                'plan_price'   => 'required|numeric|min:0',
 
-            // ENUM: package | reseller
-            'package_type' => 'required|in:package,reseller',
+                // ENUM: package | reseller
+                'package_type' => 'required|in:package,reseller',
 
-            'package_id'   => 'nullable|integer|exists:packages,id',
-            'quantity'     => 'required|integer|min:1',
+                'package_id'   => 'nullable|integer|exists:packages,id',
+                'quantity'     => 'required|integer|min:1',
 
-            'email'        => 'required|email',
-            'first_name'   => 'required|string|max:255',
-            'last_name'    => 'required|string|max:255',
-            'phone'        => 'required|string|max:50',
-            'notes'        => 'nullable|string',
-            'coupon'       => 'nullable|string',
-            'paymethod'    => 'required|in:card,crypto',
-        ]);
+                'email'        => 'required|email',
+                'first_name'   => 'required|string|max:255',
+                'last_name'    => 'required|string|max:255',
+                'phone'        => 'required|string|max:50',
+                'notes'        => 'nullable|string',
+                'coupon'       => 'nullable|string',
+                'paymethod'    => 'required|in:card,crypto',
+            ],
+            [
+                '*.required' => __('document_ui.validation.required'),
+                'email.email' => __('document_ui.validation.email'),
+                '*.string' => __('document_ui.validation.string'),
+                '*.max' => __('document_ui.validation.max'),
+                '*.numeric' => __('document_ui.validation.numeric'),
+                '*.integer' => __('document_ui.validation.integer'),
+                '*.min' => __('document_ui.validation.min_numeric'),
+                '*.in' => __('document_ui.validation.invalid_selection'),
+                '*.exists' => __('document_ui.validation.invalid_selection'),
+            ],
+            [
+                'device' => __('messages.checkout_device'),
+                'device_id' => __('messages.checkout_device'),
+                'iptv_vendor' => __('messages.checkout_provider'),
+                'plan_name' => __('messages.checkout_selected_package_fallback'),
+                'plan_price' => __('messages.checkout_subscription_label'),
+                'package_type' => __('messages.checkout_package_type'),
+                'package_id' => __('messages.checkout_selected_package_fallback'),
+                'quantity' => __('interface.fields.quantity'),
+                'email' => __('messages.checkout_email'),
+                'first_name' => __('messages.checkout_first_name'),
+                'last_name' => __('messages.checkout_last_name'),
+                'phone' => __('messages.checkout_phone'),
+                'notes' => __('messages.checkout_notes_label'),
+                'coupon' => __('interface.fields.coupon'),
+                'paymethod' => __('interface.fields.payment_method'),
+            ],
+        );
 
         // 1) User create / get
         $fullName = trim($data['first_name'] . ' ' . $data['last_name']);
@@ -517,7 +573,9 @@ class HomeController extends Controller
         ];
 
         try {
-            Mail::to($user->email)->queue(new CheckoutOrderMail($emailData, false));
+            Mail::to($user->email)->queue(
+                (new CheckoutOrderMail($emailData, false))->locale(app()->getLocale())
+            );
 
             $adminEmail = config('mail.from.address', 'info@opplexiptv.com');
             Mail::to($adminEmail)->queue(new CheckoutOrderMail($emailData, true));
@@ -546,7 +604,7 @@ class HomeController extends Controller
 
         return redirect()
             ->route('thankyou')
-            ->with('success', 'Order created with ID #' . $order->id);
+            ->with('success', __('interface.checkout.order_received', ['id' => $order->id]));
     }
 
     public function thankYou()
@@ -556,7 +614,7 @@ class HomeController extends Controller
 
     public function checkoutStep1(Request $request)
     {
-        $planName  = $request->input('plan_name', 'Premium subscription 1 Month × 1');
+        $planName  = $request->input('plan_name', __('interface.checkout.default_plan'));
         $planPrice = (float) $request->input('plan_price', 15);
         $device    = $request->input('device', null);
 
