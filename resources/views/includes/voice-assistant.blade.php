@@ -1,4 +1,4 @@
-﻿@php
+@php
     $vaGuidePrefix = 'messages.voice_guide.';
     $vaUiPrefix = 'messages.voice_assistant.';
 
