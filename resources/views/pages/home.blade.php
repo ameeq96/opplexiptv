@@ -48,8 +48,10 @@
                     default => 'monthly',
                 };
 
-                $package['price'] = $documentHome['pricing']['plans'][$planKey]['price']
-                    ?? $package['price'];
+                if (data_get($package, 'vendor', 'opplex') === 'opplex') {
+                    $package['price'] = $documentHome['pricing']['plans'][$planKey]['price']
+                        ?? $package['price'];
+                }
 
                 return $package;
             })->values()->all();

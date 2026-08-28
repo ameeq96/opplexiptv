@@ -123,7 +123,7 @@
                     $displayPrice = $package['price'] ?? '';
                     $displayFeatures = $package['features'] ?? [];
 
-                    if ($isDocumentEnglishPricing) {
+                    if ($isDocumentEnglishPricing && $vendorKey === 'opplex') {
                         $durationMonths = (int) data_get($package, 'duration_months', 0);
                         $documentPlanKey = match ($durationMonths) {
                             3 => 'three_months',
