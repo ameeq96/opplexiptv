@@ -56,7 +56,7 @@ return [
             'xtv' => 'XTV Live',
             'xtream_android' => '9Xtream Player',
             'ibo_android' => 'IBO Player (Android)',
-            'star_share' => 'Star Share',
+            'star_share' => 'Filex',
             'smarters_ios' => 'Smarters Player Lite (iOS)',
             'player_000' => '000 Player',
             'xtream_ios' => '9Xtream (iOS)',

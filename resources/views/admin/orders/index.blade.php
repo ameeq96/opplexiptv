@@ -148,11 +148,12 @@
                                             '6 Months Starshare Account',
                                             '12 Months Starshare Account',
                                         ];
+                                        $packageLabel = str_ireplace('starshare', 'Filex', $order->package);
                                     @endphp
                                     @if (!in_array($order->package, $defaultPackages))
                                         <span>{{ $order->custom_package }}</span>
                                     @else
-                                        {{ $order->package }}
+                                        {{ $packageLabel }}
                                     @endif
                                 </td>
                                 <td>
@@ -232,7 +233,7 @@
                                         $phone = preg_replace('/\D+/', '', $order->user->phone ?? '');
                                         $custName = $order->user->name ?? 'Customer';
                                         $message = urlencode(
-                                            "Hello {$custName}, your IPTV order for package '{$order->package}' is now " .
+                                            "Hello {$custName}, your IPTV order for package '{$packageLabel}' is now " .
                                                 strtoupper($order->status) .
                                                 '.',
                                         );

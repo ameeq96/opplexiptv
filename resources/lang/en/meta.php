@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'IPTV Reseller Panel | Build Your Own IPTV Business',
-        'description' => 'Buy credits, activate customer subscriptions, offer unlimited trials and set your own prices through the Opplex and Starshare reseller panel.',
+        'description' => 'Buy credits, activate customer subscriptions, offer unlimited trials and set your own prices through the Opplex and Filex reseller panel.',
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
     'buynow' => [

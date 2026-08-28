@@ -180,7 +180,7 @@ return [
             'heading' => 'Preços de subscrição IPTV: planos simples, sem surpresas',
             'paragraphs' => [
                 'Escolha a duração do plano, pague uma vez e comece a ver. Todos os planos Opplex oferecem os mesmos 12,000+ canais em direto, 50,000+ filmes e qualidade 4K. Os planos mais longos custam menos por mês; essa é a única diferença.',
-                'A Starshare também está disponível para espectadores que pretendam uma seleção de canais diferente por um preço ligeiramente superior. Ambas utilizam o mesmo processo de configuração e as mesmas aplicações.',
+                'A Filex também está disponível para espectadores que pretendam uma seleção de canais diferente por um preço ligeiramente superior. Ambas utilizam o mesmo processo de configuração e as mesmas aplicações.',
                 'Não sabe qual plano escolher? Comece pelo mensal. Pode sempre mudar para o anual mais tarde.',
             ],
         ],
@@ -235,7 +235,7 @@ return [
             'items' => [
                 [
                     'question' => 'Quanto custa a Opplex?',
-                    'answer' => 'O plano mensal custa $2.99. Três meses custam $7.99. O semestral custa $14.99. O anual custa $23.99. Os planos Starshare começam em $4.50 por mês. Todos os preços estão na tabela acima.',
+                    'answer' => 'O plano mensal custa $2.99. Três meses custam $7.99. O semestral custa $14.99. O anual custa $23.99. Os planos Filex começam em $4.50 por mês. Todos os preços estão na tabela acima.',
                 ],
                 [
                     'question' => 'Os preços mudam na renovação?',
@@ -272,7 +272,7 @@ return [
             'heading' => 'Painel de revendedor IPTV: crie o seu próprio negócio IPTV com a Opplex',
             'paragraphs' => [
                 'Quer pretenda vender a cinco pessoas ou a quinhentas, o painel de revendedor Opplex oferece tudo o que precisa. Compre créditos em quantidade, ative subscrições para os seus clientes diretamente no painel de controlo e defina os seus próprios preços. Não precisa de conhecimentos técnicos. Sem contratos.',
-                'A Opplex e a Starshare estão disponíveis no mesmo painel. Escolha uma ou ofereça ambas; a decisão é sua.',
+                'A Opplex e a Filex estão disponíveis no mesmo painel. Escolha uma ou ofereça ambas; a decisão é sua.',
             ],
             'primary_cta' => 'Ver pacotes de revendedor',
             'secondary_cta' => 'Pergunte-nos pelo WhatsApp',
@@ -313,7 +313,7 @@ return [
                 ],
                 [
                     'title' => 'Dois fornecedores, um painel',
-                    'description' => 'Faça a gestão das subscrições Opplex e Starshare no mesmo lugar. Se um cliente quiser comparar ambas ou mudar mais tarde, pode tratar de tudo sem alternar entre plataformas.',
+                    'description' => 'Faça a gestão das subscrições Opplex e Filex no mesmo lugar. Se um cliente quiser comparar ambas ou mudar mais tarde, pode tratar de tudo sem alternar entre plataformas.',
                 ],
                 [
                     'title' => 'Apoio prioritário por WhatsApp:',
@@ -351,8 +351,8 @@ return [
                     'answer' => 'Compre um pacote de créditos de revendedor nesta página. Depois de o pagamento ser concluído, o acesso ao painel fica configurado e pode começar imediatamente a ativar linhas de clientes.',
                 ],
                 [
-                    'question' => 'Qual é a diferença entre os créditos de revendedor Opplex e Starshare?',
-                    'answer' => 'Os créditos Opplex servem para ativar subscrições Opplex. Os créditos Starshare destinam-se à Starshare, que oferece uma seleção de canais diferente por um preço superior. Ambas funcionam no mesmo painel; pode oferecer uma ou as duas aos clientes.',
+                    'question' => 'Qual é a diferença entre os créditos de revendedor Opplex e Filex?',
+                    'answer' => 'Os créditos Opplex servem para ativar subscrições Opplex. Os créditos Filex destinam-se à Filex, que oferece uma seleção de canais diferente por um preço superior. Ambas funcionam no mesmo painel; pode oferecer uma ou as duas aos clientes.',
                 ],
                 [
                     'question' => 'Posso oferecer testes sem gastar créditos?',

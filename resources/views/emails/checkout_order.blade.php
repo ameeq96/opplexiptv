@@ -20,6 +20,9 @@
         'crypto' => __('messages.checkout_pay_crypto_title'),
         default => $paymentMethod,
     };
+    $packageLabel = str_ireplace('starshare', 'Filex', $details['package'] ?? $notAvailable);
+    $vendor = $details['vendor'] ?? '';
+    $vendorLabel = strtolower($vendor) === 'starshare' ? 'Filex' : ucfirst($vendor);
 @endphp
 
 <h2 style="margin:0 0 12px 0;">{{ $title }}</h2>
@@ -50,7 +53,7 @@
     </tr>
     <tr>
         <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.package') }}</td>
-        <td style="padding:6px 8px;">{{ $details['package'] ?? $notAvailable }}</td>
+        <td style="padding:6px 8px;">{{ $packageLabel }}</td>
     </tr>
     <tr>
         <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.type') }}</td>
@@ -59,7 +62,7 @@
     @if (!empty($details['vendor']))
         <tr>
             <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.provider') }}</td>
-            <td style="padding:6px 8px;">{{ ucfirst($details['vendor']) }}</td>
+            <td style="padding:6px 8px;">{{ $vendorLabel }}</td>
         </tr>
     @endif
     @if (!empty($details['device']))

@@ -54,6 +54,17 @@
             @if ($isDocumentEnglishPricing)
                 <p class="home-document-pricing__intro">{{ $documentPricing['intro'] }}</p>
             @endif
+
+            <aside class="alert alert-warning d-flex align-items-center mx-auto mt-3 mb-1 py-2 px-3 {{ ($isRtl ?? false) ? 'text-right' : 'text-left' }}"
+                style="max-width: 760px;" dir="{{ ($isRtl ?? false) ? 'rtl' : 'ltr' }}"
+                aria-label="{{ __('messages.final_sale_no_refunds') }}">
+                <span class="fa fa-exclamation-circle {{ ($isRtl ?? false) ? 'ml-2' : 'mr-2' }}" aria-hidden="true"></span>
+                <p class="mb-0">
+                    <strong>{{ __('messages.final_sale_no_refunds') }}</strong>
+                    {{ __('messages.final_sale_confirmed') }}
+                    {{ __('messages.final_sale_verify_before_payment') }}
+                </p>
+            </aside>
         </div>
 
         
@@ -70,13 +81,13 @@
             <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}"
                 @if ($showResellerInitially) style="display:none" @endif>
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
-                <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
+                <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Filex</button>
             </div>
 
             <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="group"
                 aria-label="{{ __('document_ui.home.choose_reseller_vendor') }}" style="display:{{ $showResellerInitially ? 'inline-flex' : 'none' }}">
                 <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
-                <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Starshare</button>
+                <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Filex</button>
             </div>
         </div>
 

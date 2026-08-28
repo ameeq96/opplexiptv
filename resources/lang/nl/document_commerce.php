@@ -180,7 +180,7 @@ return [
             'heading' => 'Prijzen van IPTV-abonnementen — Eenvoudige abonnementen, geen verrassingen',
             'paragraphs' => [
                 'Kies de looptijd van een abonnement, betaal één keer en begin met kijken. Elk Opplex-abonnement biedt je dezelfde 12,000+ livekanalen, 50,000+ films en 4K-kwaliteit. Langere abonnementen kosten minder per maand; dat is het enige verschil.',
-                'Starshare is ook beschikbaar voor kijkers die een ander zenderaanbod willen tegen een iets hoger tarief. Beide gebruiken hetzelfde installatieproces en dezelfde apps.',
+                'Filex is ook beschikbaar voor kijkers die een ander zenderaanbod willen tegen een iets hoger tarief. Beide gebruiken hetzelfde installatieproces en dezelfde apps.',
                 'Weet je niet zeker welk abonnement bij je past? Begin dan met het maandabonnement. Je kunt later altijd nog jaarlijks kiezen.',
             ],
         ],
@@ -235,7 +235,7 @@ return [
             'items' => [
                 [
                     'question' => 'Hoeveel kost Opplex?',
-                    'answer' => 'Maandelijks kost $2.99. Drie maanden kost $7.99. Halfjaarlijks kost $14.99. Jaarlijks kost $23.99. Starshare-abonnementen beginnen bij $4.50 per maand. Alle prijzen staan in de tabel hierboven.',
+                    'answer' => 'Maandelijks kost $2.99. Drie maanden kost $7.99. Halfjaarlijks kost $14.99. Jaarlijks kost $23.99. Filex-abonnementen beginnen bij $4.50 per maand. Alle prijzen staan in de tabel hierboven.',
                 ],
                 [
                     'question' => 'Veranderen de prijzen bij verlenging?',
@@ -272,7 +272,7 @@ return [
             'heading' => 'IPTV-resellerpaneel — Bouw je eigen IPTV-bedrijf op met Opplex',
             'paragraphs' => [
                 'Of je nu aan vijf of vijfhonderd mensen wilt verkopen, het Opplex-resellerpaneel biedt je alles wat je nodig hebt. Koop credits in bulk, activeer abonnementen voor je klanten rechtstreeks vanuit je dashboard en bepaal je eigen prijzen. Geen technische achtergrond nodig. Geen contracten.',
-                'Zowel Opplex als Starshare zijn beschikbaar vanuit hetzelfde paneel. Kies er één of bied beide aan; die keuze is aan jou.',
+                'Zowel Opplex als Filex zijn beschikbaar vanuit hetzelfde paneel. Kies er één of bied beide aan; die keuze is aan jou.',
             ],
             'primary_cta' => 'Bekijk resellerpakketten',
             'secondary_cta' => 'Vraag het ons via WhatsApp',
@@ -313,7 +313,7 @@ return [
                 ],
                 [
                     'title' => 'Twee aanbieders, één paneel',
-                    'description' => 'Beheer Opplex- en Starshare-abonnementen vanuit dezelfde omgeving. Wil een klant beide vergelijken of later overstappen, dan regel je dat zonder tussen platforms te wisselen.',
+                    'description' => 'Beheer Opplex- en Filex-abonnementen vanuit dezelfde omgeving. Wil een klant beide vergelijken of later overstappen, dan regel je dat zonder tussen platforms te wisselen.',
                 ],
                 [
                     'title' => 'Voorrang bij WhatsApp-ondersteuning:',
@@ -351,8 +351,8 @@ return [
                     'answer' => 'Koop op deze pagina een resellercreditpakket. Zodra je betaling is verwerkt, wordt de toegang tot je paneel ingesteld en kun je direct klantlijnen activeren.',
                 ],
                 [
-                    'question' => 'Wat is het verschil tussen Opplex- en Starshare-resellercredits?',
-                    'answer' => 'Opplex-credits worden gebruikt om Opplex-abonnementen te activeren. Starshare-credits zijn voor Starshare, dat een ander zenderaanbod tegen een hogere prijs heeft. Beide werken via hetzelfde paneel; je kunt één of beide aan je klanten aanbieden.',
+                    'question' => 'Wat is het verschil tussen Opplex- en Filex-resellercredits?',
+                    'answer' => 'Opplex-credits worden gebruikt om Opplex-abonnementen te activeren. Filex-credits zijn voor Filex, dat een ander zenderaanbod tegen een hogere prijs heeft. Beide werken via hetzelfde paneel; je kunt één of beide aan je klanten aanbieden.',
                 ],
                 [
                     'question' => 'Kan ik proefperiodes geven zonder credits te besteden?',

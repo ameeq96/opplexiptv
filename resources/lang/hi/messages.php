@@ -13,6 +13,9 @@ return [
 
   'pricing_heading' => 'Best IPTV प्लान्स - 4K स्ट्रीमिंग, स्मार्ट प्लेयर, Free Trial',
   'show_reseller_packages' => 'IPTV Reseller पैकेज Free Trial के साथ देखें',
+  'final_sale_no_refunds' => 'बिक्री अंतिम है — कोई राशि वापस नहीं होगी:',
+  'final_sale_confirmed' => 'कीमत तय होने और आपके ऑर्डर की पुष्टि हो जाने के बाद, खरीदारी अंतिम होगी और राशि वापस नहीं की जाएगी।',
+  'final_sale_verify_before_payment' => 'भुगतान करने से पहले कृपया अपने प्लान और उसकी कीमत की पुष्टि कर लें।',
   'credit' => 'क्रेडिट',
   '1_month' => '1 महीना',
   '6_months' => '6 महीने',

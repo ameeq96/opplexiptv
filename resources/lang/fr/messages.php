@@ -12,6 +12,9 @@ return [
 
     'pricing_heading' => 'Obtenez les Meilleures Offres IPTV - Streaming 4K, Lecteur Intelligent, Essai Gratuit',
     'show_reseller_packages' => 'Afficher les Packs Revendeur IPTV avec Essai Gratuit',
+    'final_sale_no_refunds' => 'Vente définitive - aucun remboursement :',
+    'final_sale_confirmed' => 'Une fois le prix convenu et la commande confirmée, l’achat est définitif et non remboursable.',
+    'final_sale_verify_before_payment' => 'Veuillez vérifier votre forfait et son tarif avant d’effectuer le paiement.',
     'credit' => 'Crédit',
     '1_month' => '1 Mois',
     '6_months' => '6 Mois',

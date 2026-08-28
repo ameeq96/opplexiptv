@@ -13,6 +13,9 @@ return [
 
     'pricing_heading' => 'Ottieni i Migliori Piani IPTV - Streaming 4K, Smart Player, Prova Gratuita',
     'show_reseller_packages' => 'Mostra i Pacchetti Rivenditore IPTV con Prova Gratuita',
+    'final_sale_no_refunds' => 'Vendita definitiva - nessun rimborso:',
+    'final_sale_confirmed' => 'Una volta concordato il prezzo e confermato l’ordine, l’acquisto è definitivo e non rimborsabile.',
+    'final_sale_verify_before_payment' => 'Verifica il piano e il relativo prezzo prima di effettuare il pagamento.',
     'credit' => 'Credito',
     '1_month' => '1 Mese',
     '6_months' => '6 Mesi',

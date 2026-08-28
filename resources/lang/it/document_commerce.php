@@ -180,7 +180,7 @@ return [
             'heading' => 'Prezzi degli abbonamenti IPTV — Piani semplici, nessuna sorpresa',
             'paragraphs' => [
                 'Scegli la durata del piano, paga una sola volta e inizia a guardare. Ogni piano Opplex ti offre gli stessi 12,000+ canali in diretta, 50,000+ film e qualità 4K. I piani più lunghi costano meno al mese: questa è l’unica differenza.',
-                'Starshare è disponibile anche per chi desidera una selezione diversa di canali a una tariffa leggermente superiore. Entrambi utilizzano la stessa procedura di configurazione e le stesse app.',
+                'Filex è disponibile anche per chi desidera una selezione diversa di canali a una tariffa leggermente superiore. Entrambi utilizzano la stessa procedura di configurazione e le stesse app.',
                 'Non sai quale piano scegliere? Inizia con quello mensile. Potrai sempre passare all’annuale in seguito.',
             ],
         ],
@@ -235,7 +235,7 @@ return [
             'items' => [
                 [
                     'question' => 'Quanto costa Opplex?',
-                    'answer' => 'Il piano mensile costa $2.99. Tre mesi costano $7.99. Il semestrale costa $14.99. L’annuale costa $23.99. I piani Starshare partono da $4.50 al mese. Tutti i prezzi sono indicati nella tabella qui sopra.',
+                    'answer' => 'Il piano mensile costa $2.99. Tre mesi costano $7.99. Il semestrale costa $14.99. L’annuale costa $23.99. I piani Filex partono da $4.50 al mese. Tutti i prezzi sono indicati nella tabella qui sopra.',
                 ],
                 [
                     'question' => 'I prezzi cambiano al rinnovo?',
@@ -272,7 +272,7 @@ return [
             'heading' => 'Pannello rivenditori IPTV — Crea la tua attività IPTV con Opplex',
             'paragraphs' => [
                 'Che tu voglia vendere a cinque persone o a cinquecento, il pannello rivenditori Opplex ti offre tutto ciò che ti serve. Acquista crediti in blocco, attiva gli abbonamenti per i tuoi clienti direttamente dalla dashboard e stabilisci i tuoi prezzi. Non serve alcuna competenza tecnica. Nessun contratto.',
-                'Opplex e Starshare sono entrambi disponibili nello stesso pannello. Scegline uno oppure offrili entrambi: decidi tu.',
+                'Opplex e Filex sono entrambi disponibili nello stesso pannello. Scegline uno oppure offrili entrambi: decidi tu.',
             ],
             'primary_cta' => 'Visualizza i pacchetti per rivenditori',
             'secondary_cta' => 'Chiedici informazioni su WhatsApp',
@@ -313,7 +313,7 @@ return [
                 ],
                 [
                     'title' => 'Due fornitori, un unico pannello',
-                    'description' => 'Gestisci gli abbonamenti Opplex e Starshare dallo stesso posto. Se un cliente vuole confrontarli entrambi o cambiare in seguito, puoi occupartene senza passare da una piattaforma all’altra.',
+                    'description' => 'Gestisci gli abbonamenti Opplex e Filex dallo stesso posto. Se un cliente vuole confrontarli entrambi o cambiare in seguito, puoi occupartene senza passare da una piattaforma all’altra.',
                 ],
                 [
                     'title' => 'Assistenza WhatsApp prioritaria:',
@@ -351,8 +351,8 @@ return [
                     'answer' => 'Acquista un pacchetto di crediti per rivenditori da questa pagina. Una volta completato il pagamento, configureremo il tuo accesso al pannello e potrai iniziare subito ad attivare le linee dei clienti.',
                 ],
                 [
-                    'question' => 'Qual è la differenza tra i crediti per rivenditori Opplex e Starshare?',
-                    'answer' => 'I crediti Opplex servono per attivare gli abbonamenti Opplex. I crediti Starshare sono destinati a Starshare, che offre una selezione di canali diversa a un prezzo più alto. Entrambi funzionano tramite lo stesso pannello; puoi offrire uno o entrambi ai tuoi clienti.',
+                    'question' => 'Qual è la differenza tra i crediti per rivenditori Opplex e Filex?',
+                    'answer' => 'I crediti Opplex servono per attivare gli abbonamenti Opplex. I crediti Filex sono destinati a Filex, che offre una selezione di canali diversa a un prezzo più alto. Entrambi funzionano tramite lo stesso pannello; puoi offrire uno o entrambi ai tuoi clienti.',
                 ],
                 [
                     'question' => 'Posso offrire prove senza spendere crediti?',

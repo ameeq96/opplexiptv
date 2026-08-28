@@ -12,7 +12,7 @@
         <label class="form-label">Vendor</label>
         <select name="vendor" class="form-select" required>
             <option value="opplex" @selected(old('vendor', $package->vendor) === 'opplex')>Opplex</option>
-            <option value="starshare" @selected(old('vendor', $package->vendor) === 'starshare')>Starshare</option>
+            <option value="starshare" @selected(old('vendor', $package->vendor) === 'starshare')>Filex</option>
         </select>
     </div>
     <div class="col-lg-6">

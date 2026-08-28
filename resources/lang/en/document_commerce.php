@@ -180,7 +180,7 @@ return [
             'heading' => 'IPTV Subscription Pricing  Simple Plans, No Surprises',
             'paragraphs' => [
                 "Pick a plan length, pay once, and start watching. Every Opplex plan gives you the same 12,000+ live channels, 50,000+ movies, and 4K quality. Longer plans cost less per month; that's the only difference.",
-                'Starshare is also available for viewers who want a different channel mix at a slightly higher rate. Both run through the same setup process and the same apps.',
+                'Filex is also available for viewers who want a different channel mix at a slightly higher rate. Both run through the same setup process and the same apps.',
                 'Not sure which plan suits you? Start with the monthly. You can always go yearly later.',
             ],
         ],
@@ -235,7 +235,7 @@ return [
             'items' => [
                 [
                     'question' => 'How much does Opplex cost?',
-                    'answer' => 'Monthly is $2.99. Three months is $7.99. Half-yearly is $14.99. Yearly is $23.99. Starshare plans start at $4.50 monthly. All prices are in the table above.',
+                    'answer' => 'Monthly is $2.99. Three months is $7.99. Half-yearly is $14.99. Yearly is $23.99. Filex plans start at $4.50 monthly. All prices are in the table above.',
                 ],
                 [
                     'question' => 'Do prices change at renewal?',
@@ -272,7 +272,7 @@ return [
             'heading' => 'IPTV Reseller Panel  Build Your Own IPTV Business with Opplex',
             'paragraphs' => [
                 'Whether you want to sell to five people or five hundred, the Opplex reseller panel gives you everything you need. Buy credits in bulk, activate subscriptions for your customers straight from your dashboard, and set your own prices. No tech background needed. No contracts.',
-                "Both Opplex and Starshare are available from the same panel. Pick one; offer both, that's your call.",
+                "Both Opplex and Filex are available from the same panel. Pick one; offer both, that's your call.",
             ],
             'primary_cta' => 'View Reseller Packages',
             'secondary_cta' => 'Ask Us on WhatsApp',
@@ -313,7 +313,7 @@ return [
                 ],
                 [
                     'title' => 'Two Providers, One Panel',
-                    'description' => 'Manage Opplex and Starshare subscriptions from the same place. If a customer wants to compare both or switch later, you can handle it without jumping between platforms.',
+                    'description' => 'Manage Opplex and Filex subscriptions from the same place. If a customer wants to compare both or switch later, you can handle it without jumping between platforms.',
                 ],
                 [
                     'title' => 'Priority WhatsApp Support:',
@@ -351,8 +351,8 @@ return [
                     'answer' => 'Buy a reseller credit package from this page. Once your payment goes through, your panel access is set up, and you can start activating customer lines right away.',
                 ],
                 [
-                    'question' => "What's the difference between Opplex and Starshare reseller credits?",
-                    'answer' => 'Opplex credits are used to activate Opplex subscriptions. Starshare credits are for Starshare, which has a different channel lineup at a higher price point. Both work through the same pane;  you can offer one or both to your customers.',
+                    'question' => "What's the difference between Opplex and Filex reseller credits?",
+                    'answer' => 'Opplex credits are used to activate Opplex subscriptions. Filex credits are for Filex, which has a different channel lineup at a higher price point. Both work through the same pane;  you can offer one or both to your customers.',
                 ],
                 [
                     'question' => 'Can I give trials without spending credits?',

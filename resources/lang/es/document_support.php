@@ -207,7 +207,7 @@ return [
         'timeline' => [
             'heading' => 'Cómo llegó Opplex hasta aquí',
             'items' => [
-                ['year' => '2022', 'text' => 'Opplex se lanza con las plataformas Opplex y Starshare. Llegan los primeros suscriptores de Canadá y el Reino Unido.'],
+                ['year' => '2022', 'text' => 'Opplex se lanza con las plataformas Opplex y Filex. Llegan los primeros suscriptores de Canadá y el Reino Unido.'],
                 ['year' => '2023', 'text' => 'Ampliamos la infraestructura de servidores para el tráfico europeo. La biblioteca de canales en directo supera los 10,000 canales.'],
                 ['year' => '2024', 'text' => 'Creamos y lanzamos Opplex IPTV App y XTV Live, nuestros propios reproductores, diseñados específicamente para los streams de Opplex.'],
                 ['year' => '2025', 'text' => 'La biblioteca VOD supera los 50,000 títulos. El sitio multilingüe se lanza en 10 idiomas. El panel de revendedor se abre al público.'],
@@ -230,8 +230,8 @@ return [
                     'answer' => 'Saskatoon, Saskatchewan, Canadá. Puedes escribirnos a info@opplexiptv.com o por WhatsApp al +1 (639) 390-3194.',
                 ],
                 [
-                    'question' => '¿Cuál es la diferencia entre Opplex y Starshare?',
-                    'answer' => 'Ambas son plataformas IPTV disponibles mediante nuestro sistema de suscripción. Opplex es nuestra plataforma principal. Starshare es un segundo proveedor con su propia selección de canales y precios, disponible como alternativa desde el mismo panel. Puedes probar las dos.',
+                    'question' => '¿Cuál es la diferencia entre Opplex y Filex?',
+                    'answer' => 'Ambas son plataformas IPTV disponibles mediante nuestro sistema de suscripción. Opplex es nuestra plataforma principal. Filex es un segundo proveedor con su propia selección de canales y precios, disponible como alternativa desde el mismo panel. Puedes probar las dos.',
                 ],
                 [
                     'question' => '¿Qué ocurre si tengo un problema?',

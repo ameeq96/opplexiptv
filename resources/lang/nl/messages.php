@@ -11,6 +11,9 @@ return [
 
   'pricing_heading' => 'Krijg Beste IPTV Pakketten - 4K Streaming, Smart Player, Gratis Proefperiode',
   'show_reseller_packages' => 'Toon IPTV Reseller Pakketten met Gratis Proefperiode',
+  'final_sale_no_refunds' => 'Definitieve aankoop - geen restitutie:',
+  'final_sale_confirmed' => 'Zodra de prijs is overeengekomen en uw bestelling is bevestigd, is de aankoop definitief en kan deze niet worden terugbetaald.',
+  'final_sale_verify_before_payment' => 'Controleer uw abonnement en de prijs voordat u betaalt.',
   'credit' => 'Credits',
   '1_month' => '1 Maand',
   '6_months' => '6 Maanden',

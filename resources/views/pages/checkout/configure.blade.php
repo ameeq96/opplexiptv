@@ -59,11 +59,12 @@
           <div class="section-title">{{ __('messages.checkout_iptv_title') }}</div>
         </div>
         <div class="item-flex">
-          @php $vendors = $iptvVendors ?? ['Opplex','Starshare']; @endphp
+          @php $vendors = $iptvVendors ?? ['Opplex','starshare']; @endphp
           @foreach ($vendors as $v)
-            <div class="pick" data-vendor="{{ $v }}">
+            @php $vendorLabel = strtolower($v) === 'starshare' ? 'Filex' : $v; @endphp
+            <div class="pick" data-vendor="{{ $v }}" data-label="{{ $vendorLabel }}">
               <div class="ico bi bi-broadcast-pin"></div>
-              <div>{{ $v }}</div>
+              <div>{{ $vendorLabel }}</div>
               <small>{{ __('messages.checkout_iptv_small') }}</small>
             </div>
           @endforeach
@@ -455,8 +456,9 @@
       clearGroup('#vendorSection [data-vendor]');
       c.classList.add('active');
 
-      const label = nice(c.getAttribute('data-vendor'));
-      const canonVal = canon(label);
+      const vendorValue = nice(c.getAttribute('data-vendor'));
+      const label = nice(c.getAttribute('data-label') || vendorValue);
+      const canonVal = canon(vendorValue);
       vendorInput.value = canonVal;
       vendorInput.dataset.label = label;
 

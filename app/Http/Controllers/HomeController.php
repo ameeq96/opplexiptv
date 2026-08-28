@@ -413,7 +413,7 @@ class HomeController extends Controller
         }
 
         $prePrice    = $request->query('price');
-        $iptvVendors = ['Opplex', 'Starshare'];
+        $iptvVendors = ['Opplex', 'starshare'];
 
         return view('pages.checkout.configure', compact(
             'devices',

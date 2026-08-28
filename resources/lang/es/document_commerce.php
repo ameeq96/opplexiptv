@@ -180,7 +180,7 @@ return [
             'heading' => 'Precios de suscripción IPTV: planes sencillos y sin sorpresas',
             'paragraphs' => [
                 'Elige la duración del plan, paga una vez y empieza a ver contenido. Todos los planes de Opplex te ofrecen los mismos 12,000+ canales en directo, 50,000+ películas y calidad 4K. Los planes más largos cuestan menos al mes; esa es la única diferencia.',
-                'Starshare también está disponible para quienes quieran una selección de canales diferente por un precio ligeramente superior. Ambos utilizan el mismo proceso de configuración y las mismas aplicaciones.',
+                'Filex también está disponible para quienes quieran una selección de canales diferente por un precio ligeramente superior. Ambos utilizan el mismo proceso de configuración y las mismas aplicaciones.',
                 '¿No sabes qué plan te conviene? Empieza por el mensual. Siempre puedes elegir el anual más adelante.',
             ],
         ],
@@ -235,7 +235,7 @@ return [
             'items' => [
                 [
                     'question' => '¿Cuánto cuesta Opplex?',
-                    'answer' => 'El plan mensual cuesta $2.99. Tres meses cuestan $7.99. El plan semestral cuesta $14.99. El anual cuesta $23.99. Los planes Starshare parten de $4.50 al mes. Todos los precios aparecen en la tabla anterior.',
+                    'answer' => 'El plan mensual cuesta $2.99. Tres meses cuestan $7.99. El plan semestral cuesta $14.99. El anual cuesta $23.99. Los planes Filex parten de $4.50 al mes. Todos los precios aparecen en la tabla anterior.',
                 ],
                 [
                     'question' => '¿Cambian los precios al renovar?',
@@ -272,7 +272,7 @@ return [
             'heading' => 'Panel de revendedor IPTV: crea tu propio negocio IPTV con Opplex',
             'paragraphs' => [
                 'Tanto si quieres vender a cinco personas como a quinientas, el panel de revendedor de Opplex te ofrece todo lo necesario. Compra créditos al por mayor, activa suscripciones para tus clientes directamente desde tu panel de control y establece tus propios precios. No necesitas conocimientos técnicos. Sin contratos.',
-                'Opplex y Starshare están disponibles desde el mismo panel. Elige uno u ofrece ambos; tú decides.',
+                'Opplex y Filex están disponibles desde el mismo panel. Elige uno u ofrece ambos; tú decides.',
             ],
             'primary_cta' => 'Ver paquetes para revendedores',
             'secondary_cta' => 'Pregúntanos por WhatsApp',
@@ -313,7 +313,7 @@ return [
                 ],
                 [
                     'title' => 'Dos proveedores, un solo panel',
-                    'description' => 'Gestiona las suscripciones de Opplex y Starshare desde el mismo lugar. Si un cliente quiere comparar ambas o cambiar más adelante, puedes hacerlo sin saltar de una plataforma a otra.',
+                    'description' => 'Gestiona las suscripciones de Opplex y Filex desde el mismo lugar. Si un cliente quiere comparar ambas o cambiar más adelante, puedes hacerlo sin saltar de una plataforma a otra.',
                 ],
                 [
                     'title' => 'Asistencia prioritaria por WhatsApp:',
@@ -351,8 +351,8 @@ return [
                     'answer' => 'Compra un paquete de créditos para revendedores en esta página. Cuando se procese el pago, se configurará tu acceso al panel y podrás empezar a activar líneas de clientes de inmediato.',
                 ],
                 [
-                    'question' => '¿Cuál es la diferencia entre los créditos de revendedor de Opplex y Starshare?',
-                    'answer' => 'Los créditos de Opplex se utilizan para activar suscripciones a Opplex. Los créditos de Starshare sirven para Starshare, que ofrece una selección de canales diferente a un precio superior. Ambos funcionan mediante el mismo panel; puedes ofrecer uno o ambos a tus clientes.',
+                    'question' => '¿Cuál es la diferencia entre los créditos de revendedor de Opplex y Filex?',
+                    'answer' => 'Los créditos de Opplex se utilizan para activar suscripciones a Opplex. Los créditos de Filex sirven para Filex, que ofrece una selección de canales diferente a un precio superior. Ambos funcionan mediante el mismo panel; puedes ofrecer uno o ambos a tus clientes.',
                 ],
                 [
                     'question' => '¿Puedo ofrecer pruebas sin gastar créditos?',

@@ -39,7 +39,7 @@
               <option value="6 Months Opplex IPTV Account">6 Months</option>
               <option value="12 Months Opplex IPTV Account">12 Months</option>
             </optgroup>
-            <optgroup label="Starshare">
+            <optgroup label="Filex">
               <option value="1 Month Starshare Account">1 Month</option>
               <option value="3 Months Starshare Account">3 Months</option>
               <option value="6 Months Starshare Account">6 Months</option>

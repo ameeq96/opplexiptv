@@ -165,7 +165,7 @@
                             <td><input type="checkbox" name="order_ids[]" value="{{ $order->id }}"></td>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $order->user->name ?? 'N/A' }}</td>
-                            <td>{{ $order->custom_package ? $order->custom_package : $order->package }}</td>
+                            <td>{{ $order->custom_package ? $order->custom_package : ($order->package === 'starshare' ? 'Filex' : $order->package) }}</td>
                             <td>{{ $order->credits }}</td>
                             <td>
                                 @if ($order->expiry_date)
@@ -231,8 +231,9 @@
                                     // NOTE: Phone ko international format me rakhna best (e.g., 447...).
                                     // $message me rawurlencode use kiya hai
                                     $custName = $order->user->name ?? 'Customer';
+                                    $packageLabel = $order->package === 'starshare' ? 'Filex' : $order->package;
                                     $message = rawurlencode(
-                                        "Hello {$custName}, your IPTV reseller order for package '{$order->package}' is now " .
+                                        "Hello {$custName}, your IPTV reseller order for package '{$packageLabel}' is now " .
                                             strtoupper($order->status) .
                                             '.',
                                     );

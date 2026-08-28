@@ -180,7 +180,7 @@ return [
             'heading' => 'Tarifs des abonnements IPTV : des formules simples, sans surprise',
             'paragraphs' => [
                 'Choisissez la durée de votre formule, payez une fois et commencez à regarder. Chaque formule Opplex vous donne accès aux mêmes 12,000+ chaînes en direct, 50,000+ films et à la qualité 4K. Les formules plus longues coûtent moins cher par mois ; c’est la seule différence.',
-                'Starshare est également disponible pour les spectateurs qui souhaitent une sélection de chaînes différente, à un tarif légèrement supérieur. Les deux utilisent le même processus de configuration et les mêmes applications.',
+                'Filex est également disponible pour les spectateurs qui souhaitent une sélection de chaînes différente, à un tarif légèrement supérieur. Les deux utilisent le même processus de configuration et les mêmes applications.',
                 'Vous ne savez pas quelle formule vous convient ? Commencez par la formule mensuelle. Vous pourrez toujours passer à l’année par la suite.',
             ],
         ],
@@ -235,7 +235,7 @@ return [
             'items' => [
                 [
                     'question' => 'Combien coûte Opplex ?',
-                    'answer' => 'La formule mensuelle coûte $2.99. Trois mois coûtent $7.99. La formule semestrielle coûte $14.99. La formule annuelle coûte $23.99. Les formules Starshare commencent à $4.50 par mois. Tous les prix figurent dans le tableau ci-dessus.',
+                    'answer' => 'La formule mensuelle coûte $2.99. Trois mois coûtent $7.99. La formule semestrielle coûte $14.99. La formule annuelle coûte $23.99. Les formules Filex commencent à $4.50 par mois. Tous les prix figurent dans le tableau ci-dessus.',
                 ],
                 [
                     'question' => 'Les prix changent-ils au renouvellement ?',
@@ -272,7 +272,7 @@ return [
             'heading' => 'Panneau revendeur IPTV : créez votre propre activité IPTV avec Opplex',
             'paragraphs' => [
                 'Que vous souhaitiez vendre à cinq personnes ou à cinq cents, le panneau revendeur Opplex vous fournit tout ce qu’il vous faut. Achetez des crédits en gros, activez les abonnements de vos clients directement depuis votre tableau de bord et fixez vos propres prix. Aucune compétence technique requise. Aucun contrat.',
-                'Opplex et Starshare sont tous deux disponibles dans le même panneau. Choisissez-en un ou proposez les deux : c’est vous qui décidez.',
+                'Opplex et Filex sont tous deux disponibles dans le même panneau. Choisissez-en un ou proposez les deux : c’est vous qui décidez.',
             ],
             'primary_cta' => 'Voir les forfaits revendeurs',
             'secondary_cta' => 'Posez-nous vos questions sur WhatsApp',
@@ -313,7 +313,7 @@ return [
                 ],
                 [
                     'title' => 'Deux fournisseurs, un seul panneau',
-                    'description' => 'Gérez les abonnements Opplex et Starshare au même endroit. Si un client souhaite comparer les deux ou changer par la suite, vous pouvez vous en occuper sans passer d’une plateforme à l’autre.',
+                    'description' => 'Gérez les abonnements Opplex et Filex au même endroit. Si un client souhaite comparer les deux ou changer par la suite, vous pouvez vous en occuper sans passer d’une plateforme à l’autre.',
                 ],
                 [
                     'title' => 'Assistance WhatsApp prioritaire :',
@@ -351,8 +351,8 @@ return [
                     'answer' => 'Achetez un forfait de crédits revendeur sur cette page. Une fois le paiement effectué, votre accès au panneau est configuré et vous pouvez immédiatement commencer à activer des lignes client.',
                 ],
                 [
-                    'question' => 'Quelle est la différence entre les crédits revendeur Opplex et Starshare ?',
-                    'answer' => 'Les crédits Opplex servent à activer des abonnements Opplex. Les crédits Starshare concernent Starshare, qui propose une sélection de chaînes différente à un tarif supérieur. Les deux fonctionnent sur le même panneau ; vous pouvez proposer l’un ou les deux à vos clients.',
+                    'question' => 'Quelle est la différence entre les crédits revendeur Opplex et Filex ?',
+                    'answer' => 'Les crédits Opplex servent à activer des abonnements Opplex. Les crédits Filex concernent Filex, qui propose une sélection de chaînes différente à un tarif supérieur. Les deux fonctionnent sur le même panneau ; vous pouvez proposer l’un ou les deux à vos clients.',
                 ],
                 [
                     'question' => 'Puis-je proposer des essais sans dépenser de crédits ?',

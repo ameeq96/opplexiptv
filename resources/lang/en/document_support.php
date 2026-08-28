@@ -207,7 +207,7 @@ return [
         'timeline' => [
             'heading' => 'How Opplex Got Here',
             'items' => [
-                ['year' => '2022', 'text' => 'Opplex launches with Opplex and Starshare platforms. First subscribers in Canada and the UK.'],
+                ['year' => '2022', 'text' => 'Opplex launches with Opplex and Filex platforms. First subscribers in Canada and the UK.'],
                 ['year' => '2023', 'text' => 'Server infrastructure expanded for European traffic. Live channel library grows past 10,000 channels.'],
                 ['year' => '2024', 'text' => 'We build and release the Opplex IPTV App and XTV Live, our own players, built specifically for Opplex streams.'],
                 ['year' => '2025', 'text' => 'VOD library crosses 50,000 titles. Multi-language site launches across 10 languages. Reseller panel opens to the public.'],
@@ -230,8 +230,8 @@ return [
                     'answer' => 'Saskatoon, Saskatchewan, Canada. You can reach us at info@opplexiptv.com or on WhatsApp at +1 (639) 390-3194.',
                 ],
                 [
-                    'question' => 'What\'s the difference between Opplex and Starshare?',
-                    'answer' => 'Both are IPTV platforms available through our subscription system. Opplex is our main platform. Starshare is a second provider with its own channel lineup and pricing, available as an alternative through the same panel. You can try both.',
+                    'question' => 'What\'s the difference between Opplex and Filex?',
+                    'answer' => 'Both are IPTV platforms available through our subscription system. Opplex is our main platform. Filex is a second provider with its own channel lineup and pricing, available as an alternative through the same panel. You can try both.',
                 ],
                 [
                     'question' => 'What happens if I have a problem?',

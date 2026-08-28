@@ -110,7 +110,7 @@
                         <label for="package" class="form-label">Package Name</label>
                         <select name="package" id="package" class="form-select" required>
                             <option value="" disabled {{ old('package') ? '' : 'selected' }}>-- Select Package --</option>
-                            <option value="starshare" {{ old('package') == 'starshare' ? 'selected' : '' }}>Starshare</option>
+                            <option value="starshare" {{ old('package') == 'starshare' ? 'selected' : '' }}>Filex</option>
                             <option value="opplex"    {{ old('package') == 'opplex' ? 'selected' : '' }}>Opplex</option>
                             <option value="other"     {{ old('package') == 'other' ? 'selected' : '' }}>Other</option>
                         </select>

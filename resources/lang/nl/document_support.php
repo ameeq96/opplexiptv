@@ -207,7 +207,7 @@ return [
         'timeline' => [
             'heading' => 'Hoe Opplex hier is gekomen',
             'items' => [
-                ['year' => '2022', 'text' => 'Opplex wordt gelanceerd met de platforms Opplex en Starshare. De eerste abonnees bevinden zich in Canada en de UK.'],
+                ['year' => '2022', 'text' => 'Opplex wordt gelanceerd met de platforms Opplex en Filex. De eerste abonnees bevinden zich in Canada en de UK.'],
                 ['year' => '2023', 'text' => 'De serverinfrastructuur wordt uitgebreid voor Europees verkeer. De bibliotheek met livekanalen groeit tot meer dan 10,000 kanalen.'],
                 ['year' => '2024', 'text' => 'We bouwen en lanceren de Opplex IPTV App en XTV Live, onze eigen spelers die speciaal voor Opplex-streams zijn ontwikkeld.'],
                 ['year' => '2025', 'text' => 'De VOD-bibliotheek overschrijdt 50,000 titels. De meertalige site wordt in 10 talen gelanceerd. Het resellerpaneel wordt toegankelijk voor het publiek.'],
@@ -230,8 +230,8 @@ return [
                     'answer' => 'Saskatoon, Saskatchewan, Canada. Je kunt ons bereiken via info@opplexiptv.com of WhatsApp op +1 (639) 390-3194.',
                 ],
                 [
-                    'question' => 'Wat is het verschil tussen Opplex en Starshare?',
-                    'answer' => 'Beide zijn IPTV-platforms die via ons abonnementssysteem beschikbaar zijn. Opplex is ons hoofdplatform. Starshare is een tweede aanbieder met een eigen zenderaanbod en eigen prijzen, beschikbaar als alternatief via hetzelfde paneel. Je kunt beide proberen.',
+                    'question' => 'Wat is het verschil tussen Opplex en Filex?',
+                    'answer' => 'Beide zijn IPTV-platforms die via ons abonnementssysteem beschikbaar zijn. Opplex is ons hoofdplatform. Filex is een tweede aanbieder met een eigen zenderaanbod en eigen prijzen, beschikbaar als alternatief via hetzelfde paneel. Je kunt beide proberen.',
                 ],
                 [
                     'question' => 'Wat gebeurt er als ik een probleem heb?',

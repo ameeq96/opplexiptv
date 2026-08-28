@@ -6,6 +6,7 @@
     $user = $order->user;
     $payment = $order->payment_method ?: ($order->custom_payment_method ?? 'N/A');
     $packageName = $order->package === 'other' ? ($order->custom_package ?? 'Custom') : $order->package;
+    $packageName = str_ireplace('starshare', 'Filex', $packageName);
     $phoneRaw   = $user?->phone ?? '';
     $phoneClean = preg_replace('/\D+/', '', $phoneRaw);
     $waText     = rawurlencode("Hello {$user?->name}, about order #{$order->id}");

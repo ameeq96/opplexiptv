@@ -24,7 +24,7 @@
                 <select name="vendor" class="form-select">
                     <option value="">All Vendors</option>
                     <option value="opplex" @selected($vendor === 'opplex')>Opplex</option>
-                    <option value="starshare" @selected($vendor === 'starshare')>Starshare</option>
+                    <option value="starshare" @selected($vendor === 'starshare')>Filex</option>
                 </select>
             </div>
             <div class="col-lg-2 d-grid">
@@ -57,7 +57,7 @@
                         <tr>
                             <td class="fw-semibold">{{ $p->title }}</td>
                             <td>{{ $p->type }}</td>
-                            <td>{{ $p->vendor }}</td>
+                            <td>{{ $p->vendor === 'starshare' ? 'Filex' : $p->vendor }}</td>
                             <td>{{ $p->display_price }}</td>
                             <td>{{ $p->sort_order }}</td>
                             <td>

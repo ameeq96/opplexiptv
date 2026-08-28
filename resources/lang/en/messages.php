@@ -11,6 +11,9 @@ return [
 
   'pricing_heading' => 'Get Best IPTV Plans - 4K Streaming, Smart Player, Free Trial',
   'show_reseller_packages' => 'Show IPTV Reseller Packages with Free Trial',
+  'final_sale_no_refunds' => 'Final sale - no refunds:',
+  'final_sale_confirmed' => 'Once the price is agreed and your order is confirmed, the purchase is final and non-refundable.',
+  'final_sale_verify_before_payment' => 'Please verify your plan and pricing before making payment.',
   'credit' => 'Credit',
   '1_month' => '1 Month',
   '6_months' => '6 Months',
