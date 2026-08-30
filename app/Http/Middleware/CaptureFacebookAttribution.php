@@ -16,6 +16,10 @@ class CaptureFacebookAttribution
      */
     public function handle(Request $request, Closure $next)
     {
+        if (!$this->hasMarketingConsent($request)) {
+            return $next($request);
+        }
+
         $fbclid = $request->query('fbclid');
         $utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
         $hasUtm = false;
@@ -57,5 +61,23 @@ class CaptureFacebookAttribution
         }
 
         return $next($request);
+    }
+
+    private function hasMarketingConsent(Request $request): bool
+    {
+        foreach (explode(';', (string) $request->headers->get('cookie')) as $cookie) {
+            [$key, $value] = array_pad(explode('=', trim($cookie), 2), 2, null);
+            if ($key !== 'opplex_consent' || $value === null) {
+                continue;
+            }
+
+            $preference = json_decode(urldecode($value), true);
+
+            return is_array($preference)
+                && ($preference['marketing'] ?? false) === true
+                && ($preference['version'] ?? null) === config('services.marketing.tracking_consent_version');
+        }
+
+        return false;
     }
 }

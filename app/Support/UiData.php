@@ -51,7 +51,7 @@ class UiData
 
         $a = 0;
         $b = 0;
-        if ($this->routeIs($routeName, ['contact', 'buynow', 'buynowpanel'])) {
+        if ($this->routeIs($routeName, ['contact', 'buynow', 'buynowpanel', 'checkout'])) {
             ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
         }
 
@@ -739,7 +739,8 @@ class UiData
             ->where('active', true)
             ->whereIn('type', ['iptv', 'reseller'])
             ->whereIn('vendor', ['opplex', 'starshare'])
-            ->orderByRaw("FIELD(vendor,'opplex','starshare')")
+            ->where('price_amount', '>', 0)
+            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
             ->orderByRaw(
                 "CASE WHEN type = 'reseller'
                     THEN COALESCE(sort_order, credits, id)

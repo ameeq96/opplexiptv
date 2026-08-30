@@ -10,6 +10,10 @@ class TrackingController extends Controller
 {
     public function whatsappTrial(Request $request)
     {
+        if (!$this->hasMarketingConsent($request)) {
+            return response()->json(['ok' => true, 'tracked' => false], 202);
+        }
+
         $data = $request->validate([
             'event_id' => ['required', 'uuid'],
             'destination' => ['required', 'string', 'max:512'],
@@ -21,16 +25,32 @@ class TrackingController extends Controller
         $eventId = $data['event_id'];
         $dest = $data['destination'];
         $page = $data['page'] ?? null;
-        $fbp = ($data['fbp'] ?? null) ?: $request->cookie('_fbp');
-        $fbc = ($data['fbc'] ?? null) ?: $request->cookie('_fbc');
+        $normalize = static function ($value, int $maxLength): ?string {
+            if (!is_string($value) && !is_numeric($value)) {
+                return null;
+            }
 
-        $utm = ['utm_source' => null, 'utm_medium' => null, 'utm_campaign' => null, 'utm_term' => null, 'utm_content' => null];
+            $value = trim((string) $value);
+            return $value === '' ? null : mb_substr($value, 0, $maxLength);
+        };
+
+        $fbp = $normalize(($data['fbp'] ?? null) ?: $request->cookie('_fbp'), 128);
+        $fbc = $normalize(($data['fbc'] ?? null) ?: $request->cookie('_fbc'), 256);
+
+        $utm = [
+            'utm_source' => $normalize($request->session()->get('fb.utm_source'), 128),
+            'utm_medium' => $normalize($request->session()->get('fb.utm_medium'), 128),
+            'utm_campaign' => $normalize($request->session()->get('fb.utm_campaign'), 128),
+            'utm_term' => $normalize($request->session()->get('fb.utm_term'), 128),
+            'utm_content' => $normalize($request->session()->get('fb.utm_content'), 128),
+        ];
         if ($page) {
             $qs = parse_url($page, PHP_URL_QUERY);
             if ($qs) {
                 parse_str($qs, $out);
                 foreach ($utm as $k => $v) {
-                    if (!empty($out[$k])) $utm[$k] = $out[$k];
+                    $pageValue = $normalize($out[$k] ?? null, 128);
+                    if ($pageValue !== null) $utm[$k] = $pageValue;
                 }
             }
         }
@@ -79,5 +99,21 @@ class TrackingController extends Controller
             'ok' => true,
             'duplicate' => !$click->wasRecentlyCreated,
         ], 202);
+    }
+
+    private function hasMarketingConsent(Request $request): bool
+    {
+        foreach (explode(';', (string) $request->headers->get('cookie')) as $cookie) {
+            [$key, $value] = array_pad(explode('=', trim($cookie), 2), 2, null);
+            if ($key === 'opplex_consent' && $value !== null) {
+                $preference = json_decode(urldecode($value), true);
+
+                return is_array($preference)
+                    && ($preference['marketing'] ?? false) === true
+                    && ($preference['version'] ?? null) === config('services.marketing.tracking_consent_version');
+            }
+        }
+
+        return false;
     }
 }

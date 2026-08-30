@@ -6,6 +6,7 @@
 @php
     // Session se success message (checkoutStep2 se aa raha hai)
     $successMessage = session('success');
+    $orderSummary = session('order_summary');
 @endphp
 
 <div class="thank-wrap">
@@ -20,7 +21,7 @@
     </div>
 
     <div class="thank-pill">
-      <i class="fa fa-shield-alt"></i> {{ __('messages.thankyou_page.badge_text') }}
+      <i class="fa fa-shield"></i> {{ __('messages.thankyou_page.badge_text') }}
     </div>
 
     <h1 class="thank-title">{{ __('messages.thankyou_page.heading') }}</h1>
@@ -36,6 +37,20 @@
     @endif
 
     <div class="thank-order-box">
+      @if($orderSummary)
+        <div class="thank-order-row">
+          <span>{{ __('interface.email.checkout.order_number') }}</span>
+          <span><strong>#{{ $orderSummary['id'] }}</strong></span>
+        </div>
+        <div class="thank-order-row">
+          <span>{{ __('interface.email.checkout.package') }}</span>
+          <span><strong>{{ $orderSummary['package'] }}</strong></span>
+        </div>
+        <div class="thank-order-row">
+          <span>{{ __('messages.checkout_total_label') }}</span>
+          <span><strong>${{ number_format((float) $orderSummary['total'], 2) }}</strong></span>
+        </div>
+      @endif
       <div class="thank-order-row">
         <span>{{ __('messages.thankyou_page.order_status') }}</span>
         <span><strong>{{ __('messages.thankyou_page.pending') }}</strong></span>
@@ -56,12 +71,16 @@
     </div>
 
     <div class="thank-actions">
-      <a href="{{ route('home') }}" class="thank-btn-primary">
-        <i class="fa fa-home"></i> {{ __('messages.thankyou_page.home_btn') }}
+      <a href="{{ route('activate', ['device' => $orderSummary['device'] ?? null]) }}" class="thank-btn-primary">
+        <i class="fa fa-play-circle"></i> {{ __('document_ui.footer.activate') }}
       </a>
 
       <a href="{{ route('contact') ?? '#' }}" class="thank-btn-ghost">
-        <i class="fa fa-headset"></i> {{ __('messages.thankyou_page.support_btn') }}
+        <i class="fa fa-life-ring"></i> {{ __('messages.thankyou_page.support_btn') }}
+      </a>
+
+      <a href="{{ route('home') }}" class="thank-btn-ghost">
+        <i class="fa fa-home"></i> {{ __('messages.thankyou_page.home_btn') }}
       </a>
     </div>
 
@@ -70,5 +89,28 @@
     </div>
   </div>
 </div>
-@endsection
 
+@if($orderSummary)
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.trackMarketingEvent !== 'function') return;
+      if (typeof window.__loadConversionTracking === 'function') {
+        window.__loadConversionTracking();
+      }
+      window.trackMarketingEvent('order_submitted', {
+        transaction_id: @json((string) $orderSummary['id']),
+        currency: @json($orderSummary['currency']),
+        value: @json((float) $orderSummary['total']),
+        items: [{
+          item_id: @json((string) $orderSummary['package_id']),
+          item_name: @json($orderSummary['package']),
+          item_brand: @json($orderSummary['vendor']),
+          item_category: @json($orderSummary['package_type']),
+          price: @json((float) $orderSummary['total']),
+          quantity: 1
+        }]
+      }, 'Lead');
+    });
+  </script>
+@endif
+@endsection

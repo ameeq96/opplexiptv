@@ -41,6 +41,7 @@
                         <th>Text</th>
                         <th>Sort</th>
                         <th>Status</th>
+                        <th>Proof</th>
                         <th class="text-end">Actions</th>
                     </tr>
                 </thead>
@@ -54,6 +55,11 @@
                                 @else
                                     <div class="badge-soft gray">N/A</div>
                                 @endif
+                            </td>
+                            <td>
+                                <span class="badge-soft {{ $t->is_verified && $t->publication_consented_at ? 'success' : 'gray' }}">
+                                    {{ $t->is_verified && $t->publication_consented_at ? 'Verified' : 'Not verified' }}
+                                </span>
                             </td>
                             <td class="fw-semibold">{{ $t->author_name }}</td>
                             <td class="text-muted small">{{ \Illuminate\Support\Str::limit($t->text, 90) }}</td>
@@ -75,7 +81,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="6" class="text-center text-muted p-4">
+                            <td colspan="7" class="text-center text-muted p-4">
                                 No testimonials found. <a href="{{ route('admin.testimonials.create') }}">Add one</a>.
                             </td>
                         </tr>

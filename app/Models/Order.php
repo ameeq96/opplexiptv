@@ -14,11 +14,36 @@ class Order extends Model
         'messaged_at' => 'datetime',
         'buying_date' => 'datetime',
         'expiry_date' => 'datetime',
+        'paid_at' => 'datetime',
+        'paid_amount' => 'decimal:2',
+        'analytics_consented_at' => 'datetime',
+        'ga_purchase_processing_at' => 'datetime',
+        'ga_purchase_sent_at' => 'datetime',
     ];
 
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function device()
+    {
+        return $this->belongsTo(Device::class);
+    }
+
+    public function referral()
+    {
+        return $this->hasOne(Referral::class, 'source_order_id');
+    }
+
+    public function referredBy()
+    {
+        return $this->hasOne(Referral::class, 'referred_order_id');
+    }
+
+    public function marketingDeliveries()
+    {
+        return $this->hasMany(MarketingDelivery::class);
     }
 
     public function pictures()

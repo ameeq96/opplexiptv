@@ -2,8 +2,13 @@
 @section('title', __('messages.checkout_step_title'))
 
 @section('content')
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
+@php
+  $requestedVendor = strtolower((string) request('iptv_vendor', request('vendor', '')));
+  $requestedVendor = in_array($requestedVendor, ['filex', 'starshare'], true) ? 'starshare' : $requestedVendor;
+  $requestedType = request('package_type', request('ptype', 'iptv'));
+  $requestedType = $requestedType === 'reseller' ? 'reseller' : 'iptv';
+  $requestedPrice = request('pkg_price', request('plan_price', request('price', '')));
+@endphp
 <div class="config-wrap py-5">
   <div class="container">
 
@@ -16,23 +21,24 @@
       </h2>
     </div>
 
-    <form action="{{ route('checkout') }}" method="get" id="configForm">
+    <form action="{{ route('checkout') }}" method="get" id="configForm" autocomplete="off">
       {{-- Hidden values sent to checkout --}}
-      <input type="hidden" name="device"       id="deviceInput">
-      <input type="hidden" name="device_id"    id="deviceIdInput">
-      <input type="hidden" name="package_id"   id="packageIdInput">
+      <input type="hidden" name="device"       id="deviceInput" value="{{ request('device') }}">
+      <input type="hidden" name="device_id"    id="deviceIdInput" value="{{ request('device_id') }}">
+      <input type="hidden" name="package_id"   id="packageIdInput" value="{{ request('package_id') }}">
 
       {{-- Store canonical vendor for logic + keep label for display in plan_name --}}
-      <input type="hidden" name="iptv_vendor"  id="iptvVendorInput" data-label="">
+      <input type="hidden" name="iptv_vendor"  id="iptvVendorInput" value="{{ $requestedVendor }}" data-label="">
 
       {{-- Combined summary (what checkout expects) --}}
-      <input type="hidden" name="plan_name"    id="planNameInput">
-      <input type="hidden" name="plan_price"   id="planPriceInput">
+      <input type="hidden" name="plan_name"    id="planNameInput" value="{{ request('plan_name', request('plan')) }}">
+      <input type="hidden" name="plan_price"   id="planPriceInput" value="{{ request('plan_price', request('price')) }}">
 
       {{-- Separate picks (with names so they reach checkout step) --}}
-      <input type="hidden" name="connection_price" id="connectionPriceInput">
-      <input type="hidden" name="pkg_price"        id="pkgPriceInput">
-      <input type="hidden" name="package_type"     id="packageTypeInput"> {{-- iptv | reseller --}}
+      <input type="hidden" name="connection_price" id="connectionPriceInput" value="{{ request('connection_price', $requestedType === 'iptv' && $requestedVendor !== '' ? '0.00' : '') }}">
+      <input type="hidden" name="connection_name"  id="connectionNameInput" value="{{ request('connection_name', $requestedType === 'iptv' && $requestedVendor !== '' ? __('messages.checkout_one_connection_label') : '') }}">
+      <input type="hidden" name="pkg_price"        id="pkgPriceInput" value="{{ $requestedPrice }}">
+      <input type="hidden" name="package_type"     id="packageTypeInput" value="{{ request()->filled('package_id') ? $requestedType : '' }}"> {{-- iptv | reseller --}}
 
       {{-- 1) Device --}}
       <div class="config-card p-4 mb-4" id="deviceSection">
@@ -42,10 +48,20 @@
         </div>
         <div class="item-flex">
           @foreach ($devices as $d)
+            @php
+              $deviceIcon = match (strtolower($d->name)) {
+                'smart tv' => 'fa fa-desktop',
+                'firestick' => 'fa fa-fire',
+                'android' => 'fa fa-android',
+                'ios' => 'fa fa-apple',
+                'mag box' => 'fa fa-cube',
+                default => 'fa fa-laptop',
+              };
+            @endphp
             <div class="pick"
                  data-device="{{ $d->name }}"
                  data-device-id="{{ $d->id }}">
-              <div class="ico {{ $d->icon }}"></div>
+              <div class="ico {{ $deviceIcon }}" aria-hidden="true"></div>
               <div>{{ $d->name }}</div>
             </div>
           @endforeach
@@ -63,7 +79,7 @@
           @foreach ($vendors as $v)
             @php $vendorLabel = strtolower($v) === 'starshare' ? 'Filex' : $v; @endphp
             <div class="pick" data-vendor="{{ $v }}" data-label="{{ $vendorLabel }}">
-              <div class="ico bi bi-broadcast-pin"></div>
+              <div class="ico fa fa-signal" aria-hidden="true"></div>
               <div>{{ $vendorLabel }}</div>
               <small>{{ __('messages.checkout_iptv_small') }}</small>
             </div>
@@ -75,21 +91,9 @@
       </div>
 
       @php
-        // 1 connection plan price/name same as existing data
-        $onePlan = null;
-        if(isset($plans)){
-            foreach($plans as $p){
-                if((int)$p->max_devices === 1){
-                    $onePlan = $p;
-                    break;
-                }
-            }
-            if(!$onePlan){
-                $onePlan = $plans[0] ?? null;
-            }
-        }
         $onePlanName  = __('messages.checkout_one_connection_label');
-        $onePlanPrice = isset($onePlan) ? number_format($onePlan->price, 2, '.', '') : '0.00';
+        $onePlanPrice = '0.00';
+        $filexYearlyConnectionPrices = \App\Models\Package::FILEX_YEARLY_CONNECTION_PRICES;
       @endphp
 
       {{-- 3) Connection Plan --}}
@@ -103,38 +107,38 @@
         </div>
 
         <div class="item-flex">
-          {{-- 1 connection â€“ always available, price from DB/old config --}}
+          {{-- One connection is included in the selected subscription price. --}}
           <div class="pick"
                data-kind="connection"
                data-max="1"
                data-yearly="0"
                data-plan="{{ $onePlanName }}"
                data-price="{{ $onePlanPrice }}">
-            <div class="ico bi bi-hdd-network"></div>
+            <div class="ico fa fa-wifi" aria-hidden="true"></div>
             <div>{{ $onePlanName }}</div>
             <small>{{ __('messages.checkout_one_connection_hint') }}</small>
           </div>
 
-          {{-- 2 connections â€“ yearly only, $69.99 --}}
+          {{-- Two connections, yearly only. --}}
           <div class="pick"
                data-kind="connection"
                data-max="2"
                data-yearly="1"
                data-plan="{{ __('messages.checkout_two_connection_label') }}"
-               data-price="69.99">
-            <div class="ico bi bi-hdd-network"></div>
+               data-price="{{ number_format($filexYearlyConnectionPrices[2], 2, '.', '') }}">
+            <div class="ico fa fa-wifi" aria-hidden="true"></div>
             <div>{{ __('messages.checkout_two_connection_label') }}</div>
             <small>{{ __('messages.checkout_two_connection_hint') }}</small>
           </div>
 
-          {{-- 4 connections â€“ yearly only, $139.99 --}}
+          {{-- Four connections, yearly only. --}}
           <div class="pick"
                data-kind="connection"
                data-max="4"
                data-yearly="1"
                data-plan="{{ __('messages.checkout_four_connection_label') }}"
-               data-price="139.99">
-            <div class="ico bi bi-hdd-network"></div>
+               data-price="{{ number_format($filexYearlyConnectionPrices[4], 2, '.', '') }}">
+            <div class="ico fa fa-wifi" aria-hidden="true"></div>
             <div>{{ __('messages.checkout_four_connection_label') }}</div>
             <small>{{ __('messages.checkout_four_connection_hint') }}</small>
           </div>
@@ -142,7 +146,7 @@
       </div>
 
       {{-- 4) Packages + Toggle --}}
-      <div class="config-card p-4 mb-5">
+      <div class="config-card p-4 mb-5" id="packageSection">
         <div class="d-flex align-items-center justify-content-between mb-3">
           <div class="d-flex align-items-center">
             <div class="head-num">4</div>
@@ -169,9 +173,10 @@
                    data-package-id="{{ $p['id'] ?? '' }}"
                    data-vendor="{{ strtolower($p['vendor']) }}"
                    data-plan="{{ $p['title'] }}"
+                   data-duration="{{ $p['duration_months'] }}"
                    data-unit="{{ strtolower($p['unit']) }}"
                    data-price="{{ number_format($p['price'], 2, '.', '') }}">
-                <div class="pkg-badge {{ $p['icon'] }}"></div>
+                <div class="pkg-badge fa fa-film" aria-hidden="true"></div>
                 <div class="pkg-title">{{ $p['title'] }}</div>
                 @if (($p['old'] ?? 0) > 0)
                   <div class="pkg-old">${{ number_format($p['old'], 2) }}</div>
@@ -197,7 +202,7 @@
                    data-plan="{{ $p['title'] }}"
                    data-unit="{{ strtolower($p['unit']) }}"
                    data-price="{{ number_format($p['price'], 2, '.', '') }}">
-                <div class="pkg-badge {{ $p['icon'] }}"></div>
+                <div class="pkg-badge fa fa-line-chart" aria-hidden="true"></div>
                 <div class="pkg-title">{{ $p['title'] }}</div>
                 <div class="pkg-old">${{ number_format($p['old'], 2) }}</div>
                 <div>
@@ -211,8 +216,24 @@
 
       </div>
 
+      <aside class="config-order-summary mb-3" id="configOrderSummary" aria-live="polite">
+        <div>
+          <small>{{ __('messages.checkout_your_order') }}</small>
+          <strong id="configSummaryPlan">{{ __('messages.checkout_selected_package_fallback') }}</strong>
+          <span id="configSummaryMeta"></span>
+          <span><i class="fa fa-clock-o" aria-hidden="true"></i> {{ __('messages.thankyou_page.delivery_text') }}</span>
+          <button type="button" class="config-order-summary__edit" id="configChangePlan" hidden>
+            {{ __('messages.checkout_edit_options') }}
+          </button>
+        </div>
+        <div class="config-order-summary__total">
+          <small>{{ __('messages.checkout_total_label') }}</small>
+          <strong id="configSummaryTotal">$0.00</strong>
+        </div>
+      </aside>
+
       <button type="submit" class="cta" id="continueBtn" disabled>
-        <span class="bi bi-lock-fill"></span>
+        <span class="fa fa-lock" aria-hidden="true"></span>
         {{ __('messages.checkout_continue_button') }}
       </button>
     </form>
@@ -234,18 +255,41 @@
   const planPriceInput    = document.getElementById('planPriceInput');
 
   const connectionPriceInp= document.getElementById('connectionPriceInput');
+  const connectionNameInp = document.getElementById('connectionNameInput');
   const pkgPriceInp       = document.getElementById('pkgPriceInput');
   const packageType       = document.getElementById('packageTypeInput');
   const btn               = document.getElementById('continueBtn');
 
   const vendorSection     = document.getElementById('vendorSection');
   const connectionSection = document.getElementById('connectionSection');
+  const deviceSection     = document.getElementById('deviceSection');
+  const packageSection    = document.getElementById('packageSection');
+  const connectionStepNum = connectionSection.querySelector('.head-num');
+  const connectionLockMsg = document.getElementById('lockMsg');
 
   const iptvWrap          = document.getElementById('iptvWrap');
   const resellerWrap      = document.getElementById('resellerWrap');
   const pkgToggle         = document.getElementById('pkgToggle');
+  const summaryPlan       = document.getElementById('configSummaryPlan');
+  const summaryMeta       = document.getElementById('configSummaryMeta');
+  const summaryTotal      = document.getElementById('configSummaryTotal');
+  const changePlanBtn     = document.getElementById('configChangePlan');
+  const currency          = @json(config('services.app.default_currency', 'USD'));
 
   let isYearlyPackage = false;
+
+  function setPreselectedMode(enabled){
+    vendorSection.hidden = enabled;
+    packageSection.hidden = enabled;
+    changePlanBtn.hidden = !enabled;
+    connectionStepNum.textContent = enabled ? '2' : '3';
+    connectionLockMsg.hidden = enabled;
+  }
+
+  changePlanBtn.addEventListener('click', function(){
+    setPreselectedMode(false);
+    packageSection.scrollIntoView({behavior:'smooth', block:'start'});
+  });
 
   function lockConnection(lock=true){ connectionSection.classList.toggle('locked', lock); }
   function toNumber(v){ const n = parseFloat(v); return isNaN(n)?0:n; }
@@ -270,6 +314,7 @@
       if (!show && card.classList.contains('active')) {
         card.classList.remove('active');
         connectionPriceInp.value = '';
+        connectionNameInp.value = '';
         updateSummary();
       }
     });
@@ -316,14 +361,27 @@
     const vendorLabel = vendorInput.dataset.label || vendorInput.value || '';
     const connPrice   = toNumber(connectionPriceInp.value);
     const pkgPrice    = toNumber(pkgPriceInp.value);
+    const isReseller = packageType.value === 'reseller';
+    const activeConnection = isReseller
+      ? null
+      : document.querySelector('[data-kind="connection"].active');
+    const connectionCount = activeConnection
+      ? Number(activeConnection.getAttribute('data-max') || '1')
+      : 1;
 
     const parts = [];
     if (vendorLabel && pkgPriceInp.value) parts.push(`${vendorLabel} - ${findActivePlanText()}`);
     else if (pkgPriceInp.value) parts.push(findActivePlanText());
 
-    const total = connPrice + pkgPrice;
+    const total = connectionCount > 1 ? connPrice : pkgPrice;
     planNameInput.value  = parts.join(' + ');
     planPriceInput.value = total.toFixed(2);
+
+    summaryPlan.textContent = parts.join(' + ') || @json(__('messages.checkout_selected_package_fallback'));
+    summaryMeta.textContent = !isReseller && connectionNameInp.value
+      ? `${vendorLabel ? vendorLabel + ' | ' : ''}${connectionNameInp.value}`
+      : vendorLabel;
+    summaryTotal.textContent = `${currency === 'USD' ? '$' : currency + ' '}${total.toFixed(2)}`;
 
     enableIfReady();
   }
@@ -341,7 +399,7 @@
     const kind        = packageType.value;
     let ok;
     if (kind === 'reseller') {
-      ok = hasDevice && hasPackage;
+      ok = hasPackage;
     } else {
       ok = hasDevice && hasVendor && hasConn && hasPackage;
     }
@@ -350,8 +408,10 @@
 
   // set yearly flag based on selected package card
   function setYearlyFlagFromCard(card){
+    const duration = Number(card.getAttribute('data-duration') || '0');
     const unit = (card.getAttribute('data-unit') || '').toLowerCase();
     isYearlyPackage =
+      duration === 12 ||
       unit.includes('year') ||
       unit.includes('12month') ||
       unit.includes('12-month') ||
@@ -373,7 +433,14 @@
       document.querySelectorAll('[data-kind="connection"]').forEach(x=>x.classList.remove('active'));
       card.classList.add('active');
       connectionPriceInp.value = price;
+      connectionNameInp.value = nice(card.getAttribute('data-plan'));
       updateSummary();
+      if (typeof window.trackMarketingEvent === 'function') {
+        window.trackMarketingEvent('select_content', {
+          content_type: 'connection',
+          item_id: card.getAttribute('data-max') || '1'
+        });
+      }
       return;
     }
 
@@ -390,6 +457,19 @@
       if (packageIdInput) packageIdInput.value = card.getAttribute('data-package-id') || '';
       setYearlyFlagFromCard(card);
       updateSummary();
+      if (typeof window.trackMarketingEvent === 'function') {
+        window.trackMarketingEvent('select_item', {
+          item_list_id: 'configure',
+          items: [{
+            item_id: card.getAttribute('data-package-id') || card.getAttribute('data-plan'),
+            item_name: card.getAttribute('data-plan') || '',
+            item_brand: vendorInput.dataset.label || vendorInput.value,
+            item_category: 'iptv',
+            price: toNumber(price),
+            quantity: 1
+          }]
+        });
+      }
       return;
     }
 
@@ -401,26 +481,24 @@
       if (packageIdInput) packageIdInput.value = card.getAttribute('data-package-id') || '';
       setYearlyFlagFromCard(card);
       updateSummary();
+      if (typeof window.trackMarketingEvent === 'function') {
+        window.trackMarketingEvent('select_item', {
+          item_list_id: 'configure',
+          items: [{
+            item_id: card.getAttribute('data-package-id') || card.getAttribute('data-plan'),
+            item_name: card.getAttribute('data-plan') || '',
+            item_brand: vendorInput.dataset.label || vendorInput.value,
+            item_category: 'reseller',
+            price: toNumber(price),
+            quantity: 1
+          }]
+        });
+      }
       return;
     }
   }
 
-  // ---------- DEFAULT SELECTION HELPERS ----------
-  function defaultSelectDevice(){
-    if (deviceInput.value) return;
-    const all = Array.from(document.querySelectorAll('[data-device]'));
-    if (!all.length) return;
-
-    let target = all.find(c => canon(c.getAttribute('data-device')).includes('android'));
-    if (!target) target = all[0];
-
-    clearGroup('[data-device]');
-    target.classList.add('active');
-    deviceInput.value = target.getAttribute('data-device') || '';
-    if (deviceIdInput) deviceIdInput.value = target.getAttribute('data-device-id') || '';
-    enableIfReady();
-  }
-
+  // ---------- DEFAULT SELECTION HELPER ----------
   function defaultSelectConnection(){
     if (connectionPriceInp.value) return;
     const cards = Array.from(document.querySelectorAll('[data-kind="connection"]'));
@@ -436,6 +514,7 @@
     document.querySelectorAll('[data-kind="connection"]').forEach(x=>x.classList.remove('active'));
     target.classList.add('active');
     connectionPriceInp.value = target.getAttribute('data-price') || '0';
+    connectionNameInp.value = nice(target.getAttribute('data-plan'));
     updateSummary();
   }
 
@@ -447,6 +526,12 @@
       deviceInput.value = c.getAttribute('data-device') || '';
       if (deviceIdInput) deviceIdInput.value = c.getAttribute('data-device-id') || '';
       enableIfReady();
+      if (typeof window.trackMarketingEvent === 'function') {
+        window.trackMarketingEvent('select_content', {
+          content_type: 'device',
+          item_id: deviceInput.value
+        });
+      }
     });
   });
 
@@ -473,7 +558,14 @@
       packageType.value  = '';
       if (packageIdInput) packageIdInput.value = '';
 
+      if (resellerWrap.classList.contains('hidden')) defaultSelectConnection();
       updateSummary();
+      if (typeof window.trackMarketingEvent === 'function') {
+        window.trackMarketingEvent('select_content', {
+          content_type: 'iptv_provider',
+          item_id: canonVal === 'starshare' ? 'filex' : canonVal
+        });
+      }
     });
   });
 
@@ -487,14 +579,38 @@
     buttons.forEach(b => b.classList.toggle('active', b.getAttribute('data-tab') === tab));
 
     if(tab === 'iptv'){
+      if (packageType.value === 'reseller') {
+        clearGroup('[data-kind="reseller"]');
+        pkgPriceInp.value = '';
+        packageType.value = '';
+        packageIdInput.value = '';
+      }
       iptvWrap.classList.remove('hidden');
       resellerWrap.classList.add('hidden');
+      deviceSection.hidden = false;
+      connectionSection.hidden = false;
       filterIptvByVendor(vendorInput.value || '');
+      if (vendorInput.value) defaultSelectConnection();
     }else{
+      if (packageType.value === 'iptv') {
+        clearGroup('[data-kind="iptv"]');
+        pkgPriceInp.value = '';
+        packageType.value = '';
+        packageIdInput.value = '';
+      }
       resellerWrap.classList.remove('hidden');
       iptvWrap.classList.add('hidden');
+      deviceSection.hidden = true;
+      connectionSection.hidden = true;
+      clearGroup('[data-device]');
+      deviceInput.value = '';
+      deviceIdInput.value = '';
+      clearGroup('[data-kind="connection"]');
+      connectionPriceInp.value = '';
+      connectionNameInp.value = '';
       filterResellerByVendor(vendorInput.value || '');
     }
+    updateSummary();
     enableIfReady();
   }
   pkgToggle.querySelectorAll('.tg-btn').forEach(btn=>{
@@ -502,13 +618,19 @@
   });
   setPackageTab('iptv');
 
-  // ---------- Deep-link support (pricing â†’ configure) ----------
-  (function () {
+  // ---------- Deep-link support (pricing to configure) ----------
+  function applyDeepLinkSelection() {
     const url     = new URL(window.location.href);
-    const ptype   = url.searchParams.get('ptype');
-    const priceQ  = url.searchParams.get('price');
-    const planQ   = url.searchParams.get('plan');
-    const vendorQ = url.searchParams.get('vendor');
+    const rawType = url.searchParams.get('ptype') || url.searchParams.get('package_type') || 'iptv';
+    const ptype   = rawType === 'package' ? 'iptv' : rawType;
+    const priceQ  = url.searchParams.get('price') || url.searchParams.get('pkg_price');
+    const planQ   = url.searchParams.get('plan') || url.searchParams.get('plan_name');
+    const vendorQ = url.searchParams.get('vendor') || url.searchParams.get('iptv_vendor');
+    const packageIdQ = url.searchParams.get('package_id');
+    const deviceIdQ = url.searchParams.get('device_id');
+    const deviceQ = url.searchParams.get('device');
+    const connectionPriceQ = url.searchParams.get('connection_price');
+    const connectionNameQ = url.searchParams.get('connection_name');
 
     if (ptype === 'reseller') {
       setPackageTab('reseller');
@@ -517,6 +639,9 @@
     }
 
     let vendorCan = vendorQ ? canon(vendorQ) : '';
+    if (vendorCan === 'filex' || vendorCan === 'starshare') {
+      vendorCan = 'starshare';
+    }
 
     if (vendorCan) {
       const vBtn = Array.from(document.querySelectorAll('#vendorSection [data-vendor]'))
@@ -546,15 +671,23 @@
       : allCards;
 
     let target = null;
-    if (priceQ) {
+    if (packageIdQ) {
+      target = cards.find(
+        x => String(x.getAttribute('data-package-id') || '') === String(packageIdQ)
+      );
+    }
+    if (!target && priceQ) {
       target = cards.find(
         x => toNumber(x.getAttribute('data-price')) === toNumber(priceQ)
       );
     }
     if (!target && planQ) {
-      target = cards.find(
-        x => canon(x.getAttribute('data-plan')) === canon(planQ)
-      );
+      const expectedPlan = canon(planQ);
+      if (expectedPlan !== '') {
+        target = cards.find(
+          x => canon(x.getAttribute('data-plan')) === expectedPlan
+        );
+      }
     }
 
     if (!vendorCan && target) {
@@ -577,16 +710,55 @@
 
     if (target) {
       selectMonetary(target);
-      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (packageIdQ) setPreselectedMode(true);
     }
-  })();
 
-  // DEFAULTS: Android device + 1 connection
+    const deviceTarget = Array.from(document.querySelectorAll('[data-device]')).find(card => {
+      if (deviceIdQ && String(card.getAttribute('data-device-id')) === String(deviceIdQ)) return true;
+      return deviceQ && canon(card.getAttribute('data-device')) === canon(deviceQ);
+    });
+    if (deviceTarget && ptype !== 'reseller') deviceTarget.click();
+
+    if (connectionPriceQ || connectionNameQ) {
+      const connectionTarget = Array.from(document.querySelectorAll('[data-kind="connection"]')).find(card => {
+        if (connectionPriceQ && toNumber(card.getAttribute('data-price')) === toNumber(connectionPriceQ)) return true;
+        const expectedName = canon(connectionNameQ);
+        return expectedName !== '' && canon(card.getAttribute('data-plan')) === expectedName;
+      });
+      if (connectionTarget && connectionTarget.style.display !== 'none') {
+        selectMonetary(connectionTarget);
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => setTimeout(applyDeepLinkSelection, 0), { once: true });
+  } else {
+    setTimeout(applyDeepLinkSelection, 0);
+  }
+
+  // Keep the connection section locked only until a provider is selected.
   updateConnectionVisibility();
-  defaultSelectDevice();
-  defaultSelectConnection();
+  if (vendorInput.value) defaultSelectConnection();
 
-  lockConnection(true);
+  lockConnection(!vendorInput.value);
+
+  document.getElementById('configForm').addEventListener('submit', function() {
+    if (typeof window.trackMarketingEvent === 'function') {
+      window.trackMarketingEvent('begin_checkout', {
+        currency: currency,
+        value: toNumber(planPriceInput.value),
+        items: [{
+          item_id: packageIdInput.value || planNameInput.value,
+          item_name: findActivePlanText(),
+          item_brand: vendorInput.dataset.label || vendorInput.value,
+          item_category: packageType.value || 'iptv',
+          price: toNumber(planPriceInput.value),
+          quantity: 1
+        }]
+      }, 'InitiateCheckout');
+    }
+  });
 })();
 </script>
 @endsection

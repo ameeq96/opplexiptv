@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Admin\Orders\{StoreOrderRequest, UpdateOrderRequest};
 use App\Models\{Order, Picture, User};
 use App\Services\Orders\{OrderService, OrderMediaService};
+use App\Services\OrderPaymentService;
 use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Illuminate\Validation\Rule;
 
 class OrderController extends Controller
 {
@@ -32,7 +34,7 @@ class OrderController extends Controller
 
     public function show(Order $order)
     {
-        $order->load(['user', 'pictures']);
+        $order->load(['user', 'pictures', 'marketingDeliveries', 'referral', 'referredBy']);
         return view('admin.orders.show', [
             'order'      => $order,
             'isReseller' => $order->type === 'reseller',
@@ -93,5 +95,32 @@ class OrderController extends Controller
     {
         $this->orders->markAsMessaged($order, Auth::id());
         return response()->json(['ok' => true]);
+    }
+
+    public function verifyPayment(Request $request, Order $order, OrderPaymentService $payments)
+    {
+        if ($order->payment_status === 'paid') {
+            return back()->with('error', 'Payment is already verified.');
+        }
+
+        $data = $request->validate([
+            'transaction_id' => [
+                'required',
+                'string',
+                'max:191',
+                Rule::unique('orders', 'provider_transaction_id')
+                    ->where(fn ($query) => $query->where('payment_provider', 'manual')),
+            ],
+        ]);
+
+        $payments->markPaid(
+            $order,
+            'manual',
+            $data['transaction_id'],
+            (float) ($order->sell_price ?? $order->price ?? 0),
+            (string) ($order->currency ?: 'USD')
+        );
+
+        return back()->with('success', 'Payment verified.');
     }
 }

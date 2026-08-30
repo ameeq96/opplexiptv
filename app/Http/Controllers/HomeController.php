@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Mail\CheckoutOrderMail;
 use App\Http\Requests\Site\{BuyNowRequest, ContactRequest, SubscribeRequest};
 use App\Models\Admin;
+use App\Models\CheckoutDraft;
 use App\Models\Device;
 use App\Models\Digital\DigitalProduct;
 use App\Models\Order;
+use App\Models\MarketingDelivery;
 use App\Models\Package;
-use App\Models\Plan;
+use App\Models\Referral;
 use App\Models\ShopProduct;
 use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService};
 use Illuminate\Support\Facades\Log;
@@ -353,21 +355,16 @@ class HomeController extends Controller
             ->orderBy('name')
             ->get(['id', 'name', 'icon']);
 
-        // Connection plans
-        $plans = Plan::query()
-            ->where('active', true)
-            ->orderBy('max_devices')
-            ->get(['id', 'name', 'price', 'max_devices']);
-
         // IPTV packages (type = iptv, vendor = opplex|starshare)
         $iptvRows = Package::query()
             ->where('active', true)
             ->where('type', 'iptv')
             ->whereIn('vendor', ['opplex', 'starshare'])
-            ->orderByRaw("FIELD(vendor,'opplex','starshare')")
+            ->where('price_amount', '>', 0)
+            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
             ->orderByRaw("COALESCE(sort_order, duration_months, id)")
             ->with('translations')
-            ->get(['id', 'vendor', 'title', 'price_amount', 'duration_months', 'icon']);
+            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'icon']);
 
         $iptvPackages = [];
         foreach ($iptvRows as $r) {
@@ -376,9 +373,10 @@ class HomeController extends Controller
             $iptvPackages[] = [
                 'id'     => $r->id,                           // <--- ID SEND HO RAHA
                 'vendor' => strtolower($r->vendor),           // opplex | starshare
-                'title'  => $r->translation()?->title ?: $r->title,
+                'title'  => $this->packageDisplayTitle($r),
                 'old'    => 0.00,
                 'price'  => (float) $r->price_amount,
+                'duration_months' => $dur,
                 'unit'   => $dur === 1
                     ? __('interface.checkout.month_one')
                     : __('interface.checkout.months', ['count' => $dur]),
@@ -391,9 +389,11 @@ class HomeController extends Controller
             ->where('active', true)
             ->where('type', 'reseller')
             ->whereIn('vendor', ['opplex', 'starshare'])
-            ->orderByRaw("FIELD(vendor,'opplex','starshare'), COALESCE(sort_order, credits, id)")
+            ->where('price_amount', '>', 0)
+            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
+            ->orderByRaw('COALESCE(sort_order, credits, id)')
             ->with('translations')
-            ->get(['id', 'vendor', 'title', 'price_amount', 'credits', 'icon']);
+            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'credits', 'icon']);
 
         $resellerPackages = [];
         foreach ($resellerRows as $r) {
@@ -402,7 +402,7 @@ class HomeController extends Controller
             $resellerPackages[] = [
                 'id'     => $r->id,                           // <--- ID SEND HO RAHA
                 'vendor' => strtolower($r->vendor),
-                'title'  => $r->translation()?->title ?: $r->title,
+                'title'  => $this->packageDisplayTitle($r),
                 'old'    => 0.00,
                 'price'  => (float) $r->price_amount,
                 'unit'   => $credits > 0
@@ -417,7 +417,6 @@ class HomeController extends Controller
 
         return view('pages.checkout.configure', compact(
             'devices',
-            'plans',
             'iptvPackages',
             'resellerPackages',
             'prePrice',
@@ -434,20 +433,28 @@ class HomeController extends Controller
                 'iptv_vendor'  => 'nullable|string',
                 'plan_name'    => 'required|string',
                 'plan_price'   => 'required|numeric|min:0',
+                'connection_price' => 'nullable|numeric|min:0',
+                'connection_name' => 'nullable|string|max:100',
 
                 // ENUM: package | reseller
                 'package_type' => 'required|in:package,reseller',
 
-                'package_id'   => 'nullable|integer|exists:packages,id',
-                'quantity'     => 'required|integer|min:1',
+                'package_id'   => 'required|integer|exists:packages,id',
+                'quantity'     => 'required|integer|in:1',
 
                 'email'        => 'required|email',
                 'first_name'   => 'required|string|max:255',
                 'last_name'    => 'required|string|max:255',
                 'phone'        => 'required|string|max:50',
                 'notes'        => 'nullable|string',
+                'captcha'      => 'required',
                 'coupon'       => 'nullable|string',
                 'paymethod'    => 'required|in:card,crypto',
+                'policy_accepted' => 'required|accepted',
+                'checkout_draft_token' => 'nullable|uuid',
+                'marketing_email' => 'nullable|boolean',
+                'marketing_whatsapp' => 'nullable|boolean',
+                'marketing_ads' => 'nullable|boolean',
             ],
             [
                 '*.required' => __('document_ui.validation.required'),
@@ -459,6 +466,7 @@ class HomeController extends Controller
                 '*.min' => __('document_ui.validation.min_numeric'),
                 '*.in' => __('document_ui.validation.invalid_selection'),
                 '*.exists' => __('document_ui.validation.invalid_selection'),
+                'policy_accepted.accepted' => __('messages.final_sale_confirmed'),
             ],
             [
                 'device' => __('messages.checkout_device'),
@@ -474,12 +482,41 @@ class HomeController extends Controller
                 'last_name' => __('messages.checkout_last_name'),
                 'phone' => __('messages.checkout_phone'),
                 'notes' => __('messages.checkout_notes_label'),
+                'captcha' => 'CAPTCHA',
                 'coupon' => __('interface.fields.coupon'),
                 'paymethod' => __('interface.fields.payment_method'),
+                'policy_accepted' => __('document_ui.footer.refund'),
             ],
         );
 
-        // 1) User create / get
+        if (!$this->captcha->check($data['captcha'])) {
+            throw \Illuminate\Validation\ValidationException::withMessages([
+                'captcha' => __('document_ui.contact.captcha_error'),
+            ]);
+        }
+
+        // 1) Package / pricing calculations. Never trust client-supplied package pricing.
+        $package = Package::query()
+            ->where('active', true)
+            ->whereIn('type', ['iptv', 'reseller'])
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->where('price_amount', '>', 0)
+            ->findOrFail($data['package_id']);
+
+        $packageType = $package->type === 'reseller' ? 'reseller' : 'package';
+        $device = null;
+        if ($packageType === 'package') {
+            $device = isset($data['device_id']) ? Device::findOrFail($data['device_id']) : null;
+            if (!$device) {
+                throw \Illuminate\Validation\ValidationException::withMessages([
+                    'device_id' => __('document_ui.validation.required', [
+                        'attribute' => __('messages.checkout_device'),
+                    ]),
+                ]);
+            }
+        }
+
+        // 2) User create / get only after the selected product and device are verified.
         $fullName = trim($data['first_name'] . ' ' . $data['last_name']);
 
         $user = User::firstOrCreate(
@@ -493,40 +530,72 @@ class HomeController extends Controller
             ]
         );
 
-        // 2) Package / pricing calculations
-        $package  = $data['package_id']
-            ? Package::find($data['package_id'])
-            : null;
+        $consentUpdates = [];
+        $consentIpHash = hash_hmac('sha256', (string) $request->ip(), (string) config('app.key'));
+        $submittedPhone = preg_replace('/\D+/', '', (string) $data['phone']);
+        $storedPhone = preg_replace('/\D+/', '', (string) $user->phone);
+        $contactMatches = $user->wasRecentlyCreated
+            || ($submittedPhone !== '' && $storedPhone !== '' && hash_equals($storedPhone, $submittedPhone));
 
-        $qty             = $data['quantity'];
-        $sellPriceSingle = (float) $data['plan_price'];
+        if ($contactMatches) {
+            foreach (['email', 'whatsapp', 'ads'] as $channel) {
+                if ($request->boolean('marketing_' . $channel)) {
+                    $consentedAt = 'marketing_' . $channel . '_consented_at';
+                    $optedOutAt = 'marketing_' . $channel . '_opted_out_at';
+                    $consentUpdates[$consentedAt] = $user->{$consentedAt} && !$user->{$optedOutAt}
+                        ? $user->{$consentedAt}
+                        : now();
+                    $consentUpdates[$optedOutAt] = null;
+                }
+            }
+        }
+        if ($consentUpdates !== []) {
+            $user->forceFill($consentUpdates + [
+                'marketing_consent_version' => $user->marketing_consent_version
+                    ?: config('services.marketing.consent_version'),
+                'marketing_consent_source' => $user->marketing_consent_source ?: 'checkout',
+                'marketing_consent_locale' => $user->marketing_consent_locale ?: app()->getLocale(),
+                'marketing_consent_ip_hash' => $user->marketing_consent_ip_hash ?: $consentIpHash,
+            ])->save();
+        }
+
+        $vendor = strtolower((string) $package->vendor);
+        $vendorLabel = $vendor === 'starshare' ? 'Filex' : 'Opplex';
+        $packageTitle = $this->packageDisplayTitle($package);
+        $planName = $vendorLabel . ' - ' . $packageTitle;
+
+        $qty = 1;
+        $basePrice = (float) $package->price_amount;
+        $connectionTier = isset($data['connection_price'])
+            ? (float) $data['connection_price']
+            : 0.0;
+        $filexYearlyConnectionPrices = Package::FILEX_YEARLY_CONNECTION_PRICES;
+        $isAllowedMultiConnection = $packageType === 'package'
+            && $vendor === 'starshare'
+            && (int) $package->duration_months === 12
+            && in_array($connectionTier, array_values($filexYearlyConnectionPrices), true);
+        $sellPriceSingle = $isAllowedMultiConnection ? $connectionTier : $basePrice;
         $sellPrice       = $sellPriceSingle * $qty;
 
-        $costPriceSingle = $package && isset($package->cost_price)
+        $costPriceSingle = isset($package->cost_price)
             ? (float) $package->cost_price
             : 0.0;
 
         $costPrice = $costPriceSingle * $qty;
         $profit    = $sellPrice - $costPrice;
 
-        $credits  = $package && $package->credits ? (int) $package->credits : 0;
-        $duration = $package && $package->duration_months ? (int) $package->duration_months : 0;
+        $credits  = $package->credits ? (int) $package->credits : 0;
+        $duration = $package->duration_months ? (int) $package->duration_months : 0;
 
         $currency = 'USD';
         $now      = now();
         $expiry   = $duration > 0 ? $now->copy()->addMonths($duration) : null;
-
-        $cleanMoney = static function ($v) {
-            if (is_null($v)) return null;
-            if (is_numeric($v)) return (float) $v;
-            $s = preg_replace('/[^0-9.]/', '', (string) $v);
-            return $s === '' ? null : (float) $s;
-        };
+        $analyticsConsented = $this->hasAnalyticsConsent($request);
 
         // 3) Order create
         $order = Order::create([
             'user_id'        => $user->id,
-            'package'        => $data['plan_name'],
+            'package'        => $planName,
             'price'          => $sellPriceSingle,
             'cost_price'     => $costPriceSingle,
             'sell_price'     => $sellPrice,
@@ -535,6 +604,7 @@ class HomeController extends Controller
             'duration'       => $duration,
             'status'         => 'pending',
             'payment_method' => $data['paymethod'],
+            'payment_status' => 'unpaid',
 
             'custom_payment_method' => null,
             'custom_package'        => null,
@@ -547,25 +617,95 @@ class HomeController extends Controller
             'iptv_username'  => null,
 
             // ENUM matches DB: package | reseller
-            'type'           => $data['package_type'],
+            'type'           => $packageType,
 
-            'device_id'      => $data['device_id']  ?? null,
-            'package_id'     => $data['package_id'] ?? null,
+            'device_id'      => $device?->id,
+            'package_id'     => $package->id,
+            'locale'         => app()->getLocale(),
+            'ga_client_id'   => $analyticsConsented ? $this->gaClientId($request) : null,
+            'analytics_consented_at' => $analyticsConsented ? $now : null,
         ]);
+
+        if ($analyticsConsented) {
+            $analyticsOrderIds = (array) session('analytics_order_ids', []);
+            $analyticsOrderIds[] = $order->id;
+            session(['analytics_order_ids' => array_slice(array_unique($analyticsOrderIds), -20)]);
+        }
+
+        if (!empty($data['checkout_draft_token'])) {
+            $completedDraft = CheckoutDraft::updateOrCreate(
+                ['token' => $data['checkout_draft_token']],
+                [
+                    'package_id' => $package->id,
+                    'device_id' => $device?->id,
+                    'vendor' => $vendor,
+                    'connection_name' => $data['connection_name'] ?? null,
+                    'connection_price' => $connectionTier ?: null,
+                    'name' => null,
+                    'email' => null,
+                    'phone' => null,
+                    'email_consented_at' => null,
+                    'whatsapp_consented_at' => null,
+                    'ads_consented_at' => null,
+                    'consent_version' => null,
+                    'consent_ip_hash' => null,
+                    'locale' => app()->getLocale(),
+                    'last_activity_at' => $now,
+                    'retention_expires_at' => $now->copy()->addDays(
+                        max(1, (int) config('services.marketing.draft_retention_days', 30))
+                    ),
+                    'completed_order_id' => $order->id,
+                    'completed_at' => $now,
+                ]
+            );
+
+            if ($completedDraft) {
+                MarketingDelivery::query()
+                    ->where('checkout_draft_id', $completedDraft->id)
+                    ->where('workflow', 'abandoned')
+                    ->whereNull('sent_at')
+                    ->update([
+                        'failed_at' => $now,
+                        'last_error' => 'Checkout completed',
+                        'processing_at' => null,
+                        'processing_token' => null,
+                    ]);
+            }
+        }
+
+        $referralCode = session()->pull('referral_code');
+        if ($referralCode) {
+            Referral::query()
+                ->where('code', $referralCode)
+                ->where('referrer_user_id', '<>', $user->id)
+                ->whereIn('status', ['available', 'captured'])
+                ->whereNull('referred_order_id')
+                ->update([
+                    'referred_user_id' => $user->id,
+                    'referred_order_id' => $order->id,
+                    'status' => 'captured',
+                    'captured_at' => $now,
+                ]);
+        }
 
         $emailData = [
             'order_id'          => $order->id,
             'customer_name'     => $fullName,
             'customer_email'    => $data['email'],
             'phone'             => $data['phone'],
-            'package'           => $data['plan_name'],
-            'package_type'      => $data['package_type'],
-            'vendor'            => $data['iptv_vendor'] ?? null,
-            'device'            => $data['device'] ?? null,
+            'package'           => $planName,
+            'package_type'      => $packageType,
+            'vendor'            => $vendor,
+            'device'            => $device?->name,
+            'connection_name'   => $isAllowedMultiConnection
+                ? ($connectionTier === $filexYearlyConnectionPrices[2]
+                    ? __('messages.checkout_two_connection_label')
+                    : __('messages.checkout_four_connection_label'))
+                : __('messages.checkout_one_connection_label'),
             'quantity'          => $qty,
             'payment_method'    => $data['paymethod'],
-            'subscription_price'=> $cleanMoney($request->input('pkg_price')),
-            'connection_price'  => $cleanMoney($request->input('connection_price')),
+            'subscription_price'=> $sellPriceSingle,
+            'connection_price'  => null,
             'unit_price'        => $sellPriceSingle,
             'total_price'       => $sellPrice,
             'expiry'            => $expiry ? $expiry->toDateString() : null,
@@ -584,10 +724,10 @@ class HomeController extends Controller
             if ($admins->count() > 0) {
                 Notification::send($admins, new NewOrderNotification([
                     'title'   => 'New order received',
-                    'body'    => "{$fullName} placed an order ({$data['package_type']}).",
+                    'body'    => "{$fullName} placed an order ({$packageType}).",
                     'order_id'=> $order->id,
-                    'package' => $data['plan_name'],
-                    'type'    => $data['package_type'],
+                    'package' => $planName,
+                    'type'    => $packageType,
                     'client'  => $fullName,
                     'phone'   => $data['phone'],
                     'payment' => $data['paymethod'],
@@ -604,7 +744,17 @@ class HomeController extends Controller
 
         return redirect()
             ->route('thankyou')
-            ->with('success', __('interface.checkout.order_received', ['id' => $order->id]));
+            ->with('success', __('interface.checkout.order_received', ['id' => $order->id]))
+            ->with('order_summary', [
+                'id' => $order->id,
+                'package_id' => $package->id,
+                'package' => $planName,
+                'package_type' => $packageType,
+                'vendor' => $vendorLabel,
+                'device' => $device?->name,
+                'total' => $sellPrice,
+                'currency' => $currency,
+            ]);
     }
 
     public function thankYou()
@@ -614,10 +764,116 @@ class HomeController extends Controller
 
     public function checkoutStep1(Request $request)
     {
+        $packageId = $request->input('package_id');
+        if (!is_scalar($packageId) || filter_var($packageId, FILTER_VALIDATE_INT) === false) {
+            return redirect()->route('configure', $request->except('package_id'));
+        }
+        $packageId = (int) $packageId;
+
+        $package = Package::query()
+            ->where('active', true)
+            ->whereIn('type', ['iptv', 'reseller'])
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->where('price_amount', '>', 0)
+            ->whereKey($packageId)
+            ->first(['id', 'type']);
+
+        if (!$package) {
+            return redirect()->route('configure', $request->except('package_id'));
+        }
+
+        if ($package->type === 'iptv') {
+            $deviceId = $request->input('device_id');
+            $deviceExists = is_scalar($deviceId)
+                && filter_var($deviceId, FILTER_VALIDATE_INT) !== false
+                && Device::query()->whereKey((int) $deviceId)->exists();
+
+            if (!$deviceExists) {
+                return redirect()->route('configure', $request->query());
+            }
+        }
+
         $planName  = $request->input('plan_name', __('interface.checkout.default_plan'));
         $planPrice = (float) $request->input('plan_price', 15);
         $device    = $request->input('device', null);
 
         return view('pages.checkout.step1', compact('planName', 'planPrice', 'device'));
+    }
+
+    private function packageDisplayTitle(Package $package): string
+    {
+        if ($package->type === 'iptv') {
+            $planKey = match ((int) $package->duration_months) {
+                1 => 'monthly',
+                3 => 'three_months',
+                6 => 'half_yearly',
+                12 => 'yearly',
+                default => null,
+            };
+
+            if ($planKey !== null) {
+                $translationKey = 'document_commerce.packages.pricing.plans.' . $planKey . '.title';
+                $localizedTitle = __($translationKey);
+                if ($localizedTitle !== $translationKey) {
+                    return $localizedTitle;
+                }
+            }
+        } elseif ($package->type === 'reseller') {
+            $translationKey = match ($package->title) {
+                'Starter Reseller Package' => 'messages.starter_reseller',
+                'Essential Reseller Bundle' => 'messages.essential_reseller',
+                'Pro Reseller Suite' => 'messages.pro_reseller',
+                'Advanced Reseller Toolkit' => 'messages.advanced_reseller',
+                default => null,
+            };
+
+            if ($translationKey !== null && __($translationKey) !== $translationKey) {
+                return __($translationKey);
+            }
+        }
+
+        $title = (string) ($package->translation()?->title ?: $package->title);
+        $title = (string) preg_replace('/\s*\([^)]*\)/u', '', $title);
+        $title = trim((string) preg_replace('/\s*-\s*\$?\d+(?:[.,]\d+)?/u', '', $title, 1));
+
+        return Str::startsWith($title, 'messages.') || $title === ''
+            ? (string) $package->title
+            : $title;
+    }
+
+    private function hasAnalyticsConsent(Request $request): bool
+    {
+        $raw = $this->rawCookie($request, 'opplex_consent');
+        if ($raw === null) {
+            return false;
+        }
+
+        $preference = json_decode($raw, true);
+
+        return is_array($preference)
+            && (($preference['analytics'] ?? false) === true || ($preference['analytics'] ?? null) === 1)
+            && ($preference['version'] ?? null) === config('services.marketing.tracking_consent_version');
+    }
+
+    private function gaClientId(Request $request): ?string
+    {
+        $cookie = $this->rawCookie($request, '_ga');
+        if ($cookie && preg_match('/^GA\d+\.\d+\.(\d+\.\d+)$/', $cookie, $matches)) {
+            return $matches[1];
+        }
+
+        return null;
+    }
+
+    private function rawCookie(Request $request, string $name): ?string
+    {
+        foreach (explode(';', (string) $request->headers->get('cookie')) as $cookie) {
+            [$key, $value] = array_pad(explode('=', trim($cookie), 2), 2, null);
+            if ($key === $name && $value !== null) {
+                return urldecode($value);
+            }
+        }
+
+        return null;
     }
 }

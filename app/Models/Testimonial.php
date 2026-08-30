@@ -13,11 +13,23 @@ class Testimonial extends Model
         'image',
         'sort_order',
         'is_active',
+        'is_verified',
+        'verified_at',
+        'review_date',
+        'country',
+        'device',
+        'verification_source',
+        'proof_reference',
+        'publication_consented_at',
     ];
 
     protected $casts = [
         'is_active' => 'bool',
         'sort_order' => 'int',
+        'is_verified' => 'bool',
+        'verified_at' => 'datetime',
+        'review_date' => 'date',
+        'publication_consented_at' => 'datetime',
     ];
 
     public function translations(): HasMany

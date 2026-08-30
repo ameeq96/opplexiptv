@@ -106,6 +106,13 @@
     <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
 @endif
 @if ($routeName === 'home')
+    <link rel="preload" as="image" href="{{ asset('images/resource/movie-night-tv-1024.webp') }}"
+        imagesrcset="{{ asset('images/resource/movie-night-tv-480.webp') }} 480w,
+            {{ asset('images/resource/movie-night-tv-720.webp') }} 720w,
+            {{ asset('images/resource/movie-night-tv-1024.webp') }} 1024w,
+            {{ asset('images/resource/movie-night-tv-1280.webp') }} 1280w"
+        imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"
+        fetchpriority="high">
     {{-- Discover homepage fonts before parsing the large inline critical-style block. --}}
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
@@ -126,6 +133,8 @@
 @else
     <meta name="robots" content="index,follow">
 @endif
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <script>
     var isRtl = {{ $isRtl ? 'true' : 'false' }};
@@ -1344,104 +1353,209 @@
     @endif
 </noscript>
 
-@if (!empty($fbPixels))
-    <script>
-        (function (w, d) {
-            // Lightweight fbq queue (no network yet)
-            w.__fbqScriptLoaded = w.__fbqScriptLoaded || false;
-            w.__fbqPixelIds = w.__fbqPixelIds || [];
-            if (!w.fbq) {
-                var n = w.fbq = function () {
-                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-                };
-                if (!w._fbq) w._fbq = n;
-                n.push = n; n.loaded = false; n.version = '2.0'; n.queue = [];
-            }
-
-            var ids = @json($fbPixels);
-            ids.forEach(function (id) {
-                if (w.__fbqPixelIds.indexOf(id) === -1) {
-                    w.__fbqPixelIds.push(id);
-                    fbq('init', id);
-                }
-            });
-            // Event will sit in queue until script loads (on user interaction)
-            fbq('track', 'PageView');
-
-            // Loader is exposed but NOT called here (privacy + perf)
-            function ensureFBScript() {
-                if (w.__fbqScriptLoaded) return;
-                var t = d.createElement('script');
-                t.async = true;
-                t.src = 'https://connect.facebook.net/en_US/fbevents.js';
-                var s = d.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(t, s);
-                w.__fbqScriptLoaded = true;
-            }
-            w.__ensureFBScript = ensureFBScript;
-        })(window, document);
-    </script>
-
-    @foreach ($fbPixels as $pId)
-        <noscript>
-            <img height="1" width="1" style="display:none"
-                 src="https://www.facebook.com/tr?id={{ $pId }}&ev=PageView&noscript=1" />
-        </noscript>
-    @endforeach
-@endif
-
 <script>
-    // ------- Analytics/Pixel lazy loader (no 4s fallback) -------
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    (function (w, d) {
+        var consentVersion = @json(config('services.marketing.tracking_consent_version'));
+        var gaId = @json(config('services.google.analytics_id'));
+        var clarityId = @json(config('services.clarity.project_id'));
+        var pixelIds = @json(array_values($fbPixels));
+        var loaded = { ga: false, clarity: false, pixel: false };
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const loaded = { ga:false, clarity:false, pixel:false };
-        const events = ['scroll','touchstart','pointerdown','keydown'];
-        const opts = { once:true, passive:true };
+        w.__trackingConsentVersion = consentVersion;
+        w.__trackingConsent = { analytics: false, marketing: false };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag('consent', 'default', {
+            ad_storage: 'denied',
+            analytics_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500
+        });
+
+        function hasConsent(category) {
+            return w.__trackingConsent && w.__trackingConsent[category] === true;
+        }
 
         function loadGA() {
-            if (loaded.ga) return; loaded.ga = true;
-            const s = document.createElement("script");
-            s.src = "https://www.googletagmanager.com/gtag/js?id=G-L98JG9ZT7H";
-            s.async = true;
-            (document.head || document.body).appendChild(s);
-            s.onload = function () {
-                gtag('js', new Date());
-                gtag('config', 'G-L98JG9ZT7H');
-            };
+            if (!hasConsent('analytics') || loaded.ga || !gaId) return;
+            loaded.ga = true;
+            w.gtag('js', new Date());
+            w.gtag('config', gaId, {
+                allow_google_signals: hasConsent('marketing'),
+                allow_ad_personalization_signals: hasConsent('marketing')
+            });
+            var script = d.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
+            (d.head || d.body).appendChild(script);
         }
 
         function loadClarity() {
-            if (loaded.clarity) return; loaded.clarity = true;
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r); t.async=1; t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "sq6nn3dn69");
+            if (!hasConsent('analytics') || loaded.clarity || !clarityId) return;
+            loaded.clarity = true;
+            w.clarity = w.clarity || function () {
+                (w.clarity.q = w.clarity.q || []).push(arguments);
+            };
+            var script = d.createElement('script');
+            script.async = true;
+            script.src = 'https://www.clarity.ms/tag/' + clarityId;
+            var firstScript = d.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
         }
 
         function loadFBPixel() {
-            if (loaded.pixel) return; loaded.pixel = true;
-            if (window.__ensureFBScript) { window.__ensureFBScript(); return; }
-            var t = document.createElement('script');
-            t.async = true;
-            t.src = 'https://connect.facebook.net/en_US/fbevents.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(t, s);
+            if (!hasConsent('marketing') || loaded.pixel || !pixelIds.length) return;
+            loaded.pixel = true;
+            if (!w.fbq) {
+                var fbq = w.fbq = function () {
+                    fbq.callMethod ? fbq.callMethod.apply(fbq, arguments) : fbq.queue.push(arguments);
+                };
+                w._fbq = fbq;
+                fbq.push = fbq;
+                fbq.loaded = false;
+                fbq.version = '2.0';
+                fbq.queue = [];
+            }
+            pixelIds.forEach(function (id) { w.fbq('init', id); });
+            w.fbq('track', 'PageView');
+            var script = d.createElement('script');
+            script.async = true;
+            script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+            var firstScript = d.getElementsByTagName('script')[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
         }
 
-        function loadAll() {
+        w.__hasTrackingConsent = hasConsent;
+        w.__applyTrackingConsent = function (preference) {
+            var next = {
+                analytics: preference && preference.analytics === true,
+                marketing: preference && preference.marketing === true
+            };
+            w.__trackingConsent = next;
+            w.gtag('consent', 'update', {
+                analytics_storage: next.analytics ? 'granted' : 'denied',
+                ad_storage: next.marketing ? 'granted' : 'denied',
+                ad_user_data: next.marketing ? 'granted' : 'denied',
+                ad_personalization: next.marketing ? 'granted' : 'denied'
+            });
+            if (next.analytics) {
+                loadGA();
+                loadClarity();
+            }
+            if (next.marketing) loadFBPixel();
+        };
+
+        w.__loadConversionTracking = function () {
             loadGA();
-            loadClarity();
             loadFBPixel();
-            events.forEach(ev => window.removeEventListener(ev, loadAll, opts));
+        };
+
+        w.trackMarketingEvent = function (name, params, metaEvent) {
+            if (typeof name !== 'string' || name.trim() === '') return;
+            if (!hasConsent('analytics') && !hasConsent('marketing')) return;
+
+            var eventParams = params && typeof params === 'object' ? params : {};
+            if (hasConsent('analytics')) {
+                loadGA();
+                try { w.gtag('event', name, eventParams); } catch (e) {}
+            }
+
+            if (!metaEvent || !hasConsent('marketing')) return;
+            loadFBPixel();
+            try {
+                var metaParams = Object.assign({}, eventParams);
+                var eventId = metaParams.event_id;
+                delete metaParams.event_id;
+                if (eventId) {
+                    w.fbq('track', metaEvent, metaParams, { eventID: String(eventId) });
+                } else {
+                    w.fbq('track', metaEvent, metaParams);
+                }
+            } catch (e) {}
+        };
+
+        function readSavedPreference() {
+            var raw = null;
+            try { raw = w.localStorage.getItem('opplex.cookieConsent'); } catch (e) {}
+            if (!raw) {
+                var match = d.cookie.match(/(?:^|; )opplex_consent=([^;]*)/);
+                if (match) {
+                    try { raw = decodeURIComponent(match[1]); } catch (e) {}
+                }
+            }
+            if (!raw) return null;
+            try {
+                var saved = JSON.parse(raw);
+                if (saved.version !== consentVersion) return null;
+                if (typeof saved.analytics !== 'boolean' || typeof saved.marketing !== 'boolean') return null;
+                return saved;
+            } catch (e) {
+                return null;
+            }
         }
 
-        // Load only after first interaction (no immediate call, no timeout)
-        events.forEach(ev => window.addEventListener(ev, loadAll, opts));
-        // If you need a consent gate, call loadAll() only after consent given.
-    });
+        var savedPreference = readSavedPreference();
+        if (savedPreference) w.__applyTrackingConsent(savedPreference);
+    })(window, document);
+
+    (function () {
+        if (!('PerformanceObserver' in window)) return;
+
+        var metrics = { LCP: 0, INP: 0, CLS: 0 };
+        var sent = {};
+
+        function rating(name, value) {
+            var limits = name === 'LCP' ? [2500, 4000] : (name === 'INP' ? [200, 500] : [0.1, 0.25]);
+            return value <= limits[0] ? 'good' : (value <= limits[1] ? 'needs-improvement' : 'poor');
+        }
+
+        function report(name) {
+            if (sent[name] || !metrics[name]) return;
+            sent[name] = true;
+            window.trackMarketingEvent('web_vital', {
+                metric_name: name,
+                metric_value: Number(metrics[name].toFixed(name === 'CLS' ? 3 : 0)),
+                metric_rating: rating(name, metrics[name]),
+                page_path: location.pathname,
+                non_interaction: true
+            });
+        }
+
+        try {
+            new PerformanceObserver(function (list) {
+                var entries = list.getEntries();
+                if (entries.length) metrics.LCP = entries[entries.length - 1].startTime;
+            }).observe({ type: 'largest-contentful-paint', buffered: true });
+        } catch (e) {}
+
+        try {
+            new PerformanceObserver(function (list) {
+                list.getEntries().forEach(function (entry) {
+                    if (!entry.hadRecentInput) metrics.CLS += entry.value;
+                });
+            }).observe({ type: 'layout-shift', buffered: true });
+        } catch (e) {}
+
+        try {
+            new PerformanceObserver(function (list) {
+                list.getEntries().forEach(function (entry) {
+                    if (entry.interactionId && entry.duration > metrics.INP) metrics.INP = entry.duration;
+                });
+            }).observe({ type: 'event', buffered: true, durationThreshold: 40 });
+        } catch (e) {}
+
+        function reportVitals() {
+            report('LCP');
+            report('INP');
+            report('CLS');
+        }
+
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState === 'hidden') reportVitals();
+        });
+        window.addEventListener('pagehide', reportVitals, { once: true });
+    })();
 </script>
 
 <script>
@@ -1471,6 +1585,7 @@
         }
 
         function sendCAPI(eventId, dest) {
+            if (!window.__hasTrackingConsent || !window.__hasTrackingConsent('marketing')) return;
             var payload = {
                 event_id:eventId,
                 destination:dest,
@@ -1499,11 +1614,12 @@
 
             const eventId = uuidv4();
             try {
-                fbq('track', 'StartTrial', {
+                window.trackMarketingEvent('generate_lead', {
                     value: 0, currency: "{{ $currency }}",
-                    content_name: 'WhatsApp', contact_channel: 'whatsapp', destination: href
-                }, { eventID: eventId });
-            } catch(e) { /* fbq may not be loaded yet, but queue will hold */ }
+                    content_name: 'WhatsApp', contact_channel: 'whatsapp', destination: href,
+                    event_id: eventId
+                }, 'StartTrial');
+            } catch(e) { /* analytics queues may not be available yet */ }
 
             sendCAPI(eventId, href);
 

@@ -340,6 +340,7 @@ class SchemaService
                 ->where('active', true)
                 ->where('type', $kind)
                 ->whereIn('vendor', ['opplex', 'starshare'])
+                ->where('price_amount', '>', 0)
                 ->orderByRaw('COALESCE(sort_order, duration_months, credits, id)')
                 ->with('translations')
                 ->get(['id', 'vendor', 'title', 'price_amount', 'duration_months', 'credits']);

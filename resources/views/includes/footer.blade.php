@@ -1,4 +1,261 @@
 <!-- ======= Pro Footer v2 ======= -->
+@once
+<style id="fx-footer-professional-styles">
+    .fx-footer {
+        --fx-bg: #090e1b;
+        --fx-card: rgba(255, 255, 255, .055);
+        --fx-fg: #f7f9ff;
+        --fx-muted: #aeb8cf;
+        --fx-border: rgba(255, 255, 255, .1);
+        --fx-accent: #f23a43;
+        isolation: isolate;
+        border-top: 1px solid rgba(255, 255, 255, .08);
+        background:
+            radial-gradient(circle at 8% -10%, rgba(242, 58, 67, .14), transparent 30%),
+            radial-gradient(circle at 92% 0, rgba(59, 130, 246, .09), transparent 27%),
+            linear-gradient(180deg, #0b1020 0%, var(--fx-bg) 100%);
+    }
+    .fx-footer .fx-footer__dots { opacity: .035; }
+    .fx-footer .fx-footer__grad { opacity: .48; }
+    .fx-footer .fx-container {
+        position: relative;
+        z-index: 1;
+        max-width: 1280px;
+        padding: 46px 32px 28px;
+    }
+    .fx-footer .fx-footer__head {
+        align-items: center;
+        gap: 32px;
+        padding: 0 0 30px;
+        border-bottom-color: var(--fx-border);
+    }
+    .fx-footer .fx-brand { max-width: 560px; }
+    .fx-footer .fx-brand__logo {
+        width: min(250px, 100%);
+        filter: drop-shadow(0 8px 18px rgba(0, 0, 0, .28));
+    }
+    .fx-footer .fx-brand__tag {
+        max-width: 540px;
+        margin-top: 10px;
+        color: var(--fx-muted);
+        font-size: .94rem;
+        line-height: 1.65;
+    }
+    .fx-footer .fx-social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .fx-footer .fx-social__btn {
+        width: 46px;
+        height: 46px;
+        border: 1px solid var(--fx-border);
+        border-radius: 13px;
+        background: var(--fx-card);
+        color: #e9edfa;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, .04);
+        transition: transform .2s ease, border-color .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
+    }
+    .fx-footer .fx-social__btn svg {
+        display: block;
+        width: 19px;
+        height: 19px;
+    }
+    .fx-footer .fx-social__btn:hover {
+        transform: translateY(-3px);
+        border-color: rgba(242, 58, 67, .72);
+        background: rgba(242, 58, 67, .13);
+        color: #fff;
+        box-shadow: 0 12px 26px rgba(0, 0, 0, .2);
+        text-decoration: none;
+    }
+    .fx-footer .fx-social__btn:focus-visible,
+    .fx-footer .fx-link:focus-visible,
+    .fx-footer .fx-deeplinks a:focus-visible {
+        outline: 3px solid rgba(255, 89, 98, .5);
+        outline-offset: 3px;
+        border-radius: 6px;
+    }
+    .fx-footer .fx-grid {
+        display: grid;
+        grid-template-columns: minmax(250px, 1.15fr) minmax(300px, 1.25fr) minmax(150px, .7fr) minmax(190px, .85fr);
+        gap: clamp(30px, 4vw, 64px);
+        padding: 34px 0 32px;
+    }
+    .fx-footer .fx-col,
+    .fx-footer .fx-col:first-child,
+    .fx-footer .fx-col--payments {
+        grid-column: auto;
+        min-width: 0;
+    }
+    .fx-footer .fx-title {
+        position: relative;
+        margin: 0 0 19px;
+        padding-bottom: 12px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: .01em;
+    }
+    .fx-footer .fx-title::after {
+        position: absolute;
+        inset-inline-start: 0;
+        bottom: 0;
+        width: 30px;
+        height: 2px;
+        border-radius: 999px;
+        background: var(--fx-accent);
+        content: "";
+    }
+    .fx-footer .fx-list {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .fx-footer .fx-col--payments .fx-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+    }
+    .fx-footer .fx-list__item {
+        display: grid;
+        grid-template-columns: 40px minmax(0, 1fr);
+        align-items: center;
+        gap: 12px;
+        margin: 0;
+        color: #dce2f1;
+        line-height: 1.5;
+    }
+    .fx-footer .fx-list__icon {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(242, 58, 67, .2);
+        border-radius: 12px;
+        background: rgba(242, 58, 67, .08);
+        color: #ff6a72;
+        line-height: 1;
+    }
+    .fx-footer .fx-list__icon svg {
+        display: block;
+        width: 19px;
+        height: 19px;
+    }
+    .fx-footer .fx-link {
+        color: #cbd3e5;
+        border-bottom: 0;
+        font-size: .91rem;
+        line-height: 1.55;
+        text-decoration: none !important;
+        transition: color .18s ease, transform .18s ease;
+    }
+    .fx-footer .fx-col:not(:first-child) .fx-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+    }
+    .fx-footer .fx-link:hover {
+        color: #fff;
+        border-bottom-color: transparent;
+        text-decoration: none !important;
+    }
+    .fx-footer .fx-col:not(:first-child) .fx-link:hover { transform: translateX(3px); }
+    .fx-footer .fx-container[dir="rtl"] .fx-col:not(:first-child) .fx-link:hover { transform: translateX(-3px); }
+    .fx-footer .fx-footer__bottom {
+        display: grid;
+        grid-template-columns: minmax(250px, .75fr) minmax(0, 1.35fr);
+        align-items: start;
+        gap: 32px;
+        margin-top: 0;
+        padding: 24px 0 0;
+        border-top-color: var(--fx-border);
+    }
+    .fx-footer .fx-copy {
+        color: #c9d1e3;
+        font-size: .86rem;
+        line-height: 1.7;
+        text-align: start;
+    }
+    .fx-footer .fx-legal-note {
+        max-width: 720px;
+        margin-inline-start: auto;
+        color: #929db5;
+        font-size: .8rem;
+        line-height: 1.7;
+        text-align: end;
+    }
+    .fx-footer .fx-deeplinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 7px 20px;
+        margin-top: 9px;
+        color: #929db5;
+        font-size: .75rem;
+    }
+    .fx-footer .fx-deeplinks a {
+        position: relative;
+        color: #cbd3e5;
+        text-decoration: none !important;
+        transition: color .18s ease;
+    }
+    .fx-footer .fx-deeplinks a + a::before {
+        position: absolute;
+        top: 50%;
+        inset-inline-start: -11px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #5c667c;
+        content: "";
+        transform: translateY(-50%);
+    }
+    .fx-footer .fx-deeplinks a:hover { color: #fff; }
+    @media (max-width: 1050px) {
+        .fx-footer .fx-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 34px 48px;
+        }
+        .fx-footer .fx-footer__bottom { grid-template-columns: 1fr; gap: 10px; }
+        .fx-footer .fx-legal-note {
+            max-width: none;
+            margin-inline-start: 0;
+            text-align: start;
+        }
+        .fx-footer .fx-deeplinks { justify-content: flex-start; }
+    }
+    @media (max-width: 700px) {
+        .fx-footer .fx-container { padding: 36px 20px 24px; }
+        .fx-footer .fx-footer__head {
+            flex-direction: column;
+            align-items: center;
+            gap: 22px;
+            padding-bottom: 26px;
+            text-align: center;
+        }
+        .fx-footer .fx-brand__logo { margin-inline: auto; }
+        .fx-footer .fx-social { justify-content: center; }
+        .fx-footer .fx-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 30px 0;
+        }
+        .fx-footer .fx-col--payments .fx-list { grid-template-columns: 1fr; }
+        .fx-footer .fx-footer__bottom { text-align: center; }
+        .fx-footer .fx-copy,
+        .fx-footer .fx-legal-note { text-align: center; }
+        .fx-footer .fx-deeplinks { justify-content: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .fx-footer .fx-social__btn,
+        .fx-footer .fx-link { transition: none; }
+        .fx-footer .fx-social__btn:hover,
+        .fx-footer .fx-link:hover { transform: none; }
+    }
+</style>
+@endonce
 <footer class="fx-footer" data-theme="dark">
 @php
     // Safe defaults
@@ -8,6 +265,11 @@
     $footerSettings = $footer['settings'] ?? [];
     $footerLinks = $footer['links'] ?? [];
     $footerSocials = $footer['socials'] ?? [];
+    $socialProfiles = !empty($footerSocials) ? $footerSocials : [
+        ['platform' => 'Facebook', 'url' => 'https://www.facebook.com/profile.php?id=61565476366548', 'icon_class' => 'fa fa-facebook-f'],
+        ['platform' => 'LinkedIn', 'url' => 'https://www.linkedin.com/company/digitalize-store/', 'icon_class' => 'fa fa-linkedin'],
+        ['platform' => 'Instagram', 'url' => 'https://www.instagram.com/oplextv/', 'icon_class' => 'fa fa-instagram'],
+    ];
 
     // Translations with fallbacks
     $tPhone   = __('messages.footer_phone');    if ($tPhone   === 'messages.footer_phone')   $tPhone = '+1 (639) 390-3194';
@@ -81,6 +343,7 @@
     };
 
     $routeName = optional(request()->route())->getName();
+    $usesDiscountWheel = in_array($routeName, ['home', 'packages', 'pricing', 'iptv-subscription-service'], true);
     $isHomeRoute = $routeName === 'home';
     $isMoviesRoute = $routeName === 'movies';
     $isPackagesRoute = $routeName === 'packages';
@@ -131,20 +394,37 @@
             </div>
 
             <ul class="fx-social">
-                @if (!empty($footerSocials))
-                    @foreach ($footerSocials as $s)
-                        <li>
-                            <a href="{{ $s['url'] }}" class="fx-social__btn" aria-label="{{ $s['platform'] ?: __('document_ui.footer.social_profile') }}"
-                               target="_blank" rel="noopener">
-                                <i class="{{ $s['icon_class'] ?: 'fa fa-link' }}"></i>
-                            </a>
-                        </li>
-                    @endforeach
-                @else
-                    <li><a href="https://www.facebook.com/profile.php?id=61565476366548"  class="fx-social__btn" aria-label="Facebook"  target="_blank" rel="noopener"><i class="fa fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/digitalize-store/"       class="fx-social__btn" aria-label="LinkedIn"  target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/oplextv/"                       class="fx-social__btn" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
-                @endif
+                @foreach ($socialProfiles as $social)
+                    @php
+                        $socialLabel = (string) (($social['platform'] ?? '') ?: __('document_ui.footer.social_profile'));
+                        $socialKey = strtolower($socialLabel . ' ' . (string) ($social['icon_class'] ?? ''));
+                    @endphp
+                    <li>
+                        <a href="{{ $social['url'] ?? '#' }}" class="fx-social__btn" aria-label="{{ $socialLabel }}"
+                           target="_blank" rel="noopener">
+                            @if (str_contains($socialKey, 'facebook'))
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                                    <path d="M13.5 22v-8.7h2.93l.44-3.4H13.5V7.74c0-.98.27-1.65 1.68-1.65h1.8V3.06a24.1 24.1 0 0 0-2.62-.13c-2.58 0-4.35 1.58-4.35 4.48V9.9H7.1v3.4h2.91V22h3.49Z"/>
+                                </svg>
+                            @elseif (str_contains($socialKey, 'linkedin'))
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                                    <path d="M6.58 8.48H3.3V21h3.28V8.48ZM4.94 3A1.91 1.91 0 1 0 4.93 6.82 1.91 1.91 0 0 0 4.94 3ZM9.02 8.48V21h3.27v-6.2c0-1.64.31-3.22 2.34-3.22 2 0 2.03 1.87 2.03 3.32V21h3.28v-6.88c0-3.38-.73-5.98-4.68-5.98-1.9 0-3.17 1.04-3.69 2.03h-.04V8.48H9.02Z"/>
+                                </svg>
+                            @elseif (str_contains($socialKey, 'instagram'))
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.9">
+                                    <rect x="3" y="3" width="18" height="18" rx="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="17.4" cy="6.7" r="1" fill="currentColor" stroke="none"/>
+                                </svg>
+                            @else
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                                </svg>
+                            @endif
+                        </a>
+                    </li>
+                @endforeach
             </ul>
         </div>
 
@@ -155,15 +435,29 @@
                 <h4 class="fx-title">{{ __('document_ui.footer.contact') }}</h4>
                 <ul class="fx-list">
                     <li class="fx-list__item">
-                        <span class="fx-list__icon">📱</span>
+                        <span class="fx-list__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.09 5.18 2 2 0 0 1 5.08 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.71a16 16 0 0 0 4.29 4.29l1.25-1.25a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/>
+                            </svg>
+                        </span>
                         <a href="https://wa.me/16393903194?text={{ urlencode($waText) }}" target="_blank" rel="noopener" class="fx-link"><bdi>{{ $tPhone }}</bdi></a>
                     </li>
                     <li class="fx-list__item">
-                        <span class="fx-list__icon">✉️</span>
+                        <span class="fx-list__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="m3 7 9 6 9-6"/>
+                            </svg>
+                        </span>
                         <a href="mailto:info@opplexiptv.com" class="fx-link"><bdi>{{ $tEmail }}</bdi></a>
                     </li>
                     <li class="fx-list__item">
-                        <span class="fx-list__icon">📍</span>
+                        <span class="fx-list__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="2.5"/>
+                            </svg>
+                        </span>
                         <span>{{ $tAddress }}</span>
                     </li>
                 </ul>
@@ -224,14 +518,14 @@
             <div class="fx-copy">&copy; 2022 - {{ date('Y') }} <strong>Opplex IPTV</strong>. {{ $tRights }}</div>
             <div class="fx-legal-note">
                 {{ $legalNote ?? __('document_ui.footer.legal_note') }}
-                <div class="fx-deeplinks" style="font-size:12px; margin-top:6px; color:#aaa;">
+                <div class="fx-deeplinks">
                     @foreach (($footerLinks['deeplink'] ?? []) as $l)
-                        <a href="{{ $footerLinkUrl($l) }}">{{ $footerLinkLabel($l) }}</a>@if(!$loop->last) | @endif
+                        <a href="{{ $footerLinkUrl($l) }}">{{ $footerLinkLabel($l) }}</a>
                     @endforeach
                     @if (empty($footerLinks['deeplink']))
-                        <a href="{{ route('activate') }}">{{ __('document_ui.footer.activate') }}</a> |
-                        <a href="{{ route('configure') }}">{{ __('document_ui.footer.configure') }}</a> |
-                        <a href="{{ route('checkout') }}">{{ __('document_ui.footer.checkout') }}</a> |
+                        <a href="{{ route('activate') }}">{{ __('document_ui.footer.activate') }}</a>
+                        <a href="{{ route('configure') }}">{{ __('document_ui.footer.configure') }}</a>
+                        <a href="{{ route('checkout') }}">{{ __('document_ui.footer.checkout') }}</a>
                         <a href="{{ route('thankyou') }}">{{ __('document_ui.footer.thank_you') }}</a>
                     @endif
                 </div>
@@ -244,7 +538,9 @@
 
 </div><!-- End pagewrapper -->
 
-@include('includes.spin-popup')
+@if ($usesDiscountWheel)
+    @include('includes.spin-popup')
+@endif
 
 <div class="scroll-to-top scroll-to-target" data-target="html" aria-label="{{ __('document_ui.footer.scroll_to_top') }}">
     <span class="fa fa-arrow-up" aria-hidden="true"></span>
@@ -288,17 +584,74 @@
 @endif
 
 <!-- Local scripts last -->
+@if ($usesDiscountWheel)
 <script>
-    window.addEventListener('load', function () {
-        setTimeout(function () {
+    (function () {
+        var loaded = false;
+        var timer = null;
+
+        function cleanup() {
+            window.removeEventListener('pricing:viewed', scheduleDiscountWheel);
+            if (timer) window.clearTimeout(timer);
+        }
+
+        function pricingWasViewed() {
+            try { return sessionStorage.getItem('marketing.pricingViewed') === '1'; }
+            catch (e) { return false; }
+        }
+
+        function loadDiscountWheel() {
+            if (loaded) return;
+            if (!pricingWasViewed() || document.body.classList.contains('pricing-in-view') || window.__activeMarketingPrompt) {
+                timer = window.setTimeout(loadDiscountWheel, 3000);
+                return;
+            }
+            loaded = true;
+            cleanup();
+
             var s = document.createElement('script');
-            s.src = "{{ \Illuminate\Support\Facades\Vite::asset('resources/js/discount-wheel.js') }}";
+            s.src = "{{ Vite::asset('resources/js/discount-wheel.js') }}";
             s.type = 'module';
             s.defer = true;
+            s.addEventListener('load', function () {
+                var overlay = document.getElementById('dw-overlay');
+                if (!overlay) return;
+                new MutationObserver(function () {
+                    if (!overlay.classList.contains('show')) {
+                        if (window.__activeMarketingPrompt === 'discount-wheel') window.__activeMarketingPrompt = null;
+                        return;
+                    }
+                    if (document.body.classList.contains('va-panel-open') || window.__activeMarketingPrompt === 'voice-assistant') {
+                        if (window.DiscountWheel) window.DiscountWheel.hide();
+                        return;
+                    }
+                    window.__activeMarketingPrompt = 'discount-wheel';
+                }).observe(overlay, { attributes: true, attributeFilter: ['class'] });
+
+                new MutationObserver(function () {
+                    if (document.body.classList.contains('va-panel-open')) {
+                        window.__activeMarketingPrompt = 'voice-assistant';
+                        if (overlay.classList.contains('show') && window.DiscountWheel) {
+                            window.DiscountWheel.hide();
+                        }
+                    } else if (window.__activeMarketingPrompt === 'voice-assistant') {
+                        window.__activeMarketingPrompt = null;
+                    }
+                }).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+            });
             document.body.appendChild(s);
-        }, 5000);
-    });
+        }
+
+        function scheduleDiscountWheel() {
+            if (timer || loaded) return;
+            timer = window.setTimeout(loadDiscountWheel, 10000);
+        }
+
+        window.addEventListener('pricing:viewed', scheduleDiscountWheel, { once: true });
+        if (pricingWasViewed()) scheduleDiscountWheel();
+    })();
 </script>
+@endif
 @if ($usesLegacySiteAssets)
     @vite('resources/js/site.js')
 @endif

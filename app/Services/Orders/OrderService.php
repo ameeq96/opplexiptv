@@ -135,7 +135,10 @@ class OrderService
         ]), $request);
 
         $data['type'] = 'package';
-        return Order::create($data);
+        $data['payment_status'] = 'unpaid';
+        $order = Order::create($data);
+
+        return $order;
     }
 
     public function updateOrder(Request $request, Order $order): void
@@ -154,6 +157,7 @@ class OrderService
         }
 
         $order->update($data);
+
     }
 
     public function deleteOrder(Order $order): void

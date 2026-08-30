@@ -68,8 +68,14 @@ class UserClientController extends Controller
                 'value',
             ]);
 
-            // Export ALL clients
-            \App\Models\User::orderBy('id')->chunk(500, function ($users) use ($out) {
+            \App\Models\User::query()
+                ->whereNotNull('marketing_ads_consented_at')
+                ->where(function ($query) {
+                    $query->whereNull('marketing_ads_opted_out_at')
+                        ->orWhereColumn('marketing_ads_consented_at', '>', 'marketing_ads_opted_out_at');
+                })
+                ->orderBy('id')
+                ->chunk(500, function ($users) use ($out) {
                 foreach ($users as $u) {
                     [$fn, $ln] = $this->splitName((string) $u->name);
                     $email     = strtolower(trim((string) $u->email));
@@ -103,7 +109,7 @@ class UserClientController extends Controller
                     @ob_flush();
                 }
                 @flush();
-            });
+                });
 
             fclose($out);
         };

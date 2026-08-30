@@ -34,8 +34,15 @@
             </button>
 
             <a href="{{ route('admin.clients.export.facebook') }}" class="btn btn-warning">
-                Export CSV
+                Export Ads-Consented CSV
             </a>
+
+            <select name="consent" class="form-select" onchange="this.form.submit()">
+                <option value="">All Consent States</option>
+                <option value="email" @selected(request('consent') === 'email')>Email Consented</option>
+                <option value="whatsapp" @selected(request('consent') === 'whatsapp')>WhatsApp Consented</option>
+                <option value="ads" @selected(request('consent') === 'ads')>Ads Consented</option>
+            </select>
 
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="exclude_iptv" value="1" id="excludeIPTV"
@@ -75,6 +82,7 @@
                         <th>Name</th>
                         <th>Phone</th>
                         <th>Country</th>
+                        <th>Consent</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -87,6 +95,11 @@
                             <td>{{ $client->name }}</td>
                             <td>{{ $client->phone }}</td>
                             <td>{{ $client->country ?? 'N/A' }}</td>
+                            <td>
+                                <span class="badge-soft {{ $client->hasMarketingConsent('email') ? 'success' : 'gray' }}">Email</span>
+                                <span class="badge-soft {{ $client->hasMarketingConsent('whatsapp') ? 'success' : 'gray' }}">WhatsApp</span>
+                                <span class="badge-soft {{ $client->hasMarketingConsent('ads') ? 'success' : 'gray' }}">Ads</span>
+                            </td>
                             <td>
                                 @php
                                     $phone = preg_replace('/\D+/', '', $client->phone ?? '');
@@ -119,12 +132,16 @@
 
 
                                 <div class="d-inline-flex align-items-center gap-1">
-                                    @if ($waUniversal)
+                                    @if ($waUniversal && $client->hasMarketingConsent('whatsapp'))
                                         <a href="{{ $waUniversal }}" target="_blank" rel="noopener"
                                             class="btn btn-sm btn-outline-success wa-btn"
                                             data-android="{{ $waBusinessAndroid }}" data-web="{{ $waWeb }}">
                                             WhatsApp
                                         </a>
+                                    @endif
+
+                                    @if ($waUniversal && !$client->hasMarketingConsent('whatsapp'))
+                                        <span class="badge-soft gray">No WhatsApp consent</span>
                                     @endif
 
                                     <a href="{{ route('admin.clients.edit', $client) }}"
@@ -134,7 +151,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="6" class="text-muted">No clients found.</td>
+                            <td colspan="7" class="text-muted">No clients found.</td>
                         </tr>
                     @endforelse
                 </tbody>
@@ -229,4 +246,3 @@
         updateSelectedState();
     });
 </script>
-

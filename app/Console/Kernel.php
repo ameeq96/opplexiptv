@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
         // Requires the system cron to run `php artisan schedule:run` every minute.
         $schedule->command('sitemap:generate')->dailyAt('03:30');
         $schedule->command('indexnow:submit')->dailyAt('03:35');
+        $schedule->command('marketing:dispatch')->everyFifteenMinutes()->withoutOverlapping();
     }
 
     /**

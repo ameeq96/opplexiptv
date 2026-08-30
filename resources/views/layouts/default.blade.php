@@ -20,6 +20,8 @@
 
     @include('includes.footer')
 
+    @include('includes.cookie-consent')
+
     @include('includes.voice-assistant')
 
     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
@@ -39,7 +41,7 @@
         window.addEventListener('load', function () {
             setTimeout(function () {
                 var s = document.createElement('script');
-                s.src = "{{ \Illuminate\Support\Facades\Vite::asset('resources/js/voice-assistant.js') }}";
+                s.src = "{{ Vite::asset('resources/js/voice-assistant.js') }}";
                 s.type = 'module';
                 s.defer = true;
                 document.body.appendChild(s);

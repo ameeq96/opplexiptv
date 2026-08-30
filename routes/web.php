@@ -31,6 +31,10 @@ use App\Http\Controllers\{
     TrackingController,
     UserClientController,
     AdminNotificationController,
+    CheckoutDraftController,
+    ReferralController,
+    MarketingUnsubscribeController,
+    TrackingConsentController,
 };
 use App\Http\Controllers\DigitalCommerce\ProductController as DigitalProductController;
 use App\Http\Controllers\DigitalCommerce\CartController as DigitalCartController;
@@ -99,6 +103,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::post('orders/{order}/mark-messaged', [OrderController::class, 'markOneMessaged'])
             ->name('orders.markOneMessaged');
+        Route::post('orders/{order}/verify-payment', [OrderController::class, 'verifyPayment'])
+            ->middleware('throttle:10,1')
+            ->name('orders.verifyPayment');
 
         Route::post('locale', [DashboardController::class, 'setLocale'])->name('locale');
         Route::resource('blogs', AdminBlogController::class);
@@ -210,8 +217,14 @@ Route::group(
 
         Route::get('configure',        [HomeController::class, 'configure'])->name('configure');
         Route::get('checkout',         [HomeController::class, 'checkoutStep1'])->name('checkout');
+        Route::post('checkout/draft',  [CheckoutDraftController::class, 'store'])
+            ->middleware('throttle:20,1')
+            ->name('checkout.draft');
         Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->name('step2');
         Route::get('thank-you', [HomeController::class, 'thankYou'])->name('thankyou');
+        Route::get('refer/{code}', [ReferralController::class, 'capture'])
+            ->where('code', '[A-Za-z0-9]+')
+            ->name('referrals.capture');
     }
 );
 
@@ -219,3 +232,11 @@ Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'
     ->name('track.whatsapp.trial')
     ->middleware('throttle:30,1')
     ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
+
+Route::post('/tracking/consent', [TrackingConsentController::class, 'update'])
+    ->middleware('throttle:20,1')
+    ->name('tracking.consent');
+
+Route::match(['get', 'post'], '/marketing/unsubscribe', MarketingUnsubscribeController::class)
+    ->middleware('signed')
+    ->name('marketing.unsubscribe');

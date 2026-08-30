@@ -14,8 +14,8 @@
                         {{ asset('images/resource/movie-night-tv-1280.webp') }} 1280w"
                     sizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"
                     alt="{{ $isDocumentEnglish ? $documentSplit['image_alt'] : __('messages.home_split_image_alt') }}"
-                    loading="lazy"
-                    fetchpriority="low"
+                    loading="eager"
+                    fetchpriority="high"
                     decoding="async" width="1024" height="1024" class="img-fluid"
                     style="width: 100%; height: auto;" />
             </div>

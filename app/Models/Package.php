@@ -9,6 +9,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Package extends Model
 {
+    public const FILEX_YEARLY_CONNECTION_PRICES = [
+        2 => 69.99,
+        4 => 139.99,
+    ];
+
     protected $fillable = [
         'type',
         'vendor',
@@ -234,6 +239,7 @@ class Package extends Model
             'vendor'   => $vendor,
             'title'    => $title,
             'price'    => $priceStr,
+            'price_amount' => $this->price_amount,
             'duration_months' => $months,
             'features' => $features ?: self::defaultIptvFeatures(),
             'icon'     => $this->icon ?? 'images/icons/service-1.svg',
@@ -275,6 +281,8 @@ class Package extends Model
             'vendor'      => $vendor,                         // opplex | starshare (normalized)
             'title'       => $title,
             'price'       => $priceStr,
+            'price_amount' => $this->price_amount,
+            'credits'     => $this->credits,
             'icons'       => $icons,
             'features'    => $features ?: self::defaultResellerFeatures(),
             'button_link' => $this->button_link,

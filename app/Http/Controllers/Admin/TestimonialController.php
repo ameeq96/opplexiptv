@@ -91,6 +91,13 @@ class TestimonialController extends Controller
             'text' => ['required', 'string', 'max:1000'],
             'sort_order' => ['nullable', 'integer', 'min:0'],
             'is_active' => ['nullable', 'boolean'],
+            'is_verified' => ['nullable', 'boolean'],
+            'review_date' => ['nullable', 'date', 'before_or_equal:today'],
+            'country' => ['nullable', 'string', 'max:100'],
+            'device' => ['nullable', 'string', 'max:100'],
+            'verification_source' => ['required_if:is_verified,1', 'nullable', 'string', 'max:120'],
+            'proof_reference' => ['required_if:is_verified,1', 'nullable', 'string', 'max:191'],
+            'publication_consent' => ['nullable', 'boolean'],
         ];
 
         foreach (config('app.locales', [app()->getLocale()]) as $locale) {
@@ -104,7 +111,17 @@ class TestimonialController extends Controller
 
         $data = $request->validate($rules);
         $data['is_active'] = (bool) ($data['is_active'] ?? false);
+        $data['is_verified'] = (bool) ($data['is_verified'] ?? false);
         $data['sort_order'] = (int) ($data['sort_order'] ?? 0);
+        $data['verified_at'] = $data['is_verified'] ? now() : null;
+        $data['publication_consented_at'] = !empty($data['publication_consent']) ? now() : null;
+        unset($data['publication_consent']);
+
+        if ($data['is_verified'] && !$data['publication_consented_at']) {
+            throw \Illuminate\Validation\ValidationException::withMessages([
+                'publication_consent' => 'Publication permission is required before a review can be verified.',
+            ]);
+        }
 
         return $data;
     }

@@ -96,6 +96,15 @@
                             <div class="fw-semibold">{{ $payment }}</div>
                         </div>
                         <div class="col-md-4">
+                            <div class="small text-muted">Payment Status</div>
+                            <div class="fw-semibold text-uppercase">{{ $order->payment_status }}</div>
+                            <div class="text-muted small">{{ $order->payment_provider ?: 'Not verified' }}</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="small text-muted">GA4 Purchase</div>
+                            <div class="fw-semibold">{{ $order->ga_purchase_sent_at ? 'Sent' : 'Not sent' }}</div>
+                        </div>
+                        <div class="col-md-4">
                             <div class="small text-muted">Buying Date</div>
                             <div class="fw-semibold">{{ $order->buying_date ?? 'N/A' }}</div>
                         </div>
@@ -133,7 +142,27 @@
                         <div><strong>Messaged At:</strong> {{ $order->messaged_at ?? 'N/A' }}</div>
                         <div><strong>Created:</strong> {{ $order->created_at }}</div>
                         <div><strong>Updated:</strong> {{ $order->updated_at }}</div>
+                        @if ($order->referral)
+                            <div><strong>Referral Code:</strong> {{ $order->referral->code }}</div>
+                            <div><strong>Referral Status:</strong> {{ ucfirst($order->referral->status) }}</div>
+                        @endif
+                        @if ($order->referredBy)
+                            <div><strong>Referred By:</strong> {{ $order->referredBy->code }}</div>
+                            <div><strong>Qualification:</strong> {{ ucfirst($order->referredBy->status) }}</div>
+                        @endif
                     </div>
+                    @if ($order->payment_status !== 'paid')
+                        <form method="POST" action="{{ route('admin.orders.verifyPayment', $order) }}" class="mt-3">
+                            @csrf
+                            <label class="form-label" for="manualTransactionId">Payment reference</label>
+                            <input id="manualTransactionId" name="transaction_id" type="text" maxlength="191"
+                                class="form-control mb-2" required placeholder="Bank, card, or crypto reference">
+                            <button type="submit" class="btn btn-success w-100"
+                                onclick="return confirm('Confirm that this payment has been independently verified?')">
+                                Verify Payment
+                            </button>
+                        </form>
+                    @endif
                 </div>
             </div>
 
@@ -154,6 +183,20 @@
                     @endif
                 </div>
             </div>
+
+            <div class="card shadow-sm mt-3">
+                <div class="card-body">
+                    <h6 class="mb-3">Lifecycle Messages</h6>
+                    @forelse ($order->marketingDeliveries as $delivery)
+                        <div class="d-flex justify-content-between gap-2 border-bottom py-2 small">
+                            <span>{{ ucfirst($delivery->workflow) }} / {{ $delivery->channel }}</span>
+                            <strong>{{ $delivery->sent_at ? 'Sent' : ($delivery->failed_at ? 'Stopped' : 'Queued') }}</strong>
+                        </div>
+                    @empty
+                        <div class="text-muted">No consented lifecycle messages.</div>
+                    @endforelse
+                </div>
+            </div>
         </div>
     </div>
 
@@ -168,4 +211,3 @@
         }
     </script>
 @endsection
-

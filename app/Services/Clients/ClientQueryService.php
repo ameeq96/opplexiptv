@@ -28,6 +28,19 @@ class ClientQueryService
         if ($request->boolean('exclude_iptv')) {
             $q->where('name', 'not like', '%iptv%');
         }
+
+        if (in_array($request->query('consent'), ['email', 'whatsapp', 'ads'], true)) {
+            $channel = $request->query('consent');
+            $q->whereNotNull("marketing_{$channel}_consented_at")
+                ->where(function ($query) use ($channel) {
+                    $query->whereNull("marketing_{$channel}_opted_out_at")
+                        ->orWhereColumn(
+                            "marketing_{$channel}_consented_at",
+                            '>',
+                            "marketing_{$channel}_opted_out_at"
+                        );
+                });
+        }
     }
 
     public function applySorting(Builder $q): void

@@ -29,7 +29,7 @@
     </ul>
 
     <h3 class="h2">5. {{ __('terms.terms.refunds.title') }}</h3>
-    <p>{!! str_replace(':link', url('/refund-policy'), __('terms.terms.refunds.text')) !!}</p>
+    <p>{!! str_replace(':link', route('refund-policy'), __('terms.terms.refunds.text')) !!}</p>
 
     <h3 class="h2">6. {{ __('terms.terms.acceptable_use.title') }}</h3>
     <ul>
