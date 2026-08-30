@@ -89,9 +89,9 @@ return [
     ],
 
     'refund-policy' => [
-        'title'       => 'Refund & Return Policy',
-        'description' => 'View our Refund & Return Policy for legal IPTV subscriptions: eligibility window, non-refundable items, cancellation terms, and how to request a refund',
-        'keywords'    => 'Opplex IPTV refund, IPTV return policy, refund eligibility, cancellation policy, non-refundable, IPTV support, request refund',
+        'title'       => 'Refund & Cancellation Policy',
+        'description' => 'Read the Opplex IPTV final-sale and cancellation policy, including non-refundable digital purchases and refunds required by applicable law.',
+        'keywords'    => 'Opplex IPTV refund policy, final sale, cancellation policy, non-refundable IPTV, applicable law, IPTV support',
     ],
     'shop' => [
         'title'       => 'Streaming Devices, Accessories and Digital Subscriptions | Opplex Shop',

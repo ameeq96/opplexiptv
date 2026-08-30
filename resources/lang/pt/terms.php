@@ -26,8 +26,8 @@ return [
             'item3' => 'Renovação automática, salvo cancelamento.',
         ],
         'refunds' => [
-            'title' => 'Reembolsos e Cancelamentos',
-            'text' => 'Reembolsos seguem nossa <a href=":link">Política de Reembolso</a>. Somente disponíveis se o erro for nosso.',
+            'title' => 'Venda Definitiva, Reembolsos e Cancelamentos',
+            'text' => 'Assim que o preço for acordado e o pedido confirmado, a compra é definitiva e não reembolsável, salvo quando a legislação aplicável exigir um reembolso. Consulte a nossa <a href=":link">Política de Venda Definitiva e Reembolso</a>.',
         ],
         'acceptable_use' => [
             'title' => 'Uso Aceitável',

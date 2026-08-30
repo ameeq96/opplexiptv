@@ -1,32 +1,32 @@
 <?php
 
 return [
-    'title' => 'Política de Reembolso y Devolución',
-    'effective' => 'Vigente: 2022',
-    'intro' => 'Gracias por elegir <strong>Opplex IPTV</strong>. Nos esforzamos por ofrecer servicios IPTV de alta calidad. Lea atentamente nuestra política de reembolso antes de comprar.',
+    'title' => 'Política de Venta Definitiva y Reembolsos',
+    'effective' => 'En vigor desde el 30 de agosto de 2026',
+    'intro' => 'Gracias por elegir <strong>Opplex IPTV</strong>. Una vez acordado el precio y confirmado el pedido, la compra es definitiva y no reembolsable, salvo cuando la legislación aplicable exija un reembolso.',
     'eligibility' => [
-        'title' => 'Elegibilidad para Reembolso',
-        'item1' => 'Las solicitudes deben hacerse dentro de <strong>3 días</strong> de la compra.',
-        'item2' => 'Solo se aplica si el servicio <strong>no funciona</strong> o hay un <strong>problema técnico</strong> que no se resuelve en <strong>48 horas</strong>.',
-        'item3' => 'No habrá reembolsos después de <strong>3 días</strong> de activación.',
+        'title' => 'Venta Definitiva y Excepciones Legales',
+        'item1' => 'Una vez acordado el precio y confirmado el pedido, la compra es <strong>definitiva y no reembolsable</strong>.',
+        'item2' => 'Solo se concederá un reembolso cuando lo exija la <strong>legislación aplicable</strong>.',
+        'item3' => 'No ofrecemos reembolsos discrecionales por cambios de opinión, tiempo no utilizado o incompatibilidad del dispositivo, salvo cuando lo exija la ley.',
     ],
     'non_refundable' => [
-        'title' => 'Servicios No Reembolsables',
-        'item1' => 'Suscripciones después de <strong>24 horas</strong> no son reembolsables.',
-        'item2' => 'Los <strong>paquetes de prueba</strong> no son reembolsables.',
-        'item3' => 'No aplica si el problema es del cliente (dispositivo, conexión, app).',
+        'title' => 'Compras No Reembolsables',
+        'item1' => 'Las suscripciones, renovaciones y mejoras son definitivas una vez confirmado el pedido.',
+        'item2' => 'La activación y entrega de servicios digitales no es reembolsable, salvo cuando lo exija la ley.',
+        'item3' => 'Los problemas relacionados con el dispositivo, la conexión a Internet o la aplicación del cliente no generan un derecho adicional a reembolso.',
     ],
     'cancellation' => [
         'title' => 'Política de Cancelación',
-        'text' => 'Puedes cancelar en cualquier momento, pero <strong>no hay reembolsos</strong> por períodos parciales.',
+        'text' => 'Puedes dejar de usar el servicio en cualquier momento, pero la cancelación no da derecho a un reembolso ni a un crédito por el período actual o parcialmente utilizado, salvo cuando lo exija la legislación aplicable.',
     ],
     'process' => [
-        'title' => 'Proceso de Reembolso',
-        'item1' => 'Contacta a soporte en <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a>.',
-        'item2' => 'Una vez aprobado, se devolverá el dinero en <strong>7–10 días hábiles</strong>.',
+        'title' => 'Reembolsos Exigidos por Ley',
+        'item1' => 'Si consideras que la legislación aplicable exige un reembolso, contacta con soporte en <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a> e incluye los datos de tu pedido.',
+        'item2' => 'Las solicitudes válidas se evaluarán y los reembolsos exigidos por ley se procesarán de acuerdo con la legislación aplicable.',
     ],
     'returns' => [
         'title' => 'Devoluciones',
-        'text' => 'No aplican devoluciones físicas porque el servicio es <strong>digital</strong>.',
+        'text' => 'Como el servicio es <strong>digital</strong>, no hay productos físicos que devolver. Esto no limita ningún derecho que te otorgue la legislación aplicable.',
     ],
 ];

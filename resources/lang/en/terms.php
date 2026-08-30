@@ -27,7 +27,7 @@ return [
         ],
         'refunds' => [
             'title' => 'Refunds & Cancellations',
-            'text' => 'Refunds are handled according to our <a href=":link">Refund & Return Policy</a>. Because IPTV is a digital service, refunds are only possible when the service fails due to our error and cannot be fixed.',
+            'text' => 'Once the price is agreed and an order is confirmed, the purchase is final and non-refundable, except where a refund is required by applicable law. Please review our <a href=":link">Refund & Cancellation Policy</a> before purchasing.',
         ],
         'acceptable_use' => [
             'title' => 'Acceptable Use',

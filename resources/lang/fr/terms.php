@@ -26,8 +26,8 @@ return [
             'item3' => 'Les abonnements se renouvellent automatiquement sauf annulation avant la date de renouvellement.',
         ],
         'refunds' => [
-            'title' => 'Remboursements et annulations',
-            'text' => 'Les remboursements sont gérés selon notre <a href=":link">Politique de remboursement et de retour</a>. Comme l’IPTV est un service numérique, les remboursements ne sont possibles qu’en cas d’erreur de notre part.',
+            'title' => 'Vente définitive, remboursements et annulations',
+            'text' => 'Une fois le prix convenu et la commande confirmée, l’achat est définitif et non remboursable, sauf lorsqu’un remboursement est exigé par la législation applicable. Consultez notre <a href=":link">Politique de vente définitive et de remboursement</a>.',
         ],
         'acceptable_use' => [
             'title' => 'Utilisation acceptable',

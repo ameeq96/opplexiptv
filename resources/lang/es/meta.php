@@ -87,9 +87,9 @@ return [
         'keywords'    => 'privacidad IPTV, Opplex IPTV, protección de datos, cookies, datos personales, seguridad IPTV',
     ],
     'refund-policy' => [
-        'title'       => 'Política de Reembolsos y Devoluciones',
-        'description' => 'Consulta nuestra política de reembolsos para IPTV legal: período de elegibilidad, artículos no reembolsables, cancelaciones y cómo solicitar un reembolso.',
-        'keywords'    => 'reembolso IPTV, política de devolución, cancelación IPTV, Opplex IPTV reembolso',
+        'title'       => 'Política de Venta Definitiva y Reembolsos',
+        'description' => 'Consulta las condiciones de venta definitiva para las suscripciones de Opplex IPTV, las cancelaciones y los reembolsos exigidos por la legislación aplicable.',
+        'keywords'    => 'venta definitiva IPTV, política de reembolso, compra no reembolsable, cancelación IPTV',
     ],
     'shop' => [
         'title'       => 'Tienda | Dispositivos de streaming y accesorios de TV – Android TV Box, Fire TV, Roku y más',

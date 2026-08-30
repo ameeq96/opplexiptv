@@ -26,8 +26,8 @@ return [
             'item3' => 'Automatisch verlengd tenzij geannuleerd.',
         ],
         'refunds' => [
-            'title' => 'Terugbetalingen en Annuleringen',
-            'text' => 'Terugbetalingen volgen ons <a href=":link">Terugbetalingsbeleid</a> en zijn alleen mogelijk bij een fout van onze kant.',
+            'title' => 'Definitieve Verkoop, Terugbetalingen en Annuleringen',
+            'text' => 'Zodra de prijs is overeengekomen en de bestelling is bevestigd, is de aankoop definitief en niet-terugbetaalbaar, behalve wanneer het toepasselijke recht een terugbetaling vereist. Bekijk ons <a href=":link">Beleid voor Definitieve Verkoop en Terugbetaling</a>.',
         ],
         'acceptable_use' => [
             'title' => 'Toegestaan Gebruik',

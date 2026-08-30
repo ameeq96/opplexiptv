@@ -26,8 +26,8 @@ return [
             'item3' => 'Las suscripciones se renuevan automáticamente a menos que se cancelen antes de la fecha de renovación.',
         ],
         'refunds' => [
-            'title' => 'Reembolsos y Cancelaciones',
-            'text' => 'Los reembolsos se gestionan según nuestra <a href=":link">Política de Reembolsos y Devoluciones</a>. Como IPTV es un servicio digital, los reembolsos solo son posibles cuando el servicio falla por nuestro error y no puede solucionarse.',
+            'title' => 'Venta Definitiva, Reembolsos y Cancelaciones',
+            'text' => 'Una vez acordado el precio y confirmado el pedido, la compra es definitiva y no reembolsable, salvo cuando la legislación aplicable exija un reembolso. Consulta nuestra <a href=":link">Política de Venta Definitiva y Reembolsos</a>.',
         ],
         'acceptable_use' => [
             'title' => 'Uso Aceptable',

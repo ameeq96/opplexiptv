@@ -87,9 +87,9 @@ return [
         'keywords'    => 'privacy IPTV, Opplex IPTV, gegevensbescherming, cookies, persoonlijke data',
     ],
     'refund-policy' => [
-        'title'       => 'Restitutie- en Retourbeleid',
-        'description' => 'Bekijk ons restitutiebeleid voor IPTV-abonnementen: voorwaarden, niet-restitueerbare items en annuleringsregels.',
-        'keywords'    => 'refund IPTV, Opplex IPTV, retourbeleid, annulering IPTV',
+        'title'       => 'Beleid voor Definitieve Verkoop en Terugbetaling',
+        'description' => 'Bekijk de voorwaarden voor definitieve verkoop van Opplex IPTV-abonnementen, annuleringen en terugbetalingen die volgens het toepasselijke recht verplicht zijn.',
+        'keywords'    => 'definitieve verkoop IPTV, terugbetalingsbeleid, niet-terugbetaalbare aankoop, annulering IPTV',
     ],
     'shop' => [
         'title'       => 'Shop | Streamingapparaten & tv-accessoires – Android TV Box, Fire TV, Roku',

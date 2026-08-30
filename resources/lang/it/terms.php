@@ -26,8 +26,8 @@ return [
             'item3' => 'Il rinnovo è automatico salvo annullamento prima della scadenza.',
         ],
         'refunds' => [
-            'title' => 'Rimborsi e Cancellazioni',
-            'text' => 'I rimborsi seguono la nostra <a href=":link">Politica di Rimborso e Reso</a>. Poiché IPTV è un servizio digitale, i rimborsi sono concessi solo in caso di errore nostro.',
+            'title' => 'Vendita Definitiva, Rimborsi e Cancellazioni',
+            'text' => 'Una volta concordato il prezzo e confermato l’ordine, l’acquisto è definitivo e non rimborsabile, salvo quando un rimborso è richiesto dalla legge applicabile. Consulta la nostra <a href=":link">Politica di Vendita Definitiva e Rimborso</a>.',
         ],
         'acceptable_use' => [
             'title' => 'Uso Accettabile',

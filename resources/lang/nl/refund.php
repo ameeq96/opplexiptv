@@ -1,32 +1,32 @@
 <?php
 
 return [
-    'title' => 'Restitutie- en Retourbeleid',
-    'effective' => 'Van kracht: 2022',
-    'intro' => 'Bedankt dat je <strong>Opplex IPTV</strong> hebt gekozen. Lees ons restitutiebeleid zorgvuldig voordat je koopt.',
+    'title' => 'Beleid voor Definitieve Verkoop en Terugbetaling',
+    'effective' => 'Van kracht sinds 30 augustus 2026',
+    'intro' => 'Bedankt dat je voor <strong>Opplex IPTV</strong> hebt gekozen. Zodra de prijs is overeengekomen en de bestelling is bevestigd, is de aankoop definitief en niet-terugbetaalbaar, behalve wanneer het toepasselijke recht een terugbetaling vereist.',
     'eligibility' => [
-        'title' => 'Restitutievoorwaarden',
-        'item1' => 'Verzoek binnen <strong>3 dagen</strong> na aankoop.',
-        'item2' => 'Alleen als de dienst <strong>niet werkt</strong> of een <strong>technisch probleem</strong> heeft dat niet binnen <strong>48 uur</strong> is opgelost.',
-        'item3' => 'Geen restitutie na <strong>3 dagen</strong> van activatie.',
+        'title' => 'Definitieve Verkoop en Wettelijke Uitzonderingen',
+        'item1' => 'Zodra de prijs is overeengekomen en de bestelling is bevestigd, is de aankoop <strong>definitief en niet-terugbetaalbaar</strong>.',
+        'item2' => 'Een terugbetaling wordt alleen verleend wanneer deze volgens het <strong>toepasselijke recht</strong> verplicht is.',
+        'item3' => 'We bieden geen terugbetaling uit coulance bij verandering van gedachten, ongebruikte tijd of incompatibiliteit van een apparaat, tenzij de wet dit vereist.',
     ],
     'non_refundable' => [
-        'title' => 'Niet-terugbetaalbare Diensten',
-        'item1' => 'Abonnementen ouder dan <strong>24 uur</strong> zijn niet terugbetaalbaar.',
-        'item2' => '<strong>Proefpakketten</strong> zijn niet terugbetaalbaar.',
-        'item3' => 'Niet van toepassing bij klantproblemen (apparaat, internet, app).',
+        'title' => 'Niet-Terugbetaalbare Aankopen',
+        'item1' => 'Alle IPTV-abonnementen en andere digitaal geleverde diensten zijn niet-restitueerbaar zodra de bestelling is bevestigd.',
+        'item2' => 'De activering en levering van digitale diensten zijn niet-terugbetaalbaar, tenzij de wet dit vereist.',
+        'item3' => 'Problemen met het apparaat, de internetverbinding of de app van de klant geven geen aanvullend recht op terugbetaling.',
     ],
     'cancellation' => [
         'title' => 'Annuleringsbeleid',
-        'text' => 'Je kunt op elk moment annuleren, maar <strong>geen restitutie</strong> voor gedeeltelijke periodes.',
+        'text' => 'Je kunt op elk moment stoppen met het gebruik van de dienst, maar annulering geeft geen recht op terugbetaling of tegoed voor de lopende of gedeeltelijk gebruikte periode, tenzij het toepasselijke recht dit vereist.',
     ],
     'process' => [
-        'title' => 'Restitutieproces',
-        'item1' => 'Neem contact op via <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a>.',
-        'item2' => 'Restitutie binnen <strong>7–10 werkdagen</strong>.',
+        'title' => 'Wettelijk Verplichte Terugbetalingen',
+        'item1' => 'Als je van mening bent dat het toepasselijke recht een terugbetaling vereist, neem dan contact op met de ondersteuning via <a href="mailto:info@opplexiptv.com">info@opplexiptv.com</a> en vermeld je bestelgegevens.',
+        'item2' => 'Geldige verzoeken worden beoordeeld en wettelijk verplichte terugbetalingen worden volgens het toepasselijke recht verwerkt.',
     ],
     'returns' => [
         'title' => 'Retouren',
-        'text' => 'Geen fysieke retouren omdat het een <strong>digitale</strong> dienst is.',
+        'text' => 'Omdat de dienst <strong>digitaal</strong> is, zijn er geen fysieke producten om te retourneren. Dit beperkt geen enkel recht dat je volgens het toepasselijke recht hebt.',
     ],
 ];
