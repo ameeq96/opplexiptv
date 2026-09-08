@@ -23,7 +23,7 @@ return [
             'title' => 'Abonnementen en Betalingen',
             'item1' => 'Prijzen worden getoond bij de kassa.',
             'item2' => 'Wij accepteren betalingen via kaart of crypto (Cryptomus).',
-            'item3' => 'Automatisch verlengd tenzij geannuleerd.',
+            'item3' => 'Abonnementen worden niet automatisch verlengd. Na afloop kun je het actuele abonnement en de prijs bekijken en kiezen of je wilt verlengen.',
         ],
         'refunds' => [
             'title' => 'Definitieve Verkoop, Terugbetalingen en Annuleringen',

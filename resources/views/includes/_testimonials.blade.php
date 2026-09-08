@@ -69,7 +69,9 @@
                                 loading="lazy" decoding="async">
                             <span class="review-showcase__author-copy">
                                 <strong>{{ $testimonial['author_name'] }}</strong>
-                                <small class="testimonial-card__author-role">{{ $verifiedLabel }}</small>
+                                @if (!empty($testimonial['is_publicly_verified']))
+                                    <small class="testimonial-card__author-role">{{ $verifiedLabel }}</small>
+                                @endif
                             </span>
                         </figcaption>
                     </figure>

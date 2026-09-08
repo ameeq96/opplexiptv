@@ -12,7 +12,7 @@
         $isDocumentEnglish ? $documentAbout['hero']['heading'] : __('messages.about.title'),
         $isDocumentEnglish
             ? $documentAbout['hero']['paragraphs'][1]
-            : 'Learn about Opplex IPTV — a premium IPTV provider offering 4K live streaming, 12,000+ channels, a free trial and 24/7 support worldwide.',
+            : 'Learn about Opplex IPTV — a premium IPTV provider offering 4K live streaming, 12,000+ channels, a free trial and 24/7 support.',
         route('about'),
     )) !!}
 @endpush

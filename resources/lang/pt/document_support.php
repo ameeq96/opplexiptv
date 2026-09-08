@@ -36,7 +36,7 @@ return [
                     ],
                     [
                         'question' => 'A Opplex IPTV está disponível no meu país?',
-                        'answer' => 'Sim. A Opplex funciona onde quer que tenha uma ligação estável à Internet, nos EUA, Reino Unido, Canadá, Europa, Médio Oriente e além. A sua subscrição não está limitada a uma única região.',
+                        'answer' => 'A Opplex está disponível em muitas regiões, incluindo EUA, Reino Unido, Canadá, Europa e Médio Oriente. A reprodução depende da rede local, do dispositivo e das restrições regionais aplicáveis; contacte-nos para confirmar a sua localização se necessário.',
                     ],
                     [
                         'question' => 'Onde posso comprar a Opplex IPTV?',
@@ -49,7 +49,7 @@ return [
                 'items' => [
                     [
                         'question' => 'A Opplex IPTV oferece teste gratuito?',
-                        'answer' => 'Sim. Oferecemos um teste por $1 para verificar a qualidade dos canais, a estabilidade da imagem e o desempenho no seu próprio dispositivo antes de aderir a um plano completo. Envie-nos uma mensagem pelo WhatsApp para começar.',
+                        'answer' => 'Sim. Oferecemos um teste gratuito para verificar a disponibilidade dos canais, a qualidade da imagem e o desempenho no seu dispositivo antes de escolher um plano. Envie-nos uma mensagem pelo WhatsApp para começar.',
                     ],
                     [
                         'question' => 'Quanto custa uma subscrição?',
@@ -77,11 +77,11 @@ return [
                     ],
                     [
                         'question' => 'Que dispositivos funcionam com a Opplex?',
-                        'answer' => 'A Opplex funciona em praticamente tudo: Amazon Firestick, Fire TV, Android TV box, Smart TV Samsung e LG, telemóveis e tablets Android, iPhone, iPad, MAG box, PC Windows, Mac e Linux. Se suportar uma aplicação de leitura IPTV, funcionará.',
+                        'answer' => 'A Opplex é compatível com muitos dispositivos suportados, incluindo Amazon Firestick, Fire TV, Android TV box, Smart TVs compatíveis, telemóveis, tablets, MAG box, Windows, Mac e Linux com uma aplicação IPTV compatível.',
                     ],
                     [
                         'question' => 'A Opplex IPTV funciona num portátil ou PC?',
-                        'answer' => 'Sim. Transfira IPTV Smarters Pro para Windows ou IBO Player na página Aplicações e inicie sessão com as suas credenciais Opplex. Funciona perfeitamente no Windows 10 e versões posteriores e no Mac através de IBO Player.',
+                        'answer' => 'Sim. Transfira IPTV Smarters Pro para Windows ou IBO Player na página Aplicações e inicie sessão com as suas credenciais Opplex. Consulte a compatibilidade da versão do sistema e da aplicação antes da instalação.',
                     ],
                     [
                         'question' => 'Quantos dispositivos posso utilizar ao mesmo tempo?',
@@ -102,7 +102,7 @@ return [
                     ],
                     [
                         'question' => 'Quais são as vantagens da IPTV em relação ao cabo ou satélite?',
-                        'answer' => 'O custo é a principal vantagem: recebe muito mais canais por uma fração do preço. Também tem conteúdo a pedido, nenhuma antena para instalar e pode ver em qualquer ecrã, em qualquer lugar. A IPTV também facilita o acesso a conteúdo internacional que os fornecedores de cabo não oferecem.',
+                        'answer' => 'O custo é uma grande vantagem: recebe uma ampla seleção de canais por uma fração do preço. Também tem conteúdo a pedido, não precisa de instalar uma antena e pode ver em ecrãs compatíveis nas regiões suportadas. A IPTV também pode dar acesso ao conteúdo internacional disponível.',
                     ],
                 ],
             ],
@@ -171,7 +171,7 @@ return [
                 ],
                 [
                     'title' => 'Preços que não aumentam',
-                    'text' => '$2.99 por mês são $2.99 por mês. Não oferecemos uma tarifa promocional para aumentá-la na renovação. O preço da adesão é o mesmo que paga quando renova.',
+                    'text' => 'O preço mostrado no checkout é o que paga pelo período selecionado. Os planos não renovam automaticamente, permitindo consultar o plano e o preço atuais antes de renovar.',
                     'icon' => 'fa fa-tag',
                 ],
                 [
@@ -194,7 +194,7 @@ return [
                 'Paquistão, Índia e Bangladesh',
                 'E dezenas de outros países, desde que exista uma ligação estável à Internet',
             ],
-            'outro' => 'Uma subscrição funciona em todos eles. Sem bloqueios geográficos ou restrições regionais; apenas os seus dados de acesso e uma ligação à Internet, onde quer que esteja.',
+            'outro' => 'Uma subscrição pode ser utilizada em dispositivos compatíveis nas regiões suportadas. A reprodução e a disponibilidade de conteúdo dependem do dispositivo, da rede local, da origem e das restrições aplicáveis.',
         ],
         'team' => [
             'heading' => 'Uma pequena equipa com uma função muito específica',
@@ -239,7 +239,7 @@ return [
                 ],
                 [
                     'question' => 'Posso utilizar a Opplex fora dos EUA e da Europa?',
-                    'answer' => 'Sim. A Opplex funciona em qualquer lugar com uma ligação estável à Internet. Temos subscritores ativos em 40+ países. O serviço não tem bloqueios regionais.',
+                    'answer' => 'A Opplex está disponível em muitas regiões e tem subscritores em mais de 40 países. A reprodução depende da rede local, do dispositivo e das restrições aplicáveis; confirme o destino connosco antes de viajar.',
                 ],
             ],
         ],
@@ -283,10 +283,10 @@ return [
             'items' => [
                 ['title' => 'Iniciar um teste gratuito:', 'text' => 'Envie-nos uma mensagem pelo WhatsApp e indique o dispositivo em que pretende testar. Ativaremos um teste e orientaremos a configuração.', 'icon' => 'fa fa-play-circle-o'],
                 ['title' => 'Ajuda de configuração e instalação:', 'text' => 'Indique-nos o tipo de dispositivo pelo WhatsApp. Respondemos em poucos minutos com instruções passo a passo, normalmente acompanhadas por capturas de ecrã.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Dados de acesso em falta:', 'text' => 'Verifique primeiro a pasta de spam. Se os dados ainda não tiverem chegado, envie-nos o e-mail utilizado no pagamento e reenviaremos imediatamente.', 'icon' => 'fa fa-key'],
+                ['title' => 'Dados de acesso em falta:', 'text' => 'Verifique primeiro a pasta de spam. Se os dados ainda não tiverem chegado, envie-nos o e-mail utilizado no pedido; iremos verificar o pedido e reenviar os dados se necessário.', 'icon' => 'fa fa-key'],
                 ['title' => 'Questões de faturação e pagamento:', 'text' => 'Faça perguntas sobre cobranças, recibos, preços de renovação ou mudanças de plano pelo WhatsApp ou e-mail. Guardamos um registo de todos os pedidos e conseguimos consultar rapidamente os seus dados.', 'icon' => 'fa fa-credit-card'],
                 ['title' => 'Pedidos de revendedores:', 'text' => 'Tem interesse no painel de revendedor? Envie-nos uma mensagem pelo WhatsApp. Explicaremos como funcionam os créditos e como configurar a primeira linha de um cliente.', 'icon' => 'fa fa-users'],
-                ['title' => 'Pedidos de canais ou relatos de buffering:', 'text' => 'Não encontra um canal específico? Tem problemas de buffering? Informe-nos pelo WhatsApp e investigaremos, corrigiremos ou adicionaremos quando for possível.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Pedidos de canais ou relatos de buffering:', 'text' => 'Não encontra um canal específico? Tem problemas de buffering? Informe-nos pelo WhatsApp; iremos investigar e ajudar quando possível.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
@@ -302,8 +302,8 @@ return [
             'heading' => 'Contacto e apoio | Perguntas frequentes',
             'items' => [
                 ['question' => 'Qual é a forma mais rápida de obter ajuda?', 'answer' => 'WhatsApp para +1 (639) 390-3194. É acompanhado ao longo do dia e a maioria das perguntas recebe resposta em poucos minutos.'],
-                ['question' => 'Acabei de pagar, mas os meus dados de acesso não chegaram. O que devo fazer?', 'answer' => 'Verifique primeiro a pasta de spam ou lixo eletrónico. Se não estiverem lá após 10 minutos, envie-nos uma mensagem pelo WhatsApp com o endereço de e-mail utilizado no pagamento e reenviaremos imediatamente.'],
-                ['question' => 'Podem ajudar-me a configurar a Opplex no meu dispositivo específico?', 'answer' => 'Sim. Indique-nos o seu dispositivo: Firestick, modelo de Smart TV, MAG, Android box, iPhone, etc., e enviaremos os passos exatos. Com as instruções certas, a maioria das configurações demora menos de cinco minutos.'],
+                ['question' => 'Acabei de pagar, mas os meus dados de acesso não chegaram. O que devo fazer?', 'answer' => 'Verifique primeiro a pasta de spam ou lixo eletrónico. Depois, envie-nos pelo WhatsApp a referência do pedido ou o endereço de e-mail utilizado; a equipa verificará o pagamento e ajudará durante as horas de suporte ativas.'],
+                ['question' => 'Podem ajudar-me a configurar a Opplex no meu dispositivo específico?', 'answer' => 'Sim. Indique-nos o seu dispositivo: Firestick, modelo de Smart TV, MAG, Android box, iPhone, etc. Enviaremos instruções compatíveis; o tempo de configuração varia conforme o dispositivo e a aplicação.'],
                 ['question' => 'Que informações devo incluir quando entrar em contacto?', 'answer' => 'O endereço de e-mail do pedido, o dispositivo utilizado e uma descrição do problema. As capturas de ecrã ajudam se algo estiver errado no ecrã. Quanto mais detalhes fornecer de início, mais depressa podemos ajudar.'],
                 ['question' => 'Oferecem apoio noutros idiomas?', 'answer' => 'O nosso site está disponível em 10 idiomas. A nossa equipa de apoio consegue ajudar em vários deles. Se o inglês não for o seu primeiro idioma, pode enviar-nos uma mensagem no seu próprio idioma e faremos o possível para ajudar.'],
                 ['question' => 'Quero cancelar. O que devo fazer?', 'answer' => 'As subscrições não renovam automaticamente; simplesmente expiram no final do período. Se tiver alguma questão de faturação, consulte a nossa política de reembolso e cancelamento no rodapé ou envie um e-mail para info@opplexiptv.com.'],

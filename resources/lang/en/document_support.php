@@ -36,7 +36,7 @@ return [
                     ],
                     [
                         'question' => 'Is Opplex IPTV available in my country?',
-                        'answer' => 'Yes. Opplex works anywhere you have a stable internet connection, in the USA, UK, Canada, Europe, the Middle East, and beyond. Your subscription isn\'t locked to one region.',
+                        'answer' => 'Opplex is available in many regions, including the USA, UK, Canada, Europe, and the Middle East. Playback depends on your local network, device, and applicable regional restrictions, so ask us to confirm your location if needed.',
                     ],
                     [
                         'question' => 'Where can I buy Opplex IPTV?',
@@ -49,7 +49,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Does Opplex IPTV offer a free trial?',
-                        'answer' => 'Yes. We offer a $1 trial so you can check channel quality, picture stability, and performance on your own device before committing to a full plan. Message us on WhatsApp to get started.',
+                        'answer' => 'Yes. We offer a free trial so you can test channel availability, picture quality, and performance on your own device before choosing a plan. Message us on WhatsApp to get started.',
                     ],
                     [
                         'question' => 'How much does a subscription cost?',
@@ -102,7 +102,7 @@ return [
                     ],
                     [
                         'question' => 'What are the advantages of IPTV over cable or satellite?',
-                        'answer' => 'Cost is the big one; you get far more channels for a fraction of the price. You also get on-demand content, no dish to install, and you can watch on any screen anywhere. IPTV also makes it easy to access international content that cable providers don\'t carry.',
+                        'answer' => 'Cost is the big one; you get a broad channel selection for a fraction of the price. You also get on-demand content, no dish to install, and can watch on compatible screens in supported regions. IPTV can also provide access to available international content.',
                     ],
                 ],
             ],
@@ -171,7 +171,7 @@ return [
                 ],
                 [
                     'title' => 'Prices That Don\'t Creep',
-                    'text' => '$2.99 a month is $2.99 a month. We don\'t run a promotional rate and then bump it at renewal. The price you sign up at is the price you pay when you renew.',
+                    'text' => 'The price shown at checkout is what you pay for the selected plan period. Plans do not renew automatically, so you can review the current plan and price before renewing.',
                     'icon' => 'fa fa-tag',
                 ],
                 [
@@ -194,7 +194,7 @@ return [
                 'Pakistan, India, and Bangladesh',
                 'And dozens of other countries, as long as there\'s a solid internet connection',
             ],
-            'outro' => 'One subscription works in all of them. No geo-locks, no regional restrictions, just your login and an internet connection, wherever you are.',
+            'outro' => 'One subscription can be used across compatible devices in supported regions. Playback and content availability depend on the device, local network, source, and applicable restrictions.',
         ],
         'team' => [
             'heading' => 'A Small Team with a Very Specific Job',
@@ -239,7 +239,7 @@ return [
                 ],
                 [
                     'question' => 'Can I use Opplex outside the USA and Europe?',
-                    'answer' => 'Yes. Opplex works anywhere with a stable internet connection. We have active subscribers in 40+ countries. There are no region locks on the service.',
+                    'answer' => 'Opplex is available in many regions and has subscribers in 40+ countries. Playback depends on the local network, device, and applicable restrictions, so confirm your destination with us before travelling.',
                 ],
             ],
         ],
@@ -283,10 +283,10 @@ return [
             'items' => [
                 ['title' => 'Starting a Free Trial:', 'text' => 'Message us on WhatsApp and tell us which device you want to test on. We\'ll activate a trial and walk you through the setup.', 'icon' => 'fa fa-play-circle-o'],
                 ['title' => 'Setup and Installation Help:', 'text' => 'Tell us your device type on WhatsApp. We respond with step-by-step instructions, usually with screenshots, within minutes.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Missing Login Details:', 'text' => 'Check your spam folder first. If your details still haven\'t arrived, message us with the email you used at checkout, and we\'ll resend them immediately.', 'icon' => 'fa fa-key'],
+                ['title' => 'Missing Login Details:', 'text' => 'Check your spam folder first. If your details still haven\'t arrived, message us with the email you used at checkout, and we\'ll check the order and resend them if needed.', 'icon' => 'fa fa-key'],
                 ['title' => 'Billing and Payment Questions:', 'text' => 'Questions about charges, receipts, renewal pricing, or switching plans via WhatsApp or email. We keep a record of every order and can pull up your details quickly.', 'icon' => 'fa fa-credit-card'],
                 ['title' => 'Reseller Enquiries:', 'text' => 'Interested in the reseller panel? Message us on WhatsApp. We\'ll walk you through how credits work and how to set up your first customer line.', 'icon' => 'fa fa-users'],
-                ['title' => 'Channel Requests or Buffering Reports:', 'text' => 'Can\'t find a specific channel? Experiencing buffering? Let us know on WhatsApp, and we\'ll investigate, fix it, or add it where possible.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Channel Requests or Buffering Reports:', 'text' => 'Can\'t find a specific channel? Experiencing buffering? Let us know on WhatsApp, and we\'ll investigate and help where possible.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
@@ -302,7 +302,7 @@ return [
             'heading' => 'Contact & Support | Common Questions',
             'items' => [
                 ['question' => 'What\'s the fastest way to get help?', 'answer' => 'WhatsApp at +1 (639) 390-3194. It\'s monitored throughout the day, and most questions are answered within minutes.'],
-                ['question' => 'I just paid, but my login details haven\'t arrived. What do I do?', 'answer' => 'Check your spam or junk folder first. If they\'re not there after 10 minutes, message us on WhatsApp with the email address you used at checkout, and we\'ll resend them right away.'],
+                ['question' => 'I just paid, but my login details haven\'t arrived. What do I do?', 'answer' => 'Check your spam or junk folder first. If the details are not there, message us on WhatsApp with your order reference and email address. We\'ll verify the payment status and help during active support hours.'],
                 ['question' => 'Can you help me set up Opplex on my specific device?', 'answer' => 'Yes. Tell us your device: Firestick, Smart TV model, MAG, Android box, iPhone, etc and we\'ll send you the exact steps. Most setups take under five minutes with the right instructions.'],
                 ['question' => 'What information should I include when I contact you?', 'answer' => 'Your order email address, the device you\'re using, and a description of the issue. Screenshots help if something\'s going wrong on screen. The more detail upfront, the faster we can help.'],
                 ['question' => 'Do you offer support in other languages?', 'answer' => 'Our site is available in 10 languages. Our support team can assist with several of them. If English isn\'t your first language, feel free to message us in your own, and we\'ll do our best.'],

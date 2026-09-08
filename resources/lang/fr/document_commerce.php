@@ -216,7 +216,7 @@ return [
                 ],
                 [
                     'title' => 'Choisissez la formule annuelle',
-                    'description' => 'Si vous regardez régulièrement la TV et recherchez le meilleur tarif. $23.99 pour une année complète, soit moins de $2 par mois. Aucune pression de renouvellement, aucune hausse de prix : une année complète d’accès dès votre inscription.',
+                    'description' => 'Si vous regardez régulièrement la TV et recherchez le meilleur tarif. $23.99 pour une année complète, soit moins de $2 par mois, sans renouvellement automatique à la fin de la formule.',
                 ],
             ],
             'trial_heading' => 'Vous hésitez ? Essayez avant d’acheter :',
@@ -227,7 +227,7 @@ return [
             'paragraphs' => [
                 'Nous faisons au plus simple. Aucun frais de configuration. Aucun coût d’activation. Ce que vous voyez dans le tableau des tarifs est exactement ce que vous payez.',
                 'Nous acceptons les principales cartes de crédit et de débit grâce à un traitement des paiements chiffré et conforme aux normes du secteur. Nous acceptons aussi les paiements en cryptomonnaies via Cryptomus pour ceux qui le préfèrent.',
-                'Nous ne conservons pas les informations des cartes. Nous ne renouvelons rien automatiquement sans votre intervention. Lorsque votre formule arrive à son terme, elle prend fin ; vous choisissez si et quand la renouveler.',
+                'Nous ne conservons pas les informations des cartes et les formules ne se renouvellent pas automatiquement. Lorsque votre formule arrive à son terme, l’accès s’arrête jusqu’à ce que vous choisissiez de renouveler.',
             ],
         ],
         'faq' => [
@@ -238,8 +238,8 @@ return [
                     'answer' => 'La formule mensuelle coûte $2.99. Trois mois coûtent $7.99. La formule semestrielle coûte $14.99. La formule annuelle coûte $23.99. Les formules Filex commencent à $4.50 par mois. Tous les prix figurent dans le tableau ci-dessus.',
                 ],
                 [
-                    'question' => 'Les prix changent-ils au renouvellement ?',
-                    'answer' => 'Non. Le tarif de la formule reste le même lorsque vous renouvelez. Nous ne proposons pas un faible tarif de lancement pour l’augmenter après la première période.',
+                    'question' => 'Comment fonctionne le renouvellement ?',
+                    'answer' => 'Les formules ne se renouvellent pas automatiquement. Avant de renouveler, vérifiez la formule et le tarif en vigueur, puis choisissez si vous souhaitez continuer.',
                 ],
                 [
                     'question' => 'Quels moyens de paiement sont acceptés ?',
@@ -348,7 +348,7 @@ return [
             'items' => [
                 [
                     'question' => 'Comment démarrer ?',
-                    'answer' => 'Achetez un forfait de crédits revendeur sur cette page. Une fois le paiement effectué, votre accès au panneau est configuré et vous pouvez immédiatement commencer à activer des lignes client.',
+                    'answer' => 'Commandez un forfait de crédits revendeur sur cette page, puis poursuivez le paiement sur WhatsApp. L’accès au panneau est configuré après confirmation du paiement pendant les heures d’assistance actives.',
                 ],
                 [
                     'question' => 'Quelle est la différence entre les crédits revendeur Opplex et Filex ?',

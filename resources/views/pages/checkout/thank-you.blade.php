@@ -7,6 +7,35 @@
     // Session se success message (checkoutStep2 se aa raha hai)
     $successMessage = session('success');
     $orderSummary = session('order_summary');
+    $whatsappPaymentUrl = null;
+    $paymentMethodLabel = null;
+
+    if ($orderSummary) {
+        $paymentMethodLabel = match ($orderSummary['payment_method'] ?? null) {
+            'card' => __('messages.checkout_pay_card_title'),
+            'crypto' => __('messages.checkout_pay_crypto_title'),
+            default => ucfirst((string) ($orderSummary['payment_method'] ?? '')),
+        };
+        $whatsappNumber = preg_replace(
+            '/\D+/',
+            '',
+            (string) (config('services.whatsapp.number') ?: '16393903194')
+        );
+        $paymentMessage = __('messages.thankyou_page.whatsapp_payment_message', [
+            'order' => $orderSummary['id'],
+            'package' => $orderSummary['package'],
+            'amount' => sprintf(
+                '%s %.2f',
+                $orderSummary['currency'],
+                (float) $orderSummary['total']
+            ),
+            'method' => $paymentMethodLabel,
+        ]);
+
+        if ($whatsappNumber !== '') {
+            $whatsappPaymentUrl = 'https://wa.me/' . $whatsappNumber . '?text=' . rawurlencode($paymentMessage);
+        }
+    }
 @endphp
 
 <div class="thank-wrap">
@@ -71,9 +100,17 @@
     </div>
 
     <div class="thank-actions">
-      <a href="{{ route('activate', ['device' => $orderSummary['device'] ?? null]) }}" class="thank-btn-primary">
-        <i class="fa fa-play-circle"></i> {{ __('document_ui.footer.activate') }}
-      </a>
+      @if($whatsappPaymentUrl)
+        <a href="{{ $whatsappPaymentUrl }}" class="thank-btn-primary" target="_blank" rel="noopener noreferrer"
+          data-whatsapp-click
+          data-whatsapp-placement="thank_you_payment"
+          data-whatsapp-intent="payment"
+          data-whatsapp-package="{{ $orderSummary['package'] }}"
+          data-whatsapp-value="{{ number_format((float) $orderSummary['total'], 2, '.', '') }}"
+          data-whatsapp-currency="{{ $orderSummary['currency'] }}">
+          <i class="fa fa-whatsapp"></i> {{ __('messages.thankyou_page.continue_payment_whatsapp') }}
+        </a>
+      @endif
 
       <a href="{{ route('contact') ?? '#' }}" class="thank-btn-ghost">
         <i class="fa fa-life-ring"></i> {{ __('messages.thankyou_page.support_btn') }}

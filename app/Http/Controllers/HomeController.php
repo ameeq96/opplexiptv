@@ -754,6 +754,7 @@ class HomeController extends Controller
                 'device' => $device?->name,
                 'total' => $sellPrice,
                 'currency' => $currency,
+                'payment_method' => $data['paymethod'],
             ]);
     }
 

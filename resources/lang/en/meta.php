@@ -37,14 +37,14 @@ return [
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
     'buynow' => [
-        'title' => 'Buy IPTV Now | Access 4K IPTV and HD Streaming Instantly',
-        'description' => 'Buy IPTV today and enjoy instant access to top-quality IPTV services, including 4K streaming, HD channels, and a free trial.',
-        'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
+        'title' => 'Buy IPTV Now | 4K IPTV and HD Streaming Plans',
+        'description' => 'Choose an IPTV plan for supported 4K and HD streaming, then complete payment and activation with our team on WhatsApp.',
+        'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, WhatsApp IPTV activation',
     ],
     'buy-now-panel' => [
-        'title' => 'Buy IPTV Panel | Reseller IPTV Dashboard & Instant',
-        'description' => 'Buy your IPTV panel now and get instant access to a powerful IPTV dashboard for managing users, activating lines, and streaming in 4K & HD.',
-        'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
+        'title' => 'Buy IPTV Panel | Reseller IPTV Dashboard',
+        'description' => 'Order an IPTV reseller panel for managing users and activating lines, then complete payment and setup with our team on WhatsApp.',
+        'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, WhatsApp IPTV panel setup, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
     ],
     'iptv-applications' => [
         'title' => 'Best IPTV Apps for Android, iOS, Windows & Smart TV',
@@ -104,14 +104,14 @@ return [
         'keywords'    => 'IPTV configuration, IPTV setup, IPTV packages, IPTV reseller, subscription plan, Android TV box, Firestick, smart TV, 1 connection, 2 connections, 4 connections, yearly IPTV, monthly IPTV, streaming service',
     ],
     'checkout' => [
-        'title'       => 'Secure IPTV Checkout | Complete Your Order with Instant Activation',
-        'description' => 'Complete your IPTV order with our secure checkout: review your selected device, IPTV provider, connection plan and subscription package, then pay safely',
-        'keywords'    => 'IPTV checkout, secure checkout, complete order, IPTV payment, IPTV subscription, card payment, crypto payment, instant activation, IPTV order summary, streaming service',
+        'title'       => 'Secure IPTV Checkout | Submit Your Order',
+        'description' => 'Review your selected device, provider, connection and package, submit your IPTV order, then continue payment with our team on WhatsApp.',
+        'keywords'    => 'IPTV checkout, secure checkout, submit order, WhatsApp payment, IPTV subscription, card payment, crypto payment, IPTV order summary, streaming service',
     ],
     'thankyou' => [
-        'title'       => 'Thank You | Order Confirmed & Next Steps for Your IPTV Subscription',
-        'description' => 'Thank you for your order. Your IPTV subscription has been received and is now being processed.',
-        'keywords'    => 'thank you page, order confirmed, IPTV order, IPTV subscription, order success, activation instructions, account details, customer support, streaming service',
+        'title'       => 'Order Received | Continue IPTV Payment on WhatsApp',
+        'description' => 'Your IPTV order has been created and remains pending until payment is confirmed. Continue with our team on WhatsApp.',
+        'keywords'    => 'thank you page, order received, pending IPTV order, WhatsApp payment, IPTV subscription, activation instructions, account details, customer support, streaming service',
     ],
     'blogs' => [
         'index' => [

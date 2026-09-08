@@ -95,6 +95,7 @@
                 ->map(static function (array $copy, string $slug) use ($digitalNames): array {
                     $name = $digitalNames[$slug] ?? \Illuminate\Support\Str::headline($slug);
                     $price = trim((string) ($copy['price_label'] ?? ''), "(): \t\n\r\0\x0B");
+                    preg_match('/\d+(?:\.\d+)?/', $price, $priceMatch);
                     $url = 'https://wa.me/16393903194?text=' . rawurlencode(
                         __('document_ui.shop.purchase_message', [
                             'product' => $name,
@@ -108,6 +109,8 @@
                         'identifier' => $slug,
                         'slug' => $slug,
                         'name' => $name,
+                        'price' => isset($priceMatch[0]) ? (float) $priceMatch[0] : 0,
+                        'currency' => 'USD',
                         'image' => asset('images/digital-products/' . $slug . '.webp'),
                         'url' => $url,
                         'buy_now_url' => $url,
@@ -197,7 +200,13 @@
                                         : $name;
                                 @endphp
                                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                                    <article class="unified-card document-product-shop-card h-100">
+                                    <article class="unified-card document-product-shop-card h-100"
+                                        @if ($productType === 'digital')
+                                            data-whatsapp-package="{{ $displayName }}"
+                                            data-whatsapp-value="{{ number_format((float) data_get($product, 'price', 0), 2, '.', '') }}"
+                                            data-whatsapp-currency="{{ data_get($product, 'currency', 'USD') ?: 'USD' }}"
+                                            data-whatsapp-intent="purchase" data-whatsapp-placement="shop_digital_product"
+                                        @endif>
                                         <a class="unified-card__media" href="{{ $productUrl }}"
                                             @if ($target !== '') target="{{ $target }}" @endif
                                             @if ($rel !== '') rel="{{ $rel }}" @endif>

@@ -121,7 +121,7 @@ return [
     'testimonials' => [
         'title' => 'Recensioni dei clienti - La migliore esperienza IPTV',
         'heading' => 'Scopri cosa dicono gli spettatori di Opplex IPTV',
-        'intro' => 'Queste sono recensioni autentiche di clienti che ogni giorno usano Opplex IPTV per guardare TV in diretta, sport e contenuti on demand.',
+        'intro' => 'Opinioni condivise da utenti che utilizzano Opplex IPTV per TV in diretta, sport e contenuti on demand.',
         'verified_label' => 'Cliente IPTV verificato',
         'reviews' => [
             [

@@ -208,7 +208,7 @@ return [
                 ],
                 [
                     'title' => 'Kies 3 maanden',
-                    'description' => 'Als je de proefperiode hebt geprobeerd en tevreden bent, maar nog niet volledig wilt vastleggen. Je bespaart iets ten opzichte van maandelijks en krijgt drie ononderbroken maanden om aan de dienst te wennen.',
+                    'description' => 'Als je de proefperiode hebt geprobeerd en tevreden bent, maar nog niet volledig wilt vastleggen. Je bespaart iets ten opzichte van maandelijks en krijgt drie maanden toegang om aan de dienst te wennen.',
                 ],
                 [
                     'title' => 'Kies halfjaarlijks',
@@ -216,7 +216,7 @@ return [
                 ],
                 [
                     'title' => 'Kies jaarlijks',
-                    'description' => 'Als je regelmatig TV kijkt en het beste tarief wilt. $23.99 voor een heel jaar is minder dan $2 per maand. Geen druk om te verlengen, geen geleidelijke prijsstijging, gewoon een heel jaar toegang vanaf het moment dat je je aanmeldt.',
+                    'description' => 'Als je regelmatig TV kijkt en het beste tarief wilt. $23.99 voor een heel jaar is minder dan $2 per maand, zonder automatische verlenging wanneer het abonnement afloopt.',
                 ],
             ],
             'trial_heading' => 'Twijfel je? Probeer voordat je koopt:',
@@ -227,7 +227,7 @@ return [
             'paragraphs' => [
                 'We houden het eenvoudig. Geen installatiekosten. Geen activeringskosten. Wat je in de prijstabel ziet, is wat je betaalt. Punt.',
                 'We accepteren de belangrijkste creditcards en betaalpassen via versleutelde betalingsverwerking volgens de industrienorm. Voor wie daar de voorkeur aan geeft, accepteren we ook cryptobetalingen via Cryptomus.',
-                'We slaan geen kaartgegevens op. We verlengen niet automatisch zonder dat jij actie onderneemt. Wanneer je abonnement afloopt, stopt het; jij kiest of en wanneer je verlengt.',
+                'We slaan geen kaartgegevens op en abonnementen worden niet automatisch verlengd. Wanneer je abonnement afloopt, stopt de toegang totdat je ervoor kiest te verlengen.',
             ],
         ],
         'faq' => [
@@ -238,8 +238,8 @@ return [
                     'answer' => 'Maandelijks kost $2.99. Drie maanden kost $7.99. Halfjaarlijks kost $14.99. Jaarlijks kost $23.99. Filex-abonnementen beginnen bij $4.50 per maand. Alle prijzen staan in de tabel hierboven.',
                 ],
                 [
-                    'question' => 'Veranderen de prijzen bij verlenging?',
-                    'answer' => 'Nee. Het tarief van het abonnement blijft bij verlenging hetzelfde. We gebruiken geen laag introductietarief dat we na de eerste periode verhogen.',
+                    'question' => 'Hoe werkt verlenging?',
+                    'answer' => 'Abonnementen worden niet automatisch verlengd. Bekijk vóór verlenging het actuele abonnement en de prijs en kies vervolgens of je wilt doorgaan.',
                 ],
                 [
                     'question' => 'Welke betaalmethoden worden geaccepteerd?',
@@ -348,7 +348,7 @@ return [
             'items' => [
                 [
                     'question' => 'Hoe begin ik?',
-                    'answer' => 'Koop op deze pagina een resellercreditpakket. Zodra je betaling is verwerkt, wordt de toegang tot je paneel ingesteld en kun je direct klantlijnen activeren.',
+                    'answer' => 'Koop op deze pagina een resellercreditpakket. Na bevestiging van de betaling wordt de toegang tot je paneel normaal tijdens actieve ondersteuningsuren ingesteld; daarna kun je klantlijnen activeren.',
                 ],
                 [
                     'question' => 'Wat is het verschil tussen Opplex- en Filex-resellercredits?',
@@ -360,7 +360,7 @@ return [
                 ],
                 [
                     'question' => 'Wat als de lijn van een klant een probleem heeft?',
-                    'answer' => 'Stuur ons een bericht via WhatsApp. Resellers krijgen ondersteuning met voorrang, dus we pakken het snel aan. Je hoeft het probleem niet zelf op te lossen; daarvoor zijn wij er.',
+                    'answer' => 'Stuur ons een bericht via WhatsApp. Resellers krijgen ondersteuning met voorrang en het team helpt zo snel mogelijk tijdens actieve ondersteuningsuren. Je hoeft het probleem niet zelf op te lossen; daarvoor zijn wij er.',
                 ],
                 [
                     'question' => 'Zijn er maandelijkse kosten voor het paneel?',

@@ -113,9 +113,9 @@
                                     $lines = array_filter([
                                         "ðŸ‘‹ *{$client->name}*, looking for premium IPTV?",
                                         'âœ… Live TV + VOD | HD/4K ready | Smooth streaming',
-                                        'ðŸ“± Works on all devices | 24/7 support',
+                                        'ðŸ“± Works on popular supported devices | 24/7 support',
                                         '',
-                                        "ðŸŽ‰ Today's deal: Free setup + instant activation",
+                                        "ðŸŽ‰ Today's deal: Free setup + activation after payment confirmation",
                                         "ðŸ‘‰ {$payOrReply}",
                                     ]);
 

@@ -67,7 +67,7 @@ class ProductController extends Controller
                     'logo' => asset('images/opplexiptvlogo.webp'),
                     'telephone' => '+1-639-390-3194',
                     'email' => 'info@opplexiptv.com',
-                    'areaServed' => 'Worldwide',
+                    'areaServed' => 'Multiple supported regions',
                     'hasMerchantReturnPolicy' => [
                         '@type' => 'MerchantReturnPolicy',
                         'merchantReturnLink' => route('refund-policy'),

@@ -1559,7 +1559,7 @@
 </script>
 
 <script>
-    // --------- WhatsApp tracking + CAPI beacon (unchanged) ---------
+    // --------- WhatsApp click tracking + trial CAPI beacon ---------
     (function () {
         function uuidv4() {
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -1571,10 +1571,35 @@
 
         function isWhatsApp(href) {
             if (!href) return false;
-            href = href.toLowerCase();
-            return href.startsWith('https://wa.me/')
-                || href.startsWith('https://api.whatsapp.com/send')
-                || href.startsWith('whatsapp://send');
+            try {
+                const url = new URL(href, window.location.href);
+                const hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+                return url.protocol === 'whatsapp:'
+                    || hostname === 'wa.me'
+                    || hostname === 'whatsapp.com'
+                    || hostname.endsWith('.whatsapp.com');
+            } catch (e) {
+                return href.toLowerCase().startsWith('whatsapp://send');
+            }
+        }
+
+        function closestAttribute(el, attribute) {
+            const owner = el.closest('[' + attribute + ']');
+            return owner ? (owner.getAttribute(attribute) || '') : '';
+        }
+
+        function whatsappPlacement(el) {
+            const explicit = closestAttribute(el, 'data-whatsapp-placement')
+                || closestAttribute(el, 'data-wa-placement');
+            if (explicit) return explicit;
+            if (el.id === 'dw-copy') return 'discount_claim';
+            if (el.classList.contains('whatsapp-icon')) return 'floating_button';
+
+            const region = el.closest('header, footer, section[id], [role="dialog"][id], [id]');
+            if (!region) return 'page_content';
+            if (region.tagName === 'HEADER') return 'header';
+            if (region.tagName === 'FOOTER') return 'footer';
+            return region.id || 'page_content';
         }
 
         function readCookie(name) {
@@ -1607,10 +1632,40 @@
         }
 
         document.addEventListener('click', function (e) {
-            const el = e.target.closest('a[data-trial], button[data-trial]');
+            const el = e.target.closest('a[href], button[data-wa-href], [data-whatsapp-button], #dw-copy');
             if (!el) return;
             const href = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('data-wa-href');
-            if (!href || !isWhatsApp(href)) return;
+            const isDynamicWhatsAppButton = el.hasAttribute('data-whatsapp-button') || el.id === 'dw-copy';
+            if (!isDynamicWhatsAppButton && (!href || !isWhatsApp(href))) return;
+
+            const rawValue = closestAttribute(el, 'data-whatsapp-value')
+                || closestAttribute(el, 'data-wa-value')
+                || closestAttribute(el, 'data-price');
+            const parsedValue = Number.parseFloat(rawValue);
+            const plan = closestAttribute(el, 'data-whatsapp-package')
+                || closestAttribute(el, 'data-wa-plan')
+                || closestAttribute(el, 'data-plan');
+            const intent = closestAttribute(el, 'data-whatsapp-intent') || 'contact';
+            const packageName = plan || (intent === 'trial' ? 'free_trial' : 'not_applicable');
+            const currency = closestAttribute(el, 'data-whatsapp-currency')
+                || closestAttribute(el, 'data-wa-currency')
+                || "{{ $currency }}";
+            const placement = whatsappPlacement(el);
+
+            try {
+                window.trackMarketingEvent('whatsapp_click', {
+                    page_path: window.location.pathname,
+                    placement: placement,
+                    package: packageName,
+                    plan: packageName,
+                    intent: intent,
+                    value: Number.isFinite(parsedValue) ? parsedValue : 0,
+                    currency: currency,
+                    contact_channel: 'whatsapp'
+                });
+            } catch(e) { /* analytics queues may not be available yet */ }
+
+            if (!el.hasAttribute('data-trial')) return;
 
             const eventId = uuidv4();
             try {

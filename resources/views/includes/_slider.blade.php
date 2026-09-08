@@ -12,7 +12,8 @@
                 <p class="description">{{ $documentHero['text'] }}</p>
                 <div class="btn-group d-flex justify-content-center gap-2 flex-wrap">
                     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
-                        class="btn btn-primary" target="_blank" rel="noopener" data-trial
+                        class="btn btn-primary" target="_blank" rel="noopener" data-trial data-whatsapp-click
+                        data-whatsapp-placement="hero" data-whatsapp-intent="trial"
                         data-wa-href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}">
                         {{ $documentHero['primary_cta'] }} <span>&#8599;</span>
                     </a>
@@ -29,12 +30,14 @@
                 </p>
                 <div class="btn-group d-flex justify-content-center gap-2 flex-wrap">
                     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_pricing')) }}" target="_blank"
-                        rel="noopener" class="btn btn-primary">
+                        rel="noopener" class="btn btn-primary" data-whatsapp-click
+                        data-whatsapp-placement="hero" data-whatsapp-intent="pricing">
                         {{ __('messages.see_pricing') }} <span>&#10148;</span>
                     </a>
 
                     <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
-                        class="btn btn-outline" target="_blank" rel="noopener" data-trial>
+                        class="btn btn-outline" target="_blank" rel="noopener" data-trial data-whatsapp-click
+                        data-whatsapp-placement="hero" data-whatsapp-intent="trial">
                         {{ __('messages.start_trial') }} <span>&#8599;</span>
                     </a>
                 </div>
@@ -126,6 +129,7 @@
                                             <div class="btns-box {{ $isRtl ? 'text-right' : 'text-left' }} {{ $isDocumentEnglish ? 'home-document-hero__actions' : '' }}">
                                                 @if ($isDocumentEnglish)
                                                     <a target="_blank" rel="noopener" data-trial
+                                                        data-whatsapp-click data-whatsapp-placement="hero" data-whatsapp-intent="trial"
                                                         data-wa-href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                                         href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                                         class="theme-btn btn-style-two {{ $isRtl ? 'rtl-btn' : 'ltr-btn' }}">
@@ -137,6 +141,7 @@
                                                     </a>
                                                 @else
                                                     <a target="__blank" href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}"
+                                                        data-whatsapp-click data-whatsapp-placement="hero" data-whatsapp-intent="explore"
                                                         class="theme-btn btn-style-two {{ $isRtl ? 'rtl-btn' : 'ltr-btn' }}">
                                                         <span class="txt">
                                                             {{ __('messages.explore_more') }}
@@ -219,6 +224,7 @@
                                     <div class="btns-box {{ $isRtl ? 'text-right' : 'text-left' }} {{ $isDocumentEnglish ? 'home-document-hero__actions' : '' }}">
                                         @if ($isDocumentEnglish)
                                             <a target="_blank" rel="noopener" data-trial
+                                                data-whatsapp-click data-whatsapp-placement="hero" data-whatsapp-intent="trial"
                                                 data-wa-href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                                 href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                                 class="theme-btn btn-style-two {{ $isRtl ? 'rtl-btn' : 'ltr-btn' }}">
@@ -230,6 +236,7 @@
                                             </a>
                                         @else
                                             <a target="__blank" href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}"
+                                                data-whatsapp-click data-whatsapp-placement="hero" data-whatsapp-intent="explore"
                                                 class="theme-btn btn-style-two {{ $isRtl ? 'rtl-btn' : 'ltr-btn' }}">
                                                 <span class="txt">
                                                     {{ __('messages.explore_more') }}

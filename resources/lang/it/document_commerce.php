@@ -208,7 +208,7 @@ return [
                 ],
                 [
                     'title' => 'Scegli 3 mesi',
-                    'description' => 'Se hai provato il servizio e ti è piaciuto, ma non sei pronto per un impegno completo. Risparmi un po’ rispetto al mensile e hai tre mesi senza interruzioni per familiarizzare con il servizio.',
+                    'description' => 'Se hai provato il servizio e ti è piaciuto, ma non sei pronto per un impegno completo. Risparmi un po’ rispetto al mensile e hai tre mesi di accesso per familiarizzare con il servizio.',
                 ],
                 [
                     'title' => 'Scegli il semestrale',
@@ -216,7 +216,7 @@ return [
                 ],
                 [
                     'title' => 'Scegli l’annuale',
-                    'description' => 'Se guardi regolarmente la TV e vuoi la tariffa migliore. $23.99 per un anno intero equivalgono a meno di $2 al mese. Nessuna pressione per il rinnovo, nessun aumento di prezzo: solo un anno completo di accesso dal momento dell’iscrizione.',
+                    'description' => 'Se guardi regolarmente la TV e vuoi la tariffa migliore. $23.99 per un anno intero equivalgono a meno di $2 al mese, senza rinnovo automatico alla scadenza del piano.',
                 ],
             ],
             'trial_heading' => 'Sei indeciso? Prova prima di acquistare:',
@@ -227,7 +227,7 @@ return [
             'paragraphs' => [
                 'Manteniamo tutto semplice. Nessun costo di configurazione. Nessun costo di attivazione. Ciò che vedi nella tabella dei prezzi è esattamente ciò che paghi.',
                 'Accettiamo le principali carte di credito e di debito tramite un sistema di pagamento crittografato conforme agli standard del settore. Accettiamo anche pagamenti in criptovalute tramite Cryptomus per chi li preferisce.',
-                'Non memorizziamo i dati della carta. Non effettuiamo rinnovi automatici senza una tua azione. Quando il piano termina, termina: sei tu a scegliere se e quando rinnovare.',
+                'Non memorizziamo i dati della carta e i piani non si rinnovano automaticamente. Alla scadenza del piano, l’accesso termina finché non scegli di rinnovare.',
             ],
         ],
         'faq' => [
@@ -238,8 +238,8 @@ return [
                     'answer' => 'Il piano mensile costa $2.99. Tre mesi costano $7.99. Il semestrale costa $14.99. L’annuale costa $23.99. I piani Filex partono da $4.50 al mese. Tutti i prezzi sono indicati nella tabella qui sopra.',
                 ],
                 [
-                    'question' => 'I prezzi cambiano al rinnovo?',
-                    'answer' => 'No. La tariffa del piano rimane invariata al rinnovo. Non proponiamo un prezzo iniziale basso per poi aumentarlo dopo il primo periodo.',
+                    'question' => 'Come funziona il rinnovo?',
+                    'answer' => 'I piani non si rinnovano automaticamente. Prima di rinnovare, verifica il piano e il prezzo attuali, quindi scegli se continuare.',
                 ],
                 [
                     'question' => 'Quali metodi di pagamento sono accettati?',
@@ -348,7 +348,7 @@ return [
             'items' => [
                 [
                     'question' => 'Come posso iniziare?',
-                    'answer' => 'Acquista un pacchetto di crediti per rivenditori da questa pagina. Una volta completato il pagamento, configureremo il tuo accesso al pannello e potrai iniziare subito ad attivare le linee dei clienti.',
+                    'answer' => 'Acquista un pacchetto di crediti per rivenditori da questa pagina. Dopo la conferma del pagamento, l’accesso al pannello viene configurato normalmente durante l’orario di assistenza attivo; in seguito potrai attivare le linee dei clienti.',
                 ],
                 [
                     'question' => 'Qual è la differenza tra i crediti per rivenditori Opplex e Filex?',
@@ -360,7 +360,7 @@ return [
                 ],
                 [
                     'question' => 'Cosa succede se la linea di un cliente ha un problema?',
-                    'answer' => 'Scrivici su WhatsApp. I rivenditori ricevono assistenza prioritaria, quindi interverremo rapidamente. Non devi risolvere i problemi da solo: siamo qui proprio per questo.',
+                    'answer' => 'Scrivici su WhatsApp. I rivenditori ricevono assistenza prioritaria e il team interviene il prima possibile durante l’orario di assistenza attivo. Non devi risolvere i problemi da solo: siamo qui proprio per questo.',
                 ],
                 [
                     'question' => 'È previsto un canone mensile per il pannello?',

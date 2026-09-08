@@ -8,7 +8,7 @@ return [
     ],
     'about' => [
         'title' => 'Sobre Opplex IPTV - Provedor Premium de IPTV Ao Vivo 4K',
-        'description' => 'Opplex IPTV oferece xtreme hd iptv com streaming 4K, teste gratuito e suporte 24/7.',
+        'description' => 'A Opplex IPTV oferece Xtreme HD IPTV com streaming 4K, teste gratuito e suporte 24/7.',
         'keywords' => 'melhor iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv teste gratuito, iptv ao vivo 4k, iptv box',
     ],
     'pricing' => [
@@ -37,14 +37,14 @@ return [
         'keywords' => 'revendedor iptv, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, iptv ao vivo 4k, melhor iptv',
     ],
     'buynow' => [
-        'title' => 'Compre IPTV Agora | Acesso Instantâneo a IPTV 4K e HD',
-        'description' => 'Compre IPTV hoje e aproveite acesso instantâneo aos melhores serviços IPTV, incluindo streaming 4K, canais HD e teste gratuito.',
-        'keywords' => 'compre IPTV agora, IPTV 4K, comprar serviço IPTV, adquirir IPTV box, streaming IPTV, assinatura IPTV, IPTV HD, acesso instantâneo IPTV',
+        'title' => 'Compre IPTV Agora | Planos de Streaming 4K e HD',
+        'description' => 'Escolha um plano IPTV para streaming 4K e HD suportado e conclua o pagamento e a ativação com a nossa equipa pelo WhatsApp.',
+        'keywords' => 'compre IPTV agora, IPTV 4K, comprar serviço IPTV, adquirir IPTV box, streaming IPTV, assinatura IPTV, IPTV HD, ativação IPTV no WhatsApp',
     ],
     'buy-now-panel' => [
-        'title' => 'Comprar Painel IPTV | Dashboard de Revendedor & Ativação',
-        'description' => 'Compre seu painel IPTV agora e obtenha acesso instantâneo a um poderoso dashboard IPTV para gerenciar usuários, ativar linhas e transmitir em 4K & HD.',
-        'keywords' => 'comprar painel IPTV, dashboard revendedor IPTV, painel de gestão IPTV, acesso instantâneo painel IPTV, painel IPTV 4K, painel IPTV HD, painel de controle IPTV, ferramentas revendedor IPTV',
+        'title' => 'Comprar Painel IPTV | Dashboard de Revendedor',
+        'description' => 'Peça um painel de revendedor IPTV para gerir utilizadores e ativar linhas, depois conclua o pagamento e a configuração com a nossa equipa pelo WhatsApp.',
+        'keywords' => 'comprar painel IPTV, dashboard revendedor IPTV, painel de gestão IPTV, configuração painel IPTV no WhatsApp, painel IPTV 4K, painel IPTV HD, painel de controle IPTV, ferramentas revendedor IPTV',
     ],
     'iptv-applications' => [
         'title' => 'Principais Apps IPTV: Smarters, Player, Android TV & Mais',
@@ -102,14 +102,14 @@ return [
         'keywords'    => 'configuração IPTV, instalação IPTV, pacotes IPTV, revenda IPTV, plano de assinatura, Android TV Box, Firestick, smart TV, 1 conexão, 2 conexões, 4 conexões, IPTV anual, IPTV mensal, serviço de streaming',
     ],
     'checkout' => [
-        'title'       => 'Checkout IPTV Seguro | Complete seu pedido com ativação imediata',
-        'description' => 'Conclua seu pedido IPTV em uma página de checkout segura: revise o dispositivo selecionado, o provedor IPTV, o plano de conexão e o pacote de assinatura,',
-        'keywords'    => 'checkout IPTV, pagamento seguro IPTV, concluir pedido, pagamento IPTV, assinatura IPTV, pagamento com cartão, pagamento com cripto, ativação imediata, resumo do pedido, serviço de streaming',
+        'title'       => 'Checkout IPTV | Envie o pedido e continue no WhatsApp',
+        'description' => 'Reveja o dispositivo, o fornecedor, as ligações e o pacote, envie o pedido e continue o pagamento com a nossa equipa no WhatsApp. A ativação começa após a confirmação do pagamento.',
+        'keywords'    => 'checkout IPTV, enviar pedido, pagamento IPTV no WhatsApp, assinatura IPTV, método de pagamento, ativação após confirmação, resumo do pedido, serviço de streaming',
     ],
     'thankyou' => [
-        'title'       => 'Obrigado | Pedido confirmado e próximos passos do seu IPTV',
-        'description' => 'Obrigado pelo seu pedido. A sua assinatura IPTV foi recebida e está a ser processada.',
-        'keywords'    => 'página de agradecimento, pedido confirmado, pedido IPTV, assinatura IPTV, pedido concluído, instruções de ativação, detalhes da conta, suporte ao cliente, serviço de streaming',
+        'title'       => 'Pedido recebido | Continue o pagamento IPTV no WhatsApp',
+        'description' => 'O seu pedido IPTV foi criado e permanece pendente até à confirmação do pagamento. Continue com a nossa equipa pelo WhatsApp.',
+        'keywords'    => 'página de agradecimento, pedido recebido, pedido IPTV pendente, pagamento WhatsApp, assinatura IPTV, instruções de ativação, detalhes da conta, suporte ao cliente, serviço de streaming',
     ],
     'blogs' => [
         'index' => [

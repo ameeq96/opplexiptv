@@ -8,7 +8,7 @@ return [
     ],
     'about' => [
         'title' => 'Opplex IPTV کے بارے میں - پریمیم 4K لائیو IPTV فراہم کنندہ',
-        'description' => 'Opplex IPTV آپ کو xtreme hd iptv کے ساتھ 4K اسٹریمنگ، مفت ٹرائل اور 24/7 سپورٹ فراہم کرتا ہے۔ ہمارا مشن جانیے کہ ہم یورپ اور USA میں بہترین IPTV سروس کیسے',
+        'description' => 'Opplex IPTV آپ کو Xtreme HD IPTV کے ساتھ 4K اسٹریمنگ، مفت ٹرائل اور 24/7 سپورٹ فراہم کرتا ہے۔',
         'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
@@ -37,14 +37,14 @@ return [
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
     'buynow' => [
-        'title' => 'ابھی IPTV خریدیں | فوری ایکسس 4K IPTV اور HD اسٹریمنگ',
-        'description' => 'آج ہی IPTV خریدیں اور فوری بہترین IPTV سروسز انجوائے کریں، 4K اسٹریمنگ، HD چینلز اور مفت ٹرائل کے ساتھ۔ بہترین IPTV باکسز پائیں اور یورپ و USA میں',
-        'keywords' => 'buy IPTV now, 4K IPTV, buy IPTV service, purchase IPTV box, IPTV streaming, buy IPTV subscription, HD IPTV, instant IPTV access',
+        'title' => 'ابھی IPTV خریدیں | 4K IPTV اور HD اسٹریمنگ پلانز',
+        'description' => 'معاون 4K اور HD اسٹریمنگ کے لیے IPTV پلان منتخب کریں، پھر ہماری ٹیم کے ساتھ WhatsApp پر ادائیگی اور ایکٹیویشن مکمل کریں۔',
+        'keywords' => 'ابھی IPTV خریدیں, 4K IPTV, IPTV سروس خریدیں, IPTV باکس خریدیں, IPTV اسٹریمنگ, IPTV سبسکرپشن خریدیں, HD IPTV, WhatsApp IPTV ایکٹیویشن',
     ],
     'buy-now-panel' => [
-        'title' => 'IPTV پینل خریدیں | ریسیلر IPTV ڈیش بورڈ اور فوری ایکٹیویشن',
-        'description' => 'ابھی اپنا IPTV پینل خریدیں اور فوری IPTV ڈیش بورڈ تک ایکسس حاصل کریں تاکہ یوزرز مینج کریں، لائنز ایکٹیویٹ کریں اور 4K & HD اسٹریمنگ پائیں۔ یورپ، USA اور',
-        'keywords' => 'buy IPTV panel, IPTV reseller dashboard, IPTV management panel, instant IPTV panel access, 4K IPTV panel, HD IPTV panel, IPTV control panel, reseller IPTV tools',
+        'title' => 'IPTV پینل خریدیں | ری سیلر IPTV ڈیش بورڈ',
+        'description' => 'صارفین کو منظم کرنے اور لائنز فعال کرنے کے لیے IPTV ری سیلر پینل آرڈر کریں، پھر ہماری ٹیم کے ساتھ WhatsApp پر ادائیگی اور سیٹ اپ مکمل کریں۔',
+        'keywords' => 'IPTV پینل خریدیں, IPTV ری سیلر ڈیش بورڈ, IPTV مینجمنٹ پینل, WhatsApp IPTV پینل سیٹ اپ, 4K IPTV پینل, HD IPTV پینل, IPTV کنٹرول پینل, ری سیلر IPTV ٹولز',
     ],
     'iptv-applications' => [
         'title' => 'بہترین IPTV ایپس: Smarters، پلیئر، Android TV اور مزید',
@@ -102,14 +102,14 @@ return [
         'keywords'    => 'IPTV کنفیگریشن, IPTV سیٹ اپ, IPTV پیکجز, IPTV ری سیلر, سبسکرپشن پلان, Android TV Box, فائر اسٹک, اسمارٹ ٹی وی, 1 کنکشن, 2 کنیکشن, 4 کنیکشن, سالانہ IPTV, ماہانہ IPTV, اسٹریمنگ سروس',
     ],
     'checkout' => [
-        'title'       => 'محفوظ IPTV Checkout | فوری ایکٹیویشن کے ساتھ اپنا آرڈر مکمل کریں',
-        'description' => 'محفوظ چیک آؤٹ کے ذریعے اپنا IPTV آرڈر مکمل کریں: منتخب ڈیوائس، IPTV پرووائیڈر، کنیکشن پلان اور سبسکرپشن پیکج کو ریویو کریں، پھر آسانی سے کارڈ یا کرپٹو کے',
-        'keywords'    => 'IPTV checkout, محفوظ چیک آؤٹ, آرڈر مکمل کریں, IPTV ادائیگی, IPTV سبسکرپشن, کارڈ پیمنٹ, کرپٹو پیمنٹ, فوری ایکٹیویشن, آرڈر سمری, اسٹریمنگ سروس',
+        'title'       => 'IPTV چیک آؤٹ | آرڈر جمع کریں اور واٹس ایپ پر جاری رکھیں',
+        'description' => 'ڈیوائس، پرووائیڈر، کنیکشنز اور پیکج دیکھ کر آرڈر جمع کریں، پھر WhatsApp پر ہماری ٹیم کے ساتھ ادائیگی جاری رکھیں۔ ادائیگی کی تصدیق کے بعد ایکٹیویشن شروع ہوتی ہے۔',
+        'keywords'    => 'IPTV چیک آؤٹ, آرڈر جمع کریں, واٹس ایپ پر IPTV ادائیگی, IPTV سبسکرپشن, ادائیگی کا طریقہ, تصدیق کے بعد ایکٹیویشن, آرڈر سمری, اسٹریمنگ سروس',
     ],
     'thankyou' => [
-        'title'       => 'شکریہ | آپ کا آرڈر کنفرم ہو گیا اور IPTV سبسکرپشن کی اگلی تفصیلات',
-        'description' => 'آپ کے آرڈر کا شکریہ۔ آپ کی IPTV سبسکرپشن ہمیں موصول ہو گئی ہے اور اس پر کام جاری ہے۔ آپ کو ای میل کے ذریعے آرڈر کی تفصیلات، ایکٹیویشن کی ہدایات اور اگر',
-        'keywords'    => 'تھینک یو پیج, آرڈر کنفرم, IPTV آرڈر, IPTV سبسکرپشن, کامیاب آرڈر, ایکٹیویشن ہدایات, اکاؤنٹ ڈیٹیلز, کسٹمر سپورٹ, اسٹریمنگ سروس',
+        'title'       => 'آرڈر موصول ہوا | WhatsApp پر IPTV ادائیگی جاری رکھیں',
+        'description' => 'آپ کا IPTV آرڈر بن گیا ہے اور ادائیگی کی تصدیق تک زیر التوا رہے گا۔ ہماری ٹیم کے ساتھ WhatsApp پر جاری رکھیں۔',
+        'keywords'    => 'شکریہ صفحہ, آرڈر موصول ہوا, زیر التوا IPTV آرڈر, WhatsApp ادائیگی, IPTV سبسکرپشن, ایکٹیویشن ہدایات, اکاؤنٹ کی تفصیلات, کسٹمر سپورٹ, اسٹریمنگ سروس',
     ],
     'blogs' => [
         'index' => [

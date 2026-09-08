@@ -23,7 +23,7 @@ return [
             'title' => 'Suscripciones y Pagos',
             'item1' => 'Todos los precios se muestran al finalizar la compra y se facturan por el período seleccionado.',
             'item2' => 'Aceptamos pagos con tarjetas y criptomonedas a través de procesadores de confianza como Cryptomus.',
-            'item3' => 'Las suscripciones se renuevan automáticamente a menos que se cancelen antes de la fecha de renovación.',
+            'item3' => 'Las suscripciones no se renuevan automáticamente. Cuando vence un plan, puedes revisar el plan y el precio vigentes y decidir si deseas renovarlo.',
         ],
         'refunds' => [
             'title' => 'Venta Definitiva, Reembolsos y Cancelaciones',

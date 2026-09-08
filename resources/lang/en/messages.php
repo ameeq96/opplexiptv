@@ -48,7 +48,7 @@ return [
 
   'network_heading' => 'We Provide Unlimited IPTV in 4K, Free Trial Included',
   'feature_50k_movies' => 'Watch 50k+ Movies on Best IPTV Smart Player',
-  'feature_50k_movies_desc' => 'Stream over 50,000 Bollywood & Hollywood movies via xtreme HD IPTV and aroma IPTV. Works on every IPTV box with HD/4K quality.',
+  'feature_50k_movies_desc' => 'Explore over 50,000 Bollywood and Hollywood titles via Xtreme HD IPTV and Aroma IPTV on popular compatible players and devices, with HD or 4K where available.',
   'feature_5k_series' => '5k+ Series on IPTV Box (Netflix, Prime, More)',
   'feature_5k_series_desc' => 'Binge 5,000+ Netflix and Prime Video series using IPTV smart player and xtreme HD IPTV — includes free trial and 4K support.',
   'feature_12k_channels' => '12k+ Live Channels via IPTV Box & Smart Player',
@@ -65,7 +65,7 @@ return [
   'iptv_sports_desc' => 'Enjoy live sports including football, cricket, UFC, and more with 4K live IPTV and no buffer — works with IPTV smart player & IPTV box.',
   'iptv_vod' => 'Premium IPTV VOD with 50k+ Movies & Series',
   'iptv_vod_desc' => 'Stream 50k+ Hollywood & Bollywood movies and 5k+ web series on demand via xtreme HD IPTV & aroma IPTV with free trial and full HD quality.',
-  'iptv_devices' => 'IPTV on All Devices - Smart Player, Android, Box',
+  'iptv_devices' => 'IPTV on Popular Devices - Smart Player, Android, Box',
   'iptv_devices_desc' => 'Use IPTV smart player on Smart TV, iPhone, Android, Firestick, MAG box & more. Includes xtreme HD IPTV access with free trial.',
   'learn_more' => 'Learn More About Our IPTV Plans',
 
@@ -121,7 +121,7 @@ return [
   'feature_easy_desc' => 'Set up IPTV smart player or IPTV box in minutes on Android, iOS, MAG, Firestick, and Smart TVs. Includes trial and full support.',
 
   'feature_multidevice' => 'Multi-Device IPTV - Mobile, Smart TV, Box',
-  'feature_multidevice_desc' => 'Stream IPTV across multiple devices like Smart TV, Android mobile, iPhone, tablet, and IPTV box — enjoy aroma IPTV everywhere.',
+  'feature_multidevice_desc' => 'Stream IPTV on compatible devices such as Smart TVs, Android phones, iPhones, tablets, and IPTV boxes. Compatibility varies by model, operating system, and app.',
 
   'feature_support' => '24/7 IPTV Customer Support via WhatsApp',
   'feature_support_desc' => 'Get fast help from our IPTV support team on IPTV smart player setup, trial activation, box issues, and streaming errors.',
@@ -233,7 +233,7 @@ return [
   'faq.a3' => 'When a customer purchases an Opplex IPTV subscription, they receive login codes. The customer needs to enter these codes, along with the provided URL, into the app in the specified fields. Refer to the picture below for better understanding.',
 
   'faq.q4' => 'Does Opplex IPTV have a Trial?',
-  'faq.a4' => 'Yes, a trial is available for only $1.',
+  'faq.a4' => 'Yes. A free trial is available so you can test the service on your own device before choosing a plan. Message us on WhatsApp to get started.',
 
   'faq.q5' => 'Sometimes when I watch a movie it keeps buffering?',
   'faq.a5' => 'This may happen due to low internet speed or high traffic. Pause for 10-15 seconds and then resume playback.',
@@ -369,7 +369,7 @@ return [
       ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup Support', 'description' => 'Get help with Smart TV, Firestick, Android, iOS, MAG, and IPTV player setup.'],
     ],
     'setup_title' => 'Choose your subscription, connect your device, start streaming',
-    'setup_text' => 'Pick your IPTV provider, select a connection plan, and complete checkout. Our support team helps you install the right IPTV app and start watching quickly.',
+    'setup_text' => 'Pick your IPTV provider, select a connection plan, submit your order, and continue payment on WhatsApp. After confirmation, our team helps you install the right IPTV app.',
     'setup_points' => [
       'Works with Smart TV, Firestick, Android TV, mobile, tablet, MAG, and IPTV players.',
       'Monthly, half-yearly, yearly, and reseller options are available from the pricing section.',
@@ -406,7 +406,7 @@ return [
 
   'email_title'   => 'Thank You - Opplex IPTV',
   'dear'          => 'Dear :name,',
-  'thank_you'     => "Thank you for your interest in our IPTV subscription. You're in the right place for the best TV experience worldwide.",
+  'thank_you'     => "Thank you for your interest in our IPTV subscription, available on compatible devices in many supported regions.",
   'package_details' => 'Your Package Details:',
   'package'       => 'Package',
   'email'         => 'Email',
@@ -417,7 +417,7 @@ return [
   'tagline'       => "The World's Best TV",
 
   'contact' => [
-    'intro' => 'Dear Customer, Thank you for your interest in our IPTV subscription. You’re in the right place for the best TV experience worldwide.',
+    'intro' => 'Dear Customer, thank you for your interest in our IPTV subscription, available on compatible devices in many supported regions.',
     'whatsapp_info' => 'For quick responses and to proceed with your subscription, please contact us on WhatsApp',
     'signature' => 'Best regards, Opplex IPTV - The World’s Best TV',
   ],
@@ -439,8 +439,8 @@ return [
     ],
     [
       'icon' => 'flaticon-customer-service',
-      'title' => 'Easy IPTV Setup on Any Device',
-      'description' => 'Start streaming instantly on Smart TV, Firestick, MAG, Android, and iOS – no tech skills needed. Our IPTV setup is beginner-friendly.',
+      'title' => 'Easy IPTV Setup on Supported Devices',
+      'description' => 'Set up IPTV on compatible Smart TVs, Fire TV Stick, MAG, Android, and iOS devices with beginner-friendly guidance.',
     ],
   ],
   'buy_now_heading' => 'Buy Panel Now',
@@ -488,13 +488,13 @@ return [
   'checkout_continue_button'         => 'Continue To Checkout',
 
 
-  'checkout_complete_title_page'   => 'Complete Your Order',
+  'checkout_complete_title_page'   => 'Review and Submit Your Order',
   'checkout_badge_secure'          => 'Secure Checkout',
   'checkout_badge_safe_info'       => 'Your Info is Safe',
   'checkout_badge_encryption'      => '256-bit Encryption',
 
-  'checkout_complete_title'        => 'Complete Your Order',
-  'checkout_complete_sub'          => 'Secure payment and instant activation',
+  'checkout_complete_title'        => 'Review and Submit Your Order',
+  'checkout_complete_sub'          => 'Submit your order, then continue payment with our team on WhatsApp',
   'checkout_notice_single_item'    => 'Previous item removed. Only one product allowed in cart at a time.',
 
   'checkout_billing_details'       => 'Billing Details',
@@ -524,29 +524,31 @@ return [
   'checkout_total_label'           => 'Total',
 
   'checkout_pay_card_title'        => 'Credit/Debit Card Payment',
-  'checkout_pay_card_desc'         => 'You will be redirected to our Payment page to complete your Credit Card payment. Your subscription will be delivered immediately after purchase.',
+  'checkout_pay_card_desc'         => 'Choose card and submit your order. Our team will confirm the secure payment link on WhatsApp before activation.',
   'checkout_pay_crypto_title'      => 'Crypto Payment',
-  'checkout_pay_crypto_desc'       => 'Pay securely using popular cryptocurrencies.',
-  'checkout_place_order_btn'       => 'Place Order & Pay',
+  'checkout_pay_crypto_desc'       => 'Choose crypto and submit your order. Our team will confirm the payment instructions on WhatsApp before activation.',
+  'checkout_place_order_btn'       => 'Submit Order',
 
   'thankyou_page' => [
     'title'       => 'Thank You For Your Order',
     'description' => 'Your order has been successfully received. You will get your IPTV subscription details via email and WhatsApp once the payment is confirmed.',
-    'keywords'    => 'thank you, order completed, IPTV order, order success, payment pending, IPTV activation, streaming service',
+    'keywords'    => 'thank you, order created, IPTV order, pending payment, WhatsApp payment, IPTV activation, streaming service',
     'heading'     => 'Thank You For Your Order! 🎉',
     'sub_text'    => 'Your order has been received. You will receive your subscription details on email and WhatsApp once the payment is confirmed.',
-    'badge_text'  => 'Payment step created successfully',
+    'badge_text'  => 'Order created successfully',
     'order_status' => 'Order Status',
     'pending'     => 'Pending Payment',
     'delivery'    => 'Delivery',
-    'delivery_text' => 'Instant delivery after payment confirmation',
+    'delivery_text' => 'Delivery after payment confirmation',
     'support'     => 'Support',
     'support_text' => '24/7 via WhatsApp & Email',
     'next'        => 'What’s next?',
     'next_text'   => 'Complete payment to activate',
     'home_btn'    => 'Back to Home',
     'support_btn' => 'Contact Support',
-    'footnote'    => 'Didn’t receive any email within a few minutes? Check your spam folder or contact support.',
+    'footnote'    => 'Complete payment on WhatsApp to activate your subscription. If you need help, our team will guide you.',
+    'continue_payment_whatsapp' => 'Continue Payment on WhatsApp',
+    'whatsapp_payment_message' => 'Hello, I want to complete payment for order #:order. Package: :package. Amount: :amount. Payment method: :method.',
   ],
 
 
@@ -582,7 +584,7 @@ return [
     'step3_title' => 'Step 3: Quick Actions',
     'step3_text' => 'Use <b>Pricing</b>, <b>Packages</b>, <b>Checkout</b>, and <b>Contact</b> quick buttons for fast actions.',
     'step4_title' => 'Step 4: Checkout Help',
-    'step4_text' => 'Example: <b>"first name Ali"</b>, <b>"email ali@gmail.com"</b>, <b>"place order and pay"</b>.',
+    'step4_text' => 'Example: <b>"first name Ali"</b>, <b>"email ali@gmail.com"</b>, <b>"submit order"</b>. Continue payment on WhatsApp after the order is created.',
     'step5_title' => 'Step 5: Safe Actions',
     'step5_text' => 'Before sensitive actions like payment, the assistant always asks for confirmation.',
     'back' => 'Back',
@@ -621,7 +623,7 @@ return [
   'home_hero_watch_live' => 'Watch :title Live in HD',
   'home_services_eyebrow' => 'Premium Features',
   'home_services_intro' => 'Powerful streaming, smarter access and a cleaner IPTV experience across every device.',
-  'home_testimonials_intro' => 'Verified customer feedback from viewers using Opplex IPTV across live TV, sports and on-demand streaming.',
+  'home_testimonials_intro' => 'Customer feedback shared by viewers using Opplex IPTV across live TV, sports and on-demand streaming.',
   'home_testimonials_verified_customer' => 'Verified IPTV Customer',
   'home_unlimited_eyebrow' => 'Unlimited Access',
   'home_unlimited_intro' => 'Stream premium live TV and VOD with faster access, stronger stability and flexible plans built for modern viewing.',
@@ -769,7 +771,7 @@ return [
     'testimonials' => [
       'title' => 'Customer Reviews - Best IPTV Experience',
       'heading' => 'Hear What Viewers Say About Opplex IPTV',
-      'intro' => 'These are genuine reviews from customers streaming with us every day using Opplex IPTV across live TV, sports, and on-demand streaming.',
+      'intro' => 'Customer feedback shared by viewers using Opplex IPTV for live TV, sports, and on-demand streaming.',
       'verified_label' => 'Verified IPTV Customer',
       'reviews' => [
         [
@@ -941,9 +943,9 @@ return [
       'q3' => 'What customer support do you provide?',
       'a3' => 'We provide friendly support by email and WhatsApp to help with setup, activation and any playback questions you may have.',
       'q4' => 'Do you keep adding new channels and content?',
-      'a4' => 'Yes. Our channel list and VOD library are updated continuously so you always have access to the latest content.',
+      'a4' => 'Our channel list and VOD library are updated regularly. Availability changes by source and region, so ask us to confirm a specific title or channel.',
       'q5' => 'How do I get started with Opplex IPTV?',
-      'a5' => 'Choose a plan, complete your order, and we will send your login details within minutes so you can start watching right away.',
+      'a5' => 'Choose a plan, submit your order, and continue payment on WhatsApp. We send your login details after payment is confirmed.',
     ],
 
     // Reseller panel
@@ -967,7 +969,7 @@ return [
       'q2' => 'How do I activate my subscription?',
       'a2' => 'After payment we send you login codes and a URL. Enter them into your IPTV player app and your channels load automatically.',
       'q3' => 'Can I use my subscription while travelling abroad?',
-      'a3' => 'Yes. Your subscription works anywhere you have a stable internet connection, so you can keep watching while you travel.',
+      'a3' => 'You can use your subscription in many supported regions with a stable connection. Network and regional restrictions can vary, so confirm your destination with us before travelling.',
       'q4' => 'What internet speed do I need?',
       'a4' => 'We recommend at least 15-25 Mbps for smooth HD/4K streaming. Lower speeds work but may reduce picture quality.',
       'q5' => 'What happens when my subscription expires?',
@@ -1025,7 +1027,7 @@ return [
       'q3' => 'Do the streaming devices come pre-configured?',
       'a3' => 'Where offered, devices can come ready to stream so you can plug in and watch with minimal setup.',
       'q4' => 'How are shop orders delivered?',
-      'a4' => 'Physical items are shipped to your address, while digital products and codes are delivered instantly by email after payment.',
+      'a4' => 'Physical items are shipped to your address. Digital products and codes are sent by email after payment confirmation, usually during active support hours.',
       'q5' => 'Can you help me choose the right device?',
       'a5' => 'Of course. Contact us on WhatsApp with your needs and budget and we will recommend the best option for you.',
     ],

@@ -36,7 +36,7 @@ return [
                     ],
                     [
                         'question' => '¿Opplex IPTV está disponible en mi país?',
-                        'answer' => 'Sí. Opplex funciona dondequiera que tengas una conexión estable a Internet: EE. UU., Reino Unido, Canadá, Europa, Oriente Medio y muchos otros lugares. Tu suscripción no está limitada a una sola región.',
+                        'answer' => 'Opplex está disponible en muchas regiones, como EE. UU., Reino Unido, Canadá, Europa y Oriente Medio. La reproducción depende de la red, el dispositivo y las restricciones regionales aplicables.',
                     ],
                     [
                         'question' => '¿Dónde puedo comprar Opplex IPTV?',
@@ -49,7 +49,7 @@ return [
                 'items' => [
                     [
                         'question' => '¿Opplex IPTV ofrece una prueba gratuita?',
-                        'answer' => 'Sí. Ofrecemos una prueba de $1 para que puedas comprobar la calidad de los canales, la estabilidad de la imagen y el rendimiento en tu propio dispositivo antes de comprometerte con un plan completo. Escríbenos por WhatsApp para empezar.',
+                        'answer' => 'Sí. Ofrecemos una prueba gratuita para que puedas comprobar la disponibilidad de los canales, la calidad de imagen y el rendimiento en tu propio dispositivo antes de elegir un plan. Escríbenos por WhatsApp para empezar.',
                     ],
                     [
                         'question' => '¿Cuánto cuesta una suscripción?',
@@ -81,7 +81,7 @@ return [
                     ],
                     [
                         'question' => '¿Opplex IPTV funciona en un portátil o PC?',
-                        'answer' => 'Sí. Descarga IPTV Smarters Pro para Windows o IBO Player desde la página Aplicaciones e inicia sesión con tus credenciales de Opplex. Funciona perfectamente en Windows 10 y versiones posteriores, y en Mac mediante IBO Player.',
+                        'answer' => 'Sí. Descarga IPTV Smarters Pro para Windows o IBO Player desde la página Aplicaciones e inicia sesión con tus credenciales de Opplex. Es compatible con Windows 10 y versiones posteriores, y con Mac mediante IBO Player.',
                     ],
                     [
                         'question' => '¿Cuántos dispositivos puedo utilizar al mismo tiempo?',
@@ -102,7 +102,7 @@ return [
                     ],
                     [
                         'question' => '¿Qué ventajas ofrece IPTV frente al cable o el satélite?',
-                        'answer' => 'El coste es la principal: obtienes muchos más canales por una fracción del precio. También dispones de contenido bajo demanda, no tienes que instalar una antena y puedes ver contenido en cualquier pantalla y lugar. IPTV también facilita el acceso a contenido internacional que los proveedores de cable no ofrecen.',
+                        'answer' => 'El coste es una de las principales ventajas: obtienes muchos más canales por una fracción del precio. También dispones de contenido bajo demanda, no tienes que instalar una antena y puedes verlo en pantallas compatibles dentro de las regiones admitidas. La disponibilidad depende de la fuente, la red y las restricciones aplicables.',
                     ],
                 ],
             ],
@@ -171,7 +171,7 @@ return [
                 ],
                 [
                     'title' => 'Precios que no aumentan',
-                    'text' => '$2.99 al mes son $2.99 al mes. No ofrecemos una tarifa promocional para subirla al renovar. El precio con el que te registras es el que pagas cuando renuevas.',
+                    'text' => 'El precio que aparece al finalizar la compra es el que pagas por el periodo del plan elegido. Los planes no se renuevan automáticamente, por lo que puedes revisar el plan y el precio vigentes antes de renovar.',
                     'icon' => 'fa fa-tag',
                 ],
                 [
@@ -194,7 +194,7 @@ return [
                 'Pakistán, India y Bangladés',
                 'Y decenas de otros países, siempre que dispongan de una conexión sólida a Internet',
             ],
-            'outro' => 'Una suscripción funciona en todos ellos. Sin bloqueos geográficos ni restricciones regionales; solo necesitas tus datos de acceso y una conexión a Internet, estés donde estés.',
+            'outro' => 'Una suscripción puede utilizarse en muchas regiones compatibles. La disponibilidad y la reproducción dependen de la fuente, el dispositivo, la red y las restricciones regionales aplicables.',
         ],
         'team' => [
             'heading' => 'Un pequeño equipo con una tarea muy concreta',
@@ -239,7 +239,7 @@ return [
                 ],
                 [
                     'question' => '¿Puedo utilizar Opplex fuera de EE. UU. y Europa?',
-                    'answer' => 'Sí. Opplex funciona en cualquier lugar con una conexión estable a Internet. Tenemos suscriptores activos en 40+ países. El servicio no tiene bloqueos regionales.',
+                    'answer' => 'Opplex está disponible en muchas regiones y tiene suscriptores en 40+ países. La reproducción depende de la red, el dispositivo y las restricciones regionales aplicables.',
                 ],
             ],
         ],
@@ -283,10 +283,10 @@ return [
             'items' => [
                 ['title' => 'Iniciar una prueba gratuita:', 'text' => 'Escríbenos por WhatsApp y dinos en qué dispositivo quieres hacer la prueba. Activaremos una prueba y te guiaremos durante la configuración.', 'icon' => 'fa fa-play-circle-o'],
                 ['title' => 'Ayuda con la configuración y la instalación:', 'text' => 'Dinos por WhatsApp qué tipo de dispositivo tienes. Te responderemos en pocos minutos con instrucciones paso a paso, normalmente acompañadas de capturas de pantalla.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Faltan los datos de acceso:', 'text' => 'Comprueba primero la carpeta de spam. Si tus datos aún no han llegado, escríbenos indicando el correo electrónico que utilizaste al finalizar la compra y te los reenviaremos de inmediato.', 'icon' => 'fa fa-key'],
+                ['title' => 'Faltan los datos de acceso:', 'text' => 'Comprueba primero la carpeta de spam. Si tus datos aún no han llegado, escríbenos indicando el correo electrónico que utilizaste al finalizar la compra; revisaremos el pedido y los reenviaremos si es necesario.', 'icon' => 'fa fa-key'],
                 ['title' => 'Preguntas sobre facturación y pagos:', 'text' => 'Haz por WhatsApp o correo electrónico tus preguntas sobre cargos, recibos, precios de renovación o cambios de plan. Conservamos un registro de todos los pedidos y podemos consultar rápidamente tus datos.', 'icon' => 'fa fa-credit-card'],
                 ['title' => 'Consultas sobre reventa:', 'text' => '¿Te interesa el panel de revendedor? Escríbenos por WhatsApp. Te explicaremos cómo funcionan los créditos y cómo configurar la primera línea de un cliente.', 'icon' => 'fa fa-users'],
-                ['title' => 'Solicitudes de canales o avisos de buffering:', 'text' => '¿No encuentras un canal concreto? ¿Tienes buffering? Avísanos por WhatsApp y lo investigaremos, repararemos o añadiremos cuando sea posible.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Solicitudes de canales o avisos de buffering:', 'text' => '¿No encuentras un canal concreto? ¿Tienes buffering? Avísanos por WhatsApp; lo investigaremos y ayudaremos cuando sea posible.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
@@ -302,8 +302,8 @@ return [
             'heading' => 'Contacto y asistencia | Preguntas frecuentes',
             'items' => [
                 ['question' => '¿Cuál es la forma más rápida de obtener ayuda?', 'answer' => 'WhatsApp en el +1 (639) 390-3194. Se supervisa durante todo el día y la mayoría de las preguntas se responde en pocos minutos.'],
-                ['question' => 'Acabo de pagar, pero mis datos de acceso no han llegado. ¿Qué hago?', 'answer' => 'Comprueba primero la carpeta de spam o correo no deseado. Si no están allí después de 10 minutos, escríbenos por WhatsApp indicando la dirección de correo electrónico que utilizaste al finalizar la compra y te los reenviaremos de inmediato.'],
-                ['question' => '¿Podéis ayudarme a configurar Opplex en mi dispositivo concreto?', 'answer' => 'Sí. Dinos qué dispositivo utilizas: Firestick, modelo de Smart TV, MAG, Android box, iPhone, etc., y te enviaremos los pasos exactos. Con las instrucciones adecuadas, la mayoría de las configuraciones lleva menos de cinco minutos.'],
+                ['question' => 'Acabo de pagar, pero mis datos de acceso no han llegado. ¿Qué hago?', 'answer' => 'Comprueba primero la carpeta de spam o correo no deseado. Si aún no están allí, escríbenos por WhatsApp con la referencia del pedido o el correo electrónico utilizado. Nuestro equipo verificará el pago y te ayudará durante el horario de atención activo.'],
+                ['question' => '¿Podéis ayudarme a configurar Opplex en mi dispositivo concreto?', 'answer' => 'Sí. Dinos qué dispositivo utilizas: Firestick, modelo de Smart TV, MAG, Android box, iPhone, etc., y te enviaremos los pasos correspondientes. El tiempo de configuración varía según el dispositivo y la aplicación.'],
                 ['question' => '¿Qué información debo incluir cuando me ponga en contacto con vosotros?', 'answer' => 'La dirección de correo electrónico de tu pedido, el dispositivo que utilizas y una descripción del problema. Las capturas de pantalla ayudan si algo falla en la pantalla. Cuantos más detalles proporciones desde el principio, más rápido podremos ayudarte.'],
                 ['question' => '¿Ofrecéis asistencia en otros idiomas?', 'answer' => 'Nuestro sitio está disponible en 10 idiomas. Nuestro equipo de asistencia puede ayudarte en varios de ellos. Si el inglés no es tu lengua materna, puedes escribirnos en tu propio idioma y haremos todo lo posible por ayudarte.'],
                 ['question' => 'Quiero cancelar. ¿Qué hago?', 'answer' => 'Las suscripciones no se renuevan automáticamente; simplemente caducan al finalizar el periodo. Si tienes alguna duda sobre la facturación, consulta nuestra política de reembolsos y cancelaciones en el pie de página o escríbenos a info@opplexiptv.com.'],

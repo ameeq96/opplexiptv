@@ -216,7 +216,7 @@ return [
                 ],
                 [
                     'title' => 'Elige el plan anual',
-                    'description' => 'Si ves TV con frecuencia y quieres el mejor precio. $23.99 por un año completo equivale a menos de $2 al mes. Sin presión para renovar ni subidas de precio: tendrás un año completo de acceso desde el momento en que te registres.',
+                    'description' => 'Si ves TV con frecuencia y quieres el mejor precio. $23.99 por un año completo equivale a menos de $2 al mes y el plan no se renueva automáticamente cuando termina.',
                 ],
             ],
             'trial_heading' => '¿Tienes dudas? Prueba antes de comprar:',
@@ -227,7 +227,7 @@ return [
             'paragraphs' => [
                 'Lo hacemos sencillo. Sin tarifas de configuración. Sin cargos de activación. Lo que ves en la tabla de precios es lo que pagas, sin más.',
                 'Aceptamos las principales tarjetas de crédito y débito mediante un sistema de procesamiento de pagos cifrado conforme a los estándares del sector. También aceptamos pagos con criptomonedas a través de Cryptomus para quienes lo prefieran.',
-                'No almacenamos los datos de las tarjetas. No renovamos automáticamente sin que tú hagas nada. Cuando termina tu plan, finaliza; tú decides si quieres renovarlo y cuándo.',
+                'No almacenamos los datos de las tarjetas ni renovamos los planes automáticamente. Cuando termina tu plan, el acceso se detiene hasta que decidas renovarlo.',
             ],
         ],
         'faq' => [
@@ -238,8 +238,8 @@ return [
                     'answer' => 'El plan mensual cuesta $2.99. Tres meses cuestan $7.99. El plan semestral cuesta $14.99. El anual cuesta $23.99. Los planes Filex parten de $4.50 al mes. Todos los precios aparecen en la tabla anterior.',
                 ],
                 [
-                    'question' => '¿Cambian los precios al renovar?',
-                    'answer' => 'No. La tarifa del plan se mantiene al renovarlo. No ofrecemos un precio inicial bajo para subirlo después del primer periodo.',
+                    'question' => '¿Cómo funciona la renovación?',
+                    'answer' => 'Los planes no se renuevan automáticamente. Antes de renovar, revisa el plan y el precio vigentes y decide si quieres continuar.',
                 ],
                 [
                     'question' => '¿Qué métodos de pago se aceptan?',
@@ -348,7 +348,7 @@ return [
             'items' => [
                 [
                     'question' => '¿Cómo empiezo?',
-                    'answer' => 'Compra un paquete de créditos para revendedores en esta página. Cuando se procese el pago, se configurará tu acceso al panel y podrás empezar a activar líneas de clientes de inmediato.',
+                    'answer' => 'Solicita un paquete de créditos para revendedores en esta página y continúa el pago por WhatsApp. El acceso al panel se configura después de confirmar el pago durante el horario de atención activo.',
                 ],
                 [
                     'question' => '¿Cuál es la diferencia entre los créditos de revendedor de Opplex y Filex?',

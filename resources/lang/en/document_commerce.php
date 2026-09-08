@@ -208,7 +208,7 @@ return [
                 ],
                 [
                     'title' => 'Go 3 Months',
-                    'description' => "if: You've tried the trial and liked it, but aren't ready to go all-in. It saves you a bit vs monthly and gives you three uninterrupted months to settle into the service.",
+                    'description' => "if: You've tried the trial and liked it, but aren't ready to go all-in. It saves you a bit vs monthly and gives you three months of access to settle into the service.",
                 ],
                 [
                     'title' => 'Go Half-Yearly',
@@ -216,7 +216,7 @@ return [
                 ],
                 [
                     'title' => 'Go Yearly',
-                    'description' => 'if you watch TV regularly and want the best rate. $23.99 for a full year is under $2 a month. No renewal pressure, no price creep, just a full year of access from the moment you sign up.',
+                    'description' => 'if you watch TV regularly and want the best rate. $23.99 for a full year is under $2 a month, with no automatic renewal when the plan ends.',
                 ],
             ],
             'trial_heading' => 'Unsure? Try before you buy:',
@@ -227,7 +227,7 @@ return [
             'paragraphs' => [
                 'We keep this simple. No setup fees. No activation charges. What you see in the pricing table is what you pay, full stop.',
                 'We accept major credit and debit cards through encrypted, industry-standard payment processing. We also accept crypto payments via Cryptomus for those who prefer it.',
-                "We don't store card details. We don't auto-renew without you doing something. When your plan ends, it ends; you choose if and when to renew.",
+                "We don't store card details or automatically renew plans. When your plan ends, access stops until you choose to renew.",
             ],
         ],
         'faq' => [
@@ -238,8 +238,8 @@ return [
                     'answer' => 'Monthly is $2.99. Three months is $7.99. Half-yearly is $14.99. Yearly is $23.99. Filex plans start at $4.50 monthly. All prices are in the table above.',
                 ],
                 [
-                    'question' => 'Do prices change at renewal?',
-                    'answer' => "No. The plan rate stays the same when you renew. We don't run a low intro price and then bump it after the first period.",
+                    'question' => 'How does renewal work?',
+                    'answer' => 'Plans do not renew automatically. Before renewing, review the current plan and price, then choose whether to continue.',
                 ],
                 [
                     'question' => 'What payment methods work?',

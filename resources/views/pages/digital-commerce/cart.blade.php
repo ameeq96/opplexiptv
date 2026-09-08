@@ -20,7 +20,11 @@
                 <div class="row g-4">
                     <div class="col-lg-8">
                         @foreach($items as $item)
-                            <article class="dcart-item">
+                            <article class="dcart-item"
+                                data-whatsapp-package="{{ $item['product']->title }}"
+                                data-whatsapp-value="{{ number_format((float) $item['line_total'], 2, '.', '') }}"
+                                data-whatsapp-currency="{{ $item['product']->currency ?: 'USD' }}"
+                                data-whatsapp-intent="purchase" data-whatsapp-placement="digital_cart_item">
                                 <img class="dcart-thumb"
                                      src="{{ $item['product']->image ? asset('images/digital-products/' . $item['product']->image) : asset('images/background/10.webp') }}"
                                      alt="{{ $item['product']->title }}"
@@ -66,6 +70,10 @@
                             <a href="https://wa.me/16393903194?text={{ rawurlencode('Hi, I want to place my digital products order.') }}"
                                target="_blank"
                                rel="noopener noreferrer"
+                               data-whatsapp-package="Digital cart"
+                               data-whatsapp-value="{{ number_format((float) $total, 2, '.', '') }}"
+                               data-whatsapp-currency="USD" data-whatsapp-intent="purchase"
+                               data-whatsapp-placement="digital_cart_checkout"
                                class="btn btn-primary dcart-checkout-btn">Buy Now on WhatsApp</a>
                         </aside>
                     </div>
@@ -75,4 +83,3 @@
     </div>
 </section>
 @endsection
-

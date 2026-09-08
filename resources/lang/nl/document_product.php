@@ -5,7 +5,7 @@ return [
         'page_title' => 'IPTV-applicaties',
         'hero' => [
             'heading' => 'Beste IPTV-apps voor Android, iOS, Windows en Smart TV',
-            'text' => 'Alle onderstaande apps werken met je Opplex-abonnement. Kies de app die bij je apparaat past, download deze gratis en meld je aan met de inloggegevens die wij je sturen. Meer is er niet nodig.',
+            'text' => 'De onderstaande apps bevatten opties die compatibel zijn met je Opplex-abonnement. Kies een app die je apparaat en besturingssysteem ondersteunen, download deze en meld je aan met de gegevens die wij na betalingsbevestiging sturen.',
             'support' => 'Weet je niet welke app je moet gebruiken? Stuur ons een bericht via WhatsApp en wij wijzen je op de juiste app voor je apparaat.',
         ],
         'platforms' => [
@@ -40,13 +40,13 @@ return [
             'opplex' => 'Onze eigen app, door ons gebouwd en onderhouden. Lichter dan Smarters, laadt sneller en is geoptimaliseerd voor Opplex-streams. Een goede keuze als je een overzichtelijke ervaring zonder gedoe wilt.',
             'xtv' => 'Nog een door Opplex gebouwde speler. Uitstekend voor gebruikers van Android-boxen en Fire TV Stick die de voorkeur geven aan een tv-interface met grote knoppen en eenvoudige navigatie.',
             'xtream_android' => 'Een goede reserveoptie. Ondersteunt Xtream Codes en M3U-afspeellijsten. Beschikbaar op zowel Android als iOS.',
-            'ibo_android' => 'Werkt op Android, Windows en Mac. Een goede keuze als je tussen apparaten wisselt en overal één app wilt gebruiken.',
+            'ibo_android' => 'Beschikbaar voor ondersteunde versies van Android, Windows en Mac. Een goede keuze als je dezelfde app op meerdere compatibele apparaten wilt gebruiken.',
             'star_share' => 'Een alternatieve Android-speler die compatibel is met Opplex-inlogcodes. Een goede optie als Smarters op jouw specifieke apparaat niet werkt.',
             'smarters_ios' => 'De iOS-versie van de populaire Smarters-speler. Gratis te downloaden uit de App Store. Meld je aan met je Opplex Xtream Codes en je kanalen worden automatisch geladen.',
             'player_000' => 'Een overzichtelijke, minimalistische IPTV-speler voor iPhone. Goede beeldkwaliteit en eenvoudige navigatie.',
             'xtream_ios' => 'De iOS-versie van 9Xtream. Werkt met je Opplex-login en ondersteunt zowel livekanalen als VOD.',
             'smarters_windows' => 'Volwaardige IPTV-speler voor Windows. Dezelfde login met Xtream Codes als bij de Android-versie. Werkt goed op laptops en desktopmonitoren.',
-            'ibo_windows' => 'Een platformoverschrijdende optie voor Windows 10 en hoger. Handig als je IBO ook op Android of Mac gebruikt en overal dezelfde app wilt.',
+            'ibo_windows' => 'Een platformoverschrijdende optie voor Windows 10 en hoger. Handig als je IBO ook op ondersteunde Android- of Mac-versies gebruikt en dezelfde app op meerdere compatibele apparaten wilt.',
             'ibo_macos' => 'Werkt op Mac-systemen met Intel-processor. Download het .dmg-bestand, installeer het en meld je aan met je Opplex-inloggegevens.',
             'ibo_linux' => 'Beschikbaar als .snap-pakket voor Debian- en Ubuntu-systemen. Installeer via snap en meld je aan met je Xtream Codes.',
         ],
@@ -83,7 +83,7 @@ return [
                 ],
                 [
                     'question' => 'De app is geladen, maar mijn kanalen spelen niet af. Wat moet ik doen?',
-                    'answer' => 'Controleer eerst je internetverbinding. We adviseren minimaal 15 Mbps. Controleer daarna nogmaals of je abonnement actief is. Lijken de inloggegevens juist en werkt het nog steeds niet, voer ze dan handmatig opnieuw in (kopiëren en plakken kan soms een extra spatie toevoegen). Nog steeds vastgelopen? Stuur ons een bericht via WhatsApp en wij lossen het op.',
+                    'answer' => 'Controleer eerst je internetverbinding. We adviseren minimaal 15 Mbps. Controleer daarna nogmaals of je abonnement actief is. Lijken de inloggegevens juist en werkt het nog steeds niet, voer ze dan handmatig opnieuw in (kopiëren en plakken kan soms een extra spatie toevoegen). Nog steeds vastgelopen? Stuur ons via WhatsApp een bericht; het team onderzoekt het probleem tijdens actieve ondersteuningsuren.',
                 ],
                 [
                     'question' => 'Zijn deze apps gratis te downloaden?',
@@ -93,7 +93,7 @@ return [
         ],
         'cta' => [
             'heading' => 'Klaar om te beginnen met kijken?',
-            'text' => 'Download je app, neem een abonnement en je kunt beginnen. Hulp nodig bij het kiezen van een abonnement of het instellen van je apparaat? We zijn bereikbaar via WhatsApp.',
+            'text' => 'Download de app, kies een abonnement, dien je bestelling in en ga verder met betalen via WhatsApp. Na bevestiging en activering kun je inloggen. Hulp nodig bij het kiezen van een abonnement of het instellen van je apparaat? We zijn bereikbaar via WhatsApp.',
             'plans' => 'Bekijk IPTV-abonnementen',
             'whatsapp' => 'Chat via WhatsApp',
         ],
@@ -101,8 +101,8 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ films en series — Stream in HD en 4K op elk apparaat',
-            'text' => 'Je Opplex-abonnement bevat vanaf de eerste dag een volledige on-demandbibliotheek. Geen extra kosten en geen afzonderlijk VOD-pakket om te kopen. Blader door films, series en cartoons of zoek naar een specifieke titel. Er wordt voortdurend nieuwe content toegevoegd en als je een titel niet kunt vinden, vraag het ons dan via WhatsApp.',
+            'heading' => '50,000+ films en series — Stream in HD en 4K op populaire compatibele apparaten',
+            'text' => 'Je Opplex-abonnement biedt na activering toegang tot beschikbare on-demandcontent. Geen extra kosten en geen afzonderlijk VOD-pakket om te kopen. De bibliotheek wordt regelmatig bijgewerkt; beschikbaarheid verschilt per bron en regio. Zoek je een specifieke titel, vraag ons dan via WhatsApp deze te controleren.',
             'plans' => 'Bekijk abonnementen',
             'trial' => 'Start gratis proefperiode',
         ],
@@ -115,7 +115,7 @@ return [
                 ],
                 [
                     'title' => 'Series — Actuele programma\'s en klassieke TV',
-                    'text' => 'Van lopende series uit de US en UK tot oudere programma\'s die je nog wilde inhalen: de seriebibliotheek wordt bijgewerkt zodra nieuwe afleveringen worden uitgezonden. Denk aan prestigieuze drama\'s, misdaadseries, komedies, reality en internationale producties, allemaal op één plek zonder vijf afzonderlijke streamingabonnementen nodig te hebben.',
+                    'text' => 'Van lopende series uit de US en UK tot oudere programma\'s die je nog wilde inhalen: de seriebibliotheek wordt regelmatig bijgewerkt. Deze bevat drama\'s, misdaadseries, komedies, reality en internationale producties; de beschikbaarheid van afleveringen en titels verschilt per bron en regio.',
                 ],
                 [
                     'title' => 'Tekenfilms — Iets voor het hele huishouden',
@@ -136,8 +136,8 @@ return [
             'support' => 'Wordt een titel niet weergegeven of wil je iets laten toevoegen, stuur ons dan de naam via WhatsApp en we bekijken het.',
         ],
         'devices' => [
-            'heading' => 'Kijk op elk scherm dat je al hebt',
-            'intro' => 'Je hebt geen nieuw apparaat nodig om toegang te krijgen tot de VOD-bibliotheek. Deze werkt op wat je al gebruikt:',
+            'heading' => 'Kijk op populaire compatibele apparaten',
+            'intro' => 'De VOD-bibliotheek is compatibel met veel apparaten die je mogelijk al gebruikt:',
             'items' => [
                 'Amazon Firestick en Fire TV',
                 'Samsung, LG en Sony Smart TV\'s',
@@ -159,7 +159,7 @@ return [
                 ],
                 [
                     'question' => 'Zijn nieuwe releases beschikbaar?',
-                    'answer' => 'Ja. Nieuwe films en afleveringen van series worden voortdurend toegevoegd. Sommige titels verschijnen binnen enkele dagen na hun release op belangrijke platforms. Zoek je iets specifieks en staat het er nog niet bij, stuur ons dan een bericht via WhatsApp en we geven het prioriteit.',
+                    'answer' => 'Nieuwe films en afleveringen van series worden regelmatig toegevoegd wanneer ze beschikbaar zijn. Beschikbaarheid en timing verschillen per bron en regio. Zoek je iets specifieks, stuur ons dan via WhatsApp een bericht en wij controleren of het beschikbaar is.',
                 ],
                 [
                     'question' => 'Kan ik content downloaden om offline te bekijken?',
@@ -179,7 +179,7 @@ return [
                 ],
                 [
                     'question' => 'Kost toegang tot VOD extra?',
-                    'answer' => 'Nee. De volledige bibliotheek met films en series is vanaf de eerste dag bij elk Opplex-abonnement inbegrepen. Er is geen VOD-toevoeging, geen contentniveau en geen extra bedrag; alles maakt deel uit van hetzelfde abonnement.',
+                    'answer' => 'Nee. Toegang tot de beschikbare bibliotheek is na activering bij elk Opplex-abonnement inbegrepen. Er is geen extra VOD-pakket nodig; de beschikbaarheid van titels verschilt per bron en regio.',
                 ],
             ],
         ],
@@ -189,7 +189,7 @@ return [
         'page_title' => 'IPTV-abonnementsdiensten',
         'hero' => [
             'eyebrow' => 'Live TV, sport, films, series, 4K en catch-up',
-            'heading' => 'IPTV-abonnementsdienst: alles wat je wilt bekijken, vanaf $2.99',
+            'heading' => 'IPTV-abonnementsdienst: een ruime contentkeuze, vanaf $2.99',
             'paragraphs' => [
                 'Je zoekt een streamingdienst die echt werkt. Een dienst die kanalen snel laadt, niet op het slechtste moment buffert en je echte ondersteuning biedt als er iets misgaat. Dat is Opplex.',
                 'Eén abonnement omvat 12,000+ livekanalen, 50,000+ films en series en HD- of 4K-kwaliteit, allemaal gestreamd via je bestaande internetverbinding: geen schotel, geen huurbox en geen jaarcontract.',
@@ -198,16 +198,16 @@ return [
             'secondary_cta' => 'Start gratis proefperiode via WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD- en 4K-streaming', 'text' => 'Scherp beeld op elk apparaat. Ondersteunt het kanaal 4K, dan krijg je 4K. Geen compressie, geen kwaliteitslimiet.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen:', 'text' => 'Sport, nieuws, entertainment en internationale content. Elk belangrijk kanaal staat ertussen.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand:', 'text' => '50,000+ titels beschikbaar vanaf het moment dat je een abonnement neemt. Geen extra VOD-pakket nodig.'],
-                ['icon' => 'flaticon-customer-service', 'title' => 'Snelle installatie op elk apparaat:', 'text' => 'We helpen je op weg op Firestick, Smart TV, Android, iOS of MAG. De meeste installaties duren minder dan vijf minuten.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen:', 'text' => 'Toegang tot een ruime beschikbare selectie sport, nieuws, entertainment en internationale content. Vraag ons een specifiek kanaal te controleren.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand:', 'text' => '50,000+ titels in de beschikbare catalogus na activering. Beschikbaarheid verschilt per bron en regio.'],
+                ['icon' => 'flaticon-customer-service', 'title' => 'Snelle installatie op compatibele apparaten:', 'text' => 'We helpen je op weg op Firestick, Smart TV, Android, iOS of MAG. De meeste installaties duren minder dan vijf minuten.'],
             ],
         ],
         'steps' => [
             'heading' => 'In drie stappen van aanmelden naar streamen',
             'items' => [
                 ['title' => 'Kies je abonnement.', 'text' => 'Kies hoelang je een abonnement wilt: maandelijks, halfjaarlijks of jaarlijks. Alle abonnementen omvatten dezelfde kanalen en content. Het enige verschil is de looptijd en de kosten per maand.'],
-                ['title' => 'Ontvang je inloggegevens.', 'text' => 'Na het afrekenen sturen we je gebruikersnaam, wachtwoord en server-URL per e-mail en WhatsApp. Meestal ontvang je deze binnen enkele minuten nadat de betaling is verwerkt.'],
+                ['title' => 'Rond de betaling af en ontvang je inloggegevens.', 'text' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we je gebruikersnaam, wachtwoord en server-URL per e-mail en WhatsApp, normaal tijdens actieve ondersteuningsuren.'],
                 ['title' => 'Open je app en begin met kijken.', 'text' => 'Download je IPTV-speler, tik op "Login with Xtream Codes" en voer de drie gegevens in die we je hebben gestuurd. Je kanalen worden automatisch geladen. Klaar.'],
             ],
             'support' => 'Op enig moment hulp nodig? Stuur ons een bericht via WhatsApp en we begeleiden je door het hele proces.',
@@ -217,8 +217,8 @@ return [
             'heading' => 'Waarom mensen naar Opplex overstappen en blijven',
             'items' => [
                 ['title' => 'Echt geen buffering.', 'text' => 'We weten dat elke IPTV-aanbieder dit zegt. Het verschil bij Opplex is onze serverinfrastructuur, speciaal gebouwd om piekverkeer in meerdere regio\'s zonder vertraging te verwerken. Onze uptime is drie opeenvolgende jaren 99.9% geweest.'],
-                ['title' => 'Prijzen die eerlijk blijven:', 'text' => '$2.99 per maand blijft $2.99 per maand. We bieden geen laag introductietarief dat we bij verlenging verhogen. Je vindt bij het afrekenen ook geen verborgen activeringskosten. Wat je in de prijstabel ziet, is wat je betaalt.'],
-                ['title' => 'Werkt waar je ook bent.', 'text' => 'Opplex werkt in 40+ landen. Of je nu thuis bent in de UK, door Europa reist of in de USA woont, je abonnement werkt hetzelfde. Geen geografische blokkades of beperkingen op basis van waar je je aanmeldt.'],
+                ['title' => 'Duidelijke prijzen:', 'text' => 'De prijs die bij het afrekenen wordt getoond, geldt voor de gekozen abonnementsperiode. Er zijn geen verborgen activeringskosten. Bekijk vóór verlenging het actuele abonnement en de prijs.'],
+                ['title' => 'Beschikbaar in veel regio’s.', 'text' => 'Opplex heeft gebruikers in 40+ landen. Beschikbaarheid en weergave hangen af van het lokale netwerk, apparaat, de bron en toepasselijke regionale beperkingen.'],
                 ['title' => 'Een team dat je echt kunt bereiken:', 'text' => 'Ondersteuning via WhatsApp, zeven dagen per week. Als je ons een bericht stuurt, leest en beantwoordt een echte persoon het, meestal binnen enkele minuten. We besteden onze ondersteuning niet uit en gebruiken geen automatische bots om je aan het lijntje te houden.'],
             ],
         ],
@@ -258,7 +258,7 @@ return [
             'intro' => 'Veel mensen stappen over van kabel naar IPTV en vragen zich af waarom ze zo lang hebben gewacht. Dit verandert er:',
             'items' => [
                 ['title' => 'Prijs:', 'text' => 'Een doorsnee kabelpakket kost in de USA en UK $60 tot $120 per maand. Opplex begint bij $2.99. Je krijgt meer kanalen voor een fractie van de kosten.'],
-                ['title' => 'Inhoud', 'text' => 'Kabel biedt je een vast pakket, vaak met 70% kanalen die je nooit bekijkt. Opplex omvat 12,000+ kanalen plus een volledige on-demandbibliotheek, zodat je kijkt wat je wilt, wanneer je dat wilt.'],
+                ['title' => 'Inhoud', 'text' => 'Kabel biedt je een vast pakket. Opplex biedt toegang tot 12,000+ kanalen en de beschikbare on-demandbibliotheek; content en weergave kunnen per bron en regio verschillen.'],
                 ['title' => 'Installatie:', 'text' => 'Geen bezoek van een monteur, geen installatieafspraak en geen hardware om te huren. Meld je aan, download een app en voer je gegevens in. Dat is alles.'],
                 ['title' => 'Flexibiliteit', 'text' => 'Kabel legt je meestal vast in een contract van 12 of 24 maanden. Opplex-abonnementen zijn maandelijks, halfjaarlijks of jaarlijks en geen ervan wordt automatisch verlengd. Jij houdt de controle.'],
             ],
@@ -266,11 +266,11 @@ return [
         'faq' => [
             'heading' => 'IPTV-abonnementsdienst | Veelgestelde vragen',
             'items' => [
-                ['question' => 'Wat is een IPTV-abonnementsdienst precies?', 'answer' => 'IPTV staat voor Internet Protocol Television. In plaats van kanalen via een satellietschotel of kabel te ontvangen, stream je ze via je internetverbinding. Een IPTV-abonnement geeft je via een app op elk apparaat toegang tot live-tv, sport en on-demandcontent, zonder dat een fysieke installatie nodig is.'],
-                ['question' => 'Hoelang duurt het om alles in te stellen?', 'answer' => 'De meeste mensen kijken binnen vijf minuten na aanmelding. Je rondt de betaling af, wij sturen je inloggegevens en jij opent de app en voert ze in. Heb je hulp nodig, stuur ons dan een bericht via WhatsApp en wij begeleiden je stap voor stap.'],
+                ['question' => 'Wat is een IPTV-abonnementsdienst precies?', 'answer' => 'IPTV staat voor Internet Protocol Television. In plaats van kanalen via een satellietschotel of kabel te ontvangen, stream je ze via je internetverbinding. Een IPTV-abonnement geeft via een compatibele app en een compatibel apparaat toegang tot beschikbare live-tv, sport en on-demandcontent, zonder fysieke installatie.'],
+                ['question' => 'Hoelang duurt het om alles in te stellen?', 'answer' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we de inloggegevens normaal tijdens actieve ondersteuningsuren. Daarna kun je de app openen en ze invoeren; heb je hulp nodig, dan begeleiden we je via WhatsApp.'],
                 ['question' => 'Kan ik Opplex gebruiken als ik geen Smart TV heb?', 'answer' => 'Ja. Een gewone tv wordt een slim streamingscherm als je een Firestick of Android TV-box op de HDMI-poort aansluit. Deze kosten ongeveer $30 tot $50 en zijn verkrijgbaar in de Opplex-winkel.'],
                 ['question' => 'Is er een contract?', 'answer' => 'Nee. Je betaalt voor de periode die je kiest: maandelijks, halfjaarlijks of jaarlijks. Wanneer die periode afloopt, kies jij of en wanneer je verlengt. Er wordt niets automatisch afgeschreven.'],
-                ['question' => 'Wat als ik op reis ben en wil blijven kijken?', 'answer' => 'Je abonnement werkt overal met een stabiele internetverbinding. Er is geen locatieblokkade. Kijkers gebruiken Opplex in hotels, tijdens buitenlandse reizen en in meerdere landen zonder problemen.'],
+                ['question' => 'Wat als ik op reis ben en wil blijven kijken?', 'answer' => 'Je kunt je abonnement tijdens het reizen gebruiken waar de dienst en je IPTV-app beschikbaar zijn. Het apparaat, netwerk en lokale omstandigheden kunnen de weergave beïnvloeden.'],
                 ['question' => 'Kan ik Opplex op meer dan één apparaat gebruiken?', 'answer' => 'Elke abonnementslijn omvat één actieve stream tegelijk. Wil je op twee schermen tegelijk kijken, dan heb je een tweede lijn nodig. Stuur ons een bericht via WhatsApp en wij kunnen dit instellen.'],
                 ['question' => 'Welke internetsnelheid heb ik nodig?', 'answer' => 'Minimaal 10 Mbps voor stabiel HD. 25 Mbps voor 4K. Is je verbinding langzamer, dan werken de meeste kanalen nog steeds in HD; je krijgt alleen geen 4K-resolutie.'],
             ],
@@ -302,9 +302,9 @@ return [
                 'B00SFSU53G' => ['label' => 'Mounting Dream TV Wall Mount (32 tot 65 inch, MD2380)', 'text' => 'Een volledig beweegbare beugel die kan draaien en kantelen; hij draagt tot 99 lbs en past bij de meeste moderne TV-formaten. Compatibel met VESA 400x400. Handig als je een kamer wilt opruimen of de TV op een plek bevestigt waar de kijkhoek niet recht van voren is.'],
             ],
             'digital' => [
-                'netflix' => ['price_label' => 'Vanaf $2.29', 'text' => 'Standaard Netflix-toegang tegen een tarief dat ruim onder de winkelprijs ligt. Dezelfde content als bij een gewoon abonnement. Rond je bestelling via WhatsApp af nadat je op Nu kopen hebt geklikt.'],
-                'prime-video' => ['price_label' => 'Vanaf $1.54', 'text' => 'Prime Video tegen een lager tarief. Toegang tot de volledige Prime Video-bibliotheek, hetzelfde als bij een standaardabonnement, maar tegen een betere prijs. Bestel via WhatsApp.'],
-                'hbo-max-premium' => ['price_label' => 'Vanaf $1.89', 'text' => 'Volledige toegang tot HBO Max Premium, inclusief alle Max Originals en gelicentieerde content. Stuur ons na aankoop een bericht via WhatsApp om je gegevens te ontvangen.'],
+                'netflix' => ['price_label' => 'Vanaf $2.29', 'text' => 'Standaard Netflix-toegang tot beschikbare content tegen een lager tarief. Beschikbaarheid hangt af van de dienst en regio. Rond je bestelling via WhatsApp af nadat je op Nu kopen hebt geklikt.'],
+                'prime-video' => ['price_label' => 'Vanaf $1.54', 'text' => 'Toegang tot beschikbare Prime Video-content tegen een lager tarief. Beschikbaarheid hangt af van de dienst en regio. Bestel via WhatsApp.'],
+                'hbo-max-premium' => ['price_label' => 'Vanaf $1.89', 'text' => 'Toegang tot beschikbare HBO Max Premium-content, afhankelijk van de dienst en regio. Stuur ons na bevestiging van de betaling via WhatsApp een bericht om tijdens actieve ondersteuningsuren je gegevens te ontvangen.'],
                 'nordvpn' => ['price_label' => 'Vanaf $1.89', 'text' => 'Handig als je tijdens het streamen extra privacy wilt of toegang nodig hebt tot content die in jouw land regiogebonden is. NordVPN is een van de betrouwbaardere beschikbare VPN-opties. Bestel via WhatsApp.'],
             ],
         ],
@@ -325,21 +325,21 @@ return [
             'steps' => [
                 'Tik op de knop Nu kopen op de productkaart',
                 'Er wordt een WhatsApp-chat met ons geopend',
-                'Vertel ons welk product je wilt; wij ronden je bestelling af en sturen je toegangsgegevens.',
+                'Vertel ons welk product je wilt en bevestig de betaling; na bevestiging sturen we je toegangsgegevens.',
             ],
-            'timing' => 'Dat is alles. De meeste bestellingen van digitale producten worden tijdens actieve uren binnen enkele minuten afgehandeld. Bestel je buiten die tijden, dan helpen we je zodra we weer online zijn.',
-            'delivery' => 'Alle digitale producten worden rechtstreeks aan je geleverd: geen fysieke levering en geen wachttijd.',
+            'timing' => 'Bestellingen van digitale producten worden na bevestiging van de betaling afgehandeld, normaal tijdens actieve ondersteuningsuren. Bestel je buiten die tijden, dan helpen we je wanneer de ondersteuning weer actief is.',
+            'delivery' => 'Digitale producten vereisen geen fysieke verzending; toegang wordt na bevestiging van de betaling verstrekt, normaal tijdens actieve ondersteuningsuren.',
         ],
         'faq' => [
             'heading' => 'Winkelvragen — Korte antwoorden',
             'items' => [
                 ['question' => 'Worden de affiliate-apparaten geleverd met Opplex vooraf geïnstalleerd?', 'answer' => 'Nee, ze worden rechtstreeks vanuit Amazon als standaard consumentenapparaten verzonden. Opplex erop installeren duurt slechts enkele minuten en ons team begeleidt je via WhatsApp als je hulp nodig hebt.'],
                 ['question' => 'Moet ik een apparaat kopen om Opplex te gebruiken?', 'answer' => 'Als je al een Firestick, Smart TV, Android-telefoon, tablet of PC hebt, kun je een Opplex-abonnement nemen en dit gebruiken op wat je al bezit. De apparaten in de winkel zijn er als je een betere of speciale opstelling wilt.'],
-                ['question' => 'Hoe ontvang ik een digitaal product nadat ik het heb gekocht?', 'answer' => 'Zodra je bestelling is bevestigd, sturen we je toegangsgegevens via WhatsApp. De meeste digitale producten worden binnen enkele minuten geleverd. Is er vertraging, stuur ons dan een bericht en wij controleren het direct.'],
+                ['question' => 'Hoe ontvang ik een digitaal product nadat ik het heb gekocht?', 'answer' => 'Na bevestiging van de bestelling en betaling sturen we je toegangsgegevens via WhatsApp, normaal tijdens actieve ondersteuningsuren. Is er vertraging, stuur ons dan een bericht; het team controleert de aanvraag tijdens die uren zo snel mogelijk.'],
                 ['question' => 'Zijn de prijzen van digitale abonnementen gelijk aan de winkelprijzen?', 'answer' => 'Nee, ze zijn lager. Dat is nu juist het voordeel. De getoonde prijzen zijn wat je via Opplex betaalt, niet het normale winkeltarief dat je rechtstreeks zou betalen.'],
                 ['question' => 'Wat als een apparaat dat ik bij Amazon heb besteld een probleem heeft?', 'answer' => 'Affiliate-producten worden via Amazon verkocht en vallen onder hun retour- en terugbetalingsbeleid. Problemen met het fysieke apparaat zelf lopen via het standaardproces van Amazon. Voor hulp bij de installatie van Opplex op het apparaat zijn we bereikbaar via WhatsApp.'],
                 ['question' => 'Kunnen jullie me helpen het juiste apparaat voor mijn specifieke TV te kiezen?', 'answer' => 'Ja. Vertel ons via WhatsApp je TV-model en wat je wilt instellen, dan geven wij je een eerlijk advies. Geen upselling, gewoon wat in jouw situatie werkelijk het beste werkt.'],
-                ['question' => 'Is het veilig om via Opplex voor digitale producten te betalen?', 'answer' => 'Ja. Betalingen verlopen via versleutelde checkout en we handelen bestellingen van digitale producten af via WhatsApp, zodat je de gegevens kunt bevestigen voordat je afrondt. Als je dat liever hebt, accepteren we ook cryptobetalingen via Cryptomus.'],
+                ['question' => 'Is het veilig om via Opplex voor digitale producten te betalen?', 'answer' => 'De bestelgegevens en beschikbare betaalmethode worden vóór afronding met ons team via WhatsApp afgestemd. Als je dat liever hebt, accepteren we ook cryptobetalingen via Cryptomus.'],
             ],
         ],
     ],

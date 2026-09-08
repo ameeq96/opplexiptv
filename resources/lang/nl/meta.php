@@ -8,7 +8,7 @@ return [
     ],
     'about' => [
         'title' => 'Over Opplex IPTV - Premium 4K Live IPTV-provider',
-        'description' => 'Opplex IPTV biedt xtreme hd iptv met 4K streaming, gratis proefperiode en 24/7 ondersteuning.',
+        'description' => 'Opplex IPTV biedt xtreme hd iptv met 4K-streaming, een gratis proefperiode en 24/7 ondersteuning.',
         'keywords' => 'beste iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv gratis proefperiode, 4k live iptv, iptv box',
     ],
     'pricing' => [
@@ -37,14 +37,14 @@ return [
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, beste iptv',
     ],
     'buynow' => [
-        'title' => 'Koop IPTV Nu | Directe Toegang tot 4K IPTV en HD Streaming',
-        'description' => 'Koop vandaag IPTV en geniet direct van toegang tot hoogwaardige IPTV-diensten, inclusief 4K streaming, HD-kanalen en een gratis proefperiode.',
-        'keywords' => 'iptv nu kopen, 4K IPTV, iptv service kopen, iptv box aanschaffen, IPTV streaming, iptv abonnement kopen, HD IPTV, directe iptv toegang',
+        'title' => 'Koop IPTV nu | IPTV-abonnementen voor 4K en HD',
+        'description' => 'Kies een IPTV-abonnement voor ondersteunde 4K- en HD-streaming en rond daarna betaling en activering af met ons team op WhatsApp.',
+        'keywords' => 'iptv nu kopen, 4K IPTV, iptv service kopen, iptv box aanschaffen, IPTV streaming, iptv abonnement kopen, HD IPTV, IPTV-activering via WhatsApp',
     ],
     'buy-now-panel' => [
-        'title' => 'Koop IPTV Paneel | Reseller IPTV Dashboard & Directe',
-        'description' => 'Koop nu je IPTV-paneel en krijg direct toegang tot een krachtig IPTV-dashboard voor gebruikersbeheer, lijnactivering en 4K & HD streaming.',
-        'keywords' => 'iptv paneel kopen, IPTV reseller dashboard, IPTV beheerpaneel, directe IPTV paneeltoegang, 4K IPTV paneel, HD IPTV paneel, IPTV controlepaneel, reseller IPTV tools',
+        'title' => 'Koop IPTV-paneel | IPTV-dashboard voor resellers',
+        'description' => 'Bestel een IPTV-resellerpaneel voor gebruikersbeheer en lijnactivering en rond daarna betaling en installatie af met ons team op WhatsApp.',
+        'keywords' => 'iptv paneel kopen, IPTV reseller dashboard, IPTV beheerpaneel, IPTV-paneel instellen via WhatsApp, 4K IPTV paneel, HD IPTV paneel, IPTV controlepaneel, reseller IPTV tools',
     ],
     'iptv-applications' => [
         'title' => 'Top IPTV-apps: Smarters, Player, Android TV & Meer',
@@ -79,7 +79,7 @@ return [
     'terms-of-service' => [
         'title'       => 'Gebruiksvoorwaarden en Wettelijk Beleid',
         'description' => 'Lees de Opplex IPTV gebruiksvoorwaarden over accountregels, betalingen, hernieuwingen en servicebeschikbaarheid.',
-        'keywords'    => 'IPTV voorwaarden, Opplex IPTV, legaal IPTV, betalingen, automatisch verlengen',
+        'keywords'    => 'IPTV voorwaarden, Opplex IPTV, legaal IPTV, betalingen, handmatig verlengen',
     ],
     'privacy-policy' => [
         'title'       => 'Privacybeleid en Gegevensbescherming',
@@ -102,14 +102,14 @@ return [
         'keywords'    => 'IPTV configuratie, IPTV installatie, IPTV pakketten, IPTV reseller, abonnement, Android TV box, Firestick, smart-tv, 1 verbinding, 2 verbindingen, 4 verbindingen, jaarlijks IPTV, maandelijks IPTV, streamingdienst',
     ],
     'checkout' => [
-        'title'       => 'Veilige IPTV-checkout | Rond je bestelling af met directe activatie',
-        'description' => 'Rond je IPTV-bestelling af via onze veilige checkout: controleer je gekozen apparaat, IPTV-provider, verbindings­plan en abonnements­pakket en betaal',
-        'keywords'    => 'IPTV checkout, veilige checkout, bestelling afronden, IPTV-betaling, IPTV-abonnement, betalen met kaart, betalen met crypto, directe activatie, besteloverzicht, streamingdienst',
+        'title'       => 'Veilige IPTV-checkout | Dien je bestelling in',
+        'description' => 'Controleer het gekozen apparaat, de provider, verbinding en het pakket, dien je IPTV-bestelling in en ga daarna verder met betalen via ons team op WhatsApp.',
+        'keywords'    => 'IPTV checkout, veilige checkout, bestelling indienen, betaling via WhatsApp, IPTV-abonnement, betalen met kaart, betalen met crypto, besteloverzicht, streamingdienst',
     ],
     'thankyou' => [
-        'title'       => 'Bedankt | Bestelling bevestigd & volgende stappen voor je IPTV-abonnement',
-        'description' => 'Bedankt voor je bestelling. Je IPTV-abonnement is ontvangen en wordt nu verwerkt.',
-        'keywords'    => 'bedankpagina, bestelling bevestigd, IPTV-bestelling, IPTV-abonnement, succesvolle bestelling, activatie-instructies, accountgegevens, klantenservice, streamingdienst',
+        'title'       => 'Bestelling ontvangen | Ga verder met IPTV-betaling via WhatsApp',
+        'description' => 'Je IPTV-bestelling is aangemaakt en blijft in behandeling totdat de betaling is bevestigd. Ga verder met ons team op WhatsApp.',
+        'keywords'    => 'bedankpagina, bestelling ontvangen, IPTV-bestelling in behandeling, betaling via WhatsApp, IPTV-abonnement, activatie-instructies, accountgegevens, klantenservice, streamingdienst',
     ],
     'blogs' => [
         'index' => [

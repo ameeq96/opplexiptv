@@ -36,7 +36,7 @@ return [
                     ],
                     [
                         'question' => 'Is Opplex IPTV beschikbaar in mijn land?',
-                        'answer' => 'Ja. Opplex werkt overal waar je een stabiele internetverbinding hebt: in de USA, UK, Canada, Europa, het Midden-Oosten en daarbuiten. Je abonnement is niet aan één regio gebonden.',
+                        'answer' => 'Opplex is beschikbaar in veel regio’s, waaronder de USA, UK, Canada, Europa en het Midden-Oosten. De weergave hangt af van je lokale netwerk, apparaat en toepasselijke regionale beperkingen; vraag ons indien nodig je locatie te bevestigen.',
                     ],
                     [
                         'question' => 'Waar kan ik Opplex IPTV kopen?',
@@ -49,7 +49,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Biedt Opplex IPTV een gratis proefperiode aan?',
-                        'answer' => 'Ja. We bieden een proefperiode van $1, zodat je de kanaalkwaliteit, beeldstabiliteit en prestaties op je eigen apparaat kunt controleren voordat je een volledig abonnement neemt. Stuur ons een bericht via WhatsApp om te beginnen.',
+                        'answer' => 'Ja. We bieden een gratis proefperiode waarmee je de beschikbaarheid van kanalen, beeldkwaliteit en prestaties op je eigen apparaat kunt testen voordat je een abonnement kiest. Stuur ons via WhatsApp een bericht om te beginnen.',
                     ],
                     [
                         'question' => 'Hoeveel kost een abonnement?',
@@ -70,14 +70,14 @@ return [
                 'items' => [
                     [
                         'question' => 'Hoe meld ik me aan bij Opplex IPTV?',
-                        'answer' => 'Nadat je een abonnement hebt genomen, sturen we je per e-mail en WhatsApp een gebruikersnaam, wachtwoord en server-URL. Open je IPTV-app, kies “Login with Xtream Codes”, voer deze drie gegevens in en je kanalen worden automatisch geladen. Bekijk de afbeelding met de inloggids op deze pagina voor visuele instructies.',
+                        'answer' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we je per e-mail en WhatsApp een gebruikersnaam, wachtwoord en server-URL. Open je IPTV-app, kies “Login with Xtream Codes” en voer deze drie gegevens in. Bekijk de afbeelding met de inloggids op deze pagina voor visuele instructies.',
                         'images' => [
                             ['url' => 'images/resource/loginguide.webp', 'caption' => 'Inloggids'],
                         ],
                     ],
                     [
                         'question' => 'Welke apparaten werken met Opplex?',
-                        'answer' => 'Opplex werkt op vrijwel alles: Amazon Firestick, Fire TV, Android TV-boxen, Samsung en LG Smart TV\'s, Android-telefoons en -tablets, iPhones, iPads, MAG-boxen, Windows-PCs, Mac en Linux. Als het apparaat een IPTV-spelerapp ondersteunt, werkt het.',
+                        'answer' => 'Opplex is compatibel met populaire apparaten, waaronder ondersteunde Amazon Firestick, Fire TV, Android TV-boxen, Samsung en LG Smart TV\'s, Android-telefoons en -tablets, iPhones, iPads, MAG-boxen, Windows-PCs, Mac en Linux. Compatibiliteit kan verschillen per model, besturingssysteem en IPTV-app.',
                     ],
                     [
                         'question' => 'Werkt Opplex IPTV op een laptop of PC?',
@@ -102,7 +102,7 @@ return [
                     ],
                     [
                         'question' => 'Wat zijn de voordelen van IPTV ten opzichte van kabel of satelliet?',
-                        'answer' => 'De prijs is het grootste voordeel; je krijgt veel meer kanalen voor een fractie van de kosten. Je krijgt ook on-demandcontent, hoeft geen schotel te installeren en kunt overal op elk scherm kijken. Met IPTV heb je bovendien eenvoudig toegang tot internationale content die kabelaanbieders niet aanbieden.',
+                        'answer' => 'De prijs is een belangrijk voordeel; je krijgt toegang tot een ruime zenderselectie voor een fractie van de kosten. Je krijgt ook on-demandcontent, hoeft geen schotel te installeren en kunt op compatibele schermen in ondersteunde regio’s kijken. IPTV kan bovendien toegang bieden tot beschikbare internationale content.',
                     ],
                 ],
             ],
@@ -171,7 +171,7 @@ return [
                 ],
                 [
                     'title' => 'Prijzen die niet langzaam stijgen',
-                    'text' => '$2.99 per maand blijft $2.99 per maand. We gebruiken geen actietarief dat we bij verlenging verhogen. De prijs waarvoor je je aanmeldt, is de prijs die je bij verlenging betaalt.',
+                    'text' => 'De prijs die bij het afrekenen wordt getoond, geldt voor de gekozen abonnementsperiode. Abonnementen worden niet automatisch verlengd, zodat je vóór een verlenging het actuele abonnement en de prijs kunt bekijken.',
                     'icon' => 'fa fa-tag',
                 ],
                 [
@@ -194,12 +194,12 @@ return [
                 'Pakistan, India en Bangladesh',
                 'En tientallen andere landen, zolang er een goede internetverbinding is',
             ],
-            'outro' => 'Eén abonnement werkt in al deze landen. Geen geografische blokkades of regionale beperkingen, alleen je login en een internetverbinding, waar je ook bent.',
+            'outro' => 'Eén abonnement kan op compatibele apparaten in ondersteunde regio’s worden gebruikt. Weergave en beschikbaarheid van content hangen af van het netwerk, apparaat, de bron en toepasselijke lokale beperkingen.',
         ],
         'team' => [
             'heading' => 'Een klein team met een zeer specifieke taak',
             'paragraphs' => [
-                'We hebben geen honderden medewerkers. We hebben een hecht team van mensen dat het platform, de servers, apps en ondersteuning beheert en elke dag online is om ervoor te zorgen dat alles blijft werken.',
+                'We hebben geen honderden medewerkers. Een hecht team bewaakt dagelijks het platform, de servers en apps en behandelt aanvragen tijdens actieve ondersteuningsuren.',
                 'Geen uitbesteed supportcentrum. Geen automatische chat die doet alsof het een persoon is. Wanneer je ons via WhatsApp een bericht stuurt, praat je met iemand die werkelijk toegang tot je account heeft en het kan herstellen.',
                 'Zo hebben we dit bewust opgebouwd. Door het team gefocust te houden, reageren we sneller, maken we minder fouten en blijft de dienst op koers wanneer niemand kijkt.',
             ],
@@ -239,7 +239,7 @@ return [
                 ],
                 [
                     'question' => 'Kan ik Opplex buiten de USA en Europa gebruiken?',
-                    'answer' => 'Ja. Opplex werkt overal met een stabiele internetverbinding. We hebben actieve abonnees in 40+ landen. De dienst kent geen regioblokkades.',
+                    'answer' => 'Opplex is beschikbaar in veel regio’s en heeft abonnees in 40+ landen. De weergave hangt af van het lokale netwerk, apparaat en toepasselijke beperkingen; vraag ons vóór vertrek je bestemming te bevestigen.',
                 ],
             ],
         ],
@@ -283,10 +283,10 @@ return [
             'items' => [
                 ['title' => 'Een gratis proefperiode starten:', 'text' => 'Stuur ons een bericht via WhatsApp en vertel op welk apparaat je wilt testen. We activeren een proefperiode en begeleiden je bij de installatie.', 'icon' => 'fa fa-play-circle-o'],
                 ['title' => 'Hulp bij installatie en configuratie:', 'text' => 'Vertel ons via WhatsApp welk type apparaat je hebt. We reageren binnen enkele minuten met stapsgewijze instructies, meestal inclusief screenshots.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Ontbrekende inloggegevens:', 'text' => 'Controleer eerst je spammap. Zijn je gegevens nog steeds niet aangekomen, stuur ons dan de e-mail die je bij het afrekenen hebt gebruikt en wij verzenden ze direct opnieuw.', 'icon' => 'fa fa-key'],
+                ['title' => 'Ontbrekende inloggegevens:', 'text' => 'Controleer eerst je spammap. Zijn je gegevens nog steeds niet aangekomen, stuur ons dan de e-mail die je bij het afrekenen hebt gebruikt; we controleren de bestelling en sturen ze indien nodig opnieuw.', 'icon' => 'fa fa-key'],
                 ['title' => 'Vragen over facturering en betaling:', 'text' => 'Stel vragen over bedragen, betalingsbewijzen, prijzen bij verlenging of wisselen van abonnement via WhatsApp of e-mail. We bewaren elke bestelling en kunnen je gegevens snel opzoeken.', 'icon' => 'fa fa-credit-card'],
                 ['title' => 'Resellervragen:', 'text' => 'Interesse in het resellerpaneel? Stuur ons een bericht via WhatsApp. We leggen uit hoe credits werken en hoe je je eerste klantlijn instelt.', 'icon' => 'fa fa-users'],
-                ['title' => 'Kanaalverzoeken of meldingen van buffering:', 'text' => 'Kun je een specifiek kanaal niet vinden? Heb je last van buffering? Laat het ons weten via WhatsApp en wij onderzoeken het, herstellen het of voegen het waar mogelijk toe.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Kanaalverzoeken of meldingen van buffering:', 'text' => 'Kun je een specifiek kanaal niet vinden? Heb je last van buffering? Laat het ons weten via WhatsApp en wij onderzoeken het en helpen waar mogelijk.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
@@ -302,7 +302,7 @@ return [
             'heading' => 'Contact en ondersteuning | Veelgestelde vragen',
             'items' => [
                 ['question' => 'Wat is de snelste manier om hulp te krijgen?', 'answer' => 'WhatsApp op +1 (639) 390-3194. Dit wordt de hele dag in de gaten gehouden en de meeste vragen worden binnen enkele minuten beantwoord.'],
-                ['question' => 'Ik heb net betaald, maar mijn inloggegevens zijn niet aangekomen. Wat moet ik doen?', 'answer' => 'Controleer eerst je spam- of ongewenste-e-mailmap. Staan ze er na 10 minuten nog niet in, stuur ons dan via WhatsApp het e-mailadres dat je bij het afrekenen hebt gebruikt en wij sturen ze direct opnieuw.'],
+                ['question' => 'Ik heb net betaald, maar mijn inloggegevens zijn niet aangekomen. Wat moet ik doen?', 'answer' => 'Controleer eerst je spam- of ongewenste-e-mailmap. Zijn de gegevens na bevestiging van de betaling nog niet aangekomen, stuur ons dan via WhatsApp de bestelreferentie en het gebruikte e-mailadres. Het team verifieert de betaling en helpt je tijdens actieve ondersteuningsuren.'],
                 ['question' => 'Kunnen jullie me helpen Opplex op mijn specifieke apparaat in te stellen?', 'answer' => 'Ja. Vertel ons je apparaat: Firestick, Smart TV-model, MAG, Android-box, iPhone enzovoort, en we sturen je de exacte stappen. Met de juiste instructies duurt de meeste installatie minder dan vijf minuten.'],
                 ['question' => 'Welke informatie moet ik vermelden wanneer ik contact opneem?', 'answer' => 'Het e-mailadres van je bestelling, het apparaat dat je gebruikt en een beschrijving van het probleem. Screenshots helpen als er op het scherm iets misgaat. Hoe meer informatie je vooraf geeft, hoe sneller we kunnen helpen.'],
                 ['question' => 'Bieden jullie ondersteuning in andere talen?', 'answer' => 'Onze site is beschikbaar in 10 talen. Ons ondersteuningsteam kan in verschillende daarvan helpen. Is Engels niet je moedertaal, stuur ons dan gerust een bericht in je eigen taal en wij doen ons best.',

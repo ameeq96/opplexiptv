@@ -50,7 +50,7 @@ return [
 
   'network_heading' => 'Мы предоставляем безлимитное IPTV в 4K, включая бесплатный тест',
   'feature_50k_movies' => 'Смотрите 50k+ фильмов на лучшем IPTV Smart Player',
-  'feature_50k_movies_desc' => 'Смотрите более 50,000 фильмов Болливуда и Голливуда через xtreme HD IPTV и aroma IPTV. Работает на любом IPTV Box с HD/4K качеством.',
+  'feature_50k_movies_desc' => 'Смотрите более 50,000 фильмов Болливуда и Голливуда через Xtreme HD IPTV и Aroma IPTV на популярных совместимых проигрывателях и устройствах, в HD или 4K там, где это доступно.',
   'feature_5k_series' => '5k+ сериалов на IPTV Box (Netflix, Prime и другие)',
   'feature_5k_series_desc' => 'Смотрите более 5,000 сериалов Netflix и Prime Video с IPTV Smart Player и xtreme HD IPTV — с бесплатным тестом и поддержкой 4K.',
   'feature_12k_channels' => '12k+ ТВ-каналов через IPTV Box и Smart Player',
@@ -67,7 +67,7 @@ return [
   'iptv_sports_desc' => 'Футбол, крикет, UFC и другие виды спорта в 4K IPTV без задержек — работает с IPTV Smart Player и IPTV Box.',
   'iptv_vod' => 'Премиум VOD IPTV с 50k+ фильмов и сериалов',
   'iptv_vod_desc' => 'Смотрите более 50k фильмов и 5k+ веб-сериалов по запросу через xtreme HD IPTV и aroma IPTV с бесплатным тестом и в Full HD.',
-  'iptv_devices' => 'IPTV на всех устройствах – Smart Player, Android, Box',
+  'iptv_devices' => 'IPTV на популярных устройствах — Smart Player, Android, Box',
   'iptv_devices_desc' => 'Используйте IPTV Smart Player на Smart TV, iPhone, Android, Firestick, MAG Box и других устройствах. Включает xtreme HD IPTV и бесплатный тест.',
   'learn_more' => 'Узнать больше о тарифах IPTV',
 
@@ -123,7 +123,7 @@ return [
   'feature_easy_desc' => 'Настройка IPTV Smart Player или IPTV Box за несколько минут на Android, iOS, MAG, Firestick и Smart TV. Включает тест и поддержку.',
 
   'feature_multidevice' => 'Мультиустройство IPTV – Мобильный, Smart TV, Box',
-  'feature_multidevice_desc' => 'Смотрите IPTV на Smart TV, Android, iPhone, планшете и IPTV Box — наслаждайтесь aroma IPTV везде.',
+  'feature_multidevice_desc' => 'Смотрите IPTV на совместимых Smart TV, Android, iPhone, планшетах и IPTV Box — используйте Aroma IPTV в поддерживаемых регионах с учетом местной сети и применимых ограничений.',
 
   'feature_support' => 'Круглосуточная поддержка IPTV через WhatsApp',
   'feature_support_desc' => 'Получите помощь в настройке Smart Player, активации теста, решении проблем с Box и стримингом.',
@@ -226,7 +226,7 @@ return [
 
   // Questions & Answers - ostavlyaem v originalnom vide
   'faq.q1' => 'Chto takoye Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV eto IPTV servis kotoriy predlagaet bolee <strong>12,000 pryamih kanalov, 50000+ FILMOV, 5000+ poslednih serialov</strong>. Vmeste s mnogimi VOD variantami. Standartniy plan OPPLEXTV IPTV stoit <span style="text-decoration: line-through; color: #999;">$31.99/mesyats</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mesyats</span> i vklyuchaet mezhdunarodnie, sport, PPV, razvllechenie, novosti i drugie kategorii kanalov. OPPLEXTV IPTV mozhno ustanovit na lubie Android / IOS ustroystva, vklyuchaya Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield i drugie. OPPLEX IPTV yavlyaetsya luchshim IPTV serverom v Kanade.',
+  'faq.a1' => 'OPPLEXTV eto IPTV servis kotoriy predlagaet bolee <strong>12,000 pryamih kanalov, 50000+ FILMOV, 5000+ poslednih serialov</strong>. Vmeste s mnogimi VOD variantami. Standartniy plan OPPLEXTV IPTV stoit <span style="text-decoration: line-through; color: #999;">$31.99/mesyats</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mesyats</span> i vklyuchaet mezhdunarodnie, sport, PPV, razvllechenie, novosti i drugie kategorii kanalov. OPPLEXTV IPTV mozhno ustanovit na sovmestimie Android / IOS ustroystva, vklyuchaya Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield i drugie. OPPLEX IPTV yavlyaetsya luchshim IPTV serverom v Kanade.',
 
   'faq.q2' => 'Kak viglyadit IPTV?',
   'faq.a2' => 'Vot neskolko skrinshotov kak IPTV prilozhenie viglyadit na raznih ustroystvah.',
@@ -235,7 +235,7 @@ return [
   'faq.a3' => 'Kogda klient pokupaet Opplex IPTV podpisku, on poluchaet login kody. Klient dolzhen vvesti eti kody vmeste s predostavlennim URL v prilozhenie v ukazannie polya. Smotri kartinku nizhe dlya luchshego ponimaniya.',
 
   'faq.q4' => 'Est li trial v Opplex IPTV?',
-  'faq.a4' => 'Da, trial dostupen vsego za $1.',
+  'faq.a4' => 'Да. Доступен бесплатный тест, чтобы проверить сервис на своем устройстве перед выбором тарифа. Напишите нам в WhatsApp, чтобы начать.',
 
   'faq.q5' => 'Pochemu film inogda zagruzhayetsya s zaderzhkami?',
   'faq.a5' => 'Eto mozhet proizoyti iz-za nizkoy skorosti interneta ili bolshoy nagruzki. Postav na pauzu 10-15 sekund, a potom prodolzhay.',
@@ -370,7 +370,7 @@ return [
       ['icon' => 'flaticon-customer-service', 'title' => 'Bystraya nastroyka', 'description' => 'Pomoshch dlya Smart TV, Firestick, Android, iOS, MAG i IPTV playerov.'],
     ],
     'setup_title' => 'Vyberite podpisku, podklyuchite ustroistvo i smotrite',
-    'setup_text' => 'Vyberite IPTV provaidra, plan podklyuchenii i zavershite checkout. Komanda pomozhet ustanovit nuzhnoe IPTV prilozhenie.',
+    'setup_text' => 'Выберите провайдера IPTV и план подключений, отправьте заказ и продолжите оплату в WhatsApp. После подтверждения наша команда поможет установить подходящее приложение IPTV.',
     'setup_points' => [
       'Rabotayet so Smart TV, Firestick, Android TV, mobilnym, planshetom, MAG i IPTV playerami.',
       'Est mesyachnye, polugodovye, godovye i reseller opcii v razdele cen.',
@@ -405,7 +405,7 @@ return [
 
   'email_title'   => 'Spasibo - Opplex IPTV',
   'dear'          => 'Uvazhaemiy :name,',
-  'thank_you'     => "Spasibo za vash interes k nashey IPTV podpiske. Vi na pravylnom meste dlya luchshego TV opita vo vsem mire.",
+  'thank_you'     => "Spasibo za vash interes k nashey IPTV podpiske. Servis dostupen vo mnogih podderzhivaemyh regionah; dostupnost i vosproizvedenie zavisyat ot seti, ustroistva i primenimyh regionalnyh ogranicheniy.",
   'package_details' => 'Detali Vashego Paketa:',
   'package'       => 'Paket',
   'email'         => 'Электронная почта',
@@ -416,7 +416,7 @@ return [
   'tagline'       => "Luchshee TV v Mire",
 
   'contact' => [
-    'intro' => 'Uvazhaemiy Klient, Spasibo za interes k nashey IPTV podpiske. Vi na pravylnom meste dlya luchshego TV opita vo vsem mire.',
+    'intro' => 'Uvazhaemiy klient, spasibo za interes k nashey IPTV podpiske. Servis dostupen vo mnogih podderzhivaemyh regionah; dostupnost i vosproizvedenie zavisyat ot seti, ustroistva i primenimyh regionalnyh ogranicheniy.',
     'whatsapp_info' => 'Для быстрого ответа и продолжения подписки, пожалуйста, свяжитесь с нами в WhatsApp',
     'signature' => 'S uvazheniem, Opplex IPTV - Luchshee TV v Mire',
   ],
@@ -438,8 +438,8 @@ return [
     ],
     [
       'icon' => 'flaticon-customer-service',
-      'title' => 'Простая настройка IPTV на любом устройстве',
-      'description' => 'Начните смотреть мгновенно на Smart TV, Firestick, MAG, Android и iOS – технические навыки не нужны.',
+      'title' => 'Простая настройка IPTV на поддерживаемых устройствах',
+      'description' => 'Настройте IPTV на совместимых Smart TV, Fire TV Stick, MAG, Android и iOS с понятными инструкциями для начинающих.',
     ],
   ],
   'buy_now_heading' => 'Купите панель сейчас',
@@ -489,14 +489,14 @@ return [
   'checkout_continue_button'         => 'Перейти к оплате',
 
   // ==== CHECKOUT STEP ====
-  'checkout_complete_title_page'     => 'Завершите оформление заказа',
+  'checkout_complete_title_page'     => 'Проверьте и отправьте заказ',
 
   'checkout_badge_secure'            => 'Безопасная оплата',
   'checkout_badge_safe_info'         => 'Ваши данные защищены',
   'checkout_badge_encryption'        => '256-битное шифрование',
 
-  'checkout_complete_title'          => 'Завершите оформление заказа',
-  'checkout_complete_sub'            => 'Безопасная оплата и мгновенная активация',
+  'checkout_complete_title'          => 'Проверьте и отправьте заказ',
+  'checkout_complete_sub'            => 'Отправьте заказ, затем продолжите оплату с нашей командой в WhatsApp',
   'checkout_notice_single_item'      => 'Предыдущий товар удален. В корзине одновременно может находиться только один товар.',
 
   'checkout_billing_details'         => 'Платежные данные',
@@ -526,25 +526,25 @@ return [
   'checkout_total_label'             => 'Итого',
 
   'checkout_pay_card_title'          => 'Оплата кредитной или дебетовой картой',
-  'checkout_pay_card_desc'           => 'Вы будете перенаправлены на нашу платежную страницу для завершения оплаты картой. Подписка будет предоставлена сразу после покупки.',
+  'checkout_pay_card_desc'           => 'Выберите карту и отправьте заказ. Наша команда подтвердит безопасную ссылку для оплаты в WhatsApp до активации.',
   'checkout_pay_crypto_title'        => 'Оплата криптовалютой',
-  'checkout_pay_crypto_desc'         => 'Безопасно оплачивайте заказ популярными криптовалютами.',
-  'checkout_place_order_btn'         => 'Оформить заказ и оплатить',
+  'checkout_pay_crypto_desc'         => 'Выберите криптовалюту и отправьте заказ. Наша команда подтвердит инструкции по оплате в WhatsApp до активации.',
+  'checkout_place_order_btn'         => 'Отправить заказ',
 
 
   'thankyou_page' => [
     'title'       => 'Спасибо за ваш заказ',
     'description' => 'Ваш заказ успешно получен. Вы получите данные по IPTV-подписке на e-mail и WhatsApp после подтверждения оплаты.',
-    'keywords'    => 'спасибо, заказ завершён, заказ IPTV, успешный заказ, ожидание оплаты, активация IPTV, стриминговый сервис',
+    'keywords'    => 'спасибо, заказ создан, заказ IPTV, ожидание оплаты, оплата в WhatsApp, активация IPTV, стриминговый сервис',
 
     'heading'     => 'Спасибо за ваш заказ! 🎉',
     'sub_text'    => 'Ваш заказ получен. Детали подписки будут отправлены на e-mail и WhatsApp после подтверждения оплаты.',
-    'badge_text'  => 'Шаг оплаты успешно создан',
+    'badge_text'  => 'Заказ успешно создан',
 
     'order_status' => 'Статус заказа',
     'pending'     => 'Ожидает оплаты',
     'delivery'    => 'Доставка',
-    'delivery_text' => 'Мгновенная доставка после подтверждения оплаты',
+    'delivery_text' => 'Доставка после подтверждения оплаты',
     'support'     => 'Поддержка',
     'support_text' => 'Круглосуточная поддержка через WhatsApp и e-mail',
 
@@ -554,7 +554,9 @@ return [
     'home_btn'    => 'На главную',
     'support_btn' => 'Связаться с поддержкой',
 
-    'footnote'    => 'Не получили письмо в течение нескольких минут? Проверьте папку «Спам» или свяжитесь со службой поддержки.',
+    'footnote'    => 'Завершите оплату в WhatsApp, чтобы активировать подписку. Если вам нужна помощь, наша команда подскажет дальнейшие шаги.',
+    'continue_payment_whatsapp' => 'Продолжить оплату в WhatsApp',
+    'whatsapp_payment_message' => 'Здравствуйте, я хочу завершить оплату заказа №:order. Пакет: :package. Сумма: :amount. Способ оплаты: :method.',
   ],
 
   // Blog
@@ -589,7 +591,7 @@ return [
     'step3_title' => 'Шаг 3: Быстрые действия',
     'step3_text' => 'Используйте быстрые кнопки <b>Тарифы</b>, <b>Пакеты</b>, <b>Оформить заказ</b> и <b>Связаться</b> для быстрых действий.',
     'step4_title' => 'Шаг 4: Помощь при оформлении заказа',
-    'step4_text' => 'Пример: <b>"имя Али"</b>, <b>"электронная почта ali@gmail.com"</b>, <b>"оформить заказ и оплатить"</b>.',
+    'step4_text' => 'Пример: <b>"имя Али"</b>, <b>"электронная почта ali@gmail.com"</b>, <b>"отправить заказ"</b>. После создания заказа продолжите оплату в WhatsApp.',
     'step5_title' => 'Шаг 5: Безопасные действия',
     'step5_text' => 'Перед чувствительными действиями, такими как оплата, помощник всегда запрашивает подтверждение.',
     'back' => 'Назад',
@@ -628,7 +630,7 @@ return [
   'home_hero_watch_live' => 'Смотрите :title в прямом эфире в HD',
   'home_services_eyebrow' => 'Премиум-возможности',
   'home_services_intro' => 'Мощный стриминг, более удобный доступ и более чистый IPTV-опыт на любом устройстве.',
-  'home_testimonials_intro' => 'Проверенные отзывы клиентов, которые используют Opplex IPTV для прямого эфира, спорта и контента по запросу.',
+  'home_testimonials_intro' => 'Отзывы зрителей, использующих Opplex IPTV для прямого эфира, спорта и контента по запросу.',
   'home_testimonials_verified_customer' => 'Проверенный IPTV-клиент',
   'home_unlimited_eyebrow' => 'Безлимитный доступ',
   'home_unlimited_intro' => 'Смотрите премиальное прямое телевидение и VOD с более быстрым доступом, высокой стабильностью и гибкими тарифами для современного просмотра.',
@@ -677,7 +679,7 @@ return [
     ],
     'packages' => [
       'q1' => 'Что входит в каждый пакет Opplex IPTV?',
-      'a1' => 'Каждый пакет включает полный доступ к более чем 12 000 каналов в прямом эфире, всей библиотеке фильмов и сериалов, телегиду EPG и трансляциям в 4K/HD там, где они доступны.',
+      'a1' => 'Каждый пакет включает доступ к доступным каналам в прямом эфире, включенному каталогу фильмов и сериалов, телегиду EPG и трансляциям в 4K/HD там, где они доступны.',
       'q2' => 'Чем месячный пакет отличается от годового?',
       'a2' => 'Состав контента одинаков — более длительные планы просто обходятся дешевле в месяц и требуют реже продлевать подписку.',
       'q3' => 'Сколько устройств можно использовать с одним пакетом?',
@@ -711,9 +713,9 @@ return [
       'q3' => 'Какую поддержку клиентов вы предоставляете?',
       'a3' => 'Мы оказываем дружелюбную поддержку по электронной почте и в WhatsApp и помогаем с настройкой, активацией и любыми вопросами о воспроизведении.',
       'q4' => 'Добавляете ли вы новые каналы и контент?',
-      'a4' => 'Да. Список каналов и библиотека VOD постоянно обновляются, поэтому у вас всегда есть доступ к новейшему контенту.',
+      'a4' => 'Список каналов и библиотека VOD регулярно обновляются. Доступность зависит от источника и региона, поэтому попросите нас подтвердить конкретный канал или название.',
       'q5' => 'Как начать пользоваться Opplex IPTV?',
-      'a5' => 'Выберите план и оформите заказ, после чего мы в течение нескольких минут отправим данные для входа, чтобы вы могли сразу начать просмотр.',
+      'a5' => 'Выберите план, отправьте заказ и продолжите оплату в WhatsApp. Мы отправим данные для входа после подтверждения платежа.',
     ],
     'reseller' => [
       'q1' => 'Как стать реселлером Opplex IPTV?',
@@ -729,11 +731,11 @@ return [
     ],
     'subscription' => [
       'q1' => 'Что входит в подписку Opplex IPTV?',
-      'a1' => 'Подписка открывает все каналы в прямом эфире, полную библиотеку фильмов и сериалов, экранный телегид и поддержку приложений на разных устройствах.',
+      'a1' => 'Подписка дает доступ к доступным каналам в прямом эфире, включенному каталогу фильмов и сериалов, экранному телегиду и приложениям на совместимых устройствах.',
       'q2' => 'Как активировать подписку?',
       'a2' => 'После оплаты мы отправим вам коды для входа и URL. Введите их в приложение IPTV-плеера, и каналы загрузятся автоматически.',
       'q3' => 'Можно ли пользоваться подпиской во время поездок за границу?',
-      'a3' => 'Да. Подписка работает везде, где есть стабильное подключение к интернету, поэтому вы сможете продолжать смотреть контент в поездках.',
+      'a3' => 'Подписку можно использовать во многих поддерживаемых регионах при стабильном соединении. Сетевые условия и региональные ограничения могут различаться, поэтому перед поездкой уточните у нас место назначения.',
       'q4' => 'Какая скорость интернета необходима?',
       'a4' => 'Для плавной трансляции в HD/4K мы рекомендуем скорость не менее 15–25 Мбит/с. При меньшей скорости сервис тоже работает, но качество изображения может снизиться.',
       'q5' => 'Что произойдет после окончания подписки?',
@@ -757,7 +759,7 @@ return [
       'q2' => 'Как быстро я получу ответ?',
       'a2' => 'В рабочее время мы стараемся отвечать в течение нескольких минут, а в остальное время — как можно скорее.',
       'q3' => 'Я не получил данные для входа — что делать?',
-      'a3' => 'Сначала проверьте папку со спамом. Если данных там нет, напишите нам в WhatsApp, указав адрес электронной почты из заказа, и мы отправим их повторно.',
+      'a3' => 'Сначала проверьте папку со спамом. Если данных там нет, отправьте в WhatsApp номер заказа или адрес электронной почты; команда проверит оплату и поможет в активные часы поддержки.',
       'q4' => 'Вы можете помочь настроить мое устройство?',
       'a4' => 'Да. Наша команда с радостью пошагово поможет установить и активировать сервис на любом поддерживаемом устройстве.',
       'q5' => 'Предоставляете ли вы поддержку на других языках?',
@@ -783,7 +785,7 @@ return [
       'q3' => 'Поставляются ли стриминговые устройства уже настроенными?',
       'a3' => 'Там, где доступна такая возможность, устройства поставляются готовыми к трансляции, чтобы вам оставалось подключить их и начать просмотр с минимальной настройкой.',
       'q4' => 'Как доставляются заказы из магазина?',
-      'a4' => 'Физические товары отправляются по вашему адресу, а цифровые продукты и коды доставляются по электронной почте сразу после оплаты.',
+      'a4' => 'Физические товары отправляются по вашему адресу. Цифровые продукты и коды отправляются по электронной почте после подтверждения оплаты, обычно в активные часы поддержки.',
       'q5' => 'Вы можете помочь выбрать подходящее устройство?',
       'a5' => 'Конечно. Напишите нам в WhatsApp о своих потребностях и бюджете, и мы порекомендуем наиболее подходящий вариант.',
     ],

@@ -23,7 +23,7 @@ return [
     ],
     'packages' => [
         'title' => 'Meilleurs forfaits IPTV Europe avec code IPTV inclus',
-        'description' => 'Regardez 12 000+ chaînes, VOD et sports HD sur IPTV box, smart player et stream player. Activation instantanée avec décodeur IPTV avec code.',
+        'description' => 'Regardez les chaînes, VOD et sports HD disponibles sur IPTV box, Smart Player et Stream Player. L’activation suit la confirmation du paiement sur WhatsApp.',
         'keywords' => 'forfaits IPTV, IPTV player, abonnement IPTV France, IPTV m3u, IPTV sport, IPTV stream player, code IPTV, IPTV gratuit sans code',
     ],
     'iptv-subscription-service' => [
@@ -37,14 +37,14 @@ return [
         'keywords' => 'revendeur IPTV, IPTV box, IPTV m3u, Xtream IPTV, code IPTV, décodeur IPTV, IPTV illégal, dev IPTV pro, France Italie UK',
     ],
     'buynow' => [
-        'title' => 'Achetez IPTV maintenant | Accédez instantanément à la',
-        'description' => 'Achetez IPTV aujourd\'hui et profitez d\'un accès instantané aux services IPTV de haute qualité, y compris la diffusion 4K, des chaînes HD et un essai gratuit. Obtenez les meilleurs boîtiers IPTV et commencez à diffuser dans le monde entier en Europe et aux États-Unis.',
-        'keywords' => 'acheter IPTV maintenant, IPTV 4K, acheter service IPTV, acheter boîtier IPTV, diffusion IPTV, abonnement IPTV, IPTV HD, accès IPTV instantané',
+        'title' => 'Achetez IPTV maintenant | Formules de streaming IPTV 4K et HD',
+        'description' => 'Choisissez une formule IPTV pour le streaming 4K et HD pris en charge, puis finalisez le paiement et l’activation avec notre équipe sur WhatsApp.',
+        'keywords' => 'acheter IPTV maintenant, IPTV 4K, acheter service IPTV, acheter boîtier IPTV, diffusion IPTV, abonnement IPTV, IPTV HD, activation IPTV sur WhatsApp',
     ],
     'buy-now-panel' => [
-        'title' => 'Acheter un Panel IPTV | Tableau de Bord Revendeur',
-        'description' => 'Achetez votre panel IPTV dès maintenant et accédez instantanément à un tableau de bord puissant pour gérer les utilisateurs, activer des lignes, et',
-        'keywords' => 'acheter panel IPTV, tableau de bord revendeur IPTV, gestion IPTV, accès instantané panel IPTV, panel IPTV 4K, panel IPTV HD, outils revendeur IPTV',
+        'title' => 'Acheter un panel IPTV | Tableau de bord revendeur',
+        'description' => 'Commandez un panel revendeur IPTV pour gérer les utilisateurs et activer des lignes, puis finalisez le paiement et la configuration avec notre équipe sur WhatsApp.',
+        'keywords' => 'acheter panel IPTV, tableau de bord revendeur IPTV, gestion IPTV, configuration panel IPTV sur WhatsApp, panel IPTV 4K, panel IPTV HD, outils revendeur IPTV',
     ],
     'iptv-applications' => [
         'title' => 'Top apps IPTV - Xtream IPTV, IPTV player, IPTV box',
@@ -102,14 +102,14 @@ return [
         'keywords'    => 'configuration IPTV, réglage IPTV, offres IPTV, revendeur IPTV, formule d’abonnement, box Android TV, Firestick, smart TV, 1 connexion, 2 connexions, 4 connexions, IPTV annuel, IPTV mensuel, service de streaming',
     ],
     'checkout' => [
-        'title'       => 'Paiement sécurisé IPTV | Finalisez votre commande avec activation instantanée',
-        'description' => 'Finalisez votre commande IPTV via un paiement sécurisé : vérifiez votre appareil, votre fournisseur IPTV, votre plan de connexion et votre formule',
-        'keywords'    => 'checkout IPTV, paiement sécurisé IPTV, finaliser commande, paiement IPTV, abonnement IPTV, paiement par carte, paiement crypto, activation instantanée, récapitulatif de commande, service de streaming',
+        'title'       => 'Checkout IPTV sécurisé | Vérifiez et envoyez votre commande',
+        'description' => 'Vérifiez l’appareil, le fournisseur, les connexions et la formule choisis, envoyez votre commande IPTV, puis poursuivez le paiement avec notre équipe sur WhatsApp.',
+        'keywords'    => 'checkout IPTV, checkout sécurisé, envoyer commande, paiement WhatsApp, abonnement IPTV, paiement par carte, paiement crypto, récapitulatif de commande, service de streaming',
     ],
     'thankyou' => [
-        'title'       => 'Merci | Commande confirmée et prochaines étapes pour votre abonnement IPTV',
-        'description' => 'Merci pour votre commande. Votre abonnement IPTV a bien été reçu et est en cours de traitement.',
-        'keywords'    => 'page de remerciement, commande confirmée, commande IPTV, abonnement IPTV, succès de commande, instructions d’activation, détails du compte, support client, service de streaming',
+        'title'       => 'Commande reçue | Poursuivez le paiement IPTV sur WhatsApp',
+        'description' => 'Votre commande IPTV a été créée et reste en attente jusqu’à confirmation du paiement. Poursuivez avec notre équipe sur WhatsApp.',
+        'keywords'    => 'page de remerciement, commande reçue, commande IPTV en attente, paiement WhatsApp, abonnement IPTV, instructions d’activation, détails du compte, support client, service de streaming',
     ],
     'blogs' => [
         'index' => [

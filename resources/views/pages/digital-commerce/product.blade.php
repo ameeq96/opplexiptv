@@ -64,11 +64,11 @@
                 <div class="dp-assure-strip">
                     <div class="item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
-                        Instant delivery
+                        Delivery after payment confirmation
                     </div>
                     <div class="item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
-                        Global access
+                        Access in supported regions
                     </div>
                     <div class="item">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.2 7.7L3 21l1.8-5.8A8.5 8.5 0 1 1 21 11.5z"/></svg>
@@ -85,7 +85,7 @@
 
                 <h1 class="dp-title">{{ $product->title }}</h1>
 
-                <span class="dp-stock"><span class="dot"></span> In stock · Ready for instant delivery</span>
+                <span class="dp-stock"><span class="dot"></span> In stock · Sent after payment confirmation</span>
 
                 <div class="dp-price">
                     <span class="dp-price__now">
@@ -114,16 +114,19 @@
                     </li>
                     <li>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
-                        <span class="meta-pair"><span class="k">Delivery</span><span class="v">Instant digital</span></span>
+                        <span class="meta-pair"><span class="k">Delivery</span><span class="v">After payment confirmation</span></span>
                     </li>
                     <li>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
-                        <span class="meta-pair"><span class="k">Access</span><span class="v">Worldwide</span></span>
+                        <span class="meta-pair"><span class="k">Access</span><span class="v">Supported regions</span></span>
                     </li>
                 </ul>
 
                 <div class="dp-cta">
-                    <a class="dp-btn dp-btn--buy" href="{{ $waUrl }}" target="_blank" rel="noopener noreferrer">
+                    <a class="dp-btn dp-btn--buy" href="{{ $waUrl }}" target="_blank" rel="noopener noreferrer"
+                        data-whatsapp-placement="digital_product" data-whatsapp-intent="purchase"
+                        data-whatsapp-package="{{ $product->title }}" data-whatsapp-value="{{ $priceNum }}"
+                        data-whatsapp-currency="{{ $cur }}">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884z"/></svg>
                         Buy Now on WhatsApp
                     </a>
@@ -162,8 +165,8 @@
                 </div>
                 <div class="dp-step">
                     <span class="dp-step__n">3</span>
-                    <h3>Get it instantly</h3>
-                    <p>Receive your {{ strtolower($deliveryType) }} details by WhatsApp or email — usually within minutes.</p>
+                    <h3>Receive it after confirmation</h3>
+                    <p>Receive your {{ strtolower($deliveryType) }} details by WhatsApp or email after payment is confirmed during active support hours.</p>
                 </div>
             </div>
         </div>

@@ -25,6 +25,10 @@
                             <a href="https://wa.me/16393903194?text={{ rawurlencode('Hi, I want to buy ' . $product->title . ' ($' . number_format((float) $product->price, 2) . ').') }}"
                                target="_blank"
                                rel="noopener noreferrer"
+                               data-whatsapp-package="{{ $product->title }}"
+                               data-whatsapp-value="{{ number_format((float) $product->price, 2, '.', '') }}"
+                               data-whatsapp-currency="{{ $product->currency ?: 'USD' }}"
+                               data-whatsapp-intent="purchase" data-whatsapp-placement="digital_shop_card"
                                class="btn btn-sm btn-primary w-100">Buy Now</a>
                         </div>
                     </div>

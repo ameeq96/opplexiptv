@@ -35,6 +35,7 @@
                 <div id="orderHelp" class="form-text">{{ __('interface.activation.request_help') }}</div>
 
                 <button id="waBtn" class="btn btn-danger mt-3 w-100" type="button"
+                    data-whatsapp-button data-whatsapp-placement="activation_request" data-whatsapp-intent="activation"
                     aria-label="{{ __('interface.activation.send_label') }}"
                     disabled>
                     <i class="fa fa me-1"></i> {{ __('interface.activation.activate') }}

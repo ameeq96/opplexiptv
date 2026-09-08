@@ -208,7 +208,7 @@ return [
                 ],
                 [
                     'title' => 'Escolha 3 meses',
-                    'description' => 'Se experimentou o teste e gostou, mas ainda não está preparado para se comprometer por completo. Poupa um pouco em relação ao plano mensal e tem três meses ininterruptos para se familiarizar com o serviço.',
+                    'description' => 'Se experimentou o teste e gostou, mas ainda não está preparado para se comprometer por completo. Poupa um pouco em relação ao plano mensal e tem três meses de acesso para se familiarizar com o serviço.',
                 ],
                 [
                     'title' => 'Escolha o plano semestral',
@@ -216,7 +216,7 @@ return [
                 ],
                 [
                     'title' => 'Escolha o plano anual',
-                    'description' => 'Se vê TV regularmente e pretende o melhor preço. $23.99 por um ano completo equivale a menos de $2 por mês. Sem pressão para renovar nem aumentos de preço: apenas um ano completo de acesso desde o momento da adesão.',
+                    'description' => 'Se vê TV regularmente e pretende o melhor preço. $23.99 por um ano completo equivale a menos de $2 por mês, sem renovação automática no fim do plano.',
                 ],
             ],
             'trial_heading' => 'Tem dúvidas? Experimente antes de comprar:',
@@ -227,7 +227,7 @@ return [
             'paragraphs' => [
                 'Mantemos tudo simples. Sem taxas de configuração. Sem custos de ativação. O valor apresentado na tabela de preços é exatamente o que paga.',
                 'Aceitamos os principais cartões de crédito e débito através de processamento de pagamentos encriptado e conforme às normas do setor. Também aceitamos pagamentos em criptomoedas através da Cryptomus para quem preferir.',
-                'Não guardamos dados de cartões. Não renovamos automaticamente sem a sua intervenção. Quando o plano termina, termina; decide se e quando pretende renovar.',
+                'Não guardamos dados de cartões nem renovamos planos automaticamente. Quando o plano termina, o acesso para até optar por renovar.',
             ],
         ],
         'faq' => [
@@ -238,8 +238,8 @@ return [
                     'answer' => 'O plano mensal custa $2.99. Três meses custam $7.99. O semestral custa $14.99. O anual custa $23.99. Os planos Filex começam em $4.50 por mês. Todos os preços estão na tabela acima.',
                 ],
                 [
-                    'question' => 'Os preços mudam na renovação?',
-                    'answer' => 'Não. O valor do plano mantém-se igual quando renova. Não apresentamos um preço inicial baixo para depois aumentá-lo após o primeiro período.',
+                    'question' => 'Como funciona a renovação?',
+                    'answer' => 'Os planos não são renovados automaticamente. Antes de renovar, reveja o plano e o preço atuais e decida se pretende continuar.',
                 ],
                 [
                     'question' => 'Que métodos de pagamento são aceites?',
@@ -348,7 +348,7 @@ return [
             'items' => [
                 [
                     'question' => 'Como começo?',
-                    'answer' => 'Compre um pacote de créditos de revendedor nesta página. Depois de o pagamento ser concluído, o acesso ao painel fica configurado e pode começar imediatamente a ativar linhas de clientes.',
+                    'answer' => 'Peça um pacote de créditos de revendedor nesta página e continue o pagamento pelo WhatsApp. O acesso ao painel é configurado após a confirmação do pagamento durante as horas de suporte ativas.',
                 ],
                 [
                     'question' => 'Qual é a diferença entre os créditos de revendedor Opplex e Filex?',

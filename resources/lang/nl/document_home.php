@@ -121,7 +121,7 @@ return [
     'testimonials' => [
         'title' => 'Klantbeoordelingen - De beste IPTV-ervaring',
         'heading' => 'Lees wat kijkers zeggen over Opplex IPTV',
-        'intro' => 'Dit zijn echte beoordelingen van klanten die elke dag bij ons streamen met Opplex IPTV voor live-tv, sport en on-demand streaming.',
+        'intro' => 'Ervaringen gedeeld door kijkers die Opplex IPTV gebruiken voor live-tv, sport en on-demand streaming.',
         'verified_label' => 'Geverifieerde IPTV-klant',
         'reviews' => [
             [

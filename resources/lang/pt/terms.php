@@ -23,7 +23,7 @@ return [
             'title' => 'Assinaturas e Pagamentos',
             'item1' => 'Preços exibidos no checkout.',
             'item2' => 'Aceitamos cartões e criptomoedas (Cryptomus).',
-            'item3' => 'Renovação automática, salvo cancelamento.',
+            'item3' => 'As subscrições não são renovadas automaticamente. Quando um plano terminar, pode consultar o plano e o preço atuais e decidir se pretende renovar.',
         ],
         'refunds' => [
             'title' => 'Venda Definitiva, Reembolsos e Cancelamentos',

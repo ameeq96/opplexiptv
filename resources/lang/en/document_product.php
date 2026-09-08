@@ -101,7 +101,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ Movies and Series Stream in HD and 4K on Any Device',
+            'heading' => '50,000+ Movies and Series in HD and 4K on Supported Devices',
             'text' => "Your Opplex subscription comes with a full on-demand library from day one. No extra cost, no separate VOD package to buy. Browse movies, series, and cartoons or search for something specific. New content gets added on an ongoing basis, and if you can't find a title, just ask us on WhatsApp.",
             'plans' => 'View Plans',
             'trial' => 'Start Free Trial',
@@ -198,16 +198,16 @@ return [
             'secondary_cta' => 'Start Free Trial on WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD and 4K Streaming', 'text' => 'Sharp picture on every device. If the channel supports 4K, you get 4K. No compression, no quality cap.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels:', 'text' => 'Sports, news, entertainment, and international content. Every channel that matters is in there.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels:', 'text' => 'A broad selection of available sports, news, entertainment, and international content. Ask us to confirm a specific channel before purchasing.'],
                 ['icon' => 'flaticon-swimming-pool', 'title' => 'Movies and Series on Demand:', 'text' => '50,000+ titles available from the moment you subscribe. No extra VOD package needed.'],
-                ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup on Any Device:', 'text' => 'We help you get going on Firestick, Smart TV, Android, iOS, or MAG. Most setups take under five minutes.'],
+                ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup on Supported Devices:', 'text' => 'We help you get going on compatible Fire TV Stick, Smart TV, Android, iOS, or MAG devices. Setup time varies by device.'],
             ],
         ],
         'steps' => [
             'heading' => 'Three Steps from Signup to Streaming',
             'items' => [
                 ['title' => 'Pick Your Plan.', 'text' => 'Choose how long you want to subscribe:e, monthly, half-yearly, or yearly. All plans cover the same channels and content. The only difference is the duration and the per-month cost.'],
-                ['title' => 'Get Your Login Details.', 'text' => 'After checkout, we send your username, password, and server URL to you by email and WhatsApp. This usually lands within minutes of payment going through.'],
+                ['title' => 'Complete Payment and Get Your Login Details.', 'text' => 'After submitting checkout, continue payment with our team on WhatsApp. Once payment is confirmed, we send your username, password, and server URL by email and WhatsApp.'],
                 ['title' => 'Open Your App and Start Watching.', 'text' => 'Download your IPTV player, tap "Login with Xtream Codes", and enter the three details we sent you. Your channels load automatically. Done.'],
             ],
             'support' => "Need help at any point? Message us on WhatsApp, and we'll walk you through the whole thing.",
@@ -217,8 +217,8 @@ return [
             'heading' => 'Why People Switch to Opplex and Stay',
             'items' => [
                 ['title' => 'No Buffer. Genuinely.', 'text' => 'We know every IPTV provider says this. The difference with Opplex is our server infrastructure, built specifically to handle peak-hour traffic across multiple regions without slowing down. Our uptime has sat at 99.9% for three consecutive years.'],
-                ['title' => 'Prices That Stay Honest:', 'text' => "$2.99 a month is $2.99 a month. We don't offer a low intro rate and then raise it at renewal. You won't find a hidden activation fee at checkout either. What you see in the pricing table is what you pay."],
-                ['title' => 'Works Wherever You Are.', 'text' => "Opplex runs in 40+ countries. Whether you're at home in the UK, travelling through Europe, or based in the USA, your subscription works the same. No geo-locks, no restrictions based on where you log in from."],
+                ['title' => 'Clear Pricing:', 'text' => 'The price shown at checkout is what you pay for the selected plan period. There are no hidden activation fees. Before renewing, review the current plan and price.'],
+                ['title' => 'Available Across Many Regions:', 'text' => 'Opplex is used in 40+ countries, including the UK, parts of Europe, and the USA. Playback and content availability depend on the local network, device, source, and applicable regional restrictions.'],
                 ['title' => 'Team You Can Actually Reach:', 'text' => "WhatsApp support, seven days a week. When you message us, a real person reads it and responds, usually within minutes. We don't outsource support, and we don't use automated bots to stall you."],
             ],
         ],
@@ -266,11 +266,11 @@ return [
         'faq' => [
             'heading' => 'IPTV Subscription Service | Common Questions',
             'items' => [
-                ['question' => 'What exactly is an IPTV subscription service?', 'answer' => 'IPTV stands for Internet Protocol Television. Instead of receiving channels via a satellite dish or cable, you stream them over your internet connection. An IPTV subscription gives you access to live TV, sports, and on-demand content through an app on any device, no physical installation needed.'],
-                ['question' => 'How long does it take to get set up?', 'answer' => "Most people are watching within five minutes of signing up. You complete checkout, we send your login details, you open the app and enter them. If you need help, message us on WhatsApp, and we'll guide you through it step by step."],
+                ['question' => 'What exactly is an IPTV subscription service?', 'answer' => 'IPTV stands for Internet Protocol Television. Instead of receiving channels via a satellite dish or cable, you stream them over your internet connection. An IPTV subscription gives you access to available live TV, sports, and on-demand content through an app on a compatible device, with no physical installation needed.'],
+                ['question' => 'How long does it take to get set up?', 'answer' => "Submit your order and continue payment on WhatsApp. After payment is confirmed, we send your login details during active support hours. Open the app and enter them; if you need help, we'll guide you step by step."],
                 ['question' => "Can I use Opplex if I don't have a Smart TV?", 'answer' => 'Yes. A regular TV becomes a smart streaming screen with a Firestick or Android TV box plugged into the HDMI port. These cost around $30 to $50 and are available in the Opplex Shop.'],
                 ['question' => 'Is there a contract?', 'answer' => 'No. You pay for the period you choose: monthly, half-yearly, or yearly. When that period ends, you choose if and when to renew. Nothing auto-charges.'],
-                ['question' => "What if I'm travelling and want to keep watching?", 'answer' => "Your subscription works anywhere with a stable internet connection. There's no location lock. Viewers use Opplex in hotels, on trips abroad, and across multiple countries without any issue."],
+                ['question' => "What if I'm travelling and want to keep watching?", 'answer' => 'You can use your subscription while travelling where the service and your IPTV app are available. Device, network, and local conditions can affect playback.'],
                 ['question' => 'Can I have Opplex on more than one device?', 'answer' => "Each subscription line covers one active stream at a time. If you want to watch on two screens simultaneously, you'd need a second line. Message us on WhatsApp, and we can set that up."],
                 ['question' => 'What internet speed do I need?', 'answer' => "At least 10 Mbps for stable HD. 25 Mbps for 4K. If your connection is slower, most channels still work in HD; you just won't get 4K resolution."],
             ],

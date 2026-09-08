@@ -23,7 +23,7 @@ return [
             'title' => 'Abbonamenti e Pagamenti',
             'item1' => 'I prezzi sono indicati al momento del pagamento.',
             'item2' => 'Accettiamo pagamenti tramite carta o criptovaluta (Cryptomus).',
-            'item3' => 'Il rinnovo è automatico salvo annullamento prima della scadenza.',
+            'item3' => 'Gli abbonamenti non si rinnovano automaticamente. Alla scadenza puoi verificare il piano e il prezzo attuali e scegliere se rinnovare.',
         ],
         'refunds' => [
             'title' => 'Vendita Definitiva, Rimborsi e Cancellazioni',

@@ -23,7 +23,7 @@ return [
             'title' => 'Abonnements et paiements',
             'item1' => 'Tous les prix sont affichés lors du paiement et facturés pour la période sélectionnée.',
             'item2' => 'Nous acceptons les paiements par carte et cryptomonnaie via des processeurs de confiance comme Cryptomus.',
-            'item3' => 'Les abonnements se renouvellent automatiquement sauf annulation avant la date de renouvellement.',
+            'item3' => 'Les abonnements ne se renouvellent pas automatiquement. À l’expiration d’une formule, vous pouvez vérifier la formule et le tarif en vigueur, puis choisir de renouveler ou non.',
         ],
         'refunds' => [
             'title' => 'Vente définitive, remboursements et annulations',

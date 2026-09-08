@@ -36,7 +36,7 @@ return [
                     ],
                     [
                         'question' => 'Opplex IPTV è disponibile nel mio Paese?',
-                        'answer' => 'Sì. Opplex funziona ovunque sia disponibile una connessione Internet stabile: negli USA, nel Regno Unito (UK), in Canada, in Europa, in Medio Oriente e altrove. Il tuo abbonamento non è vincolato a una sola regione.',
+                        'answer' => 'Opplex è disponibile in molte regioni, tra cui USA, Regno Unito (UK), Canada, Europa e Medio Oriente. La riproduzione dipende dalla rete locale, dal dispositivo e dalle restrizioni regionali applicabili; se necessario, chiedici di confermare la tua località.',
                     ],
                     [
                         'question' => 'Dove posso acquistare Opplex IPTV?',
@@ -49,7 +49,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Opplex IPTV offre una prova gratuita?',
-                        'answer' => 'Sì. Offriamo una prova da $1 con cui puoi verificare qualità dei canali, stabilità dell’immagine e prestazioni sul tuo dispositivo prima di scegliere un piano completo. Scrivici su WhatsApp per iniziare.',
+                        'answer' => 'Sì. Offriamo una prova gratuita per verificare disponibilità dei canali, qualità dell’immagine e prestazioni sul tuo dispositivo prima di scegliere un piano. Scrivici su WhatsApp per iniziare.',
                     ],
                     [
                         'question' => 'Quanto costa un abbonamento?',
@@ -70,14 +70,14 @@ return [
                 'items' => [
                     [
                         'question' => 'Come accedo a Opplex IPTV?',
-                        'answer' => 'Dopo l’abbonamento, ti inviamo un nome utente, una password e l’URL del server tramite email e WhatsApp. Apri l’app IPTV, scegli “Login with Xtream Codes”, inserisci questi tre dati e i canali verranno caricati automaticamente. Consulta l’immagine della guida all’accesso in questa pagina per una spiegazione visiva.',
+                        'answer' => 'Dopo aver inviato l’ordine, continua il pagamento con il nostro team su WhatsApp. Una volta confermato il pagamento, ti inviamo nome utente, password e URL del server tramite email e WhatsApp. Apri l’app IPTV, scegli “Login with Xtream Codes” e inserisci questi tre dati. Consulta l’immagine della guida all’accesso in questa pagina per una spiegazione visiva.',
                         'images' => [
                             ['url' => 'images/resource/loginguide.webp', 'caption' => 'Guida all’accesso'],
                         ],
                     ],
                     [
                         'question' => 'Quali dispositivi funzionano con Opplex?',
-                        'answer' => 'Opplex funziona praticamente su tutto: Amazon Firestick, Fire TV, box Android TV, Smart TV Samsung e LG, telefoni e tablet Android, iPhone, iPad, box MAG, PC Windows, Mac e Linux. Se supporta un’app per lettori IPTV, funzionerà.',
+                        'answer' => 'Opplex è compatibile con dispositivi diffusi, tra cui Amazon Firestick, Fire TV, box Android TV, Smart TV Samsung e LG, telefoni e tablet Android, iPhone, iPad, box MAG, PC Windows, Mac e Linux supportati. La compatibilità può variare in base al modello, al sistema operativo e all’app IPTV.',
                     ],
                     [
                         'question' => 'Opplex IPTV funziona su laptop o PC?',
@@ -102,7 +102,7 @@ return [
                     ],
                     [
                         'question' => 'Quali sono i vantaggi dell’IPTV rispetto alla TV via cavo o satellitare?',
-                        'answer' => 'Il costo è il vantaggio principale: ricevi molti più canali a una frazione del prezzo. Hai inoltre contenuti on demand, nessuna parabola da installare e puoi guardare su qualsiasi schermo, ovunque. L’IPTV semplifica anche l’accesso ai contenuti internazionali che i fornitori via cavo non trasmettono.',
+                        'answer' => 'Il costo è uno dei vantaggi principali: puoi accedere a un’ampia selezione di canali a una frazione del prezzo. Hai inoltre contenuti on demand, nessuna parabola da installare e puoi guardare su schermi compatibili nelle regioni supportate. L’IPTV può offrire anche accesso ai contenuti internazionali disponibili.',
                     ],
                 ],
             ],
@@ -171,7 +171,7 @@ return [
                 ],
                 [
                     'title' => 'Prezzi che non aumentano',
-                    'text' => '$2.99 al mese significa $2.99 al mese. Non proponiamo una tariffa promozionale per poi aumentarla al rinnovo. Il prezzo al momento dell’iscrizione è lo stesso che pagherai al rinnovo.',
+                    'text' => 'Il prezzo mostrato al checkout è quello che paghi per il periodo del piano selezionato. I piani non si rinnovano automaticamente, quindi prima di rinnovare puoi verificare il piano e il prezzo attuali.',
                     'icon' => 'fa fa-tag',
                 ],
                 [
@@ -194,12 +194,12 @@ return [
                 'Pakistan, India e Bangladesh',
                 'E decine di altri Paesi, purché sia disponibile una connessione Internet stabile',
             ],
-            'outro' => 'Un unico abbonamento funziona in tutti questi luoghi. Nessun blocco geografico, nessuna restrizione regionale: solo i tuoi dati di accesso e una connessione Internet, ovunque ti trovi.',
+            'outro' => 'Un unico abbonamento può essere utilizzato sui dispositivi compatibili nelle regioni supportate. La riproduzione e la disponibilità dei contenuti dipendono dalla rete, dal dispositivo, dalla sorgente e dalle restrizioni locali applicabili.',
         ],
         'team' => [
             'heading' => 'Un piccolo team con un compito molto preciso',
             'paragraphs' => [
-                'Non abbiamo centinaia di dipendenti. Abbiamo un team affiatato che gestisce piattaforma, server, app e assistenza ed è online ogni giorno per garantire che tutto continui a funzionare.',
+                'Non abbiamo centinaia di dipendenti. Un team affiatato monitora ogni giorno piattaforma, server e app e gestisce le richieste durante l’orario di assistenza attivo.',
                 'Nessun centro assistenza esternalizzato. Nessuna chat automatica che finge di essere una persona. Quando ci scrivi su WhatsApp, parli con qualcuno che può davvero accedere al tuo account e risolvere il problema.',
                 'L’abbiamo organizzato intenzionalmente in questo modo. Mantenere il team concentrato significa risposte più rapide, meno errori e un servizio che non perde la direzione quando nessuno lo controlla.',
             ],
@@ -239,7 +239,7 @@ return [
                 ],
                 [
                     'question' => 'Posso usare Opplex fuori dagli USA e dall’Europa?',
-                    'answer' => 'Sì. Opplex funziona ovunque sia disponibile una connessione Internet stabile. Abbiamo abbonati attivi in 40+ Paesi. Il servizio non prevede blocchi regionali.',
+                    'answer' => 'Opplex è disponibile in molte regioni e conta abbonati in 40+ Paesi. La riproduzione dipende dalla rete locale, dal dispositivo e dalle restrizioni applicabili; prima di viaggiare, chiedici di confermare la destinazione.',
                 ],
             ],
         ],
@@ -283,10 +283,10 @@ return [
             'items' => [
                 ['title' => 'Iniziare una prova gratuita:', 'text' => 'Scrivici su WhatsApp e indicaci il dispositivo su cui desideri effettuare la prova. Attiveremo una prova e ti guideremo nella configurazione.', 'icon' => 'fa fa-play-circle-o'],
                 ['title' => 'Assistenza per configurazione e installazione:', 'text' => 'Indicaci il tipo di dispositivo su WhatsApp. Risponderemo entro pochi minuti con istruzioni dettagliate, di solito corredate da schermate.', 'icon' => 'fa fa-wrench'],
-                ['title' => 'Dati di accesso mancanti:', 'text' => 'Controlla prima la cartella spam. Se i dati non sono ancora arrivati, scrivici indicando l’email utilizzata al pagamento e li invieremo di nuovo immediatamente.', 'icon' => 'fa fa-key'],
+                ['title' => 'Dati di accesso mancanti:', 'text' => 'Controlla prima la cartella spam. Se i dati non sono ancora arrivati, scrivici indicando l’email utilizzata al pagamento: verificheremo l’ordine e li invieremo di nuovo, se necessario.', 'icon' => 'fa fa-key'],
                 ['title' => 'Domande su fatturazione e pagamenti:', 'text' => 'Puoi fare domande su addebiti, ricevute, prezzi di rinnovo o cambio di piano tramite WhatsApp o email. Conserviamo i dati di ogni ordine e possiamo recuperarli rapidamente.', 'icon' => 'fa fa-credit-card'],
                 ['title' => 'Richieste dei rivenditori:', 'text' => 'Ti interessa il pannello rivenditori? Scrivici su WhatsApp. Ti spiegheremo il funzionamento dei crediti e come configurare la tua prima linea cliente.', 'icon' => 'fa fa-users'],
-                ['title' => 'Richieste di canali o segnalazioni di buffering:', 'text' => 'Non trovi un canale specifico? Hai problemi di buffering? Comunicacelo su WhatsApp: indagheremo, risolveremo il problema o aggiungeremo il canale, se possibile.', 'icon' => 'fa fa-desktop'],
+                ['title' => 'Richieste di canali o segnalazioni di buffering:', 'text' => 'Non trovi un canale specifico? Hai problemi di buffering? Comunicacelo su WhatsApp: indagheremo e ti aiuteremo dove possibile.', 'icon' => 'fa fa-desktop'],
             ],
         ],
         'response' => [
@@ -302,7 +302,7 @@ return [
             'heading' => 'Contatti e assistenza | Domande frequenti',
             'items' => [
                 ['question' => 'Qual è il modo più rapido per ricevere assistenza?', 'answer' => 'WhatsApp al +1 (639) 390-3194. Viene monitorato durante tutta la giornata e la maggior parte delle domande riceve risposta entro pochi minuti.'],
-                ['question' => 'Ho appena pagato, ma i dati di accesso non sono arrivati. Cosa devo fare?', 'answer' => 'Controlla prima la cartella spam o posta indesiderata. Se dopo 10 minuti non sono ancora arrivati, scrivici su WhatsApp indicando l’indirizzo email utilizzato al pagamento e li invieremo di nuovo immediatamente.'],
+                ['question' => 'Ho appena pagato, ma i dati di accesso non sono arrivati. Cosa devo fare?', 'answer' => 'Controlla prima la cartella spam o posta indesiderata. Se i dati non sono ancora arrivati dopo la conferma del pagamento, scrivici su WhatsApp indicando il riferimento dell’ordine e l’indirizzo email usato. Il team verificherà il pagamento e ti aiuterà durante l’orario di assistenza attivo.'],
                 ['question' => 'Potete aiutarmi a configurare Opplex sul mio dispositivo specifico?', 'answer' => 'Sì. Comunicaci il dispositivo: Firestick, modello di Smart TV, MAG, box Android, iPhone e così via, e ti invieremo i passaggi esatti. Con le istruzioni corrette, la maggior parte delle configurazioni richiede meno di cinque minuti.'],
                 ['question' => 'Quali informazioni devo includere quando vi contatto?', 'answer' => 'L’indirizzo email dell’ordine, il dispositivo utilizzato e una descrizione del problema. Le schermate sono utili se qualcosa non funziona correttamente sullo schermo. Più dettagli fornisci subito, più rapidamente potremo aiutarti.'],
                 ['question' => 'Offrite assistenza in altre lingue?', 'answer' => 'Il nostro sito è disponibile in 10 lingue. Il team di assistenza può aiutarti in diverse lingue. Se l’inglese non è la tua prima lingua, puoi scriverci nella tua: faremo del nostro meglio.'],

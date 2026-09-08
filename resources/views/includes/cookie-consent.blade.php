@@ -163,7 +163,7 @@
 
         function closeBanner() {
             banner.hidden = true;
-            settings.hidden = current.analytics && current.marketing;
+            settings.hidden = true;
             d.body.classList.remove('cookie-consent-open');
             if (w.__activeMarketingPrompt === 'cookie-consent') w.__activeMarketingPrompt = null;
         }

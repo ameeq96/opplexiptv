@@ -35,7 +35,7 @@
         $isDocumentEnglish ? $documentContact['hero']['heading'] : __('messages.contact.heading'),
         $isDocumentEnglish
             ? $documentContact['hero']['text']
-            : 'Contact Opplex IPTV for free trial, setup help, reseller information and 24/7 support.',
+            : 'Contact Opplex IPTV for a free trial, setup help, reseller information and 24/7 support.',
         route('contact'),
     )) !!}
 @endpush

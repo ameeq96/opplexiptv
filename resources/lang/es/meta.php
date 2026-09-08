@@ -8,7 +8,7 @@ return [
     ],
     'about' => [
         'title' => 'Acerca de Opplex IPTV - Proveedor Premium de IPTV en Vivo 4K',
-        'description' => 'Opplex IPTV ofrece xtreme hd iptv con streaming 4K, prueba gratuita y soporte 24/7.',
+        'description' => 'Opplex IPTV ofrece xtreme hd iptv con streaming 4K compatible, prueba gratuita y soporte 24/7.',
         'keywords' => 'mejor iptv, xtreme hd iptv, iptv smart player, aroma iptv, prueba gratuita iptv, iptv en vivo 4k, caja iptv',
     ],
     'pricing' => [
@@ -37,14 +37,14 @@ return [
         'keywords' => 'reseller iptv, xtreme hd iptv, caja iptv, aroma iptv, iptv smart player, iptv en vivo 4k, mejor iptv',
     ],
     'buynow' => [
-        'title' => 'Compra IPTV Ahora | Acceso a IPTV 4K y Streaming HD',
-        'description' => 'Compra IPTV hoy y disfruta de acceso instantáneo a servicios IPTV de alta calidad, incluyendo streaming 4K, canales HD y prueba gratuita.',
-        'keywords' => 'comprar IPTV ahora, IPTV 4K, comprar servicio IPTV, comprar caja IPTV, streaming IPTV, suscripción IPTV, IPTV HD, acceso instantáneo IPTV',
+        'title' => 'Compra IPTV ahora | Planes de streaming IPTV 4K y HD',
+        'description' => 'Elige un plan IPTV con streaming 4K y HD compatible y completa el pago y la activación con nuestro equipo por WhatsApp.',
+        'keywords' => 'comprar IPTV ahora, IPTV 4K, comprar servicio IPTV, comprar caja IPTV, streaming IPTV, suscripción IPTV, IPTV HD, activación IPTV por WhatsApp',
     ],
     'buy-now-panel' => [
-        'title' => 'Comprar Panel IPTV | Dashboard Reseller IPTV y Activación',
-        'description' => 'Compra tu panel IPTV ahora y obtén acceso instantáneo a un poderoso panel IPTV para gestionar usuarios, activar líneas y transmitir en 4K & HD.',
-        'keywords' => 'comprar panel IPTV, dashboard reseller IPTV, panel de gestión IPTV, acceso instantáneo panel IPTV, panel IPTV 4K, panel IPTV HD, panel de control IPTV, herramientas reseller IPTV',
+        'title' => 'Comprar panel IPTV | Dashboard para resellers IPTV',
+        'description' => 'Solicita un panel para resellers IPTV con el que gestionar usuarios y activar líneas, y completa el pago y la configuración con nuestro equipo por WhatsApp.',
+        'keywords' => 'comprar panel IPTV, dashboard reseller IPTV, panel de gestión IPTV, configuración panel IPTV por WhatsApp, panel IPTV 4K, panel IPTV HD, panel de control IPTV, herramientas reseller IPTV',
     ],
     'iptv-applications' => [
         'title' => 'Principales Apps IPTV: Smarters, Player, Android TV y Más',
@@ -79,7 +79,7 @@ return [
     'terms-of-service' => [
         'title'       => 'Términos de Servicio y Política de Uso Legal',
         'description' => 'Lee los Términos de Servicio de Opplex IPTV. Conoce las reglas de cuenta, uso aceptable, pagos, renovaciones, disponibilidad del servicio y límites de',
-        'keywords'    => 'términos IPTV, Opplex IPTV, uso legal, pagos IPTV, renovación automática, política IPTV legal',
+        'keywords'    => 'términos IPTV, Opplex IPTV, uso legal, pagos IPTV, renovación manual, política IPTV legal',
     ],
     'privacy-policy' => [
         'title'       => 'Política de Privacidad y Protección de Datos',
@@ -102,14 +102,14 @@ return [
         'keywords'    => 'configuración IPTV, instalación IPTV, paquetes IPTV, revendedor IPTV, plan de suscripción, Android TV Box, Firestick, smart TV, 1 conexión, 2 conexiones, 4 conexiones, IPTV anual, IPTV mensual, servicio de streaming',
     ],
     'checkout' => [
-        'title'       => 'Pago seguro IPTV | Completa tu pedido con activación instantánea',
-        'description' => 'Completa tu pedido de IPTV mediante un pago seguro: revisa tu dispositivo, proveedor IPTV, plan de conexión y paquete de suscripción, y paga con tarjeta o',
-        'keywords'    => 'checkout IPTV, pago seguro IPTV, completar pedido, pago IPTV, suscripción IPTV, pago con tarjeta, pago con criptomonedas, activación instantánea, resumen del pedido, servicio de streaming',
+        'title'       => 'Checkout IPTV seguro | Revisa y envía tu pedido',
+        'description' => 'Revisa el dispositivo, proveedor, conexiones y paquete elegidos, envía tu pedido IPTV y continúa el pago con nuestro equipo por WhatsApp.',
+        'keywords'    => 'checkout IPTV, checkout seguro, enviar pedido, pago por WhatsApp, suscripción IPTV, pago con tarjeta, pago con criptomonedas, resumen del pedido, servicio de streaming',
     ],
     'thankyou' => [
-        'title'       => 'Gracias | Pedido confirmado y próximos pasos para tu suscripción IPTV',
-        'description' => 'Gracias por tu pedido. Tu suscripción IPTV ha sido recibida y está siendo procesada.',
-        'keywords'    => 'página de gracias, pedido confirmado, pedido IPTV, suscripción IPTV, pedido exitoso, instrucciones de activación, detalles de cuenta, soporte al cliente, servicio de streaming',
+        'title'       => 'Pedido recibido | Continúa el pago de IPTV por WhatsApp',
+        'description' => 'Tu pedido de IPTV se ha creado y permanecerá pendiente hasta que se confirme el pago. Continúa con nuestro equipo por WhatsApp.',
+        'keywords'    => 'página de gracias, pedido recibido, pedido IPTV pendiente, pago por WhatsApp, suscripción IPTV, instrucciones de activación, detalles de cuenta, soporte al cliente, servicio de streaming',
     ],
     'blogs' => [
         'index' => [

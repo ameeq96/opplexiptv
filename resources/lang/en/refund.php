@@ -15,7 +15,7 @@ return [
     'non_refundable' => [
         'title' => 'Non-Refundable Digital Services',
         'item1' => 'All IPTV subscription plans and other digitally delivered services are non-refundable once the order is confirmed.',
-        'item2' => 'Promotional or trial packages, setup services, and account activations are non-refundable.',
+        'item2' => 'Promotional packages, setup services, and account activations are non-refundable.',
         'item3' => 'Refunds do not apply if the issue is due to <strong>customer-side technical problems</strong> like device incompatibility or internet issues.',
     ],
 

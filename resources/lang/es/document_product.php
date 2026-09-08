@@ -40,13 +40,13 @@ return [
             'opplex' => 'Nuestra propia aplicación, creada y mantenida por nosotros. Es más ligera que Smarters, carga más rápido y está optimizada para los streams de Opplex. Una opción excelente si buscas una experiencia sencilla y sin complicaciones.',
             'xtv' => 'Otro reproductor creado por Opplex. Ideal para usuarios de Android box y Fire TV Stick que prefieren una interfaz similar a la de un televisor, con botones grandes y navegación sencilla.',
             'xtream_android' => 'Una buena alternativa de respaldo. Admite Xtream Codes y listas de reproducción M3U. Disponible tanto en Android como en iOS.',
-            'ibo_android' => 'Funciona en Android, Windows y Mac. Una opción excelente si cambias de dispositivo y quieres utilizar la misma aplicación en todas partes.',
+            'ibo_android' => 'Funciona en Android, Windows y Mac compatibles. Una opción excelente si cambias entre esos dispositivos y quieres utilizar la misma aplicación.',
             'star_share' => 'Un reproductor Android alternativo compatible con los códigos de acceso de Opplex. Una buena opción si Smarters no funciona en tu dispositivo concreto.',
             'smarters_ios' => 'La versión para iOS del popular reproductor Smarters. Descarga gratuita desde la App Store. Inicia sesión con tus Xtream Codes de Opplex y los canales se cargarán automáticamente.',
             'player_000' => 'Un reproductor IPTV limpio y minimalista para iPhone. Ofrece buena calidad de imagen y una navegación sencilla.',
             'xtream_ios' => 'La versión para iOS de 9Xtream. Funciona con tu acceso de Opplex y es compatible tanto con canales en directo como con VOD.',
             'smarters_windows' => 'Reproductor IPTV completo para Windows. Utiliza el mismo inicio de sesión con Xtream Codes que la versión para Android. Funciona bien en portátiles y monitores de escritorio.',
-            'ibo_windows' => 'Una opción multiplataforma para Windows 10 y versiones posteriores. Ideal si también utilizas IBO en Android o Mac y quieres la misma aplicación en todas partes.',
+            'ibo_windows' => 'Una opción multiplataforma para Windows 10 y versiones posteriores. Ideal si también utilizas IBO en dispositivos Android o Mac compatibles y quieres la misma aplicación.',
             'ibo_macos' => 'Funciona en sistemas Mac con procesador Intel. Descarga el archivo .dmg, instálalo e inicia sesión con tus credenciales de Opplex.',
             'ibo_linux' => 'Disponible como paquete .snap para sistemas Debian y Ubuntu. Instálalo mediante snap e inicia sesión con tus Xtream Codes.',
         ],
@@ -83,7 +83,7 @@ return [
                 ],
                 [
                     'question' => 'La aplicación se ha cargado, pero los canales no se reproducen. ¿Qué hago?',
-                    'answer' => 'Primero, comprueba tu conexión a Internet. Recomendamos al menos 15 Mbps. Después, verifica que tu suscripción siga activa. Si las credenciales parecen correctas y aún no funciona, vuelve a introducirlas manualmente (a veces, copiar y pegar añade un espacio de más). ¿Sigues teniendo problemas? Escríbenos por WhatsApp y lo solucionaremos.',
+                    'answer' => 'Primero, comprueba tu conexión a Internet. Recomendamos al menos 15 Mbps. Después, verifica que tu suscripción siga activa. Si las credenciales parecen correctas y aún no funciona, vuelve a introducirlas manualmente (a veces, copiar y pegar añade un espacio de más). ¿Sigues teniendo problemas? Escríbenos por WhatsApp y te ayudaremos a investigarlo.',
                 ],
                 [
                     'question' => '¿Estas aplicaciones se pueden descargar gratis?',
@@ -101,7 +101,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ películas y series: disfruta de HD y 4K en cualquier dispositivo',
+            'heading' => '50,000+ películas y series: disfruta de HD y 4K en dispositivos compatibles',
             'text' => 'Tu suscripción a Opplex incluye una biblioteca completa bajo demanda desde el primer día. Sin coste adicional ni un paquete VOD independiente que comprar. Explora películas, series y dibujos animados o busca algo concreto. Se añade contenido nuevo de forma continua y, si no encuentras un título, solo tienes que preguntarnos por WhatsApp.',
             'plans' => 'Ver planes',
             'trial' => 'Iniciar prueba gratuita',
@@ -136,8 +136,8 @@ return [
             'support' => 'Si un título no aparece o quieres que añadamos alguno, escríbenos por WhatsApp con el nombre y lo investigaremos.',
         ],
         'devices' => [
-            'heading' => 'Mira el contenido en cualquier pantalla que ya tengas',
-            'intro' => 'No necesitas un dispositivo nuevo para acceder a la biblioteca VOD. Funciona en cualquier equipo que ya utilices:',
+            'heading' => 'Mira el contenido en pantallas populares compatibles',
+            'intro' => 'No necesitas un dispositivo nuevo si el equipo que ya utilizas admite un reproductor IPTV compatible:',
             'items' => [
                 'Amazon Firestick y Fire TV',
                 'Smart TV Samsung, LG y Sony',
@@ -198,16 +198,16 @@ return [
             'secondary_cta' => 'Iniciar prueba gratuita por WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'Streaming HD y 4K', 'text' => 'Imagen nítida en todos los dispositivos. Si el canal es compatible con 4K, obtienes 4K. Sin compresión ni límite de calidad.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ canales en directo:', 'text' => 'Deportes, noticias, entretenimiento y contenido internacional. Todos los canales importantes están incluidos.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ canales en directo:', 'text' => 'Acceso a canales disponibles de deportes, noticias, entretenimiento y contenido internacional. La disponibilidad puede variar según la fuente y la región.'],
                 ['icon' => 'flaticon-swimming-pool', 'title' => 'Películas y series bajo demanda:', 'text' => '50,000+ títulos disponibles desde el momento en que te suscribes. No necesitas ningún paquete VOD adicional.'],
-                ['icon' => 'flaticon-customer-service', 'title' => 'Configuración rápida en cualquier dispositivo:', 'text' => 'Te ayudamos a empezar en Firestick, Smart TV, Android, iOS o MAG. La mayoría de las configuraciones lleva menos de cinco minutos.'],
+                ['icon' => 'flaticon-customer-service', 'title' => 'Configuración en dispositivos compatibles:', 'text' => 'Te ayudamos a empezar en Firestick, Smart TV, Android, iOS o MAG. El tiempo de configuración varía según el dispositivo.'],
             ],
         ],
         'steps' => [
             'heading' => 'Tres pasos desde el registro hasta el streaming',
             'items' => [
                 ['title' => 'Elige tu plan.', 'text' => 'Elige durante cuánto tiempo quieres suscribirte: mensual, semestral o anual. Todos los planes incluyen los mismos canales y contenidos. La única diferencia es la duración y el coste mensual.'],
-                ['title' => 'Recibe tus datos de acceso.', 'text' => 'Después de finalizar la compra, te enviamos el nombre de usuario, la contraseña y la URL del servidor por correo electrónico y WhatsApp. Normalmente los recibirás pocos minutos después de que se procese el pago.'],
+                ['title' => 'Continúa el pago por WhatsApp.', 'text' => 'Después de enviar el pedido, continúa el pago con nuestro equipo por WhatsApp. Cuando se confirme el pago, te enviaremos el nombre de usuario, la contraseña y la URL del servidor por correo electrónico y WhatsApp.'],
                 ['title' => 'Abre la aplicación y empieza a ver contenido.', 'text' => 'Descarga tu reproductor IPTV, toca «Login with Xtream Codes» e introduce los tres datos que te enviamos. Los canales se cargarán automáticamente. Listo.'],
             ],
             'support' => '¿Necesitas ayuda en algún momento? Escríbenos por WhatsApp y te guiaremos durante todo el proceso.',
@@ -217,8 +217,8 @@ return [
             'heading' => 'Por qué la gente se cambia a Opplex y se queda',
             'items' => [
                 ['title' => 'Sin buffering. De verdad.', 'text' => 'Sabemos que todos los proveedores de IPTV dicen lo mismo. Lo que distingue a Opplex es nuestra infraestructura de servidores, creada específicamente para gestionar el tráfico de las horas punta en varias regiones sin ralentizarse. Nuestra disponibilidad se ha mantenido en el 99.9% durante tres años consecutivos.'],
-                ['title' => 'Precios que se mantienen honestos:', 'text' => '$2.99 al mes son $2.99 al mes. No ofrecemos una tarifa inicial baja para subirla al renovar. Tampoco encontrarás una tarifa de activación oculta al finalizar la compra. Lo que ves en la tabla de precios es lo que pagas.'],
-                ['title' => 'Funciona dondequiera que estés.', 'text' => 'Opplex funciona en 40+ países. Tanto si estás en casa en el Reino Unido, viajando por Europa o resides en EE. UU., tu suscripción funciona igual. Sin bloqueos geográficos ni restricciones según el lugar desde el que inicies sesión.'],
+                ['title' => 'Precios claros:', 'text' => 'El precio que aparece al finalizar la compra es el que pagas por el periodo del plan elegido. No hay cargos de activación ocultos. Antes de renovar, revisa el plan y el precio vigentes.'],
+                ['title' => 'Disponible en muchas regiones.', 'text' => 'Opplex se utiliza en 40+ países, incluidos el Reino Unido, varios países europeos y EE. UU. La reproducción depende de la red, el dispositivo y las restricciones regionales aplicables.'],
                 ['title' => 'Un equipo con el que realmente puedes contactar:', 'text' => 'Asistencia por WhatsApp, siete días a la semana. Cuando nos escribes, una persona real lee tu mensaje y responde, normalmente en pocos minutos. No externalizamos la asistencia ni utilizamos bots automatizados para hacerte esperar.'],
             ],
         ],
@@ -266,11 +266,11 @@ return [
         'faq' => [
             'heading' => 'Servicio de suscripción IPTV | Preguntas frecuentes',
             'items' => [
-                ['question' => '¿Qué es exactamente un servicio de suscripción IPTV?', 'answer' => 'IPTV significa televisión por protocolo de Internet. En lugar de recibir los canales mediante una antena parabólica o cable, los reproduces a través de tu conexión a Internet. Una suscripción IPTV te da acceso a TV en directo, deportes y contenido bajo demanda mediante una aplicación en cualquier dispositivo, sin necesidad de instalación física.'],
-                ['question' => '¿Cuánto se tarda en configurarlo?', 'answer' => 'La mayoría de las personas empieza a ver contenido menos de cinco minutos después de registrarse. Finalizas la compra, te enviamos los datos de acceso, abres la aplicación y los introduces. Si necesitas ayuda, escríbenos por WhatsApp y te guiaremos paso a paso.'],
+                ['question' => '¿Qué es exactamente un servicio de suscripción IPTV?', 'answer' => 'IPTV significa televisión por protocolo de Internet. En lugar de recibir los canales mediante una antena parabólica o cable, los reproduces a través de tu conexión a Internet. Una suscripción IPTV te da acceso a TV en directo, deportes y contenido bajo demanda mediante una aplicación en un dispositivo compatible, sin necesidad de instalación física.'],
+                ['question' => '¿Cuánto se tarda en configurarlo?', 'answer' => 'Envía el pedido y continúa el pago con nuestro equipo por WhatsApp. Después de confirmar el pago, te enviaremos los datos de acceso para introducirlos en la aplicación. El tiempo de activación y configuración varía según el pedido y el dispositivo.'],
                 ['question' => '¿Puedo utilizar Opplex si no tengo una Smart TV?', 'answer' => 'Sí. Un televisor normal se convierte en una pantalla inteligente de streaming al conectar un Firestick o Android TV box al puerto HDMI. Cuestan entre $30 y $50 y están disponibles en la tienda de Opplex.'],
                 ['question' => '¿Hay contrato?', 'answer' => 'No. Pagas el periodo que elijas: mensual, semestral o anual. Cuando ese periodo termine, tú decides si quieres renovarlo y cuándo. No se cobra nada automáticamente.'],
-                ['question' => '¿Qué ocurre si estoy de viaje y quiero seguir viendo contenido?', 'answer' => 'Tu suscripción funciona en cualquier lugar con una conexión estable a Internet. No hay bloqueos por ubicación. Los espectadores utilizan Opplex en hoteles, durante viajes al extranjero y en varios países sin ningún problema.'],
+                ['question' => '¿Qué ocurre si estoy de viaje y quiero seguir viendo contenido?', 'answer' => 'Puedes usar tu suscripción mientras viajas donde el servicio y tu aplicación IPTV estén disponibles. El dispositivo, la red y las condiciones locales pueden afectar a la reproducción.'],
                 ['question' => '¿Puedo tener Opplex en más de un dispositivo?', 'answer' => 'Cada línea de suscripción permite un stream activo a la vez. Si quieres ver contenido en dos pantallas simultáneamente, necesitarás una segunda línea. Escríbenos por WhatsApp y podremos configurarla.'],
                 ['question' => '¿Qué velocidad de Internet necesito?', 'answer' => 'Al menos 10 Mbps para disfrutar de HD estable. 25 Mbps para 4K. Si tu conexión es más lenta, la mayoría de los canales seguirá funcionando en HD; simplemente no obtendrás resolución 4K.'],
             ],
@@ -325,17 +325,17 @@ return [
             'steps' => [
                 'Toca el botón Comprar ahora en la tarjeta del producto',
                 'Se abrirá un chat de WhatsApp con nosotros',
-                'Dinos qué producto quieres y completaremos tu pedido y te enviaremos los datos de acceso.',
+                'Dinos qué producto quieres y confirma el pago; después de la confirmación te enviaremos los datos de acceso.',
             ],
-            'timing' => 'Eso es todo. La mayoría de los pedidos de productos digitales se gestiona en pocos minutos durante el horario de actividad. Si haces el pedido fuera de ese horario, lo atenderemos en cuanto volvamos a estar disponibles.',
-            'delivery' => 'Todos los productos digitales se te entregan directamente, sin entrega física ni esperas.',
+            'timing' => 'Los pedidos de productos digitales se gestionan después de confirmar el pago, normalmente durante el horario de atención activo. Los pedidos enviados fuera de ese horario se revisan cuando el equipo vuelve a estar disponible.',
+            'delivery' => 'Los productos digitales no requieren envío físico; el acceso se proporciona después de confirmar el pago, normalmente durante el horario de atención activo.',
         ],
         'faq' => [
             'heading' => 'Preguntas sobre la tienda: respuestas rápidas',
             'items' => [
                 ['question' => '¿Los dispositivos de afiliados incluyen Opplex preinstalado?', 'answer' => 'No, se envían directamente desde Amazon como dispositivos de consumo estándar. Configurar Opplex en ellos lleva unos minutos y, si necesitas ayuda, nuestro equipo te guía por WhatsApp.'],
                 ['question' => '¿Necesito comprar un dispositivo para utilizar Opplex?', 'answer' => 'Si ya tienes un Firestick, Smart TV, teléfono Android, tableta o PC, puedes iniciar una suscripción a Opplex y utilizarla en el equipo que ya tienes. Los dispositivos de la tienda están disponibles si quieres una instalación mejor o exclusiva.'],
-                ['question' => '¿Cómo recibo un producto digital después de comprarlo?', 'answer' => 'Te enviamos los datos de acceso por WhatsApp cuando se confirme tu pedido. La mayoría de los productos digitales se entrega en pocos minutos. Si algo se retrasa, escríbenos y lo comprobaremos de inmediato.'],
+                ['question' => '¿Cómo recibo un producto digital después de comprarlo?', 'answer' => 'Enviamos los datos de acceso por WhatsApp después de confirmar el pago, normalmente durante el horario de atención activo. Si se retrasa, escríbenos y revisaremos el pedido.'],
                 ['question' => '¿Los precios de las suscripciones digitales son iguales que los de venta al público?', 'answer' => 'No, son inferiores. Esa es precisamente la ventaja. Los precios mostrados son los que pagas a través de Opplex, no la tarifa estándar de venta al público que pagarías directamente.'],
                 ['question' => '¿Qué ocurre si un dispositivo que he pedido a Amazon tiene algún problema?', 'answer' => 'Los productos de afiliados se venden a través de Amazon y están cubiertos por sus políticas de devolución y reembolso. Cualquier problema con el dispositivo físico se gestiona mediante el proceso estándar de Amazon. Para obtener ayuda con la configuración de Opplex en el dispositivo, estamos disponibles en WhatsApp.'],
                 ['question' => '¿Podéis ayudarme a elegir el dispositivo adecuado para mi televisor?', 'answer' => 'Sí. Dinos el modelo de tu televisor y lo que quieres configurar por WhatsApp y te daremos una recomendación directa. Sin intentar venderte algo más caro: solo lo que realmente funcione mejor en tu caso.'],

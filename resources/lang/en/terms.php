@@ -23,7 +23,7 @@ return [
             'title' => 'Subscriptions & Payments',
             'item1' => 'All prices are displayed at checkout and billed for the selected plan period.',
             'item2' => 'We accept payments via cards and cryptocurrency through trusted processors like Cryptomus.',
-            'item3' => 'Subscriptions renew automatically unless canceled before renewal.',
+            'item3' => 'Subscriptions do not renew automatically. When a plan expires, you can review the current plan and price and choose whether to renew.',
         ],
         'refunds' => [
             'title' => 'Refunds & Cancellations',

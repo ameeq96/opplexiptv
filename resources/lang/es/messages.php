@@ -48,7 +48,7 @@ return [
 
   'network_heading' => 'Ofrecemos IPTV Ilimitado en 4K, Incluye Prueba Gratis',
   'feature_50k_movies' => 'Mira 50k+ Películas en el Mejor IPTV Smart Player',
-  'feature_50k_movies_desc' => 'Transmite más de 50,000 películas de Bollywood y Hollywood con xtreme HD IPTV y aroma IPTV. Funciona en cualquier IPTV box en HD/4K.',
+  'feature_50k_movies_desc' => 'Explora más de 50,000 títulos de Bollywood y Hollywood con Xtreme HD IPTV y Aroma IPTV en reproductores y dispositivos populares compatibles, en HD o 4K cuando esté disponible.',
   'feature_5k_series' => '5k+ Series en IPTV Box (Netflix, Prime y más)',
   'feature_5k_series_desc' => 'Disfruta más de 5,000 series de Netflix y Prime Video con IPTV smart player y xtreme HD IPTV — incluye prueba gratis y soporte 4K.',
   'feature_12k_channels' => '12k+ Canales en Vivo vía IPTV Box & Smart Player',
@@ -65,7 +65,7 @@ return [
   'iptv_sports_desc' => 'Disfruta deportes en vivo como fútbol, cricket, UFC y más con IPTV 4K sin buffer — funciona con smart player & IPTV box.',
   'iptv_vod' => 'IPTV VOD Premium con 50k+ Películas y Series',
   'iptv_vod_desc' => 'Transmite 50k+ películas de Hollywood y Bollywood y 5k+ series bajo demanda con xtreme HD IPTV & aroma IPTV en calidad Full HD.',
-  'iptv_devices' => 'IPTV en Todos los Dispositivos - Smart Player, Android, Box',
+  'iptv_devices' => 'IPTV en Dispositivos Populares - Smart Player, Android, Box',
   'iptv_devices_desc' => 'Usa IPTV smart player en Smart TV, iPhone, Android, Firestick, MAG box y más. Incluye acceso xtreme HD IPTV con prueba gratis.',
   'learn_more' => 'Más Información sobre Nuestros Planes IPTV',
 
@@ -117,10 +117,10 @@ return [
   'feature_reliable_desc' => 'Transmite xtreme HD IPTV en IPTV boxes o dispositivos inteligentes con 99.9% uptime, sin buffering y soporte 4K en Francia, UK e Italia.',
 
   'feature_easy' => 'Configuración Fácil de Smart Player & IPTV Box',
-  'feature_easy_desc' => 'Configura IPTV smart player o IPTV box en minutos en Android, iOS, MAG, Firestick y Smart TVs. Incluye prueba y soporte completo.',
+  'feature_easy_desc' => 'Configura IPTV Smart Player o IPTV box en dispositivos Android, iOS, MAG, Firestick y Smart TV compatibles. El tiempo de configuración varía según el dispositivo.',
 
   'feature_multidevice' => 'IPTV Multidispositivo - Móvil, Smart TV, Box',
-  'feature_multidevice_desc' => 'Transmite IPTV en múltiples dispositivos como Smart TV, Android, iPhone, tablet e IPTV box — disfruta aroma IPTV en todas partes.',
+  'feature_multidevice_desc' => 'Transmite IPTV en varios dispositivos compatibles, como Smart TV, Android, iPhone, tablet e IPTV box; la disponibilidad depende de la red, el dispositivo, la fuente y las restricciones aplicables.',
 
   'feature_support' => 'Soporte IPTV 24/7 vía WhatsApp',
   'feature_support_desc' => 'Obtén ayuda rápida de nuestro equipo IPTV en configuración de smart player, activación de prueba, problemas de box y errores de streaming.',
@@ -224,7 +224,7 @@ return [
 
   // Preguntas y Respuestas
   'faq.q1' => '¿Qué es Opplex IPTV?',
-  'faq.a1' => 'OPPLEXTV es un servicio IPTV que ofrece más de <strong>12,000 canales en vivo, 50000+ PELÍCULAS, 5000+ Series de TV</strong>. Junto con varias opciones VOD. El plan estándar OPPLEXTV IPTV cuesta <span style="text-decoration: line-through; color: #999;">$31.99/mes</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mes</span> e incluye canales internacionales, deportes, PPV, entretenimiento, noticias y más. OPPLEXTV IPTV se puede instalar en cualquier dispositivo Android / IOS, incluidos Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield y más. OPPLEX IPTV es el mejor servidor IPTV en Canadá.',
+  'faq.a1' => 'OPPLEXTV es un servicio IPTV que ofrece más de <strong>12,000 canales en vivo, 50000+ PELÍCULAS, 5000+ Series de TV</strong>. Junto con varias opciones VOD. El plan estándar OPPLEXTV IPTV cuesta <span style="text-decoration: line-through; color: #999;">$31.99/mes</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mes</span> e incluye canales internacionales, deportes, PPV, entretenimiento, noticias y más. OPPLEXTV IPTV se puede instalar en dispositivos Android e iOS compatibles, incluidos Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield y más.',
 
   'faq.q2' => '¿Cómo se ve IPTV?',
   'faq.a2' => 'Aquí hay algunas capturas de pantalla de cómo se ve la aplicación IPTV en diferentes dispositivos.',
@@ -233,7 +233,7 @@ return [
   'faq.a3' => 'Cuando un cliente compra una suscripción Opplex IPTV, recibe códigos de inicio de sesión. El cliente debe ingresar estos códigos, junto con la URL proporcionada, en la aplicación en los campos especificados. Revisa la imagen de abajo para una mejor comprensión.',
 
   'faq.q4' => '¿Opplex IPTV tiene prueba?',
-  'faq.a4' => 'Sí, hay una prueba disponible por solo $1.',
+  'faq.a4' => 'Sí. Hay una prueba gratuita para que puedas probar el servicio en tu propio dispositivo antes de elegir un plan. Escríbenos por WhatsApp para empezar.',
 
   'faq.q5' => '¿Por qué a veces cuando veo una película se queda cargando?',
   'faq.a5' => 'Esto puede suceder por baja velocidad de internet o alto tráfico. Pausa 10-15 segundos y luego reanuda la reproducción.',
@@ -370,7 +370,7 @@ return [
       ['icon' => 'flaticon-customer-service', 'title' => 'Soporte de instalacion', 'description' => 'Recibe ayuda para Smart TV, Firestick, Android, iOS, MAG y reproductores IPTV.'],
     ],
     'setup_title' => 'Elige tu suscripcion, conecta tu dispositivo y empieza a ver',
-    'setup_text' => 'Selecciona tu proveedor IPTV, elige un plan de conexiones y completa el pago. Nuestro equipo te ayuda a instalar la app IPTV correcta.',
+    'setup_text' => 'Selecciona tu proveedor IPTV, elige un plan de conexiones, envía el pedido y continúa el pago por WhatsApp. Después de confirmarlo, nuestro equipo te ayuda a instalar la aplicación IPTV correcta.',
     'setup_points' => [
       'Funciona con Smart TV, Firestick, Android TV, movil, tablet, MAG y reproductores IPTV.',
       'Hay opciones mensuales, semestrales, anuales y de revendedor en la seccion de precios.',
@@ -405,7 +405,7 @@ return [
 
   'email_title'   => 'Gracias - Opplex IPTV',
   'dear'          => 'Estimado :name,',
-  'thank_you'     => "Gracias por tu interés en nuestra suscripción IPTV. Estás en el lugar indicado para la mejor experiencia de TV a nivel mundial.",
+  'thank_you'     => "Gracias por tu interés en nuestra suscripción IPTV, disponible en dispositivos compatibles en muchas regiones admitidas.",
   'package_details' => 'Detalles de tu Paquete:',
   'package'       => 'Paquete',
   'email'         => 'Correo Electrónico',
@@ -416,7 +416,7 @@ return [
   'tagline'       => "La Mejor TV del Mundo",
 
   'contact' => [
-    'intro' => 'Estimado cliente, gracias por tu interés en nuestra suscripción IPTV. Estás en el lugar indicado para la mejor experiencia de TV a nivel mundial.',
+    'intro' => 'Estimado cliente, gracias por tu interés en nuestra suscripción IPTV, disponible en dispositivos compatibles en muchas regiones admitidas.',
     'whatsapp_info' => 'Para respuestas rápidas y para proceder con tu suscripción, por favor contáctanos en WhatsApp',
     'signature' => 'Saludos cordiales, Opplex IPTV - La Mejor TV del Mundo',
   ],
@@ -438,8 +438,8 @@ return [
     ],
     [
       'icon' => 'flaticon-customer-service',
-      'title' => 'Fácil configuración de IPTV en cualquier dispositivo',
-      'description' => 'Empieza a ver al instante en Smart TV, Firestick, MAG, Android e iOS – sin necesidad de conocimientos técnicos.',
+      'title' => 'Configuración IPTV sencilla en dispositivos compatibles',
+      'description' => 'Configura IPTV en Smart TV, Fire TV Stick, MAG, Android e iOS compatibles con instrucciones aptas para principiantes.',
     ],
   ],
   'buy_now_heading' => 'Compra el panel ahora',
@@ -488,14 +488,14 @@ return [
   'checkout_continue_button'         => 'Continuar al pago',
 
   // ==== CHECKOUT STEP ====
-  'checkout_complete_title_page'     => 'Completa tu pedido',
+  'checkout_complete_title_page'     => 'Revisa y envía tu pedido',
 
   'checkout_badge_secure'            => 'Pago seguro',
   'checkout_badge_safe_info'         => 'Tu información está protegida',
   'checkout_badge_encryption'        => 'Cifrado de 256 bits',
 
-  'checkout_complete_title'          => 'Completa tu pedido',
-  'checkout_complete_sub'            => 'Pago seguro y activación instantánea',
+  'checkout_complete_title'          => 'Revisa y envía tu pedido',
+  'checkout_complete_sub'            => 'Envía tu pedido y continúa el pago con nuestro equipo por WhatsApp',
   'checkout_notice_single_item'      => 'El artículo anterior fue eliminado. Solo se permite un producto en el carrito a la vez.',
 
   'checkout_billing_details'         => 'Detalles de facturación',
@@ -525,25 +525,25 @@ return [
   'checkout_total_label'             => 'Total',
 
   'checkout_pay_card_title'          => 'Pago con tarjeta de crédito/débito',
-  'checkout_pay_card_desc'           => 'Serás redirigido a nuestra página de pago para completar el pago con tarjeta. Tu suscripción se entregará inmediatamente después de la compra.',
+  'checkout_pay_card_desc'           => 'Elige tarjeta y envía tu pedido. Nuestro equipo confirmará el enlace de pago seguro por WhatsApp antes de la activación.',
   'checkout_pay_crypto_title'        => 'Pago con criptomonedas',
-  'checkout_pay_crypto_desc'         => 'Paga de forma segura usando criptomonedas populares.',
-  'checkout_place_order_btn'         => 'Realizar pedido y pagar',
+  'checkout_pay_crypto_desc'         => 'Elige criptomonedas y envía tu pedido. Nuestro equipo confirmará las instrucciones de pago por WhatsApp antes de la activación.',
+  'checkout_place_order_btn'         => 'Enviar pedido',
 
 
   'thankyou_page' => [
     'title'       => 'Gracias por tu pedido',
     'description' => 'Tu pedido se ha recibido correctamente. Recibirás los datos de tu suscripción IPTV por correo electrónico y WhatsApp cuando se confirme el pago.',
-    'keywords'    => 'gracias, pedido completado, pedido IPTV, éxito de pedido, pago pendiente, activación IPTV, servicio de streaming',
+    'keywords'    => 'gracias, pedido creado, pedido IPTV, pago pendiente, pago por WhatsApp, activación IPTV, servicio de streaming',
 
     'heading'     => '¡Gracias por tu pedido! 🎉',
     'sub_text'    => 'Hemos recibido tu pedido. Recibirás los detalles de la suscripción por correo electrónico y WhatsApp una vez que se confirme el pago.',
-    'badge_text'  => 'Paso de pago creado correctamente',
+    'badge_text'  => 'Pedido creado correctamente',
 
     'order_status' => 'Estado del pedido',
     'pending'     => 'Pago pendiente',
     'delivery'    => 'Entrega',
-    'delivery_text' => 'Entrega inmediata después de la confirmación del pago',
+    'delivery_text' => 'Entrega después de la confirmación del pago',
     'support'     => 'Soporte',
     'support_text' => 'Soporte 24/7 por WhatsApp y correo electrónico',
 
@@ -553,7 +553,9 @@ return [
     'home_btn'    => 'Volver al inicio',
     'support_btn' => 'Contactar con soporte',
 
-    'footnote'    => '¿No recibiste ningún correo en unos minutos? Revisa la carpeta de spam o contacta con nuestro equipo de soporte.',
+    'footnote'    => 'Completa el pago por WhatsApp para activar tu suscripción. Si necesitas ayuda, nuestro equipo te orientará.',
+    'continue_payment_whatsapp' => 'Continuar el pago por WhatsApp',
+    'whatsapp_payment_message' => 'Hola, quiero completar el pago del pedido #:order. Paquete: :package. Importe: :amount. Método de pago: :method.',
   ],
 
 
@@ -589,7 +591,7 @@ return [
     'step3_title' => 'Paso 3: Acciones rápidas',
     'step3_text' => 'Usa los botones rápidos <b>Precios</b>, <b>Paquetes</b>, <b>Pagar</b> y <b>Contacto</b> para acciones rápidas.',
     'step4_title' => 'Paso 4: Ayuda con el pago',
-    'step4_text' => 'Ejemplo: <b>"nombre Ali"</b>, <b>"correo ali@gmail.com"</b>, <b>"hacer pedido y pagar"</b>.',
+    'step4_text' => 'Ejemplo: <b>"nombre Ali"</b>, <b>"correo ali@gmail.com"</b>, <b>"enviar pedido"</b>. Continúa el pago por WhatsApp después de crear el pedido.',
     'step5_title' => 'Paso 5: Acciones seguras',
     'step5_text' => 'Antes de acciones sensibles como el pago, el asistente siempre pide confirmación.',
     'back' => 'Atrás',
@@ -629,7 +631,7 @@ return [
   'home_hero_watch_live' => 'Mira :title en vivo en HD',
   'home_services_eyebrow' => 'Funciones premium',
   'home_services_intro' => 'Streaming potente, acceso más inteligente y una experiencia IPTV más limpia en todos tus dispositivos.',
-  'home_testimonials_intro' => 'Opiniones verificadas de clientes que usan Opplex IPTV para TV en vivo, deportes y contenido bajo demanda.',
+  'home_testimonials_intro' => 'Opiniones compartidas por clientes que usan Opplex IPTV para TV en directo, deportes y contenido bajo demanda.',
   'home_testimonials_verified_customer' => 'Cliente IPTV verificado',
   'home_unlimited_eyebrow' => 'Acceso ilimitado',
   'home_unlimited_intro' => 'Disfruta TV en vivo premium y VOD con acceso más rápido, mayor estabilidad y planes flexibles pensados para la visualización moderna.',
@@ -705,15 +707,15 @@ return [
     ],
     'about' => [
       'q1' => '¿Quién es Opplex IPTV?',
-      'a1' => 'Opplex IPTV es un proveedor de streaming consolidado que ofrece televisión en directo y contenido bajo demanda fiable y de alta calidad a espectadores de todo el mundo.',
+      'a1' => 'Opplex IPTV es un proveedor de streaming que ofrece televisión en directo y contenido bajo demanda a espectadores de muchas regiones compatibles.',
       'q2' => '¿Qué tan fiable es su servicio de streaming?',
       'a2' => 'Nuestra infraestructura utiliza servidores de gran capacidad y tecnología antibuffering para mantener una reproducción fluida incluso en las horas de mayor demanda.',
       'q3' => '¿Qué atención al cliente ofrecen?',
       'a3' => 'Ofrecemos asistencia cercana por correo electrónico y WhatsApp para ayudarte con la configuración, la activación y cualquier duda sobre la reproducción.',
       'q4' => '¿Siguen añadiendo nuevos canales y contenidos?',
-      'a4' => 'Sí. Actualizamos continuamente nuestra lista de canales y biblioteca VOD para que siempre tengas acceso al contenido más reciente.',
+      'a4' => 'Nuestra lista de canales y biblioteca VOD se actualizan regularmente. La disponibilidad cambia según la fuente y la región, así que consúltanos para confirmar un título o canal concreto.',
       'q5' => '¿Cómo empiezo a usar Opplex IPTV?',
-      'a5' => 'Elige un plan, completa el pedido y te enviaremos tus datos de acceso en pocos minutos para que puedas empezar a ver contenido de inmediato.',
+      'a5' => 'Elige un plan, envía el pedido y continúa el pago por WhatsApp. Enviaremos tus datos de acceso después de confirmar el pago.',
     ],
     'reseller' => [
       'q1' => '¿Cómo puedo convertirme en distribuidor de Opplex IPTV?',
@@ -729,11 +731,11 @@ return [
     ],
     'subscription' => [
       'q1' => '¿Qué incluye una suscripción a Opplex IPTV?',
-      'a1' => 'Tu suscripción desbloquea todos los canales en directo, toda la biblioteca de películas y series, la guía de televisión en pantalla y compatibilidad con aplicaciones para varios dispositivos.',
+      'a1' => 'Tu suscripción incluye acceso a los canales en directo disponibles, la biblioteca de películas y series incluida, la guía de televisión en pantalla y aplicaciones compatibles para varios dispositivos.',
       'q2' => '¿Cómo activo mi suscripción?',
       'a2' => 'Después del pago te enviaremos los códigos de acceso y una URL. Introdúcelos en tu reproductor IPTV y los canales se cargarán automáticamente.',
       'q3' => '¿Puedo usar mi suscripción mientras viajo al extranjero?',
-      'a3' => 'Sí. Tu suscripción funciona donde tengas una conexión estable a Internet, así que puedes seguir viendo contenido durante tus viajes.',
+      'a3' => 'Puedes usar tu suscripción en muchas regiones compatibles con una conexión estable. Las condiciones de la red y las restricciones regionales pueden variar, así que confirma tu destino con nosotros antes de viajar.',
       'q4' => '¿Qué velocidad de Internet necesito?',
       'a4' => 'Recomendamos al menos entre 15 y 25 Mbps para un streaming fluido en HD o 4K. Las velocidades inferiores funcionan, pero pueden reducir la calidad de imagen.',
       'q5' => '¿Qué ocurre cuando caduca mi suscripción?',
@@ -759,9 +761,9 @@ return [
       'q3' => 'No he recibido mis datos de acceso, ¿qué hago?',
       'a3' => 'Comprueba primero la carpeta de correo no deseado. Si aún no están allí, escríbenos por WhatsApp con el correo electrónico de tu pedido y volveremos a enviarlos.',
       'q4' => '¿Pueden ayudarme a configurar mi dispositivo?',
-      'a4' => 'Sí. Nuestro equipo estará encantado de guiarte paso a paso durante la instalación y activación en cualquier dispositivo compatible.',
+      'a4' => 'Sí. Nuestro equipo puede guiarte paso a paso durante la instalación y activación en los dispositivos compatibles más populares.',
       'q5' => '¿Ofrecen asistencia en otros idiomas?',
-      'a5' => 'Nuestro sitio admite varios idiomas y nuestro equipo puede ayudar a clientes de todo el mundo.',
+      'a5' => 'Nuestro sitio admite varios idiomas y nuestro equipo puede ayudar a clientes de muchas regiones compatibles.',
     ],
     'movies' => [
       'q1' => '¿Cuántas películas y series hay disponibles?',
@@ -783,7 +785,7 @@ return [
       'q3' => '¿Los dispositivos de streaming vienen preconfigurados?',
       'a3' => 'Cuando se indique, los dispositivos pueden venir listos para transmitir, de modo que solo tengas que conectarlos y empezar a ver contenido con una configuración mínima.',
       'q4' => '¿Cómo se entregan los pedidos de la tienda?',
-      'a4' => 'Los artículos físicos se envían a tu dirección, mientras que los productos y códigos digitales se entregan al instante por correo electrónico después del pago.',
+      'a4' => 'Los artículos físicos se envían a tu dirección. Los productos y códigos digitales se envían por correo electrónico después de confirmar el pago, normalmente durante el horario de atención activo.',
       'q5' => '¿Pueden ayudarme a elegir el dispositivo adecuado?',
       'a5' => 'Por supuesto. Escríbenos por WhatsApp con tus necesidades y presupuesto, y te recomendaremos la mejor opción.',
     ],

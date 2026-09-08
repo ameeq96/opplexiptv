@@ -99,13 +99,13 @@ class SchemaService
             'description' => __('meta.home.description'),
             'telephone'   => self::PHONE,
             'email'       => self::EMAIL,
-            'areaServed'  => 'Worldwide',
+            'areaServed'  => 'Multiple supported regions',
             'contactPoint' => [
                 '@type'             => 'ContactPoint',
                 'telephone'         => self::PHONE,
                 'email'             => self::EMAIL,
                 'contactType'       => 'customer support',
-                'areaServed'        => 'Worldwide',
+                'areaServed'        => 'Multiple supported regions',
                 'availableLanguage' => $this->availableLanguages(),
             ],
         ];
@@ -291,7 +291,7 @@ class SchemaService
             'serviceType' => $serviceType,
             'url'         => $this->absoluteUrl($url),
             'provider'    => $this->organizationRef(),
-            'areaServed'  => 'Worldwide',
+            'areaServed'  => 'Multiple supported regions',
         ];
 
         if ($description !== null && trim($description) !== '') {

@@ -37,14 +37,14 @@ return [
         'keywords' => 'rivenditore IPTV Italia, pannello IPTV, IPTV Smarters Pro rivenditore, IPTV Extreme APK, crediti IPTV, lista IPTV Sky Italia',
     ],
     'buynow' => [
-        'title' => 'Acquista IPTV ora | Accesso immediato a IPTV 4K e',
-        'description' => 'Acquista IPTV oggi e goditi l\'accesso immediato ai servizi IPTV di alta qualità, inclusi lo streaming 4K, canali HD e una prova gratuita. Acquista i migliori box IPTV e inizia a trasmettere in tutto il mondo in Europa e negli Stati Uniti.',
-        'keywords' => 'compra IPTV ora, IPTV 4K, acquisto servizio IPTV, acquisto box IPTV, streaming IPTV, abbonamento IPTV, IPTV HD, accesso IPTV immediato',
+        'title' => 'Acquista IPTV ora | Piani IPTV 4K e streaming HD',
+        'description' => 'Scegli un piano IPTV per lo streaming HD e 4K supportato, quindi completa pagamento e attivazione con il nostro team su WhatsApp.',
+        'keywords' => 'compra IPTV ora, IPTV 4K, acquisto servizio IPTV, acquisto box IPTV, streaming IPTV, abbonamento IPTV, IPTV HD, attivazione IPTV WhatsApp',
     ],
     'buy-now-panel' => [
         'title' => 'Acquista Pannello IPTV | Dashboard Rivenditore',
-        'description' => 'Acquista ora il tuo pannello IPTV e ottieni accesso immediato a una dashboard avanzata per gestire utenti, attivare linee e trasmettere in 4K e HD.',
-        'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, accesso immediato pannello IPTV, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
+        'description' => 'Ordina un pannello rivenditore IPTV per gestire utenti e attivare linee, quindi completa pagamento e configurazione con il nostro team su WhatsApp.',
+        'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, configurazione pannello IPTV WhatsApp, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
     ],
     'iptv-applications' => [
         'title' => 'Migliori app IPTV per Android, iOS, Smart TV',
@@ -79,7 +79,7 @@ return [
     'terms-of-service' => [
         'title'       => 'Termini di Servizio e Politica d’Uso Legale',
         'description' => 'Leggi i Termini di Servizio di Opplex IPTV: regole account, uso corretto, pagamenti, rinnovi e disponibilità del servizio.',
-        'keywords'    => 'termini IPTV, Opplex IPTV, pagamenti IPTV, rinnovo automatico, uso legale IPTV',
+        'keywords'    => 'termini IPTV, Opplex IPTV, pagamenti IPTV, rinnovo manuale, uso legale IPTV',
     ],
     'privacy-policy' => [
         'title'       => 'Informativa sulla Privacy e Protezione dei Dati',
@@ -102,14 +102,14 @@ return [
         'keywords'    => 'configurazione IPTV, impostazione IPTV, pacchetti IPTV, rivenditore IPTV, piano di abbonamento, Android TV Box, Firestick, smart TV, 1 connessione, 2 connessioni, 4 connessioni, IPTV annuale, IPTV mensile, servizio di streaming',
     ],
     'checkout' => [
-        'title'       => 'Checkout IPTV sicuro | Completa il tuo ordine con attivazione immediata',
-        'description' => 'Completa il tuo ordine IPTV tramite checkout sicuro: controlla il dispositivo scelto, il provider IPTV, il piano di connessione e il pacchetto di',
-        'keywords'    => 'checkout IPTV, pagamento sicuro IPTV, completare ordine, pagamento IPTV, abbonamento IPTV, pagamento con carta, pagamento in crypto, attivazione immediata, riepilogo ordine, servizio di streaming',
+        'title'       => 'Checkout IPTV sicuro | Invia il tuo ordine',
+        'description' => 'Controlla dispositivo, provider, connessione e pacchetto selezionati, invia l’ordine IPTV, quindi continua il pagamento con il nostro team su WhatsApp.',
+        'keywords'    => 'checkout IPTV, checkout sicuro, inviare ordine, pagamento WhatsApp, abbonamento IPTV, pagamento con carta, pagamento in crypto, riepilogo ordine, servizio di streaming',
     ],
     'thankyou' => [
-        'title'       => 'Grazie | Ordine confermato e prossimi passi per il tuo abbonamento IPTV',
-        'description' => 'Grazie per il tuo ordine. Il tuo abbonamento IPTV è stato ricevuto ed è in fase di elaborazione.',
-        'keywords'    => 'pagina di ringraziamento, ordine confermato, ordine IPTV, abbonamento IPTV, ordine riuscito, istruzioni di attivazione, dati account, assistenza clienti, servizio di streaming',
+        'title'       => 'Ordine ricevuto | Continua il pagamento IPTV su WhatsApp',
+        'description' => 'Il tuo ordine IPTV è stato creato e resta in sospeso finché il pagamento non viene confermato. Continua con il nostro team su WhatsApp.',
+        'keywords'    => 'pagina di ringraziamento, ordine ricevuto, ordine IPTV in sospeso, pagamento WhatsApp, abbonamento IPTV, istruzioni di attivazione, dati account, assistenza clienti, servizio di streaming',
     ],
     'blogs' => [
         'index' => [

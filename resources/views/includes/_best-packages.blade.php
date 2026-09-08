@@ -674,7 +674,10 @@
                                 </a>
 
                                 @if ($buyPrice)
-                                    <a  rel="noopener"
+                                    <a rel="noopener" data-whatsapp-click data-whatsapp-placement="pricing_card"
+                                        data-whatsapp-intent="package" data-whatsapp-package="{{ $displayTitle }}"
+                                        data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
+                                        data-whatsapp-vendor="{{ $vendorKey }}"
                                         href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $displayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                             height="32" alt="WhatsApp" loading="lazy" decoding="async" />
@@ -747,7 +750,10 @@
                                         <span class="txt">{{ __('messages.buy_now') }}</span>
                                     </a>
 
-                                    <a  rel="noopener"
+                                    <a rel="noopener" data-whatsapp-click data-whatsapp-placement="pricing_card"
+                                        data-whatsapp-intent="reseller" data-whatsapp-package="{{ $resellerDisplayTitle }}"
+                                        data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
+                                        data-whatsapp-vendor="{{ $vendorResKey }}"
                                         href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $resellerDisplayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}"
                                             width="32" height="32" alt="WhatsApp" loading="lazy" decoding="async" />

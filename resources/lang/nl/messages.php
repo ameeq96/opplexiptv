@@ -64,9 +64,9 @@ return [
   'iptv_sports' => 'Bekijk Live Sport in HD via IPTV Smart Player',
   'iptv_sports_desc' => 'Geniet van live sport inclusief voetbal, cricket, UFC en meer met 4K live IPTV zonder buffering — werkt met IPTV smart player & IPTV box.',
   'iptv_vod' => 'Premium IPTV VOD met 50k+ Films & Series',
-  'iptv_vod_desc' => 'Stream meer dan 50k Hollywood & Bollywood films en 5k+ series on demand via xtreme HD IPTV & aroma IPTV met gratis proefperiode en full HD kwaliteit.',
-  'iptv_devices' => 'IPTV op Alle Apparaten - Smart Player, Android, Box',
-  'iptv_devices_desc' => 'Gebruik IPTV smart player op Smart TV, iPhone, Android, Firestick, MAG box & meer. Inclusief xtreme HD IPTV toegang met gratis proefperiode.',
+  'iptv_vod_desc' => 'Stream beschikbare Hollywood- en Bollywoodfilms en series on demand via xtreme HD IPTV en aroma IPTV; kwaliteit hangt af van de bron, het apparaat en de verbinding.',
+  'iptv_devices' => 'IPTV op Compatibele Apparaten - Smart Player, Android, Box',
+  'iptv_devices_desc' => 'Gebruik een compatibele IPTV-smartplayer op ondersteunde Smart TV, iPhone, Android, Firestick, MAG-box en andere populaire apparaten.',
   'learn_more' => 'Leer Meer Over Onze IPTV Pakketten',
 
   'testimonials_title' => 'Klantbeoordelingen - Beste IPTV Ervaring',
@@ -120,7 +120,7 @@ return [
   'feature_easy_desc' => 'Installeer IPTV smart player of IPTV box in minuten op Android, iOS, MAG, Firestick en Smart TV’s. Inclusief proefperiode en volledige ondersteuning.',
 
   'feature_multidevice' => 'Multi-Apparaat IPTV - Mobiel, Smart TV, Box',
-  'feature_multidevice_desc' => 'Stream IPTV op meerdere apparaten zoals Smart TV, Android mobiel, iPhone, tablet en IPTV box — geniet overal van aroma IPTV.',
+  'feature_multidevice_desc' => 'Stream IPTV op populaire compatibele apparaten zoals Smart TV, Android-telefoon, iPhone, tablet en IPTV-box; compatibiliteit verschilt per model, besturingssysteem en app.',
 
   'feature_support' => '24/7 IPTV Klantenservice via WhatsApp',
   'feature_support_desc' => 'Krijg snelle hulp van ons IPTV supportteam bij IPTV smart player installatie, proefactivatie, boxproblemen en streamingfouten.',
@@ -232,7 +232,7 @@ return [
   'faq.a3' => 'Wanneer een klant een Opplex IPTV-abonnement koopt, ontvangt hij inlogcodes. De klant moet deze codes, samen met de verstrekte URL, in de app invoeren in de aangegeven velden. Zie de afbeelding hieronder voor beter begrip.',
 
   'faq.q4' => 'Heeft Opplex IPTV een Proef?',
-  'faq.a4' => 'Ja, er is een proef beschikbaar voor slechts $1.',
+  'faq.a4' => 'Ja. Er is een gratis proefperiode beschikbaar waarmee je de dienst op je eigen apparaat kunt testen voordat je een abonnement kiest. Stuur ons via WhatsApp een bericht om te beginnen.',
 
   'faq.q5' => 'Soms blijft een film bufferen tijdens het kijken?',
   'faq.a5' => 'Dit kan gebeuren door lage internetsnelheid of hoge drukte. Wacht 10-15 seconden en hervat dan het afspelen.',
@@ -250,7 +250,7 @@ return [
   'faq.a9' => 'Klik hier om te downloaden: <a href="https://www.opplexiptv.com/iptv-applications">Nu downloaden</a>',
 
   'faq.q10' => 'Is mijn betaling veilig?',
-  'faq.a10' => 'Ja, we gebruiken geavanceerde encryptie en industriestandaardprotocollen om betalingsbeveiliging te garanderen.',
+  'faq.a10' => 'De beschikbare betaalmethode wordt via WhatsApp bevestigd; voor onlinebetalingen verstrekt het team de bijbehorende beveiligde link.',
 
   'faq.q11' => 'Kan ik Opplex IPTV vragen of mijn favoriete content beschikbaar is?',
   'faq.a11' => 'Ja, u kunt de beschikbaarheid controleren vóór aankoop.',
@@ -403,19 +403,19 @@ return [
 
   'email_title'   => 'Bedankt - Opplex IPTV',
   'dear'          => 'Beste :name,',
-  'thank_you'     => "Bedankt voor je interesse in ons IPTV-abonnement. Je bent op de juiste plek voor de beste tv-ervaring wereldwijd.",
+  'thank_you'     => "Bedankt voor je interesse in ons IPTV-abonnement, beschikbaar op compatibele apparaten in veel regio’s.",
   'package_details' => 'Jouw Pakketdetails:',
   'package'       => 'Pakket',
   'email'         => 'E-mail',
   'phone'         => 'Telefoon',
   'message'       => 'Bericht',
-  'contact_whatsapp' => 'Voor snelle antwoorden en om verder te gaan met je abonnement, neem contact met ons op via WhatsApp:',
+  'contact_whatsapp' => 'Neem voor hulp en om verder te gaan met je abonnement contact op via WhatsApp; het team antwoordt tijdens actieve ondersteuningsuren:',
   'regards'       => 'Met vriendelijke groet,',
   'tagline'       => "De Beste TV ter Wereld",
 
   'contact' => [
-    'intro' => 'Beste Klant, bedankt voor je interesse in ons IPTV-abonnement. Je bent op de juiste plek voor de beste tv-ervaring wereldwijd.',
-    'whatsapp_info' => 'Voor snelle antwoorden en om verder te gaan met je abonnement, neem contact op via WhatsApp',
+    'intro' => 'Beste klant, bedankt voor je interesse in ons IPTV-abonnement, beschikbaar op compatibele apparaten in veel regio’s.',
+    'whatsapp_info' => 'Neem voor hulp en om verder te gaan met je abonnement contact op via WhatsApp; het team antwoordt tijdens actieve ondersteuningsuren',
     'signature' => 'Met vriendelijke groet, Opplex IPTV - De Beste TV ter Wereld',
   ],
   'seo_services' => [
@@ -436,8 +436,8 @@ return [
     ],
     [
       'icon' => 'flaticon-customer-service',
-      'title' => 'Eenvoudige IPTV-installatie op elk apparaat',
-      'description' => 'Begin direct met kijken op Smart TV, Firestick, MAG, Android en iOS – geen technische kennis vereist.',
+      'title' => 'Eenvoudige IPTV-installatie op ondersteunde apparaten',
+      'description' => 'Stel Opplex in op compatibele Smart TV, Firestick, MAG, Android en iOS; model, besturingssysteem en app kunnen de compatibiliteit beïnvloeden.',
     ],
   ],
   'buy_now_heading' => 'Koop het paneel nu',
@@ -487,14 +487,14 @@ return [
   'checkout_continue_button'         => 'Doorgaan naar afrekenen',
 
   // ==== CHECKOUT STEP ====
-  'checkout_complete_title_page'     => 'Rond je bestelling af',
+  'checkout_complete_title_page'     => 'Controleer en verstuur je bestelling',
 
   'checkout_badge_secure'            => 'Veilig afrekenen',
   'checkout_badge_safe_info'         => 'Je gegevens zijn veilig',
   'checkout_badge_encryption'        => '256-bits versleuteling',
 
-  'checkout_complete_title'          => 'Rond je bestelling af',
-  'checkout_complete_sub'            => 'Veilige betaling en directe activatie',
+  'checkout_complete_title'          => 'Controleer en verstuur je bestelling',
+  'checkout_complete_sub'            => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp',
   'checkout_notice_single_item'      => 'Vorige artikel verwijderd. Er mag maar één product tegelijk in de winkelwagen staan.',
 
   'checkout_billing_details'         => 'Factuurgegevens',
@@ -524,25 +524,25 @@ return [
   'checkout_total_label'             => 'Totaal',
 
   'checkout_pay_card_title'          => 'Betalen met creditcard/debitcard',
-  'checkout_pay_card_desc'           => 'Je wordt doorgestuurd naar onze betaalpagina om de kaartbetaling te voltooien. Je abonnement wordt direct na aankoop geleverd.',
+  'checkout_pay_card_desc'           => 'Kies kaartbetaling en dien je bestelling in. Ons team bevestigt vóór activering de beveiligde betaallink via WhatsApp.',
   'checkout_pay_crypto_title'        => 'Betalen met crypto',
-  'checkout_pay_crypto_desc'         => 'Betaal veilig met populaire cryptovaluta.',
-  'checkout_place_order_btn'         => 'Bestelling plaatsen en betalen',
+  'checkout_pay_crypto_desc'         => 'Kies crypto en dien je bestelling in. Ons team bevestigt vóór activering de betalingsinstructies via WhatsApp.',
+  'checkout_place_order_btn'         => 'Bestelling indienen',
 
 
   'thankyou_page' => [
-    'title'       => 'Bedankt voor je bestelling',
-    'description' => 'Je bestelling is succesvol ontvangen. Je ontvangt de IPTV-abonnementsgegevens per e-mail en WhatsApp zodra de betaling is bevestigd.',
-    'keywords'    => 'bedankt, bestelling voltooid, IPTV bestelling, bestelling geslaagd, betaling in behandeling, IPTV activatie, streamingdienst',
+    'title'       => 'Bestelling ontvangen | Ga verder met betalen via WhatsApp',
+    'description' => 'Je bestelling is aangemaakt en staat in behandeling. Ga verder met betalen via WhatsApp; abonnementsgegevens worden na betalingsbevestiging verzonden.',
+    'keywords'    => 'IPTV bestelling ontvangen, betaling in behandeling, WhatsApp betaling, IPTV activatie, streamingdienst',
 
-    'heading'     => 'Bedankt voor je bestelling! 🎉',
-    'sub_text'    => 'We hebben je bestelling ontvangen. Je krijgt de abonnementsgegevens via e-mail en WhatsApp zodra de betaling is bevestigd.',
-    'badge_text'  => 'Betalingsstap succesvol aangemaakt',
+    'heading'     => 'Je bestelling is ontvangen',
+    'sub_text'    => 'De bestelling is aangemaakt en staat in behandeling. Ga verder met betalen via WhatsApp; na bevestiging ontvang je de abonnementsgegevens.',
+    'badge_text'  => 'Bestelling succesvol aangemaakt',
 
     'order_status' => 'Bestelstatus',
     'pending'     => 'Betaling in behandeling',
     'delivery'    => 'Levering',
-    'delivery_text' => 'Directe levering na betalingsbevestiging',
+    'delivery_text' => 'Levering na betalingsbevestiging',
     'support'     => 'Support',
     'support_text' => '24/7 via WhatsApp en e-mail',
 
@@ -552,7 +552,9 @@ return [
     'home_btn'    => 'Terug naar home',
     'support_btn' => 'Contact met support',
 
-    'footnote'    => 'Geen e-mail ontvangen binnen enkele minuten? Controleer je spamfolder of neem contact op met onze support.',
+    'footnote'    => 'Voltooi de betaling via WhatsApp om je abonnement te activeren. Heb je hulp nodig, dan begeleidt ons team je.',
+    'continue_payment_whatsapp' => 'Doorgaan met betalen via WhatsApp',
+    'whatsapp_payment_message' => 'Hallo, ik wil de betaling voor bestelling #:order voltooien. Pakket: :package. Bedrag: :amount. Betaalmethode: :method.',
   ],
 
   // Blog
@@ -628,7 +630,7 @@ return [
   'home_hero_watch_live' => 'Bekijk :title live in HD',
   'home_services_eyebrow' => 'Premium functies',
   'home_services_intro' => 'Krachtige streaming, slimmere toegang en een strakkere IPTV-ervaring op al je apparaten.',
-  'home_testimonials_intro' => 'Geverifieerde klantervaringen van kijkers die Opplex IPTV gebruiken voor live tv, sport en on-demand content.',
+  'home_testimonials_intro' => 'Ervaringen gedeeld door kijkers die Opplex IPTV gebruiken voor live-tv, sport en on-demand content.',
   'home_testimonials_verified_customer' => 'Geverifieerde IPTV-klant',
   'home_unlimited_eyebrow' => 'Onbeperkte toegang',
   'home_unlimited_intro' => 'Stream premium live tv en VOD met snellere toegang, sterkere stabiliteit en flexibele pakketten voor modern kijken.',
@@ -666,7 +668,7 @@ return [
       'q2' => 'Kan ik Opplex IPTV uitproberen voordat ik het koop?',
       'a2' => 'Ja. We bieden een voordelige proefperiode aan, zodat je de kwaliteit en stabiliteit van de zenders op je eigen apparaat kunt testen voordat je een volledig abonnement kiest.',
       'q3' => 'Op welke apparaten kan ik kijken?',
-      'a3' => 'Opplex IPTV werkt op Amazon Firestick, Android TV, smart-tv’s van Samsung en LG, Android- en iOS-telefoons, tablets en Windows- en Mac-computers.',
+      'a3' => 'Opplex IPTV is compatibel met populaire apparaten, waaronder ondersteunde Amazon Firestick, Android TV, smart-tv’s van Samsung en LG, Android- en iOS-telefoons, tablets en Windows- en Mac-computers. Compatibiliteit verschilt per model, besturingssysteem en app.',
       'q4' => 'Heb ik extra apparatuur nodig?',
       'a4' => 'Er is geen speciale apparatuur nodig. Je hebt alleen een internetverbinding en een compatibel apparaat met een geïnstalleerde IPTV-speler nodig.',
       'q5' => 'Hoe snel wordt mijn abonnement na de bestelling geactiveerd?',
@@ -676,7 +678,7 @@ return [
     ],
     'packages' => [
       'q1' => 'Wat is inbegrepen bij elk Opplex IPTV-pakket?',
-      'a1' => 'Elk pakket biedt volledige toegang tot meer dan 12,000 livezenders, de complete film- en seriebibliotheek, de EPG-gids en 4K- of HD-streaming waar beschikbaar.',
+      'a1' => 'Elk pakket biedt toegang tot beschikbare livezenders, films en series, de EPG-gids en 4K- of HD-streaming wanneer de bron en het apparaat dit ondersteunen.',
       'q2' => 'Wat is het verschil tussen de maand- en jaarpakketten?',
       'a2' => 'De inhoud is hetzelfde. Langere abonnementen kosten alleen minder per maand en hoeven minder vaak te worden verlengd.',
       'q3' => 'Hoeveel apparaten kan ik met één pakket gebruiken?',
@@ -684,7 +686,7 @@ return [
       'q4' => 'Kan ik mijn pakket later upgraden of verlengen?',
       'a4' => 'Zeker. Je kunt op elk moment verlengen of overstappen op een langer abonnement; wij verlengen dan gewoon je bestaande lijn.',
       'q5' => 'Worden pakketten automatisch verlengd?',
-      'a5' => 'Nee. Er is geen automatische facturering: jij houdt de controle en verlengt alleen wanneer je dat wilt.',
+      'a5' => 'Nee. Er is geen automatische facturering: bekijk vóór verlenging het actuele abonnement en de prijs en kies vervolgens of je wilt doorgaan.',
       'q6' => 'Krijg ik korting bij een langer abonnement?',
       'a6' => 'Ja. Hoe langer het gekozen abonnement, hoe lager de effectieve maandprijs. Neem via WhatsApp contact op voor de huidige aanbiedingen.',
     ],
@@ -696,7 +698,7 @@ return [
       'q3' => 'Zijn er verborgen kosten of installatiekosten?',
       'a3' => 'Nee. De weergegeven prijs is wat je betaalt; er zijn geen activerings- of installatiekosten.',
       'q4' => 'Zijn mijn betaalgegevens veilig?',
-      'a4' => 'Ja. Alle betalingen worden verwerkt via versleutelde verbindingen die aan de branchenormen voldoen en we bewaren je kaartgegevens nooit.',
+      'a4' => 'De beschikbare betaalmethode wordt via WhatsApp met ons team bevestigd. Voor kaart- of onlinebetalingen ontvang je de bijbehorende beveiligde link en we bewaren je kaartgegevens niet.',
       'q5' => 'Bieden jullie terugbetalingen aan?',
       'a5' => 'We bieden een proefperiode, zodat je de dienst vóór aankoop kunt testen. Zodra de prijs is overeengekomen en de bestelling is bevestigd, is de aankoop definitief en niet-terugbetaalbaar, behalve wanneer het toepasselijke recht een terugbetaling vereist.',
       'q6' => 'Waarom is Opplex IPTV goedkoper dan kabel-tv?',
@@ -704,15 +706,15 @@ return [
     ],
     'about' => [
       'q1' => 'Wie is Opplex IPTV?',
-      'a1' => 'Opplex IPTV is een gevestigde streamingaanbieder die kijkers over de hele wereld betrouwbare live-tv en on-demandcontent van hoge kwaliteit biedt.',
+      'a1' => 'Opplex IPTV is een streamingaanbieder die in veel regio’s toegang biedt tot beschikbare live-tv en on-demandcontent op compatibele apparaten.',
       'q2' => 'Hoe betrouwbaar is jullie streamingdienst?',
       'a2' => 'Onze infrastructuur draait op servers met hoge capaciteit en antibufferingtechnologie om ook tijdens piekuren vloeiend afspelen mogelijk te maken.',
       'q3' => 'Welke klantenservice bieden jullie?',
       'a3' => 'We bieden vriendelijke ondersteuning via e-mail en WhatsApp bij de installatie, activering en al je vragen over het afspelen.',
       'q4' => 'Voegen jullie nieuwe zenders en content toe?',
-      'a4' => 'Ja. Onze zenderlijst en VOD-bibliotheek worden voortdurend bijgewerkt, zodat je altijd toegang hebt tot de nieuwste content.',
+      'a4' => 'Onze zenderlijst en VOD-bibliotheek worden regelmatig bijgewerkt. De beschikbaarheid van content en updates verschilt per bron en regio.',
       'q5' => 'Hoe begin ik met Opplex IPTV?',
-      'a5' => 'Kies een abonnement en rond je bestelling af. We sturen je inloggegevens binnen enkele minuten, zodat je meteen kunt gaan kijken.',
+      'a5' => 'Kies een abonnement en dien je bestelling in. Ga daarna verder met betalen via ons team op WhatsApp; de inloggegevens worden na betalingsbevestiging verzonden.',
     ],
     'reseller' => [
       'q1' => 'Hoe word ik reseller van Opplex IPTV?',
@@ -728,15 +730,15 @@ return [
     ],
     'subscription' => [
       'q1' => 'Wat is inbegrepen bij een Opplex IPTV-abonnement?',
-      'a1' => 'Je abonnement ontgrendelt alle livezenders, de volledige film- en seriebibliotheek, de tv-gids op het scherm en app-ondersteuning voor meerdere apparaten.',
+      'a1' => 'Je abonnement biedt toegang tot beschikbare livezenders en de beschikbare film- en seriebibliotheek, plus de tv-gids en compatibele apps voor meerdere apparaten.',
       'q2' => 'Hoe activeer ik mijn abonnement?',
-      'a2' => 'Na betaling sturen we je inlogcodes en een URL. Voer deze in je IPTV-speler in en je zenders worden automatisch geladen.',
+      'a2' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we de inlogcodes en URL normaal tijdens actieve ondersteuningsuren; voer ze in een compatibele IPTV-app in.',
       'q3' => 'Kan ik mijn abonnement gebruiken wanneer ik in het buitenland reis?',
-      'a3' => 'Ja. Je abonnement werkt overal waar je een stabiele internetverbinding hebt, zodat je ook tijdens het reizen kunt blijven kijken.',
+      'a3' => 'Je kunt het abonnement tijdens reizen in ondersteunde regio’s gebruiken. Weergave en beschikbaarheid hangen af van het lokale netwerk, apparaat, de bron en toepasselijke beperkingen.',
       'q4' => 'Welke internetsnelheid heb ik nodig?',
       'a4' => 'We adviseren minimaal 15-25 Mbps voor vloeiende HD- of 4K-streaming. Lagere snelheden werken ook, maar kunnen de beeldkwaliteit verminderen.',
       'q5' => 'Wat gebeurt er wanneer mijn abonnement verloopt?',
-      'a5' => 'Het afspelen wordt gewoon onderbroken totdat je verlengt. Na verlenging blijft dezelfde lijn actief zonder dat je iets opnieuw hoeft in te stellen.',
+      'a5' => 'Het afspelen wordt onderbroken wanneer het abonnement afloopt. Abonnementen worden niet automatisch verlengd; bekijk vóór verlenging het actuele abonnement en de prijs.',
     ],
     'apps' => [
       'q1' => 'Welke apps werken met Opplex IPTV?',
@@ -756,19 +758,19 @@ return [
       'q2' => 'Hoe snel krijg ik antwoord?',
       'a2' => 'We streven ernaar tijdens werkuren binnen enkele minuten en op alle andere momenten zo snel mogelijk te antwoorden.',
       'q3' => 'Ik heb mijn inloggegevens niet ontvangen. Wat moet ik doen?',
-      'a3' => 'Controleer eerst je spammap. Als de gegevens daar ook niet staan, stuur ons dan via WhatsApp het e-mailadres van je bestelling en we sturen ze opnieuw.',
+      'a3' => 'Controleer eerst je spammap. Zijn de gegevens na bevestiging van de betaling niet aangekomen, stuur ons dan via WhatsApp de bestelreferentie en het gebruikte e-mailadres. Het team verifieert de betaling en helpt je tijdens actieve ondersteuningsuren.',
       'q4' => 'Kunnen jullie me helpen mijn apparaat in te stellen?',
-      'a4' => 'Ja. Ons team helpt je graag stap voor stap met de installatie en activering op elk ondersteund apparaat.',
+      'a4' => 'Ja. Ons team kan je stap voor stap helpen met de installatie en activering op compatibele ondersteunde apparaten.',
       'q5' => 'Bieden jullie ondersteuning in andere talen?',
-      'a5' => 'Onze website ondersteunt meerdere talen en ons team kan klanten over de hele wereld helpen.',
+      'a5' => 'De website ondersteunt meerdere talen en het team kan klanten in veel regio’s tijdens actieve ondersteuningsuren helpen.',
     ],
     'movies' => [
       'q1' => 'Hoeveel films en series zijn er beschikbaar?',
-      'a1' => 'Opplex IPTV biedt meer dan 50,000 films en ruim 5,000 tv-series on demand, van de nieuwste releases tot tijdloze klassiekers.',
+      'a1' => 'Opplex IPTV biedt toegang tot meer dan 50,000 beschikbare films en ruim 5,000 tv-series on demand in een regelmatig bijgewerkte catalogus. Beschikbaarheid verschilt per bron en regio.',
       'q2' => 'Is de content beschikbaar in 4K of HD?',
       'a2' => 'Veel titels worden in Full HD en 4K gestreamd wanneer de bron dat ondersteunt, zodat je het beste beeld krijgt dat je apparaat en verbinding aankunnen.',
       'q3' => 'Hoe vaak wordt nieuwe content toegevoegd?',
-      'a3' => 'Onze video-on-demandbibliotheek wordt regelmatig bijgewerkt met nieuwe films en de nieuwste afleveringen van populaire series.',
+      'a3' => 'De video-on-demandbibliotheek wordt regelmatig bijgewerkt met beschikbare films en afleveringen; titels en timing verschillen per bron en regio.',
       'q4' => 'Waarom buffert een titel soms?',
       'a4' => 'Bufferen wordt meestal veroorzaakt door een trage verbinding of drukte tijdens piekuren. Het helpt doorgaans om 10-15 seconden te pauzeren voordat je verder kijkt.',
       'q5' => 'Kan ik een film of serie aanvragen die niet in de lijst staat?',
@@ -782,7 +784,7 @@ return [
       'q3' => 'Worden de streamingapparaten vooraf ingesteld geleverd?',
       'a3' => 'Waar dit wordt aangeboden, kunnen apparaten gebruiksklaar worden geleverd, zodat je ze met minimale installatie kunt aansluiten en meteen kunt kijken.',
       'q4' => 'Hoe worden bestellingen uit de winkel geleverd?',
-      'a4' => 'Fysieke artikelen worden naar je adres verzonden, terwijl digitale producten en codes direct na betaling per e-mail worden geleverd.',
+      'a4' => 'Fysieke artikelen worden naar je adres verzonden. Digitale producten en codes worden na bevestiging van de betaling verstrekt, normaal tijdens actieve ondersteuningsuren.',
       'q5' => 'Kunnen jullie me helpen het juiste apparaat te kiezen?',
       'a5' => 'Natuurlijk. Stuur ons via WhatsApp je wensen en budget, dan adviseren we je over de beste optie.',
     ],

@@ -765,7 +765,7 @@ class UiData
         ];
     }
 
-    /** @return array<int,array<string,string>> */
+    /** @return array<int,array<string,mixed>> */
     private function testimonials(): array
     {
         if ($this->hasTable('testimonials')) {
@@ -779,13 +779,24 @@ class UiData
                 ->with(['translations' => function ($q) use ($locale, $fallback) {
                     $q->whereIn('locale', array_unique([$locale, $fallback]));
                 }])
-                ->get(['id', 'text', 'author_name', 'image'])
+                ->get([
+                    'id',
+                    'text',
+                    'author_name',
+                    'image',
+                    'is_verified',
+                    'proof_reference',
+                    'publication_consented_at',
+                ])
                 ->map(function (Testimonial $t) {
                     $tr = $t->translation();
                     return [
                         'text' => $tr?->text ?: $t->text,
                         'author_name' => $tr?->author_name ?: $t->author_name,
                         'image' => $t->image,
+                        'is_publicly_verified' => $t->is_verified
+                            && filled($t->proof_reference)
+                            && $t->publication_consented_at !== null,
                     ];
                 })
                 ->toArray();

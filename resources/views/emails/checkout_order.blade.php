@@ -23,6 +23,25 @@
     $packageLabel = str_ireplace('starshare', 'Filex', $details['package'] ?? $notAvailable);
     $vendor = $details['vendor'] ?? '';
     $vendorLabel = strtolower($vendor) === 'starshare' ? 'Filex' : ucfirst($vendor);
+    $whatsappPaymentUrl = null;
+
+    if (!$isAdmin) {
+        $whatsappNumber = preg_replace(
+            '/\D+/',
+            '',
+            (string) (config('services.whatsapp.number') ?: '16393903194')
+        );
+        $paymentMessage = __('messages.thankyou_page.whatsapp_payment_message', [
+            'order' => $details['order_id'] ?? $notAvailable,
+            'package' => $packageLabel,
+            'amount' => sprintf('USD %.2f', (float) ($details['total_price'] ?? 0)),
+            'method' => $paymentMethodLabel,
+        ]);
+
+        if ($whatsappNumber !== '') {
+            $whatsappPaymentUrl = 'https://wa.me/' . $whatsappNumber . '?text=' . rawurlencode($paymentMessage);
+        }
+    }
 @endphp
 
 <h2 style="margin:0 0 12px 0;">{{ $title }}</h2>
@@ -119,11 +138,13 @@
     <a href="{{ route('refund-policy') }}">{{ __('document_ui.footer.refund') }}</a>
 </p>
 
-@unless ($isAdmin)
+@if (!$isAdmin && $whatsappPaymentUrl)
     <p style="margin:12px 0 0 0;">
-        <a href="{{ route('activate') }}">{{ __('document_ui.footer.activate') }}</a>
+        <a href="{{ $whatsappPaymentUrl }}" style="display:inline-block;padding:10px 16px;background:#25d366;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;">
+            {{ __('messages.thankyou_page.continue_payment_whatsapp') }}
+        </a>
     </p>
-@endunless
+@endif
 
 @if ($isAdmin)
     <p style="margin:12px 0 0 0;">{{ __('interface.email.checkout.admin_follow_up') }}</p>
