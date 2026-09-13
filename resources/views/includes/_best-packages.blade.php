@@ -26,7 +26,7 @@
                 box-shadow: 0 15px 28px rgba(173, 9, 20, .24) !important;
             }
             #pricing-section .pricing-buy-cta:focus-visible,
-            #pricing-section .pricing-share-all:focus-visible,
+            #pricing-section .pricing-share-link:focus-visible,
             #pricing-section .price-block .button-box > a:not(.pricing-buy-cta):focus-visible,
             #pricing-section .vendor-toggle .tg:focus-visible,
             #pricing-section .vendor-toggle-reseller .tg:focus-visible {
@@ -121,39 +121,39 @@
                 color: #fff;
                 box-shadow: 0 8px 18px rgba(6, 16, 57, .2);
             }
-            #pricing-section .pricing-share-all-wrap {
+            #pricing-section .pricing-control-actions {
                 display: flex;
-                justify-content: center;
-                margin: -8px 0 24px;
+                min-width: 0;
+                align-items: center;
+                justify-content: flex-end;
+                justify-self: end;
+                gap: 10px;
             }
-            #pricing-section .pricing-share-all {
+            #pricing-section .pricing-control-actions .vendor-toggle,
+            #pricing-section .pricing-control-actions .vendor-toggle-reseller {
+                margin-inline-start: 0;
+            }
+            #pricing-section .pricing-share-link {
                 display: inline-flex;
-                min-height: 52px;
+                width: 44px;
+                height: 44px;
+                flex: 0 0 44px;
                 align-items: center;
                 justify-content: center;
-                gap: 10px;
-                padding: 13px 22px;
-                border: 1px solid #159447;
-                border-radius: 14px;
-                background: #25d366;
-                color: #fff;
-                box-shadow: 0 12px 24px rgba(22, 163, 74, .2);
-                font-size: 15px;
-                font-weight: 800;
-                line-height: 1.35;
-                text-align: center;
-                transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+                border: 1px solid #cdebd6;
+                border-radius: 12px;
+                background: #f5fff8;
+                box-shadow: 0 8px 18px rgba(22, 163, 74, .1);
+                transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
             }
-            #pricing-section .pricing-share-all:hover {
+            #pricing-section .pricing-share-link:hover {
                 transform: translateY(-1px);
-                background: #1fb95a;
-                color: #fff;
-                box-shadow: 0 15px 28px rgba(22, 163, 74, .25);
+                border-color: #86cf9b;
+                box-shadow: 0 11px 22px rgba(22, 163, 74, .16);
             }
-            #pricing-section .pricing-share-all img {
-                width: 28px;
-                height: 28px;
-                flex: 0 0 28px;
+            #pricing-section .pricing-share-link img {
+                width: 25px;
+                height: 25px;
             }
             #pricing-section #creditInfo {
                 margin: 0 0 24px !important;
@@ -371,15 +371,20 @@
                     min-width: 0;
                     flex: 1 1 50%;
                 }
-                #pricing-section .pricing-share-all {
+                #pricing-section .pricing-control-actions {
                     width: 100%;
-                    padding-inline: 16px;
+                    justify-self: stretch;
+                }
+                #pricing-section .pricing-control-actions .vendor-toggle,
+                #pricing-section .pricing-control-actions .vendor-toggle-reseller {
+                    width: auto;
+                    flex: 1 1 auto;
                 }
             }
             @media (prefers-reduced-motion: reduce) {
                 #pricing-section .price-block .inner-box.custom-color,
                 #pricing-section .pricing-buy-cta,
-                #pricing-section .pricing-share-all,
+                #pricing-section .pricing-share-link,
                 #pricing-section .price-block .button-box > a:not(.pricing-buy-cta),
                 #pricing-section .vendor-toggle .tg,
                 #pricing-section .vendor-toggle-reseller .tg {
@@ -387,7 +392,7 @@
                 }
                 #pricing-section .price-block .inner-box.custom-color:hover,
                 #pricing-section .pricing-buy-cta:hover,
-                #pricing-section .pricing-share-all:hover,
+                #pricing-section .pricing-share-link:hover,
                 #pricing-section .price-block .button-box > a:not(.pricing-buy-cta):hover {
                     transform: none;
                 }
@@ -604,28 +609,29 @@
                 </label>
             </div>
 
-            <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}"
-                @if ($showResellerInitially) style="display:none" @endif>
-                <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
-                <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Filex</button>
-            </div>
+            <div class="pricing-control-actions">
+                <a id="shareAllPackages" class="pricing-share-link"
+                    href="https://api.whatsapp.com/send?text={{ rawurlencode(__('document_ui.home.pricing_aria') . "\n" . route('packages', ['direct' => 1])) }}"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="{{ __('interface.blog.share_on', ['network' => 'WhatsApp']) }} — {{ __('document_ui.home.pricing_aria') }}"
+                    title="{{ __('interface.blog.share_on', ['network' => 'WhatsApp']) }}"
+                    data-whatsapp-click data-whatsapp-placement="pricing_share_all"
+                    data-whatsapp-intent="package_share" data-whatsapp-package="all_packages">
+                    <img src="{{ asset('images/whatsapp.webp') }}" width="25" height="25" alt="" aria-hidden="true">
+                </a>
 
-            <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="group"
-                aria-label="{{ __('document_ui.home.choose_reseller_vendor') }}" style="display:{{ $showResellerInitially ? 'inline-flex' : 'none' }}">
-                <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
-                <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Filex</button>
-            </div>
-        </div>
+                <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}"
+                    @if ($showResellerInitially) style="display:none" @endif>
+                    <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
+                    <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Filex</button>
+                </div>
 
-        <div class="pricing-share-all-wrap">
-            <a id="shareAllPackages" class="pricing-share-all"
-                href="https://api.whatsapp.com/send?text={{ rawurlencode(__('document_ui.home.pricing_aria') . "\n" . route('packages', ['direct' => 1])) }}"
-                target="_blank" rel="noopener noreferrer"
-                data-whatsapp-click data-whatsapp-placement="pricing_share_all"
-                data-whatsapp-intent="package_share" data-whatsapp-package="all_packages">
-                <img src="{{ asset('images/whatsapp.webp') }}" width="28" height="28" alt="" aria-hidden="true">
-                <span>{{ __('interface.blog.share_on', ['network' => 'WhatsApp']) }} — {{ __('document_ui.home.pricing_aria') }}</span>
-            </a>
+                <div id="vendorToggleReseller" class="vendor-toggle-reseller" role="group"
+                    aria-label="{{ __('document_ui.home.choose_reseller_vendor') }}" style="display:{{ $showResellerInitially ? 'inline-flex' : 'none' }}">
+                    <button type="button" class="tg active" data-vendor="opplex" aria-pressed="true">Opplex</button>
+                    <button type="button" class="tg" data-vendor="starshare" aria-pressed="false">Filex</button>
+                </div>
+            </div>
         </div>
 
         <div id="creditInfo" class="sec-title centered mb-4" style="display:{{ $showResellerInitially ? 'block' : 'none' }}">
