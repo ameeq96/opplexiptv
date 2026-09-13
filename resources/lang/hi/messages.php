@@ -87,7 +87,7 @@ return [
   'trial_title' => 'हमारा IPTV Free Trial आज़माएं 4K स्ट्रीमिंग और 12k चैनल्स के साथ!',
   'trial_button' => 'अभी Free IPTV Trial शुरू करें',
 
-  'header_whatsapp' => 'WhatsApp: +1 (306) 400-5594',
+  'header_whatsapp' => 'WhatsApp: :phone',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'होम',
@@ -102,7 +102,7 @@ return [
   'nav_iptv_subscription_service' => 'IPTV सब्सक्रिप्शन सर्विस',
   'nav_faqs' => 'अक्सर पूछे जाने वाले प्रश्न',
   'nav_contact' => 'कॉन्टैक्ट करें',
-  'footer_phone' => '+1 (306) 400-5594',
+  'footer_phone' => ':phone',
   'footer_email_1' => 'info@opplexiptv.com',
   // 'footer_email_2' => 'support@opplexiptv.com',
   'footer_address' => 'सास्काटून, एसके, कनाडा',
@@ -202,7 +202,7 @@ return [
 
   'contact.details.title' => 'संपर्क विवरण',
   'contact.details.location' => 'सास्काटून, एसके, कनाडा',
-  'contact.details.phone' => '+1 (306) 400-5594',
+  'contact.details.phone' => ':phone',
   'contact.details.email1' => 'info@opplexiptv.com',
   'contact.details.hours' => 'कार्य समय 24/7',
 
@@ -267,7 +267,7 @@ return [
   'faq.a14' => 'हाँ, IPTV Smarters Pro पर ये स्टेप्स फॉलो करें:<br><br>1. मुख्य पेज पर जाएँ।<br>2. 3 डॉट्स दबाएँ।<br>3. सेटिंग्स पर जाएँ।<br>4. पेरेंटल कंट्रोल पर जाएँ।<br>5. अपना पासवर्ड सेट करें।<br>6. सेव करें।<br>7. लॉक करने के लिए कैटेगरी/चैनल चुनें।<br><br>स्टेटस: आपका चैनल लॉक हो गया।<br><br>लॉक किए गए चैनल देखने के लिए:<br>1. सेटिंग्स पर जाएँ।<br>2. पासवर्ड दर्ज करें।<br>3. अपने चैनल अनलॉक करें।<br>4. सेव करें।',
 
   'faq.q15' => 'मैं Opplex IPTV कहाँ से खरीद सकता हूँ?',
-  'faq.a15' => 'आप इसे सीधे OpplexIPTV.com से खरीद सकते हैं - Opplex IPTV सब्सक्रिप्शन का आधिकारिक स्रोत। जल्दी खरीदने या प्रश्नों के लिए, संपर्क करें +1 (306) 400-5594।',
+  'faq.a15' => 'आप इसे सीधे OpplexIPTV.com से खरीद सकते हैं - Opplex IPTV सब्सक्रिप्शन का आधिकारिक स्रोत। जल्दी खरीदने या प्रश्नों के लिए, संपर्क करें :phone।',
 
   // Captions remain unchanged
   'faq.samsung' => 'सैमसंग टीवी पर',
@@ -756,7 +756,7 @@ return [
     ],
     'contact' => [
       'q1' => 'मैं Opplex IPTV सहायता से कैसे संपर्क करूँ?',
-      'a1' => 'आप इस पेज के फ़ॉर्म, ईमेल या +1 (306) 400-5594 पर WhatsApp के माध्यम से तुरंत हमसे संपर्क कर सकते हैं।',
+      'a1' => 'आप इस पेज के फ़ॉर्म, ईमेल या :phone पर WhatsApp के माध्यम से तुरंत हमसे संपर्क कर सकते हैं।',
       'q2' => 'मुझे कितनी जल्दी उत्तर मिलेगा?',
       'a2' => 'हम काम के घंटों में कुछ मिनटों के भीतर और अन्य समय में यथाशीघ्र उत्तर देने का प्रयास करते हैं।',
       'q3' => 'मुझे लॉगिन विवरण नहीं मिला—मैं क्या करूँ?',

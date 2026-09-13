@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-lg-4">
                     <label class="form-label">Phone</label>
-                    <input type="text" name="phone" class="form-control" value="{{ old('phone', $setting->phone) }}">
+                    <input type="text" name="phone" class="form-control" value="{{ config('services.whatsapp.display') }}" readonly>
                 </div>
                 <div class="col-lg-4">
                     <label class="form-label">Email</label>

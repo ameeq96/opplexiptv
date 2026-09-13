@@ -2,7 +2,7 @@
 
 @php
     $isDocumentEnglish = true;
-    $documentAbout = __('document_support.about');
+    $documentAbout = __('document_support.about', ['phone' => config('services.whatsapp.display')]);
 @endphp
 
 @section('title', $isDocumentEnglish ? $documentAbout['page_title'] : __('messages.about.title'))
@@ -51,7 +51,7 @@
                             {{ $documentAbout['hero']['plans_cta'] }}
                         </a>
                         <a class="document-support__button document-support__button--outline"
-                            href="https://wa.me/13064005594?text={{ urlencode(__('document_support.whatsapp_messages.trial')) }}"
+                            href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('document_support.whatsapp_messages.trial')) }}"
                             target="_blank" rel="noopener">
                             {{ $documentAbout['hero']['trial_cta'] }}
                         </a>

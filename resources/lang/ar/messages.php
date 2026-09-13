@@ -87,7 +87,7 @@ return [
   'trial_title' => 'جرب IPTV مجانًا مع بث 4K وأكثر من 12,000 قناة!',
   'trial_button' => 'ابدأ التجربة المجانية الآن',
 
-  'header_whatsapp' => 'واتساب: +1 (306) 400-5594',
+  'header_whatsapp' => 'واتساب: :phone',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'الرئيسية',
@@ -102,7 +102,7 @@ return [
   'nav_iptv_subscription_service' => 'خدمة اشتراك IPTV',
   'nav_faqs' => 'الأسئلة الشائعة',
   'nav_contact' => 'اتصل بنا',
-  'footer_phone' => '+1 (306) 400-5594',
+  'footer_phone' => ':phone',
   'footer_email_1' => 'info@opplexiptv.com',
   'footer_address' => 'ساسكاتون، كندا',
   'footer_rights' => 'جميع الحقوق محفوظة.',
@@ -201,7 +201,7 @@ return [
 
   'contact.details.title' => 'تفاصيل الاتصال',
   'contact.details.location' => 'ساسكاتون SK، كندا',
-  'contact.details.phone' => '+1 (306) 400-5594',
+  'contact.details.phone' => ':phone',
   'contact.details.email1' => 'info@opplexiptv.com',
   // 'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'ساعات العمل 24/7',
@@ -266,7 +266,7 @@ return [
   'faq.a14' => 'نعم، اتبع هذه الخطوات على IPTV Smarters Pro:<br><br>1. اذهب للصفحة الرئيسية.<br>2. اضغط على الثلاث نقاط.<br>3. ادخل الإعدادات.<br>4. اختر التحكم الأبوي.<br>5. ضع كلمة السر.<br>6. احفظها.<br>7. اختر القنوات/الأقسام للقفل.<br><br>الحالة: تم قفل القناة.<br><br>لرؤية القنوات المغلقة:<br>1. ادخل الإعدادات.<br>2. أدخل كلمة السر.<br>3. افتح القنوات.<br>4. احفظ.',
 
   'faq.q15' => 'أين يمكنني شراء Opplex IPTV؟',
-  'faq.a15' => 'يمكنك شراؤه مباشرة من OpplexIPTV.com - المصدر الرسمي لاشتراكات Opplex IPTV. للشراء السريع أو الاستفسارات، تواصل عبر +1 (306) 400-5594.',
+  'faq.a15' => 'يمكنك شراؤه مباشرة من OpplexIPTV.com - المصدر الرسمي لاشتراكات Opplex IPTV. للشراء السريع أو الاستفسارات، تواصل عبر :phone.',
 
   // Captions
   'faq.samsung' => 'على تلفاز سامسونج',
@@ -748,7 +748,7 @@ return [
     ],
     'contact' => [
       'q1' => 'كيف يمكنني التواصل مع دعم Opplex IPTV؟',
-      'a1' => 'يمكنك التواصل معنا عبر النموذج الموجود في هذه الصفحة أو البريد الإلكتروني أو مباشرة عبر WhatsApp على الرقم +1 (306) 400-5594.',
+      'a1' => 'يمكنك التواصل معنا عبر النموذج الموجود في هذه الصفحة أو البريد الإلكتروني أو مباشرة عبر WhatsApp على الرقم :phone.',
       'q2' => 'ما سرعة حصولي على رد؟',
       'a2' => 'نهدف إلى الرد خلال دقائق في ساعات العمل، وفي أقرب وقت ممكن في جميع الأوقات الأخرى.',
       'q3' => 'لم تصلني بيانات تسجيل الدخول، فماذا أفعل؟',

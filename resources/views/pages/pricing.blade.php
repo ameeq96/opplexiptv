@@ -25,7 +25,7 @@
     @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.pricing');
-            $trialUrl = 'https://wa.me/13064005594?text=' . urlencode(__('messages.whatsapp_trial'));
+            $trialUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . urlencode(__('messages.whatsapp_trial'));
         @endphp
 
         <x-page-title :title="$page['page_title']" :breadcrumbs="[

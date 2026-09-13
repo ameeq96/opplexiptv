@@ -2,7 +2,7 @@
 
 @php
     $isDocumentEnglish = true;
-    $documentFaq = __('document_support.faq');
+    $documentFaq = __('document_support.faq', ['phone' => config('services.whatsapp.display')]);
     $documentFaqGroups = $documentFaq['groups'] ?? [];
     $documentFaqItems = collect($documentFaqGroups)
         ->flatMap(fn ($group) => $group['items'] ?? [])
@@ -104,7 +104,7 @@
                     </div>
                     <div class="document-support__actions">
                         <a class="document-support__button document-support__button--light"
-                            href="https://wa.me/13064005594?text={{ urlencode(__('document_support.whatsapp_messages.trial')) }}"
+                            href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('document_support.whatsapp_messages.trial')) }}"
                             target="_blank" rel="noopener">
                             {{ $documentFaq['cta']['trial'] }}
                         </a>
@@ -112,7 +112,7 @@
                             {{ $documentFaq['cta']['plans'] }}
                         </a>
                         <a class="document-support__button document-support__button--outline-light"
-                            href="https://wa.me/13064005594?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
+                            href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
                             target="_blank" rel="noopener">
                             {{ $documentFaq['cta']['whatsapp'] }}
                         </a>

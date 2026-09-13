@@ -104,7 +104,7 @@ return [
     'trial_title' => 'Essayez notre essai IPTV — même pour IPTV gratuit sans code !',
     'trial_button' => 'Vérifier l\'essai',
 
-    'header_whatsapp' => 'WhatsApp : +1 (306) 400-5594',
+    'header_whatsapp' => 'WhatsApp : :phone',
     'header_email' => 'Info@opplexiptv.com',
 
     'nav_home' => 'Accueil',
@@ -119,7 +119,7 @@ return [
     'nav_iptv_subscription_service' => 'Service abonnement IPTV',
     'nav_faqs' => 'FAQ IPTV',
     'nav_contact' => 'Contactez-nous',
-    'footer_phone' => '+1 (306) 400-5594',
+    'footer_phone' => ':phone',
     'footer_email_1' => 'info@opplexiptv.com',
     // 'footer_email_2' => 'support@opplexiptv.com',
     'footer_address' => 'SASKATOON SK, Canada',
@@ -215,7 +215,7 @@ return [
 
     'contact.details.title' => 'Détails du contact',
     'contact.details.location' => 'SASKATOON SK, Canada',
-    'contact.details.phone' => '+1 (306) 400-5594',
+    'contact.details.phone' => ':phone',
     'contact.details.email1' => 'info@opplexiptv.com',
     // 'contact.details.email2' => 'support@opplexiptv.com',
     'contact.details.hours' => 'Heures d’ouverture 24h/24 7j/7 - Support pour IPTV m3u, box, et stream player',
@@ -276,7 +276,7 @@ return [
     'faq.a14' => 'Oui, sur IPTV Smarters Pro ou IPTV player :<br><br>1. Page d’accueil > Paramètres > Contrôle parental > Mot de passe > Verrouiller catégories.<br><br>Pour voir : Entrez le mot de passe et déverrouillez.',
 
     'faq.q15' => 'Où puis-je acheter Opplex IPTV ?',
-    'faq.a15' => 'Achetez directement sur <a href="https://www.opplexiptv.com">OpplexIPTV.com</a> - l’original pour IPTV m3u, Xtream IPTV, IPTV gratuit sans code, etc. Support : +1 (306) 400-5594.',
+    'faq.a15' => 'Achetez directement sur <a href="https://www.opplexiptv.com">OpplexIPTV.com</a> - l’original pour IPTV m3u, Xtream IPTV, IPTV gratuit sans code, etc. Support : :phone.',
 
     // Captions
     'faq.samsung' => 'Sur TV Samsung avec IPTV smart player',
@@ -746,7 +746,7 @@ return [
     ],
     'contact' => [
       'q1' => "Comment contacter l’assistance Opplex IPTV ?",
-      'a1' => "Vous pouvez nous joindre au moyen du formulaire de cette page, par e-mail ou instantanément sur WhatsApp au +1 (306) 400-5594.",
+      'a1' => "Vous pouvez nous joindre au moyen du formulaire de cette page, par e-mail ou instantanément sur WhatsApp au :phone.",
       'q2' => 'Dans quel délai recevrai-je une réponse ?',
       'a2' => "Nous nous efforçons de répondre en quelques minutes pendant les heures d’ouverture et dès que possible à tout autre moment.",
       'q3' => "Je n’ai pas reçu mes identifiants : que dois-je faire ?",

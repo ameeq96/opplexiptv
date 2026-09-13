@@ -15,7 +15,7 @@ class UnifiedProductService
 
     public function frontendProducts(): Collection
     {
-        $key = 'ui:' . app()->getLocale() . ':frontend-products:v3';
+        $key = 'ui:' . app()->getLocale() . ':frontend-products:v3:' . config('services.whatsapp.number');
 
         try {
             return Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts());
@@ -26,7 +26,7 @@ class UnifiedProductService
 
     private function buildFrontendProducts(): Collection
     {
-        $waBase = 'https://wa.me/13064005594?text=';
+        $waBase = 'https://wa.me/' . config('services.whatsapp.number') . '?text=';
         $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
 
         $affiliate = $this->hasTable('shop_products')

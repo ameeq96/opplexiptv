@@ -40,6 +40,7 @@ class UiData
     public function build(): array
     {
         $routeName = optional($this->request->route())->getName() ?: 'home';
+        $whatsappNumber = (string) config('services.whatsapp.number');
         $isMobile       = $this->agent->isMobile();
         $isRtl          = $this->locale->isRtl();
         $containerClass = $isMobile ? 'centered' : 'sec-title centered';
@@ -117,7 +118,7 @@ class UiData
         $serviceCards  = $routeName === 'home' ? $this->remember('home-services', now()->addMinutes(30), fn () => $this->serviceCards(), []) : [];
         $menuItems     = $this->remember('menu-items:v2', now()->addMinutes(30), fn () => $this->menuItems(), []);
         $pricingSection = $needsPricing ? $this->remember('pricing-section', now()->addMinutes(30), fn () => $this->pricingSection(), null) : null;
-        $footer = $this->remember('footer', now()->addMinutes(30), fn () => $this->footerData(), []);
+        $footer = $this->remember("footer:{$whatsappNumber}", now()->addMinutes(30), fn () => $this->footerData(), []);
         $packageGroups = $needsPricing
             ? $this->remember(
                 'packages:v2',
@@ -133,7 +134,7 @@ class UiData
 
         $pageFaqRoutes = ['home', 'packages', 'pricing', 'about', 'reseller-panel', 'iptv-subscription-service', 'iptv-applications', 'contact', 'movies', 'shop'];
         $pageFaqs      = $this->routeIs($routeName, $pageFaqRoutes)
-            ? $this->remember("page-faqs:{$routeName}", now()->addMinutes(30), fn () => $this->pageFaqs($routeName), [])
+            ? $this->remember("page-faqs:{$routeName}:{$whatsappNumber}", now()->addMinutes(30), fn () => $this->pageFaqs($routeName), [])
             : [];
 
         $platforms = $routeName === 'iptv-applications' ? $this->enrichPlatforms($this->platforms()) : [];
@@ -673,7 +674,7 @@ class UiData
             $settingsArr = [
                 'brand_text' => $t?->brand_text ?: $settings->brand_text,
                 'crypto_note' => $t?->crypto_note ?: $settings->crypto_note,
-                'phone' => $settings->phone,
+                'phone' => (string) config('services.whatsapp.display'),
                 'email' => $settings->email,
                 'address' => $t?->address ?: $settings->address,
                 'rights_text' => $t?->rights_text ?: $settings->rights_text,
@@ -870,7 +871,7 @@ class UiData
             ['question' => __('messages.faq.q12'), 'answer' => __('messages.faq.a12'), 'images' => []],
             ['question' => __('messages.faq.q13'), 'answer' => __('messages.faq.a13'), 'images' => []],
             ['question' => __('messages.faq.q14'), 'answer' => __('messages.faq.a14'), 'images' => []],
-            ['question' => __('messages.faq.q15'), 'answer' => __('messages.faq.a15'), 'images' => []],
+            ['question' => __('messages.faq.q15'), 'answer' => __('messages.faq.a15', ['phone' => config('services.whatsapp.display')]), 'images' => []],
         ];
     }
 
@@ -912,7 +913,7 @@ class UiData
 
             $items[] = [
                 'question' => $question,
-                'answer'   => __("messages.page_faq.{$key}.a{$i}"),
+                'answer'   => __("messages.page_faq.{$key}.a{$i}", ['phone' => config('services.whatsapp.display')]),
                 'images'   => [],
             ];
         }
@@ -973,7 +974,7 @@ class UiData
                 $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
 
                 $app['href'] = $needsSupportLink
-                    ? 'https://wa.me/13064005594?text=' . rawurlencode(
+                    ? 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
                         __('document_support.whatsapp_messages.support') . ' ' . $app['version']
                     )
                     : route('redirect.ad', ['target' => $downloadUrl]);

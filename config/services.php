@@ -1,5 +1,12 @@
 <?php
 
+$whatsappNumber = preg_replace('/\D+/', '', (string) env('WHATSAPP_NUMBER', '')) ?? '';
+$whatsappDisplay = $whatsappNumber === '' ? '' : '+' . $whatsappNumber;
+
+if (preg_match('/^1(\d{3})(\d{3})(\d{4})$/', $whatsappNumber, $parts) === 1) {
+    $whatsappDisplay = sprintf('+1 (%s) %s-%s', $parts[1], $parts[2], $parts[3]);
+}
+
 return [
 
     /*
@@ -41,7 +48,8 @@ return [
         'default_currency' => env('DEFAULT_CURRENCY', 'USD'),
     ],
     'whatsapp' => [
-        'number' => env('WHATSAPP_NUMBER'),
+        'number' => $whatsappNumber,
+        'display' => $whatsappDisplay,
         'cloud_token' => env('WHATSAPP_CLOUD_TOKEN'),
         'phone_number_id' => env('WHATSAPP_PHONE_NUMBER_ID'),
         'graph_version' => env('WHATSAPP_GRAPH_VERSION'),
@@ -84,7 +92,7 @@ return [
         'api_key'  => env('TMDB_API_KEY', ''),
     ],
     'discount' => [
-        'phone' => env('DISCOUNT_WA_PHONE', '13064005594'),
+        'phone' => $whatsappNumber,
     ],
     'amazon_affiliate_tag' => env('AMAZON_AFFILIATE_TAG', 'opplexstore-20'),
 

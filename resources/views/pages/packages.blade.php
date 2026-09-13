@@ -14,7 +14,7 @@
     @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.packages');
-            $trialUrl = 'https://wa.me/13064005594?text=' . urlencode(__('messages.whatsapp_trial'));
+            $trialUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . urlencode(__('messages.whatsapp_trial'));
             $reviewImages = [
                 'images/img-test-2.webp',
                 'images/img-test-3.webp',

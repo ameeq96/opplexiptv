@@ -16,7 +16,7 @@ class FooterSeeder extends Seeder
             [
                 'brand_text' => 'Opplex IPTV',
                 'crypto_note' => 'We accept crypto payments via Cryptomus.',
-                'phone' => '+1 (306) 400-5594',
+                'phone' => (string) config('services.whatsapp.display'),
                 'email' => 'info@opplexiptv.com',
                 'address' => 'Saskatoon SK, Canada',
                 'rights_text' => 'All Rights Reserved.',

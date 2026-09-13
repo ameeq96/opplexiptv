@@ -33,9 +33,9 @@
                             {{ $documentPage['hero']['plans'] }}
                         </a>
                         <a class="document-product-button document-product-button--secondary"
-                           href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_trial')) }}"
+                           href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                            target="_blank" rel="noopener" data-trial
-                           data-wa-href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_trial')) }}">
+                           data-wa-href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_trial')) }}">
                             {{ $documentPage['hero']['trial'] }}
                         </a>
                     </div>

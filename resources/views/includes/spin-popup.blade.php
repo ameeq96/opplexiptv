@@ -36,7 +36,7 @@
                     <strong id="dw-result-value">10%</strong> {{ __('messages.off') }}
                 </div>
             </div>
-            <button id="dw-copy" class="dw-btn-outline" data-wa-phone="{{ config('services.discount.phone') }}"
+            <button id="dw-copy" class="dw-btn-outline" data-wa-phone="{{ config('services.whatsapp.number') }}"
                 data-wa-template="{{ __('messages.whatsapp_message', ['discount' => ':discount']) }}">{{ __('messages.whatsapp_btn') }}</button>
         </div>
     </div>

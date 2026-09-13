@@ -33,12 +33,12 @@
                         <span class="trial-cta__action-label">{{ $isDocumentEnglishTrial ? $documentTrial['action_label'] : __('messages.home_trial_action_label') }}</span>
                         @if ($isDocumentEnglishTrial)
                             <div class="trial-cta__buttons">
-                                <a href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_trial')) }}"
+                                <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                     target="_blank"
                                     rel="noopener"
                                     class="trial-cta__button"
                                     data-trial
-                                    data-wa-href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_trial')) }}"
+                                    data-wa-href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                     aria-label="{{ __('document_ui.home.trial_action_aria') }}">
                                     <span>{{ $documentTrial['primary_cta'] }}</span>
                                     <i class="lnr lnr-arrow-right {{ $isRtl ? 'rtl-rotate' : '' }}" aria-hidden="true"></i>
@@ -49,12 +49,12 @@
                                 </a>
                             </div>
                         @else
-                            <a href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_trial')) }}"
+                            <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                 target="_blank"
                                 rel="noopener"
                                 class="trial-cta__button"
                                 data-trial
-                                data-wa-href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_trial')) }}"
+                                data-wa-href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_trial')) }}"
                                     aria-label="{{ __('document_ui.home.trial_action_aria') }}">
                                 <span>{{ __('messages.trial_button') }}</span>
                                 <i class="lnr lnr-arrow-right {{ $isRtl ? 'rtl-rotate' : '' }}" aria-hidden="true"></i>

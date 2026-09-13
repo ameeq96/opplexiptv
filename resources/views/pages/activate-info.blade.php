@@ -52,7 +52,7 @@
 
     <script>
         (function() {
-            const phone = '13064005594';
+            const phone = @json(config('services.whatsapp.number'));
             const input = document.getElementById('orderNumber');
             const btn = document.getElementById('waBtn');
             const err = document.getElementById('errorText');

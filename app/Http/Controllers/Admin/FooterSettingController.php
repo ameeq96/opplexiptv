@@ -15,7 +15,7 @@ class FooterSettingController extends Controller
             $setting = FooterSetting::create([
                 'brand_text' => 'Opplex IPTV',
                 'crypto_note' => 'We accept crypto payments via Cryptomus.',
-                'phone' => '+1 (306) 400-5594',
+                'phone' => (string) config('services.whatsapp.display'),
                 'email' => 'info@opplexiptv.com',
                 'address' => 'Saskatoon SK, Canada',
                 'rights_text' => 'All Rights Reserved.',
@@ -50,6 +50,7 @@ class FooterSettingController extends Controller
         }
 
         $data = $request->validate($rules);
+        $data['phone'] = (string) config('services.whatsapp.display');
 
         $setting = FooterSetting::query()->latest()->first();
         if (!$setting) {

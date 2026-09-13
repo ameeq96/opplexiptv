@@ -160,7 +160,7 @@
                             {{ $documentPage['cta']['plans'] }}
                         </a>
                         <a class="document-product-button document-product-button--secondary"
-                           href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_pricing')) }}"
+                           href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_pricing')) }}"
                            target="_blank" rel="noopener">
                             {{ $documentPage['cta']['whatsapp'] }}
                         </a>

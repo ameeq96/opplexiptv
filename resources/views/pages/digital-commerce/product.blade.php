@@ -16,7 +16,7 @@
     $fullDescription = trim((string) ($product->full_description ?? ''));
 
     $waText = 'Hi, I want to buy ' . $product->title . ' ($' . number_format($priceNum, 2) . ').';
-    $waUrl = 'https://wa.me/13064005594?text=' . rawurlencode($waText);
+    $waUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode($waText);
 
     $chev = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
 @endphp

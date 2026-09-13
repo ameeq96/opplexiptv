@@ -2,7 +2,7 @@
 
 @php
     $isDocumentEnglish = true;
-    $documentContact = __('document_support.contact');
+    $documentContact = __('document_support.contact', ['phone' => config('services.whatsapp.display')]);
     $phoneCountries = [
         'PK' => ['dialCode' => '+92', 'minDigits' => 10, 'maxDigits' => 10],
         'CA / US' => ['dialCode' => '+1', 'minDigits' => 10, 'maxDigits' => 10],
@@ -81,7 +81,7 @@
                         @foreach ($documentContact['channels']['items'] as $channel)
                             @php
                                 $channelUrl = match ($channel['type']) {
-                                    'whatsapp' => 'https://wa.me/13064005594?text=' . urlencode(__('document_support.whatsapp_messages.support')),
+                                    'whatsapp' => 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . urlencode(__('document_support.whatsapp_messages.support')),
                                     'email' => 'mailto:info@opplexiptv.com',
                                     default => '#contact-form',
                                 };
@@ -130,9 +130,9 @@
                         <li class="ctx-method">
                             <span class="ctx-method__icon icon flaticon-call" aria-hidden="true"></span>
                             <span class="ctx-method__val">
-                                <a href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_contact')) }}"
+                                <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_contact')) }}"
                                     target="_blank" rel="noopener">
-                                    <bdi>{{ __('messages.contact.details.phone') }}</bdi>
+                                    <bdi>{{ __('messages.contact.details.phone', ['phone' => config('services.whatsapp.display')]) }}</bdi>
                                 </a>
                             </span>
                         </li>
@@ -333,7 +333,7 @@
                     </div>
                     <div class="document-support__actions">
                         <a class="document-support__button document-support__button--light"
-                            href="https://wa.me/13064005594?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
+                            href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
                             target="_blank" rel="noopener">
                             {{ $documentContact['cta']['whatsapp'] }}
                         </a>

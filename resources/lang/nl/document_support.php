@@ -40,7 +40,7 @@ return [
                     ],
                     [
                         'question' => 'Waar kan ik Opplex IPTV kopen?',
-                        'answer' => 'Rechtstreeks op opplexiptv.com; dat is de enige officiële bron. Je kunt abonnementen bekijken op de pagina Packages of ons via WhatsApp op +1 (306) 400-5594 een bericht sturen voor hulp bij het kiezen.',
+                        'answer' => 'Rechtstreeks op opplexiptv.com; dat is de enige officiële bron. Je kunt abonnementen bekijken op de pagina Packages of ons via WhatsApp op :phone een bericht sturen voor hulp bij het kiezen.',
                     ],
                 ],
             ],
@@ -126,7 +126,7 @@ return [
         ],
         'cta' => [
             'heading' => 'Heb je nog een vraag?',
-            'text' => 'Staat iets hierboven niet vermeld, dan helpen we je graag. Stuur ons via WhatsApp een bericht op +1 (306) 400-5594 of mail naar info@opplexiptv.com. Tijdens kantooruren reageren we meestal binnen enkele minuten.',
+            'text' => 'Staat iets hierboven niet vermeld, dan helpen we je graag. Stuur ons via WhatsApp een bericht op :phone of mail naar info@opplexiptv.com. Tijdens kantooruren reageren we meestal binnen enkele minuten.',
             'trial' => 'Start gratis proefperiode',
             'plans' => 'Bekijk IPTV-abonnementen',
             'whatsapp' => 'Chat via WhatsApp',
@@ -227,7 +227,7 @@ return [
                 ],
                 [
                     'question' => 'Waar zijn jullie gevestigd?',
-                    'answer' => 'Saskatoon, Saskatchewan, Canada. Je kunt ons bereiken via info@opplexiptv.com of WhatsApp op +1 (306) 400-5594.',
+                    'answer' => 'Saskatoon, Saskatchewan, Canada. Je kunt ons bereiken via info@opplexiptv.com of WhatsApp op :phone.',
                 ],
                 [
                     'question' => 'Wat is het verschil tussen Opplex en Filex?',
@@ -235,7 +235,7 @@ return [
                 ],
                 [
                     'question' => 'Wat gebeurt er als ik een probleem heb?',
-                    'answer' => 'Stuur ons een bericht via WhatsApp op +1 (306) 400-5594. We zijn zeven dagen per week beschikbaar en proberen binnen enkele minuten te reageren. De meeste problemen, zoals inlogproblemen, buffering en apparaatinstallatie, worden dezelfde dag opgelost.',
+                    'answer' => 'Stuur ons een bericht via WhatsApp op :phone. We zijn zeven dagen per week beschikbaar en proberen binnen enkele minuten te reageren. De meeste problemen, zoals inlogproblemen, buffering en apparaatinstallatie, worden dezelfde dag opgelost.',
                 ],
                 [
                     'question' => 'Kan ik Opplex buiten de USA en Europa gebruiken?',
@@ -257,7 +257,7 @@ return [
             'items' => [
                 [
                     'title' => 'WhatsApp (snelste):',
-                    'text' => 'Stuur ons een bericht op +1 (306) 400-5594. We houden WhatsApp de hele dag in de gaten en reageren binnen enkele minuten. Het meest geschikt voor aanvragen van proefperiodes, hulp bij installatie, inlogproblemen, factureringsvragen en resellerinformatie.',
+                    'text' => 'Stuur ons een bericht op :phone. We houden WhatsApp de hele dag in de gaten en reageren binnen enkele minuten. Het meest geschikt voor aanvragen van proefperiodes, hulp bij installatie, inlogproblemen, factureringsvragen en resellerinformatie.',
                     'cta' => 'Stuur een bericht via WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
@@ -301,7 +301,7 @@ return [
         'faq' => [
             'heading' => 'Contact en ondersteuning | Veelgestelde vragen',
             'items' => [
-                ['question' => 'Wat is de snelste manier om hulp te krijgen?', 'answer' => 'WhatsApp op +1 (306) 400-5594. Dit wordt de hele dag in de gaten gehouden en de meeste vragen worden binnen enkele minuten beantwoord.'],
+                ['question' => 'Wat is de snelste manier om hulp te krijgen?', 'answer' => 'WhatsApp op :phone. Dit wordt de hele dag in de gaten gehouden en de meeste vragen worden binnen enkele minuten beantwoord.'],
                 ['question' => 'Ik heb net betaald, maar mijn inloggegevens zijn niet aangekomen. Wat moet ik doen?', 'answer' => 'Controleer eerst je spam- of ongewenste-e-mailmap. Zijn de gegevens na bevestiging van de betaling nog niet aangekomen, stuur ons dan via WhatsApp de bestelreferentie en het gebruikte e-mailadres. Het team verifieert de betaling en helpt je tijdens actieve ondersteuningsuren.'],
                 ['question' => 'Kunnen jullie me helpen Opplex op mijn specifieke apparaat in te stellen?', 'answer' => 'Ja. Vertel ons je apparaat: Firestick, Smart TV-model, MAG, Android-box, iPhone enzovoort, en we sturen je de exacte stappen. Met de juiste instructies duurt de meeste installatie minder dan vijf minuten.'],
                 ['question' => 'Welke informatie moet ik vermelden wanneer ik contact opneem?', 'answer' => 'Het e-mailadres van je bestelling, het apparaat dat je gebruikt en een beschrijving van het probleem. Screenshots helpen als er op het scherm iets misgaat. Hoe meer informatie je vooraf geeft, hoe sneller we kunnen helpen.'],
