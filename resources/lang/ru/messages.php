@@ -87,7 +87,7 @@ return [
   'trial_title' => 'Попробуйте наш бесплатный IPTV тест с 4K и 12k каналами!',
   'trial_button' => 'Начать бесплатный IPTV тест',
 
-  'header_whatsapp' => 'WhatsApp: +1 (639) 390-3194',
+  'header_whatsapp' => 'WhatsApp: +1 (306) 400-5594',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'Главная',
@@ -102,7 +102,7 @@ return [
   'nav_iptv_subscription_service' => 'Сервис IPTV-подписки',
   'nav_faqs' => "FAQ",
   'nav_contact' => 'Контакты',
-  'footer_phone' => '+1 (639) 390-3194',
+  'footer_phone' => '+1 (306) 400-5594',
   'footer_email_1' => 'info@opplexiptv.com',
   // 'footer_email_2' => 'support@opplexiptv.com',
   'footer_address' => 'Саскатун, SK, Канада',
@@ -202,7 +202,7 @@ return [
 
   'contact.details.title' => 'Контактные данные',
   'contact.details.location' => 'Саскатун, SK, Канада',
-  'contact.details.phone' => '+1 (639) 390-3194',
+  'contact.details.phone' => '+1 (306) 400-5594',
   'contact.details.email1' => 'info@opplexiptv.com',
   // 'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'Работаем 24/7',
@@ -268,7 +268,7 @@ return [
   'faq.a14' => 'Da, sledyuyte etim shagom v IPTV Smarters Pro:<br><br>1. Idi na glavnyu stranicu.<br>2. Nazhmi 3 tochki.<br>3. Idi v nastroiki.<br>4. Idi v roditelskiy kontrol.<br>5. Ustanovi parol.<br>6. Sohrani.<br>7. Vibiri kategoriya/kanali dlya blokirovki.<br><br>Status: Tvoi kanal zablockirovan.<br><br>Dlya prosmotra zablockirovannih kanalov:<br>1. Idi v nastroiki.<br>2. Vvedi parol.<br>3. Razblokirui kanali.<br>4. Sohrani.',
 
   'faq.q15' => 'Gde kupit Opplex IPTV?',
-  'faq.a15' => 'Vi mozhete kupit neposredstvenno na OpplexIPTV.com - ofitsialniy istochnik Opplex IPTV podpisok. Dlya bistroy pokupki ili voprosov, svyazhites +1 (639) 390-3194.',
+  'faq.a15' => 'Vi mozhete kupit neposredstvenno na OpplexIPTV.com - ofitsialniy istochnik Opplex IPTV podpisok. Dlya bistroy pokupki ili voprosov, svyazhites +1 (306) 400-5594.',
   // Captions remain unchanged
   'faq.samsung' => 'Na Samsung TV',
   'faq.mobile' => 'Na Mobilniy Telefon',
@@ -755,7 +755,7 @@ return [
     ],
     'contact' => [
       'q1' => 'Как связаться с поддержкой Opplex IPTV?',
-      'a1' => 'Связаться с нами можно через форму на этой странице, по электронной почте или мгновенно в WhatsApp по номеру +1 (639) 390-3194.',
+      'a1' => 'Связаться с нами можно через форму на этой странице, по электронной почте или мгновенно в WhatsApp по номеру +1 (306) 400-5594.',
       'q2' => 'Как быстро я получу ответ?',
       'a2' => 'В рабочее время мы стараемся отвечать в течение нескольких минут, а в остальное время — как можно скорее.',
       'q3' => 'Я не получил данные для входа — что делать?',

@@ -42,7 +42,7 @@
                                     <div class="fw-bold text-dark">
                                         {{ $item['product']->currency ?: 'USD' }} {{ number_format((float) $item['line_total'], 2) }}
                                     </div>
-                                    <a href="https://wa.me/16393903194?text={{ rawurlencode('Hi, I want to buy ' . $item['product']->title . ' (' . ($item['product']->currency ?: '$') . number_format((float) $item['product']->price, 2) . ').') }}"
+                                    <a href="https://wa.me/13064005594?text={{ rawurlencode('Hi, I want to buy ' . $item['product']->title . ' (' . ($item['product']->currency ?: '$') . number_format((float) $item['product']->price, 2) . ').') }}"
                                        target="_blank"
                                        rel="noopener noreferrer"
                                        class="btn btn-sm btn-primary">Buy Now</a>
@@ -67,7 +67,7 @@
                                 <strong>${{ number_format((float) $total, 2) }}</strong>
                             </div>
 
-                            <a href="https://wa.me/16393903194?text={{ rawurlencode('Hi, I want to place my digital products order.') }}"
+                            <a href="https://wa.me/13064005594?text={{ rawurlencode('Hi, I want to place my digital products order.') }}"
                                target="_blank"
                                rel="noopener noreferrer"
                                data-whatsapp-package="Digital cart"

@@ -85,7 +85,7 @@ return [
   'trial_title' => 'Try Our IPTV Free Trial with 4K Streaming & 12k Channels!',
   'trial_button' => 'Start Free IPTV Trial Now',
 
-  'header_whatsapp' => 'WhatsApp: +1 (639) 390-3194',
+  'header_whatsapp' => 'WhatsApp: +1 (306) 400-5594',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'Home',
@@ -100,7 +100,7 @@ return [
   'nav_iptv_subscription_service' => 'IPTV Subscription Service',
   'nav_faqs' => "FAQ's",
   'nav_contact' => 'Contact Us',
-  'footer_phone' => '+1 (639) 390-3194',
+  'footer_phone' => '+1 (306) 400-5594',
   'footer_email_1' => 'info@opplexiptv.com',
   // 'footer_email_2' => 'support@opplexiptv.com',
   'footer_address' => 'SASKATOON SK, Canada',
@@ -200,7 +200,7 @@ return [
 
   'contact.details.title' => 'Contact Details',
   'contact.details.location' => 'SASKATOON SK, Canada',
-  'contact.details.phone' => '+1 (639) 390-3194',
+  'contact.details.phone' => '+1 (306) 400-5594',
   'contact.details.email1' => 'info@opplexiptv.com',
   // 'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'Working hours 24/7',
@@ -266,7 +266,7 @@ return [
   'faq.a14' => 'Yes, follow these steps on IPTV Smarters Pro:<br><br>1. Go to the main page.<br>2. Press the 3 dots.<br>3. Go to settings.<br>4. Go to parental control.<br>5. Set your password.<br>6. Save it.<br>7. Select category/channels to lock.<br><br>Status: Your channel was locked.<br><br>To see locked channels:<br>1. Go to settings.<br>2. Enter password.<br>3. Unlock your channels.<br>4. Save it.',
 
   'faq.q15' => 'Where can I buy Opplex IPTV?',
-  'faq.a15' => 'You can buy it directly from OpplexIPTV.com - the official source for Opplex IPTV subscriptions. For quick purchase or queries, contact +1 (639) 390-3194.',
+  'faq.a15' => 'You can buy it directly from OpplexIPTV.com - the official source for Opplex IPTV subscriptions. For quick purchase or queries, contact +1 (306) 400-5594.',
 
   // Captions remain unchanged
   'faq.samsung' => 'On Samsung TV',
@@ -993,7 +993,7 @@ return [
     // Contact
     'contact' => [
       'q1' => 'How can I contact Opplex IPTV support?',
-      'a1' => 'You can reach us using the form on this page, by email, or instantly on WhatsApp at +1 (639) 390-3194.',
+      'a1' => 'You can reach us using the form on this page, by email, or instantly on WhatsApp at +1 (306) 400-5594.',
       'q2' => 'How quickly will I get a reply?',
       'a2' => 'We aim to respond within minutes during working hours and as soon as possible at all other times.',
       'q3' => 'I have not received my login details — what do I do?',

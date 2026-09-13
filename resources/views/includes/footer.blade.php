@@ -272,7 +272,7 @@
     ];
 
     // Translations with fallbacks
-    $tPhone   = __('messages.footer_phone');    if ($tPhone   === 'messages.footer_phone')   $tPhone = '+1 (639) 390-3194';
+    $tPhone   = __('messages.footer_phone');    if ($tPhone   === 'messages.footer_phone')   $tPhone = '+1 (306) 400-5594';
     $tEmail   = __('messages.footer_email_1');  if ($tEmail   === 'messages.footer_email_1') $tEmail = 'info@opplexiptv.com';
     $tAddress = __('messages.footer_address');  if ($tAddress === 'messages.footer_address') $tAddress = 'Saskatoon SK, Canada';
     $tRights  = __('messages.footer_rights');   if ($tRights  === 'messages.footer_rights')  $tRights = 'All Rights Reserved.';
@@ -440,7 +440,7 @@
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.09 5.18 2 2 0 0 1 5.08 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.71a16 16 0 0 0 4.29 4.29l1.25-1.25a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/>
                             </svg>
                         </span>
-                        <a href="https://wa.me/16393903194?text={{ urlencode($waText) }}" target="_blank" rel="noopener" class="fx-link"><bdi>{{ $tPhone }}</bdi></a>
+                        <a href="https://wa.me/13064005594?text={{ urlencode($waText) }}" target="_blank" rel="noopener" class="fx-link"><bdi>{{ $tPhone }}</bdi></a>
                     </li>
                     <li class="fx-list__item">
                         <span class="fx-list__icon" aria-hidden="true">

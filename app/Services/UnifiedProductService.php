@@ -26,7 +26,7 @@ class UnifiedProductService
 
     private function buildFrontendProducts(): Collection
     {
-        $waBase = 'https://wa.me/16393903194?text=';
+        $waBase = 'https://wa.me/13064005594?text=';
         $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
 
         $affiliate = $this->hasTable('shop_products')

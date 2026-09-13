@@ -52,7 +52,7 @@
 
     <script>
         (function() {
-            const phone = '16393903194';
+            const phone = '13064005594';
             const input = document.getElementById('orderNumber');
             const btn = document.getElementById('waBtn');
             const err = document.getElementById('errorText');

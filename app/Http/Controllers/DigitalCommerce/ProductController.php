@@ -65,7 +65,7 @@ class ProductController extends Controller
                     'url' => url('/'),
                     'description' => 'Opplex IPTV provides IPTV subscription services and digital products with online delivery.',
                     'logo' => asset('images/opplexiptvlogo.webp'),
-                    'telephone' => '+1-639-390-3194',
+                    'telephone' => '+1 (306) 400-5594',
                     'email' => 'info@opplexiptv.com',
                     'areaServed' => 'Multiple supported regions',
                     'hasMerchantReturnPolicy' => [

@@ -973,7 +973,7 @@ class UiData
                 $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
 
                 $app['href'] = $needsSupportLink
-                    ? 'https://wa.me/16393903194?text=' . rawurlencode(
+                    ? 'https://wa.me/13064005594?text=' . rawurlencode(
                         __('document_support.whatsapp_messages.support') . ' ' . $app['version']
                     )
                     : route('redirect.ad', ['target' => $downloadUrl]);

@@ -40,7 +40,7 @@ return [
                     ],
                     [
                         'question' => 'Où puis-je acheter Opplex IPTV ?',
-                        'answer' => 'Directement sur opplexiptv.com, l’unique source officielle. Vous pouvez consulter les formules sur la page Forfaits ou nous écrire sur WhatsApp au +1 (639) 390-3194 afin d’obtenir de l’aide pour choisir la bonne.',
+                        'answer' => 'Directement sur opplexiptv.com, l’unique source officielle. Vous pouvez consulter les formules sur la page Forfaits ou nous écrire sur WhatsApp au +1 (306) 400-5594 afin d’obtenir de l’aide pour choisir la bonne.',
                     ],
                 ],
             ],
@@ -126,7 +126,7 @@ return [
         ],
         'cta' => [
             'heading' => 'Vous avez encore une question ?',
-            'text' => 'Si un sujet n’est pas abordé ci-dessus, nous serons ravis de vous aider. Écrivez-nous sur WhatsApp au +1 (639) 390-3194 ou par e-mail à info@opplexiptv.com. Nous répondons généralement en quelques minutes pendant les heures d’ouverture.',
+            'text' => 'Si un sujet n’est pas abordé ci-dessus, nous serons ravis de vous aider. Écrivez-nous sur WhatsApp au +1 (306) 400-5594 ou par e-mail à info@opplexiptv.com. Nous répondons généralement en quelques minutes pendant les heures d’ouverture.',
             'trial' => 'Démarrer l’essai gratuit',
             'plans' => 'Voir les formules IPTV',
             'whatsapp' => 'Discuter sur WhatsApp',
@@ -227,7 +227,7 @@ return [
                 ],
                 [
                     'question' => 'Où êtes-vous basés ?',
-                    'answer' => 'À Saskatoon, Saskatchewan, Canada. Vous pouvez nous joindre à info@opplexiptv.com ou sur WhatsApp au +1 (639) 390-3194.',
+                    'answer' => 'À Saskatoon, Saskatchewan, Canada. Vous pouvez nous joindre à info@opplexiptv.com ou sur WhatsApp au +1 (306) 400-5594.',
                 ],
                 [
                     'question' => 'Quelle est la différence entre Opplex et Filex ?',
@@ -235,7 +235,7 @@ return [
                 ],
                 [
                     'question' => 'Que se passe-t-il si je rencontre un problème ?',
-                    'answer' => 'Écrivez-nous sur WhatsApp au +1 (639) 390-3194. Nous sommes disponibles sept jours sur sept et cherchons à répondre en quelques minutes. La plupart des problèmes, comme les difficultés de connexion, la mise en mémoire tampon et la configuration des appareils, sont résolus le jour même.',
+                    'answer' => 'Écrivez-nous sur WhatsApp au +1 (306) 400-5594. Nous sommes disponibles sept jours sur sept et cherchons à répondre en quelques minutes. La plupart des problèmes, comme les difficultés de connexion, la mise en mémoire tampon et la configuration des appareils, sont résolus le jour même.',
                 ],
                 [
                     'question' => 'Puis-je utiliser Opplex en dehors des États-Unis et de l’Europe ?',
@@ -257,7 +257,7 @@ return [
             'items' => [
                 [
                     'title' => 'WhatsApp (le plus rapide) :',
-                    'text' => 'Écrivez-nous au +1 (639) 390-3194. Nous surveillons WhatsApp toute la journée et répondons en quelques minutes. Idéal pour les demandes d’essai, l’aide à la configuration, les problèmes de connexion, les questions de facturation et les demandes concernant la revente.',
+                    'text' => 'Écrivez-nous au +1 (306) 400-5594. Nous surveillons WhatsApp toute la journée et répondons en quelques minutes. Idéal pour les demandes d’essai, l’aide à la configuration, les problèmes de connexion, les questions de facturation et les demandes concernant la revente.',
                     'cta' => 'Écrire sur WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
@@ -301,7 +301,7 @@ return [
         'faq' => [
             'heading' => 'Contact et assistance | Questions fréquentes',
             'items' => [
-                ['question' => 'Quel est le moyen le plus rapide d’obtenir de l’aide ?', 'answer' => 'WhatsApp au +1 (639) 390-3194. Il est surveillé toute la journée et la plupart des questions reçoivent une réponse en quelques minutes.'],
+                ['question' => 'Quel est le moyen le plus rapide d’obtenir de l’aide ?', 'answer' => 'WhatsApp au +1 (306) 400-5594. Il est surveillé toute la journée et la plupart des questions reçoivent une réponse en quelques minutes.'],
                 ['question' => 'Je viens de payer, mais je n’ai pas reçu mes identifiants. Que faire ?', 'answer' => 'Vérifiez d’abord votre dossier de courriers indésirables. S’ils n’y figurent toujours pas, écrivez-nous sur WhatsApp avec la référence de commande ou l’adresse e-mail utilisée. Notre équipe vérifiera le paiement et vous aidera pendant les heures d’assistance actives.'],
                 ['question' => 'Pouvez-vous m’aider à configurer Opplex sur mon appareil précis ?', 'answer' => 'Oui. Indiquez-nous votre appareil : Firestick, modèle de Smart TV, MAG, Android box, iPhone, etc., et nous vous enverrons les étapes adaptées. Le temps de configuration varie selon l’appareil et l’application.'],
                 ['question' => 'Quelles informations dois-je fournir lorsque je vous contacte ?', 'answer' => 'L’adresse e-mail de votre commande, l’appareil utilisé et une description du problème. Les captures d’écran sont utiles si quelque chose ne va pas à l’écran. Plus vous donnez de détails dès le départ, plus vite nous pouvons vous aider.'],

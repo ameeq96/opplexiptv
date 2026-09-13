@@ -678,7 +678,7 @@
                                         data-whatsapp-intent="package" data-whatsapp-package="{{ $displayTitle }}"
                                         data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
                                         data-whatsapp-vendor="{{ $vendorKey }}"
-                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $displayTitle, 'price' => $buyPrice])) }}">
+                                        href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $displayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                             height="32" alt="WhatsApp" loading="lazy" decoding="async" />
                                     </a>
@@ -754,7 +754,7 @@
                                         data-whatsapp-intent="reseller" data-whatsapp-package="{{ $resellerDisplayTitle }}"
                                         data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
                                         data-whatsapp-vendor="{{ $vendorResKey }}"
-                                        href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $resellerDisplayTitle, 'price' => $buyPrice])) }}">
+                                        href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $resellerDisplayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}"
                                             width="32" height="32" alt="WhatsApp" loading="lazy" decoding="async" />
                                     </a>

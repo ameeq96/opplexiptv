@@ -24,7 +24,7 @@ use App\Models\Package;
 class SchemaService
 {
     public const NAME     = 'Opplex IPTV';
-    public const PHONE    = '+1-639-390-3194';
+    public const PHONE    = '+1 (306) 400-5594';
     public const EMAIL    = 'info@opplexiptv.com';
     public const LOGO     = 'images/opplexiptvlogo.webp';
 

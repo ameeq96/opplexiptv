@@ -81,7 +81,7 @@
                         @foreach ($documentContact['channels']['items'] as $channel)
                             @php
                                 $channelUrl = match ($channel['type']) {
-                                    'whatsapp' => 'https://wa.me/16393903194?text=' . urlencode(__('document_support.whatsapp_messages.support')),
+                                    'whatsapp' => 'https://wa.me/13064005594?text=' . urlencode(__('document_support.whatsapp_messages.support')),
                                     'email' => 'mailto:info@opplexiptv.com',
                                     default => '#contact-form',
                                 };
@@ -130,7 +130,7 @@
                         <li class="ctx-method">
                             <span class="ctx-method__icon icon flaticon-call" aria-hidden="true"></span>
                             <span class="ctx-method__val">
-                                <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
+                                <a href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_contact')) }}"
                                     target="_blank" rel="noopener">
                                     <bdi>{{ __('messages.contact.details.phone') }}</bdi>
                                 </a>
@@ -333,7 +333,7 @@
                     </div>
                     <div class="document-support__actions">
                         <a class="document-support__button document-support__button--light"
-                            href="https://wa.me/16393903194?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
+                            href="https://wa.me/13064005594?text={{ urlencode(__('document_support.whatsapp_messages.support')) }}"
                             target="_blank" rel="noopener">
                             {{ $documentContact['cta']['whatsapp'] }}
                         </a>

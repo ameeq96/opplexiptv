@@ -22,7 +22,7 @@
                             <h5 class="mb-1"><a href="{{ route('digital.product.show', $product->slug) }}">{{ $product->title }}</a></h5>
                             <div class="text-muted small mb-2">{{ $product->category?->name ?? 'General' }}</div>
                             <div class="fw-bold mb-2">${{ number_format((float) $product->price, 2) }}</div>
-                            <a href="https://wa.me/16393903194?text={{ rawurlencode('Hi, I want to buy ' . $product->title . ' ($' . number_format((float) $product->price, 2) . ').') }}"
+                            <a href="https://wa.me/13064005594?text={{ rawurlencode('Hi, I want to buy ' . $product->title . ' ($' . number_format((float) $product->price, 2) . ').') }}"
                                target="_blank"
                                rel="noopener noreferrer"
                                data-whatsapp-package="{{ $product->title }}"

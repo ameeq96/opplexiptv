@@ -85,7 +85,7 @@ return [
   'trial_title' => 'Probeer Onze IPTV Gratis Proefperiode met 4K Streaming & 12k Kanalen!',
   'trial_button' => 'Start Gratis IPTV Proefperiode Nu',
 
-  'header_whatsapp' => 'WhatsApp: +1 (639) 390-3194',
+  'header_whatsapp' => 'WhatsApp: +1 (306) 400-5594',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'Home',
@@ -100,7 +100,7 @@ return [
   'nav_iptv_subscription_service' => 'IPTV Abonnement Service',
   'nav_faqs' => 'Veelgestelde vragen',
   'nav_contact' => 'Contacteer Ons',
-  'footer_phone' => '+1 (639) 390-3194',
+  'footer_phone' => '+1 (306) 400-5594',
   'footer_email_1' => 'info@opplexiptv.com',
   'footer_address' => 'SASKATOON SK, Canada',
   'footer_rights' => 'Alle Rechten Voorbehouden.',
@@ -199,7 +199,7 @@ return [
 
   'contact.details.title' => 'Contactgegevens',
   'contact.details.location' => 'SASKATOON SK, Canada',
-  'contact.details.phone' => '+1 (639) 390-3194',
+  'contact.details.phone' => '+1 (306) 400-5594',
   'contact.details.email1' => 'info@opplexiptv.com',
   // 'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'Werkuren 24/7',
@@ -265,7 +265,7 @@ return [
   'faq.a14' => 'Ja, volg deze stappen in IPTV Smarters Pro:<br><br>1. Ga naar de hoofdpagina.<br>2. Druk op de 3 puntjes.<br>3. Ga naar instellingen.<br>4. Ga naar ouderlijk toezicht.<br>5. Stel uw wachtwoord in.<br>6. Sla het op.<br>7. Selecteer categorie/kanalen om te vergrendelen.<br><br>Status: Uw kanaal is vergrendeld.<br><br>Om vergrendelde kanalen te bekijken:<br>1. Ga naar instellingen.<br>2. Voer wachtwoord in.<br>3. Ontgrendel uw kanalen.<br>4. Sla het op.',
 
   'faq.q15' => 'Waar kan ik Opplex IPTV kopen?',
-  'faq.a15' => 'U kunt het rechtstreeks kopen via OpplexIPTV.com - de officiële bron voor Opplex IPTV-abonnementen. Voor snelle aankoop of vragen, neem contact op met +1 (639) 390-3194.',
+  'faq.a15' => 'U kunt het rechtstreeks kopen via OpplexIPTV.com - de officiële bron voor Opplex IPTV-abonnementen. Voor snelle aankoop of vragen, neem contact op met +1 (306) 400-5594.',
 
   // Captions remain unchanged
   'faq.samsung' => 'Op Samsung TV',
@@ -754,7 +754,7 @@ return [
     ],
     'contact' => [
       'q1' => 'Hoe neem ik contact op met de ondersteuning van Opplex IPTV?',
-      'a1' => 'Je kunt ons bereiken via het formulier op deze pagina, per e-mail of direct via WhatsApp op +1 (639) 390-3194.',
+      'a1' => 'Je kunt ons bereiken via het formulier op deze pagina, per e-mail of direct via WhatsApp op +1 (306) 400-5594.',
       'q2' => 'Hoe snel krijg ik antwoord?',
       'a2' => 'We streven ernaar tijdens werkuren binnen enkele minuten en op alle andere momenten zo snel mogelijk te antwoorden.',
       'q3' => 'Ik heb mijn inloggegevens niet ontvangen. Wat moet ik doen?',

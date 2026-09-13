@@ -7,7 +7,7 @@
         'fa-mobile',
         'fa-laptop',
     ];
-    $whatsAppUrl = 'https://wa.me/16393903194?text=' . urlencode($devices['whatsapp_message']);
+    $whatsAppUrl = 'https://wa.me/13064005594?text=' . urlencode($devices['whatsapp_message']);
 @endphp
 
 <section class="home-document-devices"

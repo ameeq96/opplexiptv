@@ -85,7 +85,7 @@ return [
   'trial_title' => '¡Prueba Nuestro IPTV Gratis con Streaming 4K y 12k Canales!',
   'trial_button' => 'Comenzar Prueba IPTV Gratis Ahora',
 
-  'header_whatsapp' => 'WhatsApp: +1 (639) 390-3194',
+  'header_whatsapp' => 'WhatsApp: +1 (306) 400-5594',
   'header_email' => 'Info@opplexiptv.com',
 
   'nav_home' => 'Inicio',
@@ -100,7 +100,7 @@ return [
   'nav_iptv_subscription_service' => 'Servicio de Suscripcion IPTV',
   'nav_faqs' => "Preguntas Frecuentes",
   'nav_contact' => 'Contáctanos',
-  'footer_phone' => '+1 (639) 390-3194',
+  'footer_phone' => '+1 (306) 400-5594',
   'footer_email_1' => 'info@opplexiptv.com',
   'footer_address' => 'SASKATOON SK, Canadá',
   'footer_rights' => 'Todos los Derechos Reservados.',
@@ -200,7 +200,7 @@ return [
 
   'contact.details.title' => 'Detalles de Contacto',
   'contact.details.location' => 'SASKATOON SK, Canadá',
-  'contact.details.phone' => '+1 (639) 390-3194',
+  'contact.details.phone' => '+1 (306) 400-5594',
   'contact.details.email1' => 'info@opplexiptv.com',
   // 'contact.details.email2' => 'support@opplexiptv.com',
   'contact.details.hours' => 'Horario de atención 24/7',
@@ -266,7 +266,7 @@ return [
   'faq.a14' => 'Sí, sigue estos pasos en IPTV Smarters Pro:<br><br>1. Ve a la página principal.<br>2. Presiona los 3 puntos.<br>3. Ve a configuración.<br>4. Ve a control parental.<br>5. Configura tu contraseña.<br>6. Guárdala.<br>7. Selecciona categorías/canales para bloquear.<br><br>Estado: Tu canal fue bloqueado.<br><br>Para ver canales bloqueados:<br>1. Ve a configuración.<br>2. Ingresa la contraseña.<br>3. Desbloquea tus canales.<br>4. Guárdalo.',
 
   'faq.q15' => '¿Dónde puedo comprar Opplex IPTV?',
-  'faq.a15' => 'Puedes comprarlo directamente en OpplexIPTV.com - la fuente oficial de suscripciones Opplex IPTV. Para compra rápida o consultas, contacta +1 (639) 390-3194.',
+  'faq.a15' => 'Puedes comprarlo directamente en OpplexIPTV.com - la fuente oficial de suscripciones Opplex IPTV. Para compra rápida o consultas, contacta +1 (306) 400-5594.',
 
   // Subtítulos
   'faq.samsung' => 'En TV Samsung',
@@ -755,7 +755,7 @@ return [
     ],
     'contact' => [
       'q1' => '¿Cómo puedo contactar con el soporte de Opplex IPTV?',
-      'a1' => 'Puedes contactarnos mediante el formulario de esta página, por correo electrónico o al instante por WhatsApp en el +1 (639) 390-3194.',
+      'a1' => 'Puedes contactarnos mediante el formulario de esta página, por correo electrónico o al instante por WhatsApp en el +1 (306) 400-5594.',
       'q2' => '¿Cuánto tardarán en responderme?',
       'a2' => 'Nuestro objetivo es responder en pocos minutos durante el horario de atención y lo antes posible en cualquier otro momento.',
       'q3' => 'No he recibido mis datos de acceso, ¿qué hago?',

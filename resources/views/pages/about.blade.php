@@ -51,7 +51,7 @@
                             {{ $documentAbout['hero']['plans_cta'] }}
                         </a>
                         <a class="document-support__button document-support__button--outline"
-                            href="https://wa.me/16393903194?text={{ urlencode(__('document_support.whatsapp_messages.trial')) }}"
+                            href="https://wa.me/13064005594?text={{ urlencode(__('document_support.whatsapp_messages.trial')) }}"
                             target="_blank" rel="noopener">
                             {{ $documentAbout['hero']['trial_cta'] }}
                         </a>

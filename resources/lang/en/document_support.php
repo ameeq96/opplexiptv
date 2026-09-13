@@ -40,7 +40,7 @@ return [
                     ],
                     [
                         'question' => 'Where can I buy Opplex IPTV?',
-                        'answer' => 'Directly from opplexiptv.com, that\'s the only official source. You can browse plans on the Packages page or message us on WhatsApp at +1 (639) 390-3194 to get help picking the right one.',
+                        'answer' => 'Directly from opplexiptv.com, that\'s the only official source. You can browse plans on the Packages page or message us on WhatsApp at +1 (306) 400-5594 to get help picking the right one.',
                     ],
                 ],
             ],
@@ -126,7 +126,7 @@ return [
         ],
         'cta' => [
             'heading' => 'Still Have a Question?',
-            'text' => 'If something isn\'t covered above, we\'re happy to help. Message us on WhatsApp at +1 (639) 390-3194 or email info@opplexiptv.com. We usually reply within a few minutes during business hours.',
+            'text' => 'If something isn\'t covered above, we\'re happy to help. Message us on WhatsApp at +1 (306) 400-5594 or email info@opplexiptv.com. We usually reply within a few minutes during business hours.',
             'trial' => 'Start Free Trial',
             'plans' => 'View IPTV Plans',
             'whatsapp' => 'Chat on WhatsApp',
@@ -227,7 +227,7 @@ return [
                 ],
                 [
                     'question' => 'Where are you based?',
-                    'answer' => 'Saskatoon, Saskatchewan, Canada. You can reach us at info@opplexiptv.com or on WhatsApp at +1 (639) 390-3194.',
+                    'answer' => 'Saskatoon, Saskatchewan, Canada. You can reach us at info@opplexiptv.com or on WhatsApp at +1 (306) 400-5594.',
                 ],
                 [
                     'question' => 'What\'s the difference between Opplex and Filex?',
@@ -235,7 +235,7 @@ return [
                 ],
                 [
                     'question' => 'What happens if I have a problem?',
-                    'answer' => 'Message us on WhatsApp at +1 (639) 390-3194. We\'re available seven days a week and aim to respond within minutes. Most issues, like login problems, buffering, and device setup, are resolved the same day.',
+                    'answer' => 'Message us on WhatsApp at +1 (306) 400-5594. We\'re available seven days a week and aim to respond within minutes. Most issues, like login problems, buffering, and device setup, are resolved the same day.',
                 ],
                 [
                     'question' => 'Can I use Opplex outside the USA and Europe?',
@@ -257,7 +257,7 @@ return [
             'items' => [
                 [
                     'title' => 'WhatsApp (fastest):',
-                    'text' => 'Message us at +1 (639) 390-3194. We monitor WhatsApp throughout the day and reply in minutes. Best for trial requests, setup help, login issues, billing questions, and reseller enquiries.',
+                    'text' => 'Message us at +1 (306) 400-5594. We monitor WhatsApp throughout the day and reply in minutes. Best for trial requests, setup help, login issues, billing questions, and reseller enquiries.',
                     'cta' => 'Message on WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
@@ -301,7 +301,7 @@ return [
         'faq' => [
             'heading' => 'Contact & Support | Common Questions',
             'items' => [
-                ['question' => 'What\'s the fastest way to get help?', 'answer' => 'WhatsApp at +1 (639) 390-3194. It\'s monitored throughout the day, and most questions are answered within minutes.'],
+                ['question' => 'What\'s the fastest way to get help?', 'answer' => 'WhatsApp at +1 (306) 400-5594. It\'s monitored throughout the day, and most questions are answered within minutes.'],
                 ['question' => 'I just paid, but my login details haven\'t arrived. What do I do?', 'answer' => 'Check your spam or junk folder first. If the details are not there, message us on WhatsApp with your order reference and email address. We\'ll verify the payment status and help during active support hours.'],
                 ['question' => 'Can you help me set up Opplex on my specific device?', 'answer' => 'Yes. Tell us your device: Firestick, Smart TV model, MAG, Android box, iPhone, etc and we\'ll send you the exact steps. Most setups take under five minutes with the right instructions.'],
                 ['question' => 'What information should I include when I contact you?', 'answer' => 'Your order email address, the device you\'re using, and a description of the issue. Screenshots help if something\'s going wrong on screen. The more detail upfront, the faster we can help.'],

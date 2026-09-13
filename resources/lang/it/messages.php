@@ -100,7 +100,7 @@ return [
 
     'trial_title' => 'Prova la nostra IPTV: Divertimento senza fine!',
     'trial_button' => 'Prova Gratuita',
-    'header_whatsapp' => 'WhatsApp: +1 (639) 390-3194',
+    'header_whatsapp' => 'WhatsApp: +1 (306) 400-5594',
     'header_email' => 'Info@opplexiptv.com',
 
     'nav_home' => 'Home',
@@ -116,7 +116,7 @@ return [
     'nav_faqs' => 'FAQ',
     'nav_contact' => 'Contattaci',
 
-    'footer_phone' => '+1 (639) 390-3194',
+    'footer_phone' => '+1 (306) 400-5594',
     'footer_email_1' => 'info@opplexiptv.com',
     // 'footer_email_2' => 'support@opplexiptv.com',
     'footer_address' => 'SASKATOON SK, Canada',
@@ -210,7 +210,7 @@ return [
 
     'contact.details.title' => 'Dettagli di contatto',
     'contact.details.location' => 'SASKATOON SK, Canada',
-    'contact.details.phone' => '+1 (639) 390-3194',
+    'contact.details.phone' => '+1 (306) 400-5594',
     'contact.details.email1' => 'info@opplexiptv.com',
     // 'contact.details.email2' => 'support@opplexiptv.com',
     'contact.details.hours' => 'Orari lavorativi 24/7 - supporto per IPTV Smarters, Smart IPTV e liste IPTV gratuite',
@@ -748,7 +748,7 @@ return [
     ],
     'contact' => [
       'q1' => 'Come posso contattare l’assistenza Opplex IPTV?',
-      'a1' => 'Puoi contattarci tramite il modulo in questa pagina, via e-mail o subito su WhatsApp al numero +1 (639) 390-3194.',
+      'a1' => 'Puoi contattarci tramite il modulo in questa pagina, via e-mail o subito su WhatsApp al numero +1 (306) 400-5594.',
       'q2' => 'Quanto tempo occorre per ricevere una risposta?',
       'a2' => 'Cerchiamo di rispondere entro pochi minuti durante l’orario di lavoro e il prima possibile in qualsiasi altro momento.',
       'q3' => 'Non ho ricevuto i dati di accesso: che cosa devo fare?',

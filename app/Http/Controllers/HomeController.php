@@ -232,7 +232,7 @@ class HomeController extends Controller
             $name = $product->title;
             $image = $product->image ? asset('images/digital-products/' . $product->image) : asset('images/placeholder.webp');
             $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
-            $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
+            $actionUrl = 'https://wa.me/13064005594?text=' . rawurlencode(
                 __('interface.product.digital_purchase_message', [
                     'name' => $name,
                     'price' => $price,
@@ -255,7 +255,7 @@ class HomeController extends Controller
             $name = $product->translation()?->name ?: $product->name;
             $image = $product->image ? asset('images/shop/' . $product->image) : asset('images/placeholder.webp');
             $price = null;
-            $actionUrl = 'https://wa.me/16393903194?text=' . rawurlencode(
+            $actionUrl = 'https://wa.me/13064005594?text=' . rawurlencode(
                 __('interface.product.affiliate_purchase_message', [
                     'name' => $name,
                     'url' => $shareLandingUrl,

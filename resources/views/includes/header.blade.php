@@ -7,7 +7,7 @@
                 <div class="pull-left">
                     <ul class="info d-flex justify-content-start align-items-center">
                         <li class="header-top__phone">
-                            <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_contact')) }}"
+                            <a href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_contact')) }}"
                                 target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-phone"></i> {{ __('messages.header_whatsapp') }}
                             </a>

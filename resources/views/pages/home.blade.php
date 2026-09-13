@@ -7,7 +7,7 @@
 
 @section('content')
     @php
-        $waTrial = 'https://wa.me/16393903194?text=' . urlencode(__('messages.whatsapp_trial'));
+        $waTrial = 'https://wa.me/13064005594?text=' . urlencode(__('messages.whatsapp_trial'));
         $currency = config('services.app.default_currency', 'USD');
         $useNativeHomeCarousel = true;
         $isDocumentEnglish = true;

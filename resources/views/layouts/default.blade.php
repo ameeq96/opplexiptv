@@ -24,7 +24,7 @@
 
     @include('includes.voice-assistant')
 
-    <a href="https://wa.me/16393903194?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
+    <a href="https://wa.me/13064005594?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
         class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp">
         <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" width="60" height="60"
             decoding="async" />

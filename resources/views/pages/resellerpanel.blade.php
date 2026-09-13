@@ -39,7 +39,7 @@
     @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.reseller');
-            $resellerWhatsAppUrl = 'https://wa.me/16393903194?text=' . urlencode($page['hero']['whatsapp_message']);
+            $resellerWhatsAppUrl = 'https://wa.me/13064005594?text=' . urlencode($page['hero']['whatsapp_message']);
         @endphp
 
         <x-page-title

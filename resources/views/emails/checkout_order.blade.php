@@ -29,7 +29,7 @@
         $whatsappNumber = preg_replace(
             '/\D+/',
             '',
-            (string) (config('services.whatsapp.number') ?: '16393903194')
+            (string) (config('services.whatsapp.number') ?: '13064005594')
         );
         $paymentMessage = __('messages.thankyou_page.whatsapp_payment_message', [
             'order' => $details['order_id'] ?? $notAvailable,

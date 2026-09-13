@@ -31,8 +31,8 @@
     @endphp
 
     <p>{{ __('messages.contact_whatsapp') }}
-        <a href="https://wa.me/16393903194?text={{ urlencode($waText) }}">
-            +1 639-390-3194
+        <a href="https://wa.me/13064005594?text={{ urlencode($waText) }}">
+            +1 (306) 400-5594
         </a>
     </p>
 
