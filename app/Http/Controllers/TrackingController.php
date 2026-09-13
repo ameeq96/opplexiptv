@@ -20,6 +20,13 @@ class TrackingController extends Controller
             'page' => ['nullable', 'url', 'max:512'],
             'fbp' => ['nullable', 'string', 'max:128'],
             'fbc' => ['nullable', 'string', 'max:256'],
+            'intent' => ['nullable', 'string', 'max:32'],
+            'placement' => ['nullable', 'string', 'max:128'],
+            'package' => ['nullable', 'string', 'max:191'],
+            'vendor' => ['nullable', 'string', 'max:32'],
+            'value' => ['nullable', 'numeric', 'min:0', 'max:99999999.99'],
+            'currency' => ['nullable', 'string', 'size:3', 'regex:/^[A-Za-z]{3}$/'],
+            'is_trial' => ['nullable', 'boolean'],
         ]);
 
         $eventId = $data['event_id'];
@@ -36,6 +43,9 @@ class TrackingController extends Controller
 
         $fbp = $normalize(($data['fbp'] ?? null) ?: $request->cookie('_fbp'), 128);
         $fbc = $normalize(($data['fbc'] ?? null) ?: $request->cookie('_fbc'), 256);
+        $intent = $normalize($data['intent'] ?? null, 32)
+            ?? (($data['is_trial'] ?? false) ? 'trial' : 'contact');
+        $isTrial = ($data['is_trial'] ?? false) && $intent === 'trial';
 
         $utm = [
             'utm_source' => $normalize($request->session()->get('fb.utm_source'), 128),
@@ -60,6 +70,12 @@ class TrackingController extends Controller
             [
                 'destination'  => $dest,
                 'page'         => $page,
+                'intent'       => $intent,
+                'placement'    => $normalize($data['placement'] ?? null, 128),
+                'package_name' => $normalize($data['package'] ?? null, 191),
+                'vendor'       => $normalize($data['vendor'] ?? null, 32),
+                'value'        => isset($data['value']) ? round((float) $data['value'], 2) : null,
+                'currency'     => isset($data['currency']) ? strtoupper($data['currency']) : null,
                 'fbp'          => $fbp,
                 'fbc'          => $fbc,
                 'ip'           => $request->ip(),
@@ -91,13 +107,14 @@ class TrackingController extends Controller
             ],
         ];
 
-        if ($click->wasRecentlyCreated) {
+        if ($click->wasRecentlyCreated && $isTrial) {
             SendFacebookCapiEvent::dispatchAfterResponse('StartTrial', $payload, $eventId);
         }
 
         return response()->json([
             'ok' => true,
             'duplicate' => !$click->wasRecentlyCreated,
+            'lead_code' => $click->lead_code,
         ], 202);
     }
 

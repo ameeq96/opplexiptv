@@ -162,6 +162,14 @@
                 width: 25px;
                 height: 25px;
             }
+            #pricing-section .pricing-share-link--share {
+                width: 44px;
+                flex: 0 0 44px;
+                padding: 8px;
+            }
+            #pricing-section .pricing-share-link[hidden] {
+                display: none;
+            }
             #pricing-section #creditInfo {
                 margin: 0 0 24px !important;
                 padding: 13px 18px;
@@ -383,6 +391,10 @@
                     flex-wrap: wrap;
                     justify-content: flex-start;
                     justify-self: stretch;
+                }
+                #pricing-section .pricing-share-link:not(.pricing-share-link--share) {
+                    flex: 1 1 200px;
+                    white-space: normal;
                 }
                 #pricing-section .pricing-control-actions .vendor-toggle,
                 #pricing-section .pricing-control-actions .vendor-toggle-reseller {
@@ -619,15 +631,27 @@
             </div>
 
             <div class="pricing-control-actions">
-                <a id="shareAllPackages" class="pricing-share-link"
-                    href="https://api.whatsapp.com/send?text={{ rawurlencode(__('document_ui.home.pricing_aria') . "\n" . route('packages', ['direct' => 1])) }}"
+                <a id="packageDetailsWhatsApp" class="pricing-share-link"
+                    href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_pricing')) }}"
                     target="_blank" rel="noopener noreferrer"
-                    aria-label="{{ __('interface.blog.share_on', ['network' => 'WhatsApp']) }} — {{ __('document_ui.home.pricing_aria') }}"
-                    title="{{ __('interface.blog.share_on', ['network' => 'WhatsApp']) }}"
-                    data-whatsapp-click data-whatsapp-placement="pricing_share_all"
-                    data-whatsapp-intent="package_share" data-whatsapp-package="all_packages">
+                    aria-label="Get package details on WhatsApp"
+                    title="Get package details on WhatsApp"
+                    data-whatsapp-click data-whatsapp-placement="pricing_package_details"
+                    data-whatsapp-intent="package_details" data-whatsapp-package="all_packages"
+                    data-whatsapp-lead-reference>
                     <img src="{{ asset('images/whatsapp.webp') }}" width="25" height="25" alt="" aria-hidden="true">
                     <span>Get package details on WhatsApp</span>
+                </a>
+
+                <a id="shareAllPackages" class="pricing-share-link pricing-share-link--share"
+                    href="https://api.whatsapp.com/send?text={{ rawurlencode(__('document_ui.home.pricing_aria') . "\n" . route('packages', ['direct' => 1])) }}"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="Share all package details on WhatsApp"
+                    title="Share all package details on WhatsApp"
+                    data-whatsapp-click data-whatsapp-placement="pricing_share_all"
+                    data-whatsapp-intent="package_share" data-whatsapp-package="all_packages"
+                    @if (!$showResellerInitially) hidden @endif>
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
                 </a>
 
                 <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}"
@@ -746,6 +770,7 @@
                                         data-whatsapp-intent="package" data-whatsapp-package="{{ $displayTitle }}"
                                         data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
                                         data-whatsapp-vendor="{{ $vendorKey }}"
+                                        data-whatsapp-lead-reference
                                         href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $displayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
                                             height="32" alt="WhatsApp" loading="lazy" decoding="async" />
@@ -822,6 +847,7 @@
                                         data-whatsapp-intent="reseller" data-whatsapp-package="{{ $resellerDisplayTitle }}"
                                         data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
                                         data-whatsapp-vendor="{{ $vendorResKey }}"
+                                        data-whatsapp-lead-reference
                                         href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $resellerDisplayTitle, 'price' => $buyPrice])) }}">
                                         <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}"
                                             width="32" height="32" alt="WhatsApp" loading="lazy" decoding="async" />
@@ -850,6 +876,7 @@
 
         const iptvCards = document.querySelectorAll('.pkg-item[data-type="iptv"]');
         const resellerCards = document.querySelectorAll('.pkg-item[data-type="reseller"]');
+        const hasShareablePackages = iptvCards.length || resellerCards.length;
 
         const norm = s => (s || '').toString().trim().toLowerCase();
         const isMobilePricing = () => window.matchMedia('(max-width: 768px)').matches;
@@ -899,7 +926,7 @@
         }
 
         if (shareAllPackages) {
-            if (iptvCards.length || resellerCards.length) {
+            if (hasShareablePackages) {
                 const lines = [`*${shareLabels.title}*`, ''];
                 appendPackageGroup(lines, iptvCards, shareLabels.iptv);
                 appendPackageGroup(lines, resellerCards, shareLabels.reseller, cleanText(creditInfo));
@@ -946,6 +973,9 @@
             }
             if (resellerVendorToggle) {
                 resellerVendorToggle.style.setProperty('display', showReseller ? 'inline-flex' : 'none', 'important');
+            }
+            if (shareAllPackages) {
+                shareAllPackages.hidden = !showReseller || !hasShareablePackages;
             }
 
             resellerCards.forEach(card => {

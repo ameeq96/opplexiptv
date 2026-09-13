@@ -149,6 +149,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::get('/trial-clicks', [TrialClickController::class, 'index'])->name('trial_clicks.index');
         Route::get('/trial-clicks/export', [TrialClickController::class, 'export'])->name('trial_clicks.export');
+        Route::patch('/trial-clicks/{trialClick}/status', [TrialClickController::class, 'updateStatus'])->name('trial_clicks.status');
         Route::delete('/trial-clicks/bulk-delete', [TrialClickController::class, 'bulkDelete'])->name('trial_clicks.bulkDelete');
         Route::delete('/trial-clicks/{trialClick}', [TrialClickController::class, 'destroy'])->name('trial_clicks.destroy');
 

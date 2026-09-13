@@ -23,7 +23,7 @@
             <i class="bi bi-credit-card"></i> <span>Purchasing</span>
         </a>
         <a href="{{ route('admin.trial_clicks.index') }}" class="{{ request()->routeIs('admin.trial_clicks.*') ? 'active' : '' }}">
-            <i class="bi bi-phone"></i> <span>WhatsApp Trials</span>
+            <i class="bi bi-phone"></i> <span>WhatsApp Leads</span>
         </a>
         <a href="{{ route('admin.blogs.index') }}" class="{{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}">
             <i class="bi bi-journal-text"></i> <span>Blogs</span>

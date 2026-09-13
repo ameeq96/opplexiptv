@@ -1609,14 +1609,47 @@
             return decodeURIComponent(parts.pop().split(';').shift() || '');
         }
 
-        function sendCAPI(eventId, dest) {
+        function canonicalWhatsAppDestination(href) {
+            const fallback = @json('https://wa.me/'.config('services.whatsapp.number'));
+            if (!href) return fallback;
+            try {
+                const url = new URL(href, window.location.href);
+                url.searchParams.delete('text');
+                return url.toString().slice(0, 512);
+            } catch (e) {
+                return fallback;
+            }
+        }
+
+        function withLeadReference(href, eventId) {
+            if (!href) return href;
+            try {
+                const url = new URL(href, window.location.href);
+                const message = (url.searchParams.get('text') || '')
+                    .replace(/\n?Reference: OPX-[A-Z0-9]{8}\s*$/i, '');
+                const leadCode = 'OPX-' + eventId.replace(/-/g, '').slice(0, 8).toUpperCase();
+                url.searchParams.set('text', (message + '\nReference: ' + leadCode).trim());
+                return url.toString();
+            } catch (e) {
+                return href;
+            }
+        }
+
+        function sendWhatsAppClick(eventId, dest, details) {
             if (!window.__hasTrackingConsent || !window.__hasTrackingConsent('marketing')) return;
             var payload = {
                 event_id:eventId,
-                destination:dest,
+                destination:canonicalWhatsAppDestination(dest),
                 page:location.href,
                 fbp:readCookie('_fbp'),
-                fbc:readCookie('_fbc')
+                fbc:readCookie('_fbc'),
+                intent:details.intent,
+                placement:details.placement,
+                package:details.packageName,
+                vendor:details.vendor,
+                value:details.value,
+                currency:details.currency,
+                is_trial:details.isTrial
             };
             if (navigator.sendBeacon) {
                 const blob = new Blob([JSON.stringify(payload)], { type:'application/json' });
@@ -1634,7 +1667,7 @@
         document.addEventListener('click', function (e) {
             const el = e.target.closest('a[href], button[data-wa-href], [data-whatsapp-button], #dw-copy');
             if (!el) return;
-            const href = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('data-wa-href');
+            let href = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('data-wa-href');
             const isDynamicWhatsAppButton = el.hasAttribute('data-whatsapp-button') || el.id === 'dw-copy';
             if (!isDynamicWhatsAppButton && (!href || !isWhatsApp(href))) return;
 
@@ -1645,12 +1678,25 @@
             const plan = closestAttribute(el, 'data-whatsapp-package')
                 || closestAttribute(el, 'data-wa-plan')
                 || closestAttribute(el, 'data-plan');
-            const intent = closestAttribute(el, 'data-whatsapp-intent') || 'contact';
+            const isTrial = el.hasAttribute('data-trial');
+            const intent = closestAttribute(el, 'data-whatsapp-intent') || (isTrial ? 'trial' : 'contact');
             const packageName = plan || (intent === 'trial' ? 'free_trial' : 'not_applicable');
+            const vendor = closestAttribute(el, 'data-whatsapp-vendor')
+                || closestAttribute(el, 'data-wa-vendor')
+                || 'not_applicable';
             const currency = closestAttribute(el, 'data-whatsapp-currency')
                 || closestAttribute(el, 'data-wa-currency')
                 || "{{ $currency }}";
             const placement = whatsappPlacement(el);
+            const eventId = uuidv4();
+
+            const canRecordLead = window.__hasTrackingConsent
+                && window.__hasTrackingConsent('marketing');
+            if (href && canRecordLead && el.hasAttribute('data-whatsapp-lead-reference')) {
+                href = withLeadReference(href, eventId);
+                if (el.tagName === 'A') el.setAttribute('href', href);
+                else el.setAttribute('data-wa-href', href);
+            }
 
             try {
                 window.trackMarketingEvent('whatsapp_click', {
@@ -1659,29 +1705,38 @@
                     package: packageName,
                     plan: packageName,
                     intent: intent,
+                    vendor: vendor,
                     value: Number.isFinite(parsedValue) ? parsedValue : 0,
                     currency: currency,
-                    contact_channel: 'whatsapp'
+                    contact_channel: 'whatsapp',
+                    event_id: eventId
                 });
             } catch(e) { /* analytics queues may not be available yet */ }
 
-            if (!el.hasAttribute('data-trial')) return;
+            if (isTrial) {
+                try {
+                    window.trackMarketingEvent('generate_lead', {
+                        value: 0, currency: "{{ $currency }}",
+                        content_name: 'WhatsApp', contact_channel: 'whatsapp', destination: href,
+                        event_id: eventId
+                    }, 'StartTrial');
+                } catch(e) { /* analytics queues may not be available yet */ }
+            }
 
-            const eventId = uuidv4();
-            try {
-                window.trackMarketingEvent('generate_lead', {
-                    value: 0, currency: "{{ $currency }}",
-                    content_name: 'WhatsApp', contact_channel: 'whatsapp', destination: href,
-                    event_id: eventId
-                }, 'StartTrial');
-            } catch(e) { /* analytics queues may not be available yet */ }
+            sendWhatsAppClick(eventId, href, {
+                intent: intent,
+                placement: placement,
+                packageName: packageName,
+                vendor: vendor,
+                value: Number.isFinite(parsedValue) ? parsedValue : null,
+                currency: currency,
+                isTrial: isTrial
+            });
 
-            sendCAPI(eventId, href);
-
-            if (el.tagName === 'BUTTON') {
+            if (isTrial && el.tagName === 'BUTTON' && href) {
                 e.preventDefault();
                 setTimeout(function () { window.open(href, '_blank', 'noopener'); }, 50);
             }
-        }, { passive:true });
+        });
     })();
 </script>

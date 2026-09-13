@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('page_title', 'WhatsApp Trial Clicks')
+@section('page_title', 'WhatsApp Leads')
 
 @section('content')
 
@@ -25,11 +25,20 @@
                     @endforeach
                 </select>
 
+                <select name="status" class="form-select w-auto" onchange="this.form.submit()">
+                    <option value="">All statuses</option>
+                    @foreach ($statuses as $status)
+                        <option value="{{ $status }}" @selected(request('status') === $status)>
+                            {{ ucfirst($status) }}
+                        </option>
+                    @endforeach
+                </select>
+
                 <input type="date" name="from" value="{{ request('from') }}" class="form-control w-auto" />
                 <input type="date" name="to" value="{{ request('to') }}" class="form-control w-auto" />
 
                 <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
-                       placeholder="Search (page, fbp, fbc, ip, campaign...)">
+                       placeholder="Search lead, package, source...">
 
                 <button type="submit" class="btn btn-primary">Search</button>
 
@@ -45,6 +54,8 @@
         <div class="col-auto"><span class="badge bg-primary">Today: {{ $today }}</span></div>
         <div class="col-auto"><span class="badge bg-success">Last 7d: {{ $last7 }}</span></div>
         <div class="col-auto"><span class="badge bg-secondary">Last 30d: {{ $last30 }}</span></div>
+        <div class="col-auto"><span class="badge bg-info text-dark">New: {{ $newLeads }}</span></div>
+        <div class="col-auto"><span class="badge bg-dark">Paid: {{ $paidLeads }}</span></div>
     </div>
 
     {{-- Bulk delete form --}}
@@ -67,13 +78,15 @@
                             <input type="checkbox" id="checkAllTrials">
                         </th>
                         <th style="min-width: 160px;">Time</th>
-                        <th style="min-width: 180px;">Event ID</th>
+                        <th style="min-width: 150px;">Lead ID</th>
+                        <th style="min-width: 220px;">Lead details</th>
                         <th style="min-width: 300px;">Page</th>
                         <th style="min-width: 300px;">Destination</th>
                         <th style="min-width: 160px;">UTM Campaign</th>
                         <th style="min-width: 160px;">fbp</th>
                         <th style="min-width: 160px;">fbc</th>
                         <th style="min-width: 140px;">IP</th>
+                        <th style="min-width: 150px;">Status</th>
                         <th style="min-width: 120px;">Actions</th>
                     </tr>
                 </thead>
@@ -86,7 +99,23 @@
 
                             <td>{{ $c->created_at->format('Y-m-d H:i') }}</td>
                             <td title="{{ $c->event_id }}">
-                                {{ \Illuminate\Support\Str::limit($c->event_id, 16, 'â€¦') }}
+                                <strong>{{ $c->lead_code }}</strong>
+                            </td>
+
+                            <td class="text-start">
+                                <div>{{ ucfirst(str_replace('_', ' ', $c->intent ?: 'contact')) }}</div>
+                                @if ($c->package_name)
+                                    <div class="small text-muted">{{ $c->package_name }}</div>
+                                @endif
+                                @if ($c->vendor || $c->placement)
+                                    <div class="small text-muted">
+                                        {{ $c->vendor ?: 'Unknown vendor' }}
+                                        {{ $c->placement ? ' · '.$c->placement : '' }}
+                                    </div>
+                                @endif
+                                @if ($c->value !== null)
+                                    <div class="small">{{ $c->currency ?: 'USD' }} {{ number_format((float) $c->value, 2) }}</div>
+                                @endif
                             </td>
 
                             <td class="text-start">
@@ -124,6 +153,19 @@
                             <td>{{ $c->ip ?: 'â€”' }}</td>
 
                             <td>
+                                <select class="form-select form-select-sm" data-lead-status
+                                    data-current-status="{{ $c->status }}"
+                                    data-status-url="{{ route('admin.trial_clicks.status', $c) }}"
+                                    aria-label="Status for {{ $c->lead_code }}">
+                                    @foreach ($statuses as $status)
+                                        <option value="{{ $status }}" @selected($c->status === $status)>
+                                            {{ ucfirst($status) }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                            </td>
+
+                            <td>
                                 <form action="{{ route('admin.trial_clicks.destroy', $c) }}" method="POST"
                                       onsubmit="return confirm('Delete this record?')" class="d-inline">
                                     @csrf @method('DELETE')
@@ -133,7 +175,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="10" class="text-muted">No trial clicks found.</td>
+                            <td colspan="12" class="text-muted">No WhatsApp leads found.</td>
                         </tr>
                     @endforelse
                 </tbody>
@@ -194,6 +236,34 @@
                 }
             });
 
+            document.addEventListener('change', async function (e) {
+                if (!e.target || !e.target.matches('[data-lead-status]')) return;
+
+                const select = e.target;
+                const previousStatus = select.dataset.currentStatus;
+                const csrf = document.querySelector('meta[name="csrf-token"]')?.content;
+                select.disabled = true;
+
+                try {
+                    const response = await fetch(select.dataset.statusUrl, {
+                        method: 'PATCH',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': csrf
+                        },
+                        body: JSON.stringify({ status: select.value })
+                    });
+                    if (!response.ok) throw new Error('Unable to update lead status.');
+                    select.dataset.currentStatus = select.value;
+                } catch (error) {
+                    select.value = previousStatus;
+                    window.alert(error.message);
+                } finally {
+                    select.disabled = false;
+                }
+            });
+
             clearBtn?.addEventListener('click', function () {
                 rowBoxes().forEach(cb => cb.checked = false);
                 if (checkAll) {
@@ -209,4 +279,3 @@
     </script>
 
 @endsection
-
