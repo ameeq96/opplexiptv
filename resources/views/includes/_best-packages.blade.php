@@ -26,6 +26,7 @@
                 box-shadow: 0 15px 28px rgba(173, 9, 20, .24) !important;
             }
             #pricing-section .pricing-buy-cta:focus-visible,
+            #pricing-section .pricing-share-all:focus-visible,
             #pricing-section .price-block .button-box > a:not(.pricing-buy-cta):focus-visible,
             #pricing-section .vendor-toggle .tg:focus-visible,
             #pricing-section .vendor-toggle-reseller .tg:focus-visible {
@@ -119,6 +120,40 @@
                 background: linear-gradient(135deg, #111d4a 0%, #061039 100%);
                 color: #fff;
                 box-shadow: 0 8px 18px rgba(6, 16, 57, .2);
+            }
+            #pricing-section .pricing-share-all-wrap {
+                display: flex;
+                justify-content: center;
+                margin: -8px 0 24px;
+            }
+            #pricing-section .pricing-share-all {
+                display: inline-flex;
+                min-height: 52px;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 13px 22px;
+                border: 1px solid #159447;
+                border-radius: 14px;
+                background: #25d366;
+                color: #fff;
+                box-shadow: 0 12px 24px rgba(22, 163, 74, .2);
+                font-size: 15px;
+                font-weight: 800;
+                line-height: 1.35;
+                text-align: center;
+                transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+            }
+            #pricing-section .pricing-share-all:hover {
+                transform: translateY(-1px);
+                background: #1fb95a;
+                color: #fff;
+                box-shadow: 0 15px 28px rgba(22, 163, 74, .25);
+            }
+            #pricing-section .pricing-share-all img {
+                width: 28px;
+                height: 28px;
+                flex: 0 0 28px;
             }
             #pricing-section #creditInfo {
                 margin: 0 0 24px !important;
@@ -336,10 +371,15 @@
                     min-width: 0;
                     flex: 1 1 50%;
                 }
+                #pricing-section .pricing-share-all {
+                    width: 100%;
+                    padding-inline: 16px;
+                }
             }
             @media (prefers-reduced-motion: reduce) {
                 #pricing-section .price-block .inner-box.custom-color,
                 #pricing-section .pricing-buy-cta,
+                #pricing-section .pricing-share-all,
                 #pricing-section .price-block .button-box > a:not(.pricing-buy-cta),
                 #pricing-section .vendor-toggle .tg,
                 #pricing-section .vendor-toggle-reseller .tg {
@@ -347,6 +387,7 @@
                 }
                 #pricing-section .price-block .inner-box.custom-color:hover,
                 #pricing-section .pricing-buy-cta:hover,
+                #pricing-section .pricing-share-all:hover,
                 #pricing-section .price-block .button-box > a:not(.pricing-buy-cta):hover {
                     transform: none;
                 }
@@ -576,6 +617,17 @@
             </div>
         </div>
 
+        <div class="pricing-share-all-wrap">
+            <a id="shareAllPackages" class="pricing-share-all"
+                href="https://api.whatsapp.com/send?text={{ rawurlencode(__('document_ui.home.pricing_aria') . "\n" . route('packages', ['direct' => 1])) }}"
+                target="_blank" rel="noopener noreferrer"
+                data-whatsapp-click data-whatsapp-placement="pricing_share_all"
+                data-whatsapp-intent="package_share" data-whatsapp-package="all_packages">
+                <img src="{{ asset('images/whatsapp.webp') }}" width="28" height="28" alt="" aria-hidden="true">
+                <span>{{ __('interface.blog.share_on', ['network' => 'WhatsApp']) }} — {{ __('document_ui.home.pricing_aria') }}</span>
+            </a>
+        </div>
+
         <div id="creditInfo" class="sec-title centered mb-4" style="display:{{ $showResellerInitially ? 'block' : 'none' }}">
             <p><strong>
                 {!! $pricingSection['credit_info'] ?? (
@@ -778,6 +830,7 @@
         const normalPackagesWrap = document.getElementById('normalPackages');
         const resellerWrap = document.getElementById('resellerPackages');
         const creditInfo = document.getElementById('creditInfo');
+        const shareAllPackages = document.getElementById('shareAllPackages');
 
         const iptvCards = document.querySelectorAll('.pkg-item[data-type="iptv"]');
         const resellerCards = document.querySelectorAll('.pkg-item[data-type="reseller"]');
@@ -785,11 +838,61 @@
         const norm = s => (s || '').toString().trim().toLowerCase();
         const isMobilePricing = () => window.matchMedia('(max-width: 768px)').matches;
         const getNormalPackagesDisplay = () => (isMobilePricing() ? 'flex' : 'grid');
+        const shareLabels = {
+            title: @json(__('document_ui.home.pricing_aria')),
+            iptv: @json(__('messages.checkout_iptv_packages_label')),
+            reseller: @json(__('messages.checkout_reseller_packages_label')),
+            packagesLink: @json(__('messages.nav_packages'))
+        };
+        const packagesUrl = @json(route('packages', ['direct' => 1]));
         const track = (name, params, metaEvent) => {
             if (typeof window.trackMarketingEvent === 'function') {
                 window.trackMarketingEvent(name, params, metaEvent);
             }
         };
+
+        const cleanText = element => (element && element.textContent ? element.textContent : '')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+        function appendPackageGroup(lines, cards, heading, note = '') {
+            const groupedCards = Array.from(cards);
+            if (!groupedCards.length) return;
+
+            lines.push(`*${heading}*`);
+            if (note) lines.push(note);
+
+            ['opplex', 'starshare'].forEach(vendor => {
+                const vendorCards = groupedCards.filter(card => norm(card.dataset.vendor) === vendor);
+                if (!vendorCards.length) return;
+
+                lines.push('', `*${vendor === 'starshare' ? 'Filex' : 'Opplex'}*`);
+                vendorCards.forEach(card => {
+                    const plan = (card.dataset.plan || '').trim();
+                    const price = cleanText(card.querySelector('.package-plan-title span'));
+                    lines.push(`• *${plan}*${price ? ` — ${price}` : ''}`);
+
+                    card.querySelectorAll('.price-list li').forEach(item => {
+                        const feature = cleanText(item);
+                        if (feature) lines.push(`  ✓ ${feature}`);
+                    });
+                });
+            });
+
+            lines.push('');
+        }
+
+        if (shareAllPackages) {
+            if (iptvCards.length || resellerCards.length) {
+                const lines = [`*${shareLabels.title}*`, ''];
+                appendPackageGroup(lines, iptvCards, shareLabels.iptv);
+                appendPackageGroup(lines, resellerCards, shareLabels.reseller, cleanText(creditInfo));
+                lines.push(`${shareLabels.packagesLink}: ${packagesUrl}`);
+                shareAllPackages.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(lines.join('\n').trim());
+            } else {
+                shareAllPackages.hidden = true;
+            }
+        }
 
         function getActiveVendor(toggleEl, fallback = 'opplex') {
             if (!toggleEl) return fallback;
