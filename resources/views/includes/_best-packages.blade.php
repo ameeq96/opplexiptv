@@ -135,20 +135,27 @@
             }
             #pricing-section .pricing-share-link {
                 display: inline-flex;
-                width: 44px;
-                height: 44px;
-                flex: 0 0 44px;
+                min-height: 44px;
+                flex: 0 1 auto;
                 align-items: center;
                 justify-content: center;
+                gap: 8px;
+                padding: 8px 12px;
                 border: 1px solid #cdebd6;
                 border-radius: 12px;
                 background: #f5fff8;
+                color: #167c3c;
                 box-shadow: 0 8px 18px rgba(22, 163, 74, .1);
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 1.3;
+                white-space: nowrap;
                 transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
             }
             #pricing-section .pricing-share-link:hover {
                 transform: translateY(-1px);
                 border-color: #86cf9b;
+                color: #116a32;
                 box-shadow: 0 11px 22px rgba(22, 163, 74, .16);
             }
             #pricing-section .pricing-share-link img {
@@ -373,12 +380,14 @@
                 }
                 #pricing-section .pricing-control-actions {
                     width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
                     justify-self: stretch;
                 }
                 #pricing-section .pricing-control-actions .vendor-toggle,
                 #pricing-section .pricing-control-actions .vendor-toggle-reseller {
                     width: auto;
-                    flex: 1 1 auto;
+                    flex: 1 0 100%;
                 }
             }
             @media (prefers-reduced-motion: reduce) {
@@ -618,6 +627,7 @@
                     data-whatsapp-click data-whatsapp-placement="pricing_share_all"
                     data-whatsapp-intent="package_share" data-whatsapp-package="all_packages">
                     <img src="{{ asset('images/whatsapp.webp') }}" width="25" height="25" alt="" aria-hidden="true">
+                    <span>Get package details on WhatsApp</span>
                 </a>
 
                 <div id="vendorToggle" class="vendor-toggle" role="group" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}"
