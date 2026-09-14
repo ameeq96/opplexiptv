@@ -1,6 +1,16 @@
 <?php
 
 return [
+    'contact_number_notice' => [
+        'close_label' => 'Chiudi l’avviso di modifica dei recapiti',
+        'eyebrow' => 'Importante aggiornamento dei recapiti',
+        'title' => 'Il nostro numero WhatsApp è cambiato',
+        'body' => 'Tutti i clienti, attuali e nuovi, devono ora contattarci a questo numero per assistenza o per qualsiasi domanda.',
+        'whatsapp_message' => 'Salve, ho una domanda e ho bisogno di assistenza.',
+        'whatsapp_cta' => 'Contattaci su WhatsApp',
+        'continue_cta' => 'Continua sul sito web',
+    ],
+
     'common' => [
         'send' => 'Invia',
         'read_more_about' => 'Scopri di più su :title',

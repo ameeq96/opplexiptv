@@ -2,6 +2,8 @@
     $contactNumber = config('services.whatsapp.number');
     $contactDisplay = config('services.whatsapp.display');
     $contactNoticeKey = 'opplex.contactNumberNotice.'.($contactNumber ?: 'unavailable');
+    $contactNoticeDirection = in_array(app()->getLocale(), ['ar', 'ur'], true) ? 'rtl' : 'ltr';
+    $contactNoticeWhatsappMessage = __('interface.contact_number_notice.whatsapp_message');
 @endphp
 
 <style>
@@ -31,7 +33,7 @@
     .contact-number-notice__close {
         position: absolute;
         top: 12px;
-        right: 12px;
+        inset-inline-end: 12px;
         width: 38px;
         height: 38px;
         padding: 0;
@@ -130,39 +132,42 @@
 </style>
 
 <section id="contact-number-notice" class="contact-number-notice" role="dialog" aria-modal="true"
-    aria-labelledby="contact-number-notice-title" aria-describedby="contact-number-notice-text" dir="ltr" hidden>
+    aria-labelledby="contact-number-notice-title" aria-describedby="contact-number-notice-text"
+    dir="{{ $contactNoticeDirection }}" hidden>
     <div class="contact-number-notice__dialog">
         <button type="button" class="contact-number-notice__close" data-contact-number-notice-close
-            aria-label="Close contact update">&times;</button>
+            aria-label="{{ __('interface.contact_number_notice.close_label') }}">&times;</button>
 
         <span class="contact-number-notice__icon" aria-hidden="true">
             <img src="{{ asset('images/whatsapp.webp') }}" width="38" height="38" alt="">
         </span>
-        <p class="contact-number-notice__eyebrow">Important Contact Update</p>
-        <h2 id="contact-number-notice-title" class="contact-number-notice__title">Our WhatsApp Number Has Changed</h2>
+        <p class="contact-number-notice__eyebrow">{{ __('interface.contact_number_notice.eyebrow') }}</p>
+        <h2 id="contact-number-notice-title" class="contact-number-notice__title">
+            {{ __('interface.contact_number_notice.title') }}
+        </h2>
         <p id="contact-number-notice-text" class="contact-number-notice__text">
-            All existing and new customers should now contact us on this number for support or any questions.
+            {{ __('interface.contact_number_notice.body') }}
             @if ($contactNumber)
                 <a class="contact-number-notice__number"
-                    href="https://wa.me/{{ $contactNumber }}?text={{ urlencode('Hello, I have a question and need support.') }}"
+                    href="https://wa.me/{{ $contactNumber }}?text={{ urlencode($contactNoticeWhatsappMessage) }}"
                     target="_blank" rel="noopener noreferrer"
                     data-whatsapp-click data-whatsapp-placement="contact_number_notice"
-                    data-whatsapp-intent="support">{{ $contactDisplay }}</a>
+                    data-whatsapp-intent="support" dir="ltr">{{ $contactDisplay }}</a>
             @endif
         </p>
 
         <div class="contact-number-notice__actions">
             @if ($contactNumber)
                 <a class="contact-number-notice__button contact-number-notice__button--whatsapp"
-                    href="https://wa.me/{{ $contactNumber }}?text={{ urlencode('Hello, I have a question and need support.') }}"
+                    href="https://wa.me/{{ $contactNumber }}?text={{ urlencode($contactNoticeWhatsappMessage) }}"
                     target="_blank" rel="noopener noreferrer"
                     data-whatsapp-click data-whatsapp-placement="contact_number_notice"
                     data-whatsapp-intent="support" data-contact-number-notice-close>
-                    Contact Us on WhatsApp
+                    {{ __('interface.contact_number_notice.whatsapp_cta') }}
                 </a>
             @endif
             <button type="button" class="contact-number-notice__button" data-contact-number-notice-close>
-                Continue to Website
+                {{ __('interface.contact_number_notice.continue_cta') }}
             </button>
         </div>
     </div>

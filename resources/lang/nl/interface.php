@@ -1,6 +1,16 @@
 <?php
 
 return [
+    'contact_number_notice' => [
+        'close_label' => 'Contactupdate sluiten',
+        'eyebrow' => 'Belangrijke contactupdate',
+        'title' => 'Ons WhatsApp-nummer is gewijzigd',
+        'body' => 'Alle bestaande en nieuwe klanten dienen voortaan via dit nummer contact met ons op te nemen voor ondersteuning of vragen.',
+        'whatsapp_message' => 'Hallo, ik heb een vraag en heb ondersteuning nodig.',
+        'whatsapp_cta' => 'Neem contact op via WhatsApp',
+        'continue_cta' => 'Doorgaan naar de website',
+    ],
+
     'common' => [
         'send' => 'Verzenden',
         'read_more_about' => 'Lees meer over :title',

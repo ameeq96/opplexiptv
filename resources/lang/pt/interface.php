@@ -1,6 +1,16 @@
 <?php
 
 return [
+    'contact_number_notice' => [
+        'close_label' => 'Fechar aviso de atualização de contato',
+        'eyebrow' => 'Atualização importante de contato',
+        'title' => 'Nosso número do WhatsApp mudou',
+        'body' => 'Todos os clientes, atuais e novos, devem entrar em contato conosco por este número para obter suporte ou esclarecer qualquer dúvida.',
+        'whatsapp_message' => 'Olá, tenho uma dúvida e preciso de suporte.',
+        'whatsapp_cta' => 'Fale conosco pelo WhatsApp',
+        'continue_cta' => 'Continuar para o site',
+    ],
+
     'common' => [
         'send' => 'Enviar',
         'read_more_about' => 'Saiba mais sobre :title',
