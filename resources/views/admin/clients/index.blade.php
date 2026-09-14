@@ -11,6 +11,42 @@
         </div>
     @endif
 
+    @if (session('error'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ session('error') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    @endif
+
+    <div class="admin-card mb-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <div>
+                <h5 class="mb-1">WhatsApp Number Update</h5>
+                <div class="text-muted">
+                    New support number: <strong>{{ config('services.whatsapp.display') }}</strong>
+                </div>
+                <div class="small text-muted mt-1">
+                    {{ $contactUpdateEligible }} client(s) with an active or paid order and active email permission are eligible.
+                    Each client is scheduled only once for this number.
+                    The existing scheduler and queue deliver the emails.
+                </div>
+            </div>
+            <form action="{{ route('admin.clients.contact-number-update') }}" method="POST"
+                onsubmit="return confirm('Schedule the WhatsApp number update email for all eligible clients?');">
+                @csrf
+                <input type="hidden" name="confirm" value="1">
+                <button type="submit" class="btn btn-success" @disabled($contactUpdateEligible === 0 || config('mail.default') === 'log')>
+                    Schedule Update Email
+                </button>
+            </form>
+        </div>
+        @if (config('mail.default') === 'log')
+            <div class="alert alert-warning mt-3 mb-0">
+                Real email delivery is not configured. Set a production mail provider before using this campaign.
+            </div>
+        @endif
+    </div>
+
     <div class="admin-card mb-4">
         <form action="{{ route('admin.clients.index') }}" method="GET" enctype="multipart/form-data" class="admin-toolbar">
             <select name="per_page" class="form-select" onchange="this.form.submit()">

@@ -118,10 +118,27 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
                     ])
                 );
 
+                $mailSubject = Lang::get('marketing.workflows.' . $delivery->workflow . '.subject', $replace);
+                $bodyText = Lang::get('marketing.workflows.' . $delivery->workflow . '.body', $replace);
+                $ctaText = Lang::get('marketing.workflows.' . $delivery->workflow . '.cta');
+
+                if ($delivery->workflow === 'contact_update') {
+                    $displayPhone = (string) ($payload['phone'] ?? '');
+                    if (in_array($delivery->locale, ['ar', 'ur'], true)) {
+                        $displayPhone = "\u{2066}{$displayPhone}\u{2069}";
+                    }
+
+                    $mailSubject = Lang::get('interface.contact_number_notice.title');
+                    $bodyText = Lang::get('interface.contact_number_notice.email_body', [
+                        'phone' => $displayPhone,
+                    ]);
+                    $ctaText = Lang::get('interface.contact_number_notice.whatsapp_cta');
+                }
+
                 Mail::to($recipient)->send((new MarketingWorkflowMail(
-                    Lang::get('marketing.workflows.' . $delivery->workflow . '.subject', $replace),
-                    Lang::get('marketing.workflows.' . $delivery->workflow . '.body', $replace),
-                    Lang::get('marketing.workflows.' . $delivery->workflow . '.cta'),
+                    $mailSubject,
+                    $bodyText,
+                    $ctaText,
                     $ctaUrl,
                     $unsubscribeUrl,
                 ))->locale($delivery->locale));
@@ -171,6 +188,20 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
 
     private function hasConsent(MarketingDelivery $delivery): bool
     {
+        if ($delivery->workflow === 'contact_update') {
+            $user = $delivery->user;
+
+            return $delivery->channel === 'email'
+                && $user
+                && $user->hasMarketingConsent('email')
+                && $user->orders()
+                    ->where(function ($query) {
+                        $query->where('status', 'active')
+                            ->orWhere('payment_status', 'paid');
+                    })
+                    ->exists();
+        }
+
         if ($delivery->workflow === 'abandoned') {
             $draft = $delivery->checkoutDraft;
             if (!$draft || $draft->completed_at || $draft->retention_expires_at?->isPast()) {
@@ -194,6 +225,17 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
 
     private function ctaUrl(MarketingDelivery $delivery): string
     {
+        if ($delivery->workflow === 'contact_update') {
+            $number = preg_replace('/\D+/', '', (string) ($delivery->payload['phone_number'] ?? '')) ?? '';
+            if ($number === '') {
+                throw new RuntimeException('WhatsApp contact number is missing.');
+            }
+
+            return 'https://wa.me/' . $number . '?text=' . rawurlencode(
+                Lang::get('interface.contact_number_notice.whatsapp_message')
+            );
+        }
+
         if ($delivery->workflow === 'abandoned' && $delivery->checkoutDraft) {
             $draft = $delivery->checkoutDraft;
 

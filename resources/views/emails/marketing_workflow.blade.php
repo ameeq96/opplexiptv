@@ -1,11 +1,12 @@
+@php($emailDirection = in_array(app()->getLocale(), ['ar', 'ur'], true) ? 'rtl' : 'ltr')
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" dir="{{ $emailDirection }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $mailSubject }}</title>
 </head>
-<body style="margin:0;background:#f5f7fb;color:#0b1736;font-family:Arial,sans-serif;">
+<body dir="{{ $emailDirection }}" style="margin:0;background:#f5f7fb;color:#0b1736;font-family:Arial,sans-serif;">
     <div style="max-width:620px;margin:0 auto;padding:32px 18px;">
         <div style="background:#fff;border:1px solid #dfe5ef;padding:28px;">
             <img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV" width="150" style="display:block;margin-bottom:24px;">

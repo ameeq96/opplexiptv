@@ -81,6 +81,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         )->name('clients.export.facebook');
 
         Route::delete('clients/bulk-delete', [UserClientController::class, 'bulkDelete'])->name('clients.bulkDelete');
+        Route::post('clients/contact-number-update', [UserClientController::class, 'scheduleContactNumberUpdate'])
+            ->middleware('throttle:2,10')
+            ->name('clients.contact-number-update');
         Route::delete('orders/bulk-delete', [OrderController::class, 'bulkDelete'])->name('orders.bulkDelete');
         Route::delete('reseller-orders/bulk-delete', [PanelOrderController::class, 'bulkDelete'])->name('reseller-orders.bulkDelete');
         Route::delete('purchasing/bulk-delete', [PurchasingController::class, 'bulkDelete'])->name('purchasing.bulkDelete');

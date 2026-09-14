@@ -8,11 +8,72 @@ use App\Models\CheckoutDraft;
 use App\Models\MarketingDelivery;
 use App\Models\Order;
 use App\Models\Referral;
+use App\Models\User;
 use Illuminate\Support\Str;
 use Throwable;
 
 class MarketingWorkflowService
 {
+    public function contactNumberUpdateAudienceCount(): int
+    {
+        return $this->contactNumberUpdateAudience()->count();
+    }
+
+    public function scheduleContactNumberUpdate(): array
+    {
+        $number = (string) config('services.whatsapp.number');
+        $displayNumber = (string) config('services.whatsapp.display');
+        $eligible = $this->contactNumberUpdateAudienceCount();
+        $scheduled = 0;
+        $retried = 0;
+        $alreadyScheduled = 0;
+
+        if ($number === '') {
+            return compact('eligible', 'scheduled', 'retried', 'alreadyScheduled');
+        }
+
+        $this->contactNumberUpdateAudience()
+            ->orderBy('id')
+            ->chunkById(100, function ($users) use ($number, $displayNumber, &$scheduled, &$retried, &$alreadyScheduled) {
+                foreach ($users as $user) {
+                    $locale = $user->marketing_consent_locale ?: 'en';
+                    $delivery = MarketingDelivery::firstOrCreate(
+                        ['dedupe_key' => "contact-update:{$number}:{$user->id}:email"],
+                        [
+                            'workflow' => 'contact_update',
+                            'stage' => 'new_number',
+                            'channel' => 'email',
+                            'user_id' => $user->id,
+                            'locale' => in_array($locale, config('app.locales', ['en']), true) ? $locale : 'en',
+                            'payload' => [
+                                'phone' => $displayNumber,
+                                'phone_number' => $number,
+                            ],
+                            'scheduled_at' => now(),
+                        ]
+                    );
+
+                    if ($delivery->wasRecentlyCreated) {
+                        $scheduled++;
+                    } elseif (!$delivery->sent_at && $delivery->failed_at) {
+                        $delivery->forceFill([
+                            'attempts' => 0,
+                            'failed_at' => null,
+                            'last_error' => null,
+                            'scheduled_at' => now(),
+                            'processing_at' => null,
+                            'processing_token' => null,
+                        ])->save();
+                        $retried++;
+                    } else {
+                        $alreadyScheduled++;
+                    }
+                }
+            });
+
+        return compact('eligible', 'scheduled', 'retried', 'alreadyScheduled');
+    }
+
     public function retryConfigurationFailures(): int
     {
         return MarketingDelivery::query()
@@ -279,5 +340,23 @@ class MarketingWorkflowService
         } while (Referral::where('code', $code)->exists());
 
         return $code;
+    }
+
+    private function contactNumberUpdateAudience()
+    {
+        return User::query()
+            ->whereNotNull('email')
+            ->where('email', '<>', '')
+            ->whereNotNull('marketing_email_consented_at')
+            ->where(function ($query) {
+                $query->whereNull('marketing_email_opted_out_at')
+                    ->orWhereColumn('marketing_email_consented_at', '>', 'marketing_email_opted_out_at');
+            })
+            ->whereHas('orders', function ($query) {
+                $query->where(function ($orders) {
+                    $orders->where('status', 'active')
+                        ->orWhere('payment_status', 'paid');
+                });
+            });
     }
 }

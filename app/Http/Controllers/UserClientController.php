@@ -13,6 +13,7 @@ use App\Services\Clients\{
     ClientCrudService,
     ClientImportService
 };
+use App\Services\MarketingWorkflowService;
 use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
 use Nakanakaii\Countries\Countries;
@@ -163,10 +164,32 @@ class UserClientController extends Controller
     }
 
 
-    public function index(Request $request)
+    public function index(Request $request, MarketingWorkflowService $workflows)
     {
         $clients = $this->runIndex($this->query, $request);
-        return view('admin.clients.index', compact('clients'));
+        $contactUpdateEligible = $workflows->contactNumberUpdateAudienceCount();
+
+        return view('admin.clients.index', compact('clients', 'contactUpdateEligible'));
+    }
+
+    public function scheduleContactNumberUpdate(Request $request, MarketingWorkflowService $workflows)
+    {
+        $request->validate(['confirm' => ['required', 'accepted']]);
+
+        if ((string) config('services.whatsapp.number') === '') {
+            return back()->with('error', 'Set WHATSAPP_NUMBER before scheduling this customer update.');
+        }
+
+        if (config('mail.default') === 'log') {
+            return back()->with('error', 'Configure a real email provider before scheduling customer emails.');
+        }
+
+        $result = $workflows->scheduleContactNumberUpdate();
+
+        return back()->with(
+            'success',
+            "{$result['scheduled']} customer email(s) scheduled. {$result['retried']} failed email(s) rescheduled. {$result['alreadyScheduled']} already scheduled or sent for this number."
+        );
     }
 
     public function create()
