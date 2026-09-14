@@ -12,6 +12,8 @@
 
 <body>
 
+    @include('includes.contact-number-notice')
+
     @include('includes.header')
 
     <div class="body_wrap">
