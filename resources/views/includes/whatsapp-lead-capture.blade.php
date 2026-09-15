@@ -7,16 +7,6 @@
         ->unique('code')
         ->sortBy(static fn (array $country): string => (string) ($country['name'] ?? ''))
         ->values();
-    $whatsappLeadDetectedCountry = '';
-
-    foreach (['CF-IPCountry', 'CloudFront-Viewer-Country', 'X-Vercel-IP-Country'] as $countryHeader) {
-        $countryCode = strtoupper(trim((string) request()->header($countryHeader, '')));
-        if (preg_match('/^[A-Z]{2}$/', $countryCode) === 1
-            && $whatsappLeadPhoneCountries->contains(static fn (array $country): bool => ($country['code'] ?? '') === $countryCode)) {
-            $whatsappLeadDetectedCountry = $countryCode;
-            break;
-        }
-    }
 @endphp
 
 <style>
@@ -160,12 +150,113 @@
     .whatsapp-lead-capture__country {
         min-width: 0;
         padding-right: 8px;
+        padding-left: 45px;
         border: 0;
-        border-right: 1px solid #cbd5e1;
         border-radius: 0;
         background: transparent;
         font-size: 13px;
         cursor: pointer;
+    }
+
+    .whatsapp-lead-capture__country-control {
+        position: relative;
+        min-width: 0;
+        border-right: 1px solid #cbd5e1;
+    }
+
+    .whatsapp-lead-capture__country-flag {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        z-index: 1;
+        width: 24px;
+        height: 18px;
+        border: 1px solid rgba(15, 23, 42, .12);
+        border-radius: 2px;
+        object-fit: cover;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+
+    .whatsapp-lead-capture__country-control > .select2-container {
+        display: block;
+        width: 100% !important;
+        font: inherit;
+    }
+
+    .whatsapp-lead-capture__country-control > .select2-container--default .select2-selection--single {
+        height: 47px;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+
+    .whatsapp-lead-capture__country-control > .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-right: 28px;
+        padding-left: 45px;
+        color: #111827;
+        font-size: 13px;
+        line-height: 47px;
+    }
+
+    .whatsapp-lead-capture__country-control > .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 0;
+        right: 3px;
+        height: 47px;
+    }
+
+    .whatsapp-lead-capture__dialog .select2-dropdown {
+        width: min(300px, calc(100vw - 48px)) !important;
+        overflow: hidden;
+        border: 1px solid #cbd5e1;
+        border-radius: 9px;
+        background: #fff;
+        color: #111827;
+        font-family: inherit;
+    }
+
+    .whatsapp-lead-capture__dialog .select2-search--dropdown {
+        padding: 8px;
+    }
+
+    .whatsapp-lead-capture__dialog .select2-container--default .select2-search--dropdown .select2-search__field {
+        height: 38px;
+        padding: 7px 9px;
+        border: 1px solid #cbd5e1;
+        border-radius: 7px;
+        font: inherit;
+    }
+
+    .whatsapp-lead-capture__dialog .select2-results__option {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .whatsapp-lead-capture__dialog .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background: #16a34a;
+        color: #fff;
+    }
+
+    .whatsapp-lead-capture__country-result {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .whatsapp-lead-capture__country-result img {
+        flex: 0 0 auto;
+        width: 24px;
+        height: 18px;
+        border: 1px solid rgba(15, 23, 42, .12);
+        border-radius: 2px;
+        object-fit: cover;
+    }
+
+    .whatsapp-lead-capture__country-result span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .whatsapp-lead-capture__phone .whatsapp-lead-capture__input {
@@ -365,19 +456,25 @@
                     {{ __('interface.whatsapp_lead_capture.phone_label') }}
                 </label>
                 <div class="whatsapp-lead-capture__phone" dir="ltr">
-                    <select id="whatsapp-lead-country" class="whatsapp-lead-capture__country" name="dial_code"
-                        autocomplete="tel-country-code" aria-label="{{ __('interface.phone.country_list_aria') }}"
-                        aria-describedby="whatsapp-lead-phone-help whatsapp-lead-phone-error" required>
-                        @foreach ($whatsappLeadPhoneCountries as $country)
-                            @php($countryCode = strtoupper((string) ($country['code'] ?? '')))
-                            <option value="{{ $country['dialCode'] }}" data-country-code="{{ $countryCode }}"
-                                data-min-digits="{{ $country['minLength'] }}" data-max-digits="{{ $country['maxLength'] }}"
-                                @if (in_array($countryCode, ['IT', 'VA'], true)) data-preserve-leading-zero="true" @endif
-                                @selected($countryCode === ($whatsappLeadDetectedCountry ?: 'PK'))>
-                                {{ $country['flag'] }} {{ $countryCode }} +{{ $country['dialCode'] }}
-                            </option>
-                        @endforeach
-                    </select>
+                    <div class="whatsapp-lead-capture__country-control">
+                        <img class="whatsapp-lead-capture__country-flag" data-whatsapp-lead-country-flag
+                            src="https://flagcdn.io/flags/4x3/pk.svg" alt="" width="24" height="18"
+                            decoding="async" referrerpolicy="no-referrer" aria-hidden="true">
+                        <select id="whatsapp-lead-country" class="whatsapp-lead-capture__country" name="dial_code"
+                            autocomplete="tel-country-code" aria-label="{{ __('interface.phone.country_list_aria') }}"
+                            aria-describedby="whatsapp-lead-phone-help whatsapp-lead-phone-error" required>
+                            @foreach ($whatsappLeadPhoneCountries as $country)
+                                @php($countryCode = strtoupper((string) ($country['code'] ?? '')))
+                                <option value="{{ $countryCode }}" data-country-code="{{ $countryCode }}"
+                                    data-country-name="{{ $country['name'] }}" data-dial-code="{{ $country['dialCode'] }}"
+                                    data-min-digits="{{ $country['minLength'] }}" data-max-digits="{{ $country['maxLength'] }}"
+                                    @if (in_array($countryCode, ['IT', 'VA'], true)) data-preserve-leading-zero="true" @endif
+                                    @selected($countryCode === 'PK')>
+                                    {{ $country['name'] }} ({{ $countryCode }} +{{ $country['dialCode'] }})
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
                     <input id="whatsapp-lead-phone" class="whatsapp-lead-capture__input" type="tel" name="phone"
                         maxlength="30" inputmode="tel" autocomplete="tel-national" dir="ltr"
                         placeholder="{{ __('interface.whatsapp_lead_capture.phone_placeholder') }}"
@@ -425,6 +522,7 @@
         const nameInput = form.elements.name;
         const phoneInput = form.elements.phone;
         const countryInput = form.elements.dial_code;
+        const countryFlag = root.querySelector('[data-whatsapp-lead-country-flag]');
         const consentInput = form.elements.contact_consent;
         const nameError = document.getElementById('whatsapp-lead-name-error');
         const phoneError = document.getElementById('whatsapp-lead-phone-error');
@@ -444,10 +542,23 @@
         let lastFocusedElement = null;
         let previousMarketingPrompt = null;
         let busy = false;
+        let countryManuallyChanged = false;
+        let countryDetectionPromise = null;
+        let countrySelect2Promise = null;
+        let countrySelect2Jquery = null;
         let preferredCountryCode = countryInput.options[countryInput.selectedIndex]?.dataset.countryCode || 'PK';
         const dialOptions = Array.from(countryInput.options).sort(function (left, right) {
-            return right.value.length - left.value.length;
+            return String(right.dataset.dialCode || '').length - String(left.dataset.dialCode || '').length;
         });
+
+        function dialCodeFor(option) {
+            return option ? String(option.dataset.dialCode || '') : '';
+        }
+
+        function syncCountrySelect2() {
+            if (!countrySelect2Jquery || !countrySelect2Jquery(countryInput).data('select2')) return;
+            countrySelect2Jquery(countryInput).val(countryInput.value).trigger('change.select2');
+        }
 
         function selectCountry(countryCode) {
             const normalizedCode = String(countryCode || '').toUpperCase();
@@ -455,12 +566,21 @@
                 return candidate.dataset.countryCode === normalizedCode;
             });
             if (!option) return false;
-            option.selected = true;
+            countryInput.value = normalizedCode;
             preferredCountryCode = normalizedCode;
+            if (countryFlag) {
+                countryFlag.hidden = false;
+                countryFlag.src = 'https://flagcdn.io/flags/4x3/' + normalizedCode.toLowerCase() + '.svg';
+            }
+            syncCountrySelect2();
             return true;
         }
 
         function browserCountryCode() {
+            try {
+                if (Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Karachi') return 'PK';
+            } catch (error) {}
+
             const languages = Array.isArray(navigator.languages) && navigator.languages.length
                 ? navigator.languages
                 : [navigator.language || ''];
@@ -480,7 +600,194 @@
             return languageDefaults[siteLanguage] || 'PK';
         }
 
-        selectCountry(@json($whatsappLeadDetectedCountry) || browserCountryCode()) || selectCountry('PK');
+        function loadCountryStylesheet(href) {
+            const absoluteHref = new URL(href, document.baseURI).href;
+            const existing = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).find(function (link) {
+                return link.href === absoluteHref;
+            });
+            if (existing) return Promise.resolve();
+
+            return new Promise(function (resolve, reject) {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = absoluteHref;
+                link.addEventListener('load', resolve, { once: true });
+                link.addEventListener('error', reject, { once: true });
+                document.head.appendChild(link);
+            });
+        }
+
+        function loadCountryScript(id, src) {
+            const existing = document.getElementById(id);
+            if (existing) {
+                if (existing.dataset.loaded === 'true') return Promise.resolve();
+                return new Promise(function (resolve, reject) {
+                    existing.addEventListener('load', resolve, { once: true });
+                    existing.addEventListener('error', reject, { once: true });
+                });
+            }
+
+            return new Promise(function (resolve, reject) {
+                const script = document.createElement('script');
+                script.id = id;
+                script.src = src;
+                script.async = true;
+                script.addEventListener('load', function () {
+                    script.dataset.loaded = 'true';
+                    resolve();
+                }, { once: true });
+                script.addEventListener('error', reject, { once: true });
+                document.head.appendChild(script);
+            });
+        }
+
+        function formatCountryResult(state) {
+            if (!state.element || !countrySelect2Jquery) return state.text;
+
+            const option = state.element;
+            const countryCode = String(option.dataset.countryCode || '').toUpperCase();
+            const row = document.createElement('span');
+            const flag = document.createElement('img');
+            const label = document.createElement('span');
+
+            row.className = 'whatsapp-lead-capture__country-result';
+            flag.src = 'https://flagcdn.io/flags/4x3/' + countryCode.toLowerCase() + '.svg';
+            flag.alt = '';
+            flag.width = 24;
+            flag.height = 18;
+            flag.loading = 'lazy';
+            flag.referrerPolicy = 'no-referrer';
+            flag.setAttribute('aria-hidden', 'true');
+            flag.addEventListener('error', function () {
+                flag.hidden = true;
+            });
+            label.textContent = String(option.dataset.countryName || state.text)
+                + ' (' + countryCode + ' +' + dialCodeFor(option) + ')';
+            row.append(flag, label);
+
+            return countrySelect2Jquery(row);
+        }
+
+        function formatCountrySelection(state) {
+            if (!state.element) return state.text;
+            return String(state.element.dataset.countryCode || '').toUpperCase()
+                + ' +' + dialCodeFor(state.element);
+        }
+
+        function syncCountrySelect2Accessibility(country) {
+            const selection = country.next('.select2').find('.select2-selection');
+            const ariaLabel = countryInput.getAttribute('aria-label');
+            const ariaDescribedBy = countryInput.getAttribute('aria-describedby');
+
+            selection.removeAttr('aria-labelledby');
+            if (ariaLabel) selection.attr('aria-label', ariaLabel);
+            if (ariaDescribedBy) selection.attr('aria-describedby', ariaDescribedBy);
+        }
+
+        function initializeCountrySelect2() {
+            if (!countrySelect2Jquery || !countrySelect2Jquery.fn.select2) return;
+
+            const country = countrySelect2Jquery(countryInput);
+            if (country.data('select2')) {
+                syncCountrySelect2Accessibility(country);
+                syncCountrySelect2();
+                return;
+            }
+
+            country.select2({
+                width: '100%',
+                dir: 'ltr',
+                dropdownParent: countrySelect2Jquery(dialog),
+                dropdownAutoWidth: true,
+                minimumResultsForSearch: 0,
+                templateResult: formatCountryResult,
+                templateSelection: formatCountrySelection
+            });
+            country.on('select2:select.whatsappLead', rememberCountrySelection);
+            syncCountrySelect2Accessibility(country);
+            syncCountrySelect2();
+        }
+
+        function ensureCountrySelect2() {
+            if (countrySelect2Jquery && countrySelect2Jquery.fn.select2) {
+                initializeCountrySelect2();
+                return Promise.resolve();
+            }
+            if (window.jQuery && window.jQuery.fn && window.jQuery.fn.select2) {
+                countrySelect2Jquery = window.jQuery;
+                initializeCountrySelect2();
+                return Promise.resolve();
+            }
+            if (countrySelect2Promise) return countrySelect2Promise;
+
+            const hadJquery = Boolean(window.jQuery);
+            const stylesheet = loadCountryStylesheet(
+                'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css'
+            ).then(function () {
+                return true;
+            }).catch(function () {
+                return false;
+            });
+            const scripts = (window.jQuery
+                ? Promise.resolve()
+                : loadCountryScript('whatsapp-lead-jquery', @json(asset('js/jquery.js')))
+            ).then(function () {
+                if (window.jQuery && window.jQuery.fn && window.jQuery.fn.select2) return;
+                return loadCountryScript(
+                    'whatsapp-lead-select2',
+                    'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js'
+                );
+            }).then(function () {
+                return true;
+            }).catch(function () {
+                return false;
+            });
+
+            countrySelect2Promise = Promise.all([stylesheet, scripts]).then(function (assetsLoaded) {
+                if (!assetsLoaded.every(Boolean)
+                    || !window.jQuery || !window.jQuery.fn || !window.jQuery.fn.select2) {
+                    throw new Error('Select2 is unavailable.');
+                }
+                countrySelect2Jquery = !hadJquery && typeof window.jQuery.noConflict === 'function'
+                    ? window.jQuery.noConflict(true)
+                    : window.jQuery;
+                initializeCountrySelect2();
+            }).catch(function () {
+                if (!hadJquery && window.jQuery && typeof window.jQuery.noConflict === 'function') {
+                    window.jQuery.noConflict(true);
+                }
+                countrySelect2Jquery = null;
+                return null;
+            });
+
+            return countrySelect2Promise;
+        }
+
+        function detectVisitorCountry() {
+            if (countryDetectionPromise) return countryDetectionPromise;
+
+            countryDetectionPromise = fetch(@json(route('whatsapp.leads.token')), {
+                method: 'GET',
+                headers: { 'Accept': 'application/json' },
+                credentials: 'same-origin',
+                cache: 'no-store'
+            }).then(function (response) {
+                if (!response.ok) throw new Error('Unable to detect visitor country.');
+                return response.json();
+            }).then(function (payload) {
+                if (!countryManuallyChanged) selectCountry(payload.country_code);
+            }).catch(function () {});
+
+            return countryDetectionPromise;
+        }
+
+        if (countryFlag) {
+            countryFlag.addEventListener('error', function () {
+                countryFlag.hidden = true;
+            });
+        }
+
+        selectCountry(browserCountryCode()) || selectCountry('PK');
 
         function restoreMarketingPrompt() {
             if (window.__activeMarketingPrompt === 'whatsapp-lead-capture') {
@@ -501,6 +808,24 @@
             formError.textContent = '';
         }
 
+        function isCountrySelect2Open() {
+            return Boolean(countrySelect2Jquery
+                && countrySelect2Jquery(countryInput).data('select2')
+                && dialog.querySelector('.select2-container--open'));
+        }
+
+        function closeCountrySelect2() {
+            if (!isCountrySelect2Open()) return;
+            countrySelect2Jquery(countryInput).select2('close');
+        }
+
+        function rememberCountrySelection() {
+            countryManuallyChanged = true;
+            preferredCountryCode = selectedCountry()?.dataset.countryCode || preferredCountryCode;
+            selectCountry(preferredCountryCode);
+            setFieldError(phoneInput, phoneError, '');
+        }
+
         function setBusy(isBusy) {
             busy = isBusy;
             form.setAttribute('aria-busy', isBusy ? 'true' : 'false');
@@ -512,10 +837,12 @@
             });
             submitLabel.hidden = isBusy;
             savingLabel.hidden = !isBusy;
+            syncCountrySelect2();
         }
 
         function close() {
             if (busy || root.hidden) return;
+            closeCountrySelect2();
             root.hidden = true;
             root.setAttribute('aria-hidden', 'true');
             document.body.classList.remove('whatsapp-lead-capture-open');
@@ -538,6 +865,8 @@
             root.hidden = false;
             root.setAttribute('aria-hidden', 'false');
             document.body.classList.add('whatsapp-lead-capture-open');
+            detectVisitorCountry();
+            ensureCountrySelect2();
             window.requestAnimationFrame(function () {
                 nameInput.focus();
             });
@@ -579,9 +908,13 @@
         function findDialOption(normalizedPhone) {
             const digits = String(normalizedPhone || '').replace(/\D/g, '');
             const current = selectedCountry();
-            if (current && digits.startsWith(current.value) && digits.length > current.value.length) return current;
+            const currentDialCode = dialCodeFor(current);
+            if (currentDialCode && digits.startsWith(currentDialCode) && digits.length > currentDialCode.length) {
+                return current;
+            }
             return dialOptions.find(function (option) {
-                return digits.startsWith(option.value) && digits.length > option.value.length;
+                const dialCode = dialCodeFor(option);
+                return dialCode && digits.startsWith(dialCode) && digits.length > dialCode.length;
             }) || null;
         }
 
@@ -593,12 +926,13 @@
 
             const country = selectedCountry();
             if (!country) return '';
+            const dialCode = dialCodeFor(country);
             const nationalDigits = rawPhone.replace(/\D/g, '');
             const minimumDigits = Number.parseInt(country.dataset.minDigits, 10);
             const maximumDigits = Number.parseInt(country.dataset.maxDigits, 10);
 
-            if (nationalDigits.startsWith(country.value)) {
-                const possibleNationalLength = nationalDigits.length - country.value.length;
+            if (nationalDigits.startsWith(dialCode)) {
+                const possibleNationalLength = nationalDigits.length - dialCode.length;
                 if (possibleNationalLength >= minimumDigits && possibleNationalLength <= maximumDigits) {
                     return nationalDigits;
                 }
@@ -607,7 +941,7 @@
             const normalizedNational = country.dataset.preserveLeadingZero === 'true'
                 ? nationalDigits
                 : nationalDigits.replace(/^0+/, '');
-            return country.value + normalizedNational;
+            return dialCode + normalizedNational;
         }
 
         function hasValidCountryLength(normalizedPhone) {
@@ -616,7 +950,7 @@
             const country = isInternational ? findDialOption(normalizedPhone) : selectedCountry();
             if (!country) return true;
 
-            const nationalLength = normalizedPhone.length - country.value.length;
+            const nationalLength = normalizedPhone.length - dialCodeFor(country).length;
             const minimumDigits = Number.parseInt(country.dataset.minDigits, 10);
             const maximumDigits = Number.parseInt(country.dataset.maxDigits, 10);
             return nationalLength >= minimumDigits && nationalLength <= maximumDigits;
@@ -630,13 +964,13 @@
             const rawPhone = phoneInput.value.trim();
             if (!rawPhone.startsWith('+') && !rawPhone.startsWith('00')) return;
             const matchingCountry = findDialOption(normalizePhone());
-            if (matchingCountry) selectCountry(matchingCountry.dataset.countryCode);
+            if (matchingCountry) {
+                countryManuallyChanged = true;
+                selectCountry(matchingCountry.dataset.countryCode);
+            }
         });
 
-        countryInput.addEventListener('change', function () {
-            preferredCountryCode = selectedCountry()?.dataset.countryCode || preferredCountryCode;
-            setFieldError(phoneInput, phoneError, '');
-        });
+        countryInput.addEventListener('change', rememberCountrySelection);
 
         closeButtons.forEach(function (button) {
             button.addEventListener('click', close);
@@ -686,13 +1020,17 @@
             if (event.key === 'Escape') {
                 event.preventDefault();
                 event.stopImmediatePropagation();
+                if (isCountrySelect2Open()) {
+                    closeCountrySelect2();
+                    return;
+                }
                 close();
                 return;
             }
             if (event.key !== 'Tab') return;
 
             const focusable = Array.from(dialog.querySelectorAll(
-                'a[href], button:not(:disabled), input:not(:disabled), select:not(:disabled), [tabindex]:not([tabindex="-1"])'
+                'a[href], button:not(:disabled), input:not(:disabled), select:not(:disabled):not(.select2-hidden-accessible), [tabindex]:not([tabindex="-1"])'
             ));
             if (!focusable.length) return;
             const first = focusable[0];

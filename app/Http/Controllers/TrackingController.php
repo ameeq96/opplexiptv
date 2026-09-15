@@ -6,13 +6,28 @@ use App\Jobs\SendFacebookCapiEvent;
 use App\Models\TrialClick;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
+use Nakanakaii\Countries\Countries;
 
 class TrackingController extends Controller
 {
-    public function whatsappLeadToken()
+    public function whatsappLeadToken(Request $request)
     {
+        $supportedCountries = array_fill_keys(array_column(Countries::all(), 'code'), true);
+        $countryCode = null;
+
+        foreach (['CF-IPCountry', 'CloudFront-Viewer-Country', 'X-Vercel-IP-Country'] as $countryHeader) {
+            $candidate = strtoupper(trim((string) $request->header($countryHeader, '')));
+            if (preg_match('/^[A-Z]{2}$/', $candidate) === 1 && isset($supportedCountries[$candidate])) {
+                $countryCode = $candidate;
+                break;
+            }
+        }
+
         return response()
-            ->json(['csrf_token' => csrf_token()])
+            ->json([
+                'csrf_token' => csrf_token(),
+                'country_code' => $countryCode,
+            ])
             ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
             ->header('Pragma', 'no-cache');
     }
