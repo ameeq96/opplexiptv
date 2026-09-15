@@ -462,7 +462,7 @@
                             decoding="async" referrerpolicy="no-referrer" aria-hidden="true">
                         <select id="whatsapp-lead-country" class="whatsapp-lead-capture__country" name="dial_code"
                             autocomplete="tel-country-code" aria-label="{{ __('interface.phone.country_list_aria') }}"
-                            aria-describedby="whatsapp-lead-phone-help whatsapp-lead-phone-error" required>
+                            aria-describedby="whatsapp-lead-phone-error" required>
                             @foreach ($whatsappLeadPhoneCountries as $country)
                                 @php($countryCode = strtoupper((string) ($country['code'] ?? '')))
                                 <option value="{{ $countryCode }}" data-country-code="{{ $countryCode }}"
@@ -478,24 +478,10 @@
                     <input id="whatsapp-lead-phone" class="whatsapp-lead-capture__input" type="tel" name="phone"
                         maxlength="30" inputmode="tel" autocomplete="tel-national" dir="ltr"
                         placeholder="{{ __('interface.whatsapp_lead_capture.phone_placeholder') }}"
-                        aria-describedby="whatsapp-lead-phone-help whatsapp-lead-phone-error" aria-invalid="false" required>
+                        aria-describedby="whatsapp-lead-phone-error" aria-invalid="false" required>
                 </div>
-                <span id="whatsapp-lead-phone-help" class="whatsapp-lead-capture__help">
-                    {{ __('interface.whatsapp_lead_capture.phone_help') }}
-                </span>
                 <span id="whatsapp-lead-phone-error" class="whatsapp-lead-capture__field-error"></span>
             </div>
-
-            <label class="whatsapp-lead-capture__consent" for="whatsapp-lead-consent">
-                <input id="whatsapp-lead-consent" type="checkbox" name="contact_consent"
-                    aria-describedby="whatsapp-lead-consent-error" required>
-                <span>{{ __('interface.whatsapp_lead_capture.consent') }}</span>
-            </label>
-            <span id="whatsapp-lead-consent-error" class="whatsapp-lead-capture__field-error"></span>
-
-            <a class="whatsapp-lead-capture__privacy" href="{{ route('privacy-policy') }}" target="_blank" rel="noopener">
-                {{ __('interface.whatsapp_lead_capture.privacy') }}
-            </a>
 
             <p class="whatsapp-lead-capture__error" role="alert" aria-live="assertive"></p>
 
@@ -523,10 +509,8 @@
         const phoneInput = form.elements.phone;
         const countryInput = form.elements.dial_code;
         const countryFlag = root.querySelector('[data-whatsapp-lead-country-flag]');
-        const consentInput = form.elements.contact_consent;
         const nameError = document.getElementById('whatsapp-lead-name-error');
         const phoneError = document.getElementById('whatsapp-lead-phone-error');
-        const consentError = document.getElementById('whatsapp-lead-consent-error');
         const formError = root.querySelector('.whatsapp-lead-capture__error');
         const submitButton = form.querySelector('[type="submit"]');
         const submitLabel = form.querySelector('[data-whatsapp-lead-submit-label]');
@@ -535,7 +519,6 @@
         const messages = {
             invalidName: @json(__('interface.whatsapp_lead_capture.invalid_name')),
             invalidPhone: @json(__('interface.whatsapp_lead_capture.invalid_phone')),
-            consentRequired: @json(__('interface.whatsapp_lead_capture.consent_required')),
             requestError: @json(__('interface.whatsapp_lead_capture.error'))
         };
         let activeRequest = null;
@@ -804,7 +787,6 @@
         function clearErrors() {
             setFieldError(nameInput, nameError, '');
             setFieldError(phoneInput, phoneError, '');
-            consentError.textContent = '';
             formError.textContent = '';
         }
 
@@ -886,11 +868,6 @@
 
             if (!/^[1-9]\d{7,14}$/.test(normalizedPhone) || !hasValidCountryLength(normalizedPhone)) {
                 setFieldError(phoneInput, phoneError, messages.invalidPhone);
-                valid = false;
-            }
-
-            if (!consentInput.checked) {
-                consentError.textContent = messages.consentRequired;
                 valid = false;
             }
 
@@ -986,8 +963,7 @@
 
             const values = validate();
             if (!values) {
-                const firstInvalid = form.querySelector('[aria-invalid="true"]')
-                    || (!consentInput.checked ? consentInput : null);
+                const firstInvalid = form.querySelector('[aria-invalid="true"]');
                 if (firstInvalid) firstInvalid.focus();
                 return;
             }
