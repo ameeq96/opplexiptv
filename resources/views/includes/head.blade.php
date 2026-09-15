@@ -1560,6 +1560,21 @@
     // --------- WhatsApp click tracking + trial CAPI beacon ---------
     (function () {
         const configuredWhatsAppNumber = @json(preg_replace('/\D+/', '', (string) config('services.whatsapp.number')));
+        const savedWhatsAppLeadKey = 'opplex.whatsappLeadSaved.' + configuredWhatsAppNumber;
+
+        function hasSavedWhatsAppLead() {
+            try {
+                return window.localStorage.getItem(savedWhatsAppLeadKey) === '1';
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function rememberSavedWhatsAppLead() {
+            try {
+                window.localStorage.setItem(savedWhatsAppLeadKey, '1');
+            } catch (e) {}
+        }
 
         function uuidv4() {
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -1823,7 +1838,7 @@
                 isTrial: isTrial
             };
 
-            if (isBusinessWhatsApp(href) && window.OpplexWhatsAppLeadCapture) {
+            if (isBusinessWhatsApp(href) && window.OpplexWhatsAppLeadCapture && !hasSavedWhatsAppLead()) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
 
@@ -1841,15 +1856,21 @@
                 window.OpplexWhatsAppLeadCapture.open({
                     onSubmit: function (values) {
                         const popup = openInNewWindow ? window.open('', '_blank') : null;
+                        let destination = href;
+                        if (el.hasAttribute('data-whatsapp-lead-reference')) {
+                            const leadCode = 'OPX-' + eventId.replace(/-/g, '').slice(0, 8).toUpperCase();
+                            destination = withLeadReference(destination, leadCode);
+                        }
+                        if (popup) openWhatsApp(destination, popup);
+
                         return storeWhatsAppLead(eventId, href, details, values).then(function (response) {
-                            let destination = href;
                             if (response.lead_code && el.hasAttribute('data-whatsapp-lead-reference')) {
                                 destination = withLeadReference(destination, response.lead_code);
                             }
+                            rememberSavedWhatsAppLead();
                             trackWhatsAppClick(eventId, destination, details);
-                            openWhatsApp(destination, popup);
+                            if (!popup) openWhatsApp(destination, null);
                         }).catch(function (error) {
-                            if (popup && !popup.closed) popup.close();
                             throw error;
                         });
                     }
@@ -1869,9 +1890,10 @@
             trackWhatsAppClick(eventId, href, details);
             sendWhatsAppClick(eventId, href, details);
 
-            if (isTrial && el.tagName === 'BUTTON' && href) {
+            if (el.tagName === 'BUTTON' && href) {
                 e.preventDefault();
-                setTimeout(function () { window.open(href, '_blank', 'noopener'); }, 50);
+                e.stopImmediatePropagation();
+                window.open(href, '_blank', 'noopener');
             }
         }, true);
     })();
