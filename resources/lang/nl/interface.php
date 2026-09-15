@@ -12,6 +12,27 @@ return [
         'continue_cta' => 'Doorgaan naar de website',
     ],
 
+    'whatsapp_lead_capture' => [
+        'close_label' => 'WhatsApp-contactformulier sluiten',
+        'eyebrow' => 'Voordat je verdergaat',
+        'title' => 'Doorgaan naar WhatsApp',
+        'body' => 'Vul je naam en WhatsApp-nummer in voordat we WhatsApp openen.',
+        'name_label' => 'Je naam',
+        'name_placeholder' => 'Vul je naam in',
+        'phone_label' => 'WhatsApp-nummer',
+        'phone_placeholder' => 'Voer je WhatsApp-nummer in',
+        'phone_help' => 'De landcode wordt automatisch toegevoegd.',
+        'consent' => 'Ik ga ermee akkoord dat Opplex IPTV deze gegevens opslaat en contact met mij opneemt over dit verzoek.',
+        'privacy' => 'Privacybeleid',
+        'cancel' => 'Annuleren',
+        'continue' => 'Opslaan en doorgaan',
+        'saving' => 'Opslaan...',
+        'error' => 'We konden je gegevens niet opslaan. Controleer ze en probeer het opnieuw.',
+        'invalid_name' => 'Vul je naam in.',
+        'invalid_phone' => 'Selecteer het juiste land en voer een geldig WhatsApp-nummer in.',
+        'consent_required' => 'Geef toestemming voordat je verdergaat.',
+    ],
+
     'common' => [
         'send' => 'Verzenden',
         'read_more_about' => 'Lees meer over :title',

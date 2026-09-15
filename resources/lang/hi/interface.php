@@ -12,6 +12,27 @@ return [
         'continue_cta' => 'वेबसाइट पर जाएँ',
     ],
 
+    'whatsapp_lead_capture' => [
+        'close_label' => 'WhatsApp संपर्क फ़ॉर्म बंद करें',
+        'eyebrow' => 'आगे बढ़ने से पहले',
+        'title' => 'WhatsApp पर जाएँ',
+        'body' => 'WhatsApp खोलने से पहले अपना नाम और WhatsApp नंबर दर्ज करें।',
+        'name_label' => 'आपका नाम',
+        'name_placeholder' => 'अपना नाम दर्ज करें',
+        'phone_label' => 'WhatsApp नंबर',
+        'phone_placeholder' => 'अपना WhatsApp नंबर दर्ज करें',
+        'phone_help' => 'देश का कोड अपने आप जुड़ जाता है।',
+        'consent' => 'मैं सहमत हूँ कि Opplex IPTV ये जानकारी सेव कर सकता है और इस अनुरोध के बारे में मुझसे संपर्क कर सकता है।',
+        'privacy' => 'गोपनीयता नीति',
+        'cancel' => 'रद्द करें',
+        'continue' => 'सेव करें और आगे बढ़ें',
+        'saving' => 'सेव हो रहा है...',
+        'error' => 'आपकी जानकारी सेव नहीं हो सकी। कृपया इसे जाँचें और फिर कोशिश करें।',
+        'invalid_name' => 'कृपया अपना नाम दर्ज करें।',
+        'invalid_phone' => 'सही देश चुनें और एक मान्य WhatsApp नंबर दर्ज करें।',
+        'consent_required' => 'आगे बढ़ने से पहले अनुमति दें।',
+    ],
+
     'common' => [
         'send' => 'भेजें',
         'read_more_about' => ':title के बारे में और पढ़ें',

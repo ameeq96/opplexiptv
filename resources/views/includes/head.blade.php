@@ -1257,8 +1257,6 @@
 <link rel="canonical" href="{{ $canonical }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@opplex_iptv">
-<meta name="twitter:creator" content="@opplex_iptv">
 <meta name="twitter:title" content="{{ $ogTitle }}">
 <meta name="twitter:description" content="{{ $ogDescription }}">
 <meta name="twitter:image" content="{{ $ogImage }}">
@@ -1561,6 +1559,8 @@
 <script>
     // --------- WhatsApp click tracking + trial CAPI beacon ---------
     (function () {
+        const configuredWhatsAppNumber = @json(preg_replace('/\D+/', '', (string) config('services.whatsapp.number')));
+
         function uuidv4() {
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
@@ -1581,6 +1581,44 @@
             } catch (e) {
                 return href.toLowerCase().startsWith('whatsapp://send');
             }
+        }
+
+        function whatsappPhoneNumber(href) {
+            if (!href || !isWhatsApp(href)) return '';
+            try {
+                const url = new URL(href, window.location.href);
+                const hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+                let phone = url.searchParams.get('phone') || '';
+                if (hostname === 'wa.me') {
+                    const segment = url.pathname.split('/').filter(Boolean)[0] || '';
+                    phone = segment.toLowerCase() === 'message' ? '' : segment;
+                }
+                return phone.replace(/\D/g, '');
+            } catch (e) {
+                return '';
+            }
+        }
+
+        function isBusinessWhatsApp(href) {
+            return configuredWhatsAppNumber !== ''
+                && whatsappPhoneNumber(href) === configuredWhatsAppNumber;
+        }
+
+        function whatsappHref(el) {
+            const explicitHref = el.tagName === 'A'
+                ? el.getAttribute('href')
+                : el.getAttribute('data-wa-href');
+            if (explicitHref) return explicitHref;
+            if (el.id !== 'dw-copy') return '';
+
+            const phone = (el.getAttribute('data-wa-phone') || '').replace(/\D/g, '');
+            const template = el.getAttribute('data-wa-template')
+                || 'Hello, I got :discount% discount. Can you activate my subscription?';
+            const result = document.getElementById('dw-result-value');
+            const discount = ((result ? result.textContent : '') || '5').replace(/[^0-9]/g, '') || '5';
+            return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(
+                template.replace(':discount', discount)
+            );
         }
 
         function closestAttribute(el, attribute) {
@@ -1621,13 +1659,12 @@
             }
         }
 
-        function withLeadReference(href, eventId) {
+        function withLeadReference(href, leadCode) {
             if (!href) return href;
             try {
                 const url = new URL(href, window.location.href);
                 const message = (url.searchParams.get('text') || '')
                     .replace(/\n?Reference: OPX-[A-Z0-9]{8}\s*$/i, '');
-                const leadCode = 'OPX-' + eventId.replace(/-/g, '').slice(0, 8).toUpperCase();
                 url.searchParams.set('text', (message + '\nReference: ' + leadCode).trim());
                 return url.toString();
             } catch (e) {
@@ -1664,12 +1701,99 @@
             }
         }
 
+        function trackWhatsAppClick(eventId, href, details) {
+            try {
+                window.trackMarketingEvent('whatsapp_click', {
+                    page_path: window.location.pathname,
+                    placement: details.placement,
+                    package: details.packageName,
+                    plan: details.packageName,
+                    intent: details.intent,
+                    vendor: details.vendor,
+                    value: details.value === null ? 0 : details.value,
+                    currency: details.currency,
+                    contact_channel: 'whatsapp',
+                    event_id: eventId
+                });
+            } catch(e) { /* analytics queues may not be available yet */ }
+
+            if (details.isTrial) {
+                try {
+                    window.trackMarketingEvent('generate_lead', {
+                        value: 0, currency: "{{ $currency }}",
+                        content_name: 'WhatsApp', contact_channel: 'whatsapp', destination: href,
+                        event_id: eventId
+                    }, 'StartTrial');
+                } catch(e) { /* analytics queues may not be available yet */ }
+            }
+        }
+
+        function storeWhatsAppLead(eventId, href, details, values) {
+            return fetch("{{ route('whatsapp.leads.token') }}", {
+                method: 'GET',
+                headers: { 'Accept': 'application/json' },
+                credentials: 'same-origin',
+                cache: 'no-store'
+            }).then(function (response) {
+                if (!response.ok) throw new Error('Unable to start WhatsApp contact request.');
+                return response.json();
+            }).then(function (tokenResponse) {
+                const csrfToken = tokenResponse.csrf_token || tokenResponse.token;
+                if (!csrfToken) throw new Error('Missing request token.');
+
+                return fetch("{{ route('whatsapp.leads.store') }}", {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': csrfToken,
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    credentials: 'same-origin',
+                    body: JSON.stringify({
+                        event_id: eventId,
+                        destination: canonicalWhatsAppDestination(href),
+                        page: window.location.href,
+                        contact_name: values.name,
+                        phone: values.phone,
+                        contact_consent: values.contactConsent,
+                        locale: @json(app()->getLocale()),
+                        fbp: readCookie('_fbp'),
+                        fbc: readCookie('_fbc'),
+                        intent: details.intent,
+                        placement: details.placement,
+                        package: details.packageName,
+                        vendor: details.vendor,
+                        value: details.value,
+                        currency: details.currency,
+                        is_trial: details.isTrial
+                    })
+                });
+            }).then(function (response) {
+                if (!response.ok) throw new Error('Unable to save WhatsApp contact request.');
+                return response.json();
+            });
+        }
+
+        function openWhatsApp(href, popup) {
+            if (popup && !popup.closed) {
+                try {
+                    popup.opener = null;
+                    popup.location.replace(href);
+                    return;
+                } catch (e) {}
+            }
+            window.location.assign(href);
+        }
+
         document.addEventListener('click', function (e) {
+            if (!(e.target instanceof Element)) return;
             const el = e.target.closest('a[href], button[data-wa-href], [data-whatsapp-button], #dw-copy');
             if (!el) return;
-            let href = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('data-wa-href');
+            let href = whatsappHref(el);
             const isDynamicWhatsAppButton = el.hasAttribute('data-whatsapp-button') || el.id === 'dw-copy';
             if (!isDynamicWhatsAppButton && (!href || !isWhatsApp(href))) return;
+            if (!href || !isWhatsApp(href)) return;
 
             const rawValue = closestAttribute(el, 'data-whatsapp-value')
                 || closestAttribute(el, 'data-wa-value')
@@ -1689,41 +1813,7 @@
                 || "{{ $currency }}";
             const placement = whatsappPlacement(el);
             const eventId = uuidv4();
-
-            const canRecordLead = window.__hasTrackingConsent
-                && window.__hasTrackingConsent('marketing');
-            if (href && canRecordLead && el.hasAttribute('data-whatsapp-lead-reference')) {
-                href = withLeadReference(href, eventId);
-                if (el.tagName === 'A') el.setAttribute('href', href);
-                else el.setAttribute('data-wa-href', href);
-            }
-
-            try {
-                window.trackMarketingEvent('whatsapp_click', {
-                    page_path: window.location.pathname,
-                    placement: placement,
-                    package: packageName,
-                    plan: packageName,
-                    intent: intent,
-                    vendor: vendor,
-                    value: Number.isFinite(parsedValue) ? parsedValue : 0,
-                    currency: currency,
-                    contact_channel: 'whatsapp',
-                    event_id: eventId
-                });
-            } catch(e) { /* analytics queues may not be available yet */ }
-
-            if (isTrial) {
-                try {
-                    window.trackMarketingEvent('generate_lead', {
-                        value: 0, currency: "{{ $currency }}",
-                        content_name: 'WhatsApp', contact_channel: 'whatsapp', destination: href,
-                        event_id: eventId
-                    }, 'StartTrial');
-                } catch(e) { /* analytics queues may not be available yet */ }
-            }
-
-            sendWhatsAppClick(eventId, href, {
+            const details = {
                 intent: intent,
                 placement: placement,
                 packageName: packageName,
@@ -1731,12 +1821,58 @@
                 value: Number.isFinite(parsedValue) ? parsedValue : null,
                 currency: currency,
                 isTrial: isTrial
-            });
+            };
+
+            if (isBusinessWhatsApp(href) && window.OpplexWhatsAppLeadCapture) {
+                e.preventDefault();
+                e.stopImmediatePropagation();
+
+                if (el.hasAttribute('data-contact-number-notice-close')) {
+                    el.closest('#contact-number-notice')
+                        ?.querySelector('button[data-contact-number-notice-close]')
+                        ?.click();
+                }
+
+                const linkTarget = el.tagName === 'A'
+                    ? (el.getAttribute('target') || '').toLowerCase()
+                    : '';
+                const openInNewWindow = (linkTarget !== '' && linkTarget !== '_self')
+                    || el.hasAttribute('data-whatsapp-button');
+                window.OpplexWhatsAppLeadCapture.open({
+                    onSubmit: function (values) {
+                        const popup = openInNewWindow ? window.open('', '_blank') : null;
+                        return storeWhatsAppLead(eventId, href, details, values).then(function (response) {
+                            let destination = href;
+                            if (response.lead_code && el.hasAttribute('data-whatsapp-lead-reference')) {
+                                destination = withLeadReference(destination, response.lead_code);
+                            }
+                            trackWhatsAppClick(eventId, destination, details);
+                            openWhatsApp(destination, popup);
+                        }).catch(function (error) {
+                            if (popup && !popup.closed) popup.close();
+                            throw error;
+                        });
+                    }
+                });
+                return;
+            }
+
+            const canRecordLead = window.__hasTrackingConsent
+                && window.__hasTrackingConsent('marketing');
+            if (href && canRecordLead && el.hasAttribute('data-whatsapp-lead-reference')) {
+                const leadCode = 'OPX-' + eventId.replace(/-/g, '').slice(0, 8).toUpperCase();
+                href = withLeadReference(href, leadCode);
+                if (el.tagName === 'A') el.setAttribute('href', href);
+                else el.setAttribute('data-wa-href', href);
+            }
+
+            trackWhatsAppClick(eventId, href, details);
+            sendWhatsAppClick(eventId, href, details);
 
             if (isTrial && el.tagName === 'BUTTON' && href) {
                 e.preventDefault();
                 setTimeout(function () { window.open(href, '_blank', 'noopener'); }, 50);
             }
-        });
+        }, true);
     })();
 </script>

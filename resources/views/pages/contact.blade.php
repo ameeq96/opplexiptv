@@ -145,13 +145,8 @@
                     <div class="ctx-hours">{{ __('messages.contact.details.hours') }}</div>
 
                     <ul class="ctx-social">
-                        <li><a href="https://www.facebook.com/profile.php?id=61565476366548"
-                                class="fa fa-facebook-f" target="_blank" rel="noopener"
-                                aria-label="Facebook" title="Facebook"></a></li>
                         <li><a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
                                 target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a></li>
-                        <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                                rel="noopener" aria-label="Instagram" title="Instagram"></a></li>
                     </ul>
                 </aside>
 

@@ -38,7 +38,7 @@
                 <input type="date" name="to" value="{{ request('to') }}" class="form-control w-auto" />
 
                 <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
-                       placeholder="Search lead, package, source...">
+                       placeholder="Search name, phone, lead, package...">
 
                 <button type="submit" class="btn btn-primary">Search</button>
 
@@ -77,8 +77,9 @@
                         <th style="min-width: 120px;">
                             <input type="checkbox" id="checkAllTrials">
                         </th>
-                        <th style="min-width: 160px;">Time</th>
+                        <th style="min-width: 160px;">Latest activity</th>
                         <th style="min-width: 150px;">Lead ID</th>
+                        <th style="min-width: 220px;">Customer</th>
                         <th style="min-width: 220px;">Lead details</th>
                         <th style="min-width: 300px;">Page</th>
                         <th style="min-width: 300px;">Destination</th>
@@ -97,9 +98,28 @@
                                 <input type="checkbox" name="trial_ids[]" value="{{ $c->id }}">
                             </td>
 
-                            <td>{{ $c->created_at->format('Y-m-d H:i') }}</td>
+                            <td>{{ ($c->whatsapp_contact_consented_at ?: $c->created_at)->format('Y-m-d H:i') }}</td>
                             <td title="{{ $c->event_id }}">
                                 <strong>{{ $c->lead_code }}</strong>
+                            </td>
+
+                            <td class="text-start">
+                                @if ($c->phone_normalized)
+                                    <div><strong>{{ $c->contact_name ?: 'Unknown customer' }}</strong></div>
+                                    <a href="https://wa.me/{{ $c->phone_normalized }}" target="_blank" rel="noopener">
+                                        +{{ $c->phone_normalized }}
+                                    </a>
+                                    @if ($c->whatsapp_contact_consented_at)
+                                        <div class="small text-muted">
+                                            Form consent: {{ $c->whatsapp_contact_consented_at->format('Y-m-d H:i') }}
+                                            @if ($c->click_count > 1)
+                                                · {{ $c->click_count }} clicks
+                                            @endif
+                                        </div>
+                                    @endif
+                                @else
+                                    <span class="text-muted">—</span>
+                                @endif
                             </td>
 
                             <td class="text-start">
@@ -175,7 +195,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="12" class="text-muted">No WhatsApp leads found.</td>
+                            <td colspan="13" class="text-muted">No WhatsApp leads found.</td>
                         </tr>
                     @endforelse
                 </tbody>

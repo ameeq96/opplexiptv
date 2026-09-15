@@ -14,6 +14,8 @@
 
     @include('includes.contact-number-notice')
 
+    @include('includes.whatsapp-lead-capture')
+
     @include('includes.header')
 
     <div class="body_wrap">

@@ -62,8 +62,21 @@
 
             const isValid = (val) => /^[A-Za-z0-9\-\_]{3,32}$/.test(val.trim());
 
+            function whatsappUrl(code) {
+                const msgLines = [
+                    requestLabel,
+                    orderTemplate.replace(':order', code),
+                    fromTemplate.replace(':url', window.location.origin)
+                ];
+                return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msgLines.join('\n'));
+            }
+
             function toggle() {
-                btn.disabled = !isValid(input.value);
+                const code = (input.value || '').trim();
+                const valid = isValid(code);
+                btn.disabled = !valid;
+                if (valid) btn.setAttribute('data-wa-href', whatsappUrl(code));
+                else btn.removeAttribute('data-wa-href');
                 err.classList.add('d-none');
             }
 
@@ -76,13 +89,7 @@
                     err.classList.remove('d-none');
                     return;
                 }
-                const msgLines = [
-                    requestLabel,
-                    orderTemplate.replace(':order', code),
-                    fromTemplate.replace(':url', window.location.origin)
-                ];
-                const url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msgLines.join('\n'));
-                window.open(url, '_blank');
+                window.open(whatsappUrl(code), '_blank');
             });
         })();
     </script>

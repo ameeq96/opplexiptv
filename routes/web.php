@@ -237,6 +237,14 @@ Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'
     ->middleware('throttle:30,1')
     ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
 
+Route::get('/whatsapp-leads/token', [TrackingController::class, 'whatsappLeadToken'])
+    ->name('whatsapp.leads.token')
+    ->middleware('throttle:30,1');
+
+Route::post('/whatsapp-leads', [TrackingController::class, 'storeWhatsAppLead'])
+    ->name('whatsapp.leads.store')
+    ->middleware('throttle:10,1');
+
 Route::post('/tracking/consent', [TrackingConsentController::class, 'update'])
     ->middleware('throttle:20,1')
     ->name('tracking.consent');

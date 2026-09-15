@@ -505,27 +505,17 @@ class SchemaService
             if (preg_match('~(wa\.me|api\.whatsapp\.com|mailto:|tel:)~i', $url)) {
                 continue;
             }
+            if (!preg_match('~^https?://(?:www\.)?linkedin\.com/~i', $url)) {
+                continue;
+            }
             $urls[] = $url;
         }
 
         // Sensible defaults if the footer has no socials configured.
         if ($urls === []) {
             $urls = [
-                'https://www.facebook.com/profile.php?id=61565476366548',
-                'https://www.instagram.com/oplextv/',
+                'https://www.linkedin.com/company/digitalize-store/',
             ];
-        }
-
-        // Always include the official X profile so the brand entity resolves there.
-        $hasX = false;
-        foreach ($urls as $u) {
-            if (preg_match('~(?:^|\.)(?:x|twitter)\.com/~i', $u)) {
-                $hasX = true;
-                break;
-            }
-        }
-        if (!$hasX) {
-            $urls[] = 'https://x.com/opplex_iptv';
         }
 
         return array_values(array_unique($urls));

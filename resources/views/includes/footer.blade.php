@@ -265,10 +265,12 @@
     $footerSettings = $footer['settings'] ?? [];
     $footerLinks = $footer['links'] ?? [];
     $footerSocials = $footer['socials'] ?? [];
-    $socialProfiles = !empty($footerSocials) ? $footerSocials : [
-        ['platform' => 'Facebook', 'url' => 'https://www.facebook.com/profile.php?id=61565476366548', 'icon_class' => 'fa fa-facebook-f'],
+    $socialProfiles = array_values(array_filter($footerSocials, static function (array $social): bool {
+        $socialKey = strtolower((string) ($social['platform'] ?? '') . ' ' . (string) ($social['url'] ?? ''));
+        return str_contains($socialKey, 'linkedin');
+    }));
+    $socialProfiles = !empty($socialProfiles) ? $socialProfiles : [
         ['platform' => 'LinkedIn', 'url' => 'https://www.linkedin.com/company/digitalize-store/', 'icon_class' => 'fa fa-linkedin'],
-        ['platform' => 'Instagram', 'url' => 'https://www.instagram.com/oplextv/', 'icon_class' => 'fa fa-instagram'],
     ];
 
     // Translations with fallbacks

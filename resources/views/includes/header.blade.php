@@ -14,7 +14,7 @@
                         </li>
                         <li class="header-top__promo">
                             <marquee behavior="scroll" direction="{{ $isRtl ? 'right' : 'left' }}" scrollamount="6">
-                                <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
+                                <a href="https://whatsapp.com/channel/0029VbCtVCzFsn0lSrLBY50G" target="_blank"
                                     rel="noopener noreferrer"
                                     style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
                                     {{ __('messages.whatsapp_channel') }}
@@ -26,12 +26,8 @@
 
                 <div class="pull-right clearfix">
                     <ul class="social-box">
-                        <li><a href="https://www.facebook.com/profile.php?id=61565476366548" class="fa fa-facebook-f"
-                                target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"></a></li>
                         <li><a href="https://www.linkedin.com/company/digitalize-store/" class="fa fa-linkedin"
                                 target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a></li>
-                        <li><a href="https://www.instagram.com/oplextv/" class="fa fa-instagram" target="_blank"
-                                rel="noopener noreferrer" aria-label="Instagram" title="Instagram"></a></li>
                     </ul>
                 </div>
 
@@ -42,7 +38,7 @@
             <div class="auto-container clearfix">
                 <div class="text-center py-2">
                     <marquee behavior="scroll" direction="{{ $isRtl ? 'right' : 'left' }}" scrollamount="6">
-                        <a href="https://whatsapp.com/channel/0029VbAP0di0lwgiHJIUOz34" target="_blank"
+                        <a href="https://whatsapp.com/channel/0029VbCtVCzFsn0lSrLBY50G" target="_blank"
                             rel="noopener noreferrer"
                             style="color: #25D366; font-weight: bold; font-size: 16px; text-decoration: underline;">
                             {{ __('messages.whatsapp_channel') }}

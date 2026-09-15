@@ -12,6 +12,27 @@ return [
         'continue_cta' => 'Continuar en el sitio web',
     ],
 
+    'whatsapp_lead_capture' => [
+        'close_label' => 'Cerrar el formulario de contacto de WhatsApp',
+        'eyebrow' => 'Antes de continuar',
+        'title' => 'Continuar a WhatsApp',
+        'body' => 'Escribe tu nombre y número de WhatsApp antes de que abramos WhatsApp.',
+        'name_label' => 'Tu nombre',
+        'name_placeholder' => 'Escribe tu nombre',
+        'phone_label' => 'Número de WhatsApp',
+        'phone_placeholder' => 'Introduce tu número de WhatsApp',
+        'phone_help' => 'El código de país se añade automáticamente.',
+        'consent' => 'Acepto que Opplex IPTV guarde estos datos y se comunique conmigo sobre esta solicitud.',
+        'privacy' => 'Política de privacidad',
+        'cancel' => 'Cancelar',
+        'continue' => 'Guardar y continuar',
+        'saving' => 'Guardando...',
+        'error' => 'No hemos podido guardar tus datos. Revísalos e inténtalo de nuevo.',
+        'invalid_name' => 'Escribe tu nombre.',
+        'invalid_phone' => 'Selecciona el país correcto e introduce un número de WhatsApp válido.',
+        'consent_required' => 'Debes dar tu permiso antes de continuar.',
+    ],
+
     'common' => [
         'send' => 'Enviar',
         'read_more_about' => 'Más información sobre :title',

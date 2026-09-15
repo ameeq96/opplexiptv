@@ -10,11 +10,14 @@ class TrialClick extends Model
     use HasFactory;
 
     public const STATUSES = ['new', 'replied', 'qualified', 'paid', 'lost'];
+    public const WHATSAPP_CONTACT_CONSENT_VERSION = '2026-09-15.1';
 
     protected $guarded = [];
 
     protected $casts = [
         'value' => 'decimal:2',
+        'whatsapp_contact_consented_at' => 'datetime',
+        'click_count' => 'integer',
     ];
 
     public function getLeadCodeAttribute(): string
