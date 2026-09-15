@@ -5,6 +5,7 @@
 .config-order-summary strong{color:#0f172a;display:block}
 .config-order-summary__total{text-align:right;white-space:nowrap}
 .config-order-summary__edit{background:transparent;border:0;color:#2563eb;font-size:.78rem;font-weight:700;padding:2px 0;text-decoration:underline}
+.config-wrap button.pick{color:inherit;font:inherit}.config-wrap .pick:focus-visible{outline:3px solid #2563eb;outline-offset:3px}
 .checkout-policy{background:#fffaf0;border:1px solid #f6d88a;display:flex;gap:10px;padding:12px}
 .checkout-policy input{flex:0 0 auto;margin-top:4px}
 .checkout-policy label{font-size:.84rem;line-height:1.5;margin:0}
@@ -16,4 +17,4 @@
 .checkout-assurances{color:#475569;display:grid;font-size:.82rem;gap:8px;margin-bottom:16px}
 .checkout-assurances i{color:#059669;margin-right:6px;width:16px}
 @media (min-width:992px){.checkout-order-column{position:sticky;top:92px;align-self:flex-start}}
-@media (max-width:576px){.config-order-summary{align-items:flex-start;bottom:8px;gap:12px}.config-order-summary__total{min-width:86px}.config-order-summary strong{font-size:.9rem}}
+@media (max-width:767px){.config-order-summary{align-items:flex-start;bottom:auto;gap:12px;position:static}.config-order-summary__total{min-width:86px}.config-order-summary strong{font-size:.9rem}body.configure-page .whatsapp-icon,body.configure-page #voice-assistant{display:none!important}}

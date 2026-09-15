@@ -525,7 +525,7 @@ return [
     'checkout_pay_card_desc'           => 'Choisissez la carte et envoyez votre commande. Notre équipe confirmera le lien de paiement sécurisé sur WhatsApp avant l’activation.',
     'checkout_pay_crypto_title'        => 'Paiement en cryptomonnaie',
     'checkout_pay_crypto_desc'         => 'Choisissez la cryptomonnaie et envoyez votre commande. Notre équipe confirmera les instructions de paiement sur WhatsApp avant l’activation.',
-    'checkout_place_order_btn'         => 'Envoyer la commande',
+    'checkout_place_order_btn'         => 'Créer la commande et continuer sur WhatsApp',
 
 
     'thankyou_page' => [

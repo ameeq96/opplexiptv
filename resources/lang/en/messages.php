@@ -527,7 +527,7 @@ return [
   'checkout_pay_card_desc'         => 'Choose card and submit your order. Our team will confirm the secure payment link on WhatsApp before activation.',
   'checkout_pay_crypto_title'      => 'Crypto Payment',
   'checkout_pay_crypto_desc'       => 'Choose crypto and submit your order. Our team will confirm the payment instructions on WhatsApp before activation.',
-  'checkout_place_order_btn'       => 'Submit Order',
+  'checkout_place_order_btn'       => 'Create Order & Continue on WhatsApp',
 
   'thankyou_page' => [
     'title'       => 'Thank You For Your Order',

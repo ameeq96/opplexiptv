@@ -527,7 +527,7 @@ return [
   'checkout_pay_card_desc'           => 'Kies kaartbetaling en dien je bestelling in. Ons team bevestigt vóór activering de beveiligde betaallink via WhatsApp.',
   'checkout_pay_crypto_title'        => 'Betalen met crypto',
   'checkout_pay_crypto_desc'         => 'Kies crypto en dien je bestelling in. Ons team bevestigt vóór activering de betalingsinstructies via WhatsApp.',
-  'checkout_place_order_btn'         => 'Bestelling indienen',
+  'checkout_place_order_btn'         => 'Bestelling maken en doorgaan op WhatsApp',
 
 
   'thankyou_page' => [

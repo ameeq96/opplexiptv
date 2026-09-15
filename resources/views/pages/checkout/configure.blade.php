@@ -58,12 +58,12 @@
                 default => 'fa fa-laptop',
               };
             @endphp
-            <div class="pick"
+            <button type="button" class="pick" aria-pressed="false"
                  data-device="{{ $d->name }}"
                  data-device-id="{{ $d->id }}">
-              <div class="ico {{ $deviceIcon }}" aria-hidden="true"></div>
-              <div>{{ $d->name }}</div>
-            </div>
+              <span class="ico {{ $deviceIcon }} d-block" aria-hidden="true"></span>
+              <span class="d-block">{{ $d->name }}</span>
+            </button>
           @endforeach
         </div>
       </div>
@@ -78,11 +78,12 @@
           @php $vendors = $iptvVendors ?? ['Opplex','starshare']; @endphp
           @foreach ($vendors as $v)
             @php $vendorLabel = strtolower($v) === 'starshare' ? 'Filex' : $v; @endphp
-            <div class="pick" data-vendor="{{ $v }}" data-label="{{ $vendorLabel }}">
-              <div class="ico fa fa-signal" aria-hidden="true"></div>
-              <div>{{ $vendorLabel }}</div>
+            <button type="button" class="pick" aria-pressed="false"
+                 data-vendor="{{ $v }}" data-label="{{ $vendorLabel }}">
+              <span class="ico fa fa-signal d-block" aria-hidden="true"></span>
+              <span class="d-block">{{ $vendorLabel }}</span>
               <small>{{ __('messages.checkout_iptv_small') }}</small>
-            </div>
+            </button>
           @endforeach
         </div>
         <div class="lock-hint mt-2">
@@ -108,40 +109,40 @@
 
         <div class="item-flex">
           {{-- One connection is included in the selected subscription price. --}}
-          <div class="pick"
+          <button type="button" class="pick" aria-pressed="false" disabled
                data-kind="connection"
                data-max="1"
                data-yearly="0"
                data-plan="{{ $onePlanName }}"
                data-price="{{ $onePlanPrice }}">
-            <div class="ico fa fa-wifi" aria-hidden="true"></div>
-            <div>{{ $onePlanName }}</div>
+            <span class="ico fa fa-wifi d-block" aria-hidden="true"></span>
+            <span class="d-block">{{ $onePlanName }}</span>
             <small>{{ __('messages.checkout_one_connection_hint') }}</small>
-          </div>
+          </button>
 
           {{-- Two connections, yearly only. --}}
-          <div class="pick"
+          <button type="button" class="pick" aria-pressed="false" disabled
                data-kind="connection"
                data-max="2"
                data-yearly="1"
                data-plan="{{ __('messages.checkout_two_connection_label') }}"
                data-price="{{ number_format($filexYearlyConnectionPrices[2], 2, '.', '') }}">
-            <div class="ico fa fa-wifi" aria-hidden="true"></div>
-            <div>{{ __('messages.checkout_two_connection_label') }}</div>
+            <span class="ico fa fa-wifi d-block" aria-hidden="true"></span>
+            <span class="d-block">{{ __('messages.checkout_two_connection_label') }}</span>
             <small>{{ __('messages.checkout_two_connection_hint') }}</small>
-          </div>
+          </button>
 
           {{-- Four connections, yearly only. --}}
-          <div class="pick"
+          <button type="button" class="pick" aria-pressed="false" disabled
                data-kind="connection"
                data-max="4"
                data-yearly="1"
                data-plan="{{ __('messages.checkout_four_connection_label') }}"
                data-price="{{ number_format($filexYearlyConnectionPrices[4], 2, '.', '') }}">
-            <div class="ico fa fa-wifi" aria-hidden="true"></div>
-            <div>{{ __('messages.checkout_four_connection_label') }}</div>
+            <span class="ico fa fa-wifi d-block" aria-hidden="true"></span>
+            <span class="d-block">{{ __('messages.checkout_four_connection_label') }}</span>
             <small>{{ __('messages.checkout_four_connection_hint') }}</small>
-          </div>
+          </button>
         </div>
       </div>
 
@@ -168,7 +169,7 @@
           <div class="section-label">{{ __('messages.checkout_iptv_packages_label') }}</div>
           <div class="pkg-grid mb-5 mt-4">
             @foreach ($iptvPackages as $p)
-              <div class="pick pkg-card"
+              <button type="button" class="pick pkg-card" aria-pressed="false"
                    data-kind="iptv"
                    data-package-id="{{ $p['id'] ?? '' }}"
                    data-vendor="{{ strtolower($p['vendor']) }}"
@@ -176,16 +177,16 @@
                    data-duration="{{ $p['duration_months'] }}"
                    data-unit="{{ strtolower($p['unit']) }}"
                    data-price="{{ number_format($p['price'], 2, '.', '') }}">
-                <div class="pkg-badge fa fa-film" aria-hidden="true"></div>
-                <div class="pkg-title">{{ $p['title'] }}</div>
+                <span class="pkg-badge fa fa-film" aria-hidden="true"></span>
+                <span class="pkg-title d-block">{{ $p['title'] }}</span>
                 @if (($p['old'] ?? 0) > 0)
-                  <div class="pkg-old">${{ number_format($p['old'], 2) }}</div>
+                  <span class="pkg-old d-block">${{ number_format($p['old'], 2) }}</span>
                 @endif
-                <div>
+                <span class="d-block">
                   <span class="pkg-new">${{ number_format($p['price'], 2) }}</span>
                   <span class="pkg-unit">{{ $p['unit'] }}</span>
-                </div>
-              </div>
+                </span>
+              </button>
             @endforeach
           </div>
         </div>
@@ -195,21 +196,21 @@
           <div class="section-label">{{ __('messages.checkout_reseller_packages_label') }}</div>
           <div class="pkg-grid mb-3 mt-4">
             @foreach ($resellerPackages as $p)
-              <div class="pick pkg-card mb-2 mt-2"
+              <button type="button" class="pick pkg-card mb-2 mt-2" aria-pressed="false"
                    data-kind="reseller"
                    data-package-id="{{ $p['id'] ?? '' }}"
                    data-vendor="{{ strtolower($p['vendor']) }}"
                    data-plan="{{ $p['title'] }}"
                    data-unit="{{ strtolower($p['unit']) }}"
                    data-price="{{ number_format($p['price'], 2, '.', '') }}">
-                <div class="pkg-badge fa fa-line-chart" aria-hidden="true"></div>
-                <div class="pkg-title">{{ $p['title'] }}</div>
-                <div class="pkg-old">${{ number_format($p['old'], 2) }}</div>
-                <div>
+                <span class="pkg-badge fa fa-line-chart" aria-hidden="true"></span>
+                <span class="pkg-title d-block">{{ $p['title'] }}</span>
+                <span class="pkg-old d-block">${{ number_format($p['old'], 2) }}</span>
+                <span class="d-block">
                   <span class="pkg-new">${{ number_format($p['price'], 2) }}</span>
                   <span class="pkg-unit">{{ $p['unit'] }}</span>
-                </div>
-              </div>
+                </span>
+              </button>
             @endforeach
           </div>
         </div>
@@ -242,6 +243,8 @@
 
 <script>
 (function(){
+  document.body.classList.add('configure-page');
+
   // ---------- Helpers ----------
   const canon = (s) => String(s||'').toLowerCase().trim().replace(/\s+/g,'').replace(/[^a-z0-9]/g,'');
   const nice  = (s) => String(s||'').trim();
@@ -291,9 +294,19 @@
     packageSection.scrollIntoView({behavior:'smooth', block:'start'});
   });
 
-  function lockConnection(lock=true){ connectionSection.classList.toggle('locked', lock); }
+  function setPickActive(card, active){
+    card.classList.toggle('active', active);
+    card.setAttribute('aria-pressed', active ? 'true' : 'false');
+  }
+  function lockConnection(lock=true){
+    connectionSection.classList.toggle('locked', lock);
+    connectionSection.querySelectorAll('[data-kind="connection"]').forEach(card=>{
+      card.disabled = lock;
+      card.setAttribute('aria-disabled', lock ? 'true' : 'false');
+    });
+  }
   function toNumber(v){ const n = parseFloat(v); return isNaN(n)?0:n; }
-  function clearGroup(sel){ document.querySelectorAll(sel).forEach(x=>x.classList.remove('active')); }
+  function clearGroup(sel){ document.querySelectorAll(sel).forEach(x=>setPickActive(x, false)); }
   function flash(el){ el.style.boxShadow='0 0 0 4px rgba(37,99,235,.35)'; setTimeout(()=> el.style.boxShadow='',800); }
 
   // ---------- Connection visibility (vendor + yearly logic) ----------
@@ -312,7 +325,7 @@
       card.style.display = show ? '' : 'none';
 
       if (!show && card.classList.contains('active')) {
-        card.classList.remove('active');
+        setPickActive(card, false);
         connectionPriceInp.value = '';
         connectionNameInp.value = '';
         updateSummary();
@@ -327,7 +340,7 @@
       const show = !target || v === target;
       card.style.display = show ? '' : 'none';
       if(!show && card.classList.contains('active')){
-        card.classList.remove('active');
+        setPickActive(card, false);
         pkgPriceInp.value='';
         packageType.value='';
         if(packageIdInput) packageIdInput.value='';
@@ -343,7 +356,7 @@
       const show = !target || v === target;
       card.style.display = show ? '' : 'none';
       if(!show && card.classList.contains('active')){
-        card.classList.remove('active');
+        setPickActive(card, false);
         pkgPriceInp.value='';
         packageType.value='';
         if(packageIdInput) packageIdInput.value='';
@@ -430,8 +443,8 @@
         vendorSection.scrollIntoView({behavior:'smooth', block:'center'});
         return;
       }
-      document.querySelectorAll('[data-kind="connection"]').forEach(x=>x.classList.remove('active'));
-      card.classList.add('active');
+      clearGroup('[data-kind="connection"]');
+      setPickActive(card, true);
       connectionPriceInp.value = price;
       connectionNameInp.value = nice(card.getAttribute('data-plan'));
       updateSummary();
@@ -450,8 +463,8 @@
         vendorSection.scrollIntoView({behavior:'smooth', block:'center'});
         return;
       }
-      document.querySelectorAll('[data-kind="iptv"]').forEach(x=>x.classList.remove('active'));
-      card.classList.add('active');
+      clearGroup('[data-kind="iptv"]');
+      setPickActive(card, true);
       pkgPriceInp.value  = price;
       packageType.value  = 'iptv';
       if (packageIdInput) packageIdInput.value = card.getAttribute('data-package-id') || '';
@@ -474,8 +487,8 @@
     }
 
     if(kind==='reseller'){
-      document.querySelectorAll('[data-kind="reseller"]').forEach(x=>x.classList.remove('active'));
-      card.classList.add('active');
+      clearGroup('[data-kind="reseller"]');
+      setPickActive(card, true);
       pkgPriceInp.value  = price;
       packageType.value  = 'reseller';
       if (packageIdInput) packageIdInput.value = card.getAttribute('data-package-id') || '';
@@ -511,8 +524,8 @@
 
     if (!target) target = cards[0];
 
-    document.querySelectorAll('[data-kind="connection"]').forEach(x=>x.classList.remove('active'));
-    target.classList.add('active');
+    clearGroup('[data-kind="connection"]');
+    setPickActive(target, true);
     connectionPriceInp.value = target.getAttribute('data-price') || '0';
     connectionNameInp.value = nice(target.getAttribute('data-plan'));
     updateSummary();
@@ -522,7 +535,7 @@
   document.querySelectorAll('[data-device]').forEach(c=>{
     c.addEventListener('click', ()=>{
       clearGroup('[data-device]');
-      c.classList.add('active');
+      setPickActive(c, true);
       deviceInput.value = c.getAttribute('data-device') || '';
       if (deviceIdInput) deviceIdInput.value = c.getAttribute('data-device-id') || '';
       enableIfReady();
@@ -539,7 +552,7 @@
   document.querySelectorAll('#vendorSection [data-vendor]').forEach(c=>{
     c.addEventListener('click', ()=>{
       clearGroup('#vendorSection [data-vendor]');
-      c.classList.add('active');
+      setPickActive(c, true);
 
       const vendorValue = nice(c.getAttribute('data-vendor'));
       const label = nice(c.getAttribute('data-label') || vendorValue);

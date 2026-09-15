@@ -527,7 +527,7 @@ return [
   'checkout_pay_card_desc'           => 'اختر البطاقة وأرسل الطلب. سيؤكد فريقنا رابط الدفع الآمن عبر واتساب قبل التفعيل.',
   'checkout_pay_crypto_title'        => 'الدفع بالعملات الرقمية',
   'checkout_pay_crypto_desc'         => 'اختر العملات الرقمية وأرسل الطلب. سيؤكد فريقنا تعليمات الدفع عبر واتساب قبل التفعيل.',
-  'checkout_place_order_btn'         => 'إرسال الطلب',
+  'checkout_place_order_btn'         => 'إنشاء الطلب والمتابعة عبر واتساب',
 
 
   'thankyou_page' => [

@@ -1,7 +1,8 @@
 @php
     $contactNumber = config('services.whatsapp.number');
     $contactDisplay = config('services.whatsapp.display');
-    $contactNoticeKey = 'opplex.contactNumberNotice.'.($contactNumber ?: 'unavailable');
+    $contactNoticeVersion = 'v1';
+    $contactNoticeKey = 'opplex.contactNumberNotice.'.$contactNoticeVersion.'.'.($contactNumber ?: 'unavailable');
     $contactNoticeDirection = in_array(app()->getLocale(), ['ar', 'ur'], true) ? 'rtl' : 'ltr';
     $contactNoticeWhatsappMessage = __('interface.contact_number_notice.whatsapp_message');
 @endphp
@@ -179,10 +180,23 @@
         if (!notice) return;
 
         var storageKey = @json($contactNoticeKey);
+        var noticeVersion = @json($contactNoticeVersion);
+        var contactNumber = @json($contactNumber ?: 'unavailable');
+        var dismissalDuration = 30 * 24 * 60 * 60 * 1000;
         var previousFocus = null;
 
         function wasDismissed() {
-            try { return w.sessionStorage.getItem(storageKey) === '1'; }
+            try {
+                var dismissal = JSON.parse(w.localStorage.getItem(storageKey));
+                var isCurrent = dismissal
+                    && dismissal.version === noticeVersion
+                    && dismissal.contactNumber === contactNumber
+                    && typeof dismissal.expiresAt === 'number'
+                    && dismissal.expiresAt > Date.now();
+
+                if (!isCurrent) w.localStorage.removeItem(storageKey);
+                return isCurrent;
+            }
             catch (e) { return false; }
         }
 
@@ -198,7 +212,13 @@
 
         function closeNotice() {
             if (notice.hidden) return;
-            try { w.sessionStorage.setItem(storageKey, '1'); } catch (e) {}
+            try {
+                w.localStorage.setItem(storageKey, JSON.stringify({
+                    version: noticeVersion,
+                    contactNumber: contactNumber,
+                    expiresAt: Date.now() + dismissalDuration
+                }));
+            } catch (e) {}
             notice.hidden = true;
             d.body.classList.remove('contact-number-notice-open');
             if (w.__activeMarketingPrompt === 'contact-number-notice') {

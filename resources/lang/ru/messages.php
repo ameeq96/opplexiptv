@@ -529,7 +529,7 @@ return [
   'checkout_pay_card_desc'           => 'Выберите карту и отправьте заказ. Наша команда подтвердит безопасную ссылку для оплаты в WhatsApp до активации.',
   'checkout_pay_crypto_title'        => 'Оплата криптовалютой',
   'checkout_pay_crypto_desc'         => 'Выберите криптовалюту и отправьте заказ. Наша команда подтвердит инструкции по оплате в WhatsApp до активации.',
-  'checkout_place_order_btn'         => 'Отправить заказ',
+  'checkout_place_order_btn'         => 'Создать заказ и продолжить в WhatsApp',
 
 
   'thankyou_page' => [

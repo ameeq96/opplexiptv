@@ -101,7 +101,8 @@
 
     <div class="thank-actions">
       @if($whatsappPaymentUrl)
-        <a href="{{ $whatsappPaymentUrl }}" class="thank-btn-primary" target="_blank" rel="noopener noreferrer"
+        <a href="{{ $whatsappPaymentUrl }}" class="thank-btn-primary" id="whatsappPaymentLink"
+          target="_blank" rel="noopener noreferrer" data-whatsapp-skip-lead-capture
           data-whatsapp-click
           data-whatsapp-placement="thank_you_payment"
           data-whatsapp-intent="payment"
@@ -130,23 +131,42 @@
 @if($orderSummary)
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      if (typeof window.trackMarketingEvent !== 'function') return;
-      if (typeof window.__loadConversionTracking === 'function') {
-        window.__loadConversionTracking();
+      const paymentLink = document.getElementById('whatsappPaymentLink');
+      let paymentRedirectTimer = null;
+
+      if (paymentLink) {
+        paymentLink.addEventListener('click', function(event) {
+          if (event.isTrusted && paymentRedirectTimer) {
+            window.clearTimeout(paymentRedirectTimer);
+          }
+        }, { once: true });
+
+        paymentRedirectTimer = window.setTimeout(function() {
+          paymentLink.target = '_self';
+          paymentLink.click();
+        }, 300);
       }
-      window.trackMarketingEvent('order_submitted', {
-        transaction_id: @json((string) $orderSummary['id']),
-        currency: @json($orderSummary['currency']),
-        value: @json((float) $orderSummary['total']),
-        items: [{
-          item_id: @json((string) $orderSummary['package_id']),
-          item_name: @json($orderSummary['package']),
-          item_brand: @json($orderSummary['vendor']),
-          item_category: @json($orderSummary['package_type']),
-          price: @json((float) $orderSummary['total']),
-          quantity: 1
-        }]
-      }, 'Lead');
+
+      try {
+        if (typeof window.trackMarketingEvent === 'function') {
+          if (typeof window.__loadConversionTracking === 'function') {
+            window.__loadConversionTracking();
+          }
+          window.trackMarketingEvent('order_submitted', {
+            transaction_id: @json((string) $orderSummary['id']),
+            currency: @json($orderSummary['currency']),
+            value: @json((float) $orderSummary['total']),
+            items: [{
+              item_id: @json((string) $orderSummary['package_id']),
+              item_name: @json($orderSummary['package']),
+              item_brand: @json($orderSummary['vendor']),
+              item_category: @json($orderSummary['package_type']),
+              price: @json((float) $orderSummary['total']),
+              quantity: 1
+            }]
+          }, 'Lead');
+        }
+      } catch (error) {}
     });
   </script>
 @endif

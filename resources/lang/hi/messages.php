@@ -528,7 +528,7 @@ return [
   'checkout_pay_card_desc'           => 'कार्ड चुनकर ऑर्डर जमा करें। हमारी टीम एक्टिवेशन से पहले WhatsApp पर सुरक्षित भुगतान लिंक की पुष्टि करेगी।',
   'checkout_pay_crypto_title'        => 'क्रिप्टो भुगतान',
   'checkout_pay_crypto_desc'         => 'क्रिप्टो चुनकर ऑर्डर जमा करें। हमारी टीम एक्टिवेशन से पहले WhatsApp पर भुगतान के निर्देशों की पुष्टि करेगी।',
-  'checkout_place_order_btn'         => 'ऑर्डर जमा करें',
+  'checkout_place_order_btn'         => 'ऑर्डर बनाएं और WhatsApp पर जारी रखें',
 
 
   'thankyou_page' => [

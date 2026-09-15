@@ -1191,6 +1191,20 @@
         }
 
         @media (max-width: 767px) {
+            .native-home-hero,
+            .native-home-hero .native-carousel--hero,
+            .native-home-hero .native-carousel__viewport,
+            .native-home-hero .native-carousel__track,
+            .native-home-hero .native-carousel__slide {
+                width: 100%;
+                height: 440px !important;
+            }
+
+            .native-home-hero .slide .custom-height {
+                width: 100%;
+                height: 100%;
+            }
+
             .hero-section-mobile {
                 min-height: 320px !important;
                 display: flex;
@@ -1838,7 +1852,10 @@
                 isTrial: isTrial
             };
 
-            if (isBusinessWhatsApp(href) && window.OpplexWhatsAppLeadCapture && !hasSavedWhatsAppLead()) {
+            if (isBusinessWhatsApp(href)
+                && !el.hasAttribute('data-whatsapp-skip-lead-capture')
+                && window.OpplexWhatsAppLeadCapture
+                && !hasSavedWhatsAppLead()) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
 
