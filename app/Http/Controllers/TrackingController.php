@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\SendFacebookCapiEvent;
+use App\Models\Order;
 use App\Models\TrialClick;
 use App\Services\Clients\CustomerIdentityService;
 use Illuminate\Http\Request;
@@ -42,7 +43,7 @@ class TrackingController extends Controller
                 'string',
                 'max:512',
                 function (string $attribute, mixed $value, \Closure $fail): void {
-                    if (!$this->isConfiguredBusinessWhatsAppDestination((string) $value)) {
+                    if (!$this->isWhatsAppDestination((string) $value)) {
                         $fail('The selected WhatsApp destination is invalid.');
                     }
                 },
@@ -257,6 +258,7 @@ class TrackingController extends Controller
             'fbc' => ['nullable', 'string', 'max:256'],
             'intent' => ['nullable', 'string', 'max:32'],
             'placement' => ['nullable', 'string', 'max:128'],
+            'order_id' => ['nullable', 'integer', 'min:1'],
             'package' => ['nullable', 'string', 'max:191'],
             'vendor' => ['nullable', 'string', 'max:32'],
             'value' => ['nullable', 'numeric', 'min:0', 'max:99999999.99'],
@@ -280,7 +282,30 @@ class TrackingController extends Controller
         $fbc = $normalize(($data['fbc'] ?? null) ?: $request->cookie('_fbc'), 256);
         $intent = $normalize($data['intent'] ?? null, 32)
             ?? (($data['is_trial'] ?? false) ? 'trial' : 'contact');
+        $placement = $normalize($data['placement'] ?? null, 128);
         $isTrial = ($data['is_trial'] ?? false) && $intent === 'trial';
+        $orderId = isset($data['order_id']) ? (int) $data['order_id'] : null;
+        $whatsappPaymentOrders = (array) $request->session()->get('whatsapp_payment_orders', []);
+        $paymentContextCreatedAt = $orderId === null
+            ? null
+            : ($whatsappPaymentOrders[(string) $orderId] ?? null);
+        $userId = null;
+
+        if ($intent === 'payment'
+            && $placement === 'thank_you_payment'
+            && is_numeric($paymentContextCreatedAt)
+            && (int) $paymentContextCreatedAt >= now()->subMinutes(30)->timestamp
+        ) {
+            $userId = Order::query()->whereKey($orderId)->value('user_id');
+        }
+
+        if ($userId === null) {
+            return response()->json([
+                'ok' => true,
+                'tracked' => false,
+                'requires_contact' => true,
+            ], 202);
+        }
 
         $utm = [
             'utm_source' => $normalize($request->session()->get('fb.utm_source'), 128),
@@ -303,10 +328,11 @@ class TrackingController extends Controller
         $click = TrialClick::firstOrCreate(
             ['event_id' => $eventId],
             [
+                'user_id'      => $userId,
                 'destination'  => $dest,
                 'page'         => $page,
                 'intent'       => $intent,
-                'placement'    => $normalize($data['placement'] ?? null, 128),
+                'placement'    => $placement,
                 'package_name' => $normalize($data['package'] ?? null, 191),
                 'vendor'       => $normalize($data['vendor'] ?? null, 32),
                 'value'        => isset($data['value']) ? round((float) $data['value'], 2) : null,
@@ -323,6 +349,15 @@ class TrackingController extends Controller
                 'referrer'     => $request->headers->get('referer'),
             ]
         );
+
+        if ($userId !== null && $click->user_id === null) {
+            $click->forceFill(['user_id' => $userId])->save();
+        }
+
+        if ($orderId !== null && (int) $click->user_id === (int) $userId && $userId !== null) {
+            unset($whatsappPaymentOrders[(string) $orderId]);
+            $request->session()->put('whatsapp_payment_orders', $whatsappPaymentOrders);
+        }
 
         $payload = [
             'event_time'       => time(),
@@ -369,41 +404,22 @@ class TrackingController extends Controller
         return false;
     }
 
-    private function isConfiguredBusinessWhatsAppDestination(string $destination): bool
+    private function isWhatsAppDestination(string $destination): bool
     {
-        $businessNumber = preg_replace('/\D+/', '', (string) config('services.whatsapp.number')) ?? '';
-        if ($businessNumber === '') {
-            return false;
-        }
-
-        $parts = parse_url($destination);
+        $parts = parse_url(trim($destination));
         if (!is_array($parts)) {
             return false;
         }
 
         $scheme = strtolower((string) ($parts['scheme'] ?? ''));
-        $host = strtolower((string) ($parts['host'] ?? ''));
-        parse_str((string) ($parts['query'] ?? ''), $query);
-        $destinationNumber = null;
+        $host = preg_replace('/^www\./', '', strtolower((string) ($parts['host'] ?? ''))) ?? '';
 
-        if ($scheme === 'whatsapp' && strtolower((string) ($parts['host'] ?? '')) === 'send') {
-            $destinationNumber = $query['phone'] ?? null;
-        } elseif (in_array($scheme, ['http', 'https'], true) && in_array($host, ['wa.me', 'www.wa.me'], true)) {
-            $path = rawurldecode(trim((string) ($parts['path'] ?? ''), '/'));
-            if (preg_match('/^\+?\d+$/', $path) === 1) {
-                $destinationNumber = $path;
-            }
-        } elseif (in_array($scheme, ['http', 'https'], true) && in_array($host, ['api.whatsapp.com', 'web.whatsapp.com', 'www.whatsapp.com'], true)) {
-            $destinationNumber = $query['phone'] ?? null;
+        if ($scheme === 'whatsapp') {
+            return $host === 'send';
         }
 
-        if (!is_string($destinationNumber)) {
-            return false;
-        }
-
-        $destinationNumber = preg_replace('/\D+/', '', $destinationNumber) ?? '';
-
-        return $destinationNumber !== '' && hash_equals($businessNumber, $destinationNumber);
+        return in_array($scheme, ['http', 'https'], true)
+            && ($host === 'wa.me' || $host === 'whatsapp.com' || str_ends_with($host, '.whatsapp.com'));
     }
 
     private function urlWithoutQueryOrFragment(?string $url): ?string

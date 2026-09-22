@@ -93,6 +93,10 @@
                 </thead>
                 <tbody>
                     @forelse ($clicks as $c)
+                        @php
+                            $customerName = $c->contact_name ?: $c->user?->name;
+                            $customerPhone = $c->phone_normalized ?: $c->user?->phone_normalized;
+                        @endphp
                         <tr>
                             <td>
                                 <input type="checkbox" name="trial_ids[]" value="{{ $c->id }}">
@@ -104,11 +108,13 @@
                             </td>
 
                             <td class="text-start">
-                                @if ($c->phone_normalized)
-                                    <div><strong>{{ $c->contact_name ?: 'Unknown customer' }}</strong></div>
-                                    <a href="https://wa.me/{{ $c->phone_normalized }}" target="_blank" rel="noopener">
-                                        +{{ $c->phone_normalized }}
-                                    </a>
+                                @if ($customerName || $customerPhone)
+                                    <div><strong>{{ $customerName ?: 'Unknown customer' }}</strong></div>
+                                    @if ($customerPhone)
+                                        <a href="https://wa.me/{{ $customerPhone }}" target="_blank" rel="noopener">
+                                            +{{ $customerPhone }}
+                                        </a>
+                                    @endif
                                     @if ($c->whatsapp_contact_consented_at)
                                         <div class="small text-muted">
                                             Form consent: {{ $c->whatsapp_contact_consented_at->format('Y-m-d H:i') }}

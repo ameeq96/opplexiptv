@@ -748,6 +748,13 @@ class HomeController extends Controller
             ]);
         }
 
+        $whatsappPaymentOrders = (array) $request->session()->get('whatsapp_payment_orders', []);
+        $whatsappPaymentOrders[(string) $order->id] = $now->timestamp;
+        $request->session()->put(
+            'whatsapp_payment_orders',
+            array_slice($whatsappPaymentOrders, -5, null, true)
+        );
+
         return redirect()
             ->route('thankyou')
             ->with('success', __('interface.checkout.order_received', ['id' => $order->id]))

@@ -1573,23 +1573,6 @@
 <script>
     // --------- WhatsApp click tracking + trial CAPI beacon ---------
     (function () {
-        const configuredWhatsAppNumber = @json(preg_replace('/\D+/', '', (string) config('services.whatsapp.number')));
-        const savedWhatsAppLeadKey = 'opplex.whatsappLeadSaved.' + configuredWhatsAppNumber;
-
-        function hasSavedWhatsAppLead() {
-            try {
-                return window.localStorage.getItem(savedWhatsAppLeadKey) === '1';
-            } catch (e) {
-                return false;
-            }
-        }
-
-        function rememberSavedWhatsAppLead() {
-            try {
-                window.localStorage.setItem(savedWhatsAppLeadKey, '1');
-            } catch (e) {}
-        }
-
         function uuidv4() {
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
@@ -1610,27 +1593,6 @@
             } catch (e) {
                 return href.toLowerCase().startsWith('whatsapp://send');
             }
-        }
-
-        function whatsappPhoneNumber(href) {
-            if (!href || !isWhatsApp(href)) return '';
-            try {
-                const url = new URL(href, window.location.href);
-                const hostname = url.hostname.toLowerCase().replace(/^www\./, '');
-                let phone = url.searchParams.get('phone') || '';
-                if (hostname === 'wa.me') {
-                    const segment = url.pathname.split('/').filter(Boolean)[0] || '';
-                    phone = segment.toLowerCase() === 'message' ? '' : segment;
-                }
-                return phone.replace(/\D/g, '');
-            } catch (e) {
-                return '';
-            }
-        }
-
-        function isBusinessWhatsApp(href) {
-            return configuredWhatsAppNumber !== ''
-                && whatsappPhoneNumber(href) === configuredWhatsAppNumber;
         }
 
         function whatsappHref(el) {
@@ -1711,6 +1673,7 @@
                 fbc:readCookie('_fbc'),
                 intent:details.intent,
                 placement:details.placement,
+                order_id:details.orderId,
                 package:details.packageName,
                 vendor:details.vendor,
                 value:details.value,
@@ -1845,6 +1808,7 @@
             const details = {
                 intent: intent,
                 placement: placement,
+                orderId: closestAttribute(el, 'data-whatsapp-order-id'),
                 packageName: packageName,
                 vendor: vendor,
                 value: Number.isFinite(parsedValue) ? parsedValue : null,
@@ -1852,10 +1816,7 @@
                 isTrial: isTrial
             };
 
-            if (isBusinessWhatsApp(href)
-                && !el.hasAttribute('data-whatsapp-skip-lead-capture')
-                && window.OpplexWhatsAppLeadCapture
-                && !hasSavedWhatsAppLead()) {
+            if (window.OpplexWhatsAppLeadCapture) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
 
@@ -1878,16 +1839,15 @@
                             const leadCode = 'OPX-' + eventId.replace(/-/g, '').slice(0, 8).toUpperCase();
                             destination = withLeadReference(destination, leadCode);
                         }
-                        if (popup) openWhatsApp(destination, popup);
 
                         return storeWhatsAppLead(eventId, href, details, values).then(function (response) {
                             if (response.lead_code && el.hasAttribute('data-whatsapp-lead-reference')) {
                                 destination = withLeadReference(destination, response.lead_code);
                             }
-                            rememberSavedWhatsAppLead();
                             trackWhatsAppClick(eventId, destination, details);
-                            if (!popup) openWhatsApp(destination, null);
+                            openWhatsApp(destination, popup);
                         }).catch(function (error) {
+                            if (popup && !popup.closed) popup.close();
                             throw error;
                         });
                     }

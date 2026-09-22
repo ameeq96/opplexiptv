@@ -16,7 +16,7 @@ class TrialClickController extends Controller
         $perPage = (int) $request->input('per_page', 10);
         if (!in_array($perPage, [10,20,30,40,100], true)) $perPage = 10;
 
-        $q = TrialClick::query();
+        $q = TrialClick::query()->with('user:id,name,phone_normalized');
         $activityAt = DB::raw('COALESCE(whatsapp_contact_consented_at, created_at)');
 
         if (in_array($request->input('status'), TrialClick::STATUSES, true)) {
@@ -40,7 +40,11 @@ class TrialClickController extends Controller
                   ->orWhere('package_name', 'like', "%$search%")
                   ->orWhere('vendor', 'like', "%$search%")
                   ->orWhere('status', 'like', "%$search%")
-                  ->orWhere('ip', 'like', "%$search%");
+                  ->orWhere('ip', 'like', "%$search%")
+                  ->orWhereHas('user', function ($user) use ($search) {
+                      $user->where('name', 'like', "%$search%")
+                          ->orWhere('phone_normalized', 'like', "%$search%");
+                  });
             });
         }
 
@@ -94,7 +98,7 @@ class TrialClickController extends Controller
     public function export(Request $request): StreamedResponse
     {
         $filename = 'whatsapp_leads_'.now()->format('Ymd_His').'.csv';
-        $q = TrialClick::query()->orderByDesc('id');
+        $q = TrialClick::query()->with('user:id,name,phone_normalized')->orderByDesc('id');
 
         return response()->streamDownload(function () use ($q) {
             $out = fopen('php://output', 'w');
@@ -111,7 +115,9 @@ class TrialClickController extends Controller
                 foreach ($rows as $r) {
                     $row = [
                         $r->id, $r->lead_code, $r->event_id, $r->created_at,
-                        $r->contact_name, $r->phone_normalized, $r->whatsapp_contact_consented_at,
+                        $r->contact_name ?: $r->user?->name,
+                        $r->phone_normalized ?: $r->user?->phone_normalized,
+                        $r->whatsapp_contact_consented_at,
                         $r->consent_version, $r->consent_source, $r->consent_locale, $r->click_count,
                         $r->intent, $r->placement, $r->package_name, $r->vendor, $r->value, $r->currency, $r->status,
                         $r->page, $r->destination,

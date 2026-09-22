@@ -102,10 +102,11 @@
     <div class="thank-actions">
       @if($whatsappPaymentUrl)
         <a href="{{ $whatsappPaymentUrl }}" class="thank-btn-primary" id="whatsappPaymentLink"
-          target="_blank" rel="noopener noreferrer" data-whatsapp-skip-lead-capture
+          target="_blank" rel="noopener noreferrer"
           data-whatsapp-click
           data-whatsapp-placement="thank_you_payment"
           data-whatsapp-intent="payment"
+          data-whatsapp-order-id="{{ $orderSummary['id'] }}"
           data-whatsapp-package="{{ $orderSummary['package'] }}"
           data-whatsapp-value="{{ number_format((float) $orderSummary['total'], 2, '.', '') }}"
           data-whatsapp-currency="{{ $orderSummary['currency'] }}">
