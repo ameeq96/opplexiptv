@@ -3,29 +3,13 @@
 @php
     $isDocumentEnglish = true;
     $documentContact = __('document_support.contact', ['phone' => config('services.whatsapp.display')]);
-    $phoneCountries = [
-        'PK' => ['dialCode' => '+92', 'minDigits' => 10, 'maxDigits' => 10],
-        'CA / US' => ['dialCode' => '+1', 'minDigits' => 10, 'maxDigits' => 10],
-        'GB' => ['dialCode' => '+44', 'minDigits' => 10, 'maxDigits' => 10],
-        'AE' => ['dialCode' => '+971', 'minDigits' => 9, 'maxDigits' => 9],
-        'SA' => ['dialCode' => '+966', 'minDigits' => 9, 'maxDigits' => 9],
-        'IN' => ['dialCode' => '+91', 'minDigits' => 10, 'maxDigits' => 10],
-        'DE' => ['dialCode' => '+49', 'minDigits' => 9, 'maxDigits' => 13],
-        'FR' => ['dialCode' => '+33', 'minDigits' => 9, 'maxDigits' => 9],
-        'ES' => ['dialCode' => '+34', 'minDigits' => 9, 'maxDigits' => 9],
-        'IT' => ['dialCode' => '+39', 'minDigits' => 10, 'maxDigits' => 13],
-        'NL' => ['dialCode' => '+31', 'minDigits' => 9, 'maxDigits' => 9],
-        'PT' => ['dialCode' => '+351', 'minDigits' => 9, 'maxDigits' => 9],
-        'RU' => ['dialCode' => '+7', 'minDigits' => 10, 'maxDigits' => 10],
-        'TR' => ['dialCode' => '+90', 'minDigits' => 10, 'maxDigits' => 10],
-        'AU' => ['dialCode' => '+61', 'minDigits' => 9, 'maxDigits' => 9],
-        'NZ' => ['dialCode' => '+64', 'minDigits' => 8, 'maxDigits' => 10],
-        'ZA' => ['dialCode' => '+27', 'minDigits' => 9, 'maxDigits' => 9],
-        'NG' => ['dialCode' => '+234', 'minDigits' => 10, 'maxDigits' => 11],
-        'BD' => ['dialCode' => '+880', 'minDigits' => 10, 'maxDigits' => 10],
-        'LK' => ['dialCode' => '+94', 'minDigits' => 9, 'maxDigits' => 9],
-        'OTHER' => ['dialCode' => '', 'minDigits' => 7, 'maxDigits' => 15],
-    ];
+    $phoneCountries = collect(\Nakanakaii\Countries\Countries::all())
+        ->filter(static fn (array $country): bool => preg_match('/^\d+$/', (string) ($country['dialCode'] ?? '')) === 1)
+        ->sortBy(static fn (array $country): string => (($country['regionCode'] ?? '') === '' ? '0' : '1')
+            . (string) ($country['name'] ?? ''))
+        ->unique('code')
+        ->sortBy(static fn (array $country): string => (string) ($country['name'] ?? ''))
+        ->values();
 @endphp
 
 @section('title', $isDocumentEnglish ? $documentContact['hero']['heading'] : __('messages.contact.title'))
@@ -186,19 +170,30 @@
                                         {{-- Phone --}}
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                             <div class="ctx-phone">
-                                                <label class="sr-only" for="phone-country-code">{{ __('document_ui.contact.country_code') }}</label>
-                                                <select id="phone-country-code" class="ctx-phone__country"
-                                                    aria-label="{{ __('document_ui.contact.country_code') }}" dir="ltr">
-                                                    @foreach ($phoneCountries as $country => $phoneCountry)
-                                                        <option value="{{ $phoneCountry['dialCode'] }}"
-                                                            data-min-digits="{{ $phoneCountry['minDigits'] }}"
-                                                            data-max-digits="{{ $phoneCountry['maxDigits'] }}"
-                                                            @if ($country === 'IT') data-preserve-leading-zero="true" @endif
-                                                            @selected($country === 'PK')>
-                                                            {{ $country === 'OTHER' ? __('document_ui.contact.other_country') : $country }} {{ $phoneCountry['dialCode'] }}
+                                                <div class="ctx-phone__country-control">
+                                                    <label class="sr-only" for="phone-country-code">{{ __('document_ui.contact.country_code') }}</label>
+                                                    <select id="phone-country-code" class="ctx-phone__country"
+                                                        aria-label="{{ __('document_ui.contact.country_code') }}"
+                                                        autocomplete="tel-country-code" dir="ltr">
+                                                        @foreach ($phoneCountries as $phoneCountry)
+                                                            @php($countryCode = strtoupper((string) ($phoneCountry['code'] ?? '')))
+                                                            <option value="+{{ $phoneCountry['dialCode'] }}"
+                                                                data-country-code="{{ $countryCode }}"
+                                                                data-country-name="{{ $phoneCountry['name'] }}"
+                                                                data-dial-code="+{{ $phoneCountry['dialCode'] }}"
+                                                                data-min-digits="{{ $phoneCountry['minLength'] }}"
+                                                                data-max-digits="{{ $phoneCountry['maxLength'] }}"
+                                                                @if (in_array($countryCode, ['IT', 'VA'], true)) data-preserve-leading-zero="true" @endif
+                                                                @selected($countryCode === 'PK')>
+                                                                {{ $phoneCountry['name'] }} ({{ $countryCode }} +{{ $phoneCountry['dialCode'] }})
+                                                            </option>
+                                                        @endforeach
+                                                        <option value="" data-country-code="" data-country-name="{{ __('document_ui.contact.other_country') }}"
+                                                            data-dial-code="" data-min-digits="7" data-max-digits="15">
+                                                            OTHER +
                                                         </option>
-                                                    @endforeach
-                                                </select>
+                                                    </select>
+                                                </div>
                                                 <input type="tel" name="phone" id="phone" value="{{ old('phone') }}"
                                                     placeholder="{{ __('messages.contact.form.phone') }}"
                                                     class="@if ($isRtl) text-end @endif form-control"
@@ -544,11 +539,186 @@
 
                 if (!form || !input || !country || !error) return;
 
+                const countryControl = country.closest('.ctx-phone__country-control');
+                const dialCodeFor = (option) => String(option?.dataset.dialCode || option?.value || '');
                 const dialOptions = Array.from(country.options)
-                    .filter((option) => option.value)
+                    .filter((option) => dialCodeFor(option))
                     .sort((left, right) => {
-                        return right.value.replace(/\D/g, '').length - left.value.replace(/\D/g, '').length;
+                        return dialCodeFor(right).replace(/\D/g, '').length
+                            - dialCodeFor(left).replace(/\D/g, '').length;
                     });
+
+                const initCountryPicker = () => {
+                    if (!countryControl || countryControl.querySelector('.ctx-phone__country-trigger')) return;
+
+                    const trigger = document.createElement('button');
+                    const selectedFlag = document.createElement('img');
+                    const selectedLabel = document.createElement('span');
+                    const caret = document.createElement('span');
+                    const dropdown = document.createElement('div');
+                    const search = document.createElement('input');
+                    const optionsList = document.createElement('div');
+
+                    trigger.type = 'button';
+                    trigger.className = 'ctx-phone__country-trigger';
+                    trigger.setAttribute('aria-label', @json(__('document_ui.contact.country_code')));
+                    trigger.setAttribute('aria-haspopup', 'listbox');
+                    trigger.setAttribute('aria-expanded', 'false');
+                    trigger.setAttribute('aria-controls', 'phone-country-options');
+
+                    selectedFlag.className = 'ctx-phone__country-flag';
+                    selectedFlag.alt = '';
+                    selectedFlag.width = 24;
+                    selectedFlag.height = 18;
+                    selectedFlag.referrerPolicy = 'no-referrer';
+                    selectedFlag.setAttribute('aria-hidden', 'true');
+                    selectedFlag.addEventListener('error', () => {
+                        selectedFlag.hidden = true;
+                    });
+
+                    selectedLabel.className = 'ctx-phone__country-label';
+                    caret.className = 'ctx-phone__country-caret';
+                    caret.setAttribute('aria-hidden', 'true');
+
+                    dropdown.className = 'ctx-phone__country-dropdown';
+                    dropdown.hidden = true;
+
+                    search.type = 'search';
+                    search.className = 'ctx-phone__country-search';
+                    search.placeholder = @json(__('document_ui.contact.country_code'));
+                    search.setAttribute('aria-label', @json(__('document_ui.contact.country_code')));
+                    search.autocomplete = 'off';
+
+                    optionsList.id = 'phone-country-options';
+                    optionsList.className = 'ctx-phone__country-options';
+                    optionsList.setAttribute('role', 'listbox');
+                    optionsList.setAttribute('aria-label', @json(__('document_ui.contact.country_code')));
+
+                    const pickerOptions = Array.from(country.options).map((option) => {
+                        const optionButton = document.createElement('button');
+                        const optionFlag = document.createElement('img');
+                        const optionLabel = document.createElement('span');
+                        const countryCode = String(option.dataset.countryCode || '').toUpperCase();
+                        const countryName = String(option.dataset.countryName || option.textContent || '').trim();
+                        const dialCode = dialCodeFor(option);
+
+                        optionButton.type = 'button';
+                        optionButton.className = 'ctx-phone__country-option';
+                        optionButton.setAttribute('role', 'option');
+                        optionButton.dataset.search = `${countryName} ${countryCode} ${dialCode}`.toLocaleLowerCase();
+
+                        optionFlag.alt = '';
+                        optionFlag.width = 24;
+                        optionFlag.height = 18;
+                        optionFlag.loading = 'lazy';
+                        optionFlag.referrerPolicy = 'no-referrer';
+                        optionFlag.setAttribute('aria-hidden', 'true');
+                        if (countryCode) {
+                            optionFlag.src = `https://flagcdn.io/flags/4x3/${countryCode.toLowerCase()}.svg`;
+                            optionFlag.addEventListener('error', () => {
+                                optionFlag.hidden = true;
+                            });
+                        } else {
+                            optionFlag.hidden = true;
+                        }
+
+                        optionLabel.textContent = countryCode
+                            ? `${countryName} (${countryCode} ${dialCode})`
+                            : countryName;
+
+                        optionButton.append(optionFlag, optionLabel);
+                        optionButton.addEventListener('click', () => {
+                            country.selectedIndex = option.index;
+                            country.dispatchEvent(new Event('change', { bubbles: true }));
+                            dropdown.hidden = true;
+                            trigger.setAttribute('aria-expanded', 'false');
+                            trigger.focus();
+                        });
+                        optionsList.appendChild(optionButton);
+
+                        return { option, button: optionButton };
+                    });
+
+                    const filterOptions = () => {
+                        const term = search.value.trim().toLocaleLowerCase();
+                        pickerOptions.forEach(({ button }) => {
+                            button.hidden = Boolean(term) && !button.dataset.search.includes(term);
+                        });
+                    };
+
+                    const closePicker = (restoreFocus = false) => {
+                        if (dropdown.hidden) return;
+                        dropdown.hidden = true;
+                        trigger.setAttribute('aria-expanded', 'false');
+                        if (restoreFocus) trigger.focus();
+                    };
+
+                    const openPicker = () => {
+                        dropdown.hidden = false;
+                        trigger.setAttribute('aria-expanded', 'true');
+                        search.value = '';
+                        filterOptions();
+                        window.requestAnimationFrame(() => search.focus());
+                    };
+
+                    const syncPicker = () => {
+                        const selectedOption = country.options[country.selectedIndex];
+                        const countryCode = String(selectedOption?.dataset.countryCode || '').toUpperCase();
+                        const dialCode = dialCodeFor(selectedOption);
+
+                        selectedLabel.textContent = countryCode
+                            ? `${countryCode} ${dialCode}`
+                            : String(selectedOption?.textContent || '').trim();
+                        selectedFlag.hidden = !countryCode;
+                        if (countryCode) {
+                            selectedFlag.src = `https://flagcdn.io/flags/4x3/${countryCode.toLowerCase()}.svg`;
+                        }
+                        pickerOptions.forEach(({ option, button }) => {
+                            button.setAttribute('aria-selected', option === selectedOption ? 'true' : 'false');
+                        });
+                    };
+
+                    trigger.append(selectedFlag, selectedLabel, caret);
+                    dropdown.append(search, optionsList);
+                    countryControl.append(trigger, dropdown);
+                    country.classList.add('ctx-phone__country--enhanced');
+                    country.setAttribute('aria-hidden', 'true');
+                    country.tabIndex = -1;
+
+                    trigger.addEventListener('click', () => {
+                        if (dropdown.hidden) openPicker();
+                        else closePicker();
+                    });
+                    trigger.addEventListener('keydown', (event) => {
+                        if (event.key !== 'ArrowDown') return;
+                        event.preventDefault();
+                        openPicker();
+                    });
+                    search.addEventListener('input', filterOptions);
+                    search.addEventListener('keydown', (event) => {
+                        if (event.key === 'Escape') {
+                            event.preventDefault();
+                            closePicker(true);
+                        }
+                        if (event.key === 'ArrowDown' || event.key === 'Enter') {
+                            const firstVisibleOption = pickerOptions.find(({ button }) => !button.hidden);
+                            if (firstVisibleOption) {
+                                event.preventDefault();
+                                if (event.key === 'Enter') firstVisibleOption.button.click();
+                                else firstVisibleOption.button.focus();
+                            }
+                        }
+                    });
+                    country.addEventListener('change', syncPicker);
+                    document.addEventListener('click', (event) => {
+                        if (!countryControl.contains(event.target)) closePicker();
+                    });
+                    document.addEventListener('keydown', (event) => {
+                        if (event.key === 'Escape') closePicker(true);
+                    });
+
+                    syncPicker();
+                };
 
                 const setError = (message) => {
                     input.setCustomValidity(message);
@@ -569,8 +739,8 @@
                         return `+${rawValue.slice(2).replace(/\D/g, '')}`;
                     }
 
-                    const dialCode = country.value.replace(/\D/g, '');
                     const selectedCountry = country.options[country.selectedIndex];
+                    const dialCode = dialCodeFor(selectedCountry).replace(/\D/g, '');
                     const nationalDigits = rawValue.replace(/\D/g, '');
                     const nationalNumber = selectedCountry?.dataset.preserveLeadingZero === 'true'
                         ? nationalDigits
@@ -583,7 +753,7 @@
                     const digits = normalized.replace(/\D/g, '');
 
                     return dialOptions.find((option) => {
-                        const dialCode = option.value.replace(/\D/g, '');
+                        const dialCode = dialCodeFor(option).replace(/\D/g, '');
                         return digits.startsWith(dialCode) && digits.length > dialCode.length;
                     }) || null;
                 };
@@ -597,7 +767,7 @@
 
                     if (!selectedCountry) return true;
 
-                    const dialCode = selectedCountry.value.replace(/\D/g, '');
+                    const dialCode = dialCodeFor(selectedCountry).replace(/\D/g, '');
                     if (!dialCode) return false;
 
                     const normalizedDigits = normalized.replace(/\D/g, '');
@@ -636,12 +806,13 @@
                         return;
                     }
 
-                    const dialCode = match.value.replace(/\D/g, '');
-                    country.value = match.value;
+                    const dialCode = dialCodeFor(match).replace(/\D/g, '');
+                    match.selected = true;
                     input.value = digits.slice(dialCode.length);
                 };
 
                 restoreInternationalValue();
+                initCountryPicker();
 
                 input.addEventListener('input', () => setError(''));
                 country.addEventListener('change', () => setError(''));

@@ -1,7 +1,7 @@
 /* =============================================================
    Contact page — Opplex IPTV
-   Scoped under .ctx. The contact <form> markup (ids/names/JS hooks)
-   is preserved verbatim; this only restyles layout + fields.
+   Scoped under .ctx. Core contact form ids, names and submit hooks
+   are preserved; this stylesheet covers its layout and fields.
    Brand: red rgb(223,3,3) · navy rgb(1,12,58)
    ============================================================= */
 
@@ -160,21 +160,47 @@
 .ctx-form input[aria-invalid="true"],
 .ctx-form textarea[aria-invalid="true"] { border-color: var(--c-accent); }
 
-/* Native dial-code picker: no third-party flag sprite or layout script. */
+/* Searchable country and dial-code picker. */
 .ctx-phone {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(112px, .34fr) minmax(0, 1fr);
-    gap: 10px;
+    grid-template-columns: clamp(140px, 36%, 190px) minmax(0, 1fr);
+    gap: 0;
+    direction: ltr;
+    border: 1.5px solid var(--c-border-strong);
+    border-radius: 12px;
+    background: var(--c-surface-2);
+    transition: border-color .2s var(--c-ease), box-shadow .2s var(--c-ease), background .2s var(--c-ease);
 }
-.ctx-phone input { min-width: 0; }
+.ctx-phone:focus-within {
+    border-color: var(--c-accent);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(223, 3, 3, .12);
+}
+.ctx-phone:has(#phone[aria-invalid="true"]) { border-color: var(--c-accent); }
+.ctx-form .ctx-phone > input {
+    min-width: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+.ctx-form .ctx-phone > input:focus {
+    background: transparent;
+    box-shadow: none;
+}
+.ctx-phone__country-control {
+    position: relative;
+    min-width: 0;
+    border-right: 1.5px solid var(--c-border-strong);
+}
 .ctx-phone__country {
     width: 100%;
     height: 52px;
     padding: 0 12px;
-    border: 1.5px solid var(--c-border-strong);
-    border-radius: 12px;
+    border: 0;
+    border-radius: 0;
     outline: none;
-    background: var(--c-surface-2);
+    background: transparent;
     color: var(--c-ink);
     font-family: inherit;
     font-size: .9rem;
@@ -182,9 +208,120 @@
     transition: border-color .2s var(--c-ease), box-shadow .2s var(--c-ease), background .2s var(--c-ease);
 }
 .ctx-phone__country:focus {
-    border-color: var(--c-accent);
+    box-shadow: none;
+}
+.ctx-phone__country--enhanced {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+.ctx-phone__country-trigger {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    height: 52px;
+    padding: 0 30px 0 12px;
+    border: 0;
+    background: transparent;
+    color: var(--c-ink);
+    font-family: inherit;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.ctx-phone__country-trigger:focus { outline: 0; }
+.ctx-phone__country-flag,
+.ctx-phone__country-option img {
+    flex: 0 0 auto;
+    width: 24px;
+    height: 18px;
+    border: 1px solid rgba(15, 23, 42, .12);
+    border-radius: 2px;
+    object-fit: cover;
+}
+.ctx-phone__country-label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ctx-phone__country-caret {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+    border-top: 5px solid #7b8193;
+    transform: translateY(-50%);
+}
+.ctx-phone__country-dropdown {
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+    z-index: 50;
+    width: min(380px, calc(100vw - 48px));
+    padding: 8px 0 0;
+    overflow: hidden;
+    border: 1px solid var(--c-border-strong);
+    border-radius: 10px;
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(223, 3, 3, .12);
+    box-shadow: 0 18px 40px rgba(10, 20, 56, .18);
+}
+.ctx-phone__country-dropdown[hidden] { display: none; }
+.ctx-form .ctx-phone__country-search {
+    display: block;
+    width: calc(100% - 16px);
+    height: 40px;
+    margin: 0 8px 8px;
+    padding: 0 10px;
+    border: 1px solid var(--c-border-strong);
+    border-radius: 7px;
+    background: #fff;
+    font-size: .88rem;
+}
+.ctx-form .ctx-phone__country-search:focus {
+    border-color: var(--c-accent);
+    box-shadow: 0 0 0 3px rgba(223, 3, 3, .1);
+}
+.ctx-phone__country-options {
+    max-height: 260px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+.ctx-phone__country-option {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    padding: 9px 11px;
+    border: 0;
+    background: #fff;
+    color: #111827;
+    font-family: inherit;
+    font-size: .86rem;
+    line-height: 1.35;
+    text-align: left;
+    cursor: pointer;
+}
+.ctx-phone__country-option span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ctx-phone__country-option[aria-selected="true"] { background: #f1f5f9; }
+.ctx-phone__country-option:hover,
+.ctx-phone__country-option:focus-visible {
+    outline: 0;
+    background: var(--c-wa);
+    color: #fff;
 }
 .ctx-phone__hint {
     display: block;
@@ -229,7 +366,7 @@
 @media (max-width: 575px) {
     .ctx { padding: 40px 0 56px; }
     .ctx-info, .ctx-form { padding: 24px 20px; }
-    .ctx-phone { grid-template-columns: 118px minmax(0, 1fr); }
+    .ctx-phone { grid-template-columns: 140px minmax(0, 1fr); }
     .ctx-submit { width: 100%; }
 }
 
