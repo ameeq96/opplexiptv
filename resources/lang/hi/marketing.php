@@ -14,6 +14,12 @@ return [
             'christmas' => 'क्रिसमस',
         ],
     ],
+    'social_proof' => [
+        'verified_purchase' => 'सत्यापित खरीदारी',
+        'purchased' => ':name ने :package खरीदा।',
+        'anonymous_name' => 'एक ग्राहक',
+        'close' => 'खरीदारी सूचना बंद करें',
+    ],
     'checkout' => [
         'title' => 'वैकल्पिक अपडेट और ऑफ़र',
         'email' => 'मुझे ईमेल पर सेटअप सहायता, नवीनीकरण रिमाइंडर और कभी-कभी ऑफ़र भेजें।',

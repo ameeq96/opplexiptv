@@ -14,6 +14,12 @@ return [
             'christmas' => 'Kerstmis',
         ],
     ],
+    'social_proof' => [
+        'verified_purchase' => 'Geverifieerde aankoop',
+        'purchased' => ':name heeft :package gekocht.',
+        'anonymous_name' => 'Een klant',
+        'close' => 'Aankoopmelding sluiten',
+    ],
     'checkout' => [
         'title' => 'Optionele updates en aanbiedingen',
         'email' => 'Stuur mij per e-mail installatiehulp, verlengingsherinneringen en af en toe een aanbieding.',

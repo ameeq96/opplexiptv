@@ -14,6 +14,12 @@ return [
             'christmas' => 'Christmas',
         ],
     ],
+    'social_proof' => [
+        'verified_purchase' => 'Verified purchase',
+        'purchased' => ':name purchased :package.',
+        'anonymous_name' => 'A customer',
+        'close' => 'Close purchase notification',
+    ],
     'checkout' => [
         'title' => 'Optional updates and offers',
         'email' => 'Email me setup help, renewal reminders and occasional offers.',

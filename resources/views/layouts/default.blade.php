@@ -28,6 +28,8 @@
 
     @include('includes.voice-assistant')
 
+    @include('includes.recent-purchase-popup')
+
     <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
         class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp">
         <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" width="60" height="60"

@@ -14,6 +14,12 @@ return [
             'christmas' => 'Navidad',
         ],
     ],
+    'social_proof' => [
+        'verified_purchase' => 'Compra verificada',
+        'purchased' => ':name compró :package.',
+        'anonymous_name' => 'Un cliente',
+        'close' => 'Cerrar la notificación de compra',
+    ],
     'checkout' => [
         'title' => 'Actualizaciones y ofertas opcionales',
         'email' => 'Quiero recibir por correo ayuda de configuración, recordatorios de renovación y ofertas ocasionales.',

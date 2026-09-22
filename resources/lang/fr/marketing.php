@@ -14,6 +14,12 @@ return [
             'christmas' => 'Noël',
         ],
     ],
+    'social_proof' => [
+        'verified_purchase' => 'Achat vérifié',
+        'purchased' => ':name a acheté :package.',
+        'anonymous_name' => 'Un client',
+        'close' => 'Fermer la notification d’achat',
+    ],
     'checkout' => [
         'title' => 'Actualités et offres facultatives',
         'email' => 'Recevoir par e-mail des conseils d’installation, des rappels de renouvellement et des offres occasionnelles.',
