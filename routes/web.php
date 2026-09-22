@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\HomeServiceController as AdminHomeServiceControll
 use App\Http\Controllers\Admin\TestimonialController as AdminTestimonialController;
 use App\Http\Controllers\Admin\ChannelLogoController as AdminChannelLogoController;
 use App\Http\Controllers\Admin\MenuItemController as AdminMenuItemController;
+use App\Http\Controllers\Admin\MaintenanceController as AdminMaintenanceController;
 use App\Http\Controllers\Admin\PackageController as AdminPackageController;
 use App\Http\Controllers\Admin\PricingSectionController as AdminPricingSectionController;
 use App\Http\Controllers\Admin\FooterSettingController as AdminFooterSettingController;
@@ -41,7 +42,6 @@ use App\Http\Controllers\DigitalCommerce\CartController as DigitalCartController
 use App\Http\Controllers\DigitalCommerce\CheckoutController as DigitalCheckoutController;
 use App\Http\Controllers\DigitalCommerce\CustomerOrderController as DigitalCustomerOrderController;
 use App\Http\Controllers\Admin\TrialClickController;
-use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -156,27 +156,14 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('/trial-clicks/bulk-delete', [TrialClickController::class, 'bulkDelete'])->name('trial_clicks.bulkDelete');
         Route::delete('/trial-clicks/{trialClick}', [TrialClickController::class, 'destroy'])->name('trial_clicks.destroy');
 
-        Route::post('maintenance/clear', function () {
-            try {
-                foreach (['optimize:clear', 'config:cache', 'queue:restart'] as $command) {
-                    if (Artisan::call($command) !== 0) {
-                        throw new \RuntimeException("Maintenance command failed: {$command}");
-                    }
-                }
-            } catch (\Throwable $exception) {
-                report($exception);
-
-                return redirect()->route('admin.dashboard')->with(
-                    'error',
-                    'Maintenance could not be completed. Check the application log.'
-                );
-            }
-
-            return redirect()->route('admin.dashboard')->with(
-                'success',
-                'Caches cleared, configuration cached, and queue workers restarted successfully.'
-            );
-        })->middleware('throttle:3,1')->name('maintenance.clear');
+        Route::get('maintenance', [AdminMaintenanceController::class, 'index'])
+            ->name('maintenance.index');
+        Route::post('maintenance/run', [AdminMaintenanceController::class, 'run'])
+            ->middleware('throttle:3,1')
+            ->name('maintenance.run');
+        Route::post('maintenance/clear', [AdminMaintenanceController::class, 'runFull'])
+            ->middleware('throttle:3,1')
+            ->name('maintenance.clear');
     });
 });
 

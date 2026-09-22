@@ -59,6 +59,11 @@
             <i class="bi bi-share"></i> <span>Social Links</span>
         </a>
 
+        <div class="nav-section">System</div>
+        <a href="{{ route('admin.maintenance.index') }}" class="{{ request()->routeIs('admin.maintenance.*') ? 'active' : '' }}">
+            <i class="bi bi-tools"></i> <span>System Maintenance</span>
+        </a>
+
         <div class="nav-section">Account</div>
         <form method="POST" action="{{ route('admin.logout') }}">
             @csrf
