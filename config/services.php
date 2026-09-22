@@ -86,6 +86,10 @@ return [
         'referral_reward_type' => env('REFERRAL_REWARD_TYPE'),
         'referral_reward_value' => env('REFERRAL_REWARD_VALUE'),
         'referral_reward_currency' => env('REFERRAL_REWARD_CURRENCY', 'USD'),
+        'event_promotions' => [
+            'enabled' => filter_var(env('MARKETING_EVENT_PROMOTIONS_ENABLED', true), FILTER_VALIDATE_BOOLEAN),
+            'timezone' => env('MARKETING_EVENT_PROMOTION_TIMEZONE', 'UTC'),
+        ],
     ],
     'tmdb' => [
         'base_url' => env('TMDB_BASE_URL', 'https://api.themoviedb.org/3'),

@@ -118,7 +118,10 @@
         // Totals (based only on planPrice)
         $qty = 1;
         $subtotal = $planPrice * $qty;
-        $total = $subtotal;
+        $promotionDiscount = !empty($eventPromotion)
+            ? round($subtotal * (((float) ($eventPromotion['discount_percent'] ?? 0)) / 100), 2)
+            : 0.0;
+        $total = max(0, $subtotal - $promotionDiscount);
 
         // Carry values forward to step2 (safe defaults)
         $carryConn = number_format((float) ($cpNum ?? 0), 2, '.', '');
@@ -307,6 +310,13 @@
                             <span>{{ __('messages.checkout_subtotal_label') }}</span>
                             <span>${{ number_format($subtotal, 2) }}</span>
                         </div>
+
+                        @if ($promotionDiscount > 0)
+                            <div class="order-line mt-2">
+                                <span>{{ $eventPromotion['name'] }} (10% OFF)</span>
+                                <span>-${{ number_format($promotionDiscount, 2) }}</span>
+                            </div>
+                        @endif
 
                         <div class="order-total">
                             <span>{{ __('messages.checkout_total_label') }}</span>

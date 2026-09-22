@@ -1573,6 +1573,9 @@
 <script>
     // --------- WhatsApp click tracking + trial CAPI beacon ---------
     (function () {
+        const businessWhatsAppNumber = (@json(config('services.whatsapp.number')) || '').replace(/\D/g, '');
+        const eventPromotionCampaigns = @json(app(\App\Services\EventPromotionService::class)->whatsappClickCampaigns());
+
         function uuidv4() {
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
@@ -1610,6 +1613,44 @@
             return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(
                 template.replace(':discount', discount)
             );
+        }
+
+        function withEventPromotion(href) {
+            const now = Date.now();
+            const activeCampaign = eventPromotionCampaigns.find(function (campaign) {
+                return now >= Date.parse(campaign.starts_at) && now <= Date.parse(campaign.ends_at);
+            });
+            const promotionMessage = activeCampaign ? activeCampaign.message : '';
+            if (!href || !businessWhatsAppNumber || !promotionMessage) return href;
+
+            try {
+                const url = new URL(href, window.location.href);
+                const hostname = url.hostname.toLowerCase().replace(/^www\./, '');
+                let targetNumber = '';
+
+                if (hostname === 'wa.me') {
+                    targetNumber = url.pathname.split('/').filter(Boolean)[0] || '';
+                } else if (url.protocol === 'whatsapp:'
+                    || hostname === 'whatsapp.com'
+                    || hostname.endsWith('.whatsapp.com')) {
+                    targetNumber = url.searchParams.get('phone') || '';
+                }
+
+                targetNumber = targetNumber.replace(/\D/g, '');
+                if (targetNumber !== businessWhatsAppNumber) return href;
+
+                const currentMessage = (url.searchParams.get('text') || '').trim();
+                if (currentMessage.includes(promotionMessage)) return url.toString();
+
+                url.searchParams.set(
+                    'text',
+                    [currentMessage, promotionMessage].filter(Boolean).join('\n\n')
+                );
+
+                return url.toString();
+            } catch (e) {
+                return href;
+            }
         }
 
         function closestAttribute(el, attribute) {
@@ -1782,10 +1823,25 @@
             if (!(e.target instanceof Element)) return;
             const el = e.target.closest('a[href], button[data-wa-href], [data-whatsapp-button], #dw-copy');
             if (!el) return;
-            let href = whatsappHref(el);
+            const currentHref = whatsappHref(el);
+            const storedBaseHref = el.tagName === 'A'
+                ? (el.getAttribute('data-event-promotion-base-href') || '')
+                : '';
+            const baseHref = storedBaseHref || currentHref;
+            let href = baseHref;
             const isDynamicWhatsAppButton = el.hasAttribute('data-whatsapp-button') || el.id === 'dw-copy';
             if (!isDynamicWhatsAppButton && (!href || !isWhatsApp(href))) return;
             if (!href || !isWhatsApp(href)) return;
+
+            href = withEventPromotion(baseHref);
+            if (el.tagName === 'A') {
+                if (!storedBaseHref && href !== baseHref) {
+                    el.setAttribute('data-event-promotion-base-href', baseHref);
+                }
+                if (href !== currentHref) {
+                    el.setAttribute('href', href);
+                }
+            }
 
             const rawValue = closestAttribute(el, 'data-whatsapp-value')
                 || closestAttribute(el, 'data-wa-value')

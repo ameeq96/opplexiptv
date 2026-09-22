@@ -1,6 +1,19 @@
 <?php
 
 return [
+    'event_promotion' => [
+        'whatsapp_click_message' => 'नमस्ते, मैं अपने Opplex IPTV ऑर्डर पर :event का 10% ऑफ़र इस्तेमाल करना चाहता/चाहती हूँ। यह ऑफ़र :date तक मान्य है।',
+        'events' => [
+            'new-year' => 'नया साल',
+            'valentines-day' => 'वैलेंटाइन डे',
+            'mothers-day' => 'मदर्स डे',
+            'fathers-day' => 'फादर्स डे',
+            'halloween' => 'हैलोवीन',
+            'black-friday' => 'ब्लैक फ्राइडे',
+            'cyber-monday' => 'साइबर मंडे',
+            'christmas' => 'क्रिसमस',
+        ],
+    ],
     'checkout' => [
         'title' => 'वैकल्पिक अपडेट और ऑफ़र',
         'email' => 'मुझे ईमेल पर सेटअप सहायता, नवीनीकरण रिमाइंडर और कभी-कभी ऑफ़र भेजें।',

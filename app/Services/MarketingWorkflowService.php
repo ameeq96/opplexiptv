@@ -14,6 +14,10 @@ use Throwable;
 
 class MarketingWorkflowService
 {
+    public function __construct(private EventPromotionService $eventPromotions)
+    {
+    }
+
     public function contactNumberUpdateAudienceCount(): int
     {
         return $this->contactNumberUpdateAudience()->count();
@@ -94,6 +98,7 @@ class MarketingWorkflowService
         $this->createOnboardingDeliveries();
         $this->createRenewalDeliveries();
         $this->createReferralDeliveries();
+        $this->createPromotionDeliveries();
 
         $deliveries = MarketingDelivery::query()
             ->whereNull('sent_at')
@@ -270,6 +275,60 @@ class MarketingWorkflowService
                         'referral_id' => $referral->id,
                     ], $referral->id);
                 }
+            });
+    }
+
+    private function createPromotionDeliveries(): void
+    {
+        foreach ($this->eventPromotions->dueCampaigns() as $campaign) {
+            $audienceMarker = "promotion:{$campaign['id']}:audience-created";
+            if (MarketingDelivery::where('dedupe_key', $audienceMarker)->exists()) {
+                continue;
+            }
+
+            $this->checkoutPromotionAudience()
+                ->orderBy('id')
+                ->chunkById(100, function ($users) use ($campaign) {
+                    foreach ($users as $user) {
+                        $this->delivery(
+                            "promotion:{$campaign['id']}:{$user->id}:email",
+                            'promotion',
+                            'campaign',
+                            'email',
+                            $user->marketing_consent_locale ?: 'en',
+                            userId: $user->id,
+                            payload: $this->eventPromotions->emailPayload($campaign, $user)
+                        );
+                    }
+                });
+
+            MarketingDelivery::firstOrCreate(
+                ['dedupe_key' => $audienceMarker],
+                [
+                    'workflow' => 'promotion',
+                    'stage' => 'audience_created',
+                    'channel' => 'internal',
+                    'locale' => 'en',
+                    'payload' => ['campaign_id' => $campaign['id']],
+                    'scheduled_at' => now(),
+                    'sent_at' => now(),
+                ]
+            );
+        }
+    }
+
+    private function checkoutPromotionAudience()
+    {
+        return User::query()
+            ->whereNotNull('email_normalized')
+            ->whereNotNull('marketing_email_consented_at')
+            ->where(function ($query) {
+                $query->whereHas('orders')
+                    ->orWhereHas('digitalOrders');
+            })
+            ->where(function ($query) {
+                $query->whereNull('marketing_email_opted_out_at')
+                    ->orWhereColumn('marketing_email_consented_at', '>', 'marketing_email_opted_out_at');
             });
     }
 

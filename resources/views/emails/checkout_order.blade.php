@@ -114,6 +114,12 @@
             <td style="padding:6px 8px;">{{ $fmtMoney($details['connection_price']) }}</td>
         </tr>
     @endif
+    @if ((float) ($details['discount_amount'] ?? 0) > 0)
+        <tr>
+            <td style="padding:6px 8px;font-weight:bold;">{{ $details['promotion_name'] ?? 'Event offer' }} (10% OFF)</td>
+            <td style="padding:6px 8px;">-{{ $fmtMoney($details['discount_amount']) }}</td>
+        </tr>
+    @endif
     <tr>
         <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.total') }}</td>
         <td style="padding:6px 8px;font-weight:bold;">{{ $fmtMoney($details['total_price'] ?? null) }}</td>

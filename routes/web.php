@@ -34,6 +34,7 @@ use App\Http\Controllers\{
     AdminNotificationController,
     CheckoutDraftController,
     ReferralController,
+    EventPromotionController,
     MarketingUnsubscribeController,
     TrackingConsentController,
 };
@@ -251,6 +252,11 @@ Route::post('/whatsapp-leads', [TrackingController::class, 'storeWhatsAppLead'])
 Route::post('/tracking/consent', [TrackingConsentController::class, 'update'])
     ->middleware('throttle:20,1')
     ->name('tracking.consent');
+
+Route::get('/event-promotion/{delivery}/activate', EventPromotionController::class)
+    ->whereNumber('delivery')
+    ->middleware(['signed', 'throttle:20,1'])
+    ->name('event-promotions.activate');
 
 Route::match(['get', 'post'], '/marketing/unsubscribe', MarketingUnsubscribeController::class)
     ->middleware('signed')

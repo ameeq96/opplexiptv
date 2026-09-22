@@ -13,7 +13,7 @@ use App\Models\MarketingDelivery;
 use App\Models\Package;
 use App\Models\Referral;
 use App\Models\ShopProduct;
-use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService};
+use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService, EventPromotionService};
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -36,6 +36,7 @@ class HomeController extends Controller
         private CaptchaService $captcha,
         private UnifiedProductService $unifiedProducts,
         private CustomerIdentityService $customerIdentity,
+        private EventPromotionService $eventPromotions,
     ) {}
 
     public function home()
@@ -520,6 +521,15 @@ class HomeController extends Controller
 
         // 2) User create / get only after the selected product and device are verified.
         $fullName = trim($data['first_name'] . ' ' . $data['last_name']);
+        $eventPromotion = $this->eventPromotions->activeForSession();
+        $submittedEmail = User::normalizeEmail($data['email']);
+        if ($eventPromotion
+            && (!$submittedEmail
+                || !hash_equals($eventPromotion['recipient_email_normalized'], $submittedEmail))) {
+            throw \Illuminate\Validation\ValidationException::withMessages([
+                'email' => 'Use the same email address that received this personal event offer.',
+            ]);
+        }
 
         $user = $this->customerIdentity->resolve($data['email'], null)
             ?? User::firstOrCreate(
@@ -564,6 +574,12 @@ class HomeController extends Controller
 
         $this->customerIdentity->linkUser($user);
 
+        if ($eventPromotion && (int) $eventPromotion['recipient_user_id'] !== (int) $user->id) {
+            throw \Illuminate\Validation\ValidationException::withMessages([
+                'email' => 'Use the same email address that received this personal event offer.',
+            ]);
+        }
+
         $vendor = strtolower((string) $package->vendor);
         $vendorLabel = $vendor === 'starshare' ? 'Filex' : 'Opplex';
         $packageTitle = $this->packageDisplayTitle($package);
@@ -580,7 +596,11 @@ class HomeController extends Controller
             && (int) $package->duration_months === 12
             && in_array($connectionTier, array_values($filexYearlyConnectionPrices), true);
         $sellPriceSingle = $isAllowedMultiConnection ? $connectionTier : $basePrice;
-        $sellPrice       = $sellPriceSingle * $qty;
+        $subtotal = $sellPriceSingle * $qty;
+        $promotionQuote = $eventPromotion
+            ? $this->eventPromotions->quote($subtotal, $eventPromotion)
+            : ['subtotal' => round($subtotal, 2), 'discount' => 0.0, 'total' => round($subtotal, 2)];
+        $sellPrice = $promotionQuote['total'];
 
         $costPriceSingle = isset($package->cost_price)
             ? (float) $package->cost_price
@@ -601,9 +621,13 @@ class HomeController extends Controller
         $order = Order::create([
             'user_id'        => $user->id,
             'package'        => $planName,
-            'price'          => $sellPriceSingle,
+            'price'          => $sellPrice,
             'cost_price'     => $costPriceSingle,
             'sell_price'     => $sellPrice,
+            'subtotal'       => $promotionQuote['subtotal'],
+            'discount'       => $promotionQuote['discount'],
+            'promotion_campaign_id' => $eventPromotion['id'] ?? null,
+            'promotion_discount_percent' => $eventPromotion['discount_percent'] ?? null,
             'profit'         => $profit,
             'credits'        => $credits,
             'duration'       => $duration,
@@ -713,6 +737,9 @@ class HomeController extends Controller
             'subscription_price'=> $sellPriceSingle,
             'connection_price'  => null,
             'unit_price'        => $sellPriceSingle,
+            'subtotal'          => $promotionQuote['subtotal'],
+            'discount_amount'   => $promotionQuote['discount'],
+            'promotion_name'    => $eventPromotion['name'] ?? null,
             'total_price'       => $sellPrice,
             'expiry'            => $expiry ? $expiry->toDateString() : null,
             'notes'             => $data['notes'] ?? null,
@@ -765,6 +792,9 @@ class HomeController extends Controller
                 'package_type' => $packageType,
                 'vendor' => $vendorLabel,
                 'device' => $device?->name,
+                'subtotal' => $promotionQuote['subtotal'],
+                'discount' => $promotionQuote['discount'],
+                'promotion_name' => $eventPromotion['name'] ?? null,
                 'total' => $sellPrice,
                 'currency' => $currency,
                 'payment_method' => $data['paymethod'],
@@ -810,8 +840,9 @@ class HomeController extends Controller
         $planName  = $request->input('plan_name', __('interface.checkout.default_plan'));
         $planPrice = (float) $request->input('plan_price', 15);
         $device    = $request->input('device', null);
+        $eventPromotion = $this->eventPromotions->activeForSession();
 
-        return view('pages.checkout.step1', compact('planName', 'planPrice', 'device'));
+        return view('pages.checkout.step1', compact('planName', 'planPrice', 'device', 'eventPromotion'));
     }
 
     private function packageDisplayTitle(Package $package): string

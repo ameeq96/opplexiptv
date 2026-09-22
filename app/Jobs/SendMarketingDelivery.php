@@ -4,6 +4,7 @@ namespace App\Jobs;
 
 use App\Mail\MarketingWorkflowMail;
 use App\Models\MarketingDelivery;
+use App\Services\EventPromotionService;
 use App\Services\WhatsAppCloudService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -35,7 +36,7 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
         return (string) $this->deliveryId;
     }
 
-    public function handle(WhatsAppCloudService $whatsapp): void
+    public function handle(WhatsAppCloudService $whatsapp, EventPromotionService $eventPromotions): void
     {
         $claimToken = (string) Str::uuid();
         $claimed = MarketingDelivery::query()
@@ -63,7 +64,7 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
         $previousLocale = App::getLocale();
         App::setLocale($delivery->locale);
 
-        if (!$this->hasConsent($delivery)) {
+        if (!$this->hasConsent($delivery, $eventPromotions)) {
             $delivery->update([
                 'failed_at' => now(),
                 'last_error' => 'Consent unavailable, withdrawn, or workflow no longer eligible.',
@@ -84,7 +85,7 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
             if (!$delivery) {
                 return;
             }
-            if (!$this->hasConsent($delivery)) {
+            if (!$this->hasConsent($delivery, $eventPromotions)) {
                 $delivery->update([
                     'failed_at' => now(),
                     'last_error' => 'Consent unavailable, withdrawn, or workflow no longer eligible.',
@@ -99,7 +100,7 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
             $package = (string) ($payload['package'] ?? $delivery->order?->package ?? '');
             $expiry = (string) ($payload['expiry'] ?? '');
             $device = (string) ($payload['device'] ?? __('marketing.workflows.onboarding.default_device'));
-            $ctaUrl = $this->ctaUrl($delivery);
+            $ctaUrl = $this->ctaUrl($delivery, $eventPromotions);
             $replace = compact('name', 'package', 'expiry', 'device');
 
             if ($delivery->channel === 'email') {
@@ -133,6 +134,16 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
                         'phone' => $displayPhone,
                     ]);
                     $ctaText = Lang::get('interface.contact_number_notice.whatsapp_cta');
+                }
+
+                if ($delivery->workflow === 'promotion') {
+                    $mailSubject = trim((string) ($payload['subject'] ?? ''));
+                    $bodyText = trim((string) ($payload['body'] ?? ''));
+                    $ctaText = trim((string) ($payload['cta_text'] ?? ''));
+
+                    if ($mailSubject === '' || $bodyText === '' || $ctaText === '') {
+                        throw new RuntimeException('Promotional email content is incomplete.');
+                    }
                 }
 
                 Mail::to($recipient)->send((new MarketingWorkflowMail(
@@ -186,8 +197,18 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
         }
     }
 
-    private function hasConsent(MarketingDelivery $delivery): bool
+    private function hasConsent(
+        MarketingDelivery $delivery,
+        EventPromotionService $eventPromotions
+    ): bool
     {
+        if ($delivery->workflow === 'promotion') {
+            return $delivery->channel === 'email'
+                && $eventPromotions->campaignForDelivery($delivery)
+                && $delivery->user
+                && $eventPromotions->isEligible($delivery->user);
+        }
+
         if ($delivery->workflow === 'contact_update') {
             $user = $delivery->user;
 
@@ -223,8 +244,15 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
             && (bool) $delivery->user?->hasMarketingConsent($delivery->channel);
     }
 
-    private function ctaUrl(MarketingDelivery $delivery): string
+    private function ctaUrl(
+        MarketingDelivery $delivery,
+        EventPromotionService $eventPromotions
+    ): string
     {
+        if ($delivery->workflow === 'promotion') {
+            return $eventPromotions->activationUrl($delivery);
+        }
+
         if ($delivery->workflow === 'contact_update') {
             $number = preg_replace('/\D+/', '', (string) ($delivery->payload['phone_number'] ?? '')) ?? '';
             if ($number === '') {

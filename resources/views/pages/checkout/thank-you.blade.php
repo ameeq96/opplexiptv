@@ -75,6 +75,12 @@
           <span>{{ __('interface.email.checkout.package') }}</span>
           <span><strong>{{ $orderSummary['package'] }}</strong></span>
         </div>
+        @if ((float) ($orderSummary['discount'] ?? 0) > 0)
+          <div class="thank-order-row">
+            <span>{{ $orderSummary['promotion_name'] ?? 'Event offer' }} (10% OFF)</span>
+            <span><strong>-${{ number_format((float) $orderSummary['discount'], 2) }}</strong></span>
+          </div>
+        @endif
         <div class="thank-order-row">
           <span>{{ __('messages.checkout_total_label') }}</span>
           <span><strong>${{ number_format((float) $orderSummary['total'], 2) }}</strong></span>

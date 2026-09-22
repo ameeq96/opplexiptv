@@ -1,6 +1,19 @@
 <?php
 
 return [
+    'event_promotion' => [
+        'whatsapp_click_message' => 'Ciao, vorrei utilizzare l’offerta :event del 10% sul mio ordine Opplex IPTV. L’offerta è valida fino al :date.',
+        'events' => [
+            'new-year' => 'Capodanno',
+            'valentines-day' => 'San Valentino',
+            'mothers-day' => 'Festa della Mamma',
+            'fathers-day' => 'Festa del Papà',
+            'halloween' => 'Halloween',
+            'black-friday' => 'Black Friday',
+            'cyber-monday' => 'Cyber Monday',
+            'christmas' => 'Natale',
+        ],
+    ],
     'checkout' => [
         'title' => 'Aggiornamenti e offerte facoltativi',
         'email' => 'Desidero ricevere via e-mail assistenza alla configurazione, promemoria di rinnovo e offerte occasionali.',

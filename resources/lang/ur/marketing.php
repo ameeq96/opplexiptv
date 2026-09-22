@@ -1,6 +1,19 @@
 <?php
 
 return [
+    'event_promotion' => [
+        'whatsapp_click_message' => 'السلام علیکم، میں اپنے Opplex IPTV آرڈر پر :event کی 10% آفر استعمال کرنا چاہتا/چاہتی ہوں۔ یہ آفر :date تک کارآمد ہے۔',
+        'events' => [
+            'new-year' => 'نیا سال',
+            'valentines-day' => 'ویلنٹائن ڈے',
+            'mothers-day' => 'مدرز ڈے',
+            'fathers-day' => 'فادرز ڈے',
+            'halloween' => 'ہالووین',
+            'black-friday' => 'بلیک فرائیڈے',
+            'cyber-monday' => 'سائبر منڈے',
+            'christmas' => 'کرسمس',
+        ],
+    ],
     'checkout' => [
         'title' => 'اختیاری اپ ڈیٹس اور آفرز',
         'email' => 'مجھے ای میل پر سیٹ اپ مدد، تجدید کی یاد دہانیاں اور کبھی کبھار آفرز بھیجیں۔',
