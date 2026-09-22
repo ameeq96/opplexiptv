@@ -18,6 +18,18 @@ class Kernel extends ConsoleKernel
         $schedule->command('sitemap:generate')->dailyAt('03:30');
         $schedule->command('indexnow:submit')->dailyAt('03:35');
         $schedule->command('marketing:dispatch')->everyFifteenMinutes()->withoutOverlapping();
+
+        if (config('queue.default') !== 'sync') {
+            $schedule->command('queue:work', [
+                '--stop-when-empty',
+                '--max-time' => 50,
+                '--max-jobs' => 20,
+                '--sleep' => 1,
+                '--tries' => 3,
+                '--timeout' => 40,
+                '--no-interaction',
+            ])->everyMinute()->withoutOverlapping(5);
+        }
     }
 
     /**

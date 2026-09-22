@@ -157,9 +157,25 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('/trial-clicks/{trialClick}', [TrialClickController::class, 'destroy'])->name('trial_clicks.destroy');
 
         Route::post('maintenance/clear', function () {
-            Artisan::call('optimize:clear');
+            try {
+                foreach (['optimize:clear', 'config:cache', 'queue:restart'] as $command) {
+                    if (Artisan::call($command) !== 0) {
+                        throw new \RuntimeException("Maintenance command failed: {$command}");
+                    }
+                }
+            } catch (\Throwable $exception) {
+                report($exception);
 
-            return back()->with('success', 'Caches cleared successfully.');
+                return redirect()->route('admin.dashboard')->with(
+                    'error',
+                    'Maintenance could not be completed. Check the application log.'
+                );
+            }
+
+            return redirect()->route('admin.dashboard')->with(
+                'success',
+                'Caches cleared, configuration cached, and queue workers restarted successfully.'
+            );
         })->middleware('throttle:3,1')->name('maintenance.clear');
     });
 });
