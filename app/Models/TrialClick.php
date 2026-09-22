@@ -20,6 +20,11 @@ class TrialClick extends Model
         'click_count' => 'integer',
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     public function getLeadCodeAttribute(): string
     {
         return 'OPX-'.strtoupper(substr(str_replace('-', '', (string) $this->event_id), 0, 8));

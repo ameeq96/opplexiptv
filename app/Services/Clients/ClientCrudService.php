@@ -9,6 +9,8 @@ use App\Models\MarketingDelivery;
 
 class ClientCrudService
 {
+    public function __construct(private CustomerIdentityService $identity) {}
+
     public function create(array $validated): User
     {
         $data = [
@@ -19,7 +21,10 @@ class ClientCrudService
             'password' => Hash::make('defaultpassword'),
         ];
 
-        return User::create($data);
+        $user = User::create($data);
+        $this->identity->linkUser($user);
+
+        return $user;
     }
 
     public function update(array $validated, User $client): void
@@ -50,6 +55,7 @@ class ClientCrudService
         }
 
         $client->update($updates);
+        $this->identity->linkUser($client);
 
         if ($invalidatedChannels !== []) {
             MarketingDelivery::query()

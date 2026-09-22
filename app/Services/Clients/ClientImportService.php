@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Validator;
 
 class ClientImportService
 {
+    public function __construct(private CustomerIdentityService $identity) {}
+
     public function importFromCsv(UploadedFile $file): int
     {
         $imported = 0;
@@ -67,13 +69,14 @@ class ClientImportService
 
             if ($v->fails()) continue;
 
-            User::create([
+            $user = User::create([
                 'name'     => $name,
                 'email'    => $email,
                 'phone'    => $phone,
                 'country'  => $country,
                 'password' => Hash::make('defaultpassword'),
             ]);
+            $this->identity->linkUser($user);
 
             $imported++;
         }

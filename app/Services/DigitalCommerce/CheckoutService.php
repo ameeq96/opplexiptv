@@ -7,6 +7,7 @@ use App\Models\Admin;
 use App\Models\Digital\DigitalOrder;
 use App\Models\User;
 use App\Notifications\NewOrderNotification;
+use App\Services\Clients\CustomerIdentityService;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -16,8 +17,8 @@ class CheckoutService
 {
     public function __construct(
         private readonly CartService $cartService,
-    ) {
-    }
+        private readonly CustomerIdentityService $customerIdentity,
+    ) {}
 
     public function createOrder(array $payload): DigitalOrder
     {
@@ -28,14 +29,17 @@ class CheckoutService
         }
 
         return DB::transaction(function () use ($payload, $totals) {
-            $user = User::firstOrCreate(
-                ['email' => $payload['email']],
-                [
-                    'name' => $payload['name'],
-                    'phone' => $payload['phone'] ?? null,
-                    'password' => bcrypt(Str::random(20)),
-                ]
-            );
+            $user = $this->customerIdentity->resolve($payload['email'], null)
+                ?? User::firstOrCreate(
+                    ['email' => $payload['email']],
+                    [
+                        'name' => $payload['name'],
+                        'phone' => $payload['phone'] ?? null,
+                        'password' => bcrypt(Str::random(20)),
+                    ]
+                );
+
+            $this->customerIdentity->linkUser($user);
 
             $order = DigitalOrder::create([
                 'user_id' => $user->id,

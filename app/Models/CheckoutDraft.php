@@ -22,4 +22,21 @@ class CheckoutDraft extends Model
     {
         return $this->belongsTo(Order::class, 'completed_order_id');
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function setEmailAttribute($value): void
+    {
+        $this->attributes['email'] = $value;
+        $this->attributes['email_normalized'] = User::normalizeEmail($value);
+    }
+
+    public function setPhoneAttribute($value): void
+    {
+        $this->attributes['phone'] = $value;
+        $this->attributes['phone_normalized'] = User::normalizePhone($value);
+    }
 }

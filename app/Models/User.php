@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Digital\DigitalOrder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -45,6 +46,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+        'email_normalized',
+        'phone_normalized',
     ];
 
     /**
@@ -66,6 +69,62 @@ class User extends Authenticatable
     public function orders()
     {
         return $this->hasMany(Order::class);
+    }
+
+    public function trialClicks()
+    {
+        return $this->hasMany(TrialClick::class);
+    }
+
+    public function checkoutDrafts()
+    {
+        return $this->hasMany(CheckoutDraft::class);
+    }
+
+    public function digitalOrders()
+    {
+        return $this->hasMany(DigitalOrder::class);
+    }
+
+    public function marketingDeliveries()
+    {
+        return $this->hasMany(MarketingDelivery::class);
+    }
+
+    public function referralsMade()
+    {
+        return $this->hasMany(Referral::class, 'referrer_user_id');
+    }
+
+    public function referralsReceived()
+    {
+        return $this->hasMany(Referral::class, 'referred_user_id');
+    }
+
+    public function setEmailAttribute($value): void
+    {
+        $this->attributes['email'] = $value;
+        $this->attributes['email_normalized'] = self::normalizeEmail($value);
+    }
+
+    public function setPhoneAttribute($value): void
+    {
+        $this->attributes['phone'] = $value;
+        $this->attributes['phone_normalized'] = self::normalizePhone($value);
+    }
+
+    public static function normalizeEmail($value): ?string
+    {
+        $email = mb_strtolower(trim((string) $value));
+
+        return $email !== '' ? $email : null;
+    }
+
+    public static function normalizePhone($value): ?string
+    {
+        $phone = preg_replace('/\D+/', '', (string) $value) ?? '';
+
+        return preg_match('/^[1-9]\d{7,14}$/', $phone) === 1 ? $phone : null;
     }
 
     public function hasMarketingConsent(string $channel): bool

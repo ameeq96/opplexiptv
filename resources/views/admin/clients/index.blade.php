@@ -18,6 +18,15 @@
         </div>
     @endif
 
+    @if (($unlinkedActivity['trial_clicks'] ?? 0) > 0 || ($unlinkedActivity['checkout_drafts'] ?? 0) > 0)
+        <div class="alert alert-warning">
+            <strong>Unlinked activity:</strong>
+            {{ $unlinkedActivity['trial_clicks'] ?? 0 }} WhatsApp lead(s) and
+            {{ $unlinkedActivity['checkout_drafts'] ?? 0 }} checkout draft(s) do not have a safe client match yet.
+            Ambiguous records remain separate to avoid attaching data to the wrong customer.
+        </div>
+    @endif
+
     <div class="admin-card mb-4">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
             <div>
@@ -179,6 +188,9 @@
                                     @if ($waUniversal && !$client->hasMarketingConsent('whatsapp'))
                                         <span class="badge-soft gray">No WhatsApp consent</span>
                                     @endif
+
+                                    <a href="{{ route('admin.clients.show', $client) }}"
+                                        class="btn btn-sm btn-outline-dark">360 View</a>
 
                                     <a href="{{ route('admin.clients.edit', $client) }}"
                                         class="btn btn-sm btn-outline-primary">Edit</a>

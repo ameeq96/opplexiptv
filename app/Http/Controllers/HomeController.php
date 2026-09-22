@@ -24,6 +24,7 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use App\Notifications\NewOrderNotification;
 use App\Services\UnifiedProductService;
+use App\Services\Clients\CustomerIdentityService;
 
 class HomeController extends Controller
 {
@@ -34,6 +35,7 @@ class HomeController extends Controller
         private ContactService $contact,
         private CaptchaService $captcha,
         private UnifiedProductService $unifiedProducts,
+        private CustomerIdentityService $customerIdentity,
     ) {}
 
     public function home()
@@ -519,16 +521,17 @@ class HomeController extends Controller
         // 2) User create / get only after the selected product and device are verified.
         $fullName = trim($data['first_name'] . ' ' . $data['last_name']);
 
-        $user = User::firstOrCreate(
-            ['email' => $data['email']],
-            [
-                'name'     => $fullName,
-                'phone'    => $data['phone'],
-                'country'  => null,
-                'notes'    => $data['notes'] ?? null,
-                'password' => bcrypt(Str::random(16)),
-            ]
-        );
+        $user = $this->customerIdentity->resolve($data['email'], null)
+            ?? User::firstOrCreate(
+                ['email' => $data['email']],
+                [
+                    'name'     => $fullName,
+                    'phone'    => $data['phone'],
+                    'country'  => null,
+                    'notes'    => $data['notes'] ?? null,
+                    'password' => bcrypt(Str::random(16)),
+                ]
+            );
 
         $consentUpdates = [];
         $consentIpHash = hash_hmac('sha256', (string) $request->ip(), (string) config('app.key'));
@@ -558,6 +561,8 @@ class HomeController extends Controller
                 'marketing_consent_ip_hash' => $user->marketing_consent_ip_hash ?: $consentIpHash,
             ])->save();
         }
+
+        $this->customerIdentity->linkUser($user);
 
         $vendor = strtolower((string) $package->vendor);
         $vendorLabel = $vendor === 'starshare' ? 'Filex' : 'Opplex';
@@ -636,6 +641,7 @@ class HomeController extends Controller
             $completedDraft = CheckoutDraft::updateOrCreate(
                 ['token' => $data['checkout_draft_token']],
                 [
+                    'user_id' => $user->id,
                     'package_id' => $package->id,
                     'device_id' => $device?->id,
                     'vendor' => $vendor,

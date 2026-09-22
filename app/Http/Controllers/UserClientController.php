@@ -168,8 +168,9 @@ class UserClientController extends Controller
     {
         $clients = $this->runIndex($this->query, $request);
         $contactUpdateEligible = $workflows->contactNumberUpdateAudienceCount();
+        $unlinkedActivity = $this->query->unlinkedActivityCounts();
 
-        return view('admin.clients.index', compact('clients', 'contactUpdateEligible'));
+        return view('admin.clients.index', compact('clients', 'contactUpdateEligible', 'unlinkedActivity'));
     }
 
     public function scheduleContactNumberUpdate(Request $request, MarketingWorkflowService $workflows)
@@ -196,6 +197,14 @@ class UserClientController extends Controller
     {
         $countries = collect(Countries::all())->sortBy('name');
         return view('admin.clients.create', compact('countries'));
+    }
+
+    public function show(User $client)
+    {
+        return view('admin.clients.show', [
+            'client' => $client,
+            ...$this->query->profile($client),
+        ]);
     }
 
     public function store(StoreClientRequest $request)

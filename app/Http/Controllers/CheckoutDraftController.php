@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\CheckoutDraft;
+use App\Services\Clients\CustomerIdentityService;
 use Illuminate\Http\Request;
 
 class CheckoutDraftController extends Controller
 {
-    public function store(Request $request)
+    public function store(Request $request, CustomerIdentityService $identity)
     {
         $data = $request->validate([
             'token' => ['required', 'uuid'],
@@ -49,18 +50,22 @@ class CheckoutDraftController extends Controller
         $now = now();
         $name = trim(($data['first_name'] ?? '') . ' ' . ($data['last_name'] ?? ''));
         $ipHash = hash_hmac('sha256', (string) $request->ip(), (string) config('app.key'));
+        $email = ($emailConsent || $adsConsent) ? ($data['email'] ?? null) : null;
+        $phone = $whatsappConsent ? ($data['phone'] ?? null) : null;
+        $user = $identity->resolve($email, $phone);
 
         CheckoutDraft::updateOrCreate(
             ['token' => $data['token']],
             [
+                'user_id' => $user?->id,
                 'package_id' => $data['package_id'] ?? null,
                 'device_id' => $data['device_id'] ?? null,
                 'vendor' => $data['vendor'] ?? null,
                 'connection_name' => $data['connection_name'] ?? null,
                 'connection_price' => $data['connection_price'] ?? null,
                 'name' => $name !== '' ? $name : null,
-                'email' => ($emailConsent || $adsConsent) ? ($data['email'] ?? null) : null,
-                'phone' => $whatsappConsent ? ($data['phone'] ?? null) : null,
+                'email' => $email,
+                'phone' => $phone,
                 'locale' => app()->getLocale(),
                 'email_consented_at' => $emailConsent ? ($existing?->email_consented_at ?: $now) : null,
                 'whatsapp_consented_at' => $whatsappConsent ? ($existing?->whatsapp_consented_at ?: $now) : null,

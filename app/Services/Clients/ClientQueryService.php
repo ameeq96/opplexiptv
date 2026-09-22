@@ -2,6 +2,10 @@
 
 namespace App\Services\Clients;
 
+use App\Models\CheckoutDraft;
+use App\Models\MarketingDelivery;
+use App\Models\Referral;
+use App\Models\TrialClick;
 use App\Models\User;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
@@ -56,5 +60,73 @@ class ClientQueryService
         $pager = $q->paginate($perPage);
         $pager->appends($request->all());
         return $pager;
+    }
+
+    public function profile(User $client): array
+    {
+        $orders = $client->orders()
+            ->with('device')
+            ->latest()
+            ->get();
+        $trialClicks = $client->trialClicks()
+            ->latest('updated_at')
+            ->get();
+        $checkoutDrafts = $client->checkoutDrafts()
+            ->with('completedOrder')
+            ->latest('last_activity_at')
+            ->get();
+        $digitalOrders = $client->digitalOrders()
+            ->withCount('items')
+            ->latest()
+            ->get();
+        $referrals = Referral::query()
+            ->with(['sourceOrder', 'referredOrder'])
+            ->where(function ($query) use ($client) {
+                $query->where('referrer_user_id', $client->id)
+                    ->orWhere('referred_user_id', $client->id);
+            })
+            ->latest()
+            ->get();
+
+        $orderIds = $orders->pluck('id');
+        $draftIds = $checkoutDrafts->pluck('id');
+        $marketingDeliveries = MarketingDelivery::query()
+            ->where(function ($query) use ($client, $orderIds, $draftIds) {
+                $query->where('user_id', $client->id);
+                if ($orderIds->isNotEmpty()) {
+                    $query->orWhereIn('order_id', $orderIds);
+                }
+                if ($draftIds->isNotEmpty()) {
+                    $query->orWhereIn('checkout_draft_id', $draftIds);
+                }
+            })
+            ->latest('scheduled_at')
+            ->get();
+
+        return compact(
+            'orders',
+            'trialClicks',
+            'checkoutDrafts',
+            'digitalOrders',
+            'referrals',
+            'marketingDeliveries'
+        );
+    }
+
+    public function unlinkedActivityCounts(): array
+    {
+        return [
+            'trial_clicks' => TrialClick::query()
+                ->whereNull('user_id')
+                ->whereNotNull('phone_normalized')
+                ->count(),
+            'checkout_drafts' => CheckoutDraft::query()
+                ->whereNull('user_id')
+                ->where(function ($query) {
+                    $query->whereNotNull('email_normalized')
+                        ->orWhereNotNull('phone_normalized');
+                })
+                ->count(),
+        ];
     }
 }

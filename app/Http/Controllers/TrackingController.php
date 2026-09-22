@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Jobs\SendFacebookCapiEvent;
 use App\Models\TrialClick;
+use App\Services\Clients\CustomerIdentityService;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use Nakanakaii\Countries\Countries;
@@ -32,7 +33,7 @@ class TrackingController extends Controller
             ->header('Pragma', 'no-cache');
     }
 
-    public function storeWhatsAppLead(Request $request)
+    public function storeWhatsAppLead(Request $request, CustomerIdentityService $identity)
     {
         $data = $request->validate([
             'event_id' => ['required', 'uuid'],
@@ -68,6 +69,8 @@ class TrackingController extends Controller
                 'phone' => 'Enter an international WhatsApp number with its country code.',
             ]);
         }
+
+        $user = $identity->resolve(null, $phone);
 
         $normalize = static function ($value, int $maxLength): ?string {
             if (!is_string($value) && !is_numeric($value)) {
@@ -133,6 +136,7 @@ class TrackingController extends Controller
         $click = TrialClick::firstOrCreate(
             ['phone_normalized' => $phone],
             [
+                'user_id' => $user?->id,
                 'event_id' => $eventId,
                 'last_event_id' => $eventId,
                 'contact_name' => $normalize($data['contact_name'], 120),
@@ -184,6 +188,8 @@ class TrackingController extends Controller
                 'consent_locale' => $locale,
                 'consent_ip_hash' => $ipHash,
             ];
+
+            $updates['user_id'] = $user?->id;
 
             if ($isNewEvent) {
                 $updates['last_event_id'] = $eventId;
