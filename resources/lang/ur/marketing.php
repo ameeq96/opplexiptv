@@ -15,7 +15,7 @@ return [
         ],
     ],
     'social_proof' => [
-        'verified_purchase' => 'تصدیق شدہ خریداری',
+        'verified_purchase' => 'صارف کی خریداری',
         'purchased' => ':name نے :package خریدا۔',
         'anonymous_name' => 'ایک صارف',
         'close' => 'خریداری کی اطلاع بند کریں',

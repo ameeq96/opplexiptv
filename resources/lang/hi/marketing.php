@@ -15,7 +15,7 @@ return [
         ],
     ],
     'social_proof' => [
-        'verified_purchase' => 'सत्यापित खरीदारी',
+        'verified_purchase' => 'ग्राहक की खरीदारी',
         'purchased' => ':name ने :package खरीदा।',
         'anonymous_name' => 'एक ग्राहक',
         'close' => 'खरीदारी सूचना बंद करें',

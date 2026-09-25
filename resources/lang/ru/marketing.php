@@ -15,7 +15,7 @@ return [
         ],
     ],
     'social_proof' => [
-        'verified_purchase' => 'Подтверждённая покупка',
+        'verified_purchase' => 'Покупка клиента',
         'purchased' => ':name приобрёл(а) :package.',
         'anonymous_name' => 'Покупатель',
         'close' => 'Закрыть уведомление о покупке',

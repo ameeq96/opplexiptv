@@ -15,7 +15,7 @@ return [
         ],
     ],
     'social_proof' => [
-        'verified_purchase' => 'عملية شراء موثقة',
+        'verified_purchase' => 'عملية شراء لأحد العملاء',
         'purchased' => 'اشترى :name :package.',
         'anonymous_name' => 'أحد العملاء',
         'close' => 'إغلاق إشعار الشراء',

@@ -15,7 +15,7 @@ return [
         ],
     ],
     'social_proof' => [
-        'verified_purchase' => 'Geverifieerde aankoop',
+        'verified_purchase' => 'Aankoop van klant',
         'purchased' => ':name heeft :package gekocht.',
         'anonymous_name' => 'Een klant',
         'close' => 'Aankoopmelding sluiten',
