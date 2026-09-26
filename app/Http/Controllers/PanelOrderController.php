@@ -74,11 +74,7 @@ class PanelOrderController extends Controller
     public function destroy(Order $panel_order)
     {
         $panel_order->load('pictures');
-        foreach ($panel_order->pictures as $pic) {
-            $fullPath = public_path($pic->path);
-            if (is_file($fullPath)) @unlink($fullPath);
-            $pic->delete();
-        }
+        $this->media->cleanupPictures([$panel_order]);
         $this->crud->delete($panel_order);
 
         return redirect()->route('admin.panel-orders.index')->with('success', __('interface.admin.flash.reseller_order_deleted'));

@@ -123,7 +123,7 @@ class AdminTranslationsSeeder extends Seeder
                     $title = $p->title;
                     $features = $p->features;
 
-                    if ($p->type === 'iptv') {
+                    if ($p->type === 'iptv' && $p->isDurationPlan()) {
                         $months = (int) ($p->duration_months ?? 0);
                         if (isset($iptvTitleMap[$months])) {
                             $title = Lang::get($iptvTitleMap[$months], [], $locale);

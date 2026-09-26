@@ -6,18 +6,16 @@ use App\Models\Order;
 
 class PanelOrderBulkService
 {
+    public function __construct(private PanelOrderMediaService $media)
+    {
+    }
+
     public function delete(array $ids): int
     {
         if (empty($ids)) return 0;
 
         $orders = Order::whereIn('id', $ids)->where('type', 'reseller')->with('pictures')->get();
-        foreach ($orders as $order) {
-            foreach ($order->pictures as $pic) {
-                $fullPath = public_path($pic->path);
-                if (is_file($fullPath)) @unlink($fullPath);
-                $pic->delete();
-            }
-        }
+        $this->media->cleanupPictures($orders);
 
         return Order::whereIn('id', $ids)->where('type', 'reseller')->delete();
     }

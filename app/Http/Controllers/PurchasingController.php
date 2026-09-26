@@ -71,4 +71,9 @@ class PurchasingController extends Controller
         $this->media->deletePicture($purchasing, $picture);
         return back()->with('success', __('messages.screenshot_deleted'));
     }
+
+    public function showPicture(Purchasing $purchasing, Picture $picture)
+    {
+        return $this->media->response($purchasing, $picture);
+    }
 }

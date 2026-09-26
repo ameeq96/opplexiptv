@@ -4,6 +4,9 @@
 @if (session('error'))
     <div class="alert alert-danger mt-3">{{ session('error') }}</div>
 @endif
+@if (session('warning'))
+    <div class="alert alert-warning mt-3">{{ session('warning') }}</div>
+@endif
 @if ($errors->any())
     <div class="alert alert-danger mt-3">
         <ul class="mb-0">

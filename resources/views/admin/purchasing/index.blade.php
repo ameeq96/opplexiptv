@@ -80,10 +80,10 @@
                                 @if ($count)
                                     <div class="d-flex overflow-auto" style="max-width: 260px; gap: 6px;">
                                         @foreach ($pics as $pic)
-                                            <img src="{{ asset($pic->path) }}" alt="ss" width="50" height="50"
+                                            <img src="{{ route('admin.purchasing.pictures.show', [$purchase->id, $pic->id]) }}" alt="ss" width="50" height="50"
                                                 style="object-fit: cover; border-radius: 4px; cursor: pointer; flex-shrink: 0;"
                                                 data-bs-toggle="modal" data-bs-target="#screenshotModal"
-                                                onclick="showScreenshot('{{ asset($pic->path) }}')">
+                                                onclick="showScreenshot('{{ route('admin.purchasing.pictures.show', [$purchase->id, $pic->id]) }}')">
                                         @endforeach
                                     </div>
                                 @else
@@ -217,4 +217,3 @@
     </script>
 
 @endsection
-

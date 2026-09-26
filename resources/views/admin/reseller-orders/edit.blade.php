@@ -180,8 +180,8 @@
           @foreach ($order->pictures as $pic)
             <div class="col-6 col-sm-4 col-md-3">
               <div class="border rounded p-2 h-100 d-flex flex-column">
-                <a href="{{ asset($pic->path) }}" target="_blank" class="mb-2">
-                  <img src="{{ asset($pic->path) }}" class="img-fluid rounded" alt="screenshot"
+                <a href="{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}" target="_blank" class="mb-2" rel="noopener">
+                  <img src="{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}" class="img-fluid rounded" alt="screenshot"
                        style="object-fit: cover; width: 100%; height: 140px;">
                 </a>
                 <form action="{{ route('admin.orders.pictures.destroy', [$order->id, $pic->id]) }}" method="POST" class="mt-auto">
@@ -232,4 +232,3 @@
 </script>
 
 @endsection
-

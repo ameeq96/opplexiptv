@@ -14,6 +14,7 @@ use App\Models\Package;
 use App\Models\Referral;
 use App\Models\ShopProduct;
 use App\Services\{TmdbService, ImageService, LocaleService, ContactService, CaptchaService, EventPromotionService};
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -361,6 +362,7 @@ class HomeController extends Controller
         // IPTV packages (type = iptv, vendor = opplex|starshare)
         $iptvRows = Package::query()
             ->where('active', true)
+            ->where('is_available', true)
             ->where('type', 'iptv')
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
@@ -376,6 +378,7 @@ class HomeController extends Controller
             $iptvPackages[] = [
                 'id'     => $r->id,                           // <--- ID SEND HO RAHA
                 'vendor' => strtolower($r->vendor),           // opplex | starshare
+                'service' => $this->packageServiceName($r),
                 'title'  => $this->packageDisplayTitle($r),
                 'old'    => 0.00,
                 'price'  => (float) $r->price_amount,
@@ -390,6 +393,7 @@ class HomeController extends Controller
         // Reseller packages (type = reseller, vendor = opplex|starshare)
         $resellerRows = Package::query()
             ->where('active', true)
+            ->where('is_available', true)
             ->where('type', 'reseller')
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
@@ -417,13 +421,15 @@ class HomeController extends Controller
 
         $prePrice    = $request->query('price');
         $iptvVendors = ['Opplex', 'starshare'];
+        $eventPromotion = $this->eventPromotions->activeForSession();
 
         return view('pages.checkout.configure', compact(
             'devices',
             'iptvPackages',
             'resellerPackages',
             'prePrice',
-            'iptvVendors'
+            'iptvVendors',
+            'eventPromotion'
         ));
     }
 
@@ -436,9 +442,6 @@ class HomeController extends Controller
                 'iptv_vendor'  => 'nullable|string',
                 'plan_name'    => 'required|string',
                 'plan_price'   => 'required|numeric|min:0',
-                'connection_price' => 'nullable|numeric|min:0',
-                'connection_name' => 'nullable|string|max:100',
-
                 // ENUM: package | reseller
                 'package_type' => 'required|in:package,reseller',
 
@@ -454,7 +457,7 @@ class HomeController extends Controller
                 'coupon'       => 'nullable|string',
                 'paymethod'    => 'required|in:card,crypto',
                 'policy_accepted' => 'required|accepted',
-                'checkout_draft_token' => 'nullable|uuid',
+                'checkout_draft_token' => 'required|uuid',
                 'marketing_email' => 'nullable|boolean',
                 'marketing_whatsapp' => 'nullable|boolean',
                 'marketing_ads' => 'nullable|boolean',
@@ -492,6 +495,24 @@ class HomeController extends Controller
             ],
         );
 
+        $checkoutKey = $data['checkout_draft_token'];
+        $submittedEmail = User::normalizeEmail($data['email']);
+        $existingDraft = CheckoutDraft::query()
+            ->with(['user', 'completedOrder.user'])
+            ->where('token', $checkoutKey)
+            ->first();
+        $existingOrder = Order::query()
+            ->with('user')
+            ->where('checkout_key', $checkoutKey)
+            ->first();
+        $existingOrder ??= $existingDraft?->completedOrder;
+
+        if ($existingOrder) {
+            $this->assertCheckoutReplayOwnership($existingOrder, $submittedEmail, $existingDraft);
+
+            return $this->checkoutSuccessRedirect($request, $existingOrder);
+        }
+
         if (!$this->captcha->check($data['captcha'])) {
             throw \Illuminate\Validation\ValidationException::withMessages([
                 'captcha' => __('document_ui.contact.captcha_error'),
@@ -501,6 +522,7 @@ class HomeController extends Controller
         // 1) Package / pricing calculations. Never trust client-supplied package pricing.
         $package = Package::query()
             ->where('active', true)
+            ->where('is_available', true)
             ->whereIn('type', ['iptv', 'reseller'])
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
@@ -522,7 +544,6 @@ class HomeController extends Controller
         // 2) User create / get only after the selected product and device are verified.
         $fullName = trim($data['first_name'] . ' ' . $data['last_name']);
         $eventPromotion = $this->eventPromotions->activeForSession();
-        $submittedEmail = User::normalizeEmail($data['email']);
         if ($eventPromotion
             && (!$submittedEmail
                 || !hash_equals($eventPromotion['recipient_email_normalized'], $submittedEmail))) {
@@ -582,20 +603,15 @@ class HomeController extends Controller
 
         $vendor = strtolower((string) $package->vendor);
         $vendorLabel = $vendor === 'starshare' ? 'Filex' : 'Opplex';
+        $serviceName = $this->packageServiceName($package);
         $packageTitle = $this->packageDisplayTitle($package);
-        $planName = $vendorLabel . ' - ' . $packageTitle;
+        $planName = $package->isDurationPlan()
+            ? $vendorLabel . ' - ' . $packageTitle
+            : $packageTitle;
 
         $qty = 1;
         $basePrice = (float) $package->price_amount;
-        $connectionTier = isset($data['connection_price'])
-            ? (float) $data['connection_price']
-            : 0.0;
-        $filexYearlyConnectionPrices = Package::FILEX_YEARLY_CONNECTION_PRICES;
-        $isAllowedMultiConnection = $packageType === 'package'
-            && $vendor === 'starshare'
-            && (int) $package->duration_months === 12
-            && in_array($connectionTier, array_values($filexYearlyConnectionPrices), true);
-        $sellPriceSingle = $isAllowedMultiConnection ? $connectionTier : $basePrice;
+        $sellPriceSingle = $basePrice;
         $subtotal = $sellPriceSingle * $qty;
         $promotionQuote = $eventPromotion
             ? $this->eventPromotions->quote($subtotal, $eventPromotion)
@@ -617,8 +633,8 @@ class HomeController extends Controller
         $expiry   = $duration > 0 ? $now->copy()->addMonths($duration) : null;
         $analyticsConsented = $this->hasAnalyticsConsent($request);
 
-        // 3) Order create
-        $order = Order::create([
+        $orderAttributes = [
+            'checkout_key'  => $checkoutKey,
             'user_id'        => $user->id,
             'package'        => $planName,
             'price'          => $sellPrice,
@@ -653,54 +669,99 @@ class HomeController extends Controller
             'locale'         => app()->getLocale(),
             'ga_client_id'   => $analyticsConsented ? $this->gaClientId($request) : null,
             'analytics_consented_at' => $analyticsConsented ? $now : null,
-        ]);
+        ];
+
+        $draftRetentionExpiresAt = $now->copy()->addDays(
+            max(1, (int) config('services.marketing.draft_retention_days', 30))
+        );
+        $checkoutDraft = CheckoutDraft::firstOrCreate(
+            ['token' => $checkoutKey],
+            [
+                'locale' => app()->getLocale(),
+                'last_activity_at' => $now,
+                'retention_expires_at' => $draftRetentionExpiresAt,
+            ]
+        );
+
+        // Serialize submissions for this checkout key. The unique orders.checkout_key
+        // constraint remains the final database-level safeguard against duplicates.
+        [$order, $orderCreated] = DB::transaction(function () use (
+            $checkoutDraft,
+            $checkoutKey,
+            $device,
+            $draftRetentionExpiresAt,
+            $now,
+            $orderAttributes,
+            $package,
+            $submittedEmail,
+            $user,
+            $vendor
+        ) {
+            $lockedDraft = CheckoutDraft::query()
+                ->whereKey($checkoutDraft->id)
+                ->lockForUpdate()
+                ->firstOrFail();
+
+            $order = $lockedDraft->completed_order_id
+                ? Order::find($lockedDraft->completed_order_id)
+                : null;
+            $order ??= Order::query()
+                ->where('checkout_key', $checkoutKey)
+                ->lockForUpdate()
+                ->first();
+            $orderCreated = false;
+
+            if ($order) {
+                $this->assertCheckoutReplayOwnership($order, $submittedEmail, $lockedDraft);
+            } else {
+                $order = Order::create($orderAttributes);
+                $orderCreated = true;
+            }
+
+            $lockedDraft->forceFill([
+                'user_id' => $user->id,
+                'package_id' => $package->id,
+                'device_id' => $device?->id,
+                'vendor' => $vendor,
+                'connection_name' => null,
+                'connection_price' => null,
+                'name' => null,
+                'email' => null,
+                'phone' => null,
+                'email_consented_at' => null,
+                'whatsapp_consented_at' => null,
+                'ads_consented_at' => null,
+                'consent_version' => null,
+                'consent_ip_hash' => null,
+                'locale' => app()->getLocale(),
+                'last_activity_at' => $now,
+                'retention_expires_at' => $draftRetentionExpiresAt,
+                'completed_order_id' => $order->id,
+                'completed_at' => $lockedDraft->completed_at ?: $now,
+            ])->save();
+
+            MarketingDelivery::query()
+                ->where('checkout_draft_id', $lockedDraft->id)
+                ->where('workflow', 'abandoned')
+                ->whereNull('sent_at')
+                ->update([
+                    'failed_at' => $now,
+                    'last_error' => 'Checkout completed',
+                    'processing_at' => null,
+                    'processing_token' => null,
+                ]);
+
+            return [$order, $orderCreated];
+        }, 3);
+
+        if (!$orderCreated) {
+            return $this->checkoutSuccessRedirect($request, $order);
+        }
 
         if ($analyticsConsented) {
             $analyticsOrderIds = (array) session('analytics_order_ids', []);
             $analyticsOrderIds[] = $order->id;
             session(['analytics_order_ids' => array_slice(array_unique($analyticsOrderIds), -20)]);
-        }
-
-        if (!empty($data['checkout_draft_token'])) {
-            $completedDraft = CheckoutDraft::updateOrCreate(
-                ['token' => $data['checkout_draft_token']],
-                [
-                    'user_id' => $user->id,
-                    'package_id' => $package->id,
-                    'device_id' => $device?->id,
-                    'vendor' => $vendor,
-                    'connection_name' => $data['connection_name'] ?? null,
-                    'connection_price' => $connectionTier ?: null,
-                    'name' => null,
-                    'email' => null,
-                    'phone' => null,
-                    'email_consented_at' => null,
-                    'whatsapp_consented_at' => null,
-                    'ads_consented_at' => null,
-                    'consent_version' => null,
-                    'consent_ip_hash' => null,
-                    'locale' => app()->getLocale(),
-                    'last_activity_at' => $now,
-                    'retention_expires_at' => $now->copy()->addDays(
-                        max(1, (int) config('services.marketing.draft_retention_days', 30))
-                    ),
-                    'completed_order_id' => $order->id,
-                    'completed_at' => $now,
-                ]
-            );
-
-            if ($completedDraft) {
-                MarketingDelivery::query()
-                    ->where('checkout_draft_id', $completedDraft->id)
-                    ->where('workflow', 'abandoned')
-                    ->whereNull('sent_at')
-                    ->update([
-                        'failed_at' => $now,
-                        'last_error' => 'Checkout completed',
-                        'processing_at' => null,
-                        'processing_token' => null,
-                    ]);
-            }
         }
 
         $referralCode = session()->pull('referral_code');
@@ -725,17 +786,11 @@ class HomeController extends Controller
             'phone'             => $data['phone'],
             'package'           => $planName,
             'package_type'      => $packageType,
-            'vendor'            => $vendor,
+            'vendor'            => $serviceName,
             'device'            => $device?->name,
-            'connection_name'   => $isAllowedMultiConnection
-                ? ($connectionTier === $filexYearlyConnectionPrices[2]
-                    ? __('messages.checkout_two_connection_label')
-                    : __('messages.checkout_four_connection_label'))
-                : __('messages.checkout_one_connection_label'),
             'quantity'          => $qty,
             'payment_method'    => $data['paymethod'],
             'subscription_price'=> $sellPriceSingle,
-            'connection_price'  => null,
             'unit_price'        => $sellPriceSingle,
             'subtotal'          => $promotionQuote['subtotal'],
             'discount_amount'   => $promotionQuote['discount'],
@@ -753,7 +808,9 @@ class HomeController extends Controller
             $adminEmail = config('mail.from.address', 'info@opplexiptv.com');
             Mail::to($adminEmail)->queue(new CheckoutOrderMail($emailData, true));
 
-            $admins = Admin::all();
+            $admins = Admin::query()
+                ->whereIn('role', [Admin::ROLE_OWNER, Admin::ROLE_SALES, Admin::ROLE_SUPPORT])
+                ->get();
             if ($admins->count() > 0) {
                 Notification::send($admins, new NewOrderNotification([
                     'title'   => 'New order received',
@@ -775,30 +832,19 @@ class HomeController extends Controller
             ]);
         }
 
-        $whatsappPaymentOrders = (array) $request->session()->get('whatsapp_payment_orders', []);
-        $whatsappPaymentOrders[(string) $order->id] = $now->timestamp;
-        $request->session()->put(
-            'whatsapp_payment_orders',
-            array_slice($whatsappPaymentOrders, -5, null, true)
-        );
-
-        return redirect()
-            ->route('thankyou')
-            ->with('success', __('interface.checkout.order_received', ['id' => $order->id]))
-            ->with('order_summary', [
-                'id' => $order->id,
-                'package_id' => $package->id,
-                'package' => $planName,
-                'package_type' => $packageType,
-                'vendor' => $vendorLabel,
-                'device' => $device?->name,
-                'subtotal' => $promotionQuote['subtotal'],
-                'discount' => $promotionQuote['discount'],
-                'promotion_name' => $eventPromotion['name'] ?? null,
-                'total' => $sellPrice,
-                'currency' => $currency,
-                'payment_method' => $data['paymethod'],
-            ]);
+        return $this->checkoutSuccessRedirect($request, $order, [
+            'package_id' => $package->id,
+            'package' => $planName,
+            'package_type' => $packageType,
+            'vendor' => $serviceName,
+            'device' => $device?->name,
+            'subtotal' => $promotionQuote['subtotal'],
+            'discount' => $promotionQuote['discount'],
+            'promotion_name' => $eventPromotion['name'] ?? null,
+            'total' => $sellPrice,
+            'currency' => $currency,
+            'payment_method' => $data['paymethod'],
+        ]);
     }
 
     public function thankYou()
@@ -816,11 +862,12 @@ class HomeController extends Controller
 
         $package = Package::query()
             ->where('active', true)
+            ->where('is_available', true)
             ->whereIn('type', ['iptv', 'reseller'])
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
             ->whereKey($packageId)
-            ->first(['id', 'type']);
+            ->first(['id', 'type', 'vendor', 'title', 'duration_months']);
 
         if (!$package) {
             return redirect()->route('configure', $request->except('package_id'));
@@ -845,9 +892,84 @@ class HomeController extends Controller
         return view('pages.checkout.step1', compact('planName', 'planPrice', 'device', 'eventPromotion'));
     }
 
+    private function checkoutSuccessRedirect(Request $request, Order $order, array $summary = [])
+    {
+        $whatsappPaymentOrders = (array) $request->session()->get('whatsapp_payment_orders', []);
+        $whatsappPaymentOrders[(string) $order->id] = now()->timestamp;
+        $request->session()->put(
+            'whatsapp_payment_orders',
+            array_slice($whatsappPaymentOrders, -5, null, true)
+        );
+
+        return redirect()
+            ->route('thankyou')
+            ->with('success', __('interface.checkout.order_received', ['id' => $order->id]))
+            ->with('order_summary', array_merge([
+                'id' => $order->id,
+                'package_id' => $order->package_id,
+                'package' => $order->package,
+                'package_type' => $order->type,
+                'vendor' => null,
+                'device' => null,
+                'subtotal' => $order->subtotal ?? $order->sell_price ?? $order->price,
+                'discount' => $order->discount ?? 0,
+                'promotion_name' => null,
+                'total' => $order->sell_price ?? $order->price,
+                'currency' => $order->currency,
+                'payment_method' => $order->payment_method,
+            ], $summary));
+    }
+
+    private function assertCheckoutReplayOwnership(
+        Order $order,
+        ?string $submittedEmail,
+        ?CheckoutDraft $draft = null
+    ): void {
+        $order->loadMissing('user');
+        $orderEmail = $order->user?->email_normalized
+            ?: User::normalizeEmail($order->user?->email);
+        $matchesOrder = $submittedEmail !== null
+            && $orderEmail !== null
+            && hash_equals($orderEmail, $submittedEmail);
+
+        $matchesDraft = true;
+        if ($draft?->completed_order_id && (int) $draft->completed_order_id !== (int) $order->id) {
+            $matchesDraft = false;
+        } elseif ($draft?->user_id) {
+            $draft->loadMissing('user');
+            $draftEmail = $draft->user?->email_normalized
+                ?: User::normalizeEmail($draft->user?->email);
+            $matchesDraft = $draftEmail !== null
+                && $submittedEmail !== null
+                && hash_equals($draftEmail, $submittedEmail);
+        }
+
+        if (!$matchesOrder || !$matchesDraft) {
+            throw \Illuminate\Validation\ValidationException::withMessages([
+                'email' => 'Please use the same email address used for this checkout.',
+            ]);
+        }
+    }
+
+    private function packageServiceName(Package $package): string
+    {
+        if ($package->type !== 'iptv' || $package->isDurationPlan()) {
+            return strtolower((string) $package->vendor) === 'starshare' ? 'Filex' : 'Opplex';
+        }
+
+        $title = trim((string) $package->title);
+        $service = preg_replace(
+            '/\s*-\s*(?:3\s*Months?|Half\s*Yearly|Yearly|Monthly|1\s*Month)\s*$/iu',
+            '',
+            $title
+        );
+
+        return trim((string) $service) ?: $title;
+    }
+
     private function packageDisplayTitle(Package $package): string
     {
-        if ($package->type === 'iptv') {
+        if ($package->type === 'iptv' && $package->isDurationPlan()) {
             $planKey = match ((int) $package->duration_months) {
                 1 => 'monthly',
                 3 => 'three_months',
@@ -878,6 +1000,13 @@ class HomeController extends Controller
         }
 
         $title = (string) ($package->translation()?->title ?: $package->title);
+
+        if ($package->type === 'iptv') {
+            return Str::startsWith($title, 'messages.') || trim($title) === ''
+                ? (string) $package->title
+                : trim($title);
+        }
+
         $title = (string) preg_replace('/\s*\([^)]*\)/u', '', $title);
         $title = trim((string) preg_replace('/\s*-\s*\$?\d+(?:[.,]\d+)?/u', '', $title, 1));
 

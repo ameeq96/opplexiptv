@@ -5,6 +5,10 @@
 
     RewriteEngine On
 
+    # Payment proofs are served only through authenticated admin routes.
+    RewriteRule ^screenshots/[0-9]+_ - [F,L,NC]
+    RewriteRule ^uploads/purchases/[0-9]+_ - [F,L,NC]
+
     # Remove X-Powered-By header for security
     <IfModule mod_headers.c>
         Header unset X-Powered-By

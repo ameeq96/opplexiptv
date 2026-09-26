@@ -121,7 +121,7 @@ class UiData
         $footer = $this->remember("footer:{$whatsappNumber}", now()->addMinutes(30), fn () => $this->footerData(), []);
         $packageGroups = $needsPricing
             ? $this->remember(
-                'packages:v2',
+                'packages:v3',
                 now()->addMinutes(30),
                 fn () => $this->packageGroups(),
                 ['iptv' => [], 'reseller' => []]
@@ -741,7 +741,7 @@ class UiData
             ->whereIn('type', ['iptv', 'reseller'])
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
-            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
+            ->orderByRaw("CASE WHEN type = 'reseller' THEN CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END ELSE 0 END")
             ->orderByRaw(
                 "CASE WHEN type = 'reseller'
                     THEN COALESCE(sort_order, credits, id)

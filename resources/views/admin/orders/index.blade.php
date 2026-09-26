@@ -218,10 +218,10 @@
                                     @if ($count)
                                         <div class="d-flex overflow-auto" style="max-width: 250px; gap: 5px;">
                                             @foreach ($pics as $pic)
-                                                <img src="{{ asset($pic->path) }}" alt="ss" width="50" height="50"
+                                                <img src="{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}" alt="ss" width="50" height="50"
                                                     style="object-fit: cover; border-radius: 6px; cursor: pointer; flex-shrink: 0;"
                                                     data-bs-toggle="modal" data-bs-target="#screenshotModal"
-                                                    onclick="showScreenshot('{{ asset($pic->path) }}')">
+                                                    onclick="showScreenshot('{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}')">
                                             @endforeach
                                         </div>
                                     @else

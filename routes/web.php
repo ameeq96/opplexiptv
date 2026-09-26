@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\AdminAuditLogController;
+use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Admin\TwoFactorController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\ShopProductController as AdminShopProductController;
@@ -43,6 +46,11 @@ use App\Http\Controllers\DigitalCommerce\CartController as DigitalCartController
 use App\Http\Controllers\DigitalCommerce\CheckoutController as DigitalCheckoutController;
 use App\Http\Controllers\DigitalCommerce\CustomerOrderController as DigitalCustomerOrderController;
 use App\Http\Controllers\Admin\TrialClickController;
+use App\Http\Middleware\AuditAdminAction;
+use App\Http\Middleware\EnsureAdminPasswordChanged;
+use App\Http\Middleware\EnsureAdminSessionIsCurrent;
+use App\Http\Middleware\EnsureAdminTwoFactorAuthenticated;
+use App\Http\Middleware\EnsureRecentAdminConfirmation;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,12 +73,40 @@ Route::prefix('admin')->name('admin.')->group(function () {
     // Guests (not logged in as admin)
     Route::middleware('guest:admin')->group(function () {
         Route::get('login',  [AuthController::class, 'showLogin'])->name('login');
-        Route::post('login', [AuthController::class, 'login'])->name('login.attempt');
+        Route::post('login', [AuthController::class, 'login'])
+            ->middleware(['throttle:20,1', AuditAdminAction::class])
+            ->name('login.attempt');
     });
 
     // Authenticated admins
-    Route::middleware('auth:admin')->group(function () {
+    Route::middleware(['auth:admin', EnsureAdminSessionIsCurrent::class, AuditAdminAction::class])->group(function () {
         Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+        Route::get('two-factor-challenge', [TwoFactorController::class, 'showChallenge'])
+            ->name('two-factor.challenge');
+        Route::post('two-factor-challenge', [TwoFactorController::class, 'verifyChallenge'])
+            ->name('two-factor.verify');
+
+        Route::get('password/change', [AuthController::class, 'showPasswordChange'])
+            ->name('password.change');
+        Route::put('password/change', [AuthController::class, 'updatePassword'])
+            ->middleware('throttle:5,1')
+            ->name('password.update');
+
+        Route::middleware(EnsureAdminPasswordChanged::class)->group(function () {
+            Route::get('security/two-factor', [TwoFactorController::class, 'settings'])
+                ->name('two-factor.settings');
+            Route::post('security/two-factor', [TwoFactorController::class, 'confirm'])
+                ->middleware('throttle:6,1')
+                ->name('two-factor.confirm');
+            Route::post('security/two-factor/recovery-codes', [TwoFactorController::class, 'regenerateRecoveryCodes'])
+                ->middleware('throttle:6,1')
+                ->name('two-factor.recovery-codes');
+            Route::delete('security/two-factor', [TwoFactorController::class, 'disable'])
+                ->middleware('throttle:6,1')
+                ->name('two-factor.disable');
+
+            Route::middleware([EnsureAdminTwoFactorAuthenticated::class, 'admin.access'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
         // === Everything that was previously under Route::middleware('admin') ===
@@ -92,12 +128,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::resource('clients', UserClientController::class);
 
         Route::resource('orders', OrderController::class);
+        Route::get('orders/{order}/pictures/{picture}', [OrderController::class, 'showPicture'])
+            ->name('orders.pictures.show');
         Route::delete('orders/{order}/pictures/{picture}', [OrderController::class, 'destroyPicture'])
             ->name('orders.pictures.destroy');
 
         Route::resource('panel-orders', PanelOrderController::class);
 
         Route::resource('purchasing', PurchasingController::class);
+        Route::get('purchasing/{purchasing}/pictures/{picture}', [PurchasingController::class, 'showPicture'])
+            ->name('purchasing.pictures.show');
         Route::delete('purchasing/{purchasing}/pictures/{picture}', [PurchasingController::class, 'destroyPicture'])
             ->name('purchasing.pictures.destroy');
 
@@ -131,6 +171,18 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::put('footer-settings', [AdminFooterSettingController::class, 'update'])->name('footer-settings.update');
         Route::resource('footer-links', AdminFooterLinkController::class);
         Route::resource('social-links', AdminSocialLinkController::class);
+        Route::get('security/confirm', [TwoFactorController::class, 'showSensitiveConfirmation'])
+            ->name('security.confirm');
+        Route::post('security/confirm', [TwoFactorController::class, 'confirmSensitiveAccess'])
+            ->middleware('throttle:5,1')
+            ->name('security.confirm.store');
+        Route::middleware(EnsureRecentAdminConfirmation::class)->group(function () {
+            Route::delete('admin-users/{admin_user}/two-factor', [AdminUserController::class, 'resetTwoFactor'])
+                ->name('admin-users.two-factor.reset');
+            Route::resource('admin-users', AdminUserController::class)->except('show');
+        });
+        Route::get('audit-logs', [AdminAuditLogController::class, 'index'])->name('audit-logs.index');
+        Route::get('audit-logs/{auditLog}', [AdminAuditLogController::class, 'show'])->name('audit-logs.show');
         /* ----- Digital-commerce admin routes DISABLED (feature hidden) -----
         Route::resource('digital-categories', AdminDigitalCategoryController::class)->except(['show']);
         Route::resource('digital-products', AdminDigitalProductController::class)->except(['show']);
@@ -165,6 +217,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('maintenance/clear', [AdminMaintenanceController::class, 'runFull'])
             ->middleware('throttle:3,1')
             ->name('maintenance.clear');
+            });
+        });
     });
 });
 

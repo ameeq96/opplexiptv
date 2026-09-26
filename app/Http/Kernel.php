@@ -69,6 +69,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'admin' => \App\Http\Middleware\AdminMiddleware::class,
+        'admin.access' => \App\Http\Middleware\AuthorizeAdminRoute::class,
         'noindex.pagination' => \App\Http\Middleware\NoIndexPagination::class,
         'public.content.cache' => \App\Http\Middleware\PublicContentCache::class,
     ];

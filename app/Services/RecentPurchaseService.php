@@ -11,7 +11,7 @@ class RecentPurchaseService
     public function items(): array
     {
         try {
-            return Cache::remember('social-proof:purchasers:v4', now()->addMinutes(10), function () {
+            return Cache::remember('social-proof:purchasers:v5', now()->addMinutes(10), function () {
                 return Order::query()
                     ->select([
                         'id',
@@ -21,16 +21,19 @@ class RecentPurchaseService
                         'paid_at',
                     ])
                     ->with('user:id,name')
-                    ->where(function ($query) {
-                        $query->where('payment_status', 'paid')
-                            ->orWhereIn('status', ['active', 'expired']);
-                    })
+                    ->where('payment_status', 'paid')
+                    ->whereNotNull('paid_at')
+                    ->where('paid_amount', '>', 0)
+                    ->whereNotNull('payment_provider')
+                    ->where('payment_provider', '<>', '')
+                    ->whereNotNull('provider_transaction_id')
+                    ->where('provider_transaction_id', '<>', '')
                     ->whereNotNull('package')
                     ->where('package', '<>', '')
                     ->whereHas('user', function ($query) {
                         $query->whereNotNull('name')->where('name', '<>', '');
                     })
-                    ->orderByDesc('id')
+                    ->orderByDesc('paid_at')
                     ->limit(40)
                     ->get()
                     ->map(function (Order $order) {

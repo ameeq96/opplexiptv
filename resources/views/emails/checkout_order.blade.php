@@ -90,12 +90,6 @@
             <td style="padding:6px 8px;">{{ $details['device'] }}</td>
         </tr>
     @endif
-    @if (!empty($details['connection_name']) && $packageType !== 'reseller')
-        <tr>
-            <td style="padding:6px 8px;font-weight:bold;">{{ __('messages.checkout_connection_title') }}</td>
-            <td style="padding:6px 8px;">{{ $details['connection_name'] }}</td>
-        </tr>
-    @endif
     <tr>
         <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.quantity') }}</td>
         <td style="padding:6px 8px;">{{ $details['quantity'] ?? 1 }}</td>
@@ -108,12 +102,6 @@
         <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.subscription_price') }}</td>
         <td style="padding:6px 8px;">{{ $fmtMoney($details['subscription_price'] ?? $details['unit_price'] ?? null) }}</td>
     </tr>
-    @if (isset($details['connection_price']) && $details['connection_price'] !== null)
-        <tr>
-            <td style="padding:6px 8px;font-weight:bold;">{{ __('interface.email.checkout.connection_price') }}</td>
-            <td style="padding:6px 8px;">{{ $fmtMoney($details['connection_price']) }}</td>
-        </tr>
-    @endif
     @if ((float) ($details['discount_amount'] ?? 0) > 0)
         <tr>
             <td style="padding:6px 8px;font-weight:bold;">{{ $details['promotion_name'] ?? 'Event offer' }} (10% OFF)</td>

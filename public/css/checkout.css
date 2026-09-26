@@ -1,11 +1,28 @@
 :root{--brand:#2563eb;--muted:#6b7280;--border:#e5e7eb}.hero-title{font-weight:700;letter-spacing:.2px}.hero-subtitle{color:var(--muted);font-size:.95rem}.badge-row{gap:.75rem;font-weight:600;color:#059669}.badge-row .fa,.badge-row .bi{margin-right:.35rem}.notice{border:1px solid var(--border);border-left:4px solid #60a5fa;background:#f8fafc;color:#334155;font-size:.9rem}.card-soft{border:1px solid var(--border);border-radius:.75rem;box-shadow:0 .5rem 1rem rgb(0 0 0 / .02);background:#fff}.required:after{content:" *";color:#ef4444}.order-box{border:1.5px solid #dbeafe;border-radius:.75rem;background:#f8fbff}.order-line{display:flex;align-items:center;justify-content:space-between;padding:.125rem 0;color:#374151;font-size:.95rem}.order-total{display:flex;align-items:center;justify-content:space-between;border-top:1px dashed #e5e7eb;padding-top:.5rem;margin-top:.5rem;font-weight:700;font-size:1.25rem}.coupon-link{font-weight:500}.pay-option{border:1px solid var(--border);border-radius:.75rem;padding:.5rem .75rem;display:flex;gap:.5rem;align-items:flex-start}.pay-option.active{border-color:#bfdbfe;background:#eff6ff}.place-order{background:var(--brand);border:0;font-weight:600;padding:.85rem 1rem}.place-order:hover{background:#1d4ed8}.form-control,.form-select{padding:.65rem .75rem}label{font-weight:600;font-size:.9rem}.small-note{font-size:.8rem;color:#6b7280}#checkoutForm select.form-control,#checkoutForm select.form-select{height:auto;min-height:48px;line-height:1.35;font-size:1.05rem;border:1px solid var(--border);border-radius:.5rem;padding:.7rem 2.25rem .7rem 1rem;background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%236b7280' d='M3.22 5.97a.75.75 0 0 1 1.06 0L8 9.69l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.03a.75.75 0 0 1 0-1.06z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px 16px;-webkit-appearance:none;appearance:none}#checkoutForm select.form-control:focus,#checkoutForm select.form-select:focus{border-color:#93c5fd;box-shadow:0 0 0 .2rem rgb(37 99 235 / .15)}[dir="rtl"] #checkoutForm select.form-control,[dir="rtl"] #checkoutForm select.form-select{padding:.7rem 1rem .7rem 2.25rem;background-position:left .8rem center}
 
-.config-order-summary{align-items:center;background:#fff;border:1px solid #dbeafe;display:flex;gap:20px;justify-content:space-between;padding:14px 16px;position:sticky;bottom:12px;z-index:4;box-shadow:0 10px 28px rgba(15,23,42,.12)}
+.config-order-summary{align-items:stretch;background:#fff;border:1px solid #dbeafe;display:flex;gap:24px;justify-content:space-between;padding:18px;position:sticky;bottom:12px;z-index:4;box-shadow:0 10px 28px rgba(15,23,42,.12)}
 .config-order-summary small,.config-order-summary span{color:#64748b;display:block;font-size:.78rem}
 .config-order-summary strong{color:#0f172a;display:block}
-.config-order-summary__total{text-align:right;white-space:nowrap}
+.config-order-summary__details{flex:1 1 auto;min-width:0}
+.config-order-summary__meta{display:grid;gap:8px;grid-template-columns:repeat(4,minmax(110px,1fr));margin-top:12px}
+.config-order-summary__meta>div{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 10px}
+.config-order-summary__meta strong{font-size:.86rem;line-height:1.35;margin-top:2px;overflow-wrap:anywhere}
+.config-order-summary__delivery{margin-top:10px}
+.config-order-summary__pricing{border-left:1px solid #e2e8f0;display:grid;flex:0 0 250px;gap:7px;padding-left:20px}
+.config-order-summary__pricing>div{align-items:center;display:flex;gap:16px;justify-content:space-between}
+.config-order-summary__discount strong,.order-line--discount strong{color:#047857}
+.config-order-summary__total{border-top:1px dashed #cbd5e1;padding-top:8px;text-align:right;white-space:nowrap}
+.config-order-summary__total strong{font-size:1.2rem}
 .config-order-summary__edit{background:transparent;border:0;color:#2563eb;font-size:.78rem;font-weight:700;padding:2px 0;text-decoration:underline}
 .config-wrap button.pick{color:inherit;font:inherit}.config-wrap .pick:focus-visible{outline:3px solid #2563eb;outline-offset:3px}
+.order-summary__heading{align-items:flex-start;display:flex;gap:14px;justify-content:space-between}
+.order-summary__heading>a{flex:0 0 auto}
+.order-details{display:grid;gap:8px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:14px}
+.order-detail{background:#fff;border:1px solid #dbeafe;border-radius:8px;padding:9px 10px}
+.order-detail span{color:#64748b;display:block;font-size:.75rem;line-height:1.3}
+.order-detail strong{color:#0f172a;display:block;font-size:.9rem;line-height:1.35;margin-top:2px;overflow-wrap:anywhere}
+.order-pricing{border-top:1px solid #dbeafe;margin-top:14px;padding-top:10px}
+.order-pricing .order-line{padding:4px 0}
 .checkout-policy{background:#fffaf0;border:1px solid #f6d88a;display:flex;gap:10px;padding:12px}
 .checkout-policy input{flex:0 0 auto;margin-top:4px}
 .checkout-policy label{font-size:.84rem;line-height:1.5;margin:0}
@@ -17,4 +34,5 @@
 .checkout-assurances{color:#475569;display:grid;font-size:.82rem;gap:8px;margin-bottom:16px}
 .checkout-assurances i{color:#059669;margin-right:6px;width:16px}
 @media (min-width:992px){.checkout-order-column{position:sticky;top:92px;align-self:flex-start}}
-@media (max-width:767px){.config-order-summary{align-items:flex-start;bottom:auto;gap:12px;position:static}.config-order-summary__total{min-width:86px}.config-order-summary strong{font-size:.9rem}body.configure-page .whatsapp-icon,body.configure-page #voice-assistant{display:none!important}}
+@media (max-width:767px){.config-order-summary{bottom:auto;display:block;position:static}.config-order-summary__meta{grid-template-columns:repeat(2,minmax(0,1fr))}.config-order-summary__pricing{border-left:0;border-top:1px solid #e2e8f0;margin-top:14px;padding-left:0;padding-top:12px}.config-order-summary__total{min-width:86px}.config-order-summary strong{font-size:.9rem}.configure-page .config-wrap{padding-bottom:88px!important}.configure-page #continueBtn:not(:disabled){bottom:max(12px,env(safe-area-inset-bottom));box-shadow:0 10px 30px rgba(15,23,42,.28);left:16px;margin:0;position:fixed;right:16px;width:auto;z-index:30}.checkout-step1-page{padding-bottom:84px}.checkout-step1-page .checkout-mobile-action{bottom:max(12px,env(safe-area-inset-bottom));box-shadow:0 10px 30px rgba(15,23,42,.28);left:16px;margin:0;position:fixed;right:16px;width:auto;z-index:30}body.configure-page .whatsapp-icon,body.configure-page #voice-assistant{display:none!important}}
+@media (max-width:420px){.config-order-summary__meta,.order-details{grid-template-columns:1fr}}

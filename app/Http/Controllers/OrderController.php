@@ -74,19 +74,30 @@ class OrderController extends Controller
         return back()->with('success', __('messages.screenshot_deleted'));
     }
 
+    public function showPicture(Order $order, Picture $picture)
+    {
+        return $this->media->response($order, $picture);
+    }
+
     public function destroy(Order $order)
     {
+        $order->load('pictures');
+        $this->media->cleanupPictures([$order]);
         $this->orders->deleteOrder($order);
         return back()->with('success', __('messages.order_deleted'));
     }
 
     public function bulkDelete(Request $request)
     {
-        return $this->helperBulkDelete($request, 'order_ids', $this->orders);
+        return $this->helperBulkDelete($request, 'order_ids', $this->orders, $this->media, Order::class);
     }
 
     public function bulkAction(Request $request)
     {
+        if ($request->input('action') === 'delete') {
+            return $this->helperBulkDelete($request, 'order_ids', $this->orders, $this->media, Order::class);
+        }
+
         $msg = $this->orders->handleBulkAction($request);
         return back()->with('success', $msg);
     }

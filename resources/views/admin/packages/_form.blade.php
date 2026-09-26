@@ -1,5 +1,9 @@
 @csrf
 
+@php
+    $connectionPrices = old('connection_prices', $package->connection_prices ?? []);
+@endphp
+
 <div class="row g-3">
     <div class="col-lg-3">
         <label class="form-label">Type</label>
@@ -47,6 +51,55 @@
                 @checked(old('active', $package->active ?? true))>
             <label class="form-check-label" for="activeCheck">Enabled</label>
         </div>
+    </div>
+    <div class="col-lg-3">
+        <label class="form-label">Package Badge</label>
+        <select name="badge_key" class="form-select">
+            <option value="">No badge</option>
+            <option value="most_popular" @selected(old('badge_key', $package->badge_key) === 'most_popular')>Most Popular</option>
+            <option value="best_value" @selected(old('badge_key', $package->badge_key) === 'best_value')>Best Value</option>
+        </select>
+    </div>
+    <div class="col-lg-3">
+        <label class="form-label">Free Trial Hours</label>
+        <input type="number" min="1" max="65535" name="free_trial_hours" class="form-control"
+            value="{{ old('free_trial_hours', $package->free_trial_hours) }}">
+    </div>
+    <div class="col-lg-6">
+        <label class="form-label d-block">Merchandising</label>
+        <div class="d-flex flex-wrap gap-4 mt-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="is_featured" value="1" id="featuredCheck"
+                    @checked(old('is_featured', $package->is_featured ?? false))>
+                <label class="form-check-label" for="featuredCheck">Featured provider</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="is_available" value="1" id="availableCheck"
+                    @checked(old('is_available', $package->exists ? $package->is_available : true))>
+                <label class="form-check-label" for="availableCheck">Available for purchase</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="instant_activation" value="1" id="instantActivationCheck"
+                    @checked(old('instant_activation', $package->instant_activation ?? false))>
+                <label class="form-check-label" for="instantActivationCheck">Instant activation</label>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <label class="form-label">Additional Connection Prices</label>
+        <div class="row g-2">
+            @foreach ([2, 4] as $connections)
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text">{{ $connections }} devices</span>
+                        <span class="input-group-text">$</span>
+                        <input type="number" step="0.01" min="0" name="connection_prices[{{ $connections }}]"
+                            class="form-control" value="{{ $connectionPrices[$connections] ?? '' }}">
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <div class="small text-muted mt-1">The Price Amount field above is used for 1 device.</div>
     </div>
     <div class="col-lg-6">
         <label class="form-label">Features (one per line)</label>

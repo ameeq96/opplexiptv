@@ -85,7 +85,9 @@ class CheckoutService
                 Mail::to($adminEmail)->queue(new DigitalOrderPlacedMail($order, true));
             }
 
-            $admins = Admin::query()->get();
+            $admins = Admin::query()
+                ->whereIn('role', [Admin::ROLE_OWNER, Admin::ROLE_SALES, Admin::ROLE_SUPPORT])
+                ->get();
             if ($admins->isNotEmpty()) {
                 Notification::send($admins, new NewOrderNotification([
                     'title' => 'New digital order',

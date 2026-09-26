@@ -48,7 +48,8 @@
                     default => 'monthly',
                 };
 
-                if (data_get($package, 'vendor', 'opplex') === 'opplex') {
+                if (data_get($package, 'vendor', 'opplex') === 'opplex'
+                    && data_get($package, 'is_duration_plan', false)) {
                     $package['price'] = $documentHome['pricing']['plans'][$planKey]['price']
                         ?? $package['price'];
                 }

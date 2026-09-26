@@ -337,6 +337,7 @@ class SchemaService
         try {
             $rows = Package::query()
                 ->where('active', true)
+                ->where('is_available', true)
                 ->where('type', $kind)
                 ->whereIn('vendor', ['opplex', 'starshare'])
                 ->where('price_amount', '>', 0)

@@ -27,6 +27,8 @@ class Kernel extends ConsoleKernel
                 '--sleep' => 1,
                 '--tries' => 3,
                 '--timeout' => 40,
+                '--backoff' => 5,
+                '--memory' => 128,
                 '--no-interaction',
             ])->everyMinute()->withoutOverlapping(5);
         }

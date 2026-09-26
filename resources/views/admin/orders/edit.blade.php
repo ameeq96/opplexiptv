@@ -162,8 +162,8 @@
           @foreach ($order->pictures as $pic)
             <div class="col-md-3 mb-3">
               <div class="border rounded p-2 h-100 d-flex flex-column justify-content-between">
-                <a href="{{ asset($pic->path) }}" target="_blank" class="mb-2">
-                  <img src="{{ asset($pic->path) }}" class="img-fluid rounded" alt="screenshot">
+                <a href="{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}" target="_blank" class="mb-2" rel="noopener">
+                  <img src="{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}" class="img-fluid rounded" alt="screenshot">
                 </a>
                 {{-- Each delete has its own small form (NOT nested inside update form) --}}
                 <form action="{{ route('admin.orders.pictures.destroy', [$order->id, $pic->id]) }}" method="POST">
@@ -216,4 +216,3 @@
   // (Optional) Preview code is omitted intentionally since preview UI isn't present.
 </script>
 @endpush
-

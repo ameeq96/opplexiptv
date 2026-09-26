@@ -172,7 +172,7 @@
                     @if ($order->pictures && $order->pictures->count())
                         <div class="list-group">
                             @foreach ($order->pictures as $pic)
-                                <a class="list-group-item list-group-item-action" href="{{ asset($pic->path) }}"
+                                <a class="list-group-item list-group-item-action" href="{{ route('admin.orders.pictures.show', [$order->id, $pic->id]) }}"
                                    target="_blank" rel="noopener">
                                     Screenshot #{{ $loop->iteration }}
                                 </a>

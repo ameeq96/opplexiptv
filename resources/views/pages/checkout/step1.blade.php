@@ -12,39 +12,17 @@
         $selectedPackageId = old('package_id', $package_id ?? request('package_id'));
         $selectedVendor = old('iptv_vendor', $iptv_vendor ?? request('iptv_vendor'));
         $selectedPlanName = old('plan_name', $plan_name ?? request('plan_name'));
-        $selectedConnectionName = old('connection_name', request('connection_name'));
-
-        // Optional component prices coming from configure page
-        $connectionPriceParam = old('connection_price', request('connection_price'));
-
-        // Clean numeric helpers
-        $cleanNumber = function ($v) {
-            if (is_null($v)) {
-                return null;
-            }
-            if (is_numeric($v)) {
-                return (float) $v;
-            }
-            $s = preg_replace('/[^0-9.]/', '', (string) $v);
-            return $s === '' ? null : (float) $s;
-        };
-
-        $cpNum = $cleanNumber($connectionPriceParam);
-
-        $match = function ($val, $target) {
-            if (is_null($val)) {
-                return false;
-            }
-            return abs($val - $target) < 0.01;
-        };
 
         // Load the selected package so the visible checkout price matches the database.
         $planPriceDb = null;
         $selectedPackage = null;
+        $packageTitle = null;
+        $packageServiceName = null;
         try {
             if (!empty($selectedPackageId)) {
                 $selectedPackage = \App\Models\Package::query()
                     ->where('active', true)
+                    ->where('is_available', true)
                     ->whereIn('type', ['iptv', 'reseller'])
                     ->whereIn('vendor', ['opplex', 'starshare'])
                     ->with('translations')
@@ -53,7 +31,7 @@
                     $planPriceDb = (float) $selectedPackage->price_amount;
                     $selectedVendor = strtolower((string) $selectedPackage->vendor);
 
-                    if ($selectedPackage->type === 'iptv') {
+                    if ($selectedPackage->type === 'iptv' && $selectedPackage->isDurationPlan()) {
                         $planKey = match ((int) $selectedPackage->duration_months) {
                             1 => 'monthly',
                             3 => 'three_months',
@@ -65,7 +43,7 @@
                         $packageTitle = $titleKey && __($titleKey) !== $titleKey
                             ? __($titleKey)
                             : ($selectedPackage->translation()?->title ?: $selectedPackage->title);
-                    } else {
+                    } elseif ($selectedPackage->type === 'reseller') {
                         $resellerTitleKey = match ($selectedPackage->title) {
                             'Starter Reseller Package' => 'messages.starter_reseller',
                             'Essential Reseller Bundle' => 'messages.essential_reseller',
@@ -76,9 +54,22 @@
                         $packageTitle = $resellerTitleKey && __($resellerTitleKey) !== $resellerTitleKey
                             ? __($resellerTitleKey)
                             : ($selectedPackage->translation()?->title ?: $selectedPackage->title);
+                    } else {
+                        $packageTitle = $selectedPackage->translation()?->title ?: $selectedPackage->title;
                     }
 
-                    $selectedPlanName = ($selectedVendor === 'starshare' ? 'Filex' : 'Opplex') . ' - ' . $packageTitle;
+                    $legacyProviderLabel = $selectedVendor === 'starshare' ? 'Filex' : 'Opplex';
+                    if ($selectedPackage->type === 'iptv' && !$selectedPackage->isDurationPlan()) {
+                        $packageServiceName = trim((string) preg_replace(
+                            '/\s*-\s*(?:3\s*Months?|Half\s*Yearly|Yearly|Monthly|1\s*Month)\s*$/iu',
+                            '',
+                            (string) $selectedPackage->title
+                        ));
+                        $selectedPlanName = $packageTitle;
+                    } else {
+                        $packageServiceName = $legacyProviderLabel;
+                        $selectedPlanName = $legacyProviderLabel . ' - ' . $packageTitle;
+                    }
                 }
             }
         } catch (\Throwable $e) {
@@ -95,40 +86,29 @@
         }
         $typeLabel =
             $selectedType === 'reseller' ? __('messages.checkout_type_reseller') : __('messages.checkout_type_iptv');
+        $durationMonths = $selectedPackage && $selectedType === 'package'
+            ? (int) $selectedPackage->duration_months
+            : 0;
+        $durationLabel = $durationMonths === 1
+            ? __('interface.checkout.month_one')
+            : ($durationMonths > 1 ? __('interface.checkout.months', ['count' => $durationMonths]) : null);
+        $durationLabel = $durationLabel ? preg_replace('/^\/\s*/', '', $durationLabel) : null;
 
-        $filexYearlyConnectionPrices = \App\Models\Package::FILEX_YEARLY_CONNECTION_PRICES;
-        $allowsMultiConnection = $selectedPackage
-            && $selectedType === 'package'
-            && $selectedVendor === 'starshare'
-            && (int) $selectedPackage->duration_months === 12;
-        $isTwoConnections = $allowsMultiConnection && $match($cpNum, $filexYearlyConnectionPrices[2]);
-        $isFourConnections = $allowsMultiConnection && $match($cpNum, $filexYearlyConnectionPrices[4]);
-
-        if ($isTwoConnections) {
-            $planPrice = $filexYearlyConnectionPrices[2];
-            $selectedConnectionName = __('messages.checkout_two_connection_label');
-        } elseif ($isFourConnections) {
-            $planPrice = $filexYearlyConnectionPrices[4];
-            $selectedConnectionName = __('messages.checkout_four_connection_label');
-        } else {
-            $cpNum = 0.0;
-            $planPrice = $planPriceDb ?? 0.0;
-            $selectedConnectionName = __('messages.checkout_one_connection_label');
-        }
+        $planPrice = $planPriceDb ?? 0.0;
         // Totals (based only on planPrice)
         $qty = 1;
         $subtotal = $planPrice * $qty;
         $promotionDiscount = !empty($eventPromotion)
             ? round($subtotal * (((float) ($eventPromotion['discount_percent'] ?? 0)) / 100), 2)
             : 0.0;
+        $promotionPercent = (float) ($eventPromotion['discount_percent'] ?? 0);
         $total = max(0, $subtotal - $promotionDiscount);
 
         // Carry values forward to step2 (safe defaults)
-        $carryConn = number_format((float) ($cpNum ?? 0), 2, '.', '');
         $carryPkg = number_format((float) $planPrice, 2, '.', '');
-        $providerLabel = strtolower((string) $selectedVendor) === 'starshare'
+        $providerLabel = $packageServiceName ?: (strtolower((string) $selectedVendor) === 'starshare'
             ? 'Filex'
-            : ucfirst((string) $selectedVendor);
+            : ucfirst((string) $selectedVendor));
         $editOptions = [
             'package_id' => $selectedPackageId,
             'vendor' => $selectedVendor,
@@ -137,8 +117,6 @@
             'plan' => $selectedPlanName,
             'device' => $selectedDevice,
             'device_id' => $selectedDeviceId,
-            'connection_price' => $carryConn,
-            'connection_name' => $selectedConnectionName,
         ];
         $checkoutTrackingItem = [
             'item_id' => (string) $selectedPackageId,
@@ -200,8 +178,6 @@
                         <input type="hidden" name="iptv_vendor" value="{{ $selectedVendor }}">
                         <input type="hidden" name="plan_name" value="{{ $selectedPlanName }}">
                         <input type="hidden" name="plan_price" value="{{ number_format($planPrice, 2, '.', '') }}">
-                        <input type="hidden" name="connection_price" value="{{ $carryConn }}">
-                        <input type="hidden" name="connection_name" value="{{ $selectedConnectionName }}">
                         <input type="hidden" name="pkg_price" value="{{ $carryPkg }}">
                         <input type="hidden" name="quantity" value="{{ $qty }}">
                         <input type="hidden" name="package_type" value="{{ $selectedType }}">
@@ -263,64 +239,57 @@
                 <div class="card-soft p-4 mb-3">
                     <h5 class="mb-3">{{ __('messages.checkout_your_order') }}</h5>
                     <div class="order-box p-3">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <div class="font-weight-bold">
-                                    {{ $selectedPlanName ?: __('messages.checkout_selected_package_fallback') }} &times;
-                                    {{ $qty }}
-                                </div>
-
-                                <div class="order-meta">
-                                    @if ($selectedVendor)
-                                        <div>
-                                            {{ __('messages.checkout_provider') }}:
-                                            <strong>{{ $providerLabel }}</strong>
-                                        </div>
-                                    @endif
-                                    @if ($selectedDevice)
-                                        <div>
-                                            {{ __('messages.checkout_device') }}:
-                                            <strong>{{ $selectedDevice }}</strong>
-                                        </div>
-                                    @endif
-                                    @if ($selectedType)
-                                        <div>
-                                            {{ __('messages.checkout_type') }}:
-                                            <strong>{{ $typeLabel }}</strong>
-                                        </div>
-                                    @endif
-                                    @if ($selectedType === 'package' && $selectedConnectionName)
-                                        <div>
-                                            {{ __('messages.checkout_connection_title') }}:
-                                            <strong>{{ $selectedConnectionName }}</strong>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                <a class="small mt-1 d-inline-block" href="{{ route('configure', $editOptions) }}">
-                                    {{ __('messages.checkout_edit_options') }}
-                                </a>
-                            </div>
-                            <div class="font-weight-bold">
-                                ${{ number_format($planPrice, 2) }}
-                            </div>
+                        <div class="order-summary__heading">
+                            <strong>{{ $packageTitle ?: ($selectedPlanName ?: __('messages.checkout_selected_package_fallback')) }}</strong>
+                            <a class="small" href="{{ route('configure', $editOptions) }}">
+                                {{ __('messages.checkout_edit_options') }}
+                            </a>
                         </div>
 
-                        <div class="order-line mt-2">
+                        <div class="order-details">
+                            @if ($selectedVendor)
+                                <div class="order-detail">
+                                    <span>{{ __('messages.checkout_provider') }}</span>
+                                    <strong>{{ $providerLabel }}</strong>
+                                </div>
+                            @endif
+                            @if ($durationLabel)
+                                <div class="order-detail">
+                                    <span>{{ __('messages.checkout_subscription_label') }}</span>
+                                    <strong>{{ $durationLabel }}</strong>
+                                </div>
+                            @endif
+                            @if ($selectedDevice)
+                                <div class="order-detail">
+                                    <span>{{ __('messages.checkout_device') }}</span>
+                                    <strong>{{ $selectedDevice }}</strong>
+                                </div>
+                            @endif
+                            @if ($selectedType)
+                                <div class="order-detail">
+                                    <span>{{ __('messages.checkout_type') }}</span>
+                                    <strong>{{ $typeLabel }}</strong>
+                                </div>
+                            @endif
+                        </div>
+
+                        <div class="order-pricing">
+                        <div class="order-line">
                             <span>{{ __('messages.checkout_subtotal_label') }}</span>
-                            <span>${{ number_format($subtotal, 2) }}</span>
+                            <strong>${{ number_format($subtotal, 2) }}</strong>
                         </div>
 
                         @if ($promotionDiscount > 0)
-                            <div class="order-line mt-2">
-                                <span>{{ $eventPromotion['name'] }} (10% OFF)</span>
-                                <span>-${{ number_format($promotionDiscount, 2) }}</span>
+                            <div class="order-line order-line--discount">
+                                <span>{{ $eventPromotion['name'] }} ({{ number_format($promotionPercent, 0) }}% OFF)</span>
+                                <strong>-${{ number_format($promotionDiscount, 2) }}</strong>
                             </div>
                         @endif
 
                         <div class="order-total">
                             <span>{{ __('messages.checkout_total_label') }}</span>
                             <span>${{ number_format($total, 2) }}</span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -401,7 +370,7 @@
                         </small>
                     </fieldset>
 
-                    <button type="submit" form="checkoutForm" class="btn btn-primary place-order">
+                    <button type="submit" form="checkoutForm" class="btn btn-primary place-order checkout-mobile-action">
                         {{ __('messages.checkout_place_order_btn') }}
                     </button>
                 </div>
@@ -431,7 +400,20 @@
                 });
             });
 
-        document.getElementById('checkoutForm').addEventListener('submit', function() {
+        let checkoutSubmitting = false;
+        document.getElementById('checkoutForm').addEventListener('submit', function(event) {
+            if (checkoutSubmitting) {
+                event.preventDefault();
+                return;
+            }
+
+            checkoutSubmitting = true;
+            const submitButton = document.querySelector('[type="submit"][form="checkoutForm"]');
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.setAttribute('aria-disabled', 'true');
+            }
+
             const payment = document.querySelector('input[name="paymethod"]:checked');
             if (typeof window.trackMarketingEvent === 'function') {
                 window.trackMarketingEvent('add_payment_info', {
@@ -475,8 +457,6 @@
                 payload.append('package_id', value('package_id'));
                 payload.append('device_id', value('device_id'));
                 payload.append('vendor', value('iptv_vendor'));
-                payload.append('connection_name', value('connection_name'));
-                payload.append('connection_price', value('connection_price'));
                 payload.append('first_name', value('first_name'));
                 payload.append('last_name', value('last_name'));
                 payload.append('email', value('email'));

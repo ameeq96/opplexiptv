@@ -9,6 +9,13 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Package extends Model
 {
+    public const DURATION_PLAN_TITLES = [
+        'Monthly',
+        '3 Months',
+        'Half Yearly',
+        'Yearly',
+    ];
+
     public const FILEX_YEARLY_CONNECTION_PRICES = [
         2 => 69.99,
         4 => 139.99,
@@ -29,6 +36,12 @@ class Package extends Model
         'sort_order',
         'button_link',
         'delay',
+        'badge_key',
+        'is_featured',
+        'is_available',
+        'free_trial_hours',
+        'instant_activation',
+        'connection_prices',
         'active',
     ];
 
@@ -40,6 +53,11 @@ class Package extends Model
         'credits'         => 'integer',
         'max_devices'     => 'integer',
         'sort_order'      => 'integer',
+        'is_featured'     => 'boolean',
+        'is_available'    => 'boolean',
+        'free_trial_hours' => 'integer',
+        'instant_activation' => 'boolean',
+        'connection_prices' => 'array',
         'active'          => 'boolean',
     ];
 
@@ -207,6 +225,11 @@ class Package extends Model
         return '$' . $num;
     }
 
+    public function isDurationPlan(): bool
+    {
+        return in_array($this->title, self::DURATION_PLAN_TITLES, true);
+    }
+
     /* ───────────────────── Public array mappers ──────────────────── */
 
     /**
@@ -241,6 +264,13 @@ class Package extends Model
             'price'    => $priceStr,
             'price_amount' => $this->price_amount,
             'duration_months' => $months,
+            'is_duration_plan' => $this->isDurationPlan(),
+            'badge_key' => $this->badge_key,
+            'is_featured' => $this->is_featured,
+            'is_available' => $this->is_available,
+            'free_trial_hours' => $this->free_trial_hours,
+            'instant_activation' => $this->instant_activation,
+            'connection_prices' => $this->connection_prices,
             'features' => $features ?: self::defaultIptvFeatures(),
             'icon'     => $this->icon ?? 'images/icons/service-1.svg',
         ];
@@ -287,6 +317,11 @@ class Package extends Model
             'features'    => $features ?: self::defaultResellerFeatures(),
             'button_link' => $this->button_link,
             'delay'       => $this->delay,
+            'badge_key'   => $this->badge_key,
+            'is_featured' => $this->is_featured,
+            'is_available' => $this->is_available,
+            'free_trial_hours' => $this->free_trial_hours,
+            'instant_activation' => $this->instant_activation,
         ];
     }
 }

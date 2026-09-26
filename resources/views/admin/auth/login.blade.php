@@ -517,7 +517,8 @@
                                     <path d="m4 7 8 6 8-6"></path>
                                 </svg>
                                 <input id="admin-email" type="email" name="email"
-                                    class="@error('email') is-invalid @enderror" required>
+                                    class="@error('email') is-invalid @enderror" value="{{ old('email') }}"
+                                    autocomplete="username" required>
                             </div>
                             @error('email')
                                 <div class="admin-login-error">{{ $message }}</div>
@@ -532,7 +533,8 @@
                                     <rect x="4" y="10" width="16" height="11" rx="3"></rect>
                                     <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
                                 </svg>
-                                <input id="admin-password" type="password" name="password" required>
+                                <input id="admin-password" type="password" name="password"
+                                    autocomplete="current-password" required>
                             </div>
                         </div>
 

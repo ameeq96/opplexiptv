@@ -25,7 +25,7 @@
             visibility: hidden;
             pointer-events: none;
             transform: translateY(18px);
-            transition: opacity .28s ease, visibility .28s ease, transform .28s ease;
+            transition: bottom .28s ease, opacity .28s ease, visibility .28s ease, transform .28s ease;
         }
         .recent-purchase-toast[hidden] { display: none !important; }
         .recent-purchase-toast.is-visible {
@@ -88,6 +88,9 @@
         body.contact-number-notice-open .recent-purchase-toast,
         body.modal-open .recent-purchase-toast,
         body.va-panel-open .recent-purchase-toast { display: none !important; }
+        @media (min-width: 769px) {
+            body.pricing-in-view .recent-purchase-toast { bottom: 20px; }
+        }
         @media (max-width: 480px) {
             .recent-purchase-toast {
                 right: 10px;
