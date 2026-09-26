@@ -18,6 +18,15 @@
     $paymentMethodLabel = match ($paymentMethod) {
         'card' => __('messages.checkout_pay_card_title'),
         'crypto' => __('messages.checkout_pay_crypto_title'),
+        'easypaisa' => 'Easypaisa',
+        'nayapay / sadapay' => 'Nayapay / Sadapay',
+        'meezan bank' => 'Meezan Bank',
+        'raast' => 'RAAST',
+        'remitly' => 'Remitly',
+        'skrill' => 'Skrill to Skrill',
+        'binance' => 'Binance Exchange',
+        'mexc' => 'MEXC Exchange',
+        'on-chain usdt (bep20)' => 'On-Chain USDT (BEP20)',
         default => $paymentMethod,
     };
     $packageLabel = str_ireplace('starshare', 'Filex', $details['package'] ?? $notAvailable);

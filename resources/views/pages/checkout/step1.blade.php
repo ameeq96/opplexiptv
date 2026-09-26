@@ -160,6 +160,9 @@
         border-bottom: 1px solid #e2e8f0;
     }
     .checkout-step1-page .pay-option {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
         min-height: 76px;
         padding: 13px 14px;
         border-color: #dbe3ee;
@@ -173,6 +176,62 @@
         box-shadow: 0 0 0 3px rgba(37, 99, 235, .08);
     }
     .checkout-step1-page .pay-option input { flex: 0 0 auto; margin: 4px 2px 0 0 !important; }
+    .checkout-step1-page .pay-option label { min-width: 0; margin: 0; cursor: pointer; }
+    .checkout-step1-page .payment-method-group + .payment-method-group { margin-top: 20px; }
+    .checkout-step1-page .payment-method-group__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 9px;
+        color: #0f172a;
+        font-size: .88rem;
+        font-weight: 800;
+    }
+    .checkout-step1-page .payment-method-group__heading span:first-child {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .checkout-step1-page .payment-method-group__heading i { color: #059669; }
+    .checkout-step1-page .payment-method-group__fee {
+        flex: 0 0 auto;
+        padding: 3px 8px;
+        border-radius: 999px;
+        background: #ecfdf5;
+        color: #047857;
+        font-size: .68rem;
+        font-weight: 800;
+    }
+    .checkout-step1-page .pay-option__details {
+        display: grid;
+        gap: 3px;
+        margin-top: 5px;
+        color: #64748b;
+        font-size: .78rem;
+        line-height: 1.45;
+    }
+    .checkout-step1-page .pay-option__detail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .checkout-step1-page .pay-option__detail strong { color: #334155; }
+    .checkout-step1-page .pay-option__detail span { overflow-wrap: anywhere; }
+    .checkout-step1-page .payment-proof-notice {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        margin: 20px 0;
+        padding: 12px 13px;
+        border: 1px solid #f3d27a;
+        border-radius: 13px;
+        background: #fff8e1;
+        color: #713f12;
+        font-size: .82rem;
+        line-height: 1.5;
+    }
+    .checkout-step1-page .payment-proof-notice i { margin-top: 3px; color: #d97706; }
     .checkout-step1-page .checkout-policy,
     .checkout-step1-page .checkout-marketing { border-radius: 13px; }
     .checkout-step1-page .checkout-marketing { padding: 14px; }
@@ -228,6 +287,103 @@
 <div class="checkout-step1-page">
     <script>document.body.classList.add('checkout-review-page');</script>
 @php
+        $paymentMethodGroups = [
+            [
+                'title' => 'Local Payment Methods for Pakistanis',
+                'fee' => '0% Fees',
+                'icon' => 'fa-university',
+                'methods' => [
+                    [
+                        'value' => 'easypaisa',
+                        'title' => 'Easypaisa',
+                        'details' => [
+                            'Account' => '+92300-4446130',
+                            'Name' => 'Muhammad Ateeq',
+                        ],
+                    ],
+                    [
+                        'value' => 'nayapay / sadapay',
+                        'title' => 'Nayapay / Sadapay',
+                        'details' => [
+                            'Account' => '+92307-9021909',
+                        ],
+                    ],
+                    [
+                        'value' => 'meezan bank',
+                        'title' => 'Meezan Bank',
+                        'details' => [
+                            'Account' => '0175-010564698-1',
+                            'Name' => 'Muhammad Emmad Khan',
+                        ],
+                    ],
+                    [
+                        'value' => 'raast',
+                        'title' => 'RAAST',
+                        'details' => [
+                            'RAAST ID' => '03079021909',
+                            'Name' => 'Muhammad Emmad Khan',
+                        ],
+                    ],
+                ],
+            ],
+            [
+                'title' => 'International Payment Methods',
+                'fee' => 'Fees Apply',
+                'icon' => 'fa-globe',
+                'methods' => [
+                    [
+                        'value' => 'remitly',
+                        'title' => 'Remitly (Light Fees)',
+                        'details' => [
+                            'Name' => 'Muhammad Emmad Khan',
+                            'Account' => '01750105646981',
+                            'IBAN' => 'PK04MEZN0001750105646981',
+                            'Bank' => 'Meezan Bank, Darakhshan Soc - Karachi',
+                        ],
+                    ],
+                    [
+                        'value' => 'skrill',
+                        'title' => 'Skrill to Skrill (High Fees)',
+                        'details' => [
+                            'Customer ID' => '264987278',
+                            'Email' => 'khanemaad92@gmail.com',
+                        ],
+                    ],
+                ],
+            ],
+            [
+                'title' => 'Crypto Payment Methods',
+                'fee' => 'Fast & 0% Fees',
+                'icon' => 'fa-btc',
+                'methods' => [
+                    [
+                        'value' => 'binance',
+                        'title' => 'Binance Exchange',
+                        'details' => [
+                            'Binance ID' => '437295954',
+                            'Name' => 'Khanemmad',
+                        ],
+                    ],
+                    [
+                        'value' => 'mexc',
+                        'title' => 'MEXC Exchange',
+                        'details' => [
+                            'MEXC ID' => '22385490',
+                            'Name' => 'Khanemmad',
+                        ],
+                    ],
+                    [
+                        'value' => 'on-chain usdt (bep20)',
+                        'title' => 'On-Chain USDT (BEP20)',
+                        'details' => [
+                            'Wallet' => '0xe2f4fe351603296ef3f6362a59a2440e4b2d376e',
+                        ],
+                    ],
+                ],
+            ],
+        ];
+        $selectedPaymentMethod = old('paymethod', 'easypaisa');
+
         // ------------------------------
         // Gather selections from request
         // ------------------------------
@@ -543,30 +699,41 @@
                         <span><i class="fa fa-life-ring" aria-hidden="true"></i>{{ __('messages.thankyou_page.support_text') }}</span>
                     </div>
 
-                    <div class="pay-option active mb-3">
-                        <input class="mr-2 mt-1" type="radio" name="paymethod" id="pm1" value="card"
-                            form="checkoutForm" checked>
-                        <label class="w-100" for="pm1">
-                            <div class="font-weight-bold">
-                                {{ __('messages.checkout_pay_card_title') }}
+                    @foreach ($paymentMethodGroups as $groupIndex => $paymentGroup)
+                        <div class="payment-method-group">
+                            <div class="payment-method-group__heading">
+                                <span>
+                                    <i class="fa {{ $paymentGroup['icon'] }}" aria-hidden="true"></i>
+                                    {{ $paymentGroup['title'] }}
+                                </span>
+                                <span class="payment-method-group__fee">{{ $paymentGroup['fee'] }}</span>
                             </div>
-                            <div class="small-note">
-                                {{ __('messages.checkout_pay_card_desc') }}
-                            </div>
-                        </label>
-                    </div>
 
-                    <div class="pay-option mb-3">
-                        <input class="mr-2 mt-1" type="radio" name="paymethod" id="pm2" value="crypto"
-                            form="checkoutForm">
-                        <label class="w-100" for="pm2">
-                            <div class="font-weight-bold">
-                                {{ __('messages.checkout_pay_crypto_title') }}
-                            </div>
-                            <div class="small-note">
-                                {{ __('messages.checkout_pay_crypto_desc') }}
-                            </div>
-                        </label>
+                            @foreach ($paymentGroup['methods'] as $methodIndex => $paymentMethod)
+                                @php($paymentMethodId = 'paymentMethod' . $groupIndex . $methodIndex)
+                                <div class="pay-option {{ $selectedPaymentMethod === $paymentMethod['value'] ? 'active' : '' }} mb-2">
+                                    <input class="mr-2 mt-1" type="radio" name="paymethod"
+                                        id="{{ $paymentMethodId }}" value="{{ $paymentMethod['value'] }}"
+                                        form="checkoutForm" @checked($selectedPaymentMethod === $paymentMethod['value'])>
+                                    <label class="w-100" for="{{ $paymentMethodId }}">
+                                        <div class="font-weight-bold">{{ $paymentMethod['title'] }}</div>
+                                        <div class="pay-option__details">
+                                            @foreach ($paymentMethod['details'] as $detailLabel => $detailValue)
+                                                <div class="pay-option__detail">
+                                                    <strong>{{ $detailLabel }}:</strong>
+                                                    <span dir="auto">{{ $detailValue }}</span>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endforeach
+
+                    <div class="payment-proof-notice">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <strong>Deposit the payment, then send the payment screenshot to us on WhatsApp.</strong>
                     </div>
 
                     <div class="checkout-policy mb-3">
