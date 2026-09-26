@@ -4,11 +4,17 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\ShopProduct;
+use App\Services\ResponsiveProductImageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 class ShopProductController extends Controller
 {
+    public function __construct(
+        private readonly ResponsiveProductImageService $responsiveImages,
+    ) {
+    }
+
     public function index(Request $request)
     {
         $search = trim((string) $request->query('q', ''));
@@ -149,6 +155,7 @@ class ShopProductController extends Controller
         }
 
         $file->move($dest, $filename);
+        $this->responsiveImages->generateVariants('images/shop/' . $filename);
 
         return $filename;
     }
@@ -158,6 +165,7 @@ class ShopProductController extends Controller
         if (!$filename) {
             return;
         }
+        $this->responsiveImages->deleteVariants('images/shop/' . $filename);
         $path = public_path('images/shop/' . $filename);
         if (is_file($path)) {
             @unlink($path);

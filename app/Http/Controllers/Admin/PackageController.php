@@ -254,6 +254,7 @@ class PackageController extends Controller
     {
         foreach (config('app.locales', [app()->getLocale()]) as $locale) {
             Cache::forget("ui:{$locale}:packages:v3");
+            Cache::forget("ui:{$locale}:packages:v4");
         }
     }
 }

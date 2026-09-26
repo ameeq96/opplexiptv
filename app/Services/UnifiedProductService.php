@@ -13,9 +13,14 @@ class UnifiedProductService
     /** @var array<string,bool> */
     private array $tableAvailability = [];
 
+    public function __construct(
+        private readonly ResponsiveProductImageService $responsiveImages,
+    ) {
+    }
+
     public function frontendProducts(): Collection
     {
-        $key = 'ui:' . app()->getLocale() . ':frontend-products:v3:' . config('services.whatsapp.number');
+        $key = 'ui:' . app()->getLocale() . ':frontend-products:v4:' . config('services.whatsapp.number');
 
         try {
             return Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts());
@@ -38,6 +43,8 @@ class UnifiedProductService
                 ->get()
                 ->map(function (ShopProduct $p) {
                     $name = $p->translation()?->name ?: $p->name;
+                    $imagePath = $p->image ? 'images/shop/' . $p->image : null;
+
                     return [
                         'id' => $p->id,
                         'type' => 'affiliate',
@@ -47,7 +54,8 @@ class UnifiedProductService
                         'description' => '',
                         'price' => null,
                         'currency' => null,
-                        'image' => $p->image ? asset('images/shop/' . $p->image) : null,
+                        'image' => $imagePath ? asset($imagePath) : null,
+                        'image_sources' => $this->responsiveImages->metadata($imagePath),
                         'url' => $p->link,
                         'target' => '_blank',
                         'rel' => 'nofollow sponsored noopener',
@@ -71,6 +79,7 @@ class UnifiedProductService
                 ->map(function (DigitalProduct $p) use ($waBase) {
                     $price = (float) $p->price;
                     $priceText = (string) $p->currency . number_format($price, 2);
+                    $imagePath = $p->image ? 'images/digital-products/' . $p->image : null;
                     $waText = rawurlencode(__('document_ui.shop.purchase_message', [
                         'product' => $p->title,
                         'price' => $priceText,
@@ -85,7 +94,8 @@ class UnifiedProductService
                         'description' => (string) ($p->short_description ?? ''),
                         'price' => (float) $p->price,
                         'currency' => (string) $p->currency,
-                        'image' => $p->image ? asset('images/digital-products/' . $p->image) : null,
+                        'image' => $imagePath ? asset($imagePath) : null,
+                        'image_sources' => $this->responsiveImages->metadata($imagePath),
                         'url' => $waBase . $waText,
                         'target' => '_blank',
                         'rel' => 'noopener noreferrer',

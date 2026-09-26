@@ -25,6 +25,7 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use App\Notifications\NewOrderNotification;
 use App\Services\UnifiedProductService;
+use App\Services\ResponsiveProductImageService;
 use App\Services\Clients\CustomerIdentityService;
 
 class HomeController extends Controller
@@ -36,6 +37,7 @@ class HomeController extends Controller
         private ContactService $contact,
         private CaptchaService $captcha,
         private UnifiedProductService $unifiedProducts,
+        private ResponsiveProductImageService $responsiveProductImages,
         private CustomerIdentityService $customerIdentity,
         private EventPromotionService $eventPromotions,
     ) {}
@@ -121,6 +123,61 @@ class HomeController extends Controller
     public function packages()
     {
         return view('pages.packages');
+    }
+
+    public function providerPlans(Package $package)
+    {
+        abort_unless(
+            $package->active
+                && $package->type === 'iptv'
+                && in_array($package->vendor, ['opplex', 'starshare'], true)
+                && (float) $package->price_amount > 0,
+            404
+        );
+
+        $providerName = $this->packageServiceName($package);
+        $providerTitles = $package->isDurationPlan()
+            ? Package::DURATION_PLAN_TITLES
+            : [
+                $providerName,
+                $providerName . ' - Monthly',
+                $providerName . ' - 1 Month',
+                $providerName . ' - 3 Months',
+                $providerName . ' - Half Yearly',
+                $providerName . ' - Yearly',
+            ];
+        $packages = Package::query()
+            ->where('active', true)
+            ->where('type', 'iptv')
+            ->where('vendor', $package->vendor)
+            ->whereIn('title', $providerTitles)
+            ->where('price_amount', '>', 0)
+            ->orderByRaw('COALESCE(sort_order, duration_months, id)')
+            ->with('translations')
+            ->get()
+            ->take(4)
+            ->map(function (Package $candidate): array {
+                $card = $candidate->toIptvArray();
+                $card['service'] = $this->packageServiceName($candidate);
+
+                return $card;
+            })
+            ->values()
+            ->all();
+
+        abort_if(empty($packages), 404);
+
+        $html = view('includes._iptv-package-cards', [
+            'displayPackages' => $packages,
+            'initialIptvService' => $providerName,
+            'isMobile' => app(\Jenssegers\Agent\Agent::class)->isMobile(),
+        ])->render();
+
+        return response()->json([
+            'provider_name' => $providerName,
+            'count' => count($packages),
+            'html' => $html,
+        ])->header('Cache-Control', 'private, no-store');
     }
 
     public function iptvSubscriptionService()
@@ -234,7 +291,8 @@ class HomeController extends Controller
                 ->firstOrFail();
 
             $name = $product->title;
-            $image = $product->image ? asset('images/digital-products/' . $product->image) : asset('images/placeholder.webp');
+            $imagePath = $product->image ? 'images/digital-products/' . $product->image : 'images/placeholder.webp';
+            $image = asset($imagePath);
             $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
             $actionUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
                 __('interface.product.digital_purchase_message', [
@@ -257,7 +315,8 @@ class HomeController extends Controller
                 ->firstOrFail();
 
             $name = $product->translation()?->name ?: $product->name;
-            $image = $product->image ? asset('images/shop/' . $product->image) : asset('images/placeholder.webp');
+            $imagePath = $product->image ? 'images/shop/' . $product->image : 'images/placeholder.webp';
+            $image = asset($imagePath);
             $price = null;
             $actionUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
                 __('interface.product.affiliate_purchase_message', [
@@ -273,6 +332,7 @@ class HomeController extends Controller
         return view('pages.products.share', [
             'productName' => $name,
             'productImage' => $image,
+            'productImageSources' => $this->responsiveProductImages->metadata($imagePath),
             'productPrice' => $price,
             'productType' => $type,
             'productTypeLabel' => $badge,

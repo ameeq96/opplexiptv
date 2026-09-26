@@ -69,6 +69,7 @@
                         @foreach ($sliderMovies as $index => $movie)
                             @php
                                 $imageUrl = $movie['webp_image_url'];
+                                $imageSources = $movie['image_sources'] ?? $imageUrl;
                             @endphp
                             <div class="native-carousel__slide slide {{ $index !== 0 ? 'lazy-background' : '' }} {{ $index === 0 ? 'is-active' : '' }}"
                                 data-native-slide
@@ -77,9 +78,11 @@
                                 @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
 
                                 @if ($index === 0)
-                                    <img src="{{ $imageUrl }}" alt="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
-                                            aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
-                                        width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
+                                    <x-product-picture :image="$imageSources"
+                                        :alt="__('document_ui.home.poster_aria', ['title' => $movie['safe_title']])"
+                                        aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
+                                        width="960" height="540" loading="eager" decoding="async" fetchpriority="high"
+                                        sizes="100vw" />
                                 @endif
 
                                 <div class="auto-container custom-height">
@@ -166,15 +169,18 @@
                 @foreach ($sliderMovies as $index => $movie)
                     @php
                         $imageUrl = $movie['webp_image_url'];
+                        $imageSources = $movie['image_sources'] ?? $imageUrl;
                     @endphp
                     <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"
                         data-bg="{{ $imageUrl }}"
                         @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
 
                         @if ($index === 0)
-                            <img src="{{ $imageUrl }}" alt="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
-                                    aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
-                                width="960" height="540" loading="eager" decoding="async" fetchpriority="high">
+                            <x-product-picture :image="$imageSources"
+                                :alt="__('document_ui.home.poster_aria', ['title' => $movie['safe_title']])"
+                                aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
+                                width="960" height="540" loading="eager" decoding="async" fetchpriority="high"
+                                sizes="100vw" />
                         @endif
 
                         <div class="auto-container custom-height">

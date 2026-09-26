@@ -68,6 +68,8 @@
                         'asin' => $asin,
                         'name' => $copy['label'],
                         'image' => asset('images/shop/' . $asin . '.webp'),
+                        'image_sources' => app(\App\Services\ResponsiveProductImageService::class)
+                            ->metadata('images/shop/' . $asin . '.webp'),
                         'url' => 'https://www.amazon.com/dp/' . $asin,
                         'target' => '_blank',
                         'rel' => 'nofollow sponsored noopener',
@@ -112,6 +114,8 @@
                         'price' => isset($priceMatch[0]) ? (float) $priceMatch[0] : 0,
                         'currency' => 'USD',
                         'image' => asset('images/digital-products/' . $slug . '.webp'),
+                        'image_sources' => app(\App\Services\ResponsiveProductImageService::class)
+                            ->metadata('images/digital-products/' . $slug . '.webp'),
                         'url' => $url,
                         'buy_now_url' => $url,
                         'target' => '_blank',
@@ -211,7 +215,9 @@
                                             @if ($target !== '') target="{{ $target }}" @endif
                                             @if ($rel !== '') rel="{{ $rel }}" @endif>
                                             @if (data_get($product, 'image'))
-                                                <img src="{{ data_get($product, 'image') }}" alt="{{ $displayName }}" loading="lazy" decoding="async">
+                                                <x-product-picture :image="data_get($product, 'image_sources', data_get($product, 'image'))"
+                                                    :alt="$displayName"
+                                                    sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1199px) 45vw, 300px" />
                                             @endif
                                             <span class="document-product-shop-card__badge">{{ $productType === 'digital' ? __('document_ui.shop.digital_badge') : __('document_ui.shop.amazon_badge') }}</span>
                                         </a>
@@ -347,7 +353,9 @@
                             <article class="unified-card h-100">
                                 <a class="unified-card__media" href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif>
                                     @if(!empty($p['image']))
-                                        <img src="{{ $p['image'] }}" alt="{{ $p['name'] }}" loading="lazy" decoding="async">
+                                        <x-product-picture :image="$p['image_sources'] ?? $p['image']"
+                                            :alt="$p['name']"
+                                            sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1199px) 45vw, 300px" />
                                     @endif
                                 </a>
                                 <div class="unified-card__body">

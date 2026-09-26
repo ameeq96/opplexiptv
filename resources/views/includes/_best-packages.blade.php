@@ -1291,7 +1291,7 @@
             $title = trim((string) data_get($package, 'title', ''));
 
             return trim((string) preg_replace(
-                '/\s+-\s+(?:3 Months|Half Yearly|Yearly)$/iu',
+                '/\s*-\s*(?:3\s*Months?|Half\s*Yearly|Yearly|Monthly|1\s*Month)\s*$/iu',
                 '',
                 $title
             ));
@@ -1310,14 +1310,20 @@
             ->unique()
             ->values();
         $servicePackageGroups = collect($displayPackages)->groupBy($catalogServiceName);
-        $featuredIptvServices = $allIptvServices
-            ->filter(static fn ($service) => $servicePackageGroups->get($service, collect())
-                ->contains(static fn ($package) => (bool) data_get($package, 'is_featured', false)))
+        $availableIptvProviders = collect($iptvProviders ?? [])
+            ->filter(static fn ($provider) => (int) data_get($provider, 'id', 0) > 0
+                && trim((string) data_get($provider, 'name', '')) !== '')
             ->values();
-        $iptvServices = $featuredIptvServices
-            ->concat($allIptvServices->reject(static fn ($service) => $featuredIptvServices->contains($service)))
-            ->values()
-            ->all();
+        if ($availableIptvProviders->isEmpty()) {
+            $availableIptvProviders = $allIptvServices
+                ->map(static fn ($service) => [
+                    'id' => null,
+                    'name' => $service,
+                    'featured' => $servicePackageGroups->get($service, collect())
+                        ->contains(static fn ($package) => (bool) data_get($package, 'is_featured', false)),
+                ]);
+        }
+        $iptvServices = $availableIptvProviders->pluck('name')->values()->all();
         $monthlyPricesByService = collect($displayPackages)
             ->filter(static fn ($package) => (int) data_get($package, 'duration_months', 1) === 1)
             ->mapWithKeys(static fn ($package) => [
@@ -1413,10 +1419,15 @@
                     @if ($showResellerInitially) style="display:none" @endif>
                     <span>{{ __('messages.checkout_provider') }}</span>
                     <select id="iptvServiceSelect" aria-label="{{ __('document_ui.home.choose_iptv_vendor') }}">
-                        @foreach ($iptvServices as $service)
+                        @foreach ($availableIptvProviders as $provider)
+                            @php $service = (string) data_get($provider, 'name'); @endphp
                             <option value="{{ $service }}" @selected($service === $initialIptvService)
-                                data-featured="{{ $featuredIptvServices->contains($service) ? '1' : '0' }}">
-                                {{ $featuredIptvServices->contains($service) ? '★ ' : '' }}{{ $service }}
+                                data-service="{{ $service }}"
+                                @if (data_get($provider, 'id'))
+                                    data-plans-url="{{ route('packages.provider-plans', ['package' => data_get($provider, 'id')]) }}"
+                                @endif
+                                data-featured="{{ data_get($provider, 'featured', false) ? '1' : '0' }}">
+                                {{ data_get($provider, 'featured', false) ? '★ ' : '' }}{{ $service }}
                             </option>
                         @endforeach
                     </select>
@@ -1450,256 +1461,17 @@
         </div>
 
         <p id="iptvPackagesEmpty" class="package-empty-state" hidden>{{ __('messages.no_results') }}</p>
+        <p id="iptvPackagesLoading" class="package-empty-state" role="status" hidden>
+            {{ __('interface.redirect.ad_loading') }}
+        </p>
+        <p id="iptvPackagesLoadError" class="package-empty-state" role="alert" hidden>
+            {{ __('interface.fancybox.error') }}
+        </p>
 
         <div class="scroll-wrapper normal-wrapper" id="normalPackages"
+            aria-live="polite" aria-busy="false"
             @if ($showResellerInitially) style="display:none!important" @endif>
-            @foreach ($displayPackages as $package)
-                @php
-                    $vendorRaw = strtolower(data_get($package, 'vendor', 'opplex'));
-                    $vendorRaw = in_array($vendorRaw, ['opplex', 'starshare']) ? $vendorRaw : 'opplex';
-                    $vendorKey = $vendorRaw;
-
-                    $buyPrice = data_get($package, 'price_amount');
-                    if ($buyPrice === null) {
-                        $plainPrice = trim(strip_tags(data_get($package, 'price', '')));
-                        preg_match_all('/(?:USD\s*)?\$\s*(\d+(?:\.\d+)?)/i', $plainPrice, $priceMatches);
-                        $buyPrice = $priceMatches[1] ? end($priceMatches[1]) : null;
-                    }
-                    $buyPrice = $buyPrice !== null ? number_format((float) $buyPrice, 2, '.', '') : null;
-
-                    $rawTitle = (string) data_get($package, 'title', '');
-                    $serviceName = $catalogServiceName($package);
-                    $durationMonths = (int) data_get($package, 'duration_months', 1);
-                    $durationPlanKey = match ($durationMonths) {
-                        3 => 'three_months',
-                        6 => 'half_yearly',
-                        12 => 'yearly',
-                        default => 'monthly',
-                    };
-                    if (data_get($package, 'is_duration_plan', false)) {
-                        $titleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $rawTitle);
-                        $titleBase = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $titleNoParen, 1));
-                    } else {
-                        $titleBase = $serviceName;
-                    }
-                    $displayTitle = $hasCatalogPlans
-                        ? ($documentPricing['plans'][$durationPlanKey]['title']
-                            ?? __('document_commerce.packages.pricing.plans.' . $durationPlanKey . '.title'))
-                        : $titleBase;
-                    $fullPlanTitle = $hasCatalogPlans
-                        ? $serviceName . ' - ' . $displayTitle
-                        : $displayTitle;
-                    $displayPrice = $package['price'] ?? '';
-                    $displayFeatures = $package['features'] ?? [];
-                    $tierLabel = null;
-                    $tierClass = null;
-
-                    if ($isDocumentEnglishPricing && $vendorKey === 'opplex'
-                        && data_get($package, 'is_duration_plan', false)) {
-                         $documentPlanKey = match ($durationMonths) {
-                            3 => 'three_months',
-                            6 => 'half_yearly',
-                            12 => 'yearly',
-                            default => match (true) {
-                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), '3 month') => 'three_months',
-                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), 'half'),
-                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), '6 month') => 'half_yearly',
-                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), 'year'),
-                                str_contains(strtolower(str_replace('-', ' ', $titleBase)), '12 month') => 'yearly',
-                                default => 'monthly',
-                            },
-                        };
-                        $documentPlan = $documentPricing['plans'][$documentPlanKey] ?? null;
-
-                        if ($documentPlan) {
-                            $displayTitle = $documentPlan['title'];
-                            $displayPrice = $documentPlan['price'] ?? ($package['price'] ?? '');
-                            $displayFeatures = $documentPlan['features'];
-                        }
-                    }
-
-                    if ($hasCatalogPlans && !data_get($package, 'is_duration_plan', false) && $buyPrice !== null) {
-                        $displayPrice = '$' . $buyPrice . ' / ' . ($durationMonths === 1
-                            ? '1 month'
-                            : $durationMonths . ' months');
-                    }
-
-                    if (!data_get($package, 'is_duration_plan', false) && !empty($displayFeatures)) {
-                        $firstFeature = trim((string) reset($displayFeatures));
-                        $normalizedTier = strtolower($firstFeature);
-
-                        if (in_array($normalizedTier, ['basic plan', 'standard plan', 'premium plan', 'most premium plan'], true)) {
-                            $tierLabel = $firstFeature;
-                            $tierClass = str_contains($normalizedTier, 'premium')
-                                ? 'premium'
-                                : str_replace(' plan', '', $normalizedTier);
-                            $displayFeatures = array_values(array_slice($displayFeatures, 1));
-                        }
-                    }
-
-                    if ($hasCatalogPlans && !data_get($package, 'is_duration_plan', false)) {
-                        [$tierLabel, $tierClass] = match ($durationMonths) {
-                            3 => ['Standard Plan', 'standard'],
-                            6 => ['Advanced Plan', 'advanced'],
-                            12 => ['Premium Plan', 'premium'],
-                            default => ['Basic Plan', 'basic'],
-                        };
-                    }
-
-                    $brandMonogram = null;
-                    if (!data_get($package, 'is_duration_plan', false)) {
-                        $monogramTitle = preg_replace('/\([^)]*\)|\b(?:IPTV|OTT|LIVE|TV)\b/iu', ' ', $serviceName);
-                        $monogramWords = array_values(array_filter(array_map(
-                            static fn ($word) => preg_replace('/[^\p{L}\p{N}]+/u', '', $word),
-                            preg_split('/\s+/u', trim((string) $monogramTitle)) ?: []
-                        )));
-
-                        if (count($monogramWords) >= 2) {
-                            $brandMonogram = mb_substr($monogramWords[0], 0, 1)
-                                . mb_substr($monogramWords[1], 0, 1);
-                        } elseif (!empty($monogramWords[0])) {
-                            $brandMonogram = mb_substr($monogramWords[0], 0, 2);
-                        }
-
-                        $brandMonogram = mb_strtoupper($brandMonogram ?: 'TV');
-                    }
-
-                    $packageIcon = trim((string) data_get($package, 'icon', ''));
-                    $providerLogo = null;
-                    if ($packageIcon !== '' && preg_match('/\.(?:avif|gif|jpe?g|png|svg|webp)(?:\?.*)?$/i', $packageIcon)) {
-                        $providerLogo = preg_match('#^https?://#i', $packageIcon)
-                            ? $packageIcon
-                            : asset(ltrim($packageIcon, '/'));
-                    }
-
-                    $badgeKey = (string) data_get($package, 'badge_key', '');
-                    $badgeLabel = match ($badgeKey) {
-                        'most_popular' => 'Most Popular',
-                        'best_value' => 'Best Value',
-                        default => null,
-                    };
-                    $badgeClass = $badgeKey === 'best_value' ? 'value' : 'popular';
-                    $isAvailable = (bool) data_get($package, 'is_available', true);
-                    $freeTrialHours = (int) data_get($package, 'free_trial_hours', 0);
-                    $instantActivation = (bool) data_get($package, 'instant_activation', false);
-                    $basePriceAmount = (float) ($buyPrice ?? 0);
-                    $monthlyPriceAmount = (float) $monthlyPricesByService->get($serviceName, 0);
-                    $regularDurationPrice = $monthlyPriceAmount * max(1, $durationMonths);
-                    $savingPercent = $durationMonths > 1
-                        && $regularDurationPrice > 0
-                        && $basePriceAmount < ($regularDurationPrice - 0.005)
-                            ? (int) round((($regularDurationPrice - $basePriceAmount) / $regularDurationPrice) * 100)
-                            : 0;
-                    $promotionPercent = (int) ($activeEventPromotion['discount_percent'] ?? 0);
-                @endphp
-
-                <div class="price-block scroll-item pkg-item {{ data_get($package, 'is_duration_plan', false) ? 'pkg-item--duration' : 'pkg-item--'.($tierClass ?: 'standard') }}"
-                    data-type="iptv" data-vendor="{{ $vendorKey }}"
-                    @if ($serviceName !== $initialIptvService) style="display:none!important" @endif
-                    data-service="{{ $serviceName }}"
-                    data-duration="{{ $durationMonths }}"
-                    data-badge="{{ $badgeLabel }}" data-saving="{{ $savingPercent }}"
-                    data-base-saving="{{ $savingPercent }}"
-                    data-trial-hours="{{ $freeTrialHours }}" data-instant="{{ $instantActivation ? '1' : '0' }}"
-                    data-available="{{ $isAvailable ? '1' : '0' }}"
-                    data-package-id="{{ data_get($package, 'id') }}"
-                    data-plan="{{ $fullPlanTitle }}" data-price="{{ $buyPrice }}">
-                    <div class="inner-box custom-color">
-                        <div class="upper-box"
-                            @unless ($isMobile ?? false) style="background-image:url('{{ asset('images/background/pattern-4.webp') }}');" @endunless>
-                            <div class="package-card-flags">
-                                @if ($badgeLabel)
-                                    <span class="package-card-flag package-card-flag--{{ $badgeClass }}">{{ $badgeLabel }}</span>
-                                @endif
-                                @if ($savingPercent > 0)
-                                    <span class="package-card-flag package-card-flag--saving" data-package-saving>Save {{ $savingPercent }}%</span>
-                                @endif
-                                @if ($promotionPercent > 0)
-                                    <span class="package-card-flag package-card-flag--event">{{ $promotionPercent }}% OFF</span>
-                                @endif
-                            </div>
-                            <ul class="icon-list">
-                                @if ($providerLogo)
-                                    <li>
-                                        <img class="package-provider-logo" src="{{ $providerLogo }}"
-                                            alt="{{ $serviceName }} logo" width="56" height="56" loading="lazy" decoding="async">
-                                    </li>
-                                @elseif ($brandMonogram)
-                                    <li aria-hidden="true">
-                                        <span class="package-brand-mark package-brand-mark--{{ $tierClass ?: 'standard' }}">{{ $brandMonogram }}</span>
-                                    </li>
-                                @else
-                                    <li><span class="icon"><img src="{{ asset('images/icons/service-1.svg') }}"
-                                                alt="IPTV" width="48" height="48" loading="lazy" decoding="async"></span></li>
-                                @endif
-                            </ul>
-                            @if ($tierLabel)
-                                <span class="package-tier-badge package-tier-badge--{{ $tierClass }}">{{ $tierLabel }}</span>
-                            @endif
-                            @if ($hasCatalogPlans)
-                                <p class="package-service-name">{{ $serviceName }}</p>
-                            @endif
-                            <h3 class="package-plan-title">{{ $displayTitle }} <span data-package-price-label>{{ $displayPrice }}</span></h3>
-                        </div>
-
-                        <div class="lower-box">
-                            @if ($freeTrialHours > 0 || $instantActivation)
-                                <div class="package-benefits">
-                                    @if ($freeTrialHours > 0)
-                                        <span class="package-benefit package-benefit--trial">
-                                            <i class="fa fa-gift" aria-hidden="true"></i>
-                                            {{ $freeTrialHours }}-hour Free Trial
-                                        </span>
-                                    @endif
-                                    @if ($instantActivation)
-                                        <span class="package-benefit package-benefit--instant">
-                                            <i class="fa fa-bolt" aria-hidden="true"></i>
-                                            Instant Activation
-                                        </span>
-                                    @endif
-                                </div>
-                            @endif
-                            @if (!empty($displayFeatures))
-                                <ul class="price-list">
-                                    @foreach ($displayFeatures as $feature)
-                                        <li>{{ $feature }}</li>
-                                    @endforeach
-                                </ul>
-                            @endif
-
-                            <div class="button-box package-price-button d-flex align-items-center">
-                                @if ($isAvailable)
-                                    <a rel="noopener"
-                                        href="{{ route('configure', [
-                                            'price' => $buyPrice,
-                                            'ptype' => 'iptv',
-                                            'plan' => $fullPlanTitle,
-                                            'vendor' => $vendorKey,
-                                            'package_id' => data_get($package, 'id'),
-                                        ]) }}"
-                                        class="theme-btn btn-style-four pricing-buy-cta" data-package-buy>
-                                        <span class="txt">{{ __('messages.buy_now') }}</span>
-                                    </a>
-                                @else
-                                    <span class="pricing-unavailable-cta" aria-disabled="true">Out of Stock</span>
-                                @endif
-
-                                @if ($buyPrice && $isAvailable)
-                                    <a rel="noopener" data-whatsapp-click data-whatsapp-placement="pricing_card"
-                                        data-whatsapp-intent="package" data-whatsapp-package="{{ $fullPlanTitle }}"
-                                        data-whatsapp-value="{{ $buyPrice }}" data-whatsapp-currency="{{ config('services.app.default_currency', 'USD') }}"
-                                        data-whatsapp-vendor="{{ $vendorKey }}"
-                                        data-whatsapp-lead-reference
-                                        href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_package', ['plan' => $fullPlanTitle, 'price' => $buyPrice])) }}">
-                                        <img class="whatsapp" src="{{ asset('images/whatsapp.webp') }}" width="32"
-                                            height="32" alt="WhatsApp" loading="lazy" decoding="async" />
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+            @include('includes._iptv-package-cards')
         </div>
 
         <nav id="iptvPackagesPagination" class="package-pagination"
@@ -1858,6 +1630,8 @@
         const iptvPackageSearch = document.getElementById('iptvPackageSearch');
         const iptvResultCount = iptvCatalogToolbar?.querySelector('[data-package-result-count]');
         const iptvEmptyState = document.getElementById('iptvPackagesEmpty');
+        const iptvLoadingState = document.getElementById('iptvPackagesLoading');
+        const iptvLoadError = document.getElementById('iptvPackagesLoadError');
         const comparePlansButton = document.getElementById('comparePlansButton');
         const compareModal = document.getElementById('pricingCompareModal');
         const compareRows = compareModal?.querySelector('[data-compare-rows]');
@@ -1867,26 +1641,23 @@
         const stickyPlan = mobilePricingCta?.querySelector('[data-sticky-plan]');
         const stickyBuy = mobilePricingCta?.querySelector('[data-sticky-buy]');
 
-        const iptvCards = document.querySelectorAll('.pkg-item[data-type="iptv"]');
+        let iptvCards = normalPackagesWrap?.querySelectorAll('.pkg-item[data-type="iptv"]') || [];
         const resellerCards = document.querySelectorAll('.pkg-item[data-type="reseller"]');
-        const hasShareablePackages = Array.from([...iptvCards, ...resellerCards])
-            .some(card => card.dataset.available !== '0');
         let iptvPage = 1;
         let pricingSelect2Jquery = null;
         let pricingSelect2Promise = null;
         let compareReturnFocus = null;
+        let providerRequestController = null;
+        let providerRequestSerial = 0;
+        let loadedIptvService = iptvServiceSelect?.selectedOptions?.[0]?.dataset.service
+            || iptvServiceSelect?.value
+            || '';
+        const providerCardsCache = new Map();
 
         const norm = s => (s || '').toString().trim().toLowerCase();
         const isMobilePricing = () => window.matchMedia('(max-width: 768px)').matches;
         const getNormalPackagesDisplay = () => isMobilePricing() ? 'flex' : 'grid';
         const getIptvPageSize = () => (isMobilePricing() ? 4 : 8);
-        const shareLabels = {
-            title: @json(__('document_ui.home.pricing_aria')),
-            iptv: @json(__('messages.checkout_iptv_packages_label')),
-            reseller: @json(__('messages.checkout_reseller_packages_label')),
-            packagesLink: @json(__('messages.nav_packages'))
-        };
-        const packagesUrl = @json(route('packages', ['direct' => 1]));
         const track = (name, params, metaEvent) => {
             if (typeof window.trackMarketingEvent === 'function') {
                 window.trackMarketingEvent(name, params, metaEvent);
@@ -1899,6 +1670,11 @@
 
         const isCardShown = card => card && card.style.display !== 'none';
         const formatPackageMoney = value => '$' + Number(value || 0).toFixed(2);
+        const refreshIptvCards = () => {
+            iptvCards = normalPackagesWrap?.querySelectorAll('.pkg-item[data-type="iptv"]') || [];
+        };
+        const hasShareablePackages = () => Boolean(iptvServiceSelect?.options.length)
+            || Array.from(resellerCards).some(card => card.dataset.available !== '0');
 
         function syncStickyFromCard(preferredCard = null) {
             if (!mobilePricingCta) return;
@@ -2107,45 +1883,124 @@
             return pricingSelect2Promise;
         }
 
-        function appendPackageGroup(lines, cards, heading, note = '') {
-            const groupedCards = Array.from(cards).filter(card => card.dataset.available !== '0');
-            if (!groupedCards.length) return;
+        if (shareAllPackages && !hasShareablePackages()) shareAllPackages.hidden = true;
 
-            lines.push(`*${heading}*`);
-            if (note) lines.push(note);
-
-            ['opplex', 'starshare'].forEach(vendor => {
-                const vendorCards = groupedCards.filter(card => norm(card.dataset.vendor) === vendor);
-                if (!vendorCards.length) return;
-
-                lines.push('', `*${vendor === 'starshare' ? 'Filex' : 'Opplex'}*`);
-                vendorCards.forEach(card => {
-                    const plan = (card.dataset.plan || '').trim();
-                    const price = cleanText(card.querySelector('.package-plan-title span'));
-                    lines.push(`• *${plan}*${price ? ` — ${price}` : ''}`);
-
-                    const tier = cleanText(card.querySelector('.package-tier-badge'));
-                    if (tier) lines.push(`  ✓ ${tier}`);
-
-                    card.querySelectorAll('.price-list li').forEach(item => {
-                        const feature = cleanText(item);
-                        if (feature) lines.push(`  ✓ ${feature}`);
-                    });
-                });
-            });
-
-            lines.push('');
+        function providerCacheKey(url) {
+            return `opplex:pricing-provider:${url}`;
         }
 
-        if (shareAllPackages) {
-            if (hasShareablePackages) {
-                const lines = [`*${shareLabels.title}*`, ''];
-                appendPackageGroup(lines, iptvCards, shareLabels.iptv);
-                appendPackageGroup(lines, resellerCards, shareLabels.reseller, cleanText(creditInfo));
-                lines.push(`${shareLabels.packagesLink}: ${packagesUrl}`);
-                shareAllPackages.href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(lines.join('\n').trim());
-            } else {
-                shareAllPackages.hidden = true;
+        function getCachedProvider(url) {
+            if (providerCardsCache.has(url)) return providerCardsCache.get(url);
+
+            try {
+                const cached = JSON.parse(sessionStorage.getItem(providerCacheKey(url)) || 'null');
+                if (cached && typeof cached.html === 'string' && typeof cached.provider_name === 'string') {
+                    providerCardsCache.set(url, cached);
+                    return cached;
+                }
+            } catch (error) {}
+
+            return null;
+        }
+
+        function cacheProvider(url, payload) {
+            providerCardsCache.set(url, payload);
+            try {
+                sessionStorage.setItem(providerCacheKey(url), JSON.stringify(payload));
+            } catch (error) {}
+        }
+
+        function setProviderLoading(loading) {
+            if (!normalPackagesWrap) return;
+            normalPackagesWrap.setAttribute('aria-busy', loading ? 'true' : 'false');
+            normalPackagesWrap.classList.toggle('is-loading', loading);
+            if (iptvLoadingState) iptvLoadingState.hidden = !loading;
+        }
+
+        function restoreProviderSelection(service) {
+            if (!iptvServiceSelect || !service) return;
+            iptvServiceSelect.value = service;
+            if (pricingSelect2Jquery?.fn?.select2) {
+                pricingSelect2Jquery(iptvServiceSelect).trigger('change.select2');
+            }
+        }
+
+        function applyProviderPayload(payload, requestedService) {
+            if (!normalPackagesWrap || typeof payload?.html !== 'string') return false;
+
+            normalPackagesWrap.innerHTML = payload.html;
+            refreshIptvCards();
+            loadedIptvService = payload.provider_name || requestedService;
+            iptvPage = 1;
+            if (iptvPackageSearch) iptvPackageSearch.value = '';
+            if (iptvLoadError) iptvLoadError.hidden = true;
+            renderIptv();
+            if (compareModal && !compareModal.hidden) renderComparison();
+            trackVisiblePackages();
+            window.dispatchEvent(new CustomEvent('pricing:provider-loaded', {
+                detail: {
+                    provider: loadedIptvService,
+                    count: Number(payload.count || iptvCards.length)
+                }
+            }));
+
+            return true;
+        }
+
+        async function loadSelectedProvider() {
+            const selectedOption = iptvServiceSelect?.selectedOptions?.[0];
+            const requestedService = selectedOption?.dataset.service || iptvServiceSelect?.value || '';
+            const endpoint = selectedOption?.dataset.plansUrl || '';
+
+            if (!endpoint || norm(requestedService) === norm(loadedIptvService)) {
+                providerRequestSerial += 1;
+                providerRequestController?.abort();
+                providerRequestController = null;
+                setProviderLoading(false);
+                renderIptv();
+                return true;
+            }
+
+            const previousService = loadedIptvService;
+            const requestSerial = ++providerRequestSerial;
+            providerRequestController?.abort();
+            providerRequestController = new AbortController();
+            setProviderLoading(true);
+            if (iptvLoadError) iptvLoadError.hidden = true;
+
+            try {
+                let payload = getCachedProvider(endpoint);
+                if (!payload) {
+                    const response = await fetch(endpoint, {
+                        headers: {
+                            Accept: 'application/json',
+                            'X-Requested-With': 'XMLHttpRequest'
+                        },
+                        credentials: 'same-origin',
+                        signal: providerRequestController.signal
+                    });
+
+                    if (!response.ok) throw new Error(`Provider plans request failed (${response.status}).`);
+                    payload = await response.json();
+                    if (!payload || typeof payload.html !== 'string' || typeof payload.provider_name !== 'string') {
+                        throw new Error('Provider plans response is invalid.');
+                    }
+                    cacheProvider(endpoint, payload);
+                }
+
+                if (requestSerial !== providerRequestSerial) return false;
+                return applyProviderPayload(payload, requestedService);
+            } catch (error) {
+                if (error?.name === 'AbortError' || requestSerial !== providerRequestSerial) return false;
+
+                restoreProviderSelection(previousService);
+                if (iptvLoadError) iptvLoadError.hidden = false;
+                track('provider_plans_load_error', {
+                    provider: requestedService
+                });
+                return false;
+            } finally {
+                if (requestSerial === providerRequestSerial) setProviderLoading(false);
             }
         }
 
@@ -2224,7 +2079,7 @@
                 resellerVendorToggle.style.setProperty('display', showReseller ? 'inline-flex' : 'none', 'important');
             }
             if (shareAllPackages) {
-                shareAllPackages.hidden = !hasShareablePackages;
+                shareAllPackages.hidden = !hasShareablePackages();
             }
             if (comparePlansButton) {
                 comparePlansButton.hidden = showReseller;
@@ -2274,15 +2129,16 @@
             }
         }
 
-        function handleIptvServiceChange() {
-            iptvPage = 1;
-            if (iptvPackageSearch) iptvPackageSearch.value = '';
-            renderIptv();
-            if (compareModal && !compareModal.hidden) renderComparison();
-            trackVisiblePackages();
+        async function handleIptvServiceChange() {
+            const requestedService = iptvServiceSelect?.selectedOptions?.[0]?.dataset.service
+                || iptvServiceSelect?.value
+                || '';
+            const loaded = await loadSelectedProvider();
+            if (!loaded) return;
+
             track('select_content', {
                 content_type: 'iptv_provider',
-                item_id: norm(iptvServiceSelect?.value)
+                item_id: norm(requestedService)
             });
         }
 
@@ -2366,24 +2222,25 @@
             });
         }
 
-        document.querySelectorAll('[data-package-buy]').forEach(link => {
-            link.addEventListener('click', function() {
-                const card = link.closest('.pkg-item');
-                if (!card) return;
-                const item = {
-                    item_id: card.dataset.packageId || [card.dataset.vendor, card.dataset.plan].join('-'),
-                    item_name: card.dataset.plan || '',
-                    item_brand: card.dataset.service || (card.dataset.vendor === 'starshare' ? 'Filex' : 'Opplex'),
-                    item_category: card.dataset.type || 'iptv',
-                    price: Number(card.dataset.price || 0),
-                    quantity: 1
-                };
-                track('select_item', {
-                    item_list_id: 'pricing',
-                    currency: @json(config('services.app.default_currency', 'USD')),
-                    value: item.price,
-                    items: [item]
-                });
+        document.getElementById('pricing-section')?.addEventListener('click', function(event) {
+            const link = event.target.closest('[data-package-buy]');
+            if (!link) return;
+
+            const card = link.closest('.pkg-item');
+            if (!card) return;
+            const item = {
+                item_id: card.dataset.packageId || [card.dataset.vendor, card.dataset.plan].join('-'),
+                item_name: card.dataset.plan || '',
+                item_brand: card.dataset.service || (card.dataset.vendor === 'starshare' ? 'Filex' : 'Opplex'),
+                item_category: card.dataset.type || 'iptv',
+                price: Number(card.dataset.price || 0),
+                quantity: 1
+            };
+            track('select_item', {
+                item_list_id: 'pricing',
+                currency: @json(config('services.app.default_currency', 'USD')),
+                value: item.price,
+                items: [item]
             });
         });
 
@@ -2396,6 +2253,16 @@
         renderIptv();
         renderReseller();
         trackVisiblePackages();
+
+        const initialProviderOption = iptvServiceSelect?.selectedOptions?.[0];
+        const initialProviderUrl = initialProviderOption?.dataset.plansUrl || '';
+        if (initialProviderUrl && normalPackagesWrap) {
+            cacheProvider(initialProviderUrl, {
+                provider_name: loadedIptvService,
+                count: iptvCards.length,
+                html: normalPackagesWrap.innerHTML
+            });
+        }
 
         const pricingSection = document.getElementById('pricing-section');
         if (pricingSection && 'IntersectionObserver' in window) {

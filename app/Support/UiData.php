@@ -12,7 +12,7 @@ use App\Models\PricingSection;
 use App\Models\FooterSetting;
 use App\Models\FooterLink;
 use App\Models\SocialLink;
-use App\Services\{CaptchaService, ImageService, LocaleService, TmdbService};
+use App\Services\{CaptchaService, ImageService, LocaleService, ResponsiveProductImageService, TmdbService};
 use Illuminate\Support\{Arr, Collection, Str};
 use Illuminate\Support\Facades\{Cache, Lang, Schema};
 use Jenssegers\Agent\Agent;
@@ -29,6 +29,7 @@ class UiData
         private LocaleService $locale,
         private TmdbService $tmdb,
         private CaptchaService $captcha,
+        private ResponsiveProductImageService $responsiveProductImages,
         private Request $request,
     ) {}
 
@@ -121,13 +122,14 @@ class UiData
         $footer = $this->remember("footer:{$whatsappNumber}", now()->addMinutes(30), fn () => $this->footerData(), []);
         $packageGroups = $needsPricing
             ? $this->remember(
-                'packages:v3',
+                'packages:v4',
                 now()->addMinutes(30),
                 fn () => $this->packageGroups(),
-                ['iptv' => [], 'reseller' => []]
+                ['iptv' => [], 'iptvProviders' => [], 'reseller' => []]
             )
-            : ['iptv' => [], 'reseller' => []];
+            : ['iptv' => [], 'iptvProviders' => [], 'reseller' => []];
         $packages = $packageGroups['iptv'];
+        $iptvProviders = $packageGroups['iptvProviders'];
         $resellerPlans = $packageGroups['reseller'];
         $testimonials  = $needsTestimonials ? $this->remember('testimonials', now()->addMinutes(30), fn () => $this->testimonials(), $this->fallbackTestimonials()) : [];
         $faqs          = $routeName === 'faqs' ? $this->faqs() : [];
@@ -155,6 +157,7 @@ class UiData
             'pricingSection' => $pricingSection,
             'footer'         => $footer,
             'packages'       => $packages,
+            'iptvProviders'  => $iptvProviders,
             'resellerPlans'  => $resellerPlans,
             'testimonials'   => $testimonials,
             'faqs'           => $faqs,
@@ -301,20 +304,25 @@ class UiData
      * Local backup so the hero never renders empty when TMDB is not configured
      * or the API is temporarily unavailable.
      *
-     * @return Collection<int,array<string,string>>
+     * @return Collection<int,array<string,mixed>>
      */
     private function fallbackHeroMovies(): Collection
     {
+        $fastxSources = $this->responsiveProductImages->metadata('images/resource/fastx.webp');
+        $squidSources = $this->responsiveProductImages->metadata('images/resource/squidgame.webp');
+
         return collect([
             [
                 'safe_title' => 'Fast X',
                 'safe_overview' => __('interface.movies.fallback_movies'),
-                'webp_image_url' => asset('images/resource/fastx.webp'),
+                'webp_image_url' => $fastxSources['webp_fallback'] ?? asset('images/resource/fastx.webp'),
+                'image_sources' => $fastxSources,
             ],
             [
                 'safe_title' => 'Squid Game',
                 'safe_overview' => __('interface.movies.fallback_series'),
-                'webp_image_url' => asset('images/resource/squidgame.webp'),
+                'webp_image_url' => $squidSources['webp_fallback'] ?? asset('images/resource/squidgame.webp'),
+                'image_sources' => $squidSources,
             ],
             [
                 'safe_title' => 'Extraction 2',
@@ -726,44 +734,108 @@ class UiData
     }
 
     /**
-     * Load both package families in one query.
+     * Load lightweight IPTV provider options, the initial provider plans and reseller plans.
      *
-     * @return array{iptv:array<int,array<string,mixed>>,reseller:array<int,array<string,mixed>>}
+     * @return array{iptv:array<int,array<string,mixed>>,iptvProviders:array<int,array{id:int,name:string,featured:bool}>,reseller:array<int,array<string,mixed>>}
      */
     private function packageGroups(): array
     {
         if (!$this->hasTable('packages')) {
-            return ['iptv' => [], 'reseller' => []];
+            return ['iptv' => [], 'iptvProviders' => [], 'reseller' => []];
         }
 
-        $rows = Package::query()
+        $iptvRows = Package::query()
             ->where('active', true)
-            ->whereIn('type', ['iptv', 'reseller'])
+            ->where('type', 'iptv')
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
-            ->orderByRaw("CASE WHEN type = 'reseller' THEN CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END ELSE 0 END")
-            ->orderByRaw(
-                "CASE WHEN type = 'reseller'
-                    THEN COALESCE(sort_order, credits, id)
-                    ELSE COALESCE(sort_order, duration_months, id)
-                END"
-            )
-            // Keep Package::translation()'s third fallback to the first available locale.
+            ->orderByRaw('COALESCE(sort_order, duration_months, id)')
+            ->get(['id', 'type', 'vendor', 'title', 'sort_order', 'duration_months', 'is_featured']);
+
+        if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
+            $iptvRows = $iptvRows
+                ->reject(fn (Package $package) => $package->isDurationPlan())
+                ->values();
+        }
+
+        $providerGroups = $iptvRows->groupBy(fn (Package $package) => $this->packageServiceName($package));
+        $providerGroupList = $providerGroups
+            ->map(fn ($providerRows, string $service) => [
+                'service' => $service,
+                'rows' => $providerRows,
+                'featured' => $providerRows->contains(fn (Package $package) => $package->is_featured),
+            ])
+            ->values();
+        $orderedProviderGroups = $providerGroupList
+            ->where('featured', true)
+            ->concat($providerGroupList->where('featured', false))
+            ->values();
+        $initialProviderIds = data_get($orderedProviderGroups->first(), 'rows', $iptvRows->take(0))
+            ->take(4)
+            ->pluck('id')
+            ->values();
+        $initialProviderRows = Package::query()
+            ->whereKey($initialProviderIds)
+            ->with('translations')
+            ->get()
+            ->sortBy(fn (Package $package) => $initialProviderIds->search($package->id))
+            ->values();
+        $resellerRows = Package::query()
+            ->where('active', true)
+            ->where('type', 'reseller')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->where('price_amount', '>', 0)
+            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
+            ->orderByRaw('COALESCE(sort_order, credits, id)')
             ->with('translations')
             ->get();
 
         return [
-            'iptv' => $rows
-                ->where('type', 'iptv')
-                ->map(fn (Package $package) => $package->toIptvArray())
+            'iptv' => $initialProviderRows
+                ->take(4)
+                ->map(function (Package $package): array {
+                    $card = $package->toIptvArray();
+                    $card['service'] = $this->packageServiceName($package);
+
+                    return $card;
+                })
                 ->values()
                 ->all(),
-            'reseller' => $rows
-                ->where('type', 'reseller')
+            'iptvProviders' => $orderedProviderGroups
+                ->map(function (array $providerGroup): array {
+                    $providerRows = $providerGroup['rows'];
+                    /** @var Package $representative */
+                    $representative = $providerRows->first();
+
+                    return [
+                        'id' => (int) $representative->id,
+                        'name' => $providerGroup['service'],
+                        'featured' => $providerGroup['featured'],
+                    ];
+                })
+                ->values()
+                ->all(),
+            'reseller' => $resellerRows
                 ->map(fn (Package $package) => $package->toResellerArray())
                 ->values()
                 ->all(),
         ];
+    }
+
+    private function packageServiceName(Package $package): string
+    {
+        if ($package->isDurationPlan()) {
+            return strtolower((string) $package->vendor) === 'starshare' ? 'Filex' : 'Opplex';
+        }
+
+        $title = trim((string) $package->title);
+        $service = preg_replace(
+            '/\s*-\s*(?:3\s*Months?|Half\s*Yearly|Yearly|Monthly|1\s*Month)\s*$/iu',
+            '',
+            $title
+        );
+
+        return trim((string) $service) ?: $title;
     }
 
     /** @return array<int,array<string,mixed>> */

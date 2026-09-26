@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Digital\DigitalProduct;
 use App\Models\ShopProduct;
+use App\Services\ResponsiveProductImageService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
@@ -16,6 +17,12 @@ class GenerateProductImages extends Command
                             {--force : Regenerate even if image already exists}';
 
     protected $description = 'Generate AI images for digital and affiliate products and attach them to product records.';
+
+    public function __construct(
+        private readonly ResponsiveProductImageService $responsiveImages,
+    ) {
+        parent::__construct();
+    }
 
     public function handle(): int
     {
@@ -45,6 +52,7 @@ class GenerateProductImages extends Command
 
             foreach ($digitalQuery->get() as $product) {
                 if (!$force && !empty($product->image)) {
+                    $this->responsiveImages->generateVariants('images/digital-products/' . $product->image);
                     $this->line("[skip][digital] {$product->title}");
                     continue;
                 }
@@ -63,6 +71,7 @@ class GenerateProductImages extends Command
                 }
 
                 $product->update(['image' => $filename]);
+                $this->responsiveImages->generateVariants('images/digital-products/' . $filename);
                 $processed++;
                 $this->info("[ok][digital] {$product->title} -> {$filename}");
                 usleep(300000);
@@ -77,6 +86,7 @@ class GenerateProductImages extends Command
 
             foreach ($affiliateQuery->get() as $product) {
                 if (!$force && !empty($product->image)) {
+                    $this->responsiveImages->generateVariants('images/shop/' . $product->image);
                     $this->line("[skip][affiliate] {$product->name}");
                     continue;
                 }
@@ -95,6 +105,7 @@ class GenerateProductImages extends Command
                 }
 
                 $product->update(['image' => $filename]);
+                $this->responsiveImages->generateVariants('images/shop/' . $filename);
                 $processed++;
                 $this->info("[ok][affiliate] {$product->name} -> {$filename}");
                 usleep(300000);

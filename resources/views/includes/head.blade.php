@@ -1515,7 +1515,11 @@
         if (!('PerformanceObserver' in window)) return;
 
         var metrics = { LCP: 0, INP: 0, CLS: 0 };
+        var observed = { LCP: false, INP: false, CLS: false };
         var sent = {};
+        var clsWindow = [];
+        var clsWindowValue = 0;
+        var interactionDurations = new Map();
 
         function rating(name, value) {
             var limits = name === 'LCP' ? [2500, 4000] : (name === 'INP' ? [200, 500] : [0.1, 0.25]);
@@ -1523,7 +1527,7 @@
         }
 
         function report(name) {
-            if (sent[name] || !metrics[name]) return;
+            if (sent[name] || !observed[name]) return;
             sent[name] = true;
             window.trackMarketingEvent('web_vital', {
                 metric_name: name,
@@ -1537,23 +1541,50 @@
         try {
             new PerformanceObserver(function (list) {
                 var entries = list.getEntries();
-                if (entries.length) metrics.LCP = entries[entries.length - 1].startTime;
+                if (entries.length) {
+                    metrics.LCP = entries[entries.length - 1].startTime;
+                    observed.LCP = true;
+                }
             }).observe({ type: 'largest-contentful-paint', buffered: true });
         } catch (e) {}
 
         try {
-            new PerformanceObserver(function (list) {
+            var clsObserver = new PerformanceObserver(function (list) {
                 list.getEntries().forEach(function (entry) {
-                    if (!entry.hadRecentInput) metrics.CLS += entry.value;
+                    if (entry.hadRecentInput) return;
+
+                    var first = clsWindow[0];
+                    var last = clsWindow[clsWindow.length - 1];
+                    if (first && last && entry.startTime - last.startTime < 1000 && entry.startTime - first.startTime < 5000) {
+                        clsWindow.push(entry);
+                        clsWindowValue += entry.value;
+                    } else {
+                        clsWindow = [entry];
+                        clsWindowValue = entry.value;
+                    }
+
+                    metrics.CLS = Math.max(metrics.CLS, clsWindowValue);
                 });
-            }).observe({ type: 'layout-shift', buffered: true });
+            });
+            clsObserver.observe({ type: 'layout-shift', buffered: true });
+            observed.CLS = true;
         } catch (e) {}
 
         try {
             new PerformanceObserver(function (list) {
                 list.getEntries().forEach(function (entry) {
-                    if (entry.interactionId && entry.duration > metrics.INP) metrics.INP = entry.duration;
+                    if (!entry.interactionId) return;
+
+                    var previousDuration = interactionDurations.get(entry.interactionId) || 0;
+                    interactionDurations.set(entry.interactionId, Math.max(previousDuration, entry.duration));
                 });
+
+                var durations = Array.from(interactionDurations.values()).sort(function (a, b) { return b - a; });
+                if (durations.length) {
+                    var percentileIndex = Math.min(Math.floor(durations.length / 50), durations.length - 1);
+                    metrics.INP = durations[percentileIndex];
+                    observed.INP = true;
+                }
             }).observe({ type: 'event', buffered: true, durationThreshold: 40 });
         } catch (e) {}
 

@@ -39,12 +39,13 @@ class AriaRolesTest extends TestCase
     public function test_home_headings_do_not_skip_levels_in_pricing_sections(): void
     {
         $pricing = file_get_contents(resource_path('views/includes/_best-packages.blade.php'));
+        $pricingCards = file_get_contents(resource_path('views/includes/_iptv-package-cards.blade.php'));
         $slider = file_get_contents(resource_path('views/includes/_slider.blade.php'));
 
         $this->assertStringContainsString('<h1 class="heading">', $slider);
         $this->assertStringContainsString('<h2 class="h3"><b>', $pricing);
         $this->assertStringContainsString('<p class="h4">', $pricing);
-        $this->assertStringContainsString('<h3 class="package-plan-title">', $pricing);
+        $this->assertStringContainsString('<h3 class="package-plan-title">', $pricingCards);
         $this->assertStringNotContainsString('<h3><b>', $pricing);
         $this->assertStringNotContainsString('<h4>{{ $displayTitle }}', $pricing);
     }

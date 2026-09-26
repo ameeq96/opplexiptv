@@ -8,7 +8,11 @@
                 <div class="row g-0 align-items-stretch">
                     <div class="col-lg-6">
                         <div class="product-share-media">
-                            <img src="{{ $productImage }}" alt="{{ $productName }}" loading="eager">
+                            <x-product-picture :image="$productImageSources ?? $productImage"
+                                :alt="$productName"
+                                loading="eager"
+                                fetchpriority="high"
+                                sizes="(max-width: 991px) calc(100vw - 48px), 50vw" />
                         </div>
                     </div>
                     <div class="col-lg-6">

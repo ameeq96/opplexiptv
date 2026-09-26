@@ -7,11 +7,17 @@ use App\Http\Requests\Admin\DigitalCommerce\StoreDigitalProductRequest;
 use App\Http\Requests\Admin\DigitalCommerce\UpdateDigitalProductRequest;
 use App\Models\Digital\DigitalCategory;
 use App\Models\Digital\DigitalProduct;
+use App\Services\ResponsiveProductImageService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
 class DigitalProductController extends Controller
 {
+    public function __construct(
+        private readonly ResponsiveProductImageService $responsiveImages,
+    ) {
+    }
+
     public function index(Request $request)
     {
         $search = trim((string) $request->query('q', ''));
@@ -113,6 +119,7 @@ class DigitalProductController extends Controller
         }
 
         $file->move($destination, $filename);
+        $this->responsiveImages->generateVariants('images/digital-products/' . $filename);
 
         return $filename;
     }
@@ -123,6 +130,7 @@ class DigitalProductController extends Controller
             return;
         }
 
+        $this->responsiveImages->deleteVariants('images/digital-products/' . $filename);
         $path = public_path('images/digital-products/' . $filename);
         if (is_file($path)) {
             @unlink($path);

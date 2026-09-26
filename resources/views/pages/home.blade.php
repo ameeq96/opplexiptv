@@ -197,10 +197,9 @@
                                     <article class="home-product-card h-100">
                                         <a class="home-product-media" href="{{ $p['url'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif>
                                             @if(!empty($p['image']))
-                                                <img src="{{ $p['image'] }}"
-                                                     alt="{{ $p['name'] }}"
-                                                     loading="lazy"
-                                                     decoding="async">
+                                                <x-product-picture :image="$p['image_sources'] ?? $p['image']"
+                                                    :alt="$p['name']"
+                                                    sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1199px) 45vw, 280px" />
                                             @endif
                                         </a>
                                         <div class="home-product-body">
