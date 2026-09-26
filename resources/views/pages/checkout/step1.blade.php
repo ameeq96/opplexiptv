@@ -1,8 +1,232 @@
 ﻿@extends('layouts.default')
 @section('title', __('messages.checkout_complete_title_page'))
 
+@push('styles')
+<style>
+    .checkout-step1-page {
+        min-height: 100vh;
+        padding: 38px 0 76px;
+        background:
+            radial-gradient(circle at 8% 0%, rgba(37, 99, 235, .10), transparent 30%),
+            radial-gradient(circle at 94% 18%, rgba(220, 38, 38, .07), transparent 28%),
+            linear-gradient(180deg, #f8fbff 0%, #eef3f9 100%);
+    }
+    .checkout-step1-page .checkout-hero { max-width: 760px; margin: 0 auto 30px; }
+    .checkout-step1-page .checkout-badges {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        padding: 7px;
+        border: 1px solid #dce5f2;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, .9);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, .06);
+    }
+    .checkout-step1-page .checkout-trust-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 7px 11px;
+        border-radius: 999px;
+        color: #35516f;
+        font-size: .76rem;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .checkout-step1-page .checkout-trust-item i { color: #059669; }
+    .checkout-step1-page .hero-title {
+        margin-bottom: 10px;
+        color: #0b1739;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -.035em;
+    }
+    .checkout-step1-page .hero-subtitle {
+        max-width: 620px;
+        margin: 0 auto;
+        color: #64748b;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+    .checkout-step1-page .checkout-shell { max-width: 1200px; }
+    .checkout-step1-page .checkout-layout { margin-right: -12px; margin-left: -12px; }
+    .checkout-step1-page .checkout-column { padding-right: 12px; padding-left: 12px; }
+    .checkout-step1-page .checkout-panel {
+        overflow: hidden;
+        border: 1px solid #dfe7f2;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, .96);
+        box-shadow: 0 18px 45px rgba(15, 23, 42, .07);
+    }
+    .checkout-step1-page .checkout-panel__heading {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 24px;
+    }
+    .checkout-step1-page .checkout-panel__icon {
+        display: inline-flex;
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(37, 99, 235, .2);
+    }
+    .checkout-step1-page .checkout-panel__heading h5 { margin: 0; color: #0f172a; font-size: 1.08rem; }
+    .checkout-step1-page .checkout-panel__kicker {
+        display: block;
+        margin-bottom: 3px;
+        color: #2563eb;
+        font-size: .7rem;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+    .checkout-step1-page .form-group { margin-bottom: 20px; }
+    .checkout-step1-page .checkout-details-panel .form-group > label { margin-bottom: 7px; color: #24324a; }
+    .checkout-step1-page .form-control {
+        min-height: 50px;
+        border: 1px solid #d9e2ef;
+        border-radius: 12px;
+        background: #fbfdff;
+        color: #0f172a;
+        transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .checkout-step1-page textarea.form-control { min-height: 118px; resize: vertical; }
+    .checkout-step1-page .form-control:focus {
+        border-color: #60a5fa;
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, .10);
+    }
+    .checkout-step1-page .iti { width: 100%; }
+    .checkout-step1-page .order-box {
+        padding: 0 !important;
+        overflow: hidden;
+        border: 0;
+        border-radius: 16px;
+        background: #f8fbff;
+    }
+    .checkout-step1-page .order-summary__heading { padding: 18px; border-bottom: 1px solid #dbeafe; }
+    .checkout-step1-page .order-summary__heading > div { min-width: 0; }
+    .checkout-step1-page .order-summary__heading strong { display: block; color: #0f172a; line-height: 1.4; }
+    .checkout-step1-page .order-summary__type {
+        display: inline-flex;
+        margin-bottom: 7px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        background: #eaf1ff;
+        color: #1d4ed8;
+        font-size: .68rem;
+        font-weight: 800;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+    }
+    .checkout-step1-page .order-summary__heading a {
+        padding-top: 4px;
+        color: #2563eb;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    .checkout-step1-page .order-details {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        margin: 0;
+        padding: 16px 18px;
+    }
+    .checkout-step1-page .order-detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 10px 12px;
+        border-color: #e2e8f0;
+        border-radius: 11px;
+    }
+    .checkout-step1-page .order-detail strong { margin-top: 0; text-align: right; }
+    [dir="rtl"] .checkout-step1-page .order-detail strong { text-align: left; }
+    .checkout-step1-page .order-pricing { margin: 0; padding: 16px 18px 18px; background: #fff; }
+    .checkout-step1-page .order-total { margin-top: 9px; padding-top: 12px; color: #0f172a; }
+    .checkout-step1-page .order-total span:last-child { color: #dc2626; }
+    .checkout-step1-page .checkout-payment-panel { padding: 24px !important; }
+    .checkout-step1-page .checkout-assurances {
+        margin-bottom: 18px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    .checkout-step1-page .pay-option {
+        min-height: 76px;
+        padding: 13px 14px;
+        border-color: #dbe3ee;
+        border-radius: 13px;
+        background: #fff;
+        cursor: pointer;
+    }
+    .checkout-step1-page .pay-option.active {
+        border-color: #60a5fa;
+        background: #eff6ff;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, .08);
+    }
+    .checkout-step1-page .pay-option input { flex: 0 0 auto; margin: 4px 2px 0 0 !important; }
+    .checkout-step1-page .checkout-policy,
+    .checkout-step1-page .checkout-marketing { border-radius: 13px; }
+    .checkout-step1-page .checkout-marketing { padding: 14px; }
+    .checkout-step1-page .place-order {
+        display: inline-flex;
+        width: 100%;
+        min-height: 54px;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+        box-shadow: 0 14px 28px rgba(220, 38, 38, .20);
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .checkout-step1-page .place-order:hover {
+        background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+        box-shadow: 0 16px 32px rgba(220, 38, 38, .25);
+        transform: translateY(-1px);
+    }
+    .checkout-step1-page .checkout-order-column { position: static; }
+    [dir="rtl"] .checkout-step1-page .checkout-assurances i { margin-right: 0; margin-left: 6px; }
+    [dir="rtl"] .checkout-step1-page .pay-option input { margin-right: 0 !important; margin-left: 2px !important; }
+
+    @media (min-width: 992px) and (min-height: 900px) {
+        .checkout-step1-page .checkout-order-column { position: sticky; top: 92px; align-self: flex-start; }
+    }
+    @media (max-width: 767px) {
+        .checkout-step1-page { padding: 28px 0 104px; }
+        .checkout-step1-page .checkout-hero { margin-bottom: 22px; }
+        .checkout-step1-page .checkout-badges { max-width: 100%; flex-wrap: wrap; border-radius: 18px; }
+        .checkout-step1-page .checkout-trust-item { padding: 5px 7px; font-size: .7rem; }
+        .checkout-step1-page .hero-title { font-size: 2rem; }
+        .checkout-step1-page .hero-subtitle { font-size: .92rem; }
+        .checkout-step1-page .checkout-panel { border-radius: 18px; }
+        .checkout-step1-page .checkout-details-panel,
+        .checkout-step1-page .checkout-payment-panel { padding: 20px !important; }
+        .checkout-step1-page .checkout-mobile-action { width: auto; }
+        .checkout-step1-page .form-row { display: block; }
+        .checkout-step1-page .form-row > [class*="col-"] { max-width: 100%; }
+        body.checkout-review-page .whatsapp-icon,
+        body.checkout-review-page #voice-assistant { display: none !important; }
+    }
+    @media (max-width: 420px) {
+        .checkout-step1-page .checkout-trust-item { width: 100%; justify-content: center; }
+        .checkout-step1-page .order-summary__heading { display: block; }
+        .checkout-step1-page .order-summary__heading a { display: inline-block; margin-top: 10px; }
+    }
+</style>
+@endpush
+
 @section('content')
 <div class="checkout-step1-page">
+    <script>document.body.classList.add('checkout-review-page');</script>
 @php
         // ------------------------------
         // Gather selections from request
@@ -84,6 +308,20 @@
         if ($selectedType === 'iptv') {
             $selectedType = 'package'; // DB enum: package | reseller
         }
+        if ($selectedType === 'package' && !empty($selectedDeviceId)) {
+            try {
+                $selectedDeviceModel = \App\Models\Device::query()->find($selectedDeviceId);
+                if ($selectedDeviceModel) {
+                    $selectedDeviceId = $selectedDeviceModel->id;
+                    $selectedDevice = $selectedDeviceModel->name;
+                }
+            } catch (\Throwable $e) {
+                // The controller already validates the device before rendering checkout.
+            }
+        } elseif ($selectedType === 'reseller') {
+            $selectedDeviceId = null;
+            $selectedDevice = null;
+        }
         $typeLabel =
             $selectedType === 'reseller' ? __('messages.checkout_type_reseller') : __('messages.checkout_type_iptv');
         $durationMonths = $selectedPackage && $selectedType === 'package'
@@ -128,25 +366,20 @@
         ];
     @endphp
 
-    <div class="container text-center mt-3">
-        <div class="checkout-badges d-inline-flex flex-wrap align-items-center">
-            <div class="mr-3 d-flex align-items-center">
+    <div class="container checkout-hero text-center">
+        <div class="checkout-badges badge-row">
+            <span class="checkout-trust-item">
                 <i class="fa fa-shield"></i> {{ __('messages.checkout_badge_secure') }}
-            </div>
-            <span class="text-secondary mr-3">&bull;</span>
-            <div class="mr-3 d-flex align-items-center">
+            </span>
+            <span class="checkout-trust-item">
                 <i class="fa fa-check-circle"></i> {{ __('messages.checkout_badge_safe_info') }}
-            </div>
-            <span class="text-secondary mr-3">&bull;</span>
-            <div class="d-flex align-items-center">
+            </span>
+            <span class="checkout-trust-item">
                 <i class="fa fa-lock"></i> {{ __('messages.checkout_badge_encryption') }}
-            </div>
+            </span>
         </div>
-    </div>
-
-    <div class="container text-center mt-3">
         <h1 class="hero-title change-font">{{ __('messages.checkout_complete_title') }}</h1>
-        <h2 class="hero-sub change-font">{{ __('messages.checkout_complete_sub') }}</h2>
+        <h2 class="hero-subtitle change-font">{{ __('messages.checkout_complete_sub') }}</h2>
     </div>
 
     @if ($errors->any())
@@ -161,12 +394,18 @@
         </div>
     @endif
 
-    <div class="container my-4">
-        <div class="row">
+    <div class="container checkout-shell">
+        <div class="row checkout-layout">
             {{-- Billing --}}
-            <div class="col-lg-7 mb-4">
-                <div class="card-soft p-4">
-                    <h5 class="mb-3">{{ __('messages.checkout_billing_details') }}</h5>
+            <div class="col-lg-7 checkout-column mb-4">
+                <section class="card-soft checkout-panel checkout-details-panel p-4">
+                    <div class="checkout-panel__heading">
+                        <span class="checkout-panel__icon" aria-hidden="true"><i class="fa fa-user"></i></span>
+                        <div>
+                            <span class="checkout-panel__kicker">{{ $typeLabel }}</span>
+                            <h5>{{ __('messages.checkout_billing_details') }}</h5>
+                        </div>
+                    </div>
 
                     <form action="{{ route('step2') }}" method="post" id="checkoutForm">
                         @csrf
@@ -185,43 +424,43 @@
                             value="{{ old('checkout_draft_token', (string) \Illuminate\Support\Str::uuid()) }}">
 
                         <div class="form-group">
-                            <label class="required">{{ __('messages.checkout_package_type') }}</label>
-                            <div class="form-control bg-light" aria-readonly="true">{{ $typeLabel }}</div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="required">{{ __('messages.checkout_email') }}</label>
-                            <input type="email" name="email" class="form-control" value="{{ old('email') }}">
+                            <label class="required" for="checkoutEmail">{{ __('messages.checkout_email') }}</label>
+                            <input type="email" id="checkoutEmail" name="email" class="form-control"
+                                value="{{ old('email') }}" autocomplete="email" required>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label class="required">{{ __('messages.checkout_first_name') }}</label>
-                                <input type="text" name="first_name" class="form-control"
-                                    value="{{ old('first_name') }}">
+                                <label class="required" for="checkoutFirstName">{{ __('messages.checkout_first_name') }}</label>
+                                <input type="text" id="checkoutFirstName" name="first_name" class="form-control"
+                                    value="{{ old('first_name') }}" autocomplete="given-name" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="required">{{ __('messages.checkout_last_name') }}</label>
-                                <input type="text" name="last_name" class="form-control" value="{{ old('last_name') }}">
+                                <label class="required" for="checkoutLastName">{{ __('messages.checkout_last_name') }}</label>
+                                <input type="text" id="checkoutLastName" name="last_name" class="form-control"
+                                    value="{{ old('last_name') }}" autocomplete="family-name" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="required">{{ __('messages.checkout_phone') }}</label>
+                            <label class="required" for="phone">{{ __('messages.checkout_phone') }}</label>
                             <input type="tel" id="phone" name="phone" class="form-control"
-                                value="{{ old('phone') }}">
+                                value="{{ old('phone') }}" autocomplete="tel" required>
                             <small id="phone-client-error" class="text-danger d-none"></small>
                             <small class="text-muted d-block mt-1">{{ __('messages.checkout_phone_hint') }}</small>
                         </div>
 
                         <div class="form-group">
-                            <label>{{ __('messages.checkout_notes_label') }}</label>
-                            <textarea rows="4" name="notes" class="form-control"
+                            <label for="checkoutNotes">{{ __('messages.checkout_notes_label') }}</label>
+                            <textarea rows="4" id="checkoutNotes" name="notes" class="form-control"
                                 placeholder="{{ __('messages.checkout_notes_placeholder') }}">{{ old('notes') }}</textarea>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="captcha" class="form-control"
+                            <label class="required" for="checkoutCaptcha">
+                                {{ __('messages.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}
+                            </label>
+                            <input type="text" id="checkoutCaptcha" name="captcha" class="form-control"
                                 placeholder="{{ __('messages.form.captcha', ['num1' => $num1, 'num2' => $num2]) }}"
                                 required aria-invalid="@error('captcha') true @else false @enderror"
                                 aria-describedby="@error('captcha') checkout-captcha-error @enderror">
@@ -231,44 +470,47 @@
                         </div>
 
                     </form>
-                </div>
+                </section>
             </div>
 
             {{-- Sidebar --}}
-            <div class="col-lg-5 checkout-order-column">
-                <div class="card-soft p-4 mb-3">
-                    <h5 class="mb-3">{{ __('messages.checkout_your_order') }}</h5>
+            <div class="col-lg-5 checkout-column checkout-order-column">
+                <section class="card-soft checkout-panel p-4 mb-3">
+                    <div class="checkout-panel__heading">
+                        <span class="checkout-panel__icon" aria-hidden="true"><i class="fa fa-shopping-cart"></i></span>
+                        <div>
+                            <span class="checkout-panel__kicker">{{ $typeLabel }}</span>
+                            <h5>{{ __('messages.checkout_your_order') }}</h5>
+                        </div>
+                    </div>
                     <div class="order-box p-3">
                         <div class="order-summary__heading">
-                            <strong>{{ $packageTitle ?: ($selectedPlanName ?: __('messages.checkout_selected_package_fallback')) }}</strong>
+                            <div>
+                                <span class="order-summary__type">{{ $typeLabel }}</span>
+                                <strong>{{ $packageTitle ?: ($selectedPlanName ?: __('messages.checkout_selected_package_fallback')) }}</strong>
+                            </div>
                             <a class="small" href="{{ route('configure', $editOptions) }}">
                                 {{ __('messages.checkout_edit_options') }}
                             </a>
                         </div>
 
                         <div class="order-details">
+                            @if ($selectedType === 'package' && $durationLabel)
+                                <div class="order-detail">
+                                    <span>{{ __('messages.checkout_subscription_label') }}</span>
+                                    <strong>{{ $durationLabel }}</strong>
+                                </div>
+                            @endif
                             @if ($selectedVendor)
                                 <div class="order-detail">
                                     <span>{{ __('messages.checkout_provider') }}</span>
                                     <strong>{{ $providerLabel }}</strong>
                                 </div>
                             @endif
-                            @if ($durationLabel)
-                                <div class="order-detail">
-                                    <span>{{ __('messages.checkout_subscription_label') }}</span>
-                                    <strong>{{ $durationLabel }}</strong>
-                                </div>
-                            @endif
-                            @if ($selectedDevice)
+                            @if ($selectedType === 'package' && $selectedDevice)
                                 <div class="order-detail">
                                     <span>{{ __('messages.checkout_device') }}</span>
                                     <strong>{{ $selectedDevice }}</strong>
-                                </div>
-                            @endif
-                            @if ($selectedType)
-                                <div class="order-detail">
-                                    <span>{{ __('messages.checkout_type') }}</span>
-                                    <strong>{{ $typeLabel }}</strong>
                                 </div>
                             @endif
                         </div>
@@ -292,9 +534,9 @@
                         </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="card-soft p-4">
+                <section class="card-soft checkout-panel checkout-payment-panel p-4">
                     <div class="checkout-assurances">
                         <span><i class="fa fa-refresh" aria-hidden="true"></i>{{ __('messages.page_faq.packages.a5') }}</span>
                         <span><i class="fa fa-clock-o" aria-hidden="true"></i>{{ __('messages.thankyou_page.delivery_text') }}</span>
@@ -371,9 +613,10 @@
                     </fieldset>
 
                     <button type="submit" form="checkoutForm" class="btn btn-primary place-order checkout-mobile-action">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
                         {{ __('messages.checkout_place_order_btn') }}
                     </button>
-                </div>
+                </section>
             </div>
         </div>
     </div>
@@ -414,6 +657,16 @@
                 submitButton.setAttribute('aria-disabled', 'true');
             }
 
+            window.setTimeout(function() {
+                if (!event.defaultPrevented) return;
+
+                checkoutSubmitting = false;
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.removeAttribute('aria-disabled');
+                }
+            }, 0);
+
             const payment = document.querySelector('input[name="paymethod"]:checked');
             if (typeof window.trackMarketingEvent === 'function') {
                 window.trackMarketingEvent('add_payment_info', {
@@ -422,6 +675,15 @@
                     payment_type: payment ? payment.value : '',
                     items: [checkoutItem]
                 }, 'AddPaymentInfo');
+            }
+        });
+
+        window.addEventListener('pageshow', function() {
+            checkoutSubmitting = false;
+            const submitButton = document.querySelector('[type="submit"][form="checkoutForm"]');
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.removeAttribute('aria-disabled');
             }
         });
 
