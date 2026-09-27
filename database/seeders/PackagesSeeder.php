@@ -352,6 +352,24 @@ class PackagesSeeder extends Seeder
             $catalogPlanTemplates['Opplex iptv'] + ['durations' => [1, 3, 6, 12], 'template_title' => 'Opplex iptv'],
         ];
 
+        $replacedTemplateTitles = ['FILEX IPTV', 'Opplex iptv'];
+        foreach ($requestedCatalogPlans as $requestedPlan) {
+            if ($requestedPlan['template'] !== null) {
+                $replacedTemplateTitles[] = $requestedPlan['template'];
+            }
+        }
+
+        foreach ($previousCatalogPlans as $previousPlan) {
+            if (in_array($previousPlan['title'], $replacedTemplateTitles, true)) {
+                continue;
+            }
+
+            $catalogPlans[] = $previousPlan + [
+                'durations' => [1, 3, 6, 12],
+                'template_title' => $previousPlan['title'],
+            ];
+        }
+
         foreach ($requestedCatalogPlans as $index => $requestedPlan) {
             $templateTitle = $requestedPlan['template'];
             $plan = $templateTitle !== null

@@ -1997,7 +1997,6 @@
             if (!normalPackagesWrap) return;
             normalPackagesWrap.setAttribute('aria-busy', loading ? 'true' : 'false');
             normalPackagesWrap.classList.toggle('is-loading', loading);
-            if (iptvLoadingState) iptvLoadingState.hidden = !loading;
             if (shareAllPackages) {
                 if (loading) shareAllPackages.hidden = true;
                 else syncSelectedPackageShare();
