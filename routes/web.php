@@ -250,7 +250,6 @@ Route::group(
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
         Route::get('packages/providers/{package}/plans', [HomeController::class, 'providerPlans'])
             ->whereNumber('package')
-            ->middleware('throttle:60,1')
             ->name('packages.provider-plans');
         Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
