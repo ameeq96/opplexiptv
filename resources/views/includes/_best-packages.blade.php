@@ -1969,7 +1969,7 @@
         syncSelectedPackageShare();
 
         function providerCacheKey(url) {
-            return `opplex:pricing-provider:${url}`;
+            return `opplex:pricing-provider:v2:${url}`;
         }
 
         function getCachedProvider(url) {

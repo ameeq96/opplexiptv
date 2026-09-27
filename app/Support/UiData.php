@@ -122,7 +122,7 @@ class UiData
         $footer = $this->remember("footer:{$whatsappNumber}", now()->addMinutes(30), fn () => $this->footerData(), []);
         $packageGroups = $needsPricing
             ? $this->remember(
-                'packages:v4',
+                'packages:v5',
                 now()->addMinutes(30),
                 fn () => $this->packageGroups(),
                 ['iptv' => [], 'iptvProviders' => [], 'reseller' => []]
@@ -750,13 +750,27 @@ class UiData
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
             ->orderByRaw('COALESCE(sort_order, duration_months, id)')
-            ->get(['id', 'type', 'vendor', 'title', 'sort_order', 'duration_months', 'is_featured']);
+            ->get(['id', 'type', 'vendor', 'title', 'sort_order', 'duration_months', 'is_featured', 'features']);
 
         if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
             $iptvRows = $iptvRows
                 ->reject(fn (Package $package) => $package->isDurationPlan())
                 ->values();
         }
+
+        $annualOnlyServices = $iptvRows
+            ->filter(static fn (Package $package) => in_array(
+                'Yearly subscription only (monthly plan unavailable)',
+                $package->features ?? [],
+                true
+            ))
+            ->map(fn (Package $package) => Str::lower($this->packageServiceName($package)))
+            ->unique();
+        $iptvRows = $iptvRows
+            ->reject(fn (Package $package) => $annualOnlyServices->contains(
+                Str::lower($this->packageServiceName($package))
+            ) && (int) $package->duration_months !== 12)
+            ->values();
 
         $providerGroups = $iptvRows->groupBy(fn (Package $package) => $this->packageServiceName($package));
         $providerGroupList = $providerGroups

@@ -147,7 +147,7 @@ class HomeController extends Controller
                 $providerName . ' - Half Yearly',
                 $providerName . ' - Yearly',
             ];
-        $packages = Package::query()
+        $candidates = Package::query()
             ->where('active', true)
             ->where('type', 'iptv')
             ->where('vendor', $package->vendor)
@@ -155,7 +155,17 @@ class HomeController extends Controller
             ->where('price_amount', '>', 0)
             ->orderByRaw('COALESCE(sort_order, duration_months, id)')
             ->with('translations')
-            ->get()
+            ->get();
+        if ($candidates->contains(static fn (Package $candidate) => in_array(
+            'Yearly subscription only (monthly plan unavailable)',
+            $candidate->features ?? [],
+            true
+        ))) {
+            $candidates = $candidates
+                ->where('duration_months', 12)
+                ->values();
+        }
+        $packages = $candidates
             ->take(4)
             ->map(function (Package $candidate): array {
                 $card = $candidate->toIptvArray();
@@ -430,7 +440,21 @@ class HomeController extends Controller
             ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
             ->orderByRaw("COALESCE(sort_order, duration_months, id)")
             ->with('translations')
-            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'icon']);
+            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'icon', 'features']);
+
+        $annualOnlyServices = $iptvRows
+            ->filter(static fn (Package $package) => in_array(
+                'Yearly subscription only (monthly plan unavailable)',
+                $package->features ?? [],
+                true
+            ))
+            ->map(fn (Package $package) => Str::lower($this->packageServiceName($package)))
+            ->unique();
+        $iptvRows = $iptvRows
+            ->reject(fn (Package $package) => $annualOnlyServices->contains(
+                Str::lower($this->packageServiceName($package))
+            ) && (int) $package->duration_months !== 12)
+            ->values();
 
         $iptvPackages = [];
         foreach ($iptvRows as $r) {
