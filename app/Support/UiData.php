@@ -1002,36 +1002,48 @@ class UiData
     {
         return [
             'android' => [
-                ['content_key' => 'iptv_smarters', 'version' => __('messages.app.iptv_smarters_pro'),            'file' => 'iptv_smarter_pro.apk',                  'image' => 'iptv_smarter.webp', 'keywords' => 'latest-IPTV-smarters-pro IPTV-app-download IPTV-APK-Download iptv-Smarters'],
-                ['content_key' => 'iptv_smarters', 'version' => __('messages.app.iptv_smarters_pro_3151'),       'file' => 'IPTV Smarters Pro_version-3.1.5.1.apk', 'image' => 'iptv_smarter.webp', 'keywords' => 'latest-IPTV-smarters-pro IPTV-app-download IPTV-APK-Download iptv-Smarters'],
-                ['content_key' => 'iptv_smarters', 'version' => __('messages.app.iptv_smarters_403'),            'file' => 'iptv-smarters-4.0.3.apk',               'image' => 'iptv_smarter.webp', 'keywords' => 'latest-IPTV-smarters-android IPTV-smarters-android-download IPTV-smarters-mobile IPTV-smarters-LCD IPTV-APK-download IPTV-smarters-for-Android IPTV-smarters-for-TV latest-IPTV-APK IPTV-for-Android-TV iptv-samsung-apk'],
-                ['content_key' => 'iptv_smarters', 'version' => __('messages.app.iptv_smarters_pro_403_latest'), 'file' => 'iptv-smarters-pro-4-0-3.apk',           'image' => 'iptv_smarter.webp', 'keywords' => 'latest-IPTV-smarters-android IPTV-smarters-android-download IPTV-smarters-mobile IPTV-smarters-LCD IPTV-APK-download IPTV-smarters-for-Android IPTV-smarters-for-TV latest-IPTV-APK IPTV-for-Android-TV iptv-samsung-apk'],
-                ['content_key' => 'opplex', 'version' => __('messages.app.opplex_app'),                    'file' => 'OPPLEXTV3.0.apk',                       'image' => 'opplextv.webp',     'keywords' => 'Opplex-TV-App Opplex-TV-APK-Download Opplex-IPTV-App Opplex-TV-for-Android Opplex-TV-Mobile-Streaming Android-IPTV-Opplex-App'],
-                ['content_key' => 'xtv', 'version' => __('messages.app.xtv_app'),                       'file' => 'XTVPLAYER3.0.apk',                      'image' => 'xtv.webp',          'keywords' => 'latest-XTV-live-iptv XTV-live-iptv-download XTV-live-iptv-APK XTV-IPTV-app-download XTV-live-APK-download XTV-live-streaming-app XTV-live-TV-APK free-XTV-iptv-APK XTV-iptv-pro-APK latest-XTV-IPTV-app'],
-                ['content_key' => '9xtream', 'version' => '9Xtream Player & Downloader',                    'file' => 'https://play.google.com/store/apps/details?id=com.divergentftb.xtreamplayeranddownloader', 'image' => '9xtream.webp', 'keywords' => '9Xtream-Android-App IPTV-9Xtream-Player Android-IPTV-Player-Download Xtream-Downloader-App'],
-                ['content_key' => 'ibo_android', 'version' => 'IBO Player (Android)',                           'file' => 'https://iboplayer.com/app_downloads/ibop.apk', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player-Android IPTV-Player-APK IPTV-Player-for-Android IPTV-App-Download'],
-                ['content_key' => 'starshare', 'version' => 'Filex New (Android)',                            'file' => 'starsharenew.apk',                      'image' => 'starshare.webp',    'keywords' => 'Filex-IPTV-App Filex-Android-APK IPTV-Filex-Download Star-Share-IPTV-App Star-Share-Android-APK IPTV-StarShare-Download'],
+                ['content_key' => 'iptv_smarters', 'version' => 'Smarters Pro (Mobile)', 'file' => 'https://play.google.com/store/apps/details?id=com.smarters.smarterspro', 'image' => 'iptv_smarter.webp', 'keywords' => 'Smarters-Pro Android IPTV player mobile Google-Play'],
+                ['content_key' => 'iptv_smarters', 'version' => 'Smarters Pro (Android TV)', 'file' => 'https://play.google.com/store/apps/details?id=com.smarterspro.smartersprotv', 'image' => 'iptv_smarter.webp', 'keywords' => 'Smarters-Pro Android-TV Google-TV IPTV player Google-Play'],
+                ['content_key' => 'tivimate', 'version' => 'TiviMate IPTV Player', 'file' => 'https://play.google.com/store/apps/details?id=ar.tvplayer.tv', 'image' => 'tivimate.webp', 'keywords' => 'TiviMate Android-TV Google-TV IPTV player M3U Xtream Stalker'],
+                ['content_key' => 'sparkle', 'version' => 'Sparkle TV Player', 'file' => 'https://play.google.com/store/apps/details?id=se.hedekonsult.sparkle', 'image' => 'sparkle-tv.webp', 'keywords' => 'Sparkle-TV Android-TV Google-TV Fire-TV IPTV player DVR'],
+                ['content_key' => 'televizo', 'version' => 'Televizo IPTV Player', 'file' => 'https://play.google.com/store/apps/details?id=com.ottplay.ottplay', 'image' => 'televizo.webp', 'keywords' => 'Televizo Android phone tablet TV IPTV player M3U Xtream'],
+                ['content_key' => 'xciptv', 'version' => 'XCIPTV Player', 'file' => 'https://play.google.com/store/apps/details?id=com.nathnetwork.xciptv', 'image' => 'xciptv.webp', 'keywords' => 'XCIPTV Android phone tablet TV IPTV player'],
+                ['content_key' => 'implayer', 'version' => 'iMPlayer TV', 'file' => 'https://play.google.com/store/apps/details?id=com.myiptvonline.implayer', 'image' => 'implayer.webp', 'keywords' => 'iMPlayer Android Android-TV IPTV player'],
+                ['content_key' => 'iptv_extreme', 'version' => 'IPTV Extreme Pro', 'file' => 'https://play.google.com/store/apps/details?id=com.pecana.iptvextremepro', 'image' => 'iptv-extreme.webp', 'keywords' => 'IPTV-Extreme-Pro Android TV IPTV player'],
+                ['content_key' => '9xtream', 'version' => '9Xtream Player & Downloader', 'file' => 'https://play.google.com/store/apps/details?id=com.divergentftb.xtreamplayeranddownloader', 'image' => '9xtream.webp', 'keywords' => '9Xtream Android IPTV player downloader Google-Play'],
+                ['content_key' => 'iptvx', 'version' => 'IPTVX for Android', 'file' => 'https://play.google.com/store/apps/details?id=com.bendingx.iptvx.android', 'image' => 'iptvx.webp', 'keywords' => 'IPTVX Android IPTV player Google-Play'],
             ],
             'ios' => [
-                ['content_key' => 'smarters_ios', 'version' => __('messages.app.smarters_player_ios'), 'file' => 'https://apps.apple.com/us/app/smarters-player-lite/id1628995509', 'image' => 'smarterlite.webp', 'keywords' => 'latest-IPTV-smarters-iOS IPTV-smarters-iOS-download IPTV-iOS-app ...'],
-                ['content_key' => '000_player', 'version' => __('messages.app.player_000'),          'file' => 'https://apps.apple.com/app/000-player/id1665441224',              'image' => '000.webp',          'keywords' => '000-Player-iOS-download 000-Player-App-Store ...'],
-                ['content_key' => '9xtream_ios', 'version' => '9Xtream Download & Play IPTV',         'file' => 'https://apps.apple.com/us/app/9xtream-download-play-iptv/id6504282945', 'image' => '9xtream.webp', 'keywords' => '9Xtream-iOS-App IPTV-Player-iPhone IPTV-Player-iPad ...'],
+                ['content_key' => 'smarters_ios', 'version' => 'Smarters Pro (iPhone, iPad & Apple TV)', 'file' => 'https://apps.apple.com/us/app/smarters-pro/id6450746159', 'image' => 'smarterlite.webp', 'keywords' => 'Smarters-Pro iPhone iPad Apple-TV IPTV player App-Store'],
+                ['content_key' => '000_player', 'version' => __('messages.app.player_000'), 'file' => 'https://apps.apple.com/app/000-player/id1665441224', 'image' => '000.webp', 'keywords' => '000-Player iPhone iPad IPTV App-Store'],
+                ['content_key' => '9xtream_ios', 'version' => '9Xtream Download & Play IPTV', 'file' => 'https://apps.apple.com/us/app/9xtream-download-play-iptv/id6504282945', 'image' => '9xtream.webp', 'keywords' => '9Xtream iPhone iPad IPTV player App-Store'],
+                ['content_key' => 'iptvx', 'version' => 'IPTVX', 'file' => 'https://apps.apple.com/us/app/iptvx/id1451470024', 'image' => 'iptvx.webp', 'keywords' => 'IPTVX iPhone iPad Apple-TV IPTV player App-Store'],
+                ['content_key' => 'uhf', 'version' => 'UHF - Love your IPTV', 'file' => 'https://apps.apple.com/us/app/uhf-love-your-iptv/id6443751726', 'image' => 'uhf.webp', 'keywords' => 'UHF iPhone iPad Apple-TV IPTV media player App-Store'],
+                ['content_key' => 'ibo_ios', 'version' => 'IBO Player', 'file' => 'https://apps.apple.com/us/app/ibo-player/id1547652240', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player iPhone iPad Apple-TV IPTV App-Store'],
+                ['content_key' => 'gse_ios', 'version' => 'GSE Smart IPTV Pro', 'file' => 'https://apps.apple.com/us/app/gse-smart-iptv-pro/id6443923265', 'image' => 'gse-smart-iptv.webp', 'keywords' => 'GSE-Smart-IPTV-Pro iPhone iPad IPTV player App-Store'],
             ],
             'windows' => [
-                ['content_key' => 'smarters_windows', 'version' => __('messages.app.iptv_smarters_windows'), 'file' => 'iptv-smarters-pro-1-1-1.exe',                  'image' => 'iptv_smarter.webp', 'keywords' => 'latest-IPTV-smarters-windows ...'],
-                ['content_key' => 'ibo_windows', 'version' => 'IBO Player (Windows x64 10+)',           'file' => 'https://iboplayer.com/app_downloads/ibo_installer.exe', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player-Windows IPTV-Player-for-PC ...'],
+                ['content_key' => 'ibo_windows', 'version' => 'IBO Player for Windows', 'file' => 'https://ib.iboiptv.com/downloads', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player Windows IPTV official download'],
+                ['content_key' => 'kodi_windows', 'version' => 'Kodi for Windows', 'file' => 'https://kodi.tv/download/windows/', 'image' => 'kodi.webp', 'keywords' => 'Kodi Windows IPTV PVR player official download'],
+                ['content_key' => 'vlc_windows', 'version' => 'VLC for Windows', 'file' => 'https://www.videolan.org/vlc/download-windows.html', 'image' => 'vlc.webp', 'keywords' => 'VLC Windows IPTV network stream official download'],
             ],
             'macos' => [
-                ['content_key' => 'ibo_macos', 'version' => 'IBO Player (MacOS Intel x64)', 'file' => 'https://iboplayer.com/app_downloads/iboPlayer.dmg', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player-Mac IPTV-Player-for-MacOS ...'],
+                ['content_key' => 'ibo_macos', 'version' => 'IBO Player for macOS', 'file' => 'https://ib.iboiptv.com/downloads', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player macOS IPTV official download'],
+                ['content_key' => 'iptvx_macos', 'version' => 'IPTVX for macOS', 'file' => 'https://apps.apple.com/us/app/iptvx/id1451470024', 'image' => 'iptvx.webp', 'keywords' => 'IPTVX macOS Apple-Silicon IPTV App-Store'],
+                ['content_key' => 'uhf_macos', 'version' => 'UHF for macOS', 'file' => 'https://apps.apple.com/us/app/uhf-love-your-iptv/id6443751726', 'image' => 'uhf.webp', 'keywords' => 'UHF macOS Apple-Silicon IPTV App-Store'],
+                ['content_key' => 'kodi_macos', 'version' => 'Kodi for macOS', 'file' => 'https://kodi.tv/download/macos/', 'image' => 'kodi.webp', 'keywords' => 'Kodi macOS IPTV PVR player official download'],
+                ['content_key' => 'vlc_macos', 'version' => 'VLC for macOS', 'file' => 'https://www.videolan.org/vlc/download-macosx.html', 'image' => 'vlc.webp', 'keywords' => 'VLC macOS IPTV network stream official download'],
             ],
             'linux' => [
-                ['content_key' => 'ibo_linux', 'version' => 'IBO Player (Linux Debian/Ubuntu)', 'file' => 'https://iboplayer.com/app_downloads/ibo-player_1.0.0_amd64.snap', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player-Linux IPTV-Player-Debian ...'],
+                ['content_key' => 'ibo_linux', 'version' => 'IBO Player for Linux', 'file' => 'https://ib.iboiptv.com/downloads', 'image' => 'ibo.webp', 'keywords' => 'IBO-Player Linux Ubuntu IPTV official download'],
+                ['content_key' => 'kodi_linux', 'version' => 'Kodi for Linux', 'file' => 'https://kodi.tv/download/linux/', 'image' => 'kodi.webp', 'keywords' => 'Kodi Linux IPTV PVR player official download'],
+                ['content_key' => 'vlc_linux', 'version' => 'VLC for Linux', 'file' => 'https://www.videolan.org/vlc/#download', 'image' => 'vlc.webp', 'keywords' => 'VLC Linux IPTV network stream official download'],
             ],
         ];
     }
 
     /**
-     * Add redirect + asset image URLs.
+     * Add direct third-party download + asset image URLs.
      *
      * @param array<string, array<int, array<string,string>>> $platforms
      * @return array<string, array<int, array<string,string>>>
@@ -1040,18 +1052,9 @@ class UiData
     {
         foreach ($platforms as &$apps) {
             foreach ($apps as &$app) {
-                $isExternal = (bool) filter_var($app['file'], FILTER_VALIDATE_URL);
-                $needsSupportLink = !$isExternal
-                    && !is_file(public_path('downloads/' . $app['file']));
-                $downloadUrl = $isExternal ? $app['file'] : asset('downloads/' . $app['file']);
-
-                $app['href'] = $needsSupportLink
-                    ? 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
-                        __('document_support.whatsapp_messages.support') . ' ' . $app['version']
-                    )
-                    : route('redirect.ad', ['target' => $downloadUrl]);
-                $app['image_url'] = asset('images/' . $app['image']);
-                $app['uses_support_fallback'] = $needsSupportLink;
+                $app['href'] = $app['file'];
+                $app['image_url'] = $app['image'] !== '' ? asset('images/' . $app['image']) : '';
+                $app['uses_support_fallback'] = false;
             }
             unset($app);
         }
