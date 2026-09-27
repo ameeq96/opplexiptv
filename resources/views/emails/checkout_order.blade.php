@@ -141,6 +141,14 @@
     <a href="{{ route('refund-policy') }}">{{ __('document_ui.footer.refund') }}</a>
 </p>
 
+@if (!$isAdmin && !empty($details['status_url']))
+    <p style="margin:12px 0 0 0;">
+        <a href="{{ $details['status_url'] }}" style="display:inline-block;padding:10px 16px;background:#2563eb;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;">
+            {{ __('messages.thankyou_page.track_order') }}
+        </a>
+    </p>
+@endif
+
 @if (!$isAdmin && $whatsappPaymentUrl)
     <p style="margin:12px 0 0 0;">
         <a href="{{ $whatsappPaymentUrl }}" style="display:inline-block;padding:10px 16px;background:#25d366;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;">

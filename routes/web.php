@@ -35,6 +35,7 @@ use App\Http\Controllers\{
     TrackingController,
     UserClientController,
     AdminNotificationController,
+    CustomerOrderStatusController,
     CheckoutDraftController,
     ReferralController,
     EventPromotionController,
@@ -293,6 +294,16 @@ Route::group(
             ->name('referrals.capture');
     }
 );
+
+Route::get('/orders/{orderId}/status', [CustomerOrderStatusController::class, 'show'])
+    ->whereNumber('orderId')
+    ->middleware(['signed', 'throttle:30,1'])
+    ->name('orders.status');
+
+Route::post('/orders/{orderId}/payment-proof', [CustomerOrderStatusController::class, 'storeProof'])
+    ->whereNumber('orderId')
+    ->middleware(['signed', 'throttle:5,10'])
+    ->name('orders.payment-proof');
 
 Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'])
     ->name('track.whatsapp.trial')

@@ -269,6 +269,156 @@
     box-shadow: 0 14px 28px rgba(220, 38, 38, .2);
   }
   .configure-page .config-continue:not([disabled]):hover { transform: translateY(-2px); color: #fff; }
+  .configure-page .plan-finder-open {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 10px 18px;
+    border: 1px solid #bbf7d0;
+    border-radius: 14px;
+    background: #f0fdf4;
+    color: #047857;
+    font-weight: 800;
+    box-shadow: 0 10px 24px rgba(5, 150, 105, .1);
+  }
+  .configure-page .plan-finder {
+    margin-bottom: 24px;
+    padding: 26px;
+    border: 1px solid #bfdbfe;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
+  }
+  .configure-page .plan-finder[hidden],
+  .configure-page .plan-finder__step[hidden],
+  .configure-page .plan-finder__result[hidden],
+  .configure-page .plan-finder__action[hidden] { display: none !important; }
+  .configure-page .plan-finder__head,
+  .configure-page .plan-finder__actions,
+  .configure-page .plan-finder__result-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .configure-page .plan-finder__head { align-items: flex-start; margin-bottom: 18px; }
+  .configure-page .plan-finder__eyebrow {
+    margin: 0 0 5px;
+    color: #047857;
+    font-size: .75rem;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .configure-page .plan-finder__title { margin: 0; color: #0b1739; font-size: 1.45rem; }
+  .configure-page .plan-finder__intro { max-width: 720px; margin: 7px 0 0; color: #64748b; }
+  .configure-page .plan-finder__close {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dbe5f3;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #334155;
+  }
+  .configure-page .plan-finder__progress {
+    height: 7px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #e2e8f0;
+  }
+  .configure-page .plan-finder__progress span {
+    display: block;
+    width: 33.333%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #10b981, #2563eb);
+    transition: width .2s ease;
+  }
+  .configure-page .plan-finder__step-label { margin: 0 0 20px; color: #64748b; font-size: .82rem; font-weight: 700; }
+  .configure-page .plan-finder__step { min-width: 0; margin: 0; padding: 0; border: 0; }
+  .configure-page .plan-finder__step legend {
+    width: 100%;
+    margin-bottom: 16px;
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+  .configure-page .plan-finder__choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 12px;
+  }
+  .configure-page .plan-finder__choice {
+    min-height: 78px;
+    padding: 13px;
+    border: 1px solid #dbe5f3;
+    border-radius: 15px;
+    background: #fbfdff;
+    color: #1e293b;
+    font-weight: 750;
+    transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .configure-page .plan-finder__choice:hover,
+  .configure-page .plan-finder__choice:focus-visible { border-color: #93c5fd; }
+  .configure-page .plan-finder__choice.active {
+    border-color: #2563eb;
+    background: #eff6ff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+    color: #1d4ed8;
+  }
+  .configure-page .plan-finder__choice .fa { display: block; margin-bottom: 7px; font-size: 1.25rem; }
+  .configure-page .plan-finder__field { display: grid; gap: 7px; }
+  .configure-page .plan-finder__field label { color: #0f172a; font-weight: 800; }
+  .configure-page .plan-finder__field input {
+    width: 100%;
+    min-height: 52px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    background: #fff;
+    color: #0f172a;
+  }
+  .configure-page .plan-finder__field input:focus {
+    border-color: #2563eb;
+    outline: 3px solid rgba(37, 99, 235, .1);
+  }
+  .configure-page .plan-finder__field small { color: #64748b; }
+  .configure-page .plan-finder__fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, .45fr); gap: 16px; margin-top: 18px; }
+  .configure-page .plan-finder__error { min-height: 22px; margin: 14px 0 0; color: #b91c1c; font-weight: 700; }
+  .configure-page .plan-finder__actions { justify-content: flex-end; margin-top: 10px; }
+  .configure-page .plan-finder__action {
+    min-height: 46px;
+    padding: 10px 17px;
+    border: 1px solid #cbd5e1;
+    border-radius: 13px;
+    background: #fff;
+    color: #1e293b;
+    font-weight: 800;
+  }
+  .configure-page .plan-finder__action--primary { border-color: #2563eb; background: #2563eb; color: #fff; }
+  .configure-page .plan-finder__result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #bbf7d0;
+    border-radius: 17px;
+    background: #f0fdf4;
+  }
+  .configure-page .plan-finder__result h3 { margin: 2px 0 8px; color: #052e16; font-size: 1.25rem; }
+  .configure-page .plan-finder__result-copy { margin: 0; color: #166534; }
+  .configure-page .plan-finder__result-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 16px 0; }
+  .configure-page .plan-finder__result-grid div { padding: 11px; border-radius: 12px; background: rgba(255,255,255,.82); }
+  .configure-page .plan-finder__result-grid span,
+  .configure-page .plan-finder__result-grid strong { display: block; overflow-wrap: anywhere; }
+  .configure-page .plan-finder__result-grid span { margin-bottom: 4px; color: #64748b; font-size: .72rem; text-transform: uppercase; }
+  .configure-page .plan-finder__truth { margin: 0 0 16px; color: #475569; font-size: .88rem; }
+  .configure-page .plan-finder__result-actions { justify-content: flex-start; flex-wrap: wrap; }
+  .configure-page .plan-finder__result-actions .plan-finder__action { text-decoration: none; }
+  .configure-page .plan-finder__action--whatsapp { border-color: #86efac; background: #fff; color: #15803d; }
 
   @media (max-width: 991px) {
     .configure-page .config-layout { grid-template-columns: 1fr; }
@@ -299,6 +449,11 @@
     }
     .configure-page .config-card .pkg-card { min-height: 205px; scroll-snap-align: start; }
     .configure-page .config-order-summary { padding: 20px; border-radius: 18px; }
+    .configure-page .plan-finder { padding: 20px; border-radius: 18px; }
+    .configure-page .plan-finder__fields,
+    .configure-page .plan-finder__result-grid { grid-template-columns: 1fr; }
+    .configure-page .plan-finder__actions { justify-content: stretch; }
+    .configure-page .plan-finder__action { flex: 1 1 auto; }
   }
   @media (max-width: 420px) {
     .configure-page .config-mode-card__label { font-size: .92rem; }
@@ -318,6 +473,7 @@
   $requestedType = request('package_type', request('ptype', 'iptv'));
   $requestedType = $requestedType === 'reseller' ? 'reseller' : 'iptv';
   $requestedPrice = request('pkg_price', request('plan_price', request('price', '')));
+  $showPlanFinder = request()->boolean('finder');
 
   $durationOptions = [
     1 => [
@@ -374,6 +530,12 @@
       <h2 class="text-muted mb-0" style="font-size:1rem; font-weight:600;">
           {{ __('messages.checkout_step_subtitle') }}
       </h2>
+      <button type="button" class="plan-finder-open" id="planFinderOpen"
+          aria-controls="planFinder" aria-expanded="{{ $showPlanFinder ? 'true' : 'false' }}"
+          @if ($showPlanFinder) hidden @endif>
+        <span class="fa fa-magic" aria-hidden="true"></span>
+        {{ __('interface.plan_finder.cta') }}
+      </button>
     </header>
 
     <form action="{{ route('checkout') }}" method="get" id="configForm" autocomplete="off">
@@ -392,6 +554,120 @@
       {{-- Separate picks (with names so they reach checkout step) --}}
       <input type="hidden" name="pkg_price"        id="pkgPriceInput" value="{{ $requestedPrice }}">
       <input type="hidden" name="package_type"     id="packageTypeInput" value="{{ request()->filled('package_id') ? $requestedType : '' }}"> {{-- iptv | reseller --}}
+
+      <section class="plan-finder" id="planFinder" aria-labelledby="planFinderTitle"
+          @if (! $showPlanFinder) hidden @endif>
+        <div class="plan-finder__head">
+          <div>
+            <p class="plan-finder__eyebrow">{{ __('interface.plan_finder.eyebrow') }}</p>
+            <h2 class="plan-finder__title" id="planFinderTitle">{{ __('interface.plan_finder.title') }}</h2>
+            <p class="plan-finder__intro">{{ __('interface.plan_finder.intro') }}</p>
+          </div>
+          <button type="button" class="plan-finder__close" id="planFinderClose"
+              aria-label="{{ __('interface.fancybox.close') }}">
+            <span class="fa fa-times" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="plan-finder__progress" aria-hidden="true"><span id="planFinderProgress"></span></div>
+        <p class="plan-finder__step-label" id="planFinderStepLabel"></p>
+
+        <fieldset class="plan-finder__step" data-plan-finder-step="1">
+          <legend>{{ __('messages.checkout_device_title') }}</legend>
+          <div class="plan-finder__choices">
+            @foreach ($devices as $d)
+              @php
+                $finderDeviceIcon = match (strtolower($d->name)) {
+                  'smart tv' => 'fa fa-desktop',
+                  'firestick' => 'fa fa-fire',
+                  'android' => 'fa fa-android',
+                  'ios' => 'fa fa-apple',
+                  'mag box' => 'fa fa-cube',
+                  default => 'fa fa-laptop',
+                };
+              @endphp
+              <button type="button" class="plan-finder__choice" aria-pressed="false"
+                  data-finder-device-id="{{ $d->id }}" data-finder-device="{{ $d->name }}">
+                <span class="{{ $finderDeviceIcon }}" aria-hidden="true"></span>
+                {{ $d->name }}
+              </button>
+            @endforeach
+          </div>
+        </fieldset>
+
+        <fieldset class="plan-finder__step" data-plan-finder-step="2" hidden>
+          <legend>{{ __('interface.plan_finder.requirements_label') }}</legend>
+          <div class="plan-finder__field">
+            <label for="planFinderRequirements">{{ __('interface.plan_finder.requirements_label') }}</label>
+            <input type="text" id="planFinderRequirements" maxlength="160"
+                placeholder="{{ __('interface.plan_finder.requirements_placeholder') }}">
+            <small>{{ __('interface.plan_finder.requirements_help') }}</small>
+          </div>
+        </fieldset>
+
+        <fieldset class="plan-finder__step" data-plan-finder-step="3" hidden>
+          <legend>{{ __('messages.checkout_subscription_title') }}</legend>
+          <div class="plan-finder__choices">
+            @foreach ($durationOptions as $months => $option)
+              <button type="button" class="plan-finder__choice" aria-pressed="false"
+                  data-finder-duration="{{ $months }}" data-label="{{ $option['label'] }}">
+                <span class="{{ $option['icon'] }}" aria-hidden="true"></span>
+                {{ $option['label'] }}
+              </button>
+            @endforeach
+          </div>
+          <div class="plan-finder__fields">
+            <div class="plan-finder__field">
+              <label for="planFinderBudget">{{ __('interface.plan_finder.budget_label') }}</label>
+              <input type="number" id="planFinderBudget" min="1" step="0.01" inputmode="decimal"
+                  placeholder="{{ __('interface.plan_finder.budget_placeholder') }}">
+              <small>{{ __('interface.plan_finder.budget_help') }}</small>
+            </div>
+          </div>
+        </fieldset>
+
+        <p class="plan-finder__error" id="planFinderError" role="alert" aria-live="assertive"></p>
+        <div class="plan-finder__actions">
+          <button type="button" class="plan-finder__action" id="planFinderBack" hidden>
+            {{ __('interface.fancybox.previous') }}
+          </button>
+          <button type="button" class="plan-finder__action plan-finder__action--primary" id="planFinderNext">
+            {{ __('interface.fancybox.next') }}
+          </button>
+          <button type="button" class="plan-finder__action plan-finder__action--primary" id="planFinderFind" hidden>
+            {{ __('interface.plan_finder.find') }}
+          </button>
+        </div>
+
+        <div class="plan-finder__result" id="planFinderResult" hidden aria-live="polite" tabindex="-1">
+          <p class="plan-finder__eyebrow">{{ __('interface.plan_finder.result_eyebrow') }}</p>
+          <h3>{{ __('interface.plan_finder.result_title') }}</h3>
+          <p class="plan-finder__result-copy" id="planFinderResultCopy"></p>
+          <div class="plan-finder__result-grid">
+            <div><span>{{ __('messages.checkout_provider') }}</span><strong id="planFinderResultProvider"></strong></div>
+            <div><span>{{ __('messages.checkout_subscription_label') }}</span><strong id="planFinderResultDuration"></strong></div>
+            <div><span>{{ __('messages.checkout_device') }}</span><strong id="planFinderResultDevice"></strong></div>
+            <div><span>{{ __('messages.checkout_total_label') }}</span><strong id="planFinderResultPrice"></strong></div>
+          </div>
+          <p class="plan-finder__truth">{{ __('interface.plan_finder.truthful_notice') }}</p>
+          <div class="plan-finder__result-actions">
+            <button type="button" class="plan-finder__action plan-finder__action--primary" id="planFinderCheckout">
+              {{ __('messages.checkout_continue_button') }}
+            </button>
+            <a class="plan-finder__action plan-finder__action--whatsapp" id="planFinderWhatsApp"
+                href="#" target="_blank" rel="noopener noreferrer"
+                data-whatsapp-placement="plan_finder_result"
+                data-whatsapp-intent="package_recommendation"
+                data-whatsapp-lead-reference>
+              <span class="fa fa-whatsapp" aria-hidden="true"></span>
+              {{ __('interface.plan_finder.whatsapp') }}
+            </a>
+            <button type="button" class="plan-finder__action" id="planFinderRestart">
+              {{ __('interface.plan_finder.restart') }}
+            </button>
+          </div>
+        </div>
+      </section>
 
       <section class="config-mode-card" id="modeSection">
         <div class="config-mode-card__label">
@@ -664,6 +940,40 @@
   let selectedProviderKey = '';
   let preselectedMode     = false;
 
+  const planFinder        = document.getElementById('planFinder');
+  const planFinderOpen    = document.getElementById('planFinderOpen');
+  const planFinderClose   = document.getElementById('planFinderClose');
+  const planFinderProgress= document.getElementById('planFinderProgress');
+  const planFinderStepLabel = document.getElementById('planFinderStepLabel');
+  const planFinderSteps   = Array.from(document.querySelectorAll('[data-plan-finder-step]'));
+  const planFinderBack    = document.getElementById('planFinderBack');
+  const planFinderNext    = document.getElementById('planFinderNext');
+  const planFinderFind    = document.getElementById('planFinderFind');
+  const planFinderError   = document.getElementById('planFinderError');
+  const planFinderRequirements = document.getElementById('planFinderRequirements');
+  const planFinderBudget  = document.getElementById('planFinderBudget');
+  const planFinderResult  = document.getElementById('planFinderResult');
+  const planFinderResultCopy = document.getElementById('planFinderResultCopy');
+  const planFinderResultProvider = document.getElementById('planFinderResultProvider');
+  const planFinderResultDuration = document.getElementById('planFinderResultDuration');
+  const planFinderResultDevice = document.getElementById('planFinderResultDevice');
+  const planFinderResultPrice = document.getElementById('planFinderResultPrice');
+  const planFinderCheckout = document.getElementById('planFinderCheckout');
+  const planFinderWhatsApp = document.getElementById('planFinderWhatsApp');
+  const planFinderRestart = document.getElementById('planFinderRestart');
+  const planFinderMessages = {
+    step: @json(__('interface.plan_finder.step')),
+    requiredDevice: @json(__('interface.plan_finder.required_device')),
+    requiredDuration: @json(__('interface.plan_finder.required_duration')),
+    withinBudget: @json(__('interface.plan_finder.within_budget')),
+    aboveBudget: @json(__('interface.plan_finder.above_budget')),
+    noMatch: @json(__('interface.plan_finder.no_match')),
+    notSpecified: @json(__('interface.plan_finder.not_specified')),
+    whatsapp: @json(__('interface.plan_finder.whatsapp_message'))
+  };
+  const planFinderWhatsAppBase = @json('https://wa.me/' . config('services.whatsapp.number'));
+  const planFinderState = { step: 1, deviceId: '', device: '', duration: '', durationLabel: '' };
+
   function setPickActive(card, active){
     card.classList.toggle('active', active);
     card.setAttribute('aria-pressed', active ? 'true' : 'false');
@@ -697,6 +1007,250 @@
       .sort((a, b) => Number(b.getAttribute('data-provider-priority') || 0)
         - Number(a.getAttribute('data-provider-priority') || 0))[0] || null;
   }
+
+  function planFinderText(template, replacements){
+    return Object.entries(replacements).reduce(
+      (text, entry) => text.split(`:${entry[0]}`).join(String(entry[1])),
+      String(template || '')
+    );
+  }
+
+  function renderPlanFinderStep(step){
+    planFinderState.step = Math.max(1, Math.min(3, Number(step) || 1));
+    planFinderSteps.forEach(fieldset => {
+      fieldset.hidden = Number(fieldset.getAttribute('data-plan-finder-step')) !== planFinderState.step;
+    });
+    planFinderProgress.style.width = `${planFinderState.step / 3 * 100}%`;
+    planFinderStepLabel.textContent = planFinderText(planFinderMessages.step, {
+      current: planFinderState.step,
+      total: 3
+    });
+    planFinderBack.hidden = planFinderState.step === 1;
+    planFinderNext.hidden = planFinderState.step === 3;
+    planFinderFind.hidden = planFinderState.step !== 3;
+    planFinderError.textContent = '';
+  }
+
+  function setPlanFinderVisible(visible){
+    planFinder.hidden = !visible;
+    planFinderOpen.hidden = visible;
+    planFinderOpen.setAttribute('aria-expanded', visible ? 'true' : 'false');
+    modeSection.hidden = visible;
+    configLayout.hidden = visible;
+
+    if (!visible) renderModeSections();
+  }
+
+  function focusPlanFinderStep(){
+    window.requestAnimationFrame(() => {
+      const activeStep = planFinderSteps.find(fieldset => !fieldset.hidden);
+      const firstControl = activeStep ? activeStep.querySelector('button, input') : null;
+      if (firstControl) firstControl.focus({ preventScroll: true });
+    });
+  }
+
+  function resetPlanFinder(){
+    planFinderState.deviceId = '';
+    planFinderState.device = '';
+    planFinderState.duration = '';
+    planFinderState.durationLabel = '';
+    planFinderRequirements.value = '';
+    planFinderBudget.value = '';
+    document.querySelectorAll('[data-finder-device-id], [data-finder-duration]').forEach(choice => {
+      setPickActive(choice, false);
+    });
+    planFinderResult.hidden = true;
+    planFinderCheckout.hidden = false;
+    renderPlanFinderStep(1);
+  }
+
+  function configurePlanFinderWhatsApp(details){
+    const requirements = planFinderRequirements.value.trim() || planFinderMessages.notSpecified;
+    const budgetValue = toNumber(planFinderBudget.value);
+    const budget = budgetValue > 0 ? formatMoney(budgetValue) : planFinderMessages.notSpecified;
+    const message = planFinderText(planFinderMessages.whatsapp, {
+      device: planFinderState.device || planFinderMessages.notSpecified,
+      requirements: requirements,
+      duration: planFinderState.durationLabel || planFinderMessages.notSpecified,
+      budget: budget,
+      provider: details.provider || planFinderMessages.notSpecified,
+      plan: details.plan || planFinderMessages.notSpecified,
+      price: details.price || planFinderMessages.notSpecified
+    });
+
+    planFinderWhatsApp.href = `${planFinderWhatsAppBase}?text=${encodeURIComponent(message)}`;
+    planFinderWhatsApp.setAttribute('data-whatsapp-package', details.plan || 'plan_finder_no_match');
+    planFinderWhatsApp.setAttribute('data-whatsapp-vendor', details.vendor || 'not_applicable');
+    planFinderWhatsApp.setAttribute('data-whatsapp-currency', currency);
+    if (details.value > 0) {
+      planFinderWhatsApp.setAttribute('data-whatsapp-value', Number(details.value).toFixed(2));
+    } else {
+      planFinderWhatsApp.removeAttribute('data-whatsapp-value');
+    }
+  }
+
+  function showPlanFinderResult(details){
+    planFinderSteps.forEach(fieldset => { fieldset.hidden = true; });
+    planFinderBack.hidden = true;
+    planFinderNext.hidden = true;
+    planFinderFind.hidden = true;
+    planFinderError.textContent = '';
+    planFinderResultCopy.textContent = details.copy;
+    planFinderResultProvider.textContent = details.provider || '\u2014';
+    planFinderResultDuration.textContent = planFinderState.durationLabel || '\u2014';
+    planFinderResultDevice.textContent = planFinderState.device || '\u2014';
+    planFinderResultPrice.textContent = details.price || '\u2014';
+    planFinderCheckout.hidden = !details.package;
+    configurePlanFinderWhatsApp(details);
+    planFinderResult.hidden = false;
+    setPlanFinderVisible(true);
+    planFinderResult.focus({ preventScroll: true });
+    planFinderResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function recommendPlan(){
+    if (!planFinderState.duration) {
+      planFinderError.textContent = planFinderMessages.requiredDuration;
+      return;
+    }
+
+    const providers = Array.from(document.querySelectorAll('[data-iptv-provider]'));
+    const candidates = providers.map((provider, index) => {
+      const providerKey = provider.getAttribute('data-provider-key') || '';
+      const packageCard = findIptvPackage(providerKey, planFinderState.duration);
+      if (!packageCard) return null;
+
+      return {
+        index: index,
+        provider: provider,
+        package: packageCard,
+        price: toNumber(packageCard.getAttribute('data-price'))
+      };
+    }).filter(Boolean);
+
+    if (!candidates.length) {
+      showPlanFinderResult({
+        package: null,
+        provider: '',
+        vendor: '',
+        plan: '',
+        price: '',
+        value: 0,
+        copy: planFinderMessages.noMatch
+      });
+      return;
+    }
+
+    const budget = toNumber(planFinderBudget.value);
+    let overBudget = false;
+    let recommendation;
+
+    if (budget > 0) {
+      const withinBudget = candidates
+        .filter(candidate => candidate.price <= budget)
+        .sort((left, right) => right.price - left.price || left.index - right.index);
+      if (withinBudget.length) {
+        recommendation = withinBudget[0];
+      } else {
+        overBudget = true;
+        recommendation = candidates
+          .slice()
+          .sort((left, right) => left.price - right.price || left.index - right.index)[0];
+      }
+    } else {
+      recommendation = candidates[0];
+    }
+
+    setPackageTab('iptv', true);
+
+    const durationChoice = Array.from(document.querySelectorAll('[data-duration-choice]'))
+      .find(choice => choice.getAttribute('data-duration-choice') === planFinderState.duration);
+    if (durationChoice) durationChoice.click();
+    recommendation.provider.click();
+
+    const deviceChoice = Array.from(document.querySelectorAll('[data-device]'))
+      .find(choice => String(choice.getAttribute('data-device-id')) === String(planFinderState.deviceId));
+    if (deviceChoice) deviceChoice.click();
+
+    const selectedPackage = currentActivePackage();
+    if (!selectedPackage || !packageIdInput.value || !deviceIdInput.value) {
+      showPlanFinderResult({
+        package: null,
+        provider: '',
+        vendor: '',
+        plan: '',
+        price: '',
+        value: 0,
+        copy: planFinderMessages.noMatch
+      });
+      return;
+    }
+
+    const providerLabel = recommendation.provider.getAttribute('data-label')
+      || selectedPackage.getAttribute('data-service') || '';
+    const planLabel = selectedPackage.getAttribute('data-plan') || '';
+    const selectedPrice = toNumber(selectedPackage.getAttribute('data-price'));
+    showPlanFinderResult({
+      package: selectedPackage,
+      provider: providerLabel,
+      vendor: selectedPackage.getAttribute('data-vendor') || '',
+      plan: planLabel,
+      price: formatMoney(selectedPrice),
+      value: selectedPrice,
+      copy: overBudget ? planFinderMessages.aboveBudget : planFinderMessages.withinBudget
+    });
+  }
+
+  document.querySelectorAll('[data-finder-device-id]').forEach(choice => {
+    choice.addEventListener('click', () => {
+      document.querySelectorAll('[data-finder-device-id]').forEach(item => setPickActive(item, false));
+      setPickActive(choice, true);
+      planFinderState.deviceId = choice.getAttribute('data-finder-device-id') || '';
+      planFinderState.device = choice.getAttribute('data-finder-device') || '';
+      planFinderError.textContent = '';
+    });
+  });
+
+  document.querySelectorAll('[data-finder-duration]').forEach(choice => {
+    choice.addEventListener('click', () => {
+      document.querySelectorAll('[data-finder-duration]').forEach(item => setPickActive(item, false));
+      setPickActive(choice, true);
+      planFinderState.duration = choice.getAttribute('data-finder-duration') || '';
+      planFinderState.durationLabel = choice.getAttribute('data-label') || '';
+      planFinderError.textContent = '';
+    });
+  });
+
+  planFinderOpen.addEventListener('click', () => {
+    resetPlanFinder();
+    setPlanFinderVisible(true);
+    focusPlanFinderStep();
+    planFinder.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  planFinderClose.addEventListener('click', () => {
+    setPlanFinderVisible(false);
+    planFinderOpen.focus({ preventScroll: true });
+  });
+  planFinderBack.addEventListener('click', () => {
+    renderPlanFinderStep(planFinderState.step - 1);
+    focusPlanFinderStep();
+  });
+  planFinderNext.addEventListener('click', () => {
+    if (planFinderState.step === 1 && !planFinderState.deviceId) {
+      planFinderError.textContent = planFinderMessages.requiredDevice;
+      return;
+    }
+    renderPlanFinderStep(planFinderState.step + 1);
+    focusPlanFinderStep();
+  });
+  planFinderFind.addEventListener('click', recommendPlan);
+  planFinderRestart.addEventListener('click', () => {
+    resetPlanFinder();
+    focusPlanFinderStep();
+  });
+  planFinderCheckout.addEventListener('click', () => {
+    if (!btn.disabled) document.getElementById('configForm').requestSubmit();
+  });
 
   function syncProviderAvailability(){
     document.querySelectorAll('[data-iptv-provider]').forEach(provider => {
@@ -1021,6 +1575,8 @@
     });
   });
   setPackageTab(@json($requestedType), true);
+  resetPlanFinder();
+  setPlanFinderVisible(@json($showPlanFinder));
 
   // ---------- Deep-link support (pricing to configure) ----------
   function applyDeepLinkSelection() {
@@ -1114,6 +1670,7 @@
     if (deviceTarget && ptype !== 'reseller') deviceTarget.click();
 
     if (target && packageIdQ) setPreselectedMode(true);
+    if (@json($showPlanFinder)) setPlanFinderVisible(true);
   }
 
   if (document.readyState === 'loading') {

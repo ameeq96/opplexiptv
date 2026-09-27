@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
@@ -871,6 +872,7 @@ class HomeController extends Controller
             'total_price'       => $sellPrice,
             'expiry'            => $expiry ? $expiry->toDateString() : null,
             'notes'             => $data['notes'] ?? null,
+            'status_url'        => $this->customerOrderStatusUrl($order),
         ];
 
         try {
@@ -975,8 +977,9 @@ class HomeController extends Controller
         );
 
         return redirect()
-            ->route('thankyou')
+            ->to($this->customerOrderStatusUrl($order))
             ->with('success', __('interface.checkout.order_received', ['id' => $order->id]))
+            ->with('checkout_completed', true)
             ->with('order_summary', array_merge([
                 'id' => $order->id,
                 'package_id' => $order->package_id,
@@ -991,6 +994,15 @@ class HomeController extends Controller
                 'currency' => $order->currency,
                 'payment_method' => $order->payment_method,
             ], $summary));
+    }
+
+    private function customerOrderStatusUrl(Order $order): string
+    {
+        return URL::temporarySignedRoute(
+            'orders.status',
+            now()->addDays(90),
+            ['orderId' => $order->getKey()]
+        );
     }
 
     private function assertCheckoutReplayOwnership(

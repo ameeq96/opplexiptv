@@ -177,6 +177,7 @@
     }
     .checkout-step1-page .pay-option input { flex: 0 0 auto; margin: 4px 2px 0 0 !important; }
     .checkout-step1-page .pay-option label { min-width: 0; margin: 0; cursor: pointer; }
+    .checkout-step1-page .pay-option__content { flex: 1 1 auto; min-width: 0; }
     .checkout-step1-page .payment-method-group + .payment-method-group { margin-top: 20px; }
     .checkout-step1-page .payment-method-group__heading {
         display: flex;
@@ -214,10 +215,35 @@
     .checkout-step1-page .pay-option__detail {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        gap: 4px;
+    }
+    .checkout-step1-page .pay-option__detail-label {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
         gap: 4px;
     }
     .checkout-step1-page .pay-option__detail strong { color: #334155; }
     .checkout-step1-page .pay-option__detail span { overflow-wrap: anywhere; }
+    .checkout-step1-page .payment-copy-button {
+        display: inline-flex;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        background: #fff;
+        color: #334155;
+        cursor: pointer;
+    }
+    .checkout-step1-page .payment-copy-button:hover,
+    .checkout-step1-page .payment-copy-button:focus-visible {
+        border-color: #059669;
+        color: #047857;
+    }
     .checkout-step1-page .payment-proof-notice {
         display: flex;
         align-items: flex-start;
@@ -715,17 +741,29 @@
                                     <input class="mr-2 mt-1" type="radio" name="paymethod"
                                         id="{{ $paymentMethodId }}" value="{{ $paymentMethod['value'] }}"
                                         form="checkoutForm" @checked($selectedPaymentMethod === $paymentMethod['value'])>
-                                    <label class="w-100" for="{{ $paymentMethodId }}">
-                                        <div class="font-weight-bold">{{ $paymentMethod['title'] }}</div>
+                                    <div class="pay-option__content">
+                                        <label class="w-100" for="{{ $paymentMethodId }}">
+                                            <span class="font-weight-bold">{{ $paymentMethod['title'] }}</span>
+                                        </label>
                                         <div class="pay-option__details">
                                             @foreach ($paymentMethod['details'] as $detailLabel => $detailValue)
                                                 <div class="pay-option__detail">
-                                                    <strong>{{ $detailLabel }}:</strong>
-                                                    <span dir="auto">{{ $detailValue }}</span>
+                                                    <label class="pay-option__detail-label" for="{{ $paymentMethodId }}">
+                                                        <strong>{{ $detailLabel }}:</strong>
+                                                        <span dir="auto">{{ $detailValue }}</span>
+                                                    </label>
+                                                    @if (strtolower($detailLabel) !== 'name')
+                                                        <button type="button" class="payment-copy-button"
+                                                            data-copy-payment-value="{{ $detailValue }}"
+                                                            aria-label="{{ __('messages.checkout_copy_value', ['label' => $detailLabel]) }}"
+                                                            title="{{ __('messages.checkout_copy_value', ['label' => $detailLabel]) }}">
+                                                            <i class="fa fa-copy" aria-hidden="true"></i>
+                                                        </button>
+                                                    @endif
                                                 </div>
                                             @endforeach
                                         </div>
-                                    </label>
+                                    </div>
                                 </div>
                             @endforeach
                         </div>
@@ -733,8 +771,9 @@
 
                     <div class="payment-proof-notice">
                         <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                        <strong>Deposit the payment, then send the payment screenshot to us on WhatsApp.</strong>
+                        <strong>{{ __('messages.checkout_payment_proof_notice') }}</strong>
                     </div>
+                    <span class="sr-only" id="paymentCopyStatus" aria-live="polite"></span>
 
                     <div class="checkout-policy mb-3">
                         <input type="checkbox" name="policy_accepted" id="policyAccepted" value="1"
@@ -780,7 +819,7 @@
                     </fieldset>
 
                     <button type="submit" form="checkoutForm" class="btn btn-primary place-order checkout-mobile-action">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
                         {{ __('messages.checkout_place_order_btn') }}
                     </button>
                 </section>
@@ -793,6 +832,48 @@
         const checkoutCurrency = @json(config('services.app.default_currency', 'USD'));
         const checkoutItem = @json($checkoutTrackingItem);
         const checkoutDraftUrl = @json(route('checkout.draft'));
+
+        async function copyPaymentValue(value) {
+            if (navigator.clipboard && window.isSecureContext) {
+                try {
+                    await navigator.clipboard.writeText(value);
+                    return;
+                } catch (error) {}
+            }
+
+            const helper = document.createElement('textarea');
+            helper.value = value;
+            helper.setAttribute('readonly', '');
+            helper.style.position = 'fixed';
+            helper.style.opacity = '0';
+            document.body.appendChild(helper);
+            try {
+                helper.select();
+                const copied = document.execCommand('copy');
+                if (!copied) throw new Error('Copy failed');
+            } finally {
+                helper.remove();
+            }
+        }
+
+        document.querySelectorAll('[data-copy-payment-value]').forEach(function(button) {
+            button.addEventListener('click', async function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                try {
+                    await copyPaymentValue(button.getAttribute('data-copy-payment-value') || '');
+                    const icon = button.querySelector('i');
+                    const status = document.getElementById('paymentCopyStatus');
+                    if (icon) icon.className = 'fa fa-check';
+                    if (status) status.textContent = @json(__('messages.checkout_copied'));
+                    window.setTimeout(function() {
+                        if (icon) icon.className = 'fa fa-copy';
+                        if (status) status.textContent = '';
+                    }, 1600);
+                } catch (error) {}
+            });
+        });
 
         Array.prototype.slice.call(document.querySelectorAll('input[name="paymethod"]'))
             .forEach(function(r) {

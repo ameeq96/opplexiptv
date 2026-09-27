@@ -1,5 +1,12 @@
 @php
     $layoutIsRtl = $isRtl ?? in_array(app()->getLocale(), ['ar', 'ur'], true);
+    $layoutSuppressDisruptivePrompts = request()->routeIs(
+        'configure',
+        'checkout',
+        'thankyou',
+        'orders.status',
+        'order-status*'
+    );
 @endphp
 <!DOCTYPE html>
 <html class="loading" lang="{{ app()->getLocale() }}"
@@ -11,9 +18,6 @@
 </head>
 
 <body>
-
-    @include('includes.contact-number-notice')
-
     @include('includes.whatsapp-lead-capture')
 
     @include('includes.header')
@@ -26,9 +30,15 @@
 
     @include('includes.cookie-consent')
 
+    @unless ($layoutSuppressDisruptivePrompts)
+        @include('includes.contact-number-notice')
+    @endunless
+
     @include('includes.voice-assistant')
 
-    @include('includes.recent-purchase-popup')
+    @unless ($layoutSuppressDisruptivePrompts)
+        @include('includes.recent-purchase-popup')
+    @endunless
 
     <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
         class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp">

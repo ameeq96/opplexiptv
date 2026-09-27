@@ -35,7 +35,8 @@
 
     $routeName = optional(Request::route())->getName();
     $isMoviesRoute = $routeName === 'movies';
-    $noindexRoutes = ['redirect.ad', 'checkout', 'configure', 'thankyou', 'digital.checkout.show', 'digital.cart.index'];
+    $isPrivateOrderStatus = $routeName === 'orders.status';
+    $noindexRoutes = ['redirect.ad', 'checkout', 'configure', 'thankyou', 'orders.status', 'digital.checkout.show', 'digital.cart.index'];
 
     $pageParam = (int) request()->input('page', 1);
     $hasSearch = trim((string) request()->input('search', '')) !== '';
@@ -61,11 +62,13 @@
         $canonical = LaravelLocalization::getLocalizedURL($locale, $currentAbs, [], true);
     }
     $canonical = preg_replace('~(?<!:)//+~', '/', $canonical);
-
     $metaTitle = $pageMetaTitle ?? $metaTitle;
     $metaDescription = $pageMetaDescription ?? $metaDescription;
     $keywords = $pageMetaKeywords ?? $keywords;
     $canonical = $pageCanonical ?? $canonical;
+    if ($isPrivateOrderStatus) {
+        $canonical = route('home');
+    }
     $ogTitle = $pageOgTitle ?? $metaTitle;
     $ogDescription = $pageOgDescription ?? $metaDescription;
     $ogImage = $pageMetaImage ?? v('images/background/7.webp');
@@ -128,7 +131,10 @@
 <title>{{ $metaTitle }}</title>
 <meta name="description" content="{{ $metaDescription }}">
 
-@if ($shouldNoindex)
+@if ($isPrivateOrderStatus)
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="referrer" content="no-referrer">
+@elseif ($shouldNoindex)
     <meta name="robots" content="noindex,follow">
 @else
     <meta name="robots" content="index,follow">
@@ -1268,7 +1274,9 @@
 @endforeach
 <meta name="facebook-domain-verification" content="rnsb3eqoa06k3dwo6gyqpphgu2imo2" />
 
-<link rel="canonical" href="{{ $canonical }}">
+@unless ($isPrivateOrderStatus)
+    <link rel="canonical" href="{{ $canonical }}">
+@endunless
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $ogTitle }}">
@@ -1276,23 +1284,25 @@
 <meta name="twitter:image" content="{{ $ogImage }}">
 <meta name="twitter:image:alt" content="{{ $ogTitle }}">
 
-@foreach ($supported as $lg)
+@unless ($isPrivateOrderStatus)
+    @foreach ($supported as $lg)
+        @php
+            $href =
+                $lg === $default && $hideDefault
+                    ? LaravelLocalization::getNonLocalizedURL($currentAbs)
+                    : LaravelLocalization::getLocalizedURL($lg, $currentAbs, [], true);
+            $href = preg_replace('~(?<!:)//+~', '/', $href);
+        @endphp
+        <link rel="alternate" hreflang="{{ $lg }}" href="{{ $href }}" />
+    @endforeach
     @php
-        $href =
-            $lg === $default && $hideDefault
-                ? LaravelLocalization::getNonLocalizedURL($currentAbs)
-                : LaravelLocalization::getLocalizedURL($lg, $currentAbs, [], true);
-        $href = preg_replace('~(?<!:)//+~', '/', $href);
+        $xDefaultHref = $hideDefault
+            ? LaravelLocalization::getNonLocalizedURL($currentAbs)
+            : LaravelLocalization::getLocalizedURL($default, $currentAbs, [], true);
+        $xDefaultHref = preg_replace('~(?<!:)//+~', '/', $xDefaultHref);
     @endphp
-    <link rel="alternate" hreflang="{{ $lg }}" href="{{ $href }}" />
-@endforeach
-@php
-    $xDefaultHref = $hideDefault
-        ? LaravelLocalization::getNonLocalizedURL($currentAbs)
-        : LaravelLocalization::getLocalizedURL($default, $currentAbs, [], true);
-    $xDefaultHref = preg_replace('~(?<!:)//+~', '/', $xDefaultHref);
-@endphp
-<link rel="alternate" hreflang="x-default" href="{{ $xDefaultHref }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ $xDefaultHref }}" />
+@endunless
 
 {{-- Structured data: site-wide brand entity graph (Organization + WebSite) --}}
 {!! jsonld(seo()->globalGraph($footer['socials'] ?? [])) !!}
@@ -1371,6 +1381,7 @@
         var gaId = @json(config('services.google.analytics_id'));
         var clarityId = @json(config('services.clarity.project_id'));
         var pixelIds = @json(array_values($fbPixels));
+        var isPrivatePage = @json($isPrivateOrderStatus);
         var loaded = { ga: false, clarity: false, pixel: false };
 
         w.__trackingConsentVersion = consentVersion;
@@ -1386,7 +1397,7 @@
         });
 
         function hasConsent(category) {
-            return w.__trackingConsent && w.__trackingConsent[category] === true;
+            return !isPrivatePage && w.__trackingConsent && w.__trackingConsent[category] === true;
         }
 
         function loadGA() {
@@ -1604,6 +1615,7 @@
 <script>
     // --------- WhatsApp click tracking + trial CAPI beacon ---------
     (function () {
+        const isPrivatePage = @json($isPrivateOrderStatus);
         const businessWhatsAppNumber = (@json(config('services.whatsapp.number')) || '').replace(/\D/g, '');
         const eventPromotionCampaigns = @json(app(\App\Services\EventPromotionService::class)->whatsappClickCampaigns());
 
@@ -1863,6 +1875,15 @@
             const isDynamicWhatsAppButton = el.hasAttribute('data-whatsapp-button') || el.id === 'dw-copy';
             if (!isDynamicWhatsAppButton && (!href || !isWhatsApp(href))) return;
             if (!href || !isWhatsApp(href)) return;
+
+            if (isPrivatePage) {
+                if (el.tagName !== 'A') {
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    window.open(href, '_blank', 'noopener');
+                }
+                return;
+            }
 
             href = withEventPromotion(baseHref);
             if (el.tagName === 'A') {

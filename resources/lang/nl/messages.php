@@ -494,7 +494,7 @@ return [
   'checkout_badge_encryption'        => '256-bits versleuteling',
 
   'checkout_complete_title'          => 'Controleer en verstuur je bestelling',
-  'checkout_complete_sub'            => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp',
+  'checkout_complete_sub'            => 'Dien je bestelling in, upload je betalingsbewijs veilig en volg de activering.',
   'checkout_notice_single_item'      => 'Vorige artikel verwijderd. Er mag maar één product tegelijk in de winkelwagen staan.',
 
   'checkout_billing_details'         => 'Factuurgegevens',
@@ -527,7 +527,10 @@ return [
   'checkout_pay_card_desc'           => 'Kies kaartbetaling en dien je bestelling in. Ons team bevestigt vóór activering de beveiligde betaallink via WhatsApp.',
   'checkout_pay_crypto_title'        => 'Betalen met crypto',
   'checkout_pay_crypto_desc'         => 'Kies crypto en dien je bestelling in. Ons team bevestigt vóór activering de betalingsinstructies via WhatsApp.',
-  'checkout_place_order_btn'         => 'Bestelling maken en doorgaan op WhatsApp',
+  'checkout_place_order_btn'         => 'Bestelling maken en veilig doorgaan',
+  'checkout_copy_value'              => ':label kopiëren',
+  'checkout_copied'                  => 'Gekopieerd',
+  'checkout_payment_proof_notice'    => 'Upload na het aanmaken van de bestelling je betalingsbewijs veilig op de bestelstatuspagina. WhatsApp blijft beschikbaar als je hulp nodig hebt.',
 
 
   'thankyou_page' => [
@@ -552,8 +555,28 @@ return [
     'home_btn'    => 'Terug naar home',
     'support_btn' => 'Contact met support',
 
-    'footnote'    => 'Voltooi de betaling via WhatsApp om je abonnement te activeren. Heb je hulp nodig, dan begeleidt ons team je.',
+    'footnote'    => 'Betaal met de gekozen methode en upload daarna veilig een schermafbeelding van de betaling op deze pagina. WhatsApp is beschikbaar als je hulp nodig hebt.',
+    'paid_footnote' => 'Je betaling is geverifieerd. Ons team voltooit de activering en stuurt je de servicegegevens.',
     'continue_payment_whatsapp' => 'Doorgaan met betalen via WhatsApp',
+    'track_order' => 'Bestelling volgen en betalingsbewijs uploaden',
+    'status_active' => 'Actief',
+    'status_expired' => 'Verlopen',
+    'status_activation_pending' => 'Betaling geverifieerd — Activering in behandeling',
+    'status_verification_pending' => 'Bewijs ingediend — Verificatie in behandeling',
+    'timeline_title' => 'Voortgang van de bestelling',
+    'timeline_created' => 'Bestelling aangemaakt',
+    'timeline_proof' => 'Betalingsbewijs ingediend',
+    'timeline_verified' => 'Betaling geverifieerd',
+    'timeline_activated' => 'Service geactiveerd',
+    'timeline_waiting' => 'Wachten',
+    'timeline_complete' => 'Voltooid',
+    'upload_proof' => 'Upload een schermafbeelding van je betaling',
+    'upload_another_proof' => 'Upload nog een schermafbeelding van je betaling',
+    'submit_proof' => 'Betalingsbewijs veilig indienen',
+    'proof_help' => 'Alleen JPG, PNG of WebP, maximaal 5 MB. Het bestand wordt privé opgeslagen en is alleen beschikbaar voor bevoegde beheerders.',
+    'proof_received' => 'Betalingsbewijs veilig ontvangen. Ons team controleert het binnenkort.',
+    'proof_not_allowed' => 'Voor deze bestelling kan geen betalingsbewijs meer worden geüpload.',
+    'proof_limit' => 'Het maximum van drie betalingsbewijzen is al geüpload.',
     'whatsapp_payment_message' => 'Hallo, ik wil de betaling voor bestelling #:order voltooien. Pakket: :package. Bedrag: :amount. Betaalmethode: :method.',
   ],
 

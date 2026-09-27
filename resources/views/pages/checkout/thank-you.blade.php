@@ -4,9 +4,22 @@
 @section('content')
 
 @php
-    // Session se success message (checkoutStep2 se aa raha hai)
     $successMessage = session('success');
-    $orderSummary = session('order_summary');
+    $isCheckoutCompletion = (bool) session('checkout_completed', false);
+    $orderSummary = $orderSummary ?? session('order_summary');
+    $order = $order ?? null;
+    $paymentProofUploadUrl = $paymentProofUploadUrl ?? null;
+    $proofSubmittedAt = $proofSubmittedAt ?? null;
+    $proofCount = $order?->pictures?->count() ?? 0;
+    $paymentIsPaid = $order?->payment_status === 'paid';
+    $orderIsActive = in_array($order?->status, ['active', 'expired'], true);
+    $orderStatusLabel = match (true) {
+        $order?->status === 'expired' => __('messages.thankyou_page.status_expired'),
+        $orderIsActive => __('messages.thankyou_page.status_active'),
+        $paymentIsPaid => __('messages.thankyou_page.status_activation_pending'),
+        $proofCount > 0 => __('messages.thankyou_page.status_verification_pending'),
+        default => __('messages.thankyou_page.pending'),
+    };
     $whatsappPaymentUrl = null;
     $paymentMethodLabel = null;
 
@@ -46,6 +59,22 @@
         }
     }
 @endphp
+
+<style>
+  .order-status-timeline { display:grid; gap:.7rem; margin:0 auto 1.4rem; text-align:start; }
+  .order-status-step { display:grid; grid-template-columns:32px minmax(0,1fr); gap:.7rem; align-items:start; color:#64748b; }
+  .order-status-step__icon { display:flex; width:32px; height:32px; align-items:center; justify-content:center; border-radius:999px; background:#e2e8f0; color:#64748b; }
+  .order-status-step.is-complete .order-status-step__icon { background:#dcfce7; color:#15803d; }
+  .order-status-step strong { display:block; color:#334155; font-size:.9rem; }
+  .order-status-step small { display:block; margin-top:2px; }
+  .payment-proof-form { margin:0 auto 1.4rem; padding:1rem; border:1px solid #dbeafe; border-radius:.9rem; background:#f8fbff; text-align:start; }
+  .payment-proof-form label { display:block; margin-bottom:.45rem; color:#0f172a; font-weight:700; }
+  .payment-proof-form input[type="file"] { width:100%; padding:.55rem; border:1px solid #cbd5e1; border-radius:.65rem; background:#fff; }
+  .payment-proof-form button { width:100%; margin-top:.75rem; padding:.7rem 1rem; border:0; border-radius:.7rem; background:#16a34a; color:#fff; font-weight:700; }
+  .payment-proof-form small { display:block; margin-top:.45rem; color:#64748b; }
+  .payment-proof-message { margin:.75rem 0 0; color:#15803d; font-size:.86rem; font-weight:600; }
+  .payment-proof-error { margin:.45rem 0 0; color:#b91c1c; font-size:.84rem; }
+</style>
 
 <div class="thank-wrap">
   <div class="thank-card mt-5 mb-5">
@@ -97,7 +126,7 @@
       @endif
       <div class="thank-order-row">
         <span>{{ __('messages.thankyou_page.order_status') }}</span>
-        <span><strong>{{ __('messages.thankyou_page.pending') }}</strong></span>
+        <span><strong>{{ $orderStatusLabel }}</strong></span>
       </div>
       <div class="thank-order-row">
         <span>{{ __('messages.thankyou_page.delivery') }}</span>
@@ -114,8 +143,62 @@
       </div>
     </div>
 
+    @if($order)
+      <div class="order-status-timeline" aria-label="{{ __('messages.thankyou_page.timeline_title') }}">
+        <div class="order-status-step is-complete">
+          <span class="order-status-step__icon" aria-hidden="true"><i class="fa fa-check"></i></span>
+          <div>
+            <strong>{{ __('messages.thankyou_page.timeline_created') }}</strong>
+            <small>{{ $order->created_at?->locale(app()->getLocale())->isoFormat('lll') }}</small>
+          </div>
+        </div>
+        <div class="order-status-step {{ $proofCount > 0 ? 'is-complete' : '' }}">
+          <span class="order-status-step__icon" aria-hidden="true"><i class="fa {{ $proofCount > 0 ? 'fa-check' : 'fa-clock-o' }}"></i></span>
+          <div>
+            <strong>{{ __('messages.thankyou_page.timeline_proof') }}</strong>
+            <small>{{ $proofSubmittedAt ? $proofSubmittedAt->locale(app()->getLocale())->isoFormat('lll') : __('messages.thankyou_page.timeline_waiting') }}</small>
+          </div>
+        </div>
+        <div class="order-status-step {{ $paymentIsPaid ? 'is-complete' : '' }}">
+          <span class="order-status-step__icon" aria-hidden="true"><i class="fa {{ $paymentIsPaid ? 'fa-check' : 'fa-clock-o' }}"></i></span>
+          <div>
+            <strong>{{ __('messages.thankyou_page.timeline_verified') }}</strong>
+            <small>{{ $order->paid_at?->locale(app()->getLocale())->isoFormat('lll') ?? __('messages.thankyou_page.timeline_waiting') }}</small>
+          </div>
+        </div>
+        <div class="order-status-step {{ $orderIsActive ? 'is-complete' : '' }}">
+          <span class="order-status-step__icon" aria-hidden="true"><i class="fa {{ $orderIsActive ? 'fa-check' : 'fa-clock-o' }}"></i></span>
+          <div>
+            <strong>{{ __('messages.thankyou_page.timeline_activated') }}</strong>
+            <small>{{ $orderIsActive ? __('messages.thankyou_page.timeline_complete') : __('messages.thankyou_page.timeline_waiting') }}</small>
+          </div>
+        </div>
+      </div>
+
+      @if($paymentProofUploadUrl)
+        <form action="{{ $paymentProofUploadUrl }}" method="POST" enctype="multipart/form-data" class="payment-proof-form">
+          @csrf
+          <label for="paymentProof">
+            {{ $proofCount > 0 ? __('messages.thankyou_page.upload_another_proof') : __('messages.thankyou_page.upload_proof') }}
+          </label>
+          <input id="paymentProof" name="payment_proof" type="file"
+            accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" required>
+          <small>{{ __('messages.thankyou_page.proof_help') }}</small>
+          @error('payment_proof')
+            <p class="payment-proof-error" role="alert">{{ $message }}</p>
+          @enderror
+          <button type="submit"><i class="fa fa-lock" aria-hidden="true"></i> {{ __('messages.thankyou_page.submit_proof') }}</button>
+          @if($proofCount > 0)
+            <p class="payment-proof-message"><i class="fa fa-check-circle" aria-hidden="true"></i> {{ __('messages.thankyou_page.proof_received') }}</p>
+          @endif
+        </form>
+      @elseif($proofCount > 0)
+        <p class="payment-proof-message mb-3"><i class="fa fa-check-circle" aria-hidden="true"></i> {{ __('messages.thankyou_page.proof_received') }}</p>
+      @endif
+    @endif
+
     <div class="thank-actions">
-      @if($whatsappPaymentUrl)
+      @if($whatsappPaymentUrl && !$paymentIsPaid)
         <a href="{{ $whatsappPaymentUrl }}" class="thank-btn-primary" id="whatsappPaymentLink"
           target="_blank" rel="noopener noreferrer"
           data-whatsapp-click
@@ -139,30 +222,14 @@
     </div>
 
     <div class="thank-footnote">
-      {{ __('messages.thankyou_page.footnote') }}
+      {{ $paymentIsPaid ? __('messages.thankyou_page.paid_footnote') : __('messages.thankyou_page.footnote') }}
     </div>
   </div>
 </div>
 
-@if($orderSummary)
+@if($orderSummary && $isCheckoutCompletion)
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const paymentLink = document.getElementById('whatsappPaymentLink');
-      let paymentRedirectTimer = null;
-
-      if (paymentLink) {
-        paymentLink.addEventListener('click', function(event) {
-          if (event.isTrusted && paymentRedirectTimer) {
-            window.clearTimeout(paymentRedirectTimer);
-          }
-        }, { once: true });
-
-        paymentRedirectTimer = window.setTimeout(function() {
-          paymentLink.target = '_self';
-          paymentLink.click();
-        }, 300);
-      }
-
       try {
         if (typeof window.trackMarketingEvent === 'function') {
           if (typeof window.__loadConversionTracking === 'function') {

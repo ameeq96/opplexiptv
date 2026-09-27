@@ -165,7 +165,10 @@
             banner.hidden = true;
             settings.hidden = true;
             d.body.classList.remove('cookie-consent-open');
-            if (w.__activeMarketingPrompt === 'cookie-consent') w.__activeMarketingPrompt = null;
+            if (w.__activeMarketingPrompt === 'cookie-consent') {
+                w.__activeMarketingPrompt = null;
+                w.dispatchEvent(new CustomEvent('opplex:marketing-prompt-released'));
+            }
         }
 
         function choose(analytics, marketing) {

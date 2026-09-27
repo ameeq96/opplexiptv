@@ -37,7 +37,7 @@
             .pricing-trial-cta { box-shadow: 0 12px 28px rgba(223, 3, 3, .25); }
             #pricing-section .pricing-controls {
                 display: grid !important;
-                grid-template-columns: minmax(0, 1fr) auto;
+                grid-template-columns: max-content minmax(0, 1fr);
                 align-items: center !important;
                 gap: 18px;
                 margin: 30px 0 26px !important;
@@ -142,10 +142,12 @@
             }
             #pricing-section .pricing-control-actions {
                 display: flex;
+                width: 100%;
                 min-width: 0;
+                flex-wrap: wrap;
                 align-items: flex-end;
                 justify-content: flex-end;
-                justify-self: end;
+                justify-self: stretch;
                 gap: 12px;
             }
             #pricing-section .pricing-control-actions .vendor-toggle,
@@ -318,6 +320,12 @@
                 font-weight: 800;
                 white-space: nowrap;
                 transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+                text-decoration: none;
+            }
+            #pricing-section .pricing-plan-finder {
+                border-color: #bbf7d0;
+                background: #f0fdf4;
+                color: #047857;
             }
             #pricing-section .pricing-compare-button:hover {
                 transform: translateY(-1px);
@@ -982,7 +990,7 @@
                     align-self: end;
                 }
             }
-            @media (max-width: 1100px) {
+            @media (max-width: 1200px) {
                 #pricing-section .pricing-controls {
                     grid-template-columns: minmax(0, 1fr);
                 }
@@ -1387,25 +1395,19 @@
             </div>
 
             <div class="pricing-control-actions">
-                <a id="packageDetailsWhatsApp" class="pricing-share-link"
-                    href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_pricing')) }}"
-                    target="_blank" rel="noopener noreferrer"
-                    aria-label="Get package details on WhatsApp"
-                    title="Get package details on WhatsApp"
-                    data-whatsapp-click data-whatsapp-placement="pricing_package_details"
-                    data-whatsapp-intent="package_details" data-whatsapp-package="all_packages"
-                    data-whatsapp-lead-reference>
-                    <img src="{{ asset('images/whatsapp.webp') }}" width="25" height="25" alt="" aria-hidden="true">
-                    <span>Get package details on WhatsApp</span>
+                <a class="pricing-compare-button pricing-plan-finder"
+                    href="{{ route('configure', ['finder' => 1]) }}">
+                    <i class="fa fa-magic" aria-hidden="true"></i>
+                    <span>{{ __('interface.plan_finder.cta') }}</span>
                 </a>
 
                 <a id="shareAllPackages" class="pricing-share-link pricing-share-link--share"
                     href="https://api.whatsapp.com/send?text={{ rawurlencode(__('document_ui.home.pricing_aria') . "\n" . route('packages', ['direct' => 1])) }}"
                     target="_blank" rel="noopener noreferrer"
-                    aria-label="Share all package details on WhatsApp"
-                    title="Share all package details on WhatsApp"
+                    aria-label="Share selected provider packages on WhatsApp"
+                    title="Share selected provider packages on WhatsApp"
                     data-whatsapp-click data-whatsapp-placement="pricing_share_all"
-                    data-whatsapp-intent="package_share" data-whatsapp-package="all_packages">
+                    data-whatsapp-intent="package_share" data-whatsapp-package="selected_provider_packages">
                     <i class="fa fa-share-alt" aria-hidden="true"></i>
                 </a>
 
@@ -1640,6 +1642,12 @@
         const stickyProvider = mobilePricingCta?.querySelector('[data-sticky-provider]');
         const stickyPlan = mobilePricingCta?.querySelector('[data-sticky-plan]');
         const stickyBuy = mobilePricingCta?.querySelector('[data-sticky-buy]');
+        const packagesShareUrl = @json(route('packages', ['direct' => 1]));
+        const packageShareLabels = {
+            provider: @json(__('messages.checkout_provider')),
+            iptv: @json(__('messages.checkout_iptv_packages_label')),
+            reseller: @json(__('messages.checkout_reseller_packages_label'))
+        };
 
         let iptvCards = normalPackagesWrap?.querySelectorAll('.pkg-item[data-type="iptv"]') || [];
         const resellerCards = document.querySelectorAll('.pkg-item[data-type="reseller"]');
@@ -1673,8 +1681,83 @@
         const refreshIptvCards = () => {
             iptvCards = normalPackagesWrap?.querySelectorAll('.pkg-item[data-type="iptv"]') || [];
         };
-        const hasShareablePackages = () => Boolean(iptvServiceSelect?.options.length)
-            || Array.from(resellerCards).some(card => card.dataset.available !== '0');
+
+        function selectedPackageShareContext() {
+            const isReseller = Boolean(resellerToggle?.checked);
+
+            if (isReseller) {
+                const vendor = getActiveVendor(resellerVendorToggle);
+                const activeButton = resellerVendorToggle?.querySelector('.tg.active');
+
+                return {
+                    provider: cleanText(activeButton) || (vendor === 'starshare' ? 'Filex' : 'Opplex'),
+                    type: packageShareLabels.reseller,
+                    vendor: vendor,
+                    cards: Array.from(resellerCards).filter(card =>
+                        norm(card.dataset.vendor) === vendor && card.dataset.available !== '0'
+                    )
+                };
+            }
+
+            const selectedOption = iptvServiceSelect?.selectedOptions?.[0];
+            const service = selectedOption?.dataset.service || iptvServiceSelect?.value || loadedIptvService;
+
+            return {
+                provider: (selectedOption?.textContent || service || '')
+                    .replace(/^\s*★\s*/, '')
+                    .trim(),
+                type: packageShareLabels.iptv,
+                vendor: Array.from(iptvCards).find(card => norm(card.dataset.service) === norm(service))?.dataset.vendor
+                    || norm(service),
+                cards: Array.from(iptvCards).filter(card =>
+                    norm(card.dataset.service) === norm(service) && card.dataset.available !== '0'
+                )
+            };
+        }
+
+        function syncSelectedPackageShare() {
+            if (!shareAllPackages) return;
+
+            const context = selectedPackageShareContext();
+            const cards = context.cards.slice().sort((left, right) =>
+                Number(left.dataset.duration || 0) - Number(right.dataset.duration || 0)
+            );
+
+            if (!context.provider || cards.length === 0) {
+                shareAllPackages.hidden = true;
+                return;
+            }
+
+            const packageLines = cards.map(card => {
+                const plan = card.dataset.plan || cleanText(card.querySelector('.package-plan-title'));
+                const displayPrice = cleanText(
+                    card.querySelector('[data-package-price-label]')
+                    || card.querySelector('.package-plan-title span')
+                );
+                const price = displayPrice || (card.dataset.price !== undefined && card.dataset.price !== ''
+                    ? formatPackageMoney(card.dataset.price)
+                    : '');
+
+                return `• ${plan}${price ? ` — ${price}` : ''}`;
+            });
+            const message = [
+                `${packageShareLabels.provider}: ${context.provider}`,
+                context.type,
+                '',
+                ...packageLines,
+                '',
+                packagesShareUrl
+            ].join('\n');
+            const accessibleLabel = `Share ${context.provider} packages on WhatsApp`;
+
+            shareAllPackages.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+            shareAllPackages.hidden = false;
+            shareAllPackages.setAttribute('aria-label', accessibleLabel);
+            shareAllPackages.setAttribute('title', accessibleLabel);
+            shareAllPackages.setAttribute('data-whatsapp-package', `${context.provider} ${context.type}`);
+            shareAllPackages.setAttribute('data-whatsapp-vendor', context.vendor || 'not_applicable');
+            shareAllPackages.removeAttribute('data-event-promotion-base-href');
+        }
 
         function syncStickyFromCard(preferredCard = null) {
             if (!mobilePricingCta) return;
@@ -1883,7 +1966,7 @@
             return pricingSelect2Promise;
         }
 
-        if (shareAllPackages && !hasShareablePackages()) shareAllPackages.hidden = true;
+        syncSelectedPackageShare();
 
         function providerCacheKey(url) {
             return `opplex:pricing-provider:${url}`;
@@ -1915,6 +1998,10 @@
             normalPackagesWrap.setAttribute('aria-busy', loading ? 'true' : 'false');
             normalPackagesWrap.classList.toggle('is-loading', loading);
             if (iptvLoadingState) iptvLoadingState.hidden = !loading;
+            if (shareAllPackages) {
+                if (loading) shareAllPackages.hidden = true;
+                else syncSelectedPackageShare();
+            }
         }
 
         function restoreProviderSelection(service) {
@@ -2054,7 +2141,10 @@
             if (iptvNextPage) {
                 iptvNextPage.disabled = iptvPage >= totalPages;
             }
-            if (!showReseller) syncStickyFromCard();
+            if (!showReseller) {
+                syncStickyFromCard();
+                syncSelectedPackageShare();
+            }
         }
 
         function renderReseller() {
@@ -2077,9 +2167,6 @@
             }
             if (resellerVendorToggle) {
                 resellerVendorToggle.style.setProperty('display', showReseller ? 'inline-flex' : 'none', 'important');
-            }
-            if (shareAllPackages) {
-                shareAllPackages.hidden = !hasShareablePackages();
             }
             if (comparePlansButton) {
                 comparePlansButton.hidden = showReseller;
@@ -2105,6 +2192,7 @@
             }
 
             syncStickyFromCard();
+            syncSelectedPackageShare();
         }
 
         function trackVisiblePackages() {

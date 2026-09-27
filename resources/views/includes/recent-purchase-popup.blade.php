@@ -129,9 +129,36 @@
             const close = document.getElementById('recent-purchase-close');
             if (!toast || !message || !close || !Array.isArray(purchases) || purchases.length === 0) return;
 
-            try {
-                if (sessionStorage.getItem('opplex_recent_purchases_dismissed') === '1') return;
-            } catch (e) {}
+            const dismissalStorageKey = 'opplex.recentPurchasesDismissed.v1';
+            const legacyDismissalStorageKey = 'opplex_recent_purchases_dismissed';
+            const dismissalDuration = 7 * 24 * 60 * 60 * 1000;
+
+            function rememberDismissal() {
+                try {
+                    localStorage.setItem(dismissalStorageKey, JSON.stringify({
+                        expiresAt: Date.now() + dismissalDuration
+                    }));
+                } catch (e) {}
+            }
+
+            function wasDismissed() {
+                try {
+                    const dismissal = JSON.parse(localStorage.getItem(dismissalStorageKey) || 'null');
+                    if (dismissal && typeof dismissal.expiresAt === 'number' && dismissal.expiresAt > Date.now()) {
+                        return true;
+                    }
+                    localStorage.removeItem(dismissalStorageKey);
+
+                    if (sessionStorage.getItem(legacyDismissalStorageKey) === '1') {
+                        rememberDismissal();
+                        sessionStorage.removeItem(legacyDismissalStorageKey);
+                        return true;
+                    }
+                } catch (e) {}
+                return false;
+            }
+
+            if (wasDismissed()) return;
 
             let queue = shuffle(purchases.slice());
             let index = 0;
@@ -164,6 +191,10 @@
             function hide(scheduleAnother) {
                 window.clearTimeout(hideTimer);
                 toast.classList.remove('is-visible');
+                if (window.__activeMarketingPrompt === 'recent-purchase') {
+                    window.__activeMarketingPrompt = null;
+                    window.dispatchEvent(new CustomEvent('opplex:marketing-prompt-released'));
+                }
                 window.setTimeout(function () {
                     if (!toast.classList.contains('is-visible')) toast.hidden = true;
                 }, 300);
@@ -196,6 +227,7 @@
                 message.textContent = messageTemplate
                     .replace(':name', function () { return name; })
                     .replace(':package', function () { return packageName; });
+                window.__activeMarketingPrompt = 'recent-purchase';
                 toast.hidden = false;
                 window.requestAnimationFrame(function () {
                     window.requestAnimationFrame(function () {
@@ -209,9 +241,7 @@
                 stopped = true;
                 window.clearTimeout(showTimer);
                 window.clearTimeout(hideTimer);
-                try {
-                    sessionStorage.setItem('opplex_recent_purchases_dismissed', '1');
-                } catch (e) {}
+                rememberDismissal();
                 hide(false);
             });
 

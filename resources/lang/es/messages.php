@@ -495,7 +495,7 @@ return [
   'checkout_badge_encryption'        => 'Cifrado de 256 bits',
 
   'checkout_complete_title'          => 'Revisa y envía tu pedido',
-  'checkout_complete_sub'            => 'Envía tu pedido y continúa el pago con nuestro equipo por WhatsApp',
+  'checkout_complete_sub'            => 'Envía tu pedido, sube el comprobante de pago de forma segura y sigue la activación.',
   'checkout_notice_single_item'      => 'El artículo anterior fue eliminado. Solo se permite un producto en el carrito a la vez.',
 
   'checkout_billing_details'         => 'Detalles de facturación',
@@ -528,7 +528,10 @@ return [
   'checkout_pay_card_desc'           => 'Elige tarjeta y envía tu pedido. Nuestro equipo confirmará el enlace de pago seguro por WhatsApp antes de la activación.',
   'checkout_pay_crypto_title'        => 'Pago con criptomonedas',
   'checkout_pay_crypto_desc'         => 'Elige criptomonedas y envía tu pedido. Nuestro equipo confirmará las instrucciones de pago por WhatsApp antes de la activación.',
-  'checkout_place_order_btn'         => 'Crear pedido y continuar en WhatsApp',
+  'checkout_place_order_btn'         => 'Crear pedido y continuar de forma segura',
+  'checkout_copy_value'              => 'Copiar :label',
+  'checkout_copied'                  => 'Copiado',
+  'checkout_payment_proof_notice'    => 'Después de crear el pedido, sube tu comprobante de pago de forma segura desde la página de seguimiento del pedido. WhatsApp seguirá disponible si necesitas ayuda.',
 
 
   'thankyou_page' => [
@@ -553,8 +556,28 @@ return [
     'home_btn'    => 'Volver al inicio',
     'support_btn' => 'Contactar con soporte',
 
-    'footnote'    => 'Completa el pago por WhatsApp para activar tu suscripción. Si necesitas ayuda, nuestro equipo te orientará.',
+    'footnote'    => 'Paga con el método seleccionado y sube de forma segura una captura del pago en esta página. WhatsApp está disponible si necesitas ayuda.',
+    'paid_footnote' => 'Tu pago está verificado. Nuestro equipo completará la activación y te enviará los datos del servicio.',
     'continue_payment_whatsapp' => 'Continuar el pago por WhatsApp',
+    'track_order' => 'Seguir pedido y subir comprobante de pago',
+    'status_active' => 'Activo',
+    'status_expired' => 'Vencido',
+    'status_activation_pending' => 'Pago verificado — Activación pendiente',
+    'status_verification_pending' => 'Comprobante enviado — Verificación pendiente',
+    'timeline_title' => 'Progreso del pedido',
+    'timeline_created' => 'Pedido creado',
+    'timeline_proof' => 'Comprobante de pago enviado',
+    'timeline_verified' => 'Pago verificado',
+    'timeline_activated' => 'Servicio activado',
+    'timeline_waiting' => 'En espera',
+    'timeline_complete' => 'Completado',
+    'upload_proof' => 'Sube una captura de tu pago',
+    'upload_another_proof' => 'Sube otra captura del pago',
+    'submit_proof' => 'Enviar comprobante de pago de forma segura',
+    'proof_help' => 'Solo JPG, PNG o WebP, hasta 5 MB. El archivo se guarda de forma privada y solo está disponible para administradores autorizados.',
+    'proof_received' => 'Comprobante de pago recibido de forma segura. Nuestro equipo lo verificará en breve.',
+    'proof_not_allowed' => 'Ya no se puede subir un comprobante de pago para este pedido.',
+    'proof_limit' => 'Ya se ha alcanzado el máximo de tres comprobantes de pago.',
     'whatsapp_payment_message' => 'Hola, quiero completar el pago del pedido #:order. Paquete: :package. Importe: :amount. Método de pago: :method.',
   ],
 

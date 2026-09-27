@@ -201,6 +201,9 @@
         }
 
         function openNotice() {
+            if (w.__activeMarketingPrompt && w.__activeMarketingPrompt !== 'contact-number-notice') {
+                return false;
+            }
             previousFocus = d.activeElement;
             notice.hidden = false;
             d.body.classList.add('contact-number-notice-open');
@@ -208,6 +211,7 @@
             w.requestAnimationFrame(function () {
                 notice.querySelector('.contact-number-notice__close')?.focus();
             });
+            return true;
         }
 
         function closeNotice() {
@@ -223,9 +227,16 @@
             d.body.classList.remove('contact-number-notice-open');
             if (w.__activeMarketingPrompt === 'contact-number-notice') {
                 w.__activeMarketingPrompt = null;
+                w.dispatchEvent(new CustomEvent('opplex:marketing-prompt-released'));
             }
             w.dispatchEvent(new CustomEvent('contact-number-notice:closed'));
             if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+        }
+
+        function openNoticeWhenAvailable() {
+            if (wasDismissed()) return;
+            if (openNotice()) return;
+            w.addEventListener('opplex:marketing-prompt-released', openNoticeWhenAvailable, { once: true });
         }
 
         notice.querySelectorAll('[data-contact-number-notice-close]').forEach(function (element) {
@@ -236,6 +247,6 @@
             if (event.key === 'Escape' && !notice.hidden) closeNotice();
         });
 
-        if (!wasDismissed()) openNotice();
+        openNoticeWhenAvailable();
     })(window, document);
 </script>
