@@ -96,7 +96,7 @@ class BlogController extends Controller
         ));
     }
 
-    public function show(string $slug)
+    public function show(string $slug, BlogCoverImageService $coverImages)
     {
         $locale = app()->getLocale();
 
@@ -115,6 +115,9 @@ class BlogController extends Controller
         }
 
         $currentTranslation = $blog->translation($translation->locale) ?? $translation;
+        $articleCoverImage = $blog->cover_image
+            ? $coverImages->featured($blog->cover_image)
+            : null;
 
         $related = Blog::published()
             ->where('id', '!=', $blog->id)
@@ -165,6 +168,7 @@ class BlogController extends Controller
         return view('blogs.show', compact(
             'blog',
             'currentTranslation',
+            'articleCoverImage',
             'related',
             'pageMetaTitle',
             'pageMetaDescription',

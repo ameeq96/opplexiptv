@@ -31,8 +31,17 @@
     ];
 @endphp
 
+@push('preloads')
+    @if ($articleCoverImage)
+        <link rel="preload" as="image" href="{{ $articleCoverImage['src'] }}"
+            imagesrcset="{{ $articleCoverImage['srcset'] }}"
+            imagesizes="(min-width: 850px) 820px, calc(100vw - 30px)"
+            fetchpriority="high">
+    @endif
+@endpush
+
 @push('styles')
-    @vite('resources/css/blogs.css')
+    <style>{!! file_get_contents(public_path('css/blogs.css')) !!}</style>
 @endpush
 
 @section('jsonld')
@@ -113,12 +122,20 @@
                 </header>
 
                 <figure class="blog-article__cover">
-                    @if ($blog->cover_image)
+                    @if ($articleCoverImage)
+                        <img src="{{ $articleCoverImage['src'] }}"
+                            srcset="{{ $articleCoverImage['srcset'] }}"
+                            sizes="(min-width: 850px) 820px, calc(100vw - 30px)"
+                            width="{{ $articleCoverImage['width'] }}"
+                            height="{{ $articleCoverImage['height'] }}"
+                            alt="{{ $currentTranslation->title }}"
+                            fetchpriority="high" decoding="sync">
+                    @elseif ($blog->cover_image)
                         <img src="{{ asset(Storage::url($blog->cover_image)) }}" alt="{{ $currentTranslation->title }}"
-                            decoding="async">
+                            fetchpriority="high" decoding="async">
                     @else
                         <img src="{{ asset('images/placeholder.webp') }}" alt="{{ $currentTranslation->title }}"
-                            decoding="async">
+                            fetchpriority="high" decoding="async">
                     @endif
                 </figure>
 

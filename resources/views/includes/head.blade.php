@@ -99,10 +99,19 @@
     ];
 
     $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
-    $pageTitleCriticalRoutes = ['about', 'contact', 'reseller-panel', 'pricing', 'shop', 'blogs.index'];
+    $pageTitleCriticalRoutes = ['about', 'contact', 'reseller-panel', 'pricing', 'shop', 'blogs.index', 'blogs.show'];
     $staticBelowFoldRoutes = ['about', 'reseller-panel', 'pricing'];
     $leanFontRoutes = array_merge(['packages', 'faqs'], $pageTitleCriticalRoutes, ['movies']);
+    $deferSiteCriticalCss = in_array($routeName, ['pricing', 'blogs.show'], true);
 @endphp
+
+@if ($pageTitleLcp)
+    <link rel="preload" as="image" href="{{ asset($pageTitleLcp[0]) }}" type="image/webp"
+        media="(min-width: 768px)" fetchpriority="high">
+    <link rel="preload" as="image" href="{{ asset($pageTitleLcp[1]) }}" type="image/webp"
+        media="(max-width: 767px)" fetchpriority="high">
+@endif
+@stack('preloads')
 
 @if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null))
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
@@ -124,7 +133,9 @@
     <link rel="preload" href="{{ Vite::asset('public/fonts/flaticon.woff') }}" as="font" type="font/woff" crossorigin media="(max-width: 767px)" fetchpriority="low">
     <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin media="(min-width: 768px)" fetchpriority="low">
 @endif
-@if ($isMoviesRoute)
+@if ($deferSiteCriticalCss)
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-critical.css') }}" media="print" onload="this.media='all'">
+@elseif ($isMoviesRoute)
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
 
@@ -1313,13 +1324,6 @@
 <link rel="shortcut icon" href="{{ v('images/fav-icon.webp') }}" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ v('images/apple-touch-icon.webp') }}">
 
-@if ($pageTitleLcp)
-    <link rel="preload" as="image" href="{{ asset($pageTitleLcp[0]) }}" type="image/webp"
-        media="(min-width: 768px)" fetchpriority="high">
-    <link rel="preload" as="image" href="{{ asset($pageTitleLcp[1]) }}" type="image/webp"
-        media="(max-width: 767px)" fetchpriority="high">
-@endif
-
 {{-- Keep critical CSS cacheable across pages instead of duplicating it inside every HTML response. --}}
 @if ($isMoviesRoute)
     <link rel="preload" href="{{ Vite::asset('resources/css/site-critical.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -1366,7 +1370,7 @@
 @endif
 
 <noscript>
-    @if ($isMoviesRoute)
+    @if ($isMoviesRoute || $deferSiteCriticalCss)
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-critical.css') }}">
     @endif
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-deferred.css') }}">

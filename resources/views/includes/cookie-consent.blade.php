@@ -11,7 +11,10 @@
         border-radius: 8px;
         box-shadow: 0 12px 34px rgba(11, 22, 55, .18);
         font-family: inherit;
+        visibility: hidden;
+        transform: translateY(calc(100% + 24px));
     }
+    .cc-banner.is-open { visibility: visible; transform: translateY(0); }
     .cc-banner[hidden], .cc-settings[hidden] { display: none !important; }
     .cc-inner {
         display: flex;
@@ -62,7 +65,7 @@
 </style>
 
 <section id="cookie-consent" class="cc-banner" role="region"
-    aria-label="{{ __('cookie_consent.aria_label') }}" hidden>
+    aria-label="{{ __('cookie_consent.aria_label') }}">
     <div class="cc-inner">
         <div class="cc-copy">
             <strong class="cc-title">{{ __('cookie_consent.title') }}</strong>
@@ -156,12 +159,14 @@
 
         function openBanner() {
             banner.hidden = false;
+            banner.classList.add('is-open');
             settings.hidden = true;
             d.body.classList.add('cookie-consent-open');
             w.__activeMarketingPrompt = 'cookie-consent';
         }
 
         function closeBanner() {
+            banner.classList.remove('is-open');
             banner.hidden = true;
             settings.hidden = true;
             d.body.classList.remove('cookie-consent-open');
