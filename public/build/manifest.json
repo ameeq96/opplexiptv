@@ -156,6 +156,11 @@
     "src": "resources/css/site-deferred.css",
     "isEntry": true
   },
+  "resources/css/site-page-critical.css": {
+    "file": "assets/site-page-critical-CRp_gboN.css",
+    "src": "resources/css/site-page-critical.css",
+    "isEntry": true
+  },
   "resources/js/discount-wheel.js": {
     "file": "assets/discount-wheel--LtoTsIp.js",
     "name": "discount-wheel",

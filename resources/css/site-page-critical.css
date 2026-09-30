@@ -1,0 +1,15 @@
+@import "../../public/css/bootstrap.css";
+@import "../../public/css/style.css";
+@import "../../public/css/global.css";
+@import "../../public/css/header.css";
+@import "../../public/css/font-awesome.css";
+@import "../../public/css/flaticon.css";
+@import "../../public/css/linearicons.css";
+@import "../../public/css/responsive.css";
+@import "../../public/css/fonts.css";
+@import "../../public/css/accessibility-fixes.css";
+@import "../../public/css/heading-fixes.css";
+@import "../../public/css/header-topbar.css";
+@import "../../public/css/ui-tweaks.css";
+
+.product-picture { display: contents; }

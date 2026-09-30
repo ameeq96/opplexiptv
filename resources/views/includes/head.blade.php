@@ -100,6 +100,21 @@
 
     $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
     $pageTitleCriticalRoutes = ['about', 'contact', 'reseller-panel', 'pricing', 'shop', 'blogs.index'];
+    $pageCriticalRoutes = array_merge($pageTitleCriticalRoutes, [
+        'activate',
+        'activate-info',
+        'blogs.show',
+        'faqs',
+        'iptv-subscription-service',
+        'iptv-applications',
+        'packages',
+        'privacy-policy',
+        'refund-policy',
+        'terms-of-service',
+    ]);
+    $siteCriticalEntry = in_array($routeName, $pageCriticalRoutes, true)
+        ? 'resources/css/site-page-critical.css'
+        : 'resources/css/site-critical.css';
     $staticBelowFoldRoutes = ['about', 'reseller-panel', 'pricing'];
     $leanFontRoutes = array_merge(['packages', 'faqs'], $pageTitleCriticalRoutes, ['movies']);
 @endphp
@@ -1323,9 +1338,9 @@
 
 {{-- Keep critical CSS cacheable across pages instead of duplicating it inside every HTML response. --}}
 @if ($isMoviesRoute)
-    <link rel="preload" href="{{ Vite::asset('resources/css/site-critical.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="{{ Vite::asset($siteCriticalEntry) }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 @else
-    @vite('resources/css/site-critical.css')
+    @vite($siteCriticalEntry)
 @endif
 @if ($needsBlockingCheckoutCss)
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/checkout.css') }}">
@@ -1368,7 +1383,7 @@
 
 <noscript>
     @if ($isMoviesRoute)
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-critical.css') }}">
+        <link rel="stylesheet" href="{{ Vite::asset($siteCriticalEntry) }}">
     @endif
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-deferred.css') }}">
     @if ($needsPhoneAssets)
