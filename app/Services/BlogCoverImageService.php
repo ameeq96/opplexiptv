@@ -117,15 +117,16 @@ class BlogCoverImageService
                             while (ob_get_level() > $bufferLevel) {
                                 ob_end_clean();
                             }
-                            imagedestroy($variant);
                         }
 
                         if ($encoded && is_string($webpData) && $webpData !== '') {
                             $disk->put($variantPath, $webpData);
                         }
+
+                        unset($variant);
                     }
                 } finally {
-                    imagedestroy($sourceImage);
+                    unset($sourceImage);
                 }
             }
 

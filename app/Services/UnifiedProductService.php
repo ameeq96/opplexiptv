@@ -23,7 +23,7 @@ class UnifiedProductService
         $key = 'ui:' . app()->getLocale() . ':frontend-products:v4:' . config('services.whatsapp.number');
 
         try {
-            return Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts());
+            return collect(Cache::remember($key, now()->addMinutes(30), fn () => $this->buildFrontendProducts()->all()));
         } catch (\Throwable) {
             return collect();
         }
