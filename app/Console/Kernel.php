@@ -19,19 +19,6 @@ class Kernel extends ConsoleKernel
         $schedule->command('indexnow:submit')->dailyAt('03:35');
         $schedule->command('marketing:dispatch')->everyFifteenMinutes()->withoutOverlapping();
 
-        if (config('queue.default') !== 'sync') {
-            $schedule->command('queue:work', [
-                '--stop-when-empty',
-                '--max-time' => 50,
-                '--max-jobs' => 20,
-                '--sleep' => 1,
-                '--tries' => 3,
-                '--timeout' => 40,
-                '--backoff' => 5,
-                '--memory' => 128,
-                '--no-interaction',
-            ])->everyMinute()->withoutOverlapping(5);
-        }
     }
 
     /**
