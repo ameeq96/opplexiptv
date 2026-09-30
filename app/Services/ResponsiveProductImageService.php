@@ -184,11 +184,11 @@ class ResponsiveProductImageService
                             );
                         }
                     } finally {
-                        unset($variant);
+                        imagedestroy($variant);
                     }
                 }
             } finally {
-                unset($source);
+                imagedestroy($source);
             }
         } catch (Throwable) {
             // Image optimization is best-effort and must never block an upload.
