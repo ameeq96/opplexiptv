@@ -99,10 +99,9 @@
     ];
 
     $pageTitleLcp = $pageTitleLcpBackgrounds[$routeName] ?? null;
-    $pageTitleCriticalRoutes = ['about', 'contact', 'reseller-panel', 'pricing', 'shop', 'blogs.index', 'blogs.show'];
+    $pageTitleCriticalRoutes = ['about', 'contact', 'reseller-panel', 'pricing', 'shop', 'blogs.index'];
     $staticBelowFoldRoutes = ['about', 'reseller-panel', 'pricing'];
     $leanFontRoutes = array_merge(['packages', 'faqs'], $pageTitleCriticalRoutes, ['movies']);
-    $deferSiteCriticalCss = in_array($routeName, ['pricing', 'blogs.show'], true);
 @endphp
 
 @if ($pageTitleLcp)
@@ -133,9 +132,7 @@
     <link rel="preload" href="{{ Vite::asset('public/fonts/flaticon.woff') }}" as="font" type="font/woff" crossorigin media="(max-width: 767px)" fetchpriority="low">
     <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin media="(min-width: 768px)" fetchpriority="low">
 @endif
-@if ($deferSiteCriticalCss)
-    <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-critical.css') }}" media="print" onload="this.media='all'">
-@elseif ($isMoviesRoute)
+@if ($isMoviesRoute)
     <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
 
@@ -1370,7 +1367,7 @@
 @endif
 
 <noscript>
-    @if ($isMoviesRoute || $deferSiteCriticalCss)
+    @if ($isMoviesRoute)
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-critical.css') }}">
     @endif
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/site-deferred.css') }}">
