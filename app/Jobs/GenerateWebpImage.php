@@ -56,8 +56,8 @@ class GenerateWebpImage implements ShouldQueue, ShouldBeUnique
 
             imagewebp($resized, $fullPath, $this->quality);
 
-            imagedestroy($image);
-            imagedestroy($resized);
+            unset($image, $resized);
+
         } catch (\Throwable) {
             // Silent fail; fallback images are served directly.
         }
