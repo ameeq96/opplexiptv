@@ -98,6 +98,10 @@ return [
     'discount' => [
         'phone' => $whatsappNumber,
     ],
+    'opplexify' => [
+        'url' => env('OPPLEXIFY_URL', 'https://opplexify.com'),
+        'shared_secret' => env('OPPLEXIFY_HANDOFF_SECRET'),
+    ],
     'amazon_affiliate_tag' => env('AMAZON_AFFILIATE_TAG', 'opplexstore-20'),
 
 ];

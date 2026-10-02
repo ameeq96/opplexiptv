@@ -18,7 +18,10 @@ class RedirectToNonWww
         $host = $request->getHost();
 
         if (str_starts_with($host, 'www.')) {
-            $nonWwwUrl = $request->getScheme() . '://' . substr($host, 4) . $request->getRequestUri();
+            $applicationUrl = (string) config('app.url');
+            $canonicalHost = parse_url($applicationUrl, PHP_URL_HOST) ?: substr($host, 4);
+            $canonicalScheme = parse_url($applicationUrl, PHP_URL_SCHEME) ?: $request->getScheme();
+            $nonWwwUrl = $canonicalScheme . '://' . $canonicalHost . $request->getRequestUri();
 
             return redirect()->to($nonWwwUrl, 301);
         }

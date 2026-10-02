@@ -191,6 +191,134 @@ class HomeController extends Controller
         ])->header('Cache-Control', 'private, no-store');
     }
 
+    public function purchase(Package $package)
+    {
+        abort_unless(
+            $package->active
+                && $package->is_available
+                && in_array($package->type, ['iptv', 'reseller'], true)
+                && (float) $package->price_amount > 0,
+            404
+        );
+
+        $secret = (string) config('services.opplexify.shared_secret');
+        $destination = rtrim((string) config('services.opplexify.url'), '/');
+
+        abort_if($secret === '' || filter_var($destination, FILTER_VALIDATE_URL) === false, 503);
+
+        $selection = rtrim(strtr(base64_encode(json_encode([
+            'v' => 1,
+            'package_id' => (int) $package->getKey(),
+            'exp' => now()->addMinutes(10)->timestamp,
+        ], JSON_THROW_ON_ERROR)), '+/', '-_'), '=');
+        $signature = hash_hmac('sha256', $selection, $secret);
+
+        return redirect()->away($destination . '/checkout?' . http_build_query([
+            'selection' => $selection,
+            'signature' => $signature,
+        ], '', '&', PHP_QUERY_RFC3986));
+    }
+
+    public function opplexifyCatalog(Request $request)
+    {
+        $secret = (string) config('services.opplexify.shared_secret');
+        abort_if($secret === '', 503);
+
+        $timestamp = (string) $request->header('X-Opplexify-Timestamp', '');
+        $signature = strtolower((string) $request->header('X-Opplexify-Signature', ''));
+        $signaturePayload = "GET\n/integrations/opplexify/catalog\n{$timestamp}";
+        $expectedSignature = hash_hmac('sha256', $signaturePayload, $secret);
+
+        abort_unless(
+            ctype_digit($timestamp)
+                && strlen($timestamp) <= 11
+                && abs(now()->timestamp - (int) $timestamp) <= 300
+                && preg_match('/^[a-f0-9]{64}$/', $signature) === 1
+                && hash_equals($expectedSignature, $signature),
+            401
+        );
+
+        $currency = strtoupper((string) config('services.app.default_currency', 'USD'));
+        $iptvRows = Package::query()
+            ->where('active', true)
+            ->where('type', 'iptv')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->where('is_available', true)
+            ->where('price_amount', '>', 0)
+            ->sorted()
+            ->get();
+
+        if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
+            $iptvRows = $iptvRows
+                ->reject(fn (Package $package) => $package->isDurationPlan())
+                ->values();
+        }
+
+        $annualOnlyServices = $iptvRows
+            ->filter(static fn (Package $package) => in_array(
+                'Yearly subscription only (monthly plan unavailable)',
+                $package->features ?? [],
+                true
+            ))
+            ->map(fn (Package $package) => Str::lower($this->packageServiceName($package)))
+            ->unique();
+        $iptvRows = $iptvRows
+            ->reject(fn (Package $package) => $annualOnlyServices->contains(
+                Str::lower($this->packageServiceName($package))
+            ) && (int) $package->duration_months !== 12)
+            ->values();
+
+        $resellerRows = Package::query()
+            ->where('active', true)
+            ->where('type', 'reseller')
+            ->whereIn('vendor', ['opplex', 'starshare'])
+            ->where('is_available', true)
+            ->where('price_amount', '>', 0)
+            ->sorted()
+            ->get();
+
+        $packages = $iptvRows
+            ->concat($resellerRows)
+            ->map(function (Package $package) use ($currency): array {
+                return [
+                    'id' => (int) $package->getKey(),
+                    'type' => (string) $package->type,
+                    'vendor' => (string) $package->vendor,
+                    'provider_name' => $this->packageServiceName($package),
+                    'title' => (string) $package->title,
+                    'display_price' => $package->display_price,
+                    'price_amount' => (float) $package->price_amount,
+                    'currency' => $currency,
+                    'duration_months' => $package->duration_months,
+                    'credits' => $package->credits,
+                    'features' => array_values($package->features ?? []),
+                    'badge_key' => $package->badge_key,
+                    'is_featured' => (bool) $package->is_featured,
+                    'is_available' => true,
+                    'free_trial_hours' => (int) ($package->free_trial_hours ?? 0),
+                    'instant_activation' => (bool) $package->instant_activation,
+                    'sort_order' => (int) ($package->sort_order ?? 0),
+                ];
+            })
+            ->values();
+
+        $devices = Device::query()
+            ->orderBy('name')
+            ->get(['id', 'name', 'icon'])
+            ->map(static fn (Device $device): array => [
+                'id' => (int) $device->getKey(),
+                'name' => (string) $device->name,
+                'icon' => (string) ($device->icon ?? ''),
+            ])
+            ->values();
+
+        return response()->json([
+            'data' => $packages,
+            'devices' => $devices,
+            'generated_at' => now()->toIso8601String(),
+        ])->header('Cache-Control', 'private, no-store');
+    }
+
     public function iptvSubscriptionService()
     {
         return view('pages.iptv-subscription-service', ['activeIndex' => 0]);
@@ -378,15 +506,27 @@ class HomeController extends Controller
     public function redirect(Request $request)
     {
         $target = (string) $request->query('target', '');
+        $allowedHosts = [
+            'apps.apple.com',
+            'ib.iboiptv.com',
+            'kodi.tv',
+            'play.google.com',
+            'www.videolan.org',
+        ];
+        $targetHost = strtolower((string) parse_url($target, PHP_URL_HOST));
+        $targetScheme = strtolower((string) parse_url($target, PHP_URL_SCHEME));
 
-        if (empty($target)) {
+        if (
+            !filter_var($target, FILTER_VALIDATE_URL) ||
+            $targetScheme !== 'https' ||
+            !in_array($targetHost, $allowedHosts, true)
+        ) {
             abort(404, 'Download link missing.');
         }
 
         return view('pages.redirect', [
             'isRtl'  => $this->locale->isRtl(),
             'target' => $target,
-            'adUrl'  => 'https://handhighlight.com/sgtebuerf8?key=6085cca57bba1090342bc3bcbd3ee779',
         ]);
     }
 
@@ -522,10 +662,10 @@ class HomeController extends Controller
     {
         $data = $request->validate(
             [
-                'device'       => 'nullable|string',
+                'device'       => 'nullable|string|max:100',
                 'device_id'    => 'nullable|integer|exists:devices,id',
-                'iptv_vendor'  => 'nullable|string',
-                'plan_name'    => 'required|string',
+                'iptv_vendor'  => 'nullable|string|max:100',
+                'plan_name'    => 'required|string|max:255',
                 'plan_price'   => 'required|numeric|min:0',
                 // ENUM: package | reseller
                 'package_type' => 'required|in:package,reseller',
@@ -533,13 +673,13 @@ class HomeController extends Controller
                 'package_id'   => 'required|integer|exists:packages,id',
                 'quantity'     => 'required|integer|in:1',
 
-                'email'        => 'required|email',
+                'email'        => 'required|email|max:255',
                 'first_name'   => 'required|string|max:255',
                 'last_name'    => 'required|string|max:255',
                 'phone'        => 'required|string|max:50',
-                'notes'        => 'nullable|string',
+                'notes'        => 'nullable|string|max:2000',
                 'captcha'      => 'required',
-                'coupon'       => 'nullable|string',
+                'coupon'       => 'nullable|string|max:100',
                 'paymethod'    => [
                     'required',
                     \Illuminate\Validation\Rule::in([

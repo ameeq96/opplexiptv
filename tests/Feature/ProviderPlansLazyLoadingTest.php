@@ -95,7 +95,10 @@ class ProviderPlansLazyLoadingTest extends TestCase
         $this->assertStringNotContainsString('data-service="IPTV Alfa', $html);
         $this->assertStringContainsString('Función localizada', $html);
         $this->assertStringContainsString('data-whatsapp-placement="pricing_card"', $html);
-        $this->assertStringContainsString('package_id=' . $provider->id, html_entity_decode($html));
+        $this->assertStringContainsString(
+            route('packages.purchase', ['package' => $provider->id]),
+            html_entity_decode($html)
+        );
     }
 
     public function test_legacy_duration_plans_remain_available_when_no_catalog_provider_exists(): void

@@ -1510,6 +1510,15 @@
                         $resellerTitleNoParen = (string) preg_replace('/\s*\([^)]*\)/', '', $resellerRawTitle);
                         $resellerDisplayTitle = trim((string) preg_replace('/\s*-\s*\$?\d+(?:\.\d+)?/i', '', $resellerTitleNoParen, 1));
                         $resellerAvailable = (bool) data_get($plan, 'is_available', true);
+                        $resellerPackageId = (int) data_get($plan, 'id', 0);
+                        $resellerPurchaseUrl = $resellerPackageId > 0
+                            ? URL::temporarySignedRoute('packages.purchase', now()->addMinutes(15), ['package' => $resellerPackageId])
+                            : route('configure', [
+                                'price' => $buyPrice,
+                                'ptype' => 'reseller',
+                                'plan' => $resellerDisplayTitle,
+                                'vendor' => $vendorResKey,
+                            ]);
                     @endphp
 
                     <div class="price-block reseller-price-block pkg-item d-flex flex-column justify-content-between"
@@ -1543,13 +1552,7 @@
                                 <div class="button-box button-box-2 d-flex align-items-center">
                                     @if ($resellerAvailable)
                                         <a rel="noopener"
-                                            href="{{ route('configure', [
-                                                'price' => $buyPrice,
-                                                'ptype' => 'reseller',
-                                                'plan' => $resellerDisplayTitle,
-                                                'vendor' => $vendorResKey,
-                                                'package_id' => data_get($plan, 'id'),
-                                            ]) }}"
+                                            href="{{ $resellerPurchaseUrl }}"
                                             class="theme-btn btn-style-four pricing-buy-cta" data-package-buy>
                                             <span class="txt">{{ __('messages.buy_now') }}</span>
                                         </a>

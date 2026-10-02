@@ -175,6 +175,15 @@
                 ? (int) round((($regularDurationPrice - $basePriceAmount) / $regularDurationPrice) * 100)
                 : 0;
         $promotionPercent = (int) ($activeEventPromotion['discount_percent'] ?? 0);
+        $packageId = (int) data_get($package, 'id', 0);
+        $purchaseUrl = $packageId > 0
+            ? URL::temporarySignedRoute('packages.purchase', now()->addMinutes(15), ['package' => $packageId])
+            : route('configure', [
+                'price' => $buyPrice,
+                'ptype' => 'iptv',
+                'plan' => $fullPlanTitle,
+                'vendor' => $vendorKey,
+            ]);
     @endphp
 
     <div class="price-block scroll-item pkg-item {{ data_get($package, 'is_duration_plan', false) ? 'pkg-item--duration' : 'pkg-item--'.($tierClass ?: 'standard') }}"
@@ -254,13 +263,7 @@
                 <div class="button-box package-price-button d-flex align-items-center">
                     @if ($isAvailable)
                         <a rel="noopener"
-                            href="{{ route('configure', [
-                                'price' => $buyPrice,
-                                'ptype' => 'iptv',
-                                'plan' => $fullPlanTitle,
-                                'vendor' => $vendorKey,
-                                'package_id' => data_get($package, 'id'),
-                            ]) }}"
+                            href="{{ $purchaseUrl }}"
                             class="theme-btn btn-style-four pricing-buy-cta" data-package-buy>
                             <span class="txt">{{ __('messages.buy_now') }}</span>
                         </a>

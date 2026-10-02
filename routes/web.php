@@ -223,6 +223,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
     });
 });
 
+Route::get('integrations/opplexify/catalog', [HomeController::class, 'opplexifyCatalog'])
+    ->middleware('throttle:60,1')
+    ->name('integrations.opplexify.catalog');
+
 // ---------------------------
 // Public (localized) routes
 // ---------------------------
@@ -251,6 +255,10 @@ Route::group(
         Route::get('packages/providers/{package}/plans', [HomeController::class, 'providerPlans'])
             ->whereNumber('package')
             ->name('packages.provider-plans');
+        Route::get('purchase/{package}', [HomeController::class, 'purchase'])
+            ->whereNumber('package')
+            ->middleware(['signed', 'throttle:30,1'])
+            ->name('packages.purchase');
         Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
@@ -272,8 +280,8 @@ Route::group(
         Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
         Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 
-        Route::post('send-email',     [HomeController::class, 'send'])->name('contact.send');
-        Route::post('subscribe',      [HomeController::class, 'subscribe'])->name('subscribe');
+        Route::post('send-email',     [HomeController::class, 'send'])->middleware('throttle:5,10,contact')->name('contact.send');
+        Route::post('subscribe',      [HomeController::class, 'subscribe'])->middleware('throttle:5,10,subscribe')->name('subscribe');
         Route::get('trending',        [HomeController::class, 'getTrending']);
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
 
@@ -286,7 +294,7 @@ Route::group(
         Route::post('checkout/draft',  [CheckoutDraftController::class, 'store'])
             ->middleware('throttle:20,1')
             ->name('checkout.draft');
-        Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->name('step2');
+        Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->middleware('throttle:10,1,checkout-payment')->name('step2');
         Route::get('thank-you', [HomeController::class, 'thankYou'])->name('thankyou');
         Route::get('refer/{code}', [ReferralController::class, 'capture'])
             ->where('code', '[A-Za-z0-9]+')

@@ -12,10 +12,6 @@
             </button>
         </div>
 
-        {{-- (optional) Ad network widget --}}
-        <script async data-cfasync="false" src="//handhighlight.com/cbb33e2ef96d697fc1deef53ebb64e5b/invoke.js"></script>
-        <div id="container-cbb33e2ef96d697fc1deef53ebb64e5b"></div>
-
         <noscript>
             <p class="mt-3">
                 {{ __('interface.redirect.noscript') }}
@@ -29,7 +25,6 @@
         'use strict';
 
         const TARGET = @json($target ?? '');
-        const AD_URL = @json($adUrl ?? '');
         const WAIT_SECONDS = @json(__('interface.redirect.wait_seconds', ['seconds' => ':seconds']));
         const WAIT_ONE_SECOND = @json(__('interface.redirect.wait_one_second'));
         const WAIT_MOMENT = @json(__('interface.redirect.wait_moment'));
@@ -37,24 +32,6 @@
 
         const btn = document.getElementById('clickToDownload');
         const statusText = document.getElementById('statusText');
-
-        function openInNewTab(url) {
-          try {
-            const w = window.open(url, '_blank', 'noopener');
-            if (w && !w.closed) return true;
-          } catch (e) {}
-          try {
-            const a = document.createElement('a');
-            a.href = url;
-            a.target = '_blank';
-            a.rel = 'noopener noreferrer';
-            a.style.display = 'none';
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-            return true;
-          } catch (e) { return false; }
-        }
 
         let started = false;
 
@@ -82,8 +59,6 @@
             }
             if (seconds < 0) {
               clearInterval(timer);
-
-              if (AD_URL) openInNewTab(AD_URL);
 
               statusText.textContent = REDIRECTING;
               setTimeout(() => {

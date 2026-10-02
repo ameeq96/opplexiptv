@@ -17,7 +17,7 @@ class ContactRequest extends FormRequest
             'username' => 'required|string|max:255',
             'email'    => 'required|email|max:255',
             'phone'    => 'required|string|max:255',
-            'message'  => 'required|string',
+            'message'  => 'required|string|max:5000',
             'captcha'  => 'required',
         ];
     }
