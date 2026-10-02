@@ -337,3 +337,13 @@ Route::get('/event-promotion/{delivery}/activate', EventPromotionController::cla
 Route::match(['get', 'post'], '/marketing/unsubscribe', MarketingUnsubscribeController::class)
     ->middleware('signed')
     ->name('marketing.unsubscribe');
+
+Route::post('/integrations/opplexify/orders/prepare', [\App\Http\Controllers\OpplexifyOrderController::class, 'prepare'])
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
+    ->middleware('throttle:60,1,opplexify-orders-prepare')
+    ->name('integrations.opplexify.orders.prepare');
+
+Route::post('/integrations/opplexify/orders/complete', [\App\Http\Controllers\OpplexifyOrderController::class, 'complete'])
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
+    ->middleware('throttle:60,1,opplexify-orders-complete')
+    ->name('integrations.opplexify.orders.complete');
