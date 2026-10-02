@@ -1966,6 +1966,26 @@
             return pricingSelect2Promise;
         }
 
+        function initializePricingSelect2WhenVisible() {
+            if (!iptvServiceSelect) return;
+
+            if (!('IntersectionObserver' in window) || !iptvServicePicker) {
+                window.addEventListener('load', ensurePricingSelect2, { once: true });
+                return;
+            }
+
+            const observer = new IntersectionObserver(function(entries) {
+                if (!entries.some(entry => entry.isIntersecting)) return;
+
+                observer.disconnect();
+                ensurePricingSelect2();
+            }, {
+                rootMargin: '300px 0px'
+            });
+
+            observer.observe(iptvServicePicker);
+        }
+
         syncSelectedPackageShare();
 
         function providerCacheKey(url) {
@@ -2231,7 +2251,7 @@
 
         if (iptvServiceSelect) {
             iptvServiceSelect.addEventListener('change', handleIptvServiceChange);
-            ensurePricingSelect2();
+            initializePricingSelect2WhenVisible();
         }
 
         if (comparePlansButton) {

@@ -10,7 +10,7 @@
         border: 1px solid #dce3ef;
         border-radius: 8px;
         box-shadow: 0 12px 34px rgba(11, 22, 55, .18);
-        font-family: inherit;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     .cc-banner[hidden], .cc-settings[hidden] { display: none !important; }
     .cc-inner {
@@ -29,7 +29,7 @@
         padding: 9px 13px;
         border: 1px solid #cbd4e4;
         border-radius: 6px;
-        font: 700 13px/1.2 inherit;
+        font: 700 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         letter-spacing: 0;
         cursor: pointer;
     }

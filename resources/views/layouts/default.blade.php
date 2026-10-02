@@ -18,6 +18,8 @@
 </head>
 
 <body>
+    @include('includes.cookie-consent')
+
     @include('includes.whatsapp-lead-capture')
 
     @include('includes.header')
@@ -27,8 +29,6 @@
     </div>
 
     @include('includes.footer')
-
-    @include('includes.cookie-consent')
 
     @unless ($layoutSuppressDisruptivePrompts)
         @include('includes.contact-number-notice')
