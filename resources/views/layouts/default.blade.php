@@ -41,7 +41,7 @@
     @endunless
 
     <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
-        class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp" style="display: none !important;">
+        class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp">
         <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" width="60" height="60"
             decoding="async" />
     </a>
