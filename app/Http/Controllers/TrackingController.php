@@ -246,8 +246,6 @@ class TrackingController extends Controller
 
     public function storeTawkLead(Request $request)
     {
-        abort_unless(app()->environment('local', 'testing'), 404);
-
         $data = $request->validate([
             'event_id' => ['required', 'uuid'],
             'form_type' => ['required', 'in:prechat,offline'],

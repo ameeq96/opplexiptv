@@ -41,7 +41,7 @@
     @endunless
 
     <a href="https://wa.me/{{ config('services.whatsapp.number') }}?text={{ urlencode(__('messages.whatsapp_explore')) }}" target="_blank"
-        class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp" @if (app()->environment('local')) style="display: none !important;" @endif>
+        class="whatsapp-icon" title="{{ __('document_ui.footer.contact') }} — WhatsApp" style="display: none !important;">
         <img src="{{ asset('images/whatsapp-img-small.webp') }}" alt="WhatsApp" width="60" height="60"
             decoding="async" />
     </a>
@@ -70,7 +70,6 @@
          (x-page-title) and includes (_faq-section) are all captured. --}}
     @stack('schema')
 
-    @if (app()->environment('local'))
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -185,7 +184,6 @@
             })();
         </script>
         <!--End of Tawk.to Script-->
-    @endif
 </body>
 
 </html>

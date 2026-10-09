@@ -544,7 +544,7 @@
     @include('includes.spin-popup')
 @endif
 
-<div class="scroll-to-top scroll-to-target" data-target="html" aria-label="{{ __('document_ui.footer.scroll_to_top') }}" @if (app()->environment('local')) style="left: 15px; right: auto;" @endif>
+<div class="scroll-to-top scroll-to-target" data-target="html" aria-label="{{ __('document_ui.footer.scroll_to_top') }}" style="left: 15px; right: auto;">
     <span class="fa fa-arrow-up" aria-hidden="true"></span>
 </div>
 
