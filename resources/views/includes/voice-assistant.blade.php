@@ -46,7 +46,7 @@
     data-assistant-confirm-checkout="{{ __('document_ui.assistant.confirm_checkout') }}"
     data-assistant-confirm-submit="{{ __('document_ui.assistant.confirm_submit') }}"
     data-rtl="{{ $isRtl ? '1' : '0' }}">
-    <button type="button" class="va-fab" aria-label="{{ __($vaUiPrefix . 'open_aria') }}">
+    <button type="button" class="va-fab" aria-label="{{ __($vaUiPrefix . 'open_aria') }}" @if (app()->environment('local')) style="display: none !important;" @endif>
         <span class="va-fab-icon" aria-hidden="true"><i class="fa fa-microphone"></i></span>
         <span class="va-fab-text">{{__('messages.Ask AI')}}</span>
     </button>

@@ -325,6 +325,13 @@ Route::post('/whatsapp-leads', [TrackingController::class, 'storeWhatsAppLead'])
     ->name('whatsapp.leads.store')
     ->middleware('throttle:10,1');
 
+if (app()->environment('local', 'testing')) {
+    Route::post('/tawk-leads', [TrackingController::class, 'storeTawkLead'])
+        ->name('tawk.leads.store')
+        ->middleware('throttle:10,1,tawk-leads')
+        ->block(10, 10);
+}
+
 Route::post('/tracking/consent', [TrackingConsentController::class, 'update'])
     ->middleware('throttle:20,1')
     ->name('tracking.consent');

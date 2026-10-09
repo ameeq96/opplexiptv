@@ -80,6 +80,7 @@
                         <th style="min-width: 160px;">Latest activity</th>
                         <th style="min-width: 150px;">Lead ID</th>
                         <th style="min-width: 220px;">Customer</th>
+                        <th style="min-width: 260px;">Message</th>
                         <th style="min-width: 220px;">Lead details</th>
                         <th style="min-width: 300px;">Page</th>
                         <th style="min-width: 300px;">Destination</th>
@@ -115,6 +116,9 @@
                                             +{{ $customerPhone }}
                                         </a>
                                     @endif
+                                    @if ($c->contact_email)
+                                        <div class="small">{{ $c->contact_email }}</div>
+                                    @endif
                                     @if ($c->whatsapp_contact_consented_at)
                                         <div class="small text-muted">
                                             Form consent: {{ $c->whatsapp_contact_consented_at->format('Y-m-d H:i') }}
@@ -123,6 +127,17 @@
                                             @endif
                                         </div>
                                     @endif
+                                @else
+                                    <span class="text-muted">—</span>
+                                @endif
+                            </td>
+
+                            <td class="text-start" style="max-width: 360px; overflow-wrap: anywhere;">
+                                @if ($c->message !== null && $c->message !== '')
+                                    <details>
+                                        <summary>{{ \Illuminate\Support\Str::limit($c->message, 90) }}</summary>
+                                        <div class="small mt-2" style="white-space: pre-wrap;">{{ $c->message }}</div>
+                                    </details>
                                 @else
                                     <span class="text-muted">—</span>
                                 @endif
@@ -201,7 +216,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="13" class="text-muted">No WhatsApp leads found.</td>
+                            <td colspan="14" class="text-muted">No WhatsApp leads found.</td>
                         </tr>
                     @endforelse
                 </tbody>
