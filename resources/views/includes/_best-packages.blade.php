@@ -2,7 +2,6 @@
     @once
         <style>
             .va-container { transition: opacity .2s ease, visibility .2s ease, transform .2s ease; }
-            body.pricing-in-view .whatsapp-icon,
             body.pricing-in-view:not(.va-panel-open) .va-container {
                 opacity: 0 !important;
                 visibility: hidden !important;
