@@ -39,7 +39,7 @@ class OpplexifyOrderController extends Controller
         $deviceId = isset($data['device_id']) ? (int) $data['device_id'] : null;
 
         if ($package->type === 'iptv') {
-            abort_unless($deviceId && Device::query()->whereKey($deviceId)->exists(), 422, 'A valid device is required.');
+            abort_unless($deviceId === null || Device::query()->whereKey($deviceId)->exists(), 422, 'A valid device is required.');
         } else {
             abort_if($deviceId !== null, 422, 'Reseller checkout does not accept a device.');
         }
@@ -72,7 +72,7 @@ class OpplexifyOrderController extends Controller
             $draft = CheckoutDraft::query()->whereKey($draft->id)->lockForUpdate()->firstOrFail();
             abort_unless(
                 (int) $draft->package_id === (int) $package->id
-                    && (int) $draft->device_id === (int) $deviceId,
+                    && ($deviceId === null || (int) $draft->device_id === (int) $deviceId),
                 409,
                 'Checkout reference already belongs to another selection.'
             );
@@ -167,7 +167,6 @@ class OpplexifyOrderController extends Controller
                 ->whereIn('type', ['iptv', 'reseller'])
                 ->whereIn('vendor', ['opplex', 'starshare'])
                 ->findOrFail($data['package_id']);
-            abort_if($package->type === 'iptv' && !$draft->device_id, 409, 'Prepared checkout device is no longer available.');
 
             $email = User::normalizeEmail($data['customer']['email']);
             $phone = $data['customer']['phone'] ?? null;
