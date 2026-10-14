@@ -51,7 +51,7 @@ class AuthController extends Controller
             ]);
             $request->session()->put('admin_auth_version', (int) $request->user('admin')->auth_version);
 
-            if ($request->user('admin')->two_factor_confirmed_at) {
+            if (!app()->environment('local') && $request->user('admin')->two_factor_confirmed_at) {
                 return redirect()->route('admin.two-factor.challenge');
             }
 
@@ -118,7 +118,7 @@ class AuthController extends Controller
             'admin_sensitive_confirmed_version',
         ]);
 
-        $route = $admin->two_factor_confirmed_at
+        $route = app()->environment('local') || $admin->two_factor_confirmed_at
             ? 'admin.dashboard'
             : 'admin.two-factor.settings';
 
@@ -138,7 +138,7 @@ class AuthController extends Controller
     {
         $admin = $request->user('admin');
 
-        if ($admin?->two_factor_confirmed_at
+        if (!app()->environment('local') && $admin?->two_factor_confirmed_at
             && (int) $request->session()->get('admin_two_factor_verified_id') !== (int) $admin->getAuthIdentifier()) {
             return redirect()->route('admin.two-factor.challenge');
         }

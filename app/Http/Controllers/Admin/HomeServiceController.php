@@ -99,8 +99,8 @@ class HomeServiceController extends Controller
         }
 
         $rules['icon'] = $isCreate
-            ? ['required', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048']
-            : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048'];
+            ? ['required', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048']
+            : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048'];
 
         $data = $request->validate($rules);
         $data['is_active'] = (bool) ($data['is_active'] ?? false);
@@ -135,7 +135,7 @@ class HomeServiceController extends Controller
     private function storeIcon(Request $request): string
     {
         $file = $request->file('icon');
-        $ext = $file->getClientOriginalExtension();
+        $ext = $file->extension();
         $filename = 'service-' . Str::random(8) . '-' . time() . '.' . $ext;
 
         $dest = public_path('images/icons');

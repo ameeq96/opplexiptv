@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Jobs\SendFacebookCapiEvent;
 use App\Models\Order;
 use App\Models\TrialClick;
+use App\Services\Clients\CustomerActivityService;
 use App\Services\Clients\CustomerIdentityService;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
@@ -34,7 +35,7 @@ class TrackingController extends Controller
             ->header('Pragma', 'no-cache');
     }
 
-    public function storeWhatsAppLead(Request $request, CustomerIdentityService $identity)
+    public function storeWhatsAppLead(Request $request, CustomerIdentityService $identity, CustomerActivityService $activities)
     {
         $data = $request->validate([
             'event_id' => ['required', 'uuid'],
@@ -133,6 +134,31 @@ class TrackingController extends Controller
                 }
             }
         }
+
+        $activities->record([
+            'source' => 'whatsapp',
+            'event_id' => $eventId,
+            'event_type' => 'whatsapp.contact_requested',
+            'user_id' => $user?->id,
+            'contact_name' => $normalize($data['contact_name'], 120),
+            'contact_phone' => $phone,
+            'payload_hash' => hash('sha256', json_encode($data, JSON_THROW_ON_ERROR)),
+            'occurred_at' => $consentedAt,
+            'details' => [
+                'contact_verified' => false,
+                'destination' => $this->urlWithoutQueryOrFragment($destination),
+                'page' => $this->urlWithoutQueryOrFragment($page),
+                'intent' => $intent,
+                'placement' => $placement,
+                'package' => $packageName,
+                'vendor' => $vendor,
+                'value' => $value,
+                'currency' => $currency,
+                'contact_consent' => true,
+                'consent_version' => TrialClick::WHATSAPP_CONTACT_CONSENT_VERSION,
+                'marketing_consent' => $marketingConsent,
+            ],
+        ]);
 
         $click = TrialClick::firstOrCreate(
             ['phone_normalized' => $phone],
@@ -244,7 +270,97 @@ class TrackingController extends Controller
         ], 202);
     }
 
-    public function whatsappTrial(Request $request)
+    public function storeTawkLead(Request $request, CustomerActivityService $activities)
+    {
+        $data = $request->validate([
+            'event_id' => ['required', 'uuid'],
+            'form_type' => ['required', 'in:prechat,offline'],
+            'contact_name' => ['required', 'string', 'min:2', 'max:120', 'not_regex:/[\x00-\x1F\x7F]/u'],
+            'email' => ['nullable', 'email:rfc', 'max:254'],
+            'phone' => ['required', 'string', 'max:32', 'regex:/^\+?[0-9\s().-]+$/'],
+            'message' => ['nullable', 'string', 'max:10000', 'not_regex:/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u'],
+            'page' => ['nullable', 'url:http,https', 'max:512'],
+        ]);
+
+        $phone = preg_replace('/\D+/', '', $data['phone']) ?? '';
+        if (str_starts_with($phone, '00')) {
+            $phone = substr($phone, 2);
+        }
+        if (preg_match('/^[1-9]\d{7,14}$/', $phone) !== 1) {
+            throw ValidationException::withMessages(['phone' => 'Enter a phone number with its country code in the Tawk.to form.']);
+        }
+
+        $name = trim($data['contact_name']);
+        $email = isset($data['email']) ? mb_strtolower(trim($data['email'])) : null;
+        $message = trim($data['message'] ?? '');
+        $fingerprint = hash('sha256', json_encode([$name, $email, $phone, $message, $data['form_type']]));
+        $receipts = $request->session()->get('tawk_lead_receipts', []);
+        if (isset($receipts[$data['event_id']])) {
+            if (!hash_equals($receipts[$data['event_id']], $fingerprint)) {
+                throw ValidationException::withMessages(['event_id' => 'This form submission has already been used.']);
+            }
+
+            return response()->json(['ok' => true], 202)->header('Cache-Control', 'no-store');
+        }
+
+        \Illuminate\Support\Facades\DB::transaction(function () use ($data, $phone, $name, $email, $message, $fingerprint, $activities) {
+            $activities->record([
+                'source' => 'tawk',
+                'event_id' => $data['event_id'],
+                'event_type' => 'tawk.'.$data['form_type'].'_submitted',
+                'contact_name' => $name,
+                'contact_email' => $email,
+                'contact_phone' => $phone,
+                'message' => $message !== '' ? $message : null,
+                'payload_hash' => $fingerprint,
+                'details' => [
+                    'contact_verified' => false,
+                    'form_type' => $data['form_type'],
+                    'page' => $this->urlWithoutQueryOrFragment($data['page'] ?? null),
+                ],
+            ]);
+
+            $lead = TrialClick::firstOrCreate(['phone_normalized' => $phone], [
+                'event_id' => $data['event_id'],
+                'contact_name' => $name,
+                'destination' => 'https://tawk.to',
+                'page' => $this->urlWithoutQueryOrFragment($data['page'] ?? null),
+                'intent' => 'contact',
+                'placement' => 'tawk_'.$data['form_type'],
+                'status' => 'new',
+                'consent_source' => 'website_tawk_capture',
+            ]);
+            $lead = TrialClick::query()->whereKey($lead->id)->lockForUpdate()->firstOrFail();
+            $updates = [];
+            if (!$lead->contact_name) {
+                $updates['contact_name'] = $name;
+            }
+            if ($email !== null && $email !== '') {
+                $updates['contact_email'] = $email;
+            }
+            if ($message !== '') {
+                $existing = (string) $lead->message;
+                $separator = "\n\n---\n\n";
+                if ($existing !== $message && !str_ends_with($existing, $separator.$message)) {
+                    $combined = $existing === '' ? $message : $existing.$separator.$message;
+                    if (strlen($combined) > 60000) {
+                        throw ValidationException::withMessages(['message' => 'The saved message history is full.']);
+                    }
+                    $updates['message'] = $combined;
+                }
+            }
+            if ($updates !== []) {
+                $lead->forceFill($updates)->save();
+            }
+        }, 3);
+
+        $receipts[$data['event_id']] = $fingerprint;
+        $request->session()->put('tawk_lead_receipts', array_slice($receipts, -20, null, true));
+
+        return response()->json(['ok' => true], 202)->header('Cache-Control', 'no-store');
+    }
+
+    public function whatsappTrial(Request $request, CustomerActivityService $activities)
     {
         if (!$this->hasMarketingConsent($request)) {
             return response()->json(['ok' => true, 'tracked' => false], 202);
@@ -324,6 +440,23 @@ class TrackingController extends Controller
                 }
             }
         }
+
+        $activities->record([
+            'source' => 'whatsapp',
+            'event_id' => $eventId,
+            'event_type' => 'whatsapp.payment_contact_clicked',
+            'user_id' => $userId,
+            'order_id' => $orderId,
+            'payload_hash' => hash('sha256', json_encode($data, JSON_THROW_ON_ERROR)),
+            'details' => [
+                'destination' => $this->urlWithoutQueryOrFragment($dest),
+                'page' => $this->urlWithoutQueryOrFragment($page),
+                'intent' => $intent,
+                'placement' => $placement,
+                'message_delivery_confirmed' => false,
+                'marketing_consent' => true,
+            ],
+        ]);
 
         $click = TrialClick::firstOrCreate(
             ['event_id' => $eventId],

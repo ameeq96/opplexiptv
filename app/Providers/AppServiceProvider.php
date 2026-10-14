@@ -25,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
     {
         require_once app_path('Helpers/helpers.php');
         Schema::defaultStringLength(191);
+        \App\Models\Order::observe(\App\Observers\CustomerOrderObserver::class);
 
         if (app()->environment('production')) {
             URL::forceScheme('https');

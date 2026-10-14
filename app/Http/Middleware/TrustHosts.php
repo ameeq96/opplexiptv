@@ -13,8 +13,16 @@ class TrustHosts extends Middleware
      */
     public function hosts(): array
     {
-        return [
+        $hosts = [
             $this->allSubdomainsOfApplicationUrl(),
         ];
+
+        if (app()->environment(['local', 'testing'])) {
+            $hosts[] = '^localhost$';
+            $hosts[] = '^127\.0\.0\.1$';
+            $hosts[] = '^\[::1\]$';
+        }
+
+        return $hosts;
     }
 }

@@ -26,6 +26,7 @@ class GenerateSitemap extends Command
             'home',
             'about',
             'pricing',
+            'packages',
             'iptv-subscription-service',
             'reseller-panel',
             'iptv-applications',
@@ -42,9 +43,7 @@ class GenerateSitemap extends Command
         ];
 
         // XML init - correct namespaces (note: xmlns:xhtml on root only)
-        $xml = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset/>');
-        $xml->addAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
-        $xml->addAttribute('xmlns:xhtml', 'http://www.w3.org/1999/xhtml');
+        $xml = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>');
 
         foreach ($namedRoutes as $routeName) {
             if (!Route::has($routeName)) {
@@ -89,26 +88,26 @@ class GenerateSitemap extends Command
             $canonicalLoc = in_array($defaultLocale, $locales, true) ? $defaultLocale : $locales[0];
             $canonicalUrl = $cluster[$canonicalLoc] ?? reset($cluster);
 
-            // <url> node
-            $urlNode = $xml->addChild('url');
-            $urlNode->addChild('loc', htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'));
-            $urlNode->addChild('lastmod', now()->toAtomString());
-            $urlNode->addChild('changefreq', $routeName === 'home' ? 'daily' : 'weekly');
-            $urlNode->addChild('priority', $routeName === 'home' ? '1.0' : '0.8');
+            foreach ($cluster as $loc) {
+                $urlNode = $xml->addChild('url');
+                $urlNode->addChild('loc', htmlspecialchars($loc, ENT_QUOTES, 'UTF-8'));
+                $urlNode->addChild('changefreq', $routeName === 'home' ? 'daily' : 'weekly');
+                $urlNode->addChild('priority', $routeName === 'home' ? '1.0' : '0.8');
 
-            // xhtml:link alternates (no per-tag xmlns attributes!)
-            foreach ($cluster as $lg => $href) {
-                $link = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
-                $link->addAttribute('rel', 'alternate');
-                $link->addAttribute('hreflang', $lg);
-                $link->addAttribute('href', $href);
+                // xhtml:link alternates (no per-tag xmlns attributes!)
+                foreach ($cluster as $lg => $href) {
+                    $link = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
+                    $link->addAttribute('rel', 'alternate');
+                    $link->addAttribute('hreflang', $lg);
+                    $link->addAttribute('href', $href);
+                }
+
+                // x-default -> canonical
+                $xdef = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
+                $xdef->addAttribute('rel', 'alternate');
+                $xdef->addAttribute('hreflang', 'x-default');
+                $xdef->addAttribute('href', $canonicalUrl);
             }
-
-            // x-default -> canonical
-            $xdef = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
-            $xdef->addAttribute('rel', 'alternate');
-            $xdef->addAttribute('hreflang', 'x-default');
-            $xdef->addAttribute('href', $canonicalUrl);
         }
 
         // Dynamic, DB-driven URLs (canonical only). Wrapped so a missing DB
@@ -124,7 +123,7 @@ class GenerateSitemap extends Command
         return self::SUCCESS;
     }
 
-    /** Add published blog posts (using the default-locale slug as canonical). */
+    /** Add published blog translations with their own localized URLs. */
     private function addBlogPosts(\SimpleXMLElement $xml, string $defaultLocale): void
     {
         if (!$this->hasTable('blogs') || !$this->hasTable('blog_translations') || !Route::has('blogs.show')) {
@@ -141,22 +140,62 @@ class GenerateSitemap extends Command
             return;
         }
 
+        $locales = array_keys(config('laravellocalization.supportedLocales') ?? ['en' => []]);
+        $hideDefault = (bool) (config('laravellocalization.hideDefaultLocaleInURL') ?? false);
+
         foreach ($blogs as $blog) {
-            $translation = optional($blog->translations)->firstWhere('locale', $defaultLocale)
-                ?? optional($blog->translations)->first();
+            $cluster = [];
+            $lastmods = [];
+            foreach ($locales as $locale) {
+                $translation = $blog->translations->firstWhere('locale', $locale);
+                if (!$translation || empty($translation->slug)) {
+                    continue;
+                }
 
-            $slug = $translation->slug ?? null;
-            if (!$slug) {
+                $base = route('blogs.show', ['slug' => $translation->slug]);
+                $href = $locale === $defaultLocale && $hideDefault
+                    ? LaravelLocalization::getNonLocalizedURL($base)
+                    : LaravelLocalization::getLocalizedURL($locale, $base, [], true);
+                $loc = $this->withoutQueryAndFragment(preg_replace('~(?<!:)//+~', '/', $href));
+                if ($loc === null) {
+                    continue;
+                }
+
+                if (!empty($translation->canonical_url)
+                    && rtrim($translation->canonical_url, '/') !== rtrim($loc, '/')) {
+                    continue;
+                }
+
+                $cluster[$locale] = $loc;
+                $lastmods[$locale] = optional($translation->updated_at ?? $translation->created_at ?? $blog->published_at)->toAtomString();
+            }
+
+            if ($cluster === []) {
                 continue;
             }
 
-            $loc = $this->withoutQueryAndFragment(route('blogs.show', $slug));
-            if ($loc === null) {
-                continue;
-            }
+            $xDefaultHref = $cluster[$defaultLocale] ?? reset($cluster);
+            foreach ($cluster as $locale => $loc) {
+                $urlNode = $xml->addChild('url');
+                $urlNode->addChild('loc', htmlspecialchars($loc, ENT_QUOTES, 'UTF-8'));
+                if ($lastmods[$locale] !== null) {
+                    $urlNode->addChild('lastmod', $lastmods[$locale]);
+                }
+                $urlNode->addChild('changefreq', 'weekly');
+                $urlNode->addChild('priority', '0.6');
 
-            $lastmod = optional($blog->updated_at ?? $blog->published_at)->toAtomString() ?? now()->toAtomString();
-            $this->addSimpleUrl($xml, $loc, $lastmod, '0.6');
+                foreach ($cluster as $lg => $href) {
+                    $link = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
+                    $link->addAttribute('rel', 'alternate');
+                    $link->addAttribute('hreflang', $lg);
+                    $link->addAttribute('href', $href);
+                }
+
+                $xdef = $urlNode->addChild('xhtml:link', null, 'http://www.w3.org/1999/xhtml');
+                $xdef->addAttribute('rel', 'alternate');
+                $xdef->addAttribute('hreflang', 'x-default');
+                $xdef->addAttribute('href', $xDefaultHref);
+            }
         }
     }
 

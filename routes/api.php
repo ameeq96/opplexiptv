@@ -22,3 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/payments/webhook', PaymentWebhookController::class)
     ->middleware('throttle:60,1')
     ->name('payments.webhook');
+
+Route::post('/integrations/tawk/webhook', \App\Http\Controllers\TawkWebhookController::class)
+    ->middleware('throttle:60,1')
+    ->name('integrations.tawk.webhook');

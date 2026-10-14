@@ -126,6 +126,14 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('reseller-orders/bulk-delete', [PanelOrderController::class, 'bulkDelete'])->name('reseller-orders.bulkDelete');
         Route::delete('purchasing/bulk-delete', [PurchasingController::class, 'bulkDelete'])->name('purchasing.bulkDelete');
 
+        Route::get('clients/export/crm', [UserClientController::class, 'exportCrm'])->name('clients.export.crm');
+        Route::get('clients/unlinked', [UserClientController::class, 'unlinked'])->name('clients.unlinked');
+        Route::post('clients/link-activity', [UserClientController::class, 'linkActivity'])
+            ->middleware('throttle:30,1')->name('clients.link-activity');
+        Route::patch('clients/{client}/assignment', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'assign'])->name('clients.assignment');
+        Route::post('clients/{client}/notes', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeNote'])->name('clients.notes.store');
+        Route::post('clients/{client}/follow-ups', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeFollowUp'])->name('clients.follow-ups.store');
+        Route::patch('clients/{client}/follow-ups/{followUp}/complete', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'completeFollowUp'])->name('clients.follow-ups.complete');
         Route::resource('clients', UserClientController::class);
 
         Route::resource('orders', OrderController::class);
@@ -223,9 +231,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
     });
 });
 
+Route::get('integrations/opplexify/catalog', [HomeController::class, 'opplexifyCatalog'])
+    ->middleware('throttle:60,1')
+    ->name('integrations.opplexify.catalog');
+
 // ---------------------------
 // Public (localized) routes
 // ---------------------------
+Route::permanentRedirect('/index', '/');
+Route::permanentRedirect('/index.html', '/');
+
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -251,6 +266,10 @@ Route::group(
         Route::get('packages/providers/{package}/plans', [HomeController::class, 'providerPlans'])
             ->whereNumber('package')
             ->name('packages.provider-plans');
+        Route::get('purchase/{package}', [HomeController::class, 'purchase'])
+            ->whereNumber('package')
+            ->middleware(['signed', 'throttle:30,1'])
+            ->name('packages.purchase');
         Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
         Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
@@ -272,8 +291,8 @@ Route::group(
         Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
         Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 
-        Route::post('send-email',     [HomeController::class, 'send'])->name('contact.send');
-        Route::post('subscribe',      [HomeController::class, 'subscribe'])->name('subscribe');
+        Route::post('send-email',     [HomeController::class, 'send'])->middleware('throttle:5,10,contact')->name('contact.send');
+        Route::post('subscribe',      [HomeController::class, 'subscribe'])->middleware('throttle:5,10,subscribe')->name('subscribe');
         Route::get('trending',        [HomeController::class, 'getTrending']);
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
 
@@ -286,7 +305,7 @@ Route::group(
         Route::post('checkout/draft',  [CheckoutDraftController::class, 'store'])
             ->middleware('throttle:20,1')
             ->name('checkout.draft');
-        Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->name('step2');
+        Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->middleware('throttle:10,1,checkout-payment')->name('step2');
         Route::get('thank-you', [HomeController::class, 'thankYou'])->name('thankyou');
         Route::get('refer/{code}', [ReferralController::class, 'capture'])
             ->where('code', '[A-Za-z0-9]+')
@@ -317,6 +336,11 @@ Route::post('/whatsapp-leads', [TrackingController::class, 'storeWhatsAppLead'])
     ->name('whatsapp.leads.store')
     ->middleware('throttle:10,1');
 
+Route::post('/tawk-leads', [TrackingController::class, 'storeTawkLead'])
+    ->name('tawk.leads.store')
+    ->middleware('throttle:10,1,tawk-leads')
+    ->block(10, 10);
+
 Route::post('/tracking/consent', [TrackingConsentController::class, 'update'])
     ->middleware('throttle:20,1')
     ->name('tracking.consent');
@@ -329,3 +353,18 @@ Route::get('/event-promotion/{delivery}/activate', EventPromotionController::cla
 Route::match(['get', 'post'], '/marketing/unsubscribe', MarketingUnsubscribeController::class)
     ->middleware('signed')
     ->name('marketing.unsubscribe');
+
+Route::post('/integrations/opplexify/orders/prepare', [\App\Http\Controllers\OpplexifyOrderController::class, 'prepare'])
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
+    ->middleware('throttle:60,1,opplexify-orders-prepare')
+    ->name('integrations.opplexify.orders.prepare');
+
+Route::post('/integrations/opplexify/orders/complete', [\App\Http\Controllers\OpplexifyOrderController::class, 'complete'])
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
+    ->middleware('throttle:60,1,opplexify-orders-complete')
+    ->name('integrations.opplexify.orders.complete');
+
+Route::post('/integrations/opplexify/customer-events', [\App\Http\Controllers\OpplexifyOrderController::class, 'customerEvent'])
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
+    ->middleware('throttle:120,1,opplexify-customer-events')
+    ->name('integrations.opplexify.customer-events');

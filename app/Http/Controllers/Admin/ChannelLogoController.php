@@ -88,8 +88,8 @@ class ChannelLogoController extends Controller
         }
 
         $rules['image'] = $isCreate
-            ? ['required', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048']
-            : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png,svg', 'max:2048'];
+            ? ['required', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048']
+            : ['nullable', 'image', 'mimes:webp,jpg,jpeg,png', 'max:2048'];
 
         $data = $request->validate($rules);
         $data['is_active'] = (bool) ($data['is_active'] ?? false);
@@ -120,7 +120,7 @@ class ChannelLogoController extends Controller
     private function storeImage(Request $request): string
     {
         $file = $request->file('image');
-        $ext = $file->getClientOriginalExtension();
+        $ext = $file->extension();
         $filename = 'logo-' . Str::random(8) . '-' . time() . '.' . $ext;
 
         $dest = public_path('images/resource');

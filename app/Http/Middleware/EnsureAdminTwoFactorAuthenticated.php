@@ -14,7 +14,7 @@ class EnsureAdminTwoFactorAuthenticated
     public function handle(Request $request, Closure $next): Response
     {
         $admin = $request->user('admin');
-        if (!$admin) {
+        if (!$admin || app()->environment('local')) {
             return $next($request);
         }
 

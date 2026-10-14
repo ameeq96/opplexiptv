@@ -1308,6 +1308,36 @@
 <meta name="twitter:image:alt" content="{{ $ogTitle }}">
 
 @unless ($isPrivateOrderStatus)
+    @if ($routeName === 'blogs.show' && isset($blog))
+        @php
+            $blogAlternates = [];
+            foreach ($supported as $lg) {
+                $alternateTranslation = $blog->translations->firstWhere('locale', $lg);
+                if (!$alternateTranslation || empty($alternateTranslation->slug)) {
+                    continue;
+                }
+
+                $alternateBase = route('blogs.show', ['slug' => $alternateTranslation->slug]);
+                $href = $lg === $default && $hideDefault
+                    ? LaravelLocalization::getNonLocalizedURL($alternateBase)
+                    : LaravelLocalization::getLocalizedURL($lg, $alternateBase, [], true);
+                $href = preg_replace('~(?<!:)//+~', '/', $href);
+
+                if (!empty($alternateTranslation->canonical_url)
+                    && rtrim($alternateTranslation->canonical_url, '/') !== rtrim($href, '/')) {
+                    continue;
+                }
+
+                $blogAlternates[$lg] = $href;
+            }
+        @endphp
+        @if (isset($blogAlternates[$locale]))
+            @foreach ($blogAlternates as $lg => $href)
+                <link rel="alternate" hreflang="{{ $lg }}" href="{{ $href }}" />
+            @endforeach
+            <link rel="alternate" hreflang="x-default" href="{{ $blogAlternates[$default] ?? reset($blogAlternates) }}" />
+        @endif
+    @else
     @foreach ($supported as $lg)
         @php
             $href =
@@ -1325,6 +1355,7 @@
         $xDefaultHref = preg_replace('~(?<!:)//+~', '/', $xDefaultHref);
     @endphp
     <link rel="alternate" hreflang="x-default" href="{{ $xDefaultHref }}" />
+    @endif
 @endunless
 
 {{-- Structured data: site-wide brand entity graph (Organization + WebSite) --}}
@@ -1399,6 +1430,7 @@
         var pixelIds = @json(array_values($fbPixels));
         var isPrivatePage = @json($isPrivateOrderStatus);
         var loaded = { ga: false, clarity: false, pixel: false };
+        var consentLoadScheduled = false;
 
         w.__trackingConsentVersion = consentVersion;
         w.__trackingConsent = { analytics: false, marketing: false };
@@ -1478,11 +1510,22 @@
                 ad_user_data: next.marketing ? 'granted' : 'denied',
                 ad_personalization: next.marketing ? 'granted' : 'denied'
             });
-            if (next.analytics) {
-                loadGA();
-                loadClarity();
+            if ((next.analytics || next.marketing) && !consentLoadScheduled) {
+                consentLoadScheduled = true;
+                var loadConsentedScripts = function () {
+                    consentLoadScheduled = false;
+                    loadGA();
+                    loadClarity();
+                    loadFBPixel();
+                };
+                if (d.visibilityState === 'hidden') {
+                    w.setTimeout(loadConsentedScripts, 0);
+                } else {
+                    w.requestAnimationFrame(function () {
+                        w.setTimeout(loadConsentedScripts, 0);
+                    });
+                }
             }
-            if (next.marketing) loadFBPixel();
         };
 
         w.__loadConversionTracking = function () {

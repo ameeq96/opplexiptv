@@ -11,7 +11,11 @@
     <div class="admin-card" style="max-width: 620px;">
         <h4 class="mb-2">Verify it is you</h4>
         <p class="text-muted mb-4">
-            Enter your current password and a fresh authenticator code before managing admin accounts.
+            @if (app()->environment('local'))
+                Enter your current password before managing admin accounts.
+            @else
+                Enter your current password and a fresh authenticator code before managing admin accounts.
+            @endif
             This confirmation remains valid for 10 minutes.
         </p>
 
@@ -23,6 +27,7 @@
                     name="password" type="password" autocomplete="current-password" required autofocus>
                 @error('password')<div class="invalid-feedback">{{ $message }}</div>@enderror
             </div>
+            @unless (app()->environment('local'))
             <div class="mb-4">
                 <label for="sensitive-code" class="form-label">Fresh 6-digit authenticator code</label>
                 <input id="sensitive-code" class="form-control @error('code') is-invalid @enderror"
@@ -30,6 +35,7 @@
                     maxlength="6" required>
                 @error('code')<div class="invalid-feedback">{{ $message }}</div>@enderror
             </div>
+            @endunless
             <button class="btn btn-primary" type="submit">Confirm and continue</button>
         </form>
     </div>

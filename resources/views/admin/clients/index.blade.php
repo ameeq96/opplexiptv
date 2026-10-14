@@ -1,8 +1,19 @@
 @extends('admin.layouts.app')
 
-@section('page_title', 'All Clients')
+@section('page_title', 'Customers · 360')
 
 @section('content')
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <div><h3 class="mb-1">Customer 360</h3><p class="text-muted mb-0">Contacts, subscriptions, conversations and follow-ups in one place.</p></div>
+        <div class="d-flex gap-2">
+            @if (auth('admin')->user()->isOwner())
+                <a href="{{ route('admin.clients.unlinked') }}" class="btn btn-outline-primary">Review unlinked activity</a>
+            @endif
+            @if (auth('admin')->user()->hasRole('owner', 'sales'))
+                <a href="{{ route('admin.clients.export.crm', request()->only(['search', 'assigned_admin_id', 'subscription', 'payment', 'follow_up', 'source', 'consent', 'exclude_iptv'])) }}" class="btn btn-primary">Export filtered customer / order CSV</a>
+            @endif
+        </div>
+    </div>
 
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -18,11 +29,13 @@
         </div>
     @endif
 
-    @if (($unlinkedActivity['trial_clicks'] ?? 0) > 0 || ($unlinkedActivity['checkout_drafts'] ?? 0) > 0)
+    @if (array_sum($unlinkedActivity) > 0)
         <div class="alert alert-warning">
             <strong>Unlinked activity:</strong>
             {{ $unlinkedActivity['trial_clicks'] ?? 0 }} WhatsApp lead(s) and
-            {{ $unlinkedActivity['checkout_drafts'] ?? 0 }} checkout draft(s) do not have a safe client match yet.
+            {{ $unlinkedActivity['checkout_drafts'] ?? 0 }} checkout draft(s),
+            {{ $unlinkedActivity['customer_activities'] ?? 0 }} activity event(s) and
+            {{ $unlinkedActivity['customer_conversations'] ?? 0 }} conversation(s) do not have a safe client match yet.
             Ambiguous records remain separate to avoid attaching data to the wrong customer.
         </div>
     @endif
@@ -57,7 +70,25 @@
     </div>
 
     <div class="admin-card mb-4">
-        <form action="{{ route('admin.clients.index') }}" method="GET" enctype="multipart/form-data" class="admin-toolbar">
+        <form method="GET" action="{{ route('admin.clients.index') }}" class="row g-3">
+            <div class="col-md-4"><label class="form-label" for="crm-search">Name, email or phone</label><input id="crm-search" name="search" value="{{ request('search') }}" maxlength="255" class="form-control"></div>
+            <div class="col-md-4"><label class="form-label" for="crm-assignee">Assigned to</label><select id="crm-assignee" name="assigned_admin_id" class="form-select"><option value="">Everyone</option><option value="unassigned" @selected(request('assigned_admin_id') === 'unassigned')>Unassigned</option>@foreach ($admins as $admin)<option value="{{ $admin->id }}" @selected((string) request('assigned_admin_id') === (string) $admin->id)>{{ $admin->name }}</option>@endforeach</select></div>
+            <div class="col-md-4"><label class="form-label" for="crm-subscription">Subscription</label><select id="crm-subscription" name="subscription" class="form-select"><option value="">All</option>@foreach (['active' => 'Active and paid', 'expired' => 'Past end date (paid)', 'expiring' => 'Active: expires within 7 days'] as $value => $label)<option value="{{ $value }}" @selected(request('subscription') === $value)>{{ $label }}</option>@endforeach</select></div>
+            <div class="col-md-4"><label class="form-label" for="crm-payment">Payment</label><select id="crm-payment" name="payment" class="form-select"><option value="">All</option>@foreach (['paid' => 'Paid', 'unpaid' => 'Unpaid', 'test_paid' => 'Test payment'] as $value => $label)<option value="{{ $value }}" @selected(request('payment') === $value)>{{ $label }}</option>@endforeach</select></div>
+            <div class="col-md-4"><label class="form-label" for="crm-follow-up">Follow-ups</label><select id="crm-follow-up" name="follow_up" class="form-select"><option value="">All</option><option value="pending" @selected(request('follow_up') === 'pending')>Pending</option><option value="overdue" @selected(request('follow_up') === 'overdue')>Overdue</option></select></div>
+            <div class="col-md-4"><label class="form-label" for="crm-source">Captured activity source</label><select id="crm-source" name="source" class="form-select"><option value="">All</option>@foreach ($activitySources as $source)<option value="{{ $source }}" @selected(request('source') === $source)>{{ $source }}</option>@endforeach</select></div>
+            @foreach (['consent', 'exclude_iptv', 'per_page'] as $filter)
+                @if (request()->filled($filter))<input type="hidden" name="{{ $filter }}" value="{{ request($filter) }}">@endif
+            @endforeach
+            <div class="col-12 d-flex gap-2"><button class="btn btn-primary" type="submit">Apply CRM filters</button><a href="{{ route('admin.clients.index') }}" class="btn btn-outline-secondary">Reset</a></div>
+        </form>
+    </div>
+
+    <div class="admin-card mb-4">
+        <form action="{{ route('admin.clients.index') }}" method="GET" class="admin-toolbar">
+            @foreach (['assigned_admin_id', 'subscription', 'payment', 'follow_up', 'source'] as $filter)
+                @if (request()->filled($filter))<input type="hidden" name="{{ $filter }}" value="{{ request($filter) }}">@endif
+            @endforeach
             <select name="per_page" class="form-select" onchange="this.form.submit()">
                 @foreach ([10, 20, 30, 40, 100] as $size)
                     <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
@@ -71,10 +102,9 @@
 
             <button type="submit" class="btn btn-primary">Search</button>
 
-            <input type="file" name="csv_file" accept=".csv" class="form-control file-input">
-            @csrf
-            <button type="submit" formaction="{{ route('admin.clients.import') }}" class="btn btn-success"
-                onclick="event.preventDefault(); this.closest('form').submit();">
+            <input type="file" name="csv_file" accept=".csv" class="form-control file-input"
+                form="clientCsvImportForm" aria-label="Client CSV file" required>
+            <button type="submit" form="clientCsvImportForm" class="btn btn-success">
                 Import CSV
             </button>
 
@@ -103,6 +133,9 @@
                 </a>
             </div>
         </form>
+        <form id="clientCsvImportForm" action="{{ route('admin.clients.import') }}" method="POST" enctype="multipart/form-data">
+            @csrf
+        </form>
     </div>
 
 
@@ -126,6 +159,8 @@
                         </th>
                         <th>Name</th>
                         <th>Phone</th>
+                        <th>Email / assignment</th>
+                        <th>Orders / follow-ups</th>
                         <th>Country</th>
                         <th>Consent</th>
                         <th>Actions</th>
@@ -139,6 +174,8 @@
                             </td>
                             <td>{{ $client->name }}</td>
                             <td>{{ $client->phone }}</td>
+                            <td><div>{{ $client->email ?: '—' }}</div><small class="text-muted">{{ $client->assignedAdmin?->name ?: 'Unassigned' }}</small></td>
+                            <td>{{ $client->orders_count }} orders<br><span class="badge {{ $client->pending_follow_ups_count ? 'bg-warning text-dark' : 'bg-secondary' }}">{{ $client->pending_follow_ups_count }} pending follow-ups</span></td>
                             <td>{{ $client->country ?? 'N/A' }}</td>
                             <td>
                                 <span class="badge-soft {{ $client->hasMarketingConsent('email') ? 'success' : 'gray' }}">Email</span>
@@ -199,7 +236,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="7" class="text-muted">No clients found.</td>
+                            <td colspan="8" class="text-muted">No clients found.</td>
                         </tr>
                     @endforelse
                 </tbody>
@@ -216,6 +253,7 @@
 
 @endsection
 
+@push('scripts')
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('bulkDeleteForm');
@@ -294,3 +332,4 @@
         updateSelectedState();
     });
 </script>
+@endpush

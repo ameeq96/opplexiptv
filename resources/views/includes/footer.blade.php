@@ -360,8 +360,9 @@
         && !$isContactRoute
         && !$isIptvSubscriptionRoute
         && !$isAboutRoute
-        && !$isResellerPanelRoute;
-    $targetOptimizedRoutes = ['home', 'packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index', 'iptv-subscription-service'];
+        && !$isResellerPanelRoute
+        && !in_array($routeName, ['iptv-applications', 'blogs.show', 'terms-of-service', 'privacy-policy', 'refund-policy', 'activate'], true);
+    $targetOptimizedRoutes = ['home', 'packages', 'faqs', 'about', 'contact', 'reseller-panel', 'pricing', 'movies', 'shop', 'blogs.index', 'iptv-subscription-service', 'iptv-applications', 'blogs.show', 'terms-of-service', 'privacy-policy', 'refund-policy', 'activate'];
     $isTargetOptimizedRoute = in_array($routeName, $targetOptimizedRoutes, true);
     $needsJquery = $usesLegacySiteAssets;
     $needsBootstrap = $usesLegacySiteAssets;
@@ -542,10 +543,6 @@
 @if ($usesDiscountWheel)
     @include('includes.spin-popup')
 @endif
-
-<div class="scroll-to-top scroll-to-target" data-target="html" aria-label="{{ __('document_ui.footer.scroll_to_top') }}">
-    <span class="fa fa-arrow-up" aria-hidden="true"></span>
-</div>
 
 <!-- Scripts: keep order; defer ensures execution after parse (preserves order across tags) -->
 @if ($needsJquery)

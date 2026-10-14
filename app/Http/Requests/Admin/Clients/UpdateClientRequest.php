@@ -20,6 +20,7 @@ class UpdateClientRequest extends FormRequest
             'email'   => 'nullable|email|unique:users,email,' . $id,
             'phone'   => 'required|string|unique:users,phone,' . $id,
             'country' => 'nullable|string|max:100',
+            'notes'   => 'nullable|string|max:255',
         ];
     }
 }
