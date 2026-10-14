@@ -944,7 +944,7 @@
                 position: fixed;
                 z-index: 1070;
                 right: 12px;
-                bottom: 12px;
+                bottom: calc(96px + env(safe-area-inset-bottom, 0px));
                 left: 12px;
                 display: none;
                 align-items: center;
