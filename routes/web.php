@@ -126,6 +126,14 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::delete('reseller-orders/bulk-delete', [PanelOrderController::class, 'bulkDelete'])->name('reseller-orders.bulkDelete');
         Route::delete('purchasing/bulk-delete', [PurchasingController::class, 'bulkDelete'])->name('purchasing.bulkDelete');
 
+        Route::get('clients/export/crm', [UserClientController::class, 'exportCrm'])->name('clients.export.crm');
+        Route::get('clients/unlinked', [UserClientController::class, 'unlinked'])->name('clients.unlinked');
+        Route::post('clients/link-activity', [UserClientController::class, 'linkActivity'])
+            ->middleware('throttle:30,1')->name('clients.link-activity');
+        Route::patch('clients/{client}/assignment', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'assign'])->name('clients.assignment');
+        Route::post('clients/{client}/notes', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeNote'])->name('clients.notes.store');
+        Route::post('clients/{client}/follow-ups', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeFollowUp'])->name('clients.follow-ups.store');
+        Route::patch('clients/{client}/follow-ups/{followUp}/complete', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'completeFollowUp'])->name('clients.follow-ups.complete');
         Route::resource('clients', UserClientController::class);
 
         Route::resource('orders', OrderController::class);
@@ -230,6 +238,9 @@ Route::get('integrations/opplexify/catalog', [HomeController::class, 'opplexifyC
 // ---------------------------
 // Public (localized) routes
 // ---------------------------
+Route::permanentRedirect('/index', '/');
+Route::permanentRedirect('/index.html', '/');
+
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -352,3 +363,8 @@ Route::post('/integrations/opplexify/orders/complete', [\App\Http\Controllers\Op
     ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
     ->middleware('throttle:60,1,opplexify-orders-complete')
     ->name('integrations.opplexify.orders.complete');
+
+Route::post('/integrations/opplexify/customer-events', [\App\Http\Controllers\OpplexifyOrderController::class, 'customerEvent'])
+    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
+    ->middleware('throttle:120,1,opplexify-customer-events')
+    ->name('integrations.opplexify.customer-events');

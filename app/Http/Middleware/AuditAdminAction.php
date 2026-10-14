@@ -19,6 +19,8 @@ class AuditAdminAction
 
     private const SENSITIVE_READ_ROUTES = [
         'admin.clients.export.facebook',
+        'admin.clients.export.crm',
+        'admin.clients.unlinked',
         'admin.trial_clicks.export',
     ];
 

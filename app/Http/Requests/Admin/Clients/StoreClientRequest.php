@@ -18,6 +18,7 @@ class StoreClientRequest extends FormRequest
             'email'   => 'nullable|email|unique:users,email',
             'phone'   => 'required|string|unique:users,phone',
             'country' => 'nullable|string|max:100',
+            'notes'   => 'nullable|string|max:255',
         ];
     }
 }

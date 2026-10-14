@@ -1,5 +1,5 @@
-<div id="adminSidebarOverlay" data-admin-sidebar="close" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:1040;"></div>
-<aside class="admin-sidebar">
+<div id="adminSidebarOverlay" class="admin-sidebar-overlay" data-admin-sidebar="close" hidden></div>
+<aside class="admin-sidebar" id="adminSidebar" aria-label="Admin navigation">
     @php
         $adminUser = auth('admin')->user();
         $isOwner = $adminUser?->isOwner() ?? false;
@@ -8,12 +8,19 @@
         $isContent = $adminUser?->hasRole(\App\Models\Admin::ROLE_CONTENT) ?? false;
     @endphp
     <div class="admin-brand">
-        <i class="bi bi-grid"></i>
-        <span>Opplex IPTV</span>
+        <span class="admin-brand-mark"><i class="bi bi-grid-fill" aria-hidden="true"></i></span>
+        <span>Opplex IPTV<small>ADMIN WORKSPACE</small></span>
+        <button type="button" class="admin-sidebar-close d-lg-none" data-admin-sidebar="close" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
     </div>
 
-    <nav class="admin-nav">
-        <div class="nav-section">Main</div>
+    <div class="admin-nav-search" hidden>
+        <label for="adminPageSearch">Find a page</label>
+        <div><i class="bi bi-search" aria-hidden="true"></i><input type="search" id="adminPageSearch" placeholder="Orders, clients, settings…" autocomplete="off" aria-controls="adminNavigation"><button type="button" id="adminPageSearchClear" aria-label="Clear page search" hidden><i class="bi bi-x-lg" aria-hidden="true"></i></button></div>
+        <span id="adminPageSearchStatus" class="visually-hidden" role="status"></span>
+    </div>
+    <nav class="admin-nav" id="adminNavigation" aria-label="Main navigation">
+        <p class="admin-nav-empty" id="adminPageSearchEmpty" hidden>No matching pages. Try another page name.</p>
+        <div class="nav-section">Workspace</div>
         @if ($isOwner || $isSales)
             <a href="{{ route('admin.dashboard') }}" class="{{ admin_active_route('admin.dashboard') ? 'active' : '' }}">
                 <i class="bi bi-house"></i> <span>Dashboard</span>
@@ -21,7 +28,7 @@
         @endif
         @if ($isOwner || $isSales || $isSupport)
         <a href="{{ route('admin.clients.index') }}" class="{{ request()->routeIs('admin.clients.*') ? 'active' : '' }}">
-            <i class="bi bi-people"></i> <span>Clients</span>
+            <i class="bi bi-people"></i> <span>Clients</span><span class="admin-nav-tag">360</span>
         </a>
         <a href="{{ route('admin.orders.index') }}" class="{{ request()->routeIs('admin.orders.*') ? 'active' : '' }}">
             <i class="bi bi-box-seam"></i> <span>Package Orders</span>
@@ -41,6 +48,7 @@
         </a>
         @endif
         @if ($isOwner || $isContent)
+        <div class="nav-section">Content &amp; catalog</div>
         <a href="{{ route('admin.blogs.index') }}" class="{{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}">
             <i class="bi bi-journal-text"></i> <span>Blogs</span>
         </a>
@@ -93,9 +101,11 @@
         <a href="{{ route('admin.password.change') }}" class="{{ request()->routeIs('admin.password.change') ? 'active' : '' }}">
             <i class="bi bi-key"></i> <span>Change Password</span>
         </a>
+        @unless (app()->environment('local'))
         <a href="{{ route('admin.two-factor.settings') }}" class="{{ request()->routeIs('admin.two-factor.settings') ? 'active' : '' }}">
             <i class="bi bi-phone"></i> <span>Two-Factor Authentication</span>
         </a>
+        @endunless
         <form method="POST" action="{{ route('admin.logout') }}">
             @csrf
             <button type="submit" class="logout-link w-100 text-start">
@@ -103,4 +113,9 @@
             </button>
         </form>
     </nav>
+    <div class="admin-sidebar-footer">
+        <span class="admin-avatar" aria-hidden="true">{{ \Illuminate\Support\Str::upper(\Illuminate\Support\Str::substr($adminUser?->name ?? 'A', 0, 1)) }}</span>
+        <div><strong>{{ $adminUser?->name ?? 'Admin' }}</strong><small>{{ ucfirst($adminUser?->role ?? 'Admin') }} workspace</small></div>
+        <i class="bi bi-shield-check" aria-hidden="true"></i>
+    </div>
 </aside>

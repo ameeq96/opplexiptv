@@ -102,7 +102,27 @@ class BlogController extends Controller
 
         $translation = BlogTranslation::where('slug', $slug)
             ->where('locale', $locale)
-            ->firstOrFail();
+            ->first();
+
+        if (!$translation) {
+            $matches = BlogTranslation::where('slug', $slug)
+                ->whereIn('locale', array_keys(config('laravellocalization.supportedLocales', [])))
+                ->whereHas('blog', fn ($query) => $query->published())
+                ->limit(2)
+                ->get();
+
+            abort_unless($matches->count() === 1, 404);
+
+            $match = $matches->first();
+            $target = \Mcamara\LaravelLocalization\Facades\LaravelLocalization::getLocalizedURL(
+                $match->locale,
+                url('/blogs/'.rawurlencode($match->slug)),
+                [],
+                false
+            );
+
+            return redirect()->to($target, 301);
+        }
 
         $blog = Blog::with(['translations', 'author'])->findOrFail($translation->blog_id);
 

@@ -4,41 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Two-Factor Authentication | Opplex IPTV</title>
-    <style>
-        * { box-sizing: border-box; }
-        body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 20px; background: #07122e; color: #172033; font-family: Arial, sans-serif; }
-        .two-factor-card { width: min(430px, 100%); padding: 30px; background: #fff; border-radius: 18px; box-shadow: 0 24px 64px rgba(0, 0, 0, .35); }
-        h1 { margin: 0 0 8px; font-size: 25px; }
-        p { margin: 0 0 20px; color: #64748b; line-height: 1.55; }
-        label { display: block; margin-bottom: 7px; font-weight: 700; }
-        input { width: 100%; padding: 13px 14px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 18px; letter-spacing: .12em; }
-        input:focus { border-color: #2563eb; outline: 3px solid rgba(37, 99, 235, .15); }
-        button { width: 100%; margin-top: 16px; padding: 13px 16px; border: 0; border-radius: 10px; background: #e21d2b; color: #fff; font-weight: 800; cursor: pointer; }
-        .error { margin-top: 7px; color: #b91c1c; font-size: 13px; }
-        .logout { margin-top: 14px; text-align: center; }
-        .logout button { width: auto; margin: 0; padding: 0; color: #475569; background: transparent; font-weight: 600; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    @vite('resources/css/admin.css')
 </head>
-<body>
-    <main class="two-factor-card">
-        <h1>Two-factor authentication</h1>
-        <p>Enter the 6-digit code from your authenticator app, or use one unused recovery code.</p>
+<body class="admin-auth-body">
+    <main class="admin-auth-shell" aria-labelledby="admin-two-factor-title">
+        <aside class="admin-auth-aside">
+            <img class="admin-auth-brand" src="{{ asset('images/opplexiptvlogo.webp') }}"
+                alt="Opplex IPTV" width="250" height="75">
+            <div>
+                <p class="admin-auth-kicker">ACCOUNT SECURITY</p>
+                <h2>One more check.<br>Just for you.</h2>
+                <p class="admin-auth-note">An additional layer of protection for your account, your team and your customers.</p>
+            </div>
+            <p class="admin-auth-note mb-0">Never share your authentication or recovery codes.</p>
+        </aside>
+        <section class="admin-auth-main">
+            <div class="admin-auth-card">
+                <header class="mb-4">
+                    <p class="admin-auth-kicker">VERIFY YOUR IDENTITY</p>
+                    <h1 id="admin-two-factor-title">Two-factor authentication</h1>
+                    <p class="text-muted mb-0">Enter the 6-digit code from your authenticator app, or use one unused recovery code.</p>
+                </header>
 
-        <form method="POST" action="{{ route('admin.two-factor.verify') }}">
-            @csrf
-            <label for="two-factor-code">Authentication code</label>
-            <input id="two-factor-code" name="code" type="text" autocomplete="one-time-code" autocapitalize="characters"
-                maxlength="20" required autofocus aria-describedby="code-error">
-            @error('code')
-                <div class="error" id="code-error">{{ $message }}</div>
-            @enderror
-            <button type="submit">Verify and continue</button>
-        </form>
+                <form method="POST" action="{{ route('admin.two-factor.verify') }}">
+                    @csrf
+                    <div class="admin-auth-field mb-4">
+                        <label class="form-label" for="two-factor-code">Authentication code</label>
+                        <input class="form-control @error('code') is-invalid @enderror" id="two-factor-code" name="code" type="text" autocomplete="one-time-code" autocapitalize="characters"
+                            maxlength="20" required autofocus aria-describedby="code-error">
+                        @error('code')
+                            <div class="invalid-feedback" id="code-error">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <button class="btn btn-primary w-100" type="submit">Verify and continue</button>
+                </form>
 
-        <form class="logout" method="POST" action="{{ route('admin.logout') }}">
-            @csrf
-            <button type="submit">Sign in with another account</button>
-        </form>
+                <form class="mt-3" method="POST" action="{{ route('admin.logout') }}">
+                    @csrf
+                    <button class="btn btn-link text-muted w-100" type="submit">Sign in with another account</button>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

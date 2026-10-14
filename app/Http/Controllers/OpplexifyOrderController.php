@@ -152,7 +152,7 @@ class OpplexifyOrderController extends Controller
                     $this->completeDraft($draft, $order);
                 }
 
-                return ['order_id' => $order->id, 'created' => false];
+                return ['order_id' => $order->id, 'customer_id' => $order->user_id, 'created' => false];
             }
 
             abort_if($draft->completed_at, 409, 'Checkout has already been completed.');
@@ -254,8 +254,19 @@ class OpplexifyOrderController extends Controller
                 'created' => $now->toDateTimeString(),
             ]));
 
-            return ['order_id' => $order->id, 'created' => true];
+            return ['order_id' => $order->id, 'customer_id' => $order->user_id, 'created' => true];
         });
+    }
+
+    public function customerEvent(Request $request, \App\Services\Clients\OpplexifyCustomerEventService $events): JsonResponse
+    {
+        abort_if(strlen($request->getContent()) > 65536, 413, 'Event is too large.');
+        $this->authenticate($request, '/integrations/opplexify/customer-events');
+
+        return response()->json($events->receive(
+            $request->json()->all(), hash('sha256', $request->getContent()),
+            fn (string $reference): string => $this->checkoutKey($reference)
+        ))->header('Cache-Control', 'no-store');
     }
 
     private function authenticate(Request $request, string $path): void

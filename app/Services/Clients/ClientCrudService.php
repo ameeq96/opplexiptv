@@ -18,6 +18,7 @@ class ClientCrudService
             'email'   => $validated['email'] ?? null,
             'phone'   => $validated['phone'],
             'country' => $validated['country'] ?? null,
+            'notes' => $validated['notes'] ?? null,
             'password' => Hash::make('defaultpassword'),
         ];
 
@@ -42,6 +43,9 @@ class ClientCrudService
         ];
 
         $invalidatedChannels = [];
+        if (array_key_exists('notes', $validated)) {
+            $updates['notes'] = $validated['notes'];
+        }
         if ($emailChanged) {
             $updates['marketing_email_opted_out_at'] = now();
             $invalidatedChannels[] = 'email';

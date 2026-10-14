@@ -249,6 +249,7 @@
                                         @if ($waUniversal)
                                             <a href="{{ $waUniversal }}" target="_blank" rel="noopener"
                                                 class="btn btn-sm btn-outline-success wa-btn" data-id="{{ $order->id }}"
+                                                data-mark-messaged-url="{{ route('admin.orders.markOneMessaged', $order) }}"
                                                 data-android="{{ $waBusinessAndroid }}" data-web="{{ $waWeb }}">
                                                 WhatsApp
                                             </a>
@@ -391,8 +392,7 @@
 
         document.querySelectorAll('.wa-btn').forEach(btn => {
             btn.addEventListener('click', function() {
-                const id = this.dataset.id;
-                fetch(`{{ url('orders') }}/${id}/mark-messaged`, {
+                fetch(this.dataset.markMessagedUrl, {
                     method: 'POST',
                     headers: {
                         'X-CSRF-TOKEN': '{{ csrf_token() }}',
@@ -401,6 +401,11 @@
                 }).catch(() => {});
             });
         });
+
+        window.showScreenshot = function(src) {
+            const img = document.getElementById('modalScreenshot');
+            if (img) img.src = src;
+        };
 
         updateSelectedCount();
     });

@@ -207,11 +207,7 @@
                             </td>
 
                             <td>
-                                <form action="{{ route('admin.trial_clicks.destroy', $c) }}" method="POST"
-                                      onsubmit="return confirm('Delete this record?')" class="d-inline">
-                                    @csrf @method('DELETE')
-                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
-                                </form>
+                                <button type="submit" form="deleteTrial{{ $c->id }}" class="btn btn-sm btn-outline-danger">Delete</button>
                             </td>
                         </tr>
                     @empty
@@ -228,6 +224,13 @@
             Delete Selected
         </button>
     </form>
+
+    @foreach ($clicks as $c)
+        <form id="deleteTrial{{ $c->id }}" action="{{ route('admin.trial_clicks.destroy', $c) }}" method="POST"
+              onsubmit="return confirm('Delete this record?')">
+            @csrf @method('DELETE')
+        </form>
+    @endforeach
 
     <div class="mt-3 d-flex justify-content-center flex-column">
         {{ $clicks->appends(request()->query())->links('pagination::bootstrap-5') }}

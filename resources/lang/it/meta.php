@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'Diventa Rivenditore IPTV - Accesso Pannello IPTV',
-        'description' => 'Unisciti al nostro programma rivenditori IPTV per vendere liste IPTV m3u gratis e codici IPTV – pannello disponibile per Italia, Francia, Europa.',
+        'description' => 'Confronta i pacchetti di crediti Opplex e Filex per rivenditori IPTV, gestisci gli abbonamenti dei clienti e richiedi assistenza per configurare il pannello.',
         'keywords' => 'rivenditore IPTV Italia, pannello IPTV, IPTV Smarters Pro rivenditore, IPTV Extreme APK, crediti IPTV, lista IPTV Sky Italia',
     ],
     'buynow' => [

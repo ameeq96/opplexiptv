@@ -8,6 +8,9 @@ use App\Http\Requests\Admin\Clients\{
     ImportClientsRequest
 };
 use App\Models\User;
+use App\Models\Admin;
+use App\Models\CustomerActivity;
+use App\Services\Clients\CustomerIdentityService;
 use App\Services\Clients\{
     ClientQueryService,
     ClientCrudService,
@@ -16,6 +19,8 @@ use App\Services\Clients\{
 use App\Services\MarketingWorkflowService;
 use App\Traits\HelperFunction;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\Rule;
 use Nakanakaii\Countries\Countries;
 
 class UserClientController extends Controller
@@ -166,11 +171,98 @@ class UserClientController extends Controller
 
     public function index(Request $request, MarketingWorkflowService $workflows)
     {
+        $this->validateCrmFilters($request);
         $clients = $this->runIndex($this->query, $request);
         $contactUpdateEligible = $workflows->contactNumberUpdateAudienceCount();
         $unlinkedActivity = $this->query->unlinkedActivityCounts();
 
-        return view('admin.clients.index', compact('clients', 'contactUpdateEligible', 'unlinkedActivity'));
+        $admins = Admin::query()->whereIn('role', [Admin::ROLE_OWNER, Admin::ROLE_SALES, Admin::ROLE_SUPPORT])->orderBy('name')->get(['id', 'name']);
+        $activitySources = CustomerActivity::query()->distinct()->orderBy('source')->pluck('source');
+
+        return view('admin.clients.index', compact('clients', 'contactUpdateEligible', 'unlinkedActivity', 'admins', 'activitySources'));
+    }
+
+    public function exportCrm(Request $request)
+    {
+        abort_unless($request->user('admin')?->hasRole(Admin::ROLE_OWNER, Admin::ROLE_SALES), 403);
+        $this->validateCrmFilters($request);
+        $clients = User::query();
+        $this->query->applyFilters($clients, $request);
+        $rows = DB::table('users')->whereIn('users.id', $clients->select('users.id'))
+            ->leftJoin('orders', 'orders.user_id', '=', 'users.id')
+            ->select([
+                'users.id as customer_id', 'users.name', 'users.email', 'users.phone', 'users.country',
+                'users.assigned_admin_id', 'orders.id as order_id', 'orders.package', 'orders.duration',
+                'orders.buying_date', 'orders.expiry_date', 'orders.status as fulfillment_status',
+                'orders.payment_status', 'orders.paid_currency', 'orders.paid_amount',
+            ])->orderBy('users.id')->orderBy('orders.id');
+
+        return response()->streamDownload(function () use ($rows) {
+            $out = fopen('php://output', 'w');
+            fputcsv($out, ['Customer ID', 'Name', 'Email', 'Phone', 'Country', 'Assigned admin ID', 'Order ID', 'Package', 'Duration (stored value)', 'Start date', 'End date', 'Fulfillment status', 'Payment status', 'Paid currency', 'Paid amount'], ',', '"', '');
+            foreach ($rows->cursor() as $row) {
+                $cells = array_map(function ($value) {
+                    $value = (string) ($value ?? '');
+                    return preg_match('/^[\s\x00-\x1F]*[=+@-]/u', $value) ? "'" . $value : $value;
+                }, array_values((array) $row));
+                fputcsv($out, $cells, ',', '"', '');
+            }
+            fclose($out);
+        }, 'customer360-' . now()->format('Y-m-d-His') . '.csv', [
+            'Content-Type' => 'text/csv; charset=UTF-8',
+            'Cache-Control' => 'private, no-store',
+            'X-Content-Type-Options' => 'nosniff',
+        ]);
+    }
+
+    public function unlinked(Request $request, CustomerIdentityService $identity)
+    {
+        abort_unless($request->user('admin')?->isOwner(), 403);
+        $data = $request->validate([
+            'type' => ['nullable', Rule::in(array_keys(CustomerIdentityService::REVIEW_TYPES))],
+            'conversation_id' => ['nullable', 'integer', 'min:1'],
+        ]);
+        $type = $data['type'] ?? 'trial_click';
+        $records = $identity->unlinkedQuery($type)->orderBy('id')->paginate(20)->withQueryString();
+        $previews = $records->getCollection()->map(fn ($record) => $identity->previewRecord($type, $record));
+        $selectedConversation = null;
+        $unlinkedMessages = null;
+        if ($request->filled('conversation_id')) {
+            abort_unless($type === 'conversation', 422);
+            $selectedConversation = $identity->unlinkedQuery('conversation')->findOrFail($data['conversation_id']);
+            $unlinkedMessages = $selectedConversation->messages()->orderBy('sent_at')->orderBy('id')
+                ->paginate(30, ['*'], 'messages_page')->withQueryString();
+        }
+
+        return response()->view('admin.clients.unlinked', compact('type', 'records', 'previews', 'selectedConversation', 'unlinkedMessages'))
+            ->header('Cache-Control', 'private, no-store');
+    }
+
+    public function linkActivity(Request $request, CustomerIdentityService $identity)
+    {
+        abort_unless($request->user('admin')?->isOwner(), 403);
+        $data = $request->validate([
+            'type' => ['required', Rule::in(array_keys(CustomerIdentityService::REVIEW_TYPES))],
+            'record_id' => ['required', 'integer', 'min:1'],
+            'user_id' => ['required', 'integer', 'exists:users,id'],
+            'fingerprint' => ['required', 'string', 'regex:/^[a-f0-9]{64}$/'],
+            'verified' => ['required', 'accepted'],
+        ]);
+        $identity->linkReviewed($data['type'], (int) $data['record_id'], (int) $data['user_id'], $data['fingerprint'], (int) $request->user('admin')->id);
+
+        return redirect()->route('admin.clients.unlinked', ['type' => $data['type']])->with('success', 'Only the selected verified record was linked. Original contact details, payment and subscription dates were not changed.');
+    }
+
+    private function validateCrmFilters(Request $request): void
+    {
+        $request->validate([
+            'search' => ['nullable', 'string', 'max:255'],
+            'assigned_admin_id' => ['nullable', 'regex:/^(unassigned|[1-9][0-9]*)$/'],
+            'subscription' => ['nullable', Rule::in(['active', 'expired', 'expiring'])],
+            'payment' => ['nullable', Rule::in(['paid', 'unpaid', 'test_paid'])],
+            'follow_up' => ['nullable', Rule::in(['pending', 'overdue'])],
+            'source' => ['nullable', 'string', 'max:32'],
+        ]);
     }
 
     public function scheduleContactNumberUpdate(Request $request, MarketingWorkflowService $workflows)
@@ -199,12 +291,17 @@ class UserClientController extends Controller
         return view('admin.clients.create', compact('countries'));
     }
 
-    public function show(User $client)
+    public function show(Request $request, User $client)
     {
-        return view('admin.clients.show', [
-            'client' => $client,
-            ...$this->query->profile($client),
+        $request->validate([
+            'activity_source' => ['nullable', 'string', 'max:32'],
+            'conversation_id' => ['nullable', 'integer', 'min:1'],
         ]);
+
+        return response()->view('admin.clients.show', [
+            'client' => $client,
+            ...$this->query->profile($client, $request),
+        ])->header('Cache-Control', 'private, no-store');
     }
 
     public function store(StoreClientRequest $request)

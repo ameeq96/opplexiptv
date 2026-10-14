@@ -76,6 +76,10 @@ return [
             explode(',', env('PAYMENT_WEBHOOK_PROVIDERS', ''))
         ))),
     ],
+    'tawk' => [
+        'webhook_secret' => env('TAWK_WEBHOOK_SECRET', ''),
+        'property_id' => env('TAWK_PROPERTY_ID', ''),
+    ],
     'marketing' => [
         'consent_version' => env('MARKETING_CONSENT_VERSION', '2026-08'),
         'tracking_consent_version' => env('TRACKING_CONSENT_VERSION', '2026-08-29.1'),

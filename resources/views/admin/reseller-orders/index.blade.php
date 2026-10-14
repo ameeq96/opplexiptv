@@ -11,7 +11,8 @@
                 <a class="nav-link {{ ($tab ?? 'unmessaged') === 'unmessaged' ? 'active' : '' }}"
                     href="{{ route('admin.panel-orders.index', array_merge(request()->except('tab', 'page'), ['tab' => 'unmessaged'])) }}">
                     Unmessaged
-                </a </li>
+                </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link {{ ($tab ?? '') === 'messaged' ? 'active' : '' }}"
                     href="{{ route('admin.panel-orders.index', array_merge(request()->except('tab', 'page'), ['tab' => 'messaged'])) }}">
@@ -316,6 +317,7 @@
 
 @endsection
 
+@push('scripts')
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('bulkActionFormReseller');
@@ -427,3 +429,4 @@
         updateSelectedState();
     });
 </script>
+@endpush

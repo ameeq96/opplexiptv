@@ -2353,7 +2353,11 @@
             });
         });
 
+        let pricingWasMobile = isMobilePricing();
         window.addEventListener('resize', function() {
+            const pricingIsMobile = isMobilePricing();
+            if (pricingIsMobile === pricingWasMobile) return;
+            pricingWasMobile = pricingIsMobile;
             renderIptv();
             renderReseller();
             syncStickyFromCard();

@@ -848,9 +848,12 @@
             root.setAttribute('aria-hidden', 'false');
             document.body.classList.add('whatsapp-lead-capture-open');
             detectVisitorCountry();
-            ensureCountrySelect2();
             window.requestAnimationFrame(function () {
+                if (root.hidden) return;
                 nameInput.focus();
+                window.setTimeout(function () {
+                    if (!root.hidden) ensureCountrySelect2();
+                }, 0);
             });
         }
 

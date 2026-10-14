@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Jobs\SendFacebookCapiEvent;
 use App\Models\Order;
 use App\Models\TrialClick;
+use App\Services\Clients\CustomerActivityService;
 use App\Services\Clients\CustomerIdentityService;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
@@ -34,7 +35,7 @@ class TrackingController extends Controller
             ->header('Pragma', 'no-cache');
     }
 
-    public function storeWhatsAppLead(Request $request, CustomerIdentityService $identity)
+    public function storeWhatsAppLead(Request $request, CustomerIdentityService $identity, CustomerActivityService $activities)
     {
         $data = $request->validate([
             'event_id' => ['required', 'uuid'],
@@ -133,6 +134,31 @@ class TrackingController extends Controller
                 }
             }
         }
+
+        $activities->record([
+            'source' => 'whatsapp',
+            'event_id' => $eventId,
+            'event_type' => 'whatsapp.contact_requested',
+            'user_id' => $user?->id,
+            'contact_name' => $normalize($data['contact_name'], 120),
+            'contact_phone' => $phone,
+            'payload_hash' => hash('sha256', json_encode($data, JSON_THROW_ON_ERROR)),
+            'occurred_at' => $consentedAt,
+            'details' => [
+                'contact_verified' => false,
+                'destination' => $this->urlWithoutQueryOrFragment($destination),
+                'page' => $this->urlWithoutQueryOrFragment($page),
+                'intent' => $intent,
+                'placement' => $placement,
+                'package' => $packageName,
+                'vendor' => $vendor,
+                'value' => $value,
+                'currency' => $currency,
+                'contact_consent' => true,
+                'consent_version' => TrialClick::WHATSAPP_CONTACT_CONSENT_VERSION,
+                'marketing_consent' => $marketingConsent,
+            ],
+        ]);
 
         $click = TrialClick::firstOrCreate(
             ['phone_normalized' => $phone],
@@ -244,7 +270,7 @@ class TrackingController extends Controller
         ], 202);
     }
 
-    public function storeTawkLead(Request $request)
+    public function storeTawkLead(Request $request, CustomerActivityService $activities)
     {
         $data = $request->validate([
             'event_id' => ['required', 'uuid'],
@@ -277,7 +303,23 @@ class TrackingController extends Controller
             return response()->json(['ok' => true], 202)->header('Cache-Control', 'no-store');
         }
 
-        \Illuminate\Support\Facades\DB::transaction(function () use ($data, $phone, $name, $email, $message) {
+        \Illuminate\Support\Facades\DB::transaction(function () use ($data, $phone, $name, $email, $message, $fingerprint, $activities) {
+            $activities->record([
+                'source' => 'tawk',
+                'event_id' => $data['event_id'],
+                'event_type' => 'tawk.'.$data['form_type'].'_submitted',
+                'contact_name' => $name,
+                'contact_email' => $email,
+                'contact_phone' => $phone,
+                'message' => $message !== '' ? $message : null,
+                'payload_hash' => $fingerprint,
+                'details' => [
+                    'contact_verified' => false,
+                    'form_type' => $data['form_type'],
+                    'page' => $this->urlWithoutQueryOrFragment($data['page'] ?? null),
+                ],
+            ]);
+
             $lead = TrialClick::firstOrCreate(['phone_normalized' => $phone], [
                 'event_id' => $data['event_id'],
                 'contact_name' => $name,
@@ -318,7 +360,7 @@ class TrackingController extends Controller
         return response()->json(['ok' => true], 202)->header('Cache-Control', 'no-store');
     }
 
-    public function whatsappTrial(Request $request)
+    public function whatsappTrial(Request $request, CustomerActivityService $activities)
     {
         if (!$this->hasMarketingConsent($request)) {
             return response()->json(['ok' => true, 'tracked' => false], 202);
@@ -398,6 +440,23 @@ class TrackingController extends Controller
                 }
             }
         }
+
+        $activities->record([
+            'source' => 'whatsapp',
+            'event_id' => $eventId,
+            'event_type' => 'whatsapp.payment_contact_clicked',
+            'user_id' => $userId,
+            'order_id' => $orderId,
+            'payload_hash' => hash('sha256', json_encode($data, JSON_THROW_ON_ERROR)),
+            'details' => [
+                'destination' => $this->urlWithoutQueryOrFragment($dest),
+                'page' => $this->urlWithoutQueryOrFragment($page),
+                'intent' => $intent,
+                'placement' => $placement,
+                'message_delivery_confirmed' => false,
+                'marketing_consent' => true,
+            ],
+        ]);
 
         $click = TrialClick::firstOrCreate(
             ['event_id' => $eventId],

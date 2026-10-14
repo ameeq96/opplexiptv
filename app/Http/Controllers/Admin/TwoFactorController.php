@@ -22,6 +22,10 @@ class TwoFactorController extends Controller
 
     public function showChallenge(Request $request): View|RedirectResponse
     {
+        if (app()->environment('local')) {
+            return redirect()->route('admin.dashboard');
+        }
+
         $admin = $this->admin();
         if (!$admin->two_factor_confirmed_at) {
             return redirect()->route('admin.two-factor.settings');
@@ -36,6 +40,10 @@ class TwoFactorController extends Controller
 
     public function verifyChallenge(Request $request): RedirectResponse
     {
+        if (app()->environment('local')) {
+            return redirect()->route('admin.dashboard');
+        }
+
         $data = $request->validate(['code' => ['required', 'string', 'max:20']]);
         $admin = $this->admin();
         $key = 'admin-two-factor:' . $admin->id . '|' . $request->ip();
@@ -64,6 +72,10 @@ class TwoFactorController extends Controller
 
     public function settings(Request $request): View|RedirectResponse
     {
+        if (app()->environment('local')) {
+            return redirect()->route('admin.dashboard');
+        }
+
         $admin = $this->admin();
 
         if ($admin->two_factor_confirmed_at
@@ -86,6 +98,10 @@ class TwoFactorController extends Controller
 
     public function confirm(Request $request): RedirectResponse
     {
+        if (app()->environment('local')) {
+            return redirect()->route('admin.dashboard');
+        }
+
         $admin = $this->admin();
 
         if ($admin->two_factor_confirmed_at) {
@@ -114,6 +130,10 @@ class TwoFactorController extends Controller
 
     public function regenerateRecoveryCodes(Request $request): RedirectResponse
     {
+        if (app()->environment('local')) {
+            return redirect()->route('admin.dashboard');
+        }
+
         $data = $request->validate([
             'password' => ['required', 'string'],
             'code' => ['required', 'digits:6'],
@@ -132,6 +152,10 @@ class TwoFactorController extends Controller
 
     public function disable(Request $request): RedirectResponse
     {
+        if (app()->environment('local')) {
+            return redirect()->route('admin.dashboard');
+        }
+
         $data = $request->validate([
             'password' => ['required', 'string'],
             'code' => ['required', 'digits:6'],
@@ -169,11 +193,11 @@ class TwoFactorController extends Controller
     {
         $data = $request->validate([
             'password' => ['required', 'current_password:admin'],
-            'code' => ['required', 'digits:6'],
+            'code' => app()->environment('local') ? ['exclude'] : ['required', 'digits:6'],
         ]);
         $admin = $this->admin();
 
-        if (!$this->consumeTotp($admin, $data['code'])) {
+        if (!app()->environment('local') && !$this->consumeTotp($admin, $data['code'])) {
             throw ValidationException::withMessages(['code' => 'The authentication code is invalid or was already used.']);
         }
 

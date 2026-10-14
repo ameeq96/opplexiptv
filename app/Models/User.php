@@ -71,6 +71,26 @@ class User extends Authenticatable
         return $this->hasMany(Order::class);
     }
 
+    public function assignedAdmin()
+    {
+        return $this->belongsTo(Admin::class, 'assigned_admin_id');
+    }
+
+    public function customerActivities()
+    {
+        return $this->hasMany(CustomerActivity::class);
+    }
+
+    public function customerFollowUps()
+    {
+        return $this->hasMany(CustomerFollowUp::class);
+    }
+
+    public function customerConversations()
+    {
+        return $this->hasMany(CustomerConversation::class);
+    }
+
     public function trialClicks()
     {
         return $this->hasMany(TrialClick::class);

@@ -1016,6 +1016,7 @@ class UiData
     {
         return [
             'android' => [
+                ['content_key' => 'opplex', 'version' => 'Opplex IPTV App 3.0.2 (APK)', 'file' => 'https://opplexiptv.com/downloads/OPPLEXTV3.0.apk', 'image' => 'opplextv.webp', 'keywords' => 'Opplex IPTV Android APK download'],
                 ['content_key' => 'iptv_smarters', 'version' => 'Smarters Pro (Mobile)', 'file' => 'https://play.google.com/store/apps/details?id=com.smarters.smarterspro', 'image' => 'iptv_smarter.webp', 'keywords' => 'Smarters-Pro Android IPTV player mobile Google-Play'],
                 ['content_key' => 'iptv_smarters', 'version' => 'Smarters Pro (Android TV)', 'file' => 'https://play.google.com/store/apps/details?id=com.smarterspro.smartersprotv', 'image' => 'iptv_smarter.webp', 'keywords' => 'Smarters-Pro Android-TV Google-TV IPTV player Google-Play'],
                 ['content_key' => 'tivimate', 'version' => 'TiviMate IPTV Player', 'file' => 'https://play.google.com/store/apps/details?id=ar.tvplayer.tv', 'image' => 'tivimate.webp', 'keywords' => 'TiviMate Android-TV Google-TV IPTV player M3U Xtream Stalker'],
