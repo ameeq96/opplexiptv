@@ -8,7 +8,7 @@
     <div class="account-card">
         <h2>No password to remember</h2>
         <p class="account-muted">We will send a private sign-in link to your inbox. New here? Verifying your email also creates your customer account.</p>
-        <form method="post" action="{{ route('customer.access.request') }}">
+        <form method="post" action="{{ route('api.browser.customer.access.request') }}" data-api-form>
             @csrf
             <div class="account-field"><label for="customer-email">Email address</label>
                 <input id="customer-email" type="email" name="email" required maxlength="191" autocomplete="email" inputmode="email" value="{{ old('email') }}" aria-describedby="email-help" @error('email') aria-invalid="true" @enderror>

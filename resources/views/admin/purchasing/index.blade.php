@@ -16,7 +16,7 @@
             <form action="{{ route('admin.purchasing.index') }}" method="GET"
                 class="d-flex flex-wrap align-items-center gap-2">
 
-                <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
+                <select name="per_page" class="form-select w-auto" onchange="this.form.requestSubmit()">
                     @foreach ([10, 20, 30, 40, 100] as $size)
                         <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
                             Show {{ $size }}
@@ -91,11 +91,11 @@
                                 @endif
                             </td>
 
-                            <td>{{ $purchase->item_name }}</td>
-                            <td>{{ $purchase->cost_price }}</td>
-                            <td>{{ $purchase->currency }}</td>
-                            <td>{{ $purchase->quantity }}</td>
-                            <td>{{ $purchase->purchase_date }}</td>
+                            <td data-admin-api-field="item_name" data-admin-api-object="purchase" data-admin-api-id="{{ $purchase->id }}">{{ $purchase->item_name }}</td>
+                            <td data-admin-api-field="cost_price" data-admin-api-object="purchase" data-admin-api-id="{{ $purchase->id }}">{{ $purchase->cost_price }}</td>
+                            <td data-admin-api-field="currency" data-admin-api-object="purchase" data-admin-api-id="{{ $purchase->id }}">{{ $purchase->currency }}</td>
+                            <td data-admin-api-field="quantity" data-admin-api-object="purchase" data-admin-api-id="{{ $purchase->id }}">{{ $purchase->quantity }}</td>
+                            <td data-admin-api-field="purchase_date" data-admin-api-object="purchase" data-admin-api-id="{{ $purchase->id }}">{{ $purchase->purchase_date }}</td>
 
                             {{-- Note (truncated) --}}
                             <td class="text-start">

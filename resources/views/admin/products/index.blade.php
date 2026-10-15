@@ -34,11 +34,11 @@
             <tbody>
                 @forelse($products as $p)
                     <tr>
-                        <td>{{ $p['name'] }}</td>
+                        <td data-admin-api-object="p" data-admin-api-id="{{ $p['id'] }}" data-admin-api-field="name">{{ $p['name'] }}</td>
                         <td>
                             <span class="badge-soft {{ $p['type'] === 'digital' ? 'success' : 'gray' }}">{{ ucfirst($p['type']) }}</span>
                         </td>
-                        <td>{{ \Illuminate\Support\Str::limit($p['description'], 70) }}</td>
+                        <td data-admin-api-object="p" data-admin-api-id="{{ $p['id'] }}" data-admin-api-field="description" data-admin-api-limit="70">{{ \Illuminate\Support\Str::limit($p['description'], 70) }}</td>
                         <td>
                             @if($p['price'] !== null)
                                 {{ $p['currency'] }} {{ number_format((float) $p['price'], 2) }}

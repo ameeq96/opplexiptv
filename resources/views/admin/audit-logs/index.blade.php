@@ -60,11 +60,11 @@
                         <tr>
                             <td class="text-nowrap">{{ $log->created_at?->format('Y-m-d H:i:s') }}</td>
                             <td>
-                                <div class="fw-semibold">{{ $log->admin_name ?: 'Deleted admin' }}</div>
-                                <small class="text-muted">{{ $log->admin_email }}</small>
+                                <div class="fw-semibold" data-admin-api-field="admin_name" data-admin-api-object="log" data-admin-api-id="{{ $log->id }}" data-admin-api-empty="Deleted admin">{{ $log->admin_name ?: 'Deleted admin' }}</div>
+                                <small class="text-muted" data-admin-api-field="admin_email" data-admin-api-object="log" data-admin-api-id="{{ $log->id }}">{{ $log->admin_email }}</small>
                             </td>
-                            <td>{{ $log->action }}</td>
-                            <td><span class="badge text-bg-secondary">{{ $log->method }}</span></td>
+                            <td data-admin-api-field="action" data-admin-api-object="log" data-admin-api-id="{{ $log->id }}">{{ $log->action }}</td>
+                            <td><span class="badge text-bg-secondary" data-admin-api-field="method" data-admin-api-object="log" data-admin-api-id="{{ $log->id }}">{{ $log->method }}</span></td>
                             <td><code>{{ $log->route_name ?: $log->path }}</code></td>
                             <td>
                                 @if ($log->target_type || $log->target_id)
@@ -74,7 +74,7 @@
                                     <span class="text-muted">—</span>
                                 @endif
                             </td>
-                            <td>{{ $log->response_status ?? '—' }}</td>
+                            <td data-admin-api-field="response_status" data-admin-api-object="log" data-admin-api-id="{{ $log->id }}" data-admin-api-empty="—">{{ $log->response_status ?? '—' }}</td>
                             <td class="text-end">
                                 <a href="{{ route('admin.audit-logs.show', $log) }}" class="btn btn-sm btn-outline-primary">View</a>
                             </td>

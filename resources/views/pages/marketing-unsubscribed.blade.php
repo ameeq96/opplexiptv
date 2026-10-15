@@ -11,7 +11,7 @@
     @else
         <h1 class="h2 mb-3">{{ __('marketing.unsubscribe.confirm_title') }}</h1>
         <p class="text-muted mb-4">{{ __('marketing.unsubscribe.confirm_text') }}</p>
-        <form method="POST" action="{{ $signedAction }}" class="d-inline-block">
+        <form method="POST" action="{{ $signedAction }}" class="d-inline-block" data-api-form>
             @csrf
             <button type="submit" class="btn btn-danger">{{ __('marketing.unsubscribe.confirm_button') }}</button>
         </form>

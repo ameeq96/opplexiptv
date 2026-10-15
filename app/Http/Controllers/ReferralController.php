@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Referral;
+use Illuminate\Http\Request;
 
 class ReferralController extends Controller
 {
-    public function capture(string $code)
+    public function capture(Request $request, string $code)
     {
         $referral = Referral::query()
             ->where('code', $code)
@@ -16,6 +17,7 @@ class ReferralController extends Controller
 
         session(['referral_code' => $referral->code]);
 
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Referral applied.', 'redirect_url' => route('pricing')]);
         return redirect()->route('pricing');
     }
 }

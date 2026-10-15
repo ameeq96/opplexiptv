@@ -79,17 +79,17 @@
                                 @endif
                             </td>
                             <td>
-                                <div class="fw-semibold">{{ $t?->title ?? '—' }}</div>
-                                <div class="text-muted small">{{ $t?->slug }}</div>
+                                <div class="fw-semibold" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}" data-admin-api-field="translation.title" data-admin-api-empty="—">{{ $t?->title ?? '—' }}</div>
+                                <div class="text-muted small" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}" data-admin-api-field="translation.slug">{{ $t?->slug }}</div>
                             </td>
                             <td>
                                 @foreach ($blog->translations as $tr)
                                     <span class="badge-soft gray">{{ strtoupper($tr->locale) }}</span>
                                 @endforeach
                             </td>
-                            <td><span class="badge-soft {{ $statusClass }}">{{ ucfirst($blog->status) }}</span></td>
+                            <td><span class="badge-soft {{ $statusClass }}" data-admin-api-field="status" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}" data-admin-api-format="title">{{ ucfirst($blog->status) }}</span></td>
                             <td>{{ optional($blog->published_at)->format('Y-m-d') }}</td>
-                            <td>{{ number_format($blog->views) }}</td>
+                            <td data-admin-api-field="views" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}" data-admin-api-format="integer">{{ number_format($blog->views) }}</td>
                             <td>{{ optional($blog->updated_at)->format('Y-m-d') }}</td>
                             <td class="text-end admin-table-actions">
                                 <div class="dropdown">

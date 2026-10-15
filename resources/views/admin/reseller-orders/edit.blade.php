@@ -10,6 +10,9 @@
         'sadapay','skrill','binance','bitget','remitly','mexc',
     ];
     $isOther = !in_array(strtolower($order->payment_method ?? ''), $predefinedMethods);
+    $selectedPackage = (string) old('package', $order->package);
+    $isCustomPackage = $selectedPackage !== '' && !in_array($selectedPackage, ['starshare', 'opplex']);
+    $customPkgVal = old('custom_package', $isCustomPackage && $selectedPackage !== 'other' ? $selectedPackage : $order->custom_package);
 @endphp
 
 @if ($errors->any())
@@ -109,19 +112,19 @@
         <div class="col-md-6">
           <label for="package" class="form-label">Package Name</label>
           <select name="package" id="package" class="form-select" required>
-            <option value="" disabled>-- Select Package --</option>
-            <option value="starshare" {{ $order->package == 'starshare' ? 'selected' : '' }}>Filex</option>
-            <option value="opplex"    {{ $order->package == 'opplex'    ? 'selected' : '' }}>Opplex</option>
-            <option value="other"     {{ $order->package == 'other'     ? 'selected' : '' }}>Other</option>
+            <option value="" disabled @selected($selectedPackage === '')>-- Select Package --</option>
+            <option value="starshare" {{ $selectedPackage == 'starshare' ? 'selected' : '' }}>Filex</option>
+            <option value="opplex"    {{ $selectedPackage == 'opplex'    ? 'selected' : '' }}>Opplex</option>
+            <option value="other"     {{ $isCustomPackage ? 'selected' : '' }}>Other</option>
           </select>
         </div>
       </div>
 
-      <div class="row mb-3" id="custom_package_field" style="{{ $order->package == 'other' ? '' : 'display:none;' }}">
+      <div class="row mb-3" id="custom_package_field" style="{{ $isCustomPackage ? '' : 'display:none;' }}">
         <div class="col-md-12">
           <label for="custom_package" class="form-label">Custom Package Name</label>
           <input type="text" name="custom_package" id="custom_package"
-                 value="{{ old('custom_package', $order->custom_package) }}" class="form-control"
+                 value="{{ $customPkgVal }}" class="form-control"
                  placeholder="Enter your package name">
         </div>
       </div>

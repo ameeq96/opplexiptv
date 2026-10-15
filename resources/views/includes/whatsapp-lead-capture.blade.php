@@ -749,7 +749,7 @@
         function detectVisitorCountry() {
             if (countryDetectionPromise) return countryDetectionPromise;
 
-            countryDetectionPromise = fetch(@json(route('whatsapp.leads.token')), {
+            countryDetectionPromise = fetch(@json(route('api.browser.whatsapp.leads.token', ['locale' => app()->getLocale()])), {
                 method: 'GET',
                 headers: { 'Accept': 'application/json' },
                 credentials: 'same-origin',

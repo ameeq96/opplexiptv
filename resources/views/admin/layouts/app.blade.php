@@ -313,5 +313,7 @@
     }
 </script>
 @stack('scripts')
+<script src="{{ asset('js/api-browser.js') }}" defer></script>
+<script src="{{ asset('js/admin-api.js') }}" defer></script>
 </body>
 </html>

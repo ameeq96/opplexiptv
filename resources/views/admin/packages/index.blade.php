@@ -95,10 +95,10 @@
 
                         @foreach ($group['packages'] as $p)
                         <tr>
-                            <td class="fw-semibold">{{ $p->title }}</td>
-                            <td>{{ $p->type }}</td>
+                            <td class="fw-semibold" data-admin-api-field="title" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->title }}</td>
+                            <td data-admin-api-field="type" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->type }}</td>
                             <td>{{ $p->vendor === 'starshare' ? 'Filex' : $p->vendor }}</td>
-                            <td>{{ $p->display_price }}</td>
+                            <td data-admin-api-field="display_price" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->display_price }}</td>
                             <td>
                                 <div class="d-flex flex-wrap gap-1">
                                     @if ($p->badge_key)
@@ -121,7 +121,7 @@
                                     @endif
                                 </div>
                             </td>
-                            <td>{{ $p->sort_order }}</td>
+                            <td data-admin-api-field="sort_order" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $p->active ? 'success' : 'gray' }}">
                                     {{ $p->active ? 'Active' : 'Inactive' }}

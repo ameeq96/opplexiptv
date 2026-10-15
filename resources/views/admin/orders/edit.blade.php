@@ -11,7 +11,9 @@
         '1 Month Opplex IPTV Account','3 Months Opplex IPTV Account','6 Months Opplex IPTV Account','12 Months Opplex IPTV Account',
         '1 Month Starshare Account','3 Months Starshare Account','6 Months Starshare Account','12 Months Starshare Account',
     ];
-    $customPkgVal = ($order->package != 'other' && !in_array($order->package, $predefs)) ? $order->package : '';
+    $selectedPackage = (string) old('package', $order->package);
+    $isCustomPackage = $selectedPackage !== '' && !in_array($selectedPackage, $predefs);
+    $customPkgVal = old('custom_package', $isCustomPackage && $selectedPackage !== 'other' ? $selectedPackage : $order->custom_package);
 @endphp
 
 @section('content')
@@ -40,23 +42,23 @@
           <select name="package" id="package" class="form-select" required>
             <option value="">-- Select Package --</option>
             <optgroup label="Opplex IPTV">
-              <option value="1 Month Opplex IPTV Account" @selected($order->package=='1 Month Opplex IPTV Account')>1 Month</option>
-              <option value="3 Months Opplex IPTV Account" @selected($order->package=='3 Months Opplex IPTV Account')>3 Months</option>
-              <option value="6 Months Opplex IPTV Account" @selected($order->package=='6 Months Opplex IPTV Account')>6 Months</option>
-              <option value="12 Months Opplex IPTV Account" @selected($order->package=='12 Months Opplex IPTV Account')>12 Months</option>
+              <option value="1 Month Opplex IPTV Account" @selected($selectedPackage=='1 Month Opplex IPTV Account')>1 Month</option>
+              <option value="3 Months Opplex IPTV Account" @selected($selectedPackage=='3 Months Opplex IPTV Account')>3 Months</option>
+              <option value="6 Months Opplex IPTV Account" @selected($selectedPackage=='6 Months Opplex IPTV Account')>6 Months</option>
+              <option value="12 Months Opplex IPTV Account" @selected($selectedPackage=='12 Months Opplex IPTV Account')>12 Months</option>
             </optgroup>
             <optgroup label="Filex">
-              <option value="1 Month Starshare Account" @selected($order->package=='1 Month Starshare Account')>1 Month</option>
-              <option value="3 Months Starshare Account" @selected($order->package=='3 Months Starshare Account')>3 Months</option>
-              <option value="6 Months Starshare Account" @selected($order->package=='6 Months Starshare Account')>6 Months</option>
-              <option value="12 Months Starshare Account" @selected($order->package=='12 Months Starshare Account')>12 Months</option>
+              <option value="1 Month Starshare Account" @selected($selectedPackage=='1 Month Starshare Account')>1 Month</option>
+              <option value="3 Months Starshare Account" @selected($selectedPackage=='3 Months Starshare Account')>3 Months</option>
+              <option value="6 Months Starshare Account" @selected($selectedPackage=='6 Months Starshare Account')>6 Months</option>
+              <option value="12 Months Starshare Account" @selected($selectedPackage=='12 Months Starshare Account')>12 Months</option>
             </optgroup>
-            <option value="other" @selected($order->package=='other')>Other</option>
+            <option value="other" @selected($isCustomPackage)>Other</option>
           </select>
         </div>
 
         {{-- custom package --}}
-        <div class="col-md-12 mt-2" id="custom_package_field" style="display:none;">
+        <div class="col-md-12 mt-2" id="custom_package_field" style="{{ $isCustomPackage ? '' : 'display:none;' }}">
           <label for="custom_package" class="form-label">Custom Package Name</label>
           <input type="text" name="custom_package" id="custom_package" class="form-control"
                  value="{{ $customPkgVal }}" placeholder="Enter your package name">

@@ -80,15 +80,29 @@ class CustomerSupportTest extends TestCase
         $this->message($tawk, 'customer', 'Old Tawk transcript');
 
         $this->customer($user)->get('/account/support')
-            ->assertOk()->assertViewHas('tickets', fn ($tickets) => $tickets->pluck('id')->all() === [$own->id]);
-        $response = $this->get('/account/support/'.$own->id)->assertOk()
-            ->assertSee('Public support answer')->assertSee('&lt;script&gt;', false)
+            ->assertOk()->assertSee('supportTickets');
+        $this->getJson('/api/browser/account/support')->assertOk()
+            ->assertJsonCount(1, 'data')->assertJsonPath('data.0.id', $own->id);
+        $page = $this->get('/account/support/'.$own->id)->assertOk()
+            ->assertSee('supportMessages')->assertSee('text = api.escape', false)
+            ->assertSee("'<':'&lt;','>':'&gt;'", false)->assertSee('text(message.content)', false)
             ->assertDontSee('<script>alert("x")</script>', false)
             ->assertDontSee('Private staff discussion')->assertDontSee('Old Tawk transcript');
+        $this->assertStringContainsString('no-store', $page->headers->get('Cache-Control'));
+        $this->getJson('/api/browser/account/support/'.$own->id)->assertOk()->assertJsonPath('data.id', $own->id);
+        $response = $this->getJson('/api/browser/account/support/'.$own->id.'/messages')->assertOk()
+            ->assertHeader('Content-Type', 'application/json')->assertJsonCount(2, 'data')
+            ->assertJsonPath('data.0.content', '<script>alert("x")</script> My question')
+            ->assertJsonPath('data.1.content', 'Public support answer')
+            ->assertJsonMissing(['content' => 'Private staff discussion'])
+            ->assertJsonMissing(['content' => 'Old Tawk transcript']);
         $this->assertStringContainsString('no-store', $response->headers->get('Cache-Control'));
         foreach ([$foreign, $tawk, $legacy] as $privateTicket) {
             $this->get('/account/support/'.$privateTicket->id)->assertNotFound();
             $this->post('/account/support/'.$privateTicket->id.'/messages', $this->submission())->assertNotFound();
+            $this->getJson('/api/browser/account/support/'.$privateTicket->id)->assertNotFound();
+            $this->getJson('/api/browser/account/support/'.$privateTicket->id.'/messages')->assertNotFound();
+            $this->postJson('/api/browser/account/support/'.$privateTicket->id.'/messages', $this->submission())->assertNotFound();
         }
     }
 
@@ -124,11 +138,18 @@ class CustomerSupportTest extends TestCase
         for ($number = 1; $number <= 31; $number++) {
             $this->message($ticket, 'customer', 'Thread message '.$number.'.');
         }
-        $this->customer($user)->get('/account/support/'.$ticket->id)->assertOk()
-            ->assertSee('Thread message 31.')->assertDontSee('Thread message 1.')
-            ->assertViewHas('messages', fn ($messages) => $messages->currentPage() === 2);
+        $this->customer($user)->get('/account/support/'.$ticket->id)->assertOk()->assertSee('supportMessages');
+        $url = '/api/browser/account/support/'.$ticket->id.'/messages';
+        $this->getJson($url)->assertOk()->assertJsonCount(1, 'data')
+            ->assertJsonPath('data.0.content', 'Thread message 31.')
+            ->assertJsonMissing(['content' => 'Thread message 1.'])
+            ->assertJsonPath('meta.current_page', 2)->assertJsonPath('meta.last_page', 2)->assertJsonPath('meta.total', 31);
         $this->get('/account/support/'.$ticket->id.'?messages_page=1')->assertOk()
-            ->assertSee('Thread message 1.')->assertDontSee('Thread message 31.');
+            ->assertSee("messages(Number(params.get('messages_page')) || undefined)", false);
+        $this->getJson($url.'?page=1')->assertOk()->assertJsonCount(30, 'data')
+            ->assertJsonPath('data.0.content', 'Thread message 1.')
+            ->assertJsonMissing(['content' => 'Thread message 31.'])
+            ->assertJsonPath('meta.current_page', 1)->assertJsonPath('meta.last_page', 2)->assertJsonPath('meta.total', 31);
     }
 
     public function test_owner_sales_and_support_can_reply_and_resolve_portal_tickets(): void

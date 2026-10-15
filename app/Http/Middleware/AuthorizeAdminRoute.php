@@ -105,8 +105,18 @@ class AuthorizeAdminRoute
         }
 
         $routeName = (string) $request->route()?->getName();
+        if (str_starts_with($routeName, 'api.browser.admin.')) {
+            $routeName = substr($routeName, strlen('api.browser.'));
+        }
 
         if ($routeName === 'admin.dashboard') {
+            if ($request->routeIs('api.browser.admin.*') && in_array($admin->role, [Admin::ROLE_SUPPORT, Admin::ROLE_CONTENT], true)) {
+                return response()->json([
+                    'message' => 'Open the dashboard available for your role.',
+                    'code' => 'role_landing',
+                    'redirect_url' => route($admin->role === Admin::ROLE_SUPPORT ? 'admin.clients.index' : 'admin.blogs.index'),
+                ], 403);
+            }
             return match ($admin->role) {
                 Admin::ROLE_SALES => $next($request),
                 Admin::ROLE_SUPPORT => redirect()->route('admin.clients.index'),

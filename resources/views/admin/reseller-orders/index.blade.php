@@ -45,7 +45,7 @@
 
                 <div class="col-12 col-md-3 col-lg-2">
                     <label class="form-label small text-muted mb-1">Per Page</label>
-                    <select name="per_page" class="form-select" onchange="this.form.submit()">
+                    <select name="per_page" class="form-select" onchange="this.form.requestSubmit()">
                         @foreach ([10, 20, 30, 40, 100] as $size)
                             <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
                                 Show {{ $size }}
@@ -63,7 +63,7 @@
                 {{-- Optional same filters as package list (if you want to keep UI parity) --}}
                 <div class="col-12 col-md-4 col-lg-2">
                     <label class="form-label small text-muted mb-1">Date</label>
-                    <select name="date_filter" class="form-select" onchange="this.form.submit()">
+                    <select name="date_filter" class="form-select" onchange="this.form.requestSubmit()">
                         <option value="">Date Filter</option>
                         <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
                         <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday
@@ -80,7 +80,7 @@
 
                 <div class="col-12 col-md-4 col-lg-2">
                     <label class="form-label small text-muted mb-1">Expiry</label>
-                    <select name="expiry_status" class="form-select" onchange="this.form.submit()">
+                    <select name="expiry_status" class="form-select" onchange="this.form.requestSubmit()">
                         <option value="">Expiry Filter</option>
                         <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon
                             (Next 5 Days)</option>
@@ -91,7 +91,7 @@
 
                 <div class="col-12 col-md-4 col-lg-2">
                     <label class="form-label small text-muted mb-1">Status</label>
-                    <select name="status" class="form-select" onchange="this.form.submit()">
+                    <select name="status" class="form-select" onchange="this.form.requestSubmit()">
                         @php $statusVal = request('status', 'all'); @endphp
                         <option value="all" {{ $statusVal === 'all' ? 'selected' : '' }}>All Statuses</option>
                         <option value="pending" {{ $statusVal === 'pending' ? 'selected' : '' }}>Pending</option>
@@ -165,9 +165,9 @@
                         <tr>
                             <td><input type="checkbox" name="order_ids[]" value="{{ $order->id }}"></td>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $order->user->name ?? 'N/A' }}</td>
+                            <td data-admin-api-field="user.name" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->user->name ?? 'N/A' }}</td>
                             <td>{{ $order->custom_package ? $order->custom_package : ($order->package === 'starshare' ? 'Filex' : $order->package) }}</td>
-                            <td>{{ $order->credits }}</td>
+                            <td data-admin-api-field="credits" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}">{{ $order->credits }}</td>
                             <td>
                                 @if ($order->expiry_date)
                                     {{ \Carbon\Carbon::parse($order->expiry_date)->isPast()
@@ -177,15 +177,15 @@
                                     -
                                 @endif
                             </td>
-                            <td>{{ $order->iptv_username ?? '-' }}</td>
-                            <td>{{ $order->duration ?? 'N/A' }}</td>
+                            <td data-admin-api-field="iptv_username" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="-">{{ $order->iptv_username ?? '-' }}</td>
+                            <td data-admin-api-field="duration" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->duration ?? 'N/A' }}</td>
                             <td>{{ $order->price }} {{ $order->currency }}</td>
                             <td>{{ $order->sell_price }} {{ $order->currency }}</td>
                             <td class="fw-bold text-success">{{ $order->profit }} {{ $order->currency }}</td>
-                            <td>{{ ucfirst($order->status) }}</td>
+                            <td data-admin-api-field="status" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title">{{ ucfirst($order->status) }}</td>
                             <td>{{ $order->payment_method ?? ($order->custom_payment_method ?? '-') }}</td>
-                            <td>{{ $order->buying_date }}</td>
-                            <td>{{ $order->expiry_date ?? '-' }}</td>
+                            <td data-admin-api-field="buying_date" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}">{{ $order->buying_date }}</td>
+                            <td data-admin-api-field="expiry_date" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="-">{{ $order->expiry_date ?? '-' }}</td>
                             <td>
                                 @if (!empty($order->note))
                                     <span class="d-inline-block text-truncate" style="max-width: 220px;"
@@ -416,7 +416,7 @@
             if (action === 'delete' && !confirm('Delete selected orders?')) return;
 
             actionIn.value = action;
-            form.submit();
+            form.requestSubmit();
         });
 
         // Lightbox helper (as-is)

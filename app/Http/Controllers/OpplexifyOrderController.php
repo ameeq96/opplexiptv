@@ -273,7 +273,8 @@ class OpplexifyOrderController extends Controller
     {
         $secret = (string) config('services.opplexify.shared_secret');
         abort_if($secret === '', 503, 'Order integration is not configured.');
-        abort_unless($request->isMethod('POST') && $request->getPathInfo() === $path, 401, 'Invalid integration request.');
+        $requestPath = $request->getPathInfo();
+        abort_unless($request->isMethod('POST') && in_array($requestPath, [$path, '/api'.$path], true), 401, 'Invalid integration request.');
 
         $timestamp = (string) $request->header('X-Opplexify-Timestamp', '');
         $signature = (string) $request->header('X-Opplexify-Signature', '');
@@ -284,7 +285,7 @@ class OpplexifyOrderController extends Controller
         );
         $expected = hash_hmac(
             'sha256',
-            "POST\n" . $path . "\n" . $timestamp . "\n" . hash('sha256', $request->getContent()),
+            "POST\n" . $requestPath . "\n" . $timestamp . "\n" . hash('sha256', $request->getContent()),
             $secret
         );
         abort_unless(

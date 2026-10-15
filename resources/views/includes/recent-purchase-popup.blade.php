@@ -1,5 +1,5 @@
 @php
-    $recentPurchases = app(\App\Services\RecentPurchaseService::class)->items();
+    $recentPurchases = $recentPurchases ?? [];
 @endphp
 
 @if ($recentPurchases !== [])

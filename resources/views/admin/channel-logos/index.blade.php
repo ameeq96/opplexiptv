@@ -47,7 +47,7 @@
                                 <img src="{{ asset($l->image) }}" alt="logo"
                                      style="width:80px;height:48px;object-fit:contain;border-radius:6px;">
                             </td>
-                            <td>{{ $l->sort_order }}</td>
+                            <td data-admin-api-field="sort_order" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $l->is_active ? 'success' : 'gray' }}">
                                     {{ $l->is_active ? 'Active' : 'Inactive' }}

@@ -139,7 +139,7 @@
                     <h3 id="contact-form-title" class="ctx-form__title">{{ __('messages.contact.form.title') }}</h3>
 
                     <div class="contact-form">
-                                <form method="POST" action="{{ route('contact.send') }}" id="contact-form">
+                                <form method="POST" action="{{ route('api.browser.contact.send', ['locale' => app()->getLocale()]) }}" id="contact-form" data-api-form>
                                     @csrf
                                     <div class="row clearfix">
                                         {{-- Name --}}
@@ -837,6 +837,23 @@
                 initContactDropdowns();
                 initContactFaqs();
                 initContactPhone();
+                const apiForm = document.getElementById('contact-form');
+                const refreshCaptcha = async () => {
+                    if (!window.OpplexApi || !apiForm) return;
+                    try {
+                        const response = await window.OpplexApi.request(@json(route('api.browser.contact.challenge', ['locale' => app()->getLocale()])));
+                        const input = apiForm.querySelector('[name="captcha"]');
+                        if (input && response.data) {
+                            input.value = '';
+                            input.placeholder = @json(__('messages.contact.form.captcha', ['num1' => ':first', 'num2' => ':second']))
+                                .replace(':first', response.data.num1).replace(':second', response.data.num2);
+                        }
+                    } catch (_) {
+                        // Keep the submitted values available when the connection is unavailable.
+                    }
+                };
+                apiForm?.addEventListener('data-api-success', refreshCaptcha);
+                apiForm?.addEventListener('data-api-error', refreshCaptcha);
             }
 
             if (document.readyState === 'loading') {

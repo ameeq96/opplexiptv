@@ -1362,7 +1362,7 @@
             ->mapWithKeys(static fn ($package) => [
                 $catalogServiceName($package) => (float) data_get($package, 'price_amount', 0),
             ]);
-        $activeEventPromotion = app(\App\Services\EventPromotionService::class)->activeForSession();
+        $activeEventPromotion = $activeEventPromotion ?? null;
         $initialIptvService = $iptvServices[0] ?? 'Opplex';
         $initialIptvPackageCount = collect($displayPackages)
             ->filter(static fn ($package) => $catalogServiceName($package) === $initialIptvService)
@@ -1451,7 +1451,7 @@
                             <option value="{{ $service }}" @selected($service === $initialIptvService)
                                 data-service="{{ $service }}"
                                 @if (data_get($provider, 'id'))
-                                    data-plans-url="{{ route('packages.provider-plans', ['package' => data_get($provider, 'id')]) }}"
+                                    data-plans-url="{{ route('api.packages.provider-plans', ['package' => data_get($provider, 'id'), 'locale' => app()->getLocale()]) }}"
                                 @endif
                                 data-featured="{{ data_get($provider, 'featured', false) ? '1' : '0' }}">
                                 {{ data_get($provider, 'featured', false) ? '★ ' : '' }}{{ $service }}

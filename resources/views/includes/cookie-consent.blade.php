@@ -177,7 +177,7 @@
             if (typeof w.__applyTrackingConsent === 'function') w.__applyTrackingConsent(current);
             var csrf = d.querySelector('meta[name="csrf-token"]');
             if (csrf) {
-                fetch(@json(route('tracking.consent')), {
+                fetch(@json(route('api.browser.tracking.consent', ['locale' => app()->getLocale()])), {
                     method: 'POST',
                     credentials: 'same-origin',
                     keepalive: true,

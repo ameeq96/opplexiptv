@@ -1676,7 +1676,7 @@
     (function () {
         const isPrivatePage = @json($isPrivateOrderStatus);
         const businessWhatsAppNumber = (@json(config('services.whatsapp.number')) || '').replace(/\D/g, '');
-        const eventPromotionCampaigns = @json(app(\App\Services\EventPromotionService::class)->whatsappClickCampaigns());
+        const eventPromotionCampaigns = @json($eventPromotionCampaigns ?? []);
 
         function uuidv4() {
             if (crypto && crypto.randomUUID) return crypto.randomUUID();
@@ -1825,9 +1825,9 @@
             };
             if (navigator.sendBeacon) {
                 const blob = new Blob([JSON.stringify(payload)], { type:'application/json' });
-                navigator.sendBeacon("{{ route('track.whatsapp.trial') }}", blob);
+                navigator.sendBeacon("{{ route('api.browser.track.whatsapp.trial', ['locale' => app()->getLocale()]) }}", blob);
             } else {
-                fetch("{{ route('track.whatsapp.trial') }}", {
+                fetch("{{ route('api.browser.track.whatsapp.trial', ['locale' => app()->getLocale()]) }}", {
                     method:'POST',
                     headers:{ 'Content-Type':'application/json' },
                     body: JSON.stringify(payload),
@@ -1876,7 +1876,7 @@
                 const csrfToken = tokenResponse.csrf_token || tokenResponse.token;
                 if (!csrfToken) throw new Error('Missing request token.');
 
-                return fetch("{{ route('whatsapp.leads.store') }}", {
+                return fetch("{{ route('api.browser.whatsapp.leads.store', ['locale' => app()->getLocale()]) }}", {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',

@@ -28,7 +28,7 @@
             @forelse ($unlinkedMessages as $message)
                 <div class="border rounded p-3 mb-2">
                     <div class="small text-muted mb-1">{{ $message->sender_name ?: ucfirst($message->sender_type) }} · {{ $message->sent_at?->format('Y-m-d H:i') ?: 'Time not supplied' }}</div>
-                    <div style="white-space: pre-wrap; overflow-wrap: anywhere;">{{ $message->content }}</div>
+                    <div style="white-space: pre-wrap; overflow-wrap: anywhere;" data-admin-api-field="content" data-admin-api-object="message" data-admin-api-id="{{ $message->id }}">{{ $message->content }}</div>
                 </div>
             @empty<p class="text-muted">No captured messages are available for this conversation.</p>@endforelse
             {{ $unlinkedMessages->links('pagination::bootstrap-5') }}

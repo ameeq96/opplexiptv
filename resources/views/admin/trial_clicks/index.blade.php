@@ -28,7 +28,7 @@
             <form action="{{ route('admin.trial_clicks.index') }}" method="GET"
                   class="d-flex flex-wrap align-items-center gap-2">
 
-                <select name="per_page" class="form-select w-auto" onchange="this.form.submit()">
+                <select name="per_page" class="form-select w-auto" onchange="this.form.requestSubmit()">
                     @foreach ([10, 20, 30, 40, 100] as $size)
                         <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
                             Show {{ $size }}
@@ -36,7 +36,7 @@
                     @endforeach
                 </select>
 
-                <select name="status" class="form-select w-auto" onchange="this.form.submit()">
+                <select name="status" class="form-select w-auto" onchange="this.form.requestSubmit()">
                     <option value="">All statuses</option>
                     @foreach ($statuses as $status)
                         <option value="{{ $status }}" @selected(request('status') === $status)>
@@ -116,7 +116,7 @@
 
                             <td>{{ ($c->whatsapp_contact_consented_at ?: $c->created_at)->format('Y-m-d H:i') }}</td>
                             <td title="{{ $c->event_id }}">
-                                <strong>{{ $c->lead_code }}</strong>
+                                <strong data-admin-api-field="lead_code" data-admin-api-object="click" data-admin-api-id="{{ $c->id }}">{{ $c->lead_code }}</strong>
                             </td>
 
                             <td class="text-start">
@@ -128,7 +128,7 @@
                                         </a>
                                     @endif
                                     @if ($c->contact_email)
-                                        <div class="small">{{ $c->contact_email }}</div>
+                                        <div class="small" data-admin-api-field="contact_email" data-admin-api-object="click" data-admin-api-id="{{ $c->id }}">{{ $c->contact_email }}</div>
                                     @endif
                                     @if ($c->whatsapp_contact_consented_at)
                                         <div class="small text-muted">
@@ -147,7 +147,7 @@
                                 @if ($c->message !== null && $c->message !== '')
                                     <details>
                                         <summary>{{ \Illuminate\Support\Str::limit($c->message, 90) }}</summary>
-                                        <div class="small mt-2" style="white-space: pre-wrap;">{{ $c->message }}</div>
+                                        <div class="small mt-2" style="white-space: pre-wrap;" data-admin-api-field="message" data-admin-api-object="click" data-admin-api-id="{{ $c->id }}">{{ $c->message }}</div>
                                     </details>
                                 @else
                                     <span class="text-muted">—</span>
@@ -157,7 +157,7 @@
                             <td class="text-start">
                                 <div>{{ ucfirst(str_replace('_', ' ', $c->intent ?: 'contact')) }}</div>
                                 @if ($c->package_name)
-                                    <div class="small text-muted">{{ $c->package_name }}</div>
+                                    <div class="small text-muted" data-admin-api-field="package_name" data-admin-api-object="click" data-admin-api-id="{{ $c->id }}">{{ $c->package_name }}</div>
                                 @endif
                                 @if ($c->vendor || $c->placement)
                                     <div class="small text-muted">
@@ -224,15 +224,15 @@
                                 @endif
                             </td>
 
-                            <td>{{ $c->utm_campaign ?: 'â€”' }}</td>
+                            <td data-admin-api-field="utm_campaign" data-admin-api-object="click" data-admin-api-id="{{ $c->id }}" data-admin-api-empty="â€”">{{ $c->utm_campaign ?: 'â€”' }}</td>
                             <td title="{{ $c->fbp }}">{{ \Illuminate\Support\Str::limit($c->fbp, 18, 'â€¦') ?: 'â€”' }}</td>
                             <td title="{{ $c->fbc }}">{{ \Illuminate\Support\Str::limit($c->fbc, 18, 'â€¦') ?: 'â€”' }}</td>
-                            <td>{{ $c->ip ?: 'â€”' }}</td>
+                            <td data-admin-api-field="ip" data-admin-api-object="click" data-admin-api-id="{{ $c->id }}" data-admin-api-empty="â€”">{{ $c->ip ?: 'â€”' }}</td>
 
                             <td>
                                 <select class="form-select form-select-sm" data-lead-status
                                     data-current-status="{{ $c->status }}"
-                                    data-status-url="{{ route('admin.trial_clicks.status', $c) }}"
+                                    data-status-url="{{ route('api.browser.admin.trial_clicks.status', $c) }}"
                                     aria-label="Status for {{ $c->lead_code }}">
                                     @foreach ($statuses as $status)
                                         <option value="{{ $status }}" @selected($c->status === $status)>

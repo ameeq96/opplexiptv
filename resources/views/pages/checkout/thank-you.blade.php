@@ -3,6 +3,73 @@
 
 @section('content')
 
+@if(isset($statusApiUrl))
+<style>
+.order-status-timeline{display:grid;gap:.7rem;margin:0 auto 1.4rem;text-align:start}.order-status-step{display:grid;grid-template-columns:32px minmax(0,1fr);gap:.7rem;align-items:start;color:#64748b}.order-status-step__icon{display:flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:999px;background:#e2e8f0;color:#64748b}.order-status-step.is-complete .order-status-step__icon{background:#dcfce7;color:#15803d}.order-status-step strong{display:block;color:#334155;font-size:.9rem}.order-status-step small{display:block;margin-top:2px}.payment-proof-form{margin:0 auto 1.4rem;padding:1rem;border:1px solid #dbeafe;border-radius:.9rem;background:#f8fbff;text-align:start}.payment-proof-form label{display:block;margin-bottom:.45rem;color:#0f172a;font-weight:700}.payment-proof-form input[type=file]{width:100%;padding:.55rem;border:1px solid #cbd5e1;border-radius:.65rem;background:#fff}.payment-proof-form button{width:100%;margin-top:.75rem;padding:.7rem 1rem;border:0;border-radius:.7rem;background:#16a34a;color:#fff;font-weight:700}.payment-proof-form small{display:block;margin-top:.45rem;color:#64748b;font-size:.84rem}.payment-proof-message{margin:.75rem 0;color:#15803d;font-size:.86rem;font-weight:600}
+</style>
+<div class="thank-wrap"><div class="thank-card mt-5 mb-5">
+    <div class="thank-badge"><i class="fa fa-check"></i></div>
+    <div class="thank-pill"><i class="fa fa-shield"></i> <span id="statusBadgeLabel">{{ __('messages.thankyou_page.badge_text') }}</span></div>
+    <h1 class="thank-title">{{ __('messages.thankyou_page.heading') }}</h1>
+    <h2 class="thank-sub" style="font-size:1rem;font-weight:600">{{ __('messages.thankyou_page.sub_text') }}</h2>
+    <div id="signedOrderStatus" aria-busy="true"><p role="status">Loading your order…</p></div>
+    <div class="thank-actions"><a href="{{ route('customer.account') }}" class="thank-btn-ghost">My Account &amp; order history</a><a href="{{ route('customer.guides') }}" class="thank-btn-ghost">Optional setup guides</a><a href="{{ route('contact') }}" class="thank-btn-ghost">{{ __('messages.thankyou_page.support_btn') }}</a><a href="{{ route('home') }}" class="thank-btn-ghost">{{ __('messages.thankyou_page.home_btn') }}</a></div>
+    <noscript><p>Please enable JavaScript to securely load your order status.</p></noscript>
+</div></div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('signedOrderStatus');
+    const escape = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
+    const initialLabels = @json(__('messages.thankyou_page'));
+    async function load() {
+        target.setAttribute('aria-busy','true');
+        try {
+            const data = (await window.OpplexApi.request(@json($statusApiUrl))).data, summary = data.summary;
+            const labels = data.labels || initialLabels;
+            const date = value => value ? new Date(value).toLocaleString(data.locale || 'en') : labels.timeline_waiting;
+            document.documentElement.lang = data.locale || document.documentElement.lang;
+            document.querySelector('.thank-title').textContent = labels.heading;
+            document.querySelector('.thank-sub').textContent = labels.sub_text;
+            document.getElementById('statusBadgeLabel').textContent = labels.badge_text;
+            const paid = data.payment_status === 'paid', active = ['active','expired'].includes(data.status);
+            const state = data.status === 'expired' ? labels.status_expired : active ? labels.status_active : paid ? labels.status_activation_pending : data.proof_count ? labels.status_verification_pending : labels.pending;
+            let html = (data.message ? '<p role="status">' + escape(data.message) + '</p>' : '') + '<div class="thank-order-box"><div class="thank-order-row"><span>' + escape(data.order_number_label) + '</span><strong>#' + escape(data.id) + '</strong></div>';
+            const amount = value => Number(value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            html += '<div class="thank-order-row"><span>' + escape(@json(__('interface.email.checkout.package'))) + '</span><span><strong>' + escape(summary.package) + '</strong></span></div>';
+            if (Number(summary.discount || 0) > 0) html += '<div class="thank-order-row"><span>' + escape(summary.promotion_name ?? 'Event offer') + ' (10% OFF)</span><span><strong>-$' + escape(amount(summary.discount)) + '</strong></span></div>';
+            html += '<div class="thank-order-row"><span>' + escape(@json(__('messages.checkout_total_label'))) + '</span><span><strong>$' + escape(amount(summary.total)) + '</strong></span></div>';
+            [[labels.order_status,state],[labels.delivery,labels.delivery_text],[labels.support,labels.support_text]].forEach(row => { html += '<div class="thank-order-row"><span>' + escape(row[0]) + '</span><span>' + escape(row[1]) + '</span></div>'; });
+            html += '<div class="thank-order-total"><span>' + escape(labels.next) + '</span><span>' + escape(labels.next_text) + '</span></div></div><div class="order-status-timeline" aria-label="' + escape(labels.timeline_title) + '">';
+            [[true,labels.timeline_created,date(data.created_at)],[data.proof_count > 0,labels.timeline_proof,date(data.proof_submitted_at)],[paid,labels.timeline_verified,date(data.paid_at)],[active,labels.timeline_activated,active ? labels.timeline_complete : labels.timeline_waiting]].forEach(step => { html += '<div class="order-status-step ' + (step[0] ? 'is-complete' : '') + '"><span class="order-status-step__icon" aria-hidden="true"><i class="fa ' + (step[0] ? 'fa-check' : 'fa-clock-o') + '"></i></span><div><strong>' + escape(step[1]) + '</strong><small>' + escape(step[2]) + '</small></div></div>'; });
+            html += '</div>';
+            if (data.proof_upload_url) {
+                const upload = new URL(data.proof_upload_url, location.origin);
+                if (upload.origin === location.origin) html += '<form action="' + escape(upload.href) + '" method="POST" enctype="multipart/form-data" class="payment-proof-form" data-api-form><label for="paymentProof">' + escape(data.proof_count ? labels.upload_another_proof : labels.upload_proof) + '</label><input id="paymentProof" name="payment_proof" type="file" accept="image/jpeg,image/png,image/webp" required aria-describedby="paymentProofHelp"><small id="paymentProofHelp">' + escape(labels.proof_help) + '</small><button type="submit"><i class="fa fa-lock" aria-hidden="true"></i> ' + escape(labels.submit_proof) + '</button></form>';
+            }
+            if (data.proof_count) html += '<p class="payment-proof-message" role="status">' + escape(labels.proof_received) + '</p>';
+            if (data.whatsapp_number && !paid) {
+                const replacements = {order:data.id,package:summary.package,amount:summary.currency + ' ' + Number(summary.total).toFixed(2),method:summary.payment_method || ''};
+                const message = labels.whatsapp_payment_message.replace(/:(order|package|amount|method)/g, (_, key) => replacements[key]);
+                html += '<div class="thank-actions"><a class="thank-btn-primary" id="whatsappPaymentLink" target="_blank" rel="noopener noreferrer" data-whatsapp-click data-whatsapp-placement="thank_you_payment" data-whatsapp-intent="payment" data-whatsapp-order-id="' + escape(data.id) + '" data-whatsapp-package="' + escape(summary.package) + '" data-whatsapp-value="' + escape(Number(summary.total).toFixed(2)) + '" data-whatsapp-currency="' + escape(summary.currency) + '" href="https://wa.me/' + escape(data.whatsapp_number) + '?text=' + encodeURIComponent(message) + '"><i class="fa fa-whatsapp"></i> ' + escape(labels.continue_payment_whatsapp) + '</a></div>';
+            }
+            html += '<p class="thank-footnote">' + escape(paid ? labels.paid_footnote : labels.footnote) + '</p>';
+            target.innerHTML = html;
+            if (data.checkout_completed && !target.dataset.tracked) {
+                target.dataset.tracked = '1';
+                if (typeof window.trackMarketingEvent === 'function') {
+                    if (typeof window.__loadConversionTracking === 'function') window.__loadConversionTracking();
+                    window.trackMarketingEvent('order_submitted', {transaction_id:String(summary.id),currency:summary.currency,value:Number(summary.total),items:[{item_id:String(summary.package_id),item_name:summary.package,item_brand:summary.vendor,item_category:summary.package_type,price:Number(summary.total),quantity:1}]}, 'Lead');
+                }
+            }
+        } catch (error) {
+            target.innerHTML = '<p role="alert">' + escape([401,403,404].includes(error.status) ? 'This private order link is unavailable or has expired. Please open your latest email link or contact support.' : (error.body?.message || 'Order status could not be loaded. Please try again.')) + '</p><button type="button" class="thank-btn-ghost" id="retrySignedStatus">Try again</button>';
+        } finally { target.setAttribute('aria-busy','false'); }
+    }
+    target.addEventListener('click', event => { if (event.target.id === 'retrySignedStatus') load(); });
+    load();
+});
+</script>
+@else
 @php
     $successMessage = session('success');
     $isCheckoutCompletion = (bool) session('checkout_completed', false);
@@ -284,5 +351,6 @@
       } catch (error) {}
     });
   </script>
+@endif
 @endif
 @endsection

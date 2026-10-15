@@ -29,10 +29,10 @@
                 <tbody>
                     @forelse ($links as $l)
                         <tr>
-                            <td class="fw-semibold">{{ $l->platform }}</td>
-                            <td class="text-muted small">{{ $l->url }}</td>
+                            <td class="fw-semibold" data-admin-api-field="platform" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->platform }}</td>
+                            <td class="text-muted small" data-admin-api-field="url" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->url }}</td>
                             <td><i class="{{ $l->icon_class }}"></i></td>
-                            <td>{{ $l->sort_order }}</td>
+                            <td data-admin-api-field="sort_order" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $l->is_active ? 'success' : 'gray' }}">
                                     {{ $l->is_active ? 'Active' : 'Inactive' }}

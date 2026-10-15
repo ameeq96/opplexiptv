@@ -20,7 +20,7 @@ class ViewServiceProvider extends ServiceProvider
             $shared = $request->attributes->get('_opplex_ui_data');
 
             if (!is_array($shared)) {
-                $shared = resolve(UiData::class)->build();
+                $shared = resolve(\App\Services\Api\PublicSiteDataService::class)->pageData();
                 $request->attributes->set('_opplex_ui_data', $shared);
             }
 

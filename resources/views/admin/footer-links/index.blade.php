@@ -29,10 +29,10 @@
                 <tbody>
                     @forelse ($links as $l)
                         <tr>
-                            <td>{{ ucfirst($l->group) }}</td>
-                            <td class="fw-semibold">{{ $l->label }}</td>
-                            <td class="text-muted small">{{ $l->url }}</td>
-                            <td>{{ $l->sort_order }}</td>
+                            <td data-admin-api-field="group" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}" data-admin-api-format="title">{{ ucfirst($l->group) }}</td>
+                            <td class="fw-semibold" data-admin-api-field="label" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->label }}</td>
+                            <td class="text-muted small" data-admin-api-field="url" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->url }}</td>
+                            <td data-admin-api-field="sort_order" data-admin-api-object="l" data-admin-api-id="{{ $l->id }}">{{ $l->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $l->is_active ? 'success' : 'gray' }}">
                                     {{ $l->is_active ? 'Active' : 'Inactive' }}

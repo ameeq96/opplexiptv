@@ -6,17 +6,18 @@ use App\Models\CheckoutDraft;
 use App\Models\MarketingDelivery;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\URL;
 
 class MarketingUnsubscribeController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $data = $request->validate([
+        $data = validator($request->query(), [
             'user' => ['nullable', 'integer'],
             'draft' => ['nullable', 'uuid'],
             'channel' => ['required', 'in:email,whatsapp,ads,all'],
             'locale' => ['nullable', 'string', 'max:10'],
-        ]);
+        ])->validate();
 
         $locale = in_array($data['locale'] ?? null, config('app.locales', ['en']), true)
             ? $data['locale']
@@ -24,9 +25,11 @@ class MarketingUnsubscribeController extends Controller
         app()->setLocale($locale);
 
         if ($request->isMethod('get')) {
+            $action = URL::signedRoute('api.browser.marketing.unsubscribe', $data,
+                $request->query('expires') ? \Illuminate\Support\Carbon::createFromTimestamp((int) $request->query('expires')) : null);
             return view('pages.marketing-unsubscribed', [
                 'confirmed' => false,
-                'signedAction' => $request->fullUrl(),
+                'signedAction' => $action,
             ]);
         }
 
@@ -64,6 +67,7 @@ class MarketingUnsubscribeController extends Controller
                 ->update(['failed_at' => now(), 'last_error' => 'Unsubscribed']);
         }
 
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => __('marketing.unsubscribe.text'), 'data' => ['confirmed' => true]]);
         return view('pages.marketing-unsubscribed', ['confirmed' => true]);
     }
 }

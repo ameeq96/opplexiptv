@@ -89,7 +89,7 @@
             @foreach (['assigned_admin_id', 'subscription', 'payment', 'follow_up', 'source'] as $filter)
                 @if (request()->filled($filter))<input type="hidden" name="{{ $filter }}" value="{{ request($filter) }}">@endif
             @endforeach
-            <select name="per_page" class="form-select" onchange="this.form.submit()">
+            <select name="per_page" class="form-select" onchange="this.form.requestSubmit()">
                 @foreach ([10, 20, 30, 40, 100] as $size)
                     <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
                         Show {{ $size }}
@@ -112,7 +112,7 @@
                 Export Ads-Consented CSV
             </a>
 
-            <select name="consent" class="form-select" onchange="this.form.submit()">
+            <select name="consent" class="form-select" onchange="this.form.requestSubmit()">
                 <option value="">All Consent States</option>
                 <option value="email" @selected(request('consent') === 'email')>Email Consented</option>
                 <option value="whatsapp" @selected(request('consent') === 'whatsapp')>WhatsApp Consented</option>
@@ -121,7 +121,7 @@
 
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="exclude_iptv" value="1" id="excludeIPTV"
-                    onchange="this.form.submit()" {{ request('exclude_iptv') ? 'checked' : '' }}>
+                    onchange="this.form.requestSubmit()" {{ request('exclude_iptv') ? 'checked' : '' }}>
                 <label class="form-check-label" for="excludeIPTV">
                     Exclude IPTV Clients
                 </label>
@@ -172,11 +172,11 @@
                             <td>
                                 <input type="checkbox" name="client_ids[]" value="{{ $client->id }}">
                             </td>
-                            <td>{{ $client->name }}</td>
-                            <td>{{ $client->phone }}</td>
-                            <td><div>{{ $client->email ?: '—' }}</div><small class="text-muted">{{ $client->assignedAdmin?->name ?: 'Unassigned' }}</small></td>
+                            <td data-admin-api-field="name" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->name }}</td>
+                            <td data-admin-api-field="phone" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->phone }}</td>
+                            <td><div data-admin-api-field="email" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="—">{{ $client->email ?: '—' }}</div><small class="text-muted" data-admin-api-field="assignedAdmin.name" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="Unassigned">{{ $client->assignedAdmin?->name ?: 'Unassigned' }}</small></td>
                             <td>{{ $client->orders_count }} orders<br><span class="badge {{ $client->pending_follow_ups_count ? 'bg-warning text-dark' : 'bg-secondary' }}">{{ $client->pending_follow_ups_count }} pending follow-ups</span></td>
-                            <td>{{ $client->country ?? 'N/A' }}</td>
+                            <td data-admin-api-field="country" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="N/A">{{ $client->country ?? 'N/A' }}</td>
                             <td>
                                 <span class="badge-soft {{ $client->hasMarketingConsent('email') ? 'success' : 'gray' }}">Email</span>
                                 <span class="badge-soft {{ $client->hasMarketingConsent('whatsapp') ? 'success' : 'gray' }}">WhatsApp</span>

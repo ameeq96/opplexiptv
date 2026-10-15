@@ -58,22 +58,22 @@
     <div class="admin-grid dashboard-stats mb-4">
         <div class="stat-card dashboard-stat">
             <div class="dashboard-stat-top"><span>Total orders</span><span class="dashboard-stat-icon indigo"><i class="bi bi-box-seam" aria-hidden="true"></i></span></div>
-            <h4>{{ number_format($totalOrders ?? 0) }}</h4>
+            <h4 data-admin-api-field="totalOrders" data-admin-api-format="integer">{{ number_format($totalOrders ?? 0) }}</h4>
             <p class="dashboard-stat-meta">Orders in the selected period</p>
         </div>
         <div class="stat-card dashboard-stat">
             <div class="dashboard-stat-top"><span>Active orders</span><span class="dashboard-stat-icon green"><i class="bi bi-check2-circle" aria-hidden="true"></i></span></div>
-            <h4>{{ number_format($activeOrders ?? 0) }}</h4>
+            <h4 data-admin-api-field="activeOrders" data-admin-api-format="integer">{{ number_format($activeOrders ?? 0) }}</h4>
             <p class="dashboard-stat-meta">Not yet past their expiry date</p>
         </div>
         <div class="stat-card dashboard-stat">
             <div class="dashboard-stat-top"><span>Expired orders</span><span class="dashboard-stat-icon amber"><i class="bi bi-clock-history" aria-hidden="true"></i></span></div>
-            <h4>{{ number_format($expiredOrders ?? 0) }}</h4>
+            <h4 data-admin-api-field="expiredOrders" data-admin-api-format="integer">{{ number_format($expiredOrders ?? 0) }}</h4>
             <p class="dashboard-stat-meta">Past their expiry date</p>
         </div>
         <div class="stat-card dashboard-stat">
             <div class="dashboard-stat-top"><span>Total customers</span><span class="dashboard-stat-icon blue"><i class="bi bi-people" aria-hidden="true"></i></span></div>
-            <h4>{{ number_format($users ?? 0) }}</h4>
+            <h4 data-admin-api-field="users" data-admin-api-format="integer">{{ number_format($users ?? 0) }}</h4>
             <p class="dashboard-stat-meta">All customer records, across all time</p>
         </div>
     </div>

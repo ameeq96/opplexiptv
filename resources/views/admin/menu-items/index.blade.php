@@ -28,9 +28,9 @@
                 <tbody>
                     @forelse ($items as $i)
                         <tr>
-                            <td class="fw-semibold">{{ $i->label }}</td>
-                            <td class="text-muted small">{{ $i->url }}</td>
-                            <td>{{ $i->sort_order }}</td>
+                            <td class="fw-semibold" data-admin-api-field="label" data-admin-api-object="i" data-admin-api-id="{{ $i->id }}">{{ $i->label }}</td>
+                            <td class="text-muted small" data-admin-api-field="url" data-admin-api-object="i" data-admin-api-id="{{ $i->id }}">{{ $i->url }}</td>
+                            <td data-admin-api-field="sort_order" data-admin-api-object="i" data-admin-api-id="{{ $i->id }}">{{ $i->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $i->is_active ? 'success' : 'gray' }}">
                                     {{ $i->is_active ? 'Active' : 'Inactive' }}
@@ -49,8 +49,8 @@
                         @foreach ($i->children as $c)
                             <tr>
                                 <td class="ps-4">— {{ $c->label }}</td>
-                                <td class="text-muted small">{{ $c->url }}</td>
-                                <td>{{ $c->sort_order }}</td>
+                                <td class="text-muted small" data-admin-api-field="url" data-admin-api-object="c" data-admin-api-id="{{ $c->id }}">{{ $c->url }}</td>
+                                <td data-admin-api-field="sort_order" data-admin-api-object="c" data-admin-api-id="{{ $c->id }}">{{ $c->sort_order }}</td>
                                 <td>
                                     <span class="badge-soft {{ $c->is_active ? 'success' : 'gray' }}">
                                         {{ $c->is_active ? 'Active' : 'Inactive' }}

@@ -74,125 +74,65 @@ Route::prefix('admin')->name('admin.')->group(function () {
     // Guests (not logged in as admin)
     Route::middleware('guest:admin')->group(function () {
         Route::get('login',  [AuthController::class, 'showLogin'])->name('login');
-        Route::post('login', [AuthController::class, 'login'])
-            ->middleware(['throttle:20,1', AuditAdminAction::class])
-            ->name('login.attempt');
     });
 
     // Authenticated admins
     Route::middleware(['auth:admin', EnsureAdminSessionIsCurrent::class, AuditAdminAction::class])->group(function () {
-        Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
         Route::get('two-factor-challenge', [TwoFactorController::class, 'showChallenge'])
             ->name('two-factor.challenge');
-        Route::post('two-factor-challenge', [TwoFactorController::class, 'verifyChallenge'])
-            ->name('two-factor.verify');
 
         Route::get('password/change', [AuthController::class, 'showPasswordChange'])
             ->name('password.change');
-        Route::put('password/change', [AuthController::class, 'updatePassword'])
-            ->middleware('throttle:5,1')
-            ->name('password.update');
 
         Route::middleware(EnsureAdminPasswordChanged::class)->group(function () {
             Route::get('security/two-factor', [TwoFactorController::class, 'settings'])
                 ->name('two-factor.settings');
-            Route::post('security/two-factor', [TwoFactorController::class, 'confirm'])
-                ->middleware('throttle:6,1')
-                ->name('two-factor.confirm');
-            Route::post('security/two-factor/recovery-codes', [TwoFactorController::class, 'regenerateRecoveryCodes'])
-                ->middleware('throttle:6,1')
-                ->name('two-factor.recovery-codes');
-            Route::delete('security/two-factor', [TwoFactorController::class, 'disable'])
-                ->middleware('throttle:6,1')
-                ->name('two-factor.disable');
 
             Route::middleware([EnsureAdminTwoFactorAuthenticated::class, 'admin.access'])->group(function () {
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
         // === Everything that was previously under Route::middleware('admin') ===
-        Route::post('clients/import', [UserClientController::class, 'import'])->name('clients.import');
 
         Route::get(
             'clients/export/facebook-csv',
             [UserClientController::class, 'exportFacebookCsv']
         )->name('clients.export.facebook');
 
-        Route::delete('clients/bulk-delete', [UserClientController::class, 'bulkDelete'])->name('clients.bulkDelete');
-        Route::post('clients/contact-number-update', [UserClientController::class, 'scheduleContactNumberUpdate'])
-            ->middleware('throttle:2,10')
-            ->name('clients.contact-number-update');
-        Route::delete('orders/bulk-delete', [OrderController::class, 'bulkDelete'])->name('orders.bulkDelete');
-        Route::delete('reseller-orders/bulk-delete', [PanelOrderController::class, 'bulkDelete'])->name('reseller-orders.bulkDelete');
-        Route::delete('purchasing/bulk-delete', [PurchasingController::class, 'bulkDelete'])->name('purchasing.bulkDelete');
 
         Route::get('clients/export/crm', [UserClientController::class, 'exportCrm'])->name('clients.export.crm');
         Route::get('clients/unlinked', [UserClientController::class, 'unlinked'])->name('clients.unlinked');
-        Route::post('clients/link-activity', [UserClientController::class, 'linkActivity'])
-            ->middleware('throttle:30,1')->name('clients.link-activity');
-        Route::patch('clients/{client}/assignment', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'assign'])->name('clients.assignment');
-        Route::post('clients/{client}/notes', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeNote'])->name('clients.notes.store');
-        Route::post('clients/{client}/follow-ups', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeFollowUp'])->name('clients.follow-ups.store');
-        Route::patch('clients/{client}/follow-ups/{followUp}/complete', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'completeFollowUp'])->name('clients.follow-ups.complete');
-        Route::post('clients/{client}/tickets/{conversation}/reply', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'replyTicket'])
-            ->whereNumber('conversation')->middleware('throttle:30,1')->name('clients.tickets.reply');
-        Route::patch('clients/{client}/tickets/{conversation}/status', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'updateTicketStatus'])
-            ->whereNumber('conversation')->middleware('throttle:30,1')->name('clients.tickets.status');
-        Route::resource('clients', UserClientController::class);
+        Route::resource('clients', UserClientController::class)->only(['index', 'create', 'show', 'edit']);
 
-        Route::resource('orders', OrderController::class);
+        Route::resource('orders', OrderController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('orders/{order}/pictures/{picture}', [OrderController::class, 'showPicture'])
             ->name('orders.pictures.show');
-        Route::delete('orders/{order}/pictures/{picture}', [OrderController::class, 'destroyPicture'])
-            ->name('orders.pictures.destroy');
 
-        Route::resource('panel-orders', PanelOrderController::class);
+        Route::resource('panel-orders', PanelOrderController::class)->only(['index', 'create', 'show', 'edit']);
 
-        Route::resource('purchasing', PurchasingController::class);
+        Route::resource('purchasing', PurchasingController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('purchasing/{purchasing}/pictures/{picture}', [PurchasingController::class, 'showPicture'])
             ->name('purchasing.pictures.show');
-        Route::delete('purchasing/{purchasing}/pictures/{picture}', [PurchasingController::class, 'destroyPicture'])
-            ->name('purchasing.pictures.destroy');
 
-        Route::post('orders/bulk-action', [OrderController::class, 'bulkAction'])->name('orders.bulkAction');
-        Route::post('panel-orders/bulk-action', [PanelOrderController::class, 'bulkAction'])
-            ->name('reseller-orders.bulkAction');
 
-        Route::post('orders/{order}/mark-messaged', [OrderController::class, 'markOneMessaged'])
-            ->name('orders.markOneMessaged');
-        Route::post('orders/{order}/verify-payment', [OrderController::class, 'verifyPayment'])
-            ->middleware('throttle:10,1')
-            ->name('orders.verifyPayment');
 
-        Route::post('locale', [DashboardController::class, 'setLocale'])->name('locale');
-        Route::resource('blogs', AdminBlogController::class);
-        Route::post('blogs/{blog}/publish', [AdminBlogController::class, 'publish'])->name('blogs.publish');
-        Route::post('blogs/{blog}/archive', [AdminBlogController::class, 'archive'])->name('blogs.archive');
-        Route::post('blogs/{blog}/duplicate', [AdminBlogController::class, 'duplicate'])->name('blogs.duplicate');
+        Route::resource('blogs', AdminBlogController::class)->only(['index', 'create', 'show', 'edit']);
 
-        Route::resource('shop-products', AdminShopProductController::class);
+        Route::resource('shop-products', AdminShopProductController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('products', [AdminProductHubController::class, 'index'])->name('products.index');
-        Route::post('products/toggle-status', [AdminProductHubController::class, 'toggleStatus'])->name('products.toggle-status');
-        Route::resource('home-services', AdminHomeServiceController::class);
-        Route::resource('testimonials', AdminTestimonialController::class);
-        Route::resource('channel-logos', AdminChannelLogoController::class);
-        Route::resource('menu-items', AdminMenuItemController::class);
-        Route::resource('packages', AdminPackageController::class);
+        Route::resource('home-services', AdminHomeServiceController::class)->only(['index', 'create', 'show', 'edit']);
+        Route::resource('testimonials', AdminTestimonialController::class)->only(['index', 'create', 'show', 'edit']);
+        Route::resource('channel-logos', AdminChannelLogoController::class)->only(['index', 'create', 'show', 'edit']);
+        Route::resource('menu-items', AdminMenuItemController::class)->only(['index', 'create', 'show', 'edit']);
+        Route::resource('packages', AdminPackageController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('pricing-section', [AdminPricingSectionController::class, 'edit'])->name('pricing-section.edit');
-        Route::put('pricing-section', [AdminPricingSectionController::class, 'update'])->name('pricing-section.update');
         Route::get('footer-settings', [AdminFooterSettingController::class, 'edit'])->name('footer-settings.edit');
-        Route::put('footer-settings', [AdminFooterSettingController::class, 'update'])->name('footer-settings.update');
-        Route::resource('footer-links', AdminFooterLinkController::class);
-        Route::resource('social-links', AdminSocialLinkController::class);
+        Route::resource('footer-links', AdminFooterLinkController::class)->only(['index', 'create', 'show', 'edit']);
+        Route::resource('social-links', AdminSocialLinkController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('security/confirm', [TwoFactorController::class, 'showSensitiveConfirmation'])
             ->name('security.confirm');
-        Route::post('security/confirm', [TwoFactorController::class, 'confirmSensitiveAccess'])
-            ->middleware('throttle:5,1')
-            ->name('security.confirm.store');
         Route::middleware(EnsureRecentAdminConfirmation::class)->group(function () {
-            Route::delete('admin-users/{admin_user}/two-factor', [AdminUserController::class, 'resetTwoFactor'])
-                ->name('admin-users.two-factor.reset');
-            Route::resource('admin-users', AdminUserController::class)->except('show');
+            Route::resource('admin-users', AdminUserController::class)->except('show')->only(['index', 'create', 'show', 'edit']);
         });
         Route::get('audit-logs', [AdminAuditLogController::class, 'index'])->name('audit-logs.index');
         Route::get('audit-logs/{auditLog}', [AdminAuditLogController::class, 'show'])->name('audit-logs.show');
@@ -209,29 +149,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('digital-orders/{digital_order}/resend-email', [AdminDigitalOrderController::class, 'resendEmail'])->name('digital-orders.resend-email');
         ------------------------------------------------------------------- */
 
-        // Notifications
-        Route::get('notifications', [AdminNotificationController::class, 'index'])->name('notifications.index');
-        Route::post('notifications/{id}/read', [AdminNotificationController::class, 'markAsRead'])
-            ->name('notifications.read');
-        Route::post('notifications/read-all', [AdminNotificationController::class, 'markAllAsRead'])
-            ->name('notifications.readAll');
-
         Route::get('/trial-clicks', [TrialClickController::class, 'index'])->name('trial_clicks.index');
         Route::get('/trial-clicks/export', [TrialClickController::class, 'export'])->name('trial_clicks.export');
-        Route::patch('/trial-clicks/{trialClick}/status', [TrialClickController::class, 'updateStatus'])->name('trial_clicks.status');
-        Route::patch('/trial-clicks/{trialClick}/trial', [TrialClickController::class, 'updateTrial'])
-            ->middleware('throttle:20,1')->name('trial_clicks.trial');
-        Route::delete('/trial-clicks/bulk-delete', [TrialClickController::class, 'bulkDelete'])->name('trial_clicks.bulkDelete');
-        Route::delete('/trial-clicks/{trialClick}', [TrialClickController::class, 'destroy'])->name('trial_clicks.destroy');
 
         Route::get('maintenance', [AdminMaintenanceController::class, 'index'])
             ->name('maintenance.index');
-        Route::post('maintenance/run', [AdminMaintenanceController::class, 'run'])
-            ->middleware('throttle:3,1')
-            ->name('maintenance.run');
-        Route::post('maintenance/clear', [AdminMaintenanceController::class, 'runFull'])
-            ->middleware('throttle:3,1')
-            ->name('maintenance.clear');
             });
         });
     });
@@ -239,41 +161,22 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
 Route::prefix('account')->name('customer.')->middleware(\App\Http\Middleware\EnsureCustomerAccount::class.':public')->group(function () {
     Route::get('login', [\App\Http\Controllers\CustomerAccountController::class, 'login'])->name('login');
-    Route::post('access', [\App\Http\Controllers\CustomerAccountController::class, 'requestAccess'])
-        ->middleware('throttle:5,10')->name('access.request');
     Route::get('access', [\App\Http\Controllers\CustomerAccountController::class, 'access'])
         ->middleware(['signed', 'throttle:30,1'])->name('access');
-    Route::post('access/confirm', [\App\Http\Controllers\CustomerAccountController::class, 'consumeAccess'])
-        ->middleware(['signed', 'throttle:10,1'])->name('access.consume');
     Route::view('setup', 'pages.account.guides')->name('guides');
-    Route::match(['get', 'post'], 'renewal/unsubscribe', [\App\Http\Controllers\CustomerAccountController::class, 'unsubscribe'])
-        ->middleware(['signed', 'throttle:20,1'])->name('renewal.unsubscribe');
 
     Route::middleware(\App\Http\Middleware\EnsureCustomerAccount::class)->group(function () {
         Route::get('/', [\App\Http\Controllers\CustomerAccountController::class, 'dashboard'])->name('account');
-        Route::post('logout', [\App\Http\Controllers\CustomerAccountController::class, 'logout'])->name('logout');
         Route::get('orders/{order}', [\App\Http\Controllers\CustomerAccountController::class, 'order'])->whereNumber('order')->name('orders.show');
         Route::get('orders/{order}/renew', [\App\Http\Controllers\CustomerAccountController::class, 'renew'])
             ->whereNumber('order')->middleware('throttle:10,1')->name('orders.renew');
-        Route::patch('preferences', [\App\Http\Controllers\CustomerAccountController::class, 'preferences'])
-            ->middleware('throttle:10,1')->name('preferences');
-        Route::post('trials', [\App\Http\Controllers\CustomerAccountController::class, 'requestTrial'])
-            ->middleware('throttle:5,10')->name('trials.request');
         Route::get('trials/{trial}/plan', [\App\Http\Controllers\CustomerAccountController::class, 'trialPlan'])
             ->whereNumber('trial')->middleware('throttle:10,1')->name('trials.plan');
         Route::get('support', [\App\Http\Controllers\CustomerSupportController::class, 'index'])->name('support.index');
-        Route::post('support', [\App\Http\Controllers\CustomerSupportController::class, 'store'])
-            ->middleware('throttle:5,10')->name('support.store');
         Route::get('support/{conversation}', [\App\Http\Controllers\CustomerSupportController::class, 'show'])
             ->whereNumber('conversation')->name('support.show');
-        Route::post('support/{conversation}/messages', [\App\Http\Controllers\CustomerSupportController::class, 'reply'])
-            ->whereNumber('conversation')->middleware('throttle:15,1')->name('support.reply');
     });
 });
-
-Route::get('integrations/opplexify/catalog', [HomeController::class, 'opplexifyCatalog'])
-    ->middleware('throttle:60,1')
-    ->name('integrations.opplexify.catalog');
 
 // ---------------------------
 // Public (localized) routes
@@ -298,14 +201,7 @@ Route::group(
         Route::get('contact',         [HomeController::class, 'contact'])->name('contact');
         Route::get('pricing',         [HomeController::class, 'pricing'])->name('pricing');
         Route::get('movies',          [HomeController::class, 'movies'])->name('movies');
-        Route::get('movies/{mediaType}/{id}/trailer', [HomeController::class, 'movieTrailer'])
-            ->where(['mediaType' => 'movie|tv', 'id' => '[0-9]+'])
-            ->middleware('throttle:60,1')
-            ->name('movies.trailer');
         Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
-        Route::get('packages/providers/{package}/plans', [HomeController::class, 'providerPlans'])
-            ->whereNumber('package')
-            ->name('packages.provider-plans');
         Route::get('purchase/{package}', [HomeController::class, 'purchase'])
             ->whereNumber('package')
             ->middleware(['signed', 'throttle:30,1'])
@@ -331,9 +227,6 @@ Route::group(
         Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
         Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 
-        Route::post('send-email',     [HomeController::class, 'send'])->middleware('throttle:5,10,contact')->name('contact.send');
-        Route::post('subscribe',      [HomeController::class, 'subscribe'])->middleware('throttle:5,10,subscribe')->name('subscribe');
-        Route::get('trending',        [HomeController::class, 'getTrending']);
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
 
         Route::view('terms-of-service', 'policies.terms')->name('terms-of-service');
@@ -342,10 +235,6 @@ Route::group(
 
         Route::get('configure',        [HomeController::class, 'configure'])->name('configure');
         Route::get('checkout',         [HomeController::class, 'checkoutStep1'])->name('checkout');
-        Route::post('checkout/draft',  [CheckoutDraftController::class, 'store'])
-            ->middleware('throttle:20,1')
-            ->name('checkout.draft');
-        Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->middleware('throttle:10,1,checkout-payment')->name('step2');
         Route::get('thank-you', [HomeController::class, 'thankYou'])->name('thankyou');
         Route::get('refer/{code}', [ReferralController::class, 'capture'])
             ->where('code', '[A-Za-z0-9]+')
@@ -358,53 +247,8 @@ Route::get('/orders/{orderId}/status', [CustomerOrderStatusController::class, 's
     ->middleware(['signed', 'throttle:30,1'])
     ->name('orders.status');
 
-Route::post('/orders/{orderId}/payment-proof', [CustomerOrderStatusController::class, 'storeProof'])
-    ->whereNumber('orderId')
-    ->middleware(['signed', 'throttle:5,10'])
-    ->name('orders.payment-proof');
-
-Route::post('/track/whatsapp-trial', [TrackingController::class, 'whatsappTrial'])
-    ->name('track.whatsapp.trial')
-    ->middleware('throttle:30,1')
-    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
-
-Route::get('/whatsapp-leads/token', [TrackingController::class, 'whatsappLeadToken'])
-    ->name('whatsapp.leads.token')
-    ->middleware('throttle:30,1');
-
-Route::post('/whatsapp-leads', [TrackingController::class, 'storeWhatsAppLead'])
-    ->name('whatsapp.leads.store')
-    ->middleware('throttle:10,1');
-
-Route::post('/tawk-leads', [TrackingController::class, 'storeTawkLead'])
-    ->name('tawk.leads.store')
-    ->middleware('throttle:10,1,tawk-leads')
-    ->block(10, 10);
-
-Route::post('/tracking/consent', [TrackingConsentController::class, 'update'])
-    ->middleware('throttle:20,1')
-    ->name('tracking.consent');
 
 Route::get('/event-promotion/{delivery}/activate', EventPromotionController::class)
     ->whereNumber('delivery')
     ->middleware(['signed', 'throttle:20,1'])
     ->name('event-promotions.activate');
-
-Route::match(['get', 'post'], '/marketing/unsubscribe', MarketingUnsubscribeController::class)
-    ->middleware('signed')
-    ->name('marketing.unsubscribe');
-
-Route::post('/integrations/opplexify/orders/prepare', [\App\Http\Controllers\OpplexifyOrderController::class, 'prepare'])
-    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
-    ->middleware('throttle:60,1,opplexify-orders-prepare')
-    ->name('integrations.opplexify.orders.prepare');
-
-Route::post('/integrations/opplexify/orders/complete', [\App\Http\Controllers\OpplexifyOrderController::class, 'complete'])
-    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
-    ->middleware('throttle:60,1,opplexify-orders-complete')
-    ->name('integrations.opplexify.orders.complete');
-
-Route::post('/integrations/opplexify/customer-events', [\App\Http\Controllers\OpplexifyOrderController::class, 'customerEvent'])
-    ->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class)
-    ->middleware('throttle:120,1,opplexify-customer-events')
-    ->name('integrations.opplexify.customer-events');

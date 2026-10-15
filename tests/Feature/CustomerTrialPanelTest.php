@@ -170,8 +170,12 @@ class CustomerTrialPanelTest extends TestCase
         $this->actingAs($customer, 'web')->withSession([
             'customer_verified_email' => hash('sha256', User::normalizeEmail($customer->email)),
         ])->get(route('customer.account'))->assertOk()
-            ->assertSee('My verified trial')->assertSee($visible->lead_code)
-            ->assertSee('Not activated yet')
+            ->assertDontSee('My verified trial')
+            ->assertDontSee('Unverified trial must stay private')->assertDontSee('Another account trial');
+        $this->getJson(route('api.browser.customer.trials.index'))->assertOk()->assertJsonCount(1, 'data')
+            ->assertJsonPath('data.0.id', $visible->id)->assertJsonPath('data.0.package_name', 'My verified trial')
+            ->assertJsonPath('data.0.reference', $visible->lead_code)->assertJsonPath('data.0.status', 'pending')
+            ->assertJsonPath('data.0.started_at', null)->assertJsonPath('data.0.expires_at', null)
             ->assertDontSee('Unverified trial must stay private')->assertDontSee('Another account trial');
     }
 

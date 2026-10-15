@@ -17,25 +17,25 @@
     </div>
 
     <div class="row g-3 mb-4">
-        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Package orders</div><div class="fs-3 fw-bold">{{ $client->orders_count }}</div></div></div>
-        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Captured leads</div><div class="fs-3 fw-bold">{{ $client->trial_clicks_count }}</div></div></div>
-        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Checkout drafts</div><div class="fs-3 fw-bold">{{ $client->checkout_drafts_count }}</div></div></div>
-        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Digital orders</div><div class="fs-3 fw-bold">{{ $client->digital_orders_count }}</div></div></div>
+        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Package orders</div><div class="fs-3 fw-bold" data-admin-api-field="orders_count" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->orders_count }}</div></div></div>
+        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Captured leads</div><div class="fs-3 fw-bold" data-admin-api-field="trial_clicks_count" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->trial_clicks_count }}</div></div></div>
+        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Checkout drafts</div><div class="fs-3 fw-bold" data-admin-api-field="checkout_drafts_count" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->checkout_drafts_count }}</div></div></div>
+        <div class="col-md-3"><div class="admin-card h-100"><div class="text-muted small">Digital orders</div><div class="fs-3 fw-bold" data-admin-api-field="digital_orders_count" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->digital_orders_count }}</div></div></div>
     </div>
 
     <div class="admin-card mb-4">
         <h5 class="mb-3">Client profile</h5>
         <div class="row g-3">
-            <div class="col-md-4"><div class="text-muted small">Email</div><div>{{ $client->email ?: '—' }}</div></div>
-            <div class="col-md-4"><div class="text-muted small">Phone</div><div>{{ $client->phone ?: '—' }}</div></div>
-            <div class="col-md-4"><div class="text-muted small">Country</div><div>{{ $client->country ?: '—' }}</div></div>
-            <div class="col-md-4"><div class="text-muted small">Assigned team member</div><div>{{ $client->assignedAdmin?->name ?: 'Unassigned' }}</div></div>
+            <div class="col-md-4"><div class="text-muted small">Email</div><div data-admin-api-field="email" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="—">{{ $client->email ?: '—' }}</div></div>
+            <div class="col-md-4"><div class="text-muted small">Phone</div><div data-admin-api-field="phone" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="—">{{ $client->phone ?: '—' }}</div></div>
+            <div class="col-md-4"><div class="text-muted small">Country</div><div data-admin-api-field="country" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="—">{{ $client->country ?: '—' }}</div></div>
+            <div class="col-md-4"><div class="text-muted small">Assigned team member</div><div data-admin-api-field="assignedAdmin.name" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}" data-admin-api-empty="Unassigned">{{ $client->assignedAdmin?->name ?: 'Unassigned' }}</div></div>
             <div class="col-md-8"><div class="text-muted small">Recorded paid totals (test payments excluded)</div>@forelse ($paidTotals as $total)<span class="badge bg-success me-2">{{ $total->total_currency ?: 'Unknown currency' }} {{ number_format((float) $total->paid_total, 2) }}</span>@empty<span>No paid orders</span>@endforelse</div>
             <div class="col-md-4"><div class="text-muted small">Email consent</div><span class="badge {{ $client->hasMarketingConsent('email') ? 'bg-success' : 'bg-secondary' }}">{{ $client->hasMarketingConsent('email') ? 'Active' : 'Not active' }}</span></div>
             <div class="col-md-4"><div class="text-muted small">WhatsApp consent</div><span class="badge {{ $client->hasMarketingConsent('whatsapp') ? 'bg-success' : 'bg-secondary' }}">{{ $client->hasMarketingConsent('whatsapp') ? 'Active' : 'Not active' }}</span></div>
             <div class="col-md-4"><div class="text-muted small">Ads consent</div><span class="badge {{ $client->hasMarketingConsent('ads') ? 'bg-success' : 'bg-secondary' }}">{{ $client->hasMarketingConsent('ads') ? 'Active' : 'Not active' }}</span></div>
             @if ($client->notes)
-                <div class="col-12"><div class="text-muted small">Notes</div><div>{{ $client->notes }}</div></div>
+                <div class="col-12"><div class="text-muted small">Notes</div><div data-admin-api-field="notes" data-admin-api-object="client" data-admin-api-id="{{ $client->id }}">{{ $client->notes }}</div></div>
             @endif
         </div>
         @if (auth('admin')->user()->hasRole('owner', 'sales'))
@@ -84,7 +84,7 @@
                 <div class="d-flex flex-wrap justify-content-between gap-2"><strong>{{ str_replace(['.', '_'], ' ', $activity->event_type) }}</strong><time class="text-muted">{{ $activity->occurred_at?->format('Y-m-d H:i:s') }}</time></div>
                 <div class="small text-muted">{{ $activity->source }} · {{ $activity->entity_type ?: 'activity' }} #{{ $activity->entity_id ?: $activity->id }}@if ($activity->admin_id) · Recorded by admin #{{ $activity->admin_id }}@endif</div>
                 @if ($activity->entity_type === 'shared_checkout')<div class="small text-muted">Associated payment-link activity; actor anonymous / not payer identity.</div>@endif
-                @if ($activity->message)<p class="mb-1 mt-2" style="white-space: pre-wrap; overflow-wrap: anywhere">{{ $activity->message }}</p>@endif
+                @if ($activity->message)<p class="mb-1 mt-2" style="white-space: pre-wrap; overflow-wrap: anywhere" data-admin-api-field="message" data-admin-api-object="activity" data-admin-api-id="{{ $activity->id }}">{{ $activity->message }}</p>@endif
                 @if ($activity->contact_name || $activity->contact_email || $activity->contact_phone)<div class="small text-muted">Contact at this event: {{ $activity->contact_name }} {{ $activity->contact_email }} {{ $activity->contact_phone }}</div>@endif
                 @if ($activity->order_id)<a href="{{ route($activity->order?->type === 'reseller' ? 'admin.panel-orders.show' : 'admin.orders.show', $activity->order_id) }}">View recorded order #{{ $activity->order_id }}</a>@endif
                 @if (isset($activity->details['amount_minor']) && is_numeric($activity->details['amount_minor']))<div class="small">Amount: {{ $activity->details['currency'] ?? '' }} {{ number_format((float) $activity->details['amount_minor'] / 100, 2) }}</div>@endif
@@ -118,7 +118,7 @@
         </form>
         @forelse ($followUps as $followUp)
             <div class="border rounded p-3 mb-2 d-flex flex-wrap justify-content-between gap-3">
-                <div><strong style="overflow-wrap: anywhere">{{ $followUp->note }}</strong><div class="small text-muted">{{ $followUp->assignedAdmin?->name ?: 'Unassigned' }} · Due {{ $followUp->due_at?->format('Y-m-d H:i') }}</div><span class="badge {{ $followUp->status === 'pending' && $followUp->due_at?->isPast() ? 'bg-danger' : 'bg-secondary' }}">{{ $followUp->status === 'pending' && $followUp->due_at?->isPast() ? 'Overdue' : ucfirst($followUp->status) }}</span></div>
+                <div><strong style="overflow-wrap: anywhere" data-admin-api-field="note" data-admin-api-object="followUp" data-admin-api-id="{{ $followUp->id }}">{{ $followUp->note }}</strong><div class="small text-muted">{{ $followUp->assignedAdmin?->name ?: 'Unassigned' }} · Due {{ $followUp->due_at?->format('Y-m-d H:i') }}</div><span class="badge {{ $followUp->status === 'pending' && $followUp->due_at?->isPast() ? 'bg-danger' : 'bg-secondary' }}">{{ $followUp->status === 'pending' && $followUp->due_at?->isPast() ? 'Overdue' : ucfirst($followUp->status) }}</span></div>
                 @if ($followUp->status === 'pending' && (auth('admin')->user()->hasRole('owner', 'sales') || !$followUp->assigned_admin_id || (int) $followUp->assigned_admin_id === (int) auth('admin')->id()))<form action="{{ route('admin.clients.follow-ups.complete', [$client, $followUp]) }}" method="POST">@csrf @method('PATCH')<button class="btn btn-sm btn-outline-success" type="submit">Mark complete</button></form>@endif
             </div>
         @empty<p class="text-muted">No follow-ups yet.</p>@endforelse
@@ -134,7 +134,7 @@
         {{ $conversations->links('pagination::bootstrap-5') }}
         @if ($conversation)
             <h6 class="mt-4">{{ $conversation->channel }} conversation #{{ $conversation->id }}</h6>
-            @forelse ($messages as $message)<div class="rounded border p-3 my-2"><div class="small text-muted">{{ $message->sender_name ?: ucfirst($message->sender_type) }} · {{ $message->sent_at?->format('Y-m-d H:i:s') ?: 'Time not supplied' }}</div><div style="white-space: pre-wrap; overflow-wrap: anywhere">{{ $message->content }}</div></div>@empty<p class="text-muted">No transcript messages supplied.</p>@endforelse
+            @forelse ($messages as $message)<div class="rounded border p-3 my-2"><div class="small text-muted">{{ $message->sender_name ?: ucfirst($message->sender_type) }} · {{ $message->sent_at?->format('Y-m-d H:i:s') ?: 'Time not supplied' }}</div><div style="white-space: pre-wrap; overflow-wrap: anywhere" data-admin-api-field="content" data-admin-api-object="message" data-admin-api-id="{{ $message->id }}">{{ $message->content }}</div></div>@empty<p class="text-muted">No transcript messages supplied.</p>@endforelse
             {{ $messages->links('pagination::bootstrap-5') }}
             @if ($conversation->channel === 'portal' && $conversation->property_id === 'customer-account' && auth('admin')->user()->hasRole('owner', 'sales', 'support'))
                 <div class="border rounded p-3 mt-3">
@@ -169,12 +169,12 @@
                     <tr>
                         <td>{{ $order->created_at?->format('Y-m-d H:i') }}</td>
                         <td><a href="{{ route($orderRoute, $order) }}">{{ $order->package ?: 'Order #'.$order->id }}</a></td>
-                        <td>{{ $order->device?->name ?: '—' }}</td>
-                        <td>{{ ucfirst($order->type) }}</td>
+                        <td data-admin-api-field="device.name" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="—">{{ $order->device?->name ?: '—' }}</td>
+                        <td data-admin-api-field="type" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title">{{ ucfirst($order->type) }}</td>
                         <td><div>{{ $order->buying_date?->format('Y-m-d') ?: 'Not set' }}</div><div>{{ $order->expiry_date?->format('Y-m-d') ?: 'No end date set' }}</div>@if ($order->expiry_date && $order->expiry_date->lt(today()))<span class="badge bg-secondary">Past end date</span>@endif</td>
                         <td>{{ $order->duration ? $order->duration . ($order->package_id ? ' month(s)' : ' (stored value)') : 'Not set' }}</td>
-                        <td>{{ ucfirst($order->status) }}</td>
-                        <td>{{ ucfirst($order->payment_status) }}</td>
+                        <td data-admin-api-field="status" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title">{{ ucfirst($order->status) }}</td>
+                        <td data-admin-api-field="payment_status" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title">{{ ucfirst($order->payment_status) }}</td>
                         <td>{{ $order->currency ?: 'USD' }} {{ number_format((float) ($order->sell_price ?? $order->price), 2) }}</td>
                     </tr>
                 @empty
@@ -221,10 +221,10 @@
                 @forelse ($checkoutDrafts as $draft)
                     <tr>
                         <td>{{ $draft->last_activity_at?->format('Y-m-d H:i') }}</td>
-                        <td>{{ $draft->vendor ?: '—' }}</td>
-                        <td>{{ $draft->connection_name ?: '—' }}</td>
-                        <td>{{ $draft->email_consented_at ? 'Yes' : 'No' }}</td>
-                        <td>{{ $draft->whatsapp_consented_at ? 'Yes' : 'No' }}</td>
+                        <td data-admin-api-field="vendor" data-admin-api-object="draft" data-admin-api-id="{{ $draft->id }}" data-admin-api-empty="—">{{ $draft->vendor ?: '—' }}</td>
+                        <td data-admin-api-field="connection_name" data-admin-api-object="draft" data-admin-api-id="{{ $draft->id }}" data-admin-api-empty="—">{{ $draft->connection_name ?: '—' }}</td>
+                        <td data-admin-api-field="email_consented_at" data-admin-api-object="draft" data-admin-api-id="{{ $draft->id }}" data-admin-api-format="boolean" data-admin-api-yes="Yes" data-admin-api-no="No">{{ $draft->email_consented_at ? 'Yes' : 'No' }}</td>
+                        <td data-admin-api-field="whatsapp_consented_at" data-admin-api-object="draft" data-admin-api-id="{{ $draft->id }}" data-admin-api-format="boolean" data-admin-api-yes="Yes" data-admin-api-no="No">{{ $draft->whatsapp_consented_at ? 'Yes' : 'No' }}</td>
                         <td>{{ $draft->completedOrder ? 'Order #'.$draft->completedOrder->id : 'Incomplete' }}</td>
                     </tr>
                 @empty
@@ -245,10 +245,10 @@
                 @forelse ($digitalOrders as $order)
                     <tr>
                         <td>{{ $order->created_at?->format('Y-m-d H:i') }}</td>
-                        <td>{{ $order->order_number }}</td>
-                        <td>{{ $order->items_count }}</td>
-                        <td>{{ ucfirst($order->status) }}</td>
-                        <td>{{ ucfirst($order->payment_status) }}</td>
+                        <td data-admin-api-field="order_number" data-admin-api-object="digitalOrder" data-admin-api-id="{{ $order->id }}">{{ $order->order_number }}</td>
+                        <td data-admin-api-field="items_count" data-admin-api-object="digitalOrder" data-admin-api-id="{{ $order->id }}">{{ $order->items_count }}</td>
+                        <td data-admin-api-field="status" data-admin-api-object="digitalOrder" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title">{{ ucfirst($order->status) }}</td>
+                        <td data-admin-api-field="payment_status" data-admin-api-object="digitalOrder" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title">{{ ucfirst($order->payment_status) }}</td>
                         <td>{{ $order->currency }} {{ number_format((float) $order->total, 2) }}</td>
                     </tr>
                 @empty
@@ -270,9 +270,9 @@
                         <tbody>
                         @forelse ($referrals as $referral)
                             <tr>
-                                <td>{{ $referral->code }}</td>
+                                <td data-admin-api-field="code" data-admin-api-object="referral" data-admin-api-id="{{ $referral->id }}">{{ $referral->code }}</td>
                                 <td>{{ $referral->referrer_user_id === $client->id ? 'Referrer' : 'Referred customer' }}</td>
-                                <td>{{ ucfirst($referral->status) }}</td>
+                                <td data-admin-api-field="status" data-admin-api-object="referral" data-admin-api-id="{{ $referral->id }}" data-admin-api-format="title">{{ ucfirst($referral->status) }}</td>
                                 <td>{{ $referral->reward_value !== null ? ($referral->reward_currency.' '.number_format((float) $referral->reward_value, 2)) : '—' }}</td>
                             </tr>
                         @empty
@@ -294,7 +294,7 @@
                             <tr>
                                 <td>{{ $delivery->scheduled_at?->format('Y-m-d H:i') }}</td>
                                 <td>{{ ucfirst(str_replace('_', ' ', $delivery->workflow)) }}</td>
-                                <td>{{ ucfirst($delivery->channel) }}</td>
+                                <td data-admin-api-field="channel" data-admin-api-object="delivery" data-admin-api-id="{{ $delivery->id }}" data-admin-api-format="title">{{ ucfirst($delivery->channel) }}</td>
                                 <td>{{ $delivery->sent_at ? 'Sent' : ($delivery->failed_at ? 'Failed' : 'Pending') }}</td>
                             </tr>
                         @empty

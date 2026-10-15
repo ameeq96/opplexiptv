@@ -55,10 +55,10 @@
                                 @endif
                             </td>
                             <td>
-                                <div class="fw-semibold">{{ $s->title }}</div>
-                                <div class="text-muted small">{{ \Illuminate\Support\Str::limit($s->description, 120) }}</div>
+                                <div class="fw-semibold" data-admin-api-object="s" data-admin-api-id="{{ $s->id }}" data-admin-api-field="title">{{ $s->title }}</div>
+                                <div class="text-muted small" data-admin-api-object="s" data-admin-api-id="{{ $s->id }}" data-admin-api-field="description" data-admin-api-limit="120">{{ \Illuminate\Support\Str::limit($s->description, 120) }}</div>
                             </td>
-                            <td>{{ $s->sort_order }}</td>
+                            <td data-admin-api-object="s" data-admin-api-id="{{ $s->id }}" data-admin-api-field="sort_order">{{ $s->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $s->is_active ? 'success' : 'gray' }}">
                                     {{ $s->is_active ? 'Active' : 'Inactive' }}

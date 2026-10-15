@@ -34,7 +34,7 @@
                                     <span class="text-muted small">(You)</span>
                                 @endif
                             </td>
-                            <td>{{ $adminUser->email }}</td>
+                            <td data-admin-api-field="email" data-admin-api-object="adminUser" data-admin-api-id="{{ $adminUser->id }}">{{ $adminUser->email }}</td>
                             <td><span class="badge-soft gray">{{ ucfirst($adminUser->role ?: 'owner') }}</span></td>
                             <td>
                                 @if ($adminUser->two_factor_confirmed_at)

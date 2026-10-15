@@ -42,7 +42,7 @@
                         <span class="badge {{ $isReseller ? 'bg-warning text-dark' : 'bg-primary' }}">
                             {{ $isReseller ? 'Reseller' : 'Package' }}
                         </span>
-                        <span class="badge bg-light text-dark text-uppercase">{{ $order->status }}</span>
+                        <span class="badge bg-light text-dark text-uppercase" data-admin-api-field="status" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}">{{ $order->status }}</span>
                         @if ($order->messaged_at)
                             <span class="badge bg-success">Messaged</span>
                         @endif
@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="small text-muted">IPTV Username</div>
-                            <div class="fw-semibold">{{ $order->iptv_username ?: 'N/A' }}</div>
+                            <div class="fw-semibold" data-admin-api-field="iptv_username" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->iptv_username ?: 'N/A' }}</div>
                             @if ($order->device_id)
                                 <div class="text-muted small">Device ID: {{ $order->device_id }}</div>
                             @endif
@@ -97,20 +97,20 @@
                         </div>
                         <div class="col-md-4">
                             <div class="small text-muted">Payment Status</div>
-                            <div class="fw-semibold text-uppercase">{{ $order->payment_status }}</div>
-                            <div class="text-muted small">{{ $order->payment_provider ?: 'Not verified' }}</div>
+                            <div class="fw-semibold text-uppercase" data-admin-api-field="payment_status" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}">{{ $order->payment_status }}</div>
+                            <div class="text-muted small" data-admin-api-field="payment_provider" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="Not verified">{{ $order->payment_provider ?: 'Not verified' }}</div>
                         </div>
                         <div class="col-md-4">
                             <div class="small text-muted">GA4 Purchase</div>
-                            <div class="fw-semibold">{{ $order->ga_purchase_sent_at ? 'Sent' : 'Not sent' }}</div>
+                            <div class="fw-semibold" data-admin-api-field="ga_purchase_sent_at" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-format="boolean" data-admin-api-yes="Sent" data-admin-api-no="Not sent">{{ $order->ga_purchase_sent_at ? 'Sent' : 'Not sent' }}</div>
                         </div>
                         <div class="col-md-4">
                             <div class="small text-muted">Buying Date</div>
-                            <div class="fw-semibold">{{ $order->buying_date ?? 'N/A' }}</div>
+                            <div class="fw-semibold" data-admin-api-field="buying_date" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->buying_date ?? 'N/A' }}</div>
                         </div>
                         <div class="col-md-4">
                             <div class="small text-muted">Expiry Date</div>
-                            <div class="fw-semibold">{{ $order->expiry_date ?? 'N/A' }}</div>
+                            <div class="fw-semibold" data-admin-api-field="expiry_date" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->expiry_date ?? 'N/A' }}</div>
                         </div>
 
                         <div class="col-md-4">
@@ -119,13 +119,13 @@
                         </div>
                         <div class="col-md-4">
                             <div class="small text-muted">Credits</div>
-                            <div class="fw-semibold">{{ $order->credits ?? 'N/A' }}</div>
+                            <div class="fw-semibold" data-admin-api-field="credits" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->credits ?? 'N/A' }}</div>
                         </div>
                     </div>
 
                     <div class="mt-3">
                         <div class="small text-muted mb-1">Notes</div>
-                        <div class="border rounded p-2" style="min-height:60px;">
+                        <div class="border rounded p-2" style="min-height:60px;" data-admin-api-field="note" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="No notes added.">
                             {{ $order->note ?: 'No notes added.' }}
                         </div>
                     </div>

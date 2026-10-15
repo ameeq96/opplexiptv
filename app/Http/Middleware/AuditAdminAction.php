@@ -29,9 +29,12 @@ class AuditAdminAction
     public function handle(Request $request, Closure $next): mixed
     {
         $admin = auth('admin')->user();
-        $shouldAudit = ($request->routeIs('admin.*') || $request->is('admin/*'))
+        $routeName = (string) $request->route()?->getName();
+        $originalRouteName = str_starts_with($routeName, 'api.browser.admin.')
+            ? substr($routeName, strlen('api.browser.')) : $routeName;
+        $shouldAudit = ($request->routeIs('admin.*', 'api.browser.admin.*') || $request->is('admin/*'))
             && (in_array($request->method(), self::MUTATING_METHODS, true)
-                || $request->routeIs(...self::SENSITIVE_READ_ROUTES));
+                || in_array($originalRouteName, self::SENSITIVE_READ_ROUTES, true));
 
         $responseStatus = null;
 
@@ -51,7 +54,7 @@ class AuditAdminAction
         } finally {
             $admin ??= auth('admin')->user();
 
-            if ($shouldAudit && ($admin !== null || $request->routeIs('admin.login.attempt'))) {
+            if ($shouldAudit && ($admin !== null || $request->routeIs('admin.login.attempt', 'api.browser.admin.login.attempt'))) {
                 $this->record($request, $admin, $responseStatus);
             }
         }
@@ -66,7 +69,7 @@ class AuditAdminAction
                 'admin_id' => $admin?->getAuthIdentifier(),
                 'admin_name' => $admin?->name,
                 'admin_email' => $admin?->email
-                    ?? ($request->routeIs('admin.login.attempt') && is_string($request->input('email'))
+                    ?? ($request->routeIs('admin.login.attempt', 'api.browser.admin.login.attempt') && is_string($request->input('email'))
                         ? Str::lower($request->input('email'))
                         : null),
                 'action' => $this->resolveAction($request),

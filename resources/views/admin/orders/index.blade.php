@@ -32,7 +32,7 @@
 
             <div class="col-12 col-md-3 col-lg-2">
                 <label class="form-label small text-muted mb-1">Per Page</label>
-                <select name="per_page" class="form-select" onchange="this.form.submit()">
+                <select name="per_page" class="form-select" onchange="this.form.requestSubmit()">
                     @foreach ([10, 20, 30, 40, 100] as $size)
                         <option value="{{ $size }}" {{ request('per_page', 10) == $size ? 'selected' : '' }}>
                             Show {{ $size }}
@@ -49,7 +49,7 @@
 
             <div class="col-12 col-md-4 col-lg-2">
                 <label class="form-label small text-muted mb-1">Date</label>
-                <select name="date_filter" class="form-select" onchange="this.form.submit()">
+                <select name="date_filter" class="form-select" onchange="this.form.requestSubmit()">
                     <option value="">Date Filter</option>
                     <option value="today" {{ request('date_filter') == 'today' ? 'selected' : '' }}>Today</option>
                     <option value="yesterday" {{ request('date_filter') == 'yesterday' ? 'selected' : '' }}>Yesterday</option>
@@ -62,7 +62,7 @@
 
             <div class="col-12 col-md-4 col-lg-2">
                 <label class="form-label small text-muted mb-1">Expiry</label>
-                <select name="expiry_status" class="form-select" onchange="this.form.submit()">
+                <select name="expiry_status" class="form-select" onchange="this.form.requestSubmit()">
                     <option value="">Expiry Filter</option>
                     <option value="soon" {{ request('expiry_status') == 'soon' ? 'selected' : '' }}>Expiring Soon (Next 5 Days)</option>
                     <option value="expired" {{ request('expiry_status') == 'expired' ? 'selected' : '' }}>Already Expired</option>
@@ -71,7 +71,7 @@
 
             <div class="col-12 col-md-4 col-lg-2">
                 <label class="form-label small text-muted mb-1">Status</label>
-                <select name="status" class="form-select" onchange="this.form.submit()">
+                <select name="status" class="form-select" onchange="this.form.requestSubmit()">
                     @php $statusVal = request('status', 'all'); @endphp
                     <option value="all" {{ $statusVal === 'all' ? 'selected' : '' }}>All Statuses</option>
                     <option value="pending" {{ $statusVal === 'pending' ? 'selected' : '' }}>Pending</option>
@@ -135,7 +135,7 @@
                         @forelse ($orders as $order)
                             <tr>
                                 <td><input type="checkbox" name="order_ids[]" value="{{ $order->id }}"></td>
-                                <td>{{ $order->user->name ?? 'N/A' }}</td>
+                                <td data-admin-api-field="user.name" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="N/A">{{ $order->user->name ?? 'N/A' }}</td>
                                 <td>
                                     @php
                                         $defaultPackages = [
@@ -151,7 +151,7 @@
                                         $packageLabel = str_ireplace('starshare', 'Filex', $order->package);
                                     @endphp
                                     @if (!in_array($order->package, $defaultPackages))
-                                        <span>{{ $order->custom_package }}</span>
+                                        <span data-admin-api-field="custom_package" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}">{{ $order->custom_package }}</span>
                                     @else
                                         {{ $packageLabel }}
                                     @endif
@@ -173,7 +173,7 @@
                                         <strong class="text-muted">N/A</strong>
                                     @endif
                                 </td>
-                                <td>{{ $order->iptv_username ?? '-' }}</td>
+                                <td data-admin-api-field="iptv_username" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-empty="-">{{ $order->iptv_username ?? '-' }}</td>
                                 <td>{{ $order->currency }} {{ number_format($order->price, 2) }}</td>
                                 <td>
                                     @php
@@ -184,7 +184,7 @@
                                         {{ ucfirst($statusToShow) }}
                                     </span>
                                 </td>
-                                <td>{{ ucfirst($order->payment_method ?? '-') }}</td>
+                                <td data-admin-api-field="payment_method" data-admin-api-object="order" data-admin-api-id="{{ $order->id }}" data-admin-api-format="title" data-admin-api-empty="-">{{ ucfirst($order->payment_method ?? '-') }}</td>
                                 <td>{{ \Carbon\Carbon::parse($order->buying_date)->format('d M Y') }}</td>
                                 <td>
                                     @if ($order->expiry_date)
@@ -249,7 +249,7 @@
                                         @if ($waUniversal)
                                             <a href="{{ $waUniversal }}" target="_blank" rel="noopener"
                                                 class="btn btn-sm btn-outline-success wa-btn" data-id="{{ $order->id }}"
-                                                data-mark-messaged-url="{{ route('admin.orders.markOneMessaged', $order) }}"
+                                                data-mark-messaged-url="{{ route('api.browser.admin.orders.markOneMessaged', $order) }}"
                                                 data-android="{{ $waBusinessAndroid }}" data-web="{{ $waWeb }}">
                                                 WhatsApp
                                             </a>
@@ -387,7 +387,7 @@
             if (action === 'delete' && !confirm('Delete selected orders?')) return;
 
             bulkInput.value = action;
-            bulkForm.submit();
+            bulkForm.requestSubmit();
         });
 
         document.querySelectorAll('.wa-btn').forEach(btn => {

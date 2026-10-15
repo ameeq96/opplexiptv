@@ -22,6 +22,13 @@ class EnsureAdminSessionIsCurrent
             $request->session()->invalidate();
             $request->session()->regenerateToken();
 
+            if ($request->routeIs('api.browser.admin.*')) {
+                return response()->json([
+                    'message' => 'Your admin session expired. Please sign in again.',
+                    'code' => 'session_expired', 'redirect_url' => route('admin.login'),
+                ], 401);
+            }
+
             return redirect()->route('admin.login')->withErrors([
                 'email' => 'Your admin session expired. Please sign in again.',
             ]);

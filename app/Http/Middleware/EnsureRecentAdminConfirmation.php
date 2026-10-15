@@ -27,6 +27,13 @@ class EnsureRecentAdminConfirmation
                 'admin_sensitive_confirmed_version',
             ]);
 
+            if ($request->routeIs('api.browser.admin.*')) {
+                return response()->json([
+                    'message' => 'Confirm your identity before this sensitive action.',
+                    'code' => 'confirmation_required', 'redirect_url' => route('admin.security.confirm'),
+                ], 403);
+            }
+
             return redirect()->guest(route('admin.security.confirm'));
         }
 

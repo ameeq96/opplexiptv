@@ -61,9 +61,9 @@
                                     {{ $t->is_verified && $t->publication_consented_at ? 'Verified' : 'Not verified' }}
                                 </span>
                             </td>
-                            <td class="fw-semibold">{{ $t->author_name }}</td>
-                            <td class="text-muted small">{{ \Illuminate\Support\Str::limit($t->text, 90) }}</td>
-                            <td>{{ $t->sort_order }}</td>
+                            <td class="fw-semibold" data-admin-api-object="t" data-admin-api-id="{{ $t->id }}" data-admin-api-field="author_name">{{ $t->author_name }}</td>
+                            <td class="text-muted small" data-admin-api-object="t" data-admin-api-id="{{ $t->id }}" data-admin-api-field="text" data-admin-api-limit="90">{{ \Illuminate\Support\Str::limit($t->text, 90) }}</td>
+                            <td data-admin-api-object="t" data-admin-api-id="{{ $t->id }}" data-admin-api-field="sort_order">{{ $t->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $t->is_active ? 'success' : 'gray' }}">
                                     {{ $t->is_active ? 'Active' : 'Inactive' }}

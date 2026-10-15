@@ -37,7 +37,7 @@
                 <label class="form-label">Cover Image</label>
                 <input type="file" name="cover_image" class="form-control">
                 @if (!empty($blog->cover_image))
-                    <div class="small text-muted mt-1">{{ $blog->cover_image }}</div>
+                    <div class="small text-muted mt-1" data-admin-api-field="cover_image" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}">{{ $blog->cover_image }}</div>
                 @endif
             </div>
         </div>

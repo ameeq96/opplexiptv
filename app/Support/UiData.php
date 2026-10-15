@@ -38,9 +38,9 @@ class UiData
      *
      * @return array<string,mixed>
      */
-    public function build(): array
+    public function build(?string $pageContext = null, bool $browserContext = true): array
     {
-        $routeName = optional($this->request->route())->getName() ?: 'home';
+        $routeName = $pageContext ?? (optional($this->request->route())->getName() ?: 'home');
         $whatsappNumber = (string) config('services.whatsapp.number');
         $isMobile       = $this->agent->isMobile();
         $isRtl          = $this->locale->isRtl();
@@ -53,7 +53,7 @@ class UiData
 
         $a = 0;
         $b = 0;
-        if ($this->routeIs($routeName, ['contact', 'buynow', 'buynowpanel', 'checkout'])) {
+        if ($browserContext && $this->routeIs($routeName, ['contact', 'buynow', 'buynowpanel', 'checkout'])) {
             ['num1' => $a, 'num2' => $b] = $this->captcha->generate();
         }
 
@@ -182,6 +182,13 @@ class UiData
             'resellerPanelPackagesDropdown' => $resellerPanelPackagesDropdown,
             'assistant'                    => config('assistant'),
         ];
+    }
+
+    public function pageUrl(string $name, array $parameters = []): string
+    {
+        return \Mcamara\LaravelLocalization\Facades\LaravelLocalization::getLocalizedURL(
+            app()->getLocale(), route($name, $parameters), [], false
+        );
     }
 
     /** @param array<int,string> $routes */
@@ -359,7 +366,7 @@ class UiData
 
             $id = $m['id'] ?? null;
             $trailerEndpoint = $id !== null
-                ? route('movies.trailer', ['mediaType' => $mediaType, 'id' => $id])
+                ? route('api.movies.trailer', ['mediaType' => $mediaType, 'id' => $id, 'locale' => app()->getLocale()])
                 : null;
 
             return [
@@ -409,25 +416,25 @@ class UiData
                 'icon'        => 'flaticon-swimming-pool',
                 'title'       => __('messages.features.hd_quality.title'),
                 'description' => __('messages.features.hd_quality.description'),
-                'link'        => route('packages', ['direct' => 1]),
+                'link'        => $this->pageUrl('packages', ['direct' => 1]),
             ],
             [
                 'icon'        => 'flaticon-5g',
                 'title'       => __('messages.features.flexible_packages.title'),
                 'description' => __('messages.features.flexible_packages.description'),
-                'link'        => route('packages', ['direct' => 1]),
+                'link'        => $this->pageUrl('packages', ['direct' => 1]),
             ],
             [
                 'icon'        => 'flaticon-8k',
                 'title'       => __('messages.features.reliable_service.title'),
                 'description' => __('messages.features.reliable_service.description'),
-                'link'        => route('packages', ['direct' => 1]),
+                'link'        => $this->pageUrl('packages', ['direct' => 1]),
             ],
             [
                 'icon'        => 'flaticon-customer-service',
                 'title'       => __('messages.features.easy_setup.title'),
                 'description' => __('messages.features.easy_setup.description'),
-                'link'        => route('contact'),
+                'link'        => $this->pageUrl('contact'),
             ],
         ];
     }
@@ -485,7 +492,7 @@ class UiData
                 $children[] = [
                     'id' => null,
                     'label' => __('messages.nav_iptv_subscription_service'),
-                    'url' => route('iptv-subscription-service'),
+                    'url' => $this->pageUrl('iptv-subscription-service'),
                     'open_new_tab' => false,
                     'children' => [],
                 ];
@@ -605,7 +612,7 @@ class UiData
         ];
 
         if (isset($pathToRoute[$pathLower])) {
-            return route($pathToRoute[$pathLower]);
+            return $this->pageUrl($pathToRoute[$pathLower]);
         }
 
         $labelKey = Str::of((string) $label)->lower()->squish()->value();
@@ -626,7 +633,7 @@ class UiData
         ];
 
         if (isset($labelToRoute[$labelKey])) {
-            return route($labelToRoute[$labelKey]);
+            return $this->pageUrl($labelToRoute[$labelKey]);
         }
 
         return $path;

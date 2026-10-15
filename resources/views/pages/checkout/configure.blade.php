@@ -538,7 +538,8 @@
       </button>
     </header>
 
-    <form action="{{ route('checkout') }}" method="get" id="configForm" autocomplete="off">
+    <form action="{{ route('api.browser.checkout') }}" method="get" id="configForm" autocomplete="off" data-api-form>
+      <input type="hidden" name="locale" value="{{ app()->getLocale() }}">
       {{-- Hidden values sent to checkout --}}
       <input type="hidden" name="device"       id="deviceInput" value="{{ request('device') }}">
       <input type="hidden" name="device_id"    id="deviceIdInput" value="{{ request('device_id') }}">

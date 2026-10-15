@@ -19,6 +19,15 @@ use Illuminate\View\View;
 
 class AuthController extends Controller
 {
+    public function bootstrap(Request $request)
+    {
+        $admin = $request->user('admin');
+        return response()->json([
+            'data' => ['authenticated' => $admin !== null],
+            'csrf_token' => csrf_token(),
+        ])->header('Cache-Control', 'private, no-store');
+    }
+
     public function showLogin(CaptchaService $captcha)
     {
         return view('admin.auth.login', $captcha->generate());

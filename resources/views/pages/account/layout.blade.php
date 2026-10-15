@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow,noarchive">
     <meta name="referrer" content="no-referrer">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'My Account') · Opplex</title>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
@@ -157,11 +158,8 @@
         <div><a class="account-brand account-brand-mobile" href="{{ route('home') }}"><img src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV" width="250" height="65"></a><div class="account-header-title">@yield('title', 'My Account')</div><span class="account-header-label">Customer portal / Your workspace</span></div>
         <div class="account-header-actions">
             @if(app()->environment('local'))<span class="account-environment">Local preview</span>@endif
-            @if(auth('web')->check() && session('customer_verified_email') === hash('sha256', \App\Models\User::normalizeEmail(auth('web')->user()->email)))
-                <form method="post" action="{{ route('customer.logout') }}">@csrf<button class="account-button secondary" type="submit">Sign out</button></form>
-            @else
-                <a class="account-link" href="{{ route('home') }}">Back to website</a>
-            @endif
+            <form method="post" action="{{ route('api.browser.customer.logout') }}" data-api-form id="accountSignOut" hidden>@csrf<button class="account-button secondary" type="submit">Sign out</button></form>
+            <a class="account-link" href="{{ route('home') }}" id="accountBackHome">Back to website</a>
         </div>
     </div></header>
     <main id="account-main" tabindex="-1">
@@ -175,7 +173,23 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="{{ asset('js/api-browser.js') }}" defer></script>
 <script>
+    window.AccountPortal = {
+        escape(value) { return String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character])); },
+        date(value, time = false) { if (!value) return 'Not recorded'; const date = new Date(value.length === 10 ? `${value}T12:00:00` : value); return Number.isNaN(date.getTime()) ? 'Not recorded' : date.toLocaleString('en-GB', time ? {dateStyle:'medium',timeStyle:'short'} : {dateStyle:'medium'}); },
+        href(value) { try { const url = new URL(value, location.origin), local = ['127.0.0.1','localhost','[::1]']; if (url.username || url.password) return '#'; return url.origin === location.origin || (url.protocol === 'https:' && ['opplexify.com','www.opplexify.com'].includes(url.hostname)) || (local.includes(location.hostname) && local.includes(url.hostname) && ['http:','https:'].includes(url.protocol)) ? this.escape(url.href) : '#'; } catch (_) { return '#'; } },
+        error(error) { const notice = document.getElementById('accountValidationNotice'); notice.textContent = error.status === 401 ? 'Your session has expired. Please sign in again using your email. ' : (error.body?.message || error.message || 'Unable to load this information. Please try again.'); if (error.status === 401) { const link = document.createElement('a'); link.href = @json(route('customer.login')); link.textContent = 'Sign in'; notice.appendChild(link); } notice.hidden = false; notice.setAttribute('tabindex','-1'); notice.focus(); },
+        async load(url) { return window.OpplexApi.request(url); },
+        pagination(meta, action) { if (meta.last_page <= 1) return ''; return `<nav class="account-pagination" aria-label="Pages">${meta.current_page > 1 ? `<button class="account-button secondary" data-account-page="${action}" data-page="${meta.current_page - 1}">Previous</button>` : '<span></span>'}<span>Page ${meta.current_page} of ${meta.last_page}</span>${meta.current_page < meta.last_page ? `<button class="account-button secondary" data-account-page="${action}" data-page="${meta.current_page + 1}">Next</button>` : '<span></span>'}</nav>`; }
+    };
+    document.addEventListener('DOMContentLoaded', async () => {
+        try {
+            const response = await AccountPortal.load(@json(route('api.browser.customer.session')));
+            document.getElementById('accountSignOut').hidden = !response.data.authenticated;
+            document.getElementById('accountBackHome').hidden = response.data.authenticated;
+        } catch (error) { AccountPortal.error(error); }
+    });
     (() => {
         if (window.jQuery?.fn?.select2) {
             jQuery('select').each(function () {
@@ -214,7 +228,7 @@
             notice.hidden = false;
         }, true);
         document.querySelector('[data-account-errors]')?.focus();
-        document.querySelectorAll('form').forEach(form => form.addEventListener('submit', event => {
+        document.querySelectorAll('form:not([data-api-form])').forEach(form => form.addEventListener('submit', event => {
             if (form.dataset.submitting === '1') { event.preventDefault(); return; }
             if (!form.checkValidity()) return;
             form.dataset.submitting = '1';

@@ -26,6 +26,18 @@ class CustomerAccountController extends Controller
         return view('pages.account.login');
     }
 
+    public function session(Request $request)
+    {
+        $customer = $request->user('web');
+        $verified = $customer && $customer->email_verified_at
+            && hash_equals(hash('sha256', User::normalizeEmail($customer->email)), (string) $request->session()->get('customer_verified_email', ''));
+        return response()->json(['data' => [
+            'authenticated' => (bool) $verified,
+            'customer' => $verified ? ['id' => $customer->id, 'name' => $customer->name, 'email' => $customer->email] : null,
+            'csrf_token' => csrf_token(),
+        ]]);
+    }
+
     public function requestAccess(Request $request)
     {
         $data = $request->validate(['email' => ['required', 'email', 'max:191']]);
@@ -50,18 +62,22 @@ class CustomerAccountController extends Controller
                     Mail::mailer($mailer)->to($email)->send(new CustomerAccountAccessMail($accessUrl));
                 } catch (\Throwable $exception) {
                     report($exception);
+                    if ($request->routeIs('api.browser.*')) {
+                        return response()->json(['message' => 'Account email is temporarily unavailable. Please try again shortly.'], 503);
+                    }
                     return back()->withErrors(['email' => 'Account email is temporarily unavailable. Please try again shortly.'])->withInput();
                 }
             }
         }
 
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => $status]);
         return redirect()->route('customer.login')->with('status', $status);
     }
 
     public function access(Request $request)
     {
         $request->validate(['email' => ['required', 'email', 'max:191'], 'token' => ['required', 'string', 'size:64']]);
-        $action = URL::temporarySignedRoute('customer.access.consume', \Illuminate\Support\Carbon::createFromTimestamp((int) $request->query('expires')), [
+        $action = URL::temporarySignedRoute('api.browser.customer.access.consume', \Illuminate\Support\Carbon::createFromTimestamp((int) $request->query('expires')), [
             'email' => $request->query('email'), 'token' => $request->query('token'),
         ]);
         return view('pages.account.access', compact('action'));
@@ -89,8 +105,10 @@ class CustomerAccountController extends Controller
         $intended = $request->session()->pull('customer_intended_path');
         if (is_string($intended) && preg_match('~^/account(?:/|$)~', $intended)
             && ! str_contains($intended, '\\') && ! preg_match('/[\r\n]/', $intended)) {
+            if ($request->routeIs('api.browser.*')) return response()->json(['redirect_url' => $intended]);
             return redirect()->to($intended);
         }
+        if ($request->routeIs('api.browser.*')) return response()->json(['redirect_url' => route('customer.account')]);
         return redirect()->route('customer.account');
     }
 
@@ -100,36 +118,75 @@ class CustomerAccountController extends Controller
         $request->session()->forget(['customer_verified_email', 'customer_intended_path']);
         $request->session()->regenerate(true);
         $request->session()->regenerateToken();
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'You have signed out of your customer account.', 'redirect_url' => route('customer.login')]);
         return redirect()->route('customer.login')->with('status', 'You have signed out of your customer account.');
     }
 
     public function dashboard(Request $request)
     {
+        return view('pages.account.dashboard');
+    }
+
+    public function overview(Request $request)
+    {
         $customer = $request->user('web');
-        $orders = $customer->orders()->latest('id')->paginate(12);
-        $orderStates = $orders->getCollection()->mapWithKeys(fn ($order) => [$order->id => $this->orderState($order)]);
         $activeCount = $customer->orders()->where('status', 'active')->where('payment_status', 'paid')
             ->where(function ($query) { $query->whereNull('expiry_date')->orWhere('expiry_date', '>=', now()->startOfDay()); })->count();
         $pendingCount = $customer->orders()->where('status', 'pending')->where('payment_status', 'paid')
             ->where(function ($query) { $query->whereNull('expiry_date')->orWhere('expiry_date', '>=', now()->startOfDay()); })->count();
         $openTickets = $customer->customerConversations()->where('channel', 'portal')->where('property_id', 'customer-account')
             ->whereIn('status', ['open', 'in_progress'])->count();
+        return response()->json(['data' => [
+            'customer' => ['id' => $customer->id, 'name' => $customer->name, 'email' => $customer->email, 'renewal_email_enabled' => $customer->wantsRenewalEmail()],
+            'active_count' => $activeCount, 'pending_count' => $pendingCount, 'open_tickets' => $openTickets,
+        ]]);
+    }
+
+    public function orders(Request $request)
+    {
+        $request->validate(['page' => ['nullable', 'integer', 'min:1', 'max:1000000']]);
+        $orders = $request->user('web')->orders()->latest('id')->paginate(12);
+        return response()->json(['data' => $orders->getCollection()->map(fn (Order $order) => $this->orderData($order)),
+            'meta' => ['current_page' => $orders->currentPage(), 'last_page' => $orders->lastPage(), 'total' => $orders->total()]]);
+    }
+
+    public function trials(Request $request)
+    {
+        $customer = $request->user('web');
         $trials = $customer->trialClicks()->whereNotNull('trial_owner_verified_at')->where('intent', 'trial')->latest('id')->limit(10)->get();
+        return response()->json(['data' => $trials->map(fn (TrialClick $trial) => [
+            'id' => $trial->id, 'package_name' => $trial->package_name, 'reference' => $trial->lead_code,
+            'status' => $trial->trial_status, 'started_at' => $trial->trial_started_at?->toIso8601String(),
+            'expires_at' => $trial->trial_expires_at?->toIso8601String(),
+            'remaining_minutes' => $trial->trial_status === 'active' ? max(0, (int) ceil(now()->diffInMinutes($trial->trial_expires_at, false))) : null,
+            'plan_url' => $trial->trial_package_id ? route('api.browser.customer.trials.plan', $trial->id) : null,
+        ])]);
+    }
+
+    public function trialPackages()
+    {
         $trialPackages = Package::query()->where('active', true)->where('is_available', true)->where('type', 'iptv')
             ->where('free_trial_hours', '>', 0)->sorted()->get()
             ->filter(fn (Package $package) => $package->isSelectableIptvProvider())->values();
-
-        return view('pages.account.dashboard', compact('customer', 'orders', 'orderStates', 'activeCount', 'pendingCount', 'openTickets', 'trials', 'trialPackages'));
+        return response()->json(['data' => $trialPackages->map(fn (Package $package) => [
+            'id' => $package->id, 'title' => $package->title, 'vendor' => $package->vendor, 'free_trial_hours' => $package->free_trial_hours,
+        ])]);
     }
 
     public function order(Request $request, int $order)
     {
+        if (! $request->routeIs('api.browser.*')) {
+            abort_unless($request->user('web')->orders()->whereKey($order)->exists(), 404);
+            return view('pages.account.order', ['orderId' => $order]);
+        }
         $order = $request->user('web')->orders()->findOrFail($order);
-        $state = $this->orderState($order);
         $package = $order->package_id ? Package::find($order->package_id) : null;
         $renewable = $package && $package->active && $package->is_available && $package->price_amount > 0;
         $invoiceUrl = $this->invoiceUrl($order);
-        return view('pages.account.order', compact('order', 'state', 'renewable', 'invoiceUrl'));
+        return response()->json(['data' => $this->orderData($order) + [
+            'renewable' => (bool) $renewable, 'invoice_url' => $invoiceUrl,
+            'renew_url' => route('api.browser.customer.orders.renew', $order->id),
+        ]]);
     }
 
     public function renew(Request $request, int $order)
@@ -137,12 +194,16 @@ class CustomerAccountController extends Controller
         $order = $request->user('web')->orders()->findOrFail($order);
         $package = $order->package_id ? Package::find($order->package_id) : null;
         if (! $package || ! $package->active || ! $package->is_available || $package->price_amount <= 0) {
+            if ($request->routeIs('api.browser.*')) throw ValidationException::withMessages(['renewal' => 'This plan is not currently available for renewal. Please choose a plan or contact support.']);
             return redirect()->route('customer.orders.show', $order->id)->withErrors(['renewal' => 'This plan is not currently available for renewal. Please choose a plan or contact support.']);
         }
         if (! $this->checkoutOrigin()) {
+            if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Checkout is unavailable in this environment. No payment has been started.'], 503);
             return redirect()->route('customer.orders.show', $order->id)->withErrors(['renewal' => 'Checkout is unavailable in this environment. No payment has been started.']);
         }
-        return redirect()->to(URL::temporarySignedRoute('packages.purchase', now()->addMinutes(10), ['package' => $package->id]));
+        $url = URL::temporarySignedRoute('packages.purchase', now()->addMinutes(10), ['package' => $package->id]);
+        if ($request->routeIs('api.browser.*')) return response()->json(['redirect_url' => $url]);
+        return redirect()->to($url);
     }
 
     public function preferences(Request $request)
@@ -153,6 +214,7 @@ class CustomerAccountController extends Controller
         if (! $customer->renewal_email_enabled) {
             $this->cancelRenewalEmails($customer);
         }
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Expiry reminder preference saved. Your other marketing preferences have not changed.', 'data' => ['renewal_email_enabled' => $customer->renewal_email_enabled]]);
         return redirect()->route('customer.account')->with('status', 'Expiry reminder preference saved. Your other marketing preferences have not changed.');
     }
 
@@ -166,7 +228,10 @@ class CustomerAccountController extends Controller
             $this->cancelRenewalEmails($customer);
             $confirmed = true;
         }
-        return view('pages.account.unsubscribe', ['confirmed' => $confirmed, 'action' => $request->fullUrl()]);
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Expiry reminder emails are now turned off. Your service and other notification preferences are unchanged.', 'data' => ['confirmed' => $confirmed]]);
+        $action = URL::signedRoute('api.browser.customer.renewal.unsubscribe', ['user' => $data['user']],
+            $request->query('expires') ? \Illuminate\Support\Carbon::createFromTimestamp((int) $request->query('expires')) : null);
+        return view('pages.account.unsubscribe', ['confirmed' => $confirmed, 'action' => $action]);
     }
 
     public function requestTrial(Request $request)
@@ -195,6 +260,7 @@ class CustomerAccountController extends Controller
                 ]);
             }
         }, 3);
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Trial request recorded. Your trial clock starts only after support confirms activation.']);
         return redirect()->route('customer.account')->with('status', 'Trial request recorded. Your trial clock starts only after support confirms activation.');
     }
 
@@ -203,9 +269,27 @@ class CustomerAccountController extends Controller
         $trial = $request->user('web')->trialClicks()->whereNotNull('trial_owner_verified_at')->where('intent', 'trial')->findOrFail($trial);
         $package = $trial->trial_package_id ? Package::find($trial->trial_package_id) : null;
         if (! $package || ! $package->active || ! $package->is_available || $package->price_amount <= 0 || ! $this->checkoutOrigin()) {
+            if ($request->routeIs('api.browser.*')) throw ValidationException::withMessages(['trial' => 'This paid plan is not available here. Please choose a plan or contact support.']);
             return redirect()->route('customer.account')->withErrors(['trial' => 'This paid plan is not available here. Please choose a plan or contact support.']);
         }
-        return redirect()->to(URL::temporarySignedRoute('packages.purchase', now()->addMinutes(10), ['package' => $package->id]));
+        $url = URL::temporarySignedRoute('packages.purchase', now()->addMinutes(10), ['package' => $package->id]);
+        if ($request->routeIs('api.browser.*')) return response()->json(['redirect_url' => $url]);
+        return redirect()->to($url);
+    }
+
+    private function orderData(Order $order): array
+    {
+        return [
+            'id' => $order->id, 'package' => $order->package, 'status' => $order->status,
+            'payment_status' => $order->payment_status, 'state' => $this->orderState($order),
+            'buying_date' => $order->buying_date?->format('Y-m-d'), 'expiry_date' => $order->expiry_date?->format('Y-m-d'),
+            'paid_at' => $order->payment_status === 'paid' ? $order->paid_at?->toIso8601String() : null,
+            'paid_amount' => $order->payment_status === 'paid' ? $order->paid_amount : null,
+            'paid_currency' => $order->paid_currency ?: $order->currency,
+            'remaining_days' => $order->status === 'active' && $order->payment_status === 'paid' && $order->expiry_date
+                ? max(0, (int) ceil(now()->diffInDays($order->expiry_date->copy()->endOfDay(), false))) : null,
+            'url' => route('customer.orders.show', $order->id),
+        ];
     }
 
     private function cancelRenewalEmails(User $customer): void

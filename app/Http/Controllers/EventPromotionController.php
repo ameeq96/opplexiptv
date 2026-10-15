@@ -25,6 +25,11 @@ class EventPromotionController extends Controller
 
         $pricingUrl = LaravelLocalization::getLocalizedURL($locale, route('pricing'), [], true);
 
+        if ($request->routeIs('api.browser.*')) return response()->json([
+            'message' => $campaign['name'] . ': your 10% discount is active for checkout.',
+            'data' => ['name' => $campaign['name'], 'discount_percent' => EventPromotionService::DISCOUNT_PERCENT],
+            'redirect_url' => $pricingUrl,
+        ]);
         return redirect()->to($pricingUrl)->with(
             'event_promotion_activated',
             $campaign['name'] . ': your 10% discount is active for checkout.'

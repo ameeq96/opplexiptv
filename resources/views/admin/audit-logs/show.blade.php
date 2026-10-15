@@ -33,10 +33,10 @@
                     <dd class="col-sm-8">{{ $auditLog->action }}</dd>
 
                     <dt class="col-sm-4">Request</dt>
-                    <dd class="col-sm-8"><span class="badge text-bg-secondary">{{ $auditLog->method }}</span> {{ $auditLog->path }}</dd>
+                    <dd class="col-sm-8"><span class="badge text-bg-secondary" data-admin-api-field="method" data-admin-api-object="auditLog" data-admin-api-id="{{ $auditLog->id }}">{{ $auditLog->method }}</span> {{ $auditLog->path }}</dd>
 
                     <dt class="col-sm-4">Route</dt>
-                    <dd class="col-sm-8"><code>{{ $auditLog->route_name ?: '—' }}</code></dd>
+                    <dd class="col-sm-8"><code data-admin-api-field="route_name" data-admin-api-object="auditLog" data-admin-api-id="{{ $auditLog->id }}" data-admin-api-empty="—">{{ $auditLog->route_name ?: '—' }}</code></dd>
 
                     <dt class="col-sm-4">Target</dt>
                     <dd class="col-sm-8">

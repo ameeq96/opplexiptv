@@ -68,7 +68,7 @@ class CustomerAccountTest extends TestCase
         $this->get($url)->assertOk();
         $action = $response->viewData('action');
 
-        $this->post($action)->assertRedirect(route('customer.account'))
+        $this->postJson($action)->assertOk()->assertJsonPath('redirect_url', route('customer.account'))
             ->assertSessionHas('customer_verified_email', hash('sha256', User::normalizeEmail($user->email)));
         $this->assertAuthenticatedAs($user, 'web');
         $this->assertNotNull($user->fresh()->email_verified_at);
@@ -187,10 +187,15 @@ class CustomerAccountTest extends TestCase
         $this->invoiceLink($otherOrder, 'other_invoice_reference_99999');
 
         $this->customer($owner)->get(route('customer.account'))->assertOk()
-            ->assertSee('My private service')->assertDontSee('Other private service');
-        $this->get(route('customer.orders.show', $ownOrder))->assertOk()
-            ->assertViewHas('invoiceUrl', 'http://127.0.0.1:3000/public/safepay/invoice/'.$reference)
+            ->assertDontSee('My private service')->assertDontSee('Other private service');
+        $this->getJson(route('api.browser.customer.orders.index'))->assertOk()->assertJsonCount(1, 'data')
+            ->assertJsonPath('data.0.id', $ownOrder->id)->assertJsonPath('data.0.package', 'My private service')
+            ->assertDontSee('Other private service');
+        $this->getJson(route('api.browser.customer.orders.show', $ownOrder))->assertOk()
+            ->assertJsonPath('data.invoice_url', 'http://127.0.0.1:3000/public/safepay/invoice/'.$reference)
             ->assertDontSee('other_invoice_reference_99999');
+        $this->getJson(route('api.browser.customer.orders.show', $otherOrder))->assertNotFound();
+        $this->postJson(route('api.browser.customer.orders.renew', $otherOrder))->assertNotFound();
         $this->get(route('customer.orders.show', $otherOrder))->assertNotFound();
         $this->get(route('customer.orders.renew', $otherOrder))->assertNotFound();
     }
@@ -203,16 +208,20 @@ class CustomerAccountTest extends TestCase
         foreach (['pending', 'test_paid'] as $status) {
             $order = $this->order($owner, ['payment_status' => $status]);
             $this->invoiceLink($order, 'not_paid_reference_12345');
-            $this->get(route('customer.orders.show', $order))->assertOk()->assertViewHas('invoiceUrl', null);
+            $this->getJson(route('api.browser.customer.orders.show', $order))->assertOk()
+                ->assertJsonStructure(['data' => ['invoice_url']])->assertJsonPath('data.invoice_url', null);
         }
         $order = $this->order($owner);
         $this->invoiceLink($order, 'not_my_reference_12345', ['user_id' => $other->id]);
-        $this->get(route('customer.orders.show', $order))->assertOk()->assertViewHas('invoiceUrl', null);
+        $this->getJson(route('api.browser.customer.orders.show', $order))->assertOk()
+            ->assertJsonStructure(['data' => ['invoice_url']])->assertJsonPath('data.invoice_url', null);
         $this->invoiceLink($order, '../invalid-reference');
-        $this->get(route('customer.orders.show', $order))->assertOk()->assertViewHas('invoiceUrl', null);
+        $this->getJson(route('api.browser.customer.orders.show', $order))->assertOk()
+            ->assertJsonStructure(['data' => ['invoice_url']])->assertJsonPath('data.invoice_url', null);
         $this->invoiceLink($order, 'first_valid_reference_12345');
         $this->invoiceLink($order, 'second_valid_reference_12345');
-        $this->get(route('customer.orders.show', $order))->assertOk()->assertViewHas('invoiceUrl', null);
+        $this->getJson(route('api.browser.customer.orders.show', $order))->assertOk()
+            ->assertJsonStructure(['data' => ['invoice_url']])->assertJsonPath('data.invoice_url', null);
     }
 
     public function test_activation_and_payment_states_are_distinct_and_test_payments_do_not_count(): void
@@ -225,9 +234,10 @@ class CustomerAccountTest extends TestCase
         $expired = $this->order($owner, ['status' => 'active', 'expiry_date' => now()->subDay()]);
         $expiredPending = $this->order($owner, ['status' => 'pending', 'expiry_date' => now()->subDay()]);
 
-        $response = $this->customer($owner)->get(route('customer.account'))->assertOk()
-            ->assertViewHas('activeCount', 1)->assertViewHas('pendingCount', 1);
-        $states = $response->viewData('orderStates');
+        $this->customer($owner)->getJson(route('api.browser.customer.overview'))->assertOk()
+            ->assertJsonPath('data.active_count', 1)->assertJsonPath('data.pending_count', 1);
+        $response = $this->getJson(route('api.browser.customer.orders.index'))->assertOk()->assertJsonCount(6, 'data');
+        $states = collect($response->json('data'))->mapWithKeys(fn ($order) => [$order['id'] => $order['state']])->all();
         $this->assertSame('Service active', $states[$active->id]['label']);
         $this->assertSame('Activation pending', $states[$pending->id]['label']);
         $this->assertSame('Test payment only', $states[$test->id]['label']);
@@ -245,7 +255,8 @@ class CustomerAccountTest extends TestCase
         $this->app->instance('env', 'local');
         config(['services.opplexify.url' => 'https://opplexify.com']);
 
-        $this->customer($owner)->get(route('customer.orders.show', $order))->assertOk()->assertViewHas('invoiceUrl', null);
+        $this->customer($owner)->getJson(route('api.browser.customer.orders.show', $order))->assertOk()
+            ->assertJsonStructure(['data' => ['invoice_url']])->assertJsonPath('data.invoice_url', null);
         $this->get(route('customer.orders.renew', $order))
             ->assertRedirect(route('customer.orders.show', $order))->assertSessionHasErrors('renewal');
         $this->assertDatabaseCount('orders', 1);

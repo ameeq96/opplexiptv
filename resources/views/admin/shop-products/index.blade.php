@@ -52,11 +52,11 @@
                                      style="width:48px;height:48px;object-fit:cover;border-radius:10px;">
                             </td>
                             <td>
-                                <div class="fw-semibold">{{ $p->name }}</div>
-                                <div class="text-muted small">{{ $p->link }}</div>
+                                <div class="fw-semibold" data-admin-api-field="name" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->name }}</div>
+                                <div class="text-muted small" data-admin-api-field="link" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->link }}</div>
                             </td>
-                            <td>{{ $p->asin ?? '—' }}</td>
-                            <td>{{ $p->sort_order }}</td>
+                            <td data-admin-api-field="asin" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}" data-admin-api-empty="—">{{ $p->asin ?? '—' }}</td>
+                            <td data-admin-api-field="sort_order" data-admin-api-object="p" data-admin-api-id="{{ $p->id }}">{{ $p->sort_order }}</td>
                             <td>
                                 <span class="badge-soft {{ $p->is_active ? 'success' : 'gray' }}">
                                     {{ $p->is_active ? 'Active' : 'Inactive' }}

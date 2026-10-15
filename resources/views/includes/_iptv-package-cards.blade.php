@@ -33,8 +33,7 @@
         ->mapWithKeys(static fn ($package) => [
             $catalogServiceName($package) => (float) data_get($package, 'price_amount', 0),
         ]);
-    $activeEventPromotion = $activeEventPromotion
-        ?? app(\App\Services\EventPromotionService::class)->activeForSession();
+    $activeEventPromotion = $activeEventPromotion ?? null;
 @endphp
 
 @foreach ($displayPackages as $package)

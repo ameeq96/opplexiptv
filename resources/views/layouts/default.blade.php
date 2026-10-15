@@ -16,6 +16,7 @@
 
 <head>
     @include('includes.head')
+    <script src="{{ asset('js/api-browser.js') }}" defer></script>
 </head>
 
 <body>
@@ -214,14 +215,14 @@
                     for (var attempt = 0; attempt < 3; attempt++) {
                         try {
                             if (!csrfToken) {
-                                var tokenResponse = await request(@json(route('whatsapp.leads.token', [], false)), {
+                                var tokenResponse = await request(@json(route('api.browser.whatsapp.leads.token', [], false)), {
                                     headers: { 'Accept': 'application/json' }
                                 });
                                 if (!tokenResponse.ok) throw new Error('Token request failed');
                                 csrfToken = (await tokenResponse.json()).csrf_token;
                                 if (typeof csrfToken !== 'string' || !csrfToken) throw new Error('Missing token');
                             }
-                            var response = await request(@json(route('tawk.leads.store', [], false)), {
+                            var response = await request(@json(route('api.browser.tawk.leads.store', [], false)), {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',

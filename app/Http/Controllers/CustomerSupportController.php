@@ -14,7 +14,15 @@ class CustomerSupportController extends Controller
 {
     public function index(Request $request)
     {
-        return $this->ticketView($request);
+        return view('pages.account.support', ['conversationId' => null]);
+    }
+
+    public function data(Request $request)
+    {
+        $request->validate(['page' => ['nullable', 'integer', 'min:1', 'max:1000000']]);
+        $tickets = $this->tickets((int) $request->user('web')->id)->latest('updated_at')->orderByDesc('id')->paginate(15);
+        return response()->json(['data' => $tickets->getCollection()->map(fn (CustomerConversation $ticket) => $this->ticketData($ticket)),
+            'meta' => ['current_page' => $tickets->currentPage(), 'last_page' => $tickets->lastPage(), 'total' => $tickets->total()]]);
     }
 
     public function store(Request $request)
@@ -47,12 +55,30 @@ class CustomerSupportController extends Controller
             return $ticket;
         });
 
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Your support request has been saved. Check this page for replies from our team.', 'data' => $this->ticketData($ticket), 'redirect_url' => route('customer.support.show', $ticket->id)]);
         return redirect()->route('customer.support.show', $ticket->id)->with('success', 'Your support request has been saved. Check this page for replies from our team.');
     }
 
     public function show(Request $request, int $conversation)
     {
-        return $this->ticketView($request, $this->tickets((int) $request->user('web')->id)->findOrFail($conversation));
+        if (! $request->routeIs('api.browser.*')) {
+            abort_unless($this->tickets((int) $request->user('web')->id)->whereKey($conversation)->exists(), 404);
+            return view('pages.account.support', ['conversationId' => $conversation]);
+        }
+        return response()->json(['data' => $this->ticketData($this->tickets((int) $request->user('web')->id)->findOrFail($conversation))]);
+    }
+
+    public function messages(Request $request, int $conversation)
+    {
+        $request->validate(['page' => ['nullable', 'integer', 'min:1', 'max:1000000']]);
+        $ticket = $this->tickets((int) $request->user('web')->id)->findOrFail($conversation);
+        $query = $ticket->messages()->whereIn('sender_type', ['customer', 'support']);
+        $lastPage = max(1, (int) ceil($query->count() / 30));
+        $messages = $query->orderBy('sent_at')->orderBy('id')->paginate(30, ['*'], 'page', min((int) ($request->query('page') ?: $lastPage), $lastPage));
+        return response()->json(['data' => $messages->getCollection()->map(fn (CustomerMessage $message) => [
+            'id' => $message->id, 'sender_type' => $message->sender_type, 'content' => $message->content,
+            'sent_at' => $message->sent_at?->toIso8601String(),
+        ]), 'meta' => ['current_page' => $messages->currentPage(), 'last_page' => $messages->lastPage(), 'total' => $messages->total()]]);
     }
 
     public function reply(Request $request, int $conversation)
@@ -76,7 +102,15 @@ class CustomerSupportController extends Controller
             }
         });
 
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Your reply has been saved. Our team can read it in your support ticket.']);
         return redirect()->route('customer.support.show', $conversation)->with('success', 'Your reply has been saved. Our team can read it in your support ticket.');
+    }
+
+    private function ticketData(CustomerConversation $ticket): array
+    {
+        return ['id' => $ticket->id, 'status' => $ticket->status,
+            'started_at' => $ticket->started_at?->toIso8601String(), 'updated_at' => $ticket->updated_at?->toIso8601String(),
+            'url' => route('customer.support.show', $ticket->id)];
     }
 
     private function tickets(int $userId)

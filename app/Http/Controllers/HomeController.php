@@ -41,24 +41,12 @@ class HomeController extends Controller
         private ResponsiveProductImageService $responsiveProductImages,
         private CustomerIdentityService $customerIdentity,
         private EventPromotionService $eventPromotions,
+        private \App\Services\Api\PublicSiteDataService $siteData,
     ) {}
 
     public function home()
     {
-        $allProducts = $this->unifiedProducts->frontendProducts();
-
-        $homeProducts = $allProducts
-            ->where('type', 'digital')
-            ->values();
-        $homeAffiliateProducts = $allProducts
-            ->where('type', 'affiliate')
-            ->values();
-
-        return view('pages.home', [
-            'homeProducts' => $homeProducts,
-            'homeAffiliateProducts' => $homeAffiliateProducts,
-            'isRtl'        => $this->locale->isRtl(),
-        ]);
+        return view('pages.home', $this->siteData->home());
     }
 
     public function about()
@@ -128,66 +116,17 @@ class HomeController extends Controller
 
     public function providerPlans(Package $package)
     {
-        abort_unless(
-            $package->active
-                && $package->type === 'iptv'
-                && in_array($package->vendor, ['opplex', 'starshare'], true)
-                && $package->isSelectableIptvProvider()
-                && (float) $package->price_amount > 0,
-            404
-        );
-
-        $providerName = $this->packageServiceName($package);
-        $providerTitles = $package->isDurationPlan()
-            ? Package::DURATION_PLAN_TITLES
-            : [
-                $providerName,
-                $providerName . ' - Monthly',
-                $providerName . ' - 1 Month',
-                $providerName . ' - 3 Months',
-                $providerName . ' - Half Yearly',
-                $providerName . ' - Yearly',
-            ];
-        $candidates = Package::query()
-            ->where('active', true)
-            ->where('type', 'iptv')
-            ->where('vendor', $package->vendor)
-            ->whereIn('title', $providerTitles)
-            ->where('price_amount', '>', 0)
-            ->orderByRaw('COALESCE(sort_order, duration_months, id)')
-            ->with('translations')
-            ->get();
-        if ($candidates->contains(static fn (Package $candidate) => in_array(
-            'Yearly subscription only (monthly plan unavailable)',
-            $candidate->features ?? [],
-            true
-        ))) {
-            $candidates = $candidates
-                ->where('duration_months', 12)
-                ->values();
-        }
-        $packages = $candidates
-            ->take(4)
-            ->map(function (Package $candidate): array {
-                $card = $candidate->toIptvArray();
-                $card['service'] = $this->packageServiceName($candidate);
-
-                return $card;
-            })
-            ->values()
-            ->all();
-
-        abort_if(empty($packages), 404);
-
+        $data = $this->siteData->providerPlans($package);
         $html = view('includes._iptv-package-cards', [
-            'displayPackages' => $packages,
-            'initialIptvService' => $providerName,
+            'displayPackages' => $data['packages'],
+            'initialIptvService' => $data['provider_name'],
             'isMobile' => app(\Jenssegers\Agent\Agent::class)->isMobile(),
+            'activeEventPromotion' => $this->eventPromotions->activeForSession(),
         ])->render();
 
         return response()->json([
-            'provider_name' => $providerName,
-            'count' => count($packages),
+            'provider_name' => $data['provider_name'],
+            'count' => $data['count'],
             'html' => $html,
         ])->header('Cache-Control', 'private, no-store');
     }
@@ -214,10 +153,14 @@ class HomeController extends Controller
         ], JSON_THROW_ON_ERROR)), '+/', '-_'), '=');
         $signature = hash_hmac('sha256', $selection, $secret);
 
-        return redirect()->away($destination . '/checkout?' . http_build_query([
+        $url = $destination . '/checkout?' . http_build_query([
             'selection' => $selection,
             'signature' => $signature,
-        ], '', '&', PHP_QUERY_RFC3986));
+        ], '', '&', PHP_QUERY_RFC3986);
+
+        return request()->expectsJson()
+            ? response()->json(['redirect_url' => $url])
+            : redirect()->away($url);
     }
 
     public function opplexifyCatalog(Request $request)
@@ -227,7 +170,11 @@ class HomeController extends Controller
 
         $timestamp = (string) $request->header('X-Opplexify-Timestamp', '');
         $signature = strtolower((string) $request->header('X-Opplexify-Signature', ''));
-        $signaturePayload = "GET\n/integrations/opplexify/catalog\n{$timestamp}";
+        $path = $request->getPathInfo();
+        abort_unless($request->isMethod('GET') && in_array($path, [
+            '/integrations/opplexify/catalog', '/api/integrations/opplexify/catalog',
+        ], true), 401);
+        $signaturePayload = "GET\n{$path}\n{$timestamp}";
         $expectedSignature = hash_hmac('sha256', $signaturePayload, $secret);
 
         abort_unless(
@@ -239,87 +186,8 @@ class HomeController extends Controller
             401
         );
 
-        $currency = strtoupper((string) config('services.app.default_currency', 'USD'));
-        $iptvRows = Package::query()
-            ->where('active', true)
-            ->where('type', 'iptv')
-            ->whereIn('vendor', ['opplex', 'starshare'])
-            ->where('is_available', true)
-            ->where('price_amount', '>', 0)
-            ->sorted()
-            ->get()
-            ->filter(fn (Package $package) => $package->isSelectableIptvProvider())
-            ->values();
-
-        if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
-            $iptvRows = $iptvRows
-                ->reject(fn (Package $package) => $package->isDurationPlan())
-                ->values();
-        }
-
-        $annualOnlyServices = $iptvRows
-            ->filter(static fn (Package $package) => in_array(
-                'Yearly subscription only (monthly plan unavailable)',
-                $package->features ?? [],
-                true
-            ))
-            ->map(fn (Package $package) => Str::lower($this->packageServiceName($package)))
-            ->unique();
-        $iptvRows = $iptvRows
-            ->reject(fn (Package $package) => $annualOnlyServices->contains(
-                Str::lower($this->packageServiceName($package))
-            ) && (int) $package->duration_months !== 12)
-            ->values();
-
-        $resellerRows = Package::query()
-            ->where('active', true)
-            ->where('type', 'reseller')
-            ->whereIn('vendor', ['opplex', 'starshare'])
-            ->where('is_available', true)
-            ->where('price_amount', '>', 0)
-            ->sorted()
-            ->get();
-
-        $packages = $iptvRows
-            ->concat($resellerRows)
-            ->map(function (Package $package) use ($currency): array {
-                return [
-                    'id' => (int) $package->getKey(),
-                    'type' => (string) $package->type,
-                    'vendor' => (string) $package->vendor,
-                    'provider_name' => $this->packageServiceName($package),
-                    'title' => (string) $package->title,
-                    'display_price' => $package->display_price,
-                    'price_amount' => (float) $package->price_amount,
-                    'currency' => $currency,
-                    'duration_months' => $package->duration_months,
-                    'credits' => $package->credits,
-                    'features' => array_values($package->features ?? []),
-                    'badge_key' => $package->badge_key,
-                    'is_featured' => (bool) $package->is_featured,
-                    'is_available' => true,
-                    'free_trial_hours' => (int) ($package->free_trial_hours ?? 0),
-                    'instant_activation' => (bool) $package->instant_activation,
-                    'sort_order' => (int) ($package->sort_order ?? 0),
-                ];
-            })
-            ->values();
-
-        $devices = Device::query()
-            ->orderBy('name')
-            ->get(['id', 'name', 'icon'])
-            ->map(static fn (Device $device): array => [
-                'id' => (int) $device->getKey(),
-                'name' => (string) $device->name,
-                'icon' => (string) ($device->icon ?? ''),
-            ])
-            ->values();
-
-        return response()->json([
-            'data' => $packages,
-            'devices' => $devices,
-            'generated_at' => now()->toIso8601String(),
-        ])->header('Cache-Control', 'private, no-store');
+        return response()->json($this->siteData->catalog())
+            ->header('Cache-Control', 'private, no-store');
     }
 
     public function iptvSubscriptionService()
@@ -349,146 +217,12 @@ class HomeController extends Controller
 
     public function shop()
     {
-        $usesDocumentLayout = in_array(app()->getLocale(), config('app.locales', ['en']), true);
-        $type = $usesDocumentLayout ? 'all' : 'affiliate';
-        $allProducts = $this->unifiedProducts->frontendProducts();
-
-        if ($usesDocumentLayout) {
-            $documentProductPriority = [
-                'affiliate:B08CRV62C4' => 0,
-                'affiliate:B0BP9SNVH9' => 1,
-                'affiliate:B0DXXYS4BJ' => 2,
-                'affiliate:B00SFSU53G' => 3,
-                'digital:netflix' => 4,
-                'digital:prime-video' => 5,
-                'digital:hbo-max-premium' => 6,
-                'digital:nordvpn' => 7,
-            ];
-            $documentProductKey = static function (array $product): string {
-                $type = strtolower((string) data_get($product, 'type', 'affiliate'));
-                $identifier = (string) data_get(
-                    $product,
-                    'identifier',
-                    $type === 'digital'
-                        ? data_get($product, 'slug', '')
-                        : data_get($product, 'asin', '')
-                );
-
-                return $type . ':' . $identifier;
-            };
-
-            $documentProducts = $allProducts
-                ->filter(static fn (array $product) => isset($documentProductPriority[$documentProductKey($product)]))
-                ->sortBy(static fn (array $product) => $documentProductPriority[$documentProductKey($product)])
-                ->values();
-            $remainingProducts = $allProducts
-                ->reject(static fn (array $product) => isset($documentProductPriority[$documentProductKey($product)]))
-                ->values();
-            $products = $documentProducts->concat($remainingProducts)->values();
-        } else {
-            $products = $allProducts->where('type', 'affiliate')->values();
-        }
-
-        $isRtl = $this->locale->isRtl();
-
-        // --- PAGINATION (array-based) ---
-        $page = Paginator::resolveCurrentPage('page');
-        $perPage = 8;
-
-        $collection = collect($products);
-        $items = $collection->forPage($page, $perPage)->values();
-
-        $paginatedProducts = new LengthAwarePaginator(
-            $items,
-            $collection->count(),
-            $perPage,
-            $page,
-            [
-                'path'  => request()->url(),
-                'query' => request()->query(),
-            ]
-        );
-
-        return view('pages.shop', [
-            'products' => $paginatedProducts,
-            'selectedType' => $type,
-            'isRtl'    => $isRtl,
-        ]);
+        return view('pages.shop', $this->siteData->shop());
     }
 
     public function sharedProduct(string $type, int $id)
     {
-        $type = strtolower($type);
-
-        if (!in_array($type, ['digital', 'affiliate'], true)) {
-            abort(404);
-        }
-
-        $shareLandingUrl = route('products.share', ['type' => $type, 'id' => $id]);
-
-        if ($type === 'digital') {
-            $product = DigitalProduct::query()
-                ->where('id', $id)
-                ->where('is_active', true)
-                ->firstOrFail();
-
-            $name = $product->title;
-            $imagePath = $product->image ? 'images/digital-products/' . $product->image : 'images/placeholder.webp';
-            $image = asset($imagePath);
-            $price = (string) $product->currency . ' ' . number_format((float) $product->price, 2);
-            $actionUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
-                __('interface.product.digital_purchase_message', [
-                    'name' => $name,
-                    'price' => $price,
-                    'url' => $shareLandingUrl,
-                ])
-            );
-            $actionLabel = __('interface.product.buy');
-            $description = __('interface.product.digital_description', [
-                'name' => $name,
-                'price' => $price,
-            ]);
-            $badge = __('interface.product.digital_badge');
-        } else {
-            $product = ShopProduct::query()
-                ->with('translations')
-                ->where('id', $id)
-                ->where('is_active', true)
-                ->firstOrFail();
-
-            $name = $product->translation()?->name ?: $product->name;
-            $imagePath = $product->image ? 'images/shop/' . $product->image : 'images/placeholder.webp';
-            $image = asset($imagePath);
-            $price = null;
-            $actionUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
-                __('interface.product.affiliate_purchase_message', [
-                    'name' => $name,
-                    'url' => $shareLandingUrl,
-                ])
-            );
-            $actionLabel = __('interface.product.buy');
-            $description = __('interface.product.affiliate_description', ['name' => $name]);
-            $badge = __('interface.product.affiliate_badge');
-        }
-
-        return view('pages.products.share', [
-            'productName' => $name,
-            'productImage' => $image,
-            'productImageSources' => $this->responsiveProductImages->metadata($imagePath),
-            'productPrice' => $price,
-            'productType' => $type,
-            'productTypeLabel' => $badge,
-            'productDescription' => $description,
-            'productActionUrl' => $actionUrl,
-            'productActionLabel' => $actionLabel,
-            'isRtl' => $this->locale->isRtl(),
-            'pageMetaTitle' => $name . ' | Opplex IPTV',
-            'pageMetaDescription' => $description,
-            'pageMetaImage' => $image,
-            'pageCanonical' => $shareLandingUrl,
-            'pageOgTitle' => $name . ' | Opplex IPTV',
-            'pageOgDescription' => $description,
-        ]);
+        return view('pages.products.share', $this->siteData->product($type, $id));
     }
 
     public function activate()
@@ -536,10 +270,23 @@ class HomeController extends Controller
     public function send(ContactRequest $request)
     {
         if (!$this->captcha->check($request->captcha)) {
+            if ($request->expectsJson()) {
+                throw \Illuminate\Validation\ValidationException::withMessages([
+                    'captcha' => __('document_ui.contact.captcha_error'),
+                ]);
+            }
             return back()->with('error', __('document_ui.contact.captcha_error'));
         }
         $this->contact->contact($request->only('username', 'email', 'phone', 'message'));
+        if ($request->expectsJson()) {
+            return response()->json(['message' => __('document_ui.contact.message_sent')]);
+        }
         return back()->with('success', __('document_ui.contact.message_sent'));
+    }
+
+    public function contactChallenge()
+    {
+        return response()->json(['data' => $this->captcha->generate()]);
     }
 
     public function sendBuynow(BuyNowRequest $request)
@@ -563,104 +310,15 @@ class HomeController extends Controller
     public function subscribe(SubscribeRequest $request)
     {
         $this->contact->subscribe($request->email);
+        if ($request->expectsJson()) {
+            return response()->json(['message' => __('document_ui.contact.subscription_success')]);
+        }
         return back()->with('success', __('document_ui.contact.subscription_success'));
     }
 
     public function configure(Request $request)
     {
-        // Devices
-        $devices = Device::query()
-            ->orderBy('name')
-            ->get(['id', 'name', 'icon']);
-
-        // IPTV packages (type = iptv, vendor = opplex|starshare)
-        $iptvRows = Package::query()
-            ->where('active', true)
-            ->where('is_available', true)
-            ->where('type', 'iptv')
-            ->whereIn('vendor', ['opplex', 'starshare'])
-            ->where('price_amount', '>', 0)
-            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
-            ->orderByRaw("COALESCE(sort_order, duration_months, id)")
-            ->with('translations')
-            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'icon', 'features'])
-            ->filter(fn (Package $package) => $package->isSelectableIptvProvider())
-            ->values();
-
-        $annualOnlyServices = $iptvRows
-            ->filter(static fn (Package $package) => in_array(
-                'Yearly subscription only (monthly plan unavailable)',
-                $package->features ?? [],
-                true
-            ))
-            ->map(fn (Package $package) => Str::lower($this->packageServiceName($package)))
-            ->unique();
-        $iptvRows = $iptvRows
-            ->reject(fn (Package $package) => $annualOnlyServices->contains(
-                Str::lower($this->packageServiceName($package))
-            ) && (int) $package->duration_months !== 12)
-            ->values();
-
-        $iptvPackages = [];
-        foreach ($iptvRows as $r) {
-            $dur = (int) ($r->duration_months ?: 1);
-
-            $iptvPackages[] = [
-                'id'     => $r->id,                           // <--- ID SEND HO RAHA
-                'vendor' => strtolower($r->vendor),           // opplex | starshare
-                'service' => $this->packageServiceName($r),
-                'title'  => $this->packageDisplayTitle($r),
-                'old'    => 0.00,
-                'price'  => (float) $r->price_amount,
-                'duration_months' => $dur,
-                'unit'   => $dur === 1
-                    ? __('interface.checkout.month_one')
-                    : __('interface.checkout.months', ['count' => $dur]),
-                'icon'   => $r->icon ?: 'bi-router',
-            ];
-        }
-
-        // Reseller packages (type = reseller, vendor = opplex|starshare)
-        $resellerRows = Package::query()
-            ->where('active', true)
-            ->where('is_available', true)
-            ->where('type', 'reseller')
-            ->whereIn('vendor', ['opplex', 'starshare'])
-            ->where('price_amount', '>', 0)
-            ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
-            ->orderByRaw('COALESCE(sort_order, credits, id)')
-            ->with('translations')
-            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'credits', 'icon']);
-
-        $resellerPackages = [];
-        foreach ($resellerRows as $r) {
-            $credits = (int) ($r->credits ?: 0);
-
-            $resellerPackages[] = [
-                'id'     => $r->id,                           // <--- ID SEND HO RAHA
-                'vendor' => strtolower($r->vendor),
-                'title'  => $this->packageDisplayTitle($r),
-                'old'    => 0.00,
-                'price'  => (float) $r->price_amount,
-                'unit'   => $credits > 0
-                    ? __('interface.checkout.credits', ['count' => $credits])
-                    : __('interface.checkout.credits_label'),
-                'icon'   => $r->icon ?: 'bi-router',
-            ];
-        }
-
-        $prePrice    = $request->query('price');
-        $iptvVendors = ['Opplex', 'starshare'];
-        $eventPromotion = $this->eventPromotions->activeForSession();
-
-        return view('pages.checkout.configure', compact(
-            'devices',
-            'iptvPackages',
-            'resellerPackages',
-            'prePrice',
-            'iptvVendors',
-            'eventPromotion'
-        ));
+        return view('pages.checkout.configure', $this->siteData->configure($request));
     }
 
     public function checkoutStep2(Request $request)
@@ -1100,6 +758,9 @@ class HomeController extends Controller
     {
         $packageId = $request->input('package_id');
         if (!is_scalar($packageId) || filter_var($packageId, FILTER_VALIDATE_INT) === false) {
+            if ($request->expectsJson()) {
+                throw \Illuminate\Validation\ValidationException::withMessages(['package_id' => __('document_ui.validation.invalid_selection')]);
+            }
             return redirect()->route('configure', $request->except('package_id'));
         }
         $packageId = (int) $packageId;
@@ -1114,6 +775,9 @@ class HomeController extends Controller
             ->first();
 
         if (!$package) {
+            if ($request->expectsJson()) {
+                throw \Illuminate\Validation\ValidationException::withMessages(['package_id' => __('document_ui.validation.invalid_selection')]);
+            }
             return redirect()->route('configure', $request->except('package_id'));
         }
 
@@ -1129,7 +793,7 @@ class HomeController extends Controller
             array_slice($whatsappPaymentOrders, -5, null, true)
         );
 
-        return redirect()
+        $redirect = redirect()
             ->to($this->customerOrderStatusUrl($order))
             ->with('success', __('interface.checkout.order_received', ['id' => $order->id]))
             ->with('checkout_completed', true)
@@ -1147,6 +811,14 @@ class HomeController extends Controller
                 'currency' => $order->currency,
                 'payment_method' => $order->payment_method,
             ], $summary));
+
+        return $request->expectsJson()
+            ? response()->json([
+                'message' => __('interface.checkout.order_received', ['id' => $order->id]),
+                'data' => ['order_id' => (int) $order->id, 'payment_status' => $order->payment_status],
+                'redirect_url' => $redirect->getTargetUrl(),
+            ])
+            : $redirect;
     }
 
     private function customerOrderStatusUrl(Order $order): string

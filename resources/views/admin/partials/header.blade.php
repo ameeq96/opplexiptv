@@ -22,7 +22,7 @@
 
         <form class="m-0" method="POST" action="{{ route('admin.locale') }}">
             @csrf
-            <select name="locale" class="form-select no-select2 admin-locale" aria-label="Admin language" onchange="this.form.submit()">
+            <select name="locale" class="form-select no-select2 admin-locale" aria-label="Admin language" onchange="this.form.requestSubmit()">
                 @foreach (admin_locales() as $loc)
                     <option value="{{ $loc }}" @selected(admin_locale() === $loc)>{{ strtoupper($loc) }}</option>
                 @endforeach
