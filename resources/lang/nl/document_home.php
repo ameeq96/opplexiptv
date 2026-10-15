@@ -145,10 +145,6 @@ return [
                 'text' => 'IPTV van topkwaliteit die perfect werkt op Android.',
             ],
             [
-                'author' => 'Luc Dubois',
-                'text' => 'Elke La Liga-wedstrijd live in 4K IPTV bekeken, zonder vertraging.',
-            ],
-            [
                 'author' => 'Giulia Romano',
                 'text' => 'Hun IPTV-proefperiode is geweldig! Daarmee kan ik al mijn favoriete Italiaanse en Franse programma\'s streamen via Aroma IPTV.',
             ],

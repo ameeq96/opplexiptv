@@ -22,7 +22,6 @@
                 'images/resource/author-1.webp',
                 'images/resource/author-2.webp',
                 'images/img-test.webp',
-                'images/resource/author-3.webp',
                 'images/resource/author-5.webp',
                 'images/resource/author-6.webp',
             ];

@@ -818,10 +818,6 @@ return [
           'text' => 'Top-quality IPTV that works perfectly on Android.',
         ],
         [
-          'author' => 'Luc Dubois',
-          'text' => 'Watched every La Liga match in 4K live IPTV with no lag.',
-        ],
-        [
           'author' => 'Giulia Romano',
           'text' => 'Their IPTV trial is cool! It lets me stream all my favorite Italian and French shows via Aroma IPTV.',
         ],

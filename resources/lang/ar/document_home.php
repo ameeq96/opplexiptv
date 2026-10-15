@@ -145,10 +145,6 @@ return [
                 'text' => 'IPTV عالي الجودة يعمل بشكل مثالي على Android.',
             ],
             [
-                'author' => 'Luc Dubois',
-                'text' => 'شاهدت كل مباريات La Liga عبر IPTV مباشر بجودة 4K من دون أي تأخير.',
-            ],
-            [
                 'author' => 'Giulia Romano',
                 'text' => 'تجربة IPTV لديهم رائعة! تتيح لي مشاهدة كل برامجي الإيطالية والفرنسية المفضلة عبر Aroma IPTV.',
             ],
