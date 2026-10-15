@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\TrialClick;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
+use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class TrialClickController extends Controller
@@ -16,7 +18,7 @@ class TrialClickController extends Controller
         $perPage = (int) $request->input('per_page', 10);
         if (!in_array($perPage, [10,20,30,40,100], true)) $perPage = 10;
 
-        $q = TrialClick::query()->with('user:id,name,phone_normalized');
+        $q = TrialClick::query()->with('user:id,name,email,phone_normalized');
         $activityAt = DB::raw('COALESCE(whatsapp_contact_consented_at, created_at)');
 
         if (in_array($request->input('status'), TrialClick::STATUSES, true)) {
@@ -144,6 +146,41 @@ class TrialClickController extends Controller
         }
 
         return back()->with('success', 'Lead status updated.');
+    }
+
+    public function updateTrial(Request $request, TrialClick $trialClick)
+    {
+        abort_unless($request->user('admin'), 403);
+        abort_unless($trialClick->intent === 'trial', 422, 'Only a trial request can receive activation dates.');
+
+        $data = $request->validate([
+            'confirmed_account_email' => ['required', 'string', 'email:rfc', 'max:255'],
+            'owner_confirmed' => ['required', 'accepted'],
+            'trial_started_at' => ['required', 'date'],
+            'trial_expires_at' => ['required', 'date', 'after:trial_started_at'],
+        ]);
+
+        $users = User::query()
+            ->where('email_normalized', User::normalizeEmail($data['confirmed_account_email']))
+            ->limit(2)
+            ->get();
+
+        if ($users->count() !== 1) {
+            throw ValidationException::withMessages([
+                'confirmed_account_email' => 'Enter one unique existing customer account email after confirming ownership with the customer.',
+            ]);
+        }
+        $user = $users->first();
+
+        $trialClick->update([
+            'user_id' => $user->id,
+            'trial_started_at' => $data['trial_started_at'],
+            'trial_expires_at' => $data['trial_expires_at'],
+            'trial_owner_verified_at' => now(),
+            'trial_activated_by_admin_id' => $request->user('admin')->id,
+        ]);
+
+        return back()->with('success', 'Trial dates and customer ownership saved. A lead click alone does not activate a trial.');
     }
 
     public function bulkDelete(Request $request)

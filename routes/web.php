@@ -134,6 +134,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('clients/{client}/notes', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeNote'])->name('clients.notes.store');
         Route::post('clients/{client}/follow-ups', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'storeFollowUp'])->name('clients.follow-ups.store');
         Route::patch('clients/{client}/follow-ups/{followUp}/complete', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'completeFollowUp'])->name('clients.follow-ups.complete');
+        Route::post('clients/{client}/tickets/{conversation}/reply', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'replyTicket'])
+            ->whereNumber('conversation')->middleware('throttle:30,1')->name('clients.tickets.reply');
+        Route::patch('clients/{client}/tickets/{conversation}/status', [\App\Http\Controllers\Admin\CustomerInteractionController::class, 'updateTicketStatus'])
+            ->whereNumber('conversation')->middleware('throttle:30,1')->name('clients.tickets.status');
         Route::resource('clients', UserClientController::class);
 
         Route::resource('orders', OrderController::class);
@@ -215,6 +219,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/trial-clicks', [TrialClickController::class, 'index'])->name('trial_clicks.index');
         Route::get('/trial-clicks/export', [TrialClickController::class, 'export'])->name('trial_clicks.export');
         Route::patch('/trial-clicks/{trialClick}/status', [TrialClickController::class, 'updateStatus'])->name('trial_clicks.status');
+        Route::patch('/trial-clicks/{trialClick}/trial', [TrialClickController::class, 'updateTrial'])
+            ->middleware('throttle:20,1')->name('trial_clicks.trial');
         Route::delete('/trial-clicks/bulk-delete', [TrialClickController::class, 'bulkDelete'])->name('trial_clicks.bulkDelete');
         Route::delete('/trial-clicks/{trialClick}', [TrialClickController::class, 'destroy'])->name('trial_clicks.destroy');
 
@@ -228,6 +234,40 @@ Route::prefix('admin')->name('admin.')->group(function () {
             ->name('maintenance.clear');
             });
         });
+    });
+});
+
+Route::prefix('account')->name('customer.')->middleware(\App\Http\Middleware\EnsureCustomerAccount::class.':public')->group(function () {
+    Route::get('login', [\App\Http\Controllers\CustomerAccountController::class, 'login'])->name('login');
+    Route::post('access', [\App\Http\Controllers\CustomerAccountController::class, 'requestAccess'])
+        ->middleware('throttle:5,10')->name('access.request');
+    Route::get('access', [\App\Http\Controllers\CustomerAccountController::class, 'access'])
+        ->middleware(['signed', 'throttle:30,1'])->name('access');
+    Route::post('access/confirm', [\App\Http\Controllers\CustomerAccountController::class, 'consumeAccess'])
+        ->middleware(['signed', 'throttle:10,1'])->name('access.consume');
+    Route::view('setup', 'pages.account.guides')->name('guides');
+    Route::match(['get', 'post'], 'renewal/unsubscribe', [\App\Http\Controllers\CustomerAccountController::class, 'unsubscribe'])
+        ->middleware(['signed', 'throttle:20,1'])->name('renewal.unsubscribe');
+
+    Route::middleware(\App\Http\Middleware\EnsureCustomerAccount::class)->group(function () {
+        Route::get('/', [\App\Http\Controllers\CustomerAccountController::class, 'dashboard'])->name('account');
+        Route::post('logout', [\App\Http\Controllers\CustomerAccountController::class, 'logout'])->name('logout');
+        Route::get('orders/{order}', [\App\Http\Controllers\CustomerAccountController::class, 'order'])->whereNumber('order')->name('orders.show');
+        Route::get('orders/{order}/renew', [\App\Http\Controllers\CustomerAccountController::class, 'renew'])
+            ->whereNumber('order')->middleware('throttle:10,1')->name('orders.renew');
+        Route::patch('preferences', [\App\Http\Controllers\CustomerAccountController::class, 'preferences'])
+            ->middleware('throttle:10,1')->name('preferences');
+        Route::post('trials', [\App\Http\Controllers\CustomerAccountController::class, 'requestTrial'])
+            ->middleware('throttle:5,10')->name('trials.request');
+        Route::get('trials/{trial}/plan', [\App\Http\Controllers\CustomerAccountController::class, 'trialPlan'])
+            ->whereNumber('trial')->middleware('throttle:10,1')->name('trials.plan');
+        Route::get('support', [\App\Http\Controllers\CustomerSupportController::class, 'index'])->name('support.index');
+        Route::post('support', [\App\Http\Controllers\CustomerSupportController::class, 'store'])
+            ->middleware('throttle:5,10')->name('support.store');
+        Route::get('support/{conversation}', [\App\Http\Controllers\CustomerSupportController::class, 'show'])
+            ->whereNumber('conversation')->name('support.show');
+        Route::post('support/{conversation}/messages', [\App\Http\Controllers\CustomerSupportController::class, 'reply'])
+            ->whereNumber('conversation')->middleware('throttle:15,1')->name('support.reply');
     });
 });
 

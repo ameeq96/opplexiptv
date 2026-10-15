@@ -91,6 +91,9 @@
         @media (min-width: 769px) {
             body.pricing-in-view .recent-purchase-toast { bottom: 20px; }
         }
+        @media (max-width: 768px) {
+            .recent-purchase-toast { display: none !important; }
+        }
         @media (max-width: 480px) {
             .recent-purchase-toast {
                 right: 10px;
@@ -127,6 +130,7 @@
             const toast = document.getElementById('recent-purchase-toast');
             const message = document.getElementById('recent-purchase-message');
             const close = document.getElementById('recent-purchase-close');
+            const mobileViewport = window.matchMedia('(max-width: 768px)');
             if (!toast || !message || !close || !Array.isArray(purchases) || purchases.length === 0) return;
 
             const dismissalStorageKey = 'opplex.recentPurchasesDismissed.v1';
@@ -175,7 +179,7 @@
             }
 
             function blocked() {
-                return document.hidden
+                return mobileViewport.matches || document.hidden
                     || Boolean(window.__activeMarketingPrompt)
                     || document.body.classList.contains('cookie-consent-open')
                     || document.body.classList.contains('whatsapp-lead-capture-open')
@@ -243,6 +247,11 @@
                 window.clearTimeout(hideTimer);
                 rememberDismissal();
                 hide(false);
+            });
+
+            mobileViewport.addEventListener('change', function () {
+                if (mobileViewport.matches) hide(false);
+                else if (!stopped) schedule(5000);
             });
 
             document.addEventListener('visibilitychange', function () {

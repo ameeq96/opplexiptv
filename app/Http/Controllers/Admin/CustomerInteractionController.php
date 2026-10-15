@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use App\Models\CustomerFollowUp;
+use App\Models\CustomerConversation;
+use App\Models\CustomerMessage;
 use App\Models\User;
 use App\Services\Clients\CustomerActivityService;
 use Illuminate\Http\Request;
@@ -94,6 +96,59 @@ class CustomerInteractionController extends Controller
         });
 
         return redirect()->route('admin.clients.show', $client)->with('success', 'Follow-up marked complete.');
+    }
+
+    public function replyTicket(Request $request, User $client, int $conversation, CustomerActivityService $activities)
+    {
+        $this->authorizeOperator($request);
+        $data = $request->validate([
+            'submission_id' => ['required', 'uuid'],
+            'message' => ['required', 'string', 'max:5000', 'regex:/\S/u'],
+        ]);
+        DB::transaction(function () use ($request, $client, $conversation, $data, $activities) {
+            $ticket = $this->portalTicket($client, $conversation)->lockForUpdate()->firstOrFail();
+            $message = CustomerMessage::query()->createOrFirst([
+                'conversation_id' => $ticket->id,
+                'fingerprint' => hash('sha256', 'support-reply:'.$request->user('admin')->id.':'.$data['submission_id']),
+            ], [
+                'sender_type' => 'support',
+                'sender_name' => Str::limit((string) $request->user('admin')->name, 191, ''),
+                'content' => $data['message'], 'sent_at' => now(),
+            ]);
+            abort_unless($message->content === $data['message'], 409, 'This submission has already been used. Reload before sending a different reply.');
+            if ($message->wasRecentlyCreated) {
+                $ticket->forceFill(['status' => 'in_progress', 'ended_at' => null, 'updated_at' => now()])->save();
+                $this->record($activities, $request, $client, 'support.team_replied', 'A reply was saved to the customer portal ticket.', ['conversation_id' => $ticket->id]);
+            }
+        });
+
+        return redirect()->route('admin.clients.show', ['client' => $client, 'conversation_id' => $conversation])->withFragment('customer-conversations')
+            ->with('success', 'Reply saved to the customer portal. No WhatsApp message or email was sent.');
+    }
+
+    public function updateTicketStatus(Request $request, User $client, int $conversation, CustomerActivityService $activities)
+    {
+        $this->authorizeOperator($request);
+        $data = $request->validate(['status' => ['required', Rule::in(['open', 'in_progress', 'resolved'])]]);
+        DB::transaction(function () use ($request, $client, $conversation, $data, $activities) {
+            $ticket = $this->portalTicket($client, $conversation)->lockForUpdate()->firstOrFail();
+            if ($ticket->status === $data['status']) {
+                return;
+            }
+            $ticket->forceFill(['status' => $data['status'], 'ended_at' => $data['status'] === 'resolved' ? now() : null])->save();
+            $this->record($activities, $request, $client, 'support.status_updated', 'Customer portal support status updated.', [
+                'conversation_id' => $ticket->id, 'status' => $ticket->status,
+            ]);
+        });
+
+        return redirect()->route('admin.clients.show', ['client' => $client, 'conversation_id' => $conversation])->withFragment('customer-conversations')
+            ->with('success', 'Customer portal ticket status updated.');
+    }
+
+    private function portalTicket(User $client, int $conversation)
+    {
+        return CustomerConversation::query()->whereKey($conversation)->where('user_id', $client->id)
+            ->where('channel', 'portal')->where('property_id', 'customer-account');
     }
 
     private function authorizeOperator(Request $request): void

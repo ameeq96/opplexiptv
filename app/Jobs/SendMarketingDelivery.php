@@ -109,15 +109,7 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
                     throw new RuntimeException('Email recipient is missing.');
                 }
 
-                $unsubscribeUrl = URL::signedRoute(
-                    'marketing.unsubscribe',
-                    array_filter([
-                        'user' => $delivery->user_id,
-                        'draft' => $delivery->checkoutDraft?->token,
-                        'channel' => 'all',
-                        'locale' => $delivery->locale,
-                    ])
-                );
+                $unsubscribeUrl = $this->preferenceUrl($delivery);
 
                 $mailSubject = Lang::get('marketing.workflows.' . $delivery->workflow . '.subject', $replace);
                 $bodyText = Lang::get('marketing.workflows.' . $delivery->workflow . '.body', $replace);
@@ -235,13 +227,16 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
         }
 
         if ($delivery->workflow === 'renewal'
-            && ($delivery->payload['expiry_date'] ?? null) !== $delivery->order?->expiry_date?->format('Y-m-d')) {
+            && (($delivery->payload['expiry_date'] ?? null) !== $delivery->order?->expiry_date?->format('Y-m-d')
+                || (int) $delivery->user_id !== (int) $delivery->order?->user_id)) {
             return false;
         }
 
         return $delivery->order?->status === 'active'
             && $delivery->order?->payment_status === 'paid'
-            && (bool) $delivery->user?->hasMarketingConsent($delivery->channel);
+            && ($delivery->workflow === 'renewal' && $delivery->channel === 'email'
+                ? (bool) $delivery->user?->wantsRenewalEmail()
+                : (bool) $delivery->user?->hasMarketingConsent($delivery->channel));
     }
 
     private function ctaUrl(
@@ -284,11 +279,22 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
             return route('iptv-applications');
         }
 
+        if ($delivery->workflow === 'renewal' && $delivery->order) {
+            return route('customer.orders.renew', ['order' => $delivery->order_id]);
+        }
+
         return route('pricing');
     }
 
     private function preferenceUrl(MarketingDelivery $delivery): string
     {
+        if ($delivery->workflow === 'renewal' && $delivery->channel === 'email') {
+            return URL::signedRoute('customer.renewal.unsubscribe', [
+                'user' => $delivery->user_id,
+                'locale' => $delivery->locale,
+            ]);
+        }
+
         return URL::signedRoute(
             'marketing.unsubscribe',
             array_filter([

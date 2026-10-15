@@ -566,7 +566,7 @@
 
     @if ($errors->any())
         <div class="container mt-3">
-            <div class="alert alert-danger" role="alert">
+            <div class="alert alert-danger" id="checkoutErrors" role="alert" tabindex="-1">
                 <ul class="mb-0 pl-3">
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -608,27 +608,36 @@
                         <div class="form-group">
                             <label class="required" for="checkoutEmail">{{ __('messages.checkout_email') }}</label>
                             <input type="email" id="checkoutEmail" name="email" class="form-control"
-                                value="{{ old('email') }}" autocomplete="email" required>
+                                value="{{ old('email') }}" autocomplete="email" required
+                                aria-invalid="{{ $errors->has('email') ? 'true' : 'false' }}" @error('email') aria-describedby="checkoutEmailError" @enderror>
+                            @error('email') <small id="checkoutEmailError" class="text-danger d-block">{{ $message }}</small> @enderror
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label class="required" for="checkoutFirstName">{{ __('messages.checkout_first_name') }}</label>
                                 <input type="text" id="checkoutFirstName" name="first_name" class="form-control"
-                                    value="{{ old('first_name') }}" autocomplete="given-name" required>
+                                    value="{{ old('first_name') }}" autocomplete="given-name" required
+                                    aria-invalid="{{ $errors->has('first_name') ? 'true' : 'false' }}" @error('first_name') aria-describedby="checkoutFirstNameError" @enderror>
+                                @error('first_name') <small id="checkoutFirstNameError" class="text-danger d-block">{{ $message }}</small> @enderror
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="required" for="checkoutLastName">{{ __('messages.checkout_last_name') }}</label>
                                 <input type="text" id="checkoutLastName" name="last_name" class="form-control"
-                                    value="{{ old('last_name') }}" autocomplete="family-name" required>
+                                    value="{{ old('last_name') }}" autocomplete="family-name" required
+                                    aria-invalid="{{ $errors->has('last_name') ? 'true' : 'false' }}" @error('last_name') aria-describedby="checkoutLastNameError" @enderror>
+                                @error('last_name') <small id="checkoutLastNameError" class="text-danger d-block">{{ $message }}</small> @enderror
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="required" for="phone">{{ __('messages.checkout_phone') }}</label>
                             <input type="tel" id="phone" name="phone" class="form-control"
-                                value="{{ old('phone') }}" autocomplete="tel" required>
-                            <small id="phone-client-error" class="text-danger d-none"></small>
+                                value="{{ old('phone') }}" autocomplete="tel" required
+                                aria-invalid="{{ $errors->has('phone') ? 'true' : 'false' }}"
+                                aria-describedby="phone-client-error @error('phone') checkoutPhoneError @enderror">
+                            <small id="phone-client-error" class="text-danger d-none" role="alert"></small>
+                            @error('phone') <small id="checkoutPhoneError" class="text-danger d-block">{{ $message }}</small> @enderror
                             <small class="text-muted d-block mt-1">{{ __('messages.checkout_phone_hint') }}</small>
                         </div>
 
@@ -822,6 +831,7 @@
                         <i class="fa fa-lock" aria-hidden="true"></i>
                         {{ __('messages.checkout_place_order_btn') }}
                     </button>
+                    <p id="checkoutProgress" class="text-muted mt-2" role="status" aria-live="polite" aria-atomic="true"></p>
                 </section>
             </div>
         </div>
@@ -899,6 +909,8 @@
             }
 
             checkoutSubmitting = true;
+            this.setAttribute('aria-busy', 'true');
+            document.getElementById('checkoutProgress').textContent = 'Submitting your order. Please wait and do not submit again.';
             const submitButton = document.querySelector('[type="submit"][form="checkoutForm"]');
             if (submitButton) {
                 submitButton.disabled = true;
@@ -909,6 +921,8 @@
                 if (!event.defaultPrevented) return;
 
                 checkoutSubmitting = false;
+                document.getElementById('checkoutForm').removeAttribute('aria-busy');
+                document.getElementById('checkoutProgress').textContent = '';
                 if (submitButton) {
                     submitButton.disabled = false;
                     submitButton.removeAttribute('aria-disabled');
@@ -928,6 +942,9 @@
 
         window.addEventListener('pageshow', function() {
             checkoutSubmitting = false;
+            document.getElementById('checkoutForm').removeAttribute('aria-busy');
+            document.getElementById('checkoutProgress').textContent = '';
+            document.getElementById('checkoutErrors')?.focus();
             const submitButton = document.querySelector('[type="submit"][form="checkoutForm"]');
             if (submitButton) {
                 submitButton.disabled = false;

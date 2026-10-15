@@ -35,6 +35,8 @@ class User extends Authenticatable
         'marketing_consent_source',
         'marketing_consent_locale',
         'marketing_consent_ip_hash',
+        'renewal_email_enabled',
+        'renewal_email_updated_at',
     ];
 
 
@@ -64,6 +66,8 @@ class User extends Authenticatable
         'marketing_whatsapp_opted_out_at' => 'datetime',
         'marketing_ads_consented_at' => 'datetime',
         'marketing_ads_opted_out_at' => 'datetime',
+        'renewal_email_enabled' => 'boolean',
+        'renewal_email_updated_at' => 'datetime',
     ];
 
     public function orders()
@@ -153,5 +157,10 @@ class User extends Authenticatable
         $optedOutAt = $this->getAttribute("marketing_{$channel}_opted_out_at");
 
         return $consentedAt !== null && ($optedOutAt === null || $consentedAt->gt($optedOutAt));
+    }
+
+    public function wantsRenewalEmail(): bool
+    {
+        return $this->renewal_email_enabled ?? $this->hasMarketingConsent('email');
     }
 }

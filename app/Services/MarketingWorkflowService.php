@@ -345,7 +345,10 @@ class MarketingWorkflowService
         }
 
         foreach (['email', 'whatsapp'] as $channel) {
-            if (!$user->hasMarketingConsent($channel)) {
+            $consented = $workflow === 'renewal' && $channel === 'email'
+                ? $user->wantsRenewalEmail()
+                : $user->hasMarketingConsent($channel);
+            if (!$consented) {
                 continue;
             }
 

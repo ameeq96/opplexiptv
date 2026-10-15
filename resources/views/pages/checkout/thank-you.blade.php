@@ -182,12 +182,15 @@
             {{ $proofCount > 0 ? __('messages.thankyou_page.upload_another_proof') : __('messages.thankyou_page.upload_proof') }}
           </label>
           <input id="paymentProof" name="payment_proof" type="file"
-            accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" required>
-          <small>{{ __('messages.thankyou_page.proof_help') }}</small>
+            accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" required
+            aria-invalid="{{ $errors->has('payment_proof') ? 'true' : 'false' }}"
+            aria-describedby="paymentProofHelp @error('payment_proof') paymentProofError @enderror">
+          <small id="paymentProofHelp">{{ __('messages.thankyou_page.proof_help') }}</small>
           @error('payment_proof')
-            <p class="payment-proof-error" role="alert">{{ $message }}</p>
+            <p id="paymentProofError" class="payment-proof-error" role="alert">{{ $message }}</p>
           @enderror
           <button type="submit"><i class="fa fa-lock" aria-hidden="true"></i> {{ __('messages.thankyou_page.submit_proof') }}</button>
+          <p id="paymentProofProgress" class="payment-proof-message" role="status" aria-live="polite"></p>
           @if($proofCount > 0)
             <p class="payment-proof-message"><i class="fa fa-check-circle" aria-hidden="true"></i> {{ __('messages.thankyou_page.proof_received') }}</p>
           @endif
@@ -198,6 +201,8 @@
     @endif
 
     <div class="thank-actions">
+      <a href="{{ route('customer.account') }}" class="thank-btn-ghost">My Account &amp; order history</a>
+      <a href="{{ route('customer.guides') }}" class="thank-btn-ghost">Optional setup guides</a>
       @if($whatsappPaymentUrl && !$paymentIsPaid)
         <a href="{{ $whatsappPaymentUrl }}" class="thank-btn-primary" id="whatsappPaymentLink"
           target="_blank" rel="noopener noreferrer"
@@ -226,6 +231,33 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    const form = document.querySelector('.payment-proof-form');
+    if (!form) return;
+    const button = form.querySelector('button[type="submit"]');
+    const progress = document.getElementById('paymentProofProgress');
+    let submitting = false;
+    form.addEventListener('submit', function (event) {
+      if (submitting) {
+        event.preventDefault();
+        return;
+      }
+      submitting = true;
+      button.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      progress.textContent = 'Uploading your proof. Please wait; payment still needs verification.';
+    });
+    window.addEventListener('pageshow', function () {
+      submitting = false;
+      button.disabled = false;
+      form.removeAttribute('aria-busy');
+      progress.textContent = '';
+      if (document.getElementById('paymentProofError')) document.getElementById('paymentProof').focus();
+    });
+  })();
+</script>
 
 @if($orderSummary && $isCheckoutCompletion)
   <script>

@@ -29,6 +29,8 @@ class AuthorizeAdminRoute
         'admin.clients.notes.store',
         'admin.clients.follow-ups.store',
         'admin.clients.follow-ups.complete',
+        'admin.clients.tickets.reply',
+        'admin.clients.tickets.status',
         'admin.clients.contact-number-update',
         'admin.orders.index',
         'admin.orders.create',
@@ -48,6 +50,7 @@ class AuthorizeAdminRoute
         'admin.trial_clicks.index',
         'admin.trial_clicks.export',
         'admin.trial_clicks.status',
+        'admin.trial_clicks.trial',
         'admin.notifications.*',
     ];
 
@@ -59,6 +62,8 @@ class AuthorizeAdminRoute
         'admin.clients.notes.store',
         'admin.clients.follow-ups.store',
         'admin.clients.follow-ups.complete',
+        'admin.clients.tickets.reply',
+        'admin.clients.tickets.status',
         'admin.orders.index',
         'admin.orders.show',
         'admin.orders.pictures.show',
@@ -67,6 +72,7 @@ class AuthorizeAdminRoute
         'admin.panel-orders.show',
         'admin.trial_clicks.index',
         'admin.trial_clicks.status',
+        'admin.trial_clicks.trial',
         'admin.notifications.*',
     ];
 

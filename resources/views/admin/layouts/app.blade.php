@@ -16,6 +16,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     @vite('resources/css/admin.css')
+    <style>
+        .admin-topbar .admin-locale + .select2-container { width: 76px !important; }
+    </style>
     @stack('styles')
 </head>
 <body class="admin-body">
@@ -245,41 +248,68 @@
         });
     });
 
-    function initAdminSelect2() {
+    function initAdminSelect2(root = document) {
         if (!window.jQuery || !jQuery.fn || !jQuery.fn.select2) return;
-        jQuery('select.form-select').not('.no-select2').each(function () {
+        const selects = root.matches?.('select') ? [root] : root.querySelectorAll('select');
+        jQuery(selects).each(function () {
             const $el = jQuery(this);
             if ($el.data('select2')) return;
-            const placeholder = $el.data('placeholder') || $el.find('option:first').text() || 'Select';
-            const hasEmpty = $el.find('option[value=""]').length > 0;
+            const emptyOption = Array.from(this.options).find(option => option.value === '');
+            const placeholder = $el.data('placeholder') || (this.multiple ? 'Select options' : emptyOption?.textContent.trim());
             const $modal = $el.closest('.modal');
             $el.select2({
-                width: '100%',
+                width: this.style.width || '100%',
                 placeholder,
-                allowClear: hasEmpty,
+                allowClear: Boolean(emptyOption) || this.multiple,
                 dropdownParent: $modal.length ? $modal : jQuery('body')
             });
+            if (this.style.maxWidth) $el.next('.select2-container').css('max-width', this.style.maxWidth);
             const selection = $el.next('.select2-container').find('.select2-selection');
             const label = this.labels?.[0];
             if (label && this.id) {
                 if (!label.id) label.id = `${this.id}-admin-label`;
                 selection.attr('aria-labelledby', `${label.id} ${selection.attr('aria-labelledby') || ''}`.trim());
             }
+            if (this.getAttribute('aria-label')) selection.attr('aria-label', this.getAttribute('aria-label')).removeAttr('aria-labelledby');
+            if (this.getAttribute('aria-describedby')) selection.attr('aria-describedby', this.getAttribute('aria-describedby'));
             if (this.required) selection.attr('aria-required', 'true');
+            if (this.getAttribute('aria-invalid')) selection.attr('aria-invalid', this.getAttribute('aria-invalid'));
             $el.on('change.adminNative', function (event) {
                 // Select2 emits jQuery events; dependent fields use native change listeners.
                 // Inline onchange handlers already run through jQuery, so do not submit them twice.
                 if (event.isTrigger && !event.originalEvent && !this.onchange) {
                     this.dispatchEvent(new Event('change', { bubbles: true }));
                 }
+                if (this.validity.valid) selection.removeAttr('aria-invalid');
             });
         });
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initAdminSelect2, { once: true });
-    } else {
+    function watchAdminSelect2() {
         initAdminSelect2();
+        if (!window.jQuery || !jQuery.fn || !jQuery.fn.select2) return;
+        new MutationObserver(records => {
+            records.forEach(record => {
+                if (record.type === 'attributes') {
+                    const select = record.target;
+                    if (select.matches('select') && !select.disabled && !select.onchange && jQuery(select).data('select2')) {
+                        // Refresh async status rollback without repeating its native change request.
+                        jQuery(select).trigger('change.select2');
+                    }
+                    return;
+                }
+                record.addedNodes.forEach(node => {
+                    if (node.nodeType === 1 && (node.matches('select') || node.querySelector('select'))) initAdminSelect2(node);
+                });
+            });
+        }).observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['disabled'] });
+        document.addEventListener('shown.bs.modal', event => initAdminSelect2(event.target));
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', watchAdminSelect2, { once: true });
+    } else {
+        watchAdminSelect2();
     }
 </script>
 @stack('scripts')

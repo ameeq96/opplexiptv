@@ -8,8 +8,7 @@
         $isContent = $adminUser?->hasRole(\App\Models\Admin::ROLE_CONTENT) ?? false;
     @endphp
     <div class="admin-brand">
-        <span class="admin-brand-mark"><i class="bi bi-grid-fill" aria-hidden="true"></i></span>
-        <span>Opplex IPTV<small>ADMIN WORKSPACE</small></span>
+        <span class="admin-brand-copy"><img class="admin-brand-logo" src="{{ asset('images/opplexiptvlogo.webp') }}" alt="Opplex IPTV" width="250" height="65"><small>ADMIN WORKSPACE</small></span>
         <button type="button" class="admin-sidebar-close d-lg-none" data-admin-sidebar="close" aria-label="Close navigation"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
     </div>
 

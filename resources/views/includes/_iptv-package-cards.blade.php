@@ -191,6 +191,7 @@
         @if ($serviceName !== $initialIptvService) style="display:none!important" @endif
         data-service="{{ $serviceName }}"
         data-duration="{{ $durationMonths }}"
+        data-connections="{{ (int) data_get($package, 'max_devices', 0) > 0 ? (int) data_get($package, 'max_devices') : '' }}"
         data-badge="{{ $badgeLabel }}" data-saving="{{ $savingPercent }}"
         data-base-saving="{{ $savingPercent }}"
         data-trial-hours="{{ $freeTrialHours }}" data-instant="{{ $instantActivation ? '1' : '0' }}"

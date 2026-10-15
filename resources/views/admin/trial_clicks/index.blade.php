@@ -11,6 +11,17 @@
         </div>
     @endif
 
+    @if ($errors->any())
+        <div class="alert alert-danger" role="alert">
+            <strong>Trial details were not saved.</strong>
+            <ul class="mb-0">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     {{-- Filters card --}}
     <div class="card shadow-sm mb-4">
         <div class="card-body">
@@ -157,6 +168,31 @@
                                 @if ($c->value !== null)
                                     <div class="small">{{ $c->currency ?: 'USD' }} {{ number_format((float) $c->value, 2) }}</div>
                                 @endif
+                                @if ($c->intent === 'trial')
+                                <details class="mt-2" @if ((string) old('trial_record') === (string) $c->id) open @endif>
+                                    <summary class="fw-semibold">Trial: {{ ucfirst($c->trial_status) }}</summary>
+                                    <p class="small text-muted mt-2 mb-2">Only save actual trial activation dates after verifying the customer's account email. Clicking a lead does not start a trial. Times: {{ config('app.timezone') }}.</p>
+                                    @php $trialOld = (string) old('trial_record') === (string) $c->id; @endphp
+                                    <label class="form-label small" for="trialEmail{{ $c->id }}">Confirmed customer account email</label>
+                                    <input type="email" id="trialEmail{{ $c->id }}" name="confirmed_account_email"
+                                        form="trialDates{{ $c->id }}" class="form-control form-control-sm mb-2" required maxlength="255"
+                                        value="{{ $trialOld ? old('confirmed_account_email') : ($c->trial_owner_verified_at ? $c->user?->email : '') }}">
+                                    <label class="form-label small" for="trialStart{{ $c->id }}">Actual start</label>
+                                    <input type="datetime-local" id="trialStart{{ $c->id }}" name="trial_started_at"
+                                        form="trialDates{{ $c->id }}" class="form-control form-control-sm mb-2" required
+                                        value="{{ $trialOld ? old('trial_started_at') : $c->trial_started_at?->format('Y-m-d\TH:i') }}">
+                                    <label class="form-label small" for="trialEnd{{ $c->id }}">Actual expiry</label>
+                                    <input type="datetime-local" id="trialEnd{{ $c->id }}" name="trial_expires_at"
+                                        form="trialDates{{ $c->id }}" class="form-control form-control-sm mb-2" required
+                                        value="{{ $trialOld ? old('trial_expires_at') : $c->trial_expires_at?->format('Y-m-d\TH:i') }}">
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" id="trialOwner{{ $c->id }}" name="owner_confirmed" value="1"
+                                            form="trialDates{{ $c->id }}" class="form-check-input" required>
+                                        <label class="form-check-label small" for="trialOwner{{ $c->id }}">I confirmed this trial belongs to the account above.</label>
+                                    </div>
+                                    <button type="submit" form="trialDates{{ $c->id }}" class="btn btn-sm btn-outline-primary">Save trial dates</button>
+                                </details>
+                                @endif
                             </td>
 
                             <td class="text-start">
@@ -230,6 +266,12 @@
               onsubmit="return confirm('Delete this record?')">
             @csrf @method('DELETE')
         </form>
+        @if ($c->intent === 'trial')
+        <form id="trialDates{{ $c->id }}" action="{{ route('admin.trial_clicks.trial', $c) }}" method="POST">
+            @csrf @method('PATCH')
+            <input type="hidden" name="trial_record" value="{{ $c->id }}">
+        </form>
+        @endif
     @endforeach
 
     <div class="mt-3 d-flex justify-content-center flex-column">

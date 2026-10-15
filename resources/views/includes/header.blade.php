@@ -79,6 +79,10 @@
 
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             @php
+                                $headerCustomer = request()->user('web');
+                                $headerCustomerSignedIn = $headerCustomer && $headerCustomer->email_verified_at
+                                    && hash_equals(hash('sha256', \App\Models\User::normalizeEmail($headerCustomer->email)), (string) session('customer_verified_email', ''));
+                                $headerAccountLabel = $headerCustomerSignedIn ? 'My account — signed in' : 'Sign in to your account';
                                 $supportedMenuLocales = array_keys(LaravelLocalization::getSupportedLocales());
                                 $normaliseMenuPath = static function ($path) use ($supportedMenuLocales): string {
                                     $segments = array_values(array_filter(
@@ -344,6 +348,24 @@
 
                                     </li>
                                 @endif
+                                <li class="{{ request()->routeIs('customer.*') ? 'current' : '' }}">
+                                    <a href="{{ route($headerCustomerSignedIn ? 'customer.account' : 'customer.login') }}"
+                                        aria-label="{{ $headerAccountLabel }}" title="{{ $headerAccountLabel }}"
+                                        @if(request()->routeIs('customer.*')) aria-current="page" @endif>
+                                        <span style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:30px;vertical-align:middle;">
+                                            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="8" r="4" />
+                                                <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
+                                            </svg>
+                                            @if($headerCustomerSignedIn)
+                                                <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 16 16" style="position:absolute;right:0;bottom:0;">
+                                                    <circle cx="8" cy="8" r="7" fill="#15803d" stroke="#fff" />
+                                                    <path d="m4.5 8 2.3 2.3 4.7-4.6" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            @endif
+                                        </span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 

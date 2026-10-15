@@ -283,6 +283,7 @@ class Package extends Model
             'price'    => $priceStr,
             'price_amount' => $this->price_amount,
             'duration_months' => $months,
+            'max_devices' => $this->max_devices,
             'is_duration_plan' => $this->isDurationPlan(),
             'badge_key' => $this->badge_key,
             'is_featured' => $this->is_featured,

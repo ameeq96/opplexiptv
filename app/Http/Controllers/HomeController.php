@@ -1111,29 +1111,13 @@ class HomeController extends Controller
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
             ->whereKey($packageId)
-            ->first(['id', 'type', 'vendor', 'title', 'duration_months']);
+            ->first();
 
         if (!$package) {
             return redirect()->route('configure', $request->except('package_id'));
         }
 
-        if ($package->type === 'iptv') {
-            $deviceId = $request->input('device_id');
-            $deviceExists = is_scalar($deviceId)
-                && filter_var($deviceId, FILTER_VALIDATE_INT) !== false
-                && Device::query()->whereKey((int) $deviceId)->exists();
-
-            if (!$deviceExists) {
-                return redirect()->route('configure', $request->query());
-            }
-        }
-
-        $planName  = $request->input('plan_name', __('interface.checkout.default_plan'));
-        $planPrice = (float) $request->input('plan_price', 15);
-        $device    = $request->input('device', null);
-        $eventPromotion = $this->eventPromotions->activeForSession();
-
-        return view('pages.checkout.step1', compact('planName', 'planPrice', 'device', 'eventPromotion'));
+        return $this->purchase($package);
     }
 
     private function checkoutSuccessRedirect(Request $request, Order $order, array $summary = [])

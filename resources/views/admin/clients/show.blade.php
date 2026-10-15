@@ -126,16 +126,34 @@
     </div>
 
     <div class="admin-card mb-4" id="customer-conversations">
-        <h5>Captured conversations</h5>
-        <p class="text-muted small">Tawk transcripts appear only when supplied by a configured webhook. WhatsApp conversations are not automatically imported by a website link.</p>
+        <h5>Conversations and support tickets</h5>
+        <p class="text-muted small">Customer portal tickets can be replied to here. Tawk transcripts appear only when supplied by a configured webhook. WhatsApp conversations are not automatically imported by a website link.</p>
         @forelse ($conversations as $chat)
-            <div class="border-bottom py-2 d-flex flex-wrap justify-content-between gap-2"><div><strong>{{ $chat->channel }}</strong> · {{ $chat->status }} · {{ $chat->messages_count }} message(s)<div class="small text-muted">{{ $chat->started_at?->format('Y-m-d H:i') ?: $chat->created_at?->format('Y-m-d H:i') }}</div></div><a class="btn btn-sm btn-outline-primary" href="{{ route('admin.clients.show', ['client' => $client, 'conversation_id' => $chat->id]) }}#customer-conversations">Read captured messages</a></div>
+            <div class="border-bottom py-2 d-flex flex-wrap justify-content-between gap-2"><div><strong>{{ $chat->channel }}</strong> · {{ $chat->status }} · {{ $chat->messages_count }} message(s)<div class="small text-muted">{{ $chat->started_at?->format('Y-m-d H:i') ?: $chat->created_at?->format('Y-m-d H:i') }}</div></div><a class="btn btn-sm btn-outline-primary" href="{{ route('admin.clients.show', ['client' => $client, 'conversation_id' => $chat->id]) }}#customer-conversations">{{ $chat->channel === 'portal' && $chat->property_id === 'customer-account' ? 'Open support ticket' : 'Read captured messages' }}</a></div>
         @empty<p class="text-muted">No linked conversations.</p>@endforelse
         {{ $conversations->links('pagination::bootstrap-5') }}
         @if ($conversation)
             <h6 class="mt-4">{{ $conversation->channel }} conversation #{{ $conversation->id }}</h6>
             @forelse ($messages as $message)<div class="rounded border p-3 my-2"><div class="small text-muted">{{ $message->sender_name ?: ucfirst($message->sender_type) }} · {{ $message->sent_at?->format('Y-m-d H:i:s') ?: 'Time not supplied' }}</div><div style="white-space: pre-wrap; overflow-wrap: anywhere">{{ $message->content }}</div></div>@empty<p class="text-muted">No transcript messages supplied.</p>@endforelse
             {{ $messages->links('pagination::bootstrap-5') }}
+            @if ($conversation->channel === 'portal' && $conversation->property_id === 'customer-account' && auth('admin')->user()->hasRole('owner', 'sales', 'support'))
+                <div class="border rounded p-3 mt-3">
+                    <h6>Reply in the customer portal</h6>
+                    <p class="text-muted small">This reply is visible to this customer in My Account. Use the internal notes form above for private staff notes. This does not send an email, WhatsApp or Tawk message.</p>
+                    <form action="{{ route('admin.clients.tickets.reply', ['client' => $client, 'conversation' => $conversation->id]) }}" method="POST">
+                        @csrf
+                        <input type="hidden" name="submission_id" value="{{ old('submission_id', (string) \Illuminate\Support\Str::uuid()) }}">
+                        <label class="form-label" for="portal-ticket-reply">Reply to customer</label>
+                        <textarea class="form-control" id="portal-ticket-reply" name="message" rows="4" maxlength="5000" required>{{ old('message') }}</textarea>
+                        <button class="btn btn-primary mt-2" type="submit">Save customer-visible reply</button>
+                    </form>
+                    <form class="d-flex flex-wrap align-items-end gap-2 mt-3" action="{{ route('admin.clients.tickets.status', ['client' => $client, 'conversation' => $conversation->id]) }}" method="POST">
+                        @csrf @method('PATCH')
+                        <div><label class="form-label" for="portal-ticket-status">Ticket status</label><select class="form-select" id="portal-ticket-status" name="status">@foreach (['open' => 'Open', 'in_progress' => 'In progress', 'resolved' => 'Resolved'] as $statusValue => $statusLabel)<option value="{{ $statusValue }}" @selected($conversation->status === $statusValue)>{{ $statusLabel }}</option>@endforeach</select></div>
+                        <button class="btn btn-outline-primary" type="submit">Update status</button>
+                    </form>
+                </div>
+            @endif
         @endif
     </div>
 

@@ -4,6 +4,7 @@
         'configure',
         'checkout',
         'thankyou',
+        'customer.*',
         'orders.status',
         'order-status*'
     );
@@ -71,6 +72,25 @@
     @stack('schema')
 
         <!--Start of Tawk.to Script-->
+        <style>
+            .mobile-support-launcher { display: none; }
+            @media (max-width: 768px) {
+                .mobile-support-launcher:not([hidden]) {
+                    display: inline-flex; position: fixed; right: 12px;
+                    bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 1040;
+                    align-items: center; justify-content: center; width: 56px; height: 56px;
+                    padding: 0; border: 2px solid #fff; border-radius: 50%;
+                    color: #fff; background: #15803d; box-shadow: 0 5px 18px #0003; cursor: pointer;
+                }
+                .mobile-support-launcher:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+                .mobile-support-launcher:disabled { cursor: wait; opacity: .75; }
+            }
+        </style>
+        <button id="mobileSupportLauncher" class="mobile-support-launcher" type="button"
+            aria-label="Open live chat" aria-haspopup="dialog" aria-expanded="false">
+            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-7.6 13.8L3 21l4.5-1.3A9 9 0 1 0 12 3Zm-4 8h8v2H8v-2Z" /></svg>
+        </button>
+        <span id="mobileSupportStatus" class="sr-only" role="status" aria-live="polite"></span>
         <script type="text/javascript">
             var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
             Tawk_API.customStyle = {
@@ -82,6 +102,74 @@
             (function () {
                 var pending = Promise.resolve();
                 var csrfToken = '';
+                var mobileChat = window.matchMedia('(max-width: 768px)');
+                var launcher = document.getElementById('mobileSupportLauncher');
+                var chatStatus = document.getElementById('mobileSupportStatus');
+                var widgetRequested = false;
+                var widgetReady = false;
+                var widgetLoading = false;
+                var widgetTimer;
+
+                function closeMobileChat() {
+                    if (!mobileChat.matches) return;
+                    widgetRequested = false;
+                    Tawk_API.hideWidget();
+                    launcher.hidden = false;
+                    launcher.setAttribute('aria-expanded', 'false');
+                }
+
+                Tawk_API.onLoad = function () {
+                    widgetReady = true;
+                    widgetLoading = false;
+                    clearTimeout(widgetTimer);
+                    launcher.disabled = false;
+                    chatStatus.textContent = '';
+                    if (mobileChat.matches && widgetRequested) {
+                        Tawk_API.showWidget();
+                        Tawk_API.maximize();
+                    } else if (mobileChat.matches) {
+                        closeMobileChat();
+                    }
+                };
+                Tawk_API.onChatMaximized = function () {
+                    if (!mobileChat.matches) return;
+                    if (!widgetRequested) {
+                        Tawk_API.minimize();
+                        closeMobileChat();
+                        return;
+                    }
+                    launcher.hidden = true;
+                    launcher.setAttribute('aria-expanded', 'true');
+                };
+                Tawk_API.onChatMinimized = function () {
+                    if (!mobileChat.matches) return;
+                    closeMobileChat();
+                    launcher.focus();
+                };
+                launcher.addEventListener('click', function () {
+                    widgetRequested = true;
+                    if (widgetReady) {
+                        Tawk_API.showWidget();
+                        Tawk_API.maximize();
+                        return;
+                    }
+                    launcher.disabled = true;
+                    chatStatus.textContent = 'Opening live chat…';
+                    loadWidget();
+                });
+                mobileChat.addEventListener('change', function () {
+                    launcher.hidden = !mobileChat.matches;
+                    if (!widgetReady) {
+                        if (!mobileChat.matches) loadWidget();
+                        return;
+                    }
+                    if (mobileChat.matches) {
+                        Tawk_API.minimize();
+                        closeMobileChat();
+                    } else {
+                        Tawk_API.showWidget();
+                    }
+                });
 
                 function field(data, names) {
                     function key(value) {
@@ -175,12 +263,28 @@
                 Tawk_API.onPrechatSubmit = function (data) { capture(data, 'prechat'); };
                 Tawk_API.onOfflineSubmit = function (data) { capture(data, 'offline'); };
 
-                var s1 = document.createElement('script'), s0 = document.getElementsByTagName('script')[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/6ac929cd7f1f3634beb0e4f6/1k4gsmj54';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
+                function loadWidget() {
+                    if (widgetLoading || widgetReady) return;
+                    widgetLoading = true;
+                    var s1 = document.createElement('script'), s0 = document.getElementsByTagName('script')[0];
+                    s1.async = true;
+                    s1.src = 'https://embed.tawk.to/6ac929cd7f1f3634beb0e4f6/1k4gsmj54';
+                    s1.charset = 'UTF-8';
+                    s1.setAttribute('crossorigin', '*');
+                    s1.onerror = function () {
+                        widgetLoading = false;
+                        clearTimeout(widgetTimer);
+                        launcher.disabled = false;
+                        chatStatus.textContent = 'Chat could not load. Try again or use WhatsApp for support.';
+                        s1.remove();
+                    };
+                    widgetTimer = setTimeout(function () {
+                        launcher.disabled = false;
+                        chatStatus.textContent = 'Chat is taking longer to load. You can use WhatsApp for support.';
+                    }, 15000);
+                    s0.parentNode.insertBefore(s1, s0);
+                }
+                if (!mobileChat.matches) loadWidget();
             })();
         </script>
         <!--End of Tawk.to Script-->

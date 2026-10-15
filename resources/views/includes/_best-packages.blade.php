@@ -911,7 +911,7 @@
             #pricing-section .pricing-compare-table-wrap { overflow-x: auto; }
             #pricing-section .pricing-compare-table {
                 width: 100%;
-                min-width: 700px;
+                min-width: 1000px;
                 border-collapse: collapse;
                 color: #344158;
             }
@@ -931,6 +931,9 @@
                 text-transform: uppercase;
             }
             #pricing-section .pricing-compare-table td strong { color: #111a2e; }
+            #pricing-section .pricing-compare-table td:nth-child(6) { min-width: 250px; }
+            #pricing-section .pricing-compare-table td ul { margin: 0; padding-inline-start: 18px; }
+            #pricing-section .pricing-compare-table td li { line-height: 1.55; margin-bottom: 5px; }
             #pricing-section .pricing-compare-table .pricing-buy-cta {
                 min-height: 42px;
                 padding: 10px 15px;
@@ -938,6 +941,29 @@
                 color: #fff;
                 font-size: 13px;
                 font-weight: 800;
+            }
+            @media (max-width: 640px) {
+                body.plan-comparison-open .whatsapp-icon,
+                body.plan-comparison-open .mobile-support-launcher { visibility: hidden; pointer-events: none; }
+                #pricing-section .pricing-compare-modal { padding: 10px; }
+                #pricing-section .pricing-compare-modal__dialog { max-height: calc(100vh - 20px); max-height: calc(100dvh - 20px); }
+                #pricing-section .pricing-compare-modal__header { padding: 16px; gap: 10px; }
+                #pricing-section .pricing-compare-modal__header h3 { font-size: 19px; line-height: 1.4; }
+                #pricing-section .pricing-compare-modal__close { flex: 0 0 44px; width: 44px; height: 44px; }
+                #pricing-section .pricing-compare-table-wrap { overflow-x: visible; padding: 12px; }
+                #pricing-section .pricing-compare-table { display: block; min-width: 0; width: 100%; }
+                #pricing-section .pricing-compare-table thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+                #pricing-section .pricing-compare-table tbody { display: grid; gap: 14px; }
+                #pricing-section .pricing-compare-table tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid #dce3ed; border-radius: 14px; background: #fff; overflow: hidden; }
+                #pricing-section .pricing-compare-table td { display: block; min-width: 0; padding: 12px; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; border-bottom: 1px solid #edf0f5; }
+                #pricing-section .pricing-compare-table td::before { content: attr(data-label); display: block; margin-bottom: 5px; color: #5b687d; font-size: 10px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+                #pricing-section .pricing-compare-table td:nth-child(1),
+                #pricing-section .pricing-compare-table td:nth-child(2) { background: #f5f8ff; font-size: 15px; }
+                #pricing-section .pricing-compare-table td:nth-child(6) { grid-column: 1 / -1; grid-row: 4; min-width: 0; }
+                #pricing-section .pricing-compare-table td:nth-child(7) { grid-column: 2; grid-row: 3; }
+                #pricing-section .pricing-compare-table td:nth-child(8) { grid-column: 1 / -1; grid-row: 5; border-bottom: 0; }
+                #pricing-section .pricing-compare-table td:nth-child(8)::before { display: none; }
+                #pricing-section .pricing-compare-table .pricing-buy-cta { display: flex; width: 100%; min-height: 46px; align-items: center; justify-content: center; }
             }
             #pricing-section .mobile-pricing-cta[hidden] { display: none !important; }
             #pricing-section .mobile-pricing-cta {
@@ -1594,6 +1620,8 @@
                                 <th scope="col">Price</th>
                                 <th scope="col">Saving</th>
                                 <th scope="col">Benefits</th>
+                                <th scope="col">Connections</th>
+                                <th scope="col">Included features / device support</th>
                                 <th scope="col">Availability</th>
                                 <th scope="col"></th>
                             </tr>
@@ -1786,6 +1814,7 @@
 
         function addComparisonCell(row, value, className = '') {
             const cell = document.createElement('td');
+            cell.dataset.label = compareModal?.querySelectorAll('thead th')[row.children.length]?.textContent.trim() || 'Action';
             if (className) cell.className = className;
             if (value instanceof Node) cell.appendChild(value);
             else cell.textContent = value;
@@ -1825,6 +1854,21 @@
                 if (Number(card.dataset.trialHours || 0) > 0) benefits.push(`${card.dataset.trialHours}-hour free trial`);
                 if (card.dataset.instant === '1') benefits.push('Instant activation');
                 addComparisonCell(row, benefits.join(' · ') || '—');
+                addComparisonCell(row, Number(card.dataset.connections || 0) > 0
+                    ? card.dataset.connections : 'Ask support');
+                const features = Array.from(card.querySelectorAll('.price-list li'))
+                    .map(feature => cleanText(feature)).filter(Boolean);
+                if (features.length) {
+                    const featureList = document.createElement('ul');
+                    features.forEach(feature => {
+                        const item = document.createElement('li');
+                        item.textContent = feature;
+                        featureList.appendChild(item);
+                    });
+                    addComparisonCell(row, featureList);
+                } else {
+                    addComparisonCell(row, 'Ask support');
+                }
                 addComparisonCell(row, card.dataset.available === '0' ? 'Out of Stock' : 'Available');
 
                 const action = document.createElement(card.dataset.available === '0' ? 'span' : 'a');
@@ -1846,6 +1890,7 @@
             compareReturnFocus = document.activeElement;
             renderComparison();
             compareModal.hidden = false;
+            document.body.classList.add('plan-comparison-open');
             document.body.style.overflow = 'hidden';
             compareModal.querySelector('[data-compare-close]')?.focus();
         }
@@ -1853,6 +1898,7 @@
         function closeComparison() {
             if (!compareModal || compareModal.hidden) return;
             compareModal.hidden = true;
+            document.body.classList.remove('plan-comparison-open');
             document.body.style.overflow = '';
             compareReturnFocus?.focus?.();
         }
@@ -2268,6 +2314,18 @@
         }
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') closeComparison();
+            if (event.key === 'Tab' && compareModal && !compareModal.hidden) {
+                const controls = Array.from(compareModal.querySelectorAll('button:not(:disabled), a[href]'));
+                const first = controls[0];
+                const last = controls[controls.length - 1];
+                if (event.shiftKey && (document.activeElement === first || !compareModal.contains(document.activeElement))) {
+                    event.preventDefault();
+                    last?.focus();
+                } else if (!event.shiftKey && (document.activeElement === last || !compareModal.contains(document.activeElement))) {
+                    event.preventDefault();
+                    first?.focus();
+                }
+            }
         });
 
         if (resellerVendorToggle) {
