@@ -230,6 +230,25 @@ class Package extends Model
         return in_array($this->title, self::DURATION_PLAN_TITLES, true);
     }
 
+    public function isSelectableIptvProvider(): bool
+    {
+        if ($this->type !== 'iptv' || !in_array($this->vendor, ['opplex', 'starshare'], true)) {
+            return false;
+        }
+
+        if ($this->isDurationPlan()) {
+            return true;
+        }
+
+        $service = preg_replace(
+            '/\s*-\s*(?:3\s*Months?|Half\s*Yearly|Yearly|Monthly|1\s*Month)\s*$/iu',
+            '',
+            trim((string) $this->title)
+        );
+
+        return in_array(Str::lower(trim((string) $service)), ['opplex', 'opplex iptv', 'filex', 'filex iptv'], true);
+    }
+
     /* ───────────────────── Public array mappers ──────────────────── */
 
     /**

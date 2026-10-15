@@ -132,6 +132,7 @@ class HomeController extends Controller
             $package->active
                 && $package->type === 'iptv'
                 && in_array($package->vendor, ['opplex', 'starshare'], true)
+                && $package->isSelectableIptvProvider()
                 && (float) $package->price_amount > 0,
             404
         );
@@ -246,7 +247,9 @@ class HomeController extends Controller
             ->where('is_available', true)
             ->where('price_amount', '>', 0)
             ->sorted()
-            ->get();
+            ->get()
+            ->filter(fn (Package $package) => $package->isSelectableIptvProvider())
+            ->values();
 
         if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
             $iptvRows = $iptvRows
@@ -580,7 +583,9 @@ class HomeController extends Controller
             ->orderByRaw("CASE vendor WHEN 'opplex' THEN 0 WHEN 'starshare' THEN 1 ELSE 2 END")
             ->orderByRaw("COALESCE(sort_order, duration_months, id)")
             ->with('translations')
-            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'icon', 'features']);
+            ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'icon', 'features'])
+            ->filter(fn (Package $package) => $package->isSelectableIptvProvider())
+            ->values();
 
         $annualOnlyServices = $iptvRows
             ->filter(static fn (Package $package) => in_array(

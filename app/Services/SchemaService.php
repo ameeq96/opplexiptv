@@ -343,13 +343,16 @@ class SchemaService
                 ->where('price_amount', '>', 0)
                 ->orderByRaw('COALESCE(sort_order, duration_months, credits, id)')
                 ->with('translations')
-                ->get(['id', 'vendor', 'title', 'price_amount', 'duration_months', 'credits']);
+                ->get(['id', 'type', 'vendor', 'title', 'price_amount', 'duration_months', 'credits']);
         } catch (\Throwable) {
             return [];
         }
 
         $offers = [];
         foreach ($rows as $row) {
+            if ($kind === 'iptv' && !$row->isSelectableIptvProvider()) {
+                continue;
+            }
             if ($row->price_amount === null) {
                 continue;
             }

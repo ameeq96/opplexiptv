@@ -122,7 +122,7 @@ class UiData
         $footer = $this->remember("footer:{$whatsappNumber}", now()->addMinutes(30), fn () => $this->footerData(), []);
         $packageGroups = $needsPricing
             ? $this->remember(
-                'packages:v5',
+                'packages:v6',
                 now()->addMinutes(30),
                 fn () => $this->packageGroups(),
                 ['iptv' => [], 'iptvProviders' => [], 'reseller' => []]
@@ -750,7 +750,9 @@ class UiData
             ->whereIn('vendor', ['opplex', 'starshare'])
             ->where('price_amount', '>', 0)
             ->orderByRaw('COALESCE(sort_order, duration_months, id)')
-            ->get(['id', 'type', 'vendor', 'title', 'sort_order', 'duration_months', 'is_featured', 'features']);
+            ->get(['id', 'type', 'vendor', 'title', 'sort_order', 'duration_months', 'is_featured', 'features'])
+            ->filter(fn (Package $package) => $package->isSelectableIptvProvider())
+            ->values();
 
         if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
             $iptvRows = $iptvRows
