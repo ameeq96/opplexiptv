@@ -29,7 +29,7 @@ return [
         'network_person_alt' => 'Gráfico de una conexión IPTV de alta calidad',
         'network_heading_aria' => 'Encabezado de funciones de la red IPTV',
         'features_list_aria' => 'Lista de funciones de IPTV',
-        'services_aria' => 'Explora servicios de IPTV como paquetes, deportes, VOD y acceso multidispositivo',
+        'services_aria' => 'Explora servicios de IPTV como paquetes, VOD y acceso multidispositivo',
         'services_heading_aria' => 'Explora los servicios de Opplex IPTV',
         'services_carousel_aria' => 'Carrusel de servicios de IPTV',
         'trial_aria' => 'Inicia tu prueba gratuita de IPTV con Opplex',

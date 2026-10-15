@@ -28,7 +28,7 @@ return [
     ],
     'iptv-subscription-service' => [
         'title' => 'IPTV सब्सक्रिप्शन सर्विस | प्रीमियम 4K IPTV प्लान',
-        'description' => 'लाइव चैनल, स्पोर्ट्स, मूवीज, सीरीज, 4K स्ट्रीमिंग, फ्री ट्रायल और तेज सेटअप सपोर्ट के साथ IPTV सब्सक्रिप्शन चुनें।',
+        'description' => 'लाइव चैनल, मूवीज, सीरीज, 4K स्ट्रीमिंग, फ्री ट्रायल और तेज सेटअप सपोर्ट के साथ IPTV सब्सक्रिप्शन चुनें।',
         'keywords' => 'iptv subscription service, iptv subscription, best iptv, 4k iptv, iptv free trial, iptv plans, live tv iptv',
     ],
     'reseller-panel' => [

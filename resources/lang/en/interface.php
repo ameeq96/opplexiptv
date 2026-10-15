@@ -85,8 +85,6 @@ return [
             'request_text' => 'Tap Activate to send your order number to our support team on WhatsApp.',
             'verify_name' => 'We verify and activate',
             'verify_text' => 'Activation occurs after payment is confirmed, during active support hours.',
-            'stream_name' => 'Start streaming',
-            'stream_text' => 'Open your IPTV app, sign in with the details we send you, and start watching on a supported device.',
         ],
         'whatsapp_request' => 'Activation request',
         'whatsapp_order' => 'Order #: :order',
@@ -190,7 +188,7 @@ return [
         'title' => 'Find the right IPTV plan',
         'intro' => 'Answer three quick questions. We will match you with an available plan without inventing channels or features.',
         'requirements_label' => 'What would you like to watch?',
-        'requirements_placeholder' => 'For example: football, UK channels, films...',
+        'requirements_placeholder' => 'For example: UK channels, films...',
         'requirements_help' => 'Optional. We will include this in your WhatsApp message so our team can confirm availability.',
         'budget_label' => 'Maximum budget (USD)',
         'budget_placeholder' => 'For example: 25',
@@ -223,9 +221,9 @@ return [
     'movies' => [
         'no_overview' => 'No overview is available.',
         'featured_title' => 'Featured IPTV Content',
-        'fallback_movies' => 'Stream premium movies, live channels, sports, and entertainment in HD/4K with Opplex IPTV.',
+        'fallback_movies' => 'Stream premium movies, live channels, and entertainment in HD/4K with Opplex IPTV.',
         'fallback_series' => 'Enjoy popular series and global entertainment with smooth IPTV streaming on every device.',
-        'fallback_action' => 'Watch action, sports, news, and family content through reliable IPTV plans.',
+        'fallback_action' => 'Watch action, news, and family content through reliable IPTV plans.',
     ],
 
     'assistant' => [

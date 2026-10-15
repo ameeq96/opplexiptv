@@ -85,8 +85,6 @@ return [
             'request_text' => 'Toque em Ativar para enviar o número do pedido à nossa equipe de suporte pelo WhatsApp.',
             'verify_name' => 'Verificamos e ativamos',
             'verify_text' => 'A ativação ocorre após a confirmação do pagamento, durante o horário de suporte ativo.',
-            'stream_name' => 'Comece a assistir',
-            'stream_text' => 'Abra seu aplicativo IPTV, entre com os dados que enviarmos e comece a assistir em qualquer dispositivo.',
         ],
         'whatsapp_request' => 'Solicitação de ativação',
         'whatsapp_order' => 'Pedido nº: :order',
@@ -190,7 +188,7 @@ return [
         'title' => 'Encontre o plano IPTV ideal',
         'intro' => 'Responda a três perguntas rápidas. Indicaremos um plano disponível sem inventar canais ou recursos.',
         'requirements_label' => 'O que você gostaria de assistir?',
-        'requirements_placeholder' => 'Por exemplo: futebol, canais do Reino Unido, filmes...',
+        'requirements_placeholder' => 'Por exemplo: canais do Reino Unido, filmes...',
         'requirements_help' => 'Opcional. Incluiremos essas informações na sua mensagem do WhatsApp para que nossa equipe confirme a disponibilidade.',
         'budget_label' => 'Orçamento máximo (USD)',
         'budget_placeholder' => 'Por exemplo: 25',
@@ -223,9 +221,9 @@ return [
     'movies' => [
         'no_overview' => 'Nenhuma sinopse está disponível.',
         'featured_title' => 'Conteúdo IPTV em destaque',
-        'fallback_movies' => 'Assista a filmes premium, canais ao vivo, esportes e entretenimento em HD/4K com a Opplex IPTV.',
+        'fallback_movies' => 'Assista a filmes premium, canais ao vivo e entretenimento em HD/4K com a Opplex IPTV.',
         'fallback_series' => 'Curta séries populares e entretenimento internacional com streaming IPTV fluido em qualquer dispositivo.',
-        'fallback_action' => 'Assista a ação, esportes, notícias e conteúdo para toda a família com planos IPTV confiáveis.',
+        'fallback_action' => 'Assista a ação, notícias e conteúdo para toda a família com planos IPTV confiáveis.',
     ],
 
     'assistant' => [

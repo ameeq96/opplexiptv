@@ -2,7 +2,7 @@
 
 return [
     'home' => [
-        'title' => 'Opplex IPTV - TV en direct, films & sports HD via IPTV',
+        'title' => 'Opplex IPTV - TV en direct, films HD via IPTV',
         'description' => 'Diffusez plus de 12 000 chaînes, 50 000+ films, 5 000+ séries en HD/4K en France, Italie, Royaume-Uni. Compatible IPTV smart player, Xtream IPTV, IPTV box.',
         'keywords' => 'IPTV Europe, IPTV France, IPTV Italie, IPTV UK, IPTV stream player, IPTV m3u, IPTV gratuit sans code, IPTV smart player, Xtream IPTV, IPTV box, code IPTV',
     ],
@@ -18,17 +18,17 @@ return [
     ],
     'movies' => [
         'title' => 'Regardez 50 000+ films et séries sur IPTV smart player',
-        'description' => 'Films récents, Netflix, Prime Video, Bollywood, Hollywood. Compatible avec IPTV stream player, IPTV box, et DAZN IPTV.',
-        'keywords' => 'films IPTV, IPTV Netflix, IPTV box, room IPTV, IPTV m3u, DAZN IPTV, IPTV gratuit sans code, IPTV smart player',
+        'description' => 'Films récents, Netflix, Prime Video, Bollywood, Hollywood. Compatible avec IPTV stream player et IPTV box.',
+        'keywords' => 'films IPTV, IPTV Netflix, IPTV box, room IPTV, IPTV m3u, IPTV gratuit sans code, IPTV smart player',
     ],
     'packages' => [
         'title' => 'Meilleurs forfaits IPTV Europe avec code IPTV inclus',
-        'description' => 'Regardez les chaînes, VOD et sports HD disponibles sur IPTV box, Smart Player et Stream Player. L’activation suit la confirmation du paiement sur WhatsApp.',
-        'keywords' => 'forfaits IPTV, IPTV player, abonnement IPTV France, IPTV m3u, IPTV sport, IPTV stream player, code IPTV, IPTV gratuit sans code',
+        'description' => 'Regardez les chaînes et VOD HD disponibles sur IPTV box, Smart Player et Stream Player. L’activation suit la confirmation du paiement sur WhatsApp.',
+        'keywords' => 'forfaits IPTV, IPTV player, abonnement IPTV France, IPTV m3u, IPTV stream player, code IPTV, IPTV gratuit sans code',
     ],
     'iptv-subscription-service' => [
         'title' => 'Service abonnement IPTV | Forfaits IPTV 4K Premium',
-        'description' => 'Choisissez un service abonnement IPTV avec chaines en direct, sport, films, series, streaming 4K, essai gratuit et aide rapide.',
+        'description' => 'Choisissez un service abonnement IPTV avec chaines en direct, films, series, streaming 4K, essai gratuit et aide rapide.',
         'keywords' => 'service IPTV, abonnement IPTV, meilleur IPTV, IPTV 4K, essai IPTV gratuit, forfaits IPTV, tv en direct IPTV',
     ],
     'reseller-panel' => [
@@ -53,8 +53,8 @@ return [
     ],
     'faqs' => [
         'title' => 'FAQ Opplex IPTV - IPTV smart player, box, m3u',
-        'description' => 'Réponses aux questions fréquentes : configuration IPTV player, code IPTV, IPTV gratuit sans code, room IPTV, DAZN IPTV, etc.',
-        'keywords' => 'FAQ IPTV, code IPTV, IPTV gratuit sans code, IPTV m3u, IPTV stream player, room IPTV, DAZN IPTV, assistance IPTV box',
+        'description' => 'Réponses aux questions fréquentes : configuration IPTV player, code IPTV, IPTV gratuit sans code, room IPTV, etc.',
+        'keywords' => 'FAQ IPTV, code IPTV, IPTV gratuit sans code, IPTV m3u, IPTV stream player, room IPTV, assistance IPTV box',
     ],
     'contact' => [
         'title' => 'Contactez Opplex IPTV - Code IPTV, IPTV player, essai',

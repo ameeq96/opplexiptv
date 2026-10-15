@@ -14,7 +14,7 @@ return [
                 ],
                 [
                     'title' => '12,000+ chaînes en direct',
-                    'description' => 'Sports, actualités, divertissement et chaînes internationales dans une seule formule.',
+                    'description' => 'Actualités, divertissement et chaînes internationales dans une seule formule.',
                     'icon' => 'fa fa-globe',
                 ],
                 [
@@ -41,7 +41,7 @@ return [
                     'price' => '$2.99/mois',
                     'features' => [
                         'Regardez 12,000+ chaînes en HD et 4K, sans mise en mémoire tampon',
-                        'Tous les films, séries et sports en direct',
+                        'Tous les films et séries',
                         'Assistance 24/7 via WhatsApp',
                         'Fonctionne sur tous les principaux appareils',
                     ],
@@ -88,7 +88,7 @@ return [
                 ],
                 [
                     'title' => 'Étape 3 : Commencez à regarder',
-                    'description' => 'Ouvrez votre lecteur IPTV, saisissez vos informations et vos chaînes se chargeront automatiquement. Si vous avez besoin d’aide, notre équipe est disponible sur WhatsApp.',
+                    'description' => 'Si vous avez besoin d’aide, notre équipe est disponible sur WhatsApp.',
                 ],
             ],
             'devices' => 'Fonctionne avec : Smart TV · Firestick · Android TV · MAG · iOS · Android · Windows/Mac',
@@ -99,7 +99,7 @@ return [
             'items' => [
                 [
                     'title' => 'Aucune mise en mémoire tampon. Jamais.',
-                    'description' => 'Nos serveurs fonctionnent 24/7 avec une disponibilité de 99.9%. Les chaînes se chargent rapidement et restent stables, sans blocage en plein match ni image pixellisée.',
+                    'description' => 'Nos serveurs fonctionnent 24/7 avec une disponibilité de 99.9%. Les chaînes se chargent rapidement et restent stables, sans blocage ni image pixellisée.',
                 ],
                 [
                     'title' => 'Des formules IPTV flexibles adaptées à votre budget',
@@ -119,7 +119,7 @@ return [
             'heading' => 'Ce que vous obtenez avec chaque abonnement IPTV',
             'intro' => 'Aucun supplément inattendu ni fonctionnalité verrouillée. Chaque formule, quel que soit son prix, inclut le même forfait complet :',
             'items' => [
-                '12,000+ chaînes de TV en direct (sports, actualités, divertissement, international)',
+                '12,000+ chaînes de TV en direct (actualités, divertissement, international)',
                 '50,000+ films et 5,000+ séries TV à la demande',
                 'Qualité de streaming 4K et HD sur les chaînes compatibles',
                 'Guide électronique des programmes (EPG) inclus',
@@ -141,7 +141,7 @@ return [
                 ],
                 [
                     'question' => 'Comment activer mon abonnement ?',
-                    'answer' => 'Après votre paiement, nous vous envoyons vos identifiants par e-mail et WhatsApp. Saisissez-les dans votre lecteur IPTV et vos chaînes commenceront à se charger automatiquement. La plupart des utilisateurs sont opérationnels en moins de 5 minutes.',
+                    'answer' => 'Après votre paiement, nous vous envoyons vos identifiants par e-mail et WhatsApp. La plupart des utilisateurs sont opérationnels en moins de 5 minutes.',
                 ],
                 [
                     'question' => 'Puis-je utiliser mon abonnement IPTV lorsque je voyage ?',
@@ -186,9 +186,9 @@ return [
         ],
         'included' => [
             'heading' => 'Chaque formule comprend tout ceci : aucun supplément, aucun niveau',
-            'intro' => 'De nombreux services de streaming vous font payer un supplément pour les sports, la 4K ou la VOD. Pas Opplex. Voici ce que vous obtenez dès le premier jour avec chaque formule :',
+            'intro' => 'De nombreux services de streaming vous font payer un supplément pour la 4K ou la VOD. Pas Opplex. Voici ce que vous obtenez dès le premier jour avec chaque formule :',
             'items' => [
-                '12,000+ chaînes en direct : sports, actualités, divertissement, Royaume-Uni, États-Unis, international',
+                '12,000+ chaînes en direct : actualités, divertissement, Royaume-Uni, États-Unis, international',
                 '50,000+ films à la demande',
                 '5,000+ séries TV, actuelles et classiques',
                 'Qualité HD et 4K sur les chaînes et appareils compatibles',

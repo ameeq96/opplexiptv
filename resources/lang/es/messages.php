@@ -52,7 +52,7 @@ return [
   'feature_5k_series' => '5k+ Series en IPTV Box (Netflix, Prime y más)',
   'feature_5k_series_desc' => 'Disfruta más de 5,000 series de Netflix y Prime Video con IPTV smart player y xtreme HD IPTV — incluye prueba gratis y soporte 4K.',
   'feature_12k_channels' => '12k+ Canales en Vivo vía IPTV Box & Smart Player',
-  'feature_12k_channels_desc' => 'Accede a más de 12,000 canales de TV en vivo incluyendo deportes, noticias y entretenimiento en EE.UU., Reino Unido, Francia e Italia.',
+  'feature_12k_channels_desc' => 'Accede a más de 12,000 canales de TV en vivo incluyendo noticias y entretenimiento en EE.UU., Reino Unido, Francia e Italia.',
   'feature_hd_4k' => 'Disfruta IPTV en Full HD & Calidad 4K en Vivo',
   'feature_hd_4k_desc' => 'Obtén IPTV 4K cristalino sin buffering, compatible con smart player, prueba gratis y el mejor xtreme HD IPTV en Europa.',
 
@@ -61,8 +61,6 @@ return [
   'iptv_packages_desc' => 'Elige planes IPTV económicos incluyendo xtreme HD IPTV, aroma IPTV & IPTV smart player — 12k+ canales en vivo y soporte 4K.',
   'reseller_panel' => 'Comienza a Revender IPTV con Prueba Gratis y Créditos',
   'reseller_panel_desc' => 'Únete al programa revendedor Opplex IPTV y gana vendiendo xtreme HD IPTV, IPTV boxes y aroma IPTV en Reino Unido, Francia, Italia y más.',
-  'iptv_sports' => 'Mira Deportes en Vivo en HD con Smart IPTV Player',
-  'iptv_sports_desc' => 'Disfruta deportes en vivo como fútbol, cricket, UFC y más con IPTV 4K sin buffer — funciona con smart player & IPTV box.',
   'iptv_vod' => 'IPTV VOD Premium con 50k+ Películas y Series',
   'iptv_vod_desc' => 'Transmite 50k+ películas de Hollywood y Bollywood y 5k+ series bajo demanda con xtreme HD IPTV & aroma IPTV en calidad Full HD.',
   'iptv_devices' => 'IPTV en Dispositivos Populares - Smart Player, Android, Box',
@@ -76,7 +74,6 @@ return [
   'testimonial_3' => 'Me cambié del cable a Opplex IPTV — xtreme HD IPTV y smart player hicieron todo más fácil y mejor.',
   'testimonial_4' => 'Sin buffer en smart player, excelente soporte, funciona perfecto en Firestick — totalmente recomendable.',
   'testimonial_5' => 'Servicio IPTV de alta calidad con Netflix, Prime y 50k+ VOD. Funciona perfecto en IPTV box y Android.',
-  'testimonial_6' => 'Vi cada partido deportivo en IPTV 4K sin lag. Perfecto para fanáticos del deporte en Francia.',
   'testimonial_7' => 'La prueba gratuita de IPTV me permitió ver todas mis series italianas y francesas favoritas con aroma IPTV.',
   'testimonial_8' => 'Este IPTV tiene 12k+ canales, funciona en smart player y es súper estable en Reino Unido.',
   'testimonial_9' => 'Uso xtreme HD IPTV en móvil y Firestick — streaming fluido y soporte inmediato.',
@@ -108,7 +105,7 @@ return [
   'few_reasons' => 'Por qué Elegir Opplex - Mejor IPTV 4K, Smart Player & Prueba Gratis',
 
   'feature_hd' => 'Mejor IPTV con Streaming HD & 4K en Vivo',
-  'feature_hd_desc' => 'Disfruta streaming xtreme HD IPTV sin buffer con 12k+ canales, películas Bollywood/Hollywood y deportes — funciona en Smart TV, Firestick y IPTV boxes.',
+  'feature_hd_desc' => 'Disfruta streaming xtreme HD IPTV sin buffer con 12k+ canales y películas Bollywood/Hollywood — funciona en Smart TV, Firestick y IPTV boxes.',
 
   'feature_flexible' => 'Suscripción IPTV Flexible con Prueba Gratis',
   'feature_flexible_desc' => 'Elige entre planes mensuales, anuales o de revendedor. Todos incluyen soporte IPTV smart player, aroma IPTV y prueba gratis.',
@@ -125,8 +122,8 @@ return [
   'feature_support' => 'Soporte IPTV 24/7 vía WhatsApp',
   'feature_support_desc' => 'Obtén ayuda rápida de nuestro equipo IPTV en configuración de smart player, activación de prueba, problemas de box y errores de streaming.',
 
-  'feature_sports_movies' => 'Deportes en Vivo, Películas Bollywood y Más',
-  'feature_sports_movies_desc' => 'Accede IPTV 4K en vivo para UFC, F1, fútbol y 50k+ películas con xtreme HD IPTV, smart players y IPTV box con prueba gratis.',
+  'feature_sports_movies' => 'Películas Bollywood y Más',
+  'feature_sports_movies_desc' => 'Accede IPTV 4K en vivo para 50k+ películas con xtreme HD IPTV, smart players y IPTV box con prueba gratis.',
 
   'reseller_starter' => 'Revendedor IPTV Inicial - Smart Player & Acceso de Prueba Gratis',
   'reseller_essential' => 'Revendedor IPTV Esencial - Aroma IPTV, Xtreme HD IPTV, Sin Expiración',
@@ -224,13 +221,11 @@ return [
 
   // Preguntas y Respuestas
   'faq.q1' => '¿Qué es Opplex IPTV?',
-  'faq.a1' => 'OPPLEXTV es un servicio IPTV que ofrece más de <strong>12,000 canales en vivo, 50000+ PELÍCULAS, 5000+ Series de TV</strong>. Junto con varias opciones VOD. El plan estándar OPPLEXTV IPTV cuesta <span style="text-decoration: line-through; color: #999;">$31.99/mes</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mes</span> e incluye canales internacionales, deportes, PPV, entretenimiento, noticias y más. OPPLEXTV IPTV se puede instalar en dispositivos Android e iOS compatibles, incluidos Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield y más.',
+  'faq.a1' => 'OPPLEXTV es un servicio IPTV que ofrece más de <strong>12,000 canales en vivo, 50000+ PELÍCULAS, 5000+ Series de TV</strong>. Junto con varias opciones VOD. El plan estándar OPPLEXTV IPTV cuesta <span style="text-decoration: line-through; color: #999;">$31.99/mes</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mes</span> e incluye canales internacionales, PPV, entretenimiento, noticias y más. OPPLEXTV IPTV se puede instalar en dispositivos Android e iOS compatibles, incluidos Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield y más.',
 
   'faq.q2' => '¿Cómo se ve IPTV?',
   'faq.a2' => 'Aquí hay algunas capturas de pantalla de cómo se ve la aplicación IPTV en diferentes dispositivos.',
 
-  'faq.q3' => '¿Cómo iniciar sesión en Opplex IPTV con códigos?',
-  'faq.a3' => 'Cuando un cliente compra una suscripción Opplex IPTV, recibe códigos de inicio de sesión. El cliente debe ingresar estos códigos, junto con la URL proporcionada, en la aplicación en los campos especificados. Revisa la imagen de abajo para una mejor comprensión.',
 
   'faq.q4' => '¿Opplex IPTV tiene prueba?',
   'faq.a4' => 'Sí. Hay una prueba gratuita para que puedas probar el servicio en tu propio dispositivo antes de elegir un plan. Escríbenos por WhatsApp para empezar.',
@@ -354,18 +349,18 @@ return [
 
   'iptv_subscription_service' => [
     'title' => 'Servicio de Suscripcion IPTV',
-    'heading' => 'Servicio IPTV premium para TV en vivo, deportes, peliculas, series y streaming 4K',
+    'heading' => 'Servicio IPTV premium para TV en vivo, peliculas, series y streaming 4K',
     'breadcrumb' => [
       'home' => 'Inicio',
       'current' => 'Servicio de Suscripcion IPTV',
     ],
     'intro_eyebrow' => 'Planes premium de streaming',
-    'intro_text' => 'Elige una suscripcion IPTV flexible con canales en vivo, deportes, peliculas, series, calidad 4K y soporte rapido para tu dispositivo favorito.',
+    'intro_text' => 'Elige una suscripcion IPTV flexible con canales en vivo, peliculas, series, calidad 4K y soporte rapido para tu dispositivo favorito.',
     'primary_cta' => 'Configurar mi plan IPTV',
     'secondary_cta' => 'Iniciar prueba gratis',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'Streaming HD y 4K', 'description' => 'Disfruta contenido IPTV premium en calidad HD y 4K en pantallas compatibles.'],
-      ['icon' => 'flaticon-5g', 'title' => '12K+ canales en vivo', 'description' => 'Mira deportes, noticias, entretenimiento y canales internacionales desde un solo plan IPTV.'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ canales en vivo', 'description' => 'Mira noticias, entretenimiento y canales internacionales desde un solo plan IPTV.'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'Peliculas y series', 'description' => 'Accede a una gran biblioteca VOD con peliculas, series y contenido familiar incluido.'],
       ['icon' => 'flaticon-customer-service', 'title' => 'Soporte de instalacion', 'description' => 'Recibe ayuda para Smart TV, Firestick, Android, iOS, MAG y reproductores IPTV.'],
     ],
@@ -424,7 +419,7 @@ return [
     [
       'icon' => 'flaticon-swimming-pool',
       'title' => 'IPTV en calidad HD y 4K',
-      'description' => 'Disfruta del streaming IPTV en calidad HD y 4K nítida, perfecto para películas, deportes y TV en vivo en cualquier dispositivo.',
+      'description' => 'Disfruta del streaming IPTV en calidad HD y 4K nítida, perfecto para películas y TV en vivo en cualquier dispositivo.',
     ],
     [
       'icon' => 'flaticon-5g',
@@ -448,7 +443,7 @@ return [
   'order_updated'   => 'Pedido actualizado con éxito.',
   'order_deleted'   => 'Pedido eliminado con éxito.',
   'screenshot_deleted' => 'Captura eliminada con éxito.',
-  'pricing_subheading' => 'TV en vivo, Deportes, Películas, Series, 4K y a la carta',
+  'pricing_subheading' => 'TV en vivo, Películas, Series, 4K y a la carta',
   'subheadingiptv' => 'Solución de problemas de IPTV, configuración, pagos, canales y soporte para revendedores',
   'subheadingcontact' => 'Contacto y soporte — chat 24/7, WhatsApp, correo, facturación y ayuda técnica',
   'movies_subheading' => 'Explora películas, series y dibujos animados',
@@ -654,7 +649,7 @@ return [
   'home_hero_watch_live' => 'Mira :title en vivo en HD',
   'home_services_eyebrow' => 'Funciones premium',
   'home_services_intro' => 'Streaming potente, acceso más inteligente y una experiencia IPTV más limpia en todos tus dispositivos.',
-  'home_testimonials_intro' => 'Opiniones compartidas por clientes que usan Opplex IPTV para TV en directo, deportes y contenido bajo demanda.',
+  'home_testimonials_intro' => 'Opiniones compartidas por clientes que usan Opplex IPTV para TV en directo y contenido bajo demanda.',
   'home_testimonials_verified_customer' => 'Cliente IPTV verificado',
   'home_unlimited_eyebrow' => 'Acceso ilimitado',
   'home_unlimited_intro' => 'Disfruta TV en vivo premium y VOD con acceso más rápido, mayor estabilidad y planes flexibles pensados para la visualización moderna.',
@@ -756,7 +751,7 @@ return [
       'q1' => '¿Qué incluye una suscripción a Opplex IPTV?',
       'a1' => 'Tu suscripción incluye acceso a los canales en directo disponibles, la biblioteca de películas y series incluida, la guía de televisión en pantalla y aplicaciones compatibles para varios dispositivos.',
       'q2' => '¿Cómo activo mi suscripción?',
-      'a2' => 'Después del pago te enviaremos los códigos de acceso y una URL. Introdúcelos en tu reproductor IPTV y los canales se cargarán automáticamente.',
+      'a2' => 'Después del pago te enviaremos la información de activación.',
       'q3' => '¿Puedo usar mi suscripción mientras viajo al extranjero?',
       'a3' => 'Puedes usar tu suscripción en muchas regiones compatibles con una conexión estable. Las condiciones de la red y las restricciones regionales pueden variar, así que confirma tu destino con nosotros antes de viajar.',
       'q4' => '¿Qué velocidad de Internet necesito?',
@@ -768,11 +763,9 @@ return [
       'q1' => '¿Qué aplicaciones funcionan con Opplex IPTV?',
       'a1' => 'Opplex IPTV funciona con reproductores populares como IPTV Smarters Pro, nuestras aplicaciones Opplex y XTV, IBO Player y otras aplicaciones compatibles con Xtream.',
       'q2' => '¿Cómo instalo la aplicación IPTV en mi dispositivo?',
-      'a2' => 'Descarga desde esta página la aplicación para tu plataforma, instálala e inicia sesión con los datos de acceso que te enviemos.',
-      'q3' => '¿Dónde introduzco mis datos de acceso o códigos Xtream?',
-      'a3' => 'Abre la aplicación, elige «Iniciar sesión con códigos Xtream / nombre de usuario» e introduce el nombre de usuario, la contraseña y la URL del servidor incluidos en tu correo de activación.',
+      'a2' => 'Descarga desde esta página la aplicación para tu plataforma e instálala.',
       'q4' => 'La aplicación no carga mis canales, ¿qué debo hacer?',
-      'a4' => 'Comprueba tu conexión a Internet, confirma que la suscripción esté activa y vuelve a introducir los códigos exactamente como los recibiste. Si el problema continúa, contacta con soporte.',
+      'a4' => 'Comprueba tu conexión a Internet y confirma que la suscripción esté activa. Si el problema continúa, contacta con soporte.',
       'q5' => '¿Las aplicaciones se pueden descargar gratis?',
       'a5' => 'Sí. Las aplicaciones de reproducción son gratuitas. Solo pagas por tu suscripción a Opplex IPTV, que proporciona el contenido.',
     ],

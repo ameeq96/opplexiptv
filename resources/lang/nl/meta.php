@@ -28,7 +28,7 @@ return [
     ],
     'iptv-subscription-service' => [
         'title' => 'IPTV Abonnement Service | Premium 4K IPTV Plannen',
-        'description' => 'Kies een IPTV abonnement service met live kanalen, sport, films, series, 4K streaming, gratis proef en snelle setup hulp.',
+        'description' => 'Kies een IPTV abonnement service met live kanalen, films, series, 4K streaming, gratis proef en snelle setup hulp.',
         'keywords' => 'iptv abonnement service, iptv abonnement, beste iptv, 4k iptv, iptv gratis proef, iptv plannen, live tv iptv',
     ],
     'reseller-panel' => [

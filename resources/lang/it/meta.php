@@ -2,13 +2,13 @@
 
 return [
     'home' => [
-        'title' => 'Opplex IPTV - TV Live, Film & Sport HD con IPTV Smarters',
+        'title' => 'Opplex IPTV - TV Live, Film HD con IPTV Smarters',
         'description' => 'Guarda oltre 12.000 canali live, 50.000+ film e 5.000+ serie TV in HD/4K su IPTV Smarters Pro, Smart IPTV e IPTV Extreme APK in Italia, Francia, UK e',
         'keywords' => 'IPTV Italia, IPTV Europa, IPTV streaming, IPTV Extreme APK, Smart IPTV, IPTV Smarters Pro, IPTV m3u gratis, IPTV player, rivenditore IPTV, liste IPTV',
     ],
     'about' => [
         'title' => 'Info Opplex IPTV - Servizio IPTV Premium in Italia',
-        'description' => 'Scopri Opplex IPTV: contenuti IPTV in HD/4K, lista IPTV sky e DAZN Telegram, supporto 24/7, compatibile con IPTV Smarters, IPTV Extreme, IPTV player e app',
+        'description' => 'Scopri Opplex IPTV: contenuti IPTV in HD/4K, supporto 24/7, compatibile con IPTV Smarters, IPTV Extreme, IPTV player e app',
         'keywords' => 'info IPTV, IPTV Italia, servizio IPTV Smarters Pro, IPTV Extreme APK, IPTV smart player, IPTV gratis, IPTV player Italia',
     ],
     'pricing' => [
@@ -23,18 +23,18 @@ return [
     ],
     'packages' => [
         'title' => 'Migliori pacchetti IPTV per l’Italia e l’Europa',
-        'description' => 'Pacchetti IPTV con più di 12.000 canali live, VOD, sport – compatibili con IPTV Smarters, IPTV Extreme, IPTV box e liste IPTV m3u.',
-        'keywords' => 'pacchetti IPTV, abbonamento IPTV Italia, IPTV Sky e DAZN Telegram, IPTV m3u, IPTV player, IPTV streaming Italia',
+        'description' => 'Pacchetti IPTV con più di 12.000 canali live e VOD – compatibili con IPTV Smarters, IPTV Extreme, IPTV box e liste IPTV m3u.',
+        'keywords' => 'pacchetti IPTV, abbonamento IPTV Italia, IPTV m3u, IPTV player, IPTV streaming Italia',
     ],
     'iptv-subscription-service' => [
         'title' => 'Servizio abbonamento IPTV | Piani IPTV 4K Premium',
-        'description' => 'Scegli un servizio IPTV con canali live, sport, film, serie, streaming 4K, prova gratuita e supporto rapido.',
+        'description' => 'Scegli un servizio IPTV con canali live, film, serie, streaming 4K, prova gratuita e supporto rapido.',
         'keywords' => 'servizio IPTV, abbonamento IPTV, miglior IPTV, IPTV 4K, prova IPTV gratuita, piani IPTV, tv live IPTV',
     ],
     'reseller-panel' => [
         'title' => 'Diventa Rivenditore IPTV - Accesso Pannello IPTV',
         'description' => 'Confronta i pacchetti di crediti Opplex e Filex per rivenditori IPTV, gestisci gli abbonamenti dei clienti e richiedi assistenza per configurare il pannello.',
-        'keywords' => 'rivenditore IPTV Italia, pannello IPTV, IPTV Smarters Pro rivenditore, IPTV Extreme APK, crediti IPTV, lista IPTV Sky Italia',
+        'keywords' => 'rivenditore IPTV Italia, pannello IPTV, IPTV Smarters Pro rivenditore, IPTV Extreme APK, crediti IPTV',
     ],
     'buynow' => [
         'title' => 'Acquista IPTV ora | Piani IPTV 4K e streaming HD',

@@ -2,7 +2,7 @@
 
 return [
     'hero' => [
-        'heading' => 'Beste aanbieder van IPTV-abonnementen | Live-tv, sport en 4K-streaming',
+        'heading' => 'Beste aanbieder van IPTV-abonnementen | Live-tv en 4K-streaming',
         'text' => 'Betaal niet langer voor kabel-tv die je nauwelijks gebruikt. Profiteer van enkele van de beste IPTV-abonnementen: Opplex biedt je 12,000+ livekanalen, 50,000+ films en haarscherpe 4K-kwaliteit, allemaal op de apparaten die je al hebt. Kies een abonnement, sluit aan en begin vandaag nog met kijken.',
         'primary_cta' => 'Start gratis proefperiode',
         'secondary_cta' => 'Bekijk IPTV-abonnementen',
@@ -10,7 +10,7 @@ return [
     'split' => [
         'eyebrow' => 'Plezier zonder grenzen',
         'heading' => 'Kijk wat je wilt, wanneer je wilt',
-        'text' => 'Opplex is momenteel een van de beste IPTV-streamingdiensten, vooral als je in de USA of ergens in Europa bent. Eén abonnement omvat live sport, nieuws, films en series in HD en 4K. Het werkt op je Smart TV, Fire TV Stick, Android-box, telefoon of tablet. De installatie duurt maar een paar minuten en wij staan voor je klaar als je hulp nodig hebt.',
+        'text' => 'Opplex is momenteel een van de beste IPTV-streamingdiensten, vooral als je in de USA of ergens in Europa bent. Eén abonnement omvat nieuws, films en series in HD en 4K. Het werkt op je Smart TV, Fire TV Stick, Android-box, telefoon of tablet. De installatie duurt maar een paar minuten en wij staan voor je klaar als je hulp nodig hebt.',
         'image_alt' => 'Bekijk Opplex IPTV op je tv, streamingapparaat, telefoon of tablet',
     ],
     'pricing' => [
@@ -23,7 +23,7 @@ return [
                 'price' => '$2.99 / 1 maand',
                 'features' => [
                     '4K-livekanalen zonder buffering',
-                    'Alle films, series en sport inbegrepen',
+                    'Alle films en series inbegrepen',
                     'Werkt op elk apparaat: Fire TV Stick, Smart TV, Android of iOS',
                     '24/7 ondersteuning via WhatsApp',
                 ],
@@ -51,7 +51,7 @@ return [
                 'price' => '$23.99 / 12 maanden',
                 'features' => [
                     'Beste prijs-kwaliteitverhouding, minder dan $2 per maand',
-                    'Een heel jaar live TV, sport en VOD in 4K',
+                    'Een heel jaar live TV en VOD in 4K',
                 ],
             ],
         ],
@@ -98,11 +98,6 @@ return [
                 'description' => 'Wil je IPTV verkopen? Ons resellerpaneel biedt je credits, een dashboard en flexibele prijzen, zodat je je eigen klantenbestand kunt opbouwen en op jouw voorwaarden kunt verdienen. Verdien door Xtreme HD IPTV, IPTV-boxen en aroma IPTV te verkopen in de UK, Frankrijk, Italië en wereldwijd.',
                 'cta' => 'Informatie over IPTV-resellerprogramma\'s',
             ],
-            [
-                'title' => 'Live sport in HD via IPTV Smart Player',
-                'description' => 'Voetbal, cricket, UFC, NBA: alles live en alles in HD of 4K. Geen extra sportpakket. Geen black-outs. Tik gewoon op het kanaal en kijk.',
-                'cta' => 'Meer informatie over sportkanalen',
-            ],
         ],
     ],
     'devices' => [
@@ -121,7 +116,7 @@ return [
     'testimonials' => [
         'title' => 'Klantbeoordelingen - De beste IPTV-ervaring',
         'heading' => 'Lees wat kijkers zeggen over Opplex IPTV',
-        'intro' => 'Ervaringen gedeeld door kijkers die Opplex IPTV gebruiken voor live-tv, sport en on-demand streaming.',
+        'intro' => 'Ervaringen gedeeld door kijkers die Opplex IPTV gebruiken voor live-tv en on-demand streaming.',
         'verified_label' => 'Geverifieerde IPTV-klant',
         'reviews' => [
             [
@@ -159,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => 'Wat is Opplex IPTV precies?',
-                'answer' => 'Opplex is een IPTV-abonnementsdienst. Dat betekent dat je live-tv, sport, films en series via je internetverbinding streamt. Geen satellietschotel, geen kabelbox en geen contract. Je krijgt 12,000+ livekanalen en 50,000+ on-demandtitels in één app.',
+                'answer' => 'Opplex is een IPTV-abonnementsdienst. Dat betekent dat je live-tv, films en series via je internetverbinding streamt. Geen satellietschotel, geen kabelbox en geen contract. Je krijgt 12,000+ livekanalen en 50,000+ on-demandtitels in één app.',
             ],
             [
                 'question' => 'Is er een gratis proefperiode voordat ik een abonnement neem?',

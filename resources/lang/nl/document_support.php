@@ -11,11 +11,11 @@ return [
                 'items' => [
                     [
                         'question' => 'Wat is Opplex IPTV?',
-                        'answer' => 'Opplex is een IPTV-abonnementsdienst die live-tv, sport, films en series via je internetverbinding streamt. Je krijgt 12,000+ livekanalen en 50,000+ on-demandtitels, zonder satellietschotel, kabelbox of langdurig contract. Abonnementen beginnen bij $2.99 per maand.',
+                        'answer' => 'Opplex is een IPTV-abonnementsdienst die live-tv, films en series via je internetverbinding streamt. Je krijgt 12,000+ livekanalen en 50,000+ on-demandtitels, zonder satellietschotel, kabelbox of langdurig contract. Abonnementen beginnen bij $2.99 per maand.',
                     ],
                     [
                         'question' => 'Hoe ziet Opplex IPTV eruit op een apparaat?',
-                        'answer' => 'Het ziet eruit als een gewone streamingapp. Je ziet een startscherm met secties voor livekanalen, films, series en sport. Op een Smart TV vult het het volledige scherm. Op een telefoon is het ingericht als een mobiele app. De screenshots op deze pagina laten zien hoe de interface er op verschillende apparaten uitziet.',
+                        'answer' => 'Het ziet eruit als een gewone streamingapp. Je ziet een startscherm met secties voor livekanalen, films en series. Op een Smart TV vult het het volledige scherm. Op een telefoon is het ingericht als een mobiele app. De screenshots op deze pagina laten zien hoe de interface er op verschillende apparaten uitziet.',
                         'images' => [
                             ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Op Samsung TV'],
                             ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'Op mobiele telefoon'],
@@ -23,8 +23,6 @@ return [
                             ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interface van de filmsectie'],
                             ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interface van de livekanalensectie'],
                             ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interface voor het afspelen van films'],
-                            ['url' => 'images/resource/onmobile5.webp', 'caption' => 'Interface voor het kiezen van de inlogmethode'],
-                            ['url' => 'images/resource/onmobile6.webp', 'caption' => 'Interface van de inlogpagina'],
                             ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interface van de livenieuwssectie'],
                             ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interface van de appinstellingen'],
                             ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interface voor het afspelen van series'],
@@ -69,19 +67,12 @@ return [
                 'title' => 'Installatie en compatibele apparaten',
                 'items' => [
                     [
-                        'question' => 'Hoe meld ik me aan bij Opplex IPTV?',
-                        'answer' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we je per e-mail en WhatsApp een gebruikersnaam, wachtwoord en server-URL. Open je IPTV-app, kies “Login with Xtream Codes” en voer deze drie gegevens in. Bekijk de afbeelding met de inloggids op deze pagina voor visuele instructies.',
-                        'images' => [
-                            ['url' => 'images/resource/loginguide.webp', 'caption' => 'Inloggids'],
-                        ],
-                    ],
-                    [
                         'question' => 'Welke apparaten werken met Opplex?',
                         'answer' => 'Opplex is compatibel met populaire apparaten, waaronder ondersteunde Amazon Firestick, Fire TV, Android TV-boxen, Samsung en LG Smart TV\'s, Android-telefoons en -tablets, iPhones, iPads, MAG-boxen, Windows-PCs, Mac en Linux. Compatibiliteit kan verschillen per model, besturingssysteem en IPTV-app.',
                     ],
                     [
                         'question' => 'Werkt Opplex IPTV op een laptop of PC?',
-                        'answer' => 'Ja. Download IPTV Smarters Pro voor Windows of IBO Player vanaf de pagina Applicaties en meld je aan met je Opplex-inloggegevens. Het werkt prima op Windows 10 en hoger en op Mac via IBO Player.',
+                        'answer' => 'Ja. Download IPTV Smarters Pro voor Windows of IBO Player vanaf de pagina Applicaties. Het werkt prima op Windows 10 en hoger en op Mac via IBO Player.',
                     ],
                     [
                         'question' => 'Hoeveel apparaten kan ik tegelijkertijd gebruiken?',
@@ -111,7 +102,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Kan ik vóór aankoop controleren of een specifiek kanaal of programma beschikbaar is?',
-                        'answer' => 'Ja. Stuur ons via WhatsApp gewoon wat je zoekt, bijvoorbeeld een specifiek kanaal, een sportcompetitie of TV-serie, en wij bevestigen vóór je een abonnement neemt of het in onze bibliotheek staat.',
+                        'answer' => 'Ja. Stuur ons via WhatsApp gewoon wat je zoekt, bijvoorbeeld een specifiek kanaal of TV-serie, en wij bevestigen vóór je een abonnement neemt of het in onze bibliotheek staat.',
                     ],
                     [
                         'question' => 'Kan ik kanalen voor volwassenen verbergen of bepaalde content vergrendelen?',

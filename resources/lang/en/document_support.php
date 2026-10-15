@@ -11,11 +11,11 @@ return [
                 'items' => [
                     [
                         'question' => 'What is Opplex IPTV?',
-                        'answer' => 'Opplex is an IPTV subscription service that streams live TV, sports, movies, and series over your internet connection. You get 12,000+ live channels and 50,000+ on-demand titles, no satellite dish, no cable box, no long contract. Plans start at $2.99 a month.',
+                        'answer' => 'Opplex is an IPTV subscription service that streams live TV, movies, and series over your internet connection. You get 12,000+ live channels and 50,000+ on-demand titles, no satellite dish, no cable box, no long contract. Plans start at $2.99 a month.',
                     ],
                     [
                         'question' => 'What does Opplex IPTV look like on a device?',
-                        'answer' => 'It looks just like a regular streaming app. You\'ll see a home screen with sections for live channels, movies, series, and sports. On a Smart TV, it fills the full screen. On a phone,e it\'s laid out like a mobile app. The screenshots on this page show what the interface looks like across different devices.',
+                        'answer' => 'It looks just like a regular streaming app. You\'ll see a home screen with sections for live channels, movies, and series. On a Smart TV, it fills the full screen. On a phone,e it\'s laid out like a mobile app. The screenshots on this page show what the interface looks like across different devices.',
                         'images' => [
                             ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'On Samsung TV'],
                             ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'On Mobile Phone'],
@@ -23,8 +23,6 @@ return [
                             ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Movies Section Interface'],
                             ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Live Channels Section Interface'],
                             ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Movie Play Section Interface'],
-                            ['url' => 'images/resource/onmobile5.webp', 'caption' => 'Choose Login Way Interface'],
-                            ['url' => 'images/resource/onmobile6.webp', 'caption' => 'Login Page Interface'],
                             ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Live News Section Interface'],
                             ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Application Settings Section Interface'],
                             ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Playing Series Interface'],
@@ -69,19 +67,12 @@ return [
                 'title' => 'Setup & Compatible Devices',
                 'items' => [
                     [
-                        'question' => 'How do I log in to Opplex IPTV?',
-                        'answer' => 'After you subscribe, we send you a username, password, and server URL by email and WhatsApp. Open your IPTV app, choose \'Login with Xtream Codes\', enter those three details, and your channels load automatically. See the login guide image on this page for a visual walkthrough.',
-                        'images' => [
-                            ['url' => 'images/resource/loginguide.webp', 'caption' => 'Login Guide'],
-                        ],
-                    ],
-                    [
                         'question' => 'Which devices work with Opplex?',
                         'answer' => 'Opplex runs on pretty much everything: Amazon Firestick, Fire TV, Android TV boxes, Samsung and LG Smart TVs, Android phones and tablets, iPhones, iPads, MAG boxes, Windows PCs, Mac, and Linux. If it supports an IPTV player app, it\'ll work.',
                     ],
                     [
                         'question' => 'Does Opplex IPTV work on a laptop or PC?',
-                        'answer' => 'Yes. Download IPTV Smarters Pro for Windows or IBO Player from the Applications page and log in with your Opplex credentials. It works fine on Windows 10 and above, and Mac via the IBO Player.',
+                        'answer' => 'Yes. Download IPTV Smarters Pro for Windows or IBO Player from the Applications page. It works fine on Windows 10 and above, and Mac via the IBO Player.',
                     ],
                     [
                         'question' => 'How many devices can I use at the same time?',
@@ -111,7 +102,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Can I check if a specific channel or show is available before I buy?',
-                        'answer' => 'Yes. Just message us on WhatsApp with what you\'re looking for, a specific channel, sports league, or TV series, and we\'ll confirm whether it\'s in our library before you subscribe.',
+                        'answer' => 'Yes. Just message us on WhatsApp with what you\'re looking for, a specific channel or TV series, and we\'ll confirm whether it\'s in our library before you subscribe.',
                     ],
                     [
                         'question' => 'Can I hide adult channels or lock certain content?',
@@ -139,7 +130,7 @@ return [
             'eyebrow' => 'Streaming that just works since 2022',
             'heading' => 'We Started Opplex Because We Were Tired of Bad IPTV Too',
             'paragraphs' => [
-                'Before Opplex, we were the customers. Constantly switching providers, dealing with channels that froze at kick-off, support teams that took days to reply, and prices that crept up every six months for no reason.',
+                'Before Opplex, we were the customers. Constantly switching providers, dealing with channels that froze, support teams that took days to reply, and prices that crept up every six months for no reason.',
                 'So we built something better. Opplex launched with one rule: give people a streaming service that\'s stable, honest about what it costs, and actually picks up when you need help.',
                 'That hasn\'t changed. What has changed is scale, from a handful of early subscribers to tens of thousands of viewers across the USA, UK, France, Italy, Canada, and dozens of other countries. The infrastructure got bigger. The team got bigger. The rule stayed the same.',
             ],

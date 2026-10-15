@@ -14,7 +14,7 @@ return [
                 ],
                 [
                     'title' => '12,000+ Live Channels',
-                    'description' => 'Sports, news, entertainment, and international channels in one plan.',
+                    'description' => 'News, entertainment, and international channels in one plan.',
                     'icon' => 'fa fa-globe',
                 ],
                 [
@@ -41,7 +41,7 @@ return [
                     'price' => '$2.99/month',
                     'features' => [
                         'Stream 12,000+ channels in HD and 4K, no buffering',
-                        'All movies, series, and live sports',
+                        'All movies and series',
                         '24/7 support via WhatsApp',
                         'Works on every major device',
                     ],
@@ -88,7 +88,7 @@ return [
                 ],
                 [
                     'title' => 'Step 3: Start Watching',
-                    'description' => "Open your IPTV player, enter your details, and your channels load automatically. If you need help, our team is on WhatsApp.",
+                    'description' => "If you need help, our team is on WhatsApp.",
                 ],
             ],
             'devices' => 'Works with: Smart TV · Firestick · Android TV · MAG · iOS · Android · Windows/Mac',
@@ -99,7 +99,7 @@ return [
             'items' => [
                 [
                     'title' => 'No Buffer. Ever.',
-                    'description' => 'Our servers run 24/7 with 99.9% uptime. Channels load fast and stay stable, no mid-match freezes or pixelated picture.',
+                    'description' => 'Our servers run 24/7 with 99.9% uptime. Channels load fast and stay stable, no freezes or pixelated picture.',
                 ],
                 [
                     'title' => 'Flexible IPTV Plans That Fit Your Budget',
@@ -119,7 +119,7 @@ return [
             'heading' => 'What You Get with Every IPTV Subscription',
             'intro' => 'There are no surprise add-ons or gated features. Every plan, regardless of price, includes the same full package:',
             'items' => [
-                '12,000+ live TV channels (sports, news, entertainment, international)',
+                '12,000+ live TV channels (news, entertainment, international)',
                 '50,000+ movies and 5,000+ TV series on demand',
                 '4K and HD stream quality on supported channels',
                 'Electronic Programme Guide (EPG) included',
@@ -141,7 +141,7 @@ return [
                 ],
                 [
                     'question' => 'How do I activate my subscription?',
-                    'answer' => 'After you pay, we send your login details by email and WhatsApp. Enter them into your IPTV player, and your channels start loading automatically. Most people are up and running in under 5 minutes.',
+                    'answer' => 'After you pay, we send your login details by email and WhatsApp. Most people are up and running in under 5 minutes.',
                 ],
                 [
                     'question' => 'Can I use my IPTV subscription while travelling?',
@@ -186,9 +186,9 @@ return [
         ],
         'included' => [
             'heading' => 'Every Plan Includes All of This  No Add-Ons, No Tiers',
-            'intro' => "A lot of streaming services make you pay extra for sports, for 4K, for VOD. Opplex doesn't. Here's what you get from day one on any plan:",
+            'intro' => "A lot of streaming services make you pay extra for 4K, for VOD. Opplex doesn't. Here's what you get from day one on any plan:",
             'items' => [
-                '12,000+ live channels: sports, news, entertainment, UK, USA, international',
+                '12,000+ live channels: news, entertainment, UK, USA, international',
                 '50,000+ movies on demand',
                 '5,000+ TV series, current and classic',
                 'HD and 4K quality on supported channels and devices',

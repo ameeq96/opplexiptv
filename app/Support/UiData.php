@@ -903,7 +903,6 @@ class UiData
             ['text' => __('messages.testimonial_3'),  'author_name' => 'Michael',      'image' => 'images/resource/author-1.webp'],
             ['text' => __('messages.testimonial_4'),  'author_name' => 'Sarah',        'image' => 'images/resource/author-2.webp'],
             ['text' => __('messages.testimonial_5'),  'author_name' => 'Ameeq Khan',   'image' => 'images/img-test.webp'],
-            ['text' => __('messages.testimonial_6'),  'author_name' => 'Luc Dubois',   'image' => 'images/resource/author-3.webp'],
             ['text' => __('messages.testimonial_7'),  'author_name' => 'Giulia Romano', 'image' => 'images/resource/author-5.webp'],
             ['text' => __('messages.testimonial_8'),  'author_name' => 'Oliver Smith', 'image' => 'images/resource/author-6.webp'],
             ['text' => __('messages.testimonial_9'),  'author_name' => 'Fatima B.',    'image' => 'images/resource/author-7.webp'],
@@ -930,8 +929,6 @@ class UiData
                     ['url' => 'images/resource/onmobile2.webp',    'caption' => __('messages.faq.movies')],
                     ['url' => 'images/resource/onmobile3.webp',    'caption' => __('messages.faq.live')],
                     ['url' => 'images/resource/onmobile4.webp',    'caption' => __('messages.faq.play')],
-                    ['url' => 'images/resource/onmobile5.webp',    'caption' => __('messages.faq.login_way')],
-                    ['url' => 'images/resource/onmobile6.webp',    'caption' => __('messages.faq.login_page')],
                     ['url' => 'images/resource/onmobile7.webp',    'caption' => __('messages.faq.news')],
                     ['url' => 'images/resource/onmobile8.webp',    'caption' => __('messages.faq.settings')],
                     ['url' => 'images/resource/onmobile9.webp',    'caption' => __('messages.faq.series_play')],
@@ -939,13 +936,6 @@ class UiData
                     ['url' => 'images/resource/onmobile11.webp',   'caption' => __('messages.faq.on_screen')],
                     ['url' => 'images/resource/onmobile12.webp',   'caption' => __('messages.faq.series_playlist')],
                     ['url' => 'images/resource/alldevices.webp',   'caption' => __('messages.faq.devices')],
-                ],
-            ],
-            [
-                'question' => __('messages.faq.q3'),
-                'answer'   => __('messages.faq.a3'),
-                'images'   => [
-                    ['url' => 'images/resource/loginguide.webp', 'caption' => __('messages.faq.login_guide')],
                 ],
             ],
             ['question' => __('messages.faq.q4'),  'answer' => __('messages.faq.a4'),  'images' => []],
@@ -991,6 +981,10 @@ class UiData
 
         $items = [];
         for ($i = 1; $i <= 6; $i++) {
+            if ($key === 'apps' && $i === 3) {
+                continue;
+            }
+
             $question = __("messages.page_faq.{$key}.q{$i}");
 
             // Stop once we run past the defined questions for this page

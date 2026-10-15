@@ -29,7 +29,7 @@ return [
         'network_person_alt' => 'Afbeelding van een hoogwaardige IPTV-verbinding',
         'network_heading_aria' => 'Koptekst voor IPTV-netwerkfuncties',
         'features_list_aria' => 'Lijst met IPTV-functies',
-        'services_aria' => 'Ontdek IPTV-diensten zoals pakketten, sport, VOD en toegang op meerdere apparaten',
+        'services_aria' => 'Ontdek IPTV-diensten zoals pakketten, VOD en toegang op meerdere apparaten',
         'services_heading_aria' => 'Ontdek Opplex IPTV-diensten',
         'services_carousel_aria' => 'Carrousel met IPTV-diensten',
         'trial_aria' => 'Start je gratis IPTV-proefperiode bij Opplex',

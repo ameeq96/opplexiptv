@@ -2,7 +2,7 @@
 
 return [
     'hero' => [
-        'heading' => 'Meilleur fournisseur de services d’abonnement IPTV | TV en direct, sports et streaming 4K',
+        'heading' => 'Meilleur fournisseur de services d’abonnement IPTV | TV en direct et streaming 4K',
         'text' => 'Arrêtez de payer pour un câble que vous utilisez à peine. Profitez de certaines des meilleures offres d’abonnement IPTV : Opplex vous propose 12,000+ chaînes en direct, 50,000+ films et une 4K d’une netteté exceptionnelle, sur les appareils que vous possédez déjà. Choisissez une formule, connectez-vous et commencez à regarder dès aujourd’hui.',
         'primary_cta' => 'Démarrer l’essai gratuit',
         'secondary_cta' => 'Voir les formules IPTV',
@@ -10,7 +10,7 @@ return [
     'split' => [
         'eyebrow' => 'Du divertissement sans limites',
         'heading' => 'Regardez ce que vous voulez, quand vous voulez',
-        'text' => 'Opplex est l’un des meilleurs services de streaming IPTV disponibles actuellement, surtout si vous êtes aux États-Unis ou ailleurs en Europe. Un seul abonnement couvre les sports en direct, les actualités, les films et les séries en HD et 4K. Il fonctionne sur votre Smart TV, Fire TV Stick, Android box, téléphone ou tablette. La configuration ne prend que quelques minutes, et nous sommes là si vous avez besoin d’aide.',
+        'text' => 'Opplex est l’un des meilleurs services de streaming IPTV disponibles actuellement, surtout si vous êtes aux États-Unis ou ailleurs en Europe. Un seul abonnement couvre les actualités, les films et les séries en HD et 4K. Il fonctionne sur votre Smart TV, Fire TV Stick, Android box, téléphone ou tablette. La configuration ne prend que quelques minutes, et nous sommes là si vous avez besoin d’aide.',
         'image_alt' => 'Regardez Opplex IPTV sur votre téléviseur, appareil de streaming, téléphone ou tablette',
     ],
     'pricing' => [
@@ -23,7 +23,7 @@ return [
                 'price' => '$2.99 / 1 mois',
                 'features' => [
                     'Chaînes en direct 4K sans mise en mémoire tampon',
-                    'Tous les films, séries et sports inclus',
+                    'Tous les films et séries inclus',
                     'Fonctionne sur tous les appareils : Fire TV Stick, Smart TV, Android ou iOS',
                     'Assistance WhatsApp 24/7',
                 ],
@@ -51,7 +51,7 @@ return [
                 'price' => '$23.99 / 12 mois',
                 'features' => [
                     'Meilleur rapport qualité-prix, moins de $2 par mois',
-                    'Une année complète de TV en direct, de sports et de VOD en 4K',
+                    'Une année complète de TV en direct et de VOD en 4K',
                 ],
             ],
         ],
@@ -98,11 +98,6 @@ return [
                 'description' => 'Vous souhaitez vendre de l’IPTV ? Notre panneau revendeur vous fournit des crédits, un tableau de bord et une tarification flexible afin de développer votre propre clientèle et de gagner selon vos conditions. Gagnez de l’argent en vendant Xtreme HD IPTV, des IPTV boxes et aroma IPTV au Royaume-Uni, en France, en Italie et dans le monde entier.',
                 'cta' => 'Détails sur les programmes de revendeurs IPTV',
             ],
-            [
-                'title' => 'Sports en direct en HD via IPTV Smart Player',
-                'description' => 'Football, cricket, UFC, NBA : tout en direct, tout en HD ou 4K. Aucun bouquet sportif supplémentaire. Aucun écran noir. Sélectionnez simplement la chaîne et regardez.',
-                'cta' => 'Plus de détails sur les chaînes sportives',
-            ],
         ],
     ],
     'devices' => [
@@ -121,7 +116,7 @@ return [
     'testimonials' => [
         'title' => 'Avis clients : la meilleure expérience IPTV',
         'heading' => 'Découvrez ce que les spectateurs disent d’Opplex IPTV',
-        'intro' => 'Voici de véritables avis de clients qui regardent chaque jour Opplex IPTV pour la TV en direct, les sports et le streaming à la demande.',
+        'intro' => 'Voici de véritables avis de clients qui regardent chaque jour Opplex IPTV pour la TV en direct et le streaming à la demande.',
         'verified_label' => 'Client IPTV vérifié',
         'reviews' => [
             [
@@ -159,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => 'Qu’est-ce qu’Opplex IPTV exactement ?',
-                'answer' => 'Opplex est un service d’abonnement IPTV. Cela signifie que vous regardez la TV en direct, les sports, les films et les séries via votre connexion Internet. Aucune antenne satellite, aucun décodeur câble et aucun contrat. Vous obtenez 12,000+ chaînes en direct et 50,000+ titres à la demande dans une seule application.',
+                'answer' => 'Opplex est un service d’abonnement IPTV. Cela signifie que vous regardez la TV en direct, les films et les séries via votre connexion Internet. Aucune antenne satellite, aucun décodeur câble et aucun contrat. Vous obtenez 12,000+ chaînes en direct et 50,000+ titres à la demande dans une seule application.',
             ],
             [
                 'question' => 'Puis-je profiter d’un essai gratuit avant de m’abonner ?',

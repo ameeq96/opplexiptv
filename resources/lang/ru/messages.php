@@ -54,7 +54,7 @@ return [
   'feature_5k_series' => '5k+ сериалов на IPTV Box (Netflix, Prime и другие)',
   'feature_5k_series_desc' => 'Смотрите более 5,000 сериалов Netflix и Prime Video с IPTV Smart Player и xtreme HD IPTV — с бесплатным тестом и поддержкой 4K.',
   'feature_12k_channels' => '12k+ ТВ-каналов через IPTV Box и Smart Player',
-  'feature_12k_channels_desc' => 'Получите доступ к 12,000+ ТВ-каналов включая спорт, новости и развлечения в США, Великобритании, Франции и Италии с лучшим IPTV сервисом.',
+  'feature_12k_channels_desc' => 'Получите доступ к 12,000+ ТВ-каналов включая новости и развлечения в США, Великобритании, Франции и Италии с лучшим IPTV сервисом.',
   'feature_hd_4k' => 'Наслаждайтесь IPTV в Full HD и 4K качестве',
   'feature_hd_4k_desc' => 'Кристально чистое 4K IPTV без буферизации, совместимость с Smart Player, бесплатный тест и xtreme HD IPTV стриминг в Европе.',
 
@@ -63,8 +63,6 @@ return [
   'iptv_packages_desc' => 'Выбирайте доступные IPTV тарифы: xtreme HD IPTV, aroma IPTV и Smart Player — 12k+ каналов и поддержка 4K.',
   'reseller_panel' => 'Начните реселлинг IPTV с бесплатным тестом и кредитами',
   'reseller_panel_desc' => 'Присоединяйтесь к программе реселлеров Opplex IPTV и зарабатывайте, продавая xtreme HD IPTV, IPTV Box и aroma IPTV в Великобритании, Франции, Италии и по всему миру.',
-  'iptv_sports' => 'Смотрите спорт в HD через IPTV Smart Player',
-  'iptv_sports_desc' => 'Футбол, крикет, UFC и другие виды спорта в 4K IPTV без задержек — работает с IPTV Smart Player и IPTV Box.',
   'iptv_vod' => 'Премиум VOD IPTV с 50k+ фильмов и сериалов',
   'iptv_vod_desc' => 'Смотрите более 50k фильмов и 5k+ веб-сериалов по запросу через xtreme HD IPTV и aroma IPTV с бесплатным тестом и в Full HD.',
   'iptv_devices' => 'IPTV на популярных устройствах — Smart Player, Android, Box',
@@ -78,7 +76,6 @@ return [
   'testimonial_3' => 'Перешел с кабеля на Opplex IPTV — xtreme HD IPTV и Smart Player сделали просмотр удобнее.',
   'testimonial_4' => 'IPTV Smart Player без буферизации, отличная поддержка, работает даже на Firestick — полностью доволен!',
   'testimonial_5' => 'Отличное IPTV с Netflix, Prime и 50k+ VOD. Работает идеально на IPTV Box и Android.',
-  'testimonial_6' => 'Смотрел все спортивные матчи в 4K IPTV без лагов. Отличный сервис для фанатов спорта во Франции.',
   'testimonial_7' => 'Бесплатный тест IPTV позволил смотреть любимые шоу из Италии и Франции через aroma IPTV.',
   'testimonial_8' => 'Эта IPTV подписка имеет 12k+ каналов, работает на Smart Player и очень стабильна в Великобритании.',
   'testimonial_9' => 'Использую xtreme HD IPTV на мобильном и Firestick — стриминг плавный, поддержка моментальная.',
@@ -111,7 +108,7 @@ return [
   'few_reasons' => 'Почему выбрать Opplex – лучшее IPTV с 4K, Smart Player и бесплатным тестом',
 
   'feature_hd' => 'Лучшее IPTV с HD и 4K стримингом',
-  'feature_hd_desc' => 'Наслаждайтесь стабильным xtreme HD IPTV с 12k+ каналами, фильмами, сериалами и спортом – работает на Smart TV, Firestick и IPTV Box.',
+  'feature_hd_desc' => 'Наслаждайтесь стабильным xtreme HD IPTV с 12k+ каналами, фильмами и сериалами – работает на Smart TV, Firestick и IPTV Box.',
 
   'feature_flexible' => 'Гибкие подписки IPTV с бесплатным тестом',
   'feature_flexible_desc' => 'Выбирайте ежемесячные, годовые или реселлерские планы. Все пакеты включают поддержку Smart Player, aroma IPTV и бесплатный тест.',
@@ -128,8 +125,8 @@ return [
   'feature_support' => 'Круглосуточная поддержка IPTV через WhatsApp',
   'feature_support_desc' => 'Получите помощь в настройке Smart Player, активации теста, решении проблем с Box и стримингом.',
 
-  'feature_sports_movies' => 'Спорт в прямом эфире, фильмы Болливуда и другое',
-  'feature_sports_movies_desc' => 'Смотрите UFC, F1, футбол и 50k+ фильмов в 4K IPTV через xtreme HD IPTV, Smart Player и IPTV Box с бесплатным тестом.',
+  'feature_sports_movies' => 'Фильмы Болливуда и другое',
+  'feature_sports_movies_desc' => 'Смотрите 50k+ фильмов в 4K IPTV через xtreme HD IPTV, Smart Player и IPTV Box с бесплатным тестом.',
 
   'reseller_starter' => 'Стартовый IPTV реселлер – Smart Player и бесплатный тест',
   'reseller_essential' => 'Основной реселлер – Aroma IPTV, Xtreme HD IPTV, без сгорания кредитов',
@@ -226,13 +223,11 @@ return [
 
   // Questions & Answers - ostavlyaem v originalnom vide
   'faq.q1' => 'Chto takoye Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV eto IPTV servis kotoriy predlagaet bolee <strong>12,000 pryamih kanalov, 50000+ FILMOV, 5000+ poslednih serialov</strong>. Vmeste s mnogimi VOD variantami. Standartniy plan OPPLEXTV IPTV stoit <span style="text-decoration: line-through; color: #999;">$31.99/mesyats</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mesyats</span> i vklyuchaet mezhdunarodnie, sport, PPV, razvllechenie, novosti i drugie kategorii kanalov. OPPLEXTV IPTV mozhno ustanovit na sovmestimie Android / IOS ustroystva, vklyuchaya Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield i drugie. OPPLEX IPTV yavlyaetsya luchshim IPTV serverom v Kanade.',
+  'faq.a1' => 'OPPLEXTV eto IPTV servis kotoriy predlagaet bolee <strong>12,000 pryamih kanalov, 50000+ FILMOV, 5000+ poslednih serialov</strong>. Vmeste s mnogimi VOD variantami. Standartniy plan OPPLEXTV IPTV stoit <span style="text-decoration: line-through; color: #999;">$31.99/mesyats</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mesyats</span> i vklyuchaet mezhdunarodnie, PPV, razvllechenie, novosti i drugie kategorii kanalov. OPPLEXTV IPTV mozhno ustanovit na sovmestimie Android / IOS ustroystva, vklyuchaya Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield i drugie. OPPLEX IPTV yavlyaetsya luchshim IPTV serverom v Kanade.',
 
   'faq.q2' => 'Kak viglyadit IPTV?',
   'faq.a2' => 'Vot neskolko skrinshotov kak IPTV prilozhenie viglyadit na raznih ustroystvah.',
 
-  'faq.q3' => 'Kak voiti v Opplex IPTV s pomoschyu kodov',
-  'faq.a3' => 'Kogda klient pokupaet Opplex IPTV podpisku, on poluchaet login kody. Klient dolzhen vvesti eti kody vmeste s predostavlennim URL v prilozhenie v ukazannie polya. Smotri kartinku nizhe dlya luchshego ponimaniya.',
 
   'faq.q4' => 'Est li trial v Opplex IPTV?',
   'faq.a4' => 'Да. Доступен бесплатный тест, чтобы проверить сервис на своем устройстве перед выбором тарифа. Напишите нам в WhatsApp, чтобы начать.',
@@ -354,18 +349,18 @@ return [
 
   'iptv_subscription_service' => [
     'title' => 'Сервис подписки IPTV',
-    'heading' => 'Премиум-сервис IPTV для прямого телевидения, спорта, фильмов, сериалов и потокового видео в 4K',
+    'heading' => 'Премиум-сервис IPTV для прямого телевидения, фильмов, сериалов и потокового видео в 4K',
     'breadcrumb' => [
       'home' => 'Главная',
       'current' => 'Сервис подписки IPTV',
     ],
     'intro_eyebrow' => 'Premium plany striminga',
-    'intro_text' => 'Vyberite gibkuyu IPTV podpisku s live kanalami, sportom, filmami, serialami, 4K kachestvom i bystroi pomoshchyu dlya vashego ustroistva.',
+    'intro_text' => 'Vyberite gibkuyu IPTV podpisku s live kanalami, filmami, serialami, 4K kachestvom i bystroi pomoshchyu dlya vashego ustroistva.',
     'primary_cta' => 'Nastroit IPTV plan',
     'secondary_cta' => 'Nachat besplatnyi trial',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'HD i 4K striming', 'description' => 'Smotrite premium IPTV kontent v HD i 4K na sovmestimyh ekranah.'],
-      ['icon' => 'flaticon-5g', 'title' => '12K+ live kanalov', 'description' => 'Sport, novosti, razvlecheniya i mezhdunarodnye kanaly v odnom IPTV plane.'],
+      ['icon' => 'flaticon-5g', 'title' => '12K+ live kanalov', 'description' => 'Novosti, razvlecheniya i mezhdunarodnye kanaly v odnom IPTV plane.'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmy i serialy', 'description' => 'Bolshaya VOD biblioteka s filmami, serialami i semeinym kontentom.'],
       ['icon' => 'flaticon-customer-service', 'title' => 'Bystraya nastroyka', 'description' => 'Pomoshch dlya Smart TV, Firestick, Android, iOS, MAG i IPTV playerov.'],
     ],
@@ -424,7 +419,7 @@ return [
     [
       'icon' => 'flaticon-swimming-pool',
       'title' => 'IPTV в качестве HD и 4K',
-      'description' => 'Наслаждайтесь IPTV в кристально чистом HD и 4K, идеально подходит для фильмов, спорта и прямых трансляций на любом устройстве.',
+      'description' => 'Наслаждайтесь IPTV в кристально чистом HD и 4K, идеально подходит для фильмов и прямых трансляций на любом устройстве.',
     ],
     [
       'icon' => 'flaticon-5g',
@@ -448,7 +443,7 @@ return [
   'order_updated'   => 'Заказ успешно обновлён.',
   'order_deleted'   => 'Заказ успешно удалён.',
   'screenshot_deleted' => 'Скриншот успешно удалён.',
-  'pricing_subheading' => 'Прямой эфир, спорт, фильмы, сериалы, 4K и просмотр в записи',
+  'pricing_subheading' => 'Прямой эфир, фильмы, сериалы, 4K и просмотр в записи',
   'subheadingiptv' => 'Устранение неполадок IPTV, настройка, платежи, каналы и поддержка реселлеров',
   'subheadingcontact' => 'Контакты и поддержка — чат 24/7, WhatsApp, e-mail, биллинг и техническая помощь',
   'movies_subheading' => 'Просматривайте фильмы, сериалы и мультфильмы',
@@ -653,7 +648,7 @@ return [
   'home_hero_watch_live' => 'Смотрите :title в прямом эфире в HD',
   'home_services_eyebrow' => 'Премиум-возможности',
   'home_services_intro' => 'Мощный стриминг, более удобный доступ и более чистый IPTV-опыт на любом устройстве.',
-  'home_testimonials_intro' => 'Отзывы зрителей, использующих Opplex IPTV для прямого эфира, спорта и контента по запросу.',
+  'home_testimonials_intro' => 'Отзывы зрителей, использующих Opplex IPTV для прямого эфира и контента по запросу.',
   'home_testimonials_verified_customer' => 'Проверенный IPTV-клиент',
   'home_unlimited_eyebrow' => 'Безлимитный доступ',
   'home_unlimited_intro' => 'Смотрите премиальное прямое телевидение и VOD с более быстрым доступом, высокой стабильностью и гибкими тарифами для современного просмотра.',
@@ -756,7 +751,7 @@ return [
       'q1' => 'Что входит в подписку Opplex IPTV?',
       'a1' => 'Подписка дает доступ к доступным каналам в прямом эфире, включенному каталогу фильмов и сериалов, экранному телегиду и приложениям на совместимых устройствах.',
       'q2' => 'Как активировать подписку?',
-      'a2' => 'После оплаты мы отправим вам коды для входа и URL. Введите их в приложение IPTV-плеера, и каналы загрузятся автоматически.',
+      'a2' => 'После оплаты мы отправим вам коды для входа и URL.',
       'q3' => 'Можно ли пользоваться подпиской во время поездок за границу?',
       'a3' => 'Подписку можно использовать во многих поддерживаемых регионах при стабильном соединении. Сетевые условия и региональные ограничения могут различаться, поэтому перед поездкой уточните у нас место назначения.',
       'q4' => 'Какая скорость интернета необходима?',
@@ -768,11 +763,9 @@ return [
       'q1' => 'Какие приложения работают с Opplex IPTV?',
       'a1' => 'Opplex IPTV работает с популярными плеерами, такими как IPTV Smarters Pro, наши приложения Opplex/XTV, IBO Player и другие приложения, совместимые с Xtream.',
       'q2' => 'Как установить приложение IPTV на устройство?',
-      'a2' => 'Скачайте с этой страницы приложение для своей платформы, установите его и войдите с помощью данных, которые мы вам отправим.',
-      'q3' => 'Куда вводить данные для входа или коды Xtream?',
-      'a3' => 'Откройте приложение, выберите «Login with Xtream Codes / username», затем введите имя пользователя, пароль и URL сервера из письма об активации.',
+      'a2' => 'Скачайте с этой страницы приложение для своей платформы и установите его.',
       'q4' => 'Приложение не загружает каналы — что делать?',
-      'a4' => 'Проверьте подключение к интернету, убедитесь, что подписка активна, и повторно введите коды точно в предоставленном виде. Если проблема сохраняется, обратитесь в поддержку.',
+      'a4' => 'Проверьте подключение к интернету и убедитесь, что подписка активна. Если проблема сохраняется, обратитесь в поддержку.',
       'q5' => 'Приложения можно скачать бесплатно?',
       'a5' => 'Да, приложения-плееры бесплатны. Вы платите только за подписку Opplex IPTV, которая предоставляет доступ к контенту.',
     ],

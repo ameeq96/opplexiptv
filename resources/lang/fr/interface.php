@@ -85,8 +85,6 @@ return [
             'request_text' => 'Appuyez sur Activer pour envoyer votre numéro de commande à notre équipe d’assistance sur WhatsApp.',
             'verify_name' => 'Nous vérifions et activons',
             'verify_text' => 'L’activation a lieu après confirmation du paiement, pendant les heures d’activité de l’assistance.',
-            'stream_name' => 'Commencez à regarder',
-            'stream_text' => 'Ouvrez votre application IPTV, connectez-vous avec les informations que nous vous envoyons et regardez vos contenus sur n’importe quel appareil.',
         ],
         'whatsapp_request' => 'Demande d’activation',
         'whatsapp_order' => 'Commande n° : :order',
@@ -190,7 +188,7 @@ return [
         'title' => 'Trouvez le forfait IPTV adapté',
         'intro' => 'Répondez à trois questions rapides. Nous vous proposerons un forfait disponible sans inventer de chaînes ni de fonctionnalités.',
         'requirements_label' => 'Que souhaitez-vous regarder ?',
-        'requirements_placeholder' => 'Par exemple : football, chaînes britanniques, films...',
+        'requirements_placeholder' => 'Par exemple : chaînes britanniques, films...',
         'requirements_help' => 'Facultatif. Nous ajouterons ces informations à votre message WhatsApp afin que notre équipe confirme la disponibilité.',
         'budget_label' => 'Budget maximum (USD)',
         'budget_placeholder' => 'Par exemple : 25',
@@ -223,9 +221,9 @@ return [
     'movies' => [
         'no_overview' => 'Aucun résumé n’est disponible.',
         'featured_title' => 'Contenu IPTV à la une',
-        'fallback_movies' => 'Regardez des films premium, des chaînes en direct, du sport et du divertissement en HD/4K avec Opplex IPTV.',
+        'fallback_movies' => 'Regardez des films premium, des chaînes en direct et du divertissement en HD/4K avec Opplex IPTV.',
         'fallback_series' => 'Profitez de séries populaires et de divertissements du monde entier avec une diffusion IPTV fluide sur tous vos appareils.',
-        'fallback_action' => 'Regardez de l’action, du sport, les actualités et des contenus familiaux grâce à des forfaits IPTV fiables.',
+        'fallback_action' => 'Regardez de l’action, les actualités et des contenus familiaux grâce à des forfaits IPTV fiables.',
     ],
 
     'assistant' => [

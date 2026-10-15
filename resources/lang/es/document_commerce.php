@@ -14,7 +14,7 @@ return [
                 ],
                 [
                     'title' => '12,000+ canales en directo',
-                    'description' => 'Deportes, noticias, entretenimiento y canales internacionales en un solo plan.',
+                    'description' => 'Noticias, entretenimiento y canales internacionales en un solo plan.',
                     'icon' => 'fa fa-globe',
                 ],
                 [
@@ -41,7 +41,7 @@ return [
                     'price' => '$2.99/mes',
                     'features' => [
                         'Reproduce 12,000+ canales en HD y 4K, sin buffering',
-                        'Todas las películas, series y deportes en directo',
+                        'Todas las películas y series',
                         'Asistencia 24/7 por WhatsApp',
                         'Funciona en todos los dispositivos principales',
                     ],
@@ -88,7 +88,7 @@ return [
                 ],
                 [
                     'title' => 'Paso 3: Empieza a ver contenido',
-                    'description' => 'Abre tu reproductor IPTV, introduce tus datos y los canales se cargarán automáticamente. Si necesitas ayuda, nuestro equipo está disponible en WhatsApp.',
+                    'description' => 'Si necesitas ayuda, nuestro equipo está disponible en WhatsApp.',
                 ],
             ],
             'devices' => 'Funciona con: Smart TV · Firestick · Android TV · MAG · iOS · Android · Windows/Mac',
@@ -99,7 +99,7 @@ return [
             'items' => [
                 [
                     'title' => 'Sin buffering. Nunca.',
-                    'description' => 'Nuestros servidores funcionan 24/7 con una disponibilidad del 99.9%. Los canales cargan rápido y se mantienen estables, sin congelarse en mitad de un partido ni mostrar imágenes pixeladas.',
+                    'description' => 'Nuestros servidores funcionan 24/7 con una disponibilidad del 99.9%. Los canales cargan rápido y se mantienen estables, sin congelarse ni mostrar imágenes pixeladas.',
                 ],
                 [
                     'title' => 'Planes IPTV flexibles que se adaptan a tu presupuesto',
@@ -119,7 +119,7 @@ return [
             'heading' => 'Qué obtienes con cada suscripción IPTV',
             'intro' => 'No hay complementos sorpresa ni funciones bloqueadas. Todos los planes, independientemente del precio, incluyen el mismo paquete completo:',
             'items' => [
-                '12,000+ canales de TV en directo (deportes, noticias, entretenimiento e internacionales)',
+                '12,000+ canales de TV en directo (noticias, entretenimiento e internacionales)',
                 '50,000+ películas y 5,000+ series de TV bajo demanda',
                 'Calidad de streaming 4K y HD en los canales compatibles',
                 'Guía electrónica de programación (EPG) incluida',
@@ -141,7 +141,7 @@ return [
                 ],
                 [
                     'question' => '¿Cómo activo mi suscripción?',
-                    'answer' => 'Después de pagar, te enviamos tus datos de acceso por correo electrónico y WhatsApp. Introdúcelos en tu reproductor IPTV y los canales empezarán a cargarse automáticamente. La mayoría de las personas empieza a usar el servicio en menos de 5 minutos.',
+                    'answer' => 'Después de pagar, te enviamos tus datos de acceso por correo electrónico y WhatsApp. La mayoría de las personas empieza a usar el servicio en menos de 5 minutos.',
                 ],
                 [
                     'question' => '¿Puedo usar mi suscripción IPTV mientras viajo?',
@@ -186,9 +186,9 @@ return [
         ],
         'included' => [
             'heading' => 'Todos los planes incluyen todo esto: sin complementos ni niveles',
-            'intro' => 'Muchos servicios de streaming cobran un extra por los deportes, el 4K o el VOD. Opplex no. Esto es lo que obtienes desde el primer día con cualquier plan:',
+            'intro' => 'Muchos servicios de streaming cobran un extra por el 4K o el VOD. Opplex no. Esto es lo que obtienes desde el primer día con cualquier plan:',
             'items' => [
-                '12,000+ canales en directo: deportes, noticias, entretenimiento, Reino Unido, EE. UU. e internacionales',
+                '12,000+ canales en directo: noticias, entretenimiento, Reino Unido, EE. UU. e internacionales',
                 '50,000+ películas bajo demanda',
                 '5,000+ series de TV actuales y clásicas',
                 'Calidad HD y 4K en los canales y dispositivos compatibles',

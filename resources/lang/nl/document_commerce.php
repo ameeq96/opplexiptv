@@ -14,7 +14,7 @@ return [
                 ],
                 [
                     'title' => '12,000+ livekanalen',
-                    'description' => 'Sport, nieuws, entertainment en internationale kanalen in één abonnement.',
+                    'description' => 'Nieuws, entertainment en internationale kanalen in één abonnement.',
                     'icon' => 'fa fa-globe',
                 ],
                 [
@@ -41,7 +41,7 @@ return [
                     'price' => '$2.99/maand',
                     'features' => [
                         'Stream 12,000+ kanalen in HD en 4K, zonder buffering',
-                        'Alle films, series en live sport',
+                        'Alle films en series',
                         '24/7 ondersteuning via WhatsApp',
                         'Werkt op elk belangrijk apparaat',
                     ],
@@ -88,7 +88,7 @@ return [
                 ],
                 [
                     'title' => 'Stap 3: Begin met kijken',
-                    'description' => 'Open je IPTV-speler, voer je gegevens in en je kanalen worden automatisch geladen. Heb je hulp nodig, dan staat ons team klaar via WhatsApp.',
+                    'description' => 'Heb je hulp nodig, dan staat ons team klaar via WhatsApp.',
                 ],
             ],
             'devices' => 'Werkt met: Smart TV · Firestick · Android TV · MAG · iOS · Android · Windows/Mac',
@@ -99,7 +99,7 @@ return [
             'items' => [
                 [
                     'title' => 'Nooit buffering.',
-                    'description' => 'Onze servers draaien 24/7 met 99.9% uptime. Kanalen laden snel en blijven stabiel: geen vastlopers midden in een wedstrijd of blokkerig beeld.',
+                    'description' => 'Onze servers draaien 24/7 met 99.9% uptime. Kanalen laden snel en blijven stabiel: geen vastlopers of blokkerig beeld.',
                 ],
                 [
                     'title' => 'Flexibele IPTV-abonnementen die binnen je budget passen',
@@ -119,7 +119,7 @@ return [
             'heading' => 'Wat je bij elk IPTV-abonnement krijgt',
             'intro' => 'Er zijn geen onverwachte extra\'s of afgeschermde functies. Elk abonnement omvat, ongeacht de prijs, hetzelfde volledige pakket:',
             'items' => [
-                '12,000+ live TV-kanalen (sport, nieuws, entertainment, internationaal)',
+                '12,000+ live TV-kanalen (nieuws, entertainment, internationaal)',
                 '50,000+ films en 5,000+ TV-series on demand',
                 '4K- en HD-streamkwaliteit op ondersteunde kanalen',
                 'Elektronische programmagids (EPG) inbegrepen',
@@ -141,7 +141,7 @@ return [
                 ],
                 [
                     'question' => 'Hoe activeer ik mijn abonnement?',
-                    'answer' => 'Na je betaling sturen we je inloggegevens per e-mail en WhatsApp. Voer ze in je IPTV-speler in en je kanalen worden automatisch geladen. De meeste mensen zijn binnen 5 minuten klaar om te kijken.',
+                    'answer' => 'Na je betaling sturen we je inloggegevens per e-mail en WhatsApp. De meeste mensen zijn binnen 5 minuten klaar om te kijken.',
                 ],
                 [
                     'question' => 'Kan ik mijn IPTV-abonnement gebruiken wanneer ik reis?',
@@ -186,9 +186,9 @@ return [
         ],
         'included' => [
             'heading' => 'Elk abonnement omvat dit allemaal — Geen extra\'s, geen niveaus',
-            'intro' => 'Veel streamingdiensten laten je extra betalen voor sport, 4K en VOD. Opplex doet dat niet. Dit krijg je vanaf de eerste dag bij elk abonnement:',
+            'intro' => 'Veel streamingdiensten laten je extra betalen voor 4K en VOD. Opplex doet dat niet. Dit krijg je vanaf de eerste dag bij elk abonnement:',
             'items' => [
-                '12,000+ livekanalen: sport, nieuws, entertainment, UK, USA, internationaal',
+                '12,000+ livekanalen: nieuws, entertainment, UK, USA, internationaal',
                 '50,000+ films on demand',
                 '5,000+ TV-series, actueel en klassiek',
                 'HD- en 4K-kwaliteit op ondersteunde kanalen en apparaten',

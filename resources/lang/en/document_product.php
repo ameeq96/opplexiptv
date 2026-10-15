@@ -5,7 +5,7 @@ return [
         'page_title' => 'IPTV applications',
         'hero' => [
             'heading' => 'Best IPTV Apps for Android, iOS, Windows & Smart TV',
-            'text' => 'Find the Opplex IPTV Android APK and other IPTV players below. Choose an app that supports your device and login method, review its requirements and pricing, then follow the setup instructions with your Opplex login details.',
+            'text' => 'Find the Opplex IPTV Android APK and other IPTV players below. Choose an app that supports your device and login method, review its requirements and pricing.',
             'support' => "Not sure which app to use? Message us on WhatsApp, and we'll point you to the right one for your device.",
         ],
         'platforms' => [
@@ -37,7 +37,7 @@ return [
         ],
         'app_descriptions' => [
             'smarters_android' => 'Smarters Pro for Android. Separate mobile and Android TV listings are linked below; review the matching listing for device requirements and setup information.',
-            'opplex' => 'Download the Opplex IPTV Android APK, version 3.0.2. Use your Opplex login details after installation and contact support if you need help with setup.',
+            'opplex' => 'Download the Opplex IPTV Android APK, version 3.0.2. Contact support if you need help with setup.',
             'xtv' => 'Another Opplex-built player. Great for Android boxes and Fire TV Stick users who prefer a TV-style interface with big buttons and easy navigation.',
             'xtream_android' => 'A good backup option. Supports Xtream Codes and M3U playlists. Available on both Android and iOS.',
             'ibo_android' => 'Works across Android, Windows, and Mac. A solid choice if you switch between devices and want one app everywhere.',
@@ -78,12 +78,8 @@ return [
                     'answer' => 'For the Opplex Android APK, download the file and open it on your Android device. If prompted, allow installation only for the browser or file app you used, then turn that permission off afterwards. Google Play and App Store links install through the store. For desktop players, follow the linked developer’s instructions. Contact support if your device cannot install the app.',
                 ],
                 [
-                    'question' => 'Where do I enter my login details?',
-                    'answer' => "Open the app and look for the 'Login with Xtream Codes' option (sometimes labelled 'Username / Password'). Enter the server URL, username, and password from your activation email or WhatsApp message. Your channels will load automatically after that.",
-                ],
-                [
                     'question' => "The app loaded, but my channels won't play. What do I do?",
-                    'answer' => "First, check your internet connection. We recommend at least 15 Mbps. Then double-check that your subscription is still active. If the credentials look right and it's still not working, re-enter them manually (copy-paste can sometimes add an extra space). Still stuck? Message us on WhatsApp, and we'll sort it out.",
+                    'answer' => "First, check your internet connection. We recommend at least 15 Mbps. Then double-check that your subscription is still active. Still stuck? Message us on WhatsApp, and we'll sort it out.",
                 ],
                 [
                     'question' => 'Are these apps free to download?',
@@ -188,7 +184,7 @@ return [
     'subscription' => [
         'page_title' => 'IPTV Subscription Services',
         'hero' => [
-            'eyebrow' => 'Live TV, Sports, Movies, Series, 4K, and Catch-Up',
+            'eyebrow' => 'Live TV, Movies, Series, 4K, and Catch-Up',
             'heading' => 'IPTV Subscription Service: Everything You Want to Watch, Starting at $2.99',
             'paragraphs' => [
                 "You're looking for a streaming service that actually works. One that loads channels fast, doesn't buffer at the worst moment, and gives you real support when something goes wrong. That's what Opplex is.",
@@ -198,17 +194,16 @@ return [
             'secondary_cta' => 'Start Free Trial on WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD and 4K Streaming', 'text' => 'Sharp picture on every device. If the channel supports 4K, you get 4K. No compression, no quality cap.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels:', 'text' => 'A broad selection of available sports, news, entertainment, and international content. Ask us to confirm a specific channel before purchasing.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels:', 'text' => 'A broad selection of available news, entertainment, and international content. Ask us to confirm a specific channel before purchasing.'],
                 ['icon' => 'flaticon-swimming-pool', 'title' => 'Movies and Series on Demand:', 'text' => '50,000+ titles available from the moment you subscribe. No extra VOD package needed.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup on Supported Devices:', 'text' => 'We help you get going on compatible Fire TV Stick, Smart TV, Android, iOS, or MAG devices. Setup time varies by device.'],
             ],
         ],
         'steps' => [
-            'heading' => 'Three Steps from Signup to Streaming',
+            'heading' => 'Two Steps from Signup to Activation',
             'items' => [
                 ['title' => 'Pick Your Plan.', 'text' => 'Choose how long you want to subscribe:e, monthly, half-yearly, or yearly. All plans cover the same channels and content. The only difference is the duration and the per-month cost.'],
-                ['title' => 'Complete Payment and Get Your Login Details.', 'text' => 'After submitting checkout, continue payment with our team on WhatsApp. Once payment is confirmed, we send your username, password, and server URL by email and WhatsApp.'],
-                ['title' => 'Open Your App and Start Watching.', 'text' => 'Download your IPTV player, tap "Login with Xtream Codes", and enter the three details we sent you. Your channels load automatically. Done.'],
+                ['title' => 'Complete Payment.', 'text' => 'After submitting checkout, continue payment with our team on WhatsApp.'],
             ],
             'support' => "Need help at any point? Message us on WhatsApp, and we'll walk you through the whole thing.",
             'cta' => 'See Compatible Apps',
@@ -226,7 +221,7 @@ return [
             'heading' => 'Everything Inside Your Opplex Subscription',
             'intro' => "No tiers. No locked features. Here's what every plan includes from day one:",
             'items' => [
-                '12,000+ live channels | UK, USA, sports, international, news, kids',
+                '12,000+ live channels | UK, USA, international, news, kids',
                 '50,000+ movies on demand',
                 '5,000+ TV series, current seasons, and classics',
                 'HD and 4K quality on supported content',
@@ -259,15 +254,15 @@ return [
             'items' => [
                 ['title' => 'Price:', 'text' => 'A typical cable package runs $60 to $120 a month in the USA and the UK. Opplex starts at $2.99. You get more channels for a fraction of the cost.'],
                 ['title' => 'Content', 'text' => "Cable gives you a fixed bundle, often with 70% of channels you'll never watch. Opplex includes 12,000+ channels plus a full on-demand library, so you watch what you want, when you want it."],
-                ['title' => 'Setup:', 'text' => "No engineer visit, no installation window, no hardware to rent. Sign up, download an app, enter your details. That's it."],
+                ['title' => 'Setup:', 'text' => "No engineer visit, no installation window, no hardware to rent. Sign up and download an app. That's it."],
                 ['title' => 'Flexibility', 'text' => "Cable usually locks you into a12-2 or 24-month contract. Opplex plans are monthly, half-yearly, or yearly, and none of them auto-renew. You're in control."],
             ],
         ],
         'faq' => [
             'heading' => 'IPTV Subscription Service | Common Questions',
             'items' => [
-                ['question' => 'What exactly is an IPTV subscription service?', 'answer' => 'IPTV stands for Internet Protocol Television. Instead of receiving channels via a satellite dish or cable, you stream them over your internet connection. An IPTV subscription gives you access to available live TV, sports, and on-demand content through an app on a compatible device, with no physical installation needed.'],
-                ['question' => 'How long does it take to get set up?', 'answer' => "Submit your order and continue payment on WhatsApp. After payment is confirmed, we send your login details during active support hours. Open the app and enter them; if you need help, we'll guide you step by step."],
+                ['question' => 'What exactly is an IPTV subscription service?', 'answer' => 'IPTV stands for Internet Protocol Television. Instead of receiving channels via a satellite dish or cable, you stream them over your internet connection. An IPTV subscription gives you access to available live TV and on-demand content through an app on a compatible device, with no physical installation needed.'],
+                ['question' => 'How long does it take to get set up?', 'answer' => "Submit your order and continue payment on WhatsApp. After payment is confirmed, we send your login details during active support hours."],
                 ['question' => "Can I use Opplex if I don't have a Smart TV?", 'answer' => 'Yes. A regular TV becomes a smart streaming screen with a Firestick or Android TV box plugged into the HDMI port. These cost around $30 to $50 and are available in the Opplex Shop.'],
                 ['question' => 'Is there a contract?', 'answer' => 'No. You pay for the period you choose: monthly, half-yearly, or yearly. When that period ends, you choose if and when to renew. Nothing auto-charges.'],
                 ['question' => "What if I'm travelling and want to keep watching?", 'answer' => 'You can use your subscription while travelling where the service and your IPTV app are available. Device, network, and local conditions can affect playback.'],

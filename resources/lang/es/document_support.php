@@ -11,11 +11,11 @@ return [
                 'items' => [
                     [
                         'question' => '¿Qué es Opplex IPTV?',
-                        'answer' => 'Opplex es un servicio de suscripción IPTV que transmite TV en directo, deportes, películas y series a través de tu conexión a Internet. Obtienes 12,000+ canales en directo y 50,000+ títulos bajo demanda, sin antena parabólica, decodificador de cable ni contratos largos. Los planes parten de $2.99 al mes.',
+                        'answer' => 'Opplex es un servicio de suscripción IPTV que transmite TV en directo, películas y series a través de tu conexión a Internet. Obtienes 12,000+ canales en directo y 50,000+ títulos bajo demanda, sin antena parabólica, decodificador de cable ni contratos largos. Los planes parten de $2.99 al mes.',
                     ],
                     [
                         'question' => '¿Qué aspecto tiene Opplex IPTV en un dispositivo?',
-                        'answer' => 'Se parece a cualquier aplicación de streaming normal. Verás una pantalla de inicio con secciones para canales en directo, películas, series y deportes. En una Smart TV ocupa toda la pantalla. En un teléfono, tiene el diseño de una aplicación móvil. Las capturas de esta página muestran el aspecto de la interfaz en distintos dispositivos.',
+                        'answer' => 'Se parece a cualquier aplicación de streaming normal. Verás una pantalla de inicio con secciones para canales en directo, películas y series. En una Smart TV ocupa toda la pantalla. En un teléfono, tiene el diseño de una aplicación móvil. Las capturas de esta página muestran el aspecto de la interfaz en distintos dispositivos.',
                         'images' => [
                             ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'En un televisor Samsung'],
                             ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'En un teléfono móvil'],
@@ -23,8 +23,6 @@ return [
                             ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interfaz de la sección Películas'],
                             ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interfaz de la sección Canales en directo'],
                             ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interfaz de reproducción de películas'],
-                            ['url' => 'images/resource/onmobile5.webp', 'caption' => 'Interfaz para elegir el método de acceso'],
-                            ['url' => 'images/resource/onmobile6.webp', 'caption' => 'Interfaz de la página de acceso'],
                             ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interfaz de la sección Noticias en directo'],
                             ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interfaz de la sección de ajustes de la aplicación'],
                             ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interfaz de reproducción de series'],
@@ -69,19 +67,12 @@ return [
                 'title' => 'Configuración y dispositivos compatibles',
                 'items' => [
                     [
-                        'question' => '¿Cómo inicio sesión en Opplex IPTV?',
-                        'answer' => 'Después de suscribirte, te enviamos un nombre de usuario, una contraseña y la URL del servidor por correo electrónico y WhatsApp. Abre tu aplicación IPTV, elige «Login with Xtream Codes», introduce esos tres datos y los canales se cargarán automáticamente. Consulta la imagen de la guía de acceso de esta página para ver el proceso paso a paso.',
-                        'images' => [
-                            ['url' => 'images/resource/loginguide.webp', 'caption' => 'Guía de acceso'],
-                        ],
-                    ],
-                    [
                         'question' => '¿Qué dispositivos funcionan con Opplex?',
                         'answer' => 'Opplex funciona prácticamente en todo: Amazon Firestick, Fire TV, Android TV box, Smart TV Samsung y LG, teléfonos y tabletas Android, iPhone, iPad, MAG box, PC Windows, Mac y Linux. Si admite una aplicación de reproducción IPTV, funcionará.',
                     ],
                     [
                         'question' => '¿Opplex IPTV funciona en un portátil o PC?',
-                        'answer' => 'Sí. Descarga IPTV Smarters Pro para Windows o IBO Player desde la página Aplicaciones e inicia sesión con tus credenciales de Opplex. Es compatible con Windows 10 y versiones posteriores, y con Mac mediante IBO Player.',
+                        'answer' => 'Sí. Descarga IPTV Smarters Pro para Windows o IBO Player desde la página Aplicaciones. Es compatible con Windows 10 y versiones posteriores, y con Mac mediante IBO Player.',
                     ],
                     [
                         'question' => '¿Cuántos dispositivos puedo utilizar al mismo tiempo?',
@@ -111,7 +102,7 @@ return [
                 'items' => [
                     [
                         'question' => '¿Puedo comprobar si un canal o programa concreto está disponible antes de comprar?',
-                        'answer' => 'Sí. Solo tienes que escribirnos por WhatsApp con lo que buscas, ya sea un canal, una liga deportiva o una serie de TV concreta, y confirmaremos si está en nuestra biblioteca antes de que te suscribas.',
+                        'answer' => 'Sí. Solo tienes que escribirnos por WhatsApp con lo que buscas, ya sea un canal o una serie de TV concreta, y confirmaremos si está en nuestra biblioteca antes de que te suscribas.',
                     ],
                     [
                         'question' => '¿Puedo ocultar los canales para adultos o bloquear determinados contenidos?',
@@ -139,7 +130,7 @@ return [
             'eyebrow' => 'Streaming que simplemente funciona desde 2022',
             'heading' => 'Creamos Opplex porque también estábamos cansados de una IPTV de mala calidad',
             'paragraphs' => [
-                'Antes de Opplex, éramos clientes. Cambiábamos constantemente de proveedor, sufríamos canales que se congelaban al inicio del partido, equipos de asistencia que tardaban días en responder y precios que subían cada seis meses sin motivo.',
+                'Antes de Opplex, éramos clientes. Cambiábamos constantemente de proveedor, sufríamos canales que se congelaban, equipos de asistencia que tardaban días en responder y precios que subían cada seis meses sin motivo.',
                 'Así que creamos algo mejor. Opplex nació con una sola regla: ofrecer a las personas un servicio de streaming estable, transparente con sus costes y que realmente responda cuando necesitan ayuda.',
                 'Eso no ha cambiado. Lo que sí ha cambiado es la escala: hemos pasado de un puñado de primeros suscriptores a decenas de miles de espectadores en EE. UU., Reino Unido, Francia, Italia, Canadá y decenas de otros países. La infraestructura creció. El equipo creció. La regla siguió siendo la misma.',
             ],

@@ -68,10 +68,10 @@
                                         <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                                         <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                                         <div class="icon">
-                                            <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="{{ __('messages.iptv_sports') }}" loading="lazy" decoding="async" />
+                                            <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="{{ __('messages.iptv_packages') }}" loading="lazy" decoding="async" />
                                         </div>
-                                        <h4><a href="{{ $packagesUrl }}">{{ __('messages.iptv_sports') }}</a></h4>
-                                        <div class="text">{{ __('messages.iptv_sports_desc') }}</div>
+                                        <h4><a href="{{ $packagesUrl }}">{{ __('messages.iptv_packages') }}</a></h4>
+                                        <div class="text">{{ __('messages.iptv_packages_desc') }}</div>
                                         <a class="learn-more" href="{{ $packagesUrl }}">{{ __('messages.learn_more') }}</a>
                                     </div>
                                 </div>
@@ -107,10 +107,10 @@
                             <div class="icon-layer-one" style="background-image:url('{{ asset('images/background/pattern-19.webp') }}')" aria-hidden="true"></div>
                             <div class="icon-layer-two" style="background-image:url('{{ asset('images/background/pattern-20.webp') }}')" aria-hidden="true"></div>
                             <div class="icon">
-                                <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="{{ __('messages.iptv_sports') }}" loading="lazy" decoding="async" />
+                                <img class="mx-width" src="{{ asset('images/icons/service-4.webp') }}" alt="{{ __('messages.iptv_packages') }}" loading="lazy" decoding="async" />
                             </div>
-                            <h4><a href="{{ $packagesUrl }}">{{ __('messages.iptv_sports') }}</a></h4>
-                            <div class="text">{{ __('messages.iptv_sports_desc') }}</div>
+                            <h4><a href="{{ $packagesUrl }}">{{ __('messages.iptv_packages') }}</a></h4>
+                            <div class="text">{{ __('messages.iptv_packages_desc') }}</div>
                             <a class="learn-more" href="{{ $packagesUrl }}">{{ __('messages.learn_more') }}</a>
                         </div>
                     </div>

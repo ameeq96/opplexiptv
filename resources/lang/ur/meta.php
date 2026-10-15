@@ -28,7 +28,7 @@ return [
     ],
     'iptv-subscription-service' => [
         'title' => 'آئی پی ٹی وی سبسکرپشن سروس | پریمیم 4K IPTV پلانز',
-        'description' => 'لائیو چینلز، اسپورٹس، موویز، سیریز، 4K اسٹریمنگ، فری ٹرائل اور فوری سیٹ اپ سپورٹ کے ساتھ IPTV سبسکرپشن منتخب کریں۔',
+        'description' => 'لائیو چینلز، موویز، سیریز، 4K اسٹریمنگ، فری ٹرائل اور فوری سیٹ اپ سپورٹ کے ساتھ IPTV سبسکرپشن منتخب کریں۔',
         'keywords' => 'iptv subscription service, iptv subscription, best iptv, 4k iptv, iptv free trial, iptv plans, live tv iptv',
     ],
     'reseller-panel' => [

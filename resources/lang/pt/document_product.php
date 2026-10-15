@@ -5,7 +5,7 @@ return [
         'page_title' => 'Aplicações IPTV',
         'hero' => [
             'heading' => 'As melhores aplicações IPTV para Android, iOS, Windows e Smart TV',
-            'text' => 'Explore a aplicação Opplex IPTV para Android e os leitores apresentados abaixo. Escolha uma opção para o seu dispositivo, confirme os requisitos e os custos da aplicação e configure-a com os dados da sua subscrição Opplex.',
+            'text' => 'Explore a aplicação Opplex IPTV para Android e os leitores apresentados abaixo. Escolha uma opção para o seu dispositivo, confirme os requisitos e os custos da aplicação.',
             'support' => 'Não sabe qual aplicação utilizar? Envie-nos uma mensagem pelo WhatsApp e indicaremos a opção certa para o seu dispositivo.',
         ],
         'platforms' => [
@@ -36,13 +36,13 @@ return [
             ],
         ],
         'app_descriptions' => [
-            'smarters_android' => 'Smarters Pro para Android, com ligações separadas para dispositivos móveis e Android TV. Consulte os requisitos e os preços na Google Play e configure o acesso compatível com os dados da sua subscrição Opplex.',
-            'opplex' => 'APK da aplicação Opplex IPTV para Android, versão 3.0.2. Após a instalação, inicie sessão com os dados da sua subscrição Opplex. Contacte o apoio se precisar de ajuda na configuração.',
+            'smarters_android' => 'Smarters Pro para Android, com ligações separadas para dispositivos móveis e Android TV. Consulte os requisitos e os preços na Google Play.',
+            'opplex' => 'APK da aplicação Opplex IPTV para Android, versão 3.0.2. Contacte o apoio se precisar de ajuda na configuração.',
             'xtv' => 'Outro leitor criado pela Opplex. Excelente para utilizadores de Android box e Fire TV Stick que preferem uma interface semelhante à de uma televisão, com botões grandes e navegação fácil.',
             'xtream_android' => 'Uma boa alternativa. Suporta Xtream Codes e listas de reprodução M3U. Disponível em Android e iOS.',
             'ibo_android' => 'Funciona em Android, Windows e Mac. Uma boa opção para quem alterna entre dispositivos e pretende a mesma aplicação em todos.',
             'star_share' => 'Um leitor Android alternativo compatível com os códigos de acesso Opplex. Uma boa opção se a Smarters não funcionar no seu dispositivo específico.',
-            'smarters_ios' => 'Smarters Pro para iOS. Consulte os requisitos e os preços na App Store e configure o início de sessão suportado com os dados da sua subscrição Opplex.',
+            'smarters_ios' => 'Smarters Pro para iOS. Consulte os requisitos e os preços na App Store.',
             'player_000' => 'Um leitor IPTV simples e minimalista para iPhone. Boa qualidade de imagem e navegação fácil.',
             'xtream_ios' => 'A versão iOS do 9Xtream. Funciona com o seu acesso Opplex e suporta canais em direto e VOD.',
             'smarters_windows' => 'Leitor IPTV completo para Windows. Utiliza o mesmo início de sessão com Xtream Codes da versão Android. Funciona bem em portáteis e monitores de secretária.',
@@ -75,15 +75,11 @@ return [
                 ],
                 [
                     'question' => 'Como instalo a aplicação no meu dispositivo?',
-                    'answer' => 'Abra a ligação correspondente ao seu dispositivo. Para o APK Opplex no Android, abra o ficheiro transferido e siga as instruções do dispositivo; poderá ser necessário permitir a instalação a partir dessa origem. Nas ligações para lojas, siga os passos da loja. No computador, siga as instruções do programador e configure a aplicação com os dados da sua subscrição Opplex.',
-                ],
-                [
-                    'question' => 'Onde introduzo os meus dados de acesso?',
-                    'answer' => 'Abra a aplicação e procure a opção «Login with Xtream Codes» (por vezes identificada como «Username / Password»). Introduza a URL do servidor, o nome de utilizador e a palavra-passe presentes no e-mail de ativação ou na mensagem do WhatsApp. Depois, os canais serão carregados automaticamente.',
+                    'answer' => 'Abra a ligação correspondente ao seu dispositivo. Para o APK Opplex no Android, abra o ficheiro transferido e siga as instruções do dispositivo; poderá ser necessário permitir a instalação a partir dessa origem. Nas ligações para lojas, siga os passos da loja. No computador, siga as instruções do programador.',
                 ],
                 [
                     'question' => 'A aplicação abriu, mas os canais não são reproduzidos. O que devo fazer?',
-                    'answer' => 'Primeiro, verifique a sua ligação à Internet. Recomendamos pelo menos 15 Mbps. Depois, confirme que a subscrição continua ativa. Se as credenciais parecerem corretas, mas ainda não funcionar, introduza-as novamente de forma manual (copiar e colar pode adicionar um espaço extra). Continua com dificuldades? Envie-nos uma mensagem pelo WhatsApp e resolveremos.',
+                    'answer' => 'Primeiro, verifique a sua ligação à Internet. Recomendamos pelo menos 15 Mbps. Depois, confirme que a subscrição continua ativa. Continua com dificuldades? Envie-nos uma mensagem pelo WhatsApp e resolveremos.',
                 ],
                 [
                     'question' => 'Estas aplicações são gratuitas?',
@@ -125,7 +121,7 @@ return [
         ],
         'how_to_watch' => [
             'heading' => 'Como explorar e ver filmes na Opplex',
-            'intro' => 'A VOD está incluída em todas as subscrições; não existe nada adicional para ativar. Depois de iniciar sessão na aplicação IPTV:',
+            'intro' => 'A VOD está incluída em todas as subscrições; não existe nada adicional para ativar.',
             'steps' => [
                 'Abra o separador Filmes, Séries ou Desenhos animados no ecrã inicial da aplicação',
                 'Explore por género ou utilize a barra de pesquisa para encontrar um título pelo nome',
@@ -188,7 +184,7 @@ return [
     'subscription' => [
         'page_title' => 'Serviços de subscrição IPTV',
         'hero' => [
-            'eyebrow' => 'TV em direto, desporto, filmes, séries, 4K e Catch-Up',
+            'eyebrow' => 'TV em direto, filmes, séries, 4K e Catch-Up',
             'heading' => 'Serviço de subscrição IPTV: tudo o que pretende ver a partir de $2.99',
             'paragraphs' => [
                 'Procura um serviço de streaming que realmente funcione. Um serviço que carregue os canais rapidamente, não faça buffering no pior momento e ofereça apoio real quando algo corre mal. Isso é a Opplex.',
@@ -198,17 +194,16 @@ return [
             'secondary_cta' => 'Iniciar teste gratuito pelo WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'text' => 'Imagem nítida em todos os dispositivos. Se o canal suportar 4K, recebe 4K. Sem compressão nem limite de qualidade.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ canais em direto:', 'text' => 'Uma ampla seleção de desporto, notícias, entretenimento e conteúdo internacional disponíveis. Peça-nos para confirmar um canal específico antes de comprar.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ canais em direto:', 'text' => 'Uma ampla seleção de notícias, entretenimento e conteúdo internacional disponíveis. Peça-nos para confirmar um canal específico antes de comprar.'],
                 ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e séries a pedido:', 'text' => '50,000+ títulos disponíveis desde o momento da subscrição. Não precisa de qualquer pacote VOD adicional.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Configuração rápida em dispositivos suportados:', 'text' => 'Ajudamos a começar em dispositivos Fire TV Stick, Smart TV, Android, iOS ou MAG compatíveis. O tempo de configuração varia conforme o dispositivo.'],
             ],
         ],
         'steps' => [
-            'heading' => 'Três passos desde a adesão até ao streaming',
+            'heading' => 'Dois passos desde a adesão até ao streaming',
             'items' => [
                 ['title' => 'Escolha o seu plano.', 'text' => 'Escolha a duração da subscrição: mensal, semestral ou anual. Todos os planos incluem os mesmos canais e conteúdos. A única diferença é a duração e o custo mensal.'],
                 ['title' => 'Conclua o pagamento e receba os dados de acesso.', 'text' => 'Depois de enviar o checkout, continue o pagamento com a nossa equipa pelo WhatsApp. Após a confirmação do pagamento, enviamos o nome de utilizador, a palavra-passe e a URL do servidor por e-mail e WhatsApp.'],
-                ['title' => 'Abra a aplicação e comece a ver.', 'text' => 'Transfira o seu leitor IPTV, toque em «Login with Xtream Codes» e introduza os três dados enviados. Os canais serão carregados automaticamente. Concluído.'],
             ],
             'support' => 'Precisa de ajuda em algum momento? Envie-nos uma mensagem pelo WhatsApp e orientaremos todo o processo.',
             'cta' => 'Ver aplicações compatíveis',
@@ -226,7 +221,7 @@ return [
             'heading' => 'Tudo o que está incluído na sua subscrição Opplex',
             'intro' => 'Sem níveis. Sem funcionalidades bloqueadas. Eis o que todos os planos incluem desde o primeiro dia:',
             'items' => [
-                '12,000+ canais em direto | Reino Unido, EUA, desporto, internacionais, notícias, crianças',
+                '12,000+ canais em direto | Reino Unido, EUA, internacionais, notícias, crianças',
                 '50,000+ filmes a pedido',
                 '5,000+ séries de TV, temporadas atuais e clássicos',
                 'Qualidade HD e 4K em conteúdos suportados',
@@ -259,15 +254,15 @@ return [
             'items' => [
                 ['title' => 'Preço:', 'text' => 'Um pacote de cabo típico custa entre $60 e $120 por mês nos EUA e no Reino Unido. A Opplex começa em $2.99. Recebe mais canais por uma fração do custo.'],
                 ['title' => 'Conteúdo', 'text' => 'O cabo oferece um pacote fixo, muitas vezes com 70% de canais que nunca verá. A Opplex inclui 12,000+ canais e uma biblioteca completa a pedido, para ver o que quiser quando quiser.'],
-                ['title' => 'Configuração:', 'text' => 'Sem visita de técnico, horário de instalação ou hardware para alugar. Subscreva, transfira uma aplicação e introduza os seus dados. É tudo.'],
+                ['title' => 'Configuração:', 'text' => 'Sem visita de técnico, horário de instalação ou hardware para alugar. Subscreva e transfira uma aplicação. É tudo.'],
                 ['title' => 'Flexibilidade', 'text' => 'O cabo normalmente exige um contrato de 12 ou 24 meses. Os planos Opplex são mensais, semestrais ou anuais, e nenhum renova automaticamente. Mantém o controlo.'],
             ],
         ],
         'faq' => [
             'heading' => 'Serviço de subscrição IPTV | Perguntas frequentes',
             'items' => [
-                ['question' => 'O que é exatamente um serviço de subscrição IPTV?', 'answer' => 'IPTV significa televisão por protocolo de Internet. Em vez de receber canais através de antena parabólica ou cabo, transmite-os pela sua ligação à Internet. Uma subscrição IPTV dá acesso a TV em direto, desporto e conteúdo a pedido disponíveis através de uma aplicação num dispositivo compatível, sem necessidade de instalação física.'],
-                ['question' => 'Quanto tempo demora a configuração?', 'answer' => 'Envie o pedido e continue o pagamento pelo WhatsApp. Depois de o pagamento ser confirmado, enviamos os dados de acesso durante as horas de suporte ativas. Abra a aplicação e introduza-os; se precisar de ajuda, orientaremos passo a passo.'],
+                ['question' => 'O que é exatamente um serviço de subscrição IPTV?', 'answer' => 'IPTV significa televisão por protocolo de Internet. Em vez de receber canais através de antena parabólica ou cabo, transmite-os pela sua ligação à Internet. Uma subscrição IPTV dá acesso a TV em direto e conteúdo a pedido disponíveis através de uma aplicação num dispositivo compatível, sem necessidade de instalação física.'],
+                ['question' => 'Quanto tempo demora a configuração?', 'answer' => 'Envie o pedido e continue o pagamento pelo WhatsApp. Depois de o pagamento ser confirmado, enviamos os dados de acesso durante as horas de suporte ativas. Se precisar de ajuda, orientaremos passo a passo.'],
                 ['question' => 'Posso utilizar a Opplex se não tiver uma Smart TV?', 'answer' => 'Sim. Uma televisão normal torna-se num ecrã de streaming inteligente com um Firestick ou Android TV box ligado à porta HDMI. Estes dispositivos custam cerca de $30 a $50 e estão disponíveis na loja Opplex.'],
                 ['question' => 'Existe contrato?', 'answer' => 'Não. Paga pelo período escolhido: mensal, semestral ou anual. Quando esse período termina, decide se e quando pretende renovar. Nada é cobrado automaticamente.'],
                 ['question' => 'E se estiver a viajar e quiser continuar a ver?', 'answer' => 'Pode utilizar a subscrição em viagem onde o serviço e a sua aplicação IPTV estiverem disponíveis. O dispositivo, a rede e as condições locais podem afetar a reprodução.'],

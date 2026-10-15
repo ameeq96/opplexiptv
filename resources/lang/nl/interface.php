@@ -85,8 +85,6 @@ return [
             'request_text' => 'Tik op Activeren om je bestelnummer via WhatsApp naar ons ondersteuningsteam te sturen.',
             'verify_name' => 'Wij controleren en activeren',
             'verify_text' => 'Activering vindt plaats nadat de betaling is bevestigd, tijdens de actieve ondersteuningsuren.',
-            'stream_name' => 'Begin met kijken',
-            'stream_text' => 'Open je IPTV-app, log in met de gegevens die we je sturen en kijk op elk gewenst apparaat.',
         ],
         'whatsapp_request' => 'Activeringsverzoek',
         'whatsapp_order' => 'Bestelnr.: :order',
@@ -190,7 +188,7 @@ return [
         'title' => 'Vind het juiste IPTV-abonnement',
         'intro' => 'Beantwoord drie korte vragen. We koppelen je aan een beschikbaar abonnement zonder kanalen of functies te verzinnen.',
         'requirements_label' => 'Wat wil je graag kijken?',
-        'requirements_placeholder' => 'Bijvoorbeeld: voetbal, Britse zenders, films...',
+        'requirements_placeholder' => 'Bijvoorbeeld: Britse zenders, films...',
         'requirements_help' => 'Optioneel. We nemen dit op in je WhatsApp-bericht, zodat ons team de beschikbaarheid kan bevestigen.',
         'budget_label' => 'Maximaal budget (USD)',
         'budget_placeholder' => 'Bijvoorbeeld: 25',
@@ -223,9 +221,9 @@ return [
     'movies' => [
         'no_overview' => 'Er is geen samenvatting beschikbaar.',
         'featured_title' => 'Uitgelichte IPTV-content',
-        'fallback_movies' => 'Stream premiumfilms, livekanalen, sport en entertainment in HD/4K met Opplex IPTV.',
+        'fallback_movies' => 'Stream premiumfilms, livekanalen en entertainment in HD/4K met Opplex IPTV.',
         'fallback_series' => 'Geniet op elk apparaat van populaire series en wereldwijd entertainment met vloeiende IPTV-streaming.',
-        'fallback_action' => 'Bekijk actie, sport, nieuws en gezinscontent via betrouwbare IPTV-abonnementen.',
+        'fallback_action' => 'Bekijk actie, nieuws en gezinscontent via betrouwbare IPTV-abonnementen.',
     ],
 
     'assistant' => [

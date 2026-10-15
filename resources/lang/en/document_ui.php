@@ -29,7 +29,7 @@ return [
         'network_person_alt' => 'High-quality IPTV connection graphic',
         'network_heading_aria' => 'IPTV Network Features Heading',
         'features_list_aria' => 'List of IPTV Features',
-        'services_aria' => 'Explore IPTV Services like Packages, Sports, VOD and Multi-Device Access',
+        'services_aria' => 'Explore IPTV Services like Packages, VOD and Multi-Device Access',
         'services_heading_aria' => 'Explore Opplex IPTV Services',
         'services_carousel_aria' => 'IPTV Services Carousel',
         'trial_aria' => 'Start Your IPTV Free Trial with Opplex',

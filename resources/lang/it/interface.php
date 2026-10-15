@@ -85,8 +85,6 @@ return [
             'request_text' => 'Tocca Attiva per inviare il numero d’ordine al nostro team di assistenza su WhatsApp.',
             'verify_name' => 'Verifichiamo e attiviamo',
             'verify_text' => 'L’attivazione avviene dopo la conferma del pagamento, negli orari in cui l’assistenza è attiva.',
-            'stream_name' => 'Inizia a guardare',
-            'stream_text' => 'Apri l’app IPTV, accedi con i dati che ti inviamo e inizia a guardare su qualsiasi dispositivo.',
         ],
         'whatsapp_request' => 'Richiesta di attivazione',
         'whatsapp_order' => 'Ordine n.: :order',
@@ -190,7 +188,7 @@ return [
         'title' => 'Trova il piano IPTV giusto',
         'intro' => 'Rispondi a tre domande rapide. Ti abbineremo a un piano disponibile senza inventare canali o funzionalità.',
         'requirements_label' => 'Cosa vorresti guardare?',
-        'requirements_placeholder' => 'Ad esempio: calcio, canali britannici, film...',
+        'requirements_placeholder' => 'Ad esempio: canali britannici, film...',
         'requirements_help' => 'Facoltativo. Inseriremo queste informazioni nel messaggio WhatsApp, così il nostro team potrà confermare la disponibilità.',
         'budget_label' => 'Budget massimo (USD)',
         'budget_placeholder' => 'Ad esempio: 25',
@@ -223,9 +221,9 @@ return [
     'movies' => [
         'no_overview' => 'Nessuna sinossi disponibile.',
         'featured_title' => 'Contenuti IPTV in evidenza',
-        'fallback_movies' => 'Guarda film premium, canali in diretta, sport e intrattenimento in HD/4K con Opplex IPTV.',
+        'fallback_movies' => 'Guarda film premium, canali in diretta e intrattenimento in HD/4K con Opplex IPTV.',
         'fallback_series' => 'Goditi serie famose e intrattenimento internazionale con uno streaming IPTV fluido su ogni dispositivo.',
-        'fallback_action' => 'Guarda azione, sport, notizie e contenuti per tutta la famiglia con piani IPTV affidabili.',
+        'fallback_action' => 'Guarda azione, notizie e contenuti per tutta la famiglia con piani IPTV affidabili.',
     ],
 
     'assistant' => [

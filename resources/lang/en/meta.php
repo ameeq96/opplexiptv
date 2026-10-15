@@ -2,7 +2,7 @@
 
 return [
     'home' => [
-        'title' => 'Best IPTV Subscription Service Provider | Live TV, Sports & 4K Streaming',
+        'title' => 'Best IPTV Subscription Service Provider | Live TV & 4K Streaming',
         'description' => 'Stop paying for cable you barely use. Get some of the best IPTV subscription deals as Opplex gives you 12,000+ live channels, 50,000+ movies, and crystal-clear 4K, all on the devices you already own. Pick a plan, plug in, and start watching today.',
         'keywords' => 'best iptv, iptv box, xtreme hd iptv, aroma iptv, iptv smart player, iptv free trial, 4k live iptv',
     ],
@@ -48,7 +48,7 @@ return [
     ],
     'iptv-applications' => [
         'title' => 'Best IPTV Apps for Android, iOS, Windows & Smart TV',
-        'description' => 'Download a compatible IPTV player for Android, iOS, Windows, macOS or Linux and sign in with the Opplex details sent after activation.',
+        'description' => 'Download a compatible IPTV player for Android, iOS, Windows, macOS or Linux.',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, best iptv, aroma iptv, 4k live iptv',
     ],
     'faqs' => [

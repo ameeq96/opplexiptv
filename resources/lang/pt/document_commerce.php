@@ -14,7 +14,7 @@ return [
                 ],
                 [
                     'title' => '12,000+ canais em direto',
-                    'description' => 'Desporto, notícias, entretenimento e canais internacionais num único plano.',
+                    'description' => 'Notícias, entretenimento e canais internacionais num único plano.',
                     'icon' => 'fa fa-globe',
                 ],
                 [
@@ -41,7 +41,7 @@ return [
                     'price' => '$2.99/mês',
                     'features' => [
                         'Veja 12,000+ canais em HD e 4K, sem buffering',
-                        'Todos os filmes, séries e desportos em direto',
+                        'Todos os filmes e séries',
                         'Apoio 24/7 por WhatsApp',
                         'Funciona em todos os principais dispositivos',
                     ],
@@ -88,7 +88,7 @@ return [
                 ],
                 [
                     'title' => 'Passo 3: Comece a ver',
-                    'description' => 'Abra o seu leitor IPTV, introduza os seus dados e os canais serão carregados automaticamente. Se precisar de ajuda, a nossa equipa está disponível no WhatsApp.',
+                    'description' => 'Se precisar de ajuda, a nossa equipa está disponível no WhatsApp.',
                 ],
             ],
             'devices' => 'Funciona com: Smart TV · Firestick · Android TV · MAG · iOS · Android · Windows/Mac',
@@ -99,7 +99,7 @@ return [
             'items' => [
                 [
                     'title' => 'Sem buffering. Nunca.',
-                    'description' => 'Os nossos servidores funcionam 24/7 com 99.9% de disponibilidade. Os canais carregam rapidamente e mantêm-se estáveis, sem bloqueios a meio do jogo nem imagem pixelizada.',
+                    'description' => 'Os nossos servidores funcionam 24/7 com 99.9% de disponibilidade. Os canais carregam rapidamente e mantêm-se estáveis, sem bloqueios nem imagem pixelizada.',
                 ],
                 [
                     'title' => 'Planos IPTV flexíveis que se adaptam ao seu orçamento',
@@ -119,7 +119,7 @@ return [
             'heading' => 'O que recebe com cada subscrição IPTV',
             'intro' => 'Não existem extras inesperados nem funcionalidades bloqueadas. Todos os planos, independentemente do preço, incluem o mesmo pacote completo:',
             'items' => [
-                '12,000+ canais de TV em direto (desporto, notícias, entretenimento, internacionais)',
+                '12,000+ canais de TV em direto (notícias, entretenimento, internacionais)',
                 '50,000+ filmes e 5,000+ séries de TV a pedido',
                 'Qualidade de streaming 4K e HD nos canais suportados',
                 'Guia eletrónico de programação (EPG) incluído',
@@ -141,7 +141,7 @@ return [
                 ],
                 [
                     'question' => 'Como ativo a minha subscrição?',
-                    'answer' => 'Depois do pagamento, enviamos os dados de acesso por e-mail e WhatsApp. Introduza-os no seu leitor IPTV e os canais começarão a carregar automaticamente. A maioria das pessoas começa a utilizar o serviço em menos de 5 minutos.',
+                    'answer' => 'Depois do pagamento, enviamos os dados de acesso por e-mail e WhatsApp. A maioria das pessoas começa a utilizar o serviço em menos de 5 minutos.',
                 ],
                 [
                     'question' => 'Posso utilizar a minha subscrição IPTV durante viagens?',
@@ -186,9 +186,9 @@ return [
         ],
         'included' => [
             'heading' => 'Todos os planos incluem tudo isto: sem extras nem níveis',
-            'intro' => 'Muitos serviços de streaming cobram um valor adicional por desporto, 4K ou VOD. A Opplex não. Eis o que recebe desde o primeiro dia em qualquer plano:',
+            'intro' => 'Muitos serviços de streaming cobram um valor adicional por 4K ou VOD. A Opplex não. Eis o que recebe desde o primeiro dia em qualquer plano:',
             'items' => [
-                '12,000+ canais em direto: desporto, notícias, entretenimento, Reino Unido, EUA, internacionais',
+                '12,000+ canais em direto: notícias, entretenimento, Reino Unido, EUA, internacionais',
                 '50,000+ filmes a pedido',
                 '5,000+ séries de TV atuais e clássicas',
                 'Qualidade HD e 4K nos canais e dispositivos suportados',

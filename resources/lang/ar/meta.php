@@ -28,7 +28,7 @@ return [
     ],
     'iptv-subscription-service' => [
         'title' => 'خدمة اشتراك IPTV | خطط IPTV 4K مميزة',
-        'description' => 'اختر خدمة IPTV مع قنوات مباشرة ورياضة وافلام ومسلسلات وبث 4K وتجربة مجانية ودعم اعداد سريع.',
+        'description' => 'اختر خدمة IPTV مع قنوات مباشرة وافلام ومسلسلات وبث 4K وتجربة مجانية ودعم اعداد سريع.',
         'keywords' => 'خدمة IPTV, اشتراك IPTV, افضل IPTV, IPTV 4K, تجربة IPTV مجانية, خطط IPTV, تلفزيون مباشر IPTV',
     ],
     'reseller-panel' => [

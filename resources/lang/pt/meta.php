@@ -28,7 +28,7 @@ return [
     ],
     'iptv-subscription-service' => [
         'title' => 'Servico de Assinatura IPTV | Planos IPTV 4K Premium',
-        'description' => 'Escolha um servico IPTV com canais ao vivo, esportes, filmes, series, streaming 4K, teste gratis e suporte rapido.',
+        'description' => 'Escolha um servico IPTV com canais ao vivo, filmes, series, streaming 4K, teste gratis e suporte rapido.',
         'keywords' => 'servico IPTV, assinatura IPTV, melhor IPTV, IPTV 4K, teste IPTV gratis, planos IPTV, tv ao vivo IPTV',
     ],
     'reseller-panel' => [

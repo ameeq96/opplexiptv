@@ -29,7 +29,7 @@ return [
         'network_person_alt' => 'رسم لاتصال IPTV عالي الجودة',
         'network_heading_aria' => 'عنوان ميزات شبكة IPTV',
         'features_list_aria' => 'قائمة ميزات IPTV',
-        'services_aria' => 'استكشف خدمات IPTV مثل الباقات والرياضة وVOD والوصول على عدة أجهزة',
+        'services_aria' => 'استكشف خدمات IPTV مثل الباقات وVOD والوصول على عدة أجهزة',
         'services_heading_aria' => 'استكشف خدمات Opplex IPTV',
         'services_carousel_aria' => 'عارض خدمات IPTV',
         'trial_aria' => 'ابدأ تجربة IPTV المجانية مع Opplex',

@@ -9,7 +9,6 @@
             ['name' => __('interface.activation.steps.enter_name'), 'text' => __('interface.activation.steps.enter_text')],
             ['name' => __('interface.activation.steps.request_name'), 'text' => __('interface.activation.steps.request_text')],
             ['name' => __('interface.activation.steps.verify_name'), 'text' => __('interface.activation.steps.verify_text')],
-            ['name' => __('interface.activation.steps.stream_name'), 'text' => __('interface.activation.steps.stream_text')],
         ],
     )) !!}
 @endpush

@@ -29,7 +29,7 @@ return [
         'network_person_alt' => 'اعلیٰ معیار کے IPTV کنکشن کی تصویر',
         'network_heading_aria' => 'IPTV نیٹ ورک فیچرز کی سرخی',
         'features_list_aria' => 'IPTV فیچرز کی فہرست',
-        'services_aria' => 'پیکیجز، کھیل، VOD اور متعدد ڈیوائسز تک رسائی جیسی IPTV سروسز دریافت کریں',
+        'services_aria' => 'پیکیجز، VOD اور متعدد ڈیوائسز تک رسائی جیسی IPTV سروسز دریافت کریں',
         'services_heading_aria' => 'Opplex IPTV سروسز دریافت کریں',
         'services_carousel_aria' => 'IPTV سروسز کیروسل',
         'trial_aria' => 'Opplex کے ساتھ اپنا مفت IPTV ٹرائل شروع کریں',

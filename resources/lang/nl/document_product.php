@@ -5,7 +5,7 @@ return [
         'page_title' => 'IPTV-applicaties',
         'hero' => [
             'heading' => 'Beste IPTV-apps voor Android, iOS, Windows en Smart TV',
-            'text' => 'Hieronder vind je de Opplex IPTV-APK voor Android en andere IPTV-spelers. Kies een app die je apparaat en aanmeldmethode ondersteunt, controleer de vereisten en prijzen en volg de installatie-instructies met je Opplex-inloggegevens.',
+            'text' => 'Hieronder vind je de Opplex IPTV-APK voor Android en andere IPTV-spelers. Kies een app die je apparaat en aanmeldmethode ondersteunt, controleer de vereisten en prijzen en volg de installatie-instructies.',
             'support' => 'Weet je niet welke app je moet gebruiken? Stuur ons een bericht via WhatsApp en wij wijzen je op de juiste app voor je apparaat.',
         ],
         'platforms' => [
@@ -37,7 +37,7 @@ return [
         ],
         'app_descriptions' => [
             'smarters_android' => 'Smarters Pro voor Android. Er zijn aparte links voor mobiel en Android TV; bekijk de juiste vermelding voor apparaatvereisten en installatie-informatie.',
-            'opplex' => 'Download de Opplex IPTV-APK voor Android, versie 3.0.2. Gebruik na de installatie je Opplex-inloggegevens en neem contact op met ondersteuning als je hulp nodig hebt bij het instellen.',
+            'opplex' => 'Download de Opplex IPTV-APK voor Android, versie 3.0.2. Neem contact op met ondersteuning als je hulp nodig hebt bij het instellen.',
             'xtv' => 'Nog een door Opplex gebouwde speler. Uitstekend voor gebruikers van Android-boxen en Fire TV Stick die de voorkeur geven aan een tv-interface met grote knoppen en eenvoudige navigatie.',
             'xtream_android' => 'Een goede reserveoptie. Ondersteunt Xtream Codes en M3U-afspeellijsten. Beschikbaar op zowel Android als iOS.',
             'ibo_android' => 'Beschikbaar voor ondersteunde versies van Android, Windows en Mac. Een goede keuze als je dezelfde app op meerdere compatibele apparaten wilt gebruiken.',
@@ -78,12 +78,8 @@ return [
                     'answer' => 'Download voor de Opplex-APK het bestand en open het op je Android-apparaat. Geef indien gevraagd alleen de gebruikte browser of bestandsapp toestemming om te installeren en schakel die toestemming daarna weer uit. Google Play- en App Store-links installeren via de winkel. Volg voor desktopspelers de instructies van de ontwikkelaar. Neem contact op met ondersteuning als je apparaat de app niet kan installeren.',
                 ],
                 [
-                    'question' => 'Waar voer ik mijn inloggegevens in?',
-                    'answer' => 'Open de app en zoek naar de optie \'Login with Xtream Codes\' (soms aangeduid als \'Username / Password\'). Voer de server-URL, gebruikersnaam en het wachtwoord uit je activeringsmail of WhatsApp-bericht in. Daarna worden je kanalen automatisch geladen.',
-                ],
-                [
                     'question' => 'De app is geladen, maar mijn kanalen spelen niet af. Wat moet ik doen?',
-                    'answer' => 'Controleer eerst je internetverbinding. We adviseren minimaal 15 Mbps. Controleer daarna nogmaals of je abonnement actief is. Lijken de inloggegevens juist en werkt het nog steeds niet, voer ze dan handmatig opnieuw in (kopiëren en plakken kan soms een extra spatie toevoegen). Nog steeds vastgelopen? Stuur ons via WhatsApp een bericht; het team onderzoekt het probleem tijdens actieve ondersteuningsuren.',
+                    'answer' => 'Controleer eerst je internetverbinding. We adviseren minimaal 15 Mbps. Controleer daarna nogmaals of je abonnement actief is. Nog steeds vastgelopen? Stuur ons via WhatsApp een bericht; het team onderzoekt het probleem tijdens actieve ondersteuningsuren.',
                 ],
                 [
                     'question' => 'Zijn deze apps gratis te downloaden?',
@@ -93,7 +89,7 @@ return [
         ],
         'cta' => [
             'heading' => 'Klaar om te beginnen met kijken?',
-            'text' => 'Download de app, kies een abonnement, dien je bestelling in en ga verder met betalen via WhatsApp. Na bevestiging en activering kun je inloggen. Hulp nodig bij het kiezen van een abonnement of het instellen van je apparaat? We zijn bereikbaar via WhatsApp.',
+            'text' => 'Download de app, kies een abonnement, dien je bestelling in en ga verder met betalen via WhatsApp. Hulp nodig bij het kiezen van een abonnement of het instellen van je apparaat? We zijn bereikbaar via WhatsApp.',
             'plans' => 'Bekijk IPTV-abonnementen',
             'whatsapp' => 'Chat via WhatsApp',
         ],
@@ -125,7 +121,7 @@ return [
         ],
         'how_to_watch' => [
             'heading' => 'Films zoeken en bekijken op Opplex',
-            'intro' => 'VOD is in elk abonnement ingebouwd; je hoeft niets extra\'s te activeren. Zodra je bij je IPTV-app bent aangemeld:',
+            'intro' => 'VOD is in elk abonnement ingebouwd; je hoeft niets extra\'s te activeren.',
             'steps' => [
                 'Open op het startscherm van de app het tabblad Films, Series of Tekenfilms',
                 'Blader op genre of gebruik de zoekbalk om een titel op naam te vinden',
@@ -188,7 +184,7 @@ return [
     'subscription' => [
         'page_title' => 'IPTV-abonnementsdiensten',
         'hero' => [
-            'eyebrow' => 'Live TV, sport, films, series, 4K en catch-up',
+            'eyebrow' => 'Live TV, films, series, 4K en catch-up',
             'heading' => 'IPTV-abonnementsdienst: een ruime contentkeuze, vanaf $2.99',
             'paragraphs' => [
                 'Je zoekt een streamingdienst die echt werkt. Een dienst die kanalen snel laadt, niet op het slechtste moment buffert en je echte ondersteuning biedt als er iets misgaat. Dat is Opplex.',
@@ -198,17 +194,16 @@ return [
             'secondary_cta' => 'Start gratis proefperiode via WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD- en 4K-streaming', 'text' => 'Scherp beeld op elk apparaat. Ondersteunt het kanaal 4K, dan krijg je 4K. Geen compressie, geen kwaliteitslimiet.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen:', 'text' => 'Toegang tot een ruime beschikbare selectie sport, nieuws, entertainment en internationale content. Vraag ons een specifiek kanaal te controleren.'],
+                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen:', 'text' => 'Toegang tot een ruime beschikbare selectie nieuws, entertainment en internationale content. Vraag ons een specifiek kanaal te controleren.'],
                 ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand:', 'text' => '50,000+ titels in de beschikbare catalogus na activering. Beschikbaarheid verschilt per bron en regio.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Snelle installatie op compatibele apparaten:', 'text' => 'We helpen je op weg op Firestick, Smart TV, Android, iOS of MAG. De meeste installaties duren minder dan vijf minuten.'],
             ],
         ],
         'steps' => [
-            'heading' => 'In drie stappen van aanmelden naar streamen',
+            'heading' => 'In twee stappen van aanmelden naar streamen',
             'items' => [
                 ['title' => 'Kies je abonnement.', 'text' => 'Kies hoelang je een abonnement wilt: maandelijks, halfjaarlijks of jaarlijks. Alle abonnementen omvatten dezelfde kanalen en content. Het enige verschil is de looptijd en de kosten per maand.'],
                 ['title' => 'Rond de betaling af en ontvang je inloggegevens.', 'text' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we je gebruikersnaam, wachtwoord en server-URL per e-mail en WhatsApp, normaal tijdens actieve ondersteuningsuren.'],
-                ['title' => 'Open je app en begin met kijken.', 'text' => 'Download je IPTV-speler, tik op "Login with Xtream Codes" en voer de drie gegevens in die we je hebben gestuurd. Je kanalen worden automatisch geladen. Klaar.'],
             ],
             'support' => 'Op enig moment hulp nodig? Stuur ons een bericht via WhatsApp en we begeleiden je door het hele proces.',
             'cta' => 'Bekijk compatibele apps',
@@ -226,7 +221,7 @@ return [
             'heading' => 'Alles in je Opplex-abonnement',
             'intro' => 'Geen niveaus. Geen vergrendelde functies. Dit omvat elk abonnement vanaf de eerste dag:',
             'items' => [
-                '12,000+ livekanalen | UK, USA, sport, internationaal, nieuws, kinderen',
+                '12,000+ livekanalen | UK, USA, internationaal, nieuws, kinderen',
                 '50,000+ films on demand',
                 '5,000+ TV-series, huidige seizoenen en klassiekers',
                 'HD- en 4K-kwaliteit op ondersteunde content',
@@ -259,15 +254,15 @@ return [
             'items' => [
                 ['title' => 'Prijs:', 'text' => 'Een doorsnee kabelpakket kost in de USA en UK $60 tot $120 per maand. Opplex begint bij $2.99. Je krijgt meer kanalen voor een fractie van de kosten.'],
                 ['title' => 'Inhoud', 'text' => 'Kabel biedt je een vast pakket. Opplex biedt toegang tot 12,000+ kanalen en de beschikbare on-demandbibliotheek; content en weergave kunnen per bron en regio verschillen.'],
-                ['title' => 'Installatie:', 'text' => 'Geen bezoek van een monteur, geen installatieafspraak en geen hardware om te huren. Meld je aan, download een app en voer je gegevens in. Dat is alles.'],
+                ['title' => 'Installatie:', 'text' => 'Geen bezoek van een monteur, geen installatieafspraak en geen hardware om te huren. Meld je aan en download een app. Dat is alles.'],
                 ['title' => 'Flexibiliteit', 'text' => 'Kabel legt je meestal vast in een contract van 12 of 24 maanden. Opplex-abonnementen zijn maandelijks, halfjaarlijks of jaarlijks en geen ervan wordt automatisch verlengd. Jij houdt de controle.'],
             ],
         ],
         'faq' => [
             'heading' => 'IPTV-abonnementsdienst | Veelgestelde vragen',
             'items' => [
-                ['question' => 'Wat is een IPTV-abonnementsdienst precies?', 'answer' => 'IPTV staat voor Internet Protocol Television. In plaats van kanalen via een satellietschotel of kabel te ontvangen, stream je ze via je internetverbinding. Een IPTV-abonnement geeft via een compatibele app en een compatibel apparaat toegang tot beschikbare live-tv, sport en on-demandcontent, zonder fysieke installatie.'],
-                ['question' => 'Hoelang duurt het om alles in te stellen?', 'answer' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we de inloggegevens normaal tijdens actieve ondersteuningsuren. Daarna kun je de app openen en ze invoeren; heb je hulp nodig, dan begeleiden we je via WhatsApp.'],
+                ['question' => 'Wat is een IPTV-abonnementsdienst precies?', 'answer' => 'IPTV staat voor Internet Protocol Television. In plaats van kanalen via een satellietschotel of kabel te ontvangen, stream je ze via je internetverbinding. Een IPTV-abonnement geeft via een compatibele app en een compatibel apparaat toegang tot beschikbare live-tv en on-demandcontent, zonder fysieke installatie.'],
+                ['question' => 'Hoelang duurt het om alles in te stellen?', 'answer' => 'Dien je bestelling in en ga daarna verder met betalen via ons team op WhatsApp. Na bevestiging van de betaling sturen we de inloggegevens normaal tijdens actieve ondersteuningsuren. Heb je hulp nodig, dan begeleiden we je via WhatsApp.'],
                 ['question' => 'Kan ik Opplex gebruiken als ik geen Smart TV heb?', 'answer' => 'Ja. Een gewone tv wordt een slim streamingscherm als je een Firestick of Android TV-box op de HDMI-poort aansluit. Deze kosten ongeveer $30 tot $50 en zijn verkrijgbaar in de Opplex-winkel.'],
                 ['question' => 'Is er een contract?', 'answer' => 'Nee. Je betaalt voor de periode die je kiest: maandelijks, halfjaarlijks of jaarlijks. Wanneer die periode afloopt, kies jij of en wanneer je verlengt. Er wordt niets automatisch afgeschreven.'],
                 ['question' => 'Wat als ik op reis ben en wil blijven kijken?', 'answer' => 'Je kunt je abonnement tijdens het reizen gebruiken waar de dienst en je IPTV-app beschikbaar zijn. Het apparaat, netwerk en lokale omstandigheden kunnen de weergave beïnvloeden.'],

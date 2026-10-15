@@ -85,8 +85,6 @@ return [
             'request_text' => 'Pulsa Activar para enviar tu número de pedido a nuestro equipo de asistencia por WhatsApp.',
             'verify_name' => 'Verificamos y activamos',
             'verify_text' => 'La activación se realiza después de confirmar el pago, durante el horario de soporte activo.',
-            'stream_name' => 'Empieza a ver contenido',
-            'stream_text' => 'Abre tu aplicación IPTV, inicia sesión con los datos que te enviemos y empieza a ver contenido en cualquier dispositivo.',
         ],
         'whatsapp_request' => 'Solicitud de activación',
         'whatsapp_order' => 'Pedido n.º: :order',
@@ -190,7 +188,7 @@ return [
         'title' => 'Encuentra el plan IPTV adecuado',
         'intro' => 'Responde tres preguntas rápidas. Te recomendaremos un plan disponible sin inventar canales ni funciones.',
         'requirements_label' => '¿Qué te gustaría ver?',
-        'requirements_placeholder' => 'Por ejemplo: fútbol, canales del Reino Unido, películas...',
+        'requirements_placeholder' => 'Por ejemplo: canales del Reino Unido, películas...',
         'requirements_help' => 'Opcional. Incluiremos esta información en tu mensaje de WhatsApp para que nuestro equipo confirme la disponibilidad.',
         'budget_label' => 'Presupuesto máximo (USD)',
         'budget_placeholder' => 'Por ejemplo: 25',
@@ -223,9 +221,9 @@ return [
     'movies' => [
         'no_overview' => 'No hay ninguna sinopsis disponible.',
         'featured_title' => 'Contenido IPTV destacado',
-        'fallback_movies' => 'Disfruta de películas prémium, canales en directo, deportes y entretenimiento en HD/4K con Opplex IPTV.',
+        'fallback_movies' => 'Disfruta de películas prémium, canales en directo y entretenimiento en HD/4K con Opplex IPTV.',
         'fallback_series' => 'Disfruta de series populares y entretenimiento internacional con una reproducción IPTV fluida en cualquier dispositivo.',
-        'fallback_action' => 'Ve acción, deportes, noticias y contenido familiar con planes IPTV fiables.',
+        'fallback_action' => 'Ve acción, noticias y contenido familiar con planes IPTV fiables.',
     ],
 
     'assistant' => [

@@ -29,7 +29,7 @@ return [
         'network_person_alt' => 'Изображение высококачественного подключения IPTV',
         'network_heading_aria' => 'Заголовок возможностей сети IPTV',
         'features_list_aria' => 'Список возможностей IPTV',
-        'services_aria' => 'Ознакомьтесь с услугами IPTV: пакетами, спортом, VOD и доступом с разных устройств',
+        'services_aria' => 'Ознакомьтесь с услугами IPTV: пакетами, VOD и доступом с разных устройств',
         'services_heading_aria' => 'Ознакомьтесь с услугами Opplex IPTV',
         'services_carousel_aria' => 'Карусель услуг IPTV',
         'trial_aria' => 'Начните бесплатный пробный доступ к IPTV с Opplex',

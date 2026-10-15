@@ -11,7 +11,7 @@
 @push('schema')
     {!! jsonld(seo()->service(
         $isDocumentEnglish ? $documentPage['hero']['heading'] : 'IPTV Subscription Service',
-        $isDocumentEnglish ? implode(' ', $documentPage['hero']['paragraphs']) : 'Premium IPTV subscription service with live channels, sports, movies, series and 4K streaming, fast setup and a free trial.',
+        $isDocumentEnglish ? implode(' ', $documentPage['hero']['paragraphs']) : 'Premium IPTV subscription service with live channels, movies, series and 4K streaming, fast setup and a free trial.',
         route('iptv-subscription-service'),
         seo()->packageOffers('iptv'),
     )) !!}

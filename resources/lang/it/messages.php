@@ -5,7 +5,7 @@ return [
     'subtitle' => 'Streaming IPTV con accesso ai contenuti disponibili in Europa tramite Smart IPTV e IPTV Smarters Pro',
     'heading-mobile' => 'Accedi a oltre 12.000 canali live e 50k+ film disponibili dopo l’attivazione',
     'description_prefix' => 'Scopri l’IPTV premium in Europa con IPTV Smarters, IPTV Extreme e le migliori liste IPTV',
-    'description_suffix' => '— contenuti in italiano, hindi, inglese e francese in HD e 4K. Supporta anche liste IPTV Sky e DAZN da Telegram.',
+    'description_suffix' => '— contenuti in italiano, hindi, inglese e francese in HD e 4K.',
 
     'see_pricing' => 'Prendi IPTV Ora',
     'start_trial' => 'Accesso alla prova di base',
@@ -68,7 +68,7 @@ return [
     'feature_5k_series' => '5k+ Serie Web (Netflix, Prime Video e Altri)',
     'feature_5k_series_desc' => 'Scopri serie popolari da Netflix, Prime Video, disponibili anche tramite liste IPTV m3u gratis.',
     'feature_12k_channels' => '12k+ Canali IPTV Live da Tutto il Mondo',
-    'feature_12k_channels_desc' => 'Accedi a più di 12.000 canali IPTV - inclusi sport, notizie e intrattenimento da IPTV Extreme APK.',
+    'feature_12k_channels_desc' => 'Accedi a più di 12.000 canali IPTV - con notizie e intrattenimento da IPTV Extreme APK.',
     'feature_hd_4k' => 'Streaming IPTV in Qualità HD e 4K Ultra',
     'feature_hd_4k_desc' => 'Qualità premium in HD e 4K su dispositivi Smart IPTV, Android, iPhone, Firestick e altro.',
 
@@ -76,9 +76,7 @@ return [
     'iptv_packages' => 'Abbonamenti IPTV con Smart IPTV e IPTV Smarters Pro',
     'iptv_packages_desc' => 'Pacchetti IPTV per l’Italia e l’Europa, compatibili con lettori IPTV selezionati; verifica modello, sistema operativo e app.',
     'reseller_panel' => 'Programma Rivenditori IPTV',
-    'reseller_panel_desc' => 'Unisciti al nostro pannello e rivendi IPTV — perfetto per utenti con liste IPTV Sky e DAZN Telegram.',
-    'iptv_sports' => 'Sport e TV in Diretta',
-    'iptv_sports_desc' => 'Guarda calcio, UFC, cricket con lo streaming IPTV veloce e affidabile.',
+    'reseller_panel_desc' => 'Unisciti al nostro pannello e rivendi IPTV.',
     'iptv_vod' => 'Libreria VOD Premium',
     'iptv_vod_desc' => 'Accedi a film e serie — miglior IPTV APK per Netflix, Prime e altro.',
     'iptv_devices' => 'IPTV Multi-Dispositivo',
@@ -91,8 +89,7 @@ return [
     'testimonial_2' => 'Il miglior servizio IPTV in Europa per contenuti internazionali.',
     'testimonial_3' => 'Stabilità e qualità eccellente. Ho testato molte liste IPTV e questa è la migliore.',
     'testimonial_4' => 'Lo uso sulla mia Smart IPTV — esperienza fluida senza buffering.',
-    'testimonial_5' => 'Video eccezionale e ampia selezione di canali, anche da Sky IPTV.',
-    'testimonial_6' => 'Nessun buffering durante le partite di Champions. IPTV Extreme funziona alla grande.',
+    'testimonial_5' => 'Video eccezionale e ampia selezione di canali.',
     'testimonial_7' => 'Netflix, Prime Video e serie italiane in una sola app IPTV player.',
     'testimonial_8' => 'Economico e funziona bene con tutte le app IPTV Smarters Pro.',
     'testimonial_9' => 'Compatibile con Firestick e telefono - supporto veloce in italiano.',
@@ -142,8 +139,8 @@ return [
     'feature_support' => 'Assistenza IPTV 24/7',
     'feature_support_desc' => 'Supporto attivo via WhatsApp, perfetto per installare IPTV Extreme.',
 
-    'feature_sports_movies' => 'Sport in diretta e film di qualità',
-    'feature_sports_movies_desc' => 'Champions League, F1, film e serie da liste IPTV Sky e DAZN Telegram.',
+    'feature_sports_movies' => 'Film di qualità',
+    'feature_sports_movies_desc' => 'Film e serie.',
 
     'reseller_starter' => 'Rivenditore IPTV Starter - Smart Player e Accesso Prova Gratuita',
     'reseller_essential' => 'Rivenditore IPTV Essenziale - Aroma IPTV, Xtreme HD IPTV, Nessuna Scadenza',
@@ -171,14 +168,14 @@ return [
     'nav.home' => 'Home',
     'nav.about_us' => 'Chi siamo',
 
-    'choose_us.title' => 'Alcune ottime ragioni per <br> scegliere noi come miglior IPTV Player con liste IPTV Sky e DAZN Telegram',
+    'choose_us.title' => 'Alcune ottime ragioni per <br> scegliere noi come miglior IPTV Player',
     'choose_us.button' => 'Visualizza servizi',
 
     'features.hd_quality.title' => 'Streaming IPTV in HD e 4K',
     'features.hd_quality.description' => 'Guarda canali IPTV e film in alta definizione e 4K con audio surround - perfetto per Smart IPTV, Android e Fire TV. Funziona anche con IPTV Extreme APK e IPTV Smarters Pro.',
 
     'features.flexible_packages.title' => 'Pacchetti IPTV Flessibili',
-    'features.flexible_packages.description' => 'Scegli tra abbonamenti IPTV mensili o annuali con prezzi accessibili - ideale per lo sport, i film e la TV in diretta in tutta Europa. Compatibile con tutte le migliori app IPTV player e liste IPTV m3u gratis.',
+    'features.flexible_packages.description' => 'Scegli tra abbonamenti IPTV mensili o annuali con prezzi accessibili - ideale per i film e la TV in diretta in tutta Europa. Compatibile con tutte le migliori app IPTV player e liste IPTV m3u gratis.',
 
     'features.reliable_service.title' => 'Servizio IPTV Affidabile in Europa',
     'features.reliable_service.description' => 'Streaming IPTV stabile con uptime del 99,9% e buffering minimo - apprezzato da utenti in Italia, Francia, Regno Unito e Germania. Sorgente IPTV affidabile e miglior IPTV APK consigliato.',
@@ -235,8 +232,6 @@ return [
     'faq.q2' => 'Come appare l’IPTV?',
     'faq.a2' => 'Ecco alcuni screenshot che mostrano l’interfaccia di app IPTV popolari come IPTV Smarters, Smart IPTV e IPTV Extreme su diversi dispositivi.',
 
-    'faq.q3' => 'Come accedere a Opplex IPTV con i codici?',
-    'faq.a3' => 'Dopo l’acquisto, ricevi i codici e l’URL da inserire in app IPTV player come IPTV Smarters Pro o IPTV Extreme.',
 
     'faq.q4' => 'Opplex IPTV offre una prova?',
     'faq.a4' => 'Sì. È disponibile una prova gratuita per testare il servizio sul tuo dispositivo prima di scegliere un piano. Scrivici su WhatsApp per iniziare.',
@@ -245,7 +240,7 @@ return [
     'faq.a5' => 'Può accadere con una connessione Internet lenta o durante ore di punta. Per IPTV stabile, usa app come IPTV Extreme o Smart IPTV e metti in pausa 10-15 secondi.',
 
     'faq.q6' => 'Quali sono i vantaggi dell’IPTV?',
-    'faq.a6' => 'IPTV è economico, flessibile, e offre contenuti da tutto il mondo. Le migliori app come IPTV Smarters Pro supportano liste IPTV Sky e DAZN Telegram.',
+    'faq.a6' => 'IPTV è economico, flessibile, e offre contenuti da tutto il mondo.',
 
     'faq.q7' => 'Opplex IPTV funziona su laptop/PC?',
     'faq.a7' => 'Sì, puoi usare IPTV anche su PC o laptop usando IPTV Player compatibili o emulatori Android per IPTV Extreme APK.',
@@ -325,7 +320,7 @@ return [
     'breadcrumb.home' => 'Home',
     'breadcrumb.current' => 'I nostri pacchetti IPTV',
     'sub_heading' => 'Trova il tuo abbonamento IPTV - Disponibilità limitata',
-    'description' => 'Affrettati! Blocca subito il tuo pacchetto IPTV. Offerta esclusiva su Smart IPTV, IPTV Smarters Pro e le migliori liste IPTV Sky e DAZN Telegram.',
+    'description' => 'Affrettati! Blocca subito il tuo pacchetto IPTV. Offerta esclusiva su Smart IPTV e IPTV Smarters Pro.',
     'price' => '<span style="text-decoration: line-through; color: #999;">$31.99</span> <span style="color: #ffffffff; font-weight:bold;">$2.99 / al mese con app IPTV player inclusa</span>',
     'read_more' => 'Scopri di più su IPTV Extreme, Smarters e Smart IPTV',
 
@@ -341,7 +336,7 @@ return [
     'read_more' => 'Scopri di più',
 
     'reseller.panel.title' => 'Pannello Rivenditore | Opplex IPTV - Crea la tua rete con le migliori liste IPTV m3u e contenuti in HD',
-    'reseller_title' => 'Pannello Rivenditore | Opplex IPTV - Gestione professionale rivendita IPTV con liste Sky e DAZN Telegram',
+    'reseller_title' => 'Pannello Rivenditore | Opplex IPTV - Gestione professionale rivendita IPTV',
 
     'reasons.title' => 'Alcune buone ragioni per sceglierci - miglior IPTV Player per Italia',
     'view.services' => 'Vedi i servizi IPTV streaming ora',
@@ -350,18 +345,18 @@ return [
 
     'iptv_subscription_service' => [
         'title' => 'Servizio abbonamento IPTV',
-        'heading' => 'Servizio IPTV premium per TV live, sport, film, serie e streaming 4K',
+        'heading' => 'Servizio IPTV premium per TV live, film, serie e streaming 4K',
         'breadcrumb' => [
             'home' => 'Home',
             'current' => 'Servizio abbonamento IPTV',
         ],
         'intro_eyebrow' => 'Piani streaming premium',
-        'intro_text' => 'Scegli un abbonamento IPTV flessibile con canali live, sport, film, serie, qualita 4K e supporto rapido per il tuo dispositivo.',
+        'intro_text' => 'Scegli un abbonamento IPTV flessibile con canali live, film, serie, qualita 4K e supporto rapido per il tuo dispositivo.',
         'primary_cta' => 'Configura il piano IPTV',
         'secondary_cta' => 'Avvia prova gratuita',
         'benefits' => [
             ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'description' => 'Guarda contenuti IPTV premium in qualita HD e 4K su schermi compatibili.'],
-            ['icon' => 'flaticon-5g', 'title' => '12K+ canali live', 'description' => 'Guarda sport, notizie, intrattenimento e canali internazionali con un solo piano IPTV.'],
+            ['icon' => 'flaticon-5g', 'title' => '12K+ canali live', 'description' => 'Guarda notizie, intrattenimento e canali internazionali con un solo piano IPTV.'],
             ['icon' => 'flaticon-swimming-pool', 'title' => 'Film e serie', 'description' => 'Accedi a una grande libreria VOD con film, serie e contenuti per famiglia inclusi.'],
             ['icon' => 'flaticon-customer-service', 'title' => 'Supporto installazione', 'description' => 'Ricevi aiuto per Smart TV, Firestick, Android, iOS, MAG e player IPTV.'],
         ],
@@ -416,7 +411,7 @@ return [
         [
             'icon' => 'flaticon-swimming-pool',
             'title' => 'IPTV in qualità HD e 4K',
-            'description' => 'Goditi lo streaming IPTV in qualità HD e 4K cristallina, perfetto per film, sport e TV in diretta su qualsiasi dispositivo.',
+            'description' => 'Goditi lo streaming IPTV in qualità HD e 4K cristallina, perfetto per film e TV in diretta su qualsiasi dispositivo.',
         ],
         [
             'icon' => 'flaticon-5g',
@@ -440,7 +435,7 @@ return [
     'order_updated'   => 'Ordine aggiornato con successo.',
     'order_deleted'   => 'Ordine eliminato con successo.',
     'screenshot_deleted' => 'Screenshot eliminato con successo.',
-    'pricing_subheading' => 'TV in diretta, Sport, Film, Serie, 4K e Replay',
+    'pricing_subheading' => 'TV in diretta, Film, Serie, 4K e Replay',
     'subheadingiptv' => 'Risoluzione dei problemi IPTV, configurazione, pagamenti, canali e supporto rivenditori',
     'subheadingcontact' => 'Contatti e supporto — chat 24/7, WhatsApp, e-mail, fatturazione e assistenza tecnica',
     'movies_subheading' => 'Sfoglia film, serie e cartoni',
@@ -647,7 +642,7 @@ return [
   'home_hero_watch_live' => 'Guarda :title in diretta in HD',
   'home_services_eyebrow' => 'Funzionalità premium',
   'home_services_intro' => 'Streaming potente, accesso più intelligente e un\'esperienza IPTV più pulita su ogni dispositivo.',
-  'home_testimonials_intro' => 'Opinioni condivise da utenti che utilizzano Opplex IPTV per TV in diretta, sport e contenuti on demand.',
+  'home_testimonials_intro' => 'Opinioni condivise da utenti che utilizzano Opplex IPTV per TV in diretta e contenuti on demand.',
   'home_testimonials_verified_customer' => 'Cliente IPTV verificato',
   'home_unlimited_eyebrow' => 'Accesso illimitato',
   'home_unlimited_intro' => 'Guarda TV live premium e VOD con accesso più rapido, maggiore stabilità e piani flessibili pensati per la visione moderna.',
@@ -749,7 +744,7 @@ return [
       'q1' => 'Che cosa include un abbonamento Opplex IPTV?',
       'a1' => 'L’abbonamento offre accesso ai canali in diretta e alla raccolta di film e serie disponibili, alla guida TV su schermo e alle app compatibili per più dispositivi.',
       'q2' => 'Come attivo il mio abbonamento?',
-      'a2' => 'Invia l’ordine e continua il pagamento con il nostro team su WhatsApp. Dopo la conferma del pagamento, inviamo i codici di accesso e l’URL normalmente durante l’orario di assistenza attivo; inseriscili in un’app IPTV compatibile.',
+      'a2' => 'Invia l’ordine e continua il pagamento con il nostro team su WhatsApp. Dopo la conferma del pagamento, inviamo le informazioni di attivazione normalmente durante l’orario di assistenza attivo.',
       'q3' => 'Posso usare l’abbonamento mentre viaggio all’estero?',
       'a3' => 'Puoi usare l’abbonamento in viaggio nelle regioni supportate. Riproduzione e disponibilità dipendono dalla rete locale, dal dispositivo, dalla sorgente e dalle restrizioni applicabili.',
       'q4' => 'Di quale velocità Internet ho bisogno?',
@@ -761,11 +756,9 @@ return [
       'q1' => 'Quali app funzionano con Opplex IPTV?',
       'a1' => 'Opplex IPTV funziona con lettori popolari come IPTV Smarters Pro, le nostre app Opplex e XTV, IBO Player e altre app compatibili con Xtream.',
       'q2' => 'Come installo l’app IPTV sul mio dispositivo?',
-      'a2' => 'Scarica da questa pagina l’app per la tua piattaforma, installala e accedi con i dati che ti invieremo.',
-      'q3' => 'Dove inserisco i miei dati di accesso o codici Xtream?',
-      'a3' => 'Apri l’app, scegli «Accedi con codici Xtream / nome utente», quindi inserisci il nome utente, la password e l’URL del server ricevuti nell’e-mail di attivazione.',
+      'a2' => 'Scarica da questa pagina l’app per la tua piattaforma e installala.',
       'q4' => 'L’app non carica i miei canali: che cosa devo fare?',
-      'a4' => 'Controlla la connessione Internet, verifica che l’abbonamento sia attivo e inserisci nuovamente i codici esattamente come sono stati forniti. Se il problema persiste, contatta l’assistenza.',
+      'a4' => 'Controlla la connessione Internet e verifica che l’abbonamento sia attivo. Se il problema persiste, contatta l’assistenza.',
       'q5' => 'Le app si possono scaricare gratuitamente?',
       'a5' => 'Sì. Le app di riproduzione sono gratuite. Paghi soltanto l’abbonamento Opplex IPTV, che fornisce i contenuti.',
     ],
