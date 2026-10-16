@@ -74,6 +74,60 @@ class LandingPageContentTest extends TestCase
         $this->assertStringContainsString('not a promise', $this->payload('trex')['faqs'][0]['answer']);
     }
 
+    public function test_translations_seed_all_brand_languages_without_overwriting_existing_rows(): void
+    {
+        $english = LandingPageContent::orderBy('id')->get()->toJson();
+        $packages = Package::orderBy('id')->get()->toJson();
+        $this->seed(\Database\Seeders\LandingPageTranslationSeeder::class);
+        $this->assertDatabaseCount('landing_page_contents', 40);
+        $this->assertSame($english, LandingPageContent::where('locale', 'en')->orderBy('id')->get()->toJson());
+        $this->assertSame($packages, Package::orderBy('id')->get()->toJson());
+        foreach (array_keys(LandingPageContent::BRANDS) as $brand) {
+            foreach (['es', 'fr', 'it', 'nl', 'pt', 'ru', 'ur', 'ar', 'hi'] as $locale) {
+                $page = LandingPageContent::where('brand', $brand)->where('locale', $locale)->firstOrFail();
+                $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale='.$locale)->assertOk()
+                    ->assertJsonPath('data.locale', $locale)
+                    ->assertJsonPath('data.content', $page->publicContent());
+            }
+        }
+        $page = LandingPageContent::where('brand', 'geo')->where('locale', 'ur')->firstOrFail();
+        $page->update(['hero_heading' => 'Existing editor text', 'is_published' => false]);
+        $snapshot = LandingPageContent::orderBy('id')->get()->toJson();
+        $this->seed(\Database\Seeders\LandingPageTranslationSeeder::class);
+        $this->assertSame($snapshot, LandingPageContent::orderBy('id')->get()->toJson());
+        $this->assertSame($packages, Package::orderBy('id')->get()->toJson());
+    }
+
+    public function test_missing_translation_reports_fallback_but_unpublished_translation_stays_private(): void
+    {
+        $this->getJson('/api/v1/site/brands/geo/content?locale=ur')->assertOk()
+            ->assertJsonPath('data.locale', 'en')->assertJsonPath('data.content.hero_heading', $this->payload('geo')['hero_heading']);
+        $this->seed(\Database\Seeders\LandingPageTranslationSeeder::class);
+        LandingPageContent::where('brand', 'geo')->where('locale', 'ur')->update([
+            'hero_heading' => 'PRIVATE TRANSLATED DRAFT', 'is_published' => false,
+        ]);
+        $response = $this->getJson('/api/v1/site/brands/geo/content?locale=ur')->assertOk()
+            ->assertJsonPath('data.locale', 'ur')->assertJsonPath('data.content', null);
+        $this->assertStringNotContainsString('PRIVATE TRANSLATED DRAFT', $response->getContent());
+    }
+
+    public function test_language_selector_and_admin_save_target_only_the_selected_language(): void
+    {
+        $this->seed(\Database\Seeders\LandingPageTranslationSeeder::class);
+        $this->signIn('content');
+        $this->get('/admin/landing-pages/geo/edit?locale=ar')->assertOk()
+            ->assertSee('id="landing-content-locale"', false)
+            ->assertSee('value="ar" selected', false)->assertSee('dir="rtl"', false);
+        $otherRows = LandingPageContent::whereNot(fn ($query) => $query->where('brand', 'geo')->where('locale', 'ar'))->orderBy('id')->get()->toJson();
+        $page = LandingPageContent::where('brand', 'geo')->where('locale', 'ar')->firstOrFail();
+        $payload = $page->publicContent() + ['locale' => 'ar', 'is_published' => true];
+        $payload['hero_heading'] = 'GEO IPTV — عنوان تجريبي';
+        $this->putJson('/api/browser/admin/landing-pages/geo', $payload)->assertOk()
+            ->assertJsonPath('redirect_url', '/admin/landing-pages/geo/edit?locale=ar');
+        $this->assertSame($payload['hero_heading'], $page->fresh()->hero_heading);
+        $this->assertSame($otherRows, LandingPageContent::whereNot(fn ($query) => $query->where('brand', 'geo')->where('locale', 'ar'))->orderBy('id')->get()->toJson());
+    }
+
     public function test_public_packages_project_numeric_facts_not_legacy_marketing_fields(): void
     {
         Package::query()->where('title', 'like', '5G IPTV%')->delete();

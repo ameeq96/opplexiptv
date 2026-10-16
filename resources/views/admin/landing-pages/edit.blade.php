@@ -22,9 +22,20 @@
                 <a class="nav-link {{ $brandKey === $brand ? 'active' : '' }}" href="{{ route('admin.landing-pages.edit', ['brand' => $brandKey, 'locale' => $locale]) }}" @if ($brandKey === $brand) aria-current="page" @endif>{{ $brandName }}</a>
             @endforeach
         </nav>
+        <form method="GET" action="{{ route('admin.landing-pages.edit', ['brand' => $brand]) }}" class="d-flex flex-wrap align-items-end gap-2 mt-3">
+            <div>
+                <label for="landing-content-locale" class="form-label">Content language</label>
+                <select id="landing-content-locale" name="locale" class="form-select" style="min-width: 12rem">
+                    @foreach (['en' => 'English', 'es' => 'Español', 'fr' => 'Français', 'it' => 'Italiano', 'nl' => 'Nederlands', 'pt' => 'Português', 'ru' => 'Русский', 'ur' => 'اردو', 'ar' => 'العربية', 'hi' => 'हिन्दी'] as $languageCode => $languageName)
+                        <option value="{{ $languageCode }}" @selected($locale === $languageCode)>{{ $languageName }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Open language</button>
+        </form>
     </div>
 
-    <form method="POST" action="{{ route('admin.landing-pages.update', ['brand' => $brand]) }}">
+    <form method="POST" action="{{ route('admin.landing-pages.update', ['brand' => $brand]) }}" lang="{{ $locale }}" @if (in_array($locale, ['ar', 'ur'], true)) dir="rtl" @endif>
         @csrf
         @method('PUT')
         <input type="hidden" name="locale" value="{{ $locale }}">

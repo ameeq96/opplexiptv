@@ -251,6 +251,25 @@ class PublicSiteApiTest extends TestCase
         $this->get('/api/v1/site/brands/geo/plans')->assertOk()->assertJsonPath('data.packages.0.price_amount', 4.25);
     }
 
+    public function test_landing_languages_preserve_numeric_prices_packages_and_checkout_paths(): void
+    {
+        $this->seed(\Database\Seeders\LandingPageTranslationSeeder::class);
+        Package::query()->update(['active' => false]);
+        foreach (['trex' => ['TREX IPTV - Yearly', 12], 'opplex' => ['Opplex iptv', 1], 'geo' => ['GEO World IPTV', 1], '5g' => ['5G IPTV', 1]] as $brand => [$name, $months]) {
+            $package = $this->package($name, $months);
+            $baseline = $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale=en')->assertOk();
+            foreach (['es', 'fr', 'it', 'nl', 'pt', 'ru', 'ur', 'ar', 'hi'] as $locale) {
+                $response = $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale='.$locale)->assertOk();
+                foreach (['id', 'price_amount', 'currency', 'duration_months', 'max_devices', 'is_available'] as $field) {
+                    $this->assertSame($baseline->json('data.packages.0.'.$field), $response->json('data.packages.0.'.$field));
+                }
+                $this->assertSame($baseline->json('data.links'), $response->json('data.links'));
+                $this->assertSame($baseline->json('data.support'), $response->json('data.support'));
+            }
+            $this->assertSame($package->id, $baseline->json('data.packages.0.id'));
+        }
+    }
+
     public function test_brand_catalog_excludes_retired_templates_invalid_durations_and_unavailable_plans(): void
     {
         Package::query()->update(['active' => false]);
