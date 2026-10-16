@@ -218,6 +218,119 @@ class PublicSiteApiTest extends TestCase
         $this->assertSame(0, (int) $blog->fresh()->views);
     }
 
+    public function test_brand_landing_plans_use_their_own_stored_prices_and_durations(): void
+    {
+        Package::query()->update(['active' => false]);
+        $brands = [
+            'trex' => ['TREX IPTV', [12 => 71]],
+            'opplex' => ['Opplex iptv', [1 => 2.99, 3 => 7.99, 6 => 14.99, 12 => 23.99]],
+            'geo' => ['GEO World IPTV', [1 => 4, 3 => 12, 6 => 24, 12 => 48]],
+            '5g' => ['5G IPTV', [1 => 6, 3 => 18, 6 => 36, 12 => 72]],
+        ];
+        $suffixes = [1 => '', 3 => ' - 3 Months', 6 => ' - Half Yearly', 12 => ' - Yearly'];
+        foreach ($brands as [$name, $prices]) {
+            foreach ($prices as $months => $price) {
+                $this->package($name.$suffixes[$months], $months)->update([
+                    'price_amount' => $price, 'display_price' => '$'.$price.' / '.$months.' months',
+                ]);
+            }
+        }
+
+        foreach ($brands as $brand => [$name, $prices]) {
+            $response = $this->get('/api/v1/site/brands/'.$brand.'/plans?locale=en')
+                ->assertOk()->assertJsonPath('data.brand', $brand)
+                ->assertJsonPath('data.provider_name', $name)->assertJsonCount(count($prices), 'data.packages');
+            $this->assertSame(array_keys($prices), array_column($response->json('data.packages'), 'duration_months'));
+            $this->assertSame(array_map('floatval', array_values($prices)), array_map('floatval', array_column($response->json('data.packages'), 'price_amount')));
+            foreach ($response->json('data.packages') as $plan) {
+                $this->assertSame($name, $plan['service']);
+            }
+        }
+
+        Package::where('title', 'GEO World IPTV')->update(['price_amount' => 4.25, 'display_price' => '$4.25 / 1 month']);
+        $this->get('/api/v1/site/brands/geo/plans')->assertOk()->assertJsonPath('data.packages.0.price_amount', 4.25);
+    }
+
+    public function test_brand_catalog_excludes_retired_templates_invalid_durations_and_unavailable_plans(): void
+    {
+        Package::query()->update(['active' => false]);
+        $yearly = $this->package('TREX IPTV - Yearly', 12);
+        $this->package('TREX IPTV', 1);
+        $this->package('TREX IPTV - 3 Months', 3);
+        $this->package('5G Live IPTV (Zaintv)', 1);
+        $this->package('GEO World IPTV', 12);
+        $this->package('GEO World IPTV - 3 Months', 3)->update(['active' => false]);
+        $this->package('GEO World IPTV - Half Yearly', 6)->update(['is_available' => false]);
+        $this->package('GEO World IPTV - Yearly', 12)->update(['price_amount' => 0]);
+        $this->package('5G IPTV', 1)->update(['vendor' => 'starshare']);
+        $this->get('/api/v1/site/brands/trex/plans')->assertOk()->assertJsonCount(1, 'data.packages')
+            ->assertJsonPath('data.packages.0.id', $yearly->id);
+        foreach (['geo', '5g'] as $brand) {
+            $this->get('/api/v1/site/brands/'.$brand.'/plans')->assertOk()->assertJsonPath('data.count', 0);
+        }
+        $this->get('/api/v1/site/brands/unknown/plans')->assertNotFound()->assertHeader('Content-Type', 'application/json');
+        $this->get('/api/v1/site/brands/geo/plans?locale=not-supported')->assertUnprocessable();
+    }
+
+    public function test_brand_checkout_catalog_keeps_main_provider_choices_unchanged(): void
+    {
+        Package::query()->update(['active' => false]);
+        $opplex = $this->package('Opplex iptv', 1);
+        $filex = $this->package('FILEX IPTV', 1);
+        $trex = $this->package('TREX IPTV - Yearly', 12);
+        $geo = $this->package('GEO World IPTV', 1);
+        $fiveG = $this->package('5G IPTV', 1);
+        $retired = $this->package('TREX IPTV', 1);
+        $unapproved = $this->package('Another IPTV', 1);
+        $main = $this->get('/api/v1/site/pages/packages')->assertOk();
+        $this->assertEqualsCanonicalizing([$opplex->id, $filex->id], array_column($main->json('data.iptvProviders'), 'id'));
+        $this->get('/api/v1/site/providers/'.$trex->id.'/plans')->assertNotFound();
+        $configure = $this->get('/api/v1/site/configure')->assertOk();
+        $this->assertNotContains($trex->id, array_column($configure->json('data.iptvPackages'), 'id'));
+
+        config()->set('services.opplexify.shared_secret', 'brand-catalog-test-only');
+        $this->getJson('/api/integrations/opplexify/catalog')->assertUnauthorized();
+        $timestamp = (string) now()->timestamp;
+        $signature = hash_hmac('sha256', "GET\n/api/integrations/opplexify/catalog\n".$timestamp, 'brand-catalog-test-only');
+        $catalog = $this->getJson('/api/integrations/opplexify/catalog', [
+            'X-Opplexify-Timestamp' => $timestamp, 'X-Opplexify-Signature' => $signature,
+        ])->assertOk();
+        $ids = array_column($catalog->json('data'), 'id');
+        foreach ([$opplex, $filex, $trex, $geo, $fiveG] as $plan) {
+            $this->assertContains($plan->id, $ids);
+        }
+        $this->assertNotContains($retired->id, $ids);
+        $this->assertNotContains($unapproved->id, $ids);
+        $this->assertStringNotContainsString('brand-catalog-test-only', $catalog->getContent());
+    }
+
+    public function test_brand_plan_uses_existing_signed_checkout_without_starting_a_payment(): void
+    {
+        Package::query()->update(['active' => false]);
+        $plan = $this->package('TREX IPTV - Yearly', 12);
+        config()->set('services.opplexify.shared_secret', 'brand-handoff-test-only');
+        config()->set('services.opplexify.url', 'https://checkout.example.test');
+        $response = $this->get('/checkout?package_id='.$plan->id)->assertRedirect();
+        $target = $response->headers->get('Location');
+        $this->assertSame('checkout.example.test', parse_url($target, PHP_URL_HOST));
+        parse_str(parse_url($target, PHP_URL_QUERY), $query);
+        $this->assertSame(hash_hmac('sha256', $query['selection'], 'brand-handoff-test-only'), $query['signature']);
+        $payload = json_decode(base64_decode(strtr($query['selection'], '-_', '+/')), true);
+        $this->assertSame($plan->id, $payload['package_id']);
+        $this->assertGreaterThan(now()->timestamp, $payload['exp']);
+        $this->assertDatabaseCount('orders', 0);
+    }
+
+    public function test_landing_brands_do_not_hide_generic_main_checkout_plans(): void
+    {
+        Package::query()->update(['active' => false]);
+        $monthly = $this->package('Monthly', 1);
+        $yearly = $this->package('Yearly', 12);
+        $trex = $this->package('TREX IPTV - Yearly', 12);
+        $catalog = app(\App\Services\Api\PublicSiteDataService::class)->catalog();
+        $this->assertEqualsCanonicalizing([$monthly->id, $yearly->id, $trex->id], $catalog['data']->pluck('id')->all());
+    }
+
     private function package(string $title, int $months): Package
     {
         return Package::create([

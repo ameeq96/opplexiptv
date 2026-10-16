@@ -221,6 +221,7 @@ class ClientQueryService
                 })
                 ->count(),
             'customer_activities' => CustomerActivity::query()->whereNull('user_id')
+                ->tap(fn ($query) => LandingInteractionService::excludeAnonymousActivities($query))
                 ->where(function ($query) {
                     $query->whereNull('entity_type')->orWhere('entity_type', '!=', 'shared_checkout')->orWhereNull('order_id');
                 })->count(),

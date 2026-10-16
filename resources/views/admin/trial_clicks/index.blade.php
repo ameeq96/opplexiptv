@@ -48,13 +48,20 @@
                 <input type="date" name="from" value="{{ request('from') }}" class="form-control w-auto" />
                 <input type="date" name="to" value="{{ request('to') }}" class="form-control w-auto" />
 
+                <select name="landing_brand" class="form-select w-auto" aria-label="Landing brand" onchange="this.form.requestSubmit()">
+                    <option value="">All lead sources</option>
+                    @foreach ($landingBrands as $brand => $label)
+                        <option value="{{ $brand }}" @selected(request('landing_brand') === $brand)>{{ $label }}</option>
+                    @endforeach
+                </select>
+
                 <input type="text" name="search" value="{{ request('search') }}" class="form-control w-auto"
                        placeholder="Search name, phone, lead, package...">
 
                 <button type="submit" class="btn btn-primary">Search</button>
 
                 <a href="{{ route('admin.trial_clicks.export') }}" class="btn btn-outline-secondary ms-auto">
-                    Export CSV
+                    Export all leads CSV
                 </a>
             </form>
         </div>
@@ -66,8 +73,41 @@
         <div class="col-auto"><span class="badge bg-success">Last 7d: {{ $last7 }}</span></div>
         <div class="col-auto"><span class="badge bg-secondary">Last 30d: {{ $last30 }}</span></div>
         <div class="col-auto"><span class="badge bg-info text-dark">New: {{ $newLeads }}</span></div>
-        <div class="col-auto"><span class="badge bg-dark">Paid: {{ $paidLeads }}</span></div>
+        <div class="col-auto"><span class="badge bg-dark">Marked paid (manual): {{ $paidLeads }}</span></div>
     </div>
+
+    <section class="card shadow-sm mb-4" aria-labelledby="landingFunnelTitle">
+        <div class="card-body">
+            <h2 id="landingFunnelTitle" class="h5">Landing activity</h2>
+            <p class="small text-muted mb-3"><span data-admin-api-field="landingFunnel.from">{{ $landingFunnel['from'] }}</span> to <span data-admin-api-field="landingFunnel.to">{{ $landingFunnel['to'] }}</span>. Visits and checkout clicks count distinct opted-in sessions per brand, not people. Contact requests count saved submissions, including requests without analytics consent. A checkout click does not confirm completion or payment.</p>
+            <div class="table-responsive">
+                <table class="table table-sm align-middle mb-2">
+                    <thead><tr><th scope="col">Brand</th><th scope="col">Consented visits</th><th scope="col">Contact requests</th><th scope="col">Checkout clicks</th><th scope="col">Verified paid orders</th></tr></thead>
+                    <tbody>
+                        @foreach ($landingFunnel['brands'] as $row)
+                            <tr>
+                                <th scope="row">{{ $row['name'] }}</th>
+                                <td data-admin-api-field="landingFunnel.brands.{{ $loop->index }}.visits">{{ $row['visits'] }}</td>
+                                <td data-admin-api-field="landingFunnel.brands.{{ $loop->index }}.contacts">{{ $row['contacts'] }}</td>
+                                <td data-admin-api-field="landingFunnel.brands.{{ $loop->index }}.checkout_clicks">{{ $row['checkout_clicks'] }}</td>
+                                @if ($landingFunnel['payment_attribution'])
+                                    <td data-admin-api-field="landingFunnel.brands.{{ $loop->index }}.paid_orders">{{ $row['paid_orders'] }}</td>
+                                @else
+                                    <td>Pending connection</td>
+                                @endif
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+            <p class="small text-muted mb-2">Source and date filters apply to this activity report. Search/status filters apply to the lead list; the badges above show all lead entries. Browser event counts are indicative, not audited sales figures.</p>
+            @if ($landingFunnel['payment_attribution'])
+                <p class="small text-muted mb-0">Paid orders count distinct, confirmed production SafePay orders attributed to a landing brand. Test payments and manually marked lead statuses are excluded. Paid attribution does not require visitor analytics consent; visit/click totals do. These are different populations, not a conversion-rate calculation. Historical orders without attribution are not assigned to a brand.</p>
+            @else
+                <p class="small text-muted mb-0">Payment attribution is not connected yet. The authenticated payment connection must be verified before paid-order reporting is enabled.</p>
+            @endif
+        </div>
+    </section>
 
     {{-- Bulk delete form --}}
     <form id="bulkDeleteTrials" action="{{ route('admin.trial_clicks.bulkDelete') }}" method="POST">

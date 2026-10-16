@@ -7,6 +7,8 @@ use App\Models\BlogCategory;
 use App\Models\BlogTranslation;
 use App\Models\Device;
 use App\Models\Digital\DigitalProduct;
+use App\Models\FooterSetting;
+use App\Models\LandingPageContent;
 use App\Models\Package;
 use App\Models\ShopProduct;
 use App\Services\BlogCoverImageService;
@@ -28,6 +30,22 @@ class PublicSiteDataService
         'home', 'about', 'contact', 'pricing', 'movies', 'packages', 'shop',
         'iptv-subscription-service', 'reseller-panel', 'iptv-applications', 'faqs',
         'activate', 'activate-info', 'terms-of-service', 'privacy-policy', 'refund-policy',
+    ];
+
+    private const LANDING_BRANDS = [
+        'trex' => ['name' => 'TREX IPTV', 'plans' => ['TREX IPTV - Yearly' => 12]],
+        'opplex' => ['name' => 'Opplex iptv', 'plans' => [
+            'Opplex iptv' => 1, 'Opplex iptv - 3 Months' => 3,
+            'Opplex iptv - Half Yearly' => 6, 'Opplex iptv - Yearly' => 12,
+        ]],
+        'geo' => ['name' => 'GEO World IPTV', 'plans' => [
+            'GEO World IPTV' => 1, 'GEO World IPTV - 3 Months' => 3,
+            'GEO World IPTV - Half Yearly' => 6, 'GEO World IPTV - Yearly' => 12,
+        ]],
+        '5g' => ['name' => '5G IPTV', 'plans' => [
+            '5G IPTV' => 1, '5G IPTV - 3 Months' => 3,
+            '5G IPTV - Half Yearly' => 6, '5G IPTV - Yearly' => 12,
+        ]],
     ];
 
     public function __construct(
@@ -441,6 +459,114 @@ class PublicSiteDataService
         ];
     }
 
+    public function landingPlans(string $brand): array
+    {
+        abort_unless(isset(self::LANDING_BRANDS[$brand]), 404);
+        $definition = self::LANDING_BRANDS[$brand];
+        $packages = Package::query()
+            ->where('active', true)
+            ->where('is_available', true)
+            ->where('type', 'iptv')
+            ->where('vendor', 'opplex')
+            ->where('price_amount', '>', 0)
+            ->whereIn('title', array_keys($definition['plans']))
+            ->with('translations')
+            ->orderBy('duration_months')
+            ->orderBy('id')
+            ->get()
+            ->filter(fn (Package $package) => ($definition['plans'][$package->title] ?? null) === (int) $package->duration_months)
+            ->unique('duration_months')
+            ->map(function (Package $package) use ($definition): array {
+                $card = $package->toIptvArray();
+                $card['service'] = $definition['name'];
+
+                return $card;
+            })
+            ->values()
+            ->all();
+
+        return [
+            'brand' => $brand,
+            'provider_name' => $definition['name'],
+            'count' => count($packages),
+            'packages' => $packages,
+        ];
+    }
+
+    public function landingContent(string $brand): array
+    {
+        $catalog = $this->landingPlans($brand);
+        $currency = strtoupper((string) config('services.app.default_currency', 'USD'));
+        if (!preg_match('/^[A-Z]{3}$/D', $currency)) {
+            $currency = 'USD';
+        }
+        $packages = collect($catalog['packages'])->map(function (array $package) use ($currency, $catalog): array {
+            $months = (int) $package['duration_months'];
+            $devices = (int) ($package['max_devices'] ?? 0);
+
+            return [
+                'id' => (int) $package['id'],
+                'type' => 'iptv',
+                'title' => $months === 1 ? 'Monthly plan' : $months.'-month plan',
+                'service' => $catalog['provider_name'],
+                'price_amount' => (float) $package['price_amount'],
+                'duration_months' => $months,
+                'currency' => $currency,
+                'max_devices' => $devices > 0 ? $devices : null,
+                'is_available' => true,
+            ];
+        })->values()->all();
+        $locale = app()->getLocale();
+        $content = LandingPageContent::query()->where('brand', $brand)->where('locale', $locale)->first();
+        if (!$content && $locale !== 'en') {
+            $content = LandingPageContent::query()->where('brand', $brand)->where('locale', 'en')->first();
+        }
+        $email = trim((string) FooterSetting::query()->latest()->value('email'));
+        $phone = preg_replace('/\D/', '', (string) config('services.whatsapp.number'));
+        $phoneDisplay = trim((string) config('services.whatsapp.display'));
+
+        return [
+            'brand' => $brand,
+            'provider_name' => $catalog['provider_name'],
+            'locale' => $content?->locale ?? $locale,
+            'currency' => $currency,
+            'count' => count($packages),
+            'packages' => $packages,
+            'content' => $content?->is_published ? $content->publicContent() : null,
+            'support' => [
+                'phone' => preg_match('/^[0-9]{7,15}$/D', $phone) ? $phone : null,
+                'phone_display' => $phoneDisplay !== '' ? $phoneDisplay : null,
+                'email' => filter_var($email, FILTER_VALIDATE_EMAIL) ? $email : null,
+            ],
+            'links' => [
+                'account' => route('customer.account', [], false),
+                'setup' => route('customer.guides', [], false),
+                'contact' => route('contact', [], false),
+                'legal' => [
+                    ['label' => 'Terms of service', 'url' => route('terms-of-service', [], false)],
+                    ['label' => 'Privacy policy', 'url' => route('privacy-policy', [], false)],
+                    ['label' => 'Refund policy', 'url' => route('refund-policy', [], false)],
+                ],
+            ],
+            'updated_at' => $content?->is_published ? $content->updated_at?->toIso8601String() : null,
+        ];
+    }
+
+    private function isLandingBrandPackage(Package $package): bool
+    {
+        if ($package->type !== 'iptv' || $package->vendor !== 'opplex') {
+            return false;
+        }
+
+        foreach (self::LANDING_BRANDS as $definition) {
+            if (($definition['plans'][$package->title] ?? null) === (int) $package->duration_months) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public function catalog(): array
     {
         $currency = strtoupper((string) config('services.app.default_currency', 'USD'));
@@ -452,10 +578,10 @@ class PublicSiteDataService
             ->where('price_amount', '>', 0)
             ->sorted()
             ->get()
-            ->filter(fn (Package $package) => $package->isSelectableIptvProvider())
+            ->filter(fn (Package $package) => $package->isSelectableIptvProvider() || $this->isLandingBrandPackage($package))
             ->values();
 
-        if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan())) {
+        if ($iptvRows->contains(fn (Package $package) => ! $package->isDurationPlan() && $package->isSelectableIptvProvider())) {
             $iptvRows = $iptvRows
                 ->reject(fn (Package $package) => $package->isDurationPlan())
                 ->values();

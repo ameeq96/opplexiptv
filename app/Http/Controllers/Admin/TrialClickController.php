@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\TrialClick;
 use App\Models\User;
+use App\Services\Clients\LandingInteractionService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
@@ -15,10 +16,17 @@ class TrialClickController extends Controller
 {
     public function index(Request $request)
     {
+        $request->validate([
+            'landing_brand' => ['nullable', 'string', Rule::in(array_keys(LandingInteractionService::BRANDS))],
+            'from' => ['nullable', 'date_format:Y-m-d'],
+            'to' => ['nullable', 'date_format:Y-m-d', Rule::when($request->filled('from'), 'after_or_equal:from')],
+        ]);
+        $landing = app(LandingInteractionService::class);
         $perPage = (int) $request->input('per_page', 10);
         if (!in_array($perPage, [10,20,30,40,100], true)) $perPage = 10;
 
         $q = TrialClick::query()->with('user:id,name,email,phone_normalized');
+        $landing->filterLeads($q, $request->input('landing_brand'), $request->input('from'), $request->input('to'));
         $activityAt = DB::raw('COALESCE(whatsapp_contact_consented_at, created_at)');
 
         if (in_array($request->input('status'), TrialClick::STATUSES, true)) {
@@ -51,8 +59,10 @@ class TrialClickController extends Controller
         }
 
         // Date range
-        if ($from = $request->input('from')) $q->whereDate($activityAt, '>=', $from);
-        if ($to   = $request->input('to'))   $q->whereDate($activityAt, '<=', $to);
+        if (!$request->filled('landing_brand')) {
+            if ($from = $request->input('from')) $q->whereDate($activityAt, '>=', $from);
+            if ($to   = $request->input('to'))   $q->whereDate($activityAt, '<=', $to);
+        }
 
         $q->orderByDesc($activityAt)->orderByDesc('id');
         $clicks = $q->paginate($perPage)->withQueryString();
@@ -85,6 +95,13 @@ class TrialClickController extends Controller
         $newLeads = (int) ($metrics?->new_count ?? 0);
         $paidLeads = (int) ($metrics?->paid_count ?? 0);
         $statuses = TrialClick::STATUSES;
+        $landingBrands = collect(LandingInteractionService::BRANDS)->map(fn ($brand) => $brand['name'])->all();
+        $funnelTo = $request->input('to') ?: now()->toDateString();
+        $landingFunnel = $landing->funnel(
+            $request->input('landing_brand'),
+            $request->input('from') ?: \Illuminate\Support\Carbon::parse($funnelTo)->subDays(29)->toDateString(),
+            $funnelTo
+        );
 
         return view('admin.trial_clicks.index', compact(
             'clicks',
@@ -93,7 +110,9 @@ class TrialClickController extends Controller
             'last30',
             'newLeads',
             'paidLeads',
-            'statuses'
+            'statuses',
+            'landingBrands',
+            'landingFunnel'
         ));
     }
 

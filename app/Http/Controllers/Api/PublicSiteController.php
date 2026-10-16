@@ -43,6 +43,18 @@ class PublicSiteController extends Controller
         return response()->json(['data' => $this->site->providerPlans($package)]);
     }
 
+    public function landingPlans(string $brand)
+    {
+        return response()->json(['data' => $this->site->landingPlans($brand)]);
+    }
+
+    public function landingContent(Request $request, string $brand)
+    {
+        $request->validate(['locale' => ['nullable', 'string', \Illuminate\Validation\Rule::in(config('app.locales', ['en']))]]);
+
+        return response()->json(['data' => $this->site->landingContent($brand)]);
+    }
+
     public function products(Request $request)
     {
         $data = $request->validate([

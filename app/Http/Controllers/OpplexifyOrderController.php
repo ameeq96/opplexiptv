@@ -28,6 +28,9 @@ class OpplexifyOrderController extends Controller
         $this->authenticate($request, '/integrations/opplexify/orders/prepare');
         $data = $this->payload($request, [
             'device_id' => ['nullable', 'integer', 'min:1'],
+            'attribution' => ['sometimes', 'array:brand,session_id', 'required_array_keys:brand'],
+            'attribution.brand' => ['required_with:attribution', 'string', 'in:trex,opplex,geo,5g'],
+            'attribution.session_id' => ['sometimes', 'string', 'regex:/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i'],
         ]);
         $package = Package::query()
             ->where('active', true)
@@ -53,6 +56,15 @@ class OpplexifyOrderController extends Controller
             ));
         }
         abort_unless($expectedMinor === (int) $data['amount_minor'], 409, 'Checkout amount does not match the package.');
+        if (isset($data['attribution'])) {
+            abort_unless(collect(app(\App\Services\Api\PublicSiteDataService::class)->landingPlans($data['attribution']['brand'])['packages'])
+                ->contains('id', (int) $package->id), 422, 'Package does not match the landing brand.');
+            $attribution = ['brand' => $data['attribution']['brand']];
+            if (isset($data['attribution']['session_id'])) {
+                $attribution['session_id'] = strtolower($data['attribution']['session_id']);
+            }
+            $data['attribution'] = $attribution;
+        }
 
         return $this->transaction(function () use ($data, $deviceId, $package): array {
             $now = now();
@@ -69,6 +81,7 @@ class OpplexifyOrderController extends Controller
                     ),
                 ]
             );
+            $newDraft = $draft->wasRecentlyCreated;
             $draft = CheckoutDraft::query()->whereKey($draft->id)->lockForUpdate()->firstOrFail();
             abort_unless(
                 (int) $draft->package_id === (int) $package->id
@@ -76,6 +89,16 @@ class OpplexifyOrderController extends Controller
                 409,
                 'Checkout reference already belongs to another selection.'
             );
+            $existingOrder = Order::query()->where('checkout_key', $draft->token)->first();
+            $binding = \App\Models\CustomerExternalLink::query()->createOrFirst([
+                'source' => 'opplexify', 'entity_type' => 'landing_attribution', 'external_id' => $data['reference'],
+            ], ['state' => [
+                'attribution' => $newDraft && !$existingOrder ? ($data['attribution'] ?? null) : null,
+                'environment' => $existingOrder ? ($existingOrder->payment_provider === 'safepay_sandbox' ? 'sandbox' : 'production') : $data['environment'],
+            ]]);
+            $binding = \App\Models\CustomerExternalLink::query()->whereKey($binding->id)->lockForUpdate()->firstOrFail();
+            abort_unless(($binding->state['attribution'] ?? null) === ($data['attribution'] ?? null)
+                && ($binding->state['environment'] ?? null) === $data['environment'], 409, 'Checkout source already belongs to another selection.');
 
             if (!$draft->completed_at) {
                 $draft->forceFill([
@@ -116,6 +139,10 @@ class OpplexifyOrderController extends Controller
             $draft = CheckoutDraft::query()->where('token', $key)->lockForUpdate()->first();
             $order = Order::query()->where('checkout_key', $key)->lockForUpdate()->first();
             abort_unless($draft || $order, 404, 'Prepared checkout not found.');
+            $binding = \App\Models\CustomerExternalLink::query()->where([
+                'source' => 'opplexify', 'entity_type' => 'landing_attribution', 'external_id' => $data['reference'],
+            ])->lockForUpdate()->first();
+            abort_if($binding && ($binding->state['environment'] ?? null) !== $data['environment'], 409, 'Checkout environment does not match the prepared checkout.');
             if ($draft) {
                 abort_unless((int) $draft->package_id === (int) $data['package_id'], 409, 'Checkout package does not match.');
             }
@@ -151,6 +178,7 @@ class OpplexifyOrderController extends Controller
                 if ($draft && (!$draft->completed_order_id || !$draft->completed_at)) {
                     $this->completeDraft($draft, $order);
                 }
+                $this->recordLandingPayment($data, $order);
 
                 return ['order_id' => $order->id, 'customer_id' => $order->user_id, 'created' => false];
             }
@@ -236,6 +264,7 @@ class OpplexifyOrderController extends Controller
             }
 
             $this->completeDraft($draft, $order);
+            $this->recordLandingPayment($data, $order);
             $admins = Admin::query()
                 ->whereIn('role', [Admin::ROLE_OWNER, Admin::ROLE_SALES, Admin::ROLE_SUPPORT])
                 ->get();
@@ -319,6 +348,30 @@ class OpplexifyOrderController extends Controller
 
         return substr($hex, 0, 8) . '-' . substr($hex, 8, 4) . '-' . substr($hex, 12, 4)
             . '-' . substr($hex, 16, 4) . '-' . substr($hex, 20, 12);
+    }
+
+    private function recordLandingPayment(array $data, Order $order): void
+    {
+        if ($data['environment'] !== 'production' || $order->payment_provider !== 'safepay'
+            || $order->payment_status !== 'paid' || !$order->paid_at) {
+            return;
+        }
+        $binding = \App\Models\CustomerExternalLink::query()->where([
+            'source' => 'opplexify', 'entity_type' => 'landing_attribution', 'external_id' => $data['reference'],
+        ])->lockForUpdate()->first();
+        $attribution = $binding?->state['attribution'] ?? null;
+        if (!$attribution || ($binding->state['environment'] ?? null) !== 'production') {
+            return;
+        }
+        abort_unless($binding->order_id === null || (int) $binding->order_id === (int) $order->id, 409, 'Checkout source order conflicts.');
+        $binding->forceFill(['order_id' => $order->id, 'user_id' => $order->user_id])->save();
+        app(\App\Services\Clients\CustomerActivityService::class)->record([
+            'source' => 'landing_' . $attribution['brand'], 'event_id' => 'paid:' . $order->id,
+            'event_type' => 'landing.payment_paid', 'entity_type' => 'order', 'entity_id' => (string) $order->id,
+            'order_id' => $order->id, 'user_id' => $order->user_id,
+            'details' => array_merge($attribution, ['reference' => $data['reference']]),
+            'occurred_at' => $order->paid_at,
+        ]);
     }
 
     private function completeDraft(CheckoutDraft $draft, Order $order): void

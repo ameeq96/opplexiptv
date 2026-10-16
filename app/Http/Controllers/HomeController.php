@@ -146,11 +146,24 @@ class HomeController extends Controller
 
         abort_if($secret === '' || filter_var($destination, FILTER_VALIDATE_URL) === false, 503);
 
-        $selection = rtrim(strtr(base64_encode(json_encode([
+        $payload = [
             'v' => 1,
             'package_id' => (int) $package->getKey(),
             'exp' => now()->addMinutes(10)->timestamp,
-        ], JSON_THROW_ON_ERROR)), '+/', '-_'), '=');
+        ];
+        $sources = ['trexiptv8k' => 'trex', 'opplexiptv-store' => 'opplex', 'geoiptv' => 'geo', '5gliveiptv' => '5g'];
+        $source = request()->query('utm_source');
+        if (is_string($source) && isset($sources[$source]) && request()->query('utm_medium') === 'landing') {
+            $brand = $sources[$source];
+            abort_unless(collect($this->siteData->landingPlans($brand)['packages'])->contains('id', (int) $package->getKey()), 422, 'Package does not match the landing brand.');
+            $payload['attribution'] = ['brand' => $brand];
+            $session = request()->query('landing_session');
+            if (request()->query('landing_consent') === '1' && is_string($session)
+                && preg_match('/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i', $session)) {
+                $payload['attribution']['session_id'] = strtolower($session);
+            }
+        }
+        $selection = rtrim(strtr(base64_encode(json_encode($payload, JSON_THROW_ON_ERROR)), '+/', '-_'), '=');
         $signature = hash_hmac('sha256', $selection, $secret);
 
         $url = $destination . '/checkout?' . http_build_query([

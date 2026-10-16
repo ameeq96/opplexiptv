@@ -30,6 +30,7 @@ class CustomerIdentityService
 
         return self::REVIEW_TYPES[$type]::query()->whereNull('user_id')
             ->when($type === 'activity', function ($query) {
+                LandingInteractionService::excludeAnonymousActivities($query);
                 $query->where(function ($unmatched) {
                     $unmatched->whereNull('entity_type')->orWhere('entity_type', '!=', 'shared_checkout')->orWhereNull('order_id');
                 });
@@ -172,6 +173,10 @@ class CustomerIdentityService
 
             TrialClick::query()
                 ->where('phone_normalized', $phone)
+                ->whereNotIn('id', CustomerActivity::query()->select('entity_id')
+                    ->whereIn('source', array_map(fn ($brand) => 'landing_'.$brand, array_keys(LandingInteractionService::BRANDS)))
+                    ->where('event_type', 'landing.contact_requested')->where('entity_type', 'trial_click')
+                    ->whereNotNull('entity_id'))
                 ->update(['user_id' => $phoneUser?->id]);
         }
 

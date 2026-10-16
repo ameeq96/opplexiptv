@@ -148,8 +148,15 @@ Route::prefix('api/v1/site')->name('api.site.')->middleware([ApiJsonResponse::cl
     Route::get('products/{type}/{id}', [\App\Http\Controllers\Api\PublicSiteController::class, 'product'])->whereNumber('id')->name('products.show');
     Route::get('configure', [\App\Http\Controllers\Api\PublicSiteController::class, 'configure'])->name('configure');
     Route::get('providers/{package}/plans', [\App\Http\Controllers\Api\PublicSiteController::class, 'providerPlans'])->whereNumber('package')->name('providers.plans');
+    Route::get('brands/{brand}/plans', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingPlans'])->where('brand', 'trex|opplex|geo|5g')->name('brands.plans');
+    Route::get('brands/{brand}/content', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingContent'])->where('brand', 'trex|opplex|geo|5g')->name('brands.content');
     Route::get('blogs', [\App\Http\Controllers\Api\PublicSiteController::class, 'blogs'])->name('blogs.index');
     Route::get('blogs/{slug}', [\App\Http\Controllers\Api\PublicSiteController::class, 'blog'])->name('blogs.show');
+});
+
+Route::prefix('api/v1/landing')->name('api.landing.')->middleware([ApiJsonResponse::class, 'api'])->group(function () {
+    Route::post('events', [\App\Http\Controllers\Api\LandingInteractionController::class, 'event'])->middleware('throttle:30,1,landing-events')->name('events');
+    Route::post('leads', [\App\Http\Controllers\Api\LandingInteractionController::class, 'lead'])->middleware('throttle:5,1,landing-leads')->name('leads');
 });
 
 Route::prefix('api/browser')->name('api.browser.')->middleware([ApiJsonResponse::class, 'web'])->group(function () {
@@ -234,6 +241,8 @@ $adminGuardSets = [
     ['web', 'auth:admin', \App\Http\Middleware\EnsureAdminSessionIsCurrent::class, \App\Http\Middleware\AuditAdminAction::class, \App\Http\Middleware\EnsureAdminPasswordChanged::class, \App\Http\Middleware\EnsureAdminTwoFactorAuthenticated::class, 'admin.access', 'throttle:3,1'],
 ];
 $adminEndpoints = [
+    [['GET'], 'landing-pages/{brand}/edit', \App\Http\Controllers\Admin\LandingPageContentController::class, 'edit', 'landing-pages.edit', 0, ['brand' => 'trex|opplex|geo|5g']],
+    [['PUT'], 'landing-pages/{brand}', \App\Http\Controllers\Admin\LandingPageContentController::class, 'update', 'landing-pages.update', 0, ['brand' => 'trex|opplex|geo|5g']],
     [['GET'], 'notifications', \App\Http\Controllers\AdminNotificationController::class, 'index', 'notifications.index', 0, []],
     [['POST'], 'notifications/{id}/read', \App\Http\Controllers\AdminNotificationController::class, 'markAsRead', 'notifications.read', 0, []],
     [['POST'], 'notifications/read-all', \App\Http\Controllers\AdminNotificationController::class, 'markAllAsRead', 'notifications.readAll', 0, []],
