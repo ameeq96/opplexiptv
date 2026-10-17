@@ -48,9 +48,9 @@
         },
         {
           "slug": "faqs",
-          "title": "Trex questions before you press play",
-          "description": "Straightforward answers about Trex picture quality, player compatibility, simultaneous use and checkout.",
-          "intro": "It is easier to choose a plan when the limits are clear. These answers cover the questions that affect a typical television setup; support can check anything specific to your equipment or location.",
+          "title": "Trex IPTV FAQ: yearly plans, devices and one connection",
+          "description": "Questions about the Trex IPTV annual subscription, one simultaneous connection, player compatibility and picture quality before you choose a plan.",
+          "intro": "Before choosing a Trex IPTV subscription, check the yearly term, your player and the screen you will use. These answers explain the one-connection limit and the difference between a brand name and the picture your setup can deliver.",
           "sections": [
             {"heading": "Will everything play in 8K?", "body": "No. Trex IPTV 8K is the brand name, not a guarantee of source resolution. A high-resolution screen cannot add detail that the source does not contain."},
             {"heading": "How many simultaneous connections are included?", "body": "Every Trex plan includes one simultaneous connection. Several installed players do not permit concurrent viewing. Confirm any device-switching requirements with support; the yearly term and the 8K brand name do not increase this allowance."},
@@ -82,9 +82,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Choose a player that suits your Trex screen",
-          "description": "Understand player selection for Trex, including device compatibility, official downloads and the difference between an app and a service plan.",
-          "intro": "An IPTV player is the software on your device; a service plan is a separate purchase. Before installing anything, check that the player supports your exact television, streaming box or operating-system version.",
+          "title": "Trex IPTV player apps: check device compatibility",
+          "description": "Choose an IPTV player for your Trex setup by checking the exact device, app version, download source and any separate player licence cost.",
+          "intro": "Choosing a Trex IPTV player starts with your television or streaming device. Check the exact model, operating-system version and app requirements, then compare the controls you need. An app licence, where required, is separate from an IPTV subscription.",
           "sections": [
             {"heading": "Use a trustworthy download route", "body": "Start with your device's app store or the developer's own published download. Avoid lookalike installers and unsolicited activation offers. Some players have separate fees that are not automatically included in a service plan."},
             {"heading": "Choose for everyday use", "body": "On a television, check remote navigation, readable text and accessibility options. On a smaller screen, look at controls and orientation. Ask support to confirm suitability before entering account information into an unfamiliar app."},
@@ -94,9 +94,9 @@
         },
         {
           "slug": "setup",
-          "title": "Prepare your Trex device without the guesswork",
-          "description": "A device-first Trex setup checklist for checking software, network stability and order information before seeking help.",
-          "intro": "Set aside a few minutes to prepare the device before changing player settings. Keeping the first attempt simple makes it much easier to tell whether a problem comes from the network, the app or the order status.",
+          "title": "Trex IPTV setup: a device and player checklist",
+          "description": "Prepare your Trex IPTV setup with checks for your device, player version, home connection and order status before changing playback settings.",
+          "intro": "Start your Trex IPTV setup with the screen you intend to watch. Confirm the device model, supported player version and order status, then use a familiar connection for the first attempt. This gives you a clear starting point if playback needs attention.",
           "sections": [
             {"heading": "Check the foundations", "body": "Install available system updates, confirm the device has free storage and test its internet connection. If you can use a wired connection, compare it with Wi-Fi before moving equipment or buying extras."},
             {"heading": "Keep a useful record", "body": "Note the player name and version, then keep your order reference available. Follow the central setup guide for your device. If something fails, record the exact message instead of repeatedly reinstalling the app or sharing private credentials."},
@@ -150,9 +150,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Trex guides for a cleaner television setup",
-          "description": "Read practical Trex guides on organising a lawful playlist, checking the playback chain and writing useful support requests.",
-          "intro": "Start with the Trex playlist guide if the remote feels hard to use, the playback-chain guide if a picture stops or changes, or the support template if you need help. These are practical checks for the television you already own, not evidence that every device has been tested.",
+          "title": "Trex IPTV guides: playlists, setup and playback checks",
+          "description": "Browse Trex IPTV guides for organising playlist favourites, checking playback problems on your television and preparing a useful support request.",
+          "intro": "Choose the Trex IPTV guide that fits the task in front of you: organise playlist favourites for the remote, trace an interrupted picture through the playback chain, or prepare a device-support request. Each guide gives you practical checks for your own setup.",
           "sections": [
             {"heading": "Build a tidy starting point", "body": "Begin with the playlist guide if the player feels cluttered. The playback guide then helps you separate source quality from network and screen behaviour without making unsupported performance promises."},
             {"heading": "Know when to ask", "body": "If the basics do not resolve the issue, the support guide helps you prepare a concise report. These articles are troubleshooting aids, not a guarantee of compatibility or permission to access material you are not authorised to use."}
@@ -199,9 +199,9 @@
         },
         {
           "slug": "blogs/prepare-a-clean-playlist",
-          "title": "Prepare a playlist you can actually navigate",
-          "description": "A Trex guide to organising authorised playlist sources, favourites and player settings without losing your starting point.",
-          "intro": "A crowded player can make a simple television setup feel complicated. Before deleting entries or changing import settings, identify the authorised source you are using and record the player's current configuration somewhere private.",
+          "title": "Trex IPTV playlists: organise favourites for your TV",
+          "description": "Make a Trex IPTV playlist easier to navigate with TV-remote checks, readable favourites and careful changes that preserve your player configuration.",
+          "intro": "An IPTV playlist should be easy to navigate from the sofa. For a Trex setup, start with a short favourites list and labels you can recognise with the TV remote. Before changing imports, identify your authorised source and keep the working player configuration somewhere private.",
           "sections": [
             {"heading": "Separate organisation from access", "body": "Use favourites or hide categories if your player supports them. These changes help navigation; they do not grant access to additional material. Avoid importing unknown lists just to fill empty sections."},
             {"heading": "Make one reversible change", "body": "Refresh through the player's documented controls, then check whether your existing selection still works. If entries disappear, note what changed before trying again. Never publish playlist addresses or account credentials in a public support forum."},
@@ -211,9 +211,9 @@
         },
         {
           "slug": "blogs/check-your-playback-chain",
-          "title": "Check the playback chain before blaming your screen",
-          "description": "Trace a Trex playback issue through the source, connection, player and screen with a few controlled checks.",
-          "intro": "The picture on your television is the end of a chain. Source quality, delivery, the player and the display each have a part in it. Changing all four at once makes a useful comparison almost impossible.",
+          "title": "Trex IPTV not playing? Check the playback chain",
+          "description": "Troubleshoot Trex IPTV playback or buffering symptoms by checking the source, home connection, player and screen one step at a time.",
+          "intro": "If Trex IPTV is not playing as expected, note whether the picture buffers, freezes or fails to open. The source, connection, player and display each affect what reaches the television. Compare one part at a time so you can describe what actually changes.",
           "sections": [
             {"heading": "Start with a simple comparison", "body": "Note whether the problem affects one authorised item or several. Test the connection near the viewing device, and compare wired access with Wi-Fi if available. A single speed reading does not describe every interruption."},
             {"heading": "Keep the result, not just the setting", "body": "Try one documented player adjustment and note whether it helps. Revert it if it does not. Report persistent problems with the time, device and app version; a brand name or a display's advertised resolution is not a playback guarantee."},
@@ -223,9 +223,9 @@
         },
         {
           "slug": "blogs/write-a-useful-tv-support-request",
-          "title": "A short support request that saves another round of questions",
-          "description": "Prepare a useful Trex television support enquiry with device details, reproducible symptoms and a safe screenshot.",
-          "intro": "“It does not work” is a fair description of your frustration, but it leaves support with little to test. A few specific details can turn the same message into a much more useful starting point.",
+          "title": "Trex IPTV support: report a device or playback issue",
+          "description": "Prepare a Trex IPTV support request with your TV model, player version, order reference and playback symptoms, while keeping private details safe.",
+          "intro": "A useful Trex IPTV support request explains what happens on the screen and when it started. Include your TV or streaming-device model, player version and the last step that worked. A short, reproducible description helps support choose the next check.",
           "sections": [
             {"heading": "Describe the point of failure", "body": "State your device model, player version and the action you took immediately before the problem. Include the order reference and exact error wording, along with whether the issue happens every time."},
             {"heading": "Show only what is needed", "body": "Crop screenshots to the relevant message and hide account information. List the checks you already tried, then keep replies in the same conversation where possible. Never send a password, one-time code or full payment-card details."},
@@ -264,9 +264,9 @@
         },
         {
           "slug": "faqs",
-          "title": "Opplex Store questions, from checkout to renewal",
-          "description": "Answers about Opplexify payment, shared Opplex accounts, plan renewal and what to check before another purchase.",
-          "intro": "The store, checkout and customer portal have different jobs. Here is how they fit together, including the checks worth making before you purchase a plan or renew an existing one.",
+          "title": "Opplex IPTV FAQ: plans, order status and renewal",
+          "description": "Find answers about Opplex IPTV plan terms, one connection, Opplexify checkout, order status and the central account used for renewal enquiries.",
+          "intro": "Choosing or renewing an Opplex IPTV subscription involves the plan, the payment and your customer account. These answers explain how those steps fit together, what the one-connection limit means and where to check an existing order.",
           "sections": [
             {"heading": "Do I need another customer account?", "body": "Use the main Opplex customer portal rather than creating a separate store account. The account links on this site take you to that shared service."},
             {"heading": "Will my plan renew by itself?", "body": "Plans do not renew automatically under the central service terms. When a period ends, review the current package and price before deciding to renew."},
@@ -299,9 +299,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Keep the Opplex plan and player app separate",
-          "description": "Understand how a player app differs from an Opplex service plan and how to check official downloads and device support.",
-          "intro": "It is easy to confuse an app purchase with a service purchase when both use the word activation. A player is the software that presents playback; your Opplex plan is a separate item with its own period and usage limits.",
+          "title": "Opplex IPTV player apps: licences and device checks",
+          "description": "Understand IPTV player licences, device requirements and app downloads before buying an Opplex IPTV subscription or paying for player activation.",
+          "intro": "An IPTV player licence and an Opplex IPTV subscription cover different things. The player runs on your device; the service plan has its own term and connection limit. Check which purchase is being requested before paying for an app activation or a subscription.",
           "sections": [
             {"heading": "Check before installing", "body": "Look up the exact player in your device's official store or on the developer's website. Confirm operating-system support and whether the player has an independent fee. A download button alone does not confirm compatibility."},
             {"heading": "Keep help specific", "body": "For setup questions, give support the app name and version rather than just saying IPTV. Use the central applications guide as a starting point, and never enter your service details into a lookalike app sent by an unknown contact."},
@@ -311,9 +311,9 @@
         },
         {
           "slug": "setup",
-          "title": "Your Opplex order-to-setup checklist",
-          "description": "Move from a confirmed Opplex order to device preparation with a clear setup checklist and central support.",
-          "intro": "A useful setup checklist starts with the order, not a random player setting. Check that you are looking at the right purchase and the right device, then follow the applicable guide through the central customer portal.",
+          "title": "Opplex IPTV setup: check your order, device and player",
+          "description": "Follow the Opplex IPTV setup checklist to confirm order status, prepare your device and player, and find the applicable guide in your customer account.",
+          "intro": "Begin your Opplex IPTV setup by checking the order in your central account. Confirm the selected plan and visible status, then prepare the exact device and player you will use. Keep the order reference handy when following the applicable setup guide or contacting support.",
           "sections": [
             {"heading": "Confirm the starting point", "body": "Review the order status and selected plan. Keep the reference available, update the device and check its connection. If the order is still unclear, ask support before making another payment or buying a second player licence."},
             {"heading": "Follow one guide at a time", "body": "Use instructions for your actual device and player version. Avoid combining steps from unrelated apps. If you reach an unexpected screen, record its wording and pause; your password or full payment details are not needed in a support message."},
@@ -367,9 +367,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Opplex guides for fewer loose ends",
-          "description": "Practical Opplex reading on keeping a playlist organised, checking playback methodically and following up on support.",
-          "intro": "Use these Opplex guides according to the step you are on: organise an existing player without losing its configuration, isolate a playback symptom, or follow up using the right order reference. Payment status and player behaviour are separate questions, so the guides keep their checks separate too.",
+          "title": "Opplex IPTV guides: playlists, playback and order help",
+          "description": "Read Opplex IPTV guides on playlist organisation, step-by-step playback checks and following up on an order or support conversation.",
+          "intro": "These Opplex IPTV guides connect everyday player use with the order information you may need for support. Tidy an existing playlist, check why playback has changed, or follow up with the right reference. Start with the guide that matches your current step.",
           "sections": [
             {"heading": "Start with the issue you have", "body": "Use the playlist article for an untidy player and the playback article for interruptions or quality questions. Neither requires you to buy another plan or experiment with unknown sources."},
             {"heading": "Keep account information private", "body": "The support article shows what is useful to share and what should stay private. All guides assume lawful, authorised use and the limits of your selected plan; they are not promises about title availability or a particular player's features."}
@@ -416,9 +416,9 @@
         },
         {
           "slug": "blogs/keep-your-playlist-organised",
-          "title": "Keep your playlist organised without starting over",
-          "description": "An Opplex guide to favourites, refreshes and safe changes that preserve a working player configuration.",
-          "intro": "When a player feels untidy, deleting everything is rarely the best first move. Begin by distinguishing an organisation problem from an access problem, and keep a private note of the working configuration before changing it.",
+          "title": "Opplex IPTV playlists: organise and refresh favourites",
+          "description": "Organise an Opplex IPTV playlist using favourites and careful refresh checks while keeping a record of the player settings that already work.",
+          "intro": "If your Opplex IPTV playlist is hard to browse, start with the player's favourites and sorting tools. Check whether entries are simply out of order or whether playback has stopped, then keep a private note of the working configuration before refreshing an import.",
           "sections": [
             {"heading": "Use the player's own organisation tools", "body": "If supported, group favourites or hide sections you do not use. Follow the developer's instructions rather than importing an unknown replacement list. Only use sources you are authorised to access."},
             {"heading": "Refresh with a purpose", "body": "After a documented refresh, check the specific item that prompted the change. If the result is unexpected, note the time and app version for support. A playlist address can contain private access information, so never post it publicly."},
@@ -428,9 +428,9 @@
         },
         {
           "slug": "blogs/a-step-by-step-playback-check",
-          "title": "A playback check that does not change everything at once",
-          "description": "Use a controlled Opplex troubleshooting sequence to separate network, player and source-related playback symptoms.",
-          "intro": "Reinstalling an app, restarting the router and changing settings together may hide the cause of a problem. A short sequence of controlled checks gives you and support a more useful picture of what is happening.",
+          "title": "Opplex IPTV not playing: step-by-step playback checks",
+          "description": "Check an Opplex IPTV playback problem methodically, keeping order status, network conditions, player behaviour and source symptoms separate.",
+          "intro": "When Opplex IPTV is not playing, record the error and confirm the order status before changing the player. Then compare the network, app and source one at a time. A controlled sequence makes it easier to explain the result when you contact support.",
           "sections": [
             {"heading": "Record the symptom first", "body": "Note whether you see a freeze, an error or a consistently soft picture. Check whether it affects one authorised source or several and whether ordinary internet use on the same device is stable."},
             {"heading": "Compare, then restore", "body": "Try one relevant change, such as comparing wired and wireless access where available. Keep the original setting so you can restore it. Send the results with your device and player version if the issue continues; repeated purchases are not a troubleshooting method."},
@@ -440,9 +440,9 @@
         },
         {
           "slug": "blogs/follow-up-with-the-right-order-details",
-          "title": "Follow up on an issue without losing the order context",
-          "description": "Keep an Opplex support conversation useful with an order reference, clear updates and careful handling of screenshots.",
-          "intro": "A support conversation becomes harder to follow when each reply begins a new story. Keeping the order reference and the current symptom together helps everyone see what changed since the last check.",
+          "title": "Opplex IPTV order support: follow up with clear details",
+          "description": "Follow up on an Opplex IPTV order or playback enquiry with the right reference, a clear progress update and carefully redacted screenshots.",
+          "intro": "Keep your Opplex IPTV order reference in the same support conversation as the current issue. Say which suggested check you tried and what changed afterward. That gives the next reply useful context without making you repeat the whole story.",
           "sections": [
             {"heading": "Give a concise update", "body": "Mention the reference, the last step you tried and the result. If the issue moved to another device or app version, say so. Distinguish a payment-status question from a playback problem."},
             {"heading": "Protect the private parts", "body": "Share the error message rather than a full account screen whenever possible. Hide credentials and payment information in screenshots. Never send a one-time code, and avoid opening duplicate enquiries just because you are waiting for a reply."},
@@ -481,9 +481,9 @@
         },
         {
           "slug": "faqs",
-          "title": "Geo answers about location, language and devices",
-          "description": "Understand Geo plan checks for regional availability, translated pages, device support and the shared checkout journey.",
-          "intro": "A translated page makes information easier to read, but it does not establish which services or features are available in a country. These are the distinctions worth checking before you choose a Geo plan.",
+          "title": "Geo IPTV FAQ: devices, languages and one connection",
+          "description": "Answers about Geo IPTV device checks, page and player languages, one simultaneous connection and what to confirm for your location before buying.",
+          "intro": "A Geo IPTV plan should be compared using the device, language controls and location where you will watch. These answers explain the one-connection limit and why translated pages, player menus and content availability are different details to check.",
           "sections": [
             {"heading": "Does my page language change the plan?", "body": "No. Read the selected package's current details. A translated interface does not promise matching audio, subtitles or a particular catalog."},
             {"heading": "Can I use it while travelling?", "body": "Do not assume access is valid in a different region. Check applicable restrictions, the plan terms and your circumstances with support before relying on it."},
@@ -516,9 +516,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Find a Geo player setup that fits your device and language",
-          "description": "Check player availability, language controls and official download sources before setting up a Geo plan.",
-          "intro": "The same app name can have different versions across devices and stores. Check the version available to you, including interface language and accessibility controls, before deciding that a player is suitable for your Geo setup.",
+          "title": "Geo IPTV player apps: compare device and language options",
+          "description": "Compare IPTV players for a Geo setup using the same device, app version, interface-language needs and accessibility controls.",
+          "intro": "Compare Geo IPTV player options on the device you actually own. Record the available app version, interface language and accessibility controls, then use the same requirements for each option. Store availability and supported versions can differ by device and location.",
           "sections": [
             {"heading": "Start with the supported version", "body": "Use the device's official store or the developer's own download information. Check operating-system requirements and any separate player fee. App availability in one country's store does not guarantee availability in another."},
             {"heading": "Do not confuse interface and content language", "body": "A translated menu does not add audio or subtitle tracks to a source. Confirm the features you need with the player developer and ask support about plan-specific questions. Avoid unknown installers or requests to bypass regional restrictions."},
@@ -528,9 +528,9 @@
         },
         {
           "slug": "setup",
-          "title": "A Geo setup checklist for your own circumstances",
-          "description": "Prepare a Geo device setup by checking location, software version, language controls and the central order status.",
-          "intro": "Start with the device and location where you actually intend to watch. Instructions for another region's app store or a different television model may not match what you see, even when the screenshots look similar.",
+          "title": "Geo IPTV setup: device, player and location checks",
+          "description": "Prepare a Geo IPTV setup with your exact device, local app-store version, player-language options and central order-status checks.",
+          "intro": "Prepare your Geo IPTV setup on the device and connection you intend to use regularly. Check the player version available in your local app store and the language controls you need. Instructions for another television model or store region may show different options.",
           "sections": [
             {"heading": "Check the local starting point", "body": "Confirm the plan's suitability for your location, update the device and verify the player version available through an official source. Review the order status in the shared account before troubleshooting access."},
             {"heading": "Record differences clearly", "body": "If a menu option is missing, note the app version and interface language. Follow the central guide for your actual device, and ask support about any mismatch. Do not change regional settings to evade a restriction or share private credentials in screenshots."},
@@ -584,9 +584,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Geo guides for clearer choices across languages",
-          "description": "Read Geo guides about playlist labels, comparing playback fairly and sending support requests with useful regional context.",
-          "intro": "Geo's guides help you make a fair comparison rather than collect unrelated speed results. Start with recognisable playlist labels, hold device and source details steady during playback checks, then use the regional-context template to explain the one difference you observed.",
+          "title": "Geo IPTV guides: playlist languages and playback comparisons",
+          "description": "Explore Geo IPTV guides for readable playlist labels, same-device playback comparisons and support reports with useful language and location details.",
+          "intro": "Use these Geo IPTV guides to compare what happens in your own setup. Make playlist labels easier to recognise, keep device and source details steady during playback checks, then report the difference with the relevant language and location context.",
           "sections": [
             {"heading": "Keep labels understandable", "body": "Start with the playlist guide when categories or translated names become confusing. The playback article then helps you compare behaviour without treating every difference as a connection-speed problem."},
             {"heading": "Explain the context safely", "body": "The support guide covers the useful details to include, such as device version and interface language. None of these articles promises availability in every country, includes a licensed catalog or encourages bypassing regional restrictions."}
@@ -633,9 +633,9 @@
         },
         {
           "slug": "blogs/make-playlist-labels-easier-to-follow",
-          "title": "Make playlist labels easier to follow across languages",
-          "description": "A Geo guide to organising authorised sources with readable favourites and avoiding confusion between translated labels and access.",
-          "intro": "A playlist can feel unfamiliar when labels use a different language or naming convention. Begin with the player's own display and favourites options rather than assuming you need a different source or a replacement account.",
+          "title": "Geo IPTV playlists: organise labels across languages",
+          "description": "Make a Geo IPTV playlist easier to follow with readable labels and favourites, while keeping display language separate from access permissions.",
+          "intro": "A Geo IPTV playlist may use labels that differ from your preferred interface language. Begin with the player's display and favourites controls so the entries you use are easy to recognise. Changing a label or a menu language does not change which sources you can access.",
           "sections": [
             {"heading": "Organise without changing permissions", "body": "If the player allows it, save a small favourites list with labels you recognise. Keep a private record of the original configuration before editing. Renaming a label does not alter rights, regional restrictions or what your plan includes."},
             {"heading": "Check changes against the source", "body": "Use documented refresh controls for sources you are authorised to access. If a label or group changes, note the player version and language for support. Never share a playlist address publicly; it may contain private access information."},
@@ -645,9 +645,9 @@
         },
         {
           "slug": "blogs/compare-playback-in-your-own-setup",
-          "title": "Compare playback in the setup you actually use",
-          "description": "A Geo guide to meaningful playback comparisons using the same device, source and network conditions.",
-          "intro": "A friend's smooth playback in another country does not tell you exactly what should happen on your device. A useful comparison keeps as many conditions as possible the same and records the details that differ.",
+          "title": "Geo IPTV playback checks: compare on the same device",
+          "description": "Compare Geo IPTV playback using the same device, source and network conditions so a buffering or picture-quality change has useful context.",
+          "intro": "For a useful Geo IPTV playback comparison, keep the device, player version and authorised source the same. Note whether the symptom is buffering, a picture change or an error, then vary one condition. A result from another setup cannot explain every difference on yours.",
           "sections": [
             {"heading": "Keep the comparison fair", "body": "Note your device, player version, connection type and the time of the issue. Check whether the symptom affects one authorised source or several. Do not compare different source resolutions as if they were the same test."},
             {"heading": "Avoid guesswork about restrictions", "body": "If availability changes with location, ask support to clarify the permitted use rather than trying to bypass a restriction. Report the exact message and relevant regional context, keeping credentials and personal network details out of public posts."},
@@ -657,9 +657,9 @@
         },
         {
           "slug": "blogs/send-support-the-right-regional-context",
-          "title": "Give support the regional context, not your whole life story",
-          "description": "Prepare a Geo support message with location, language and device details while avoiding unnecessary personal data.",
-          "intro": "A translated error or a region-specific app version can be the missing clue in a support enquiry. You can explain that context clearly without sending your full address or a screenshot filled with private information.",
+          "title": "Geo IPTV support: report device, language and location",
+          "description": "Prepare a Geo IPTV support report with the error, device and app version, plus relevant language or country details without exposing private information.",
+          "intro": "A useful Geo IPTV support report includes the error text and the device and player versions involved. Add your country or interface language when it explains what you see. You can provide that context without sharing your full address or private account information.",
           "sections": [
             {"heading": "Include the details that change the answer", "body": "State the country if relevant, device model, app version and interface language. Add the order reference and exact error text. If you translate the message yourself, include the original wording too where practical."},
             {"heading": "Keep the evidence focused", "body": "Crop a screenshot to the relevant screen and hide personal fields. List the checks already tried in the same conversation. Do not send passwords, one-time codes or payment-card data; those are not troubleshooting details."},
@@ -698,9 +698,9 @@
         },
         {
           "slug": "faqs",
-          "title": "5G Live questions about networks and everyday use",
-          "description": "Answers about the 5G Live brand, mobile data costs, connection limits and the central payment and account services.",
-          "intro": "A service plan and an internet connection are separate things. These answers help keep them distinct so you can judge a 5G Live package on its actual details rather than on assumptions about the brand name.",
+          "title": "5G Live IPTV FAQ: mobile data, Wi-Fi and one connection",
+          "description": "Answers about 5G Live IPTV subscriptions, one simultaneous connection, mobile-data costs and the checks to make when using Wi-Fi or mobile networks.",
+          "intro": "Before choosing a 5G Live IPTV subscription, separate the plan's one-connection allowance from your internet service and data charges. These answers cover Wi-Fi, mobile-network changes and the central account used to check an order.",
           "sections": [
             {"heading": "Do I need a 5G mobile connection?", "body": "The brand name does not specify a required network technology or guarantee coverage. Confirm the connection and device requirements for your intended use with support."},
             {"heading": "Is mobile data included?", "body": "No mobile-network allowance is promised here. Check data use, roaming and charges with your internet or mobile provider separately from the service plan."},
@@ -732,9 +732,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Choose a 5G Live player for the way you use your device",
-          "description": "Check official player downloads, mobile controls, data settings and separate licence fees before using a 5G Live plan.",
-          "intro": "A player that feels comfortable on a television may not suit a phone. Start with software supported on your actual device, then check its controls and connection settings rather than assuming every app behaves the same way.",
+          "title": "5G Live IPTV player apps: mobile controls and data settings",
+          "description": "Check IPTV player options for a 5G Live setup, including phone controls, mobile-data settings, device requirements and any separate app licence.",
+          "intro": "Choose a player for your 5G Live IPTV setup by checking the device you will use most. On a phone, review touch controls, documented data settings and battery behaviour; on a television, consider remote navigation. Confirm the app's requirements before installation.",
           "sections": [
             {"heading": "Install from a known source", "body": "Use the official app store or developer's published download. Check device-version support and any separate licence charge. A player purchase does not automatically include a 5G Live service plan."},
             {"heading": "Check mobile behaviour", "body": "Look for readable controls, rotation handling and any documented data-use settings. Your phone's battery and data restrictions may affect playback. Ask support about compatibility before entering account details, and avoid unofficial installers that request unnecessary access."},
@@ -744,9 +744,9 @@
         },
         {
           "slug": "setup",
-          "title": "Set up 5G Live with a stable starting connection",
-          "description": "Prepare a 5G Live device setup with order checks, connection awareness and safe troubleshooting on mobile or home networks.",
-          "intro": "Use a stable, familiar connection for the first setup if possible. Moving between Wi-Fi, mobile data and a hotspot during the same attempt can make it harder to understand why a screen or error changes.",
+          "title": "5G Live IPTV setup: Wi-Fi and mobile-network checks",
+          "description": "Prepare a 5G Live IPTV setup using a familiar connection, the correct device and player, and clear checks before switching between Wi-Fi and mobile data.",
+          "intro": "Begin your 5G Live IPTV setup on a familiar Wi-Fi or mobile connection and record which one you use. Confirm the device, player and order status before making changes. Keeping the first attempt consistent helps you explain any difference after a network switch.",
           "sections": [
             {"heading": "Prepare the device and order", "body": "Check the order in the central account, update the device and confirm the player version. Review any data limits with your provider before testing over mobile data; the service plan does not supply a network allowance."},
             {"heading": "Change one condition at a time", "body": "Follow the central guide for your device. If you compare networks, record which one produced the issue and respect any regional restrictions. Keep credentials private and send support the exact message rather than repeatedly resetting everything."},
@@ -800,9 +800,9 @@
         },
         {
           "slug": "blogs",
-          "title": "5G Live guides for changing connections and smaller screens",
-          "description": "Read 5G Live guides on manageable playlists, network-aware playback checks and useful support reports from mobile devices.",
-          "intro": "These 5G Live guides separate small-screen navigation from network-change troubleshooting. Keep a manageable favourites list, compare one permitted connection change at a time, then report the before-and-after conditions without sharing network credentials or assuming the 5G icon proves performance.",
+          "title": "5G Live IPTV guides: mobile playlists and network checks",
+          "description": "Read 5G Live IPTV guides for small-screen playlist organisation, playback checks after a Wi-Fi or mobile switch, and useful support reports.",
+          "intro": "These 5G Live IPTV guides focus on using a smaller screen and understanding connection changes. Start with playlist favourites, compare one permitted network change at a time, then report the before-and-after conditions. Check your data charges before testing on a mobile connection.",
           "sections": [
             {"heading": "Make everyday use simpler", "body": "The playlist guide focuses on a manageable selection, while the playback guide shows how to compare connections without changing everything at once. Neither promises that a new device or faster network label will solve every issue."},
             {"heading": "Send a useful report", "body": "The support article explains which mobile details help and which information should remain private. The advice assumes lawful access and your plan's limits; it does not supply content rights, a mobile data allowance or a universal compatibility guarantee."}
@@ -849,9 +849,9 @@
         },
         {
           "slug": "blogs/build-a-manageable-mobile-playlist",
-          "title": "Build a playlist that works on a smaller screen",
-          "description": "A 5G Live guide to readable favourites and safe playlist organisation on phones and portable devices.",
-          "intro": "A long list that is manageable with a television remote can feel awkward on a phone. Use the player's documented organisation tools to make navigation easier without replacing a working setup with unknown sources.",
+          "title": "5G Live IPTV playlists: organise favourites on mobile",
+          "description": "Organise a 5G Live IPTV playlist for a phone with readable favourites, practical touch-navigation checks and careful use of player settings.",
+          "intro": "Make your 5G Live IPTV playlist easier to use on a phone by keeping a short, readable favourites list. Test the player's touch controls and documented sorting options before changing a working import. A layout that suits a TV remote may need a different arrangement on mobile.",
           "sections": [
             {"heading": "Keep the first screen useful", "body": "If supported, save a small favourites list and check text size or orientation options. Only organise sources you are authorised to use; a renamed category does not change your plan allowance or access rights."},
             {"heading": "Refresh deliberately", "body": "Record the current configuration privately before changing it, then test one documented refresh. Avoid doing this while repeatedly switching networks. If the result is unexpected, note the device and player version, and keep playlist addresses out of public messages."},
@@ -861,9 +861,9 @@
         },
         {
           "slug": "blogs/check-playback-when-your-network-changes",
-          "title": "Check playback when your network changes",
-          "description": "A 5G Live guide to comparing Wi-Fi and mobile playback while keeping data costs and regional restrictions in mind.",
-          "intro": "A playback issue that appears after leaving home may have several causes. Start by noting the connection change rather than assuming the service or the phone needs replacing. Keep your provider's data and roaming charges in mind during tests.",
+          "title": "5G Live IPTV buffering? Check Wi-Fi and mobile changes",
+          "description": "Check 5G Live IPTV buffering or playback changes after switching networks, comparing Wi-Fi and mobile conditions while tracking data costs.",
+          "intro": "If 5G Live IPTV starts buffering after you leave Wi-Fi, record the mobile-network change and the exact symptom. Keep the player, device and source steady while making an allowed comparison. Review your provider's data and roaming charges before running further checks.",
           "sections": [
             {"heading": "Hold the other details steady", "body": "Use the same device, player version and authorised source when comparing connections. Note whether the issue is an error, interruption or quality change. A 5G icon alone does not measure stability or guarantee a particular speed."},
             {"heading": "Report the difference", "body": "Record which connection worked and when the problem occurred. Check documented battery or data restrictions without changing everything at once. If location restrictions may apply, ask support; do not attempt to bypass them or share private network credentials."},
@@ -873,9 +873,9 @@
         },
         {
           "slug": "blogs/report-a-mobile-playback-problem-clearly",
-          "title": "Report a mobile playback problem clearly",
-          "description": "Prepare a focused 5G Live support request with device, network type and error details while protecting private data.",
-          "intro": "A screenshot from a phone often contains more private information than intended. Before contacting support, write down the symptom and prepare only the details needed to understand it, keeping the order reference separate from any credentials.",
+          "title": "5G Live IPTV support: report a mobile playback problem",
+          "description": "Prepare a 5G Live IPTV support message with your phone, player version, Wi-Fi or mobile-network type and error details, keeping private data safe.",
+          "intro": "For a 5G Live IPTV mobile-playback enquiry, explain whether the problem started on Wi-Fi, mobile data or after switching between them. Add the phone model, player version and visible error. Keep your order reference separate from passwords and crop private details from screenshots.",
           "sections": [
             {"heading": "Describe the change that matters", "body": "Include the device model, player version and whether you were on Wi-Fi, mobile data or a hotspot. Say if the issue started after a network switch, an update or a setting change, and quote the exact error."},
             {"heading": "Keep the follow-up focused", "body": "List the checks already tried and crop screenshots to the relevant message. Never send passwords, verification codes, router credentials or card details. Reply in the same support conversation where practical so the earlier comparison is not lost."},

@@ -66,9 +66,9 @@
         },
         {
           "slug": "faqs",
-          "title": "Domande Trex prima di iniziare",
-          "description": "Risposte chiare su qualità, schermi simultanei e checkout Trex.",
-          "intro": "Conoscere i limiti rende più semplice scegliere. Queste verifiche riguardano una normale configurazione televisiva; per il tuo modello chiedi conferma all'assistenza.",
+          "title": "Trex IPTV 8K: domande su piani, schermi e connessioni",
+          "description": "Chiarisci risoluzione, una connessione simultanea e pagamento su Opplexify prima di scegliere il piano Trex IPTV 8K.",
+          "intro": "Prima di scegliere Trex IPTV 8K, distingui il nome della marca dalla risoluzione disponibile e controlla il limite di una connessione simultanea. Queste risposte spiegano anche perché il pagamento si apre su Opplexify.",
           "sections": [
             {
               "heading": "Il nome garantisce la risoluzione 8K?",
@@ -121,9 +121,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Scegliere il lettore adatto allo schermo Trex",
-          "description": "Controlla compatibilità e costi dell'app prima di installarla.",
-          "intro": "Il lettore è un programma, mentre il servizio è un acquisto distinto. Parti dal modello e dalla versione del sistema operativo che userai davvero.",
+          "title": "Trex IPTV 8K: scegliere un lettore per il tuo dispositivo",
+          "description": "Controlla versione, comandi e licenza di un'app IPTV prima di scegliere la configurazione Trex.",
+          "intro": "Il lettore IPTV è l'applicazione sul dispositivo; il piano Trex è un acquisto separato. Verifica modello e versione esatti, navigazione con il telecomando ed eventuale licenza prima di decidere.",
           "sections": [
             {
               "heading": "Scarica dalla fonte corretta",
@@ -142,9 +142,9 @@
         },
         {
           "slug": "setup",
-          "title": "Prepara Trex senza procedere per tentativi",
-          "description": "Una verifica ordinata di dispositivo, rete e ordine prima dell'assistenza.",
-          "intro": "Dedica qualche minuto alla preparazione del dispositivo. Un primo test semplice aiuta a distinguere problemi di rete, applicazione e stato dell'ordine.",
+          "title": "Trex IPTV 8K: prepara il dispositivo prima dell'abbonamento",
+          "description": "Verifica dispositivo, lettore, connessione e ordine prima di configurare Trex IPTV 8K o scegliere un anno.",
+          "intro": "Preparare Trex IPTV 8K parte dal televisore che possiedi. Controlla modello, lettore e stato dell'ordine prima di modificare impostazioni; questi passaggi aiutano a capire cosa chiarire prima di un impegno annuale.",
           "sections": [
             {
               "heading": "Controlla le basi",
@@ -231,9 +231,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Guide Trex per una configurazione più ordinata",
-          "description": "Articoli originali su liste autorizzate, controlli di riproduzione e assistenza.",
-          "intro": "Parti dalla guida alle playlist Trex se il telecomando rende difficile orientarsi, dalla catena di riproduzione se l'immagine si blocca o cambia, oppure dal modello di richiesta per l'assistenza. Sono controlli pratici per il tuo televisore, non prove che ogni dispositivo sia stato testato.",
+          "title": "Guide Trex IPTV 8K: dispositivo, playlist e riproduzione",
+          "description": "Consulta le guide Trex IPTV 8K per organizzare preferiti, verificare la riproduzione e preparare una richiesta di assistenza.",
+          "intro": "Scegli la guida Trex IPTV 8K secondo il problema: preferiti difficili da trovare, immagini che si interrompono o una richiesta di assistenza. Sono controlli per il tuo apparecchio, non prove che ogni dispositivo sia stato testato.",
           "sections": [
             {
               "heading": "Crea una base chiara",
@@ -299,9 +299,9 @@
         },
         {
           "slug": "blogs/prepare-a-clean-playlist",
-          "title": "Una playlist Trex in cui orientarsi davvero",
-          "description": "Organizza preferiti e sorgenti autorizzate senza perdere la configurazione funzionante.",
-          "intro": "Un lettore affollato può complicare una televisione semplice. Prima di cancellare voci, identifica la fonte autorizzata e annota le impostazioni in privato.",
+          "title": "Trex IPTV 8K: organizza playlist e preferiti sul televisore",
+          "description": "Organizza una playlist IPTV facile da usare con il telecomando senza perdere la configurazione Trex iniziale.",
+          "intro": "Una playlist IPTV disordinata può rendere scomodo il telecomando. Prima di cancellare elementi nella configurazione Trex, identifica la sorgente autorizzata e conserva i dati iniziali in privato; modifica poi soltanto l'organizzazione.",
           "sections": [
             {
               "heading": "Organizzare non amplia l'accesso",
@@ -320,12 +320,12 @@
         },
         {
           "slug": "blogs/check-your-playback-chain",
-          "title": "Controlla la catena Trex prima di accusare lo schermo",
-          "description": "Confronta sorgente, rete, lettore e display con verifiche controllate.",
-          "intro": "L'immagine è il risultato finale di più passaggi. Cambiarli tutti insieme rende quasi impossibile capire che cosa abbia aiutato.",
+          "title": "Trex IPTV 8K: controlla i problemi di riproduzione",
+          "description": "Distingui sorgente, connessione, lettore e schermo per esaminare le interruzioni nella configurazione Trex IPTV 8K.",
+          "intro": "Se la riproduzione Trex IPTV 8K si interrompe o l'immagine cambia, non modificare tutto insieme. Separa sorgente, rete, lettore e schermo per confrontare una condizione e spiegare il risultato all'assistenza.",
           "sections": [
             {
-              "heading": "Inizia da un confronto semplice",
+              "heading": "Verifica se il problema riguarda uno o più elementi",
               "body": "Verifica se il problema riguarda una sorgente autorizzata o più sorgenti. Confronta cavo e Wi-Fi sullo stesso dispositivo quando possibile. Un numero di velocità non descrive ogni interruzione."
             },
             {
@@ -341,12 +341,12 @@
         },
         {
           "slug": "blogs/write-a-useful-tv-support-request",
-          "title": "Una richiesta Trex che evita un altro giro di domande",
-          "description": "Descrivi dispositivo, errore e ordine con schermate che proteggono i dati.",
-          "intro": "Dire che non funziona esprime bene la frustrazione, ma lascia pochi elementi da verificare. Alcuni dettagli rendono lo stesso messaggio molto più utile.",
+          "title": "Assistenza Trex IPTV 8K: descrivi il problema del televisore",
+          "description": "Prepara una richiesta Trex IPTV 8K con modello, versione, errore e riferimento privato, usando un esempio senza dati sensibili.",
+          "intro": "Per spiegare un problema Trex IPTV 8K sul televisore, indica cosa tentavi e cosa è apparso. Modello, versione ed errore esatto aiutano più di un'immagine dell'intero account.",
           "sections": [
             {
-              "heading": "Individua il punto della difficoltà",
+              "heading": "Identifica il dispositivo e il passaggio che non funziona",
               "body": "Indica modello, versione del lettore e azione immediatamente precedente. Aggiungi riferimento e testo esatto dell'errore, precisando se si ripete sempre."
             },
             {
@@ -409,9 +409,9 @@
         },
         {
           "slug": "faqs",
-          "title": "Opplex spiegato: dal pacchetto all'account",
-          "description": "Risposte su prezzi correnti, pagamento centrale e compatibilità.",
-          "intro": "Le domande migliori si fanno prima della conferma. Ecco i punti che aiutano a capire cosa succede durante la scelta.",
+          "title": "Opplex IPTV: domande su checkout, app e connessioni",
+          "description": "Comprendi il passaggio a Opplexify, la licenza del lettore e una connessione simultanea nei piani Opplex IPTV.",
+          "intro": "Il piano Opplex IPTV, la licenza dell'app e la fase di pagamento hanno ruoli diversi. Queste risposte spiegano il checkout condiviso, i costi da distinguere e perché una durata più lunga non aggiunge connessioni simultanee.",
           "sections": [
             {
               "heading": "Perché il checkout cambia sito?",
@@ -464,9 +464,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Il lettore giusto per il tuo dispositivo Opplex",
-          "description": "Valuta modello e sistema operativo prima di installare un'app.",
-          "intro": "La scelta parte dall'apparecchio che vuoi usare ogni giorno, non dalla lista più lunga di lettori.",
+          "title": "Opplex IPTV: licenza del lettore e abbonamento al servizio",
+          "description": "Distingui un'app IPTV dal piano Opplex e verifica dispositivo, versione e metodo di configurazione.",
+          "intro": "L'applicazione IPTV e il servizio Opplex IPTV sono elementi distinti; la licenza dell'app va pagata solo se il suo fornitore la richiede. Prima di installare, verifica dispositivo, eventuale licenza separata e metodo di configurazione richiesto.",
           "sections": [
             {
               "heading": "Tre dettagli da raccogliere",
@@ -485,9 +485,9 @@
         },
         {
           "slug": "setup",
-          "title": "La prima configurazione Opplex in passi chiari",
-          "description": "Prepara dispositivo, rete e lettore per capire eventuali difficoltà.",
-          "intro": "Procedi dalle basi ai dettagli. Così una questione di rete non si confonde subito con un problema dell'ordine.",
+          "title": "Opplex IPTV: dall'ordine alla preparazione del dispositivo",
+          "description": "Controlla l'ordine Opplex IPTV e prepara il dispositivo prima di modificare il lettore o ripetere l'acquisto.",
+          "intro": "La configurazione Opplex IPTV inizia trovando l'ordine giusto nell'account centrale. Controlla stato e dispositivo prima della guida pertinente; un dubbio sul pagamento non si risolve acquistando di nuovo.",
           "sections": [
             {
               "heading": "Cambia un elemento alla volta",
@@ -574,9 +574,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Guide Opplex: una domanda pratica alla volta",
-          "description": "Leggi articoli su playlist, controlli di qualità e conversazioni con l'assistenza.",
-          "intro": "Scegli la guida Opplex in base alla fase: organizzare un lettore senza perdere la configurazione, isolare un sintomo o proseguire una richiesta con il riferimento corretto. Stato del pagamento e comportamento del lettore sono questioni distinte, e anche i loro controlli restano separati.",
+          "title": "Guide Opplex IPTV: lettore, ordine e assistenza",
+          "description": "Scegli una guida Opplex IPTV per organizzare playlist, isolare problemi di riproduzione o continuare una richiesta di aiuto.",
+          "intro": "Le guide Opplex IPTV separano i problemi del lettore dalle domande sull'ordine. Parti dalla playlist per orientarti, dalla riproduzione per un sintomo o dal seguito della richiesta se hai già contattato l'assistenza.",
           "sections": [
             {
               "heading": "Dalla preparazione all'uso",
@@ -642,9 +642,9 @@
         },
         {
           "slug": "blogs/keep-your-playlist-organised",
-          "title": "Ordina la playlist Opplex senza ricominciare",
-          "description": "Usa preferiti e aggiornamenti controllati preservando la configurazione funzionante.",
-          "intro": "Quando il lettore sembra disordinato, cancellare tutto non è il miglior primo passo. Distingui organizzazione e accesso prima di intervenire.",
+          "title": "Opplex IPTV: riordina la playlist senza perdere i dati",
+          "description": "Gestisci preferiti e aggiornamenti della playlist Opplex IPTV mantenendo configurazione e contesto dell'ordine.",
+          "intro": "Prima di riordinare una playlist IPTV usata con Opplex, distingui difficoltà di navigazione e problemi di accesso. Conserva le impostazioni in privato e usa gli strumenti del lettore senza iniziare un altro acquisto.",
           "sections": [
             {
               "heading": "Usa gli strumenti disponibili",
@@ -663,12 +663,12 @@
         },
         {
           "slug": "blogs/a-step-by-step-playback-check",
-          "title": "Un controllo Opplex senza cambiare tutto insieme",
-          "description": "Distingui rete, lettore e sorgente con prove ripetibili.",
-          "intro": "Reinstallare l'app, riavviare il router e cambiare impostazioni contemporaneamente può nascondere la causa. Una sequenza corta dà elementi migliori.",
+          "title": "Opplex IPTV non riproduce: controlli passo per passo",
+          "description": "Esamina un problema di riproduzione Opplex IPTV senza cambiare insieme applicazione, rete e contesto dell'ordine.",
+          "intro": "Se Opplex IPTV non riproduce come previsto, annota prima il sintomo. Modificare rete, app e impostazioni insieme nasconde cosa è cambiato; questa sequenza separa stato dell'ordine e comportamento del lettore.",
           "sections": [
             {
-              "heading": "Registra prima il sintomo",
+              "heading": "Annota il tipo di errore e gli elementi interessati",
               "body": "Descrivi blocco, errore o immagine poco definita. Verifica una o più fonti autorizzate e la stabilità del normale uso internet sullo stesso apparecchio."
             },
             {
@@ -684,12 +684,12 @@
         },
         {
           "slug": "blogs/follow-up-with-the-right-order-details",
-          "title": "Continua l'assistenza Opplex senza perdere l'ordine",
-          "description": "Mantieni il contesto con referenza, aggiornamenti brevi e immagini sicure.",
-          "intro": "La conversazione diventa difficile se ogni risposta inizia una storia diversa. Tieni insieme ordine e sintomo attuale per mostrare cosa è cambiato.",
+          "title": "Assistenza Opplex IPTV: segui la richiesta con l'ordine giusto",
+          "description": "Usa riferimento Opplex IPTV e un aggiornamento breve per spiegare un cambiamento senza esporre credenziali.",
+          "intro": "Per proseguire una richiesta Opplex IPTV, conserva il riferimento dell'ordine e descrivi l'ultimo cambiamento nella stessa conversazione. Distingui pagamento e lettore, inviando soltanto le informazioni necessarie.",
           "sections": [
             {
-              "heading": "Un aggiornamento essenziale",
+              "heading": "Riassumi l'ultima modifica e il risultato",
               "body": "Indica ultima prova e risultato. Segnala un altro dispositivo o versione dell'app. Separa il dubbio sul pagamento dal problema di riproduzione."
             },
             {
@@ -752,9 +752,9 @@
         },
         {
           "slug": "faqs",
-          "title": "Geo: domande su regione, schermi e pacchetti",
-          "description": "Verifica lingue, connessioni e importo con criteri confrontabili.",
-          "intro": "Il confronto è più utile quando poni le stesse domande a ciascun piano. Parti dall'utilizzo di tutti i giorni.",
+          "title": "Geo IPTV: domande su luogo, dispositivi e connessioni",
+          "description": "Chiarisci la connessione simultanea unica e le verifiche su luogo e dispositivo prima di scegliere Geo IPTV.",
+          "intro": "Una traduzione o un'altra app installata non cambia il limite di una connessione simultanea di Geo IPTV. Queste risposte chiariscono cosa controllare sul dispositivo e sul luogo d'uso, senza presumere disponibilità universale.",
           "sections": [
             {
               "heading": "Quanti schermi possono riprodurre insieme?",
@@ -803,9 +803,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Confronta i lettori Geo per ogni dispositivo",
-          "description": "Valuta compatibilità e licenze delle app schermo per schermo.",
-          "intro": "La stessa applicazione può non esistere su tutti gli apparecchi. Esamina televisore, telefono e altri dispositivi individualmente.",
+          "title": "Geo IPTV: confronta i lettori per dispositivo e lingua",
+          "description": "Confronta le app IPTV per versione, disponibilità, comandi e licenza, distinguendo lingua dell'interfaccia e contenuto.",
+          "intro": "Per confrontare lettori Geo IPTV usa gli stessi requisiti di dispositivo e funzioni. Una versione mobile può differire da quella per televisore; valuta ciascuna applicazione senza dedurne la compatibilità soltanto dal nome.",
           "sections": [
             {
               "heading": "Annota le basi",
@@ -824,9 +824,9 @@
         },
         {
           "slug": "setup",
-          "title": "Una configurazione Geo ordinata per schermo",
-          "description": "Prepara e prova ogni apparecchio distinguendo installazioni e connessioni consentite.",
-          "intro": "Un piccolo registro per dispositivo semplifica la configurazione di casa. Inizia da uno schermo e aggiungi gli altri dopo.",
+          "title": "Geo IPTV: prepara un confronto sul tuo dispositivo",
+          "description": "Crea una base di confronto Geo IPTV con lo stesso dispositivo, lettore, lingua e stato dell'ordine.",
+          "intro": "Prepara il controllo Geo IPTV nell'apparecchio e nel luogo che userai davvero. Annota versione e lingua, verifica l'ordine e mantieni queste condizioni quando confronti una modifica; un'altra installazione potrebbe non essere equivalente.",
           "sections": [
             {
               "heading": "Prova singolarmente",
@@ -913,9 +913,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Guide Geo per confrontare e organizzare meglio",
-          "description": "Articoli su nomi delle liste, prove nella tua configurazione e contesto regionale.",
-          "intro": "Le guide Geo aiutano a fare un confronto equo, non a raccogliere misurazioni di velocità scollegate. Parti da etichette riconoscibili, mantieni dispositivo e sorgente durante i controlli e usa il modello di contesto regionale per spiegare la differenza concreta osservata.",
+          "title": "Guide Geo IPTV: confronta la configurazione e gli errori",
+          "description": "Chiarisci le etichette, confronta la riproduzione in condizioni equivalenti e prepara una richiesta Geo IPTV contestualizzata.",
+          "intro": "Le guide Geo IPTV aiutano a confrontare ciò che accade sul tuo apparecchio. Riconosci le etichette, mantieni dispositivo e sorgente durante i controlli e descrivi la differenza osservata senza basarti su un'altra installazione.",
           "sections": [
             {
               "heading": "Scegli una verifica concreta",
@@ -981,9 +981,9 @@
         },
         {
           "slug": "blogs/make-playlist-labels-easier-to-follow",
-          "title": "Rendi più comprensibili i nomi delle playlist Geo",
-          "description": "Organizza fonti autorizzate in lingue diverse senza confondere etichette e accesso.",
-          "intro": "Una lista può sembrare estranea per la lingua dei nomi. Controlla prima visualizzazione e preferiti del lettore invece di cercare subito un'altra fonte.",
+          "title": "Geo IPTV: organizza etichette e preferiti tra lingue",
+          "description": "Rendi riconoscibili i nomi della playlist IPTV e confronta le lingue visualizzate senza sostituire una sorgente autorizzata.",
+          "intro": "Se le etichette della playlist Geo IPTV sono confuse, parti da lingua dell'interfaccia e preferiti del lettore. Un nome diverso non significa un altro accesso: conserva la configurazione prima di cambiare la presentazione.",
           "sections": [
             {
               "heading": "Nomi chiari, stessi diritti",
@@ -1002,12 +1002,12 @@
         },
         {
           "slug": "blogs/compare-playback-in-your-own-setup",
-          "title": "Confronta Geo nella configurazione che usi davvero",
-          "description": "Esegui prove utili mantenendo dispositivo, fonte e condizioni comparabili.",
-          "intro": "Una buona riproduzione di un amico in un altro paese non descrive il tuo apparecchio. Registra le differenze e mantieni uguali gli altri elementi.",
+          "title": "Geo IPTV: confronta la riproduzione sullo stesso dispositivo",
+          "description": "Confronta impostazione o connessione mantenendo dispositivo e sorgente per Geo IPTV, con una sola riproduzione alla volta.",
+          "intro": "Un confronto utile Geo IPTV mantiene sorgente autorizzata, dispositivo e versione del lettore. Cambia una condizione, ferma la sessione precedente e registra il risultato; l'esperienza di un altro apparecchio non prova la causa.",
           "sections": [
             {
-              "heading": "Una prova equa",
+              "heading": "Mantieni uguali dispositivo, sorgente e versione",
               "body": "Annota modello, versione, collegamento e ora. Verifica una o più fonti autorizzate. Non confrontare risoluzioni diverse come se fosse la stessa prova."
             },
             {
@@ -1023,12 +1023,12 @@
         },
         {
           "slug": "blogs/send-support-the-right-regional-context",
-          "title": "Fornisci all'assistenza Geo il contesto regionale giusto",
-          "description": "Prepara lingua, paese e dispositivo senza inviare dati personali inutili.",
-          "intro": "Un errore tradotto o una versione regionale dell'app può essere l'indizio mancante. Non serve condividere l'indirizzo completo per spiegarlo.",
+          "title": "Assistenza Geo IPTV: segnala lingua ed errore originale",
+          "description": "Prepara una richiesta Geo IPTV con versione, paese pertinente ed errore originale, senza indirizzo completo o credenziali.",
+          "intro": "Un errore Geo IPTV può apparire diverso secondo versione o lingua del lettore. Spiega quel contesto e il cambiamento osservato, includendo il testo originale quando possibile e senza dati estranei al problema.",
           "sections": [
             {
-              "heading": "Dettagli che influenzano la risposta",
+              "heading": "Includi versione, lingua e messaggio originale",
               "body": "Indica paese se pertinente, modello, versione e lingua dell'interfaccia. Aggiungi riferimento e testo esatto. Se traduci il messaggio, includi anche l'originale quando possibile."
             },
             {
@@ -1091,9 +1091,9 @@
         },
         {
           "slug": "faqs",
-          "title": "5G Live: domande senza confondere marchio e rete",
-          "description": "Chiarimenti su connessione mobile, stabilità e piani disponibili.",
-          "intro": "Un nome può suggerire aspettative da controllare. Queste risposte separano il marchio dal tuo accesso a internet.",
+          "title": "5G Live IPTV: domande su rete, dati e connessioni",
+          "description": "Distingui il marchio 5G Live IPTV dalla rete mobile e verifica costi dell'operatore e una connessione simultanea.",
+          "intro": "L'abbonamento 5G Live IPTV e l'accesso a internet sono servizi separati. Queste risposte chiariscono il nome della marca, i limiti di una misura di velocità e perché un altro lettore non aggiunge una connessione simultanea.",
           "sections": [
             {
               "heading": "Serve una SIM 5G?",
@@ -1146,9 +1146,9 @@
         },
         {
           "slug": "iptv-applications",
-          "title": "Scegli il lettore 5G Live pensando all'apparecchio",
-          "description": "Verifica compatibilità e licenze senza considerare una nuova app la soluzione a tutto.",
-          "intro": "Cambiare lettore non risolve ogni problema di collegamento. Parti dal modello e dalla versione che stai usando.",
+          "title": "5G Live IPTV: lettori mobili, dati e batteria",
+          "description": "Verifica compatibilità, licenza e impostazioni documentate di dati e batteria per l'app utilizzata con 5G Live IPTV.",
+          "intro": "Quando scegli un lettore IPTV per 5G Live, controlla l'apparecchio esatto e i comandi. Sul telefono consulta gli effetti di blocco schermo, batteria e dati mobili, senza disattivare le protezioni per impostazione predefinita.",
           "sections": [
             {
               "heading": "Collega software e configurazione",
@@ -1167,9 +1167,9 @@
         },
         {
           "slug": "setup",
-          "title": "Configurare 5G Live con una base stabile",
-          "description": "Prova dispositivo, rete e lettore con verifiche ripetibili.",
-          "intro": "Non cambiare tutte le opzioni alla prima difficoltà. Un controllo piccolo e ripetibile produce informazioni più chiare.",
+          "title": "5G Live IPTV: prepara la connessione Wi-Fi o mobile",
+          "description": "Prepara 5G Live IPTV con una connessione nota, ordine verificato e un cambio di rete alla volta, considerando i costi dati.",
+          "intro": "Inizia la configurazione 5G Live IPTV su una connessione nota e consentita. Controlla ordine e lettore prima di passare tra Wi-Fi, dati mobili o hotspot; diversi cambiamenti insieme rendono difficile il confronto.",
           "sections": [
             {
               "heading": "Inizia sullo stesso dispositivo",
@@ -1256,9 +1256,9 @@
         },
         {
           "slug": "blogs",
-          "title": "Guide 5G Live per miglioramenti controllabili",
-          "description": "Articoli su liste mobili, cambi di rete e richieste chiare.",
-          "intro": "Queste guide 5G Live separano la navigazione su schermi piccoli dai problemi legati al cambio di rete. Mantieni preferiti gestibili, confronta una connessione consentita alla volta e descrivi prima/dopo senza credenziali o assumere che l'icona 5G dimostri prestazioni.",
+          "title": "Guide 5G Live IPTV: playlist mobili e cambi di rete",
+          "description": "Consulta le guide 5G Live IPTV per navigare sul telefono, confrontare reti e descrivere un problema di riproduzione.",
+          "intro": "Le guide 5G Live IPTV separano due attività: usare una playlist su uno schermo piccolo e capire un cambio di connessione. Scegli un controllo e annota prima/dopo senza interpretare l'icona 5G come una garanzia.",
           "sections": [
             {
               "heading": "Scegli il primo controllo",
@@ -1324,9 +1324,9 @@
         },
         {
           "slug": "blogs/build-a-manageable-mobile-playlist",
-          "title": "Una playlist 5G Live adatta a uno schermo piccolo",
-          "description": "Crea preferiti leggibili senza sostituire fonti autorizzate con liste sconosciute.",
-          "intro": "Una lista comoda sul televisore può essere difficile sul telefono. Usa le funzioni documentate per rendere utile la prima schermata.",
+          "title": "5G Live IPTV: preferiti e playlist per schermi piccoli",
+          "description": "Organizza i preferiti e controlla le etichette sul telefono senza sostituire una configurazione IPTV conosciuta.",
+          "intro": "Una playlist 5G Live IPTV può essere difficile da usare sul telefono anche se funziona sul televisore. Regola preferiti e presentazione con i comandi documentati; l'organizzazione non amplia l'accesso né risolve da sola la riproduzione.",
           "sections": [
             {
               "heading": "Rendi riconoscibili le prime scelte",
@@ -1345,12 +1345,12 @@
         },
         {
           "slug": "blogs/check-playback-when-your-network-changes",
-          "title": "Controlla 5G Live quando cambia la connessione",
-          "description": "Confronta Wi-Fi e rete mobile tenendo presenti costi e limiti regionali.",
-          "intro": "Una difficoltà dopo essere uscito può avere diverse cause. Annota il cambio di collegamento prima di sostituire telefono o servizio e considera dati e roaming.",
+          "title": "5G Live IPTV: interruzioni passando da Wi-Fi a dati mobili",
+          "description": "Confronta errori o interruzioni IPTV dopo un cambio di rete mantenendo dispositivo e sorgente e controllando i costi.",
+          "intro": "Se compaiono pause o errori 5G Live IPTV dopo il passaggio da Wi-Fi a dati mobili, annota prima quel cambiamento. Mantieni dispositivo e sorgente per confrontare una condizione consentita alla volta, considerando consumo e roaming.",
           "sections": [
             {
-              "heading": "Mantieni uguale il resto",
+              "heading": "Mantieni dispositivo e sorgente nel confronto delle reti",
               "body": "Usa stesso dispositivo, app e fonte autorizzata. Descrivi errore, interruzione o qualità diversa. Il simbolo 5G non misura stabilità né garantisce una velocità."
             },
             {
@@ -1366,12 +1366,12 @@
         },
         {
           "slug": "blogs/report-a-mobile-playback-problem-clearly",
-          "title": "Segnala con chiarezza un problema mobile 5G Live",
-          "description": "Prepara modello, tipo di rete ed errore proteggendo i dati privati.",
-          "intro": "Una schermata del telefono può mostrare informazioni inattese. Scrivi prima il sintomo e tieni la referenza separata dalle credenziali.",
+          "title": "Assistenza 5G Live IPTV: descrivi il cambio di rete",
+          "description": "Prepara un rapporto 5G Live IPTV con connessione precedente e attuale, versione ed errore, senza credenziali o dati inutili.",
+          "intro": "Per spiegare un problema mobile 5G Live IPTV, indica la connessione prima e dopo e quando è apparso l'errore. Una descrizione breve del cambiamento aiuta più di un'immagine con tutti i dati del telefono.",
           "sections": [
             {
-              "heading": "Spiega il cambiamento rilevante",
+              "heading": "Descrivi le due connessioni e il sintomo",
               "body": "Indica dispositivo, versione e Wi-Fi, dati mobili o hotspot. Precisa se è iniziato dopo aggiornamento, impostazione o cambio rete, riportando l'errore esatto."
             },
             {
