@@ -1,0 +1,859 @@
+{
+  "locale": "en",
+  "labels": {
+    "home": "Home",
+    "pages": "Explore",
+    "packages": "Packages",
+    "account": "My Account",
+    "contact": "Contact",
+    "readMore": "Read the guide",
+    "backToGuides": "All guides",
+    "language": "Language",
+    "loading": "Loading the latest details…",
+    "unavailable": "The latest details are temporarily unavailable. Please try again or contact support.",
+    "retry": "Try again",
+    "choosePlan": "Choose this plan",
+    "setup": "Setup help",
+    "guide": "Practical guide",
+    "disclaimer": "Confirm your device, location and the selected plan before paying. Availability and performance can vary.",
+    "governingPolicy": "Read the central policy governing this service"
+  },
+  "brands": {
+    "trex": {
+      "name": "Trex IPTV 8K",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Trex IPTV 8K: start with the screen you already own",
+          "description": "Get to know Trex IPTV 8K, compare current plans and prepare a device-first setup with support through Opplex IPTV.",
+          "intro": "A good viewing setup starts with a few practical questions: which screen will you use, which player can it run, and what does the selected plan actually allow? Trex IPTV 8K brings those questions together before you reach checkout.",
+          "sections": [
+            {"heading": "A name is not a picture-quality promise", "body": "The 8K in our brand name does not mean every stream is available in 8K. The source, player, screen and connection all affect the picture you can receive."},
+            {"heading": "One connected service journey", "body": "Plan details come from the main Opplex IPTV system. Checkout continues on Opplexify, while account access and support stay with the central customer portal. You do not need a separate account for this landing site."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Talk through your Trex setup",
+          "description": "Ask about a Trex plan, device compatibility or an existing order using the shared Opplex support channels.",
+          "intro": "Not sure whether your television or streaming box is suitable? Tell us what you have before buying. A model number is more useful than a photograph of the whole room, and a short description usually gives support a better starting point.",
+          "sections": [
+            {"heading": "For a first enquiry", "body": "Include your device model, country and the plan you are considering. Ask us to confirm the details that matter to your setup; do not assume a feature is included because another player offers it."},
+            {"heading": "For an existing purchase", "body": "Use your order reference and describe the last step that worked. The contact form saves your enquiry in the shared Opplex system with your permission. Never send passwords, payment-card details or verification codes."}
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Trex questions before you press play",
+          "description": "Straightforward answers about Trex picture quality, player compatibility, simultaneous use and checkout.",
+          "intro": "It is easier to choose a plan when the limits are clear. These answers cover the questions that affect a typical television setup; support can check anything specific to your equipment or location.",
+          "sections": [
+            {"heading": "Will everything play in 8K?", "body": "No. Trex IPTV 8K is the brand name, not a guarantee of source resolution. A high-resolution screen cannot add detail that the source does not contain."},
+            {"heading": "Can I use several screens?", "body": "Follow the connection allowance shown for your chosen plan. Installing a player on several devices does not establish permission for simultaneous use."},
+            {"heading": "Why does checkout open Opplexify?", "body": "Opplexify handles the payment step for these plans. Review the selected service, amount and order details there before confirming; your customer account remains in the central Opplex portal."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Choose a Trex plan around your actual setup",
+          "description": "Compare live Trex plan prices, durations and device allowances from the central catalog, then continue to Opplexify.",
+          "intro": "Use this single package page to compare the Trex plans currently available. Rates and plan details are loaded from the main catalog, so the figures shown with each plan take priority over old screenshots or messages.",
+          "sections": [
+            {"heading": "Check the basics first", "body": "Match the device allowance to how you intend to watch. Confirm player compatibility and any location-specific limits before selecting a longer period; a longer duration does not change your equipment's capabilities."},
+            {"heading": "Review the payment screen", "body": "Your chosen package continues to Opplexify. Check its identity, duration, currency and total before paying. If the list cannot load, contact support rather than relying on an estimated price."}
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Trex reseller enquiries: define the service first",
+          "description": "Discuss a Trex reseller enquiry with clear questions about permissions, responsibilities and any available business arrangement.",
+          "intro": "A personal viewing plan is not a reseller agreement. If you are exploring a business arrangement around Trex, start with a discussion of what is available and what you would be responsible for, rather than purchasing a retail plan to redistribute.",
+          "sections": [
+            {"heading": "Bring a practical outline", "body": "Explain your market, expected support workload and the kind of customer service you intend to provide. Ask for written confirmation of permitted use, pricing and any account limits."},
+            {"heading": "Do not assume panel access", "body": "This page does not promise a reseller panel, credit balance or particular margin. Support must confirm any suitable arrangement separately. Retail prices and another provider's reseller rates are not a Trex business quotation."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Choose a player that suits your Trex screen",
+          "description": "Understand player selection for Trex, including device compatibility, official downloads and the difference between an app and a service plan.",
+          "intro": "An IPTV player is the software on your device; a service plan is a separate purchase. Before installing anything, check that the player supports your exact television, streaming box or operating-system version.",
+          "sections": [
+            {"heading": "Use a trustworthy download route", "body": "Start with your device's app store or the developer's own published download. Avoid lookalike installers and unsolicited activation offers. Some players have separate fees that are not automatically included in a service plan."},
+            {"heading": "Choose for everyday use", "body": "On a television, check remote navigation, readable text and accessibility options. On a smaller screen, look at controls and orientation. Ask support to confirm suitability before entering account information into an unfamiliar app."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Prepare your Trex device without the guesswork",
+          "description": "A device-first Trex setup checklist for checking software, network stability and order information before seeking help.",
+          "intro": "Set aside a few minutes to prepare the device before changing player settings. Keeping the first attempt simple makes it much easier to tell whether a problem comes from the network, the app or the order status.",
+          "sections": [
+            {"heading": "Check the foundations", "body": "Install available system updates, confirm the device has free storage and test its internet connection. If you can use a wired connection, compare it with Wi-Fi before moving equipment or buying extras."},
+            {"heading": "Keep a useful record", "body": "Note the player name and version, then keep your order reference available. Follow the central setup guide for your device. If something fails, record the exact message instead of repeatedly reinstalling the app or sharing private credentials."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Before choosing a film on your Trex screen",
+          "description": "A Trex viewing guide for checking lawful availability, playback options and accessibility without implying an included movie catalog.",
+          "intro": "A film poster or search result is not proof that a title is included in a plan. This page is a viewing guide, not a list of licensed titles or a promise that a particular film is available through Trex.",
+          "sections": [
+            {"heading": "Confirm the title and your region", "body": "Check availability through an authorised source and respect regional restrictions. Ask about any plan-specific detail before purchase, especially when one title is the main reason you are considering a service."},
+            {"heading": "Make the screen comfortable", "body": "Look for subtitle and audio options in the player you are using. If playback looks soft, check the actual source quality before changing the television's picture mode; a higher display setting cannot increase the source resolution."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "A sensible hardware shortlist for Trex",
+          "description": "Plan a Trex viewing setup with a hardware buying checklist instead of unverified products or unnecessary upgrades.",
+          "intro": "You may already own everything needed for a suitable setup. This is a hardware buying guide, not a stocked shop or a promise that a particular accessory will solve a playback problem.",
+          "sections": [
+            {"heading": "Find the weak point before spending", "body": "Check your current device's app support and update status. Test the connection where the screen actually sits. A new streaming box will not fix an unstable network, and a faster router will not make an unsupported app compatible."},
+            {"heading": "Compare the practical details", "body": "Look at Ethernet availability, remote accessibility, storage and the manufacturer's support policy. Confirm the seller's return terms separately. Ask support about the exact model you are considering rather than relying on a general compatibility claim."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Getting started after your Trex order",
+          "description": "Check your Trex purchase status and prepare the information needed for an activation enquiry through central support.",
+          "intro": "Finishing a payment screen and having a service ready to use are separate steps. First check the order status in your central account, then use the activation-help route if you need someone to review the next step.",
+          "sections": [
+            {"heading": "Match the purchase to your device", "body": "Keep the order reference, selected plan and device model together. An app's own activation or licence charge may be separate from your service purchase; do not pay an unfamiliar request without checking."},
+            {"heading": "Ask for a status check", "body": "Use the contact options on this site to reach the shared support team. Describe what the account currently shows. Sending an enquiry does not itself activate a service, and this page does not promise an activation time."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "What to include in a Trex activation enquiry",
+          "description": "Send a useful Trex activation request with your order reference, device and current status, without exposing credentials.",
+          "intro": "A clear activation enquiry gives support enough context to find the order without asking you to post sensitive information. Use the same purchase email where possible and explain the step you are trying to complete.",
+          "sections": [
+            {"heading": "The details that help", "body": "Provide the order reference, approximate purchase time, device model and player name. Quote the status or error shown on screen. If you attach an image, crop out private account fields and payment information."},
+            {"heading": "What not to send", "body": "Do not share your password, full payment-card number or one-time code. Contact permission covers this enquiry, not marketing. Support will review the request through the central Opplex system; submitting it is not confirmation that activation is complete."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Trex guides for a cleaner television setup",
+          "description": "Read practical Trex guides on organising a lawful playlist, checking the playback chain and writing useful support requests.",
+          "intro": "Small, reversible checks are often more useful than a long list of settings copied from somewhere else. These Trex guides focus on the equipment in front of you and on making changes you can understand and undo.",
+          "sections": [
+            {"heading": "Build a tidy starting point", "body": "Begin with the playlist guide if the player feels cluttered. The playback guide then helps you separate source quality from network and screen behaviour without making unsupported performance promises."},
+            {"heading": "Know when to ask", "body": "If the basics do not resolve the issue, the support guide helps you prepare a concise report. These articles are troubleshooting aids, not a guarantee of compatibility or permission to access material you are not authorised to use."}
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Trex purchasing and use: key terms",
+          "description": "Read a practical summary of the central Opplex service terms before purchasing a Trex plan or using shared account services.",
+          "intro": "Trex purchases use the shared Opplex service and account systems. This page summarises the central Terms of Service; read the linked full terms and the details shown at checkout before confirming an order.",
+          "sections": [
+            {"heading": "Your order and renewal", "body": "Provide accurate details and check the selected period and total on Opplexify. Plans do not renew automatically. At expiry, review the current offer and decide whether to purchase again."},
+            {"heading": "Responsible access", "body": "Keep credentials private and respect copyright, regional restrictions and the plan's limits. Retail access must not be modified, resold or redistributed. Misuse or fraud can lead to suspension or cancellation."},
+            {"heading": "Availability and liability", "body": "Device, network and third-party app conditions can affect use. Maintenance or technical downtime may occur. The central terms address indirect losses and cap liability at the subscription amount paid in the previous three months, subject to rights that applicable law does not allow to be excluded."},
+            {"heading": "Final sale and help", "body": "Once the price is agreed and the order confirmed, the purchase is final except where a refund is legally required. Review the refund policy and contact support if a term is unclear before paying."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "How Trex enquiries connect to your customer record",
+          "description": "Understand the Trex site's shared Opplex contact records, optional measurement, checkout handoff and third-party support services.",
+          "intro": "Trex is connected to the main Opplex customer system. This summary explains the information used along that journey; the linked central privacy policy provides the underlying policy information and contact route.",
+          "sections": [
+            {"heading": "When you ask for help", "body": "The contact form sends your name, email, phone and message to the shared Opplex system with your permission, together with the website source. Use it for the enquiry only; do not include passwords or payment secrets."},
+            {"heading": "Optional site measurement", "body": "The measurement choice is stored in your browser. When allowed, a session identifier and interactions such as checkout events can help connect visits with orders. You can change that choice through the privacy controls."},
+            {"heading": "Other services in the journey", "body": "Opening WhatsApp, Tawk live chat or Opplexify involves those services and their own privacy terms. Operational browsing information and cookies may also be used by the website and services you visit."},
+            {"heading": "Questions about your information", "body": "Contact the support email displayed from the main system for privacy questions. Enquiry consent is not permission for unrelated marketing. Do not send additional personal details unless they are needed to resolve your request."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Trex orders: check the refund terms before paying",
+          "description": "Understand the central final-sale policy for Trex digital orders, cancellation and refunds required by applicable law.",
+          "intro": "Please confirm compatibility, plan details and the price before completing a Trex purchase. The central Refund & Cancellation Policy, effective August 30, 2026, governs this digital-service purchase; this page is a practical summary.",
+          "sections": [
+            {"heading": "When a purchase becomes final", "body": "Once the price is agreed and the order confirmed, the purchase is final and non-refundable, except where applicable law requires a refund. This includes activated, partly used and unused periods, as well as promotional, setup and activation services."},
+            {"heading": "Stopping use", "body": "You may stop using the service, but that does not create a refund, credit or exchange entitlement for the current period. Customer-side device or internet problems do not create a refund under this policy. Non-excludable legal rights remain unaffected."},
+            {"heading": "A legally required refund", "body": "Email info@opplexiptv.com with the order details and reason for the request. Any required refund is returned to the original payment method within the period required by law or the payment provider. Digital delivery means no physical return is involved."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/prepare-a-clean-playlist",
+          "title": "Prepare a playlist you can actually navigate",
+          "description": "A Trex guide to organising authorised playlist sources, favourites and player settings without losing your starting point.",
+          "intro": "A crowded player can make a simple television setup feel complicated. Before deleting entries or changing import settings, identify the authorised source you are using and record the player's current configuration somewhere private.",
+          "sections": [
+            {"heading": "Separate organisation from access", "body": "Use favourites or hide categories if your player supports them. These changes help navigation; they do not grant access to additional material. Avoid importing unknown lists just to fill empty sections."},
+            {"heading": "Make one reversible change", "body": "Refresh through the player's documented controls, then check whether your existing selection still works. If entries disappear, note what changed before trying again. Never publish playlist addresses or account credentials in a public support forum."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/check-your-playback-chain",
+          "title": "Check the playback chain before blaming your screen",
+          "description": "Trace a Trex playback issue through the source, connection, player and screen with a few controlled checks.",
+          "intro": "The picture on your television is the end of a chain. Source quality, delivery, the player and the display each have a part in it. Changing all four at once makes a useful comparison almost impossible.",
+          "sections": [
+            {"heading": "Start with a simple comparison", "body": "Note whether the problem affects one authorised item or several. Test the connection near the viewing device, and compare wired access with Wi-Fi if available. A single speed reading does not describe every interruption."},
+            {"heading": "Keep the result, not just the setting", "body": "Try one documented player adjustment and note whether it helps. Revert it if it does not. Report persistent problems with the time, device and app version; a brand name or a display's advertised resolution is not a playback guarantee."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/write-a-useful-tv-support-request",
+          "title": "A short support request that saves another round of questions",
+          "description": "Prepare a useful Trex television support enquiry with device details, reproducible symptoms and a safe screenshot.",
+          "intro": "“It does not work” is a fair description of your frustration, but it leaves support with little to test. A few specific details can turn the same message into a much more useful starting point.",
+          "sections": [
+            {"heading": "Describe the point of failure", "body": "State your device model, player version and the action you took immediately before the problem. Include the order reference and exact error wording, along with whether the issue happens every time."},
+            {"heading": "Show only what is needed", "body": "Crop screenshots to the relevant message and hide account information. List the checks you already tried, then keep replies in the same conversation where possible. Never send a password, one-time code or full payment-card details."}
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "opplex": {
+      "name": "Opplex IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Opplex IPTV Store: a clearer route from plan to account",
+          "description": "Learn how Opplex IPTV Store connects plan selection, Opplexify checkout and the central customer portal.",
+          "intro": "Opplex IPTV Store is a focused starting point for choosing an Opplex plan and understanding what happens next. Instead of separate account systems for each stage, it connects to the main site's catalog, support and customer portal.",
+          "sections": [
+            {"heading": "Know which step you are on", "body": "Compare the current package here, review payment details on Opplexify and check the resulting order through the central account. If a step is unclear, ask before confirming rather than starting another purchase."},
+            {"heading": "Useful details over broad promises", "body": "The plan's displayed duration and allowance matter more than a headline. Confirm device compatibility and any important availability question in advance. Performance depends on the source, connection and equipment; this site does not promise uninterrupted playback."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Find the right help for your Opplex order",
+          "description": "Reach shared Opplex support for plan questions, order status or setup, with the information needed for a useful reply.",
+          "intro": "Tell us whether you are comparing plans, checking a payment or setting up a device. That small distinction helps support follow the right part of your journey instead of making you repeat the whole story.",
+          "sections": [
+            {"heading": "Before an order", "body": "Mention the plan you are viewing and what you need to confirm. Include your device model for compatibility questions. The figures on the current plan and final checkout screen should be checked before you pay."},
+            {"heading": "After an order", "body": "Use the purchase email and order reference, then describe the status you can see. With your consent, the form saves the enquiry in the main Opplex customer record. Keep passwords, full card numbers and verification codes out of the message."}
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Opplex Store questions, from checkout to renewal",
+          "description": "Answers about Opplexify payment, shared Opplex accounts, plan renewal and what to check before another purchase.",
+          "intro": "The store, checkout and customer portal have different jobs. Here is how they fit together, including the checks worth making before you purchase a plan or renew an existing one.",
+          "sections": [
+            {"heading": "Do I need another customer account?", "body": "Use the main Opplex customer portal rather than creating a separate store account. The account links on this site take you to that shared service."},
+            {"heading": "Will my plan renew by itself?", "body": "Plans do not renew automatically under the central service terms. When a period ends, review the current package and price before deciding to renew."},
+            {"heading": "What if a payment looks unfinished?", "body": "Check the order status and contact support with the reference before paying again. A redirect or an enquiry on its own is not proof that a payment succeeded or that the service is ready."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Opplex packages in one place",
+          "description": "View the current Opplex package catalog with live rates and plan details, then review your selection on Opplexify.",
+          "intro": "There is one package list here, not separate pricing and subscription pages showing competing figures. It reads the current Opplex plans from the main website so you can compare the actual duration, amount and allowance together.",
+          "sections": [
+            {"heading": "Choose the period you need", "body": "Consider how long you want access and confirm that your device and intended use fit the plan. Do not assume a longer period includes extra connections or a different set of features unless the current details say so."},
+            {"heading": "Keep the selection consistent", "body": "Continue to Opplexify and review the package and total there. If anything differs from your intended choice, stop before payment and ask support. Your shared customer account is the place to check the order afterwards."}
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Discuss an Opplex reseller arrangement",
+          "description": "Ask about an Opplex reseller arrangement separately from retail packages, with clear responsibilities and confirmed terms.",
+          "intro": "If your aim is to serve your own customers, begin with a business enquiry. A retail Opplex plan is intended for its permitted personal use and should not be treated as permission to resell or redistribute access.",
+          "sections": [
+            {"heading": "Clarify the responsibilities", "body": "Tell support how you would handle enquiries, setup and ongoing assistance. Ask which arrangements are currently available and what permissions, billing rules and account limits apply."},
+            {"heading": "Get the offer confirmed", "body": "A reseller panel, balance or credit rate is not promised by this page. Request the applicable written terms before paying for any business arrangement. Do not calculate margins from a retail package or assume another provider's panel uses the same rules."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Keep the Opplex plan and player app separate",
+          "description": "Understand how a player app differs from an Opplex service plan and how to check official downloads and device support.",
+          "intro": "It is easy to confuse an app purchase with a service purchase when both use the word activation. A player is the software that presents playback; your Opplex plan is a separate item with its own period and usage limits.",
+          "sections": [
+            {"heading": "Check before installing", "body": "Look up the exact player in your device's official store or on the developer's website. Confirm operating-system support and whether the player has an independent fee. A download button alone does not confirm compatibility."},
+            {"heading": "Keep help specific", "body": "For setup questions, give support the app name and version rather than just saying IPTV. Use the central applications guide as a starting point, and never enter your service details into a lookalike app sent by an unknown contact."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Your Opplex order-to-setup checklist",
+          "description": "Move from a confirmed Opplex order to device preparation with a clear setup checklist and central support.",
+          "intro": "A useful setup checklist starts with the order, not a random player setting. Check that you are looking at the right purchase and the right device, then follow the applicable guide through the central customer portal.",
+          "sections": [
+            {"heading": "Confirm the starting point", "body": "Review the order status and selected plan. Keep the reference available, update the device and check its connection. If the order is still unclear, ask support before making another payment or buying a second player licence."},
+            {"heading": "Follow one guide at a time", "body": "Use instructions for your actual device and player version. Avoid combining steps from unrelated apps. If you reach an unexpected screen, record its wording and pause; your password or full payment details are not needed in a support message."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Check movie availability before choosing a plan",
+          "description": "An Opplex guide to verifying a film's lawful availability and distinguishing discovery information from plan inclusions.",
+          "intro": "Finding information about a movie and having permission to watch it are different things. This page helps you ask the right questions; it does not publish a licensed catalog or state that any particular title is included in an Opplex plan.",
+          "sections": [
+            {"heading": "Make the question precise", "body": "If a film matters to your decision, identify its title and release year and check availability through an authorised source for your region. Do not infer access from a poster, recommendation or general search result."},
+            {"heading": "Check the viewing requirements", "body": "Consider language, subtitles and device support as well as picture quality. Those options depend on the lawful source and player. Ask before purchasing rather than assuming that another service's catalog or features carry over."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Plan your Opplex equipment purchase carefully",
+          "description": "An Opplex hardware guide to checking compatibility, player costs and seller terms before buying accessories.",
+          "intro": "Before buying a new device, separate the costs involved: hardware, any player licence and the service plan. This page is a purchasing checklist, not a claim that we stock a particular product or bundle another company's digital services.",
+          "sections": [
+            {"heading": "Check what your current device can do", "body": "Find its model number and available app store, then check support for the player you want. A software update or a simpler setup may be enough; do not assume new hardware is required."},
+            {"heading": "Review the seller's offer", "body": "Confirm warranty, return conditions and any recurring app charges with the relevant seller. Ask Opplex support about compatibility before purchase. Equipment bought elsewhere follows that seller's terms, not the digital-plan refund policy shown here."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Check the next step for your Opplex order",
+          "description": "Use the central Opplex account to check order status and request activation help without duplicating a payment.",
+          "intro": "If you have completed checkout, begin by checking the order in your central Opplex account. An activation enquiry is for clarifying what happens next; it is not a second checkout and does not itself confirm that access is ready.",
+          "sections": [
+            {"heading": "Keep purchase and setup in sequence", "body": "Review the order reference, plan and visible status. If payment appears pending or unclear, contact support before trying again. A player app may also have its own separate activation process."},
+            {"heading": "Ask about the specific missing step", "body": "Tell support whether you are waiting for an order update or encountering a device setup problem. Include the relevant reference, not private login details. The team can review the request; no activation deadline is promised on this page."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Send the right Opplex activation details",
+          "description": "Prepare an Opplex activation enquiry using the order reference and visible status while keeping payment and account secrets private.",
+          "intro": "Support can investigate more effectively when the enquiry points to one order and one unfinished step. Before sending a message, check the purchase email and note exactly what your account or device currently displays.",
+          "sections": [
+            {"heading": "A useful message structure", "body": "Start with the order reference, explain whether checkout completed, then add your device and player name if the problem is setup-related. Include the error wording and approximate time without pasting private service credentials."},
+            {"heading": "Keep the record together", "body": "Use the existing support conversation where possible so earlier checks remain visible. The form stores your enquiry in the shared customer system after consent. Do not send full card details or verification codes, and do not treat message delivery as an activation confirmation."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Opplex guides for fewer loose ends",
+          "description": "Practical Opplex reading on keeping a playlist organised, checking playback methodically and following up on support.",
+          "intro": "These guides focus on the handoffs that can otherwise become confusing: keeping a player organised, deciding what to test when playback changes, and explaining an issue to support without losing the order context.",
+          "sections": [
+            {"heading": "Start with the issue you have", "body": "Use the playlist article for an untidy player and the playback article for interruptions or quality questions. Neither requires you to buy another plan or experiment with unknown sources."},
+            {"heading": "Keep account information private", "body": "The support article shows what is useful to share and what should stay private. All guides assume lawful, authorised use and the limits of your selected plan; they are not promises about title availability or a particular player's features."}
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "The terms behind an Opplex Store order",
+          "description": "Review the central Opplex service terms covering purchases, renewals, account use, availability and legal refund rights.",
+          "intro": "The store connects you to the existing Opplex service rather than creating a separate set of purchase rules. Read the linked central Terms of Service alongside this summary and the final order details on Opplexify.",
+          "sections": [
+            {"heading": "Choosing and renewing a plan", "body": "Supply accurate information and review the selected period and price before payment. Plans do not renew automatically; you choose whether to buy again at the current terms and rate when access expires."},
+            {"heading": "Using your account", "body": "Protect login details, follow the plan limits and respect copyright and regional restrictions. Retail subscriptions must not be modified, resold or redistributed. Accounts involved in misuse or fraud may be suspended or cancelled."},
+            {"heading": "Service conditions", "body": "Maintenance, technical interruptions, your connection and third-party apps can affect use. The central terms exclude indirect or incidental losses and limit liability to the subscription amount paid in the last three months, insofar as applicable law permits."},
+            {"heading": "Before confirming", "body": "An agreed price and confirmed order make the purchase final, except for refunds required by law. Read the refund policy and ask support to clarify any unresolved question before paying. Non-excludable legal rights remain intact."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Your information across Opplex Store and the main account",
+          "description": "See how Opplex Store enquiries, optional measurement and checkout connect to the shared customer system and external services.",
+          "intro": "The store is one entry point into the main Opplex customer system. This summary describes that connection; consult the linked central privacy policy for the underlying policy and use the displayed support details for privacy questions.",
+          "sections": [
+            {"heading": "The enquiry you choose to send", "body": "After you give contact permission, the form sends your name, email, phone and message to the shared system with the source website. These details support the enquiry; permission to answer is not permission for unrelated marketing."},
+            {"heading": "Your measurement choice", "body": "Browser storage remembers whether you allow optional measurement. If enabled, a session identifier and activity events help connect visits, checkout and orders. The privacy controls let you change that choice."},
+            {"heading": "Following an external step", "body": "Opplexify processes the checkout journey, while WhatsApp and Tawk provide their respective contact services. Their policies apply when you use them. Operational usage information and cookies may be handled by the sites and services involved."},
+            {"heading": "Share only useful details", "body": "Keep passwords, one-time codes and payment secrets out of messages. Contact the main support email if you have a question about information associated with your order or enquiry."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Understand the Opplex final-sale policy",
+          "description": "A summary of Opplex digital-order refund and cancellation terms, including the legal rights that cannot be excluded.",
+          "intro": "Buying through this store follows the central Refund & Cancellation Policy dated August 30, 2026. Please read the linked full policy and settle questions about price, compatibility and the selected plan before payment.",
+          "sections": [
+            {"heading": "Confirmed digital purchases", "body": "Once the price is agreed and the order confirmed, purchases are final and non-refundable unless applicable law requires otherwise. The policy covers activated, partially used and unused periods, promotional packages, setup services and activations; it does not offer credits or exchanges for those periods."},
+            {"heading": "Cancellation and technical issues", "body": "Stopping use does not create a refund or credit for the current period. Customer-side compatibility or internet issues do not qualify under the policy. These terms do not remove any refund right that cannot lawfully be excluded."},
+            {"heading": "Requesting a legal review", "body": "Send the order details and reason to info@opplexiptv.com if you believe a refund is legally required. An approved legal refund returns to the original payment method within the applicable legal or provider timeframe. There are no physical returns for digitally delivered services."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/keep-your-playlist-organised",
+          "title": "Keep your playlist organised without starting over",
+          "description": "An Opplex guide to favourites, refreshes and safe changes that preserve a working player configuration.",
+          "intro": "When a player feels untidy, deleting everything is rarely the best first move. Begin by distinguishing an organisation problem from an access problem, and keep a private note of the working configuration before changing it.",
+          "sections": [
+            {"heading": "Use the player's own organisation tools", "body": "If supported, group favourites or hide sections you do not use. Follow the developer's instructions rather than importing an unknown replacement list. Only use sources you are authorised to access."},
+            {"heading": "Refresh with a purpose", "body": "After a documented refresh, check the specific item that prompted the change. If the result is unexpected, note the time and app version for support. A playlist address can contain private access information, so never post it publicly."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/a-step-by-step-playback-check",
+          "title": "A playback check that does not change everything at once",
+          "description": "Use a controlled Opplex troubleshooting sequence to separate network, player and source-related playback symptoms.",
+          "intro": "Reinstalling an app, restarting the router and changing settings together may hide the cause of a problem. A short sequence of controlled checks gives you and support a more useful picture of what is happening.",
+          "sections": [
+            {"heading": "Record the symptom first", "body": "Note whether you see a freeze, an error or a consistently soft picture. Check whether it affects one authorised source or several and whether ordinary internet use on the same device is stable."},
+            {"heading": "Compare, then restore", "body": "Try one relevant change, such as comparing wired and wireless access where available. Keep the original setting so you can restore it. Send the results with your device and player version if the issue continues; repeated purchases are not a troubleshooting method."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/follow-up-with-the-right-order-details",
+          "title": "Follow up on an issue without losing the order context",
+          "description": "Keep an Opplex support conversation useful with an order reference, clear updates and careful handling of screenshots.",
+          "intro": "A support conversation becomes harder to follow when each reply begins a new story. Keeping the order reference and the current symptom together helps everyone see what changed since the last check.",
+          "sections": [
+            {"heading": "Give a concise update", "body": "Mention the reference, the last step you tried and the result. If the issue moved to another device or app version, say so. Distinguish a payment-status question from a playback problem."},
+            {"heading": "Protect the private parts", "body": "Share the error message rather than a full account screen whenever possible. Hide credentials and payment information in screenshots. Never send a one-time code, and avoid opening duplicate enquiries just because you are waiting for a reply."}
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "geo": {
+      "name": "Geo IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Geo IPTV: check the details for where you watch",
+          "description": "Explore Geo IPTV with a focus on location, language preferences and device suitability, connected to the main Opplex customer system.",
+          "intro": "A plan that suits one household may not suit another. Geo IPTV puts practical questions about your location, preferred language and viewing device ahead of broad availability claims, so you can ask for the details that matter to you.",
+          "sections": [
+            {"heading": "Location is part of the setup", "body": "Regional restrictions, source availability and network conditions can differ. Confirm your intended use before purchasing; the Geo name is not a promise of access everywhere or permission to bypass restrictions."},
+            {"heading": "Shared services, a focused starting point", "body": "Current Geo plans come from the main Opplex catalog. Payment continues on Opplexify, and the central account handles your customer journey. The guides here help you prepare questions without inventing a separate support operation or service history."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Ask a location-specific Geo question",
+          "description": "Contact shared support about Geo plan suitability, language preferences or an existing order without sharing unnecessary personal data.",
+          "intro": "If you are unsure whether a plan fits your circumstances, describe where and how you intend to use it. Country and device model are a useful starting point; you do not need to provide your home address for a general compatibility question.",
+          "sections": [
+            {"heading": "Make the requirement clear", "body": "Tell support which Geo plan you are considering and whether language, subtitles or a particular device feature matters. Ask for confirmation rather than assuming that an option available elsewhere is included."},
+            {"heading": "For an order already placed", "body": "Add the order reference and the status or message you see. With your permission, the enquiry is saved in the shared Opplex system. Do not send passwords, card details, verification codes or more personal information than the question needs."}
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Geo answers about location, language and devices",
+          "description": "Understand Geo plan checks for regional availability, translated pages, device support and the shared checkout journey.",
+          "intro": "A translated page makes information easier to read, but it does not establish which services or features are available in a country. These are the distinctions worth checking before you choose a Geo plan.",
+          "sections": [
+            {"heading": "Does my page language change the plan?", "body": "No. Read the selected package's current details. A translated interface does not promise matching audio, subtitles or a particular catalog."},
+            {"heading": "Can I use it while travelling?", "body": "Do not assume access is valid in a different region. Check applicable restrictions, the plan terms and your circumstances with support before relying on it."},
+            {"heading": "Where do payment and support happen?", "body": "The selected package continues to Opplexify for checkout. Account and support links use the main Opplex system, so you do not need a separate Geo customer account."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Compare the current Geo packages",
+          "description": "Read live Geo plan prices and allowances, confirm suitability for your location and continue to Opplexify checkout.",
+          "intro": "This is the single package page for Geo. The plans below come from the main catalog, with their current duration, price and allowance. Use those details to compare your options rather than an old offer found elsewhere.",
+          "sections": [
+            {"heading": "Check suitability as well as price", "body": "Confirm your device, intended location and any essential language or accessibility requirement. Neither a longer period nor a translated page guarantees additional features or availability."},
+            {"heading": "Review the exact selection", "body": "The chosen package moves to Opplexify for payment. Check the service identity, currency and total before confirming. If live details fail to load, ask support to clarify the current offer instead of using an assumed price."}
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Geo business enquiries across different markets",
+          "description": "Discuss a possible Geo reseller arrangement with attention to local requirements, permitted use and support responsibilities.",
+          "intro": "Serving customers in a particular market involves more than translating a sales page. If you are interested in a Geo business arrangement, ask what is available and clarify the permissions and responsibilities before making any commitment.",
+          "sections": [
+            {"heading": "Explain the market you intend to serve", "body": "Outline the countries, languages and support coverage you have in mind. Confirm applicable regional and copyright restrictions rather than assuming a retail plan allows redistribution."},
+            {"heading": "Request a specific agreement", "body": "This page does not offer a guaranteed reseller panel, wholesale rate or margin. Support must confirm any available arrangement in writing. Another brand's reseller pricing is not a Geo offer, and personal access must not be resold without an appropriate agreement."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Find a Geo player setup that fits your device and language",
+          "description": "Check player availability, language controls and official download sources before setting up a Geo plan.",
+          "intro": "The same app name can have different versions across devices and stores. Check the version available to you, including interface language and accessibility controls, before deciding that a player is suitable for your Geo setup.",
+          "sections": [
+            {"heading": "Start with the supported version", "body": "Use the device's official store or the developer's own download information. Check operating-system requirements and any separate player fee. App availability in one country's store does not guarantee availability in another."},
+            {"heading": "Do not confuse interface and content language", "body": "A translated menu does not add audio or subtitle tracks to a source. Confirm the features you need with the player developer and ask support about plan-specific questions. Avoid unknown installers or requests to bypass regional restrictions."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "A Geo setup checklist for your own circumstances",
+          "description": "Prepare a Geo device setup by checking location, software version, language controls and the central order status.",
+          "intro": "Start with the device and location where you actually intend to watch. Instructions for another region's app store or a different television model may not match what you see, even when the screenshots look similar.",
+          "sections": [
+            {"heading": "Check the local starting point", "body": "Confirm the plan's suitability for your location, update the device and verify the player version available through an official source. Review the order status in the shared account before troubleshooting access."},
+            {"heading": "Record differences clearly", "body": "If a menu option is missing, note the app version and interface language. Follow the central guide for your actual device, and ask support about any mismatch. Do not change regional settings to evade a restriction or share private credentials in screenshots."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Movie discovery is not the same as regional availability",
+          "description": "A Geo guide to checking authorised movie availability, language and subtitle options in your region.",
+          "intro": "The title of a film may travel easily between languages, while its lawful availability does not. This guide is not an included Geo movie catalog and does not claim rights to show any particular title.",
+          "sections": [
+            {"heading": "Identify the version you mean", "body": "Use the film's release year as well as its title when checking an authorised source. Remakes, translated titles and alternate editions can otherwise lead to the wrong result."},
+            {"heading": "Check language and location together", "body": "Audio and subtitle options can vary by source and region. Confirm those details before relying on a plan for a particular viewing choice. A poster, translated description or recommendation is not evidence that access is included, and regional restrictions should be respected."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Buying a device for Geo: check the regional details",
+          "description": "A practical Geo hardware guide covering local app support, accessible controls and seller terms without claiming inventory.",
+          "intro": "A device advertised online may not offer the same app store or support in your country. This is a hardware checklist, not a product inventory, so use it to ask better questions before paying a seller.",
+          "sections": [
+            {"heading": "Look beyond the model name", "body": "Check the exact regional model, supported apps, language options and manufacturer's update policy. If you need larger text, captions or particular remote controls, verify those features on the version being sold."},
+            {"heading": "Keep purchases separate", "body": "Hardware warranties and returns belong to the relevant seller. A player may carry its own charge, separate from your Geo plan. Confirm compatibility with support before purchase rather than expecting an imported device or a translated menu to guarantee access."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Follow your Geo order into setup",
+          "description": "Check a Geo order in the central customer portal and request activation help with the right device and location context.",
+          "intro": "After checkout, check your Geo order through the shared customer account. If the next step is unclear, ask for a review of that order rather than starting a new purchase or following unrelated activation instructions.",
+          "sections": [
+            {"heading": "Use the current order status", "body": "Keep the reference and selected plan available. Describe what the portal shows and which device you will use. If your location has changed, ask support whether that affects the permitted setup."},
+            {"heading": "Separate the app from the service", "body": "An app's own licence or activation screen may not refer to your Geo purchase. Check before paying another charge. A support enquiry helps clarify the process but does not automatically activate access or guarantee a completion time."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Give Geo support the context they need",
+          "description": "Prepare a Geo activation enquiry with order, device and language details while limiting unnecessary personal information.",
+          "intro": "When the screen you see differs from the guide, the version and language can explain a lot. Send those details with your order reference so support can understand the specific step you are trying to complete.",
+          "sections": [
+            {"heading": "Describe the screen accurately", "body": "Include the order reference, device model, player version and the exact message. Mention the interface language and country if relevant to availability; a full home address is not needed for a general setup question."},
+            {"heading": "Keep sensitive fields out", "body": "Crop account details from images and never send passwords, card information or one-time codes. After consent, the enquiry goes into the main Opplex customer system. A successfully sent message confirms receipt of the enquiry, not completion of activation."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Geo guides for clearer choices across languages",
+          "description": "Read Geo guides about playlist labels, comparing playback fairly and sending support requests with useful regional context.",
+          "intro": "Different menu languages and regional versions can make simple instructions harder to follow. The Geo guides concentrate on identifying what is actually on your screen and making comparisons that are relevant to your own setup.",
+          "sections": [
+            {"heading": "Keep labels understandable", "body": "Start with the playlist guide when categories or translated names become confusing. The playback article then helps you compare behaviour without treating every difference as a connection-speed problem."},
+            {"heading": "Explain the context safely", "body": "The support guide covers the useful details to include, such as device version and interface language. None of these articles promises availability in every country, includes a licensed catalog or encourages bypassing regional restrictions."}
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Geo service terms and regional responsibilities",
+          "description": "Review the central Opplex terms that apply to Geo purchases, including responsible use, renewal and non-excludable legal rights.",
+          "intro": "Geo connects to the main Opplex service and its central Terms of Service. This page highlights practical points; the linked full terms and your checkout details should be read before agreeing to a purchase.",
+          "sections": [
+            {"heading": "A plan is a defined purchase", "body": "Give accurate information and review the period and total on Opplexify. Plans do not renew automatically; any later renewal is your choice at the then-current offer."},
+            {"heading": "Your location and permitted use", "body": "Respect copyright, regional restrictions and account limits. Keep credentials secure. Retail access must not be altered, resold or redistributed, and misuse or fraud can result in suspension or cancellation."},
+            {"heading": "Limits and interruptions", "body": "Availability can depend on device, connection and third-party apps, and maintenance or technical interruptions may occur. The central terms address indirect losses and limit liability to the subscription amount paid in the preceding three months, only where applicable law allows."},
+            {"heading": "Confirm with the refund rules in mind", "body": "Once the price is agreed and the order confirmed, the purchase is final unless a refund is required by law. Read the refund policy; nothing here removes rights that cannot legally be excluded."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Geo privacy: useful context without unnecessary details",
+          "description": "Learn how Geo contact information and optional activity measurement connect to the central Opplex system and external support services.",
+          "intro": "A location or language question should not require you to overshare. This summary explains the shared data journey on Geo; the linked central Opplex privacy policy remains available for the underlying policy and contact information.",
+          "sections": [
+            {"heading": "Contact information", "body": "With your permission, the form sends name, email, phone and message to the main customer system with the source site. Include country or device details only when useful. Enquiry permission does not authorise unrelated marketing."},
+            {"heading": "Optional activity measurement", "body": "Your browser remembers the measurement choice. When enabled, a session identifier and activity events can connect visits and checkout with orders. Change that choice using the privacy controls; it is separate from consent to answer an enquiry."},
+            {"heading": "Services you open", "body": "WhatsApp, Tawk and Opplexify have their own roles and privacy terms when you use chat or checkout. The websites and services involved may handle operational browsing information and cookies."},
+            {"heading": "Keep the message proportionate", "body": "Do not include a home address, identity document or sensitive account information unless specifically needed through an appropriate channel. Passwords and verification codes should never be sent in a support message. Privacy questions can go to the main support email."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Geo refunds: the policy and your legal rights",
+          "description": "Understand Geo digital-order cancellation and final-sale terms without losing sight of refunds required by applicable law.",
+          "intro": "Confirm your location, device and essential requirements before buying a Geo plan. The central Refund & Cancellation Policy, effective August 30, 2026, applies; this summary does not replace the linked full policy or non-excludable legal rights.",
+          "sections": [
+            {"heading": "The final-sale point", "body": "An agreed price and confirmed order make the purchase final and non-refundable unless the law requires a refund. The policy includes activated, partially used and unused periods, promotions, setup and activation services, without credits or exchanges for those periods."},
+            {"heading": "Changes of plan or circumstances", "body": "You may stop using the service, but cancellation does not itself create a refund or credit. Device incompatibility or customer-side internet problems do not qualify under the policy. Applicable rights that cannot be excluded still apply."},
+            {"heading": "How to raise a legal entitlement", "body": "Contact info@opplexiptv.com with your order details and reason. A refund required by law is returned to the original payment method within the legal or payment-provider timeframe. As delivery is digital, no physical return is required."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/make-playlist-labels-easier-to-follow",
+          "title": "Make playlist labels easier to follow across languages",
+          "description": "A Geo guide to organising authorised sources with readable favourites and avoiding confusion between translated labels and access.",
+          "intro": "A playlist can feel unfamiliar when labels use a different language or naming convention. Begin with the player's own display and favourites options rather than assuming you need a different source or a replacement account.",
+          "sections": [
+            {"heading": "Organise without changing permissions", "body": "If the player allows it, save a small favourites list with labels you recognise. Keep a private record of the original configuration before editing. Renaming a label does not alter rights, regional restrictions or what your plan includes."},
+            {"heading": "Check changes against the source", "body": "Use documented refresh controls for sources you are authorised to access. If a label or group changes, note the player version and language for support. Never share a playlist address publicly; it may contain private access information."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/compare-playback-in-your-own-setup",
+          "title": "Compare playback in the setup you actually use",
+          "description": "A Geo guide to meaningful playback comparisons using the same device, source and network conditions.",
+          "intro": "A friend's smooth playback in another country does not tell you exactly what should happen on your device. A useful comparison keeps as many conditions as possible the same and records the details that differ.",
+          "sections": [
+            {"heading": "Keep the comparison fair", "body": "Note your device, player version, connection type and the time of the issue. Check whether the symptom affects one authorised source or several. Do not compare different source resolutions as if they were the same test."},
+            {"heading": "Avoid guesswork about restrictions", "body": "If availability changes with location, ask support to clarify the permitted use rather than trying to bypass a restriction. Report the exact message and relevant regional context, keeping credentials and personal network details out of public posts."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/send-support-the-right-regional-context",
+          "title": "Give support the regional context, not your whole life story",
+          "description": "Prepare a Geo support message with location, language and device details while avoiding unnecessary personal data.",
+          "intro": "A translated error or a region-specific app version can be the missing clue in a support enquiry. You can explain that context clearly without sending your full address or a screenshot filled with private information.",
+          "sections": [
+            {"heading": "Include the details that change the answer", "body": "State the country if relevant, device model, app version and interface language. Add the order reference and exact error text. If you translate the message yourself, include the original wording too where practical."},
+            {"heading": "Keep the evidence focused", "body": "Crop a screenshot to the relevant screen and hide personal fields. List the checks already tried in the same conversation. Do not send passwords, one-time codes or payment-card data; those are not troubleshooting details."}
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "5g": {
+      "name": "5G Live IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "5G Live IPTV: make the connection part of the conversation",
+          "description": "Learn about 5G Live IPTV with practical guidance for mobile and home connections and a shared Opplex customer journey.",
+          "intro": "A familiar phone, a home screen and a changing network can produce very different viewing experiences. 5G Live IPTV helps you consider the device and connection together before choosing a plan, without treating a network label as a guarantee.",
+          "sections": [
+            {"heading": "What the name does not promise", "body": "5G Live IPTV is a brand, not a mobile network operator or a guarantee of 5G coverage, speed or uninterrupted playback. Your provider, signal, data allowance and equipment still matter."},
+            {"heading": "A shared route to purchase and help", "body": "Plan details are supplied by the main Opplex catalog, payment continues on Opplexify and account support stays central. These pages help you make a considered choice without requiring a separate customer account for this site."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Tell 5G Live support how you are connecting",
+          "description": "Ask about a 5G Live plan or playback issue with useful device and connection details through the shared support team.",
+          "intro": "If your question concerns playback on a phone or hotspot, tell support which connection you are using. “Mobile data” or “home Wi-Fi” is a useful distinction; private router passwords and full network credentials are not.",
+          "sections": [
+            {"heading": "Before choosing a plan", "body": "Mention the device, intended location and plan you are considering. Ask about the displayed allowance and compatibility, and check mobile data charges with your own network provider."},
+            {"heading": "When something changes", "body": "Add the order reference, player version and whether the symptom began after switching networks. The form saves your enquiry in the shared Opplex system with consent. Keep passwords, card details and verification codes out of the conversation."}
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "5G Live questions about networks and everyday use",
+          "description": "Answers about the 5G Live brand, mobile data costs, connection limits and the central payment and account services.",
+          "intro": "A service plan and an internet connection are separate things. These answers help keep them distinct so you can judge a 5G Live package on its actual details rather than on assumptions about the brand name.",
+          "sections": [
+            {"heading": "Do I need a 5G mobile connection?", "body": "The brand name does not specify a required network technology or guarantee coverage. Confirm the connection and device requirements for your intended use with support."},
+            {"heading": "Is mobile data included?", "body": "No mobile-network allowance is promised here. Check data use, roaming and charges with your internet or mobile provider separately from the service plan."},
+            {"heading": "Can I switch between screens?", "body": "Follow the selected plan's allowance and permitted use. Several installed apps do not automatically mean simultaneous access. Checkout is on Opplexify, and the main Opplex portal handles your account."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Select a 5G Live plan with the right allowance",
+          "description": "Compare live 5G Live IPTV package rates and details from the main catalog, then review the order on Opplexify.",
+          "intro": "All current 5G Live packages appear on this one page. Their price, duration and allowance are read from the central catalog. The service purchase is separate from any mobile data, broadband or player-app charge.",
+          "sections": [
+            {"heading": "Think about your usual connection", "body": "Confirm device suitability and check data costs with your network provider. A longer plan does not improve signal strength, remove roaming charges or promise a particular source quality."},
+            {"heading": "Double-check before paying", "body": "Your selection continues to Opplexify. Review the plan identity, currency and final total, then use the central account to follow the order. If current package details are unavailable, ask support instead of relying on a remembered rate."}
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "A 5G Live business enquiry starts with clear boundaries",
+          "description": "Ask about any available 5G Live reseller arrangement without confusing retail access with permission to redistribute.",
+          "intro": "If you want to support customers rather than buy a personal plan, explain that intention before purchasing. A retail 5G Live package does not by itself provide resale rights, a management panel or permission to share access.",
+          "sections": [
+            {"heading": "Describe the service you would provide", "body": "Outline your customers' likely devices, connection types and support needs. Ask which business arrangements, if any, are available and what responsibilities and restrictions would apply."},
+            {"heading": "Keep the offer specific", "body": "Support must confirm any pricing, panel access or credit terms separately. This page does not promise a margin or mobile-network service. Do not use another provider's reseller rate as a 5G Live quotation or redistribute a personal account."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Choose a 5G Live player for the way you use your device",
+          "description": "Check official player downloads, mobile controls, data settings and separate licence fees before using a 5G Live plan.",
+          "intro": "A player that feels comfortable on a television may not suit a phone. Start with software supported on your actual device, then check its controls and connection settings rather than assuming every app behaves the same way.",
+          "sections": [
+            {"heading": "Install from a known source", "body": "Use the official app store or developer's published download. Check device-version support and any separate licence charge. A player purchase does not automatically include a 5G Live service plan."},
+            {"heading": "Check mobile behaviour", "body": "Look for readable controls, rotation handling and any documented data-use settings. Your phone's battery and data restrictions may affect playback. Ask support about compatibility before entering account details, and avoid unofficial installers that request unnecessary access."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Set up 5G Live with a stable starting connection",
+          "description": "Prepare a 5G Live device setup with order checks, connection awareness and safe troubleshooting on mobile or home networks.",
+          "intro": "Use a stable, familiar connection for the first setup if possible. Moving between Wi-Fi, mobile data and a hotspot during the same attempt can make it harder to understand why a screen or error changes.",
+          "sections": [
+            {"heading": "Prepare the device and order", "body": "Check the order in the central account, update the device and confirm the player version. Review any data limits with your provider before testing over mobile data; the service plan does not supply a network allowance."},
+            {"heading": "Change one condition at a time", "body": "Follow the central guide for your device. If you compare networks, record which one produced the issue and respect any regional restrictions. Keep credentials private and send support the exact message rather than repeatedly resetting everything."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Plan a movie session without assuming the data or the title",
+          "description": "A 5G Live viewing guide to lawful movie availability, mobile data considerations and practical playback checks.",
+          "intro": "Before settling in for a film, check two separate things: whether an authorised source offers it in your region and whether your connection suits the session. This page is a guide, not an included 5G Live movie catalog.",
+          "sections": [
+            {"heading": "Confirm access first", "body": "A film mentioned in an article or shown in a search result is not proof that it belongs to your plan. Verify the title and any language or subtitle requirement through an authorised source."},
+            {"heading": "Know the connection cost", "body": "If you use mobile data, check your provider's allowance and roaming terms. Keep the device powered and use the player's documented options where available. Neither a 5G signal icon nor the brand name promises a specific picture quality."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Useful equipment checks for a 5G Live setup",
+          "description": "A 5G Live hardware buying guide covering power, connectivity and device support without claiming stocked products or guaranteed fixes.",
+          "intro": "An accessory is worth buying only when it addresses a real need. This page is a buying guide, not a product catalog or an assurance that a new hotspot, cable or streaming device will improve your service.",
+          "sections": [
+            {"heading": "Identify the practical need", "body": "Check whether your issue is power, device compatibility, unstable Wi-Fi or something else. Confirm official support before buying adapters or a new screen; an advertised network speed says little about your actual coverage."},
+            {"heading": "Read the separate terms", "body": "Review warranty and return conditions with the hardware seller, and data charges with your network provider. Player licences can also be separate purchases. Ask support about the exact device you intend to use before spending on an assumed solution."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Start your 5G Live order on the right footing",
+          "description": "Check a 5G Live order and ask for activation help through the shared Opplex account and support services.",
+          "intro": "Once checkout is finished, look at the order in the central customer portal before beginning setup. If the status is unclear, request a review rather than paying again or following a different app's activation instructions.",
+          "sections": [
+            {"heading": "Keep the reference handy", "body": "Note the selected package, order reference and device you plan to use. A player licence and a mobile data plan are separate from the service order, even if each uses similar activation wording."},
+            {"heading": "Use support for the missing step", "body": "Explain whether the issue is the order status or a screen on the device. Sending an activation enquiry does not automatically enable access or promise an immediate response. Never include private account or payment credentials in the message."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "A useful 5G Live activation message",
+          "description": "Include the right order, device and connection details in a 5G Live activation enquiry while protecting private information.",
+          "intro": "An activation question is easier to investigate when it describes the step that stopped, not just the result. Keep the order reference beside the device details and explain whether you were using Wi-Fi or mobile data.",
+          "sections": [
+            {"heading": "Send the relevant context", "body": "Include the purchase reference, approximate time, player version and exact message. If the problem appeared after a network switch, mention that change. There is no need to share a Wi-Fi password or private router configuration."},
+            {"heading": "Protect account and payment information", "body": "Hide personal fields in screenshots and never send passwords, one-time codes or full card details. Consent lets the shared Opplex system store and handle this enquiry. Message delivery is not confirmation of payment or completed service activation."}
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "5G Live guides for changing connections and smaller screens",
+          "description": "Read 5G Live guides on manageable playlists, network-aware playback checks and useful support reports from mobile devices.",
+          "intro": "Watching on a phone or a portable setup brings its own small decisions: readable navigation, data use, battery settings and the connection available at the time. These guides help you keep those decisions separate and understandable.",
+          "sections": [
+            {"heading": "Make everyday use simpler", "body": "The playlist guide focuses on a manageable selection, while the playback guide shows how to compare connections without changing everything at once. Neither promises that a new device or faster network label will solve every issue."},
+            {"heading": "Send a useful report", "body": "The support article explains which mobile details help and which information should remain private. The advice assumes lawful access and your plan's limits; it does not supply content rights, a mobile data allowance or a universal compatibility guarantee."}
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "5G Live plan terms and connection responsibilities",
+          "description": "Read a summary of the central Opplex terms for 5G Live purchases, renewal, account use and applicable legal rights.",
+          "intro": "5G Live orders follow the main Opplex Terms of Service. This overview helps distinguish the service purchase from your device, player and internet connection; review the linked full terms and Opplexify order details before payment.",
+          "sections": [
+            {"heading": "The purchase you confirm", "body": "Provide accurate information and check the plan period and total. Plans do not renew automatically. You decide whether to purchase again at the current offer when the period ends; no mobile data allowance is promised here."},
+            {"heading": "Permitted account use", "body": "Keep credentials secure, respect copyright and regional restrictions, and follow plan limits. Do not modify, resell or redistribute retail access. Misuse or fraud may lead to suspension or cancellation."},
+            {"heading": "Factors outside the plan", "body": "Connection, device and third-party app conditions can affect playback, and technical or maintenance interruptions may occur. The central terms address indirect losses and cap liability at the subscription amount paid in the last three months, subject to applicable law."},
+            {"heading": "Final-sale rules", "body": "Once the price is agreed and the order confirmed, the purchase is final except where a refund is legally required. Read the refund policy before paying. Nothing in this summary removes rights that cannot lawfully be excluded."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "5G Live privacy from your browser to support",
+          "description": "Understand 5G Live enquiry records, optional measurement choices and the external services used for chat and checkout.",
+          "intro": "Your phone may move between networks, but you should still know where an enquiry goes. This page summarises the shared Opplex data journey; read the linked central privacy policy for the underlying policy and contact details.",
+          "sections": [
+            {"heading": "Details submitted for help", "body": "With contact consent, your name, email, phone and message are sent to the main customer system together with the source website. Include only useful setup information. Consent to an enquiry does not give permission for unrelated marketing."},
+            {"heading": "Remembering your choice", "body": "Browser storage records whether optional measurement is allowed. When enabled, a session identifier and interaction events can help connect site visits, checkout and orders. You can revisit the privacy controls to change this choice."},
+            {"heading": "Chat and payment services", "body": "WhatsApp, Tawk and Opplexify handle their respective stages under their own privacy terms. Operational browsing data and cookies may also be handled by the websites and services used during the journey."},
+            {"heading": "Private network and account details", "body": "Do not send router passwords, account credentials, one-time codes or payment secrets to describe a connection problem. Direct privacy questions to the main support email shown on the site."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Check 5G Live cancellation and refund conditions",
+          "description": "Read the central final-sale rules for 5G Live digital orders, with the exception for refunds required by applicable law.",
+          "intro": "Before purchasing, check your device, connection arrangements and selected plan. 5G Live orders use the central Refund & Cancellation Policy effective August 30, 2026; the linked full policy should be read alongside this summary.",
+          "sections": [
+            {"heading": "A confirmed order is final", "body": "Once the price is agreed and the order confirmed, the purchase is final and non-refundable unless applicable law requires a refund. Activated, partly used and unused periods, promotional offers, setup and activation services are covered without refunds, credits or exchanges under the policy."},
+            {"heading": "Stopping or losing a connection", "body": "You can stop using the service, but that does not create a refund or credit entitlement. Customer-side internet or device incompatibility issues do not qualify under the policy. Non-excludable legal refund rights are preserved."},
+            {"heading": "Submitting a legal refund request", "body": "Email info@opplexiptv.com with the reference and reason if you believe the law requires a refund. Any required refund goes to the original payment method within the legal or provider timeframe. No physical return applies to digitally delivered services."}
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/build-a-manageable-mobile-playlist",
+          "title": "Build a playlist that works on a smaller screen",
+          "description": "A 5G Live guide to readable favourites and safe playlist organisation on phones and portable devices.",
+          "intro": "A long list that is manageable with a television remote can feel awkward on a phone. Use the player's documented organisation tools to make navigation easier without replacing a working setup with unknown sources.",
+          "sections": [
+            {"heading": "Keep the first screen useful", "body": "If supported, save a small favourites list and check text size or orientation options. Only organise sources you are authorised to use; a renamed category does not change your plan allowance or access rights."},
+            {"heading": "Refresh deliberately", "body": "Record the current configuration privately before changing it, then test one documented refresh. Avoid doing this while repeatedly switching networks. If the result is unexpected, note the device and player version, and keep playlist addresses out of public messages."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/check-playback-when-your-network-changes",
+          "title": "Check playback when your network changes",
+          "description": "A 5G Live guide to comparing Wi-Fi and mobile playback while keeping data costs and regional restrictions in mind.",
+          "intro": "A playback issue that appears after leaving home may have several causes. Start by noting the connection change rather than assuming the service or the phone needs replacing. Keep your provider's data and roaming charges in mind during tests.",
+          "sections": [
+            {"heading": "Hold the other details steady", "body": "Use the same device, player version and authorised source when comparing connections. Note whether the issue is an error, interruption or quality change. A 5G icon alone does not measure stability or guarantee a particular speed."},
+            {"heading": "Report the difference", "body": "Record which connection worked and when the problem occurred. Check documented battery or data restrictions without changing everything at once. If location restrictions may apply, ask support; do not attempt to bypass them or share private network credentials."}
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/report-a-mobile-playback-problem-clearly",
+          "title": "Report a mobile playback problem clearly",
+          "description": "Prepare a focused 5G Live support request with device, network type and error details while protecting private data.",
+          "intro": "A screenshot from a phone often contains more private information than intended. Before contacting support, write down the symptom and prepare only the details needed to understand it, keeping the order reference separate from any credentials.",
+          "sections": [
+            {"heading": "Describe the change that matters", "body": "Include the device model, player version and whether you were on Wi-Fi, mobile data or a hotspot. Say if the issue started after a network switch, an update or a setting change, and quote the exact error."},
+            {"heading": "Keep the follow-up focused", "body": "List the checks already tried and crop screenshots to the relevant message. Never send passwords, verification codes, router credentials or card details. Reply in the same support conversation where practical so the earlier comparison is not lost."}
+          ],
+          "kind": "article"
+        }
+      ]
+    }
+  }
+}

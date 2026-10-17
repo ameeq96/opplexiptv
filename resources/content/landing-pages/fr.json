@@ -1,0 +1,1363 @@
+{
+  "locale": "fr",
+  "labels": {
+    "home": "Accueil",
+    "pages": "Explorer",
+    "packages": "Formules",
+    "account": "Mon compte",
+    "contact": "Contact",
+    "readMore": "Lire le guide",
+    "backToGuides": "Tous les guides",
+    "language": "Langue",
+    "loading": "Chargement des dernières informations…",
+    "unavailable": "Les informations actuelles sont temporairement indisponibles. Réessayez ou contactez l’assistance.",
+    "retry": "Réessayer",
+    "choosePlan": "Choisir cette formule",
+    "setup": "Aide à l’installation",
+    "guide": "Guide pratique",
+    "disclaimer": "Confirmez votre appareil, votre pays et la formule choisie avant de payer. La disponibilité et les performances peuvent varier.",
+    "governingPolicy": "Lire la politique centrale qui régit ce service"
+  },
+  "brands": {
+    "trex": {
+      "name": "Trex IPTV 8K",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Trex IPTV 8K : partez de l’écran que vous possédez",
+          "description": "Découvrez Trex IPTV 8K, ses offres actuelles et une installation adaptée à votre appareil, avec l’assistance Opplex IPTV.",
+          "intro": "Quel écran utiliserez-vous, quel lecteur accepte-t-il et que permet votre formule ? Trex IPTV 8K vous aide à vérifier ces points avant de passer commande.",
+          "sections": [
+            {
+              "heading": "Le nom ne garantit pas la résolution",
+              "body": "La mention 8K appartient au nom de la marque : elle ne signifie pas que tous les flux sont proposés en 8K. La source, le lecteur, l’écran et la connexion déterminent la qualité reçue."
+            },
+            {
+              "heading": "Un parcours relié au service central",
+              "body": "Les offres proviennent du système Opplex IPTV. Le paiement se poursuit sur Opplexify ; le compte et l’assistance restent accessibles dans le portail central. Aucun compte distinct n’est nécessaire ici."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Parlons de votre installation Trex",
+          "description": "Contactez l’assistance commune pour une question sur Trex, la compatibilité de votre appareil ou une commande.",
+          "intro": "Avant d’acheter, indiquez le téléviseur ou le boîtier que vous comptez utiliser. Sa référence exacte et une courte description aideront davantage l’assistance qu’une photo générale de votre pièce.",
+          "sections": [
+            {
+              "heading": "Pour une première demande",
+              "body": "Précisez le modèle, votre pays et la formule envisagée. Faites confirmer les fonctions importantes : leur présence dans un autre lecteur ne signifie pas qu’elles sont incluses."
+            },
+            {
+              "heading": "Pour une commande existante",
+              "body": "Joignez la référence de commande et la dernière étape réussie. Avec votre accord, le formulaire enregistre la demande dans le système Opplex commun. N’envoyez ni mot de passe, ni données de carte bancaire, ni code de vérification."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Les réponses Trex avant de lancer la lecture",
+          "description": "Comprenez la résolution Trex, les lecteurs compatibles, les connexions simultanées et le parcours de paiement.",
+          "intro": "Connaître les limites facilite le choix d’une formule. Ces réponses concernent une installation sur téléviseur ; l’assistance peut examiner les particularités de votre équipement ou de votre pays.",
+          "sections": [
+            {
+              "heading": "Tout sera-t-il diffusé en 8K ?",
+              "body": "Non. Trex IPTV 8K est un nom de marque, pas une garantie de résolution. Un écran haute définition ne peut pas ajouter les détails absents de la source."
+            },
+            {
+              "heading": "Puis-je utiliser plusieurs écrans ?",
+              "body": "Respectez le nombre de connexions autorisées par la formule. Installer un lecteur sur plusieurs appareils n’autorise pas nécessairement leur utilisation simultanée."
+            },
+            {
+              "heading": "Pourquoi payer sur Opplexify ?",
+              "body": "Opplexify assure l’étape du paiement. Vérifiez le service choisi, le montant et la commande avant confirmation. Votre compte reste dans le portail Opplex central."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Choisissez une formule Trex adaptée à votre installation",
+          "description": "Comparez les tarifs Trex actuels, les durées et les appareils autorisés dans le catalogue central, puis passez sur Opplexify.",
+          "intro": "Cette page rassemble les formules Trex disponibles. Les prix et caractéristiques sont chargés depuis le catalogue principal : ils priment sur une ancienne capture d’écran ou un ancien message.",
+          "sections": [
+            {
+              "heading": "Vérifiez les points essentiels",
+              "body": "Le nombre d’appareils autorisés doit correspondre à votre usage. Confirmez le lecteur et les éventuelles restrictions géographiques avant de choisir une longue durée ; celle-ci ne modifie pas les capacités de votre matériel."
+            },
+            {
+              "heading": "Relisez le récapitulatif",
+              "body": "Sur Opplexify, contrôlez la formule, sa durée, la devise et le total avant de payer. Si la liste ne se charge pas, demandez le prix actuel à l’assistance."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Devenir revendeur Trex : précisez d’abord votre projet",
+          "description": "Posez vos questions sur les autorisations, responsabilités et éventuels accords commerciaux Trex.",
+          "intro": "Une formule personnelle ne constitue pas un contrat de revente. Pour un projet commercial Trex, commencez par discuter des possibilités et de vos responsabilités avant tout achat destiné à une redistribution.",
+          "sections": [
+            {
+              "heading": "Présentez votre activité prévue",
+              "body": "Décrivez votre marché, la charge d’assistance envisagée et les services proposés à vos clients. Demandez une confirmation écrite des usages autorisés, des tarifs et des limites de compte."
+            },
+            {
+              "heading": "Faites confirmer les conditions commerciales",
+              "body": "Cette page ne promet ni panneau de gestion, ni crédits, ni marge. L’assistance doit confirmer séparément tout accord possible. Un prix public ou le tarif d’un autre fournisseur ne vaut pas devis commercial Trex."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Un lecteur adapté à votre écran Trex",
+          "description": "Choisissez votre lecteur Trex en vérifiant les appareils compatibles, les téléchargements officiels et les frais distincts.",
+          "intro": "Le lecteur IPTV est le logiciel installé sur votre appareil ; la formule de service est un achat séparé. Vérifiez le modèle exact de votre téléviseur, boîtier ou système avant d’installer une application.",
+          "sections": [
+            {
+              "heading": "Téléchargez depuis une source fiable",
+              "body": "Utilisez la boutique officielle de l’appareil ou le site du développeur. Évitez les copies et les offres d’activation non sollicitées. Certains lecteurs facturent une licence qui n’est pas automatiquement incluse dans la formule."
+            },
+            {
+              "heading": "Vérifiez le confort d’utilisation",
+              "body": "Sur téléviseur, examinez la navigation à la télécommande, la lisibilité et l’accessibilité. Sur petit écran, vérifiez les commandes et l’orientation. Faites confirmer la compatibilité avant de saisir vos identifiants dans une application inconnue."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Préparez votre appareil Trex étape par étape",
+          "description": "Vérifiez le logiciel, la connexion et les informations de commande avant de demander de l’aide pour Trex.",
+          "intro": "Préparez d’abord l’appareil, puis les réglages du lecteur. Une première tentative simple aide à distinguer un problème de réseau, d’application ou de commande.",
+          "sections": [
+            {
+              "heading": "Contrôlez les bases techniques",
+              "body": "Installez les mises à jour disponibles, vérifiez l’espace libre et testez Internet. Si une connexion filaire est possible, comparez-la au Wi-Fi avant de déplacer le matériel ou d’acheter des accessoires."
+            },
+            {
+              "heading": "Conservez les informations utiles",
+              "body": "Notez le nom et la version du lecteur, gardez la référence de commande et suivez le guide central adapté à votre appareil. En cas d’échec, relevez le message exact plutôt que de réinstaller plusieurs fois ou de transmettre des identifiants privés."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Avant de choisir un film sur votre écran Trex",
+          "description": "Un guide Trex pour vérifier la disponibilité légale, les options de lecture et l’accessibilité d’un film.",
+          "intro": "Une affiche ou un résultat de recherche ne prouve pas qu’un film est compris dans votre formule. Ce guide ne présente ni catalogue sous licence ni garantie de disponibilité d’un titre sur Trex.",
+          "sections": [
+            {
+              "heading": "Confirmez le titre dans votre région",
+              "body": "Vérifiez sa disponibilité auprès d’une source autorisée et respectez les restrictions géographiques. Posez vos questions avant l’achat, surtout si un film précis motive votre choix."
+            },
+            {
+              "heading": "Adaptez le confort de lecture",
+              "body": "Recherchez les options de sous-titres et d’audio dans votre lecteur. Si l’image manque de netteté, contrôlez la qualité de la source : augmenter la résolution de l’écran ne crée pas de détails supplémentaires."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Bien choisir votre matériel pour Trex",
+          "description": "Préparez votre installation Trex avec des critères d’achat concrets et une vérification du matériel existant.",
+          "intro": "Vous possédez peut-être déjà le matériel nécessaire. Cette page est un guide d’achat ; elle ne représente pas un stock de produits et ne garantit pas qu’un accessoire résoudra un problème.",
+          "sections": [
+            {
+              "heading": "Identifiez le point faible",
+              "body": "Vérifiez les applications et mises à jour de l’appareil, puis la connexion à l’endroit où se trouve l’écran. Un nouveau boîtier ne répare pas un réseau instable ; un routeur plus rapide ne rend pas un lecteur compatible."
+            },
+            {
+              "heading": "Comparez les caractéristiques utiles",
+              "body": "Examinez Ethernet, la télécommande, le stockage et le suivi du fabricant. Vérifiez les retours auprès du vendeur et demandez à l’assistance de confirmer le modèle précis envisagé."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Les premières étapes après votre commande Trex",
+          "description": "Consultez votre commande Trex et préparez une demande d’aide à l’activation auprès de l’assistance centrale.",
+          "intro": "Terminer le paiement et disposer d’un service prêt à l’emploi sont deux étapes distinctes. Consultez d’abord l’état de la commande dans votre compte central, puis demandez une vérification si nécessaire.",
+          "sections": [
+            {
+              "heading": "Rapprochez la commande de l’appareil",
+              "body": "Conservez ensemble la référence, la formule et le modèle de l’appareil. L’activation ou la licence propre au lecteur peut être facturée séparément ; vérifiez toute demande de paiement inhabituelle."
+            },
+            {
+              "heading": "Demandez une vérification de l’état",
+              "body": "Utilisez les coordonnées du site pour joindre l’équipe commune et décrivez ce qu’affiche votre compte. L’envoi d’une demande n’active pas le service et cette page ne garantit aucun délai d’activation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Les informations utiles pour activer votre service Trex",
+          "description": "Préparez une demande Trex avec la référence de commande, l’appareil et l’état affiché, sans divulguer vos identifiants.",
+          "intro": "Une demande précise permet de retrouver votre commande sans publier d’informations sensibles. Utilisez si possible l’adresse électronique de l’achat et expliquez l’étape que vous cherchez à terminer.",
+          "sections": [
+            {
+              "heading": "Décrivez les éléments vérifiables",
+              "body": "Indiquez la référence, l’heure approximative de l’achat, le modèle et le lecteur. Recopiez le message ou l’état affiché. Masquez les champs privés et les données de paiement dans toute image jointe."
+            },
+            {
+              "heading": "Protégez vos données confidentielles",
+              "body": "Ne transmettez aucun mot de passe, numéro complet de carte ou code à usage unique. Votre accord concerne cette demande, pas la prospection. L’assistance utilise le système Opplex central ; l’envoi du formulaire ne confirme pas l’activation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Les guides Trex pour une installation plus claire",
+          "description": "Consultez les conseils Trex sur les listes autorisées, la chaîne de lecture et les demandes d’assistance.",
+          "intro": "De petites vérifications réversibles sont souvent plus utiles qu’une longue série de réglages copiés ailleurs. Ces guides Trex vous aident à comprendre les changements apportés à votre propre installation.",
+          "sections": [
+            {
+              "heading": "Retrouvez un point de départ ordonné",
+              "body": "Commencez par le guide des listes si le lecteur est encombré. Le guide de lecture vous aide ensuite à distinguer la qualité de la source du comportement du réseau et de l’écran, sans promesse de performance."
+            },
+            {
+              "heading": "Préparez une demande ciblée",
+              "body": "Si les vérifications de base ne suffisent pas, le guide d’assistance explique quoi transmettre. Ces articles ne garantissent pas la compatibilité et n’autorisent aucun accès à un contenu sans permission."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Achat et utilisation de Trex : les conditions essentielles",
+          "description": "Lisez le résumé des conditions Opplex applicables aux formules Trex et aux services de compte communs.",
+          "intro": "Les achats Trex utilisent les services et comptes Opplex communs. Ce résumé renvoie aux conditions générales centrales qui régissent le service ; consultez leur texte intégral et la commande avant de confirmer.",
+          "sections": [
+            {
+              "heading": "Commande et renouvellement",
+              "body": "Fournissez des informations exactes et vérifiez la durée ainsi que le total sur Opplexify. Les formules ne se renouvellent pas automatiquement. À l’échéance, vous choisissez librement d’acheter à nouveau selon l’offre en vigueur."
+            },
+            {
+              "heading": "Accès responsable",
+              "body": "Protégez vos identifiants et respectez le droit d’auteur, les restrictions géographiques et les limites de la formule. L’accès vendu aux particuliers ne doit être ni modifié, ni revendu, ni redistribué. Un abus ou une fraude peut entraîner une suspension ou une résiliation."
+            },
+            {
+              "heading": "Disponibilité et responsabilité",
+              "body": "L’appareil, le réseau et les applications tierces peuvent affecter l’utilisation. Des interruptions techniques ou de maintenance sont possibles. Les conditions centrales traitent des préjudices indirects et plafonnent la responsabilité au montant des abonnements payé durant les trois mois précédents, sous réserve des droits que la loi applicable interdit d’exclure."
+            },
+            {
+              "heading": "Vente définitive et assistance",
+              "body": "Une fois le prix convenu et la commande confirmée, l’achat est définitif, sauf remboursement légalement obligatoire. Lisez la politique de remboursement et faites clarifier toute condition avant de payer."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Comment vos demandes Trex rejoignent votre dossier client",
+          "description": "Comprenez les données Trex partagées avec Opplex, la mesure facultative et les services externes de contact et de paiement.",
+          "intro": "Trex est relié au système client Opplex central. Ce résumé décrit les informations utilisées dans ce parcours ; la politique de confidentialité centrale liée régit le service et fournit les coordonnées utiles.",
+          "sections": [
+            {
+              "heading": "Lorsque vous demandez de l’aide",
+              "body": "Avec votre accord, le formulaire transmet votre nom, adresse électronique, téléphone et message au système Opplex commun, avec le site d’origine. Limitez le contenu à la demande et excluez mots de passe et données de paiement confidentielles."
+            },
+            {
+              "heading": "Mesure facultative du site",
+              "body": "La mesure est désactivée par défaut et votre choix est enregistré dans le navigateur. Si vous l’autorisez, un identifiant de session et des événements, notamment de paiement, peuvent relier les visites aux commandes. Les commandes de confidentialité permettent de modifier ce choix."
+            },
+            {
+              "heading": "Services externes utilisés",
+              "body": "L’ouverture de WhatsApp, de la messagerie Tawk ou d’Opplexify implique ces services et leurs propres conditions de confidentialité. Les sites et services consultés peuvent également traiter des informations techniques de navigation et des cookies."
+            },
+            {
+              "heading": "Questions sur vos informations",
+              "body": "Pour toute question, utilisez l’adresse d’assistance affichée par le système central. Consentir à une réponse n’autorise pas une prospection sans rapport avec la demande. Ne communiquez des données supplémentaires que si elles sont nécessaires à sa résolution."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Commandes Trex : vérifiez les règles de remboursement",
+          "description": "Comprenez la vente définitive des services numériques Trex, l’arrêt d’utilisation et les remboursements imposés par la loi.",
+          "intro": "Vérifiez la compatibilité, la formule et le prix avant l’achat Trex. La politique centrale de remboursement et d’annulation, applicable depuis le 30 août 2026, régit cette commande ; cette page en présente un résumé.",
+          "sections": [
+            {
+              "heading": "Quand l’achat devient définitif",
+              "body": "Dès que le prix est convenu et la commande confirmée, l’achat est définitif et non remboursable, sauf obligation légale. Cette règle couvre les périodes activées, partiellement utilisées ou inutilisées, les promotions et les services d’installation et d’activation."
+            },
+            {
+              "heading": "Arrêter d’utiliser le service",
+              "body": "Vous pouvez cesser l’utilisation, mais cela ne donne droit ni à un remboursement, ni à un avoir, ni à un échange pour la période en cours. Les difficultés liées à votre appareil ou à votre connexion Internet n’ouvrent pas de droit au remboursement prévu par cette politique. Vos droits légaux impératifs sont préservés."
+            },
+            {
+              "heading": "Remboursement légalement obligatoire",
+              "body": "Écrivez à info@opplexiptv.com en indiquant la commande et le motif. Tout remboursement obligatoire revient sur le moyen de paiement d’origine dans le délai imposé par la loi ou le prestataire de paiement. La livraison étant numérique, aucun retour physique n’est nécessaire."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/prepare-a-clean-playlist",
+          "title": "Organisez une liste Trex facile à parcourir",
+          "description": "Un guide Trex pour classer les sources autorisées et les favoris tout en conservant votre configuration initiale.",
+          "intro": "Un lecteur encombré complique une installation pourtant simple. Avant de supprimer des entrées ou de modifier l’importation, identifiez la source autorisée et notez votre configuration actuelle dans un endroit privé.",
+          "sections": [
+            {
+              "heading": "Distinguez rangement et accès",
+              "body": "Utilisez les favoris ou masquez des catégories si le lecteur le permet. Cela facilite la navigation sans ouvrir de nouveaux droits. N’importez pas de listes inconnues pour remplir des rubriques vides."
+            },
+            {
+              "heading": "Procédez par modification réversible",
+              "body": "Actualisez selon la documentation du lecteur, puis vérifiez votre sélection. Si des entrées disparaissent, notez le changement avant de réessayer. Ne publiez jamais d’adresse de liste ou d’identifiants sur un forum."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/check-your-playback-chain",
+          "title": "Vérifiez la chaîne de lecture Trex avant l’écran",
+          "description": "Examinez la source, la connexion, le lecteur et l’écran pour comprendre un problème de lecture Trex.",
+          "intro": "L’image affichée résulte d’une chaîne : source, transmission, lecteur et écran. Modifier les quatre simultanément rend les comparaisons peu utiles ; commencez par observer précisément le problème.",
+          "sections": [
+            {
+              "heading": "Faites une comparaison simple",
+              "body": "Déterminez si une seule source autorisée ou plusieurs sont touchées. Testez la connexion près de l’appareil et comparez Ethernet au Wi-Fi si possible. Une mesure de débit isolée n’explique pas toutes les coupures."
+            },
+            {
+              "heading": "Notez l’effet du réglage",
+              "body": "Essayez un seul réglage documenté et annulez-le s’il n’aide pas. Signalez les problèmes persistants avec l’heure, l’appareil et la version du lecteur. Ni la marque ni la résolution annoncée ne garantissent la lecture."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/write-a-useful-tv-support-request",
+          "title": "Une demande Trex précise pour votre téléviseur",
+          "description": "Préparez une demande Trex avec le modèle, les symptômes reproductibles et une capture sans données privées.",
+          "intro": "Dire que rien ne fonctionne exprime bien la difficulté, mais donne peu d’éléments à vérifier. Quelques précisions permettent à l’assistance de comprendre ce qui se passe sur votre écran.",
+          "sections": [
+            {
+              "heading": "Situez le point de blocage",
+              "body": "Indiquez le modèle, la version du lecteur et l’action précédant le problème. Ajoutez la référence de commande, le message exact et la fréquence : systématique ou occasionnelle."
+            },
+            {
+              "heading": "Montrez uniquement l’essentiel",
+              "body": "Recadrez les images autour du message et masquez les informations du compte. Listez les vérifications déjà effectuées et poursuivez si possible la même conversation. Ne partagez jamais de mot de passe, code temporaire ou données complètes de carte."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "opplex": {
+      "name": "Opplex IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Opplex IPTV Store : de la formule au compte client",
+          "description": "Découvrez le lien entre le choix d’une formule Opplex, le paiement sur Opplexify et le portail client central.",
+          "intro": "Opplex IPTV Store vous aide à choisir une formule et à comprendre la suite. Le site s’appuie sur le catalogue, l’assistance et le portail client principaux pour réunir les étapes de votre achat.",
+          "sections": [
+            {
+              "heading": "Repérez l’étape en cours",
+              "body": "Comparez les offres ici, vérifiez le paiement sur Opplexify, puis consultez la commande dans votre compte central. Si une étape manque de clarté, demandez de l’aide avant de lancer un nouvel achat."
+            },
+            {
+              "heading": "Fiez-vous aux caractéristiques précises",
+              "body": "Vérifiez la durée, les limites, la compatibilité et la disponibilité avant de payer. La qualité dépend de la source, du réseau et du matériel ; ce site ne promet pas une lecture sans interruption."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Trouvez l’aide adaptée à votre commande Opplex",
+          "description": "Joignez l’assistance Opplex pour une formule, un paiement ou une installation avec les informations utiles à votre demande.",
+          "intro": "Indiquez si vous comparez des offres, vérifiez un paiement ou installez un appareil. Cette précision aide l’équipe à retrouver la bonne étape de votre parcours sans vous faire tout répéter.",
+          "sections": [
+            {
+              "heading": "Avant de commander",
+              "body": "Précisez la formule consultée et votre question. Pour la compatibilité, ajoutez le modèle exact de l’appareil. Vérifiez les caractéristiques actuelles et le récapitulatif de paiement avant tout règlement."
+            },
+            {
+              "heading": "Après la commande",
+              "body": "Utilisez l’adresse de l’achat et sa référence, puis décrivez l’état affiché. Avec votre consentement, le formulaire enregistre la demande dans le dossier client Opplex principal. Excluez mots de passe, numéros complets de carte et codes de vérification."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Vos questions Opplex Store, du paiement au renouvellement",
+          "description": "Comprenez le paiement Opplexify, le compte Opplex commun et le renouvellement des formules.",
+          "intro": "La boutique, le paiement et le portail client remplissent des fonctions différentes. Voici comment ils s’articulent et quels éléments vérifier avant un premier achat ou un renouvellement.",
+          "sections": [
+            {
+              "heading": "Faut-il un autre compte client ?",
+              "body": "Utilisez le portail Opplex principal. Les liens de compte vous dirigent vers ce service commun ; il n’est pas nécessaire de créer un compte propre à la boutique."
+            },
+            {
+              "heading": "Ma formule se renouvelle-t-elle seule ?",
+              "body": "Les conditions centrales ne prévoient aucun renouvellement automatique. À la fin de la période, examinez l’offre et le tarif actuels avant de décider d’acheter à nouveau."
+            },
+            {
+              "heading": "Que faire si le paiement semble incomplet ?",
+              "body": "Vérifiez la commande et contactez l’assistance avec sa référence avant de repayer. Une redirection ou une demande envoyée ne prouve ni le paiement ni la disponibilité du service."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Toutes les formules Opplex au même endroit",
+          "description": "Consultez les tarifs et caractéristiques Opplex actuels, puis vérifiez votre choix sur Opplexify.",
+          "intro": "Une liste unique rassemble les offres Opplex chargées depuis le site principal. Vous pouvez comparer ensemble les durées, montants et limites, sans vous fier à des pages de prix contradictoires.",
+          "sections": [
+            {
+              "heading": "Choisissez la durée nécessaire",
+              "body": "Confirmez que l’appareil et l’usage envisagés conviennent à la formule. Une période plus longue n’ajoute pas automatiquement de connexions ou de fonctions : seules les caractéristiques actuelles font foi."
+            },
+            {
+              "heading": "Conservez le même choix au paiement",
+              "body": "Sur Opplexify, vérifiez la formule et le total. Si le récapitulatif diffère de votre intention, contactez l’assistance avant de payer. Votre compte commun permet ensuite de suivre la commande."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Discutez d’un accord de revente Opplex",
+          "description": "Renseignez-vous sur les accords commerciaux Opplex, leurs responsabilités et leurs conditions confirmées.",
+          "intro": "Pour proposer un service à vos propres clients, commencez par une demande commerciale. Une formule Opplex destinée aux particuliers permet uniquement l’usage personnel autorisé et n’accorde pas de droit de revente ou de redistribution.",
+          "sections": [
+            {
+              "heading": "Précisez vos responsabilités",
+              "body": "Expliquez comment vous géreriez les demandes, l’installation et l’assistance continue. Demandez quels accords sont disponibles et quelles autorisations, règles de facturation et limites s’appliquent."
+            },
+            {
+              "heading": "Obtenez une offre écrite",
+              "body": "Cette page ne garantit ni panneau de gestion, ni solde, ni tarif de crédits. Faites confirmer les conditions avant de payer. Ne déduisez pas une marge du prix public ou des règles d’un autre fournisseur."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Distinguez votre formule Opplex de l’application de lecture",
+          "description": "Comprenez les différences entre lecteur et service Opplex, les sources officielles et les appareils pris en charge.",
+          "intro": "Le mot activation peut désigner des achats différents. Le lecteur est le logiciel de lecture ; votre formule Opplex est un service séparé, avec sa propre durée et ses limites d’utilisation.",
+          "sections": [
+            {
+              "heading": "Vérifiez avant l’installation",
+              "body": "Recherchez l’application exacte dans la boutique officielle ou sur le site du développeur. Confirmez la version du système requise et les éventuels frais indépendants. Un bouton de téléchargement ne suffit pas à prouver la compatibilité."
+            },
+            {
+              "heading": "Donnez des précisions à l’assistance",
+              "body": "Indiquez le nom et la version du lecteur. Consultez le guide central des applications et ne saisissez jamais vos informations dans une imitation envoyée par un contact inconnu."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Votre parcours Opplex, de la commande à l’installation",
+          "description": "Passez d’une commande Opplex confirmée à la préparation de l’appareil avec les guides et l’assistance centraux.",
+          "intro": "Commencez par la commande et l’appareil concernés, puis utilisez le guide adapté depuis le portail central. Un réglage choisi au hasard risque de compliquer inutilement l’installation.",
+          "sections": [
+            {
+              "heading": "Confirmez le point de départ",
+              "body": "Vérifiez l’état de la commande et la formule, conservez la référence, mettez l’appareil à jour et testez Internet. Si la commande reste incertaine, demandez de l’aide avant de repayer ou d’acheter une autre licence."
+            },
+            {
+              "heading": "Suivez un seul guide adapté",
+              "body": "Utilisez les instructions correspondant à votre appareil et à votre lecteur. Face à un écran inattendu, notez son texte. Aucun mot de passe ou détail complet de paiement n’est nécessaire dans votre message d’assistance."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Vérifiez la disponibilité d’un film avant de choisir Opplex",
+          "description": "Un guide Opplex pour distinguer les informations sur un film de sa disponibilité légale dans une formule.",
+          "intro": "Trouver un film dans une recherche ne donne pas le droit de le regarder. Cette page vous aide à vérifier les informations utiles ; elle ne présente aucun catalogue sous licence ni titre garanti dans une formule Opplex.",
+          "sections": [
+            {
+              "heading": "Formulez une question précise",
+              "body": "Indiquez le titre et l’année de sortie, puis consultez une source autorisée dans votre région. Une affiche, une recommandation ou un résultat général ne confirme pas l’accès."
+            },
+            {
+              "heading": "Précisez vos besoins de visionnage",
+              "body": "Vérifiez la langue, les sous-titres, l’appareil et la qualité auprès de la source et du lecteur. Le catalogue ou les fonctions d’un autre service ne sont pas automatiquement disponibles ici."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Préparez soigneusement votre achat de matériel Opplex",
+          "description": "Vérifiez la compatibilité, le coût du lecteur et les conditions du vendeur avant d’acheter du matériel pour Opplex.",
+          "intro": "Distinguez le matériel, la licence éventuelle du lecteur et la formule de service. Ce guide ne signifie pas que nous vendons un produit précis ou incluons les services numériques d’une autre société.",
+          "sections": [
+            {
+              "heading": "Examinez votre appareil actuel",
+              "body": "Relevez son modèle et sa boutique d’applications, puis vérifiez le lecteur envisagé. Une mise à jour ou une installation simplifiée peut suffire ; un nouvel appareil n’est pas nécessairement requis."
+            },
+            {
+              "heading": "Relisez les conditions du vendeur",
+              "body": "Confirmez la garantie, les retours et les frais récurrents du lecteur. Demandez à Opplex de vérifier la compatibilité. Le matériel acheté ailleurs relève du vendeur concerné, et non de la politique de remboursement des formules numériques."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Vérifiez la prochaine étape de votre commande Opplex",
+          "description": "Consultez l’état de votre commande Opplex et demandez de l’aide à l’activation avant d’effectuer un nouveau paiement.",
+          "intro": "Après le paiement, consultez votre commande dans le compte Opplex central. La demande d’activation sert à clarifier la suite ; elle ne constitue ni un second paiement ni une confirmation d’accès.",
+          "sections": [
+            {
+              "heading": "Respectez l’ordre des étapes",
+              "body": "Vérifiez la référence, la formule et l’état affiché. Si le paiement est en attente ou ambigu, contactez l’équipe avant de recommencer. L’application peut aussi avoir sa propre activation, distincte du service."
+            },
+            {
+              "heading": "Décrivez l’étape manquante",
+              "body": "Précisez si vous attendez une mise à jour de commande ou rencontrez un problème d’installation. Donnez la référence utile, sans identifiants privés. L’assistance examine la demande ; cette page ne garantit aucun délai d’activation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Transmettez les bons éléments pour l’activation Opplex",
+          "description": "Préparez une demande Opplex à partir de la référence et de l’état visible tout en protégeant vos informations privées.",
+          "intro": "Une demande liée à une seule commande et à une étape précise facilite la vérification. Consultez l’adresse électronique de l’achat et notez ce qu’affiche actuellement votre compte ou votre appareil.",
+          "sections": [
+            {
+              "heading": "Structurez votre message",
+              "body": "Commencez par la référence et indiquez si le paiement a abouti. Ajoutez le modèle et le lecteur si le problème concerne l’installation, ainsi que le message et l’heure approximative. Ne copiez pas vos identifiants de service."
+            },
+            {
+              "heading": "Gardez le dossier cohérent",
+              "body": "Répondez si possible dans la conversation existante. Avec votre accord, le formulaire conserve la demande dans le système commun. Excluez les données complètes de carte et les codes ; la réception du message ne confirme pas l’activation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Les guides Opplex pour un parcours plus simple",
+          "description": "Des conseils Opplex pour organiser les listes, vérifier la lecture et poursuivre une demande d’assistance.",
+          "intro": "Ces guides éclaircissent les étapes qui peuvent prêter à confusion : ordonner le lecteur, choisir quoi vérifier quand la lecture change et expliquer le problème sans perdre la référence de commande.",
+          "sections": [
+            {
+              "heading": "Partez du problème rencontré",
+              "body": "Consultez l’article sur les listes pour un lecteur désordonné, ou celui sur la lecture pour les coupures et la qualité. Ces vérifications ne demandent ni nouvel abonnement ni source inconnue."
+            },
+            {
+              "heading": "Gardez vos informations de compte privées",
+              "body": "Le guide d’assistance précise quoi partager. Tous les articles supposent un usage légal, autorisé et conforme à votre formule ; ils ne promettent ni titre disponible ni fonction particulière du lecteur."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Les conditions applicables à une commande Opplex Store",
+          "description": "Consultez les règles Opplex sur l’achat, le renouvellement, le compte, la disponibilité et les droits au remboursement.",
+          "intro": "La boutique vous relie au service Opplex existant et à ses règles d’achat centrales. Lisez les conditions générales liées, qui régissent le service, ainsi que le récapitulatif final sur Opplexify.",
+          "sections": [
+            {
+              "heading": "Choisir puis renouveler",
+              "body": "Renseignez des informations exactes et vérifiez la période et le prix avant paiement. Les formules ne se renouvellent pas automatiquement ; à l’expiration, vous décidez de racheter selon les conditions et le tarif alors proposés."
+            },
+            {
+              "heading": "Utiliser votre compte",
+              "body": "Protégez vos identifiants et respectez les limites de la formule, le droit d’auteur et les restrictions géographiques. Les abonnements pour particuliers ne doivent être ni modifiés, ni revendus, ni redistribués. Abus et fraude peuvent entraîner suspension ou résiliation."
+            },
+            {
+              "heading": "Conditions de fourniture",
+              "body": "Maintenance, interruptions techniques, connexion et applications tierces peuvent affecter l’usage. Les conditions centrales excluent les préjudices indirects ou accessoires et limitent la responsabilité au montant des abonnements payé au cours des trois derniers mois, dans la mesure permise par la loi applicable."
+            },
+            {
+              "heading": "Avant votre confirmation",
+              "body": "Le prix convenu et la commande confirmée rendent l’achat définitif, sauf remboursement imposé par la loi. Consultez la politique de remboursement et faites clarifier vos questions avant de payer. Les droits légaux impératifs restent pleinement préservés."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Vos informations entre Opplex Store et le compte central",
+          "description": "Découvrez comment les demandes Opplex Store et la mesure facultative rejoignent le système client commun.",
+          "intro": "La boutique est un point d’entrée du système client Opplex principal. Ce résumé décrit leurs liens ; la politique centrale de confidentialité liée régit le service et les coordonnées affichées permettent de poser vos questions.",
+          "sections": [
+            {
+              "heading": "La demande que vous choisissez d’envoyer",
+              "body": "Après votre consentement, le formulaire transmet nom, adresse électronique, téléphone et message au système commun, avec le site d’origine. Ces données servent à traiter la demande ; autoriser une réponse n’autorise pas une prospection sans rapport."
+            },
+            {
+              "heading": "Votre choix de mesure",
+              "body": "La mesure facultative est désactivée par défaut. Le navigateur mémorise votre choix. Lorsqu’elle est autorisée, un identifiant de session et des événements relient les visites, le paiement et les commandes. Vous pouvez modifier ce choix dans les commandes de confidentialité."
+            },
+            {
+              "heading": "Les étapes auprès de tiers",
+              "body": "Opplexify gère le parcours de paiement ; WhatsApp et Tawk fournissent leurs moyens de contact. Leurs propres politiques s’appliquent lorsque vous les utilisez. Les sites concernés peuvent aussi traiter des données techniques d’utilisation et des cookies."
+            },
+            {
+              "heading": "Partagez seulement ce qui aide",
+              "body": "N’insérez jamais de mots de passe, codes à usage unique ou données de paiement confidentielles dans vos messages. Adressez les questions sur les informations de votre commande ou demande à l’adresse d’assistance principale affichée."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Comprendre la vente définitive chez Opplex",
+          "description": "Un résumé des règles de remboursement et d’annulation Opplex, avec maintien des droits légaux impératifs.",
+          "intro": "Les achats dans cette boutique suivent la politique centrale de remboursement et d’annulation du 30 août 2026. Lisez son texte intégral et clarifiez le prix, la compatibilité et la formule avant le paiement.",
+          "sections": [
+            {
+              "heading": "Achats numériques confirmés",
+              "body": "Une fois le prix convenu et la commande confirmée, l’achat est définitif et non remboursable, sauf exigence de la loi applicable. Sont concernés les périodes activées, partiellement utilisées ou inutilisées, les offres promotionnelles, l’installation et l’activation, sans avoir ni échange pour ces périodes."
+            },
+            {
+              "heading": "Annulation et difficultés techniques",
+              "body": "Cesser d’utiliser le service ne donne pas droit à un remboursement ou à un avoir sur la période en cours. Les problèmes de compatibilité ou de connexion Internet du client ne sont pas admissibles au titre de cette politique. Aucun droit légal au remboursement qui ne peut être exclu n’est supprimé."
+            },
+            {
+              "heading": "Faire examiner un droit légal",
+              "body": "Envoyez la référence et le motif à info@opplexiptv.com si vous estimez qu’un remboursement est légalement obligatoire. Le remboursement dû est effectué sur le moyen de paiement d’origine, dans le délai légal ou celui du prestataire. Les services numériques ne font l’objet d’aucun retour physique."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/keep-your-playlist-organised",
+          "title": "Rangez votre liste Opplex sans repartir de zéro",
+          "description": "Un guide Opplex sur les favoris, l’actualisation et les changements qui préservent une configuration fonctionnelle.",
+          "intro": "Avant de tout effacer, distinguez un problème de classement d’un problème d’accès. Notez votre configuration fonctionnelle dans un endroit privé pour pouvoir revenir au point de départ.",
+          "sections": [
+            {
+              "heading": "Utilisez les outils du lecteur",
+              "body": "Regroupez les favoris ou masquez les rubriques inutiles si ces fonctions existent. Suivez les instructions du développeur et utilisez uniquement des sources autorisées, sans importer une liste de remplacement inconnue."
+            },
+            {
+              "heading": "Actualisez avec un objectif",
+              "body": "Après une actualisation documentée, vérifiez l’élément à l’origine du changement. En cas de résultat inattendu, notez l’heure et la version du lecteur. Ne publiez pas l’adresse d’une liste : elle peut contenir des informations d’accès privées."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/a-step-by-step-playback-check",
+          "title": "Vérifiez la lecture Opplex sans tout modifier",
+          "description": "Une méthode Opplex pour distinguer les symptômes liés au réseau, au lecteur et à la source.",
+          "intro": "Réinstaller le lecteur, redémarrer le routeur et changer les réglages en même temps peut masquer la cause du problème. Quelques vérifications successives donnent un résultat plus facile à comprendre.",
+          "sections": [
+            {
+              "heading": "Notez d’abord le symptôme",
+              "body": "S’agit-il d’une image figée, d’une erreur ou d’un manque constant de netteté ? Vérifiez si une seule source autorisée ou plusieurs sont touchées et si Internet reste stable sur le même appareil."
+            },
+            {
+              "heading": "Comparez puis restaurez si nécessaire",
+              "body": "Essayez une modification pertinente, par exemple Ethernet au lieu du Wi-Fi. Gardez le réglage initial. Si le problème continue, transmettez les résultats et les versions ; acheter plusieurs fois ne constitue pas une méthode de dépannage."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/follow-up-with-the-right-order-details",
+          "title": "Poursuivez votre demande Opplex avec la bonne référence",
+          "description": "Gardez un échange Opplex utile grâce à la référence de commande, aux nouveautés observées et à des captures ciblées.",
+          "intro": "Une conversation devient difficile à suivre lorsque chaque réponse repart de zéro. Associez la référence de commande au symptôme actuel pour montrer ce qui a changé depuis la dernière vérification.",
+          "sections": [
+            {
+              "heading": "Donnez une mise à jour concise",
+              "body": "Rappelez la référence, le dernier essai et son résultat. Signalez tout changement d’appareil ou de version. Précisez s’il s’agit du paiement ou de la lecture."
+            },
+            {
+              "heading": "Masquez les informations sensibles",
+              "body": "Partagez le message d’erreur plutôt que l’écran complet du compte. Cachez identifiants et données de paiement dans les captures, et n’envoyez jamais de code temporaire. Évitez les demandes en double pendant l’attente d’une réponse."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "geo": {
+      "name": "Geo IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Geo IPTV : vérifiez les détails du lieu de visionnage",
+          "description": "Découvrez Geo IPTV selon votre pays, vos langues et votre appareil, avec les services clients Opplex communs.",
+          "intro": "Une formule adaptée à un foyer ne convient pas forcément à un autre. Geo IPTV place votre pays, la langue souhaitée et l’appareil au centre des questions à poser avant l’achat.",
+          "sections": [
+            {
+              "heading": "Le lieu fait partie de l’installation",
+              "body": "Restrictions géographiques, disponibilité des sources et réseaux varient. Confirmez votre usage prévu : le nom Geo ne garantit pas un accès universel et n’autorise aucun contournement."
+            },
+            {
+              "heading": "Un accès ciblé aux services communs",
+              "body": "Les offres Geo proviennent du catalogue Opplex, le paiement se poursuit sur Opplexify et le compte reste central. Les guides aident à préparer vos questions sans créer un service d’assistance distinct ni inventer une histoire commerciale."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Posez votre question Geo selon votre pays",
+          "description": "Contactez l’assistance commune pour vérifier Geo, vos besoins linguistiques ou votre commande sans données personnelles superflues.",
+          "intro": "Précisez où et comment vous utiliserez la formule. Le pays et le modèle de l’appareil suffisent souvent pour commencer ; une question générale de compatibilité ne nécessite pas votre adresse personnelle.",
+          "sections": [
+            {
+              "heading": "Expliquez ce qui compte pour vous",
+              "body": "Indiquez la formule Geo envisagée et les besoins en langue, sous-titres ou fonctions de l’appareil. Demandez confirmation au lieu de supposer qu’une option disponible ailleurs est incluse."
+            },
+            {
+              "heading": "Pour un achat déjà effectué",
+              "body": "Ajoutez la référence et le message ou l’état affiché. Avec votre accord, la demande rejoint le système Opplex commun. Évitez mots de passe, cartes bancaires, codes et informations personnelles inutiles à la question."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Les réponses Geo sur le pays, la langue et les appareils",
+          "description": "Comprenez les limites géographiques, les pages traduites et le parcours commun de paiement Geo.",
+          "intro": "Une traduction facilite la lecture, mais ne confirme pas les services disponibles dans un pays. Vérifiez ces différences avant de choisir votre formule Geo.",
+          "sections": [
+            {
+              "heading": "La langue de la page change-t-elle l’offre ?",
+              "body": "Non. Consultez les caractéristiques actuelles de la formule. Une interface traduite ne garantit ni audio correspondant, ni sous-titres, ni catalogue particulier."
+            },
+            {
+              "heading": "Puis-je utiliser le service en voyage ?",
+              "body": "Ne présumez pas qu’un accès reste autorisé dans une autre région. Vérifiez les restrictions, les conditions de la formule et votre situation auprès de l’assistance."
+            },
+            {
+              "heading": "Où se font le paiement et l’assistance ?",
+              "body": "Le paiement se déroule sur Opplexify. Les liens de compte et d’assistance utilisent le système Opplex principal, sans compte Geo séparé."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Comparez les formules Geo actuelles",
+          "description": "Consultez les tarifs et limites Geo, vérifiez l’adéquation à votre pays, puis poursuivez sur Opplexify.",
+          "intro": "Cette page unique rassemble les formules Geo du catalogue principal, avec leurs durées, prix et limites actuels. Appuyez votre comparaison sur ces données plutôt que sur une ancienne offre.",
+          "sections": [
+            {
+              "heading": "Vérifiez aussi l’adéquation de l’offre",
+              "body": "Confirmez l’appareil, le lieu d’utilisation et les besoins essentiels en langue ou en accessibilité. Une durée supérieure ou une page traduite ne garantit aucune fonction ou disponibilité supplémentaire."
+            },
+            {
+              "heading": "Relisez votre sélection exacte",
+              "body": "Sur Opplexify, contrôlez l’identité du service, la devise et le total. Si les données ne se chargent pas, demandez l’offre actuelle à l’assistance au lieu de supposer le prix."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Les projets commerciaux Geo selon les marchés",
+          "description": "Discutez d’un éventuel accord de revente Geo en précisant les règles locales et vos responsabilités d’assistance.",
+          "intro": "Servir un marché demande davantage qu’une page commerciale traduite. Pour un projet Geo, vérifiez les possibilités, les autorisations et les responsabilités avant de vous engager.",
+          "sections": [
+            {
+              "heading": "Décrivez le marché visé",
+              "body": "Indiquez les pays, les langues et la couverture d’assistance envisagés. Vérifiez les restrictions territoriales et le droit d’auteur : une formule pour particuliers n’autorise pas la redistribution."
+            },
+            {
+              "heading": "Demandez un accord précis",
+              "body": "Cette page ne garantit ni panneau de revendeur, ni prix de gros, ni marge. L’assistance doit confirmer par écrit les arrangements disponibles. Les tarifs d’une autre marque ne constituent pas une offre Geo, et un accès personnel ne peut être revendu sans accord adapté."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Choisissez un lecteur Geo adapté à l’appareil et à la langue",
+          "description": "Vérifiez les versions disponibles, les langues d’interface et les téléchargements officiels avant l’installation Geo.",
+          "intro": "Une application peut avoir des versions différentes selon l’appareil et la boutique. Examinez celle qui est réellement disponible pour vous, notamment sa langue et ses fonctions d’accessibilité.",
+          "sections": [
+            {
+              "heading": "Commencez par la version compatible",
+              "body": "Utilisez la boutique officielle ou les informations du développeur. Vérifiez le système requis et les frais de licence séparés. Une application proposée dans un pays peut être absente d’un autre."
+            },
+            {
+              "heading": "Distinguez menus et langue du contenu",
+              "body": "Un menu traduit n’ajoute ni piste audio ni sous-titres à la source. Confirmez les fonctions avec le développeur et la formule avec l’assistance. Évitez les installateurs inconnus et le contournement des restrictions géographiques."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Préparez votre installation Geo selon votre situation",
+          "description": "Vérifiez le pays, les versions, les langues et l’état de commande avant de configurer Geo.",
+          "intro": "Partez de l’appareil et du lieu où vous regarderez réellement. Une capture similaire peut provenir d’un autre modèle ou d’une boutique régionale différente et ne pas correspondre à votre écran.",
+          "sections": [
+            {
+              "heading": "Vérifiez les conditions locales",
+              "body": "Confirmez que la formule convient au lieu prévu, mettez l’appareil à jour et vérifiez la version officielle du lecteur. Consultez l’état de commande dans le compte commun avant de chercher un problème d’accès."
+            },
+            {
+              "heading": "Décrivez clairement les différences",
+              "body": "Si une option manque, notez la version et la langue des menus. Suivez le guide de votre appareil et signalez les écarts. Ne changez pas de région pour contourner une restriction et masquez vos identifiants dans les captures."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Découvrir un film ne garantit pas sa disponibilité régionale",
+          "description": "Un guide Geo pour vérifier légalement les films, leurs langues et leurs sous-titres dans votre région.",
+          "intro": "Le titre d’un film passe facilement d’une langue à l’autre ; sa disponibilité légale ne suit pas forcément. Ce guide ne présente aucun catalogue Geo inclus et ne revendique aucun droit de diffusion particulier.",
+          "sections": [
+            {
+              "heading": "Identifiez la bonne version",
+              "body": "Indiquez l’année de sortie avec le titre lors de la recherche auprès d’une source autorisée. Les nouvelles adaptations, titres traduits et éditions différentes peuvent sinon induire en erreur."
+            },
+            {
+              "heading": "Vérifiez ensemble langue et territoire",
+              "body": "Audio et sous-titres varient selon la source et la région. Confirmez-les avant l’achat. Une affiche, une description traduite ou une recommandation ne prouve pas l’accès, et les restrictions géographiques restent applicables."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Acheter un appareil pour Geo : les détails régionaux",
+          "description": "Un guide matériel Geo sur les applications locales, l’accessibilité et les conditions du vendeur.",
+          "intro": "Un appareil présenté en ligne peut offrir une boutique ou une assistance différente dans votre pays. Cette liste de vérifications prépare vos questions au vendeur ; elle ne représente pas un stock de produits.",
+          "sections": [
+            {
+              "heading": "Allez au-delà du nom du modèle",
+              "body": "Vérifiez la référence régionale exacte, les applications, les langues et le suivi des mises à jour. Confirmez les grandes polices, sous-titres et commandes souhaités sur la version réellement vendue."
+            },
+            {
+              "heading": "Distinguez les différents achats",
+              "body": "Garantie et retours du matériel relèvent du vendeur. Le lecteur peut être payant séparément de Geo. Faites vérifier la compatibilité avant l’achat ; un appareil importé ou un menu traduit ne garantit pas l’accès."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Passez de votre commande Geo à l’installation",
+          "description": "Consultez votre commande Geo dans le portail central et demandez une aide adaptée à l’appareil et au pays.",
+          "intro": "Après le paiement, vérifiez la commande Geo dans le compte commun. Si la suite manque de clarté, demandez l’examen de cet achat avant de recommander ou d’appliquer des instructions sans rapport.",
+          "sections": [
+            {
+              "heading": "Partez de l’état actuel",
+              "body": "Gardez la référence et la formule à portée de main. Décrivez l’état du portail et l’appareil prévu. Si votre lieu d’utilisation a changé, demandez si cela modifie les conditions autorisées."
+            },
+            {
+              "heading": "Distinguez activation du lecteur et service",
+              "body": "Une licence ou un écran d’activation peut concerner seulement l’application. Vérifiez avant de payer davantage. Une demande d’aide clarifie le parcours, sans activer automatiquement l’accès ni garantir un délai."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Donnez à l’assistance Geo le contexte utile",
+          "description": "Préparez votre demande d’activation Geo avec la commande, l’appareil et la langue, sans données personnelles inutiles.",
+          "intro": "Lorsque l’écran diffère du guide, la version et la langue peuvent expliquer l’écart. Ajoutez-les à la référence de commande pour situer précisément l’étape que vous tentez de terminer.",
+          "sections": [
+            {
+              "heading": "Décrivez fidèlement l’écran",
+              "body": "Indiquez la référence, le modèle, la version du lecteur et le message exact. Mentionnez la langue et le pays si la disponibilité est en cause. Votre adresse complète n’est pas nécessaire pour une question générale d’installation."
+            },
+            {
+              "heading": "Retirez les champs sensibles",
+              "body": "Masquez les informations de compte et ne transmettez ni mot de passe, ni carte, ni code temporaire. Avec consentement, la demande rejoint le système Opplex. Son envoi confirme la réception de la demande, pas l’activation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Les guides Geo pour mieux comprendre les langues et versions",
+          "description": "Consultez les conseils Geo sur les libellés de listes, les comparaisons de lecture et le contexte régional à communiquer.",
+          "intro": "Des menus traduits et des versions régionales peuvent compliquer des instructions simples. Les guides Geo vous aident à identifier ce que montre votre écran et à comparer des situations pertinentes pour votre installation.",
+          "sections": [
+            {
+              "heading": "Clarifiez les libellés",
+              "body": "Le guide des listes aide à comprendre les catégories et noms traduits. Celui sur la lecture permet ensuite de comparer les comportements sans attribuer chaque différence au débit Internet."
+            },
+            {
+              "heading": "Expliquez le contexte avec prudence",
+              "body": "Le guide d’assistance précise l’intérêt des versions et de la langue d’interface. Aucun article ne promet l’accès dans tous les pays, ne fournit un catalogue sous licence ou ne recommande de contourner les restrictions."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Conditions Geo et responsabilités selon votre région",
+          "description": "Lisez les règles Opplex applicables à Geo : achat, utilisation, renouvellement et droits légaux impératifs.",
+          "intro": "Geo relève du service principal Opplex et de ses conditions générales centrales. Ce résumé souligne les points pratiques ; lisez les conditions complètes qui régissent le service et les détails de paiement avant d’accepter.",
+          "sections": [
+            {
+              "heading": "Une formule constitue un achat défini",
+              "body": "Fournissez des informations exactes et contrôlez la période et le total sur Opplexify. Aucun renouvellement automatique n’est prévu. Tout achat ultérieur reste votre choix, selon l’offre alors en vigueur."
+            },
+            {
+              "heading": "Lieu et usage autorisé",
+              "body": "Respectez le droit d’auteur, les restrictions géographiques et les limites de compte. Sécurisez vos identifiants. L’accès pour particuliers ne doit être ni modifié, ni revendu, ni redistribué ; abus ou fraude peuvent entraîner une suspension ou une résiliation."
+            },
+            {
+              "heading": "Limites et interruptions",
+              "body": "La disponibilité dépend notamment de l’appareil, de la connexion et des applications tierces. Des interruptions techniques ou de maintenance sont possibles. Les conditions centrales traitent des pertes indirectes et limitent la responsabilité au montant des abonnements payé pendant les trois mois précédents, uniquement dans la mesure autorisée par la loi applicable."
+            },
+            {
+              "heading": "Confirmez en connaissant les remboursements",
+              "body": "Dès que le prix est convenu et la commande confirmée, l’achat est définitif, sauf remboursement exigé par la loi. Consultez la politique correspondante ; aucun droit légal qui ne peut être exclu n’est retiré."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Confidentialité Geo : le contexte utile, sans détails superflus",
+          "description": "Comprenez le traitement des demandes Geo, la mesure facultative et les services externes reliés à Opplex.",
+          "intro": "Une question de langue ou de pays ne doit pas conduire à partager trop d’informations. Ce résumé présente le parcours des données Geo ; la politique centrale Opplex liée régit le service et indique les contacts utiles.",
+          "sections": [
+            {
+              "heading": "Informations de contact",
+              "body": "Avec votre permission, le formulaire transmet nom, adresse électronique, téléphone et message au système client principal, avec le site d’origine. Ajoutez pays ou appareil seulement si nécessaire. Consentir à une demande n’autorise pas une prospection sans rapport."
+            },
+            {
+              "heading": "Mesure facultative de l’activité",
+              "body": "Désactivée par défaut, la mesure dépend du choix enregistré dans votre navigateur. Si elle est activée, un identifiant de session et des événements peuvent relier visites, paiement et commandes. Les commandes de confidentialité permettent de changer ce choix, distinct du consentement à une réponse."
+            },
+            {
+              "heading": "Services que vous ouvrez",
+              "body": "WhatsApp, Tawk et Opplexify interviennent dans le contact ou le paiement selon leurs propres règles de confidentialité. Les sites et services utilisés peuvent traiter des données techniques de navigation et des cookies."
+            },
+            {
+              "heading": "Un message proportionné au besoin",
+              "body": "N’envoyez ni adresse personnelle, ni pièce d’identité, ni données sensibles sans nécessité précise et canal approprié. Les mots de passe et codes de vérification n’ont jamais leur place dans un message d’assistance. Adressez vos questions de confidentialité au contact principal affiché."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Remboursements Geo : la politique et vos droits légaux",
+          "description": "Comprenez l’annulation des commandes Geo et la vente définitive, avec l’exception des remboursements légalement obligatoires.",
+          "intro": "Confirmez le pays, l’appareil et vos besoins essentiels avant l’achat Geo. La politique centrale de remboursement et d’annulation applicable depuis le 30 août 2026 régit la commande ; ce résumé ne remplace ni son texte intégral ni vos droits impératifs.",
+          "sections": [
+            {
+              "heading": "Le moment où la vente devient définitive",
+              "body": "Le prix convenu et la commande confirmée rendent l’achat définitif et non remboursable, sauf obligation légale. Sont concernés les périodes activées, partiellement utilisées ou inutilisées, les promotions, l’installation et l’activation, sans avoir ni échange pour ces périodes."
+            },
+            {
+              "heading": "Changement de projet ou de situation",
+              "body": "Vous pouvez cesser d’utiliser le service, mais l’annulation ne donne pas à elle seule droit à un remboursement ou à un avoir. L’incompatibilité de l’appareil et les difficultés Internet côté client ne sont pas couvertes. Les droits légaux qui ne peuvent être exclus restent applicables."
+            },
+            {
+              "heading": "Faire valoir un droit légal",
+              "body": "Contactez info@opplexiptv.com avec la commande et le motif. Tout remboursement imposé par la loi est versé sur le moyen de paiement d’origine dans le délai légal ou celui du prestataire. La livraison numérique ne nécessite aucun retour physique."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/make-playlist-labels-easier-to-follow",
+          "title": "Rendez les libellés de votre liste Geo plus lisibles",
+          "description": "Un guide Geo pour organiser les favoris autorisés sans confondre noms traduits et droits d’accès.",
+          "intro": "Une liste peut paraître déroutante lorsque ses noms suivent une autre langue ou convention. Commencez par les options d’affichage et de favoris du lecteur avant de chercher une autre source ou un nouveau compte.",
+          "sections": [
+            {
+              "heading": "Classez sans modifier les droits",
+              "body": "Si possible, créez quelques favoris aux noms reconnaissables. Gardez une copie privée de la configuration initiale. Renommer un libellé ne change ni les autorisations, ni les restrictions régionales, ni la formule."
+            },
+            {
+              "heading": "Vérifiez les changements auprès de la source",
+              "body": "Actualisez uniquement des sources autorisées, selon la documentation. Notez la version et la langue si un groupe change. Ne publiez jamais l’adresse d’une liste, qui peut contenir des identifiants d’accès."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/compare-playback-in-your-own-setup",
+          "title": "Comparez la lecture Geo dans votre propre installation",
+          "description": "Un guide Geo pour comparer la lecture en tenant compte de l’appareil, de la source et du réseau.",
+          "intro": "La lecture fluide chez un ami à l’étranger ne décrit pas exactement ce qui devrait se passer chez vous. Une comparaison utile conserve autant de conditions identiques que possible et note les différences.",
+          "sections": [
+            {
+              "heading": "Comparez des situations équivalentes",
+              "body": "Relevez appareil, version du lecteur, type de connexion et heure. Vérifiez si une seule source autorisée ou plusieurs sont touchées. Des sources de résolutions différentes ne constituent pas le même essai."
+            },
+            {
+              "heading": "Faites clarifier les restrictions",
+              "body": "Si la disponibilité change avec le pays, demandez les usages autorisés à l’assistance sans tenter de contourner les limites. Transmettez le message exact et le contexte régional utile, sans identifiants ni paramètres de réseau privés dans des publications."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/send-support-the-right-regional-context",
+          "title": "Donnez le contexte régional utile à l’assistance Geo",
+          "description": "Rédigez une demande Geo avec le pays, la langue et l’appareil tout en limitant les données personnelles.",
+          "intro": "Une erreur traduite ou une version régionale peut apporter l’indice manquant. Vous pouvez l’expliquer sans donner votre adresse complète ni une capture contenant toutes vos informations privées.",
+          "sections": [
+            {
+              "heading": "Ajoutez les détails qui changent la réponse",
+              "body": "Indiquez le pays si pertinent, le modèle, la version et la langue d’interface. Joignez la référence et l’erreur exacte. Si vous traduisez vous-même le message, conservez aussi son texte original quand c’est possible."
+            },
+            {
+              "heading": "Ciblez les éléments de preuve",
+              "body": "Recadrez la capture, masquez les champs personnels et listez les vérifications dans le même échange. Aucun mot de passe, code à usage unique ou numéro de carte n’est utile au dépannage."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "5g": {
+      "name": "5G Live IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "5G Live IPTV : pensez aussi à votre connexion",
+          "description": "Découvrez 5G Live IPTV, les points à vérifier sur réseau mobile ou domestique et les services clients Opplex communs.",
+          "intro": "Un téléphone, un téléviseur et un réseau changeant peuvent offrir des expériences différentes. 5G Live IPTV vous aide à considérer ensemble l’appareil et la connexion avant de choisir une formule.",
+          "sections": [
+            {
+              "heading": "Ce que le nom ne garantit pas",
+              "body": "5G Live IPTV est une marque, pas un opérateur mobile ni une garantie de couverture 5G, de débit ou de lecture continue. Fournisseur, signal, volume de données et équipement restent déterminants."
+            },
+            {
+              "heading": "Le même parcours d’achat et d’aide",
+              "body": "Le catalogue Opplex fournit les offres, Opplexify assure le paiement et le compte ainsi que l’assistance restent centraux. Ces pages vous aident à choisir sans créer de compte propre à ce site."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Expliquez à l’assistance 5G Live votre connexion",
+          "description": "Posez vos questions 5G Live avec les détails utiles sur l’appareil et le réseau auprès de l’équipe commune.",
+          "intro": "Pour un problème sur téléphone ou point d’accès, indiquez le type de connexion utilisé. Préciser données mobiles ou Wi-Fi domestique aide l’équipe ; un mot de passe de routeur n’est pas nécessaire.",
+          "sections": [
+            {
+              "heading": "Avant le choix d’une formule",
+              "body": "Mentionnez l’appareil, le lieu prévu et l’offre envisagée. Faites confirmer la compatibilité et les limites affichées, puis vérifiez les frais de données auprès de votre propre opérateur."
+            },
+            {
+              "heading": "Lorsqu’un changement survient",
+              "body": "Ajoutez référence, version du lecteur et éventuel changement de réseau précédant le symptôme. Avec consentement, le formulaire enregistre la demande chez Opplex. N’incluez ni mots de passe, ni carte bancaire, ni codes de vérification."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Vos questions 5G Live sur le réseau et l’usage quotidien",
+          "description": "Comprenez la marque 5G Live, les coûts de données, les limites de connexion et les services centraux.",
+          "intro": "Une formule de service et une connexion Internet sont deux achats distincts. Ces réponses vous aident à évaluer les caractéristiques réelles de 5G Live sans vous fier seulement à son nom.",
+          "sections": [
+            {
+              "heading": "Une connexion mobile 5G est-elle obligatoire ?",
+              "body": "Le nom ne définit aucune technologie de réseau requise et ne garantit aucune couverture. Faites confirmer les besoins de votre appareil et de votre usage auprès de l’assistance."
+            },
+            {
+              "heading": "Les données mobiles sont-elles incluses ?",
+              "body": "Aucun volume de données mobiles n’est promis ici. Vérifiez consommation, itinérance et frais directement auprès de votre fournisseur Internet ou opérateur."
+            },
+            {
+              "heading": "Puis-je passer d’un écran à l’autre ?",
+              "body": "Respectez la formule et les usages autorisés. Plusieurs applications installées n’autorisent pas automatiquement l’accès simultané. Le paiement se fait sur Opplexify et le compte reste dans le portail Opplex."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Choisissez une formule 5G Live aux limites adaptées",
+          "description": "Comparez les prix et caractéristiques actuels de 5G Live IPTV, puis vérifiez votre commande sur Opplexify.",
+          "intro": "Toutes les formules 5G Live actuelles figurent ici, avec leur prix, durée et limites issus du catalogue central. Cet achat reste distinct des données mobiles, de l’accès Internet et de la licence du lecteur.",
+          "sections": [
+            {
+              "heading": "Tenez compte du réseau habituel",
+              "body": "Vérifiez l’appareil et les frais auprès de votre opérateur. Une durée plus longue n’améliore pas le signal, ne supprime pas l’itinérance et ne garantit aucune qualité de source."
+            },
+            {
+              "heading": "Contrôlez avant le règlement",
+              "body": "Sur Opplexify, relisez la formule, la devise et le total, puis suivez la commande dans le compte central. Si les détails ne s’affichent pas, demandez le tarif actuel à l’assistance."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Un projet commercial 5G Live aux conditions précises",
+          "description": "Renseignez-vous sur un éventuel accord de revente 5G Live et les permissions distinctes de l’accès personnel.",
+          "intro": "Si vous souhaitez servir des clients, annoncez ce projet avant d’acheter. Une formule 5G Live pour particuliers n’accorde à elle seule ni droits de revente, ni panneau de gestion, ni permission de partage.",
+          "sections": [
+            {
+              "heading": "Décrivez votre service envisagé",
+              "body": "Présentez les appareils, connexions et besoins d’assistance probables de vos clients. Demandez quels accords sont éventuellement disponibles et quelles responsabilités et restrictions s’appliqueraient."
+            },
+            {
+              "heading": "Faites confirmer chaque condition",
+              "body": "Prix, panneau et crédits exigent une confirmation séparée. Cette page ne promet ni marge ni service de réseau mobile. Les tarifs d’un autre fournisseur ne constituent pas un devis 5G Live et un compte personnel ne doit pas être redistribué."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Choisissez votre lecteur 5G Live selon l’appareil",
+          "description": "Vérifiez les téléchargements officiels, les commandes mobiles, les réglages de données et les licences séparées.",
+          "intro": "Un lecteur agréable sur téléviseur peut être peu pratique sur téléphone. Choisissez d’abord un logiciel compatible avec votre appareil, puis examinez les commandes et les paramètres de connexion.",
+          "sections": [
+            {
+              "heading": "Installez depuis une source reconnue",
+              "body": "Utilisez la boutique officielle ou le téléchargement publié par le développeur. Confirmez les versions prises en charge et les éventuels frais de licence. Acheter un lecteur n’inclut pas automatiquement une formule 5G Live."
+            },
+            {
+              "heading": "Examinez le fonctionnement mobile",
+              "body": "Vérifiez lisibilité, rotation et réglages documentés de consommation. Les restrictions de batterie ou de données peuvent affecter la lecture. Faites confirmer la compatibilité avant de saisir vos identifiants et évitez les installateurs demandant des accès inutiles."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Installez 5G Live avec une connexion de départ stable",
+          "description": "Préparez votre appareil 5G Live en vérifiant commande, réseau et étapes de dépannage sur mobile ou à domicile.",
+          "intro": "Pour la première installation, utilisez si possible une connexion stable que vous connaissez. Alterner Wi-Fi, données mobiles et partage de connexion pendant le même essai rend les erreurs plus difficiles à comprendre.",
+          "sections": [
+            {
+              "heading": "Préparez appareil et commande",
+              "body": "Vérifiez la commande centrale, mettez l’appareil à jour et notez la version du lecteur. Avant un essai mobile, contrôlez les limites de données de votre opérateur : la formule ne fournit aucun forfait réseau."
+            },
+            {
+              "heading": "Modifiez une seule condition",
+              "body": "Suivez le guide central correspondant. Si vous comparez des réseaux, notez celui concerné et respectez les restrictions géographiques. Gardez vos identifiants privés et transmettez l’erreur exacte sans tout réinitialiser plusieurs fois."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Préparez votre séance de cinéma avec 5G Live",
+          "description": "Un guide 5G Live sur la disponibilité légale des films, les données mobiles et les réglages utiles.",
+          "intro": "Avant un film, vérifiez sa présence auprès d’une source autorisée dans votre région et l’adéquation de votre connexion. Cette page reste un guide ; elle ne présente pas un catalogue de films inclus dans 5G Live.",
+          "sections": [
+            {
+              "heading": "Confirmez d’abord l’accès",
+              "body": "Un titre cité dans un article ou un résultat de recherche n’est pas nécessairement compris dans la formule. Vérifiez le film, la langue et les sous-titres auprès d’une source autorisée."
+            },
+            {
+              "heading": "Connaissez le coût de la connexion",
+              "body": "Consultez le volume de données et l’itinérance de votre opérateur. Prévoyez l’alimentation et les options documentées du lecteur. Ni l’icône 5G ni la marque ne promettent une qualité d’image particulière."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Les vérifications matérielles utiles pour 5G Live",
+          "description": "Un guide 5G Live sur l’alimentation, la connexion et la compatibilité avant l’achat d’équipement.",
+          "intro": "Un accessoire est utile lorsqu’il répond à un besoin identifié. Ce guide ne représente pas un catalogue de produits et ne garantit pas qu’un point d’accès, câble ou lecteur neuf améliorera le service.",
+          "sections": [
+            {
+              "heading": "Identifiez le besoin concret",
+              "body": "Distinguez alimentation, compatibilité, Wi-Fi instable et autres causes. Vérifiez la prise en charge officielle avant d’acheter un adaptateur ou un écran. Le débit annoncé ne décrit pas votre couverture réelle."
+            },
+            {
+              "heading": "Lisez les conditions séparées",
+              "body": "Examinez garantie et retours auprès du vendeur, données auprès de l’opérateur et licence auprès du lecteur. Faites confirmer le modèle précis par l’assistance avant de dépenser pour une solution supposée."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Bien commencer après votre commande 5G Live",
+          "description": "Vérifiez votre commande 5G Live et demandez une aide à l’activation dans les services Opplex communs.",
+          "intro": "Après le paiement, consultez la commande dans le portail client central avant l’installation. Si l’état reste ambigu, demandez sa vérification avant de payer à nouveau ou de suivre l’activation d’une autre application.",
+          "sections": [
+            {
+              "heading": "Gardez votre référence accessible",
+              "body": "Notez la formule, la référence et l’appareil envisagé. La licence du lecteur et le forfait mobile restent distincts du service, même si chacun utilise le mot activation."
+            },
+            {
+              "heading": "Décrivez l’étape à clarifier",
+              "body": "Précisez si le problème concerne la commande ou un écran de l’appareil. Une demande d’activation n’ouvre pas automatiquement l’accès et ne garantit pas une réponse immédiate. N’y joignez pas d’identifiants privés ou de données confidentielles de paiement."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Un message utile pour l’activation 5G Live",
+          "description": "Rassemblez commande, appareil et connexion dans une demande 5G Live qui protège vos informations privées.",
+          "intro": "Expliquez l’étape qui s’est arrêtée, pas uniquement le résultat. Gardez la référence de commande à côté des informations de l’appareil et précisez si vous utilisiez le Wi-Fi ou les données mobiles.",
+          "sections": [
+            {
+              "heading": "Transmettez le contexte pertinent",
+              "body": "Ajoutez la référence, l’heure approximative, la version du lecteur et le message exact. Signalez un changement de réseau juste avant le problème. Aucun mot de passe Wi-Fi ni réglage privé du routeur n’est nécessaire."
+            },
+            {
+              "heading": "Protégez compte et paiement",
+              "body": "Masquez les champs personnels et excluez mots de passe, codes temporaires et carte complète. Le consentement permet au système Opplex de traiter la demande. L’envoi du message ne confirme ni paiement ni activation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Les guides 5G Live pour petits écrans et réseaux changeants",
+          "description": "Consultez les guides 5G Live sur les listes lisibles, les comparaisons de réseau et les demandes d’aide mobiles.",
+          "intro": "Un téléphone ou une installation portable demande de prêter attention à la navigation, aux données, à la batterie et à la connexion disponible. Ces guides distinguent ces questions pour faciliter les décisions.",
+          "sections": [
+            {
+              "heading": "Simplifiez l’usage quotidien",
+              "body": "Le guide des listes propose une sélection facile à parcourir. Celui sur la lecture explique les comparaisons de réseau progressives. Aucun ne promet qu’un nouvel appareil ou un réseau annoncé plus rapide réglera tous les problèmes."
+            },
+            {
+              "heading": "Préparez un signalement utile",
+              "body": "L’article d’assistance distingue détails mobiles utiles et informations privées. Les conseils supposent un accès légal dans les limites de la formule ; ils ne fournissent ni droits de contenu, ni données mobiles, ni compatibilité universelle."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Conditions 5G Live et responsabilités de connexion",
+          "description": "Consultez les règles Opplex sur l’achat 5G Live, le renouvellement, le compte et les droits légaux.",
+          "intro": "Les commandes 5G Live sont régies par les conditions générales Opplex centrales. Ce résumé distingue le service de votre appareil, lecteur et connexion ; lisez le texte intégral lié et la commande Opplexify avant de payer.",
+          "sections": [
+            {
+              "heading": "L’achat que vous confirmez",
+              "body": "Fournissez des informations exactes et vérifiez période et total. Il n’existe aucun renouvellement automatique. À l’échéance, vous décidez d’acheter à nouveau selon l’offre actuelle ; aucun volume de données mobiles n’est promis."
+            },
+            {
+              "heading": "Usage autorisé du compte",
+              "body": "Sécurisez vos identifiants, respectez droit d’auteur, restrictions géographiques et limites de formule. Ne modifiez, revendez ou redistribuez pas l’accès destiné aux particuliers. Les abus et fraudes peuvent entraîner suspension ou résiliation."
+            },
+            {
+              "heading": "Facteurs extérieurs à la formule",
+              "body": "La connexion, l’appareil et les applications tierces influencent la lecture. Des interruptions techniques ou de maintenance sont possibles. Les conditions centrales traitent des préjudices indirects et plafonnent la responsabilité au montant des abonnements payé durant les trois derniers mois, sous réserve de la loi applicable."
+            },
+            {
+              "heading": "Règles de vente définitive",
+              "body": "Une fois le prix convenu et la commande confirmée, l’achat est définitif sauf remboursement légalement obligatoire. Consultez la politique de remboursement avant paiement. Aucun droit que la loi interdit d’exclure n’est supprimé par ce résumé."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Confidentialité 5G Live, du navigateur à l’assistance",
+          "description": "Comprenez les demandes 5G Live, la mesure facultative et les services externes de discussion et de paiement.",
+          "intro": "Même lorsque le téléphone change de réseau, vous devez pouvoir comprendre où part votre demande. Ce résumé décrit le parcours Opplex commun ; la politique de confidentialité centrale liée régit le service et fournit les coordonnées utiles.",
+          "sections": [
+            {
+              "heading": "Informations transmises pour l’aide",
+              "body": "Avec votre accord de contact, nom, adresse électronique, téléphone et message sont envoyés au système client principal avec le site d’origine. Ajoutez seulement les détails utiles à l’installation. Le consentement à cette demande n’autorise pas une prospection sans rapport."
+            },
+            {
+              "heading": "Mémorisation de votre choix",
+              "body": "La mesure facultative est désactivée par défaut et le navigateur conserve votre choix. Lorsqu’elle est autorisée, un identifiant de session et des événements peuvent relier visites, paiement et commandes. Vous pouvez revenir aux commandes de confidentialité pour modifier cette préférence."
+            },
+            {
+              "heading": "Messagerie et paiement",
+              "body": "WhatsApp, Tawk et Opplexify assurent leurs étapes respectives selon leurs propres conditions de confidentialité. Les sites et services consultés peuvent aussi traiter des informations techniques de navigation et des cookies."
+            },
+            {
+              "heading": "Données privées du réseau et du compte",
+              "body": "Pour expliquer une difficulté de connexion, ne transmettez ni mot de passe de routeur, ni identifiant secret, ni code temporaire, ni donnée de paiement confidentielle. Adressez les questions de confidentialité à l’adresse d’assistance principale affichée."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Vérifiez les conditions d’annulation et de remboursement 5G Live",
+          "description": "Lisez les règles de vente définitive 5G Live et l’exception pour les remboursements imposés par la loi.",
+          "intro": "Vérifiez appareil, connexion et formule avant l’achat. La politique centrale de remboursement et d’annulation, en vigueur depuis le 30 août 2026, régit les commandes 5G Live ; consultez son texte intégral avec ce résumé.",
+          "sections": [
+            {
+              "heading": "Une commande confirmée est définitive",
+              "body": "Lorsque le prix est convenu et la commande confirmée, l’achat est définitif et non remboursable, sauf exigence de la loi applicable. Périodes activées, partiellement utilisées ou inutilisées, promotions, installation et activation sont couvertes sans remboursement, avoir ou échange au titre de la politique."
+            },
+            {
+              "heading": "Arrêt ou perte de connexion",
+              "body": "Vous pouvez cesser l’utilisation sans que cela crée un droit à remboursement ou à avoir. Les difficultés Internet ou incompatibilités d’appareil côté client ne sont pas admissibles selon la politique. Les droits légaux au remboursement qui ne peuvent être exclus restent préservés."
+            },
+            {
+              "heading": "Présenter une demande fondée sur la loi",
+              "body": "Écrivez à info@opplexiptv.com avec la référence et le motif si vous estimez qu’un remboursement est exigé par la loi. Il est alors effectué sur le moyen de paiement d’origine dans le délai légal ou du prestataire. Aucun retour physique ne s’applique aux services livrés numériquement."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/build-a-manageable-mobile-playlist",
+          "title": "Une liste 5G Live pratique sur petit écran",
+          "description": "Un guide 5G Live pour des favoris lisibles et une organisation prudente sur téléphone ou appareil portable.",
+          "intro": "Une longue liste utilisable à la télécommande peut devenir peu pratique sur téléphone. Les outils documentés du lecteur peuvent simplifier la navigation sans remplacer une configuration fonctionnelle par des sources inconnues.",
+          "sections": [
+            {
+              "heading": "Rendez le premier écran utile",
+              "body": "Si le lecteur le permet, créez quelques favoris et vérifiez taille du texte ou orientation. Organisez uniquement des sources autorisées : renommer une catégorie ne modifie ni les limites de formule ni les droits d’accès."
+            },
+            {
+              "heading": "Actualisez délibérément",
+              "body": "Notez la configuration en privé avant une actualisation documentée. Évitez de changer continuellement de réseau pendant l’essai. En cas de résultat inattendu, relevez appareil et version, sans publier d’adresse de liste."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/check-playback-when-your-network-changes",
+          "title": "Vérifiez la lecture 5G Live après un changement de réseau",
+          "description": "Comparez Wi-Fi et données mobiles avec 5G Live en tenant compte des coûts et des restrictions géographiques.",
+          "intro": "Un problème apparu en quittant le domicile peut avoir plusieurs causes. Notez d’abord le changement de connexion et gardez les tarifs de données et d’itinérance à l’esprit pendant les essais.",
+          "sections": [
+            {
+              "heading": "Gardez les autres conditions identiques",
+              "body": "Comparez avec le même appareil, la même version du lecteur et une source autorisée identique. Distinguez erreur, coupure et changement de qualité. L’icône 5G ne mesure pas la stabilité et ne garantit pas un débit."
+            },
+            {
+              "heading": "Décrivez la différence observée",
+              "body": "Notez le réseau fonctionnel et l’heure du problème. Vérifiez progressivement les restrictions documentées de batterie ou de données. Si une limite géographique est possible, demandez de l’aide sans la contourner ni partager vos identifiants réseau."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/report-a-mobile-playback-problem-clearly",
+          "title": "Signalez clairement un problème de lecture mobile 5G Live",
+          "description": "Préparez une demande 5G Live ciblée avec appareil, réseau et erreur tout en protégeant les données privées.",
+          "intro": "Une capture de téléphone peut révéler davantage que prévu. Notez d’abord le symptôme et préparez seulement les éléments nécessaires, en gardant la référence de commande distincte des identifiants confidentiels.",
+          "sections": [
+            {
+              "heading": "Décrivez le changement pertinent",
+              "body": "Précisez modèle, version du lecteur et connexion : Wi-Fi, données mobiles ou point d’accès. Indiquez si le problème suit un changement de réseau, une mise à jour ou un réglage, puis recopiez l’erreur exacte."
+            },
+            {
+              "heading": "Gardez un suivi ciblé",
+              "body": "Listez les essais et recadrez les captures autour du message. N’envoyez aucun mot de passe, code, identifiant de routeur ou donnée de carte. Poursuivez si possible le même échange pour conserver les comparaisons précédentes."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    }
+  }
+}

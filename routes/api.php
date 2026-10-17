@@ -150,6 +150,9 @@ Route::prefix('api/v1/site')->name('api.site.')->middleware([ApiJsonResponse::cl
     Route::get('providers/{package}/plans', [\App\Http\Controllers\Api\PublicSiteController::class, 'providerPlans'])->whereNumber('package')->name('providers.plans');
     Route::get('brands/{brand}/plans', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingPlans'])->where('brand', 'trex|opplex|geo|5g')->name('brands.plans');
     Route::get('brands/{brand}/content', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingContent'])->where('brand', 'trex|opplex|geo|5g')->name('brands.content');
+    Route::get('brands/{brand}/pages', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingPages'])->where('brand', 'trex|opplex|geo|5g')->name('brands.pages.index');
+    Route::get('brands/{brand}/pages/{page}', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingPage'])
+        ->where(['brand' => 'trex|opplex|geo|5g', 'page' => '(?:blogs/)?[a-z0-9]+(?:-[a-z0-9]+)*'])->name('brands.pages.show');
     Route::get('blogs', [\App\Http\Controllers\Api\PublicSiteController::class, 'blogs'])->name('blogs.index');
     Route::get('blogs/{slug}', [\App\Http\Controllers\Api\PublicSiteController::class, 'blog'])->name('blogs.show');
 });

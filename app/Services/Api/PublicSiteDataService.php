@@ -552,6 +552,64 @@ class PublicSiteDataService
         ];
     }
 
+    public function landingPages(string $brand): array
+    {
+        abort_unless(isset(self::LANDING_BRANDS[$brand]), 404);
+        $locale = app()->getLocale();
+        abort_unless(preg_match('/^[a-z]{2}$/D', $locale) && in_array($locale, config('app.locales', ['en']), true), 404);
+        $path = resource_path('content/landing-pages/'.$locale.'.json');
+        abort_unless(is_file($path) && is_readable($path), 404);
+        $document = json_decode(file_get_contents($path), true);
+        abort_unless(is_array($document), 503);
+        abort_unless(($document['locale'] ?? null) === $locale, 404);
+        $labels = $document['labels'] ?? null;
+        $pages = $document['brands'][$brand]['pages'] ?? null;
+        abort_unless(is_array($labels) && is_array($pages) && array_is_list($pages), 503);
+        foreach ($labels as $label) {
+            abort_unless(is_string($label) && trim($label) !== '', 503);
+        }
+        $seen = [];
+        $pages = array_map(function ($page) use (&$seen): array {
+            abort_unless(is_array($page), 503);
+            foreach (['slug', 'title', 'description', 'intro', 'kind'] as $field) {
+                abort_unless(isset($page[$field]) && is_string($page[$field]) && trim($page[$field]) !== '', 503);
+            }
+            $slug = $page['slug'];
+            abort_unless(preg_match('~^(?:blogs/)?[a-z0-9]+(?:-[a-z0-9]+)*$~D', $slug), 503);
+            abort_if(isset($seen[$slug]) || in_array($slug, ['pricing', 'iptv-subscription-service'], true), 503);
+            $seen[$slug] = true;
+            abort_unless(isset($page['sections']) && is_array($page['sections']) && array_is_list($page['sections']), 503);
+            $sections = array_map(function ($section): array {
+                abort_unless(is_array($section) && isset($section['heading'], $section['body'])
+                    && is_string($section['heading']) && is_string($section['body'])
+                    && trim($section['heading']) !== '' && trim($section['body']) !== '', 503);
+
+                return ['heading' => $section['heading'], 'body' => $section['body']];
+            }, $page['sections']);
+
+            return [
+                'slug' => $slug,
+                'title' => $page['title'],
+                'description' => $page['description'],
+                'intro' => $page['intro'],
+                'kind' => $page['kind'],
+                'sections' => $sections,
+            ];
+        }, $pages);
+
+        return ['brand' => $brand, 'locale' => $locale, 'labels' => $labels, 'pages' => $pages];
+    }
+
+    public function landingPage(string $brand, string $page): array
+    {
+        abort_unless(preg_match('~^(?:blogs/)?[a-z0-9]+(?:-[a-z0-9]+)*$~D', $page), 404);
+        $data = $this->landingPages($brand);
+        $selected = collect($data['pages'])->firstWhere('slug', $page);
+        abort_unless($selected, 404);
+
+        return ['brand' => $brand, 'locale' => $data['locale'], 'labels' => $data['labels'], 'page' => $selected];
+    }
+
     private function isLandingBrandPackage(Package $package): bool
     {
         if ($package->type !== 'iptv' || $package->vendor !== 'opplex') {

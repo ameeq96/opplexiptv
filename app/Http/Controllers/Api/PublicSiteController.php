@@ -55,6 +55,16 @@ class PublicSiteController extends Controller
         return response()->json(['data' => $this->site->landingContent($brand)]);
     }
 
+    public function landingPages(string $brand)
+    {
+        return response()->json(['data' => $this->site->landingPages($brand)]);
+    }
+
+    public function landingPage(string $brand, string $page)
+    {
+        return response()->json(['data' => $this->site->landingPage($brand, $page)]);
+    }
+
     public function products(Request $request)
     {
         $data = $request->validate([
