@@ -35,6 +35,10 @@
             {
               "heading": "Un percorso collegato",
               "body": "I piani arrivano da Opplex IPTV, il pagamento continua su Opplexify e account e assistenza restano nel portale centrale. Non serve un altro account per questo sito."
+            },
+            {
+              "heading": "Valuta se una durata lunga ti conviene",
+              "body": "Trex aiuta a preparare il dispositivo prima di un acquisto annuale: identifica schermo e lettore, chiarisci i costi dell'app e valuta per quanto tempo ti serve il servizio. Catalogo, account e assistenza condivisi Opplex gestiscono l'ordine; queste guide non rappresentano un'altra azienda di assistenza."
             }
           ],
           "kind": "editorial"
@@ -52,6 +56,10 @@
             {
               "heading": "Per un ordine esistente",
               "body": "Tieni pronta la referenza e descrivi l'ultimo passaggio riuscito. Con il consenso, il modulo registra la richiesta in Opplex e apre il canale scelto; non invia da solo un messaggio WhatsApp. Non condividere password o codici."
+            },
+            {
+              "heading": "Una domanda utile prima dell'acquisto annuale",
+              "body": "Indica la durata Trex che valuti, il modello del televisore e nome/versione del lettore. Spiega cosa vuoi confermare prima di decidere. Per un acquisto esistente, invia il riferimento tramite assistenza privata, non in un post; non includere mai la password del servizio."
             }
           ],
           "kind": "contact"
@@ -63,29 +71,33 @@
           "intro": "Conoscere i limiti rende più semplice scegliere. Queste verifiche riguardano una normale configurazione televisiva; per il tuo modello chiedi conferma all'assistenza.",
           "sections": [
             {
-              "heading": "8K e più dispositivi",
-              "body": "Il marchio non garantisce sorgenti 8K. Installare un'app su vari apparecchi non autorizza l'uso simultaneo: rispetta le connessioni previste dal piano."
+              "heading": "Il nome garantisce la risoluzione 8K?",
+              "body": "Il nome della marca non garantisce sorgenti 8K. La qualità dipende dalla sorgente, dal lettore, dallo schermo e dalla connessione."
             },
             {
               "heading": "Perché si apre Opplexify?",
               "body": "Opplexify gestisce la fase di pagamento. Controlla servizio, durata, valuta e totale prima di confermare. L'account cliente resta nel portale centrale Opplex."
+            },
+            {
+              "heading": "Quante connessioni simultanee sono incluse?",
+              "body": "Ogni piano Trex include una connessione simultanea. Più lettori installati non consentono riproduzioni contemporanee. Chiedi le condizioni per cambiare dispositivo; né la durata annuale né il nome 8K aumentano questo limite."
             }
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Un'unica pagina per i pacchetti Trex",
-          "description": "Confronta prezzi e durate Trex aggiornati dalla fonte centrale.",
-          "intro": "Qui trovi le opzioni Trex attualmente disponibili, senza una seconda pagina prezzi con la stessa selezione. I dati del catalogo prevalgono su vecchie schermate.",
+          "title": "Piani Trex IPTV: prezzo, durata e verifica del dispositivo",
+          "description": "Consulta prezzo e durata Trex IPTV, con una connessione simultanea e i controlli utili prima di scegliere un anno.",
+          "intro": "Prima di impegnarti per un anno di Trex, verifica il televisore e il lettore che userai. Confronta prezzo totale e durata indicati; l'eventuale equivalente mensile serve al confronto, non significa che il pagamento avvenga ogni mese.",
           "sections": [
             {
-              "heading": "Verifica prima la configurazione",
-              "body": "Conferma lettore, luogo di utilizzo e connessioni consentite. Una durata maggiore non migliora automaticamente le capacità del televisore."
+              "heading": "Una connessione, non più schermi contemporanei",
+              "body": "Ogni piano Trex include una connessione simultanea. Installare il lettore su più dispositivi non aggiunge connessioni. Se ti occorrono più riproduzioni contemporanee, chiedi all'assistenza un'opzione adatta prima di pagare."
             },
             {
-              "heading": "Considera l'intero importo",
-              "body": "L'equivalente mensile è un confronto, non una fatturazione mensile. La scelta passa a Opplexify: verifica valuta, totale e costi finali. Se il catalogo non risponde, chiedi assistenza."
+              "heading": "Verifica la configurazione prima dell'impegno",
+              "body": "Conferma modello esatto, versione del lettore ed eventuale licenza separata. Controlla pacchetto, valuta e totale su Opplexify. Aprire il checkout non conferma il pagamento: consulta l'ordine nell'account centrale e chiedi chiarimenti se le istruzioni di attivazione non sono chiare."
             }
           ],
           "kind": "packages"
@@ -120,6 +132,10 @@
             {
               "heading": "Pensa all'uso quotidiano",
               "body": "Sul televisore verifica telecomando e leggibilità; sul telefono orientamento e comandi. Un'app non concede automaticamente contenuti o diritti. Chiarisci i dubbi prima di inserirvi credenziali."
+            },
+            {
+              "heading": "Verifica l'uso quotidiano, non solo l'installazione",
+              "body": "Consulta la documentazione su telecomando, ricerca, preferiti e sottotitoli. Un'installazione riuscita non dimostra compatibilità del servizio o qualità dell'immagine. Chiedi per modello/versione esatti e tieni separati acquisto del servizio e licenza del lettore."
             }
           ],
           "kind": "editorial"
@@ -137,6 +153,10 @@
             {
               "heading": "Annota informazioni utili",
               "body": "Conserva nome e versione del lettore e riferimento dell'ordine. Segui la guida centrale adatta. Se qualcosa fallisce, annota il messaggio esatto invece di reinstallare continuamente o pubblicare credenziali."
+            },
+            {
+              "heading": "Controlla le basi prima di inserire gli accessi",
+              "body": "1. Trova modello e versione del sistema. 2. Consulta compatibilità e licenza ufficiali del lettore. 3. Verifica il normale accesso a internet su quel dispositivo. 4. Controlla l'ordine nell'account centrale. Se un passaggio è incerto, chiedi prima di reinstallare o acquistare di nuovo."
             }
           ],
           "kind": "editorial"
@@ -213,7 +233,7 @@
           "slug": "blogs",
           "title": "Guide Trex per una configurazione più ordinata",
           "description": "Articoli originali su liste autorizzate, controlli di riproduzione e assistenza.",
-          "intro": "Piccole modifiche reversibili aiutano più di molte impostazioni copiate senza contesto. Le guide Trex partono dal dispositivo che hai davanti.",
+          "intro": "Parti dalla guida alle playlist Trex se il telecomando rende difficile orientarsi, dalla catena di riproduzione se l'immagine si blocca o cambia, oppure dal modello di richiesta per l'assistenza. Sono controlli pratici per il tuo televisore, non prove che ogni dispositivo sia stato testato.",
           "sections": [
             {
               "heading": "Crea una base chiara",
@@ -290,6 +310,10 @@
             {
               "heading": "Una modifica reversibile",
               "body": "Aggiorna dai comandi documentati e verifica una selezione esistente. Se sparisce qualcosa, annota il cambiamento prima di riprovare. Non pubblicare indirizzi di playlist o credenziali."
+            },
+            {
+              "heading": "Un piccolo controllo reversibile",
+              "body": "1. Annota in privato il nome originale della categoria. 2. Aggiungi pochi elementi autorizzati ai preferiti con i comandi documentati. 3. Riapri i preferiti con il telecomando e controlla i nomi. Se manca un elemento, cerca nella categoria originale prima di cancellare o sostituire la playlist."
             }
           ],
           "kind": "article"
@@ -307,6 +331,10 @@
             {
               "heading": "Conserva il risultato",
               "body": "Prova un'impostazione documentata e ripristinala se inutile. Comunica orario, modello e versione. La risoluzione pubblicizzata del televisore o il nome Trex non garantiscono la riproduzione."
+            },
+            {
+              "heading": "Separa navigazione e riproduzione",
+              "body": "Se i menu rispondono ma un elemento non parte, annota in privato quale e l'errore esatto. Se ne falliscono diversi, controlla internet sullo stesso dispositivo. Cambia un solo parametro documentato o collegamento e ripristinalo se non aiuta. Non aprire un secondo flusso simultaneo come prova."
             }
           ],
           "kind": "article"
@@ -324,6 +352,10 @@
             {
               "heading": "Mostra solo ciò che serve",
               "body": "Ritaglia le immagini e nascondi i dati di account. Elenca i controlli già fatti e continua nella stessa conversazione. Non inviare password, codici temporanei o dati completi della carta."
+            },
+            {
+              "heading": "Un messaggio illustrativo da compilare",
+              "body": "Modello, non caso reale: Dispositivo [modello/sistema]; lettore [nome/versione]; ordine [riferimento, solo in privato]; azione [cosa ho premuto]; risultato [messaggio esatto]; estensione [uno o più elementi]; controllo [una modifica e risultato]. Allega solo l'errore ritagliato, nascondendo credenziali e dati personali."
             }
           ],
           "kind": "article"
@@ -346,6 +378,10 @@
             {
               "heading": "Assistenza che continua",
               "body": "La selezione passa a Opplexify e l'account rimane su Opplex IPTV. Non occorre un nuovo profilo solo perché hai iniziato da questo dominio."
+            },
+            {
+              "heading": "Distingui selezione, pagamento e accesso",
+              "body": "Questo store aiuta a scegliere la durata e a seguire lo stesso ordine nel sistema condiviso. Scegliere un pacchetto, aprire Opplexify e leggere uno stato sono passaggi distinti. Conserva il riferimento per chiarire dubbi di pagamento o configurazione senza ricominciare con un altro account."
             }
           ],
           "kind": "editorial"
@@ -363,6 +399,10 @@
             {
               "heading": "Dopo l'acquisto",
               "body": "Aggiungi riferimento e ultimo passaggio riuscito senza password o codici. Il modulo salva la richiesta dopo consenso e apre il canale scelto; in WhatsApp devi ancora inviare il messaggio."
+            },
+            {
+              "heading": "Indica in quale fase serve aiuto",
+              "body": "Spiega se scegli una durata, controlli un pagamento o configuri un ordine esistente. Aggiungi pacchetto, riferimento disponibile e stato esatto. Comunica l'email d'acquisto solo tramite modulo privato se necessaria; non inviare dati della carta o codici di verifica."
             }
           ],
           "kind": "contact"
@@ -379,24 +419,28 @@
             },
             {
               "heading": "La licenza del lettore è compresa?",
-              "body": "Non presumerlo: un'app può richiedere un pagamento distinto. Conferma modello e connessioni simultanee. Account e assistenza ordini restano sul portale centrale."
+              "body": "Non presumerlo: un'app può richiedere un pagamento distinto. Conferma il modello esatto; il piano include una connessione simultanea. Account e assistenza ordini restano sul portale centrale."
+            },
+            {
+              "heading": "Un piano più lungo include più connessioni?",
+              "body": "No. Ogni piano Opplex include una connessione simultanea. Confronta durata e prezzo totale senza supporre che più tempo permetta più schermi insieme. Chiedi le regole per cambiare dispositivo prima di farvi affidamento."
             }
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Confronta le durate Opplex in una pagina",
-          "description": "Tutte le opzioni Opplex aggiornate con prezzi centrali e una sola strada verso il pagamento.",
-          "intro": "Scegli in base a quanto conosci la tua configurazione. Il valore mensile equivalente più basso può corrispondere a una spesa iniziale maggiore.",
+          "title": "Pacchetti Opplex IPTV: durate e prezzi totali",
+          "description": "Confronta durate e prezzi Opplex IPTV, con una connessione simultanea e un percorso chiaro fino al pagamento e all'account centrale.",
+          "intro": "Scegli un periodo che pensi di utilizzare davvero e confronta il suo prezzo totale. Un equivalente mensile inferiore non promette fatturazione mensile. Ogni piano Opplex include una connessione simultanea; una durata maggiore non aggiunge schermi contemporanei.",
           "sections": [
             {
-              "heading": "Confronta dati omogenei",
-              "body": "Guarda durata completa, totale e connessioni. L'equivalente mensile è un confronto, non una promessa di addebiti mensili."
+              "heading": "Adatta la durata alla tua scelta",
+              "body": "Se dispositivo o lettore sono ancora incerti, chiarisci prima di impegnarti più a lungo. Confronta insieme valuta, importo completo, durata e limite di una connessione. Controlla separatamente eventuali costi del lettore, senza considerarli inclusi."
             },
             {
-              "heading": "Controlla la conferma finale",
-              "body": "Premi il pulsante del piano desiderato e verifica i dati su Opplexify. Se il catalogo non carica, chiedi aiuto invece di usare una vecchia schermata come offerta attuale."
+              "heading": "Mantieni un unico percorso d'ordine",
+              "body": "Il pacchetto selezionato continua su Opplexify per il pagamento; account e assistenza rimangono nel sistema principale Opplex. Conferma pacchetto e importo. Se la schermata si chiude o lo stato è poco chiaro, controlla l'ordine o chiedi assistenza prima di iniziare un altro acquisto."
             }
           ],
           "kind": "packages"
@@ -431,6 +475,10 @@
             {
               "heading": "Installa consapevolmente",
               "body": "Usa store ufficiale o sviluppatore. Installare un lettore non fornisce contenuti o diritti di accesso. Completa la verifica di compatibilità prima di impegnarti per un periodo lungo."
+            },
+            {
+              "heading": "Separa tre requisiti diversi",
+              "body": "Verifica se l'app supporta il dispositivo, se lo sviluppatore richiede una licenza e se ammette il metodo di configurazione necessario. Sono domande distinte. La ricevuta dell'app non è un ordine Opplex e un piano Opplex non paga automaticamente una licenza di terzi."
             }
           ],
           "kind": "editorial"
@@ -448,6 +496,10 @@
             {
               "heading": "Annota per l'assistenza",
               "body": "Conserva messaggio e ultima modifica. Il portale centrale gestisce le domande sulla compra. Non pubblicare schermate contenenti credenziali o informazioni di pagamento."
+            },
+            {
+              "heading": "Controlla l'ordine prima di modificare il lettore",
+              "body": "1. Apri l'account centrale e trova l'ordine. 2. Annota stato e riferimento. 3. Consulta la guida ufficiale del dispositivo/lettore esatti. 4. Se stato o istruzioni restano poco chiari, chiedi con quel riferimento. Non pagare di nuovo per risolvere un errore del lettore."
             }
           ],
           "kind": "editorial"
@@ -524,7 +576,7 @@
           "slug": "blogs",
           "title": "Guide Opplex: una domanda pratica alla volta",
           "description": "Leggi articoli su playlist, controlli di qualità e conversazioni con l'assistenza.",
-          "intro": "Non serve conoscere ogni termine tecnico per creare una configurazione comprensibile. Inizia dalla domanda più concreta.",
+          "intro": "Scegli la guida Opplex in base alla fase: organizzare un lettore senza perdere la configurazione, isolare un sintomo o proseguire una richiesta con il riferimento corretto. Stato del pagamento e comportamento del lettore sono questioni distinte, e anche i loro controlli restano separati.",
           "sections": [
             {
               "heading": "Dalla preparazione all'uso",
@@ -601,6 +653,10 @@
             {
               "heading": "Aggiorna con uno scopo",
               "body": "Ricontrolla proprio l'elemento che aveva motivato la modifica. Annota ora e versione se il risultato cambia. Conserva in privato le impostazioni precedenti: una URL di playlist può contenere dati riservati."
+            },
+            {
+              "heading": "Conserva il contesto dell'account mentre riordini",
+              "body": "Prima dei preferiti, identifica in privato ordine e configurazione utilizzati. Cambia solo una visualizzazione o i preferiti, poi verifica un elemento autorizzato noto. Se l'accesso fallisce, conserva la configurazione e controlla l'ordine; non crearne un altro per riordinare una playlist."
             }
           ],
           "kind": "article"
@@ -618,6 +674,10 @@
             {
               "heading": "Confronta e ripristina",
               "body": "Prova un cambiamento, ad esempio cavo invece di Wi-Fi, conservando la configurazione iniziale. Comunica risultati e versioni. Comprare un altro piano non è una tecnica di diagnosi."
+            },
+            {
+              "heading": "Scegli il controllo dal sintomo",
+              "body": "Se lo stato dell'ordine è incerto, chiariscilo prima con l'assistenza. Se è chiaro ma l'app non si apre, consulta lo sviluppatore. Se si apre senza riprodurre, annota l'errore e prova una modifica alla volta, senza superare una connessione simultanea."
             }
           ],
           "kind": "article"
@@ -635,6 +695,10 @@
             {
               "heading": "Nascondi i dati privati",
               "body": "Condividi l'errore invece dell'intero account. Rimuovi credenziali e informazioni di carta. Non inviare codici unici né aprire richieste duplicate solo perché aspetti una risposta."
+            },
+            {
+              "heading": "Un esempio di aggiornamento sull'ordine",
+              "body": "Modello, non caso reale: Ordine [riferimento]; piano [durata]; stato account [testo esatto]; problema [pagamento o lettore]; dispositivo/lettore [versione, se utile]; ultimo controllo [azione e risultato]. Invia tramite assistenza privata, senza password, numero completo della carta o codici monouso."
             }
           ],
           "kind": "article"
@@ -652,11 +716,15 @@
           "sections": [
             {
               "heading": "Confronta dati concreti",
-              "body": "I piani Geo provengono dal catalogo Opplex. Considera durata, totale e connessioni insieme, non soltanto il numero più basso."
+              "body": "I piani Geo provengono dal catalogo Opplex. Considera durata, totale e l'unica connessione simultanea inclusa insieme, non soltanto il numero più basso."
             },
             {
               "heading": "Un servizio collegato",
               "body": "Checkout passa a Opplexify e supporto resta nell'account centrale. Il nome Geo non promette disponibilità mondiale, ogni lingua o assenza di restrizioni regionali."
+            },
+            {
+              "heading": "Confronta nelle condizioni che ti riguardano",
+              "body": "Le guide Geo propongono un confronto controllato: stessi dispositivo, versione e sorgente, una sola condizione modificata e risultato annotato. L'esperienza di un'altra persona con una configurazione diversa non prova la compatibilità della tua. Acquisti e assistenza restano nei servizi condivisi Opplex."
             }
           ],
           "kind": "editorial"
@@ -674,6 +742,10 @@
             {
               "heading": "Dati per questa richiesta",
               "body": "Con consenso, Opplex conserva contatti e messaggio e apre il canale scelto. Non condividere password o codici. Il salvataggio non invia automaticamente un messaggio WhatsApp."
+            },
+            {
+              "heading": "Spiega cosa resta uguale e cosa cambia",
+              "body": "Indica dispositivo/versione del lettore, paese se pertinente e lingua dell'interfaccia, poi la sola condizione cambiata. Includi l'errore originale oltre all'eventuale traduzione. Per una domanda generale non servono indirizzo completo o credenziali di rete."
             }
           ],
           "kind": "contact"
@@ -685,8 +757,8 @@
           "intro": "Il confronto è più utile quando poni le stesse domande a ciascun piano. Parti dall'utilizzo di tutti i giorni.",
           "sections": [
             {
-              "heading": "Tutti possono guardare insieme?",
-              "body": "Avere più app installate non autorizza altrettante riproduzioni simultanee. Controlla il numero di connessioni del piano e chiedi chiarimenti se manca."
+              "heading": "Quanti schermi possono riprodurre insieme?",
+              "body": "Ogni piano Geo include una connessione simultanea. Più installazioni o un'altra lingua della pagina non aggiungono flussi contemporanei. Nel confronto ferma una sessione prima dell'altra; chiedi eventuali condizioni per il cambio di dispositivo."
             },
             {
               "heading": "Geo funziona ovunque?",
@@ -697,17 +769,17 @@
         },
         {
           "slug": "packages",
-          "title": "Confronta i pacchetti Geo con gli stessi criteri",
-          "description": "Prezzi, durate e connessioni Geo aggiornati dal catalogo principale.",
-          "intro": "Questa pagina unica riunisce le opzioni. Periodo e costo totale devono corrispondere alle esigenze reali della tua casa.",
+          "title": "Pacchetti Geo IPTV: confronta gli stessi dettagli",
+          "description": "Confronta prezzi e durate Geo IPTV, con una connessione simultanea e requisiti coerenti di dispositivo e luogo.",
+          "intro": "Mantieni gli stessi requisiti nel confronto Geo: dispositivo, luogo previsto e funzioni essenziali del lettore. Confronta importo completo e durata indicati. Ogni piano include una connessione simultanea; una pagina tradotta non modifica questo limite.",
           "sections": [
             {
-              "heading": "Tieni insieme prezzo e durata",
-              "body": "Un termine più lungo può cambiare la media mensile, ma quella media non è una fattura mensile. Valuta l'importo dell'intero piano."
+              "heading": "Usa una sola lista di confronto",
+              "body": "Verifica per ogni opzione valuta, prezzo completo, durata, una connessione ed eventuali costi dell'app. Conferma luogo, lingua e accessibilità prima dell'acquisto. Un periodo più lungo non dimostra disponibilità più ampia o funzioni aggiuntive."
             },
             {
-              "heading": "Conferma la scelta",
-              "body": "L'opzione Geo passa dalla piattaforma principale a Opplexify. Controlla i dati conclusivi. In caso di catalogo non disponibile, chiedi aiuto senza usare un prezzo vecchio come conferma."
+              "heading": "Segui il pacchetto esatto fino al pagamento",
+              "body": "Controlla pacchetto Geo e importo finale su Opplexify prima di confermare. Ordini e assistenza usano l'account centrale Opplex. Se il catalogo non si carica o cambia un dettaglio al checkout, fermati e chiedi invece di confrontare prezzi ricordati."
             }
           ],
           "kind": "packages"
@@ -741,7 +813,11 @@
             },
             {
               "heading": "Rispetta fonti e limiti",
-              "body": "Installa da store ufficiale o sviluppatore. Il lettore non dà diritti sui contenuti protetti. Prima dell'uso simultaneo controlla le connessioni del piano anche se ogni app funziona da sola."
+              "body": "Installa da store ufficiale o sviluppatore. Il lettore non dà diritti sui contenuti protetti. Ogni piano include una connessione simultanea: più app installate non permettono di riprodurre su più schermi insieme."
+            },
+            {
+              "heading": "Confronta funzioni equivalenti",
+              "body": "Verifica versione del dispositivo, disponibilità nello store, lingua, sottotitoli e licenza di ogni lettore. Non confrontare app per telefono e televisore come se avessero le stesse funzioni. Un menu tradotto non dimostra quali tracce audio o sottotitoli contenga una sorgente."
             }
           ],
           "kind": "editorial"
@@ -759,6 +835,10 @@
             {
               "heading": "Segui il pacchetto",
               "body": "Le app installate non determinano quante riproduzioni sono consentite. Chiedi conferma del limite e usa il portale centrale per le domande sull'ordine."
+            },
+            {
+              "heading": "Crea un punto di confronto",
+              "body": "1. Annota dispositivo, versione del lettore e lingua. 2. Controlla l'ordine centrale. 3. Scegli un elemento autorizzato e una connessione consentita. 4. Registra il sintomo prima dei cambiamenti. Mantieni dispositivo e sorgente per il controllo seguente, senza una seconda riproduzione simultanea."
             }
           ],
           "kind": "editorial"
@@ -835,7 +915,7 @@
           "slug": "blogs",
           "title": "Guide Geo per confrontare e organizzare meglio",
           "description": "Articoli su nomi delle liste, prove nella tua configurazione e contesto regionale.",
-          "intro": "Quando ci sono più lingue o apparecchi, una descrizione precisa fa la differenza. Le guide Geo aiutano a raccogliere informazioni utili.",
+          "intro": "Le guide Geo aiutano a fare un confronto equo, non a raccogliere misurazioni di velocità scollegate. Parti da etichette riconoscibili, mantieni dispositivo e sorgente durante i controlli e usa il modello di contesto regionale per spiegare la differenza concreta osservata.",
           "sections": [
             {
               "heading": "Scegli una verifica concreta",
@@ -912,6 +992,10 @@
             {
               "heading": "Confronta con la sorgente",
               "body": "Aggiorna fonti autorizzate tramite comandi documentati. Se cambiano gruppi o etichette, segnala versione e lingua. Non pubblicare indirizzi di playlist: possono contenere accesso privato."
+            },
+            {
+              "heading": "Confronta un'etichetta senza cambiare sorgente",
+              "body": "1. Annota in privato il nome originale. 2. Aggiungilo ai preferiti se possibile. 3. Controlla lo stesso elemento dopo un cambio della lingua visualizzata. Un nome diverso non significa accesso diverso. Se l'elemento sparisce, ripristina l'impostazione e segnala la dicitura originale."
             }
           ],
           "kind": "article"
@@ -929,6 +1013,10 @@
             {
               "heading": "Chiarisci differenze territoriali",
               "body": "Se la disponibilità cambia con la località, chiedi quali usi siano consentiti. Non tentare di aggirare restrizioni. Comunica errore e regione senza pubblicare credenziali o dettagli privati di rete."
+            },
+            {
+              "heading": "Un confronto che puoi spiegare dopo",
+              "body": "Registra A: dispositivo, versione, elemento autorizzato, connessione e sintomo. Per B cambia solo un'impostazione o connessione consentita, mantenendo il resto. Ferma A prima di B per rispettare una connessione. Un miglioramento suggerisce la prossima domanda, ma non dimostra da solo la causa."
             }
           ],
           "kind": "article"
@@ -946,6 +1034,10 @@
             {
               "heading": "Prove mirate",
               "body": "Ritaglia immagini, nascondi campi personali e riporta i test nella stessa conversazione. Password, codici unici e dati di carta non sono dettagli necessari a questa diagnosi."
+            },
+            {
+              "heading": "Un rapporto comparativo illustrativo",
+              "body": "Modello, non caso reale: Paese [se pertinente]; dispositivo/lettore [versioni]; lingua [interfaccia]; errore originale [testo]; A [condizioni/risultato]; B [una condizione cambiata/risultato]; ordine [riferimento privato]. Nascondi credenziali e dati personali nelle immagini; non serve l'indirizzo completo."
             }
           ],
           "kind": "article"
@@ -968,6 +1060,10 @@
             {
               "heading": "Servizi centrali",
               "body": "I pacchetti arrivano da Opplex IPTV, il checkout continua su Opplexify e l'assistenza resta nel portale principale. Non è incluso un piano dati mobile né serve un altro account."
+            },
+            {
+              "heading": "Una guida ai cambiamenti, non un operatore mobile",
+              "body": "La domanda utile è cosa è cambiato: Wi-Fi verso dati mobili, hotspot, aggiornamento o impostazione. Le guide aiutano a isolare quella differenza. L'operatore gestisce connettività e tariffe dati; account e assistenza condivisi Opplex gestiscono le domande sull'ordine del servizio."
             }
           ],
           "kind": "editorial"
@@ -985,6 +1081,10 @@
             {
               "heading": "Il percorso della domanda",
               "body": "Con consenso, Opplex salva contatti e messaggio e apre WhatsApp o chat. Registrare il modulo non invia da solo WhatsApp e non copia il resto della conversazione."
+            },
+            {
+              "heading": "Specifica il cambio di connessione",
+              "body": "Indica dispositivo/versione del lettore, connessione precedente e attuale, inizio del sintomo ed errore esatto. Aggiungi il riferimento in privato se utile. Per dati, roaming o copertura consulta l'operatore; non inviare password del router all'assistenza del servizio."
             }
           ],
           "kind": "contact"
@@ -1002,23 +1102,27 @@
             {
               "heading": "La velocità basta?",
               "body": "Contano anche stabilità, Wi-Fi, sorgente e apparecchio. Non viene promessa una risoluzione costante. Controlla piano, periodo e totale sul checkout Opplexify."
+            },
+            {
+              "heading": "Quante connessioni include il servizio?",
+              "body": "Ogni piano 5G Live include una connessione simultanea. Telefono, hotspot o un altro lettore installato non aggiungono un flusso. Ferma la prima riproduzione prima di confrontare dispositivo o rete e chiarisci le regole del cambio con l'assistenza."
             }
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Confronta i pacchetti 5G Live aggiornati",
-          "description": "Durate e prezzi centrali in una pagina, senza duplicati del listino.",
-          "intro": "Scegli usando caratteristiche confermate, non l'idea che il nome garantisca velocità. Le opzioni disponibili sono raccolte qui.",
+          "title": "Piani 5G Live IPTV: prezzi, durate e una connessione",
+          "description": "Consulta prezzi e durate 5G Live IPTV con una connessione simultanea, separati dai costi di rete mobile e lettore.",
+          "intro": "Scegli una durata 5G Live dopo aver controllato la connessione abituale. Ogni piano include una connessione simultanea. Il prezzo del servizio non fornisce dati mobili o banda larga; più tempo non migliora la ricezione né elimina il roaming.",
           "sections": [
             {
-              "heading": "Valuta l'intero acquisto",
-              "body": "Guarda durata, totale e connessioni. La media mensile è un confronto, non un addebito mensile né una quantità di traffico dati inclusa."
+              "heading": "Considera la connessione pagata a parte",
+              "body": "Confronta prezzo totale e durata, poi verifica separatamente licenze del lettore e tariffe di rete. Conferma il dispositivo prima dell'impegno. Il nome non promette velocità, copertura 5G o riproduzione senza interruzioni."
             },
             {
-              "heading": "Segui il piano scelto",
-              "body": "Il pulsante passa dalla piattaforma principale a Opplexify. Controlla valuta e costi conclusivi. Se il catalogo non carica, chiedi aiuto anziché affidarti a una vecchia cifra."
+              "heading": "Separa pagamento e controlli della rete",
+              "body": "Il piano si apre su Opplexify per pagare; account e assistenza ordini restano su Opplex. Verifica pacchetto e totale. Se la riproduzione cambia dopo un cambio di rete, annotalo: acquistare di nuovo non è un test di connessione."
             }
           ],
           "kind": "packages"
@@ -1053,6 +1157,10 @@
             {
               "heading": "Installa da fonti affidabili",
               "body": "Usa store ufficiali o sviluppatore. L'app non prova l'accesso a contenuti o diritti. Controlla rete e ordine separatamente prima di provare installazioni sconosciute."
+            },
+            {
+              "heading": "Controlla l'effetto delle interruzioni dell'app",
+              "body": "Leggi le istruzioni dello sviluppatore su blocco schermo, attività in background, risparmio batteria e dati mobili. Se la riproduzione si ferma dopo un cambiamento, annotalo prima. Non disattivare protezioni indiscriminatamente; conferma compatibilità senza supporre che tutti i lettori si comportino allo stesso modo."
             }
           ],
           "kind": "editorial"
@@ -1070,6 +1178,10 @@
             {
               "heading": "Conserva il risultato",
               "body": "Annota orario, app ed errore. Inviali tramite l'assistenza centrale senza password della rete. La marca 5G non sostituisce una prova del collegamento reale."
+            },
+            {
+              "heading": "Rendi il primo tentativo ripetibile",
+              "body": "1. Verifica l'ordine centrale. 2. Usa una connessione nota e consentita. 3. Annota versione ed errore prima dei cambiamenti. 4. Prima di confrontare un'altra rete, controlla le tariffe e ferma la riproduzione precedente. Non cambiare rete e reinstallare l'app nello stesso controllo."
             }
           ],
           "kind": "editorial"
@@ -1146,7 +1258,7 @@
           "slug": "blogs",
           "title": "Guide 5G Live per miglioramenti controllabili",
           "description": "Articoli su liste mobili, cambi di rete e richieste chiare.",
-          "intro": "Una buona verifica è ripetibile. Le guide aiutano a distinguere organizzazione, collegamento e questioni dell'ordine.",
+          "intro": "Queste guide 5G Live separano la navigazione su schermi piccoli dai problemi legati al cambio di rete. Mantieni preferiti gestibili, confronta una connessione consentita alla volta e descrivi prima/dopo senza credenziali o assumere che l'icona 5G dimostri prestazioni.",
           "sections": [
             {
               "heading": "Scegli il primo controllo",
@@ -1223,6 +1335,10 @@
             {
               "heading": "Aggiorna con attenzione",
               "body": "Registra la configurazione in privato e prova un aggiornamento documentato. Evita continui cambi di rete durante il test. Se il risultato è inatteso, annota versioni senza pubblicare indirizzi di playlist."
+            },
+            {
+              "heading": "Una piccola modifica dello schermo alla volta",
+              "body": "1. Conserva la configurazione in privato. 2. Aggiungi pochi preferiti autorizzati con i controlli documentati. 3. Verifica i nomi dopo la rotazione dello schermo. Se migliora la navigazione ma non la riproduzione, sono problemi distinti; non sostituire la sorgente per correggere la visualizzazione."
             }
           ],
           "kind": "article"
@@ -1240,6 +1356,10 @@
             {
               "heading": "Comunica la differenza",
               "body": "Registra quale rete funzionava e l'orario della difficoltà. Verifica separatamente i limiti documentati di batteria o dati. Se esistono restrizioni territoriali, chiedi supporto: non aggirarle né condividere password di rete."
+            },
+            {
+              "heading": "Scegli il controllo dopo il cambio di rete",
+              "body": "Se anche internet normale non funziona, verifica la connessione con l'operatore. Se cambia solo il lettore, mantieni dispositivo ed elemento autorizzato e annota l'errore su ogni rete consentita. Ferma il primo flusso prima del secondo e controlla le tariffe. L'icona di rete non dimostra la causa."
             }
           ],
           "kind": "article"
@@ -1257,6 +1377,10 @@
             {
               "heading": "Mantieni il seguito ordinato",
               "body": "Elenca i test e ritaglia le immagini al messaggio. Non inviare codici, password, segreti del router o carte. Continua la stessa conversazione quando possibile per non perdere il confronto."
+            },
+            {
+              "heading": "Un rapporto illustrativo prima e dopo",
+              "body": "Modello, non caso reale: Dispositivo/lettore [versioni]; prima [Wi-Fi/dati/hotspot]; dopo [tipo]; azione [rete o impostazione]; sintomo [testo esatto]; controllo [una modifica/risultato]; ordine [riferimento privato]. Ritaglia immagini e nascondi nomi di rete, credenziali e dati non necessari."
             }
           ],
           "kind": "article"

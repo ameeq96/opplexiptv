@@ -29,7 +29,8 @@
           "intro": "A good viewing setup starts with a few practical questions: which screen will you use, which player can it run, and what does the selected plan actually allow? Trex IPTV 8K brings those questions together before you reach checkout.",
           "sections": [
             {"heading": "A name is not a picture-quality promise", "body": "The 8K in our brand name does not mean every stream is available in 8K. The source, player, screen and connection all affect the picture you can receive."},
-            {"heading": "One connected service journey", "body": "Plan details come from the main Opplex IPTV system. Checkout continues on Opplexify, while account access and support stay with the central customer portal. You do not need a separate account for this landing site."}
+            {"heading": "One connected service journey", "body": "Plan details come from the main Opplex IPTV system. Checkout continues on Opplexify, while account access and support stay with the central customer portal. You do not need a separate account for this landing site."},
+            {"heading": "Decide whether a longer term suits you", "body": "Use Trex as a device-readiness checklist before a yearly purchase: identify your screen and player, clarify any separate app cost, then consider how long you need the service. The shared Opplex catalog, account and support handle the order; these guides do not represent a separate support company."}
           ],
           "kind": "editorial"
         },
@@ -40,7 +41,8 @@
           "intro": "Not sure whether your television or streaming box is suitable? Tell us what you have before buying. A model number is more useful than a photograph of the whole room, and a short description usually gives support a better starting point.",
           "sections": [
             {"heading": "For a first enquiry", "body": "Include your device model, country and the plan you are considering. Ask us to confirm the details that matter to your setup; do not assume a feature is included because another player offers it."},
-            {"heading": "For an existing purchase", "body": "Use your order reference and describe the last step that worked. The contact form saves your enquiry in the shared Opplex system with your permission. Never send passwords, payment-card details or verification codes."}
+            {"heading": "For an existing purchase", "body": "Use your order reference and describe the last step that worked. The contact form saves your enquiry in the shared Opplex system with your permission. Never send passwords, payment-card details or verification codes."},
+            {"heading": "A useful question before a yearly purchase", "body": "Include the Trex term you are considering, your television model and player name/version. Say what you need confirmed before committing. For an existing purchase, add the order reference through the private support channel, not a public post; never include your service password."}
           ],
           "kind": "contact"
         },
@@ -51,19 +53,19 @@
           "intro": "It is easier to choose a plan when the limits are clear. These answers cover the questions that affect a typical television setup; support can check anything specific to your equipment or location.",
           "sections": [
             {"heading": "Will everything play in 8K?", "body": "No. Trex IPTV 8K is the brand name, not a guarantee of source resolution. A high-resolution screen cannot add detail that the source does not contain."},
-            {"heading": "Can I use several screens?", "body": "Follow the connection allowance shown for your chosen plan. Installing a player on several devices does not establish permission for simultaneous use."},
+            {"heading": "How many simultaneous connections are included?", "body": "Every Trex plan includes one simultaneous connection. Several installed players do not permit concurrent viewing. Confirm any device-switching requirements with support; the yearly term and the 8K brand name do not increase this allowance."},
             {"heading": "Why does checkout open Opplexify?", "body": "Opplexify handles the payment step for these plans. Review the selected service, amount and order details there before confirming; your customer account remains in the central Opplex portal."}
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Choose a Trex plan around your actual setup",
-          "description": "Compare live Trex plan prices, durations and device allowances from the central catalog, then continue to Opplexify.",
-          "intro": "Use this single package page to compare the Trex plans currently available. Rates and plan details are loaded from the main catalog, so the figures shown with each plan take priority over old screenshots or messages.",
+          "title": "Trex IPTV plans: price, term and device checks",
+          "description": "Review the current Trex IPTV price and term, one simultaneous connection, and the device checks to make before a yearly commitment.",
+          "intro": "Before committing to a yearly Trex plan, check the television and player you intend to use. Compare the full price and term shown below; a monthly equivalent, where displayed, is a comparison figure, not a monthly payment schedule.",
           "sections": [
-            {"heading": "Check the basics first", "body": "Match the device allowance to how you intend to watch. Confirm player compatibility and any location-specific limits before selecting a longer period; a longer duration does not change your equipment's capabilities."},
-            {"heading": "Review the payment screen", "body": "Your chosen package continues to Opplexify. Check its identity, duration, currency and total before paying. If the list cannot load, contact support rather than relying on an estimated price."}
+            {"heading": "One connection, not several concurrent screens", "body": "Each Trex plan includes one simultaneous connection. Installing a player on several devices does not add connections. If you need more than one screen playing at once, ask support about an appropriate option before paying."},
+            {"heading": "Make the commitment only after the checks", "body": "Confirm your exact device model, player version and any separate app fee. Review the selected package, currency and full total on Opplexify. Opening checkout is not payment confirmation; use the central account to check the order, and ask support if activation details are unclear."}
           ],
           "kind": "packages"
         },
@@ -85,7 +87,8 @@
           "intro": "An IPTV player is the software on your device; a service plan is a separate purchase. Before installing anything, check that the player supports your exact television, streaming box or operating-system version.",
           "sections": [
             {"heading": "Use a trustworthy download route", "body": "Start with your device's app store or the developer's own published download. Avoid lookalike installers and unsolicited activation offers. Some players have separate fees that are not automatically included in a service plan."},
-            {"heading": "Choose for everyday use", "body": "On a television, check remote navigation, readable text and accessibility options. On a smaller screen, look at controls and orientation. Ask support to confirm suitability before entering account information into an unfamiliar app."}
+            {"heading": "Choose for everyday use", "body": "On a television, check remote navigation, readable text and accessibility options. On a smaller screen, look at controls and orientation. Ask support to confirm suitability before entering account information into an unfamiliar app."},
+            {"heading": "Check the everyday controls, not just installation", "body": "Before choosing a player, check its documented remote navigation, search, favourites and subtitle controls. A successful install alone does not verify service compatibility or picture quality. Ask about your exact model/version, and keep the service purchase separate from any player licence."}
           ],
           "kind": "editorial"
         },
@@ -96,7 +99,8 @@
           "intro": "Set aside a few minutes to prepare the device before changing player settings. Keeping the first attempt simple makes it much easier to tell whether a problem comes from the network, the app or the order status.",
           "sections": [
             {"heading": "Check the foundations", "body": "Install available system updates, confirm the device has free storage and test its internet connection. If you can use a wired connection, compare it with Wi-Fi before moving equipment or buying extras."},
-            {"heading": "Keep a useful record", "body": "Note the player name and version, then keep your order reference available. Follow the central setup guide for your device. If something fails, record the exact message instead of repeatedly reinstalling the app or sharing private credentials."}
+            {"heading": "Keep a useful record", "body": "Note the player name and version, then keep your order reference available. Follow the central setup guide for your device. If something fails, record the exact message instead of repeatedly reinstalling the app or sharing private credentials."},
+            {"heading": "A readiness check before entering service details", "body": "1. Find the exact model and operating-system version. 2. Check the player's official compatibility and licence requirements. 3. Test ordinary internet access on that device. 4. Check the order status in the central account. If a step is unclear, ask support before reinstalling or purchasing again."}
           ],
           "kind": "editorial"
         },
@@ -148,7 +152,7 @@
           "slug": "blogs",
           "title": "Trex guides for a cleaner television setup",
           "description": "Read practical Trex guides on organising a lawful playlist, checking the playback chain and writing useful support requests.",
-          "intro": "Small, reversible checks are often more useful than a long list of settings copied from somewhere else. These Trex guides focus on the equipment in front of you and on making changes you can understand and undo.",
+          "intro": "Start with the Trex playlist guide if the remote feels hard to use, the playback-chain guide if a picture stops or changes, or the support template if you need help. These are practical checks for the television you already own, not evidence that every device has been tested.",
           "sections": [
             {"heading": "Build a tidy starting point", "body": "Begin with the playlist guide if the player feels cluttered. The playback guide then helps you separate source quality from network and screen behaviour without making unsupported performance promises."},
             {"heading": "Know when to ask", "body": "If the basics do not resolve the issue, the support guide helps you prepare a concise report. These articles are troubleshooting aids, not a guarantee of compatibility or permission to access material you are not authorised to use."}
@@ -200,7 +204,8 @@
           "intro": "A crowded player can make a simple television setup feel complicated. Before deleting entries or changing import settings, identify the authorised source you are using and record the player's current configuration somewhere private.",
           "sections": [
             {"heading": "Separate organisation from access", "body": "Use favourites or hide categories if your player supports them. These changes help navigation; they do not grant access to additional material. Avoid importing unknown lists just to fill empty sections."},
-            {"heading": "Make one reversible change", "body": "Refresh through the player's documented controls, then check whether your existing selection still works. If entries disappear, note what changed before trying again. Never publish playlist addresses or account credentials in a public support forum."}
+            {"heading": "Make one reversible change", "body": "Refresh through the player's documented controls, then check whether your existing selection still works. If entries disappear, note what changed before trying again. Never publish playlist addresses or account credentials in a public support forum."},
+            {"heading": "A small, reversible organisation check", "body": "1. Note the original category name privately. 2. Add a few authorised items to favourites using the player's documented controls. 3. Reopen favourites with the remote and check the names are recognisable. If an item is missing, check the original category before deleting anything or replacing the playlist."}
           ],
           "kind": "article"
         },
@@ -211,7 +216,8 @@
           "intro": "The picture on your television is the end of a chain. Source quality, delivery, the player and the display each have a part in it. Changing all four at once makes a useful comparison almost impossible.",
           "sections": [
             {"heading": "Start with a simple comparison", "body": "Note whether the problem affects one authorised item or several. Test the connection near the viewing device, and compare wired access with Wi-Fi if available. A single speed reading does not describe every interruption."},
-            {"heading": "Keep the result, not just the setting", "body": "Try one documented player adjustment and note whether it helps. Revert it if it does not. Report persistent problems with the time, device and app version; a brand name or a display's advertised resolution is not a playback guarantee."}
+            {"heading": "Keep the result, not just the setting", "body": "Try one documented player adjustment and note whether it helps. Revert it if it does not. Report persistent problems with the time, device and app version; a brand name or a display's advertised resolution is not a playback guarantee."},
+            {"heading": "Separate a navigation problem from a playback problem", "body": "If menus respond but one item fails, record that item and its exact error privately. If several items fail, check ordinary internet access on the same device. Compare one documented setting or connection only, then restore it if it does not help. Do not open a second simultaneous stream as a test."}
           ],
           "kind": "article"
         },
@@ -222,7 +228,8 @@
           "intro": "“It does not work” is a fair description of your frustration, but it leaves support with little to test. A few specific details can turn the same message into a much more useful starting point.",
           "sections": [
             {"heading": "Describe the point of failure", "body": "State your device model, player version and the action you took immediately before the problem. Include the order reference and exact error wording, along with whether the issue happens every time."},
-            {"heading": "Show only what is needed", "body": "Crop screenshots to the relevant message and hide account information. List the checks you already tried, then keep replies in the same conversation where possible. Never send a password, one-time code or full payment-card details."}
+            {"heading": "Show only what is needed", "body": "Crop screenshots to the relevant message and hide account information. List the checks you already tried, then keep replies in the same conversation where possible. Never send a password, one-time code or full payment-card details."},
+            {"heading": "An illustrative message to fill in", "body": "Template, not a customer case: Device [model/OS]; player [name/version]; order [reference, private channel only]; action [what I pressed]; result [exact message]; scope [one item or several]; check tried [one change and result]. Attach only a cropped error image with credentials and personal details hidden."}
           ],
           "kind": "article"
         }
@@ -238,7 +245,8 @@
           "intro": "Opplex IPTV Store is a focused starting point for choosing an Opplex plan and understanding what happens next. Instead of separate account systems for each stage, it connects to the main site's catalog, support and customer portal.",
           "sections": [
             {"heading": "Know which step you are on", "body": "Compare the current package here, review payment details on Opplexify and check the resulting order through the central account. If a step is unclear, ask before confirming rather than starting another purchase."},
-            {"heading": "Useful details over broad promises", "body": "The plan's displayed duration and allowance matter more than a headline. Confirm device compatibility and any important availability question in advance. Performance depends on the source, connection and equipment; this site does not promise uninterrupted playback."}
+            {"heading": "Useful details over broad promises", "body": "The plan's displayed duration and allowance matter more than a headline. Confirm device compatibility and any important availability question in advance. Performance depends on the source, connection and equipment; this site does not promise uninterrupted playback."},
+            {"heading": "Keep selection, payment and access separate", "body": "This store helps you choose a duration and follow the same order into the shared system. Choosing a package, opening Opplexify and seeing an order status are different steps. Keep the order reference so support can clarify a payment or setup question without starting a new account journey."}
           ],
           "kind": "editorial"
         },
@@ -249,7 +257,8 @@
           "intro": "Tell us whether you are comparing plans, checking a payment or setting up a device. That small distinction helps support follow the right part of your journey instead of making you repeat the whole story.",
           "sections": [
             {"heading": "Before an order", "body": "Mention the plan you are viewing and what you need to confirm. Include your device model for compatibility questions. The figures on the current plan and final checkout screen should be checked before you pay."},
-            {"heading": "After an order", "body": "Use the purchase email and order reference, then describe the status you can see. With your consent, the form saves the enquiry in the main Opplex customer record. Keep passwords, full card numbers and verification codes out of the message."}
+            {"heading": "After an order", "body": "Use the purchase email and order reference, then describe the status you can see. With your consent, the form saves the enquiry in the main Opplex customer record. Keep passwords, full card numbers and verification codes out of the message."},
+            {"heading": "Identify which part of the order needs help", "body": "Say whether you are choosing a term, checking a payment or setting up an existing order. Include the package and order reference where available, plus the exact status shown. Send purchase-email details only through the private support form when needed; do not send card data or verification codes."}
           ],
           "kind": "contact"
         },
@@ -261,18 +270,19 @@
           "sections": [
             {"heading": "Do I need another customer account?", "body": "Use the main Opplex customer portal rather than creating a separate store account. The account links on this site take you to that shared service."},
             {"heading": "Will my plan renew by itself?", "body": "Plans do not renew automatically under the central service terms. When a period ends, review the current package and price before deciding to renew."},
-            {"heading": "What if a payment looks unfinished?", "body": "Check the order status and contact support with the reference before paying again. A redirect or an enquiry on its own is not proof that a payment succeeded or that the service is ready."}
+            {"heading": "What if a payment looks unfinished?", "body": "Check the order status and contact support with the reference before paying again. A redirect or an enquiry on its own is not proof that a payment succeeded or that the service is ready."},
+            {"heading": "Does a longer plan include more connections?", "body": "No. Every Opplex plan includes one simultaneous connection. Compare the term and total price rather than assuming a longer purchase permits several screens at once. Ask support about device-switching rules before relying on them."}
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Opplex packages in one place",
-          "description": "View the current Opplex package catalog with live rates and plan details, then review your selection on Opplexify.",
-          "intro": "There is one package list here, not separate pricing and subscription pages showing competing figures. It reads the current Opplex plans from the main website so you can compare the actual duration, amount and allowance together.",
+          "title": "Opplex IPTV packages: compare terms and total prices",
+          "description": "Compare current Opplex IPTV durations and total prices, with one simultaneous connection and a clear route to checkout and your central account.",
+          "intro": "Choose the period you can use with confidence, then compare the total shown for that period. A lower monthly equivalent is not a monthly billing promise. Every Opplex plan includes one simultaneous connection; a longer term does not add concurrent screens.",
           "sections": [
-            {"heading": "Choose the period you need", "body": "Consider how long you want access and confirm that your device and intended use fit the plan. Do not assume a longer period includes extra connections or a different set of features unless the current details say so."},
-            {"heading": "Keep the selection consistent", "body": "Continue to Opplexify and review the package and total there. If anything differs from your intended choice, stop before payment and ask support. Your shared customer account is the place to check the order afterwards."}
+            {"heading": "Match the duration to your decision", "body": "If your device or player setup is still uncertain, clarify it before choosing a longer commitment. Compare currency, full price, duration and one-connection allowance together. Check any separate player fee rather than treating it as part of the service price."},
+            {"heading": "Keep one order journey", "body": "The selected package continues to Opplexify for payment; your account and order support remain in the main Opplex system. Confirm the package and amount before paying. If a payment screen closes or the order status is unclear, check the existing order or contact support before starting another purchase."}
           ],
           "kind": "packages"
         },
@@ -294,7 +304,8 @@
           "intro": "It is easy to confuse an app purchase with a service purchase when both use the word activation. A player is the software that presents playback; your Opplex plan is a separate item with its own period and usage limits.",
           "sections": [
             {"heading": "Check before installing", "body": "Look up the exact player in your device's official store or on the developer's website. Confirm operating-system support and whether the player has an independent fee. A download button alone does not confirm compatibility."},
-            {"heading": "Keep help specific", "body": "For setup questions, give support the app name and version rather than just saying IPTV. Use the central applications guide as a starting point, and never enter your service details into a lookalike app sent by an unknown contact."}
+            {"heading": "Keep help specific", "body": "For setup questions, give support the app name and version rather than just saying IPTV. Use the central applications guide as a starting point, and never enter your service details into a lookalike app sent by an unknown contact."},
+            {"heading": "Separate three different requirements", "body": "Check that the app supports your device, whether the developer charges for its licence, and whether it supports the service's required setup method. These are separate questions. An app receipt is not an Opplex order, and an Opplex plan does not automatically pay a third-party app fee."}
           ],
           "kind": "editorial"
         },
@@ -305,7 +316,8 @@
           "intro": "A useful setup checklist starts with the order, not a random player setting. Check that you are looking at the right purchase and the right device, then follow the applicable guide through the central customer portal.",
           "sections": [
             {"heading": "Confirm the starting point", "body": "Review the order status and selected plan. Keep the reference available, update the device and check its connection. If the order is still unclear, ask support before making another payment or buying a second player licence."},
-            {"heading": "Follow one guide at a time", "body": "Use instructions for your actual device and player version. Avoid combining steps from unrelated apps. If you reach an unexpected screen, record its wording and pause; your password or full payment details are not needed in a support message."}
+            {"heading": "Follow one guide at a time", "body": "Use instructions for your actual device and player version. Avoid combining steps from unrelated apps. If you reach an unexpected screen, record its wording and pause; your password or full payment details are not needed in a support message."},
+            {"heading": "Check the order before changing the player", "body": "1. Open the central account and find the relevant order. 2. Note its displayed status and reference. 3. Check the official guide for your exact device/player. 4. If status or access instructions are unclear, ask support with that reference. Do not pay again to troubleshoot a player error."}
           ],
           "kind": "editorial"
         },
@@ -357,7 +369,7 @@
           "slug": "blogs",
           "title": "Opplex guides for fewer loose ends",
           "description": "Practical Opplex reading on keeping a playlist organised, checking playback methodically and following up on support.",
-          "intro": "These guides focus on the handoffs that can otherwise become confusing: keeping a player organised, deciding what to test when playback changes, and explaining an issue to support without losing the order context.",
+          "intro": "Use these Opplex guides according to the step you are on: organise an existing player without losing its configuration, isolate a playback symptom, or follow up using the right order reference. Payment status and player behaviour are separate questions, so the guides keep their checks separate too.",
           "sections": [
             {"heading": "Start with the issue you have", "body": "Use the playlist article for an untidy player and the playback article for interruptions or quality questions. Neither requires you to buy another plan or experiment with unknown sources."},
             {"heading": "Keep account information private", "body": "The support article shows what is useful to share and what should stay private. All guides assume lawful, authorised use and the limits of your selected plan; they are not promises about title availability or a particular player's features."}
@@ -409,7 +421,8 @@
           "intro": "When a player feels untidy, deleting everything is rarely the best first move. Begin by distinguishing an organisation problem from an access problem, and keep a private note of the working configuration before changing it.",
           "sections": [
             {"heading": "Use the player's own organisation tools", "body": "If supported, group favourites or hide sections you do not use. Follow the developer's instructions rather than importing an unknown replacement list. Only use sources you are authorised to access."},
-            {"heading": "Refresh with a purpose", "body": "After a documented refresh, check the specific item that prompted the change. If the result is unexpected, note the time and app version for support. A playlist address can contain private access information, so never post it publicly."}
+            {"heading": "Refresh with a purpose", "body": "After a documented refresh, check the specific item that prompted the change. If the result is unexpected, note the time and app version for support. A playlist address can contain private access information, so never post it publicly."},
+            {"heading": "Keep the account context while you organise", "body": "Before changing favourites, note which existing order and player configuration you are using privately. Change only a display or favourites option, then check one known authorised item. If access fails, keep that configuration and check the order status; do not create a second order to reorganise a list."}
           ],
           "kind": "article"
         },
@@ -420,7 +433,8 @@
           "intro": "Reinstalling an app, restarting the router and changing settings together may hide the cause of a problem. A short sequence of controlled checks gives you and support a more useful picture of what is happening.",
           "sections": [
             {"heading": "Record the symptom first", "body": "Note whether you see a freeze, an error or a consistently soft picture. Check whether it affects one authorised source or several and whether ordinary internet use on the same device is stable."},
-            {"heading": "Compare, then restore", "body": "Try one relevant change, such as comparing wired and wireless access where available. Keep the original setting so you can restore it. Send the results with your device and player version if the issue continues; repeated purchases are not a troubleshooting method."}
+            {"heading": "Compare, then restore", "body": "Try one relevant change, such as comparing wired and wireless access where available. Keep the original setting so you can restore it. Send the results with your device and player version if the issue continues; repeated purchases are not a troubleshooting method."},
+            {"heading": "Choose the next check from the symptom", "body": "If the order status is unclear, resolve that with support first. If the order is understood but the app will not open, check the developer's device guidance. If the app opens and playback fails, record the exact error and test one change at a time, using no more than one simultaneous connection."}
           ],
           "kind": "article"
         },
@@ -431,7 +445,8 @@
           "intro": "A support conversation becomes harder to follow when each reply begins a new story. Keeping the order reference and the current symptom together helps everyone see what changed since the last check.",
           "sections": [
             {"heading": "Give a concise update", "body": "Mention the reference, the last step you tried and the result. If the issue moved to another device or app version, say so. Distinguish a payment-status question from a playback problem."},
-            {"heading": "Protect the private parts", "body": "Share the error message rather than a full account screen whenever possible. Hide credentials and payment information in screenshots. Never send a one-time code, and avoid opening duplicate enquiries just because you are waiting for a reply."}
+            {"heading": "Protect the private parts", "body": "Share the error message rather than a full account screen whenever possible. Hide credentials and payment information in screenshots. Never send a one-time code, and avoid opening duplicate enquiries just because you are waiting for a reply."},
+            {"heading": "An illustrative order follow-up", "body": "Template, not a customer case: Order [reference]; selected plan [term]; account status [exact text]; issue [payment status or player behaviour]; device/player [version, if relevant]; last check [action and result]. Send it through private support, without passwords, full card details or one-time codes."}
           ],
           "kind": "article"
         }
@@ -447,7 +462,8 @@
           "intro": "A plan that suits one household may not suit another. Geo IPTV puts practical questions about your location, preferred language and viewing device ahead of broad availability claims, so you can ask for the details that matter to you.",
           "sections": [
             {"heading": "Location is part of the setup", "body": "Regional restrictions, source availability and network conditions can differ. Confirm your intended use before purchasing; the Geo name is not a promise of access everywhere or permission to bypass restrictions."},
-            {"heading": "Shared services, a focused starting point", "body": "Current Geo plans come from the main Opplex catalog. Payment continues on Opplexify, and the central account handles your customer journey. The guides here help you prepare questions without inventing a separate support operation or service history."}
+            {"heading": "Shared services, a focused starting point", "body": "Current Geo plans come from the main Opplex catalog. Payment continues on Opplexify, and the central account handles your customer journey. The guides here help you prepare questions without inventing a separate support operation or service history."},
+            {"heading": "Make comparisons relevant to your own setup", "body": "Geo's guides focus on controlled comparisons: keep the device, player version and source the same, change one condition, then record what happened. Another person's experience in a different setup is not a compatibility result for yours. Purchases and support still use the shared Opplex services."}
           ],
           "kind": "editorial"
         },
@@ -458,7 +474,8 @@
           "intro": "If you are unsure whether a plan fits your circumstances, describe where and how you intend to use it. Country and device model are a useful starting point; you do not need to provide your home address for a general compatibility question.",
           "sections": [
             {"heading": "Make the requirement clear", "body": "Tell support which Geo plan you are considering and whether language, subtitles or a particular device feature matters. Ask for confirmation rather than assuming that an option available elsewhere is included."},
-            {"heading": "For an order already placed", "body": "Add the order reference and the status or message you see. With your permission, the enquiry is saved in the shared Opplex system. Do not send passwords, card details, verification codes or more personal information than the question needs."}
+            {"heading": "For an order already placed", "body": "Add the order reference and the status or message you see. With your permission, the enquiry is saved in the shared Opplex system. Do not send passwords, card details, verification codes or more personal information than the question needs."},
+            {"heading": "Report what is the same and what changed", "body": "For a comparison question, give the device/player version, relevant country and interface language, then describe the one condition that changed. Include the original error text as well as any translation. Your home address and private network credentials are not needed for a general setup question."}
           ],
           "kind": "contact"
         },
@@ -470,18 +487,19 @@
           "sections": [
             {"heading": "Does my page language change the plan?", "body": "No. Read the selected package's current details. A translated interface does not promise matching audio, subtitles or a particular catalog."},
             {"heading": "Can I use it while travelling?", "body": "Do not assume access is valid in a different region. Check applicable restrictions, the plan terms and your circumstances with support before relying on it."},
-            {"heading": "Where do payment and support happen?", "body": "The selected package continues to Opplexify for checkout. Account and support links use the main Opplex system, so you do not need a separate Geo customer account."}
+            {"heading": "Where do payment and support happen?", "body": "The selected package continues to Opplexify for checkout. Account and support links use the main Opplex system, so you do not need a separate Geo customer account."},
+            {"heading": "How many screens can play at the same time?", "body": "Each Geo plan includes one simultaneous connection. Multiple installations or a different page language do not add concurrent streams. When comparing setups, stop one playback session before another; ask support to clarify any device-switching conditions."}
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Compare the current Geo packages",
-          "description": "Read live Geo plan prices and allowances, confirm suitability for your location and continue to Opplexify checkout.",
-          "intro": "This is the single package page for Geo. The plans below come from the main catalog, with their current duration, price and allowance. Use those details to compare your options rather than an old offer found elsewhere.",
+          "title": "Geo IPTV packages: compare the same plan details",
+          "description": "Compare Geo IPTV prices and durations with one simultaneous connection, using consistent device and location requirements.",
+          "intro": "Keep your requirements the same while comparing Geo plans: the same device, intended location and essential player features. Compare the full price and duration shown below. Every plan includes one simultaneous connection; a translated page does not change that allowance.",
           "sections": [
-            {"heading": "Check suitability as well as price", "body": "Confirm your device, intended location and any essential language or accessibility requirement. Neither a longer period nor a translated page guarantees additional features or availability."},
-            {"heading": "Review the exact selection", "body": "The chosen package moves to Opplexify for payment. Check the service identity, currency and total before confirming. If live details fail to load, ask support to clarify the current offer instead of using an assumed price."}
+            {"heading": "Use one comparison checklist", "body": "For each option, check currency, full price, term, one-connection allowance and any separate player cost. Confirm location suitability and language or accessibility requirements before buying. A longer period does not establish wider availability or extra app features."},
+            {"heading": "Follow the exact package into checkout", "body": "Review the Geo package and final amount on Opplexify before confirming payment. Orders and support use the central Opplex account. If the live catalog does not load or a detail differs at checkout, pause and ask support rather than comparing remembered prices."}
           ],
           "kind": "packages"
         },
@@ -503,7 +521,8 @@
           "intro": "The same app name can have different versions across devices and stores. Check the version available to you, including interface language and accessibility controls, before deciding that a player is suitable for your Geo setup.",
           "sections": [
             {"heading": "Start with the supported version", "body": "Use the device's official store or the developer's own download information. Check operating-system requirements and any separate player fee. App availability in one country's store does not guarantee availability in another."},
-            {"heading": "Do not confuse interface and content language", "body": "A translated menu does not add audio or subtitle tracks to a source. Confirm the features you need with the player developer and ask support about plan-specific questions. Avoid unknown installers or requests to bypass regional restrictions."}
+            {"heading": "Do not confuse interface and content language", "body": "A translated menu does not add audio or subtitle tracks to a source. Confirm the features you need with the player developer and ask support about plan-specific questions. Avoid unknown installers or requests to bypass regional restrictions."},
+            {"heading": "Compare like-for-like app features", "body": "Check the exact device version, store availability, interface language, subtitle controls and any licence fee for each candidate player. Do not compare a phone app with a television app as if their features were identical. A translated menu does not establish which audio or subtitles a source contains."}
           ],
           "kind": "editorial"
         },
@@ -514,7 +533,8 @@
           "intro": "Start with the device and location where you actually intend to watch. Instructions for another region's app store or a different television model may not match what you see, even when the screenshots look similar.",
           "sections": [
             {"heading": "Check the local starting point", "body": "Confirm the plan's suitability for your location, update the device and verify the player version available through an official source. Review the order status in the shared account before troubleshooting access."},
-            {"heading": "Record differences clearly", "body": "If a menu option is missing, note the app version and interface language. Follow the central guide for your actual device, and ask support about any mismatch. Do not change regional settings to evade a restriction or share private credentials in screenshots."}
+            {"heading": "Record differences clearly", "body": "If a menu option is missing, note the app version and interface language. Follow the central guide for your actual device, and ask support about any mismatch. Do not change regional settings to evade a restriction or share private credentials in screenshots."},
+            {"heading": "Establish a comparison baseline", "body": "1. Record the device, player version and interface language. 2. Check the central order status. 3. Choose one authorised item and one permitted connection. 4. Note the symptom before changing a setting. Keep the same device and source for the next check, without a second simultaneous stream."}
           ],
           "kind": "editorial"
         },
@@ -566,7 +586,7 @@
           "slug": "blogs",
           "title": "Geo guides for clearer choices across languages",
           "description": "Read Geo guides about playlist labels, comparing playback fairly and sending support requests with useful regional context.",
-          "intro": "Different menu languages and regional versions can make simple instructions harder to follow. The Geo guides concentrate on identifying what is actually on your screen and making comparisons that are relevant to your own setup.",
+          "intro": "Geo's guides help you make a fair comparison rather than collect unrelated speed results. Start with recognisable playlist labels, hold device and source details steady during playback checks, then use the regional-context template to explain the one difference you observed.",
           "sections": [
             {"heading": "Keep labels understandable", "body": "Start with the playlist guide when categories or translated names become confusing. The playback article then helps you compare behaviour without treating every difference as a connection-speed problem."},
             {"heading": "Explain the context safely", "body": "The support guide covers the useful details to include, such as device version and interface language. None of these articles promises availability in every country, includes a licensed catalog or encourages bypassing regional restrictions."}
@@ -618,7 +638,8 @@
           "intro": "A playlist can feel unfamiliar when labels use a different language or naming convention. Begin with the player's own display and favourites options rather than assuming you need a different source or a replacement account.",
           "sections": [
             {"heading": "Organise without changing permissions", "body": "If the player allows it, save a small favourites list with labels you recognise. Keep a private record of the original configuration before editing. Renaming a label does not alter rights, regional restrictions or what your plan includes."},
-            {"heading": "Check changes against the source", "body": "Use documented refresh controls for sources you are authorised to access. If a label or group changes, note the player version and language for support. Never share a playlist address publicly; it may contain private access information."}
+            {"heading": "Check changes against the source", "body": "Use documented refresh controls for sources you are authorised to access. If a label or group changes, note the player version and language for support. Never share a playlist address publicly; it may contain private access information."},
+            {"heading": "Compare a label without replacing the source", "body": "1. Keep a private note of the original label. 2. Add it to favourites if the player supports that. 3. Compare the same item after a display-language change. If only the label changes, do not assume access changed. If the item disappears, restore the setting and report the original wording."}
           ],
           "kind": "article"
         },
@@ -629,7 +650,8 @@
           "intro": "A friend's smooth playback in another country does not tell you exactly what should happen on your device. A useful comparison keeps as many conditions as possible the same and records the details that differ.",
           "sections": [
             {"heading": "Keep the comparison fair", "body": "Note your device, player version, connection type and the time of the issue. Check whether the symptom affects one authorised source or several. Do not compare different source resolutions as if they were the same test."},
-            {"heading": "Avoid guesswork about restrictions", "body": "If availability changes with location, ask support to clarify the permitted use rather than trying to bypass a restriction. Report the exact message and relevant regional context, keeping credentials and personal network details out of public posts."}
+            {"heading": "Avoid guesswork about restrictions", "body": "If availability changes with location, ask support to clarify the permitted use rather than trying to bypass a restriction. Report the exact message and relevant regional context, keeping credentials and personal network details out of public posts."},
+            {"heading": "A comparison you can explain afterwards", "body": "Record A: device, player version, authorised item, connection type and symptom. For B, change just one permitted setting or connection while keeping the other details the same. Stop A before starting B to respect the one-connection limit. An improvement suggests a useful next question; it does not prove the underlying cause."}
           ],
           "kind": "article"
         },
@@ -640,7 +662,8 @@
           "intro": "A translated error or a region-specific app version can be the missing clue in a support enquiry. You can explain that context clearly without sending your full address or a screenshot filled with private information.",
           "sections": [
             {"heading": "Include the details that change the answer", "body": "State the country if relevant, device model, app version and interface language. Add the order reference and exact error text. If you translate the message yourself, include the original wording too where practical."},
-            {"heading": "Keep the evidence focused", "body": "Crop a screenshot to the relevant screen and hide personal fields. List the checks already tried in the same conversation. Do not send passwords, one-time codes or payment-card data; those are not troubleshooting details."}
+            {"heading": "Keep the evidence focused", "body": "Crop a screenshot to the relevant screen and hide personal fields. List the checks already tried in the same conversation. Do not send passwords, one-time codes or payment-card data; those are not troubleshooting details."},
+            {"heading": "An illustrative comparison report", "body": "Template, not a customer case: Country [if relevant]; device/player [versions]; interface language [language]; original error [text]; A [conditions and result]; B [one changed condition and result]; order [reference in private support]. Hide credentials and personal fields in any screenshot; no full address is needed."}
           ],
           "kind": "article"
         }
@@ -656,7 +679,8 @@
           "intro": "A familiar phone, a home screen and a changing network can produce very different viewing experiences. 5G Live IPTV helps you consider the device and connection together before choosing a plan, without treating a network label as a guarantee.",
           "sections": [
             {"heading": "What the name does not promise", "body": "5G Live IPTV is a brand, not a mobile network operator or a guarantee of 5G coverage, speed or uninterrupted playback. Your provider, signal, data allowance and equipment still matter."},
-            {"heading": "A shared route to purchase and help", "body": "Plan details are supplied by the main Opplex catalog, payment continues on Opplexify and account support stays central. These pages help you make a considered choice without requiring a separate customer account for this site."}
+            {"heading": "A shared route to purchase and help", "body": "Plan details are supplied by the main Opplex catalog, payment continues on Opplexify and account support stays central. These pages help you make a considered choice without requiring a separate customer account for this site."},
+            {"heading": "A guide to changes, not a mobile network", "body": "The useful starting question here is what changed: Wi-Fi to mobile data, a hotspot, an app update or a device setting. The guides help you isolate that difference. Your network provider handles connectivity and data charges; the shared Opplex account and support handle service-order questions."}
           ],
           "kind": "editorial"
         },
@@ -667,7 +691,8 @@
           "intro": "If your question concerns playback on a phone or hotspot, tell support which connection you are using. “Mobile data” or “home Wi-Fi” is a useful distinction; private router passwords and full network credentials are not.",
           "sections": [
             {"heading": "Before choosing a plan", "body": "Mention the device, intended location and plan you are considering. Ask about the displayed allowance and compatibility, and check mobile data charges with your own network provider."},
-            {"heading": "When something changes", "body": "Add the order reference, player version and whether the symptom began after switching networks. The form saves your enquiry in the shared Opplex system with consent. Keep passwords, card details and verification codes out of the conversation."}
+            {"heading": "When something changes", "body": "Add the order reference, player version and whether the symptom began after switching networks. The form saves your enquiry in the shared Opplex system with consent. Keep passwords, card details and verification codes out of the conversation."},
+            {"heading": "Say which connection changed", "body": "Give the device/player version, the previous and current connection type, when the symptom began and the exact error. Include an order reference privately if relevant. For data allowance, roaming charges or network coverage, ask your network provider; do not send router passwords to service support."}
           ],
           "kind": "contact"
         },
@@ -679,18 +704,18 @@
           "sections": [
             {"heading": "Do I need a 5G mobile connection?", "body": "The brand name does not specify a required network technology or guarantee coverage. Confirm the connection and device requirements for your intended use with support."},
             {"heading": "Is mobile data included?", "body": "No mobile-network allowance is promised here. Check data use, roaming and charges with your internet or mobile provider separately from the service plan."},
-            {"heading": "Can I switch between screens?", "body": "Follow the selected plan's allowance and permitted use. Several installed apps do not automatically mean simultaneous access. Checkout is on Opplexify, and the main Opplex portal handles your account."}
+            {"heading": "How many connections does the service include?", "body": "Every 5G Live plan includes one simultaneous connection. A phone, hotspot or second installed player does not add another stream. Stop the first playback session before comparing a different device or network, and clarify device-switching rules with support."}
           ],
           "kind": "editorial"
         },
         {
           "slug": "packages",
-          "title": "Select a 5G Live plan with the right allowance",
-          "description": "Compare live 5G Live IPTV package rates and details from the main catalog, then review the order on Opplexify.",
-          "intro": "All current 5G Live packages appear on this one page. Their price, duration and allowance are read from the central catalog. The service purchase is separate from any mobile data, broadband or player-app charge.",
+          "title": "5G Live IPTV plans: prices, terms and connection limit",
+          "description": "Review 5G Live IPTV package prices and durations with one simultaneous connection, separate from mobile-data and player costs.",
+          "intro": "Choose a 5G Live term after checking how you normally connect. Every plan includes one simultaneous connection. The displayed service price does not supply mobile data or broadband, and a longer term does not improve reception or remove roaming charges.",
           "sections": [
-            {"heading": "Think about your usual connection", "body": "Confirm device suitability and check data costs with your network provider. A longer plan does not improve signal strength, remove roaming charges or promise a particular source quality."},
-            {"heading": "Double-check before paying", "body": "Your selection continues to Opplexify. Review the plan identity, currency and final total, then use the central account to follow the order. If current package details are unavailable, ask support instead of relying on a remembered rate."}
+            {"heading": "Account for the connection you already pay for", "body": "Compare the full package price and duration, then check separate player fees and network charges. Confirm device suitability before committing. The brand name does not promise a network speed, 5G coverage or uninterrupted playback."},
+            {"heading": "Keep payment and network checks separate", "body": "The selected plan opens on Opplexify for payment, with account and order support in the main Opplex system. Check the package and final total before paying. If playback changes after a network switch, record that change; buying the plan again is not a network test."}
           ],
           "kind": "packages"
         },
@@ -712,7 +737,8 @@
           "intro": "A player that feels comfortable on a television may not suit a phone. Start with software supported on your actual device, then check its controls and connection settings rather than assuming every app behaves the same way.",
           "sections": [
             {"heading": "Install from a known source", "body": "Use the official app store or developer's published download. Check device-version support and any separate licence charge. A player purchase does not automatically include a 5G Live service plan."},
-            {"heading": "Check mobile behaviour", "body": "Look for readable controls, rotation handling and any documented data-use settings. Your phone's battery and data restrictions may affect playback. Ask support about compatibility before entering account details, and avoid unofficial installers that request unnecessary access."}
+            {"heading": "Check mobile behaviour", "body": "Look for readable controls, rotation handling and any documented data-use settings. Your phone's battery and data restrictions may affect playback. Ask support about compatibility before entering account details, and avoid unofficial installers that request unnecessary access."},
+            {"heading": "Check what happens when the app is interrupted", "body": "Read the developer's guidance on screen locking, background activity, battery-saving and mobile-data settings. If playback stops after one of these changes, note it before adjusting anything. Avoid disabling device protections indiscriminately; confirm compatibility rather than assuming all mobile players behave alike."}
           ],
           "kind": "editorial"
         },
@@ -723,7 +749,8 @@
           "intro": "Use a stable, familiar connection for the first setup if possible. Moving between Wi-Fi, mobile data and a hotspot during the same attempt can make it harder to understand why a screen or error changes.",
           "sections": [
             {"heading": "Prepare the device and order", "body": "Check the order in the central account, update the device and confirm the player version. Review any data limits with your provider before testing over mobile data; the service plan does not supply a network allowance."},
-            {"heading": "Change one condition at a time", "body": "Follow the central guide for your device. If you compare networks, record which one produced the issue and respect any regional restrictions. Keep credentials private and send support the exact message rather than repeatedly resetting everything."}
+            {"heading": "Change one condition at a time", "body": "Follow the central guide for your device. If you compare networks, record which one produced the issue and respect any regional restrictions. Keep credentials private and send support the exact message rather than repeatedly resetting everything."},
+            {"heading": "Keep the first attempt easy to repeat", "body": "1. Check the order in the central account. 2. Use one familiar, permitted connection. 3. Note the player version and any error before changing settings. 4. If comparing another network, check data charges first and stop the earlier playback session. Do not change networks and reinstall the app in the same check."}
           ],
           "kind": "editorial"
         },
@@ -775,7 +802,7 @@
           "slug": "blogs",
           "title": "5G Live guides for changing connections and smaller screens",
           "description": "Read 5G Live guides on manageable playlists, network-aware playback checks and useful support reports from mobile devices.",
-          "intro": "Watching on a phone or a portable setup brings its own small decisions: readable navigation, data use, battery settings and the connection available at the time. These guides help you keep those decisions separate and understandable.",
+          "intro": "These 5G Live guides separate small-screen navigation from network-change troubleshooting. Keep a manageable favourites list, compare one permitted connection change at a time, then report the before-and-after conditions without sharing network credentials or assuming the 5G icon proves performance.",
           "sections": [
             {"heading": "Make everyday use simpler", "body": "The playlist guide focuses on a manageable selection, while the playback guide shows how to compare connections without changing everything at once. Neither promises that a new device or faster network label will solve every issue."},
             {"heading": "Send a useful report", "body": "The support article explains which mobile details help and which information should remain private. The advice assumes lawful access and your plan's limits; it does not supply content rights, a mobile data allowance or a universal compatibility guarantee."}
@@ -827,7 +854,8 @@
           "intro": "A long list that is manageable with a television remote can feel awkward on a phone. Use the player's documented organisation tools to make navigation easier without replacing a working setup with unknown sources.",
           "sections": [
             {"heading": "Keep the first screen useful", "body": "If supported, save a small favourites list and check text size or orientation options. Only organise sources you are authorised to use; a renamed category does not change your plan allowance or access rights."},
-            {"heading": "Refresh deliberately", "body": "Record the current configuration privately before changing it, then test one documented refresh. Avoid doing this while repeatedly switching networks. If the result is unexpected, note the device and player version, and keep playlist addresses out of public messages."}
+            {"heading": "Refresh deliberately", "body": "Record the current configuration privately before changing it, then test one documented refresh. Avoid doing this while repeatedly switching networks. If the result is unexpected, note the device and player version, and keep playlist addresses out of public messages."},
+            {"heading": "Make one small-screen change at a time", "body": "1. Keep the current playlist configuration privately. 2. Add a few authorised favourites using documented controls. 3. Check whether labels remain readable after rotating the screen. If navigation is better but playback still fails, treat that as a separate issue; do not replace the source to fix a display problem."}
           ],
           "kind": "article"
         },
@@ -838,7 +866,8 @@
           "intro": "A playback issue that appears after leaving home may have several causes. Start by noting the connection change rather than assuming the service or the phone needs replacing. Keep your provider's data and roaming charges in mind during tests.",
           "sections": [
             {"heading": "Hold the other details steady", "body": "Use the same device, player version and authorised source when comparing connections. Note whether the issue is an error, interruption or quality change. A 5G icon alone does not measure stability or guarantee a particular speed."},
-            {"heading": "Report the difference", "body": "Record which connection worked and when the problem occurred. Check documented battery or data restrictions without changing everything at once. If location restrictions may apply, ask support; do not attempt to bypass them or share private network credentials."}
+            {"heading": "Report the difference", "body": "Record which connection worked and when the problem occurred. Check documented battery or data restrictions without changing everything at once. If location restrictions may apply, ask support; do not attempt to bypass them or share private network credentials."},
+            {"heading": "Decide what to check after a network switch", "body": "If ordinary internet access also fails, check connectivity with the network provider. If only the player changes, keep the device and authorised item the same and record the error on each permitted connection. Stop the first stream before the second and check data charges. Do not infer the cause from a network icon alone."}
           ],
           "kind": "article"
         },
@@ -849,7 +878,8 @@
           "intro": "A screenshot from a phone often contains more private information than intended. Before contacting support, write down the symptom and prepare only the details needed to understand it, keeping the order reference separate from any credentials.",
           "sections": [
             {"heading": "Describe the change that matters", "body": "Include the device model, player version and whether you were on Wi-Fi, mobile data or a hotspot. Say if the issue started after a network switch, an update or a setting change, and quote the exact error."},
-            {"heading": "Keep the follow-up focused", "body": "List the checks already tried and crop screenshots to the relevant message. Never send passwords, verification codes, router credentials or card details. Reply in the same support conversation where practical so the earlier comparison is not lost."}
+            {"heading": "Keep the follow-up focused", "body": "List the checks already tried and crop screenshots to the relevant message. Never send passwords, verification codes, router credentials or card details. Reply in the same support conversation where practical so the earlier comparison is not lost."},
+            {"heading": "An illustrative before-and-after report", "body": "Template, not a customer case: Device/player [versions]; before [Wi-Fi/mobile/hotspot]; after [connection type]; action [network switch or setting]; symptom [exact text]; check [one change and result]; order [private reference]. Crop screenshots and hide network names, credentials and personal information where unnecessary."}
           ],
           "kind": "article"
         }
