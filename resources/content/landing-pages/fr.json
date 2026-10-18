@@ -136,7 +136,8 @@
             {
               "heading": "Vérifiez l'usage quotidien, pas seulement l'installation",
               "body": "Consultez la documentation du lecteur pour la télécommande, la recherche, les favoris et les sous-titres. Une installation réussie ne prouve ni la compatibilité du service ni la qualité d'image. Posez la question pour votre modèle/version exacts et distinguez l'achat du service de la licence du lecteur."
-            }
+            },
+            {"heading":"Vérifiez l'usage à la télécommande avant de choisir","body":"Sur le téléviseur prévu, consultez le manuel officiel du lecteur puis vérifiez catégories, retour depuis la lecture et favoris avec la télécommande. Notez tout besoin de souris ou d'écran tactile. Une installation réussie ne prouve pas un usage confortable; demandez confirmation pour le modèle exact avant de choisir un an.","links":[{"label":"Manuel officiel VLC pour Android","url":"https://docs.videolan.me/vlc-android-user/"}]}
           ],
           "kind": "editorial"
         },
@@ -157,7 +158,8 @@
             {
               "heading": "Vérifiez les bases avant de saisir les accès",
               "body": "1. Identifiez le modèle et la version du système. 2. Consultez la compatibilité et la licence officielles du lecteur. 3. Vérifiez l'accès internet ordinaire sur cet appareil. 4. Consultez la commande dans le compte central. Si une étape reste incertaine, demandez avant de réinstaller ou de racheter."
-            }
+            },
+            {"heading":"Arrêtez-vous au premier préalable incertain","body":"Séparez appareil et système, lecteur et éventuelle licence, puis état de commande et question restante. Si l'accès internet ordinaire échoue, réglez cela d'abord. Le guide Google TV concerne les appareils Google TV. N'effacez pas une configuration fonctionnelle et ne réinitialisez pas le téléviseur simplement pour recommencer.","links":[{"label":"Dépannage officiel Google TV","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "editorial"
         },
@@ -334,7 +336,8 @@
             {
               "heading": "Une vérification limitée et réversible",
               "body": "1. Notez en privé le nom d'origine de la catégorie. 2. Ajoutez quelques éléments autorisés aux favoris avec les commandes documentées. 3. Rouvrez les favoris avec la télécommande et vérifiez les noms. Si un élément manque, cherchez dans sa catégorie d'origine avant de supprimer ou de remplacer la liste."
-            }
+            },
+            {"heading":"Vérifiez un favori après réouverture","body":"Choisissez une entrée autorisée dont vous retrouvez la catégorie d'origine. Ajoutez-la aux favoris avec les commandes documentées, quittez cet écran puis revenez avec la télécommande. Vérifiez nom et entrée, pas seulement le compteur. En cas de disparition, indiquez catégorie et action; ne remplacez pas toute la liste et ne publiez pas son adresse privée."}
           ],
           "kind": "article"
         },
@@ -355,7 +358,8 @@
             {
               "heading": "Séparez navigation et lecture",
               "body": "Si les menus répondent mais qu'un élément échoue, notez-le en privé avec l'erreur exacte. Si plusieurs échouent, vérifiez internet sur le même appareil. Comparez un seul réglage documenté ou une connexion, puis restaurez si cela n'aide pas. N'ouvrez pas une deuxième lecture simultanée pour ce contrôle."
-            }
+            },
+            {"heading":"Distinguez application bloquée et lecture interrompue","body":"Précisez si l'échec concerne l'ouverture du lecteur, la liste ou une entrée. Si d'autres applications ordinaires échouent aussi, examinez appareil et connexion avant la liste. Sinon, notez l'entrée en privé et l'heure. Suivez les instructions du fabricant; un écran 8K ne transforme pas la source.","links":[{"label":"Dépannage officiel Google TV","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "article"
         },
@@ -376,7 +380,8 @@
             {
               "heading": "Un exemple de message à compléter",
               "body": "Modèle illustratif, pas un cas client : Appareil [modèle/système] ; lecteur [nom/version] ; commande [référence, en privé] ; action [bouton utilisé] ; résultat [message exact] ; étendue [un ou plusieurs éléments] ; essai [un changement et son résultat]. Joignez uniquement l'erreur recadrée, sans identifiants ni données personnelles."
-            }
+            },
+            {"heading":"Envoyez une observation propre au téléviseur","body":"Dans un message privé, indiquez modèle, versions, bouton pressé, écran obtenu, fonctionnement des autres applications et un changement avec son résultat. Recadrez toute photo sur l'erreur. Posez une question précise de compatibilité, sans publier référence de commande ou mot de passe."}
           ],
           "kind": "article"
         }
@@ -503,7 +508,8 @@
             {
               "heading": "Distinguez trois exigences",
               "body": "Vérifiez si l'application accepte votre appareil, si son développeur facture une licence et si elle prend en charge le mode de configuration requis. Ce sont trois questions séparées. Le reçu d'une application n'est pas une commande Opplex, et une formule Opplex ne règle pas automatiquement une licence tierce."
-            }
+            },
+            {"heading":"Identifiez qui demande le paiement","body":"Avant un paiement d'application, vérifiez développeur et objet: licence du lecteur ou commande Opplex? Un nom ou logo semblable ne prouve pas une même transaction. Consultez séparément documentation et commande. Le manuel VLC est un exemple de référence officielle, pas une obligation d'utiliser ce lecteur.","links":[{"label":"Manuel officiel VLC pour Android","url":"https://docs.videolan.me/vlc-android-user/"}]}
           ],
           "kind": "editorial"
         },
@@ -524,7 +530,8 @@
             {
               "heading": "Vérifiez la commande avant de modifier le lecteur",
               "body": "1. Ouvrez le compte central et retrouvez la commande. 2. Notez son statut et sa référence. 3. Consultez le guide officiel de votre appareil/lecteur exacts. 4. Si le statut ou les instructions restent flous, demandez avec cette référence. Ne repayez pas pour résoudre une erreur du lecteur."
-            }
+            },
+            {"heading":"Séparez achat et configuration de l'appareil","body":"Ouvrez le compte central avec l'adresse d'achat et retrouvez la commande. Notez l'état affiché avant de modifier le lecteur. Si le paiement reste incertain ou en attente, demandez sa vérification sans racheter. Gardez séparément le reçu d'une éventuelle licence d'application."}
           ],
           "kind": "editorial"
         },
@@ -701,7 +708,8 @@
             {
               "heading": "Gardez le contexte du compte pendant le rangement",
               "body": "Avant de modifier les favoris, identifiez en privé la commande et la configuration utilisées. Changez seulement un affichage ou des favoris, puis vérifiez un élément autorisé connu. Si l'accès échoue, conservez la configuration et vérifiez la commande ; n'en créez pas une autre pour ranger une liste."
-            }
+            },
+            {"heading":"Organisez sans changer le dossier d'achat","body":"Notez en privé profil du lecteur et service sélectionné. Essayez un seul changement réversible de favori ou catégorie, puis rouvrez la vue. Un meilleur libellé ne change ni durée, ni connexions, ni commande. Si la liste est vide, contrôlez le profil avant un nouvel import; ne publiez pas l'adresse privée."}
           ],
           "kind": "article"
         },
@@ -722,7 +730,8 @@
             {
               "heading": "Choisissez la suite selon le symptôme",
               "body": "Si le statut de commande est incertain, clarifiez-le d'abord avec l'assistance. S'il est compris mais que l'application ne s'ouvre pas, consultez le développeur. Si elle s'ouvre sans lire, notez l'erreur et essayez un changement à la fois, sans dépasser une connexion simultanée."
-            }
+            },
+            {"heading":"Choisissez la voie commande ou lecture","body":"Si l'état de commande est incertain, poursuivez avec le support des commandes sans nouveau paiement. Sinon, relevez appareil, version, symptôme et fonctionnement des autres applications. Gardez ces observations dans la même conversation. Un guide de dépannage ne confirme pas un paiement et ne modifie pas l'abonnement.","links":[{"label":"Dépannage officiel Google TV","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "article"
         },
@@ -743,7 +752,8 @@
             {
               "heading": "Un exemple de suivi de commande",
               "body": "Modèle illustratif, pas un cas client : Commande [référence] ; formule [durée] ; statut du compte [texte exact] ; problème [paiement ou lecteur] ; appareil/lecteur [version, si utile] ; dernier contrôle [action et résultat]. Envoyez-le par l'assistance privée, sans mot de passe, numéro de carte complet ni code à usage unique."
-            }
+            },
+            {"heading":"Posez une question vérifiable dans la commande","body":"Donnez en privé référence et état visible, puis l'écart précis: durée, montant, reçu ou étape suivante. Ajoutez l'heure de tentative si utile et demandez de vérifier ce point. N'envoyez ni numéro de carte complet, ni accès bancaire, ni code à usage unique; un second paiement ne résout pas automatiquement le premier."}
           ],
           "kind": "article"
         }
@@ -870,7 +880,8 @@
             {
               "heading": "Comparez des fonctions équivalentes",
               "body": "Vérifiez version de l'appareil, disponibilité en boutique, langue, sous-titres et licence de chaque lecteur. Ne comparez pas une application mobile et une application TV comme si leurs fonctions étaient identiques. Un menu traduit ne prouve pas quelles pistes audio ou quels sous-titres contient une source."
-            }
+            },
+            {"heading":"Séparez langue des menus et pistes","body":"Notez langue de l'interface, audio souhaité et sous-titres souhaités. VLC pour Android documente le choix des pistes disponibles, sans garantir une langue dans chaque source. Comparez le manuel officiel à votre version. Avant achat, demandez confirmation pour l'entrée autorisée précise, pas une disponibilité supposée dans tout un pays.","links":[{"label":"Commandes audio et sous-titres officielles VLC","url":"https://docs.videolan.me/vlc-android-user/video/video_player.html"}]}
           ],
           "kind": "editorial"
         },
@@ -891,7 +902,8 @@
             {
               "heading": "Établissez un point de comparaison",
               "body": "1. Notez appareil, version du lecteur et langue. 2. Vérifiez la commande centrale. 3. Choisissez un élément autorisé et une connexion permise. 4. Notez le symptôme avant un réglage. Gardez appareil et source pour le contrôle suivant, sans deuxième lecture simultanée."
-            }
+            },
+            {"heading":"Établissez un point de départ reproductible","body":"Notez appareil, système, version, langue et connexion. Choisissez une entrée autorisée, puis symptôme, heure locale et fuseau. Ne changez qu'une condition permise et arrêtez la première lecture avant l'autre. Si une option manque, signalez son absence au lieu d'importer une liste inconnue ou de contourner une restriction."}
           ],
           "kind": "editorial"
         },
@@ -1068,7 +1080,8 @@
             {
               "heading": "Comparez un libellé sans remplacer la source",
               "body": "1. Notez le libellé d'origine en privé. 2. Ajoutez-le aux favoris si possible. 3. Vérifiez le même élément après un changement de langue d'affichage. Un nom différent ne signifie pas un accès différent. Si l'élément disparaît, restaurez le réglage et transmettez le texte d'origine."
-            }
+            },
+            {"heading":"Notez libellé et langue séparément","body":"Pour une entrée difficile, gardez catégorie d'origine et bref identifiant en privé. Distinguez nom, langue des menus, audio et sous-titres. Essayez un libellé de favori réversible si possible, puis rouvrez-le. Renommer ou remplacer une source ne crée pas une piste audio absente."}
           ],
           "kind": "article"
         },
@@ -1089,7 +1102,8 @@
             {
               "heading": "Une comparaison que vous pourrez expliquer",
               "body": "Notez A : appareil, version, élément autorisé, connexion et symptôme. Pour B, modifiez un seul réglage ou une connexion permise, sans changer le reste. Arrêtez A avant B pour respecter une connexion. Une amélioration oriente la prochaine question, mais ne prouve pas à elle seule la cause."
-            }
+            },
+            {"heading":"Gardez un petit relevé comparatif","body":"Notez heure et fuseau, appareil et version, connexion, entrée et résultat. Répétez la même entrée autorisée après un seul changement permis, en arrêtant la lecture précédente. Incluez réussites et échecs. Deux entrées sur deux appareils n'isolent pas une cause; un résultat favorable ne prouve pas une disponibilité universelle."}
           ],
           "kind": "article"
         },
@@ -1110,7 +1124,8 @@
             {
               "heading": "Un exemple de compte rendu comparatif",
               "body": "Modèle illustratif, pas un cas client : Pays [si pertinent] ; appareil/lecteur [versions] ; langue [interface] ; erreur originale [texte] ; A [conditions/résultat] ; B [une condition modifiée/résultat] ; commande [référence privée]. Masquez identifiants et données personnelles des captures ; l'adresse complète n'est pas nécessaire."
-            }
+            },
+            {"heading":"Partagez le minimum de contexte régional","body":"Indiquez pays, langue de support et fuseau, puis votre question précise d'appareil ou de langue. Donnez l'heure approximative, pas l'adresse complète. En cas de doute sur catalogue ou localisation, demandez confirmation de l'usage prévu. N'envoyez ni pièce d'identité, ni mot de passe réseau, ni tentative de contournement."}
           ],
           "kind": "article"
         }
@@ -1233,7 +1248,8 @@
             {
               "heading": "Vérifiez l'effet d'une interruption de l'application",
               "body": "Lisez les consignes du développeur sur verrouillage d'écran, arrière-plan, économie de batterie et données mobiles. Si la lecture s'arrête après un changement, notez-le d'abord. Ne désactivez pas les protections sans discernement ; confirmez la compatibilité plutôt que de supposer tous les lecteurs identiques."
-            }
+            },
+            {"heading":"Relevez les réglages de données avant modification","body":"Sur iPhone ou iPad, le mode Faibles données peut réduire la qualité du streaming. Notez son état et consultez les instructions Apple actuelles. Ne le désactivez pas automatiquement: vérifiez forfait et itinérance. Distinguez lecteur et connexion; un symbole 5G ne prouve pas un résultat de lecture.","links":[{"label":"Guide officiel Apple du mode Faibles données","url":"https://support.apple.com/en-ca/102433"}]}
           ],
           "kind": "editorial"
         },
@@ -1254,7 +1270,8 @@
             {
               "heading": "Rendez le premier essai facile à reproduire",
               "body": "1. Vérifiez la commande centrale. 2. Utilisez une connexion connue et permise. 3. Notez version et erreur avant les réglages. 4. Avant de comparer un autre réseau, vérifiez les frais et arrêtez la lecture précédente. Ne changez pas de réseau tout en réinstallant l'application dans le même contrôle."
-            }
+            },
+            {"heading":"Commencez par un essai court et reproductible","body":"Notez Wi-Fi, données mobiles ou partage de connexion, version et heure. Vérifiez le forfait avant une brève lecture autorisée, puis arrêtez-la. Ne laissez pas la lecture en arrière-plan pendant un changement de réseau. Conservez l'erreur et demandez le prochain contrôle plutôt que télécharger ou réinstaller sans cesse."}
           ],
           "kind": "editorial"
         },
@@ -1431,7 +1448,8 @@
             {
               "heading": "Un petit changement d'affichage à la fois",
               "body": "1. Gardez la configuration actuelle en privé. 2. Ajoutez quelques favoris autorisés avec les commandes documentées. 3. Vérifiez les noms après rotation de l'écran. Si la navigation s'améliore mais pas la lecture, ce sont deux problèmes distincts ; ne remplacez pas la source pour corriger l'affichage."
-            }
+            },
+            {"heading":"Vérifiez la liste sans multiplier les aperçus","body":"Choisissez quelques favoris autorisés au lieu d'actualiser toutes les catégories. Vérifiez si un appui sélectionne ou lance la lecture; arrêtez celle-ci avant l'entrée suivante. Rouvrez une fois pour confirmer le changement. Un problème de présentation sur petit écran et une panne de lecture sont distincts: précisez l'action qui échoue."}
           ],
           "kind": "article"
         },
@@ -1452,7 +1470,8 @@
             {
               "heading": "Choisissez le contrôle après un changement de réseau",
               "body": "Si internet ordinaire échoue aussi, vérifiez la connexion avec l'opérateur. Si seul le lecteur change, gardez appareil et élément autorisé constants et notez l'erreur sur chaque connexion permise. Arrêtez le premier flux avant le second et vérifiez les frais. L'icône réseau ne prouve pas la cause."
-            }
+            },
+            {"heading":"Comparez un changement de réseau sans double lecture","body":"Notez connexion avant et après, heure et symptôme. Arrêtez la lecture avant de changer, puis faites un bref contrôle permis avec le même appareil et la même entrée. Vérifiez le coût mobile. Si internet ordinaire échoue aussi, voyez d'abord l'opérateur; une icône de signal n'explique pas le résultat."}
           ],
           "kind": "article"
         },
@@ -1473,7 +1492,8 @@
             {
               "heading": "Un exemple de rapport avant/après",
               "body": "Modèle illustratif, pas un cas client : Appareil/lecteur [versions] ; avant [Wi-Fi/mobile/partage] ; après [type] ; action [réseau ou réglage] ; symptôme [texte exact] ; contrôle [un changement/résultat] ; commande [référence privée]. Recadrez les images et masquez noms de réseau, identifiants et données inutiles."
-            }
+            },
+            {"heading":"Décrivez l'interruption dans l'ordre","body":"Envoyez en privé connexion initiale, action, connexion suivante, message, état d'internet ordinaire et un contrôle avec son résultat. Signalez écran verrouillé ou autre application ouverte sans supposer la cause. Masquez noms de réseau et données personnelles sur les images. Poursuivez la conversation existante plutôt que plusieurs demandes identiques."}
           ],
           "kind": "article"
         }

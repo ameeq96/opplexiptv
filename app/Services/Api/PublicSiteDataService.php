@@ -584,7 +584,12 @@ class PublicSiteDataService
                     && is_string($section['heading']) && is_string($section['body'])
                     && trim($section['heading']) !== '' && trim($section['body']) !== '', 503);
 
-                return ['heading' => $section['heading'], 'body' => $section['body']];
+                $content = ['heading' => $section['heading'], 'body' => $section['body']];
+                if (array_key_exists('links', $section)) {
+                    $content['links'] = $this->landingSourceLinks($section['links']);
+                }
+
+                return $content;
             }, $page['sections']);
 
             return [
@@ -598,6 +603,28 @@ class PublicSiteDataService
         }, $pages);
 
         return ['brand' => $brand, 'locale' => $locale, 'labels' => $labels, 'pages' => $pages];
+    }
+
+    private function landingSourceLinks(mixed $links): array
+    {
+        abort_unless(is_array($links) && array_is_list($links) && count($links) <= 3, 503);
+
+        return array_map(function ($link): array {
+            abort_unless(is_array($link) && isset($link['label'], $link['url'])
+                && is_string($link['label']) && trim($link['label']) !== ''
+                && mb_strlen($link['label']) <= 160 && strip_tags($link['label']) === $link['label']
+                && ! str_contains($link['label'], "\0")
+                && is_string($link['url']) && strlen($link['url']) <= 2048
+                && ! preg_match('/[\x00-\x20\x7f]/', $link['url'])
+                && filter_var($link['url'], FILTER_VALIDATE_URL), 503);
+            $url = parse_url($link['url']);
+            abort_unless(is_array($url) && ($url['scheme'] ?? null) === 'https'
+                && in_array($url['host'] ?? null, ['support.google.com', 'support.apple.com', 'docs.videolan.me', 'www.videolan.org'], true)
+                && ! isset($url['user']) && ! isset($url['pass'])
+                && (! isset($url['port']) || $url['port'] === 443), 503);
+
+            return ['label' => $link['label'], 'url' => $link['url']];
+        }, $links);
     }
 
     public function landingPage(string $brand, string $page): array

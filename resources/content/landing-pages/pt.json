@@ -136,7 +136,8 @@
             {
               "heading": "Verifique o uso diário, não apenas a instalação",
               "body": "Consulte a documentação sobre comando, pesquisa, favoritos e legendas. Uma instalação bem-sucedida não prova compatibilidade do serviço nem qualidade de imagem. Pergunte pelo modelo/versão exatos e separe a compra do serviço da licença do leitor."
-            }
+            },
+            {"heading":"Experimente o comando antes de escolher","body":"No televisor que vai usar, consulte o manual oficial e verifique categorias, regresso da reprodução e favoritos com o comando. Anote funções que exigem rato ou ecrã tátil. Instalar a aplicação não prova conforto no dia a dia; pergunte pelo modelo exato antes de escolher um ano.","links":[{"label":"Manual oficial do VLC para Android","url":"https://docs.videolan.me/vlc-android-user/"}]}
           ],
           "kind": "editorial"
         },
@@ -157,7 +158,8 @@
             {
               "heading": "Verifique as bases antes de introduzir os acessos",
               "body": "1. Identifique modelo e versão do sistema. 2. Consulte compatibilidade e licença oficiais do leitor. 3. Verifique o acesso normal à internet nesse dispositivo. 4. Consulte a encomenda na conta central. Se algum passo não for claro, pergunte antes de reinstalar ou comprar novamente."
-            }
+            },
+            {"heading":"Pare no primeiro requisito por esclarecer","body":"Separe dispositivo e sistema, leitor e eventual licença, estado da encomenda e dúvida. Se a internet normal falha, resolva isso primeiro. Use o guia Google TV apenas num dispositivo Google TV. Não restaure o televisor nem apague definições funcionais só para repetir a configuração.","links":[{"label":"Resolução de problemas oficial do Google TV","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "editorial"
         },
@@ -314,7 +316,8 @@
             {
               "heading": "Uma verificação pequena e reversível",
               "body": "1. Anote em privado o nome original da categoria. 2. Adicione alguns elementos autorizados aos favoritos com os comandos documentados. 3. Reabra os favoritos com o comando e confirme os nomes. Se faltar um elemento, procure na categoria original antes de apagar ou substituir a lista."
-            }
+            },
+            {"heading":"Confirme um favorito depois de reabrir","body":"Escolha uma entrada autorizada cuja categoria original consiga localizar. Adicione-a aos favoritos pelos controlos documentados, saia e volte com o comando. Verifique nome e entrada, não apenas a contagem. Se desaparecer, indique categoria e ação; não substitua toda a lista nem publique o endereço privado."}
           ],
           "kind": "article"
         },
@@ -335,7 +338,8 @@
             {
               "heading": "Separe navegação e reprodução",
               "body": "Se os menus respondem mas um elemento falha, anote em privado qual e o erro exato. Se falham vários, verifique a internet no mesmo dispositivo. Altere apenas uma definição documentada ou ligação e reponha-a se não ajudar. Não abra uma segunda reprodução simultânea como teste."
-            }
+            },
+            {"heading":"Distinga aplicação bloqueada e reprodução interrompida","body":"Anote se falha abrir o leitor, navegar ou reproduzir uma entrada. Se outras aplicações normais também falharem, examine dispositivo e ligação antes da lista. Caso contrário, registe entrada e hora em privado. Siga o fabricante; um ecrã 8K não transforma a fonte.","links":[{"label":"Resolução de problemas oficial do Google TV","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "article"
         },
@@ -356,7 +360,8 @@
             {
               "heading": "Uma mensagem ilustrativa para preencher",
               "body": "Modelo, não um caso real: Dispositivo [modelo/sistema]; leitor [nome/versão]; encomenda [referência, apenas em privado]; ação [o que carreguei]; resultado [mensagem exata]; âmbito [um ou vários elementos]; verificação [uma alteração e resultado]. Anexe apenas o erro recortado, ocultando credenciais e dados pessoais."
-            }
+            },
+            {"heading":"Envie uma observação concreta do televisor","body":"Em privado, indique modelo, versões, botão premido, ecrã apresentado, funcionamento de outras aplicações e uma alteração com resultado. Recorte a imagem apenas para o erro. Faça uma pergunta específica sobre compatibilidade e não publique referência da encomenda ou palavras-passe."}
           ],
           "kind": "article"
         }
@@ -479,7 +484,8 @@
             {
               "heading": "Separe três requisitos",
               "body": "Verifique se a aplicação suporta o dispositivo, se o programador cobra uma licença e se aceita o método de configuração necessário. São perguntas distintas. O recibo de uma aplicação não é uma encomenda Opplex, e um plano Opplex não paga automaticamente uma licença de terceiros."
-            }
+            },
+            {"heading":"Identifique quem está a pedir o pagamento","body":"Antes de pagar uma aplicação, confirme programador e descrição: licença do leitor ou encomenda Opplex? Nome ou logótipo semelhante não prova a mesma compra. Consulte documentação e encomenda separadamente. O manual VLC é um exemplo de referência oficial, não uma obrigação de utilizar a aplicação.","links":[{"label":"Manual oficial do VLC para Android","url":"https://docs.videolan.me/vlc-android-user/"}]}
           ],
           "kind": "editorial"
         },
@@ -500,7 +506,8 @@
             {
               "heading": "Verifique a encomenda antes de alterar o leitor",
               "body": "1. Abra a conta central e encontre a encomenda. 2. Anote estado e referência. 3. Consulte o guia oficial do dispositivo/leitor exatos. 4. Se o estado ou instruções não forem claros, pergunte com essa referência. Não volte a pagar para resolver um erro do leitor."
-            }
+            },
+            {"heading":"Separe a compra da configuração","body":"Abra a conta central com o email da compra e encontre a encomenda. Registe o estado mostrado antes de alterar o leitor. Se o pagamento está pendente ou incerto, peça verificação em vez de voltar a comprar. Guarde separadamente o recibo de uma eventual licença da aplicação."}
           ],
           "kind": "editorial"
         },
@@ -657,7 +664,8 @@
             {
               "heading": "Mantenha o contexto da conta ao organizar",
               "body": "Antes de mudar favoritos, identifique em privado a encomenda e a configuração usadas. Altere apenas uma opção visual ou de favoritos e verifique um elemento autorizado conhecido. Se o acesso falhar, mantenha a configuração e consulte a encomenda; não crie outra para organizar uma lista."
-            }
+            },
+            {"heading":"Organize sem alterar o registo da compra","body":"Anote em privado o perfil do leitor e o serviço selecionado. Experimente uma alteração reversível num favorito ou categoria e reabra a vista. Um nome mais claro não muda prazo, ligações ou encomenda. Se a lista estiver vazia, confirme o perfil antes de importar outra vez; não publique o endereço privado."}
           ],
           "kind": "article"
         },
@@ -678,7 +686,8 @@
             {
               "heading": "Escolha a próxima verificação pelo sintoma",
               "body": "Se o estado da encomenda for incerto, esclareça-o primeiro com o apoio. Se estiver claro mas a aplicação não abrir, consulte o programador. Se abrir sem reproduzir, anote o erro e teste uma alteração de cada vez, sem ultrapassar uma ligação simultânea."
-            }
+            },
+            {"heading":"Escolha apoio da encomenda ou da reprodução","body":"Se o estado da encomenda é incerto, continue no apoio a encomendas sem novo pagamento. Caso esteja claro mas a reprodução falhe, registe dispositivo, versão, sintoma e funcionamento de outras aplicações. Mantenha tudo na mesma conversa. Um guia técnico não confirma pagamentos nem altera subscrições.","links":[{"label":"Resolução de problemas oficial do Google TV","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "article"
         },
@@ -699,7 +708,8 @@
             {
               "heading": "Um exemplo de seguimento da encomenda",
               "body": "Modelo, não um caso real: Encomenda [referência]; plano [duração]; estado da conta [texto exato]; problema [pagamento ou leitor]; dispositivo/leitor [versão, se relevante]; última verificação [ação e resultado]. Envie pelo apoio privado, sem palavras-passe, número completo do cartão ou códigos de utilização única."
-            }
+            },
+            {"heading":"Faça uma pergunta verificável na encomenda","body":"Indique em privado referência e estado visível, depois a diferença concreta: prazo, valor, recibo ou próximo passo. Acrescente a hora da tentativa se ajudar. Peça revisão desse ponto. Não envie cartão completo, acesso bancário ou códigos únicos; um segundo pagamento não resolve automaticamente o primeiro."}
           ],
           "kind": "article"
         }
@@ -818,7 +828,8 @@
             {
               "heading": "Compare funções equivalentes",
               "body": "Verifique versão do dispositivo, disponibilidade na loja, idioma, legendas e licença de cada leitor. Não compare aplicações de telefone e televisão como se tivessem as mesmas funções. Um menu traduzido não prova que faixas de áudio ou legendas contém uma fonte."
-            }
+            },
+            {"heading":"Separe idioma dos menus e faixas disponíveis","body":"Anote idioma da interface, áudio pretendido e legendas pretendidas. O VLC para Android documenta a seleção de faixas disponíveis, sem garantir um idioma em todas as fontes. Compare o manual oficial com a versão instalada. Pergunte pela entrada autorizada concreta antes de comprar, não por disponibilidade universal num país.","links":[{"label":"Controlos oficiais de áudio e legendas do VLC","url":"https://docs.videolan.me/vlc-android-user/video/video_player.html"}]}
           ],
           "kind": "editorial"
         },
@@ -839,7 +850,8 @@
             {
               "heading": "Crie uma base de comparação",
               "body": "1. Registe dispositivo, versão do leitor e idioma. 2. Verifique a encomenda central. 3. Escolha um elemento autorizado e uma ligação permitida. 4. Anote o sintoma antes de mudar definições. Mantenha dispositivo e fonte no passo seguinte, sem uma segunda reprodução simultânea."
-            }
+            },
+            {"heading":"Crie uma referência que seja repetível","body":"Registe dispositivo, sistema, versão, idioma e ligação. Escolha uma entrada autorizada e anote sintoma, hora local e fuso. Altere apenas uma condição permitida e pare a primeira reprodução antes de outra. Se uma opção não existir, registe a ausência; não importe listas desconhecidas nem contorne restrições."}
           ],
           "kind": "editorial"
         },
@@ -996,7 +1008,8 @@
             {
               "heading": "Compare uma etiqueta sem substituir a fonte",
               "body": "1. Guarde o nome original em privado. 2. Adicione-o aos favoritos, se possível. 3. Verifique o mesmo elemento depois de mudar o idioma visual. Um nome diferente não significa acesso diferente. Se desaparecer, reponha a definição e comunique o texto original."
-            }
+            },
+            {"heading":"Registe etiqueta e idioma separadamente","body":"Para uma entrada difícil, guarde em privado categoria original e identificador curto. Distinga nome, idioma do menu, áudio e legendas. Se possível, experimente uma etiqueta reversível nos favoritos e reabra-a. Mudar o nome ou substituir a fonte não cria uma faixa de áudio ausente."}
           ],
           "kind": "article"
         },
@@ -1017,7 +1030,8 @@
             {
               "heading": "Uma comparação que possa explicar depois",
               "body": "Registe A: dispositivo, versão, elemento autorizado, ligação e sintoma. Em B altere apenas uma definição ou ligação permitida, mantendo o resto. Pare A antes de B para respeitar uma ligação. Uma melhoria sugere a próxima pergunta, mas não prova por si só a causa."
-            }
+            },
+            {"heading":"Use um registo curto da comparação","body":"Anote hora e fuso, dispositivo e versão, ligação, entrada e resultado. Repita a mesma entrada autorizada depois de uma alteração permitida, parando antes a reprodução anterior. Inclua resultados bons e maus. Entradas e dispositivos diferentes não isolam a causa; um sucesso não demonstra disponibilidade universal."}
           ],
           "kind": "article"
         },
@@ -1038,7 +1052,8 @@
             {
               "heading": "Um relatório comparativo ilustrativo",
               "body": "Modelo, não um caso real: País [se relevante]; dispositivo/leitor [versões]; idioma [interface]; erro original [texto]; A [condições/resultado]; B [uma condição alterada/resultado]; encomenda [referência privada]. Oculte credenciais e dados pessoais nas imagens; não é necessária a morada completa."
-            }
+            },
+            {"heading":"Partilhe só o contexto regional necessário","body":"Indique país, idioma de apoio e fuso, depois a pergunta concreta sobre dispositivo ou idioma. Dê a hora aproximada, não a morada completa. Se catálogo ou localização são incertos, peça confirmação do uso previsto. Não envie documentos de identidade, palavras-passe da rede ou tentativas de contornar restrições."}
           ],
           "kind": "article"
         }
@@ -1161,7 +1176,8 @@
             {
               "heading": "Veja o efeito das interrupções da aplicação",
               "body": "Leia as instruções do programador sobre bloqueio do ecrã, segundo plano, poupança de bateria e dados móveis. Se a reprodução parar depois de uma mudança, registe-a primeiro. Não desative proteções indiscriminadamente; confirme compatibilidade sem assumir que todos os leitores se comportam da mesma maneira."
-            }
+            },
+            {"heading":"Anote as definições de dados antes de mudar","body":"No iPhone ou iPad, o Modo de dados reduzidos pode diminuir a qualidade do streaming. Registe se está ativo e consulte as instruções atuais da Apple. Não o desative automaticamente: verifique pacote e roaming. Separe leitor e ligação; o símbolo 5G não prova um resultado de reprodução.","links":[{"label":"Guia oficial da Apple para dados reduzidos","url":"https://support.apple.com/en-ca/102433"}]}
           ],
           "kind": "editorial"
         },
@@ -1182,7 +1198,8 @@
             {
               "heading": "Torne a primeira tentativa fácil de repetir",
               "body": "1. Consulte a encomenda central. 2. Use uma ligação conhecida e permitida. 3. Anote versão e erro antes de alterar definições. 4. Antes de comparar outra rede, verifique tarifas e pare a reprodução anterior. Não troque de rede e reinstale a aplicação na mesma verificação."
-            }
+            },
+            {"heading":"Comece com uma tentativa curta e repetível","body":"Anote Wi-Fi, dados móveis ou hotspot, versão e hora. Consulte o limite do operador antes de uma reprodução autorizada curta e pare depois. Não deixe reprodução em segundo plano ao mudar de rede. Guarde o erro e pergunte pelo próximo passo em vez de descarregar ou reinstalar repetidamente."}
           ],
           "kind": "editorial"
         },
@@ -1339,7 +1356,8 @@
             {
               "heading": "Uma pequena mudança de ecrã de cada vez",
               "body": "1. Guarde a configuração atual em privado. 2. Adicione alguns favoritos autorizados com os controlos documentados. 3. Verifique os nomes após rodar o ecrã. Se navegar melhora mas reproduzir não, são problemas diferentes; não substitua a fonte para corrigir a apresentação."
-            }
+            },
+            {"heading":"Verifique a lista sem reproduzir todas as prévias","body":"Escolha poucos favoritos autorizados em vez de atualizar todas as categorias repetidamente. Confirme se um toque seleciona ou reproduz; pare antes de editar outra entrada. Reabra uma vez para confirmar. Um problema de disposição no telemóvel é diferente de uma falha de streaming: descreva a ação que falha."}
           ],
           "kind": "article"
         },
@@ -1360,7 +1378,8 @@
             {
               "heading": "Escolha a verificação após mudar de rede",
               "body": "Se a internet normal também falhar, verifique a ligação com o operador. Se apenas o leitor mudar, mantenha dispositivo e elemento autorizado e registe o erro em cada ligação permitida. Pare o primeiro fluxo antes do segundo e verifique tarifas. O ícone de rede não prova a causa."
-            }
+            },
+            {"heading":"Compare a mudança de rede sem duas reproduções","body":"Anote ligação inicial e final, hora e sintoma. Pare antes de mudar e faça depois uma verificação curta permitida no mesmo dispositivo e entrada. Confirme custos móveis. Se a internet normal também falha, comece pelo operador; um ícone de sinal não explica o resultado."}
           ],
           "kind": "article"
         },
@@ -1381,7 +1400,8 @@
             {
               "heading": "Um relatório ilustrativo de antes e depois",
               "body": "Modelo, não um caso real: Dispositivo/leitor [versões]; antes [Wi-Fi/dados/hotspot]; depois [tipo]; ação [rede ou definição]; sintoma [texto exato]; verificação [uma alteração/resultado]; encomenda [referência privada]. Recorte imagens e oculte nomes de rede, credenciais e dados desnecessários."
-            }
+            },
+            {"heading":"Descreva a interrupção por ordem","body":"Envie em privado ligação inicial, ação, ligação seguinte, mensagem, funcionamento de internet normal e uma verificação com resultado. Indique bloqueio do ecrã ou outra aplicação aberta sem adivinhar a causa. Oculte nomes de rede e dados pessoais nas imagens. Continue na conversa existente em vez de abrir pedidos idênticos."}
           ],
           "kind": "article"
         }

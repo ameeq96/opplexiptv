@@ -350,6 +350,66 @@ class PublicSiteApiTest extends TestCase
         $this->assertEqualsCanonicalizing([$monthly->id, $yearly->id, $trex->id], $catalog['data']->pluck('id')->all());
     }
 
+    public function test_landing_guides_publish_only_localized_official_reference_links(): void
+    {
+        $this->withoutMiddleware(\Illuminate\Routing\Middleware\ThrottleRequests::class);
+        foreach (['en', 'es', 'fr', 'it', 'nl', 'pt', 'ru', 'ur', 'ar', 'hi'] as $locale) {
+            foreach (['trex', 'opplex', 'geo', '5g'] as $brand) {
+                $response = $this->getJson('/api/v1/site/brands/'.$brand.'/pages?locale='.$locale)
+                    ->assertOk()->assertJsonPath('data.locale', $locale)->assertJsonPath('data.brand', $brand);
+                $references = 0;
+                foreach ($response->json('data.pages') as $page) {
+                    foreach ($page['sections'] as $section) {
+                        $links = $section['links'] ?? [];
+                        $this->assertLessThanOrEqual(3, count($links));
+                        foreach ($links as $link) {
+                            $this->assertSame(['label', 'url'], array_keys($link));
+                            $this->assertNotEmpty(trim($link['label']));
+                            $this->assertSame('https', parse_url($link['url'], PHP_URL_SCHEME));
+                            $this->assertContains(parse_url($link['url'], PHP_URL_HOST), [
+                                'support.google.com', 'support.apple.com', 'docs.videolan.me', 'www.videolan.org',
+                            ]);
+                            $references++;
+                        }
+                    }
+                }
+                $this->assertGreaterThan(0, $references, $brand.':'.$locale.' official sources');
+            }
+        }
+        Http::assertNothingSent();
+    }
+
+    public function test_landing_reference_validation_rejects_unsafe_links_and_discards_extra_fields(): void
+    {
+        $service = app(\App\Services\Api\PublicSiteDataService::class);
+        $method = new \ReflectionMethod($service, 'landingSourceLinks');
+        $safe = ['label' => 'Official documentation', 'url' => 'https://support.apple.com/en-ca/102433'];
+        $this->assertSame([$safe], $method->invoke($service, [$safe + ['internal_note' => 'not public']]));
+        $this->assertSame([], $method->invoke($service, []));
+        $invalid = [
+            null, 'https://support.apple.com', ['unexpected' => $safe], array_fill(0, 4, $safe),
+            [['label' => '', 'url' => $safe['url']]],
+            [['label' => '<b>Official</b>', 'url' => $safe['url']]],
+            [['label' => str_repeat('x', 161), 'url' => $safe['url']]],
+        ];
+        foreach ([
+            'javascript:alert(1)', 'http://support.apple.com/en-ca/102433', '//support.apple.com/en-ca/102433',
+            'https://support.apple.com.evil.test/', 'https://support.apple.com@evil.test/',
+            'https://user:password@support.apple.com/', 'https://support.apple.com:8443/',
+            'https://support.apple.com/'."\n".'unsafe', 'https://support.apple.com/'.str_repeat('x', 2048),
+        ] as $url) {
+            $invalid[] = [['label' => 'Official documentation', 'url' => $url]];
+        }
+        foreach ($invalid as $links) {
+            try {
+                $method->invoke($service, $links);
+                $this->fail('Invalid landing source links were accepted.');
+            } catch (\Symfony\Component\HttpKernel\Exception\HttpException $exception) {
+                $this->assertSame(503, $exception->getStatusCode());
+            }
+        }
+    }
+
     private function package(string $title, int $months): Package
     {
         return Package::create([

@@ -88,7 +88,8 @@
           "sections": [
             {"heading": "Use a trustworthy download route", "body": "Start with your device's app store or the developer's own published download. Avoid lookalike installers and unsolicited activation offers. Some players have separate fees that are not automatically included in a service plan."},
             {"heading": "Choose for everyday use", "body": "On a television, check remote navigation, readable text and accessibility options. On a smaller screen, look at controls and orientation. Ask support to confirm suitability before entering account information into an unfamiliar app."},
-            {"heading": "Check the everyday controls, not just installation", "body": "Before choosing a player, check its documented remote navigation, search, favourites and subtitle controls. A successful install alone does not verify service compatibility or picture quality. Ask about your exact model/version, and keep the service purchase separate from any player licence."}
+            {"heading": "Check the everyday controls, not just installation", "body": "Before choosing a player, check its documented remote navigation, search, favourites and subtitle controls. A successful install alone does not verify service compatibility or picture quality. Ask about your exact model/version, and keep the service purchase separate from any player licence."},
+            {"heading":"A remote-control check before choosing a player","body":"On the television you will actually use, open the player's official documentation and check navigation with your remote: move between categories, return from playback and reopen favourites. Record any control that needs a mouse or touch screen. Installation alone is not proof that daily use will be comfortable; ask about the exact model before committing to a yearly plan.","links":[{"label":"Official VLC for Android manual","url":"https://docs.videolan.me/vlc-android-user/"}]}
           ],
           "kind": "editorial"
         },
@@ -100,7 +101,8 @@
           "sections": [
             {"heading": "Check the foundations", "body": "Install available system updates, confirm the device has free storage and test its internet connection. If you can use a wired connection, compare it with Wi-Fi before moving equipment or buying extras."},
             {"heading": "Keep a useful record", "body": "Note the player name and version, then keep your order reference available. Follow the central setup guide for your device. If something fails, record the exact message instead of repeatedly reinstalling the app or sharing private credentials."},
-            {"heading": "A readiness check before entering service details", "body": "1. Find the exact model and operating-system version. 2. Check the player's official compatibility and licence requirements. 3. Test ordinary internet access on that device. 4. Check the order status in the central account. If a step is unclear, ask support before reinstalling or purchasing again."}
+            {"heading": "A readiness check before entering service details", "body": "1. Find the exact model and operating-system version. 2. Check the player's official compatibility and licence requirements. 3. Test ordinary internet access on that device. 4. Check the order status in the central account. If a step is unclear, ask support before reinstalling or purchasing again."},
+            {"heading":"Stop at the first unclear prerequisite","body":"Keep three separate notes: device and system version; player and any separate licence fee; order status and the unanswered question. If ordinary internet access fails, resolve that first. Use the official Google TV guide only for a Google TV device. Do not factory-reset the television or erase working app settings just to repeat a setup attempt.","links":[{"label":"Official Google TV troubleshooting","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "editorial"
         },
@@ -205,7 +207,8 @@
           "sections": [
             {"heading": "Separate organisation from access", "body": "Use favourites or hide categories if your player supports them. These changes help navigation; they do not grant access to additional material. Avoid importing unknown lists just to fill empty sections."},
             {"heading": "Make one reversible change", "body": "Refresh through the player's documented controls, then check whether your existing selection still works. If entries disappear, note what changed before trying again. Never publish playlist addresses or account credentials in a public support forum."},
-            {"heading": "A small, reversible organisation check", "body": "1. Note the original category name privately. 2. Add a few authorised items to favourites using the player's documented controls. 3. Reopen favourites with the remote and check the names are recognisable. If an item is missing, check the original category before deleting anything or replacing the playlist."}
+            {"heading": "A small, reversible organisation check", "body": "1. Note the original category name privately. 2. Add a few authorised items to favourites using the player's documented controls. 3. Reopen favourites with the remote and check the names are recognisable. If an item is missing, check the original category before deleting anything or replacing the playlist."},
+            {"heading":"Check whether a favourite survives reopening","body":"Choose one authorised entry whose original category you can find again. Add it to favourites through documented controls, close that screen and reopen it with the remote. Check the label and the item, not just the number of entries. If it disappears, report the original category and what you pressed; do not replace the whole playlist or expose its private address."}
           ],
           "kind": "article"
         },
@@ -217,7 +220,8 @@
           "sections": [
             {"heading": "Start with a simple comparison", "body": "Note whether the problem affects one authorised item or several. Test the connection near the viewing device, and compare wired access with Wi-Fi if available. A single speed reading does not describe every interruption."},
             {"heading": "Keep the result, not just the setting", "body": "Try one documented player adjustment and note whether it helps. Revert it if it does not. Report persistent problems with the time, device and app version; a brand name or a display's advertised resolution is not a playback guarantee."},
-            {"heading": "Separate a navigation problem from a playback problem", "body": "If menus respond but one item fails, record that item and its exact error privately. If several items fail, check ordinary internet access on the same device. Compare one documented setting or connection only, then restore it if it does not help. Do not open a second simultaneous stream as a test."}
+            {"heading": "Separate a navigation problem from a playback problem", "body": "If menus respond but one item fails, record that item and its exact error privately. If several items fail, check ordinary internet access on the same device. Compare one documented setting or connection only, then restore it if it does not help. Do not open a second simultaneous stream as a test."},
+            {"heading":"Separate an unresponsive app from interrupted playback","body":"Write down which stage fails: opening the player, browsing the list or playing one item. If other ordinary apps also fail on the same television, investigate the device or connection before changing the playlist. If only one item fails, record its label privately and the time. Follow the manufacturer's instructions for the device instead of assuming an 8K screen changes the source.","links":[{"label":"Official Google TV troubleshooting","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "article"
         },
@@ -229,7 +233,8 @@
           "sections": [
             {"heading": "Describe the point of failure", "body": "State your device model, player version and the action you took immediately before the problem. Include the order reference and exact error wording, along with whether the issue happens every time."},
             {"heading": "Show only what is needed", "body": "Crop screenshots to the relevant message and hide account information. List the checks you already tried, then keep replies in the same conversation where possible. Never send a password, one-time code or full payment-card details."},
-            {"heading": "An illustrative message to fill in", "body": "Template, not a customer case: Device [model/OS]; player [name/version]; order [reference, private channel only]; action [what I pressed]; result [exact message]; scope [one item or several]; check tried [one change and result]. Attach only a cropped error image with credentials and personal details hidden."}
+            {"heading": "An illustrative message to fill in", "body": "Template, not a customer case: Device [model/OS]; player [name/version]; order [reference, private channel only]; action [what I pressed]; result [exact message]; scope [one item or several]; check tried [one change and result]. Attach only a cropped error image with credentials and personal details hidden."},
+            {"heading":"Send a TV-specific observation, not a password","body":"Use a short private note: TV model; system and player versions; remote button pressed; screen shown; whether other apps open; one change and its result. An error photograph should show only the relevant message. Ask one concrete question, such as whether this model supports the player, and keep the order reference out of public comments."}
           ],
           "kind": "article"
         }
@@ -305,7 +310,8 @@
           "sections": [
             {"heading": "Check before installing", "body": "Look up the exact player in your device's official store or on the developer's website. Confirm operating-system support and whether the player has an independent fee. A download button alone does not confirm compatibility."},
             {"heading": "Keep help specific", "body": "For setup questions, give support the app name and version rather than just saying IPTV. Use the central applications guide as a starting point, and never enter your service details into a lookalike app sent by an unknown contact."},
-            {"heading": "Separate three different requirements", "body": "Check that the app supports your device, whether the developer charges for its licence, and whether it supports the service's required setup method. These are separate questions. An app receipt is not an Opplex order, and an Opplex plan does not automatically pay a third-party app fee."}
+            {"heading": "Separate three different requirements", "body": "Check that the app supports your device, whether the developer charges for its licence, and whether it supports the service's required setup method. These are separate questions. An app receipt is not an Opplex order, and an Opplex plan does not automatically pay a third-party app fee."},
+            {"heading":"Identify who is asking for payment","body":"Before paying a player charge, note the app developer, the charge description and whether it concerns an app licence or your Opplex service order. A similar name or logo does not prove they are the same purchase. Check the developer's documentation and your central order separately. The linked VLC manual is an example of an official player reference, not a requirement to use that app.","links":[{"label":"Official VLC for Android manual","url":"https://docs.videolan.me/vlc-android-user/"}]}
           ],
           "kind": "editorial"
         },
@@ -317,7 +323,8 @@
           "sections": [
             {"heading": "Confirm the starting point", "body": "Review the order status and selected plan. Keep the reference available, update the device and check its connection. If the order is still unclear, ask support before making another payment or buying a second player licence."},
             {"heading": "Follow one guide at a time", "body": "Use instructions for your actual device and player version. Avoid combining steps from unrelated apps. If you reach an unexpected screen, record its wording and pause; your password or full payment details are not needed in a support message."},
-            {"heading": "Check the order before changing the player", "body": "1. Open the central account and find the relevant order. 2. Note its displayed status and reference. 3. Check the official guide for your exact device/player. 4. If status or access instructions are unclear, ask support with that reference. Do not pay again to troubleshoot a player error."}
+            {"heading": "Check the order before changing the player", "body": "1. Open the central account and find the relevant order. 2. Note its displayed status and reference. 3. Check the official guide for your exact device/player. 4. If status or access instructions are unclear, ask support with that reference. Do not pay again to troubleshoot a player error."},
+            {"heading":"Keep purchase status separate from device setup","body":"Open the central account using the purchase email and locate the relevant order. Record the displayed status before troubleshooting the player. If a payment is pending or unclear, ask for an order check rather than starting another purchase. Keep any separate app-licence receipt distinct so support can tell which transaction your question concerns."}
           ],
           "kind": "editorial"
         },
@@ -422,7 +429,8 @@
           "sections": [
             {"heading": "Use the player's own organisation tools", "body": "If supported, group favourites or hide sections you do not use. Follow the developer's instructions rather than importing an unknown replacement list. Only use sources you are authorised to access."},
             {"heading": "Refresh with a purpose", "body": "After a documented refresh, check the specific item that prompted the change. If the result is unexpected, note the time and app version for support. A playlist address can contain private access information, so never post it publicly."},
-            {"heading": "Keep the account context while you organise", "body": "Before changing favourites, note which existing order and player configuration you are using privately. Change only a display or favourites option, then check one known authorised item. If access fails, keep that configuration and check the order status; do not create a second order to reorganise a list."}
+            {"heading": "Keep the account context while you organise", "body": "Before changing favourites, note which existing order and player configuration you are using privately. Change only a display or favourites option, then check one known authorised item. If access fails, keep that configuration and check the order status; do not create a second order to reorganise a list."},
+            {"heading":"Reorganise without changing the purchase record","body":"Before tidying a list, note the player profile and the selected service privately. Try one reversible favourite or category change, then reopen that view. A cleaner label does not change the paid term, connection allowance or order status. If the list is empty, check which profile is selected before importing again; never paste the private playlist address into a public message."}
           ],
           "kind": "article"
         },
@@ -434,7 +442,8 @@
           "sections": [
             {"heading": "Record the symptom first", "body": "Note whether you see a freeze, an error or a consistently soft picture. Check whether it affects one authorised source or several and whether ordinary internet use on the same device is stable."},
             {"heading": "Compare, then restore", "body": "Try one relevant change, such as comparing wired and wireless access where available. Keep the original setting so you can restore it. Send the results with your device and player version if the issue continues; repeated purchases are not a troubleshooting method."},
-            {"heading": "Choose the next check from the symptom", "body": "If the order status is unclear, resolve that with support first. If the order is understood but the app will not open, check the developer's device guidance. If the app opens and playback fails, record the exact error and test one change at a time, using no more than one simultaneous connection."}
+            {"heading": "Choose the next check from the symptom", "body": "If the order status is unclear, resolve that with support first. If the order is understood but the app will not open, check the developer's device guidance. If the app opens and playback fails, record the exact error and test one change at a time, using no more than one simultaneous connection."},
+            {"heading":"Choose the account route or the playback route","body":"If the central order status is unclear, continue in order support without another payment. If the order is understood but playback fails, record the device, player version, exact symptom and whether other ordinary apps work. Keep those observations in the same conversation. A device troubleshooting guide cannot confirm a payment or change a subscription.","links":[{"label":"Official Google TV troubleshooting","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
           ],
           "kind": "article"
         },
@@ -446,7 +455,8 @@
           "sections": [
             {"heading": "Give a concise update", "body": "Mention the reference, the last step you tried and the result. If the issue moved to another device or app version, say so. Distinguish a payment-status question from a playback problem."},
             {"heading": "Protect the private parts", "body": "Share the error message rather than a full account screen whenever possible. Hide credentials and payment information in screenshots. Never send a one-time code, and avoid opening duplicate enquiries just because you are waiting for a reply."},
-            {"heading": "An illustrative order follow-up", "body": "Template, not a customer case: Order [reference]; selected plan [term]; account status [exact text]; issue [payment status or player behaviour]; device/player [version, if relevant]; last check [action and result]. Send it through private support, without passwords, full card details or one-time codes."}
+            {"heading": "An illustrative order follow-up", "body": "Template, not a customer case: Order [reference]; selected plan [term]; account status [exact text]; issue [payment status or player behaviour]; device/player [version, if relevant]; last check [action and result]. Send it through private support, without passwords, full card details or one-time codes."},
+            {"heading":"Ask a question the order record can answer","body":"Quote the private order reference and the status you can actually see, then state the mismatch: selected term, amount, receipt or next setup step. Add the time of the last attempt if relevant. Ask support to check that one point. Do not send full card details, bank-login information or a one-time code, and do not assume a second payment will resolve the first."}
           ],
           "kind": "article"
         }
@@ -522,7 +532,8 @@
           "sections": [
             {"heading": "Start with the supported version", "body": "Use the device's official store or the developer's own download information. Check operating-system requirements and any separate player fee. App availability in one country's store does not guarantee availability in another."},
             {"heading": "Do not confuse interface and content language", "body": "A translated menu does not add audio or subtitle tracks to a source. Confirm the features you need with the player developer and ask support about plan-specific questions. Avoid unknown installers or requests to bypass regional restrictions."},
-            {"heading": "Compare like-for-like app features", "body": "Check the exact device version, store availability, interface language, subtitle controls and any licence fee for each candidate player. Do not compare a phone app with a television app as if their features were identical. A translated menu does not establish which audio or subtitles a source contains."}
+            {"heading": "Compare like-for-like app features", "body": "Check the exact device version, store availability, interface language, subtitle controls and any licence fee for each candidate player. Do not compare a phone app with a television app as if their features were identical. A translated menu does not establish which audio or subtitles a source contains."},
+            {"heading":"Distinguish screen language from content tracks","body":"Write down three separate preferences: menu language, desired audio and desired subtitles. VLC for Android documents selection of available audio and subtitle tracks; that does not promise a particular language in every source. Compare the player's current official manual with your version. Ask about the specific authorised item before buying, not a general country-wide catalogue promise.","links":[{"label":"Official VLC audio and subtitle controls","url":"https://docs.videolan.me/vlc-android-user/video/video_player.html"}]}
           ],
           "kind": "editorial"
         },
@@ -534,7 +545,8 @@
           "sections": [
             {"heading": "Check the local starting point", "body": "Confirm the plan's suitability for your location, update the device and verify the player version available through an official source. Review the order status in the shared account before troubleshooting access."},
             {"heading": "Record differences clearly", "body": "If a menu option is missing, note the app version and interface language. Follow the central guide for your actual device, and ask support about any mismatch. Do not change regional settings to evade a restriction or share private credentials in screenshots."},
-            {"heading": "Establish a comparison baseline", "body": "1. Record the device, player version and interface language. 2. Check the central order status. 3. Choose one authorised item and one permitted connection. 4. Note the symptom before changing a setting. Keep the same device and source for the next check, without a second simultaneous stream."}
+            {"heading": "Establish a comparison baseline", "body": "1. Record the device, player version and interface language. 2. Check the central order status. 3. Choose one authorised item and one permitted connection. 4. Note the symptom before changing a setting. Keep the same device and source for the next check, without a second simultaneous stream."},
+            {"heading":"Create a baseline that another person can follow","body":"Record device, system, player version, interface language and connection type. Pick one authorised item and note the symptom and local time with timezone. Repeat only one permitted comparison while keeping everything else steady; stop the first stream before another starts. If an option is absent, record that absence rather than downloading an unrelated playlist or attempting to bypass a restriction."}
           ],
           "kind": "editorial"
         },
@@ -639,7 +651,8 @@
           "sections": [
             {"heading": "Organise without changing permissions", "body": "If the player allows it, save a small favourites list with labels you recognise. Keep a private record of the original configuration before editing. Renaming a label does not alter rights, regional restrictions or what your plan includes."},
             {"heading": "Check changes against the source", "body": "Use documented refresh controls for sources you are authorised to access. If a label or group changes, note the player version and language for support. Never share a playlist address publicly; it may contain private access information."},
-            {"heading": "Compare a label without replacing the source", "body": "1. Keep a private note of the original label. 2. Add it to favourites if the player supports that. 3. Compare the same item after a display-language change. If only the label changes, do not assume access changed. If the item disappears, restore the setting and report the original wording."}
+            {"heading": "Compare a label without replacing the source", "body": "1. Keep a private note of the original label. 2. Add it to favourites if the player supports that. 3. Compare the same item after a display-language change. If only the label changes, do not assume access changed. If the item disappears, restore the setting and report the original wording."},
+            {"heading":"Record the label and the language separately","body":"For one difficult entry, note the original category and a short private identifier. Decide whether the issue is spelling, menu translation, audio or subtitles; these need different follow-ups. Test a reversible favourite label if supported, then reopen it. Do not rename or replace the source to try to create an audio track that is not available."}
           ],
           "kind": "article"
         },
@@ -651,7 +664,8 @@
           "sections": [
             {"heading": "Keep the comparison fair", "body": "Note your device, player version, connection type and the time of the issue. Check whether the symptom affects one authorised source or several. Do not compare different source resolutions as if they were the same test."},
             {"heading": "Avoid guesswork about restrictions", "body": "If availability changes with location, ask support to clarify the permitted use rather than trying to bypass a restriction. Report the exact message and relevant regional context, keeping credentials and personal network details out of public posts."},
-            {"heading": "A comparison you can explain afterwards", "body": "Record A: device, player version, authorised item, connection type and symptom. For B, change just one permitted setting or connection while keeping the other details the same. Stop A before starting B to respect the one-connection limit. An improvement suggests a useful next question; it does not prove the underlying cause."}
+            {"heading": "A comparison you can explain afterwards", "body": "Record A: device, player version, authorised item, connection type and symptom. For B, change just one permitted setting or connection while keeping the other details the same. Stop A before starting B to respect the one-connection limit. An improvement suggests a useful next question; it does not prove the underlying cause."},
+            {"heading":"Use a short comparison record","body":"Use columns in a private note: time/timezone, device/player, connection, item, observed result. Repeat the same authorised item after one permitted change and stop the earlier stream first. Report both the successful and unsuccessful observations. Two different items on two different devices do not isolate the cause, and one working comparison is not evidence of universal availability."}
           ],
           "kind": "article"
         },
@@ -663,7 +677,8 @@
           "sections": [
             {"heading": "Include the details that change the answer", "body": "State the country if relevant, device model, app version and interface language. Add the order reference and exact error text. If you translate the message yourself, include the original wording too where practical."},
             {"heading": "Keep the evidence focused", "body": "Crop a screenshot to the relevant screen and hide personal fields. List the checks already tried in the same conversation. Do not send passwords, one-time codes or payment-card data; those are not troubleshooting details."},
-            {"heading": "An illustrative comparison report", "body": "Template, not a customer case: Country [if relevant]; device/player [versions]; interface language [language]; original error [text]; A [conditions and result]; B [one changed condition and result]; order [reference in private support]. Hide credentials and personal fields in any screenshot; no full address is needed."}
+            {"heading": "An illustrative comparison report", "body": "Template, not a customer case: Country [if relevant]; device/player [versions]; interface language [language]; original error [text]; A [conditions and result]; B [one changed condition and result]; order [reference in private support]. Hide credentials and personal fields in any screenshot; no full address is needed."},
+            {"heading":"Share the minimum regional context","body":"State your country, preferred support language and timezone, then the specific device or language question. Add a nearby time for the failure instead of a full home address. If a catalogue or location limitation is unclear, request confirmation for the intended use. Do not send identity documents, network passwords or attempts to evade a restriction."}
           ],
           "kind": "article"
         }
@@ -738,7 +753,8 @@
           "sections": [
             {"heading": "Install from a known source", "body": "Use the official app store or developer's published download. Check device-version support and any separate licence charge. A player purchase does not automatically include a 5G Live service plan."},
             {"heading": "Check mobile behaviour", "body": "Look for readable controls, rotation handling and any documented data-use settings. Your phone's battery and data restrictions may affect playback. Ask support about compatibility before entering account details, and avoid unofficial installers that request unnecessary access."},
-            {"heading": "Check what happens when the app is interrupted", "body": "Read the developer's guidance on screen locking, background activity, battery-saving and mobile-data settings. If playback stops after one of these changes, note it before adjusting anything. Avoid disabling device protections indiscriminately; confirm compatibility rather than assuming all mobile players behave alike."}
+            {"heading": "Check what happens when the app is interrupted", "body": "Read the developer's guidance on screen locking, background activity, battery-saving and mobile-data settings. If playback stops after one of these changes, note it before adjusting anything. Avoid disabling device protections indiscriminately; confirm compatibility rather than assuming all mobile players behave alike."},
+            {"heading":"Record the app's data settings before changing them","body":"On iPhone or iPad, Low Data Mode can reduce streaming quality. Note whether it is enabled and review Apple's current instructions for that device. Do not disable a data-saving setting automatically: check the allowance and roaming cost first. Ask about the player and connection separately; a 5G logo is not evidence of a particular playback result.","links":[{"label":"Official Apple Low Data Mode guide","url":"https://support.apple.com/en-ca/102433"}]}
           ],
           "kind": "editorial"
         },
@@ -750,7 +766,8 @@
           "sections": [
             {"heading": "Prepare the device and order", "body": "Check the order in the central account, update the device and confirm the player version. Review any data limits with your provider before testing over mobile data; the service plan does not supply a network allowance."},
             {"heading": "Change one condition at a time", "body": "Follow the central guide for your device. If you compare networks, record which one produced the issue and respect any regional restrictions. Keep credentials private and send support the exact message rather than repeatedly resetting everything."},
-            {"heading": "Keep the first attempt easy to repeat", "body": "1. Check the order in the central account. 2. Use one familiar, permitted connection. 3. Note the player version and any error before changing settings. 4. If comparing another network, check data charges first and stop the earlier playback session. Do not change networks and reinstall the app in the same check."}
+            {"heading": "Keep the first attempt easy to repeat", "body": "1. Check the order in the central account. 2. Use one familiar, permitted connection. 3. Note the player version and any error before changing settings. 4. If comparing another network, check data charges first and stop the earlier playback session. Do not change networks and reinstall the app in the same check."},
+            {"heading":"Make the first attempt small and repeatable","body":"Note Wi-Fi, mobile data or hotspot; the player version; and the time. Check your network provider's allowance before a short authorised playback check, then stop it. Avoid leaving background playback running while changing connections. If the attempt fails, retain the exact message and ask which next check is appropriate rather than repeatedly downloading or reinstalling."}
           ],
           "kind": "editorial"
         },
@@ -855,7 +872,8 @@
           "sections": [
             {"heading": "Keep the first screen useful", "body": "If supported, save a small favourites list and check text size or orientation options. Only organise sources you are authorised to use; a renamed category does not change your plan allowance or access rights."},
             {"heading": "Refresh deliberately", "body": "Record the current configuration privately before changing it, then test one documented refresh. Avoid doing this while repeatedly switching networks. If the result is unexpected, note the device and player version, and keep playlist addresses out of public messages."},
-            {"heading": "Make one small-screen change at a time", "body": "1. Keep the current playlist configuration privately. 2. Add a few authorised favourites using documented controls. 3. Check whether labels remain readable after rotating the screen. If navigation is better but playback still fails, treat that as a separate issue; do not replace the source to fix a display problem."}
+            {"heading": "Make one small-screen change at a time", "body": "1. Keep the current playlist configuration privately. 2. Add a few authorised favourites using documented controls. 3. Check whether labels remain readable after rotating the screen. If navigation is better but playback still fails, treat that as a separate issue; do not replace the source to fix a display problem."},
+            {"heading":"Check the list without spending data on previews","body":"Choose a few existing authorised favourites rather than refreshing every category repeatedly. Check whether a single tap selects an item or starts playback, then stop playback before editing the next entry. Reopen the list once to confirm the change. A small-screen layout issue and a streaming failure are different problems; report which action actually failed."}
           ],
           "kind": "article"
         },
@@ -867,7 +885,8 @@
           "sections": [
             {"heading": "Hold the other details steady", "body": "Use the same device, player version and authorised source when comparing connections. Note whether the issue is an error, interruption or quality change. A 5G icon alone does not measure stability or guarantee a particular speed."},
             {"heading": "Report the difference", "body": "Record which connection worked and when the problem occurred. Check documented battery or data restrictions without changing everything at once. If location restrictions may apply, ask support; do not attempt to bypass them or share private network credentials."},
-            {"heading": "Decide what to check after a network switch", "body": "If ordinary internet access also fails, check connectivity with the network provider. If only the player changes, keep the device and authorised item the same and record the error on each permitted connection. Stop the first stream before the second and check data charges. Do not infer the cause from a network icon alone."}
+            {"heading": "Decide what to check after a network switch", "body": "If ordinary internet access also fails, check connectivity with the network provider. If only the player changes, keep the device and authorised item the same and record the error on each permitted connection. Stop the first stream before the second and check data charges. Do not infer the cause from a network icon alone."},
+            {"heading":"Compare a handover without running two streams","body":"Record the connection before and after the change, the time and the visible symptom. Stop playback before switching, then make a short permitted check on the same device and item. Review mobile charges before continuing. If ordinary internet access also fails, start with the network provider; a signal icon alone cannot explain the player's result."}
           ],
           "kind": "article"
         },
@@ -879,7 +898,8 @@
           "sections": [
             {"heading": "Describe the change that matters", "body": "Include the device model, player version and whether you were on Wi-Fi, mobile data or a hotspot. Say if the issue started after a network switch, an update or a setting change, and quote the exact error."},
             {"heading": "Keep the follow-up focused", "body": "List the checks already tried and crop screenshots to the relevant message. Never send passwords, verification codes, router credentials or card details. Reply in the same support conversation where practical so the earlier comparison is not lost."},
-            {"heading": "An illustrative before-and-after report", "body": "Template, not a customer case: Device/player [versions]; before [Wi-Fi/mobile/hotspot]; after [connection type]; action [network switch or setting]; symptom [exact text]; check [one change and result]; order [private reference]. Crop screenshots and hide network names, credentials and personal information where unnecessary."}
+            {"heading": "An illustrative before-and-after report", "body": "Template, not a customer case: Device/player [versions]; before [Wi-Fi/mobile/hotspot]; after [connection type]; action [network switch or setting]; symptom [exact text]; check [one change and result]; order [private reference]. Crop screenshots and hide network names, credentials and personal information where unnecessary."},
+            {"heading":"Describe the interruption as a sequence","body":"Send a private sequence: connection before; action taken; connection after; player message; whether ordinary internet access worked; one check and its result. Mention if the screen locked or another app opened, without guessing the cause. Remove network names and personal details from images unless essential. Keep this in the existing support conversation instead of opening several identical requests."}
           ],
           "kind": "article"
         }
