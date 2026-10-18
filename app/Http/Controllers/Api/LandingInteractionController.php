@@ -15,12 +15,13 @@ class LandingInteractionController extends Controller
     public function event(Request $request, LandingInteractionService $interactions): JsonResponse
     {
         $this->checkRequest($request);
-        $data = $request->validate($this->baseRules() + [
+        $data = $request->validate($this->baseRules() + $this->dimensionRules() + [
             'event' => ['required', Rule::in(['visit', 'checkout_clicked'])],
             'session_id' => ['required', 'uuid'],
             'analytics_consent' => ['required', 'accepted'],
             'package_id' => ['nullable', 'integer', 'min:1', 'max:2147483647'],
         ]);
+        $data = $this->validatedDimensions($data, $interactions);
         $interactions->assertOrigin($data['brand'], (string) $request->header('Origin'));
         $interactions->recordEvent($data);
 
@@ -30,7 +31,7 @@ class LandingInteractionController extends Controller
     public function lead(Request $request, LandingInteractionService $interactions): JsonResponse
     {
         $this->checkRequest($request);
-        $data = $request->validate($this->baseRules() + [
+        $data = $request->validate($this->baseRules() + $this->dimensionRules() + [
             'name' => ['required', 'string', 'min:2', 'max:120', 'not_regex:/[\x00-\x1F\x7F]/'],
             'email' => ['required', 'string', 'email:rfc', 'max:254'],
             'phone' => ['required', 'string', 'max:32', 'regex:/^\+?[0-9 ()-]+$/'],
@@ -40,6 +41,7 @@ class LandingInteractionController extends Controller
             'analytics_consent' => ['sometimes', 'boolean'],
             'session_id' => [Rule::prohibitedIf(!$request->boolean('analytics_consent')), 'nullable', 'uuid'],
         ]);
+        $data = $this->validatedDimensions($data, $interactions);
         $interactions->assertOrigin($data['brand'], (string) $request->header('Origin'));
         $data['phone'] = User::normalizePhone($data['phone']);
         if ($data['phone'] === null) {
@@ -63,5 +65,27 @@ class LandingInteractionController extends Controller
             'event_id' => ['required', 'uuid'],
             'website' => ['nullable', 'string', 'max:0'],
         ];
+    }
+
+    private function dimensionRules(): array
+    {
+        return ['locale' => ['sometimes', 'nullable', 'string', 'max:12'], 'page' => ['sometimes', 'nullable', 'string', 'max:160']];
+    }
+
+    private function validatedDimensions(array $data, LandingInteractionService $interactions): array
+    {
+        if (!array_key_exists('locale', $data) && !array_key_exists('page', $data)) return $data;
+        if (empty($data['analytics_consent']) || empty($data['session_id'])) {
+            throw ValidationException::withMessages(['locale' => 'Page/language measurement requires analytics permission and a valid session.']);
+        }
+        if (!$interactions->validLocale($data['locale'] ?? null)) {
+            throw ValidationException::withMessages(['locale' => 'Choose one of the supported landing languages.']);
+        }
+        if (!array_key_exists('page', $data) || !$interactions->validPage($data['brand'], $data['page'] ?? '')) {
+            throw ValidationException::withMessages(['page' => 'Send an existing brand page slug, or an empty string for its homepage.']);
+        }
+        $data['page'] = $data['page'] ?? '';
+
+        return $data;
     }
 }

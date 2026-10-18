@@ -6,6 +6,11 @@
 <p class="account-muted account-lead">Payment, activation and documents for this order.</p>
 <div id="orderDetails" aria-busy="true"><p role="status">Loading your order…</p></div>
 <div class="account-section account-actions"><a class="account-button secondary" href="{{ route('customer.guides') }}">Setup instructions</a><a class="account-button secondary" href="{{ route('customer.support.index') }}">Contact support</a></div>
+<section class="account-section account-card" aria-labelledby="purchase-review-title">
+    <h2 id="purchase-review-title">Your purchase feedback</h2>
+    <p class="account-muted">Optional feedback for this order. Publication needs your permission and moderation; positive and negative feedback use the same process. Do not include passwords, payment details or private contact information.</p>
+    <div id="purchaseReview" aria-busy="true"><p role="status">Checking review eligibility…</p></div>
+</section>
 <noscript><p>Please enable JavaScript to securely load your order data.</p></noscript>
 @endsection
 @push('scripts')
@@ -30,7 +35,27 @@ document.addEventListener('DOMContentLoaded', () => {
         finally { target.setAttribute('aria-busy','false'); }
     }
     target.addEventListener('click', event => { if (event.target.id === 'retryOrder') load(); });
+    const reviewTarget = document.getElementById('purchaseReview');
+    const reviewUrl = @json(route('api.browser.customer.orders.review.show', $orderId));
+    async function loadReview() {
+        reviewTarget.setAttribute('aria-busy', 'true');
+        try {
+            const response = await api.load(reviewUrl), review = response.data;
+            if (!response.eligible && !review) { reviewTarget.textContent = 'Reviews are available for confirmed production-paid orders linked to one of our four brands. No review request or payment is started here.'; return; }
+            const status = review ? '<p class="account-muted">Saved review status: ' + text(review.status) + '.</p>' : '';
+            const withdraw = review && review.publication_consent ? '<form method="post" action="' + api.href(reviewUrl) + '" data-api-form><input type="hidden" name="_method" value="DELETE"><button class="account-button secondary" type="submit">Withdraw publication permission</button></form>' : '';
+            if (!response.eligible) { reviewTarget.innerHTML = status + '<p class="account-muted">This order is not currently eligible for publication.</p>' + withdraw; return; }
+            const locales = @json(config('app.locales', ['en']));
+            const languageOptions = locales.map(locale => '<option value="' + text(locale) + '"' + ((review?.locale || 'en') === locale ? ' selected' : '') + '>' + text(locale.toUpperCase()) + '</option>').join('');
+            reviewTarget.innerHTML = status + '<form method="post" action="' + api.href(reviewUrl) + '" data-api-form><div class="account-field"><label for="review-name">Public display name</label><input id="review-name" name="display_name" minlength="2" maxlength="80" value="' + text(review?.display_name || '') + '" required></div><div class="account-field"><label for="review-rating">Your rating</label><select id="review-rating" name="rating" required><option value="">Choose a rating</option>' + [1,2,3,4,5].map(rating => '<option value="' + rating + '"' + (review?.rating === rating ? ' selected' : '') + '>' + rating + ' / 5</option>').join('') + '</select></div><div class="account-field"><label for="review-language">Feedback language</label><select id="review-language" name="locale">' + languageOptions + '</select></div><div class="account-field"><label for="review-body">Your experience</label><textarea id="review-body" name="body" minlength="10" maxlength="2000" rows="4" required>' + text(review?.body || '') + '</textarea></div><label class="account-check"><input type="checkbox" name="publication_consent" value="1" required><span>I permit publication of this display name, rating and feedback on the relevant brand website. I can withdraw permission here.</span></label><button class="account-button" type="submit">Save for moderation</button><p class="account-muted">Editing a published review returns it to moderation. Your order number, email and payment details are never part of the public review.</p></form>' + withdraw;
+            if (window.jQuery?.fn?.select2) jQuery(reviewTarget).find('select').select2({ width: '100%', minimumResultsForSearch: 6 });
+        } catch (error) { reviewTarget.innerHTML = '<p>Review information is unavailable.</p><button class="account-button secondary" type="button" id="retryReview">Try again</button>'; api.error(error); }
+        finally { reviewTarget.setAttribute('aria-busy', 'false'); }
+    }
+    reviewTarget.addEventListener('click', event => { if (event.target.id === 'retryReview') loadReview(); });
+    reviewTarget.addEventListener('data-api-success', () => loadReview());
     load();
+    loadReview();
 });
 </script>
 @endpush

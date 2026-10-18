@@ -52,6 +52,32 @@ class ApiRoutingTest extends TestCase
         config()->set('services.app.default_currency', 'USD');
     }
 
+    public function test_landing_experience_routes_are_canonical_and_keep_browser_guards(): void
+    {
+        $stateless = Route::getRoutes()->match(Request::create('/api/v1/landing/resume-links', 'POST'));
+        $this->assertSame('api.landing.resume-links', $stateless->getName());
+        $this->assertContains('api', $stateless->gatherMiddleware());
+        $this->assertNotContains('web', $stateless->gatherMiddleware());
+        foreach ([['POST', '/api/browser/checkout/resume/private-token'], ['GET', '/api/browser/account/orders/17/review'],
+            ['POST', '/api/browser/account/orders/17/review'], ['DELETE', '/api/browser/account/orders/17/review'],
+            ['GET', '/api/browser/admin/landing-experience'], ['POST', '/api/browser/admin/landing-experience/incidents'],
+            ['PUT', '/api/browser/admin/landing-experience/incidents/17'], ['POST', '/api/browser/admin/landing-experience/media'],
+            ['PUT', '/api/browser/admin/landing-experience/media/17'], ['PATCH', '/api/browser/admin/landing-experience/reviews/17']] as [$method, $path]) {
+            $route = Route::getRoutes()->match(Request::create($path, $method));
+            $this->assertStringStartsWith('api.browser.', $route->getName());
+            $this->assertContains('web', $route->gatherMiddleware());
+            $this->assertNotContains(VerifyCsrfToken::class, $route->excludedMiddleware());
+            if (str_contains($path, '/admin/')) {
+                foreach (['auth:admin', 'admin.access', EnsureAdminSessionIsCurrent::class, EnsureAdminPasswordChanged::class, EnsureAdminTwoFactorAuthenticated::class, AuditAdminAction::class] as $guard) {
+                    $this->assertContains($guard, $route->gatherMiddleware());
+                }
+            }
+        }
+        $collection = json_decode(file_get_contents(base_path('postman/OpplexIPTV.postman_collection.json')), true, 512, JSON_THROW_ON_ERROR);
+        $this->assertSame('Landing experience - local guarded workflows', $collection['item'][0]['name']);
+        $this->assertCount(13, $collection['item'][0]['item']);
+    }
+
     public function test_existing_json_routes_keep_their_paths_names_and_actions(): void
     {
         $routes = [

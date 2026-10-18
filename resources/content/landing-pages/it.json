@@ -1,4 +1,188 @@
 {
+  "experience": {
+    "ui": {
+      "toolsHeading": "Strumenti utili per i clienti",
+      "toolsIntro": "Scegli il prossimo passo prima o dopo l’acquisto.",
+      "openHelp": "Apri l’assistente",
+      "helpHeading": "Trova il prossimo passo",
+      "helpQuestion": "Che cosa vuoi controllare?",
+      "helpChoose": "Scegli un’opzione",
+      "helpReset": "Ricomincia",
+      "helpNoDiagnosis": "Sono indicazioni, non una compatibilità verificata o una diagnosi di rete. Non condividere password o codici di pagamento.",
+      "helpSearch": "Cerca le guide in questa lingua",
+      "helpSearchHint": "Inserisci almeno due caratteri. La ricerca resta su questa pagina e non viene inviata al server.",
+      "helpResults": "Guide trovate",
+      "helpNoResults": "Nessuna guida trovata. Prova un’altra parola o contatta l’assistenza.",
+      "helpAccount": "Apri il mio account",
+      "helpSupport": "Assistenza privata per l’ordine",
+      "helpContact": "Chiedi all’assistenza",
+      "resumeHeading": "Salva la scelta del piano",
+      "resumeIntro": "Crea un link privato valido per 24 ore. Prezzo e disponibilità saranno ricontrollati quando lo riapri.",
+      "resumeSave": "Salva questo piano",
+      "resumeEmail": "Indirizzo email (facoltativo)",
+      "resumeEmailConsent": "Invia questo link una sola volta all’email indicata. Acconsento a questo unico messaggio.",
+      "resumePrivacy": "Nessun promemoria automatico. L’email facoltativa serve solo per il link richiesto. Mantieni il link privato.",
+      "resumeSaving": "Creazione del link…",
+      "resumeReady": "Il link è pronto. Puoi aprirlo o copiarlo qui sotto.",
+      "resumeOpen": "Riapri la scelta salvata",
+      "resumeCopy": "Copia il link privato",
+      "resumeCopied": "Link copiato.",
+      "resumeCopyFailed": "Copia non riuscita. Usa il pulsante per aprire il link.",
+      "resumeUnavailable": "Questo piano non è disponibile. Controlla i piani attuali prima di continuare.",
+      "resumeInvalid": "Controlla email e consenso, poi riprova.",
+      "resumeFailed": "Impossibile creare il link. Riprova.",
+      "resumeTooMany": "Troppe richieste. Attendi prima di riprovare.",
+      "resumeExpires": "Scadenza del link: {date}",
+      "statusHeading": "Aggiornamenti del servizio",
+      "statusNone": "Nessun aggiornamento pubblicato. Ciò non conferma che tutti i servizi funzionino.",
+      "statusUpdated": "Ultimo aggiornamento",
+      "statusInvestigating": "In verifica",
+      "statusIdentified": "Problema identificato",
+      "statusMonitoring": "In monitoraggio",
+      "statusResolved": "Risolto",
+      "reviewsHeading": "Opinioni dei clienti",
+      "reviewsNone": "Nessuna opinione pubblicata.",
+      "verifiedPurchase": "Acquisto verificato",
+      "reviewRating": "Valutazione: {rating} su 5",
+      "mediaHeading": "Materiale di configurazione testato",
+      "mediaTested": "Testato il: {date}",
+      "mediaDevice": "Modello del dispositivo",
+      "mediaPlayer": "Lettore e versione",
+      "mediaUnsupported": "Apri il file video",
+      "loadingExperience": "Caricamento delle informazioni pubblicate…",
+      "statusUnavailable": "Impossibile caricare gli aggiornamenti. Riprova o contatta l’assistenza.",
+      "measurementDetail": "Con il tuo consenso, le misurazioni includono anche pagina e lingua. Ricerche e scelte dell’assistente non vengono registrate.",
+      "resumePlanOnly": "Questo salva il piano selezionato, non un pagamento esistente.",
+      "resumePaymentWarning": "Se hai già avviato un pagamento, controllane lo stato prima di iniziarne un altro.",
+      "resumeCurrentPrice": "Prezzo attuale del piano",
+      "resumePriceChanged": "Il prezzo è cambiato da quando hai salvato il link. Controllalo prima di continuare.",
+      "resumeContinue": "Conferma la scelta e continua al pagamento",
+      "resumeInvalidLink": "Questo link del piano non è valido o è scaduto.",
+      "resumeReturn": "Torna al sito del marchio",
+      "resumeEmailSubject": "La tua scelta del piano salvata",
+      "resumeEmailBody": "Hai richiesto questo link con invio singolo per riaprire il piano scelto. Scade dopo 24 ore.",
+      "resumeFinalFees": "Gli eventuali costi e il totale finale vengono mostrati su Opplexify prima del pagamento."
+    },
+    "help": {
+      "trex": {
+        "intro": "Trex ti aiuta a preparare schermo e lettore prima di scegliere un piano di lunga durata.",
+        "questions": [
+          {
+            "id": "readiness",
+            "label": "Che cosa vuoi controllare?",
+            "options": [
+              {
+                "value": "device",
+                "label": "Non conosco il modello del dispositivo",
+                "answer": "Apri le impostazioni e annota modello esatto e versione del sistema. Chiedi all’assistenza di verificare i requisiti ufficiali del lettore prima di acquistare.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "player",
+                "label": "Devo controllare un’app",
+                "answer": "Consulta le informazioni ufficiali dello sviluppatore su dispositivi, versione ed eventuale licenza separata. Il nome in un elenco non conferma la compatibilità.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "ready",
+                "label": "Conosco dispositivo e lettore",
+                "answer": "Conferma con l’assistenza l’unica connessione simultanea, il prezzo totale e il dispositivo previsto. Questi controlli non garantiscono qualità dell’immagine o disponibilità regionale.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "opplex": {
+        "intro": "Opplex gestisce domande su account, ordini e pagamenti nel portale privato centrale.",
+        "questions": [
+          {
+            "id": "order-help",
+            "label": "Che cosa vuoi controllare?",
+            "options": [
+              {
+                "value": "pending-payment",
+                "label": "Il mio pagamento è in sospeso",
+                "answer": "Non avviare un secondo pagamento. Accedi all’account centrale e controlla l’ordine esistente; chiedi assistenza privata se lo stato non è chiaro.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "account-access",
+                "label": "Devo accedere all’account",
+                "answer": "Usa l’accesso centrale con l’email dell’ordine. Non pubblicare mai password, link di accesso o codici di verifica.",
+                "links": [
+                  "account"
+                ]
+              },
+              {
+                "value": "renewal",
+                "label": "Voglio rinnovare",
+                "answer": "Controlla ordine e data di scadenza nell’account privato prima di acquistare ancora. Chiedi all’assistenza come verrà applicato il rinnovo.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "geo": {
+        "intro": "Cerca le guide Geo nella lingua attuale. Le parole cercate non vengono inviate né salvate.",
+        "questions": []
+      },
+      "5g": {
+        "intro": "5G Live propone controlli manuali, non uno speed test o una garanzia di prestazioni della rete.",
+        "questions": [
+          {
+            "id": "network-help",
+            "label": "Che cosa vuoi controllare?",
+            "options": [
+              {
+                "value": "wifi",
+                "label": "Il problema si verifica con il Wi-Fi",
+                "answer": "Controlla il normale accesso a internet sullo stesso dispositivo. Se possibile, confronta il cavo o una posizione vicina al router con una fonte autorizzata. Annota i cambiamenti e chiedi aiuto se necessario.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "mobile-data",
+                "label": "Il problema si verifica con i dati mobili",
+                "answer": "Controlla il traffico disponibile e le impostazioni mobili del lettore. Confronta una rete Wi-Fi nota dove consentito. Questo non identifica la causa e non aggira restrizioni dell’operatore.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "other-apps",
+                "label": "Anche altre app non si connettono",
+                "answer": "Controlla la connessione del dispositivo e gli avvisi del router o dell’operatore. Consulta gli aggiornamenti pubblicati e comunica all’assistenza ora ed errore, non password.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
   "locale": "it",
   "labels": {
     "home": "Home",
@@ -81,6 +265,10 @@
             {
               "heading": "Quante connessioni simultanee sono incluse?",
               "body": "Ogni piano Trex include una connessione simultanea. Più lettori installati non consentono riproduzioni contemporanee. Chiedi le condizioni per cambiare dispositivo; né la durata annuale né il nome 8K aumentano questo limite."
+            },
+            {
+              "heading": "Italiano indica la lingua o il luogo d’uso?",
+              "body": "Chi cerca “IPTV abbonamento italiano” può avere in mente l’interfaccia del lettore, l’assistenza o il luogo in cui userà il servizio. Per valutare un abbonamento IPTV Italia, spiega quale di questi aspetti ti serve davvero e chiedi conferma prima dell’impegno annuale. La lingua di questa pagina non verifica un catalogo in italiano né la disponibilità dei contenuti nel tuo territorio."
             }
           ],
           "kind": "editorial"
@@ -98,6 +286,14 @@
             {
               "heading": "Verifica la configurazione prima dell'impegno",
               "body": "Conferma modello esatto, versione del lettore ed eventuale licenza separata. Controlla pacchetto, valuta e totale su Opplexify. Aprire il checkout non conferma il pagamento: consulta l'ordine nell'account centrale e chiedi chiarimenti se le istruzioni di attivazione non sono chiare."
+            },
+            {
+              "heading": "Il prezzo più basso non racconta tutto",
+              "body": "Una ricerca come “IPTV abbonamento prezzi bassi” aiuta a trovare alternative, ma non dice quanto userai davvero il piano. Con Trex, confronta l’abbonamento IPTV sul costo dell’intero anno, non su una quota mensile immaginaria. Tra gli abbonamenti IPTV, scegli un impegno che abbia senso per il televisore e il lettore che hai già verificato; considera separatamente eventuali licenze dell’app."
+            },
+            {
+              "heading": "Valutare dodici mesi prima di scegliere",
+              "body": "Se cerchi “IPTV Italia 12 mesi”, controlla prima la durata annuale indicata nel catalogo Trex e le condizioni applicabili al tuo caso. Un servizio IPTV a pagamento non risolve da solo un problema di configurazione. Chiarisci dispositivo, utilizzo previsto e domande ancora aperte prima di confermare l’anno; il prezzo visualizzato non è una promessa sulla disponibilità di contenuti nel tuo territorio."
             }
           ],
           "kind": "packages"
@@ -115,6 +311,10 @@
             {
               "heading": "Nessun pannello presunto",
               "body": "Questa pagina non promette crediti, margini o accesso a un pannello. Prezzi al dettaglio e listini di altri fornitori non sono un'offerta commerciale Trex."
+            },
+            {
+              "heading": "Prima del pannello, prepara il percorso del cliente",
+              "body": "Per discutere un pannello IPTV reseller legato a Trex, descrivi come aiuteresti un cliente a verificare televisore, telecomando e lettore prima di scegliere. Come reseller IPTV, dovresti chiarire anche chi segue i dubbi dopo l’acquisto. Prima di confrontare pannelli IPTV, chiedi condizioni scritte su accessi, rinnovi e responsabilità. La ricerca “pannelli IPTV Italia” non conferma un’offerta Trex, un’autorizzazione territoriale o crediti già disponibili."
             }
           ],
           "kind": "editorial"
@@ -429,6 +629,10 @@
             {
               "heading": "Un piano più lungo include più connessioni?",
               "body": "No. Ogni piano Opplex include una connessione simultanea. Confronta durata e prezzo totale senza supporre che più tempo permetta più schermi insieme. Chiedi le regole per cambiare dispositivo prima di farvi affidamento."
+            },
+            {
+              "heading": "Che cosa intendi quando chiedi un servizio in italiano?",
+              "body": "Con “IPTV abbonamento italiano” potresti cercare assistenza in italiano, comandi dell’app comprensibili o informazioni sull’uso in Italia. Prima di scegliere un abbonamento IPTV Italia, specifica la tua esigenza al supporto insieme al dispositivo. Una pagina tradotta o il nome del pacchetto non confermano da soli la lingua dei contenuti, la loro disponibilità o i relativi diritti nel luogo d’uso."
             }
           ],
           "kind": "editorial"
@@ -446,6 +650,14 @@
             {
               "heading": "Mantieni un unico percorso d'ordine",
               "body": "Il pacchetto selezionato continua su Opplexify per il pagamento; account e assistenza rimangono nel sistema principale Opplex. Conferma pacchetto e importo. Se la schermata si chiude o lo stato è poco chiaro, controlla l'ordine o chiedi assistenza prima di iniziare un altro acquisto."
+            },
+            {
+              "heading": "Confrontare il costo senza confondere gli acquisti",
+              "body": "Se parti dalla ricerca “IPTV abbonamento prezzi bassi”, guarda prima il totale del periodo che vuoi acquistare. Nell’abbonamento IPTV Opplex, la durata del servizio e l’eventuale licenza del lettore sono voci diverse. Per confrontare abbonamenti IPTV in modo utile, annota il costo completo, il limite di una connessione e le spese separate da chiarire; un importo mensile equivalente non cambia la somma da pagare oggi."
+            },
+            {
+              "heading": "Un anno ha senso solo se la configurazione è chiara",
+              "body": "Una ricerca come “IPTV Italia 12 mesi” non basta per decidere la durata. Confronta il piano annuale con gli altri periodi effettivamente presenti nel catalogo Opplex e scegli in base all’uso previsto. Prima di pagare un servizio IPTV a pagamento, chiarisci dispositivo, lettore e costo finale. Conserva poi il riferimento dell’ordine: una schermata chiusa non è un motivo per iniziare un secondo acquisto."
             }
           ],
           "kind": "packages"
@@ -463,6 +675,10 @@
             {
               "heading": "Ottieni conferme precise",
               "body": "Un prezzo al dettaglio non è una tariffa reseller. Fai confermare condizioni e permessi per iscritto. Questa pagina non apre un conto commerciale né concede redistribuzione."
+            },
+            {
+              "heading": "Distingui il pannello dalla gestione degli ordini",
+              "body": "Chi valuta un pannello IPTV reseller dovrebbe spiegare come gestirebbe richieste di pagamento, rinnovi e problemi del lettore. Come reseller IPTV, non dare per scontato che tutte queste attività siano comprese nello stesso accesso. Quando confronti pannelli IPTV, chiedi quali funzioni e responsabilità sarebbero previste nell’accordo scritto. La ricerca “pannelli IPTV Italia” non apre un conto Opplex e non conferma tariffe, crediti o permessi di rivendita."
             }
           ],
           "kind": "editorial"
@@ -773,6 +989,10 @@
             {
               "heading": "Geo funziona ovunque?",
               "body": "La marca non garantisce copertura universale o una lingua specifica. Conferma località e dispositivo; al pagamento Opplexify verifica anche valuta, periodo e totale."
+            },
+            {
+              "heading": "Lingua dell’app e disponibilità sono domande diverse",
+              "body": "Una richiesta come “IPTV abbonamento italiano” può riguardare menu, audio, sottotitoli o assistenza. Per valutare un abbonamento IPTV Italia con Geo, indica quale funzione ti occorre, il dispositivo e il luogo previsto. Chiedi conferma di ciascun requisito: un’interfaccia tradotta non verifica l’audio disponibile e questa pagina non dimostra disponibilità territoriale o diritti sui contenuti."
             }
           ],
           "kind": "editorial"
@@ -790,6 +1010,14 @@
             {
               "heading": "Segui il pacchetto esatto fino al pagamento",
               "body": "Controlla pacchetto Geo e importo finale su Opplexify prima di confermare. Ordini e assistenza usano l'account centrale Opplex. Se il catalogo non si carica o cambia un dettaglio al checkout, fermati e chiedi invece di confrontare prezzi ricordati."
+            },
+            {
+              "heading": "Prima del prezzo, rendi confrontabili le opzioni",
+              "body": "La ricerca “IPTV abbonamento prezzi bassi” è più utile se mantieni gli stessi requisiti fra un’offerta e l’altra. Per un abbonamento IPTV Geo, confronta costo totale, durata e una connessione sul dispositivo che userai davvero. Valutare abbonamenti IPTV con app o luoghi d’uso diversi può nascondere differenze importanti: fai prima una lista delle esigenze e chiedi conferma dei punti che il catalogo non descrive."
+            },
+            {
+              "heading": "Dodici mesi non cambiano i requisiti del servizio",
+              "body": "Se arrivi da “IPTV Italia 12 mesi”, controlla la durata annuale Geo nel catalogo corrente senza dedurre una disponibilità universale dal nome o dalla lingua della pagina. Un servizio IPTV a pagamento va valutato anche in base al dispositivo e al luogo previsto. Scegli la durata dopo aver chiarito questi aspetti, non per tentare di ottenere più connessioni o funzioni non indicate."
             }
           ],
           "kind": "packages"
@@ -807,6 +1035,10 @@
             {
               "heading": "Evita confronti impropri",
               "body": "Il prezzo al dettaglio Geo non è un preventivo reseller. Le tariffe di altri fornitori non si applicano automaticamente. Questa pagina non concede redistribuzione del servizio o dei contenuti."
+            },
+            {
+              "heading": "Metti per iscritto mercato e assistenza prevista",
+              "body": "Per chiedere informazioni su un pannello IPTV reseller Geo, descrivi paesi, lingue e tipo di supporto che vorresti offrire. Come reseller IPTV, separa le funzioni dell’eventuale pannello dalle autorizzazioni necessarie per il mercato scelto. Prima di confrontare pannelli IPTV, richiedi un’offerta precisa. Una ricerca “pannelli IPTV Italia” non conferma da sola copertura, diritti territoriali, crediti o condizioni commerciali Geo."
             }
           ],
           "kind": "editorial"
@@ -1121,6 +1353,10 @@
             {
               "heading": "Quante connessioni include il servizio?",
               "body": "Ogni piano 5G Live include una connessione simultanea. Telefono, hotspot o un altro lettore installato non aggiungono un flusso. Ferma la prima riproduzione prima di confrontare dispositivo o rete e chiarisci le regole del cambio con l'assistenza."
+            },
+            {
+              "heading": "Una pagina in italiano non verifica rete o catalogo",
+              "body": "Con “IPTV abbonamento italiano” potresti voler chiarire la lingua dell’assistenza oppure l’uso del servizio in Italia. Per scegliere un abbonamento IPTV Italia, descrivi la tua esigenza e la connessione prevista senza confondere la lingua della pagina con quella dei contenuti. Chiedi conferma delle condizioni applicabili: il marchio 5G Live non prova copertura di rete o disponibilità territoriale."
             }
           ],
           "kind": "editorial"
@@ -1138,6 +1374,14 @@
             {
               "heading": "Separa pagamento e controlli della rete",
               "body": "Il piano si apre su Opplexify per pagare; account e assistenza ordini restano su Opplex. Verifica pacchetto e totale. Se la riproduzione cambia dopo un cambio di rete, annotalo: acquistare di nuovo non è un test di connessione."
+            },
+            {
+              "heading": "Il prezzo del piano non include la tua connessione",
+              "body": "Se cerchi “IPTV abbonamento prezzi bassi”, includi nel confronto anche i costi di rete che continuerai a pagare separatamente. Un abbonamento IPTV 5G Live non sostituisce dati mobili o accesso internet. Fra gli abbonamenti IPTV, confronta il totale del periodo e l’eventuale licenza del lettore prima di scegliere; una durata più lunga non elimina limiti dati o costi di roaming."
+            },
+            {
+              "heading": "Scegli l’anno pensando a come ti collegherai",
+              "body": "Per una ricerca come “IPTV Italia 12 mesi”, verifica il periodo annuale 5G Live nel catalogo attuale e pensa alla connessione che userai abitualmente. Un servizio IPTV a pagamento non garantisce ricezione mobile o prestazioni costanti. Prima di impegnarti, chiarisci dispositivo, rete e luogo d’uso; il nome 5G non fornisce una SIM e non aggiunge connessioni simultanee al piano."
             }
           ],
           "kind": "packages"
@@ -1155,6 +1399,10 @@
             {
               "heading": "Il nome non è una garanzia",
               "body": "Un piano personale non è un'offerta reseller. Tariffe di altri marchi e la parola 5G non concedono redistribuzione, prestazioni di rete o diritti su contenuti protetti."
+            },
+            {
+              "heading": "Chiarisci chi risponde quando cambia la connessione",
+              "body": "Nel valutare un pannello IPTV reseller per 5G Live, descrivi come aiuteresti i clienti fra Wi-Fi e rete mobile. Come reseller IPTV, distingui il supporto sul servizio dalle condizioni dell’operatore internet. Prima di confrontare pannelli IPTV, chiedi responsabilità e accessi effettivamente previsti. Una ricerca “pannelli IPTV Italia” non conferma un’offerta 5G Live, permessi territoriali, prestazioni di rete o margini economici."
             }
           ],
           "kind": "editorial"

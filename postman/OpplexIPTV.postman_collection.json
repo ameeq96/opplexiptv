@@ -79,6 +79,423 @@
   ],
   "item": [
     {
+      "name": "Landing experience - local guarded workflows",
+      "description": "No real payments/messages/fake records were performed. Follow global disabled-write flags and existing customer/admin sessions. Consented events/leads may supply optional locale+page together only with analytics_consent and a valid session_id. Page is an exact brand slug, empty string for home; no query/search text is collected.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.request.body && pm.request.body.mode === 'raw') { const body = JSON.parse(pm.variables.replaceIn(pm.request.body.raw)); if (body.email && body.one_send_consent === true && String(pm.variables.get('allow_messages')) !== 'true') { pm.execution.skipRequest(); throw new Error('One-time email is disabled until explicitly approved.'); } }"
+            ]
+          }
+        }
+      ],
+      "item": [
+        {
+          "name": "Published experience (no writes)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/site/brands/opplex/content?locale=en",
+            "description": "Existing content API now includes experience.ui/help/incidents/reviews/media. Empty records are not health, verification or testing claims. No private evidence or customer identity.",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Create saved-plan link (not payment recovery)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Origin",
+                "value": "https://opplexiptv.store"
+              }
+            ],
+            "url": "{{base_url}}/api/v1/landing/resume-links",
+            "description": "Requires an allowed brand Origin. Link expires in 24 hours, contains no email, does not create an order/payment, and never auto-retries. Email only if explicit one_send_consent=true plus nonempty email; use allow_messages=true for that one request. Keep returned URL private; do not store it in synced variables.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brand\": \"opplex\",\n  \"package_id\": \"{{package_id}}\",\n  \"locale\": \"en\",\n  \"email\": \"\",\n  \"one_send_consent\": false,\n  \"website\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Confirm saved plan after current price review",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/checkout/resume/{{saved_plan_token}}",
+            "description": "Manually copy the opaque token from an authorized saved-plan URL into a LOCAL unsynced variable. Requires same browser CSRF. Review current amount first (minor units), then explicitly set confirm_selection=true. 409 price change; 410 expired/unavailable. Returns same-site /checkout handoff, not a charge. Never substitute for pending-payment recovery.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"confirm_selection\": false,\n  \"amount_minor\": 0,\n  \"currency\": \"USD\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Own order review",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/account/orders/{{order_id}}/review",
+            "description": "Authenticated customer cookie only. Owned production-paid brand-attributed order required for eligibility. Not an admin/owner Bearer endpoint.",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Submit own review for moderation",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/account/orders/{{order_id}}/review",
+            "description": "Requires owned eligible production-paid order, manual real text and separate publication consent. Never invent a review; submissions/edits always pending and reset publication. No order/customer IDs accepted in body.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"display_name\": \"\",\n  \"rating\": 5,\n  \"body\": \"\",\n  \"locale\": \"en\",\n  \"publication_consent\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Withdraw own review consent",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/account/orders/{{order_id}}/review",
+            "description": "Authenticated owner of the order; withdraws consent and public visibility, not a physical delete. Requires allow_writes, allow_destructive and CSRF.",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Manage experience",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/landing-experience?brand=opplex",
+            "description": "Existing authorized owner/content admin session; current-session/password/2FA checks and API allowlist remain. Contains private moderation/evidence fields; do not publish responses.",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Create real incident draft",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/landing-experience/incidents",
+            "description": "Manual real incident only. Publication is opt-in. States investigating/identified/monitoring/resolved. No default uptime/healthy state. Existing authenticated content-admin role + CSRF + audit.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brand\": \"opplex\",\n  \"locale\": \"en\",\n  \"title\": \"\",\n  \"body\": \"\",\n  \"state\": \"investigating\",\n  \"started_at\": \"\",\n  \"resolved_at\": null,\n  \"is_published\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Update real incident",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/landing-experience/incidents/{{incident_id}}",
+            "description": "Copy complete actual record fields; empty example is intentionally invalid. Real resolved timestamp required for resolved; no future start/resolution.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brand\": \"opplex\",\n  \"locale\": \"en\",\n  \"title\": \"\",\n  \"body\": \"\",\n  \"state\": \"investigating\",\n  \"started_at\": \"\",\n  \"resolved_at\": null,\n  \"is_published\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Create real setup-media draft",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/landing-experience/media",
+            "description": "No material exists initially. Actual owned existing HTTPS opplexiptv.com/images/ or /storage/ image/video file, exact guide, device/player version, test date, evidence reference and publication permission required. No arbitrary embeds/uploads or fabricated evidence.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brand\": \"opplex\",\n  \"locale\": \"en\",\n  \"guide_slug\": \"setup\",\n  \"title\": \"\",\n  \"description\": \"\",\n  \"kind\": \"image\",\n  \"media_url\": \"\",\n  \"alt_text\": \"\",\n  \"device_model\": \"\",\n  \"player_name\": \"\",\n  \"player_version\": \"\",\n  \"tested_at\": \"\",\n  \"evidence_reference\": \"\",\n  \"publication_permission\": false,\n  \"is_published\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Update real setup-media record",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/landing-experience/media/{{media_id}}",
+            "description": "Copy complete actual fields; same evidence/owned-file checks as create. This example cannot publish without genuine evidence and permission.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"brand\": \"opplex\",\n  \"locale\": \"en\",\n  \"guide_slug\": \"setup\",\n  \"title\": \"\",\n  \"description\": \"\",\n  \"kind\": \"image\",\n  \"media_url\": \"\",\n  \"alt_text\": \"\",\n  \"device_model\": \"\",\n  \"player_name\": \"\",\n  \"player_version\": \"\",\n  \"tested_at\": \"\",\n  \"evidence_reference\": \"\",\n  \"publication_permission\": false,\n  \"is_published\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Moderate real verified-purchase review",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "X-CSRF-TOKEN",
+                "value": "{{csrf_token}}"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/landing-experience/reviews/{{review_id}}",
+            "description": "Manually choose action publish or reject. Publish rechecks current owned production purchase and current consent; it cannot convert old testimonials into verified reviews.",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"action\": \"\",\n  \"moderation_note\": \"\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        },
+        {
+          "name": "Consented forward-only locale/page report",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{base_url}}/api/browser/admin/trial-clicks",
+            "description": "Existing landingFunnel now adds breakdown.locale/page, daily, revenue_by_currency and revenue_missing_amount_orders. Counts have distinct populations; do not divide them to claim conversion. Historic missing/unconsented dimensions unknown, empty page=homepage; currency totals never combined.",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "protocolProfileBehavior": {
+            "followRedirects": false
+          }
+        }
+      ]
+    },
+    {
       "name": "01 - Customer Data API v1 (read-only Bearer)",
       "description": "For trusted server-to-server integrations only. Set data_api_token and resource IDs. No browser session needed. Tokens must belong to a current owner admin and include the endpoint ability.",
       "item": [

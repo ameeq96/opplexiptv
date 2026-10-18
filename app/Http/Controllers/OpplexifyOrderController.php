@@ -28,9 +28,11 @@ class OpplexifyOrderController extends Controller
         $this->authenticate($request, '/integrations/opplexify/orders/prepare');
         $data = $this->payload($request, [
             'device_id' => ['nullable', 'integer', 'min:1'],
-            'attribution' => ['sometimes', 'array:brand,session_id', 'required_array_keys:brand'],
+            'attribution' => ['sometimes', 'array:brand,session_id,locale,page', 'required_array_keys:brand'],
             'attribution.brand' => ['required_with:attribution', 'string', 'in:trex,opplex,geo,5g'],
             'attribution.session_id' => ['sometimes', 'string', 'regex:/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i'],
+            'attribution.locale' => ['sometimes', 'required', 'string', 'max:12'],
+            'attribution.page' => ['sometimes', 'nullable', 'string', 'max:160'],
         ]);
         $package = Package::query()
             ->where('active', true)
@@ -62,6 +64,18 @@ class OpplexifyOrderController extends Controller
             $attribution = ['brand' => $data['attribution']['brand']];
             if (isset($data['attribution']['session_id'])) {
                 $attribution['session_id'] = strtolower($data['attribution']['session_id']);
+            }
+            $hasLocale = array_key_exists('locale', $data['attribution']);
+            $hasPage = array_key_exists('page', $data['attribution']);
+            if ($hasLocale || $hasPage) {
+                $page = $data['attribution']['page'] ?? '';
+                if (!$hasLocale || !$hasPage || !isset($attribution['session_id'])
+                    || !app(\App\Services\Clients\LandingInteractionService::class)->validLocale($data['attribution']['locale'])
+                    || !app(\App\Services\Clients\LandingInteractionService::class)->validPage($attribution['brand'], $page)) {
+                    throw ValidationException::withMessages(['attribution' => 'Consented session, supported language and matching public page are required.']);
+                }
+                $attribution['locale'] = $data['attribution']['locale'];
+                $attribution['page'] = $page;
             }
             $data['attribution'] = $attribution;
         }

@@ -17,7 +17,7 @@ class SecurityHeaders
 
         $response->headers->set('X-Content-Type-Options', 'nosniff');
         $response->headers->set('X-Frame-Options', 'SAMEORIGIN');
-        $response->headers->set('Referrer-Policy', $request->is('account', 'account/*', 'api/browser/account/*', 'api/browser/orders/*', 'api/browser/marketing/*', 'api/browser/event-promotion/*') || $request->routeIs('orders.status', 'orders.payment-proof', 'marketing.unsubscribe', 'event-promotions.activate') ? 'no-referrer' : 'strict-origin-when-cross-origin');
+        $response->headers->set('Referrer-Policy', $request->is('account', 'account/*', 'api/browser/account/*', 'api/browser/orders/*', 'api/browser/marketing/*', 'api/browser/event-promotion/*') || $request->routeIs('orders.status', 'orders.payment-proof', 'marketing.unsubscribe', 'event-promotions.activate', 'landing.resume.show', 'api.browser.landing.resume.confirm', 'api.landing.resume-links') ? 'no-referrer' : 'strict-origin-when-cross-origin');
         $response->headers->set('X-Permitted-Cross-Domain-Policies', 'none');
         $response->headers->set(
             'Content-Security-Policy',

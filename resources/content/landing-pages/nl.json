@@ -1,4 +1,188 @@
 {
+  "experience": {
+    "ui": {
+      "toolsHeading": "Praktische hulpmiddelen voor klanten",
+      "toolsIntro": "Kies een volgende stap vóór of na je aankoop.",
+      "openHelp": "Open de hulpassistent",
+      "helpHeading": "Vind je volgende stap",
+      "helpQuestion": "Wat wil je controleren?",
+      "helpChoose": "Kies een optie",
+      "helpReset": "Opnieuw beginnen",
+      "helpNoDiagnosis": "Dit is advies, geen bevestigde compatibiliteit of netwerkdiagnose. Deel nooit wachtwoorden of betaalcodes.",
+      "helpSearch": "Zoek handleidingen in deze taal",
+      "helpSearchHint": "Voer minstens twee tekens in. Je zoekopdracht blijft op deze pagina en wordt niet naar de server gestuurd.",
+      "helpResults": "Gevonden handleidingen",
+      "helpNoResults": "Geen passende handleidingen. Probeer een ander woord of vraag ondersteuning.",
+      "helpAccount": "Open mijn account",
+      "helpSupport": "Privéhulp bij een bestelling",
+      "helpContact": "Vraag ondersteuning",
+      "resumeHeading": "Bewaar een plankeuze",
+      "resumeIntro": "Maak een privélink die 24 uur geldig is. Bij heropening worden de actuele prijs en beschikbaarheid gecontroleerd.",
+      "resumeSave": "Bewaar dit plan",
+      "resumeEmail": "E-mailadres (optioneel)",
+      "resumeEmailConsent": "Stuur deze link één keer naar het opgegeven adres. Ik ga akkoord met deze eenmalige e-mail.",
+      "resumePrivacy": "Geen automatische herinneringen. Het optionele adres wordt alleen voor deze aangevraagde link gebruikt. Houd de link privé.",
+      "resumeSaving": "Je link wordt gemaakt…",
+      "resumeReady": "Je link is klaar. Je kunt hem hieronder openen of kopiëren.",
+      "resumeOpen": "Open de bewaarde keuze",
+      "resumeCopy": "Kopieer privélink",
+      "resumeCopied": "Link gekopieerd.",
+      "resumeCopyFailed": "Kopiëren is mislukt. Gebruik de knop om de link te openen.",
+      "resumeUnavailable": "Dit plan is niet beschikbaar. Bekijk de huidige plannen voordat je doorgaat.",
+      "resumeInvalid": "Controleer je e-mailadres en toestemming en probeer opnieuw.",
+      "resumeFailed": "De link kon niet worden gemaakt. Probeer opnieuw.",
+      "resumeTooMany": "Te veel verzoeken. Wacht even voordat je opnieuw probeert.",
+      "resumeExpires": "De link verloopt: {date}",
+      "statusHeading": "Gepubliceerde service-updates",
+      "statusNone": "Geen gepubliceerde service-update. Dit bevestigt niet dat alle diensten werken.",
+      "statusUpdated": "Laatst bijgewerkt",
+      "statusInvestigating": "In onderzoek",
+      "statusIdentified": "Probleem vastgesteld",
+      "statusMonitoring": "Wordt gevolgd",
+      "statusResolved": "Opgelost",
+      "reviewsHeading": "Klantervaringen",
+      "reviewsNone": "Geen gepubliceerde klantervaringen.",
+      "verifiedPurchase": "Geverifieerde aankoop",
+      "reviewRating": "Beoordeling: {rating} van 5",
+      "mediaHeading": "Geteste installatiebeelden",
+      "mediaTested": "Getest op: {date}",
+      "mediaDevice": "Apparaatmodel",
+      "mediaPlayer": "Speler en versie",
+      "mediaUnsupported": "Open het videobestand",
+      "loadingExperience": "Gepubliceerde informatie laden…",
+      "statusUnavailable": "Service-updates konden niet worden geladen. Probeer opnieuw of vraag ondersteuning.",
+      "measurementDetail": "Met jouw toestemming omvat de meting ook de pagina en taal. Zoekwoorden en keuzes in de assistent worden niet opgeslagen.",
+      "resumePlanOnly": "Dit bewaart je gekozen plan, geen bestaande betaling.",
+      "resumePaymentWarning": "Heb je al een betaling gestart? Controleer de status voordat je een nieuwe begint.",
+      "resumeCurrentPrice": "Actuele planprijs",
+      "resumePriceChanged": "De prijs is gewijzigd sinds je de link bewaarde. Controleer de actuele prijs voordat je doorgaat.",
+      "resumeContinue": "Bevestig de keuze en ga naar afrekenen",
+      "resumeInvalidLink": "Deze planlink is ongeldig of verlopen.",
+      "resumeReturn": "Terug naar de website van het merk",
+      "resumeEmailSubject": "Je bewaarde plankeuze",
+      "resumeEmailBody": "Je vroeg deze eenmalige link aan om je gekozen plan te heropenen. De link verloopt na 24 uur.",
+      "resumeFinalFees": "Eventuele kosten en het eindtotaal worden vóór betaling op Opplexify getoond."
+    },
+    "help": {
+      "trex": {
+        "intro": "Trex helpt je scherm en speler voor te bereiden voordat je een langerlopend plan kiest.",
+        "questions": [
+          {
+            "id": "readiness",
+            "label": "Wat wil je controleren?",
+            "options": [
+              {
+                "value": "device",
+                "label": "Ik weet mijn apparaatmodel niet",
+                "answer": "Open de instellingen en noteer het precieze model en de systeemversie. Vraag ondersteuning de officiële spelereisen te controleren voordat je koopt.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "player",
+                "label": "Ik wil een speler-app controleren",
+                "answer": "Controleer de officiële ontwikkelaarsinformatie over apparaten, appversie en eventuele aparte licentiekosten. Alleen een apparaatnaam in een lijst bewijst geen compatibiliteit.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "ready",
+                "label": "Ik ken mijn apparaat en speler",
+                "answer": "Bevestig bij ondersteuning de ene gelijktijdige verbinding, de totale prijs en je apparaat. Deze controles garanderen geen beeldkwaliteit of regionale beschikbaarheid.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "opplex": {
+        "intro": "Opplex behandelt account-, bestel- en betaalvragen in het centrale privéportaal.",
+        "questions": [
+          {
+            "id": "order-help",
+            "label": "Wat wil je controleren?",
+            "options": [
+              {
+                "value": "pending-payment",
+                "label": "Mijn betaling staat nog open",
+                "answer": "Begin geen tweede betaling. Meld je aan bij het centrale account en controleer de bestaande bestelling; vraag privéondersteuning als de status onduidelijk is.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "account-access",
+                "label": "Ik wil toegang tot mijn account",
+                "answer": "Gebruik de centrale aanmeldpagina met het e-mailadres van je bestelling. Deel nooit wachtwoorden, aanmeldlinks of verificatiecodes in het openbaar.",
+                "links": [
+                  "account"
+                ]
+              },
+              {
+                "value": "renewal",
+                "label": "Ik wil verlengen",
+                "answer": "Controleer je bestelling en einddatum in je privéaccount voordat je opnieuw koopt. Vraag ondersteuning hoe de verlenging wordt toegepast.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "geo": {
+        "intro": "Zoek bestaande Geo-handleidingen in je huidige taal. Zoekwoorden worden niet verstuurd of opgeslagen.",
+        "questions": []
+      },
+      "5g": {
+        "intro": "5G Live biedt handmatige verbindingscontroles, geen snelheidstest of prestatiegarantie.",
+        "questions": [
+          {
+            "id": "network-help",
+            "label": "Wat wil je controleren?",
+            "options": [
+              {
+                "value": "wifi",
+                "label": "Het probleem treedt op via wifi",
+                "answer": "Controleer gewoon internetgebruik op hetzelfde apparaat. Vergelijk zo mogelijk een kabel of plek dichter bij de router met een toegestane bron. Noteer veranderingen en vraag zo nodig hulp.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "mobile-data",
+                "label": "Het probleem treedt op via mobiele data",
+                "answer": "Controleer je datategoed en de mobiele instellingen van de speler. Vergelijk waar toegestaan met een bekend wifinetwerk. Dit stelt geen oorzaak vast en omzeilt geen beperkingen.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "other-apps",
+                "label": "Andere apps maken ook geen verbinding",
+                "answer": "Controleer de apparaatverbinding en meldingen van je router of mobiele aanbieder. Bekijk gepubliceerde updates en stuur ondersteuning tijdstip en foutmelding, geen wachtwoorden.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
   "locale":"nl",
   "labels":{"home":"Start","pages":"Ontdek","packages":"Pakketten","account":"Mijn account","contact":"Contact","readMore":"Lees de gids","backToGuides":"Terug naar de gidsen","language":"Taal","loading":"Gegevens worden geladen…","unavailable":"De gegevens zijn tijdelijk niet beschikbaar.","retry":"Opnieuw proberen","choosePlan":"Bekijk de pakketten","setup":"Installatie","guide":"Praktische gids","disclaimer":"Controleer de actuele voorwaarden voordat je bestelt.","governingPolicy":"Lees het centrale beleid dat voor deze dienst geldt"},
   "brands":{

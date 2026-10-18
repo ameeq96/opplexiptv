@@ -1,4 +1,188 @@
 {
+  "experience": {
+    "ui": {
+      "toolsHeading": "Practical customer tools",
+      "toolsIntro": "Choose a useful next step before or after buying.",
+      "openHelp": "Open the help assistant",
+      "helpHeading": "Find your next step",
+      "helpQuestion": "What would you like to check?",
+      "helpChoose": "Choose an option",
+      "helpReset": "Start again",
+      "helpNoDiagnosis": "Guidance only, not verified compatibility or a network diagnosis. Never share passwords or payment codes.",
+      "helpSearch": "Search guides in this language",
+      "helpSearchHint": "Enter at least two characters. Your search stays on this page and is not sent to the server.",
+      "helpResults": "Matching guides",
+      "helpNoResults": "No matching guides. Try a different word or ask support.",
+      "helpAccount": "Open my account",
+      "helpSupport": "Get private order support",
+      "helpContact": "Ask the support team",
+      "resumeHeading": "Save a plan selection",
+      "resumeIntro": "Create a private link valid for 24 hours. Current price and availability are checked when you reopen it.",
+      "resumeSave": "Save this plan",
+      "resumeEmail": "Email address (optional)",
+      "resumeEmailConsent": "Send this link once to the email above. I agree to this one-time email.",
+      "resumePrivacy": "No automatic reminders. Optional email is used only for this requested link. Keep the link private.",
+      "resumeSaving": "Creating your link…",
+      "resumeReady": "Your link is ready. You can open it or copy it below.",
+      "resumeOpen": "Reopen saved selection",
+      "resumeCopy": "Copy private link",
+      "resumeCopied": "Link copied.",
+      "resumeCopyFailed": "Copy failed. Use the open-link button instead.",
+      "resumeUnavailable": "This plan is unavailable. Review current plans before continuing.",
+      "resumeInvalid": "Check your email and permission, then try again.",
+      "resumeFailed": "The link could not be created. Please try again.",
+      "resumeTooMany": "Too many requests. Please wait before trying again.",
+      "resumeExpires": "Link expires: {date}",
+      "statusHeading": "Published service updates",
+      "statusNone": "No published service update. This does not confirm that every service is working.",
+      "statusUpdated": "Last updated",
+      "statusInvestigating": "Investigating",
+      "statusIdentified": "Issue identified",
+      "statusMonitoring": "Monitoring",
+      "statusResolved": "Resolved",
+      "reviewsHeading": "Customer feedback",
+      "reviewsNone": "No published customer feedback.",
+      "verifiedPurchase": "Verified purchase",
+      "reviewRating": "Rating: {rating} out of 5",
+      "mediaHeading": "Tested setup media",
+      "mediaTested": "Tested on: {date}",
+      "mediaDevice": "Device model",
+      "mediaPlayer": "Player and version",
+      "mediaUnsupported": "Open the video file",
+      "loadingExperience": "Loading published information…",
+      "statusUnavailable": "Service updates could not be loaded. Try again or contact support.",
+      "measurementDetail": "With your permission, measurement also includes the page and language. Search words and help selections are not recorded.",
+      "resumePlanOnly": "This saves your selected plan, not an existing payment.",
+      "resumePaymentWarning": "If you already started payment, check its status before starting again.",
+      "resumeCurrentPrice": "Current plan price",
+      "resumePriceChanged": "The price has changed since this link was saved. Review the current price before continuing.",
+      "resumeContinue": "Confirm selection and continue to checkout",
+      "resumeInvalidLink": "This saved-plan link is invalid or expired.",
+      "resumeReturn": "Return to the brand website",
+      "resumeEmailSubject": "Your saved plan selection",
+      "resumeEmailBody": "You requested this one-time link to reopen your selected plan. It expires after 24 hours.",
+      "resumeFinalFees": "Any applicable fees and the final total are shown on Opplexify before payment."
+    },
+    "help": {
+      "trex": {
+        "intro": "Trex helps you prepare your screen and player before choosing a longer-term plan.",
+        "questions": [
+          {
+            "id": "readiness",
+            "label": "What would you like to check?",
+            "options": [
+              {
+                "value": "device",
+                "label": "I do not know my device model",
+                "answer": "Open your device settings and note the exact model and operating-system version. Ask support to check the player's official requirements before buying.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "player",
+                "label": "I need to check a player app",
+                "answer": "Use the developer's official information to check device support, app version and any separate licence fee. A listed device name alone is not proof of compatibility.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "ready",
+                "label": "I know my device and player",
+                "answer": "Confirm the single simultaneous connection, full plan price and intended device with support. These checks do not guarantee picture quality or regional availability.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "opplex": {
+        "intro": "Opplex keeps account, order and payment questions in the central private portal.",
+        "questions": [
+          {
+            "id": "order-help",
+            "label": "What would you like to check?",
+            "options": [
+              {
+                "value": "pending-payment",
+                "label": "My payment is pending",
+                "answer": "Do not start a second payment. Sign in to the central account and check the existing order; ask private support if the status is unclear.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "account-access",
+                "label": "I need account access",
+                "answer": "Use the central sign-in page with the email used for your order. Never send your password, sign-in link or verification code in public messages.",
+                "links": [
+                  "account"
+                ]
+              },
+              {
+                "value": "renewal",
+                "label": "I want to renew",
+                "answer": "Check your current order and service end date in the private account before buying again. Ask support to confirm how the renewal applies.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "geo": {
+        "intro": "Search Geo's existing guides in your current language. No search words are sent or stored.",
+        "questions": []
+      },
+      "5g": {
+        "intro": "5G Live offers manual connection checks, not a speed test or a promise of network performance.",
+        "questions": [
+          {
+            "id": "network-help",
+            "label": "What would you like to check?",
+            "options": [
+              {
+                "value": "wifi",
+                "label": "The problem happens on Wi-Fi",
+                "answer": "Check ordinary internet access on the same device. If possible, compare a wired connection or a nearby Wi-Fi position using an authorised source. Note what changed and ask support if needed.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "mobile-data",
+                "label": "The problem happens on mobile data",
+                "answer": "Check your data allowance and the player's mobile-data settings. Compare with a familiar Wi-Fi network where permitted. This does not identify the cause or bypass provider restrictions.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "other-apps",
+                "label": "Other apps also fail to connect",
+                "answer": "Check device connectivity and your router or mobile operator's published notices. Check published service updates and contact support with the time and error message, not passwords.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
   "locale": "en",
   "labels": {
     "home": "Home",
@@ -76,7 +260,8 @@
           "intro": "A personal viewing plan is not a reseller agreement. If you are exploring a business arrangement around Trex, start with a discussion of what is available and what you would be responsible for, rather than purchasing a retail plan to redistribute.",
           "sections": [
             {"heading": "Bring a practical outline", "body": "Explain your market, expected support workload and the kind of customer service you intend to provide. Ask for written confirmation of permitted use, pricing and any account limits."},
-            {"heading": "Do not assume panel access", "body": "This page does not promise a reseller panel, credit balance or particular margin. Support must confirm any suitable arrangement separately. Retail prices and another provider's reseller rates are not a Trex business quotation."}
+            {"heading": "Do not assume panel access", "body": "This page does not promise a reseller panel, credit balance or particular margin. Support must confirm any suitable arrangement separately. Retail prices and another provider's reseller rates are not a Trex business quotation."},
+            {"heading": "Plan the support work before discussing resale", "body": "For an IPTV reseller enquiry involving Trex, describe the televisions and players your prospective customers are likely to use. Explain how you would help someone check remote controls and device requirements before a longer commitment. Ask what business arrangement, if any, supports that responsibility. A yearly personal plan is not a substitute for written resale terms."}
           ],
           "kind": "editorial"
         },
@@ -251,7 +436,8 @@
           "sections": [
             {"heading": "Know which step you are on", "body": "Compare the current package here, review payment details on Opplexify and check the resulting order through the central account. If a step is unclear, ask before confirming rather than starting another purchase."},
             {"heading": "Useful details over broad promises", "body": "The plan's displayed duration and allowance matter more than a headline. Confirm device compatibility and any important availability question in advance. Performance depends on the source, connection and equipment; this site does not promise uninterrupted playback. Our shared support is listed publicly as Opplex IPTV Subscription Services."},
-            {"heading": "Keep selection, payment and access separate", "body": "This store helps you choose a duration and follow the same order into the shared system. Choosing a package, opening Opplexify and seeing an order status are different steps. Keep the order reference so support can clarify a payment or setup question without starting a new account journey."}
+            {"heading": "Keep selection, payment and access separate", "body": "This store helps you choose a duration and follow the same order into the shared system. Choosing a package, opening Opplexify and seeing an order status are different steps. Keep the order reference so support can clarify a payment or setup question without starting a new account journey."},
+            {"heading": "Finding this store through a different spelling", "body": "You may have reached this store by searching for “opplexiptv” rather than the spaced brand name. An “oplexiptv” result can look similar at a glance, so check the destination before opening an account or downloading anything. The account and contact links on this store lead to the central Opplex service; an unfamiliar name or logo is not a reason to trust another website."}
           ],
           "kind": "editorial"
         },
@@ -276,7 +462,9 @@
             {"heading": "Do I need another customer account?", "body": "Use the main Opplex customer portal rather than creating a separate store account. The account links on this site take you to that shared service."},
             {"heading": "Will my plan renew by itself?", "body": "Plans do not renew automatically under the central service terms. When a period ends, review the current package and price before deciding to renew."},
             {"heading": "What if a payment looks unfinished?", "body": "Check the order status and contact support with the reference before paying again. A redirect or an enquiry on its own is not proof that a payment succeeded or that the service is ready."},
-            {"heading": "Does a longer plan include more connections?", "body": "No. Every Opplex plan includes one simultaneous connection. Compare the term and total price rather than assuming a longer purchase permits several screens at once. Ask support about device-switching rules before relying on them."}
+            {"heading": "Does a longer plan include more connections?", "body": "No. Every Opplex plan includes one simultaneous connection. Compare the term and total price rather than assuming a longer purchase permits several screens at once. Ask support about device-switching rules before relying on them."},
+            {"heading": "Can I request an Opplex IPTV trial?", "body": "Ask support whether a trial is currently available for the plan and device you are considering. Confirm its duration, any charge and what the trial lets you check before proceeding. This page does not promise a free trial or automatic eligibility. If you already have an order, keep that enquiry separate so a trial request does not become an unnecessary second purchase."},
+            {"heading": "“IPTV Opplex”: which account link should I use?", "body": "If an “IPTV Opplex” or “Opplextv IPTV” search brought you here, use this store’s My Account link to reach the central customer portal. Similar search wording does not authenticate a different app or website. For an uncertain order, keep the reference and ask through the published support options rather than creating another account or paying again."}
           ],
           "kind": "editorial"
         },
@@ -287,7 +475,8 @@
           "intro": "Choose the period you can use with confidence, then compare the total shown for that period. A lower monthly equivalent is not a monthly billing promise. Every Opplex plan includes one simultaneous connection; a longer term does not add concurrent screens.",
           "sections": [
             {"heading": "Match the duration to your decision", "body": "If your device or player setup is still uncertain, clarify it before choosing a longer commitment. Compare currency, full price, duration and one-connection allowance together. Check any separate player fee rather than treating it as part of the service price."},
-            {"heading": "Keep one order journey", "body": "The selected package continues to Opplexify for payment; your account and order support remain in the main Opplex system. Confirm the package and amount before paying. If a payment screen closes or the order status is unclear, check the existing order or contact support before starting another purchase."}
+            {"heading": "Keep one order journey", "body": "The selected package continues to Opplexify for payment; your account and order support remain in the main Opplex system. Confirm the package and amount before paying. If a payment screen closes or the order status is unclear, check the existing order or contact support before starting another purchase."},
+            {"heading": "What should I compare in the Opplex IPTV price?", "body": "When comparing the Opplex TV subscription price, begin with the full amount for the period you actually want. Then check the one-connection allowance and any separate player charge. A lower monthly equivalent can mean a larger payment today, so choose a term that suits your plans rather than the smallest headline figure. Review the current catalog and the final checkout total instead of relying on an old search snippet."}
           ],
           "kind": "packages"
         },
@@ -298,7 +487,8 @@
           "intro": "If your aim is to serve your own customers, begin with a business enquiry. A retail Opplex plan is intended for its permitted personal use and should not be treated as permission to resell or redistribute access.",
           "sections": [
             {"heading": "Clarify the responsibilities", "body": "Tell support how you would handle enquiries, setup and ongoing assistance. Ask which arrangements are currently available and what permissions, billing rules and account limits apply."},
-            {"heading": "Get the offer confirmed", "body": "A reseller panel, balance or credit rate is not promised by this page. Request the applicable written terms before paying for any business arrangement. Do not calculate margins from a retail package or assume another provider's panel uses the same rules."}
+            {"heading": "Get the offer confirmed", "body": "A reseller panel, balance or credit rate is not promised by this page. Request the applicable written terms before paying for any business arrangement. Do not calculate margins from a retail package or assume another provider's panel uses the same rules."},
+            {"heading": "Who will handle the customer’s order question?", "body": "An IPTV reseller enquiry should explain who will answer questions about payments, renewals and any separate player licence. Describe how you would keep an order reference connected to the right customer without sharing passwords in ordinary messages. This gives support a concrete business proposal to discuss; it does not turn a retail subscription into panel access or a confirmed reseller offer."}
           ],
           "kind": "editorial"
         },
@@ -311,7 +501,9 @@
             {"heading": "Check before installing", "body": "Look up the exact player in your device's official store or on the developer's website. Confirm operating-system support and whether the player has an independent fee. A download button alone does not confirm compatibility."},
             {"heading": "Keep help specific", "body": "For setup questions, give support the app name and version rather than just saying IPTV. Use the central applications guide as a starting point, and never enter your service details into a lookalike app sent by an unknown contact."},
             {"heading": "Separate three different requirements", "body": "Check that the app supports your device, whether the developer charges for its licence, and whether it supports the service's required setup method. These are separate questions. An app receipt is not an Opplex order, and an Opplex plan does not automatically pay a third-party app fee."},
-            {"heading":"Identify who is asking for payment","body":"Before paying a player charge, note the app developer, the charge description and whether it concerns an app licence or your Opplex service order. A similar name or logo does not prove they are the same purchase. Check the developer's documentation and your central order separately. The linked VLC manual is an example of an official player reference, not a requirement to use that app.","links":[{"label":"Official VLC for Android manual","url":"https://docs.videolan.me/vlc-android-user/"}]}
+            {"heading":"Identify who is asking for payment","body":"Before paying a player charge, note the app developer, the charge description and whether it concerns an app licence or your Opplex service order. A similar name or logo does not prove they are the same purchase. Check the developer's documentation and your central order separately. The linked VLC manual is an example of an official player reference, not a requirement to use that app.","links":[{"label":"Official VLC for Android manual","url":"https://docs.videolan.me/vlc-android-user/"}]},
+            {"heading":"Choosing a download source","body":"If you are considering an Opplex IPTV APK download, start with a confirmed publisher source, not the first familiar-looking filename. Searches for an “Opplex IPTV APK” or “Opplex APK” do not establish who made the file. Before choosing an Opplex IPTV player, ask which app and setup method are appropriate for your device. A player download and a service subscription remain separate decisions."},
+            {"heading":"Checking whether an app update is current","body":"A result titled “Opplex TV APK download latest version” is not release confirmation. The same applies to an “Opplextv APK latest version” listing: check the publisher’s release information, device requirements and any licence charge before installing. An “Opplex TV APK” label alone cannot tell you whether the file is current. If those details are missing, pause and ask support rather than trying several unknown installers."}
           ],
           "kind": "editorial"
         },
@@ -324,7 +516,9 @@
             {"heading": "Confirm the starting point", "body": "Review the order status and selected plan. Keep the reference available, update the device and check its connection. If the order is still unclear, ask support before making another payment or buying a second player licence."},
             {"heading": "Follow one guide at a time", "body": "Use instructions for your actual device and player version. Avoid combining steps from unrelated apps. If you reach an unexpected screen, record its wording and pause; your password or full payment details are not needed in a support message."},
             {"heading": "Check the order before changing the player", "body": "1. Open the central account and find the relevant order. 2. Note its displayed status and reference. 3. Check the official guide for your exact device/player. 4. If status or access instructions are unclear, ask support with that reference. Do not pay again to troubleshoot a player error."},
-            {"heading":"Keep purchase status separate from device setup","body":"Open the central account using the purchase email and locate the relevant order. Record the displayed status before troubleshooting the player. If a payment is pending or unclear, ask for an order check rather than starting another purchase. Keep any separate app-licence receipt distinct so support can tell which transaction your question concerns."}
+            {"heading":"Keep purchase status separate from device setup","body":"Open the central account using the purchase email and locate the relevant order. Record the displayed status before troubleshooting the player. If a payment is pending or unclear, ask for an order check rather than starting another purchase. Keep any separate app-licence receipt distinct so support can tell which transaction your question concerns."},
+            {"heading":"Using a computer instead of an Android device","body":"An “Opplex TV for PC” result and an “Opplextv APK for PC” result may describe different ways of running a player. Do not assume an Android installer is a native Windows or macOS application. Note your computer’s operating system and the exact player you want to use, then confirm the supported setup method before buying a licence or another plan."},
+            {"heading":"When an installer uses a different spelling","body":"If instructions refer to “Oplex IPTV” or “Oplex TV”, check the publisher and destination rather than assuming the spelling identifies the same app. An “Oplex APK” file needs the same source and device checks as any other installer. Keep the exact app name and version available when asking support; do not test your account in an unfamiliar app merely to see whether it accepts the details."}
           ],
           "kind": "editorial"
         },
@@ -520,7 +714,8 @@
           "intro": "Serving customers in a particular market involves more than translating a sales page. If you are interested in a Geo business arrangement, ask what is available and clarify the permissions and responsibilities before making any commitment.",
           "sections": [
             {"heading": "Explain the market you intend to serve", "body": "Outline the countries, languages and support coverage you have in mind. Confirm applicable regional and copyright restrictions rather than assuming a retail plan allows redistribution."},
-            {"heading": "Request a specific agreement", "body": "This page does not offer a guaranteed reseller panel, wholesale rate or margin. Support must confirm any available arrangement in writing. Another brand's reseller pricing is not a Geo offer, and personal access must not be resold without an appropriate agreement."}
+            {"heading": "Request a specific agreement", "body": "This page does not offer a guaranteed reseller panel, wholesale rate or margin. Support must confirm any available arrangement in writing. Another brand's reseller pricing is not a Geo offer, and personal access must not be resold without an appropriate agreement."},
+            {"heading": "Explain the language and location questions you would handle", "body": "An IPTV reseller proposal for Geo should distinguish the language of customer support from the places where a service may be offered. Describe the audience you would assist, the app questions you can answer and the availability questions you would refer back for confirmation. A translated sales page alone is not a business agreement or evidence of distribution permissions."}
           ],
           "kind": "editorial"
         },
@@ -741,7 +936,8 @@
           "intro": "If you want to support customers rather than buy a personal plan, explain that intention before purchasing. A retail 5G Live package does not by itself provide resale rights, a management panel or permission to share access.",
           "sections": [
             {"heading": "Describe the service you would provide", "body": "Outline your customers' likely devices, connection types and support needs. Ask which business arrangements, if any, are available and what responsibilities and restrictions would apply."},
-            {"heading": "Keep the offer specific", "body": "Support must confirm any pricing, panel access or credit terms separately. This page does not promise a margin or mobile-network service. Do not use another provider's reseller rate as a 5G Live quotation or redistribute a personal account."}
+            {"heading": "Keep the offer specific", "body": "Support must confirm any pricing, panel access or credit terms separately. This page does not promise a margin or mobile-network service. Do not use another provider's reseller rate as a 5G Live quotation or redistribute a personal account."},
+            {"heading": "Define the boundary between service help and network help", "body": "For an IPTV reseller enquiry about 5G Live, explain how you would handle a customer whose playback changes between Wi-Fi and mobile data. Make clear which questions you could investigate and which depend on the customer’s internet provider. The business name does not supply mobile coverage, and an enquiry here does not confirm panel access, credit prices or an earnings margin."}
           ],
           "kind": "editorial"
         },

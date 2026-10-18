@@ -1,4 +1,188 @@
 {
+  "experience": {
+    "ui": {
+      "toolsHeading": "Des outils pratiques pour les clients",
+      "toolsIntro": "Choisissez la prochaine étape avant ou après votre achat.",
+      "openHelp": "Ouvrir l’assistant",
+      "helpHeading": "Trouvez la prochaine étape",
+      "helpQuestion": "Que souhaitez-vous vérifier ?",
+      "helpChoose": "Choisissez une option",
+      "helpReset": "Recommencer",
+      "helpNoDiagnosis": "Ces conseils ne confirment pas la compatibilité et ne constituent pas un diagnostic réseau. Ne partagez jamais vos mots de passe ni vos codes de paiement.",
+      "helpSearch": "Rechercher des guides dans cette langue",
+      "helpSearchHint": "Saisissez au moins deux caractères. Votre recherche reste sur cette page et n’est pas envoyée au serveur.",
+      "helpResults": "Guides correspondants",
+      "helpNoResults": "Aucun guide trouvé. Essayez un autre mot ou contactez l’assistance.",
+      "helpAccount": "Ouvrir mon compte",
+      "helpSupport": "Assistance privée pour une commande",
+      "helpContact": "Contacter l’assistance",
+      "resumeHeading": "Enregistrer un forfait",
+      "resumeIntro": "Créez un lien privé valable 24 heures. Le prix et la disponibilité seront revérifiés à son ouverture.",
+      "resumeSave": "Enregistrer ce forfait",
+      "resumeEmail": "Adresse e-mail (facultative)",
+      "resumeEmailConsent": "Envoyez ce lien une seule fois à cette adresse. J’accepte cet e-mail unique.",
+      "resumePrivacy": "Aucun rappel automatique. L’adresse facultative sert uniquement au lien demandé. Gardez le lien privé.",
+      "resumeSaving": "Création du lien…",
+      "resumeReady": "Votre lien est prêt. Vous pouvez l’ouvrir ou le copier ci-dessous.",
+      "resumeOpen": "Rouvrir la sélection",
+      "resumeCopy": "Copier le lien privé",
+      "resumeCopied": "Lien copié.",
+      "resumeCopyFailed": "La copie a échoué. Utilisez le bouton d’ouverture du lien.",
+      "resumeUnavailable": "Ce forfait n’est pas disponible. Consultez les offres actuelles avant de continuer.",
+      "resumeInvalid": "Vérifiez l’adresse e-mail et votre accord, puis réessayez.",
+      "resumeFailed": "Le lien n’a pas pu être créé. Réessayez.",
+      "resumeTooMany": "Trop de demandes. Patientez avant de réessayer.",
+      "resumeExpires": "Expiration du lien : {date}",
+      "statusHeading": "Informations de service publiées",
+      "statusNone": "Aucune information de service publiée. Cela ne confirme pas que tous les services fonctionnent.",
+      "statusUpdated": "Dernière mise à jour",
+      "statusInvestigating": "En cours d’investigation",
+      "statusIdentified": "Problème identifié",
+      "statusMonitoring": "Sous surveillance",
+      "statusResolved": "Résolu",
+      "reviewsHeading": "Avis des clients",
+      "reviewsNone": "Aucun avis publié.",
+      "verifiedPurchase": "Achat vérifié",
+      "reviewRating": "Note : {rating} sur 5",
+      "mediaHeading": "Supports d’installation testés",
+      "mediaTested": "Testé le : {date}",
+      "mediaDevice": "Modèle de l’appareil",
+      "mediaPlayer": "Lecteur et version",
+      "mediaUnsupported": "Ouvrir le fichier vidéo",
+      "loadingExperience": "Chargement des informations publiées…",
+      "statusUnavailable": "Impossible de charger les informations de service. Réessayez ou contactez l’assistance.",
+      "measurementDetail": "Avec votre accord, la mesure inclut aussi la page et la langue. Les recherches et choix de l’assistant ne sont pas enregistrés.",
+      "resumePlanOnly": "Cela enregistre votre forfait sélectionné, pas un paiement existant.",
+      "resumePaymentWarning": "Si vous avez déjà commencé un paiement, vérifiez son état avant d’en commencer un autre.",
+      "resumeCurrentPrice": "Prix actuel du forfait",
+      "resumePriceChanged": "Le prix a changé depuis l’enregistrement du lien. Vérifiez-le avant de continuer.",
+      "resumeContinue": "Confirmer la sélection et passer au paiement",
+      "resumeInvalidLink": "Ce lien de forfait est invalide ou expiré.",
+      "resumeReturn": "Retour au site de la marque",
+      "resumeEmailSubject": "Votre sélection de forfait enregistrée",
+      "resumeEmailBody": "Vous avez demandé ce lien à envoi unique pour rouvrir votre forfait sélectionné. Il expire après 24 heures.",
+      "resumeFinalFees": "Les éventuels frais et le montant final sont affichés sur Opplexify avant le paiement."
+    },
+    "help": {
+      "trex": {
+        "intro": "Trex vous aide à préparer l’écran et le lecteur avant de choisir un forfait de longue durée.",
+        "questions": [
+          {
+            "id": "readiness",
+            "label": "Que souhaitez-vous vérifier ?",
+            "options": [
+              {
+                "value": "device",
+                "label": "Je ne connais pas le modèle de mon appareil",
+                "answer": "Ouvrez les paramètres et notez le modèle exact et la version du système. Demandez à l’assistance de vérifier les exigences officielles du lecteur avant l’achat.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "player",
+                "label": "Je dois vérifier une application",
+                "answer": "Consultez les informations officielles du développeur sur les appareils, la version et les éventuels frais de licence. Un nom d’appareil dans une liste ne confirme pas sa compatibilité.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "ready",
+                "label": "Je connais mon appareil et mon lecteur",
+                "answer": "Confirmez avec l’assistance la connexion simultanée unique, le prix total et l’appareil prévu. Ces vérifications ne garantissent ni la qualité d’image ni la disponibilité régionale.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "opplex": {
+        "intro": "Opplex traite les questions de compte, commande et paiement dans le portail privé central.",
+        "questions": [
+          {
+            "id": "order-help",
+            "label": "Que souhaitez-vous vérifier ?",
+            "options": [
+              {
+                "value": "pending-payment",
+                "label": "Mon paiement est en attente",
+                "answer": "Ne lancez pas un deuxième paiement. Connectez-vous au compte central et vérifiez la commande existante ; demandez une assistance privée si l’état est incertain.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "account-access",
+                "label": "J’ai besoin d’accéder à mon compte",
+                "answer": "Utilisez la connexion centrale avec l’adresse e-mail de la commande. Ne publiez jamais votre mot de passe, lien de connexion ou code de vérification.",
+                "links": [
+                  "account"
+                ]
+              },
+              {
+                "value": "renewal",
+                "label": "Je souhaite renouveler",
+                "answer": "Vérifiez la commande et la date de fin dans votre compte privé avant de racheter. Demandez à l’assistance comment le renouvellement sera appliqué.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "geo": {
+        "intro": "Recherchez les guides Geo dans votre langue actuelle. Les mots recherchés ne sont ni envoyés ni enregistrés.",
+        "questions": []
+      },
+      "5g": {
+        "intro": "5G Live propose des vérifications manuelles, pas un test de débit ni une garantie de performance réseau.",
+        "questions": [
+          {
+            "id": "network-help",
+            "label": "Que souhaitez-vous vérifier ?",
+            "options": [
+              {
+                "value": "wifi",
+                "label": "Le problème survient en Wi-Fi",
+                "answer": "Vérifiez l’accès habituel à internet sur le même appareil. Si possible, comparez une connexion filaire ou un emplacement proche du routeur avec une source autorisée. Notez les changements et demandez de l’aide.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "mobile-data",
+                "label": "Le problème survient avec les données mobiles",
+                "answer": "Vérifiez votre forfait de données et les réglages mobiles du lecteur. Comparez avec un Wi-Fi connu lorsque cela est autorisé. Cela n’identifie pas la cause et ne contourne aucune restriction.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "other-apps",
+                "label": "D’autres applications ne se connectent pas",
+                "answer": "Vérifiez la connexion de l’appareil et les avis du routeur ou de l’opérateur. Consultez les mises à jour publiées et indiquez à l’assistance l’heure et l’erreur, jamais les mots de passe.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
   "locale": "fr",
   "labels": {
     "home": "Accueil",

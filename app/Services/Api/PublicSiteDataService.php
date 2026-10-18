@@ -524,6 +524,7 @@ class PublicSiteDataService
         $email = trim((string) FooterSetting::query()->latest()->value('email'));
         $phone = preg_replace('/\D/', '', (string) config('services.whatsapp.number'));
         $phoneDisplay = trim((string) config('services.whatsapp.display'));
+        $document = json_decode(file_get_contents(resource_path('content/landing-pages/'.$locale.'.json')), true, 64, JSON_THROW_ON_ERROR);
 
         return [
             'brand' => $brand,
@@ -533,6 +534,10 @@ class PublicSiteDataService
             'count' => count($packages),
             'packages' => $packages,
             'content' => $content?->is_published ? $content->publicContent() : null,
+            'experience' => array_merge([
+                'ui' => $document['experience']['ui'] ?? [],
+                'help' => $document['experience']['help'][$brand] ?? null,
+            ], app(\App\Services\LandingExperienceService::class)->publicData($brand, $locale)),
             'support' => [
                 'phone' => preg_match('/^[0-9]{7,15}$/D', $phone) ? $phone : null,
                 'phone_display' => $phoneDisplay !== '' ? $phoneDisplay : null,

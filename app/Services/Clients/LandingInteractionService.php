@@ -8,6 +8,7 @@ use App\Models\TrialClick;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class LandingInteractionService
 {
@@ -20,7 +21,26 @@ class LandingInteractionService
     public const CONTACT_CONSENT_VERSION = 'landing-contact-2026-10-16.1';
     public const PAYMENT_ATTRIBUTION_ENABLED = true;
 
+    private array $pageSlugs = [];
+
     public function __construct(private CustomerActivityService $activities) {}
+
+    public function validLocale(mixed $locale): bool
+    {
+        return is_string($locale) && in_array($locale, config('app.locales', ['en']), true);
+    }
+
+    public function validPage(string $brand, mixed $page): bool
+    {
+        if (!isset(self::BRANDS[$brand]) || !is_string($page)) return false;
+        if ($page === '') return true;
+        if (!isset($this->pageSlugs[$brand])) {
+            $document = json_decode(file_get_contents(resource_path('content/landing-pages/en.json')), true);
+            $this->pageSlugs[$brand] = array_column($document['brands'][$brand]['pages'] ?? [], 'slug');
+        }
+
+        return in_array($page, $this->pageSlugs[$brand], true);
+    }
 
     public function assertOrigin(string $brand, string $origin): void
     {
@@ -46,7 +66,7 @@ class LandingInteractionService
                 'brand' => $data['brand'],
                 'analytics_consent' => true,
                 'package_id' => isset($data['package_id']) ? (int) $data['package_id'] : null,
-            ],
+            ] + $this->dimensions($data),
         ];
         $this->activities->record($attributes);
     }
@@ -72,7 +92,7 @@ class LandingInteractionService
                 'consent_version' => self::CONTACT_CONSENT_VERSION,
                 'analytics_consent' => $analyticsConsent,
                 'session_id' => $analyticsConsent && !empty($data['session_id']) ? strtolower($data['session_id']) : null,
-            ],
+            ] + $this->dimensions($data),
         ];
 
         DB::transaction(function () use ($attributes, $data) {
@@ -166,7 +186,73 @@ class LandingInteractionService
             $rows[] = $row;
         }
 
-        return ['from' => $from, 'to' => $to, 'brands' => $rows, 'totals' => $totals, 'payment_attribution' => self::PAYMENT_ATTRIBUTION_ENABLED];
+        return ['from' => $from, 'to' => $to, 'brands' => $rows, 'totals' => $totals, 'payment_attribution' => self::PAYMENT_ATTRIBUTION_ENABLED]
+            + $this->reportDetails($range);
+    }
+
+    private function dimensions(array $data): array
+    {
+        return !empty($data['analytics_consent']) && !empty($data['session_id']) && Str::isUuid($data['session_id'])
+            && $this->validLocale($data['locale'] ?? null) && $this->validPage($data['brand'], $data['page'] ?? null)
+            ? ['locale' => $data['locale'], 'page' => $data['page']] : [];
+    }
+
+    private function reportDetails(Builder $range): array
+    {
+        $sets = ['locale' => [], 'page' => [], 'daily' => []];
+        $revenue = [];
+        $missingAmount = [];
+        $metrics = ['landing.visit' => 'visits', 'landing.contact_requested' => 'contacts', 'landing.checkout_clicked' => 'checkout_clicks', 'landing.payment_paid' => 'paid_orders'];
+        $paidIds = (clone $range)->where('event_type', 'landing.payment_paid')->where('entity_type', 'order')
+            ->whereNotNull('order_id')->distinct()->select('order_id');
+        $paid = Order::query()->whereIn('id', $paidIds)->where('payment_provider', 'safepay')
+            ->where('payment_status', 'paid')->whereNotNull('paid_at')->get(['id', 'paid_amount', 'paid_currency'])->keyBy('id');
+        foreach ((clone $range)->whereIn('event_type', array_keys($metrics))
+            ->select(['source', 'event_type', 'event_id', 'entity_id', 'entity_type', 'order_id', 'details', 'occurred_at'])->cursor() as $activity) {
+            $brand = substr($activity->source, strlen('landing_'));
+            $metric = $metrics[$activity->event_type];
+            if ($metric === 'paid_orders' && ($activity->entity_type !== 'order' || !isset($paid[$activity->order_id]))) continue;
+            $identity = $metric === 'contacts' ? $activity->event_id : ($metric === 'paid_orders' ? (string) $activity->order_id : $activity->entity_id);
+            if ($identity === null || $identity === '') continue;
+            $details = $activity->details ?? [];
+            $session = $activity->entity_type === 'landing_session' ? $activity->entity_id : ($details['session_id'] ?? null);
+            $known = is_string($session) && Str::isUuid($session)
+                && (!empty($details['analytics_consent']) || $metric === 'paid_orders');
+            $locale = $known && $this->validLocale($details['locale'] ?? null) ? $details['locale'] : 'unknown';
+            $page = $known && $this->validPage($brand, $details['page'] ?? null) ? $details['page'] : 'unknown';
+            foreach (['locale' => $locale, 'page' => $page, 'daily' => $activity->occurred_at->toDateString()] as $dimension => $value) {
+                $key = $brand.'|'.$value;
+                $sets[$dimension][$key] ??= ['brand' => $brand, 'value' => $value, 'visits' => [], 'contacts' => [], 'checkout_clicks' => [], 'paid_orders' => []];
+                $sets[$dimension][$key][$metric][$identity] = true;
+            }
+            if ($metric === 'paid_orders') {
+                $order = $paid[$activity->order_id];
+                $currency = (string) $order->paid_currency;
+                if ($order->paid_amount === null || !preg_match('/^[A-Z]{3}$/D', $currency) || (float) $order->paid_amount < 0) {
+                    $missingAmount[$brand.'|'.$order->id] = true;
+                    continue;
+                }
+                $key = $brand.'|'.$currency;
+                $revenue[$key] ??= ['brand' => $brand, 'currency' => $currency, 'orders' => []];
+                $revenue[$key]['orders'][$order->id] = (int) round((float) $order->paid_amount * 100);
+            }
+        }
+        foreach ($sets as &$dimension) {
+            ksort($dimension);
+            $dimension = array_values(array_map(function ($row) {
+                foreach (['visits', 'contacts', 'checkout_clicks', 'paid_orders'] as $metric) $row[$metric] = count($row[$metric]);
+                return $row;
+            }, $dimension));
+        }
+        unset($dimension);
+        ksort($revenue);
+        $revenue = array_values(array_map(fn ($row) => [
+            'brand' => $row['brand'], 'currency' => $row['currency'], 'paid_orders' => count($row['orders']),
+            'amount' => number_format(array_sum($row['orders']) / 100, 2, '.', ''),
+        ], $revenue));
+
+        return ['breakdown' => ['locale' => $sets['locale'], 'page' => $sets['page']], 'daily' => $sets['daily'],
+            'revenue_by_currency' => $revenue, 'revenue_missing_amount_orders' => count($missingAmount)];
     }
 
     private function whatsappDestination(): ?string

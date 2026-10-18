@@ -158,6 +158,7 @@ Route::prefix('api/v1/site')->name('api.site.')->middleware([ApiJsonResponse::cl
 });
 
 Route::prefix('api/v1/landing')->name('api.landing.')->middleware([ApiJsonResponse::class, 'api'])->group(function () {
+    Route::post('resume-links', [\App\Http\Controllers\Api\LandingCheckoutResumeController::class, 'store'])->middleware('throttle:5,1,landing-resume-links')->name('resume-links');
     Route::post('events', [\App\Http\Controllers\Api\LandingInteractionController::class, 'event'])->middleware('throttle:30,1,landing-events')->name('events');
     Route::post('leads', [\App\Http\Controllers\Api\LandingInteractionController::class, 'lead'])->middleware('throttle:5,1,landing-leads')->name('leads');
 });
@@ -168,6 +169,7 @@ Route::prefix('api/browser')->name('api.browser.')->middleware([ApiJsonResponse:
     Route::post('contact', [HomeController::class, 'send'])->middleware('throttle:5,10,contact')->name('contact.send');
     Route::post('subscribe', [HomeController::class, 'subscribe'])->middleware('throttle:5,10,subscribe')->name('subscribe');
     Route::get('checkout', [HomeController::class, 'checkoutStep1'])->name('checkout');
+    Route::post('checkout/resume/{token}', [\App\Http\Controllers\Api\LandingCheckoutResumeController::class, 'confirm'])->middleware('throttle:20,1')->name('landing.resume.confirm');
     Route::post('checkout/payment', [HomeController::class, 'checkoutStep2'])->middleware('throttle:10,1,checkout-payment')->name('checkout.payment');
 
     Route::prefix('account')->name('customer.')->middleware(\App\Http\Middleware\EnsureCustomerAccount::class.':public')->group(function () {
@@ -179,6 +181,9 @@ Route::prefix('api/browser')->name('api.browser.')->middleware([ApiJsonResponse:
             Route::get('overview', [\App\Http\Controllers\CustomerAccountController::class, 'overview'])->name('overview');
             Route::get('orders', [\App\Http\Controllers\CustomerAccountController::class, 'orders'])->name('orders.index');
             Route::get('orders/{order}', [\App\Http\Controllers\CustomerAccountController::class, 'order'])->whereNumber('order')->name('orders.show');
+            Route::get('orders/{order}/review', [\App\Http\Controllers\CustomerReviewController::class, 'show'])->whereNumber('order')->name('orders.review.show');
+            Route::post('orders/{order}/review', [\App\Http\Controllers\CustomerReviewController::class, 'store'])->whereNumber('order')->middleware('throttle:5,1')->name('orders.review.store');
+            Route::delete('orders/{order}/review', [\App\Http\Controllers\CustomerReviewController::class, 'destroy'])->whereNumber('order')->middleware('throttle:10,1')->name('orders.review.destroy');
             Route::post('orders/{order}/renew', [\App\Http\Controllers\CustomerAccountController::class, 'renew'])->whereNumber('order')->middleware('throttle:10,1')->name('orders.renew');
             Route::post('logout', [\App\Http\Controllers\CustomerAccountController::class, 'logout'])->name('logout');
             Route::patch('preferences', [\App\Http\Controllers\CustomerAccountController::class, 'preferences'])->middleware('throttle:10,1')->name('preferences');
@@ -244,6 +249,12 @@ $adminGuardSets = [
     ['web', 'auth:admin', \App\Http\Middleware\EnsureAdminSessionIsCurrent::class, \App\Http\Middleware\AuditAdminAction::class, \App\Http\Middleware\EnsureAdminPasswordChanged::class, \App\Http\Middleware\EnsureAdminTwoFactorAuthenticated::class, 'admin.access', 'throttle:3,1'],
 ];
 $adminEndpoints = [
+    [['GET'], 'landing-experience', \App\Http\Controllers\Admin\LandingExperienceController::class, 'index', 'landing-experience.index', 0, []],
+    [['POST'], 'landing-experience/incidents', \App\Http\Controllers\Admin\LandingExperienceController::class, 'storeIncident', 'landing-experience.incidents.store', 9, []],
+    [['PUT'], 'landing-experience/incidents/{incident}', \App\Http\Controllers\Admin\LandingExperienceController::class, 'updateIncident', 'landing-experience.incidents.update', 9, ['incident' => '[0-9]+']],
+    [['POST'], 'landing-experience/media', \App\Http\Controllers\Admin\LandingExperienceController::class, 'storeMedia', 'landing-experience.media.store', 9, []],
+    [['PUT'], 'landing-experience/media/{media}', \App\Http\Controllers\Admin\LandingExperienceController::class, 'updateMedia', 'landing-experience.media.update', 9, ['media' => '[0-9]+']],
+    [['PATCH'], 'landing-experience/reviews/{review}', \App\Http\Controllers\Admin\LandingExperienceController::class, 'moderateReview', 'landing-experience.reviews.moderate', 9, ['review' => '[0-9]+']],
     [['GET'], 'landing-pages/{brand}/edit', \App\Http\Controllers\Admin\LandingPageContentController::class, 'edit', 'landing-pages.edit', 0, ['brand' => 'trex|opplex|geo|5g']],
     [['PUT'], 'landing-pages/{brand}', \App\Http\Controllers\Admin\LandingPageContentController::class, 'update', 'landing-pages.update', 0, ['brand' => 'trex|opplex|geo|5g']],
     [['GET'], 'notifications', \App\Http\Controllers\AdminNotificationController::class, 'index', 'notifications.index', 0, []],

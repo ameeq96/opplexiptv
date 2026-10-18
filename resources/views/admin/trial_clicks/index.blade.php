@@ -106,6 +106,44 @@
             @else
                 <p class="small text-muted mb-0">Payment attribution is not connected yet. The authenticated payment connection must be verified before paid-order reporting is enabled.</p>
             @endif
+            <details class="mt-4">
+                <summary class="fw-semibold">Language and page breakdown</summary>
+                <p class="small text-muted mt-2">These dimensions start with the new consented measurement. Unknown includes historical records and requests without analytics permission; it is not a guessed language or location. Sessions can visit several pages/languages, so rows are not additive and do not form conversion rates.</p>
+                @foreach (['locale' => 'Language', 'page' => 'Page slug'] as $dimension => $label)
+                    <h3 class="h6 mt-3">{{ $label }}</h3>
+                    <div class="table-responsive"><table class="table table-sm align-middle">
+                        <thead><tr><th scope="col">Brand</th><th scope="col">{{ $label }}</th><th scope="col">Consented visits</th><th scope="col">Contact submissions</th><th scope="col">Checkout clicks</th><th scope="col">Verified paid orders</th></tr></thead>
+                        <tbody>@forelse ($landingFunnel['breakdown'][$dimension] as $row)
+                            <tr><th scope="row">{{ $landingBrands[$row['brand']] }}</th><td>{{ $row['value'] === '' ? 'Homepage' : ($row['value'] === 'unknown' ? 'Unknown / not measured' : $row['value']) }}</td>
+                                @foreach (['visits', 'contacts', 'checkout_clicks', 'paid_orders'] as $metric)<td data-admin-api-field="landingFunnel.breakdown.{{ $dimension }}.{{ $loop->parent->index }}.{{ $metric }}">{{ $row[$metric] }}</td>@endforeach
+                            </tr>
+                        @empty<tr><td colspan="6">No recorded activity in this range.</td></tr>@endforelse</tbody>
+                    </table></div>
+                @endforeach
+            </details>
+            <details class="mt-3">
+                <summary class="fw-semibold">Daily recorded activity</summary>
+                <p class="small text-muted mt-2">Dates use {{ config('app.timezone') }}. A session appearing on several days counts once on each day; summing daily sessions does not equal the whole-period unique session count.</p>
+                <div class="table-responsive"><table class="table table-sm align-middle">
+                    <thead><tr><th scope="col">Date</th><th scope="col">Brand</th><th scope="col">Consented visits</th><th scope="col">Contact submissions</th><th scope="col">Checkout clicks</th><th scope="col">Verified paid orders</th></tr></thead>
+                    <tbody>@forelse ($landingFunnel['daily'] as $row)
+                        <tr><th scope="row">{{ $row['value'] }}</th><td>{{ $landingBrands[$row['brand']] }}</td>
+                            @foreach (['visits', 'contacts', 'checkout_clicks', 'paid_orders'] as $metric)<td data-admin-api-field="landingFunnel.daily.{{ $loop->parent->index }}.{{ $metric }}">{{ $row[$metric] }}</td>@endforeach
+                        </tr>
+                    @empty<tr><td colspan="6">No recorded activity in this range.</td></tr>@endforelse</tbody>
+                </table></div>
+            </details>
+            <details class="mt-3">
+                <summary class="fw-semibold">Confirmed paid amounts by currency</summary>
+                <p class="small text-muted mt-2">Recorded gross paid amounts for distinct production SafePay orders, not profit or net revenue. Different currencies are never added together; missing amounts/currencies are not inferred from package prices. Historical orders without brand attribution remain excluded.</p>
+                <div class="table-responsive"><table class="table table-sm align-middle">
+                    <thead><tr><th scope="col">Brand</th><th scope="col">Currency</th><th scope="col">Orders with recorded amount</th><th scope="col">Recorded paid amount</th></tr></thead>
+                    <tbody>@forelse ($landingFunnel['revenue_by_currency'] as $row)
+                        <tr><th scope="row">{{ $landingBrands[$row['brand']] }}</th><td>{{ $row['currency'] }}</td><td data-admin-api-field="landingFunnel.revenue_by_currency.{{ $loop->index }}.paid_orders">{{ $row['paid_orders'] }}</td><td data-admin-api-field="landingFunnel.revenue_by_currency.{{ $loop->index }}.amount">{{ $row['amount'] }}</td></tr>
+                    @empty<tr><td colspan="4">No confirmed paid amounts recorded in this range.</td></tr>@endforelse</tbody>
+                </table></div>
+                <p class="small text-muted">Confirmed paid orders missing a usable amount/currency: <span data-admin-api-field="landingFunnel.revenue_missing_amount_orders">{{ $landingFunnel['revenue_missing_amount_orders'] }}</span>.</p>
+            </details>
         </div>
     </section>
 

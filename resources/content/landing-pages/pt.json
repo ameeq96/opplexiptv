@@ -1,4 +1,188 @@
 {
+  "experience": {
+    "ui": {
+      "toolsHeading": "Ferramentas úteis para clientes",
+      "toolsIntro": "Escolha o próximo passo antes ou depois da compra.",
+      "openHelp": "Abrir o assistente",
+      "helpHeading": "Encontre o próximo passo",
+      "helpQuestion": "O que pretende verificar?",
+      "helpChoose": "Escolha uma opção",
+      "helpReset": "Recomeçar",
+      "helpNoDiagnosis": "Estas orientações não confirmam compatibilidade nem constituem um diagnóstico de rede. Nunca partilhe palavras-passe ou códigos de pagamento.",
+      "helpSearch": "Pesquisar guias neste idioma",
+      "helpSearchHint": "Introduza pelo menos dois caracteres. A pesquisa fica nesta página e não é enviada ao servidor.",
+      "helpResults": "Guias encontrados",
+      "helpNoResults": "Não foram encontrados guias. Experimente outra palavra ou contacte o apoio.",
+      "helpAccount": "Abrir a minha conta",
+      "helpSupport": "Apoio privado à encomenda",
+      "helpContact": "Contactar o apoio",
+      "resumeHeading": "Guardar a seleção de um plano",
+      "resumeIntro": "Crie uma ligação privada válida por 24 horas. O preço e a disponibilidade serão verificados quando a reabrir.",
+      "resumeSave": "Guardar este plano",
+      "resumeEmail": "Endereço de e-mail (opcional)",
+      "resumeEmailConsent": "Enviar esta ligação uma única vez para o e-mail indicado. Aceito esta mensagem única.",
+      "resumePrivacy": "Sem lembretes automáticos. O e-mail opcional é usado apenas para esta ligação solicitada. Mantenha a ligação privada.",
+      "resumeSaving": "A criar a ligação…",
+      "resumeReady": "A ligação está pronta. Pode abri-la ou copiá-la abaixo.",
+      "resumeOpen": "Reabrir a seleção guardada",
+      "resumeCopy": "Copiar ligação privada",
+      "resumeCopied": "Ligação copiada.",
+      "resumeCopyFailed": "Não foi possível copiar. Use o botão para abrir a ligação.",
+      "resumeUnavailable": "Este plano não está disponível. Consulte os planos atuais antes de continuar.",
+      "resumeInvalid": "Verifique o e-mail e a autorização e tente novamente.",
+      "resumeFailed": "Não foi possível criar a ligação. Tente novamente.",
+      "resumeTooMany": "Demasiados pedidos. Aguarde antes de tentar novamente.",
+      "resumeExpires": "A ligação expira: {date}",
+      "statusHeading": "Atualizações publicadas do serviço",
+      "statusNone": "Sem atualizações publicadas. Isto não confirma que todos os serviços funcionam.",
+      "statusUpdated": "Última atualização",
+      "statusInvestigating": "Em investigação",
+      "statusIdentified": "Problema identificado",
+      "statusMonitoring": "Em acompanhamento",
+      "statusResolved": "Resolvido",
+      "reviewsHeading": "Opiniões dos clientes",
+      "reviewsNone": "Sem opiniões publicadas.",
+      "verifiedPurchase": "Compra verificada",
+      "reviewRating": "Classificação: {rating} em 5",
+      "mediaHeading": "Material de configuração testado",
+      "mediaTested": "Testado em: {date}",
+      "mediaDevice": "Modelo do dispositivo",
+      "mediaPlayer": "Leitor e versão",
+      "mediaUnsupported": "Abrir o ficheiro de vídeo",
+      "loadingExperience": "A carregar informações publicadas…",
+      "statusUnavailable": "Não foi possível carregar as atualizações. Tente novamente ou contacte o apoio.",
+      "measurementDetail": "Com a sua autorização, a medição inclui também a página e o idioma. Pesquisas e escolhas do assistente não são registadas.",
+      "resumePlanOnly": "Isto guarda o plano selecionado, não um pagamento existente.",
+      "resumePaymentWarning": "Se já iniciou um pagamento, verifique o estado antes de iniciar outro.",
+      "resumeCurrentPrice": "Preço atual do plano",
+      "resumePriceChanged": "O preço mudou desde que guardou a ligação. Reveja o preço atual antes de continuar.",
+      "resumeContinue": "Confirmar a seleção e continuar para o pagamento",
+      "resumeInvalidLink": "Esta ligação do plano é inválida ou expirou.",
+      "resumeReturn": "Voltar ao site da marca",
+      "resumeEmailSubject": "A sua seleção de plano guardada",
+      "resumeEmailBody": "Solicitou esta ligação de envio único para reabrir o plano escolhido. Expira após 24 horas.",
+      "resumeFinalFees": "Os eventuais custos e o total final são apresentados na Opplexify antes do pagamento."
+    },
+    "help": {
+      "trex": {
+        "intro": "A Trex ajuda a preparar o ecrã e o leitor antes de escolher um plano de longa duração.",
+        "questions": [
+          {
+            "id": "readiness",
+            "label": "O que pretende verificar?",
+            "options": [
+              {
+                "value": "device",
+                "label": "Não sei o modelo do dispositivo",
+                "answer": "Abra as definições e anote o modelo exato e a versão do sistema. Peça ao apoio para verificar os requisitos oficiais do leitor antes de comprar.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "player",
+                "label": "Preciso de verificar uma aplicação",
+                "answer": "Consulte a informação oficial do programador sobre dispositivos, versão e eventual licença separada. Um nome numa lista não confirma compatibilidade.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "ready",
+                "label": "Conheço o dispositivo e o leitor",
+                "answer": "Confirme com o apoio a única ligação simultânea, o preço total e o dispositivo previsto. Estas verificações não garantem qualidade de imagem ou disponibilidade regional.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "opplex": {
+        "intro": "A Opplex trata questões de conta, encomenda e pagamento no portal privado central.",
+        "questions": [
+          {
+            "id": "order-help",
+            "label": "O que pretende verificar?",
+            "options": [
+              {
+                "value": "pending-payment",
+                "label": "O meu pagamento está pendente",
+                "answer": "Não inicie um segundo pagamento. Entre na conta central e verifique a encomenda existente; peça apoio privado se o estado não for claro.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "account-access",
+                "label": "Preciso de aceder à conta",
+                "answer": "Use o acesso central com o e-mail da encomenda. Nunca publique palavras-passe, ligações de acesso ou códigos de verificação.",
+                "links": [
+                  "account"
+                ]
+              },
+              {
+                "value": "renewal",
+                "label": "Quero renovar",
+                "answer": "Verifique a encomenda e a data de fim na conta privada antes de voltar a comprar. Peça ao apoio que confirme como se aplica a renovação.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "geo": {
+        "intro": "Pesquise os guias Geo no idioma atual. As palavras pesquisadas não são enviadas nem guardadas.",
+        "questions": []
+      },
+      "5g": {
+        "intro": "A 5G Live propõe verificações manuais, não um teste de velocidade ou garantia de desempenho.",
+        "questions": [
+          {
+            "id": "network-help",
+            "label": "O que pretende verificar?",
+            "options": [
+              {
+                "value": "wifi",
+                "label": "O problema ocorre no Wi-Fi",
+                "answer": "Verifique o acesso normal à internet no mesmo dispositivo. Se possível, compare uma ligação por cabo ou mais próxima do router com uma fonte autorizada. Anote as diferenças e peça ajuda se necessário.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "mobile-data",
+                "label": "O problema ocorre com dados móveis",
+                "answer": "Verifique o saldo de dados e as definições móveis do leitor. Compare com uma rede Wi-Fi conhecida quando permitido. Isto não identifica a causa nem contorna restrições.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "other-apps",
+                "label": "Outras aplicações também não ligam",
+                "answer": "Verifique a ligação do dispositivo e os avisos do router ou operador. Consulte as atualizações publicadas e indique ao apoio a hora e o erro, nunca palavras-passe.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
   "locale": "pt",
   "labels": {
     "home": "Início",

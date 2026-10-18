@@ -129,6 +129,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('landing-pages/{brand}/edit', [\App\Http\Controllers\Admin\LandingPageContentController::class, 'edit'])
             ->where('brand', 'trex|opplex|geo|5g')->name('landing-pages.edit');
         Route::get('footer-settings', [AdminFooterSettingController::class, 'edit'])->name('footer-settings.edit');
+        Route::get('landing-experience', [\App\Http\Controllers\Admin\LandingExperienceController::class, 'index'])->name('landing-experience.index');
         Route::resource('footer-links', AdminFooterLinkController::class)->only(['index', 'create', 'show', 'edit']);
         Route::resource('social-links', AdminSocialLinkController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('security/confirm', [TwoFactorController::class, 'showSensitiveConfirmation'])
@@ -160,6 +161,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         });
     });
 });
+
+Route::get('checkout/resume/{token}', [\App\Http\Controllers\Api\LandingCheckoutResumeController::class, 'show'])
+    ->middleware('throttle:30,1')->name('landing.resume.show');
 
 Route::prefix('account')->name('customer.')->middleware(\App\Http\Middleware\EnsureCustomerAccount::class.':public')->group(function () {
     Route::get('login', [\App\Http\Controllers\CustomerAccountController::class, 'login'])->name('login');

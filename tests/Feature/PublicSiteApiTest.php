@@ -218,6 +218,22 @@ class PublicSiteApiTest extends TestCase
         $this->assertSame(0, (int) $blog->fresh()->views);
     }
 
+    public function test_landing_experience_is_localized_empty_and_has_no_fabricated_publication(): void
+    {
+        foreach (['trex', 'opplex', 'geo', '5g'] as $brand) {
+            foreach (['en', 'ur', 'ar'] as $locale) {
+                $result = $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale='.$locale)->assertOk()
+                    ->assertJsonCount(0, 'data.experience.reviews')->assertJsonCount(0, 'data.experience.incidents')->assertJsonCount(0, 'data.experience.media');
+                $document = json_decode(file_get_contents(resource_path('content/landing-pages/'.$locale.'.json')), true);
+                $this->assertSame($document['experience']['ui'], $result->json('data.experience.ui'));
+                $this->assertSame($document['experience']['help'][$brand], $result->json('data.experience.help'));
+                $result->assertJsonMissingPath('data.experience.healthy')->assertJsonMissingPath('data.experience.uptime');
+            }
+        }
+        foreach (['customer_reviews', 'service_incidents', 'setup_media'] as $table) $this->assertDatabaseCount($table, 0);
+        Mail::assertNothingSent(); Http::assertNothingSent();
+    }
+
     public function test_brand_landing_plans_use_their_own_stored_prices_and_durations(): void
     {
         Package::query()->update(['active' => false]);

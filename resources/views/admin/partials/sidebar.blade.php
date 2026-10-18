@@ -51,6 +51,9 @@
         <a href="{{ route('admin.landing-pages.edit', ['brand' => 'trex']) }}" class="{{ request()->routeIs('admin.landing-pages.*') ? 'active' : '' }}">
             <i class="bi bi-window-stack"></i> <span>Landing Pages</span>
         </a>
+        <a href="{{ route('admin.landing-experience.index') }}" class="{{ request()->routeIs('admin.landing-experience.*') ? 'active' : '' }}">
+            <i class="bi bi-person-check"></i> <span>Landing Experience</span>
+        </a>
         <a href="{{ route('admin.blogs.index') }}" class="{{ request()->routeIs('admin.blogs.*') ? 'active' : '' }}">
             <i class="bi bi-journal-text"></i> <span>Blogs</span>
         </a>

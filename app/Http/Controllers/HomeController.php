@@ -161,6 +161,14 @@ class HomeController extends Controller
             if (request()->query('landing_consent') === '1' && is_string($session)
                 && preg_match('/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i', $session)) {
                 $payload['attribution']['session_id'] = strtolower($session);
+                $locale = request()->query('landing_locale');
+                $page = request()->query('landing_page') ?? '';
+                if (request()->query->has('landing_locale') && request()->query->has('landing_page')
+                    && app(\App\Services\Clients\LandingInteractionService::class)->validLocale($locale)
+                    && app(\App\Services\Clients\LandingInteractionService::class)->validPage($brand, $page)) {
+                    $payload['attribution']['locale'] = $locale;
+                    $payload['attribution']['page'] = $page;
+                }
             }
         }
         $selection = rtrim(strtr(base64_encode(json_encode($payload, JSON_THROW_ON_ERROR)), '+/', '-_'), '=');

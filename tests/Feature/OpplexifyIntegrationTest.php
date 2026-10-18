@@ -281,6 +281,45 @@ class OpplexifyIntegrationTest extends TestCase
         $this->assertSame(0, \App\Models\CustomerActivity::where('event_type', 'landing.payment_paid')->count());
     }
 
+    public function test_consented_page_language_are_signed_and_immutable_through_paid_attribution(): void
+    {
+        $package = $this->package(['title' => 'Opplex iptv']);
+        $session = (string) \Illuminate\Support\Str::uuid();
+        foreach (['setup', ''] as $page) {
+            foreach ([false, true] as $consented) {
+                $response = $this->getJson('/api/browser/checkout?'.http_build_query([
+                    'package_id' => $package->id, 'utm_source' => 'opplexiptv-store', 'utm_medium' => 'landing',
+                    'landing_session' => $session, 'landing_consent' => $consented ? '1' : '0', 'landing_locale' => 'ur', 'landing_page' => $page,
+                ]))->assertOk();
+                parse_str(parse_url($response->json('redirect_url'), PHP_URL_QUERY), $query);
+                $selection = json_decode(base64_decode(strtr($query['selection'], '-_', '+/')), true);
+                $expected = $consented ? ['brand' => 'opplex', 'session_id' => $session, 'locale' => 'ur', 'page' => $page] : ['brand' => 'opplex'];
+                $this->assertSame($expected, $selection['attribution']);
+                $this->assertSame(hash_hmac('sha256', $query['selection'], self::SECRET), $query['signature']);
+            }
+            $payload = $this->bridgePayload($package);
+            $payload['attribution'] = ['brand' => 'opplex', 'session_id' => $session, 'locale' => 'ur', 'page' => $page];
+            $this->bridge('prepare', $payload)->assertOk();
+            $this->bridge('prepare', $payload)->assertOk();
+            $changed = $payload; $changed['attribution']['locale'] = 'fr';
+            $this->bridge('prepare', $changed)->assertConflict();
+            $this->bridge('complete', $this->completedPayload($payload))->assertOk();
+            $activity = \App\Models\CustomerActivity::where('event_type', 'landing.payment_paid')->latest('id')->firstOrFail();
+            $this->assertSame('ur', $activity->details['locale']);
+            $this->assertSame($page, $activity->details['page']);
+        }
+    }
+
+    public function test_page_language_require_a_consented_session_and_exact_matching_page_pair(): void
+    {
+        $data = $this->bridgePayload($this->package(['title' => 'Opplex iptv']));
+        $base = ['brand' => 'opplex', 'session_id' => (string) \Illuminate\Support\Str::uuid(), 'locale' => 'en', 'page' => 'setup'];
+        $invalid = [array_diff_key($base, ['session_id' => true]), array_diff_key($base, ['page' => true]), array_diff_key($base, ['locale' => true]),
+            array_merge($base, ['locale' => 'xx']), array_merge($base, ['page' => 'setup?email=private']), array_merge($base, ['page' => 'https://foreign.example/'])];
+        foreach ($invalid as $attribution) $this->bridge('prepare', array_merge($data, ['attribution' => $attribution]))->assertUnprocessable();
+        $this->assertDatabaseCount('checkout_drafts', 0);
+    }
+
     private function bridgePayload(Package $package, string $environment = 'production'): array
     {
         $base = (int) round((float) $package->price_amount * 100);

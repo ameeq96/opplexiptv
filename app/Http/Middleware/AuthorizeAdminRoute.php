@@ -78,6 +78,7 @@ class AuthorizeAdminRoute
 
     private const CONTENT_ROUTES = [
         'admin.landing-pages.*',
+        'admin.landing-experience.*',
         'admin.blogs.*',
         'admin.products.*',
         'admin.shop-products.*',

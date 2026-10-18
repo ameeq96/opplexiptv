@@ -62,6 +62,7 @@ class AdminApiResponse
         'packages.edit' => ['package', 'locales'],
         'pricing-section.edit' => ['section', 'locales'],
         'landing-pages.edit' => ['section', 'brand', 'brands', 'locale'],
+        'landing-experience.index' => ['incidents', 'media', 'reviews', 'brands', 'locales', 'brand'],
         'footer-settings.edit' => ['setting', 'locales'],
         'footer-links.index' => ['links'],
         'footer-links.create' => ['link', 'locales'],
@@ -78,6 +79,9 @@ class AdminApiResponse
     ];
 
     private const FIELDS = [
+        'CustomerReview' => ['id', 'order_id', 'user_id', 'brand', 'locale', 'display_name', 'rating', 'body', 'status', 'publication_consented_at', 'withdrawn_at', 'moderated_by_admin_id', 'moderated_at', 'moderation_note', 'published_at', 'created_at', 'updated_at'],
+        'ServiceIncident' => ['id', 'brand', 'locale', 'title', 'body', 'state', 'started_at', 'resolved_at', 'is_published', 'published_at', 'updated_by_admin_id', 'created_at', 'updated_at'],
+        'SetupMedia' => ['id', 'brand', 'locale', 'guide_slug', 'title', 'description', 'kind', 'media_url', 'alt_text', 'device_model', 'player_name', 'player_version', 'tested_at', 'evidence_reference', 'publication_permission_at', 'is_published', 'published_at', 'updated_by_admin_id', 'created_at', 'updated_at'],
         'Admin' => ['id', 'name', 'email', 'role', 'must_change_password', 'password_changed_at', 'two_factor_confirmed_at', 'created_at', 'updated_at'],
         'User' => ['id', 'name', 'email', 'phone', 'phone_normalized', 'country', 'notes', 'marketing_email_consented_at', 'marketing_email_opted_out_at', 'marketing_whatsapp_consented_at', 'marketing_whatsapp_opted_out_at', 'marketing_ads_consented_at', 'marketing_ads_opted_out_at', 'assigned_admin_id', 'email_verified_at', 'renewal_email_enabled', 'renewal_email_updated_at', 'orders_count', 'trial_clicks_count', 'checkout_drafts_count', 'digital_orders_count', 'pending_follow_ups_count', 'created_at', 'updated_at'],
         'Order' => ['id', 'user_id', 'package_id', 'type', 'package', 'custom_package', 'duration', 'device_id', 'price', 'currency', 'cost_price', 'sell_price', 'profit', 'credits', 'buying_date', 'expiry_date', 'status', 'payment_status', 'payment_provider', 'payment_method', 'custom_payment_method', 'paid_amount', 'paid_currency', 'paid_at', 'messaged_at', 'messaged_by', 'note', 'total_currency', 'paid_total', 'ga_purchase_sent_at', 'created_at', 'updated_at'],

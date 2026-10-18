@@ -1,4 +1,188 @@
 {
+  "experience": {
+    "ui": {
+      "toolsHeading": "Herramientas útiles para clientes",
+      "toolsIntro": "Elige el siguiente paso antes o después de comprar.",
+      "openHelp": "Abrir el asistente",
+      "helpHeading": "Encuentra el siguiente paso",
+      "helpQuestion": "¿Qué quieres comprobar?",
+      "helpChoose": "Elige una opción",
+      "helpReset": "Empezar de nuevo",
+      "helpNoDiagnosis": "Solo orientación, no una compatibilidad verificada ni un diagnóstico de red. Nunca compartas contraseñas ni códigos de pago.",
+      "helpSearch": "Buscar guías en este idioma",
+      "helpSearchHint": "Escribe al menos dos caracteres. La búsqueda permanece en esta página y no se envía al servidor.",
+      "helpResults": "Guías encontradas",
+      "helpNoResults": "No hay guías coincidentes. Prueba otra palabra o consulta con soporte.",
+      "helpAccount": "Abrir mi cuenta",
+      "helpSupport": "Ayuda privada con el pedido",
+      "helpContact": "Consultar con soporte",
+      "resumeHeading": "Guardar un plan",
+      "resumeIntro": "Crea un enlace privado válido durante 24 horas. Al abrirlo se comprobarán el precio y la disponibilidad actuales.",
+      "resumeSave": "Guardar este plan",
+      "resumeEmail": "Correo electrónico (opcional)",
+      "resumeEmailConsent": "Enviad este enlace una sola vez al correo indicado. Acepto este único mensaje.",
+      "resumePrivacy": "Sin recordatorios automáticos. El correo opcional se usa solo para este enlace solicitado. Mantén el enlace privado.",
+      "resumeSaving": "Creando el enlace…",
+      "resumeReady": "Tu enlace está listo. Puedes abrirlo o copiarlo abajo.",
+      "resumeOpen": "Abrir la selección guardada",
+      "resumeCopy": "Copiar enlace privado",
+      "resumeCopied": "Enlace copiado.",
+      "resumeCopyFailed": "No se pudo copiar. Usa el botón para abrir el enlace.",
+      "resumeUnavailable": "Este plan no está disponible. Revisa los planes actuales antes de continuar.",
+      "resumeInvalid": "Comprueba el correo y el permiso e inténtalo de nuevo.",
+      "resumeFailed": "No se pudo crear el enlace. Inténtalo de nuevo.",
+      "resumeTooMany": "Demasiadas solicitudes. Espera antes de intentarlo de nuevo.",
+      "resumeExpires": "El enlace caduca: {date}",
+      "statusHeading": "Actualizaciones del servicio",
+      "statusNone": "No hay actualizaciones publicadas. Esto no confirma que todos los servicios funcionen.",
+      "statusUpdated": "Última actualización",
+      "statusInvestigating": "En investigación",
+      "statusIdentified": "Problema identificado",
+      "statusMonitoring": "En observación",
+      "statusResolved": "Resuelto",
+      "reviewsHeading": "Opiniones de clientes",
+      "reviewsNone": "No hay opiniones publicadas.",
+      "verifiedPurchase": "Compra verificada",
+      "reviewRating": "Valoración: {rating} de 5",
+      "mediaHeading": "Material de configuración probado",
+      "mediaTested": "Probado el: {date}",
+      "mediaDevice": "Modelo del dispositivo",
+      "mediaPlayer": "Reproductor y versión",
+      "mediaUnsupported": "Abrir el archivo de vídeo",
+      "loadingExperience": "Cargando información publicada…",
+      "statusUnavailable": "No se pudieron cargar las actualizaciones. Inténtalo de nuevo o contacta con soporte.",
+      "measurementDetail": "Con tu permiso, la medición incluye también la página y el idioma. No se registran búsquedas ni selecciones del asistente.",
+      "resumePlanOnly": "Esto guarda el plan seleccionado, no un pago existente.",
+      "resumePaymentWarning": "Si ya has iniciado un pago, comprueba su estado antes de empezar otro.",
+      "resumeCurrentPrice": "Precio actual del plan",
+      "resumePriceChanged": "El precio ha cambiado desde que guardaste el enlace. Revísalo antes de continuar.",
+      "resumeContinue": "Confirmar la selección y continuar al pago",
+      "resumeInvalidLink": "Este enlace del plan no es válido o ha caducado.",
+      "resumeReturn": "Volver a la web de la marca",
+      "resumeEmailSubject": "Tu selección de plan guardada",
+      "resumeEmailBody": "Has solicitado este enlace de un solo envío para abrir el plan seleccionado. Caduca en 24 horas.",
+      "resumeFinalFees": "Los posibles cargos y el total final se muestran en Opplexify antes de pagar."
+    },
+    "help": {
+      "trex": {
+        "intro": "Trex te ayuda a preparar la pantalla y el reproductor antes de elegir un plan de mayor duración.",
+        "questions": [
+          {
+            "id": "readiness",
+            "label": "¿Qué quieres comprobar?",
+            "options": [
+              {
+                "value": "device",
+                "label": "No sé el modelo de mi dispositivo",
+                "answer": "Abre los ajustes y anota el modelo exacto y la versión del sistema. Pide a soporte que compruebe los requisitos oficiales del reproductor antes de comprar.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "player",
+                "label": "Necesito comprobar una aplicación",
+                "answer": "Consulta la información oficial del desarrollador sobre dispositivos, versión y posibles licencias de pago. Que aparezca un dispositivo no confirma su compatibilidad.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "ready",
+                "label": "Conozco mi dispositivo y reproductor",
+                "answer": "Confirma con soporte la única conexión simultánea, el precio completo y el dispositivo previsto. Estas comprobaciones no garantizan calidad de imagen ni disponibilidad regional.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "opplex": {
+        "intro": "Las consultas de cuenta, pedido y pago de Opplex se resuelven en el portal privado central.",
+        "questions": [
+          {
+            "id": "order-help",
+            "label": "¿Qué quieres comprobar?",
+            "options": [
+              {
+                "value": "pending-payment",
+                "label": "Mi pago está pendiente",
+                "answer": "No inicies otro pago. Accede a la cuenta central y revisa el pedido existente; pide ayuda privada si el estado no está claro.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "account-access",
+                "label": "Necesito acceder a mi cuenta",
+                "answer": "Usa el acceso central con el correo del pedido. Nunca publiques contraseñas, enlaces de acceso ni códigos de verificación.",
+                "links": [
+                  "account"
+                ]
+              },
+              {
+                "value": "renewal",
+                "label": "Quiero renovar",
+                "answer": "Comprueba el pedido y la fecha de finalización en tu cuenta privada antes de comprar de nuevo. Pide a soporte que confirme cómo se aplica la renovación.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "geo": {
+        "intro": "Busca las guías de Geo en tu idioma actual. Las palabras buscadas no se envían ni guardan.",
+        "questions": []
+      },
+      "5g": {
+        "intro": "5G Live ofrece comprobaciones manuales, no una prueba de velocidad ni una garantía de rendimiento.",
+        "questions": [
+          {
+            "id": "network-help",
+            "label": "¿Qué quieres comprobar?",
+            "options": [
+              {
+                "value": "wifi",
+                "label": "El problema ocurre con Wi-Fi",
+                "answer": "Comprueba el acceso normal a internet en el mismo dispositivo. Si es posible, compara una conexión por cable o una ubicación cercana al router con una fuente autorizada. Anota los cambios y consulta a soporte.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "mobile-data",
+                "label": "El problema ocurre con datos móviles",
+                "answer": "Revisa tu límite de datos y los ajustes móviles del reproductor. Compara con una red Wi-Fi conocida cuando esté permitido. Esto no identifica la causa ni evita restricciones del operador.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "other-apps",
+                "label": "Otras aplicaciones tampoco conectan",
+                "answer": "Comprueba la conexión del dispositivo y los avisos del router u operador. Revisa las actualizaciones publicadas y comunica a soporte la hora y el error, nunca contraseñas.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
   "locale": "es",
   "labels": {
     "home": "Inicio", "pages": "Explorar", "packages": "Planes", "account": "Mi cuenta", "contact": "Contacto", "readMore": "Leer la guía", "backToGuides": "Todas las guías", "language": "Idioma", "loading": "Cargando los detalles actualizados…", "unavailable": "Los detalles actualizados no están disponibles temporalmente. Inténtalo de nuevo o consulta con soporte.", "retry": "Reintentar", "choosePlan": "Elegir este plan", "setup": "Ayuda de configuración", "guide": "Guía práctica", "disclaimer": "Confirma el dispositivo, la ubicación y el plan antes de pagar. La disponibilidad y el rendimiento pueden variar.", "governingPolicy": "Leer la política central que rige este servicio"

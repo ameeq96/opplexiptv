@@ -175,12 +175,37 @@ class LandingInteractionTest extends TestCase
         $payload['email'] = 'private@example.test';
         $payload['page'] = 'https://trexiptv8k.store/?private=secret';
         $payload['user_id'] = 22;
+        $this->postJson('/api/v1/landing/events', $payload, $this->origin())->assertUnprocessable();
+        unset($payload['page']);
         $this->postJson('/api/v1/landing/events', $payload, $this->origin())->assertStatus(202);
         $activity = CustomerActivity::sole();
         $this->assertNull($activity->user_id);
         $this->assertNull($activity->contact_email);
         $this->assertStringNotContainsString('private', json_encode($activity->getAttributes()));
         $this->assertDatabaseCount('trial_clicks', 0);
+    }
+
+    public function test_page_language_dimensions_require_consent_and_exact_public_brand_routes(): void
+    {
+        $payload = $this->event() + ['locale' => 'ar', 'page' => 'setup'];
+        $this->postJson('/api/v1/landing/events', $payload, $this->origin())->assertStatus(202);
+        $details = CustomerActivity::sole()->details;
+        $this->assertSame('ar', $details['locale']);
+        $this->assertSame('setup', $details['page']);
+        foreach ([['locale' => 'de'], ['page' => '../account'], ['page' => 'setup?email=private'], ['page' => 'pricing']] as $invalid) {
+            $request = array_merge($payload, $invalid, ['event_id' => (string) Str::uuid()]);
+            $this->postJson('/api/v1/landing/events', $request, $this->origin())->assertUnprocessable();
+        }
+        $home = array_merge($payload, ['event_id' => (string) Str::uuid(), 'page' => '']);
+        $this->postJson('/api/v1/landing/events', $home, $this->origin())->assertStatus(202);
+        $this->assertSame('', CustomerActivity::latest('id')->first()->details['page']);
+        $lead = $this->lead() + ['locale' => 'en', 'page' => 'contact'];
+        $this->postJson('/api/v1/landing/leads', $lead, $this->origin())->assertUnprocessable();
+        $lead['analytics_consent'] = true;
+        $this->postJson('/api/v1/landing/leads', $lead, $this->origin())->assertUnprocessable();
+        $lead['session_id'] = (string) Str::uuid();
+        $this->postJson('/api/v1/landing/leads', $lead, $this->origin())->assertStatus(202);
+        $this->assertSame('contact', CustomerActivity::latest('id')->first()->details['page']);
     }
 
     public function test_origin_brand_map_rejects_missing_cross_brand_and_lookalike_origins(): void

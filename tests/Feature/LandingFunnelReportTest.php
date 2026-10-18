@@ -130,6 +130,43 @@ class LandingFunnelReportTest extends TestCase
         $this->assertSame(0, $funnel['totals']['contacts']);
     }
 
+    public function test_breakdowns_keep_unmeasured_history_unknown_and_count_same_session_once_per_dimension(): void
+    {
+        $session = (string) Str::uuid();
+        foreach (['setup', 'setup', 'iptv-applications'] as $page) {
+            $this->activity('trex', 'visit', $session)->update(['details' => ['analytics_consent' => true, 'locale' => 'ar', 'page' => $page]]);
+        }
+        $this->activity('trex', 'visit', (string) Str::uuid());
+        $this->activity('trex', 'contact_requested', '123')->update(['details' => ['analytics_consent' => false, 'locale' => 'ar', 'page' => 'setup']]);
+        $funnel = app(LandingInteractionService::class)->funnel('trex', now()->toDateString(), now()->toDateString());
+        $language = collect($funnel['breakdown']['locale'])->keyBy('value');
+        $pages = collect($funnel['breakdown']['page'])->keyBy('value');
+        $this->assertSame(1, $language['ar']['visits']);
+        $this->assertSame(1, $language['unknown']['visits']);
+        $this->assertSame(1, $language['unknown']['contacts']);
+        $this->assertSame(1, $pages['setup']['visits']);
+        $this->assertSame(1, $pages['iptv-applications']['visits']);
+        $this->assertSame(2, $funnel['daily'][0]['visits']);
+        $this->assertArrayNotHasKey('conversion_rate', $funnel);
+    }
+
+    public function test_paid_amounts_are_deduplicated_and_never_sum_different_currencies_or_guess_missing_values(): void
+    {
+        $user = User::factory()->create();
+        foreach ([['USD', '10.25'], ['USD', '20.50'], ['EUR', '9.99'], [null, null]] as [$currency, $amount]) {
+            $order = Order::withoutEvents(fn () => Order::create(['user_id' => $user->id, 'package' => 'Isolated plan', 'type' => 'package', 'price' => 999, 'currency' => 'USD', 'status' => 'active', 'payment_provider' => 'safepay', 'payment_status' => 'paid', 'paid_amount' => $amount, 'paid_currency' => $currency, 'paid_at' => now()]));
+            foreach ([1, 2] as $repeat) $this->activity('trex', 'payment_paid', (string) $order->id)->update(['order_id' => $order->id]);
+        }
+        $funnel = app(LandingInteractionService::class)->funnel('trex', now()->toDateString(), now()->toDateString());
+        $revenue = collect($funnel['revenue_by_currency'])->keyBy('currency');
+        $this->assertSame('30.75', $revenue['USD']['amount']);
+        $this->assertSame(2, $revenue['USD']['paid_orders']);
+        $this->assertSame('9.99', $revenue['EUR']['amount']);
+        $this->assertSame(1, $funnel['revenue_missing_amount_orders']);
+        $this->assertSame(4, $funnel['totals']['paid_orders']);
+        $this->assertArrayNotHasKey('total_revenue', $funnel);
+    }
+
     private function activity(string $brand, string $event, string $entityId): CustomerActivity
     {
         return CustomerActivity::create([
