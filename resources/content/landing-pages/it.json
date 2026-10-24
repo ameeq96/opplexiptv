@@ -1026,7 +1026,7 @@
           "slug": "reseller-panel",
           "title": "Geo per rivenditori: verifica l'accordo disponibile",
           "description": "Prepara una domanda commerciale senza trattare il prezzo personale come tariffa pannello.",
-          "intro": "Un piano domestico non definisce le condizioni di rivendita. Chiarisci prima la differenza tra cliente finale e accordo commerciale.",
+          "intro": "Un piano domestico non definisce le condizioni di rivendita. Chiarisci prima la differenza tra cliente finale e accordo commerciale. Se cerchi un pannello reseller Geo, questa pagina serve a preparare una richiesta: non è un accesso al pannello né un'offerta all'ingrosso confermata.",
           "sections": [
             {
               "heading": "Chiedi l'offerta concreta",
@@ -1038,7 +1038,7 @@
             },
             {
               "heading": "Metti per iscritto mercato e assistenza prevista",
-              "body": "Per chiedere informazioni su un pannello IPTV reseller Geo, descrivi paesi, lingue e tipo di supporto che vorresti offrire. Come reseller IPTV, separa le funzioni dell’eventuale pannello dalle autorizzazioni necessarie per il mercato scelto. Prima di confrontare pannelli IPTV, richiedi un’offerta precisa. Una ricerca “pannelli IPTV Italia” non conferma da sola copertura, diritti territoriali, crediti o condizioni commerciali Geo."
+              "body": "Per chiedere informazioni su un pannello IPTV reseller Geo, invia una sola richiesta con paesi, lingue, numero indicativo di clienti e tipo di supporto che vorresti offrire. Come reseller IPTV, separa le funzioni dell’eventuale pannello dalle autorizzazioni necessarie per il mercato scelto. Prima di confrontare pannelli IPTV, richiedi un’offerta precisa con valuta, regole dei crediti, eventuale scadenza e responsabilità di assistenza confermate per iscritto. Una ricerca “pannelli IPTV Italia” non conferma da sola copertura, diritti territoriali, crediti o condizioni commerciali Geo."
             }
           ],
           "kind": "editorial"
@@ -1083,7 +1083,7 @@
               "heading": "Crea un punto di confronto",
               "body": "1. Annota dispositivo, versione del lettore e lingua. 2. Controlla l'ordine centrale. 3. Scegli un elemento autorizzato e una connessione consentita. 4. Registra il sintomo prima dei cambiamenti. Mantieni dispositivo e sorgente per il controllo seguente, senza una seconda riproduzione simultanea."
             },
-            {"heading":"Crea una base ripetibile","body":"Registra dispositivo, sistema, versione, lingua e connessione. Scegli una voce autorizzata e annota sintomo, ora locale e fuso. Cambia una sola condizione consentita e interrompi la prima riproduzione prima dell'altra. Se manca un'opzione, segnalalo invece di importare liste sconosciute o aggirare restrizioni."}
+            {"heading":"Crea una base ripetibile","body":"Parti dal punto in cui la configurazione si ferma. Se il lettore non si apre, annota modello, sistema e versione dell'app e verifica i requisiti attuali dello sviluppatore. Se si apre ma la lista è vuota, distingui questo caso da una voce presente che non parte: non importare una playlist estranea per riempire la lista. Se una voce non funziona, verifica se un'altra sorgente autorizzata mostra lo stesso sintomo e annota ora locale e fuso. Usa una connessione alla volta e nascondi le credenziali nelle immagini. Sono osservazioni utili per scegliere il controllo successivo, non prove della causa o un invito ad aggirare restrizioni."}
           ],
           "kind": "editorial"
         },
@@ -1263,7 +1263,7 @@
               "heading": "Un confronto che puoi spiegare dopo",
               "body": "Registra A: dispositivo, versione, elemento autorizzato, connessione e sintomo. Per B cambia solo un'impostazione o connessione consentita, mantenendo il resto. Ferma A prima di B per rispettare una connessione. Un miglioramento suggerisce la prossima domanda, ma non dimostra da solo la causa."
             },
-            {"heading":"Usa un breve registro del confronto","body":"Annota ora e fuso, dispositivo e versione, connessione, voce e risultato. Ripeti la stessa voce autorizzata dopo una sola modifica consentita, interrompendo prima la riproduzione precedente. Includi successi e problemi. Voci e dispositivi diversi non isolano la causa; un risultato positivo non prova disponibilità universale."}
+            {"heading":"Usa un breve registro del confronto","body":"Se Geo IPTV funziona sul telefono ma non sulla TV, interrompi prima la riproduzione sul telefono: il piano consente una sola connessione simultanea. Annota se sulla TV il lettore non si apre, mostra una lista vuota oppure fallisce dopo la scelta di una voce autorizzata. Registra modello e versione del lettore su entrambi gli apparecchi; un'app funzionante sul telefono non conferma la compatibilità di quella per TV. Riprendi poi il confronto sullo stesso dispositivo descritto sopra, cambiando una sola condizione consentita. Conserva privatamente ora e fuso, connessione, voce e risultato. Includi successi e problemi senza considerarli una prova della causa o della disponibilità universale."}
           ],
           "kind": "article"
         },
@@ -1447,7 +1447,7 @@
               "heading": "Rendi il primo tentativo ripetibile",
               "body": "1. Verifica l'ordine centrale. 2. Usa una connessione nota e consentita. 3. Annota versione ed errore prima dei cambiamenti. 4. Prima di confrontare un'altra rete, controlla le tariffe e ferma la riproduzione precedente. Non cambiare rete e reinstallare l'app nello stesso controllo."
             },
-            {"heading":"Inizia con un tentativo breve e ripetibile","body":"Annota Wi-Fi, dati mobili o hotspot, versione e ora. Controlla il piano dell'operatore prima di una breve riproduzione autorizzata e poi interrompila. Non lasciare video in background cambiando rete. Conserva l'errore e chiedi il prossimo controllo invece di scaricare o reinstallare continuamente."}
+            {"heading":"Inizia con un tentativo breve e ripetibile","body":"Alla prima configurazione di 5G Live IPTV separa tre domande. Il dispositivo apre una normale pagina web? Se no, verifica la connessione con l'operatore prima di cambiare il lettore. Internet funziona ma il lettore non si apre? Controlla i requisiti dello sviluppatore per modello e versione dell'app. Il lettore si apre ma la riproduzione fallisce? Verifica lo stato dell'ordine centrale e annota se manca la lista oppure una voce autorizzata mostra un errore. La schermata della licenza dell'app non dimostra lo stato dell'ordine del servizio. Conserva il messaggio esatto, usa una sola sessione e controlla le tariffe mobili prima di provare un'altra connessione; non reinstallare e cambiare rete nello stesso controllo."}
           ],
           "kind": "editorial"
         },
@@ -1627,7 +1627,7 @@
               "heading": "Scegli il controllo dopo il cambio di rete",
               "body": "Se anche internet normale non funziona, verifica la connessione con l'operatore. Se cambia solo il lettore, mantieni dispositivo ed elemento autorizzato e annota l'errore su ogni rete consentita. Ferma il primo flusso prima del secondo e controlla le tariffe. L'icona di rete non dimostra la causa."
             },
-            {"heading":"Confronta il cambio di rete senza due riproduzioni","body":"Annota connessione iniziale e finale, ora e sintomo. Ferma la riproduzione prima di cambiare, poi fai un breve controllo consentito sullo stesso dispositivo e voce. Verifica i costi mobili. Se fallisce anche internet normale, parti dall'operatore; l'icona del segnale non spiega il risultato."}
+            {"heading":"Confronta il cambio di rete senza due riproduzioni","body":"Distingui un problema all'avvio da un'interruzione durante la visione. Se la stessa voce autorizzata funzionava prima di lasciare il Wi-Fi, annota quando si è fermata, se lo schermo si è bloccato e quale connessione era attiva dopo. Interrompi la riproduzione prima di un breve controllo consentito sullo stesso dispositivo e sulla stessa voce. Se non funziona neppure una normale pagina web, parti dall'operatore. Se fallisce soltanto il lettore, conserva il messaggio e controlla una alla volta le sue impostazioni documentate per dati in background o batteria, senza attribuire loro automaticamente la causa. Verifica costi mobili e roaming, non lasciare un secondo flusso attivo e non dedurre blocchi, velocità o stabilità dall'icona del segnale."}
           ],
           "kind": "article"
         },
