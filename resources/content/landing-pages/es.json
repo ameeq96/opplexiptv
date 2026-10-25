@@ -382,7 +382,7 @@
         {
           "slug": "about",
           "title": "IPTV Subscription: elige con las condiciones claras",
-          "description": "En iptvsubscription.shop comparamos una suscripción IPTV por servicio, duración y coste completo.",
+          "description": "En iptvsubscription.shop, compara suscripciones IPTV Opplex y Filex por duración, coste completo y condiciones antes de continuar a Opplexify.",
           "intro": "En iptvsubscription.shop comparamos una suscripción IPTV por servicio, duración y coste completo.",
           "sections": [
             {
@@ -399,7 +399,7 @@
         {
           "slug": "contact",
           "title": "Pregunta por tu suscripción IPTV o renovación",
-          "description": "Una consulta breve con el proveedor y el periodo facilita la respuesta.",
+          "description": "Consulta a IPTV Subscription sobre proveedor, duración, precio final o renovación; prepara la referencia del pedido y envíala por un canal privado.",
           "intro": "Una consulta breve con el proveedor y el periodo facilita la respuesta.",
           "sections": [
             {
@@ -416,7 +416,7 @@
         {
           "slug": "faqs",
           "title": "Preguntas sobre precio, acceso y renovación IPTV",
-          "description": "Comprueba las condiciones del plan seleccionado antes de decidir.",
+          "description": "Resuelve dudas de tu suscripción IPTV: importe total, conexiones, licencia del reproductor y renovación con el proveedor correcto.",
           "intro": "Comprueba las condiciones del plan seleccionado antes de decidir.",
           "sections": [
             {
@@ -426,6 +426,14 @@
             {
               "heading": "Pago y renovación",
               "body": "Consulta la fecha de finalización y el pedido anterior antes de renovar. No hay renovación automática; confirma cómo se aplicará la nueva compra."
+            },
+            {
+              "heading": "¿Otro proveedor amplía mi suscripción actual?",
+              "body": "Comprar Opplex no implica ampliar un servicio Filex, ni al contrario. Conserva juntos el proveedor actual y la referencia del pedido. Pregunta cómo se aplicará la compra y confirma el nuevo periodo antes de considerarla una renovación."
+            },
+            {
+              "heading": "¿Qué información ayuda a resolver una duda?",
+              "body": "Prepara una nota con proveedor, duración prevista, dispositivo, reproductor, estado del pedido y la pregunta concreta. Envía la referencia por privado. No incluyas contraseñas, códigos de pago ni direcciones privadas de listas de reproducción."
             }
           ],
           "kind": "editorial"
@@ -433,7 +441,7 @@
         {
           "slug": "packages",
           "title": "Compara precios de suscripción IPTV y duración",
-          "description": "Elige primero Opplex o Filex y después valora el periodo que necesitas.",
+          "description": "Compara suscripciones IPTV Opplex y Filex por periodo, importe completo y equivalente mensual; confirma conexiones, licencia y cargos al pagar.",
           "intro": "Elige primero Opplex o Filex y después valora el periodo que necesitas.",
           "sections": [
             {
@@ -443,6 +451,10 @@
             {
               "heading": "Comprueba el total",
               "body": "Los precios proceden de la web principal. En Opplexify revisa paquete, posibles cargos y total antes de pagar; abrir el pago no confirma un pedido abonado."
+            },
+            {
+              "heading": "Compara siempre el mismo periodo",
+              "body": "Pon primero frente a frente planes Opplex y Filex de igual duración. La tabla reúne proveedor, precio completo y equivalente mensual: este último no significa facturación mensual. Si no se indica el límite de conexiones, consulta a soporte; no lo interpretes como acceso ilimitado."
             }
           ],
           "kind": "packages"
@@ -450,7 +462,7 @@
         {
           "slug": "reseller-panel",
           "title": "Consultas de reventa IPTV: condiciones primero",
-          "description": "Una suscripción personal no concede permiso de reventa.",
+          "description": "Prepara una consulta de reventa IPTV con mercado, proveedor, permisos y responsabilidades; una suscripción personal no autoriza la reventa.",
           "intro": "Una suscripción personal no concede permiso de reventa.",
           "sections": [
             {
@@ -460,6 +472,10 @@
             {
               "heading": "Pide condiciones por escrito",
               "body": "Esta página no entrega panel, créditos ni márgenes garantizados. Exige confirmación escrita de permisos, precios, límites y responsabilidades."
+            },
+            {
+              "heading": "Prepara una consulta, no un presupuesto",
+              "body": "Explica el mercado previsto, el proveedor y cómo atenderías a los clientes. Solicita por escrito permisos, límites de cuentas, base del precio y responsabilidades, si existe un acuerdo disponible. Una tarifa minorista o los créditos de otro proveedor no constituyen una oferta comercial aquí."
             }
           ],
           "kind": "editorial"
@@ -467,7 +483,7 @@
         {
           "slug": "iptv-applications",
           "title": "Suscripción IPTV y aplicaciones: dos compras distintas",
-          "description": "El reproductor es software; la suscripción es un servicio independiente.",
+          "description": "Distingue la suscripción IPTV del reproductor: revisa editor oficial, requisitos del dispositivo, licencia y quién cobra cada compra.",
           "intro": "El reproductor es software; la suscripción es un servicio independiente.",
           "sections": [
             {
@@ -483,6 +499,10 @@
                   "url": "https://docs.videolan.me/vlc-android-user/"
                 }
               ]
+            },
+            {
+              "heading": "Separa la compra de la aplicación",
+              "body": "Pagar al desarrollador de un reproductor no confirma que un pedido Opplex o Filex esté pagado o activo. Anota editor, duración de licencia y soporte por separado. El manual VLC enlazado explica software; no demuestra que hayamos probado tu combinación de dispositivo y servicio."
             }
           ],
           "kind": "editorial"
@@ -490,7 +510,7 @@
         {
           "slug": "setup",
           "title": "Prepara tu suscripción IPTV antes del pago",
-          "description": "Anota dispositivo, reproductor y servicio antes de elegir un periodo largo.",
+          "description": "Prepara tu suscripción IPTV con modelo, versión del reproductor y estado del pedido; separa una duda de instalación de un pago pendiente.",
           "intro": "Anota dispositivo, reproductor y servicio antes de elegir un periodo largo.",
           "sections": [
             {
@@ -506,6 +526,10 @@
                   "url": "https://support.google.com/googletv/answer/10070482?hl=es"
                 }
               ]
+            },
+            {
+              "heading": "Convierte la comprobación en una pregunta útil",
+              "body": "Anota dispositivo y sistema, reproductor y versión, acción realizada, resultado exacto, proveedor y estado del pedido. Distingue, por ejemplo, una aplicación que no abre de un pago pendiente: son preguntas diferentes. Comprar de nuevo no explica ninguno de esos resultados."
             }
           ],
           "kind": "editorial"
@@ -513,7 +537,7 @@
         {
           "slug": "movies",
           "title": "Antes de elegir una suscripción por una película",
-          "description": "Confirma la disponibilidad autorizada del título que te interesa.",
+          "description": "Antes de elegir una suscripción IPTV por una película, confirma título, año, disponibilidad autorizada en tu ubicación y opciones de audio.",
           "intro": "Confirma la disponibilidad autorizada del título que te interesa.",
           "sections": [
             {
@@ -523,6 +547,10 @@
             {
               "heading": "Opciones del reproductor",
               "body": "Revisa subtítulos, audio y calidad de la fuente. Esta página es una lista de comprobaciones, no un catálogo incluido."
+            },
+            {
+              "heading": "Pregunta por el título concreto",
+              "body": "Indica título y año de estreno, ubicación, idioma de audio, subtítulos y proveedor considerado. Confirma la disponibilidad autorizada mediante una fuente adecuada antes de pagar para ese fin. Una categoría general o información de otra versión no resuelve esa consulta."
             }
           ],
           "kind": "editorial"
@@ -530,7 +558,7 @@
         {
           "slug": "shop",
           "title": "Un presupuesto sensato para el equipo IPTV",
-          "description": "Quizá ya tengas el dispositivo adecuado; compruébalo antes de gastar.",
+          "description": "Planifica el equipo para una suscripción IPTV según tus dispositivos actuales, el requisito que falta, la licencia y las condiciones de devolución.",
           "intro": "Quizá ya tengas el dispositivo adecuado; compruébalo antes de gastar.",
           "sections": [
             {
@@ -540,6 +568,10 @@
             {
               "heading": "Compra para una necesidad concreta",
               "body": "Compara soporte del fabricante, conexiones, mando y devolución. Esta guía no es una tienda con existencias ni promete resolver cualquier fallo."
+            },
+            {
+              "heading": "Define la compra antes de gastar",
+              "body": "Escribe qué requisito no cumple tu equipo, qué especificación del fabricante lo resuelve, los costes de dispositivo, accesorios y licencia, y las condiciones de devolución del vendedor. Si falta conocer el estado de un pedido o una condición del servicio, otra caja no aportará esa respuesta."
             }
           ],
           "kind": "editorial"
@@ -547,7 +579,7 @@
         {
           "slug": "activate",
           "title": "Activación de la suscripción: empieza por el pedido",
-          "description": "Conserva proveedor y referencia y lee el estado actual de la cuenta.",
+          "description": "Consulta el estado de tu suscripción IPTV con el proveedor y la referencia correctos; conserva el pedido antes de repetir un pago o pedir ayuda.",
           "intro": "Conserva proveedor y referencia y lee el estado actual de la cuenta.",
           "sections": [
             {
@@ -564,7 +596,7 @@
         {
           "slug": "activate-info",
           "title": "Qué incluir en una consulta de activación IPTV",
-          "description": "Ayuda a identificar el pedido mediante un canal privado.",
+          "description": "Prepara la referencia, el correo de compra y el proveedor de tu suscripción IPTV; comparte los datos del pedido por privado, sin contraseñas.",
           "intro": "Ayuda a identificar el pedido mediante un canal privado.",
           "sections": [
             {
@@ -581,7 +613,7 @@
         {
           "slug": "blogs",
           "title": "Guías de suscripción IPTV: elegir, costes y renovación",
-          "description": "Escoge la guía que resuelva la decisión que tienes delante.",
+          "description": "Lee las guías de IPTV Subscription para comparar planes, preparar una renovación y separar el coste del servicio, el reproductor y el equipo.",
           "intro": "Escoge la guía que resuelva la decisión que tienes delante.",
           "sections": [
             {
@@ -598,7 +630,7 @@
         {
           "slug": "terms-of-service",
           "title": "Condiciones de IPTV Subscription antes de comprar",
-          "description": "Esta página resume las condiciones centrales de Opplex; lee también el texto completo enlazado.",
+          "description": "Consulta el resumen de condiciones de IPTV Subscription y los términos centrales Opplex sobre pedidos y uso; revisa el texto completo enlazado.",
           "intro": "Esta página resume las condiciones centrales de Opplex; lee también el texto completo enlazado.",
           "sections": [
             {
@@ -615,7 +647,7 @@
         {
           "slug": "privacy-policy",
           "title": "Privacidad de IPTV Subscription: consulta y compra",
-          "description": "La política central explica el tratamiento de datos del servicio compartido.",
+          "description": "Consulta cómo se relaciona IPTV Subscription con la política central de privacidad y qué datos necesitas compartir al consultar un pedido o soporte.",
           "intro": "La política central explica el tratamiento de datos del servicio compartido.",
           "sections": [
             {
@@ -632,7 +664,7 @@
         {
           "slug": "refund-policy",
           "title": "Reembolsos de suscripción IPTV: revisa la política",
-          "description": "Aclara dispositivo, servicio, duración y precio antes de pagar.",
+          "description": "Revisa las condiciones de devolución vinculadas a IPTV Subscription y aclara servicio, dispositivo, duración y total antes de comprar un plan.",
           "intro": "Aclara dispositivo, servicio, duración y precio antes de pagar.",
           "sections": [
             {
@@ -649,7 +681,7 @@
         {
           "slug": "blogs/choosing-an-iptv-subscription",
           "title": "Cómo elegir una suscripción IPTV sin perder detalles",
-          "description": "Haz una tabla con proveedor, duración, moneda e importe total; deja visibles las dudas.",
+          "description": "Elige una suscripción IPTV comparando Opplex y Filex con el mismo periodo, precio completo, requisitos del dispositivo y condiciones pendientes.",
           "intro": "Haz una tabla con proveedor, duración, moneda e importe total; deja visibles las dudas.",
           "sections": [
             {
@@ -659,6 +691,14 @@
             {
               "heading": "Haz una comprobación final",
               "body": "Confirma dispositivo, reproductor, licencia separada y el límite de conexiones del plan seleccionado. Comprueba otra vez el proveedor y total en Opplexify."
+            },
+            {
+              "heading": "Un ejemplo con planes del mismo periodo",
+              "body": "Utiliza la comparación actual para ver una opción Opplex de tres meses junto a una Filex de tres meses. Separa proveedor, moneda e importe completo. Dividir cada total entre tres ayuda a comparar el equivalente mensual; no convierte el plan en un cobro mensual ni hace intercambiables los servicios."
+            },
+            {
+              "heading": "Deja a la vista lo que falta confirmar",
+              "body": "Añade a tu nota el límite de conexiones del plan, una posible licencia del reproductor y el dispositivo previsto. Escribe «consultar a soporte» donde falte un dato. Pregunta cuándo comienza el acceso antes de asumir un compromiso mayor; la tabla no acredita compatibilidad ni derechos de contenido."
             }
           ],
           "kind": "article"
@@ -666,7 +706,7 @@
         {
           "slug": "blogs/iptv-subscription-renewal-checklist",
           "title": "Lista para renovar una suscripción IPTV",
-          "description": "Empieza por tu cuenta actual, no por una oferta antigua.",
+          "description": "Renueva tu suscripción IPTV con proveedor, fecha de fin y referencia actuales; consulta la oferta vigente y aclara cualquier pago pendiente.",
           "intro": "Empieza por tu cuenta actual, no por una oferta antigua.",
           "sections": [
             {
@@ -676,6 +716,14 @@
             {
               "heading": "Comprueba una cosa cada vez",
               "body": "Comprueba precio y condiciones vigentes y resuelve cualquier pago pendiente. Conserva el nuevo pedido junto al anterior."
+            },
+            {
+              "heading": "La renovación corresponde a un proveedor",
+              "body": "Si utilizas Filex, seleccionar Opplex no explica qué ocurrirá con esa cuenta Filex. Pregunta cómo se aplicará la compra al servicio actual y al tiempo restante. No presupongas que se juntarán proveedores, pedidos o periodos distintos."
+            },
+            {
+              "heading": "Conserva un registro reutilizable",
+              "body": "Anota proveedor, correo de compra, referencia anterior, fecha de fin mostrada, nuevo periodo y pagos sin resolver. Consulta la oferta vigente, no una captura antigua. Los términos centrales indican que no hay renovación automática. Guarda la nueva referencia y las fechas confirmadas sin compartir credenciales."
             }
           ],
           "kind": "article"
@@ -683,7 +731,7 @@
         {
           "slug": "blogs/iptv-device-and-player-costs",
           "title": "Costes de equipo y reproductor para IPTV",
-          "description": "Servicio, aplicación y dispositivo pueden tener vendedores y condiciones diferentes.",
+          "description": "Calcula el presupuesto IPTV con el plan actual, la licencia del reproductor, el equipo y los cargos finales; compara periodos y monedas iguales.",
           "intro": "Servicio, aplicación y dispositivo pueden tener vendedores y condiciones diferentes.",
           "sections": [
             {
@@ -693,6 +741,14 @@
             {
               "heading": "Guarda el resultado",
               "body": "Aclara una aplicación no compatible o un pedido incierto antes de comprar otro aparato. Una compra adicional no sustituye una respuesta concreta."
+            },
+            {
+              "heading": "Empieza por el equipo que ya tienes",
+              "body": "La comparación de esta página muestra precios del servicio, no un presupuesto completo de equipos. Si tu dispositivo resulta adecuado y la licencia sigue vigente para el uso previsto, quizá no necesites comprar hardware ni otra aplicación. Confirma esas condiciones y revisa también el total del servicio y los cargos finales."
+            },
+            {
+              "heading": "Asocia cada importe a un periodo y una moneda",
+              "body": "Separa suscripción completa, licencia necesaria, equipo que decidas comprar y cargos aplicables. Anota duración y moneda junto a cada cifra. Suma solo importes en la misma moneda y comprueba conversiones y comisiones. La licencia de una aplicación puede vencer en otra fecha que el servicio."
             }
           ],
           "kind": "article"
@@ -705,7 +761,7 @@
         {
           "slug": "about",
           "title": "Get IPTV: empieza por tu dispositivo",
-          "description": "En getiptv.store partimos del modelo y el reproductor que realmente vas a utilizar.",
+          "description": "En getiptv.store, empieza por tu dispositivo y reproductor antes de comparar Opplex y Filex; conoce la preparación, las guías y el soporte disponible.",
           "intro": "En getiptv.store partimos del modelo y el reproductor que realmente vas a utilizar.",
           "sections": [
             {
@@ -722,7 +778,7 @@
         {
           "slug": "contact",
           "title": "Soporte Get IPTV: describe el paso que falla",
-          "description": "Indica si necesitas elegir una aplicación, consultar un pedido o investigar la reproducción.",
+          "description": "Contacta con Get IPTV indicando modelo, reproductor y paso que falla; diferencia instalación, reproducción y estado del pedido sin compartir claves.",
           "intro": "Indica si necesitas elegir una aplicación, consultar un pedido o investigar la reproducción.",
           "sections": [
             {
@@ -739,7 +795,7 @@
         {
           "slug": "faqs",
           "title": "Preguntas Get IPTV sobre dispositivo y reproductor",
-          "description": "La respuesta depende del modelo exacto y del servicio que selecciones.",
+          "description": "Respuestas Get IPTV sobre dispositivo, instalación del reproductor, estado del pedido y qué comprobar antes de comprar otro equipo.",
           "intro": "La respuesta depende del modelo exacto y del servicio que selecciones.",
           "sections": [
             {
@@ -749,6 +805,14 @@
             {
               "heading": "Pago y renovación",
               "body": "El pago abre Opplexify. Verifica proveedor, periodo y total, y consulta el pedido existente en la cuenta central antes de intentar pagar otra vez."
+            },
+            {
+              "heading": "¿Instalar el reproductor activa el pedido?",
+              "body": "No. Instalar prepara el software; el pedido tiene su propio estado de pago y servicio. Anota versión de la aplicación y proveedor y consulta el pedido por privado. No vuelvas a pagar solo porque terminó la instalación o no entiendes un aviso de activación."
+            },
+            {
+              "heading": "¿Compro otro equipo si falla la reproducción?",
+              "body": "Primero identifica el paso que falla y comprueba internet habitual en ese mismo dispositivo. Una aplicación no disponible, una interrupción de red y un pedido pendiente requieren preguntas distintas. Compra equipo para una necesidad identificada, tras revisar especificaciones y condiciones del servicio."
             }
           ],
           "kind": "editorial"
@@ -756,7 +820,7 @@
         {
           "slug": "packages",
           "title": "Planes Get IPTV después de revisar el dispositivo",
-          "description": "Compara Opplex y Filex cuando sepas qué pantalla y aplicación vas a usar.",
+          "description": "Compara planes Opplex y Filex en Get IPTV tras revisar pantalla, reproductor y conexiones; confirma proveedor, periodo e importe final.",
           "intro": "Compara Opplex y Filex cuando sepas qué pantalla y aplicación vas a usar.",
           "sections": [
             {
@@ -766,6 +830,10 @@
             {
               "heading": "Comprueba el total",
               "body": "Confirma en Opplexify el mismo proveedor, duración, moneda y total. Si hay un pago pendiente, resuelve ese estado antes de empezar otro."
+            },
+            {
+              "heading": "Mantén la nota del dispositivo junto al plan",
+              "body": "Relaciona tu duda sobre dispositivo y reproductor con el proveedor elegido. Compara duración e importe completo sin asumir que todos los paquetes son el mismo servicio. Confirma un límite de conexiones no indicado y revisa proveedor y cargos en Opplexify antes de pagar."
             }
           ],
           "kind": "packages"
@@ -773,7 +841,7 @@
         {
           "slug": "reseller-panel",
           "title": "Reventa Get IPTV: prepara el trabajo de soporte",
-          "description": "Ayudar a clientes a configurar IPTV implica responsabilidades, además de preguntas comerciales.",
+          "description": "Consulta a Get IPTV sobre reventa, dispositivos de clientes y trabajo de soporte; solicita permisos y responsabilidades antes de ofrecer acceso.",
           "intro": "Ayudar a clientes a configurar IPTV implica responsabilidades, además de preguntas comerciales.",
           "sections": [
             {
@@ -783,6 +851,10 @@
             {
               "heading": "Pide condiciones por escrito",
               "body": "Un plan personal no permite redistribuirlo. Aquí no se entrega panel ni se prometen créditos o beneficios; pide condiciones escritas."
+            },
+            {
+              "heading": "Define primero el trabajo de soporte",
+              "body": "Describe los dispositivos que atenderías y cómo gestionarías instalación y consultas. Identifica al proveedor y pregunta si existe un acuerdo adecuado. Solicita permisos, límites, base del precio y responsabilidades por escrito antes de ofrecer acceso; esta página no suministra créditos ni un presupuesto comercial."
             }
           ],
           "kind": "editorial"
@@ -790,7 +862,7 @@
         {
           "slug": "iptv-applications",
           "title": "Aplicaciones Get IPTV para tu modelo concreto",
-          "description": "Elige el reproductor según el dispositivo, no solo por un nombre conocido.",
+          "description": "Busca un reproductor para Get IPTV en la tienda oficial de tu dispositivo; revisa editor, requisitos y licencia antes de introducir datos privados.",
           "intro": "Elige el reproductor según el dispositivo, no solo por un nombre conocido.",
           "sections": [
             {
@@ -806,6 +878,10 @@
                   "url": "https://docs.videolan.me/vlc-android-user/"
                 }
               ]
+            },
+            {
+              "heading": "Del modelo a la ficha oficial",
+              "body": "Comprueba la ficha para tu dispositivo y sistema reales: editor, requisitos y licencia. Que exista una aplicación de teléfono con el mismo nombre no acredita una versión adecuada para televisión. Si no está disponible por la vía oficial, pregunta antes de instalar un APK sin verificar."
             }
           ],
           "kind": "editorial"
@@ -813,7 +889,7 @@
         {
           "slug": "setup",
           "title": "Cómo preparar IPTV: una lista de configuración",
-          "description": "Empieza con internet habitual, dispositivo, reproductor y pedido confirmado.",
+          "description": "Prepara Get IPTV con modelo, sistema, versión del reproductor y tipo de conexión; registra una prueba y separa los problemas de pedido.",
           "intro": "Empieza con internet habitual, dispositivo, reproductor y pedido confirmado.",
           "sections": [
             {
@@ -829,6 +905,10 @@
                   "url": "https://support.google.com/googletv/answer/10070482?hl=es"
                 }
               ]
+            },
+            {
+              "heading": "Guarda un punto de partida repetible",
+              "body": "Anota modelo, sistema, versión del reproductor y conexión. Comprueba una aplicación o web habitual en el mismo dispositivo y registra un solo cambio con su resultado. Conserva la configuración que funciona. Si fallan otras aplicaciones, describe ese síntoma; consulta aparte cualquier pago pendiente."
             }
           ],
           "kind": "editorial"
@@ -836,7 +916,7 @@
         {
           "slug": "movies",
           "title": "Get IPTV: comprueba el título antes de planificar",
-          "description": "Confirma dónde está disponible una película de forma autorizada.",
+          "description": "Con Get IPTV, comprueba película, ubicación, audio y subtítulos mediante una fuente autorizada, sin dar por incluido un catálogo concreto.",
           "intro": "Confirma dónde está disponible una película de forma autorizada.",
           "sections": [
             {
@@ -846,6 +926,10 @@
             {
               "heading": "Opciones del reproductor",
               "body": "Comprueba subtítulos y audio del reproductor. La fuente y la instalación determinan la imagen; esta guía no promete un catálogo incluido."
+            },
+            {
+              "heading": "Comprueba los detalles, no solo el cartel",
+              "body": "Anota título, año, ubicación y los idiomas de audio o subtítulos que necesitas. Confirma la disponibilidad autorizada de esa versión en el servicio correspondiente y consulta los controles documentados del reproductor. Un cartel, la resolución de pantalla o una categoría no acreditan acceso a esa película."
             }
           ],
           "kind": "editorial"
@@ -853,7 +937,7 @@
         {
           "slug": "shop",
           "title": "Equipo para Get IPTV: revisa lo que ya tienes",
-          "description": "Determina qué requisito falta antes de comprar otro dispositivo.",
+          "description": "Antes de comprar equipo para Get IPTV, identifica el requisito que falta y compara sistema, actualizaciones, conexión, licencia y devoluciones.",
           "intro": "Determina qué requisito falta antes de comprar otro dispositivo.",
           "sections": [
             {
@@ -863,6 +947,10 @@
             {
               "heading": "Compra para una necesidad concreta",
               "body": "Compara actualizaciones oficiales, almacenamiento, conexiones y mando. Revisa devolución y licencia independiente; esta página es una guía, no una tienda."
+            },
+            {
+              "heading": "Decide si realmente falta hardware",
+              "body": "Si la aplicación abre pero aparece un pedido pendiente, otra pantalla no resuelve el pago. Si falta la aplicación requerida, revisa sistema y actualizaciones documentadas por el fabricante antes de gastar. Mantén separados el coste del reproductor y las condiciones de devolución del equipo."
             }
           ],
           "kind": "editorial"
@@ -870,7 +958,7 @@
         {
           "slug": "activate",
           "title": "Activación Get IPTV: pedido y configuración",
-          "description": "Un dispositivo preparado y un pedido activo son cosas distintas.",
+          "description": "En Get IPTV, distingue un dispositivo preparado de un servicio activo; consulta proveedor, pago y referencia antes de cambiar ajustes o comprar otra vez.",
           "intro": "Un dispositivo preparado y un pedido activo son cosas distintas.",
           "sections": [
             {
@@ -887,7 +975,7 @@
         {
           "slug": "activate-info",
           "title": "Datos para una consulta de activación Get IPTV",
-          "description": "Una secuencia breve ayuda a separar problemas de pedido y reproductor.",
+          "description": "Prepara una secuencia de lo ocurrido con Get IPTV, el proveedor y la referencia; consulta el pedido por privado sin publicar credenciales del servicio.",
           "intro": "Una secuencia breve ayuda a separar problemas de pedido y reproductor.",
           "sections": [
             {
@@ -904,7 +992,7 @@
         {
           "slug": "blogs",
           "title": "Guías Get IPTV: preparación y diagnóstico",
-          "description": "Elige una guía para la fase en la que estás.",
+          "description": "Encuentra las guías Get IPTV para preparar el dispositivo, revisar requisitos antes del pago y registrar problemas de conexión paso a paso.",
           "intro": "Elige una guía para la fase en la que estás.",
           "sections": [
             {
@@ -921,7 +1009,7 @@
         {
           "slug": "terms-of-service",
           "title": "Condiciones Get IPTV: conoce el servicio elegido",
-          "description": "Get IPTV utiliza los sistemas y condiciones centrales de Opplex.",
+          "description": "Lee cómo se aplican a Get IPTV los sistemas y términos centrales Opplex; revisa condiciones de pedido y uso en el documento completo enlazado.",
           "intro": "Get IPTV utiliza los sistemas y condiciones centrales de Opplex.",
           "sections": [
             {
@@ -938,7 +1026,7 @@
         {
           "slug": "privacy-policy",
           "title": "Privacidad Get IPTV: tu consulta de configuración",
-          "description": "Comparte solo la información necesaria para el paso que intentas completar.",
+          "description": "Revisa la privacidad de Get IPTV y la política central; comparte solo los datos necesarios para soporte, sin claves ni códigos de pago.",
           "intro": "Comparte solo la información necesaria para el paso que intentas completar.",
           "sections": [
             {
@@ -955,7 +1043,7 @@
         {
           "slug": "refund-policy",
           "title": "Reembolsos Get IPTV: comprueba antes de pagar",
-          "description": "La compatibilidad, licencia y condiciones deben quedar claras antes de la compra.",
+          "description": "Consulta las condiciones de devolución de Get IPTV y los enlaces centrales; aclara compatibilidad, licencia y servicio antes de realizar el pedido.",
           "intro": "La compatibilidad, licencia y condiciones deben quedar claras antes de la compra.",
           "sections": [
             {
@@ -972,7 +1060,7 @@
         {
           "slug": "blogs/how-to-get-iptv-on-your-device",
           "title": "Cómo preparar IPTV en tu dispositivo",
-          "description": "Anota el modelo exacto antes de buscar una aplicación.",
+          "description": "Prepara Get IPTV con modelo exacto, sistema y ficha oficial del reproductor; sigue un ejemplo de Google TV y conserva un registro del dispositivo.",
           "intro": "Anota el modelo exacto antes de buscar una aplicación.",
           "sections": [
             {
@@ -982,6 +1070,26 @@
             {
               "heading": "Haz una comprobación final",
               "body": "Prepara una pantalla primero: internet, mando y legibilidad. Confirma el servicio y cierra la reproducción existente antes de comparar otro equipo."
+            },
+            {
+              "heading": "Ejemplo: encontrar la aplicación en Google TV",
+              "body": "En un dispositivo Google TV, entra en Buscar o Aplicaciones y localiza la ficha prevista. Revisa editor y requisitos y elige Instalar si aparece esa opción. Si la aplicación no está disponible, detente y consulta; otros sistemas o modelos pueden utilizar tiendas distintas.",
+              "links": [
+                {
+                  "label": "Instalar aplicaciones en Google TV: guía oficial",
+                  "url": "https://support.google.com/googletv/answer/10050570?hl=es"
+                }
+              ]
+            },
+            {
+              "heading": "Conserva una ficha de preparación",
+              "body": "Anota modelo y sistema, reproductor, editor, versión, condiciones de licencia y la duda sobre el servicio. Comprueba internet habitual y los controles. La documentación oficial VLC explica esa aplicación; no certifica tu suscripción ni significa que hayamos probado la combinación.",
+              "links": [
+                {
+                  "label": "Documentación oficial de VLC para Android",
+                  "url": "https://docs.videolan.me/vlc-android-user/"
+                }
+              ]
             }
           ],
           "kind": "article"
@@ -989,7 +1097,7 @@
         {
           "slug": "blogs/iptv-setup-before-checkout",
           "title": "Configuración IPTV antes del pago: cinco datos",
-          "description": "Una lista breve evita alternar sin rumbo entre tienda, aplicación y pago.",
+          "description": "Relaciona los requisitos de Get IPTV con el plan Opplex o Filex, separa la licencia y resuelve pagos pendientes antes de continuar a Opplexify.",
           "intro": "Una lista breve evita alternar sin rumbo entre tienda, aplicación y pago.",
           "sections": [
             {
@@ -999,6 +1107,14 @@
             {
               "heading": "Comprueba una cosa cada vez",
               "body": "Pregunta por lo que falta. Cuando esté claro, revisa servicio, moneda, duración y total en Opplexify y guarda la referencia privada."
+            },
+            {
+              "heading": "Relaciona la comprobación con un plan real",
+              "body": "Utiliza la comparación actual para reunir proveedor Opplex o Filex, duración e importe completo. El equivalente mensual sirve para comparar, no indica un cobro mensual. Mantén aparte la licencia del reproductor y confirma cualquier límite de conexiones no indicado."
+            },
+            {
+              "heading": "Un ejemplo de cuándo parar o continuar",
+              "body": "Si los requisitos del reproductor siguen sin aclararse o hay un pago anterior pendiente, pregunta por ese punto antes de continuar. Cuando tengas las respuestas, comprueba proveedor, periodo, moneda e importe final en Opplexify. Llegar al pago no acredita un cobro completado ni un servicio activo."
             }
           ],
           "kind": "article"
@@ -1006,7 +1122,7 @@
         {
           "slug": "blogs/troubleshoot-an-iptv-connection",
           "title": "Comprueba una conexión IPTV paso a paso",
-          "description": "Anota si falla abrir la aplicación, cargar la lista o reproducir un elemento.",
+          "description": "Investiga la conexión Get IPTV separando dispositivo, red y pedido; sigue comprobaciones documentadas y registra un cambio y su resultado cada vez.",
           "intro": "Anota si falla abrir la aplicación, cargar la lista o reproducir un elemento.",
           "sections": [
             {
@@ -1016,6 +1132,20 @@
             {
               "heading": "Guarda el resultado",
               "body": "Registra hora, mensaje, versiones y resultado de un cambio. Revierte lo que no ayuda; no publiques enlaces privados ni eludas restricciones."
+            },
+            {
+              "heading": "Separa conexión y estado del pedido",
+              "body": "Si otras aplicaciones del dispositivo tampoco conectan, anota el síntoma de red más amplio en vez de comprar de nuevo. Si internet habitual funciona pero aparece un pago pendiente, consulta ese pedido. Ninguna observación por sí sola demuestra la causa del fallo de reproducción."
+            },
+            {
+              "heading": "Google TV: comprueba y registra un cambio cada vez",
+              "body": "En Ajustes → Red e Internet, comprueba la conexión Wi-Fi elegida. Para actualizar, consulta Sistema → Información → Actualización del sistema; para un reinicio normal, Sistema → Reiniciar. Registra hora, paso que falla, mensaje, un cambio y resultado. No confundas reiniciar con restablecer de fábrica.",
+              "links": [
+                {
+                  "label": "Solucionar problemas de Google TV: ayuda oficial",
+                  "url": "https://support.google.com/googletv/answer/10070482?hl=es"
+                }
+              ]
             }
           ],
           "kind": "article"
