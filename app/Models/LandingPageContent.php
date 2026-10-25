@@ -11,6 +11,8 @@ class LandingPageContent extends Model
         'opplex' => 'Opplex IPTV',
         'geo' => 'Geo IPTV',
         '5g' => '5G Live IPTV',
+        'iptvsubscription' => 'IPTV Subscription',
+        'getiptv' => 'Get IPTV',
     ];
 
     protected $fillable = [

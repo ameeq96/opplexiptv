@@ -127,7 +127,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::resource('packages', AdminPackageController::class)->only(['index', 'create', 'show', 'edit']);
         Route::get('pricing-section', [AdminPricingSectionController::class, 'edit'])->name('pricing-section.edit');
         Route::get('landing-pages/{brand}/edit', [\App\Http\Controllers\Admin\LandingPageContentController::class, 'edit'])
-            ->where('brand', 'trex|opplex|geo|5g')->name('landing-pages.edit');
+            ->where('brand', 'trex|opplex|geo|5g|iptvsubscription|getiptv')->name('landing-pages.edit');
         Route::get('footer-settings', [AdminFooterSettingController::class, 'edit'])->name('footer-settings.edit');
         Route::get('landing-experience', [\App\Http\Controllers\Admin\LandingExperienceController::class, 'index'])->name('landing-experience.index');
         Route::resource('footer-links', AdminFooterLinkController::class)->only(['index', 'create', 'show', 'edit']);

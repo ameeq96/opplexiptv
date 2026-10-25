@@ -61,7 +61,7 @@ class LandingPageContentTest extends TestCase
     {
         $this->assertDatabaseCount('landing_page_contents', 4);
         $headings = [];
-        foreach (array_keys(LandingPageContent::BRANDS) as $brand) {
+        foreach (['trex', 'opplex', 'geo', '5g'] as $brand) {
             $response = $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale=en')->assertOk()
                 ->assertJsonPath('data.brand', $brand)->assertJsonPath('data.locale', 'en');
             $headings[] = $response->json('data.content.hero_heading');
@@ -82,7 +82,7 @@ class LandingPageContentTest extends TestCase
         $this->assertDatabaseCount('landing_page_contents', 40);
         $this->assertSame($english, LandingPageContent::where('locale', 'en')->orderBy('id')->get()->toJson());
         $this->assertSame($packages, Package::orderBy('id')->get()->toJson());
-        foreach (array_keys(LandingPageContent::BRANDS) as $brand) {
+        foreach (['trex', 'opplex', 'geo', '5g'] as $brand) {
             foreach (['es', 'fr', 'it', 'nl', 'pt', 'ru', 'ur', 'ar', 'hi'] as $locale) {
                 $page = LandingPageContent::where('brand', $brand)->where('locale', $locale)->firstOrFail();
                 $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale='.$locale)->assertOk()

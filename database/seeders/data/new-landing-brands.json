@@ -1,0 +1,845 @@
+{
+  "version": 1,
+  "rows": [
+    {
+      "hero_heading": "An IPTV subscription you can compare clearly",
+      "hero_description": "Compare current Opplex and Filex plans at iptvsubscription.shop. See the service, term and full price together, check player costs, then continue to Opplexify when your questions are answered.",
+      "guide_heading": "Know what you are buying",
+      "guide_intro": "A useful comparison leaves fewer surprises at payment time. Keep the service and player as separate decisions and start with the full cost.",
+      "guide_sections": [
+        {
+          "heading": "Choose the service, then the term",
+          "body": "Compare Opplex and Filex by their actual names. Match the period to your needs and confirm the selected plan's connection allowance before choosing a longer commitment."
+        },
+        {
+          "heading": "Make room for the whole cost",
+          "body": "Check the full plan amount, any separate player licence and applicable checkout fees. A monthly equivalent is a comparison, not a substitute for the total due."
+        },
+        {
+          "heading": "Keep a renewal record",
+          "body": "Save the service name, reference and end date privately. Before renewing, ask how a new purchase applies to your existing service."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Where do current prices come from?",
+          "answer": "Plans load from the main Opplex website. Confirm the selected service, term and final total on Opplexify before payment."
+        },
+        {
+          "question": "Is a player app included?",
+          "answer": "A player may have its own licence or fee. Check its developer's terms and your exact device rather than assuming the service purchase covers the app."
+        },
+        {
+          "question": "Where can I find my order?",
+          "answer": "Use the central portal with the purchase email. Check an existing payment status before opening another attempt."
+        }
+      ],
+      "highlights": [
+        "Current plans from the main website",
+        "Opplex and Filex clearly named",
+        "Private central account and support"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "en",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Get IPTV ready for the screen you use",
+      "hero_description": "Start at getiptv.store with your device and player. Compare current Opplex and Filex plans, follow the setup checklist and continue to checkout on Opplexify.",
+      "guide_heading": "Start with one prepared device",
+      "guide_intro": "You do not need to change everything together. A few clear checks help you choose the right question before choosing a plan.",
+      "guide_sections": [
+        {
+          "heading": "Find the exact model",
+          "body": "Open device settings and note the model and system version. A broad label such as Smart TV is not enough to establish player compatibility."
+        },
+        {
+          "heading": "Check the player first",
+          "body": "Use the app store or developer's official information to check requirements and any separate licence. Confirm the exact device and app combination with support."
+        },
+        {
+          "heading": "Keep one troubleshooting note",
+          "body": "Record the failing step, exact message and last change. Check the order privately and keep passwords, payment codes and private links out of the report."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I start with the device I own?",
+          "answer": "Check its exact model and the player's official requirements first. A new device is not automatically needed; confirm suitability before purchase."
+        },
+        {
+          "question": "Do two players add connections?",
+          "answer": "No. Check the connection allowance of the selected package; ask support if it is not stated. Close the current stream before trying another device or player."
+        },
+        {
+          "question": "Where does checkout go?",
+          "answer": "The selection continues through the main system to Opplexify. Review the provider, period and total there; account and order support stay in the central portal."
+        }
+      ],
+      "highlights": [
+        "Device-first setup checklist",
+        "Real Opplex and Filex package details",
+        "One shared order and support portal"
+      ],
+      "brand": "getiptv",
+      "locale": "en",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Una suscripción IPTV con los detalles claros",
+      "hero_description": "Compara planes Opplex y Filex en iptvsubscription.shop: servicio, periodo y coste completo, con el pago final en Opplexify.",
+      "guide_heading": "Entiende lo que vas a comprar",
+      "guide_intro": "Un presupuesto claro distingue el servicio, el reproductor y la renovación.",
+      "guide_sections": [
+        {
+          "heading": "Elige servicio y periodo",
+          "body": "Conserva el nombre del proveedor y confirma el límite de conexiones del plan seleccionado antes de decidir la duración."
+        },
+        {
+          "heading": "Calcula el coste completo",
+          "body": "Añade al importe del plan cualquier licencia independiente y revisa los cargos aplicables en el pago."
+        },
+        {
+          "heading": "Prepara la renovación",
+          "body": "Guarda proveedor, referencia y fecha final. Pregunta cómo se aplicará una nueva compra."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿De dónde vienen los precios?",
+          "answer": "De la web principal de Opplex. Confirma el total actualizado en Opplexify."
+        },
+        {
+          "question": "¿La aplicación está incluida?",
+          "answer": "Puede tener una licencia separada; consulta al desarrollador y comprueba tu modelo."
+        },
+        {
+          "question": "¿Dónde veo mi pedido?",
+          "answer": "En el portal central con el correo de compra; revisa pagos pendientes antes de repetir."
+        }
+      ],
+      "highlights": [
+        "Planes actuales del sistema principal",
+        "Opplex y Filex identificados",
+        "Cuenta y soporte privados"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "es",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Prepara Get IPTV para tu pantalla",
+      "hero_description": "En getiptv.store, empieza por el modelo y reproductor, compara Opplex y Filex y continúa a Opplexify con las dudas resueltas.",
+      "guide_heading": "Un dispositivo preparado, un paso cada vez",
+      "guide_intro": "Unas comprobaciones claras ayudan a preguntar lo necesario antes de elegir un plan.",
+      "guide_sections": [
+        {
+          "heading": "Encuentra el modelo exacto",
+          "body": "Consulta ajustes y anota el sistema. Smart TV no es una confirmación de compatibilidad."
+        },
+        {
+          "heading": "Revisa el reproductor",
+          "body": "Usa información oficial para requisitos y licencia. Confirma la combinación de dispositivo y versión."
+        },
+        {
+          "heading": "Anota el problema útil",
+          "body": "Registra paso, mensaje y último cambio; protege contraseñas y enlaces privados."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Necesito otro dispositivo?",
+          "answer": "Comprueba primero el modelo actual y los requisitos oficiales del reproductor."
+        },
+        {
+          "question": "¿Dos aplicaciones añaden conexiones?",
+          "answer": "No. Revisa el límite de conexiones del plan; cierra la actual antes de comparar."
+        },
+        {
+          "question": "¿Dónde se paga?",
+          "answer": "En Opplexify, revisando proveedor, periodo y total. La cuenta sigue en el portal central."
+        }
+      ],
+      "highlights": [
+        "Lista centrada en tu dispositivo",
+        "Datos reales de Opplex y Filex",
+        "Pedidos y soporte en un solo portal"
+      ],
+      "brand": "getiptv",
+      "locale": "es",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Un abbonamento IPTV con i dettagli in chiaro",
+      "hero_description": "Confronta Opplex e Filex su iptvsubscription.shop: servizio, durata e costo completo, poi controlla il totale su Opplexify.",
+      "guide_heading": "Capisci cosa stai acquistando",
+      "guide_intro": "Un budget utile distingue servizio, lettore e rinnovo.",
+      "guide_sections": [
+        {
+          "heading": "Scegli servizio e durata",
+          "body": "Conserva il nome del fornitore e conferma il limite di connessioni del piano scelto prima di decidere il periodo."
+        },
+        {
+          "heading": "Calcola il costo completo",
+          "body": "Considera importo del piano, eventuale licenza separata e commissioni mostrate al checkout."
+        },
+        {
+          "heading": "Prepara il rinnovo",
+          "body": "Tieni privatamente fornitore, riferimento e scadenza. Chiedi come verrà applicato un nuovo acquisto."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Da dove arrivano i prezzi?",
+          "answer": "Dal sito principale Opplex. Conferma il totale aggiornato su Opplexify."
+        },
+        {
+          "question": "L'app è compresa?",
+          "answer": "Potrebbe richiedere una licenza separata: consulta lo sviluppatore e verifica il tuo modello."
+        },
+        {
+          "question": "Dove trovo l'ordine?",
+          "answer": "Nel portale centrale con l'email d'acquisto; controlla pagamenti pendenti prima di ripetere."
+        }
+      ],
+      "highlights": [
+        "Piani aggiornati dal sistema principale",
+        "Opplex e Filex identificati",
+        "Account e assistenza privati"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "it",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Prepara Get IPTV per il tuo schermo",
+      "hero_description": "Su getiptv.store inizia da modello e lettore, confronta Opplex e Filex e continua su Opplexify con le domande chiarite.",
+      "guide_heading": "Un dispositivo pronto, un passo alla volta",
+      "guide_intro": "Poche verifiche chiare aiutano a fare la domanda giusta prima di scegliere un piano.",
+      "guide_sections": [
+        {
+          "heading": "Trova il modello esatto",
+          "body": "Consulta le impostazioni e annota il sistema. Smart TV non conferma la compatibilità."
+        },
+        {
+          "heading": "Verifica il lettore",
+          "body": "Usa informazioni ufficiali per requisiti e licenza; conferma modello e versione con l'assistenza."
+        },
+        {
+          "heading": "Annota il problema utile",
+          "body": "Registra passaggio, messaggio e ultima modifica. Proteggi password e collegamenti privati."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Serve un altro dispositivo?",
+          "answer": "Controlla prima il modello attuale e i requisiti ufficiali del lettore."
+        },
+        {
+          "question": "Due app aggiungono connessioni?",
+          "answer": "No. Controlla il limite del piano scelto: chiudi quella attuale prima del confronto."
+        },
+        {
+          "question": "Dove avviene il pagamento?",
+          "answer": "Su Opplexify, controllando fornitore, periodo e totale. L'account rimane nel portale centrale."
+        }
+      ],
+      "highlights": [
+        "Checklist centrata sul dispositivo",
+        "Dati reali di Opplex e Filex",
+        "Ordini e supporto nello stesso portale"
+      ],
+      "brand": "getiptv",
+      "locale": "it",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Un abonnement IPTV aux détails clairs",
+      "hero_description": "Comparez Opplex et Filex sur iptvsubscription.shop : service, durée et coût complet, puis le total sur Opplexify.",
+      "guide_heading": "Comprendre votre achat",
+      "guide_intro": "Un budget utile distingue le service, le lecteur et le renouvellement.",
+      "guide_sections": [
+        {
+          "heading": "Choisissez service et période",
+          "body": "Gardez le nom du fournisseur et confirmez la limite de connexions du forfait choisi avant de choisir la durée."
+        },
+        {
+          "heading": "Calculez le coût complet",
+          "body": "Ajoutez au forfait toute licence séparée et vérifiez les frais affichés au paiement."
+        },
+        {
+          "heading": "Préparez le renouvellement",
+          "body": "Gardez fournisseur, référence et échéance en privé. Demandez comment s'appliquera le nouvel achat."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "D'où viennent les prix ?",
+          "answer": "Du site principal Opplex. Confirmez le total actualisé sur Opplexify."
+        },
+        {
+          "question": "L'application est-elle incluse ?",
+          "answer": "Une licence séparée peut être nécessaire : consultez le développeur et vérifiez votre modèle."
+        },
+        {
+          "question": "Où trouver ma commande ?",
+          "answer": "Dans le portail central avec l'email d'achat ; contrôlez les paiements en attente avant de recommencer."
+        }
+      ],
+      "highlights": [
+        "Offres actuelles du système principal",
+        "Opplex et Filex identifiés",
+        "Compte et assistance privés"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "fr",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Préparez Get IPTV pour votre écran",
+      "hero_description": "Sur getiptv.store, commencez par modèle et lecteur, comparez Opplex et Filex puis passez sur Opplexify après vos vérifications.",
+      "guide_heading": "Un appareil prêt, une étape à la fois",
+      "guide_intro": "Quelques contrôles clairs aident à poser la bonne question avant de choisir un forfait.",
+      "guide_sections": [
+        {
+          "heading": "Trouvez le modèle exact",
+          "body": "Consultez les réglages et notez le système. Smart TV ne confirme pas la compatibilité."
+        },
+        {
+          "heading": "Vérifiez le lecteur",
+          "body": "Utilisez les informations officielles pour exigences et licence ; confirmez modèle et version avec l'assistance."
+        },
+        {
+          "heading": "Notez le problème utile",
+          "body": "Enregistrez étape, message et dernier changement. Protégez mots de passe et liens privés."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Faut-il un autre appareil ?",
+          "answer": "Vérifiez d'abord le modèle actuel et les exigences officielles du lecteur."
+        },
+        {
+          "question": "Deux applications ajoutent-elles des connexions ?",
+          "answer": "Non. Vérifiez la limite du forfait choisi : fermez la lecture actuelle avant de comparer."
+        },
+        {
+          "question": "Où se fait le paiement ?",
+          "answer": "Sur Opplexify, après vérification du fournisseur, de la durée et du total. Le compte reste centralisé."
+        }
+      ],
+      "highlights": [
+        "Checklist centrée sur votre appareil",
+        "Vraies données Opplex et Filex",
+        "Commandes et support dans un portail"
+      ],
+      "brand": "getiptv",
+      "locale": "fr",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Een IPTV-abonnement met duidelijke details",
+      "hero_description": "Vergelijk Opplex en Filex op iptvsubscription.shop: dienst, looptijd en volledige kosten, daarna het totaal op Opplexify.",
+      "guide_heading": "Weet wat je koopt",
+      "guide_intro": "Een bruikbaar budget onderscheidt dienst, speler en verlenging.",
+      "guide_sections": [
+        {
+          "heading": "Kies dienst en periode",
+          "body": "Bewaar de provider en bevestig de verbindingslimiet van het gekozen plan voordat je de duur kiest."
+        },
+        {
+          "heading": "Bereken volledige kosten",
+          "body": "Tel een aparte licentie mee en controleer de bij betaling getoonde kosten."
+        },
+        {
+          "heading": "Bereid verlenging voor",
+          "body": "Bewaar provider, referentie en einddatum privé. Vraag hoe de nieuwe aankoop wordt toegepast."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Waar komen de prijzen vandaan?",
+          "answer": "Van de hoofdwebsite Opplex. Bevestig het actuele totaal op Opplexify."
+        },
+        {
+          "question": "Is de app inbegrepen?",
+          "answer": "Er kan een aparte licentie nodig zijn: bekijk ontwikkelaar en exact model."
+        },
+        {
+          "question": "Waar vind ik mijn bestelling?",
+          "answer": "In het centrale portaal met je aankoopmailadres; controleer openstaande betalingen vóór een nieuwe poging."
+        }
+      ],
+      "highlights": [
+        "Actuele plannen uit het hoofdsysteem",
+        "Opplex en Filex herkenbaar",
+        "Privéaccount en ondersteuning"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "nl",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Bereid Get IPTV voor op jouw scherm",
+      "hero_description": "Begin op getiptv.store met model en speler, vergelijk Opplex en Filex en ga na je controles naar Opplexify.",
+      "guide_heading": "Eén voorbereid apparaat, stap voor stap",
+      "guide_intro": "Enkele duidelijke controles helpen de juiste vraag te stellen voordat je een plan kiest.",
+      "guide_sections": [
+        {
+          "heading": "Vind het exacte model",
+          "body": "Bekijk instellingen en noteer het systeem. Smart TV bevestigt geen compatibiliteit."
+        },
+        {
+          "heading": "Controleer de speler",
+          "body": "Gebruik officiële eisen en licentievoorwaarden; bespreek model en versie met ondersteuning."
+        },
+        {
+          "heading": "Noteer het probleem",
+          "body": "Bewaar stap, melding en laatste wijziging. Bescherm wachtwoorden en privélinks."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Heb ik een ander apparaat nodig?",
+          "answer": "Controleer eerst je huidige model en officiële spelervereisten."
+        },
+        {
+          "question": "Geven twee apps extra verbindingen?",
+          "answer": "Nee. Controleer de limiet van het gekozen plan; sluit de huidige vóór vergelijking."
+        },
+        {
+          "question": "Waar betaal ik?",
+          "answer": "Op Opplexify, na controle van provider, periode en totaal. Je account blijft centraal."
+        }
+      ],
+      "highlights": [
+        "Apparaatgerichte checklist",
+        "Echte Opplex- en Filex-gegevens",
+        "Bestellingen en hulp in één portaal"
+      ],
+      "brand": "getiptv",
+      "locale": "nl",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Uma assinatura IPTV com detalhes claros",
+      "hero_description": "Compare Opplex e Filex em iptvsubscription.shop: serviço, período e custo completo, depois o total na Opplexify.",
+      "guide_heading": "Entenda o que você compra",
+      "guide_intro": "Um orçamento útil separa serviço, reprodutor e renovação.",
+      "guide_sections": [
+        {
+          "heading": "Escolha serviço e período",
+          "body": "Guarde o nome do fornecedor e confirme o limite de conexões do plano escolhido antes de definir a duração."
+        },
+        {
+          "heading": "Calcule o custo completo",
+          "body": "Inclua qualquer licença separada e confira as taxas mostradas no pagamento."
+        },
+        {
+          "heading": "Prepare a renovação",
+          "body": "Guarde fornecedor, referência e vencimento em privado. Pergunte como a nova compra será aplicada."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "De onde vêm os preços?",
+          "answer": "Do site principal Opplex. Confirme o total atualizado na Opplexify."
+        },
+        {
+          "question": "O aplicativo está incluído?",
+          "answer": "Pode exigir licença separada: consulte o desenvolvedor e confira seu modelo."
+        },
+        {
+          "question": "Onde encontro meu pedido?",
+          "answer": "No portal central com o email da compra; confira pagamentos pendentes antes de repetir."
+        }
+      ],
+      "highlights": [
+        "Planos atuais do sistema principal",
+        "Opplex e Filex identificados",
+        "Conta e atendimento privados"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "pt",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Prepare Get IPTV para sua tela",
+      "hero_description": "Em getiptv.store, comece pelo modelo e reprodutor, compare Opplex e Filex e continue na Opplexify após esclarecer dúvidas.",
+      "guide_heading": "Um aparelho preparado, uma etapa por vez",
+      "guide_intro": "Algumas verificações claras ajudam a perguntar o necessário antes de escolher um plano.",
+      "guide_sections": [
+        {
+          "heading": "Encontre o modelo exato",
+          "body": "Consulte ajustes e anote o sistema. Smart TV não confirma compatibilidade."
+        },
+        {
+          "heading": "Confira o reprodutor",
+          "body": "Use requisitos e licença oficiais; confirme modelo e versão com o atendimento."
+        },
+        {
+          "heading": "Registre o problema útil",
+          "body": "Anote etapa, mensagem e última mudança. Proteja senhas e links privados."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Preciso de outro aparelho?",
+          "answer": "Confira primeiro o modelo atual e os requisitos oficiais do reprodutor."
+        },
+        {
+          "question": "Dois aplicativos acrescentam conexões?",
+          "answer": "Não. Confira o limite do plano escolhido; feche a atual antes de comparar."
+        },
+        {
+          "question": "Onde pago?",
+          "answer": "Na Opplexify, conferindo fornecedor, período e total. A conta permanece centralizada."
+        }
+      ],
+      "highlights": [
+        "Checklist centrado no aparelho",
+        "Dados reais de Opplex e Filex",
+        "Pedidos e suporte no mesmo portal"
+      ],
+      "brand": "getiptv",
+      "locale": "pt",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Подписка IPTV с понятными условиями",
+      "hero_description": "Сравните Opplex и Filex на iptvsubscription.shop: сервис, срок и полную стоимость, затем итог на Opplexify.",
+      "guide_heading": "Понимайте свою покупку",
+      "guide_intro": "Полезный бюджет разделяет услугу, плеер и продление.",
+      "guide_sections": [
+        {
+          "heading": "Выберите сервис и срок",
+          "body": "Сохраните поставщика и подтвердите лимит подключений выбранного плана до выбора периода."
+        },
+        {
+          "heading": "Рассчитайте полную стоимость",
+          "body": "Учтите отдельную лицензию и сборы, показанные при оплате."
+        },
+        {
+          "heading": "Подготовьте продление",
+          "body": "Храните поставщика, номер и дату окончания приватно. Уточните применение новой покупки."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Откуда берутся цены?",
+          "answer": "С основного сайта Opplex. Подтвердите актуальный итог на Opplexify."
+        },
+        {
+          "question": "Включено ли приложение?",
+          "answer": "Может потребоваться отдельная лицензия: проверьте разработчика и точную модель."
+        },
+        {
+          "question": "Где найти заказ?",
+          "answer": "В центральном кабинете с почтой покупки; проверьте ожидающие платежи до новой попытки."
+        }
+      ],
+      "highlights": [
+        "Актуальные планы основной системы",
+        "Указаны Opplex и Filex",
+        "Личный кабинет и поддержка"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "ru",
+      "is_published": true
+    },
+    {
+      "hero_heading": "Подготовьте Get IPTV для своего экрана",
+      "hero_description": "На getiptv.store начните с модели и плеера, сравните Opplex и Filex и после проверок перейдите на Opplexify.",
+      "guide_heading": "Одно устройство, один шаг за раз",
+      "guide_intro": "Несколько понятных проверок помогают задать нужный вопрос до выбора плана.",
+      "guide_sections": [
+        {
+          "heading": "Найдите точную модель",
+          "body": "Посмотрите настройки и запишите систему. Smart TV не подтверждает совместимость."
+        },
+        {
+          "heading": "Проверьте плеер",
+          "body": "Используйте официальные требования и лицензию; уточните модель и версию у поддержки."
+        },
+        {
+          "heading": "Запишите полезный симптом",
+          "body": "Сохраните шаг, сообщение и последнее изменение. Защищайте пароли и приватные ссылки."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Нужно другое устройство?",
+          "answer": "Сначала проверьте нынешнюю модель и официальные требования плеера."
+        },
+        {
+          "question": "Два приложения добавляют подключения?",
+          "answer": "Нет. Проверьте лимит выбранного плана; закройте текущее перед сравнением."
+        },
+        {
+          "question": "Где проходит оплата?",
+          "answer": "На Opplexify после проверки поставщика, срока и итога. Кабинет остаётся центральным."
+        }
+      ],
+      "highlights": [
+        "Список подготовки устройства",
+        "Реальные данные Opplex и Filex",
+        "Заказы и помощь в одном кабинете"
+      ],
+      "brand": "getiptv",
+      "locale": "ru",
+      "is_published": true
+    },
+    {
+      "hero_heading": "اشتراك IPTV بتفاصيل واضحة",
+      "hero_description": "قارن Opplex وFilex على iptvsubscription.shop بحسب الخدمة والمدة والتكلفة الكاملة ثم راجع الإجمالي على Opplexify.",
+      "guide_heading": "افهم ما تشتريه",
+      "guide_intro": "ميزانية مفيدة تفصل الخدمة والمشغّل والتجديد.",
+      "guide_sections": [
+        {
+          "heading": "اختر الخدمة والمدة",
+          "body": "احتفظ باسم المزوّد وأكد حد الاتصالات في الباقة المختارة قبل تحديد الفترة."
+        },
+        {
+          "heading": "احسب التكلفة الكاملة",
+          "body": "أضف أي ترخيص مستقل وراجع الرسوم الظاهرة عند الدفع."
+        },
+        {
+          "heading": "استعد للتجديد",
+          "body": "احفظ المزوّد ورقم الطلب وتاريخ الانتهاء خصوصيًا. اسأل عن تطبيق الشراء الجديد."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "من أين تأتي الأسعار؟",
+          "answer": "من موقع Opplex الرئيسي. أكد الإجمالي الحالي على Opplexify."
+        },
+        {
+          "question": "هل التطبيق مشمول؟",
+          "answer": "قد يحتاج ترخيصًا منفصلاً؛ راجع المطوّر وطرازك الدقيق."
+        },
+        {
+          "question": "أين أجد طلبي؟",
+          "answer": "في البوابة المركزية ببريد الشراء؛ افحص الدفع المعلّق قبل تكراره."
+        }
+      ],
+      "highlights": [
+        "خطط محدثة من النظام الرئيسي",
+        "Opplex وFilex باسميهما",
+        "حساب ودعم خاصان"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "ar",
+      "is_published": true
+    },
+    {
+      "hero_heading": "جهّز Get IPTV لشاشتك",
+      "hero_description": "على getiptv.store ابدأ بالطراز والمشغّل وقارن Opplex وFilex ثم انتقل إلى Opplexify بعد توضيح الأسئلة.",
+      "guide_heading": "جهاز جاهز، خطوة واحدة كل مرة",
+      "guide_intro": "فحوصات واضحة تساعد على طرح السؤال المناسب قبل اختيار الخطة.",
+      "guide_sections": [
+        {
+          "heading": "اعرف الطراز الدقيق",
+          "body": "افتح الإعدادات وسجّل النظام. تصنيف Smart TV لا يثبت التوافق."
+        },
+        {
+          "heading": "راجع المشغّل",
+          "body": "استخدم متطلباته وترخيصه الرسميين؛ أكد الطراز والإصدار مع الدعم."
+        },
+        {
+          "heading": "سجّل العرَض المفيد",
+          "body": "احفظ الخطوة والرسالة وآخر تعديل. احمِ كلمات المرور والروابط الخاصة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل أحتاج جهازًا آخر؟",
+          "answer": "تحقق من جهازك الحالي ومتطلبات المشغّل الرسمية أولاً."
+        },
+        {
+          "question": "هل تطبيقان يزيدان الاتصالات؟",
+          "answer": "لا. راجع عدد الاتصالات المسموح به في الباقة المختارة؛ أغلق الحالي قبل المقارنة."
+        },
+        {
+          "question": "أين يتم الدفع؟",
+          "answer": "على Opplexify بعد مراجعة المزوّد والمدة والإجمالي. يبقى الحساب مركزيًا."
+        }
+      ],
+      "highlights": [
+        "قائمة تتمحور حول جهازك",
+        "بيانات Opplex وFilex الفعلية",
+        "طلبات ودعم في بوابة واحدة"
+      ],
+      "brand": "getiptv",
+      "locale": "ar",
+      "is_published": true
+    },
+    {
+      "hero_heading": "واضح تفصیلات کے ساتھ IPTV سبسکرپشن",
+      "hero_description": "iptvsubscription.shop پر Opplex اور Filex کی سروس، مدت اور مکمل خرچ کا موازنہ کریں، پھر Opplexify پر آخری رقم دیکھیں۔",
+      "guide_heading": "جانیں آپ کیا خرید رہے ہیں",
+      "guide_intro": "اچھا بجٹ سروس، پلیئر اور تجدید کو الگ رکھتا ہے۔",
+      "guide_sections": [
+        {
+          "heading": "سروس اور مدت چنیں",
+          "body": "فراہم کنندہ کا نام محفوظ رکھیں اور مدت سے پہلے منتخب پلان کے کنکشن کی حد کی تصدیق کریں۔"
+        },
+        {
+          "heading": "پورا خرچ شمار کریں",
+          "body": "الگ لائسنس شامل کریں اور ادائیگی پر دکھائی گئی فیس دیکھیں۔"
+        },
+        {
+          "heading": "تجدید کی تیاری کریں",
+          "body": "فراہم کنندہ، حوالہ اور آخری تاریخ نجی رکھیں۔ نئی خریداری کا اطلاق پوچھیں۔"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "قیمتیں کہاں سے آتی ہیں؟",
+          "answer": "مرکزی Opplex ویب سائٹ سے؛ Opplexify پر تازہ آخری رقم کی تصدیق کریں۔"
+        },
+        {
+          "question": "کیا ایپ شامل ہے؟",
+          "answer": "الگ لائسنس درکار ہو سکتا ہے؛ ڈویلپر اور اپنا درست ماڈل چیک کریں۔"
+        },
+        {
+          "question": "آرڈر کہاں دیکھوں؟",
+          "answer": "خریداری کے ای میل سے مرکزی پورٹل میں؛ دوبارہ کوشش سے پہلے زیرِ التوا ادائیگی دیکھیں۔"
+        }
+      ],
+      "highlights": [
+        "مرکزی نظام کے تازہ پلانز",
+        "Opplex اور Filex واضح ناموں کے ساتھ",
+        "نجی اکاؤنٹ اور سپورٹ"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "ur",
+      "is_published": true
+    },
+    {
+      "hero_heading": "اپنی اسکرین کے لیے Get IPTV تیار کریں",
+      "hero_description": "getiptv.store پر ماڈل اور پلیئر سے شروع کریں، Opplex اور Filex دیکھیں اور سوال واضح ہونے پر Opplexify جائیں۔",
+      "guide_heading": "ایک تیار ڈیوائس، ایک وقت میں ایک قدم",
+      "guide_intro": "واضح جانچیں پلان چننے سے پہلے درست سوال پوچھنے میں مدد دیتی ہیں۔",
+      "guide_sections": [
+        {
+          "heading": "درست ماڈل معلوم کریں",
+          "body": "سیٹنگز میں سسٹم لکھیں۔ Smart TV کا نام مطابقت ثابت نہیں کرتا۔"
+        },
+        {
+          "heading": "پلیئر چیک کریں",
+          "body": "سرکاری تقاضے اور لائسنس دیکھیں؛ سپورٹ سے ماڈل اور ورژن کی تصدیق کریں۔"
+        },
+        {
+          "heading": "کارآمد علامت لکھیں",
+          "body": "قدم، پیغام اور آخری تبدیلی محفوظ کریں۔ پاس ورڈ اور نجی لنکس بچائیں۔"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "کیا نئی ڈیوائس چاہیے؟",
+          "answer": "پہلے موجودہ ماڈل اور پلیئر کے سرکاری تقاضے چیک کریں۔"
+        },
+        {
+          "question": "کیا دو ایپس سے کنکشن بڑھتا ہے؟",
+          "answer": "نہیں۔ منتخب پلان کے کنکشن کی حد چیک کریں؛ موازنے سے پہلے موجودہ بند کریں۔"
+        },
+        {
+          "question": "ادائیگی کہاں ہوگی؟",
+          "answer": "Opplexify پر سروس، مدت اور رقم دیکھنے کے بعد۔ اکاؤنٹ مرکزی پورٹل میں رہے گا۔"
+        }
+      ],
+      "highlights": [
+        "ڈیوائس پر مبنی تیاری کی فہرست",
+        "Opplex اور Filex کی اصل معلومات",
+        "آرڈر اور مدد ایک ہی پورٹل میں"
+      ],
+      "brand": "getiptv",
+      "locale": "ur",
+      "is_published": true
+    },
+    {
+      "hero_heading": "साफ़ विवरण के साथ IPTV सब्सक्रिप्शन",
+      "hero_description": "iptvsubscription.shop पर Opplex और Filex की सेवा, अवधि और पूरा खर्च तुलना करें, फिर Opplexify पर अंतिम रकम देखें।",
+      "guide_heading": "जानें आप क्या खरीदते हैं",
+      "guide_intro": "एक उपयोगी बजट सेवा, प्लेयर और नवीनीकरण को अलग रखता है।",
+      "guide_sections": [
+        {
+          "heading": "सेवा और अवधि चुनें",
+          "body": "प्रदाता का नाम रखें और अवधि से पहले चुने प्लान की कनेक्शन सीमा की पुष्टि करें।"
+        },
+        {
+          "heading": "पूरा खर्च गिनें",
+          "body": "अलग लाइसेंस जोड़ें और भुगतान पर दिखे शुल्क देखें।"
+        },
+        {
+          "heading": "नवीनीकरण की तैयारी करें",
+          "body": "प्रदाता, संदर्भ और अंतिम तारीख निजी रखें। पूछें नई खरीद कैसे लागू होगी।"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "कीमतें कहाँ से आती हैं?",
+          "answer": "मुख्य Opplex वेबसाइट से; Opplexify पर ताज़ा कुल रकम पक्की करें।"
+        },
+        {
+          "question": "क्या ऐप शामिल है?",
+          "answer": "अलग लाइसेंस लग सकता है; डेवलपर और अपना सही मॉडल जाँचें।"
+        },
+        {
+          "question": "ऑर्डर कहाँ देखूँ?",
+          "answer": "खरीद वाले ईमेल से केंद्रीय पोर्टल में; दूसरी कोशिश से पहले लंबित भुगतान देखें।"
+        }
+      ],
+      "highlights": [
+        "मुख्य प्रणाली के ताज़ा प्लान",
+        "Opplex और Filex साफ़ नामों के साथ",
+        "निजी खाता और सहायता"
+      ],
+      "brand": "iptvsubscription",
+      "locale": "hi",
+      "is_published": true
+    },
+    {
+      "hero_heading": "अपनी स्क्रीन के लिए Get IPTV तैयार करें",
+      "hero_description": "getiptv.store पर मॉडल और प्लेयर से शुरू करें, Opplex और Filex देखें और सवाल साफ़ होने पर Opplexify जाएँ।",
+      "guide_heading": "एक तैयार डिवाइस, एक समय में एक कदम",
+      "guide_intro": "कुछ साफ़ जाँचें प्लान चुनने से पहले सही सवाल पूछने में मदद करती हैं।",
+      "guide_sections": [
+        {
+          "heading": "सही मॉडल पता करें",
+          "body": "सेटिंग में सिस्टम लिखें। Smart TV नाम अनुकूलता साबित नहीं करता।"
+        },
+        {
+          "heading": "प्लेयर जाँचें",
+          "body": "आधिकारिक ज़रूरतें और लाइसेंस देखें; सहायता से मॉडल और वर्ज़न पक्का करें।"
+        },
+        {
+          "heading": "काम का लक्षण लिखें",
+          "body": "कदम, संदेश और आखिरी बदलाव रखें। पासवर्ड और निजी लिंक बचाएँ।"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "क्या नया डिवाइस चाहिए?",
+          "answer": "पहले मौजूदा मॉडल और प्लेयर की आधिकारिक ज़रूरतें जाँचें।"
+        },
+        {
+          "question": "क्या दो ऐप से कनेक्शन बढ़ते हैं?",
+          "answer": "नहीं। चुने प्लान की कनेक्शन सीमा देखें; तुलना से पहले वर्तमान बंद करें।"
+        },
+        {
+          "question": "भुगतान कहाँ होगा?",
+          "answer": "Opplexify पर सेवा, अवधि और रकम देखने के बाद। खाता केंद्रीय पोर्टल में रहेगा।"
+        }
+      ],
+      "highlights": [
+        "डिवाइस पर आधारित तैयारी सूची",
+        "Opplex और Filex के असली विवरण",
+        "ऑर्डर और मदद एक ही पोर्टल में"
+      ],
+      "brand": "getiptv",
+      "locale": "hi",
+      "is_published": true
+    }
+  ]
+}

@@ -29,7 +29,7 @@ class OpplexifyOrderController extends Controller
         $data = $this->payload($request, [
             'device_id' => ['nullable', 'integer', 'min:1'],
             'attribution' => ['sometimes', 'array:brand,session_id,locale,page', 'required_array_keys:brand'],
-            'attribution.brand' => ['required_with:attribution', 'string', 'in:trex,opplex,geo,5g'],
+            'attribution.brand' => ['required_with:attribution', 'string', 'in:trex,opplex,geo,5g,iptvsubscription,getiptv'],
             'attribution.session_id' => ['sometimes', 'string', 'regex:/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i'],
             'attribution.locale' => ['sometimes', 'required', 'string', 'max:12'],
             'attribution.page' => ['sometimes', 'nullable', 'string', 'max:160'],

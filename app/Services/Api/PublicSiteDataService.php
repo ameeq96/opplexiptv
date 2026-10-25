@@ -46,6 +46,8 @@ class PublicSiteDataService
             '5G IPTV' => 1, '5G IPTV - 3 Months' => 3,
             '5G IPTV - Half Yearly' => 6, '5G IPTV - Yearly' => 12,
         ]],
+        'iptvsubscription' => ['name' => 'IPTV Subscription', 'plans' => [], 'selectable_providers' => true],
+        'getiptv' => ['name' => 'Get IPTV', 'plans' => [], 'selectable_providers' => true],
     ];
 
     public function __construct(
@@ -463,6 +465,9 @@ class PublicSiteDataService
     {
         abort_unless(isset(self::LANDING_BRANDS[$brand]), 404);
         $definition = self::LANDING_BRANDS[$brand];
+        if (!empty($definition['selectable_providers'])) {
+            return $this->selectableLandingPlans($brand, $definition['name']);
+        }
         $packages = Package::query()
             ->where('active', true)
             ->where('is_available', true)
@@ -493,6 +498,36 @@ class PublicSiteDataService
         ];
     }
 
+    private function selectableLandingPlans(string $brand, string $name): array
+    {
+        $rows = Package::query()->where('active', true)->where('is_available', true)
+            ->where('type', 'iptv')->whereIn('vendor', ['opplex', 'starshare'])
+            ->where('price_amount', '>', 0)->where('duration_months', '>', 0)
+            ->with('translations')->orderBy('duration_months')->orderBy('id')->get()
+            ->filter(fn (Package $package) => $package->isSelectableIptvProvider());
+        $provider = fn (Package $package) => in_array(Str::lower($this->packageServiceName($package)), ['filex', 'filex iptv'], true)
+            ? 'Filex' : 'Opplex';
+        $offer = fn (Package $package) => json_encode([$provider($package), (int) $package->duration_months, (float) $package->price_amount], JSON_THROW_ON_ERROR);
+        $named = $rows->reject(fn (Package $package) => $package->isDurationPlan())->groupBy($offer);
+        $annualOnly = $rows->filter(static fn (Package $package) => in_array(
+            'Yearly subscription only (monthly plan unavailable)', $package->features ?? [], true
+        ))->map(fn (Package $package) => Str::lower($this->packageServiceName($package)))->unique();
+        $packages = $rows->reject(fn (Package $package) => $annualOnly->contains(
+            Str::lower($this->packageServiceName($package))
+        ) && (int) $package->duration_months !== 12)->reject(fn (Package $package) => $package->isDurationPlan()
+            && $named->has($offer($package)) && $named->get($offer($package))->contains(fn (Package $canonical) =>
+                $package->max_devices === null || $package->max_devices === $canonical->max_devices))
+            ->map(function (Package $package) use ($provider): array {
+                $card = $package->toIptvArray();
+                $card['service'] = $provider($package);
+
+                return $card;
+            })->unique(fn (array $card) => json_encode([$card['service'], $card['duration_months'], (float) $card['price_amount'], $card['max_devices']], JSON_THROW_ON_ERROR))
+            ->values()->all();
+
+        return ['brand' => $brand, 'provider_name' => $name, 'count' => count($packages), 'packages' => $packages];
+    }
+
     public function landingContent(string $brand): array
     {
         $catalog = $this->landingPlans($brand);
@@ -508,7 +543,8 @@ class PublicSiteDataService
                 'id' => (int) $package['id'],
                 'type' => 'iptv',
                 'title' => $months === 1 ? 'Monthly plan' : $months.'-month plan',
-                'service' => $catalog['provider_name'],
+                'service' => !empty(self::LANDING_BRANDS[$catalog['brand']]['selectable_providers'])
+                    ? $package['service'] : $catalog['provider_name'],
                 'price_amount' => (float) $package['price_amount'],
                 'duration_months' => $months,
                 'currency' => $currency,

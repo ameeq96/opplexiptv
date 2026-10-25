@@ -15,7 +15,7 @@ class LandingIndexNowSubmit extends Command
 
     protected $description = 'Validate explicitly selected changed landing pages and optionally notify IndexNow';
 
-    private const DOMAINS = ['trexiptv8k.store', 'opplexiptv.store', 'geoiptv.store', '5gliveiptv.store'];
+    private const DOMAINS = ['trexiptv8k.store', 'opplexiptv.store', 'geoiptv.store', '5gliveiptv.store', 'iptvsubscription.shop', 'getiptv.store'];
     private const LOCALES = ['es', 'fr', 'it', 'nl', 'pt', 'ru', 'ur', 'ar', 'hi'];
     private const PAGES = ['about', 'contact', 'faqs', 'packages', 'reseller-panel', 'iptv-applications', 'setup', 'movies', 'shop', 'activate', 'activate-info', 'blogs', 'terms-of-service', 'privacy-policy', 'refund-policy'];
     private const ENDPOINT = 'https://api.indexnow.org/indexnow';

@@ -64,6 +64,82 @@
       "resumeFinalFees": "Eventuele kosten en het eindtotaal worden vóór betaling op Opplexify getoond."
     },
     "help": {
+      "iptvsubscription": {
+        "intro": "Een bruikbaar budget onderscheidt dienst, speler en verlenging.",
+        "questions": [
+          {
+            "id": "iptvsubscription-help",
+            "label": "Wat wil je controleren?",
+            "options": [
+              {
+                "value": "check-0",
+                "label": "Volledige kosten vergelijken",
+                "answer": "Bewaar de provider en bevestig de verbindingslimiet van het gekozen plan voordat je de duur kiest.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-1",
+                "label": "Verlenging voorbereiden",
+                "answer": "Tel een aparte licentie mee en controleer de bij betaling getoonde kosten.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-2",
+                "label": "Een bestelling opzoeken",
+                "answer": "Bewaar provider, referentie en einddatum privé. Vraag hoe de nieuwe aankoop wordt toegepast.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "getiptv": {
+        "intro": "Enkele duidelijke controles helpen de juiste vraag te stellen voordat je een plan kiest.",
+        "questions": [
+          {
+            "id": "getiptv-help",
+            "label": "Wat wil je controleren?",
+            "options": [
+              {
+                "value": "check-0",
+                "label": "Mijn apparaat herkennen",
+                "answer": "Bekijk instellingen en noteer het systeem. Smart TV bevestigt geen compatibiliteit.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-1",
+                "label": "De speler controleren",
+                "answer": "Gebruik officiële eisen en licentievoorwaarden; bespreek model en versie met ondersteuning.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-2",
+                "label": "Een probleem beschrijven",
+                "answer": "Bewaar stap, melding en laatste wijziging. Bescherm wachtwoorden en privélinks.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
       "trex": {
         "intro": "Trex helpt je scherm en speler voor te bereiden voordat je een langerlopend plan kiest.",
         "questions": [
@@ -186,6 +262,652 @@
   "locale":"nl",
   "labels":{"home":"Start","pages":"Ontdek","packages":"Pakketten","account":"Mijn account","contact":"Contact","readMore":"Lees de gids","backToGuides":"Terug naar de gidsen","language":"Taal","loading":"Gegevens worden geladen…","unavailable":"De gegevens zijn tijdelijk niet beschikbaar.","retry":"Opnieuw proberen","choosePlan":"Bekijk de pakketten","setup":"Installatie","guide":"Praktische gids","disclaimer":"Controleer de actuele voorwaarden voordat je bestelt.","governingPolicy":"Lees het centrale beleid dat voor deze dienst geldt"},
   "brands":{
+    "iptvsubscription": {
+      "name": "IPTV Subscription",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "IPTV Subscription: weet wat je kiest",
+          "description": "Op iptvsubscription.shop vergelijk je een IPTV-abonnement op dienst, duur en volledige kosten.",
+          "intro": "Op iptvsubscription.shop vergelijk je een IPTV-abonnement op dienst, duur en volledige kosten.",
+          "sections": [
+            {
+              "heading": "Bewust kiezen",
+              "body": "Opplex en Filex zijn verschillende opties. Bewaar de providernaam bij de gekozen looptijd; de naam van deze website maakt diensten niet uitwisselbaar."
+            },
+            {
+              "heading": "Een gedeeld traject",
+              "body": "Aanbod en account komen uit het centrale Opplex-systeem. Betaling verloopt via Opplexify; de gedeelde ondersteuning heet Opplex IPTV Subscription Services."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Vraag naar je IPTV-abonnement of verlenging",
+          "description": "Met provider en looptijd kan ondersteuning gerichter antwoorden.",
+          "intro": "Met provider en looptijd kan ondersteuning gerichter antwoorden.",
+          "sections": [
+            {
+              "heading": "Voor de aankoop",
+              "body": "Vermeld je apparaatmodel en vraag welke kosten bij de dienst of een afzonderlijke speler horen."
+            },
+            {
+              "heading": "Een bestaande bestelling",
+              "body": "Gebruik voor orders het privéportaal en je referentie. Hulp is 24 uur per dag beschikbaar zonder direct antwoord te garanderen; stuur geen wachtwoorden."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "IPTV-vragen over prijs, toegang en verlenging",
+          "description": "Controleer de voorwaarden van het gekozen abonnement voordat je beslist.",
+          "intro": "Controleer de voorwaarden van het gekozen abonnement voordat je beslist.",
+          "sections": [
+            {
+              "heading": "Prijs en toegang",
+              "body": "Een maandgemiddelde helpt vergelijken, maar controleer het volledige bedrag en de betaalafspraak. Controleer de verbindingslimiet van het gekozen pakket; vraag ondersteuning als die niet vermeld is."
+            },
+            {
+              "heading": "Betalen en verlengen",
+              "body": "Bekijk einddatum en vorige order vóór verlenging. Dat gebeurt niet automatisch; vraag hoe een nieuwe aankoop aansluit."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "IPTV-abonnementen: vergelijk prijs en looptijd",
+          "description": "Kies eerst Opplex of Filex en bepaal daarna welke periode past.",
+          "intro": "Kies eerst Opplex of Filex en bepaal daarna welke periode past.",
+          "sections": [
+            {
+              "heading": "Vergelijk dezelfde gegevens",
+              "body": "Vergelijk provider, valuta, duur en volledig bedrag. Neem een eventuele aparte spelerlicentie mee in je budget."
+            },
+            {
+              "heading": "Controleer het totaal",
+              "body": "Prijzen komen van de hoofdwebsite. Controleer op Opplexify pakket, eventuele kosten en totaal; een betaalvenster bewijst geen betaling."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "IPTV-reseller: begin met duidelijke afspraken",
+          "description": "Een persoonlijk abonnement verleent geen doorverkooprecht.",
+          "intro": "Een persoonlijk abonnement verleent geen doorverkooprecht.",
+          "sections": [
+            {
+              "heading": "Beschrijf je voorstel",
+              "body": "Beschrijf je klanten, gebruik en ondersteuningswerk. Vraag welke zakelijke afspraak beschikbaar is voor je toezeggingen doet."
+            },
+            {
+              "heading": "Vraag schriftelijke afspraken",
+              "body": "Deze pagina levert geen paneel, tegoed of gegarandeerde marge. Vraag schriftelijke toestemming, tarieven, grenzen en verantwoordelijkheden."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "IPTV-abonnement en speler: twee aparte aankopen",
+          "description": "Een speler is software; het IPTV-abonnement is een afzonderlijke dienst.",
+          "intro": "Een speler is software; het IPTV-abonnement is een afzonderlijke dienst.",
+          "sections": [
+            {
+              "heading": "Officiële vereisten",
+              "body": "Controleer via apparaatwinkel of officiële ontwikkelaar systemen, licentieduur en eventuele proefperiode of kosten."
+            },
+            {
+              "heading": "Een aparte licentie",
+              "body": "Geef exact model en versie door. Een bekende appnaam bewijst geen geschiktheid voor de gekozen dienst.",
+              "links": [
+                {
+                  "label": "Officiële VLC-handleiding voor Android",
+                  "url": "https://docs.videolan.me/vlc-android-user/"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Bereid je IPTV-abonnement voor op betaling",
+          "description": "Noteer apparaat, speler en dienst voordat je een lange looptijd kiest.",
+          "intro": "Noteer apparaat, speler en dienst voordat je een lange looptijd kiest.",
+          "sections": [
+            {
+              "heading": "Bereid de basis voor",
+              "body": "Houd dienstprijs en spelerlicentie apart. Bekijk de duur van elk onderdeel en waar je hulp krijgt."
+            },
+            {
+              "heading": "Los eerst de twijfel op",
+              "body": "Als betaling al loopt, bekijk eerst het centrale account. Laat een openstaande status uitleggen voordat je opnieuw begint.",
+              "links": [
+                {
+                  "label": "Officiële probleemoplossing voor Google TV",
+                  "url": "https://support.google.com/googletv/answer/10070482?hl=nl"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Eerst de film controleren, dan een plan kiezen",
+          "description": "Bevestig de toegestane beschikbaarheid van de gewenste titel.",
+          "intro": "Bevestig de toegestane beschikbaarheid van de gewenste titel.",
+          "sections": [
+            {
+              "heading": "Beschikbaarheid van de titel",
+              "body": "Een poster of categorie bewijst niet dat een film in je pakket of op jouw locatie beschikbaar is."
+            },
+            {
+              "heading": "Beeld en bediening",
+              "body": "Bekijk ondertitels, audio en bronkwaliteit. Dit is een kijkchecklist, geen inbegrepen filmcatalogus."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Een verstandig budget voor IPTV-apparatuur",
+          "description": "Misschien bezit je al geschikte apparatuur; controleer dat voor je geld uitgeeft.",
+          "intro": "Misschien bezit je al geschikte apparatuur; controleer dat voor je geld uitgeeft.",
+          "sections": [
+            {
+              "heading": "Wat heb je al?",
+              "body": "Schrijf apparaat, applicentie en dienst apart op. Zoek de eis die in je huidige opstelling ontbreekt."
+            },
+            {
+              "heading": "Koop voor een duidelijke behoefte",
+              "body": "Vergelijk updates, aansluitingen, afstandsbediening en retourvoorwaarden. Dit is een gids, geen winkelvoorraad of universele oplossing."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "IPTV activeren: begin bij de bestelling",
+          "description": "Bewaar provider en referentie en lees de huidige accountstatus.",
+          "intro": "Bewaar provider en referentie en lees de huidige accountstatus.",
+          "sections": [
+            {
+              "heading": "Lees de bestelstatus",
+              "body": "Een geopend of gesloten betaalvenster bevestigt geen afgeronde afschrijving of activering."
+            },
+            {
+              "heading": "Vraag naar de volgende stap",
+              "body": "Beschrijf de laatst bevestigde stap en status. Los openstaande betalingen op vóór een nieuwe aankoop; er is geen activeringstijd beloofd."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Gegevens voor een IPTV-activeringsvraag",
+          "description": "Help via een privékanaal de juiste bestelling te vinden.",
+          "intro": "Help via een privékanaal de juiste bestelling te vinden.",
+          "sections": [
+            {
+              "heading": "Nuttige gegevens",
+              "body": "Vermeld dienst, referentie, tijdstip, apparaat en exacte melding. Noem bestaande gesprekken over die order."
+            },
+            {
+              "heading": "Privé houden",
+              "body": "Stuur geen wachtwoorden, kaartgegevens of eenmalige codes. Snijd schermafbeeldingen bij tot de relevante fout."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "IPTV-gidsen: kiezen, kosten en verlengen",
+          "description": "Kies de handleiding voor de beslissing die nu voor je ligt.",
+          "intro": "Kies de handleiding voor de beslissing die nu voor je ligt.",
+          "sections": [
+            {
+              "heading": "Kies een handleiding",
+              "body": "De keuzehulp vergelijkt de volledige verplichting; de kostengids scheidt dienst, app en apparaat."
+            },
+            {
+              "heading": "Bewaar je aantekeningen",
+              "body": "De verlenglijst verzamelt provider, einddatum en vorige referentie. Die informatie helpt meer dan een oude prijs uit je hoofd."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "IPTV Subscription: voorwaarden vóór aankoop",
+          "description": "Deze pagina vat centrale Opplex-voorwaarden samen; lees de volledige gekoppelde tekst.",
+          "intro": "Deze pagina vat centrale Opplex-voorwaarden samen; lees de volledige gekoppelde tekst.",
+          "sections": [
+            {
+              "heading": "Gebruik en verantwoordelijkheid",
+              "body": "Gebruik juiste bestelgegevens, respecteer de verbindingslimiet en bescherm inloggegevens. Persoonlijke toegang staat herdistributie of doorverkoop niet toe."
+            },
+            {
+              "heading": "Aankoop en verlenging",
+              "body": "Plannen verlengen niet automatisch. Lees actuele voorwaarden, terugbetaling en aansprakelijkheid, met behoud van niet-uitsluitbare wettelijke rechten."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Privacy IPTV Subscription: vragen en aankopen",
+          "description": "Het centrale privacybeleid beschrijft gegevensverwerking in de gedeelde dienst.",
+          "intro": "Het centrale privacybeleid beschrijft gegevensverwerking in de gedeelde dienst.",
+          "sections": [
+            {
+              "heading": "Vragen en metingen",
+              "body": "Met toestemming verstuurt het formulier contactgegevens, bericht en websitebron. Optionele meting kan toegestane pagina-, taal- en checkoutinteracties omvatten."
+            },
+            {
+              "heading": "Andere diensten",
+              "body": "Pas je keuze aan via privacyinstellingen. WhatsApp, Tawk en Opplexify hebben eigen beleid; vermijd inloggegevens in vragen."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "IPTV-terugbetaling: lees het beleid vóór betaling",
+          "description": "Maak apparaat, dienst, duur en totaal duidelijk voordat je afrekent.",
+          "intro": "Maak apparaat, dienst, duur en totaal duidelijk voordat je afrekent.",
+          "sections": [
+            {
+              "heading": "Aankoopvoorwaarden",
+              "body": "Na prijsafspraak en orderbevestiging is aankoop definitief, behalve waar de wet terugbetaling vereist. Stoppen met gebruik levert niet vanzelf tegoed op."
+            },
+            {
+              "heading": "Een specifieke aanvraag",
+              "body": "Lees het volledige beleid en stel je vraag privé met referentie en reden. Wettelijke rechten blijven bestaan; er is geen fysieke retour."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/choosing-an-iptv-subscription",
+          "title": "Een IPTV-abonnement kiezen met het hele aanbod in beeld",
+          "description": "Maak een tabel met provider, duur, valuta en totaal en laat onzekerheden zichtbaar.",
+          "intro": "Maak een tabel met provider, duur, valuta en totaal en laat onzekerheden zichtbaar.",
+          "sections": [
+            {
+              "heading": "Schrijf de vereisten op",
+              "body": "Vergelijk wat nu verschuldigd is met de gekochte periode. Vraag wanneer toegang begint en verduidelijk de voorwaarden."
+            },
+            {
+              "heading": "Controleer de selectie",
+              "body": "Controleer apparaat, speler, aparte licentie en de verbindingslimiet van het gekozen plan. Bekijk provider en totaal nogmaals op Opplexify."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/iptv-subscription-renewal-checklist",
+          "title": "Checklist om je IPTV-abonnement te verlengen",
+          "description": "Begin bij je huidige account, niet een oude aanbieding.",
+          "intro": "Begin bij je huidige account, niet een oude aanbieding.",
+          "sections": [
+            {
+              "heading": "Verzamel de gegevens",
+              "body": "Bewaar provider, referentie en einddatum privé. Vraag hoe een nieuwe aankoop op de bestaande dienst wordt toegepast."
+            },
+            {
+              "heading": "Controleer stap voor stap",
+              "body": "Vergelijk actuele voorwaarden en los openstaande betalingen op. Bewaar de nieuwe order naast de vorige."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/iptv-device-and-player-costs",
+          "title": "IPTV-kosten: apparaat, speler en dienst",
+          "description": "Deze aankopen kunnen andere verkopers, looptijden en hulproutes hebben.",
+          "intro": "Deze aankopen kunnen andere verkopers, looptijden en hulproutes hebben.",
+          "sections": [
+            {
+              "heading": "Houd vragen gescheiden",
+              "body": "Noteer elke prijs en duur apart. Controleer officieel of de speler gratis, betaald of op proef is."
+            },
+            {
+              "heading": "Bewaar het resultaat",
+              "body": "Verduidelijk een ongeschikte app of onzekere order vóór een nieuw apparaat. Extra uitgaven vervangen geen concreet antwoord."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "getiptv": {
+      "name": "Get IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Get IPTV: begin met je eigen apparaat",
+          "description": "Op getiptv.store staan het model en de speler die je echt gebruikt centraal.",
+          "intro": "Op getiptv.store staan het model en de speler die je echt gebruikt centraal.",
+          "sections": [
+            {
+              "heading": "Bewust kiezen",
+              "body": "Smart TV is een categorie, geen geschiktheidscontrole. Lees officiële eisen en licenties voordat je de looptijd kiest."
+            },
+            {
+              "heading": "Een gedeeld traject",
+              "body": "Aanbod en bestellingen sluiten aan op Opplex. Opplexify verwerkt betaling; gedeelde ondersteuning heet Opplex IPTV Subscription Services."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Get IPTV-hulp: beschrijf wat vastloopt",
+          "description": "Vertel of je een app zoekt, een bestelling bekijkt of afspelen onderzoekt.",
+          "intro": "Vertel of je een app zoekt, een bestelling bekijkt of afspelen onderzoekt.",
+          "sections": [
+            {
+              "heading": "Voor de aankoop",
+              "body": "Vermeld model, systeem, spelerversie en melding. Controleer of andere apps op hetzelfde apparaat internet hebben."
+            },
+            {
+              "heading": "Een bestaande bestelling",
+              "body": "Gebruik voor orders het privéportaal. Ondersteuning is 24 uur per dag beschikbaar zonder direct antwoord te garanderen; bescherm wachtwoorden en privélinks."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Get IPTV-vragen over apparaten en spelers",
+          "description": "Het antwoord hangt af van je exacte model en dienst.",
+          "intro": "Het antwoord hangt af van je exacte model en dienst.",
+          "sections": [
+            {
+              "heading": "Prijs en toegang",
+              "body": "Vergelijkbare televisies kunnen andere systemen hebben. Controleer de spelervereisten; controleer de verbindingslimiet van het gekozen plan."
+            },
+            {
+              "heading": "Betalen en verlengen",
+              "body": "Checkout opent Opplexify. Controleer provider, periode en totaal en bekijk de bestaande centrale order voordat je opnieuw betaalt."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Get IPTV-plannen na de apparaatcontrole",
+          "description": "Vergelijk Opplex en Filex zodra je scherm en app kent.",
+          "intro": "Vergelijk Opplex en Filex zodra je scherm en app kent.",
+          "sections": [
+            {
+              "heading": "Vergelijk dezelfde gegevens",
+              "body": "Vraag naar de exacte combinatie, aparte licentie en de verbindingslimiet van het gekozen plan. Vergelijk daarna de looptijden."
+            },
+            {
+              "heading": "Controleer het totaal",
+              "body": "Bevestig op Opplexify dezelfde dienst, valuta, periode en totaal. Los een openstaande status op voor een nieuwe betaalpoging."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Get IPTV-reseller: organiseer eerst hulp",
+          "description": "Klanten helpen met IPTV brengt meer verantwoordelijkheden dan alleen verkoop.",
+          "intro": "Klanten helpen met IPTV brengt meer verantwoordelijkheden dan alleen verkoop.",
+          "sections": [
+            {
+              "heading": "Beschrijf je voorstel",
+              "body": "Beschrijf de verwachte apparaten en je aanpak bij vragen. Vraag of een passende zakelijke afspraak bestaat."
+            },
+            {
+              "heading": "Vraag schriftelijke afspraken",
+              "body": "Een persoonlijk plan staat herdistributie niet toe. Hier krijg je geen paneel, beloofd tegoed of winst: vraag schriftelijke voorwaarden."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Get IPTV-apps voor je exacte model",
+          "description": "Kies de speler voor het apparaat, niet voor alleen een bekende naam.",
+          "intro": "Kies de speler voor het apparaat, niet voor alleen een bekende naam.",
+          "sections": [
+            {
+              "heading": "Officiële vereisten",
+              "body": "Gebruik de apparaatwinkel of officiële ontwikkelaar. Deze website host geen APK-bestanden of onofficiële downloads."
+            },
+            {
+              "heading": "Een aparte licentie",
+              "body": "Controleer licentie, afstandsbediening, leesbaarheid en bediening. Bevestig de exacte versie vóór invoer van privégegevens.",
+              "links": [
+                {
+                  "label": "Officiële VLC-handleiding voor Android",
+                  "url": "https://docs.videolan.me/vlc-android-user/"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "IPTV voorbereiden: een praktische instellijst",
+          "description": "Begin met normaal internet, apparaat, speler en bestelstatus.",
+          "intro": "Begin met normaal internet, apparaat, speler en bestelstatus.",
+          "sections": [
+            {
+              "heading": "Bereid de basis voor",
+              "body": "Noteer model, versies en netwerk. Volg officiële instructies voor updates en opslag en bewaar werkende instellingen."
+            },
+            {
+              "heading": "Los eerst de twijfel op",
+              "body": "Als andere apps niet verbinden, controleer eerst apparaat of netwerk. Vraag hulp bij een openstaande order; opnieuw installeren kan bruikbare informatie wissen.",
+              "links": [
+                {
+                  "label": "Officiële probleemoplossing voor Google TV",
+                  "url": "https://support.google.com/googletv/answer/10070482?hl=nl"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Get IPTV: controleer de film vóór het plannen",
+          "description": "Bevestig via een bevoegde bron waar de titel beschikbaar is.",
+          "intro": "Bevestig via een bevoegde bron waar de titel beschikbaar is.",
+          "sections": [
+            {
+              "heading": "Beschikbaarheid van de titel",
+              "body": "Een poster of zoekresultaat bewijst geen toegang op jouw locatie. Vraag de juiste bron naar de exacte titel."
+            },
+            {
+              "heading": "Beeld en bediening",
+              "body": "Bekijk audio en ondertitels. Bron en opstelling beïnvloeden beeldkwaliteit; deze gids belooft geen inbegrepen catalogus."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Get IPTV-apparatuur: gebruik wat je bezit",
+          "description": "Zoek de ontbrekende vereiste voordat je een ander apparaat koopt.",
+          "intro": "Zoek de ontbrekende vereiste voordat je een ander apparaat koopt.",
+          "sections": [
+            {
+              "heading": "Wat heb je al?",
+              "body": "Ontbrekende apps, trage menu's, netwerkonderbrekingen en een onzekere order zijn verschillende problemen."
+            },
+            {
+              "heading": "Koop voor een duidelijke behoefte",
+              "body": "Vergelijk officiële updates, opslag, verbindingen en bediening. Lees retourvoorwaarden en aparte licentie: dit is een gids, geen winkel."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Get IPTV-activering: order en installatie",
+          "description": "Een voorbereid apparaat is niet hetzelfde als een actieve dienst.",
+          "intro": "Een voorbereid apparaat is niet hetzelfde als een actieve dienst.",
+          "sections": [
+            {
+              "heading": "Lees de bestelstatus",
+              "body": "Lees de accountstatus en bewaar dienst en referentie. Een betaalpagina bewijst geen voltooide afschrijving."
+            },
+            {
+              "heading": "Vraag naar de volgende stap",
+              "body": "Leg de status en onduidelijke apparaatstap uit. Een vraag activeert niet vanzelf een plan en bevestigt geen geschiktheid."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Informatie voor Get IPTV-activering",
+          "description": "Een korte volgorde scheidt bestelvragen van spelerproblemen.",
+          "intro": "Een korte volgorde scheidt bestelvragen van spelerproblemen.",
+          "sections": [
+            {
+              "heading": "Nuttige gegevens",
+              "body": "Geef dienst, referentie, versies, laatste geslaagde stap en foutmelding. Vermeld eerdere gesprekken."
+            },
+            {
+              "heading": "Privé houden",
+              "body": "Verberg inloggegevens, kaarten en privélinks in beelden. Deel nooit wachtwoorden of eenmalige codes."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Get IPTV-gidsen: voorbereiding en controles",
+          "description": "Kies de gids die past bij je huidige stap.",
+          "intro": "Kies de gids die past bij je huidige stap.",
+          "sections": [
+            {
+              "heading": "Kies een handleiding",
+              "body": "De apparaatgids helpt model en speler herkennen; de checklist vóór betaling verzamelt open vragen."
+            },
+            {
+              "heading": "Bewaar je aantekeningen",
+              "body": "Noteer bij verbindingsproblemen het symptoom en vergelijk één onderdeel tegelijk. Bewaar resultaten voor ondersteuning."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Get IPTV-voorwaarden: ken je dienst",
+          "description": "Get IPTV gebruikt de centrale Opplex-systemen en voorwaarden.",
+          "intro": "Get IPTV gebruikt de centrale Opplex-systemen en voorwaarden.",
+          "sections": [
+            {
+              "heading": "Gebruik en verantwoordelijkheid",
+              "body": "Respecteer auteursrecht, regionale voorwaarden en verbindingen. Bescherm gegevens; persoonlijke aankoop geeft geen doorverkooprecht."
+            },
+            {
+              "heading": "Aankoop en verlenging",
+              "body": "Plannen verlengen niet automatisch. Lees voorwaarden, terugbetaling en aansprakelijkheid naast het pakket, met behoud van wettelijke rechten."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Get IPTV-privacy: je installatievraag",
+          "description": "Deel alleen gegevens die nodig zijn voor de stap die je wilt uitvoeren.",
+          "intro": "Deel alleen gegevens die nodig zijn voor de stap die je wilt uitvoeren.",
+          "sections": [
+            {
+              "heading": "Vragen en metingen",
+              "body": "Met toestemming gaat de vraag met contactgegevens en websitebron naar het centrale systeem. Optionele meting kan toegestane pagina-, taal- en betaalgebeurtenissen vastleggen."
+            },
+            {
+              "heading": "Andere diensten",
+              "body": "Wijzig je keuze via privacyinstellingen. Chat, WhatsApp en Opplexify hebben eigen regels; vermijd inloggegevens en privélinks."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Get IPTV-terugbetaling: controleer eerst",
+          "description": "Geschiktheid, licentie en voorwaarden horen vóór de bestelling duidelijk te zijn.",
+          "intro": "Geschiktheid, licentie en voorwaarden horen vóór de bestelling duidelijk te zijn.",
+          "sections": [
+            {
+              "heading": "Aankoopvoorwaarden",
+              "body": "Een bevestigde digitale aankoop is definitief behalve waar de wet terugbetaling vereist. Ongebruikte tijd geeft niet automatisch tegoed."
+            },
+            {
+              "heading": "Een specifieke aanvraag",
+              "body": "Lees centraal beleid en leg je geval privé voor met referentie en reden. Niet-uitsluitbare wettelijke rechten blijven intact."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/how-to-get-iptv-on-your-device",
+          "title": "IPTV op je apparaat voorbereiden",
+          "description": "Noteer het precieze model voordat je een app zoekt.",
+          "intro": "Noteer het precieze model voordat je een app zoekt.",
+          "sections": [
+            {
+              "heading": "Schrijf de vereisten op",
+              "body": "Controleer systeem, spelervereisten en licentie. Gebruik de apparaatwinkel of het officiële ontwikkelaarskanaal."
+            },
+            {
+              "heading": "Controleer de selectie",
+              "body": "Bereid eerst één scherm voor: internet, bediening en leesbaarheid. Bevestig de dienst en sluit de huidige stream vóór een ander apparaat."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/iptv-setup-before-checkout",
+          "title": "IPTV vóór checkout: verzamel vijf gegevens",
+          "description": "Een korte lijst voorkomt doelloos wisselen tussen app, winkel en betaling.",
+          "intro": "Een korte lijst voorkomt doelloos wisselen tussen app, winkel en betaling.",
+          "sections": [
+            {
+              "heading": "Verzamel de gegevens",
+              "body": "Verzamel model en systeem; speler en versie; dienst en looptijd; eventuele licentie; status van bestaande orders."
+            },
+            {
+              "heading": "Controleer stap voor stap",
+              "body": "Vraag naar wat ontbreekt. Controleer daarna dienst, valuta, duur en totaal op Opplexify en bewaar de referentie privé."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/troubleshoot-an-iptv-connection",
+          "title": "Een IPTV-verbinding stap voor stap controleren",
+          "description": "Noteer of openen, lijst laden of afspelen mislukt.",
+          "intro": "Noteer of openen, lijst laden of afspelen mislukt.",
+          "sections": [
+            {
+              "heading": "Houd vragen gescheiden",
+              "body": "Controleer gewoon internet op hetzelfde apparaat. Vergelijk waar praktisch en toegestaan kabel of Wi-Fi, nadat je de huidige stream sluit."
+            },
+            {
+              "heading": "Bewaar het resultaat",
+              "body": "Noteer tijd, melding, versies en één wijziging met resultaat. Herstel wat niet helpt; publiceer geen privélinks en omzeil geen beperkingen."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    },
     "trex":{"name":"Trex IPTV 8K","pages":[
       {"slug":"about","kind":"editorial","title":"Trex IPTV 8K: eerst je opstelling, dan je jaarplan","description":"Leer hoe Trex IPTV 8K je helpt een jaarplan en je eigen apparatuur zorgvuldig te beoordelen.","intro":"Een jaar vooruit kiezen vraagt om meer dan een aantrekkelijke pakketnaam. Trex IPTV 8K brengt de vragen over je apparatuur, gebruik en bestelling bij elkaar.","sections":[{"heading":"Waar je bestelling terechtkomt","body":"Trex IPTV 8K is deze merkgerichte website; de actuele pakketten en contactgegevens komen uit het centrale Opplex IPTV-systeem. Je gaat via de hoofdwebsite naar Opplexify voor betaling en gebruikt Opplex voor je account en bestelvragen."},{"heading":"Waarom eerst je opstelling controleren?","body":"Bij een langere looptijd wil je onzekerheden vooraf oplossen. Deze gidsen helpen je apparaat, speler en volledige kosten vast te leggen. Het zijn voorbereidingsstappen, geen verslag van uitgevoerde apparaattests. De merknaam 8K is geen kwaliteitsgarantie. Onze gezamenlijke ondersteuning staat openbaar vermeld als Opplex IPTV Subscription Services."}]},
       {"slug":"contact","kind":"contact","title":"Stel je vraag over Trex voordat je kiest","description":"Vraag ondersteuning over je Trex-plan, apparaat of bestelling via het centrale supportteam.","intro":"Twijfel je of jouw televisie en speler bij een jaarplan passen? Vertel ons welke opstelling je gebruikt en wat je wilt controleren. De gezamenlijke klantenondersteuning is 24 uur per dag beschikbaar; dit garandeert geen onmiddellijk antwoord of een bepaalde activatietijd.","sections":[{"heading":"Geef bruikbare informatie","body":"Vermeld het model, de app en je vraag. Bij een bestaande bestelling helpt het bestelnummer. Stuur geen wachtwoorden, betaalkaartgegevens of verificatiecodes."},{"heading":"Wat het formulier doet","body":"Met je toestemming bewaart Opplex IPTV je contactgegevens en bericht. Daarna opent WhatsApp of livechat; een opgeslagen aanvraag betekent niet dat een WhatsApp-bericht al is verzonden."},{"heading":"Voor je de aanvraag verstuurt","body":"Beschrijf wat je vóór het jaarplan wilt bevestigen: model, speler-versie en gewenste gebruikslocatie. Na toestemming wordt je aanvraag centraal opgeslagen. Controleer in WhatsApp of je bericht daadwerkelijk is verstuurd; een geopende app is nog geen verzonden bericht."}]},

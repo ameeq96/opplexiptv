@@ -92,7 +92,8 @@ class LandingCheckoutResumeController extends Controller
             || $request->input('currency') !== $plan['currency']) {
             return $this->privateResponse(response()->json(['message' => 'The plan price changed. Reload this page and review the current price.'], 409));
         }
-        $source = ['trex' => 'trexiptv8k', 'opplex' => 'opplexiptv-store', 'geo' => 'geoiptv', '5g' => '5gliveiptv'][$selection['brand']];
+        $source = ['trex' => 'trexiptv8k', 'opplex' => 'opplexiptv-store', 'geo' => 'geoiptv', '5g' => '5gliveiptv',
+            'iptvsubscription' => 'iptvsubscription', 'getiptv' => 'getiptv'][$selection['brand']];
         $url = route('checkout', ['package_id' => $plan['id'], 'utm_source' => $source, 'utm_medium' => 'landing']);
 
         return $this->privateResponse(response()->json(['redirect_url' => $url]));

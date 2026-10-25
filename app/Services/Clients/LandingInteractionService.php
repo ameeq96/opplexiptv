@@ -17,6 +17,8 @@ class LandingInteractionService
         'opplex' => ['name' => 'Opplex IPTV', 'domain' => 'opplexiptv.store', 'port' => 8102],
         'geo' => ['name' => 'Geo IPTV', 'domain' => 'geoiptv.store', 'port' => 8103],
         '5g' => ['name' => '5G Live IPTV', 'domain' => '5gliveiptv.store', 'port' => 8104],
+        'iptvsubscription' => ['name' => 'IPTV Subscription', 'domain' => 'iptvsubscription.shop', 'port' => 8105],
+        'getiptv' => ['name' => 'Get IPTV', 'domain' => 'getiptv.store', 'port' => 8106],
     ];
     public const CONTACT_CONSENT_VERSION = 'landing-contact-2026-10-16.1';
     public const PAYMENT_ATTRIBUTION_ENABLED = true;

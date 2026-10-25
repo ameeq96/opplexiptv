@@ -180,6 +180,82 @@
             ]
           }
         ]
+      },
+      "iptvsubscription": {
+        "intro": "A useful comparison leaves fewer surprises at payment time. Keep the service and player as separate decisions and start with the full cost.",
+        "questions": [
+          {
+            "id": "iptvsubscription-help",
+            "label": "What would you like to check?",
+            "options": [
+              {
+                "value": "check-0",
+                "label": "Compare the full cost",
+                "answer": "Check the full plan amount, any separate player licence and applicable checkout fees. A monthly equivalent is a comparison, not a substitute for the total due.",
+                "links": [
+                  "faqs",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-1",
+                "label": "Check a renewal",
+                "answer": "Save the service name, reference and end date privately. Before renewing, ask how a new purchase applies to your existing service.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-2",
+                "label": "Find an existing order",
+                "answer": "Use the central portal with the purchase email. Check an existing payment status before opening another attempt.",
+                "links": [
+                  "account",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "getiptv": {
+        "intro": "You do not need to change everything together. A few clear checks help you choose the right question before choosing a plan.",
+        "questions": [
+          {
+            "id": "getiptv-help",
+            "label": "What would you like to check?",
+            "options": [
+              {
+                "value": "check-0",
+                "label": "Identify my device",
+                "answer": "Open device settings and note the model and system version. A broad label such as Smart TV is not enough to establish player compatibility.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-1",
+                "label": "Check a player",
+                "answer": "Use the app store or developer's official information to check requirements and any separate licence. Confirm the exact device and app combination with support.",
+                "links": [
+                  "iptv-applications",
+                  "support"
+                ]
+              },
+              {
+                "value": "check-2",
+                "label": "Report a problem",
+                "answer": "Record the failing step, exact message and last change. Check the order privately and keep passwords, payment codes and private links out of the report.",
+                "links": [
+                  "setup",
+                  "support"
+                ]
+              }
+            ]
+          }
+        ]
       }
     }
   },
@@ -1096,6 +1172,660 @@
             {"heading": "Keep the follow-up focused", "body": "List the checks already tried and crop screenshots to the relevant message. Never send passwords, verification codes, router credentials or card details. Reply in the same support conversation where practical so the earlier comparison is not lost."},
             {"heading": "An illustrative before-and-after report", "body": "Template, not a customer case: Device/player [versions]; before [Wi-Fi/mobile/hotspot]; after [connection type]; action [network switch or setting]; symptom [exact text]; check [one change and result]; order [private reference]. Crop screenshots and hide network names, credentials and personal information where unnecessary."},
             {"heading":"Describe the interruption as a sequence","body":"Send a private sequence: connection before; action taken; connection after; player message; whether ordinary internet access worked; one check and its result. Mention if the screen locked or another app opened, without guessing the cause. Remove network names and personal details from images unless essential. Keep this in the existing support conversation instead of opening several identical requests."}
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "iptvsubscription": {
+      "name": "IPTV Subscription",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "IPTV Subscription: understand the plan before buying",
+          "description": "Meet IPTV Subscription and compare the service, term and full cost of current Opplex and Filex plans.",
+          "intro": "At iptvsubscription.shop, choosing an IPTV subscription starts with the details you will live with: the named service, period of access and amount due. We bring those questions together before checkout.",
+          "sections": [
+            {
+              "heading": "Keep the service name",
+              "body": "Opplex and Filex are separate options. Keep the provider with your selection and order reference; the name of this website does not turn one service into another."
+            },
+            {
+              "heading": "A connected purchase journey",
+              "body": "Plan data, account records and support come from the main Opplex system, with payment on Opplexify. Shared public support is Opplex IPTV Subscription Services."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Ask IPTV Subscription about a plan or renewal",
+          "description": "Contact shared support about an IPTV subscription, full cost, renewal or existing order.",
+          "intro": "A short question with the service name and term gives support a useful starting point. Shared customer support is available 24 hours a day; response and activation times depend on the enquiry.",
+          "sections": [
+            {
+              "heading": "Before buying",
+              "body": "Mention the provider, term and device model. Ask which charges belong to the subscription and which belong to a separate player."
+            },
+            {
+              "heading": "For an existing order",
+              "body": "Use the private account with your order reference and current payment status. Leave passwords, full card numbers and verification codes out of messages."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "IPTV subscription FAQ: cost, connections and renewal",
+          "description": "Questions about IPTV subscription prices, the selected plan's connection allowance, player costs and the Opplexify checkout.",
+          "intro": "Compare the exact service you select rather than assuming all IPTV offers have the same conditions. These are useful points to settle before committing to a term.",
+          "sections": [
+            {
+              "heading": "Is the monthly equivalent the payment amount?",
+              "body": "A comparison figure can help you compare terms. Review the full amount due and the actual payment schedule on Opplexify before confirming."
+            },
+            {
+              "heading": "How many connections are included?",
+              "body": "Check the connection allowance of the selected package; ask support if it is not stated. Installing an app on several devices does not add concurrent streams."
+            },
+            {
+              "heading": "What should I check before renewing?",
+              "body": "Find the service end date and previous order reference. Plans do not renew automatically under the central terms; ask how a new purchase applies to the existing service."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Compare IPTV subscription plans and full totals",
+          "description": "Compare current Opplex and Filex IPTV subscription prices, duration and connection allowance details before payment.",
+          "intro": "Choose the service first, then consider how long you need it. A longer period deserves the same device and cost checks, even when its comparison figure looks lower.",
+          "sections": [
+            {
+              "heading": "Compare like with like",
+              "body": "Keep provider, currency, duration and the full payable amount together. Include any separate player licence in your budget."
+            },
+            {
+              "heading": "Review the final selection",
+              "body": "The latest plans come from the main website. On Opplexify, confirm the named package, term, applicable fees and final total. An open checkout is not a paid order."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "IPTV Subscription reseller enquiries: written terms first",
+          "description": "Ask about permitted use, responsibilities and any available IPTV reseller arrangement before making commitments.",
+          "intro": "A retail IPTV subscription is a personal service purchase, not a resale agreement. Discuss any proposed business arrangement separately before promising access to other customers.",
+          "sections": [
+            {
+              "heading": "Explain the arrangement",
+              "body": "Describe your intended market, customer support and expected use. Ask for written permission, prices, account limits and responsibilities."
+            },
+            {
+              "heading": "Check what is actually offered",
+              "body": "This page does not provide a reseller panel, credits or a margin quotation. Another provider's rates do not establish an Opplex or Filex business offer."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "IPTV subscription and player apps: budget for both",
+          "description": "Separate an IPTV subscription from a player licence and check official app requirements before purchase.",
+          "intro": "A player is software on your device; a subscription is a separate service purchase. Check both parts so an unexpected app fee does not change your budget after checkout.",
+          "sections": [
+            {
+              "heading": "Read the player's terms",
+              "body": "Use the device app store or developer's official website. Check supported systems, licence length and any trial or separate payment."
+            },
+            {
+              "heading": "Ask about your exact setup",
+              "body": "Provide the device model and player version. A familiar app name alone does not confirm that it suits the selected service.",
+              "links": [
+                {
+                  "label": "Official VLC for Android manual",
+                  "url": "https://docs.videolan.me/vlc-android-user/"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "Prepare an IPTV subscription before checkout",
+          "description": "Check the device, player, selected service and existing order status before setting up an IPTV subscription.",
+          "intro": "Write down the device, player and service you intend to use. Resolve any uncertain prerequisite before choosing a long subscription period or changing working settings.",
+          "sections": [
+            {
+              "heading": "Keep two costs separate",
+              "body": "Record the plan amount and any player licence on different lines. Check how long each lasts and where you would get help."
+            },
+            {
+              "heading": "Avoid a duplicate payment",
+              "body": "If payment has already started, check the central account first. Ask private support about a pending status before opening another attempt.",
+              "links": [
+                {
+                  "label": "Official Google TV troubleshooting",
+                  "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "IPTV Subscription viewing guide: check the title first",
+          "description": "Check lawful title availability, location and player options before choosing a plan for a particular film.",
+          "intro": "If one film is the reason for a purchase, confirm its authorised availability first. This is a viewing checklist, not an included movie catalogue.",
+          "sections": [
+            {
+              "heading": "Ask about the exact title",
+              "body": "A poster or broad category is not proof that a film is available in your location or selected plan."
+            },
+            {
+              "heading": "Consider the viewing setup",
+              "body": "Check subtitle and audio options in the player. Source quality and your viewing chain affect the picture; a screen setting cannot add detail to the source."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Build a sensible IPTV subscription hardware budget",
+          "description": "Consider existing equipment, player costs and return terms before buying hardware for an IPTV subscription.",
+          "intro": "You may already own suitable equipment. This is a hardware planning guide rather than a stocked shop or a promise that an accessory will solve an unknown problem.",
+          "sections": [
+            {
+              "heading": "Count the whole setup",
+              "body": "List the device, any player licence and subscription separately. Check whether an existing supported device meets your needs before adding hardware."
+            },
+            {
+              "heading": "Buy for a clear requirement",
+              "body": "Compare manufacturer support, connections, remote controls and return terms. A more expensive device does not answer an unresolved service or account question."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "IPTV subscription activation: check the order first",
+          "description": "Review an existing order and payment status before asking about activation or purchasing again.",
+          "intro": "Start with the existing order. Keep the provider and reference together, then read the current status in the central account.",
+          "sections": [
+            {
+              "heading": "Payment and activation differ",
+              "body": "Opening a checkout page does not confirm a completed charge or active service. Resolve a pending payment before trying another purchase."
+            },
+            {
+              "heading": "Ask for a status explanation",
+              "body": "Describe the last confirmed step and the status shown now. An enquiry requests a review; this page does not promise an activation time."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Prepare an IPTV Subscription activation enquiry",
+          "description": "Send the provider, order reference and current status through private support while protecting credentials.",
+          "intro": "Help support identify the right order. Use the purchase email and a private channel rather than posting account details publicly.",
+          "sections": [
+            {
+              "heading": "Useful details",
+              "body": "Include the service, order reference, approximate purchase time, device model and exact message. Mention any existing conversation about that order."
+            },
+            {
+              "heading": "Leave sensitive fields out",
+              "body": "Never send passwords, card details or one-time codes. Crop screenshots to the relevant error and keep replies in the same conversation."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "IPTV subscription guides: choosing, costs and renewal",
+          "description": "Practical IPTV subscription guides about comparing plans, budgeting for player costs and keeping a renewal record.",
+          "intro": "Choose a guide for the decision in front of you. The service, player and renewal record need different checks, even when they belong to one viewing setup.",
+          "sections": [
+            {
+              "heading": "Before purchasing",
+              "body": "Start with the selection guide when comparing terms. Use the costs guide to distinguish a service price from an app licence or device purchase."
+            },
+            {
+              "heading": "Before renewing",
+              "body": "Collect the service name, end date and previous order reference. Those facts are more useful than a remembered offer or old price screenshot."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "IPTV Subscription terms: understand the commitment",
+          "description": "Read the shared Opplex terms and selected plan conditions before confirming an IPTV subscription purchase.",
+          "intro": "This site uses the central Opplex Terms of Service. Read the linked full terms alongside the details of the package you select; this summary does not replace them.",
+          "sections": [
+            {
+              "heading": "Order and responsible use",
+              "body": "Provide accurate purchase information, respect the connection allowance and keep credentials private. Retail access does not permit resale or redistribution."
+            },
+            {
+              "heading": "Renewal and your rights",
+              "body": "Plans do not renew automatically. Review current conditions when purchasing again, including the central refund and liability terms and rights applicable law does not allow to be excluded."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "IPTV Subscription privacy: enquiries and checkout",
+          "description": "How enquiries, optional measurement and checkout connect IPTV Subscription with the shared Opplex system.",
+          "intro": "The central privacy policy explains the underlying service. Here is how the main parts of this website connect to your enquiry and purchase.",
+          "sections": [
+            {
+              "heading": "Contact and measurement",
+              "body": "With permission, the form sends your details, message and website source to the shared system. Optional measurement can include consented page, language and checkout interactions; change your choice through privacy controls."
+            },
+            {
+              "heading": "Other services",
+              "body": "WhatsApp, Tawk and Opplexify have their own privacy terms. Use the displayed shared support contact for privacy questions, without passwords or payment secrets."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "IPTV subscription refunds: check before paying",
+          "description": "Read the central refund policy, final-sale conditions and applicable legal rights before purchase.",
+          "intro": "Check the service, device requirements, term and total before payment. This page summarises the central Refund & Cancellation Policy rather than creating another refund promise.",
+          "sections": [
+            {
+              "heading": "Confirmed purchases",
+              "body": "Once the price is agreed and the order confirmed, purchases are final except where applicable law requires a refund. Stopping use does not itself create a refund or credit."
+            },
+            {
+              "heading": "An order-specific request",
+              "body": "Read the full linked policy and contact private support with the order details and reason. Statutory rights remain unaffected, and a digital service has no physical return process."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/choosing-an-iptv-subscription",
+          "title": "Choosing an IPTV subscription: compare the whole offer",
+          "description": "Compare the service, full price, duration and device requirements when choosing an IPTV subscription.",
+          "intro": "Make a small table with provider, term, currency and full amount in separate columns. Leave an unanswered point visibly blank instead of treating it as included.",
+          "sections": [
+            {
+              "heading": "Choose a term you understand",
+              "body": "Compare the amount due now with the access period you are buying. Ask about the start of service and unclear conditions before committing."
+            },
+            {
+              "heading": "Finish the device and cost checks",
+              "body": "Confirm the exact player and device, any separate licence and the selected plan's connection allowance. Then verify the selected provider and final total again on Opplexify."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/iptv-subscription-renewal-checklist",
+          "title": "An IPTV subscription renewal checklist you can reuse",
+          "description": "Collect the service name, end date, existing order and current price before renewing an IPTV subscription.",
+          "intro": "A renewal is a new decision about the service you use. Start with the account record rather than an old offer or remembered price.",
+          "sections": [
+            {
+              "heading": "Collect the facts privately",
+              "body": "Note the provider, previous reference and service end date. Ask support how a new purchase applies to the existing service and whether you need to do anything before expiry."
+            },
+            {
+              "heading": "Check payment once",
+              "body": "Review the current term and total. Resolve any pending payment first, then keep the confirmed new order beside the previous record for your next renewal check."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/iptv-device-and-player-costs",
+          "title": "IPTV device and player costs: the full budget",
+          "description": "Separate the service, player licence and hardware costs when preparing an IPTV viewing budget.",
+          "intro": "A setup can involve three purchases with different sellers and support routes: the service, the player and the device. Keep their terms and renewal dates separate.",
+          "sections": [
+            {
+              "heading": "Give each cost its own line",
+              "body": "Write the service period, app licence length and hardware price separately. Check whether the player is free, paid or trial-based using the developer's official information."
+            },
+            {
+              "heading": "Do not pay to solve an unknown",
+              "body": "Clarify an unsupported app or unclear order before buying another box. Ask one specific question about the missing requirement and keep the answer with your budget."
+            }
+          ],
+          "kind": "article"
+        }
+      ]
+    },
+    "getiptv": {
+      "name": "Get IPTV",
+      "pages": [
+        {
+          "slug": "about",
+          "title": "Get IPTV: start with the device in front of you",
+          "description": "Meet Get IPTV and prepare your device and player before comparing current Opplex and Filex plans.",
+          "intro": "At getiptv.store, we start with your actual screen. If you want to get IPTV ready, the first useful details are the model, system version and player you intend to use.",
+          "sections": [
+            {
+              "heading": "Choose a workable route",
+              "body": "Check official app options and any separate player licence before selecting a term. Smart TV is a category, not a compatibility result."
+            },
+            {
+              "heading": "Keep the order connected",
+              "body": "The main Opplex system supplies plans, account records and support. Opplexify handles payment; shared support is publicly named Opplex IPTV Subscription Services."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "contact",
+          "title": "Get IPTV support: describe your device and next step",
+          "description": "Ask shared support about a device, player, setup problem or existing Get IPTV order.",
+          "intro": "Tell support where you are stuck: selecting a player, checking an order or opening playback. Shared support is available 24 hours a day, without a guarantee of immediate replies or a set activation time.",
+          "sections": [
+            {
+              "heading": "A useful first message",
+              "body": "Include the exact device, system and player versions, the action you tried and the message shown. Say whether ordinary internet access works on the same device."
+            },
+            {
+              "heading": "For an existing purchase",
+              "body": "Use the private portal with your order reference. Keep passwords, private playlist addresses, card details and verification codes out of public messages."
+            }
+          ],
+          "kind": "contact"
+        },
+        {
+          "slug": "faqs",
+          "title": "Get IPTV FAQ: device, player and connection limits",
+          "description": "Practical answers about device preparation, player checks and the Get IPTV checkout journey.",
+          "intro": "The answer depends on the device and service you choose. These questions help you identify what to ask before buying.",
+          "sections": [
+            {
+              "heading": "Does every Smart TV work alike?",
+              "body": "No. Find the exact model and system version, then check the player's official requirements. A television brand alone does not establish app support."
+            },
+            {
+              "heading": "Can I use two players at once?",
+              "body": "Check the connection allowance of the selected package; ask support if it is not stated. Close the existing stream before comparing another device; extra installed apps do not add concurrent access."
+            },
+            {
+              "heading": "Where do I check payment?",
+              "body": "Checkout opens Opplexify. Review the provider, term, fees and total there, and check the existing order in the central account before trying again."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "packages",
+          "title": "Get IPTV plans: choose after the device checks",
+          "description": "Compare current Opplex and Filex plans on Get IPTV, with clear service names, terms and checkout totals.",
+          "intro": "Once you know the intended device and player, compare the service options below. Keep the actual provider with your selection rather than treating every package as one product.",
+          "sections": [
+            {
+              "heading": "Ask the setup questions first",
+              "body": "Confirm the exact device and player combination, any separate app fee and the selected plan's connection allowance before deciding on a longer term."
+            },
+            {
+              "heading": "Review the handoff",
+              "body": "Details load from the main website. On Opplexify, confirm the same service, duration, currency and final total. Resolve a pending payment before creating another attempt."
+            }
+          ],
+          "kind": "packages"
+        },
+        {
+          "slug": "reseller-panel",
+          "title": "Get IPTV reseller enquiries: plan the setup work",
+          "description": "Discuss customer devices, support responsibilities and any available IPTV reseller arrangement.",
+          "intro": "Helping customers get IPTV set up involves support work as well as sales questions. Describe that work first and ask whether a suitable business arrangement is available.",
+          "sections": [
+            {
+              "heading": "Describe the device mix",
+              "body": "Explain the devices you expect to support and your process for setup questions. Ask for written permission, limits, prices and responsibilities."
+            },
+            {
+              "heading": "Keep retail and resale separate",
+              "body": "A personal Opplex or Filex plan is not reseller permission. This page does not provide panel access, credits or promised margins; arrangements need separate confirmation."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "iptv-applications",
+          "title": "Get IPTV player apps: choose for your exact device",
+          "description": "Check official player requirements, safe installation routes and licence costs before entering private service details.",
+          "intro": "Choose the player for the device you own, not simply a name you recognise. Record the model, operating system and developer's current requirements.",
+          "sections": [
+            {
+              "heading": "Install through an official source",
+              "body": "Use the device app store or the developer's published download page and read the licence terms. This website does not host APK installers or unofficial downloads."
+            },
+            {
+              "heading": "Check everyday controls",
+              "body": "On a TV, consider remote navigation and readable menus. On a phone, check orientation and controls. Confirm the exact app version with support before entering private details.",
+              "links": [
+                {
+                  "label": "Official VLC for Android manual",
+                  "url": "https://docs.videolan.me/vlc-android-user/"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "setup",
+          "title": "How to get IPTV ready: a practical setup checklist",
+          "description": "Prepare the device, player and order before setting up IPTV and changing playback settings.",
+          "intro": "Keep the first attempt simple: check ordinary internet access, identify a suitable player and confirm the order. One clear baseline is easier to troubleshoot than several unrecorded changes.",
+          "sections": [
+            {
+              "heading": "Prepare the baseline",
+              "body": "Note the model, system and player versions and connection type. Follow official device instructions for updates and storage checks while preserving working settings."
+            },
+            {
+              "heading": "Stop at an unclear prerequisite",
+              "body": "If other apps cannot connect, investigate the device or network first. If an order is pending, ask private support. Repeated reinstallations may remove useful information without finding the cause.",
+              "links": [
+                {
+                  "label": "Official Google TV troubleshooting",
+                  "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+                }
+              ]
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "movies",
+          "title": "Get IPTV viewing checklist: confirm lawful availability",
+          "description": "Check a film's authorised availability, your location and player controls before planning a viewing setup.",
+          "intro": "Before choosing a service for one film, confirm where it is lawfully available. This page is a viewing checklist rather than an included catalogue.",
+          "sections": [
+            {
+              "heading": "Identify the title and location",
+              "body": "A poster or category is not confirmation of access. Check the exact title and your location through an authorised source."
+            },
+            {
+              "heading": "Check the controls you need",
+              "body": "Look for documented subtitle and audio settings. Picture quality depends on the source and viewing chain; a display mode cannot create detail missing from the source."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "shop",
+          "title": "Get IPTV hardware checklist: start with what you own",
+          "description": "Check app support, controls, connection options and return terms before buying another IPTV device.",
+          "intro": "Find out whether your existing equipment can meet the requirement before shopping. This page is a hardware guide, not a store inventory or a universal device recommendation.",
+          "sections": [
+            {
+              "heading": "Find the missing requirement",
+              "body": "App availability, unresponsive menus, connection interruptions and an uncertain order are different questions. Identify which one you need to resolve before spending."
+            },
+            {
+              "heading": "Compare practical features",
+              "body": "Check manufacturer updates, storage, network options and remote accessibility. Read the seller's return terms and any separate player licence before buying."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "activate",
+          "title": "Get IPTV activation: separate order status from setup",
+          "description": "Read the existing order status before troubleshooting activation or starting another payment.",
+          "intro": "A device that is ready for setup and an order that is ready to use are different things. Begin with the current account status.",
+          "sections": [
+            {
+              "heading": "Read the existing order",
+              "body": "Keep the service name and reference available. Opening or closing a payment screen does not establish a completed charge; resolve a pending status before another purchase."
+            },
+            {
+              "heading": "Then ask the setup question",
+              "body": "Explain what the account shows and which device step is unclear. An enquiry does not itself activate service or confirm compatibility."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "activate-info",
+          "title": "Details for a Get IPTV activation enquiry",
+          "description": "Prepare device, player and order details for private activation support without exposing credentials.",
+          "intro": "Help support distinguish an order issue from a player issue. A short sequence of what happened is more useful than a screenshot containing private account information.",
+          "sections": [
+            {
+              "heading": "Describe the sequence",
+              "body": "Give the provider, reference, device and player versions, last successful step and exact message. Mention any ongoing support conversation for that purchase."
+            },
+            {
+              "heading": "Show only the message",
+              "body": "Crop out credentials, private links and payment information. Never send a password or one-time code; enquiry permission is not permission for unrelated marketing."
+            }
+          ],
+          "kind": "activation"
+        },
+        {
+          "slug": "blogs",
+          "title": "Get IPTV guides: readiness and troubleshooting",
+          "description": "Guides for preparing a device, checking setup before checkout and investigating IPTV connection symptoms.",
+          "intro": "Pick the guide for your current stage. Preparing a device, reviewing checkout readiness and investigating an interruption have different starting points.",
+          "sections": [
+            {
+              "heading": "Before a purchase",
+              "body": "Use the device guide to identify the model and player. The checkout checklist helps collect unanswered questions before selecting a plan."
+            },
+            {
+              "heading": "When something changes",
+              "body": "The connection guide shows how to note the symptom and compare one part at a time. Keep the results, not just a list of settings you changed."
+            }
+          ],
+          "kind": "blogs"
+        },
+        {
+          "slug": "terms-of-service",
+          "title": "Get IPTV terms: know the service you choose",
+          "description": "Read the shared service terms, connection allowance and purchase conditions for Get IPTV orders.",
+          "intro": "Get IPTV uses the central Opplex service and account systems. Read the linked full terms alongside the selected package; this summary is a starting point.",
+          "sections": [
+            {
+              "heading": "Access and responsibility",
+              "body": "Give accurate order information, keep credentials private and respect copyright, regional conditions and the connection allowance. Retail purchase does not permit resale or redistribution."
+            },
+            {
+              "heading": "Purchases and renewal",
+              "body": "Plans do not renew automatically. Read current conditions, refund terms and liability provisions before buying again. Non-excludable rights under applicable law remain unaffected."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "privacy-policy",
+          "title": "Get IPTV privacy: your setup enquiry and order",
+          "description": "How Get IPTV enquiries, optional measurement, support services and checkout connect to the central privacy policy.",
+          "intro": "Share the information needed for the step you are trying to complete. The linked central privacy policy provides the full service information and contact route.",
+          "sections": [
+            {
+              "heading": "Contact and optional measurement",
+              "body": "With permission, an enquiry sends contact details, your message and website source to the shared system. Optional measurement can record consented page, language and checkout events; change the choice through privacy controls."
+            },
+            {
+              "heading": "Keep service details private",
+              "body": "Do not put credentials or private links in messages. WhatsApp, Tawk and Opplexify have their own terms. Use the displayed shared support contact for privacy questions."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "refund-policy",
+          "title": "Get IPTV refunds: understand the policy before payment",
+          "description": "Check the central final-sale policy and applicable refund rights before choosing a Get IPTV plan.",
+          "intro": "Device suitability, player fees and service terms should be clear before payment. This page summarises the central Refund & Cancellation Policy.",
+          "sections": [
+            {
+              "heading": "Confirmed digital orders",
+              "body": "Once the price is agreed and the order confirmed, purchases are final except where applicable law requires a refund. Unused time or stopping use does not itself create credit or a refund."
+            },
+            {
+              "heading": "Ask about your own order",
+              "body": "Use the full linked policy and private support route with your reference and reason. Any legally required refund follows the applicable requirements; digital delivery has no physical return process."
+            }
+          ],
+          "kind": "editorial"
+        },
+        {
+          "slug": "blogs/how-to-get-iptv-on-your-device",
+          "title": "How to get IPTV on your device: start with the model",
+          "description": "Prepare a television, streaming device or phone for IPTV without assuming all players work on every model.",
+          "intro": "Write down the exact model before looking for an app. A product family can include different systems and app stores, even when the devices look similar.",
+          "sections": [
+            {
+              "heading": "Check the official requirements",
+              "body": "Find the system version in settings and compare it with the player's published requirements and licence terms. Use the device app store or developer's official route."
+            },
+            {
+              "heading": "Prepare one device first",
+              "body": "Check ordinary internet access, readability and controls. Ask about the selected service before entering private details, and close the existing stream before comparing another device."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/iptv-setup-before-checkout",
+          "title": "IPTV setup before checkout: five useful details",
+          "description": "Collect the device, player, service choice, app cost and existing order status before IPTV checkout.",
+          "intro": "Keep five details together instead of switching between an app store, a shop and a payment window. A short checklist makes the unanswered question easier to spot.",
+          "sections": [
+            {
+              "heading": "Build the checklist",
+              "body": "Record the device model and system; player and version; chosen service and term; any separate licence fee; and whether an existing order or payment needs attention."
+            },
+            {
+              "heading": "Resolve the missing point",
+              "body": "Ask one specific question about anything unclear. When ready, review the provider, duration, currency and full total on Opplexify, then keep the confirmed reference privately."
+            }
+          ],
+          "kind": "article"
+        },
+        {
+          "slug": "blogs/troubleshoot-an-iptv-connection",
+          "title": "Troubleshoot an IPTV connection one step at a time",
+          "description": "Record IPTV connection symptoms and compare device, app and network carefully before reinstalling or purchasing again.",
+          "intro": "Note what fails: opening the app, loading a list or playing one item. That observation is more useful than changing several settings together.",
+          "sections": [
+            {
+              "heading": "Make one simple comparison",
+              "body": "Check ordinary internet on the same device. Where practical and permitted, compare a familiar wired or Wi-Fi connection, closing the current stream first. Record whether the symptom changes."
+            },
+            {
+              "heading": "Keep evidence for support",
+              "body": "Note the time, exact message, versions and one change with its result. Restore settings that do not help. Never publish private playlist links or credentials, or bypass regional or provider restrictions."
+            }
           ],
           "kind": "article"
         }

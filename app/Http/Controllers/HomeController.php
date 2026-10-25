@@ -151,7 +151,8 @@ class HomeController extends Controller
             'package_id' => (int) $package->getKey(),
             'exp' => now()->addMinutes(10)->timestamp,
         ];
-        $sources = ['trexiptv8k' => 'trex', 'opplexiptv-store' => 'opplex', 'geoiptv' => 'geo', '5gliveiptv' => '5g'];
+        $sources = ['trexiptv8k' => 'trex', 'opplexiptv-store' => 'opplex', 'geoiptv' => 'geo', '5gliveiptv' => '5g',
+            'iptvsubscription' => 'iptvsubscription', 'getiptv' => 'getiptv'];
         $source = request()->query('utm_source');
         if (is_string($source) && isset($sources[$source]) && request()->query('utm_medium') === 'landing') {
             $brand = $sources[$source];
