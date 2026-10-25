@@ -46,8 +46,8 @@ class PublicSiteDataService
             '5G IPTV' => 1, '5G IPTV - 3 Months' => 3,
             '5G IPTV - Half Yearly' => 6, '5G IPTV - Yearly' => 12,
         ]],
-        'iptvsubscription' => ['name' => 'IPTV Subscription', 'plans' => [], 'selectable_providers' => true],
-        'getiptv' => ['name' => 'Get IPTV', 'plans' => [], 'selectable_providers' => true],
+        'iptvsubscription' => ['name' => 'IPTV Subscription', 'plans' => [], 'selectable_providers' => true, 'email' => 'support@iptvsubscription.shop'],
+        'getiptv' => ['name' => 'Get IPTV', 'plans' => [], 'selectable_providers' => true, 'email' => 'support@getiptv.store'],
     ];
 
     public function __construct(
@@ -557,7 +557,7 @@ class PublicSiteDataService
         if (!$content && $locale !== 'en') {
             $content = LandingPageContent::query()->where('brand', $brand)->where('locale', 'en')->first();
         }
-        $email = trim((string) FooterSetting::query()->latest()->value('email'));
+        $email = trim((string) (self::LANDING_BRANDS[$brand]['email'] ?? FooterSetting::query()->latest()->value('email')));
         $phone = preg_replace('/\D/', '', (string) config('services.whatsapp.number'));
         $phoneDisplay = trim((string) config('services.whatsapp.display'));
         $document = json_decode(file_get_contents(resource_path('content/landing-pages/'.$locale.'.json')), true, 64, JSON_THROW_ON_ERROR);

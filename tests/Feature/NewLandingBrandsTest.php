@@ -71,6 +71,7 @@ class NewLandingBrandsTest extends TestCase
             $this->assertSame(['Opplex', 'Filex'], array_column($response->json('data.packages'), 'service'));
             foreach (config('app.locales') as $locale) {
                 $content = $this->getJson('/api/v1/site/brands/'.$brand.'/content?locale='.$locale)->assertOk();
+                $content->assertJsonPath('data.support.email', 'support@'.$domain);
                 $this->assertSame([$opplex->id, $filex->id], array_column($content->json('data.packages'), 'id'));
                 $this->assertSame([7.25, 9.5], array_map('floatval', array_column($content->json('data.packages'), 'price_amount')));
                 $this->assertSame(['Opplex', 'Filex'], array_column($content->json('data.packages'), 'service'));
