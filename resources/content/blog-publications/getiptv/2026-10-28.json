@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-10-28",
+  "topic": "Before resetting a streaming device, collect these setup details",
+  "primary_keyword": "IPTV setup",
+  "slug": "getiptv-setup-notes-before-resetting-device",
+  "translations": {
+    "en": {
+      "title": "Before resetting a streaming device, make a recovery note",
+      "excerpt": "A reset is a poor time to discover that you do not remember your player or device details. Prepare a short recovery note and identify the right support route first.",
+      "seo_title": "IPTV setup: what to record before resetting a device",
+      "seo_description": "Prepare your streaming-device recovery notes before considering a reset. Record the model, player and recovery route without exposing account credentials.",
+      "sections": [
+        {
+          "heading": "Write down the setup you would need to rebuild",
+          "paragraphs": [
+            "Before changing an IPTV setup, make a small recovery note for the device in front of you. For Get IPTV, useful details include the exact model, operating-system version, player name and player version. Record where the app came from, such as its official store listing, rather than relying on its icon. A photograph of the app list can help you remember names, provided it does not reveal other household members’ information."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate a restart from a factory reset",
+          "paragraphs": [
+            "These actions are not interchangeable. Apple’s Apple TV reset instructions describe erasing information; consult the manufacturer’s guidance for your exact model before taking a destructive step. First establish how you would reinstall the player and regain access through accounts you own. Store any recovery information securely, separately from a support message. Do not put passwords, verification codes or private service links in the note you intend to share."
+          ],
+          "items": [
+            "List which apps and settings you would have to restore.",
+            "Check that your recovery route is available before proceeding.",
+            "Keep the manufacturer’s model-specific instructions to hand."
+          ],
+          "links": [
+            {
+              "label": "Apple: official Apple TV reset guidance",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Choose the right question before choosing the reset",
+          "paragraphs": [
+            "Write a sentence explaining why you are considering a reset. Does the entire device fail to respond, or is one app presenting an error? If the wider device is affected, ask its manufacturer which recovery step fits the symptom. For an app-specific issue, check the app’s support route. Get IPTV support can use the device name and a description of the problem to discuss the service-related part. If you cannot explain how you would recover the setup, pause. A reset is a decision with preparation, not a general promise of better playback."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Antes de restablecer un dispositivo de streaming, prepara una nota de recuperación",
+      "excerpt": "El momento de restablecer no es el adecuado para descubrir que olvidaste qué reproductor usabas. Guarda los detalles esenciales y localiza primero el soporte adecuado.",
+      "seo_title": "Configuración IPTV: qué anotar antes de restablecer",
+      "seo_description": "Prepara una nota para recuperar la configuración IPTV: modelo, reproductor y vía de acceso, sin exponer contraseñas ni otros datos privados de la cuenta.",
+      "sections": [
+        {
+          "heading": "Anota la configuración que tendrías que reconstruir",
+          "paragraphs": [
+            "Antes de cambiar la configuración IPTV, prepara una nota breve sobre el dispositivo que tienes delante. Para Get IPTV, resultan útiles el modelo exacto, la versión del sistema y el nombre y versión del reproductor. Anota de dónde procede la app, por ejemplo su ficha oficial en la tienda, en lugar de reconocerla solo por el icono. Una foto de la lista de aplicaciones puede ayudarte, siempre que no muestre información de otras personas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingue reiniciar de restablecer de fábrica",
+          "paragraphs": [
+            "No son acciones equivalentes. Las instrucciones de Apple para restablecer Apple TV describen el borrado de información; consulta las del fabricante para tu modelo antes de realizar un paso destructivo. Averigua primero cómo reinstalarías el reproductor y recuperarías el acceso mediante tus propias cuentas. Guarda los datos de recuperación de forma segura, separados del mensaje a soporte. No incluyas contraseñas, códigos ni enlaces privados en la nota que vayas a compartir."
+          ],
+          "items": [
+            "Lista las apps y los ajustes que necesitarías recuperar.",
+            "Comprueba que la vía de recuperación esté disponible.",
+            "Ten a mano las instrucciones específicas del fabricante."
+          ],
+          "links": [
+            {
+              "label": "Guía oficial de Apple para restablecer Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Elige la pregunta antes de elegir el restablecimiento",
+          "paragraphs": [
+            "Escribe por qué estás considerando restablecer el equipo. ¿No responde todo el dispositivo o falla una sola aplicación? Si el problema es general, pregunta al fabricante qué medida corresponde. Si afecta a una app, consulta su soporte. Get IPTV puede usar el modelo y la descripción del síntoma para revisar la parte relacionada con el servicio. Si no sabes cómo recuperarías la configuración, detente. Restablecer requiere preparación; no es una promesa general de que el vídeo funcionará mejor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Avant de réinitialiser un appareil de streaming, préparez sa remise en service",
+      "excerpt": "Le moment de réinitialiser est mal choisi pour chercher le nom de son lecteur. Notez les détails utiles et identifiez d’abord le bon interlocuteur.",
+      "seo_title": "Configuration IPTV : que noter avant une réinitialisation",
+      "seo_description": "Préparez les informations de remise en service de votre appareil : modèle, lecteur et accès aux comptes, sans communiquer de données confidentielles au support.",
+      "sections": [
+        {
+          "heading": "Notez la configuration qu’il faudrait reconstruire",
+          "paragraphs": [
+            "Avant de modifier une installation IPTV, rédigez une courte fiche sur l’appareil que vous utilisez. Pour Get IPTV, les informations utiles comprennent le modèle exact, la version du système, le nom du lecteur et sa version. Notez l’origine de l’application, par exemple sa fiche officielle dans la boutique, plutôt que de compter sur son icône. Une photo de la liste des applications peut servir de rappel, à condition de ne pas exposer les informations du foyer."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez redémarrage et réinitialisation",
+          "paragraphs": [
+            "Ces actions ne sont pas équivalentes. Les consignes Apple de réinitialisation d’Apple TV décrivent un effacement d’informations ; consultez celles du fabricant correspondant à votre modèle avant toute étape destructive. Déterminez d’abord comment réinstaller le lecteur et retrouver l’accès à vos propres comptes. Gardez les informations de récupération dans un endroit sûr, séparément du message au support. La fiche partagée ne doit contenir ni mots de passe, ni codes, ni liens privés."
+          ],
+          "items": [
+            "Listez les applications et réglages à remettre en place.",
+            "Vérifiez que votre moyen de récupération est accessible.",
+            "Gardez les instructions précises du fabricant sous la main."
+          ],
+          "links": [
+            {
+              "label": "Consignes officielles Apple pour réinitialiser Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Choisissez la bonne question avant la réinitialisation",
+          "paragraphs": [
+            "Écrivez pourquoi vous envisagez cette opération. Est-ce l’ensemble de l’appareil qui ne répond plus ou une seule application qui signale une erreur ? Dans le premier cas, demandez au fabricant quelle démarche convient. Pour une application, consultez son assistance. Get IPTV peut examiner la partie liée au service à partir du modèle et du symptôme décrit. Si vous ignorez comment reconstruire votre installation, faites une pause. Une réinitialisation se prépare ; elle ne promet pas à elle seule une meilleure lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Prima di ripristinare un dispositivo streaming, prepara gli appunti di recupero",
+      "excerpt": "Il ripristino non è il momento giusto per scoprire che non ricordi il lettore usato. Annota i dettagli utili e individua prima l’assistenza corretta.",
+      "seo_title": "Configurazione IPTV: cosa annotare prima del ripristino",
+      "seo_description": "Prepara gli appunti per recuperare la configurazione IPTV: modello, lettore e modalità di accesso, senza condividere password o credenziali con l’assistenza.",
+      "sections": [
+        {
+          "heading": "Descrivi la configurazione che dovresti ricostruire",
+          "paragraphs": [
+            "Prima di modificare una configurazione IPTV, prepara una breve nota sul dispositivo che hai davanti. Per Get IPTV sono utili il modello preciso, la versione del sistema operativo, il nome del lettore e la sua versione. Annota la provenienza dell’app, per esempio la scheda ufficiale nello store, anziché riconoscerla soltanto dall’icona. Una foto dell’elenco delle app può aiutarti a ricordarle, purché non riveli informazioni di altre persone della casa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui il riavvio dal ripristino di fabbrica",
+          "paragraphs": [
+            "Le due operazioni non sono equivalenti. Le istruzioni Apple sul ripristino di Apple TV descrivono la cancellazione di informazioni: consulta quelle del produttore per il tuo modello prima di un intervento distruttivo. Verifica prima come reinstallare il lettore e recuperare l’accesso tramite account che possiedi. Conserva i dati di recupero in modo sicuro, separati dal messaggio all’assistenza. Nella nota da condividere non inserire password, codici di verifica o collegamenti privati."
+          ],
+          "items": [
+            "Elenca le app e le impostazioni da ripristinare.",
+            "Controlla che il percorso di recupero sia disponibile.",
+            "Tieni a portata di mano le istruzioni del modello esatto."
+          ],
+          "links": [
+            {
+              "label": "Istruzioni ufficiali Apple per il ripristino di Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Scegli la domanda prima di scegliere il ripristino",
+          "paragraphs": [
+            "Scrivi perché stai pensando al ripristino. Non risponde l’intero dispositivo oppure una sola app mostra un errore? Se il problema è generale, chiedi al produttore quale intervento è adatto. Per un errore specifico, consulta l’assistenza dell’app. Get IPTV può valutare la parte relativa al servizio usando modello e descrizione del sintomo. Se non sai come recuperare la configurazione, fermati. Il ripristino richiede preparazione: non è una promessa generica di riproduzione migliore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Maak herstelnotities voordat je een streamingapparaat reset",
+      "excerpt": "Een reset is een slecht moment om te ontdekken dat je de naam van je speler niet meer weet. Noteer de belangrijkste gegevens en zoek eerst de juiste ondersteuning.",
+      "seo_title": "IPTV instellen: noteer dit voordat je een apparaat reset",
+      "seo_description": "Maak herstelnotities voor je IPTV-installatie met model, speler en toegangsroute. Houd wachtwoorden en persoonlijke accountgegevens buiten berichten aan support.",
+      "sections": [
+        {
+          "heading": "Noteer welke installatie je opnieuw zou moeten opbouwen",
+          "paragraphs": [
+            "Maak vóór een wijziging aan je IPTV-installatie een korte herstelnotitie over het apparaat dat je gebruikt. Voor Get IPTV zijn het exacte model, de systeemversie, de spelersnaam en de spelerversie nuttig. Noteer waar de app vandaan komt, bijvoorbeeld de officiële winkelvermelding, in plaats van alleen op het pictogram te vertrouwen. Een foto van de applijst helpt bij het onthouden, zolang daarop geen gegevens van andere huisgenoten zichtbaar zijn."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verwar opnieuw opstarten niet met een fabrieksreset",
+          "paragraphs": [
+            "Dit zijn verschillende handelingen. Apples instructies voor het resetten van Apple TV beschrijven het wissen van informatie. Raadpleeg daarom de aanwijzingen van de fabrikant voor jouw model voordat je iets verwijdert. Bepaal eerst hoe je de speler opnieuw installeert en toegang krijgt via je eigen accounts. Bewaar herstelgegevens veilig en los van een supportbericht. Zet geen wachtwoorden, verificatiecodes of privélinks in de notitie die je wilt delen."
+          ],
+          "items": [
+            "Maak een lijst van apps en instellingen die je moet herstellen.",
+            "Controleer vooraf of je herstelmogelijkheid beschikbaar is.",
+            "Houd de modelspecifieke instructies van de fabrikant bij de hand."
+          ],
+          "links": [
+            {
+              "label": "Officiële Apple-instructies voor het resetten van Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Kies eerst de juiste vraag",
+          "paragraphs": [
+            "Schrijf op waarom je een reset overweegt. Reageert het hele apparaat niet meer, of geeft één app een foutmelding? Vraag bij een algemeen apparaatprobleem de fabrikant welke herstelstap past. Raadpleeg bij een app-probleem de ondersteuning van die app. Get IPTV kan met het model en de foutbeschrijving het dienstgerelateerde deel bespreken. Weet je niet hoe je de installatie terugkrijgt, pauzeer dan. Een reset vraagt voorbereiding en is geen algemene belofte van beter beeld."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Antes de redefinir um aparelho de streaming, prepare uma nota de recuperação",
+      "excerpt": "A redefinição é uma péssima hora para perceber que você não lembra o nome do reprodutor. Anote os detalhes úteis e procure primeiro o suporte adequado.",
+      "seo_title": "Configuração IPTV: o que anotar antes de redefinir",
+      "seo_description": "Prepare anotações para recuperar a configuração IPTV: modelo, reprodutor e caminho de acesso, sem expor senhas ou dados privados em mensagens de suporte.",
+      "sections": [
+        {
+          "heading": "Registre a configuração que precisaria reconstruir",
+          "paragraphs": [
+            "Antes de alterar uma configuração IPTV, prepare uma nota curta sobre o aparelho que está usando. Para a Get IPTV, são úteis o modelo exato, a versão do sistema, o nome do reprodutor e sua versão. Anote de onde veio o aplicativo, como a página oficial na loja, em vez de depender apenas do ícone. Uma foto da lista de apps pode ajudar a lembrar os nomes, desde que não exponha informações de outras pessoas da casa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Diferencie reiniciar de restaurar o padrão de fábrica",
+          "paragraphs": [
+            "São ações diferentes. As instruções da Apple para redefinir a Apple TV descrevem o apagamento de informações. Consulte as orientações do fabricante para seu modelo antes de uma medida destrutiva. Primeiro descubra como reinstalaria o reprodutor e recuperaria o acesso pelas contas que possui. Guarde as informações de recuperação com segurança, separadas da mensagem ao suporte. Não inclua senhas, códigos de verificação ou links privados na nota que pretende compartilhar."
+          ],
+          "items": [
+            "Liste os aplicativos e ajustes que precisaria recuperar.",
+            "Confira antes se o caminho de recuperação está disponível.",
+            "Tenha as instruções do fabricante para o modelo exato."
+          ],
+          "links": [
+            {
+              "label": "Orientações oficiais da Apple para redefinir a Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Escolha a pergunta antes de escolher a redefinição",
+          "paragraphs": [
+            "Escreva por que considera redefinir o aparelho. Todo o dispositivo deixou de responder ou somente um app apresenta erro? Para uma falha geral, pergunte ao fabricante qual procedimento corresponde ao sintoma. Para um problema de aplicativo, consulte o suporte dele. A Get IPTV pode usar o modelo e a descrição para discutir a parte relacionada ao serviço. Se não sabe como recuperaria a configuração, pare por enquanto. Redefinir exige preparação; não é uma promessa geral de reprodução melhor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Перед сбросом устройства для стриминга подготовьте заметку для восстановления",
+      "excerpt": "Сброс — неудачный момент, чтобы вспоминать название своего плеера. Заранее запишите основные сведения и определите, к какой поддержке обратиться.",
+      "seo_title": "Настройка IPTV: что записать перед сбросом устройства",
+      "seo_description": "Подготовьте заметку для восстановления настройки IPTV: модель, плеер и способ вернуть доступ. Не передавайте поддержке пароли или личные ссылки.",
+      "sections": [
+        {
+          "heading": "Опишите настройку, которую придётся восстанавливать",
+          "paragraphs": [
+            "Перед изменением настройки IPTV составьте короткую заметку об устройстве перед вами. Для Get IPTV полезны точная модель, версия операционной системы, название и версия плеера. Запишите происхождение приложения, например его официальную страницу в магазине, вместо того чтобы полагаться на узнаваемую иконку. Фото списка приложений поможет вспомнить названия, если на нём нет личной информации других членов семьи. Отдельно отметьте особенности, которые вам будет сложно восстановить по памяти."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Не путайте перезапуск и заводской сброс",
+          "paragraphs": [
+            "Это разные действия. Инструкция Apple по сбросу Apple TV описывает удаление информации; прежде чем выполнять разрушительную операцию, найдите руководство производителя именно для своей модели. Сначала разберитесь, как заново установить плеер и вернуть доступ через принадлежащие вам аккаунты. Данные восстановления храните безопасно и отдельно от обращения в поддержку. В заметку для отправки не включайте пароли, коды подтверждения и личные ссылки на услугу."
+          ],
+          "items": [
+            "Перечислите приложения и настройки для восстановления.",
+            "Убедитесь, что способ вернуть доступ действительно доступен.",
+            "Держите под рукой руководство для точной модели."
+          ],
+          "links": [
+            {
+              "label": "Официальная инструкция Apple по сбросу Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "Сначала сформулируйте вопрос о необходимости сброса",
+          "paragraphs": [
+            "Напишите, почему вы рассматриваете сброс. Не отвечает всё устройство или ошибку показывает только одно приложение? При общей неполадке спросите производителя, какое восстановление соответствует симптомам. Если затронуто приложение, обратитесь к его поддержке. Get IPTV сможет обсуждать часть, связанную с услугой, по модели и описанию проблемы. Если вы не можете объяснить, как вернёте текущую настройку, остановитесь. Сброс требует подготовки и сам по себе не обещает улучшения воспроизведения. Сохранённая заметка нужна для осознанного решения, а не для обязательного выполнения этой операции."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "اسٹریمنگ ڈیوائس ری سیٹ کرنے سے پہلے بحالی کی معلومات لکھ لیں",
+      "excerpt": "ری سیٹ کے وقت یہ یاد آنا کہ پلیئر کا نام معلوم نہیں، مشکل بڑھا سکتا ہے۔ ضروری تفصیل پہلے لکھیں اور مناسب سپورٹ کا راستہ معلوم کریں۔",
+      "seo_title": "IPTV سیٹ اپ: ڈیوائس ری سیٹ کرنے سے پہلے کیا لکھیں",
+      "seo_description": "ماڈل، پلیئر اور دوبارہ رسائی کا راستہ محفوظ کر کے IPTV سیٹ اپ کی بحالی کی تیاری کریں۔ سپورٹ کے پیغام میں پاس ورڈ یا نجی معلومات شامل نہ کریں۔",
+      "sections": [
+        {
+          "heading": "وہ سیٹ اپ لکھیں جو دوبارہ بنانا پڑ سکتا ہے",
+          "paragraphs": [
+            "IPTV سیٹ اپ بدلنے سے پہلے اپنے سامنے موجود ڈیوائس کے بارے میں مختصر بحالی نوٹ بنائیں۔ Get IPTV کے لیے درست ماڈل، آپریٹنگ سسٹم کا ورژن، پلیئر کا نام اور اس کا ورژن مفید تفصیل ہے۔ صرف آئیکن یاد رکھنے کے بجائے ایپ کا اصل ذریعہ، مثلاً آفیشل اسٹور کا صفحہ، لکھیں۔ ایپس کی فہرست کی تصویر نام یاد رکھنے میں مدد دے سکتی ہے، بشرطیکہ گھر کے دوسرے افراد کی معلومات ظاہر نہ ہوں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ری اسٹارٹ اور فیکٹری ری سیٹ کو الگ سمجھیں",
+          "paragraphs": [
+            "یہ ایک جیسے عمل نہیں ہیں۔ Apple TV کو ری سیٹ کرنے کی ایپل کی ہدایات معلومات مٹانے کی وضاحت کرتی ہیں۔ کوئی ایسا قدم لینے سے پہلے اپنے عین ماڈل کے لیے بنانے والی کمپنی کی رہنمائی پڑھیں۔ پہلے معلوم کریں کہ پلیئر دوبارہ کیسے انسٹال ہو گا اور اپنے اکاؤنٹس سے رسائی کیسے ملے گی۔ بحالی کی معلومات محفوظ جگہ رکھیں، سپورٹ کے پیغام سے الگ۔ شیئر ہونے والے نوٹ میں پاس ورڈ، تصدیقی کوڈ یا نجی سروس لنک نہ ڈالیں۔"
+          ],
+          "items": [
+            "وہ ایپس اور ترتیبات لکھیں جنہیں دوبارہ بحال کرنا ہو گا۔",
+            "پہلے دیکھ لیں کہ بحالی کا اپنا راستہ دستیاب ہے۔",
+            "درست ماڈل کی کمپنی والی ہدایات ساتھ رکھیں۔"
+          ],
+          "links": [
+            {
+              "label": "Apple TV ری سیٹ کرنے کی ایپل کی سرکاری ہدایات",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "ری سیٹ کا فیصلہ کرنے سے پہلے درست سوال کریں",
+          "paragraphs": [
+            "ایک جملے میں لکھیں کہ آپ ری سیٹ کیوں سوچ رہے ہیں۔ پوری ڈیوائس جواب نہیں دے رہی یا صرف ایک ایپ خرابی دکھا رہی ہے؟ پورے آلے کے مسئلے میں بنانے والی کمپنی سے مناسب قدم پوچھیں۔ صرف ایپ متاثر ہو تو اس کی سپورٹ دیکھیں۔ Get IPTV ڈیوائس کے نام اور مسئلے کی وضاحت سے سروس والا حصہ سمجھنے میں مدد لے سکتی ہے۔ سیٹ اپ واپس لانے کا طریقہ معلوم نہ ہو تو رک جائیں۔ ری سیٹ تیاری والا فیصلہ ہے، بہتر پلے بیک کا عمومی وعدہ نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "قبل إعادة ضبط جهاز البث، جهّز ملاحظة تساعدك على استعادة الإعداد",
+      "excerpt": "ليس وقت إعادة الضبط مناسباً لاكتشاف أنك نسيت اسم المشغّل. دوّن التفاصيل الأساسية أولاً، واعرف الجهة المناسبة لطلب المساعدة قبل اتخاذ القرار.",
+      "seo_title": "إعداد IPTV: ماذا تسجّل قبل إعادة ضبط الجهاز؟",
+      "seo_description": "جهّز ملاحظات استعادة إعداد IPTV، بما فيها الطراز والمشغّل وطريقة استرجاع الوصول، من دون وضع كلمات مرور أو روابط خاصة في رسالة الدعم.",
+      "sections": [
+        {
+          "heading": "دوّن الإعداد الذي ستحتاج إلى بنائه من جديد",
+          "paragraphs": [
+            "قبل تعديل إعداد IPTV، أعد ملاحظة قصيرة عن الجهاز الموجود أمامك. تتضمن التفاصيل المفيدة لـ Get IPTV الطراز الدقيق وإصدار النظام واسم المشغّل وإصداره. سجّل مصدر التطبيق، مثل صفحته الرسمية في المتجر، بدلاً من الاعتماد على شكل الأيقونة. قد تساعد صورة قائمة التطبيقات على تذكّر الأسماء، بشرط ألا تكشف معلومات تخص أفراد المنزل الآخرين. اكتب أيضاً ما يصعب عليك تذكّره لاحقاً، بدلاً من افتراض أنك ستجد كل شيء تلقائياً."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ميّز إعادة التشغيل عن ضبط المصنع",
+          "paragraphs": [
+            "العمليتان مختلفتان. تصف تعليمات Apple لإعادة ضبط Apple TV محو المعلومات؛ لذلك راجع إرشادات الشركة المصنّعة لطرازك قبل أي إجراء يحذف البيانات. حدّد أولاً كيف ستعيد تثبيت المشغّل وتسترجع الوصول عبر الحسابات التي تملكها. احتفظ بمعلومات الاستعادة في مكان آمن، منفصلة عن رسالة الدعم. لا تضع كلمات المرور أو رموز التحقق أو روابط الخدمة الخاصة في الملاحظة التي ستشاركها."
+          ],
+          "items": [
+            "اكتب التطبيقات والإعدادات التي ستحتاج إلى استعادتها.",
+            "تحقق مسبقاً من توفر وسيلة استعادة الوصول.",
+            "احتفظ بإرشادات الشركة الخاصة بالطراز الصحيح."
+          ],
+          "links": [
+            {
+              "label": "تعليمات Apple الرسمية لإعادة ضبط Apple TV",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "اختر السؤال المناسب قبل اختيار إعادة الضبط",
+          "paragraphs": [
+            "اكتب جملة توضح سبب التفكير في إعادة الضبط. هل الجهاز كله لا يستجيب، أم يعرض تطبيق واحد خطأ؟ إذا شمل العطل الجهاز، اسأل الشركة المصنّعة عن الإجراء المناسب. وإذا انحصر في تطبيق، راجع دعمه. يستطيع دعم Get IPTV مناقشة الجانب المرتبط بالخدمة بالاستناد إلى الطراز ووصف المشكلة. إن لم تعرف كيف ستستعيد إعدادك، توقف مؤقتاً. إعادة الضبط تحتاج إلى استعداد، وليست وعداً عاماً بتحسين المشاهدة. الغرض من الملاحظة أن يكون قرارك واضحاً، لا أن تجعل الحذف خطوة مفروضة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "स्ट्रीमिंग डिवाइस रीसेट करने से पहले रिकवरी नोट बनाएँ",
+      "excerpt": "रीसेट करते समय यह याद आना कि प्लेयर का नाम मालूम नहीं, मुश्किल बढ़ा सकता है। ज़रूरी जानकारी पहले लिखें और सही सपोर्ट का रास्ता समझें।",
+      "seo_title": "IPTV सेटअप: डिवाइस रीसेट से पहले क्या नोट करें",
+      "seo_description": "डिवाइस का मॉडल, प्लेयर और दोबारा पहुँच पाने का तरीका लिखकर IPTV सेटअप की रिकवरी तैयार करें। सपोर्ट संदेश में पासवर्ड या निजी लिंक न दें।",
+      "sections": [
+        {
+          "heading": "वह सेटअप लिखें जिसे दोबारा बनाना पड़ सकता है",
+          "paragraphs": [
+            "IPTV सेटअप बदलने से पहले सामने मौजूद डिवाइस के लिए छोटा रिकवरी नोट बनाएँ। Get IPTV के लिए सही मॉडल, ऑपरेटिंग सिस्टम का संस्करण, प्लेयर का नाम और उसका संस्करण उपयोगी हैं। केवल आइकन याद रखने के बजाय ऐप का स्रोत लिखें, जैसे आधिकारिक स्टोर का पेज। ऐप सूची की तस्वीर नाम याद रखने में मदद कर सकती है, बशर्ते उसमें घर के दूसरे सदस्यों की जानकारी न दिखे।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रीस्टार्ट और फैक्ट्री रीसेट का अंतर समझें",
+          "paragraphs": [
+            "ये दोनों एक ही काम नहीं हैं। Apple TV रीसेट करने के Apple के निर्देश जानकारी मिटाने की बात बताते हैं। ऐसा कोई कदम लेने से पहले अपने सही मॉडल के लिए निर्माता की सलाह देखें। पहले समझें कि प्लेयर दोबारा कैसे इंस्टॉल होगा और अपने खातों से पहुँच कैसे मिलेगी। रिकवरी की जानकारी सुरक्षित जगह पर रखें, सपोर्ट संदेश से अलग। साझा किए जाने वाले नोट में पासवर्ड, सत्यापन कोड या निजी सेवा लिंक न रखें।"
+          ],
+          "items": [
+            "वे ऐप और सेटिंग लिखें जिन्हें फिर से बनाना होगा।",
+            "पहले जाँचें कि आपकी रिकवरी का रास्ता उपलब्ध है।",
+            "सही मॉडल के निर्माता वाले निर्देश पास रखें।"
+          ],
+          "links": [
+            {
+              "label": "Apple TV रीसेट करने के आधिकारिक Apple निर्देश",
+              "url": "https://support.apple.com/en-us/108897"
+            }
+          ]
+        },
+        {
+          "heading": "रीसेट चुनने से पहले सही सवाल चुनें",
+          "paragraphs": [
+            "एक वाक्य में लिखें कि रीसेट क्यों सोच रहे हैं। क्या पूरा डिवाइस जवाब नहीं दे रहा या केवल एक ऐप त्रुटि दिखा रहा है? पूरे उपकरण की समस्या हो तो निर्माता से उचित कदम पूछें। केवल ऐप प्रभावित हो तो उसके सपोर्ट से जानकारी लें। Get IPTV मॉडल और समस्या के विवरण के आधार पर सेवा से जुड़ा हिस्सा समझ सकता है। सेटअप वापस पाने का तरीका नहीं मालूम हो तो रुकें। रीसेट तैयारी वाला निर्णय है, बेहतर वीडियो चलने का सामान्य वादा नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple official Apple TV reset guidance",
+      "url": "https://support.apple.com/en-us/108897"
+    }
+  ]
+}

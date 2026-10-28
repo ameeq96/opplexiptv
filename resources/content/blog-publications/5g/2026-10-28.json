@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-10-28",
+  "topic": "5 GHz Wi-Fi and 5G mobile data: what to confirm before streaming",
+  "primary_keyword": "5G IPTV",
+  "slug": "5g-wifi-band-versus-mobile-data-checklist",
+  "translations": {
+    "en": {
+      "title": "5G IPTV: tell a Wi-Fi band from mobile data",
+      "excerpt": "A router label and a phone's 5G symbol describe different connections. Check which one your streaming device is actually using.",
+      "seo_title": "5G IPTV: tell a Wi-Fi band from mobile data",
+      "seo_description": "Understand 5 GHz Wi-Fi versus 5G mobile data before streaming: check the device connection, data plan and a useful comparison without speed promises.",
+      "sections": [
+        {
+          "heading": "Read the connection, not just the name",
+          "paragraphs": [
+            "When looking into 5G IPTV, it is easy to mix up 5 GHz Wi-Fi and 5G mobile service. The first is a wireless band used between a device and a router; the second is a cellular connection. A network name containing 5G does not establish what connection is active. Likewise, 5G Live IPTV is a brand name, not a statement about your mobile operator or signal."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the device and the plan separately",
+          "paragraphs": [
+            "Open the streaming device's network settings and identify whether it uses home Wi-Fi, Ethernet or a phone hotspot. If a phone supplies the connection, check its cellular plan, coverage and hotspot conditions with the carrier before a long session. Apple's guidance explains that using cellular 5G depends on compatible equipment and service. Changing a router's Wi-Fi band cannot add mobile coverage or remove a data allowance."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Make a comparison you can explain",
+          "paragraphs": [
+            "Keep the same device, player and authorised content while you compare an available connection. Note the time, connection type and behaviour, then change one thing only. A short check can help describe a problem, but it does not promise future performance. Before choosing a plan, ask about the service details you need; treat your internet connection and your IPTV purchase as separate checks."
+          ],
+          "items": [
+            "Identify the connection on the device itself.",
+            "Confirm hotspot, data and roaming conditions with the carrier.",
+            "Record changes without sharing network or account passwords."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "IPTV y 5G: distingue la banda wifi de los datos móviles",
+      "excerpt": "El nombre de una red y el símbolo 5G del teléfono no describen lo mismo. Comprueba qué conexión utiliza realmente tu equipo.",
+      "seo_title": "IPTV y 5G: distingue la banda wifi de los datos móviles",
+      "seo_description": "Distingue el wifi de 5 GHz de los datos móviles 5G antes de usar IPTV: revisa la conexión, el plan de datos y una comparación sin promesas de velocidad.",
+      "sections": [
+        {
+          "heading": "Lee el tipo de conexión, no solo el nombre",
+          "paragraphs": [
+            "Al buscar IPTV con 5G, es fácil confundir el wifi de 5 GHz con el servicio móvil 5G. El primero es una banda inalámbrica entre el equipo y el router; el segundo es una conexión celular. Que una red se llame 5G no confirma la conexión activa. Además, 5G Live IPTV es una marca, no una indicación sobre tu operador móvil o tu cobertura."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba el dispositivo y la tarifa por separado",
+          "paragraphs": [
+            "Abre los ajustes de red y mira si el equipo utiliza wifi doméstico, Ethernet o un punto de acceso del teléfono. En este último caso, consulta con el operador los datos, la cobertura y las condiciones para compartir conexión antes de una sesión larga. Apple explica que el 5G móvil requiere equipo y servicio compatibles. Cambiar la banda del router no crea cobertura móvil ni elimina un límite de datos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Haz una comparación que puedas explicar",
+          "paragraphs": [
+            "Mantén el mismo dispositivo, reproductor y contenido autorizado al comparar otra conexión disponible. Anota la hora, el tipo de conexión y lo que ocurre; después cambia una sola cosa. Una comprobación breve ayuda a describir el problema, pero no garantiza el rendimiento futuro. Antes de elegir un plan, aclara sus condiciones y revisa por separado internet y el servicio IPTV."
+          ],
+          "items": [
+            "Identifica la conexión desde el propio equipo.",
+            "Consulta datos, roaming y conexión compartida con el operador.",
+            "No compartas contraseñas de red ni de la cuenta."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV et 5G : distinguer Wi-Fi et données mobiles",
+      "excerpt": "Le nom d'un réseau et le symbole 5G du téléphone ne décrivent pas la même liaison. Vérifiez celle que votre appareil utilise vraiment.",
+      "seo_title": "IPTV et 5G : distinguer Wi-Fi et données mobiles",
+      "seo_description": "Distinguez le Wi-Fi 5 GHz des données mobiles 5G avant une session IPTV : connexion réelle, forfait mobile et comparaison sans promesse de débit.",
+      "sections": [
+        {
+          "heading": "Lire la connexion plutôt que son nom",
+          "paragraphs": [
+            "En recherchant une solution IPTV avec la 5G, on peut confondre le Wi-Fi 5 GHz et le service mobile 5G. Le premier est une bande radio entre un appareil et un routeur ; le second correspond à une liaison cellulaire. Un réseau nommé 5G ne prouve pas quelle connexion est active. De même, 5G Live IPTV est une marque, sans indication sur votre opérateur ou votre réception mobile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifier séparément appareil et forfait",
+          "paragraphs": [
+            "Ouvrez les réglages réseau pour savoir si l'appareil utilise le Wi-Fi domestique, Ethernet ou le partage de connexion d'un téléphone. Dans ce dernier cas, vérifiez auprès de l'opérateur les données, la couverture et les conditions du partage avant une longue séance. Apple rappelle que la 5G cellulaire exige un équipement et un service compatibles. Changer de bande Wi-Fi ne crée pas de couverture mobile et ne supprime pas un plafond de données."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Faire une comparaison facile à décrire",
+          "paragraphs": [
+            "Conservez le même appareil, lecteur et contenu autorisé pour comparer une autre connexion disponible. Notez l'heure, le type de liaison et le comportement, puis ne changez qu'un élément. Cette vérification aide à expliquer un problème sans garantir les performances futures. Avant de choisir un forfait, clarifiez ses conditions et examinez séparément la connexion internet et l'achat du service IPTV."
+          ],
+          "items": [
+            "Identifier la connexion dans les réglages de l'appareil.",
+            "Vérifier données, itinérance et partage avec l'opérateur.",
+            "Ne pas partager les mots de passe du réseau ou du compte."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV e 5G: distingui il Wi-Fi dai dati mobili",
+      "excerpt": "Il nome di una rete e il simbolo 5G del telefono indicano cose diverse. Controlla quale collegamento usa davvero il dispositivo.",
+      "seo_title": "IPTV e 5G: distingui il Wi-Fi dai dati mobili",
+      "seo_description": "Distingui Wi-Fi a 5 GHz e dati mobili 5G prima di usare IPTV: verifica collegamento, piano dati e un confronto pratico senza promesse di velocità.",
+      "sections": [
+        {
+          "heading": "Leggi il collegamento, non soltanto il nome",
+          "paragraphs": [
+            "Cercando IPTV con il 5G è facile confondere il Wi-Fi a 5 GHz con il servizio mobile 5G. Il primo è una banda radio tra dispositivo e router; il secondo è un collegamento cellulare. Il nome 5G di una rete non dimostra quale connessione sia attiva. Anche 5G Live IPTV è un marchio, non un'indicazione sul tuo operatore mobile o sul segnale disponibile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla separatamente dispositivo e piano",
+          "paragraphs": [
+            "Apri le impostazioni di rete e verifica se il dispositivo usa Wi-Fi domestico, Ethernet o l'hotspot di un telefono. Se la connessione arriva dal telefono, chiedi all'operatore informazioni su dati, copertura e condizioni dell'hotspot prima di una sessione lunga. Apple spiega che il 5G mobile richiede dispositivo e servizio compatibili. Cambiare banda Wi-Fi non aggiunge copertura mobile e non elimina una soglia di traffico."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Fai un confronto che puoi descrivere",
+          "paragraphs": [
+            "Mantieni lo stesso dispositivo, lettore e contenuto autorizzato quando provi un'altra connessione disponibile. Annota orario, tipo di collegamento e comportamento, poi modifica un solo elemento. Una verifica breve aiuta a descrivere un problema, ma non garantisce prestazioni future. Prima di scegliere un piano, chiarisci le condizioni del servizio e valuta separatamente internet e l'acquisto IPTV."
+          ],
+          "items": [
+            "Identifica il collegamento nelle impostazioni del dispositivo.",
+            "Verifica dati, roaming e hotspot con l'operatore.",
+            "Non condividere password di rete o dell'account."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV en 5G: onderscheid wifi van mobiele data",
+      "excerpt": "Een netwerknaam en het 5G-symbool op je telefoon betekenen iets anders. Controleer welke verbinding je streamingapparaat echt gebruikt.",
+      "seo_title": "IPTV en 5G: onderscheid wifi van mobiele data",
+      "seo_description": "Maak onderscheid tussen 5 GHz-wifi en mobiele 5G-data bij IPTV: controleer de verbinding, databundel en een vergelijking zonder snelheidsbeloften.",
+      "sections": [
+        {
+          "heading": "Kijk naar de verbinding, niet alleen de naam",
+          "paragraphs": [
+            "Bij het zoeken naar IPTV met 5G worden 5 GHz-wifi en mobiele 5G soms door elkaar gehaald. Het eerste is een radioband tussen je apparaat en router; het tweede is een mobiele verbinding. Een netwerknaam met 5G bewijst niet welke verbinding actief is. Ook 5G Live IPTV is een merknaam en zegt niets over je mobiele provider of bereik."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer apparaat en abonnement apart",
+          "paragraphs": [
+            "Open de netwerkinstellingen en kijk of het apparaat thuiswifi, Ethernet of een telefoonhotspot gebruikt. Vraag bij een telefoonverbinding vooraf naar de databundel, dekking en hotspotvoorwaarden van je provider. Apple beschrijft dat mobiele 5G geschikte apparatuur en dienstverlening vereist. Een andere wifiband op de router geeft je geen mobiel bereik en laat een datalimiet niet verdwijnen. Dat zijn afzonderlijke controles."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Maak een vergelijking die je kunt uitleggen",
+          "paragraphs": [
+            "Gebruik hetzelfde apparaat, dezelfde speler en toegestane inhoud bij een vergelijking met een andere beschikbare verbinding. Noteer tijdstip, verbindingstype en gedrag en verander daarna slechts één onderdeel. Zo'n korte controle helpt een probleem beschrijven, maar belooft geen toekomstige prestaties. Vraag vóór de keuze van een pakket naar de voorwaarden en beoordeel internet en de IPTV-aankoop afzonderlijk."
+          ],
+          "items": [
+            "Bekijk het verbindingstype op het apparaat zelf.",
+            "Vraag de provider naar data, roaming en hotspotvoorwaarden.",
+            "Deel geen netwerk- of accountwachtwoorden."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV e 5G: diferencie a faixa Wi-Fi dos dados móveis",
+      "excerpt": "O nome da rede e o símbolo 5G do telefone representam conexões diferentes. Confira qual delas seu aparelho realmente utiliza.",
+      "seo_title": "IPTV e 5G: diferencie a faixa Wi-Fi dos dados móveis",
+      "seo_description": "Diferencie Wi-Fi de 5 GHz e dados móveis 5G antes de usar IPTV: confira conexão, plano de dados e uma comparação sem prometer velocidade.",
+      "sections": [
+        {
+          "heading": "Leia a conexão, não apenas o nome",
+          "paragraphs": [
+            "Ao pesquisar IPTV com 5G, é fácil confundir Wi-Fi de 5 GHz com serviço móvel 5G. O primeiro é uma faixa de rádio entre aparelho e roteador; o segundo é uma conexão celular. Um nome de rede contendo 5G não comprova a conexão ativa. Da mesma forma, 5G Live IPTV é uma marca, não uma indicação da sua operadora ou do sinal móvel disponível."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira o aparelho e o plano separadamente",
+          "paragraphs": [
+            "Abra as configurações de rede e identifique se o aparelho usa Wi-Fi de casa, Ethernet ou um ponto de acesso do telefone. Se o celular fornece a conexão, confirme com a operadora os dados, a cobertura e as condições de compartilhamento antes de uma sessão longa. A Apple explica que o 5G celular exige equipamento e serviço compatíveis. Trocar a faixa Wi-Fi não cria cobertura móvel nem elimina franquias de dados."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Faça uma comparação que consiga explicar",
+          "paragraphs": [
+            "Mantenha o mesmo aparelho, player e conteúdo autorizado ao comparar outra conexão disponível. Anote horário, tipo de ligação e comportamento; depois mude apenas uma coisa. Essa verificação ajuda a descrever o problema, mas não promete desempenho futuro. Antes de escolher um plano, esclareça suas condições e avalie separadamente a conexão de internet e a compra do serviço IPTV."
+          ],
+          "items": [
+            "Identifique a conexão nas configurações do aparelho.",
+            "Confira dados, roaming e compartilhamento com a operadora.",
+            "Não compartilhe senhas da rede ou da conta."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV и 5G: чем Wi-Fi отличается от мобильной связи",
+      "excerpt": "Название сети и значок 5G на телефоне обозначают разные вещи. Проверьте, какое подключение действительно использует устройство.",
+      "seo_title": "IPTV и 5G: чем Wi-Fi отличается от мобильной связи",
+      "seo_description": "Разберитесь в различии Wi-Fi 5 ГГц и мобильного 5G перед просмотром IPTV: подключение устройства, тариф и сравнение без обещаний скорости.",
+      "sections": [
+        {
+          "heading": "Смотрите на подключение, а не название",
+          "paragraphs": [
+            "При поиске IPTV через 5G легко спутать Wi-Fi 5 ГГц с мобильной связью 5G. Первое — радиодиапазон между устройством и роутером, второе — сотовое подключение. Название сети со словом 5G не доказывает, какое соединение активно. Название бренда 5G Live IPTV также ничего не говорит о вашем мобильном операторе и качестве его сигнала."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверяйте устройство и тариф отдельно",
+          "paragraphs": [
+            "Откройте сетевые настройки и выясните, используется домашний Wi-Fi, Ethernet или точка доступа телефона. Если интернет раздаёт телефон, заранее уточните у оператора условия тарифа, покрытие и ограничения раздачи. В рекомендациях Apple для мобильного 5G указана необходимость совместимого оборудования и услуги. Смена диапазона Wi-Fi на роутере не создаёт сотовое покрытие и не отменяет лимит мобильного трафика."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "Сравнивайте так, чтобы результат можно было объяснить",
+          "paragraphs": [
+            "Сохраняйте прежнее устройство, плеер и разрешённый контент при проверке другого доступного подключения. Запишите время, тип соединения и поведение, затем меняйте только один параметр. Короткая проверка помогает описать неполадку, но не гарантирует будущую работу. Перед выбором плана уточните условия и рассматривайте качество интернет-подключения отдельно от покупки IPTV."
+          ],
+          "items": [
+            "Определите тип подключения в самом устройстве.",
+            "Уточните трафик, роуминг и раздачу у оператора.",
+            "Не передавайте пароли сети и аккаунта."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV کے لیے وائی فائی بینڈ اور موبائل 5G کا فرق سمجھیں",
+      "excerpt": "روٹر کے نیٹ ورک کا نام اور فون پر 5G کی علامت الگ رابطے بتاتے ہیں۔ پہلے دیکھیں کہ آپ کا آلہ واقعی کس سے جڑا ہے۔",
+      "seo_title": "IPTV کے لیے وائی فائی بینڈ اور موبائل 5G کا فرق سمجھیں",
+      "seo_description": "IPTV چلانے سے پہلے 5 GHz وائی فائی اور موبائل 5G میں فرق سمجھیں، رابطہ اور ڈیٹا پلان دیکھیں اور بغیر رفتار کے دعوے کے موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "صرف نام نہیں، اصل رابطہ دیکھیں",
+          "paragraphs": [
+            "5G کے ذریعے IPTV کے بارے میں سوچتے وقت 5 GHz وائی فائی اور موبائل 5G کو ایک سمجھنا آسان ہے۔ پہلا آلے اور روٹر کے درمیان وائرلیس بینڈ ہے، جبکہ دوسرا موبائل نیٹ ورک کا رابطہ ہے۔ وائی فائی کے نام میں 5G لکھا ہونا فعال رابطے کا ثبوت نہیں۔ اسی طرح 5G Live IPTV ایک برانڈ ہے، آپ کے موبائل آپریٹر یا سگنل کی تصدیق نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آلہ اور ڈیٹا پلان الگ چیک کریں",
+          "paragraphs": [
+            "آلے کی نیٹ ورک ترتیبات کھول کر دیکھیں کہ گھر کا وائی فائی، ایتھرنیٹ یا فون کا ہاٹ اسپاٹ استعمال ہو رہا ہے۔ فون سے رابطہ مل رہا ہو تو طویل استعمال سے پہلے آپریٹر سے ڈیٹا، کوریج اور ہاٹ اسپاٹ کی شرائط معلوم کریں۔ Apple کی ہدایات کے مطابق موبائل 5G کے لیے موزوں آلہ اور سروس درکار ہیں۔ روٹر کا بینڈ بدلنے سے موبائل کوریج نہیں بنتی، نہ ڈیٹا کی حد ختم ہوتی ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "ایسا موازنہ کریں جسے سمجھا سکیں",
+          "paragraphs": [
+            "کسی دوسرے دستیاب رابطے کو دیکھتے وقت آلہ، پلیئر اور مجاز مواد وہی رکھیں۔ وقت، رابطے کی قسم اور جو مسئلہ نظر آیا وہ لکھیں، پھر صرف ایک چیز بدلیں۔ مختصر جانچ مسئلہ بیان کرنے میں مدد دیتی ہے، آئندہ کارکردگی کی ضمانت نہیں۔ پلان منتخب کرنے سے پہلے ضروری شرائط پوچھیں اور انٹرنیٹ کے رابطے کو IPTV کی خریداری سے الگ جانچیں۔"
+          ],
+          "items": [
+            "اصل رابطہ آلے کی ترتیبات میں دیکھیں۔",
+            "ڈیٹا، رومنگ اور ہاٹ اسپاٹ کی شرائط آپریٹر سے پوچھیں۔",
+            "نیٹ ورک یا اکاؤنٹ کے پاس ورڈ شیئر نہ کریں۔"
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "IPTV و5G: ميّز شبكة Wi-Fi عن بيانات الهاتف",
+      "excerpt": "اسم شبكة الراوتر ورمز 5G على الهاتف لا يعنيان الاتصال نفسه. تحقق من الاتصال الذي يستخدمه جهاز البث فعلياً.",
+      "seo_title": "IPTV و5G: ميّز شبكة Wi-Fi عن بيانات الهاتف",
+      "seo_description": "ميّز Wi-Fi بتردد 5 غيغاهرتز عن بيانات الهاتف 5G قبل تشغيل IPTV، وافحص الاتصال وباقة البيانات من دون وعود بسرعة مضمونة.",
+      "sections": [
+        {
+          "heading": "اقرأ نوع الاتصال ولا تكتفِ بالاسم",
+          "paragraphs": [
+            "عند البحث عن IPTV عبر 5G، قد يختلط Wi-Fi بتردد 5 غيغاهرتز بخدمة الهاتف 5G. الأول نطاق لاسلكي بين الجهاز والراوتر، والثاني اتصال خلوي. وجود 5G في اسم شبكة لا يثبت نوع الاتصال النشط. كذلك فإن 5G Live IPTV اسم علامة تجارية، وليس تعريفاً لمشغل الهاتف لديك أو تأكيداً لقوة الإشارة المتاحة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تحقق من الجهاز والباقة كلٌّ على حدة",
+          "paragraphs": [
+            "افتح إعدادات الشبكة لتعرف هل الجهاز يستخدم Wi-Fi المنزل أو Ethernet أو نقطة اتصال من هاتف. إذا كان الهاتف يوفر الإنترنت، اسأل المشغل عن البيانات والتغطية وشروط المشاركة قبل جلسة طويلة. توضح إرشادات Apple أن استخدام 5G الخلوي يحتاج إلى جهاز وخدمة متوافقين. تغيير نطاق Wi-Fi في الراوتر لا ينشئ تغطية خلوية ولا يلغي حداً لاستهلاك البيانات."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "أجرِ مقارنة تستطيع شرحها",
+          "paragraphs": [
+            "احتفظ بالجهاز والمشغل والمحتوى المصرح به نفسها عند مقارنة اتصال آخر متاح. سجّل الوقت ونوع الاتصال والسلوك، ثم غيّر عنصراً واحداً فقط. يساعد الفحص القصير على وصف المشكلة، لكنه لا يضمن الأداء لاحقاً. قبل اختيار خطة، اسأل عن الشروط التي تحتاجها وافحص اتصال الإنترنت وشراء خدمة IPTV كمسألتين منفصلتين."
+          ],
+          "items": [
+            "حدّد الاتصال من إعدادات الجهاز نفسه.",
+            "اسأل المشغل عن البيانات والتجوال ونقطة الاتصال.",
+            "لا تشارك كلمات مرور الشبكة أو الحساب."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV और 5G: वाई-फाई बैंड को मोबाइल डेटा से अलग समझें",
+      "excerpt": "राउटर की नेटवर्क पहचान और फोन का 5G चिह्न अलग कनेक्शन बताते हैं। पहले देखें कि आपका डिवाइस वास्तव में किससे जुड़ा है।",
+      "seo_title": "IPTV और 5G: वाई-फाई बैंड को मोबाइल डेटा से अलग समझें",
+      "seo_description": "IPTV चलाने से पहले 5 GHz वाई-फाई और मोबाइल 5G का अंतर समझें, कनेक्शन व डेटा प्लान जाँचें और बिना गति के वादे के तुलना करें।",
+      "sections": [
+        {
+          "heading": "सिर्फ नाम नहीं, वास्तविक कनेक्शन देखें",
+          "paragraphs": [
+            "5G के जरिए IPTV के बारे में सोचते समय 5 GHz वाई-फाई और मोबाइल 5G को एक समझ लेना आसान है। पहला डिवाइस और राउटर के बीच वायरलेस बैंड है; दूसरा मोबाइल नेटवर्क का कनेक्शन है। वाई-फाई के नाम में 5G लिखे होने से सक्रिय कनेक्शन तय नहीं होता। इसी तरह 5G Live IPTV एक ब्रांड है, आपके मोबाइल ऑपरेटर या उसके सिग्नल की पहचान नहीं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "डिवाइस और डेटा प्लान अलग जाँचें",
+          "paragraphs": [
+            "नेटवर्क सेटिंग खोलकर देखें कि डिवाइस घर का वाई-फाई, Ethernet या फोन का हॉटस्पॉट इस्तेमाल कर रहा है। फोन से इंटरनेट मिल रहा हो तो लंबे उपयोग से पहले ऑपरेटर से डेटा, कवरेज और हॉटस्पॉट की शर्तें पूछें। Apple की जानकारी के अनुसार मोबाइल 5G के लिए अनुकूल डिवाइस और सेवा जरूरी हैं। राउटर का वाई-फाई बैंड बदलने से मोबाइल कवरेज नहीं बनती और डेटा सीमा भी नहीं हटती।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: recommended Wi-Fi router settings",
+              "url": "https://support.apple.com/en-us/102766"
+            },
+            {
+              "label": "Apple: using cellular 5G",
+              "url": "https://support.apple.com/en-us/108383"
+            }
+          ]
+        },
+        {
+          "heading": "ऐसी तुलना करें जिसे समझा सकें",
+          "paragraphs": [
+            "दूसरा उपलब्ध कनेक्शन जाँचते समय डिवाइस, प्लेयर और अधिकृत सामग्री वही रखें। समय, कनेक्शन का प्रकार और समस्या लिखें, फिर केवल एक चीज बदलें। छोटी जाँच समस्या समझाने में मदद करती है, भविष्य की गति का वादा नहीं करती। प्लान चुनने से पहले जरूरी शर्तें पूछें और इंटरनेट कनेक्शन तथा IPTV की खरीद को अलग-अलग जाँचें।"
+          ],
+          "items": [
+            "वास्तविक कनेक्शन डिवाइस की सेटिंग में देखें।",
+            "डेटा, रोमिंग और हॉटस्पॉट की शर्तें ऑपरेटर से पूछें।",
+            "नेटवर्क या खाते का पासवर्ड साझा न करें।"
+          ],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: recommended Wi-Fi router settings",
+      "url": "https://support.apple.com/en-us/102766"
+    },
+    {
+      "label": "Apple: using cellular 5G",
+      "url": "https://support.apple.com/en-us/108383"
+    }
+  ]
+}

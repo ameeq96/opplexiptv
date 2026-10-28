@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-10-28",
+  "topic": "Moving between home networks: keep your streaming setup notes useful",
+  "primary_keyword": "IPTV network setup",
+  "slug": "geo-network-change-streaming-setup-notes",
+  "translations": {
+    "en": {
+      "title": "Changing networks? Keep useful IPTV setup notes",
+      "excerpt": "A short setup note makes a move between home networks easier to explain without copying passwords or changing every setting at once.",
+      "seo_title": "Changing networks? Keep useful IPTV setup notes",
+      "seo_description": "Keep IPTV network setup notes useful when changing routers or homes: record the device, compare one change and share a clear account-safe report.",
+      "sections": [
+        {
+          "heading": "Record the starting point, not the password",
+          "paragraphs": [
+            "Before changing an IPTV network setup, make a small note of the device model, player version and connection type. A label such as home Wi-Fi or Ethernet is usually enough; leave passwords and account links out. Add the date and your time zone. These details help you recognise what changed when a familiar television moves to a different router or another home."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate joining the network from playing a stream",
+          "paragraphs": [
+            "First check whether the device has joined the intended network and can open an ordinary public page or app. Then try your authorised service in the same player. Avoid changing the player, router and device settings together, because the result becomes difficult to interpret. For Google streaming devices, use Google's instructions for the exact model. If casting is involved, check that the sender and receiver are on the same Wi-Fi network."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Turn the result into a useful support question",
+          "paragraphs": [
+            "Write down what worked on the previous connection, what happens now and when the behaviour started. Mention whether the issue affects one device or more, without posting a full account screen. Keep the old note and add the new result rather than replacing it. Geo support can work from a clear comparison; the note itself does not prove that a provider, router or player is responsible."
+          ],
+          "items": [
+            "Keep device, player and connection notes together.",
+            "Change one setting at a time and record the result.",
+            "Send error text without passwords or private access links."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "¿Cambias de red? Conserva notas útiles de tu IPTV",
+      "excerpt": "Unas notas breves ayudan a explicar qué cambió al mover el equipo entre redes, sin copiar contraseñas ni modificar todo a la vez.",
+      "seo_title": "¿Cambias de red? Conserva notas útiles de tu IPTV",
+      "seo_description": "Organiza la configuración de red IPTV al cambiar de router o vivienda: identifica el equipo, compara un cambio y prepara una consulta sin datos privados.",
+      "sections": [
+        {
+          "heading": "Anota el punto de partida, no la contraseña",
+          "paragraphs": [
+            "Antes de cambiar la configuración de red IPTV, apunta el modelo del dispositivo, la versión del reproductor y el tipo de conexión. Basta una referencia como wifi de casa o Ethernet; evita guardar contraseñas y enlaces de acceso en esas notas. Añade la fecha y la zona horaria para saber qué cambió cuando traslades el televisor a otro router o vivienda."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingue conexión a la red y reproducción",
+          "paragraphs": [
+            "Comprueba primero que el equipo esté conectado a la red correcta y pueda abrir una página o aplicación pública normal. Después prueba tu servicio autorizado en el mismo reproductor. No cambies a la vez el reproductor, el router y los ajustes del dispositivo. Para equipos de Google, sigue las instrucciones del modelo concreto. Si transmites desde otro equipo, verifica que emisor y receptor usen la misma red wifi."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Convierte la comparación en una consulta clara",
+          "paragraphs": [
+            "Describe qué funcionaba en la conexión anterior, qué ocurre ahora y cuándo comenzó. Indica si afecta a un solo equipo o a varios, sin publicar una pantalla completa de tu cuenta. Conserva la nota anterior y añade el resultado nuevo. Así el soporte de Geo tendrá una comparación concreta, aunque esas notas por sí solas no permitan atribuir el fallo a un proveedor, router o reproductor."
+          ],
+          "items": [
+            "Agrupa modelo, reproductor y conexión.",
+            "Modifica un ajuste cada vez y anota el resultado.",
+            "Envía el error sin contraseñas ni enlaces privados."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Changer de réseau : garder des notes IPTV utiles",
+      "excerpt": "Quelques notes permettent d'expliquer un changement de réseau sans recopier les mots de passe ni modifier tous les réglages ensemble.",
+      "seo_title": "Changer de réseau : garder des notes IPTV utiles",
+      "seo_description": "Organisez vos notes de configuration réseau IPTV après un changement de routeur ou de domicile, avec une comparaison claire et sans accès privés.",
+      "sections": [
+        {
+          "heading": "Noter la situation de départ, sans mot de passe",
+          "paragraphs": [
+            "Avant de modifier une configuration réseau IPTV, notez le modèle de l'appareil, la version du lecteur et le type de connexion. Une indication comme Wi-Fi du domicile ou Ethernet suffit généralement. N'y ajoutez ni mot de passe ni lien d'accès personnel. Précisez la date et le fuseau horaire pour retrouver ce qui a changé lors du passage à un autre routeur ou logement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguer accès au réseau et lecture",
+          "paragraphs": [
+            "Vérifiez d'abord que l'appareil rejoint le réseau prévu et ouvre une page ou une application publique habituelle. Essayez ensuite votre service autorisé dans le même lecteur. Évitez de changer simultanément le lecteur, le routeur et les réglages de l'appareil. Pour un appareil Google, suivez la procédure correspondant au modèle. En cas de diffusion depuis un autre appareil, vérifiez que l'émetteur et le récepteur utilisent le même Wi-Fi."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Formuler une demande d'aide précise",
+          "paragraphs": [
+            "Décrivez ce qui fonctionnait sur l'ancienne connexion, ce qui se passe maintenant et depuis quand. Indiquez si un ou plusieurs appareils sont concernés, sans partager tout l'écran du compte. Gardez l'ancienne note et ajoutez le nouveau résultat. L'assistance Geo disposera ainsi d'une comparaison utile, mais cette note ne suffit pas à désigner le fournisseur, le routeur ou le lecteur comme responsable."
+          ],
+          "items": [
+            "Regrouper appareil, lecteur et type de connexion.",
+            "Modifier un seul réglage à la fois.",
+            "Transmettre l'erreur sans identifiants ni liens privés."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cambio di rete: conserva appunti utili per l'IPTV",
+      "excerpt": "Pochi appunti aiutano a spiegare il passaggio tra reti senza copiare password o cambiare contemporaneamente tutte le impostazioni.",
+      "seo_title": "Cambio di rete: conserva appunti utili per l'IPTV",
+      "seo_description": "Tieni ordinata la configurazione di rete IPTV quando cambi router o casa: annota il dispositivo, confronta una modifica e prepara una richiesta chiara.",
+      "sections": [
+        {
+          "heading": "Annota la situazione iniziale, non la password",
+          "paragraphs": [
+            "Prima di modificare la configurazione di rete IPTV, scrivi modello del dispositivo, versione del lettore e tipo di collegamento. Di solito basta indicare Wi-Fi di casa oppure Ethernet. Non inserire password o collegamenti di accesso personali. Aggiungi data e fuso orario: questi dettagli aiutano a ricostruire il cambiamento quando sposti un televisore su un altro router o in un'altra abitazione."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui collegamento alla rete e riproduzione",
+          "paragraphs": [
+            "Verifica prima che il dispositivo sia sulla rete prevista e riesca ad aprire una normale pagina o app pubblica. Poi prova il tuo servizio autorizzato nello stesso lettore. Evita di cambiare insieme lettore, router e impostazioni del dispositivo. Per i dispositivi Google usa la guida del modello esatto. Se trasmetti da un altro apparecchio, controlla che mittente e ricevitore utilizzino la stessa rete Wi-Fi."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Trasforma il confronto in una domanda utile",
+          "paragraphs": [
+            "Descrivi cosa funzionava sulla connessione precedente, cosa succede adesso e da quando. Specifica se il problema riguarda uno o più dispositivi, senza pubblicare l'intera schermata dell'account. Conserva gli appunti precedenti e aggiungi il nuovo risultato. L'assistenza Geo avrà così un confronto concreto, che però da solo non dimostra se la causa sia il fornitore, il router o il lettore."
+          ],
+          "items": [
+            "Riunisci dispositivo, lettore e tipo di rete.",
+            "Cambia una sola impostazione per volta.",
+            "Invia il testo dell'errore senza password o link privati."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Van netwerk wisselen: bewaar bruikbare IPTV-notities",
+      "excerpt": "Met korte notities kun je een netwerkwissel uitleggen zonder wachtwoorden te kopiëren of alle instellingen tegelijk te veranderen.",
+      "seo_title": "Van netwerk wisselen: bewaar bruikbare IPTV-notities",
+      "seo_description": "Houd je IPTV-netwerkinstellingen overzichtelijk bij een nieuwe router of verhuizing: noteer het apparaat, vergelijk één wijziging en bescherm accountgegevens.",
+      "sections": [
+        {
+          "heading": "Noteer het uitgangspunt, geen wachtwoord",
+          "paragraphs": [
+            "Schrijf vóór een wijziging aan je IPTV-netwerkinstellingen het apparaatmodel, de spelerversie en het verbindingstype op. Een omschrijving zoals thuiswifi of Ethernet is meestal voldoende. Laat wachtwoorden en persoonlijke toegangslinks weg. Voeg datum en tijdzone toe, zodat je later kunt nagaan wat veranderde toen dezelfde televisie op een andere router of in een ander huis werd aangesloten."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Scheid netwerktoegang van afspelen",
+          "paragraphs": [
+            "Controleer eerst of het apparaat met het bedoelde netwerk verbonden is en een gewone openbare pagina of app kan openen. Probeer daarna je toegestane dienst in dezelfde speler. Verander speler, router en apparaatinstellingen niet tegelijkertijd. Gebruik bij Google-streamingapparaten de instructies voor het precieze model. Controleer bij casten of het verzendende en ontvangende apparaat op hetzelfde wifinetwerk zitten."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Maak van de vergelijking een duidelijke hulpvraag",
+          "paragraphs": [
+            "Beschrijf wat op de oude verbinding werkte, wat nu gebeurt en wanneer het begon. Vermeld of één of meerdere apparaten hetzelfde probleem hebben, zonder een volledig accountscherm te delen. Bewaar de vorige notitie en voeg het nieuwe resultaat toe. Geo-support kan met die vergelijking verder; de notitie bewijst op zichzelf niet dat de aanbieder, router of speler de oorzaak is."
+          ],
+          "items": [
+            "Bewaar apparaat, speler en verbinding bij elkaar.",
+            "Verander één instelling tegelijk en noteer het resultaat.",
+            "Deel fouttekst zonder wachtwoorden of privélinks."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Mudou de rede? Guarde anotações úteis da configuração IPTV",
+      "excerpt": "Anotações curtas ajudam a explicar a mudança entre redes sem copiar senhas nem alterar todas as configurações de uma vez.",
+      "seo_title": "Mudou de rede? Guarde anotações úteis da configuração IPTV",
+      "seo_description": "Organize a configuração de rede IPTV ao trocar de roteador ou de casa: anote o aparelho, compare uma mudança e prepare um relato sem dados privados.",
+      "sections": [
+        {
+          "heading": "Registre o ponto de partida, não a senha",
+          "paragraphs": [
+            "Antes de mudar uma configuração de rede IPTV, anote o modelo do aparelho, a versão do player e o tipo de conexão. Uma indicação como Wi-Fi de casa ou Ethernet costuma bastar. Não inclua senhas nem links pessoais de acesso. Acrescente a data e o fuso horário para conseguir identificar o que mudou quando a mesma televisão passou para outro roteador ou outra casa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe conexão à rede e reprodução",
+          "paragraphs": [
+            "Primeiro verifique se o aparelho entrou na rede correta e consegue abrir uma página ou aplicativo público comum. Depois experimente seu serviço autorizado no mesmo player. Evite alterar player, roteador e configurações do aparelho ao mesmo tempo. Para dispositivos de streaming do Google, siga as instruções do modelo exato. Ao transmitir de outro aparelho, confira se emissor e receptor estão no mesmo Wi-Fi."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Transforme a comparação em uma pergunta clara",
+          "paragraphs": [
+            "Descreva o que funcionava na conexão anterior, o que acontece agora e quando começou. Informe se o problema aparece em um ou em vários aparelhos, sem compartilhar uma tela inteira da conta. Preserve a anotação anterior e acrescente o novo resultado. O suporte da Geo terá uma comparação útil, mas ela sozinha não comprova se a causa está no provedor, roteador ou player."
+          ],
+          "items": [
+            "Guarde aparelho, player e conexão na mesma nota.",
+            "Altere um ajuste por vez e registre o resultado.",
+            "Envie a mensagem de erro sem senhas ou links privados."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Смена сети: какие заметки о настройке IPTV сохранить",
+      "excerpt": "Короткая запись помогает объяснить смену домашней сети без копирования паролей и одновременного изменения всех настроек.",
+      "seo_title": "Смена сети: какие заметки о настройке IPTV сохранить",
+      "seo_description": "Сохраните понятные заметки о настройке сети IPTV при смене роутера или жилья: устройство, одно изменение и результат без личных данных.",
+      "sections": [
+        {
+          "heading": "Зафиксируйте исходные условия, а не пароль",
+          "paragraphs": [
+            "Перед изменением сетевых настроек IPTV запишите модель устройства, версию плеера и тип подключения. Обычно достаточно обозначения домашний Wi-Fi или Ethernet. Не включайте пароли и личные ссылки доступа. Добавьте дату и часовой пояс, чтобы позднее понять, что изменилось после подключения привычного телевизора к другому роутеру или сети в новом доме."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отделите подключение к сети от воспроизведения",
+          "paragraphs": [
+            "Сначала убедитесь, что устройство подключено к нужной сети и открывает обычную общедоступную страницу или приложение. Затем проверьте свой разрешённый сервис в прежнем плеере. Не меняйте одновременно плеер, роутер и настройки устройства. Для устройств Google используйте инструкцию именно вашей модели. При передаче изображения с другого устройства проверьте, что отправитель и приёмник находятся в одной сети Wi-Fi."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Составьте понятный вопрос поддержке",
+          "paragraphs": [
+            "Опишите, что работало на прежнем подключении, что происходит сейчас и когда это началось. Уточните, затронуто одно устройство или несколько, не публикуя полный экран аккаунта. Сохраните старую запись и добавьте новый результат. Поддержка Geo получит полезное сравнение, но сама запись не доказывает, что причина находится у поставщика, в роутере или в плеере."
+          ],
+          "items": [
+            "Храните модель, плеер и тип подключения вместе.",
+            "Меняйте один параметр за раз и записывайте результат.",
+            "Передавайте текст ошибки без паролей и личных ссылок."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "نیٹ ورک بدلتے وقت IPTV کی مفید تفصیل محفوظ رکھیں",
+      "excerpt": "گھر کا نیٹ ورک بدلنے سے پہلے مختصر نوٹ رکھیں تاکہ مسئلہ سمجھانا آسان ہو، بغیر پاس ورڈ محفوظ کیے یا سب ترتیبات بدلنے کے۔",
+      "seo_title": "نیٹ ورک بدلتے وقت IPTV کی مفید تفصیل محفوظ رکھیں",
+      "seo_description": "روٹر یا گھر بدلنے پر IPTV نیٹ ورک کی ترتیب کے واضح نوٹ بنائیں، ایک تبدیلی کا موازنہ کریں اور نجی معلومات کے بغیر مدد مانگیں۔",
+      "sections": [
+        {
+          "heading": "ابتدائی حالت لکھیں، پاس ورڈ نہیں",
+          "paragraphs": [
+            "IPTV کے نیٹ ورک کی ترتیب بدلنے سے پہلے آلے کا ماڈل، پلیئر کا ورژن اور رابطے کی قسم لکھ لیں۔ گھر کا وائی فائی یا ایتھرنیٹ جیسا نام کافی ہوتا ہے؛ پاس ورڈ اور ذاتی رسائی کے لنک اس نوٹ میں نہ رکھیں۔ تاریخ اور اپنا ٹائم زون بھی شامل کریں تاکہ دوسرے روٹر یا دوسرے گھر میں جانے کے بعد فرق یاد رہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نیٹ ورک سے جڑنے اور ویڈیو چلنے کو الگ دیکھیں",
+          "paragraphs": [
+            "پہلے تصدیق کریں کہ آلہ مطلوبہ نیٹ ورک سے جڑ چکا ہے اور عام عوامی صفحہ یا ایپ کھول سکتا ہے۔ پھر اسی پلیئر میں اپنی مجاز سروس آزمائیں۔ پلیئر، روٹر اور آلے کی ترتیبات ایک ساتھ نہ بدلیں۔ Google کے اسٹریمنگ آلے کے لیے اسی ماڈل کی اصل ہدایات دیکھیں۔ کاسٹ کرتے وقت بھیجنے اور وصول کرنے والے آلات ایک ہی وائی فائی پر ہوں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "موازنے کو واضح سوال بنائیں",
+          "paragraphs": [
+            "لکھیں کہ پچھلے رابطے پر کیا چلتا تھا، اب کیا ہوتا ہے اور تبدیلی کب سے آئی ہے۔ یہ بھی بتائیں کہ مسئلہ ایک آلے پر ہے یا کئی پر، مگر پورا اکاؤنٹ صفحہ شیئر نہ کریں۔ پرانا نوٹ برقرار رکھ کر نیا نتیجہ شامل کریں۔ Geo کی مدد کے لیے یہ موازنہ مفید ہے، لیکن صرف اس سے یہ ثابت نہیں ہوتا کہ قصور سروس، روٹر یا پلیئر کا ہے۔"
+          ],
+          "items": [
+            "آلہ، پلیئر اور رابطے کی تفصیل ایک جگہ رکھیں۔",
+            "ایک وقت میں ایک ترتیب بدل کر نتیجہ لکھیں۔",
+            "غلطی کا متن بھیجیں، پاس ورڈ یا نجی لنک نہیں۔"
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "عند تغيير الشبكة احتفظ بملاحظات IPTV مفيدة",
+      "excerpt": "تساعدك ملاحظات قصيرة على شرح الانتقال بين الشبكات المنزلية من دون نسخ كلمات المرور أو تغيير كل الإعدادات معاً.",
+      "seo_title": "عند تغيير الشبكة احتفظ بملاحظات IPTV مفيدة",
+      "seo_description": "رتب ملاحظات إعداد شبكة IPTV عند تغيير الراوتر أو المنزل، وسجّل مقارنة واضحة تساعد الدعم من دون كشف بيانات الوصول الخاصة.",
+      "sections": [
+        {
+          "heading": "سجل نقطة البداية ولا تسجل كلمة المرور",
+          "paragraphs": [
+            "قبل تغيير إعداد شبكة IPTV، دوّن طراز الجهاز وإصدار المشغل ونوع الاتصال. يكفي غالباً وصف مثل شبكة المنزل اللاسلكية أو Ethernet. لا تضع كلمات المرور أو روابط الدخول الشخصية في الملاحظة. أضف التاريخ والمنطقة الزمنية حتى تتذكر ما الذي تغير عند نقل التلفاز نفسه إلى راوتر مختلف أو منزل آخر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل الاتصال بالشبكة عن تشغيل المحتوى",
+          "paragraphs": [
+            "تحقق أولاً من اتصال الجهاز بالشبكة المطلوبة وقدرته على فتح صفحة أو تطبيق عام عادي. ثم جرّب خدمتك المصرح بها في المشغل نفسه. لا تغيّر المشغل والراوتر وإعدادات الجهاز في وقت واحد، لأن تفسير النتيجة سيصبح أصعب. لأجهزة Google اتبع تعليمات الطراز المحدد. وعند الإرسال من جهاز آخر، تأكد من اتصال المرسل والمستقبل بشبكة Wi-Fi نفسها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "حوّل المقارنة إلى سؤال واضح للدعم",
+          "paragraphs": [
+            "اكتب ما الذي كان يعمل على الاتصال السابق، وما الذي يحدث الآن، ومتى بدأ التغير. اذكر هل تظهر المشكلة على جهاز واحد أم عدة أجهزة، من دون نشر شاشة الحساب كاملة. احتفظ بالملاحظة القديمة وأضف النتيجة الجديدة. يستفيد دعم Geo من هذه المقارنة، لكنها وحدها لا تثبت أن السبب يعود إلى مزود الخدمة أو الراوتر أو المشغل."
+          ],
+          "items": [
+            "اجمع طراز الجهاز والمشغل ونوع الاتصال في ملاحظة واحدة.",
+            "غيّر إعداداً واحداً في كل مرة وسجل النتيجة.",
+            "أرسل نص الخطأ من دون كلمات مرور أو روابط خاصة."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "नेटवर्क बदलें तो IPTV सेटअप के उपयोगी नोट्स रखें",
+      "excerpt": "घर का नेटवर्क बदलने से पहले छोटे नोट्स बनाएँ ताकि समस्या समझाना आसान हो, बिना पासवर्ड लिखे या सारी सेटिंग एक साथ बदले।",
+      "seo_title": "नेटवर्क बदलें तो IPTV सेटअप के उपयोगी नोट्स रखें",
+      "seo_description": "राउटर या घर बदलने पर IPTV नेटवर्क सेटअप के साफ नोट्स रखें, एक बदलाव की तुलना करें और निजी जानकारी के बिना सहायता माँगें।",
+      "sections": [
+        {
+          "heading": "शुरुआती स्थिति लिखें, पासवर्ड नहीं",
+          "paragraphs": [
+            "IPTV नेटवर्क सेटअप बदलने से पहले डिवाइस का मॉडल, प्लेयर का संस्करण और कनेक्शन का प्रकार लिख लें। घर का वाई-फाई या Ethernet जैसा संकेत काफी है; इस नोट में पासवर्ड और निजी एक्सेस लिंक न रखें। तारीख और अपना समय क्षेत्र भी जोड़ें, ताकि दूसरे राउटर या नए घर में उसी टीवी को लगाने के बाद अंतर समझ आए।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "नेटवर्क से जुड़ना और वीडियो चलना अलग जाँचें",
+          "paragraphs": [
+            "पहले देखें कि डिवाइस सही नेटवर्क से जुड़ा है और कोई सामान्य सार्वजनिक पेज या ऐप खोल सकता है। फिर उसी प्लेयर में अपनी अधिकृत सेवा आजमाएँ। प्लेयर, राउटर और डिवाइस की सेटिंग एक साथ न बदलें। Google स्ट्रीमिंग डिवाइस के लिए अपने सही मॉडल की आधिकारिक प्रक्रिया देखें। कास्ट करते समय भेजने और प्राप्त करने वाले डिवाइस एक ही वाई-फाई पर होने चाहिए।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the Wi-Fi network of streaming devices",
+              "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+            },
+            {
+              "label": "Google Cast: sender and receiver connection basics",
+              "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "तुलना को स्पष्ट सहायता प्रश्न बनाएँ",
+          "paragraphs": [
+            "लिखें कि पुराने कनेक्शन पर क्या चलता था, अब क्या होता है और बदलाव कब शुरू हुआ। यह भी बताएँ कि समस्या एक डिवाइस पर है या कई पर, लेकिन खाते की पूरी स्क्रीन साझा न करें। पुराना नोट सुरक्षित रखकर नया नतीजा जोड़ें। Geo सहायता के लिए यह तुलना उपयोगी है, मगर इससे अकेले यह तय नहीं होता कि कारण सेवा, राउटर या प्लेयर में है।"
+          ],
+          "items": [
+            "डिवाइस, प्लेयर और कनेक्शन की जानकारी साथ रखें।",
+            "एक बार में एक सेटिंग बदलें और नतीजा लिखें।",
+            "पासवर्ड या निजी लिंक के बजाय त्रुटि का पाठ भेजें।"
+          ],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: change the Wi-Fi network of streaming devices",
+      "url": "https://support.google.com/chromecast/answer/7331010?hl=en"
+    },
+    {
+      "label": "Google Cast: sender and receiver connection basics",
+      "url": "https://developers.google.com/cast/docs/design_checklist/cast-basics?hl=en"
+    }
+  ]
+}
