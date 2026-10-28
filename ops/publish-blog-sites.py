@@ -320,19 +320,20 @@ class Publisher:
         if status["run"].get("git_source") != {**expected, "path": path}:
             raise PublishError("git_source_mismatch", "source")
         try:
-            head = self.execute(["/usr/bin/git", "rev-parse", "HEAD"], cwd=self.layout.main,
+            git = ["/usr/bin/git", "-c", "safe.directory=" + str(self.layout.main.resolve())]
+            head = self.execute([*git, "rev-parse", "HEAD"], cwd=self.layout.main,
                                 capture_output=True, text=True, timeout=30, check=False, env=self._environment())
             if head.returncode or not isinstance(head.stdout, str) or not GIT_COMMIT.fullmatch(head.stdout.strip()):
                 raise PublishError("git_source_commit_mismatch", "source")
             checkout = head.stdout.strip()
             if expected_checkout is not None and checkout != expected_checkout:
                 raise PublishError("git_source_checkout_changed", "source")
-            ancestor = self.execute(["/usr/bin/git", "merge-base", "--is-ancestor", expected["commit"], checkout],
+            ancestor = self.execute([*git, "merge-base", "--is-ancestor", expected["commit"], checkout],
                                     cwd=self.layout.main, capture_output=True, timeout=30, check=False, env=self._environment())
             if ancestor.returncode:
                 raise PublishError("git_source_not_ancestor", "source")
             for revision in (expected["commit"], checkout):
-                blob = self.execute(["/usr/bin/git", "show", revision + ":" + path], cwd=self.layout.main,
+                blob = self.execute([*git, "show", revision + ":" + path], cwd=self.layout.main,
                                     capture_output=True, timeout=30, check=False, env=self._environment())
                 if blob.returncode or not isinstance(blob.stdout, bytes) or len(blob.stdout) > 2 * 1024**2:
                     raise PublishError("git_source_blob_unavailable", "source")

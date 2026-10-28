@@ -90,6 +90,10 @@ class FakeRunner:
             }[action]
             return subprocess.CompletedProcess(arguments, 0, json.dumps({"ok": True, "data": data}), "")
         if arguments[0] == "/usr/bin/git":
+            if arguments[1:2] == ["-c"]:
+                if arguments[2] != "safe.directory=" + str(kwargs["cwd"].resolve()):
+                    raise AssertionError("Only the exact repository may be trusted for this command")
+                arguments = [arguments[0], *arguments[3:]]
             if arguments[1:] == ["rev-parse", "HEAD"]:
                 return subprocess.CompletedProcess(arguments, 1 if "git-head" in self.failures else 0, self.head + "\n", "private server detail")
             if arguments[1] == "show":
@@ -142,6 +146,9 @@ class PublisherTests(unittest.TestCase):
         runner.git_source = {"commit": runner.head, "path": "resources/content/blog-publications/" + runner.site + "/" + runner.publishing_date + ".json",
                              "sha256": digest, "fingerprint": "e" * 64}
         return {"source_commit": runner.head, "source_sha256": digest, "source_fingerprint": "e" * 64}
+
+    def git_command(self, *arguments):
+        return ["/usr/bin/git", "-c", "safe.directory=" + str(self.layout.main.resolve()), *arguments]
 
     def test_dry_run_never_calls_process_network_or_creates_files(self):
         before = sorted(str(path.relative_to(self.root)) for path in self.root.rglob("*"))
@@ -231,7 +238,7 @@ class PublisherTests(unittest.TestCase):
     def test_git_source_read_failures_never_echo_subprocess_details(self):
         source = self.git_source()
         def execute(arguments, **kwargs):
-            if arguments[:2] == ["/usr/bin/git", "rev-parse"]:
+            if arguments == self.git_command("rev-parse", "HEAD"):
                 raise subprocess.TimeoutExpired(arguments, 30, output="private-secret")
             return self.runner(arguments, **kwargs)
         self.instance.execute = execute
@@ -246,8 +253,8 @@ class PublisherTests(unittest.TestCase):
         result = self.instance.publish("getiptv", 7, **source)
         self.assertTrue(result["already_published"])
         self.assertEqual(["status", "notify"], self.runner.actions())
-        shows = [(args, kwargs) for args, kwargs in self.runner.calls if args[:2] == ["/usr/bin/git", "show"]]
-        self.assertEqual(["/usr/bin/git", "show", source["source_commit"] + ":" + self.runner.git_source["path"]], shows[0][0])
+        shows = [(args, kwargs) for args, kwargs in self.runner.calls if args[:4] == self.git_command("show")]
+        self.assertEqual(self.git_command("show", source["source_commit"] + ":" + self.runner.git_source["path"]), shows[0][0])
         self.assertEqual(self.layout.main, shows[0][1]["cwd"])
         self.assertFalse(shows[0][1].get("text", False))
         self.assertFalse(self.layout.data.exists())
@@ -285,7 +292,7 @@ class PublisherTests(unittest.TestCase):
             result = self.instance.publish("getiptv", 7, initialize=True, **source)
         self.assertTrue(result["published"])
         for action, keyword, count in [("rev-parse", "HEAD", 2), ("show", source["source_commit"] + ":" + self.runner.git_source["path"], 4)]:
-            self.assertEqual(count, sum(arguments == ["/usr/bin/git", action, keyword] for arguments, _ in self.runner.calls))
+            self.assertEqual(count, sum(arguments == self.git_command(action, keyword) for arguments, _ in self.runner.calls))
         activation = next(arguments for arguments, _ in self.runner.calls if "activate" in arguments)
         for key, value in source.items():
             self.assertIn("--" + key.replace("_", "-") + "=" + value, activation)
@@ -298,7 +305,7 @@ class PublisherTests(unittest.TestCase):
         result = instance.publish("main", 7, **source)
         self.assertTrue(result["published"])
         self.assertEqual(["status", "snapshot", "status", "activate", "notify"], runner.actions())
-        self.assertEqual(2, sum(arguments == ["/usr/bin/git", "rev-parse", "HEAD"] for arguments, _ in runner.calls))
+        self.assertEqual(2, sum(arguments == self.git_command("rev-parse", "HEAD") for arguments, _ in runner.calls))
         activation = next(arguments for arguments, _ in runner.calls if "activate" in arguments)
         self.assertIn("--source-commit=" + "d" * 64, activation)
 
@@ -327,10 +334,40 @@ class PublisherTests(unittest.TestCase):
         self.assertIn("--source-commit=" + source["source_commit"], activation)
         self.assertNotIn("--source-commit=" + runner.head, activation)
         for revision in (source["source_commit"], runner.head):
-            expected = ["/usr/bin/git", "show", revision + ":" + runner.git_source["path"]]
+            expected = self.git_command("show", revision + ":" + runner.git_source["path"])
             self.assertEqual(2, sum(args == expected for args, _ in runner.calls))
-        ancestry = ["/usr/bin/git", "merge-base", "--is-ancestor", source["source_commit"], runner.head]
+        ancestry = self.git_command("merge-base", "--is-ancestor", source["source_commit"], runner.head)
         self.assertEqual(2, sum(args == ancestry for args, _ in runner.calls))
+
+    def test_different_owner_main_repository_uses_only_exact_command_local_safe_directory(self):
+        runner = FakeRunner("main")
+        source = self.git_source(runner)
+        runner.head = "f" * 40
+        trusted = self.git_command()
+        def execute(arguments, **kwargs):
+            if arguments[:1] == ["/usr/bin/git"] and kwargs.get("cwd") == self.layout.main:
+                if arguments[:3] != trusted:
+                    return subprocess.CompletedProcess(arguments, 128, "", "fatal: detected dubious ownership")
+            return runner(arguments, **kwargs)
+        rejected = execute(["/usr/bin/git", "rev-parse", "HEAD"], cwd=self.layout.main)
+        self.assertEqual(128, rejected.returncode)
+        instance = publisher.Publisher(self.layout, execute=execute, availability=self.availability, lock_factory=FakeLock)
+        with mock.patch.dict(publisher.os.environ, {"SUDO_UID": "1000"}):
+            result = instance.publish("main", 7, **source)
+        self.assertTrue(result["published"])
+        reads = [(args, kwargs) for args, kwargs in runner.calls if args[:1] == ["/usr/bin/git"]]
+        self.assertEqual(8, len(reads))
+        for args, kwargs in reads:
+            self.assertEqual(trusted, args[:3])
+            self.assertEqual(self.layout.main, kwargs["cwd"])
+            self.assertNotIn("SUDO_UID", kwargs["env"])
+            self.assertNotIn("--global", args)
+            self.assertNotIn("safe.directory=*", args)
+        self.assertTrue(any(args[3:5] == ["merge-base", "--is-ancestor"] for args, _ in reads))
+        for revision in (source["source_commit"], runner.head):
+            self.assertTrue(any(args == self.git_command("show", revision + ":" + runner.git_source["path"]) for args, _ in reads))
+        activation = next(args for args, _ in runner.calls if "activate" in args)
+        self.assertIn("--source-commit=" + source["source_commit"], activation)
 
     def test_published_notification_retry_accepts_unchanged_source_from_an_ancestor(self):
         source = self.git_source()
