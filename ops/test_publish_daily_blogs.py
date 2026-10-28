@@ -131,7 +131,7 @@ class FakeRunner:
         elif arguments[:1] == ["ssh"] and daily.SERVER_DAILY in arguments:
             self.server_receives += 1
             manifest = json.loads(kwargs["input"])
-            receiver = daily.GitReceiver(self.layout, execute=self, now=lambda: NOW, lock_factory=FakeLock)
+            receiver = daily.GitReceiver(self.layout, execute=self, now=lambda: NOW, lock_factory=FakeLock, pause=lambda _: None)
             try:
                 response = receiver.receive(manifest)
                 code = 0 if all(item["notifications_complete"] for item in response["published"]) else 3
@@ -250,7 +250,7 @@ class DailyGitTests(unittest.TestCase):
         self.availability = mock.Mock(return_value=True)
         self.workflow = daily.DailyWorkflow(self.layout, execute=self.runner, availability=self.availability,
                                            now=lambda: NOW, lock_factory=FakeLock)
-        self.receiver = daily.GitReceiver(self.layout, execute=self.runner, now=lambda: NOW, lock_factory=FakeLock)
+        self.receiver = daily.GitReceiver(self.layout, execute=self.runner, now=lambda: NOW, lock_factory=FakeLock, pause=lambda _: None)
         self.baseline()
         self.addCleanup(FakeLock.held.clear)
 
@@ -1172,6 +1172,23 @@ class DailyGitTests(unittest.TestCase):
         self.assertFalse(caught.exception.progress["git_changes_possible"])
         self.assertFalse(caught.exception.progress["live_changes_possible"])
         self.assertEqual("live_preflight", caught.exception.progress["phase"])
+
+    def test_next_builds_wait_for_a_fresh_api_budget_without_delaying_the_main_site(self):
+        self.receiver.pause = mock.Mock()
+        receipt = self.receiver.receive(self.server_manifest(("main", "geo", "trex", "getiptv")))
+        self.assertEqual([mock.call(30), mock.call(30), mock.call(5)] * 2, self.receiver.pause.call_args_list)
+        self.assertEqual(["main", "geo", "trex", "getiptv"], [item["site_key"] for item in receipt["published"]])
+        self.assertEqual(4, len(self.runner.actions("import")))
+
+    def test_source_is_rechecked_after_api_budget_wait_before_the_next_import(self):
+        def concurrent_edit(_):
+            self.runner.status["server"] = b" M app/NewConcurrentEdit.php\0"
+        self.receiver.pause = mock.Mock(side_effect=concurrent_edit)
+        with self.assertRaises(daily.WorkflowError) as caught:
+            self.receiver.receive(self.server_manifest(("geo", "getiptv")))
+        self.assertEqual("unrelated_repository_changes", caught.exception.code)
+        self.assertEqual(["geo"], caught.exception.progress["published_sites"])
+        self.assertEqual(1, len(self.runner.actions("import")))
 
     def test_cli_defaults_to_plan_without_git_network_or_private_file_access(self):
         with mock.patch.object(daily, "DailyWorkflow", return_value=self.workflow):

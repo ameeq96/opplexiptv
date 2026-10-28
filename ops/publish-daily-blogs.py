@@ -16,6 +16,7 @@ import re
 import stat
 import subprocess
 import sys
+import time
 import urllib.request
 import urllib.parse
 
@@ -41,7 +42,7 @@ SOURCE_PREFIX = "resources/content/blog-publications"
 RUNTIME_UNTRACKED = ("public/screenshots/", "public/uploads/blogs/", "storage/public-from-archive/")
 MAX_BASELINE = 2 * 1024**2
 PHASES = {"preflight", "final_content", "git_stage", "git_commit", "git_push", "live_pull_import_publish",
-          "live_preflight", "live_pull", "import", "publish"}
+          "live_preflight", "live_pull", "import", "publish", "api_budget_wait"}
 
 
 class WorkflowError(RuntimeError):
@@ -388,11 +389,12 @@ class DailyWorkflow(Commands):
 
 
 class GitReceiver(Commands):
-    def __init__(self, layout=None, *, execute=subprocess.run, now=None, lock_factory=workflow_lock):
+    def __init__(self, layout=None, *, execute=subprocess.run, now=None, lock_factory=workflow_lock, pause=time.sleep):
         super().__init__(execute=execute)
         self.layout = layout or Layout()
         self.now = now or (lambda: dt.datetime.now(dt.timezone.utc))
         self.lock_factory = lock_factory
+        self.pause = pause
 
     def _baseline_bytes(self):
         path = self.layout.baseline
@@ -549,7 +551,12 @@ class GitReceiver(Commands):
                     raise WorkflowError("live_preflight_changed")
                 drafts.append((item, raw))
             published = []
+            previous_next_build = False
             for item, raw in drafts:
+                if item["site_key"] != "main" and previous_next_build:
+                    self.progress.update(phase="api_budget_wait")
+                    for seconds in (30, 30, 5):
+                        self.pause(seconds)
                 if self.layout.server.resolve() != root or self.head(root) != commit:
                     raise WorkflowError("live_source_changed_during_publication")
                 self._check_live_baseline(root, baseline)
@@ -570,6 +577,7 @@ class GitReceiver(Commands):
                 if release.get("published") is not True:
                     raise WorkflowError("publication_acknowledgement_missing")
                 published.append(release)
+                previous_next_build = previous_next_build or site != "main"
                 self.progress.update(published_sites=[item["site_key"] for item in published], outcome_unknown=False)
             return {"dry_run": False, "date": date, "commit": commit, "published": published}
 
