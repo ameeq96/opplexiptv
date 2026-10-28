@@ -6,7 +6,7 @@ import hashlib
 import importlib.util
 import io
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 import subprocess
 import sys
 import tempfile
@@ -404,6 +404,29 @@ class DailyGitTests(unittest.TestCase):
             self.workflow.publish(["geo"], DATE)
         self.assert_no_mutating_git_or_publication()
         self.assertFalse((self.layout.repo / daily.SOURCE_PREFIX).exists())
+
+    def test_remote_preflight_serializes_windows_and_linux_paths_as_posix_before_git_mutations(self):
+        self.draft("geo")
+        for server in (PureWindowsPath("/var/www/opplexiptv.com/current"), PurePosixPath("/var/www/opplexiptv.com/current")):
+            self.runner.calls.clear()
+            captured = []
+            def execute(arguments, **kwargs):
+                if arguments[:1] == ["ssh"] and "preflight" in arguments:
+                    captured.append(list(arguments))
+                    self.runner.calls.append((list(arguments), kwargs))
+                    return self.runner.protocol(arguments, {"valid": False})
+                return self.runner(arguments, **kwargs)
+            layout = daily.dataclasses.replace(self.layout, server=server)
+            workflow = daily.DailyWorkflow(layout, execute=execute, availability=self.availability,
+                                           now=lambda: NOW, lock_factory=FakeLock)
+            with self.subTest(server_type=type(server).__name__), self.assertRaisesRegex(daily.WorkflowError, "preflight_identity_mismatch"):
+                workflow.publish(["geo"], DATE)
+            self.assertEqual(1, len(captured))
+            script = captured[0][captured[0].index("/usr/bin/php") + 1]
+            self.assertEqual("/var/www/opplexiptv.com/current/artisan", script)
+            self.assertNotIn("\\", script)
+            self.assert_no_mutating_git_or_publication()
+            self.assertFalse((self.layout.repo / daily.SOURCE_PREFIX).exists())
 
     def test_unrelated_dirty_or_staged_work_is_preserved_and_blocks_before_preflight(self):
         self.draft("geo")

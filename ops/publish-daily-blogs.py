@@ -311,7 +311,7 @@ class DailyWorkflow(Commands):
                 if not isinstance(article, dict) or article.get("site_key") != site or article.get("publishing_date") != date:
                     raise WorkflowError("draft_identity_mismatch")
                 result = self.protocol(["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=20", SSH_HOST,
-                    "sudo", "-n", "-u", "www-data", "--", "/usr/bin/php", str(layout.server / "artisan"),
+                    "sudo", "-n", "-u", "www-data", "--", "/usr/bin/php", (layout.server / "artisan").as_posix(),
                     "blogs:publishing", "preflight", "--site=" + site, "--date=" + date, "--json"], data=raw)
                 source_hash = hashlib.sha256(raw).hexdigest()
                 if (result.get("valid") is not True or result.get("site_key") != site or result.get("publishing_date") != date
