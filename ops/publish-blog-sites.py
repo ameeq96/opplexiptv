@@ -307,7 +307,7 @@ class Publisher:
             raise PublishError("site_paused", "status")
         return status
 
-    def _verify_git_source(self, site: str, status: dict, expected: dict | None) -> None:
+    def _verify_git_source(self, site: str, status: dict, expected: dict | None, *, expected_checkout=None) -> str | None:
         if expected is None:
             return
         date = status["run"].get("publishing_date")
@@ -322,14 +322,23 @@ class Publisher:
         try:
             head = self.execute(["/usr/bin/git", "rev-parse", "HEAD"], cwd=self.layout.main,
                                 capture_output=True, text=True, timeout=30, check=False, env=self._environment())
-            if head.returncode or not isinstance(head.stdout, str) or head.stdout.strip() != expected["commit"]:
+            if head.returncode or not isinstance(head.stdout, str) or not GIT_COMMIT.fullmatch(head.stdout.strip()):
                 raise PublishError("git_source_commit_mismatch", "source")
-            blob = self.execute(["/usr/bin/git", "show", expected["commit"] + ":" + path], cwd=self.layout.main,
-                                capture_output=True, timeout=30, check=False, env=self._environment())
-            if blob.returncode or not isinstance(blob.stdout, bytes) or len(blob.stdout) > 2 * 1024**2:
-                raise PublishError("git_source_blob_unavailable", "source")
-            if hashlib.sha256(blob.stdout).hexdigest() != expected["sha256"]:
-                raise PublishError("git_source_blob_mismatch", "source")
+            checkout = head.stdout.strip()
+            if expected_checkout is not None and checkout != expected_checkout:
+                raise PublishError("git_source_checkout_changed", "source")
+            ancestor = self.execute(["/usr/bin/git", "merge-base", "--is-ancestor", expected["commit"], checkout],
+                                    cwd=self.layout.main, capture_output=True, timeout=30, check=False, env=self._environment())
+            if ancestor.returncode:
+                raise PublishError("git_source_not_ancestor", "source")
+            for revision in (expected["commit"], checkout):
+                blob = self.execute(["/usr/bin/git", "show", revision + ":" + path], cwd=self.layout.main,
+                                    capture_output=True, timeout=30, check=False, env=self._environment())
+                if blob.returncode or not isinstance(blob.stdout, bytes) or len(blob.stdout) > 2 * 1024**2:
+                    raise PublishError("git_source_blob_unavailable", "source")
+                if hashlib.sha256(blob.stdout).hexdigest() != expected["sha256"]:
+                    raise PublishError("git_source_blob_mismatch", "source")
+            return checkout
         except (OSError, subprocess.SubprocessError) as exc:
             raise PublishError("git_source_verification_failed", "source") from exc
 
@@ -506,7 +515,7 @@ class Publisher:
         with self.lock_factory(self.layout.data / "locks" / (site + ".lock")):
             self.event({"site_key": site, "run_id": run, "phase": "status"})
             status = self._status(site, run)
-            self._verify_git_source(site, status, source)
+            checkout = self._verify_git_source(site, status, source)
             current_run = status["run"]
             if current_run.get("status") in PUBLISHED:
                 return self._notify(site, run, already_published=True)
@@ -529,7 +538,7 @@ class Publisher:
                 if source:
                     latest = self._status(site, run)
                     self._match_eligibility(self._eligibility(latest), candidate["revision"], snapshot["revision"])
-                    self._verify_git_source(site, latest, source)
+                    self._verify_git_source(site, latest, source, expected_checkout=checkout)
                 try:
                     self._php("activate", site, run, **options)
                 except PublishError:
@@ -573,7 +582,7 @@ class Publisher:
             private_json(attempt / "manifest.json", manifest)
             latest = self._status(site, run)
             self._match_eligibility(self._eligibility(latest), candidate["revision"], snapshot["revision"])
-            self._verify_git_source(site, latest, source)
+            self._verify_git_source(site, latest, source, expected_checkout=checkout)
             old = self._switch(base, old, release, run)
             try:
                 self._php("activate", site, run, **options)

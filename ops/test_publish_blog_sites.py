@@ -69,6 +69,8 @@ class FakeRunner:
         self.git_source = None
         self.head = "d" * 40
         self.source_blob = b'{"version":1,"site_key":"getiptv"}\n'
+        self.revision_blobs = {}
+        self.ancestor = True
         self.notification = {"complete": True, "deliveries": [{"channel": "indexnow", "status": "accepted", "http_status": 200}]}
 
     def __call__(self, arguments, **kwargs):
@@ -91,7 +93,11 @@ class FakeRunner:
             if arguments[1:] == ["rev-parse", "HEAD"]:
                 return subprocess.CompletedProcess(arguments, 1 if "git-head" in self.failures else 0, self.head + "\n", "private server detail")
             if arguments[1] == "show":
-                return subprocess.CompletedProcess(arguments, 1 if "git-blob" in self.failures else 0, self.source_blob, b"private server detail")
+                revision = arguments[2].split(":", 1)[0]
+                return subprocess.CompletedProcess(arguments, 1 if "git-blob" in self.failures else 0,
+                                                   self.revision_blobs.get(revision, self.source_blob), b"private server detail")
+            if arguments[1:3] == ["merge-base", "--is-ancestor"]:
+                return subprocess.CompletedProcess(arguments, 0 if self.ancestor else 1, b"", b"private server detail")
             if arguments[1:] == ["status", "--porcelain=v1"]:
                 return subprocess.CompletedProcess(arguments, 0, " M source.jsx" if self.dirty else "", "")
             raise AssertionError("Unexpected Git command")
@@ -204,7 +210,7 @@ class PublisherTests(unittest.TestCase):
                                               "git_source": self.runner.git_source}}, self.instance._source_expectation(**{
                                                   "commit": source["source_commit"], "sha256": source["source_sha256"],
                                                   "fingerprint": source["source_fingerprint"]}))
-        self.assertEqual(2, len(self.runner.calls))
+        self.assertEqual(4, len(self.runner.calls))
 
     def test_git_head_and_committed_blob_are_verified_before_snapshot_or_build(self):
         source = self.git_source()
@@ -212,7 +218,7 @@ class PublisherTests(unittest.TestCase):
         for failure, expected in [("head", "git_source_commit_mismatch"), ("blob", "git_source_blob_mismatch"),
                                   ("git-head", "git_source_commit_mismatch"), ("git-blob", "git_source_blob_unavailable")]:
             self.runner.calls.clear()
-            self.runner.head = "f" * 40 if failure == "head" else source["source_commit"]
+            self.runner.head = "invalid" if failure == "head" else source["source_commit"]
             self.runner.source_blob = b"changed source" if failure == "blob" else original_blob
             self.runner.failures = {failure}
             with self.subTest(failure=failure), self.assertRaisesRegex(publisher.PublishError, expected):
@@ -240,9 +246,10 @@ class PublisherTests(unittest.TestCase):
         result = self.instance.publish("getiptv", 7, **source)
         self.assertTrue(result["already_published"])
         self.assertEqual(["status", "notify"], self.runner.actions())
-        self.assertEqual(["/usr/bin/git", "show", source["source_commit"] + ":" + self.runner.git_source["path"]], self.runner.calls[2][0])
-        self.assertEqual(self.layout.main, self.runner.calls[2][1]["cwd"])
-        self.assertFalse(self.runner.calls[2][1].get("text", False))
+        shows = [(args, kwargs) for args, kwargs in self.runner.calls if args[:2] == ["/usr/bin/git", "show"]]
+        self.assertEqual(["/usr/bin/git", "show", source["source_commit"] + ":" + self.runner.git_source["path"]], shows[0][0])
+        self.assertEqual(self.layout.main, shows[0][1]["cwd"])
+        self.assertFalse(shows[0][1].get("text", False))
         self.assertFalse(self.layout.data.exists())
         self.availability.assert_not_called()
 
@@ -277,8 +284,8 @@ class PublisherTests(unittest.TestCase):
         with mock.patch.object(self.instance, "_switch", return_value=publisher.PublicState(self.public, True)):
             result = self.instance.publish("getiptv", 7, initialize=True, **source)
         self.assertTrue(result["published"])
-        for action, keyword in [("rev-parse", "HEAD"), ("show", source["source_commit"] + ":" + self.runner.git_source["path"])]:
-            self.assertEqual(2, sum(arguments == ["/usr/bin/git", action, keyword] for arguments, _ in self.runner.calls))
+        for action, keyword, count in [("rev-parse", "HEAD", 2), ("show", source["source_commit"] + ":" + self.runner.git_source["path"], 4)]:
+            self.assertEqual(count, sum(arguments == ["/usr/bin/git", action, keyword] for arguments, _ in self.runner.calls))
         activation = next(arguments for arguments, _ in self.runner.calls if "activate" in arguments)
         for key, value in source.items():
             self.assertIn("--" + key.replace("_", "-") + "=" + value, activation)
@@ -305,6 +312,88 @@ class PublisherTests(unittest.TestCase):
             return result
         instance = publisher.Publisher(self.layout, execute=execute, availability=self.availability, lock_factory=FakeLock)
         with self.assertRaisesRegex(publisher.PublishError, "git_source_mismatch"):
+            instance.publish("main", 7, **source)
+        self.assertNotIn("activate", runner.actions())
+        self.assertNotIn("notify", runner.actions())
+
+    def test_original_article_commit_remains_valid_after_a_descendant_code_fix(self):
+        runner = FakeRunner("main")
+        source = self.git_source(runner)
+        runner.head = "f" * 40
+        instance = publisher.Publisher(self.layout, execute=runner, availability=self.availability, lock_factory=FakeLock)
+        result = instance.publish("main", 7, **source)
+        self.assertTrue(result["published"])
+        activation = next(args for args, _ in runner.calls if "activate" in args)
+        self.assertIn("--source-commit=" + source["source_commit"], activation)
+        self.assertNotIn("--source-commit=" + runner.head, activation)
+        for revision in (source["source_commit"], runner.head):
+            expected = ["/usr/bin/git", "show", revision + ":" + runner.git_source["path"]]
+            self.assertEqual(2, sum(args == expected for args, _ in runner.calls))
+        ancestry = ["/usr/bin/git", "merge-base", "--is-ancestor", source["source_commit"], runner.head]
+        self.assertEqual(2, sum(args == ancestry for args, _ in runner.calls))
+
+    def test_published_notification_retry_accepts_unchanged_source_from_an_ancestor(self):
+        source = self.git_source()
+        self.runner.head = "f" * 40
+        self.runner.run_status = "published"
+        result = self.instance.publish("getiptv", 7, **source)
+        self.assertTrue(result["already_published"])
+        self.assertEqual(["status", "notify"], self.runner.actions())
+        self.assertFalse(self.layout.data.exists())
+        self.availability.assert_not_called()
+
+    def test_nonancestor_source_is_rejected_before_snapshot_or_build(self):
+        source = self.git_source()
+        self.runner.head = "f" * 40
+        self.runner.ancestor = False
+        with self.assertRaisesRegex(publisher.PublishError, "git_source_not_ancestor"):
+            self.instance.publish("getiptv", 7, initialize=True, **source)
+        self.assertEqual(["status"], self.runner.actions())
+        self.assertFalse(self.layout.data.exists())
+        self.assertFalse(self.layout.backups.exists())
+        self.availability.assert_not_called()
+
+    def test_both_original_and_current_article_blobs_must_match_expected_source_hash(self):
+        source = self.git_source()
+        self.runner.head = "f" * 40
+        for revision in (source["source_commit"], self.runner.head):
+            self.runner.calls.clear()
+            self.runner.revision_blobs = {revision: b"changed article in this revision"}
+            with self.subTest(revision=revision), self.assertRaisesRegex(publisher.PublishError, "git_source_blob_mismatch"):
+                self.instance.publish("getiptv", 7, initialize=True, **source)
+            self.assertEqual(["status"], self.runner.actions())
+            self.assertFalse(self.layout.data.exists())
+            self.assertFalse(self.layout.backups.exists())
+        self.availability.assert_not_called()
+
+    def test_checkout_head_change_during_build_blocks_switch_even_with_unchanged_article(self):
+        source = self.git_source()
+        self.runner.head = "f" * 40
+        def execute(arguments, **kwargs):
+            result = self.runner(arguments, **kwargs)
+            if arguments == ["/usr/bin/npm", "run", "verify"]:
+                self.runner.head = "1" * 40
+            return result
+        self.instance.execute = execute
+        with mock.patch.object(self.instance, "_switch") as switch:
+            with self.assertRaisesRegex(publisher.PublishError, "git_source_checkout_changed"):
+                self.instance.publish("getiptv", 7, initialize=True, **source)
+        switch.assert_not_called()
+        self.assertNotIn("activate", self.runner.actions())
+        self.assertNotIn("notify", self.runner.actions())
+        self.assertEqual("previous publication", (self.public / "index.html").read_text())
+
+    def test_main_checkout_head_change_after_snapshot_blocks_activation(self):
+        runner = FakeRunner("main")
+        source = self.git_source(runner)
+        runner.head = "f" * 40
+        def execute(arguments, **kwargs):
+            result = runner(arguments, **kwargs)
+            if "snapshot" in arguments:
+                runner.head = "1" * 40
+            return result
+        instance = publisher.Publisher(self.layout, execute=execute, availability=self.availability, lock_factory=FakeLock)
+        with self.assertRaisesRegex(publisher.PublishError, "git_source_checkout_changed"):
             instance.publish("main", 7, **source)
         self.assertNotIn("activate", runner.actions())
         self.assertNotIn("notify", runner.actions())

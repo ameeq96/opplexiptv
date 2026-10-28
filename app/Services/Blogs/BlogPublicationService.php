@@ -428,14 +428,23 @@ class BlogPublicationService
         abort_if($latest && $latest->id > $run->id, 409, 'The staged article was superseded by a newer edit.');
         abort_unless($blog->site_key === $run->site_key && $blog->status !== 'archived', 409, 'The article placement or visibility changed.');
         $rows = $blog->translations()->lockForUpdate()->get()->keyBy('locale');
-        $article = $run->payload['article'];
+        $canonical = function (mixed $value) use (&$canonical): mixed {
+            if (!is_array($value)) {
+                return $value;
+            }
+            if (!array_is_list($value)) {
+                ksort($value);
+            }
+            return array_map($canonical, $value);
+        };
+        $article = $canonical($run->payload['article']);
         foreach (config('blog-publishing.supported_locales') as $locale) {
             $row = $rows->get($locale);
             $expected = $article['translations'][$locale];
             abort_unless($row && $row->slug === $article['slug'] && $row->title === $expected['title']
                 && $row->excerpt === $expected['excerpt'] && ($row->seo_title ?: $row->title) === $expected['seo_title']
                 && ($row->seo_description ?: $row->excerpt) === $expected['seo_description']
-                && $this->quality->sectionsFromHtml($row->content, $row->title, $run->site_key) === $expected['sections'], 409, 'The article was edited after staging.');
+                && $canonical($this->quality->sectionsFromHtml($row->content, $row->title, $run->site_key)) === $expected['sections'], 409, 'The article was edited after staging.');
         }
     }
 

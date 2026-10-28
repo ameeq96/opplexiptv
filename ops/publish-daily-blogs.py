@@ -252,6 +252,20 @@ class Commands:
             raise WorkflowError("invalid_git_revision")
         return revision
 
+    def article_source(self, root, commit, path, source_hash, expected=None):
+        source_commit = self.git(root, "log", "-1", "--format=%H", commit, "--", path).decode().strip()
+        if not SHA.fullmatch(source_commit):
+            raise WorkflowError("invalid_article_source_commit")
+        if expected is not None and source_commit != expected:
+            raise WorkflowError("article_source_commit_mismatch")
+        try:
+            self.git(root, "merge-base", "--is-ancestor", source_commit, commit)
+        except WorkflowError as error:
+            raise WorkflowError("article_source_not_ancestor") from error
+        if hashlib.sha256(self.git(root, "show", source_commit + ":" + path)).hexdigest() != source_hash:
+            raise WorkflowError("original_source_hash_mismatch")
+        return source_commit
+
 
 class DailyWorkflow(Commands):
     def __init__(self, layout=None, *, execute=subprocess.run, availability=public_available,
@@ -368,6 +382,7 @@ class DailyWorkflow(Commands):
             for entry in ready:
                 if hashlib.sha256(self.git(layout.repo, "show", commit + ":" + entry["path"])).hexdigest() != entry["sha256"]:
                     raise WorkflowError("committed_content_mismatch")
+                entry["source_commit"] = self.article_source(layout.repo, commit, entry["path"], entry["sha256"])
             self.progress.update(phase="git_push", outcome_unknown=True)
             self.git(layout.repo, "push", "origin", commit + ":refs/heads/" + branch)
             self.progress.update(outcome_unknown=False)
@@ -504,10 +519,10 @@ class GitReceiver(Commands):
             raise WorkflowError("invalid_publication_manifest")
         sites = set()
         for item in articles:
-            if not isinstance(item, dict) or set(item) != {"site_key", "path", "sha256", "fingerprint"}:
+            if not isinstance(item, dict) or set(item) != {"site_key", "path", "sha256", "fingerprint", "source_commit"}:
                 raise WorkflowError("invalid_article_manifest")
             site = item["site_key"]
-            if site in sites or item["path"] != source_path(site, date) or not isinstance(item["sha256"], str) or not SHA256.fullmatch(item["sha256"]) or not isinstance(item["fingerprint"], str) or not SHA256.fullmatch(item["fingerprint"]):
+            if site in sites or item["path"] != source_path(site, date) or not isinstance(item["sha256"], str) or not SHA256.fullmatch(item["sha256"]) or not isinstance(item["fingerprint"], str) or not SHA256.fullmatch(item["fingerprint"]) or not isinstance(item["source_commit"], str) or not SHA.fullmatch(item["source_commit"]):
                 raise WorkflowError("invalid_article_manifest")
             sites.add(site)
         root = self.layout.server.resolve()
@@ -542,6 +557,7 @@ class GitReceiver(Commands):
                 raw = self.git(root, "show", commit + ":" + item["path"])
                 if len(raw) > MAX_ARTICLE or hashlib.sha256(raw).hexdigest() != item["sha256"]:
                     raise WorkflowError("committed_source_hash_mismatch")
+                self.article_source(root, commit, item["path"], item["sha256"], item["source_commit"])
                 tracked = beneath(root, item["path"])
                 if not tracked.is_file() or tracked.read_bytes() != raw:
                     raise WorkflowError("working_content_differs_from_commit")
@@ -561,14 +577,14 @@ class GitReceiver(Commands):
                     raise WorkflowError("live_source_changed_during_publication")
                 self._check_live_baseline(root, baseline)
                 site = item["site_key"]
-                options = ["--source-commit=" + commit, "--source-sha256=" + item["sha256"], "--source-fingerprint=" + item["fingerprint"]]
+                options = ["--source-commit=" + item["source_commit"], "--source-sha256=" + item["sha256"], "--source-fingerprint=" + item["fingerprint"]]
                 self.progress.update(phase="import", live_changes_possible=True, outcome_unknown=True)
                 result = self.protocol(["/usr/sbin/runuser", "-u", "www-data", "--", "/usr/bin/php", str(root / "artisan"),
                     "blogs:publishing", "import", "--site=" + site, "--date=" + date, *options, "--json"], data=raw)
                 run = result.get("run")
                 if not isinstance(run, dict) or not isinstance(run.get("id"), int) or isinstance(run["id"], bool) or run["id"] <= 0:
                     raise WorkflowError("invalid_import_response")
-                if run.get("git_source") != {"commit": commit, "path": item["path"], "sha256": item["sha256"], "fingerprint": item["fingerprint"]}:
+                if run.get("git_source") != {"commit": item["source_commit"], "path": item["path"], "sha256": item["sha256"], "fingerprint": item["fingerprint"]}:
                     raise WorkflowError("import_source_provenance_mismatch")
                 self.progress.update(phase="publish", outcome_unknown=True)
                 release = self.protocol(["/usr/bin/python3", SERVER_PUBLISHER, "--site=" + site, "--run=" + str(run["id"]), *options, "--publish"], timeout=1800, success_codes=(0, 3))

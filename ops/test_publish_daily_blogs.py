@@ -70,6 +70,9 @@ class FakeRunner:
         self.layout = layout
         self.calls = []
         self.trees = {INITIAL: {}}
+        self.parents = {COMMIT: INITIAL, CHANGED: COMMIT}
+        self.source_overrides = {}
+        self.non_ancestors = set()
         self.heads = {"local": INITIAL, "server": INITIAL}
         self.remote = INITIAL
         self.branches = {"local": "main", "server": "main"}
@@ -178,7 +181,18 @@ class FakeRunner:
         elif args[:1] == ["rev-parse"] and args[1].startswith("refs/remotes/origin/"):
             raw = self.remote.encode()
         elif args[:1] == ["merge-base"]:
+            if tuple(args[-2:]) in self.non_ancestors:
+                return subprocess.CompletedProcess(arguments, 1, b"", b"not an ancestor")
             raw = b""
+        elif args[:3] == ["log", "-1", "--format=%H"]:
+            revision, path = args[3], args[5]
+            source = revision
+            while source in self.parents and path in self.trees.get(source, {}):
+                parent = self.parents[source]
+                if self.trees.get(parent, {}).get(path) != self.trees[source][path]:
+                    break
+                source = parent
+            raw = self.source_overrides.get((side, path), source if path in self.trees.get(source, {}) else "").encode()
         elif args[:2] == ["diff", "--cached"]:
             tree = self.trees[self.heads["local"]]
             changed = {path for path, value in self.index.items() if tree.get(path) != value} | self.extra_staged
@@ -275,7 +289,7 @@ class DailyGitTests(unittest.TestCase):
             path = daily.source_path(site, DATE)
             tree[path] = raw
             entries.append({"site_key": site, "path": path, "sha256": hashlib.sha256(raw).hexdigest(),
-                            "fingerprint": hashlib.sha256(b"normalized:" + raw).hexdigest()})
+                            "fingerprint": hashlib.sha256(b"normalized:" + raw).hexdigest(), "source_commit": COMMIT})
         self.runner.trees[COMMIT] = tree
         self.runner.remote = COMMIT
         return {"version": 1, "date": DATE, "commit": COMMIT, "branch": "main", "articles": entries}
@@ -614,10 +628,14 @@ class DailyGitTests(unittest.TestCase):
                  {**valid, "branch": "feature"}, {**valid, "version": 2},
                  {**valid, "articles": valid["articles"] * 2}]
         for key, value in (("path", "../../private.json"), ("site_key", "unknown"), ("sha256", "invalid"),
-                           ("fingerprint", "invalid"), ("path", daily.source_path("main", DATE))):
+                           ("fingerprint", "invalid"), ("source_commit", "HEAD;id"), ("source_commit", True),
+                           ("path", daily.source_path("main", DATE))):
             changed = copy.deepcopy(valid)
             changed["articles"][0][key] = value
             cases.append(changed)
+        missing_source = copy.deepcopy(valid)
+        del missing_source["articles"][0]["source_commit"]
+        cases.append(missing_source)
         for manifest in cases:
             with self.subTest(manifest=manifest), self.assertRaises(daily.WorkflowError):
                 self.receiver.receive(manifest)
@@ -977,6 +995,154 @@ class DailyGitTests(unittest.TestCase):
         self.assertEqual(1, len(self.runner.records))
         self.assertEqual(first["published"], second["published"])
         self.assertEqual(COMMIT, self.runner.heads["server"])
+
+    def test_workflow_retry_after_a_code_only_deployment_keeps_original_article_provenance(self):
+        self.draft("main")
+        self.runner.release_failures.add("main")
+        with self.assertRaises(daily.WorkflowError):
+            self.workflow.publish(["main"], DATE)
+        original_record = copy.deepcopy(self.runner.records[("main", DATE)])
+        self.assertEqual(COMMIT, original_record["git_source"]["commit"])
+        self.runner.release_failures.clear()
+        self.runner.trees[CHANGED] = {**self.runner.trees[COMMIT], "app/Services/Blogs/BlogPublicationService.php": b"deployed publication code correction"}
+        self.runner.heads.update(local=CHANGED, server=CHANGED)
+        self.runner.remote = CHANGED
+
+        result = self.workflow.publish(["main"], DATE)
+
+        self.assertEqual(CHANGED, result["commit"])
+        self.assertEqual(CHANGED, self.runner.heads["server"])
+        self.assertEqual(original_record, self.runner.records[("main", DATE)])
+        self.assertEqual(1, len(self.runner.records))
+        self.assertEqual(1, self.runner.commit_count)
+        self.assertEqual(original_record["id"], result["published"][0]["run_id"])
+        self.assertEqual(["pull", "--ff-only", "origin", CHANGED], self.runner.git_calls("pull")[-1][0][3:])
+        for args, _ in self.runner.actions("import"):
+            self.assertIn("--source-commit=" + COMMIT, args)
+        for args, _ in self.runner.calls:
+            if daily.SERVER_PUBLISHER in args:
+                self.assertIn("--source-commit=" + COMMIT, args)
+
+    def test_receiver_uses_each_articles_original_commit_with_one_current_transport_head(self):
+        manifest = self.server_manifest(("geo", "getiptv"))
+        complete_tree = copy.deepcopy(self.runner.trees[COMMIT])
+        del self.runner.trees[COMMIT][daily.source_path("getiptv", DATE)]
+        self.runner.trees[CHANGED] = complete_tree
+        self.runner.remote = CHANGED
+        manifest["commit"] = CHANGED
+        manifest["articles"][1]["source_commit"] = CHANGED
+
+        result = self.receiver.receive(manifest)
+
+        self.assertEqual(CHANGED, result["commit"])
+        self.assertEqual(2, len(result["published"]))
+        self.assertEqual(COMMIT, self.runner.records[("geo", DATE)]["git_source"]["commit"])
+        self.assertEqual(CHANGED, self.runner.records[("getiptv", DATE)]["git_source"]["commit"])
+        for args, _ in self.runner.actions("import"):
+            expected = COMMIT if "--site=geo" in args else CHANGED
+            self.assertIn("--source-commit=" + expected, args)
+
+    def test_local_invalid_source_commit_is_rejected_before_push(self):
+        path = daily.source_path("geo", DATE)
+        self.draft("geo")
+        self.runner.source_overrides[("local", path)] = "HEAD;private-command"
+
+        with self.assertRaisesRegex(daily.WorkflowError, "invalid_article_source_commit"):
+            self.workflow.publish(["geo"], DATE)
+
+        self.assertEqual([], self.runner.git_calls("push"))
+        self.assert_no_import_or_publish()
+
+    def test_local_original_source_commit_must_be_an_ancestor_before_push(self):
+        path = daily.source_path("geo", DATE)
+        raw = self.draft("geo")
+        self.runner.trees[CHANGED] = {path: raw}
+        self.runner.source_overrides[("local", path)] = CHANGED
+        self.runner.non_ancestors.add((CHANGED, COMMIT))
+
+        with self.assertRaisesRegex(daily.WorkflowError, "article_source_not_ancestor"):
+            self.workflow.publish(["geo"], DATE)
+
+        self.assertEqual([], self.runner.git_calls("push"))
+        self.assert_no_import_or_publish()
+
+    def test_local_original_blob_hash_is_rechecked_before_push(self):
+        path = daily.source_path("geo", DATE)
+        raw = self.draft("geo")
+        reads = []
+        def change(arguments, kwargs, result):
+            if arguments[3:5] == ["show", COMMIT + ":" + path] and kwargs.get("cwd") == self.layout.repo:
+                reads.append(True)
+                if len(reads) == 2:
+                    result.stdout = raw + b"unexpected original object bytes"
+        self.runner.hook = change
+
+        with self.assertRaisesRegex(daily.WorkflowError, "original_source_hash_mismatch"):
+            self.workflow.publish(["geo"], DATE)
+
+        self.assertEqual(2, len(reads))
+        self.assertEqual(raw, (self.layout.repo / path).read_bytes())
+        self.assertEqual([], self.runner.git_calls("push"))
+        self.assert_no_import_or_publish()
+
+    def test_receiver_rejects_a_claimed_source_that_is_not_the_paths_latest_content_commit(self):
+        manifest = self.server_manifest()
+        manifest["articles"][0]["source_commit"] = CHANGED
+
+        with self.assertRaisesRegex(daily.WorkflowError, "article_source_commit_mismatch"):
+            self.receiver.receive(manifest)
+
+        self.assertEqual([], self.runner.actions("preflight"))
+        self.assert_no_import_or_publish()
+
+    def test_receiver_requires_original_source_ancestry_even_for_matching_source_bytes(self):
+        manifest = self.server_manifest()
+        path = manifest["articles"][0]["path"]
+        manifest["articles"][0]["source_commit"] = CHANGED
+        self.runner.trees[CHANGED] = copy.deepcopy(self.runner.trees[COMMIT])
+        self.runner.source_overrides[("server", path)] = CHANGED
+        self.runner.non_ancestors.add((CHANGED, COMMIT))
+
+        with self.assertRaisesRegex(daily.WorkflowError, "article_source_not_ancestor"):
+            self.receiver.receive(manifest)
+
+        self.assertEqual([], self.runner.actions("preflight"))
+        self.assert_no_import_or_publish()
+
+    def test_receiver_rejects_changed_original_blob_before_import_after_a_code_deployment(self):
+        manifest = self.server_manifest()
+        path = manifest["articles"][0]["path"]
+        raw = self.runner.trees[COMMIT][path]
+        self.runner.trees[CHANGED] = copy.deepcopy(self.runner.trees[COMMIT])
+        self.runner.heads["server"] = CHANGED
+        self.runner.remote = CHANGED
+        manifest["commit"] = CHANGED
+        def change(arguments, _kwargs, result):
+            if arguments[3:5] == ["show", COMMIT + ":" + path]:
+                result.stdout = raw + b"changed original blob"
+        self.runner.hook = change
+
+        with self.assertRaisesRegex(daily.WorkflowError, "original_source_hash_mismatch"):
+            self.receiver.receive(manifest)
+
+        self.assertEqual([], self.runner.actions("preflight"))
+        self.assert_no_import_or_publish()
+
+    def test_receiver_accepts_a_64_character_original_and_transport_commit(self):
+        manifest = self.server_manifest()
+        original, transport = "d" * 64, "e" * 64
+        self.runner.trees[original] = copy.deepcopy(self.runner.trees[COMMIT])
+        self.runner.trees[transport] = copy.deepcopy(self.runner.trees[COMMIT])
+        self.runner.parents.update({original: INITIAL, transport: original})
+        self.runner.heads["server"] = transport
+        self.runner.remote = transport
+        manifest["commit"] = transport
+        manifest["articles"][0]["source_commit"] = original
+
+        result = self.receiver.receive(manifest)
+
+        self.assertEqual(transport, result["commit"])
+        self.assertEqual(original, self.runner.records[("geo", DATE)]["git_source"]["commit"])
 
     def test_published_partial_notification_exit_three_is_returned_without_rollback(self):
         manifest = self.server_manifest()

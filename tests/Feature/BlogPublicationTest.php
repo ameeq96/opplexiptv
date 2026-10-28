@@ -797,6 +797,105 @@ class BlogPublicationTest extends TestCase
         Mail::assertNothingSent(); Notification::assertNothingSent(); Bus::assertNothingDispatched();
     }
 
+    public static function reorderedJsonPublicationSites(): array
+    {
+        return ['main article' => ['main'], 'landing article' => ['geo']];
+    }
+
+    #[DataProvider('reorderedJsonPublicationSites')]
+    public function test_mysql_object_key_order_does_not_change_eligibility_or_activation(string $site): void
+    {
+        $service = app(BlogPublicationService::class);
+        $service->initializeSettings();
+        BlogSiteSetting::where('site_key', $site)->update(['enabled' => true]);
+        $input = $this->payload($site);
+        $source = $this->gitSource($input);
+        $run = $service->import($site, '2026-10-28', $input, $source, $source['sha256']);
+        $original = $run->payload;
+        $run->update(['payload' => $this->mysqlObjectKeyOrder($original)]);
+        $this->assertNotSame(array_keys($original['article']['translations']['en']['sections'][0]),
+            array_keys($run->fresh()->payload['article']['translations']['en']['sections'][0]));
+        $this->assertNotSame($original, $run->fresh()->payload);
+        $before = $this->publicationRecords();
+        $snapshot = app(BlogContentService::class)->snapshot($site, $run);
+
+        $this->assertSame(['eligible' => true, 'revision' => $run->revision, 'snapshot_revision' => $snapshot['revision']], $service->publicationEligibility($run));
+        $this->assertSame($before, $this->publicationRecords());
+        Http::assertNothingSent();
+        $this->fakePublishedPages($run);
+        if ($site === 'main') {
+            Artisan::shouldReceive('call')->once()->with('sitemap:generate')->andReturn(0);
+        }
+
+        $published = $service->activate($run, $run->revision, $snapshot['revision'], $source);
+
+        $this->assertSame('published', $published->status);
+        $this->assertSame('published', $published->blog->status);
+        $this->assertSame($before['blog_generation_runs'][0]['payload'], $published->getRawOriginal('payload'));
+        $this->assertSame(10, $published->blog->translations()->count());
+        $this->assertSame('accepted', $published->deliveries()->where('channel', 'site')->value('status'));
+        Http::assertSentCount(10);
+        Mail::assertNothingSent(); Notification::assertNothingSent(); Bus::assertNothingDispatched();
+    }
+
+    public static function changedStructuredJsonValues(): array
+    {
+        return array_combine(['paragraph value', 'heading value', 'section order', 'paragraph order', 'item order',
+            'link order', 'scalar type', 'list dictionary', 'extra field', 'whitespace value'], array_map(fn ($fault) => [$fault],
+            ['paragraph value', 'heading value', 'section order', 'paragraph order', 'item order',
+                'link order', 'scalar type', 'list dictionary', 'extra field', 'whitespace value']));
+    }
+
+    #[DataProvider('changedStructuredJsonValues')]
+    public function test_object_key_canonicalization_still_rejects_changed_values_types_or_list_order(string $fault): void
+    {
+        $service = app(BlogPublicationService::class);
+        $service->initializeSettings();
+        BlogSiteSetting::where('site_key', 'main')->update(['enabled' => true]);
+        $input = $this->payload('main');
+        $input['translations']['en']['sections'][0]['paragraphs'][] = 'This second isolated paragraph makes paragraph ordering observable without changing any real publication.';
+        $input['translations']['en']['sections'][0]['items'] = ['12345678', 'An independent second isolated checklist item.'];
+        $input['translations']['en']['sections'][0]['links'][] = ['label' => 'Official Apple reset reference', 'url' => 'https://support.apple.com/en-us/108897'];
+        $run = $service->import('main', '2026-10-28', $input);
+        $payload = $this->mysqlObjectKeyOrder($run->payload);
+        $section = &$payload['article']['translations']['en']['sections'][0];
+        switch ($fault) {
+            case 'paragraph value': $section['paragraphs'][0] .= ' A later changed claim.'; break;
+            case 'heading value': $section['heading'] .= ' revised'; break;
+            case 'section order': $payload['article']['translations']['en']['sections'] = array_reverse($payload['article']['translations']['en']['sections']); break;
+            case 'paragraph order': $section['paragraphs'] = array_reverse($section['paragraphs']); break;
+            case 'item order': $section['items'] = array_reverse($section['items']); break;
+            case 'link order': $section['links'] = array_reverse($section['links']); break;
+            case 'scalar type': $section['items'][0] = 12345678; break;
+            case 'list dictionary': $section['paragraphs'] = ['first' => $section['paragraphs'][0], 'second' => $section['paragraphs'][1]]; break;
+            case 'extra field': $section['unexpected'] = 'Do not discard unexpected structured data.'; break;
+            case 'whitespace value': $section['paragraphs'][0] .= ' '; break;
+        }
+        unset($section);
+        $run->update(['payload' => $payload]);
+        $before = $this->publicationRecords();
+
+        $this->assertSame(['eligible' => false, 'error_code' => 'eligibility_http_409'], $service->publicationEligibility($run));
+
+        $this->assertSame($before, $this->publicationRecords());
+        $this->assertSame('ready', $run->fresh()->status);
+        $this->assertSame('draft', $run->blog->fresh()->status);
+        Http::assertNothingSent();
+        Mail::assertNothingSent(); Notification::assertNothingSent(); Bus::assertNothingDispatched();
+    }
+
+    private function mysqlObjectKeyOrder(mixed $value): mixed
+    {
+        if (!is_array($value)) {
+            return $value;
+        }
+        $value = array_map(fn ($item) => $this->mysqlObjectKeyOrder($item), $value);
+        if (!array_is_list($value)) {
+            uksort($value, fn ($left, $right) => strlen((string) $left) <=> strlen((string) $right) ?: strcmp((string) $left, (string) $right));
+        }
+        return $value;
+    }
+
     private function importGitReady(): array
     {
         $service = app(BlogPublicationService::class);
