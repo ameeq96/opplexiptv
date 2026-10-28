@@ -116,6 +116,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
 
 
+        Route::get('blogs/automation', [\App\Http\Controllers\Admin\BlogAutomationController::class, 'index'])->name('blogs.automation.index');
         Route::resource('blogs', AdminBlogController::class)->only(['index', 'create', 'show', 'edit']);
 
         Route::resource('shop-products', AdminShopProductController::class)->only(['index', 'create', 'show', 'edit']);

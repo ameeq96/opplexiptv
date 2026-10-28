@@ -260,7 +260,14 @@
     }
   },
   "locale":"nl",
-  "labels":{"home":"Start","pages":"Ontdek","packages":"Pakketten","account":"Mijn account","contact":"Contact","readMore":"Lees de gids","backToGuides":"Terug naar de gidsen","language":"Taal","loading":"Gegevens worden geladen…","unavailable":"De gegevens zijn tijdelijk niet beschikbaar.","retry":"Opnieuw proberen","choosePlan":"Bekijk de pakketten","setup":"Installatie","guide":"Praktische gids","disclaimer":"Controleer de actuele voorwaarden voordat je bestelt.","governingPolicy":"Lees het centrale beleid dat voor deze dienst geldt"},
+  "labels":{"home":"Start","pages":"Ontdek","packages":"Pakketten","account":"Mijn account","contact":"Contact","readMore":"Lees de gids","backToGuides":"Terug naar de gidsen","language":"Taal","loading":"Gegevens worden geladen…","unavailable":"De gegevens zijn tijdelijk niet beschikbaar.","retry":"Opnieuw proberen","choosePlan":"Bekijk de pakketten","setup":"Installatie","guide":"Praktische gids","disclaimer":"Controleer de actuele voorwaarden voordat je bestelt.","governingPolicy":"Lees het centrale beleid dat voor deze dienst geldt",
+    "latestArticles": "Nieuwste artikelen",
+    "blogArchive": "Blogarchief",
+    "readArticle": "Artikel lezen",
+    "previousPage": "Vorige pagina",
+    "nextPage": "Volgende pagina",
+    "publishedOn": "Gepubliceerd op",
+    "pageLabel": "Pagina {page}"},
   "brands":{
     "iptvsubscription": {
       "name": "IPTV Subscription",

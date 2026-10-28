@@ -19,6 +19,11 @@ class UpdateBlogRequest extends FormRequest
         $blogId = $blog instanceof Blog ? $blog->id : null;
 
         $rules = [
+            'site_key' => ['sometimes', 'string', Rule::in(array_keys(config('blog-publishing.sites', []))), function ($attribute, $value, $fail) use ($blog) {
+                if ($blog instanceof Blog && $value !== ($blog->site_key ?? 'main')) {
+                    $fail('An existing blog must stay on its original website.');
+                }
+            }],
             'author_id' => ['nullable', 'integer', 'exists:users,id'],
             'cover_image' => ['nullable', 'image', 'max:4096'],
             'status' => ['required', Rule::in(['draft', 'published', 'archived'])],
@@ -35,6 +40,14 @@ class UpdateBlogRequest extends FormRequest
                 'string',
                 'max:255',
                 Rule::unique('blog_translations', 'slug')->where('locale', $locale)->ignore($blogId, 'blog_id'),
+                function ($attribute, $value, $fail) use ($blog, $locale) {
+                    if ($blog instanceof Blog && ($blog->site_key ?? 'main') !== 'main') {
+                        $existing = $blog->translations->firstWhere('locale', $locale);
+                        if ($existing && $value !== $existing->slug) {
+                            $fail('An existing landing article must keep its original slug.');
+                        }
+                    }
+                },
             ];
             $rules["translations.$locale.excerpt"] = ['nullable', 'string', 'max:500'];
             $rules["translations.$locale.content"] = ['nullable', 'string'];

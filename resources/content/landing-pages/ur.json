@@ -276,7 +276,14 @@
     "setup": "تنصیب میں مدد",
     "guide": "عملی رہنمائی",
     "disclaimer": "ادائیگی سے پہلے اپنے آلے، مقام اور منتخب منصوبے کی تصدیق کریں۔ دستیابی اور کارکردگی مختلف ہوسکتی ہیں۔",
-    "governingPolicy": "اس خدمت پر لاگو مرکزی پالیسی پڑھیں"
+    "governingPolicy": "اس خدمت پر لاگو مرکزی پالیسی پڑھیں",
+    "latestArticles": "تازہ مضامین",
+    "blogArchive": "بلاگ آرکائیو",
+    "readArticle": "مضمون پڑھیں",
+    "previousPage": "پچھلا صفحہ",
+    "nextPage": "اگلا صفحہ",
+    "publishedOn": "اشاعت کی تاریخ",
+    "pageLabel": "صفحہ {page}"
   },
   "brands": {
     "iptvsubscription": {

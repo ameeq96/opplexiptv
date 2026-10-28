@@ -261,7 +261,14 @@
   },
   "locale": "es",
   "labels": {
-    "home": "Inicio", "pages": "Explorar", "packages": "Planes", "account": "Mi cuenta", "contact": "Contacto", "readMore": "Leer la guía", "backToGuides": "Todas las guías", "language": "Idioma", "loading": "Cargando los detalles actualizados…", "unavailable": "Los detalles actualizados no están disponibles temporalmente. Inténtalo de nuevo o consulta con soporte.", "retry": "Reintentar", "choosePlan": "Elegir este plan", "setup": "Ayuda de configuración", "guide": "Guía práctica", "disclaimer": "Confirma el dispositivo, la ubicación y el plan antes de pagar. La disponibilidad y el rendimiento pueden variar.", "governingPolicy": "Leer la política central que rige este servicio"
+    "home": "Inicio", "pages": "Explorar", "packages": "Planes", "account": "Mi cuenta", "contact": "Contacto", "readMore": "Leer la guía", "backToGuides": "Todas las guías", "language": "Idioma", "loading": "Cargando los detalles actualizados…", "unavailable": "Los detalles actualizados no están disponibles temporalmente. Inténtalo de nuevo o consulta con soporte.", "retry": "Reintentar", "choosePlan": "Elegir este plan", "setup": "Ayuda de configuración", "guide": "Guía práctica", "disclaimer": "Confirma el dispositivo, la ubicación y el plan antes de pagar. La disponibilidad y el rendimiento pueden variar.", "governingPolicy": "Leer la política central que rige este servicio",
+    "latestArticles": "Artículos recientes",
+    "blogArchive": "Archivo del blog",
+    "readArticle": "Leer artículo",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "publishedOn": "Publicado el",
+    "pageLabel": "Página {page}"
   },
   "brands": {
     "trex": {

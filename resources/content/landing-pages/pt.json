@@ -276,7 +276,14 @@
     "setup": "Ajuda de instalação",
     "guide": "Guia prático",
     "disclaimer": "Confirme aparelho, localização e plano antes de pagar. Disponibilidade e desempenho podem variar.",
-    "governingPolicy": "Ler a política central aplicável a este serviço"
+    "governingPolicy": "Ler a política central aplicável a este serviço",
+    "latestArticles": "Artigos recentes",
+    "blogArchive": "Arquivo do blog",
+    "readArticle": "Ler artigo",
+    "previousPage": "Página anterior",
+    "nextPage": "Próxima página",
+    "publishedOn": "Publicado em",
+    "pageLabel": "Página {page}"
   },
   "brands": {
     "iptvsubscription": {

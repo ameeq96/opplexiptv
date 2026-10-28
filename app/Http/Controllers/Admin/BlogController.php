@@ -7,6 +7,7 @@ use App\Http\Requests\Admin\StoreBlogRequest;
 use App\Http\Requests\Admin\UpdateBlogRequest;
 use App\Models\Blog;
 use App\Models\BlogTranslation;
+use App\Services\Blogs\BlogPublicationService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
@@ -30,12 +31,18 @@ class BlogController extends Controller
     {
         $this->authorizeManage();
 
+        $request->validate(['site_key' => ['nullable', \Illuminate\Validation\Rule::in(array_keys(config('blog-publishing.sites', [])))]]);
+        $siteKey = $request->query('site_key');
+
         $locale = $request->query('locale', admin_locale());
         $status = $request->query('status');
         $featured = $request->query('featured');
         $search = trim((string) $request->query('q', ''));
 
         $query = Blog::query()->with('translations');
+        if ($siteKey) {
+            $query->forSite($siteKey);
+        }
 
         if ($status) {
             $query->where('status', $status);
@@ -61,6 +68,8 @@ class BlogController extends Controller
             'featured' => $featured,
             'search' => $search,
             'locales' => admin_locales(),
+            'siteKey' => $siteKey,
+            'sites' => config('blog-publishing.sites', []),
         ]);
     }
 
@@ -72,6 +81,7 @@ class BlogController extends Controller
         return view('admin.blogs.create', [
             'locales' => admin_locales(),
             'blog' => $blog,
+            'sites' => config('blog-publishing.sites', []),
         ]);
     }
 
@@ -81,6 +91,8 @@ class BlogController extends Controller
 
         return DB::transaction(function () use ($request) {
             $data = $request->validated();
+            $siteKey = $data['site_key'] ?? 'main';
+            $queueLanding = $siteKey !== 'main' && $data['status'] === 'published';
 
             $cover = null;
             if ($request->hasFile('cover_image')) {
@@ -88,17 +100,21 @@ class BlogController extends Controller
             }
 
             $blog = Blog::create([
+                'site_key' => $siteKey,
                 'author_id' => $data['author_id'] ?? null,
                 'cover_image' => $cover,
-                'status' => $data['status'],
+                'status' => $queueLanding ? 'draft' : $data['status'],
                 'published_at' => $data['published_at'] ?? null,
                 'reading_time' => $data['reading_time'] ?? null,
                 'is_featured' => (bool) ($data['is_featured'] ?? false),
             ]);
 
             $this->syncTranslations($blog, $data['translations'] ?? [], $request);
+            if ($queueLanding) {
+                app(BlogPublicationService::class)->queueExisting($blog);
+            }
 
-            return redirect()->route('admin.blogs.index')->with('success', 'Blog created successfully.');
+            return redirect()->route('admin.blogs.index')->with('success', $queueLanding ? 'Blog saved and queued for website publication. Check its run on the automation screen.' : 'Blog created successfully.');
         });
     }
 
@@ -110,6 +126,7 @@ class BlogController extends Controller
         return view('admin.blogs.edit', [
             'blog' => $blog,
             'locales' => admin_locales(),
+            'sites' => config('blog-publishing.sites', []),
         ]);
     }
 
@@ -119,6 +136,7 @@ class BlogController extends Controller
 
         return DB::transaction(function () use ($request, $blog) {
             $data = $request->validated();
+            $queueLanding = ($blog->site_key ?? 'main') !== 'main' && $data['status'] === 'published';
 
             if ($request->hasFile('cover_image')) {
                 if ($blog->cover_image) {
@@ -129,15 +147,18 @@ class BlogController extends Controller
 
             $blog->fill([
                 'author_id' => $data['author_id'] ?? null,
-                'status' => $data['status'],
+                'status' => $queueLanding ? 'draft' : $data['status'],
                 'published_at' => $data['published_at'] ?? null,
                 'reading_time' => $data['reading_time'] ?? null,
                 'is_featured' => (bool) ($data['is_featured'] ?? false),
             ])->save();
 
             $this->syncTranslations($blog, $data['translations'] ?? [], $request, true);
+            if ($queueLanding) {
+                app(BlogPublicationService::class)->queueExisting($blog);
+            }
 
-            return redirect()->route('admin.blogs.index')->with('success', 'Blog updated successfully.');
+            return redirect()->route('admin.blogs.index')->with('success', $queueLanding ? 'Blog saved and queued for website publication. Its last published version remains available until the new build succeeds.' : 'Blog updated successfully.');
         });
     }
 
@@ -151,6 +172,10 @@ class BlogController extends Controller
     public function publish(Blog $blog)
     {
         $this->authorizeManage();
+        if (($blog->site_key ?? 'main') !== 'main') {
+            app(BlogPublicationService::class)->queueExisting($blog);
+            return back()->with('success', 'Blog queued for website publication. Check its run on the automation screen.');
+        }
         $blog->update([
             'status' => 'published',
             'published_at' => $blog->published_at ?? now(),
@@ -214,6 +239,12 @@ class BlogController extends Controller
             }
 
             $slug = trim((string) ($payload['slug'] ?? ''));
+            if ($isUpdate && ($blog->site_key ?? 'main') !== 'main') {
+                $existing = $blog->translations()->where('locale', $locale)->first();
+                if ($existing) {
+                    $slug = $existing->slug;
+                }
+            }
             if ($slug === '') {
                 $slug = Str::slug($title, '-');
             }

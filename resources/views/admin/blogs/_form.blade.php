@@ -7,6 +7,16 @@
         <div class="admin-card">
             <h5 class="mb-3">General</h5>
             <div class="mb-3">
+                <label class="form-label" for="blog-site">Website</label>
+                <select id="blog-site" name="site_key" class="form-select" @disabled($blog->exists)>
+                    @foreach ($sites as $key => $site)
+                        <option value="{{ $key }}" @selected(old('site_key', $blog->site_key ?? 'main') === $key)>{{ $site['name'] }} — {{ $site['domain'] }}</option>
+                    @endforeach
+                </select>
+                @if ($blog->exists)<input type="hidden" name="site_key" value="{{ $blog->site_key ?? 'main' }}">@endif
+                <p class="small text-muted mt-1 mb-0">An existing article stays on its original website. Landing articles need all ten translations and a successful site publication.</p>
+            </div>
+            <div class="mb-3">
                 <label class="form-label">Status</label>
                 <select name="status" class="form-select" required>
                     <option value="draft" @selected(old('status', $blog->status ?? 'draft') === 'draft')>Draft</option>

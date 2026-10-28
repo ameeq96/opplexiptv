@@ -15,6 +15,7 @@ class StoreBlogRequest extends FormRequest
     public function rules(): array
     {
         $rules = [
+            'site_key' => ['sometimes', 'string', Rule::in(array_keys(config('blog-publishing.sites', [])))],
             'author_id' => ['nullable', 'integer', 'exists:users,id'],
             'cover_image' => ['nullable', 'image', 'max:4096'],
             'status' => ['required', Rule::in(['draft', 'published', 'archived'])],

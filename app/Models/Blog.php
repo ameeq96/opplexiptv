@@ -12,6 +12,7 @@ use Illuminate\Support\Carbon;
 class Blog extends Model
 {
     protected $fillable = [
+        'site_key',
         'author_id',
         'cover_image',
         'status',
@@ -39,6 +40,16 @@ class Blog extends Model
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(BlogCategory::class, 'blog_blog_category');
+    }
+
+    public function generationRuns(): HasMany
+    {
+        return $this->hasMany(BlogGenerationRun::class);
+    }
+
+    public function scopeForSite(Builder $query, string $siteKey = 'main'): Builder
+    {
+        return $query->where('site_key', $siteKey);
     }
 
     public function translation(?string $locale = null): ?BlogTranslation

@@ -153,6 +153,10 @@ Route::prefix('api/v1/site')->name('api.site.')->middleware([ApiJsonResponse::cl
     Route::get('brands/{brand}/pages', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingPages'])->where('brand', 'trex|opplex|geo|5g|iptvsubscription|getiptv')->name('brands.pages.index');
     Route::get('brands/{brand}/pages/{page}', [\App\Http\Controllers\Api\PublicSiteController::class, 'landingPage'])
         ->where(['brand' => 'trex|opplex|geo|5g|iptvsubscription|getiptv', 'page' => '(?:blogs/)?[a-z0-9]+(?:-[a-z0-9]+)*'])->name('brands.pages.show');
+    Route::get('brands/{brand}/blogs', [\App\Http\Controllers\Api\LandingBlogController::class, 'index'])
+        ->where('brand', 'trex|opplex|geo|5g|iptvsubscription|getiptv')->name('brands.blogs.index');
+    Route::get('brands/{brand}/blogs/{slug}', [\App\Http\Controllers\Api\LandingBlogController::class, 'show'])
+        ->where(['brand' => 'trex|opplex|geo|5g|iptvsubscription|getiptv', 'slug' => '[a-z0-9]+(?:-[a-z0-9]+)*'])->name('brands.blogs.show');
     Route::get('blogs', [\App\Http\Controllers\Api\PublicSiteController::class, 'blogs'])->name('blogs.index');
     Route::get('blogs/{slug}', [\App\Http\Controllers\Api\PublicSiteController::class, 'blog'])->name('blogs.show');
 });
@@ -249,6 +253,9 @@ $adminGuardSets = [
     ['web', 'auth:admin', \App\Http\Middleware\EnsureAdminSessionIsCurrent::class, \App\Http\Middleware\AuditAdminAction::class, \App\Http\Middleware\EnsureAdminPasswordChanged::class, \App\Http\Middleware\EnsureAdminTwoFactorAuthenticated::class, 'admin.access', 'throttle:3,1'],
 ];
 $adminEndpoints = [
+    [['GET'], 'blogs/automation', \App\Http\Controllers\Admin\BlogAutomationController::class, 'index', 'blogs.automation.index', 0, []],
+    [['PATCH'], 'blogs/automation/{siteKey}', \App\Http\Controllers\Admin\BlogAutomationController::class, 'update', 'blogs.automation.update', 9, ['siteKey' => 'main|trex|opplex|geo|5g|iptvsubscription|getiptv']],
+    [['POST'], 'blogs/automation/runs/{run}/retry', \App\Http\Controllers\Admin\BlogAutomationController::class, 'retry', 'blogs.automation.retry', 10, ['run' => '[0-9]+']],
     [['GET'], 'landing-experience', \App\Http\Controllers\Admin\LandingExperienceController::class, 'index', 'landing-experience.index', 0, []],
     [['POST'], 'landing-experience/incidents', \App\Http\Controllers\Admin\LandingExperienceController::class, 'storeIncident', 'landing-experience.incidents.store', 9, []],
     [['PUT'], 'landing-experience/incidents/{incident}', \App\Http\Controllers\Admin\LandingExperienceController::class, 'updateIncident', 'landing-experience.incidents.update', 9, ['incident' => '[0-9]+']],

@@ -276,7 +276,14 @@
     "setup": "Aiuto alla configurazione",
     "guide": "Guida pratica",
     "disclaimer": "Conferma dispositivo, località e piano prima di pagare. Disponibilità e prestazioni possono variare.",
-    "governingPolicy": "Leggi la politica centrale applicabile a questo servizio"
+    "governingPolicy": "Leggi la politica centrale applicabile a questo servizio",
+    "latestArticles": "Articoli recenti",
+    "blogArchive": "Archivio del blog",
+    "readArticle": "Leggi l’articolo",
+    "previousPage": "Pagina precedente",
+    "nextPage": "Pagina successiva",
+    "publishedOn": "Pubblicato il",
+    "pageLabel": "Pagina {page}"
   },
   "brands": {
     "trex": {

@@ -276,7 +276,14 @@
     "setup": "Aide à l’installation",
     "guide": "Guide pratique",
     "disclaimer": "Confirmez votre appareil, votre pays et la formule choisie avant de payer. La disponibilité et les performances peuvent varier.",
-    "governingPolicy": "Lire la politique centrale qui régit ce service"
+    "governingPolicy": "Lire la politique centrale qui régit ce service",
+    "latestArticles": "Derniers articles",
+    "blogArchive": "Archives du blog",
+    "readArticle": "Lire l’article",
+    "previousPage": "Page précédente",
+    "nextPage": "Page suivante",
+    "publishedOn": "Publié le",
+    "pageLabel": "Page {page}"
   },
   "brands": {
     "trex": {

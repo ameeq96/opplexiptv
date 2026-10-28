@@ -784,7 +784,7 @@ class PublicSiteDataService
         $search = trim((string) $request->query('q', ''));
         $categorySlug = trim((string) $request->query('category', ''));
 
-        $featuredQuery = Blog::published()
+        $featuredQuery = Blog::published()->forSite('main')
             ->where('is_featured', true)
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);
@@ -806,7 +806,7 @@ class PublicSiteDataService
             ? $coverImages->featured($featured->cover_image)
             : null;
 
-        $blogsQuery = Blog::published()
+        $blogsQuery = Blog::published()->forSite('main')
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);
             })
@@ -868,12 +868,13 @@ class PublicSiteDataService
 
         $translation = BlogTranslation::where('slug', $slug)
             ->where('locale', $locale)
+            ->whereHas('blog', fn ($query) => $query->forSite('main'))
             ->first();
 
         if (!$translation) {
             $matches = BlogTranslation::where('slug', $slug)
                 ->whereIn('locale', array_keys(config('laravellocalization.supportedLocales', [])))
-                ->whereHas('blog', fn ($query) => $query->published())
+                ->whereHas('blog', fn ($query) => $query->published()->forSite('main'))
                 ->limit(2)
                 ->get();
 
@@ -890,7 +891,7 @@ class PublicSiteDataService
             return ['redirect_url' => $target];
         }
 
-        $blog = Blog::with(['translations', 'author'])->findOrFail($translation->blog_id);
+        $blog = Blog::with(['translations', 'author'])->forSite('main')->findOrFail($translation->blog_id);
 
         if ($blog->status !== 'published' || ($blog->published_at && $blog->published_at->isFuture())) {
             abort(404);
@@ -901,7 +902,7 @@ class PublicSiteDataService
             ? $coverImages->featured($blog->cover_image)
             : null;
 
-        $related = Blog::published()
+        $related = Blog::published()->forSite('main')
             ->where('id', '!=', $blog->id)
             ->whereHas('translations', function ($q) use ($locale) {
                 $q->where('locale', $locale);

@@ -8,6 +8,7 @@ use App\Models\TrialClick;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 
 class LandingInteractionService
@@ -32,7 +33,7 @@ class LandingInteractionService
         return is_string($locale) && in_array($locale, config('app.locales', ['en']), true);
     }
 
-    public function validPage(string $brand, mixed $page): bool
+    public function validPage(string $brand, mixed $page, ?string $locale = null): bool
     {
         if (!isset(self::BRANDS[$brand]) || !is_string($page)) return false;
         if ($page === '') return true;
@@ -41,7 +42,10 @@ class LandingInteractionService
             $this->pageSlugs[$brand] = array_column($document['brands'][$brand]['pages'] ?? [], 'slug');
         }
 
-        return in_array($page, $this->pageSlugs[$brand], true);
+        if (in_array($page, $this->pageSlugs[$brand], true)) return true;
+        if (!Schema::hasTable('blog_generation_runs') || !Schema::hasColumn('blogs', 'site_key')) return false;
+
+        return app(\App\Services\Blogs\BlogContentService::class)->validLandingPage($brand, $locale ?? 'en', $page);
     }
 
     public function assertOrigin(string $brand, string $origin): void
@@ -195,7 +199,7 @@ class LandingInteractionService
     private function dimensions(array $data): array
     {
         return !empty($data['analytics_consent']) && !empty($data['session_id']) && Str::isUuid($data['session_id'])
-            && $this->validLocale($data['locale'] ?? null) && $this->validPage($data['brand'], $data['page'] ?? null)
+            && $this->validLocale($data['locale'] ?? null) && $this->validPage($data['brand'], $data['page'] ?? null, $data['locale'])
             ? ['locale' => $data['locale'], 'page' => $data['page']] : [];
     }
 
@@ -221,7 +225,7 @@ class LandingInteractionService
             $known = is_string($session) && Str::isUuid($session)
                 && (!empty($details['analytics_consent']) || $metric === 'paid_orders');
             $locale = $known && $this->validLocale($details['locale'] ?? null) ? $details['locale'] : 'unknown';
-            $page = $known && $this->validPage($brand, $details['page'] ?? null) ? $details['page'] : 'unknown';
+            $page = $known && $this->validPage($brand, $details['page'] ?? null, $locale === 'unknown' ? null : $locale) ? $details['page'] : 'unknown';
             foreach (['locale' => $locale, 'page' => $page, 'daily' => $activity->occurred_at->toDateString()] as $dimension => $value) {
                 $key = $brand.'|'.$value;
                 $sets[$dimension][$key] ??= ['brand' => $brand, 'value' => $value, 'visits' => [], 'contacts' => [], 'checkout_clicks' => [], 'paid_orders' => []];

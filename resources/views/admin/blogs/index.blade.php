@@ -14,6 +14,15 @@
 @section('content')
     <div class="admin-card mb-3">
         <form method="GET" class="row g-2">
+            <div class="col-lg-12">
+                <label for="blog-site-filter" class="form-label">Website</label>
+                <select id="blog-site-filter" name="site_key" class="form-select">
+                    <option value="">All websites</option>
+                    @foreach ($sites as $key => $site)
+                        <option value="{{ $key }}" @selected($siteKey === $key)>{{ $site['name'] }} — {{ $site['domain'] }}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="col-lg-4">
                 <input type="text" name="q" value="{{ $search }}" class="form-control" placeholder="Search title or slug">
             </div>
@@ -46,7 +55,7 @@
 
     <div class="d-flex justify-content-between align-items-center mb-3">
         <div class="text-muted">{{ $blogs->total() }} blogs</div>
-        <a href="{{ route('admin.blogs.create') }}" class="btn btn-primary">+ New Blog</a>
+        <div class="d-flex gap-2"><a href="{{ route('admin.blogs.automation.index') }}" class="btn btn-outline-primary">Daily publishing</a><a href="{{ route('admin.blogs.create') }}" class="btn btn-primary">+ New Blog</a></div>
     </div>
 
     <div class="admin-card p-0">
@@ -79,6 +88,7 @@
                                 @endif
                             </td>
                             <td>
+                                <div class="small text-muted">{{ $sites[$blog->site_key ?? 'main']['name'] ?? $blog->site_key }}</div>
                                 <div class="fw-semibold" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}" data-admin-api-field="translation.title" data-admin-api-empty="—">{{ $t?->title ?? '—' }}</div>
                                 <div class="text-muted small" data-admin-api-object="blog" data-admin-api-id="{{ $blog->id }}" data-admin-api-field="translation.slug">{{ $t?->slug }}</div>
                             </td>

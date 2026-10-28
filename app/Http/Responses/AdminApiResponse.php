@@ -39,9 +39,10 @@ class AdminApiResponse
         'purchasing.edit' => ['purchasing'],
         'trial_clicks.index' => ['clicks', 'today', 'last7', 'last30', 'newLeads', 'paidLeads', 'statuses', 'landingBrands', 'landingFunnel'],
         'products.index' => ['products', 'type', 'search'],
-        'blogs.index' => ['blogs', 'locale', 'status', 'featured', 'search', 'locales'],
-        'blogs.create' => ['blog', 'locales'],
-        'blogs.edit' => ['blog', 'locales'],
+        'blogs.index' => ['blogs', 'locale', 'status', 'featured', 'search', 'locales', 'siteKey', 'sites'],
+        'blogs.create' => ['blog', 'locales', 'sites'],
+        'blogs.edit' => ['blog', 'locales', 'sites'],
+        'blogs.automation' => ['settings', 'runs', 'sites', 'siteKey', 'canManage'],
         'shop-products.index' => ['products', 'search', 'status'],
         'shop-products.create' => ['product', 'locales'],
         'shop-products.edit' => ['product', 'locales'],
@@ -88,7 +89,10 @@ class AdminApiResponse
         'Purchasing' => ['id', 'purchase_date', 'item_name', 'quantity', 'cost_price', 'currency', 'note', 'created_at', 'updated_at'],
         'Package' => ['id', 'type', 'vendor', 'title', 'display_price', 'price_amount', 'duration_months', 'credits', 'sort_order', 'icon', 'icons', 'features', 'button_link', 'delay', 'badge_key', 'is_featured', 'is_available', 'free_trial_hours', 'instant_activation', 'connection_prices', 'active', 'created_at', 'updated_at'],
         'PackageTranslation' => ['id', 'package_id', 'locale', 'title', 'features'],
-        'Blog' => ['id', 'author_id', 'cover_image', 'status', 'published_at', 'reading_time', 'is_featured', 'views', 'created_at', 'updated_at'],
+        'Blog' => ['id', 'site_key', 'author_id', 'cover_image', 'status', 'published_at', 'reading_time', 'is_featured', 'views', 'created_at', 'updated_at'],
+        'BlogSiteSetting' => ['id', 'site_key', 'enabled', 'timezone', 'publish_time', 'locales', 'created_at', 'updated_at'],
+        'BlogGenerationRun' => ['id', 'site_key', 'publishing_date', 'blog_id', 'topic', 'primary_keyword', 'revision', 'status', 'attempts', 'errors', 'published_at', 'created_at', 'updated_at'],
+        'BlogPublishDelivery' => ['id', 'run_id', 'channel', 'revision', 'status', 'attempts', 'http_status', 'error_code', 'last_attempt_at', 'next_attempt_at', 'created_at', 'updated_at'],
         'BlogTranslation' => ['id', 'blog_id', 'locale', 'title', 'slug', 'excerpt', 'content', 'seo_title', 'seo_description', 'seo_keywords', 'og_title', 'og_description', 'og_image', 'canonical_url', 'schema_json'],
         'ShopProduct' => ['id', 'name', 'asin', 'link', 'image', 'sort_order', 'is_active', 'created_at', 'updated_at'],
         'ShopProductTranslation' => ['id', 'shop_product_id', 'locale', 'name'],
@@ -212,7 +216,7 @@ class AdminApiResponse
             if ($type === 'TrialClick') {
                 $result['lead_code'] = $value->lead_code;
             }
-            foreach (['translations', 'children', 'user', 'assignedAdmin', 'device', 'pictures', 'order', 'referral', 'referredBy', 'marketingDeliveries', 'sourceOrder', 'referredOrder', 'completedOrder', 'admin'] as $relation) {
+            foreach (['translations', 'children', 'user', 'assignedAdmin', 'device', 'pictures', 'order', 'referral', 'referredBy', 'marketingDeliveries', 'sourceOrder', 'referredOrder', 'completedOrder', 'admin', 'deliveries'] as $relation) {
                 if ($value->relationLoaded($relation)) {
                     $result[$relation] = $this->value($value->getRelation($relation), $depth + 1);
                 }

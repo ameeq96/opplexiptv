@@ -132,6 +132,7 @@ class GenerateSitemap extends Command
 
         try {
             $blogs = \App\Models\Blog::query()
+                ->forSite('main')
                 ->when(method_exists(\App\Models\Blog::class, 'scopePublished'), fn ($q) => $q->published())
                 ->with('translations')
                 ->get();
