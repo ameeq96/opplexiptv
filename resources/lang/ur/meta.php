@@ -2,8 +2,8 @@
 
 return [
     'home' => [
-        'title' => 'بہترین IPTV سروس - HD، 4K لائیو اسٹریمنگ | Opplex IPTV',
-        'description' => '4K لائیو IPTV، 12,000+ چینلز اور VOD کے ساتھ بہترین IPTV تجربہ حاصل کریں۔ اس میں xtreme hd iptv، iptv اسمارٹ پلیئر اور مفت ٹرائل شامل ہے۔ یورپ اور USA میں',
+        'title' => 'Opplex IPTV | سبسکرپشن پلانز اور ڈیوائس سیٹ اپ',
+        'description' => 'Opplex اور Filex کے IPTV پلانز کا موازنہ کریں۔ سبسکرپشن کی مدت، ڈیوائس اور پلیئر کی ضروریات جانیں اور انتخاب سے پہلے 24 گھنٹے دستیاب سپورٹ سے رابطہ کریں۔',
         'keywords' => 'best iptv, iptv box, xtreme hd iptv, aroma iptv, iptv smart player, iptv free trial, 4k live iptv',
     ],
     'about' => [

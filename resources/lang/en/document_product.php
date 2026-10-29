@@ -4,8 +4,8 @@ return [
     'applications' => [
         'page_title' => 'IPTV applications',
         'hero' => [
-            'heading' => 'Best IPTV Apps for Android, iOS, Windows & Smart TV',
-            'text' => 'Find the Opplex IPTV Android APK and other IPTV players below. Choose an app that supports your device and login method, review its requirements and pricing.',
+            'heading' => 'Opplex IPTV Apps: Android APK and Players for PC, iOS & Smart TV',
+            'text' => 'Looking for an Opplex IPTV APK download or a player for your PC? Start with your device below. The APK is for Android; Windows, Mac and Apple devices use their own player downloads. Check the supported login format and any separate app charges before installing.',
             'support' => "Not sure which app to use? Message us on WhatsApp, and we'll point you to the right one for your device.",
         ],
         'platforms' => [
@@ -74,8 +74,8 @@ return [
                     'answer' => 'Choose from the section for your device. The Opplex APK is listed under Android, alongside Google Play options; Apple and desktop players have separate sections. Check the player’s supported login or playlist method. If you are unsure, send us your device model on WhatsApp for setup guidance.',
                 ],
                 [
-                    'question' => 'How do I install the app on my device?',
-                    'answer' => 'For the Opplex Android APK, download the file and open it on your Android device. If prompted, allow installation only for the browser or file app you used, then turn that permission off afterwards. Google Play and App Store links install through the store. For desktop players, follow the linked developer’s instructions. Contact support if your device cannot install the app.',
+                    'question' => 'Can I use the Opplex IPTV APK on a PC or Smart TV?',
+                    'answer' => 'An Android APK is not a Windows or Mac installer. For a PC, use the Windows or macOS section and check the developer’s requirements. For a Smart TV, identify its operating system first: Android TV, Samsung and LG have different app options. On a supported Android device, download the Opplex APK and open the file. If prompted, allow installation only for the browser or file app you used, then turn that permission off afterwards. Ask support if your exact model is not listed.',
                 ],
                 [
                     'question' => "The app loaded, but my channels won't play. What do I do?",
@@ -97,8 +97,8 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ Movies and Series in HD and 4K on Supported Devices',
-            'text' => "Your Opplex subscription comes with a full on-demand library from day one. No extra cost, no separate VOD package to buy. Browse movies, series, and cartoons or search for something specific. New content gets added on an ongoing basis, and if you can't find a title, just ask us on WhatsApp.",
+            'heading' => 'Opplex IPTV Movies and Series: Check Availability Before Choosing a Plan',
+            'text' => 'Looking for a particular movie, series, subtitle or audio language? Ask support to check that exact title before you choose a subscription. Available on-demand content, picture quality and player features can vary. A device that supports 4K does not make every title a 4K stream.',
             'plans' => 'View Plans',
             'trial' => 'Start Free Trial',
         ],
@@ -155,7 +155,7 @@ return [
                 ],
                 [
                     'question' => 'Are new releases available?',
-                    'answer' => "Yes. New films and series episodes are added on an ongoing basis. Some titles appear within days of their release on major platforms. If you're looking for something specific and it's not there yet, message us on WhatsApp, and we'll prioritise it.",
+                    'answer' => 'Availability changes, so ask support to check the exact title, season, audio language and subtitle requirements before purchasing. A listing or release date elsewhere does not confirm that it is available through your selected plan.',
                 ],
                 [
                     'question' => 'Can I download content to watch offline?',
@@ -167,7 +167,7 @@ return [
                 ],
                 [
                     'question' => "Can I request a title that isn't in the library?",
-                    'answer' => "Yes. Message us on WhatsApp with the movie or series name, and we'll check availability and add it where we can. Most requests are handled within a day or two.",
+                    'answer' => 'Send support the title and, for a series, the season and episode. We can check availability; a request does not guarantee that content will be added or provide a release date.',
                 ],
                 [
                     'question' => 'Is the content the same quality as Netflix or Prime Video?',
@@ -185,17 +185,17 @@ return [
         'page_title' => 'IPTV Subscription Services',
         'hero' => [
             'eyebrow' => 'Live TV, Movies, Series, 4K, and Catch-Up',
-            'heading' => 'IPTV Subscription Service: Everything You Want to Watch, Starting at $2.99',
+            'heading' => 'IPTV Subscription Service: Choose Your Provider, Plan and Device Setup',
             'paragraphs' => [
-                "You're looking for a streaming service that actually works. One that loads channels fast, doesn't buffer at the worst moment, and gives you real support when something goes wrong. That's what Opplex is.",
-                'One subscription covers 12,000+ live channels, 50,000+ movies and series, and HD or 4K quality, all streamed over your existing internet connection: no dish, no box rental, no annual contract.',
+                'Choosing an IPTV subscription starts with a few practical questions: which device will you use, which player does it support, and what do you want to check before paying? Compare the current Opplex and Filex packages, then confirm any must-have content with support.',
+                'Keep the provider, duration and total together when comparing plans. Opplex includes one simultaneous connection per line. Ask support to confirm the allowance for your chosen Filex plan rather than assuming it is the same. Playback also depends on the source, app, device and network.',
             ],
             'primary_cta' => 'Build Your IPTV Plan',
             'secondary_cta' => 'Start Free Trial on WhatsApp',
             'benefits' => [
-                ['icon' => 'flaticon-8k', 'title' => 'HD and 4K Streaming', 'text' => 'Sharp picture on every device. If the channel supports 4K, you get 4K. No compression, no quality cap.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ Live Channels:', 'text' => 'A broad selection of available news, entertainment, and international content. Ask us to confirm a specific channel before purchasing.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Movies and Series on Demand:', 'text' => '50,000+ titles available from the moment you subscribe. No extra VOD package needed.'],
+                ['icon' => 'flaticon-8k', 'title' => 'Picture Quality:', 'text' => 'Check the source resolution, player support, screen and network together. HD or 4K capability is not a guarantee for every stream.'],
+                ['icon' => 'flaticon-5g', 'title' => 'Live Channel Checks:', 'text' => 'Send support the specific channel and language you need before purchasing. Channel availability can change.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Movies and Series on Demand:', 'text' => 'Ask about the exact title, season, audio and subtitle options that matter to you; do not choose a plan from a library count alone.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Fast Setup on Supported Devices:', 'text' => 'We help you get going on compatible Fire TV Stick, Smart TV, Android, iOS, or MAG devices. Setup time varies by device.'],
             ],
         ],
@@ -211,10 +211,10 @@ return [
         'why' => [
             'heading' => 'Why People Switch to Opplex and Stay',
             'items' => [
-                ['title' => 'No Buffer. Genuinely.', 'text' => 'We know every IPTV provider says this. The difference with Opplex is our server infrastructure, built specifically to handle peak-hour traffic across multiple regions without slowing down. Our uptime has sat at 99.9% for three consecutive years.'],
+                ['title' => 'Check Playback on Your Setup:', 'text' => 'Where a trial is available, use it on the device and network you intend to keep using. Record any repeated playback problem so support can investigate; no connection or provider can promise zero buffering.'],
                 ['title' => 'Clear Pricing:', 'text' => 'The price shown at checkout is what you pay for the selected plan period. There are no hidden activation fees. Before renewing, review the current plan and price.'],
                 ['title' => 'Available Across Many Regions:', 'text' => 'Opplex is used in 40+ countries, including the UK, parts of Europe, and the USA. Playback and content availability depend on the local network, device, source, and applicable regional restrictions.'],
-                ['title' => 'Team You Can Actually Reach:', 'text' => "WhatsApp support, seven days a week. When you message us, a real person reads it and responds, usually within minutes. We don't outsource support, and we don't use automated bots to stall you."],
+                ['title' => 'Support Before and After Purchase:', 'text' => 'Opplex IPTV Subscription Services provides support 24 hours a day. Use the official contact options for plan, setup and order questions; response and resolution times depend on the enquiry.'],
             ],
         ],
         'included' => [

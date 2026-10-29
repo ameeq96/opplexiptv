@@ -179,9 +179,9 @@ return [
             'eyebrow' => 'Every plan includes the full package. No hidden fees.',
             'heading' => 'IPTV Subscription Pricing  Simple Plans, No Surprises',
             'paragraphs' => [
-                "Pick a plan length, pay once, and start watching. Every Opplex plan gives you the same 12,000+ live channels, 50,000+ movies, and 4K quality. Longer plans cost less per month; that's the only difference.",
-                'Filex is also available for viewers who want a different channel mix at a slightly higher rate. Both run through the same setup process and the same apps.',
-                'Not sure which plan suits you? Start with the monthly. You can always go yearly later.',
+                'Compare the current Opplex IPTV price by provider and duration. Read the full plan total as well as any monthly equivalent, and check the currency and final amount again at checkout.',
+                'Opplex and Filex are separate choices. Confirm the connection allowance, player requirements and any must-have content for the selected provider. Opplex includes one simultaneous connection per line; ask about your chosen Filex plan separately.',
+                'A shorter plan can be useful while you assess your setup. Before choosing a longer duration, check renewal terms and any separate player charges so the subscription price is not confused with the complete cost.',
             ],
         ],
         'included' => [

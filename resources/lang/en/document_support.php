@@ -3,8 +3,8 @@
 return [
     'faq' => [
         'page_title' => 'FAQS',
-        'heading' => 'Frequently Asked Questions',
-        'intro' => 'Got a question before you buy? Or need help setting up? You\'re in the right place. We\'ve answered the most common questions below. If you don\'t find what you\'re looking for, just message us on WhatsApp, and we\'ll reply fast.',
+        'heading' => 'Opplex IPTV FAQ: Trials, Devices, Login Help and Support',
+        'intro' => 'Start with the question that matches your situation: choosing a plan, checking a trial, finding the right app or getting help with an existing order. Confirm device and content requirements before buying. For account-specific questions, use an official private support channel rather than posting login details publicly.',
         'groups' => [
             [
                 'title' => 'About Opplex IPTV',
@@ -37,8 +37,8 @@ return [
                         'answer' => 'Opplex is available in many regions, including the USA, UK, Canada, Europe, and the Middle East. Playback depends on your local network, device, and applicable regional restrictions, so ask us to confirm your location if needed.',
                     ],
                     [
-                        'question' => 'Where can I buy Opplex IPTV?',
-                        'answer' => 'Directly from opplexiptv.com, that\'s the only official source. You can browse plans on the Packages page or message us on WhatsApp at :phone to get help picking the right one.',
+                        'question' => 'Where can I get help with my Opplex login URL or order?',
+                        'answer' => 'Use My Account on this website for order support, or contact us privately on WhatsApp at :phone with your order reference. Website account access and the login details used inside a player are different. Never post passwords, private service URLs or one-time sign-in links in public comments.',
                     ],
                 ],
             ],
@@ -89,7 +89,7 @@ return [
                     ],
                     [
                         'question' => 'Why is a channel buffering or freezing?',
-                        'answer' => 'Buffering is almost always an internet speed issue or temporary peak-traffic load on that channel. Try pausing for 10–15 seconds and resuming. If it keeps happening, try switching to a lower quality setting in the app or restarting your router. If a specific channel is consistently slow, let us know, and we\'ll look into it.',
+                        'answer' => 'Check whether the problem affects one item or several, and whether it repeats on the same device and network. Note the app name and version, exact error, time and time zone. Send those details privately to support. Buffering can have several causes, so a speed reading alone does not identify the fault.',
                     ],
                     [
                         'question' => 'What are the advantages of IPTV over cable or satellite?',
@@ -127,28 +127,28 @@ return [
     'about' => [
         'page_title' => 'About Us',
         'hero' => [
-            'eyebrow' => 'Streaming that just works since 2022',
-            'heading' => 'We Started Opplex Because We Were Tired of Bad IPTV Too',
+            'eyebrow' => 'Plan information, device guidance and order support',
+            'heading' => 'About Opplex IPTV Subscription Services',
             'paragraphs' => [
-                'Before Opplex, we were the customers. Constantly switching providers, dealing with channels that froze, support teams that took days to reply, and prices that crept up every six months for no reason.',
-                'So we built something better. Opplex launched with one rule: give people a streaming service that\'s stable, honest about what it costs, and actually picks up when you need help.',
-                'That hasn\'t changed. What has changed is scale, from a handful of early subscribers to tens of thousands of viewers across the USA, UK, France, Italy, Canada, and dozens of other countries. The infrastructure got bigger. The team got bigger. The rule stayed the same.',
+                'Opplex IPTV Subscription Services is the public support name used for our plan, setup and order enquiries. This website brings together current packages, compatible-player information and ways to contact support.',
+                'We want you to know what you are choosing before you pay. Check the provider, duration, connection allowance and final total, then ask about any specific channel, device or language requirement.',
+                'Support is available 24 hours a day. Keep your order reference for private enquiries, and check the current terms, privacy and refund pages before purchasing. Playback and availability depend on the source, player, device, network and location.',
             ],
             'plans_cta' => 'View Our Plans',
             'trial_cta' => 'Start a Free Trial',
         ],
         'stats' => [
-            ['value' => '12,000+', 'label' => 'Live Channels', 'icon' => 'fa fa-desktop'],
-            ['value' => '50,000+', 'label' => 'Movies & Series', 'icon' => 'fa fa-film'],
-            ['value' => '99.9%', 'label' => 'Server Uptime', 'icon' => 'fa fa-signal'],
+            ['value' => '1', 'label' => 'Opplex Connection per Line', 'icon' => 'fa fa-desktop'],
+            ['value' => '4', 'label' => 'Opplex Plan Durations', 'icon' => 'fa fa-film'],
+            ['value' => '10', 'label' => 'Website Languages', 'icon' => 'fa fa-signal'],
             ['value' => '24/7', 'label' => 'Customer Support', 'icon' => 'fa fa-comments'],
         ],
         'story' => [
-            'heading' => 'Four Years of Keeping the Channels On',
+            'heading' => 'What to Check Before Choosing a Subscription',
             'paragraphs' => [
-                'Opplex has been running since 2022. In that time, we\'ve expanded the channel list, rebuilt our server infrastructure twice, added two of our own IPTV apps, and kept the price at a level that actually makes sense compared to a cable bill.',
-                'We operate out of Saskatoon, Canada, a small team that\'s genuinely into streaming, not a faceless operation farming subscriptions. That matters when something goes wrong, because the person who answers your WhatsApp message is the same person who cares about whether the server stays up tonight.',
-                'Most of our subscribers found us through a recommendation, someone saying "this one actually works" to a friend or in a forum. That word of mouth is the thing we\'re most proud of.',
+                'Start with the device you already have. Record its exact model and operating system, then use the Applications page to check player options and any separate app costs.',
+                'Next, compare the current package details. Opplex has monthly, three-month, six-month and yearly options, with one simultaneous connection per line. Ask support to confirm Filex requirements separately.',
+                'Finally, confirm any must-have content before paying. Keep the selected provider, plan duration and checkout confirmation together so an order or renewal enquiry is easier to resolve.',
             ],
             'image_alt' => 'Opplex IPTV network and streaming infrastructure',
         ],
@@ -157,7 +157,7 @@ return [
             'items' => [
                 [
                     'title' => 'Stability Over Features',
-                    'text' => 'We\'d rather have 12,000 channels that work 99.9% of the time than 20,000 that drop during peak hours. Every server upgrade we make is about uptime, not headline numbers.',
+                    'text' => 'Check the service on your own device and network where a trial is available. Give support a repeatable example if something fails, rather than relying on a channel count or a performance promise.',
                     'icon' => 'fa fa-shield',
                 ],
                 [
@@ -167,7 +167,7 @@ return [
                 ],
                 [
                     'title' => 'Support That Actually Responds',
-                    'text' => 'WhatsApp, seven days a week. We aim to reply within minutes, not a ticket number and a three-day wait. If your channels go down or your login stops working, we sort it out the same day.',
+                    'text' => 'Use the official contact page for setup, account and order questions. Support is available 24 hours a day; response and resolution times depend on the issue.',
                     'icon' => 'fa fa-comments-o',
                 ],
             ],
@@ -239,23 +239,23 @@ return [
     'contact' => [
         'page_title' => 'Contact',
         'hero' => [
-            'eyebrow' => 'Real people. Fast replies. No ticket queue.',
-            'heading' => 'Get in Touch | We Usually Reply Within Minutes',
-            'text' => 'Whether you\'re looking to start a free trial, need help with your setup, or have a question before you subscribe, just reach out. WhatsApp is the fastest way to get a response. Email and the contact form work too.',
+            'eyebrow' => 'Opplex IPTV Subscription Services',
+            'heading' => 'Get in Touch | 24-Hour Setup and Order Support',
+            'text' => 'Choose an official contact option for plan questions, trial availability, device setup or an existing order. Include your device model and a clear description of what you need. Support is available 24 hours a day; keep account and payment details in the private conversation.',
         ],
         'channels' => [
             'heading' => 'Three Ways to Reach Us',
             'items' => [
                 [
-                    'title' => 'WhatsApp (fastest):',
-                    'text' => 'Message us at :phone. We monitor WhatsApp throughout the day and reply in minutes. Best for trial requests, setup help, login issues, billing questions, and reseller enquiries.',
+                    'title' => 'WhatsApp:',
+                    'text' => 'Message us at :phone for trial, setup, login, billing or reseller questions. Have your order reference ready for an existing purchase, and never share passwords or one-time sign-in links.',
                     'cta' => 'Message on WhatsApp',
                     'type' => 'whatsapp',
                     'icon' => 'fa fa-whatsapp',
                 ],
                 [
                     'title' => 'Email:',
-                    'text' => 'Send us a message at info@opplexiptv.com. We respond within a few hours during business hours. Best for detailed questions, billing receipts, and formal enquiries.',
+                    'text' => 'Use info@opplexiptv.com for a detailed question or order enquiry. Describe the issue and include your order reference when relevant. Remove passwords, private login links and card details from screenshots.',
                     'cta' => 'Send an Email',
                     'type' => 'email',
                     'icon' => 'fa fa-envelope-o',
@@ -273,7 +273,7 @@ return [
             'heading' => 'Not Sure What to Write? Here Are the Most Common Reasons People Message Us',
             'items' => [
                 ['title' => 'Starting a Free Trial:', 'text' => 'Message us on WhatsApp and tell us which device you want to test on. We\'ll activate a trial and walk you through the setup.', 'icon' => 'fa fa-play-circle-o'],
-                ['title' => 'Setup and Installation Help:', 'text' => 'Tell us your device type on WhatsApp. We respond with step-by-step instructions, usually with screenshots, within minutes.', 'icon' => 'fa fa-wrench'],
+                ['title' => 'Setup and Installation Help:', 'text' => 'Tell us the exact device model, operating system and player name. These details help us identify relevant setup instructions instead of sending steps for a different device.', 'icon' => 'fa fa-wrench'],
                 ['title' => 'Missing Login Details:', 'text' => 'Check your spam folder first. If your details still haven\'t arrived, message us with the email you used at checkout, and we\'ll check the order and resend them if needed.', 'icon' => 'fa fa-key'],
                 ['title' => 'Billing and Payment Questions:', 'text' => 'Questions about charges, receipts, renewal pricing, or switching plans via WhatsApp or email. We keep a record of every order and can pull up your details quickly.', 'icon' => 'fa fa-credit-card'],
                 ['title' => 'Reseller Enquiries:', 'text' => 'Interested in the reseller panel? Message us on WhatsApp. We\'ll walk you through how credits work and how to set up your first customer line.', 'icon' => 'fa fa-users'],
@@ -283,18 +283,18 @@ return [
         'response' => [
             'heading' => 'When You Can Expect a Reply',
             'items' => [
-                ['value' => 'Under 5 mins', 'label' => 'WhatsApp response during active hours'],
-                ['value' => 'Same Day', 'label' => 'Most issues resolved'],
+                ['value' => 'Varies', 'label' => 'Response time depends on the enquiry'],
+                ['value' => 'By issue', 'label' => 'Resolution needs vary'],
                 ['value' => '24/7', 'label' => 'Support Availability'],
             ],
-            'text' => 'We don\'t have a ticket system that makes you wait three days. If you send a WhatsApp, a real person reads it.',
+            'text' => 'Support availability is separate from a guaranteed reply or resolution time. Include the relevant order reference and technical details so the enquiry can be investigated.',
         ],
         'faq' => [
             'heading' => 'Contact & Support | Common Questions',
             'items' => [
-                ['question' => 'What\'s the fastest way to get help?', 'answer' => 'WhatsApp at :phone. It\'s monitored throughout the day, and most questions are answered within minutes.'],
+                ['question' => 'What\'s the fastest way to get help?', 'answer' => 'Use an official contact option below. For WhatsApp, message :phone with a short description and your order reference where relevant. Sending the exact device model, app version and error text can reduce follow-up questions.'],
                 ['question' => 'I just paid, but my login details haven\'t arrived. What do I do?', 'answer' => 'Check your spam or junk folder first. If the details are not there, message us on WhatsApp with your order reference and email address. We\'ll verify the payment status and help during active support hours.'],
-                ['question' => 'Can you help me set up Opplex on my specific device?', 'answer' => 'Yes. Tell us your device: Firestick, Smart TV model, MAG, Android box, iPhone, etc and we\'ll send you the exact steps. Most setups take under five minutes with the right instructions.'],
+                ['question' => 'Can you help me set up Opplex on my specific device?', 'answer' => 'Send your exact device model, operating system and player name so support can check the requirements. App availability and setup steps differ between Android TV, Fire TV, Samsung, LG, Apple devices and desktop computers.'],
                 ['question' => 'What information should I include when I contact you?', 'answer' => 'Your order email address, the device you\'re using, and a description of the issue. Screenshots help if something\'s going wrong on screen. The more detail upfront, the faster we can help.'],
                 ['question' => 'Do you offer support in other languages?', 'answer' => 'Our site is available in 10 languages. Our support team can assist with several of them. If English isn\'t your first language, feel free to message us in your own, and we\'ll do our best.'],
                 ['question' => 'I want to cancel. What do I do?', 'answer' => 'Subscriptions don\'t auto-renew; they simply expire when the period ends. If you have a billing concern, see our Refund and Cancellation policy in the footer, or email us at info@opplexiptv.com.'],
@@ -302,7 +302,7 @@ return [
         ],
         'cta' => [
             'heading' => 'Got a Question? We\'re Right Here.',
-            'text' => 'Most people who message us get a reply before they\'ve even closed WhatsApp. No support queue, no auto-reply bot, no runaround, just a fast answer from someone who can actually help.',
+            'text' => 'Choose WhatsApp, email or the form for your enquiry. Describe what you need, keep private login information out of screenshots, and retain your order reference for follow-up.',
             'whatsapp' => 'Message Us on WhatsApp',
             'email' => 'Send an Email',
         ],

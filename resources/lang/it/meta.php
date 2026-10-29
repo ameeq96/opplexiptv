@@ -47,8 +47,8 @@ return [
         'keywords' => 'acquista pannello IPTV, dashboard rivenditore IPTV, gestione pannello IPTV, configurazione pannello IPTV WhatsApp, pannello IPTV 4K, pannello IPTV HD, strumenti rivenditore IPTV',
     ],
     'iptv-applications' => [
-        'title' => 'Migliori app IPTV per Android, iOS, Smart TV',
-        'description' => 'Scarica IPTV Smarters Pro, IPTV Extreme APK, Smart IPTV, 000 Player, TiviMate e altro – compatibili con IPTV player e liste IPTV.',
+        'title' => 'App IPTV Opplex | APK Android e guida ai player per PC',
+        'description' => 'Trova l’APK Android di Opplex IPTV e i player per il tuo dispositivo. Verifica i requisiti e distingui gli installer Android dalle app per Windows o macOS.',
         'keywords' => 'IPTV Smarters Pro, IPTV Extreme APK, Smart IPTV, app IPTV Italia, IPTV player, IPTV m3u gratis, miglior app IPTV 2025',
     ],
     'faqs' => [

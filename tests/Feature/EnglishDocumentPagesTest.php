@@ -51,28 +51,28 @@ class EnglishDocumentPagesTest extends TestCase
                 'What Comes with Your Reseller Account',
             ]],
             'applications' => ['/iptv-applications', [
-                'Best IPTV Apps for Android, iOS, Windows & Smart TV',
+                'Opplex IPTV Apps: Android APK and Players for PC, iOS & Smart TV',
                 'Best IPTV Apps for Android',
                 'Common Questions About IPTV Apps',
             ]],
             'movies' => ['/movies', [
-                '50,000+ Movies and Series',
+                'Opplex IPTV Movies and Series: Check Availability Before Choosing a Plan',
                 "What's in the Library",
                 'How to Browse and Watch Movies on Opplex',
             ]],
             'subscription' => ['/iptv-subscription-service', [
-                'Everything You Want to Watch, Starting at $2.99',
-                'Three Steps from Signup to Streaming',
+                'IPTV Subscription Service: Choose Your Provider, Plan and Device Setup',
+                'Two Steps from Signup to Activation',
                 'IPTV vs Cable',
             ]],
             'faqs' => ['/faqs', [
-                'Frequently Asked Questions',
+                'Opplex IPTV FAQ: Trials, Devices, Login Help and Support',
                 'About Opplex IPTV',
                 'Streaming Quality & Performance',
             ]],
             'about' => ['/about', [
-                'We Started Opplex Because We Were Tired of Bad IPTV Too',
-                'Four Years of Keeping the Channels On',
+                'About Opplex IPTV Subscription Services',
+                'What to Check Before Choosing a Subscription',
                 'How Opplex Got Here',
             ]],
             'contact' => ['/contact', [

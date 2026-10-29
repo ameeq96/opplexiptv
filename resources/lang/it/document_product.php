@@ -4,8 +4,8 @@ return [
     'applications' => [
         'page_title' => 'Applicazioni IPTV',
         'hero' => [
-            'heading' => 'Le migliori app IPTV per Android, iOS, Windows e Smart TV',
-            'text' => 'Qui trovi l’APK Android Opplex IPTV e altri lettori IPTV. Scegli un’app adatta al tuo dispositivo e al metodo di accesso, controlla requisiti e prezzi.',
+            'heading' => 'App IPTV Opplex: APK Android e player per PC, iOS e Smart TV',
+            'text' => 'Cerchi un APK IPTV o un player per PC? Parti dal dispositivo che usi: l’APK Opplex è per Android, mentre Windows, Mac e dispositivi Apple richiedono i rispettivi download. Per scegliere la migliore app IPTV per le tue esigenze, controlla sistema operativo, metodo di accesso ed eventuali costi separati del lettore.',
             'support' => 'Non sai quale app usare? Scrivici su WhatsApp e ti indicheremo quella giusta per il tuo dispositivo.',
         ],
         'platforms' => [
@@ -74,8 +74,8 @@ return [
                     'answer' => 'Scegli dalla sezione dedicata al tuo dispositivo. L’APK Opplex è nella sezione Android, insieme alle opzioni Google Play; i lettori Apple e desktop hanno sezioni separate. Controlla il metodo di accesso o il formato di playlist supportato. In caso di dubbi, inviaci il modello del dispositivo su WhatsApp per ricevere indicazioni.',
                 ],
                 [
-                    'question' => 'Come installo l’app sul mio dispositivo?',
-                    'answer' => 'Per l’APK Android Opplex, scarica il file e aprilo sul dispositivo Android. Se richiesto, consenti l’installazione solo al browser o al gestore di file utilizzato, quindi disattiva il permesso dopo l’installazione. I link Google Play e App Store installano tramite lo store. Per i lettori desktop segui le istruzioni dello sviluppatore. Contatta l’assistenza se il dispositivo non riesce a installare l’app.',
+                    'question' => 'Posso usare l’APK Opplex IPTV su PC o Smart TV?',
+                    'answer' => 'Un APK Android non è un programma di installazione per Windows o Mac. Per il PC consulta la sezione Windows o macOS e i requisiti dello sviluppatore. Per la Smart TV verifica prima il sistema operativo: Android TV, Samsung e LG hanno opzioni diverse. Su un dispositivo Android compatibile scarica l’APK Opplex e apri il file. Se richiesto, consenti l’installazione solo al browser o al gestore di file usato, poi disattiva quel permesso. Se il modello non è indicato, chiedi all’assistenza.',
                 ],
                 [
                     'question' => 'L’app si è caricata, ma i canali non vengono riprodotti. Cosa devo fare?',
