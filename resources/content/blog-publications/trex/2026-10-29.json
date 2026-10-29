@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-10-29",
+  "topic": "Fire TV player maintenance: distinguish app cache cleanup from resetting app data",
+  "primary_keyword": "IPTV app cache",
+  "slug": "trex-iptv-app-cache-before-clearing-data",
+  "translations": {
+    "en": {
+      "title": "IPTV app cache on Fire TV: choose the right cleanup",
+      "excerpt": "A storage warning does not mean you should erase your player. Check which cleanup option you are selecting and keep a way back into the app.",
+      "seo_title": "IPTV app cache on Fire TV: choose the right cleanup",
+      "seo_description": "Understand IPTV app cache on Fire TV, check the app-specific storage options and avoid confusing temporary-file cleanup with resetting player data.",
+      "sections": [
+        {
+          "heading": "Identify the app before changing anything",
+          "paragraphs": [
+            "An IPTV app cache cleanup is a small maintenance step, but the neighbouring buttons can have very different effects. On your Trex IPTV 8K viewing device, identify the player you actually use and note its version. If a low-storage message appears, read it rather than assuming the subscription is the cause. Keep your legitimate sign-in recovery method available before changing app settings; do not put passwords or private service links in a support screenshot."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the two options separately",
+          "paragraphs": [
+            "Amazon places Fire TV app maintenance under Settings, Applications and Manage Installed Applications. Select the relevant player, then read the exact action. Clear Cache targets temporary files. Clear Data is a separate reset of app data and can require setup again. Google makes the same temporary-data versus app-storage distinction in its Android guidance; its phone menus are not Fire TV instructions. Menu wording can vary with software, so stop if the screen does not match."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Check the result once",
+          "paragraphs": [
+            "For a cache-only check, leave Clear Data alone. Reopen the player and allow it to rebuild temporary files; the first opening may take longer. Compare the same short, lawful video before trying another change. Cache cleanup cannot establish why a stream stalls or promise smoother playback. If the warning returns, tell support the Fire TV model, app version, message and action you used. That is more useful than repeatedly clearing everything."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Caché de IPTV en Fire TV: elige la limpieza adecuada",
+      "excerpt": "Un aviso de espacio no obliga a borrar el reproductor. Revisa la opción seleccionada y conserva una forma legítima de volver a entrar en la aplicación.",
+      "seo_title": "Caché de IPTV en Fire TV: elige la limpieza adecuada",
+      "seo_description": "Distingue la caché de IPTV y los datos del reproductor en Fire TV, revisa las opciones de cada aplicación y comprueba el resultado de un cambio.",
+      "sections": [
+        {
+          "heading": "Identifica la aplicación antes de tocarla",
+          "paragraphs": [
+            "Limpiar la caché de una aplicación IPTV es un mantenimiento pequeño, pero los botones cercanos pueden tener efectos muy distintos. En el dispositivo donde ves Trex IPTV 8K, identifica tu reproductor y anota su versión. Si aparece un aviso de poco espacio, léelo: no demuestra que la suscripción sea la causa. Conserva el método legítimo para recuperar el acceso antes de cambiar ajustes y oculta contraseñas y enlaces privados en cualquier captura."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee cada opción por separado",
+          "paragraphs": [
+            "Amazon sitúa el mantenimiento de aplicaciones de Fire TV en Ajustes, Aplicaciones y Gestionar aplicaciones instaladas. Selecciona el reproductor y lee la acción concreta. Borrar caché elimina archivos temporales. Borrar datos reinicia los datos de la aplicación y puede exigir configurarla otra vez. Google explica esa misma diferencia en su ayuda de Android, aunque los menús de un teléfono no son instrucciones para Fire TV. Si la pantalla no coincide, detente y comprueba la guía de tu versión."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba el resultado una sola vez",
+          "paragraphs": [
+            "Para probar únicamente la caché, no pulses Borrar datos. Abre de nuevo el reproductor y deja que reconstruya los archivos temporales; el primer inicio puede tardar más. Compara el mismo vídeo breve y autorizado antes de hacer otro cambio. Esta limpieza no identifica por sí sola la causa de los cortes ni garantiza una reproducción más fluida. Si vuelve el aviso, comunica al soporte el modelo de Fire TV, la versión, el mensaje y la acción realizada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Cache IPTV sur Fire TV : choisir le bon nettoyage",
+      "excerpt": "Une alerte de stockage ne demande pas forcément de réinitialiser le lecteur. Vérifiez le bouton choisi et gardez un moyen de retrouver votre accès.",
+      "seo_title": "Cache IPTV sur Fire TV : choisir le bon nettoyage",
+      "seo_description": "Différenciez le cache IPTV des données du lecteur sur Fire TV, vérifiez les options de chaque application et observez le résultat avant de poursuivre.",
+      "sections": [
+        {
+          "heading": "Identifier le lecteur avant de modifier ses réglages",
+          "paragraphs": [
+            "Vider le cache d’une application IPTV reste une petite opération, mais les boutons voisins peuvent avoir des conséquences très différentes. Sur l’appareil utilisé pour Trex IPTV 8K, identifiez le lecteur et notez sa version. Lisez précisément l’alerte de stockage : elle ne désigne pas automatiquement l’abonnement comme responsable. Gardez votre méthode légitime de récupération de connexion avant toute modification et masquez les mots de passe et liens privés sur les captures."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguer les deux actions",
+          "paragraphs": [
+            "Amazon place la gestion des applications Fire TV dans Paramètres, Applications puis Gérer les applications installées. Sélectionnez le lecteur concerné et lisez le libellé exact. Vider le cache vise les fichiers temporaires. Effacer les données réinitialise les données de l’application et peut imposer une nouvelle configuration. Google décrit aussi cette distinction dans son aide Android, mais les menus d’un téléphone ne sont pas ceux de Fire TV. Arrêtez-vous si votre écran ne correspond pas aux instructions."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Observer un seul changement",
+          "paragraphs": [
+            "Pour vérifier uniquement le cache, laissez l’effacement des données de côté. Rouvrez le lecteur et laissez-le recréer ses fichiers temporaires ; le premier lancement peut être plus lent. Comparez la même courte vidéo autorisée avant toute autre modification. Nettoyer le cache ne suffit pas à expliquer des interruptions et ne garantit pas une lecture plus fluide. Si l’alerte revient, indiquez au support le modèle Fire TV, la version du lecteur, le message et l’action effectuée."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cache IPTV su Fire TV: scegli la pulizia giusta",
+      "excerpt": "Un avviso di memoria non richiede necessariamente di azzerare il lettore. Controlla il pulsante selezionato e conserva un modo per recuperare l’accesso.",
+      "seo_title": "Cache IPTV su Fire TV: scegli la pulizia giusta",
+      "seo_description": "Distingui la cache IPTV dai dati del lettore su Fire TV, controlla le opzioni della singola app e verifica il risultato prima di cambiare altro.",
+      "sections": [
+        {
+          "heading": "Identifica il lettore prima di intervenire",
+          "paragraphs": [
+            "Pulire la cache di un’app IPTV è una piccola manutenzione, ma i pulsanti vicini possono avere effetti molto diversi. Sul dispositivo usato per Trex IPTV 8K, identifica il lettore effettivo e annotane la versione. Leggi l’avviso di spazio insufficiente senza attribuirlo automaticamente all’abbonamento. Prima di modificare le impostazioni, conserva il metodo legittimo per recuperare l’accesso. Nelle schermate inviate all’assistenza nascondi password e collegamenti privati del servizio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi le due opzioni separatamente",
+          "paragraphs": [
+            "Amazon colloca la gestione delle app Fire TV in Impostazioni, Applicazioni e Gestisci applicazioni installate. Seleziona il lettore e leggi l’azione esatta. Svuota cache riguarda i file temporanei. Cancella dati è un ripristino separato dei dati dell’app e può richiedere una nuova configurazione. Google spiega la stessa distinzione nella guida Android, ma i menu del telefono non sono istruzioni per Fire TV. Se la schermata differisce, fermati e controlla la guida adatta alla tua versione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla un cambiamento alla volta",
+          "paragraphs": [
+            "Per una verifica della sola cache, lascia stare Cancella dati. Riapri il lettore e attendi la ricostruzione dei file temporanei: il primo avvio può essere più lento. Confronta lo stesso breve video autorizzato prima di cambiare altro. La pulizia non identifica da sola la causa delle interruzioni e non garantisce maggiore fluidità. Se l’avviso ritorna, comunica all’assistenza modello Fire TV, versione dell’app, messaggio e operazione eseguita."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-appcache op Fire TV: kies de juiste opruimactie",
+      "excerpt": "Een melding over opslag betekent niet meteen dat de speler opnieuw moet worden ingesteld. Controleer de gekozen knop en bewaar je herstelmogelijkheid.",
+      "seo_title": "IPTV-appcache op Fire TV: kies de juiste opruimactie",
+      "seo_description": "Leer het verschil tussen IPTV-appcache en appgegevens op Fire TV, controleer de opties van je speler en beoordeel het resultaat van één wijziging.",
+      "sections": [
+        {
+          "heading": "Controleer eerst welke app je gebruikt",
+          "paragraphs": [
+            "De cache van een IPTV-app opruimen is een kleine onderhoudsstap, maar de knoppen ernaast kunnen heel andere gevolgen hebben. Zoek op het apparaat waarop je Trex IPTV 8K kijkt de juiste speler op en noteer de versie. Lees een melding over weinig opslag zorgvuldig; die bewijst niet dat het abonnement de oorzaak is. Zorg dat je je legitieme toegang kunt herstellen voordat je instellingen wijzigt. Verberg wachtwoorden en privélinks op schermafbeeldingen voor ondersteuning."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees beide opties afzonderlijk",
+          "paragraphs": [
+            "Amazon zet het beheer van Fire TV-apps onder Instellingen, Applicaties en Geïnstalleerde applicaties beheren. Selecteer de betreffende speler en lees de precieze actie. Cache wissen verwijdert tijdelijke bestanden. Gegevens wissen stelt de appgegevens opnieuw in en kan betekenen dat je de speler opnieuw moet instellen. Google beschrijft hetzelfde onderscheid in de Android-hulp, maar telefoonmenu’s zijn geen Fire TV-instructies. Stop en controleer de juiste handleiding als jouw scherm anders is."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Beoordeel één verandering",
+          "paragraphs": [
+            "Laat Gegevens wissen ongemoeid als je alleen de cache wilt controleren. Open de speler opnieuw en laat tijdelijke bestanden opbouwen; de eerste start kan langer duren. Vergelijk dezelfde korte, toegestane video voordat je nog iets verandert. Cache opruimen verklaart haperingen niet vanzelf en garandeert geen vloeiende weergave. Komt de melding terug, geef ondersteuning dan het Fire TV-model, de appversie, de melding en de uitgevoerde handeling door."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Cache de IPTV no Fire TV: escolha a limpeza certa",
+      "excerpt": "Um aviso de armazenamento não significa que deva reiniciar os dados do leitor. Confirme a opção escolhida e mantenha uma forma legítima de recuperar o acesso.",
+      "seo_title": "Cache de IPTV no Fire TV: escolha a limpeza certa",
+      "seo_description": "Diferencie a cache de IPTV dos dados da aplicação no Fire TV, confira as opções do leitor e observe o resultado antes de fazer outra alteração.",
+      "sections": [
+        {
+          "heading": "Identifique a aplicação antes de alterar algo",
+          "paragraphs": [
+            "Limpar a cache de uma aplicação IPTV é uma manutenção pequena, mas os botões próximos podem ter efeitos bastante diferentes. No dispositivo usado para ver Trex IPTV 8K, identifique o leitor e anote a versão. Leia o aviso de pouco espaço sem concluir automaticamente que o problema é da subscrição. Antes de modificar definições, mantenha disponível o método legítimo de recuperação do acesso. Oculte palavras-passe e ligações privadas nas capturas enviadas ao apoio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia as duas opções separadamente",
+          "paragraphs": [
+            "A Amazon coloca a gestão de aplicações do Fire TV em Definições, Aplicações e Gerir aplicações instaladas. Selecione o leitor e leia a ação exata. Limpar cache trata dos ficheiros temporários. Limpar dados repõe os dados da aplicação e pode exigir uma nova configuração. A Google explica a mesma diferença na ajuda do Android, mas os menus de um telefone não são instruções para Fire TV. Se o ecrã for diferente, pare e consulte a orientação da sua versão."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Observe apenas uma alteração",
+          "paragraphs": [
+            "Para verificar só a cache, não escolha Limpar dados. Abra novamente o leitor e deixe reconstruir os ficheiros temporários; o primeiro arranque pode demorar mais. Compare o mesmo vídeo curto e autorizado antes de mudar outra coisa. Esta limpeza não identifica por si só a causa das interrupções nem garante maior fluidez. Se o aviso regressar, indique ao apoio o modelo Fire TV, a versão da aplicação, a mensagem e a ação realizada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Кэш IPTV на Fire TV: выберите подходящий способ очистки",
+      "excerpt": "Предупреждение о нехватке места не требует немедленного сброса плеера. Проверьте выбранную команду и сохраните законный способ восстановления доступа.",
+      "seo_title": "Кэш IPTV на Fire TV: выберите подходящий способ очистки",
+      "seo_description": "Разберитесь, чем кэш IPTV отличается от данных плеера на Fire TV, проверьте настройки конкретного приложения и оцените результат одного изменения.",
+      "sections": [
+        {
+          "heading": "Сначала определите нужное приложение",
+          "paragraphs": [
+            "Очистка кэша IPTV — небольшая операция обслуживания, однако соседние кнопки могут действовать совсем иначе. На устройстве, где вы смотрите Trex IPTV 8K, найдите фактически используемый плеер и запишите его версию. Внимательно прочитайте предупреждение о свободном месте: оно не доказывает проблему с подпиской. Перед изменением настроек убедитесь, что сможете восстановить законный доступ к приложению. На снимках для поддержки скрывайте пароли и личные ссылки сервиса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Не смешивайте две команды",
+          "paragraphs": [
+            "Amazon размещает управление приложениями Fire TV в настройках: «Приложения», затем управление установленными приложениями. Выберите нужный плеер и прочитайте название действия. Очистка кэша касается временных файлов. Очистка данных отдельно сбрасывает данные приложения и может потребовать повторной настройки. Google объясняет такое же различие в справке Android, но меню телефона не является инструкцией для Fire TV. Если экран отличается, остановитесь и найдите руководство для своей версии."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Оцените одно изменение",
+          "paragraphs": [
+            "Для проверки только кэша не выбирайте очистку данных. Снова откройте плеер и дождитесь восстановления временных файлов; первый запуск может занять больше времени. Сравните тот же короткий разрешённый видеоролик, прежде чем менять что-либо ещё. Очистка кэша сама по себе не устанавливает причину остановок и не гарантирует плавного воспроизведения. Если предупреждение вернулось, сообщите поддержке модель Fire TV, версию приложения, текст сообщения и выполненное действие."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Fire TV پر IPTV ایپ کی کیش: صفائی کا درست اختیار چنیں",
+      "excerpt": "جگہ کم ہونے کا پیغام آئے تو فوراً پلیئر کا سارا ڈیٹا نہ مٹائیں۔ پہلے منتخب اختیار پڑھیں اور جائز طور پر دوبارہ لاگ اِن ہونے کا طریقہ محفوظ رکھیں۔",
+      "seo_title": "Fire TV پر IPTV ایپ کی کیش: صفائی کا درست اختیار چنیں",
+      "seo_description": "Fire TV پر IPTV کیش اور ایپ ڈیٹا کا فرق سمجھیں، اپنے پلیئر کی صفائی کے اختیارات پڑھیں اور دوسری تبدیلی سے پہلے پہلی کا نتیجہ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "تبدیلی سے پہلے درست ایپ پہچانیں",
+          "paragraphs": [
+            "IPTV ایپ کی کیش صاف کرنا ایک چھوٹا سا دیکھ بھال کا کام ہے، مگر ساتھ والے بٹن کا اثر بالکل مختلف ہو سکتا ہے۔ جس آلے پر Trex IPTV 8K دیکھتے ہیں، اس میں استعمال ہونے والے اصل پلیئر کا نام اور ورژن نوٹ کریں۔ جگہ کم ہونے کا پیغام غور سے پڑھیں؛ اس سے یہ ثابت نہیں ہوتا کہ سبسکرپشن خرابی کی وجہ ہے۔ سیٹنگ بدلنے سے پہلے جائز رسائی بحال کرنے کا طریقہ اپنے پاس رکھیں۔ سپورٹ کو بھیجی جانے والی تصویر میں پاس ورڈ اور نجی سروس لنکس چھپا دیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "کیش اور ڈیٹا کے اختیارات الگ پڑھیں",
+          "paragraphs": [
+            "Amazon کے مطابق Fire TV میں ایپ کی دیکھ بھال Settings، Applications اور Manage Installed Applications میں ملتی ہے۔ متعلقہ پلیئر منتخب کرکے اصل کارروائی کا نام پڑھیں۔ Clear Cache عارضی فائلوں کے لیے ہے۔ Clear Data ایپ کے ڈیٹا کو الگ سے ری سیٹ کرتا ہے اور دوبارہ سیٹ اپ درکار ہو سکتا ہے۔ Google کی Android رہنمائی بھی یہی فرق بتاتی ہے، مگر فون کے مینو Fire TV کی ہدایات نہیں ہیں۔ اگر آپ کی اسکرین مختلف ہو تو رک کر اپنے ورژن کی مدد دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "ایک تبدیلی کا نتیجہ دیکھیں",
+          "paragraphs": [
+            "صرف کیش جانچنے کے لیے Clear Data نہ منتخب کریں۔ پلیئر دوبارہ کھولیں اور عارضی فائلیں بننے دیں؛ پہلا آغاز قدرے زیادہ وقت لے سکتا ہے۔ کوئی اور تبدیلی کرنے سے پہلے وہی مختصر اور جائز ویڈیو چلا کر مقابلہ کریں۔ کیش کی صفائی خود بخود رکنے کی وجہ نہیں بتاتی اور بہتر پلے بیک کی ضمانت نہیں۔ پیغام واپس آئے تو سپورٹ کو Fire TV کا ماڈل، ایپ ورژن، پیغام اور کی گئی کارروائی بتائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ذاكرة تطبيق IPTV على Fire TV: اختر التنظيف المناسب",
+      "excerpt": "ظهور تنبيه عن المساحة لا يعني ضرورة مسح بيانات المشغّل. اقرأ الخيار المختار واحتفظ بطريقة مشروعة لاستعادة الدخول إلى التطبيق.",
+      "seo_title": "ذاكرة تطبيق IPTV على Fire TV: اختر التنظيف المناسب",
+      "seo_description": "ميّز بين ذاكرة IPTV المؤقتة وبيانات المشغّل على Fire TV، وتحقق من خيارات التطبيق ثم راقب نتيجة تغيير واحد قبل متابعة المحاولات.",
+      "sections": [
+        {
+          "heading": "حدّد التطبيق قبل تعديل إعداداته",
+          "paragraphs": [
+            "مسح ذاكرة تطبيق IPTV المؤقتة إجراء صيانة بسيط، لكن الأزرار المجاورة قد تكون لها نتائج مختلفة تمامًا. حدّد المشغّل المستخدم فعليًا على الجهاز الذي تشاهد منه Trex IPTV 8K، ودوّن إصداره. اقرأ تنبيه انخفاض المساحة بدقة؛ فهو لا يثبت أن الاشتراك هو السبب. احتفظ بطريقة مشروعة لاستعادة الدخول قبل تعديل الإعدادات، واحجب كلمات المرور وروابط الخدمة الخاصة عن صور الشاشة المرسلة إلى الدعم."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الخيارين بشكل منفصل",
+          "paragraphs": [
+            "تضع Amazon إدارة تطبيقات Fire TV ضمن الإعدادات، ثم التطبيقات، ثم إدارة التطبيقات المثبّتة. اختر المشغّل المقصود واقرأ الإجراء المحدد. مسح الذاكرة المؤقتة يستهدف الملفات المؤقتة، أما مسح البيانات فهو إعادة ضبط منفصلة لبيانات التطبيق وقد يتطلب إعداده مجددًا. تشرح Google الفرق نفسه في مساعدة Android، لكن قوائم الهاتف ليست تعليمات لجهاز Fire TV. إذا اختلفت شاشتك، توقّف وراجع دليل إصدار جهازك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "راقب نتيجة تغيير واحد",
+          "paragraphs": [
+            "عند فحص الذاكرة المؤقتة فقط، لا تختر مسح البيانات. افتح المشغّل مجددًا وانتظر إعادة إنشاء الملفات المؤقتة؛ فقد يستغرق التشغيل الأول وقتًا أطول. قارن المقطع القصير نفسه الذي يحق لك مشاهدته قبل إجراء تعديل آخر. تنظيف الذاكرة لا يكشف وحده سبب تقطّع البث ولا يضمن تشغيلًا أكثر سلاسة. إذا عاد التنبيه، أرسل للدعم طراز Fire TV وإصدار التطبيق ونص الرسالة والإجراء الذي نفّذته."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Fire TV पर IPTV ऐप कैश: सफाई का सही विकल्प चुनें",
+      "excerpt": "स्टोरेज की चेतावनी आने पर प्लेयर का पूरा डेटा मिटाना जरूरी नहीं। पहले चुना गया विकल्प पढ़ें और ऐप में वैध तरीके से दोबारा प्रवेश का साधन रखें।",
+      "seo_title": "Fire TV पर IPTV ऐप कैश: सफाई का सही विकल्प चुनें",
+      "seo_description": "Fire TV पर IPTV कैश और ऐप डेटा का अंतर समझें, अपने प्लेयर के सफाई विकल्प जांचें और अगला बदलाव करने से पहले पहले का परिणाम देखें।",
+      "sections": [
+        {
+          "heading": "बदलाव से पहले सही ऐप पहचानें",
+          "paragraphs": [
+            "IPTV ऐप का कैश साफ करना रखरखाव का छोटा कदम है, लेकिन पास के बटनों के असर काफी अलग हो सकते हैं। जिस डिवाइस पर Trex IPTV 8K देखते हैं, उसमें असल में इस्तेमाल हो रहे प्लेयर का नाम और संस्करण लिख लें। कम जगह की चेतावनी ध्यान से पढ़ें; इससे यह साबित नहीं होता कि समस्या सब्सक्रिप्शन में है। सेटिंग बदलने से पहले वैध प्रवेश वापस पाने का तरीका उपलब्ध रखें। सहायता को भेजे स्क्रीनशॉट में पासवर्ड और निजी सर्विस लिंक छिपाएं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दोनों विकल्प अलग-अलग पढ़ें",
+          "paragraphs": [
+            "Amazon के अनुसार Fire TV में ऐप प्रबंधन Settings, Applications और Manage Installed Applications में मिलता है। संबंधित प्लेयर चुनकर कार्रवाई का सही नाम पढ़ें। Clear Cache अस्थायी फाइलों के लिए है। Clear Data ऐप डेटा को अलग से रीसेट करता है और फिर से सेटअप की जरूरत हो सकती है। Google की Android सहायता भी यही अंतर समझाती है, लेकिन फोन के मेनू Fire TV के निर्देश नहीं हैं। स्क्रीन अलग हो तो रुकें और अपने संस्करण की गाइड देखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV app data and cache",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+            },
+            {
+              "label": "Android Help: cache and app storage",
+              "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "एक बदलाव का परिणाम जांचें",
+          "paragraphs": [
+            "सिर्फ कैश की जांच के लिए Clear Data न चुनें। प्लेयर दोबारा खोलें और अस्थायी फाइलें फिर बनने दें; पहली बार खुलने में अधिक समय लग सकता है। दूसरा बदलाव करने से पहले वही छोटा और वैध वीडियो चलाकर तुलना करें। कैश साफ करने से रुकावट का कारण अपने आप पता नहीं चलता और बेहतर प्लेबैक की गारंटी नहीं मिलती। चेतावनी लौटे तो सहायता को Fire TV मॉडल, ऐप संस्करण, संदेश और की गई कार्रवाई बताएं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Fire TV app data and cache",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GJZBJS5B8VBCGQ48"
+    },
+    {
+      "label": "Android Help: cache and app storage",
+      "url": "https://support.google.com/android/answer/7431795?hl=en-GB"
+    }
+  ]
+}

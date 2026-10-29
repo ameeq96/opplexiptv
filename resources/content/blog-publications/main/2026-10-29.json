@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-10-29",
+  "topic": "Subtitle tracks, audio language and TV interface settings: make the right change",
+  "primary_keyword": "IPTV subtitles",
+  "slug": "main-subtitle-track-audio-and-tv-language",
+  "translations": {
+    "en": {
+      "title": "IPTV subtitles: check the text track before changing TV settings",
+      "excerpt": "Missing words on screen do not always mean the television language is wrong. Check the programme, text track and audio separately before changing your setup.",
+      "seo_title": "IPTV subtitles: text tracks, audio and TV language",
+      "seo_description": "Check IPTV subtitles without mixing up audio and TV menu language. Compare the available tracks and collect useful details for a support enquiry.",
+      "sections": [
+        {
+          "heading": "Start inside the programme",
+          "paragraphs": [
+            "A television can show English menus while a video offers Spanish audio or no text track at all. IPTV subtitles belong to the particular programme and player, so start during playback rather than changing every language setting on the TV. Open the player controls and look for subtitles, captions or CC. Menu names vary; note the options actually shown."
+          ],
+          "items": [
+            "Keep audio, text and interface language as three separate notes."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Change one choice and watch what happens",
+          "paragraphs": [
+            "Choose a listed subtitle language, leave the audio unchanged and watch a short passage with dialogue. Then switch text off once to identify what changed. If words remain on screen, they may be part of the picture; Google notes that some video subtitles are permanent. Changing the interface language does not establish whether another text track exists."
+          ],
+          "items": [
+            "Do not assume every programme has the same subtitle choices."
+          ],
+          "links": [
+            {
+              "label": "Google TV: official audio and subtitle guidance",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Describe the gap clearly",
+          "paragraphs": [
+            "Try another item that you are entitled to view, using the same player. A missing choice on one programme differs from captions failing throughout the app. For an Opplex IPTV enquiry, send the programme name, device model, player version and language list you can see. Ask whether that item supplies your preferred track before trying a different app or plan."
+          ],
+          "items": [
+            "Hide account names and private service links in screenshots."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Subtítulos IPTV: revisa la pista antes de cambiar el televisor",
+      "excerpt": "Si falta texto en pantalla, el idioma del televisor no siempre es la causa. Revisa por separado el programa, la pista de subtítulos y el audio.",
+      "seo_title": "Subtítulos IPTV: pista de texto, audio e idioma del televisor",
+      "seo_description": "Comprueba los subtítulos IPTV sin confundirlos con el audio o los menús. Revisa las pistas disponibles y prepara una consulta de soporte concreta.",
+      "sections": [
+        {
+          "heading": "Empieza dentro del programa",
+          "paragraphs": [
+            "El televisor puede mostrar menús en español mientras un vídeo ofrece audio en inglés o ninguna pista de texto. Los subtítulos IPTV dependen del programa y del reproductor: empieza durante la reproducción antes de cambiar todos los ajustes del televisor. Abre los controles y busca Subtítulos, Captions o CC. Los nombres varían; anota las opciones que aparecen realmente."
+          ],
+          "items": [
+            "Anota por separado el idioma del audio, del texto y de la interfaz."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Cambia una sola opción y observa",
+          "paragraphs": [
+            "Selecciona un idioma de subtítulos disponible, conserva el audio y mira un fragmento con diálogo. Después desactiva el texto una vez para identificar el cambio. Si las palabras siguen visibles, podrían formar parte de la imagen; Google explica que algunos subtítulos son permanentes. Cambiar el idioma de la interfaz no demuestra que exista otra pista de texto."
+          ],
+          "items": [
+            "No des por hecho que todos los programas ofrecen los mismos subtítulos."
+          ],
+          "links": [
+            {
+              "label": "Google TV: guía oficial de audio y subtítulos",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Explica con precisión qué falta",
+          "paragraphs": [
+            "Prueba otro contenido al que tengas derecho de acceso con el mismo reproductor. Que falte un idioma en un programa es distinto de que los subtítulos fallen en toda la aplicación. Para consultar a Opplex IPTV, indica el programa, el modelo del dispositivo, la versión del reproductor y los idiomas visibles. Pregunta si ese contenido incluye la pista deseada antes de cambiar de aplicación o plan."
+          ],
+          "items": [
+            "Oculta nombres de cuenta y enlaces privados del servicio en las capturas."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Sous-titres IPTV : vérifiez la piste avant les réglages du téléviseur",
+      "excerpt": "Un texte absent ne signifie pas forcément que la langue du téléviseur est incorrecte. Distinguez le programme, les sous-titres et la piste audio.",
+      "seo_title": "Sous-titres IPTV : piste de texte, audio et langue des menus",
+      "seo_description": "Vérifiez les sous-titres IPTV sans les confondre avec la langue audio ou celle des menus. Relevez les pistes proposées pour une demande utile au support.",
+      "sections": [
+        {
+          "heading": "Commencez dans le programme",
+          "paragraphs": [
+            "Un téléviseur peut afficher ses menus en français alors qu’une vidéo propose un son en anglais ou aucune piste de texte. Les sous-titres IPTV dépendent du programme et du lecteur. Commencez pendant la lecture plutôt que de modifier tous les réglages linguistiques. Ouvrez les commandes et cherchez Sous-titres, Captions ou CC. Les intitulés varient : relevez les choix réellement affichés."
+          ],
+          "items": [
+            "Notez séparément la langue du son, du texte et de l’interface."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Modifiez un seul choix et observez",
+          "paragraphs": [
+            "Sélectionnez une langue de sous-titres proposée, gardez le même son et regardez un court passage dialogué. Désactivez ensuite le texte une fois pour voir ce qui change. Si les mots restent visibles, ils peuvent appartenir à l’image ; Google précise que certains sous-titres sont permanents. Modifier la langue des menus ne prouve pas qu’une autre piste existe."
+          ],
+          "items": [
+            "Ne supposez pas que tous les programmes proposent les mêmes sous-titres."
+          ],
+          "links": [
+            {
+              "label": "Google TV : guide officiel du son et des sous-titres",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez précisément ce qui manque",
+          "paragraphs": [
+            "Essayez un autre contenu auquel vous avez accès avec le même lecteur. Une langue absente sur un programme diffère d’un échec des sous-titres dans toute l’application. Pour une demande à Opplex IPTV, indiquez le programme, le modèle de l’appareil, la version du lecteur et les langues affichées. Demandez si la piste souhaitée existe avant de changer d’application ou de formule."
+          ],
+          "items": [
+            "Masquez les noms de compte et les liens privés du service sur les captures."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Sottotitoli IPTV: controlla la traccia prima delle impostazioni TV",
+      "excerpt": "Se manca il testo sullo schermo, la lingua del televisore non è sempre il problema. Controlla separatamente programma, sottotitoli e audio.",
+      "seo_title": "Sottotitoli IPTV: tracce, audio e lingua del televisore",
+      "seo_description": "Controlla i sottotitoli IPTV senza confonderli con audio o menu del televisore. Verifica le tracce disponibili e raccogli dettagli utili per l’assistenza.",
+      "sections": [
+        {
+          "heading": "Parti dal programma in riproduzione",
+          "paragraphs": [
+            "Il televisore può avere menu in italiano mentre un video offre audio inglese oppure nessuna traccia di testo. I sottotitoli IPTV dipendono dal programma e dal lettore. Inizia durante la riproduzione, invece di modificare tutte le impostazioni linguistiche della TV. Apri i controlli e cerca Sottotitoli, Captions o CC. I nomi cambiano: annota le opzioni che vedi davvero."
+          ],
+          "items": [
+            "Tieni tre note separate per lingua audio, testo e interfaccia."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Cambia una scelta e osserva",
+          "paragraphs": [
+            "Seleziona una lingua dei sottotitoli presente nell’elenco, lascia invariato l’audio e guarda un breve dialogo. Poi disattiva il testo una volta per capire cosa cambia. Se le parole restano, potrebbero essere incorporate nell’immagine; Google segnala che alcuni sottotitoli sono permanenti. Cambiare la lingua dei menu non dimostra che esista un’altra traccia di testo."
+          ],
+          "items": [
+            "Non dare per scontato che tutti i programmi abbiano gli stessi sottotitoli."
+          ],
+          "links": [
+            {
+              "label": "Google TV: guida ufficiale ad audio e sottotitoli",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Spiega con precisione che cosa manca",
+          "paragraphs": [
+            "Prova un altro contenuto a cui hai diritto di accesso con lo stesso lettore. Una lingua assente in un programma è diversa da sottotitoli che non funzionano in tutta l’app. Per una richiesta a Opplex IPTV, indica programma, modello del dispositivo, versione del lettore e lingue visibili. Chiedi se quel contenuto offre la traccia desiderata prima di cambiare app o piano."
+          ],
+          "items": [
+            "Nascondi nomi degli account e collegamenti privati del servizio nelle schermate."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-ondertiteling: controleer de teksttrack vóór de tv-instellingen",
+      "excerpt": "Ontbrekende tekst betekent niet automatisch dat de taal van de televisie verkeerd staat. Controleer het programma, de ondertiteling en het geluid afzonderlijk.",
+      "seo_title": "IPTV-ondertiteling: teksttrack, audio en menutaal",
+      "seo_description": "Controleer IPTV-ondertiteling zonder verwarring met de audio- of menutaal. Bekijk beschikbare tracks en verzamel bruikbare informatie voor ondersteuning.",
+      "sections": [
+        {
+          "heading": "Begin in het programma zelf",
+          "paragraphs": [
+            "Een televisie kan Nederlandse menu’s tonen terwijl een video Engelse audio of helemaal geen teksttrack heeft. IPTV-ondertiteling hangt af van het programma en de speler. Begin daarom tijdens het afspelen, voordat je alle taalinstellingen op de tv wijzigt. Open de bediening en zoek Ondertiteling, Captions of CC. Benamingen verschillen; noteer de keuzes die werkelijk zichtbaar zijn."
+          ],
+          "items": [
+            "Houd audio, tekst en interfacetaal als drie aparte notities bij."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Wijzig één keuze en kijk naar het resultaat",
+          "paragraphs": [
+            "Selecteer een aangeboden ondertitelingstaal, laat het geluid ongemoeid en bekijk een kort stukje dialoog. Zet de tekst daarna eenmaal uit om het verschil te herkennen. Blijven de woorden staan, dan kunnen ze onderdeel van het beeld zijn; Google vermeldt dat sommige ondertitels permanent zijn. Een andere menutaal bewijst niet dat er een extra teksttrack bestaat."
+          ],
+          "items": [
+            "Verwacht niet bij ieder programma dezelfde ondertitelingskeuzes."
+          ],
+          "links": [
+            {
+              "label": "Google TV: officiële uitleg over audio en ondertiteling",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Omschrijf nauwkeurig wat ontbreekt",
+          "paragraphs": [
+            "Probeer met dezelfde speler een ander programma dat je mag bekijken. Een ontbrekende taal bij één programma is iets anders dan ondertiteling die nergens in de app werkt. Vermeld bij een vraag aan Opplex IPTV het programma, apparaatmodel, de spelerversie en de zichtbare taallijst. Vraag eerst of de gewenste track bestaat voordat je een andere app of een ander abonnement probeert."
+          ],
+          "items": [
+            "Verberg accountnamen en privélinks van de dienst in schermafbeeldingen."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Legendas IPTV: verifique a faixa antes de alterar o televisor",
+      "excerpt": "A falta de texto no ecrã nem sempre tem origem no idioma do televisor. Verifique separadamente o programa, as legendas e o áudio antes de mudar a configuração.",
+      "seo_title": "Legendas IPTV: faixa de texto, áudio e idioma dos menus",
+      "seo_description": "Verifique as legendas IPTV sem as confundir com o áudio ou o idioma dos menus. Consulte as faixas disponíveis e reúna detalhes úteis para pedir apoio.",
+      "sections": [
+        {
+          "heading": "Comece dentro do programa",
+          "paragraphs": [
+            "O televisor pode apresentar menus em português enquanto um vídeo oferece áudio em inglês ou nenhuma faixa de texto. As legendas IPTV dependem do programa e do leitor. Comece durante a reprodução, antes de alterar todas as definições de idioma da TV. Abra os controlos e procure Legendas, Captions ou CC. Os nomes variam: anote as opções que realmente aparecem."
+          ],
+          "items": [
+            "Mantenha notas separadas sobre o idioma do áudio, do texto e da interface."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Mude uma opção e observe",
+          "paragraphs": [
+            "Escolha um idioma de legendas apresentado, mantenha o áudio e veja um pequeno trecho com diálogo. Depois desligue o texto uma vez para perceber a diferença. Se as palavras continuarem visíveis, podem fazer parte da imagem; a Google indica que algumas legendas são permanentes. Alterar o idioma dos menus não demonstra que exista outra faixa de texto."
+          ],
+          "items": [
+            "Não presuma que todos os programas têm as mesmas opções de legendas."
+          ],
+          "links": [
+            {
+              "label": "Google TV: orientação oficial sobre áudio e legendas",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Explique claramente o que falta",
+          "paragraphs": [
+            "Experimente outro conteúdo a que tenha direito de acesso, no mesmo leitor. Uma língua ausente num programa é diferente de legendas que falham em toda a aplicação. Num pedido à Opplex IPTV, indique o programa, o modelo do aparelho, a versão do leitor e os idiomas visíveis. Pergunte se esse conteúdo fornece a faixa pretendida antes de experimentar outra aplicação ou plano."
+          ],
+          "items": [
+            "Oculte nomes de contas e ligações privadas do serviço nas capturas de ecrã."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Субтитры IPTV: сначала проверьте дорожку, затем настройки телевизора",
+      "excerpt": "Если на экране нет текста, причина не обязательно в языке телевизора. Проверьте программу, субтитры и звук по отдельности, прежде чем менять настройки.",
+      "seo_title": "Субтитры IPTV: текстовая дорожка, звук и язык меню",
+      "seo_description": "Проверьте субтитры IPTV, не путая их с языком звука и меню телевизора. Посмотрите доступные дорожки и соберите конкретные сведения для поддержки.",
+      "sections": [
+        {
+          "heading": "Начните с воспроизводимой программы",
+          "paragraphs": [
+            "Меню телевизора может быть на русском, а видео — с английским звуком или вообще без текстовой дорожки. Субтитры IPTV зависят от конкретной программы и плеера. Поэтому начните проверку во время просмотра, а не с изменения всех языковых настроек. Откройте элементы управления и найдите Субтитры, Captions или CC. Названия различаются: запишите именно те варианты, которые отображаются у вас."
+          ],
+          "items": [
+            "Отдельно отметьте язык звука, текста и интерфейса."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Измените один параметр и посмотрите результат",
+          "paragraphs": [
+            "Выберите предложенный язык субтитров, оставьте звук прежним и посмотрите короткий фрагмент с диалогом. Затем один раз отключите текст, чтобы увидеть разницу. Если слова остаются, они могут быть частью изображения: Google отмечает, что некоторые субтитры встроены постоянно. Смена языка меню не доказывает, что существует другая текстовая дорожка."
+          ],
+          "items": [
+            "Не ожидайте одинакового набора субтитров у всех программ."
+          ],
+          "links": [
+            {
+              "label": "Google TV: официальная справка о звуке и субтитрах",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Точно опишите, чего не хватает",
+          "paragraphs": [
+            "В том же плеере попробуйте другую программу, к которой у вас есть доступ. Отсутствие языка в одном видео отличается от неработающих субтитров во всём приложении. Для обращения в Opplex IPTV укажите программу, модель устройства, версию плеера и список видимых языков. Прежде чем менять приложение или тариф, спросите, предусмотрена ли нужная дорожка в этом материале."
+          ],
+          "items": [
+            "На снимках экрана скрывайте названия аккаунтов и приватные ссылки сервиса."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV سب ٹائٹلز: ٹی وی کی سیٹنگ بدلنے سے پہلے متن کی ٹریک دیکھیں",
+      "excerpt": "اسکرین پر متن نہ آنے کا مطلب ہمیشہ یہ نہیں کہ ٹی وی کی زبان غلط ہے۔ پروگرام، سب ٹائٹلز اور آواز کو الگ الگ دیکھ کر ہی سیٹنگ بدلیں۔",
+      "seo_title": "IPTV سب ٹائٹلز، آواز اور ٹی وی مینو کی زبان",
+      "seo_description": "IPTV سب ٹائٹلز کو آواز یا ٹی وی مینو کی زبان کے ساتھ نہ ملائیں۔ موجود ٹریک دیکھیں اور مدد مانگنے کے لیے ضروری تفصیل جمع کریں۔",
+      "sections": [
+        {
+          "heading": "پہلے چلتے ہوئے پروگرام میں دیکھیں",
+          "paragraphs": [
+            "ٹی وی کے مینو اردو میں ہو سکتے ہیں جبکہ ویڈیو میں انگریزی آواز ہو یا متن کی کوئی ٹریک موجود ہی نہ ہو۔ IPTV سب ٹائٹلز کا تعلق مخصوص پروگرام اور پلیئر سے ہوتا ہے۔ اس لیے ٹی وی کی تمام زبانوں والی سیٹنگ بدلنے کے بجائے ویڈیو چلتے وقت جانچ شروع کریں۔ پلیئر کے کنٹرول کھولیں اور Subtitles، Captions یا CC تلاش کریں۔ نام مختلف ہو سکتے ہیں؛ وہی انتخاب لکھیں جو واقعی نظر آ رہے ہیں۔"
+          ],
+          "items": [
+            "آواز، متن اور مینو کی زبان کو تین الگ نوٹس میں رکھیں۔"
+          ],
+          "links": []
+        },
+        {
+          "heading": "ایک انتخاب بدلیں اور فرق دیکھیں",
+          "paragraphs": [
+            "فہرست میں موجود سب ٹائٹلز کی زبان منتخب کریں، آواز کو ویسا ہی رہنے دیں اور گفتگو والا مختصر حصہ دیکھیں۔ پھر متن ایک بار بند کر کے معلوم کریں کہ کیا بدلا۔ اگر الفاظ پھر بھی دکھائی دیں تو وہ تصویر کا حصہ ہو سکتے ہیں؛ Google کے مطابق بعض ویڈیوز کے سب ٹائٹلز مستقل ہوتے ہیں۔ مینو کی زبان بدلنے سے دوسری متنی ٹریک کی موجودگی ثابت نہیں ہوتی۔"
+          ],
+          "items": [
+            "یہ فرض نہ کریں کہ ہر پروگرام میں سب ٹائٹلز کے ایک جیسے انتخاب ہوں گے۔"
+          ],
+          "links": [
+            {
+              "label": "Google TV: آواز اور سب ٹائٹلز کی سرکاری رہنمائی",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "واضح بتائیں کہ کون سی چیز غائب ہے",
+          "paragraphs": [
+            "اسی پلیئر میں ایسا دوسرا مواد چلائیں جسے دیکھنے کا حق آپ رکھتے ہیں۔ ایک پروگرام میں زبان نہ ہونا پوری ایپ میں سب ٹائٹلز نہ چلنے سے مختلف بات ہے۔ Opplex IPTV سے مدد مانگتے وقت پروگرام کا نام، ڈیوائس ماڈل، پلیئر ورژن اور نظر آنے والی زبانیں بتائیں۔ ایپ یا پلان بدلنے سے پہلے پوچھیں کہ کیا اسی پروگرام میں مطلوبہ ٹریک دستیاب ہے۔"
+          ],
+          "items": [
+            "اسکرین شاٹ میں اکاؤنٹ کے نام اور سروس کے نجی لنکس چھپا دیں۔"
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ترجمة IPTV: افحص مسار النص قبل تغيير إعدادات التلفاز",
+      "excerpt": "غياب النص عن الشاشة لا يعني دائماً أن لغة التلفاز خاطئة. افحص البرنامج والترجمة والصوت كلّاً على حدة قبل تغيير إعدادات المشاهدة.",
+      "seo_title": "ترجمة IPTV: مسار النص والصوت ولغة القوائم",
+      "seo_description": "افحص ترجمة IPTV دون الخلط بينها وبين لغة الصوت أو قوائم التلفاز. راجع المسارات المتاحة واجمع تفاصيل واضحة قبل طلب مساعدة الدعم.",
+      "sections": [
+        {
+          "heading": "ابدأ من داخل البرنامج",
+          "paragraphs": [
+            "قد يعرض التلفاز قوائمه بالعربية بينما يقدم الفيديو صوتاً إنجليزياً أو لا يتضمن مساراً نصياً أصلاً. تعتمد ترجمة IPTV على البرنامج المحدد والمشغل المستخدم. لذلك ابدأ الفحص أثناء التشغيل بدلاً من تغيير جميع إعدادات اللغة في التلفاز. افتح أدوات التحكم وابحث عن الترجمة أو Captions أو CC. تختلف أسماء القوائم، لذا دوّن الخيارات التي تظهر فعلاً على جهازك."
+          ],
+          "items": [
+            "دوّن لغة الصوت والنص والواجهة في ثلاث ملاحظات منفصلة."
+          ],
+          "links": []
+        },
+        {
+          "heading": "غيّر خياراً واحداً وراقب النتيجة",
+          "paragraphs": [
+            "اختر لغة ترجمة موجودة في القائمة، واترك الصوت كما هو، ثم شاهد مقطعاً قصيراً فيه حوار. أوقف النص مرة واحدة لتعرف ما الذي تغيّر. إذا ظلت الكلمات ظاهرة فقد تكون جزءاً من الصورة؛ توضح Google أن بعض الترجمات ثابتة داخل الفيديو. تغيير لغة القوائم لا يثبت وجود مسار نصي إضافي في البرنامج."
+          ],
+          "items": [
+            "لا تفترض أن جميع البرامج تقدم خيارات الترجمة نفسها."
+          ],
+          "links": [
+            {
+              "label": "Google TV: الإرشادات الرسمية للصوت والترجمة",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "اشرح بدقة ما هو مفقود",
+          "paragraphs": [
+            "جرّب محتوى آخر يحق لك الوصول إليه باستخدام المشغل نفسه. غياب لغة في برنامج واحد يختلف عن تعطل الترجمة في التطبيق كله. عند سؤال Opplex IPTV، اذكر اسم البرنامج وطراز الجهاز وإصدار المشغل وقائمة اللغات الظاهرة. اسأل إن كان ذلك المحتوى يوفر المسار المطلوب قبل تجربة تطبيق آخر أو خطة أخرى."
+          ],
+          "items": [
+            "أخفِ أسماء الحسابات وروابط الخدمة الخاصة في لقطات الشاشة."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV सबटाइटल: टीवी की भाषा बदलने से पहले टेक्स्ट ट्रैक जाँचें",
+      "excerpt": "स्क्रीन पर टेक्स्ट न दिखने का मतलब हमेशा टीवी की भाषा गलत होना नहीं है। सेटिंग बदलने से पहले कार्यक्रम, सबटाइटल और ऑडियो अलग-अलग जाँचें।",
+      "seo_title": "IPTV सबटाइटल: टेक्स्ट ट्रैक, ऑडियो और टीवी की भाषा",
+      "seo_description": "IPTV सबटाइटल को ऑडियो या टीवी के मेन्यू की भाषा से अलग समझें। उपलब्ध ट्रैक देखें और सहायता के लिए स्पष्ट जानकारी तैयार करें।",
+      "sections": [
+        {
+          "heading": "चलते हुए कार्यक्रम से शुरुआत करें",
+          "paragraphs": [
+            "टीवी के मेन्यू हिंदी में हो सकते हैं, जबकि किसी वीडियो में अंग्रेज़ी ऑडियो हो या टेक्स्ट ट्रैक हो ही नहीं। IPTV सबटाइटल उस कार्यक्रम और प्लेयर पर निर्भर करते हैं। इसलिए टीवी की सारी भाषा सेटिंग बदलने के बजाय वीडियो चलते समय जाँच शुरू करें। प्लेयर के कंट्रोल खोलकर Subtitles, Captions या CC देखें। मेन्यू के नाम अलग हो सकते हैं; वास्तव में दिखने वाले विकल्प लिख लें।"
+          ],
+          "items": [
+            "ऑडियो, टेक्स्ट और इंटरफ़ेस की भाषा के लिए तीन अलग नोट रखें।"
+          ],
+          "links": []
+        },
+        {
+          "heading": "एक विकल्प बदलें और परिणाम देखें",
+          "paragraphs": [
+            "सूची में मौजूद सबटाइटल की भाषा चुनें, ऑडियो को वैसा ही रहने दें और बातचीत वाला छोटा हिस्सा देखें। फिर टेक्स्ट एक बार बंद करके पहचानें कि क्या बदला। अगर शब्द फिर भी दिखते हैं तो वे तस्वीर में शामिल हो सकते हैं; Google बताता है कि कुछ वीडियो में स्थायी सबटाइटल होते हैं। मेन्यू की भाषा बदलने से दूसरा टेक्स्ट ट्रैक उपलब्ध होना साबित नहीं होता।"
+          ],
+          "items": [
+            "हर कार्यक्रम में सबटाइटल के एक जैसे विकल्प होने की उम्मीद न रखें।"
+          ],
+          "links": [
+            {
+              "label": "Google TV: ऑडियो और सबटाइटल की आधिकारिक गाइड",
+              "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "साफ बताएं कि क्या गायब है",
+          "paragraphs": [
+            "उसी प्लेयर में ऐसा दूसरा कंटेंट चलाएँ जिसे देखने का अधिकार आपके पास है। एक कार्यक्रम में भाषा गायब होना पूरी ऐप में सबटाइटल न चलने से अलग बात है। Opplex IPTV से सहायता माँगते समय कार्यक्रम का नाम, डिवाइस मॉडल, प्लेयर वर्ज़न और दिखने वाली भाषाएँ बताएं। ऐप या प्लान बदलने से पहले पूछें कि उस कार्यक्रम में मनचाहा ट्रैक मौजूद है या नहीं।"
+          ],
+          "items": [
+            "स्क्रीनशॉट में अकाउंट के नाम और सेवा के निजी लिंक छिपा दें।"
+          ],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV: video audio and subtitle options",
+      "url": "https://support.google.com/googletv/answer/12006789?hl=en-GB"
+    }
+  ]
+}

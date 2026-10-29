@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-10-29",
+  "topic": "Bluetooth audio during IPTV playback: compare speakers and headphones before changing service",
+  "primary_keyword": "IPTV Bluetooth audio",
+  "slug": "getiptv-bluetooth-audio-compare-speakers-and-headphones",
+  "translations": {
+    "en": {
+      "title": "IPTV Bluetooth audio: compare outputs before changing your plan",
+      "excerpt": "Late voices through headphones deserve a useful comparison. Keep the player and video unchanged while checking speakers, pairing and the accessory itself.",
+      "seo_title": "IPTV Bluetooth audio: compare outputs before changing your plan",
+      "seo_description": "Check IPTV Bluetooth audio with a simple speaker comparison, deliberate reconnection and useful device notes before assuming the subscription is responsible.",
+      "sections": [
+        {
+          "heading": "Use the same scene for both outputs",
+          "paragraphs": [
+            "If IPTV Bluetooth audio seems behind the picture, begin with a short, lawful video containing clear speech. On your Get IPTV viewing device, compare its TV speakers with the paired headphones while keeping the player and video position the same. Notice whether the issue is late speech, brief dropouts or simply low volume; those are different observations. This comparison narrows the question but cannot prove which part of the setup is responsible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reconnect the accessory deliberately",
+          "paragraphs": [
+            "On Google TV, previously paired accessories appear in Settings under Remote and Accessories; select the intended device and Connect when needed. Google recommends turning a troublesome Bluetooth accessory off and on, disconnecting unused paired devices and checking the accessory with another device. Follow the instructions for your actual TV or streaming box, because menu names vary. Make one change and repeat the same scene. A successful connection alone does not confirm that picture and speech are synchronized."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Give support an observation they can use",
+          "paragraphs": [
+            "If the difference remains, record the TV or box model, player version, headphone model and which output was affected. Check the accessory manufacturer’s software guidance before installing anything. Describe the result plainly: the same scene was aligned on TV speakers but late through headphones, or both outputs behaved alike. Avoid changing an unfamiliar audio offset and several other settings together. Keep account details private; no comparison promises a fix or makes a different subscription necessary."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Audio Bluetooth en IPTV: compara salidas antes de cambiar de plan",
+      "excerpt": "Si las voces llegan tarde por los auriculares, haz una comparación útil. Mantén el reproductor y el vídeo iguales mientras revisas altavoces y conexión.",
+      "seo_title": "Audio Bluetooth en IPTV: compara salidas antes de cambiar de plan",
+      "seo_description": "Comprueba el audio Bluetooth de IPTV comparando altavoces, reconectando el accesorio y anotando resultados antes de atribuir el problema a la suscripción.",
+      "sections": [
+        {
+          "heading": "Usa la misma escena con ambas salidas",
+          "paragraphs": [
+            "Si el audio Bluetooth de IPTV parece ir detrás de la imagen, empieza con un vídeo corto y autorizado que tenga diálogo claro. En el dispositivo donde utilizas Get IPTV, compara los altavoces del televisor con los auriculares enlazados, manteniendo el reproductor y el punto del vídeo. Distingue entre voz retrasada, cortes breves y volumen bajo: son observaciones diferentes. La comparación acota la pregunta, pero no demuestra qué parte del equipo es responsable."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reconecta el accesorio de forma consciente",
+          "paragraphs": [
+            "En Google TV, los accesorios ya enlazados aparecen en Ajustes, dentro de Mandos y accesorios; selecciona el dispositivo correcto y Conectar cuando sea necesario. Google aconseja apagar y encender el accesorio que falla, desconectar dispositivos enlazados que no uses y probar el accesorio con otro equipo. Sigue la guía de tu televisor o dispositivo concreto, porque los nombres cambian. Haz una modificación y repite la misma escena. Conectarse correctamente no demuestra que imagen y voz estén sincronizadas."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Envía una observación útil al soporte",
+          "paragraphs": [
+            "Si continúa la diferencia, anota el modelo del televisor o dispositivo, la versión del reproductor, el modelo de auriculares y la salida afectada. Consulta las instrucciones de software del fabricante antes de instalar nada. Explica si la misma escena estaba sincronizada por los altavoces y retrasada por los auriculares, o si ambas salidas fallaban igual. Evita cambiar un ajuste de desfase desconocido junto con otras opciones. Mantén privados tus datos de acceso; esta prueba no promete una solución ni obliga a contratar otro plan."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Audio Bluetooth en IPTV : comparer les sorties avant de changer d’offre",
+      "excerpt": "Des voix décalées dans un casque méritent une comparaison précise. Gardez le même lecteur et la même vidéo pendant les vérifications de connexion.",
+      "seo_title": "Audio Bluetooth en IPTV : comparer les sorties avant de changer d’offre",
+      "seo_description": "Vérifiez l’audio Bluetooth en IPTV avec une comparaison des haut-parleurs, une reconnexion du casque et des notes utiles avant d’accuser l’abonnement.",
+      "sections": [
+        {
+          "heading": "Comparer la même scène sur deux sorties",
+          "paragraphs": [
+            "Si l’audio Bluetooth en IPTV semble arriver après l’image, choisissez une courte vidéo autorisée contenant une voix nette. Sur l’appareil utilisé pour Get IPTV, comparez les haut-parleurs du téléviseur au casque associé, sans changer de lecteur ni de passage vidéo. Distinguez les paroles en retard, les coupures brèves et un volume simplement faible : ce sont des observations différentes. Cette comparaison précise la question, mais ne prouve pas quel élément est responsable."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reconnecter volontairement le bon accessoire",
+          "paragraphs": [
+            "Sur Google TV, les accessoires déjà associés se trouvent dans Paramètres, puis Télécommandes et accessoires ; sélectionnez l’appareil voulu et Connecter si nécessaire. Google conseille d’éteindre puis de rallumer un accessoire problématique, de déconnecter les appareils associés inutilisés et de l’essayer avec un autre équipement. Suivez la notice de votre téléviseur ou boîtier, car les menus varient. Modifiez une seule chose et rejouez la même scène. Une connexion réussie ne confirme pas à elle seule la synchronisation des voix et de l’image."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Donner une observation exploitable au support",
+          "paragraphs": [
+            "Si le décalage persiste, relevez le modèle du téléviseur ou boîtier, la version du lecteur, le modèle du casque et la sortie concernée. Consultez les consignes logicielles du fabricant avant toute installation. Expliquez si la scène était synchronisée sur les haut-parleurs et décalée au casque, ou si les deux sorties réagissaient pareil. Ne modifiez pas simultanément un décalage audio mal compris et plusieurs autres réglages. Gardez vos accès privés : cette comparaison ne promet pas de correction et n’impose pas un nouvel abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Audio Bluetooth IPTV: confronta le uscite prima di cambiare piano",
+      "excerpt": "Le voci in ritardo nelle cuffie richiedono un confronto chiaro. Mantieni uguali lettore e video mentre controlli altoparlanti e collegamento dell’accessorio.",
+      "seo_title": "Audio Bluetooth IPTV: confronta le uscite prima di cambiare piano",
+      "seo_description": "Controlla l’audio Bluetooth IPTV confrontando gli altoparlanti, ricollegando le cuffie e annotando i risultati prima di attribuire il problema all’abbonamento.",
+      "sections": [
+        {
+          "heading": "Usa la stessa scena con entrambe le uscite",
+          "paragraphs": [
+            "Se l’audio Bluetooth IPTV sembra arrivare dopo l’immagine, scegli un breve video autorizzato con un dialogo chiaro. Sul dispositivo usato per Get IPTV, confronta gli altoparlanti del televisore con le cuffie associate mantenendo lo stesso lettore e punto del video. Distingui una voce in ritardo da brevi interruzioni o volume semplicemente basso: sono osservazioni diverse. Il confronto restringe la domanda, ma non dimostra quale parte della configurazione sia responsabile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ricollega consapevolmente l’accessorio",
+          "paragraphs": [
+            "Su Google TV gli accessori già associati compaiono in Impostazioni, nella sezione Telecomandi e accessori; scegli quello corretto e Connetti quando serve. Google suggerisce di spegnere e riaccendere l’accessorio problematico, scollegare quelli associati ma inutilizzati e provare l’accessorio con un altro dispositivo. Segui la guida del tuo televisore o box perché i nomi dei menu variano. Cambia una sola cosa e ripeti la scena. Un collegamento riuscito non conferma da solo che immagine e parlato siano sincronizzati."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Fornisci all’assistenza un risultato concreto",
+          "paragraphs": [
+            "Se la differenza rimane, annota modello del televisore o box, versione del lettore, modello delle cuffie e uscita interessata. Controlla le indicazioni software del produttore prima di installare qualcosa. Spiega se la stessa scena era allineata con gli altoparlanti ma in ritardo nelle cuffie, oppure se entrambe le uscite si comportavano allo stesso modo. Evita di cambiare insieme un ritardo audio poco chiaro e altre impostazioni. Proteggi i dati di accesso: il confronto non promette una soluzione e non rende necessario un altro abbonamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Bluetooth-audio bij IPTV: vergelijk de uitgangen vóór een ander plan",
+      "excerpt": "Komen stemmen te laat door je hoofdtelefoon, maak dan een duidelijke vergelijking. Houd speler en video gelijk wanneer je de verbinding controleert.",
+      "seo_title": "Bluetooth-audio bij IPTV: vergelijk de uitgangen vóór een ander plan",
+      "seo_description": "Controleer Bluetooth-audio bij IPTV met een vergelijking van luidsprekers, opnieuw verbinden en bruikbare apparaatnotities voordat je het abonnement verdenkt.",
+      "sections": [
+        {
+          "heading": "Gebruik voor beide uitgangen dezelfde scène",
+          "paragraphs": [
+            "Lijkt Bluetooth-audio bij IPTV achter te lopen op het beeld, kies dan een korte, toegestane video met duidelijke spraak. Vergelijk op je Get IPTV-apparaat de tv-luidsprekers met de gekoppelde hoofdtelefoon, terwijl je dezelfde speler en hetzelfde videomoment gebruikt. Let op het verschil tussen late stemmen, korte onderbrekingen en alleen een laag volume. Dat zijn verschillende waarnemingen. De vergelijking maakt de vraag gerichter, maar bewijst niet welk onderdeel verantwoordelijk is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verbind het accessoire bewust opnieuw",
+          "paragraphs": [
+            "Op Google TV staan eerder gekoppelde accessoires onder Instellingen, Afstandsbedieningen en accessoires. Kies het bedoelde apparaat en zo nodig Verbinden. Google adviseert een problematisch Bluetooth-accessoire uit en aan te zetten, ongebruikte gekoppelde apparaten te ontkoppelen en het accessoire met een ander apparaat te proberen. Gebruik de handleiding van jouw tv of kastje, want menunamen verschillen. Verander één ding en speel dezelfde scène opnieuw af. Een geslaagde verbinding bewijst nog geen gelijklopende spraak en beelden."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Geef ondersteuning een concrete waarneming",
+          "paragraphs": [
+            "Blijft het verschil bestaan, noteer dan het model van tv of kastje, de spelerversie, het hoofdtelefoonmodel en de getroffen uitgang. Controleer software-instructies van de fabrikant voordat je iets installeert. Beschrijf of dezelfde scène via tv-luidsprekers gelijkliep maar via de hoofdtelefoon vertraagd was, of dat beide uitgangen hetzelfde deden. Verander geen onbekende audiovertraging tegelijk met allerlei andere instellingen. Houd je toegangsgegevens privé: deze vergelijking garandeert geen oplossing en maakt een ander abonnement niet noodzakelijk."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Áudio Bluetooth em IPTV: compare saídas antes de mudar de plano",
+      "excerpt": "Se as vozes chegam atrasadas aos auscultadores, faça uma comparação útil. Mantenha o leitor e o vídeo iguais enquanto verifica a ligação do acessório.",
+      "seo_title": "Áudio Bluetooth em IPTV: compare saídas antes de mudar de plano",
+      "seo_description": "Verifique o áudio Bluetooth em IPTV comparando altifalantes, voltando a ligar o acessório e anotando resultados antes de responsabilizar a subscrição.",
+      "sections": [
+        {
+          "heading": "Use a mesma cena nas duas saídas",
+          "paragraphs": [
+            "Se o áudio Bluetooth em IPTV parece chegar depois da imagem, escolha um vídeo curto e autorizado com fala clara. No dispositivo utilizado para Get IPTV, compare os altifalantes do televisor com os auscultadores emparelhados, mantendo o leitor e o momento do vídeo. Distinga fala atrasada, pequenas interrupções e volume simplesmente baixo: são observações diferentes. A comparação torna a pergunta mais precisa, mas não prova qual parte da configuração é responsável."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Volte a ligar o acessório de forma deliberada",
+          "paragraphs": [
+            "No Google TV, os acessórios já emparelhados aparecem em Definições, Comandos e acessórios; selecione o dispositivo pretendido e Ligar quando necessário. A Google recomenda desligar e voltar a ligar o acessório com problemas, desligar acessórios emparelhados sem utilização e testar o acessório noutro equipamento. Siga o guia do seu televisor ou dispositivo, porque os menus variam. Faça uma alteração e repita a mesma cena. Uma ligação bem-sucedida não confirma por si só a sincronização entre imagem e fala."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Dê ao apoio uma observação concreta",
+          "paragraphs": [
+            "Se a diferença continuar, anote o modelo do televisor ou dispositivo, a versão do leitor, o modelo dos auscultadores e a saída afetada. Consulte as instruções de software do fabricante antes de instalar algo. Explique se a cena estava sincronizada nos altifalantes e atrasada nos auscultadores, ou se ambas as saídas se comportavam de forma igual. Evite mudar um ajuste de atraso desconhecido ao mesmo tempo que outras definições. Proteja os seus dados de acesso: esta comparação não promete resolver o problema nem exige outra subscrição."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Bluetooth-звук IPTV: сравните выходы перед сменой тарифа",
+      "excerpt": "Если голос запаздывает в наушниках, начните с понятного сравнения. Не меняйте плеер и видеозапись, пока проверяете динамики и подключение аксессуара.",
+      "seo_title": "Bluetooth-звук IPTV: сравните выходы перед сменой тарифа",
+      "seo_description": "Проверьте Bluetooth-звук IPTV сравнением динамиков, повторным подключением наушников и записью результатов, прежде чем искать причину в подписке.",
+      "sections": [
+        {
+          "heading": "Сравнивайте один и тот же фрагмент",
+          "paragraphs": [
+            "Если Bluetooth-звук IPTV кажется запаздывающим относительно изображения, выберите короткую разрешённую видеозапись с чёткой речью. На устройстве для Get IPTV сравните динамики телевизора с подключёнными наушниками, сохранив плеер и место воспроизведения. Различайте задержку голоса, короткие обрывы и просто низкую громкость: это разные наблюдения. Такое сравнение уточняет вопрос, но не доказывает, какой компонент системы виноват."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Осознанно подключите нужный аксессуар",
+          "paragraphs": [
+            "На Google TV ранее сопряжённые аксессуары находятся в настройках, в разделе пультов и аксессуаров; выберите нужное устройство и при необходимости команду подключения. Google советует выключить и снова включить проблемный Bluetooth-аксессуар, отключить неиспользуемые сопряжённые устройства и проверить аксессуар с другим оборудованием. Следуйте инструкции именно своего телевизора или приставки: названия меню различаются. Меняйте один параметр и повторяйте тот же фрагмент. Само успешное подключение ещё не подтверждает синхронность речи и изображения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Передайте поддержке конкретное наблюдение",
+          "paragraphs": [
+            "Если различие сохраняется, запишите модель телевизора или приставки, версию плеера, модель наушников и затронутый выход. Перед установкой программ проверьте рекомендации производителя аксессуара. Объясните, совпадали ли звук и изображение через динамики, но расходились в наушниках, или обе системы вели себя одинаково. Не меняйте непонятную аудиозадержку одновременно с другими настройками. Не раскрывайте данные доступа: сравнение не гарантирует исправления и не делает другую подписку обязательной."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV کا Bluetooth آڈیو: پلان بدلنے سے پہلے آواز کے راستے جانچیں",
+      "excerpt": "ہیڈفون میں آواز دیر سے آئے تو ایک واضح موازنہ کریں۔ اسپیکر، پیئرنگ اور آلے کو جانچتے ہوئے پلیئر اور ویڈیو وہی رہنے دیں۔",
+      "seo_title": "IPTV کا Bluetooth آڈیو: پلان بدلنے سے پہلے آواز کے راستے جانچیں",
+      "seo_description": "IPTV کے Bluetooth آڈیو کو ٹی وی اسپیکر سے مقابلہ، آلہ دوبارہ جوڑ کر اور نتیجہ نوٹ کرکے جانچیں، پھر سبسکرپشن کے بارے میں فیصلہ کریں۔",
+      "sections": [
+        {
+          "heading": "دونوں جگہ ایک ہی منظر چلائیں",
+          "paragraphs": [
+            "اگر IPTV کا Bluetooth آڈیو تصویر سے پیچھے محسوس ہو تو واضح گفتگو والی کوئی مختصر اور جائز ویڈیو منتخب کریں۔ Get IPTV دیکھنے والے آلے پر ٹی وی اسپیکر اور جڑے ہوئے ہیڈفون کا مقابلہ کریں، مگر پلیئر اور ویڈیو کا مقام ایک ہی رکھیں۔ غور کریں کہ بات دیر سے سنائی دیتی ہے، آواز تھوڑی دیر کو بند ہوتی ہے یا صرف والیوم کم ہے؛ یہ الگ مشاہدے ہیں۔ اس مقابلے سے سوال واضح ہوتا ہے، لیکن خرابی کس حصے میں ہے یہ ثابت نہیں ہوتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "متعلقہ آلہ سوچ سمجھ کر دوبارہ جوڑیں",
+          "paragraphs": [
+            "Google TV میں پہلے سے پیئر کیے گئے آلات Settings کے Remote and Accessories حصے میں ملتے ہیں؛ صحیح آلہ چنیں اور ضرورت ہو تو Connect منتخب کریں۔ Google مسئلہ دینے والے Bluetooth آلے کو بند کرکے دوبارہ چلانے، غیر استعمال شدہ جڑے آلات منقطع کرنے اور متعلقہ آلے کو دوسرے ڈیوائس سے جانچنے کا مشورہ دیتا ہے۔ اپنے اصل ٹی وی یا باکس کی ہدایات دیکھیں کیونکہ مینو کے نام بدل سکتے ہیں۔ ایک تبدیلی کرکے وہی منظر دہرائیں۔ صرف کنکشن بن جانا تصویر اور گفتگو کے ساتھ چلنے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "سپورٹ کو قابل استعمال مشاہدہ دیں",
+          "paragraphs": [
+            "فرق باقی رہے تو ٹی وی یا باکس کا ماڈل، پلیئر ورژن، ہیڈفون ماڈل اور متاثر ہونے والا آڈیو راستہ نوٹ کریں۔ کچھ انسٹال کرنے سے پہلے بنانے والے کی سافٹ ویئر ہدایات دیکھیں۔ صاف بتائیں کہ وہی منظر ٹی وی اسپیکر پر درست تھا مگر ہیڈفون میں دیر تھی، یا دونوں جگہ ایک جیسا مسئلہ آیا۔ نامعلوم آڈیو ڈیلے اور کئی دوسری سیٹنگز اکٹھی نہ بدلیں۔ اکاؤنٹ کی معلومات نجی رکھیں؛ یہ موازنہ حل کی ضمانت نہیں اور نیا پلان لینا لازم نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "صوت IPTV عبر Bluetooth: قارن المخارج قبل تغيير الباقة",
+      "excerpt": "إذا تأخرت الأصوات في السماعات، ابدأ بمقارنة واضحة. أبقِ المشغّل والفيديو كما هما أثناء فحص مكبرات التلفاز واتصال الملحق.",
+      "seo_title": "صوت IPTV عبر Bluetooth: قارن المخارج قبل تغيير الباقة",
+      "seo_description": "افحص صوت IPTV عبر Bluetooth بمقارنة مكبرات التلفاز وإعادة توصيل الملحق وتسجيل النتيجة قبل افتراض أن الاشتراك مسؤول عن المشكلة.",
+      "sections": [
+        {
+          "heading": "استخدم المشهد نفسه مع المخرجين",
+          "paragraphs": [
+            "إذا بدا صوت IPTV عبر Bluetooth متأخرًا عن الصورة، اختر فيديو قصيرًا يحق لك مشاهدته وتكون فيه محادثة واضحة. على الجهاز المستخدم لمشاهدة Get IPTV، قارن مكبرات التلفاز بالسماعات المقترنة مع إبقاء المشغّل وموضع الفيديو ثابتين. ميّز بين تأخر الكلام والانقطاعات القصيرة وانخفاض مستوى الصوت فقط؛ فهذه ملاحظات مختلفة. تساعد المقارنة على تحديد السؤال، لكنها لا تثبت أي جزء من الإعداد مسؤول عن المشكلة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "أعد توصيل الملحق المقصود بتأنٍّ",
+          "paragraphs": [
+            "في Google TV تظهر الملحقات المقترنة سابقًا ضمن الإعدادات، في قسم أجهزة التحكّم والملحقات؛ اختر الجهاز الصحيح ثم الاتصال عند الحاجة. توصي Google بإيقاف ملحق Bluetooth الذي يواجه مشكلة وتشغيله مجددًا، وفصل الأجهزة المقترنة غير المستخدمة، وتجربة الملحق مع جهاز آخر. اتبع إرشادات التلفاز أو جهاز البث الذي تملكه، لأن أسماء القوائم تختلف. غيّر أمرًا واحدًا ثم أعد المشهد نفسه. نجاح الاتصال وحده لا يؤكد تزامن الكلام والصورة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قدّم للدعم ملاحظة يمكن الاستفادة منها",
+          "paragraphs": [
+            "إذا بقي الفرق، دوّن طراز التلفاز أو جهاز البث وإصدار المشغّل وطراز السماعات والمخرج المتأثر. راجع تعليمات الشركة المصنّعة بشأن البرامج قبل تثبيت أي شيء. وضّح هل كان المشهد متزامنًا عبر مكبرات التلفاز ومتأخرًا في السماعات، أم تصرّف المخرجان بالطريقة نفسها. تجنّب تغيير تأخير صوتي غير مفهوم مع عدة إعدادات أخرى دفعة واحدة. أبقِ بيانات الحساب خاصة؛ فهذه المقارنة لا تَعِد بإصلاح ولا تجعل شراء اشتراك مختلف ضروريًا."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Bluetooth ऑडियो: प्लान बदलने से पहले आउटपुट की तुलना करें",
+      "excerpt": "हेडफोन में आवाज देर से आए तो एक स्पष्ट तुलना करें। स्पीकर और कनेक्शन जांचते समय प्लेयर और वीडियो को एक जैसा रखें।",
+      "seo_title": "IPTV Bluetooth ऑडियो: प्लान बदलने से पहले आउटपुट की तुलना करें",
+      "seo_description": "IPTV Bluetooth ऑडियो में टीवी स्पीकर की तुलना, दोबारा कनेक्शन और उपयोगी डिवाइस नोट्स से जांच करें, फिर सब्सक्रिप्शन को कारण मानने पर विचार करें।",
+      "sections": [
+        {
+          "heading": "दोनों आउटपुट पर वही दृश्य चलाएं",
+          "paragraphs": [
+            "अगर IPTV का Bluetooth ऑडियो तस्वीर के बाद आता महसूस हो, तो साफ बातचीत वाला कोई छोटा और वैध वीडियो चुनें। Get IPTV देखने वाले डिवाइस पर टीवी स्पीकर और जुड़े हेडफोन की तुलना करें, लेकिन प्लेयर और वीडियो का स्थान वही रखें। पहचानें कि आवाज देर से आती है, बीच में थोड़ी देर रुकती है या केवल वॉल्यूम कम है; ये अलग-अलग बातें हैं। इस तुलना से सवाल स्पष्ट होता है, लेकिन इससे जिम्मेदार हिस्से का प्रमाण नहीं मिलता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सही एक्सेसरी को सोचकर दोबारा जोड़ें",
+          "paragraphs": [
+            "Google TV में पहले से जोड़ी गई एक्सेसरी Settings के Remote and Accessories भाग में मिलती हैं; सही डिवाइस चुनें और जरूरत पर Connect दबाएं। Google समस्या वाली Bluetooth एक्सेसरी बंद करके फिर चालू करने, इस्तेमाल न हो रहे जुड़े डिवाइस अलग करने और एक्सेसरी को दूसरे उपकरण पर जांचने की सलाह देता है। अपने असल टीवी या स्ट्रीमिंग बॉक्स की गाइड देखें, क्योंकि मेनू के नाम बदल सकते हैं। एक बदलाव करें और वही दृश्य दोहराएं। कनेक्शन बन जाना भर आवाज और तस्वीर के साथ चलने की पुष्टि नहीं करता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: connect Bluetooth devices",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सहायता को एक उपयोगी निरीक्षण दें",
+          "paragraphs": [
+            "अंतर बना रहे तो टीवी या बॉक्स का मॉडल, प्लेयर संस्करण, हेडफोन मॉडल और प्रभावित आउटपुट लिखें। कुछ इंस्टॉल करने से पहले एक्सेसरी निर्माता के सॉफ्टवेयर निर्देश देखें। साफ बताएं कि वही दृश्य टीवी स्पीकर पर सही था लेकिन हेडफोन में देर हुई, या दोनों आउटपुट एक जैसे थे। किसी अनजान ऑडियो डिले के साथ कई दूसरी सेटिंग एक साथ न बदलें। अकाउंट की जानकारी निजी रखें; इस तुलना से समाधान की गारंटी नहीं और नया सब्सक्रिप्शन लेना जरूरी नहीं होता।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: connect Bluetooth devices",
+      "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+    }
+  ]
+}

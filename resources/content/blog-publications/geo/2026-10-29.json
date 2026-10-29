@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-10-29",
+  "topic": "AirPlay video streaming versus screen mirroring: choose a useful IPTV check",
+  "primary_keyword": "IPTV AirPlay",
+  "slug": "geo-airplay-video-versus-screen-mirroring",
+  "translations": {
+    "en": {
+      "title": "IPTV AirPlay: choose between video and screen sharing",
+      "excerpt": "Before watching on a larger screen, decide whether you need video streaming or screen mirroring, then check the exact app and receiving device.",
+      "seo_title": "IPTV AirPlay: choose between video and screen sharing",
+      "seo_description": "Prepare an IPTV AirPlay check with the right receiver, a small permitted clip and a clear distinction between sending video and mirroring your screen.",
+      "sections": [
+        {
+          "heading": "Name the task before the device",
+          "paragraphs": [
+            "Wanting a programme on the television and wanting to show your phone screen are different jobs. For an IPTV AirPlay check, first write down the player name, phone or tablet model and exact receiving television. Check the player's own documentation for the feature you intend to use. A smart-TV label alone is not a compatibility promise, and a Geo plan does not change what an app can send."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Run one small, permitted check",
+          "paragraphs": [
+            "Apple distinguishes sending a video from mirroring a screen. Start with a short clip you own or are allowed to share. Confirm the intended receiver and the shared Wi-Fi network; then use the relevant AirPlay or mirroring control in Apple's guide for your device. Treat each result separately: a missing receiver, an app without the feature and an interrupted video are different observations. Do not change several settings at once."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: AirPlay on iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: sending video from iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Finish sharing, then describe the result",
+          "paragraphs": [
+            "Stop the sharing session deliberately before opening account screens or private messages. If you send a support question, say which method you tried and where it stopped. Avoid photographs that reveal credentials or private playlist addresses. Ask whether your exact player and receiver support the requested method; do not assume another subscription will add a missing device feature. Keep Apple's reference beside your notes so the next attempt has a clear starting point."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "AirPlay e IPTV: enviar vídeo o duplicar la pantalla",
+      "excerpt": "Antes de pasar a una pantalla grande, decide si quieres enviar un vídeo o duplicar el móvil y comprueba la aplicación y el receptor concretos.",
+      "seo_title": "AirPlay e IPTV: enviar vídeo o duplicar la pantalla",
+      "seo_description": "Prepara una prueba de AirPlay con IPTV: identifica el receptor, usa un vídeo permitido y distingue el envío de vídeo de la duplicación de pantalla.",
+      "sections": [
+        {
+          "heading": "Define lo que quieres mostrar",
+          "paragraphs": [
+            "Ver un programa en el televisor y mostrar la pantalla del móvil son tareas distintas. Para comprobar AirPlay con IPTV, anota primero el nombre del reproductor, el modelo del teléfono o tableta y el televisor receptor exacto. Consulta la documentación del reproductor sobre la función que necesitas. Que un televisor sea inteligente no confirma su compatibilidad, y un plan Geo no cambia lo que puede enviar una aplicación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Haz una prueba pequeña y permitida",
+          "paragraphs": [
+            "Apple diferencia el envío de vídeo de la duplicación de pantalla. Empieza con un clip breve propio o que tengas permiso para compartir. Comprueba el receptor elegido y la red wifi común; después sigue el control de AirPlay o duplicación indicado en la guía de Apple para tu dispositivo. Distingue los resultados: un receptor ausente, una aplicación sin esa función y un vídeo interrumpido son observaciones diferentes. No cambies varias opciones a la vez."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: AirPlay en el iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: enviar vídeo desde el iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Termina la sesión y explica el resultado",
+          "paragraphs": [
+            "Finaliza la sesión de compartir antes de abrir tu cuenta o mensajes privados. Si consultas al soporte, explica qué método probaste y en qué paso se detuvo. Evita fotos que muestren credenciales o direcciones privadas de listas. Pregunta si tu reproductor y receptor concretos admiten ese método; no supongas que otra suscripción añadirá una función al dispositivo. Conserva la referencia de Apple junto a las notas para que el siguiente intento tenga un punto de partida claro."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "AirPlay et IPTV : envoyer une vidéo ou recopier l’écran",
+      "excerpt": "Avant de passer au grand écran, choisissez entre l’envoi d’une vidéo et la recopie de l’écran, puis vérifiez l’application et le récepteur exacts.",
+      "seo_title": "AirPlay et IPTV : envoyer une vidéo ou recopier l’écran",
+      "seo_description": "Préparez un essai AirPlay avec votre IPTV : récepteur précis, courte vidéo autorisée et distinction claire entre vidéo et recopie de l’écran.",
+      "sections": [
+        {
+          "heading": "Définir ce que l’on veut afficher",
+          "paragraphs": [
+            "Regarder une émission sur le téléviseur et afficher l’écran du téléphone répondent à deux besoins différents. Pour vérifier AirPlay avec l’IPTV, notez le nom du lecteur, le modèle du téléphone ou de la tablette et la référence exacte du téléviseur récepteur. Consultez la documentation du lecteur pour la fonction souhaitée. La mention téléviseur connecté ne garantit pas cette compatibilité, et un forfait Geo ne change pas ce qu’une application peut transmettre."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Faire un petit essai autorisé",
+          "paragraphs": [
+            "Apple distingue l’envoi d’une vidéo de la recopie de l’écran. Commencez par une courte vidéo personnelle ou que vous êtes autorisé à partager. Vérifiez le récepteur choisi et le réseau Wi-Fi commun, puis utilisez la commande AirPlay ou de recopie indiquée dans le guide Apple de votre appareil. Séparez les observations : récepteur absent, fonction indisponible dans l’application et vidéo interrompue ne décrivent pas le même problème. Ne modifiez pas plusieurs réglages à la fois."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : AirPlay sur iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple : transmettre une vidéo depuis l’iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Arrêter le partage et décrire le résultat",
+          "paragraphs": [
+            "Arrêtez volontairement le partage avant d’ouvrir votre compte ou des messages privés. Pour contacter l’assistance, indiquez la méthode essayée et l’étape où elle s’est arrêtée. Évitez les photos montrant des identifiants ou des adresses privées de listes. Demandez si votre lecteur et votre récepteur précis prennent en charge cette méthode ; une autre souscription n’ajoute pas forcément une fonction à l’appareil. Gardez la référence Apple avec vos notes pour préparer le prochain essai."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "AirPlay e IPTV: inviare video o duplicare lo schermo",
+      "excerpt": "Prima di passare al televisore, scegli tra invio del video e duplicazione dello schermo, poi verifica l’app e il ricevitore precisi.",
+      "seo_title": "AirPlay e IPTV: inviare video o duplicare lo schermo",
+      "seo_description": "Prepara una prova IPTV con AirPlay: controlla il ricevitore, usa un breve video consentito e distingui invio del video e duplicazione dello schermo.",
+      "sections": [
+        {
+          "heading": "Chiarisci cosa vuoi mostrare",
+          "paragraphs": [
+            "Guardare un programma sul televisore e mostrare lo schermo del telefono sono due esigenze diverse. Per una verifica IPTV con AirPlay, annota prima il nome del lettore, il modello del telefono o tablet e il televisore ricevente esatto. Consulta la documentazione del lettore sulla funzione che vuoi usare. La scritta smart TV da sola non conferma la compatibilità e un piano Geo non cambia ciò che un’app può trasmettere."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Esegui una piccola prova consentita",
+          "paragraphs": [
+            "Apple distingue l’invio di un video dalla duplicazione dello schermo. Inizia con un breve filmato tuo o che puoi condividere. Verifica il ricevitore scelto e la rete Wi-Fi comune, poi usa il comando AirPlay o di duplicazione descritto nella guida Apple del dispositivo. Tieni separati i risultati: un ricevitore assente, un’app priva della funzione e un video interrotto sono osservazioni diverse. Evita di cambiare più impostazioni insieme."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: AirPlay su iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: inviare video da iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Interrompi la condivisione e descrivi il risultato",
+          "paragraphs": [
+            "Termina volontariamente la condivisione prima di aprire schermate dell’account o messaggi privati. Se chiedi assistenza, indica il metodo provato e il passaggio in cui si è fermato. Evita foto con credenziali o indirizzi privati delle playlist. Chiedi se il lettore e il ricevitore precisi supportano quel metodo; non presumere che un altro abbonamento aggiunga una funzione al dispositivo. Conserva il riferimento Apple accanto agli appunti per dare al prossimo tentativo una base chiara."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "AirPlay en IPTV: video versturen of je scherm delen",
+      "excerpt": "Bepaal voor het kijken op een groter scherm of je een video wilt versturen of je scherm wilt spiegelen. Controleer daarna de app en ontvanger.",
+      "seo_title": "AirPlay en IPTV: video versturen of je scherm delen",
+      "seo_description": "Bereid een IPTV-proef met AirPlay voor: controleer de ontvanger, gebruik een toegestaan kort filmpje en onderscheid video versturen van schermspiegeling.",
+      "sections": [
+        {
+          "heading": "Bepaal eerst wat je wilt laten zien",
+          "paragraphs": [
+            "Een programma op de televisie bekijken is iets anders dan het scherm van je telefoon laten zien. Noteer voor een IPTV-proef met AirPlay de spelernaam, het model van telefoon of tablet en het precieze ontvangende televisiemodel. Lees in de documentatie van de speler welke functie beschikbaar is. Alleen het etiket smart-tv bevestigt geen compatibiliteit en een Geo-abonnement verandert niet wat een app kan versturen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Doe één kleine, toegestane proef",
+          "paragraphs": [
+            "Apple maakt onderscheid tussen een video versturen en het scherm spiegelen. Begin met een kort eigen filmpje of een filmpje dat je mag delen. Controleer de gekozen ontvanger en het gedeelde wifi-netwerk. Gebruik vervolgens de AirPlay- of spiegelbediening uit Apples handleiding voor jouw apparaat. Houd de resultaten uit elkaar: een ontbrekende ontvanger, een app zonder die functie en een onderbroken video zijn verschillende waarnemingen. Verander niet meerdere instellingen tegelijk."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: AirPlay op de iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: video versturen vanaf de iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Stop het delen en beschrijf het resultaat",
+          "paragraphs": [
+            "Beëindig het delen bewust voordat je accountschermen of privéberichten opent. Vermeld bij een ondersteuningsvraag welke methode je probeerde en bij welke stap het stopte. Deel geen foto’s waarop inloggegevens of privé-adressen van afspeellijsten staan. Vraag of jouw exacte speler en ontvanger de gewenste methode ondersteunen; ga er niet van uit dat een ander abonnement een ontbrekende apparaatfunctie toevoegt. Bewaar de Apple-handleiding bij je notities, zodat een volgende poging een duidelijk begin heeft."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "AirPlay e IPTV: transmitir vídeo ou espelhar o ecrã",
+      "excerpt": "Antes de usar um ecrã maior, escolha entre transmitir um vídeo e espelhar o telefone. Depois confirme a aplicação e o recetor específicos.",
+      "seo_title": "AirPlay e IPTV: transmitir vídeo ou espelhar o ecrã",
+      "seo_description": "Prepare uma experiência IPTV com AirPlay: confirme o recetor, use um vídeo curto autorizado e distinga transmissão de vídeo de espelhamento do ecrã.",
+      "sections": [
+        {
+          "heading": "Defina primeiro o que quer mostrar",
+          "paragraphs": [
+            "Ver um programa no televisor e mostrar o ecrã do telefone são tarefas diferentes. Para verificar IPTV com AirPlay, anote primeiro o nome do leitor, o modelo do telefone ou tablet e o televisor recetor exato. Consulte a documentação do leitor sobre a função pretendida. A designação smart TV, por si só, não confirma compatibilidade, e um plano Geo não altera aquilo que uma aplicação consegue transmitir."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Faça uma pequena experiência autorizada",
+          "paragraphs": [
+            "A Apple distingue o envio de vídeo do espelhamento do ecrã. Comece com um pequeno vídeo seu ou que tenha autorização para partilhar. Confirme o recetor escolhido e a rede Wi-Fi comum; depois utilize o controlo AirPlay ou de espelhamento indicado no guia Apple do dispositivo. Separe os resultados: um recetor ausente, uma aplicação sem essa função e um vídeo interrompido são observações diferentes. Não altere várias definições em simultâneo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: AirPlay no iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: transmitir vídeo a partir do iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Termine a partilha e descreva o resultado",
+          "paragraphs": [
+            "Termine deliberadamente a partilha antes de abrir a conta ou mensagens privadas. Ao pedir apoio, indique o método usado e o passo em que parou. Evite fotografias com credenciais ou endereços privados de listas. Pergunte se o leitor e o recetor exatos suportam esse método; não presuma que outra subscrição acrescentará uma função ao aparelho. Guarde a referência da Apple junto das suas notas para que a próxima tentativa tenha um ponto de partida claro."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "AirPlay и IPTV: передача видео или повтор экрана",
+      "excerpt": "Перед просмотром на большом экране решите, нужна ли передача видео или повтор экрана, затем проверьте конкретное приложение и принимающее устройство.",
+      "seo_title": "AirPlay и IPTV: передача видео или повтор экрана",
+      "seo_description": "Подготовьте проверку IPTV через AirPlay: уточните модель приёмника, используйте разрешённый короткий ролик и отличайте передачу видео от повтора экрана.",
+      "sections": [
+        {
+          "heading": "Сначала определите задачу",
+          "paragraphs": [
+            "Просмотр программы на телевизоре и показ всего экрана телефона — разные задачи. Перед проверкой IPTV через AirPlay запишите название плеера, модель телефона или планшета и точную модель принимающего телевизора. Узнайте в документации плеера, есть ли нужная функция. Само обозначение смарт-ТВ не подтверждает совместимость, а тариф Geo не меняет возможности передачи конкретного приложения."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проведите одну небольшую разрешённую проверку",
+          "paragraphs": [
+            "Apple различает передачу отдельного видео и повтор экрана. Начните с короткого собственного ролика или видео, которым разрешено делиться. Проверьте выбранный приёмник и общую сеть Wi-Fi, затем используйте соответствующее управление AirPlay или повтором экрана из руководства Apple для вашего устройства. Разделяйте наблюдения: отсутствие приёмника, отсутствие функции в приложении и прерывание видео — разные ситуации. Не меняйте сразу несколько настроек."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: AirPlay на iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: передача видео с iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "Остановите передачу и опишите результат",
+          "paragraphs": [
+            "Намеренно завершите передачу, прежде чем открывать аккаунт или личные сообщения. Обращаясь в поддержку, укажите использованный способ и этап, на котором всё остановилось. Не отправляйте фотографии с учётными данными или приватными адресами плейлистов. Уточните поддержку нужного способа для вашего плеера и приёмника: другая подписка не обязательно добавит устройству отсутствующую функцию. Сохраните ссылку на руководство Apple рядом с заметками, чтобы следующая попытка начиналась с понятной исходной точки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "آئی پی ٹی وی کے ساتھ AirPlay: ویڈیو بھیجیں یا اسکرین دکھائیں",
+      "excerpt": "بڑی اسکرین پر دیکھنے سے پہلے طے کریں کہ ویڈیو بھیجنی ہے یا فون کی اسکرین دکھانی ہے، پھر اصل ایپ اور وصول کرنے والا آلہ چیک کریں۔",
+      "seo_title": "آئی پی ٹی وی کے ساتھ AirPlay: ویڈیو بھیجیں یا اسکرین دکھائیں",
+      "seo_description": "آئی پی ٹی وی اور AirPlay کی جانچ کے لیے درست ٹی وی، ایک مختصر مجاز ویڈیو اور ویڈیو بھیجنے اور اسکرین دکھانے کا فرق واضح رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے یہ طے کریں کہ دکھانا کیا ہے",
+          "paragraphs": [
+            "ٹی وی پر پروگرام دیکھنا اور فون کی پوری اسکرین دکھانا دو مختلف کام ہیں۔ آئی پی ٹی وی کے ساتھ AirPlay چیک کرنے سے پہلے پلیئر کا نام، فون یا ٹیبلٹ کا ماڈل اور وصول کرنے والے ٹی وی کا مکمل ماڈل لکھیں۔ جس سہولت کی ضرورت ہے اسے پلیئر کی اپنی ہدایات میں دیکھیں۔ صرف اسمارٹ ٹی وی لکھا ہونا مطابقت کی تصدیق نہیں، اور Geo کا پلان کسی ایپ کی بھیجنے کی صلاحیت تبدیل نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ایک مختصر اور مجاز جانچ کریں",
+          "paragraphs": [
+            "Apple ویڈیو بھیجنے اور اسکرین کی نقل دکھانے میں فرق کرتا ہے۔ اپنی بنائی ہوئی یا شیئر کرنے کی اجازت والی مختصر ویڈیو سے آغاز کریں۔ منتخب وصول کنندہ اور مشترک وائی فائی نیٹ ورک کی تصدیق کریں، پھر اپنے آلے کی Apple گائیڈ کے مطابق AirPlay یا اسکرین مررنگ کا متعلقہ کنٹرول استعمال کریں۔ وصول کنندہ نظر نہ آنا، ایپ میں سہولت نہ ہونا اور ویڈیو رک جانا الگ مشاہدے ہیں۔ کئی سیٹنگز ایک ساتھ نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: آئی فون پر AirPlay",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: آئی پیڈ سے ویڈیو بھیجنا",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "شیئرنگ بند کریں، پھر نتیجہ بتائیں",
+          "paragraphs": [
+            "اکاؤنٹ کی اسکرین یا ذاتی پیغامات کھولنے سے پہلے شیئرنگ خود بند کریں۔ مدد مانگتے وقت بتائیں کون سا طریقہ آزمایا اور کس مرحلے پر رکا۔ ایسی تصویر نہ بھیجیں جس میں لاگ ان کی معلومات یا نجی پلے لسٹ کا پتہ نظر آئے۔ پوچھیں کہ آپ کا مخصوص پلیئر اور وصول کنندہ یہ طریقہ سپورٹ کرتے ہیں یا نہیں؛ یہ نہ سمجھیں کہ دوسرا سبسکرپشن آلے میں غائب سہولت شامل کر دے گا۔ اگلی کوشش کے واضح آغاز کے لیے Apple کا حوالہ اپنے نوٹس کے پاس رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "‏AirPlay مع IPTV: إرسال الفيديو أم عكس الشاشة؟",
+      "excerpt": "قبل المشاهدة على شاشة أكبر، حدّد إن كنت تريد إرسال فيديو أو عكس شاشة الهاتف، ثم تحقّق من التطبيق وجهاز الاستقبال المحدّدين.",
+      "seo_title": "‏AirPlay مع IPTV: إرسال الفيديو أم عكس الشاشة؟",
+      "seo_description": "جهّز تجربة IPTV عبر AirPlay بجهاز استقبال مناسب ومقطع قصير مسموح بمشاركته، مع التمييز بين إرسال الفيديو وعكس شاشة الهاتف.",
+      "sections": [
+        {
+          "heading": "حدّد ما تريد عرضه أولاً",
+          "paragraphs": [
+            "مشاهدة برنامج على التلفاز وعرض شاشة الهاتف بالكامل مهمتان مختلفتان. قبل تجربة IPTV عبر AirPlay، دوّن اسم المشغّل وطراز الهاتف أو الجهاز اللوحي وطراز التلفاز المستقبل بدقة. راجع وثائق المشغّل لمعرفة الوظيفة التي تريد استخدامها. وصف التلفاز بأنه ذكي لا يؤكد التوافق وحده، كما أن باقة Geo لا تغيّر ما يستطيع التطبيق إرساله."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نفّذ تجربة صغيرة ومسموحاً بها",
+          "paragraphs": [
+            "تميّز Apple بين إرسال فيديو وعكس الشاشة. ابدأ بمقطع قصير تملكه أو تملك إذناً بمشاركته. تأكد من جهاز الاستقبال المقصود وشبكة Wi-Fi المشتركة، ثم استخدم زر AirPlay أو عكس الشاشة المناسب وفق دليل Apple لجهازك. افصل بين الملاحظات: غياب جهاز الاستقبال، وعدم دعم التطبيق للوظيفة، وتوقف الفيديو حالات مختلفة. لا تغيّر عدة إعدادات في الوقت نفسه."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: استخدام AirPlay على iPhone",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: إرسال الفيديو من iPad",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "أوقف المشاركة ثم صف النتيجة",
+          "paragraphs": [
+            "أنه المشاركة بنفسك قبل فتح صفحات الحساب أو الرسائل الخاصة. عند التواصل مع الدعم، اذكر الطريقة التي جرّبتها والخطوة التي توقفت عندها. تجنّب الصور التي تكشف بيانات الدخول أو عناوين قوائم التشغيل الخاصة. اسأل إن كان المشغّل وجهاز الاستقبال المحدّدان يدعمان الطريقة المطلوبة، ولا تفترض أن اشتراكاً آخر سيضيف ميزة غير موجودة في الجهاز. احتفظ بمرجع Apple مع ملاحظاتك لتبدأ المحاولة التالية من نقطة واضحة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV के साथ AirPlay: वीडियो भेजें या स्क्रीन दिखाएँ",
+      "excerpt": "बड़ी स्क्रीन पर देखने से पहले तय करें कि वीडियो भेजना है या फोन की स्क्रीन दिखानी है। फिर सही ऐप और रिसीवर मॉडल की जाँच करें।",
+      "seo_title": "IPTV के साथ AirPlay: वीडियो भेजें या स्क्रीन दिखाएँ",
+      "seo_description": "IPTV के लिए AirPlay की छोटी जाँच करें: सही रिसीवर चुनें, अनुमति वाला वीडियो लें और वीडियो भेजने व स्क्रीन मिरर करने का अंतर समझें।",
+      "sections": [
+        {
+          "heading": "पहले तय करें कि दिखाना क्या है",
+          "paragraphs": [
+            "टीवी पर कोई कार्यक्रम देखना और फोन की पूरी स्क्रीन दिखाना अलग काम हैं। IPTV के साथ AirPlay जाँचने से पहले प्लेयर का नाम, फोन या टैबलेट का मॉडल और वीडियो पाने वाले टीवी का सही मॉडल लिख लें। जिस सुविधा की जरूरत है, उसे प्लेयर के अपने दस्तावेज़ में देखें। केवल स्मार्ट टीवी लिखा होना अनुकूलता की पुष्टि नहीं है और Geo का प्लान किसी ऐप की भेजने की क्षमता नहीं बदलता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "एक छोटी और अनुमति वाली जाँच करें",
+          "paragraphs": [
+            "Apple वीडियो भेजने और स्क्रीन मिरर करने में अंतर बताता है। अपनी बनाई या साझा करने की अनुमति वाली छोटी क्लिप से शुरू करें। सही रिसीवर और साझा वाई-फाई नेटवर्क की पुष्टि करें, फिर अपने उपकरण की Apple गाइड के अनुसार संबंधित AirPlay या स्क्रीन मिररिंग नियंत्रण चुनें। रिसीवर न दिखना, ऐप में सुविधा न होना और वीडियो रुकना अलग नतीजे हैं। कई सेटिंग एक साथ न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: iPhone पर AirPlay",
+              "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+            },
+            {
+              "label": "Apple: iPad से वीडियो भेजना",
+              "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+            }
+          ]
+        },
+        {
+          "heading": "साझा करना रोकें, फिर नतीजा बताएँ",
+          "paragraphs": [
+            "अकाउंट की स्क्रीन या निजी संदेश खोलने से पहले साझा करना खुद बंद करें। सहायता माँगते समय बताएँ कि कौन सा तरीका आज़माया और किस चरण पर रुक गया। लॉगिन जानकारी या निजी प्लेलिस्ट का पता दिखाने वाली तस्वीरें न भेजें। पूछें कि आपका वही प्लेयर और रिसीवर इस तरीके को सपोर्ट करते हैं या नहीं; यह न मानें कि दूसरा सब्सक्रिप्शन उपकरण में गायब सुविधा जोड़ देगा। अगले प्रयास की साफ शुरुआत के लिए Apple का संदर्भ अपने नोट्स के साथ रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple iPhone AirPlay guide",
+      "url": "https://support.apple.com/en-euro/guide/iphone/iphd668e80e6/27/ios/27"
+    },
+    {
+      "label": "Apple iPad video streaming guide",
+      "url": "https://support.apple.com/guide/ipad/wirelessly-stream-videos-photos-apple-tv-4k-ipad2a5b3f69/27/ipados/27"
+    }
+  ]
+}

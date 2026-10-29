@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-10-29",
+  "topic": "Track a short IPTV session before setting a mobile data budget",
+  "primary_keyword": "IPTV mobile data",
+  "slug": "5g-mobile-data-short-session-budget",
+  "translations": {
+    "en": {
+      "title": "IPTV mobile data: plan a short session before a long one",
+      "excerpt": "A small viewing session gives you a useful starting point for a mobile-data budget. Check the reporting period and keep the carrier account in view.",
+      "seo_title": "IPTV mobile data: plan a short session before a long one",
+      "seo_description": "Plan IPTV mobile data use with a short session, a sensible warning and the right reporting period, while keeping phone estimates separate from carrier totals.",
+      "sections": [
+        {
+          "heading": "Start with a window you can measure",
+          "paragraphs": [
+            "Before a longer 5G Live viewing session, decide how much of your mobile allowance you are comfortable using. Open your phone's data-usage view and note the billing period, active SIM and current total. Save that note privately. Do not turn a signal icon or a service package price into a prediction of data consumption: the viewing service and the mobile allowance are separate purchases."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use a warning, then review one session",
+          "paragraphs": [
+            "Choose a small lawful viewing session and record the approximate time and usage afterwards. On supported Pixel phones, Google's guide explains usage warnings and a data limit. A warning is an alert; reaching an enabled limit can switch mobile data off. Menus vary, so follow the instructions for your own device. Leave enough allowance for other necessary phone use instead of setting a threshold you cannot comfortably manage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: mobile data usage, warnings and limits",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep estimates separate from the bill",
+          "paragraphs": [
+            "Compare like with like: the same reporting period and the SIM you actually used. Google notes that a carrier may measure usage differently, so check the carrier's account before relying on a phone estimate. Data Saver also does not mean that an active viewing app uses no mobile data. Repeat a small check when the player or viewing settings change. If the numbers are unclear, ask the carrier about its meter rather than promising yourself a fixed number of viewing hours."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: what Data Saver does",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Datos móviles e IPTV: empieza con una sesión corta",
+      "excerpt": "Una sesión breve permite empezar a calcular un presupuesto de datos móviles. Comprueba el periodo del contador y consulta también la cuenta del operador.",
+      "seo_title": "Datos móviles e IPTV: empieza con una sesión corta",
+      "seo_description": "Organiza el consumo de datos móviles de IPTV con una sesión corta, una alerta razonable y el periodo correcto, distinguiendo el móvil del contador del operador.",
+      "sections": [
+        {
+          "heading": "Elige un intervalo que puedas medir",
+          "paragraphs": [
+            "Antes de una sesión larga de 5G Live, decide qué parte de tu cuota móvil puedes usar con tranquilidad. Abre la vista de consumo del teléfono y anota el ciclo de facturación, la SIM activa y el total actual. Guarda esa nota en privado. Ni el icono de cobertura ni el precio de un paquete permiten predecir el consumo: el servicio de visualización y la cuota de datos móviles son compras distintas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Configura una alerta y revisa una sesión",
+          "paragraphs": [
+            "Haz una sesión breve con contenido que puedas ver legítimamente y apunta después el tiempo aproximado y el consumo. La guía de Google explica las alertas y el límite de datos en teléfonos Pixel compatibles. Una alerta avisa; alcanzar un límite activado puede desactivar los datos móviles. Los menús cambian, así que sigue las instrucciones de tu modelo. Reserva datos para otros usos necesarios del teléfono en lugar de elegir un umbral que no puedas gestionar cómodamente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: consumo, alertas y límites de datos móviles",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa las estimaciones de la factura",
+          "paragraphs": [
+            "Compara el mismo periodo y la SIM que utilizaste realmente. Google señala que el operador puede medir el consumo de otra manera: consulta su cuenta antes de confiar en la estimación del teléfono. El ahorro de datos tampoco significa que una aplicación de vídeo activa deje de consumir datos móviles. Repite una pequeña comprobación cuando cambien el reproductor o sus ajustes. Si las cifras no están claras, pregunta al operador por su contador en vez de dar por hecho un número fijo de horas."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: cómo funciona el ahorro de datos",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "title": "Données mobiles et IPTV : commencer par une courte séance",
+      "excerpt": "Une courte séance aide à préparer un budget de données mobiles. Vérifiez la période mesurée et gardez aussi un œil sur le compte de votre opérateur.",
+      "seo_title": "Données mobiles et IPTV : commencer par une courte séance",
+      "seo_description": "Préparez votre consommation IPTV sur données mobiles avec une courte séance, une alerte adaptée et la bonne période, puis comparez avec le compteur opérateur.",
+      "sections": [
+        {
+          "heading": "Choisir une période que l’on peut mesurer",
+          "paragraphs": [
+            "Avant une longue séance sur 5G Live, décidez quelle part de votre forfait mobile vous pouvez utiliser sereinement. Ouvrez le suivi des données du téléphone et notez le cycle de facturation, la SIM active et le total actuel. Gardez cette note privée. Ne déduisez pas une consommation de l’icône du réseau ou du prix d’une offre : le service de visionnage et le volume de données mobiles sont deux achats distincts."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prévoir une alerte puis examiner une séance",
+          "paragraphs": [
+            "Faites une courte séance avec un contenu auquel vous avez légalement accès, puis notez sa durée approximative et la consommation observée. Le guide Google décrit les alertes et les limites de données sur les Pixel compatibles. Une alerte prévient ; une limite activée peut couper les données mobiles lorsqu’elle est atteinte. Les menus varient : suivez les instructions de votre appareil. Réservez des données aux autres usages nécessaires plutôt que de choisir un seuil difficile à gérer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : consommation, alertes et limites mobiles",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguer estimation et facturation",
+          "paragraphs": [
+            "Comparez la même période et la SIM réellement utilisée. Google précise que l’opérateur peut mesurer différemment : consultez son compte avant de vous fier à l’estimation du téléphone. L’économiseur de données ne signifie pas non plus qu’une application vidéo active ne consomme rien. Refaites un petit relevé si le lecteur ou ses réglages changent. Si les chiffres restent flous, interrogez l’opérateur sur son compteur au lieu de compter sur un nombre fixe d’heures de visionnage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : rôle de l’économiseur de données",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "title": "Dati mobili e IPTV: parti da una sessione breve",
+      "excerpt": "Una breve sessione aiuta a impostare un budget di dati mobili. Controlla il periodo misurato e tieni presente anche il contatore del tuo operatore.",
+      "seo_title": "Dati mobili e IPTV: parti da una sessione breve",
+      "seo_description": "Organizza i dati mobili per IPTV con una sessione breve, un avviso ragionevole e il periodo corretto, distinguendo la stima del telefono dal totale dell’operatore.",
+      "sections": [
+        {
+          "heading": "Scegli un intervallo che puoi misurare",
+          "paragraphs": [
+            "Prima di guardare a lungo 5G Live, decidi quanta parte della tua disponibilità di dati mobili puoi usare tranquillamente. Apri il riepilogo dei consumi del telefono e annota ciclo di fatturazione, SIM attiva e totale attuale. Conserva questi appunti in privato. L’icona del segnale o il prezzo di un pacchetto non prevedono il consumo: il servizio di visione e il traffico dati mobile sono acquisti separati."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Imposta un avviso e controlla una sessione",
+          "paragraphs": [
+            "Fai una breve sessione con contenuti che puoi guardare legittimamente e annota poi durata indicativa e consumo. La guida Google spiega avvisi e limite dati sui telefoni Pixel compatibili. Un avviso segnala una soglia; raggiungere un limite attivo può disattivare i dati mobili. I menu variano, quindi segui le istruzioni del tuo dispositivo. Lascia dati sufficienti per gli altri usi necessari del telefono, evitando una soglia che non riusciresti a gestire con tranquillità."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: utilizzo, avvisi e limiti dei dati mobili",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui le stime dalla fatturazione",
+          "paragraphs": [
+            "Confronta lo stesso periodo e la SIM effettivamente usata. Google ricorda che l’operatore può misurare il consumo diversamente: consulta il suo account prima di affidarti alla stima del telefono. Anche Risparmio dati non significa che un’app video attiva non consumi dati mobili. Ripeti una piccola verifica quando cambiano lettore o impostazioni. Se i numeri non sono chiari, chiedi all’operatore come funziona il contatore anziché prometterti un numero fisso di ore di visione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: come funziona Risparmio dati",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "nl": {
+      "title": "Mobiele data voor IPTV: begin met een korte kijksessie",
+      "excerpt": "Een korte kijksessie helpt om een databudget te plannen. Controleer de gemeten periode en houd ook het verbruiksoverzicht van je provider bij de hand.",
+      "seo_title": "Mobiele data voor IPTV: begin met een korte kijksessie",
+      "seo_description": "Plan mobiele data voor IPTV met een korte sessie, een passende waarschuwing en de juiste periode. Vergelijk telefoonschattingen met het providerverbruik.",
+      "sections": [
+        {
+          "heading": "Kies een periode die je kunt meten",
+          "paragraphs": [
+            "Bepaal voor een langere 5G Live-kijksessie hoeveel van je mobiele bundel je met een gerust gevoel kunt gebruiken. Open het dataverbruik op je telefoon en noteer de factuurperiode, actieve simkaart en huidige totaalstand. Bewaar die notitie privé. Een signaalpictogram of pakketprijs voorspelt het verbruik niet: de kijkdienst en je mobiele databundel zijn afzonderlijke aankopen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Stel een waarschuwing in en bekijk één sessie",
+          "paragraphs": [
+            "Kijk kort naar iets waartoe je rechtmatig toegang hebt en noteer daarna de geschatte duur en het verbruik. Googles handleiding beschrijft waarschuwingen en een datalimiet op ondersteunde Pixel-telefoons. Een waarschuwing geeft een melding; een ingeschakelde limiet kan mobiele data uitschakelen wanneer je die bereikt. Menu’s verschillen, dus volg de uitleg voor jouw toestel. Houd voldoende data over voor ander noodzakelijk telefoongebruik, in plaats van een lastig te beheren grens te kiezen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: mobiel dataverbruik, waarschuwingen en limieten",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd schattingen en de rekening uit elkaar",
+          "paragraphs": [
+            "Vergelijk dezelfde periode en de simkaart die je werkelijk gebruikte. Volgens Google kan een provider anders meten: raadpleeg het provideraccount voordat je op de telefoonschatting vertrouwt. Databesparing betekent ook niet dat een actieve video-app geen mobiele data gebruikt. Doe opnieuw een kleine meting wanneer de speler of kijkinstellingen veranderen. Vraag bij onduidelijke cijfers hoe de provider meet, in plaats van jezelf een vast aantal kijkuren te beloven."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: wat Databesparing doet",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "Dados móveis e IPTV: comece com uma sessão curta",
+      "excerpt": "Uma sessão pequena ajuda a preparar um orçamento de dados móveis. Confirme o período medido e consulte também a conta da sua operadora.",
+      "seo_title": "Dados móveis e IPTV: comece com uma sessão curta",
+      "seo_description": "Planeie os dados móveis para IPTV com uma sessão curta, um aviso adequado e o período certo, distinguindo a estimativa do telefone do total da operadora.",
+      "sections": [
+        {
+          "heading": "Escolha um intervalo que consiga medir",
+          "paragraphs": [
+            "Antes de uma sessão longa de 5G Live, decida que parte da sua franquia móvel pode usar com tranquilidade. Abra o registo de consumo do telefone e anote o ciclo de faturação, o SIM ativo e o total atual. Guarde essa nota em privado. O ícone do sinal ou o preço de um pacote não permitem prever o consumo: o serviço de visualização e os dados móveis são compras separadas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use um aviso e reveja uma sessão",
+          "paragraphs": [
+            "Faça uma sessão curta com conteúdo a que tenha acesso legítimo e registe depois a duração aproximada e o consumo. O guia Google explica avisos e limites de dados nos Pixel compatíveis. Um aviso apresenta um alerta; atingir um limite ativado pode desligar os dados móveis. Os menus variam, por isso siga as instruções do seu aparelho. Reserve dados suficientes para outras utilizações necessárias do telefone, em vez de escolher um limite difícil de gerir."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: consumo, avisos e limites de dados móveis",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe as estimativas da faturação",
+          "paragraphs": [
+            "Compare o mesmo período e o SIM que realmente utilizou. A Google observa que a operadora pode medir o consumo de outra forma: consulte a conta da operadora antes de confiar na estimativa do telefone. A poupança de dados também não significa que uma aplicação de vídeo ativa deixe de consumir dados móveis. Repita uma pequena verificação quando mudar o leitor ou as definições. Se os números forem pouco claros, pergunte à operadora como mede, em vez de contar com um número fixo de horas."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: funcionamento da poupança de dados",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "Мобильный интернет для IPTV: начните с короткого просмотра",
+      "excerpt": "Короткий просмотр помогает спланировать расход мобильного трафика. Проверьте отчётный период и сравните показания телефона с личным кабинетом оператора.",
+      "seo_title": "Мобильный интернет для IPTV: начните с короткого просмотра",
+      "seo_description": "Планируйте мобильный трафик для IPTV: короткий просмотр, подходящее предупреждение и правильный период. Отделяйте оценку телефона от данных оператора.",
+      "sections": [
+        {
+          "heading": "Выберите измеримый промежуток",
+          "paragraphs": [
+            "Перед долгим просмотром 5G Live решите, какую часть мобильного пакета вы готовы спокойно израсходовать. Откройте учёт трафика телефона и запишите расчётный период, активную SIM-карту и текущий общий расход. Храните заметку приватно. Значок сигнала или цена подписки не предсказывают объём трафика: сервис просмотра и пакет мобильного интернета оплачиваются отдельно."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Настройте предупреждение и оцените один просмотр",
+          "paragraphs": [
+            "Проведите короткий просмотр контента, к которому у вас есть законный доступ, затем запишите примерную длительность и расход. Руководство Google описывает предупреждения и лимит данных на поддерживаемых Pixel. Предупреждение уведомляет, а достижение включённого лимита может отключить мобильные данные. Меню различаются, поэтому используйте инструкции своего устройства. Оставьте достаточно трафика для других необходимых задач телефона вместо порога, который будет трудно соблюдать."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: мобильный трафик, предупреждения и лимиты",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте оценку от расчётов оператора",
+          "paragraphs": [
+            "Сравнивайте одинаковый период и ту SIM-карту, которой действительно пользовались. Google отмечает, что оператор может считать иначе: проверьте его личный кабинет, прежде чем полагаться на оценку телефона. Экономия трафика также не означает, что активное видеоприложение перестаёт расходовать мобильные данные. Повторите небольшое измерение после смены плеера или настроек просмотра. Если цифры непонятны, уточните принцип учёта у оператора, а не рассчитывайте на неизменное число часов просмотра."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: как работает экономия трафика",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ur": {
+      "title": "آئی پی ٹی وی کا موبائل ڈیٹا: پہلے مختصر سیشن سے اندازہ لیں",
+      "excerpt": "مختصر وقت کی ویونگ موبائل ڈیٹا کا بجٹ بنانے میں مدد دیتی ہے۔ پیمائش کا عرصہ چیک کریں اور نیٹ ورک کمپنی کا اکاؤنٹ بھی سامنے رکھیں۔",
+      "seo_title": "آئی پی ٹی وی کا موبائل ڈیٹا: پہلے مختصر سیشن سے اندازہ لیں",
+      "seo_description": "آئی پی ٹی وی کے موبائل ڈیٹا کے لیے مختصر سیشن، مناسب وارننگ اور درست عرصہ منتخب کریں؛ فون کے اندازے کو کمپنی کے حساب سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "ایسا وقفہ چنیں جسے ناپ سکیں",
+          "paragraphs": [
+            "5G Live پر لمبی ویونگ سے پہلے طے کریں کہ اپنے موبائل پیکیج کا کتنا ڈیٹا آرام سے استعمال کر سکتے ہیں۔ فون میں ڈیٹا کے استعمال کا صفحہ کھول کر بلنگ کا عرصہ، فعال سم اور موجودہ کل استعمال لکھ لیں۔ یہ نوٹ نجی رکھیں۔ سگنل کے نشان یا سروس پیکیج کی قیمت سے ڈیٹا کے خرچ کا اندازہ نہ لگائیں؛ ویونگ سروس اور موبائل ڈیٹا کی سہولت الگ خریداری ہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "وارننگ رکھیں، پھر ایک سیشن دیکھیں",
+          "paragraphs": [
+            "ایسا مواد مختصر وقت دیکھیں جس تک آپ کو جائز رسائی ہو، پھر اندازاً وقت اور استعمال لکھیں۔ سپورٹ والے Pixel فونز کے لیے Google کی گائیڈ ڈیٹا وارننگ اور حد سمجھاتی ہے۔ وارننگ اطلاع دیتی ہے، جبکہ فعال حد پوری ہونے پر موبائل ڈیٹا بند ہو سکتا ہے۔ مینیو مختلف ہو سکتے ہیں، اس لیے اپنے آلے کی ہدایات دیکھیں۔ مشکل حد رکھنے کے بجائے فون کے دوسرے ضروری کاموں کے لیے کافی ڈیٹا بچائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: موبائل ڈیٹا کا استعمال، وارننگ اور حدود",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اندازے کو بل کے حساب سے الگ رکھیں",
+          "paragraphs": [
+            "ایک ہی عرصے اور واقعی استعمال ہونے والی سم کا موازنہ کریں۔ Google کے مطابق نیٹ ورک کمپنی کی پیمائش مختلف ہو سکتی ہے، اس لیے فون کے اندازے پر بھروسہ کرنے سے پہلے کمپنی کا اکاؤنٹ دیکھیں۔ ڈیٹا سیور کا مطلب بھی یہ نہیں کہ چلتی ہوئی ویڈیو ایپ موبائل ڈیٹا بالکل استعمال نہیں کرتی۔ پلیئر یا ویونگ سیٹنگ بدلنے پر دوبارہ مختصر جانچ کریں۔ اعداد واضح نہ ہوں تو مقررہ گھنٹوں کی امید باندھنے کے بجائے کمپنی سے اس کے حساب کا طریقہ پوچھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: ڈیٹا سیور کیا کرتا ہے",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ar": {
+      "title": "بيانات الهاتف مع IPTV: ابدأ بجلسة قصيرة قبل الطويلة",
+      "excerpt": "تمنحك جلسة مشاهدة قصيرة نقطة بداية لتنظيم بيانات الهاتف. راجع فترة القياس واحتفظ أيضاً ببيانات حساب شركة الاتصال للمقارنة.",
+      "seo_title": "بيانات الهاتف مع IPTV: ابدأ بجلسة قصيرة قبل الطويلة",
+      "seo_description": "خطط لبيانات الهاتف عند مشاهدة IPTV بجلسة قصيرة وتنبيه مناسب وفترة قياس صحيحة، مع فصل تقدير الهاتف عن حساب شركة الاتصال.",
+      "sections": [
+        {
+          "heading": "ابدأ بفترة يمكنك قياسها",
+          "paragraphs": [
+            "قبل جلسة طويلة على 5G Live، حدّد مقدار باقة بيانات الهاتف الذي تستطيع استهلاكه براحة. افتح صفحة استخدام البيانات وسجّل دورة الفوترة والشريحة النشطة والإجمالي الحالي. احتفظ بهذه الملاحظة بشكل خاص. لا تجعل رمز الإشارة أو سعر باقة المشاهدة توقعاً لاستهلاك البيانات؛ خدمة المشاهدة وباقة الاتصال مشتريان منفصلان."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم تنبيهاً ثم راجع جلسة واحدة",
+          "paragraphs": [
+            "شاهد محتوى يحق لك الوصول إليه لجلسة قصيرة، ثم سجّل المدة التقريبية والاستهلاك بعدها. يشرح دليل Google تنبيهات الاستخدام وحد البيانات على هواتف Pixel المدعومة. التنبيه يخبرك، بينما بلوغ حد مفعّل قد يوقف بيانات الهاتف. تختلف القوائم، لذا اتبع إرشادات جهازك نفسه. اترك رصيد بيانات كافياً للاستخدامات الضرورية الأخرى بدلاً من اختيار عتبة يصعب عليك إدارتها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: استهلاك البيانات والتنبيهات والحدود",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل التقديرات عن حساب الفاتورة",
+          "paragraphs": [
+            "قارن الفترة نفسها والشريحة التي استخدمتها فعلياً. تذكر Google أن شركة الاتصال قد تقيس الاستهلاك بطريقة مختلفة، فراجع حساب الشركة قبل الاعتماد على تقدير الهاتف. كما أن موفّر البيانات لا يعني أن تطبيق مشاهدة نشطاً لا يستهلك أي بيانات هاتف. كرّر فحصاً صغيراً عند تغيير المشغّل أو إعدادات المشاهدة. إن لم تكن الأرقام واضحة، اسأل الشركة عن طريقة القياس بدلاً من افتراض عدد ثابت من ساعات المشاهدة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: وظيفة موفّر البيانات",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV का मोबाइल डेटा: लंबे सत्र से पहले छोटी जाँच करें",
+      "excerpt": "थोड़ी देर देखकर आप मोबाइल डेटा का बजट तय करने की शुरुआत कर सकते हैं। मापने की अवधि जाँचें और नेटवर्क कंपनी का हिसाब भी साथ देखें।",
+      "seo_title": "IPTV का मोबाइल डेटा: लंबे सत्र से पहले छोटी जाँच करें",
+      "seo_description": "IPTV का मोबाइल डेटा खर्च समझने के लिए छोटा सत्र, सही चेतावनी और सही अवधि चुनें। फोन के अनुमान और कंपनी के कुल हिसाब में फर्क रखें।",
+      "sections": [
+        {
+          "heading": "मापने लायक एक अवधि चुनें",
+          "paragraphs": [
+            "5G Live पर लंबे समय देखने से पहले तय करें कि अपने मोबाइल पैक का कितना डेटा आप आराम से खर्च कर सकते हैं। फोन का डेटा उपयोग पेज खोलकर बिलिंग अवधि, चालू सिम और मौजूदा कुल उपयोग लिख लें। यह नोट निजी रखें। सिग्नल के चिह्न या सर्विस पैकेज की कीमत से डेटा की खपत का अनुमान न लगाएँ; देखने की सेवा और मोबाइल डेटा अलग खरीदारी हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "चेतावनी रखें और एक सत्र की जाँच करें",
+          "paragraphs": [
+            "ऐसी सामग्री थोड़ी देर देखें जिस तक आपकी वैध पहुँच हो, फिर लगभग समय और खर्च हुआ डेटा लिखें। समर्थित Pixel फोन के लिए Google की गाइड डेटा चेतावनी और सीमा समझाती है। चेतावनी सूचना देती है, जबकि चालू सीमा पूरी होने पर मोबाइल डेटा बंद हो सकता है। मेन्यू अलग होते हैं, इसलिए अपने उपकरण के निर्देश अपनाएँ। ऐसा स्तर चुनने के बजाय जिसे संभालना मुश्किल हो, फोन के दूसरे जरूरी कामों के लिए पर्याप्त डेटा बचाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: मोबाइल डेटा, चेतावनी और सीमा",
+              "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अनुमान को बिल के हिसाब से अलग रखें",
+          "paragraphs": [
+            "एक जैसी अवधि और वास्तव में इस्तेमाल हुई सिम की तुलना करें। Google बताता है कि नेटवर्क कंपनी डेटा अलग तरीके से माप सकती है; फोन के अनुमान पर भरोसा करने से पहले कंपनी का अकाउंट देखें। डेटा सेवर का मतलब भी यह नहीं कि चलती हुई वीडियो ऐप कोई मोबाइल डेटा खर्च नहीं करती। प्लेयर या देखने की सेटिंग बदलने पर छोटी जाँच दोहराएँ। आँकड़े स्पष्ट न हों तो निश्चित घंटों की उम्मीद करने के बजाय कंपनी से उसके मापने का तरीका पूछें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: डेटा सेवर कैसे काम करता है",
+              "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel mobile data usage guidance",
+      "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+    },
+    {
+      "label": "Google Pixel Data Saver guidance",
+      "url": "https://support.google.com/pixelphone/answer/7055392?hl=en"
+    }
+  ]
+}

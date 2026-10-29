@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-10-29",
+  "topic": "Simultaneous connections, installed players and television profiles: count the right thing",
+  "primary_keyword": "IPTV connection limit",
+  "slug": "iptvsubscription-connections-installed-devices-and-tv-profiles",
+  "translations": {
+    "en": {
+      "title": "An IPTV connection limit is different from a list of devices",
+      "excerpt": "Three installed players do not necessarily mean three permitted streams. Separate simultaneous viewing from saved logins and television profiles before choosing a plan.",
+      "seo_title": "IPTV connection limit: devices, profiles and active streams",
+      "seo_description": "Understand an IPTV connection limit before using several screens. Check confirmed Opplex allowances, ask about Filex and distinguish TV profiles from streams.",
+      "sections": [
+        {
+          "heading": "Count viewing sessions, not installations",
+          "paragraphs": [
+            "Installing a player on a television, phone and tablet does not by itself tell you how many streams a subscription permits. An IPTV connection limit concerns simultaneous viewing; a saved login or a TV profile is a different thing. List the screens you actually use and mark which ones need to play at the same time."
+          ],
+          "items": [
+            "Count screens playing, not just applications installed."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Match the allowance to the selected service",
+          "paragraphs": [
+            "On IPTV Subscription, the currently confirmed Opplex packages allow one simultaneous connection. The Filex allowance has not been confirmed, so ask support about the exact selected plan rather than borrowing the Opplex rule. A Google TV profile helps separate a person’s Google services and activity; adding a profile does not change the service allowance confirmed with your provider."
+          ],
+          "items": [
+            "Keep the plan name beside any written connection allowance."
+          ],
+          "links": [
+            {
+              "label": "Google TV: official guide to user profiles",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Make switching screens deliberate",
+          "paragraphs": [
+            "If you want to move from one screen to another, stop playback on the first before opening the second. Allow the player to close its session; this is a sensible handover, not a promise about a provider’s timeout. If access still fails, report the devices involved and when playback stopped. Ask about any approved multi-screen option before purchasing another plan."
+          ],
+          "items": [
+            "Never share a password or a private playlist link."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "El límite de conexiones IPTV no es una lista de dispositivos",
+      "excerpt": "Tener tres reproductores instalados no significa necesariamente poder ver tres emisiones a la vez. Distingue sesiones activas, accesos guardados y perfiles del televisor.",
+      "seo_title": "Límite de conexiones IPTV: dispositivos, perfiles y sesiones",
+      "seo_description": "Entiende el límite de conexiones IPTV antes de usar varias pantallas. Revisa lo confirmado para Opplex, consulta Filex y distingue perfiles de sesiones.",
+      "sections": [
+        {
+          "heading": "Cuenta las sesiones, no las instalaciones",
+          "paragraphs": [
+            "Instalar un reproductor en un televisor, un móvil y una tableta no indica por sí solo cuántas reproducciones permite la suscripción. El límite de conexiones IPTV se refiere a la visualización simultánea; un acceso guardado o un perfil de TV es otra cosa. Enumera las pantallas que utilizas y marca cuáles necesitan reproducir al mismo tiempo."
+          ],
+          "items": [
+            "Cuenta pantallas reproduciendo, no solo aplicaciones instaladas."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Relaciona el límite con el servicio elegido",
+          "paragraphs": [
+            "En IPTV Subscription, los paquetes Opplex actualmente confirmados permiten una conexión simultánea. La capacidad de Filex no está confirmada: consulta el plan exacto con soporte, sin trasladar la regla de Opplex. Un perfil de Google TV ayuda a separar servicios y actividad de Google de cada persona; añadirlo no cambia la capacidad del servicio confirmada con tu proveedor."
+          ],
+          "items": [
+            "Guarda el nombre del plan junto a cualquier límite confirmado por escrito."
+          ],
+          "links": [
+            {
+              "label": "Google TV: guía oficial de perfiles de usuario",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Cambia de pantalla de forma consciente",
+          "paragraphs": [
+            "Para pasar de una pantalla a otra, detén la reproducción en la primera antes de abrir la segunda. Deja que el reproductor cierre la sesión; es una transición razonable, no una promesa sobre el tiempo de espera del proveedor. Si el acceso sigue fallando, comunica los dispositivos implicados y cuándo detuviste la reproducción. Consulta una opción multipantalla autorizada antes de comprar otro plan."
+          ],
+          "items": [
+            "No compartas contraseñas ni enlaces privados de listas de reproducción."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Une limite de connexions IPTV ne compte pas les appareils installés",
+      "excerpt": "Trois lecteurs installés ne donnent pas forcément droit à trois lectures simultanées. Distinguez les sessions actives, les identifiants enregistrés et les profils du téléviseur.",
+      "seo_title": "Limite de connexions IPTV : appareils, profils et lectures",
+      "seo_description": "Comprenez la limite de connexions IPTV avant d’utiliser plusieurs écrans. Vérifiez les règles Opplex confirmées, renseignez-vous sur Filex et distinguez les profils.",
+      "sections": [
+        {
+          "heading": "Comptez les lectures, pas les installations",
+          "paragraphs": [
+            "Installer un lecteur sur un téléviseur, un téléphone et une tablette ne suffit pas à connaître le nombre de lectures autorisées. La limite de connexions IPTV concerne les visionnages simultanés ; un identifiant enregistré ou un profil TV est une autre notion. Listez les écrans réellement utilisés et indiquez ceux qui doivent lire du contenu en même temps."
+          ],
+          "items": [
+            "Comptez les écrans en cours de lecture, pas seulement les applications installées."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez la règle du service choisi",
+          "paragraphs": [
+            "Sur IPTV Subscription, les forfaits Opplex actuellement confirmés autorisent une connexion simultanée. La capacité de Filex n’est pas confirmée : interrogez le support sur le forfait exact sans lui appliquer la règle Opplex. Un profil Google TV sépare les services Google et l’activité d’une personne ; en ajouter un ne modifie pas la capacité du service confirmée avec votre fournisseur."
+          ],
+          "items": [
+            "Conservez le nom du forfait avec toute limite confirmée par écrit."
+          ],
+          "links": [
+            {
+              "label": "Google TV : guide officiel des profils utilisateur",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Passez volontairement d’un écran à l’autre",
+          "paragraphs": [
+            "Pour changer d’écran, arrêtez la lecture sur le premier avant de l’ouvrir sur le second. Laissez le lecteur fermer sa session ; c’est une transition raisonnable, pas une garantie sur le délai du fournisseur. Si l’accès échoue encore, précisez les appareils concernés et l’heure d’arrêt. Renseignez-vous sur une option multi-écran autorisée avant d’acheter un autre forfait."
+          ],
+          "items": [
+            "Ne partagez jamais un mot de passe ni un lien privé de liste de lecture."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Il limite di connessioni IPTV non è un elenco di dispositivi",
+      "excerpt": "Tre lettori installati non significano necessariamente tre visioni consentite insieme. Distingui sessioni attive, accessi salvati e profili del televisore prima di scegliere.",
+      "seo_title": "Limite connessioni IPTV: dispositivi, profili e visioni",
+      "seo_description": "Comprendi il limite di connessioni IPTV prima di usare più schermi. Verifica quanto confermato per Opplex, chiedi di Filex e distingui profili e riproduzioni.",
+      "sections": [
+        {
+          "heading": "Conta le visioni, non le installazioni",
+          "paragraphs": [
+            "Installare un lettore su televisore, telefono e tablet non chiarisce da solo quante riproduzioni permetta l’abbonamento. Il limite di connessioni IPTV riguarda le visioni simultanee; un accesso salvato o un profilo TV è un’altra cosa. Elenca gli schermi che usi davvero e indica quali devono riprodurre contenuti nello stesso momento."
+          ],
+          "items": [
+            "Conta gli schermi in riproduzione, non soltanto le app installate."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Associa il limite al servizio scelto",
+          "paragraphs": [
+            "Su IPTV Subscription, i pacchetti Opplex attualmente confermati consentono una connessione simultanea. Il limite di Filex non è confermato: chiedi all’assistenza del piano preciso, senza applicargli la regola Opplex. Un profilo Google TV aiuta a separare servizi Google e attività di una persona; aggiungerlo non modifica il limite del servizio confermato con il fornitore."
+          ],
+          "items": [
+            "Conserva il nome del piano accanto a ogni limite confermato per iscritto."
+          ],
+          "links": [
+            {
+              "label": "Google TV: guida ufficiale ai profili utente",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Passa da uno schermo all’altro con attenzione",
+          "paragraphs": [
+            "Se vuoi cambiare schermo, interrompi la riproduzione sul primo prima di aprirla sul secondo. Lascia che il lettore chiuda la sessione: è un passaggio ragionevole, non una garanzia sui tempi di rilascio del fornitore. Se l’accesso fallisce ancora, comunica i dispositivi coinvolti e quando hai fermato la visione. Chiedi un’eventuale opzione multischermo autorizzata prima di acquistare un altro piano."
+          ],
+          "items": [
+            "Non condividere password o collegamenti privati alle playlist."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Een IPTV-verbindingslimiet is iets anders dan een apparatenlijst",
+      "excerpt": "Drie geïnstalleerde spelers betekenen niet automatisch drie toegestane streams. Maak onderscheid tussen gelijktijdig kijken, bewaarde inloggegevens en televisieprofielen.",
+      "seo_title": "IPTV-verbindingslimiet: apparaten, profielen en streams",
+      "seo_description": "Begrijp de IPTV-verbindingslimiet voordat je meerdere schermen gebruikt. Controleer bevestigde Opplex-regels, vraag naar Filex en onderscheid profielen van streams.",
+      "sections": [
+        {
+          "heading": "Tel kijksessies, geen installaties",
+          "paragraphs": [
+            "Een speler installeren op een televisie, telefoon en tablet vertelt op zichzelf niet hoeveel streams een abonnement toestaat. Een IPTV-verbindingslimiet gaat over gelijktijdig kijken; een bewaarde aanmelding of een tv-profiel is iets anders. Maak een lijst van de schermen die je werkelijk gebruikt en markeer welke tegelijk moeten kunnen afspelen."
+          ],
+          "items": [
+            "Tel schermen die afspelen, niet alleen geïnstalleerde apps."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Controleer de regel van de gekozen dienst",
+          "paragraphs": [
+            "Bij IPTV Subscription staan de momenteel bevestigde Opplex-pakketten één gelijktijdige verbinding toe. De Filex-limiet is niet bevestigd: vraag ondersteuning naar het exacte pakket en neem niet de Opplex-regel over. Een Google TV-profiel helpt iemands Google-diensten en activiteit te scheiden; een extra profiel verandert de door je aanbieder bevestigde gebruikslimiet niet."
+          ],
+          "items": [
+            "Bewaar de pakketnaam bij iedere schriftelijk bevestigde verbindingslimiet."
+          ],
+          "links": [
+            {
+              "label": "Google TV: officiële uitleg over gebruikersprofielen",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Wissel bewust tussen schermen",
+          "paragraphs": [
+            "Wil je naar een ander scherm, stop dan eerst het afspelen op het eerste voordat je het tweede opent. Geef de speler gelegenheid zijn sessie te sluiten; dat is een verstandige overdracht, geen garantie over de wachttijd van de aanbieder. Meld bij blijvende problemen de betrokken apparaten en het stoptijdstip. Vraag naar een toegestane optie voor meerdere schermen voordat je nog een pakket koopt."
+          ],
+          "items": [
+            "Deel nooit een wachtwoord of een privélink naar een afspeellijst."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "O limite de ligações IPTV não é uma lista de aparelhos",
+      "excerpt": "Ter três leitores instalados não significa necessariamente poder ver três transmissões ao mesmo tempo. Distinga sessões ativas, acessos guardados e perfis do televisor.",
+      "seo_title": "Limite de ligações IPTV: aparelhos, perfis e sessões",
+      "seo_description": "Entenda o limite de ligações IPTV antes de usar vários ecrãs. Verifique as regras Opplex confirmadas, pergunte sobre Filex e distinga perfis de transmissões.",
+      "sections": [
+        {
+          "heading": "Conte sessões de visualização, não instalações",
+          "paragraphs": [
+            "Instalar um leitor no televisor, no telemóvel e no tablet não esclarece, por si só, quantas reproduções a subscrição permite. O limite de ligações IPTV diz respeito à visualização simultânea; um acesso guardado ou um perfil de TV é outra coisa. Liste os ecrãs que realmente utiliza e assinale os que precisam de reproduzir ao mesmo tempo."
+          ],
+          "items": [
+            "Conte ecrãs em reprodução, não apenas aplicações instaladas."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Confirme a regra do serviço escolhido",
+          "paragraphs": [
+            "Na IPTV Subscription, os pacotes Opplex atualmente confirmados permitem uma ligação simultânea. O limite Filex não está confirmado: pergunte ao apoio pelo plano exato, em vez de lhe aplicar a regra Opplex. Um perfil Google TV ajuda a separar serviços Google e atividade de uma pessoa; acrescentá-lo não altera o limite do serviço confirmado com o fornecedor."
+          ],
+          "items": [
+            "Guarde o nome do plano junto de qualquer limite confirmado por escrito."
+          ],
+          "links": [
+            {
+              "label": "Google TV: guia oficial de perfis de utilizador",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Mude de ecrã de forma consciente",
+          "paragraphs": [
+            "Se quiser passar de um ecrã para outro, pare a reprodução no primeiro antes de abrir o segundo. Deixe o leitor encerrar a sessão; é uma transição sensata, não uma promessa sobre o tempo de espera do fornecedor. Se o acesso continuar a falhar, indique os aparelhos envolvidos e quando parou a reprodução. Pergunte por uma opção multiecrã autorizada antes de comprar outro plano."
+          ],
+          "items": [
+            "Nunca partilhe palavras-passe nem ligações privadas para listas de reprodução."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Лимит подключений IPTV — это не список установленных устройств",
+      "excerpt": "Три установленных плеера не обязательно дают право на три одновременные трансляции. Различайте активный просмотр, сохранённый вход и профили телевизора.",
+      "seo_title": "Лимит подключений IPTV: устройства, профили и просмотр",
+      "seo_description": "Разберитесь с лимитом подключений IPTV перед просмотром на нескольких экранах. Проверьте условия Opplex, уточните Filex и не путайте профили с трансляциями.",
+      "sections": [
+        {
+          "heading": "Считайте сеансы просмотра, а не установки",
+          "paragraphs": [
+            "Установка плеера на телевизор, телефон и планшет сама по себе не показывает, сколько трансляций разрешает подписка. Лимит подключений IPTV относится к одновременному просмотру; сохранённый вход или профиль телевизора — другие понятия. Составьте список реально используемых экранов и отметьте, какие из них должны воспроизводить контент в одно и то же время."
+          ],
+          "items": [
+            "Считайте воспроизводящие экраны, а не просто установленные приложения."
+          ],
+          "links": []
+        },
+        {
+          "heading": "Проверяйте условия выбранного сервиса",
+          "paragraphs": [
+            "На IPTV Subscription у подтверждённых сейчас пакетов Opplex разрешено одно одновременное подключение. Условия Filex не подтверждены: уточните конкретный тариф у поддержки, не перенося на него правило Opplex. Профиль Google TV помогает разделять сервисы Google и активность пользователя; добавление профиля не меняет лимит услуги, согласованный с вашим поставщиком."
+          ],
+          "items": [
+            "Храните название тарифа рядом с любым письменно подтверждённым лимитом."
+          ],
+          "links": [
+            {
+              "label": "Google TV: официальное руководство по профилям",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Переключайте экраны осознанно",
+          "paragraphs": [
+            "Чтобы перейти на другой экран, остановите воспроизведение на первом, прежде чем открывать второй. Дайте плееру закрыть сеанс: это разумный порядок действий, а не обещание о времени освобождения подключения у поставщика. Если доступ по-прежнему не работает, сообщите, какие устройства использовались и когда вы остановили просмотр. Перед покупкой ещё одного тарифа спросите о разрешённом варианте для нескольких экранов."
+          ],
+          "items": [
+            "Никогда не передавайте пароль или приватную ссылку на плейлист."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV کنکشن کی حد، ڈیوائسز کی فہرست سے مختلف چیز ہے",
+      "excerpt": "تین پلیئر انسٹال ہونے کا مطلب لازماً تین بیک وقت اسٹریمز کی اجازت نہیں۔ پلان چنتے وقت چلتی ہوئی نشست، محفوظ لاگ اِن اور ٹی وی پروفائل میں فرق رکھیں۔",
+      "seo_title": "IPTV کنکشن کی حد: ڈیوائس، پروفائل اور چلتی اسٹریم",
+      "seo_description": "کئی اسکرینیں استعمال کرنے سے پہلے IPTV کنکشن کی حد سمجھیں۔ Opplex کی تصدیق شدہ شرط دیکھیں، Filex سے متعلق پوچھیں اور پروفائل کو اسٹریم نہ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "دیکھنے کی نشستیں گنیں، انسٹالیشن نہیں",
+          "paragraphs": [
+            "ٹی وی، فون اور ٹیبلٹ پر پلیئر انسٹال کر لینے سے یہ معلوم نہیں ہوتا کہ سبسکرپشن کتنی اسٹریمز کی اجازت دیتی ہے۔ IPTV کنکشن کی حد بیک وقت دیکھنے سے متعلق ہے؛ محفوظ لاگ اِن یا ٹی وی کا پروفائل الگ چیز ہے۔ ان اسکرینوں کی سادہ فہرست بنائیں جو آپ واقعی استعمال کرتے ہیں اور نشان لگائیں کہ کن پر ایک ہی وقت میں ویڈیو چلنی چاہیے۔"
+          ],
+          "items": [
+            "چلتی ہوئی اسکرینیں گنیں، صرف انسٹال شدہ ایپس نہیں۔"
+          ],
+          "links": []
+        },
+        {
+          "heading": "منتخب سروس کی شرط الگ دیکھیں",
+          "paragraphs": [
+            "IPTV Subscription پر موجودہ تصدیق شدہ Opplex پیکیجز ایک بیک وقت کنکشن کی اجازت دیتے ہیں۔ Filex کی حد تصدیق شدہ نہیں، اس لیے Opplex والا اصول اس پر لگانے کے بجائے منتخب پلان کے بارے میں سپورٹ سے پوچھیں۔ Google TV کا پروفائل کسی شخص کی Google سروسز اور سرگرمی کو الگ رکھنے میں مدد دیتا ہے؛ نیا پروفائل آپ کے فراہم کنندہ کی تصدیق کردہ سروس حد کو تبدیل نہیں کرتا۔"
+          ],
+          "items": [
+            "تحریری طور پر بتائی گئی حد کے ساتھ پلان کا نام بھی محفوظ رکھیں۔"
+          ],
+          "links": [
+            {
+              "label": "Google TV: صارف پروفائل کی سرکاری رہنمائی",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اسکرین بدلتے وقت ترتیب رکھیں",
+          "paragraphs": [
+            "اگر ایک اسکرین سے دوسری پر جانا ہو تو دوسری کھولنے سے پہلے پہلی پر ویڈیو روکیں۔ پلیئر کو اپنی نشست بند کرنے کا موقع دیں؛ یہ مناسب طریقہ ہے، فراہم کنندہ کے کنکشن ختم ہونے کے وقت کی ضمانت نہیں۔ پھر بھی رسائی نہ ملے تو شامل ڈیوائسز اور ویڈیو روکنے کا وقت بتائیں۔ دوسرا پلان خریدنے سے پہلے کسی اجازت یافتہ ملٹی اسکرین آپشن کے بارے میں پوچھیں۔"
+          ],
+          "items": [
+            "پاس ورڈ یا نجی پلے لسٹ لنک کبھی کسی سے شیئر نہ کریں۔"
+          ],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "حد اتصالات IPTV يختلف عن قائمة الأجهزة المثبّتة",
+      "excerpt": "وجود ثلاثة مشغلات مثبّتة لا يعني بالضرورة السماح بثلاثة تدفقات معاً. ميّز بين المشاهدة المتزامنة وتسجيل الدخول المحفوظ وملفات التلفاز الشخصية.",
+      "seo_title": "حد اتصالات IPTV: الأجهزة والملفات والتدفقات النشطة",
+      "seo_description": "افهم حد اتصالات IPTV قبل استخدام عدة شاشات. راجع شروط Opplex المؤكدة، واسأل عن Filex، وميّز بين الملف الشخصي وتدفق المشاهدة.",
+      "sections": [
+        {
+          "heading": "احسب جلسات المشاهدة لا عدد التثبيتات",
+          "paragraphs": [
+            "تثبيت مشغل على التلفاز والهاتف والجهاز اللوحي لا يوضح وحده عدد التدفقات التي يسمح بها الاشتراك. يتعلق حد اتصالات IPTV بالمشاهدة المتزامنة؛ أما تسجيل الدخول المحفوظ أو الملف الشخصي للتلفاز فهما أمران مختلفان. اكتب قائمة بسيطة بالشاشات التي تستخدمها فعلاً، وحدد أيها يحتاج إلى تشغيل المحتوى في الوقت نفسه."
+          ],
+          "items": [
+            "احسب الشاشات التي تشغّل الفيديو، وليس التطبيقات المثبّتة فقط."
+          ],
+          "links": []
+        },
+        {
+          "heading": "اربط الحد بالخدمة المختارة",
+          "paragraphs": [
+            "تسمح باقات Opplex المؤكدة حالياً على IPTV Subscription باتصال متزامن واحد. لم يتأكد حد Filex، لذا اسأل الدعم عن الخطة المحددة بدلاً من تطبيق قاعدة Opplex عليها. يساعد ملف Google TV الشخصي على فصل خدمات Google ونشاط الشخص؛ وإضافة ملف آخر لا تغيّر حد الخدمة الذي أكده لك مزودها."
+          ],
+          "items": [
+            "احتفظ باسم الخطة إلى جانب أي حد اتصالات موثق كتابةً."
+          ],
+          "links": [
+            {
+              "label": "Google TV: الدليل الرسمي للملفات الشخصية",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "انتقل بين الشاشات بخطوات واضحة",
+          "paragraphs": [
+            "إذا أردت الانتقال من شاشة إلى أخرى، أوقف التشغيل على الأولى قبل فتح الثانية. امنح المشغل فرصة لإغلاق جلسته؛ هذه طريقة انتقال معقولة، وليست ضماناً لمدة إنهاء الاتصال لدى المزود. إذا استمر فشل الوصول، اذكر الأجهزة المعنية ووقت إيقاف المشاهدة. اسأل عن أي خيار معتمد لعدة شاشات قبل شراء خطة أخرى."
+          ],
+          "items": [
+            "لا تشارك كلمة المرور أو رابط قائمة تشغيل خاصة مع أحد."
+          ],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV कनेक्शन सीमा और डिवाइसों की सूची अलग बातें हैं",
+      "excerpt": "तीन प्लेयर इंस्टॉल होने का मतलब ज़रूरी नहीं कि तीन स्ट्रीम साथ चलाने की अनुमति हो। सक्रिय देखने, सेव किए लॉगिन और टीवी प्रोफ़ाइल में अंतर रखें।",
+      "seo_title": "IPTV कनेक्शन सीमा: डिवाइस, प्रोफ़ाइल और सक्रिय स्ट्रीम",
+      "seo_description": "कई स्क्रीन इस्तेमाल करने से पहले IPTV कनेक्शन सीमा समझें। Opplex की पुष्ट शर्त देखें, Filex के बारे में पूछें और प्रोफ़ाइल को स्ट्रीम न समझें।",
+      "sections": [
+        {
+          "heading": "देखने के सेशन गिनें, इंस्टॉलेशन नहीं",
+          "paragraphs": [
+            "टीवी, फ़ोन और टैबलेट पर प्लेयर इंस्टॉल करने से अपने आप यह पता नहीं चलता कि सब्सक्रिप्शन कितनी स्ट्रीम की अनुमति देता है। IPTV कनेक्शन सीमा एक साथ देखने से जुड़ी है; सेव किया हुआ लॉगिन या टीवी प्रोफ़ाइल अलग चीज़ है। उन स्क्रीन की सरल सूची बनाएँ जिन्हें आप वास्तव में इस्तेमाल करते हैं और चिन्हित करें कि किन पर एक ही समय में वीडियो चलना चाहिए।"
+          ],
+          "items": [
+            "वीडियो चलाने वाली स्क्रीन गिनें, केवल इंस्टॉल की गई ऐप नहीं।"
+          ],
+          "links": []
+        },
+        {
+          "heading": "चुनी हुई सेवा की शर्त अलग जाँचें",
+          "paragraphs": [
+            "IPTV Subscription पर अभी पुष्ट Opplex पैकेज एक साथ एक कनेक्शन की अनुमति देते हैं। Filex की सीमा पुष्ट नहीं है, इसलिए उस पर Opplex का नियम लागू करने के बजाय चुने हुए प्लान के बारे में सहायता से पूछें। Google TV प्रोफ़ाइल किसी व्यक्ति की Google सेवाएँ और गतिविधि अलग रखने में मदद करती है; दूसरी प्रोफ़ाइल जोड़ने से आपके प्रदाता की पुष्ट सेवा सीमा नहीं बदलती।"
+          ],
+          "items": [
+            "लिखित रूप में बताई गई सीमा के साथ प्लान का नाम भी संभालकर रखें।"
+          ],
+          "links": [
+            {
+              "label": "Google TV: उपयोगकर्ता प्रोफ़ाइल की आधिकारिक गाइड",
+              "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "स्क्रीन बदलते समय क्रम रखें",
+          "paragraphs": [
+            "एक स्क्रीन से दूसरी पर जाना हो तो दूसरी खोलने से पहले पहली पर वीडियो रोकें। प्लेयर को अपना सेशन बंद करने का अवसर दें; यह उचित तरीका है, प्रदाता के कनेक्शन खत्म होने के समय की गारंटी नहीं। फिर भी पहुँच न मिले तो शामिल डिवाइस और वीडियो रोकने का समय बताएं। दूसरा प्लान खरीदने से पहले किसी स्वीकृत मल्टीस्क्रीन विकल्प के बारे में पूछें।"
+          ],
+          "items": [
+            "पासवर्ड या निजी प्लेलिस्ट लिंक कभी साझा न करें।"
+          ],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV: how user profiles work",
+      "url": "https://support.google.com/googletv/answer/10050564?hl=en"
+    }
+  ]
+}
