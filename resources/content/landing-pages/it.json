@@ -346,7 +346,7 @@
               "body": "Opplexify gestisce la fase di pagamento. Controlla servizio, durata, valuta e totale prima di confermare. L'account cliente resta nel portale centrale Opplex."
             },
             {
-              "heading": "Quante connessioni simultanee sono incluse?",
+              "heading": "Trex IPTV consente più connessioni simultanee?",
               "body": "Ogni piano Trex include una connessione simultanea. Più lettori installati non consentono riproduzioni contemporanee. Chiedi le condizioni per cambiare dispositivo; né la durata annuale né il nome 8K aumentano questo limite."
             },
             {
@@ -608,11 +608,11 @@
           "slug": "blogs/check-your-playback-chain",
           "title": "Trex IPTV 8K: controlla i problemi di riproduzione",
           "description": "Distingui sorgente, connessione, lettore e schermo per esaminare le interruzioni nella configurazione Trex IPTV 8K.",
-          "intro": "Se la riproduzione Trex IPTV 8K si interrompe o l'immagine cambia, non modificare tutto insieme. Separa sorgente, rete, lettore e schermo per confrontare una condizione e spiegare il risultato all'assistenza.",
+          "intro": "Se Trex IPTV 8K non funziona sul tuo dispositivo, la riproduzione si interrompe o l'immagine cambia, non modificare tutto insieme. Separa sorgente, rete, lettore e schermo per confrontare una condizione e spiegare il risultato all'assistenza.",
           "sections": [
             {
               "heading": "Verifica se il problema riguarda uno o più elementi",
-              "body": "Verifica se il problema riguarda una sorgente autorizzata o più sorgenti. Confronta cavo e Wi-Fi sullo stesso dispositivo quando possibile. Un numero di velocità non descrive ogni interruzione."
+              "body": "Verifica se il problema riguarda una sorgente autorizzata o più sorgenti. Confronta cavo e Wi-Fi sullo stesso dispositivo quando possibile. Un numero di velocità non descrive ogni interruzione. Un errore su un solo dispositivo non dimostra che Trex IPTV sia fuori servizio: controlla se falliscono anche altre app abituali o la connessione di casa."
             },
             {
               "heading": "Conserva il risultato",
@@ -1084,7 +1084,7 @@
           "slug": "packages",
           "title": "Pacchetti Geo IPTV: confronta gli stessi dettagli",
           "description": "Confronta prezzi e durate Geo IPTV, con una connessione simultanea e requisiti coerenti di dispositivo e luogo.",
-          "intro": "Mantieni gli stessi requisiti nel confronto Geo: dispositivo, luogo previsto e funzioni essenziali del lettore. Confronta importo completo e durata indicati. Ogni piano include una connessione simultanea; una pagina tradotta non modifica questo limite.",
+          "intro": "Mantieni gli stessi requisiti nel confronto dei piani Geo IPTV: dispositivo, luogo previsto e funzioni essenziali del lettore. Confronta importo completo e durata indicati. Ogni piano include una connessione simultanea; una pagina tradotta non modifica questo limite.",
           "sections": [
             {
               "heading": "Usa una sola lista di confronto",
@@ -1109,7 +1109,7 @@
           "slug": "reseller-panel",
           "title": "Geo per rivenditori: verifica l'accordo disponibile",
           "description": "Prepara una domanda commerciale senza trattare il prezzo personale come tariffa pannello.",
-          "intro": "Un piano domestico non definisce le condizioni di rivendita. Chiarisci prima la differenza tra cliente finale e accordo commerciale. Se cerchi un pannello reseller Geo, questa pagina serve a preparare una richiesta: non è un accesso al pannello né un'offerta all'ingrosso confermata.",
+          "intro": "Un piano domestico non definisce le condizioni di rivendita. Chiarisci prima la differenza tra cliente finale e accordo commerciale. Se cerchi un pannello reseller Geo IPTV, questa pagina serve a preparare una richiesta: non è un accesso al pannello né un'offerta all'ingrosso confermata.",
           "sections": [
             {
               "heading": "Chiedi l'offerta concreta",
@@ -1448,7 +1448,7 @@
           "slug": "packages",
           "title": "Piani 5G Live IPTV: prezzi, durate e una connessione",
           "description": "Consulta prezzi e durate 5G Live IPTV con una connessione simultanea, separati dai costi di rete mobile e lettore.",
-          "intro": "Scegli una durata 5G Live dopo aver controllato la connessione abituale. Ogni piano include una connessione simultanea. Il prezzo del servizio non fornisce dati mobili o banda larga; più tempo non migliora la ricezione né elimina il roaming.",
+          "intro": "Scegli la durata di un piano 5G Live IPTV dopo aver controllato la connessione abituale. Ogni piano include una connessione simultanea. Il prezzo del servizio non fornisce dati mobili o banda larga; più tempo non migliora la ricezione né elimina il roaming.",
           "sections": [
             {
               "heading": "Considera la connessione pagata a parte",
@@ -1494,7 +1494,7 @@
           "slug": "iptv-applications",
           "title": "5G Live IPTV: lettori mobili, dati e batteria",
           "description": "Verifica compatibilità, licenza e impostazioni documentate di dati e batteria per l'app utilizzata con 5G Live IPTV.",
-          "intro": "Quando scegli un lettore IPTV per 5G Live, controlla l'apparecchio esatto e i comandi. Sul telefono consulta gli effetti di blocco schermo, batteria e dati mobili, senza disattivare le protezioni per impostazione predefinita.",
+          "intro": "Quando scegli un lettore per il servizio 5G Live IPTV, controlla l'apparecchio esatto e i comandi. Sul telefono consulta gli effetti di blocco schermo, batteria e dati mobili, senza disattivare le protezioni per impostazione predefinita.",
           "sections": [
             {
               "heading": "Collega software e configurazione",
@@ -1804,7 +1804,7 @@
           "slug": "packages",
           "title": "Abbonamento IPTV: confronta prezzi e durata",
           "description": "Confronta abbonamenti IPTV Opplex e Filex per periodo, totale ed equivalente mensile; verifica connessioni, licenza e costi al pagamento.",
-          "intro": "Scegli prima Opplex o Filex, poi valuta il periodo adatto alle tue esigenze.",
+          "intro": "Per scegliere un abbonamento IPTV, confronta prima Opplex e Filex, poi valuta il periodo adatto alle tue esigenze.",
           "sections": [
             {
               "heading": "Confronta gli stessi dati",
@@ -1873,7 +1873,7 @@
           "slug": "setup",
           "title": "Prepara l'abbonamento IPTV prima del checkout",
           "description": "Prepara l’abbonamento IPTV con modello, lettore e connessione di riferimento; distingui una domanda di configurazione da un pagamento in sospeso.",
-          "intro": "Annota dispositivo, lettore e servizio prima di scegliere un impegno lungo.",
+          "intro": "Prima di scegliere un abbonamento IPTV di lunga durata, annota dispositivo, lettore e servizio che intendi usare.",
           "sections": [
             {
               "heading": "Prepara le basi",
@@ -2252,10 +2252,10 @@
           "slug": "setup",
           "title": "Come preparare IPTV: checklist di configurazione",
           "description": "Prepara Get IPTV con modello, sistema, versione del lettore e connessione; registra una prova ripetibile e separa i dubbi sull’ordine.",
-          "intro": "Comincia da connessione ordinaria, dispositivo, lettore e stato dell'ordine.",
+          "intro": "Per preparare Get IPTV, comincia da connessione ordinaria, dispositivo, lettore e stato dell'ordine.",
           "sections": [
             {
-              "heading": "Prepara le basi",
+              "heading": "Come configurare IPTV: prepara le basi",
               "body": "Annota modello, versioni e rete. Segui istruzioni ufficiali per aggiornamenti e spazio, mantenendo le impostazioni funzionanti."
             },
             {

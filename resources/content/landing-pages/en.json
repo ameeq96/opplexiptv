@@ -320,7 +320,7 @@
           "intro": "Before choosing a Trex IPTV subscription, check the yearly term, your player and the screen you will use. These answers explain the one-connection limit and the difference between a brand name and the picture your setup can deliver.",
           "sections": [
             {"heading": "Will everything play in 8K?", "body": "No. Trex IPTV 8K is the brand name, not a guarantee of source resolution. A high-resolution screen cannot add detail that the source does not contain."},
-            {"heading": "How many simultaneous connections are included?", "body": "Every Trex plan includes one simultaneous connection. Several installed players do not permit concurrent viewing. Confirm any device-switching requirements with support; the yearly term and the 8K brand name do not increase this allowance."},
+            {"heading": "Does Trex IPTV allow multiple connections?", "body": "Every Trex plan includes one simultaneous connection. Several installed players do not permit concurrent viewing. Confirm any device-switching requirements with support; the yearly term and the 8K brand name do not increase this allowance."},
             {"heading": "Why does checkout open Opplexify?", "body": "Opplexify handles the payment step for these plans. Review the selected service, amount and order details there before confirming; your customer account remains in the central Opplex portal."}
           ],
           "kind": "editorial"
@@ -484,9 +484,9 @@
           "slug": "blogs/check-your-playback-chain",
           "title": "Trex IPTV not playing? Check the playback chain",
           "description": "Troubleshoot Trex IPTV playback or buffering symptoms by checking the source, home connection, player and screen one step at a time.",
-          "intro": "If Trex IPTV is not playing as expected, note whether the picture buffers, freezes or fails to open. The source, connection, player and display each affect what reaches the television. Compare one part at a time so you can describe what actually changes.",
+          "intro": "If Trex IPTV is not working on your device, note whether the picture buffers, freezes or fails to open. The source, connection, player and display each affect what reaches the television. Compare one part at a time so you can describe what actually changes.",
           "sections": [
-            {"heading": "Start with a simple comparison", "body": "Note whether the problem affects one authorised item or several. Test the connection near the viewing device, and compare wired access with Wi-Fi if available. A single speed reading does not describe every interruption."},
+            {"heading": "Start with a simple comparison", "body": "Note whether the problem affects one authorised item or several. Test the connection near the viewing device, and compare wired access with Wi-Fi if available. A single speed reading does not describe every interruption. An error on one device is not enough to conclude that Trex IPTV is down; check whether other ordinary apps and your home connection also fail."},
             {"heading": "Keep the result, not just the setting", "body": "Try one documented player adjustment and note whether it helps. Revert it if it does not. Report persistent problems with the time, device and app version; a brand name or a display's advertised resolution is not a playback guarantee."},
             {"heading": "Separate a navigation problem from a playback problem", "body": "If menus respond but one item fails, record that item and its exact error privately. If several items fail, check ordinary internet access on the same device. Compare one documented setting or connection only, then restore it if it does not help. Do not open a second simultaneous stream as a test."},
             {"heading":"Separate an unresponsive app from interrupted playback","body":"Write down which stage fails: opening the player, browsing the list or playing one item. If other ordinary apps also fail on the same television, investigate the device or connection before changing the playlist. If only one item fails, record its label privately and the time. Follow the manufacturer's instructions for the device instead of assuming an 8K screen changes the source.","links":[{"label":"Official Google TV troubleshooting","url":"https://support.google.com/googletv/answer/10070482?hl=en"}]}
@@ -796,7 +796,7 @@
           "slug": "reseller-panel",
           "title": "Geo business enquiries across different markets",
           "description": "Discuss a possible Geo reseller arrangement with attention to local requirements, permitted use and support responsibilities.",
-          "intro": "Serving customers in a particular market involves more than translating a sales page. If you are interested in a Geo business arrangement, ask what is available and clarify the permissions and responsibilities before making any commitment. If you searched for a Geo reseller panel, this is an enquiry page, not a panel sign-in or a confirmed wholesale offer.",
+          "intro": "Serving customers in a particular market involves more than translating a sales page. If you are interested in a Geo IPTV reseller arrangement, ask what is available and clarify the permissions and responsibilities before making any commitment. If you searched for a Geo reseller panel, this is an enquiry page, not a panel sign-in or a confirmed wholesale offer.",
           "sections": [
             {"heading": "Explain the market you intend to serve", "body": "Outline the countries, languages and support coverage you have in mind. Confirm applicable regional and copyright restrictions rather than assuming a retail plan allows redistribution."},
             {"heading": "Request a specific agreement", "body": "This page does not offer a guaranteed reseller panel, wholesale rate or margin. Support must confirm any available arrangement in writing. Another brand's reseller pricing is not a Geo offer, and personal access must not be resold without an appropriate agreement."},
@@ -1008,7 +1008,7 @@
           "slug": "packages",
           "title": "5G Live IPTV plans: prices, terms and connection limit",
           "description": "Review 5G Live IPTV package prices and durations with one simultaneous connection, separate from mobile-data and player costs.",
-          "intro": "Choose a 5G Live term after checking how you normally connect. Every plan includes one simultaneous connection. The displayed service price does not supply mobile data or broadband, and a longer term does not improve reception or remove roaming charges.",
+          "intro": "Choose a 5G Live IPTV plan term after checking how you normally connect. Every plan includes one simultaneous connection. The displayed service price does not supply mobile data or broadband, and a longer term does not improve reception or remove roaming charges.",
           "sections": [
             {"heading": "Account for the connection you already pay for", "body": "Compare the full package price and duration, then check separate player fees and network charges. Confirm device suitability before committing. The brand name does not promise a network speed, 5G coverage or uninterrupted playback."},
             {"heading": "Keep payment and network checks separate", "body": "The selected plan opens on Opplexify for payment, with account and order support in the main Opplex system. Check the package and final total before paying. If playback changes after a network switch, record that change; buying the plan again is not a network test."}
@@ -1261,7 +1261,7 @@
           "slug": "packages",
           "title": "Compare IPTV subscription plans and full totals",
           "description": "Compare current Opplex and Filex IPTV subscription totals, terms and monthly equivalents, then check connections, player costs and checkout fees.",
-          "intro": "Choose the service first, then consider how long you need it. A longer period deserves the same device and cost checks, even when its comparison figure looks lower.",
+          "intro": "To choose an IPTV subscription, compare Opplex and Filex first, then consider how long you need the service. A longer period deserves the same device and cost checks, even when its comparison figure looks lower.",
           "sections": [
             {
               "heading": "Compare like with like",
