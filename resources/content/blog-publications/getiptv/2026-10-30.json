@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-10-30",
+  "topic": "Blank HDMI television screen versus an error inside the player: locate the missing picture",
+  "primary_keyword": "IPTV blank screen",
+  "slug": "getiptv-blank-screen-tv-input-device-home-and-hdmi",
+  "translations": {
+    "en": {
+      "title": "IPTV blank screen: check the TV input before the player",
+      "excerpt": "A television showing no signal needs a different first check from a player displaying an error. Find where the picture disappears before changing account settings.",
+      "seo_title": "IPTV blank screen: TV input, device home screen and HDMI path",
+      "seo_description": "Trace an IPTV blank screen from the selected TV input to the external device home screen and HDMI connections before changing player or account settings.",
+      "sections": [
+        {
+          "heading": "Locate the missing picture",
+          "paragraphs": [
+            "An IPTV blank screen can describe several different observations. When using an external streaming box, first check whether its home screen appears on the television. A TV message saying no signal is different from an error displayed inside a visible player. Note the exact wording and whether menus remain visible. These HDMI checks concern an external device; for a television’s built-in app, begin from the TV home screen instead."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Match the selected input to the connected port",
+          "paragraphs": [
+            "Use the television’s input selector and compare its selected HDMI label with the physical port connected to the streaming box. Select the matching input, then check the box’s home screen again before opening the player. For Apple TV, Apple’s official black-screen guide recommends checking this input match and reconnecting both HDMI cable ends firmly. Follow the instructions for your actual device, as remote buttons and menu labels vary."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple Support: Apple TV black screen and HDMI checks",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Trace the cable path and describe the result",
+          "paragraphs": [
+            "Inspect the route from box to television, including any HDMI switch or receiver. Apple’s guide suggests connecting Apple TV directly to the TV when investigating an intermediate device. If appropriate for your equipment, make one connection change and note whether the home screen returns. If menus appear but playback alone fails, record the player’s exact error separately. Give Get IPTV support the device model, input label and observations; keep credentials private. These checks do not establish that a new subscription or factory reset is needed."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pantalla negra en IPTV: revisa la entrada del televisor",
+      "excerpt": "Un televisor sin señal requiere una primera comprobación distinta de un reproductor con un error visible. Localiza dónde desaparece la imagen antes de cambiar ajustes.",
+      "seo_title": "Pantalla negra en IPTV: entrada, inicio del dispositivo y HDMI",
+      "seo_description": "Localiza una pantalla negra en IPTV revisando la entrada del televisor, el inicio del dispositivo externo y las conexiones HDMI antes de cambiar la cuenta.",
+      "sections": [
+        {
+          "heading": "Localiza dónde falta la imagen",
+          "paragraphs": [
+            "Una pantalla negra en IPTV puede describir observaciones distintas. Si utilizas un dispositivo de reproducción externo, comprueba primero si aparece su pantalla de inicio en el televisor. Un aviso del televisor que indica falta de señal es distinto de un error dentro de un reproductor visible. Anota el texto exacto y si puedes ver los menús. Estas comprobaciones HDMI corresponden a un equipo externo; si usas una aplicación integrada, comienza desde el inicio del televisor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Relaciona la entrada seleccionada con el puerto conectado",
+          "paragraphs": [
+            "Abre el selector de entradas del televisor y compara la etiqueta HDMI seleccionada con el puerto físico conectado al dispositivo. Elige la entrada correspondiente y vuelve a comprobar el inicio del dispositivo antes de abrir el reproductor. Para Apple TV, la guía oficial recomienda revisar esa correspondencia y reconectar firmemente ambos extremos del cable HDMI. Sigue las instrucciones de tu equipo concreto, porque los botones y los nombres de los menús varían."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Soporte de Apple: pantalla negra de Apple TV y conexiones HDMI",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa el recorrido del cable y describe el resultado",
+          "paragraphs": [
+            "Inspecciona el trayecto entre el dispositivo y el televisor, incluidos conmutadores o receptores HDMI. Apple propone conectar Apple TV directamente al televisor para investigar un equipo intermedio. Si corresponde a tu instalación, cambia una conexión y anota si vuelve el inicio. Si aparecen los menús y solo falla la reproducción, registra aparte el error exacto. Comunica a soporte de Get IPTV el modelo, la entrada y lo observado, sin credenciales. Esto no demuestra que necesites otra suscripción o restablecer de fábrica."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écran noir IPTV : vérifiez l’entrée du téléviseur",
+      "excerpt": "Un téléviseur sans signal et un lecteur affichant une erreur demandent des premières vérifications différentes. Repérez où l’image disparaît avant de modifier le compte.",
+      "seo_title": "Écran noir IPTV : entrée TV, accueil du boîtier et HDMI",
+      "seo_description": "Recherchez l’origine d’un écran noir IPTV en vérifiant l’entrée TV, l’accueil du boîtier externe et les connexions HDMI avant de modifier les réglages du compte.",
+      "sections": [
+        {
+          "heading": "Repérez où l’image manque",
+          "paragraphs": [
+            "Un écran noir IPTV peut désigner plusieurs observations. Avec un boîtier de diffusion externe, vérifiez d’abord si son écran d’accueil apparaît sur le téléviseur. Un message du téléviseur indiquant une absence de signal diffère d’une erreur affichée dans un lecteur visible. Notez le texte exact et la présence éventuelle des menus. Ces vérifications HDMI concernent un appareil externe ; pour une application intégrée au téléviseur, partez plutôt de l’accueil du téléviseur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Associez l’entrée choisie au port raccordé",
+          "paragraphs": [
+            "Ouvrez le sélecteur d’entrée du téléviseur et comparez le libellé HDMI sélectionné au port physique raccordé au boîtier. Choisissez l’entrée correspondante, puis recherchez de nouveau l’accueil du boîtier avant d’ouvrir le lecteur. Pour Apple TV, le guide officiel conseille de vérifier cette correspondance et de rebrancher fermement les deux extrémités du câble HDMI. Suivez les instructions de votre appareil : boutons et intitulés peuvent varier."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Assistance Apple : écran noir Apple TV et connexions HDMI",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Suivez le câble et décrivez le résultat",
+          "paragraphs": [
+            "Inspectez le trajet entre boîtier et téléviseur, y compris tout commutateur HDMI ou amplificateur. Apple propose de relier directement Apple TV au téléviseur pour examiner un appareil intermédiaire. Si cela convient à votre équipement, modifiez une connexion et notez si l’accueil revient. Si les menus apparaissent mais que la lecture échoue, relevez séparément l’erreur exacte. Transmettez au support Get IPTV le modèle, l’entrée et vos observations, sans identifiants. Ces vérifications ne prouvent pas qu’un nouvel abonnement ou une réinitialisation soit nécessaire."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Schermo nero IPTV: controlla prima l’ingresso del televisore",
+      "excerpt": "Un televisore senza segnale richiede un primo controllo diverso da un lettore che mostra un errore. Individua dove manca l’immagine prima di cambiare le impostazioni.",
+      "seo_title": "Schermo nero IPTV: ingresso TV, schermata iniziale e HDMI",
+      "seo_description": "Individua uno schermo nero IPTV controllando l’ingresso TV, la schermata iniziale del dispositivo esterno e i collegamenti HDMI prima di cambiare account.",
+      "sections": [
+        {
+          "heading": "Individua dove manca l’immagine",
+          "paragraphs": [
+            "Uno schermo nero IPTV può indicare osservazioni diverse. Se utilizzi un dispositivo di riproduzione esterno, controlla prima se la sua schermata iniziale compare sul televisore. Un messaggio della TV che segnala assenza di segnale è diverso da un errore mostrato dentro un lettore visibile. Annota il testo preciso e se i menu rimangono visibili. Questi controlli HDMI riguardano un dispositivo esterno; per un’app integrata, parti invece dalla schermata iniziale del televisore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Abbina l’ingresso selezionato alla porta collegata",
+          "paragraphs": [
+            "Apri il selettore degli ingressi del televisore e confronta l’etichetta HDMI selezionata con la porta fisica collegata al dispositivo. Scegli l’ingresso corrispondente e ricontrolla la schermata iniziale prima di aprire il lettore. Per Apple TV, la guida ufficiale consiglia di verificare questa corrispondenza e reinserire saldamente entrambe le estremità del cavo HDMI. Segui le istruzioni del tuo apparecchio, perché pulsanti e nomi dei menu variano."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Supporto Apple: schermo nero di Apple TV e collegamenti HDMI",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Segui il percorso del cavo e descrivi il risultato",
+          "paragraphs": [
+            "Esamina il tragitto tra dispositivo e televisore, inclusi eventuali commutatori HDMI o ricevitori. Apple suggerisce il collegamento diretto di Apple TV al televisore per verificare un apparecchio intermedio. Se adatto al tuo impianto, modifica un collegamento e annota se torna la schermata iniziale. Se i menu appaiono ma la riproduzione fallisce, registra separatamente l’errore esatto. Fornisci al supporto Get IPTV modello, ingresso e osservazioni, senza credenziali. Questi controlli non dimostrano che servano un altro abbonamento o un ripristino di fabbrica."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Zwart IPTV-scherm: controleer eerst de televisie-ingang",
+      "excerpt": "Een televisie zonder signaal vraagt om een andere eerste controle dan een speler met een zichtbare fout. Zoek waar het beeld verdwijnt voordat je instellingen wijzigt.",
+      "seo_title": "Zwart IPTV-scherm: tv-ingang, beginscherm en HDMI-route",
+      "seo_description": "Zoek de oorzaak van een zwart IPTV-scherm via de gekozen tv-ingang, het beginscherm van het externe apparaat en de HDMI-verbindingen voordat je het account wijzigt.",
+      "sections": [
+        {
+          "heading": "Bepaal waar het beeld ontbreekt",
+          "paragraphs": [
+            "Een zwart IPTV-scherm kan verschillende waarnemingen beschrijven. Controleer bij een externe streamingbox eerst of het beginscherm van die box op de televisie verschijnt. Een tv-melding dat er geen signaal is, verschilt van een fout binnen een zichtbare speler. Noteer de exacte tekst en of menu’s zichtbaar blijven. Deze HDMI-controles gelden voor een extern apparaat; gebruik bij een ingebouwde televisie-app eerst het beginscherm van de tv."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Koppel de gekozen ingang aan de aangesloten poort",
+          "paragraphs": [
+            "Open de ingangskeuze van de televisie en vergelijk het gekozen HDMI-label met de fysieke poort waarop de box is aangesloten. Selecteer de bijbehorende ingang en controleer opnieuw het beginscherm voordat je de speler opent. Voor Apple TV adviseert de officiële uitleg deze ingangskeuze te controleren en beide uiteinden van de HDMI-kabel stevig opnieuw aan te sluiten. Volg de instructies voor jouw apparaat, omdat knoppen en menunamen verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple Support: zwart Apple TV-scherm en HDMI-controles",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Volg de kabelroute en beschrijf het resultaat",
+          "paragraphs": [
+            "Bekijk de route tussen box en televisie, inclusief een HDMI-schakelaar of receiver. Apple stelt een rechtstreekse verbinding tussen Apple TV en televisie voor om een tussenliggend apparaat te onderzoeken. Wijzig indien passend één verbinding en noteer of het beginscherm terugkeert. Verschijnen menu’s maar mislukt alleen afspelen, noteer dan apart de exacte spelerfout. Geef Get IPTV-ondersteuning het model, de ingang en je waarnemingen, zonder inloggegevens. Deze controles tonen niet aan dat een nieuw abonnement of fabrieksreset nodig is."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Tela preta no IPTV: confira primeiro a entrada da televisão",
+      "excerpt": "Uma televisão sem sinal pede uma primeira verificação diferente de um reprodutor com erro visível. Localize onde a imagem desaparece antes de alterar a conta.",
+      "seo_title": "Tela preta no IPTV: entrada da TV, tela inicial e HDMI",
+      "seo_description": "Investigue uma tela preta no IPTV conferindo a entrada da TV, a tela inicial do aparelho externo e as conexões HDMI antes de mudar os ajustes da conta.",
+      "sections": [
+        {
+          "heading": "Localize onde falta a imagem",
+          "paragraphs": [
+            "Uma tela preta no IPTV pode descrever observações diferentes. Ao usar um aparelho externo de reprodução, confira primeiro se a tela inicial dele aparece na televisão. Uma mensagem da TV indicando ausência de sinal difere de um erro dentro de um reprodutor visível. Anote o texto exato e se os menus continuam aparecendo. Estas verificações HDMI são para aparelhos externos; no caso de um aplicativo integrado, comece pela tela inicial da própria TV."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Combine a entrada selecionada com a porta conectada",
+          "paragraphs": [
+            "Abra o seletor de entradas da televisão e compare a identificação HDMI escolhida com a porta física ligada ao aparelho. Selecione a entrada correspondente e confira novamente a tela inicial antes de abrir o reprodutor. Para Apple TV, o guia oficial recomenda verificar essa correspondência e reconectar firmemente as duas pontas do cabo HDMI. Siga as instruções do seu equipamento, pois botões e nomes de menus variam."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Suporte da Apple: tela preta na Apple TV e conexões HDMI",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Siga o caminho do cabo e descreva o resultado",
+          "paragraphs": [
+            "Inspecione o trajeto entre aparelho e televisão, incluindo qualquer seletor HDMI ou receptor. A Apple sugere ligar Apple TV diretamente à TV para investigar um equipamento intermediário. Se adequado à instalação, altere uma conexão e anote se a tela inicial volta. Se os menus aparecem, mas só a reprodução falha, registre separadamente o erro exato. Informe ao suporte Get IPTV o modelo, a entrada e as observações, sem credenciais. Isso não demonstra necessidade de outra assinatura ou restauração de fábrica."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Черный экран IPTV: сначала проверьте вход телевизора",
+      "excerpt": "Отсутствие сигнала на телевизоре и ошибка внутри видимого плеера требуют разных первых проверок. Определите, где исчезает изображение, прежде чем менять настройки.",
+      "seo_title": "Черный экран IPTV: вход ТВ, главный экран приставки и HDMI",
+      "seo_description": "При черном экране IPTV проверьте вход телевизора, главный экран внешней приставки и подключения HDMI, прежде чем менять настройки плеера или аккаунта.",
+      "sections": [
+        {
+          "heading": "Определите, где пропадает изображение",
+          "paragraphs": [
+            "Черный экран IPTV может описывать разные наблюдения. Если вы используете внешнюю приставку, сначала проверьте, появляется ли на телевизоре ее главный экран. Сообщение телевизора об отсутствии сигнала отличается от ошибки внутри видимого плеера. Запишите точный текст и отметьте, остаются ли видны меню. Эти проверки HDMI относятся к внешнему устройству; если приложение встроено в телевизор, начните с главного экрана самого телевизора."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сопоставьте выбранный вход с подключенным разъемом",
+          "paragraphs": [
+            "Откройте выбор входа телевизора и сравните выбранное обозначение HDMI с физическим разъемом, к которому подключена приставка. Выберите соответствующий вход и снова проверьте главный экран приставки перед запуском плеера. Для Apple TV официальная инструкция рекомендует проверить это соответствие и плотно переподключить оба конца кабеля HDMI. Следуйте руководству именно вашего устройства: кнопки пульта и названия пунктов меню могут различаться."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Поддержка Apple: черный экран Apple TV и проверка HDMI",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "Проследите путь кабеля и опишите результат",
+          "paragraphs": [
+            "Осмотрите путь от приставки до телевизора, включая переключатель HDMI или ресивер. Apple предлагает подключить Apple TV напрямую к телевизору при проверке промежуточного устройства. Если это подходит вашему оборудованию, измените одно подключение и отметьте, появился ли главный экран. Если меню видны, а не работает только воспроизведение, отдельно запишите точную ошибку плеера. Сообщите поддержке Get IPTV модель, вход и наблюдения, скрыв данные доступа. Эти проверки не доказывают необходимость новой подписки или сброса настроек."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV پر سیاہ اسکرین: پہلے ٹی وی کا ان پٹ دیکھیں",
+      "excerpt": "ٹی وی پر سگنل نہ آنا اور پلیئر کے اندر خرابی دکھائی دینا مختلف صورتیں ہیں۔ اکاؤنٹ کی سیٹنگ بدلنے سے پہلے دیکھیں تصویر کہاں غائب ہے۔",
+      "seo_title": "IPTV کی سیاہ اسکرین: ٹی وی ان پٹ، ہوم اسکرین اور HDMI",
+      "seo_description": "IPTV کی سیاہ اسکرین پر اکاؤنٹ یا پلیئر بدلنے سے پہلے منتخب ٹی وی ان پٹ، بیرونی آلے کی ہوم اسکرین اور HDMI کنکشن کی جانچ کریں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں تصویر کہاں غائب ہوتی ہے",
+          "paragraphs": [
+            "IPTV کی سیاہ اسکرین کئی مختلف مشاہدوں کا نام ہو سکتی ہے۔ بیرونی اسٹریمنگ باکس استعمال ہو تو پہلے دیکھیں کہ اس کی ہوم اسکرین ٹی وی پر آتی ہے یا نہیں۔ ٹی وی کا سگنل نہ ہونے کا پیغام، نظر آنے والے پلیئر کے اندر خرابی کے پیغام سے مختلف ہے۔ اصل الفاظ اور مینو نظر آنے یا نہ آنے کی بات لکھیں۔ HDMI کی یہ جانچ بیرونی آلے کے لیے ہے؛ ٹی وی کی اپنی ایپ ہو تو اس کی ہوم اسکرین سے شروع کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "منتخب ان پٹ کو جڑی ہوئی پورٹ سے ملائیں",
+          "paragraphs": [
+            "ٹی وی کے ان پٹ منتخب کرنے والے مینو میں چنی ہوئی HDMI کا نام اس پورٹ سے ملائیں جس میں باکس کا تار لگا ہے۔ درست ان پٹ منتخب کرکے پلیئر کھولنے سے پہلے باکس کی ہوم اسکرین پھر دیکھیں۔ Apple TV کے لیے سرکاری رہنمائی اس مطابقت کو جانچنے اور HDMI تار کے دونوں سرے مضبوطی سے دوبارہ لگانے کا مشورہ دیتی ہے۔ اپنے اصل آلے کی ہدایات دیکھیں کیونکہ ریموٹ کے بٹن اور مینو کے نام بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple سپورٹ: Apple TV کی سیاہ اسکرین اور HDMI کی جانچ",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "تار کا راستہ دیکھیں اور نتیجہ لکھیں",
+          "paragraphs": [
+            "باکس سے ٹی وی تک راستہ دیکھیں، درمیان میں HDMI سوئچ یا ریسیور بھی شامل کریں۔ Apple درمیانی آلے کی جانچ کے لیے Apple TV کو سیدھا ٹی وی سے جوڑنے کا مشورہ دیتا ہے۔ اپنے سامان کے مطابق ہو تو ایک کنکشن بدلیں اور ہوم اسکرین واپس آنے کا نتیجہ لکھیں۔ مینو نظر آئیں مگر صرف ویڈیو نہ چلے تو پلیئر کی اصل خرابی الگ نوٹ کریں۔ Get IPTV سپورٹ کو ماڈل، ان پٹ اور مشاہدہ دیں، خفیہ معلومات نہیں۔ اس سے نئی سبسکرپشن یا فیکٹری ری سیٹ کی ضرورت ثابت نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "شاشة IPTV سوداء: تحقق من مدخل التلفزيون أولاً",
+      "excerpt": "غياب الإشارة عن التلفزيون يختلف عن ظهور خطأ داخل مشغّل مرئي. حدد موضع اختفاء الصورة قبل تغيير إعدادات المشغّل أو بيانات الحساب.",
+      "seo_title": "شاشة IPTV سوداء: مدخل التلفزيون والشاشة الرئيسية وHDMI",
+      "seo_description": "تتبع الشاشة السوداء في IPTV عبر مدخل التلفزيون المحدد والشاشة الرئيسية للجهاز الخارجي ووصلات HDMI قبل تعديل إعدادات المشغّل أو الحساب.",
+      "sections": [
+        {
+          "heading": "حدد أين تختفي الصورة",
+          "paragraphs": [
+            "قد تعني شاشة IPTV السوداء ملاحظات مختلفة. عند استخدام جهاز بث خارجي، تحقق أولاً من ظهور شاشته الرئيسية على التلفزيون. رسالة التلفزيون التي تقول إنه لا توجد إشارة تختلف عن خطأ داخل مشغّل ظاهر. دوّن النص الدقيق وما إذا كانت القوائم ما زالت مرئية. فحوص HDMI هذه تخص جهازاً خارجياً؛ أما عند استخدام تطبيق مدمج في التلفزيون، فابدأ من الشاشة الرئيسية للتلفزيون نفسه."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "طابق المدخل المختار مع المنفذ الموصول",
+          "paragraphs": [
+            "افتح اختيار المدخل في التلفزيون وقارن تسمية HDMI المحددة بالمنفذ الفعلي الموصول بجهاز البث. اختر المدخل المطابق، ثم تحقق مجدداً من الشاشة الرئيسية للجهاز قبل فتح المشغّل. بالنسبة إلى Apple TV، يوصي الدليل الرسمي بفحص هذا التطابق وإعادة تثبيت طرفي كابل HDMI بإحكام. اتبع تعليمات جهازك الفعلي لأن أزرار جهاز التحكم وأسماء القوائم قد تختلف."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دعم Apple: الشاشة السوداء في Apple TV وفحص HDMI",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "تتبع مسار الكابل وصف النتيجة",
+          "paragraphs": [
+            "افحص المسار من الجهاز إلى التلفزيون، بما فيه أي مبدّل HDMI أو مستقبل. تقترح Apple توصيل Apple TV مباشرة بالتلفزيون عند فحص جهاز وسيط. إذا ناسب ذلك معداتك، غيّر وصلة واحدة ودوّن هل عادت الشاشة الرئيسية. إذا ظهرت القوائم وتعطل التشغيل وحده، فسجل خطأ المشغّل الدقيق بشكل منفصل. أعطِ دعم Get IPTV طراز الجهاز والمدخل والملاحظات، مع إبقاء بيانات الدخول خاصة. لا تثبت هذه الفحوص ضرورة شراء اشتراك جديد أو إعادة ضبط المصنع."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV पर काली स्क्रीन: पहले टीवी का इनपुट जाँचें",
+      "excerpt": "टीवी पर सिग्नल न मिलना और दिखाई दे रहे प्लेयर में त्रुटि आना अलग स्थितियाँ हैं। खाते की सेटिंग बदलने से पहले पता करें कि तस्वीर कहाँ गायब है।",
+      "seo_title": "IPTV काली स्क्रीन: टीवी इनपुट, होम स्क्रीन और HDMI",
+      "seo_description": "IPTV पर काली स्क्रीन आने पर प्लेयर या खाते की सेटिंग बदलने से पहले टीवी इनपुट, बाहरी डिवाइस की होम स्क्रीन और HDMI कनेक्शन जाँचें।",
+      "sections": [
+        {
+          "heading": "पता करें कि तस्वीर कहाँ नहीं दिख रही",
+          "paragraphs": [
+            "IPTV पर काली स्क्रीन कई अलग स्थितियों का वर्णन हो सकती है। बाहरी स्ट्रीमिंग बॉक्स इस्तेमाल करते समय पहले देखें कि उसकी होम स्क्रीन टीवी पर आती है या नहीं। टीवी का सिग्नल न मिलने का संदेश, दिख रहे प्लेयर के अंदर आने वाली त्रुटि से अलग है। सही शब्द और मेन्यू दिखाई देने की स्थिति लिखें। HDMI की ये जाँच बाहरी डिवाइस के लिए हैं; टीवी के अपने ऐप के मामले में टीवी की होम स्क्रीन से शुरू करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "चुने हुए इनपुट को जुड़े पोर्ट से मिलाएँ",
+          "paragraphs": [
+            "टीवी का इनपुट चयन खोलें और चुने HDMI नाम को उस वास्तविक पोर्ट से मिलाएँ जिससे बॉक्स जुड़ा है। सही इनपुट चुनकर प्लेयर खोलने से पहले बॉक्स की होम स्क्रीन फिर देखें। Apple TV के लिए आधिकारिक निर्देश इस मिलान की जाँच करने और HDMI के दोनों सिरे मजबूती से दोबारा जोड़ने का सुझाव देते हैं। अपने वास्तविक डिवाइस के निर्देश अपनाएँ क्योंकि रिमोट के बटन और मेन्यू के नाम बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple सहायता: Apple TV पर काली स्क्रीन और HDMI की जाँच",
+              "url": "https://support.apple.com/en-us/108804"
+            }
+          ]
+        },
+        {
+          "heading": "केबल का रास्ता जाँचें और नतीजा लिखें",
+          "paragraphs": [
+            "बॉक्स से टीवी तक के रास्ते में HDMI स्विच या रिसीवर भी देखें। बीच के उपकरण की जाँच के लिए Apple, Apple TV को सीधे टीवी से जोड़ने का सुझाव देता है। आपके उपकरणों के लिए उचित हो तो एक कनेक्शन बदलें और होम स्क्रीन लौटने का परिणाम लिखें। मेन्यू दिखें लेकिन केवल वीडियो न चले तो प्लेयर की सटीक त्रुटि अलग लिखें। Get IPTV सहायता को मॉडल, इनपुट और अवलोकन दें; लॉगिन जानकारी निजी रखें। इससे नई सदस्यता या फ़ैक्टरी रीसेट की जरूरत साबित नहीं होती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple Support: Apple TV black screen and HDMI checks",
+      "url": "https://support.apple.com/en-us/108804"
+    }
+  ]
+}

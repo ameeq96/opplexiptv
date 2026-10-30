@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-10-30",
+  "topic": "Apple TV system and IPTV player updates: distinguish versions before checking playback",
+  "primary_keyword": "Apple TV IPTV update",
+  "slug": "geo-apple-tv-tvos-player-updates-separate-checks",
+  "translations": {
+    "en": {
+      "title": "Apple TV IPTV updates: check tvOS and the player separately",
+      "excerpt": "Before reopening your existing IPTV player on Apple TV, distinguish the system update from the app update and keep a short record of each.",
+      "seo_title": "Apple TV IPTV updates: check tvOS and the player separately",
+      "seo_description": "Check Apple TV IPTV updates with separate notes for tvOS and your existing player. Finish official updates before comparing the same permitted programme.",
+      "sections": [
+        {
+          "heading": "Write down two versions",
+          "paragraphs": [
+            "An Apple TV IPTV update check starts with two separate questions: is the television box awaiting a system update, and does the installed player have an app update? Before changing anything, note the Apple TV model, the displayed tvOS version and the player's version if available. Add the exact symptom, such as an app closing or a menu failing to load. These notes give support a useful starting point without exposing account details."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Finish the official update first",
+          "paragraphs": [
+            "Use Apple's system-update guide to find Software Updates under System in Settings. Keep power and the network connected until installation finishes. For the player, Apple's separate app guide points to Purchased in the App Store, then the chosen app's Update control. Follow the relevant guide for your model and allow an offered update to complete before reopening the existing player. Do not interrupt an installation to start a viewing check."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: update Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: update an App Store app",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Compare one familiar action",
+          "paragraphs": [
+            "After completion, open the same player and try one programme you are permitted to access. Record whether the original symptom remains and which version changed. Avoid adding a new player, deleting the existing one or resetting the box during this comparison. An update is maintenance, not a promise that a viewing problem will disappear. If it persists, send support the model, versions and a brief description, keeping passwords and private playlist addresses out of screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Actualizaciones IPTV en Apple TV: sistema y reproductor",
+      "excerpt": "Antes de volver a abrir tu reproductor IPTV en Apple TV, distingue la actualización del sistema de la aplicación y anota el resultado de cada una.",
+      "seo_title": "Actualizaciones IPTV en Apple TV: sistema y reproductor",
+      "seo_description": "Revisa las actualizaciones IPTV en Apple TV con notas separadas para tvOS y el reproductor. Termina el proceso oficial antes de comparar un programa permitido.",
+      "sections": [
+        {
+          "heading": "Anota dos versiones",
+          "paragraphs": [
+            "La revisión de actualizaciones IPTV en Apple TV empieza con dos preguntas distintas: ¿hay una actualización pendiente del sistema del dispositivo y otra para el reproductor instalado? Antes de cambiar nada, anota el modelo de Apple TV, la versión de tvOS que aparece y la del reproductor, si está disponible. Añade el síntoma exacto, como un cierre de la aplicación o un menú que no carga. Estas notas ayudan al soporte sin revelar datos de la cuenta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Termina primero la actualización oficial",
+          "paragraphs": [
+            "La guía de Apple sitúa Actualizaciones de software dentro de Sistema, en Ajustes. Mantén la alimentación y la conexión de red hasta que termine la instalación. Para el reproductor, la guía de aplicaciones indica Comprado en el App Store y después el control Actualizar de la aplicación elegida. Sigue la guía correspondiente a tu modelo y deja terminar cualquier actualización ofrecida antes de abrir el reproductor existente. No interrumpas la instalación para probar un vídeo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: actualizar Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: actualizar una aplicación del App Store",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Compara una acción conocida",
+          "paragraphs": [
+            "Al finalizar, abre el mismo reproductor e intenta ver un programa al que tengas acceso permitido. Anota si continúa el síntoma original y qué versión cambió. Durante esta comparación, evita añadir otro reproductor, borrar el actual o restablecer el dispositivo. Actualizar es mantenimiento, no una promesa de que desaparecerá el problema. Si persiste, comunica al soporte el modelo, las versiones y una descripción breve, sin contraseñas ni direcciones privadas de listas en las capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Mises à jour IPTV sur Apple TV : tvOS et lecteur séparés",
+      "excerpt": "Avant de rouvrir votre lecteur IPTV sur Apple TV, distinguez la mise à jour du système de celle de l’application et notez le résultat de chacune.",
+      "seo_title": "Mises à jour IPTV sur Apple TV : tvOS et lecteur séparés",
+      "seo_description": "Vérifiez séparément les mises à jour de tvOS et du lecteur IPTV sur Apple TV. Terminez les opérations officielles avant de comparer un programme autorisé.",
+      "sections": [
+        {
+          "heading": "Noter deux versions",
+          "paragraphs": [
+            "Pour vérifier les mises à jour IPTV sur Apple TV, posez deux questions distinctes : le boîtier attend-il une mise à jour système et le lecteur installé dispose-t-il d’une mise à jour ? Avant toute modification, notez le modèle d’Apple TV, la version de tvOS affichée et celle du lecteur si elle est disponible. Ajoutez le symptôme précis, par exemple une fermeture de l’application ou un menu qui ne charge pas. Ces notes aident l’assistance sans exposer votre compte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Terminer d’abord la mise à jour officielle",
+          "paragraphs": [
+            "Le guide système Apple indique Mises à jour logicielles dans Système, sous Réglages. Maintenez l’alimentation et la connexion réseau jusqu’à la fin de l’installation. Pour le lecteur, le guide des applications renvoie à Achats dans l’App Store, puis à la commande de mise à jour de l’application choisie. Suivez le guide adapté à votre modèle et laissez toute mise à jour proposée se terminer avant de rouvrir le lecteur. N’interrompez pas l’installation pour essayer une vidéo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : mettre à jour Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple : mettre à jour une application de l’App Store",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer une action familière",
+          "paragraphs": [
+            "Une fois l’opération terminée, ouvrez le même lecteur et essayez un programme auquel vous êtes autorisé à accéder. Notez si le symptôme initial persiste et quelle version a changé. Évitez d’ajouter un lecteur, de supprimer l’ancien ou de réinitialiser le boîtier pendant cette comparaison. Une mise à jour relève de l’entretien et ne promet pas de résoudre le problème. S’il persiste, transmettez modèle, versions et brève description à l’assistance, sans mots de passe ni adresses privées de listes dans les captures."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Aggiornamenti IPTV su Apple TV: separa tvOS e lettore",
+      "excerpt": "Prima di riaprire il lettore IPTV su Apple TV, distingui l’aggiornamento del sistema da quello dell’app e annota separatamente i due risultati.",
+      "seo_title": "Aggiornamenti IPTV su Apple TV: separa tvOS e lettore",
+      "seo_description": "Controlla gli aggiornamenti IPTV su Apple TV distinguendo tvOS e lettore. Completa le procedure ufficiali prima di confrontare lo stesso programma consentito.",
+      "sections": [
+        {
+          "heading": "Annota due versioni",
+          "paragraphs": [
+            "Il controllo degli aggiornamenti IPTV su Apple TV inizia con due domande distinte: il dispositivo attende un aggiornamento di sistema e il lettore installato ha un aggiornamento dell’app? Prima di modificare qualcosa, annota il modello di Apple TV, la versione di tvOS visualizzata e quella del lettore, se disponibile. Aggiungi il sintomo preciso, come la chiusura dell’app o un menu che non si carica. Queste note aiutano l’assistenza senza esporre i dati dell’account."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Completa prima l’aggiornamento ufficiale",
+          "paragraphs": [
+            "La guida di Apple indica Aggiornamenti software in Sistema, nelle Impostazioni. Mantieni alimentazione e collegamento di rete fino al termine dell’installazione. Per il lettore, la guida delle app indica Acquistate nell’App Store e poi il comando Aggiorna dell’app scelta. Segui la guida adatta al tuo modello e lascia completare l’aggiornamento eventualmente proposto prima di riaprire il lettore esistente. Non interrompere l’installazione per provare un video."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: aggiornare Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: aggiornare un’app dell’App Store",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta un’azione familiare",
+          "paragraphs": [
+            "Al termine, apri lo stesso lettore e prova un programma a cui puoi accedere legittimamente. Annota se il sintomo iniziale rimane e quale versione è cambiata. Durante il confronto evita di aggiungere un lettore, eliminare quello esistente o ripristinare il dispositivo. Un aggiornamento è manutenzione, non una promessa di risolvere il problema. Se persiste, invia all’assistenza modello, versioni e una breve descrizione, escludendo password e indirizzi privati delle playlist dalle schermate."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV bijwerken op Apple TV: controleer tvOS en de speler",
+      "excerpt": "Maak onderscheid tussen een systeemupdate en een appupdate voordat je de bestaande IPTV-speler op Apple TV opent. Noteer beide resultaten apart.",
+      "seo_title": "IPTV bijwerken op Apple TV: controleer tvOS en de speler",
+      "seo_description": "Controleer IPTV-updates op Apple TV met aparte notities voor tvOS en je speler. Rond officiële updates af voordat je hetzelfde toegestane programma vergelijkt.",
+      "sections": [
+        {
+          "heading": "Noteer twee versies",
+          "paragraphs": [
+            "Een controle van IPTV-updates op Apple TV begint met twee aparte vragen: wacht het kastje op een systeemupdate en is er een appupdate voor de geïnstalleerde speler? Noteer voordat je iets verandert het Apple TV-model, de weergegeven tvOS-versie en de spelerversie als die beschikbaar is. Beschrijf ook het precieze verschijnsel, zoals een app die sluit of een menu dat niet laadt. Zo heeft ondersteuning een bruikbaar begin zonder je accountgegevens."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Rond eerst de officiële update af",
+          "paragraphs": [
+            "Apples systeemhandleiding verwijst naar Software-updates onder Systeem in Instellingen. Houd stroom en netwerk aangesloten totdat de installatie klaar is. Voor de speler verwijst de aparte apphandleiding naar Aankopen in de App Store en vervolgens de updateknop bij de gekozen app. Volg de handleiding voor jouw model en laat een aangeboden update afronden voordat je de bestaande speler opent. Onderbreek een installatie niet om een video te proberen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV bijwerken",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: een App Store-app bijwerken",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één bekende handeling",
+          "paragraphs": [
+            "Open daarna dezelfde speler en probeer één programma waartoe je toegang mag hebben. Noteer of het oorspronkelijke verschijnsel blijft en welke versie veranderde. Voeg tijdens deze vergelijking geen andere speler toe, verwijder de bestaande speler niet en stel het kastje niet opnieuw in. Een update is onderhoud en belooft niet dat een kijkprobleem verdwijnt. Stuur bij aanhoudende problemen het model, de versies en een korte beschrijving naar ondersteuning. Houd wachtwoorden en privé-adressen van afspeellijsten buiten schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atualizações IPTV na Apple TV: separe tvOS e aplicação",
+      "excerpt": "Antes de reabrir o leitor IPTV na Apple TV, distinga a atualização do sistema da atualização da aplicação e registe o resultado de cada uma.",
+      "seo_title": "Atualizações IPTV na Apple TV: separe tvOS e aplicação",
+      "seo_description": "Verifique as atualizações IPTV na Apple TV com notas separadas para tvOS e leitor. Conclua as operações oficiais antes de comparar um programa autorizado.",
+      "sections": [
+        {
+          "heading": "Registe duas versões",
+          "paragraphs": [
+            "A verificação de atualizações IPTV na Apple TV começa com duas perguntas diferentes: o dispositivo tem uma atualização de sistema pendente e o leitor instalado tem uma atualização da aplicação? Antes de alterar algo, registe o modelo de Apple TV, a versão de tvOS apresentada e a do leitor, se disponível. Acrescente o sintoma exato, como a aplicação fechar ou um menu não carregar. Estas notas ajudam a assistência sem revelar dados da conta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Conclua primeiro a atualização oficial",
+          "paragraphs": [
+            "O guia de sistema da Apple indica Atualizações de software em Sistema, nas Definições. Mantenha a alimentação e a ligação à rede até terminar a instalação. Para o leitor, o guia de aplicações indica Comprado na App Store e depois Atualizar na aplicação escolhida. Siga o guia adequado ao seu modelo e deixe concluir uma atualização proposta antes de reabrir o leitor existente. Não interrompa a instalação para experimentar um vídeo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: atualizar a Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: atualizar uma aplicação da App Store",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Compare uma ação conhecida",
+          "paragraphs": [
+            "Depois de concluir, abra o mesmo leitor e experimente um programa a que tenha acesso autorizado. Registe se o sintoma original continua e qual a versão alterada. Durante a comparação, evite adicionar outro leitor, apagar o existente ou repor o dispositivo. Uma atualização é manutenção, não uma promessa de que o problema desaparecerá. Se persistir, envie à assistência o modelo, as versões e uma descrição breve, sem palavras-passe nem endereços privados de listas nas capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Обновления IPTV на Apple TV: отдельно tvOS и плеер",
+      "excerpt": "Перед повторным открытием IPTV-плеера на Apple TV разделите обновление системы и приложения. Запишите результат каждого процесса отдельно.",
+      "seo_title": "Обновления IPTV на Apple TV: отдельно tvOS и плеер",
+      "seo_description": "Проверьте обновления IPTV на Apple TV: отдельно tvOS и установленный плеер. Завершите официальные обновления перед сравнением разрешённой передачи.",
+      "sections": [
+        {
+          "heading": "Запишите две версии",
+          "paragraphs": [
+            "Проверка обновлений IPTV на Apple TV начинается с двух разных вопросов: ожидает ли приставка обновления системы и доступно ли обновление установленного плеера? До любых изменений запишите модель Apple TV, указанную версию tvOS и версию плеера, если она доступна. Добавьте точное описание симптома: например, приложение закрывается или меню не загружается. Эти сведения дадут поддержке отправную точку без раскрытия данных учётной записи."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сначала завершите официальное обновление",
+          "paragraphs": [
+            "В системном руководстве Apple указан раздел обновлений ПО в пункте «Система» настроек. Сохраняйте питание и сетевое подключение до завершения установки. Для плеера отдельное руководство приложений указывает раздел покупок в App Store и команду обновления выбранного приложения. Следуйте инструкции для своей модели и дождитесь окончания предложенного обновления перед открытием существующего плеера. Не прерывайте установку ради проверки видео."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: обновление Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: обновление приложения из App Store",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните одно знакомое действие",
+          "paragraphs": [
+            "После завершения откройте тот же плеер и попробуйте одну передачу, к которой у вас есть разрешённый доступ. Запишите, сохранился ли исходный симптом и какая версия изменилась. Во время сравнения не добавляйте другой плеер, не удаляйте существующий и не сбрасывайте приставку. Обновление — обслуживание, а не обещание устранить неполадку просмотра. Если она остаётся, отправьте поддержке модель, версии и краткое описание. Не включайте пароли и закрытые адреса плейлистов в снимки экрана."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Apple TV پر آئی پی ٹی وی: سسٹم اور پلیئر کی الگ اپ ڈیٹ",
+      "excerpt": "Apple TV پر موجودہ آئی پی ٹی وی پلیئر دوبارہ کھولنے سے پہلے سسٹم اور ایپ کی اپ ڈیٹ کا فرق سمجھیں اور دونوں کا نتیجہ الگ لکھیں۔",
+      "seo_title": "Apple TV پر آئی پی ٹی وی: سسٹم اور پلیئر کی الگ اپ ڈیٹ",
+      "seo_description": "Apple TV پر آئی پی ٹی وی کے لیے tvOS اور موجودہ پلیئر کی اپ ڈیٹس الگ چیک کریں۔ مجاز پروگرام کا موازنہ کرنے سے پہلے سرکاری اپ ڈیٹس مکمل ہونے دیں۔",
+      "sections": [
+        {
+          "heading": "دونوں ورژن لکھ لیں",
+          "paragraphs": [
+            "Apple TV پر آئی پی ٹی وی کی اپ ڈیٹ چیک کرتے وقت دو الگ سوال ہیں: کیا باکس کے سسٹم کی اپ ڈیٹ باقی ہے، اور کیا نصب شدہ پلیئر کی ایپ اپ ڈیٹ دستیاب ہے؟ کچھ بدلنے سے پہلے Apple TV کا ماڈل، دکھائی دینے والا tvOS ورژن اور دستیاب ہو تو پلیئر کا ورژن لکھیں۔ درست علامت بھی درج کریں، جیسے ایپ بند ہونا یا مینیو لوڈ نہ ہونا۔ یہ نوٹ اکاؤنٹ کی تفصیل ظاہر کیے بغیر سپورٹ کو واضح نقطۂ آغاز دیتے ہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "پہلے سرکاری اپ ڈیٹ مکمل کریں",
+          "paragraphs": [
+            "Apple کی سسٹم گائیڈ میں سیٹنگز کے سسٹم حصے کے اندر سافٹ ویئر اپ ڈیٹس دیکھیں۔ تنصیب مکمل ہونے تک بجلی اور نیٹ ورک منسلک رکھیں۔ پلیئر کے لیے ایپس کی الگ گائیڈ App Store میں خریدی گئی ایپس اور پھر منتخب ایپ کے اپ ڈیٹ بٹن کی طرف رہنمائی کرتی ہے۔ اپنے ماڈل کی گائیڈ اپنائیں اور موجودہ پلیئر دوبارہ کھولنے سے پہلے پیش کردہ اپ ڈیٹ پوری ہونے دیں۔ ویڈیو آزمانے کے لیے تنصیب نہ روکیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV اپ ڈیٹ کرنے کی رہنمائی",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: App Store کی ایپ اپ ڈیٹ کریں",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "ایک مانوس عمل کا موازنہ کریں",
+          "paragraphs": [
+            "تکمیل کے بعد وہی پلیئر کھولیں اور ایسا ایک پروگرام آزمائیں جس تک آپ کو جائز رسائی ہو۔ لکھیں کہ پرانی علامت برقرار ہے یا نہیں اور کون سا ورژن بدلا۔ اس موازنے کے دوران دوسرا پلیئر شامل کرنے، موجودہ ایپ حذف کرنے یا باکس ری سیٹ کرنے سے گریز کریں۔ اپ ڈیٹ دیکھ بھال ہے، ویونگ کا مسئلہ ختم ہونے کی ضمانت نہیں۔ مسئلہ رہے تو سپورٹ کو ماڈل، ورژن اور مختصر تفصیل دیں؛ اسکرین شاٹس میں پاس ورڈ اور نجی پلے لسٹ کے پتے شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تحديث IPTV على Apple TV: افصل النظام عن المشغّل",
+      "excerpt": "قبل إعادة فتح مشغّل IPTV الحالي على Apple TV، ميّز بين تحديث النظام وتحديث التطبيق، واحتفظ بملاحظة قصيرة عن نتيجة كل منهما.",
+      "seo_title": "تحديث IPTV على Apple TV: افصل النظام عن المشغّل",
+      "seo_description": "تحقق من تحديثات IPTV على Apple TV مع ملاحظات منفصلة عن tvOS والمشغّل الحالي. أكمل التحديثات الرسمية قبل مقارنة البرنامج المسموح نفسه.",
+      "sections": [
+        {
+          "heading": "دوّن رقمَي الإصدار",
+          "paragraphs": [
+            "يبدأ فحص تحديثات IPTV على Apple TV بسؤالين منفصلين: هل ينتظر الجهاز تحديثاً للنظام، وهل يتوفر تحديث للمشغّل المثبّت؟ قبل تغيير أي شيء، دوّن طراز Apple TV وإصدار tvOS الظاهر وإصدار المشغّل إن كان متاحاً. أضف وصفاً دقيقاً للعَرَض، مثل إغلاق التطبيق أو عدم تحميل قائمة. تمنح هذه الملاحظات الدعم نقطة بداية مفيدة من دون كشف تفاصيل الحساب."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "أكمل التحديث الرسمي أولاً",
+          "paragraphs": [
+            "يشير دليل نظام Apple إلى تحديثات البرامج ضمن النظام في الإعدادات. حافظ على اتصال الطاقة والشبكة حتى يكتمل التثبيت. وبالنسبة للمشغّل، يشير دليل التطبيقات المنفصل إلى المشتريات في App Store ثم زر التحديث للتطبيق المختار. اتبع الدليل المناسب لطرازك واترك التحديث المعروض يكتمل قبل إعادة فتح المشغّل الحالي. لا تقاطع التثبيت لبدء تجربة مشاهدة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: تحديث Apple TV",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: تحديث تطبيق من App Store",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "قارن إجراءً مألوفاً واحداً",
+          "paragraphs": [
+            "بعد الاكتمال، افتح المشغّل نفسه وجرّب برنامجاً يحق لك الوصول إليه. دوّن ما إذا كان العَرَض الأصلي مستمراً وأي إصدار تغيّر. تجنّب إضافة مشغّل آخر أو حذف الحالي أو إعادة ضبط الجهاز أثناء هذه المقارنة. التحديث صيانة وليس وعداً باختفاء مشكلة المشاهدة. إذا استمرت، أرسل للدعم الطراز والإصدارات ووصفاً موجزاً، وأبعد كلمات المرور وعناوين قوائم التشغيل الخاصة عن لقطات الشاشة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Apple TV पर IPTV: सिस्टम और प्लेयर की अपडेट अलग जाँचें",
+      "excerpt": "Apple TV पर मौजूदा IPTV प्लेयर दोबारा खोलने से पहले सिस्टम और ऐप की अपडेट में फर्क समझें। दोनों के नतीजे अलग-अलग लिखकर रखें।",
+      "seo_title": "Apple TV पर IPTV: सिस्टम और प्लेयर की अपडेट अलग जाँचें",
+      "seo_description": "Apple TV पर IPTV अपडेट के लिए tvOS और मौजूदा प्लेयर का अलग रिकॉर्ड रखें। उसी अनुमत कार्यक्रम की तुलना से पहले आधिकारिक अपडेट पूरी होने दें।",
+      "sections": [
+        {
+          "heading": "दोनों संस्करण लिखें",
+          "paragraphs": [
+            "Apple TV पर IPTV अपडेट की जाँच दो अलग सवालों से शुरू होती है: क्या बॉक्स में सिस्टम अपडेट बाकी है, और क्या स्थापित प्लेयर का ऐप अपडेट उपलब्ध है? कुछ बदलने से पहले Apple TV का मॉडल, दिख रहा tvOS संस्करण और उपलब्ध हो तो प्लेयर का संस्करण लिखें। ऐप बंद होने या मेन्यू लोड न होने जैसी सटीक समस्या भी जोड़ें। ये नोट खाते की जानकारी उजागर किए बिना सहायता टीम को उपयोगी शुरुआत देते हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहले आधिकारिक अपडेट पूरी करें",
+          "paragraphs": [
+            "Apple की सिस्टम गाइड में सेटिंग्स के सिस्टम भाग में सॉफ़्टवेयर अपडेट देखें। इंस्टॉल होने तक बिजली और नेटवर्क जुड़े रखें। प्लेयर के लिए ऐप की अलग गाइड App Store में खरीदे गए ऐप और फिर चुने हुए ऐप के अपडेट बटन की जानकारी देती है। अपने मॉडल की गाइड अपनाएँ और मौजूदा प्लेयर दोबारा खोलने से पहले उपलब्ध अपडेट पूरी होने दें। वीडियो की जाँच करने के लिए इंस्टॉलेशन बीच में न रोकें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV अपडेट करने की गाइड",
+              "url": "https://support.apple.com/en-us/108414"
+            },
+            {
+              "label": "Apple: App Store के ऐप अपडेट करें",
+              "url": "https://support.apple.com/en-us/102629"
+            }
+          ]
+        },
+        {
+          "heading": "एक परिचित काम की तुलना करें",
+          "paragraphs": [
+            "पूरा होने के बाद वही प्लेयर खोलें और ऐसा एक कार्यक्रम आज़माएँ जिसे देखने की आपको अनुमति है। लिखें कि पुरानी समस्या बनी है या नहीं और कौन सा संस्करण बदला। इस तुलना के दौरान नया प्लेयर जोड़ने, मौजूदा ऐप मिटाने या बॉक्स रीसेट करने से बचें। अपडेट रखरखाव है, समस्या दूर होने का वादा नहीं। समस्या रहे तो सहायता टीम को मॉडल, संस्करण और छोटा विवरण भेजें। स्क्रीनशॉट में पासवर्ड और निजी प्लेलिस्ट के पते न दिखाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: update Apple TV",
+      "url": "https://support.apple.com/en-us/108414"
+    },
+    {
+      "label": "Apple: manually update apps from the App Store",
+      "url": "https://support.apple.com/en-us/102629"
+    }
+  ]
+}

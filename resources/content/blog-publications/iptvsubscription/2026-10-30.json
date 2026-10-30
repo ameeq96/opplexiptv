@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-10-30",
+  "topic": "Player app purchases and service payments: identify the product on the receipt",
+  "primary_keyword": "IPTV app payment",
+  "slug": "iptvsubscription-player-app-payment-and-service-receipts",
+  "translations": {
+    "en": {
+      "title": "IPTV app payment or service payment? Read the receipt first",
+      "excerpt": "A player purchase and a viewing service can cover different things. Match each receipt to the named product before paying again or changing an account.",
+      "seo_title": "IPTV app payment: separate player purchases from service access",
+      "seo_description": "Check what an IPTV app payment covers, identify the billed product and contact the right support team before making a second payment for viewing access.",
+      "sections": [
+        {
+          "heading": "Identify the product behind the payment",
+          "paragraphs": [
+            "Before making an IPTV app payment, identify what the checkout actually describes: the player application, an optional player feature, or access supplied by a service. A receipt for an application is not enough to establish what a separate service account includes. When arranging viewing through IPTV Subscription, keep the player name and service name in separate notes. Compare the item description, seller and purchase date with the confirmation you received."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Find the matching store subscription",
+          "paragraphs": [
+            "For Google Play billing, open the subscriptions list with the Google Account used for the purchase and locate the relevant product. Google’s official guide explains that uninstalling an app does not cancel its subscription. Compare the entry with your receipt. Do not assume an in-app billing screen confirms payment to a separate service provider, or that removing the player changes a service arrangement made elsewhere."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: manage an app subscription",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ask the team responsible for that item",
+          "paragraphs": [
+            "Send the player developer questions about a player feature or app purchase. Ask the service provider to clarify what its own order includes and how to identify the corresponding account. State the named product and purchase date, and describe which screen is requesting payment. Share an order reference only through the appropriate private support channel. Keep passwords and private playlist links out of screenshots, then wait for clarification before paying for the same purpose again."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "¿Pago de una app IPTV o del servicio? Revisa el recibo",
+      "excerpt": "Comprar un reproductor y contratar un servicio de televisión puede cubrir cosas distintas. Relaciona cada recibo con su producto antes de volver a pagar.",
+      "seo_title": "Pago de una app IPTV: distingue reproductor y servicio",
+      "seo_description": "Comprueba qué cubre el pago de una app IPTV, identifica el producto facturado y consulta al equipo adecuado antes de hacer otro pago por el acceso.",
+      "sections": [
+        {
+          "heading": "Identifica el producto que has pagado",
+          "paragraphs": [
+            "Antes de pagar una app IPTV, averigua qué describe la compra: el reproductor, una función opcional o el acceso proporcionado por un servicio. Un recibo de una aplicación no basta para conocer lo que incluye una cuenta de otro servicio. Al organizar tu acceso con IPTV Subscription, anota por separado el nombre del reproductor y el del servicio. Compara la descripción del artículo, el vendedor y la fecha con la confirmación recibida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Busca la suscripción correspondiente en la tienda",
+          "paragraphs": [
+            "Si el cobro se realiza mediante Google Play, abre la lista de suscripciones con la cuenta de Google utilizada para comprar y localiza el producto. La guía oficial explica que desinstalar una app no cancela su suscripción. Compara esa entrada con el recibo. Una pantalla de pago dentro de la app no confirma por sí sola un pago a otro proveedor, y eliminar el reproductor no aclara un acuerdo contratado fuera de la tienda."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: gestionar la suscripción de una app",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta al equipo responsable de ese artículo",
+          "paragraphs": [
+            "Pregunta al desarrollador por las funciones o compras del reproductor. Pide al proveedor del servicio que aclare qué incluye su pedido y cómo identificar la cuenta correspondiente. Indica el producto, la fecha y la pantalla que solicita el pago. Comparte la referencia del pedido únicamente mediante el canal privado adecuado. Oculta contraseñas y enlaces privados de listas en las capturas y espera la aclaración antes de volver a pagar por lo mismo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Paiement d’une application IPTV ou du service : lisez le reçu",
+      "excerpt": "L’achat d’un lecteur et l’accès à un service peuvent couvrir des éléments différents. Associez chaque reçu au produit indiqué avant de payer une seconde fois.",
+      "seo_title": "Paiement IPTV : distinguer le lecteur de l’accès au service",
+      "seo_description": "Vérifiez ce que couvre le paiement d’une application IPTV, identifiez le produit facturé et contactez le bon interlocuteur avant de payer de nouveau.",
+      "sections": [
+        {
+          "heading": "Identifiez le produit réellement payé",
+          "paragraphs": [
+            "Avant de payer une application IPTV, repérez ce que décrit l’achat : le lecteur, une fonction facultative ou l’accès fourni par un service. Un reçu d’application ne suffit pas à établir ce qu’inclut un compte auprès d’un autre service. En préparant votre accès avec IPTV Subscription, notez séparément le nom du lecteur et celui du service. Comparez la description de l’article, le vendeur et la date avec la confirmation reçue."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Retrouvez l’abonnement correspondant dans la boutique",
+          "paragraphs": [
+            "Pour une facturation Google Play, ouvrez la liste des abonnements avec le compte Google utilisé pour l’achat et cherchez le produit concerné. Le guide officiel précise que désinstaller une application ne résilie pas son abonnement. Comparez cette ligne au reçu. Un écran de paiement dans l’application ne confirme pas à lui seul un règlement auprès d’un autre fournisseur ; supprimer le lecteur ne clarifie pas non plus un contrat souscrit ailleurs."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play : gérer l’abonnement d’une application",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Interrogez l’équipe responsable de cet achat",
+          "paragraphs": [
+            "Adressez au développeur les questions sur une fonction ou un achat du lecteur. Demandez au fournisseur de préciser le contenu de sa commande et le compte correspondant. Indiquez le produit, la date et l’écran qui réclame un paiement. Transmettez une référence de commande uniquement par le canal privé approprié. Masquez mots de passe et liens privés de listes sur les captures, puis attendez une explication avant de payer à nouveau pour le même usage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Pagamento dell’app IPTV o del servizio? Leggi la ricevuta",
+      "excerpt": "L’acquisto di un lettore e l’accesso a un servizio possono coprire cose diverse. Collega ogni ricevuta al prodotto indicato prima di effettuare un altro pagamento.",
+      "seo_title": "Pagamento app IPTV: distingui lettore e accesso al servizio",
+      "seo_description": "Controlla cosa comprende il pagamento di un’app IPTV, individua il prodotto addebitato e contatta l’assistenza corretta prima di pagare nuovamente.",
+      "sections": [
+        {
+          "heading": "Individua il prodotto effettivamente acquistato",
+          "paragraphs": [
+            "Prima di pagare un’app IPTV, verifica cosa descrive l’acquisto: il lettore, una funzione facoltativa oppure l’accesso fornito da un servizio. La ricevuta di un’applicazione non chiarisce da sola cosa comprende un account presso un altro servizio. Quando organizzi l’accesso con IPTV Subscription, annota separatamente il nome del lettore e quello del servizio. Confronta descrizione dell’articolo, venditore e data con la conferma ricevuta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Trova l’abbonamento corrispondente nel negozio",
+          "paragraphs": [
+            "Per un addebito tramite Google Play, apri l’elenco degli abbonamenti con l’account Google usato per l’acquisto e individua il prodotto. La guida ufficiale spiega che disinstallare un’app non annulla il relativo abbonamento. Confronta la voce con la ricevuta. Non dare per scontato che una schermata di pagamento nell’app confermi un versamento a un altro fornitore, o che eliminare il lettore chiarisca un accordo concluso altrove."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: gestire l’abbonamento a un’app",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Chiedi al gruppo responsabile di quell’acquisto",
+          "paragraphs": [
+            "Rivolgi allo sviluppatore le domande sulle funzioni o sugli acquisti del lettore. Chiedi al fornitore del servizio cosa comprende il suo ordine e come individuare l’account corrispondente. Indica prodotto, data e schermata che richiede il pagamento. Condividi un riferimento dell’ordine solo nel canale privato appropriato. Nascondi password e collegamenti privati alle playlist nelle schermate e attendi chiarimenti prima di pagare nuovamente per lo stesso scopo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Betaling voor een IPTV-app of dienst? Lees eerst het aankoopbewijs",
+      "excerpt": "Een speler kopen en toegang tot een dienst betalen kunnen verschillende aankopen zijn. Koppel ieder aankoopbewijs aan het genoemde product voordat je opnieuw betaalt.",
+      "seo_title": "IPTV-app betalen: onderscheid speler en toegang tot een dienst",
+      "seo_description": "Controleer wat een betaling voor een IPTV-app omvat, zoek het gefactureerde product op en benader de juiste ondersteuning voordat je nogmaals betaalt.",
+      "sections": [
+        {
+          "heading": "Bepaal welk product je hebt betaald",
+          "paragraphs": [
+            "Bekijk voordat je een IPTV-app betaalt wat de aankoop beschrijft: de speler, een optionele functie of toegang via een dienst. Een aankoopbewijs voor een toepassing vertelt op zichzelf niet wat een account bij een andere dienst omvat. Noteer bij het regelen van toegang via IPTV Subscription de spelernaam en dienstnaam apart. Vergelijk de artikelomschrijving, verkoper en aankoopdatum met de ontvangen bevestiging."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Zoek het bijbehorende winkelabonnement",
+          "paragraphs": [
+            "Open bij facturering via Google Play de abonnementenlijst met het Google-account waarmee je hebt gekocht en zoek het juiste product. De officiële uitleg vermeldt dat het verwijderen van een app het abonnement niet opzegt. Vergelijk de vermelding met je aankoopbewijs. Een betaalscherm in de app bevestigt op zichzelf geen betaling aan een andere aanbieder; de speler verwijderen verduidelijkt evenmin een overeenkomst die elders is afgesloten."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: een app-abonnement beheren",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Benader de verantwoordelijke ondersteuning",
+          "paragraphs": [
+            "Stel vragen over spelerfuncties en aankopen aan de ontwikkelaar. Vraag de dienstverlener wat zijn eigen bestelling omvat en hoe je het bijbehorende account herkent. Vermeld het product, de aankoopdatum en welk scherm betaling vraagt. Deel een bestelreferentie alleen via het juiste privékanaal voor ondersteuning. Verberg wachtwoorden en privélinks naar afspeellijsten op schermafbeeldingen en wacht op uitleg voordat je opnieuw voor hetzelfde doel betaalt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Pagamento do aplicativo IPTV ou do serviço? Leia o comprovante",
+      "excerpt": "A compra de um reprodutor e o acesso a um serviço podem cobrir coisas diferentes. Relacione cada comprovante ao produto indicado antes de fazer outro pagamento.",
+      "seo_title": "Pagamento de aplicativo IPTV: diferencie reprodutor e serviço",
+      "seo_description": "Confira o que cobre o pagamento de um aplicativo IPTV, identifique o produto cobrado e fale com o suporte adequado antes de pagar novamente pelo acesso.",
+      "sections": [
+        {
+          "heading": "Identifique o produto que foi pago",
+          "paragraphs": [
+            "Antes de pagar um aplicativo IPTV, veja o que a compra descreve: o reprodutor, um recurso opcional ou o acesso fornecido por um serviço. O comprovante de um aplicativo não esclarece sozinho o que uma conta de outro serviço inclui. Ao organizar seu acesso com IPTV Subscription, anote separadamente o nome do reprodutor e o do serviço. Compare a descrição do item, o vendedor e a data com a confirmação recebida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Encontre a assinatura correspondente na loja",
+          "paragraphs": [
+            "Para uma cobrança pelo Google Play, abra a lista de assinaturas com a Conta do Google usada na compra e localize o produto. O guia oficial explica que desinstalar um aplicativo não cancela sua assinatura. Compare o registro com o comprovante. Não suponha que uma tela de cobrança dentro do aplicativo confirme pagamento a outro fornecedor, nem que remover o reprodutor esclareça um contrato feito fora da loja."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: gerenciar a assinatura de um aplicativo",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Procure a equipe responsável por essa compra",
+          "paragraphs": [
+            "Envie ao desenvolvedor as dúvidas sobre recursos ou compras do reprodutor. Peça ao fornecedor do serviço que esclareça o conteúdo do próprio pedido e como identificar a conta correspondente. Informe o produto, a data e a tela que solicita pagamento. Compartilhe uma referência do pedido somente no canal privado adequado de suporte. Oculte senhas e links privados de listas nas capturas e aguarde o esclarecimento antes de pagar novamente pela mesma finalidade."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Оплата приложения IPTV или услуги: сначала прочитайте чек",
+      "excerpt": "Покупка плеера и доступ к услуге могут относиться к разным продуктам. Сопоставьте каждый чек с указанной покупкой, прежде чем платить повторно.",
+      "seo_title": "Оплата приложения IPTV: плеер и доступ к услуге",
+      "seo_description": "Узнайте, что покрывает оплата приложения IPTV, найдите оплаченный продукт и обратитесь в нужную поддержку перед повторной оплатой доступа к просмотру.",
+      "sections": [
+        {
+          "heading": "Определите, за какой продукт заплатили",
+          "paragraphs": [
+            "Перед оплатой приложения IPTV выясните, что описывает покупка: сам плеер, дополнительную функцию или доступ, предоставляемый сервисом. Чек на приложение сам по себе не раскрывает состав учетной записи другого сервиса. Организуя просмотр через IPTV Subscription, запишите отдельно название плеера и название услуги. Сравните описание позиции, продавца и дату покупки с полученным подтверждением. Это поможет связать запрос оплаты с конкретным продуктом."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Найдите соответствующую подписку в магазине",
+          "paragraphs": [
+            "Если платеж проходит через Google Play, откройте список подписок в аккаунте Google, использованном при покупке, и найдите нужный продукт. Официальная инструкция объясняет, что удаление приложения не отменяет его подписку. Сопоставьте запись с чеком. Экран оплаты внутри приложения сам по себе не подтверждает платеж другому поставщику, а удаление плеера не проясняет условия услуги, заказанной вне магазина."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: управление подпиской на приложение",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Обратитесь к ответственным за эту покупку",
+          "paragraphs": [
+            "Вопросы о функции или покупке плеера направьте разработчику. У поставщика услуги уточните состав его заказа и способ определить соответствующую учетную запись. Укажите название продукта, дату покупки и экран, который просит оплату. Передавайте номер заказа только через подходящий закрытый канал поддержки. Скрывайте пароли и частные ссылки на плейлисты на снимках экрана. Дождитесь разъяснения, прежде чем повторно платить за ту же задачу."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV ایپ کی ادائیگی یا سروس کی؟ پہلے رسید پڑھیں",
+      "excerpt": "پلیئر خریدنا اور سروس تک رسائی حاصل کرنا الگ چیزیں ہو سکتی ہیں۔ دوبارہ ادائیگی سے پہلے ہر رسید کو اس پر درج پروڈکٹ سے ملائیں۔",
+      "seo_title": "IPTV ایپ کی ادائیگی: پلیئر اور سروس میں فرق سمجھیں",
+      "seo_description": "جانیں کہ IPTV ایپ کی ادائیگی کس چیز کے لیے ہے، رسید پر درج پروڈکٹ پہچانیں اور دوبارہ رسائی خریدنے سے پہلے متعلقہ سپورٹ سے وضاحت لیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کس پروڈکٹ کی ادائیگی ہوئی ہے",
+          "paragraphs": [
+            "IPTV ایپ کی ادائیگی سے پہلے دیکھیں کہ خریداری کی تفصیل میں کیا درج ہے: پلیئر ایپ، کوئی اختیاری خصوصیت یا کسی سروس کی فراہم کردہ رسائی۔ ایپ کی رسید سے یہ طے نہیں ہوتا کہ دوسری سروس کے اکاؤنٹ میں کیا شامل ہے۔ IPTV Subscription کے ذریعے دیکھنے کا انتظام کرتے وقت پلیئر اور سروس کے نام الگ لکھیں۔ چیز کی تفصیل، فروخت کنندہ اور تاریخ کو موصول ہونے والی تصدیق سے ملائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اسٹور میں متعلقہ سبسکرپشن تلاش کریں",
+          "paragraphs": [
+            "Google Play کے ذریعے ادائیگی ہوئی ہو تو خریداری والے Google اکاؤنٹ سے سبسکرپشن کی فہرست کھولیں اور متعلقہ پروڈکٹ تلاش کریں۔ سرکاری رہنمائی بتاتی ہے کہ ایپ ہٹانے سے اس کی سبسکرپشن منسوخ نہیں ہوتی۔ اندراج کو رسید سے ملائیں۔ ایپ کے اندر ادائیگی کی اسکرین کو کسی الگ سروس فراہم کنندہ کو رقم ملنے کی تصدیق نہ سمجھیں، اور پلیئر حذف کرنے سے باہر کیے گئے سروس معاہدے کی وضاحت نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: ایپ کی سبسکرپشن کا انتظام",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اسی خریداری کی ذمہ دار ٹیم سے پوچھیں",
+          "paragraphs": [
+            "پلیئر کی خصوصیت یا خریداری کا سوال اس کے ڈویلپر کو بھیجیں۔ سروس فراہم کنندہ سے پوچھیں کہ اس کے آرڈر میں کیا شامل ہے اور متعلقہ اکاؤنٹ کیسے پہچانا جائے۔ پروڈکٹ، خریداری کی تاریخ اور ادائیگی مانگنے والی اسکرین بتائیں۔ آرڈر کا حوالہ صرف مناسب نجی سپورٹ چینل میں دیں۔ اسکرین شاٹ میں پاس ورڈ اور نجی پلے لسٹ لنک چھپائیں، پھر اسی مقصد کے لیے دوبارہ رقم دینے سے پہلے وضاحت کا انتظار کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "دفع ثمن تطبيق IPTV أم الخدمة؟ اقرأ الإيصال أولاً",
+      "excerpt": "شراء المشغّل والاشتراك في خدمة المشاهدة قد يغطيان شيئين مختلفين. اربط كل إيصال بالمنتج المذكور فيه قبل إجراء دفعة أخرى أو تغيير الحساب.",
+      "seo_title": "دفع ثمن تطبيق IPTV: ميّز المشغّل عن الوصول للخدمة",
+      "seo_description": "تحقق مما يغطيه دفع ثمن تطبيق IPTV، وحدد المنتج المفوتر، وتواصل مع فريق الدعم المناسب قبل دفع مبلغ آخر مقابل الوصول إلى المشاهدة.",
+      "sections": [
+        {
+          "heading": "حدد المنتج الذي دفعت مقابله",
+          "paragraphs": [
+            "قبل دفع ثمن تطبيق IPTV، اقرأ وصف الشراء: هل يتعلق بالمشغّل نفسه، أم بميزة اختيارية، أم بوصول توفره خدمة؟ إيصال التطبيق وحده لا يحدد ما يشمله حساب لدى خدمة أخرى. عند ترتيب المشاهدة عبر IPTV Subscription، دوّن اسم المشغّل واسم الخدمة في ملاحظتين منفصلتين. قارن وصف العنصر والبائع وتاريخ الشراء بالتأكيد الذي وصل إليك، حتى تعرف إلى أي منتج يعود طلب الدفع."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ابحث عن الاشتراك المطابق في المتجر",
+          "paragraphs": [
+            "إذا جرت الفوترة عبر Google Play، افتح قائمة الاشتراكات بحساب Google المستخدم للشراء وابحث عن المنتج المعني. توضح الإرشادات الرسمية أن حذف التطبيق لا يلغي اشتراكه. قارن الإدخال بالإيصال. لا تفترض أن شاشة دفع داخل التطبيق تؤكد وصول مبلغ إلى مزود خدمة منفصل، أو أن إزالة المشغّل توضح اتفاق خدمة تم خارج المتجر."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: إدارة اشتراك تطبيق",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اسأل الفريق المسؤول عن عملية الشراء",
+          "paragraphs": [
+            "وجّه أسئلة ميزات المشغّل أو مشترياته إلى المطوّر. واطلب من مزود الخدمة توضيح ما يشمله طلبه وكيفية تحديد الحساب المرتبط به. اذكر اسم المنتج وتاريخ الشراء والشاشة التي تطلب الدفع. أرسل مرجع الطلب عبر قناة الدعم الخاصة المناسبة فقط. أخفِ كلمات المرور وروابط قوائم التشغيل الخاصة من لقطات الشاشة، وانتظر التوضيح قبل الدفع مجدداً للغرض نفسه."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV ऐप का भुगतान या सेवा का? पहले रसीद पढ़ें",
+      "excerpt": "प्लेयर खरीदना और देखने की सेवा लेना अलग खरीदारी हो सकती हैं। फिर से भुगतान करने से पहले हर रसीद का मिलान उस पर लिखे उत्पाद से करें।",
+      "seo_title": "IPTV ऐप भुगतान: प्लेयर और सेवा की पहुँच समझें",
+      "seo_description": "जाँचें कि IPTV ऐप का भुगतान किस चीज़ के लिए है, बिल वाला उत्पाद पहचानें और पहुँच के लिए दोबारा पैसे देने से पहले सही सहायता टीम से पूछें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि आपने किस उत्पाद के लिए पैसे दिए",
+          "paragraphs": [
+            "IPTV ऐप का भुगतान करने से पहले खरीदारी का विवरण पढ़ें: क्या वह प्लेयर ऐप, किसी वैकल्पिक सुविधा या सेवा द्वारा दी गई पहुँच के लिए है? ऐप की रसीद से यह तय नहीं होता कि अलग सेवा के खाते में क्या शामिल है। IPTV Subscription के माध्यम से देखने की व्यवस्था करते समय प्लेयर और सेवा के नाम अलग लिखें। वस्तु का विवरण, विक्रेता और खरीदारी की तारीख मिली हुई पुष्टि से मिलाएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "स्टोर में संबंधित सदस्यता खोजें",
+          "paragraphs": [
+            "Google Play से बिल बना हो तो खरीदारी वाले Google खाते से सदस्यताओं की सूची खोलें और संबंधित उत्पाद ढूँढें। आधिकारिक निर्देश बताते हैं कि ऐप हटाने से उसकी सदस्यता रद्द नहीं होती। उस प्रविष्टि का रसीद से मिलान करें। ऐप के अंदर भुगतान की स्क्रीन को किसी अलग सेवा प्रदाता को भुगतान होने की पुष्टि न मानें। प्लेयर हटाने से बाहर किया गया सेवा समझौता भी स्पष्ट नहीं होता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play: ऐप की सदस्यता का प्रबंधन",
+              "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "उसी खरीदारी की जिम्मेदार टीम से पूछें",
+          "paragraphs": [
+            "प्लेयर की सुविधा या ऐप खरीदारी के सवाल डेवलपर को भेजें। सेवा प्रदाता से पूछें कि उसके अपने ऑर्डर में क्या शामिल है और संबंधित खाता कैसे पहचानें। उत्पाद का नाम, खरीदारी की तारीख और भुगतान माँगने वाली स्क्रीन बताएँ। ऑर्डर संदर्भ केवल उपयुक्त निजी सहायता माध्यम से साझा करें। स्क्रीनशॉट में पासवर्ड और निजी प्लेलिस्ट लिंक छिपाएँ। उसी उद्देश्य के लिए फिर से पैसे देने से पहले स्पष्टीकरण की प्रतीक्षा करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play: manage an app subscription",
+      "url": "https://support.google.com/googleplay/answer/7018481?hl=en"
+    }
+  ]
+}
