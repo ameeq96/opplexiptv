@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-10-31",
+  "topic": "Apple TV listening levels: compare loudness processing separately from the programme audio track",
+  "primary_keyword": "Geo IPTV audio settings",
+  "slug": "geo-apple-tv-loudness-and-audio-track-comparison",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV audio settings: compare loudness before changing tracks",
+      "excerpt": "Quiet dialogue and sudden loud effects need a careful comparison. Record the current sound setup, change one available control and keep the programme track consistent.",
+      "seo_title": "Geo IPTV audio settings: a careful loudness comparison",
+      "seo_description": "Compare Geo IPTV audio settings on Apple TV with a steady listening level. Keep the audio track unchanged and record whether an available sound option helps.",
+      "sections": [
+        {
+          "heading": "Describe the listening problem first",
+          "paragraphs": [
+            "Begin a Geo IPTV audio settings check by describing what you hear: speech is quiet, effects are much louder, or all sound is low. These are different observations. Write down the player, television or speaker being used, and the current volume. Choose a familiar programme you may access and a short section for comparison. Avoid testing by repeatedly raising the volume through quiet scenes; the next scene may be much louder."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare one available sound control",
+          "paragraphs": [
+            "Apple describes Reduce Loud Sounds as dynamic-range processing; available options vary. Follow its guide for your equipment rather than assuming every player shows the same controls. If the option is available, note its original state, change only that setting and compare the same short section at a comfortable level. Leave the programme audio track unchanged. Changing a language or track at the same time makes the result harder to interpret."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: audio settings on Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep useful notes and restore preferences",
+          "paragraphs": [
+            "Write down whether speech, loud effects or neither became easier to hear. If the adjustment is unhelpful, restore the previous preference before trying something else. A loudness comparison cannot establish why sound drops out or why a programme fails to load. For persistent trouble, contact Geo IPTV support with the device and player versions, audio output and brief observation. Keep passwords, private playlist addresses and personal account information out of the report."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Ajustes de audio de Geo IPTV: compara el nivel antes de cambiar pistas",
+      "excerpt": "Los diálogos bajos y los efectos fuertes requieren una comparación cuidadosa. Anota la configuración, cambia un solo control disponible y mantén la misma pista.",
+      "seo_title": "Audio de Geo IPTV: compara el nivel de sonido con cuidado",
+      "seo_description": "Compara el audio de Geo IPTV en Apple TV a un volumen cómodo. Mantén la pista del programa y anota si una opción de sonido disponible mejora la escucha.",
+      "sections": [
+        {
+          "heading": "Describe primero lo que escuchas",
+          "paragraphs": [
+            "Empieza la revisión del audio de Geo IPTV indicando qué ocurre: las voces se oyen bajas, los efectos mucho más altos o todo el sonido está bajo. Son observaciones distintas. Anota el reproductor, el televisor o altavoz utilizado y el volumen actual. Elige un programa conocido al que tengas acceso y un fragmento breve para comparar. Evita subir repetidamente el volumen durante escenas silenciosas; la siguiente puede sonar mucho más fuerte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara un solo control disponible",
+          "paragraphs": [
+            "Apple describe Reducir sonidos fuertes como un procesamiento del rango dinámico; las opciones disponibles varían. Sigue su guía para tu equipo, sin suponer que todos los reproductores muestran los mismos controles. Si encuentras esa opción, anota su estado original, cambia únicamente ese ajuste y compara el mismo fragmento a un nivel cómodo. Mantén la pista de audio del programa. Cambiar también el idioma o la pista dificulta interpretar el resultado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: ajustes de audio en Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Guarda notas útiles y recupera tus preferencias",
+          "paragraphs": [
+            "Anota si se entienden mejor las voces, los efectos fuertes o ninguno de los dos. Si el ajuste no ayuda, recupera la preferencia anterior antes de probar otra cosa. Esta comparación no determina por qué se corta el sonido o no carga un programa. Si el problema persiste, comunica al soporte de Geo IPTV las versiones del dispositivo y reproductor, la salida de audio y una observación breve. Excluye contraseñas, direcciones privadas de listas e información personal de la cuenta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Réglages audio Geo IPTV : comparez le niveau avant de changer de piste",
+      "excerpt": "Des dialogues faibles et des effets soudainement forts demandent une comparaison précise. Notez les réglages, modifiez une option disponible et gardez la même piste.",
+      "seo_title": "Audio Geo IPTV : comparer les niveaux sur Apple TV",
+      "seo_description": "Comparez les réglages audio Geo IPTV sur Apple TV à un volume confortable. Gardez la même piste et notez l’effet d’une option sonore disponible.",
+      "sections": [
+        {
+          "heading": "Décrivez d’abord le problème d’écoute",
+          "paragraphs": [
+            "Commencez la vérification audio Geo IPTV en décrivant ce que vous entendez : voix faibles, effets beaucoup plus forts ou ensemble du son trop faible. Ces observations sont différentes. Notez le lecteur, le téléviseur ou l’enceinte utilisée et le volume actuel. Choisissez un programme connu auquel vous pouvez accéder et un court passage à comparer. Évitez de monter plusieurs fois le volume pendant les scènes calmes : la suivante peut être nettement plus forte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez une seule commande disponible",
+          "paragraphs": [
+            "Apple présente Réduire les sons forts comme un traitement de la plage dynamique ; les options disponibles varient. Suivez son guide pour votre matériel sans supposer que tous les lecteurs proposent les mêmes commandes. Si l’option est présente, notez son état initial, modifiez uniquement ce réglage et comparez le même passage à un niveau confortable. Conservez la piste audio du programme. Changer simultanément de langue ou de piste rend le résultat plus difficile à interpréter."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : réglages audio sur Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Conservez des notes utiles et restaurez vos préférences",
+          "paragraphs": [
+            "Notez si les voix, les effets forts ou aucun des deux deviennent plus faciles à entendre. Si le réglage n’aide pas, rétablissez la préférence précédente avant un autre essai. Cette comparaison ne permet pas d’expliquer des coupures de son ou un programme qui ne charge pas. Si le problème persiste, transmettez au support Geo IPTV les versions de l’appareil et du lecteur, la sortie audio et une brève observation. Excluez mots de passe, adresses privées de listes et données personnelles du compte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Impostazioni audio Geo IPTV: confronta il volume prima delle tracce",
+      "excerpt": "Dialoghi deboli ed effetti improvvisamente forti richiedono un confronto attento. Annota la configurazione, modifica un solo controllo disponibile e mantieni la traccia.",
+      "seo_title": "Audio Geo IPTV: confrontare i livelli su Apple TV",
+      "seo_description": "Confronta le impostazioni audio Geo IPTV su Apple TV a un volume confortevole. Mantieni la stessa traccia e annota se un’opzione disponibile aiuta.",
+      "sections": [
+        {
+          "heading": "Descrivi prima il problema di ascolto",
+          "paragraphs": [
+            "Inizia la verifica audio Geo IPTV descrivendo cosa senti: voci basse, effetti molto più forti oppure tutto l’audio basso. Sono osservazioni diverse. Annota il lettore, il televisore o l’altoparlante utilizzato e il volume attuale. Scegli un programma conosciuto a cui puoi accedere e un breve passaggio da confrontare. Evita di alzare ripetutamente il volume durante le scene silenziose: quella successiva potrebbe essere molto più forte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta un solo controllo disponibile",
+          "paragraphs": [
+            "Apple descrive Riduci suoni intensi come un’elaborazione della gamma dinamica; le opzioni disponibili variano. Segui la guida per il tuo apparecchio senza presumere che ogni lettore mostri gli stessi controlli. Se l’opzione è presente, annota lo stato originale, cambia soltanto quell’impostazione e confronta lo stesso passaggio a un livello confortevole. Mantieni la traccia audio del programma. Cambiare contemporaneamente lingua o traccia rende più difficile interpretare il risultato."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: impostazioni audio su Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva note utili e ripristina le preferenze",
+          "paragraphs": [
+            "Annota se diventano più comprensibili le voci, gli effetti forti oppure nessuno dei due. Se la modifica non aiuta, ripristina la preferenza precedente prima di provare altro. Il confronto dei livelli non determina perché l’audio si interrompe o un programma non si carica. Se il problema persiste, invia al supporto Geo IPTV le versioni del dispositivo e del lettore, l’uscita audio e una breve osservazione. Escludi password, indirizzi privati delle playlist e informazioni personali dell’account."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-audio instellen: vergelijk het volume vóór de audiotrack",
+      "excerpt": "Zachte stemmen en plotseling harde effecten vragen om een zorgvuldige vergelijking. Noteer de instellingen, wijzig één beschikbare optie en behoud dezelfde audiotrack.",
+      "seo_title": "Geo IPTV-audio: geluidsniveaus vergelijken op Apple TV",
+      "seo_description": "Vergelijk Geo IPTV-audio op Apple TV op een prettig volume. Houd de audiotrack gelijk en noteer of een beschikbare geluidsinstelling verschil maakt.",
+      "sections": [
+        {
+          "heading": "Beschrijf eerst wat je hoort",
+          "paragraphs": [
+            "Begin de controle van Geo IPTV-audio met een beschrijving: stemmen zijn zacht, effecten veel harder of al het geluid staat laag. Dat zijn verschillende waarnemingen. Noteer de speler, de gebruikte televisie of luidspreker en het huidige volume. Kies een bekend programma waartoe je toegang hebt en een kort fragment om te vergelijken. Verhoog het volume niet steeds tijdens rustige scènes; de volgende scène kan veel luider zijn."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk één beschikbare geluidsoptie",
+          "paragraphs": [
+            "Apple beschrijft Verminder harde geluiden als verwerking van het dynamische bereik; beschikbare opties verschillen. Volg de handleiding voor jouw apparatuur en verwacht niet in iedere speler dezelfde bediening. Is de optie aanwezig, noteer dan de oorspronkelijke stand, wijzig alleen die instelling en vergelijk hetzelfde fragment op een prettig volume. Behoud de audiotrack van het programma. Tegelijk de taal of track wijzigen maakt het resultaat moeilijker te beoordelen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: audio-instellingen op Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Bewaar nuttige notities en herstel voorkeuren",
+          "paragraphs": [
+            "Noteer of stemmen, harde effecten of geen van beide beter te horen worden. Helpt de wijziging niet, herstel dan eerst de vorige voorkeur voordat je iets anders probeert. Een volumevergelijking verklaart geen wegvallend geluid of programma dat niet laadt. Neem bij aanhoudende problemen contact op met Geo IPTV-support en vermeld apparaat- en spelerversies, geluidsuitgang en een korte waarneming. Laat wachtwoorden, privéafspeellijstadressen en persoonlijke accountgegevens weg."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Definições de áudio Geo IPTV: compare o volume antes das faixas",
+      "excerpt": "Diálogos baixos e efeitos subitamente fortes pedem uma comparação cuidadosa. Registe a configuração, altere um controlo disponível e mantenha a mesma faixa.",
+      "seo_title": "Áudio Geo IPTV: comparar níveis na Apple TV",
+      "seo_description": "Compare o áudio Geo IPTV na Apple TV com um volume confortável. Mantenha a faixa do programa e registe se uma opção de som disponível ajuda.",
+      "sections": [
+        {
+          "heading": "Descreva primeiro o problema de escuta",
+          "paragraphs": [
+            "Comece a verificação do áudio Geo IPTV descrevendo o que ouve: vozes baixas, efeitos muito mais altos ou todo o som demasiado baixo. São observações diferentes. Anote o leitor, o televisor ou a coluna utilizada e o volume atual. Escolha um programa conhecido a que tenha acesso e um pequeno trecho para comparar. Evite aumentar repetidamente o volume durante cenas silenciosas; a seguinte pode ser bastante mais alta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare um único controlo disponível",
+          "paragraphs": [
+            "A Apple descreve Reduzir sons altos como processamento da gama dinâmica; as opções disponíveis variam. Siga o guia para o seu equipamento sem presumir que todos os leitores apresentam os mesmos controlos. Se a opção existir, registe o estado original, altere apenas essa definição e compare o mesmo trecho a um nível confortável. Mantenha a faixa de áudio do programa. Alterar também o idioma ou a faixa torna o resultado mais difícil de interpretar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: definições de áudio na Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Guarde notas úteis e reponha preferências",
+          "paragraphs": [
+            "Registe se as vozes, os efeitos fortes ou nenhum dos dois ficam mais fáceis de ouvir. Se a alteração não ajudar, reponha a preferência anterior antes de experimentar outra coisa. Uma comparação de volume não explica cortes de som nem um programa que não carrega. Se o problema persistir, contacte o suporte Geo IPTV com as versões do dispositivo e do leitor, a saída de áudio e uma breve observação. Exclua palavras-passe, endereços privados de listas e informações pessoais da conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Звук Geo IPTV: сравните громкость до смены звуковой дорожки",
+      "excerpt": "Тихая речь и внезапно громкие эффекты требуют аккуратного сравнения. Запишите настройки, измените один доступный параметр и сохраните прежнюю дорожку.",
+      "seo_title": "Звук Geo IPTV: сравнение громкости на Apple TV",
+      "seo_description": "Проверьте настройки звука Geo IPTV на Apple TV при комфортной громкости. Сохраните прежнюю дорожку и запишите результат изменения доступного параметра.",
+      "sections": [
+        {
+          "heading": "Сначала опишите проблему со звуком",
+          "paragraphs": [
+            "Начните проверку звука Geo IPTV с описания того, что слышите: речь тихая, эффекты гораздо громче или весь звук слабый. Это разные наблюдения. Запишите проигрыватель, используемый телевизор или колонку и текущую громкость. Выберите знакомую программу, к которой у вас есть доступ, и короткий фрагмент для сравнения. Не увеличивайте громкость многократно во время тихих сцен: следующая сцена может оказаться значительно громче."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сравните один доступный параметр",
+          "paragraphs": [
+            "Apple описывает уменьшение громких звуков как обработку динамического диапазона; доступные параметры различаются. Следуйте инструкции для вашего оборудования и не ожидайте одинаковых кнопок во всех проигрывателях. Если нужный параметр есть, запишите исходное состояние, измените только его и сравните тот же фрагмент при комфортной громкости. Сохраните звуковую дорожку программы. Одновременная смена языка или дорожки затруднит оценку результата."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: настройки звука на Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Сохраните полезные заметки и верните предпочтения",
+          "paragraphs": [
+            "Запишите, стала ли разборчивее речь, изменились ли громкие эффекты или улучшений нет. Если настройка не помогает, восстановите прежнее значение перед следующей попыткой. Сравнение громкости не объясняет пропадание звука или невозможность загрузить программу. Если проблема сохраняется, передайте поддержке Geo IPTV версии устройства и проигрывателя, выход звука и краткое наблюдение. Не включайте пароли, частные адреса плейлистов и личные данные учётной записи."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کی آواز: آڈیو ٹریک بدلنے سے پہلے سطح کا موازنہ کریں",
+      "excerpt": "دھیمی گفتگو اور اچانک بلند اثرات کو احتیاط سے جانچیں۔ موجودہ ترتیبات لکھیں، ایک دستیاب اختیار بدلیں اور پروگرام کا آڈیو ٹریک وہی رکھیں۔",
+      "seo_title": "Geo IPTV کی آواز: Apple TV پر سطحوں کا موازنہ",
+      "seo_description": "Apple TV پر Geo IPTV کی آواز آرام دہ سطح پر جانچیں۔ آڈیو ٹریک وہی رکھیں اور نوٹ کریں کہ کوئی دستیاب صوتی ترتیب سننے میں مدد دیتی ہے یا نہیں۔",
+      "sections": [
+        {
+          "heading": "پہلے سننے کی مشکل بیان کریں",
+          "paragraphs": [
+            "Geo IPTV کی آواز جانچتے وقت لکھیں کہ آپ کو کیا سنائی دیتا ہے: گفتگو دھیمی ہے، اثرات کہیں زیادہ بلند ہیں یا ساری آواز کم ہے۔ یہ الگ مشاہدے ہیں۔ پلیئر، استعمال ہونے والا ٹی وی یا اسپیکر اور موجودہ آواز کی سطح نوٹ کریں۔ ایسا مانوس پروگرام چنیں جس تک آپ کو رسائی حاصل ہو، اور موازنے کے لیے مختصر حصہ منتخب کریں۔ خاموش مناظر میں آواز بار بار نہ بڑھائیں؛ اگلا منظر بہت بلند ہو سکتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صرف ایک دستیاب صوتی اختیار کا موازنہ کریں",
+          "paragraphs": [
+            "Apple بلند آوازیں کم کرنے کے اختیار کو آواز کے متحرک دائرے کی پروسیسنگ قرار دیتا ہے؛ دستیاب اختیارات مختلف ہوتے ہیں۔ اپنے آلات کی رہنمائی دیکھیں اور ہر پلیئر میں یکساں کنٹرول فرض نہ کریں۔ اختیار موجود ہو تو اس کی پہلی حالت لکھیں، صرف وہی ترتیب بدلیں اور آرام دہ سطح پر وہی مختصر حصہ سنیں۔ پروگرام کا آڈیو ٹریک وہی رکھیں۔ ساتھ ہی زبان یا ٹریک بدلنے سے نتیجہ سمجھنا مشکل ہو جاتا ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV کی صوتی ترتیبات",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "مفید نوٹس رکھیں اور سابق ترجیحات بحال کریں",
+          "paragraphs": [
+            "لکھیں کہ گفتگو زیادہ واضح ہوئی، بلند اثرات بدلے یا دونوں میں فرق نہیں آیا۔ تبدیلی مفید نہ ہو تو کسی اور کوشش سے پہلے پرانی ترجیح بحال کریں۔ آواز کی سطح کا موازنہ یہ نہیں بتاتا کہ آواز کیوں کٹتی ہے یا پروگرام کیوں نہیں کھلتا۔ مسئلہ برقرار رہے تو Geo IPTV کی مدد کو ڈیوائس اور پلیئر کے ورژن، صوتی آؤٹ پٹ اور مختصر مشاہدہ بھیجیں۔ پاس ورڈ، نجی پلے لسٹ پتے اور اکاؤنٹ کی ذاتی معلومات شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إعدادات صوت Geo IPTV: قارن المستوى قبل تغيير المسار",
+      "excerpt": "الحوار الهادئ والمؤثرات المرتفعة فجأة يحتاجان إلى مقارنة دقيقة. دوّن الإعدادات الحالية، وغيّر خياراً متاحاً واحداً مع إبقاء المسار الصوتي نفسه.",
+      "seo_title": "صوت Geo IPTV: مقارنة مستويات الصوت على Apple TV",
+      "seo_description": "قارن إعدادات صوت Geo IPTV على Apple TV بمستوى مريح. أبقِ مسار البرنامج نفسه وسجّل ما إذا كان خيار صوتي متاح يساعد على الاستماع.",
+      "sections": [
+        {
+          "heading": "صف مشكلة الاستماع أولاً",
+          "paragraphs": [
+            "ابدأ فحص صوت Geo IPTV بوصف ما تسمعه: الحوار منخفض، أو المؤثرات أعلى كثيراً، أو الصوت كله منخفض. هذه ملاحظات مختلفة. دوّن المشغّل والتلفزيون أو السماعة المستخدمة ومستوى الصوت الحالي. اختر برنامجاً مألوفاً يمكنك الوصول إليه ومقطعاً قصيراً للمقارنة. تجنّب رفع الصوت مراراً أثناء المشاهد الهادئة؛ فقد يكون المشهد التالي أعلى بكثير."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن خياراً صوتياً متاحاً واحداً",
+          "paragraphs": [
+            "تصف Apple تقليل الأصوات المرتفعة بأنه معالجة للنطاق الديناميكي؛ وتختلف الخيارات المتاحة. اتبع دليل معداتك ولا تفترض أن كل مشغّل يعرض عناصر التحكم نفسها. إذا كان الخيار موجوداً، فدوّن حالته الأصلية وغيّر ذلك الإعداد وحده ثم قارن المقطع نفسه بمستوى مريح. أبقِ مسار صوت البرنامج كما هو. تغيير اللغة أو المسار في الوقت نفسه يجعل تفسير النتيجة أصعب."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: إعدادات الصوت على Apple TV",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "احتفظ بملاحظات مفيدة واستعد تفضيلاتك",
+          "paragraphs": [
+            "دوّن هل أصبح الكلام أوضح، أو تغيّرت المؤثرات المرتفعة، أو لم يتحسن أي منهما. إذا لم يساعد التعديل، فأعد التفضيل السابق قبل تجربة شيء آخر. مقارنة مستويات الصوت لا تفسر انقطاع الصوت أو تعذر تحميل برنامج. إذا استمرت المشكلة، فأرسل إلى دعم Geo IPTV إصداري الجهاز والمشغّل ومخرج الصوت وملاحظة قصيرة. لا تُدرج كلمات المرور أو عناوين قوائم التشغيل الخاصة أو معلومات الحساب الشخصية."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV की आवाज़: ट्रैक बदलने से पहले स्तर की तुलना करें",
+      "excerpt": "धीमे संवाद और अचानक तेज़ प्रभावों की सावधानी से तुलना करें। मौजूदा सेटिंग लिखें, एक उपलब्ध विकल्प बदलें और कार्यक्रम का ऑडियो ट्रैक वही रखें।",
+      "seo_title": "Geo IPTV ऑडियो: Apple TV पर आवाज़ के स्तर की तुलना",
+      "seo_description": "Apple TV पर Geo IPTV की ऑडियो सेटिंग आरामदायक स्तर पर जाँचें। ट्रैक वही रखें और लिखें कि कोई उपलब्ध ध्वनि विकल्प सुनने में मदद करता है या नहीं।",
+      "sections": [
+        {
+          "heading": "पहले सुनने की समस्या बताएँ",
+          "paragraphs": [
+            "Geo IPTV की आवाज़ जाँचते समय लिखें कि क्या सुनाई देता है: संवाद धीमे हैं, प्रभाव बहुत तेज़ हैं या पूरी आवाज़ कम है। ये अलग अवलोकन हैं। प्लेयर, इस्तेमाल हो रहे टीवी या स्पीकर और मौजूदा आवाज़ का स्तर लिखें। ऐसा परिचित कार्यक्रम चुनें जिसे देखने की आपको अनुमति है और तुलना के लिए छोटा हिस्सा लें। शांत दृश्यों में आवाज़ बार-बार न बढ़ाएँ; अगला दृश्य बहुत तेज़ हो सकता है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "केवल एक उपलब्ध ध्वनि विकल्प की तुलना करें",
+          "paragraphs": [
+            "Apple तेज़ आवाज़ें कम करने वाले विकल्प को डायनेमिक रेंज की प्रोसेसिंग बताता है; उपलब्ध विकल्प अलग हो सकते हैं। अपने उपकरण की मार्गदर्शिका देखें और हर प्लेयर में एक जैसे नियंत्रण न मानें। विकल्प मिले तो उसकी पुरानी स्थिति लिखें, केवल वही सेटिंग बदलें और आरामदायक स्तर पर वही छोटा हिस्सा सुनें। कार्यक्रम का ऑडियो ट्रैक वही रखें। साथ में भाषा या ट्रैक बदलने से परिणाम समझना मुश्किल होता है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV की ऑडियो सेटिंग",
+              "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "उपयोगी नोट्स रखें और पुरानी पसंद बहाल करें",
+          "paragraphs": [
+            "लिखें कि संवाद स्पष्ट हुए, तेज़ प्रभाव बदले या दोनों में कोई सुधार नहीं हुआ। बदलाव मदद न करे तो कुछ और आज़माने से पहले पुरानी पसंद वापस करें। आवाज़ के स्तर की तुलना यह नहीं बताती कि ध्वनि क्यों कटती है या कार्यक्रम क्यों नहीं खुलता। समस्या बनी रहे तो Geo IPTV सहायता को डिवाइस और प्लेयर के संस्करण, ऑडियो आउटपुट और छोटा अवलोकन भेजें। पासवर्ड, निजी प्लेलिस्ट पते और खाते की निजी जानकारी शामिल न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: change audio settings on Apple TV",
+      "url": "https://support.apple.com/en-au/guide/tv/atvba773c3c9/tvos"
+    }
+  ]
+}

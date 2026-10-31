@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-10-31",
+  "topic": "Android clock and time-zone checks when the displayed programme schedule appears offset",
+  "primary_keyword": "5G Live IPTV device time",
+  "slug": "5g-device-clock-time-zone-and-programme-guide-check",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV device time: check the clock before the guide",
+      "excerpt": "A schedule that looks an hour out needs a clear comparison. Record the phone clock, local time zone and programme listing before changing the device or player.",
+      "seo_title": "5G Live IPTV device time: clock and programme-guide checks",
+      "seo_description": "Check 5G Live IPTV device time on Android without changing several settings together. Compare the clock and guide, preserve alarm preferences and report a remaining offset.",
+      "sections": [
+        {
+          "heading": "Record three useful details",
+          "paragraphs": [
+            "Start a 5G Live IPTV device time check by writing down the local date and time you expect, the time shown by Android and the time displayed beside one programme. Include your current time zone, especially after travel. A wrong device clock and a programme listing shown in another time zone are different possibilities. Keep the same player open for the comparison instead of installing another app or buying a new plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the clock separately from the player",
+          "paragraphs": [
+            "Google documents date and time-zone controls, including automatic options where supported. Use its Clock guide and the instructions for your actual device; menu wording can differ. Note existing values before correcting a clearly wrong clock or time zone. Choose the region you are actually in rather than one that merely makes a listing match. If you depend on alarms, check the next scheduled alarm after a change and retain your preferred alarm settings."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: set time, date and time zone",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the same listing again",
+          "paragraphs": [
+            "Reopen the same programme listing and record whether the offset remains. If Android now shows the expected local time but the guide still differs, send support the player version, time zone, programme label and both displayed times. Describe what changed without including account credentials. A clock check does not establish a network fault, service outage or expired subscription. Avoid changing mobile-network settings during this comparison; they would introduce another variable without explaining the time difference."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Hora del dispositivo con 5G Live IPTV: revisa el reloj antes de la guía",
+      "excerpt": "Una programación desplazada una hora necesita una comparación clara. Anota el reloj del teléfono, la zona horaria y el horario del programa antes de cambiar ajustes.",
+      "seo_title": "5G Live IPTV: revisar el reloj y la guía de programas",
+      "seo_description": "Comprueba la hora del dispositivo al usar 5G Live IPTV en Android. Compara reloj y guía, conserva tus preferencias de alarma e informa del desfase que permanezca.",
+      "sections": [
+        {
+          "heading": "Anota tres datos útiles",
+          "paragraphs": [
+            "Empieza la revisión de la hora con 5G Live IPTV anotando la fecha y hora local que esperas, la que muestra Android y la indicada junto a un programa. Incluye tu zona horaria actual, sobre todo después de viajar. Un reloj incorrecto y una programación mostrada en otra zona son posibilidades distintas. Mantén el mismo reproductor para comparar, sin instalar otra aplicación ni comprar un plan nuevo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa el reloj por separado",
+          "paragraphs": [
+            "Google documenta los controles de fecha y zona horaria, incluidas opciones automáticas cuando son compatibles. Sigue su guía de Reloj y las instrucciones de tu dispositivo; los menús pueden variar. Anota los valores existentes antes de corregir una hora o zona claramente equivocada. Selecciona tu ubicación real, no una que simplemente haga coincidir un horario. Si dependes de alarmas, comprueba la siguiente programada después del cambio y conserva tus preferencias."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: configurar hora, fecha y zona horaria",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara de nuevo la misma programación",
+          "paragraphs": [
+            "Vuelve a abrir el mismo programa y anota si permanece el desfase. Si Android ya muestra la hora local esperada pero la guía sigue distinta, envía al soporte la versión del reproductor, la zona horaria, la etiqueta del programa y ambas horas. Explica qué cambió sin incluir credenciales. Revisar el reloj no demuestra un fallo de red, una caída del servicio o una suscripción vencida. Evita cambiar la red móvil durante esta comparación: añadiría otra variable sin explicar la diferencia horaria."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Heure de l’appareil avec 5G Live IPTV : vérifiez l’horloge avant le guide",
+      "excerpt": "Un programme décalé d’une heure mérite une comparaison précise. Notez l’horloge du téléphone, le fuseau local et l’horaire affiché avant de modifier les réglages.",
+      "seo_title": "5G Live IPTV : vérifier l’horloge et le guide des programmes",
+      "seo_description": "Vérifiez l’heure de l’appareil avec 5G Live IPTV sur Android. Comparez horloge et guide, conservez vos préférences d’alarme et signalez le décalage restant.",
+      "sections": [
+        {
+          "heading": "Notez trois informations utiles",
+          "paragraphs": [
+            "Commencez la vérification de l’heure avec 5G Live IPTV en notant la date et l’heure locales attendues, l’heure affichée par Android et celle indiquée pour un programme. Ajoutez le fuseau actuel, surtout après un voyage. Une horloge incorrecte et un programme présenté dans un autre fuseau sont deux possibilités différentes. Gardez le même lecteur pour comparer, sans installer une autre application ni acheter une nouvelle formule."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez l’horloge séparément du lecteur",
+          "paragraphs": [
+            "Google décrit les commandes de date et de fuseau horaire, dont des options automatiques lorsqu’elles sont prises en charge. Suivez son guide Horloge et les instructions de votre appareil ; les menus peuvent varier. Notez les valeurs existantes avant de corriger une heure ou un fuseau manifestement erroné. Choisissez votre région réelle, pas celle qui fait seulement coïncider un horaire. Si vous utilisez des alarmes, vérifiez la prochaine après le changement et conservez vos préférences."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : régler l’heure, la date et le fuseau horaire",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez de nouveau le même programme",
+          "paragraphs": [
+            "Rouvrez la même fiche de programme et notez si le décalage reste présent. Si Android affiche maintenant l’heure locale attendue mais que le guide diffère encore, envoyez au support la version du lecteur, le fuseau, le nom du programme et les deux heures affichées. Décrivez le changement sans identifiants du compte. Cette vérification ne prouve ni panne réseau, ni interruption du service, ni abonnement expiré. Ne modifiez pas les réglages du réseau mobile pendant la comparaison : cela ajouterait une variable sans expliquer le décalage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ora del dispositivo con 5G Live IPTV: controlla prima l’orologio",
+      "excerpt": "Una guida spostata di un’ora richiede un confronto chiaro. Annota l’orologio del telefono, il fuso locale e l’orario del programma prima di cambiare impostazioni.",
+      "seo_title": "5G Live IPTV: controllare orologio e guida programmi",
+      "seo_description": "Controlla l’ora del dispositivo con 5G Live IPTV su Android. Confronta orologio e guida, conserva le preferenze della sveglia e segnala un eventuale scarto.",
+      "sections": [
+        {
+          "heading": "Annota tre dati utili",
+          "paragraphs": [
+            "Inizia il controllo dell’ora con 5G Live IPTV annotando data e ora locale attese, l’ora mostrata da Android e quella indicata accanto a un programma. Includi il fuso attuale, soprattutto dopo un viaggio. Un orologio sbagliato e una guida presentata in un altro fuso sono possibilità diverse. Mantieni lo stesso lettore durante il confronto, senza installare un’altra applicazione o acquistare un nuovo piano."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l’orologio separatamente dal lettore",
+          "paragraphs": [
+            "Google documenta i controlli di data e fuso orario, comprese le opzioni automatiche dove supportate. Segui la guida di Orologio e le istruzioni del tuo dispositivo: i nomi dei menu possono variare. Annota i valori esistenti prima di correggere un’ora o un fuso chiaramente errati. Scegli la tua posizione reale, non quella che fa soltanto coincidere un orario. Se usi sveglie, controlla la prossima dopo la modifica e conserva le preferenze desiderate."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: impostare ora, data e fuso orario",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta di nuovo lo stesso programma",
+          "paragraphs": [
+            "Riapri la stessa voce della guida e annota se lo scarto rimane. Se Android mostra ora l’ora locale attesa ma la guida è ancora diversa, invia al supporto versione del lettore, fuso, nome del programma e i due orari visualizzati. Descrivi cosa è cambiato senza credenziali dell’account. Controllare l’orologio non dimostra un guasto di rete, un’interruzione del servizio o un abbonamento scaduto. Non modificare la rete mobile durante il confronto: aggiungeresti una variabile senza spiegare la differenza oraria."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Apparaattijd bij 5G Live IPTV: controleer eerst de klok",
+      "excerpt": "Een programmagids die een uur afwijkt vraagt om een duidelijke vergelijking. Noteer de telefoonklok, lokale tijdzone en programmatijd voordat je instellingen wijzigt.",
+      "seo_title": "5G Live IPTV: klok en programmagids controleren",
+      "seo_description": "Controleer de apparaattijd bij 5G Live IPTV op Android. Vergelijk klok en gids, behoud je alarmvoorkeuren en meld een eventueel resterend tijdverschil.",
+      "sections": [
+        {
+          "heading": "Noteer drie nuttige gegevens",
+          "paragraphs": [
+            "Begin de tijdcontrole voor 5G Live IPTV met de verwachte lokale datum en tijd, de tijd die Android toont en de tijd naast één programma. Noteer ook de huidige tijdzone, vooral na een reis. Een verkeerde apparaatklok en een programmagids in een andere tijdzone zijn verschillende mogelijkheden. Gebruik tijdens de vergelijking dezelfde speler; installeer geen andere app en koop hiervoor geen nieuw abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de klok los van de speler",
+          "paragraphs": [
+            "Google beschrijft instellingen voor datum en tijdzone, met automatische opties waar ondersteund. Volg de Klok-handleiding en de instructies voor jouw apparaat; menunamen kunnen verschillen. Noteer bestaande waarden voordat je een duidelijk verkeerde klok of tijdzone corrigeert. Kies je werkelijke regio, niet een regio die alleen een programmatijd passend maakt. Gebruik je alarmen, controleer dan na een wijziging het eerstvolgende alarm en behoud je gewenste alarminstellingen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: tijd, datum en tijdzone instellen",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk opnieuw hetzelfde programma",
+          "paragraphs": [
+            "Open dezelfde vermelding in de gids en noteer of het verschil blijft bestaan. Toont Android nu de verwachte lokale tijd maar wijkt de gids nog af, stuur support dan de spelerversie, tijdzone, programmanaam en beide getoonde tijden. Beschrijf de wijziging zonder accountgegevens. Een klokcontrole bewijst geen netwerkstoring, uitval van de dienst of verlopen abonnement. Wijzig tijdens deze vergelijking geen mobiele-netwerkinstellingen; dat voegt een variabele toe zonder het tijdverschil te verklaren."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Hora do dispositivo com 5G Live IPTV: verifique primeiro o relógio",
+      "excerpt": "Uma programação deslocada uma hora pede uma comparação clara. Anote o relógio do telefone, o fuso local e o horário do programa antes de alterar definições.",
+      "seo_title": "5G Live IPTV: verificar relógio e guia de programas",
+      "seo_description": "Verifique a hora do dispositivo com 5G Live IPTV no Android. Compare relógio e guia, mantenha as preferências dos alarmes e comunique um desvio persistente.",
+      "sections": [
+        {
+          "heading": "Registe três informações úteis",
+          "paragraphs": [
+            "Comece a verificação da hora com 5G Live IPTV anotando a data e hora locais esperadas, a hora apresentada pelo Android e a indicada junto de um programa. Inclua o fuso atual, sobretudo depois de viajar. Um relógio incorreto e uma programação apresentada noutro fuso são possibilidades diferentes. Mantenha o mesmo leitor durante a comparação, sem instalar outra aplicação nem comprar um plano novo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifique o relógio separadamente do leitor",
+          "paragraphs": [
+            "A Google documenta os controlos de data e fuso horário, incluindo opções automáticas quando suportadas. Siga o guia do Relógio e as instruções do seu dispositivo; os nomes dos menus podem variar. Anote os valores existentes antes de corrigir uma hora ou um fuso claramente errados. Escolha a sua região real, não uma que apenas faça coincidir um horário. Se depende de alarmes, verifique o próximo após a alteração e mantenha as suas preferências."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: definir hora, data e fuso horário",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare novamente a mesma programação",
+          "paragraphs": [
+            "Abra novamente o mesmo programa no guia e registe se o desvio continua. Se o Android já mostrar a hora local esperada mas o guia continuar diferente, envie ao suporte a versão do leitor, o fuso, o nome do programa e as duas horas apresentadas. Descreva a alteração sem credenciais da conta. Verificar o relógio não comprova falha de rede, interrupção do serviço ou subscrição expirada. Evite alterar a rede móvel durante a comparação: acrescentaria uma variável sem explicar a diferença horária."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Время устройства для 5G Live IPTV: сначала проверьте часы",
+      "excerpt": "Сдвиг программы на час требует понятного сравнения. Запишите время телефона, местный часовой пояс и время передачи до изменения настроек устройства или проигрывателя.",
+      "seo_title": "5G Live IPTV: проверка часов и программы передач",
+      "seo_description": "Проверьте время устройства для 5G Live IPTV на Android. Сравните часы и программу передач, сохраните настройки будильников и сообщите об оставшемся сдвиге.",
+      "sections": [
+        {
+          "heading": "Запишите три полезных значения",
+          "paragraphs": [
+            "Начните проверку времени для 5G Live IPTV с ожидаемых местных даты и времени, времени на Android и времени рядом с одной передачей. Укажите текущий часовой пояс, особенно после поездки. Неверные часы устройства и программа передач в другом поясе — разные возможные причины расхождения. Оставьте тот же проигрыватель для сравнения, не устанавливая другое приложение и не покупая новый тариф."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте часы отдельно от проигрывателя",
+          "paragraphs": [
+            "Google описывает настройки даты и часового пояса, включая автоматические варианты на поддерживаемых устройствах. Следуйте руководству приложения «Часы» и инструкции вашего устройства: названия меню могут отличаться. Запишите прежние значения до исправления явно неверного времени или пояса. Выберите свой реальный регион, а не тот, который лишь совмещает время передачи. Если пользуетесь будильниками, после изменения проверьте ближайший и сохраните нужные настройки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: установка времени, даты и часового пояса",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Снова сравните ту же передачу",
+          "paragraphs": [
+            "Откройте ту же запись в программе и отметьте, сохранился ли сдвиг. Если Android теперь показывает ожидаемое местное время, а программа всё ещё отличается, передайте поддержке версию проигрывателя, часовой пояс, название передачи и оба времени. Опишите изменение без данных входа. Проверка часов не доказывает неисправность сети, сбой сервиса или истечение подписки. Не меняйте настройки мобильной сети во время сравнения: это добавит другую переменную, не объяснив разницу во времени."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کے لیے ڈیوائس کا وقت: پہلے گھڑی جانچیں",
+      "excerpt": "پروگرام ایک گھنٹہ آگے یا پیچھے ہو تو واضح موازنہ کریں۔ ترتیبات بدلنے سے پہلے فون کی گھڑی، مقامی ٹائم زون اور پروگرام کا دکھایا وقت نوٹ کریں۔",
+      "seo_title": "5G Live IPTV: گھڑی اور پروگرام گائیڈ کا وقت جانچیں",
+      "seo_description": "Android پر 5G Live IPTV کے لیے ڈیوائس کا وقت جانچیں۔ گھڑی اور گائیڈ کا موازنہ کریں، الارم کی ترجیحات محفوظ رکھیں اور باقی فرق کی اطلاع دیں۔",
+      "sections": [
+        {
+          "heading": "تین مفید تفصیلات لکھیں",
+          "paragraphs": [
+            "5G Live IPTV کے لیے وقت جانچتے ہوئے متوقع مقامی تاریخ اور وقت، Android کا دکھایا وقت اور کسی ایک پروگرام کے ساتھ درج وقت لکھیں۔ اپنا موجودہ ٹائم زون بھی شامل کریں، خصوصاً سفر کے بعد۔ ڈیوائس کی گھڑی غلط ہونا اور پروگرام کا کسی دوسرے ٹائم زون میں دکھائی دینا الگ امکانات ہیں۔ موازنے کے لیے وہی پلیئر استعمال کریں؛ دوسری ایپ نصب کرنے یا نیا پلان خریدنے کی ضرورت نہ سمجھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "گھڑی کو پلیئر سے الگ جانچیں",
+          "paragraphs": [
+            "Google تاریخ اور ٹائم زون کی ترتیبات بتاتا ہے، جن میں معاون ڈیوائسز پر خودکار اختیارات بھی ہیں۔ اس کی گھڑی کی رہنمائی اور اپنے اصل ڈیوائس کی ہدایات دیکھیں؛ مینو کے نام مختلف ہو سکتے ہیں۔ واضح طور پر غلط گھڑی یا ٹائم زون درست کرنے سے پہلے موجودہ قدریں لکھیں۔ اپنا حقیقی علاقہ چنیں، صرف وہ علاقہ نہیں جس سے پروگرام کا وقت مل جائے۔ الارم ضروری ہوں تو تبدیلی کے بعد اگلا مقررہ الارم دیکھیں اور اپنی ترجیحات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: وقت، تاریخ اور ٹائم زون مقرر کریں",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "وہی پروگرام دوبارہ دیکھ کر موازنہ کریں",
+          "paragraphs": [
+            "گائیڈ میں وہی پروگرام دوبارہ کھولیں اور لکھیں کہ وقت کا فرق باقی ہے یا نہیں۔ Android اب درست مقامی وقت دکھاتا ہو مگر گائیڈ مختلف رہے تو مدد کو پلیئر کا ورژن، ٹائم زون، پروگرام کا نام اور دونوں اوقات بھیجیں۔ اکاؤنٹ کی لاگ اِن تفصیلات کے بغیر بتائیں کہ کیا بدلا۔ گھڑی جانچنا نیٹ ورک کی خرابی، سروس بند ہونے یا سبسکرپشن ختم ہونے کا ثبوت نہیں۔ اس موازنے کے دوران موبائل نیٹ ورک کی ترتیبات نہ بدلیں؛ اس سے وقت کا فرق سمجھنے کے بجائے ایک اور تبدیلی شامل ہو جائے گی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "وقت الجهاز مع 5G Live IPTV: افحص الساعة قبل دليل البرامج",
+      "excerpt": "إذا بدا جدول البرامج متقدماً أو متأخراً ساعة، فقارنه بوضوح. دوّن ساعة الهاتف والمنطقة الزمنية المحلية ووقت البرنامج قبل تعديل الإعدادات.",
+      "seo_title": "5G Live IPTV: فحص الساعة ودليل البرامج",
+      "seo_description": "افحص وقت الجهاز عند استخدام 5G Live IPTV على Android. قارن الساعة بالدليل، واحتفظ بتفضيلات المنبّه، ثم أبلغ عن أي فرق زمني مستمر.",
+      "sections": [
+        {
+          "heading": "دوّن ثلاث معلومات مفيدة",
+          "paragraphs": [
+            "ابدأ فحص الوقت مع 5G Live IPTV بتسجيل التاريخ والوقت المحليين المتوقعين، والوقت الذي يعرضه Android، والوقت بجوار برنامج واحد. أضف المنطقة الزمنية الحالية، خصوصاً بعد السفر. خطأ ساعة الجهاز وعرض البرنامج بتوقيت منطقة أخرى احتمالان مختلفان. أبقِ المشغّل نفسه للمقارنة بدلاً من تثبيت تطبيق آخر أو شراء خطة جديدة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص الساعة بصورة منفصلة عن المشغّل",
+          "paragraphs": [
+            "تشرح Google إعدادات التاريخ والمنطقة الزمنية، ومنها الخيارات التلقائية حيث تكون مدعومة. اتبع دليل تطبيق الساعة وتعليمات جهازك الفعلي؛ فقد تختلف أسماء القوائم. دوّن القيم الحالية قبل تصحيح ساعة أو منطقة زمنية خاطئة بوضوح. اختر موقعك الحقيقي، لا منطقة تجعل موعد برنامج واحد متطابقاً فحسب. إذا كنت تعتمد على المنبّهات، فراجع المنبّه التالي بعد أي تغيير واحتفظ بالإعدادات التي تفضلها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: ضبط الوقت والتاريخ والمنطقة الزمنية",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن البرنامج نفسه مرة أخرى",
+          "paragraphs": [
+            "أعد فتح إدراج البرنامج نفسه ودوّن هل بقي الفرق الزمني. إذا أصبح Android يعرض الوقت المحلي المتوقع بينما لا يزال الدليل مختلفاً، فأرسل إلى الدعم إصدار المشغّل والمنطقة الزمنية واسم البرنامج والوقتين المعروضين. صف ما تغيّر دون بيانات تسجيل الدخول. فحص الساعة لا يثبت وجود عطل في الشبكة أو توقف الخدمة أو انتهاء الاشتراك. تجنّب تغيير إعدادات شبكة الهاتف أثناء المقارنة؛ إذ يضيف ذلك متغيراً آخر دون تفسير فرق الوقت."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV के लिए डिवाइस का समय: पहले घड़ी जाँचें",
+      "excerpt": "कार्यक्रम का समय एक घंटा आगे या पीछे हो तो स्पष्ट तुलना करें। सेटिंग बदलने से पहले फ़ोन की घड़ी, स्थानीय समय क्षेत्र और कार्यक्रम का समय लिखें।",
+      "seo_title": "5G Live IPTV: घड़ी और कार्यक्रम गाइड का समय जाँचें",
+      "seo_description": "Android पर 5G Live IPTV के लिए डिवाइस का समय जाँचें। घड़ी और गाइड की तुलना करें, अलार्म की पसंद बनाए रखें और बचा हुआ अंतर सहायता को बताएँ।",
+      "sections": [
+        {
+          "heading": "तीन उपयोगी जानकारी लिखें",
+          "paragraphs": [
+            "5G Live IPTV के लिए समय जाँचते हुए अपेक्षित स्थानीय तारीख और समय, Android पर दिख रहा समय और किसी एक कार्यक्रम के सामने लिखा समय नोट करें। वर्तमान समय क्षेत्र भी लिखें, खासकर यात्रा के बाद। डिवाइस की घड़ी गलत होना और कार्यक्रम का किसी दूसरे समय क्षेत्र में दिखना अलग संभावनाएँ हैं। तुलना के लिए वही प्लेयर रखें; दूसरी ऐप इंस्टॉल करने या नया प्लान खरीदने की जरूरत न मानें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "घड़ी को प्लेयर से अलग जाँचें",
+          "paragraphs": [
+            "Google तारीख और समय क्षेत्र के नियंत्रण समझाता है, जिनमें समर्थित डिवाइस पर स्वचालित विकल्प भी हैं। घड़ी की उसकी मार्गदर्शिका और अपने असली डिवाइस के निर्देश देखें; मेनू के नाम अलग हो सकते हैं। स्पष्ट रूप से गलत घड़ी या समय क्षेत्र ठीक करने से पहले मौजूदा मान लिखें। अपना वास्तविक क्षेत्र चुनें, केवल वह क्षेत्र नहीं जिससे किसी कार्यक्रम का समय मिल जाए। अलार्म पर निर्भर हों तो बदलाव के बाद अगला तय अलार्म जाँचें और अपनी पसंद की सेटिंग बनाए रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: समय, तारीख और समय क्षेत्र तय करें",
+              "url": "https://support.google.com/clock/answer/2841106?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "उसी कार्यक्रम की फिर तुलना करें",
+          "paragraphs": [
+            "गाइड में वही कार्यक्रम फिर खोलें और लिखें कि अंतर बाकी है या नहीं। Android अब अपेक्षित स्थानीय समय दिखाए लेकिन गाइड अलग रहे, तो सहायता को प्लेयर का संस्करण, समय क्षेत्र, कार्यक्रम का नाम और दोनों समय भेजें। खाते की लॉगिन जानकारी के बिना बताएँ कि क्या बदला। घड़ी जाँचना नेटवर्क की खराबी, सेवा बंद होने या सदस्यता खत्म होने का प्रमाण नहीं है। तुलना के दौरान मोबाइल नेटवर्क की सेटिंग न बदलें; इससे समय का अंतर समझने के बजाय एक और बदलाव जुड़ जाएगा।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Clock: set time, date and time zone",
+      "url": "https://support.google.com/clock/answer/2841106?hl=en"
+    }
+  ]
+}

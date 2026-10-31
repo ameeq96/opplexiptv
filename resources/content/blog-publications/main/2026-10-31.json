@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-10-31",
+  "topic": "Distorted picture proportions versus cropped edges: compare one player display setting at a time",
+  "primary_keyword": "IPTV aspect ratio",
+  "slug": "main-iptv-aspect-ratio-and-cropped-picture-check",
+  "translations": {
+    "en": {
+      "title": "IPTV aspect ratio: check picture shape before cropping",
+      "excerpt": "A stretched face and a missing picture edge are different clues. Compare one display control, keep the original setting and describe the result before changing more.",
+      "seo_title": "IPTV aspect ratio and cropped picture: a useful check",
+      "seo_description": "Check IPTV picture proportions, distinguish stretching from cropped edges and keep a reversible record of player display settings before asking for help.",
+      "sections": [
+        {"heading":"Describe the shape of the problem","paragraphs":["If faces look unusually wide or a circular graphic looks oval, write that down before changing the IPTV aspect ratio. Missing text at an edge is a separate clue. Look at an ordinary player menu as well as the programme: is the whole interface affected, or only the video? Note the device, player and whether the problem appears in a window or full screen. Black bars alone do not establish a fault."],"items":[],"links":[]},
+        {"heading":"Compare one display control","paragraphs":["VideoLAN documents aspect ratio and crop as separate VLC controls. Use that distinction when reading your own player's options; names and availability vary. Record the current choice first. If a relevant automatic or default choice is available, compare it with the existing setting without also changing the television. Keep the same scene visible where possible. A fuller screen is not necessarily a more accurate picture, especially if important edges disappear."],"items":[],"links":[{"label":"VideoLAN: VLC video display controls","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Restore and report the result","paragraphs":["Restore the original choice if the comparison is worse or unclear. Avoid cycling through several controls and losing the starting point. If another programme looks normal, include that observation without assuming every source should have identical framing. For Opplex IPTV support, describe which edge is missing or which shapes look stretched, the setting compared and its result. Hide account details in any screenshot; a display adjustment does not confirm that a service problem is resolved."],"items":[],"links":[]}
+      ]
+    },
+    "es": {
+      "title": "Relación de aspecto IPTV: revisa la forma antes de recortar",
+      "excerpt": "Una cara estirada y un borde que falta son pistas diferentes. Compara un control de imagen, conserva el ajuste original y describe el resultado antes de cambiar más cosas.",
+      "seo_title": "Relación de aspecto IPTV y bordes recortados",
+      "seo_description": "Revisa las proporciones de la imagen IPTV, distingue el estiramiento del recorte y anota ajustes reversibles del reproductor antes de pedir ayuda.",
+      "sections": [
+        {"heading":"Describe la forma del problema","paragraphs":["Si las caras parecen demasiado anchas o un gráfico circular se ve ovalado, anótalo antes de cambiar la relación de aspecto IPTV. El texto que falta en un borde es otra pista. Observa un menú habitual del reproductor además del programa: ¿afecta a toda la interfaz o solo al vídeo? Apunta el dispositivo, el reproductor y si ocurre en una ventana o a pantalla completa. Las bandas negras por sí solas no demuestran una avería."],"items":[],"links":[]},
+        {"heading":"Compara un solo control de imagen","paragraphs":["VideoLAN documenta la relación de aspecto y el recorte como controles distintos de VLC. Ten presente esa diferencia al leer las opciones de tu reproductor; los nombres y la disponibilidad varían. Anota primero la selección actual. Si existe una opción automática o predeterminada pertinente, compárala con la actual sin cambiar también el televisor. Mantén la misma escena cuando sea posible. Llenar más la pantalla no siempre mejora la fidelidad, sobre todo si desaparecen bordes importantes."],"items":[],"links":[{"label":"VideoLAN: controles de imagen de VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Restaura y explica el resultado","paragraphs":["Vuelve a la selección original si la comparación empeora la imagen o no resulta clara. Evita recorrer varios controles y perder el punto de partida. Si otro programa se ve bien, incluye esa observación sin suponer que todas las fuentes deben tener el mismo encuadre. Al contactar con soporte de Opplex IPTV, indica qué borde falta o qué formas se estiran, el ajuste comparado y el resultado. Oculta datos de cuenta en las capturas; ajustar la imagen no confirma que un problema del servicio esté resuelto."],"items":[],"links":[]}
+      ]
+    },
+    "fr": {
+      "title": "Format d’image IPTV : vérifiez les proportions avant de recadrer",
+      "excerpt": "Un visage étiré et un bord manquant sont deux indices différents. Comparez un réglage d’affichage, gardez sa valeur initiale et décrivez le résultat avant de poursuivre.",
+      "seo_title": "Format d’image IPTV et bords coupés : que comparer",
+      "seo_description": "Vérifiez les proportions de l’image IPTV, distinguez étirement et recadrage et notez les réglages réversibles du lecteur avant de demander de l’aide.",
+      "sections": [
+        {"heading":"Décrivez la déformation observée","paragraphs":["Si les visages paraissent trop larges ou qu’un élément circulaire devient ovale, notez-le avant de modifier le format d’image IPTV. Du texte manquant sur un bord constitue un autre indice. Regardez aussi un menu ordinaire du lecteur : toute l’interface est-elle touchée, ou seulement la vidéo ? Notez l’appareil, le lecteur et le mode fenêtre ou plein écran. La présence de bandes noires ne suffit pas à établir une panne."],"items":[],"links":[]},
+        {"heading":"Comparez un seul réglage d’affichage","paragraphs":["VideoLAN présente le format d’image et le recadrage comme deux commandes distinctes de VLC. Gardez cette différence en tête en lisant les options de votre lecteur ; leurs noms et leur disponibilité varient. Relevez d’abord la valeur actuelle. Si une option automatique ou par défaut adaptée existe, comparez-la sans modifier aussi le téléviseur. Gardez si possible la même scène à l’écran. Une image plus remplie n’est pas forcément plus fidèle, notamment si des bords importants disparaissent."],"items":[],"links":[{"label":"VideoLAN : commandes d’affichage vidéo de VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Rétablissez le réglage et expliquez le résultat","paragraphs":["Rétablissez la valeur initiale si le résultat est moins bon ou difficile à juger. Évitez d’enchaîner plusieurs commandes au point d’oublier le réglage de départ. Si un autre programme s’affiche normalement, signalez-le sans supposer que toutes les sources doivent avoir un cadrage identique. Pour l’assistance Opplex IPTV, précisez le bord manquant ou les formes étirées, le réglage comparé et son effet. Masquez les données du compte sur toute capture ; un réglage d’affichage ne confirme pas la résolution d’un problème de service."],"items":[],"links":[]}
+      ]
+    },
+    "it": {
+      "title": "Formato immagine IPTV: controlla le proporzioni prima del ritaglio",
+      "excerpt": "Un viso allargato e un bordo mancante sono indizi diversi. Confronta un controllo video, conserva la scelta iniziale e descrivi il risultato prima di modificare altro.",
+      "seo_title": "Formato immagine IPTV e bordi tagliati: cosa controllare",
+      "seo_description": "Controlla le proporzioni del video IPTV, distingui deformazione e ritaglio e annota impostazioni reversibili del lettore prima di chiedere assistenza.",
+      "sections": [
+        {"heading":"Descrivi la forma del problema","paragraphs":["Se i volti sembrano troppo larghi o un elemento circolare appare ovale, annotalo prima di cambiare il formato immagine IPTV. Il testo mancante su un bordo è un indizio diverso. Guarda anche un normale menu del lettore: è coinvolta tutta l’interfaccia oppure solo il video? Segna dispositivo, lettore e modalità in finestra o a schermo intero. Le sole bande nere non dimostrano un guasto."],"items":[],"links":[]},
+        {"heading":"Confronta un solo controllo video","paragraphs":["VideoLAN descrive rapporto d’aspetto e ritaglio come due controlli separati di VLC. Tieni presente questa distinzione mentre leggi le opzioni del tuo lettore; nomi e disponibilità possono cambiare. Annota prima la scelta attuale. Se esiste un’opzione automatica o predefinita pertinente, confrontala con quella attuale senza modificare anche il televisore. Mantieni possibilmente la stessa scena. Riempire maggiormente lo schermo non significa ottenere un’immagine più fedele, soprattutto se scompaiono bordi importanti."],"items":[],"links":[{"label":"VideoLAN: controlli di visualizzazione video di VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Ripristina e riferisci il risultato","paragraphs":["Ripristina la scelta originale se il confronto peggiora l’immagine o resta poco chiaro. Evita di provare tanti controlli perdendo il punto di partenza. Se un altro programma appare normale, riferiscilo senza presumere che ogni sorgente debba avere la stessa inquadratura. Per l’assistenza Opplex IPTV descrivi quale bordo manca o quali forme sono deformate, l’impostazione confrontata e il risultato. Nascondi i dati dell’account nelle schermate; una regolazione video non conferma che un problema del servizio sia stato risolto."],"items":[],"links":[]}
+      ]
+    },
+    "nl": {
+      "title": "IPTV-beeldverhouding: controleer de vorm vóór je bijsnijdt",
+      "excerpt": "Een uitgerekt gezicht en een ontbrekende beeldrand wijzen op verschillende dingen. Vergelijk één beeldinstelling, bewaar de oorspronkelijke keuze en beschrijf het resultaat.",
+      "seo_title": "IPTV-beeldverhouding en afgesneden randen controleren",
+      "seo_description": "Controleer IPTV-beeldverhoudingen, onderscheid uitrekken van bijsnijden en noteer omkeerbare spelerinstellingen voordat je ondersteuning vraagt.",
+      "sections": [
+        {"heading":"Beschrijf hoe het beeld afwijkt","paragraphs":["Lijken gezichten opvallend breed of wordt een rond symbool ovaal, noteer dat dan voordat je de IPTV-beeldverhouding verandert. Ontbrekende tekst aan de rand is een andere aanwijzing. Bekijk naast het programma ook een gewoon spelermenu: wijkt de hele interface af of alleen de video? Noteer het apparaat, de speler en of je een venster of volledig scherm gebruikt. Zwarte balken op zichzelf bewijzen geen storing."],"items":[],"links":[]},
+        {"heading":"Vergelijk één beeldinstelling","paragraphs":["VideoLAN beschrijft beeldverhouding en bijsnijden als afzonderlijke VLC-bedieningen. Houd dat verschil in gedachten bij de opties van je eigen speler; namen en beschikbaarheid verschillen. Noteer eerst de huidige keuze. Vergelijk een toepasselijke automatische of standaardoptie, indien aanwezig, zonder tegelijk de televisie te veranderen. Gebruik waar mogelijk dezelfde scène. Een voller scherm geeft niet noodzakelijk een getrouwer beeld, vooral wanneer belangrijke randen verdwijnen."],"items":[],"links":[{"label":"VideoLAN: videoweergave instellen in VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Zet terug en beschrijf de uitkomst","paragraphs":["Herstel de oorspronkelijke keuze als de vergelijking slechter of onduidelijk uitvalt. Loop niet allerlei instellingen langs totdat je het beginpunt vergeten bent. Ziet een ander programma er normaal uit, vermeld dat dan zonder voor alle bronnen dezelfde kadrering te verwachten. Beschrijf voor Opplex IPTV-ondersteuning welke rand ontbreekt of welke vormen zijn uitgerekt, welke instelling je vergeleek en wat er veranderde. Verberg accountgegevens in schermafbeeldingen; een beeldinstelling aanpassen bevestigt niet dat een serviceprobleem is opgelost."],"items":[],"links":[]}
+      ]
+    },
+    "pt": {
+      "title": "Proporção da imagem IPTV: verifique a forma antes de recortar",
+      "excerpt": "Um rosto esticado e uma margem em falta são pistas diferentes. Compare um controlo de imagem, guarde a opção original e descreva o resultado antes de alterar mais definições.",
+      "seo_title": "Proporção da imagem IPTV e margens cortadas",
+      "seo_description": "Verifique as proporções da imagem IPTV, distinga deformação de recorte e anote definições reversíveis do leitor antes de pedir ajuda.",
+      "sections": [
+        {"heading":"Descreva a forma do problema","paragraphs":["Se os rostos parecerem demasiado largos ou um elemento circular ficar oval, anote isso antes de mudar a proporção da imagem IPTV. Texto em falta numa margem é uma pista diferente. Observe também um menu normal do leitor: toda a interface é afetada ou apenas o vídeo? Registe o dispositivo, o leitor e se utiliza uma janela ou o ecrã inteiro. As barras pretas, por si só, não demonstram uma avaria."],"items":[],"links":[]},
+        {"heading":"Compare um controlo de imagem de cada vez","paragraphs":["A VideoLAN documenta a proporção e o recorte como controlos separados do VLC. Tenha essa diferença presente ao ler as opções do seu leitor; os nomes e a disponibilidade variam. Anote primeiro a opção atual. Se existir uma opção automática ou predefinida adequada, compare-a sem alterar também o televisor. Mantenha a mesma cena sempre que possível. Preencher mais o ecrã não significa uma imagem mais fiel, sobretudo se desaparecerem margens importantes."],"items":[],"links":[{"label":"VideoLAN: controlos de apresentação de vídeo do VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Reponha a opção e relate o resultado","paragraphs":["Reponha a escolha original se o resultado piorar ou não for claro. Evite percorrer vários controlos e perder o ponto de partida. Se outro programa aparecer normalmente, inclua essa observação sem assumir que todas as fontes devem ter enquadramento igual. Para o apoio Opplex IPTV, descreva a margem em falta ou as formas deformadas, a definição comparada e o efeito. Oculte dados da conta nas capturas; uma alteração de imagem não confirma que um problema do serviço ficou resolvido."],"items":[],"links":[]}
+      ]
+    },
+    "ru": {
+      "title": "Соотношение сторон IPTV: проверьте форму изображения до обрезки",
+      "excerpt": "Растянутое лицо и пропавший край кадра — разные признаки. Сравните одну настройку изображения, сохраните исходный выбор и опишите результат, прежде чем менять остальное.",
+      "seo_title": "Соотношение сторон IPTV и обрезанные края кадра",
+      "seo_description": "Проверьте пропорции изображения IPTV, отличите растяжение от обрезки и запишите обратимые настройки проигрывателя перед обращением за помощью.",
+      "sections": [
+        {"heading":"Опишите, как именно искажён кадр","paragraphs":["Если лица кажутся слишком широкими или круглый значок выглядит овальным, запишите это до изменения соотношения сторон IPTV. Пропавший текст у края — другой признак. Посмотрите не только программу, но и обычное меню проигрывателя: затронут весь интерфейс или лишь видео? Укажите устройство, проигрыватель и режим окна либо полного экрана. Одни только чёрные полосы не доказывают неисправность."],"items":[],"links":[]},
+        {"heading":"Сравните одну настройку изображения","paragraphs":["VideoLAN описывает соотношение сторон и обрезку как отдельные средства управления VLC. Учитывайте эту разницу, читая параметры своего проигрывателя: названия и доступность отличаются. Сначала запишите текущее значение. Если есть подходящий автоматический вариант или значение по умолчанию, сравните его с текущим, не меняя одновременно телевизор. По возможности оставьте ту же сцену. Более заполненный экран не обязательно означает более точное изображение, особенно если исчезают важные края."],"items":[],"links":[{"label":"VideoLAN: настройки отображения видео в VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"Верните исходный выбор и сообщите результат","paragraphs":["Верните исходный вариант, если результат хуже или непонятен. Не перебирайте много настроек, теряя начальную точку. Если другая программа выглядит нормально, сообщите об этом, но не предполагая одинаковое кадрирование у всех источников. Для поддержки Opplex IPTV опишите, какой край пропал или какие формы растянуты, какой параметр сравнивали и что изменилось. Скрывайте данные учётной записи на снимках экрана: изменение изображения не подтверждает устранение проблемы сервиса."],"items":[],"links":[]}
+      ]
+    },
+    "ur": {
+      "title": "IPTV کی تصویر کا تناسب: کنارے کاٹنے سے پہلے شکل دیکھیں",
+      "excerpt": "پھیلا ہوا چہرہ اور تصویر کا غائب کنارہ الگ نشانیاں ہیں۔ ایک تصویری ترتیب کا موازنہ کریں، اصل انتخاب محفوظ رکھیں اور مزید تبدیلی سے پہلے نتیجہ بیان کریں۔",
+      "seo_title": "IPTV کی تصویر کا تناسب اور کٹے ہوئے کنارے",
+      "seo_description": "IPTV تصویر کے تناسب میں پھیلاؤ اور کنارے کٹنے کا فرق سمجھیں اور مدد لینے سے پہلے پلیئر کی واپس بدلی جا سکنے والی ترتیبات نوٹ کریں۔",
+      "sections": [
+        {"heading":"لکھیں کہ تصویر کی شکل کیسے بدلی ہے","paragraphs":["اگر چہرے غیر معمولی چوڑے یا گول نشان بیضوی دکھائی دیں تو IPTV کی تصویر کا تناسب بدلنے سے پہلے یہ بات لکھیں۔ کنارے پر متن غائب ہونا ایک الگ نشانی ہے۔ پروگرام کے ساتھ پلیئر کا عام مینو بھی دیکھیں: پورا انٹرفیس متاثر ہے یا صرف ویڈیو؟ ڈیوائس، پلیئر اور یہ نوٹ کریں کہ مسئلہ ونڈو میں ہے یا پوری اسکرین پر۔ صرف سیاہ پٹیاں خرابی کا ثبوت نہیں ہیں۔"],"items":[],"links":[]},
+        {"heading":"ایک تصویری ترتیب کا موازنہ کریں","paragraphs":["VideoLAN، VLC میں تصویر کے تناسب اور کنارے کاٹنے کو الگ کنٹرول کے طور پر بیان کرتا ہے۔ اپنے پلیئر کے اختیارات پڑھتے وقت یہ فرق یاد رکھیں؛ نام اور دستیابی بدل سکتی ہے۔ پہلے موجودہ انتخاب لکھیں۔ اگر مناسب خودکار یا پہلے سے مقرر اختیار موجود ہو تو ٹی وی کی ترتیب ساتھ بدلے بغیر اس کا موجودہ انتخاب سے موازنہ کریں۔ ممکن ہو تو ایک ہی منظر سامنے رکھیں۔ اسکرین زیادہ بھر جانا لازماً زیادہ درست تصویر نہیں، خاص طور پر جب اہم کنارے غائب ہو جائیں۔"],"items":[],"links":[{"label":"VideoLAN: VLC میں ویڈیو دکھانے کے کنٹرول","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"اصل انتخاب واپس کریں اور نتیجہ بتائیں","paragraphs":["اگر موازنہ خراب یا غیر واضح ہو تو اصل انتخاب واپس کر دیں۔ کئی کنٹرول مسلسل بدل کر شروعاتی ترتیب نہ بھولیں۔ دوسرا پروگرام درست دکھائی دے تو یہ بات بھی بتائیں، مگر ہر ذریعے کی تصویر کا ایک جیسا فریم ہونا ضروری نہ سمجھیں۔ Opplex IPTV کی مدد لیتے وقت غائب کنارے یا پھیلی ہوئی شکل، آزمائی گئی ترتیب اور اس کا نتیجہ بیان کریں۔ اسکرین شاٹ میں اکاؤنٹ کی تفصیل چھپائیں؛ تصویر کی ترتیب بدلنے سے سروس کا مسئلہ حل ہونے کی تصدیق نہیں ہوتی۔"],"items":[],"links":[]}
+      ]
+    },
+    "ar": {
+      "title": "نسبة أبعاد صورة IPTV: افحص الشكل قبل القص",
+      "excerpt": "الوجه الممدود والحافة المفقودة علامتان مختلفتان. قارن إعداد عرض واحداً، واحتفظ بالاختيار الأصلي، ثم صف النتيجة قبل إجراء تغييرات إضافية.",
+      "seo_title": "نسبة أبعاد IPTV والحواف المقتطعة: فحص عملي",
+      "seo_description": "افحص تناسب صورة IPTV وميّز التمدد عن القص، وسجّل إعدادات المشغّل القابلة للاستعادة قبل طلب المساعدة بشأن الصورة.",
+      "sections": [
+        {"heading":"صف شكل المشكلة أولاً","paragraphs":["إذا بدت الوجوه عريضة بشكل غير معتاد أو ظهر رسم دائري بشكل بيضاوي، فدوّن ذلك قبل تغيير نسبة أبعاد صورة IPTV. اختفاء نص عند الحافة علامة أخرى. انظر أيضاً إلى قائمة عادية في المشغّل: هل تتأثر الواجهة كلها أم الفيديو وحده؟ سجّل الجهاز والمشغّل وما إذا كانت المشكلة في نافذة أو في ملء الشاشة. الأشرطة السوداء وحدها لا تثبت وجود عطل."],"items":[],"links":[]},
+        {"heading":"قارن إعداد عرض واحداً","paragraphs":["تعرض VideoLAN نسبة الأبعاد والقص كأداتين منفصلتين في VLC. ضع هذا الفرق في الحسبان عند قراءة خيارات مشغّلك؛ تختلف الأسماء والإتاحة. سجّل الاختيار الحالي أولاً. إذا توفر خيار تلقائي أو افتراضي مناسب، فقارنه بالحالي دون تغيير التلفزيون في الوقت نفسه. أبق المشهد نفسه ظاهراً إن أمكن. امتلاء الشاشة بدرجة أكبر لا يعني بالضرورة صورة أدق، خصوصاً عند اختفاء حواف مهمة."],"items":[],"links":[{"label":"VideoLAN: أدوات عرض الفيديو في VLC","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"استعد الاختيار واشرح النتيجة","paragraphs":["أعد الاختيار الأصلي إذا كانت المقارنة أسوأ أو غير واضحة. تجنّب التنقل بين إعدادات كثيرة حتى تفقد نقطة البداية. إذا ظهر برنامج آخر بصورة طبيعية، فأضف هذه الملاحظة دون افتراض تطابق تأطير جميع المصادر. عند التواصل مع دعم Opplex IPTV، صف الحافة المفقودة أو الأشكال الممدودة، والإعداد الذي قارنته ونتيجته. أخفِ بيانات الحساب في أي لقطة شاشة؛ تعديل العرض لا يؤكد حل مشكلة في الخدمة."],"items":[],"links":[]}
+      ]
+    },
+    "hi": {
+      "title": "IPTV चित्र का अनुपात: किनारे काटने से पहले आकार जाँचें",
+      "excerpt": "खिंचा हुआ चेहरा और गायब किनारा अलग संकेत हैं। एक डिस्प्ले सेटिंग की तुलना करें, मूल विकल्प लिखकर रखें और आगे बदलाव से पहले परिणाम समझें।",
+      "seo_title": "IPTV चित्र का अनुपात और कटे किनारे कैसे जाँचें",
+      "seo_description": "IPTV चित्र में खिंचाव और किनारे कटने का अंतर समझें तथा सहायता लेने से पहले प्लेयर की वापस बदली जा सकने वाली सेटिंग लिखकर रखें।",
+      "sections": [
+        {"heading":"बताएँ कि चित्र का आकार कैसे बदला है","paragraphs":["अगर चेहरे असामान्य रूप से चौड़े या गोल चिह्न अंडाकार दिखें, तो IPTV चित्र का अनुपात बदलने से पहले यह बात लिखें। किनारे पर लिखा पाठ गायब होना अलग संकेत है। कार्यक्रम के साथ प्लेयर का सामान्य मेनू भी देखें: पूरी इंटरफ़ेस प्रभावित है या सिर्फ वीडियो? डिवाइस, प्लेयर और विंडो या पूरी स्क्रीन वाला मोड नोट करें। केवल काली पट्टियाँ दिखना खराबी का प्रमाण नहीं है।"],"items":[],"links":[]},
+        {"heading":"एक डिस्प्ले सेटिंग की तुलना करें","paragraphs":["VideoLAN, VLC में चित्र अनुपात और किनारे काटने को अलग नियंत्रण बताता है। अपने प्लेयर के विकल्प पढ़ते समय यह अंतर याद रखें; नाम और उपलब्धता बदल सकते हैं। पहले वर्तमान विकल्प लिखें। उपयुक्त स्वचालित या पहले से तय विकल्प उपलब्ध हो, तो टीवी की सेटिंग साथ बदले बिना उसकी मौजूदा विकल्प से तुलना करें। संभव हो तो वही दृश्य सामने रखें। स्क्रीन अधिक भरना हमेशा अधिक सही चित्र नहीं देता, खासकर जब ज़रूरी किनारे गायब हो जाएँ।"],"items":[],"links":[{"label":"VideoLAN: VLC में वीडियो डिस्प्ले के नियंत्रण","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]},
+        {"heading":"मूल विकल्प लौटाएँ और परिणाम बताएँ","paragraphs":["तुलना का परिणाम खराब या अस्पष्ट हो, तो मूल विकल्प वापस करें। कई नियंत्रण बदलते हुए शुरुआत की सेटिंग न भूलें। दूसरा कार्यक्रम सामान्य दिखे, तो यह भी बताएँ, लेकिन सभी स्रोतों का एक जैसा फ्रेम होना ज़रूरी न मानें। Opplex IPTV सहायता के लिए बताएँ कि कौन सा किनारा गायब है या कौन से आकार खिंचे हुए हैं, किस सेटिंग की तुलना की और क्या बदला। स्क्रीनशॉट में खाते की जानकारी छिपाएँ; डिस्प्ले समायोजन से सेवा की समस्या हल होने की पुष्टि नहीं होती।"],"items":[],"links":[]}
+      ]
+    }
+  },
+  "sources": [{"label":"VideoLAN: VLC video display controls","url":"https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/video.html"}]
+}
