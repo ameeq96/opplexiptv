@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-02",
+  "topic": "Phone hotspot idle shut-off and television reconnect checks before changing an IPTV player",
+  "primary_keyword": "5G Live IPTV hotspot",
+  "slug": "5g-phone-hotspot-idle-state-and-television-reconnection",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV hotspot: reconnect the television before changing the player",
+      "excerpt": "A phone can have internet while its television hotspot connection is missing. Check the phone, hotspot and television separately before reinstalling a player or buying another plan.",
+      "seo_title": "5G Live IPTV hotspot: check the missing connection",
+      "seo_description": "Check a 5G Live IPTV hotspot connection in stages. Look for an idle hotspot, confirm the television network and keep mobile tethering costs separate from your plan.",
+      "sections": [
+        {
+          "heading": "Find where the connection stops",
+          "paragraphs": [
+            "Begin a 5G Live IPTV hotspot check at the phone. Can it open an ordinary website using the connection you intend to share? Then look at the television or streaming device: is it connected to that phone’s hotspot name, or still trying an old home network? A working phone does not prove that another device has internet. Note which link is missing before changing the player or treating the problem as a service outage."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the hotspot after an idle period",
+          "paragraphs": [
+            "Android offers automatic hotspot shut-off when no devices are connected on phones that support it. If the television was asleep, inspect whether the hotspot is still active when you return. Re-enable it if needed and reconnect the television using the correct network name and password. Keep password protection enabled. The menu names vary by phone, so use the manufacturer’s instructions rather than resetting all network settings. Turn sharing off after use."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: share an Android connection by hotspot",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separate tethering from the viewing plan",
+          "paragraphs": [
+            "Your mobile carrier may restrict tethering or charge extra; confirm its rules before a long session. Those rules are separate from a 5G Live IPTV subscription, whose current plans allow one simultaneous connection. The brand name does not identify which mobile network your phone is using. If the television connects but playback still fails, record the player’s exact message. A successful hotspot connection alone does not establish that a programme or service is working."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Zona wifi para 5G Live IPTV: reconecta el televisor antes de cambiar el reproductor",
+      "excerpt": "El teléfono puede tener internet aunque falte la conexión compartida con el televisor. Comprueba cada enlace antes de reinstalar el reproductor o comprar otro plan.",
+      "seo_title": "5G Live IPTV con zona wifi: comprueba la conexión",
+      "seo_description": "Comprueba por etapas la conexión compartida para 5G Live IPTV: zona wifi inactiva, red del televisor y costes del operador separados de la suscripción.",
+      "sections": [
+        {
+          "heading": "Localiza dónde se interrumpe la conexión",
+          "paragraphs": [
+            "Empieza la comprobación de la zona wifi para 5G Live IPTV en el teléfono. ¿Puede abrir una web normal mediante la conexión que quieres compartir? Después mira el televisor o dispositivo: ¿está conectado al nombre de la zona wifi del teléfono o sigue buscando una red doméstica anterior? Que el teléfono funcione no demuestra que otro aparato tenga internet. Anota qué enlace falta antes de cambiar el reproductor o considerar que hay una caída del servicio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la zona wifi tras un periodo sin uso",
+          "paragraphs": [
+            "Android permite apagar automáticamente la zona wifi cuando no hay dispositivos conectados en teléfonos compatibles. Si el televisor estaba en reposo, comprueba al volver si sigue activa. Actívala si hace falta y reconecta el televisor con el nombre y la contraseña correctos. Mantén la protección con contraseña. Los menús varían según el teléfono; consulta las instrucciones del fabricante en vez de restablecer todos los ajustes de red. Desactiva la conexión compartida al terminar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: compartir una conexión Android mediante zona wifi",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la conexión compartida del plan de televisión",
+          "paragraphs": [
+            "Tu operador móvil puede limitar la conexión compartida o cobrar más; confirma sus reglas antes de una sesión larga. Son independientes de la suscripción 5G Live IPTV, cuyos planes actuales permiten una conexión simultánea. La marca no identifica la red móvil que utiliza tu teléfono. Si el televisor se conecta pero falla la reproducción, anota el mensaje exacto del reproductor. Una conexión correcta a la zona wifi no demuestra por sí sola que el programa o servicio funcione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Point d’accès 5G Live IPTV : reconnecter le téléviseur avant de changer le lecteur",
+      "excerpt": "Un téléphone peut accéder à internet alors que le téléviseur n’est plus relié à son point d’accès. Vérifiez chaque liaison avant de réinstaller le lecteur ou de racheter un forfait.",
+      "seo_title": "Point d’accès 5G Live IPTV : vérifier la liaison manquante",
+      "seo_description": "Vérifiez le point d’accès pour 5G Live IPTV par étapes : arrêt après inactivité, réseau du téléviseur et frais de partage distincts de l’abonnement.",
+      "sections": [
+        {
+          "heading": "Repérer où la connexion s’interrompt",
+          "paragraphs": [
+            "Commencez la vérification du point d’accès 5G Live IPTV sur le téléphone. Peut-il ouvrir un site ordinaire avec la connexion que vous souhaitez partager ? Regardez ensuite le téléviseur ou le boîtier : est-il relié au point d’accès de ce téléphone ou cherche-t-il toujours un ancien réseau domestique ? Un téléphone connecté ne prouve pas qu’un autre appareil dispose d’internet. Notez la liaison manquante avant de modifier le lecteur ou de conclure à une panne du service."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Contrôler le point d’accès après une pause",
+          "paragraphs": [
+            "Sur les téléphones compatibles, Android propose l’arrêt automatique du point d’accès lorsqu’aucun appareil n’est connecté. Si le téléviseur était en veille, vérifiez au retour si le partage est encore actif. Réactivez-le si nécessaire, puis reconnectez le téléviseur avec le bon nom de réseau et le bon mot de passe. Conservez la protection par mot de passe. Les menus varient selon le téléphone : suivez les indications du fabricant plutôt que réinitialiser tous les réglages réseau. Coupez le partage après utilisation."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : partager une connexion Android par point d’accès",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguer le partage mobile de l’abonnement",
+          "paragraphs": [
+            "L’opérateur mobile peut limiter le partage de connexion ou le facturer en supplément ; vérifiez ses conditions avant une longue séance. Elles sont distinctes de l’abonnement 5G Live IPTV, dont les offres actuelles autorisent une connexion simultanée. La marque n’indique pas le réseau mobile utilisé par votre téléphone. Si le téléviseur se connecte mais que la lecture échoue, notez le message exact du lecteur. Une liaison au point d’accès ne confirme pas à elle seule le fonctionnement du programme ou du service."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Hotspot per 5G Live IPTV: ricollega la TV prima di cambiare lettore",
+      "excerpt": "Il telefono può avere internet mentre manca il collegamento hotspot della TV. Controlla telefono, rete condivisa e televisore prima di reinstallare il lettore o acquistare un altro piano.",
+      "seo_title": "Hotspot 5G Live IPTV: controlla il collegamento mancante",
+      "seo_description": "Controlla l’hotspot per 5G Live IPTV per fasi: spegnimento dopo inattività, rete della TV e costi di condivisione distinti dall’abbonamento.",
+      "sections": [
+        {
+          "heading": "Individua dove si interrompe la connessione",
+          "paragraphs": [
+            "Inizia il controllo dell’hotspot per 5G Live IPTV dal telefono. Riesce ad aprire un normale sito con la connessione che intendi condividere? Poi guarda la TV o il dispositivo: è collegato al nome dell’hotspot di quel telefono oppure cerca ancora una vecchia rete domestica? Il telefono funzionante non dimostra che un altro apparecchio abbia internet. Annota quale collegamento manca prima di modificare il lettore o considerare il problema un’interruzione del servizio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l’hotspot dopo una pausa",
+          "paragraphs": [
+            "Nei telefoni compatibili, Android offre lo spegnimento automatico dell’hotspot quando non ci sono dispositivi connessi. Se la TV era in sospensione, controlla al ritorno se l’hotspot è ancora attivo. Riaccendilo se necessario e ricollega la TV con nome di rete e password corretti. Mantieni attiva la protezione con password. I menu variano secondo il telefono: segui le istruzioni del produttore invece di ripristinare tutte le impostazioni di rete. Disattiva la condivisione quando hai finito."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: condividere una connessione Android tramite hotspot",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la connessione condivisa dal piano di visione",
+          "paragraphs": [
+            "L’operatore mobile può limitare la condivisione o applicare costi aggiuntivi: verifica le regole prima di una sessione lunga. Sono distinte dall’abbonamento 5G Live IPTV, i cui piani attuali consentono una connessione simultanea. Il marchio non identifica la rete mobile usata dal telefono. Se la TV si collega ma la riproduzione fallisce, annota il messaggio esatto del lettore. Il collegamento all’hotspot, da solo, non conferma il funzionamento di un programma o del servizio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-hotspot: verbind eerst de televisie opnieuw",
+      "excerpt": "Je telefoon kan internet hebben terwijl de televisie niet met de hotspot is verbonden. Controleer beide apparaten en de verbinding voordat je de speler opnieuw installeert of een ander abonnement koopt.",
+      "seo_title": "5G Live IPTV-hotspot: controleer de ontbrekende verbinding",
+      "seo_description": "Controleer de hotspot voor 5G Live IPTV stap voor stap: uitschakeling bij inactiviteit, het televisienetwerk en afzonderlijke kosten voor tethering.",
+      "sections": [
+        {
+          "heading": "Zoek waar de verbinding ontbreekt",
+          "paragraphs": [
+            "Begin een controle van de 5G Live IPTV-hotspot bij de telefoon. Kan die een gewone website openen via de verbinding die je wilt delen? Kijk daarna naar de televisie of het streamingapparaat: is het verbonden met de hotspotnaam van die telefoon, of zoekt het nog een oud thuisnetwerk? Een werkende telefoon bewijst niet dat een ander apparaat internet heeft. Noteer welke verbinding ontbreekt voordat je de speler verandert of aan een algemene storing denkt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de hotspot na een pauze",
+          "paragraphs": [
+            "Android biedt op ondersteunde telefoons de mogelijkheid om de hotspot automatisch uit te schakelen als er geen apparaten zijn verbonden. Sliep de televisie, controleer dan bij terugkomst of de hotspot nog actief is. Zet hem zo nodig aan en verbind de televisie opnieuw met de juiste netwerknaam en het juiste wachtwoord. Laat wachtwoordbeveiliging aanstaan. Menunamen verschillen per telefoon; volg de fabrikant in plaats van alle netwerkinstellingen opnieuw in te stellen. Schakel delen na gebruik uit."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: een Android-verbinding delen via een hotspot",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd tethering en het kijkabonnement uit elkaar",
+          "paragraphs": [
+            "Je mobiele provider kan tethering beperken of extra kosten rekenen; controleer de regels voordat je lang kijkt. Die staan los van een 5G Live IPTV-abonnement, waarvan de huidige pakketten één gelijktijdige verbinding toestaan. De merknaam zegt niet welk mobiel netwerk je telefoon gebruikt. Maakt de televisie verbinding maar mislukt afspelen, noteer dan de precieze melding van de speler. Een geslaagde hotspotverbinding bewijst op zichzelf niet dat een programma of dienst werkt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Hotspot para 5G Live IPTV: volte a ligar a televisão primeiro",
+      "excerpt": "O telemóvel pode ter internet enquanto falta a ligação partilhada da televisão. Verifique cada ligação antes de reinstalar o leitor ou comprar outro plano.",
+      "seo_title": "Hotspot 5G Live IPTV: verifique a ligação em falta",
+      "seo_description": "Verifique o hotspot para 5G Live IPTV por etapas: desligamento por inatividade, rede da televisão e custos da operadora separados da assinatura.",
+      "sections": [
+        {
+          "heading": "Identifique onde a ligação falha",
+          "paragraphs": [
+            "Comece a verificar o hotspot para 5G Live IPTV no telemóvel. Consegue abrir um site normal com a ligação que pretende partilhar? Depois veja a televisão ou o dispositivo: está ligado ao nome do hotspot desse telemóvel ou ainda tenta uma antiga rede doméstica? O telemóvel funcionar não prova que outro aparelho tenha internet. Anote a ligação em falta antes de alterar o leitor ou considerar o problema uma falha do serviço."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifique o hotspot depois de uma pausa",
+          "paragraphs": [
+            "Nos telemóveis compatíveis, o Android permite desligar automaticamente o hotspot quando não há dispositivos ligados. Se a televisão estava em suspensão, confirme ao regressar se o hotspot continua ativo. Volte a ativá-lo se necessário e ligue a televisão com o nome de rede e a palavra-passe corretos. Mantenha a proteção por palavra-passe. Os menus variam conforme o telemóvel: siga as instruções do fabricante em vez de repor todas as definições de rede. Desligue a partilha quando terminar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: partilhar uma ligação Android por hotspot",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a partilha móvel do plano de televisão",
+          "paragraphs": [
+            "A operadora móvel pode limitar a partilha de ligação ou cobrar mais; confirme as regras antes de uma sessão longa. São independentes da assinatura 5G Live IPTV, cujos planos atuais permitem uma ligação simultânea. A marca não identifica a rede móvel que o telemóvel utiliza. Se a televisão se liga mas a reprodução falha, anote a mensagem exata do leitor. Uma ligação ao hotspot, por si só, não confirma que um programa ou serviço esteja a funcionar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Точка доступа для 5G Live IPTV: сначала переподключите телевизор",
+      "excerpt": "На телефоне может работать интернет, даже когда телевизор не подключен к его точке доступа. Проверьте все звенья до переустановки плеера или покупки другого тарифа.",
+      "seo_title": "Точка доступа 5G Live IPTV: проверка потерянного соединения",
+      "seo_description": "Проверьте точку доступа для 5G Live IPTV поэтапно: отключение при простое, сеть телевизора и отдельные условия мобильного оператора.",
+      "sections": [
+        {
+          "heading": "Найдите, где пропало соединение",
+          "paragraphs": [
+            "Начните проверку точки доступа для 5G Live IPTV с телефона. Открывает ли он обычный сайт через соединение, которым вы хотите поделиться? Затем проверьте телевизор или приставку: подключены ли они к точке доступа этого телефона или всё еще ищут прежнюю домашнюю сеть? Работающий телефон не доказывает наличие интернета на другом устройстве. Запишите, какое звено отсутствует, прежде чем менять плеер или считать проблему сбоем сервиса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте точку доступа после простоя",
+          "paragraphs": [
+            "На поддерживаемых телефонах Android предлагает автоматически выключать точку доступа, когда подключенных устройств нет. Если телевизор был в режиме сна, после возвращения проверьте, включена ли раздача. При необходимости включите ее снова и подключите телевизор с правильным именем сети и паролем. Не отключайте защиту паролем. Названия меню различаются: следуйте инструкции производителя, а не сбрасывайте все сетевые настройки. После использования выключайте раздачу."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: раздача соединения Android через точку доступа",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте раздачу интернета от подписки",
+          "paragraphs": [
+            "Мобильный оператор может ограничивать раздачу или брать дополнительную плату; проверьте условия до долгого просмотра. Они не относятся к подписке 5G Live IPTV, текущие планы которой допускают одно одновременное подключение. Название бренда не определяет мобильную сеть телефона. Если телевизор подключился, но воспроизведение не работает, запишите точное сообщение плеера. Само подключение к точке доступа не подтверждает работоспособность программы или сервиса."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV ہاٹ اسپاٹ: پلیئر بدلنے سے پہلے ٹی وی دوبارہ جوڑیں",
+      "excerpt": "فون پر انٹرنیٹ چل سکتا ہے جبکہ ٹی وی کا ہاٹ اسپاٹ سے رابطہ نہ ہو۔ پلیئر دوبارہ نصب کرنے یا دوسرا پلان لینے سے پہلے فون، ہاٹ اسپاٹ اور ٹی وی الگ جانچیں۔",
+      "seo_title": "5G Live IPTV ہاٹ اسپاٹ: غائب رابطہ کیسے جانچیں",
+      "seo_description": "5G Live IPTV کے ہاٹ اسپاٹ رابطے کو مرحلہ وار جانچیں: بے استعمال ہونے پر بندش، ٹی وی کا منتخب نیٹ ورک اور موبائل کمپنی کے الگ اخراجات۔",
+      "sections": [
+        {
+          "heading": "دیکھیں رابطہ کہاں رکا ہے",
+          "paragraphs": [
+            "5G Live IPTV ہاٹ اسپاٹ کی جانچ فون سے شروع کریں۔ کیا وہ اسی رابطے پر عام ویب سائٹ کھول سکتا ہے جسے آپ بانٹنا چاہتے ہیں؟ پھر ٹی وی یا اسٹریمنگ ڈیوائس دیکھیں: کیا وہ اسی فون کے ہاٹ اسپاٹ نام سے جڑا ہے یا پرانا گھریلو نیٹ ورک تلاش کر رہا ہے؟ فون چلنے سے دوسرے آلے پر انٹرنیٹ ثابت نہیں ہوتا۔ پلیئر بدلنے یا سروس کی بندش سمجھنے سے پہلے غائب رابطہ لکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "وقفے کے بعد ہاٹ اسپاٹ دیکھیں",
+          "paragraphs": [
+            "جن فونوں میں سہولت موجود ہو، Android کوئی ڈیوائس متصل نہ ہونے پر ہاٹ اسپاٹ خود بند کرنے کا اختیار دیتا ہے۔ اگر ٹی وی نیند کی حالت میں تھا تو واپس آکر دیکھیں کہ ہاٹ اسپاٹ اب بھی فعال ہے یا نہیں۔ ضرورت ہو تو اسے دوبارہ چلا کر درست نیٹ ورک نام اور پاس ورڈ سے ٹی وی جوڑیں۔ پاس ورڈ کی حفاظت جاری رکھیں۔ فون کے مینو مختلف ہوتے ہیں؛ تمام نیٹ ورک ترتیبات مٹانے کے بجائے بنانے والی کمپنی کی ہدایات دیکھیں۔ کام کے بعد اشتراک بند کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android کا انٹرنیٹ ہاٹ اسپاٹ کے ذریعے بانٹیں",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "موبائل اشتراک اور دیکھنے کا پلان الگ رکھیں",
+          "paragraphs": [
+            "موبائل کمپنی انٹرنیٹ بانٹنے پر پابندی یا اضافی خرچ لگا سکتی ہے؛ طویل استعمال سے پہلے شرائط معلوم کریں۔ یہ 5G Live IPTV کی رکنیت سے الگ ہیں، جس کے موجودہ پلان ایک بیک وقت کنکشن کی اجازت دیتے ہیں۔ برانڈ کا نام فون کا موبائل نیٹ ورک نہیں بتاتا۔ ٹی وی متصل ہو مگر ویڈیو نہ چلے تو پلیئر کا بالکل درست پیغام لکھیں۔ ہاٹ اسپاٹ سے جڑ جانا اکیلے پروگرام یا سروس کے درست چلنے کی تصدیق نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "نقطة اتصال 5G Live IPTV: أعد توصيل التلفزيون قبل تغيير المشغّل",
+      "excerpt": "قد يعمل الإنترنت على الهاتف بينما يغيب اتصال التلفزيون بنقطة الوصول. افحص الهاتف والمشاركة والتلفزيون قبل إعادة تثبيت المشغّل أو شراء باقة أخرى.",
+      "seo_title": "نقطة اتصال 5G Live IPTV: افحص الرابط المفقود",
+      "seo_description": "افحص نقطة الاتصال المستخدمة مع 5G Live IPTV تدريجياً: إيقاف الخمول وشبكة التلفزيون ورسوم مشاركة البيانات المنفصلة عن الاشتراك.",
+      "sections": [
+        {
+          "heading": "حدد أين يتوقف الاتصال",
+          "paragraphs": [
+            "ابدأ فحص نقطة الاتصال المستخدمة مع 5G Live IPTV من الهاتف. هل يفتح موقعاً عادياً عبر الاتصال الذي تريد مشاركته؟ ثم انظر إلى التلفزيون أو جهاز البث: هل يتصل باسم نقطة وصول ذلك الهاتف أم ما زال يحاول الاتصال بشبكة منزلية قديمة؟ عمل الهاتف لا يثبت توفر الإنترنت على جهاز آخر. سجّل الرابط المفقود قبل تغيير المشغّل أو اعتبار المشكلة انقطاعاً في الخدمة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص نقطة الاتصال بعد فترة خمول",
+          "paragraphs": [
+            "يوفر Android في الهواتف الداعمة خيار إيقاف نقطة الاتصال تلقائياً عندما لا تتصل بها أجهزة. إذا كان التلفزيون في وضع السكون، فتحقق عند العودة من استمرار تشغيل المشاركة. أعد تفعيلها عند الحاجة ثم صِل التلفزيون باسم الشبكة وكلمة المرور الصحيحين. أبقِ الحماية بكلمة مرور مفعلة. تختلف القوائم حسب الهاتف؛ اتبع تعليمات المصنّع بدلاً من إعادة ضبط إعدادات الشبكة كلها. أوقف المشاركة بعد الاستخدام."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: مشاركة اتصال Android عبر نقطة اتصال",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل مشاركة البيانات عن باقة المشاهدة",
+          "paragraphs": [
+            "قد يقيّد مشغّل الهاتف مشاركة الاتصال أو يفرض رسوماً إضافية؛ تحقق من قواعده قبل جلسة طويلة. هذه القواعد منفصلة عن اشتراك 5G Live IPTV الذي تسمح باقاته الحالية باتصال متزامن واحد. اسم العلامة لا يحدد شبكة الهاتف المستخدمة. إذا اتصل التلفزيون لكن تعذّر التشغيل، فسجّل رسالة المشغّل بدقة. نجاح الاتصال بنقطة الوصول وحده لا يثبت عمل البرنامج أو الخدمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV हॉटस्पॉट: प्लेयर बदलने से पहले टीवी दोबारा जोड़ें",
+      "excerpt": "फ़ोन पर इंटरनेट चल सकता है जबकि टीवी उसके हॉटस्पॉट से जुड़ा न हो। प्लेयर दोबारा लगाने या दूसरा प्लान खरीदने से पहले फ़ोन, हॉटस्पॉट और टीवी अलग जाँचें।",
+      "seo_title": "5G Live IPTV हॉटस्पॉट: गायब कनेक्शन की जाँच",
+      "seo_description": "5G Live IPTV के हॉटस्पॉट कनेक्शन को चरणों में जाँचें: निष्क्रिय होने पर बंद होना, टीवी का नेटवर्क और अलग मोबाइल साझा-डेटा शुल्क।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कनेक्शन कहाँ रुका है",
+          "paragraphs": [
+            "5G Live IPTV हॉटस्पॉट की जाँच फ़ोन से शुरू करें। क्या वह उसी कनेक्शन पर सामान्य वेबसाइट खोल सकता है जिसे आप साझा करना चाहते हैं? फिर टीवी या स्ट्रीमिंग डिवाइस देखें: क्या वह उस फ़ोन के हॉटस्पॉट नाम से जुड़ा है या पुराने घरेलू नेटवर्क को खोज रहा है? फ़ोन चलने से दूसरे उपकरण पर इंटरनेट साबित नहीं होता। प्लेयर बदलने या सेवा बंद मानने से पहले गायब कड़ी लिखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "कुछ देर इस्तेमाल न होने पर हॉटस्पॉट देखें",
+          "paragraphs": [
+            "जिन फ़ोन में सुविधा हो, Android कोई डिवाइस जुड़ा न होने पर हॉटस्पॉट अपने आप बंद करने का विकल्प देता है। टीवी सोने की स्थिति में था तो लौटने पर देखें कि हॉटस्पॉट अब भी चालू है या नहीं। ज़रूरत हो तो उसे चालू करके सही नेटवर्क नाम और पासवर्ड से टीवी दोबारा जोड़ें। पासवर्ड सुरक्षा चालू रखें। फ़ोन के मेनू अलग होते हैं; सभी नेटवर्क सेटिंग मिटाने के बजाय निर्माता के निर्देश देखें। काम पूरा होने पर साझाकरण बंद करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android कनेक्शन को हॉटस्पॉट से साझा करें",
+              "url": "https://support.google.com/android/answer/9059108?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "मोबाइल साझाकरण और टीवी प्लान अलग समझें",
+          "paragraphs": [
+            "मोबाइल कंपनी इंटरनेट साझा करने पर सीमा या अतिरिक्त शुल्क लगा सकती है; लंबे उपयोग से पहले उसके नियम पूछें। ये 5G Live IPTV सदस्यता से अलग हैं, जिसके मौजूदा प्लान एक साथ एक कनेक्शन की अनुमति देते हैं। ब्रांड का नाम फ़ोन का मोबाइल नेटवर्क नहीं बताता। टीवी जुड़ जाए लेकिन वीडियो न चले, तो प्लेयर का सटीक संदेश लिखें। हॉटस्पॉट से जुड़ना अकेले कार्यक्रम या सेवा के काम करने की पुष्टि नहीं करता।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: share an Android connection by hotspot",
+      "url": "https://support.google.com/android/answer/9059108?hl=en"
+    }
+  ]
+}

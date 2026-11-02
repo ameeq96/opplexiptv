@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-02",
+  "topic": "Read Fire TV local network and internet diagnostics separately before reporting a Trex IPTV outage",
+  "primary_keyword": "Trex IPTV network check",
+  "slug": "trex-fire-tv-network-link-versus-internet-access",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV network check: separate the Wi-Fi link from internet access",
+      "excerpt": "A Fire TV can connect to a router while the router has no internet access. Read the two results separately before describing Trex IPTV as down.",
+      "seo_title": "Trex IPTV network check on Fire TV: read both links",
+      "seo_description": "Use Fire TV network information to distinguish a local Wi-Fi connection from internet access. Record the result before reporting a Trex IPTV playback issue.",
+      "sections": [
+        {
+          "heading": "Find the network your Fire TV is actually using",
+          "paragraphs": [
+            "Start a Trex IPTV network check at the device, not with a guess about the service. Amazon documents Settings then Network as the place to check the current Fire TV network. Compare its name with the network you intended to use. A phone working on mobile data says little about the television’s Wi-Fi. You do not need developer mode or debugging tools for this basic check. Leave saved player details untouched."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: finding the current Fire TV network",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Read the local and internet results separately",
+          "paragraphs": [
+            "Amazon’s Network Status tool distinguishes the Fire TV-to-router connection from the router’s internet connection. Open the network diagnostic information available on your device and write down which stage reports a problem. Some compatible models offer extra speed or advanced information; those buttons are not universal. Follow the displayed advice relevant to the failing stage rather than changing several unrelated settings. A download-speed result describes that measurement, not whether every streaming source or player is working."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV Network Status tool",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Send a precise observation instead of an outage claim",
+          "paragraphs": [
+            "If the internet check fails, report the network result to the appropriate connection support. If it passes but the player still fails, note the exact error, time and whether another public app loads. One working app does not establish that every route works. Stop playback elsewhere during a controlled comparison: Trex IPTV 8K currently has one simultaneous connection. Give support the device model and separate network results, without Wi-Fi passwords or account credentials. These observations narrow the next step; they do not prove a service-wide outage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comprobación de red de Trex IPTV: distingue Wi-Fi e internet",
+      "excerpt": "Un Fire TV puede conectarse al router sin que el router tenga internet. Lee ambos resultados por separado antes de afirmar que Trex IPTV está caído.",
+      "seo_title": "Red de Trex IPTV en Fire TV: revisa ambos enlaces",
+      "seo_description": "Distingue la conexión Wi-Fi local del acceso a internet con la información de Fire TV. Anota el resultado antes de comunicar un problema de Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica la red que usa realmente el Fire TV",
+          "paragraphs": [
+            "Empieza la comprobación de red de Trex IPTV en el dispositivo, no con una suposición sobre el servicio. Amazon indica que puedes consultar la red actual en Configuración y después Red. Compara su nombre con la red que querías utilizar. Un teléfono que funciona con datos móviles dice poco sobre el Wi-Fi del televisor. Para esta comprobación básica no necesitas modo de desarrollador ni herramientas de depuración. Conserva los datos guardados del reproductor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: localizar la red actual de Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lee por separado la conexión local y la de internet",
+          "paragraphs": [
+            "La herramienta Estado de la red de Amazon distingue la conexión Fire TV-router de la conexión del router a internet. Abre el diagnóstico disponible en tu dispositivo y anota en qué etapa aparece el problema. Algunos modelos compatibles ofrecen información adicional de velocidad o avanzada; esos botones no existen en todos. Sigue la recomendación pertinente para la etapa que falla, en lugar de cambiar varios ajustes sin relación. Una medición de descarga describe esa prueba, no confirma que todas las fuentes o reproductores funcionen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: herramienta Estado de la red de Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Envía una observación precisa, no una afirmación de caída",
+          "paragraphs": [
+            "Si falla la comprobación de internet, comunica el resultado al soporte de conexión correspondiente. Si pasa pero el reproductor falla, anota el error exacto, la hora y si otra aplicación pública carga. Una aplicación funcional no demuestra que todas las rutas funcionen. Detén otras reproducciones durante la comparación: Trex IPTV 8K tiene actualmente una conexión simultánea. Facilita el modelo y los resultados separados, sin contraseñas Wi-Fi ni credenciales. Estas observaciones orientan el siguiente paso; no prueban una caída general."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Contrôle réseau Trex IPTV : distinguez Wi-Fi et accès internet",
+      "excerpt": "Un Fire TV peut joindre le routeur alors que celui-ci n’a pas accès à internet. Lisez les deux résultats séparément avant de conclure à une panne de Trex IPTV.",
+      "seo_title": "Réseau Trex IPTV sur Fire TV : vérifiez les deux liaisons",
+      "seo_description": "Distinguez la liaison Wi-Fi locale de l’accès internet avec les informations Fire TV. Notez le résultat avant de signaler un problème de lecture Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifiez le réseau réellement utilisé par Fire TV",
+          "paragraphs": [
+            "Commencez le contrôle réseau Trex IPTV sur l’appareil, sans supposer une panne du service. Amazon indique Réglages puis Réseau pour consulter le réseau actuel du Fire TV. Comparez son nom avec celui que vous souhaitiez utiliser. Un téléphone fonctionnant en données mobiles renseigne peu sur le Wi-Fi du téléviseur. Ce contrôle simple ne demande ni mode développeur ni outil de débogage. Ne touchez pas aux informations enregistrées dans le lecteur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : trouver le réseau actuel de Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lisez séparément les résultats local et internet",
+          "paragraphs": [
+            "L’outil État du réseau d’Amazon distingue la liaison Fire TV-routeur de l’accès internet du routeur. Ouvrez le diagnostic disponible sur votre appareil et notez l’étape qui signale un problème. Certains modèles compatibles proposent des mesures de débit ou des informations avancées ; ces boutons ne sont pas universels. Suivez le conseil correspondant à l’étape défaillante plutôt que de modifier plusieurs réglages sans rapport. Un débit mesuré décrit cette mesure, pas le fonctionnement de toutes les sources et de tous les lecteurs."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : outil État du réseau de Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Transmettez une observation précise plutôt qu’un diagnostic de panne",
+          "paragraphs": [
+            "Si le contrôle internet échoue, transmettez le résultat au support de connexion concerné. S’il réussit mais que le lecteur échoue, notez l’erreur exacte, l’heure et si une autre application publique charge. Une application fonctionnelle ne prouve pas que tous les chemins réseau fonctionnent. Arrêtez les autres lectures pendant la comparaison : Trex IPTV 8K autorise actuellement une connexion simultanée. Donnez le modèle et les résultats distincts sans mot de passe Wi-Fi ni identifiants. Ces observations précisent la suite ; elles ne démontrent pas une panne générale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Controllo rete Trex IPTV: separa il collegamento Wi-Fi da internet",
+      "excerpt": "Fire TV può collegarsi al router mentre il router non ha accesso a internet. Leggi i due risultati separatamente prima di dire che Trex IPTV non funziona.",
+      "seo_title": "Rete Trex IPTV su Fire TV: verifica i due collegamenti",
+      "seo_description": "Distingui il Wi-Fi locale dall’accesso a internet con le informazioni di Fire TV. Annota il risultato prima di segnalare un problema di riproduzione Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Trova la rete realmente utilizzata da Fire TV",
+          "paragraphs": [
+            "Inizia il controllo rete Trex IPTV dal dispositivo, senza presumere un guasto del servizio. Amazon indica Impostazioni e poi Rete per verificare la rete corrente di Fire TV. Confronta il nome con quello che volevi usare. Un telefono che funziona con i dati mobili dice poco sul Wi-Fi del televisore. Per questo controllo di base non servono modalità sviluppatore o strumenti di debug. Lascia intatti i dati salvati nel lettore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: individuare la rete corrente di Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi separatamente il risultato locale e quello internet",
+          "paragraphs": [
+            "Lo strumento Stato della rete di Amazon distingue il collegamento Fire TV-router dalla connessione internet del router. Apri le informazioni diagnostiche disponibili sul dispositivo e annota in quale passaggio compare il problema. Alcuni modelli compatibili offrono prove di velocità o informazioni avanzate; quei pulsanti non sono universali. Segui il consiglio relativo al passaggio che non riesce, invece di cambiare diverse impostazioni non collegate. Un risultato di velocità descrive quella misurazione, non il funzionamento di ogni sorgente o lettore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: strumento Stato della rete di Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Invia un’osservazione precisa anziché dichiarare un disservizio",
+          "paragraphs": [
+            "Se la verifica internet non riesce, comunica il risultato all’assistenza della connessione. Se riesce ma il lettore continua a non funzionare, annota errore esatto, ora e caricamento di un’altra applicazione pubblica. Una sola app funzionante non dimostra che ogni percorso di rete funzioni. Interrompi altre riproduzioni durante il confronto: Trex IPTV 8K ha attualmente una connessione simultanea. Comunica modello e risultati distinti, senza password Wi-Fi o credenziali. Queste osservazioni aiutano a scegliere il passo successivo; non dimostrano un guasto generale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-netwerkcontrole: onderscheid wifi van internettoegang",
+      "excerpt": "Een Fire TV kan met de router verbonden zijn terwijl de router geen internet heeft. Lees beide uitkomsten apart voordat je zegt dat Trex IPTV uitgevallen is.",
+      "seo_title": "Trex IPTV-netwerk op Fire TV: controleer beide verbindingen",
+      "seo_description": "Onderscheid de lokale wifi-verbinding van internettoegang met Fire TV-netwerkinformatie. Noteer het resultaat voordat je een Trex IPTV-probleem meldt.",
+      "sections": [
+        {
+          "heading": "Zoek het netwerk dat je Fire TV werkelijk gebruikt",
+          "paragraphs": [
+            "Begin een Trex IPTV-netwerkcontrole op het apparaat en ga niet direct uit van een dienststoring. Amazon noemt Instellingen en daarna Netwerk als plek om het huidige Fire TV-netwerk te bekijken. Vergelijk de naam met het bedoelde netwerk. Een telefoon die via mobiele data werkt, zegt weinig over de wifi van de televisie. Voor deze basiscontrole zijn geen ontwikkelaarsmodus of foutopsporing nodig. Laat opgeslagen spelergegevens ongemoeid."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: het huidige Fire TV-netwerk vinden",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de lokale verbinding en internettoegang afzonderlijk",
+          "paragraphs": [
+            "Amazons hulpmiddel Netwerkstatus onderscheidt de verbinding tussen Fire TV en router van de internetverbinding van de router. Open de beschikbare diagnose-informatie en noteer welke stap een probleem meldt. Sommige geschikte modellen hebben extra snelheidstests of geavanceerde informatie; die knoppen zijn niet overal aanwezig. Volg het advies bij de mislukte stap in plaats van meerdere ongerelateerde instellingen te wijzigen. Een downloadsnelheid beschrijft die meting, niet of elke streamingbron of speler werkt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: hulpmiddel Netwerkstatus voor Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Meld een nauwkeurige waarneming in plaats van een storing",
+          "paragraphs": [
+            "Mislukt de internetcontrole, meld het netwerkresultaat dan bij de juiste verbindingsondersteuning. Slaagt deze maar faalt de speler, noteer dan de precieze fout, tijd en of een andere openbare app laadt. Eén werkende app bewijst niet dat elke netwerkroute werkt. Stop andere afspeelsessies tijdens de vergelijking: Trex IPTV 8K heeft momenteel één gelijktijdige verbinding. Geef support het model en beide resultaten, zonder wifiwachtwoord of inloggegevens. Deze waarnemingen verduidelijken de volgende stap; ze bewijzen geen algemene dienststoring."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Verificação de rede Trex IPTV: separe Wi-Fi de acesso à internet",
+      "excerpt": "Um Fire TV pode se conectar ao roteador sem que o roteador tenha internet. Leia os dois resultados separadamente antes de dizer que Trex IPTV está fora do ar.",
+      "seo_title": "Rede Trex IPTV no Fire TV: confira as duas conexões",
+      "seo_description": "Diferencie o Wi-Fi local do acesso à internet nas informações de rede do Fire TV. Registre o resultado antes de relatar um problema de reprodução Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Encontre a rede que o Fire TV realmente utiliza",
+          "paragraphs": [
+            "Comece a verificação de rede Trex IPTV pelo aparelho, sem presumir falha no serviço. A Amazon indica Configurações e depois Rede para conferir a rede atual do Fire TV. Compare o nome com a rede que pretendia usar. Um celular funcionando com dados móveis diz pouco sobre o Wi-Fi da televisão. Esta verificação básica não exige modo de desenvolvedor nem ferramentas de depuração. Preserve os dados salvos no reprodutor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: como encontrar a rede atual do Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Leia os resultados local e de internet separadamente",
+          "paragraphs": [
+            "A ferramenta Status da rede da Amazon diferencia a ligação Fire TV-roteador da conexão do roteador à internet. Abra o diagnóstico disponível no aparelho e anote em qual etapa aparece o problema. Alguns modelos compatíveis oferecem testes de velocidade ou informações avançadas; esses botões não existem em todos. Siga a orientação pertinente à etapa que falhou, em vez de mudar várias configurações sem relação. Uma velocidade de download descreve aquela medição, não o funcionamento de todas as fontes e reprodutores."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: ferramenta Status da rede do Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Envie uma observação precisa em vez de afirmar uma queda",
+          "paragraphs": [
+            "Se a verificação de internet falhar, informe o resultado ao suporte de conexão adequado. Se passar mas o reprodutor falhar, anote o erro exato, o horário e se outro aplicativo público carrega. Um aplicativo funcionando não prova que todas as rotas funcionem. Interrompa outras reproduções durante a comparação: Trex IPTV 8K tem atualmente uma conexão simultânea. Informe modelo e resultados separados, sem senha do Wi-Fi ou credenciais. Essas observações orientam o próximo passo; não comprovam uma indisponibilidade geral."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Проверка сети Trex IPTV: отличите Wi-Fi от доступа в интернет",
+      "excerpt": "Fire TV может подключаться к роутеру, у которого нет интернета. Прочитайте оба результата отдельно, прежде чем считать Trex IPTV недоступным.",
+      "seo_title": "Сеть Trex IPTV на Fire TV: проверьте оба соединения",
+      "seo_description": "По данным Fire TV отличите локальное соединение Wi-Fi от доступа в интернет. Сохраните результат перед сообщением о проблеме воспроизведения Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Найдите сеть, которую действительно использует Fire TV",
+          "paragraphs": [
+            "Начните проверку сети Trex IPTV с устройства, а не с догадки о работе сервиса. Amazon указывает раздел «Настройки», затем «Сеть» для проверки текущей сети Fire TV. Сравните название с нужной вам сетью. Работа телефона через мобильные данные мало говорит о Wi-Fi телевизора. Для этой простой проверки не нужны режим разработчика и инструменты отладки. Не меняйте сохранённые данные плеера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: как найти текущую сеть Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Читайте результаты локальной связи и интернета отдельно",
+          "paragraphs": [
+            "Инструмент состояния сети Amazon различает соединение Fire TV с роутером и доступ роутера в интернет. Откройте доступную на устройстве диагностику и запишите, на каком этапе обнаружена проблема. Некоторые совместимые модели предлагают измерение скорости и дополнительные сведения; эти кнопки есть не везде. Следуйте рекомендации для проблемного этапа вместо изменения нескольких несвязанных настроек. Скорость загрузки описывает конкретное измерение, а не работу всех источников и плееров."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: инструмент состояния сети Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "Передайте точное наблюдение, а не заявление об аварии",
+          "paragraphs": [
+            "Если проверка интернета не проходит, передайте результат соответствующей службе поддержки подключения. Если проходит, но плеер не работает, запишите точную ошибку, время и загружается ли другое общедоступное приложение. Работа одного приложения не подтверждает все сетевые маршруты. Остановите другие сеансы на время сравнения: Trex IPTV 8K сейчас имеет одно одновременное подключение. Сообщите модель и отдельные результаты без паролей Wi-Fi и данных входа. Наблюдения уточняют следующий шаг, но не доказывают общий сбой сервиса."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV نیٹ ورک جانچ: وائی فائی اور انٹرنیٹ کو الگ دیکھیں",
+      "excerpt": "Fire TV روٹر سے جڑا ہو سکتا ہے جبکہ روٹر پر انٹرنیٹ نہ ہو۔ Trex IPTV بند قرار دینے سے پہلے دونوں نتائج الگ پڑھیں۔",
+      "seo_title": "Fire TV پر Trex IPTV نیٹ ورک کے دونوں رابطے جانچیں",
+      "seo_description": "Fire TV کی نیٹ ورک معلومات سے مقامی وائی فائی اور انٹرنیٹ رابطہ الگ سمجھیں۔ Trex IPTV کی خرابی بتانے سے پہلے نتیجہ لکھیں۔",
+      "sections": [
+        {
+          "heading": "وہ نیٹ ورک دیکھیں جو Fire TV واقعی استعمال کر رہا ہے",
+          "paragraphs": [
+            "Trex IPTV نیٹ ورک جانچ آلے سے شروع کریں، سروس کے بارے میں اندازے سے نہیں۔ Amazon کے مطابق Fire TV کی موجودہ نیٹ ورک معلومات ترتیبات اور پھر نیٹ ورک میں ملتی ہیں۔ نام اس نیٹ ورک سے ملائیں جسے استعمال کرنا چاہتے تھے۔ موبائل ڈیٹا پر چلتا فون ٹی وی کے وائی فائی کے بارے میں زیادہ نہیں بتاتا۔ اس بنیادی جانچ کے لیے ڈویلپر موڈ یا ڈی بگنگ آلات نہیں چاہییں۔ پلیئر کی محفوظ معلومات نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV کا موجودہ نیٹ ورک دیکھنا",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "مقامی رابطے اور انٹرنیٹ کے نتائج الگ پڑھیں",
+          "paragraphs": [
+            "Amazon کا نیٹ ورک اسٹیٹس اختیار Fire TV سے روٹر کے رابطے اور روٹر سے انٹرنیٹ کے رابطے میں فرق دکھاتا ہے۔ آلے پر دستیاب تشخیصی معلومات کھولیں اور لکھیں کہ کس مرحلے پر مسئلہ ہے۔ کچھ موزوں ماڈل رفتار کی جانچ یا مزید معلومات دیتے ہیں؛ یہ بٹن سب پر نہیں ہوتے۔ کئی غیر متعلق ترتیبات بدلنے کے بجائے ناکام مرحلے کی متعلقہ ہدایت دیکھیں۔ ڈاؤن لوڈ رفتار کا نتیجہ اسی پیمائش کو بتاتا ہے، یہ نہیں کہ ہر نشریاتی ذریعہ یا پلیئر درست چل رہا ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV کا نیٹ ورک اسٹیٹس اختیار",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "بندش کے دعوے کے بجائے واضح مشاہدہ بھیجیں",
+          "paragraphs": [
+            "انٹرنیٹ جانچ ناکام ہو تو متعلقہ کنکشن مدد کو نتیجہ بتائیں۔ کامیاب ہو مگر پلیئر نہ چلے تو اصل غلطی، وقت اور کسی دوسری عام ایپ کے کھلنے کا نتیجہ لکھیں۔ ایک ایپ چلنا تمام نیٹ ورک راستوں کے درست ہونے کا ثبوت نہیں۔ موازنہ کرتے وقت دوسری جگہ چلتی ویڈیو بند کریں: Trex IPTV 8K پر فی الحال ایک بیک وقت کنکشن ہے۔ مدد کو ماڈل اور الگ نتائج دیں، وائی فائی پاس ورڈ یا لاگ ان معلومات نہیں۔ یہ مشاہدے اگلا قدم واضح کرتے ہیں؛ پوری سروس کی بندش ثابت نہیں کرتے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "فحص شبكة Trex IPTV: افصل اتصال Wi-Fi عن الوصول إلى الإنترنت",
+      "excerpt": "قد يتصل Fire TV بالراوتر بينما لا يتصل الراوتر بالإنترنت. اقرأ النتيجتين منفصلتين قبل وصف Trex IPTV بأنه متوقف.",
+      "seo_title": "شبكة Trex IPTV على Fire TV: افحص الاتصالين",
+      "seo_description": "ميّز اتصال Wi-Fi المحلي عن الوصول إلى الإنترنت بمعلومات Fire TV. دوّن النتيجة قبل الإبلاغ عن مشكلة تشغيل Trex IPTV.",
+      "sections": [
+        {
+          "heading": "اعرف الشبكة التي يستخدمها Fire TV فعلياً",
+          "paragraphs": [
+            "ابدأ فحص شبكة Trex IPTV من الجهاز، لا من افتراض وجود عطل في الخدمة. توضح Amazon أن الإعدادات ثم الشبكة تتيح التحقق من شبكة Fire TV الحالية. قارن اسمها بالشبكة التي أردت استخدامها. عمل الهاتف عبر بيانات الجوال لا يوضح حالة Wi-Fi التلفزيون. لا تحتاج إلى وضع المطوّر أو أدوات تصحيح الأخطاء لهذا الفحص البسيط. اترك بيانات المشغّل المحفوظة دون تغيير."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: العثور على شبكة Fire TV الحالية",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ نتيجة الاتصال المحلي والإنترنت كلّاً على حدة",
+          "paragraphs": [
+            "تميّز أداة حالة الشبكة من Amazon بين اتصال Fire TV بالراوتر واتصال الراوتر بالإنترنت. افتح معلومات التشخيص المتاحة على جهازك ودوّن المرحلة التي تعرض مشكلة. تقدم بعض الطرز المتوافقة اختبارات سرعة أو معلومات متقدمة؛ هذه الأزرار ليست متاحة للجميع. اتبع النصيحة المناسبة للمرحلة المتعثرة بدلاً من تغيير إعدادات كثيرة غير مترابطة. نتيجة سرعة التنزيل تصف تلك القياس، ولا تؤكد عمل كل مصدر بث أو مشغّل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: أداة حالة الشبكة في Fire TV",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "أرسل ملاحظة دقيقة بدلاً من إعلان انقطاع",
+          "paragraphs": [
+            "إذا فشل فحص الإنترنت، فأبلغ دعم الاتصال المناسب بالنتيجة. وإذا نجح لكن المشغّل لا يعمل، فسجّل الخطأ الدقيق والوقت وما إذا كان تطبيق عام آخر يفتح. عمل تطبيق واحد لا يثبت سلامة جميع مسارات الشبكة. أوقف التشغيل في الأماكن الأخرى أثناء المقارنة: يتيح Trex IPTV 8K حالياً اتصالاً متزامناً واحداً. أرسل طراز الجهاز والنتائج المنفصلة دون كلمات مرور Wi-Fi أو بيانات الحساب. توضح الملاحظات الخطوة التالية؛ ولا تثبت انقطاع الخدمة للجميع."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV नेटवर्क जाँच: वाई-फ़ाई और इंटरनेट को अलग समझें",
+      "excerpt": "Fire TV राउटर से जुड़ सकता है जबकि राउटर पर इंटरनेट न हो। Trex IPTV बंद बताने से पहले दोनों परिणाम अलग-अलग पढ़ें।",
+      "seo_title": "Fire TV पर Trex IPTV नेटवर्क के दोनों हिस्से जाँचें",
+      "seo_description": "Fire TV की जानकारी से स्थानीय वाई-फ़ाई और इंटरनेट पहुँच में अंतर करें। Trex IPTV प्लेबैक की समस्या बताने से पहले परिणाम लिखें।",
+      "sections": [
+        {
+          "heading": "वह नेटवर्क देखें जिसे Fire TV सच में इस्तेमाल करता है",
+          "paragraphs": [
+            "Trex IPTV नेटवर्क जाँच डिवाइस से शुरू करें, सेवा के बारे में अनुमान से नहीं। Amazon के अनुसार Fire TV का वर्तमान नेटवर्क सेटिंग और फिर नेटवर्क में देखा जा सकता है। उसके नाम को उस नेटवर्क से मिलाएँ जिसे आप इस्तेमाल करना चाहते थे। मोबाइल डेटा पर चलता फोन टीवी के वाई-फ़ाई की स्थिति ज्यादा नहीं बताता। इस सामान्य जाँच के लिए डेवलपर मोड या डिबगिंग टूल की जरूरत नहीं है। प्लेयर की सुरक्षित जानकारी न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV का वर्तमान नेटवर्क ढूँढना",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "स्थानीय कनेक्शन और इंटरनेट के परिणाम अलग पढ़ें",
+          "paragraphs": [
+            "Amazon का नेटवर्क स्टेटस टूल Fire TV से राउटर के कनेक्शन और राउटर से इंटरनेट के कनेक्शन को अलग दिखाता है। डिवाइस पर उपलब्ध जाँच की जानकारी खोलें और लिखें कि किस चरण में समस्या दिखती है। कुछ उपयुक्त मॉडलों में गति परीक्षण या अतिरिक्त जानकारी मिलती है; ये बटन सभी पर नहीं होते। कई असंबंधित सेटिंग बदलने के बजाय असफल चरण की संबंधित सलाह देखें। डाउनलोड गति का परिणाम उसी माप को बताता है, हर स्ट्रीमिंग स्रोत या प्लेयर के काम करने की पुष्टि नहीं करता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV का नेटवर्क स्टेटस टूल",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+            }
+          ]
+        },
+        {
+          "heading": "सेवा बंद कहने की जगह साफ जानकारी भेजें",
+          "paragraphs": [
+            "इंटरनेट जाँच असफल हो, तो संबंधित कनेक्शन सहायता को परिणाम बताएँ। सफल हो लेकिन प्लेयर न चले, तो सही त्रुटि, समय और दूसरी सामान्य ऐप खुलने का परिणाम लिखें। एक ऐप चलने से सभी नेटवर्क रास्तों के ठीक होने की पुष्टि नहीं होती। तुलना के दौरान दूसरी जगह चलती वीडियो बंद करें: Trex IPTV 8K पर फिलहाल एक साथ एक कनेक्शन है। सहायता को मॉडल और अलग परिणाम दें, वाई-फ़ाई पासवर्ड या लॉगिन जानकारी नहीं। ये निरीक्षण अगला कदम स्पष्ट करते हैं; पूरी सेवा की बंदी साबित नहीं करते।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: checking the current Fire TV network",
+      "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+    },
+    {
+      "label": "Amazon: Fire TV Network Status tool",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GD3Q5CKJFYZLQEPF"
+    }
+  ]
+}
