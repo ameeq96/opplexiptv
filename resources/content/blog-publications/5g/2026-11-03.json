@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-03",
+  "topic": "Android Battery Saver and app optimisation: record whether IPTV stops while visible or only after leaving the player",
+  "primary_keyword": "5G Live IPTV battery settings",
+  "slug": "5g-android-battery-saver-and-visible-versus-background-playback",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV battery settings: check when playback stops",
+      "excerpt": "A player that stops after you leave its screen needs a different report from one that fails while visible. Check battery modes without turning every protection off.",
+      "seo_title": "5G Live IPTV battery settings: foreground or background?",
+      "seo_description": "Review 5G Live IPTV battery settings on Android, separate visible playback from background behaviour and keep the manufacturer’s recommended protections.",
+      "sections": [
+        {
+          "heading": "Note exactly when the interruption happens",
+          "paragraphs": [
+            "Start a 5G Live IPTV battery settings check by describing the moment playback stops. Is the player still visible, have you opened another app, or has the phone locked? Record the device model, Android version and player version. Do not assume that an app supports background video or audio simply because it plays while open. Check the developer’s documented behaviour before treating a stop after leaving the screen as a fault."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read Battery Saver before changing anything",
+          "paragraphs": [
+            "Google explains that Android Battery Saver can limit background activity, with some features, connections or apps experiencing delays. That does not establish the cause of every playback interruption. If your phone offers Settings, Battery, then Battery Saver, note whether the mode is active and any schedule shown. Names and availability vary by manufacturer. Follow its current instructions rather than switching off every power-saving control or granting unrelated permissions."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Battery Saver and background activity",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep optimisation deliberate and app-specific",
+          "paragraphs": [
+            "For supported Pixel versions, Google documents app battery settings under Settings, Apps, the selected app, then App battery usage. It recommends keeping Adaptive Battery and optimisation on; disabling optimisation may increase background battery use. Read the existing choice and retain the recommended setting unless documented guidance gives a specific reason to change it. If you make a justified change, record the previous value and compare the same action once. Send support the timing and result, without passwords or private links. Battery settings do not activate a plan or prove a service outage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: recommended Pixel battery optimisation",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV: revisa la batería según cuándo se detiene el vídeo",
+      "excerpt": "Si el reproductor se detiene al salir de su pantalla, el informe debe ser distinto de un fallo mientras sigue visible. Revisa la batería sin desactivar todas las protecciones.",
+      "seo_title": "5G Live IPTV: batería, reproducción visible y segundo plano",
+      "seo_description": "Revisa los ajustes de batería de Android para 5G Live IPTV, distingue reproducción visible y segundo plano y conserva las protecciones recomendadas.",
+      "sections": [
+        {
+          "heading": "Anota cuándo ocurre exactamente la interrupción",
+          "paragraphs": [
+            "Empieza la revisión de batería de 5G Live IPTV describiendo el momento en que se detiene la reproducción. ¿Sigue visible el reproductor, has abierto otra aplicación o se ha bloqueado el teléfono? Anota modelo, versión de Android y del reproductor. No supongas que una aplicación admite vídeo o audio en segundo plano solo porque reproduce mientras está abierta. Consulta el comportamiento documentado por el desarrollador antes de considerar un fallo la detención al salir de la pantalla."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el ahorro de batería antes de cambiarlo",
+          "paragraphs": [
+            "Google explica que el ahorro de batería de Android puede limitar la actividad en segundo plano y causar retrasos en ciertas funciones, conexiones o aplicaciones. Eso no identifica la causa de todas las interrupciones. Si tu teléfono ofrece Ajustes, Batería y Ahorro de batería, anota si está activo y qué horario muestra. Los nombres y la disponibilidad varían según el fabricante. Sigue sus instrucciones actuales en lugar de desactivar todos los controles de ahorro o conceder permisos ajenos al problema."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: ahorro de batería y actividad en segundo plano",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Mantén una optimización consciente y específica",
+          "paragraphs": [
+            "En versiones compatibles de Pixel, Google sitúa estos ajustes en Ajustes, Aplicaciones, la aplicación elegida y Uso de batería de la aplicación. Recomienda mantener la batería adaptable y la optimización; desactivarla puede aumentar el consumo en segundo plano. Lee la opción actual y conserva la recomendada salvo que una guía documentada justifique cambiarla. Si haces un cambio necesario, anota el valor anterior y compara una vez la misma acción. Comunica momento y resultado al soporte, sin contraseñas ni enlaces privados. Estos ajustes no activan un plan ni prueban una caída del servicio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: optimización de batería recomendada para Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV : vérifier la batterie selon le moment de l’arrêt",
+      "excerpt": "Un lecteur qui s’arrête quand vous quittez son écran demande un autre signalement qu’un échec pendant qu’il reste visible. Vérifiez la batterie sans désactiver toutes les protections.",
+      "seo_title": "5G Live IPTV : batterie et lecture en arrière-plan",
+      "seo_description": "Examinez les réglages de batterie Android pour 5G Live IPTV, distinguez lecture visible et arrière-plan, et conservez les protections recommandées.",
+      "sections": [
+        {
+          "heading": "Notez le moment exact de l’interruption",
+          "paragraphs": [
+            "Commencez la vérification de batterie pour 5G Live IPTV en décrivant l’instant où la lecture s’arrête. Le lecteur est-il toujours visible, avez-vous ouvert une autre application ou le téléphone s’est-il verrouillé ? Notez modèle, version d’Android et version du lecteur. Ne supposez pas qu’une application accepte la vidéo ou l’audio en arrière-plan simplement parce qu’elle fonctionne ouverte. Consultez le comportement documenté par le développeur avant de considérer l’arrêt en quittant l’écran comme une panne."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez les réglages d’économie avant de modifier",
+          "paragraphs": [
+            "Google explique que l’économiseur de batterie Android peut limiter l’activité en arrière-plan et retarder certaines fonctions, connexions ou applications. Cela ne détermine pas la cause de toute interruption. Si votre téléphone propose Paramètres, Batterie, puis Économiseur de batterie, notez si le mode est actif et son éventuelle programmation. Les noms et possibilités varient selon le fabricant. Suivez sa documentation actuelle plutôt que de désactiver toutes les protections ou d’accorder des autorisations sans rapport."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : économie de batterie et activité en arrière-plan",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Gardez une optimisation ciblée et réfléchie",
+          "paragraphs": [
+            "Pour les versions Pixel compatibles, Google décrit les réglages sous Paramètres, Applications, l’application choisie, puis Utilisation de la batterie. Google recommande de conserver la batterie adaptative et l’optimisation ; les désactiver peut accroître la consommation en arrière-plan. Lisez le choix actuel et conservez le réglage recommandé sauf raison précise documentée. Après une modification justifiée, notez l’ancienne valeur et comparez une fois la même action. Envoyez à l’assistance le moment et le résultat, sans mot de passe ni lien privé. Ces réglages n’activent pas un forfait et ne prouvent pas une panne de service."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : optimisation recommandée de la batterie Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV: controlla la batteria in base a quando si ferma il video",
+      "excerpt": "Un lettore che si ferma quando esci dalla sua schermata richiede una segnalazione diversa da un errore mentre resta visibile. Controlla la batteria senza disattivare ogni protezione.",
+      "seo_title": "5G Live IPTV: batteria e riproduzione in background",
+      "seo_description": "Esamina le impostazioni batteria Android per 5G Live IPTV, distingui riproduzione visibile e background e mantieni le protezioni consigliate dal produttore.",
+      "sections": [
+        {
+          "heading": "Annota quando avviene l’interruzione",
+          "paragraphs": [
+            "Inizia il controllo batteria per 5G Live IPTV descrivendo il momento in cui la riproduzione si ferma. Il lettore è ancora visibile, hai aperto un’altra app oppure il telefono si è bloccato? Registra modello, versione Android e versione del lettore. Non presumere che un’app supporti video o audio in background solo perché funziona aperta. Verifica il comportamento documentato dallo sviluppatore prima di considerare un guasto l’arresto dopo l’uscita dalla schermata."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi il risparmio energetico prima di cambiare",
+          "paragraphs": [
+            "Google spiega che il risparmio energetico Android può limitare l’attività in background, causando ritardi per alcune funzioni, connessioni o app. Questo non identifica la causa di ogni interruzione. Se il telefono dispone di Impostazioni, Batteria e Risparmio energetico, annota se la modalità è attiva e l’eventuale programma mostrato. Nomi e disponibilità dipendono dal produttore. Segui le sue istruzioni attuali invece di spegnere ogni controllo energetico o concedere autorizzazioni non pertinenti."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: risparmio energetico e attività in background",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Mantieni l’ottimizzazione mirata e consapevole",
+          "paragraphs": [
+            "Per le versioni Pixel supportate, Google descrive il percorso Impostazioni, App, app scelta e Utilizzo batteria dell’app. Consiglia di mantenere batteria adattiva e ottimizzazione; disattivare quest’ultima può aumentare il consumo in background. Leggi la scelta attuale e mantieni quella consigliata salvo una ragione specifica documentata. Se effettui una modifica giustificata, annota il valore precedente e confronta una volta la stessa azione. Comunica all’assistenza momento e risultato, senza password o link privati. Queste impostazioni non attivano un piano né dimostrano un disservizio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: ottimizzazione batteria consigliata per Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV: controleer batterijgedrag wanneer afspelen stopt",
+      "excerpt": "Stopt een speler nadat je het scherm verlaat, dan vraagt dat om een ander verslag dan een fout terwijl hij zichtbaar blijft. Bekijk batterijstanden zonder alle bescherming uit te zetten.",
+      "seo_title": "5G Live IPTV: batterij en afspelen op de achtergrond",
+      "seo_description": "Bekijk Android-batterijinstellingen voor 5G Live IPTV, onderscheid zichtbaar afspelen van achtergrondgedrag en behoud de aanbevolen bescherming.",
+      "sections": [
+        {
+          "heading": "Noteer precies wanneer het afspelen stopt",
+          "paragraphs": [
+            "Begin een batterijcontrole voor 5G Live IPTV met het moment van de onderbreking. Is de speler nog zichtbaar, heb je een andere app geopend of is de telefoon vergrendeld? Noteer model, Android-versie en spelerversie. Ga er niet vanuit dat een app achtergrondvideo of -audio ondersteunt alleen omdat hij geopend wel afspeelt. Bekijk het gedocumenteerde gedrag van de ontwikkelaar voordat je stoppen na het verlaten van het scherm als een storing beschouwt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees Batterijbesparing voordat je iets verandert",
+          "paragraphs": [
+            "Google legt uit dat Android-batterijbesparing achtergrondactiviteit kan beperken, waardoor bepaalde functies, verbindingen of apps vertraging kunnen ondervinden. Dat bepaalt niet de oorzaak van iedere onderbreking. Heeft je telefoon Instellingen, Batterij en Batterijbesparing, noteer dan of die stand actief is en welk schema wordt getoond. Namen en beschikbaarheid verschillen per fabrikant. Volg de actuele instructies in plaats van alle energiebescherming uit te schakelen of niet-gerelateerde rechten toe te kennen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: batterijbesparing en achtergrondactiviteit",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd optimalisatie bewust en per app",
+          "paragraphs": [
+            "Voor ondersteunde Pixel-versies beschrijft Google Instellingen, Apps, de gekozen app en Batterijgebruik van app. Google adviseert Adaptieve batterij en optimalisatie aan te laten; uitschakelen kan extra batterijgebruik op de achtergrond veroorzaken. Lees de huidige keuze en houd de aanbevolen instelling aan tenzij gedocumenteerde instructies een specifieke wijziging rechtvaardigen. Noteer bij een onderbouwde wijziging de oude waarde en vergelijk dezelfde handeling één keer. Geef support het moment en resultaat, zonder wachtwoorden of privélinks. Batterijinstellingen activeren geen abonnement en bewijzen geen dienststoring."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: aanbevolen batterijoptimalisatie voor Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV: confira a bateria conforme o momento em que o vídeo para",
+      "excerpt": "Um reprodutor que para ao sair da tela exige um relato diferente de uma falha enquanto continua visível. Confira a bateria sem desligar todas as proteções.",
+      "seo_title": "5G Live IPTV: bateria e reprodução em segundo plano",
+      "seo_description": "Revise os ajustes de bateria do Android para 5G Live IPTV, separe reprodução visível de segundo plano e mantenha as proteções recomendadas.",
+      "sections": [
+        {
+          "heading": "Anote exatamente quando ocorre a interrupção",
+          "paragraphs": [
+            "Comece a revisão de bateria do 5G Live IPTV descrevendo o momento em que a reprodução para. O reprodutor ainda está visível, você abriu outro aplicativo ou o telefone foi bloqueado? Anote modelo, versão do Android e do reprodutor. Não suponha que o aplicativo aceite vídeo ou áudio em segundo plano apenas porque funciona aberto. Consulte o comportamento documentado pelo desenvolvedor antes de tratar a parada ao sair da tela como falha."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a economia de bateria antes de alterar",
+          "paragraphs": [
+            "O Google explica que a economia de bateria do Android pode limitar a atividade em segundo plano, causando atrasos em algumas funções, conexões ou aplicativos. Isso não identifica a causa de toda interrupção. Se o telefone oferecer Configurações, Bateria e Economia de bateria, registre se o modo está ativo e qual programação aparece. Os nomes e a disponibilidade variam por fabricante. Siga as instruções atuais dele em vez de desligar todas as proteções ou conceder permissões sem relação com o problema."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: economia de bateria e atividade em segundo plano",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Mantenha a otimização consciente e específica",
+          "paragraphs": [
+            "Nas versões compatíveis de Pixel, o Google descreve Configurações, Aplicativos, o aplicativo escolhido e Uso da bateria do app. Recomenda manter a bateria adaptável e a otimização; desativar esta última pode aumentar o consumo em segundo plano. Leia a opção atual e conserve a recomendada, salvo motivo específico documentado para mudar. Se fizer uma alteração justificada, anote o valor anterior e compare uma vez a mesma ação. Informe ao suporte o momento e o resultado, sem senhas ou links privados. Esses ajustes não ativam um plano nem provam uma queda do serviço."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: otimização de bateria recomendada no Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV: проверьте батарею с учётом момента остановки видео",
+      "excerpt": "Остановка после ухода с экрана плеера отличается от ошибки при видимом плеере. Проверьте режимы батареи, не отключая все защитные настройки.",
+      "seo_title": "5G Live IPTV: батарея и фоновое воспроизведение",
+      "seo_description": "Проверьте настройки батареи Android для 5G Live IPTV, различайте видимое и фоновое воспроизведение и сохраняйте рекомендованные ограничения.",
+      "sections": [
+        {
+          "heading": "Запишите точный момент прерывания",
+          "paragraphs": [
+            "Начните проверку батареи для 5G Live IPTV с описания момента остановки. Плеер ещё виден, вы открыли другое приложение или телефон заблокировался? Запишите модель, версию Android и плеера. Работа открытого приложения не означает, что оно поддерживает фоновое видео или звук. Прежде чем считать остановку после ухода с экрана неисправностью, проверьте поведение, описанное разработчиком."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте настройки энергосбережения до изменений",
+          "paragraphs": [
+            "Google объясняет, что режим энергосбережения Android может ограничивать фоновую активность, вызывая задержки отдельных функций, подключений и приложений. Это не доказывает причину любой остановки видео. Если на телефоне есть разделы «Настройки», «Батарея», «Энергосбережение», запишите, включён ли режим и какое расписание показано. Названия и доступность зависят от производителя. Используйте его актуальную инструкцию вместо отключения всех ограничений питания или выдачи посторонних разрешений."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: энергосбережение и фоновая активность",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сохраняйте осознанную настройку каждого приложения",
+          "paragraphs": [
+            "Для поддерживаемых версий Pixel Google описывает путь через «Настройки», «Приложения», выбранное приложение и использование батареи приложением. Рекомендуется сохранять адаптивную батарею и оптимизацию: отключение оптимизации может увеличить фоновый расход заряда. Прочитайте текущий выбор и оставьте рекомендованный режим, если нет конкретной документированной причины его менять. При обоснованном изменении запишите прежнее значение и один раз сравните то же действие. Сообщите поддержке время и результат, без паролей и приватных ссылок. Настройки батареи не активируют тариф и не доказывают сбой сервиса."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: рекомендуемая оптимизация батареи Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV: ویڈیو رکنے کے وقت کے مطابق بیٹری سیٹنگز دیکھیں",
+      "excerpt": "پلیئر کی اسکرین چھوڑنے کے بعد رکنا اور سامنے کھلی ایپ میں خرابی الگ باتیں ہیں۔ تمام حفاظتی اختیارات بند کیے بغیر بیٹری کی حالت دیکھیں۔",
+      "seo_title": "5G Live IPTV: بیٹری اور پس منظر میں پلے بیک کی جانچ",
+      "seo_description": "5G Live IPTV کے لیے اینڈرائیڈ کی بیٹری سیٹنگز دیکھیں، سامنے چلتی ویڈیو اور پس منظر کا فرق سمجھیں اور تجویز کردہ حفاظت برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "لکھیں کہ رکاوٹ بالکل کب آتی ہے",
+          "paragraphs": [
+            "5G Live IPTV کی بیٹری جانچ ویڈیو رکنے کا وقت بیان کرنے سے شروع کریں۔ کیا پلیئر ابھی سامنے ہے، آپ نے دوسری ایپ کھولی ہے یا فون لاک ہو گیا ہے؟ ڈیوائس کا ماڈل، اینڈرائیڈ اور پلیئر کا ورژن لکھیں۔ صرف کھلی ایپ میں چلنے سے یہ فرض نہ کریں کہ وہ پس منظر میں بھی ویڈیو یا آواز چلا سکتی ہے۔ اسکرین چھوڑنے کے بعد رکنے کو خرابی سمجھنے سے پہلے ڈویلپر کی درج کردہ سہولت دیکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تبدیلی سے پہلے بیٹری سیور پڑھیں",
+          "paragraphs": [
+            "Google بتاتا ہے کہ اینڈرائیڈ کا بیٹری سیور پس منظر کی سرگرمی محدود کر سکتا ہے، جس سے بعض سہولتوں، کنکشنز یا ایپس میں تاخیر ہو سکتی ہے۔ اس سے ہر پلے بیک رکاوٹ کی وجہ ثابت نہیں ہوتی۔ اگر فون میں سیٹنگز، بیٹری، پھر بیٹری سیور موجود ہو تو لکھیں کہ وہ فعال ہے یا نہیں اور کوئی شیڈول دکھایا گیا ہے یا نہیں۔ نام اور دستیابی بنانے والے کے لحاظ سے بدلتے ہیں۔ ہر توانائی بچانے والا اختیار بند کرنے یا غیر متعلق اجازتیں دینے کے بجائے اس کی موجودہ ہدایات دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: بیٹری سیور اور پس منظر کی سرگرمی",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ہر ایپ کی اصلاح سوچ سمجھ کر رکھیں",
+          "paragraphs": [
+            "متعلقہ Pixel ورژنز کے لیے Google سیٹنگز، ایپس، منتخب ایپ، پھر ایپ کی بیٹری کے استعمال کا راستہ بتاتا ہے۔ وہ اڈاپٹو بیٹری اور بیٹری کی اصلاح فعال رکھنے کی سفارش کرتا ہے؛ اصلاح بند کرنے سے پس منظر میں زیادہ چارج استعمال ہو سکتا ہے۔ موجودہ انتخاب پڑھیں اور تجویز کردہ حالت برقرار رکھیں، جب تک مستند ہدایت تبدیلی کی مخصوص وجہ نہ دے۔ مناسب وجہ سے تبدیلی کریں تو پچھلی قدر لکھیں اور وہی عمل ایک بار موازنہ کریں۔ معاونت کو وقت اور نتیجہ دیں، پاس ورڈ یا نجی لنک نہیں۔ بیٹری کی سیٹنگ پلان فعال نہیں کرتی اور سروس بند ہونے کا ثبوت نہیں بنتی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel کے لیے تجویز کردہ بیٹری کی اصلاح",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV: افحص البطارية بحسب وقت توقف التشغيل",
+      "excerpt": "توقف المشغّل بعد مغادرة شاشته يحتاج إلى وصف مختلف عن تعطله وهو ظاهر. افحص أوضاع البطارية دون تعطيل كل وسائل الحماية.",
+      "seo_title": "5G Live IPTV: البطارية والتشغيل في الخلفية",
+      "seo_description": "راجع إعدادات بطارية Android لإعداد 5G Live IPTV، وميّز التشغيل الظاهر من الخلفية، واحتفظ بالحماية التي توصي بها الشركة المصنعة.",
+      "sections": [
+        {
+          "heading": "سجّل اللحظة الدقيقة للانقطاع",
+          "paragraphs": [
+            "ابدأ فحص بطارية 5G Live IPTV بوصف وقت توقف التشغيل. هل ما زال المشغّل ظاهراً، أم فتحت تطبيقاً آخر، أم قُفل الهاتف؟ سجّل طراز الجهاز وإصدار Android والمشغّل. لا تفترض دعم التطبيق للفيديو أو الصوت في الخلفية لمجرد أنه يعمل عند فتحه. راجع السلوك الموثق من المطوّر قبل اعتبار التوقف بعد مغادرة الشاشة عطلاً."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ وضع توفير البطارية قبل تغييره",
+          "paragraphs": [
+            "توضح Google أن توفير البطارية في Android قد يحد من نشاط الخلفية، فتتأخر بعض الميزات أو الاتصالات أو التطبيقات. لا يحدد ذلك سبب كل انقطاع تشغيل. إذا كان هاتفك يوفر الإعدادات ثم البطارية ثم توفير البطارية، فسجّل هل الوضع نشط وما الجدول الظاهر. تختلف الأسماء والإتاحة بحسب الشركة المصنعة. اتبع تعليماتها الحالية بدلاً من تعطيل جميع ضوابط توفير الطاقة أو منح أذونات غير مرتبطة بالمشكلة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: توفير البطارية ونشاط الخلفية",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "حافظ على تحسين مدروس لكل تطبيق",
+          "paragraphs": [
+            "لإصدارات Pixel المدعومة، توثق Google المسار من الإعدادات إلى التطبيقات ثم التطبيق المختار واستخدام بطارية التطبيق. وتوصي بإبقاء البطارية التكيفية والتحسين مفعّلين؛ فقد يزيد تعطيل التحسين استهلاك الخلفية. اقرأ الاختيار الحالي واحتفظ بالإعداد الموصى به ما لم تقدم تعليمات موثقة سبباً محدداً للتغيير. إذا أجريت تغييراً مبرراً، سجّل القيمة السابقة وقارن الإجراء نفسه مرة واحدة. أعطِ الدعم وقت المشكلة والنتيجة دون كلمات مرور أو روابط خاصة. إعدادات البطارية لا تفعّل خطة ولا تثبت انقطاع الخدمة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: تحسين بطارية Pixel الموصى به",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV: वीडियो कब रुकता है, उसके हिसाब से बैटरी जाँचें",
+      "excerpt": "प्लेयर की स्क्रीन छोड़ने के बाद रुकना और सामने खुली ऐप में त्रुटि अलग हैं। सभी सुरक्षा विकल्प बंद किए बिना बैटरी की स्थिति देखें।",
+      "seo_title": "5G Live IPTV: बैटरी और बैकग्राउंड प्लेबैक की जाँच",
+      "seo_description": "5G Live IPTV के लिए Android बैटरी सेटिंग देखें, सामने चलती वीडियो और बैकग्राउंड व्यवहार में अंतर समझें और सुझाई सुरक्षा बनाए रखें।",
+      "sections": [
+        {
+          "heading": "ठीक कब रुकता है, यह लिखें",
+          "paragraphs": [
+            "5G Live IPTV की बैटरी जाँच वीडियो रुकने का समय बताने से शुरू करें। क्या प्लेयर अभी सामने है, आपने दूसरी ऐप खोली है या फोन लॉक हुआ है? डिवाइस का मॉडल, Android और प्लेयर का संस्करण लिखें। ऐप खुली होने पर चलती है, इससे यह न मानें कि वह बैकग्राउंड में भी वीडियो या आवाज़ चला सकती है। स्क्रीन छोड़ने के बाद रुकने को खराबी मानने से पहले डेवलपर का बताया व्यवहार जाँचें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "बदलने से पहले बैटरी सेवर पढ़ें",
+          "paragraphs": [
+            "Google बताता है कि Android बैटरी सेवर बैकग्राउंड गतिविधि सीमित कर सकता है, जिससे कुछ सुविधाओं, कनेक्शन या ऐप में देरी हो सकती है। इससे हर प्लेबैक रुकावट का कारण साबित नहीं होता। यदि फोन में सेटिंग, बैटरी और फिर बैटरी सेवर मौजूद हो तो लिखें कि वह चालू है या नहीं और कोई समय-सारणी दिखती है या नहीं। नाम और उपलब्धता निर्माता के अनुसार बदलते हैं। हर बचत नियंत्रण बंद करने या गैरज़रूरी अनुमति देने के बजाय उसकी मौजूदा हिदायतें देखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: बैटरी सेवर और बैकग्राउंड गतिविधि",
+              "url": "https://support.google.com/android/answer/7664692?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "हर ऐप का अनुकूलन सोचकर बनाए रखें",
+          "paragraphs": [
+            "समर्थित Pixel संस्करणों के लिए Google सेटिंग, ऐप, चुनी ऐप और ऐप का बैटरी उपयोग वाला रास्ता बताता है। वह अडैप्टिव बैटरी और अनुकूलन चालू रखने की सलाह देता है; अनुकूलन बंद करने से बैकग्राउंड में अधिक चार्ज खर्च हो सकता है। मौजूदा विकल्प पढ़ें और सुझाई स्थिति रखें, जब तक आधिकारिक निर्देश बदलाव का खास कारण न दें। उचित बदलाव करें तो पुराना मान लिखें और उसी कार्रवाई की एक बार तुलना करें। सहायता को समय और नतीजा बताएँ, पासवर्ड या निजी लिंक नहीं। बैटरी सेटिंग प्लान सक्रिय नहीं करती और सेवा बंद होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel के लिए सुझाया बैटरी अनुकूलन",
+              "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: Android Battery Saver and background activity",
+      "url": "https://support.google.com/android/answer/7664692?hl=en"
+    },
+    {
+      "label": "Google: keep Adaptive Battery and battery optimisation on",
+      "url": "https://support.google.com/pixelphone/answer/7015477?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-03",
+  "topic": "Distinguish Google TV profile app visibility and parent-managed child access before reinstalling an IPTV player",
+  "primary_keyword": "Get IPTV app profiles",
+  "slug": "getiptv-google-tv-player-visibility-and-child-profiles",
+  "translations": {
+    "en": {
+      "title": "Get IPTV app profiles: check Google TV before reinstalling",
+      "excerpt": "A player missing from one Google TV profile may still be installed on the television. Identify the selected profile before changing the app, account or service.",
+      "seo_title": "Get IPTV app profiles on Google TV: what to check",
+      "seo_description": "Check Get IPTV player visibility on Google TV by identifying the profile, consulting the official app listing and leaving children’s app access under parent control.",
+      "sections": [
+        {
+          "heading": "Identify the profile before changing the app",
+          "paragraphs": [
+            "A Get IPTV app profiles check is useful when a player appears in one Google TV profile but not another. Note the television or streaming-device model, selected profile and exact app name. A missing tile is different from an installation error or a player that opens but cannot play. Do not uninstall a working app just to make those symptoms look the same."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate ordinary and children’s profiles",
+          "paragraphs": [
+            "Google explains that installed apps work across ordinary Google TV profiles, with an exception for children’s profiles. A parent manages which apps a child can use. If the affected screen is a children’s profile, ask its parent or administrator to review the official controls. Do not bypass a profile lock, change someone else’s account or share their PIN with support. Availability and menus can vary by device and region."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: app installation and profiles",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Google TV Help: parent-managed app access",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the player and service account separate",
+          "paragraphs": [
+            "For an authorised installation, check the intended player’s official listing and publisher on the actual device. Record whether the app is installed, visible in the selected profile and able to open. These observations give support a clearer question than repeated downloads. Google TV profiles do not create extra simultaneous IPTV connections or activate a service. Get IPTV offers Opplex and Filex plan choices; confirm the actual provider and order privately before buying again because a player tile is missing."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: revisa el perfil de Google TV antes de reinstalar",
+      "excerpt": "Un reproductor ausente en un perfil de Google TV puede seguir instalado en el televisor. Identifica el perfil seleccionado antes de cambiar aplicación, cuenta o servicio.",
+      "seo_title": "Get IPTV: perfiles y aplicaciones en Google TV",
+      "seo_description": "Comprueba la visibilidad del reproductor Get IPTV en Google TV: identifica el perfil, consulta la ficha oficial y deja el acceso infantil bajo control parental.",
+      "sections": [
+        {
+          "heading": "Identifica el perfil antes de cambiar la aplicación",
+          "paragraphs": [
+            "Revisar los perfiles al preparar Get IPTV ayuda cuando un reproductor aparece en un perfil de Google TV pero no en otro. Anota el modelo del televisor o dispositivo, el perfil y el nombre exacto de la aplicación. Un icono ausente es distinto de un error de instalación o un reproductor que abre sin reproducir. No desinstales una aplicación que funciona para igualar esos síntomas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingue perfiles normales e infantiles",
+          "paragraphs": [
+            "Google explica que las aplicaciones instaladas funcionan entre perfiles normales de Google TV, salvo los perfiles infantiles. El padre o la madre administra las aplicaciones permitidas. Si la pantalla afectada pertenece a un menor, pide a su responsable que revise los controles oficiales. No eludas bloqueos, cambies cuentas ajenas ni compartas su PIN con soporte. La disponibilidad y los menús pueden variar según dispositivo y región."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google TV: instalación y perfiles",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Ayuda de Google TV: acceso gestionado por los padres",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa el reproductor de la cuenta del servicio",
+          "paragraphs": [
+            "Para una instalación autorizada, consulta la ficha oficial del reproductor previsto y su editor en el dispositivo real. Anota si está instalado, visible en el perfil y puede abrirse. Así das a soporte una pregunta más clara que descargándolo repetidamente. Los perfiles de Google TV no añaden conexiones IPTV simultáneas ni activan un servicio. Get IPTV ofrece planes Opplex y Filex; confirma en privado proveedor y pedido antes de comprar otra vez por un icono ausente."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : vérifiez le profil Google TV avant de réinstaller",
+      "excerpt": "Un lecteur absent d’un profil Google TV peut rester installé sur le téléviseur. Identifiez le profil sélectionné avant de modifier l’application, le compte ou le service.",
+      "seo_title": "Get IPTV : profils et applications sur Google TV",
+      "seo_description": "Vérifiez la visibilité du lecteur Get IPTV sur Google TV : profil choisi, fiche officielle et accès des enfants géré uniquement par le responsable parental.",
+      "sections": [
+        {
+          "heading": "Identifiez le profil avant de modifier l’application",
+          "paragraphs": [
+            "Vérifier les profils pour Get IPTV aide lorsqu’un lecteur apparaît dans un profil Google TV mais pas dans un autre. Notez le modèle du téléviseur ou appareil, le profil sélectionné et le nom exact de l’application. Une vignette absente diffère d’un échec d’installation ou d’un lecteur qui s’ouvre sans lire. Ne désinstallez pas une application fonctionnelle pour confondre ces symptômes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez profils ordinaires et profils enfants",
+          "paragraphs": [
+            "Google indique que les applications installées fonctionnent entre les profils Google TV ordinaires, sauf les profils enfants. Un parent choisit les applications autorisées pour l’enfant. Si l’écran concerné est un profil enfant, demandez à son responsable de consulter les contrôles officiels. Ne contournez pas un verrouillage, ne modifiez pas le compte d’autrui et ne transmettez pas son code à l’assistance. Disponibilité et menus peuvent varier selon l’appareil et la région."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google TV : installation et profils",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Aide Google TV : accès géré par les parents",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez lecteur et compte du service",
+          "paragraphs": [
+            "Pour une installation autorisée, consultez la fiche officielle du lecteur prévu et son éditeur sur l’appareil concerné. Notez s’il est installé, visible dans le profil choisi et capable de s’ouvrir. Ces observations sont plus utiles à l’assistance que des téléchargements répétés. Les profils Google TV n’ajoutent aucune connexion IPTV simultanée et n’activent pas de service. Get IPTV propose Opplex et Filex ; confirmez en privé le fournisseur et la commande avant de racheter à cause d’une vignette absente."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Come installare IPTV su Google TV: controlla prima il profilo",
+      "excerpt": "Un lettore assente in un profilo Google TV potrebbe essere ancora installato sul televisore. Identifica il profilo scelto prima di cambiare app, account o servizio.",
+      "seo_title": "Get IPTV: profili e installazione del lettore su Google TV",
+      "seo_description": "Prima di installare il lettore per Get IPTV, verifica il profilo Google TV e la scheda ufficiale; lascia a un genitore la gestione delle app nei profili bambini.",
+      "sections": [
+        {
+          "heading": "Identifica il profilo prima di cambiare app",
+          "paragraphs": [
+            "Per capire come installare IPTV con un lettore adatto, verifica il profilo quando l’app compare in una schermata Google TV ma non in un’altra. Annota modello del televisore o dispositivo, profilo selezionato e nome preciso dell’app. Un riquadro assente è diverso da un errore d’installazione o da un lettore che si apre senza riprodurre. Non disinstallare un’app funzionante per confondere questi sintomi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui profili normali e profili bambini",
+          "paragraphs": [
+            "Google spiega che le app installate funzionano tra i normali profili Google TV, con un’eccezione per quelli dei bambini. Il genitore gestisce le app consentite. Se la schermata riguarda un profilo bambino, chiedi al suo responsabile di consultare i controlli ufficiali. Non aggirare un blocco, modificare account altrui o condividere il PIN con l’assistenza. Disponibilità e menu possono cambiare secondo dispositivo e regione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google TV: installazione e profili",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Guida Google TV: app gestite dai genitori",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Tieni separati lettore e account del servizio",
+          "paragraphs": [
+            "Per un’installazione autorizzata, controlla sul dispositivo reale la scheda ufficiale del lettore previsto e l’editore. Annota se l’app è installata, visibile nel profilo scelto e si apre. Sono osservazioni più utili all’assistenza di download ripetuti. I profili Google TV non aggiungono connessioni IPTV simultanee né attivano un servizio. Get IPTV propone piani Opplex e Filex: conferma privatamente fornitore e ordine prima di acquistare ancora perché manca un riquadro."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: controleer het Google TV-profiel vóór herinstallatie",
+      "excerpt": "Een speler die in één Google TV-profiel ontbreekt, kan nog op de televisie staan. Controleer het gekozen profiel voordat je de app, account of dienst verandert.",
+      "seo_title": "Get IPTV: apps en profielen op Google TV controleren",
+      "seo_description": "Controleer de zichtbaarheid van je Get IPTV-speler op Google TV: gekozen profiel, officiële appvermelding en door ouders beheerde toegang voor kinderen.",
+      "sections": [
+        {
+          "heading": "Bepaal het profiel voordat je de app verandert",
+          "paragraphs": [
+            "Een profielcontrole voor Get IPTV helpt wanneer een speler in het ene Google TV-profiel wel en in het andere niet verschijnt. Noteer het model van televisie of streamingapparaat, gekozen profiel en exacte appnaam. Een ontbrekende tegel verschilt van een installatiefout of een speler die opent maar niet afspeelt. Verwijder geen werkende app om die verschijnselen gelijk te behandelen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Maak onderscheid tussen gewone en kinderprofielen",
+          "paragraphs": [
+            "Google legt uit dat geïnstalleerde apps tussen gewone Google TV-profielen werken, met een uitzondering voor kinderprofielen. Een ouder bepaalt welke apps het kind mag gebruiken. Gaat het om een kinderprofiel, vraag dan de verantwoordelijke ouder of beheerder de officiële instellingen te bekijken. Omzeil geen profielslot, verander geen account van iemand anders en geef diens pincode niet aan ondersteuning. Beschikbaarheid en menu’s verschillen mogelijk per apparaat en regio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: installatie en profielen",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Google TV Help: app-toegang door ouders beheren",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd speler en dienstaccount gescheiden",
+          "paragraphs": [
+            "Controleer voor een toegestane installatie de officiële vermelding en uitgever van de bedoelde speler op het daadwerkelijke apparaat. Noteer of de app geïnstalleerd en zichtbaar is in het gekozen profiel en kan openen. Daarmee krijgt ondersteuning een duidelijkere vraag dan met herhaalde downloads. Google TV-profielen voegen geen gelijktijdige IPTV-verbindingen toe en activeren geen dienst. Get IPTV biedt Opplex- en Filex-plannen; bevestig aanbieder en bestelling privé voordat je opnieuw koopt wegens een ontbrekende tegel."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: verifique o perfil Google TV antes de reinstalar",
+      "excerpt": "Um leitor ausente num perfil Google TV pode continuar instalado no televisor. Identifique o perfil selecionado antes de alterar aplicação, conta ou serviço.",
+      "seo_title": "Get IPTV: aplicações e perfis no Google TV",
+      "seo_description": "Verifique a visibilidade do leitor Get IPTV no Google TV: perfil escolhido, ficha oficial da aplicação e acesso infantil gerido pelo responsável parental.",
+      "sections": [
+        {
+          "heading": "Identifique o perfil antes de alterar a aplicação",
+          "paragraphs": [
+            "Verificar os perfis para Get IPTV ajuda quando um leitor aparece num perfil Google TV e não noutro. Anote o modelo do televisor ou dispositivo, perfil selecionado e nome exato da aplicação. Um ícone ausente é diferente de um erro de instalação ou de um leitor que abre sem reproduzir. Não desinstale uma aplicação funcional para tratar estes sintomas como iguais."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinga perfis normais e infantis",
+          "paragraphs": [
+            "A Google explica que as aplicações instaladas funcionam entre os perfis Google TV normais, exceto nos perfis infantis. O responsável parental decide que aplicações a criança pode usar. Se o ecrã afetado for de um perfil infantil, peça ao responsável que consulte os controlos oficiais. Não contorne bloqueios, altere contas alheias ou partilhe o PIN com o apoio. Disponibilidade e menus podem variar por dispositivo e região."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google TV: instalação e perfis",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Ajuda do Google TV: acesso gerido pelos pais",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe leitor e conta do serviço",
+          "paragraphs": [
+            "Numa instalação autorizada, consulte no equipamento real a ficha oficial e o editor do leitor pretendido. Registe se a aplicação está instalada, visível no perfil escolhido e se abre. Estas observações dão ao apoio uma questão mais clara do que transferências repetidas. Perfis Google TV não acrescentam ligações IPTV simultâneas nem ativam serviços. Get IPTV oferece planos Opplex e Filex; confirme em privado fornecedor e encomenda antes de comprar novamente por faltar um ícone."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: проверьте профиль Google TV до переустановки",
+      "excerpt": "Если плеер отсутствует в одном профиле Google TV, он всё ещё может быть установлен на телевизоре. Определите профиль, прежде чем менять приложение, аккаунт или сервис.",
+      "seo_title": "Get IPTV: видимость приложений в профилях Google TV",
+      "seo_description": "Проверьте профиль Google TV и официальную страницу плеера для Get IPTV. Доступ к приложениям детского профиля должен оставаться под контролем родителя.",
+      "sections": [
+        {
+          "heading": "Определите профиль до изменения приложения",
+          "paragraphs": [
+            "Проверка профилей для Get IPTV полезна, когда плеер виден в одном профиле Google TV, но отсутствует в другом. Запишите модель телевизора или приставки, выбранный профиль и точное название приложения. Отсутствие плитки отличается от ошибки установки или ситуации, когда плеер открывается, но не воспроизводит. Не удаляйте работающее приложение, смешивая эти разные симптомы."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Различайте обычные и детские профили",
+          "paragraphs": [
+            "Google поясняет, что установленные приложения работают между обычными профилями Google TV, за исключением детских. Разрешёнными ребёнку приложениями управляет родитель. Если проблема относится к детскому профилю, попросите ответственного взрослого изучить официальные настройки. Не обходите блокировку, не изменяйте чужой аккаунт и не передавайте его код поддержке. Доступность и меню могут различаться в зависимости от устройства и региона."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google TV: установка и профили",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Справка Google TV: доступ под контролем родителей",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте плеер от аккаунта сервиса",
+          "paragraphs": [
+            "При разрешённой установке проверьте официальную страницу нужного плеера и разработчика на самом устройстве. Отметьте, установлено ли приложение, видно ли его в выбранном профиле и открывается ли оно. Это полезнее для поддержки, чем повторные скачивания. Профили Google TV не добавляют одновременных IPTV-подключений и не активируют сервис. Get IPTV предлагает планы Opplex и Filex: уточните поставщика и заказ в закрытом обращении до повторной покупки из-за отсутствующей плитки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: دوبارہ انسٹال کرنے سے پہلے Google TV پروفائل دیکھیں",
+      "excerpt": "کسی Google TV پروفائل میں پلیئر نظر نہ آئے تو ممکن ہے وہ ٹی وی پر نصب ہو۔ ایپ، اکاؤنٹ یا سروس بدلنے سے پہلے منتخب پروفائل پہچانیں۔",
+      "seo_title": "Get IPTV: Google TV پروفائل میں ایپ کی دستیابی دیکھیں",
+      "seo_description": "Get IPTV پلیئر کے لیے Google TV کا منتخب پروفائل اور ایپ کی سرکاری تفصیل دیکھیں۔ بچوں کی ایپس تک رسائی والدین کے اختیار میں رہنی چاہیے۔",
+      "sections": [
+        {
+          "heading": "ایپ بدلنے سے پہلے پروفائل پہچانیں",
+          "paragraphs": [
+            "Get IPTV کے پروفائل دیکھنا تب مفید ہے جب پلیئر ایک Google TV پروفائل میں آئے مگر دوسرے میں نہیں۔ ٹی وی یا اسٹریمنگ آلے کا ماڈل، منتخب پروفائل اور ایپ کا مکمل نام لکھیں۔ آئیکن غائب ہونا، انسٹالیشن کی خرابی اور ایپ کھل کر ویڈیو نہ چلانا مختلف علامات ہیں۔ کام کرنے والی ایپ صرف ان علامات کو یکساں سمجھ کر نہ ہٹائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "عام اور بچوں کے پروفائل الگ سمجھیں",
+          "paragraphs": [
+            "Google کے مطابق نصب ایپس عام Google TV پروفائلز میں چلتی ہیں، لیکن بچوں کے پروفائل استثنا ہیں۔ بچہ کون سی ایپس استعمال کرے گا، والدین طے کرتے ہیں۔ متعلقہ اسکرین بچے کی ہو تو ذمہ دار والدین یا منتظم سے سرکاری کنٹرول دیکھنے کو کہیں۔ پروفائل لاک نہ توڑیں، دوسرے کا اکاؤنٹ نہ بدلیں اور اس کا پن سپورٹ کو نہ دیں۔ آلے اور علاقے کے مطابق دستیابی اور مینو مختلف ہو سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV مدد: ایپ انسٹالیشن اور پروفائل",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Google TV مدد: والدین کے زیرِ اختیار ایپس",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پلیئر اور سروس اکاؤنٹ الگ رکھیں",
+          "paragraphs": [
+            "اجازت یافتہ انسٹالیشن کے لیے اسی آلے پر مطلوبہ پلیئر کی سرکاری تفصیل اور ناشر دیکھیں۔ لکھیں کہ ایپ نصب ہے، منتخب پروفائل میں نظر آتی ہے اور کھلتی ہے یا نہیں۔ بار بار ڈاؤن لوڈ سے زیادہ واضح سوال ان مشاہدات سے بنتا ہے۔ Google TV پروفائل اضافی بیک وقت IPTV کنکشن نہیں دیتے اور سروس فعال نہیں کرتے۔ Get IPTV پر Opplex اور Filex پلان ہیں؛ آئیکن غائب ہونے پر دوبارہ خریدنے سے پہلے اصل فراہم کنندہ اور آرڈر نجی طور پر تصدیق کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: تحقق من ملف Google TV قبل إعادة تثبيت المشغّل",
+      "excerpt": "قد يظل المشغّل مثبتاً على التلفزيون رغم غيابه عن ملف Google TV معين. حدد الملف المستخدم قبل تغيير التطبيق أو الحساب أو الخدمة.",
+      "seo_title": "Get IPTV: ظهور التطبيقات في ملفات Google TV",
+      "seo_description": "تحقق من ملف Google TV وصفحة المشغّل الرسمية لإعداد Get IPTV، واترك إدارة وصول الأطفال إلى التطبيقات لولي الأمر دون تجاوز الأقفال.",
+      "sections": [
+        {
+          "heading": "حدد الملف قبل تغيير التطبيق",
+          "paragraphs": [
+            "يفيد فحص الملفات لإعداد Get IPTV عندما يظهر المشغّل في ملف Google TV ولا يظهر في آخر. سجّل طراز التلفزيون أو جهاز البث، والملف المحدد واسم التطبيق الدقيق. غياب المربع يختلف عن خطأ التثبيت أو مشغّل يفتح ولا يشغّل الفيديو. لا تحذف تطبيقاً يعمل بسبب التعامل مع هذه الأعراض المختلفة كأنها مشكلة واحدة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ميّز الملفات العادية وملفات الأطفال",
+          "paragraphs": [
+            "توضح Google أن التطبيقات المثبتة تعمل عبر ملفات Google TV العادية، مع استثناء ملفات الأطفال. يدير ولي الأمر التطبيقات المسموح بها للطفل. إذا كانت الشاشة تخص ملف طفل، فاطلب من المسؤول مراجعة الضوابط الرسمية. لا تتجاوز قفل الملف ولا تعدل حساب غيرك ولا تشارك رمزه مع الدعم. قد تختلف الإتاحة والقوائم حسب الجهاز والمنطقة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google TV: التثبيت والملفات",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "مساعدة Google TV: وصول يديره ولي الأمر",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل المشغّل عن حساب الخدمة",
+          "paragraphs": [
+            "للتثبيت المصرح به، راجع الصفحة الرسمية للمشغّل المقصود وناشره على الجهاز نفسه. سجّل هل التطبيق مثبت، وهل يظهر في الملف المحدد وهل يفتح. تعطي هذه الملاحظات الدعم سؤالاً أوضح من التنزيل المتكرر. ملفات Google TV لا تضيف اتصالات IPTV متزامنة ولا تفعّل خدمة. يعرض Get IPTV خطط Opplex وFilex؛ تحقق من المزود والطلب في تواصل خاص قبل الشراء مجدداً بسبب مربع مفقود."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: दोबारा स्थापना से पहले Google TV प्रोफ़ाइल जाँचें",
+      "excerpt": "किसी Google TV प्रोफ़ाइल में प्लेयर न दिखे, फिर भी वह टीवी पर स्थापित हो सकता है। ऐप, खाता या सेवा बदलने से पहले चुनी प्रोफ़ाइल पहचानें।",
+      "seo_title": "Get IPTV: Google TV प्रोफ़ाइल में ऐप दिखाई देना जाँचें",
+      "seo_description": "Get IPTV प्लेयर के लिए Google TV प्रोफ़ाइल और आधिकारिक ऐप पेज जाँचें। बच्चों की ऐप पहुँच अभिभावक के नियंत्रण में रखें, लॉक को न लाँघें।",
+      "sections": [
+        {
+          "heading": "ऐप बदलने से पहले प्रोफ़ाइल पहचानें",
+          "paragraphs": [
+            "Get IPTV के लिए प्रोफ़ाइल जाँचना तब उपयोगी है जब प्लेयर एक Google TV प्रोफ़ाइल में दिखे, दूसरी में नहीं। टीवी या स्ट्रीमिंग डिवाइस का मॉडल, चुनी प्रोफ़ाइल और ऐप का ठीक नाम लिखें। टाइल गायब होना, स्थापना में त्रुटि और ऐप खुलकर वीडियो न चलना अलग लक्षण हैं। इनको एक जैसी समस्या मानकर चल रहे ऐप को न हटाएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सामान्य और बच्चों की प्रोफ़ाइल में अंतर समझें",
+          "paragraphs": [
+            "Google बताता है कि स्थापित ऐप सामान्य Google TV प्रोफ़ाइलों में काम करते हैं, लेकिन बच्चों की प्रोफ़ाइल इसका अपवाद हैं। बच्चा किन ऐप का उपयोग करे, यह अभिभावक तय करता है। संबंधित स्क्रीन बच्चे की प्रोफ़ाइल हो तो ज़िम्मेदार अभिभावक या व्यवस्थापक से आधिकारिक नियंत्रण देखने को कहें। प्रोफ़ाइल लॉक न लाँघें, दूसरे का खाता न बदलें और उसका पिन सहायता को न दें। डिवाइस और क्षेत्र के अनुसार उपलब्धता और मेनू बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV सहायता: स्थापना और प्रोफ़ाइल",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            },
+            {
+              "label": "Google TV सहायता: अभिभावक के नियंत्रण वाली ऐप पहुँच",
+              "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेयर और सेवा खाते को अलग रखें",
+          "paragraphs": [
+            "अनुमति वाली स्थापना के लिए उसी डिवाइस पर इच्छित प्लेयर की आधिकारिक सूची और प्रकाशक देखें। लिखें कि ऐप स्थापित है, चुनी प्रोफ़ाइल में दिखता है और खुलता है या नहीं। बार-बार डाउनलोड के मुकाबले इन बातों से सहायता को साफ़ सवाल मिलता है। Google TV प्रोफ़ाइल अतिरिक्त एकसाथ IPTV कनेक्शन नहीं देतीं और सेवा सक्रिय नहीं करतीं। Get IPTV में Opplex और Filex प्लान हैं; टाइल न दिखने पर फिर खरीदने से पहले वास्तविक प्रदाता और ऑर्डर निजी रूप से जाँचें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: app installation and profile availability",
+      "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+    },
+    {
+      "label": "Google TV Help: parent-managed app access",
+      "url": "https://support.google.com/googletv/answer/10070481?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-03",
+  "topic": "Finish a private order-access session on a shared computer without confusing browser privacy with payment state",
+  "primary_keyword": "IPTV subscription privacy",
+  "slug": "iptvsubscription-shared-computer-private-order-session",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription privacy on a shared computer: finish the session",
+      "excerpt": "Checking an order on someone else’s computer needs a clear finish. Keep private access links to yourself and understand what a private browser window does and does not remove.",
+      "seo_title": "IPTV Subscription privacy on a shared computer",
+      "seo_description": "Protect private IPTV Subscription order access on a shared computer: understand Incognito limits, avoid saving access links and finish your browser session deliberately.",
+      "sections": [
+        {
+          "heading": "Choose where to open the order",
+          "paragraphs": [
+            "An IPTV subscription privacy check starts before sign-in. Prefer your own trusted device for order access or payment. If you must use a shared computer, avoid saving a private sign-in link, password or order document there. A link that opens your account is not a public support reference. Keep it out of group chats, shared notes and bookmarks."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Understand the private window",
+          "paragraphs": [
+            "Chrome’s Incognito mode separates a browsing session and limits what remains locally after all its Incognito windows close. It does not make browsing anonymous to websites or the network operator. Downloaded files and saved bookmarks can remain. Use Google’s current instructions for your browser, and do not treat a private window as proof that an unfamiliar computer is trustworthy."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leave the session, not another payment",
+          "paragraphs": [
+            "When finished, sign out using the site’s available control, then close every private window you opened. Check whether you deliberately saved any file or bookmark on the shared device and handle it according to the device owner’s rules. Keep your order reference privately on your own device. Closing a browser session does not cancel an Opplex or Filex purchase, renew a plan or confirm a payment. Ask private support about an unclear existing order rather than paying again."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Privacidad de IPTV Subscription al usar un ordenador compartido",
+      "excerpt": "Consultar un pedido desde un ordenador ajeno exige terminar bien la sesión. Protege los enlaces de acceso y conoce los límites de una ventana privada.",
+      "seo_title": "IPTV Subscription: privacidad en un ordenador compartido",
+      "seo_description": "Protege el acceso a tus pedidos IPTV Subscription: entiende los límites de Incógnito, evita guardar enlaces privados y termina correctamente la sesión compartida.",
+      "sections": [
+        {
+          "heading": "Elige dónde consultar el pedido",
+          "paragraphs": [
+            "La privacidad de tu suscripción IPTV empieza antes de iniciar sesión. Prefiere tu propio dispositivo de confianza para acceder al pedido o pagar. Si necesitas un ordenador compartido, no guardes allí enlaces privados de acceso, contraseñas ni documentos del pedido. Un enlace que abre tu cuenta no es una referencia pública de soporte. No lo pongas en grupos, notas compartidas o marcadores."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprende la ventana privada",
+          "paragraphs": [
+            "El modo Incógnito de Chrome separa la sesión y limita la información que queda localmente cuando cierras todas sus ventanas. No vuelve anónima tu navegación ante los sitios o el operador de la red. Los archivos descargados y marcadores guardados pueden permanecer. Consulta las instrucciones actuales de Google para tu navegador; una ventana privada no demuestra que un ordenador desconocido sea fiable."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Termina la sesión, no repitas el pago",
+          "paragraphs": [
+            "Al acabar, cierra la sesión con el control disponible del sitio y después todas las ventanas privadas que abriste. Revisa si guardaste algún archivo o marcador en el ordenador y actúa según las normas de su propietario. Conserva la referencia del pedido en tu dispositivo. Cerrar el navegador no cancela una compra Opplex o Filex, renueva un plan ni confirma un pago. Consulta en privado un pedido dudoso antes de pagar otra vez."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV Subscription : terminer une session sur un ordinateur partagé",
+      "excerpt": "Consulter une commande sur un ordinateur emprunté demande une fin de session claire. Gardez vos liens d’accès privés et comprenez les limites de la navigation privée.",
+      "seo_title": "IPTV Subscription : confidentialité sur ordinateur partagé",
+      "seo_description": "Protégez l’accès privé à une commande IPTV Subscription : limites de la navigation privée, liens à ne pas enregistrer et fermeture complète de la session.",
+      "sections": [
+        {
+          "heading": "Choisissez où consulter la commande",
+          "paragraphs": [
+            "La confidentialité de votre abonnement IPTV se prépare avant la connexion. Privilégiez votre appareil de confiance pour consulter une commande ou payer. Sur un ordinateur partagé, évitez d’enregistrer lien de connexion privé, mot de passe ou document de commande. Un lien donnant accès au compte n’est pas une référence publique pour l’assistance. Ne le placez pas dans un groupe, une note partagée ou un favori."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprenez la fenêtre privée",
+          "paragraphs": [
+            "Le mode navigation privée de Chrome sépare la session et limite les traces locales après fermeture de toutes ses fenêtres privées. Il ne rend pas votre activité anonyme pour les sites ou l’opérateur du réseau. Les téléchargements et favoris enregistrés peuvent rester. Consultez les instructions actuelles de Google pour votre navigateur ; une fenêtre privée ne prouve pas qu’un ordinateur inconnu est digne de confiance."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Terminez la session sans repayer",
+          "paragraphs": [
+            "À la fin, utilisez la déconnexion proposée par le site, puis fermez toutes les fenêtres privées ouvertes. Vérifiez si vous avez volontairement enregistré un fichier ou un favori sur l’appareil et respectez les règles de son propriétaire. Gardez votre référence sur votre propre appareil. Fermer le navigateur n’annule pas un achat Opplex ou Filex, ne renouvelle pas le forfait et ne confirme aucun paiement. Demandez une aide privée pour une commande incertaine avant de payer à nouveau."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription: chiudi bene la sessione su un computer condiviso",
+      "excerpt": "Consultare un ordine su un computer altrui richiede attenzione anche alla fine. Proteggi i link di accesso e conosci i limiti di una finestra in incognito.",
+      "seo_title": "IPTV Subscription: privacy su un computer condiviso",
+      "seo_description": "Proteggi l’accesso privato al tuo abbonamento IPTV: limiti della modalità in incognito, link da non salvare e chiusura completa della sessione condivisa.",
+      "sections": [
+        {
+          "heading": "Scegli dove consultare l’ordine",
+          "paragraphs": [
+            "La privacy di un abbonamento IPTV comincia prima dell’accesso. Preferisci un dispositivo personale affidabile per consultare l’ordine o pagare. Se devi usare un computer condiviso, evita di salvarvi link privati di accesso, password o documenti dell’ordine. Un link che apre l’account non è un riferimento pubblico per l’assistenza. Non inserirlo in chat di gruppo, note condivise o preferiti."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprendi la finestra in incognito",
+          "paragraphs": [
+            "La modalità in incognito di Chrome separa la sessione e limita le informazioni conservate localmente dopo la chiusura di tutte le sue finestre. Non rende anonima la navigazione verso siti o gestore della rete. File scaricati e preferiti salvati possono restare. Segui le istruzioni attuali di Google per il browser; una finestra privata non dimostra che un computer sconosciuto sia affidabile."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Termina la sessione, senza ripetere il pagamento",
+          "paragraphs": [
+            "Quando hai finito, esci tramite il comando disponibile sul sito e chiudi tutte le finestre private aperte. Verifica se hai salvato volontariamente file o preferiti e gestiscili secondo le regole del proprietario del dispositivo. Conserva il riferimento sul tuo apparecchio. Chiudere il browser non annulla un acquisto Opplex o Filex, non rinnova il piano e non conferma il pagamento. Chiedi assistenza privata per un ordine incerto prima di pagare di nuovo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription: sluit je sessie op een gedeelde computer af",
+      "excerpt": "Een bestelling bekijken op een geleende computer vraagt om een bewuste afsluiting. Houd toegangslinks privé en begrijp wat een privévenster wel en niet verwijdert.",
+      "seo_title": "IPTV Subscription: privacy op een gedeelde computer",
+      "seo_description": "Bescherm privétoegang tot je IPTV Subscription-bestelling: ken de beperkingen van incognito, sla geen toegangslinks op en sluit de gedeelde sessie volledig af.",
+      "sections": [
+        {
+          "heading": "Kies waar je de bestelling opent",
+          "paragraphs": [
+            "Privacy bij je IPTV-abonnement begint vóór het inloggen. Gebruik bij voorkeur je eigen vertrouwde apparaat voor een bestelling of betaling. Moet je een gedeelde computer gebruiken, sla daar dan geen privé-inloglink, wachtwoord of besteldocument op. Een link die je account opent is geen openbare verwijzing voor ondersteuning. Zet die niet in groepsgesprekken, gedeelde notities of bladwijzers."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Begrijp het privévenster",
+          "paragraphs": [
+            "De incognitomodus van Chrome houdt een browsersessie apart en beperkt wat lokaal achterblijft zodra alle incognitovensters dicht zijn. Je wordt daarmee niet anoniem voor websites of de netwerkbeheerder. Gedownloade bestanden en opgeslagen bladwijzers kunnen blijven bestaan. Raadpleeg de actuele Google-instructies voor je browser; een privévenster bewijst niet dat een onbekende computer betrouwbaar is."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Sluit de sessie af zonder opnieuw te betalen",
+          "paragraphs": [
+            "Log na afloop uit met de beschikbare knop van de website en sluit vervolgens alle geopende privévensters. Controleer of je bewust een bestand of bladwijzer op het gedeelde apparaat hebt bewaard en volg de regels van de eigenaar. Bewaar de bestelreferentie op je eigen apparaat. Het sluiten van de browser annuleert geen Opplex- of Filex-aankoop, verlengt geen abonnement en bevestigt geen betaling. Vraag privé hulp bij een onduidelijke bestelling voordat je opnieuw betaalt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV Subscription: termine a sessão num computador partilhado",
+      "excerpt": "Consultar uma encomenda num computador emprestado exige terminar bem a sessão. Proteja as ligações de acesso e conheça os limites de uma janela privada.",
+      "seo_title": "IPTV Subscription: privacidade num computador partilhado",
+      "seo_description": "Proteja o acesso à sua assinatura IPTV: compreenda os limites do modo anónimo, não guarde ligações privadas e termine a sessão no computador partilhado.",
+      "sections": [
+        {
+          "heading": "Escolha onde abrir a encomenda",
+          "paragraphs": [
+            "A privacidade da assinatura IPTV começa antes de iniciar sessão. Prefira o seu dispositivo de confiança para consultar encomendas ou pagar. Se precisar de um computador partilhado, evite guardar ali ligações privadas de entrada, palavras-passe ou documentos da encomenda. Uma ligação que abre a conta não é uma referência pública de apoio. Não a coloque em grupos, notas partilhadas ou marcadores."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compreenda a janela privada",
+          "paragraphs": [
+            "O modo de navegação anónima do Chrome separa a sessão e limita o que fica localmente depois de fechar todas as suas janelas. Não torna a navegação anónima perante os sites ou o operador da rede. Ficheiros transferidos e marcadores guardados podem permanecer. Consulte as instruções atuais da Google para o navegador; uma janela privada não prova que um computador desconhecido seja fiável."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Termine a sessão, sem repetir o pagamento",
+          "paragraphs": [
+            "No fim, termine a sessão através do controlo disponível no site e feche todas as janelas privadas abertas. Verifique se guardou algum ficheiro ou marcador e trate-o segundo as regras do proprietário do equipamento. Conserve a referência da encomenda no seu dispositivo. Fechar o navegador não cancela uma compra Opplex ou Filex, não renova um plano nem confirma um pagamento. Peça apoio privado sobre uma encomenda incerta antes de voltar a pagar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV Subscription: завершите сеанс на общем компьютере",
+      "excerpt": "Проверяя заказ на чужом компьютере, важно правильно закончить работу. Храните ссылки доступа в тайне и учитывайте ограничения приватного окна браузера.",
+      "seo_title": "IPTV Subscription: приватность на общем компьютере",
+      "seo_description": "Защитите доступ к заказу IPTV Subscription на общем компьютере: учитывайте ограничения инкогнито, не сохраняйте личные ссылки и завершайте сеанс полностью.",
+      "sections": [
+        {
+          "heading": "Выберите устройство для заказа",
+          "paragraphs": [
+            "Защита данных при подписке IPTV начинается до входа. Для проверки заказа и оплаты лучше использовать собственное доверенное устройство. Если нужен общий компьютер, не сохраняйте на нём личную ссылку входа, пароль или документ заказа. Ссылка, открывающая аккаунт, не является общедоступным справочным материалом. Не отправляйте её в групповые чаты и не добавляйте в общие заметки или закладки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Разберитесь с приватным окном",
+          "paragraphs": [
+            "Режим инкогнито Chrome отделяет сеанс и ограничивает локальные следы после закрытия всех окон инкогнито. Он не делает действия анонимными для сайтов или оператора сети. Скачанные файлы и сохранённые закладки могут остаться. Пользуйтесь актуальной инструкцией Google для своего браузера: приватное окно не подтверждает надёжность незнакомого компьютера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Завершите сеанс, а не повторяйте оплату",
+          "paragraphs": [
+            "Закончив работу, выйдите с помощью доступной функции сайта и закройте все открытые приватные окна. Проверьте, сохраняли ли вы файл или закладку на общем устройстве, и соблюдайте правила его владельца. Номер заказа держите на своём устройстве. Закрытие браузера не отменяет покупку Opplex или Filex, не продлевает план и не подтверждает платёж. Если состояние заказа непонятно, обратитесь в закрытую поддержку, прежде чем платить снова."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription: مشترکہ کمپیوٹر پر اپنا سیشن مکمل بند کریں",
+      "excerpt": "کسی دوسرے کے کمپیوٹر پر آرڈر دیکھنے کے بعد سیشن احتیاط سے ختم کریں۔ نجی رسائی کے لنکس محفوظ رکھیں اور پرائیویٹ ونڈو کی حدود سمجھیں۔",
+      "seo_title": "مشترکہ کمپیوٹر پر IPTV Subscription کی رازداری",
+      "seo_description": "مشترکہ کمپیوٹر پر IPTV Subscription آرڈر کی نجی رسائی محفوظ رکھیں: انکگنیٹو کی حدود جانیں، رسائی کے لنکس محفوظ نہ کریں اور سیشن مکمل بند کریں۔",
+      "sections": [
+        {
+          "heading": "آرڈر کہاں کھولنا ہے، پہلے طے کریں",
+          "paragraphs": [
+            "IPTV سبسکرپشن کی رازداری لاگ اِن سے پہلے شروع ہوتی ہے۔ آرڈر یا ادائیگی کے لیے اپنا قابلِ اعتماد آلہ ترجیح دیں۔ مشترکہ کمپیوٹر ضروری ہو تو وہاں نجی سائن اِن لنک، پاس ورڈ یا آرڈر کی دستاویز محفوظ نہ کریں۔ اکاؤنٹ کھولنے والا لنک عوامی مدد کا حوالہ نہیں ہوتا۔ اسے گروپ چیٹ، مشترکہ نوٹس یا بک مارک میں نہ ڈالیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "پرائیویٹ ونڈو کو سمجھیں",
+          "paragraphs": [
+            "Chrome کا انکگنیٹو موڈ براؤزنگ سیشن الگ رکھتا ہے اور اس کی تمام ونڈوز بند ہونے کے بعد آلے پر بچنے والی معلومات محدود کرتا ہے۔ یہ ویب سائٹس یا نیٹ ورک چلانے والے سے سرگرمی گمنام نہیں بناتا۔ ڈاؤن لوڈ شدہ فائلیں اور محفوظ بک مارکس باقی رہ سکتے ہیں۔ اپنے براؤزر کی موجودہ Google ہدایات پڑھیں؛ پرائیویٹ ونڈو نامعلوم کمپیوٹر کے قابلِ اعتماد ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "سیشن ختم کریں، ادائیگی دوبارہ نہیں",
+          "paragraphs": [
+            "کام مکمل ہو تو ویب سائٹ کے دستیاب اختیار سے سائن آؤٹ کریں، پھر کھولی گئی تمام پرائیویٹ ونڈوز بند کریں۔ دیکھیں کہ مشترکہ آلے پر کوئی فائل یا بک مارک جان بوجھ کر محفوظ کیا تھا یا نہیں، اور مالک کے اصولوں کے مطابق اسے سنبھالیں۔ آرڈر کا حوالہ اپنے آلے پر نجی رکھیں۔ براؤزر بند کرنا Opplex یا Filex خریداری منسوخ، پلان تجدید یا ادائیگی کی تصدیق نہیں کرتا۔ غیر واضح آرڈر پر دوبارہ رقم دینے سے پہلے نجی سپورٹ سے پوچھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "IPTV Subscription: أنهِ جلستك على الكمبيوتر المشترك",
+      "excerpt": "تحتاج مراجعة الطلب على جهاز مستعار إلى إنهاء واضح للجلسة. احفظ روابط الدخول الخاصة وافهم ما تزيله النافذة الخاصة وما يبقى على الجهاز.",
+      "seo_title": "خصوصية IPTV Subscription على كمبيوتر مشترك",
+      "seo_description": "احمِ الوصول الخاص إلى طلب IPTV Subscription: افهم حدود التصفح المتخفي، ولا تحفظ روابط الدخول، وأنهِ جلستك على الكمبيوتر المشترك بالكامل.",
+      "sections": [
+        {
+          "heading": "اختر أين تفتح الطلب",
+          "paragraphs": [
+            "تبدأ خصوصية اشتراك IPTV قبل تسجيل الدخول. استخدم جهازك الموثوق لمراجعة الطلب أو الدفع إن أمكن. إذا احتجت إلى كمبيوتر مشترك، فتجنب حفظ رابط دخول خاص أو كلمة مرور أو مستند طلب عليه. الرابط الذي يفتح حسابك ليس مرجعاً عاماً للدعم. لا تضعه في المجموعات أو الملاحظات المشتركة أو الإشارات المرجعية."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افهم النافذة الخاصة",
+          "paragraphs": [
+            "يفصل وضع التصفح المتخفي في Chrome الجلسة ويحد مما يبقى محلياً بعد إغلاق جميع نوافذه. لكنه لا يجعل نشاطك مجهولاً للمواقع أو مشغل الشبكة. قد تبقى الملفات المنزلة والإشارات المرجعية المحفوظة. اتبع تعليمات Google الحالية لمتصفحك؛ فالنافذة الخاصة لا تثبت أن كمبيوتراً غير مألوف جدير بالثقة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "أنه الجلسة ولا تكرر الدفع",
+          "paragraphs": [
+            "عند الانتهاء، سجّل الخروج باستخدام الخيار المتاح في الموقع، ثم أغلق كل النوافذ الخاصة التي فتحتها. تحقق مما إذا كنت حفظت ملفاً أو إشارة مرجعية على الجهاز المشترك وتعامل معها وفق قواعد مالكه. احتفظ بمرجع الطلب سراً على جهازك. إغلاق المتصفح لا يلغي شراء Opplex أو Filex، ولا يجدد الخطة ولا يؤكد الدفع. اسأل الدعم الخاص عن الطلب غير الواضح قبل الدفع مجدداً."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription: साझा कंप्यूटर पर अपना सत्र पूरा बंद करें",
+      "excerpt": "किसी और के कंप्यूटर पर ऑर्डर देखते समय काम ठीक से समाप्त करना ज़रूरी है। निजी प्रवेश लिंक बचाएँ और निजी विंडो की सीमाएँ समझें।",
+      "seo_title": "साझा कंप्यूटर पर IPTV Subscription की गोपनीयता",
+      "seo_description": "साझा कंप्यूटर पर IPTV Subscription ऑर्डर की निजी पहुँच बचाएँ: गुप्त मोड की सीमाएँ समझें, प्रवेश लिंक न सहेजें और पूरा ब्राउज़र सत्र बंद करें।",
+      "sections": [
+        {
+          "heading": "पहले तय करें कि ऑर्डर कहाँ खोलना है",
+          "paragraphs": [
+            "IPTV सदस्यता की गोपनीयता साइन इन से पहले शुरू होती है। ऑर्डर देखने या भुगतान के लिए अपना भरोसेमंद डिवाइस चुनें। साझा कंप्यूटर ज़रूरी हो तो उस पर निजी प्रवेश लिंक, पासवर्ड या ऑर्डर दस्तावेज़ न सहेजें। खाता खोलने वाला लिंक सार्वजनिक सहायता का संदर्भ नहीं है। उसे समूह चैट, साझा नोट या बुकमार्क में न डालें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "निजी विंडो की सीमा समझें",
+          "paragraphs": [
+            "Chrome का गुप्त मोड ब्राउज़िंग सत्र अलग रखता है और उसकी सभी विंडो बंद होने पर डिवाइस में बचने वाली जानकारी सीमित करता है। इससे वेबसाइटों या नेटवर्क संचालक के सामने गतिविधि गुमनाम नहीं होती। डाउनलोड की गई फ़ाइलें और सहेजे बुकमार्क रह सकते हैं। अपने ब्राउज़र के लिए Google की मौजूदा मदद देखें; निजी विंडो किसी अनजान कंप्यूटर के भरोसेमंद होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: what Incognito keeps on a device",
+              "url": "https://support.google.com/chrome/answer/95464?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सत्र समाप्त करें, भुगतान दोबारा नहीं",
+          "paragraphs": [
+            "काम पूरा होने पर वेबसाइट के उपलब्ध विकल्प से साइन आउट करें और खोली गई सभी निजी विंडो बंद करें। देखें कि आपने साझा डिवाइस पर कोई फ़ाइल या बुकमार्क जानबूझकर सहेजा था या नहीं, और मालिक के नियमों के अनुसार उसे सँभालें। ऑर्डर संदर्भ अपने डिवाइस पर निजी रखें। ब्राउज़र बंद करना Opplex या Filex खरीद रद्द, प्लान नवीनीकरण या भुगतान की पुष्टि नहीं करता। अस्पष्ट ऑर्डर पर फिर भुगतान करने से पहले निजी सहायता लें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: what Incognito keeps on a device",
+      "url": "https://support.google.com/chrome/answer/95464?hl=en"
+    }
+  ]
+}

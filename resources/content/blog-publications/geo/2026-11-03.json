@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-03",
+  "topic": "Apple TV Ethernet selection and the missing Wi-Fi menu: identify the active connection before changing a Geo IPTV player",
+  "primary_keyword": "Geo IPTV Apple TV network check",
+  "slug": "geo-apple-tv-ethernet-connection-and-missing-wifi-option",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV Apple TV network check: why the Wi-Fi option may disappear",
+      "excerpt": "A missing Wi-Fi option on Apple TV can have a simple explanation: an Ethernet cable. Read the current connection before changing the player or removing saved network details.",
+      "seo_title": "Geo IPTV Apple TV network check: Ethernet or Wi-Fi?",
+      "seo_description": "Check the active Apple TV connection for Geo IPTV, understand why Ethernet hides the Wi-Fi choice and collect useful details before changing a working setup.",
+      "sections": [
+        {
+          "heading": "Look at the connection Apple TV is using",
+          "paragraphs": [
+            "Start a Geo IPTV Apple TV network check with the device, not the player. Identify the exact Apple TV model and look for an Ethernet cable if that model has the port. Apple explains that a connected Ethernet cable is used automatically instead of Wi-Fi; the Wi-Fi joining option is not shown while that cable is connected. A missing wireless menu therefore does not, by itself, show that the player or subscription has failed."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Wi-Fi and Ethernet connections on Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Decide whether you actually want to switch",
+          "paragraphs": [
+            "Leave a working wired connection in place unless you intend to change it. To move from Ethernet to Wi-Fi, Apple instructs you to disconnect the Ethernet cable and allow time for the wireless option to become available. Open Settings, then Network, and select the intended Wi-Fi network. Have its password available privately. Do not erase saved networks or reset the device simply to make a menu appear. Check the instructions for your model before proceeding."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Describe the result, not an assumed outage",
+          "paragraphs": [
+            "Record the connection type, Apple TV model and the exact screen or error you see. Check another familiar internet-connected app on that same device. If multiple apps fail, report that broader symptom; if only playback fails, note the player and programme step separately. A selected network is not proof that the internet or a particular service is working. Give Geo IPTV support these observations without sharing Wi-Fi passwords, account credentials or private playlist addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV: por qué puede desaparecer la opción Wi-Fi del Apple TV",
+      "excerpt": "La ausencia de Wi-Fi en Apple TV puede deberse al cable Ethernet. Revisa la conexión actual antes de modificar el reproductor o borrar redes guardadas.",
+      "seo_title": "Geo IPTV en Apple TV: comprueba Ethernet o Wi-Fi",
+      "seo_description": "Identifica la conexión del Apple TV para Geo IPTV, entiende por qué Ethernet oculta la opción Wi-Fi y recoge datos útiles antes de cambiar una configuración.",
+      "sections": [
+        {
+          "heading": "Mira qué conexión está usando el Apple TV",
+          "paragraphs": [
+            "Empieza la comprobación de red de Geo IPTV en el dispositivo, no en el reproductor. Identifica el modelo exacto de Apple TV y busca un cable Ethernet si dispone de ese puerto. Apple explica que, al conectar el cable, el dispositivo utiliza Ethernet automáticamente en lugar de Wi-Fi y no muestra la opción de unirse a una red inalámbrica. Por sí sola, la ausencia de ese menú no indica un fallo del reproductor ni de la suscripción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: conexiones Wi-Fi y Ethernet en Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Decide si realmente quieres cambiarla",
+          "paragraphs": [
+            "Mantén la conexión por cable si funciona y no deseas cambiarla. Para pasar de Ethernet a Wi-Fi, Apple indica desconectar el cable y esperar a que aparezca la opción inalámbrica. Abre Ajustes, después Red, y selecciona la red Wi-Fi prevista. Ten su contraseña disponible de forma privada. No borres redes guardadas ni restablezcas el dispositivo solo para que aparezca un menú. Consulta las instrucciones de tu modelo antes de continuar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Describe el resultado sin suponer una caída",
+          "paragraphs": [
+            "Anota el tipo de conexión, el modelo del Apple TV y la pantalla o error exactos. Comprueba otra aplicación habitual con acceso a internet en ese mismo dispositivo. Si fallan varias, describe ese síntoma más amplio; si solo falla la reproducción, apunta por separado el reproductor y el paso del programa. Seleccionar una red no demuestra que internet o un servicio concreto funcionen. Envía estas observaciones al soporte de Geo IPTV sin contraseñas Wi-Fi, credenciales ni direcciones privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV : pourquoi le choix Wi-Fi peut disparaître sur Apple TV",
+      "excerpt": "Un câble Ethernet peut expliquer l’absence du choix Wi-Fi sur Apple TV. Vérifiez la connexion actuelle avant de modifier le lecteur ou les réseaux enregistrés.",
+      "seo_title": "Geo IPTV sur Apple TV : vérifier Ethernet ou Wi-Fi",
+      "seo_description": "Identifiez la connexion Apple TV pour Geo IPTV, comprenez pourquoi Ethernet masque le choix Wi-Fi et relevez les détails utiles avant toute modification.",
+      "sections": [
+        {
+          "heading": "Regardez la connexion utilisée par Apple TV",
+          "paragraphs": [
+            "Commencez la vérification réseau Geo IPTV sur l’appareil, pas dans le lecteur. Identifiez le modèle exact d’Apple TV et vérifiez la présence d’un câble Ethernet si ce modèle possède ce port. Apple explique que le câble connecté est utilisé automatiquement à la place du Wi-Fi ; le choix d’un réseau sans fil n’est alors pas affiché. L’absence de ce menu ne prouve donc pas, à elle seule, une panne du lecteur ou de l’abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : connexions Wi-Fi et Ethernet sur Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Décidez si vous voulez vraiment changer",
+          "paragraphs": [
+            "Conservez une connexion filaire qui fonctionne si vous ne souhaitez pas la modifier. Pour passer d’Ethernet au Wi-Fi, Apple indique de débrancher le câble, puis d’attendre que l’option sans fil soit disponible. Ouvrez Réglages, puis Réseau, et choisissez le réseau Wi-Fi prévu. Gardez son mot de passe à portée de main, en privé. N’effacez pas les réseaux enregistrés et ne réinitialisez pas l’appareil simplement pour faire apparaître un menu. Consultez d’abord les instructions de votre modèle."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Décrivez le résultat sans supposer une panne générale",
+          "paragraphs": [
+            "Notez le type de connexion, le modèle d’Apple TV et l’écran ou le message exact. Vérifiez une autre application habituelle connectée à internet sur ce même appareil. Si plusieurs échouent, décrivez ce symptôme plus large ; si seule la lecture échoue, indiquez séparément le lecteur et l’étape concernée. Un réseau sélectionné ne prouve pas qu’internet ou un service particulier fonctionne. Transmettez ces observations à l’assistance Geo IPTV sans mots de passe Wi-Fi, identifiants ni adresses privées de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV: perché l’opzione Wi-Fi può sparire su Apple TV",
+      "excerpt": "Un cavo Ethernet può spiegare l’assenza dell’opzione Wi-Fi su Apple TV. Controlla la connessione attuale prima di cambiare lettore o cancellare reti salvate.",
+      "seo_title": "Geo IPTV su Apple TV: verifica Ethernet o Wi-Fi",
+      "seo_description": "Controlla la connessione Apple TV per Geo IPTV, scopri perché Ethernet nasconde la scelta Wi-Fi e annota i dettagli prima di modificare la configurazione.",
+      "sections": [
+        {
+          "heading": "Guarda quale connessione usa Apple TV",
+          "paragraphs": [
+            "Inizia il controllo di rete Geo IPTV dal dispositivo, non dal lettore. Individua il modello preciso di Apple TV e verifica se è collegato un cavo Ethernet, quando quel modello dispone della porta. Apple spiega che il cavo collegato viene usato automaticamente al posto del Wi-Fi; mentre è inserito, non compare l’opzione per scegliere una rete wireless. L’assenza di quel menu non dimostra quindi, da sola, un guasto del lettore o dell’abbonamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: connessioni Wi-Fi ed Ethernet su Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Decidi se vuoi davvero cambiare",
+          "paragraphs": [
+            "Mantieni una connessione cablata funzionante se non intendi modificarla. Per passare da Ethernet al Wi-Fi, Apple indica di scollegare il cavo e attendere che diventi disponibile l’opzione wireless. Apri Impostazioni, poi Rete, e seleziona la rete Wi-Fi desiderata. Tieni la password disponibile in privato. Non cancellare reti salvate e non ripristinare il dispositivo solo per far apparire un menu. Prima di procedere, consulta le istruzioni del modello."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descrivi il risultato senza presumere un disservizio",
+          "paragraphs": [
+            "Annota tipo di connessione, modello Apple TV e schermata o errore preciso. Prova un’altra app abituale che usa internet sullo stesso dispositivo. Se ne falliscono diverse, descrivi quel sintomo generale; se fallisce solo la riproduzione, indica separatamente lettore e passaggio del programma. Una rete selezionata non prova che internet o un servizio specifico funzionino. Comunica queste osservazioni all’assistenza Geo IPTV senza password Wi-Fi, credenziali o indirizzi privati delle playlist."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV: waarom de wifi-optie op Apple TV kan verdwijnen",
+      "excerpt": "Een ethernetkabel kan verklaren waarom Apple TV geen wifi-keuze toont. Bekijk de actieve verbinding voordat je de speler wijzigt of opgeslagen netwerken wist.",
+      "seo_title": "Geo IPTV op Apple TV: controleer ethernet of wifi",
+      "seo_description": "Controleer de Apple TV-verbinding voor Geo IPTV, begrijp waarom ethernet de wifi-keuze verbergt en noteer nuttige details voordat je instellingen wijzigt.",
+      "sections": [
+        {
+          "heading": "Bekijk welke verbinding Apple TV gebruikt",
+          "paragraphs": [
+            "Begin de netwerkcontrole voor Geo IPTV bij het apparaat, niet bij de speler. Zoek het precieze Apple TV-model op en controleer of er een ethernetkabel is aangesloten als dat model zo’n poort heeft. Apple legt uit dat een aangesloten kabel automatisch wordt gebruikt in plaats van wifi; de keuze om een draadloos netwerk te verbinden verschijnt dan niet. Een ontbrekend draadloos menu bewijst op zichzelf dus geen storing van de speler of het abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: wifi- en ethernetverbindingen op Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Bepaal of je echt wilt overschakelen",
+          "paragraphs": [
+            "Laat een werkende kabelverbinding intact als je die niet wilt veranderen. Om van ethernet naar wifi over te stappen, beschrijft Apple dat je de kabel loskoppelt en wacht totdat de draadloze optie beschikbaar wordt. Open Instellingen, daarna Netwerk, en kies het bedoelde wifinetwerk. Houd het wachtwoord privé bij de hand. Wis geen opgeslagen netwerken en herstel het apparaat niet alleen om een menu zichtbaar te maken. Lees eerst de instructies voor jouw model."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Beschrijf de uitkomst zonder een storing aan te nemen",
+          "paragraphs": [
+            "Noteer verbindingstype, Apple TV-model en de precieze melding of het scherm. Controleer een andere vertrouwde internetapp op hetzelfde apparaat. Als meerdere apps falen, meld dan dat bredere verschijnsel; als alleen afspelen faalt, noteer speler en programmastap afzonderlijk. Een geselecteerd netwerk bewijst niet dat internet of een bepaalde dienst werkt. Geef deze waarnemingen door aan Geo IPTV-support zonder wifiwachtwoorden, accountgegevens of privéafspeellijstadressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV: por que a opção Wi-Fi pode sumir na Apple TV",
+      "excerpt": "Um cabo Ethernet pode explicar a ausência da opção Wi-Fi na Apple TV. Confira a conexão atual antes de alterar o reprodutor ou apagar redes salvas.",
+      "seo_title": "Geo IPTV na Apple TV: confira Ethernet ou Wi-Fi",
+      "seo_description": "Confira a conexão da Apple TV para Geo IPTV, entenda por que Ethernet oculta a escolha de Wi-Fi e registre detalhes antes de mudar uma configuração.",
+      "sections": [
+        {
+          "heading": "Veja qual conexão a Apple TV está usando",
+          "paragraphs": [
+            "Comece a verificação de rede do Geo IPTV pelo aparelho, não pelo reprodutor. Identifique o modelo exato da Apple TV e procure um cabo Ethernet, caso esse modelo tenha a porta. A Apple explica que o cabo conectado é usado automaticamente no lugar do Wi-Fi; enquanto ele estiver conectado, a opção de entrar numa rede sem fio não aparece. Portanto, a ausência desse menu, por si só, não demonstra falha do reprodutor ou da assinatura."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: conexões Wi-Fi e Ethernet na Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Decida se realmente deseja trocar",
+          "paragraphs": [
+            "Mantenha uma conexão por cabo que funciona se não pretende alterá-la. Para passar de Ethernet ao Wi-Fi, a Apple orienta desconectar o cabo e esperar que a opção sem fio fique disponível. Abra Ajustes, depois Rede, e escolha a rede Wi-Fi desejada. Tenha a senha disponível em particular. Não apague redes salvas nem restaure o aparelho apenas para fazer um menu aparecer. Consulte primeiro as instruções do seu modelo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descreva o resultado sem presumir uma queda",
+          "paragraphs": [
+            "Anote tipo de conexão, modelo da Apple TV e a tela ou o erro exato. Verifique outro aplicativo habitual com acesso à internet no mesmo aparelho. Se vários falharem, descreva esse sintoma mais amplo; se apenas a reprodução falhar, registre separadamente o reprodutor e a etapa do programa. Uma rede selecionada não prova que a internet ou um serviço específico funciona. Envie essas observações ao suporte do Geo IPTV sem senhas de Wi-Fi, credenciais ou endereços privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV: почему на Apple TV может исчезнуть выбор Wi-Fi",
+      "excerpt": "Отсутствие выбора Wi-Fi на Apple TV может объясняться кабелем Ethernet. Проверьте текущее подключение, прежде чем менять плеер или удалять сохранённые сети.",
+      "seo_title": "Geo IPTV на Apple TV: проверка Ethernet и Wi-Fi",
+      "seo_description": "Проверьте подключение Apple TV для Geo IPTV, узнайте, почему Ethernet скрывает выбор Wi-Fi, и запишите наблюдения до изменения рабочей настройки.",
+      "sections": [
+        {
+          "heading": "Посмотрите, какое подключение использует Apple TV",
+          "paragraphs": [
+            "Начните проверку сети Geo IPTV с устройства, а не с плеера. Уточните модель Apple TV и проверьте наличие кабеля Ethernet, если у этой модели есть такой порт. Apple поясняет: при подключённом кабеле Ethernet автоматически используется вместо Wi-Fi, поэтому выбор беспроводной сети не показывается. Само отсутствие этого меню ещё не означает неисправность плеера или подписки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: подключение Apple TV по Wi-Fi и Ethernet",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Решите, действительно ли нужно переключение",
+          "paragraphs": [
+            "Оставьте рабочее проводное подключение без изменений, если не собираетесь его менять. Для перехода с Ethernet на Wi-Fi Apple предлагает отсоединить кабель и подождать появления беспроводной настройки. Откройте «Настройки», затем «Сеть», выберите нужную сеть Wi-Fi. Держите её пароль под рукой, но не передавайте его другим. Не удаляйте сохранённые сети и не сбрасывайте устройство лишь ради появления меню. Сначала изучите инструкцию именно вашей модели."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Опишите результат, не предполагая общий сбой",
+          "paragraphs": [
+            "Запишите тип подключения, модель Apple TV и точный экран или сообщение об ошибке. Проверьте другое привычное интернет-приложение на этом же устройстве. Если не работают несколько приложений, сообщите об этом более общем симптоме; если не воспроизводится только видео, отдельно укажите плеер и этап запуска программы. Выбранная сеть ещё не доказывает работоспособность интернета или определённого сервиса. Передайте наблюдения поддержке Geo IPTV без паролей Wi-Fi, учётных данных и приватных адресов плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV: Apple TV پر وائی فائی کا اختیار کیوں غائب ہو سکتا ہے؟",
+      "excerpt": "Apple TV پر وائی فائی کا اختیار غائب ہو تو وجہ ایتھرنیٹ کیبل ہو سکتی ہے۔ پلیئر بدلنے یا محفوظ نیٹ ورک مٹانے سے پہلے موجودہ کنکشن دیکھیں۔",
+      "seo_title": "Geo IPTV کے لیے Apple TV کا ایتھرنیٹ یا وائی فائی کنکشن",
+      "seo_description": "Geo IPTV کے لیے Apple TV کا فعال کنکشن دیکھیں، سمجھیں کہ ایتھرنیٹ وائی فائی کا اختیار کیوں چھپاتا ہے اور تبدیلی سے پہلے ضروری تفصیل لکھیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں Apple TV کون سا کنکشن استعمال کر رہا ہے",
+          "paragraphs": [
+            "Geo IPTV کے نیٹ ورک کی جانچ پلیئر کے بجائے ڈیوائس سے شروع کریں۔ Apple TV کا درست ماڈل پہچانیں اور، اگر اس میں متعلقہ پورٹ ہے، تو ایتھرنیٹ کیبل دیکھیں۔ Apple کے مطابق منسلک ایتھرنیٹ کیبل خودکار طور پر وائی فائی کی جگہ استعمال ہوتی ہے؛ کیبل لگی ہو تو وائرلیس نیٹ ورک منتخب کرنے کا اختیار نظر نہیں آتا۔ اس لیے صرف یہ مینو غائب ہونا پلیئر یا سبسکرپشن کی خرابی کا ثبوت نہیں ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV پر وائی فائی اور ایتھرنیٹ کنکشن",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "فیصلہ کریں کہ کنکشن واقعی بدلنا ہے یا نہیں",
+          "paragraphs": [
+            "اگر چلتا ہوا کیبل کنکشن بدلنا نہیں چاہتے تو اسے برقرار رکھیں۔ ایتھرنیٹ سے وائی فائی پر جانے کے لیے Apple کی ہدایت ہے کہ کیبل الگ کریں اور وائرلیس اختیار دستیاب ہونے تک کچھ وقت دیں۔ سیٹنگز کھولیں، پھر نیٹ ورک میں مطلوبہ وائی فائی منتخب کریں۔ اس کا پاس ورڈ نجی طور پر اپنے پاس رکھیں۔ صرف مینو دکھانے کے لیے محفوظ نیٹ ورک نہ مٹائیں اور ڈیوائس ری سیٹ نہ کریں۔ آگے بڑھنے سے پہلے اپنے ماڈل کی ہدایات دیکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نتیجہ بتائیں، بندش فرض نہ کریں",
+          "paragraphs": [
+            "کنکشن کی قسم، Apple TV کا ماڈل اور اصل اسکرین یا خطا لکھیں۔ اسی ڈیوائس پر انٹرنیٹ استعمال کرنے والی کوئی دوسری معمول کی ایپ دیکھیں۔ اگر کئی ایپس ناکام ہوں تو وہ وسیع علامت بتائیں؛ صرف ویڈیو نہ چلے تو پلیئر اور پروگرام کھولنے کا مرحلہ الگ لکھیں۔ نیٹ ورک منتخب ہونے سے انٹرنیٹ یا کسی خاص سروس کا چلنا ثابت نہیں ہوتا۔ یہ مشاہدات Geo IPTV کی معاونت کو دیں، مگر وائی فائی پاس ورڈ، اکاؤنٹ کی معلومات یا نجی پلے لسٹ پتے نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV: لماذا قد يختفي خيار Wi-Fi على Apple TV؟",
+      "excerpt": "قد يفسر كابل Ethernet غياب اختيار Wi-Fi على Apple TV. راجع الاتصال الحالي قبل تعديل المشغّل أو حذف الشبكات المحفوظة.",
+      "seo_title": "Geo IPTV على Apple TV: افحص Ethernet أو Wi-Fi",
+      "seo_description": "افحص اتصال Apple TV لإعداد Geo IPTV، وافهم لماذا يخفي Ethernet خيار Wi-Fi، وسجّل الملاحظات قبل تغيير إعداد يعمل بالفعل.",
+      "sections": [
+        {
+          "heading": "انظر إلى الاتصال الذي يستخدمه Apple TV",
+          "paragraphs": [
+            "ابدأ فحص شبكة Geo IPTV بالجهاز لا بالمشغّل. حدد طراز Apple TV بدقة وابحث عن كابل Ethernet إذا كان الطراز مزوداً بمنفذه. توضح Apple أن الكابل المتصل يُستخدم تلقائياً بدلاً من Wi-Fi؛ ولا يظهر خيار الانضمام إلى شبكة لاسلكية أثناء توصيله. لذلك لا يثبت غياب القائمة اللاسلكية وحده وجود عطل في المشغّل أو الاشتراك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: اتصالات Wi-Fi وEthernet على Apple TV",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "قرر هل تريد التبديل فعلاً",
+          "paragraphs": [
+            "اترك الاتصال السلكي العامل كما هو ما لم تكن تنوي تغييره. للانتقال من Ethernet إلى Wi-Fi، تطلب Apple فصل الكابل والانتظار حتى يتاح الخيار اللاسلكي. افتح الإعدادات ثم الشبكة واختر شبكة Wi-Fi المقصودة. احتفظ بكلمة مرورها لديك بصورة خاصة. لا تحذف الشبكات المحفوظة ولا تعِد ضبط الجهاز لمجرد إظهار قائمة. راجع تعليمات طرازك قبل المتابعة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صف النتيجة ولا تفترض انقطاع الخدمة",
+          "paragraphs": [
+            "سجّل نوع الاتصال وطراز Apple TV والشاشة أو رسالة الخطأ الدقيقة. افحص تطبيقاً معتاداً آخر يستخدم الإنترنت على الجهاز نفسه. إذا فشلت تطبيقات متعددة، اذكر هذا العَرَض الأوسع؛ وإذا تعطل التشغيل وحده، فدوّن المشغّل ومرحلة فتح البرنامج بشكل منفصل. اختيار شبكة لا يثبت عمل الإنترنت أو خدمة بعينها. أرسل هذه الملاحظات لدعم Geo IPTV دون كلمات مرور Wi-Fi أو بيانات الحساب أو عناوين قوائم التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV: Apple TV पर वाई-फाई का विकल्प क्यों गायब हो सकता है?",
+      "excerpt": "Apple TV पर वाई-फाई विकल्प न दिखने की वजह ईथरनेट केबल हो सकती है। प्लेयर बदलने या सहेजे नेटवर्क हटाने से पहले मौजूदा कनेक्शन देखें।",
+      "seo_title": "Geo IPTV के लिए Apple TV का ईथरनेट या वाई-फाई जाँचें",
+      "seo_description": "Geo IPTV के लिए Apple TV का कनेक्शन देखें, समझें कि ईथरनेट वाई-फाई विकल्प क्यों छिपाता है और सेटिंग बदलने से पहले उपयोगी जानकारी लिखें।",
+      "sections": [
+        {
+          "heading": "देखें कि Apple TV कौन सा कनेक्शन इस्तेमाल कर रहा है",
+          "paragraphs": [
+            "Geo IPTV के नेटवर्क की जाँच प्लेयर के बजाय डिवाइस से शुरू करें। Apple TV का सही मॉडल पहचानें और, यदि उस मॉडल में पोर्ट हो, तो ईथरनेट केबल देखें। Apple बताता है कि जुड़ी ईथरनेट केबल अपने आप वाई-फाई की जगह इस्तेमाल होती है; केबल लगी होने पर वायरलेस नेटवर्क चुनने का विकल्प नहीं दिखता। इसलिए केवल यह मेनू गायब होना प्लेयर या सब्सक्रिप्शन की खराबी का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV पर वाई-फाई और ईथरनेट कनेक्शन",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "तय करें कि वास्तव में बदलना चाहते हैं या नहीं",
+          "paragraphs": [
+            "यदि चल रहा केबल कनेक्शन बदलना नहीं चाहते तो उसे रहने दें। ईथरनेट से वाई-फाई पर जाने के लिए Apple केबल हटाकर वायरलेस विकल्प उपलब्ध होने तक इंतज़ार करने को कहता है। सेटिंग खोलें, फिर नेटवर्क में इच्छित वाई-फाई चुनें। उसका पासवर्ड निजी तौर पर अपने पास रखें। केवल मेनू दिखाने के लिए सहेजे नेटवर्क न मिटाएँ और डिवाइस रीसेट न करें। आगे बढ़ने से पहले अपने मॉडल की हिदायतें देखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "नतीजा बताएँ, सेवा बंद होने का अनुमान न लगाएँ",
+          "paragraphs": [
+            "कनेक्शन का प्रकार, Apple TV मॉडल और ठीक स्क्रीन या त्रुटि लिखें। उसी डिवाइस पर इंटरनेट वाली कोई दूसरी परिचित ऐप जाँचें। कई ऐप विफल हों तो वह व्यापक लक्षण बताएँ; केवल वीडियो न चले तो प्लेयर और कार्यक्रम खोलने का चरण अलग लिखें। नेटवर्क चुना होना इंटरनेट या किसी खास सेवा के चलने का प्रमाण नहीं है। ये बातें Geo IPTV सहायता को बताएँ, पर वाई-फाई पासवर्ड, खाते की जानकारी या निजी प्लेलिस्ट पते न दें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: Wi-Fi and Ethernet connections on Apple TV",
+      "url": "https://support.apple.com/en-us/102346"
+    }
+  ]
+}
