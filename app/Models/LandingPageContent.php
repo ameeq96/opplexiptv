@@ -13,6 +13,7 @@ class LandingPageContent extends Model
         '5g' => '5G Live IPTV',
         'iptvsubscription' => 'IPTV Subscription',
         'getiptv' => 'Get IPTV',
+        'cheapaccounts' => 'Cheap Accounts',
     ];
 
     protected $fillable = [

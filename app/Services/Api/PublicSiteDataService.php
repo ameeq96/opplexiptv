@@ -48,6 +48,7 @@ class PublicSiteDataService
         ]],
         'iptvsubscription' => ['name' => 'IPTV Subscription', 'plans' => [], 'selectable_providers' => true, 'email' => 'support@iptvsubscription.shop'],
         'getiptv' => ['name' => 'Get IPTV', 'plans' => [], 'selectable_providers' => true, 'email' => 'support@getiptv.store'],
+        'cheapaccounts' => ['name' => 'Cheap Accounts', 'plans' => [], 'selectable_providers' => true],
     ];
 
     public function __construct(

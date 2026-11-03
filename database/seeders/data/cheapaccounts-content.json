@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "brand": "cheapaccounts",
+  "locales": {
+    "en": {
+      "hero_heading": "Digital plans. Clear choices.",
+      "hero_description": "At Cheap Accounts, compare current Opplex and Filex IPTV plans without losing sight of the provider, subscription length or full amount. Review your selection here, then continue to Opplexify for checkout. ChatGPT, Netflix and HBO Max categories are coming soon.",
+      "guide_heading": "A clear route from browsing to checkout",
+      "guide_intro": "Start with the product that is available today. A category name alone does not mean that orders, stock or pricing are available.",
+      "guide_sections": [
+        {
+          "heading": "Choose a provider and subscription length",
+          "body": "Compare Opplex and Filex as separate services. Check the exact plan and your device or player requirements before selecting a term. Opplex has one simultaneous connection; confirm the Filex allowance with support."
+        },
+        {
+          "heading": "Review one plan at a time",
+          "body": "The cart supports one plan per checkout. Review the current API price and availability, and check any separate player licence or fee. Replacing the selection changes the plan being prepared for payment."
+        },
+        {
+          "heading": "Continue on Opplexify",
+          "body": "Checkout opens through the central Opplex website and then Opplexify. Confirm the provider, duration, currency and final total there. If an earlier payment is unclear, check that order before starting another."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I order ChatGPT, Netflix or HBO Max now?",
+          "answer": "No. These categories are marked Coming soon. Product details, prices and availability have not been published, and checkout is disabled for them."
+        },
+        {
+          "question": "Where do the IPTV prices come from?",
+          "answer": "Current Opplex and Filex plans come from the main Opplex catalogue. The price is checked again before checkout; Opplexify shows the final payment details."
+        },
+        {
+          "question": "Does a plan include the player app?",
+          "answer": "Do not assume that a player licence or app purchase is included. Check the developer's terms and confirm the exact device and player with support."
+        },
+        {
+          "question": "Who helps with an existing order?",
+          "answer": "Shared support is provided by Opplex IPTV Subscription Services. Use the central private account with your purchase email and keep passwords, payment codes and private access links out of public messages."
+        }
+      ],
+      "highlights": [
+        "Current Opplex and Filex plans",
+        "One plan per Opplexify checkout",
+        "Other categories clearly marked Coming soon"
+      ],
+      "is_published": true
+    },
+    "es": {
+      "hero_heading": "Planes digitales. Opciones claras.",
+      "hero_description": "En Cheap Accounts, compara los planes IPTV actuales de Opplex y Filex teniendo presentes el proveedor, la duración y el importe completo. Revisa tu selección aquí y continúa a Opplexify para pagar. Las categorías ChatGPT, Netflix y HBO Max estarán disponibles próximamente.",
+      "guide_heading": "Un recorrido claro hasta el pago",
+      "guide_intro": "Empieza por el producto que está disponible hoy. El nombre de una categoría no significa que ya haya pedidos, existencias o precios disponibles.",
+      "guide_sections": [
+        {
+          "heading": "Elige proveedor y duración",
+          "body": "Compara Opplex y Filex como servicios distintos. Revisa el plan concreto y los requisitos de tu dispositivo o reproductor antes de elegir la duración. Opplex permite una conexión simultánea; confirma el límite de Filex con soporte."
+        },
+        {
+          "heading": "Revisa un plan cada vez",
+          "body": "El carrito admite un plan por compra. Revisa el precio y la disponibilidad actuales de la API, además de cualquier licencia o coste independiente del reproductor. Sustituir la selección cambia el plan preparado para el pago."
+        },
+        {
+          "heading": "Continúa en Opplexify",
+          "body": "El pago se abre a través de la web central de Opplex y después Opplexify. Confirma allí proveedor, duración, moneda e importe final. Si un pago anterior no está claro, comprueba ese pedido antes de iniciar otro."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "¿Puedo pedir ChatGPT, Netflix o HBO Max ahora?",
+          "answer": "No. Estas categorías indican Próximamente. Sus productos, precios y disponibilidad no se han publicado y no admiten pagos."
+        },
+        {
+          "question": "¿De dónde salen los precios de IPTV?",
+          "answer": "Los planes actuales de Opplex y Filex proceden del catálogo principal de Opplex. El precio se comprueba otra vez antes de continuar; Opplexify muestra los detalles finales del pago."
+        },
+        {
+          "question": "¿El plan incluye la aplicación reproductora?",
+          "answer": "No des por incluida una licencia o compra de aplicación. Consulta las condiciones del desarrollador y confirma con soporte el dispositivo y reproductor concretos."
+        },
+        {
+          "question": "¿Quién ayuda con un pedido existente?",
+          "answer": "El soporte compartido lo presta Opplex IPTV Subscription Services. Accede a la cuenta privada central con el correo de compra y no publiques contraseñas, códigos de pago ni enlaces privados de acceso."
+        }
+      ],
+      "highlights": [
+        "Planes actuales de Opplex y Filex",
+        "Un plan por compra en Opplexify",
+        "Otras categorías marcadas Próximamente"
+      ],
+      "is_published": true
+    },
+    "fr": {
+      "hero_heading": "Des offres numériques. Un choix clair.",
+      "hero_description": "Chez Cheap Accounts, comparez les offres IPTV actuelles d’Opplex et de Filex en gardant le fournisseur, la durée et le montant total en vue. Vérifiez votre sélection ici, puis poursuivez sur Opplexify pour payer. Les catégories ChatGPT, Netflix et HBO Max arrivent prochainement.",
+      "guide_heading": "Un parcours clair jusqu’au paiement",
+      "guide_intro": "Commencez par un produit disponible aujourd’hui. Le nom d’une catégorie ne signifie pas que les commandes, les stocks ou les tarifs sont déjà proposés.",
+      "guide_sections": [
+        {
+          "heading": "Choisissez le fournisseur et la durée",
+          "body": "Comparez Opplex et Filex comme deux services distincts. Vérifiez l’offre exacte et les exigences de votre appareil ou lecteur avant de choisir une durée. Opplex autorise une connexion simultanée ; demandez confirmation pour Filex."
+        },
+        {
+          "heading": "Vérifiez une offre à la fois",
+          "body": "Le panier accepte une offre par paiement. Vérifiez le prix et la disponibilité actuels fournis par l’API, ainsi que toute licence ou dépense séparée pour le lecteur. Remplacer la sélection change l’offre préparée pour le paiement."
+        },
+        {
+          "heading": "Poursuivez sur Opplexify",
+          "body": "Le paiement passe par le site central Opplex, puis Opplexify. Vérifiez le fournisseur, la durée, la devise et le total final. Si un paiement précédent est incertain, consultez cette commande avant d’en commencer un autre."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je commander ChatGPT, Netflix ou HBO Max maintenant ?",
+          "answer": "Non. Ces catégories portent la mention Bientôt disponible. Leurs produits, prix et disponibilités ne sont pas publiés et le paiement y est désactivé."
+        },
+        {
+          "question": "D’où viennent les prix IPTV ?",
+          "answer": "Les offres actuelles Opplex et Filex proviennent du catalogue principal Opplex. Le prix est revérifié avant de poursuivre ; Opplexify présente les détails définitifs du paiement."
+        },
+        {
+          "question": "L’offre comprend-elle l’application du lecteur ?",
+          "answer": "Ne supposez pas qu’une licence ou un achat d’application est inclus. Consultez les conditions du développeur et confirmez l’appareil et le lecteur exacts avec l’assistance."
+        },
+        {
+          "question": "Qui peut aider pour une commande existante ?",
+          "answer": "L’assistance commune est assurée par Opplex IPTV Subscription Services. Utilisez le compte privé central avec l’adresse de commande, sans publier mots de passe, codes de paiement ni liens d’accès privés."
+        }
+      ],
+      "highlights": [
+        "Offres Opplex et Filex actuelles",
+        "Une offre par paiement Opplexify",
+        "Autres catégories annoncées pour bientôt"
+      ],
+      "is_published": true
+    },
+    "it": {
+      "hero_heading": "Piani digitali. Scelte chiare.",
+      "hero_description": "Su Cheap Accounts confronta gli attuali abbonamenti IPTV Opplex e Filex senza perdere di vista fornitore, durata e importo completo. Rivedi qui la scelta, poi passa a Opplexify per il pagamento. Le categorie ChatGPT, Netflix e HBO Max sono in arrivo.",
+      "guide_heading": "Un percorso chiaro fino al pagamento",
+      "guide_intro": "Parti da un prodotto disponibile oggi. Il nome di una categoria non significa che siano già disponibili ordini, scorte o prezzi.",
+      "guide_sections": [
+        {
+          "heading": "Scegli fornitore e durata",
+          "body": "Confronta Opplex e Filex come servizi distinti. Verifica il piano preciso e i requisiti di dispositivo e lettore prima di scegliere il periodo. Opplex prevede una connessione simultanea; chiedi conferma del limite Filex all’assistenza."
+        },
+        {
+          "heading": "Rivedi un piano alla volta",
+          "body": "Il carrello gestisce un piano per pagamento. Controlla prezzo e disponibilità attuali dell’API, oltre a eventuali licenze o costi separati del lettore. Sostituire la selezione cambia il piano preparato per il pagamento."
+        },
+        {
+          "heading": "Continua su Opplexify",
+          "body": "Il pagamento passa dal sito centrale Opplex a Opplexify. Conferma fornitore, durata, valuta e totale finale. Se un pagamento precedente è poco chiaro, controlla quell’ordine prima di avviarne un altro."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Posso ordinare ora ChatGPT, Netflix o HBO Max?",
+          "answer": "No. Queste categorie riportano In arrivo. Prodotti, prezzi e disponibilità non sono stati pubblicati e il pagamento è disattivato."
+        },
+        {
+          "question": "Da dove arrivano i prezzi IPTV?",
+          "answer": "I piani attuali Opplex e Filex provengono dal catalogo principale Opplex. Il prezzo viene ricontrollato prima di proseguire; Opplexify mostra i dettagli finali del pagamento."
+        },
+        {
+          "question": "Il piano include l’app del lettore?",
+          "answer": "Non presumere che siano inclusi una licenza o l’acquisto dell’app. Leggi le condizioni dello sviluppatore e conferma con l’assistenza il dispositivo e il lettore esatti."
+        },
+        {
+          "question": "Chi aiuta per un ordine già effettuato?",
+          "answer": "L’assistenza condivisa è fornita da Opplex IPTV Subscription Services. Usa l’account privato centrale con l’email d’acquisto e non pubblicare password, codici di pagamento o link di accesso privati."
+        }
+      ],
+      "highlights": [
+        "Piani attuali Opplex e Filex",
+        "Un piano per pagamento su Opplexify",
+        "Altre categorie indicate come In arrivo"
+      ],
+      "is_published": true
+    },
+    "nl": {
+      "hero_heading": "Digitale abonnementen. Duidelijke keuzes.",
+      "hero_description": "Vergelijk bij Cheap Accounts de huidige IPTV-abonnementen van Opplex en Filex met aanbieder, looptijd en totaalbedrag in beeld. Controleer hier je keuze en ga daarna naar Opplexify om af te rekenen. ChatGPT, Netflix en HBO Max volgen binnenkort.",
+      "guide_heading": "Een duidelijk pad naar afrekenen",
+      "guide_intro": "Begin met een product dat vandaag beschikbaar is. Een categorienaam betekent niet dat bestellen, voorraad of prijzen al beschikbaar zijn.",
+      "guide_sections": [
+        {
+          "heading": "Kies aanbieder en looptijd",
+          "body": "Vergelijk Opplex en Filex als afzonderlijke diensten. Controleer het exacte abonnement en de eisen van je apparaat en speler voordat je een looptijd kiest. Opplex heeft één gelijktijdige verbinding; vraag ondersteuning naar de limiet van Filex."
+        },
+        {
+          "heading": "Controleer één abonnement tegelijk",
+          "body": "De winkelwagen ondersteunt één abonnement per betaling. Bekijk de actuele API-prijs en beschikbaarheid en eventuele afzonderlijke spelerlicenties of kosten. Een andere selectie vervangt het abonnement dat voor betaling wordt voorbereid."
+        },
+        {
+          "heading": "Ga verder op Opplexify",
+          "body": "Afrekenen loopt via de centrale Opplex-website naar Opplexify. Controleer aanbieder, looptijd, valuta en eindtotaal. Is een eerdere betaling onduidelijk, controleer dan die bestelling voordat je opnieuw begint."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Kan ik ChatGPT, Netflix of HBO Max nu bestellen?",
+          "answer": "Nee. Deze categorieën zijn gemarkeerd als Binnenkort. Productdetails, prijzen en beschikbaarheid zijn niet gepubliceerd en afrekenen is uitgeschakeld."
+        },
+        {
+          "question": "Waar komen de IPTV-prijzen vandaan?",
+          "answer": "De actuele Opplex- en Filex-abonnementen komen uit de centrale Opplex-catalogus. De prijs wordt voor afrekenen opnieuw gecontroleerd; Opplexify toont de definitieve betaalgegevens."
+        },
+        {
+          "question": "Is de spelerapp inbegrepen?",
+          "answer": "Ga er niet van uit dat een appaankoop of spelerlicentie inbegrepen is. Lees de voorwaarden van de ontwikkelaar en bespreek het exacte apparaat en de speler met ondersteuning."
+        },
+        {
+          "question": "Wie helpt met een bestaande bestelling?",
+          "answer": "De gezamenlijke ondersteuning wordt verzorgd door Opplex IPTV Subscription Services. Gebruik het centrale privéaccount met je aankoopmailadres en publiceer geen wachtwoorden, betaalcodes of privétoegangslinks."
+        }
+      ],
+      "highlights": [
+        "Actuele Opplex- en Filex-abonnementen",
+        "Eén abonnement per Opplexify-betaling",
+        "Overige categorieën duidelijk als Binnenkort"
+      ],
+      "is_published": true
+    },
+    "pt": {
+      "hero_heading": "Planos digitais. Escolhas claras.",
+      "hero_description": "Na Cheap Accounts, compare os planos IPTV atuais da Opplex e Filex sem perder de vista o fornecedor, a duração e o valor total. Reveja a seleção aqui e siga para a Opplexify para pagar. As categorias ChatGPT, Netflix e HBO Max chegam em breve.",
+      "guide_heading": "Um caminho claro até ao pagamento",
+      "guide_intro": "Comece por um produto disponível hoje. O nome de uma categoria não significa que já existam encomendas, stock ou preços disponíveis.",
+      "guide_sections": [
+        {
+          "heading": "Escolha o fornecedor e a duração",
+          "body": "Compare Opplex e Filex como serviços separados. Confirme o plano exato e os requisitos do dispositivo e do leitor antes de escolher o período. A Opplex tem uma ligação simultânea; confirme o limite da Filex com o apoio."
+        },
+        {
+          "heading": "Reveja um plano de cada vez",
+          "body": "O carrinho aceita um plano por pagamento. Confirme o preço e a disponibilidade atuais da API e qualquer licença ou custo separado do leitor. Substituir a seleção muda o plano preparado para pagamento."
+        },
+        {
+          "heading": "Continue na Opplexify",
+          "body": "O pagamento passa pelo site central da Opplex e depois pela Opplexify. Confirme fornecedor, duração, moeda e total final. Se houver dúvidas sobre um pagamento anterior, consulte essa encomenda antes de iniciar outro."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Posso encomendar ChatGPT, Netflix ou HBO Max agora?",
+          "answer": "Não. Estas categorias estão marcadas Em breve. Produtos, preços e disponibilidade ainda não foram publicados e o pagamento está desativado."
+        },
+        {
+          "question": "De onde vêm os preços IPTV?",
+          "answer": "Os planos atuais da Opplex e Filex vêm do catálogo principal da Opplex. O preço é novamente verificado antes de avançar; a Opplexify apresenta os detalhes finais do pagamento."
+        },
+        {
+          "question": "O plano inclui a aplicação do leitor?",
+          "answer": "Não presuma que uma licença ou compra da aplicação está incluída. Leia as condições do programador e confirme o dispositivo e leitor exatos com o apoio."
+        },
+        {
+          "question": "Quem ajuda com uma encomenda existente?",
+          "answer": "O apoio partilhado é prestado pela Opplex IPTV Subscription Services. Use a conta privada central com o email de compra e não publique palavras-passe, códigos de pagamento ou ligações privadas de acesso."
+        }
+      ],
+      "highlights": [
+        "Planos atuais da Opplex e Filex",
+        "Um plano por pagamento na Opplexify",
+        "Outras categorias assinaladas Em breve"
+      ],
+      "is_published": true
+    },
+    "ru": {
+      "hero_heading": "Цифровые планы. Понятный выбор.",
+      "hero_description": "В Cheap Accounts сравнивайте действующие планы IPTV Opplex и Filex, учитывая поставщика, срок и полную сумму. Проверьте выбор здесь, затем переходите к оплате в Opplexify. Разделы ChatGPT, Netflix и HBO Max готовятся к запуску.",
+      "guide_heading": "Понятный путь от выбора до оплаты",
+      "guide_intro": "Начните с продукта, доступного сегодня. Название раздела само по себе не означает, что уже доступны заказы, остатки или цены.",
+      "guide_sections": [
+        {
+          "heading": "Выберите поставщика и срок",
+          "body": "Сравнивайте Opplex и Filex как отдельные услуги. До выбора срока проверьте конкретный план и требования устройства и плеера. У Opplex одно одновременное подключение; лимит Filex уточните у поддержки."
+        },
+        {
+          "heading": "Проверяйте один план за раз",
+          "body": "Корзина поддерживает один план на одну оплату. Проверьте актуальные цену и доступность из API, а также отдельную лицензию или стоимость плеера. Замена выбора меняет план, подготовленный к оплате."
+        },
+        {
+          "heading": "Продолжите в Opplexify",
+          "body": "Переход к оплате идет через центральный сайт Opplex в Opplexify. Проверьте поставщика, срок, валюту и итоговую сумму. Если предыдущая оплата неясна, сначала проверьте тот заказ."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли сейчас заказать ChatGPT, Netflix или HBO Max?",
+          "answer": "Нет. Эти разделы отмечены как Скоро. Сведения о продуктах, цены и доступность пока не опубликованы, оформление заказа отключено."
+        },
+        {
+          "question": "Откуда берутся цены IPTV?",
+          "answer": "Действующие планы Opplex и Filex поступают из основного каталога Opplex. Перед переходом цена проверяется снова; окончательные платежные данные показывает Opplexify."
+        },
+        {
+          "question": "Входит ли приложение-плеер в план?",
+          "answer": "Не считайте лицензию или покупку приложения включенной автоматически. Прочтите условия разработчика и уточните у поддержки конкретное устройство и плеер."
+        },
+        {
+          "question": "Кто поможет с существующим заказом?",
+          "answer": "Общую поддержку оказывает Opplex IPTV Subscription Services. Используйте центральный личный кабинет с адресом покупки и не публикуйте пароли, платежные коды или личные ссылки доступа."
+        }
+      ],
+      "highlights": [
+        "Действующие планы Opplex и Filex",
+        "Один план на оплату в Opplexify",
+        "Остальные разделы явно помечены Скоро"
+      ],
+      "is_published": true
+    },
+    "ur": {
+      "hero_heading": "ڈیجیٹل پلانز۔ واضح انتخاب۔",
+      "hero_description": "Cheap Accounts پر Opplex اور Filex کے موجودہ IPTV پلانز کا موازنہ کرتے وقت فراہم کنندہ، مدت اور پوری رقم سامنے رکھیں۔ یہاں انتخاب کا جائزہ لیں، پھر ادائیگی کے لیے Opplexify پر جائیں۔ ChatGPT، Netflix اور HBO Max کی کیٹیگریز جلد آ رہی ہیں۔",
+      "guide_heading": "انتخاب سے ادائیگی تک واضح راستہ",
+      "guide_intro": "اس پراڈکٹ سے شروع کریں جو آج دستیاب ہے۔ صرف کیٹیگری کا نام موجود ہونے سے آرڈر، اسٹاک یا قیمت دستیاب ہونا ثابت نہیں ہوتا۔",
+      "guide_sections": [
+        {
+          "heading": "فراہم کنندہ اور مدت منتخب کریں",
+          "body": "Opplex اور Filex کا الگ خدمات کے طور پر موازنہ کریں۔ مدت چننے سے پہلے اصل پلان اور اپنے آلے اور پلیئر کے تقاضے دیکھیں۔ Opplex پر ایک بیک وقت کنکشن ہے؛ Filex کی حد سپورٹ سے تصدیق کریں۔"
+        },
+        {
+          "heading": "ایک وقت میں ایک پلان دیکھیں",
+          "body": "کارٹ میں فی ادائیگی ایک پلان رکھا جاتا ہے۔ API سے آنے والی موجودہ قیمت اور دستیابی کے ساتھ پلیئر کی الگ لائسنس فیس بھی دیکھیں۔ انتخاب بدلنے سے ادائیگی کے لیے تیار کیا گیا پلان بدل جائے گا۔"
+        },
+        {
+          "heading": "Opplexify پر آگے بڑھیں",
+          "body": "چیک آؤٹ مرکزی Opplex ویب سائٹ کے ذریعے Opplexify پر کھلتا ہے۔ وہاں فراہم کنندہ، مدت، کرنسی اور حتمی رقم دیکھیں۔ پچھلی ادائیگی واضح نہ ہو تو نئی شروع کرنے سے پہلے وہ آرڈر چیک کریں۔"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "کیا ابھی ChatGPT، Netflix یا HBO Max آرڈر کر سکتا ہوں؟",
+          "answer": "نہیں۔ ان کیٹیگریز پر جلد آ رہا ہے لکھا ہے۔ پراڈکٹس، قیمتیں اور دستیابی ابھی شائع نہیں ہوئیں اور ان کی ادائیگی بند ہے۔"
+        },
+        {
+          "question": "IPTV کی قیمتیں کہاں سے آتی ہیں؟",
+          "answer": "Opplex اور Filex کے موجودہ پلانز مرکزی Opplex کیٹلاگ سے آتے ہیں۔ آگے بڑھنے سے پہلے قیمت دوبارہ دیکھی جاتی ہے؛ Opplexify حتمی ادائیگی کی تفصیل دکھاتا ہے۔"
+        },
+        {
+          "question": "کیا پلان میں پلیئر ایپ شامل ہے؟",
+          "answer": "ایپ کی خریداری یا پلیئر لائسنس کو خود بخود شامل نہ سمجھیں۔ ڈویلپر کی شرائط پڑھیں اور اپنے اصل آلے اور پلیئر کی سپورٹ سے تصدیق کریں۔"
+        },
+        {
+          "question": "پہلے سے موجود آرڈر میں کون مدد کرے گا؟",
+          "answer": "مشترکہ سپورٹ Opplex IPTV Subscription Services فراہم کرتی ہے۔ خریداری والی ای میل سے مرکزی نجی اکاؤنٹ کھولیں اور عوامی پیغامات میں پاس ورڈ، ادائیگی کے کوڈ یا نجی رسائی کے لنکس نہ دیں۔"
+        }
+      ],
+      "highlights": [
+        "Opplex اور Filex کے موجودہ پلانز",
+        "ہر Opplexify ادائیگی میں ایک پلان",
+        "دیگر کیٹیگریز پر واضح جلد آ رہا ہے نشان"
+      ],
+      "is_published": true
+    },
+    "ar": {
+      "hero_heading": "خطط رقمية. خيارات واضحة.",
+      "hero_description": "قارن في Cheap Accounts خطط IPTV الحالية من Opplex وFilex مع إبقاء المزوّد والمدة والمبلغ الكامل أمامك. راجع اختيارك هنا ثم تابع إلى Opplexify للدفع. أقسام ChatGPT وNetflix وHBO Max قادمة قريباً.",
+      "guide_heading": "مسار واضح من التصفح إلى الدفع",
+      "guide_intro": "ابدأ بمنتج متاح اليوم. وجود اسم قسم لا يعني أن الطلبات أو المخزون أو الأسعار متاحة بالفعل.",
+      "guide_sections": [
+        {
+          "heading": "اختر المزوّد ومدة الاشتراك",
+          "body": "قارن Opplex وFilex كخدمتين منفصلتين. تحقق من الخطة المحددة ومتطلبات جهازك ومشغّلك قبل اختيار المدة. يتيح Opplex اتصالاً متزامناً واحداً؛ وأكّد حد Filex مع الدعم."
+        },
+        {
+          "heading": "راجع خطة واحدة في كل مرة",
+          "body": "تدعم السلة خطة واحدة لكل عملية دفع. راجع السعر والتوافر الحاليين من API وأي ترخيص أو رسوم منفصلة للمشغّل. استبدال الاختيار يغيّر الخطة التي يجري إعدادها للدفع."
+        },
+        {
+          "heading": "تابع على Opplexify",
+          "body": "يفتح الدفع عبر موقع Opplex المركزي ثم Opplexify. أكّد المزوّد والمدة والعملة والإجمالي النهائي هناك. إذا كانت دفعة سابقة غير واضحة، فتحقق من طلبها قبل بدء دفعة أخرى."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن طلب ChatGPT أو Netflix أو HBO Max الآن؟",
+          "answer": "لا. تحمل هذه الأقسام عبارة قريباً. لم تُنشر المنتجات أو الأسعار أو التوافر بعد، والدفع معطّل لها."
+        },
+        {
+          "question": "من أين تأتي أسعار IPTV؟",
+          "answer": "تأتي خطط Opplex وFilex الحالية من كتالوج Opplex الرئيسي. يُراجع السعر مجدداً قبل المتابعة؛ ويعرض Opplexify تفاصيل الدفع النهائية."
+        },
+        {
+          "question": "هل تتضمن الخطة تطبيق المشغّل؟",
+          "answer": "لا تفترض أن ترخيص المشغّل أو شراء التطبيق مشمول. اقرأ شروط المطوّر وأكّد الجهاز والمشغّل المحددين مع الدعم."
+        },
+        {
+          "question": "من يساعد في طلب قائم؟",
+          "answer": "تقدّم Opplex IPTV Subscription Services الدعم المشترك. استخدم الحساب المركزي الخاص ببريد الشراء، ولا تنشر كلمات المرور أو رموز الدفع أو روابط الدخول الخاصة."
+        }
+      ],
+      "highlights": [
+        "خطط Opplex وFilex الحالية",
+        "خطة واحدة لكل دفعة على Opplexify",
+        "الأقسام الأخرى مميزة بوضوح كقريباً"
+      ],
+      "is_published": true
+    },
+    "hi": {
+      "hero_heading": "डिजिटल प्लान। स्पष्ट विकल्प।",
+      "hero_description": "Cheap Accounts पर Opplex और Filex के मौजूदा IPTV प्लान की तुलना करते समय प्रदाता, अवधि और पूरी रकम सामने रखें। यहाँ चयन देखें, फिर भुगतान के लिए Opplexify पर जाएँ। ChatGPT, Netflix और HBO Max की श्रेणियाँ जल्द आ रही हैं।",
+      "guide_heading": "चयन से भुगतान तक स्पष्ट रास्ता",
+      "guide_intro": "उस उत्पाद से शुरू करें जो आज उपलब्ध है। केवल श्रेणी का नाम दिखने से ऑर्डर, स्टॉक या कीमत उपलब्ध नहीं हो जाती।",
+      "guide_sections": [
+        {
+          "heading": "प्रदाता और सदस्यता अवधि चुनें",
+          "body": "Opplex और Filex की अलग सेवाओं के रूप में तुलना करें। अवधि चुनने से पहले सही प्लान और अपने डिवाइस व प्लेयर की ज़रूरतें जाँचें। Opplex में एक साथ एक कनेक्शन है; Filex की सीमा सहायता से पूछें।"
+        },
+        {
+          "heading": "एक समय में एक प्लान देखें",
+          "body": "कार्ट में हर भुगतान के लिए एक प्लान रहता है। API से आई मौजूदा कीमत और उपलब्धता के साथ प्लेयर की अलग लाइसेंस फ़ीस भी देखें। चयन बदलने से भुगतान के लिए तैयार प्लान बदल जाएगा।"
+        },
+        {
+          "heading": "Opplexify पर आगे बढ़ें",
+          "body": "चेकआउट मुख्य Opplex वेबसाइट के रास्ते Opplexify पर खुलता है। वहाँ प्रदाता, अवधि, मुद्रा और अंतिम कुल जाँचें। पुराना भुगतान स्पष्ट न हो तो नया शुरू करने से पहले उस ऑर्डर को देखें।"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "क्या अभी ChatGPT, Netflix या HBO Max ऑर्डर कर सकता हूँ?",
+          "answer": "नहीं। इन श्रेणियों पर जल्द आ रहा है लिखा है। उत्पाद, कीमतें और उपलब्धता अभी प्रकाशित नहीं हुई हैं और उनके लिए भुगतान बंद है।"
+        },
+        {
+          "question": "IPTV की कीमतें कहाँ से आती हैं?",
+          "answer": "Opplex और Filex के मौजूदा प्लान मुख्य Opplex कैटलॉग से आते हैं। आगे जाने से पहले कीमत फिर जाँची जाती है; Opplexify अंतिम भुगतान विवरण दिखाता है।"
+        },
+        {
+          "question": "क्या प्लान में प्लेयर ऐप शामिल है?",
+          "answer": "ऐप की खरीद या प्लेयर लाइसेंस को अपने आप शामिल न मानें। डेवलपर की शर्तें पढ़ें और अपने सही डिवाइस व प्लेयर की सहायता से पुष्टि करें।"
+        },
+        {
+          "question": "मौजूदा ऑर्डर में कौन मदद करेगा?",
+          "answer": "साझा सहायता Opplex IPTV Subscription Services देता है। खरीद वाली ईमेल से मुख्य निजी खाता खोलें और सार्वजनिक संदेशों में पासवर्ड, भुगतान कोड या निजी प्रवेश लिंक न दें।"
+        }
+      ],
+      "highlights": [
+        "Opplex और Filex के मौजूदा प्लान",
+        "हर Opplexify भुगतान में एक प्लान",
+        "अन्य श्रेणियों पर स्पष्ट जल्द आ रहा है संकेत"
+      ],
+      "is_published": true
+    }
+  }
+}
