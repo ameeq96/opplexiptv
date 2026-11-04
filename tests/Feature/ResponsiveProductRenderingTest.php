@@ -67,7 +67,7 @@ class ResponsiveProductRenderingTest extends TestCase
         );
 
         Cache::flush();
-        $shop = $this->get('/shop');
+        $shop = $this->get('/store');
         $shop->assertOk();
         $this->assertMatchesRegularExpression(
             '/<picture class="product-picture">.*?netflix-webp-320\.avif 320w.*?src="[^"]*\/images\/digital-products\/netflix\.webp"/s',

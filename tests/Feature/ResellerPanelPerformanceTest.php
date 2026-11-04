@@ -12,7 +12,7 @@ class ResellerPanelPerformanceTest extends TestCase
 
     public function test_english_reseller_panel_links_cacheable_styles_and_uses_native_interactions(): void
     {
-        $response = $this->get('/reseller-panel');
+        $response = $this->get('/reseller-plans');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -56,7 +56,7 @@ class ResellerPanelPerformanceTest extends TestCase
     {
         app()->setLocale('es');
 
-        $response = $this->get('/reseller-panel');
+        $response = $this->get('/reseller-plans');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -85,7 +85,7 @@ class ResellerPanelPerformanceTest extends TestCase
 
         app()->setLocale('ur');
 
-        $rtlResponse = $this->get('/reseller-panel');
+        $rtlResponse = $this->get('/reseller-plans');
         $rtlResponse->assertOk();
         $this->assertStringContainsString('data-rtl="true"', $rtlResponse->getContent());
     }

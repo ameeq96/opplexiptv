@@ -94,7 +94,18 @@
                                         array_shift($segments);
                                     }
 
-                                    return implode('/', $segments);
+                                    $semanticSlugs = [
+                                        'home' => '', 'about-us' => 'about', 'activation' => 'activate',
+                                        'activation-guide' => 'activate-info', 'articles' => 'blogs',
+                                        'contact-us' => 'contact', 'help-center' => 'faqs',
+                                        'iptv-player-apps' => 'iptv-applications', 'entertainment-catalogue' => 'movies',
+                                        'subscription-plans' => 'packages', 'subscription-pricing' => 'pricing',
+                                        'privacy-notice' => 'privacy-policy', 'refund-terms' => 'refund-policy',
+                                        'reseller-plans' => 'reseller-panel', 'store' => 'shop',
+                                        'terms-and-conditions' => 'terms-of-service',
+                                    ];
+                                    $path = implode('/', $segments);
+                                    return $semanticSlugs[$path] ?? $path;
                                 };
                                 $currentMenuPath = $normaliseMenuPath(request()->path());
                                 $menuUrlIsActive = static function ($url) use ($currentMenuPath, $normaliseMenuPath): bool {
@@ -178,7 +189,7 @@
                                                 foreach ($children as $childCheck) {
                                                     $childLabel = $norm($childCheck['label'] ?? '');
                                                     $childUrl = trim((string) ($childCheck['url'] ?? ''));
-                                                    if ($childLabel === 'shop' || str_contains($childUrl, '/shop')) {
+                                                    if ($childLabel === 'shop' || str_contains($childUrl, '/shop') || $normaliseMenuPath(parse_url($childUrl, PHP_URL_PATH)) === 'shop') {
                                                         $hasShop = true;
                                                         break;
                                                     }
@@ -198,7 +209,7 @@
                                                 foreach ($children as $child) {
                                                     $childLabel = $norm($child['label'] ?? '');
                                                     $childUrl = trim((string) ($child['url'] ?? ''));
-                                                    $isBlogs = in_array($childLabel, $blogLabels, true) || str_contains($childUrl, '/blogs');
+                                                    $isBlogs = in_array($childLabel, $blogLabels, true) || str_contains($childUrl, '/blogs') || $normaliseMenuPath(parse_url($childUrl, PHP_URL_PATH)) === 'blogs';
 
                                                     if ($isBlogs) {
                                                         $headerItems[] = [
@@ -237,7 +248,7 @@
                                                 $childLabelNorm = mb_strtolower(trim((string) ($child['label'] ?? '')));
                                                 $childUrl = trim((string) ($child['url'] ?? ''));
                                                 $isDuplicateShopChild = $isMore
-                                                    && ($childLabelNorm === 'shop' || str_contains($childUrl, '/shop'));
+                                                    && ($childLabelNorm === 'shop' || str_contains($childUrl, '/shop') || $normaliseMenuPath(parse_url($childUrl, PHP_URL_PATH)) === 'shop');
 
                                                 if (!$isDuplicateShopChild) {
                                                     $hasCurrentChild = true;

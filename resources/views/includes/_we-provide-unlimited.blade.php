@@ -423,7 +423,7 @@
                 <div class="unlimited-showcase__content" dir="{{ $isRtl ? 'rtl' : 'ltr' }}" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                     <div class="unlimited-showcase__eyebrow">{{ $isDocumentEnglishUnlimited ? $documentUnlimited['eyebrow'] : __('messages.home_unlimited_eyebrow') }}</div>
                     <h3 aria-label="{{ __('document_ui.home.network_heading_aria') }}">{{ $isDocumentEnglishUnlimited ? $documentUnlimited['heading'] : __('messages.network_heading') }}</h3>
-                    @unless (request()->routeIs('home') || request()->is('/') || request()->routeIs('about') || request()->is('reseller-panel'))
+                    @unless (request()->routeIs('home') || request()->is('/') || request()->routeIs('about') || request()->is('reseller-panel', 'reseller-plans'))
                         <h3 class="h6" aria-label="{{ __('document_ui.home.network_heading_aria') }}">{{ __('messages.subheadingiptv') }}</h3>
                     @endunless
                     <p class="unlimited-showcase__intro">{{ $isDocumentEnglishUnlimited ? $documentUnlimited['intro'] : __('messages.home_unlimited_intro') }}</p>

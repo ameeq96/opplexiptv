@@ -200,23 +200,23 @@ Route::group(
         ]
     ],
     function () {
-        Route::get('/',               [HomeController::class, 'home'])->name('home');
-        Route::get('about',           [HomeController::class, 'about'])->name('about');
-        Route::get('faqs',            [HomeController::class, 'faq'])->name('faqs');
-        Route::get('activate',        [HomeController::class, 'activate'])->name('activate');
-        Route::get('activate-info',   [HomeController::class, 'activateInfo'])->name('activate-info');
-        Route::get('contact',         [HomeController::class, 'contact'])->name('contact');
-        Route::get('pricing',         [HomeController::class, 'pricing'])->name('pricing');
-        Route::get('movies',          [HomeController::class, 'movies'])->name('movies');
-        Route::get('packages',        [HomeController::class, 'packages'])->name('packages');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.home'), [HomeController::class, 'home'])->name('home');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.about'), [HomeController::class, 'about'])->name('about');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.faqs'), [HomeController::class, 'faq'])->name('faqs');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.activate'), [HomeController::class, 'activate'])->name('activate');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.activate-info'), [HomeController::class, 'activateInfo'])->name('activate-info');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.contact'), [HomeController::class, 'contact'])->name('contact');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.pricing'), [HomeController::class, 'pricing'])->name('pricing');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.movies'), [HomeController::class, 'movies'])->name('movies');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.packages'), [HomeController::class, 'packages'])->name('packages');
         Route::get('purchase/{package}', [HomeController::class, 'purchase'])
             ->whereNumber('package')
             ->middleware(['signed', 'throttle:30,1'])
             ->name('packages.purchase');
         Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
-        Route::get('reseller-panel',  [HomeController::class, 'resellerPanel'])->name('reseller-panel');
-        Route::get('iptv-applications', [HomeController::class, 'iptvApplications'])->name('iptv-applications');
-        Route::get('shop', [HomeController::class, 'shop'])->name('shop');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.reseller-panel'), [HomeController::class, 'resellerPanel'])->name('reseller-panel');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.iptv-applications'), [HomeController::class, 'iptvApplications'])->name('iptv-applications');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.shop'), [HomeController::class, 'shop'])->name('shop');
         Route::get('product-share/{type}/{id}', [HomeController::class, 'sharedProduct'])->name('products.share');
         /* ----- Digital-commerce public routes DISABLED (feature hidden) -----
         Route::get('digital-shop', [DigitalProductController::class, 'index'])->name('digital.shop');
@@ -231,14 +231,34 @@ Route::group(
         Route::get('digital-orders', [DigitalCustomerOrderController::class, 'index'])->name('digital.orders.index');
         Route::get('digital-orders/{digital_order}', [DigitalCustomerOrderController::class, 'show'])->name('digital.orders.show');
         ------------------------------------------------------------------- */
-        Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
+        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.blogs.index'), [BlogController::class, 'index'])->name('blogs.index');
         Route::get('blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 
         Route::get('redirect',        [HomeController::class, 'redirect'])->name('redirect.ad');
 
-        Route::view('terms-of-service', 'policies.terms')->name('terms-of-service');
-        Route::view('privacy-policy', 'policies.privacy')->name('privacy-policy');
-        Route::view('refund-policy', 'policies.refund')->name('refund-policy');
+        Route::view(LaravelLocalization::transRoute('main_public_route_slugs.terms-of-service'), 'policies.terms')->name('terms-of-service');
+        Route::view(LaravelLocalization::transRoute('main_public_route_slugs.privacy-policy'), 'policies.privacy')->name('privacy-policy');
+        Route::view(LaravelLocalization::transRoute('main_public_route_slugs.refund-policy'), 'policies.refund')->name('refund-policy');
+
+        $legacyPublicSlugs = [
+            '' => 'home', 'about' => 'about', 'faqs' => 'faqs', 'activate' => 'activate',
+            'activate-info' => 'activate-info', 'contact' => 'contact', 'pricing' => 'pricing',
+            'movies' => 'movies', 'packages' => 'packages', 'reseller-panel' => 'reseller-panel',
+            'iptv-applications' => 'iptv-applications', 'shop' => 'shop', 'blogs' => 'blogs.index',
+            'terms-of-service' => 'terms-of-service', 'privacy-policy' => 'privacy-policy',
+            'refund-policy' => 'refund-policy',
+        ];
+        foreach ($legacyPublicSlugs as $legacySlug => $routeName) {
+            $slug = LaravelLocalization::transRoute('main_public_route_slugs.'.$routeName);
+            if ($slug === $legacySlug) {
+                continue;
+            }
+            $destination = '/'.trim((string) LaravelLocalization::setLocale().'/'.$slug, '/');
+            Route::get($legacySlug, static function () use ($destination) {
+                $query = request()->getQueryString();
+                return redirect($destination.($query !== null ? '?'.$query : ''), 301);
+            });
+        }
 
         Route::get('configure',        [HomeController::class, 'configure'])->name('configure');
         Route::get('checkout',         [HomeController::class, 'checkoutStep1'])->name('checkout');

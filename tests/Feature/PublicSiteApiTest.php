@@ -67,7 +67,7 @@ class PublicSiteApiTest extends TestCase
     public function test_public_reads_keep_first_response_html_content_and_seo(): void
     {
         $payload = $this->get('/api/v1/site/pages/about')->assertOk()->json('data');
-        $response = $this->get('/about')->assertOk();
+        $response = $this->get('/about-us')->assertOk();
         $response->assertSeeText($payload['content']['hero']['heading'])
             ->assertSee($payload['meta']['title'])
             ->assertSee('application/ld+json', false)
@@ -77,6 +77,18 @@ class PublicSiteApiTest extends TestCase
     public function test_every_public_page_has_localized_structured_content(): void
     {
         $this->withoutMiddleware(\Illuminate\Routing\Middleware\ThrottleRequests::class);
+        $migratedPaths = [
+            'en' => ['about' => '/about-us', 'contact' => '/contact-us', 'pricing' => '/subscription-pricing', 'movies' => '/entertainment-catalogue', 'packages' => '/subscription-plans', 'shop' => '/store', 'reseller-panel' => '/reseller-plans', 'iptv-applications' => '/iptv-player-apps', 'faqs' => '/help-center', 'activate' => '/activation', 'activate-info' => '/activation-guide', 'terms-of-service' => '/terms-and-conditions', 'privacy-policy' => '/privacy-notice', 'refund-policy' => '/refund-terms'],
+            'es' => ['home' => '/es/home', 'about' => '/es/about-us', 'contact' => '/es/contact-us', 'pricing' => '/es/subscription-pricing', 'packages' => '/es/subscription-plans', 'shop' => '/es/store', 'reseller-panel' => '/es/reseller-plans', 'iptv-applications' => '/es/iptv-player-apps', 'faqs' => '/es/help-center', 'refund-policy' => '/es/refund-terms'],
+            'fr' => ['home' => '/fr/home', 'packages' => '/fr/subscription-plans', 'iptv-applications' => '/fr/iptv-player-apps', 'activate-info' => '/fr/activation-guide'],
+            'it' => ['home' => '/it/home', 'about' => '/it/about-us', 'pricing' => '/it/subscription-pricing', 'movies' => '/it/entertainment-catalogue', 'packages' => '/it/subscription-plans', 'shop' => '/it/store', 'reseller-panel' => '/it/reseller-plans', 'faqs' => '/it/help-center', 'privacy-policy' => '/it/privacy-notice'],
+            'nl' => ['home' => '/nl/home', 'about' => '/nl/about-us', 'movies' => '/nl/entertainment-catalogue', 'faqs' => '/nl/help-center', 'activate-info' => '/nl/activation-guide'],
+            'pt' => ['home' => '/pt/home', 'about' => '/pt/about-us', 'movies' => '/pt/entertainment-catalogue', 'shop' => '/pt/store', 'reseller-panel' => '/pt/reseller-plans', 'iptv-applications' => '/pt/iptv-player-apps'],
+            'ru' => ['home' => '/ru/home', 'pricing' => '/ru/subscription-pricing', 'movies' => '/ru/entertainment-catalogue', 'packages' => '/ru/subscription-plans', 'reseller-panel' => '/ru/reseller-plans', 'iptv-applications' => '/ru/iptv-player-apps', 'faqs' => '/ru/help-center', 'activate' => '/ru/activation', 'activate-info' => '/ru/activation-guide', 'refund-policy' => '/ru/refund-terms'],
+            'ur' => ['home' => '/ur/home', 'about' => '/ur/about-us', 'pricing' => '/ur/subscription-pricing', 'movies' => '/ur/entertainment-catalogue', 'faqs' => '/ur/help-center'],
+            'ar' => ['home' => '/ar/home', 'movies' => '/ar/entertainment-catalogue', 'iptv-applications' => '/ar/iptv-player-apps', 'faqs' => '/ar/help-center'],
+            'hi' => ['home' => '/hi/home', 'movies' => '/hi/entertainment-catalogue', 'packages' => '/hi/subscription-plans', 'faqs' => '/hi/help-center'],
+        ];
         foreach (array_keys(config('laravellocalization.supportedLocales')) as $locale) {
             foreach (\App\Services\Api\PublicSiteDataService::PAGES as $page) {
                 $response = $this->get('/api/v1/site/pages/'.$page.'?locale='.$locale)
@@ -85,7 +97,7 @@ class PublicSiteApiTest extends TestCase
                 $this->assertNotEmpty($response->json('data.content'), $locale.':'.$page);
                 $this->assertNotEmpty($response->json('data.meta.title'), $locale.':'.$page);
                 $prefix = $locale === 'en' ? '' : '/'.$locale;
-                $path = $page === 'home' ? $prefix : $prefix.'/'.$page;
+                $path = $migratedPaths[$locale][$page] ?? ($page === 'home' ? $prefix : $prefix.'/'.$page);
                 $this->assertSame($path, rtrim((string) parse_url($response->json('data.meta.canonical'), PHP_URL_PATH), '/'));
             }
         }
@@ -139,10 +151,10 @@ class PublicSiteApiTest extends TestCase
         $product = ShopProduct::create(['name' => 'Device', 'asin' => 'LOCALE-DEVICE', 'link' => 'https://example.test/device', 'image' => 'test.webp', 'is_active' => true]);
         \App\Models\MenuItem::create(['label' => 'About', 'url' => '/about', 'is_active' => true, 'sort_order' => 1]);
         $home = $this->get('/api/v1/site/pages/home?locale=it')->assertOk();
-        $this->assertSame('/it/packages', parse_url($home->json('data.features.0.link'), PHP_URL_PATH));
+        $this->assertSame('/it/subscription-plans', parse_url($home->json('data.features.0.link'), PHP_URL_PATH));
         $this->assertSame('direct=1', parse_url($home->json('data.features.0.link'), PHP_URL_QUERY));
         $this->assertSame('/it/contact', parse_url($home->json('data.features.3.link'), PHP_URL_PATH));
-        $this->assertSame('/it/about', parse_url($home->json('data.menuItems.0.url'), PHP_URL_PATH));
+        $this->assertSame('/it/about-us', parse_url($home->json('data.menuItems.0.url'), PHP_URL_PATH));
         $this->assertSame('/it/product-share/affiliate/'.$product->id, parse_url($home->json('data.homeAffiliateProducts.0.share_url'), PHP_URL_PATH));
         $products = $this->get('/api/v1/site/products?locale=it&type=affiliate')->assertOk();
         $this->assertSame('/it/product-share/affiliate/'.$product->id, parse_url($products->json('data.0.share_url'), PHP_URL_PATH));
@@ -150,7 +162,7 @@ class PublicSiteApiTest extends TestCase
         $detail = $this->get('/api/v1/site/products/affiliate/'.$product->id.'?locale=it')->assertOk();
         $this->assertSame('/it/product-share/affiliate/'.$product->id, parse_url($detail->json('data.pageCanonical'), PHP_URL_PATH));
         $english = $this->get('/api/v1/site/pages/home?locale=en')->assertOk();
-        $this->assertSame('/packages', parse_url($english->json('data.features.0.link'), PHP_URL_PATH));
+        $this->assertSame('/subscription-plans', parse_url($english->json('data.features.0.link'), PHP_URL_PATH));
     }
 
     public function test_localized_blog_links_and_schema_preserve_explicit_canonical_overrides(): void

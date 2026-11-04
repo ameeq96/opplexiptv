@@ -33,7 +33,7 @@ class BlogPerformanceTest extends TestCase
     {
         $this->createPublishedBlog('blogs/missing-cover.jpg');
 
-        $response = $this->get('/blogs');
+        $response = $this->get('/articles');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -94,7 +94,7 @@ class BlogPerformanceTest extends TestCase
         Storage::disk('public')->put($sourcePath, $this->jpeg(714, 447));
         $this->createPublishedBlog($sourcePath);
 
-        $response = $this->get('/blogs');
+        $response = $this->get('/articles');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -158,7 +158,7 @@ class BlogPerformanceTest extends TestCase
         $sourcePath = 'blogs/missing-cover.jpg';
         $this->createPublishedBlog($sourcePath);
 
-        $response = $this->get('/blogs');
+        $response = $this->get('/articles');
 
         $response->assertOk();
         $response->assertSee($sourcePath, false);

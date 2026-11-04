@@ -186,7 +186,7 @@ class LandingPageContentTest extends TestCase
             ->assertJsonPath('data.support.email', 'help@example.test')
             ->assertJsonPath('data.links.account', '/account')
             ->assertJsonPath('data.links.setup', '/account/setup');
-        $this->assertSame(['/terms-of-service', '/privacy-policy', '/refund-policy'], array_column($response->json('data.links.legal'), 'url'));
+        $this->assertSame(['/terms-and-conditions', '/privacy-notice', '/refund-terms'], array_column($response->json('data.links.legal'), 'url'));
         $this->assertStringNotContainsString('PRIVATE', $response->getContent());
     }
 

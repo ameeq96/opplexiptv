@@ -47,7 +47,7 @@ class ProviderPlansLazyLoadingTest extends TestCase
             'active' => true,
         ]);
 
-        $response = $this->get('/packages');
+        $response = $this->get('/subscription-plans');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -119,7 +119,7 @@ class ProviderPlansLazyLoadingTest extends TestCase
             $legacy ??= $package;
         }
 
-        $response = $this->get('/packages');
+        $response = $this->get('/subscription-plans');
 
         $response->assertOk();
         $html = $response->getContent();

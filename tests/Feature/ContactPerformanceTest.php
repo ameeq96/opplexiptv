@@ -20,7 +20,7 @@ class ContactPerformanceTest extends TestCase
 
     public function test_contact_links_cacheable_styles_and_uses_a_native_phone_and_page_shell(): void
     {
-        $response = $this->get('/contact');
+        $response = $this->get('/contact-us');
 
         $response->assertOk();
         $html = $response->getContent();

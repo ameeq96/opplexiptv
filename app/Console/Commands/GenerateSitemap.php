@@ -35,6 +35,7 @@ class GenerateSitemap extends Command
             'shop',
             'movies',
             'activate',
+            'activate-info',
             'blogs.index',
             'digital.shop',
             'terms-of-service',
@@ -88,7 +89,10 @@ class GenerateSitemap extends Command
             $canonicalLoc = in_array($defaultLocale, $locales, true) ? $defaultLocale : $locales[0];
             $canonicalUrl = $cluster[$canonicalLoc] ?? reset($cluster);
 
-            foreach ($cluster as $loc) {
+            foreach ($cluster as $locale => $loc) {
+                if ($routeName === 'activate-info' && !in_array($locale, ['en', 'fr', 'nl', 'ru'], true)) {
+                    continue;
+                }
                 $urlNode = $xml->addChild('url');
                 $urlNode->addChild('loc', htmlspecialchars($loc, ENT_QUOTES, 'UTF-8'));
                 $urlNode->addChild('changefreq', $routeName === 'home' ? 'daily' : 'weekly');

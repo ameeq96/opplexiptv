@@ -1378,7 +1378,7 @@
 
             <h2 class="pricing-intro__title">{{ $isDocumentEnglishPricing ? $documentPricing['heading'] : ($pricingSection['heading'] ?? __('messages.pricing_heading')) }}</h2>
 
-            @unless (request()->is('packages') || request()->is('pricing') || request()->is('reseller-panel'))
+            @unless (request()->is('packages', 'subscription-plans') || request()->is('pricing', 'subscription-pricing') || request()->is('reseller-panel', 'reseller-plans'))
                 <p class="pricing-intro__subtitle">{{ $isDocumentEnglishPricing ? ($documentPricing['subheading'] ?? ($pricingSection['subheading'] ?? __('messages.pricing_subheading'))) : ($pricingSection['subheading'] ?? __('messages.pricing_subheading')) }}</p>
             @endunless
 

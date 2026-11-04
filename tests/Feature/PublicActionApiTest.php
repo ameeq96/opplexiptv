@@ -62,9 +62,9 @@ class PublicActionApiTest extends TestCase
         $this->mock(ContactService::class, function ($mock) {
             $mock->shouldReceive('contact')->once();
         });
-        $this->withSession(['captcha_sum' => 3])->from('/contact')->post('/send-email', $this->contactPayload())
-            ->assertRedirect('/contact')->assertSessionHas('success');
-        $this->get('/contact')->assertOk()
+        $this->withSession(['captcha_sum' => 3])->from('/contact-us')->post('/send-email', $this->contactPayload())
+            ->assertRedirect('/contact-us')->assertSessionHas('success');
+        $this->get('/contact-us')->assertOk()
             ->assertSee('data-api-form', false)
             ->assertSee('/api/browser/contact', false);
     }

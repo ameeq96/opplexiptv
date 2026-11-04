@@ -35,27 +35,27 @@ class EnglishDocumentPagesTest extends TestCase
     public static function documentPageProvider(): array
     {
         return [
-            'packages' => ['/packages', [
+            'packages' => ['/subscription-plans', [
                 'Most In-Demand IPTV Subscriptions Service',
                 'How to Buy an IPTV Subscription: 3 Easy Steps',
                 'Try Our IPTV Free Trial',
             ]],
-            'pricing' => ['/pricing', [
+            'pricing' => ['/subscription-pricing', [
                 'IPTV Subscription Pricing',
                 'Not Sure Which Plan to Pick?',
                 'Paying Is Safe and Straightforward',
             ]],
-            'reseller' => ['/reseller-panel', [
+            'reseller' => ['/reseller-plans', [
                 'Build Your Own IPTV Business with Opplex',
                 'How the Credit System Works',
                 'What Comes with Your Reseller Account',
             ]],
-            'applications' => ['/iptv-applications', [
+            'applications' => ['/iptv-player-apps', [
                 'Opplex IPTV Apps: Android APK and Players for PC, iOS & Smart TV',
                 'Best IPTV Apps for Android',
                 'Common Questions About IPTV Apps',
             ]],
-            'movies' => ['/movies', [
+            'movies' => ['/entertainment-catalogue', [
                 'Opplex IPTV Movies and Series: Check Availability Before Choosing a Plan',
                 "What's in the Library",
                 'How to Browse and Watch Movies on Opplex',
@@ -65,17 +65,17 @@ class EnglishDocumentPagesTest extends TestCase
                 'Two Steps from Signup to Activation',
                 'IPTV vs Cable',
             ]],
-            'faqs' => ['/faqs', [
+            'faqs' => ['/help-center', [
                 'Opplex IPTV FAQ: Trials, Devices, Login Help and Support',
                 'About Opplex IPTV',
                 'Streaming Quality & Performance',
             ]],
-            'about' => ['/about', [
+            'about' => ['/about-us', [
                 'About Opplex IPTV Subscription Services',
                 'What to Check Before Choosing a Subscription',
                 'How Opplex Got Here',
             ]],
-            'contact' => ['/contact', [
+            'contact' => ['/contact-us', [
                 'Get in Touch',
                 'Not Sure What to Write?',
                 'When You Can Expect a Reply',
@@ -88,7 +88,7 @@ class EnglishDocumentPagesTest extends TestCase
         Cache::flush();
         Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
 
-        $response = $this->get('/packages');
+        $response = $this->get('/subscription-plans');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -188,7 +188,7 @@ class EnglishDocumentPagesTest extends TestCase
             ]);
         }
 
-        $response = $this->get('/shop');
+        $response = $this->get('/store');
 
         $response->assertOk();
         $response->assertSeeText('Android TV Box (4GB RAM, 32GB ROM, 6K, Wi-Fi 5.0, Bluetooth 5.0)');

@@ -12,7 +12,7 @@ class AboutPerformanceTest extends TestCase
 
     public function test_english_about_links_cacheable_styles_and_uses_a_reflow_free_native_shell(): void
     {
-        $response = $this->get('/about');
+        $response = $this->get('/about-us');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -40,7 +40,7 @@ class AboutPerformanceTest extends TestCase
     {
         app()->setLocale('es');
 
-        $response = $this->get('/about');
+        $response = $this->get('/about-us');
 
         $response->assertOk();
         $html = $response->getContent();
