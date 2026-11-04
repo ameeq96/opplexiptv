@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-04",
+  "topic": "Distinguish the IPTV Subscription website language from browser translation before comparing provider, currency and checkout details",
+  "primary_keyword": "IPTV subscription page translation",
+  "slug": "iptvsubscription-site-language-browser-translation-checks",
+  "translations": {
+    "en": {
+      "title": "IPTV subscription page translation: keep the plan details clear",
+      "excerpt": "A website language choice and a browser translation are different layers. Keep the provider, subscription length and checkout amount clear when switching between them.",
+      "seo_title": "IPTV Subscription: website language or browser translation?",
+      "seo_description": "Understand IPTV Subscription page language and Chrome translation. Recheck the actual provider, duration, currency and final amount before checkout.",
+      "sections": [
+        {
+          "heading": "Notice which language tool is active",
+          "paragraphs": [
+            "An IPTV subscription page translation can make unfamiliar wording easier to read, but first notice which tool changed the page. The website has its own language selector. A browser can also translate displayed text without making that same website selection. If both are in use, settle on one clear view before comparing plans. Note the website language you chose rather than relying only on the words currently visible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use translation as a reading aid",
+          "paragraphs": [
+            "For desktop Chrome, Google documents a Translate control beside the address bar. Use the official help for your browser if you need that reading aid. Keep a short comparison note with the provider name and subscription length. A translated button or label is not evidence that an amount was converted, an order was paid or a service was activated. Resolve unfamiliar billing wording before proceeding."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: translate a page on a computer",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Recheck the actual selection",
+          "paragraphs": [
+            "On IPTV Subscription, Opplex and Filex remain distinct provider choices in any language. Read the selected provider, duration, displayed currency and final total again at checkout; do not infer a new price from translated text. If a term is unclear, ask support about that exact phrase and the public page. Leave passwords, private access links and payment details out of the message. Confirm the actual selection before making a payment."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Traducción de páginas de IPTV Subscription: conserva claros los datos",
+      "excerpt": "El idioma elegido en la web y la traducción del navegador son capas distintas. Comprueba proveedor, duración e importe al cambiar la forma de leer una página.",
+      "seo_title": "IPTV Subscription: idioma de la web o traducción del navegador",
+      "seo_description": "Distingue el idioma de IPTV Subscription de la traducción de Chrome y revisa proveedor, duración, moneda e importe final antes de pagar.",
+      "sections": [
+        {
+          "heading": "Identifica qué herramienta cambió el idioma",
+          "paragraphs": [
+            "Traducir una página de IPTV Subscription puede facilitar palabras desconocidas, pero primero identifica qué herramienta cambió el texto. La web tiene su propio selector de idioma. El navegador también puede traducir lo que ves sin seleccionar ese mismo idioma en la web. Si usas ambos, elige una vista clara antes de comparar planes. Anota el idioma seleccionado en el sitio, en lugar de guiarte únicamente por las palabras que aparecen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa la traducción como ayuda de lectura",
+          "paragraphs": [
+            "Para Chrome de escritorio, Google explica el control Traducir junto a la barra de direcciones. Consulta la ayuda oficial si necesitas esa asistencia. Guarda una nota breve con el nombre del proveedor y la duración. Un botón o una etiqueta traducidos no demuestran que se haya convertido un importe, pagado un pedido o activado un servicio. Aclara cualquier expresión de facturación que no entiendas antes de continuar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Chrome: traducir una página en el ordenador",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa la selección real",
+          "paragraphs": [
+            "En IPTV Subscription, Opplex y Filex siguen siendo proveedores distintos en cualquier idioma. Revisa otra vez el proveedor, la duración, la moneda mostrada y el total final al pagar; no deduzcas un nuevo precio por la traducción. Si un término es confuso, pregunta a soporte por esa frase concreta y la página pública. No incluyas contraseñas, enlaces privados de acceso ni datos de pago. Confirma la selección real antes de pagar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Traduire IPTV Subscription sans perdre les détails du forfait",
+      "excerpt": "La langue choisie sur le site et la traduction du navigateur sont deux couches distinctes. Gardez le fournisseur, la durée et le montant du paiement bien identifiés.",
+      "seo_title": "IPTV Subscription : langue du site ou traduction du navigateur ?",
+      "seo_description": "Distinguez la langue du site IPTV Subscription de la traduction Chrome et revérifiez fournisseur, durée, devise et montant final avant de payer.",
+      "sections": [
+        {
+          "heading": "Repérez l’outil qui change la langue",
+          "paragraphs": [
+            "Traduire une page IPTV Subscription aide à comprendre certains mots, mais identifiez d’abord l’outil qui a modifié l’affichage. Le site possède son propre sélecteur de langue. Le navigateur peut aussi traduire le texte visible sans effectuer ce même choix sur le site. Si les deux interviennent, adoptez une vue claire avant de comparer les forfaits. Notez la langue choisie sur le site plutôt que de vous fier seulement aux mots affichés."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utilisez la traduction pour comprendre le texte",
+          "paragraphs": [
+            "Pour Chrome sur ordinateur, Google décrit la commande Traduire près de la barre d’adresse. Consultez l’aide officielle si vous avez besoin de cette assistance de lecture. Notez brièvement le nom du fournisseur et la durée de l’abonnement. Un bouton ou un libellé traduit ne prouve ni une conversion du montant, ni un paiement effectué, ni une activation du service. Faites préciser les expressions de facturation inconnues avant de continuer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Chrome : traduire une page sur ordinateur",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Revérifiez la sélection réelle",
+          "paragraphs": [
+            "Sur IPTV Subscription, Opplex et Filex restent deux fournisseurs distincts, quelle que soit la langue. Au paiement, relisez le fournisseur sélectionné, la durée, la devise affichée et le total final ; ne déduisez pas un nouveau prix du texte traduit. Si un terme demeure obscur, interrogez le support sur cette expression précise et la page publique. Excluez mots de passe, liens privés d’accès et données de paiement. Confirmez la sélection réelle avant de payer."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Traduzione di IPTV Subscription: mantieni chiari i dati del piano",
+      "excerpt": "La lingua scelta sul sito e la traduzione del browser sono due livelli diversi. Controlla fornitore, durata e importo mentre cambi la lingua di lettura.",
+      "seo_title": "IPTV Subscription: lingua del sito o traduzione del browser?",
+      "seo_description": "Distingui la lingua del sito IPTV Subscription dalla traduzione di Chrome e ricontrolla fornitore, durata, valuta e totale prima del pagamento.",
+      "sections": [
+        {
+          "heading": "Riconosci quale strumento cambia la lingua",
+          "paragraphs": [
+            "Tradurre una pagina di IPTV Subscription può chiarire parole poco familiari, ma prima riconosci lo strumento che ha cambiato il testo. Il sito ha un proprio selettore della lingua. Anche il browser può tradurre quanto appare senza selezionare quella stessa lingua sul sito. Se intervengono entrambi, scegli una vista chiara prima di confrontare gli abbonamenti IPTV. Annota la lingua impostata nel sito, senza affidarti soltanto alle parole visualizzate."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa la traduzione come aiuto alla lettura",
+          "paragraphs": [
+            "Per Chrome su computer, Google descrive il comando Traduci accanto alla barra degli indirizzi. Consulta la guida ufficiale se ti serve questo aiuto. Conserva una breve nota con il nome del fornitore e la durata dell’abbonamento. Un pulsante o un’etichetta tradotti non dimostrano che un importo sia stato convertito, un ordine pagato o un servizio attivato. Chiarisci le espressioni di fatturazione sconosciute prima di procedere."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google Chrome: tradurre una pagina sul computer",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ricontrolla la selezione effettiva",
+          "paragraphs": [
+            "Su IPTV Subscription, Opplex e Filex restano fornitori diversi in qualsiasi lingua. Al checkout rileggi fornitore selezionato, durata, valuta mostrata e totale finale; non dedurre un prezzo diverso dal testo tradotto. Se un termine non è chiaro, chiedi assistenza indicando la frase precisa e la pagina pubblica. Escludi password, link privati di accesso e dati di pagamento dal messaggio. Conferma la selezione effettiva prima di pagare."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription vertalen: houd de abonnementsgegevens duidelijk",
+      "excerpt": "De taalkeuze van de website en een browservertaling zijn verschillende lagen. Houd aanbieder, looptijd en betaalbedrag helder wanneer je de weergavetaal verandert.",
+      "seo_title": "IPTV Subscription: sitetaal of vertaling door de browser?",
+      "seo_description": "Begrijp het verschil tussen de sitetaal van IPTV Subscription en Chrome-vertaling. Controleer aanbieder, looptijd, valuta en totaal opnieuw voor betaling.",
+      "sections": [
+        {
+          "heading": "Bekijk welk hulpmiddel de taal verandert",
+          "paragraphs": [
+            "Een vertaalde IPTV Subscription-pagina kan onbekende woorden verduidelijken, maar bekijk eerst welk hulpmiddel de tekst heeft veranderd. De website heeft een eigen taalkiezer. Ook de browser kan zichtbare tekst vertalen zonder diezelfde taal op de website te selecteren. Als je beide gebruikt, kies dan één duidelijke weergave voordat je abonnementen vergelijkt. Noteer de gekozen sitetaal en vertrouw niet uitsluitend op de woorden die nu op het scherm staan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik vertaling als leeshulp",
+          "paragraphs": [
+            "Voor Chrome op de computer beschrijft Google de functie Vertalen naast de adresbalk. Raadpleeg de officiële hulp als je deze leeshulp nodig hebt. Maak een korte notitie met de naam van de aanbieder en de abonnementsduur. Een vertaalde knop of omschrijving bewijst niet dat een bedrag is omgerekend, een bestelling is betaald of een dienst is geactiveerd. Vraag uitleg over onduidelijke betaaltermen voordat je verdergaat."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: een pagina vertalen op de computer",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de werkelijke keuze opnieuw",
+          "paragraphs": [
+            "Op IPTV Subscription blijven Opplex en Filex verschillende aanbieders, in iedere taal. Lees bij het afrekenen opnieuw de geselecteerde aanbieder, looptijd, weergegeven valuta en het uiteindelijke totaal. Leid geen andere prijs af uit vertaalde tekst. Is een term onduidelijk, vraag ondersteuning over die precieze formulering en de openbare pagina. Laat wachtwoorden, privétoegangslinks en betaalgegevens uit je bericht. Bevestig je werkelijke keuze voordat je betaalt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Traduzir o IPTV Subscription sem perder os detalhes do plano",
+      "excerpt": "O idioma escolhido no site e a tradução do navegador são camadas diferentes. Mantenha claros o fornecedor, a duração e o valor ao mudar a língua de leitura.",
+      "seo_title": "IPTV Subscription: idioma do site ou tradução do navegador?",
+      "seo_description": "Distinga o idioma do site IPTV Subscription da tradução do Chrome. Confirme fornecedor, duração, moeda e valor final antes de efetuar o pagamento.",
+      "sections": [
+        {
+          "heading": "Identifique a ferramenta que mudou o idioma",
+          "paragraphs": [
+            "Traduzir uma página do IPTV Subscription pode esclarecer palavras desconhecidas, mas identifique primeiro a ferramenta que alterou o texto. O site tem o seu próprio seletor de idioma. O navegador também pode traduzir o que aparece sem escolher essa mesma língua no site. Se utilizar ambos, escolha uma vista clara antes de comparar assinaturas IPTV. Anote o idioma selecionado no site, em vez de confiar apenas nas palavras atualmente visíveis."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use a tradução como auxílio de leitura",
+          "paragraphs": [
+            "Para o Chrome no computador, a Google descreve o controlo Traduzir junto à barra de endereços. Consulte a ajuda oficial se precisar desse auxílio de leitura. Guarde uma nota breve com o nome do fornecedor e a duração da assinatura. Um botão ou rótulo traduzido não comprova que um valor foi convertido, um pedido foi pago ou um serviço foi ativado. Esclareça termos de faturação desconhecidos antes de continuar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Chrome: traduzir uma página no computador",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme a seleção real",
+          "paragraphs": [
+            "No IPTV Subscription, Opplex e Filex continuam a ser fornecedores distintos em qualquer idioma. No pagamento, releia o fornecedor selecionado, a duração, a moeda apresentada e o total final; não deduza outro preço a partir do texto traduzido. Se algum termo não for claro, pergunte ao apoio sobre a expressão exata e a página pública. Exclua palavras-passe, ligações privadas de acesso e dados de pagamento da mensagem. Confirme a seleção real antes de pagar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Перевод IPTV Subscription: не потеряйте условия выбранного плана",
+      "excerpt": "Язык сайта и перевод браузера — разные уровни отображения. При смене языка отдельно проверяйте поставщика, срок подписки и сумму оплаты.",
+      "seo_title": "IPTV Subscription: язык сайта или перевод браузера?",
+      "seo_description": "Различайте язык сайта IPTV Subscription и перевод Chrome. Перед оплатой повторно проверьте поставщика, срок подписки, валюту и итоговую сумму.",
+      "sections": [
+        {
+          "heading": "Определите, какой инструмент меняет язык",
+          "paragraphs": [
+            "Перевод страницы IPTV Subscription помогает понять незнакомые слова, но сначала определите, какой инструмент изменил текст. На сайте есть собственный переключатель языка. Браузер тоже может переводить видимый текст, не выбирая тот же язык на самом сайте. Если работают оба инструмента, выберите один понятный вид перед сравнением подписок. Запишите выбранный язык сайта, а не полагайтесь только на слова, которые сейчас видны на экране."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте перевод для понимания текста",
+          "paragraphs": [
+            "Для Chrome на компьютере Google описывает кнопку перевода рядом с адресной строкой. Если нужна такая помощь при чтении, воспользуйтесь официальной справкой. Кратко запишите название поставщика и срок подписки. Переведённая кнопка или подпись не подтверждает, что сумма пересчитана в другую валюту, заказ оплачен или услуга активирована. До продолжения уточните незнакомые формулировки, связанные с оплатой."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Chrome: перевод страницы на компьютере",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Повторно проверьте действительный выбор",
+          "paragraphs": [
+            "В IPTV Subscription Opplex и Filex остаются разными поставщиками на любом языке. На странице оплаты ещё раз прочитайте выбранного поставщика, срок, указанную валюту и итоговую сумму; перевод текста не означает новую цену. Если термин неясен, спросите поддержку о конкретной фразе и публичной странице. Не включайте в сообщение пароли, закрытые ссылки доступа и платёжные данные. Перед оплатой подтвердите фактически выбранный план."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کا ترجمہ: پلان کی اصل تفصیل واضح رکھیں",
+      "excerpt": "ویب سائٹ کی زبان اور براؤزر کا ترجمہ الگ چیزیں ہیں۔ زبان بدلتے وقت فراہم کنندہ، رکنیت کی مدت اور ادائیگی کی رقم الگ سے واضح رکھیں۔",
+      "seo_title": "IPTV Subscription: سائٹ کی زبان یا براؤزر کا ترجمہ؟",
+      "seo_description": "IPTV Subscription کی اپنی زبان اور Chrome کے ترجمے میں فرق سمجھیں۔ ادائیگی سے پہلے فراہم کنندہ، مدت، کرنسی اور آخری رقم دوبارہ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں زبان کس ذریعے سے بدلی ہے",
+          "paragraphs": [
+            "IPTV Subscription کے صفحے کا ترجمہ غیر مانوس الفاظ سمجھنے میں مدد دے سکتا ہے، مگر پہلے پہچانیں کہ متن کس ذریعے سے بدلا۔ ویب سائٹ کا اپنا زبان منتخب کرنے کا اختیار ہے۔ براؤزر بھی نظر آنے والا متن ترجمہ کر سکتا ہے، چاہے سائٹ پر وہی زبان منتخب نہ ہوئی ہو۔ دونوں استعمال ہو رہے ہوں تو پلان کا موازنہ کرنے سے پہلے ایک واضح صورت منتخب کریں۔ صرف اسکرین کے الفاظ پر بھروسا کرنے کے بجائے سائٹ پر منتخب زبان لکھ لیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ترجمے کو پڑھنے میں مدد کے لیے استعمال کریں",
+          "paragraphs": [
+            "کمپیوٹر پر Chrome کے لیے Google پتے کی سطر کے قریب ترجمے کا اختیار بتاتا ہے۔ پڑھنے میں یہ مدد چاہیے ہو تو اپنے براؤزر کی سرکاری رہنمائی دیکھیں۔ فراہم کنندہ کا نام اور رکنیت کی مدت مختصر نوٹ میں لکھیں۔ بٹن یا عنوان کا ترجمہ رقم کی کرنسی تبدیل ہونے، آرڈر کی ادائیگی ہونے یا سروس فعال ہونے کا ثبوت نہیں۔ آگے بڑھنے سے پہلے بل اور ادائیگی کی غیر واضح عبارت سمجھ لیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome مدد: کمپیوٹر پر صفحے کا ترجمہ",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اصل منتخب پلان دوبارہ دیکھیں",
+          "paragraphs": [
+            "IPTV Subscription پر Opplex اور Filex ہر زبان میں الگ فراہم کنندہ رہتے ہیں۔ ادائیگی کے صفحے پر منتخب فراہم کنندہ، مدت، لکھی ہوئی کرنسی اور آخری کل رقم دوبارہ پڑھیں؛ ترجمہ شدہ متن سے نئی قیمت اخذ نہ کریں۔ کوئی لفظ واضح نہ ہو تو سپورٹ سے اسی عبارت اور عوامی صفحے کے بارے میں پوچھیں۔ پیغام میں پاس ورڈ، نجی رسائی کے لنک یا ادائیگی کی تفصیلات شامل نہ کریں۔ رقم ادا کرنے سے پہلے اصل انتخاب کی تصدیق کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ترجمة IPTV Subscription: حافظ على وضوح تفاصيل الخطة",
+      "excerpt": "لغة الموقع وترجمة المتصفح طبقتان مختلفتان. حافظ على وضوح المزود ومدة الاشتراك ومبلغ الدفع عند تغيير لغة قراءة الصفحة.",
+      "seo_title": "IPTV Subscription: لغة الموقع أم ترجمة المتصفح؟",
+      "seo_description": "ميّز لغة موقع IPTV Subscription عن ترجمة Chrome، وراجع المزود والمدة والعملة والمبلغ النهائي مرة أخرى قبل الدفع.",
+      "sections": [
+        {
+          "heading": "حدد الأداة التي غيّرت اللغة",
+          "paragraphs": [
+            "قد تساعد ترجمة صفحة IPTV Subscription على فهم كلمات غير مألوفة، لكن حدد أولاً الأداة التي غيّرت النص. للموقع أداة خاصة لاختيار اللغة. ويمكن للمتصفح أيضاً ترجمة النص الظاهر دون تحديد اللغة نفسها في الموقع. إذا كنت تستخدم الاثنين، فاختر عرضاً واضحاً واحداً قبل مقارنة الخطط. سجّل اللغة التي اخترتها في الموقع، بدلاً من الاعتماد فقط على الكلمات الظاهرة على الشاشة الآن."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم الترجمة للمساعدة في القراءة",
+          "paragraphs": [
+            "توضح Google وجود أداة ترجمة بجانب شريط العنوان في Chrome على الكمبيوتر. راجع المساعدة الرسمية لمتصفحك إذا احتجت إلى وسيلة القراءة هذه. احتفظ بملاحظة قصيرة تتضمن اسم المزود ومدة الاشتراك. ترجمة زر أو تسمية لا تثبت تحويل مبلغ إلى عملة أخرى، أو دفع طلب، أو تفعيل خدمة. استوضح عبارات الفوترة غير المفهومة قبل المتابعة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Chrome: ترجمة صفحة على الكمبيوتر",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "راجع الاختيار الفعلي مرة أخرى",
+          "paragraphs": [
+            "في IPTV Subscription يظل Opplex وFilex مزودين مختلفين بأي لغة. أعد قراءة المزود المحدد والمدة والعملة المعروضة والإجمالي النهائي عند الدفع؛ ولا تستنتج سعراً جديداً من النص المترجم. إذا لم يتضح مصطلح، اسأل الدعم عن العبارة المحددة والصفحة العامة. لا تضع كلمات المرور أو روابط الوصول الخاصة أو تفاصيل الدفع في الرسالة. تأكد من الاختيار الفعلي قبل دفع المبلغ."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription का अनुवाद: प्लान की जानकारी साफ़ रखें",
+      "excerpt": "वेबसाइट की भाषा और ब्राउज़र का अनुवाद अलग परतें हैं। पढ़ने की भाषा बदलते समय प्रदाता, सदस्यता की अवधि और भुगतान की राशि स्पष्ट रखें।",
+      "seo_title": "IPTV Subscription: वेबसाइट की भाषा या ब्राउज़र अनुवाद?",
+      "seo_description": "IPTV Subscription की अपनी भाषा और Chrome के अनुवाद में अंतर समझें। भुगतान से पहले प्रदाता, अवधि, मुद्रा और अंतिम राशि फिर जाँचें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि भाषा किस साधन ने बदली",
+          "paragraphs": [
+            "IPTV Subscription पेज का अनुवाद अनजान शब्द समझने में मदद कर सकता है, लेकिन पहले पहचानें कि किस साधन ने पाठ बदला है। वेबसाइट का अपना भाषा चयन है। ब्राउज़र भी दिखाई दे रहा पाठ अनुवाद कर सकता है, भले ही साइट पर वही भाषा न चुनी गई हो। दोनों इस्तेमाल हो रहे हों तो प्लान की तुलना से पहले एक स्पष्ट दृश्य चुनें। केवल इस समय स्क्रीन पर दिख रहे शब्दों पर निर्भर रहने के बजाय साइट पर चुनी भाषा लिख लें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "अनुवाद को पढ़ने की मदद समझें",
+          "paragraphs": [
+            "कंप्यूटर पर Chrome के लिए Google पता बार के पास अनुवाद का विकल्प बताता है। पढ़ने में यह मदद चाहिए तो अपने ब्राउज़र की आधिकारिक सहायता देखें। प्रदाता का नाम और सदस्यता की अवधि छोटा नोट बनाकर रखें। किसी बटन या लेबल का अनुवाद राशि की मुद्रा बदलने, ऑर्डर का भुगतान होने या सेवा सक्रिय होने का प्रमाण नहीं है। आगे बढ़ने से पहले बिल संबंधी अपरिचित शब्द स्पष्ट कर लें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome सहायता: कंप्यूटर पर पेज का अनुवाद",
+              "url": "https://support.google.com/chrome/answer/173424?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "वास्तविक चयन दोबारा जाँचें",
+          "paragraphs": [
+            "IPTV Subscription पर Opplex और Filex हर भाषा में अलग प्रदाता रहते हैं। भुगतान के समय चुना प्रदाता, अवधि, दिखाई गई मुद्रा और अंतिम कुल राशि फिर पढ़ें; अनुवादित पाठ से नई कीमत न निकालें। कोई शब्द अस्पष्ट हो तो उसी वाक्यांश और सार्वजनिक पेज के बारे में सहायता से पूछें। संदेश में पासवर्ड, निजी प्रवेश लिंक या भुगतान विवरण शामिल न करें। भुगतान करने से पहले वास्तविक चयन की पुष्टि करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: translating a web page on a computer",
+      "url": "https://support.google.com/chrome/answer/173424?hl=en"
+    }
+  ]
+}

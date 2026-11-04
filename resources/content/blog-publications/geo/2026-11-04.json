@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-04",
+  "topic": "Apple TV app switching versus quitting an unresponsive player: choose the smaller action and describe what happens",
+  "primary_keyword": "Geo IPTV app switching",
+  "slug": "geo-apple-tv-switching-versus-closing-player",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV app switching: returning to a player or closing it?",
+      "excerpt": "Moving to another Apple TV app and quitting a stuck player are different actions. Choose the one that matches what is on screen before changing account or device settings.",
+      "seo_title": "Geo IPTV app switching on Apple TV: switch or close?",
+      "seo_description": "Understand Geo IPTV app switching on Apple TV, use quitting only for an unresponsive player and record useful observations without changing account settings.",
+      "sections": [
+        {
+          "heading": "Decide what you want the next screen to do",
+          "paragraphs": [
+            "Geo IPTV app switching should start with a simple question: are you returning to a responsive player, or is that player ignoring input? Apple describes opening the app switcher with two presses of the TV button, then selecting an app. Before trying it, note the player name and the screen you want to return to. Moving between apps is a navigation choice, not a reason to change the subscription or remove a saved setup."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: switch between apps on Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep quitting as a separate troubleshooting step",
+          "paragraphs": [
+            "For an unresponsive app, Apple describes highlighting it in the switcher and swiping up to quit. Use this deliberately for that app; repeatedly closing every app is not a useful comparison. Note any unfinished action before closing, then reopen the same player and repeat one simple action. Do not assume the previous programme position will be preserved. Avoid deleting the app, erasing its data or resetting the whole Apple TV for this first check."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: restart an unresponsive Apple TV app",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Report the smallest reproducible difference",
+          "paragraphs": [
+            "Record the Apple TV model, tvOS version and player version, plus whether ordinary menu navigation worked. Describe whether returning to the app or reopening it changed the symptom. If the issue repeats, include the exact screen and the action immediately before it. These observations help separate a navigation problem from a playback complaint; they do not prove a service-wide outage or a backend logout. Give support those details without passwords or private playlist addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV en Apple TV: ¿volver al reproductor o cerrarlo?",
+      "excerpt": "Cambiar a otra aplicación de Apple TV y cerrar un reproductor bloqueado son acciones distintas. Elige según lo que ocurre en pantalla antes de modificar la cuenta o el dispositivo.",
+      "seo_title": "Geo IPTV en Apple TV: cambiar de aplicación o cerrarla",
+      "seo_description": "Distingue entre cambiar de aplicación y cerrar un reproductor sin respuesta en Apple TV para Geo IPTV. Anota lo ocurrido sin alterar la configuración de la cuenta.",
+      "sections": [
+        {
+          "heading": "Decide qué quieres ver después",
+          "paragraphs": [
+            "Para cambiar de aplicación con Geo IPTV, empieza con una pregunta sencilla: ¿quieres volver a un reproductor que responde o este ignora los controles? Apple explica que se abre el selector pulsando dos veces el botón TV y después se elige una aplicación. Antes de hacerlo, anota el nombre del reproductor y la pantalla a la que quieres regresar. Cambiar de aplicación es una decisión de navegación, no una razón para modificar la suscripción ni borrar la configuración guardada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: cambiar de aplicación en Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Cerrar es una comprobación diferente",
+          "paragraphs": [
+            "Para una aplicación que no responde, Apple indica resaltarla en el selector y deslizar hacia arriba para cerrarla. Hazlo de forma deliberada con esa aplicación; cerrar todas repetidamente no ofrece una comparación útil. Anota cualquier tarea sin terminar, vuelve a abrir el mismo reproductor y repite una acción sencilla. No des por hecho que conservará el punto del programa. En esta primera comprobación, evita desinstalar, borrar datos o restablecer todo el Apple TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reiniciar una aplicación sin respuesta",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Describe la diferencia más pequeña que puedas repetir",
+          "paragraphs": [
+            "Anota el modelo del Apple TV, la versión de tvOS y la del reproductor, y si funcionaba la navegación normal por los menús. Explica si volver a la aplicación o abrirla de nuevo cambió el síntoma. Si se repite, indica la pantalla exacta y la acción inmediatamente anterior. Esos datos ayudan a distinguir la navegación de un problema de reproducción; no demuestran una caída general ni un cierre de sesión del servicio. Compártelos con soporte sin contraseñas ni direcciones privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV sur Apple TV : revenir au lecteur ou le fermer ?",
+      "excerpt": "Passer à une autre app Apple TV et fermer un lecteur bloqué sont deux actions différentes. Choisissez selon le symptôme avant de modifier le compte ou les réglages.",
+      "seo_title": "Geo IPTV sur Apple TV : changer d’app ou fermer ?",
+      "seo_description": "Distinguez le changement d’app de la fermeture d’un lecteur bloqué pour Geo IPTV sur Apple TV, puis relevez le résultat sans modifier le compte.",
+      "sections": [
+        {
+          "heading": "Décidez de l’écran que vous voulez retrouver",
+          "paragraphs": [
+            "Pour changer d’app avec Geo IPTV, commencez par une question simple : voulez-vous retrouver un lecteur réactif ou celui-ci ignore-t-il les commandes ? Apple décrit l’ouverture du sélecteur par deux pressions sur le bouton TV, puis le choix d’une app. Notez d’abord le nom du lecteur et l’écran à retrouver. Passer d’une app à une autre est un choix de navigation, pas une raison de modifier l’abonnement ou de supprimer une configuration enregistrée."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : passer d’une app à une autre sur Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Gardez la fermeture comme une vérification distincte",
+          "paragraphs": [
+            "Pour une app qui ne répond pas, Apple indique de la sélectionner dans le sélecteur puis de balayer vers le haut pour la fermer. Faites-le volontairement pour cette app ; les fermer toutes à répétition ne permet pas de comparaison utile. Notez toute action inachevée, rouvrez le même lecteur et répétez une action simple. Ne supposez pas que la position du programme sera conservée. Pour ce premier contrôle, évitez de désinstaller, d’effacer les données ou de réinitialiser l’Apple TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : relancer une app Apple TV qui ne répond pas",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez une petite différence reproductible",
+          "paragraphs": [
+            "Relevez le modèle d’Apple TV, les versions de tvOS et du lecteur, et le fonctionnement des menus ordinaires. Précisez si revenir dans l’app ou la rouvrir a changé le symptôme. S’il revient, indiquez l’écran exact et l’action précédente. Ces observations distinguent un souci de navigation d’un problème de lecture ; elles ne prouvent ni une panne générale du service ni une déconnexion du compte côté serveur. Transmettez-les au support sans mot de passe ni adresse privée de liste de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV su Apple TV: tornare al lettore oppure chiuderlo?",
+      "excerpt": "Passare a un’altra app su Apple TV e chiudere un lettore bloccato sono azioni diverse. Scegli in base al sintomo prima di cambiare account o impostazioni del dispositivo.",
+      "seo_title": "Geo IPTV su Apple TV: cambiare app o chiuderla?",
+      "seo_description": "Distingui il cambio di app dalla chiusura di un lettore bloccato su Apple TV per Geo IPTV e annota il risultato senza modificare le impostazioni dell’account.",
+      "sections": [
+        {
+          "heading": "Decidi quale schermata vuoi ritrovare",
+          "paragraphs": [
+            "Per cambiare app con Geo IPTV, parti da una domanda semplice: vuoi tornare a un lettore che risponde oppure il lettore ignora i comandi? Apple descrive l’apertura del selettore con due pressioni del tasto TV, seguita dalla scelta di un’app. Prima annota il nome del lettore e la schermata da ritrovare. Passare tra app è una scelta di navigazione, non un motivo per cambiare abbonamento o cancellare una configurazione salvata."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: passare da un’app all’altra su Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Tieni separata la chiusura dell’app",
+          "paragraphs": [
+            "Per un’app che non risponde, Apple indica di evidenziarla nel selettore e scorrere verso l’alto per chiuderla. Fallo intenzionalmente per quell’app: chiuderle tutte ripetutamente non produce un confronto utile. Annota eventuali operazioni incomplete, riapri lo stesso lettore e ripeti un’azione semplice. Non dare per scontato che il punto del programma venga conservato. Per questo primo controllo evita di disinstallare, cancellare dati o inizializzare l’intera Apple TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: riavviare un’app Apple TV che non risponde",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi la più piccola differenza ripetibile",
+          "paragraphs": [
+            "Segna il modello di Apple TV, le versioni di tvOS e del lettore e se i normali menu funzionavano. Spiega se tornare nell’app oppure riaprirla ha cambiato il sintomo. Se ricompare, indica la schermata esatta e l’azione immediatamente precedente. Questi dati aiutano a distinguere navigazione e riproduzione; non provano un’interruzione generale del servizio né una disconnessione sul server. Comunicali all’assistenza senza password o indirizzi privati delle playlist."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV op Apple TV: teruggaan naar de speler of afsluiten?",
+      "excerpt": "Naar een andere Apple TV-app gaan en een vastgelopen speler afsluiten zijn verschillende handelingen. Kies op basis van het scherm voordat je account- of apparaatinstellingen verandert.",
+      "seo_title": "Geo IPTV op Apple TV: wisselen of afsluiten?",
+      "seo_description": "Maak bij Geo IPTV op Apple TV onderscheid tussen wisselen van app en een vastgelopen speler afsluiten. Noteer het resultaat zonder accountinstellingen te wijzigen.",
+      "sections": [
+        {
+          "heading": "Bepaal welk scherm je wilt terugzien",
+          "paragraphs": [
+            "Begin het wisselen van apps voor Geo IPTV met een eenvoudige vraag: wil je terug naar een reagerende speler of negeert die je invoer? Apple beschrijft dat je met twee drukken op de TV-knop de appkiezer opent en vervolgens een app kiest. Noteer eerst de naam van de speler en het scherm waarnaar je wilt terugkeren. Wisselen tussen apps is een navigatiekeuze, geen aanleiding om je abonnement te wijzigen of een opgeslagen configuratie te verwijderen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: wisselen tussen apps op Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Houd afsluiten als aparte controle",
+          "paragraphs": [
+            "Voor een app die niet reageert beschrijft Apple dat je deze in de appkiezer markeert en omhoog veegt om af te sluiten. Doe dat gericht voor die app; steeds alle apps sluiten levert geen bruikbare vergelijking op. Noteer onafgemaakte handelingen, open dezelfde speler opnieuw en herhaal één eenvoudige actie. Neem niet aan dat de positie in het programma behouden blijft. Verwijder bij deze eerste controle geen app of gegevens en reset niet de volledige Apple TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: een niet-reagerende Apple TV-app herstarten",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf het kleinste herhaalbare verschil",
+          "paragraphs": [
+            "Noteer het Apple TV-model, de tvOS-versie en spelerversie en of gewone menu’s wel werkten. Beschrijf of teruggaan naar de app of opnieuw openen het symptoom veranderde. Herhaalt het probleem zich, vermeld dan het exacte scherm en de direct voorafgaande handeling. Dit helpt navigatieproblemen van afspeelproblemen te onderscheiden; het bewijst geen algemene servicestoring of afmelding op de server. Deel deze gegevens met ondersteuning zonder wachtwoorden of privé-adressen van afspeellijsten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV na Apple TV: voltar ao leitor ou fechá-lo?",
+      "excerpt": "Mudar de aplicação na Apple TV e fechar um leitor bloqueado são ações diferentes. Escolha conforme o sintoma antes de alterar a conta ou as definições do dispositivo.",
+      "seo_title": "Geo IPTV na Apple TV: mudar de app ou fechar?",
+      "seo_description": "Distinga mudar de aplicação de fechar um leitor sem resposta na Apple TV para Geo IPTV e anote o resultado sem alterar as definições da conta.",
+      "sections": [
+        {
+          "heading": "Decida que ecrã quer recuperar",
+          "paragraphs": [
+            "Comece a mudança de aplicação para Geo IPTV com uma pergunta simples: pretende voltar a um leitor que responde ou ele ignora os comandos? A Apple descreve abrir o seletor com dois toques no botão TV e escolher uma aplicação. Antes, anote o nome do leitor e o ecrã a que quer regressar. Alternar entre aplicações é uma escolha de navegação, não um motivo para alterar a subscrição ou apagar uma configuração guardada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: alternar entre aplicações na Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Trate o fecho como uma verificação distinta",
+          "paragraphs": [
+            "Para uma aplicação sem resposta, a Apple indica destacá-la no seletor e deslizar para cima para a fechar. Faça isso especificamente nessa aplicação; fechar todas repetidamente não oferece uma comparação útil. Anote alguma ação por terminar, reabra o mesmo leitor e repita uma ação simples. Não presuma que a posição no programa ficará guardada. Nesta primeira verificação, evite desinstalar, apagar dados ou repor toda a Apple TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reiniciar uma aplicação Apple TV sem resposta",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva a menor diferença que consiga repetir",
+          "paragraphs": [
+            "Registe o modelo da Apple TV, a versão do tvOS e a do leitor, e se os menus normais funcionavam. Diga se regressar à aplicação ou reabri-la mudou o sintoma. Se voltar a acontecer, indique o ecrã exato e a ação imediatamente anterior. Estas observações distinguem navegação de reprodução; não demonstram uma falha geral do serviço nem uma saída da conta no servidor. Envie esses detalhes ao apoio sem palavras-passe ou endereços privados de listas de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV на Apple TV: вернуться в плеер или закрыть его?",
+      "excerpt": "Переход в другое приложение Apple TV и закрытие зависшего плеера — разные действия. Выберите нужное по симптому до изменения аккаунта или настроек устройства.",
+      "seo_title": "Geo IPTV на Apple TV: переключение или закрытие",
+      "seo_description": "Различайте переключение приложений и закрытие зависшего плеера для Geo IPTV на Apple TV. Запишите результат без изменения настроек аккаунта.",
+      "sections": [
+        {
+          "heading": "Решите, какой экран нужно открыть",
+          "paragraphs": [
+            "При переключении приложений для Geo IPTV начните с простого вопроса: вы возвращаетесь в работающий плеер или он не реагирует на команды? Apple описывает открытие переключателя двойным нажатием кнопки TV, после чего выбирают приложение. Сначала запишите название плеера и экран, к которому хотите вернуться. Переход между приложениями относится к навигации, а не служит поводом менять подписку или удалять сохранённую конфигурацию."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: переключение приложений на Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте закрытие от переключения",
+          "paragraphs": [
+            "Для приложения без ответа Apple описывает выбор в переключателе и смахивание вверх для закрытия. Делайте это целенаправленно с нужным приложением: постоянное закрытие всех приложений не даёт полезного сравнения. Запишите незавершённое действие, снова откройте тот же плеер и повторите одну простую операцию. Не рассчитывайте на сохранение позиции в программе. Для первой проверки не удаляйте приложение или его данные и не сбрасывайте весь Apple TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: перезапуск приложения Apple TV без ответа",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите минимальное воспроизводимое различие",
+          "paragraphs": [
+            "Укажите модель Apple TV, версии tvOS и плеера, а также работала ли обычная навигация по меню. Опишите, изменился ли симптом после возврата в приложение или повторного открытия. Если проблема повторяется, укажите точный экран и предыдущее действие. Это помогает различать навигацию и воспроизведение, но не доказывает общую недоступность сервиса или выход из аккаунта на сервере. Передайте поддержке наблюдения без паролей и приватных адресов плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اور Apple TV: پلیئر پر واپس جائیں یا اسے بند کریں؟",
+      "excerpt": "Apple TV کی دوسری ایپ پر جانا اور رکے ہوئے پلیئر کو بند کرنا الگ عمل ہیں۔ اکاؤنٹ یا ڈیوائس کی سیٹنگ بدلنے سے پہلے اسکرین کے مطابق قدم چنیں۔",
+      "seo_title": "Geo IPTV پر Apple TV کی ایپ بدلیں یا بند کریں",
+      "seo_description": "Geo IPTV کے لیے Apple TV پر ایپ بدلنے اور جواب نہ دینے والا پلیئر بند کرنے کا فرق سمجھیں۔ اکاؤنٹ کی سیٹنگ بدلے بغیر نتیجہ لکھیں۔",
+      "sections": [
+        {
+          "heading": "طے کریں کہ اگلی اسکرین کیا ہونی چاہیے",
+          "paragraphs": [
+            "Geo IPTV کے لیے ایپ بدلنے کی ابتدا اس سوال سے کریں: کیا آپ چلتے ہوئے پلیئر پر واپس جانا چاہتے ہیں یا وہ بٹنوں کا جواب نہیں دے رہا؟ Apple کے مطابق TV بٹن دو بار دبانے سے ایپ سلیکٹر کھلتا ہے، پھر ایپ منتخب کی جاتی ہے۔ پہلے پلیئر کا نام اور مطلوبہ اسکرین لکھ لیں۔ ایپس کے درمیان جانا راستہ بدلنے کا عمل ہے، سبسکرپشن بدلنے یا محفوظ سیٹ اپ مٹانے کی وجہ نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV پر ایپس کے درمیان جانا",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "ایپ بند کرنے کو الگ جانچ رکھیں",
+          "paragraphs": [
+            "جو ایپ جواب نہ دے، اس کے لیے Apple سلیکٹر میں اسے نمایاں کرکے اوپر سوائپ کرنے سے بند کرنے کا طریقہ بتاتا ہے۔ یہ قدم اسی ایپ پر سوچ سمجھ کر کریں؛ بار بار تمام ایپس بند کرنا مفید موازنہ نہیں۔ نامکمل کام نوٹ کریں، وہی پلیئر دوبارہ کھولیں اور ایک سادہ عمل دہرائیں۔ پروگرام کا پچھلا مقام محفوظ رہنے کی توقع نہ رکھیں۔ اس پہلی جانچ کے لیے ایپ حذف، ڈیٹا صاف یا پورا Apple TV ری سیٹ نہ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: جواب نہ دینے والی Apple TV ایپ دوبارہ چلائیں",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "سب سے چھوٹا دہرایا جا سکنے والا فرق بتائیں",
+          "paragraphs": [
+            "Apple TV کا ماڈل، tvOS اور پلیئر کے ورژن لکھیں اور بتائیں کہ عام مینو چل رہے تھے یا نہیں۔ واضح کریں کہ ایپ پر واپس آنے یا اسے دوبارہ کھولنے سے علامت بدلی یا نہیں۔ مسئلہ لوٹے تو عین اسکرین اور اس سے فوراً پہلے کیا عمل ہوا، یہ بتائیں۔ ان مشاہدات سے مینو اور پلے بیک کے مسئلے کا فرق سمجھنے میں مدد ملتی ہے؛ پوری سروس بند ہونا یا سرور سے لاگ آؤٹ ہونا ثابت نہیں ہوتا۔ معاونت کو یہ تفصیل دیں، پاس ورڈ یا نجی پلے لسٹ کا پتہ نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV على Apple TV: العودة إلى المشغّل أم إغلاقه؟",
+      "excerpt": "الانتقال إلى تطبيق آخر على Apple TV وإغلاق مشغّل عالق إجراءان مختلفان. اختر ما يناسب الشاشة قبل تغيير الحساب أو إعدادات الجهاز.",
+      "seo_title": "Geo IPTV على Apple TV: تبديل التطبيق أم إغلاقه؟",
+      "seo_description": "ميّز تبديل التطبيقات من إغلاق مشغّل لا يستجيب على Apple TV مع Geo IPTV، وسجّل النتيجة دون تغيير إعدادات الحساب أو حذف التهيئة.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة التي تريد الرجوع إليها",
+          "paragraphs": [
+            "ابدأ تبديل التطبيق مع Geo IPTV بسؤال بسيط: هل تريد العودة إلى مشغّل يستجيب أم أنه يتجاهل الأوامر؟ تصف Apple فتح مبدّل التطبيقات بالضغط مرتين على زر TV، ثم اختيار التطبيق. سجّل أولاً اسم المشغّل والشاشة المقصودة. الانتقال بين التطبيقات اختيار للتنقل، وليس سبباً لتغيير الاشتراك أو حذف إعداد محفوظ."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: التبديل بين التطبيقات على Apple TV",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "اجعل الإغلاق خطوة فحص منفصلة",
+          "paragraphs": [
+            "للتطبيق غير المستجيب، تصف Apple تحديده في المبدّل والسحب للأعلى لإغلاقه. نفّذ ذلك عمداً للتطبيق المعني؛ إغلاق كل التطبيقات مراراً لا يعطي مقارنة مفيدة. سجّل أي إجراء غير مكتمل، وافتح المشغّل نفسه مجدداً وكرّر إجراءً بسيطاً واحداً. لا تفترض حفظ موضع البرنامج السابق. تجنّب حذف التطبيق أو مسح بياناته أو إعادة ضبط Apple TV بالكامل لهذه المراجعة الأولى."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: إعادة تشغيل تطبيق Apple TV غير مستجيب",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "صف أصغر فرق يمكن تكراره",
+          "paragraphs": [
+            "سجّل طراز Apple TV وإصدارَي tvOS والمشغّل، وهل كان التنقل المعتاد في القوائم يعمل. بيّن إن كانت العودة للتطبيق أو إعادة فتحه قد غيّرت العَرَض. إذا تكرر، اذكر الشاشة الدقيقة والإجراء السابق مباشرة. تساعد هذه الملاحظات في فصل مشكلة التنقل عن شكوى التشغيل، لكنها لا تثبت انقطاعاً عاماً للخدمة أو تسجيل خروج من الخادم. أعطِ الدعم هذه التفاصيل دون كلمات مرور أو عناوين قوائم تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV और Apple TV: प्लेयर पर लौटें या उसे बंद करें?",
+      "excerpt": "Apple TV की दूसरी ऐप पर जाना और अटके प्लेयर को बंद करना अलग कार्रवाइयाँ हैं। खाते या डिवाइस की सेटिंग बदलने से पहले स्क्रीन के अनुसार कदम चुनें।",
+      "seo_title": "Geo IPTV पर Apple TV: ऐप बदलें या बंद करें?",
+      "seo_description": "Geo IPTV के लिए Apple TV पर ऐप बदलने और जवाब न देने वाले प्लेयर को बंद करने का अंतर समझें। खाते की सेटिंग बदले बिना परिणाम लिखें।",
+      "sections": [
+        {
+          "heading": "तय करें कि अगली स्क्रीन कौन सी चाहिए",
+          "paragraphs": [
+            "Geo IPTV में ऐप बदलने की शुरुआत एक आसान सवाल से करें: क्या आप काम कर रहे प्लेयर पर लौटना चाहते हैं या वह बटन का जवाब नहीं दे रहा? Apple के अनुसार TV बटन दो बार दबाने से ऐप स्विचर खुलता है, फिर ऐप चुनी जाती है। पहले प्लेयर का नाम और जिस स्क्रीन पर लौटना है वह लिख लें। ऐप के बीच जाना नेविगेशन का विकल्प है, सदस्यता बदलने या सहेजा सेटअप हटाने की वजह नहीं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV पर ऐप के बीच बदलना",
+              "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "ऐप बंद करने को अलग जाँच रखें",
+          "paragraphs": [
+            "जवाब न देने वाली ऐप के लिए Apple स्विचर में उसे चुनकर ऊपर स्वाइप करने से बंद करने का तरीका बताता है। यह कदम उसी ऐप पर सोचकर करें; बार-बार सभी ऐप बंद करना उपयोगी तुलना नहीं देता। अधूरा काम नोट करें, वही प्लेयर दोबारा खोलें और एक साधारण काम दोहराएँ। पिछले कार्यक्रम का स्थान सुरक्षित रहने की उम्मीद न करें। इस पहली जाँच के लिए ऐप हटाना, डेटा मिटाना या पूरा Apple TV रीसेट करना टालें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: जवाब न देने वाली Apple TV ऐप दोबारा चलाएँ",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "सबसे छोटा दोहराने योग्य फर्क बताएँ",
+          "paragraphs": [
+            "Apple TV का मॉडल, tvOS और प्लेयर के संस्करण लिखें और बताएँ कि सामान्य मेनू चल रहे थे या नहीं। स्पष्ट करें कि ऐप पर लौटने या उसे दोबारा खोलने से लक्षण बदला या नहीं। समस्या दोहराए तो ठीक स्क्रीन और उससे तुरंत पहले की कार्रवाई बताएँ। ये बातें नेविगेशन और प्लेबैक की समस्या अलग समझने में मदद करती हैं; पूरी सेवा बंद होने या सर्वर से लॉगआउट होने का प्रमाण नहीं हैं। सहायता को यही विवरण दें, पासवर्ड या निजी प्लेलिस्ट का पता नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: switch between apps on Apple TV",
+      "url": "https://support.apple.com/guide/tv/switch-between-apps-atvbbcec4f4e/tvos"
+    },
+    {
+      "label": "Apple: restart an unresponsive Apple TV app",
+      "url": "https://support.apple.com/en-ca/guide/tv/atvb39f389ec/tvos"
+    }
+  ]
+}

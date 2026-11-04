@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-04",
+  "topic": "Separate Fire TV display output resolution from the resolution of the video actually being played",
+  "primary_keyword": "Trex IPTV display resolution",
+  "slug": "trex-fire-tv-display-output-stream-resolution",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV display resolution: output is not stream quality",
+      "excerpt": "A television’s HDMI information and a player’s video details describe different stages. Record both before treating a high output setting as proof of higher-quality content.",
+      "seo_title": "Trex IPTV display resolution: output is not stream quality",
+      "seo_description": "A television’s HDMI information and a player’s video details describe different stages. Record both before treating a high output setting as proof of higher-quality content.",
+      "sections": [
+        {
+          "heading": "Separate the device, display and stream",
+          "paragraphs": [
+            "Trex IPTV display resolution is easier to discuss when you identify which number you are reading. A Fire TV device sends an output picture to the television, while a player receives video with its own characteristics. The TV’s input information is therefore not a complete description of the source. Record the Fire TV model, TV model, HDMI connection and the exact screen showing the number. The Trex IPTV 8K brand name alone does not establish an 8K stream or compatible hardware."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the model rather than a familiar product name",
+          "paragraphs": [
+            "Amazon publishes Fire TV specifications by model, and display capabilities vary. Compare the exact device with the manufacturer’s specification page instead of borrowing a limit from another stick or television. If a player displays source resolution, note its label separately from the TV’s input reading. If it does not provide that information, leave the source resolution unknown. Do not infer it from sharper menus or change several display settings at once."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare specifications for the exact Fire TV model",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the comparison useful",
+          "paragraphs": [
+            "Use the same programme and viewing position when describing an issue; different material is not a controlled comparison. Avoid changing subscription length simply to test a display number. Give private support the model details, the two readings where available and a plain description such as soft text or blocky motion. Remove account details from screenshots. These notes help explain what you see without promising a resolution, diagnosing the stream or confusing output capability with delivered quality."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Trex IPTV: resolución de salida y calidad de la transmisión",
+      "excerpt": "La información HDMI del televisor y los detalles de vídeo del reproductor describen etapas distintas. Anota ambos antes de interpretar una salida alta como mejor contenido.",
+      "seo_title": "Trex IPTV: resolución de salida y calidad de la transmisión",
+      "seo_description": "La información HDMI del televisor y los detalles de vídeo del reproductor describen etapas distintas. Anota ambos antes de interpretar una salida alta como mejor contenido.",
+      "sections": [
+        {
+          "heading": "Distingue dispositivo, pantalla y transmisión",
+          "paragraphs": [
+            "Para hablar de resolución de Trex IPTV, identifica primero de dónde sale el número. Fire TV envía una imagen de salida al televisor, mientras el reproductor recibe un vídeo con características propias. La información de entrada del televisor no describe por completo la fuente. Anota modelos de Fire TV y televisor, conexión HDMI y pantalla exacta donde aparece el dato. El nombre Trex IPTV 8K por sí solo no demuestra una transmisión 8K ni hardware compatible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba el modelo exacto",
+          "paragraphs": [
+            "Amazon publica especificaciones de Fire TV por modelo y las capacidades de pantalla varían. Consulta el dispositivo exacto en la página del fabricante en lugar de copiar el límite de otro aparato. Si el reproductor muestra resolución de origen, anota su etiqueta por separado del dato del televisor. Si no ofrece esa información, deja la resolución de origen como desconocida. No la deduzcas de menús más nítidos ni cambies varios ajustes a la vez."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: especificaciones del modelo exacto de Fire TV",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Haz útil la comparación",
+          "paragraphs": [
+            "Describe el problema con el mismo programa y desde la misma posición; cambiar el material no es una comparación controlada. Evita cambiar la duración del plan solo para probar un número. Da a soporte privado los modelos, las dos lecturas disponibles y una descripción como texto borroso o movimiento pixelado. Oculta los datos de cuenta en capturas. Las notas explican lo observado sin prometer resolución, diagnosticar la transmisión ni confundir capacidad de salida con calidad recibida."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Trex IPTV : résolution de sortie et qualité du flux",
+      "excerpt": "Les informations HDMI du téléviseur et les détails vidéo du lecteur décrivent deux étapes. Notez les deux avant de prendre une sortie élevée pour une preuve de meilleure qualité.",
+      "seo_title": "Trex IPTV : résolution de sortie et qualité du flux",
+      "seo_description": "Les informations HDMI du téléviseur et les détails vidéo du lecteur décrivent deux étapes. Notez les deux avant de prendre une sortie élevée pour une preuve de meilleure qualité.",
+      "sections": [
+        {
+          "heading": "Distinguez appareil, écran et flux",
+          "paragraphs": [
+            "Pour parler de résolution Trex IPTV, identifiez d’abord l’origine du nombre affiché. Fire TV envoie une image de sortie au téléviseur, tandis que le lecteur reçoit une vidéo avec ses propres caractéristiques. Les informations d’entrée du téléviseur ne décrivent donc pas entièrement la source. Notez modèles Fire TV et téléviseur, connexion HDMI et écran exact affichant le chiffre. Le nom Trex IPTV 8K ne prouve à lui seul ni un flux 8K ni un matériel compatible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez le modèle précis",
+          "paragraphs": [
+            "Amazon publie les caractéristiques Fire TV par modèle et les capacités d’affichage varient. Comparez votre appareil à sa fiche constructeur au lieu de reprendre la limite d’un autre modèle. Si le lecteur affiche la résolution source, notez son libellé séparément de l’indication du téléviseur. Sans cette information, gardez la résolution source comme inconnue. Ne la déduisez pas de menus plus nets et ne changez pas plusieurs réglages ensemble."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : caractéristiques du modèle Fire TV précis",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Gardez une comparaison utile",
+          "paragraphs": [
+            "Décrivez le souci avec le même programme et depuis la même position ; changer de contenu ne permet pas une comparaison contrôlée. Ne changez pas la durée d’abonnement pour tester un chiffre d’affichage. Donnez à l’assistance privée les modèles, les deux indications disponibles et une description simple, par exemple texte flou ou mouvement pixellisé. Masquez les données du compte dans les captures. Ces notes décrivent l’observation sans promettre une résolution, diagnostiquer le flux ou confondre sortie et qualité reçue."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Trex IPTV: risoluzione in uscita e qualità del flusso",
+      "excerpt": "I dati HDMI del televisore e i dettagli video del lettore descrivono fasi diverse. Annotali entrambi prima di considerare un’uscita alta prova di contenuti migliori.",
+      "seo_title": "Trex IPTV: risoluzione in uscita e qualità del flusso",
+      "seo_description": "I dati HDMI del televisore e i dettagli video del lettore descrivono fasi diverse. Annotali entrambi prima di considerare un’uscita alta prova di contenuti migliori.",
+      "sections": [
+        {
+          "heading": "Distingui dispositivo, schermo e flusso",
+          "paragraphs": [
+            "Per parlare della risoluzione Trex IPTV, individua prima l’origine del numero letto. Fire TV invia un’immagine in uscita al televisore, mentre il lettore riceve video con caratteristiche proprie. I dati dell’ingresso TV non descrivono quindi completamente la sorgente. Annota modelli di Fire TV e televisore, collegamento HDMI e schermata esatta che mostra il valore. Il nome Trex IPTV 8K da solo non dimostra un flusso 8K né hardware compatibile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla il modello preciso",
+          "paragraphs": [
+            "Amazon pubblica specifiche Fire TV per modello e le capacità di visualizzazione cambiano. Confronta il dispositivo esatto con la scheda del produttore, senza copiare il limite di un’altra chiavetta o TV. Se il lettore mostra la risoluzione sorgente, annotane l’etichetta separatamente dal valore del televisore. Se il dato manca, lascialo sconosciuto. Non dedurlo da menu più nitidi e non cambiare più impostazioni insieme."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: specifiche del modello Fire TV esatto",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Rendi utile il confronto",
+          "paragraphs": [
+            "Descrivi il problema con lo stesso programma e dalla stessa posizione; contenuti diversi non costituiscono un confronto controllato. Evita di cambiare durata dell’abbonamento solo per verificare un numero. Fornisci all’assistenza privata modelli, due letture se disponibili e una descrizione semplice, come testo poco nitido o movimento a blocchi. Nascondi i dati dell’account negli screenshot. Queste note spiegano ciò che vedi senza promettere risoluzioni, diagnosticare il flusso o confondere capacità d’uscita e qualità ricevuta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV: uitvoerresolutie is geen bewijs van streamkwaliteit",
+      "excerpt": "HDMI-informatie van de televisie en videogegevens van de speler beschrijven verschillende stappen. Noteer beide voordat je een hoge uitvoer als betere bron ziet.",
+      "seo_title": "Trex IPTV: uitvoerresolutie is geen bewijs van streamkwaliteit",
+      "seo_description": "HDMI-informatie van de televisie en videogegevens van de speler beschrijven verschillende stappen. Noteer beide voordat je een hoge uitvoer als betere bron ziet.",
+      "sections": [
+        {
+          "heading": "Scheid apparaat, scherm en stream",
+          "paragraphs": [
+            "Bespreek de Trex IPTV-schermresolutie door eerst te bepalen waar het getal vandaan komt. Fire TV stuurt uitvoerbeeld naar de televisie, terwijl de speler video met eigen kenmerken ontvangt. De ingangsinformatie van de tv beschrijft de bron dus niet volledig. Noteer Fire TV-model, tv-model, HDMI-aansluiting en het precieze scherm met het getal. De merknaam Trex IPTV 8K bewijst op zichzelf geen 8K-stream of geschikte hardware."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer het precieze model",
+          "paragraphs": [
+            "Amazon publiceert Fire TV-specificaties per model; schermmogelijkheden verschillen. Vergelijk jouw apparaat met de juiste fabrikantpagina en neem geen grens van een andere stick of tv over. Toont de speler bronresolutie, noteer dan het label los van de ingangswaarde van de televisie. Ontbreekt die informatie, houd de bronresolutie dan onbekend. Leid die niet af uit scherpere menu’s en wijzig niet meerdere beeldinstellingen tegelijk."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: specificaties van jouw precieze Fire TV-model",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Houd de vergelijking bruikbaar",
+          "paragraphs": [
+            "Beschrijf het probleem bij hetzelfde programma en vanaf dezelfde kijkpositie; ander materiaal geeft geen gecontroleerde vergelijking. Verander niet de abonnementsduur om een beeldgetal te testen. Geef privéondersteuning modellen, beide waarden waar beschikbaar en een eenvoudige beschrijving, zoals zachte tekst of blokkerige beweging. Verwijder accountgegevens uit schermafbeeldingen. De notities beschrijven wat je ziet zonder resolutie te beloven, de stream te diagnosticeren of uitvoercapaciteit met ontvangen kwaliteit te verwarren."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Trex IPTV: resolução de saída não é qualidade da transmissão",
+      "excerpt": "Os dados HDMI da TV e os detalhes de vídeo do leitor descrevem etapas diferentes. Anote ambos antes de considerar uma saída alta prova de conteúdo melhor.",
+      "seo_title": "Trex IPTV: resolução de saída não é qualidade da transmissão",
+      "seo_description": "Os dados HDMI da TV e os detalhes de vídeo do leitor descrevem etapas diferentes. Anote ambos antes de considerar uma saída alta prova de conteúdo melhor.",
+      "sections": [
+        {
+          "heading": "Separe aparelho, tela e transmissão",
+          "paragraphs": [
+            "Para discutir resolução de exibição no Trex IPTV, identifique primeiro de onde vem o número. O Fire TV envia uma imagem de saída à televisão, enquanto o leitor recebe vídeo com características próprias. A informação de entrada da TV não descreve toda a fonte. Anote modelos do Fire TV e da TV, conexão HDMI e a tela exata que mostra o valor. A marca Trex IPTV 8K, sozinha, não comprova transmissão 8K nem hardware compatível."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifique o modelo exato",
+          "paragraphs": [
+            "A Amazon publica especificações do Fire TV por modelo, e as capacidades de exibição variam. Compare seu aparelho com a página correta do fabricante, sem copiar o limite de outro dispositivo. Se o leitor mostrar resolução de origem, anote o rótulo separadamente do dado da TV. Sem essa informação, deixe a resolução de origem desconhecida. Não a deduza de menus mais nítidos nem mude vários ajustes de imagem de uma vez."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: especificações do modelo exato de Fire TV",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Mantenha a comparação útil",
+          "paragraphs": [
+            "Descreva o problema com o mesmo programa e da mesma posição; material diferente não é comparação controlada. Evite mudar a duração da assinatura só para testar um número. Informe ao suporte privado os modelos, as duas leituras disponíveis e uma descrição simples, como texto pouco nítido ou movimento em blocos. Remova dados da conta das capturas. Essas notas explicam o que vê sem prometer resolução, diagnosticar a transmissão ou confundir capacidade de saída com qualidade entregue."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Trex IPTV: разрешение выхода и качество потока — разные вещи",
+      "excerpt": "Информация HDMI телевизора и параметры видео в плеере описывают разные этапы. Запишите оба значения, прежде чем считать высокое разрешение выхода доказательством качества.",
+      "seo_title": "Trex IPTV: разрешение выхода и качество потока — разные вещи",
+      "seo_description": "Информация HDMI телевизора и параметры видео в плеере описывают разные этапы. Запишите оба значения, прежде чем считать высокое разрешение выхода доказательством качества.",
+      "sections": [
+        {
+          "heading": "Разделите устройство, экран и поток",
+          "paragraphs": [
+            "Обсуждая разрешение Trex IPTV, сначала определите, откуда взялось число. Fire TV передаёт выходное изображение телевизору, а плеер получает видео со своими характеристиками. Сведения о входе телевизора не описывают источник полностью. Запишите модели Fire TV и телевизора, соединение HDMI и точный экран, показывающий значение. Само название Trex IPTV 8K не доказывает наличие потока 8K или совместимого оборудования."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте точную модель",
+          "paragraphs": [
+            "Amazon публикует характеристики Fire TV по моделям, и возможности отображения различаются. Сравните своё устройство с нужной страницей производителя, не перенося ограничение другой приставки или телевизора. Если плеер показывает разрешение источника, запишите его подпись отдельно от показателя телевизора. Если информации нет, оставьте разрешение источника неизвестным. Не выводите его из более чётких меню и не меняйте несколько настроек сразу."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: характеристики точной модели Fire TV",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сделайте сравнение полезным",
+          "paragraphs": [
+            "Описывайте проблему на той же программе и с того же места; другой материал не даёт контролируемого сравнения. Не меняйте срок подписки ради проверки числа на экране. Передайте личной поддержке модели, оба доступных показателя и простое описание, например нечёткий текст или движение блоками. Уберите данные аккаунта со снимков. Заметки объясняют наблюдение, не обещая разрешение, не определяя неисправность потока и не путая возможности выхода с полученным качеством."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کی ڈسپلے ریزولوشن: آؤٹ پٹ اور ویڈیو الگ ہیں",
+      "excerpt": "ٹی وی کی HDMI معلومات اور پلیئر کی ویڈیو تفصیل مختلف مراحل بتاتی ہیں۔ بڑی آؤٹ پٹ کو بہتر ویڈیو کا ثبوت سمجھنے سے پہلے دونوں الگ نوٹ کریں۔",
+      "seo_title": "Trex IPTV کی ڈسپلے ریزولوشن: آؤٹ پٹ اور ویڈیو الگ ہیں",
+      "seo_description": "ٹی وی کی HDMI معلومات اور پلیئر کی ویڈیو تفصیل مختلف مراحل بتاتی ہیں۔ بڑی آؤٹ پٹ کو بہتر ویڈیو کا ثبوت سمجھنے سے پہلے دونوں الگ نوٹ کریں۔",
+      "sections": [
+        {
+          "heading": "آلے، اسکرین اور اسٹریم کو الگ سمجھیں",
+          "paragraphs": [
+            "Trex IPTV کی ڈسپلے ریزولوشن بتاتے وقت پہلے دیکھیں کہ نمبر کہاں پڑھ رہے ہیں۔ Fire TV ٹی وی کو آؤٹ پٹ تصویر بھیجتا ہے، جبکہ پلیئر اپنی خصوصیات والی ویڈیو وصول کرتا ہے۔ اس لیے ٹی وی کی ان پٹ معلومات ماخذ کی مکمل تفصیل نہیں۔ Fire TV اور ٹی وی کے ماڈل، HDMI کنکشن اور نمبر دکھانے والی اسکرین لکھیں۔ صرف Trex IPTV 8K نام سے 8K اسٹریم یا موافق ہارڈویئر کی تصدیق نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مانوس نام کے بجائے درست ماڈل دیکھیں",
+          "paragraphs": [
+            "Amazon مختلف Fire TV ماڈلز کی تفصیلات دیتا ہے اور ڈسپلے کی صلاحیتیں بدلتی ہیں۔ اپنے درست آلے کا متعلقہ سرکاری صفحہ دیکھیں؛ دوسرے اسٹک یا ٹی وی کی حد نہ اپنائیں۔ پلیئر میں ماخذ کی ریزولوشن دکھے تو اس کا لیبل ٹی وی کی ریڈنگ سے الگ لکھیں۔ معلومات نہ ہوں تو ماخذ کی ریزولوشن نامعلوم رکھیں۔ صاف مینو سے اسے اخذ نہ کریں اور کئی ڈسپلے ترتیبات اکٹھی نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: درست Fire TV ماڈل کی تفصیلات",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "موازنے کو مفید رکھیں",
+          "paragraphs": [
+            "مسئلہ بتاتے وقت وہی پروگرام اور دیکھنے کی وہی جگہ رکھیں؛ مختلف مواد باقاعدہ موازنہ نہیں۔ صرف نمبر چیک کرنے کے لیے سبسکرپشن کی مدت نہ بدلیں۔ نجی سپورٹ کو ماڈل، دستیاب دونوں ریڈنگز اور سادہ مشاہدہ مثلاً دھندلا متن یا چوکور حرکت بتائیں۔ اسکرین شاٹس سے اکاؤنٹ کی معلومات ہٹا دیں۔ یہ نوٹس مشاہدہ سمجھاتے ہیں؛ ریزولوشن کی ضمانت، اسٹریم کی خرابی کا فیصلہ یا آؤٹ پٹ کو اصل معیار سمجھنا درست نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Trex IPTV: دقة الخرج ليست جودة البث نفسه",
+      "excerpt": "معلومات HDMI في التلفاز وتفاصيل الفيديو في المشغّل تصف مرحلتين مختلفتين. سجّل الاثنتين قبل اعتبار دقة خرج عالية دليلاً على جودة المحتوى.",
+      "seo_title": "Trex IPTV: دقة الخرج ليست جودة البث نفسه",
+      "seo_description": "معلومات HDMI في التلفاز وتفاصيل الفيديو في المشغّل تصف مرحلتين مختلفتين. سجّل الاثنتين قبل اعتبار دقة خرج عالية دليلاً على جودة المحتوى.",
+      "sections": [
+        {
+          "heading": "افصل الجهاز والشاشة والبث",
+          "paragraphs": [
+            "عند مناقشة دقة عرض Trex IPTV، حدّد أولاً مكان قراءة الرقم. يرسل Fire TV صورة خرج إلى التلفاز، بينما يستقبل المشغّل فيديو بخصائصه الخاصة. لذلك لا تصف معلومات مدخل التلفاز المصدر بالكامل. سجّل طرازَي Fire TV والتلفاز وتوصيل HDMI والشاشة الدقيقة التي تعرض الرقم. اسم Trex IPTV 8K وحده لا يثبت بثاً بدقة 8K أو أجهزة متوافقة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تحقق من الطراز الدقيق",
+          "paragraphs": [
+            "تنشر Amazon مواصفات Fire TV حسب الطراز، وتختلف قدرات العرض. قارن جهازك بصفحة مواصفاته لدى الشركة ولا تنقل حد جهاز أو تلفاز آخر. إذا عرض المشغّل دقة المصدر، فسجّل اسم الحقل منفصلاً عن قراءة التلفاز. إن لم يعرضها، اترك دقة المصدر مجهولة. لا تستنتجها من قوائم أوضح ولا تغيّر عدة إعدادات عرض معاً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: مواصفات طراز Fire TV الدقيق",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "اجعل المقارنة مفيدة",
+          "paragraphs": [
+            "صف المشكلة باستخدام البرنامج نفسه ومن موضع المشاهدة نفسه؛ المحتوى المختلف ليس مقارنة مضبوطة. لا تغيّر مدة الاشتراك لمجرد اختبار رقم العرض. أعط الدعم الخاص تفاصيل الطرازين والقراءتين إن توفرتا ووصفاً بسيطاً مثل نص غير واضح أو حركة متكسرة. أخفِ بيانات الحساب من اللقطات. توضح الملاحظات ما تراه دون وعد بدقة أو تشخيص للبث أو خلط قدرة الخرج بالجودة المستلمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV डिस्प्ले रेज़ोल्यूशन: आउटपुट और स्ट्रीम अलग हैं",
+      "excerpt": "टीवी की HDMI जानकारी और प्लेयर के वीडियो विवरण अलग चरण बताते हैं। ऊंचे आउटपुट को बेहतर सामग्री का प्रमाण मानने से पहले दोनों अलग नोट करें।",
+      "seo_title": "Trex IPTV डिस्प्ले रेज़ोल्यूशन: आउटपुट और स्ट्रीम अलग हैं",
+      "seo_description": "टीवी की HDMI जानकारी और प्लेयर के वीडियो विवरण अलग चरण बताते हैं। ऊंचे आउटपुट को बेहतर सामग्री का प्रमाण मानने से पहले दोनों अलग नोट करें।",
+      "sections": [
+        {
+          "heading": "डिवाइस, स्क्रीन और स्ट्रीम अलग समझें",
+          "paragraphs": [
+            "Trex IPTV डिस्प्ले रेज़ोल्यूशन पर बात करते समय पहले देखें कि संख्या कहां पढ़ रहे हैं। Fire TV टीवी को आउटपुट तस्वीर भेजता है, जबकि प्लेयर अपनी विशेषताओं वाला वीडियो प्राप्त करता है। इसलिए टीवी की इनपुट जानकारी स्रोत का पूरा विवरण नहीं है। Fire TV और टीवी मॉडल, HDMI कनेक्शन और संख्या दिखाने वाली स्क्रीन लिखें। सिर्फ Trex IPTV 8K नाम से 8K स्ट्रीम या अनुकूल हार्डवेयर साबित नहीं होता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "परिचित नाम के बजाय सही मॉडल देखें",
+          "paragraphs": [
+            "Amazon हर Fire TV मॉडल के विनिर्देश देता है और डिस्प्ले क्षमता बदलती है। अपने सही डिवाइस का निर्माता पृष्ठ देखें; दूसरे स्टिक या टीवी की सीमा न अपनाएं। प्लेयर स्रोत का रेज़ोल्यूशन दिखाए तो उसका लेबल टीवी की रीडिंग से अलग लिखें। जानकारी न मिले तो स्रोत का रेज़ोल्यूशन अज्ञात रखें। अधिक साफ मेन्यू से अनुमान न लगाएं और कई डिस्प्ले सेटिंग एक साथ न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: सही Fire TV मॉडल के विनिर्देश",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+            }
+          ]
+        },
+        {
+          "heading": "तुलना उपयोगी रखें",
+          "paragraphs": [
+            "समस्या बताते समय वही कार्यक्रम और देखने की वही जगह रखें; अलग सामग्री नियंत्रित तुलना नहीं है। केवल डिस्प्ले संख्या जांचने के लिए सब्सक्रिप्शन अवधि न बदलें। निजी सहायता को मॉडल, उपलब्ध दोनों रीडिंग और सरल विवरण जैसे धुंधला पाठ या ब्लॉक जैसी गति बताएं। स्क्रीनशॉट से खाते की जानकारी हटा दें। नोट आपके अवलोकन समझाते हैं; वे रेज़ोल्यूशन का वादा, स्ट्रीम का निदान या आउटपुट क्षमता को मिले हुए गुणवत्ता का प्रमाण नहीं बनाते।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Fire TV device specifications",
+      "url": "https://developer.amazon.com/docs/device-specs/device-specifications-fire-tv-streaming-media-player.html"
+    }
+  ]
+}

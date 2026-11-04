@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-04",
+  "topic": "Android default app selection versus an available media handler: inspect the real chooser without installing or granting unrelated access",
+  "primary_keyword": "5G Live IPTV default app",
+  "slug": "5g-android-default-app-choice-open-once",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV default app: one opening or a saved choice?",
+      "excerpt": "An Android app chooser does not confirm which player you need. Identify the installed app and the action that opened the picker before saving a default.",
+      "seo_title": "5G Live IPTV default app: choose once before saving",
+      "seo_description": "Check a 5G Live IPTV default app choice on supported Pixel versions, distinguish one-time opening from a saved default and confirm the actual player first.",
+      "sections": [
+        {
+          "heading": "Identify what prompted the choice",
+          "paragraphs": [
+            "A 5G Live IPTV default app question starts with the action that brought up the chooser. Were you opening a link, a local media file or another app’s command? Record that step and the names of the apps offered. Check the intended player’s publisher and documented input support. A familiar name or icon alone is not enough to establish compatibility, and the 5G name does not identify a proprietary player."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use only the choices your phone actually offers",
+          "paragraphs": [
+            "Google’s Pixel guidance distinguishes “Just once” from a remembered “Always” choice when a picker appears; some steps require Android 14 or later. Check your model and Android version first, because this is not a universal Android TV procedure. For a comparison, avoid saving a new default until you understand the result. Repeat the same intended opening once and note whether the chosen app reaches a useful screen or reports an unsupported input."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: choose or change default apps on Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separate app selection from service access",
+          "paragraphs": [
+            "If the expected app is absent from the chooser, record that observation instead of installing an unknown alternative or granting unrelated permissions. An installed app may still be unsuitable for that particular action. Changing a default does not install an app, validate a provider or activate a plan. Keep full app data intact for this check. Report the phone model, app publisher, triggering action and exact message to support, without private links, passwords or account codes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV en Android: ¿abrir una vez o guardar la elección?",
+      "excerpt": "El selector de Android no confirma qué reproductor necesitas. Identifica la aplicación instalada y la acción que abrió el selector antes de guardar una opción predeterminada.",
+      "seo_title": "5G Live IPTV: elegir aplicación una vez o como predeterminada",
+      "seo_description": "Revisa la aplicación predeterminada para 5G Live IPTV en versiones compatibles de Pixel, distingue una apertura de una elección guardada y confirma el reproductor.",
+      "sections": [
+        {
+          "heading": "Identifica qué provocó la elección",
+          "paragraphs": [
+            "La consulta sobre la aplicación predeterminada de 5G Live IPTV empieza por la acción que abrió el selector. ¿Abrías un enlace, un archivo multimedia local o una orden de otra aplicación? Anota ese paso y los nombres de las aplicaciones ofrecidas. Comprueba el desarrollador del reproductor previsto y los tipos de entrada que documenta. Un nombre o icono conocido no demuestra compatibilidad, y el nombre 5G no identifica un reproductor propio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa solo las opciones que muestre el teléfono",
+          "paragraphs": [
+            "La guía de Pixel de Google distingue «Solo una vez» de la elección guardada «Siempre» cuando aparece un selector; algunos pasos requieren Android 14 o posterior. Comprueba primero modelo y versión, porque no es un procedimiento universal de Android TV. Para comparar, no guardes una nueva opción predeterminada hasta entender el resultado. Repite una vez la misma apertura y anota si la aplicación elegida llega a una pantalla útil o indica una entrada incompatible."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: elegir o cambiar aplicaciones predeterminadas en Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la selección de la aplicación del acceso al servicio",
+          "paragraphs": [
+            "Si la aplicación esperada no aparece, anótalo en vez de instalar una alternativa desconocida o conceder permisos ajenos al problema. Una aplicación instalada puede no servir para esa acción concreta. Cambiar la opción predeterminada no instala aplicaciones, valida al proveedor ni activa un plan. Conserva los datos completos de la aplicación durante esta comprobación. Comunica a soporte el modelo, desarrollador, acción inicial y mensaje exacto, sin enlaces privados, contraseñas ni códigos de cuenta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV sur Android : ouvrir une fois ou mémoriser ?",
+      "excerpt": "Le sélecteur Android ne confirme pas le lecteur nécessaire. Identifiez l’app installée et l’action qui a ouvert ce choix avant de mémoriser une valeur par défaut.",
+      "seo_title": "5G Live IPTV : ouverture unique ou app par défaut",
+      "seo_description": "Vérifiez le choix d’app pour 5G Live IPTV sur les versions Pixel compatibles, distinguez une ouverture unique d’un choix mémorisé et identifiez le lecteur.",
+      "sections": [
+        {
+          "heading": "Identifiez l’action qui a ouvert le choix",
+          "paragraphs": [
+            "Une question d’app par défaut pour 5G Live IPTV commence par l’action ayant ouvert le sélecteur. Ouvriez-vous un lien, un fichier multimédia local ou une commande d’une autre app ? Notez cette étape et les noms proposés. Vérifiez l’éditeur du lecteur prévu et les entrées prises en charge dans sa documentation. Un nom ou une icône familière ne suffit pas à établir la compatibilité, et le nom 5G ne désigne pas un lecteur propriétaire."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utilisez seulement les options réellement proposées",
+          "paragraphs": [
+            "Le guide Pixel de Google distingue « Une seule fois » du choix mémorisé « Toujours » lorsqu’un sélecteur apparaît ; certaines étapes demandent Android 14 ou ultérieur. Vérifiez d’abord modèle et version, car ce n’est pas une procédure universelle pour Android TV. Pour comparer, évitez de mémoriser un nouveau choix avant de comprendre le résultat. Répétez une seule fois la même ouverture et notez si l’app choisie atteint un écran utile ou signale une entrée non prise en charge."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : choisir ou modifier les apps par défaut sur Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez le choix d’app de l’accès au service",
+          "paragraphs": [
+            "Si l’app attendue manque dans le sélecteur, notez-le au lieu d’installer une alternative inconnue ou d’accorder des autorisations sans rapport. Une app installée peut ne pas convenir à cette action précise. Changer la valeur par défaut n’installe pas d’app, ne valide pas un fournisseur et n’active pas un forfait. Conservez les données de l’app pour ce contrôle. Donnez au support le modèle, l’éditeur, l’action initiale et le message exact, sans lien privé, mot de passe ou code de compte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV su Android: aprire una volta o salvare la scelta?",
+      "excerpt": "Il selettore di Android non conferma quale lettore serve. Identifica l’app installata e l’azione che ha aperto la scelta prima di impostare un valore predefinito.",
+      "seo_title": "5G Live IPTV: apertura singola o app predefinita",
+      "seo_description": "Controlla la scelta dell’app per 5G Live IPTV sulle versioni Pixel compatibili, distingui l’apertura singola dalla scelta salvata e identifica il lettore.",
+      "sections": [
+        {
+          "heading": "Identifica cosa ha fatto apparire la scelta",
+          "paragraphs": [
+            "Una domanda sull’app predefinita per 5G Live IPTV parte dall’azione che ha aperto il selettore. Stavi aprendo un link, un file multimediale locale o un comando di un’altra app? Segna quel passaggio e i nomi delle app proposte. Verifica lo sviluppatore del lettore previsto e gli ingressi supportati nella sua documentazione. Nome o icona familiari non bastano a dimostrare compatibilità, e il nome 5G non identifica un lettore proprietario."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa solo le opzioni effettivamente offerte dal telefono",
+          "paragraphs": [
+            "La guida Pixel di Google distingue «Solo una volta» dalla scelta salvata «Sempre» quando compare il selettore; alcuni passaggi richiedono Android 14 o successivo. Prima controlla modello e versione: non è una procedura universale per Android TV. Per un confronto, evita di salvare una nuova impostazione prima di capire il risultato. Ripeti una volta la stessa apertura e annota se l’app scelta raggiunge una schermata utile o segnala un ingresso non supportato."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: scegliere o cambiare le app predefinite su Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la scelta dell’app dall’accesso al servizio",
+          "paragraphs": [
+            "Se l’app prevista non appare, annotalo invece di installare un’alternativa sconosciuta o concedere permessi estranei. Un’app installata può comunque non essere adatta a quell’azione. Cambiare il valore predefinito non installa un’app, non convalida un fornitore e non attiva un piano. Conserva i dati completi dell’app durante questa verifica. Comunica all’assistenza modello, sviluppatore, azione iniziale e messaggio esatto, senza link privati, password o codici dell’account."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV op Android: één keer openen of de keuze bewaren?",
+      "excerpt": "De Android-appkiezer bevestigt niet welke speler nodig is. Controleer de geïnstalleerde app en de handeling die de keuze opende voordat je een standaard instelt.",
+      "seo_title": "5G Live IPTV: eenmalig openen of standaardapp",
+      "seo_description": "Controleer de appkeuze voor 5G Live IPTV op ondersteunde Pixel-versies, onderscheid eenmalig openen van een opgeslagen keuze en identificeer eerst de speler.",
+      "sections": [
+        {
+          "heading": "Bepaal waardoor de keuze verscheen",
+          "paragraphs": [
+            "Een vraag over de standaardapp voor 5G Live IPTV begint bij de handeling die de appkiezer opende. Opende je een link, een lokaal mediabestand of een opdracht uit een andere app? Noteer die stap en de namen van de aangeboden apps. Controleer de uitgever van de bedoelde speler en de gedocumenteerde invoerondersteuning. Een bekende naam of een pictogram bewijst geen compatibiliteit en de naam 5G duidt niet op een eigen speler."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik alleen de opties die de telefoon toont",
+          "paragraphs": [
+            "Google maakt in de Pixel-uitleg onderscheid tussen ‘Eenmalig’ en de opgeslagen keuze ‘Altijd’ wanneer een appkiezer verschijnt; sommige stappen vereisen Android 14 of nieuwer. Controleer eerst model en versie, want dit is geen universele Android TV-procedure. Bewaar voor een vergelijking geen nieuwe standaard voordat je het resultaat begrijpt. Herhaal dezelfde opening één keer en noteer of de gekozen app een bruikbaar scherm bereikt of ongeschikte invoer meldt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: standaardapps op Pixel kiezen of wijzigen",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid appkeuze van toegang tot de dienst",
+          "paragraphs": [
+            "Ontbreekt de verwachte app in de kiezer, noteer dat dan in plaats van een onbekend alternatief te installeren of ongerelateerde toestemmingen te geven. Een geïnstalleerde app kan ongeschikt zijn voor juist die handeling. Een standaard wijzigen installeert geen app, bevestigt geen provider en activeert geen abonnement. Laat de volledige appgegevens bij deze controle intact. Geef ondersteuning model, app-uitgever, beginhandeling en exacte melding, zonder privélinks, wachtwoorden of accountcodes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV no Android: abrir uma vez ou guardar a escolha?",
+      "excerpt": "O seletor de aplicações do Android não confirma qual o leitor necessário. Identifique a app instalada e a ação que abriu a escolha antes de guardar uma predefinição.",
+      "seo_title": "5G Live IPTV: abrir uma vez ou escolher app predefinida",
+      "seo_description": "Verifique a escolha de app para 5G Live IPTV em versões Pixel compatíveis, distinga a abertura única da escolha guardada e confirme primeiro o leitor.",
+      "sections": [
+        {
+          "heading": "Identifique o que provocou a escolha",
+          "paragraphs": [
+            "Uma dúvida sobre a app predefinida para 5G Live IPTV começa pela ação que abriu o seletor. Estava a abrir um link, um ficheiro multimédia local ou um comando de outra app? Registe esse passo e os nomes das aplicações oferecidas. Confirme o programador do leitor pretendido e os formatos de entrada documentados. Um nome ou ícone conhecido não comprova compatibilidade e o nome 5G não identifica um leitor próprio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use apenas as opções realmente apresentadas",
+          "paragraphs": [
+            "A orientação Pixel da Google distingue «Só uma vez» da escolha guardada «Sempre» quando surge um seletor; alguns passos exigem Android 14 ou posterior. Verifique primeiro o modelo e a versão, pois isto não é um procedimento universal de Android TV. Para comparar, não guarde uma nova predefinição antes de entender o resultado. Repita a mesma abertura uma vez e anote se a aplicação escolhida chega a um ecrã útil ou indica uma entrada incompatível."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: escolher ou alterar apps predefinidas no Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a escolha da aplicação do acesso ao serviço",
+          "paragraphs": [
+            "Se a app esperada não aparece, registe isso em vez de instalar uma alternativa desconhecida ou dar permissões sem relação com o caso. Uma app instalada pode não servir para aquela ação específica. Alterar a predefinição não instala uma app, valida um fornecedor nem ativa um plano. Preserve os dados completos da aplicação nesta verificação. Informe o apoio do modelo, programador, ação inicial e mensagem exata, sem links privados, palavras-passe ou códigos de conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV на Android: открыть разово или сохранить выбор?",
+      "excerpt": "Окно выбора приложения Android не подтверждает, какой плеер вам нужен. Определите установленное приложение и действие, открывшее выбор, прежде чем сохранять настройку.",
+      "seo_title": "5G Live IPTV: разовое открытие или приложение по умолчанию",
+      "seo_description": "Проверьте выбор приложения для 5G Live IPTV на поддерживаемых версиях Pixel, различайте разовое открытие и сохранённый выбор и сначала уточните плеер.",
+      "sections": [
+        {
+          "heading": "Выясните, что вызвало окно выбора",
+          "paragraphs": [
+            "Вопрос о приложении по умолчанию для 5G Live IPTV начните с действия, вызвавшего выбор. Вы открывали ссылку, локальный медиафайл или команду другого приложения? Запишите этот шаг и названия предлагаемых приложений. Проверьте издателя нужного плеера и документированную поддержку входных данных. Знакомое название или значок не доказывает совместимость, а название 5G не указывает на собственный фирменный плеер."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте только реально предложенные варианты",
+          "paragraphs": [
+            "В инструкции Google для Pixel различаются варианты «Только сейчас» и сохранённый выбор «Всегда», когда появляется окно выбора; некоторые шаги требуют Android 14 или новее. Сначала уточните модель и версию: это не универсальная инструкция для Android TV. Для сравнения не сохраняйте новый вариант по умолчанию, пока не понятен результат. Повторите одно и то же открытие один раз и запишите, появился ли полезный экран или сообщение о неподдерживаемых данных."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: выбор и смена приложений по умолчанию на Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте выбор приложения от доступа к сервису",
+          "paragraphs": [
+            "Если нужного приложения нет в списке, запишите это вместо установки неизвестной замены или выдачи посторонних разрешений. Установленное приложение тоже может не подходить для конкретного действия. Смена значения по умолчанию не устанавливает приложение, не подтверждает поставщика и не активирует тариф. При этой проверке сохраняйте данные приложения. Передайте поддержке модель, издателя, исходное действие и точное сообщение, без приватных ссылок, паролей и кодов аккаунта."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV پر Android: ایک بار کھولیں یا انتخاب محفوظ کریں؟",
+      "excerpt": "اینڈرائیڈ کا ایپ سلیکٹر مطلوبہ پلیئر کی تصدیق نہیں کرتا۔ ڈیفالٹ محفوظ کرنے سے پہلے نصب ایپ اور وہ عمل پہچانیں جس سے یہ انتخاب کھلا۔",
+      "seo_title": "5G Live IPTV: ایک بار کھولنا یا ڈیفالٹ ایپ رکھنا",
+      "seo_description": "متعلقہ Pixel ورژنز پر 5G Live IPTV کی ایپ کا انتخاب دیکھیں، ایک بار کھولنے اور محفوظ ڈیفالٹ کا فرق سمجھیں اور پہلے اصل پلیئر کی شناخت کریں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کہ انتخاب کس عمل سے کھلا",
+          "paragraphs": [
+            "5G Live IPTV کی ڈیفالٹ ایپ کا سوال اس عمل سے شروع ہوتا ہے جس نے سلیکٹر کھولا۔ کیا آپ لنک، فون میں موجود میڈیا فائل یا دوسری ایپ کا کمانڈ کھول رہے تھے؟ وہ قدم اور پیش کی گئی ایپس کے نام لکھیں۔ مطلوبہ پلیئر کے ناشر اور اس کی دستاویزی ان پٹ سپورٹ دیکھیں۔ صرف مانوس نام یا آئیکن سے مطابقت ثابت نہیں ہوتی، اور 5G نام کسی مخصوص اپنے پلیئر کی شناخت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صرف فون کے دکھائے گئے اختیارات استعمال کریں",
+          "paragraphs": [
+            "Google کی Pixel ہدایات میں سلیکٹر آنے پر «صرف ایک بار» اور محفوظ انتخاب «ہمیشہ» کا فرق ہے؛ کچھ مراحل کے لیے Android 14 یا بعد کا ورژن چاہیے۔ پہلے ماڈل اور ورژن دیکھیں، یہ ہر Android TV کے لیے یکساں طریقہ نہیں۔ موازنے کے لیے نتیجہ سمجھے بغیر نیا ڈیفالٹ محفوظ نہ کریں۔ وہی مطلوبہ چیز ایک بار پھر کھولیں اور لکھیں کہ منتخب ایپ مفید اسکرین پر پہنچی یا غیر معاون ان پٹ کی اطلاع دی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel پر ڈیفالٹ ایپ چننا یا بدلنا",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ایپ کا انتخاب اور سروس تک رسائی الگ رکھیں",
+          "paragraphs": [
+            "اگر مطلوبہ ایپ سلیکٹر میں نہیں تو یہ مشاہدہ لکھیں، کسی نامعلوم متبادل کو نصب یا غیر متعلق اجازتیں نہ دیں۔ نصب ایپ بھی اس خاص عمل کے لیے ناموزوں ہو سکتی ہے۔ ڈیفالٹ بدلنے سے ایپ نصب، فراہم کنندہ کی تصدیق یا پلان فعال نہیں ہوتا۔ اس جانچ میں ایپ کا پورا ڈیٹا برقرار رکھیں۔ معاونت کو فون کا ماڈل، ایپ کا ناشر، ابتدائی عمل اور عین پیغام بتائیں؛ نجی لنک، پاس ورڈ یا اکاؤنٹ کوڈ نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV على Android: فتح مرة أم حفظ الاختيار؟",
+      "excerpt": "نافذة اختيار تطبيق Android لا تؤكد المشغّل المطلوب. حدّد التطبيق المثبّت والإجراء الذي فتح النافذة قبل حفظ تطبيق افتراضي.",
+      "seo_title": "5G Live IPTV: فتح مرة أم اختيار تطبيق افتراضي",
+      "seo_description": "راجع اختيار التطبيق لـ5G Live IPTV على إصدارات Pixel المدعومة، وميّز الفتح مرة واحدة من الاختيار المحفوظ، وتأكد من المشغّل الحقيقي أولاً.",
+      "sections": [
+        {
+          "heading": "حدّد ما الذي أظهر الاختيار",
+          "paragraphs": [
+            "ابدأ سؤال التطبيق الافتراضي لـ5G Live IPTV بالفعل الذي فتح نافذة الاختيار. هل كنت تفتح رابطاً أو ملف وسائط محلياً أو أمراً من تطبيق آخر؟ سجّل الخطوة وأسماء التطبيقات المقترحة. تحقّق من ناشر المشغّل المقصود ومن المدخلات المدعومة في توثيقه. الاسم أو الرمز المألوف لا يثبت التوافق، واسم 5G لا يحدد مشغّلاً خاصاً بالعلامة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم الخيارات التي يعرضها الهاتف فعلاً",
+          "paragraphs": [
+            "تميّز إرشادات Google لهواتف Pixel بين «مرة واحدة فقط» والاختيار المحفوظ «دائماً» عند ظهور النافذة؛ تتطلب بعض الخطوات Android 14 أو أحدث. تحقّق أولاً من الطراز والإصدار، فهذا ليس إجراءً موحداً لكل Android TV. للمقارنة، لا تحفظ اختياراً افتراضياً جديداً قبل فهم النتيجة. كرّر عملية الفتح المقصودة مرة واحدة وسجّل هل وصل التطبيق لشاشة مفيدة أم أبلغ عن مدخل غير مدعوم."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: اختيار التطبيقات الافتراضية أو تغييرها على Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل اختيار التطبيق عن الوصول للخدمة",
+          "paragraphs": [
+            "إذا غاب التطبيق المتوقع عن النافذة، سجّل الملاحظة بدلاً من تثبيت بديل مجهول أو منح أذونات غير مرتبطة. قد يكون التطبيق المثبّت غير مناسب لذلك الإجراء بالتحديد. تغيير التطبيق الافتراضي لا يثبت تطبيقاً ولا يؤكد مزوداً ولا يفعّل خطة. احتفظ ببيانات التطبيق كاملة في هذا الفحص. أعطِ الدعم طراز الهاتف والناشر والإجراء الأول والرسالة الدقيقة، دون روابط خاصة أو كلمات مرور أو رموز حساب."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV पर Android: एक बार खोलें या चुनाव सहेजें?",
+      "excerpt": "Android का ऐप चयन यह पुष्टि नहीं करता कि कौन सा प्लेयर चाहिए। डिफॉल्ट सहेजने से पहले इंस्टॉल ऐप और चयन खोलने वाली कार्रवाई पहचानें।",
+      "seo_title": "5G Live IPTV: एक बार खोलना या डिफॉल्ट ऐप चुनना",
+      "seo_description": "समर्थित Pixel संस्करणों पर 5G Live IPTV की ऐप का चुनाव देखें, एक बार खोलने और सहेजे डिफॉल्ट का अंतर समझें और पहले वास्तविक प्लेयर पहचानें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि चयन किस काम से खुला",
+          "paragraphs": [
+            "5G Live IPTV की डिफॉल्ट ऐप का सवाल उस कार्रवाई से शुरू होता है जिसने ऐप चयन खोला। क्या आप लिंक, फोन की मीडिया फाइल या दूसरी ऐप का आदेश खोल रहे थे? वह कदम और दिखाई गई ऐप के नाम लिखें। इच्छित प्लेयर के प्रकाशक और उसके दस्तावेज़ में समर्थित इनपुट देखें। सिर्फ परिचित नाम या आइकन से अनुकूलता साबित नहीं होती और 5G नाम किसी अपने खास प्लेयर की पहचान नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "केवल फोन के दिखाए विकल्प इस्तेमाल करें",
+          "paragraphs": [
+            "Google की Pixel हिदायतें चयन आने पर «सिर्फ़ एक बार» और सहेजे चुनाव «हमेशा» का अंतर बताती हैं; कुछ चरणों के लिए Android 14 या बाद का संस्करण चाहिए। पहले मॉडल और संस्करण देखें, क्योंकि यह हर Android TV का समान तरीका नहीं। तुलना के लिए परिणाम समझे बिना नया डिफॉल्ट न सहेजें। उसी चीज़ को एक बार फिर खोलें और लिखें कि चुनी ऐप उपयोगी स्क्रीन पर पहुँची या असमर्थित इनपुट का संदेश आया।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel पर डिफॉल्ट ऐप चुनना या बदलना",
+              "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ऐप चुनना और सेवा तक पहुँच अलग रखें",
+          "paragraphs": [
+            "इच्छित ऐप चयन में न हो तो इसे नोट करें, अज्ञात विकल्प इंस्टॉल न करें या गैरज़रूरी अनुमति न दें। इंस्टॉल ऐप भी उस खास काम के लिए अनुपयुक्त हो सकती है। डिफॉल्ट बदलने से ऐप इंस्टॉल, प्रदाता की पुष्टि या प्लान सक्रिय नहीं होता। इस जाँच में ऐप का पूरा डेटा सुरक्षित रखें। सहायता को फोन मॉडल, प्रकाशक, शुरुआती कार्रवाई और सही संदेश बताएँ; निजी लिंक, पासवर्ड या खाते के कोड नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: choose or change default apps on Pixel",
+      "url": "https://support.google.com/pixelphone/answer/6271667?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-04",
+  "topic": "Distinguish Android automatic screen rotation from a player orientation control before changing picture size",
+  "primary_keyword": "IPTV screen rotation",
+  "slug": "main-android-screen-rotation-player-orientation",
+  "translations": {
+    "en": {
+      "title": "IPTV screen rotation: system setting or player orientation?",
+      "excerpt": "A sideways or upright player is a different question from cropped video. Identify what rotates on Android before changing display controls or asking for help.",
+      "seo_title": "IPTV screen rotation: system setting or player orientation?",
+      "seo_description": "A sideways or upright player is a different question from cropped video. Identify what rotates on Android before changing display controls or asking for help.",
+      "sections": [
+        {
+          "heading": "Notice which part of the display turns",
+          "paragraphs": [
+            "Begin an IPTV screen rotation check by noting whether the whole app, only the video or neither changes when you turn the phone. Use the same player screen for the comparison; a menu and full-screen video are different views. Put the phone in a stable, comfortable position and note the starting orientation. Do not assume a narrow picture needs zooming. Rotation changes the viewing direction, while cropping removes part of the visible image. Record the difference before touching picture-size controls."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the system and the player separately",
+          "paragraphs": [
+            "Google documents an Android auto-rotate setting. Its location and presentation can vary with the device. If you choose to compare that setting, note its original state and change only that control. Then return to the same player view. If the player offers its own orientation or lock control, consult its help before using it. Do not change unrelated accessibility features, permissions or account details to make the screen turn."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Help: the auto-rotate screen setting",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a useful before-and-after note",
+          "paragraphs": [
+            "Describe whether the app menu rotates but playback stays upright, or whether both stay fixed. Include the phone model, Android version, player version and the control compared. Restore the starting setting if the comparison is unhelpful. A fixed orientation alone does not establish a subscription fault or service outage. Send these observations through private support without passwords, playlist addresses or account-access links."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Rotación de IPTV: ¿ajuste de Android o del reproductor?",
+      "excerpt": "Un reproductor vertical u horizontal plantea una cuestión distinta del vídeo recortado. Identifica qué gira en Android antes de cambiar los controles de imagen.",
+      "seo_title": "Rotación de IPTV: ¿ajuste de Android o del reproductor?",
+      "seo_description": "Un reproductor vertical u horizontal plantea una cuestión distinta del vídeo recortado. Identifica qué gira en Android antes de cambiar los controles de imagen.",
+      "sections": [
+        {
+          "heading": "Observa qué parte de la pantalla gira",
+          "paragraphs": [
+            "Empieza la comprobación de rotación de IPTV anotando si al girar el móvil cambia toda la aplicación, solo el vídeo o ninguno. Compara la misma pantalla del reproductor: un menú y el vídeo a pantalla completa son vistas distintas. Coloca el teléfono en una posición estable y cómoda y anota la orientación inicial. No supongas que una imagen estrecha necesita zoom. La rotación cambia la dirección de visualización; el recorte elimina una parte de la imagen visible. Registra la diferencia antes de tocar el tamaño."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa el sistema del reproductor",
+          "paragraphs": [
+            "Google documenta un ajuste de rotación automática de Android. Su ubicación y aspecto pueden variar según el dispositivo. Si decides compararlo, anota su estado original y cambia solo ese control. Regresa después a la misma vista del reproductor. Si la app dispone de orientación o bloqueo propios, consulta su ayuda antes de usarlos. No modifiques funciones de accesibilidad ajenas, permisos ni datos de cuenta para girar la pantalla."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Android: ajuste de rotación automática",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Anota el antes y el después",
+          "paragraphs": [
+            "Describe si gira el menú pero el vídeo sigue vertical o si ambos permanecen fijos. Incluye modelo, versión de Android y del reproductor y control comparado. Restaura el ajuste inicial si la comparación no ayuda. Una orientación fija no demuestra un fallo de suscripción ni una caída del servicio. Envía las observaciones por soporte privado, sin contraseñas, direcciones de listas ni enlaces de acceso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Rotation IPTV : réglage Android ou orientation du lecteur ?",
+      "excerpt": "Un lecteur vertical ou horizontal ne pose pas la même question qu’une vidéo rognée. Repérez ce qui tourne sur Android avant de modifier les réglages d’image.",
+      "seo_title": "Rotation IPTV : réglage Android ou orientation du lecteur ?",
+      "seo_description": "Un lecteur vertical ou horizontal ne pose pas la même question qu’une vidéo rognée. Repérez ce qui tourne sur Android avant de modifier les réglages d’image.",
+      "sections": [
+        {
+          "heading": "Repérez la partie de l’écran qui tourne",
+          "paragraphs": [
+            "Pour vérifier la rotation IPTV, notez si tout le lecteur, seulement la vidéo ou aucun des deux tourne avec le téléphone. Comparez la même vue : menu et vidéo en plein écran sont différents. Placez le téléphone dans une position stable et confortable et notez son orientation initiale. Une image étroite ne nécessite pas forcément un zoom. La rotation change le sens de visionnage ; le rognage enlève une partie visible de l’image. Notez la différence avant de toucher au cadrage."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez système et application",
+          "paragraphs": [
+            "Google décrit un réglage de rotation automatique Android. Son emplacement et sa présentation peuvent varier selon l’appareil. Si vous le comparez, notez l’état initial et ne changez que ce contrôle. Revenez ensuite à la même vue du lecteur. Si celui-ci propose sa propre orientation ou un verrouillage, consultez son aide avant utilisation. Ne modifiez pas des fonctions d’accessibilité sans rapport, des autorisations ou des données de compte pour faire tourner l’écran."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Android : réglage de rotation automatique",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Gardez une note avant et après",
+          "paragraphs": [
+            "Précisez si le menu tourne tandis que la lecture reste verticale, ou si les deux restent fixes. Indiquez modèle, versions d’Android et du lecteur et contrôle comparé. Rétablissez le réglage initial si la comparaison est inutile. Une orientation fixe ne prouve pas une panne d’abonnement ou du service. Transmettez vos observations à l’assistance privée sans mots de passe, adresses de listes ou liens d’accès."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Rotazione IPTV: impostazione Android o orientamento del lettore?",
+      "excerpt": "Un lettore verticale o orizzontale è diverso da un video ritagliato. Individua cosa ruota su Android prima di cambiare i comandi dell’immagine o chiedere aiuto.",
+      "seo_title": "Rotazione IPTV: impostazione Android o orientamento del lettore?",
+      "seo_description": "Un lettore verticale o orizzontale è diverso da un video ritagliato. Individua cosa ruota su Android prima di cambiare i comandi dell’immagine o chiedere aiuto.",
+      "sections": [
+        {
+          "heading": "Osserva quale parte dello schermo ruota",
+          "paragraphs": [
+            "Inizia il controllo della rotazione IPTV annotando se girando il telefono ruota tutta l’app, solo il video o nessuno dei due. Confronta la stessa schermata del lettore: menu e video a schermo intero sono viste diverse. Tieni il telefono stabile e comodo e annota l’orientamento iniziale. Un’immagine stretta non richiede necessariamente lo zoom. La rotazione cambia la direzione di visione; il ritaglio elimina parte dell’immagine visibile. Registra la differenza prima di modificare le dimensioni."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla separatamente sistema e lettore",
+          "paragraphs": [
+            "Google descrive un’impostazione Android di rotazione automatica. Posizione e aspetto possono variare secondo il dispositivo. Se decidi di confrontarla, annota lo stato originale e modifica solo quel comando. Torna poi alla stessa vista del lettore. Se l’app offre un proprio orientamento o blocco, consulta la sua guida prima di usarlo. Non modificare funzioni di accessibilità estranee, autorizzazioni o dati dell’account per far ruotare lo schermo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Android: impostazione di rotazione automatica",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva un confronto prima e dopo",
+          "paragraphs": [
+            "Descrivi se il menu ruota ma la riproduzione rimane verticale, oppure se entrambi restano fissi. Indica modello del telefono, versioni di Android e del lettore e comando confrontato. Ripristina l’impostazione iniziale se il confronto non aiuta. L’orientamento fisso da solo non dimostra un problema di abbonamento o del servizio. Invia le osservazioni all’assistenza privata senza password, indirizzi di liste o link di accesso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-schermrotatie: Android-instelling of speleroriëntatie?",
+      "excerpt": "Een staande of liggende speler is iets anders dan afgesneden video. Kijk eerst wat op Android draait voordat je beeldinstellingen verandert of hulp vraagt.",
+      "seo_title": "IPTV-schermrotatie: Android-instelling of speleroriëntatie?",
+      "seo_description": "Een staande of liggende speler is iets anders dan afgesneden video. Kijk eerst wat op Android draait voordat je beeldinstellingen verandert of hulp vraagt.",
+      "sections": [
+        {
+          "heading": "Kijk welk deel van het scherm draait",
+          "paragraphs": [
+            "Begin de controle van IPTV-schermrotatie door te noteren of de hele app, alleen de video of geen van beide meedraait met de telefoon. Vergelijk dezelfde spelerweergave: een menu en beeldvullende video verschillen. Houd de telefoon stabiel en comfortabel en noteer de beginstand. Een smal beeld vraagt niet vanzelf om zoomen. Rotatie verandert de kijkrichting; bijsnijden verwijdert een deel van het zichtbare beeld. Noteer het verschil voordat je beeldformaatknoppen gebruikt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer systeem en speler afzonderlijk",
+          "paragraphs": [
+            "Google beschrijft een Android-instelling voor automatisch draaien. Plaats en presentatie kunnen per apparaat verschillen. Wil je die vergelijken, noteer dan de oorspronkelijke stand en wijzig alleen die knop. Ga terug naar dezelfde spelerweergave. Heeft de speler eigen oriëntatie- of vergrendelingsknoppen, bekijk dan eerst de bijbehorende hulp. Verander geen niet-gerelateerde toegankelijkheidsfuncties, machtigingen of accountgegevens om het scherm te laten draaien."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Help: instelling voor automatisch draaien",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Bewaar een duidelijke vergelijking",
+          "paragraphs": [
+            "Beschrijf of het menu draait maar de video rechtop blijft, of dat beide vaststaan. Vermeld telefoonmodel, Android- en spelerversie en de vergeleken instelling. Herstel de beginstand als de vergelijking niet helpt. Een vaste oriëntatie bewijst op zichzelf geen abonnementsprobleem of dienstuitval. Stuur je waarnemingen naar privéondersteuning zonder wachtwoorden, afspeellijstadressen of accountlinks."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Rotação IPTV: ajuste do Android ou orientação do leitor?",
+      "excerpt": "Um leitor na vertical ou horizontal é uma questão diferente de vídeo cortado. Identifique o que gira no Android antes de alterar controles de imagem ou pedir ajuda.",
+      "seo_title": "Rotação IPTV: ajuste do Android ou orientação do leitor?",
+      "seo_description": "Um leitor na vertical ou horizontal é uma questão diferente de vídeo cortado. Identifique o que gira no Android antes de alterar controles de imagem ou pedir ajuda.",
+      "sections": [
+        {
+          "heading": "Observe qual parte da tela gira",
+          "paragraphs": [
+            "Comece a verificar a rotação IPTV anotando se todo o aplicativo, só o vídeo ou nenhum dos dois gira ao virar o celular. Compare a mesma tela do leitor: um menu e vídeo em tela cheia são vistas diferentes. Segure o aparelho em posição estável e confortável e registre a orientação inicial. Uma imagem estreita não precisa necessariamente de zoom. A rotação muda a direção de visualização; o corte remove parte da imagem visível. Registre a diferença antes de ajustar o tamanho."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe sistema e leitor",
+          "paragraphs": [
+            "O Google documenta um ajuste de rotação automática do Android. A localização e a apresentação podem variar conforme o aparelho. Se decidir compará-lo, anote o estado original e mude apenas esse controle. Volte à mesma vista do leitor. Se ele oferecer orientação ou bloqueio próprios, consulte sua ajuda antes de usar. Não altere recursos de acessibilidade sem relação, permissões ou dados de conta para fazer a tela girar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Android: ajuste de rotação automática",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Anote o antes e o depois",
+          "paragraphs": [
+            "Descreva se o menu gira mas a reprodução fica vertical, ou se ambos permanecem fixos. Inclua modelo do celular, versões do Android e leitor e controle comparado. Restaure o ajuste inicial se a comparação não ajudar. Orientação fixa não comprova falha da assinatura nem queda do serviço. Envie as observações ao suporte privado sem senhas, endereços de listas ou links de acesso à conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Поворот экрана IPTV: настройка Android или самого плеера?",
+      "excerpt": "Вертикальное или горизонтальное окно плеера отличается от обрезанного видео. Определите, что поворачивается в Android, до изменения настроек изображения.",
+      "seo_title": "Поворот экрана IPTV: настройка Android или самого плеера?",
+      "seo_description": "Вертикальное или горизонтальное окно плеера отличается от обрезанного видео. Определите, что поворачивается в Android, до изменения настроек изображения.",
+      "sections": [
+        {
+          "heading": "Определите, какая часть экрана поворачивается",
+          "paragraphs": [
+            "При проверке поворота экрана IPTV отметьте, меняют ли ориентацию всё приложение, только видео или ни то ни другое при повороте телефона. Сравнивайте один экран плеера: меню и полноэкранное видео — разные виды. Держите телефон устойчиво и удобно, запишите исходное положение. Узкое изображение не обязательно требует увеличения. Поворот меняет направление просмотра, а обрезка убирает часть видимого изображения. Запишите различие до изменения размера картинки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте систему и приложение отдельно",
+          "paragraphs": [
+            "Google описывает настройку автоматического поворота Android. Её расположение и вид могут зависеть от устройства. Если решите сравнить её работу, запишите исходное состояние и измените только этот параметр. Затем вернитесь к той же странице плеера. Если у приложения есть собственная ориентация или блокировка, сначала прочтите его справку. Не меняйте посторонние специальные возможности, разрешения или данные аккаунта ради поворота экрана."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Android: автоматический поворот экрана",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сохраните сравнение до и после",
+          "paragraphs": [
+            "Укажите, поворачивается ли меню при вертикальном видео или оба вида остаются неподвижными. Добавьте модель телефона, версии Android и плеера и проверенный параметр. Верните исходную настройку, если сравнение не помогло. Фиксированная ориентация сама по себе не доказывает проблему подписки или сбой сервиса. Отправьте наблюдения в личную поддержку без паролей, адресов списков и ссылок доступа к аккаунту."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV اسکرین کی گردش: Android کی ترتیب یا پلیئر کا رخ؟",
+      "excerpt": "پلیئر کا عمودی یا افقی ہونا ویڈیو کٹنے سے الگ مسئلہ ہے۔ تصویر کی ترتیبات بدلنے سے پہلے دیکھیں کہ Android پر کون سا حصہ گھومتا ہے۔",
+      "seo_title": "IPTV اسکرین کی گردش: Android کی ترتیب یا پلیئر کا رخ؟",
+      "seo_description": "پلیئر کا عمودی یا افقی ہونا ویڈیو کٹنے سے الگ مسئلہ ہے۔ تصویر کی ترتیبات بدلنے سے پہلے دیکھیں کہ Android پر کون سا حصہ گھومتا ہے۔",
+      "sections": [
+        {
+          "heading": "دیکھیں اسکرین کا کون سا حصہ گھومتا ہے",
+          "paragraphs": [
+            "IPTV اسکرین کی گردش چیک کرتے وقت لکھیں کہ فون گھمانے پر پوری ایپ، صرف ویڈیو یا دونوں میں سے کوئی حصہ رخ بدلتا ہے۔ پلیئر کے ایک ہی منظر کا موازنہ کریں؛ مینو اور پوری اسکرین کی ویڈیو مختلف مناظر ہیں۔ فون کو مستحکم اور آرام دہ حالت میں رکھیں اور ابتدائی رخ نوٹ کریں۔ تنگ تصویر کا مطلب لازماً زوم کی ضرورت نہیں۔ گردش دیکھنے کا رخ بدلتی ہے، جبکہ کراپ کرنے سے تصویر کا حصہ کٹتا ہے۔ سائز کی ترتیب چھیڑنے سے پہلے یہ فرق لکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "سسٹم اور پلیئر کو الگ دیکھیں",
+          "paragraphs": [
+            "Google نے Android کی خودکار گردش کی ترتیب بیان کی ہے۔ اس کی جگہ اور شکل آلے کے مطابق بدل سکتی ہے۔ اس کا موازنہ کرنا چاہیں تو اصل حالت لکھیں اور صرف وہی ترتیب بدلیں۔ پھر پلیئر کے اسی منظر پر واپس جائیں۔ اگر پلیئر کا اپنا رخ یا لاک کنٹرول ہے تو استعمال سے پہلے اس کی مدد پڑھیں۔ اسکرین گھمانے کے لیے غیر متعلقہ رسائی کی سہولتیں، اجازتیں یا اکاؤنٹ کی تفصیل نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android مدد: اسکرین کی خودکار گردش",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پہلے اور بعد کی واضح بات لکھیں",
+          "paragraphs": [
+            "بتائیں کہ مینو گھومتا ہے مگر ویڈیو عمودی رہتی ہے یا دونوں جامد رہتے ہیں۔ فون کا ماڈل، Android اور پلیئر کے ورژن اور آزمائی گئی ترتیب بتائیں۔ موازنہ مدد نہ دے تو ابتدائی ترتیب واپس کریں۔ صرف رخ مقرر رہنے سے سبسکرپشن کی خرابی یا سروس بند ہونے کی تصدیق نہیں ہوتی۔ مشاہدات نجی سپورٹ کو دیں؛ پاس ورڈ، پلے لسٹ کے پتے اور اکاؤنٹ کی رسائی کے لنکس شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "دوران شاشة IPTV: إعداد Android أم اتجاه المشغّل؟",
+      "excerpt": "ظهور المشغّل عمودياً أو أفقياً يختلف عن اقتطاع الفيديو. حدّد ما الذي يدور على Android قبل تغيير إعدادات الصورة أو طلب المساعدة.",
+      "seo_title": "دوران شاشة IPTV: إعداد Android أم اتجاه المشغّل؟",
+      "seo_description": "ظهور المشغّل عمودياً أو أفقياً يختلف عن اقتطاع الفيديو. حدّد ما الذي يدور على Android قبل تغيير إعدادات الصورة أو طلب المساعدة.",
+      "sections": [
+        {
+          "heading": "لاحظ الجزء الذي يدور على الشاشة",
+          "paragraphs": [
+            "ابدأ فحص دوران شاشة IPTV بتسجيل ما إذا كان التطبيق كله أو الفيديو وحده أو لا شيء منهما يتغير عند تدوير الهاتف. قارن الشاشة نفسها من المشغّل؛ القائمة والفيديو بملء الشاشة عرضان مختلفان. أمسك الهاتف بوضع ثابت ومريح وسجّل الاتجاه الأول. لا تفترض أن الصورة الضيقة تحتاج إلى تكبير. الدوران يغيّر اتجاه المشاهدة بينما يزيل الاقتصاص جزءاً من الصورة المرئية. سجّل الفرق قبل لمس إعدادات حجم الصورة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص النظام والمشغّل كلّاً على حدة",
+          "paragraphs": [
+            "توضح Google إعداد التدوير التلقائي في Android. قد يختلف مكانه وشكله حسب الجهاز. إن اخترت مقارنته، سجّل حالته الأصلية وغيّر هذا الإعداد وحده. ثم عد إلى عرض المشغّل نفسه. إذا كان للمشغّل خيار اتجاه أو قفل خاص، فراجع مساعدته قبل استعماله. لا تغيّر ميزات تسهيل استخدام غير مرتبطة أو أذونات أو بيانات حساب لتدوير الشاشة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Android: إعداد تدوير الشاشة تلقائياً",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "احتفظ بملاحظة واضحة قبل التغيير وبعده",
+          "paragraphs": [
+            "صف هل تدور القائمة وتبقى المشاهدة عمودية أم يبقى الاثنان ثابتين. أدرج طراز الهاتف وإصداري Android والمشغّل والإعداد الذي قارنته. أعد الوضع الأصلي إذا لم تفد المقارنة. الاتجاه الثابت وحده لا يثبت عطل اشتراك أو توقف الخدمة. أرسل الملاحظات إلى الدعم الخاص دون كلمات مرور أو عناوين قوائم تشغيل أو روابط دخول الحساب."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV स्क्रीन घुमाना: Android की सेटिंग या प्लेयर का रुख?",
+      "excerpt": "प्लेयर का सीधा या आड़ा दिखना वीडियो कटने से अलग बात है। तस्वीर की सेटिंग बदलने से पहले देखें कि Android पर कौन सा हिस्सा घूमता है।",
+      "seo_title": "IPTV स्क्रीन घुमाना: Android की सेटिंग या प्लेयर का रुख?",
+      "seo_description": "प्लेयर का सीधा या आड़ा दिखना वीडियो कटने से अलग बात है। तस्वीर की सेटिंग बदलने से पहले देखें कि Android पर कौन सा हिस्सा घूमता है।",
+      "sections": [
+        {
+          "heading": "देखें स्क्रीन का कौन सा हिस्सा घूमता है",
+          "paragraphs": [
+            "IPTV स्क्रीन घुमाने की जांच में लिखें कि फोन घुमाने पर पूरी ऐप, सिर्फ वीडियो या दोनों में से कुछ भी रुख बदलता है या नहीं। प्लेयर के उसी दृश्य की तुलना करें; मेन्यू और पूरी स्क्रीन का वीडियो अलग दृश्य हैं। फोन स्थिर और आरामदायक स्थिति में रखें और शुरुआती रुख नोट करें। संकरी तस्वीर का मतलब जरूरी नहीं कि जूम चाहिए। घुमाने से देखने की दिशा बदलती है, जबकि क्रॉप करने से दिखाई देने वाली तस्वीर का हिस्सा कटता है। आकार बदलने से पहले फर्क लिखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सिस्टम और प्लेयर अलग जांचें",
+          "paragraphs": [
+            "Google Android में अपने आप स्क्रीन घूमने की सेटिंग बताता है। जगह और रूप डिवाइस के हिसाब से बदल सकते हैं। तुलना करना चाहें तो पुरानी स्थिति लिखें और सिर्फ वही सेटिंग बदलें। फिर प्लेयर के उसी दृश्य पर लौटें। प्लेयर में अपना दिशा या लॉक विकल्प हो तो इस्तेमाल से पहले उसकी मदद पढ़ें। स्क्रीन घुमाने के लिए असंबंधित सुलभता सुविधाएं, अनुमतियां या खाते का विवरण न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android सहायता: अपने आप स्क्रीन घुमाने की सेटिंग",
+              "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "पहले और बाद का स्पष्ट नोट रखें",
+          "paragraphs": [
+            "बताएं कि मेन्यू घूमता है लेकिन वीडियो सीधा रहता है या दोनों स्थिर हैं। फोन मॉडल, Android व प्लेयर के संस्करण और तुलना की गई सेटिंग लिखें। तुलना बेकार हो तो शुरुआती स्थिति बहाल करें। तय दिशा अकेले सब्सक्रिप्शन खराब होने या सेवा बंद होने का प्रमाण नहीं है। जानकारी निजी सहायता को दें; पासवर्ड, प्लेलिस्ट पते या खाते के प्रवेश लिंक शामिल न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Android Accessibility Help: auto-rotate screen",
+      "url": "https://support.google.com/accessibility/android/answer/6006961?hl=en"
+    }
+  ]
+}
