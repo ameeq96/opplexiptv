@@ -3,7 +3,7 @@
   "brand": "cheapaccounts",
   "locales": {
     "en": {
-      "hero_heading": "Digital plans. Clear choices.",
+      "hero_heading": "IPTV plans, OTT and AI enquiries",
       "hero_description": "At Cheap Accounts, compare current Opplex and Filex IPTV plans without losing sight of the provider, subscription length or full amount. Review your selection here, then continue to Opplexify for checkout. ChatGPT, Netflix and HBO Max categories are coming soon.",
       "guide_heading": "A clear route from browsing to checkout",
       "guide_intro": "Start with the product that is available today. A category name alone does not mean that orders, stock or pricing are available.",
@@ -47,7 +47,7 @@
       "is_published": true
     },
     "es": {
-      "hero_heading": "Planes digitales. Opciones claras.",
+      "hero_heading": "Planes IPTV y consultas sobre OTT e IA",
       "hero_description": "En Cheap Accounts, compara los planes IPTV actuales de Opplex y Filex teniendo presentes el proveedor, la duración y el importe completo. Revisa tu selección aquí y continúa a Opplexify para pagar. Las categorías ChatGPT, Netflix y HBO Max estarán disponibles próximamente.",
       "guide_heading": "Un recorrido claro hasta el pago",
       "guide_intro": "Empieza por el producto que está disponible hoy. El nombre de una categoría no significa que ya haya pedidos, existencias o precios disponibles.",
@@ -91,7 +91,7 @@
       "is_published": true
     },
     "fr": {
-      "hero_heading": "Des offres numériques. Un choix clair.",
+      "hero_heading": "Offres IPTV et demandes OTT et IA",
       "hero_description": "Chez Cheap Accounts, comparez les offres IPTV actuelles d’Opplex et de Filex en gardant le fournisseur, la durée et le montant total en vue. Vérifiez votre sélection ici, puis poursuivez sur Opplexify pour payer. Les catégories ChatGPT, Netflix et HBO Max arrivent prochainement.",
       "guide_heading": "Un parcours clair jusqu’au paiement",
       "guide_intro": "Commencez par un produit disponible aujourd’hui. Le nom d’une catégorie ne signifie pas que les commandes, les stocks ou les tarifs sont déjà proposés.",
@@ -135,7 +135,7 @@
       "is_published": true
     },
     "it": {
-      "hero_heading": "Piani digitali. Scelte chiare.",
+      "hero_heading": "Piani IPTV e richieste OTT e IA",
       "hero_description": "Su Cheap Accounts confronta gli attuali abbonamenti IPTV Opplex e Filex senza perdere di vista fornitore, durata e importo completo. Rivedi qui la scelta, poi passa a Opplexify per il pagamento. Le categorie ChatGPT, Netflix e HBO Max sono in arrivo.",
       "guide_heading": "Un percorso chiaro fino al pagamento",
       "guide_intro": "Parti da un prodotto disponibile oggi. Il nome di una categoria non significa che siano già disponibili ordini, scorte o prezzi.",
@@ -179,7 +179,7 @@
       "is_published": true
     },
     "nl": {
-      "hero_heading": "Digitale abonnementen. Duidelijke keuzes.",
+      "hero_heading": "IPTV-abonnementen en vragen over OTT en AI",
       "hero_description": "Vergelijk bij Cheap Accounts de huidige IPTV-abonnementen van Opplex en Filex met aanbieder, looptijd en totaalbedrag in beeld. Controleer hier je keuze en ga daarna naar Opplexify om af te rekenen. ChatGPT, Netflix en HBO Max volgen binnenkort.",
       "guide_heading": "Een duidelijk pad naar afrekenen",
       "guide_intro": "Begin met een product dat vandaag beschikbaar is. Een categorienaam betekent niet dat bestellen, voorraad of prijzen al beschikbaar zijn.",
@@ -223,7 +223,7 @@
       "is_published": true
     },
     "pt": {
-      "hero_heading": "Planos digitais. Escolhas claras.",
+      "hero_heading": "Planos IPTV e consultas sobre OTT e IA",
       "hero_description": "Na Cheap Accounts, compare os planos IPTV atuais da Opplex e Filex sem perder de vista o fornecedor, a duração e o valor total. Reveja a seleção aqui e siga para a Opplexify para pagar. As categorias ChatGPT, Netflix e HBO Max chegam em breve.",
       "guide_heading": "Um caminho claro até ao pagamento",
       "guide_intro": "Comece por um produto disponível hoje. O nome de uma categoria não significa que já existam encomendas, stock ou preços disponíveis.",
@@ -267,7 +267,7 @@
       "is_published": true
     },
     "ru": {
-      "hero_heading": "Цифровые планы. Понятный выбор.",
+      "hero_heading": "Тарифы IPTV и вопросы о подписках OTT и ИИ",
       "hero_description": "В Cheap Accounts сравнивайте действующие планы IPTV Opplex и Filex, учитывая поставщика, срок и полную сумму. Проверьте выбор здесь, затем переходите к оплате в Opplexify. Разделы ChatGPT, Netflix и HBO Max готовятся к запуску.",
       "guide_heading": "Понятный путь от выбора до оплаты",
       "guide_intro": "Начните с продукта, доступного сегодня. Название раздела само по себе не означает, что уже доступны заказы, остатки или цены.",
@@ -311,7 +311,7 @@
       "is_published": true
     },
     "ur": {
-      "hero_heading": "ڈیجیٹل پلانز۔ واضح انتخاب۔",
+      "hero_heading": "IPTV پلانز، OTT اور مصنوعی ذہانت کے بارے میں سوالات",
       "hero_description": "Cheap Accounts پر Opplex اور Filex کے موجودہ IPTV پلانز کا موازنہ کرتے وقت فراہم کنندہ، مدت اور پوری رقم سامنے رکھیں۔ یہاں انتخاب کا جائزہ لیں، پھر ادائیگی کے لیے Opplexify پر جائیں۔ ChatGPT، Netflix اور HBO Max کی کیٹیگریز جلد آ رہی ہیں۔",
       "guide_heading": "انتخاب سے ادائیگی تک واضح راستہ",
       "guide_intro": "اس پراڈکٹ سے شروع کریں جو آج دستیاب ہے۔ صرف کیٹیگری کا نام موجود ہونے سے آرڈر، اسٹاک یا قیمت دستیاب ہونا ثابت نہیں ہوتا۔",
@@ -355,7 +355,7 @@
       "is_published": true
     },
     "ar": {
-      "hero_heading": "خطط رقمية. خيارات واضحة.",
+      "hero_heading": "خطط IPTV واستفسارات اشتراكات البث والذكاء الاصطناعي",
       "hero_description": "قارن في Cheap Accounts خطط IPTV الحالية من Opplex وFilex مع إبقاء المزوّد والمدة والمبلغ الكامل أمامك. راجع اختيارك هنا ثم تابع إلى Opplexify للدفع. أقسام ChatGPT وNetflix وHBO Max قادمة قريباً.",
       "guide_heading": "مسار واضح من التصفح إلى الدفع",
       "guide_intro": "ابدأ بمنتج متاح اليوم. وجود اسم قسم لا يعني أن الطلبات أو المخزون أو الأسعار متاحة بالفعل.",
@@ -399,7 +399,7 @@
       "is_published": true
     },
     "hi": {
-      "hero_heading": "डिजिटल प्लान। स्पष्ट विकल्प।",
+      "hero_heading": "IPTV प्लान और ओटीटी व एआई के बारे में पूछताछ",
       "hero_description": "Cheap Accounts पर Opplex और Filex के मौजूदा IPTV प्लान की तुलना करते समय प्रदाता, अवधि और पूरी रकम सामने रखें। यहाँ चयन देखें, फिर भुगतान के लिए Opplexify पर जाएँ। ChatGPT, Netflix और HBO Max की श्रेणियाँ जल्द आ रही हैं।",
       "guide_heading": "चयन से भुगतान तक स्पष्ट रास्ता",
       "guide_intro": "उस उत्पाद से शुरू करें जो आज उपलब्ध है। केवल श्रेणी का नाम दिखने से ऑर्डर, स्टॉक या कीमत उपलब्ध नहीं हो जाती।",
