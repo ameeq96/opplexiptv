@@ -559,8 +559,8 @@ class PublicSiteDataService
             $content = LandingPageContent::query()->where('brand', $brand)->where('locale', 'en')->first();
         }
         $email = trim((string) (self::LANDING_BRANDS[$brand]['email'] ?? FooterSetting::query()->latest()->value('email')));
-        $phone = preg_replace('/\D/', '', (string) config('services.whatsapp.number'));
-        $phoneDisplay = trim((string) config('services.whatsapp.display'));
+        $phone = $brand === 'cheapaccounts' ? '923122114325' : preg_replace('/\D/', '', (string) config('services.whatsapp.number'));
+        $phoneDisplay = $brand === 'cheapaccounts' ? '+92 312 2114325' : trim((string) config('services.whatsapp.display'));
         $document = json_decode(file_get_contents(resource_path('content/landing-pages/'.$locale.'.json')), true, 64, JSON_THROW_ON_ERROR);
 
         return [
