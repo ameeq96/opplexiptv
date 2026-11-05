@@ -794,13 +794,13 @@
         },
         {
           "slug": "reseller-panel",
-          "title": "Geo business enquiries across different markets",
-          "description": "Discuss a possible Geo reseller arrangement with attention to local requirements, permitted use and support responsibilities.",
-          "intro": "Serving customers in a particular market involves more than translating a sales page. If you are interested in a Geo IPTV reseller arrangement, ask what is available and clarify the permissions and responsibilities before making any commitment. If you searched for a Geo reseller panel, this is an enquiry page, not a panel sign-in or a confirmed wholesale offer.",
+          "title": "Geo IPTV reseller enquiries: panel access and terms",
+          "description": "Ask about Geo IPTV reseller availability, panel access, credit terms and support. Prepare a focused enquiry and request a written quote before committing.",
+          "intro": "If you are considering a Geo IPTV reseller arrangement, start with the market you want to serve and the support you can provide. Ask whether a suitable option is available, then request the terms in writing. This page is for Geo reseller enquiries; it is not a panel login or a confirmed wholesale offer.",
           "sections": [
             {"heading": "Explain the market you intend to serve", "body": "Outline the countries, languages and support coverage you have in mind. Confirm applicable regional and copyright restrictions rather than assuming a retail plan allows redistribution."},
             {"heading": "Request a specific agreement", "body": "This page does not offer a guaranteed reseller panel, wholesale rate or margin. Support must confirm any available arrangement in writing. Another brand's reseller pricing is not a Geo offer, and personal access must not be resold without an appropriate agreement."},
-            {"heading": "Explain the language and location questions you would handle", "body": "An IPTV reseller proposal for Geo should distinguish the language of customer support from the places where a service may be offered. Send one enquiry with your intended countries, customer languages and expected scale. Ask for written confirmation of any available Geo IPTV reseller panel, credit rules, currency, expiry and support responsibilities before comparing costs. Describe which app questions you can handle and which availability questions need confirmation. A translated sales page alone is not a business agreement or evidence of distribution permissions."}
+            {"heading": "Compare a written quote before taking customer payments", "body": "Ask for one written quote covering the service offered, permitted markets, currency and every credit or recurring charge. If a Geo IPTV reseller panel is available, check its features, credit expiry, minimum purchase and account-security requirements. Confirm who handles customer support and what happens when access expires. Keep the reply before taking customer payments. Retail plans on this site are not wholesale quotes; support must confirm any reseller agreement separately."}
           ],
           "kind": "editorial"
         },
