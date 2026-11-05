@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-05",
+  "topic": "Distinguish an Apple TV restart from an erasing factory reset before escalating a Geo IPTV player problem",
+  "primary_keyword": "Geo IPTV Apple TV restart",
+  "slug": "geo-apple-tv-restart-versus-erasing-reset",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV Apple TV restart: know the difference from reset",
+      "excerpt": "An Apple TV restart and a factory reset have very different consequences. Identify the intended action before using a whole-device troubleshooting step for a player problem.",
+      "seo_title": "Geo IPTV Apple TV restart: restart or erase?",
+      "seo_description": "Choose a Geo IPTV Apple TV restart deliberately, distinguish it from an erasing factory reset and keep useful observations for a focused support request.",
+      "sections": [
+        {
+          "heading": "Locate the problem before restarting everything",
+          "paragraphs": [
+            "A Geo IPTV Apple TV restart question should begin with what still works. Does the player ignore input while the Apple TV menus remain responsive, or does the whole device appear stuck? Record that difference and any visible error first. A restart interrupts the current viewing session, so finish other on-screen work if possible. On an Apple TV 4K with responsive menus, Apple documents the Restart command under Settings, then System. Check the instructions for your hardware rather than selecting a similarly named option."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: restart Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep Restart and Reset clearly separate",
+          "paragraphs": [
+            "Restart is not the factory-reset command. Apple explains that resetting Apple TV 4K erases its data, including accounts and configuration. Do not choose Reset or Reset and Update merely because a player has stopped responding. Erasing a device can create a new setup task without identifying the original problem. If a reset is eventually recommended, first establish who owns the device and how the apps and their authorised access will be restored."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: understand a factory reset",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Compare once and keep a useful record",
+          "paragraphs": [
+            "After one restart, open the same player and repeat the action that failed. Note whether menus and playback behave differently; avoid changing the network, subscription and app settings at the same time. Record the model, tvOS version, player version and whether the symptom returned. A temporary improvement does not establish its cause, and one device failure does not prove a Geo-wide outage. Give support those observations without passwords or private playlist addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV en Apple TV: reiniciar no es restablecer",
+      "excerpt": "Reiniciar un Apple TV y devolverlo a sus ajustes de fábrica tienen consecuencias distintas. Identifica la acción antes de solucionar un problema del reproductor en todo el dispositivo.",
+      "seo_title": "Geo IPTV en Apple TV: reinicio o borrado",
+      "seo_description": "Distingue el reinicio de Apple TV de un restablecimiento que borra datos. Anota lo ocurrido con Geo IPTV y prepara una consulta concreta para soporte.",
+      "sections": [
+        {
+          "heading": "Identifica el problema antes de reiniciar todo",
+          "paragraphs": [
+            "Antes de reiniciar el Apple TV por un problema con Geo IPTV, comprueba qué sigue funcionando. ¿El reproductor ignora las órdenes pero los menús responden, o parece bloqueado todo el dispositivo? Anota esa diferencia y cualquier error visible. El reinicio interrumpe la sesión, así que termina otras tareas en pantalla si puedes. En un Apple TV 4K cuyos menús responden, Apple sitúa Reiniciar en Ajustes y después Sistema. Consulta las instrucciones de tu modelo antes de elegir una opción con un nombre parecido."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reiniciar el Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue reiniciar de restablecer",
+          "paragraphs": [
+            "Reiniciar no equivale a restaurar los ajustes de fábrica. Apple indica que restablecer el Apple TV 4K borra sus datos, incluidas las cuentas y la configuración. No elijas Restablecer ni Restablecer y actualizar solo porque un reproductor no responde. Borrar el dispositivo puede obligarte a configurarlo de nuevo sin aclarar el problema original. Si finalmente te recomiendan hacerlo, confirma quién es el propietario y cómo recuperarás las aplicaciones y sus accesos autorizados."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: entender el restablecimiento de fábrica",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Compara una vez y conserva los detalles",
+          "paragraphs": [
+            "Tras un reinicio, abre el mismo reproductor y repite la acción que falló. Observa por separado los menús y la reproducción; no cambies a la vez la red, la suscripción y los ajustes de la aplicación. Anota el modelo, las versiones de tvOS y del reproductor, y si vuelve el fallo. Una mejora temporal no demuestra su causa, ni el fallo de un dispositivo prueba una caída general de Geo. Envía esas observaciones sin contraseñas ni direcciones privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV sur Apple TV : redémarrer ou réinitialiser ?",
+      "excerpt": "Redémarrer un Apple TV et le rétablir aux réglages d’usine ont des conséquences différentes. Identifiez l’action avant de traiter un problème de lecteur sur tout l’appareil.",
+      "seo_title": "Geo IPTV sur Apple TV : redémarrage ou effacement",
+      "seo_description": "Distinguez le redémarrage d’Apple TV d’une réinitialisation qui efface les données. Conservez des observations précises pour demander de l’aide sur Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Situez le problème avant de tout redémarrer",
+          "paragraphs": [
+            "Avant de redémarrer l’Apple TV pour Geo IPTV, regardez ce qui fonctionne encore. Le lecteur ignore-t-il les commandes alors que les menus répondent, ou tout l’appareil semble-t-il bloqué ? Notez cette différence et tout message d’erreur. Un redémarrage coupe la séance en cours : terminez les autres actions à l’écran si possible. Sur un Apple TV 4K dont les menus répondent, Apple place Redémarrer dans Réglages, puis Système. Consultez les instructions de votre modèle avant de choisir une commande au nom voisin."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : redémarrer l’Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez redémarrage et réinitialisation",
+          "paragraphs": [
+            "Redémarrer n’est pas rétablir les réglages d’usine. Apple précise qu’une réinitialisation de l’Apple TV 4K efface ses données, y compris les comptes et la configuration. Ne choisissez pas Réinitialiser ou Réinitialiser et mettre à jour simplement parce qu’un lecteur ne répond plus. L’effacement peut imposer une nouvelle installation sans expliquer la panne initiale. Si cette action est finalement conseillée, vérifiez d’abord qui possède l’appareil et comment rétablir les applications et leurs accès autorisés."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : comprendre la réinitialisation d’usine",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez une fois et notez le résultat",
+          "paragraphs": [
+            "Après un redémarrage, ouvrez le même lecteur et répétez l’action qui échouait. Comparez les menus et la lecture sans modifier simultanément réseau, abonnement et réglages de l’application. Notez le modèle, les versions de tvOS et du lecteur, ainsi que le retour éventuel du symptôme. Une amélioration passagère ne prouve pas sa cause ; un appareil en panne ne démontre pas une interruption générale de Geo. Transmettez ces observations sans mots de passe ni adresses privées de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV su Apple TV: riavviare non significa inizializzare",
+      "excerpt": "Riavviare Apple TV e ripristinarla alle impostazioni di fabbrica sono operazioni diverse. Chiarisci quale serve prima di intervenire sull’intero dispositivo per un problema del lettore.",
+      "seo_title": "Geo IPTV su Apple TV: riavvio o inizializzazione",
+      "seo_description": "Distingui il riavvio di Apple TV da un ripristino che cancella i dati. Raccogli osservazioni utili per una richiesta di assistenza mirata su Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Individua il problema prima di riavviare tutto",
+          "paragraphs": [
+            "Prima di riavviare Apple TV per un problema con Geo IPTV, verifica cosa funziona ancora. Il lettore ignora i comandi mentre i menu rispondono, oppure sembra bloccato tutto il dispositivo? Annota la differenza e gli eventuali errori visibili. Un riavvio interrompe la visione, quindi termina altre operazioni sullo schermo se possibile. Su Apple TV 4K con menu funzionanti, Apple indica Riavvia in Impostazioni, poi Sistema. Consulta le istruzioni del tuo modello prima di scegliere un’opzione dal nome simile."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: riavviare Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Tieni separati riavvio e ripristino",
+          "paragraphs": [
+            "Riavviare non è ripristinare le impostazioni di fabbrica. Apple spiega che l’inizializzazione di Apple TV 4K cancella i dati, compresi account e configurazione. Non scegliere Inizializza o Inizializza e aggiorna solo perché un lettore non risponde. La cancellazione può richiedere una nuova configurazione senza chiarire il guasto iniziale. Se viene infine consigliata, verifica prima chi possiede il dispositivo e come recuperare le applicazioni e i relativi accessi autorizzati."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: capire il ripristino di fabbrica",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta una volta e annota il risultato",
+          "paragraphs": [
+            "Dopo un riavvio, apri lo stesso lettore e ripeti l’azione che non riusciva. Confronta menu e riproduzione senza cambiare contemporaneamente rete, abbonamento e impostazioni dell’app. Annota modello, versione di tvOS, versione del lettore e ricomparsa del sintomo. Un miglioramento temporaneo non ne dimostra la causa; il guasto di un dispositivo non prova un’interruzione generale di Geo. Invia queste osservazioni all’assistenza senza password o indirizzi privati delle liste."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV op Apple TV: herstarten is geen fabrieksherstel",
+      "excerpt": "Een Apple TV herstarten en terugzetten naar fabrieksinstellingen hebben verschillende gevolgen. Bepaal de juiste handeling voordat je voor een spelerprobleem het hele apparaat aanpakt.",
+      "seo_title": "Geo IPTV op Apple TV: herstarten of wissen?",
+      "seo_description": "Onderscheid een Apple TV-herstart van fabrieksherstel dat gegevens wist. Bewaar concrete waarnemingen voor een gerichte hulpvraag over Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Bepaal eerst waar het probleem zit",
+          "paragraphs": [
+            "Controleer voor een herstart bij Geo IPTV wat op de Apple TV nog werkt. Negeert de speler opdrachten terwijl de menu’s reageren, of lijkt het hele apparaat vastgelopen? Noteer dat verschil en eventuele foutmeldingen. Herstarten onderbreekt de kijksessie; rond andere handelingen op het scherm zo mogelijk af. Bij een Apple TV 4K met werkende menu’s beschrijft Apple Herstart onder Instellingen en vervolgens Systeem. Raadpleeg de instructies voor jouw model voordat je een optie met een vergelijkbare naam kiest."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K herstarten",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Houd herstarten en herstellen uit elkaar",
+          "paragraphs": [
+            "Herstarten is iets anders dan fabrieksherstel. Apple legt uit dat het herstellen van Apple TV 4K gegevens wist, waaronder accounts en configuratie. Kies niet voor Herstel of Herstel en werk bij alleen omdat een speler niet reageert. Wissen kan een nieuwe installatie nodig maken zonder de oorspronkelijke storing te verklaren. Als herstel uiteindelijk wordt aanbevolen, bepaal dan eerst wie het apparaat bezit en hoe de apps en hun toegestane toegang worden teruggezet."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: fabrieksherstel begrijpen",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één keer en noteer het resultaat",
+          "paragraphs": [
+            "Open na één herstart dezelfde speler en herhaal de mislukte handeling. Vergelijk menu’s en afspelen zonder tegelijk netwerk, abonnement en appinstellingen te wijzigen. Noteer model, tvOS-versie, spelerversie en of het probleem terugkomt. Tijdelijke verbetering bewijst de oorzaak niet; een storing op één apparaat toont geen algemene Geo-storing aan. Geef deze waarnemingen aan ondersteuning zonder wachtwoorden of privé-adressen van afspeellijsten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV na Apple TV: reiniciar não é repor de fábrica",
+      "excerpt": "Reiniciar a Apple TV e repor as definições de fábrica têm consequências diferentes. Identifique a ação antes de intervir em todo o dispositivo por um problema do leitor.",
+      "seo_title": "Geo IPTV na Apple TV: reinício ou eliminação?",
+      "seo_description": "Distinga o reinício da Apple TV de uma reposição que elimina dados. Registe observações úteis para um pedido de assistência específico sobre Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Localize o problema antes de reiniciar tudo",
+          "paragraphs": [
+            "Antes de reiniciar a Apple TV por um problema com Geo IPTV, veja o que ainda funciona. O leitor ignora comandos mas os menus respondem, ou todo o dispositivo parece bloqueado? Registe essa diferença e os erros visíveis. Reiniciar interrompe a sessão; termine outras tarefas no ecrã, se possível. Numa Apple TV 4K com menus funcionais, a Apple indica Reiniciar em Definições e depois Sistema. Consulte as instruções do seu modelo antes de escolher uma opção com nome semelhante."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reiniciar a Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Separe reinício e reposição",
+          "paragraphs": [
+            "Reiniciar não equivale a repor as definições de fábrica. A Apple explica que a reposição da Apple TV 4K elimina os dados, incluindo contas e configuração. Não escolha Repor nem Repor e atualizar apenas porque um leitor deixou de responder. Apagar o dispositivo pode obrigar a configurá-lo novamente sem esclarecer a falha original. Se a reposição for recomendada mais tarde, confirme primeiro quem é o proprietário e como recuperar as aplicações e os respetivos acessos autorizados."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: compreender a reposição de fábrica",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Compare uma vez e guarde os detalhes",
+          "paragraphs": [
+            "Depois de um reinício, abra o mesmo leitor e repita a ação que falhou. Compare menus e reprodução sem alterar ao mesmo tempo a rede, a subscrição e as definições da aplicação. Anote o modelo, as versões de tvOS e do leitor e se o sintoma voltou. Uma melhoria temporária não demonstra a causa; um dispositivo com falha não prova uma interrupção geral da Geo. Envie estas observações à assistência sem palavras-passe nem endereços privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV на Apple TV: перезапуск и сброс — разные действия",
+      "excerpt": "Перезапуск Apple TV и возврат к заводским настройкам имеют разные последствия. Уточните нужное действие, прежде чем устранять проблему плеера на уровне всего устройства.",
+      "seo_title": "Geo IPTV на Apple TV: перезапуск или удаление данных",
+      "seo_description": "Отличайте перезапуск Apple TV от сброса с удалением данных. Сохраните конкретные наблюдения для обращения в поддержку по работе Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Определите, где возникла проблема",
+          "paragraphs": [
+            "Прежде чем перезапускать Apple TV из-за Geo IPTV, проверьте, что еще работает. Плеер не принимает команды, но меню отвечает, или зависло все устройство? Запишите эту разницу и видимое сообщение об ошибке. Перезапуск прерывает просмотр, поэтому по возможности завершите другие действия на экране. Для Apple TV 4K с работающим меню Apple указывает команду перезапуска в разделе «Настройки», затем «Система». Сверьтесь с инструкцией для своей модели, прежде чем выбирать пункт с похожим названием."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: перезапуск Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Не путайте перезапуск со сбросом",
+          "paragraphs": [
+            "Перезапуск не означает возврат к заводским настройкам. Apple предупреждает, что сброс Apple TV 4K удаляет данные, включая учетные записи и конфигурацию. Не выбирайте сброс или сброс с обновлением только потому, что плеер перестал отвечать. После удаления может понадобиться новая настройка, а причина исходной проблемы останется неизвестной. Если сброс все же рекомендуют, сначала уточните владельца устройства и порядок восстановления приложений и разрешенного доступа к ним."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: что означает сброс к заводским настройкам",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните один раз и запишите результат",
+          "paragraphs": [
+            "После одного перезапуска откройте тот же плеер и повторите действие, которое не удавалось. Сравните работу меню и воспроизведения, не меняя одновременно сеть, подписку и настройки приложения. Запишите модель, версии tvOS и плеера, а также повторился ли симптом. Временное улучшение не доказывает причину; сбой одного устройства не подтверждает общую недоступность Geo. Передайте поддержке эти наблюдения без паролей и закрытых адресов плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اور Apple TV: دوبارہ شروع کرنا اور ری سیٹ الگ ہیں",
+      "excerpt": "Apple TV دوبارہ شروع کرنے اور اسے فیکٹری حالت میں واپس لانے کے نتائج مختلف ہیں۔ پلیئر کے مسئلے پر پورے آلے میں تبدیلی سے پہلے درست عمل سمجھ لیں۔",
+      "seo_title": "Geo IPTV پر Apple TV دوبارہ شروع کریں یا ڈیٹا مٹائیں؟",
+      "seo_description": "Apple TV کو دوبارہ شروع کرنے اور ڈیٹا مٹانے والے ری سیٹ میں فرق سمجھیں۔ Geo IPTV کی مدد کے لیے واضح مشاہدات اور ضروری تفصیلات محفوظ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے معلوم کریں مسئلہ کہاں ہے",
+          "paragraphs": [
+            "Geo IPTV کے لیے Apple TV دوبارہ شروع کرنے سے پہلے دیکھیں کیا چیز ابھی کام کر رہی ہے۔ کیا پلیئر حکم نہیں مانتا مگر Apple TV کے مینو چلتے ہیں، یا پورا آلہ رکا ہوا لگتا ہے؟ یہ فرق اور نظر آنے والا پیغام پہلے لکھ لیں۔ دوبارہ شروع کرنے سے موجودہ دیکھنے کا سلسلہ رک جائے گا، اس لیے ممکن ہو تو اسکرین پر دوسرے کام مکمل کر لیں۔ چلتے ہوئے مینو والے Apple TV 4K پر Apple کی ہدایت کے مطابق ترتیبات، پھر سسٹم میں دوبارہ شروع کرنے کا اختیار ہے۔ ملتے جلتے نام پر کلک کرنے سے پہلے اپنے ماڈل کی ہدایت دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K دوبارہ شروع کرنے کی ہدایت",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "دوبارہ شروع کرنا اور ری سیٹ الگ رکھیں",
+          "paragraphs": [
+            "دوبارہ شروع کرنا فیکٹری ری سیٹ نہیں ہے۔ Apple کے مطابق Apple TV 4K ری سیٹ کرنے سے اکاؤنٹس اور ترتیب سمیت ڈیٹا مٹ جاتا ہے۔ صرف پلیئر کے جواب نہ دینے پر ری سیٹ یا ری سیٹ اور اپ ڈیٹ نہ چنیں۔ آلہ مٹانے سے اصل وجہ معلوم ہوئے بغیر دوبارہ سیٹ اپ کرنا پڑ سکتا ہے۔ اگر بعد میں ری سیٹ کا مشورہ ملے تو پہلے آلے کے مالک اور ایپس کے مجاز رسائی سمیت بحال کرنے کا طریقہ طے کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: فیکٹری ری سیٹ کا مطلب",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "ایک بار موازنہ کریں اور نتیجہ لکھیں",
+          "paragraphs": [
+            "ایک بار دوبارہ شروع کرنے کے بعد وہی پلیئر کھولیں اور وہی ناکام عمل دہرائیں۔ مینو اور چلتی ویڈیو کا الگ موازنہ کریں؛ نیٹ ورک، سبسکرپشن اور ایپ کی ترتیبات ایک ساتھ نہ بدلیں۔ ماڈل، tvOS اور پلیئر کے ورژن اور مسئلے کی واپسی لکھ لیں۔ وقتی بہتری وجہ ثابت نہیں کرتی، اور ایک آلے کا مسئلہ پوری Geo سروس کی بندش ثابت نہیں کرتا۔ مدد کے لیے یہ مشاہدات بھیجیں، پاس ورڈ یا نجی پلے لسٹ کے پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV على Apple TV: إعادة التشغيل تختلف عن إعادة الضبط",
+      "excerpt": "إعادة تشغيل Apple TV وإعادته إلى إعدادات المصنع عمليتان مختلفتان. حدد المقصود قبل معالجة مشكلة مشغل على مستوى الجهاز كله.",
+      "seo_title": "Geo IPTV على Apple TV: إعادة تشغيل أم مسح بيانات؟",
+      "seo_description": "ميّز بين إعادة تشغيل Apple TV وإعادة ضبط تمسح البيانات. احتفظ بملاحظات دقيقة لتقديم طلب دعم واضح يتعلق بتشغيل Geo IPTV.",
+      "sections": [
+        {
+          "heading": "حدد موضع المشكلة قبل إعادة تشغيل كل شيء",
+          "paragraphs": [
+            "قبل إعادة تشغيل Apple TV بسبب Geo IPTV، تحقق مما لا يزال يعمل. هل يتجاهل المشغل الأوامر بينما تستجيب قوائم Apple TV، أم يبدو أن الجهاز كله عالق؟ سجل هذا الفرق وأي رسالة خطأ ظاهرة أولا. تقطع إعادة التشغيل جلسة المشاهدة، لذا أنهِ الأعمال الأخرى على الشاشة إن أمكن. في Apple TV 4K ذي القوائم المستجيبة، تضع Apple أمر إعادة التشغيل ضمن الإعدادات ثم النظام. راجع إرشادات طرازك قبل اختيار أمر يحمل اسما مشابها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: إعادة تشغيل Apple TV 4K",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "افصل بين إعادة التشغيل وإعادة الضبط",
+          "paragraphs": [
+            "إعادة التشغيل ليست إعادة ضبط المصنع. توضح Apple أن إعادة ضبط Apple TV 4K تمسح البيانات، بما فيها الحسابات والإعدادات. لا تختر إعادة الضبط أو إعادة الضبط والتحديث لمجرد توقف مشغل عن الاستجابة. قد يؤدي المسح إلى الحاجة لإعداد جديد دون معرفة سبب المشكلة الأصلية. إذا أوصي بإعادة الضبط لاحقا، فتأكد أولا من مالك الجهاز وكيفية استعادة التطبيقات ووسائل الوصول المصرح بها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: فهم إعادة ضبط المصنع",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "قارن مرة واحدة ودوّن النتيجة",
+          "paragraphs": [
+            "بعد إعادة تشغيل واحدة، افتح المشغل نفسه وكرر الإجراء الذي فشل. قارن القوائم والتشغيل دون تغيير الشبكة والاشتراك وإعدادات التطبيق معا. دوّن الطراز وإصدار tvOS وإصدار المشغل وما إذا عاد العارض. لا يثبت التحسن المؤقت سببه، ولا يثبت تعطل جهاز واحد انقطاع Geo بالكامل. أرسل هذه الملاحظات إلى الدعم دون كلمات مرور أو عناوين قوائم تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV पर Apple TV: रीस्टार्ट और रीसेट में अंतर समझें",
+      "excerpt": "Apple TV को दोबारा चालू करने और फ़ैक्टरी सेटिंग पर लौटाने के नतीजे अलग हैं। प्लेयर की समस्या के लिए पूरे डिवाइस पर कदम उठाने से पहले सही विकल्प पहचानें।",
+      "seo_title": "Geo IPTV पर Apple TV: रीस्टार्ट या डेटा मिटाना?",
+      "seo_description": "Apple TV रीस्टार्ट और डेटा मिटाने वाले फ़ैक्टरी रीसेट में अंतर समझें। Geo IPTV सहायता के लिए स्पष्ट जानकारी और काम के अवलोकन सुरक्षित रखें।",
+      "sections": [
+        {
+          "heading": "सब कुछ रीस्टार्ट करने से पहले समस्या पहचानें",
+          "paragraphs": [
+            "Geo IPTV के लिए Apple TV रीस्टार्ट करने से पहले देखें कि क्या अभी काम कर रहा है। क्या प्लेयर आदेश नहीं मानता लेकिन Apple TV के मेन्यू चलते हैं, या पूरा डिवाइस अटका लगता है? यह अंतर और दिखने वाला त्रुटि संदेश पहले लिख लें। रीस्टार्ट से मौजूदा देखने का सत्र रुकता है, इसलिए संभव हो तो स्क्रीन पर दूसरे काम पूरे कर लें। काम कर रहे मेन्यू वाले Apple TV 4K में Apple के अनुसार सेटिंग, फिर सिस्टम में रीस्टार्ट का विकल्प मिलता है। मिलते-जुलते नाम वाला विकल्प चुनने से पहले अपने मॉडल के निर्देश देखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K रीस्टार्ट करने के निर्देश",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "रीस्टार्ट और रीसेट को अलग रखें",
+          "paragraphs": [
+            "रीस्टार्ट करना फ़ैक्टरी रीसेट नहीं है। Apple बताता है कि Apple TV 4K रीसेट करने पर खातों और कॉन्फ़िगरेशन सहित डेटा मिटता है। केवल प्लेयर के जवाब न देने पर रीसेट या रीसेट और अपडेट न चुनें। डिवाइस मिटाने से असली कारण पता चले बिना नया सेटअप करना पड़ सकता है। अगर बाद में रीसेट की सलाह मिले, तो पहले मालिक की पहचान और ऐप तथा उनकी अधिकृत पहुँच बहाल करने का तरीका तय करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: फ़ैक्टरी रीसेट का अर्थ",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "एक बार तुलना करें और नतीजा लिखें",
+          "paragraphs": [
+            "एक रीस्टार्ट के बाद वही प्लेयर खोलें और असफल काम दोहराएँ। मेन्यू और वीडियो चलने की अलग तुलना करें; नेटवर्क, सब्सक्रिप्शन और ऐप की सेटिंग एक साथ न बदलें। मॉडल, tvOS का संस्करण, प्लेयर का संस्करण और समस्या लौटने की बात लिखें। थोड़ी देर की बेहतरी कारण साबित नहीं करती, और एक डिवाइस की खराबी पूरी Geo सेवा बंद होने का प्रमाण नहीं है। सहायता को ये अवलोकन भेजें, पासवर्ड या निजी प्लेलिस्ट पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: restart Apple TV 4K",
+      "url": "https://support.apple.com/en-ca/guide/tv/atvbb8553426/tvos"
+    },
+    {
+      "label": "Apple: reset Apple TV 4K",
+      "url": "https://support.apple.com/en-ie/guide/tv/atvbf9db0a52/tvos"
+    }
+  ]
+}

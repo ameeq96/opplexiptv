@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-05",
+  "topic": "Distinguish a supported Android app interface language from programme audio or subtitle tracks before changing a 5G Live IPTV player preference",
+  "primary_keyword": "5G Live IPTV app language",
+  "slug": "5g-android-app-language-versus-programme-audio",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV app language: menus or programme audio?",
+      "excerpt": "A player’s buttons, programme speech and subtitles can use different languages. Identify which one you want to change before changing the whole phone.",
+      "seo_title": "5G Live IPTV app language: change the right setting",
+      "seo_description": "Check supported Android app-language settings for 5G Live IPTV, distinguish player menus from programme audio and keep the original preference easy to restore.",
+      "sections": [
+        {
+          "heading": "Name the text or sound you want to change",
+          "paragraphs": [
+            "A 5G Live IPTV app language question needs a clear example. Are the player buttons unfamiliar, is the programme speaking another language, or are its subtitles different? Write down which part needs changing. Android’s per-app language control concerns the app interface; it does not promise another audio track or a different catalogue. The 5G name does not identify a proprietary player. Check the actual installed app and its publisher before following instructions for it."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check whether the installed app supports the control",
+          "paragraphs": [
+            "Google documents an App languages option within the phone’s System and language settings. Some documented steps require Android 14 or later, and only participating apps appear in the list. Menu names can differ by phone. If your player is absent, check its own documented preferences rather than assuming it is broken. Before changing an available setting, note the original choice. Reopen the app afterward and compare the same menu; do not erase its data just to test a language preference."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change the language of an Android app",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep playback language as a separate question",
+          "paragraphs": [
+            "For programme speech or captions, inspect the tracks offered by the player for that item. A translated menu does not establish that another track exists. If the app interface still uses the wrong language, record the phone model, Android version, player version, selected preference and unchanged screen. Send those observations to support without credentials or private playlist details. Leave network and subscription settings unchanged during this comparison."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Idioma de la aplicación para 5G Live IPTV: ¿menús o audio?",
+      "excerpt": "Los botones del reproductor, el audio y los subtítulos pueden estar en idiomas distintos. Identifica qué quieres cambiar antes de modificar todo el teléfono.",
+      "seo_title": "Idioma de la aplicación para 5G Live IPTV en Android",
+      "seo_description": "Comprueba el idioma de aplicaciones compatibles en Android para 5G Live IPTV. Distingue los menús del audio y conserva la opción original para poder recuperarla.",
+      "sections": [
+        {
+          "heading": "Identifica el texto o sonido que quieres cambiar",
+          "paragraphs": [
+            "Una consulta sobre el idioma de la aplicación para 5G Live IPTV necesita un ejemplo concreto. ¿No entiendes los botones, el programa habla otro idioma o los subtítulos son distintos? Anota qué parte quieres cambiar. El control de idioma por aplicación de Android afecta a la interfaz; no promete otra pista de audio ni otro catálogo. El nombre 5G no identifica un reproductor propio. Comprueba la aplicación instalada y su editor antes de seguir instrucciones para ella."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba si la aplicación admite ese control",
+          "paragraphs": [
+            "Google describe Idiomas de aplicaciones dentro de los ajustes de Sistema e idiomas del teléfono. Algunos pasos requieren Android 14 o posterior y solo aparecen las aplicaciones compatibles. Los nombres de los menús pueden variar. Si tu reproductor no figura, consulta sus preferencias documentadas antes de considerarlo averiado. Anota la opción original antes de cambiarla. Vuelve a abrir la aplicación y compara el mismo menú; no borres sus datos solo para probar un idioma."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: cambiar el idioma de una aplicación en Android",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Trata por separado el idioma de la reproducción",
+          "paragraphs": [
+            "Para el audio o los subtítulos, revisa las pistas que el reproductor ofrece para ese contenido. Un menú traducido no demuestra que exista otra pista. Si la interfaz sigue en otro idioma, anota el modelo, la versión de Android, la versión del reproductor, la preferencia elegida y la pantalla que no cambia. Envía estas observaciones sin credenciales ni datos privados de listas. Mantén sin cambios la red y la suscripción durante la comparación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Langue de l’application pour 5G Live IPTV : menus ou audio ?",
+      "excerpt": "Les boutons du lecteur, les dialogues et les sous-titres peuvent avoir des langues différentes. Identifiez le bon élément avant de modifier tout le téléphone.",
+      "seo_title": "Langue de l’application pour 5G Live IPTV sur Android",
+      "seo_description": "Vérifiez les réglages linguistiques des applications Android compatibles avec votre usage de 5G Live IPTV. Séparez menus et audio et notez le choix initial.",
+      "sections": [
+        {
+          "heading": "Identifiez le texte ou le son à modifier",
+          "paragraphs": [
+            "Une question sur la langue de l’application pour 5G Live IPTV demande un exemple précis. Les boutons sont-ils incompréhensibles, le programme parle-t-il une autre langue ou ses sous-titres sont-ils différents ? Notez la partie concernée. Le réglage Android par application porte sur l’interface ; il ne promet ni autre piste audio ni autre catalogue. Le nom 5G ne désigne pas un lecteur propriétaire. Vérifiez l’application installée et son éditeur avant de suivre ses instructions."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez que l’application propose ce réglage",
+          "paragraphs": [
+            "Google décrit une option Langues des applications dans les réglages Système et linguistiques du téléphone. Certaines étapes exigent Android 14 ou ultérieur et seules les applications participantes figurent dans la liste. Les noms des menus varient selon le téléphone. Si le lecteur est absent, consultez ses préférences documentées au lieu de conclure à une panne. Notez le choix initial avant de le modifier. Rouvrez ensuite l’application et comparez le même menu ; n’effacez pas ses données pour ce simple essai."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : modifier la langue d’une application Android",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Traitez séparément la langue du programme",
+          "paragraphs": [
+            "Pour les dialogues ou les sous-titres, consultez les pistes proposées par le lecteur pour ce contenu. Un menu traduit ne prouve pas qu’une autre piste existe. Si l’interface reste dans la mauvaise langue, notez le modèle, la version d’Android, celle du lecteur, le choix effectué et l’écran inchangé. Envoyez ces observations sans identifiants ni données privées de liste. Ne modifiez pas le réseau ni l’abonnement pendant cette comparaison."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Lingua dell’app per 5G Live IPTV: menu o audio?",
+      "excerpt": "Pulsanti del lettore, dialoghi e sottotitoli possono usare lingue diverse. Individua cosa vuoi cambiare prima di modificare le impostazioni dell’intero telefono.",
+      "seo_title": "Lingua dell’app per 5G Live IPTV su Android",
+      "seo_description": "Controlla le impostazioni linguistiche delle app Android compatibili per 5G Live IPTV. Distingui menu e audio e annota la preferenza originale prima di cambiarla.",
+      "sections": [
+        {
+          "heading": "Individua il testo o l’audio da cambiare",
+          "paragraphs": [
+            "Una domanda sulla lingua dell’app per 5G Live IPTV richiede un esempio preciso. Non capisci i pulsanti, il programma parla un’altra lingua oppure sono diversi i sottotitoli? Annota la parte interessata. Il controllo Android per singola app riguarda l’interfaccia; non promette un’altra traccia audio o un catalogo diverso. Il nome 5G non identifica un lettore proprietario. Verifica l’app installata e il suo sviluppatore prima di seguire istruzioni specifiche."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica se l’app supporta questa scelta",
+          "paragraphs": [
+            "Google descrive Lingue delle app nelle impostazioni di Sistema e lingua del telefono. Alcuni passaggi richiedono Android 14 o successivo e nell’elenco compaiono solo le app compatibili. I nomi dei menu possono variare. Se manca il lettore, consulta le sue preferenze documentate invece di considerarlo guasto. Prima di cambiare un’opzione disponibile, annota quella iniziale. Riapri l’app e confronta lo stesso menu; non cancellare i dati solo per provare una lingua."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: cambiare la lingua di un’app Android",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Tieni separata la lingua della riproduzione",
+          "paragraphs": [
+            "Per dialoghi o sottotitoli, controlla le tracce offerte dal lettore per quel contenuto. Un menu tradotto non dimostra che esista un’altra traccia. Se l’interfaccia resta nella lingua sbagliata, annota modello, versione di Android, versione del lettore, preferenza scelta e schermata invariata. Invia queste osservazioni senza credenziali o dati privati delle liste. Non modificare rete e abbonamento durante il confronto."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "App-taal voor 5G Live IPTV: menu’s of gesproken programma?",
+      "excerpt": "Spelerknoppen, gesproken tekst en ondertitels kunnen verschillende talen gebruiken. Bepaal wat je wilt veranderen voordat je de hele telefoon aanpast.",
+      "seo_title": "App-taal voor 5G Live IPTV op Android controleren",
+      "seo_description": "Controleer ondersteunde Android-app-talen voor 5G Live IPTV, onderscheid spelermenu’s van programma-audio en noteer de oorspronkelijke taalkeuze.",
+      "sections": [
+        {
+          "heading": "Benoem de tekst of het geluid dat moet veranderen",
+          "paragraphs": [
+            "Een vraag over de app-taal voor 5G Live IPTV vraagt om een duidelijk voorbeeld. Zijn de knoppen onbegrijpelijk, hoor je een andere taal of kloppen de ondertitels niet? Noteer welk onderdeel je wilt wijzigen. Androids taalkeuze per app betreft de interface; deze belooft geen andere audiotrack of ander aanbod. De naam 5G duidt geen eigen speler aan. Controleer de werkelijk geïnstalleerde app en uitgever voordat je instructies volgt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer of de app deze keuze ondersteunt",
+          "paragraphs": [
+            "Google beschrijft App-talen binnen de systeem- en taalinstellingen van de telefoon. Sommige stappen vereisen Android 14 of nieuwer en alleen deelnemende apps staan in de lijst. Menunamen verschillen per telefoon. Ontbreekt je speler, raadpleeg dan zijn gedocumenteerde voorkeuren in plaats van een defect aan te nemen. Noteer de oude keuze voordat je een beschikbare instelling wijzigt. Open de app opnieuw en vergelijk hetzelfde menu; wis geen appgegevens voor een taaltest."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: de taal van een Android-app wijzigen",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Behandel de taal van het programma apart",
+          "paragraphs": [
+            "Bekijk voor gesproken tekst of ondertiteling de tracks die de speler voor dat programma aanbiedt. Een vertaald menu bewijst niet dat een andere track bestaat. Blijft de interface in de verkeerde taal, noteer dan telefoonmodel, Android-versie, spelerversie, gekozen voorkeur en het ongewijzigde scherm. Stuur deze waarnemingen zonder inloggegevens of privégegevens van afspeellijsten. Laat netwerk en abonnement tijdens de vergelijking ongewijzigd."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Idioma da aplicação para 5G Live IPTV: menus ou áudio?",
+      "excerpt": "Os botões do leitor, as falas e as legendas podem usar idiomas diferentes. Identifique o que pretende alterar antes de mudar as definições de todo o telefone.",
+      "seo_title": "Idioma da aplicação para 5G Live IPTV no Android",
+      "seo_description": "Verifique os idiomas de aplicações Android compatíveis para 5G Live IPTV. Distinga menus e áudio do programa e registe a preferência original antes de mudar.",
+      "sections": [
+        {
+          "heading": "Identifique o texto ou som que pretende alterar",
+          "paragraphs": [
+            "Uma dúvida sobre o idioma da aplicação para 5G Live IPTV precisa de um exemplo claro. Os botões são desconhecidos, o programa fala outro idioma ou as legendas são diferentes? Anote a parte que quer mudar. O controlo de idioma por aplicação do Android refere-se à interface; não promete outra faixa de áudio nem outro catálogo. O nome 5G não identifica um leitor próprio. Confirme a aplicação instalada e o seu editor antes de seguir instruções específicas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confirme se a aplicação suporta essa opção",
+          "paragraphs": [
+            "A Google descreve Idiomas das aplicações nas definições de Sistema e idiomas do telefone. Alguns passos exigem Android 14 ou posterior e só aparecem aplicações compatíveis. Os nomes dos menus podem variar. Se o leitor não constar da lista, consulte as suas preferências documentadas em vez de presumir uma avaria. Anote a opção inicial antes de alterar uma definição disponível. Reabra a aplicação e compare o mesmo menu; não elimine os dados apenas para testar um idioma."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: alterar o idioma de uma aplicação Android",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Trate separadamente o idioma da reprodução",
+          "paragraphs": [
+            "Para falas ou legendas, consulte as faixas que o leitor disponibiliza para esse conteúdo. Um menu traduzido não prova que exista outra faixa. Se a interface continuar no idioma errado, registe o modelo, a versão do Android, a versão do leitor, a preferência escolhida e o ecrã inalterado. Envie estas observações sem credenciais nem detalhes privados de listas. Mantenha rede e subscrição inalteradas durante esta comparação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Язык приложения для 5G Live IPTV: меню или речь в программе?",
+      "excerpt": "Кнопки плеера, речь и субтитры могут использовать разные языки. Определите нужную часть, прежде чем менять язык всего телефона.",
+      "seo_title": "Язык приложения для 5G Live IPTV на Android",
+      "seo_description": "Проверьте поддерживаемые языковые настройки приложений Android для 5G Live IPTV. Отличайте меню от звуковой дорожки и сохраните исходный выбор.",
+      "sections": [
+        {
+          "heading": "Уточните, какой текст или звук нужно изменить",
+          "paragraphs": [
+            "Вопрос о языке приложения для 5G Live IPTV требует примера. Непонятны кнопки плеера, программа звучит на другом языке или отличаются субтитры? Запишите, что именно нужно изменить. Настройка языка отдельного приложения в Android касается интерфейса; она не обещает другую аудиодорожку или иной каталог. Название 5G не обозначает собственный плеер. Перед выполнением инструкций проверьте установленное приложение и его издателя."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте, поддерживает ли приложение этот выбор",
+          "paragraphs": [
+            "Google описывает пункт языков приложений в системных языковых настройках телефона. Некоторые действия требуют Android 14 или новее, а в списке отображаются только участвующие приложения. Названия меню зависят от телефона. Если плеера нет, изучите его документированные настройки, не предполагая неисправность. До изменения доступного параметра запишите исходное значение. Затем откройте приложение заново и сравните то же меню; не удаляйте его данные ради проверки языка."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: изменение языка приложения Android",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте язык воспроизведения от языка меню",
+          "paragraphs": [
+            "Для речи или субтитров посмотрите дорожки, которые плеер предлагает для конкретного материала. Переведенное меню не подтверждает наличие другой дорожки. Если язык интерфейса не изменился, запишите модель телефона, версии Android и плеера, выбранный язык и оставшийся прежним экран. Передайте наблюдения поддержке без учетных данных и закрытых сведений о плейлистах. При сравнении не меняйте настройки сети и подписки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV ایپ کی زبان: مینو یا پروگرام کی آواز؟",
+      "excerpt": "پلیئر کے بٹن، پروگرام کی آواز اور سب ٹائٹل الگ زبانوں میں ہو سکتے ہیں۔ پورے فون کی زبان بدلنے سے پہلے طے کریں کس چیز کو بدلنا ہے۔",
+      "seo_title": "5G Live IPTV کے لیے Android ایپ کی زبان دیکھیں",
+      "seo_description": "5G Live IPTV کے لیے معاون Android ایپ کی زبان کی ترتیب دیکھیں، پلیئر کے مینو اور پروگرام کی آواز کو الگ سمجھیں اور پہلے والا انتخاب لکھ لیں۔",
+      "sections": [
+        {
+          "heading": "بدلنے والا متن یا آواز واضح کریں",
+          "paragraphs": [
+            "5G Live IPTV ایپ کی زبان کے سوال میں واضح مثال دیں۔ کیا پلیئر کے بٹن سمجھ نہیں آتے، پروگرام دوسری زبان بولتا ہے یا سب ٹائٹل مختلف ہیں؟ متعلقہ حصہ لکھ لیں۔ Android کا الگ ایپ کے لیے زبان کا اختیار انٹرفیس کے لیے ہے؛ اس سے دوسری آڈیو ٹریک یا الگ کیٹلاگ کا وعدہ نہیں ہوتا۔ 5G نام کسی اپنی بنائی ہوئی پلیئر ایپ کی شناخت نہیں ہے۔ ہدایات اپنانے سے پہلے نصب ایپ اور اس کے ناشر کی تصدیق کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دیکھیں نصب ایپ یہ اختیار دیتی ہے یا نہیں",
+          "paragraphs": [
+            "Google فون کے سسٹم اور زبان کی ترتیبات میں ایپس کی زبان کا اختیار بتاتا ہے۔ بعض مراحل کے لیے Android 14 یا بعد کا ورژن ضروری ہے اور صرف معاون ایپس فہرست میں آتی ہیں۔ فون کے لحاظ سے مینو کے نام بدل سکتے ہیں۔ پلیئر موجود نہ ہو تو اسے خراب سمجھنے کے بجائے اس کی اپنی درج شدہ ترجیحات دیکھیں۔ ترتیب بدلنے سے پہلے پرانا انتخاب لکھیں۔ پھر ایپ دوبارہ کھول کر وہی مینو دیکھیں؛ زبان آزمانے کے لیے ڈیٹا نہ مٹائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android ایپ کی زبان بدلنے کی ہدایت",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پروگرام کی زبان کا سوال الگ رکھیں",
+          "paragraphs": [
+            "پروگرام کی آواز یا سب ٹائٹل کے لیے اس مواد پر پلیئر کی دستیاب ٹریک دیکھیں۔ ترجمہ شدہ مینو دوسری ٹریک ہونے کا ثبوت نہیں۔ انٹرفیس کی زبان نہ بدلے تو فون کا ماڈل، Android اور پلیئر کے ورژن، منتخب زبان اور نہ بدلنے والی اسکرین لکھیں۔ مدد کو یہ مشاہدات بھیجیں، لاگ اِن کی تفصیلات یا نجی پلے لسٹ کا ڈیٹا نہیں۔ اس موازنے کے دوران نیٹ ورک اور سبسکرپشن کی ترتیبات نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "لغة تطبيق 5G Live IPTV: القوائم أم صوت البرنامج؟",
+      "excerpt": "قد تستخدم أزرار المشغل والكلام والترجمة النصية لغات مختلفة. حدد الجزء الذي تريد تغييره قبل تعديل لغة الهاتف كله.",
+      "seo_title": "لغة التطبيق مع 5G Live IPTV على Android",
+      "seo_description": "تحقق من إعدادات لغة تطبيقات Android المدعومة لاستخدام 5G Live IPTV، وافصل القوائم عن صوت البرنامج واحتفظ بالخيار الأصلي للعودة إليه.",
+      "sections": [
+        {
+          "heading": "حدد النص أو الصوت الذي تريد تغييره",
+          "paragraphs": [
+            "يحتاج سؤال لغة التطبيق مع 5G Live IPTV إلى مثال واضح. هل أزرار المشغل غير مفهومة، أم يتحدث البرنامج بلغة أخرى، أم تختلف الترجمة النصية؟ دوّن الجزء المطلوب. يتعلق تحكم Android بلغة كل تطبيق بالواجهة؛ ولا يضمن مسارا صوتيا آخر أو كتالوجا مختلفا. اسم 5G لا يدل على مشغل خاص بنا. تحقق من التطبيق المثبت وناشره الفعلي قبل اتباع إرشاداته."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تحقق من دعم التطبيق لهذا الخيار",
+          "paragraphs": [
+            "تشرح Google خيار لغات التطبيقات ضمن إعدادات النظام واللغة في الهاتف. تتطلب بعض الخطوات Android 14 أو أحدث، ولا تظهر في القائمة إلا التطبيقات المشاركة. قد تختلف أسماء القوائم باختلاف الهاتف. إذا غاب المشغل، فراجع تفضيلاته الموثقة بدلا من افتراض عطله. دوّن الخيار الأصلي قبل تغيير إعداد متاح. أعد فتح التطبيق وقارن القائمة نفسها؛ لا تمسح بياناته لمجرد تجربة تفضيل لغوي."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: تغيير لغة تطبيق Android",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل لغة التشغيل عن لغة الواجهة",
+          "paragraphs": [
+            "للحديث أو الترجمة النصية، افحص المسارات التي يعرضها المشغل لذلك المحتوى. لا تثبت القائمة المترجمة وجود مسار آخر. إذا بقيت الواجهة باللغة غير المطلوبة، فدوّن طراز الهاتف وإصدار Android وإصدار المشغل والتفضيل المختار والشاشة التي لم تتغير. أرسل هذه الملاحظات للدعم دون بيانات دخول أو تفاصيل قوائم تشغيل خاصة. اترك إعدادات الشبكة والاشتراك كما هي أثناء المقارنة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV ऐप की भाषा: मेन्यू या कार्यक्रम की आवाज़?",
+      "excerpt": "प्लेयर के बटन, बोली जाने वाली आवाज़ और सबटाइटल अलग भाषाओं में हो सकते हैं। पूरे फ़ोन की भाषा बदलने से पहले सही हिस्सा पहचानें।",
+      "seo_title": "5G Live IPTV के लिए Android ऐप की भाषा जाँचें",
+      "seo_description": "5G Live IPTV के लिए समर्थित Android ऐप की भाषा जाँचें। प्लेयर के मेन्यू और कार्यक्रम की आवाज़ को अलग समझें और पुराना विकल्प लिख लें।",
+      "sections": [
+        {
+          "heading": "बदलने वाला पाठ या आवाज़ स्पष्ट करें",
+          "paragraphs": [
+            "5G Live IPTV ऐप की भाषा के सवाल में स्पष्ट उदाहरण चाहिए। क्या बटन समझ नहीं आते, कार्यक्रम दूसरी भाषा में बोलता है या सबटाइटल अलग हैं? लिखें कि किस हिस्से को बदलना है। Android में हर ऐप की भाषा का नियंत्रण इंटरफ़ेस के लिए है; यह दूसरी ऑडियो ट्रैक या अलग कैटलॉग का वादा नहीं करता। 5G नाम किसी अपने बनाए प्लेयर की पहचान नहीं है। निर्देश अपनाने से पहले इंस्टॉल ऐप और उसके प्रकाशक की जाँच करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "देखें कि ऐप इस विकल्प का समर्थन करता है या नहीं",
+          "paragraphs": [
+            "Google फ़ोन की सिस्टम और भाषा सेटिंग में ऐप की भाषाएँ विकल्प बताता है। कुछ चरणों के लिए Android 14 या नया संस्करण चाहिए और सूची में केवल समर्थित ऐप आते हैं। फ़ोन के अनुसार मेन्यू के नाम बदल सकते हैं। प्लेयर न दिखे तो उसे खराब मानने के बजाय उसके दर्ज विकल्प देखें। बदलाव से पहले पुराना चयन लिखें। फिर ऐप दोबारा खोलकर वही मेन्यू देखें; केवल भाषा आज़माने के लिए उसका डेटा न मिटाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android ऐप की भाषा बदलने के निर्देश",
+              "url": "https://support.google.com/android/answer/12395118?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "कार्यक्रम की भाषा का सवाल अलग रखें",
+          "paragraphs": [
+            "बोली या सबटाइटल के लिए उस सामग्री पर प्लेयर में उपलब्ध ट्रैक देखें। अनुवादित मेन्यू दूसरी ट्रैक होने का प्रमाण नहीं है। इंटरफ़ेस की भाषा न बदले तो फ़ोन का मॉडल, Android और प्लेयर के संस्करण, चुनी भाषा और न बदली स्क्रीन लिखें। सहायता को ये अवलोकन भेजें, खाते के विवरण या निजी प्लेलिस्ट जानकारी नहीं। इस तुलना के दौरान नेटवर्क और सब्सक्रिप्शन की सेटिंग न बदलें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: change app language on Android",
+      "url": "https://support.google.com/android/answer/12395118?hl=en"
+    }
+  ]
+}

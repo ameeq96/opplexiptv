@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-05",
+  "topic": "Review browser autofill contact details separately from the selected IPTV Subscription plan and payment state",
+  "primary_keyword": "IPTV subscription checkout autofill",
+  "slug": "iptvsubscription-checkout-autofill-contact-details",
+  "translations": {
+    "en": {
+      "title": "IPTV subscription checkout autofill: check the contact details",
+      "excerpt": "Saved browser information can save typing, but it can also fill an old email address. Review the actual fields separately from the provider and plan you selected.",
+      "seo_title": "IPTV Subscription checkout: review browser autofill",
+      "seo_description": "Check IPTV Subscription checkout autofill before submitting. Review contact details, the Opplex or Filex selection, duration, currency and the final amount.",
+      "sections": [
+        {
+          "heading": "Keep the plan choice separate from saved details",
+          "paragraphs": [
+            "IPTV subscription checkout autofill can help with typing, but a saved browser profile is not your service plan. Before continuing from IPTV Subscription to Opplexify, note the provider and duration you chose. Then read the contact fields actually displayed. A familiar name in a suggestion does not establish which email is being entered, and filling a form does not mean an order has been paid."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review each populated field",
+          "paragraphs": [
+            "Google explains that Chrome can fill online forms using saved information, including contact details. Use its official help to find the relevant saved information on your own device; menu wording can vary. After choosing a suggestion, inspect every populated field rather than checking only the first line. Correct an outdated email before submitting. Keep security protections enabled, and do not provide extra sensitive information just because a browser offers to fill it."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: saved autofill information",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm the checkout independently",
+          "paragraphs": [
+            "At Opplexify, read the actual Opplex or Filex provider, subscription duration, displayed currency and final total again. Autofill does not select the right service for you or confirm activation. If you are unsure whether a payment completed, check the existing order state before attempting another payment. For help with a field, describe its label and the public page; exclude passwords, private order links and full payment details from your message."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Autocompletado en IPTV Subscription: revisa los datos de contacto",
+      "excerpt": "Los datos guardados ahorran tecleo, pero pueden introducir un correo antiguo. Revisa los campos reales por separado del proveedor y del plan elegido.",
+      "seo_title": "IPTV Subscription: revisa el autocompletado al pagar",
+      "seo_description": "Revisa el autocompletado en IPTV Subscription: datos de contacto, proveedor Opplex o Filex, duración, moneda e importe final antes de enviar el formulario.",
+      "sections": [
+        {
+          "heading": "Separa el plan de los datos guardados",
+          "paragraphs": [
+            "El autocompletado al pagar una suscripción IPTV ayuda a escribir, pero un perfil guardado en el navegador no es tu plan de servicio. Antes de pasar de IPTV Subscription a Opplexify, anota el proveedor y la duración elegidos. Después lee los campos de contacto que aparecen realmente. Un nombre conocido en una sugerencia no determina qué correo se introduce, y rellenar un formulario no significa que el pedido esté pagado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa todos los campos completados",
+          "paragraphs": [
+            "Google explica que Chrome puede rellenar formularios con información guardada, incluidos datos de contacto. Consulta su ayuda oficial para encontrar esos datos en tu propio dispositivo; los nombres de los menús pueden variar. Tras elegir una sugerencia, revisa cada campo completado, no solo la primera línea. Corrige un correo antiguo antes de enviar. Mantén las protecciones de seguridad y no facilites información sensible adicional solo porque el navegador ofrezca introducirla."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Chrome: información de autocompletado",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirma el pago por separado",
+          "paragraphs": [
+            "En Opplexify, vuelve a leer el proveedor real, Opplex o Filex, la duración, la moneda mostrada y el total final. El autocompletado no elige el servicio adecuado ni confirma la activación. Si no sabes si un pago terminó, consulta el estado del pedido existente antes de intentar otro. Para recibir ayuda con un campo, indica su etiqueta y la página pública; excluye contraseñas, enlaces privados del pedido y datos completos de pago."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV Subscription : vérifier les coordonnées préremplies",
+      "excerpt": "Les informations enregistrées évitent de tout saisir, mais peuvent contenir une ancienne adresse. Vérifiez les champs réels séparément du fournisseur et du forfait choisi.",
+      "seo_title": "IPTV Subscription : contrôler la saisie automatique au paiement",
+      "seo_description": "Vérifiez la saisie automatique sur IPTV Subscription : coordonnées, fournisseur Opplex ou Filex, durée, devise et montant final avant l’envoi.",
+      "sections": [
+        {
+          "heading": "Distinguez le forfait des coordonnées enregistrées",
+          "paragraphs": [
+            "La saisie automatique au paiement d’un abonnement IPTV facilite la frappe, mais un profil enregistré dans le navigateur n’est pas votre forfait. Avant de passer d’IPTV Subscription à Opplexify, notez le fournisseur et la durée choisis. Lisez ensuite les champs de contact réellement affichés. Un nom familier dans une suggestion ne suffit pas à identifier l’adresse saisie, et remplir un formulaire ne signifie pas que la commande est payée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Relisez chaque champ renseigné",
+          "paragraphs": [
+            "Google explique que Chrome peut remplir des formulaires avec des informations enregistrées, notamment des coordonnées. Consultez son aide officielle pour retrouver ces données sur votre propre appareil ; les intitulés peuvent varier. Après avoir choisi une suggestion, contrôlez chaque champ renseigné plutôt que la seule première ligne. Corrigez une ancienne adresse avant l’envoi. Conservez les protections de sécurité et ne fournissez pas davantage d’informations sensibles simplement parce que le navigateur propose de les saisir."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Chrome : informations de saisie automatique",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Contrôlez le paiement indépendamment",
+          "paragraphs": [
+            "Sur Opplexify, relisez le fournisseur effectif, Opplex ou Filex, la durée de l’abonnement, la devise affichée et le total final. La saisie automatique ne choisit pas le bon service et ne confirme pas l’activation. En cas de doute sur un paiement, vérifiez l’état de la commande existante avant une autre tentative. Pour obtenir de l’aide sur un champ, indiquez son libellé et la page publique ; excluez mots de passe, liens privés de commande et données complètes de paiement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription: controlla i contatti compilati automaticamente",
+      "excerpt": "I dati salvati fanno risparmiare tempo, ma possono inserire una vecchia email. Controlla i campi effettivi separatamente dal fornitore e dall’abbonamento scelto.",
+      "seo_title": "IPTV Subscription: controllare la compilazione automatica",
+      "seo_description": "Controlla la compilazione automatica al checkout di IPTV Subscription: contatti, Opplex o Filex, durata dell’abbonamento IPTV, valuta e totale finale.",
+      "sections": [
+        {
+          "heading": "Distingui il piano dai dati salvati",
+          "paragraphs": [
+            "La compilazione automatica al pagamento di un abbonamento IPTV aiuta a scrivere, ma un profilo del browser non è il tuo piano di servizio. Prima di passare da IPTV Subscription a Opplexify, annota fornitore e durata scelti. Poi leggi i campi di contatto realmente visualizzati. Un nome familiare tra i suggerimenti non chiarisce quale email verrà inserita, e compilare un modulo non significa aver pagato un ordine."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ricontrolla ogni campo compilato",
+          "paragraphs": [
+            "Google spiega che Chrome può compilare i moduli usando informazioni salvate, compresi i contatti. Consulta la guida ufficiale per trovare quei dati sul tuo dispositivo; i nomi dei menu possono cambiare. Dopo aver scelto un suggerimento, controlla ogni campo compilato e non soltanto la prima riga. Correggi una vecchia email prima dell’invio. Mantieni attive le protezioni di sicurezza e non fornire altri dati sensibili solo perché il browser propone di inserirli."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google Chrome: dati di compilazione automatica",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Conferma il checkout separatamente",
+          "paragraphs": [
+            "Su Opplexify rileggi il fornitore effettivo, Opplex o Filex, la durata, la valuta visualizzata e il totale finale. La compilazione automatica non sceglie il servizio giusto e non conferma l’attivazione. Se non sai se un pagamento è terminato, verifica lo stato dell’ordine esistente prima di riprovare. Per chiedere aiuto su un campo, indica la sua etichetta e la pagina pubblica; escludi password, link privati dell’ordine e dati completi di pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription: controleer automatisch ingevulde contactgegevens",
+      "excerpt": "Opgeslagen browsergegevens besparen typewerk, maar kunnen een oud e-mailadres invullen. Controleer de echte velden los van de gekozen aanbieder en het abonnement.",
+      "seo_title": "IPTV Subscription: automatisch invullen bij afrekenen",
+      "seo_description": "Controleer bij IPTV Subscription de ingevulde contactgegevens, de keuze voor Opplex of Filex, looptijd, valuta en het eindbedrag voordat je doorgaat.",
+      "sections": [
+        {
+          "heading": "Houd de abonnementskeuze apart",
+          "paragraphs": [
+            "Automatisch invullen bij het afrekenen van een IPTV-abonnement helpt bij typen, maar een opgeslagen browserprofiel is geen serviceabonnement. Noteer de gekozen aanbieder en looptijd voordat je van IPTV Subscription naar Opplexify gaat. Lees daarna de werkelijk getoonde contactvelden. Een bekende naam in een suggestie zegt niet welk e-mailadres wordt ingevuld. Ook betekent een ingevuld formulier niet dat een bestelling is betaald."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk ieder ingevuld veld",
+          "paragraphs": [
+            "Google legt uit dat Chrome online formulieren met opgeslagen informatie kan invullen, waaronder contactgegevens. Gebruik de officiële hulp om die informatie op je eigen apparaat te vinden; menunamen kunnen verschillen. Bekijk na het kiezen van een suggestie ieder ingevuld veld, niet alleen de eerste regel. Corrigeer een oud e-mailadres voordat je het formulier verstuurt. Laat beveiligingsmaatregelen aanstaan en verstrek geen extra gevoelige gegevens alleen omdat de browser aanbiedt ze in te vullen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: opgeslagen invulgegevens",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer het afrekenen afzonderlijk",
+          "paragraphs": [
+            "Lees bij Opplexify opnieuw de werkelijke aanbieder, Opplex of Filex, de looptijd, de weergegeven valuta en het eindtotaal. Automatisch invullen kiest niet de juiste dienst en bevestigt geen activering. Twijfel je of een betaling is afgerond, bekijk dan de bestaande bestelstatus voordat je opnieuw betaalt. Vraag je hulp bij een veld, noem de veldnaam en de openbare pagina. Laat wachtwoorden, privébestellinks en volledige betaalgegevens uit het bericht."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV Subscription: confira os contactos preenchidos automaticamente",
+      "excerpt": "Os dados guardados poupam escrita, mas podem inserir um email antigo. Confira os campos reais separadamente do fornecedor e da assinatura escolhidos.",
+      "seo_title": "IPTV Subscription: conferir o preenchimento automático",
+      "seo_description": "Confira os contactos preenchidos no checkout do IPTV Subscription, o fornecedor Opplex ou Filex, a duração, a moeda e o valor final antes de enviar.",
+      "sections": [
+        {
+          "heading": "Separe o plano dos dados guardados",
+          "paragraphs": [
+            "O preenchimento automático ao pagar uma assinatura IPTV ajuda a escrever, mas um perfil guardado no navegador não é o seu plano. Antes de passar do IPTV Subscription para o Opplexify, anote o fornecedor e a duração escolhidos. Depois leia os campos de contacto efetivamente apresentados. Um nome conhecido numa sugestão não identifica o email que será inserido, e preencher um formulário não significa que o pedido está pago."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reveja todos os campos preenchidos",
+          "paragraphs": [
+            "A Google explica que o Chrome pode preencher formulários com informações guardadas, incluindo contactos. Consulte a ajuda oficial para encontrar esses dados no seu próprio dispositivo; os nomes dos menus podem variar. Depois de escolher uma sugestão, verifique cada campo preenchido, não apenas a primeira linha. Corrija um email antigo antes de enviar. Mantenha as proteções de segurança e não forneça dados sensíveis adicionais apenas porque o navegador se oferece para os inserir."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Chrome: dados de preenchimento automático",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme o checkout separadamente",
+          "paragraphs": [
+            "No Opplexify, releia o fornecedor real, Opplex ou Filex, a duração da assinatura, a moeda apresentada e o total final. O preenchimento automático não escolhe o serviço certo nem confirma a ativação. Se não souber se um pagamento terminou, consulte o estado do pedido existente antes de tentar novamente. Para obter ajuda com um campo, indique o seu nome e a página pública; exclua palavras-passe, links privados do pedido e dados completos de pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV Subscription: проверьте автоматически заполненные контакты",
+      "excerpt": "Сохранённые данные экономят время, но могут подставить старую почту. Проверяйте реальные поля отдельно от выбранного поставщика и срока подписки.",
+      "seo_title": "IPTV Subscription: проверка автозаполнения при оплате",
+      "seo_description": "Перед отправкой проверьте автозаполнение IPTV Subscription: контакты, выбор Opplex или Filex, срок подписки, указанную валюту и итоговую сумму.",
+      "sections": [
+        {
+          "heading": "Отделяйте выбор подписки от сохранённых данных",
+          "paragraphs": [
+            "Автозаполнение при оплате подписки IPTV облегчает ввод, но сохранённый профиль браузера не является вашим тарифом. Перед переходом с IPTV Subscription на Opplexify запишите выбранного поставщика и срок. Затем прочитайте фактически отображаемые контактные поля. Знакомое имя в подсказке не подтверждает, какой адрес будет введён. Заполненная форма также не означает, что заказ уже оплачен."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверяйте каждое заполненное поле",
+          "paragraphs": [
+            "Google объясняет, что Chrome может заполнять формы сохранённой информацией, включая контакты. Обратитесь к официальной справке, чтобы найти эти данные на своём устройстве; названия меню могут отличаться. После выбора подсказки просмотрите все заполненные поля, а не только первую строку. Исправьте старую почту до отправки. Оставьте средства защиты включёнными и не сообщайте дополнительные чувствительные сведения лишь потому, что браузер предлагает их подставить."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Chrome: данные автозаполнения",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте оформление заказа отдельно",
+          "paragraphs": [
+            "На Opplexify ещё раз прочитайте фактического поставщика, Opplex или Filex, срок подписки, указанную валюту и итог. Автозаполнение не выбирает подходящую услугу и не подтверждает активацию. Если непонятно, завершён ли платёж, проверьте состояние существующего заказа до повторной оплаты. Для помощи с полем укажите его название и общедоступную страницу. Не включайте пароли, закрытые ссылки заказа и полные платёжные сведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription: خودکار بھرے گئے رابطے کی تفصیل دیکھیں",
+      "excerpt": "براؤزر میں محفوظ معلومات لکھنے کا وقت بچاتی ہیں، مگر پرانا ای میل بھی بھر سکتی ہیں۔ اصل خانے، منتخب فراہم کنندہ اور پیکیج الگ الگ دیکھیں۔",
+      "seo_title": "IPTV Subscription چیک آؤٹ پر خودکار معلومات کی جانچ",
+      "seo_description": "IPTV Subscription کا فارم بھیجنے سے پہلے رابطے کے خانے، Opplex یا Filex، رکنیت کی مدت، دکھائی گئی کرنسی اور آخری رقم کی جانچ کریں۔",
+      "sections": [
+        {
+          "heading": "پیکیج کے انتخاب کو محفوظ معلومات سے الگ رکھیں",
+          "paragraphs": [
+            "IPTV رکنیت کے چیک آؤٹ پر خودکار معلومات بھرنا لکھنے میں مدد دیتا ہے، لیکن محفوظ براؤزر پروفائل آپ کا سروس پیکیج نہیں۔ IPTV Subscription سے Opplexify پر جانے سے پہلے منتخب فراہم کنندہ اور مدت نوٹ کریں۔ پھر واقعی دکھنے والے رابطے کے خانے پڑھیں۔ تجویز میں مانوس نام سے یہ ثابت نہیں ہوتا کہ کون سا ای میل درج ہوگا، اور فارم بھرنے کا مطلب آرڈر کی ادائیگی ہونا نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ہر بھرے ہوئے خانے کو پڑھیں",
+          "paragraphs": [
+            "Google بتاتا ہے کہ Chrome رابطے سمیت محفوظ معلومات سے آن لائن فارم بھر سکتا ہے۔ اپنے آلے پر متعلقہ محفوظ معلومات ڈھونڈنے کے لیے سرکاری رہنمائی دیکھیں؛ مینو کے الفاظ مختلف ہو سکتے ہیں۔ تجویز منتخب کرنے کے بعد صرف پہلی سطر نہیں بلکہ ہر بھرے خانے کی جانچ کریں۔ بھیجنے سے پہلے پرانا ای میل درست کریں۔ حفاظتی انتظامات فعال رکھیں اور صرف براؤزر کی پیشکش پر اضافی حساس معلومات نہ دیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome مدد: خودکار بھرنے کی محفوظ معلومات",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "چیک آؤٹ کی الگ تصدیق کریں",
+          "paragraphs": [
+            "Opplexify پر اصل Opplex یا Filex فراہم کنندہ، رکنیت کی مدت، دکھائی گئی کرنسی اور آخری کل رقم دوبارہ پڑھیں۔ خودکار معلومات آپ کے لیے درست سروس نہیں چنتیں اور فعال ہونے کی تصدیق نہیں کرتیں۔ ادائیگی مکمل ہونے پر شک ہو تو دوبارہ کوشش سے پہلے موجودہ آرڈر کی حالت دیکھیں۔ کسی خانے کی مدد کے لیے اس کا نام اور عوامی صفحہ بتائیں؛ پاس ورڈ، آرڈر کے نجی لنک اور ادائیگی کی مکمل تفصیل پیغام سے خارج رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "IPTV Subscription: راجع بيانات الاتصال المعبأة تلقائياً",
+      "excerpt": "توفر البيانات المحفوظة وقت الكتابة لكنها قد تُدخل بريداً قديماً. راجع الحقول الفعلية بمعزل عن المزوّد والخطة اللذين اخترتهما.",
+      "seo_title": "IPTV Subscription: مراجعة التعبئة التلقائية عند الدفع",
+      "seo_description": "راجع تعبئة بيانات الاتصال عند الدفع في IPTV Subscription، واختيار Opplex أو Filex والمدة والعملة والمبلغ النهائي قبل إرسال النموذج.",
+      "sections": [
+        {
+          "heading": "افصل اختيار الخطة عن البيانات المحفوظة",
+          "paragraphs": [
+            "تساعد التعبئة التلقائية عند دفع اشتراك IPTV في الكتابة، لكن ملف المتصفح المحفوظ ليس خطة الخدمة. قبل الانتقال من IPTV Subscription إلى Opplexify، دوّن المزوّد والمدة اللذين اخترتهما. ثم اقرأ حقول الاتصال المعروضة فعلياً. ظهور اسم مألوف في اقتراح لا يحدد البريد الذي سيُدخل، كما أن ملء نموذج لا يعني أن الطلب مدفوع."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع كل حقل تمت تعبئته",
+          "paragraphs": [
+            "توضح Google أن Chrome يستطيع تعبئة النماذج بمعلومات محفوظة، ومنها بيانات الاتصال. راجع المساعدة الرسمية للعثور على المعلومات المناسبة على جهازك؛ فقد تختلف أسماء القوائم. بعد اختيار اقتراح، افحص جميع الحقول المعبأة بدلاً من الاكتفاء بالسطر الأول. صحح البريد القديم قبل الإرسال. اترك وسائل الحماية مفعّلة، ولا تقدم معلومات حساسة إضافية لمجرد أن المتصفح يعرض إدخالها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Chrome: بيانات التعبئة التلقائية",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تحقق من عملية الدفع بشكل مستقل",
+          "paragraphs": [
+            "في Opplexify، اقرأ مجدداً المزوّد الفعلي، Opplex أو Filex، ومدة الاشتراك والعملة المعروضة والمجموع النهائي. لا تختار التعبئة التلقائية الخدمة المناسبة ولا تؤكد التفعيل. إذا لم تتأكد من اكتمال الدفع، فتحقق من حالة الطلب الموجود قبل محاولة الدفع مرة أخرى. وللمساعدة في حقل، اذكر عنوانه والصفحة العامة؛ واستبعد كلمات المرور وروابط الطلب الخاصة وتفاصيل الدفع الكاملة من رسالتك."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription: अपने आप भरी संपर्क जानकारी जाँचें",
+      "excerpt": "ब्राउज़र में सहेजी जानकारी टाइपिंग बचाती है, लेकिन पुराना ईमेल भी भर सकती है। वास्तविक फ़ील्ड को चुने प्रदाता और प्लान से अलग जाँचें।",
+      "seo_title": "IPTV Subscription चेकआउट में ऑटोफिल की जाँच",
+      "seo_description": "IPTV Subscription का फ़ॉर्म भेजने से पहले संपर्क जानकारी, Opplex या Filex, सदस्यता की अवधि, दिखाई मुद्रा और अंतिम रकम जाँचें।",
+      "sections": [
+        {
+          "heading": "प्लान को सहेजी जानकारी से अलग समझें",
+          "paragraphs": [
+            "IPTV सदस्यता के चेकआउट में ऑटोफिल टाइपिंग में मदद करता है, लेकिन सहेजी ब्राउज़र प्रोफ़ाइल आपका सेवा प्लान नहीं है। IPTV Subscription से Opplexify पर जाने से पहले चुना प्रदाता और अवधि लिखें। फिर वास्तव में दिख रहे संपर्क फ़ील्ड पढ़ें। सुझाव में परिचित नाम यह तय नहीं करता कि कौन सा ईमेल भरेगा, और फ़ॉर्म भरने का मतलब ऑर्डर का भुगतान होना नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "हर भरे हुए फ़ील्ड को पढ़ें",
+          "paragraphs": [
+            "Google बताता है कि Chrome संपर्क विवरण सहित सहेजी जानकारी से ऑनलाइन फ़ॉर्म भर सकता है। अपने डिवाइस पर संबंधित सहेजी जानकारी खोजने के लिए आधिकारिक सहायता देखें; मेनू के नाम अलग हो सकते हैं। सुझाव चुनने के बाद केवल पहली पंक्ति नहीं बल्कि हर भरे फ़ील्ड की जाँच करें। भेजने से पहले पुराना ईमेल सुधारें। सुरक्षा उपाय चालू रखें और सिर्फ ब्राउज़र की पेशकश के कारण अतिरिक्त संवेदनशील जानकारी न दें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome सहायता: सहेजी ऑटोफिल जानकारी",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "चेकआउट की अलग पुष्टि करें",
+          "paragraphs": [
+            "Opplexify पर असली Opplex या Filex प्रदाता, सदस्यता की अवधि, दिखाई मुद्रा और अंतिम कुल रकम फिर पढ़ें। ऑटोफिल सही सेवा नहीं चुनता और सक्रिय होने की पुष्टि नहीं करता। भुगतान पूरा होने पर संदेह हो तो दोबारा कोशिश से पहले मौजूदा ऑर्डर की स्थिति देखें। किसी फ़ील्ड में सहायता के लिए उसका नाम और सार्वजनिक पृष्ठ बताएँ; पासवर्ड, ऑर्डर के निजी लिंक और भुगतान की पूरी जानकारी संदेश से बाहर रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: manage saved autofill information",
+      "url": "https://support.google.com/chrome/answer/142893?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-05",
+  "topic": "Identify a Fire TV parental-control prompt separately from a player sign-in and respect the device owner’s access decision",
+  "primary_keyword": "Trex IPTV parental controls",
+  "slug": "trex-fire-tv-parental-control-pin-player-sign-in",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV parental controls: whose PIN is being requested?",
+      "excerpt": "A Fire TV PIN prompt and a player sign-in are different screens. Identify where access stops before changing a household restriction or questioning your Trex plan.",
+      "seo_title": "Trex IPTV parental controls: whose PIN is being requested?",
+      "seo_description": "A Fire TV PIN prompt and a player sign-in are different screens. Identify where access stops before changing a household restriction or questioning your Trex plan.",
+      "sections": [
+        {
+          "heading": "Name the screen before entering anything",
+          "paragraphs": [
+            "A Trex IPTV parental controls question starts with identifying the screen asking for access. Does the prompt appear on the Fire TV home screen, when opening a Live-tab item or only after the player loads? Note its exact heading without recording the PIN. A device restriction, an app account and a streaming subscription are separate things. Do not put subscription credentials into a screen merely because it requests a code."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the scope of the household restriction",
+          "paragraphs": [
+            "Amazon documents parental-control prompts and blocked previews for supported Fire TV Live-tab integrations, not every third-party player. A blank preview therefore needs context before it is described as an outage. Ask the device owner to review the relevant protection using the current device help. Leave household safeguards in place; do not guess a PIN or repeatedly disable controls to make a comparison. Check the player’s own guidance separately if its screen requests access."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: documented parental-control behavior",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Send a precise support question",
+          "paragraphs": [
+            "Record the Fire TV model, system version, player name and the action immediately before the prompt. Say whether you can reach the player menu and whether playback has actually been attempted. Trex permits one simultaneous connection; entering a device PIN does not increase that allowance or establish that a renewal is needed. Send the observations through private support, keeping PINs, passwords and account links out of screenshots. The person managing the household restriction should decide any access change."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Control parental en Trex IPTV: ¿de quién es el PIN?",
+      "excerpt": "Un aviso de PIN de Fire TV no es un inicio de sesión del reproductor. Identifica dónde se detiene el acceso antes de cambiar restricciones o cuestionar tu plan Trex.",
+      "seo_title": "Control parental en Trex IPTV: ¿de quién es el PIN?",
+      "seo_description": "Un aviso de PIN de Fire TV no es un inicio de sesión del reproductor. Identifica dónde se detiene el acceso antes de cambiar restricciones o cuestionar tu plan Trex.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla antes de escribir nada",
+          "paragraphs": [
+            "Una consulta sobre control parental de Trex IPTV empieza por identificar qué pantalla pide acceso. ¿El aviso aparece en el inicio de Fire TV, al abrir un elemento de la pestaña En directo o solo tras cargar el reproductor? Anota el encabezado exacto sin registrar el PIN. Una restricción del dispositivo, una cuenta de aplicación y una suscripción son cosas distintas. No introduzcas credenciales de la suscripción solo porque una pantalla solicita un código."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba el alcance de la restricción familiar",
+          "paragraphs": [
+            "Amazon documenta avisos de control parental y vistas previas bloqueadas en integraciones compatibles de la pestaña En directo, no en todos los reproductores externos. Una vista previa vacía necesita contexto antes de describirla como caída. Pide al propietario revisar la protección correspondiente con la ayuda actual del dispositivo. Mantén las medidas familiares: no adivines el PIN ni desactives repetidamente controles para comparar. Si el acceso lo pide el reproductor, consulta su documentación por separado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: comportamiento documentado del control parental",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Envía una consulta de soporte precisa",
+          "paragraphs": [
+            "Anota modelo de Fire TV, versión del sistema, nombre del reproductor y acción inmediatamente anterior al aviso. Indica si puedes llegar al menú y si has intentado reproducir. Trex permite una conexión simultánea; introducir el PIN del dispositivo no aumenta ese límite ni demuestra que debas renovar. Envía las observaciones por soporte privado, ocultando PIN, contraseñas y enlaces de cuenta en capturas. Quien administra la restricción familiar debe decidir cualquier cambio de acceso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Contrôle parental Trex IPTV : à qui appartient le code PIN ?",
+      "excerpt": "Une demande de code PIN Fire TV diffère de la connexion au lecteur. Repérez où l’accès s’arrête avant de modifier une restriction familiale ou de mettre le forfait en cause.",
+      "seo_title": "Contrôle parental Trex IPTV : à qui appartient le code PIN ?",
+      "seo_description": "Une demande de code PIN Fire TV diffère de la connexion au lecteur. Repérez où l’accès s’arrête avant de modifier une restriction familiale ou de mettre le forfait en cause.",
+      "sections": [
+        {
+          "heading": "Identifiez l’écran avant toute saisie",
+          "paragraphs": [
+            "Pour une question de contrôle parental Trex IPTV, commencez par identifier l’écran qui demande l’accès. Le message apparaît-il sur l’accueil Fire TV, à l’ouverture d’un élément de l’onglet En direct ou seulement après le chargement du lecteur ? Notez le titre exact sans enregistrer le PIN. Restriction de l’appareil, compte d’application et abonnement sont distincts. Ne saisissez pas vos identifiants d’abonnement simplement parce qu’un écran demande un code."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez la portée de la restriction familiale",
+          "paragraphs": [
+            "Amazon décrit des demandes de contrôle parental et des aperçus bloqués pour les intégrations compatibles de l’onglet En direct, pas pour tous les lecteurs tiers. Un aperçu vide nécessite donc du contexte avant d’être qualifié de panne. Demandez au propriétaire de vérifier la protection concernée avec l’aide actuelle de l’appareil. Conservez les protections familiales : ne devinez pas le PIN et ne désactivez pas les contrôles à répétition. Si la demande vient du lecteur, consultez séparément sa documentation."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV : fonctionnement documenté du contrôle parental",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Posez une question précise à l’assistance",
+          "paragraphs": [
+            "Notez le modèle Fire TV, la version système, le nom du lecteur et l’action précédant la demande. Précisez si le menu est accessible et si une lecture a vraiment été tentée. Trex autorise une connexion simultanée ; saisir un PIN ne change pas cette limite et ne prouve pas qu’un renouvellement est nécessaire. Envoyez ces observations par assistance privée, sans PIN, mots de passe ou liens de compte dans les captures. Le responsable des restrictions familiales décide des changements d’accès."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Controllo genitori Trex IPTV: di chi è il PIN richiesto?",
+      "excerpt": "Un PIN di Fire TV e l’accesso al lettore sono schermate diverse. Individua dove si ferma l’accesso prima di modificare una restrizione familiare o mettere in dubbio il piano.",
+      "seo_title": "Controllo genitori Trex IPTV: di chi è il PIN richiesto?",
+      "seo_description": "Un PIN di Fire TV e l’accesso al lettore sono schermate diverse. Individua dove si ferma l’accesso prima di modificare una restrizione familiare o mettere in dubbio il piano.",
+      "sections": [
+        {
+          "heading": "Riconosci la schermata prima di inserire dati",
+          "paragraphs": [
+            "Una domanda sul controllo genitori di Trex IPTV parte dalla schermata che richiede l’accesso. Compare nella home di Fire TV, aprendo un elemento della scheda In diretta oppure solo dopo il caricamento del lettore? Annota il titolo esatto senza registrare il PIN. Restrizione del dispositivo, account dell’app e abbonamento sono cose distinte. Non inserire credenziali dell’abbonamento solo perché una schermata chiede un codice."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica l’ambito della restrizione familiare",
+          "paragraphs": [
+            "Amazon documenta richieste del controllo genitori e anteprime bloccate nelle integrazioni compatibili della scheda In diretta, non in tutti i lettori esterni. Un’anteprima vuota richiede quindi contesto prima di parlare di disservizio. Chiedi al proprietario di controllare la protezione interessata con la guida aggiornata del dispositivo. Mantieni le protezioni familiari: non indovinare PIN e non disattivare ripetutamente i controlli per confrontare. Se la richiesta arriva dal lettore, consulta separatamente la sua guida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: comportamento documentato del controllo genitori",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Invia una domanda precisa all’assistenza",
+          "paragraphs": [
+            "Annota modello di Fire TV, versione del sistema, nome del lettore e azione immediatamente precedente alla richiesta. Spiega se raggiungi il menu e se hai davvero tentato la riproduzione. Trex consente una connessione simultanea: inserire un PIN non aumenta il limite né dimostra che serva un rinnovo. Invia le osservazioni all’assistenza privata senza PIN, password o link dell’account nelle schermate. Le modifiche di accesso spettano a chi gestisce la restrizione familiare."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-ouderlijk toezicht: welke pincode wordt gevraagd?",
+      "excerpt": "Een Fire TV-pincode en aanmelden bij een speler zijn verschillende schermen. Kijk waar toegang stopt voordat je gezinsbeperkingen wijzigt of aan je Trex-abonnement twijfelt.",
+      "seo_title": "Trex IPTV-ouderlijk toezicht: welke pincode wordt gevraagd?",
+      "seo_description": "Een Fire TV-pincode en aanmelden bij een speler zijn verschillende schermen. Kijk waar toegang stopt voordat je gezinsbeperkingen wijzigt of aan je Trex-abonnement twijfelt.",
+      "sections": [
+        {
+          "heading": "Benoem het scherm voordat je iets invult",
+          "paragraphs": [
+            "Een vraag over Trex IPTV-ouderlijk toezicht begint bij het scherm dat toegang vraagt. Verschijnt de melding op het Fire TV-startscherm, bij een onderdeel van het tabblad Live of pas nadat de speler is geladen? Noteer de exacte kop zonder de pincode vast te leggen. Een apparaatbeperking, appaccount en streamingabonnement zijn verschillende zaken. Vul geen abonnementsgegevens in alleen omdat een scherm om een code vraagt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer waarop de gezinsbeperking betrekking heeft",
+          "paragraphs": [
+            "Amazon beschrijft meldingen van ouderlijk toezicht en geblokkeerde voorbeelden voor ondersteunde Live-integraties, niet voor iedere externe speler. Een leeg voorbeeld vraagt dus context voordat je het een storing noemt. Vraag de eigenaar de betreffende bescherming met de actuele apparaathulp te bekijken. Laat gezinsbeveiligingen aan; raad geen pincodes en schakel controles niet herhaaldelijk uit om te vergelijken. Vraagt het spelerscherm om toegang, raadpleeg dan afzonderlijk de hulp van die speler."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: gedocumenteerd gedrag van ouderlijk toezicht",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Stel een precieze vraag aan ondersteuning",
+          "paragraphs": [
+            "Noteer Fire TV-model, systeemversie, spelernaam en de handeling vlak voor de melding. Zeg of het spelermenu bereikbaar is en of je echt hebt geprobeerd af te spelen. Trex staat één gelijktijdige verbinding toe; een apparaatpincode verandert dat niet en bewijst niet dat verlenging nodig is. Stuur waarnemingen privé en houd pincodes, wachtwoorden en accountlinks buiten schermafbeeldingen. Degene die de gezinsbeperking beheert beslist over elke toegangsverandering."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Controle parental Trex IPTV: de quem é o PIN solicitado?",
+      "excerpt": "Um pedido de PIN do Fire TV e o login do leitor são telas diferentes. Identifique onde o acesso para antes de alterar uma restrição familiar ou questionar seu plano Trex.",
+      "seo_title": "Controle parental Trex IPTV: de quem é o PIN solicitado?",
+      "seo_description": "Um pedido de PIN do Fire TV e o login do leitor são telas diferentes. Identifique onde o acesso para antes de alterar uma restrição familiar ou questionar seu plano Trex.",
+      "sections": [
+        {
+          "heading": "Identifique a tela antes de digitar",
+          "paragraphs": [
+            "Uma dúvida sobre controle parental Trex IPTV começa pela tela que solicita acesso. O aviso aparece no início do Fire TV, ao abrir um item da aba Ao vivo ou apenas depois que o leitor carrega? Anote o título exato sem registrar o PIN. Restrição do aparelho, conta do aplicativo e assinatura são coisas separadas. Não digite credenciais da assinatura só porque uma tela pede um código."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira o alcance da restrição familiar",
+          "paragraphs": [
+            "A Amazon documenta pedidos de controle parental e prévias bloqueadas em integrações compatíveis da aba Ao vivo, não em todos os leitores externos. Portanto, uma prévia vazia exige contexto antes de ser chamada de falha. Peça ao proprietário para revisar a proteção correspondente usando a ajuda atual do aparelho. Mantenha as proteções familiares; não adivinhe o PIN nem desative controles repetidamente para comparar. Se a solicitação vier do leitor, consulte sua própria documentação separadamente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: comportamento documentado do controle parental",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Envie uma pergunta precisa ao suporte",
+          "paragraphs": [
+            "Registre modelo do Fire TV, versão do sistema, nome do leitor e ação imediatamente anterior ao pedido. Diga se consegue abrir o menu e se realmente tentou reproduzir. Trex permite uma conexão simultânea; inserir o PIN do aparelho não amplia esse limite nem prova que uma renovação seja necessária. Envie as observações ao suporte privado, sem PIN, senhas ou links de conta nas capturas. Quem administra a restrição familiar deve decidir qualquer mudança de acesso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Родительский контроль Trex IPTV: чей PIN запрашивается?",
+      "excerpt": "Запрос PIN на Fire TV отличается от входа в плеер. Определите, где останавливается доступ, прежде чем менять семейные ограничения или сомневаться в подписке Trex.",
+      "seo_title": "Родительский контроль Trex IPTV: чей PIN запрашивается?",
+      "seo_description": "Запрос PIN на Fire TV отличается от входа в плеер. Определите, где останавливается доступ, прежде чем менять семейные ограничения или сомневаться в подписке Trex.",
+      "sections": [
+        {
+          "heading": "Определите экран до ввода данных",
+          "paragraphs": [
+            "Вопрос о родительском контроле Trex IPTV начинается с определения экрана, запрашивающего доступ. Сообщение появляется на главном экране Fire TV, при открытии элемента вкладки прямого эфира или после загрузки плеера? Запишите точный заголовок, но не PIN. Ограничение устройства, аккаунт приложения и подписка — разные вещи. Не вводите данные подписки лишь потому, что экран просит код."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Уточните область семейного ограничения",
+          "paragraphs": [
+            "Amazon описывает запросы родительского контроля и заблокированные превью для поддерживаемых интеграций вкладки прямого эфира, а не всех сторонних плееров. Пустое превью требует контекста до вывода о сбое. Попросите владельца проверить нужную защиту по актуальной справке устройства. Сохраняйте семейные ограничения: не подбирайте PIN и не отключайте защиту многократно для сравнения. Если доступ запрашивает сам плеер, отдельно изучите его справку."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: документированное поведение родительского контроля",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "Подготовьте точный вопрос в поддержку",
+          "paragraphs": [
+            "Запишите модель Fire TV, версию системы, название плеера и действие непосредственно перед запросом. Укажите, доступно ли меню и пробовали ли вы воспроизведение. Trex разрешает одно одновременное подключение: ввод PIN устройства не меняет этот лимит и не доказывает необходимость продления. Передавайте наблюдения через частную поддержку без PIN, паролей и ссылок аккаунта на снимках. Решение об изменении доступа принимает человек, управляющий семейным ограничением."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV پیرنٹل کنٹرول: کون سا PIN مانگا جا رہا ہے؟",
+      "excerpt": "Fire TV کا PIN اور پلیئر میں لاگ ان الگ اسکرینیں ہیں۔ گھریلو پابندی بدلنے یا Trex پلان پر شک کرنے سے پہلے دیکھیں کہ رسائی کہاں رکتی ہے۔",
+      "seo_title": "Trex IPTV پیرنٹل کنٹرول: کون سا PIN مانگا جا رہا ہے؟",
+      "seo_description": "Fire TV کا PIN اور پلیئر میں لاگ ان الگ اسکرینیں ہیں۔ گھریلو پابندی بدلنے یا Trex پلان پر شک کرنے سے پہلے دیکھیں کہ رسائی کہاں رکتی ہے۔",
+      "sections": [
+        {
+          "heading": "کچھ درج کرنے سے پہلے اسکرین پہچانیں",
+          "paragraphs": [
+            "Trex IPTV پیرنٹل کنٹرول کے سوال کی ابتدا اسکرین پہچاننے سے ہوتی ہے۔ پیغام Fire TV کی ہوم اسکرین پر، براہِ راست نشریات والے ٹیب کی چیز کھولنے پر یا پلیئر لوڈ ہونے کے بعد آتا ہے؟ PIN لکھے بغیر اصل عنوان نوٹ کریں۔ ڈیوائس کی پابندی، ایپ کا اکاؤنٹ اور اسٹریمنگ سبسکرپشن الگ چیزیں ہیں۔ صرف کوڈ مانگنے پر کسی اسکرین میں سبسکرپشن کا پاس ورڈ نہ ڈالیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "گھریلو پابندی کا دائرہ دیکھیں",
+          "paragraphs": [
+            "Amazon کی دستاویز معاون Fire TV براہِ راست نشریات کی انٹیگریشن میں پیرنٹل پیغام اور پیش منظر رکنے کا ذکر کرتی ہے، ہر بیرونی پلیئر کا نہیں۔ اس لیے خالی پیش منظر کو خرابی کہنے سے پہلے صورتِ حال سمجھیں۔ مالک سے موجودہ ڈیوائس رہنمائی کے مطابق متعلقہ حفاظت دیکھنے کو کہیں۔ گھریلو تحفظ برقرار رکھیں؛ PIN کا اندازہ نہ لگائیں اور موازنے کے لیے بار بار کنٹرول بند نہ کریں۔ اگر پلیئر اپنی رسائی مانگے تو اس کی رہنمائی الگ دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: پیرنٹل کنٹرول کا دستاویزی رویہ",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "سپورٹ کو واضح سوال بھیجیں",
+          "paragraphs": [
+            "Fire TV ماڈل، سسٹم ورژن، پلیئر نام اور پیغام سے فوراً پہلے کا عمل لکھیں۔ بتائیں کہ پلیئر مینو کھلتا ہے یا نہیں اور پلے بیک واقعی آزمایا ہے یا نہیں۔ Trex میں ایک وقت میں ایک کنکشن ہے؛ ڈیوائس PIN ڈالنے سے حد نہیں بڑھتی اور نہ تجدید ضروری ثابت ہوتی ہے۔ نجی سپورٹ کو مشاہدات بھیجیں، تصاویر میں PIN، پاس ورڈ اور اکاؤنٹ لنک نہ رکھیں۔ رسائی کی تبدیلی کا فیصلہ گھریلو پابندی سنبھالنے والا کرے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "الرقابة الأبوية في Trex IPTV: رمز PIN لمن؟",
+      "excerpt": "طلب رمز PIN من Fire TV يختلف عن تسجيل الدخول إلى المشغّل. حدّد موضع توقف الوصول قبل تغيير قيود الأسرة أو التشكيك في خطة Trex.",
+      "seo_title": "الرقابة الأبوية في Trex IPTV: رمز PIN لمن؟",
+      "seo_description": "طلب رمز PIN من Fire TV يختلف عن تسجيل الدخول إلى المشغّل. حدّد موضع توقف الوصول قبل تغيير قيود الأسرة أو التشكيك في خطة Trex.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة قبل إدخال أي بيانات",
+          "paragraphs": [
+            "ابدأ سؤال الرقابة الأبوية في Trex IPTV بتحديد الشاشة التي تطلب الوصول. هل يظهر الطلب على واجهة Fire TV أم عند فتح عنصر من تبويب البث المباشر أم بعد تحميل المشغّل فقط؟ دوّن العنوان الدقيق دون تسجيل الرمز. قيود الجهاز وحساب التطبيق والاشتراك أمور منفصلة. لا تدخل بيانات الاشتراك لمجرد أن شاشة ما تطلب رمزًا."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص نطاق القيد العائلي",
+          "paragraphs": [
+            "توثّق Amazon مطالبات الرقابة الأبوية وحجب المعاينات للتكاملات المدعومة في تبويب البث المباشر، وليس لكل مشغّل خارجي. لذا تحتاج المعاينة الفارغة إلى سياق قبل وصفها بالعطل. اطلب من مالك الجهاز مراجعة الحماية المعنية باستخدام المساعدة الحالية للجهاز. أبقِ وسائل حماية الأسرة مفعّلة؛ لا تخمّن الرمز ولا تعطّل القيود مرارًا للمقارنة. إذا كان الطلب من المشغّل نفسه، فراجع إرشاداته بشكل منفصل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: سلوك الرقابة الأبوية الموثّق",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "أرسل سؤالًا محددًا إلى الدعم",
+          "paragraphs": [
+            "سجّل طراز Fire TV وإصدار النظام واسم المشغّل والإجراء الذي سبق الطلب مباشرة. وضّح هل تصل إلى قائمة المشغّل وهل جرت محاولة تشغيل فعلية. تتيح Trex اتصالًا متزامنًا واحدًا؛ إدخال رمز الجهاز لا يزيد هذا الحد ولا يثبت ضرورة التجديد. أرسل الملاحظات عبر الدعم الخاص، وأبعد الرموز وكلمات المرور وروابط الحساب عن لقطات الشاشة. قرار تغيير الوصول يعود إلى المسؤول عن القيد العائلي."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV पैरेंटल कंट्रोल: किसका PIN मांगा जा रहा है?",
+      "excerpt": "Fire TV का PIN और प्लेयर में साइन इन अलग स्क्रीन हैं। घर की रोक बदलने या Trex प्लान पर सवाल उठाने से पहले पहचानें कि पहुंच कहां रुक रही है।",
+      "seo_title": "Trex IPTV पैरेंटल कंट्रोल: किसका PIN मांगा जा रहा है?",
+      "seo_description": "Fire TV का PIN और प्लेयर में साइन इन अलग स्क्रीन हैं। घर की रोक बदलने या Trex प्लान पर सवाल उठाने से पहले पहचानें कि पहुंच कहां रुक रही है।",
+      "sections": [
+        {
+          "heading": "कुछ भरने से पहले स्क्रीन पहचानें",
+          "paragraphs": [
+            "Trex IPTV पैरेंटल कंट्रोल का सवाल उस स्क्रीन को पहचानने से शुरू होता है जो पहुंच मांग रही है। क्या सूचना Fire TV होम पर, लाइव टैब का कोई आइटम खोलने पर या प्लेयर लोड होने के बाद आती है? PIN लिखे बिना ठीक शीर्षक नोट करें। डिवाइस की रोक, ऐप अकाउंट और स्ट्रीमिंग सदस्यता अलग चीजें हैं। केवल कोड मांगे जाने पर किसी स्क्रीन में सदस्यता की लॉगिन जानकारी न डालें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "घर की रोक का दायरा जांचें",
+          "paragraphs": [
+            "Amazon समर्थित Fire TV लाइव टैब इंटीग्रेशन में पैरेंटल संदेश और बंद प्रीव्यू बताता है, हर बाहरी प्लेयर में नहीं। इसलिए खाली प्रीव्यू को खराबी बताने से पहले संदर्भ देखें। मालिक से डिवाइस की मौजूदा मदद के अनुसार संबंधित सुरक्षा देखने को कहें। घर की सुरक्षा जारी रखें; PIN का अंदाजा न लगाएं और तुलना के लिए बार-बार नियंत्रण बंद न करें। अगर पहुंच प्लेयर खुद मांग रहा है, तो उसकी मदद अलग देखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon Fire TV: पैरेंटल कंट्रोल का दर्ज व्यवहार",
+              "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+            }
+          ]
+        },
+        {
+          "heading": "सहायता को सटीक सवाल भेजें",
+          "paragraphs": [
+            "Fire TV मॉडल, सिस्टम वर्शन, प्लेयर नाम और सूचना से ठीक पहले का काम लिखें। बताएं कि प्लेयर मेनू खुलता है या नहीं और प्लेबैक सच में आजमाया है या नहीं। Trex एक समय में एक कनेक्शन देता है; डिवाइस PIN भरने से सीमा नहीं बढ़ती और न ही नवीनीकरण जरूरी साबित होता है। निजी सहायता को जानकारी भेजें, स्क्रीनशॉट में PIN, पासवर्ड और अकाउंट लिंक न रखें। पहुंच बदलने का फैसला घर की रोक संभालने वाला व्यक्ति करे।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon Fire TV developer documentation: parental controls in supported Live-tab integrations",
+      "url": "https://developer.amazon.com/docs/fire-tv/test-cases-for-events-apps.html"
+    }
+  ]
+}

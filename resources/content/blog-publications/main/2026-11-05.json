@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-05",
+  "topic": "Distinguish a consistently early or late subtitle track from the wrong dialogue and a progressively drifting offset in VLC for Android",
+  "primary_keyword": "IPTV subtitle delay",
+  "slug": "main-vlc-android-subtitle-delay-track-drift",
+  "translations": {
+    "en": {
+      "title": "IPTV subtitle delay: correct words, wrong moment?",
+      "excerpt": "When the right subtitles appear early or late in VLC for Android, compare timing separately from language and audio. Keep the starting value before adjusting anything.",
+      "seo_title": "IPTV subtitle delay: correct words, wrong moment?",
+      "seo_description": "When the right subtitles appear early or late in VLC for Android, compare timing separately from language and audio. Keep the starting value before adjusting anything.",
+      "sections": [
+        {
+          "heading": "First decide whether the words belong to the scene",
+          "paragraphs": [
+            "An IPTV subtitle delay check makes sense when the selected text matches the dialogue but arrives before or after it. If the words describe a different scene or language, changing timing is not the first step. Check the available subtitle track and use a short passage with a clear spoken line. Note whether the mismatch stays similar or grows during playback. Keep the same passage for each comparison."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Change subtitle timing without changing audio timing",
+          "paragraphs": [
+            "VideoLAN documents separate subtitle and audio delay controls in VLC for Android. In the subtitle pane, its options include Subtitle delay and a reset control. Labels can differ with the installed version. Write down the starting value, adjust only the subtitle control and compare the same line. Leave audio delay and playback speed unchanged unless you are investigating a separate problem. If no selectable subtitle track exists, this check may not apply."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android video player and subtitle delay",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Report a changing mismatch instead of chasing it",
+          "paragraphs": [
+            "If alignment improves briefly and then drifts, record when that happens rather than repeatedly adding larger offsets. Restore the starting value if the comparison is unhelpful. For private support, include Android and VLC versions, the selected track and whether text is early, late or drifting. Do not include credentials or playlist addresses. A timing mismatch by itself does not establish an expired plan or a service-wide outage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Retraso de subtítulos IPTV: ¿texto correcto en otro momento?",
+      "excerpt": "Si los subtítulos correctos se adelantan o retrasan en VLC para Android, separa el ajuste de tiempo del idioma y del audio. Anota el valor inicial antes de cambiarlo.",
+      "seo_title": "Retraso de subtítulos IPTV: ¿texto correcto en otro momento?",
+      "seo_description": "Si los subtítulos correctos se adelantan o retrasan en VLC para Android, separa el ajuste de tiempo del idioma y del audio. Anota el valor inicial antes de cambiarlo.",
+      "sections": [
+        {
+          "heading": "Comprueba primero si el texto corresponde a la escena",
+          "paragraphs": [
+            "Conviene revisar el retraso de subtítulos IPTV cuando el texto elegido coincide con el diálogo, pero aparece antes o después. Si describe otra escena o está en otro idioma, cambiar el tiempo no es el primer paso. Revisa la pista disponible y elige un fragmento breve con una frase clara. Observa si la diferencia permanece parecida o aumenta durante la reproducción. Usa el mismo fragmento en cada comparación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ajusta los subtítulos sin tocar el tiempo del audio",
+          "paragraphs": [
+            "VideoLAN documenta controles separados de retraso de subtítulos y audio en VLC para Android. Las opciones del panel de subtítulos incluyen el retraso y un control de restablecimiento. Los nombres pueden variar según la versión instalada. Anota el valor inicial, cambia solo el ajuste de subtítulos y compara la misma frase. Mantén sin cambios el retraso del audio y la velocidad, salvo que investigues otro problema. Sin una pista seleccionable, esta comprobación podría no servir."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: reproductor Android y retraso de subtítulos",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Describe el desfase progresivo en lugar de perseguirlo",
+          "paragraphs": [
+            "Si la sincronización mejora brevemente y luego se pierde, anota cuándo ocurre en vez de aumentar repetidamente el desfase. Recupera el valor inicial si la comparación no ayuda. En soporte privado, indica las versiones de Android y VLC, la pista elegida y si el texto se adelanta, retrasa o desvía progresivamente. No incluyas credenciales ni direcciones de listas. El desfase por sí solo no demuestra un plan vencido ni una caída general."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Décalage des sous-titres IPTV : les bons mots au mauvais moment ?",
+      "excerpt": "Si les bons sous-titres arrivent trop tôt ou trop tard dans VLC pour Android, distinguez synchronisation, langue et audio. Notez la valeur initiale avant de la modifier.",
+      "seo_title": "Décalage des sous-titres IPTV : les bons mots au mauvais moment ?",
+      "seo_description": "Si les bons sous-titres arrivent trop tôt ou trop tard dans VLC pour Android, distinguez synchronisation, langue et audio. Notez la valeur initiale avant de la modifier.",
+      "sections": [
+        {
+          "heading": "Vérifiez si le texte correspond à la scène",
+          "paragraphs": [
+            "Vérifier le décalage des sous-titres IPTV est pertinent lorsque le texte choisi correspond au dialogue, mais arrive avant ou après lui. S’il décrit une autre scène ou une autre langue, modifier le délai n’est pas la première étape. Vérifiez la piste disponible et choisissez un court passage avec une phrase nette. Observez si l’écart reste semblable ou augmente pendant la lecture. Gardez le même passage pour chaque comparaison."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Modifiez les sous-titres sans décaler le son",
+          "paragraphs": [
+            "VideoLAN décrit des réglages distincts du délai des sous-titres et de l’audio dans VLC pour Android. Les options du panneau des sous-titres comprennent le délai et une commande de remise à zéro. Les libellés peuvent varier selon la version installée. Notez la valeur de départ, ajustez uniquement les sous-titres et comparez la même phrase. Ne changez ni délai audio ni vitesse, sauf pour un autre diagnostic. Sans piste sélectionnable, cette vérification peut ne pas s’appliquer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : lecteur Android et délai des sous-titres",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez une dérive plutôt que de la poursuivre",
+          "paragraphs": [
+            "Si la synchronisation s’améliore brièvement puis dérive, notez quand cela survient au lieu d’augmenter sans cesse le décalage. Rétablissez la valeur initiale si la comparaison est inutile. Pour l’assistance privée, indiquez les versions Android et VLC, la piste choisie et si le texte est en avance, en retard ou dérive. N’ajoutez ni identifiants ni adresses de listes. Ce décalage seul ne prouve ni expiration du forfait ni panne générale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ritardo sottotitoli IPTV: parole giuste nel momento sbagliato?",
+      "excerpt": "Se i sottotitoli corretti arrivano prima o dopo in VLC per Android, confronta i tempi separatamente da lingua e audio. Annota il valore iniziale prima di modificarlo.",
+      "seo_title": "Ritardo sottotitoli IPTV: parole giuste nel momento sbagliato?",
+      "seo_description": "Se i sottotitoli corretti arrivano prima o dopo in VLC per Android, confronta i tempi separatamente da lingua e audio. Annota il valore iniziale prima di modificarlo.",
+      "sections": [
+        {
+          "heading": "Controlla se le parole appartengono alla scena",
+          "paragraphs": [
+            "Controllare il ritardo dei sottotitoli IPTV ha senso quando il testo selezionato corrisponde al dialogo ma compare prima o dopo. Se descrive un’altra scena o usa un’altra lingua, modificare i tempi non è il primo passo. Controlla la traccia disponibile e scegli un breve passaggio con una battuta chiara. Osserva se lo scarto rimane simile oppure aumenta durante la visione. Usa lo stesso passaggio per ogni confronto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Modifica i sottotitoli senza spostare l’audio",
+          "paragraphs": [
+            "VideoLAN documenta comandi separati per il ritardo dei sottotitoli e dell’audio in VLC per Android. Le opzioni nel pannello dei sottotitoli comprendono il ritardo e un comando di ripristino. I nomi possono cambiare secondo la versione installata. Annota il valore iniziale, regola solo i sottotitoli e confronta la stessa battuta. Non cambiare ritardo audio o velocità, a meno di indagare un problema diverso. Senza una traccia selezionabile, questa verifica potrebbe non essere applicabile."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: lettore Android e ritardo dei sottotitoli",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi lo scarto progressivo senza inseguirlo",
+          "paragraphs": [
+            "Se la sincronizzazione migliora per poco e poi si perde, annota quando succede invece di aumentare continuamente lo scarto. Ripristina il valore iniziale se il confronto non aiuta. All’assistenza privata indica versioni di Android e VLC, traccia selezionata e se il testo anticipa, ritarda o si sfasa progressivamente. Non includere credenziali o indirizzi di playlist. Il solo ritardo non dimostra un piano scaduto né un disservizio generale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-ondertitelvertraging: juiste woorden, verkeerd moment?",
+      "excerpt": "Komen de juiste ondertitels te vroeg of te laat in VLC voor Android? Vergelijk timing apart van taal en geluid. Noteer de beginwaarde voordat je iets aanpast.",
+      "seo_title": "IPTV-ondertitelvertraging: juiste woorden, verkeerd moment?",
+      "seo_description": "Komen de juiste ondertitels te vroeg of te laat in VLC voor Android? Vergelijk timing apart van taal en geluid. Noteer de beginwaarde voordat je iets aanpast.",
+      "sections": [
+        {
+          "heading": "Controleer of de woorden bij de scène horen",
+          "paragraphs": [
+            "IPTV-ondertitelvertraging controleren is zinvol als de gekozen tekst bij de dialoog past, maar eerder of later verschijnt. Beschrijven de woorden een andere scène of taal, begin dan niet met timing. Controleer het beschikbare ondertitelspoor en kies een kort stukje met een duidelijk uitgesproken zin. Let op of het verschil ongeveer gelijk blijft of tijdens het afspelen groter wordt. Gebruik voor iedere vergelijking hetzelfde stukje."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Pas ondertiteltiming aan zonder geluid te verschuiven",
+          "paragraphs": [
+            "VideoLAN beschrijft afzonderlijke instellingen voor ondertitel- en audiovertraging in VLC voor Android. De opties in het ondertitelpaneel bevatten ondertitelvertraging en een herstelknop. Namen kunnen per geïnstalleerde versie verschillen. Noteer de beginwaarde, wijzig alleen de ondertitels en vergelijk dezelfde zin. Laat audiovertraging en afspeelsnelheid staan tenzij je een ander probleem onderzoekt. Zonder selecteerbaar ondertitelspoor is deze controle mogelijk niet van toepassing."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android-videospeler en ondertitelvertraging",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf oplopend verschil in plaats van het te volgen",
+          "paragraphs": [
+            "Wordt de timing kort beter en loopt die daarna weer uiteen, noteer dan wanneer dat gebeurt in plaats van steeds grotere afwijkingen in te stellen. Herstel de beginwaarde als de vergelijking niet helpt. Geef privéondersteuning de Android- en VLC-versies, het gekozen spoor en aan of tekst voorloopt, achterloopt of steeds verder afwijkt. Deel geen inloggegevens of afspeellijstadressen. Een timingverschil bewijst geen verlopen abonnement of algemene storing."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atraso nas legendas IPTV: palavras certas na hora errada?",
+      "excerpt": "Se as legendas certas aparecem antes ou depois no VLC para Android, compare a sincronização separadamente do idioma e áudio. Anote o valor inicial antes de mudar.",
+      "seo_title": "Atraso nas legendas IPTV: palavras certas na hora errada?",
+      "seo_description": "Se as legendas certas aparecem antes ou depois no VLC para Android, compare a sincronização separadamente do idioma e áudio. Anote o valor inicial antes de mudar.",
+      "sections": [
+        {
+          "heading": "Confira se o texto pertence à cena",
+          "paragraphs": [
+            "Verificar o atraso das legendas IPTV faz sentido quando o texto escolhido corresponde ao diálogo, mas aparece antes ou depois dele. Se descreve outra cena ou está em outro idioma, ajustar o tempo não é o primeiro passo. Confira a faixa disponível e escolha um trecho curto com uma fala clara. Observe se a diferença permanece semelhante ou aumenta durante a reprodução. Use o mesmo trecho em cada comparação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ajuste as legendas sem alterar o tempo do áudio",
+          "paragraphs": [
+            "A VideoLAN documenta controles separados para atraso de legendas e áudio no VLC para Android. As opções do painel de legendas incluem o atraso e um controle para restaurar. Os nomes podem variar conforme a versão instalada. Anote o valor inicial, altere apenas as legendas e compare a mesma fala. Mantenha o atraso de áudio e a velocidade inalterados, salvo ao investigar outro problema. Sem faixa selecionável, essa verificação talvez não se aplique."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: leitor Android e atraso de legendas",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva a diferença progressiva em vez de persegui-la",
+          "paragraphs": [
+            "Se a sincronia melhora por pouco tempo e depois se perde, registre quando isso ocorre em vez de aumentar repetidamente o deslocamento. Restaure o valor inicial se a comparação não ajudar. No suporte privado, informe versões do Android e VLC, faixa escolhida e se o texto adianta, atrasa ou se afasta progressivamente. Não inclua credenciais nem endereços de listas. A diferença de tempo, isoladamente, não comprova plano vencido ou falha geral."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Задержка субтитров IPTV: верные слова не в тот момент?",
+      "excerpt": "Если правильные субтитры в VLC для Android появляются раньше или позже реплики, проверяйте время отдельно от языка и звука. Запишите исходное значение до изменений.",
+      "seo_title": "Задержка субтитров IPTV: верные слова не в тот момент?",
+      "seo_description": "Если правильные субтитры в VLC для Android появляются раньше или позже реплики, проверяйте время отдельно от языка и звука. Запишите исходное значение до изменений.",
+      "sections": [
+        {
+          "heading": "Сначала убедитесь, что текст относится к сцене",
+          "paragraphs": [
+            "Проверять задержку субтитров IPTV имеет смысл, когда выбранный текст соответствует диалогу, но появляется раньше или позже него. Если слова описывают другую сцену или написаны на другом языке, начинать с задержки не стоит. Проверьте доступную дорожку и выберите короткий отрывок с отчётливой репликой. Отметьте, сохраняется ли примерно одинаковое смещение или растёт во время просмотра. Для каждого сравнения используйте один отрывок."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Меняйте время субтитров отдельно от звука",
+          "paragraphs": [
+            "VideoLAN описывает отдельные настройки задержки субтитров и аудио в VLC для Android. В параметрах панели субтитров есть задержка и сброс. Названия могут отличаться в установленной версии. Запишите исходное значение, меняйте только настройку субтитров и сравнивайте одну реплику. Не трогайте задержку звука и скорость воспроизведения, если не исследуете другую проблему. При отсутствии выбираемой дорожки такая проверка может быть неприменима."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: видеоплеер Android и задержка субтитров",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите нарастающее расхождение, не гонитесь за ним",
+          "paragraphs": [
+            "Если синхронизация ненадолго улучшается, а затем снова уходит, запишите момент изменения вместо постоянного увеличения смещения. Восстановите исходное значение, если сравнение бесполезно. Для частного обращения в поддержку укажите версии Android и VLC, выбранную дорожку и характер расхождения: раньше, позже или постепенно. Не передавайте пароли и адреса плейлистов. Само смещение не доказывает истечение подписки или общий сбой сервиса."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV سب ٹائٹلز کی تاخیر: درست الفاظ، غلط وقت؟",
+      "excerpt": "اگر VLC برائے Android میں درست سب ٹائٹلز جلد یا دیر سے آئیں تو وقت کو زبان اور آواز سے الگ جانچیں۔ کچھ بدلنے سے پہلے ابتدائی قدر لکھ لیں۔",
+      "seo_title": "IPTV سب ٹائٹلز کی تاخیر: درست الفاظ، غلط وقت؟",
+      "seo_description": "اگر VLC برائے Android میں درست سب ٹائٹلز جلد یا دیر سے آئیں تو وقت کو زبان اور آواز سے الگ جانچیں۔ کچھ بدلنے سے پہلے ابتدائی قدر لکھ لیں۔",
+      "sections": [
+        {
+          "heading": "پہلے دیکھیں کہ الفاظ اسی منظر کے ہیں",
+          "paragraphs": [
+            "IPTV سب ٹائٹلز کی تاخیر جانچنا تب مناسب ہے جب منتخب متن مکالمے سے میل کھاتا ہو لیکن اس سے پہلے یا بعد میں نظر آئے۔ اگر الفاظ کسی اور منظر یا زبان کے ہوں تو وقت بدلنا پہلا قدم نہیں۔ دستیاب سب ٹائٹل ٹریک دیکھیں اور واضح مکالمے والا مختصر حصہ چنیں۔ نوٹ کریں کہ فرق تقریباً یکساں رہتا ہے یا پلے بیک کے دوران بڑھتا ہے۔ ہر موازنے میں وہی حصہ استعمال کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "سب ٹائٹلز کا وقت بدلیں، آواز کا نہیں",
+          "paragraphs": [
+            "VideoLAN، VLC برائے Android میں آواز اور سب ٹائٹلز کی تاخیر کے الگ کنٹرول بیان کرتا ہے۔ سب ٹائٹلز والے حصے کے اختیارات میں تاخیر اور ابتدائی حالت بحال کرنے کا کنٹرول شامل ہیں۔ انسٹال شدہ ورژن کے مطابق نام مختلف ہو سکتے ہیں۔ ابتدائی قدر لکھیں، صرف سب ٹائٹلز کی ترتیب بدلیں اور وہی جملہ دوبارہ دیکھیں۔ الگ مسئلہ نہ جانچ رہے ہوں تو آواز کی تاخیر اور پلے بیک رفتار نہ بدلیں۔ منتخب کیے جانے والا ٹریک نہ ہو تو یہ جانچ قابلِ اطلاق نہیں بھی ہو سکتی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android ویڈیو پلیئر اور سب ٹائٹلز کی تاخیر",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "بڑھتے ہوئے فرق کو مسلسل درست کرنے کے بجائے بیان کریں",
+          "paragraphs": [
+            "اگر ہم آہنگی تھوڑی دیر بہتر ہو کر پھر بگڑ جائے تو بار بار بڑی قدر لگانے کے بجائے وقت نوٹ کریں۔ موازنہ فائدہ نہ دے تو ابتدائی قدر بحال کریں۔ نجی سپورٹ کو Android اور VLC ورژن، منتخب ٹریک اور یہ بتائیں کہ متن جلد، دیر یا بتدریج ہٹ کر آ رہا ہے۔ پاس ورڈ یا پلے لسٹ پتے شامل نہ کریں۔ صرف وقت کا فرق پلان ختم ہونے یا پورا سروس بند ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأخر ترجمة IPTV: الكلمات الصحيحة في الوقت الخطأ؟",
+      "excerpt": "إذا ظهرت الترجمة الصحيحة مبكرًا أو متأخرة في VLC لنظام Android، فافحص توقيتها منفصلًا عن اللغة والصوت. دوّن القيمة الأصلية قبل إجراء أي تعديل.",
+      "seo_title": "تأخر ترجمة IPTV: الكلمات الصحيحة في الوقت الخطأ؟",
+      "seo_description": "إذا ظهرت الترجمة الصحيحة مبكرًا أو متأخرة في VLC لنظام Android، فافحص توقيتها منفصلًا عن اللغة والصوت. دوّن القيمة الأصلية قبل إجراء أي تعديل.",
+      "sections": [
+        {
+          "heading": "تأكد أولًا أن الكلمات تخص المشهد نفسه",
+          "paragraphs": [
+            "يفيد فحص تأخر ترجمة IPTV عندما يطابق النص المختار الحوار لكنه يظهر قبله أو بعده. إن كانت الكلمات تصف مشهدًا آخر أو كانت بلغة أخرى، فلا تبدأ بتعديل التوقيت. افحص مسار الترجمة المتاح واختر مقطعًا قصيرًا ذا جملة واضحة. لاحظ هل يبقى الفارق متقاربًا أم يزداد أثناء التشغيل. استخدم المقطع نفسه في كل مقارنة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "عدّل توقيت الترجمة دون تغيير توقيت الصوت",
+          "paragraphs": [
+            "توثّق VideoLAN أدوات منفصلة لتأخير الترجمة والصوت في VLC لنظام Android. تتضمن خيارات لوحة الترجمة التأخير وأداة لإعادة الضبط. قد تختلف الأسماء بحسب الإصدار المثبّت. سجّل القيمة الأصلية، وعدّل الترجمة فقط، ثم قارن الجملة نفسها. اترك تأخير الصوت وسرعة التشغيل كما هما إلا إذا كنت تبحث في مشكلة منفصلة. قد لا ينطبق هذا الفحص إذا لم يوجد مسار ترجمة قابل للاختيار."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: مشغّل Android وتأخير الترجمة",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "صف الانحراف المتزايد بدل ملاحقته",
+          "paragraphs": [
+            "إذا تحسنت المزامنة قليلًا ثم انحرفت مجددًا، فسجّل وقت حدوث ذلك بدل إضافة إزاحات أكبر باستمرار. أعد القيمة الأصلية إن لم تفد المقارنة. أرسل إلى الدعم الخاص إصداري Android وVLC والمسار المختار، ووضّح هل النص مبكر أم متأخر أم يبتعد تدريجيًا. لا ترفق بيانات الدخول أو عناوين قوائم التشغيل. اختلاف التوقيت وحده لا يثبت انتهاء الخطة أو وجود عطل عام في الخدمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV सबटाइटल की देरी: सही शब्द, गलत समय?",
+      "excerpt": "अगर VLC for Android में सही सबटाइटल जल्दी या देर से आते हैं, तो भाषा और आवाज़ से अलग उनका समय जांचें। कुछ बदलने से पहले शुरुआती मान लिख लें।",
+      "seo_title": "IPTV सबटाइटल की देरी: सही शब्द, गलत समय?",
+      "seo_description": "अगर VLC for Android में सही सबटाइटल जल्दी या देर से आते हैं, तो भाषा और आवाज़ से अलग उनका समय जांचें। कुछ बदलने से पहले शुरुआती मान लिख लें।",
+      "sections": [
+        {
+          "heading": "पहले देखें कि शब्द उसी दृश्य के हैं",
+          "paragraphs": [
+            "IPTV सबटाइटल की देरी जांचना तब उपयोगी है जब चुना हुआ पाठ संवाद से मेल खाता हो, लेकिन उससे पहले या बाद में आता हो। अगर शब्द किसी दूसरे दृश्य या भाषा के हैं, तो समय बदलना पहला कदम नहीं है। उपलब्ध सबटाइटल ट्रैक देखें और साफ़ संवाद वाला छोटा हिस्सा चुनें। नोट करें कि अंतर लगभग समान रहता है या देखते समय बढ़ता जाता है। हर तुलना में वही हिस्सा इस्तेमाल करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सबटाइटल का समय बदलें, आवाज़ का नहीं",
+          "paragraphs": [
+            "VideoLAN, VLC for Android में आवाज़ और सबटाइटल की देरी के अलग नियंत्रण बताता है। सबटाइटल पैनल के विकल्पों में देरी और रीसेट का नियंत्रण शामिल है। इंस्टॉल किए गए वर्शन के अनुसार नाम अलग हो सकते हैं। शुरुआती मान लिखें, सिर्फ सबटाइटल की सेटिंग बदलें और वही पंक्ति दोबारा देखें। किसी अलग समस्या की जांच न कर रहे हों तो आवाज़ की देरी और प्लेबैक गति न बदलें। चुनने योग्य ट्रैक न हो तो यह जांच लागू नहीं भी हो सकती है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android वीडियो प्लेयर और सबटाइटल की देरी",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "बढ़ते अंतर को बार-बार बदलने के बजाय बताएं",
+          "paragraphs": [
+            "अगर तालमेल कुछ देर सुधरकर फिर बिगड़ता है, तो लगातार बड़ा मान लगाने के बजाय उसका समय लिखें। तुलना मदद न करे तो शुरुआती मान बहाल करें। निजी सहायता को Android और VLC वर्शन, चुना ट्रैक और यह बताएं कि पाठ जल्दी, देर या धीरे-धीरे दूर होता आता है। लॉगिन जानकारी या प्लेलिस्ट पते न भेजें। केवल समय का अंतर प्लान खत्म होने या पूरी सेवा में खराबी का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN Android video player: subtitles and timing controls",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-05",
+  "topic": "Separate hard-to-read Google TV menu labels from caption appearance and video framing before adjusting accessibility settings for Get IPTV",
+  "primary_keyword": "Get IPTV readable menus",
+  "slug": "getiptv-readable-menus-google-tv-contrast",
+  "translations": {
+    "en": {
+      "title": "Get IPTV readable menus: contrast, captions or picture size?",
+      "excerpt": "Small or faint labels need a different check from subtitles or a cropped picture. Identify which text is difficult to read before changing a television setting.",
+      "seo_title": "Get IPTV: make menu text easier to read on Google TV",
+      "seo_description": "Check Get IPTV menu readability on Google TV. Distinguish interface text, captions and video framing, then compare an available accessibility setting carefully.",
+      "sections": [
+        {
+          "heading": "Identify the text that needs attention",
+          "paragraphs": [
+            "For Get IPTV readable menus, start by identifying what you cannot read comfortably. Is it the Google TV home screen, a label inside the chosen player, or subtitles over the video? Compare the home screen with the player without changing either. Note the device and app names. Do not assume that changing video resolution or zoom will solve faint interface text; a picture-size adjustment can affect a different part of the viewing experience."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Try one relevant accessibility option",
+          "paragraphs": [
+            "Google documents a High-contrast text option in Google TV accessibility settings and labels it experimental. If it is available on your device, note its current state before comparing a readable menu with it enabled. Menu locations and effects can differ by device or app. Change one relevant option at a time and keep other accessibility features you rely on. If the change makes navigation harder, return that option to its previous state."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: accessibility options",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep captions and player controls separate",
+          "paragraphs": [
+            "Google also notes that system caption preferences may not apply in certain apps. An unchanged subtitle style therefore does not show that a contrast control failed. Check the selected player's own documented display options instead of assuming every control is shared. If labels remain unreadable only inside that app, describe the exact screen to support. Share a model, app name and non-private description; keep account credentials and private order links out of screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: ¿texto del menú, subtítulos o tamaño de imagen?",
+      "excerpt": "Las etiquetas pequeñas o poco contrastadas requieren una revisión distinta de los subtítulos o de una imagen recortada. Identifica primero qué texto resulta difícil de leer.",
+      "seo_title": "Get IPTV: menús más legibles en Google TV",
+      "seo_description": "Revisa la legibilidad de Get IPTV en Google TV. Distingue texto de interfaz, subtítulos e imagen y compara con cuidado una opción de accesibilidad disponible.",
+      "sections": [
+        {
+          "heading": "Identifica el texto que cuesta leer",
+          "paragraphs": [
+            "Para mejorar la lectura de los menús al usar Get IPTV, identifica primero lo que no ves cómodamente. ¿Es la pantalla de inicio de Google TV, una etiqueta del reproductor elegido o los subtítulos sobre el vídeo? Compara el inicio con el reproductor sin cambiar ninguno. Anota los nombres del dispositivo y de la aplicación. No supongas que cambiar resolución o zoom resuelve un texto de interfaz tenue; el tamaño de imagen puede afectar otra parte de la visualización."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prueba una opción de accesibilidad adecuada",
+          "paragraphs": [
+            "Google documenta una opción de texto de alto contraste en los ajustes de accesibilidad de Google TV y la identifica como experimental. Si aparece en tu dispositivo, anota su estado actual antes de comparar un menú con ella activada. La ubicación y el efecto pueden variar según dispositivo o aplicación. Cambia una sola opción pertinente cada vez y conserva las funciones de accesibilidad que necesitas. Si dificulta navegar, devuelve esa opción a su estado anterior."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google TV: opciones de accesibilidad",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa los subtítulos de los controles del reproductor",
+          "paragraphs": [
+            "Google también advierte que algunas aplicaciones pueden no aplicar las preferencias de subtítulos del sistema. Por ello, que el estilo no cambie no demuestra un fallo del contraste. Consulta las opciones de visualización documentadas del propio reproductor, sin asumir controles compartidos. Si solo cuesta leer dentro de esa aplicación, describe a soporte la pantalla exacta. Facilita modelo, nombre de la aplicación y una descripción no privada; excluye credenciales y enlaces privados de pedidos de las capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : texte des menus, sous-titres ou taille de l’image ?",
+      "excerpt": "Des libellés petits ou peu contrastés ne se vérifient pas comme des sous-titres ou une image recadrée. Identifiez le texte difficile à lire avant de modifier un réglage.",
+      "seo_title": "Get IPTV : améliorer la lecture des menus sur Google TV",
+      "seo_description": "Vérifiez la lisibilité de Get IPTV sur Google TV : distinguez interface, sous-titres et cadrage avant de comparer un réglage d’accessibilité disponible.",
+      "sections": [
+        {
+          "heading": "Repérez le texte concerné",
+          "paragraphs": [
+            "Pour rendre les menus plus lisibles avec Get IPTV, commencez par repérer ce que vous lisez difficilement. Est-ce l’accueil Google TV, un libellé du lecteur choisi ou les sous-titres de la vidéo ? Comparez l’accueil et le lecteur sans modifier l’un ni l’autre. Notez les noms de l’appareil et de l’application. Ne supposez pas qu’une résolution ou un zoom différent corrige un texte peu visible ; la taille de l’image peut agir sur une autre partie de l’affichage."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Essayez une option d’accessibilité pertinente",
+          "paragraphs": [
+            "Google décrit une option de texte à contraste élevé dans les réglages d’accessibilité Google TV et la présente comme expérimentale. Si votre appareil la propose, notez son état actuel avant de comparer un menu avec cette option activée. L’emplacement des menus et les effets peuvent varier selon l’appareil ou l’application. Modifiez une option pertinente à la fois et conservez les fonctions d’accessibilité nécessaires. Si la navigation devient plus difficile, rétablissez l’état précédent de cette option."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google TV : options d’accessibilité",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguez sous-titres et réglages du lecteur",
+          "paragraphs": [
+            "Google précise aussi que certaines applications peuvent ignorer les préférences de sous-titres du système. Un style inchangé ne démontre donc pas une panne du contraste. Consultez les options d’affichage documentées du lecteur sans supposer que tous les réglages sont partagés. Si les libellés restent illisibles uniquement dans cette application, décrivez l’écran précis au support. Indiquez modèle, application et description non privée ; excluez identifiants et liens privés de commande des captures."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: testo dei menu, sottotitoli o dimensioni dell’immagine?",
+      "excerpt": "Etichette piccole o poco contrastate richiedono una verifica diversa dai sottotitoli o da un’immagine tagliata. Identifica il testo difficile da leggere prima di cambiare impostazioni.",
+      "seo_title": "Get IPTV: rendere più leggibili i menu su Google TV",
+      "seo_description": "Controlla la leggibilità di Get IPTV su Google TV. Distingui interfaccia, sottotitoli e inquadratura, poi confronta una funzione di accessibilità disponibile.",
+      "sections": [
+        {
+          "heading": "Individua il testo difficile da leggere",
+          "paragraphs": [
+            "Per rendere più leggibili i menu mentre usi Get IPTV, individua prima cosa non riesci a leggere comodamente. È la schermata iniziale di Google TV, un’etichetta del player scelto o i sottotitoli sul video? Confronta la schermata iniziale con il player senza modificare nulla. Annota dispositivo e applicazione. Non presumere che cambiare risoluzione o zoom risolva un testo poco visibile: le dimensioni dell’immagine possono riguardare una parte diversa della visione."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prova una funzione di accessibilità pertinente",
+          "paragraphs": [
+            "Google documenta un’opzione di testo ad alto contrasto nelle impostazioni di accessibilità di Google TV e la definisce sperimentale. Se presente sul tuo dispositivo, annota lo stato attuale prima di confrontare un menu con l’opzione attiva. Posizione dei menu ed effetti possono variare tra dispositivi e applicazioni. Cambia una sola opzione pertinente alla volta, mantenendo le funzioni di accessibilità di cui hai bisogno. Se navigare diventa più difficile, ripristina lo stato precedente dell’opzione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google TV: opzioni di accessibilità",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui sottotitoli e controlli del player",
+          "paragraphs": [
+            "Google avverte inoltre che le preferenze di sottotitoli del sistema potrebbero non applicarsi ad alcune app. Uno stile invariato non dimostra quindi che il contrasto non funzioni. Consulta le opzioni di visualizzazione documentate del player, senza presumere controlli condivisi. Se le etichette restano illeggibili solo lì, descrivi all’assistenza la schermata precisa. Comunica modello, app e una descrizione non privata; escludi credenziali e link privati dell’ordine dalle immagini."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: menutekst, ondertiteling of beeldformaat?",
+      "excerpt": "Kleine of fletse labels vragen om een andere controle dan ondertitels of een afgesneden beeld. Bepaal eerst welke tekst moeilijk leesbaar is voordat je instellingen wijzigt.",
+      "seo_title": "Get IPTV: beter leesbare menu’s op Google TV",
+      "seo_description": "Controleer de leesbaarheid van Get IPTV op Google TV. Houd menutekst, ondertitels en beeldformaat apart en vergelijk één beschikbare toegankelijkheidsoptie.",
+      "sections": [
+        {
+          "heading": "Bepaal welke tekst aandacht nodig heeft",
+          "paragraphs": [
+            "Begin voor beter leesbare menu’s bij Get IPTV met wat je niet comfortabel kunt lezen. Gaat het om het Google TV-startscherm, een label in de gekozen speler of ondertiteling op het beeld? Vergelijk het startscherm en de speler zonder iets te veranderen. Noteer apparaat en app. Ga er niet van uit dat een andere resolutie of zoom fletse interfacetekst oplost; het beeldformaat kan een ander onderdeel van de kijkervaring beïnvloeden."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Probeer één passende toegankelijkheidsoptie",
+          "paragraphs": [
+            "Google beschrijft tekst met hoog contrast in de toegankelijkheidsinstellingen van Google TV en noemt deze optie experimenteel. Is de optie beschikbaar, noteer dan de huidige stand voordat je een menu vergelijkt met de optie ingeschakeld. Menupaden en effecten kunnen per apparaat of app verschillen. Verander één passende optie tegelijk en behoud andere toegankelijkheidsfuncties waarop je vertrouwt. Wordt navigeren lastiger, zet die optie dan terug naar de vorige stand."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: toegankelijkheidsopties",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd ondertitels en spelerinstellingen apart",
+          "paragraphs": [
+            "Google meldt ook dat systeemvoorkeuren voor ondertiteling niet voor iedere app gelden. Een onveranderde ondertitelstijl bewijst daarom niet dat de contrastoptie niet werkt. Bekijk de gedocumenteerde weergaveopties van de speler in plaats van gedeelde bediening aan te nemen. Zijn labels alleen binnen die app onleesbaar, beschrijf dan het precieze scherm aan ondersteuning. Deel model, appnaam en een niet-privébeschrijving; laat inloggegevens en privébestellinks weg uit schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: texto dos menus, legendas ou tamanho da imagem?",
+      "excerpt": "Rótulos pequenos ou com pouco contraste pedem uma verificação diferente das legendas ou de uma imagem cortada. Identifique o texto difícil antes de alterar definições.",
+      "seo_title": "Get IPTV: melhorar a leitura dos menus no Google TV",
+      "seo_description": "Confira a leitura do Get IPTV no Google TV. Distinga interface, legendas e enquadramento antes de comparar uma opção de acessibilidade disponível.",
+      "sections": [
+        {
+          "heading": "Identifique o texto que exige atenção",
+          "paragraphs": [
+            "Para tornar os menus mais legíveis ao utilizar o Get IPTV, identifique primeiro o que não consegue ler confortavelmente. É o ecrã inicial do Google TV, um rótulo no leitor escolhido ou legendas sobre o vídeo? Compare o início e o leitor sem alterar nenhum deles. Anote o dispositivo e a aplicação. Não presuma que mudar resolução ou zoom resolve texto pouco visível; o tamanho da imagem pode afetar uma parte diferente da visualização."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Experimente uma opção de acessibilidade relevante",
+          "paragraphs": [
+            "A Google documenta uma opção de texto de alto contraste nas definições de acessibilidade do Google TV e identifica-a como experimental. Se estiver disponível, anote o estado atual antes de comparar um menu com a opção ativa. A localização e o efeito podem variar por dispositivo ou aplicação. Altere uma opção relevante de cada vez e mantenha as outras funções de acessibilidade de que depende. Se dificultar a navegação, reponha essa opção no estado anterior."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google TV: opções de acessibilidade",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe legendas e controlos do leitor",
+          "paragraphs": [
+            "A Google também indica que certas aplicações podem não aplicar as preferências de legendas do sistema. Um estilo inalterado não demonstra, por isso, que o contraste falhou. Consulte as opções de apresentação documentadas do próprio leitor, sem presumir controlos partilhados. Se os rótulos continuarem ilegíveis apenas nessa aplicação, descreva o ecrã exato ao suporte. Indique modelo, aplicação e descrição não privada; exclua credenciais e links privados de pedidos das capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: текст меню, субтитры или размер изображения?",
+      "excerpt": "Мелкие или бледные подписи проверяют иначе, чем субтитры либо обрезанное изображение. Сначала определите, какой текст трудно читать, и лишь затем меняйте настройки.",
+      "seo_title": "Get IPTV: читаемые меню на Google TV",
+      "seo_description": "Проверьте читаемость меню Get IPTV на Google TV: отличите текст интерфейса от субтитров и размера видео, затем сравните доступную настройку специальных возможностей.",
+      "sections": [
+        {
+          "heading": "Определите, какой текст плохо виден",
+          "paragraphs": [
+            "Для более удобного чтения меню при использовании Get IPTV сначала определите проблему. Трудно читать главный экран Google TV, подпись в выбранном плеере или субтитры поверх видео? Сравните главный экран и плеер, ничего не меняя. Запишите модель устройства и название приложения. Не считайте, что смена разрешения или масштаба обязательно исправит бледный текст интерфейса: размер изображения может влиять на другую часть просмотра."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Попробуйте подходящую настройку",
+          "paragraphs": [
+            "Google описывает высококонтрастный текст в специальных возможностях Google TV и отмечает эту функцию как экспериментальную. Если она доступна, запишите текущее состояние перед сравнением меню с включённой функцией. Расположение пунктов и результат могут зависеть от устройства или приложения. Меняйте по одной подходящей настройке, сохраняя другие необходимые специальные возможности. Если перемещаться по меню стало сложнее, верните этой настройке прежнее состояние."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google TV: специальные возможности",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте субтитры от настроек плеера",
+          "paragraphs": [
+            "Google также предупреждает, что некоторые приложения могут не применять системные предпочтения субтитров. Неизменившийся стиль поэтому не доказывает отказ контрастности. Посмотрите документированные настройки отображения самого плеера, не предполагая общих регуляторов. Если подписи плохо читаются только в этом приложении, опишите поддержке конкретный экран. Сообщите модель, приложение и описание без закрытой информации; исключите учётные данные и частные ссылки заказа из снимков."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: مینو کی عبارت، سب ٹائٹل یا تصویر کا سائز؟",
+      "excerpt": "چھوٹے یا مدھم الفاظ کی جانچ، سب ٹائٹل یا کٹی تصویر سے مختلف ہوتی ہے۔ ٹی وی کی ترتیب بدلنے سے پہلے پہچانیں کہ کون سی عبارت پڑھنا مشکل ہے۔",
+      "seo_title": "Get IPTV: Google TV کے مینو زیادہ واضح پڑھیں",
+      "seo_description": "Get IPTV استعمال کرتے وقت Google TV کی عبارت دیکھیں۔ مینو، سب ٹائٹل اور تصویر کے فریم کو الگ سمجھ کر دستیاب رسائی کی ایک ترتیب کا موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "پڑھنے میں مشکل عبارت کی شناخت کریں",
+          "paragraphs": [
+            "Get IPTV کے مینو واضح پڑھنے کے لیے پہلے دیکھیں کہ کون سا حصہ آرام سے پڑھا نہیں جا رہا۔ Google TV کی ابتدائی اسکرین، منتخب پلیئر کے اندر کوئی لفظ یا ویڈیو پر سب ٹائٹل؟ کچھ بدلے بغیر ابتدائی اسکرین اور پلیئر کا موازنہ کریں۔ آلے اور ایپ کا نام نوٹ کریں۔ یہ نہ سمجھیں کہ ریزولوشن یا زوم بدلنے سے مدھم مینو لازماً ٹھیک ہوگا؛ تصویر کا سائز دیکھنے کے کسی اور حصے پر اثر ڈال سکتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی کی ایک متعلقہ ترتیب آزمائیں",
+          "paragraphs": [
+            "Google نے Google TV کی رسائی کی ترتیبات میں زیادہ تضاد والی عبارت کا اختیار بتایا ہے اور اسے تجرباتی کہا ہے۔ آپ کے آلے پر موجود ہو تو فعال کرکے مینو دیکھنے سے پہلے اس کی موجودہ حالت نوٹ کریں۔ مینو کی جگہ اور اثر آلے یا ایپ کے مطابق بدل سکتے ہیں۔ ایک وقت میں صرف ایک متعلقہ اختیار بدلیں اور جن دوسری سہولتوں پر انحصار ہے انہیں برقرار رکھیں۔ حرکت کرنا مشکل ہو جائے تو اسی اختیار کو پچھلی حالت پر لوٹائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV مدد: رسائی کی سہولتیں",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "سب ٹائٹل اور پلیئر کی ترتیب الگ رکھیں",
+          "paragraphs": [
+            "Google یہ بھی بتاتا ہے کہ نظام کی سب ٹائٹل ترجیحات بعض ایپس پر لاگو نہیں ہوتیں۔ اس لیے انداز نہ بدلنا زیادہ تضاد کے اختیار کی خرابی ثابت نہیں کرتا۔ سب کنٹرول مشترک سمجھنے کے بجائے پلیئر کی اپنی مستند نمائش کی ترتیبات دیکھیں۔ صرف اسی ایپ کے الفاظ مشکل رہیں تو سپورٹ کو درست اسکرین بتائیں۔ ماڈل، ایپ کا نام اور غیر نجی وضاحت دیں؛ اسکرین شاٹ میں اسناد اور آرڈر کے نجی لنک نہ رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: نص القوائم أم الترجمة أم حجم الصورة؟",
+      "excerpt": "تحتاج الكلمات الصغيرة أو الباهتة إلى فحص مختلف عن الترجمة أو الصورة المقتطعة. حدد أولاً النص الصعب قبل تغيير إعداد في التلفاز.",
+      "seo_title": "Get IPTV: قوائم أوضح قراءة على Google TV",
+      "seo_description": "راجع وضوح Get IPTV على Google TV. ميّز نص الواجهة عن الترجمة وإطار الفيديو، ثم قارن خياراً متاحاً من إعدادات تسهيل الاستخدام بحذر.",
+      "sections": [
+        {
+          "heading": "حدد النص الذي يحتاج إلى تحسين",
+          "paragraphs": [
+            "لجعل القوائم أوضح أثناء استخدام Get IPTV، حدد أولاً ما يصعب قراءته براحة. هل هو شاشة Google TV الرئيسية، أم عنوان داخل المشغّل المختار، أم ترجمة فوق الفيديو؟ قارن الشاشة الرئيسية بالمشغّل دون تغيير أي منهما. دوّن اسم الجهاز والتطبيق. لا تفترض أن تغيير دقة الفيديو أو تكبيره يعالج نص واجهة باهتاً؛ فقد يؤثر حجم الصورة في جزء مختلف من تجربة المشاهدة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "جرّب خيار تسهيل استخدام مناسباً",
+          "paragraphs": [
+            "توثق Google خيار النص عالي التباين ضمن إعدادات تسهيل الاستخدام في Google TV وتصفه بأنه تجريبي. إذا توفر على جهازك، دوّن حالته الحالية قبل مقارنة قائمة بعد تفعيله. قد يختلف موقع القوائم والتأثير بحسب الجهاز أو التطبيق. غيّر خياراً مناسباً واحداً في كل مرة، واحتفظ بميزات تسهيل الاستخدام الأخرى التي تحتاج إليها. إذا أصبحت الحركة بين القوائم أصعب، فأعد هذا الخيار إلى حالته السابقة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google TV: خيارات تسهيل الاستخدام",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الترجمة عن إعدادات المشغّل",
+          "paragraphs": [
+            "توضح Google أيضاً أن تفضيلات الترجمة في النظام قد لا تنطبق على بعض التطبيقات. لذلك لا يدل بقاء نمط الترجمة كما هو على فشل التباين. راجع خيارات العرض الموثقة للمشغّل نفسه بدلاً من افتراض اشتراك كل عناصر التحكم. إذا ظلت العناوين صعبة داخل ذلك التطبيق فقط، فصف الشاشة الدقيقة للدعم. شارك الطراز واسم التطبيق ووصفاً غير خاص؛ واستبعد بيانات الدخول وروابط الطلب الخاصة من الصور."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: मेनू का पाठ, सबटाइटल या तस्वीर का आकार?",
+      "excerpt": "छोटे या हल्के अक्षरों की जाँच सबटाइटल या कटी तस्वीर से अलग होती है। टीवी की सेटिंग बदलने से पहले पहचानें कि कौन सा पाठ पढ़ना कठिन है।",
+      "seo_title": "Get IPTV: Google TV के मेनू अधिक साफ़ पढ़ें",
+      "seo_description": "Get IPTV के लिए Google TV की पठनीयता जाँचें। इंटरफ़ेस, सबटाइटल और वीडियो के फ्रेम को अलग समझकर उपलब्ध सुलभता विकल्प की तुलना करें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन सा पाठ कठिन है",
+          "paragraphs": [
+            "Get IPTV के मेनू साफ़ पढ़ने के लिए पहले पहचानें कि कौन सा हिस्सा आराम से नहीं पढ़ पा रहे। Google TV की होम स्क्रीन, चुने प्लेयर का कोई लेबल या वीडियो पर सबटाइटल? कुछ बदले बिना होम स्क्रीन और प्लेयर की तुलना करें। डिवाइस और ऐप का नाम लिखें। यह न मानें कि वीडियो रिज़ॉल्यूशन या ज़ूम बदलने से हल्का इंटरफ़ेस पाठ ठीक होगा; तस्वीर का आकार देखने के किसी दूसरे हिस्से पर असर डाल सकता है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सुलभता का एक संबंधित विकल्प आज़माएँ",
+          "paragraphs": [
+            "Google ने Google TV की सुलभता सेटिंग में हाई-कॉन्ट्रास्ट टेक्स्ट विकल्प बताया है और इसे प्रयोगात्मक कहा है। आपके डिवाइस पर उपलब्ध हो तो चालू करके मेनू की तुलना करने से पहले उसकी मौजूदा स्थिति लिखें। मेनू की जगह और असर डिवाइस या ऐप के अनुसार अलग हो सकते हैं। एक बार में केवल एक संबंधित विकल्प बदलें और ज़रूरी दूसरी सुलभता सुविधाएँ बनाए रखें। नेविगेशन कठिन हो जाए तो उसी विकल्प को पिछली स्थिति में लौटाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV सहायता: सुलभता विकल्प",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सबटाइटल और प्लेयर नियंत्रण अलग रखें",
+          "paragraphs": [
+            "Google यह भी बताता है कि सिस्टम की सबटाइटल पसंद कुछ ऐप पर लागू नहीं हो सकती। इसलिए शैली न बदलना कॉन्ट्रास्ट विकल्प की विफलता साबित नहीं करता। सभी नियंत्रण साझा मानने के बजाय प्लेयर के अपने दस्तावेज़ित प्रदर्शन विकल्प देखें। केवल उसी ऐप में लेबल कठिन रहें तो सहायता को ठीक स्क्रीन बताएँ। मॉडल, ऐप का नाम और गैर-निजी विवरण दें; स्क्रीनशॉट में प्रवेश विवरण और ऑर्डर के निजी लिंक न रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: accessibility and high-contrast text",
+      "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+    }
+  ]
+}
