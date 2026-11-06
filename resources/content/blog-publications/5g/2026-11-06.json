@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-06",
+  "topic": "Android camera and microphone privacy indicators: identify the app using a sensor during a 5G Live IPTV session before changing an individual permission",
+  "primary_keyword": "5G Live IPTV privacy indicator",
+  "slug": "5g-android-privacy-indicator-camera-microphone",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV privacy indicator: which app is using a sensor?",
+      "excerpt": "A green Android indicator identifies camera or microphone use. Check the app named by the phone before connecting that signal to a player or changing its permissions.",
+      "seo_title": "5G Live IPTV privacy indicator: check the named app",
+      "seo_description": "Understand the 5G Live IPTV privacy indicator question on Android: identify camera or microphone use, inspect the named app and review one permission carefully.",
+      "sections": [
+        {
+          "heading": "Identify what the green indicator reports",
+          "paragraphs": [
+            "A 5G Live IPTV privacy indicator question begins with Android’s own status display. Google explains that camera or microphone use can produce a green indicator at the top right of the screen. Some instructions require Android 12 or later, and controls vary by device. A green mark alone does not identify the player as responsible. Record whether it appears while watching, after opening voice search or during another action, without assuming the cause."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: check camera and microphone indicators",
+              "url": "https://support.google.com/android/answer/13532937?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read the app name before changing access",
+          "paragraphs": [
+            "Swipe down and tap the indicator where your phone supports this. Google describes one tap to identify the app or service and another to manage permissions. If a different app is named, investigate that app separately. For an individual app, Google documents Settings, Apps, the app’s name, then Permissions. Inspect the specific camera or microphone permission and its available choices. Do not grant unrelated access simply to dismiss a prompt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: change an individual app permission",
+              "url": "https://support.google.com/android/answer/9431959?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the observation separate from playback quality",
+          "paragraphs": [
+            "Camera permission concerns capturing pictures or video; microphone permission concerns recording audio. Neither label is a streaming-quality measurement. If you change a permission, note its previous value and repeat only the action that prompted the question. Describe any affected feature and the exact app name when asking for help. Avoid sharing a full-screen image containing account details. These Android checks do not establish that a particular player has any specific recording or voice feature."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV y el indicador de privacidad: identifica la app",
+      "excerpt": "El indicador verde de Android señala uso de cámara o micrófono. Comprueba qué aplicación identifica el teléfono antes de atribuirlo al reproductor o cambiar sus permisos.",
+      "seo_title": "5G Live IPTV: identifica la app del indicador verde",
+      "seo_description": "Comprueba el indicador de cámara o micrófono de Android al usar 5G Live IPTV. Identifica la aplicación indicada y revisa un permiso concreto con cuidado.",
+      "sections": [
+        {
+          "heading": "Identifica qué indica la señal verde",
+          "paragraphs": [
+            "Si ves un indicador de privacidad mientras usas 5G Live IPTV, empieza por la información de Android. Google explica que el uso de cámara o micrófono puede mostrar un indicador verde en la esquina superior derecha. Algunas instrucciones requieren Android 12 o posterior y los controles varían según el dispositivo. La marca por sí sola no identifica al reproductor. Anota si aparece al mirar contenido, abrir la búsqueda por voz o realizar otra acción, sin dar por hecho el motivo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el nombre antes de cambiar el acceso",
+          "paragraphs": [
+            "Desliza hacia abajo y toca el indicador si tu teléfono lo permite. Google describe un toque para identificar la aplicación o servicio y otro para gestionar permisos. Si aparece otra app, examínala por separado. Para una aplicación concreta, abre Ajustes, Apps, su nombre y Permisos. Revisa el permiso específico de cámara o micrófono y las opciones disponibles. No concedas accesos ajenos a la tarea solo para cerrar un aviso."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa la observación de la calidad de vídeo",
+          "paragraphs": [
+            "El permiso de cámara se refiere a capturar fotos o vídeo; el de micrófono, a grabar audio. Ninguno mide la calidad de una transmisión. Si modificas un permiso, anota su valor anterior y repite solo la acción que planteó la duda. Describe la función afectada y el nombre exacto de la app al pedir ayuda. Evita imágenes de toda la pantalla que incluyan datos de cuenta. Estas comprobaciones no demuestran que un reproductor tenga funciones de grabación o voz concretas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV et l’indicateur de confidentialité : quelle app ?",
+      "excerpt": "L’indicateur vert d’Android signale l’utilisation de la caméra ou du micro. Identifiez l’application indiquée par le téléphone avant de l’attribuer au lecteur ou de modifier ses autorisations.",
+      "seo_title": "5G Live IPTV : identifier l’app de l’indicateur vert",
+      "seo_description": "Vérifiez l’indicateur caméra ou micro d’Android pendant l’utilisation de 5G Live IPTV. Identifiez l’application puis examinez une autorisation précise.",
+      "sections": [
+        {
+          "heading": "Identifiez ce que signale le voyant vert",
+          "paragraphs": [
+            "Une question sur l’indicateur de confidentialité pendant l’utilisation de 5G Live IPTV commence par l’affichage d’Android. Google indique que l’usage de la caméra ou du micro peut produire un voyant vert en haut à droite. Certaines instructions nécessitent Android 12 ou une version ultérieure ; les commandes varient selon l’appareil. Ce voyant seul ne désigne pas le lecteur. Notez s’il apparaît pendant la lecture, après une recherche vocale ou lors d’une autre action, sans présumer la cause."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le nom avant de modifier l’accès",
+          "paragraphs": [
+            "Balayez vers le bas et touchez l’indicateur si votre téléphone le permet. Google décrit un premier appui pour identifier l’application ou le service, puis un autre pour gérer les autorisations. Si une autre app est nommée, examinez-la séparément. Pour une application précise, ouvrez Paramètres, Applications, son nom, puis Autorisations. Consultez le droit d’accès à la caméra ou au micro et les choix proposés. N’accordez pas d’accès sans rapport pour simplement fermer une demande."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Séparez ce signal de la qualité de lecture",
+          "paragraphs": [
+            "L’autorisation caméra concerne la capture de photos ou de vidéos ; celle du micro, l’enregistrement audio. Aucune ne mesure la qualité d’un flux. Si vous modifiez une autorisation, notez sa valeur précédente et répétez uniquement l’action à l’origine de la question. Décrivez la fonction affectée et le nom exact de l’app en demandant de l’aide. Évitez les captures complètes contenant des données de compte. Ces vérifications ne prouvent pas qu’un lecteur possède une fonction précise d’enregistrement ou de commande vocale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV e l’indicatore privacy: quale app usa un sensore?",
+      "excerpt": "L’indicatore verde di Android segnala l’uso di fotocamera o microfono. Leggi il nome dell’app indicata dal telefono prima di collegarlo al lettore o cambiarne le autorizzazioni.",
+      "seo_title": "5G Live IPTV: controlla l’app dell’indicatore verde",
+      "seo_description": "Controlla l’indicatore di fotocamera o microfono di Android durante l’uso di 5G Live IPTV, identifica l’app e verifica una singola autorizzazione.",
+      "sections": [
+        {
+          "heading": "Identifica cosa segnala l’indicatore verde",
+          "paragraphs": [
+            "Una domanda sull’indicatore privacy durante l’uso di 5G Live IPTV parte dalle informazioni di Android. Google spiega che l’uso di fotocamera o microfono può far apparire un indicatore verde in alto a destra. Alcune istruzioni richiedono Android 12 o versioni successive e i comandi variano tra dispositivi. Il segno da solo non identifica il lettore come responsabile. Annota se compare durante la visione, dopo una ricerca vocale o con un’altra azione, senza presumere la causa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi il nome prima di cambiare accesso",
+          "paragraphs": [
+            "Scorri verso il basso e tocca l’indicatore se il telefono lo consente. Google descrive un tocco per identificare l’app o il servizio e un altro per gestire le autorizzazioni. Se viene nominata un’altra app, esaminala separatamente. Per una singola applicazione, apri Impostazioni, App, il suo nome e Autorizzazioni. Controlla il permesso specifico di fotocamera o microfono e le opzioni disponibili. Non concedere accessi estranei solo per chiudere una richiesta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui il segnale dalla qualità del video",
+          "paragraphs": [
+            "L’autorizzazione della fotocamera riguarda l’acquisizione di foto o video; quella del microfono riguarda la registrazione audio. Nessuna misura la qualità dello streaming. Se cambi un permesso, annota il valore precedente e ripeti soltanto l’azione che ha fatto sorgere il dubbio. Quando chiedi aiuto, descrivi la funzione interessata e il nome esatto dell’app. Evita schermate complete con dati dell’account. Questi controlli non dimostrano che un particolare lettore disponga di funzioni specifiche di registrazione o voce."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en de privacy-indicator: welke app gebruikt iets?",
+      "excerpt": "De groene Android-indicator meldt gebruik van camera of microfoon. Bekijk welke app de telefoon noemt voordat je het signaal aan de speler koppelt of rechten wijzigt.",
+      "seo_title": "5G Live IPTV: controleer de app bij de groene indicator",
+      "seo_description": "Bekijk de camera- of microfoonindicator van Android bij het gebruik van 5G Live IPTV. Identificeer de genoemde app en controleer één specifieke toestemming.",
+      "sections": [
+        {
+          "heading": "Stel vast wat de groene indicator meldt",
+          "paragraphs": [
+            "Een vraag over de privacy-indicator bij 5G Live IPTV begint bij de statusinformatie van Android. Google legt uit dat camera- of microfoongebruik een groene indicator rechtsboven kan laten verschijnen. Sommige stappen vereisen Android 12 of hoger en de bediening verschilt per apparaat. Het groene teken alleen bewijst niet dat de speler verantwoordelijk is. Noteer of het tijdens het kijken, na gesproken zoeken of bij een andere handeling verschijnt, zonder de oorzaak in te vullen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de appnaam voordat je toegang wijzigt",
+          "paragraphs": [
+            "Veeg omlaag en tik op de indicator als je telefoon dit ondersteunt. Volgens Google toont één tik de app of service; nogmaals tikken opent het beheer van toestemmingen. Wordt een andere app genoemd, onderzoek die afzonderlijk. Open voor één app Instellingen, Apps, de appnaam en Rechten. Bekijk de specifieke toestemming voor camera of microfoon en de beschikbare keuzes. Geef geen andere toegang alleen om een melding weg te krijgen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd het signaal los van de beeldkwaliteit",
+          "paragraphs": [
+            "Cameratoegang betreft het maken van foto’s of video’s; microfoontoegang betreft geluidsopname. Geen van beide meet de kwaliteit van een stream. Wijzig je een recht, noteer dan de vorige waarde en herhaal alleen de handeling die de vraag opriep. Beschrijf de getroffen functie en exacte appnaam wanneer je hulp vraagt. Deel geen volledig scherm met accountgegevens. Deze Android-controles bewijzen niet dat een bepaalde speler specifieke opnamefuncties of spraakbediening heeft."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV e o indicador de privacidade: qual é a app?",
+      "excerpt": "O indicador verde do Android assinala o uso da câmara ou do microfone. Veja que aplicação o telefone identifica antes de relacionar o sinal com o leitor ou alterar permissões.",
+      "seo_title": "5G Live IPTV: identifique a app do indicador verde",
+      "seo_description": "Verifique o indicador de câmara ou microfone do Android ao utilizar 5G Live IPTV. Identifique a aplicação indicada e reveja uma permissão específica.",
+      "sections": [
+        {
+          "heading": "Identifique o que o indicador verde assinala",
+          "paragraphs": [
+            "Uma dúvida sobre o indicador de privacidade ao utilizar 5G Live IPTV começa pela informação do Android. A Google explica que o uso da câmara ou do microfone pode mostrar um indicador verde no canto superior direito. Algumas instruções exigem Android 12 ou posterior e os controlos variam conforme o dispositivo. O sinal, por si só, não identifica o leitor como responsável. Anote se aparece durante a visualização, após uma pesquisa por voz ou noutra ação, sem presumir a causa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o nome antes de alterar o acesso",
+          "paragraphs": [
+            "Deslize para baixo e toque no indicador se o telefone permitir. A Google descreve um toque para identificar a aplicação ou serviço e outro para gerir permissões. Se aparecer outra app, investigue-a separadamente. Para uma aplicação individual, abra Definições, Apps, o respetivo nome e Permissões. Consulte o acesso específico à câmara ou ao microfone e as opções disponíveis. Não conceda acessos sem relação com a tarefa apenas para fechar um pedido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe o sinal da qualidade da transmissão",
+          "paragraphs": [
+            "A permissão da câmara refere-se a captar imagens ou vídeos; a do microfone, a gravar áudio. Nenhuma mede a qualidade de uma transmissão. Se alterar uma permissão, anote o valor anterior e repita apenas a ação que levantou a dúvida. Ao pedir ajuda, descreva a função afetada e o nome exato da app. Evite imagens do ecrã completo com dados de conta. Estas verificações não demonstram que um leitor tenha funções específicas de gravação ou voz."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV и индикатор конфиденциальности: какое приложение?",
+      "excerpt": "Зеленый индикатор Android сообщает об использовании камеры или микрофона. Сначала прочитайте название приложения на телефоне, затем решайте, менять ли разрешения плеера.",
+      "seo_title": "5G Live IPTV: проверьте приложение у зеленого индикатора",
+      "seo_description": "Проверьте индикатор камеры или микрофона Android при использовании 5G Live IPTV, определите приложение и отдельно изучите нужное разрешение.",
+      "sections": [
+        {
+          "heading": "Уточните значение зеленого индикатора",
+          "paragraphs": [
+            "Вопрос об индикаторе конфиденциальности при использовании 5G Live IPTV начинается с системного сообщения Android. Google объясняет, что при использовании камеры или микрофона справа вверху может появиться зеленый индикатор. Некоторые инструкции требуют Android 12 или новее, а управление зависит от устройства. Сам значок не указывает на виновность плеера. Запишите, появляется ли он при просмотре, после голосового поиска или при другом действии, не предполагая причину заранее."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте название перед изменением доступа",
+          "paragraphs": [
+            "Проведите вниз и нажмите индикатор, если телефон поддерживает это действие. Google описывает одно нажатие для определения приложения или службы и следующее для управления разрешениями. Если указано другое приложение, разбирайтесь с ним отдельно. Для конкретного приложения откройте «Настройки», «Приложения», его название и «Разрешения». Изучите разрешение камеры или микрофона и доступные варианты. Не предоставляйте посторонний доступ только ради закрытия запроса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отделяйте наблюдение от качества воспроизведения",
+          "paragraphs": [
+            "Разрешение камеры относится к съемке фото или видео; разрешение микрофона — к записи звука. Ни одно не измеряет качество потока. Меняя разрешение, запишите прежнее значение и повторите только действие, вызвавшее вопрос. При обращении за помощью укажите затронутую функцию и точное название приложения. Не отправляйте снимок всего экрана с данными учетной записи. Эти проверки Android не подтверждают наличие определенных функций записи или голосового управления у конкретного плеера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV اور رازداری کا نشان: کون سی ایپ سینسر استعمال کرتی ہے؟",
+      "excerpt": "Android کا سبز نشان کیمرے یا مائیکروفون کے استعمال کی خبر دیتا ہے۔ اسے پلیئر سے جوڑنے یا اجازت بدلنے سے پہلے فون پر دکھائی گئی ایپ کا نام دیکھیں۔",
+      "seo_title": "5G Live IPTV: سبز نشان پر دکھائی گئی ایپ دیکھیں",
+      "seo_description": "5G Live IPTV استعمال کرتے وقت Android کا کیمرہ یا مائیکروفون نشان سمجھیں، متعلقہ ایپ پہچانیں اور صرف مطلوبہ اجازت احتیاط سے دیکھیں۔",
+      "sections": [
+        {
+          "heading": "سبز نشان کا مطلب پہلے سمجھیں",
+          "paragraphs": [
+            "5G Live IPTV دیکھتے ہوئے رازداری کے نشان کا سوال ہو تو پہلے Android کی اپنی اطلاع دیکھیں۔ Google کے مطابق کیمرہ یا مائیکروفون استعمال ہونے پر اسکرین کے اوپر دائیں طرف سبز نشان آ سکتا ہے۔ بعض ہدایات کے لیے Android 12 یا بعد کا ورژن چاہیے اور اختیار آلے کے مطابق بدلتے ہیں۔ صرف سبز نشان پلیئر کو ذمہ دار نہیں ٹھہراتا۔ لکھیں کہ یہ دیکھنے کے دوران، آواز سے تلاش کے بعد یا کسی دوسرے کام پر آتا ہے؛ وجہ خود سے نہ طے کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی بدلنے سے پہلے ایپ کا نام پڑھیں",
+          "paragraphs": [
+            "اگر فون اجازت دے تو اوپر سے نیچے سوائپ کر کے نشان دبائیں۔ Google کے مطابق ایک بار دبانے سے ایپ یا سروس معلوم ہوتی ہے اور دوبارہ دبانے سے اجازتیں سنبھالی جاتی ہیں۔ دوسری ایپ کا نام ہو تو اس کی الگ جانچ کریں۔ کسی ایک ایپ کے لیے ترتیبات، ایپس، اس ایپ کا نام، پھر اجازتیں کھولیں۔ کیمرے یا مائیکروفون کی متعلقہ اجازت اور دستیاب اختیار دیکھیں۔ صرف پیغام بند کرنے کے لیے غیر متعلقہ رسائی نہ دیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اس مشاہدے کو ویڈیو کے معیار سے الگ رکھیں",
+          "paragraphs": [
+            "کیمرے کی اجازت تصویر یا ویڈیو بنانے سے متعلق ہے؛ مائیکروفون کی اجازت آواز ریکارڈ کرنے سے۔ ان میں سے کوئی نشریات کا معیار نہیں ناپتا۔ اجازت بدلیں تو پرانی قدر لکھ لیں اور صرف وہی کام دہرائیں جس پر سوال اٹھا تھا۔ مدد لیتے وقت متاثرہ کام اور ایپ کا صحیح نام بتائیں۔ پوری اسکرین کی ایسی تصویر نہ بھیجیں جس میں اکاؤنٹ کی تفصیل ہو۔ یہ Android جانچ کسی مخصوص پلیئر میں ریکارڈنگ یا آواز کی خاص سہولت ثابت نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV ومؤشر الخصوصية: أي تطبيق يستخدم المستشعر؟",
+      "excerpt": "يشير مؤشر Android الأخضر إلى استخدام الكاميرا أو الميكروفون. تحقق من اسم التطبيق الذي يحدده الهاتف قبل ربط الإشارة بالمشغل أو تغيير أذوناته.",
+      "seo_title": "5G Live IPTV: تحقق من التطبيق عند المؤشر الأخضر",
+      "seo_description": "افهم مؤشر الكاميرا أو الميكروفون في Android أثناء استخدام 5G Live IPTV، وحدد التطبيق المعروض ثم راجع إذنا واحدا بعناية.",
+      "sections": [
+        {
+          "heading": "حدد ما الذي يشير إليه اللون الأخضر",
+          "paragraphs": [
+            "يبدأ السؤال عن مؤشر الخصوصية أثناء استخدام 5G Live IPTV بمعلومات Android نفسه. توضح Google أن استخدام الكاميرا أو الميكروفون قد يظهر مؤشرا أخضر أعلى يمين الشاشة. تتطلب بعض الخطوات Android 12 أو أحدث، وتختلف عناصر التحكم بحسب الجهاز. العلامة وحدها لا تثبت أن المشغل مسؤول عنها. سجل هل تظهر أثناء المشاهدة، أم بعد فتح البحث الصوتي، أم خلال إجراء آخر، دون افتراض السبب."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ اسم التطبيق قبل تغيير الوصول",
+          "paragraphs": [
+            "اسحب لأسفل واضغط المؤشر إذا كان هاتفك يدعم ذلك. تصف Google ضغطة لتحديد التطبيق أو الخدمة وضغطة أخرى لإدارة الأذونات. إذا ظهر تطبيق مختلف، فافحصه بصورة منفصلة. لتطبيق بعينه، افتح الإعدادات ثم التطبيقات ثم اسمه ثم الأذونات. راجع إذن الكاميرا أو الميكروفون المحدد والخيارات المتاحة. لا تمنح وصولا لا يتعلق بالمهمة لمجرد إغلاق طلب ظاهر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل الملاحظة عن جودة التشغيل",
+          "paragraphs": [
+            "يتعلق إذن الكاميرا بالتقاط الصور أو الفيديو، ويتعلق إذن الميكروفون بتسجيل الصوت. لا يقيس أي منهما جودة البث. إذا غيرت إذنا، دوّن قيمته السابقة وكرر فقط الإجراء الذي أثار السؤال. عند طلب المساعدة، اذكر الوظيفة المتأثرة واسم التطبيق الدقيق. تجنب مشاركة صورة للشاشة كاملة تتضمن بيانات الحساب. لا تثبت هذه الفحوص في Android أن مشغلا معينا يمتلك وظيفة محددة للتسجيل أو التحكم الصوتي."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV और गोपनीयता संकेत: कौन सा ऐप सेंसर चला रहा है?",
+      "excerpt": "Android का हरा संकेत कैमरे या माइक्रोफ़ोन के इस्तेमाल की जानकारी देता है। उसे प्लेयर से जोड़ने या अनुमति बदलने से पहले फ़ोन पर दिखाया गया ऐप का नाम देखें।",
+      "seo_title": "5G Live IPTV: हरे संकेत में दिखने वाला ऐप पहचानें",
+      "seo_description": "5G Live IPTV इस्तेमाल करते समय Android का कैमरा या माइक्रोफ़ोन संकेत समझें, संबंधित ऐप पहचानें और एक खास अनुमति सावधानी से जाँचें।",
+      "sections": [
+        {
+          "heading": "पहले समझें कि हरा संकेत क्या बताता है",
+          "paragraphs": [
+            "5G Live IPTV इस्तेमाल करते समय गोपनीयता संकेत पर सवाल हो तो Android की अपनी सूचना देखें। Google बताता है कि कैमरा या माइक्रोफ़ोन इस्तेमाल होने पर स्क्रीन के ऊपर दाईं तरफ हरा संकेत आ सकता है। कुछ निर्देशों के लिए Android 12 या बाद का संस्करण चाहिए और नियंत्रण डिवाइस के अनुसार बदलते हैं। केवल हरा निशान प्लेयर को जिम्मेदार नहीं बताता। लिखें कि वह देखने के दौरान, आवाज़ से खोज खोलने के बाद या किसी दूसरे काम पर आता है; कारण पहले से न मानें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहुँच बदलने से पहले ऐप का नाम पढ़ें",
+          "paragraphs": [
+            "अगर फ़ोन में यह सुविधा हो तो नीचे स्वाइप करके संकेत पर टैप करें। Google के मुताबिक एक टैप से ऐप या सेवा का नाम दिखता है और दूसरे से अनुमतियाँ सँभाली जाती हैं। कोई दूसरा ऐप दिखे तो उसकी अलग जाँच करें। किसी एक ऐप के लिए सेटिंग, ऐप, उसका नाम और अनुमतियाँ खोलें। कैमरे या माइक्रोफ़ोन की खास अनुमति और उपलब्ध विकल्प देखें। केवल अनुरोध हटाने के लिए गैरजरूरी पहुँच न दें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "इस संकेत को वीडियो की गुणवत्ता से अलग रखें",
+          "paragraphs": [
+            "कैमरे की अनुमति तस्वीर या वीडियो लेने से संबंधित है; माइक्रोफ़ोन की अनुमति आवाज़ रिकॉर्ड करने से। इनमें से कोई स्ट्रीम की गुणवत्ता नहीं मापती। अनुमति बदलें तो पिछला मान लिखें और केवल वही काम दोहराएँ जिस पर सवाल उठा था। सहायता लेते समय प्रभावित सुविधा और ऐप का सही नाम बताएँ। खाते की जानकारी वाला पूरी स्क्रीन का चित्र साझा न करें। Android की ये जाँच किसी खास प्लेयर में रिकॉर्डिंग या आवाज़ की खास सुविधा होने का प्रमाण नहीं हैं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: check Android camera and microphone indicators",
+      "url": "https://support.google.com/android/answer/13532937?hl=en"
+    },
+    {
+      "label": "Google: change app permissions on Android",
+      "url": "https://support.google.com/android/answer/9431959?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-06",
+  "topic": "Compare an IPTV Subscription plan amount with its currency code before interpreting a converted statement or exchange estimate",
+  "primary_keyword": "IPTV Subscription currency check",
+  "slug": "iptvsubscription-currency-code-plan-amount-conversion",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription currency check: compare the full amount",
+      "excerpt": "Compare a plan price and a converted amount carefully. Keep the provider, duration and currency code together before asking about a difference.",
+      "seo_title": "IPTV Subscription currency check: amounts and conversion",
+      "seo_description": "Check an IPTV Subscription price with its currency code. Compare the same provider and duration, and separate a conversion estimate from the actual order amount.",
+      "sections": [
+        {
+          "heading": "Write down the amount with its currency",
+          "paragraphs": [
+            "An IPTV Subscription currency check starts with the full amount, not a bare number. On IPTV Subscription, record the selected Opplex or Filex provider, plan duration, amount and currency code. Keep these together when comparing a quote, checkout display and receipt. A dollar symbol alone can leave the currency unclear; ask which currency is intended instead of assuming that it matches your bank account."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep conversion guidance in its proper context",
+          "paragraphs": [
+            "Google’s currency-conversion help explains that a purchase from Google may be billed in a currency different from the buyer’s home-country currency. That guidance concerns Google purchases; it does not confirm payment methods or conversion rules on this site. For a service order, use the currency actually shown at checkout. Ask your payment provider whether conversion applies and how the final amount will be determined. Treat a converter result as an estimate, not a promised charge."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pay Help: understand currency conversions",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the same plan before asking about a difference",
+          "paragraphs": [
+            "Before concluding that a price changed, compare like with like: the same provider, duration, original amount and currency. If a statement shows a converted amount, keep it alongside the original rather than replacing it. For an unexplained difference, ask a specific question using those figures and omit full card details. Do not infer payment completion, activation or an extra order from an exchange-rate estimate alone."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "IPTV Subscription: compara el importe con su moneda",
+      "excerpt": "Compara con cuidado el precio del plan y un importe convertido. Conserva el proveedor, la duración y el código de moneda antes de consultar una diferencia.",
+      "seo_title": "IPTV Subscription: moneda del precio y conversión",
+      "seo_description": "Comprueba el precio de IPTV Subscription con su código de moneda. Compara el mismo proveedor y duración, y separa la conversión estimada del importe del pedido.",
+      "sections": [
+        {
+          "heading": "Anota el importe junto con la moneda",
+          "paragraphs": [
+            "Para comprobar la moneda de una suscripción IPTV, empieza por el importe completo, no por un número aislado. En IPTV Subscription, anota el proveedor elegido, Opplex o Filex, la duración del plan, el importe y el código de moneda. Conserva esos datos juntos al comparar un presupuesto, la pantalla de pago y el recibo. El símbolo del dólar puede resultar ambiguo; pregunta a qué moneda corresponde en vez de suponer que coincide con la de tu cuenta bancaria."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Aplica la información sobre conversión en su contexto",
+          "paragraphs": [
+            "La ayuda de Google sobre conversión explica que una compra a Google puede cobrarse en una moneda diferente de la del país del comprador. Esa información corresponde a compras a Google; no confirma los métodos de pago ni las reglas de conversión de este sitio. Para un pedido del servicio, consulta la moneda que aparece al pagar. Pregunta a tu proveedor de pagos si habrá conversión y cómo se determinará el importe final. Considera el resultado de un conversor como una estimación, no como un cargo prometido."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Pay: entender las conversiones de moneda",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Compara el mismo plan antes de consultar una diferencia",
+          "paragraphs": [
+            "Antes de concluir que cambió el precio, compara lo equivalente: el mismo proveedor, duración, importe original y moneda. Si el extracto muestra un importe convertido, consérvalo junto al original sin sustituirlo. Para aclarar una diferencia, formula una pregunta concreta con esas cifras y omite los datos completos de la tarjeta. Una estimación del tipo de cambio no demuestra por sí sola que el pago terminó, que el servicio se activó o que existe otro pedido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV Subscription : comparer le montant avec sa devise",
+      "excerpt": "Comparez avec soin le prix du forfait et un montant converti. Conservez ensemble le fournisseur, la durée et le code de devise avant de signaler un écart.",
+      "seo_title": "IPTV Subscription : devise du prix et conversion",
+      "seo_description": "Vérifiez le prix IPTV Subscription avec son code de devise. Comparez le même fournisseur et la même durée, en distinguant estimation de change et montant de commande.",
+      "sections": [
+        {
+          "heading": "Notez le montant accompagné de sa devise",
+          "paragraphs": [
+            "Pour vérifier la devise d’un abonnement IPTV, partez du montant complet plutôt que d’un nombre isolé. Sur IPTV Subscription, notez le fournisseur choisi, Opplex ou Filex, la durée du forfait, le montant et le code de devise. Gardez ces éléments ensemble pour comparer un devis, l’écran de paiement et le reçu. Le seul symbole du dollar peut prêter à confusion ; demandez la devise prévue au lieu de supposer qu’elle correspond à votre compte bancaire."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Replacez les indications de change dans leur contexte",
+          "paragraphs": [
+            "L’aide Google sur les conversions explique qu’un achat auprès de Google peut être facturé dans une autre devise que celle du pays de l’acheteur. Ces indications concernent les achats Google ; elles ne confirment ni les moyens de paiement ni les règles de conversion de ce site. Pour une commande de service, lisez la devise réellement affichée au paiement. Demandez à votre prestataire de paiement si une conversion s’applique et comment le montant final sera déterminé. Un convertisseur fournit une estimation, pas un débit promis."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Pay : comprendre les conversions de devises",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez le même forfait avant de signaler un écart",
+          "paragraphs": [
+            "Avant de conclure à un changement de prix, comparez le même fournisseur, la même durée, le montant d’origine et sa devise. Si un relevé indique un montant converti, conservez-le à côté de l’original sans le remplacer. Pour un écart inexpliqué, posez une question précise avec ces chiffres, sans transmettre les données complètes de votre carte. Une estimation de change ne prouve à elle seule ni paiement terminé, ni activation, ni commande supplémentaire."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription: confronta l’importo con la sua valuta",
+      "excerpt": "Confronta con attenzione il prezzo dell’abbonamento e un importo convertito. Conserva insieme fornitore, durata e codice valuta prima di chiedere chiarimenti.",
+      "seo_title": "IPTV Subscription: valuta del prezzo e conversione",
+      "seo_description": "Controlla il prezzo dell’abbonamento IPTV con il codice valuta. Confronta lo stesso fornitore e la stessa durata, distinguendo stima di cambio e importo dell’ordine.",
+      "sections": [
+        {
+          "heading": "Annota l’importo insieme alla valuta",
+          "paragraphs": [
+            "Per controllare la valuta di un abbonamento IPTV, parti dall’importo completo, non da un numero isolato. Su IPTV Subscription annota il fornitore scelto, Opplex o Filex, la durata del piano, l’importo e il codice valuta. Tieni insieme questi dati quando confronti preventivo, schermata di pagamento e ricevuta. Il solo simbolo del dollaro può creare dubbi: chiedi quale valuta sia prevista invece di presumere che coincida con quella del conto bancario."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa le indicazioni sul cambio nel loro contesto",
+          "paragraphs": [
+            "La guida Google sulle conversioni spiega che un acquisto da Google può essere addebitato in una valuta diversa da quella del paese dell’acquirente. Queste indicazioni riguardano gli acquisti da Google; non confermano metodi di pagamento o regole di conversione di questo sito. Per un ordine del servizio, leggi la valuta realmente mostrata al pagamento. Chiedi al gestore del pagamento se si applica una conversione e come verrà determinato l’importo finale. Il risultato di un convertitore è una stima, non un addebito promesso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google Pay: comprendere le conversioni di valuta",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta lo stesso piano prima di segnalare differenze",
+          "paragraphs": [
+            "Prima di concludere che il prezzo sia cambiato, confronta lo stesso fornitore, la stessa durata, l’importo originale e la valuta. Se l’estratto conto mostra un importo convertito, conservalo accanto all’originale senza sostituirlo. Per una differenza inspiegata, fai una domanda precisa usando quelle cifre e ometti i dati completi della carta. Una stima del cambio, da sola, non conferma pagamento completato, attivazione o presenza di un altro ordine."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription: vergelijk het bedrag met de valuta",
+      "excerpt": "Vergelijk de abonnementsprijs zorgvuldig met een omgerekend bedrag. Houd aanbieder, looptijd en valutacode bij elkaar voordat je een verschil navraagt.",
+      "seo_title": "IPTV Subscription: prijsvaluta en omrekening controleren",
+      "seo_description": "Controleer de IPTV Subscription-prijs met de valutacode. Vergelijk dezelfde aanbieder en looptijd en houd een wisselkoersschatting apart van het bestelbedrag.",
+      "sections": [
+        {
+          "heading": "Noteer het bedrag samen met de valuta",
+          "paragraphs": [
+            "Een valutacontrole voor je IPTV-abonnement begint met het volledige bedrag, niet met een los getal. Noteer bij IPTV Subscription de gekozen aanbieder, Opplex of Filex, de looptijd, het bedrag en de valutacode. Bewaar die gegevens samen wanneer je een offerte, het betaalscherm en een ontvangstbewijs vergelijkt. Alleen een dollarteken kan onduidelijk zijn; vraag welke valuta wordt bedoeld in plaats van aan te nemen dat die gelijk is aan de valuta van je bankrekening."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik uitleg over omrekening in de juiste context",
+          "paragraphs": [
+            "Google legt in zijn hulp over valutaomrekening uit dat een aankoop bij Google in een andere valuta kan worden afgerekend dan die van het woonland. Die uitleg geldt voor Google-aankopen en bevestigt geen betaalmethoden of omrekenregels van deze website. Gebruik voor een servicebestelling de valuta die werkelijk bij het afrekenen staat. Vraag je betaaldienst of omrekening van toepassing is en hoe het eindbedrag wordt bepaald. Beschouw een valutaomrekenaar als een schatting, niet als een toegezegde afschrijving."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pay Help: valutaomrekeningen begrijpen",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk hetzelfde abonnement voordat je een verschil meldt",
+          "paragraphs": [
+            "Vergelijk dezelfde aanbieder, looptijd, het oorspronkelijke bedrag en de valuta voordat je concludeert dat de prijs is veranderd. Toont een afschrift een omgerekend bedrag, bewaar dat dan naast het origineel en vervang het niet. Stel bij een onverklaard verschil een gerichte vraag met die bedragen en laat volledige kaartgegevens weg. Een wisselkoersschatting bewijst op zichzelf geen afgeronde betaling, activering of extra bestelling."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV Subscription: compare o valor com a respetiva moeda",
+      "excerpt": "Compare com cuidado o preço da assinatura e um valor convertido. Guarde juntos o fornecedor, a duração e o código da moeda antes de perguntar sobre diferenças.",
+      "seo_title": "IPTV Subscription: moeda do preço e conversão",
+      "seo_description": "Confira o preço do IPTV Subscription com o código da moeda. Compare o mesmo fornecedor e duração e distinga a conversão estimada do valor real do pedido.",
+      "sections": [
+        {
+          "heading": "Anote o valor acompanhado da moeda",
+          "paragraphs": [
+            "A verificação da moeda de uma assinatura IPTV começa pelo valor completo, não por um número isolado. No IPTV Subscription, anote o fornecedor escolhido, Opplex ou Filex, a duração do plano, o valor e o código da moeda. Guarde esses dados juntos ao comparar uma proposta, o ecrã de pagamento e o recibo. Só o símbolo do dólar pode deixar dúvidas; pergunte qual é a moeda em vez de presumir que coincide com a da sua conta bancária."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use a informação sobre conversão no contexto certo",
+          "paragraphs": [
+            "A ajuda da Google sobre conversões explica que uma compra à Google pode ser cobrada numa moeda diferente da do país do comprador. Essa informação refere-se a compras à Google; não confirma os métodos de pagamento nem as regras de conversão deste site. Para um pedido do serviço, leia a moeda efetivamente apresentada no pagamento. Pergunte ao prestador de pagamentos se haverá conversão e como será determinado o valor final. O resultado de um conversor é uma estimativa, não uma cobrança prometida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Pay: compreender as conversões de moeda",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Compare o mesmo plano antes de perguntar por uma diferença",
+          "paragraphs": [
+            "Antes de concluir que o preço mudou, compare o mesmo fornecedor, duração, valor original e moeda. Se um extrato apresentar um valor convertido, guarde-o ao lado do original sem o substituir. Para esclarecer uma diferença, faça uma pergunta específica com esses valores e omita os dados completos do cartão. Uma estimativa cambial não demonstra, por si só, pagamento concluído, ativação ou existência de outro pedido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV Subscription: сравнивайте сумму вместе с валютой",
+      "excerpt": "Сопоставляйте цену подписки и пересчитанную сумму внимательно. Сохраните поставщика, срок и код валюты, прежде чем спрашивать о расхождении.",
+      "seo_title": "IPTV Subscription: валюта цены и пересчёт суммы",
+      "seo_description": "Проверяйте цену IPTV Subscription вместе с кодом валюты. Сравнивайте одного поставщика и срок, отделяя оценку конвертации от суммы реального заказа.",
+      "sections": [
+        {
+          "heading": "Запишите сумму вместе с валютой",
+          "paragraphs": [
+            "Проверка валюты подписки IPTV начинается с полной суммы, а не отдельного числа. На IPTV Subscription запишите выбранного поставщика, Opplex или Filex, срок плана, сумму и код валюты. Держите эти данные вместе при сравнении предложения, экрана оплаты и квитанции. Один знак доллара может оставлять валюту неясной; уточните, какая валюта имеется в виду, вместо предположения, что она совпадает с валютой банковского счёта."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Учитывайте область применения справки о конвертации",
+          "paragraphs": [
+            "Справка Google о конвертации объясняет, что покупка у Google может оплачиваться в валюте, отличной от валюты страны покупателя. Эти сведения относятся к покупкам у Google; они не подтверждают способы оплаты или правила пересчёта этого сайта. Для заказа услуги читайте валюту, фактически указанную при оплате. Спросите платёжного провайдера, применяется ли конвертация и как определяется итоговая сумма. Результат конвертера считайте оценкой, а не обещанным списанием."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Pay: как работает конвертация валют",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "Сравнивайте один план перед вопросом о расхождении",
+          "paragraphs": [
+            "Прежде чем сделать вывод об изменении цены, сопоставьте одного поставщика, одинаковый срок, исходную сумму и валюту. Если выписка содержит пересчитанную сумму, сохраните её рядом с исходной, не заменяя последнюю. При необъяснённой разнице задайте конкретный вопрос с этими цифрами, исключив полные данные карты. Одна оценка обменного курса не подтверждает завершение платежа, активацию или появление дополнительного заказа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription: رقم کا موازنہ کرنسی سمیت کریں",
+      "excerpt": "پیکیج کی قیمت اور تبدیل شدہ رقم کا احتیاط سے موازنہ کریں۔ کسی فرق کے بارے میں پوچھنے سے پہلے فراہم کنندہ، مدت اور کرنسی کوڈ ساتھ رکھیں۔",
+      "seo_title": "IPTV Subscription: قیمت کی کرنسی اور تبدیلی کی جانچ",
+      "seo_description": "IPTV Subscription کی قیمت کرنسی کوڈ سمیت دیکھیں۔ ایک ہی فراہم کنندہ اور مدت کا موازنہ کریں، اور کرنسی کی تبدیلی کا اندازہ اصل آرڈر کی رقم سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "رقم کے ساتھ کرنسی بھی لکھیں",
+          "paragraphs": [
+            "IPTV رکنیت کی کرنسی کی جانچ صرف ایک عدد نہیں بلکہ مکمل رقم سے شروع ہوتی ہے۔ IPTV Subscription پر منتخب Opplex یا Filex فراہم کنندہ، پیکیج کی مدت، رقم اور کرنسی کوڈ لکھیں۔ پیشکش، ادائیگی کے صفحے اور رسید کا موازنہ کرتے وقت یہ معلومات ساتھ رکھیں۔ صرف ڈالر کا نشان کرنسی واضح نہیں کرتا؛ یہ فرض کرنے کے بجائے کہ وہ آپ کے بینک کھاتے والی کرنسی ہے، پوچھیں کہ کون سی کرنسی مراد ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تبدیلی کی رہنمائی کو درست تناظر میں رکھیں",
+          "paragraphs": [
+            "کرنسی کی تبدیلی سے متعلق Google کی مدد بتاتی ہے کہ Google سے خریداری کی رقم خریدار کے ملک کی کرنسی سے مختلف کرنسی میں وصول ہو سکتی ہے۔ یہ رہنمائی Google کی خریداری کے لیے ہے؛ اس سے اس ویب سائٹ کے ادائیگی کے طریقے یا تبدیلی کے اصول ثابت نہیں ہوتے۔ سروس کے آرڈر کے لیے ادائیگی پر واقعی دکھائی گئی کرنسی دیکھیں۔ ادائیگی فراہم کرنے والے سے پوچھیں کہ تبدیلی ہوگی یا نہیں اور آخری رقم کیسے طے ہوگی۔ کنورٹر کے نتیجے کو اندازہ سمجھیں، وصولی کا وعدہ نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pay مدد: کرنسی کی تبدیلی کو سمجھیں",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "فرق پوچھنے سے پہلے ایک ہی پیکیج کا موازنہ کریں",
+          "paragraphs": [
+            "قیمت بدلنے کا نتیجہ نکالنے سے پہلے ایک ہی فراہم کنندہ، مدت، اصل رقم اور کرنسی کا موازنہ کریں۔ بینک کی تفصیل میں تبدیل شدہ رقم ہو تو اصل کو بدلنے کے بجائے اسے ساتھ محفوظ کریں۔ غیر واضح فرق کے لیے انہی اعداد کے ساتھ واضح سوال کریں اور کارڈ کی مکمل تفصیل نہ دیں۔ صرف شرح مبادلہ کے اندازے سے ادائیگی مکمل ہونے، سروس فعال ہونے یا اضافی آرڈر کا نتیجہ نہ نکالیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "IPTV Subscription: قارن المبلغ مع عملته",
+      "excerpt": "قارن سعر الخطة والمبلغ المحوّل بعناية. احتفظ باسم المزوّد والمدة ورمز العملة معاً قبل الاستفسار عن أي فرق.",
+      "seo_title": "IPTV Subscription: مراجعة عملة السعر والتحويل",
+      "seo_description": "راجع سعر IPTV Subscription مع رمز العملة. قارن المزوّد والمدة نفسيهما، وافصل تقدير تحويل العملة عن المبلغ الفعلي للطلب.",
+      "sections": [
+        {
+          "heading": "دوّن المبلغ مع العملة",
+          "paragraphs": [
+            "تبدأ مراجعة عملة اشتراك IPTV بالمبلغ الكامل، لا برقم منفرد. في IPTV Subscription، دوّن المزوّد المختار، Opplex أو Filex، ومدة الخطة والمبلغ ورمز العملة. احتفظ بهذه البيانات معاً عند مقارنة عرض السعر وشاشة الدفع والإيصال. قد لا يوضح رمز الدولار وحده العملة المقصودة؛ اسأل عنها بدلاً من افتراض أنها تطابق عملة حسابك البنكي."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ضع إرشادات التحويل في سياقها الصحيح",
+          "paragraphs": [
+            "توضح مساعدة Google حول تحويل العملات أن شراء منتج من Google قد يُفوتر بعملة مختلفة عن عملة بلد المشتري. تتعلق هذه الإرشادات بمشتريات Google؛ ولا تؤكد وسائل الدفع أو قواعد التحويل في هذا الموقع. لطلب الخدمة، اقرأ العملة المعروضة فعلياً عند الدفع. اسأل جهة الدفع عما إذا كان التحويل ينطبق وكيف سيُحدد المبلغ النهائي. تعامل مع نتيجة حاسبة العملات كتقدير، لا كمبلغ خصم موعود."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Pay: فهم تحويل العملات",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "قارن الخطة نفسها قبل السؤال عن الفرق",
+          "paragraphs": [
+            "قبل استنتاج تغيّر السعر، قارن المزوّد والمدة والمبلغ الأصلي والعملة نفسها. إذا عرض كشف الحساب مبلغاً محوّلاً، فاحتفظ به إلى جانب الأصل بدلاً من استبداله. للاستفسار عن فرق غير واضح، اطرح سؤالاً محدداً بهذه الأرقام واستبعد بيانات البطاقة الكاملة. لا تستنتج اكتمال الدفع أو التفعيل أو وجود طلب إضافي من تقدير سعر الصرف وحده."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription: रकम की तुलना मुद्रा सहित करें",
+      "excerpt": "प्लान की कीमत और बदली हुई रकम की तुलना ध्यान से करें। किसी अंतर के बारे में पूछने से पहले प्रदाता, अवधि और मुद्रा कोड साथ रखें।",
+      "seo_title": "IPTV Subscription: कीमत की मुद्रा और रूपांतरण जाँचें",
+      "seo_description": "IPTV Subscription की कीमत मुद्रा कोड सहित जाँचें। समान प्रदाता और अवधि की तुलना करें और रूपांतरण के अनुमान को असली ऑर्डर की रकम से अलग रखें।",
+      "sections": [
+        {
+          "heading": "रकम के साथ मुद्रा भी लिखें",
+          "paragraphs": [
+            "IPTV सदस्यता की मुद्रा जाँच पूरी रकम से शुरू होती है, केवल एक संख्या से नहीं। IPTV Subscription पर चुना हुआ Opplex या Filex प्रदाता, प्लान की अवधि, रकम और मुद्रा कोड लिखें। प्रस्ताव, भुगतान स्क्रीन और रसीद की तुलना करते समय ये जानकारी साथ रखें। केवल डॉलर का चिह्न मुद्रा को अस्पष्ट छोड़ सकता है; यह मानने के बजाय कि वह आपके बैंक खाते की मुद्रा है, पूछें कि कौन सी मुद्रा बताई गई है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रूपांतरण की जानकारी सही संदर्भ में पढ़ें",
+          "paragraphs": [
+            "मुद्रा रूपांतरण पर Google की सहायता बताती है कि Google से खरीदारी का बिल खरीदार के देश की मुद्रा से अलग मुद्रा में हो सकता है। यह मार्गदर्शन Google की खरीदारी के लिए है; इससे इस साइट के भुगतान तरीके या रूपांतरण नियम साबित नहीं होते। सेवा के ऑर्डर में भुगतान पर वास्तव में दिखाई मुद्रा देखें। भुगतान प्रदाता से पूछें कि रूपांतरण लागू होगा या नहीं और अंतिम रकम कैसे तय होगी। मुद्रा कन्वर्टर का परिणाम अनुमान है, किसी तय कटौती का वादा नहीं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pay सहायता: मुद्रा रूपांतरण समझें",
+              "url": "https://support.google.com/googlepay/answer/7644009"
+            }
+          ]
+        },
+        {
+          "heading": "अंतर पूछने से पहले समान प्लान की तुलना करें",
+          "paragraphs": [
+            "कीमत बदलने का निष्कर्ष निकालने से पहले समान प्रदाता, अवधि, मूल रकम और मुद्रा की तुलना करें। बैंक विवरण में बदली हुई रकम हो तो मूल रकम हटाने के बजाय दोनों साथ रखें। अस्पष्ट अंतर के लिए इन्हीं आँकड़ों से स्पष्ट सवाल पूछें और कार्ड की पूरी जानकारी न दें। केवल विनिमय दर के अनुमान से भुगतान पूरा होने, सेवा सक्रिय होने या अतिरिक्त ऑर्डर का निष्कर्ष न निकालें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pay Help: understand currency conversions",
+      "url": "https://support.google.com/googlepay/answer/7644009"
+    }
+  ]
+}

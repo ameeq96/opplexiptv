@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-06",
+  "topic": "Distinguish a Fire TV Continue Watching content shortcut from opening the existing player when a Trex IPTV viewer returns to an older programme position",
+  "primary_keyword": "Trex IPTV Continue Watching",
+  "slug": "trex-fire-tv-continue-watching-content-shortcut",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV Continue Watching: a title shortcut or the player?",
+      "excerpt": "A Fire TV home-screen title can lead back to an earlier viewing position in an integrated app. Check which shortcut you selected before changing your existing player.",
+      "seo_title": "Trex IPTV Continue Watching: identify the shortcut",
+      "seo_description": "Separate a Fire TV Continue Watching title from the player app shortcut. Check supported integration, profile and row refresh before reporting an old position.",
+      "sections": [
+        {
+          "heading": "Identify the tile you selected",
+          "paragraphs": ["A Trex IPTV Continue Watching question starts on the Fire TV Home screen: did you select a programme title or open your existing player from its app shortcut? Amazon documents a Continue Watching row for integrated apps, where selecting a watched title is expected to return to the earlier playback position. This does not establish that your particular player supports the row. If no such integration is documented for it, open the player normally and describe that route instead."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Check the row and profile before changing the app",
+          "paragraphs": ["For an app known to support this feature, Amazon notes that a missing title can reflect a row awaiting refresh. Allow a minute or two first. Its guide also lists Settings, Account & Profile Settings, then Sync Amazon Content to refresh the row. Follow the labels available on your device. Check that you are using the intended Amazon profile: the documented integration keeps row content associated with the profile where it was watched."],
+          "items": [], "links": [{"label": "Amazon: Continue Watching behaviour and profile isolation", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Compare entry routes on the same device",
+          "paragraphs": ["Stop the current playback before comparing the title shortcut with opening the same player normally. Note the selected title, entry route and approximate position reached. A difference between these routes is useful support evidence; it does not by itself explain the cause. Keep this comparison on one device and one playback at a time. If a supported row remains stale, report the Fire TV model, player version and profile context privately without passwords or playlist addresses."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Trex IPTV y Seguir viendo: ¿acceso a un título o al reproductor?",
+      "excerpt": "Un título de la pantalla de inicio de Fire TV puede volver a un punto anterior en una aplicación integrada. Comprueba qué acceso elegiste antes de cambiar el reproductor.",
+      "seo_title": "Trex IPTV y Seguir viendo: identifica el acceso",
+      "seo_description": "Distingue un título de Seguir viendo en Fire TV del acceso a la aplicación. Revisa integración, perfil y actualización de la fila antes de informar de un punto antiguo.",
+      "sections": [
+        {
+          "heading": "Identifica el recuadro que seleccionaste",
+          "paragraphs": ["Una consulta sobre Seguir viendo con Trex IPTV empieza en Inicio de Fire TV: ¿seleccionaste el título de un programa o abriste el reproductor existente desde su acceso de aplicación? Amazon documenta una fila Seguir viendo para aplicaciones integradas, donde elegir un título visto debe llevar al punto anterior de reproducción. Eso no demuestra que tu reproductor concreto admita la fila. Si no tiene esa integración documentada, ábrelo normalmente y describe esa ruta."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Revisa la fila y el perfil antes de cambiar la aplicación",
+          "paragraphs": ["Para una aplicación que sí admite la función, Amazon indica que un título ausente puede deberse a que la fila espera actualizarse. Deja pasar primero uno o dos minutos. Su guía también indica Ajustes, Configuración de cuentas y perfiles y Sincronizar contenido de Amazon para actualizarla. Sigue los nombres disponibles en tu dispositivo. Comprueba que utilizas el perfil de Amazon previsto: la integración documentada asocia el contenido de la fila al perfil donde se vio."],
+          "items": [], "links": [{"label": "Amazon: Seguir viendo y separación por perfiles", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Compara las rutas de entrada en el mismo dispositivo",
+          "paragraphs": ["Detén la reproducción actual antes de comparar el acceso al título con la apertura normal del mismo reproductor. Anota título elegido, ruta y posición aproximada alcanzada. Una diferencia entre rutas ayuda al soporte, pero no explica por sí sola la causa. Haz la comparación en un dispositivo y con una sola reproducción a la vez. Si la fila compatible sigue desactualizada, informa en privado del modelo de Fire TV, versión del reproductor y contexto del perfil, sin contraseñas ni direcciones de listas."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Trex IPTV et Continuer à regarder : titre ou lecteur ?",
+      "excerpt": "Un titre sur l’accueil de Fire TV peut reprendre à une position antérieure dans une application intégrée. Identifiez le raccourci choisi avant de modifier le lecteur existant.",
+      "seo_title": "Trex IPTV : identifier le raccourci Continuer à regarder",
+      "seo_description": "Distinguez un titre de Continuer à regarder du raccourci du lecteur sur Fire TV. Vérifiez intégration, profil et actualisation avant de signaler une ancienne position.",
+      "sections": [
+        {
+          "heading": "Identifiez la vignette sélectionnée",
+          "paragraphs": ["Une question sur Continuer à regarder avec Trex IPTV commence à l’accueil de Fire TV : avez-vous sélectionné un titre de programme ou ouvert le lecteur existant par son raccourci d’application ? Amazon décrit une rangée pour les applications intégrées, où choisir un titre regardé doit reprendre à l’ancienne position de lecture. Cela ne prouve pas que votre lecteur précis gère cette rangée. Si aucune intégration n’est documentée pour lui, ouvrez-le normalement et décrivez plutôt ce parcours."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Vérifiez la rangée et le profil avant de modifier l’application",
+          "paragraphs": ["Pour une application compatible connue, Amazon précise qu’un titre absent peut correspondre à une rangée en attente d’actualisation. Patientez d’abord une ou deux minutes. Son guide indique aussi Paramètres, Paramètres du compte et des profils, puis Synchroniser le contenu Amazon pour l’actualiser. Suivez les libellés disponibles sur votre appareil. Vérifiez le profil Amazon utilisé : l’intégration décrite associe le contenu de la rangée au profil dans lequel il a été regardé."],
+          "items": [], "links": [{"label": "Amazon : reprise de lecture et séparation des profils", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Comparez les parcours sur le même appareil",
+          "paragraphs": ["Arrêtez la lecture actuelle avant de comparer le raccourci du titre avec l’ouverture normale du même lecteur. Notez le titre choisi, le parcours et la position approximative atteinte. Une différence aide l’assistance, sans expliquer seule sa cause. Faites cette comparaison sur un appareil avec une seule lecture à la fois. Si la rangée compatible reste ancienne, communiquez en privé le modèle Fire TV, la version du lecteur et le contexte du profil, sans mots de passe ni adresses de listes."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Trex IPTV e Continua a guardare: titolo o lettore?",
+      "excerpt": "Un titolo nella schermata iniziale di Fire TV può riprendere da un punto precedente in un’app integrata. Controlla quale collegamento hai scelto prima di modificare il lettore.",
+      "seo_title": "Trex IPTV: riconosci il collegamento Continua a guardare",
+      "seo_description": "Distingui un titolo di Continua a guardare dal collegamento del lettore su Fire TV. Verifica integrazione, profilo e aggiornamento della riga prima di segnalare un punto vecchio.",
+      "sections": [
+        {
+          "heading": "Identifica il riquadro selezionato",
+          "paragraphs": ["Una domanda su Continua a guardare con Trex IPTV parte dalla Home di Fire TV: hai scelto il titolo di un programma oppure aperto il lettore esistente dal collegamento dell’app? Amazon documenta una riga per le app integrate, in cui selezionare un titolo già visto dovrebbe riportare alla precedente posizione di riproduzione. Questo non dimostra che il tuo lettore specifico supporti la riga. Se l’integrazione non è documentata per quel lettore, aprilo normalmente e descrivi quel percorso."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Controlla riga e profilo prima di cambiare l’app",
+          "paragraphs": ["Per un’app sicuramente compatibile, Amazon osserva che un titolo mancante può dipendere dalla riga in attesa di aggiornamento. Attendi prima uno o due minuti. La guida indica anche Impostazioni, Impostazioni account e profili, quindi Sincronizza contenuti Amazon per aggiornarla. Segui le voci disponibili sul tuo dispositivo. Controlla di usare il profilo Amazon previsto: l’integrazione documentata associa i contenuti della riga al profilo in cui sono stati guardati."],
+          "items": [], "links": [{"label": "Amazon: ripresa dei titoli e separazione dei profili", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Confronta i percorsi sullo stesso dispositivo",
+          "paragraphs": ["Interrompi la riproduzione attuale prima di confrontare il collegamento al titolo con l’apertura normale dello stesso lettore. Annota titolo scelto, percorso e posizione approssimativa raggiunta. Una differenza aiuta l’assistenza ma non ne spiega da sola la causa. Esegui il confronto su un dispositivo con una sola riproduzione alla volta. Se la riga compatibile rimane vecchia, comunica privatamente modello Fire TV, versione del lettore e contesto del profilo, senza password o indirizzi di playlist."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV en Verder kijken: een titel of de speler openen?",
+      "excerpt": "Een titel op het Fire TV-startscherm kan in een geïntegreerde app teruggaan naar een eerdere positie. Bekijk welke snelkoppeling je koos voordat je de bestaande speler wijzigt.",
+      "seo_title": "Trex IPTV en Verder kijken: herken de snelkoppeling",
+      "seo_description": "Onderscheid een titel in Verder kijken van de appknop op Fire TV. Controleer ondersteuning, profiel en het verversen van de rij voordat je een oude positie meldt.",
+      "sections": [
+        {
+          "heading": "Bepaal welke tegel je hebt geselecteerd",
+          "paragraphs": ["Een vraag over Verder kijken bij Trex IPTV begint op het Fire TV-startscherm: selecteerde je een programmatitel of opende je de bestaande speler via de appknop? Amazon beschrijft een rij voor geïntegreerde apps, waarbij een eerder bekeken titel hoort terug te keren naar de vorige afspeelpositie. Dat bewijst niet dat jouw specifieke speler deze rij ondersteunt. Is die integratie niet voor de speler beschreven, open hem dan gewoon en beschrijf die route."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Controleer de rij en het profiel voordat je de app wijzigt",
+          "paragraphs": ["Bij een app waarvan ondersteuning bekend is, kan volgens Amazon een titel ontbreken doordat de rij nog moet verversen. Wacht eerst een minuut of twee. De handleiding noemt ook Instellingen, Account- en profielinstellingen en vervolgens Amazon-content synchroniseren om de rij te vernieuwen. Volg de labels op jouw apparaat. Controleer of je het bedoelde Amazon-profiel gebruikt: de beschreven integratie koppelt de rijinhoud aan het profiel waarin die is bekeken."],
+          "items": [], "links": [{"label": "Amazon: Verder kijken en scheiding tussen profielen", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Vergelijk de routes op hetzelfde apparaat",
+          "paragraphs": ["Stop de huidige weergave voordat je de titelsnelkoppeling vergelijkt met het normaal openen van dezelfde speler. Noteer de gekozen titel, de route en de ongeveer bereikte positie. Een verschil helpt ondersteuning, maar verklaart op zichzelf de oorzaak niet. Vergelijk op één apparaat met één weergave tegelijk. Blijft een ondersteunde rij verouderd, geef privé het Fire TV-model, de spelerversie en het gebruikte profiel door, zonder wachtwoorden of afspeellijstadressen."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Trex IPTV e Continuar assistindo: título ou reprodutor?",
+      "excerpt": "Um título na tela inicial do Fire TV pode voltar a uma posição anterior em um aplicativo integrado. Confira qual atalho escolheu antes de alterar o reprodutor existente.",
+      "seo_title": "Trex IPTV: identifique o atalho Continuar assistindo",
+      "seo_description": "Separe um título de Continuar assistindo do atalho do aplicativo no Fire TV. Confira integração, perfil e atualização da linha antes de relatar uma posição antiga.",
+      "sections": [
+        {
+          "heading": "Identifique o bloco selecionado",
+          "paragraphs": ["Uma dúvida sobre Continuar assistindo com Trex IPTV começa na tela inicial do Fire TV: você escolheu o título de um programa ou abriu o reprodutor existente pelo atalho do aplicativo? A Amazon documenta uma linha para aplicativos integrados, em que selecionar um título assistido deve retornar à posição anterior da reprodução. Isso não comprova que seu reprodutor específico ofereça essa integração. Se ela não estiver documentada para ele, abra o aplicativo normalmente e descreva esse caminho."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Confira a linha e o perfil antes de alterar o aplicativo",
+          "paragraphs": ["Para um aplicativo com suporte confirmado, a Amazon observa que um título ausente pode indicar uma linha aguardando atualização. Espere primeiro um ou dois minutos. A orientação também indica Configurações, Configurações de conta e perfil e Sincronizar conteúdo da Amazon para atualizar a linha. Siga os nomes disponíveis no seu dispositivo. Confira o perfil Amazon utilizado: a integração documentada associa o conteúdo da linha ao perfil em que foi assistido."],
+          "items": [], "links": [{"label": "Amazon: retomada de títulos e separação por perfis", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Compare os caminhos no mesmo dispositivo",
+          "paragraphs": ["Pare a reprodução atual antes de comparar o atalho do título com a abertura normal do mesmo reprodutor. Anote título escolhido, caminho e posição aproximada alcançada. Uma diferença ajuda o suporte, mas não explica sozinha sua causa. Compare em um dispositivo com apenas uma reprodução por vez. Se uma linha compatível continuar desatualizada, informe privadamente modelo do Fire TV, versão do reprodutor e contexto do perfil, sem senhas ou endereços de listas."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Trex IPTV и «Продолжить просмотр»: ярлык фильма или плеера?",
+      "excerpt": "Название на главном экране Fire TV может вернуть к прежней позиции в интегрированном приложении. Перед изменением плеера проверьте, какой ярлык вы выбрали.",
+      "seo_title": "Trex IPTV: какой ярлык в «Продолжить просмотр» выбран",
+      "seo_description": "Различайте название в «Продолжить просмотр» и ярлык плеера Fire TV. Проверьте интеграцию, профиль и обновление ряда перед сообщением о старой позиции.",
+      "sections": [
+        {
+          "heading": "Определите, какую плитку вы выбрали",
+          "paragraphs": ["Вопрос о «Продолжить просмотр» у зрителя Trex IPTV начинается с главного экрана Fire TV: вы выбрали название программы или открыли имеющийся плеер через ярлык приложения? Amazon описывает ряд для интегрированных приложений, где выбор просмотренного названия должен возвращать к прежней позиции воспроизведения. Это не доказывает, что конкретно ваш плеер поддерживает данный ряд. Если его интеграция не описана, откройте приложение обычным способом и сообщите именно этот путь."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Проверьте ряд и профиль до изменения приложения",
+          "paragraphs": ["Для приложения с подтверждённой поддержкой Amazon отмечает: название может отсутствовать, пока ряд ожидает обновления. Сначала подождите минуту или две. В руководстве также указан путь через настройки, параметры учётной записи и профиля, затем синхронизацию контента Amazon для обновления ряда. Ориентируйтесь на названия на вашем устройстве. Проверьте выбранный профиль Amazon: описанная интеграция связывает содержимое ряда с профилем, в котором его смотрели, а не со всеми профилями устройства."],
+          "items": [], "links": [{"label": "Amazon: возобновление просмотра и разделение профилей", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "Сравните способы открытия на одном устройстве",
+          "paragraphs": ["Остановите текущее воспроизведение перед сравнением ярлыка названия с обычным открытием того же плеера. Запишите выбранное название, путь и достигнутую примерную позицию. Различие полезно для поддержки, но само по себе не объясняет причину. Используйте одно устройство и одно воспроизведение за раз. Если поддерживаемый ряд остаётся устаревшим, передайте лично модель Fire TV, версию плеера и сведения о выбранном профиле, без паролей и адресов плейлистов."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV میں دیکھنا جاری رکھیں: عنوان کا شارٹ کٹ یا پلیئر؟",
+      "excerpt": "Fire TV کے مرکزی صفحے پر عنوان کسی مربوط ایپ میں پچھلے مقام پر لے جا سکتا ہے۔ موجودہ پلیئر بدلنے سے پہلے دیکھیں کہ آپ نے کون سا شارٹ کٹ چنا۔",
+      "seo_title": "Trex IPTV: دیکھنا جاری رکھیں والا شارٹ کٹ پہچانیں",
+      "seo_description": "Fire TV میں دیکھنا جاری رکھیں کے عنوان اور پلیئر ایپ کے شارٹ کٹ کا فرق سمجھیں۔ پرانے مقام کی رپورٹ سے پہلے سہولت، پروفائل اور قطار کی تازگی دیکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ آپ نے کون سا خانہ منتخب کیا",
+          "paragraphs": ["Trex IPTV کے ساتھ دیکھنا جاری رکھیں کا سوال Fire TV کے مرکزی صفحے سے شروع ہوتا ہے: کیا آپ نے پروگرام کا عنوان منتخب کیا یا ایپ کے شارٹ کٹ سے موجودہ پلیئر کھولا؟ Amazon مربوط ایپس کے لیے ایسی قطار بیان کرتا ہے جہاں دیکھا ہوا عنوان منتخب کرنے پر پچھلے پلے بیک مقام پر واپس جانا متوقع ہے۔ اس سے آپ کے مخصوص پلیئر میں اس سہولت کی تصدیق نہیں ہوتی۔ اس کے لیے انضمام کی تصدیق نہ ہو تو پلیئر معمول کے مطابق کھول کر وہی راستہ بیان کریں۔"],
+          "items": [], "links": []
+        },
+        {
+          "heading": "ایپ بدلنے سے پہلے قطار اور پروفائل دیکھیں",
+          "paragraphs": ["ایسی ایپ میں جس کی اس سہولت کی حمایت معلوم ہو، Amazon کے مطابق عنوان غائب ہونے کی وجہ قطار کا تازہ ہونے کا انتظار بھی ہو سکتی ہے۔ پہلے ایک یا دو منٹ دیں۔ رہنما میں قطار تازہ کرنے کے لیے ترتیبات، اکاؤنٹ اور پروفائل کی ترتیبات، پھر Amazon مواد کی مطابقت کا اختیار بھی درج ہے۔ اپنے آلے پر موجود ناموں کی پیروی کریں۔ درست Amazon پروفائل دیکھیں: دستاویز کے مطابق قطار کا مواد اسی پروفائل سے متعلق ہوتا ہے جس میں اسے دیکھا گیا تھا۔"],
+          "items": [], "links": [{"label": "Amazon: دیکھنا جاری رکھنا اور پروفائل کی علیحدگی", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "ایک ہی آلے پر کھولنے کے راستوں کا موازنہ کریں",
+          "paragraphs": ["عنوان کے شارٹ کٹ اور اسی پلیئر کو معمول کے مطابق کھولنے کا موازنہ کرنے سے پہلے موجودہ پلے بیک روکیں۔ منتخب عنوان، راستہ اور پہنچنے کا اندازاً مقام نوٹ کریں۔ راستوں کا فرق سپورٹ کے لیے مفید ہے مگر اکیلا وجہ نہیں بتاتا۔ ایک آلہ اور ایک وقت میں ایک پلے بیک رکھیں۔ حمایت یافتہ قطار پھر بھی پرانی ہو تو نجی طور پر Fire TV ماڈل، پلیئر ورژن اور پروفائل کا سیاق بتائیں، پاس ورڈ یا پلے لسٹ پتے نہیں۔"],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Trex IPTV ومتابعة المشاهدة: اختصار عنوان أم المشغّل؟",
+      "excerpt": "قد يعيد عنوان في الشاشة الرئيسية لـFire TV إلى موضع سابق داخل تطبيق متكامل. تحقّق من الاختصار الذي اخترته قبل تعديل المشغّل الموجود لديك.",
+      "seo_title": "Trex IPTV: حدّد اختصار متابعة المشاهدة",
+      "seo_description": "ميّز عنوان متابعة المشاهدة عن اختصار تطبيق المشغّل على Fire TV. افحص دعم التكامل والملف الشخصي وتحديث الصف قبل الإبلاغ عن موضع قديم.",
+      "sections": [
+        {
+          "heading": "حدّد المربع الذي اخترته",
+          "paragraphs": ["يبدأ سؤال متابعة المشاهدة لدى مستخدم Trex IPTV من الشاشة الرئيسية لـFire TV: هل اخترت عنوان برنامج أم فتحت المشغّل الحالي من اختصار التطبيق؟ توثّق Amazon صفًا للتطبيقات المتكاملة يُتوقع فيه أن يعيد اختيار عنوان سبق مشاهدته إلى موضع التشغيل السابق. لا يثبت ذلك أن مشغّلك المحدد يدعم الصف. إذا لم يكن هذا التكامل موثقًا له، فافتحه بالطريقة المعتادة وصف هذا المسار بدلًا من افتراض وجود الميزة فيه."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "افحص الصف والملف الشخصي قبل تغيير التطبيق",
+          "paragraphs": ["بالنسبة إلى تطبيق معروف بدعمه للميزة، تشير Amazon إلى أن غياب عنوان قد يعني أن الصف ينتظر التحديث. انتظر دقيقة أو دقيقتين أولًا. ويذكر دليلها أيضًا الإعدادات، ثم إعدادات الحساب والملف الشخصي، ثم مزامنة محتوى Amazon لتحديث الصف. اتبع الأسماء الموجودة على جهازك. تحقّق من أنك تستخدم ملف Amazon المقصود: يربط التكامل الموثق محتوى الصف بالملف الذي تمت المشاهدة من خلاله، وليس بجميع الملفات على الجهاز."],
+          "items": [], "links": [{"label": "Amazon: استئناف العناوين وفصل الملفات الشخصية", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "قارن مساري الدخول على الجهاز نفسه",
+          "paragraphs": ["أوقف التشغيل الحالي قبل مقارنة اختصار العنوان بفتح المشغّل نفسه بالطريقة المعتادة. دوّن العنوان المختار ومسار الدخول والموضع التقريبي الذي وصلت إليه. الاختلاف بين المسارين مفيد للدعم لكنه لا يفسر السبب وحده. أجر المقارنة على جهاز واحد وبعملية تشغيل واحدة في كل مرة. إذا بقي الصف المدعوم قديمًا، فأرسل خصوصيًا طراز Fire TV وإصدار المشغّل وسياق الملف الشخصي، دون كلمات مرور أو عناوين قوائم تشغيل."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV में देखना जारी रखें: शीर्षक का शॉर्टकट या प्लेयर?",
+      "excerpt": "Fire TV की होम स्क्रीन का शीर्षक किसी एकीकृत ऐप में पुराने स्थान पर ले जा सकता है। मौजूदा प्लेयर बदलने से पहले देखें कि कौन सा शॉर्टकट चुना था।",
+      "seo_title": "Trex IPTV: देखना जारी रखें वाला शॉर्टकट पहचानें",
+      "seo_description": "Fire TV में देखना जारी रखें के शीर्षक और प्लेयर ऐप के शॉर्टकट को अलग पहचानें। पुराने स्थान की रिपोर्ट से पहले समर्थन, प्रोफ़ाइल और पंक्ति की ताज़गी जांचें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि आपने कौन सा टाइल चुना",
+          "paragraphs": ["Trex IPTV के साथ देखना जारी रखें का सवाल Fire TV की होम स्क्रीन से शुरू होता है: क्या आपने कार्यक्रम का शीर्षक चुना या ऐप के शॉर्टकट से मौजूदा प्लेयर खोला? Amazon एकीकृत ऐप के लिए ऐसी पंक्ति बताता है जहां पहले देखा शीर्षक चुनने पर पुराने प्लेबैक स्थान पर लौटना अपेक्षित है। इससे आपके खास प्लेयर में उस पंक्ति का समर्थन साबित नहीं होता। उसका एकीकरण दर्ज न हो तो प्लेयर सामान्य तरीके से खोलें और वही रास्ता बताएं।"],
+          "items": [], "links": []
+        },
+        {
+          "heading": "ऐप बदलने से पहले पंक्ति और प्रोफ़ाइल जांचें",
+          "paragraphs": ["जिस ऐप में इस सुविधा का समर्थन मालूम हो, उसमें Amazon के अनुसार गायब शीर्षक का कारण पंक्ति का ताज़ा होने का इंतज़ार भी हो सकता है। पहले एक या दो मिनट दें। गाइड पंक्ति ताज़ा करने के लिए सेटिंग, खाता और प्रोफ़ाइल सेटिंग, फिर Amazon सामग्री सिंक करने का विकल्प भी बताता है। अपने डिवाइस पर उपलब्ध नामों का पालन करें। सही Amazon प्रोफ़ाइल जांचें: दर्ज एकीकरण में पंक्ति की सामग्री उसी प्रोफ़ाइल से जुड़ती है जिसमें उसे देखा गया था।"],
+          "items": [], "links": [{"label": "Amazon: देखना जारी रखना और प्रोफ़ाइल अलगाव", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+        },
+        {
+          "heading": "उसी डिवाइस पर खोलने के रास्तों की तुलना करें",
+          "paragraphs": ["शीर्षक के शॉर्टकट और उसी प्लेयर को सामान्य तरीके से खोलने की तुलना से पहले मौजूदा प्लेबैक रोकें। चुना शीर्षक, खोलने का रास्ता और पहुंचने का अनुमानित स्थान लिखें। रास्तों का अंतर सहायता के लिए उपयोगी है, पर अकेले कारण नहीं बताता। एक डिवाइस और एक समय में एक प्लेबैक रखें। समर्थित पंक्ति फिर भी पुरानी रहे तो निजी तौर पर Fire TV मॉडल, प्लेयर वर्शन और प्रोफ़ाइल का संदर्भ बताएं, पासवर्ड या प्लेलिस्ट पते नहीं।"],
+          "items": [], "links": []
+        }
+      ]
+    }
+  },
+  "sources": [{"label": "Amazon Fire TV: Continue Watching title entry, row refresh and profile isolation", "url": "https://developer.amazon.com/docs/fire-tv/test-cases-integration.html"}]
+}

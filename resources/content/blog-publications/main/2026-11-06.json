@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-06",
+  "topic": "Distinguish VLC for Android whole-video repeat and A-B loop markers from an unexpected playback restart",
+  "primary_keyword": "IPTV repeat playback",
+  "slug": "main-vlc-android-repeat-ab-loop-restart",
+  "translations": {
+    "en": {
+      "title": "IPTV repeat playback: a VLC loop or an unexpected restart?",
+      "excerpt": "If the same scene returns in VLC for Android, check repeat mode and A-B markers before treating it as an unexpected restart. Compare one existing video at a time.",
+      "seo_title": "IPTV repeat playback: check VLC loop controls",
+      "seo_description": "Check whole-video repeat and A-B loop markers in VLC for Android, then record whether the same scene returns with those controls inactive.",
+      "sections": [
+        {
+          "heading": "Notice exactly where the picture returns",
+          "paragraphs": ["An IPTV repeat playback check begins with the pattern: does a finished video return to its beginning, or does a short passage jump back to the same point? Note the displayed position before and after the jump, if available. Also note whether the player stays open or closes and reopens. These are different observations; a repeated scene alone does not identify a network fault. Keep the same video for the comparison."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Inspect whole-video repeat and A-B markers separately",
+          "paragraphs": ["VideoLAN documents a Repeat mode that repeats the current video and an A-B repeat feature that loops between selected start and end points. Open the video player's additional options and inspect the relevant controls. If an unintended loop is active, disable repeat or remove the A-B markers using the available control. Labels and icons may vary by version. Change only that setting, then observe whether playback passes the former return point."],
+          "items": [], "links": [{"label": "VideoLAN: Android repeat mode and A-B repeat", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Describe a restart that remains after the loop check",
+          "paragraphs": ["The documented loop controls do not establish that every live input can seek or repeat. If a control is unavailable, record that rather than forcing this procedure. If the jump continues with loops inactive, send private support the VLC version, video type, approximate return positions and any error text. State whether the app itself reopened. Keep credentials and playlist addresses out of the report; leave other player settings unchanged during this comparison."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Reproducción IPTV repetida: ¿bucle de VLC o reinicio inesperado?",
+      "excerpt": "Si vuelve la misma escena en VLC para Android, revisa la repetición y las marcas A-B antes de considerarlo un reinicio inesperado. Compara un solo vídeo existente.",
+      "seo_title": "Reproducción IPTV repetida: revisa los bucles de VLC",
+      "seo_description": "Revisa la repetición del vídeo completo y las marcas A-B en VLC para Android. Después comprueba si la escena vuelve con esos controles desactivados.",
+      "sections": [
+        {
+          "heading": "Observa a qué punto vuelve exactamente la imagen",
+          "paragraphs": ["La revisión de una reproducción IPTV repetida comienza por el patrón: ¿un vídeo terminado vuelve al principio o un fragmento corto regresa al mismo punto? Anota la posición mostrada antes y después del salto, si está disponible. Observa también si el reproductor permanece abierto o se cierra y vuelve a abrirse. Son observaciones distintas; una escena repetida no identifica por sí sola un fallo de red. Mantén el mismo vídeo para la comparación."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Revisa por separado la repetición completa y las marcas A-B",
+          "paragraphs": ["VideoLAN documenta un modo de repetición del vídeo actual y una función A-B que repite el tramo entre un inicio y un final seleccionados. Abre las opciones adicionales del reproductor y revisa los controles correspondientes. Si hay un bucle involuntario, desactiva la repetición o elimina las marcas A-B con el control disponible. Los nombres e iconos pueden variar según la versión. Cambia solo ese ajuste y observa si la reproducción supera el antiguo punto de retorno."],
+          "items": [], "links": [{"label": "VideoLAN: repetición y bucles A-B en Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Describe el reinicio que persiste después de comprobar el bucle",
+          "paragraphs": ["Los controles documentados no demuestran que toda entrada en directo permita desplazarse o repetir. Si falta un control, anótalo en lugar de forzar el procedimiento. Si el salto continúa sin bucles activos, envía al soporte privado la versión de VLC, el tipo de vídeo, las posiciones aproximadas y cualquier error. Indica si se reabrió la aplicación. Excluye credenciales y direcciones de listas; conserva los demás ajustes durante la comparación."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Lecture IPTV répétée : boucle VLC ou redémarrage inattendu ?",
+      "excerpt": "Si la même scène revient dans VLC pour Android, vérifiez la répétition et les repères A-B avant de conclure à un redémarrage. Comparez une seule vidéo existante.",
+      "seo_title": "Lecture IPTV répétée : vérifier les boucles de VLC",
+      "seo_description": "Vérifiez la répétition de la vidéo entière et les repères A-B dans VLC pour Android, puis observez si la scène revient avec ces commandes désactivées.",
+      "sections": [
+        {
+          "heading": "Repérez le point exact auquel revient l’image",
+          "paragraphs": ["Pour examiner une lecture IPTV répétée, commencez par son déroulement : une vidéo terminée revient-elle au début, ou un court passage retourne-t-il au même point ? Notez la position affichée avant et après le saut, si elle existe. Observez également si le lecteur reste ouvert ou se ferme puis se rouvre. Ce sont des constats différents ; une scène répétée ne suffit pas à identifier une panne réseau. Gardez la même vidéo pour la comparaison."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Vérifiez séparément la répétition complète et les repères A-B",
+          "paragraphs": ["VideoLAN décrit un mode répétant la vidéo actuelle et une fonction A-B qui boucle entre un début et une fin choisis. Ouvrez les options supplémentaires du lecteur vidéo et examinez les commandes concernées. Si une boucle involontaire est active, désactivez la répétition ou supprimez les repères A-B avec la commande disponible. Les noms et icônes peuvent varier selon la version. Modifiez uniquement ce réglage, puis vérifiez si la lecture dépasse l’ancien point de retour."],
+          "items": [], "links": [{"label": "VideoLAN : répétition et boucle A-B sous Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Décrivez le redémarrage qui persiste après cette vérification",
+          "paragraphs": ["Ces commandes documentées ne prouvent pas que toute entrée en direct permet de parcourir ou de répéter la vidéo. Si une commande manque, signalez-le sans forcer la procédure. Si le saut continue sans boucle active, transmettez en privé la version de VLC, le type de vidéo, les positions approximatives et tout message d’erreur. Précisez si l’application s’est rouverte. Excluez identifiants et adresses de listes ; laissez les autres réglages inchangés pendant la comparaison."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Riproduzione IPTV ripetuta: ciclo di VLC o riavvio inatteso?",
+      "excerpt": "Se la stessa scena ritorna in VLC per Android, controlla ripetizione e marcatori A-B prima di considerarla un riavvio inatteso. Confronta un solo video esistente.",
+      "seo_title": "Riproduzione IPTV ripetuta: controlla i cicli di VLC",
+      "seo_description": "Controlla la ripetizione del video intero e i marcatori A-B in VLC per Android, poi verifica se la scena ritorna con questi comandi disattivati.",
+      "sections": [
+        {
+          "heading": "Osserva il punto preciso a cui torna l’immagine",
+          "paragraphs": ["Per controllare una riproduzione IPTV ripetuta, parti dal comportamento: un video concluso torna all’inizio oppure un breve passaggio ritorna sempre allo stesso punto? Annota la posizione mostrata prima e dopo il salto, se disponibile. Osserva anche se il lettore rimane aperto o si chiude e si riapre. Sono osservazioni diverse; una scena ripetuta non identifica da sola un guasto di rete. Mantieni lo stesso video per il confronto."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Controlla separatamente ripetizione completa e marcatori A-B",
+          "paragraphs": ["VideoLAN documenta una modalità che ripete il video corrente e una funzione A-B che riproduce in ciclo il tratto fra un inizio e una fine selezionati. Apri le opzioni aggiuntive del lettore video e controlla i comandi pertinenti. Se è attivo un ciclo involontario, disattiva la ripetizione o rimuovi i marcatori A-B con il comando disponibile. Nomi e icone possono cambiare secondo la versione. Modifica solo questa impostazione e osserva se la riproduzione supera il precedente punto di ritorno."],
+          "items": [], "links": [{"label": "VideoLAN: ripetizione e ciclo A-B su Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Descrivi il riavvio che rimane dopo il controllo",
+          "paragraphs": ["I comandi documentati non dimostrano che ogni ingresso in diretta consenta di spostarsi o ripetere. Se un comando non è disponibile, annotalo senza forzare la procedura. Se il salto continua senza cicli attivi, comunica privatamente versione di VLC, tipo di video, posizioni approssimative ed eventuali errori. Specifica se l’app si è riaperta. Escludi credenziali e indirizzi delle playlist; mantieni invariate le altre impostazioni durante il confronto."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV herhaalt zich: een VLC-lus of onverwacht opnieuw starten?",
+      "excerpt": "Keert dezelfde scène terug in VLC voor Android? Controleer herhalen en A-B-markeringen voordat je het een onverwachte herstart noemt. Vergelijk één bestaande video.",
+      "seo_title": "IPTV herhaalt zich: controleer de lussen in VLC",
+      "seo_description": "Controleer het herhalen van de hele video en A-B-markeringen in VLC voor Android. Kijk daarna of de scène terugkomt met deze functies uitgeschakeld.",
+      "sections": [
+        {
+          "heading": "Kijk precies naar welk punt het beeld terugkeert",
+          "paragraphs": ["Begin bij herhalende IPTV-weergave met het patroon: gaat een afgelopen video terug naar het begin, of springt een kort fragment steeds naar hetzelfde punt? Noteer indien beschikbaar de weergegeven positie vóór en na de sprong. Kijk ook of de speler openblijft of sluit en weer opent. Dat zijn verschillende waarnemingen; een herhaalde scène wijst op zichzelf geen netwerkfout aan. Gebruik voor de vergelijking steeds dezelfde video."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Controleer volledig herhalen en A-B-markeringen apart",
+          "paragraphs": ["VideoLAN beschrijft een herhaalstand voor de huidige video en een A-B-functie die het deel tussen een gekozen begin- en eindpunt herhaalt. Open de extra opties van de videospeler en bekijk de betreffende bediening. Staat er onbedoeld een lus aan, schakel herhalen dan uit of verwijder de A-B-markeringen met de beschikbare knop. Namen en pictogrammen kunnen per versie verschillen. Wijzig alleen die instelling en kijk of de weergave voorbij het eerdere terugkeerpunt komt."],
+          "items": [], "links": [{"label": "VideoLAN: herhaalstand en A-B-lus op Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Beschrijf opnieuw starten dat na de controle blijft optreden",
+          "paragraphs": ["Deze beschreven functies betekenen niet dat iedere livebron zoeken of herhalen ondersteunt. Ontbreekt een knop, noteer dat dan zonder de procedure te forceren. Blijft de sprong bestaan zonder actieve lussen, stuur privéondersteuning de VLC-versie, het videotype, de geschatte posities en eventuele foutmelding. Vermeld of de app zelf opnieuw opende. Deel geen inloggegevens of afspeellijstadressen; laat andere spelerinstellingen tijdens deze vergelijking staan."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Reprodução IPTV repetida: ciclo do VLC ou reinício inesperado?",
+      "excerpt": "Se a mesma cena volta no VLC para Android, confira a repetição e os marcadores A-B antes de considerar um reinício inesperado. Compare um único vídeo existente.",
+      "seo_title": "Reprodução IPTV repetida: confira os ciclos do VLC",
+      "seo_description": "Confira a repetição do vídeo inteiro e os marcadores A-B no VLC para Android. Depois veja se a cena volta com esses controles desativados.",
+      "sections": [
+        {
+          "heading": "Observe exatamente a que ponto a imagem retorna",
+          "paragraphs": ["A verificação de uma reprodução IPTV repetida começa pelo padrão: um vídeo concluído volta ao início ou um trecho curto retorna sempre ao mesmo ponto? Anote a posição exibida antes e depois do salto, se disponível. Observe também se o reprodutor continua aberto ou fecha e abre novamente. São observações diferentes; uma cena repetida não identifica, sozinha, uma falha de rede. Mantenha o mesmo vídeo durante a comparação."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Confira separadamente a repetição completa e os marcadores A-B",
+          "paragraphs": ["A VideoLAN documenta um modo que repete o vídeo atual e uma função A-B que repete o trecho entre um início e um fim selecionados. Abra as opções adicionais do reprodutor e examine os controles correspondentes. Se houver um ciclo involuntário, desative a repetição ou remova os marcadores A-B com o controle disponível. Nomes e ícones podem variar conforme a versão. Altere apenas esse ajuste e observe se a reprodução ultrapassa o antigo ponto de retorno."],
+          "items": [], "links": [{"label": "VideoLAN: repetição e ciclo A-B no Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Descreva o reinício que continua após a verificação",
+          "paragraphs": ["Os controles documentados não comprovam que toda entrada ao vivo permita avançar, voltar ou repetir. Se um controle não estiver disponível, registre isso em vez de forçar o procedimento. Se o salto continuar sem ciclos ativos, envie ao suporte privado a versão do VLC, o tipo de vídeo, as posições aproximadas e qualquer erro. Informe se o próprio aplicativo reabriu. Exclua credenciais e endereços de listas; mantenha os demais ajustes durante a comparação."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Повтор IPTV: цикл VLC или неожиданный перезапуск?",
+      "excerpt": "Если в VLC для Android возвращается одна сцена, проверьте повтор и метки A-B, прежде чем считать это перезапуском. Сравнивайте поведение на одном имеющемся видео.",
+      "seo_title": "Повтор IPTV: проверьте циклы в VLC для Android",
+      "seo_description": "Проверьте повтор всего видео и метки A-B в VLC для Android, затем отметьте, возвращается ли сцена при отключённых функциях повтора.",
+      "sections": [
+        {
+          "heading": "Заметьте, к какой именно позиции возвращается изображение",
+          "paragraphs": ["Проверяя повтор IPTV, сначала определите закономерность: завершённое видео возвращается к началу или короткий фрагмент перескакивает к одной и той же позиции? Если счётчик доступен, запишите время до и после скачка. Также отметьте, остаётся ли проигрыватель открытым или закрывается и открывается заново. Это разные наблюдения; сама по себе повторяющаяся сцена не указывает на сбой сети. Для сравнения используйте одно и то же видео."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "Проверьте отдельно повтор всего видео и метки A-B",
+          "paragraphs": ["VideoLAN описывает режим повтора текущего видео и функцию A-B, которая зацикливает отрезок между выбранными началом и концом. Откройте дополнительные параметры видеопроигрывателя и проверьте соответствующие элементы управления. Если цикл включён случайно, отключите повтор или удалите метки A-B доступной кнопкой. Названия и значки зависят от версии. Измените только этот параметр, затем посмотрите, проходит ли воспроизведение прежнюю точку возврата без повторного скачка назад."],
+          "items": [], "links": [{"label": "VideoLAN: режим повтора и цикл A-B на Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "Опишите перезапуск, который остаётся после проверки",
+          "paragraphs": ["Наличие этих функций в документации не означает, что любой прямой поток допускает перемотку или повтор. Если элемента управления нет, отметьте это, не пытаясь принудительно выполнить процедуру. Если скачок остаётся при отключённых циклах, передайте в личном обращении версию VLC, тип видео, примерные позиции и текст ошибки. Уточните, открылось ли само приложение заново. Не включайте учётные данные и адреса плейлистов; остальные настройки во время сравнения оставьте прежними."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV بار بار چلنا: VLC کا لوپ یا غیر متوقع دوبارہ آغاز؟",
+      "excerpt": "VLC برائے Android میں ایک منظر واپس آئے تو اسے غیر متوقع دوبارہ آغاز سمجھنے سے پہلے تکرار اور A-B نشان دیکھیں۔ ایک ہی موجودہ ویڈیو کا موازنہ کریں۔",
+      "seo_title": "IPTV کی تکرار: VLC میں لوپ کے کنٹرول دیکھیں",
+      "seo_description": "VLC برائے Android میں پوری ویڈیو کی تکرار اور A-B نشان دیکھیں، پھر نوٹ کریں کہ یہ کنٹرول بند ہونے کے باوجود وہی منظر واپس آتا ہے یا نہیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کہ تصویر کس مقام پر واپس آتی ہے",
+          "paragraphs": ["IPTV بار بار چلنے کی جانچ میں پہلے انداز دیکھیں: کیا ختم ہونے والی ویڈیو شروع پر لوٹتی ہے، یا مختصر حصہ بار بار ایک ہی مقام پر آتا ہے؟ دکھایا گیا وقت دستیاب ہو تو چھلانگ سے پہلے اور بعد کی قدر لکھیں۔ یہ بھی دیکھیں کہ پلیئر کھلا رہتا ہے یا بند ہو کر دوبارہ کھلتا ہے۔ یہ الگ مشاہدات ہیں؛ صرف منظر دہرانا نیٹ ورک کی خرابی ثابت نہیں کرتا۔ موازنے کے لیے وہی ویڈیو رکھیں۔"],
+          "items": [], "links": []
+        },
+        {
+          "heading": "پوری ویڈیو کی تکرار اور A-B نشان الگ دیکھیں",
+          "paragraphs": ["VideoLAN موجودہ ویڈیو دہرانے کا موڈ اور منتخب ابتدائی اور آخری مقام کے درمیان حصہ دہرانے کی A-B سہولت بیان کرتا ہے۔ ویڈیو پلیئر کے اضافی اختیارات کھولیں اور متعلقہ کنٹرول دیکھیں۔ غیر ارادی لوپ فعال ہو تو دستیاب کنٹرول سے تکرار بند کریں یا A-B نشان ہٹائیں۔ ورژن کے لحاظ سے نام اور نشان مختلف ہو سکتے ہیں۔ صرف یہی ترتیب بدلیں، پھر دیکھیں کہ پلے بیک پہلے واپسی والے مقام سے آگے گزرتا ہے یا نہیں۔"],
+          "items": [], "links": [{"label": "VideoLAN: Android میں تکرار اور A-B لوپ", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "لوپ کی جانچ کے بعد بھی ہونے والا دوبارہ آغاز بیان کریں",
+          "paragraphs": ["دستاویز میں لوپ کنٹرول ہونے کا مطلب یہ نہیں کہ ہر براہِ راست ویڈیو میں آگے پیچھے جانا یا دہرانا ممکن ہے۔ کنٹرول موجود نہ ہو تو زبردستی طریقہ آزمانے کے بجائے اسے نوٹ کریں۔ لوپ بند ہونے پر بھی چھلانگ آئے تو نجی سپورٹ کو VLC ورژن، ویڈیو کی نوعیت، واپسی کے اندازاً مقامات اور خرابی کا متن بھیجیں۔ بتائیں کہ ایپ خود دوبارہ کھلی یا نہیں۔ لاگ اِن معلومات اور پلے لسٹ پتے نہ دیں؛ اس موازنے میں دوسری ترتیبات برقرار رکھیں۔"],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تكرار تشغيل IPTV: حلقة في VLC أم إعادة بدء غير متوقعة؟",
+      "excerpt": "إذا عاد المشهد نفسه في VLC لنظام Android، فافحص التكرار وعلامات A-B قبل اعتباره إعادة بدء غير متوقعة. قارن باستخدام فيديو واحد موجود لديك.",
+      "seo_title": "تكرار تشغيل IPTV: افحص أدوات الحلقة في VLC",
+      "seo_description": "افحص تكرار الفيديو كاملًا وعلامات A-B في VLC لنظام Android، ثم سجّل هل يعود المشهد نفسه بعد تعطيل أدوات التكرار هذه.",
+      "sections": [
+        {
+          "heading": "لاحظ الموضع الدقيق الذي تعود إليه الصورة",
+          "paragraphs": ["يبدأ فحص تكرار تشغيل IPTV بملاحظة النمط: هل يعود الفيديو المكتمل إلى بدايته، أم يقفز مقطع قصير إلى الموضع نفسه؟ دوّن الموضع المعروض قبل القفزة وبعدها إن كان متاحًا. لاحظ أيضًا هل يبقى المشغّل مفتوحًا أم يُغلق ويُفتح مجددًا. هذه ملاحظات مختلفة؛ فعودة المشهد وحدها لا تحدد عطلًا في الشبكة. استخدم الفيديو نفسه طوال المقارنة، حتى يكون التغير الذي تلاحظه متعلقًا بالحالة نفسها."],
+          "items": [], "links": []
+        },
+        {
+          "heading": "افحص تكرار الفيديو كاملًا وعلامات A-B كلًا على حدة",
+          "paragraphs": ["توثّق VideoLAN وضعًا لتكرار الفيديو الحالي وميزة A-B لتكرار الجزء بين نقطتي بداية ونهاية مختارتين. افتح الخيارات الإضافية لمشغّل الفيديو وافحص الأدوات المعنية. إن كانت حلقة غير مقصودة نشطة، فعطّل التكرار أو أزل علامات A-B بالأداة المتاحة. قد تختلف الأسماء والرموز بحسب الإصدار المثبّت. غيّر هذا الإعداد وحده، ثم راقب هل يتجاوز التشغيل نقطة العودة السابقة دون أن يقفز إلى الخلف مجددًا."],
+          "items": [], "links": [{"label": "VideoLAN: وضع التكرار وحلقة A-B على Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "صف إعادة البدء التي تستمر بعد فحص الحلقة",
+          "paragraphs": ["وجود أدوات التكرار في التوثيق لا يعني أن كل مصدر مباشر يتيح الانتقال الزمني أو التكرار. إذا لم تتوفر أداة، فسجّل ذلك بدل فرض الإجراء. إذا استمرت القفزة مع تعطيل الحلقات، فأرسل إلى الدعم الخاص إصدار VLC ونوع الفيديو ومواضع العودة التقريبية ونص الخطأ إن وجد. وضّح هل فُتح التطبيق نفسه مجددًا. استبعد بيانات الدخول وعناوين القوائم؛ واترك إعدادات المشغّل الأخرى دون تغيير أثناء المقارنة."],
+          "items": [], "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV बार-बार चलना: VLC का लूप या अचानक दोबारा शुरुआत?",
+      "excerpt": "VLC for Android में वही दृश्य लौटे तो उसे अचानक दोबारा शुरुआत मानने से पहले रिपीट और A-B निशान देखें। एक ही मौजूदा वीडियो से तुलना करें।",
+      "seo_title": "IPTV की पुनरावृत्ति: VLC के लूप नियंत्रण जांचें",
+      "seo_description": "VLC for Android में पूरे वीडियो का रिपीट और A-B निशान जांचें। फिर नोट करें कि ये नियंत्रण बंद होने पर भी वही दृश्य लौटता है या नहीं।",
+      "sections": [
+        {
+          "heading": "देखें कि तस्वीर ठीक किस जगह वापस आती है",
+          "paragraphs": ["IPTV बार-बार चलने की जांच में पहले उसका ढंग देखें: क्या समाप्त वीडियो शुरुआत पर लौटता है या छोटा हिस्सा बार-बार एक ही जगह आता है? समय दिखता हो तो छलांग से पहले और बाद की स्थिति लिखें। यह भी देखें कि प्लेयर खुला रहता है या बंद होकर फिर खुलता है। ये अलग अवलोकन हैं; केवल दृश्य दोहराना नेटवर्क की खराबी की पहचान नहीं करता। तुलना के लिए वही वीडियो रखें।"],
+          "items": [], "links": []
+        },
+        {
+          "heading": "पूरे वीडियो का रिपीट और A-B निशान अलग जांचें",
+          "paragraphs": ["VideoLAN मौजूदा वीडियो को दोहराने वाला मोड और चुने हुए शुरुआती व आखिरी बिंदुओं के बीच हिस्सा दोहराने वाली A-B सुविधा बताता है। वीडियो प्लेयर के अतिरिक्त विकल्प खोलकर संबंधित नियंत्रण देखें। अनचाहा लूप चालू हो तो उपलब्ध नियंत्रण से रिपीट बंद करें या A-B निशान हटाएं। वर्शन के अनुसार नाम और चिह्न बदल सकते हैं। केवल यही सेटिंग बदलें और देखें कि प्लेबैक पहले लौटने वाली जगह से आगे निकलता है या नहीं।"],
+          "items": [], "links": [{"label": "VideoLAN: Android में रिपीट और A-B लूप", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+        },
+        {
+          "heading": "लूप जांचने के बाद भी होने वाली दोबारा शुरुआत बताएं",
+          "paragraphs": ["दस्तावेज़ में लूप नियंत्रण होने का अर्थ यह नहीं कि हर लाइव स्रोत में आगे-पीछे जाना या दोहराना संभव है। नियंत्रण न मिले तो प्रक्रिया जबरन आज़माने के बजाय उसे नोट करें। लूप बंद होने पर भी छलांग लगे तो निजी सहायता को VLC वर्शन, वीडियो का प्रकार, लौटने की अनुमानित स्थितियां और त्रुटि का पाठ भेजें। बताएं कि ऐप खुद फिर खुला था या नहीं। लॉगिन जानकारी और प्लेलिस्ट पते न दें; तुलना के दौरान बाकी सेटिंग वैसी ही रखें।"],
+          "items": [], "links": []
+        }
+      ]
+    }
+  },
+  "sources": [{"label": "VideoLAN Android video player: repeat mode and A-B repeat markers", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+}

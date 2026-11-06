@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-06",
+  "topic": "Identify the Google Voice Remote volume-button target and compare the original equipment remote before changing Get IPTV sound levels",
+  "primary_keyword": "Get IPTV volume-button setup",
+  "slug": "getiptv-google-remote-volume-button-device-target",
+  "translations": {
+    "en": {
+      "title": "Get IPTV volume-button setup: which device should respond?",
+      "excerpt": "When menus respond but volume does not, identify the equipment the Google Voice Remote should control. Compare its target with the original equipment remote.",
+      "seo_title": "Get IPTV: check the Google Voice Remote volume target",
+      "seo_description": "Check Get IPTV volume-button setup on Chromecast or Google TV Streamer. Identify the selected TV, soundbar or streaming-device target before changing sound levels.",
+      "sections": [
+        {
+          "heading": "Identify the intended volume target",
+          "paragraphs": [
+            "Get IPTV volume-button setup begins by identifying what should become louder: the television, receiver, soundbar or streaming device. Write down the equipment actually producing sound. If the Google TV menus respond to the directional buttons but volume does not change, record these as two different observations. A working menu button does not by itself identify the volume target. Avoid repeatedly raising levels while the target is unclear."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the remote-button configuration",
+          "paragraphs": [
+            "On Chromecast with Google TV or Google TV Streamer, Google’s official guide describes selecting the device controlled by the remote’s volume buttons. Open All settings, then Remotes & Accessories and Set up remote buttons, using the labels your device displays. Check the selected volume device before changing it. Follow the on-screen sound check at a comfortable level, point the remote at the intended equipment and answer the test honestly; some models are unsupported."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help: set up remote volume buttons",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the original equipment remote",
+          "paragraphs": [
+            "Google also documents that streaming-device volume and TV volume can differ. Use the original TV or soundbar remote to check that equipment’s mute state and a modest listening level. Then return to the same programme and compare one control at a time. If help is needed, report the streaming-device model, selected volume target and whether the original remote changes the sound. This observation is more useful than simply saying that the IPTV player has no volume."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help: sound and device volume settings",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: ¿qué dispositivo debe controlar el botón de volumen?",
+      "excerpt": "Si los menús responden pero el volumen no, identifica qué equipo debe controlar el mando de Google. Compara su destino con el mando original del equipo.",
+      "seo_title": "Get IPTV: revisa el destino del volumen del mando de Google",
+      "seo_description": "Revisa los botones de volumen de Get IPTV en Chromecast o Google TV Streamer. Identifica el televisor, barra o dispositivo elegido antes de cambiar niveles.",
+      "sections": [
+        {
+          "heading": "Identifica el destino del control de volumen",
+          "paragraphs": [
+            "La configuración del volumen para Get IPTV empieza por identificar qué debería sonar más alto: el televisor, receptor, barra de sonido o dispositivo de reproducción. Anota qué equipo emite realmente el sonido. Si los menús de Google TV responden a los botones direccionales pero el volumen no cambia, registra ambas observaciones por separado. Un botón de navegación que funciona no identifica por sí solo el destino del volumen. Evita subir el nivel repetidamente mientras no esté claro."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la configuración de los botones del mando",
+          "paragraphs": [
+            "Para Chromecast con Google TV o Google TV Streamer, la guía oficial de Google explica cómo elegir el equipo que controlan los botones de volumen. Abre Todos los ajustes, Mandos y accesorios y Configurar botones del mando, siguiendo las etiquetas que muestre tu dispositivo. Comprueba el equipo de volumen seleccionado antes de cambiarlo. Sigue la prueba de sonido en pantalla a un nivel cómodo, apunta al equipo previsto e indica el resultado real; algunos modelos no son compatibles."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google: configurar los botones de volumen",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara con el mando original del equipo",
+          "paragraphs": [
+            "Google también explica que el volumen del dispositivo de reproducción y el del televisor pueden diferir. Usa el mando original del televisor o de la barra para comprobar el silencio y un nivel de escucha moderado. Vuelve al mismo programa y compara un control cada vez. Si necesitas ayuda, indica el modelo del dispositivo, el destino de volumen seleccionado y si el mando original cambia el sonido. Esta observación resulta más útil que decir simplemente que el reproductor IPTV no tiene volumen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google: ajustes de sonido y volumen del dispositivo",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : quel appareil doit répondre au bouton de volume ?",
+      "excerpt": "Si les menus répondent mais pas le volume, identifiez l’appareil visé par la télécommande Google. Comparez avec la télécommande d’origine de cet équipement.",
+      "seo_title": "Get IPTV : vérifier l’appareil visé par le volume",
+      "seo_description": "Vérifiez les boutons de volume Get IPTV sur Chromecast ou Google TV Streamer. Identifiez le téléviseur, la barre ou le lecteur sélectionné avant de changer le niveau.",
+      "sections": [
+        {
+          "heading": "Identifiez l’appareil dont le volume doit changer",
+          "paragraphs": [
+            "Le réglage des boutons de volume pour Get IPTV commence par identifier ce qui doit devenir plus fort : téléviseur, amplificateur, barre de son ou appareil de streaming. Notez l’équipement qui produit réellement le son. Si les menus Google TV répondent aux flèches mais que le volume reste inchangé, consignez ces deux observations séparément. Un bouton de navigation fonctionnel ne désigne pas à lui seul l’appareil visé par le volume. Évitez d’augmenter le niveau à répétition tant que ce point reste flou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez la configuration des boutons",
+          "paragraphs": [
+            "Pour Chromecast avec Google TV ou Google TV Streamer, le guide officiel Google explique comment choisir l’appareil commandé par les boutons de volume. Ouvrez Tous les paramètres, Télécommandes et accessoires, puis la configuration des boutons, selon les intitulés affichés sur votre appareil. Vérifiez l’appareil sélectionné avant de le modifier. Suivez le test sonore à l’écran à un niveau confortable, pointez vers l’équipement prévu et indiquez le résultat réel ; certains modèles ne sont pas compatibles."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google : configurer les boutons de volume",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez avec la télécommande d’origine",
+          "paragraphs": [
+            "Google précise aussi que le volume de l’appareil de streaming et celui du téléviseur peuvent différer. Utilisez la télécommande d’origine du téléviseur ou de la barre de son pour vérifier le mode muet et un niveau d’écoute modéré. Revenez au même programme et comparez une commande à la fois. Pour demander de l’aide, indiquez le modèle du lecteur, l’appareil sélectionné pour le volume et si sa télécommande d’origine modifie le son. Ces observations sont plus utiles que le simple constat d’un lecteur IPTV sans volume."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google : paramètres audio et volume de l’appareil",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: quale dispositivo deve rispondere ai tasti volume?",
+      "excerpt": "Se i menu rispondono ma il volume no, identifica l’apparecchio che il telecomando Google deve controllare. Confrontalo con il telecomando originale dell’apparecchio.",
+      "seo_title": "Get IPTV: controlla il dispositivo dei tasti volume",
+      "seo_description": "Controlla i tasti volume per Get IPTV su Chromecast o Google TV Streamer. Identifica TV, soundbar o dispositivo selezionato prima di modificare i livelli audio.",
+      "sections": [
+        {
+          "heading": "Identifica l’apparecchio da controllare",
+          "paragraphs": [
+            "La configurazione dei tasti volume per Get IPTV inizia dall’apparecchio che dovrebbe suonare più forte: televisore, ricevitore, soundbar o dispositivo di riproduzione. Annota quale apparecchio produce realmente il suono. Se i menu di Google TV rispondono ai tasti direzionali ma il volume non cambia, registra le due osservazioni separatamente. Un tasto di navigazione funzionante non identifica da solo il destinatario del volume. Evita di alzare ripetutamente i livelli finché questo punto non è chiaro."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla la configurazione dei tasti",
+          "paragraphs": [
+            "Per Chromecast con Google TV o Google TV Streamer, la guida ufficiale Google descrive come selezionare il dispositivo controllato dai tasti volume. Apri Tutte le impostazioni, Telecomandi e accessori e la configurazione dei tasti del telecomando, seguendo le etichette del tuo dispositivo. Controlla l’apparecchio selezionato prima di cambiarlo. Segui la prova audio sullo schermo a un livello confortevole, punta verso l’apparecchio previsto e indica il risultato effettivo; alcuni modelli non sono compatibili."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google: configurare i tasti volume del telecomando",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta il telecomando originale dell’apparecchio",
+          "paragraphs": [
+            "Google spiega anche che il volume del dispositivo di riproduzione e quello del televisore possono differire. Usa il telecomando originale di TV o soundbar per controllare l’audio disattivato e un livello di ascolto moderato. Poi torna allo stesso programma e confronta un comando alla volta. Se serve assistenza, indica modello del dispositivo, apparecchio selezionato per il volume e se il telecomando originale modifica il suono. È un’osservazione più utile del semplice dire che il lettore IPTV non ha volume."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google: impostazioni audio e volume del dispositivo",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: welk apparaat moeten de volumeknoppen bedienen?",
+      "excerpt": "Reageren de menu’s wel maar het volume niet, bepaal dan welk apparaat de Google-afstandsbediening moet bedienen. Vergelijk met de oorspronkelijke afstandsbediening.",
+      "seo_title": "Get IPTV: doelapparaat voor Google-volumeknoppen bekijken",
+      "seo_description": "Controleer de Get IPTV-volumeknoppen op Chromecast of Google TV Streamer. Bekijk de gekozen tv, soundbar of streamer voordat je geluidsniveaus verandert.",
+      "sections": [
+        {
+          "heading": "Bepaal welk apparaat harder moet klinken",
+          "paragraphs": [
+            "Het instellen van de volumeknoppen voor Get IPTV begint bij de vraag wat harder moet klinken: televisie, receiver, soundbar of streamingapparaat. Noteer welk apparaat het geluid werkelijk afspeelt. Reageren de Google TV-menu’s op de richtingstoetsen maar verandert het volume niet, leg die twee waarnemingen dan apart vast. Een werkende menuknop bepaalt niet vanzelf welk apparaat de volumeknoppen bedienen. Verhoog het niveau niet herhaaldelijk zolang dat onduidelijk is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de instellingen van de afstandsbedieningsknoppen",
+          "paragraphs": [
+            "Voor Chromecast met Google TV of Google TV Streamer beschrijft de officiële Google-hulp hoe je het apparaat voor de volumeknoppen kiest. Open Alle instellingen, Afstandsbedieningen en accessoires en de instellingen voor afstandsbedieningsknoppen; volg de labels op je eigen apparaat. Controleer het geselecteerde volumeapparaat voordat je het verandert. Volg de geluidstest op het scherm op een aangenaam niveau, richt op het bedoelde apparaat en geef het echte resultaat aan; sommige modellen worden niet ondersteund."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Help: volumeknoppen van de afstandsbediening instellen",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk met de oorspronkelijke afstandsbediening",
+          "paragraphs": [
+            "Google legt ook uit dat het volume van het streamingapparaat kan verschillen van het tv-volume. Controleer met de oorspronkelijke afstandsbediening van tv of soundbar of dempen actief is en kies een bescheiden luistervolume. Ga terug naar hetzelfde programma en vergelijk één bediening tegelijk. Vermeld bij een hulpvraag het model van de streamer, het gekozen volumeapparaat en of de oorspronkelijke afstandsbediening het geluid verandert. Dat is nuttiger dan alleen melden dat de IPTV-speler geen volume heeft."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Help: geluidsinstellingen en apparaatvolume",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: que aparelho deve responder aos botões de volume?",
+      "excerpt": "Se os menus respondem mas o volume não, identifique o aparelho que o comando Google deve controlar. Compare com o comando original desse equipamento.",
+      "seo_title": "Get IPTV: conferir o aparelho controlado pelo volume",
+      "seo_description": "Confira os botões de volume do Get IPTV no Chromecast ou Google TV Streamer. Identifique a TV, barra de som ou dispositivo escolhido antes de alterar os níveis.",
+      "sections": [
+        {
+          "heading": "Identifique o aparelho cujo volume quer alterar",
+          "paragraphs": [
+            "A configuração dos botões de volume para Get IPTV começa por identificar o que deve ficar mais alto: televisor, recetor, barra de som ou dispositivo de transmissão. Anote o equipamento que realmente produz o som. Se os menus do Google TV respondem aos botões direcionais mas o volume não muda, registe essas duas observações separadamente. Um botão de navegação funcional não identifica, por si só, o aparelho controlado pelo volume. Evite aumentar repetidamente os níveis enquanto isso não estiver claro."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a configuração dos botões do comando",
+          "paragraphs": [
+            "Para Chromecast com Google TV ou Google TV Streamer, a ajuda oficial da Google descreve como selecionar o aparelho controlado pelos botões de volume. Abra Todas as definições, Comandos e acessórios e a configuração dos botões do comando, seguindo os nomes apresentados no seu dispositivo. Confira o aparelho selecionado antes de o alterar. Siga o teste de som no ecrã a um nível confortável, aponte para o equipamento pretendido e indique o resultado real; alguns modelos não são compatíveis."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda da Google: configurar os botões de volume do comando",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare com o comando original do equipamento",
+          "paragraphs": [
+            "A Google também explica que o volume do dispositivo de transmissão e o do televisor podem ser diferentes. Use o comando original do televisor ou da barra de som para verificar o silêncio e um nível de audição moderado. Depois volte ao mesmo programa e compare um controlo de cada vez. Se precisar de ajuda, indique o modelo do dispositivo, o aparelho escolhido para o volume e se o comando original altera o som. Isso é mais útil do que dizer apenas que o leitor IPTV não tem volume."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda da Google: definições de som e volume do dispositivo",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: каким устройством управляют кнопки громкости?",
+      "excerpt": "Если меню реагирует, а громкость нет, определите, каким устройством должен управлять пульт Google. Сравните его с оригинальным пультом этого оборудования.",
+      "seo_title": "Get IPTV: проверьте устройство для кнопок громкости",
+      "seo_description": "Проверьте кнопки громкости Get IPTV на Chromecast или Google TV Streamer. Определите выбранный телевизор, саундбар или проигрыватель до изменения уровня звука.",
+      "sections": [
+        {
+          "heading": "Определите устройство для регулировки громкости",
+          "paragraphs": [
+            "Настройка кнопок громкости для Get IPTV начинается с определения того, что должно звучать громче: телевизор, ресивер, саундбар или устройство потокового воспроизведения. Запишите, какое оборудование фактически воспроизводит звук. Если меню Google TV реагирует на стрелки, но громкость не меняется, зафиксируйте эти наблюдения отдельно. Работающая кнопка меню сама по себе не определяет устройство для регулировки громкости. Не повышайте уровень многократно, пока это остаётся неясным."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте настройку кнопок пульта",
+          "paragraphs": [
+            "Для Chromecast с Google TV или Google TV Streamer официальная справка Google описывает выбор устройства, которым управляют кнопки громкости. Откройте все настройки, раздел пультов и аксессуаров, затем настройку кнопок пульта, ориентируясь на названия на своём устройстве. Проверьте выбранное оборудование до изменения. Выполните звуковую проверку на экране при комфортном уровне, направьте пульт на нужное устройство и укажите фактический результат; некоторые модели не поддерживаются."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google: настройка кнопок громкости пульта",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните с оригинальным пультом оборудования",
+          "paragraphs": [
+            "Google также поясняет, что громкость устройства потокового воспроизведения и телевизора может различаться. Оригинальным пультом телевизора или саундбара проверьте отключение звука и умеренный уровень прослушивания. Затем вернитесь к той же программе и сравнивайте по одному органу управления. Для обращения за помощью укажите модель проигрывателя, выбранное устройство громкости и меняется ли звук оригинальным пультом. Это полезнее, чем просто сообщить, что регулировка громкости в IPTV-проигрывателе не работает."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google: настройки звука и громкости устройства",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: آواز کے بٹن سے کس آلے کو جواب دینا چاہیے؟",
+      "excerpt": "مینو چلیں مگر آواز نہ بدلے تو پہچانیں کہ Google ریموٹ کو کس آلے پر کام کرنا چاہیے۔ اس کا موازنہ اسی آلے کے اصل ریموٹ سے کریں۔",
+      "seo_title": "Get IPTV: Google ریموٹ کے آواز والے آلے کی جانچ",
+      "seo_description": "Chromecast یا Google TV Streamer پر Get IPTV کے آواز کے بٹن دیکھیں۔ سطح بدلنے سے پہلے منتخب ٹی وی، ساؤنڈ بار یا اسٹریمنگ آلے کی شناخت کریں۔",
+      "sections": [
+        {
+          "heading": "آواز بدلنے کے مطلوبہ آلے کی شناخت کریں",
+          "paragraphs": [
+            "Get IPTV کے آواز والے بٹن کی ترتیب اس شناخت سے شروع ہوتی ہے کہ کس کی آواز بڑھنی چاہیے: ٹیلی وژن، ریسیور، ساؤنڈ بار یا اسٹریمنگ آلہ۔ واقعی آواز پیدا کرنے والا سامان نوٹ کریں۔ Google TV کے مینو سمتی بٹنوں سے چلیں مگر آواز نہ بدلے تو دونوں باتیں الگ لکھیں۔ مینو کا بٹن چلنے سے یہ معلوم نہیں ہوتا کہ آواز والا بٹن کس آلے کو کنٹرول کر رہا ہے۔ جب تک یہ واضح نہ ہو، بار بار آواز بڑھانے سے گریز کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ریموٹ کے بٹنوں کی ترتیب دیکھیں",
+          "paragraphs": [
+            "Chromecast with Google TV یا Google TV Streamer کے لیے Google کی سرکاری مدد آواز کے بٹنوں سے چلنے والا آلہ منتخب کرنا بتاتی ہے۔ تمام ترتیبات، ریموٹ اور لوازمات، پھر ریموٹ کے بٹنوں کی ترتیب کھولیں؛ اپنے آلے پر دکھنے والے ناموں کی پیروی کریں۔ بدلنے سے پہلے آواز کے لیے منتخب آلہ دیکھیں۔ اسکرین پر آواز کی جانچ آرام دہ سطح پر کریں، ریموٹ مطلوبہ سامان کی طرف کریں اور اصل نتیجہ بتائیں؛ کچھ ماڈلز کے ساتھ یہ سہولت کام نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google مدد: ریموٹ کے آواز والے بٹن ترتیب دیں",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "سامان کے اصل ریموٹ سے موازنہ کریں",
+          "paragraphs": [
+            "Google یہ بھی بتاتا ہے کہ اسٹریمنگ آلے اور ٹی وی کی آواز کی سطح مختلف ہو سکتی ہے۔ ٹی وی یا ساؤنڈ بار کے اصل ریموٹ سے آواز بند ہونے کی حالت اور مناسب ہلکی سطح دیکھیں۔ پھر اسی پروگرام پر واپس آ کر ایک وقت میں ایک کنٹرول کا موازنہ کریں۔ مدد چاہیے تو اسٹریمنگ آلے کا ماڈل، آواز کے لیے منتخب آلہ اور اصل ریموٹ سے آواز بدلتی ہے یا نہیں، بتائیں۔ یہ صرف یہ کہنے سے زیادہ مفید ہے کہ IPTV پلیئر کی آواز نہیں ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google مدد: آواز اور آلے کی سطح کی ترتیبات",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: أي جهاز يجب أن يستجيب لأزرار الصوت؟",
+      "excerpt": "إذا استجابت القوائم ولم يتغير الصوت، حدّد الجهاز الذي يجب أن يتحكم به جهاز Google عن بُعد. قارنه بجهاز التحكم الأصلي لذلك الجهاز.",
+      "seo_title": "Get IPTV: راجع الجهاز المحدد لأزرار الصوت",
+      "seo_description": "راجع أزرار صوت Get IPTV على Chromecast أو Google TV Streamer. حدّد التلفزيون أو مكبر الصوت أو جهاز البث المختار قبل تغيير مستويات الصوت.",
+      "sections": [
+        {
+          "heading": "حدّد الجهاز المطلوب تغيير صوته",
+          "paragraphs": [
+            "تبدأ تهيئة أزرار الصوت مع Get IPTV بتحديد ما يجب أن يرتفع صوته: التلفزيون أو جهاز الاستقبال أو مكبر الصوت أو جهاز البث. دوّن الجهاز الذي يصدر الصوت فعلياً. إذا استجابت قوائم Google TV لأزرار الاتجاهات دون تغيّر مستوى الصوت، فسجّل الملاحظتين منفصلتين. عمل زر القوائم لا يحدد وحده الجهاز الذي تتحكم به أزرار الصوت. تجنّب رفع المستوى مراراً ما دام الجهاز المقصود غير واضح."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع إعداد أزرار جهاز التحكم",
+          "paragraphs": [
+            "بالنسبة إلى Chromecast مع Google TV أو Google TV Streamer، يشرح دليل Google الرسمي اختيار الجهاز الذي تتحكم به أزرار الصوت. افتح جميع الإعدادات، ثم أجهزة التحكم والملحقات، ثم إعداد أزرار جهاز التحكم، وفق التسميات الظاهرة على جهازك. راجع جهاز الصوت المحدد قبل تغييره. اتبع اختبار الصوت على الشاشة بمستوى مريح، ووجّه جهاز التحكم نحو المعدات المطلوبة وسجّل النتيجة الفعلية؛ فبعض الطرز غير مدعومة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google: إعداد أزرار الصوت في جهاز التحكم",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن بجهاز التحكم الأصلي للمعدات",
+          "paragraphs": [
+            "توضح Google أيضاً أن مستوى صوت جهاز البث قد يختلف عن مستوى التلفزيون. استخدم جهاز التحكم الأصلي للتلفزيون أو مكبر الصوت لفحص الكتم ومستوى استماع معتدل. ثم ارجع إلى البرنامج نفسه وقارن وسيلة تحكم واحدة كل مرة. عند طلب المساعدة، اذكر طراز جهاز البث والجهاز المحدد للصوت وهل يغير جهاز التحكم الأصلي الصوت. هذه الملاحظة أكثر فائدة من الاكتفاء بالقول إن مشغّل IPTV لا يملك صوتاً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google: إعدادات الصوت ومستوى صوت الجهاز",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: आवाज़ के बटन से किस डिवाइस को नियंत्रित करें?",
+      "excerpt": "मेनू काम करें लेकिन आवाज़ न बदले तो पहचानें कि Google रिमोट को किस उपकरण को नियंत्रित करना है। उसकी तुलना उपकरण के मूल रिमोट से करें।",
+      "seo_title": "Get IPTV: Google रिमोट के वॉल्यूम डिवाइस की जाँच",
+      "seo_description": "Chromecast या Google TV Streamer पर Get IPTV के आवाज़ बटन जाँचें। स्तर बदलने से पहले चुने टीवी, साउंडबार या स्ट्रीमिंग डिवाइस की पहचान करें।",
+      "sections": [
+        {
+          "heading": "आवाज़ बदलने वाले उपकरण की पहचान करें",
+          "paragraphs": [
+            "Get IPTV के आवाज़ बटन की सेटिंग यह पहचानने से शुरू होती है कि किसकी आवाज़ बढ़नी चाहिए: टेलीविज़न, रिसीवर, साउंडबार या स्ट्रीमिंग डिवाइस। वास्तव में आवाज़ देने वाला उपकरण लिखें। Google TV के मेनू दिशा वाले बटन से चलें लेकिन आवाज़ न बदले तो दोनों बातें अलग दर्ज करें। मेनू बटन काम करने से अपने आप यह पता नहीं चलता कि आवाज़ का बटन किस उपकरण को नियंत्रित कर रहा है। जब तक यह स्पष्ट न हो, बार-बार स्तर न बढ़ाएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रिमोट के बटन की सेटिंग देखें",
+          "paragraphs": [
+            "Chromecast with Google TV या Google TV Streamer के लिए Google की आधिकारिक सहायता बताती है कि आवाज़ बटन किस डिवाइस को नियंत्रित करें, यह कैसे चुनें। सभी सेटिंग, रिमोट और एक्सेसरीज़, फिर रिमोट बटन की सेटिंग खोलें; अपने डिवाइस पर दिखते नामों का पालन करें। बदलने से पहले आवाज़ के लिए चुना उपकरण देखें। स्क्रीन पर ध्वनि जाँच आरामदायक स्तर पर करें, रिमोट इच्छित उपकरण की ओर रखें और वास्तविक परिणाम बताएँ; कुछ मॉडल समर्थित नहीं हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google सहायता: रिमोट के आवाज़ बटन सेट करें",
+              "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "उपकरण के मूल रिमोट से तुलना करें",
+          "paragraphs": [
+            "Google यह भी बताता है कि स्ट्रीमिंग डिवाइस और टीवी की आवाज़ का स्तर अलग हो सकता है। टीवी या साउंडबार के मूल रिमोट से म्यूट की स्थिति और सुनने का हल्का स्तर जाँचें। फिर उसी कार्यक्रम पर लौटें और एक समय में एक नियंत्रण की तुलना करें। सहायता चाहिए तो स्ट्रीमिंग डिवाइस का मॉडल, आवाज़ के लिए चुना उपकरण और मूल रिमोट से आवाज़ बदलती है या नहीं, बताएँ। यह सिर्फ यह कहने से अधिक उपयोगी है कि IPTV प्लेयर में आवाज़ नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google सहायता: ध्वनि और डिवाइस की आवाज़ की सेटिंग",
+              "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help: set up volume, power and input control on your Voice Remote",
+      "url": "https://support.google.com/chromecast/answer/10094150?hl=en"
+    },
+    {
+      "label": "Google Streaming Help: sound settings for Chromecast with Google TV and Google TV Streamer",
+      "url": "https://support.google.com/chromecast/answer/10110321?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-06",
+  "topic": "Apple TV local storage: distinguish offloading an unused player from deleting its data before assuming a Geo IPTV subscription has expired",
+  "primary_keyword": "Geo IPTV Apple TV storage",
+  "slug": "geo-apple-tv-storage-offload-versus-delete",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV Apple TV storage: offload or delete a player?",
+      "excerpt": "A download icon or storage warning is a local Apple TV clue. Check app storage and the consequences of removal before treating a missing player as a subscription problem.",
+      "seo_title": "Geo IPTV Apple TV storage: offload versus delete",
+      "seo_description": "Review Geo IPTV Apple TV storage, distinguish Offload from Delete and recognise a download icon before changing your subscription or removing player data.",
+      "sections": [
+        {
+          "heading": "Start with the local storage warning",
+          "paragraphs": [
+            "A Geo IPTV Apple TV storage question starts with the message on the television. Apple TV 4K streams media but stores apps locally; a storage warning therefore deserves a device check. Open Settings, then General, and find Manage Storage in the Usage section. Review the listed app sizes before removing anything. A full device and an expired subscription are different possibilities: a storage message alone does not establish an account problem."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: review Apple TV 4K storage",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7760522d/27/tvos/27"
+            }
+          ]
+        },
+        {
+          "heading": "Read the removal choice before confirming",
+          "paragraphs": [
+            "Apple distinguishes Offload, which removes an app while retaining its data, from Delete, which removes the app and its data. Prefer reviewing unused apps to removing the player you still need. Before any removal, establish how to find the correct app again and recover authorised access. Keeping app data is not a promise that a subscription remains valid or that every sign-in will be restored. Menu availability can vary by hardware and software."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Recognise a download icon and check availability",
+          "paragraphs": [
+            "Apple’s automatic Offload Unused Apps setting is under Settings, then Apps. An automatically offloaded app has a download icon on the Home Screen; selecting it downloads it again if it remains available in the App Store. If a player will not reopen, record the icon, exact message and app name. Ask about download availability separately from account access. Share those observations with support without sending passwords or private playlist addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV en Apple TV: descargar la app o eliminar sus datos",
+      "excerpt": "Un icono de descarga o un aviso de almacenamiento apunta al Apple TV. Revisa el espacio y las opciones de eliminación antes de atribuir la ausencia del reproductor a la suscripción.",
+      "seo_title": "Geo IPTV en Apple TV: espacio y datos de las apps",
+      "seo_description": "Comprueba el almacenamiento de Apple TV, distingue quitar una app conservando sus datos de eliminarla y revisa el icono de descarga al usar Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Empieza por el aviso de almacenamiento",
+          "paragraphs": [
+            "Si aparece un aviso de espacio mientras usas Geo IPTV en Apple TV, empieza por el mensaje del televisor. Apple TV 4K transmite contenido, pero guarda las aplicaciones localmente. Abre Ajustes, después General, y busca Gestionar almacenamiento en la sección Uso. Revisa el tamaño de las aplicaciones antes de quitar nada. La falta de espacio y una suscripción caducada son posibilidades distintas: un aviso de almacenamiento no demuestra un problema de cuenta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee qué se conservará antes de confirmar",
+          "paragraphs": [
+            "Apple distingue entre quitar una aplicación conservando sus datos y eliminarla junto con ellos. Revisa primero las aplicaciones que no usas antes de retirar el reproductor que todavía necesitas. Antes de cualquier eliminación, confirma cómo encontrar de nuevo la aplicación correcta y recuperar el acceso autorizado. Conservar los datos no garantiza que la suscripción siga vigente ni que se restaure cada inicio de sesión. Los menús disponibles pueden variar según el equipo y el software."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Identifica el icono de descarga",
+          "paragraphs": [
+            "La opción automática para quitar aplicaciones no utilizadas está en Ajustes y después Apps. Una aplicación retirada automáticamente muestra un icono de descarga en la pantalla de inicio; al seleccionarla, vuelve a descargarse si sigue disponible en App Store. Si el reproductor no se abre, anota el icono, el mensaje exacto y su nombre. Consulta por separado la disponibilidad de descarga y el acceso a la cuenta. Comparte esas observaciones sin contraseñas ni direcciones privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV sur Apple TV : décharger ou supprimer un lecteur ?",
+      "excerpt": "Une icône de téléchargement ou une alerte de stockage concerne d’abord l’Apple TV. Examinez l’espace et les effets d’une suppression avant de mettre en cause l’abonnement.",
+      "seo_title": "Geo IPTV sur Apple TV : stockage et données du lecteur",
+      "seo_description": "Vérifiez le stockage d’Apple TV, distinguez le déchargement de la suppression des données et identifiez une icône de téléchargement avec Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Partez de l’alerte de stockage",
+          "paragraphs": [
+            "Une question de stockage sur Apple TV avec Geo IPTV commence par le message affiché. Apple TV 4K diffuse les médias mais conserve les applications localement. Ouvrez Réglages, puis Général, et cherchez Gérer le stockage dans la partie Utilisation. Examinez la taille des applications avant toute suppression. Un appareil plein et un abonnement expiré sont deux pistes distinctes : une alerte de stockage ne prouve pas un problème de compte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez les conséquences avant de confirmer",
+          "paragraphs": [
+            "Apple distingue le déchargement, qui retire une application en conservant ses données, de la suppression, qui efface aussi ses données. Examinez les applications inutilisées avant de retirer le lecteur dont vous avez encore besoin. Vérifiez au préalable comment retrouver la bonne application et rétablir son accès autorisé. La conservation des données ne garantit ni la validité de l’abonnement ni le rétablissement de chaque connexion. Les options peuvent varier selon le matériel et le logiciel."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reconnaissez l’icône de téléchargement",
+          "paragraphs": [
+            "Le réglage automatique de déchargement des applications inutilisées se trouve dans Réglages, puis Apps. Une application déchargée automatiquement porte une icône de téléchargement sur l’écran d’accueil ; la sélectionner permet de la télécharger à nouveau si elle reste disponible dans l’App Store. Si le lecteur ne s’ouvre pas, notez son nom, son icône et le message exact. Distinguez disponibilité du téléchargement et accès au compte. Transmettez ces éléments sans mots de passe ni adresses privées de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV su Apple TV: rimuovere l’app o cancellarne i dati?",
+      "excerpt": "Un’icona di download o un avviso di spazio riguarda prima di tutto Apple TV. Controlla memoria e conseguenze della rimozione prima di attribuire l’assenza del lettore all’abbonamento.",
+      "seo_title": "Geo IPTV su Apple TV: spazio e rimozione delle app",
+      "seo_description": "Controlla lo spazio su Apple TV, distingui la rimozione che conserva i dati dall’eliminazione completa e riconosci l’icona di download con Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Parti dall’avviso di spazio",
+          "paragraphs": [
+            "Un dubbio sullo spazio di Apple TV con Geo IPTV parte dal messaggio sul televisore. Apple TV 4K riproduce contenuti in streaming, ma conserva le app localmente. Apri Impostazioni, poi Generali, e cerca Gestisci spazio nella sezione Utilizzo. Controlla le dimensioni delle app prima di rimuovere qualcosa. Un dispositivo pieno e un abbonamento scaduto sono possibilità diverse: un avviso di memoria non dimostra un problema dell’account."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi cosa verrà conservato",
+          "paragraphs": [
+            "Apple distingue la rimozione dell’app con conservazione dei dati dall’eliminazione dell’app insieme ai suoi dati. Esamina prima le app inutilizzate, anziché togliere il lettore che ti serve ancora. Prima di procedere, chiarisci come ritrovare l’app corretta e recuperare l’accesso autorizzato. Conservare i dati non garantisce che l’abbonamento sia valido o che ogni accesso venga ripristinato. Le opzioni disponibili possono cambiare secondo hardware e software."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Riconosci l’icona di download",
+          "paragraphs": [
+            "L’opzione automatica per rimuovere le app inutilizzate si trova in Impostazioni, poi App. Un’app rimossa automaticamente mostra un’icona di download nella schermata Home; selezionandola viene scaricata di nuovo se è ancora disponibile nell’App Store. Se il lettore non si apre, annota icona, messaggio esatto e nome dell’app. Chiedi separatamente informazioni sulla disponibilità del download e sull’accesso all’account. Invia queste osservazioni senza password né indirizzi privati di playlist."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV op Apple TV: een app ontladen of verwijderen?",
+      "excerpt": "Een downloadpictogram of opslagmelding geeft informatie over de Apple TV zelf. Bekijk de opslag en gevolgen van verwijderen voordat je een ontbrekende speler aan je abonnement koppelt.",
+      "seo_title": "Geo IPTV op Apple TV: opslag en appgegevens",
+      "seo_description": "Controleer de opslag van Apple TV, onderscheid ontladen van het verwijderen van appgegevens en herken een downloadpictogram bij het gebruik van Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Begin bij de opslagmelding",
+          "paragraphs": [
+            "Een vraag over opslag op Apple TV bij Geo IPTV begint bij de melding op het scherm. Apple TV 4K streamt media, maar bewaart apps lokaal. Open Instellingen, vervolgens Algemeen, en zoek Beheer opslag bij Gebruik. Bekijk eerst hoeveel ruimte de apps innemen. Een vol apparaat en een verlopen abonnement zijn verschillende mogelijkheden: een opslagmelding bewijst op zichzelf geen probleem met je account."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees wat de verwijderoptie doet",
+          "paragraphs": [
+            "Apple maakt onderscheid tussen ontladen, waarbij de app verdwijnt maar de gegevens blijven, en verwijderen, waarbij ook de gegevens verdwijnen. Bekijk eerst ongebruikte apps voordat je de speler weghaalt die je nog nodig hebt. Controleer vooraf hoe je de juiste app terugvindt en je toegestane toegang herstelt. Bewaarde appgegevens garanderen geen geldig abonnement of automatisch herstel van elke aanmelding. Beschikbare menuopties kunnen per apparaat en softwareversie verschillen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Herken het downloadpictogram",
+          "paragraphs": [
+            "De automatische optie voor het opruimen van ongebruikte apps staat bij Instellingen en vervolgens Apps. Een automatisch ontladen app heeft een downloadpictogram op het beginscherm; door deze te selecteren download je hem opnieuw als hij nog in de App Store staat. Opent de speler niet, noteer dan het pictogram, de exacte melding en de appnaam. Vraag afzonderlijk naar beschikbaarheid van de download en accounttoegang. Deel deze informatie zonder wachtwoorden of privé-adressen van afspeellijsten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV na Apple TV: descarregar a app ou apagar os dados?",
+      "excerpt": "Um ícone de descarga ou aviso de armazenamento é uma pista local da Apple TV. Verifique o espaço e os efeitos da remoção antes de associar a falta do leitor à subscrição.",
+      "seo_title": "Geo IPTV na Apple TV: armazenamento e dados das apps",
+      "seo_description": "Verifique o armazenamento da Apple TV, distinga remover uma app preservando os dados de a apagar e reconheça o ícone de descarga ao utilizar Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Comece pelo aviso de armazenamento",
+          "paragraphs": [
+            "Uma dúvida sobre espaço na Apple TV ao utilizar Geo IPTV começa pela mensagem no televisor. A Apple TV 4K transmite conteúdos, mas guarda as aplicações localmente. Abra Definições, depois Geral, e procure Gerir armazenamento na área Utilização. Consulte o espaço ocupado pelas apps antes de remover qualquer uma. Um dispositivo cheio e uma subscrição expirada são possibilidades diferentes: um aviso de armazenamento não demonstra um problema de conta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o que a remoção preserva",
+          "paragraphs": [
+            "A Apple distingue a remoção que preserva os dados da opção que apaga a aplicação e os seus dados. Reveja primeiro as apps que não utiliza, antes de retirar o leitor de que ainda precisa. Confirme previamente como encontrar a aplicação correta e recuperar o acesso autorizado. Manter os dados não garante que a subscrição continue válida nem que todas as sessões sejam recuperadas. As opções disponíveis podem variar com o equipamento e o software."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reconheça o ícone de descarga",
+          "paragraphs": [
+            "A opção automática para remover aplicações não utilizadas fica em Definições, depois Apps. Uma app removida automaticamente apresenta um ícone de descarga no ecrã principal; selecioná-la permite voltar a descarregá-la se continuar disponível na App Store. Se o leitor não abrir, anote o ícone, a mensagem exata e o nome da aplicação. Pergunte separadamente pela disponibilidade da descarga e pelo acesso à conta. Envie estas observações sem palavras-passe nem endereços privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV на Apple TV: выгрузить плеер или удалить его данные?",
+      "excerpt": "Значок загрузки или сообщение о нехватке места относится к самому Apple TV. Проверьте хранилище и последствия удаления, прежде чем связывать отсутствие плеера с подпиской.",
+      "seo_title": "Geo IPTV на Apple TV: хранилище и данные приложений",
+      "seo_description": "Проверьте хранилище Apple TV, отличите выгрузку от удаления данных приложения и распознайте значок загрузки при использовании Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Начните с сообщения о нехватке места",
+          "paragraphs": [
+            "Разбираясь с хранилищем Apple TV при использовании Geo IPTV, сначала прочитайте сообщение на телевизоре. Apple TV 4K передает медиаконтент потоком, но хранит приложения локально. Откройте «Настройки», затем «Основные» и найдите управление хранилищем в разделе использования. Посмотрите размеры приложений до удаления. Заполненное устройство и истекшая подписка — разные возможные причины: сообщение о хранилище само по себе не доказывает проблему учетной записи."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Уточните последствия выбранного действия",
+          "paragraphs": [
+            "Apple различает выгрузку приложения с сохранением его данных и удаление приложения вместе с данными. Сначала рассмотрите неиспользуемые приложения, а не плеер, который вам еще нужен. До удаления выясните, как снова найти нужное приложение и восстановить разрешенный доступ. Сохранение данных не гарантирует действующую подписку или восстановление каждого входа в учетную запись. Доступные пункты меню могут зависеть от оборудования и версии программного обеспечения."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Распознайте значок загрузки",
+          "paragraphs": [
+            "Автоматическая выгрузка неиспользуемых приложений включается в «Настройках», в разделе приложений. Автоматически выгруженное приложение получает значок загрузки на главном экране; выбрав его, можно загрузить приложение снова, если оно еще доступно в App Store. Если плеер не открывается, запишите его название, значок и точный текст сообщения. Отдельно уточняйте доступность загрузки и доступ к учетной записи. Передавайте эти наблюдения без паролей и закрытых адресов плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اور Apple TV: ایپ ہٹائیں یا اس کا ڈیٹا بھی مٹائیں؟",
+      "excerpt": "ڈاؤن لوڈ کا نشان یا جگہ کم ہونے کا پیغام پہلے Apple TV کے بارے میں بتاتا ہے۔ پلیئر کی عدم موجودگی کو سبسکرپشن سے جوڑنے سے پہلے جگہ اور ایپ ہٹانے کے نتائج دیکھیں۔",
+      "seo_title": "Geo IPTV پر Apple TV کی جگہ اور ایپ کا ڈیٹا",
+      "seo_description": "Apple TV کی جگہ دیکھیں، ڈیٹا محفوظ رکھ کر ایپ ہٹانے اور مکمل حذف کرنے کا فرق سمجھیں، اور Geo IPTV استعمال کرتے وقت ڈاؤن لوڈ کا نشان پہچانیں۔",
+      "sections": [
+        {
+          "heading": "پہلے جگہ کم ہونے کا پیغام پڑھیں",
+          "paragraphs": [
+            "Geo IPTV استعمال کرتے ہوئے Apple TV کی جگہ کا سوال اٹھے تو پہلے ٹی وی پر موجود پیغام پڑھیں۔ Apple TV 4K ویڈیو اور موسیقی نشر کرتا ہے مگر ایپس آلے پر محفوظ ہوتی ہیں۔ ترتیبات، پھر عمومی کھولیں اور استعمال والے حصے میں ذخیرہ سنبھالنے کا اختیار دیکھیں۔ کچھ ہٹانے سے پہلے ایپس کا حجم دیکھ لیں۔ آلہ بھر جانا اور سبسکرپشن ختم ہونا الگ امکانات ہیں؛ جگہ کا پیغام اکیلا اکاؤنٹ کا مسئلہ ثابت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تصدیق سے پہلے ہٹانے کا مطلب سمجھیں",
+          "paragraphs": [
+            "Apple کے مطابق ایک اختیار ایپ ہٹاتا مگر اس کا ڈیٹا رکھتا ہے، جبکہ مکمل حذف کرنے سے ایپ اور اس کا ڈیٹا دونوں مٹتے ہیں۔ جس پلیئر کی ابھی ضرورت ہے اسے ہٹانے سے پہلے غیر استعمال شدہ ایپس دیکھیں۔ کسی بھی ایپ کو ہٹانے سے پہلے معلوم کریں کہ درست ایپ دوبارہ کیسے ملے گی اور مجاز رسائی کیسے بحال ہوگی۔ ڈیٹا محفوظ رہنا سبسکرپشن کی مدت یا ہر لاگ اِن کی بحالی کی ضمانت نہیں۔ دستیاب مینو آلے اور سافٹ ویئر کے لحاظ سے بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ڈاؤن لوڈ کا نشان پہچانیں",
+          "paragraphs": [
+            "غیر استعمال شدہ ایپس خودکار ہٹانے کا اختیار ترتیبات، پھر ایپس میں ہے۔ خودکار ہٹائی گئی ایپ ہوم اسکرین پر ڈاؤن لوڈ کا نشان دکھاتی ہے؛ منتخب کرنے پر وہ دوبارہ ڈاؤن لوڈ ہوتی ہے بشرطیکہ App Store میں اب بھی دستیاب ہو۔ پلیئر نہ کھلے تو نشان، پورا پیغام اور ایپ کا نام لکھیں۔ ڈاؤن لوڈ کی دستیابی اور اکاؤنٹ تک رسائی الگ پوچھیں۔ مدد کے لیے یہ مشاہدات دیں، پاس ورڈ یا نجی پلے لسٹ کے پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV على Apple TV: إزالة المشغل أم حذف بياناته؟",
+      "excerpt": "رمز التنزيل أو تنبيه التخزين يتعلق أولا بجهاز Apple TV. راجع المساحة ونتائج إزالة التطبيق قبل ربط غياب المشغل بانتهاء الاشتراك.",
+      "seo_title": "Geo IPTV على Apple TV: التخزين وبيانات التطبيقات",
+      "seo_description": "راجع مساحة Apple TV، وميّز إزالة التطبيق مع حفظ بياناته عن حذفه بالكامل، وتعرّف إلى رمز التنزيل أثناء استخدام Geo IPTV.",
+      "sections": [
+        {
+          "heading": "ابدأ برسالة نقص المساحة",
+          "paragraphs": [
+            "عند التساؤل عن مساحة Apple TV أثناء استخدام Geo IPTV، ابدأ بالرسالة المعروضة على التلفزيون. يبث Apple TV 4K الوسائط لكنه يخزن التطبيقات محليا. افتح الإعدادات ثم عام، وابحث عن إدارة التخزين في قسم الاستخدام. راجع أحجام التطبيقات قبل إزالة أي شيء. امتلاء الجهاز وانتهاء الاشتراك احتمالان مختلفان؛ رسالة التخزين وحدها لا تثبت وجود مشكلة في الحساب."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ أثر الإزالة قبل تأكيدها",
+          "paragraphs": [
+            "تميّز Apple بين إزالة التطبيق مع الاحتفاظ ببياناته وحذف التطبيق مع بياناته. راجع التطبيقات غير المستخدمة قبل إزالة المشغل الذي لا تزال تحتاج إليه. تأكد مسبقا من طريقة العثور على التطبيق الصحيح مجددا واستعادة الوصول المصرح به. الاحتفاظ بالبيانات لا يضمن استمرار صلاحية الاشتراك أو استعادة كل عملية تسجيل دخول. قد تختلف الخيارات المتاحة بحسب الجهاز وإصدار البرنامج، لذلك اقرأ نص الخيار الظاهر قبل المتابعة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تعرّف إلى رمز التنزيل",
+          "paragraphs": [
+            "يوجد خيار الإزالة التلقائية للتطبيقات غير المستخدمة في الإعدادات ثم التطبيقات. يظهر رمز تنزيل على التطبيق الذي أزيل تلقائيا في الشاشة الرئيسية؛ يؤدي اختياره إلى تنزيله مجددا إذا ظل متاحا في App Store. إذا لم يفتح المشغل، دوّن الرمز والرسالة الدقيقة واسم التطبيق. اسأل عن توفر التنزيل بصورة منفصلة عن الوصول إلى الحساب. أرسل هذه الملاحظات إلى الدعم دون كلمات مرور أو عناوين قوائم تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV पर Apple TV: ऐप हटाएँ या उसका डेटा भी मिटाएँ?",
+      "excerpt": "डाउनलोड का निशान या स्टोरेज चेतावनी पहले Apple TV की स्थिति बताती है। गायब प्लेयर को सब्सक्रिप्शन की समस्या मानने से पहले जगह और ऐप हटाने के नतीजे देखें।",
+      "seo_title": "Geo IPTV पर Apple TV: स्टोरेज और ऐप का डेटा",
+      "seo_description": "Apple TV का स्टोरेज जाँचें, डेटा बचाकर ऐप हटाने और पूरा डेटा मिटाने में अंतर समझें तथा Geo IPTV इस्तेमाल करते समय डाउनलोड का निशान पहचानें।",
+      "sections": [
+        {
+          "heading": "स्टोरेज चेतावनी से शुरुआत करें",
+          "paragraphs": [
+            "Geo IPTV इस्तेमाल करते समय Apple TV की जगह को लेकर सवाल हो तो पहले टीवी पर संदेश पढ़ें। Apple TV 4K मीडिया स्ट्रीम करता है, लेकिन ऐप डिवाइस पर रखता है। सेटिंग, फिर सामान्य खोलें और उपयोग वाले हिस्से में स्टोरेज प्रबंधन देखें। कुछ हटाने से पहले ऐप के आकार जाँचें। डिवाइस भरना और सब्सक्रिप्शन समाप्त होना अलग संभावनाएँ हैं; केवल स्टोरेज का संदेश खाते की समस्या साबित नहीं करता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पुष्टि से पहले हटाने का असर पढ़ें",
+          "paragraphs": [
+            "Apple ऐप को हटाकर उसका डेटा रखने और ऐप के साथ उसका डेटा भी मिटाने में अंतर बताता है। जिस प्लेयर की अभी जरूरत है उसे हटाने से पहले बेकार पड़ी ऐप देखें। किसी ऐप को हटाने से पहले तय करें कि सही ऐप फिर कैसे मिलेगी और अधिकृत पहुँच कैसे लौटेगी। डेटा सुरक्षित रहने से सब्सक्रिप्शन चालू होने या हर साइन इन के वापस आने की गारंटी नहीं मिलती। उपलब्ध विकल्प हार्डवेयर और सॉफ्टवेयर के अनुसार बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "डाउनलोड का निशान पहचानें",
+          "paragraphs": [
+            "इस्तेमाल न होने वाली ऐप अपने आप हटाने का विकल्प सेटिंग, फिर ऐप में है। अपने आप हटाई गई ऐप होम स्क्रीन पर डाउनलोड का निशान दिखाती है; उसे चुनने से ऐप फिर डाउनलोड होती है, अगर वह अभी App Store में उपलब्ध है। प्लेयर न खुले तो निशान, पूरा संदेश और ऐप का नाम लिखें। डाउनलोड की उपलब्धता और खाते की पहुँच के बारे में अलग पूछें। सहायता को ये अवलोकन दें, पासवर्ड या निजी प्लेलिस्ट पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: free up storage on Apple TV 4K",
+      "url": "https://support.apple.com/en-gb/guide/tv/atvb7760522d/27/tvos/27"
+    }
+  ]
+}
