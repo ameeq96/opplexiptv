@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-07",
+  "topic": "Compare VLC for Android equalizer processing with ordinary media volume when dialogue sounds altered rather than simply quiet",
+  "primary_keyword": "IPTV equalizer check",
+  "slug": "main-vlc-android-equalizer-tone-versus-volume",
+  "translations": {
+    "en": {
+      "title": "IPTV equalizer check: altered tone or simply quiet dialogue?",
+      "excerpt": "If voices sound unusually bass-heavy or thin in VLC for Android, inspect an existing equalizer setting separately from playback volume before making wider changes.",
+      "seo_title": "IPTV equalizer check in VLC for Android",
+      "seo_description": "Compare an existing VLC for Android equalizer setting with ordinary playback volume, using the same dialogue and output device for a useful sound report.",
+      "sections": [
+        {"heading": "Describe the sound before moving sliders", "paragraphs": ["An IPTV equalizer check starts with what you hear. Is dialogue simply quiet, or do voices sound unusually bass-heavy, thin or harsh? Keep the same programme passage and the same speaker or headphones for comparison. Use a comfortable listening level rather than repeatedly increasing volume. Note whether the effect happens throughout the programme or only during one scene. These observations do not establish that the service, device or recording is faulty."], "items": [], "links": []},
+        {"heading": "Check one existing VLC setting", "paragraphs": ["VideoLAN documents an Equalizer in the video player's additional options, with an on/off control and presets. It is disabled by default, but your saved settings may differ. Record whether it is enabled and which preset is selected. If processing is already active, compare the same passage with the equalizer switched off, leaving the volume and output device unchanged. Menu presentation may vary by version. Avoid changing several frequency sliders just to see what happens."], "items": [], "links": [{"label": "VideoLAN: VLC for Android video-player equalizer", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Keep the result specific", "paragraphs": ["If the tone changes when processing is disabled, record that difference without calling it a subscription repair. If it does not, leave the equalizer aside and describe the remaining symptom. An equalizer cannot restore a missing stream or identify a network problem. For private support, give the VLC version, output device, affected passage and settings compared. Do not include account credentials or private playlist addresses, and avoid presenting one comparison as a device-wide diagnosis."], "items": [], "links": []}
+      ]
+    },
+    "es": {
+      "title": "Ecualizador en IPTV: ¿tono alterado o diálogo simplemente bajo?",
+      "excerpt": "Si las voces tienen demasiados graves o suenan finas en VLC para Android, revisa el ecualizador por separado del volumen antes de hacer cambios más amplios.",
+      "seo_title": "Revisar el ecualizador de IPTV en VLC para Android",
+      "seo_description": "Compara un ajuste existente del ecualizador de VLC para Android con el volumen de reproducción, manteniendo el mismo diálogo y dispositivo de salida.",
+      "sections": [
+        {"heading": "Describe el sonido antes de mover controles", "paragraphs": ["Para revisar el ecualizador durante IPTV, empieza por lo que oyes. ¿El diálogo está simplemente bajo o las voces tienen demasiados graves, suenan finas o resultan estridentes? Conserva el mismo fragmento y el mismo altavoz o auriculares para comparar. Elige un nivel cómodo en lugar de subir el volumen repetidamente. Anota si el efecto se mantiene durante el programa o aparece en una sola escena. Estas observaciones no demuestran un fallo del servicio, del dispositivo o de la grabación."], "items": [], "links": []},
+        {"heading": "Comprueba un único ajuste existente de VLC", "paragraphs": ["VideoLAN documenta un ecualizador entre las opciones adicionales del reproductor de vídeo, con interruptor y preajustes. Está desactivado por defecto, aunque tu configuración guardada puede ser distinta. Anota si está activo y el preajuste elegido. Si ya hay procesamiento, compara el mismo fragmento con el ecualizador apagado, sin cambiar el volumen ni la salida. La presentación del menú puede variar según la versión. Evita modificar varios controles de frecuencia solo por probar."], "items": [], "links": [{"label": "VideoLAN: ecualizador del reproductor de vídeo de Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Describe un resultado concreto", "paragraphs": ["Si el tono cambia al desactivar el procesamiento, registra la diferencia sin llamarla reparación de la suscripción. Si no cambia, deja aparte el ecualizador y describe el síntoma restante. Este control no recupera una emisión ausente ni identifica problemas de red. Para soporte privado, indica la versión de VLC, la salida, el fragmento afectado y los ajustes comparados. No incluyas credenciales ni direcciones privadas de listas, ni conviertas una comparación en un diagnóstico de todo el dispositivo."], "items": [], "links": []}
+      ]
+    },
+    "fr": {
+      "title": "Égaliseur IPTV : timbre modifié ou dialogue simplement faible ?",
+      "excerpt": "Si les voix semblent trop graves ou trop fines dans VLC pour Android, examinez l'égaliseur séparément du volume avant de modifier davantage de réglages.",
+      "seo_title": "Vérifier l'égaliseur IPTV dans VLC pour Android",
+      "seo_description": "Comparez un réglage existant de l'égaliseur de VLC pour Android au volume de lecture, avec le même dialogue et le même appareil de sortie audio.",
+      "sections": [
+        {"heading": "Décrire le son avant de déplacer les curseurs", "paragraphs": ["Une vérification de l'égaliseur IPTV commence par l'écoute. Le dialogue est-il seulement faible, ou les voix paraissent-elles trop graves, fines ou agressives ? Gardez le même passage et les mêmes haut-parleurs ou écouteurs pour comparer. Choisissez un niveau confortable plutôt que d'augmenter sans cesse le volume. Notez si l'effet accompagne toute l'émission ou une seule scène. Ces observations ne prouvent pas un défaut du service, de l'appareil ou de l'enregistrement."], "items": [], "links": []},
+        {"heading": "Examiner un seul réglage déjà présent dans VLC", "paragraphs": ["VideoLAN décrit un égaliseur dans les options supplémentaires du lecteur vidéo, avec un interrupteur et des préréglages. Il est désactivé par défaut, mais vos réglages enregistrés peuvent différer. Notez son état et le préréglage sélectionné. Si le traitement est déjà actif, comparez le même passage après l'avoir désactivé, sans changer le volume ni la sortie. La présentation du menu dépend parfois de la version. Évitez de déplacer plusieurs curseurs de fréquence au hasard."], "items": [], "links": [{"label": "VideoLAN : égaliseur du lecteur vidéo Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Conserver une conclusion précise", "paragraphs": ["Si le timbre change sans traitement, consignez cette différence sans parler de réparation de l'abonnement. Sinon, laissez l'égaliseur de côté et décrivez le symptôme restant. Il ne peut ni rétablir un flux absent ni identifier une panne réseau. Au support privé, indiquez la version de VLC, la sortie audio, le passage et les réglages comparés. N'ajoutez ni identifiants ni adresses privées de listes, et ne transformez pas cet essai en diagnostic de tout l'appareil."], "items": [], "links": []}
+      ]
+    },
+    "it": {
+      "title": "Equalizzatore IPTV: timbro alterato o dialoghi soltanto bassi?",
+      "excerpt": "Se le voci sembrano troppo cupe o sottili in VLC per Android, controlla l'equalizzatore separatamente dal volume prima di cambiare altre impostazioni.",
+      "seo_title": "Controllare l'equalizzatore IPTV in VLC per Android",
+      "seo_description": "Confronta un'impostazione esistente dell'equalizzatore di VLC per Android con il volume, mantenendo lo stesso dialogo e dispositivo di uscita audio.",
+      "sections": [
+        {"heading": "Descrivi il suono prima di muovere i cursori", "paragraphs": ["Il controllo dell'equalizzatore durante l'IPTV parte da ciò che senti. Il dialogo è semplicemente basso oppure le voci risultano troppo cupe, sottili o aspre? Mantieni lo stesso passaggio e gli stessi altoparlanti o auricolari per confrontare. Scegli un livello comodo invece di alzare continuamente il volume. Annota se l'effetto riguarda tutto il programma o una sola scena. Queste osservazioni non dimostrano un guasto del servizio, del dispositivo o della registrazione."], "items": [], "links": []},
+        {"heading": "Controlla una sola impostazione già presente in VLC", "paragraphs": ["VideoLAN documenta un equalizzatore nelle opzioni aggiuntive del lettore video, con interruttore e preimpostazioni. Normalmente è disattivato, ma le impostazioni salvate possono essere diverse. Annota se è attivo e quale profilo è selezionato. Se l'elaborazione è già attiva, confronta lo stesso passaggio disattivando l'equalizzatore, senza cambiare volume o uscita audio. Il menu può variare secondo la versione. Evita di spostare più cursori delle frequenze soltanto per provare."], "items": [], "links": [{"label": "VideoLAN: equalizzatore del lettore video Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Mantieni il risultato circoscritto", "paragraphs": ["Se il timbro cambia disattivando l'elaborazione, annota la differenza senza definirla una riparazione dell'abbonamento. Altrimenti lascia da parte l'equalizzatore e descrivi il sintomo rimasto. Non può ripristinare un flusso assente né individuare un problema di rete. All'assistenza privata indica versione di VLC, uscita audio, passaggio interessato e impostazioni confrontate. Non includere credenziali o indirizzi privati delle playlist e non trasformare un confronto in una diagnosi dell'intero dispositivo."], "items": [], "links": []}
+      ]
+    },
+    "nl": {
+      "title": "IPTV-equalizer controleren: andere klank of alleen zacht geluid?",
+      "excerpt": "Klinken stemmen in VLC voor Android te zwaar of juist dun? Bekijk een bestaande equalizerinstelling apart van het volume voordat je meer verandert.",
+      "seo_title": "IPTV-equalizer controleren in VLC voor Android",
+      "seo_description": "Vergelijk een bestaande equalizerinstelling in VLC voor Android met het afspeelvolume, met dezelfde dialoog en dezelfde luidspreker of hoofdtelefoon.",
+      "sections": [
+        {"heading": "Beschrijf eerst wat je hoort", "paragraphs": ["Een controle van de IPTV-equalizer begint bij het geluid. Is de dialoog alleen zacht, of klinken stemmen ongewoon zwaar, dun of scherp? Gebruik voor de vergelijking hetzelfde fragment en dezelfde luidspreker of hoofdtelefoon. Kies een prettig luistervolume in plaats van het steeds hoger te zetten. Noteer of het effect het hele programma betreft of alleen één scène. Daarmee staat nog niet vast dat de dienst, het apparaat of de opname defect is."], "items": [], "links": []},
+        {"heading": "Bekijk één bestaande VLC-instelling", "paragraphs": ["VideoLAN beschrijft een equalizer bij de extra opties van de videospeler, met een schakelaar en voorinstellingen. Standaard staat deze uit, maar jouw opgeslagen instellingen kunnen anders zijn. Noteer of hij actief is en welke voorinstelling is gekozen. Staat de bewerking al aan, vergelijk dan hetzelfde fragment met de equalizer uit, zonder volume of uitvoerapparaat te wijzigen. De menuweergave kan per versie verschillen. Verschuif niet zomaar verschillende frequentieschuiven tegelijk."], "items": [], "links": [{"label": "VideoLAN: equalizer van de Android-videospeler", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Houd de conclusie beperkt", "paragraphs": ["Verandert de klank zonder bewerking, noteer dan dat verschil zonder het een abonnementsreparatie te noemen. Zo niet, laat de equalizer met rust en beschrijf het resterende verschijnsel. Hij kan geen ontbrekende stream herstellen of een netwerkprobleem vaststellen. Geef de privéondersteuning de VLC-versie, het uitvoerapparaat, het fragment en de vergeleken instellingen. Deel geen inloggegevens of privéafspeellijstadressen en maak van één vergelijking geen diagnose voor het hele apparaat."], "items": [], "links": []}
+      ]
+    },
+    "pt": {
+      "title": "Equalizador IPTV: timbre alterado ou diálogo apenas baixo?",
+      "excerpt": "Se as vozes parecem graves demais ou finas no VLC para Android, examine o equalizador separadamente do volume antes de alterar outras configurações.",
+      "seo_title": "Verificar o equalizador IPTV no VLC para Android",
+      "seo_description": "Compare uma configuração existente do equalizador do VLC para Android com o volume, mantendo o mesmo diálogo e o mesmo dispositivo de saída de áudio.",
+      "sections": [
+        {"heading": "Descreva o som antes de mover os controles", "paragraphs": ["A verificação do equalizador durante IPTV começa pelo que você escuta. O diálogo está apenas baixo ou as vozes parecem graves demais, finas ou estridentes? Mantenha o mesmo trecho e o mesmo alto-falante ou fone para comparar. Use um nível confortável em vez de aumentar o volume repetidamente. Anote se o efeito aparece durante todo o programa ou em uma única cena. Essas observações não comprovam uma falha no serviço, no dispositivo ou na gravação."], "items": [], "links": []},
+        {"heading": "Confira uma configuração já existente no VLC", "paragraphs": ["A VideoLAN documenta um equalizador nas opções adicionais do reprodutor de vídeo, com chave de ativação e predefinições. Ele vem desativado, mas suas configurações salvas podem ser diferentes. Registre se está ativo e qual perfil está selecionado. Caso o processamento já esteja ligado, compare o mesmo trecho com o equalizador desligado, mantendo volume e saída. O menu pode variar conforme a versão. Evite mexer em vários controles de frequência apenas para experimentar."], "items": [], "links": [{"label": "VideoLAN: equalizador do reprodutor de vídeo Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Mantenha o resultado específico", "paragraphs": ["Se o timbre mudar ao desligar o processamento, registre a diferença sem chamá-la de reparo da assinatura. Caso contrário, deixe o equalizador de lado e descreva o sintoma restante. Ele não recupera uma transmissão ausente nem identifica falhas de rede. Ao suporte privado, informe versão do VLC, saída de áudio, trecho e configurações comparadas. Não inclua credenciais ou endereços privados de listas, nem transforme uma comparação em diagnóstico de todo o aparelho."], "items": [], "links": []}
+      ]
+    },
+    "ru": {
+      "title": "Эквалайзер IPTV: изменился тембр или диалог просто тихий?",
+      "excerpt": "Если в VLC для Android голоса звучат слишком гулко или тонко, проверьте существующую настройку эквалайзера отдельно от громкости воспроизведения.",
+      "seo_title": "Проверка эквалайзера IPTV в VLC для Android",
+      "seo_description": "Сравните существующую настройку эквалайзера VLC для Android с обычной громкостью, сохраняя тот же диалог и то же устройство вывода звука.",
+      "sections": [
+        {"heading": "Сначала опишите характер звука", "paragraphs": ["Проверка эквалайзера при просмотре IPTV начинается с того, что вы слышите. Диалог просто тихий или голоса стали необычно гулкими, тонкими либо резкими? Для сравнения оставьте тот же фрагмент и те же динамики или наушники. Выберите комфортную громкость вместо постоянного повышения уровня. Отметьте, слышен ли эффект во всей передаче или только в одной сцене. Эти наблюдения сами по себе не доказывают неисправность сервиса, устройства или записи."], "items": [], "links": []},
+        {"heading": "Проверьте одну существующую настройку VLC", "paragraphs": ["VideoLAN описывает эквалайзер в дополнительных параметрах видеоплеера: у него есть выключатель и готовые профили. По умолчанию он выключен, но сохранённые настройки могут отличаться. Запишите, включён ли он и какой профиль выбран. Если обработка уже работает, сравните тот же фрагмент с выключенным эквалайзером, не меняя громкость и устройство вывода. Вид меню зависит от версии. Не двигайте сразу несколько частотных регуляторов ради случайного эксперимента."], "items": [], "links": [{"label": "VideoLAN: эквалайзер видеоплеера Android", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "Не расширяйте вывод за пределы сравнения", "paragraphs": ["Если без обработки тембр изменился, запишите разницу, не называя её исправлением подписки. Если нет, оставьте эквалайзер в стороне и опишите оставшийся симптом. Он не восстанавливает отсутствующий поток и не определяет причину сетевой проблемы. В личное обращение поддержке включите версию VLC, устройство вывода, фрагмент и сравниваемые настройки. Не передавайте учётные данные или закрытые адреса плейлистов и не превращайте одно сравнение в диагноз всего устройства."], "items": [], "links": []}
+      ]
+    },
+    "ur": {
+      "title": "IPTV ایکولائزر کی جانچ: آواز کا رنگ بدلا ہے یا مکالمہ صرف دھیمی آواز میں ہے؟",
+      "excerpt": "اگر VLC برائے Android میں آواز غیر معمولی طور پر بھاری یا باریک لگے تو دوسری تبدیلیوں سے پہلے ایکولائزر کی موجودہ ترتیب کو والیوم سے الگ دیکھیں۔",
+      "seo_title": "VLC برائے Android میں IPTV ایکولائزر کی جانچ",
+      "seo_description": "VLC برائے Android کے موجودہ ایکولائزر اور عام والیوم کا الگ موازنہ کریں، جبکہ مکالمہ اور آواز سنانے والا آلہ وہی رکھا جائے۔",
+      "sections": [
+        {"heading": "سلائیڈر ہلانے سے پہلے آواز کی کیفیت بیان کریں", "paragraphs": ["IPTV ایکولائزر کی جانچ اس بات سے شروع ہوتی ہے کہ آپ کیا سن رہے ہیں۔ کیا مکالمہ صرف دھیمی آواز میں ہے، یا آواز غیر معمولی طور پر بھاری، باریک یا تیز لگتی ہے؟ موازنے کے لیے پروگرام کا وہی حصہ اور وہی اسپیکر یا ہیڈفون رکھیں۔ والیوم بار بار بڑھانے کے بجائے آرام دہ سطح منتخب کریں۔ نوٹ کریں کہ یہ کیفیت پورے پروگرام میں ہے یا صرف ایک منظر میں۔ ان مشاہدات سے اکیلے سروس، آلے یا ریکارڈنگ کی خرابی ثابت نہیں ہوتی۔"], "items": [], "links": []},
+        {"heading": "VLC کی ایک موجودہ ترتیب الگ دیکھیں", "paragraphs": ["VideoLAN ویڈیو پلیئر کے اضافی اختیارات میں ایکولائزر بیان کرتا ہے، جس میں چالو یا بند کرنے کا بٹن اور پہلے سے بنے پروفائل ہوتے ہیں۔ یہ ابتدا میں بند ہوتا ہے، لیکن آپ کی محفوظ ترتیب مختلف ہو سکتی ہے۔ اس کی موجودہ حالت اور منتخب پروفائل لکھ لیں۔ اگر پراسیسنگ پہلے سے چل رہی ہے تو ایکولائزر بند کر کے وہی حصہ سنیں، والیوم اور آؤٹ پٹ آلہ نہ بدلیں۔ ورژن کے لحاظ سے مینو مختلف ہو سکتا ہے۔ محض آزمانے کے لیے کئی فریکوئنسی سلائیڈر ایک ساتھ نہ ہلائیں۔"], "items": [], "links": [{"label": "VideoLAN: Android ویڈیو پلیئر کا ایکولائزر", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "نتیجے کو اسی مشاہدے تک محدود رکھیں", "paragraphs": ["اگر پراسیسنگ بند کرنے سے آواز کا رنگ بدلے تو یہ فرق لکھیں، اسے سبسکرپشن کی مرمت نہ کہیں۔ فرق نہ آئے تو ایکولائزر الگ چھوڑ کر باقی علامت بیان کریں۔ یہ غائب اسٹریم بحال نہیں کرتا اور نیٹ ورک کی خرابی کی وجہ نہیں بتاتا۔ نجی سپورٹ کو VLC کا ورژن، آؤٹ پٹ آلہ، متعلقہ حصہ اور مقابلے میں استعمال ہونے والی ترتیبات بتائیں۔ لاگ اِن معلومات یا نجی پلے لسٹ پتے شامل نہ کریں، اور ایک موازنے کو پورے آلے کی تشخیص نہ بنائیں۔"], "items": [], "links": []}
+      ]
+    },
+    "ar": {
+      "title": "فحص معادل صوت IPTV: تغيّر النبرة أم أن الحوار منخفض فقط؟",
+      "excerpt": "إذا بدت الأصوات غليظة أو رفيعة بشكل غير معتاد في VLC لأندرويد، افحص إعداد المعادل الموجود منفصلاً عن مستوى الصوت قبل إجراء تغييرات أوسع.",
+      "seo_title": "فحص معادل صوت IPTV في VLC لأندرويد",
+      "seo_description": "قارن إعداد معادل الصوت الحالي في VLC لأندرويد بمستوى التشغيل العادي، مع الإبقاء على الحوار نفسه وجهاز إخراج الصوت نفسه للمقارنة.",
+      "sections": [
+        {"heading": "صف الصوت قبل تحريك المؤشرات", "paragraphs": ["يبدأ فحص معادل صوت IPTV بما تسمعه فعلاً. هل الحوار منخفض فقط، أم تبدو الأصوات غليظة أو رفيعة أو حادة بصورة غير معتادة؟ احتفظ بالمقطع نفسه وبالسماعة أو سماعات الرأس نفسها للمقارنة. اختر مستوى استماع مريحاً بدلاً من رفع الصوت باستمرار. دوّن إن كان التأثير يظهر طوال البرنامج أم في مشهد واحد فقط. هذه الملاحظات وحدها لا تثبت وجود خلل في الخدمة أو الجهاز أو التسجيل."], "items": [], "links": []},
+        {"heading": "افحص إعداداً موجوداً واحداً في VLC", "paragraphs": ["توضح VideoLAN وجود معادل صوت ضمن الخيارات الإضافية لمشغل الفيديو، مع مفتاح تشغيل وإعدادات مسبقة. يكون متوقفاً افتراضياً، لكن إعداداتك المحفوظة قد تختلف. سجّل حالته والإعداد المحدد. إذا كانت المعالجة مفعّلة بالفعل، قارن المقطع نفسه بعد إيقاف المعادل، دون تغيير مستوى الصوت أو جهاز الإخراج. قد يختلف شكل القوائم حسب الإصدار. تجنب تحريك عدة مؤشرات للترددات لمجرد التجربة."], "items": [], "links": [{"label": "VideoLAN: معادل الصوت في مشغل فيديو أندرويد", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "اجعل النتيجة محددة", "paragraphs": ["إذا تغيرت النبرة عند إيقاف المعالجة، دوّن الفرق دون وصفه بأنه إصلاح للاشتراك. وإذا لم تتغير، فاترك المعادل جانباً وصف العَرَض المتبقي. لا يستطيع المعادل استعادة بث مفقود أو تحديد مشكلة في الشبكة. أرسل للدعم الخاص إصدار VLC وجهاز الإخراج والمقطع المتأثر والإعدادات التي قارنتها. لا تضمّن بيانات الدخول أو عناوين قوائم التشغيل الخاصة، ولا تحول مقارنة واحدة إلى تشخيص شامل للجهاز."], "items": [], "links": []}
+      ]
+    },
+    "hi": {
+      "title": "IPTV इक्वलाइज़र जाँच: आवाज़ का स्वर बदला है या संवाद केवल धीमा है?",
+      "excerpt": "VLC for Android में आवाज़ बहुत भारी या पतली लगे तो दूसरे बदलाव करने से पहले मौजूदा इक्वलाइज़र सेटिंग को प्लेबैक वॉल्यूम से अलग जाँचें।",
+      "seo_title": "VLC for Android में IPTV इक्वलाइज़र जाँच",
+      "seo_description": "VLC for Android की मौजूदा इक्वलाइज़र सेटिंग और सामान्य वॉल्यूम की तुलना करें। संवाद का हिस्सा और आवाज़ सुनाने वाला उपकरण वही रखें।",
+      "sections": [
+        {"heading": "स्लाइडर बदलने से पहले आवाज़ का वर्णन करें", "paragraphs": ["IPTV इक्वलाइज़र जाँच की शुरुआत सुनाई देने वाली बात से करें। क्या संवाद केवल धीमा है, या आवाज़ असामान्य रूप से भारी, पतली या तीखी लगती है? तुलना के लिए कार्यक्रम का वही हिस्सा और वही स्पीकर या हेडफ़ोन रखें। वॉल्यूम बार-बार बढ़ाने के बजाय आरामदायक स्तर चुनें। लिखें कि असर पूरे कार्यक्रम में है या केवल किसी एक दृश्य में। इन बातों से अकेले सेवा, उपकरण या रिकॉर्डिंग की खराबी साबित नहीं होती।"], "items": [], "links": []},
+        {"heading": "VLC की एक मौजूदा सेटिंग जाँचें", "paragraphs": ["VideoLAN वीडियो प्लेयर के अतिरिक्त विकल्पों में इक्वलाइज़र बताता है, जिसमें चालू-बंद करने का नियंत्रण और पहले से बने प्रीसेट होते हैं। शुरुआत में यह बंद रहता है, लेकिन आपकी सहेजी सेटिंग अलग हो सकती है। उसकी स्थिति और चुने गए प्रीसेट को नोट करें। प्रोसेसिंग पहले से चालू हो तो इक्वलाइज़र बंद करके वही हिस्सा सुनें; वॉल्यूम और आउटपुट उपकरण न बदलें। संस्करण के अनुसार मेन्यू अलग हो सकता है। केवल प्रयोग के लिए कई फ़्रीक्वेंसी स्लाइडर एक साथ न बदलें।"], "items": [], "links": [{"label": "VideoLAN: Android वीडियो प्लेयर का इक्वलाइज़र", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]},
+        {"heading": "नतीजे को उसी तुलना तक सीमित रखें", "paragraphs": ["प्रोसेसिंग बंद करने से स्वर बदले तो उस अंतर को लिखें; इसे सब्सक्रिप्शन की मरम्मत न कहें। अंतर न आए तो इक्वलाइज़र छोड़कर बची हुई समस्या बताएँ। यह गायब स्ट्रीम वापस नहीं लाता और नेटवर्क की खराबी की वजह नहीं पहचानता। निजी सहायता को VLC संस्करण, आउटपुट उपकरण, प्रभावित हिस्सा और तुलना की गई सेटिंग बताएँ। लॉगिन जानकारी या निजी प्लेलिस्ट पते न भेजें और एक तुलना को पूरे उपकरण का निदान न मानें।"], "items": [], "links": []}
+      ]
+    }
+  },
+  "sources": [{"label": "VideoLAN: VLC for Android video-player equalizer", "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"}]
+}

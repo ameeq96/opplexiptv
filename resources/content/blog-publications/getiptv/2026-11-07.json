@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-07",
+  "topic": "Distinguish Google TV Apps only mode and its unavailable home-search features from a removed IPTV player or expired provider plan",
+  "primary_keyword": "Get IPTV Apps only mode",
+  "slug": "getiptv-google-tv-apps-only-mode-home-search",
+  "translations": {
+    "en": {
+      "title": "Get IPTV Apps only mode: why Google TV looks different",
+      "excerpt": "A simpler Google TV home screen can come from Apps only mode. Check that setting before treating missing recommendations, Search or Assistant as a player or subscription failure.",
+      "seo_title": "Get IPTV Apps only mode: check the Google TV home screen",
+      "seo_description": "Understand Get IPTV Apps only mode checks on Google TV. Separate hidden home recommendations and unavailable Search from an installed player or Opplex/Filex order state.",
+      "sections": [
+        {
+          "heading": "Describe what changed on the home screen",
+          "paragraphs": [
+            "A Get IPTV Apps only mode check is useful when Google TV shows an app list instead of its usual personalised recommendations. First press Home and note what is missing: recommendation rows, Search, or a particular player. These are different observations. Google’s mode changes parts of the home experience; its appearance alone does not show that the player was removed or an IPTV service expired. Record the device model and selected profile before changing anything."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the profile’s display mode",
+          "paragraphs": [
+            "Google documents this option inside the profile’s account settings. On your device, open Settings, find Accounts & Sign In or the corresponding Accounts & Profiles menu, and select your profile. Check whether Apps only mode is enabled. If the device owner wants the ordinary home view back, turn that mode off and return Home. Menu wording varies. Search and Google Assistant are unavailable in this mode, so a missing voice-search function is not automatically a network or player fault."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: Apps only mode and its limitations",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Open the player to check the actual symptom",
+          "paragraphs": [
+            "Apps only mode still lets you open installed apps. Sponsored tiles and recommendations inside an app may remain; the setting is not an advertisement or privacy reset. Open the existing intended player and note whether it starts, asks for sign-in or displays a specific playback error. Get IPTV offers Opplex and Filex plan choices, whose order state is separate from Google TV’s presentation. Changing this home-screen option does not activate either plan or establish a connection allowance. Ask support about the actual error rather than purchasing again because recommendations disappeared."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: por qué cambia Google TV con el modo Solo aplicaciones",
+      "excerpt": "Una pantalla de inicio más sencilla puede deberse al modo Solo aplicaciones. Compruébalo antes de interpretar la ausencia de recomendaciones, Búsqueda o Asistente como un fallo de la suscripción.",
+      "seo_title": "Get IPTV: comprueba el modo Solo aplicaciones de Google TV",
+      "seo_description": "Distingue el modo Solo aplicaciones de Google TV de un fallo del reproductor. Revisa recomendaciones, Búsqueda y el estado independiente del pedido Opplex o Filex.",
+      "sections": [
+        {
+          "heading": "Describe qué cambió en el inicio",
+          "paragraphs": [
+            "La comprobación del modo Solo aplicaciones para Get IPTV resulta útil cuando Google TV muestra una lista de aplicaciones en lugar de sus recomendaciones personalizadas habituales. Pulsa primero Inicio y anota qué falta: filas de recomendaciones, Búsqueda o un reproductor concreto. Son observaciones diferentes. Este modo modifica partes de la pantalla de inicio; su aspecto no demuestra por sí solo que se haya eliminado el reproductor o caducado el servicio IPTV. Anota el modelo del dispositivo y el perfil seleccionado antes de cambiar nada."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba el modo de presentación del perfil",
+          "paragraphs": [
+            "Google sitúa esta opción dentro de los ajustes de cuenta del perfil. En tu equipo, abre Ajustes, busca Cuentas e inicio de sesión o el menú equivalente Cuentas y perfiles y selecciona tu perfil. Comprueba si está activado Solo aplicaciones. Si el propietario quiere recuperar la vista habitual, desactívalo y vuelve a Inicio. Las etiquetas varían. En este modo no están disponibles Búsqueda ni el Asistente de Google; que falte la búsqueda por voz no significa automáticamente un fallo de red o del reproductor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google TV: modo Solo aplicaciones y limitaciones",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Abre el reproductor y observa el síntoma real",
+          "paragraphs": [
+            "Solo aplicaciones permite seguir abriendo las aplicaciones instaladas. Pueden permanecer elementos patrocinados y recomendaciones dentro de una aplicación; no es un reinicio de anuncios ni de privacidad. Abre el reproductor existente que corresponda y observa si arranca, pide acceso o presenta un error concreto de reproducción. Get IPTV ofrece opciones Opplex y Filex, cuyo estado de pedido es independiente del diseño de Google TV. Cambiar esta pantalla no activa ninguno de los planes ni determina las conexiones permitidas. Consulta el error real con soporte en vez de volver a comprar porque desaparecieron las recomendaciones."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : pourquoi le mode Applications uniquement change Google TV",
+      "excerpt": "Un accueil Google TV simplifié peut venir du mode Applications uniquement. Vérifiez ce réglage avant de confondre l’absence de recommandations ou de recherche avec une panne d’abonnement.",
+      "seo_title": "Get IPTV : vérifier le mode Applications uniquement",
+      "seo_description": "Distinguez le mode Applications uniquement de Google TV d’une panne du lecteur. Recommandations, recherche et commande Opplex ou Filex sont des éléments séparés.",
+      "sections": [
+        {
+          "heading": "Décrire ce qui a changé sur l’accueil",
+          "paragraphs": [
+            "Vérifier le mode Applications uniquement pour Get IPTV est utile lorsque Google TV affiche une liste d’applications à la place des recommandations personnalisées habituelles. Appuyez d’abord sur Accueil et notez ce qui manque : rangées de recommandations, recherche ou lecteur précis. Ce sont des observations distinctes. Ce mode change certaines parties de l’accueil ; son apparence ne prouve pas à elle seule que le lecteur a été supprimé ou que le service IPTV a expiré. Notez le modèle et le profil choisi avant toute modification."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifier le mode d’affichage du profil",
+          "paragraphs": [
+            "Google décrit cette option dans les paramètres du compte du profil. Sur votre appareil, ouvrez Paramètres, cherchez Comptes et connexion ou le menu équivalent Comptes et profils, puis sélectionnez votre profil. Vérifiez si Applications uniquement est activé. Si le propriétaire souhaite retrouver l’accueil ordinaire, désactivez ce mode et revenez à Accueil. Les libellés varient. La recherche et l’Assistant Google sont indisponibles dans ce mode : l’absence de recherche vocale n’indique donc pas automatiquement une panne réseau ou du lecteur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google TV : mode Applications uniquement et limites",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ouvrir le lecteur pour observer le vrai symptôme",
+          "paragraphs": [
+            "Ce mode permet toujours d’ouvrir les applications installées. Des éléments sponsorisés et des recommandations internes peuvent subsister ; ce réglage ne réinitialise ni les annonces ni la confidentialité. Ouvrez le lecteur existant prévu et observez s’il démarre, réclame une connexion ou affiche une erreur précise. Get IPTV propose des offres Opplex et Filex, dont la commande reste indépendante de la présentation Google TV. Modifier cet accueil n’active aucune offre et ne définit pas le nombre de connexions autorisées. Demandez de l’aide pour l’erreur réelle plutôt que de racheter parce que les recommandations ont disparu."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: perché la modalità Solo app cambia la schermata Google TV",
+      "excerpt": "Una schermata iniziale semplificata può dipendere dalla modalità Solo app. Controllala prima di considerare l’assenza di consigli, ricerca o Assistente un problema dell’abbonamento.",
+      "seo_title": "Get IPTV: controllare la modalità Solo app di Google TV",
+      "seo_description": "Distingui la modalità Solo app di Google TV da un guasto del lettore. Consigli, ricerca e stato dell’ordine Opplex o Filex richiedono controlli separati.",
+      "sections": [
+        {
+          "heading": "Descrivi cosa è cambiato nella schermata iniziale",
+          "paragraphs": [
+            "Controllare la modalità Solo app per Get IPTV è utile quando Google TV mostra un elenco di applicazioni al posto dei consueti consigli personalizzati. Premi prima Home e annota cosa manca: righe di consigli, ricerca oppure un lettore specifico. Sono osservazioni diverse. Questa modalità modifica alcune parti della schermata iniziale; il suo aspetto, da solo, non dimostra che il lettore sia stato rimosso o che il servizio IPTV sia scaduto. Annota modello del dispositivo e profilo selezionato prima di cambiare qualcosa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla la modalità di visualizzazione del profilo",
+          "paragraphs": [
+            "Google documenta questa opzione nelle impostazioni dell’account del profilo. Sul dispositivo apri Impostazioni, cerca Account e accesso oppure l’equivalente Account e profili e seleziona il tuo profilo. Verifica se Solo app è attiva. Se il proprietario vuole ripristinare la schermata abituale, disattiva la modalità e torna a Home. Le etichette possono variare. In questa modalità non sono disponibili la ricerca e l’Assistente Google: la mancanza della ricerca vocale non indica automaticamente un guasto della rete o del lettore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google TV: modalità Solo app e relative limitazioni",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Apri il lettore e osserva il sintomo reale",
+          "paragraphs": [
+            "La modalità Solo app consente ancora di aprire le applicazioni installate. Possono restare elementi sponsorizzati e consigli interni alle app; non è un ripristino della pubblicità o della privacy. Apri il lettore previsto già installato e osserva se parte, richiede l’accesso o mostra un errore preciso. Get IPTV propone piani Opplex e Filex, il cui stato d’ordine è distinto dall’interfaccia di Google TV. Cambiare questa schermata non attiva alcun piano e non stabilisce le connessioni consentite. Chiedi assistenza per l’errore effettivo invece di acquistare di nuovo perché sono scomparsi i consigli."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: waarom Google TV anders oogt in Alleen apps-modus",
+      "excerpt": "Een eenvoudiger Google TV-startscherm kan door Alleen apps-modus komen. Controleer die instelling voordat ontbrekende aanbevelingen, Zoeken of de Assistent op een abonnementsfout lijken.",
+      "seo_title": "Get IPTV: controleer Alleen apps-modus op Google TV",
+      "seo_description": "Maak onderscheid tussen Alleen apps-modus en een probleem met de speler. Aanbevelingen, Zoeken en de status van een Opplex- of Filex-bestelling zijn aparte zaken.",
+      "sections": [
+        {
+          "heading": "Beschrijf wat op het startscherm veranderde",
+          "paragraphs": [
+            "Alleen apps-modus controleren voor Get IPTV is nuttig wanneer Google TV een lijst apps toont in plaats van de gebruikelijke persoonlijke aanbevelingen. Druk eerst op Home en noteer wat ontbreekt: aanbevelingsrijen, Zoeken of een bepaalde speler. Dat zijn verschillende waarnemingen. Deze modus verandert delen van het startscherm; alleen dat uiterlijk bewijst niet dat de speler verwijderd is of de IPTV-dienst verlopen is. Noteer het apparaatmodel en gekozen profiel voordat je iets wijzigt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de weergavemodus van het profiel",
+          "paragraphs": [
+            "Google beschrijft deze optie bij de accountinstellingen van het profiel. Open Instellingen op je apparaat, zoek Accounts en inloggen of het overeenkomende menu Accounts en profielen en kies je profiel. Controleer of Alleen apps-modus aanstaat. Wil de eigenaar het gewone startscherm terug, zet de modus dan uit en ga naar Home. Menunamen verschillen. Zoeken en de Google Assistent zijn in deze modus niet beschikbaar; ontbrekend spraakzoeken betekent dus niet automatisch dat het netwerk of de speler defect is."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: Alleen apps-modus en beperkingen",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Open de speler en bekijk het echte probleem",
+          "paragraphs": [
+            "In Alleen apps-modus kun je geïnstalleerde apps nog steeds openen. Gesponsorde tegels en aanbevelingen binnen apps kunnen blijven staan; deze instelling wist geen advertenties of privacyvoorkeuren. Open de bedoelde bestaande speler en noteer of hij start, om aanmelden vraagt of een specifieke afspeelfout toont. Get IPTV biedt Opplex- en Filex-opties; de bestelstatus daarvan staat los van de Google TV-weergave. Deze scherminstelling activeert geen abonnement en bepaalt geen verbindingslimiet. Vraag ondersteuning voor de echte fout in plaats van opnieuw te kopen omdat aanbevelingen verdwenen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: porque muda o Google TV no modo Apenas aplicações",
+      "excerpt": "Um ecrã inicial mais simples pode resultar do modo Apenas aplicações. Verifique-o antes de interpretar a ausência de recomendações, Pesquisa ou Assistente como falha da subscrição.",
+      "seo_title": "Get IPTV: verifique o modo Apenas aplicações do Google TV",
+      "seo_description": "Distinga o modo Apenas aplicações do Google TV de uma falha do leitor. Recomendações, Pesquisa e estado da encomenda Opplex ou Filex são questões separadas.",
+      "sections": [
+        {
+          "heading": "Descreva o que mudou no ecrã inicial",
+          "paragraphs": [
+            "Verificar o modo Apenas aplicações para Get IPTV é útil quando o Google TV mostra uma lista de aplicações em vez das recomendações personalizadas habituais. Prima primeiro Início e anote o que falta: linhas de recomendações, Pesquisa ou um leitor específico. São observações diferentes. Este modo altera partes do ecrã inicial; o seu aspeto, por si só, não demonstra que o leitor foi removido ou que o serviço IPTV expirou. Registe o modelo do dispositivo e o perfil selecionado antes de alterar algo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifique o modo de apresentação do perfil",
+          "paragraphs": [
+            "A Google documenta esta opção nas definições da conta do perfil. No dispositivo, abra Definições, procure Contas e início de sessão ou o menu equivalente Contas e perfis e selecione o seu perfil. Confirme se Apenas aplicações está ativo. Se o proprietário quiser recuperar a apresentação habitual, desative esse modo e regresse a Início. As designações variam. A Pesquisa e o Assistente Google não estão disponíveis neste modo; a ausência de pesquisa por voz não significa automaticamente uma falha de rede ou do leitor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google TV: modo Apenas aplicações e limitações",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Abra o leitor para observar o problema real",
+          "paragraphs": [
+            "O modo Apenas aplicações continua a permitir abrir aplicações instaladas. Podem permanecer elementos patrocinados e recomendações dentro de uma aplicação; esta opção não repõe a publicidade nem a privacidade. Abra o leitor existente pretendido e observe se inicia, pede acesso ou apresenta um erro específico. O Get IPTV oferece opções Opplex e Filex, cujo estado de encomenda é independente da apresentação do Google TV. Alterar este ecrã não ativa qualquer plano nem determina as ligações permitidas. Peça ajuda para o erro real em vez de comprar novamente por terem desaparecido as recomendações."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: почему Google TV иначе выглядит в режиме «Только приложения»",
+      "excerpt": "Упрощённый главный экран может быть результатом режима «Только приложения». Проверьте настройку, прежде чем считать отсутствие рекомендаций, поиска или Ассистента сбоем подписки.",
+      "seo_title": "Get IPTV: проверьте режим «Только приложения» в Google TV",
+      "seo_description": "Отличайте режим «Только приложения» Google TV от сбоя плеера. Рекомендации, поиск и состояние заказа Opplex или Filex проверяются отдельно.",
+      "sections": [
+        {
+          "heading": "Опишите изменения главного экрана",
+          "paragraphs": [
+            "Проверка режима «Только приложения» для Get IPTV полезна, когда Google TV показывает список приложений вместо обычных персональных рекомендаций. Сначала нажмите Home и отметьте, чего не хватает: рядов рекомендаций, поиска или конкретного плеера. Это разные наблюдения. Режим меняет части главного экрана; один лишь его вид не означает, что плеер удалён или срок услуги IPTV истёк. Прежде чем что-либо менять, запишите модель устройства и выбранный профиль."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте режим отображения профиля",
+          "paragraphs": [
+            "Google описывает эту опцию в настройках аккаунта профиля. Откройте настройки устройства, найдите «Аккаунты и вход» или соответствующий раздел «Аккаунты и профили» и выберите свой профиль. Посмотрите, включён ли режим «Только приложения». Если владелец хочет вернуть обычный экран, выключите режим и нажмите Home. Названия меню различаются. В этом режиме недоступны поиск и Google Ассистент, поэтому отсутствие голосового поиска ещё не означает неисправность сети или плеера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google TV: режим «Только приложения» и ограничения",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Откройте плеер и уточните настоящий симптом",
+          "paragraphs": [
+            "Режим «Только приложения» по-прежнему позволяет запускать установленные приложения. Рекламные карточки и рекомендации внутри приложения могут остаться: настройка не сбрасывает рекламу или конфиденциальность. Откройте нужный существующий плеер и запишите, запускается ли он, требует ли входа или показывает конкретную ошибку воспроизведения. Get IPTV предлагает варианты Opplex и Filex; состояние их заказа не зависит от оформления Google TV. Изменение экрана не активирует тариф и не устанавливает число разрешённых подключений. Обратитесь за помощью по настоящей ошибке вместо повторной покупки из-за исчезнувших рекомендаций."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: صرف ایپس موڈ میں Google TV مختلف کیوں نظر آتا ہے؟",
+      "excerpt": "Google TV کا سادہ ہوم اسکرین صرف ایپس موڈ کی وجہ سے ہو سکتا ہے۔ تجاویز، سرچ یا اسسٹنٹ غائب ہوں تو اسے فوراً پلیئر یا سبسکرپشن کی خرابی سمجھنے سے پہلے یہ ترتیب دیکھیں۔",
+      "seo_title": "Get IPTV کے لیے Google TV کا صرف ایپس موڈ جانچیں",
+      "seo_description": "Google TV کے صرف ایپس موڈ کو پلیئر کی خرابی سے الگ پہچانیں۔ ہوم تجاویز، سرچ اور Opplex یا Filex کے آرڈر کی حالت الگ چیزیں ہیں۔",
+      "sections": [
+        {
+          "heading": "بتائیں کہ ہوم اسکرین پر کیا بدلا",
+          "paragraphs": [
+            "Get IPTV کے لیے صرف ایپس موڈ دیکھنا تب مفید ہے جب Google TV معمول کی ذاتی تجاویز کی جگہ ایپس کی فہرست دکھائے۔ پہلے ہوم دبائیں اور لکھیں کہ کیا غائب ہے: تجاویز کی قطاریں، سرچ یا کوئی مخصوص پلیئر۔ یہ مختلف مشاہدات ہیں۔ یہ موڈ ہوم اسکرین کے کچھ حصے بدلتا ہے؛ صرف اس کی شکل سے یہ ثابت نہیں ہوتا کہ پلیئر حذف ہوا یا IPTV سروس ختم ہو گئی۔ کوئی تبدیلی کرنے سے پہلے ڈیوائس کا ماڈل اور منتخب پروفائل نوٹ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "پروفائل کی نمائش کا موڈ دیکھیں",
+          "paragraphs": [
+            "Google کے مطابق یہ اختیار پروفائل کے اکاؤنٹ کی ترتیبات میں ہوتا ہے۔ اپنی ڈیوائس پر ترتیبات کھولیں، اکاؤنٹس اور سائن اِن یا اس کے مساوی اکاؤنٹس اور پروفائلز کا مینو تلاش کریں، پھر اپنا پروفائل چنیں۔ دیکھیں کہ صرف ایپس موڈ فعال ہے یا نہیں۔ اگر مالک معمول کا ہوم واپس چاہتا ہے تو یہ موڈ بند کر کے ہوم پر آئیں۔ مینو کے نام مختلف ہو سکتے ہیں۔ اس موڈ میں سرچ اور Google Assistant دستیاب نہیں ہوتے؛ اس لیے صوتی تلاش کا غائب ہونا لازماً نیٹ ورک یا پلیئر کی خرابی نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV مدد: صرف ایپس موڈ اور اس کی حدود",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اصل علامت جاننے کے لیے پلیئر کھولیں",
+          "paragraphs": [
+            "صرف ایپس موڈ میں انسٹال شدہ ایپس اب بھی کھولی جا سکتی ہیں۔ اشتہاری کارڈ اور ایپ کے اندر کی تجاویز باقی رہ سکتی ہیں؛ یہ اختیار اشتہارات یا پرائیویسی کی ترتیبات کو ری سیٹ نہیں کرتا۔ مطلوبہ موجودہ پلیئر کھول کر دیکھیں کہ وہ شروع ہوتا ہے، سائن اِن مانگتا ہے یا کوئی واضح پلے بیک خرابی دکھاتا ہے۔ Get IPTV پر Opplex اور Filex کے پلان ہیں، جن کے آرڈر کی حالت Google TV کی نمائش سے الگ ہے۔ یہ ہوم ترتیب بدلنے سے کوئی پلان فعال نہیں ہوتا اور کنکشن کی حد بھی متعین نہیں ہوتی۔ تجاویز غائب ہونے پر دوبارہ خریدنے کے بجائے اصل خرابی کے لیے مدد لیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: لماذا يبدو Google TV مختلفاً في وضع التطبيقات فقط؟",
+      "excerpt": "قد تكون الشاشة الرئيسية المبسطة ناتجة عن وضع التطبيقات فقط. راجع الإعداد قبل اعتبار اختفاء الاقتراحات أو البحث أو المساعد عطلاً في المشغّل أو الاشتراك.",
+      "seo_title": "Get IPTV: راجع وضع التطبيقات فقط في Google TV",
+      "seo_description": "ميّز وضع التطبيقات فقط في Google TV عن عطل المشغّل. الاقتراحات والبحث وحالة طلب Opplex أو Filex أمور منفصلة تحتاج إلى ملاحظة دقيقة.",
+      "sections": [
+        {
+          "heading": "صِف ما تغيّر في الشاشة الرئيسية",
+          "paragraphs": [
+            "تفيد مراجعة وضع التطبيقات فقط مع Get IPTV عندما يعرض Google TV قائمة تطبيقات بدلاً من اقتراحاته الشخصية المعتادة. اضغط الصفحة الرئيسية أولاً وسجّل ما ينقص: صفوف الاقتراحات أم البحث أم مشغّل معين. هذه ملاحظات مختلفة. يغيّر الوضع أجزاء من تجربة الشاشة الرئيسية؛ ومظهرها وحده لا يثبت حذف المشغّل أو انتهاء خدمة IPTV. دوّن طراز الجهاز والملف الشخصي المحدد قبل إجراء أي تعديل."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع وضع عرض الملف الشخصي",
+          "paragraphs": [
+            "توضح Google وجود هذا الخيار ضمن إعدادات حساب الملف الشخصي. افتح الإعدادات على جهازك، وابحث عن الحسابات وتسجيل الدخول أو قائمة الحسابات والملفات الشخصية المقابلة، ثم اختر ملفك. تحقق من تفعيل وضع التطبيقات فقط. إذا أراد مالك الجهاز استعادة العرض المعتاد، فأوقف الوضع وعُد إلى الصفحة الرئيسية. قد تختلف أسماء القوائم. لا يتوفر البحث ولا مساعد Google في هذا الوضع، ولذلك لا يدل اختفاء البحث الصوتي تلقائياً على عطل بالشبكة أو المشغّل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google TV: وضع التطبيقات فقط وحدوده",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افتح المشغّل لملاحظة العارض الفعلي",
+          "paragraphs": [
+            "لا يزال وضع التطبيقات فقط يسمح بفتح التطبيقات المثبتة. وقد تبقى بطاقات إعلانية واقتراحات داخل التطبيقات؛ فالإعداد ليس إعادة ضبط للإعلانات أو الخصوصية. افتح المشغّل الموجود المقصود ولاحظ هل يبدأ أم يطلب تسجيل الدخول أم يعرض خطأ تشغيل محدداً. يقدم Get IPTV خيارات Opplex وFilex، وتبقى حالة طلبها منفصلة عن طريقة عرض Google TV. تغيير الشاشة الرئيسية لا يفعّل أياً من الباقات ولا يحدد عدد الاتصالات المسموح بها. اطلب المساعدة بشأن الخطأ الحقيقي بدلاً من الشراء مجدداً بسبب اختفاء الاقتراحات."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: सिर्फ ऐप्लिकेशन मोड में Google TV अलग क्यों दिखता है?",
+      "excerpt": "Google TV का सरल होम स्क्रीन सिर्फ ऐप्लिकेशन मोड की वजह से हो सकता है। सुझाव, खोज या Assistant न दिखें तो उसे तुरंत प्लेयर या सदस्यता की खराबी समझने से पहले यह सेटिंग जाँचें।",
+      "seo_title": "Get IPTV: Google TV का सिर्फ ऐप्लिकेशन मोड जाँचें",
+      "seo_description": "Google TV के सिर्फ ऐप्लिकेशन मोड को प्लेयर की खराबी से अलग पहचानें। सुझाव, खोज और Opplex या Filex ऑर्डर की स्थिति अलग-अलग जाँचने की चीजें हैं।",
+      "sections": [
+        {
+          "heading": "बताएँ कि होम स्क्रीन पर क्या बदला",
+          "paragraphs": [
+            "Get IPTV के लिए सिर्फ ऐप्लिकेशन मोड जाँचना तब उपयोगी है जब Google TV सामान्य निजी सुझावों के बदले ऐप्स की सूची दिखाए। पहले होम दबाएँ और लिखें कि क्या गायब है: सुझावों की पंक्तियाँ, खोज या कोई खास प्लेयर। ये अलग-अलग बातें हैं। यह मोड होम स्क्रीन के कुछ हिस्से बदलता है; केवल उसका रूप यह साबित नहीं करता कि प्लेयर हट गया है या IPTV सेवा समाप्त हो गई है। कुछ बदलने से पहले डिवाइस का मॉडल और चुनी हुई प्रोफाइल नोट करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "प्रोफाइल का डिस्प्ले मोड जाँचें",
+          "paragraphs": [
+            "Google के अनुसार यह विकल्प प्रोफाइल की खाता सेटिंग में मिलता है। अपने डिवाइस पर सेटिंग खोलें, खाते और साइन-इन या उसके समान खाते और प्रोफाइल वाला मेनू खोजें, फिर अपनी प्रोफाइल चुनें। देखें कि सिर्फ ऐप्लिकेशन मोड चालू है या नहीं। मालिक सामान्य होम स्क्रीन वापस चाहता हो तो यह मोड बंद करके होम पर आएँ। मेनू के नाम बदल सकते हैं। इस मोड में खोज और Google Assistant उपलब्ध नहीं होते; इसलिए आवाज़ से खोज गायब होना अपने-आप नेटवर्क या प्लेयर की खराबी नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV सहायता: सिर्फ ऐप्लिकेशन मोड और उसकी सीमाएँ",
+              "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "असली लक्षण देखने के लिए प्लेयर खोलें",
+          "paragraphs": [
+            "सिर्फ ऐप्लिकेशन मोड में इंस्टॉल किए गए ऐप्स अब भी खुलते हैं। प्रायोजित कार्ड और ऐप के अंदर के सुझाव रह सकते हैं; यह सेटिंग विज्ञापन या गोपनीयता रीसेट नहीं करती। मौजूदा इच्छित प्लेयर खोलकर देखें कि वह शुरू होता है, साइन-इन माँगता है या कोई निश्चित प्लेबैक त्रुटि दिखाता है। Get IPTV पर Opplex और Filex प्लान हैं, जिनकी ऑर्डर स्थिति Google TV के रूप से अलग है। यह होम सेटिंग बदलने से कोई प्लान सक्रिय नहीं होता और न ही अनुमत कनेक्शन संख्या तय होती है। सुझाव गायब होने पर फिर खरीदने के बजाय असली त्रुटि के लिए सहायता लें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: hide personalised recommendations and use Apps only mode",
+      "url": "https://support.google.com/googletv/answer/10070784?hl=en"
+    }
+  ]
+}

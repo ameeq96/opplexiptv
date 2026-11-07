@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-07",
+  "topic": "Android notification interruptions versus media sound: review the active Do Not Disturb filters separately from video volume during a 5G Live IPTV session",
+  "primary_keyword": "5G Live IPTV notification settings",
+  "slug": "5g-android-do-not-disturb-notifications-versus-media-volume",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV notification settings: alerts and media",
+      "excerpt": "A notification banner, a ringtone and silent video are different observations. Review the phone’s interruption mode and media volume separately before changing a player or subscription.",
+      "seo_title": "5G Live IPTV notification settings: alerts versus media",
+      "seo_description": "Review 5G Live IPTV notification settings on Android, check Do Not Disturb filters and media volume separately, and describe a repeatable interruption without resetting the player.",
+      "sections": [
+        {
+          "heading": "Identify the interruption before changing anything",
+          "paragraphs": [
+            "Start a 5G Live IPTV notification settings check by describing what happened: a banner covered the picture, a notification made a sound, or the programme audio went quiet. Note whether playback continued underneath. These are different clues, so keep the same player, output device and programme for comparison. A notification appearing on screen does not by itself establish buffering, and silence does not establish an expired plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review the active mode and its exceptions",
+          "paragraphs": [
+            "On supported Android versions, Settings, then Modes, leads to Do Not Disturb and its notification filters. Google distinguishes people, apps, and alarms or other interruptions; the latter can include media. Read the options actually present on your phone rather than assuming Do Not Disturb always leaves video sound unchanged. Record the current choices before adjusting one preference. Menu names vary by manufacturer and version, and some documented steps require Android 14 or later."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android interruption modes and Do Not Disturb",
+              "url": "https://support.google.com/android/answer/9069335?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Compare media volume and record a useful result",
+          "paragraphs": [
+            "Check the media-volume slider separately from ring, notification and alarm levels. Use a modest listening level, then compare the same short passage after one chosen change. Preserve the calls or alarms you still need; do not enable every app exception merely for a viewing check. If the issue remains, report the phone model, Android version, active mode, audio output and whether the picture continued. Do not send passwords or private playlist links."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: distinguish Android volume controls",
+              "url": "https://support.google.com/android/answer/9082609?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV en Android: avisos, modo silencio y sonido del vídeo",
+      "excerpt": "Un aviso sobre la imagen, un tono y un vídeo sin sonido son síntomas distintos. Revisa el modo de interrupciones y el volumen multimedia por separado antes de cambiar el reproductor.",
+      "seo_title": "5G Live IPTV: notificaciones y volumen multimedia",
+      "seo_description": "Revisa las notificaciones de 5G Live IPTV en Android, comprueba los filtros de No molestar y el volumen multimedia y describe el problema sin reiniciar el reproductor.",
+      "sections": [
+        {
+          "heading": "Identifica la interrupción antes de tocar los ajustes",
+          "paragraphs": [
+            "Para revisar las notificaciones mientras usas 5G Live IPTV, describe lo ocurrido: un aviso cubrió la imagen, sonó una notificación o el audio del programa quedó en silencio. Anota si la reproducción siguió por debajo. Son pistas diferentes; mantén el mismo reproductor, salida de audio y programa para comparar. Un aviso en pantalla no demuestra por sí solo un problema de carga, y el silencio no prueba que el plan haya caducado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa el modo activo y sus excepciones",
+          "paragraphs": [
+            "En versiones compatibles de Android, Ajustes y después Modos permiten acceder a No molestar y sus filtros. Google distingue personas, aplicaciones y alarmas u otras interrupciones; estas últimas pueden incluir contenido multimedia. Lee las opciones reales del teléfono, sin dar por hecho que No molestar mantiene siempre el sonido del vídeo. Anota las opciones actuales antes de cambiar una preferencia. Los nombres varían según fabricante y versión; algunos pasos requieren Android 14 o posterior."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara el volumen multimedia y guarda el resultado",
+          "paragraphs": [
+            "Comprueba el volumen multimedia por separado del tono, las notificaciones y las alarmas. Escucha a un nivel moderado y compara el mismo fragmento tras un único cambio. Conserva las llamadas o alarmas que necesites; no habilites todas las excepciones de aplicaciones solo para hacer la prueba. Si continúa, indica modelo, versión de Android, modo activo, salida de audio y si la imagen siguió reproduciéndose. No envíes contraseñas ni enlaces privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV sur Android : notifications et son de la vidéo",
+      "excerpt": "Une bannière, une sonnerie et une vidéo muette sont des signes différents. Examinez séparément le mode d’interruption et le volume multimédia avant de modifier le lecteur.",
+      "seo_title": "5G Live IPTV : notifications et volume multimédia",
+      "seo_description": "Vérifiez les notifications avec 5G Live IPTV sur Android, les filtres Ne pas déranger et le volume multimédia, puis décrivez le problème sans réinitialiser le lecteur.",
+      "sections": [
+        {
+          "heading": "Identifiez d’abord la nature de l’interruption",
+          "paragraphs": [
+            "Pour examiner les notifications avec 5G Live IPTV, décrivez précisément le problème : une bannière masque l’image, un avertissement sonore retentit ou le programme devient silencieux. Notez si la lecture continue derrière la notification. Ces signes diffèrent ; gardez le même lecteur, la même sortie audio et le même programme pour comparer. Une notification visible ne prouve pas à elle seule un problème de chargement, et le silence ne prouve pas l’expiration du forfait."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examinez le mode actif et ses exceptions",
+          "paragraphs": [
+            "Sur les versions Android compatibles, Paramètres, puis Modes, donnent accès à Ne pas déranger et aux filtres de notification. Google distingue les personnes, les applications et les alarmes ou autres interruptions ; ces dernières peuvent inclure les médias. Lisez les options réellement disponibles sans supposer que Ne pas déranger conserve toujours le son des vidéos. Notez les choix actuels avant de changer une préférence. Les intitulés varient selon le fabricant et la version ; certaines étapes demandent Android 14 ou ultérieur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez le volume multimédia et décrivez le résultat",
+          "paragraphs": [
+            "Vérifiez le curseur multimédia séparément des sonneries, notifications et alarmes. À un volume modéré, comparez le même court passage après une seule modification. Conservez les appels ou alarmes nécessaires ; n’autorisez pas toutes les applications uniquement pour cette vérification. Si le problème persiste, indiquez le modèle, la version Android, le mode actif, la sortie audio et si l’image continuait. Ne communiquez ni mot de passe ni adresse privée de liste de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV su Android: notifiche e volume del video",
+      "excerpt": "Un avviso sopra l’immagine, una suoneria e un video muto sono situazioni diverse. Controlla separatamente la modalità di interruzione e il volume multimediale prima di cambiare lettore.",
+      "seo_title": "5G Live IPTV: notifiche e volume multimediale",
+      "seo_description": "Controlla le notifiche per 5G Live IPTV su Android, i filtri Non disturbare e il volume multimediale, poi descrivi il problema senza azzerare il lettore.",
+      "sections": [
+        {
+          "heading": "Identifica l’interruzione prima di modificare qualcosa",
+          "paragraphs": [
+            "Per verificare le notifiche durante 5G Live IPTV, descrivi cosa è successo: un avviso copriva l’immagine, è suonata una notifica oppure l’audio del programma è diventato muto. Annota se la riproduzione continuava sotto l’avviso. Sono indizi diversi; mantieni invariati lettore, uscita audio e programma durante il confronto. Una notifica visibile non dimostra da sola un problema di caricamento, e il silenzio non dimostra la scadenza del piano."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla la modalità attiva e le eccezioni",
+          "paragraphs": [
+            "Nelle versioni compatibili di Android, Impostazioni e poi Modalità consentono di aprire Non disturbare e i filtri delle notifiche. Google distingue persone, app e sveglie o altre interruzioni; queste ultime possono includere i contenuti multimediali. Leggi le opzioni effettivamente presenti senza presumere che Non disturbare lasci sempre invariato l’audio video. Annota le scelte correnti prima di cambiarne una. I nomi variano per produttore e versione; alcuni passaggi richiedono Android 14 o successivo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta il volume multimediale e annota il risultato",
+          "paragraphs": [
+            "Controlla il cursore multimediale separatamente da suoneria, notifiche e sveglie. Con un livello moderato, confronta lo stesso breve passaggio dopo una sola modifica. Conserva chiamate e sveglie che ti servono; non autorizzare ogni app soltanto per questa verifica. Se il problema resta, indica modello, versione Android, modalità attiva, uscita audio e se l’immagine continuava. Non inviare password o indirizzi privati delle liste di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV op Android: meldingen en mediageluid",
+      "excerpt": "Een melding over het beeld, een beltoon en een stille video zijn verschillende signalen. Bekijk de onderbrekingsmodus en het mediavolume apart voordat je de speler verandert.",
+      "seo_title": "5G Live IPTV: meldingen en mediavolume controleren",
+      "seo_description": "Controleer Android-meldingen bij 5G Live IPTV, bekijk Niet storen en het mediavolume afzonderlijk en beschrijf het probleem zonder de speler te resetten.",
+      "sections": [
+        {
+          "heading": "Beschrijf de onderbreking voordat je iets wijzigt",
+          "paragraphs": [
+            "Begin een controle van meldingen bij 5G Live IPTV met wat er gebeurde: een melding bedekte het beeld, er klonk een meldingsgeluid of het programma werd stil. Noteer of de video daaronder bleef afspelen. Dit zijn verschillende aanwijzingen; houd dezelfde speler, geluidsuitvoer en hetzelfde programma voor de vergelijking. Een melding op het scherm bewijst op zichzelf geen laadprobleem, en stilte bewijst niet dat het abonnement is verlopen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de actieve modus en de uitzonderingen",
+          "paragraphs": [
+            "Op ondersteunde Android-versies vind je Niet storen en meldingsfilters via Instellingen en daarna Modi. Google onderscheidt personen, apps, en alarmen of andere onderbrekingen; onder die laatste categorie kunnen media vallen. Lees de opties op jouw telefoon in plaats van aan te nemen dat Niet storen het videogeluidsniveau altijd ongemoeid laat. Noteer de huidige keuzes voordat je één voorkeur verandert. Namen verschillen per fabrikant en versie; sommige stappen vereisen Android 14 of nieuwer."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk mediavolume en leg de uitkomst vast",
+          "paragraphs": [
+            "Controleer de mediaschuif apart van beltoon-, meldings- en alarmvolume. Kies een bescheiden luistersterkte en vergelijk hetzelfde korte fragment na één wijziging. Behoud oproepen of alarmen die je nodig hebt; sta niet zomaar alle app-uitzonderingen toe voor deze controle. Blijft het probleem bestaan, vermeld dan telefoonmodel, Android-versie, actieve modus, geluidsuitvoer en of het beeld bleef bewegen. Deel geen wachtwoorden of privélinks naar afspeellijsten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV no Android: notificações e som do vídeo",
+      "excerpt": "Um aviso sobre a imagem, um toque e um vídeo sem som são sinais diferentes. Reveja separadamente o modo de interrupções e o volume multimédia antes de alterar o leitor.",
+      "seo_title": "5G Live IPTV: notificações e volume multimédia",
+      "seo_description": "Reveja as notificações de 5G Live IPTV no Android, os filtros Não incomodar e o volume multimédia, e descreva a interrupção sem repor o leitor.",
+      "sections": [
+        {
+          "heading": "Identifique a interrupção antes de alterar definições",
+          "paragraphs": [
+            "Ao verificar notificações durante 5G Live IPTV, descreva o que aconteceu: um aviso tapou a imagem, uma notificação emitiu som ou o programa ficou silencioso. Anote se a reprodução continuou por baixo. São indícios distintos; mantenha o mesmo leitor, saída de áudio e programa durante a comparação. Uma notificação visível não demonstra, por si só, um problema de carregamento, e o silêncio não demonstra que o plano caducou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reveja o modo ativo e as exceções",
+          "paragraphs": [
+            "Nas versões compatíveis do Android, Definições e depois Modos dão acesso a Não incomodar e aos filtros de notificações. A Google distingue pessoas, aplicações e alarmes ou outras interrupções; estas últimas podem incluir multimédia. Leia as opções reais do telefone, sem presumir que Não incomodar mantém sempre o som do vídeo. Anote as escolhas atuais antes de alterar uma preferência. Os nomes variam por fabricante e versão; alguns passos exigem Android 14 ou posterior."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare o volume multimédia e registe o resultado",
+          "paragraphs": [
+            "Verifique o volume multimédia separadamente do toque, das notificações e dos alarmes. Use um nível moderado e compare o mesmo excerto após uma única alteração. Mantenha as chamadas ou alarmes necessários; não autorize todas as aplicações apenas para esta verificação. Se o problema continuar, indique modelo, versão do Android, modo ativo, saída de áudio e se a imagem continuou. Não envie palavras-passe nem ligações privadas de listas de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV на Android: уведомления и звук видео",
+      "excerpt": "Уведомление поверх изображения, звонок и беззвучное видео — разные признаки. Проверьте режим прерываний и громкость мультимедиа отдельно, прежде чем менять проигрыватель.",
+      "seo_title": "5G Live IPTV: уведомления и громкость мультимедиа",
+      "seo_description": "Проверьте уведомления при просмотре 5G Live IPTV на Android, фильтры режима «Не беспокоить» и громкость мультимедиа, не сбрасывая настройки проигрывателя.",
+      "sections": [
+        {
+          "heading": "Сначала определите вид прерывания",
+          "paragraphs": [
+            "При проверке уведомлений во время просмотра 5G Live IPTV опишите событие: баннер закрыл изображение, прозвучало уведомление или программа стала беззвучной. Отметьте, продолжалось ли воспроизведение под уведомлением. Это разные признаки; для сравнения сохраните тот же проигрыватель, аудиовыход и программу. Само уведомление на экране не доказывает проблему загрузки, а отсутствие звука не доказывает окончание подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте активный режим и исключения",
+          "paragraphs": [
+            "На поддерживаемых версиях Android раздел «Настройки», затем «Режимы» открывает режим «Не беспокоить» и фильтры уведомлений. Google разделяет людей, приложения, будильники и другие прерывания; последние могут включать мультимедиа. Изучите доступные на телефоне параметры, не предполагая, что режим всегда сохраняет звук видео. Запишите исходные значения и измените только одно. Названия зависят от производителя и версии; некоторые шаги требуют Android 14 или более новой системы."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сравните громкость мультимедиа и запишите результат",
+          "paragraphs": [
+            "Проверьте громкость мультимедиа отдельно от звонка, уведомлений и будильника. При умеренной громкости сравните один короткий фрагмент после единственного изменения. Сохраните нужные звонки и будильники; не разрешайте исключения всем приложениям только ради проверки просмотра. Если проблема осталась, укажите модель телефона, версию Android, активный режим, аудиовыход и продолжалось ли изображение. Не передавайте пароли и закрытые адреса плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Android پر 5G Live IPTV: نوٹیفکیشن اور ویڈیو کی آواز",
+      "excerpt": "تصویر پر آنے والا پیغام، گھنٹی اور خاموش ویڈیو الگ علامات ہیں۔ پلیئر بدلنے سے پہلے مداخلت کے موڈ اور میڈیا والیوم کو الگ الگ دیکھیں۔",
+      "seo_title": "5G Live IPTV کے نوٹیفکیشن اور میڈیا والیوم",
+      "seo_description": "Android پر 5G Live IPTV کے نوٹیفکیشن، ڈو ناٹ ڈسٹرب کے فلٹر اور میڈیا والیوم الگ دیکھیں، اور پلیئر ری سیٹ کیے بغیر مسئلے کی درست تفصیل تیار کریں۔",
+      "sections": [
+        {
+          "heading": "پہلے پہچانیں کہ رکاوٹ کیا تھی",
+          "paragraphs": [
+            "5G Live IPTV کے دوران نوٹیفکیشن کی جانچ میں پہلے واقعہ بیان کریں: کیا پیغام نے تصویر چھپا دی، اطلاع کی آواز آئی یا پروگرام کی آواز بند ہو گئی؟ نوٹ کریں کہ اس کے پیچھے ویڈیو چلتی رہی یا نہیں۔ یہ الگ علامات ہیں، اس لیے موازنہ کرتے وقت پلیئر، آواز کا آلہ اور پروگرام وہی رکھیں۔ اسکرین پر نوٹیفکیشن آنا بذات خود بفرنگ ثابت نہیں کرتا، اور خاموشی سے پلان ختم ہونے کا فیصلہ نہیں کیا جا سکتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "فعال موڈ اور اس کی رعایتیں دیکھیں",
+          "paragraphs": [
+            "مطابقت رکھنے والے Android ورژن میں سیٹنگز کے بعد موڈز کھولنے سے ڈو ناٹ ڈسٹرب اور اطلاع کے فلٹر ملتے ہیں۔ Google لوگوں، ایپس اور الارم یا دوسری مداخلتوں میں فرق کرتا ہے؛ آخری حصے میں میڈیا بھی شامل ہو سکتا ہے۔ اپنے فون کے اصل اختیارات پڑھیں، یہ فرض نہ کریں کہ یہ موڈ ہمیشہ ویڈیو کی آواز برقرار رکھتا ہے۔ ایک ترجیح بدلنے سے پہلے موجودہ انتخاب لکھ لیں۔ مینو کے نام کمپنی اور ورژن کے مطابق بدلتے ہیں؛ بعض مراحل کے لیے Android 14 یا نیا ورژن چاہیے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "میڈیا والیوم الگ دیکھ کر نتیجہ لکھیں",
+          "paragraphs": [
+            "میڈیا کی آواز کا سلائیڈر گھنٹی، نوٹیفکیشن اور الارم سے الگ چیک کریں۔ مناسب کم آواز پر ایک ہی مختصر حصہ، صرف ایک تبدیلی کے بعد، دوبارہ سنیں۔ ضروری کال یا الارم کی سہولت برقرار رکھیں؛ صرف دیکھنے کی جانچ کے لیے ہر ایپ کو رعایت نہ دیں۔ مسئلہ باقی ہو تو فون ماڈل، Android ورژن، فعال موڈ، آواز کا آلہ اور تصویر چلتے رہنے کی کیفیت بتائیں۔ پاس ورڈ یا نجی پلے لسٹ لنک نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV على Android: التنبيهات وصوت الفيديو",
+      "excerpt": "إشعار يغطي الصورة ورنين وفيديو صامت علامات مختلفة. راجع وضع المقاطعات ومستوى صوت الوسائط بشكل منفصل قبل تغيير المشغّل أو الاشتراك.",
+      "seo_title": "5G Live IPTV: الإشعارات ومستوى صوت الوسائط",
+      "seo_description": "راجع إشعارات 5G Live IPTV على Android وفلاتر عدم الإزعاج ومستوى صوت الوسائط، وصف المقاطعة بدقة دون إعادة ضبط المشغّل.",
+      "sections": [
+        {
+          "heading": "حدد نوع المقاطعة أولًا",
+          "paragraphs": [
+            "ابدأ فحص الإشعارات أثناء استخدام 5G Live IPTV بوصف ما حدث: هل غطى إشعار الصورة، أم صدر صوت تنبيه، أم أصبح البرنامج صامتًا؟ دوّن ما إذا استمر التشغيل خلف الإشعار. هذه مؤشرات مختلفة؛ أبقِ المشغّل ومخرج الصوت والبرنامج كما هي للمقارنة. ظهور إشعار على الشاشة لا يثبت وحده وجود توقف للتحميل، كما أن غياب الصوت لا يثبت انتهاء الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع الوضع النشط والاستثناءات",
+          "paragraphs": [
+            "في إصدارات Android المدعومة، تتيح الإعدادات ثم الأوضاع الوصول إلى عدم الإزعاج وفلاتر الإشعارات. تميز Google بين الأشخاص والتطبيقات والمنبهات أو المقاطعات الأخرى؛ وقد تشمل الأخيرة الوسائط. اقرأ الخيارات الموجودة فعلًا على هاتفك بدل افتراض أن عدم الإزعاج يترك صوت الفيديو دائمًا دون تغيير. سجّل الاختيارات الحالية قبل تعديل تفضيل واحد. تختلف أسماء القوائم بحسب الشركة والإصدار، وبعض الخطوات تتطلب Android 14 أو أحدث."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن صوت الوسائط وسجل النتيجة",
+          "paragraphs": [
+            "افحص شريط صوت الوسائط منفصلًا عن الرنين والإشعارات والمنبهات. اختر مستوى استماع معتدلًا وقارن المقطع القصير نفسه بعد تغيير واحد. حافظ على المكالمات أو المنبهات التي تحتاجها؛ لا تسمح باستثناءات لجميع التطبيقات لمجرد فحص المشاهدة. إذا استمرت المشكلة، اذكر طراز الهاتف وإصدار Android والوضع النشط ومخرج الصوت وهل استمرت الصورة. لا ترسل كلمات المرور أو روابط قوائم التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Android पर 5G Live IPTV: सूचनाएँ और वीडियो की आवाज़",
+      "excerpt": "चित्र पर आया बैनर, घंटी और बिना आवाज़ का वीडियो अलग संकेत हैं। प्लेयर या सदस्यता बदलने से पहले बाधा वाले मोड और मीडिया वॉल्यूम को अलग जाँचें।",
+      "seo_title": "5G Live IPTV: सूचनाएँ और मीडिया वॉल्यूम",
+      "seo_description": "Android पर 5G Live IPTV की सूचनाएँ, डू नॉट डिस्टर्ब फ़िल्टर और मीडिया वॉल्यूम अलग जाँचें तथा प्लेयर रीसेट किए बिना समस्या का सही विवरण दें।",
+      "sections": [
+        {
+          "heading": "बदलाव से पहले बाधा की पहचान करें",
+          "paragraphs": [
+            "5G Live IPTV देखते समय सूचनाओं की जाँच इस विवरण से शुरू करें: क्या बैनर ने चित्र ढक दिया, कोई सूचना बजी या कार्यक्रम की आवाज़ बंद हुई? लिखें कि उसके पीछे वीडियो चलती रही या नहीं। ये अलग संकेत हैं, इसलिए तुलना में वही प्लेयर, ऑडियो आउटपुट और कार्यक्रम रखें। स्क्रीन पर सूचना आना अपने आप बफ़रिंग साबित नहीं करता, और आवाज़ न आना सदस्यता समाप्त होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सक्रिय मोड और उसके अपवाद देखें",
+          "paragraphs": [
+            "समर्थित Android संस्करणों में सेटिंग के बाद मोड खोलने पर डू नॉट डिस्टर्ब और सूचना फ़िल्टर मिलते हैं। Google लोगों, ऐप और अलार्म या दूसरी बाधाओं में अंतर करता है; अंतिम समूह में मीडिया भी शामिल हो सकता है। अपने फ़ोन पर मौजूद असली विकल्प पढ़ें, यह न मानें कि यह मोड हमेशा वीडियो की आवाज़ वैसी ही रखेगा। एक पसंद बदलने से पहले मौजूदा चुनाव लिख लें। नाम निर्माता और संस्करण पर निर्भर हैं; कुछ चरणों के लिए Android 14 या बाद का संस्करण चाहिए।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मीडिया वॉल्यूम अलग जाँचकर नतीजा लिखें",
+          "paragraphs": [
+            "मीडिया वॉल्यूम का स्लाइडर घंटी, सूचना और अलार्म से अलग जाँचें। मध्यम आवाज़ रखें और केवल एक बदलाव के बाद वही छोटा हिस्सा दोबारा सुनें। जरूरी कॉल और अलार्म की सुविधा बनाए रखें; सिर्फ देखने की जाँच के लिए हर ऐप को अपवाद न दें। समस्या बनी रहे तो फ़ोन मॉडल, Android संस्करण, सक्रिय मोड, ऑडियो आउटपुट और चित्र चलती रहने की जानकारी दें। पासवर्ड या निजी प्लेलिस्ट लिंक न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: Android interruption modes and Do Not Disturb",
+      "url": "https://support.google.com/android/answer/9069335?hl=en-GB"
+    },
+    {
+      "label": "Google: distinguish Android volume controls",
+      "url": "https://support.google.com/android/answer/9082609?hl=en"
+    }
+  ]
+}

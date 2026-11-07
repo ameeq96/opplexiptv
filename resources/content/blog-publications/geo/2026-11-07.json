@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-07",
+  "topic": "Apple TV remote touch tracking versus playback seeking: identify the highlighted item and the actual remote before changing a Geo IPTV navigation preference",
+  "primary_keyword": "Geo IPTV remote tracking",
+  "slug": "geo-apple-tv-remote-touch-tracking-versus-seeking",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV remote tracking: menus or playback seeking?",
+      "excerpt": "If a small thumb movement skips several menu items, check Apple TV remote tracking before treating it as a programme or account fault.",
+      "seo_title": "Geo IPTV remote tracking on Apple TV",
+      "seo_description": "Adjust Geo IPTV remote tracking carefully on Apple TV, distinguish touch navigation from playback seeking, and record the actual remote model before changing settings.",
+      "sections": [
+        {
+          "heading": "Notice what moves on the screen",
+          "paragraphs": [
+            "A Geo IPTV remote tracking question starts with the highlighted item. Does a short thumb movement jump across several menu tiles, or does the programme itself move to another time? Compare navigation on the Apple TV Home Screen with navigation inside the player. A sensitive menu response is a different observation from buffering, and neither observation alone establishes a subscription problem. Keep the player and programme unchanged while making this comparison."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: adjust Apple TV remote settings",
+              "url": "https://support.apple.com/en-asia/guide/tv/atvb267f9798/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Check the settings for your actual remote",
+          "paragraphs": [
+            "On Apple TV, open Settings, then Remotes and Devices. Apple documents Touch Surface Tracking speeds of Fast, Medium and Slow; faster tracking makes a smaller swipe travel further. Note the current choice before trying one alternative. The Clickpad option applies to the silver remote: Click and Touch allows swiping, while Click Only disables touch tracking. Do not assume every remote or software version offers the same controls."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep a navigation check separate from a video jump",
+          "paragraphs": [
+            "Return to the same menu and make a small, deliberate movement. If highlighting is easier to control, retain the preference that suits you. A jump in a video timeline needs a separate check of that player’s documented playback controls; changing tracking does not repair an unavailable programme. For support, describe the remote model, the gesture, and whether the behaviour occurs on the Home Screen, in a list, or during playback. Avoid sending account passwords."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV en Apple TV: sensibilidad del mando o salto del vídeo",
+      "excerpt": "Si un pequeño movimiento del pulgar salta varias opciones, revisa el seguimiento del mando antes de atribuirlo al programa o a la cuenta.",
+      "seo_title": "Geo IPTV: seguimiento táctil del mando de Apple TV",
+      "seo_description": "Revisa la sensibilidad del mando al usar Geo IPTV en Apple TV, distingue la navegación táctil de los saltos del vídeo y comprueba el modelo antes de cambiar ajustes.",
+      "sections": [
+        {
+          "heading": "Observa qué se mueve en la pantalla",
+          "paragraphs": [
+            "Al revisar el mando con Geo IPTV, empieza por el elemento resaltado. ¿Un movimiento corto del pulgar recorre varias opciones o el programa salta a otro momento? Compara la navegación en la pantalla de inicio del Apple TV con la del reproductor. Una selección demasiado sensible es una observación distinta de las pausas por carga, y ninguna demuestra por sí sola un problema de suscripción. Mantén el mismo reproductor y programa durante la comparación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta los ajustes del mando que realmente tienes",
+          "paragraphs": [
+            "En Apple TV, abre Ajustes y después Mandos y dispositivos. Apple describe velocidades rápida, media y lenta para el seguimiento de la superficie táctil; una velocidad mayor recorre más distancia con menos movimiento. Anota el valor actual antes de probar una alternativa. La opción Clickpad corresponde al mando plateado: Hacer clic y tocar permite deslizar; Solo hacer clic desactiva el seguimiento táctil. Los mandos y las versiones del sistema no siempre ofrecen los mismos controles."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa la navegación del desplazamiento por el vídeo",
+          "paragraphs": [
+            "Vuelve al mismo menú y realiza un movimiento pequeño y deliberado. Si controlas mejor el resaltado, conserva la preferencia que te resulte cómoda. Un salto en la línea de tiempo requiere revisar por separado los controles documentados del reproductor; cambiar la sensibilidad no recupera un programa no disponible. Para pedir ayuda, indica el modelo del mando, el gesto y si ocurre en inicio, en una lista o durante la reproducción. No envíes contraseñas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV sur Apple TV : suivi tactile ou saut dans la vidéo ?",
+      "excerpt": "Un petit mouvement du pouce sélectionne plusieurs éléments ? Vérifiez le suivi de la télécommande avant de mettre en cause le programme ou le compte.",
+      "seo_title": "Geo IPTV : suivi tactile de la télécommande Apple TV",
+      "seo_description": "Vérifiez le suivi tactile avec Geo IPTV sur Apple TV, distinguez le déplacement dans les menus de la recherche vidéo et identifiez le modèle de télécommande.",
+      "sections": [
+        {
+          "heading": "Repérez ce qui se déplace à l’écran",
+          "paragraphs": [
+            "Pour examiner la télécommande avec Geo IPTV, regardez d’abord l’élément sélectionné. Un court mouvement du pouce traverse-t-il plusieurs vignettes, ou le programme passe-t-il à un autre moment ? Comparez la navigation sur l’écran d’accueil de l’Apple TV à celle du lecteur. Une sélection trop sensible diffère des interruptions de chargement ; aucun de ces signes ne prouve à lui seul un problème d’abonnement. Gardez le même lecteur et le même programme pour comparer."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez les réglages de votre télécommande",
+          "paragraphs": [
+            "Sur Apple TV, ouvrez Réglages, puis Télécommandes et appareils. Apple propose des vitesses rapide, moyenne et lente pour le suivi de la surface tactile : un réglage plus rapide parcourt davantage de distance pour un petit glissement. Notez le choix actuel avant d’en essayer un autre. L’option Clickpad concerne la télécommande argentée : Clic et toucher autorise le glissement, Clic seulement désactive le suivi tactile. Les commandes disponibles varient selon le matériel et le logiciel."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez les menus de la recherche dans une vidéo",
+          "paragraphs": [
+            "Revenez au même menu et effectuez un petit mouvement volontaire. Si la sélection devient plus facile, conservez le réglage confortable. Un saut dans la chronologie demande une vérification distincte des commandes de lecture documentées ; le suivi tactile ne rétablit pas un programme indisponible. Pour l’assistance, précisez le modèle, le geste et l’endroit du problème : accueil, liste ou lecture. Ne transmettez pas le mot de passe du compte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV su Apple TV: sensibilità del telecomando o salto del video?",
+      "excerpt": "Se un piccolo movimento del pollice attraversa più voci, controlla il tracciamento del telecomando prima di attribuire il problema al programma o all’account.",
+      "seo_title": "Geo IPTV: tracciamento del telecomando Apple TV",
+      "seo_description": "Controlla il tracciamento del telecomando per Geo IPTV su Apple TV, distingui i menu dall’avanzamento video e identifica il modello prima di modificare le impostazioni.",
+      "sections": [
+        {
+          "heading": "Osserva quale elemento si sposta",
+          "paragraphs": [
+            "Per controllare il telecomando con Geo IPTV, parti dall’elemento evidenziato. Un breve movimento del pollice attraversa diverse tessere oppure il programma passa a un altro punto? Confronta la navigazione nella schermata Home di Apple TV con quella nel lettore. Una selezione troppo sensibile è diversa dalle pause di caricamento; nessuna delle due dimostra da sola un problema di abbonamento. Mantieni invariati lettore e programma durante il confronto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla le opzioni del tuo telecomando",
+          "paragraphs": [
+            "Su Apple TV apri Impostazioni, quindi Telecomandi e dispositivi. Apple documenta velocità rapida, media e lenta per il tracciamento della superficie Touch: un valore più rapido percorre più distanza con un piccolo scorrimento. Annota la scelta attuale prima di provarne un’altra. L’opzione Clickpad riguarda il telecomando argentato: Clic e tocco consente lo scorrimento, Solo clic disattiva il tracciamento Touch. Le opzioni possono variare con modello e versione del software."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Tieni distinta la navigazione dalla ricerca nel video",
+          "paragraphs": [
+            "Torna allo stesso menu ed esegui un movimento piccolo e intenzionale. Se controlli meglio l’evidenziazione, conserva la preferenza più comoda. Un salto nella sequenza video richiede un controllo separato dei comandi di riproduzione documentati; cambiare sensibilità non ripristina un programma indisponibile. Per l’assistenza indica modello, gesto e punto in cui accade: Home, elenco o riproduzione. Non inviare la password dell’account."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV op Apple TV: aanraakgevoeligheid of doorspoelen?",
+      "excerpt": "Springt een kleine duimbeweging over meerdere menuopties? Controleer de afstandsbediening voordat je het programma of je account als oorzaak aanwijst.",
+      "seo_title": "Geo IPTV: aanraakinstellingen van de Apple TV-afstandsbediening",
+      "seo_description": "Controleer de aanraakinstellingen bij Geo IPTV op Apple TV, onderscheid menunavigatie van doorspoelen en bekijk het model voordat je voorkeuren wijzigt.",
+      "sections": [
+        {
+          "heading": "Kijk welk onderdeel op het scherm beweegt",
+          "paragraphs": [
+            "Begin bij een controle van de afstandsbediening voor Geo IPTV met het gemarkeerde onderdeel. Verplaatst een korte duimbeweging de selectie over meerdere tegels, of springt het programma naar een ander tijdstip? Vergelijk de navigatie op het Apple TV-beginscherm met die in de speler. Een gevoelige menuselectie is iets anders dan een laadpauze; geen van beide bewijst op zichzelf een abonnementsprobleem. Houd speler en programma tijdens de vergelijking hetzelfde."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de opties van jouw afstandsbediening",
+          "paragraphs": [
+            "Open op Apple TV Instellingen en daarna Afstandsbedieningen en apparaten. Apple beschrijft snelle, gemiddelde en langzame aanraaktracking: bij sneller volgen legt een kleine veeg meer afstand af. Noteer de huidige keuze voordat je één alternatief probeert. De Clickpad-optie geldt voor de zilverkleurige afstandsbediening: Klik en tik ondersteunt vegen, Alleen klikken schakelt aanraaktracking uit. Niet elk model of elke softwareversie heeft dezelfde bediening."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Onderscheid menubediening van een sprong in de video",
+          "paragraphs": [
+            "Ga terug naar hetzelfde menu en maak een kleine, bewuste beweging. Is de selectie beter te sturen, behoud dan de prettigste voorkeur. Een sprong op de videotijdlijn vraagt een aparte controle van de gedocumenteerde afspeelbediening; aanraaktracking herstelt geen niet-beschikbaar programma. Vermeld voor ondersteuning het model, de beweging en waar het gebeurt: beginscherm, lijst of afspelen. Deel geen accountwachtwoorden."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV na Apple TV: sensibilidade do comando ou avanço do vídeo?",
+      "excerpt": "Se um pequeno movimento do polegar atravessa várias opções, verifique o seguimento tátil antes de atribuir o problema ao programa ou à conta.",
+      "seo_title": "Geo IPTV: seguimento tátil do comando da Apple TV",
+      "seo_description": "Verifique o seguimento do comando com Geo IPTV na Apple TV, distinga menus de avanços no vídeo e confirme o modelo antes de mudar as definições.",
+      "sections": [
+        {
+          "heading": "Observe o que se move no ecrã",
+          "paragraphs": [
+            "Ao verificar o comando com Geo IPTV, comece pelo elemento realçado. Um movimento curto do polegar percorre vários mosaicos ou o programa salta para outro instante? Compare a navegação no ecrã principal da Apple TV com a do leitor. Uma seleção demasiado sensível é diferente de uma pausa de carregamento, e nenhuma delas demonstra, por si só, um problema de subscrição. Mantenha o mesmo leitor e programa durante a comparação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte as opções do seu comando",
+          "paragraphs": [
+            "Na Apple TV, abra Definições e depois Comandos e dispositivos. A Apple documenta velocidades rápida, média e lenta para o seguimento da superfície tátil: quanto mais rápido, maior a distância percorrida com um pequeno deslize. Anote a opção atual antes de experimentar outra. A opção Clickpad aplica-se ao comando prateado: Clicar e tocar permite deslizar; Só clicar desativa o seguimento tátil. As opções variam com o equipamento e o software."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe a navegação da procura num vídeo",
+          "paragraphs": [
+            "Regresse ao mesmo menu e faça um movimento pequeno e deliberado. Se controlar melhor o realce, mantenha a preferência mais confortável. Um salto na linha temporal exige uma verificação separada dos controlos de reprodução documentados; mudar a sensibilidade não recupera um programa indisponível. Para pedir ajuda, indique o modelo do comando, o gesto e se acontece no ecrã principal, numa lista ou durante a reprodução. Não envie palavras-passe da conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV на Apple TV: чувствительность пульта или перемотка?",
+      "excerpt": "Если небольшое движение пальца перескакивает через несколько пунктов, проверьте настройки пульта, прежде чем связывать это с программой или учётной записью.",
+      "seo_title": "Geo IPTV: чувствительность пульта Apple TV",
+      "seo_description": "Проверьте чувствительность пульта для Geo IPTV на Apple TV, отличите навигацию по меню от перемотки и уточните модель перед изменением настроек.",
+      "sections": [
+        {
+          "heading": "Определите, что именно перемещается",
+          "paragraphs": [
+            "При проверке пульта для Geo IPTV сначала посмотрите на выделенный пункт. Небольшое движение пальца переносит выделение через несколько плиток или сама программа перескакивает на другое время? Сравните навигацию на главном экране Apple TV и внутри проигрывателя. Чрезмерно чувствительное меню отличается от остановок загрузки; ни один из этих признаков сам по себе не доказывает проблему подписки. Для сравнения оставьте тот же проигрыватель и ту же программу."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте настройки вашей модели пульта",
+          "paragraphs": [
+            "На Apple TV откройте «Настройки», затем «Пульты и устройства». Apple описывает быстрый, средний и медленный режимы отслеживания сенсорной поверхности: при более быстром режиме короткий жест перемещает выделение дальше. Запишите исходный вариант перед проверкой другого. Настройка Clickpad относится к серебристому пульту: «Нажатие и касание» разрешает жесты, «Только нажатие» отключает сенсорное отслеживание. Набор элементов управления зависит от оборудования и версии системы."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отделяйте навигацию от скачка видеозаписи",
+          "paragraphs": [
+            "Вернитесь к тому же меню и сделайте короткое осознанное движение. Если управлять выделением стало удобнее, оставьте подходящую настройку. Скачок по временной шкале требует отдельной проверки документированных команд проигрывателя; чувствительность пульта не восстанавливает недоступную программу. Для поддержки укажите модель, жест и место возникновения: главный экран, список или воспроизведение. Не отправляйте пароль учётной записи."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Apple TV پر Geo IPTV: ریموٹ کی حساسیت یا ویڈیو میں چھلانگ؟",
+      "excerpt": "اگر انگوٹھے کی معمولی حرکت کئی مینو اختیارات پار کر جائے تو پروگرام یا اکاؤنٹ کو وجہ سمجھنے سے پہلے ریموٹ کی ٹچ سیٹنگ دیکھیں۔",
+      "seo_title": "Geo IPTV کے لیے Apple TV ریموٹ کی ٹچ سیٹنگ",
+      "seo_description": "Apple TV پر Geo IPTV استعمال کرتے وقت ریموٹ کی ٹچ حساسیت دیکھیں، مینو میں حرکت اور ویڈیو آگے کرنے کا فرق سمجھیں اور پہلے ریموٹ کا ماڈل معلوم کریں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کہ اسکرین پر کیا حرکت کر رہا ہے",
+          "paragraphs": [
+            "Geo IPTV کے ساتھ ریموٹ کی جانچ کرتے وقت پہلے نمایاں کیے گئے اختیار کو دیکھیں۔ کیا انگوٹھے کی مختصر حرکت انتخاب کو کئی ٹائلز آگے لے جاتی ہے، یا پروگرام خود کسی دوسرے وقت پر پہنچ جاتا ہے؟ Apple TV کی ہوم اسکرین اور پلیئر کے اندر مینو کی حرکت کا موازنہ کریں۔ بہت حساس مینو اور لوڈ ہونے کے وقفے الگ علامات ہیں؛ ان میں سے کوئی اکیلی علامت سبسکرپشن کی خرابی ثابت نہیں کرتی۔ موازنہ کرتے ہوئے پلیئر اور پروگرام وہی رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اپنے اصل ریموٹ کے اختیارات دیکھیں",
+          "paragraphs": [
+            "Apple TV میں سیٹنگز کھول کر ریموٹ اور ڈیوائسز کے حصے میں جائیں۔ Apple ٹچ سطح کی ٹریکنگ کے لیے تیز، درمیانی اور آہستہ رفتار بتاتا ہے؛ تیز رفتار میں چھوٹا سا سوائپ زیادہ فاصلہ طے کرتا ہے۔ دوسری رفتار آزمانے سے پہلے موجودہ انتخاب نوٹ کریں۔ کلک پیڈ کا اختیار چاندی رنگ کے ریموٹ کے لیے ہے: کلک اور ٹچ سوائپ کی اجازت دیتا ہے، صرف کلک ٹچ ٹریکنگ بند کرتا ہے۔ ہر ماڈل اور سافٹ ویئر میں یکساں اختیارات ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مینو کی حرکت کو ویڈیو کے وقت سے الگ رکھیں",
+          "paragraphs": [
+            "اسی مینو میں واپس آ کر چھوٹی اور ارادی حرکت کریں۔ اگر نمایاں اختیار کو قابو کرنا آسان ہو تو موزوں ترجیح برقرار رکھیں۔ ویڈیو کی ٹائم لائن میں چھلانگ کے لیے اس پلیئر کے مستند پلے بیک کنٹرول الگ دیکھنے ہوں گے؛ حساسیت بدلنے سے غیر دستیاب پروگرام بحال نہیں ہوتا۔ مدد لیتے وقت ریموٹ کا ماڈل، کیا گیا اشارہ اور مسئلے کی جگہ بتائیں: ہوم اسکرین، فہرست یا ویڈیو۔ اکاؤنٹ کا پاس ورڈ نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV على Apple TV: حساسية جهاز التحكم أم تقديم الفيديو؟",
+      "excerpt": "إذا تجاوزت حركة بسيطة بالإبهام عدة خيارات، فراجع تتبع اللمس قبل اعتبار المشكلة مرتبطة بالبرنامج أو الحساب.",
+      "seo_title": "Geo IPTV: تتبع اللمس في جهاز تحكم Apple TV",
+      "seo_description": "راجع حساسية جهاز التحكم عند استخدام Geo IPTV على Apple TV، وميّز التنقل في القوائم عن تقديم الفيديو وحدد طراز الجهاز قبل تعديل الإعدادات.",
+      "sections": [
+        {
+          "heading": "حدد العنصر الذي يتحرك على الشاشة",
+          "paragraphs": [
+            "ابدأ فحص جهاز التحكم مع Geo IPTV بملاحظة العنصر المحدد. هل تنقل حركة قصيرة بالإبهام التحديد عبر عدة مربعات، أم ينتقل البرنامج نفسه إلى وقت آخر؟ قارن التنقل على شاشة Apple TV الرئيسية بالتنقل داخل المشغّل. حساسية القائمة الزائدة تختلف عن توقف التحميل، ولا تثبت أي منهما وحدها وجود مشكلة في الاشتراك. أبقِ المشغّل والبرنامج كما هما أثناء المقارنة حتى تتضح الملاحظة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع خيارات جهاز التحكم الذي تستخدمه",
+          "paragraphs": [
+            "افتح الإعدادات على Apple TV ثم أجهزة التحكم والأجهزة. توضح Apple سرعات سريعة ومتوسطة وبطيئة لتتبع سطح اللمس؛ السرعة الأعلى تجعل السحب القصير يقطع مسافة أكبر. دوّن الخيار الحالي قبل تجربة بديل واحد. خيار لوحة النقر يخص جهاز التحكم الفضي: النقر واللمس يسمح بالسحب، والنقر فقط يعطّل تتبع اللمس. قد تختلف الخيارات بحسب طراز الجهاز وإصدار البرنامج."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل التنقل عن القفز داخل الفيديو",
+          "paragraphs": [
+            "ارجع إلى القائمة نفسها ونفذ حركة صغيرة ومقصودة. إذا أصبح التحكم في التحديد أسهل، احتفظ بالتفضيل الأنسب لك. القفز على الخط الزمني يحتاج إلى فحص منفصل لأوامر التشغيل الموثقة في المشغّل؛ تغيير التتبع لا يعيد برنامجًا غير متاح. عند التواصل مع الدعم اذكر الطراز والحركة وما إذا كانت المشكلة في الشاشة الرئيسية أو قائمة أو أثناء التشغيل. لا ترسل كلمة مرور الحساب."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Apple TV पर Geo IPTV: रिमोट की संवेदनशीलता या वीडियो में छलांग?",
+      "excerpt": "अंगूठे की छोटी हलचल से कई विकल्प छूट जाते हैं तो कार्यक्रम या खाते को कारण मानने से पहले रिमोट की टच ट्रैकिंग देखें।",
+      "seo_title": "Geo IPTV: Apple TV रिमोट की टच ट्रैकिंग",
+      "seo_description": "Apple TV पर Geo IPTV देखते समय रिमोट की टच ट्रैकिंग जाँचें, मेनू की गति को वीडियो आगे करने से अलग समझें और सेटिंग बदलने से पहले मॉडल पहचानें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि स्क्रीन पर क्या हिल रहा है",
+          "paragraphs": [
+            "Geo IPTV के साथ रिमोट जाँचते समय पहले हाइलाइट किए विकल्प को देखें। क्या अंगूठे की छोटी हरकत चयन को कई टाइल आगे ले जाती है, या कार्यक्रम खुद दूसरे समय पर पहुँच जाता है? Apple TV की होम स्क्रीन और प्लेयर के मेनू में नेविगेशन की तुलना करें। अत्यधिक संवेदनशील चयन और लोडिंग के विराम अलग बातें हैं; इनमें से कोई भी अकेले सदस्यता की खराबी साबित नहीं करता। तुलना के दौरान प्लेयर और कार्यक्रम एक ही रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "अपने असली रिमोट की सेटिंग देखें",
+          "paragraphs": [
+            "Apple TV में सेटिंग खोलें, फिर रिमोट और डिवाइस वाले भाग में जाएँ। Apple टच सतह की ट्रैकिंग के लिए तेज, मध्यम और धीमी गति बताता है; तेज विकल्प में छोटी स्वाइप अधिक दूरी तय करती है। कोई दूसरा विकल्प आजमाने से पहले मौजूदा चुनाव लिख लें। क्लिकपैड विकल्प सिल्वर रिमोट पर लागू होता है: क्लिक और टच स्वाइप की अनुमति देता है, केवल क्लिक टच ट्रैकिंग बंद करता है। हर मॉडल या सॉफ़्टवेयर में एक जैसी सेटिंग होना जरूरी नहीं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मेनू की गति को वीडियो की छलांग से अलग रखें",
+          "paragraphs": [
+            "उसी मेनू में लौटकर छोटी और सोच-समझकर की गई हलचल करें। अगर चयन नियंत्रित करना आसान हो, तो सुविधाजनक विकल्प रखें। वीडियो की टाइमलाइन में छलांग के लिए उस प्लेयर के दस्तावेज़ में दिए प्लेबैक नियंत्रण अलग जाँचने होंगे; ट्रैकिंग बदलने से अनुपलब्ध कार्यक्रम वापस नहीं आता। सहायता लेते समय रिमोट मॉडल, की गई हरकत और समस्या का स्थान बताएँ: होम स्क्रीन, सूची या चलती वीडियो। खाते का पासवर्ड न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: adjust Apple TV remote settings",
+      "url": "https://support.apple.com/en-asia/guide/tv/atvb267f9798/tvos"
+    }
+  ]
+}
