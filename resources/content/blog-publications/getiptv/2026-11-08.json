@@ -1,0 +1,444 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-08",
+  "topic": "Distinguish the installed player app update list from Google TV system software updates before interpreting a Get IPTV playback symptom",
+  "primary_keyword": "Get IPTV update check",
+  "slug": "getiptv-google-tv-app-update-versus-system-update",
+  "translations": {
+    "en": {
+      "title": "Get IPTV update check: player app or Google TV system?",
+      "excerpt": "Two update screens can refer to different software. Identify the installed player and the television system separately before describing an update as a service repair.",
+      "seo_title": "Get IPTV update check: app updates versus Google TV system",
+      "seo_description": "Use a Get IPTV update check to distinguish the installed player from Google TV system software, record versions and compare the original symptom after updates finish.",
+      "sections": [
+        {
+          "heading": "Identify the software you are checking",
+          "paragraphs": [
+            "A Get IPTV update check begins with the installed player’s actual name and publisher. Get IPTV is the website for Opplex and Filex plan choices; it does not identify a particular player automatically. Write down the player version, the Google TV device model and the visible problem. A change to an app is different from a change to the television’s operating system, and neither screen tells you whether a provider order is paid or active."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the app update list before accepting changes",
+          "paragraphs": [
+            "Google’s TV guidance opens the Play Store profile area, then Manage apps and games and Updates. Review which installed apps are listed rather than assuming every update belongs to your player. The documented Update all option may affect several apps. Menu wording and available updates vary; follow the choices actually shown. Google also notes that the TV can respond more slowly while app updates are in progress, so wait for completion before comparing playback."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: check installed app updates",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Check system software through its own menu",
+          "paragraphs": [
+            "For Google TV system software, Google gives Settings, System, About and System update as a separate route. Record what the device reports instead of calling an app update a system upgrade. Follow the manufacturer’s instructions if your menu differs. After the chosen update finishes, reopen the same player and revisit the original symptom. If it remains, report both versions and the exact message privately. Do not send passwords or private playlist addresses, and do not buy another plan merely because an update was offered."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: check system software updates",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Actualizaciones en Get IPTV: ¿reproductor o sistema Google TV?",
+      "excerpt": "Dos pantallas de actualización pueden referirse a programas distintos. Identifica por separado el reproductor instalado y el sistema del televisor antes de atribuir una reparación al servicio.",
+      "seo_title": "Get IPTV: comprobar actualizaciones de la app y Google TV",
+      "seo_description": "Distingue las actualizaciones del reproductor y del sistema Google TV al usar Get IPTV, anota las versiones y compara el problema cuando terminen los cambios.",
+      "sections": [
+        {
+          "heading": "Identifica qué programa estás comprobando",
+          "paragraphs": [
+            "La comprobación de actualizaciones con Get IPTV empieza por el nombre real y el desarrollador del reproductor instalado. Get IPTV es la web donde se eligen planes Opplex y Filex; no identifica automáticamente un reproductor concreto. Anota la versión de la aplicación, el modelo del dispositivo Google TV y el problema visible. Actualizar una app es distinto de actualizar el sistema operativo del televisor. Ninguna de esas pantallas confirma si un pedido al proveedor está pagado o activo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la lista antes de aceptar las actualizaciones",
+          "paragraphs": [
+            "La guía de Google para televisores indica abrir el perfil de Play Store y entrar en Gestionar aplicaciones y juegos y Actualizaciones. Comprueba qué aplicaciones instaladas aparecen; no supongas que todas las actualizaciones corresponden a tu reproductor. La opción documentada Actualizar todo puede modificar varias apps. Los nombres de los menús y las actualizaciones disponibles varían: sigue las opciones que realmente veas. Google también advierte de una posible lentitud mientras se actualizan las apps. Espera a que terminen antes de comparar la reproducción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: comprobar actualizaciones de aplicaciones",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Busca el sistema en su propio menú",
+          "paragraphs": [
+            "Para el software del sistema Google TV, Google indica una ruta distinta: Ajustes, Sistema, Información y Actualización del sistema. Anota lo que muestra el dispositivo, sin llamar actualización del sistema a un cambio de una app. Si tu menú difiere, consulta las instrucciones del fabricante. Al terminar, abre el mismo reproductor y comprueba el problema inicial. Si continúa, comunica en privado ambas versiones y el mensaje exacto. No envíes contraseñas ni direcciones privadas de listas, ni compres otro plan solo porque aparezca una actualización."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: comprobar actualizaciones del sistema",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : mise à jour du lecteur ou du système Google TV ?",
+      "excerpt": "Deux écrans de mise à jour peuvent concerner des logiciels différents. Identifiez séparément le lecteur installé et le système du téléviseur avant de parler de réparation du service.",
+      "seo_title": "Get IPTV : vérifier les mises à jour de l’app et de Google TV",
+      "seo_description": "Distinguez le lecteur du système Google TV avec Get IPTV, notez les versions et vérifiez le problème initial après la fin des mises à jour choisies.",
+      "sections": [
+        {
+          "heading": "Identifiez le logiciel concerné",
+          "paragraphs": [
+            "Pour vérifier les mises à jour avec Get IPTV, commencez par le véritable nom du lecteur installé et de son éditeur. Get IPTV est le site de choix des offres Opplex et Filex ; il ne désigne pas automatiquement une application particulière. Notez la version du lecteur, le modèle de l’appareil Google TV et le problème observé. Modifier une application est différent de modifier le système du téléviseur. Aucun de ces écrans ne confirme qu’une commande auprès du fournisseur est payée ou active."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez la liste avant d’accepter les changements",
+          "paragraphs": [
+            "La documentation Google pour le téléviseur indique d’ouvrir le profil du Play Store, puis Gérer les applications et les jeux et Mises à jour. Regardez quelles applications installées figurent dans la liste : toutes les mises à jour ne concernent pas forcément votre lecteur. L’option documentée Tout mettre à jour peut toucher plusieurs applications. Les intitulés et les mises à jour disponibles varient ; suivez les choix réellement affichés. Google signale aussi un possible ralentissement pendant ces opérations. Attendez leur fin avant de comparer la lecture."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV : vérifier les mises à jour des applications",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Utilisez le menu réservé au système",
+          "paragraphs": [
+            "Pour le système Google TV, Google indique un autre chemin : Paramètres, Système, À propos et Mise à jour du système. Notez ce qu’affiche l’appareil sans présenter une mise à jour d’application comme celle du système. Si votre menu diffère, consultez le fabricant. Une fois l’opération choisie terminée, rouvrez le même lecteur et vérifiez le problème initial. S’il persiste, communiquez en privé les deux versions et le message exact. N’envoyez ni mot de passe ni adresse privée de liste, et n’achetez pas une nouvelle offre simplement parce qu’une mise à jour est proposée."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV : vérifier les mises à jour du système",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "title": "Aggiornamenti Get IPTV: app del lettore o sistema Google TV?",
+      "excerpt": "Due schermate di aggiornamento possono riguardare programmi diversi. Identifica separatamente il lettore installato e il sistema del televisore prima di parlare di riparazione del servizio.",
+      "seo_title": "Get IPTV: controllare aggiornamenti dell’app e di Google TV",
+      "seo_description": "Distingui il lettore dal sistema Google TV usando Get IPTV, annota le versioni e verifica il problema iniziale quando gli aggiornamenti scelti sono terminati.",
+      "sections": [
+        {
+          "heading": "Identifica il programma da controllare",
+          "paragraphs": [
+            "Il controllo degli aggiornamenti con Get IPTV parte dal nome effettivo del lettore installato e dal suo sviluppatore. Get IPTV è il sito per scegliere piani Opplex e Filex; non identifica automaticamente un lettore specifico. Annota la versione dell’app, il modello del dispositivo Google TV e il problema visibile. Aggiornare un’app è diverso da aggiornare il sistema operativo del televisore. Nessuna delle due schermate conferma che un ordine presso il fornitore sia pagato o attivo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’elenco prima di accettare le modifiche",
+          "paragraphs": [
+            "La guida Google per il televisore indica di aprire il profilo del Play Store, quindi Gestisci app e giochi e Aggiornamenti. Controlla quali applicazioni installate compaiono, senza presumere che ogni aggiornamento riguardi il tuo lettore. L’opzione documentata Aggiorna tutto può modificare più app. I nomi dei menu e gli aggiornamenti disponibili variano: segui le scelte effettivamente mostrate. Google segnala inoltre che il televisore può rallentare mentre aggiorna le app. Aspetta che l’operazione finisca prima di confrontare la riproduzione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: controllare gli aggiornamenti delle app",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla il sistema dal suo menu dedicato",
+          "paragraphs": [
+            "Per il software di sistema Google TV, Google indica un percorso separato: Impostazioni, Sistema, Informazioni e Aggiornamento di sistema. Annota ciò che riporta il dispositivo, senza chiamare aggiornamento del sistema una modifica all’app. Se il menu è diverso, consulta le istruzioni del produttore. Al termine dell’operazione scelta, riapri lo stesso lettore e verifica il problema iniziale. Se persiste, comunica privatamente entrambe le versioni e il messaggio esatto. Non inviare password o indirizzi privati delle playlist e non acquistare un altro piano soltanto perché è disponibile un aggiornamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: controllare gli aggiornamenti di sistema",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV controleren: spelerapp of Google TV-systeem bijwerken?",
+      "excerpt": "Twee updateschermen kunnen over verschillende software gaan. Controleer de geïnstalleerde speler en het televisiesysteem afzonderlijk voordat je een update een oplossing voor de dienst noemt.",
+      "seo_title": "Get IPTV: updates van de speler en Google TV onderscheiden",
+      "seo_description": "Controleer met Get IPTV het verschil tussen spelerupdates en Google TV-systeemsoftware, noteer versies en vergelijk de oorspronkelijke klacht nadat de updates klaar zijn.",
+      "sections": [
+        {
+          "heading": "Bepaal welke software je controleert",
+          "paragraphs": [
+            "Een updatecontrole bij Get IPTV begint met de echte naam en uitgever van de geïnstalleerde speler. Get IPTV is de website voor Opplex- en Filex-abonnementen; de naam verwijst niet automatisch naar een bepaalde speler. Noteer de spelerversie, het model van het Google TV-apparaat en het zichtbare probleem. Een wijziging aan een app verschilt van een wijziging aan het besturingssysteem van de televisie. Geen van beide schermen bevestigt dat een bestelling bij de aanbieder betaald of actief is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de lijst voordat je updates accepteert",
+          "paragraphs": [
+            "Volgens Googles tv-handleiding open je het profiel in de Play Store en daarna Apps en games beheren en Updates. Kijk welke geïnstalleerde apps worden genoemd, in plaats van aan te nemen dat elke update voor je speler is. De beschreven optie Alles updaten kan meerdere apps wijzigen. Menunamen en beschikbare updates verschillen; volg de keuzes die werkelijk op het scherm staan. Google meldt ook dat de televisie trager kan reageren tijdens appupdates. Wacht tot ze klaar zijn voordat je het afspelen vergelijkt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: appupdates controleren",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer het systeem via het eigen menu",
+          "paragraphs": [
+            "Voor de Google TV-systeemsoftware noemt Google een afzonderlijke route: Instellingen, Systeem, Over en Systeemupdate. Noteer wat het apparaat meldt en noem een appupdate geen systeemupgrade. Raadpleeg de fabrikant als jouw menu afwijkt. Open na de gekozen update dezelfde speler en controleer de oorspronkelijke klacht. Blijft die bestaan, meld dan beide versies en de precieze foutmelding privé. Verstuur geen wachtwoorden of privéadressen van afspeellijsten en koop geen ander abonnement alleen omdat er een update wordt aangeboden."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: systeemupdates controleren",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atualizações no Get IPTV: aplicativo ou sistema Google TV?",
+      "excerpt": "Duas telas de atualização podem se referir a programas diferentes. Identifique o reprodutor instalado e o sistema da televisão separadamente antes de chamar uma atualização de reparo do serviço.",
+      "seo_title": "Get IPTV: verificar atualizações do aplicativo e do Google TV",
+      "seo_description": "Diferencie o reprodutor do sistema Google TV ao usar Get IPTV, registre as versões e compare o problema original quando as atualizações escolhidas terminarem.",
+      "sections": [
+        {
+          "heading": "Identifique o programa que está verificando",
+          "paragraphs": [
+            "A verificação de atualizações com Get IPTV começa pelo nome real e pelo desenvolvedor do reprodutor instalado. Get IPTV é o site para escolher planos Opplex e Filex; o nome não identifica automaticamente um aplicativo específico. Anote a versão do reprodutor, o modelo do dispositivo Google TV e o problema visível. Uma mudança no aplicativo é diferente de uma mudança no sistema operacional da televisão. Nenhuma dessas telas informa se um pedido ao provedor foi pago ou está ativo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a lista antes de aceitar as mudanças",
+          "paragraphs": [
+            "A orientação do Google para televisores indica abrir o perfil da Play Store, depois Gerenciar apps e jogos e Atualizações. Verifique quais aplicativos instalados aparecem, sem presumir que toda atualização seja do seu reprodutor. A opção documentada Atualizar tudo pode alterar vários aplicativos. Os nomes dos menus e as atualizações disponíveis variam: siga as escolhas realmente exibidas. O Google também informa que a televisão pode responder mais devagar durante atualizações de aplicativos. Espere que terminem antes de comparar a reprodução."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: verificar atualizações dos aplicativos",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique o sistema pelo menu próprio",
+          "paragraphs": [
+            "Para o software do sistema Google TV, o Google indica outro caminho: Configurações, Sistema, Sobre e Atualização do sistema. Registre o que o dispositivo mostra, sem chamar uma atualização de aplicativo de atualização do sistema. Consulte o fabricante se o menu for diferente. Ao terminar a operação escolhida, abra o mesmo reprodutor e verifique o problema inicial. Se continuar, informe em particular as duas versões e a mensagem exata. Não envie senhas nem endereços privados de listas e não compre outro plano apenas porque uma atualização foi oferecida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: verificar atualizações do sistema",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "Обновления Get IPTV: приложение плеера или система Google TV?",
+      "excerpt": "Два экрана обновлений могут относиться к разным программам. Разделяйте установленный плеер и систему телевизора, прежде чем считать обновление исправлением работы услуги.",
+      "seo_title": "Get IPTV: обновление приложения и системы Google TV",
+      "seo_description": "Различайте плеер и систему Google TV при использовании Get IPTV: запишите версии и проверьте исходную проблему после завершения выбранных обновлений.",
+      "sections": [
+        {
+          "heading": "Определите, какую программу проверяете",
+          "paragraphs": [
+            "Проверка обновлений с Get IPTV начинается с настоящего названия и разработчика установленного плеера. Get IPTV — сайт выбора планов Opplex и Filex; это название не определяет конкретное приложение автоматически. Запишите версию плеера, модель устройства Google TV и наблюдаемую проблему. Изменение приложения отличается от изменения операционной системы телевизора. Ни один из этих экранов не подтверждает, что заказ у провайдера оплачен или уже активен."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте список перед установкой обновлений",
+          "paragraphs": [
+            "В инструкции Google для телевизоров предлагается открыть профиль Play Маркета, затем управление приложениями и играми и раздел обновлений. Посмотрите, какие установленные приложения перечислены: не следует считать, что каждое обновление относится к вашему плееру. Описанная кнопка обновления всех приложений может затронуть несколько программ. Названия меню и доступные обновления различаются; ориентируйтесь на реально показанные пункты. Google также предупреждает, что во время обновления приложений телевизор может работать медленнее. Дождитесь завершения процесса, прежде чем сравнивать воспроизведение."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: проверка обновлений приложений",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверяйте систему через отдельное меню",
+          "paragraphs": [
+            "Для системного ПО Google TV Google указывает другой путь: настройки, система, сведения об устройстве и обновление системы. Запишите ответ устройства, не называя обновление приложения обновлением системы. Если меню отличается, обратитесь к инструкции производителя. После завершения выбранного обновления откройте тот же плеер и снова проверьте исходный симптом. Если он остался, передайте обе версии и точный текст сообщения в личном обращении. Не отправляйте пароли или закрытые адреса плейлистов и не покупайте другой план только потому, что появилось предложение обновить программу."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: проверка обновлений системы",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کی اپ ڈیٹ جانچ: پلیئر ایپ یا Google TV سسٹم؟",
+      "excerpt": "اپ ڈیٹ کی دو اسکرینیں مختلف سافٹ ویئر کے لیے ہو سکتی ہیں۔ کسی اپ ڈیٹ کو سروس کی مرمت سمجھنے سے پہلے نصب شدہ پلیئر اور ٹی وی کے سسٹم کو الگ پہچانیں۔",
+      "seo_title": "Get IPTV: پلیئر ایپ اور Google TV سسٹم کی اپ ڈیٹ جانچیں",
+      "seo_description": "Get IPTV استعمال کرتے وقت پلیئر اور Google TV سسٹم کی اپ ڈیٹ الگ سمجھیں، ورژن لکھیں اور منتخب اپ ڈیٹس مکمل ہونے کے بعد اصل مسئلے کا موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کس سافٹ ویئر کو جانچ رہے ہیں",
+          "paragraphs": [
+            "Get IPTV کی اپ ڈیٹ جانچ نصب شدہ پلیئر کے اصل نام اور اسے شائع کرنے والے ادارے سے شروع ہوتی ہے۔ Get IPTV، Opplex اور Filex کے پلان منتخب کرنے کی ویب سائٹ ہے؛ اس نام سے کوئی مخصوص پلیئر خود بخود متعین نہیں ہوتا۔ پلیئر کا ورژن، Google TV ڈیوائس کا ماڈل اور نظر آنے والا مسئلہ لکھ لیں۔ ایپ میں تبدیلی اور ٹی وی کے آپریٹنگ سسٹم میں تبدیلی الگ ہیں۔ ان میں سے کوئی اسکرین یہ نہیں بتاتی کہ فراہم کنندہ کا آرڈر ادا شدہ یا فعال ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تبدیلی قبول کرنے سے پہلے ایپس کی فہرست پڑھیں",
+          "paragraphs": [
+            "ٹی وی کے لیے Google کی ہدایت کے مطابق Play Store میں پروفائل کھولیں، پھر ایپس اور گیمز کے انتظام اور اپ ڈیٹس والے حصے میں جائیں۔ دیکھیں کون سی نصب شدہ ایپس فہرست میں ہیں؛ ہر اپ ڈیٹ کو اپنے پلیئر کی اپ ڈیٹ نہ سمجھیں۔ دستاویز میں دیا گیا سب کو اپ ڈیٹ کرنے کا اختیار کئی ایپس بدل سکتا ہے۔ مینو کے نام اور دستیاب اپ ڈیٹس مختلف ہو سکتی ہیں، اس لیے اصل اسکرین کے اختیارات دیکھیں۔ Google کے مطابق ایپس اپ ڈیٹ ہوتے وقت ٹی وی سست بھی ہو سکتا ہے۔ پلے بیک کا موازنہ کرنے سے پہلے عمل مکمل ہونے دیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: نصب شدہ ایپس کی اپ ڈیٹس جانچیں",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "سسٹم کو اس کے الگ مینو سے جانچیں",
+          "paragraphs": [
+            "Google TV کے سسٹم سافٹ ویئر کے لیے Google الگ راستہ بتاتا ہے: ترتیبات، سسٹم، ڈیوائس کی معلومات اور سسٹم اپ ڈیٹ۔ ڈیوائس جو بتائے وہ لکھیں؛ ایپ کی اپ ڈیٹ کو سسٹم کی اپ گریڈ نہ کہیں۔ آپ کا مینو مختلف ہو تو بنانے والے کی ہدایات دیکھیں۔ منتخب اپ ڈیٹ ختم ہونے پر وہی پلیئر دوبارہ کھولیں اور اصل مسئلہ دیکھیں۔ مسئلہ رہے تو دونوں ورژن اور بالکل درست پیغام نجی طور پر بتائیں۔ پاس ورڈ یا پلے لسٹ کے نجی پتے نہ بھیجیں، اور صرف اپ ڈیٹ آنے کی وجہ سے دوسرا پلان نہ خریدیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: سسٹم سافٹ ویئر کی اپ ڈیٹس جانچیں",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ar": {
+      "title": "تحديثات Get IPTV: تطبيق المشغّل أم نظام Google TV؟",
+      "excerpt": "قد تشير شاشتا التحديث إلى برنامجين مختلفين. حدّد المشغّل المثبّت ونظام التلفزيون كلًا على حدة قبل وصف التحديث بأنه إصلاح للخدمة.",
+      "seo_title": "Get IPTV: فحص تحديث المشغّل ونظام Google TV",
+      "seo_description": "ميّز بين المشغّل ونظام Google TV عند استخدام Get IPTV، وسجّل الإصدارات ثم قارن المشكلة الأصلية بعد اكتمال التحديثات التي اخترتها.",
+      "sections": [
+        {
+          "heading": "حدّد البرنامج الذي تفحصه",
+          "paragraphs": [
+            "يبدأ فحص التحديثات مع Get IPTV بالاسم الفعلي للمشغّل المثبّت والجهة الناشرة له. Get IPTV هو موقع لاختيار خطط Opplex وFilex؛ ولا يحدّد الاسم تلقائيًا مشغّلًا بعينه. دوّن إصدار المشغّل وطراز جهاز Google TV والمشكلة الظاهرة. تغيير تطبيق يختلف عن تغيير نظام تشغيل التلفزيون، ولا تؤكد أي من الشاشتين أن طلبك لدى المزوّد مدفوع أو مفعّل."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ قائمة التطبيقات قبل قبول التغييرات",
+          "paragraphs": [
+            "توجّه إرشادات Google للتلفزيون إلى ملفك الشخصي في متجر Play، ثم إدارة التطبيقات والألعاب وقسم التحديثات. راجع التطبيقات المثبّتة المدرجة، بدل افتراض أن كل تحديث يخص مشغّلك. خيار تحديث الكل المذكور في الإرشادات قد يغيّر عدة تطبيقات. تختلف أسماء القوائم والتحديثات المتاحة، لذا اتبع الخيارات الظاهرة فعليًا على جهازك. وتوضح Google أيضًا أن استجابة التلفزيون قد تصبح أبطأ أثناء تحديث التطبيقات؛ انتظر اكتمال العملية قبل مقارنة تشغيل الفيديو."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: التحقق من تحديثات التطبيقات",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افحص النظام عبر قائمته المنفصلة",
+          "paragraphs": [
+            "بالنسبة إلى برنامج نظام Google TV، تذكر Google مسارًا منفصلًا: الإعدادات، النظام، لمحة، ثم تحديث النظام. سجّل ما يعرضه الجهاز بدل تسمية تحديث التطبيق ترقية للنظام. اتبع تعليمات الشركة المصنّعة إذا اختلفت قائمتك. بعد اكتمال التحديث الذي اخترته، افتح المشغّل نفسه وراجع المشكلة الأصلية. إن استمرت، أرسل الإصدارين ونص الرسالة بدقة عبر تواصل خاص. لا ترسل كلمات المرور أو عناوين قوائم التشغيل الخاصة، ولا تشترِ خطة أخرى لمجرد ظهور تحديث متاح."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: التحقق من تحديثات النظام",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV अपडेट जाँच: प्लेयर ऐप या Google TV सिस्टम?",
+      "excerpt": "अपडेट की दो स्क्रीन अलग सॉफ़्टवेयर के लिए हो सकती हैं। किसी अपडेट को सेवा की मरम्मत मानने से पहले इंस्टॉल किए गए प्लेयर और टीवी के सिस्टम को अलग पहचानें।",
+      "seo_title": "Get IPTV: प्लेयर ऐप और Google TV सिस्टम अपडेट की जाँच",
+      "seo_description": "Get IPTV इस्तेमाल करते समय प्लेयर और Google TV सिस्टम के अपडेट में अंतर समझें, संस्करण लिखें और चुने गए अपडेट पूरे होने पर मूल समस्या की तुलना करें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि किस सॉफ़्टवेयर की जाँच कर रहे हैं",
+          "paragraphs": [
+            "Get IPTV की अपडेट जाँच इंस्टॉल किए गए प्लेयर के असली नाम और प्रकाशक से शुरू होती है। Get IPTV, Opplex और Filex प्लान चुनने की वेबसाइट है; यह नाम अपने आप किसी खास प्लेयर की पहचान नहीं करता। प्लेयर का संस्करण, Google TV डिवाइस का मॉडल और दिखाई देने वाली समस्या लिख लें। ऐप में बदलाव और टीवी के ऑपरेटिंग सिस्टम में बदलाव अलग हैं। इनमें से कोई भी स्क्रीन यह नहीं बताती कि प्रदाता का ऑर्डर भुगतान किया हुआ या सक्रिय है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "बदलाव स्वीकार करने से पहले ऐप की सूची पढ़ें",
+          "paragraphs": [
+            "टीवी के लिए Google की सलाह के अनुसार Play Store में प्रोफ़ाइल खोलें, फिर ऐप और गेम प्रबंधित करने वाले हिस्से और अपडेट में जाएँ। देखें कि कौन से इंस्टॉल किए गए ऐप सूची में हैं; हर अपडेट को अपने प्लेयर का अपडेट न मानें। दस्तावेज़ में दिया गया सभी को अपडेट करने का विकल्प कई ऐप बदल सकता है। मेनू के नाम और उपलब्ध अपडेट अलग हो सकते हैं, इसलिए स्क्रीन पर सचमुच दिख रहे विकल्प अपनाएँ। Google यह भी बताता है कि ऐप अपडेट के दौरान टीवी धीमा हो सकता है। प्लेबैक की तुलना करने से पहले प्रक्रिया पूरी होने दें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: इंस्टॉल किए गए ऐप के अपडेट जाँचें",
+              "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सिस्टम को उसके अलग मेनू से जाँचें",
+          "paragraphs": [
+            "Google TV सिस्टम सॉफ़्टवेयर के लिए Google अलग रास्ता देता है: सेटिंग, सिस्टम, डिवाइस की जानकारी और सिस्टम अपडेट। डिवाइस जो बताए उसे लिखें; ऐप के अपडेट को सिस्टम का अपग्रेड न कहें। मेनू अलग हो तो निर्माता के निर्देश देखें। चुना गया अपडेट पूरा होने के बाद वही प्लेयर खोलें और मूल समस्या दोबारा जाँचें। समस्या बनी रहे तो दोनों संस्करण और संदेश का सही पाठ निजी तौर पर बताएँ। पासवर्ड या प्लेलिस्ट के निजी पते न भेजें और केवल अपडेट उपलब्ध होने के कारण दूसरा प्लान न खरीदें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV: सिस्टम सॉफ़्टवेयर के अपडेट जाँचें",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV: check installed app updates",
+      "url": "https://support.google.com/googletv/answer/12364422?hl=en"
+    },
+    {
+      "label": "Google TV: check system software updates",
+      "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+    },
+    {
+      "label": "Google TV: temporary slowness during app updates",
+      "url": "https://support.google.com/googletv/answer/12364830?hl=en"
+    }
+  ]
+}

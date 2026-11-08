@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-08",
+  "topic": "Apple TV accessibility Zoom versus a cropped programme: identify whole-screen magnification and preserve useful viewing preferences",
+  "primary_keyword": "Geo IPTV screen zoom",
+  "slug": "geo-apple-tv-accessibility-zoom-versus-cropped-video",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV screen zoom: enlarged menus or cropped video?",
+      "excerpt": "If menus and labels look enlarged as well as the picture, inspect Apple TV’s accessibility Zoom separately from a player’s video framing.",
+      "seo_title": "Geo IPTV screen zoom: Apple TV menus versus video crop",
+      "seo_description": "Check Geo IPTV screen zoom on Apple TV, preserve useful accessibility preferences and distinguish whole-screen magnification from a player’s cropped picture.",
+      "sections": [
+        {
+          "heading": "Look beyond the programme picture",
+          "paragraphs": [
+            "A Geo IPTV screen zoom check starts outside the player. Return to the Apple TV Home Screen and notice whether icons, menu labels and screen edges also look enlarged. If only one programme looks cropped, record that narrower symptom instead. Magnification across different screens is a useful clue, but it does not identify a service outage or prove that an account setting changed. Keep the television’s picture controls unchanged while you compare."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review the accessibility setting",
+          "paragraphs": [
+            "Apple documents Zoom under Settings, Accessibility, then Zoom on Apple TV. This feature magnifies the on-screen image and can allow movement around the enlarged view. Check its current state and the Maximum Zoom Level before changing a preference. Follow the instructions for your actual remote and software version rather than trying a remembered gesture from another device. A player’s own picture-fit control is a separate setting."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: use Zoom on Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Preserve the view that helps you read",
+          "paragraphs": [
+            "Zoom may be intentional accessibility support for you or another household member. Note the original choices and agree on a comfortable view before adjusting them. Compare the Home Screen and the same player menu again after one change. If the problem remains inside the video alone, describe the affected edges separately. For support, report the Apple TV model, software version and which screens appear enlarged; leave passwords and private playlist links out of the message."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV en Apple TV: menús ampliados o vídeo recortado",
+      "excerpt": "Si los menús y las etiquetas también se ven más grandes, revisa el Zoom de accesibilidad del Apple TV por separado del encuadre del reproductor.",
+      "seo_title": "Geo IPTV: Zoom del Apple TV y recorte de la imagen",
+      "seo_description": "Revisa el Zoom de pantalla al usar Geo IPTV en Apple TV, conserva los ajustes de accesibilidad útiles y distingue la ampliación general de un vídeo recortado.",
+      "sections": [
+        {
+          "heading": "Observa algo más que el programa",
+          "paragraphs": [
+            "La revisión del Zoom con Geo IPTV empieza fuera del reproductor. Vuelve a la pantalla de inicio del Apple TV y observa si también están ampliados los iconos, las etiquetas y los bordes. Si solo aparece recortado un programa, anota ese síntoma más concreto. La ampliación en pantallas distintas es una pista útil, pero no demuestra una caída del servicio ni un cambio de la cuenta. Mantén los controles de imagen del televisor sin cambios durante la comparación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa el ajuste de accesibilidad",
+          "paragraphs": [
+            "Apple sitúa Zoom en Ajustes, Accesibilidad y después Zoom en Apple TV. La función amplía la imagen de la pantalla y permite desplazarse por la vista aumentada. Comprueba su estado y el nivel máximo antes de modificar una preferencia. Sigue las instrucciones correspondientes a tu mando y versión del sistema, en vez de probar un gesto recordado de otro dispositivo. El ajuste de encuadre del reproductor es independiente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: utilizar Zoom en Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva una vista cómoda para leer",
+          "paragraphs": [
+            "El Zoom puede ser una ayuda de accesibilidad elegida por ti o por otra persona de casa. Anota las opciones originales y acordad una vista cómoda antes de ajustarlas. Tras un solo cambio, compara otra vez el inicio y el mismo menú del reproductor. Si el problema se limita al vídeo, describe por separado los bordes afectados. Al pedir ayuda, indica el modelo del Apple TV, la versión del sistema y qué pantallas están ampliadas; no envíes contraseñas ni enlaces privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV sur Apple TV : menus agrandis ou vidéo rognée ?",
+      "excerpt": "Si les menus et les libellés sont agrandis eux aussi, vérifiez le Zoom d’accessibilité de l’Apple TV séparément du cadrage du lecteur.",
+      "seo_title": "Geo IPTV : Zoom de l’Apple TV ou recadrage vidéo",
+      "seo_description": "Vérifiez le Zoom de l’écran avec Geo IPTV sur Apple TV, conservez les préférences d’accessibilité utiles et distinguez l’agrandissement général du cadrage vidéo.",
+      "sections": [
+        {
+          "heading": "Regardez au-delà de l’image du programme",
+          "paragraphs": [
+            "La vérification du Zoom avec Geo IPTV commence hors du lecteur. Revenez à l’écran d’accueil de l’Apple TV et observez si les icônes, les libellés et les bords semblent également agrandis. Si une seule émission est rognée, notez plutôt ce symptôme précis. Un agrandissement sur plusieurs écrans constitue un indice utile, mais ne prouve ni une panne du service ni un changement du compte. Ne modifiez pas les réglages d’image du téléviseur pendant cette comparaison."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez le réglage d’accessibilité",
+          "paragraphs": [
+            "Apple décrit Zoom dans Réglages, Accessibilité, puis Zoom sur Apple TV. Cette fonction agrandit l’image à l’écran et permet de se déplacer dans la vue agrandie. Vérifiez son état et le niveau maximal avant de modifier une préférence. Consultez les instructions adaptées à votre télécommande et à votre version du système, plutôt que de reproduire un geste appris sur un autre appareil. Le réglage de cadrage propre au lecteur reste distinct."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : utiliser Zoom sur Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Préservez une vue confortable pour lire",
+          "paragraphs": [
+            "Le Zoom peut être une aide d’accessibilité volontaire pour vous ou une autre personne du foyer. Notez les choix initiaux et convenez d’un affichage confortable avant de les ajuster. Après une seule modification, comparez de nouveau l’accueil et le même menu du lecteur. Si le problème concerne uniquement la vidéo, décrivez séparément les bords touchés. Pour obtenir de l’aide, indiquez le modèle d’Apple TV, la version du système et les écrans agrandis ; excluez les mots de passe et les liens privés de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV su Apple TV: menu ingranditi o video tagliato?",
+      "excerpt": "Se anche menu ed etichette appaiono ingranditi, controlla lo Zoom di accessibilità di Apple TV separatamente dall’inquadratura del lettore.",
+      "seo_title": "Geo IPTV: Zoom di Apple TV o immagine ritagliata",
+      "seo_description": "Controlla lo Zoom dello schermo con Geo IPTV su Apple TV, conserva le preferenze di accessibilità utili e distingui l’ingrandimento generale dal ritaglio del video.",
+      "sections": [
+        {
+          "heading": "Osserva anche fuori dal programma",
+          "paragraphs": [
+            "Il controllo dello Zoom con Geo IPTV comincia fuori dal lettore. Torna alla schermata Home di Apple TV e osserva se risultano ingranditi anche icone, etichette e bordi. Se appare tagliato soltanto un programma, annota invece quel sintomo specifico. L’ingrandimento su schermate diverse è un indizio utile, ma non dimostra un’interruzione del servizio o una modifica dell’account. Durante il confronto lascia invariati i controlli dell’immagine del televisore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l’impostazione di accessibilità",
+          "paragraphs": [
+            "Apple descrive Zoom in Impostazioni, Accessibilità e poi Zoom su Apple TV. La funzione ingrandisce l’immagine sullo schermo e permette di spostarsi nella vista ingrandita. Controlla lo stato attuale e il livello massimo prima di cambiare una preferenza. Segui le istruzioni per il tuo telecomando e la tua versione del sistema, senza provare gesti ricordati da un altro dispositivo. Il controllo dell’inquadratura del lettore è un’impostazione separata."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: utilizzare Zoom su Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva una visualizzazione comoda da leggere",
+          "paragraphs": [
+            "Lo Zoom potrebbe essere un aiuto di accessibilità voluto da te o da un’altra persona in casa. Annota le scelte iniziali e concordate una vista comoda prima di modificarle. Dopo un solo cambiamento, confronta nuovamente la Home e lo stesso menu del lettore. Se il problema riguarda soltanto il video, descrivi separatamente i bordi interessati. All’assistenza indica modello di Apple TV, versione del sistema e schermate ingrandite; escludi password e collegamenti privati alle playlist."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV op Apple TV: grotere menu’s of afgesneden video?",
+      "excerpt": "Zijn ook menu’s en labels groter, controleer dan de toegankelijkheidsfunctie Zoom van Apple TV los van de beeldvulling in de speler.",
+      "seo_title": "Geo IPTV: Apple TV Zoom of afgesneden videobeeld",
+      "seo_description": "Controleer schermzoom bij Geo IPTV op Apple TV, behoud nuttige toegankelijkheidsvoorkeuren en onderscheid algemene vergroting van een afgesneden videobeeld.",
+      "sections": [
+        {
+          "heading": "Kijk ook buiten het programma",
+          "paragraphs": [
+            "Een controle van schermzoom bij Geo IPTV begint buiten de speler. Ga naar het beginscherm van Apple TV en kijk of pictogrammen, menuteksten en schermranden ook vergroot zijn. Als slechts één programma afgesneden lijkt, noteer dan die specifiekere klacht. Vergroting op verschillende schermen is een nuttige aanwijzing, maar bewijst geen storing van de dienst of gewijzigde accountinstelling. Laat de beeldinstellingen van de televisie tijdens deze vergelijking ongewijzigd."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de toegankelijkheidsinstelling",
+          "paragraphs": [
+            "Apple beschrijft Zoom onder Instellingen, Toegankelijkheid en vervolgens Zoom op Apple TV. Deze functie vergroot het schermbeeld en maakt beweging door de vergrote weergave mogelijk. Controleer de huidige stand en het maximale zoomniveau voordat je iets verandert. Volg de aanwijzingen voor jouw afstandsbediening en softwareversie, in plaats van een gebaar van een ander apparaat te proberen. De beeldvulling van de speler is een afzonderlijke instelling."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Zoom gebruiken op Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Behoud een prettig leesbare weergave",
+          "paragraphs": [
+            "Zoom kan bewust zijn ingesteld als toegankelijkheidshulp voor jou of iemand anders in huis. Noteer de oorspronkelijke keuzes en spreek een prettige weergave af voordat je ze aanpast. Vergelijk na één wijziging opnieuw het beginscherm en hetzelfde spelersmenu. Blijft het probleem alleen in de video zichtbaar, beschrijf dan afzonderlijk welke randen ontbreken. Meld aan ondersteuning het Apple TV-model, de softwareversie en welke schermen vergroot zijn; stuur geen wachtwoorden of privélinks naar afspeellijsten mee."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV na Apple TV: menus ampliados ou vídeo cortado?",
+      "excerpt": "Se os menus e os rótulos também aparecem maiores, verifique o Zoom de acessibilidade da Apple TV separadamente do enquadramento do leitor.",
+      "seo_title": "Geo IPTV: Zoom da Apple TV ou recorte do vídeo",
+      "seo_description": "Verifique o Zoom do ecrã com Geo IPTV na Apple TV, preserve preferências de acessibilidade úteis e diferencie a ampliação geral de uma imagem de vídeo cortada.",
+      "sections": [
+        {
+          "heading": "Observe para além do programa",
+          "paragraphs": [
+            "A verificação do Zoom com Geo IPTV começa fora do leitor. Volte ao ecrã principal da Apple TV e observe se os ícones, os rótulos e os limites também parecem ampliados. Se apenas um programa estiver cortado, registe esse sintoma mais específico. A ampliação em ecrãs diferentes é uma pista útil, mas não comprova uma falha do serviço nem uma alteração na conta. Mantenha os controlos de imagem do televisor inalterados durante a comparação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reveja a definição de acessibilidade",
+          "paragraphs": [
+            "A Apple documenta o Zoom em Definições, Acessibilidade e depois Zoom na Apple TV. Esta função amplia a imagem do ecrã e permite deslocar a vista ampliada. Confira o estado atual e o nível máximo antes de alterar uma preferência. Siga as instruções para o seu comando e versão do sistema, em vez de experimentar um gesto de outro dispositivo. O controlo de enquadramento do próprio leitor é uma definição separada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: utilizar Zoom na Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Preserve uma vista confortável para ler",
+          "paragraphs": [
+            "O Zoom pode ser uma ajuda de acessibilidade escolhida por si ou por outra pessoa em casa. Anote as escolhas originais e acordem uma vista confortável antes de ajustar. Após uma só alteração, compare novamente o ecrã principal e o mesmo menu do leitor. Se o problema ficar apenas no vídeo, descreva separadamente os limites afetados. Ao pedir apoio, indique o modelo da Apple TV, a versão do sistema e os ecrãs ampliados; não envie palavras-passe nem ligações privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV на Apple TV: увеличены меню или обрезано видео?",
+      "excerpt": "Если крупнее выглядят также меню и подписи, проверьте функцию универсального доступа «Увеличение» отдельно от кадрирования в проигрывателе.",
+      "seo_title": "Geo IPTV: увеличение Apple TV или обрезка видео",
+      "seo_description": "Проверьте увеличение экрана при просмотре Geo IPTV на Apple TV, сохраните удобные настройки доступности и отличите общий масштаб от обрезки видео.",
+      "sections": [
+        {
+          "heading": "Посмотрите не только на передачу",
+          "paragraphs": [
+            "Проверку масштаба экрана с Geo IPTV начните вне проигрывателя. Вернитесь на главный экран Apple TV и посмотрите, увеличены ли значки, подписи меню и края экрана. Если обрезана только одна передача, запишите именно этот более узкий признак. Увеличение на разных экранах даёт полезную подсказку, но не доказывает сбой сервиса или изменение учётной записи. При сравнении не меняйте настройки изображения телевизора."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте функцию универсального доступа",
+          "paragraphs": [
+            "Apple описывает увеличение в разделе «Настройки», «Универсальный доступ», затем «Увеличение» на Apple TV. Функция увеличивает изображение и позволяет перемещаться по увеличенной области. До изменения предпочтений проверьте текущее состояние и максимальный уровень увеличения. Пользуйтесь инструкцией для своей модели пульта и версии системы, а не жестом, запомнившимся с другого устройства. Подгонка кадра в самом проигрывателе является отдельной настройкой."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: увеличение изображения на Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Сохраните удобный для чтения вид",
+          "paragraphs": [
+            "Увеличение может быть намеренно включено для вас или другого члена семьи. Запишите исходные параметры и согласуйте удобный вид перед их изменением. После одного изменения снова сравните главный экран и то же меню проигрывателя. Если проблема осталась только внутри видео, отдельно опишите затронутые края. Для поддержки укажите модель Apple TV, версию системы и экраны с увеличением; не отправляйте пароли и личные ссылки на плейлисты."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اور Apple TV: مینو بڑے ہیں یا ویڈیو کٹی ہوئی ہے؟",
+      "excerpt": "اگر تصویر کے ساتھ مینو اور تحریر بھی بڑی نظر آئیں تو Apple TV کی رسائی والی زوم ترتیب کو پلیئر کی تصویر کے فریم سے الگ جانچیں۔",
+      "seo_title": "Geo IPTV: Apple TV کا زوم یا ویڈیو کے کناروں کا کٹنا",
+      "seo_description": "Apple TV پر Geo IPTV دیکھتے ہوئے اسکرین کا زوم جانچیں، مفید رسائی کی ترتیبات محفوظ رکھیں اور پوری اسکرین کے بڑھنے کو ویڈیو کٹنے سے الگ پہچانیں۔",
+      "sections": [
+        {
+          "heading": "پروگرام کی تصویر سے باہر بھی دیکھیں",
+          "paragraphs": [
+            "Geo IPTV میں اسکرین کے زوم کی جانچ پلیئر سے باہر شروع کریں۔ Apple TV کی ہوم اسکرین پر واپس جائیں اور دیکھیں کہ آئیکن، مینو کی تحریر اور اسکرین کے کنارے بھی بڑے ہیں یا نہیں۔ اگر صرف ایک پروگرام کٹا ہوا لگتا ہے تو اسی محدود علامت کو لکھیں۔ مختلف اسکرینوں پر بڑا منظر ایک مفید اشارہ ہے، لیکن یہ سروس بند ہونے یا اکاؤنٹ کی ترتیب بدلنے کا ثبوت نہیں۔ موازنہ کرتے وقت ٹی وی کی تصویر کی ترتیبات نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی کی ترتیب دیکھیں",
+          "paragraphs": [
+            "Apple کے مطابق Apple TV میں سیٹنگز، پھر رسائی، اور پھر زوم میں یہ اختیار ملتا ہے۔ یہ خصوصیت اسکرین کی تصویر کو بڑا کرتی ہے اور بڑھے ہوئے منظر میں حرکت کی سہولت دیتی ہے۔ کوئی ترجیح بدلنے سے پہلے موجودہ حالت اور زوم کی زیادہ سے زیادہ سطح دیکھیں۔ کسی دوسرے آلے کا یاد کیا ہوا اشارہ آزمانے کے بجائے اپنے ریموٹ اور سافٹ ویئر کے ورژن کی ہدایات پر عمل کریں۔ پلیئر کی تصویر کو فریم میں بٹھانے کی ترتیب الگ ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV پر زوم استعمال کرنے کی ہدایات",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "پڑھنے میں مدد دینے والا منظر محفوظ رکھیں",
+          "paragraphs": [
+            "زوم آپ یا گھر کے کسی فرد کی سہولت کے لیے جان بوجھ کر فعال ہو سکتا ہے۔ اصل ترتیبات نوٹ کریں اور بدلنے سے پہلے آرام دہ منظر پر اتفاق کریں۔ ایک تبدیلی کے بعد ہوم اسکرین اور پلیئر کے اسی مینو کا دوبارہ موازنہ کریں۔ اگر مسئلہ صرف ویڈیو میں رہے تو متاثرہ کنارے الگ بیان کریں۔ مدد مانگتے وقت Apple TV کا ماڈل، سافٹ ویئر کا ورژن اور بڑی نظر آنے والی اسکرینیں بتائیں؛ پاس ورڈ اور نجی پلے لسٹ کے روابط نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV على Apple TV: قوائم مكبّرة أم فيديو مقصوص؟",
+      "excerpt": "إذا بدت القوائم والتسميات أكبر أيضًا، فتحقق من تكبير تسهيلات الاستخدام في Apple TV بشكل منفصل عن تأطير الصورة داخل المشغّل.",
+      "seo_title": "Geo IPTV: تكبير Apple TV أم قصّ صورة الفيديو",
+      "seo_description": "تحقق من تكبير الشاشة مع Geo IPTV على Apple TV، واحتفظ بإعدادات تسهيلات الاستخدام المفيدة وميّز تكبير الشاشة كلها عن قصّ صورة الفيديو.",
+      "sections": [
+        {
+          "heading": "انظر إلى ما هو خارج صورة البرنامج",
+          "paragraphs": [
+            "ابدأ فحص تكبير الشاشة مع Geo IPTV خارج المشغّل. ارجع إلى الشاشة الرئيسية في Apple TV ولاحظ هل تظهر الأيقونات وتسميات القوائم وحواف الشاشة أكبر أيضًا. إذا كان برنامج واحد فقط يبدو مقصوصًا، فسجّل هذا العَرَض المحدد بدلًا من تعميمه. التكبير في شاشات مختلفة قرينة مفيدة، لكنه لا يثبت تعطل الخدمة أو تغير إعداد في الحساب. اترك إعدادات صورة التلفاز كما هي أثناء المقارنة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع إعداد تسهيلات الاستخدام",
+          "paragraphs": [
+            "توضح Apple أن ميزة التكبير موجودة ضمن الإعدادات، ثم تسهيلات الاستخدام، ثم التكبير على Apple TV. تكبّر هذه الميزة صورة الشاشة وتتيح التحرك داخل العرض المكبّر. تحقق من حالتها الحالية ومستوى التكبير الأقصى قبل تعديل أي تفضيل. اتبع تعليمات جهاز التحكم وإصدار النظام الفعليين بدل تجربة حركة تتذكرها من جهاز آخر. إعداد ملاءمة الصورة في المشغّل نفسه منفصل عن هذه الميزة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: استخدام التكبير على Apple TV",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "احتفظ بعرض مريح للقراءة",
+          "paragraphs": [
+            "قد يكون التكبير مساعدة مقصودة لك أو لشخص آخر في المنزل. دوّن الخيارات الأصلية واتفقوا على عرض مريح قبل تعديلها. بعد تغيير واحد، قارن الشاشة الرئيسية وقائمة المشغّل نفسها مجددًا. إذا بقيت المشكلة داخل الفيديو فقط، فصف الحواف المتأثرة بصورة منفصلة. عند طلب الدعم، اذكر طراز Apple TV وإصدار النظام والشاشات التي تبدو مكبّرة؛ لا ترسل كلمات المرور أو روابط قوائم التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV और Apple TV: मेन्यू बड़े हैं या वीडियो कटा है?",
+      "excerpt": "अगर तस्वीर के साथ मेन्यू और लेबल भी बड़े दिखते हैं, तो Apple TV की सुलभता वाली ज़ूम सेटिंग को प्लेयर के वीडियो फ़्रेम से अलग जाँचें।",
+      "seo_title": "Geo IPTV: Apple TV का ज़ूम या वीडियो की कटाई",
+      "seo_description": "Apple TV पर Geo IPTV के स्क्रीन ज़ूम की जाँच करें, काम की सुलभता सेटिंग बचाएँ और पूरे स्क्रीन के बढ़ने को वीडियो के कटे किनारों से अलग समझें।",
+      "sections": [
+        {
+          "heading": "कार्यक्रम की तस्वीर के बाहर भी देखें",
+          "paragraphs": [
+            "Geo IPTV के स्क्रीन ज़ूम की जाँच प्लेयर के बाहर शुरू होती है। Apple TV की होम स्क्रीन पर लौटें और देखें कि आइकन, मेन्यू के लेबल और स्क्रीन के किनारे भी बड़े दिख रहे हैं या नहीं। अगर केवल एक कार्यक्रम कटा दिखता है, तो उसी सीमित लक्षण को लिखें। अलग स्क्रीन पर बढ़ा हुआ दृश्य एक उपयोगी संकेत है, लेकिन उससे सेवा बंद होने या खाते की सेटिंग बदलने का प्रमाण नहीं मिलता। तुलना के दौरान टीवी की तस्वीर की सेटिंग न बदलें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सुलभता की सेटिंग देखें",
+          "paragraphs": [
+            "Apple के अनुसार Apple TV में सेटिंग, फिर सुलभता और फिर ज़ूम में यह सुविधा मिलती है। यह स्क्रीन की तस्वीर बड़ी करती है और बढ़े हुए दृश्य में घूमने देती है। कोई पसंद बदलने से पहले उसकी मौजूदा स्थिति और अधिकतम ज़ूम स्तर देखें। किसी दूसरे उपकरण का याद किया हुआ इशारा आज़माने के बजाय अपने असली रिमोट और सॉफ़्टवेयर संस्करण के निर्देश अपनाएँ। प्लेयर का तस्वीर को फ़्रेम में बिठाने वाला नियंत्रण अलग सेटिंग है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV पर ज़ूम इस्तेमाल करने के निर्देश",
+              "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "पढ़ने में मदद करने वाला दृश्य बचाएँ",
+          "paragraphs": [
+            "ज़ूम आपके या घर के किसी दूसरे सदस्य के लिए जानबूझकर चालू की गई सुलभता सहायता हो सकता है। मूल विकल्प लिखें और बदलने से पहले सुविधाजनक दृश्य पर सहमति लें। एक बदलाव के बाद होम स्क्रीन और प्लेयर के उसी मेन्यू की फिर तुलना करें। समस्या केवल वीडियो में रहे तो प्रभावित किनारों का अलग वर्णन करें। सहायता लेते समय Apple TV का मॉडल, सॉफ़्टवेयर संस्करण और बड़ी दिखने वाली स्क्रीन बताएँ; पासवर्ड और निजी प्लेलिस्ट लिंक संदेश में न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: use Zoom on Apple TV",
+      "url": "https://support.apple.com/guide/tv/use-zoom-to-magnify-atvb4dc7fb7e/tvos"
+    }
+  ]
+}

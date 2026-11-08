@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-08",
+  "topic": "Check VLC for Android app-switch background preferences separately from deliberately ending an IPTV viewing session",
+  "primary_keyword": "IPTV background playback",
+  "slug": "main-vlc-android-background-preference-versus-stop",
+  "translations": {
+    "en": {
+      "title": "IPTV background playback: what changes when you leave VLC?",
+      "excerpt": "Check VLC for Android’s saved background preference when playback changes after switching apps. Separate leaving the player from deliberately ending a viewing session.",
+      "seo_title": "IPTV background playback: what changes when you leave VLC?",
+      "seo_description": "Check VLC for Android’s saved background preference when playback changes after switching apps. Separate leaving the player from deliberately ending a viewing session.",
+      "sections": [
+        {
+          "heading": "Describe the exact action",
+          "paragraphs": [
+            "An IPTV background playback check starts with a small detail: did you press Home, open another app, or deliberately stop the programme? Note whether sound continues, the picture disappears, or both stop. Keep the same player and programme during the comparison. Leaving a video screen is not always the same action as ending playback, and an unexpected change does not by itself establish a connection or subscription fault."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the saved background preference",
+          "paragraphs": [
+            "VideoLAN documents a background preference that can stop playback, continue it behind other apps, or use a small video overlay. In VLC for Android settings, inspect the Video section and record the current choice before changing it. Select only a behaviour you actually want and compare the same app-switch action once. Names and availability can vary by version; this preference is not a promise about every screen-lock or Android power-saving situation."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: background playback preferences",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm that the session has ended",
+          "paragraphs": [
+            "Return to the player and note whether the result matches the saved preference. Do not change battery restrictions, network settings and playback controls together just to reproduce the behaviour. When you finish viewing, use the player’s stop control and confirm that programme sound has ended rather than assuming the Home button did so. For support, describe the VLC version, action and visible or audible result without sending credentials or private playlist addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "IPTV en segundo plano: ¿qué pasa al salir de VLC?",
+      "excerpt": "Revisa la preferencia de segundo plano de VLC para Android si cambia la reproducción al abrir otra aplicación. Salir del reproductor y terminar la sesión son acciones distintas.",
+      "seo_title": "IPTV en segundo plano: ¿qué pasa al salir de VLC?",
+      "seo_description": "Revisa la preferencia de segundo plano de VLC para Android si cambia la reproducción al abrir otra aplicación. Salir del reproductor y terminar la sesión son acciones distintas.",
+      "sections": [
+        {
+          "heading": "Describe la acción exacta",
+          "paragraphs": [
+            "Para comprobar la reproducción IPTV en segundo plano, empieza por un detalle: ¿pulsaste Inicio, abriste otra aplicación o detuviste el programa de forma deliberada? Anota si sigue el sonido, desaparece la imagen o se detienen ambos. Mantén el mismo reproductor y programa durante la comparación. Salir de la pantalla de vídeo no siempre equivale a finalizar la reproducción; un cambio inesperado tampoco demuestra por sí solo un fallo de conexión o de suscripción."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la preferencia guardada",
+          "paragraphs": [
+            "VideoLAN documenta una preferencia que permite detener la reproducción, continuar detrás de otras aplicaciones o mostrar una pequeña ventana de vídeo. En los ajustes de VLC para Android, revisa la sección Vídeo y anota la opción actual antes de cambiarla. Elige únicamente el comportamiento que deseas y repite una vez la misma acción de cambiar de aplicación. Los nombres y la disponibilidad varían según la versión; esta preferencia no garantiza el resultado de cualquier bloqueo de pantalla o ahorro de energía de Android."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: ajustes de reproducción en segundo plano",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba que la sesión terminó",
+          "paragraphs": [
+            "Vuelve al reproductor y observa si el resultado coincide con la preferencia guardada. No cambies a la vez restricciones de batería, ajustes de red y controles de reproducción para intentar reproducir el comportamiento. Al terminar, utiliza el control de detener y comprueba que ha cesado el sonido del programa, en lugar de suponer que Inicio lo hizo. Para pedir ayuda, indica la versión de VLC, la acción y el resultado visible o audible, sin enviar credenciales ni direcciones privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV en arrière-plan : que se passe-t-il en quittant VLC ?",
+      "excerpt": "Vérifiez la préférence d’arrière-plan de VLC pour Android si la lecture change en ouvrant une autre application. Quitter l’écran vidéo et terminer la séance sont deux actions différentes.",
+      "seo_title": "IPTV en arrière-plan : que se passe-t-il en quittant VLC ?",
+      "seo_description": "Vérifiez la préférence d’arrière-plan de VLC pour Android si la lecture change en ouvrant une autre application. Quitter l’écran vidéo et terminer la séance sont deux actions différentes.",
+      "sections": [
+        {
+          "heading": "Décrire précisément le geste",
+          "paragraphs": [
+            "Pour examiner la lecture IPTV en arrière-plan, commencez par un détail : avez-vous appuyé sur Accueil, ouvert une autre application ou volontairement arrêté le programme ? Notez si le son continue, si l’image disparaît ou si les deux s’arrêtent. Gardez le même lecteur et le même programme pendant la comparaison. Quitter l’écran vidéo ne revient pas toujours à arrêter la lecture ; un changement inattendu ne prouve pas à lui seul une panne de connexion ou un problème d’abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la préférence enregistrée",
+          "paragraphs": [
+            "VideoLAN décrit une préférence permettant d’arrêter la lecture, de la poursuivre derrière les autres applications ou d’afficher une petite fenêtre vidéo. Dans les paramètres de VLC pour Android, consultez la rubrique Vidéo et relevez le choix actuel avant toute modification. Sélectionnez seulement le comportement souhaité et répétez une fois le même changement d’application. Les libellés et les possibilités dépendent de la version ; cette préférence ne garantit pas le résultat de tous les verrouillages d’écran ou modes d’économie d’énergie Android."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : préférences de lecture en arrière-plan",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier que la séance est terminée",
+          "paragraphs": [
+            "Revenez au lecteur pour voir si le résultat correspond au choix enregistré. Ne modifiez pas simultanément les restrictions de batterie, le réseau et les commandes de lecture pour reproduire le phénomène. À la fin, utilisez la commande d’arrêt du lecteur et vérifiez que le son du programme a cessé, sans supposer qu’Accueil l’a arrêté. Pour l’assistance, précisez la version de VLC, le geste et le résultat visible ou audible, sans transmettre d’identifiants ni d’adresses privées de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV in sottofondo: cosa cambia quando esci da VLC?",
+      "excerpt": "Controlla la preferenza di sottofondo di VLC per Android se la riproduzione cambia passando a un’altra app. Uscire dalla schermata video non significa sempre terminare la sessione.",
+      "seo_title": "IPTV in sottofondo: cosa cambia quando esci da VLC?",
+      "seo_description": "Controlla la preferenza di sottofondo di VLC per Android se la riproduzione cambia passando a un’altra app. Uscire dalla schermata video non significa sempre terminare la sessione.",
+      "sections": [
+        {
+          "heading": "Descrivi esattamente l’azione",
+          "paragraphs": [
+            "Per controllare la riproduzione IPTV in sottofondo, parti da un dettaglio: hai premuto Home, aperto un’altra app oppure interrotto volontariamente il programma? Annota se l’audio continua, l’immagine scompare o entrambi si fermano. Mantieni lo stesso lettore e programma durante il confronto. Lasciare la schermata video non equivale sempre a terminare la riproduzione; un cambiamento inatteso, da solo, non dimostra un guasto della connessione o dell’abbonamento."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la preferenza salvata",
+          "paragraphs": [
+            "VideoLAN descrive una preferenza che può interrompere la riproduzione, proseguirla dietro altre app oppure mostrarla in una piccola finestra video. Nelle impostazioni di VLC per Android, controlla la sezione Video e annota la scelta attuale prima di modificarla. Seleziona soltanto il comportamento desiderato e ripeti una volta lo stesso passaggio a un’altra app. Nomi e disponibilità variano secondo la versione; questa preferenza non garantisce il risultato di ogni blocco schermo o risparmio energetico di Android."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferenze di riproduzione in sottofondo",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Verifica che la sessione sia terminata",
+          "paragraphs": [
+            "Torna nel lettore e osserva se il risultato corrisponde alla preferenza salvata. Non cambiare insieme restrizioni della batteria, impostazioni di rete e comandi di riproduzione per riprodurre il comportamento. Quando hai finito, usa il comando di arresto del lettore e verifica che l’audio del programma sia terminato, senza presumere che Home lo abbia fermato. Per l’assistenza, descrivi versione di VLC, azione e risultato visibile o udibile, senza inviare credenziali o indirizzi privati delle liste."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV op de achtergrond: wat gebeurt er als je VLC verlaat?",
+      "excerpt": "Controleer de achtergrondvoorkeur van VLC voor Android als afspelen verandert na het openen van een andere app. Het videoscherm verlaten en de sessie beëindigen zijn verschillende handelingen.",
+      "seo_title": "IPTV op de achtergrond: wat gebeurt er als je VLC verlaat?",
+      "seo_description": "Controleer de achtergrondvoorkeur van VLC voor Android als afspelen verandert na het openen van een andere app. Het videoscherm verlaten en de sessie beëindigen zijn verschillende handelingen.",
+      "sections": [
+        {
+          "heading": "Beschrijf de precieze handeling",
+          "paragraphs": [
+            "Een controle van IPTV op de achtergrond begint met een detail: drukte je op Home, opende je een andere app of stopte je het programma bewust? Noteer of het geluid doorgaat, het beeld verdwijnt of beide stoppen. Gebruik tijdens de vergelijking dezelfde speler en hetzelfde programma. Het videoscherm verlaten is niet altijd hetzelfde als de weergave beëindigen. Een onverwachte verandering bewijst op zichzelf ook geen verbindings- of abonnementsprobleem."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de opgeslagen achtergrondvoorkeur",
+          "paragraphs": [
+            "VideoLAN beschrijft een voorkeur waarmee de weergave kan stoppen, achter andere apps kan doorgaan of in een klein videovenster kan verschijnen. Bekijk in de instellingen van VLC voor Android de rubriek Video en noteer de huidige keuze voordat je iets wijzigt. Kies alleen het gewenste gedrag en herhaal één keer dezelfde handeling om van app te wisselen. Namen en beschikbaarheid verschillen per versie. De voorkeur garandeert niet wat er bij elke schermvergrendeling of energiebesparende Android-instelling gebeurt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: afspelen op de achtergrond",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer of de sessie is gestopt",
+          "paragraphs": [
+            "Ga terug naar de speler en kijk of het resultaat past bij de opgeslagen voorkeur. Wijzig niet tegelijk batterijbeperkingen, netwerkinstellingen en afspeelknoppen om het gedrag na te bootsen. Gebruik wanneer je klaar bent de stopknop van de speler en controleer dat het programmageluid is beëindigd; neem niet aan dat Home dat heeft gedaan. Geef voor ondersteuning de VLC-versie, de handeling en het zichtbare of hoorbare resultaat door, zonder inloggegevens of privé-adressen van afspeellijsten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV em segundo plano: o que muda ao sair do VLC?",
+      "excerpt": "Confira a preferência de segundo plano do VLC para Android se a reprodução mudar ao abrir outro aplicativo. Sair da tela de vídeo e encerrar a sessão são ações diferentes.",
+      "seo_title": "IPTV em segundo plano: o que muda ao sair do VLC?",
+      "seo_description": "Confira a preferência de segundo plano do VLC para Android se a reprodução mudar ao abrir outro aplicativo. Sair da tela de vídeo e encerrar a sessão são ações diferentes.",
+      "sections": [
+        {
+          "heading": "Descreva a ação exata",
+          "paragraphs": [
+            "Uma verificação da reprodução IPTV em segundo plano começa com um detalhe: você pressionou Início, abriu outro aplicativo ou parou o programa de propósito? Anote se o som continua, a imagem desaparece ou ambos param. Mantenha o mesmo reprodutor e programa durante a comparação. Sair da tela de vídeo nem sempre significa encerrar a reprodução, e uma mudança inesperada não comprova, por si só, uma falha de conexão ou de assinatura."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a preferência salva",
+          "paragraphs": [
+            "A VideoLAN documenta uma preferência que pode parar a reprodução, continuá-la por trás de outros aplicativos ou mostrar uma pequena janela de vídeo. Nas configurações do VLC para Android, confira a seção Vídeo e registre a escolha atual antes de alterá-la. Selecione apenas o comportamento desejado e repita uma vez a mesma troca de aplicativo. Os nomes e as opções variam conforme a versão; essa preferência não garante o resultado de todo bloqueio de tela ou recurso de economia de energia do Android."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: reprodução em segundo plano",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme que a sessão terminou",
+          "paragraphs": [
+            "Volte ao reprodutor e observe se o resultado corresponde à preferência salva. Não altere ao mesmo tempo restrições de bateria, configurações de rede e controles de reprodução para repetir o comportamento. Ao terminar, use o comando de parar e confirme que o som do programa cessou, sem presumir que Início o encerrou. Para receber ajuda, informe a versão do VLC, a ação e o resultado visível ou audível, sem enviar credenciais ou endereços privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV в фоне: что меняется при выходе из VLC?",
+      "excerpt": "Проверьте фоновую настройку VLC для Android, если воспроизведение меняется при открытии другого приложения. Уход с экрана видео и завершение просмотра — разные действия.",
+      "seo_title": "IPTV в фоне: что меняется при выходе из VLC?",
+      "seo_description": "Проверьте фоновую настройку VLC для Android, если воспроизведение меняется при открытии другого приложения. Уход с экрана видео и завершение просмотра — разные действия.",
+      "sections": [
+        {
+          "heading": "Уточните выполненное действие",
+          "paragraphs": [
+            "Проверку фонового воспроизведения IPTV начните с детали: вы нажали «Домой», открыли другое приложение или намеренно остановили программу? Отметьте, продолжается ли звук, исчезает ли изображение или останавливается и то и другое. При сравнении используйте тот же плеер и программу. Уход с экрана видео не всегда равнозначен остановке воспроизведения. Неожиданное изменение само по себе также не доказывает неисправность соединения или подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте сохранённую настройку",
+          "paragraphs": [
+            "VideoLAN описывает настройку, позволяющую остановить воспроизведение, продолжить его за другими приложениями либо вывести небольшое окно видео. В настройках VLC для Android откройте раздел видео и запишите текущий выбор перед изменением. Выбирайте только нужное вам поведение и один раз повторите тот же переход в другое приложение. Названия и доступность зависят от версии. Эта настройка не гарантирует результат при любой блокировке экрана или любом режиме энергосбережения Android."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: настройки фонового воспроизведения",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Убедитесь, что просмотр завершён",
+          "paragraphs": [
+            "Вернитесь в плеер и проверьте, соответствует ли результат сохранённому выбору. Не меняйте одновременно ограничения батареи, параметры сети и управление воспроизведением ради повторения ситуации. Закончив просмотр, используйте остановку в самом плеере и убедитесь, что звук программы прекратился; не считайте нажатие «Домой» подтверждением остановки. При обращении в поддержку сообщите версию VLC, действие и видимый либо слышимый результат. Не передавайте пароли и закрытые адреса плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV پس منظر میں: VLC سے نکلنے پر کیا بدلتا ہے؟",
+      "excerpt": "دوسری ایپ کھولنے پر پلے بیک بدلے تو Android کے VLC کی پس منظر والی ترجیح دیکھیں۔ ویڈیو اسکرین چھوڑنا اور دیکھنے کا سیشن ختم کرنا الگ عمل ہیں۔",
+      "seo_title": "IPTV پس منظر میں: VLC سے نکلنے پر کیا بدلتا ہے؟",
+      "seo_description": "دوسری ایپ کھولنے پر پلے بیک بدلے تو Android کے VLC کی پس منظر والی ترجیح دیکھیں۔ ویڈیو اسکرین چھوڑنا اور دیکھنے کا سیشن ختم کرنا الگ عمل ہیں۔",
+      "sections": [
+        {
+          "heading": "اپنا درست عمل بتائیں",
+          "paragraphs": [
+            "پس منظر میں IPTV چلنے کی جانچ ایک چھوٹی بات سے شروع ہوتی ہے: کیا آپ نے ہوم دبایا، دوسری ایپ کھولی یا پروگرام جان بوجھ کر روکا؟ نوٹ کریں کہ آواز جاری رہی، تصویر غائب ہوئی یا دونوں رک گئے۔ موازنہ کرتے وقت وہی پلیئر اور پروگرام رکھیں۔ ویڈیو اسکرین سے نکلنا ہمیشہ پلے بیک ختم کرنا نہیں ہوتا۔ غیر متوقع تبدیلی اکیلے کنکشن یا سبسکرپشن کی خرابی ثابت نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "محفوظ ترجیح پڑھیں",
+          "paragraphs": [
+            "VideoLAN ایک ایسی ترجیح بتاتا ہے جس سے پلے بیک رک سکتا ہے، دوسری ایپس کے پیچھے جاری رہ سکتا ہے یا ایک چھوٹی ویڈیو ونڈو میں نظر آ سکتا ہے۔ Android کے VLC کی ترتیبات میں ویڈیو والا حصہ دیکھیں اور تبدیلی سے پہلے موجودہ انتخاب نوٹ کریں۔ صرف مطلوبہ رویہ منتخب کریں اور ایک بار وہی ایپ بدلنے والا عمل دہرائیں۔ نام اور دستیاب اختیارات ورژن کے ساتھ بدل سکتے ہیں؛ یہ ترجیح ہر اسکرین لاک یا Android کی بجلی بچانے والی حالت کے نتیجے کی ضمانت نہیں ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: پس منظر میں پلے بیک",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "سیشن ختم ہونے کی تصدیق کریں",
+          "paragraphs": [
+            "پلیئر پر واپس آ کر دیکھیں کہ نتیجہ محفوظ ترجیح کے مطابق ہے یا نہیں۔ مسئلہ دہرانے کے لیے بیٹری کی پابندیاں، نیٹ ورک کی ترتیبات اور پلے بیک کے بٹن ایک ساتھ نہ بدلیں۔ دیکھنا ختم ہو تو پلیئر کا روکنے والا بٹن استعمال کریں اور پروگرام کی آواز ختم ہونے کی تصدیق کریں؛ یہ نہ سمجھیں کہ ہوم نے لازماً اسے روک دیا۔ مدد لیتے وقت VLC کا ورژن، اپنا عمل اور نظر یا سنائی دینے والا نتیجہ بتائیں۔ پاس ورڈ یا پلے لسٹ کے نجی پتے نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "IPTV في الخلفية: ماذا يتغير عند مغادرة VLC؟",
+      "excerpt": "راجع تفضيل الخلفية في VLC لنظام Android إذا تغير التشغيل عند فتح تطبيق آخر. مغادرة شاشة الفيديو وإنهاء جلسة المشاهدة ليسا دائماً الإجراء نفسه.",
+      "seo_title": "IPTV في الخلفية: ماذا يتغير عند مغادرة VLC؟",
+      "seo_description": "راجع تفضيل الخلفية في VLC لنظام Android إذا تغير التشغيل عند فتح تطبيق آخر. مغادرة شاشة الفيديو وإنهاء جلسة المشاهدة ليسا دائماً الإجراء نفسه.",
+      "sections": [
+        {
+          "heading": "صف الإجراء بدقة",
+          "paragraphs": [
+            "ابدأ فحص تشغيل IPTV في الخلفية بتفصيل صغير: هل ضغطت زر الرئيسية، أم فتحت تطبيقاً آخر، أم أوقفت البرنامج عمداً؟ سجّل هل يستمر الصوت أو تختفي الصورة أو يتوقف كلاهما. استخدم المشغّل والبرنامج نفسيهما أثناء المقارنة. مغادرة شاشة الفيديو لا تعني دائماً إنهاء التشغيل، والتغير غير المتوقع لا يثبت وحده وجود خلل في الاتصال أو الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ التفضيل المحفوظ",
+          "paragraphs": [
+            "توضح VideoLAN تفضيلاً يتيح إيقاف التشغيل أو استمراره خلف التطبيقات الأخرى أو عرضه في نافذة فيديو صغيرة. داخل إعدادات VLC لنظام Android، راجع قسم الفيديو وسجّل الاختيار الحالي قبل تغييره. اختر السلوك الذي تريده فعلاً وكرر مرة واحدة الإجراء نفسه للانتقال إلى تطبيق آخر. تختلف التسميات والإتاحة حسب الإصدار؛ ولا يضمن هذا التفضيل نتيجة كل قفل للشاشة أو وضع لتوفير الطاقة في Android."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: تفضيلات التشغيل في الخلفية",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "تأكد من انتهاء الجلسة",
+          "paragraphs": [
+            "عُد إلى المشغّل ولاحظ هل تتوافق النتيجة مع التفضيل المحفوظ. لا تغيّر قيود البطارية وإعدادات الشبكة وأدوات التشغيل معاً لمحاولة إعادة الظاهرة. عندما تنتهي من المشاهدة، استخدم أداة الإيقاف في المشغّل وتأكد من توقف صوت البرنامج بدلاً من افتراض أن زر الرئيسية أوقفه. عند طلب المساعدة، اذكر إصدار VLC والإجراء والنتيجة المرئية أو المسموعة، ولا ترسل بيانات الدخول أو عناوين قوائم التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "बैकग्राउंड में IPTV: VLC से बाहर जाने पर क्या बदलता है?",
+      "excerpt": "दूसरा ऐप खोलने पर प्लेबैक बदले तो Android वाले VLC की बैकग्राउंड प्राथमिकता देखें। वीडियो स्क्रीन छोड़ना और देखने का सत्र समाप्त करना अलग काम हैं।",
+      "seo_title": "बैकग्राउंड में IPTV: VLC से बाहर जाने पर क्या बदलता है?",
+      "seo_description": "दूसरा ऐप खोलने पर प्लेबैक बदले तो Android वाले VLC की बैकग्राउंड प्राथमिकता देखें। वीडियो स्क्रीन छोड़ना और देखने का सत्र समाप्त करना अलग काम हैं।",
+      "sections": [
+        {
+          "heading": "ठीक-ठीक बताएं कि क्या किया",
+          "paragraphs": [
+            "बैकग्राउंड में IPTV चलने की जांच एक छोटी बात से शुरू करें: क्या आपने होम दबाया, दूसरा ऐप खोला या कार्यक्रम को जानबूझकर रोका? नोट करें कि आवाज़ जारी रही, तस्वीर गायब हुई या दोनों रुक गए। तुलना में वही प्लेयर और कार्यक्रम रखें। वीडियो स्क्रीन छोड़ना हमेशा प्लेबैक समाप्त करना नहीं होता। अप्रत्याशित बदलाव अपने आप कनेक्शन या सदस्यता की खराबी साबित नहीं करता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सेव की गई प्राथमिकता पढ़ें",
+          "paragraphs": [
+            "VideoLAN ऐसी प्राथमिकता बताता है जिससे प्लेबैक रुक सकता है, दूसरे ऐप के पीछे जारी रह सकता है या छोटी वीडियो विंडो में दिख सकता है। Android वाले VLC की सेटिंग में वीडियो अनुभाग देखें और बदलाव से पहले मौजूदा विकल्प नोट करें। केवल वही व्यवहार चुनें जो आप चाहते हैं और एक बार ठीक उसी तरह दूसरा ऐप खोलकर तुलना करें। नाम और उपलब्ध विकल्प संस्करण के अनुसार बदल सकते हैं; यह प्राथमिकता हर स्क्रीन लॉक या Android के ऊर्जा-बचत व्यवहार के नतीजे की गारंटी नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: बैकग्राउंड प्लेबैक प्राथमिकताएं",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "सत्र समाप्त होने की पुष्टि करें",
+          "paragraphs": [
+            "प्लेयर पर वापस आकर देखें कि नतीजा सेव किए विकल्प से मेल खाता है या नहीं। स्थिति दोहराने के लिए बैटरी पाबंदियां, नेटवर्क सेटिंग और प्लेबैक नियंत्रण एक साथ न बदलें। देखना समाप्त होने पर प्लेयर का रोकने वाला नियंत्रण इस्तेमाल करें और कार्यक्रम की आवाज़ बंद होने की पुष्टि करें; यह न मानें कि होम दबाने से वह रुक गया होगा। मदद लेते समय VLC संस्करण, अपना काम और दिखने या सुनाई देने वाला नतीजा बताएं। पासवर्ड या निजी प्लेलिस्ट पते न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: background playback preferences",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+    }
+  ]
+}

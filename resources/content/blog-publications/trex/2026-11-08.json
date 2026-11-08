@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-08",
+  "topic": "Identify the Fire TV audio equipment chain and documented format compatibility before interpreting a Trex IPTV silent-picture symptom",
+  "primary_keyword": "Trex IPTV audio format check",
+  "slug": "trex-fire-tv-audio-format-equipment-path",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV audio format check: follow the sound path",
+      "excerpt": "A Fire TV picture with missing sound needs more than a louder volume setting. Identify the actual audio equipment and its supported formats before changing one documented option.",
+      "seo_title": "Trex IPTV audio format check: follow the sound path",
+      "seo_description": "A Fire TV picture with missing sound needs more than a louder volume setting. Identify the actual audio equipment and its supported formats before changing one documented option.",
+      "sections": [
+        {
+          "heading": "Map the equipment that produces the sound",
+          "paragraphs": [
+            "A Trex IPTV audio format check begins with the sound path: Fire TV to the television speakers, a soundbar or receiver, or Bluetooth headphones. Write down the actual connected equipment and whether sound is absent, distorted or merely quiet. Check mute and a comfortable volume first. Compare another ordinary device sound without changing the programme or player settings. A visible picture with silence does not by itself identify an expired subscription or a particular audio format."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Treat format support as an equipment question",
+          "paragraphs": [
+            "Amazon explains that Dolby playback depends on the connected equipment, and describes non-Dolby alternatives for endpoints that cannot handle it. This does not mean every player exposes a format selector. Read your model’s manufacturer instructions and record the existing audio-output choice. If those instructions offer a compatible alternative, compare one setting and retain the original value. Do not force a surround format because its name sounds better, or assume all Fire TV menus are identical."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV audio-format compatibility",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the comparison and report bounded",
+          "paragraphs": [
+            "Note whether sound changes through the same output after that single comparison. If another device is suggested, close the first stream before opening the next: Trex IPTV 8K permits one simultaneous connection. For support, provide the Fire TV model, player version, equipment chain and observed setting or error. Keep passwords and playlist addresses private. An equipment-specific sound result does not establish a network outage or guarantee that a different format will repair every programme."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Formato de audio de Trex IPTV: sigue el recorrido del sonido",
+      "excerpt": "Si Fire TV muestra imagen pero no sonido, no basta con subir el volumen. Identifica el equipo de audio y sus formatos compatibles antes de cambiar una opción documentada.",
+      "seo_title": "Formato de audio de Trex IPTV: sigue el recorrido del sonido",
+      "seo_description": "Si Fire TV muestra imagen pero no sonido, no basta con subir el volumen. Identifica el equipo de audio y sus formatos compatibles antes de cambiar una opción documentada.",
+      "sections": [
+        {
+          "heading": "Identifica el equipo que reproduce el sonido",
+          "paragraphs": [
+            "Para revisar el formato de audio de Trex IPTV, empieza por el recorrido del sonido: de Fire TV a los altavoces del televisor, una barra de sonido o receptor, o auriculares Bluetooth. Anota el equipo conectado y si falta el sonido, está distorsionado o simplemente bajo. Comprueba primero el silencio y un volumen cómodo. Compara otro sonido habitual del dispositivo sin modificar el programa ni los ajustes del reproductor. Una imagen sin sonido no demuestra por sí sola que haya caducado la suscripción ni identifica un formato concreto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba la compatibilidad del equipo",
+          "paragraphs": [
+            "Amazon explica que reproducir Dolby depende del equipo conectado y describe alternativas sin Dolby para salidas incompatibles. Eso no significa que todos los reproductores ofrezcan un selector de formato. Consulta las instrucciones del fabricante de tu modelo y anota la salida de audio actual. Si esas instrucciones permiten una alternativa compatible, compara un solo ajuste y conserva el valor original. No fuerces un formato envolvente porque su nombre parezca mejor ni supongas que todos los menús de Fire TV son iguales."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compatibilidad de formatos de audio en Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Limita la comparación y el informe",
+          "paragraphs": [
+            "Anota si cambia el sonido por la misma salida después de esa única comparación. Si se propone otro dispositivo, cierra la primera reproducción antes de abrir la siguiente: Trex IPTV 8K permite una conexión simultánea. Para soporte, indica el modelo de Fire TV, la versión del reproductor, la cadena de equipos y el ajuste o error observado. Mantén en privado las contraseñas y direcciones de listas. Un resultado de audio en ese equipo no demuestra una caída de red ni garantiza que otro formato repare todos los programas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Format audio Trex IPTV : suivez le trajet du son",
+      "excerpt": "Une image Fire TV sans son ne se résout pas seulement en montant le volume. Identifiez les appareils et formats compatibles avant de modifier une option documentée.",
+      "seo_title": "Format audio Trex IPTV : suivez le trajet du son",
+      "seo_description": "Une image Fire TV sans son ne se résout pas seulement en montant le volume. Identifiez les appareils et formats compatibles avant de modifier une option documentée.",
+      "sections": [
+        {
+          "heading": "Repérer les appareils qui produisent le son",
+          "paragraphs": [
+            "Pour vérifier le format audio de Trex IPTV, commencez par le trajet du son : Fire TV vers les haut-parleurs du téléviseur, une barre de son ou un amplificateur, ou un casque Bluetooth. Notez les appareils réellement connectés et précisez si le son manque, est déformé ou simplement faible. Vérifiez d’abord le mode muet et un volume confortable. Comparez un autre son habituel de l’appareil sans modifier l’émission ni le lecteur. Une image silencieuse ne prouve à elle seule ni un abonnement expiré ni un format particulier."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifier la compatibilité du matériel",
+          "paragraphs": [
+            "Amazon explique que la lecture Dolby dépend du matériel connecté et décrit des solutions sans Dolby pour les sorties incompatibles. Tous les lecteurs ne proposent donc pas nécessairement un choix de format. Consultez les instructions du fabricant de votre modèle et notez le réglage de sortie actuel. Si elles prévoient une autre option compatible, comparez un seul réglage en conservant sa valeur initiale. Ne forcez pas un format surround parce que son nom semble meilleur et ne supposez pas que tous les menus Fire TV sont identiques."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : compatibilité des formats audio sur Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Limiter la comparaison et le compte rendu",
+          "paragraphs": [
+            "Notez si le son change sur la même sortie après cette unique comparaison. Si un autre appareil est proposé, fermez le premier flux avant d’ouvrir le suivant : Trex IPTV 8K autorise une connexion simultanée. Pour l’assistance, indiquez le modèle Fire TV, la version du lecteur, les appareils reliés et le réglage ou l’erreur observés. Gardez les mots de passe et adresses de listes privés. Ce résultat propre au matériel ne démontre pas une panne réseau et ne garantit pas qu’un autre format répare toutes les émissions."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Formato audio Trex IPTV: segui il percorso del suono",
+      "excerpt": "Se Fire TV mostra l’immagine senza suono, alzare il volume non basta. Identifica l’impianto audio e i formati compatibili prima di cambiare un’opzione documentata.",
+      "seo_title": "Formato audio Trex IPTV: segui il percorso del suono",
+      "seo_description": "Se Fire TV mostra l’immagine senza suono, alzare il volume non basta. Identifica l’impianto audio e i formati compatibili prima di cambiare un’opzione documentata.",
+      "sections": [
+        {
+          "heading": "Individua gli apparecchi che producono il suono",
+          "paragraphs": [
+            "Per verificare il formato audio di Trex IPTV, parti dal percorso del suono: da Fire TV agli altoparlanti del televisore, a una soundbar o un ricevitore, oppure a cuffie Bluetooth. Annota gli apparecchi realmente collegati e se il suono manca, è distorto o soltanto basso. Controlla prima il silenziamento e un volume confortevole. Confronta un altro normale suono del dispositivo senza modificare il programma o il lettore. Un’immagine senza audio non dimostra da sola che l’abbonamento sia scaduto e non identifica un formato preciso."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica la compatibilità dell’impianto",
+          "paragraphs": [
+            "Amazon spiega che la riproduzione Dolby dipende dall’impianto collegato e descrive alternative senza Dolby per uscite non compatibili. Questo non significa che ogni lettore abbia un selettore di formato. Leggi le istruzioni del produttore del tuo modello e annota l’attuale scelta di uscita audio. Se prevedono un’alternativa compatibile, confronta una sola impostazione e conserva il valore originale. Non forzare un formato surround perché il nome sembra migliore e non presumere che tutti i menu Fire TV siano uguali."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compatibilità dei formati audio su Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Mantieni il confronto e la segnalazione circoscritti",
+          "paragraphs": [
+            "Annota se il suono cambia dalla stessa uscita dopo quell’unico confronto. Se viene proposto un altro dispositivo, chiudi il primo flusso prima di aprire il successivo: Trex IPTV 8K consente una connessione simultanea. Per l’assistenza, indica modello Fire TV, versione del lettore, catena degli apparecchi e impostazione o errore osservato. Mantieni riservati password e indirizzi delle playlist. Un risultato audio relativo a quell’impianto non dimostra un’interruzione di rete né garantisce che un altro formato sistemi tutti i programmi."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-audioformaat controleren: volg de geluidsroute",
+      "excerpt": "Beeld zonder geluid op Fire TV vraagt meer dan een hoger volume. Bekijk de aangesloten audioapparatuur en ondersteunde formaten voordat je één beschreven instelling wijzigt.",
+      "seo_title": "Trex IPTV-audioformaat controleren: volg de geluidsroute",
+      "seo_description": "Beeld zonder geluid op Fire TV vraagt meer dan een hoger volume. Bekijk de aangesloten audioapparatuur en ondersteunde formaten voordat je één beschreven instelling wijzigt.",
+      "sections": [
+        {
+          "heading": "Breng de geluidsapparatuur in kaart",
+          "paragraphs": [
+            "Een controle van het Trex IPTV-audioformaat begint bij de geluidsroute: Fire TV naar de tv-luidsprekers, een soundbar of versterker, of een Bluetooth-hoofdtelefoon. Noteer welke apparaten werkelijk zijn aangesloten en of geluid ontbreekt, vervormd klinkt of alleen zacht is. Controleer eerst dempen en een prettig volume. Vergelijk een ander normaal apparaatgeluid zonder het programma of de spelerinstellingen te veranderen. Beeld zonder geluid bewijst op zichzelf geen verlopen abonnement en wijst ook geen specifiek audioformaat aan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer wat de apparatuur ondersteunt",
+          "paragraphs": [
+            "Amazon legt uit dat Dolby-weergave afhangt van de aangesloten apparatuur en beschrijft alternatieven zonder Dolby voor uitgangen die het niet ondersteunen. Dat betekent niet dat iedere speler een formaatkeuze aanbiedt. Lees de instructies van de fabrikant voor jouw model en noteer de huidige audio-uitvoerinstelling. Beschrijven die een geschikt alternatief, vergelijk dan één instelling en bewaar de oorspronkelijke waarde. Forceer geen surroundformaat omdat de naam beter klinkt en neem niet aan dat alle Fire TV-menu’s hetzelfde zijn."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compatibiliteit van Fire TV-audioformaten",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Houd vergelijking en melding gericht",
+          "paragraphs": [
+            "Noteer of het geluid via dezelfde uitgang na die ene vergelijking verandert. Wordt een ander apparaat voorgesteld, sluit dan eerst de bestaande stream: Trex IPTV 8K staat één gelijktijdige verbinding toe. Geef voor ondersteuning het Fire TV-model, de spelerversie, de aangesloten apparatuur en de waargenomen instelling of fout door. Houd wachtwoorden en afspeellijstadressen privé. Een geluidsresultaat van deze apparatuur bewijst geen netwerkstoring en garandeert niet dat een ander formaat ieder programma herstelt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Formato de áudio da Trex IPTV: siga o caminho do som",
+      "excerpt": "Imagem sem som no Fire TV pede mais do que aumentar o volume. Identifique os aparelhos de áudio e formatos compatíveis antes de mudar uma opção documentada.",
+      "seo_title": "Formato de áudio da Trex IPTV: siga o caminho do som",
+      "seo_description": "Imagem sem som no Fire TV pede mais do que aumentar o volume. Identifique os aparelhos de áudio e formatos compatíveis antes de mudar uma opção documentada.",
+      "sections": [
+        {
+          "heading": "Identifique os aparelhos que reproduzem o som",
+          "paragraphs": [
+            "A verificação do formato de áudio da Trex IPTV começa pelo caminho do som: Fire TV até os alto-falantes da televisão, uma barra de som ou receptor, ou fones Bluetooth. Anote os aparelhos realmente conectados e se o som está ausente, distorcido ou apenas baixo. Confira primeiro o modo mudo e um volume confortável. Compare outro som comum do aparelho sem alterar o programa ou as configurações do reprodutor. Imagem sem áudio não identifica, por si só, uma assinatura vencida nem um formato específico."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a compatibilidade do equipamento",
+          "paragraphs": [
+            "A Amazon explica que a reprodução Dolby depende do equipamento conectado e descreve alternativas sem Dolby para saídas incompatíveis. Isso não significa que todo reprodutor ofereça um seletor de formato. Leia as instruções do fabricante do seu modelo e registre a opção atual de saída de áudio. Se elas oferecerem uma alternativa compatível, compare uma única configuração e guarde o valor original. Não force um formato surround porque o nome parece melhor, nem presuma que todos os menus do Fire TV sejam iguais."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compatibilidade dos formatos de áudio do Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Mantenha a comparação e o relato específicos",
+          "paragraphs": [
+            "Anote se o som muda pela mesma saída após essa única comparação. Se outro aparelho for sugerido, feche a primeira transmissão antes de abrir a seguinte: a Trex IPTV 8K permite uma conexão simultânea. Para o suporte, informe modelo do Fire TV, versão do reprodutor, cadeia de aparelhos e configuração ou erro observado. Mantenha senhas e endereços de listas privados. Um resultado de áudio específico daquele equipamento não comprova uma queda de rede nem garante que outro formato resolva todos os programas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Аудиоформат Trex IPTV: проследите путь звука",
+      "excerpt": "Если Fire TV показывает изображение без звука, увеличения громкости недостаточно. Определите подключённую аудиотехнику и совместимые форматы до изменения настройки.",
+      "seo_title": "Аудиоформат Trex IPTV: проследите путь звука",
+      "seo_description": "Если Fire TV показывает изображение без звука, увеличения громкости недостаточно. Определите подключённую аудиотехнику и совместимые форматы до изменения настройки.",
+      "sections": [
+        {
+          "heading": "Запишите устройства, через которые идёт звук",
+          "paragraphs": [
+            "Проверку аудиоформата Trex IPTV начните с пути звука: от Fire TV к динамикам телевизора, саундбару или ресиверу либо к наушникам Bluetooth. Запишите действительно подключённое оборудование и уточните, отсутствует ли звук, искажён он или просто тихий. Сначала проверьте отключение звука и комфортную громкость. Сравните другой обычный звук устройства, не меняя программу и настройки плеера. Изображение без звука само по себе не доказывает истечение подписки и не определяет конкретный аудиоформат."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте совместимость оборудования",
+          "paragraphs": [
+            "Amazon объясняет, что воспроизведение Dolby зависит от подключённой техники, и описывает варианты без Dolby для несовместимых выходных устройств. Это не означает, что каждый плеер предлагает выбор формата. Прочитайте инструкцию производителя для своей модели и запишите текущий вариант аудиовыхода. Если инструкция предусматривает совместимую альтернативу, сравните одну настройку и сохраните исходное значение. Не включайте принудительно объёмный формат лишь из-за привлекательного названия и не считайте все меню Fire TV одинаковыми."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: совместимость аудиоформатов Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Ограничьте сравнение и описание результата",
+          "paragraphs": [
+            "Отметьте, изменился ли звук на том же выходе после этого единственного сравнения. Если предложено другое устройство, сначала закройте первый поток: Trex IPTV 8K допускает одно одновременное подключение. Для поддержки укажите модель Fire TV, версию плеера, цепочку оборудования и замеченную настройку или ошибку. Не раскрывайте пароли и адреса плейлистов. Результат для конкретной аудиотехники не доказывает сбой сети и не гарантирует, что другой формат исправит звук во всех программах."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کا آڈیو فارمیٹ: آواز کا راستہ پہچانیں",
+      "excerpt": "Fire TV پر تصویر ہو مگر آواز نہ ہو تو صرف والیوم بڑھانا کافی نہیں۔ کوئی درج شدہ ترتیب بدلنے سے پہلے آڈیو آلات اور ان کے موافق فارمیٹس پہچانیں۔",
+      "seo_title": "Trex IPTV کا آڈیو فارمیٹ: آواز کا راستہ پہچانیں",
+      "seo_description": "Fire TV پر تصویر ہو مگر آواز نہ ہو تو صرف والیوم بڑھانا کافی نہیں۔ کوئی درج شدہ ترتیب بدلنے سے پہلے آڈیو آلات اور ان کے موافق فارمیٹس پہچانیں۔",
+      "sections": [
+        {
+          "heading": "آواز دینے والے آلات کی ترتیب لکھیں",
+          "paragraphs": [
+            "Trex IPTV کے آڈیو فارمیٹ کی جانچ آواز کے راستے سے شروع کریں: Fire TV سے ٹی وی کے اسپیکرز، ساؤنڈ بار یا ریسیور، یا Bluetooth ہیڈفونز تک۔ اصل میں جڑے آلات لکھیں اور بتائیں کہ آواز بالکل نہیں آ رہی، خراب سنائی دیتی ہے یا صرف ہلکی ہے۔ پہلے میوٹ اور آرام دہ والیوم دیکھیں۔ پروگرام یا پلیئر کی ترتیبات بدلے بغیر آلے کی کوئی دوسری عام آواز سے موازنہ کریں۔ خاموش تصویر اکیلے یہ ثابت نہیں کرتی کہ سبسکرپشن ختم ہو گئی ہے اور نہ کسی خاص آڈیو فارمیٹ کی نشاندہی کرتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "فارمیٹ کی مطابقت کو آلات کے مطابق دیکھیں",
+          "paragraphs": [
+            "Amazon کی وضاحت کے مطابق Dolby چلنے کا دارومدار جڑے آلات پر ہے، اور غیر موافق آؤٹ پٹ کے لیے Dolby کے بغیر متبادل بیان کیے گئے ہیں۔ اس کا مطلب یہ نہیں کہ ہر پلیئر میں فارمیٹ منتخب کرنے کا اختیار ہوتا ہے۔ اپنے ماڈل کے بنانے والے کی ہدایات پڑھیں اور موجودہ آڈیو آؤٹ پٹ انتخاب لکھ لیں۔ اگر ہدایات میں موافق متبادل دیا ہے تو صرف ایک ترتیب کا موازنہ کریں اور پرانی قدر محفوظ رکھیں۔ محض بہتر نام کی وجہ سے سراؤنڈ فارمیٹ زبردستی نہ چنیں، اور تمام Fire TV مینو ایک جیسے نہ سمجھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV کے آڈیو فارمیٹس کی مطابقت",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "موازنہ اور رپورٹ ایک مسئلے تک رکھیں",
+          "paragraphs": [
+            "اسی آؤٹ پٹ پر ایک موازنے کے بعد آواز بدلی یا نہیں، یہ نوٹ کریں۔ اگر دوسرا آلہ آزمانے کو کہا جائے تو اگلا سلسلہ کھولنے سے پہلے پہلا بند کریں: Trex IPTV 8K میں بیک وقت ایک کنکشن کی اجازت ہے۔ معاونت کو Fire TV کا ماڈل، پلیئر ورژن، جڑے آلات کی ترتیب اور نظر آنے والی ترتیب یا خرابی بتائیں۔ پاس ورڈ اور پلے لسٹ پتے نجی رکھیں۔ کسی خاص آلے کا آڈیو نتیجہ نیٹ ورک بند ہونے کا ثبوت نہیں، اور نہ اس کی ضمانت ہے کہ دوسرا فارمیٹ ہر پروگرام ٹھیک کر دے گا۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "صيغة صوت Trex IPTV: تتبّع مسار الصوت",
+      "excerpt": "ظهور الصورة بلا صوت على Fire TV يحتاج أكثر من رفع مستوى الصوت. حدّد أجهزة الصوت والصيغ المتوافقة قبل تغيير خيار تشرحه تعليمات الشركة المصنّعة.",
+      "seo_title": "صيغة صوت Trex IPTV: تتبّع مسار الصوت",
+      "seo_description": "ظهور الصورة بلا صوت على Fire TV يحتاج أكثر من رفع مستوى الصوت. حدّد أجهزة الصوت والصيغ المتوافقة قبل تغيير خيار تشرحه تعليمات الشركة المصنّعة.",
+      "sections": [
+        {
+          "heading": "حدّد الأجهزة التي تُخرج الصوت",
+          "paragraphs": [
+            "ابدأ فحص صيغة صوت Trex IPTV بمسار الصوت: من Fire TV إلى سماعات التلفاز، أو مكبّر صوت شريطي أو جهاز استقبال، أو سماعات Bluetooth. دوّن الأجهزة المتصلة فعلاً وهل الصوت غائب أم مشوّه أم منخفض فقط. افحص الكتم ومستوى صوت مريح أولاً. قارن صوتاً عادياً آخر للجهاز دون تغيير البرنامج أو إعدادات المشغّل. وجود صورة صامتة لا يثبت وحده انتهاء الاشتراك ولا يحدّد صيغة صوت بعينها."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تحقّق من توافق الصيغة مع الأجهزة",
+          "paragraphs": [
+            "توضح Amazon أن تشغيل Dolby يعتمد على الأجهزة المتصلة، وتصف بدائل دون Dolby للمخارج غير المتوافقة. هذا لا يعني أن كل مشغّل يتيح اختيار الصيغة. اقرأ تعليمات الشركة المصنّعة لطرازك وسجّل خيار إخراج الصوت الحالي. إذا عرضت التعليمات بديلاً متوافقاً، فقارن إعداداً واحداً واحتفظ بالقيمة الأصلية. لا تفرض صيغة صوت محيطي لمجرد أن اسمها يبدو أفضل، ولا تفترض تطابق جميع قوائم Fire TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: توافق صيغ الصوت على Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "اجعل المقارنة والتقرير محدّدين",
+          "paragraphs": [
+            "سجّل ما إذا تغيّر الصوت عبر المخرج نفسه بعد تلك المقارنة الواحدة. إذا اقتُرح جهاز آخر، أغلق البث الأول قبل فتح التالي: يتيح Trex IPTV 8K اتصالاً واحداً متزامناً. زوّد الدعم بطراز Fire TV وإصدار المشغّل وتسلسل الأجهزة والإعداد أو الخطأ الملحوظ. احتفظ بكلمات المرور وعناوين قوائم التشغيل خاصة. نتيجة الصوت المرتبطة بجهاز محدّد لا تثبت انقطاع الشبكة ولا تضمن أن صيغة أخرى ستصلح كل برنامج."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV का ऑडियो फ़ॉर्मेट: आवाज़ का रास्ता पहचानें",
+      "excerpt": "Fire TV पर तस्वीर दिखे पर आवाज़ न आए तो केवल वॉल्यूम बढ़ाना पर्याप्त नहीं। कोई बताया गया विकल्प बदलने से पहले जुड़े ऑडियो उपकरण और समर्थित फ़ॉर्मेट पहचानें।",
+      "seo_title": "Trex IPTV का ऑडियो फ़ॉर्मेट: आवाज़ का रास्ता पहचानें",
+      "seo_description": "Fire TV पर तस्वीर दिखे पर आवाज़ न आए तो केवल वॉल्यूम बढ़ाना पर्याप्त नहीं। कोई बताया गया विकल्प बदलने से पहले जुड़े ऑडियो उपकरण और समर्थित फ़ॉर्मेट पहचानें।",
+      "sections": [
+        {
+          "heading": "आवाज़ देने वाले उपकरणों का क्रम लिखें",
+          "paragraphs": [
+            "Trex IPTV के ऑडियो फ़ॉर्मेट की जांच आवाज़ के रास्ते से शुरू करें: Fire TV से टीवी के स्पीकर, साउंडबार या रिसीवर, या Bluetooth हेडफ़ोन तक। वास्तव में जुड़े उपकरण लिखें और बताएं कि आवाज़ बिल्कुल नहीं है, बिगड़ी हुई है या केवल धीमी है। पहले म्यूट और आरामदायक वॉल्यूम देखें। कार्यक्रम या प्लेयर की सेटिंग बदले बिना उपकरण की किसी दूसरी सामान्य आवाज़ से तुलना करें। बिना आवाज़ की तस्वीर अपने आप सदस्यता समाप्त होने का प्रमाण नहीं है और न किसी खास ऑडियो फ़ॉर्मेट की पहचान करती है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "फ़ॉर्मेट की संगतता उपकरणों के अनुसार देखें",
+          "paragraphs": [
+            "Amazon बताता है कि Dolby चलना जुड़े उपकरणों पर निर्भर है और असंगत आउटपुट के लिए Dolby के बिना विकल्प बताता है। इसका अर्थ यह नहीं कि हर प्लेयर में फ़ॉर्मेट चुनने का विकल्प होगा। अपने मॉडल के निर्माता के निर्देश पढ़ें और मौजूदा ऑडियो आउटपुट विकल्प लिख लें। यदि निर्देश कोई संगत विकल्प देते हैं, तो केवल एक सेटिंग की तुलना करें और मूल मान संभालकर रखें। बेहतर नाम के कारण कोई सराउंड फ़ॉर्मेट जबरन न चुनें और सभी Fire TV मेनू एक जैसे न मानें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV के ऑडियो फ़ॉर्मेट की संगतता",
+              "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "तुलना और रिपोर्ट को सीमित रखें",
+          "paragraphs": [
+            "उसी आउटपुट पर उस एक तुलना के बाद आवाज़ बदली या नहीं, यह लिखें। यदि दूसरा उपकरण सुझाया जाए तो अगली स्ट्रीम खोलने से पहले पहली बंद करें: Trex IPTV 8K एक साथ एक कनेक्शन की अनुमति देता है। सहायता के लिए Fire TV मॉडल, प्लेयर संस्करण, उपकरणों का क्रम और दिखाई गई सेटिंग या त्रुटि बताएं। पासवर्ड और प्लेलिस्ट पते निजी रखें। किसी खास उपकरण का ऑडियो परिणाम नेटवर्क बंद होने का प्रमाण नहीं है और न गारंटी देता है कि दूसरा फ़ॉर्मेट हर कार्यक्रम ठीक कर देगा।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Fire TV audio-format compatibility",
+      "url": "https://developer.amazon.com/docs/fire-tv/dolby-integration-guidelines.html"
+    }
+  ]
+}

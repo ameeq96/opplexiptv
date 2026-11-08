@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-08",
+  "topic": "Use a personal calendar reminder for confirmed IPTV Subscription expiry details without treating an alert as renewal, a price reservation or payment",
+  "primary_keyword": "IPTV Subscription renewal reminder",
+  "slug": "iptvsubscription-renewal-calendar-confirmed-date",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription renewal reminder: use a confirmed date",
+      "excerpt": "A calendar alert can help you revisit a plan before its confirmed expiry. Keep the provider’s actual date separate from a reminder, a payment and automatic renewal.",
+      "seo_title": "IPTV Subscription renewal reminder: confirmed dates first",
+      "seo_description": "Set an IPTV Subscription renewal reminder from confirmed provider details, keep private order links out of calendar entries and check current terms before paying.",
+      "sections": [
+        {
+          "heading": "Get the date from the right place",
+          "paragraphs": [
+            "An IPTV Subscription renewal reminder should start with a confirmed expiry date, not an estimate made from the day you paid. IPTV Subscription offers Opplex and Filex choices; identify the provider and the specific plan before copying a date. If the start time, expiry or time zone is unclear, ask support rather than assuming activation happened immediately. Keep that confirmation privately so you can distinguish the service record from your own calendar note."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Create a small personal calendar entry",
+          "paragraphs": [
+            "In Google Calendar on a computer, create an event, give it a plain title and save it on the intended calendar. A label such as “Review my streaming plan” is enough; account credentials, private order links and payment details do not belong in it. Check who can access that calendar before adding business information. Choose an advance notification for this event if useful, then confirm the date, time zone and alert settings yourself."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: create an event",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Treat the alert as a prompt to review",
+          "paragraphs": [
+            "A calendar event does not renew a subscription, reserve a price or confirm a payment. When the reminder arrives, open the public website independently and review the current provider, duration, currency and total. If an order is already in progress, inspect its existing status privately before starting another purchase. Update your reminder only after the provider confirms the new service dates; do not infer a fresh expiry from a browser success screen alone."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: event notifications",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Recordatorio de renovación de IPTV Subscription: usa una fecha confirmada",
+      "excerpt": "Una alerta del calendario ayuda a revisar un plan antes de su vencimiento confirmado. Distingue la fecha del proveedor, el recordatorio, el pago y la renovación automática.",
+      "seo_title": "IPTV Subscription: recordatorio de renovación con fecha confirmada",
+      "seo_description": "Prepara un recordatorio de IPTV Subscription con datos confirmados. Evita enlaces privados de pedidos en el calendario y revisa las condiciones antes de pagar.",
+      "sections": [
+        {
+          "heading": "Obtén la fecha del registro correcto",
+          "paragraphs": [
+            "Un recordatorio de renovación de IPTV Subscription debe partir de una fecha de vencimiento confirmada, no de un cálculo desde el día del pago. IPTV Subscription ofrece opciones Opplex y Filex; identifica al proveedor y el plan concreto antes de copiar una fecha. Si no están claros el inicio, el vencimiento o la zona horaria, pregunta a soporte en lugar de suponer una activación inmediata. Guarda esa confirmación de forma privada para distinguir el registro del servicio de tu nota personal."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Crea una entrada personal sencilla",
+          "paragraphs": [
+            "En Google Calendar para ordenador, crea un evento, ponle un título sencillo y guárdalo en el calendario adecuado. Basta con algo como “Revisar mi plan de streaming”; no incluyas credenciales, enlaces privados de pedidos ni datos de pago. Comprueba quién puede acceder al calendario antes de añadir información comercial. Si te resulta útil, elige una notificación anticipada para ese evento y revisa personalmente la fecha, la zona horaria y la configuración del aviso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: crear un evento",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Usa el aviso para revisar, no como comprobante",
+          "paragraphs": [
+            "Un evento del calendario no renueva una suscripción, reserva un precio ni confirma un pago. Cuando llegue el recordatorio, abre la web pública por tu cuenta y revisa proveedor, duración, moneda e importe total actuales. Si ya hay un pedido en curso, comprueba su estado de forma privada antes de iniciar otra compra. Cambia el recordatorio solo después de que el proveedor confirme las nuevas fechas del servicio; una pantalla de éxito del navegador no basta para deducir otro vencimiento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: notificaciones de eventos",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "title": "Rappel de renouvellement IPTV Subscription : une date confirmée",
+      "excerpt": "Une alerte de calendrier peut rappeler de consulter une offre avant son échéance confirmée. Distinguez la date du fournisseur, votre rappel, le paiement et le renouvellement automatique.",
+      "seo_title": "IPTV Subscription : rappel de renouvellement et date confirmée",
+      "seo_description": "Préparez un rappel IPTV Subscription avec les dates confirmées du fournisseur. Gardez les liens privés hors du calendrier et relisez les conditions avant de payer.",
+      "sections": [
+        {
+          "heading": "Retrouvez la date dans le bon dossier",
+          "paragraphs": [
+            "Un rappel de renouvellement IPTV Subscription doit partir d’une échéance confirmée, pas d’un calcul depuis le jour du paiement. IPTV Subscription propose des offres Opplex et Filex : identifiez le fournisseur et le forfait précis avant de recopier une date. Si le début, l’échéance ou le fuseau horaire restent incertains, contactez l’assistance plutôt que de supposer une activation immédiate. Conservez cette confirmation en privé pour distinguer le dossier du service de votre propre note."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Créez un petit événement personnel",
+          "paragraphs": [
+            "Dans Google Agenda sur ordinateur, créez un événement, donnez-lui un titre simple et enregistrez-le dans le calendrier voulu. Un libellé comme « Revoir mon forfait de streaming » suffit ; les identifiants, liens privés de commande et données de paiement n’y ont pas leur place. Vérifiez qui peut accéder au calendrier avant d’ajouter des informations commerciales. Choisissez éventuellement une notification à l’avance pour cet événement, puis vérifiez vous-même la date, le fuseau horaire et les réglages de l’alerte."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Agenda : créer un événement",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Considérez l’alerte comme une invitation à vérifier",
+          "paragraphs": [
+            "Un événement ne renouvelle pas un abonnement, ne réserve pas un prix et ne confirme pas un paiement. À réception du rappel, ouvrez directement le site public et relisez le fournisseur, la durée, la devise et le total actuels. Si une commande est déjà en cours, consultez son état en privé avant de recommencer un achat. Modifiez le rappel seulement après confirmation des nouvelles dates par le fournisseur ; un écran de réussite du navigateur ne prouve pas à lui seul une nouvelle échéance."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Agenda : notifications des événements",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription: promemoria di rinnovo con una data confermata",
+      "excerpt": "Un avviso nel calendario può aiutarti a rivedere un piano prima della scadenza confermata. Distingui la data del fornitore dal promemoria, dal pagamento e dal rinnovo automatico.",
+      "seo_title": "IPTV Subscription: promemoria per il rinnovo dell’abbonamento",
+      "seo_description": "Crea un promemoria IPTV Subscription usando date confermate dal fornitore. Non inserire link privati degli ordini nel calendario e controlla le condizioni prima di pagare.",
+      "sections": [
+        {
+          "heading": "Prendi la data dalla conferma corretta",
+          "paragraphs": [
+            "Un promemoria per il rinnovo dell’abbonamento IPTV su IPTV Subscription deve partire da una scadenza confermata, non da un calcolo sul giorno del pagamento. IPTV Subscription presenta opzioni Opplex e Filex: identifica il fornitore e il piano specifico prima di copiare una data. Se inizio, scadenza o fuso orario non sono chiari, chiedi all’assistenza invece di presumere un’attivazione immediata. Conserva privatamente la conferma per distinguere i dati del servizio dalla tua nota personale."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Crea un semplice evento personale",
+          "paragraphs": [
+            "In Google Calendar da computer, crea un evento, assegna un titolo semplice e salvalo nel calendario desiderato. Una dicitura come “Rivedere il piano streaming” è sufficiente; credenziali, link privati degli ordini e dettagli di pagamento non devono comparire. Verifica chi può accedere al calendario prima di aggiungere informazioni commerciali. Se utile, scegli una notifica anticipata per quell’evento e controlla personalmente data, fuso orario e impostazioni dell’avviso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: creare un evento",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Usa l’avviso per fare una verifica",
+          "paragraphs": [
+            "Un evento nel calendario non rinnova un abbonamento, non riserva un prezzo e non conferma un pagamento. Quando arriva il promemoria, apri autonomamente il sito pubblico e verifica fornitore, durata, valuta e totale attuali. Se un ordine è già in corso, controllane privatamente lo stato prima di effettuare un altro acquisto. Aggiorna il promemoria solo quando il fornitore conferma le nuove date del servizio; una schermata di esito positivo del browser non basta per dedurre una nuova scadenza."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: notifiche degli eventi",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription: verlengherinnering met een bevestigde datum",
+      "excerpt": "Een agendamelding kan helpen een pakket vóór de bevestigde einddatum opnieuw te bekijken. Houd de leveranciersdatum, je herinnering, de betaling en automatische verlenging uit elkaar.",
+      "seo_title": "IPTV Subscription: herinnering voor verlenging instellen",
+      "seo_description": "Gebruik bevestigde datums voor een IPTV Subscription-herinnering. Bewaar privébestellinks buiten je agenda en controleer de actuele voorwaarden voordat je betaalt.",
+      "sections": [
+        {
+          "heading": "Haal de datum uit de juiste bevestiging",
+          "paragraphs": [
+            "Een herinnering voor verlenging bij IPTV Subscription hoort te beginnen met een bevestigde einddatum, niet met een berekening vanaf de betaaldag. IPTV Subscription toont Opplex- en Filex-opties; bepaal eerst welke leverancier en welk pakket je hebt gekozen. Zijn begindatum, einddatum of tijdzone onduidelijk, vraag dan ondersteuning in plaats van directe activering aan te nemen. Bewaar de bevestiging privé, zodat de servicegegevens onderscheiden blijven van je eigen agendanotitie."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Maak een eenvoudige persoonlijke afspraak",
+          "paragraphs": [
+            "Maak in Google Agenda op een computer een afspraak, geef die een eenvoudige titel en sla deze op in de bedoelde agenda. “Streamingpakket bekijken” is voldoende; inloggegevens, privébestellinks en betaalgegevens horen er niet in. Controleer wie toegang heeft tot de agenda voordat je zakelijke informatie toevoegt. Kies eventueel een melding vooraf voor deze afspraak en controleer zelf de datum, tijdzone en meldingsinstellingen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Agenda: een afspraak maken",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Zie de melding als aanleiding om te controleren",
+          "paragraphs": [
+            "Een agenda-afspraak verlengt geen abonnement, reserveert geen prijs en bevestigt geen betaling. Open bij de herinnering zelfstandig de openbare website en controleer de actuele leverancier, looptijd, valuta en totaalprijs. Loopt er al een bestelling, bekijk de status dan privé voordat je nog een aankoop start. Pas de herinnering pas aan nadat de leverancier de nieuwe servicedatums bevestigt; leid een nieuwe einddatum niet alleen af uit een geslaagd browservenster."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Agenda: meldingen voor afspraken",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "Lembrete de renovação IPTV Subscription: confirme a data",
+      "excerpt": "Um alerta no calendário ajuda a rever um plano antes do vencimento confirmado. Separe a data do fornecedor, o seu lembrete, o pagamento e a renovação automática.",
+      "seo_title": "IPTV Subscription: lembrete de renovação com data confirmada",
+      "seo_description": "Crie um lembrete IPTV Subscription com datas confirmadas. Não coloque ligações privadas de encomendas no calendário e reveja as condições antes de pagar.",
+      "sections": [
+        {
+          "heading": "Use a confirmação certa para obter a data",
+          "paragraphs": [
+            "Um lembrete de renovação da IPTV Subscription deve começar numa data de vencimento confirmada, não num cálculo a partir do dia do pagamento. A IPTV Subscription apresenta opções Opplex e Filex; identifique o fornecedor e o plano concreto antes de copiar uma data. Se o início, o vencimento ou o fuso horário não estiverem claros, pergunte ao apoio em vez de presumir ativação imediata. Guarde essa confirmação em privado para distinguir o registo do serviço da sua própria nota."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Crie um evento pessoal simples",
+          "paragraphs": [
+            "No Google Calendar num computador, crie um evento, atribua um título simples e guarde-o no calendário pretendido. Uma indicação como “Rever o plano de streaming” é suficiente; credenciais, ligações privadas de encomendas e dados de pagamento não pertencem ao evento. Verifique quem pode aceder ao calendário antes de adicionar informação comercial. Se for útil, escolha uma notificação antecipada para esse evento e confirme pessoalmente a data, o fuso horário e as definições do aviso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: criar um evento",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Use o alerta como convite para verificar",
+          "paragraphs": [
+            "Um evento de calendário não renova uma assinatura, reserva um preço nem confirma um pagamento. Quando chegar o lembrete, abra o site público por iniciativa própria e reveja fornecedor, duração, moeda e total atuais. Se já existir uma encomenda em curso, consulte o respetivo estado em privado antes de iniciar outra compra. Altere o lembrete apenas depois de o fornecedor confirmar as novas datas do serviço; uma página de sucesso no navegador não prova, por si só, uma nova validade."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: notificações de eventos",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "Напоминание о продлении IPTV Subscription: проверьте дату",
+      "excerpt": "Уведомление календаря помогает вернуться к тарифу до подтверждённого окончания. Различайте дату поставщика, собственное напоминание, оплату и автоматическое продление.",
+      "seo_title": "IPTV Subscription: напоминание о продлении и точная дата",
+      "seo_description": "Создайте напоминание IPTV Subscription по подтверждённым датам. Не сохраняйте частные ссылки на заказ в календаре и проверьте условия перед оплатой.",
+      "sections": [
+        {
+          "heading": "Возьмите дату из нужного подтверждения",
+          "paragraphs": [
+            "Напоминание о продлении IPTV Subscription должно опираться на подтверждённую дату окончания, а не на расчёт от дня оплаты. IPTV Subscription предлагает варианты Opplex и Filex: сначала определите поставщика и конкретный тариф. Если начало, окончание или часовой пояс неясны, уточните их у поддержки, не предполагая мгновенную активацию. Сохраните подтверждение приватно, чтобы отличать данные услуги от своей записи в календаре."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Создайте простое личное событие",
+          "paragraphs": [
+            "В Google Календаре на компьютере создайте событие, задайте понятное название и сохраните его в нужном календаре. Достаточно названия «Проверить тариф для просмотра»; паролям, частным ссылкам на заказ и платёжным данным там не место. Перед добавлением деловых сведений проверьте, кто имеет доступ к календарю. При необходимости выберите уведомление заранее именно для этого события, затем самостоятельно проверьте дату, часовой пояс и параметры оповещения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Календарь: создание события",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Считайте уведомление поводом для проверки",
+          "paragraphs": [
+            "Событие календаря не продлевает подписку, не резервирует цену и не подтверждает оплату. Получив напоминание, самостоятельно откройте общедоступный сайт и проверьте актуальные данные поставщика, срок, валюту и итоговую сумму. Если заказ уже оформляется, сначала приватно проверьте его состояние, прежде чем начинать новую покупку. Меняйте напоминание только после подтверждения поставщиком новых дат услуги; один экран успешного завершения в браузере не доказывает новый срок действия."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Календарь: уведомления событий",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی تجدید یاد دہانی: تصدیق شدہ تاریخ استعمال کریں",
+      "excerpt": "کیلنڈر کا الرٹ تصدیق شدہ اختتام سے پہلے پلان دوبارہ دیکھنے میں مدد دے سکتا ہے۔ فراہم کنندہ کی تاریخ، اپنی یاد دہانی، ادائیگی اور خودکار تجدید الگ چیزیں ہیں۔",
+      "seo_title": "IPTV Subscription کی تجدید یاد دہانی اور درست تاریخ",
+      "seo_description": "IPTV Subscription کی یاد دہانی تصدیق شدہ تاریخوں سے بنائیں۔ کیلنڈر میں نجی آرڈر لنک نہ رکھیں اور ادائیگی سے پہلے موجودہ شرائط دوبارہ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "تاریخ درست تصدیق سے لیں",
+          "paragraphs": [
+            "IPTV Subscription کی تجدید کی یاد دہانی تصدیق شدہ اختتامی تاریخ سے شروع ہونی چاہیے، ادائیگی والے دن سے لگائے گئے اندازے سے نہیں۔ IPTV Subscription پر Opplex اور Filex کے انتخاب ہیں؛ تاریخ نقل کرنے سے پہلے اصل فراہم کنندہ اور مخصوص پلان پہچانیں۔ آغاز، اختتام یا ٹائم زون واضح نہ ہو تو فوری ایکٹیویشن فرض کرنے کے بجائے سپورٹ سے پوچھیں۔ اس تصدیق کو نجی رکھیں تاکہ سروس کے ریکارڈ اور اپنی کیلنڈر نوٹ میں فرق رہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ایک سادہ ذاتی کیلنڈر اندراج بنائیں",
+          "paragraphs": [
+            "کمپیوٹر پر Google Calendar میں ایک ایونٹ بنائیں، سادہ عنوان دیں اور مطلوبہ کیلنڈر میں محفوظ کریں۔ “اپنا اسٹریمنگ پلان دیکھنا ہے” جیسا عنوان کافی ہے؛ لاگ اِن تفصیلات، نجی آرڈر لنکس اور ادائیگی کی معلومات اس میں شامل نہ کریں۔ کاروباری معلومات ڈالنے سے پہلے دیکھیں کہ کیلنڈر تک کس کی رسائی ہے۔ ضرورت ہو تو اسی ایونٹ کے لیے پیشگی اطلاع منتخب کریں، پھر تاریخ، ٹائم زون اور اطلاع کی سیٹنگ خود جانچیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: ایونٹ بنانا",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "الرٹ کو جائزہ لینے کی یاد دہانی سمجھیں",
+          "paragraphs": [
+            "کیلنڈر ایونٹ نہ سبسکرپشن کی تجدید کرتا ہے، نہ قیمت محفوظ کرتا ہے اور نہ ادائیگی کی تصدیق ہے۔ یاد دہانی آنے پر عوامی ویب سائٹ خود کھول کر موجودہ فراہم کنندہ، مدت، کرنسی اور کل رقم دیکھیں۔ کوئی آرڈر پہلے سے جاری ہو تو نئی خریداری شروع کرنے سے پہلے اس کی حالت نجی طور پر جانچیں۔ یاد دہانی صرف تب بدلیں جب فراہم کنندہ نئی سروس تاریخوں کی تصدیق کر دے؛ براؤزر کی کامیابی والی اسکرین اکیلی نئی اختتامی تاریخ کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: ایونٹ کی اطلاعات",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "ar": {
+      "title": "تذكير تجديد IPTV Subscription: اعتمد تاريخاً مؤكداً",
+      "excerpt": "يساعد تنبيه التقويم على مراجعة الخطة قبل انتهائها المؤكد. ميّز بين تاريخ المزوّد والتذكير الشخصي والدفع والتجديد التلقائي.",
+      "seo_title": "IPTV Subscription: تذكير التجديد بتاريخ مؤكد",
+      "seo_description": "أنشئ تذكيراً لتجديد IPTV Subscription من تواريخ مؤكدة. أبقِ روابط الطلب الخاصة خارج التقويم وراجع الشروط الحالية قبل الدفع.",
+      "sections": [
+        {
+          "heading": "خذ التاريخ من التأكيد الصحيح",
+          "paragraphs": [
+            "ينبغي أن يبدأ تذكير تجديد IPTV Subscription بتاريخ انتهاء مؤكد، لا بحساب تقديري من يوم الدفع. تعرض IPTV Subscription خيارات Opplex وFilex؛ حدّد المزوّد والخطة المعنية قبل نسخ تاريخ. إذا لم يتضح وقت البداية أو الانتهاء أو المنطقة الزمنية، فاسأل الدعم بدلاً من افتراض التفعيل الفوري. احتفظ بالتأكيد بصورة خاصة حتى تميّز سجل الخدمة عن ملاحظتك الشخصية في التقويم."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "أنشئ حدثاً شخصياً بسيطاً",
+          "paragraphs": [
+            "في تقويم Google على الكمبيوتر، أنشئ حدثاً بعنوان واضح واحفظه في التقويم المقصود. يكفي عنوان مثل «مراجعة خطة المشاهدة»؛ لا تضع فيه بيانات الدخول أو روابط الطلب الخاصة أو معلومات الدفع. تحقّق ممن يستطيع الوصول إلى التقويم قبل إضافة معلومات تجارية. اختر إشعاراً مسبقاً لهذا الحدث إذا كان مفيداً، ثم راجع بنفسك التاريخ والمنطقة الزمنية وإعدادات التنبيه."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "تقويم Google: إنشاء حدث",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اعتبر التنبيه دعوة للمراجعة",
+          "paragraphs": [
+            "حدث التقويم لا يجدّد اشتراكاً ولا يحجز سعراً ولا يؤكد دفعة. عندما يصل التذكير، افتح الموقع العام بنفسك وراجع المزوّد والمدة والعملة والإجمالي الحالي. إذا كان طلب ما قيد التنفيذ، فتحقّق من حالته بصورة خاصة قبل بدء شراء آخر. لا تعدّل التذكير إلا بعد تأكيد المزوّد تواريخ الخدمة الجديدة؛ شاشة النجاح في المتصفح وحدها لا تثبت تاريخ انتهاء جديداً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "تقويم Google: إشعارات الأحداث",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription नवीनीकरण रिमाइंडर: पक्की तारीख इस्तेमाल करें",
+      "excerpt": "कैलेंडर का अलर्ट पुष्टि की गई समाप्ति से पहले प्लान फिर देखने में मदद करता है। प्रदाता की तारीख, आपका रिमाइंडर, भुगतान और अपने आप नवीनीकरण अलग बातें हैं।",
+      "seo_title": "IPTV Subscription नवीनीकरण रिमाइंडर और सही तारीख",
+      "seo_description": "पुष्टि की गई तारीखों से IPTV Subscription रिमाइंडर बनाएं। कैलेंडर में निजी ऑर्डर लिंक न डालें और भुगतान से पहले मौजूदा शर्तें जांचें।",
+      "sections": [
+        {
+          "heading": "तारीख सही पुष्टि से लें",
+          "paragraphs": [
+            "IPTV Subscription का नवीनीकरण रिमाइंडर पुष्टि की गई समाप्ति तारीख से शुरू होना चाहिए, भुगतान के दिन से लगाए गए अनुमान से नहीं। IPTV Subscription पर Opplex और Filex के विकल्प हैं; तारीख लिखने से पहले वास्तविक प्रदाता और खास प्लान पहचानें। शुरुआत, समाप्ति या समय क्षेत्र स्पष्ट न हो तो तुरंत सक्रिय होने की कल्पना करने के बजाय सहायता से पूछें। पुष्टि निजी रखें, ताकि सेवा के रिकॉर्ड और आपकी कैलेंडर टिप्पणी का अंतर बना रहे।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "एक छोटा निजी कैलेंडर इवेंट बनाएं",
+          "paragraphs": [
+            "कंप्यूटर पर Google Calendar में इवेंट बनाएं, सरल शीर्षक दें और इच्छित कैलेंडर में सहेजें। “अपना स्ट्रीमिंग प्लान देखना है” जैसा नाम पर्याप्त है; लॉगिन जानकारी, निजी ऑर्डर लिंक और भुगतान विवरण इसमें नहीं होने चाहिए। कारोबारी जानकारी जोड़ने से पहले देखें कि कैलेंडर किसे उपलब्ध है। जरूरत हो तो इसी इवेंट के लिए पहले सूचना चुनें और तारीख, समय क्षेत्र तथा अलर्ट की सेटिंग खुद जांचें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: इवेंट बनाना",
+              "url": "https://support.google.com/calendar/answer/72143?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अलर्ट को समीक्षा का संकेत मानें",
+          "paragraphs": [
+            "कैलेंडर इवेंट सदस्यता का नवीनीकरण नहीं करता, कीमत सुरक्षित नहीं रखता और भुगतान की पुष्टि नहीं है। रिमाइंडर आने पर सार्वजनिक वेबसाइट खुद खोलकर वर्तमान प्रदाता, अवधि, मुद्रा और कुल रकम देखें। कोई ऑर्डर पहले से जारी हो तो दूसरी खरीद शुरू करने से पहले उसकी स्थिति निजी रूप से जांचें। रिमाइंडर तभी बदलें जब प्रदाता नई सेवा तारीखों की पुष्टि करे; केवल ब्राउज़र की सफलता स्क्रीन से नई समाप्ति तारीख न मानें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Calendar: इवेंट की सूचनाएं",
+              "url": "https://support.google.com/calendar/answer/37242?hl=en"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Calendar: create an event",
+      "url": "https://support.google.com/calendar/answer/72143?hl=en"
+    },
+    {
+      "label": "Google Calendar: event notifications",
+      "url": "https://support.google.com/calendar/answer/37242?hl=en"
+    }
+  ]
+}

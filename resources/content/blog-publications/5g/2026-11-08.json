@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-08",
+  "topic": "Separate a black Android screenshot from the actual player display and describe a capture restriction without bypassing protection",
+  "primary_keyword": "5G Live IPTV screenshot check",
+  "slug": "5g-android-black-screenshot-versus-actual-player-screen",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV screenshot check: black capture or black screen?",
+      "excerpt": "A saved image can be blank even when the viewer sees a picture. Describe the difference before treating a capture problem as failed playback.",
+      "seo_title": "5G Live IPTV screenshot check: explain a blank capture",
+      "seo_description": "Make a useful 5G Live IPTV screenshot check on Android, distinguish a blocked capture from the actual display, and report symptoms without bypassing protection.",
+      "sections": [
+        {
+          "heading": "Compare the display with the saved image",
+          "paragraphs": [
+            "Begin a 5G Live IPTV screenshot check by describing what is visible on the phone itself. Was the programme playing normally when you tried to capture it, or was the actual player already blank? Note any capture warning and whether sound continued. A black saved image is not the same observation as a black screen during viewing. Keep these cases separate instead of assuming that both establish a connection or subscription failure."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Understand a possible capture restriction",
+          "paragraphs": [
+            "Android’s developer documentation describes FLAG_SECURE, a window protection that prevents secure content from appearing in screenshots or on non-secure displays. That explains one possible reason a capture may be unavailable; it does not establish that your particular player uses this flag. A blank image alone cannot identify the technical cause. Leave protections in place, and do not install capture-bypass tools or change security settings to obtain programme footage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: secure window flag",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Send a useful description instead",
+          "paragraphs": [
+            "If a permitted screenshot is not available, privately tell support the phone model, Android version, player name and the exact warning text. Explain whether the picture and sound worked on the device, and when the symptom occurred. Avoid sending protected recordings, passwords, private playlist addresses or order-access links. If the player itself is blank, describe that viewing problem directly rather than presenting the saved capture as proof. A clear report helps identify the next question without claiming a device-wide diagnosis."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV en Android: captura negra o pantalla negra",
+      "excerpt": "Una imagen guardada puede estar vacía aunque el usuario vea el programa. Describe la diferencia antes de atribuirlo a un fallo de reproducción.",
+      "seo_title": "5G Live IPTV: cómo explicar una captura vacía",
+      "seo_description": "Revisa una captura de 5G Live IPTV en Android, distingue una imagen bloqueada de la pantalla real y comunica los síntomas sin evitar las protecciones.",
+      "sections": [
+        {
+          "heading": "Compara la pantalla con la imagen guardada",
+          "paragraphs": [
+            "Empieza la revisión de una captura de 5G Live IPTV describiendo lo que se ve en el propio teléfono. ¿El programa se reproducía normalmente al intentar capturarlo o el reproductor ya estaba vacío? Anota cualquier advertencia y si continuaba el sonido. Una imagen guardada negra no es la misma observación que una pantalla negra durante la visualización. Mantén separados ambos casos en vez de suponer que los dos demuestran un fallo de conexión o de suscripción."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Entiende una posible restricción de captura",
+          "paragraphs": [
+            "La documentación para desarrolladores de Android describe FLAG_SECURE, una protección de ventana que impide que el contenido seguro aparezca en capturas o pantallas no seguras. Esto explica una posible razón por la que una captura no esté disponible; no demuestra que tu reproductor utilice esa marca. Una imagen vacía por sí sola no identifica la causa técnica. Conserva las protecciones y no instales herramientas para evitarlas ni cambies ajustes de seguridad para obtener imágenes del programa."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: protección de ventanas seguras",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Envía una descripción útil como alternativa",
+          "paragraphs": [
+            "Si no hay una captura permitida disponible, comunica en privado al soporte el modelo del teléfono, la versión de Android, el nombre del reproductor y la advertencia exacta. Explica si funcionaban la imagen y el sonido, y cuándo ocurrió. No envíes grabaciones protegidas, contraseñas, direcciones privadas de listas ni enlaces de acceso a pedidos. Si el propio reproductor está vacío, describe directamente ese problema en vez de presentar la captura como prueba. Un informe claro ayuda a decidir la siguiente pregunta sin diagnosticar todo el dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV sur Android : capture noire ou écran noir ?",
+      "excerpt": "Une image enregistrée peut être vide alors que la personne voit le programme. Distinguez ces situations avant de conclure à un échec de lecture.",
+      "seo_title": "5G Live IPTV : expliquer une capture d’écran vide",
+      "seo_description": "Vérifiez une capture de 5G Live IPTV sur Android, distinguez une capture bloquée de l’affichage réel et décrivez les symptômes sans contourner les protections.",
+      "sections": [
+        {
+          "heading": "Comparez l’affichage et l’image enregistrée",
+          "paragraphs": [
+            "Pour vérifier une capture de 5G Live IPTV, commencez par décrire ce qui apparaît sur le téléphone lui-même. Le programme fonctionnait-il normalement au moment de la capture, ou le lecteur était-il déjà vide ? Notez tout avertissement et indiquez si le son continuait. Une image enregistrée noire et un écran noir pendant le visionnage sont deux observations différentes. Séparez ces situations plutôt que de supposer qu’elles prouvent toutes deux une panne de connexion ou d’abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprenez une restriction possible de capture",
+          "paragraphs": [
+            "La documentation Android destinée aux développeurs décrit FLAG_SECURE, une protection de fenêtre qui empêche le contenu sécurisé d’apparaître dans les captures ou sur des écrans non sécurisés. Cela explique une raison possible d’indisponibilité d’une capture ; cela ne prouve pas que votre lecteur utilise cet indicateur. Une image vide ne permet pas, à elle seule, d’identifier la cause technique. Gardez les protections actives et n’installez pas d’outil de contournement ni ne modifiez la sécurité pour enregistrer le programme."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers : protection des fenêtres sécurisées",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Envoyez plutôt une description utile",
+          "paragraphs": [
+            "Si aucune capture autorisée n’est disponible, indiquez en privé au support le modèle du téléphone, la version d’Android, le nom du lecteur et le texte exact de l’avertissement. Précisez si l’image et le son fonctionnaient et à quel moment le symptôme est apparu. N’envoyez pas d’enregistrements protégés, de mots de passe, d’adresses privées de listes ou de liens d’accès aux commandes. Si le lecteur lui-même reste vide, décrivez ce problème directement au lieu de présenter la capture comme preuve. Un rapport clair aide à choisir la question suivante sans diagnostiquer tout l’appareil."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV su Android: cattura nera o schermo nero?",
+      "excerpt": "Un’immagine salvata può essere vuota anche quando chi guarda vede il programma. Distingui i casi prima di considerarli un errore di riproduzione.",
+      "seo_title": "5G Live IPTV: spiegare una schermata acquisita vuota",
+      "seo_description": "Controlla una cattura di 5G Live IPTV su Android, distingui l’acquisizione bloccata dalla visualizzazione reale e descrivi i sintomi senza aggirare le protezioni.",
+      "sections": [
+        {
+          "heading": "Confronta lo schermo con l’immagine salvata",
+          "paragraphs": [
+            "Per controllare una cattura di 5G Live IPTV, descrivi prima ciò che è visibile sul telefono. Il programma funzionava normalmente quando hai provato ad acquisirlo, oppure il lettore era già vuoto? Annota eventuali avvisi e se l’audio continuava. Un’immagine salvata nera è un’osservazione diversa da uno schermo nero durante la visione. Tieni separati questi casi, invece di supporre che entrambi dimostrino un problema di connessione o di abbonamento."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprendi una possibile limitazione della cattura",
+          "paragraphs": [
+            "La documentazione Android per sviluppatori descrive FLAG_SECURE, una protezione della finestra che impedisce al contenuto protetto di apparire nelle catture o su schermi non sicuri. Questo spiega un possibile motivo per cui l’acquisizione non è disponibile; non dimostra che il tuo lettore usi tale opzione. Una sola immagine vuota non identifica la causa tecnica. Mantieni le protezioni e non installare strumenti per aggirarle né modificare la sicurezza per ottenere immagini del programma."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: protezione delle finestre sicure",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Invia invece una descrizione utile",
+          "paragraphs": [
+            "Se non è disponibile una cattura consentita, comunica privatamente all’assistenza modello del telefono, versione di Android, nome del lettore e testo esatto dell’avviso. Spiega se immagine e audio funzionavano sul dispositivo e quando è comparso il sintomo. Non inviare registrazioni protette, password, indirizzi privati delle playlist o collegamenti di accesso agli ordini. Se è vuoto il lettore stesso, descrivi direttamente quel problema anziché presentare la cattura come prova. Un rapporto chiaro aiuta a individuare la prossima domanda senza diagnosticare l’intero dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV op Android: zwarte opname of zwart scherm?",
+      "excerpt": "Een opgeslagen afbeelding kan leeg zijn terwijl de kijker wel beeld ziet. Beschrijf dat verschil voordat je uitgaat van mislukte weergave.",
+      "seo_title": "5G Live IPTV: een lege schermafbeelding uitleggen",
+      "seo_description": "Controleer een schermafbeelding van 5G Live IPTV op Android, onderscheid een geblokkeerde opname van het echte scherm en beschrijf klachten zonder beveiliging te omzeilen.",
+      "sections": [
+        {
+          "heading": "Vergelijk het scherm met de opgeslagen afbeelding",
+          "paragraphs": [
+            "Begin een controle van een schermafbeelding bij 5G Live IPTV met wat op de telefoon zelf zichtbaar is. Speelde het programma normaal toen je de opname probeerde te maken, of was de speler al leeg? Noteer eventuele waarschuwingen en of het geluid doorging. Een zwarte opgeslagen afbeelding is een andere waarneming dan een zwart scherm tijdens het kijken. Houd die situaties gescheiden en neem niet aan dat beide een verbindingsprobleem of abonnementsfout bewijzen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Begrijp een mogelijke opnamebeperking",
+          "paragraphs": [
+            "De Android-documentatie voor ontwikkelaars beschrijft FLAG_SECURE, een vensterbeveiliging die voorkomt dat beveiligde inhoud in schermafbeeldingen of op onbeveiligde schermen verschijnt. Dat verklaart één mogelijke reden waarom een opname niet beschikbaar is; het bewijst niet dat jouw speler deze vlag gebruikt. Alleen een lege afbeelding kan de technische oorzaak niet vaststellen. Laat beveiligingen intact en installeer geen omzeilingstools of gewijzigde veiligheidsinstellingen om programmabeelden te verkrijgen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: beveiliging van vensters",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Stuur in plaats daarvan een bruikbare beschrijving",
+          "paragraphs": [
+            "Als een toegestane schermafbeelding ontbreekt, meld dan privé aan ondersteuning het telefoonmodel, de Android-versie, de spelernaam en de precieze waarschuwingstekst. Leg uit of beeld en geluid op het apparaat werkten en wanneer het verschijnsel optrad. Stuur geen beveiligde opnamen, wachtwoorden, privéadressen van afspeellijsten of toegangslinks voor bestellingen. Blijft de speler zelf leeg, beschrijf dat kijkprobleem dan rechtstreeks in plaats van de afbeelding als bewijs te gebruiken. Een helder verslag helpt de volgende vraag bepalen zonder een diagnose voor het hele apparaat te claimen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV no Android: captura preta ou ecrã preto?",
+      "excerpt": "Uma imagem guardada pode estar vazia mesmo quando a pessoa vê o programa. Descreva a diferença antes de concluir que a reprodução falhou.",
+      "seo_title": "5G Live IPTV: explicar uma captura de ecrã vazia",
+      "seo_description": "Verifique uma captura de 5G Live IPTV no Android, distinga uma captura bloqueada do ecrã real e descreva os sintomas sem contornar as proteções.",
+      "sections": [
+        {
+          "heading": "Compare o ecrã com a imagem guardada",
+          "paragraphs": [
+            "Comece a verificação de uma captura de 5G Live IPTV descrevendo o que aparece no próprio telefone. O programa funcionava normalmente quando tentou capturá-lo, ou o leitor já estava vazio? Registe qualquer aviso e se o som continuou. Uma imagem guardada preta não é a mesma observação que um ecrã preto durante a visualização. Mantenha os casos separados em vez de assumir que ambos comprovam uma falha de ligação ou da subscrição."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Entenda uma possível restrição de captura",
+          "paragraphs": [
+            "A documentação Android para programadores descreve FLAG_SECURE, uma proteção de janela que impede conteúdo seguro de aparecer em capturas ou ecrãs não seguros. Isto explica uma possível razão para a captura não estar disponível; não comprova que o seu leitor utilize essa opção. Uma imagem vazia, por si só, não identifica a causa técnica. Mantenha as proteções e não instale ferramentas para as contornar nem altere definições de segurança para obter imagens do programa."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: proteção de janelas seguras",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Envie uma descrição útil em alternativa",
+          "paragraphs": [
+            "Se não houver uma captura permitida disponível, indique em privado ao apoio o modelo do telefone, a versão do Android, o nome do leitor e o texto exato do aviso. Explique se a imagem e o som funcionavam no dispositivo e quando ocorreu o sintoma. Não envie gravações protegidas, palavras-passe, endereços privados de listas ou ligações de acesso a encomendas. Se o próprio leitor estiver vazio, descreva diretamente esse problema em vez de apresentar a captura como prova. Um relato claro ajuda a escolher a próxima pergunta sem diagnosticar o aparelho inteiro."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV на Android: чёрный снимок или чёрный экран?",
+      "excerpt": "Сохранённый снимок может быть пустым, хотя зритель видит передачу. Опишите разницу, прежде чем считать проблему захвата сбоем воспроизведения.",
+      "seo_title": "5G Live IPTV: как описать пустой снимок экрана",
+      "seo_description": "Проверьте снимок 5G Live IPTV на Android, отличите блокировку захвата от реального изображения и сообщите признаки без обхода защитных механизмов.",
+      "sections": [
+        {
+          "heading": "Сравните экран с сохранённым снимком",
+          "paragraphs": [
+            "Проверку снимка экрана с 5G Live IPTV начните с описания того, что видно на самом телефоне. Передача шла нормально при попытке захвата или сам проигрыватель уже был пустым? Запишите предупреждение и отметьте, продолжался ли звук. Чёрный сохранённый снимок и чёрный экран во время просмотра — разные наблюдения. Не смешивайте эти случаи и не считайте, что оба доказывают неполадку подключения или подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Учтите возможное ограничение захвата",
+          "paragraphs": [
+            "Документация Android для разработчиков описывает FLAG_SECURE — защиту окна, которая не позволяет защищённому содержимому появляться на снимках и незащищённых дисплеях. Это одна возможная причина недоступности снимка, но не доказательство того, что ваш проигрыватель использует такой флаг. Одна пустая картинка не определяет техническую причину. Сохраняйте защиту и не устанавливайте средства её обхода, а также не меняйте настройки безопасности ради записи передачи."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: защита безопасного окна",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "Вместо снимка отправьте полезное описание",
+          "paragraphs": [
+            "Если разрешённый снимок недоступен, сообщите поддержке лично модель телефона, версию Android, название проигрывателя и точный текст предупреждения. Укажите, работали ли изображение и звук на устройстве и когда появился признак. Не отправляйте защищённые записи, пароли, личные адреса плейлистов или ссылки доступа к заказам. Если пуст сам проигрыватель, прямо опишите проблему просмотра, а не представляйте снимок как доказательство. Понятное описание помогает выбрать следующий вопрос, не выдавая предположение за диагноз всего устройства."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV پر اسکرین شاٹ: محفوظ تصویر کالی ہے یا اصل اسکرین؟",
+      "excerpt": "دیکھنے والے کو تصویر نظر آنے کے باوجود محفوظ اسکرین شاٹ خالی ہو سکتا ہے۔ اسے پلے بیک کی خرابی سمجھنے سے پہلے یہ فرق واضح کریں۔",
+      "seo_title": "5G Live IPTV: خالی اسکرین شاٹ کی درست وضاحت",
+      "seo_description": "Android پر 5G Live IPTV کے اسکرین شاٹ کو جانچیں، بند کی گئی گرفت اور اصل اسکرین کا فرق سمجھیں اور حفاظت توڑے بغیر علامات بتائیں۔",
+      "sections": [
+        {
+          "heading": "اصل اسکرین اور محفوظ تصویر کا موازنہ کریں",
+          "paragraphs": [
+            "5G Live IPTV کے اسکرین شاٹ کی جانچ فون پر حقیقت میں نظر آنے والی چیز بیان کرکے شروع کریں۔ کیا تصویر محفوظ کرنے کی کوشش کے وقت پروگرام معمول کے مطابق چل رہا تھا یا پلیئر پہلے ہی خالی تھا؟ کوئی تنبیہ آئی ہو تو اسے نوٹ کریں اور بتائیں کہ آواز جاری تھی یا نہیں۔ محفوظ تصویر کا کالا ہونا، دیکھتے وقت اصل اسکرین کالی ہونے سے الگ بات ہے۔ دونوں کو الگ رکھیں؛ یہ فرض نہ کریں کہ دونوں کنکشن یا سبسکرپشن کی خرابی ثابت کرتے ہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تصویر محفوظ کرنے کی ممکنہ پابندی سمجھیں",
+          "paragraphs": [
+            "Android کی ڈویلپر دستاویزات میں FLAG_SECURE نامی ونڈو کی حفاظت بیان ہے، جو محفوظ مواد کو اسکرین شاٹ یا غیر محفوظ ڈسپلے پر ظاہر ہونے سے روکتی ہے۔ یہ تصویر محفوظ نہ ہونے کی ایک ممکنہ وجہ سمجھاتی ہے؛ اس سے یہ ثابت نہیں ہوتا کہ آپ کا خاص پلیئر یہی اختیار استعمال کرتا ہے۔ صرف خالی تصویر تکنیکی وجہ نہیں بتا سکتی۔ حفاظت برقرار رکھیں، پروگرام کی ویڈیو حاصل کرنے کے لیے پابندی توڑنے والے اوزار نصب نہ کریں اور سکیورٹی کی ترتیبات نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: محفوظ ونڈو کی حفاظت",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "اس کے بجائے مفید تحریری وضاحت بھیجیں",
+          "paragraphs": [
+            "اگر اجازت یافتہ اسکرین شاٹ دستیاب نہیں، تو نجی طور پر مدد کے لیے فون کا ماڈل، Android کا ورژن، پلیئر کا نام اور تنبیہ کے بالکل درست الفاظ بتائیں۔ واضح کریں کہ آلے پر تصویر اور آواز کام کر رہی تھیں یا نہیں اور علامت کب سامنے آئی۔ محفوظ ریکارڈنگ، پاس ورڈ، نجی پلے لسٹ کے پتے یا آرڈر تک رسائی کے روابط نہ بھیجیں۔ اگر پلیئر خود خالی ہے تو محفوظ تصویر کو ثبوت بنانے کے بجائے اصل دیکھنے کا مسئلہ بیان کریں۔ صاف رپورٹ پورے آلے کی تشخیص کا دعویٰ کیے بغیر اگلا سوال طے کرنے میں مدد دیتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV على Android: لقطة سوداء أم شاشة سوداء؟",
+      "excerpt": "قد تكون الصورة المحفوظة فارغة مع أن المشاهد يرى البرنامج. وضّح الفرق قبل اعتبار مشكلة الالتقاط فشلًا في تشغيل الفيديو.",
+      "seo_title": "5G Live IPTV: شرح لقطة الشاشة الفارغة",
+      "seo_description": "افحص لقطة 5G Live IPTV على Android، وميّز منع الالتقاط عن العرض الحقيقي، ثم صف الأعراض من دون تجاوز إجراءات الحماية.",
+      "sections": [
+        {
+          "heading": "قارن الشاشة بالصورة المحفوظة",
+          "paragraphs": [
+            "ابدأ فحص لقطة الشاشة مع 5G Live IPTV بوصف ما يظهر على الهاتف نفسه. هل كان البرنامج يعمل طبيعيًا حين حاولت التقاطه، أم كان المشغّل فارغًا أصلًا؟ دوّن أي تحذير واذكر هل استمر الصوت. الصورة المحفوظة السوداء ملاحظة مختلفة عن الشاشة السوداء أثناء المشاهدة. افصل بين الحالتين بدل افتراض أنهما تثبتان مشكلة في الاتصال أو الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افهم قيدًا محتملًا على الالتقاط",
+          "paragraphs": [
+            "تصف وثائق Android للمطورين FLAG_SECURE، وهي حماية للنافذة تمنع ظهور المحتوى الآمن في لقطات الشاشة أو على شاشات غير آمنة. يوضح ذلك سببًا محتملًا لعدم توفر اللقطة، لكنه لا يثبت أن مشغّلك المحدد يستخدم هذه العلامة. لا تحدد الصورة الفارغة وحدها السبب التقني. أبقِ إجراءات الحماية مفعّلة، ولا تثبّت أدوات لتجاوز الالتقاط ولا تغيّر إعدادات الأمان للحصول على تسجيل للبرنامج."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: حماية النوافذ الآمنة",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "أرسل وصفًا مفيدًا بدلًا من ذلك",
+          "paragraphs": [
+            "إذا لم تتوفر لقطة مسموح بها، فأرسل للدعم بشكل خاص طراز الهاتف وإصدار Android واسم المشغّل ونص التحذير الدقيق. وضّح هل كانت الصورة والصوت يعملان على الجهاز ومتى ظهرت العلامة. تجنّب إرسال تسجيلات محمية أو كلمات مرور أو عناوين قوائم تشغيل خاصة أو روابط دخول الطلبات. إذا كان المشغّل نفسه فارغًا، فصف مشكلة المشاهدة مباشرة بدل تقديم اللقطة المحفوظة كدليل. يساعد التقرير الواضح في اختيار السؤال التالي من دون ادعاء تشخيص شامل للجهاز."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV स्क्रीनशॉट: सहेजी तस्वीर काली है या असली स्क्रीन?",
+      "excerpt": "दर्शक को कार्यक्रम दिखने पर भी सहेजी गई तस्वीर खाली हो सकती है। इसे वीडियो चलने की खराबी मानने से पहले अंतर बताएँ।",
+      "seo_title": "5G Live IPTV: खाली स्क्रीनशॉट की सही जानकारी दें",
+      "seo_description": "Android पर 5G Live IPTV का स्क्रीनशॉट जाँचें, रोकी गई कैप्चर और असली डिस्प्ले का अंतर समझें और सुरक्षा हटाए बिना लक्षण बताएँ।",
+      "sections": [
+        {
+          "heading": "स्क्रीन और सहेजी तस्वीर की तुलना करें",
+          "paragraphs": [
+            "5G Live IPTV के स्क्रीनशॉट की जाँच फोन पर वास्तव में दिख रही चीज़ बताकर शुरू करें। तस्वीर लेने की कोशिश के समय कार्यक्रम सामान्य रूप से चल रहा था या प्लेयर पहले से खाली था? कोई चेतावनी आई हो तो लिखें और बताएँ कि आवाज़ चलती रही या नहीं। सहेजी तस्वीर का काला होना, देखते समय स्क्रीन काली होने से अलग बात है। दोनों स्थितियाँ अलग रखें; यह न मानें कि दोनों कनेक्शन या सदस्यता की खराबी साबित करती हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "कैप्चर पर संभावित रोक समझें",
+          "paragraphs": [
+            "Android के डेवलपर दस्तावेज़ FLAG_SECURE नाम की विंडो सुरक्षा बताते हैं, जो सुरक्षित सामग्री को स्क्रीनशॉट या असुरक्षित डिस्प्ले पर दिखाई देने से रोकती है। यह कैप्चर उपलब्ध न होने की एक संभावित वजह बताती है; इससे साबित नहीं होता कि आपका खास प्लेयर यही फ़्लैग इस्तेमाल करता है। केवल खाली तस्वीर तकनीकी कारण नहीं पहचान सकती। सुरक्षा चालू रखें और कार्यक्रम की रिकॉर्डिंग पाने के लिए कैप्चर की रोक तोड़ने वाले औज़ार न लगाएँ या सुरक्षा सेटिंग न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android Developers: सुरक्षित विंडो की सुरक्षा",
+              "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+            }
+          ]
+        },
+        {
+          "heading": "इसके बजाय उपयोगी विवरण भेजें",
+          "paragraphs": [
+            "अनुमति वाला स्क्रीनशॉट न मिल पाए तो सहायता को निजी तौर पर फोन का मॉडल, Android संस्करण, प्लेयर का नाम और चेतावनी के ठीक शब्द बताएँ। स्पष्ट करें कि उपकरण पर तस्वीर और आवाज़ काम कर रही थीं या नहीं और लक्षण कब दिखा। सुरक्षित रिकॉर्डिंग, पासवर्ड, निजी प्लेलिस्ट पते या ऑर्डर तक पहुँच के लिंक न भेजें। प्लेयर खुद खाली हो तो सहेजी तस्वीर को सबूत बनाने के बजाय देखने की असली समस्या बताएँ। साफ रिपोर्ट पूरे उपकरण का निदान करने का दावा किए बिना अगला सवाल तय करने में मदद करती है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Android Developers: secure window flag",
+      "url": "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+    }
+  ]
+}
