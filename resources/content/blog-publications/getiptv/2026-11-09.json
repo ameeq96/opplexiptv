@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-09",
+  "topic": "Reorder an existing Google TV player tile for Get IPTV without confusing Move with uninstalling an app or changing provider access",
+  "primary_keyword": "Get IPTV app order",
+  "slug": "getiptv-google-tv-player-tile-move-versus-remove",
+  "translations": {
+    "en": {
+      "title": "Get IPTV app order: move a Google TV tile without uninstalling",
+      "excerpt": "Put an existing player in a convenient position on Google TV. Moving its home-screen tile is different from removing the app or changing the service plan.",
+      "seo_title": "Get IPTV app order on Google TV: move, not remove",
+      "seo_description": "Reorder an existing Google TV player tile carefully. Check the app name, use Move and keep home-screen layout separate from service access.",
+      "sections": [
+        {
+          "heading": "Find the existing player first",
+          "paragraphs": [
+            "A Get IPTV app order change can make the player you already use easier to find. Start on the Google TV home screen and locate the correct installed app in the Your apps row. Check its displayed name rather than assuming a tile with a familiar colour is the same player. The website brand and player publisher may be different. If you cannot find the app at all, stop and describe that separately; rearranging tiles is not an installation procedure."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Choose Move, then save the position",
+          "paragraphs": [
+            "Google documents holding Select on the chosen tile to open its menu, choosing Move, then using Left or Right and confirming the position with Select. Choose Done to save the order. Menu wording can vary by device or language. The same general area also offers app removal through View Details, so read the selected action before confirming. Do not uninstall or clear app data just to move a shortcut."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: reorder installed apps",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep layout and access separate",
+          "paragraphs": [
+            "Open the player after the move to check that you selected the intended app. A new tile position does not renew a plan, change provider credentials or repair a playback error. If the app opens but viewing fails, record the player name, device model and exact visible message as a different issue. Share that context privately with support, excluding passwords and playlist addresses. Restore the old position if the new arrangement is less convenient."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Orden de apps de Get IPTV: mueve el icono sin desinstalar",
+      "excerpt": "Coloca el reproductor existente en una posición cómoda de Google TV. Mover su icono es distinto de eliminar la aplicación o cambiar el plan del servicio.",
+      "seo_title": "Orden de apps de Get IPTV en Google TV",
+      "seo_description": "Reordena el icono de un reproductor existente en Google TV. Comprueba el nombre, elige Mover y separa la disposición de la pantalla del acceso al servicio.",
+      "sections": [
+        {
+          "heading": "Primero localiza el reproductor existente",
+          "paragraphs": [
+            "Cambiar el orden de las aplicaciones para Get IPTV puede facilitar encontrar el reproductor que ya utilizas. En la pantalla de inicio de Google TV, busca la aplicación correcta en la fila Tus aplicaciones. Comprueba el nombre mostrado: un color conocido no significa que sea el mismo reproductor. La marca de la web y el editor de la aplicación pueden ser distintos. Si no encuentras la aplicación, describe ese problema por separado; reorganizar iconos no sirve para instalarla."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Elige Mover y guarda la posición",
+          "paragraphs": [
+            "Google indica mantener pulsado Seleccionar sobre el icono para abrir el menú, elegir Mover, desplazarse a izquierda o derecha y confirmar con Seleccionar. Elige Listo para guardar el orden. Los nombres pueden variar según el dispositivo y el idioma. En esa zona también se puede eliminar la aplicación mediante Ver detalles, así que lee la acción antes de confirmar. No desinstales ni borres los datos solo para mover un acceso directo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google TV: reordenar aplicaciones instaladas",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la disposición del acceso",
+          "paragraphs": [
+            "Abre el reproductor tras moverlo para comprobar que elegiste la aplicación correcta. La nueva posición no renueva el plan, cambia credenciales ni resuelve errores de reproducción. Si abre pero no reproduce, anota nombre del reproductor, modelo del dispositivo y mensaje exacto como un problema distinto. Comparte ese contexto en privado con soporte, sin contraseñas ni direcciones de listas. Recupera la posición anterior si la nueva distribución resulta menos cómoda."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Ordre des applis Get IPTV : déplacer une vignette sans désinstaller",
+      "excerpt": "Placez le lecteur existant à un endroit pratique sur Google TV. Déplacer sa vignette diffère de supprimer l’application ou de modifier le forfait.",
+      "seo_title": "Ordre des applis Get IPTV sur Google TV",
+      "seo_description": "Réorganisez la vignette d’un lecteur déjà installé sur Google TV. Vérifiez son nom, choisissez Déplacer et distinguez disposition et accès au service.",
+      "sections": [
+        {
+          "heading": "Trouver d’abord le lecteur existant",
+          "paragraphs": [
+            "Modifier l’ordre des applications pour Get IPTV peut faciliter l’accès au lecteur déjà utilisé. Depuis l’accueil Google TV, repérez la bonne application dans la ligne Vos applications. Vérifiez son nom affiché : une couleur familière ne prouve pas qu’il s’agit du même lecteur. La marque du site et l’éditeur du logiciel peuvent être différents. Si vous ne trouvez pas du tout l’application, décrivez ce problème séparément ; réorganiser des vignettes n’est pas une installation."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Choisir Déplacer puis enregistrer",
+          "paragraphs": [
+            "Google décrit un appui prolongé sur Sélectionner pour ouvrir le menu de la vignette, puis Déplacer, les flèches gauche ou droite et une confirmation avec Sélectionner. Choisissez Terminé pour enregistrer l’ordre. Les libellés varient selon l’appareil et la langue. Cette zone permet aussi de supprimer une application via Afficher les détails : lisez donc l’action avant de confirmer. Ne désinstallez pas et n’effacez pas les données pour déplacer un raccourci."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google TV : réorganiser les applications installées",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer disposition et accès",
+          "paragraphs": [
+            "Ouvrez le lecteur après son déplacement pour vérifier que vous avez choisi la bonne application. Une nouvelle position ne renouvelle pas le forfait, ne change pas les identifiants et ne corrige pas une erreur de lecture. Si l’application s’ouvre sans lire la vidéo, relevez son nom, le modèle de l’appareil et le message exact comme problème distinct. Transmettez ce contexte au support en privé, sans mot de passe ni adresse de liste. Revenez à l’ancienne position si elle était plus pratique."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ordine delle app Get IPTV: sposta il riquadro senza disinstallare",
+      "excerpt": "Porta il lettore esistente in una posizione comoda su Google TV. Spostare il riquadro è diverso da eliminare l’app o cambiare il piano del servizio.",
+      "seo_title": "Ordine delle app Get IPTV su Google TV",
+      "seo_description": "Riordina il riquadro del lettore già installato su Google TV. Controlla il nome e scegli Sposta: la disposizione non modifica l’accesso al servizio.",
+      "sections": [
+        {
+          "heading": "Trova prima il lettore già installato",
+          "paragraphs": [
+            "Cambiare l’ordine delle app per Get IPTV può rendere più facile trovare il lettore che usi già. Dalla schermata iniziale di Google TV individua l’app corretta nella riga Le tue app. Controlla il nome visualizzato: un colore familiare non prova che sia lo stesso lettore. Il marchio del sito e lo sviluppatore dell’app possono essere diversi. Se l’app non si trova affatto, descrivi separatamente il problema: riordinare i riquadri non è una procedura di installazione."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Scegli Sposta e salva la posizione",
+          "paragraphs": [
+            "Google indica di tenere premuto Seleziona sul riquadro, scegliere Sposta, usare Sinistra o Destra e confermare la posizione con Seleziona. Scegli Fine per salvare l’ordine. Le diciture possono variare secondo dispositivo e lingua. Nella stessa area è possibile rimuovere l’app tramite Visualizza dettagli, quindi leggi l’azione prima di confermare. Non disinstallare e non cancellare i dati dell’app soltanto per spostare un collegamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google TV: riordinare le app installate",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa disposizione e accesso",
+          "paragraphs": [
+            "Apri il lettore dopo averlo spostato per verificare di avere scelto l’app giusta. La nuova posizione non rinnova un piano, modifica credenziali o risolve errori di riproduzione. Se l’app si apre ma il video non parte, annota nome del lettore, modello del dispositivo e messaggio preciso come problema distinto. Condividi questi dettagli privatamente con l’assistenza, senza password o indirizzi di playlist. Ripristina la posizione precedente se la nuova disposizione è meno comoda."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-appvolgorde: verplaats een tegel zonder te verwijderen",
+      "excerpt": "Zet je bestaande speler op een handige plek in Google TV. Een tegel verplaatsen is iets anders dan de app verwijderen of het abonnement wijzigen.",
+      "seo_title": "Get IPTV-appvolgorde op Google TV wijzigen",
+      "seo_description": "Verplaats de tegel van een bestaande Google TV-speler zorgvuldig. Controleer de naam, kies Verplaatsen en onderscheid indeling van toegang tot de dienst.",
+      "sections": [
+        {
+          "heading": "Zoek eerst de bestaande speler",
+          "paragraphs": [
+            "Door de appvolgorde voor Get IPTV te wijzigen, kun je de speler die je al gebruikt sneller vinden. Zoek op het startscherm van Google TV de juiste geïnstalleerde app in de rij Je apps. Controleer de weergegeven naam: een bekende kleur betekent niet dat het dezelfde speler is. Het websitemerk en de uitgever van de app kunnen verschillen. Kun je de app helemaal niet vinden, beschrijf dat dan apart; tegels herschikken installeert geen app."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Kies Verplaatsen en sla de plek op",
+          "paragraphs": [
+            "Google beschrijft dat je Selecteren ingedrukt houdt op de tegel om het menu te openen, Verplaatsen kiest, naar links of rechts gaat en met Selecteren bevestigt. Kies Klaar om de volgorde op te slaan. Namen verschillen soms per apparaat en taal. Via Details bekijken kun je hier ook een app verwijderen. Lees daarom de gekozen actie vóór bevestiging. Verwijder de app niet en wis geen gegevens om alleen een snelkoppeling te verplaatsen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: geïnstalleerde apps herschikken",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd indeling en toegang uit elkaar",
+          "paragraphs": [
+            "Open de speler na het verplaatsen om te controleren of je de bedoelde app koos. Een nieuwe plek verlengt geen abonnement, verandert geen inloggegevens en verhelpt geen afspeelfout. Opent de app wel maar speelt de video niet, noteer dan spelernaam, apparaatmodel en de exacte melding als afzonderlijk probleem. Deel die context privé met ondersteuning, zonder wachtwoorden of afspeellijstadressen. Zet de tegel terug als de nieuwe indeling minder handig is."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Ordem das apps Get IPTV: mover um ícone sem desinstalar",
+      "excerpt": "Coloque o reprodutor existente num ponto conveniente do Google TV. Mover o ícone é diferente de remover a aplicação ou alterar o plano do serviço.",
+      "seo_title": "Organizar as apps Get IPTV no Google TV",
+      "seo_description": "Reorganize o ícone de um reprodutor instalado no Google TV. Confira o nome, escolha Mover e separe a disposição da tela do acesso ao serviço.",
+      "sections": [
+        {
+          "heading": "Encontre primeiro o reprodutor existente",
+          "paragraphs": [
+            "Alterar a ordem das aplicações para Get IPTV pode facilitar encontrar o reprodutor que já utiliza. Na tela inicial do Google TV, localize a aplicação correta na linha As suas aplicações. Confira o nome apresentado: uma cor familiar não significa que seja o mesmo reprodutor. A marca do site e o editor da aplicação podem ser diferentes. Se não encontrar a aplicação, descreva isso separadamente; reorganizar ícones não é um procedimento de instalação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Escolha Mover e guarde a posição",
+          "paragraphs": [
+            "O Google explica que se deve manter Selecionar pressionado no ícone, escolher Mover, usar Esquerda ou Direita e confirmar com Selecionar. Escolha Concluído para guardar a ordem. Os nomes variam conforme o dispositivo e o idioma. A mesma área permite remover aplicações através de Ver detalhes, por isso leia a ação antes de confirmar. Não desinstale nem apague os dados apenas para deslocar um atalho."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google TV: reorganizar aplicações instaladas",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a disposição do acesso",
+          "paragraphs": [
+            "Abra o reprodutor depois da mudança para confirmar que escolheu a aplicação pretendida. A nova posição não renova o plano, altera credenciais nem corrige erros de reprodução. Se abrir mas não reproduzir, anote o nome do reprodutor, modelo do dispositivo e mensagem exata como outro problema. Partilhe esses detalhes em privado com o suporte, sem senhas nem endereços de listas. Recupere a posição anterior se a nova disposição for menos prática."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Порядок приложений Get IPTV: переместить плитку, не удаляя плеер",
+      "excerpt": "Разместите установленный плеер удобнее на Google TV. Перемещение плитки отличается от удаления приложения и изменения плана услуги.",
+      "seo_title": "Порядок приложений Get IPTV на Google TV",
+      "seo_description": "Переместите плитку установленного плеера Google TV. Проверьте название и выберите перемещение: расположение не меняет доступ к услуге.",
+      "sections": [
+        {
+          "heading": "Сначала найдите установленный плеер",
+          "paragraphs": [
+            "Изменение порядка приложений для Get IPTV поможет быстрее находить уже используемый плеер. На главном экране Google TV найдите нужное установленное приложение в строке Ваши приложения. Проверьте название: знакомый цвет плитки ещё не означает, что это тот же плеер. Бренд сайта и издатель приложения могут различаться. Если приложения вообще не видно, опишите это отдельно: перестановка плиток не является установкой."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Выберите перемещение и сохраните позицию",
+          "paragraphs": [
+            "Google описывает удержание кнопки выбора на плитке, выбор перемещения, сдвиг влево или вправо и подтверждение кнопкой выбора. Для сохранения порядка выберите Готово. Названия пунктов зависят от устройства и языка. В этой же области через просмотр сведений можно удалить приложение, поэтому перед подтверждением прочитайте выбранное действие. Не удаляйте плеер и не стирайте его данные ради перемещения ярлыка."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google TV: изменение порядка приложений",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Не путайте расположение и доступ",
+          "paragraphs": [
+            "После перемещения откройте плеер и убедитесь, что выбрали нужное приложение. Новая позиция не продлевает план, не меняет учётные данные и не исправляет ошибку воспроизведения. Если приложение открывается, но видео не идёт, запишите название плеера, модель устройства и точный текст сообщения как отдельную проблему. Передайте сведения поддержке лично, без паролей и адресов списков воспроизведения. Верните прежнюю позицию, если новая оказалась неудобной."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV ایپس کی ترتیب: Google TV کا آئیکن ایپ حذف کیے بغیر منتقل کریں",
+      "excerpt": "Google TV پر موجود پلیئر کو آسان جگہ رکھیں۔ ہوم اسکرین کا آئیکن منتقل کرنا ایپ حذف کرنے یا سروس پلان بدلنے سے مختلف عمل ہے۔",
+      "seo_title": "Google TV پر Get IPTV ایپس کی ترتیب بدلیں",
+      "seo_description": "موجودہ پلیئر کا آئیکن احتیاط سے منتقل کریں۔ نام دیکھیں، منتقل کرنے کا اختیار چنیں اور اسکرین کی ترتیب کو سروس تک رسائی سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے موجودہ پلیئر تلاش کریں",
+          "paragraphs": [
+            "Get IPTV کے لیے ایپس کی ترتیب بدلنے سے پہلے سے استعمال ہونے والا پلیئر آسانی سے مل سکتا ہے۔ Google TV کی ہوم اسکرین پر اپنی ایپس کی قطار میں درست نصب شدہ ایپ تلاش کریں۔ دکھائی دینے والا نام دیکھیں؛ مانوس رنگ لازماً وہی پلیئر ہونے کی نشانی نہیں۔ ویب سائٹ کا برانڈ اور ایپ کا ناشر مختلف ہو سکتے ہیں۔ ایپ بالکل نہ ملے تو یہ مسئلہ الگ بیان کریں؛ آئیکن کی ترتیب بدلنا ایپ نصب کرنے کا طریقہ نہیں ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "منتقل کرنے کا اختیار چن کر جگہ محفوظ کریں",
+          "paragraphs": [
+            "Google کے مطابق متعلقہ آئیکن پر انتخاب کا بٹن دبا کر رکھیں، منتقل کرنے کا اختیار چنیں، دائیں یا بائیں جائیں اور انتخاب سے نئی جگہ کی تصدیق کریں۔ ترتیب محفوظ کرنے کے لیے مکمل ہونے کا اختیار چنیں۔ آلے اور زبان کے مطابق الفاظ بدل سکتے ہیں۔ اسی حصے میں تفصیلات کے ذریعے ایپ حذف بھی ہو سکتی ہے، اس لیے تصدیق سے پہلے عمل پڑھیں۔ صرف شارٹ کٹ ہٹانے کے لیے ایپ حذف یا اس کا ڈیٹا صاف نہ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV رہنمائی: نصب شدہ ایپس کی ترتیب بدلنا",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ترتیب اور رسائی کو الگ رکھیں",
+          "paragraphs": [
+            "منتقل کرنے کے بعد پلیئر کھول کر دیکھیں کہ درست ایپ منتخب ہوئی تھی۔ نئی جگہ پلان کی تجدید، لاگ اِن تفصیلات میں تبدیلی یا ویڈیو کی خرابی کی مرمت نہیں کرتی۔ ایپ کھل جائے مگر ویڈیو نہ چلے تو پلیئر کا نام، آلے کا ماڈل اور عین پیغام الگ مسئلے کے طور پر لکھیں۔ یہ معلومات سپورٹ کو نجی طور پر دیں، پاس ورڈ اور پلے لسٹ پتے کے بغیر۔ نئی ترتیب مشکل ہو تو پرانی جگہ واپس رکھ دیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ترتيب تطبيقات Get IPTV: نقل مربع Google TV دون إزالة التطبيق",
+      "excerpt": "ضع المشغل الموجود في موضع مناسب على Google TV. نقل مربعه على الشاشة الرئيسية يختلف عن حذف التطبيق أو تغيير خطة الخدمة.",
+      "seo_title": "ترتيب تطبيقات Get IPTV على Google TV",
+      "seo_description": "أعد ترتيب مربع المشغل المثبت على Google TV بحذر. تحقق من الاسم واختر النقل، وافصل ترتيب الشاشة عن صلاحية الوصول إلى الخدمة.",
+      "sections": [
+        {
+          "heading": "ابحث أولاً عن المشغل الموجود",
+          "paragraphs": [
+            "يمكن أن يسهل تغيير ترتيب تطبيقات Get IPTV العثور على المشغل الذي تستخدمه بالفعل. من الشاشة الرئيسية في Google TV ابحث عن التطبيق المثبت الصحيح في صف تطبيقاتك. تحقق من الاسم الظاهر؛ فاللون المألوف لا يثبت أنه المشغل نفسه. قد تختلف علامة الموقع عن ناشر التطبيق. إذا لم تجد التطبيق إطلاقاً، فاشرح ذلك كمشكلة مستقلة؛ إعادة ترتيب المربعات ليست طريقة لتثبيت تطبيق."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اختر النقل ثم احفظ الموضع",
+          "paragraphs": [
+            "توضح Google الضغط المطول على زر الاختيار عند المربع لفتح قائمته، ثم اختيار النقل والتحرك يميناً أو يساراً وتأكيد الموضع بزر الاختيار. اختر تم لحفظ الترتيب. قد تختلف التسميات حسب الجهاز واللغة. تتيح المنطقة نفسها إزالة التطبيق من خلال عرض التفاصيل، لذلك اقرأ الإجراء المحدد قبل التأكيد. لا تحذف التطبيق ولا تمسح بياناته لمجرد نقل اختصار."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google TV: إعادة ترتيب التطبيقات المثبتة",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الترتيب عن الوصول",
+          "paragraphs": [
+            "افتح المشغل بعد نقله للتأكد من اختيار التطبيق المقصود. الموضع الجديد لا يجدد خطة ولا يغير بيانات دخول ولا يصلح خطأ تشغيل. إذا فتح التطبيق دون تشغيل الفيديو، دوّن اسم المشغل وطراز الجهاز والرسالة الظاهرة بدقة كمشكلة أخرى. شارك هذا السياق مع الدعم بشكل خاص، دون كلمات مرور أو عناوين قوائم تشغيل. أعد الموضع السابق إذا كان الترتيب الجديد أقل ملاءمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV ऐप क्रम: Google TV का टाइल बिना अनइंस्टॉल किए खिसकाएँ",
+      "excerpt": "Google TV पर मौजूदा प्लेयर को सुविधाजनक जगह रखें। होम स्क्रीन का टाइल खिसकाना ऐप हटाने या सेवा का प्लान बदलने से अलग है।",
+      "seo_title": "Google TV पर Get IPTV ऐप का क्रम बदलें",
+      "seo_description": "मौजूदा Google TV प्लेयर का टाइल सावधानी से खिसकाएँ। नाम जाँचें, खिसकाने का विकल्प चुनें और स्क्रीन के क्रम को सेवा की पहुँच से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहले मौजूदा प्लेयर ढूँढें",
+          "paragraphs": [
+            "Get IPTV के लिए ऐप का क्रम बदलने से पहले से इस्तेमाल किया जा रहा प्लेयर आसानी से मिल सकता है। Google TV की होम स्क्रीन पर आपके ऐप की पंक्ति में सही इंस्टॉल किया हुआ ऐप ढूँढें। दिखाई देने वाला नाम जाँचें; परिचित रंग का मतलब वही प्लेयर होना नहीं है। वेबसाइट का ब्रांड और ऐप का प्रकाशक अलग हो सकते हैं। ऐप बिल्कुल न मिले तो इस समस्या को अलग बताएँ; टाइल का क्रम बदलना ऐप इंस्टॉल करने की प्रक्रिया नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "खिसकाने का विकल्प चुनकर स्थान सहेजें",
+          "paragraphs": [
+            "Google के अनुसार टाइल पर चुनने वाला बटन दबाए रखकर मेन्यू खोलें, खिसकाने का विकल्प चुनें, बाएँ या दाएँ जाएँ और चुनने वाले बटन से स्थान पक्का करें। क्रम सहेजने के लिए हो गया चुनें। डिवाइस और भाषा के अनुसार शब्द बदल सकते हैं। इसी हिस्से में विवरण देखने से ऐप हटाने का विकल्प भी मिलता है, इसलिए पुष्टि से पहले चुना गया काम पढ़ें। सिर्फ शॉर्टकट खिसकाने के लिए ऐप न हटाएँ और न ही उसका डेटा साफ करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV सहायता: इंस्टॉल किए ऐप का क्रम बदलना",
+              "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "क्रम और पहुँच को अलग समझें",
+          "paragraphs": [
+            "खिसकाने के बाद प्लेयर खोलकर देखें कि सही ऐप चुना था। नई जगह प्लान का नवीनीकरण, लॉगिन जानकारी में बदलाव या वीडियो की त्रुटि ठीक नहीं करती। ऐप खुले लेकिन वीडियो न चले तो प्लेयर का नाम, डिवाइस मॉडल और पूरा संदेश अलग समस्या के तौर पर लिखें। यह जानकारी सहायता को निजी तौर पर दें, पासवर्ड और प्लेलिस्ट पते के बिना। नया क्रम असुविधाजनक हो तो टाइल को पुरानी जगह वापस रख दें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: Install apps on Google TV",
+      "url": "https://support.google.com/googletv/answer/10050570?hl=en"
+    }
+  ]
+}
