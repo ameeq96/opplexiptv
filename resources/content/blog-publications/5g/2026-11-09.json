@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-09",
+  "topic": "Pixel display brightness versus a dark programme scene: compare system menus and the documented adaptive setting during a 5G Live IPTV session",
+  "primary_keyword": "5G Live IPTV brightness",
+  "slug": "5g-pixel-display-brightness-versus-dark-scene",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV brightness: dim phone menus or a dark scene?",
+      "excerpt": "When a picture looks too dark on a Pixel phone, compare its system menus before changing a streaming plan or adjusting several player controls.",
+      "seo_title": "5G Live IPTV brightness checks on a Pixel phone",
+      "seo_description": "Compare Pixel display brightness with a dark programme scene during 5G Live IPTV, keeping room lighting steady and the original settings recorded.",
+      "sections": [
+        {
+          "heading": "Compare the menu with the programme",
+          "paragraphs": [
+            "A 5G Live IPTV brightness check begins with the whole display. If a scene looks dark, briefly open the phone’s system settings and check whether those labels also look dim. Keep the room lighting similar while you compare. A dark scene with normally readable menus is a different observation from a dim display across several apps. Neither observation alone identifies a network problem, a faulty subscription or a particular video format."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the controls documented for your phone",
+          "paragraphs": [
+            "Google documents Brightness level and Adaptive brightness under Display and touch on Pixel phones. Adaptive brightness adjusts screen brightness to surrounding light and learns preferences over time; the brightness level can still be changed while it is enabled. Record the current setting before one small adjustment at a comfortable level. Other Android manufacturers may use different menus. Do not assume a player’s own picture control and the phone’s display slider are the same setting."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: manage Pixel screen and display settings",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Repeat one comparison, then describe the result",
+          "paragraphs": [
+            "Return to the same programme passage and compare the system menu again without changing room lighting or several controls together. Avoid leaving the display at maximum just to make the picture look different. Preserve the original preference if the adjustment is unhelpful. For support, report the phone model, Android version, player name and whether only the video or also menus appear dim. Brightness adjustments do not restore an unavailable stream; keep passwords and private playlist links out of the report."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Brillo en 5G Live IPTV: ¿menús tenues o una escena oscura?",
+      "excerpt": "Si la imagen se ve demasiado oscura en un Pixel, compara los menús del sistema antes de cambiar de plan o modificar varios controles del reproductor.",
+      "seo_title": "5G Live IPTV: comprobar el brillo en un teléfono Pixel",
+      "seo_description": "Compara el brillo de la pantalla Pixel con una escena oscura en 5G Live IPTV, manteniendo estable la luz y anotando los ajustes originales.",
+      "sections": [
+        {
+          "heading": "Compara el menú con el programa",
+          "paragraphs": [
+            "Para revisar el brillo durante 5G Live IPTV, empieza por toda la pantalla. Si una escena parece oscura, abre brevemente los ajustes del teléfono y comprueba si las etiquetas también se ven tenues. Mantén una iluminación ambiental parecida al comparar. Una escena oscura con menús legibles es una observación diferente de una pantalla tenue en varias aplicaciones. Ninguna de las dos identifica por sí sola un problema de red, un abono defectuoso o un formato de vídeo concreto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa los controles documentados para tu teléfono",
+          "paragraphs": [
+            "Google documenta Nivel de brillo y Brillo adaptativo en Pantalla y ajustes táctiles de los Pixel. El brillo adaptativo ajusta la pantalla a la luz del entorno y aprende preferencias con el tiempo; el nivel también puede cambiarse mientras está activo. Anota la configuración actual antes de hacer un pequeño ajuste a un nivel cómodo. Otros fabricantes de Android pueden usar menús distintos. No supongas que el control de imagen del reproductor equivale al deslizador del teléfono."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: gestionar la pantalla de un Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Repite una comparación y describe el resultado",
+          "paragraphs": [
+            "Vuelve al mismo fragmento y compara otra vez el menú del sistema sin cambiar la iluminación ni varios controles juntos. Evita dejar la pantalla al máximo solo para que la imagen parezca diferente. Conserva la preferencia original si el ajuste no ayuda. Al soporte indica modelo, versión de Android, reproductor y si se ve oscuro únicamente el vídeo o también los menús. El brillo no recupera una emisión no disponible; excluye contraseñas y enlaces privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Luminosité de 5G Live IPTV : menus sombres ou scène peu éclairée ?",
+      "excerpt": "Si l'image paraît trop sombre sur un Pixel, comparez les menus du système avant de changer d'offre ou de modifier plusieurs commandes du lecteur.",
+      "seo_title": "5G Live IPTV : vérifier la luminosité sur un Pixel",
+      "seo_description": "Comparez la luminosité d’un Pixel à une scène sombre pendant 5G Live IPTV, avec un éclairage stable et les réglages d’origine notés.",
+      "sections": [
+        {
+          "heading": "Comparer le menu au programme",
+          "paragraphs": [
+            "Pour vérifier la luminosité pendant 5G Live IPTV, commencez par l'ensemble de l'écran. Si une scène semble sombre, ouvrez brièvement les paramètres du téléphone et regardez si leurs libellés sont également peu lumineux. Conservez un éclairage ambiant similaire. Une scène sombre avec des menus lisibles n'est pas la même observation qu'un écran assombri dans plusieurs applications. Aucun de ces constats ne suffit à identifier un problème réseau, un abonnement défaillant ou un format vidéo particulier."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Employer les commandes prévues pour le téléphone",
+          "paragraphs": [
+            "Google décrit le niveau de luminosité et la luminosité adaptative dans Affichage et commandes tactiles des Pixel. Le réglage adaptatif suit la lumière ambiante et apprend les préférences avec le temps ; le niveau reste modifiable lorsqu'il est actif. Notez le réglage actuel avant une petite correction à un niveau confortable. D'autres fabricants Android peuvent employer des menus différents. Ne confondez pas une commande d'image du lecteur avec le curseur d'affichage du téléphone."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : gérer l'affichage d'un Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Refaire une comparaison et décrire le résultat",
+          "paragraphs": [
+            "Revenez au même passage puis comparez à nouveau le menu sans changer l'éclairage ni plusieurs commandes ensemble. Ne laissez pas l'écran au maximum simplement pour obtenir une image différente. Conservez la préférence initiale si l'ajustement n'aide pas. Au support, indiquez modèle, version Android, lecteur et si la vidéo seule ou les menus aussi paraissent sombres. La luminosité ne rétablit pas un flux indisponible ; excluez mots de passe et liens privés de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Luminosità di 5G Live IPTV: menu scuri o una scena poco illuminata?",
+      "excerpt": "Se l'immagine appare troppo scura su un Pixel, confronta i menu di sistema prima di cambiare piano o modificare vari controlli del lettore.",
+      "seo_title": "5G Live IPTV: controllare la luminosità su Pixel",
+      "seo_description": "Confronta la luminosità del Pixel con una scena scura durante 5G Live IPTV, mantenendo stabile la luce e annotando le impostazioni originali.",
+      "sections": [
+        {
+          "heading": "Confronta il menu con il programma",
+          "paragraphs": [
+            "Per controllare la luminosità durante 5G Live IPTV, osserva prima l'intero schermo. Se una scena appare scura, apri brevemente le impostazioni del telefono e verifica se anche le etichette sono poco luminose. Mantieni simile l'illuminazione della stanza. Una scena scura con menu normalmente leggibili è diversa da uno schermo poco luminoso in più applicazioni. Nessuna osservazione identifica da sola un problema di rete, un abbonamento difettoso o uno specifico formato video."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa i controlli documentati per il telefono",
+          "paragraphs": [
+            "Google documenta Livello di luminosità e Luminosità adattiva in Display e tocco sui Pixel. La luminosità adattiva segue la luce circostante e impara le preferenze nel tempo; il livello può essere modificato anche quando è attiva. Annota l'impostazione prima di un piccolo cambiamento a un livello confortevole. Altri produttori Android possono usare menu differenti. Non presumere che il controllo immagine del lettore e il cursore dello schermo del telefono siano la stessa impostazione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: gestire lo schermo di Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ripeti un confronto e descrivi il risultato",
+          "paragraphs": [
+            "Torna allo stesso passaggio e confronta nuovamente il menu senza cambiare luce o più controlli insieme. Evita di lasciare lo schermo al massimo soltanto per ottenere un'immagine diversa. Mantieni la preferenza originale se il cambiamento non aiuta. All'assistenza indica modello, versione Android, lettore e se appare scuro solo il video o anche il menu. La luminosità non ripristina un flusso indisponibile; escludi password e collegamenti privati alle playlist."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV helderheid: donkere telefoonmenu's of een donkere scène?",
+      "excerpt": "Lijkt het beeld op een Pixel te donker? Vergelijk de systeemmenu's voordat je van abonnement verandert of meerdere spelerinstellingen aanpast.",
+      "seo_title": "5G Live IPTV: helderheid op een Pixel controleren",
+      "seo_description": "Vergelijk de Pixel-schermhelderheid met een donkere scène bij 5G Live IPTV, houd de verlichting gelijk en noteer de oorspronkelijke instellingen.",
+      "sections": [
+        {
+          "heading": "Vergelijk het menu met het programma",
+          "paragraphs": [
+            "Begin een helderheidscontrole tijdens 5G Live IPTV bij het hele scherm. Lijkt een scène donker, open dan even de systeeminstellingen en bekijk of de tekst daar ook zwak verlicht is. Houd het omgevingslicht tijdens de vergelijking ongeveer gelijk. Een donkere scène met normaal leesbare menu's is iets anders dan een gedimd scherm in meerdere apps. Geen van beide waarnemingen bewijst op zichzelf een netwerkprobleem, een defect abonnement of een bepaald videoformaat."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de beschreven bediening voor jouw telefoon",
+          "paragraphs": [
+            "Google beschrijft Helderheidsniveau en Adaptieve helderheid onder Scherm en aanraken op Pixel-telefoons. Adaptieve helderheid past het scherm aan het omgevingslicht aan en leert na verloop van tijd voorkeuren; het helderheidsniveau blijft aanpasbaar terwijl de functie actief is. Noteer de huidige instelling voor één kleine, comfortabele aanpassing. Andere Android-fabrikanten kunnen andere menu's gebruiken. Ga er niet van uit dat een beeldregeling in de speler dezelfde instelling is als de schuifregelaar van de telefoon."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: scherminstellingen van Pixel beheren",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Herhaal één vergelijking en beschrijf het resultaat",
+          "paragraphs": [
+            "Ga terug naar hetzelfde fragment en vergelijk het systeemmenu opnieuw, zonder het licht of meerdere instellingen tegelijk te veranderen. Laat het scherm niet op maximaal staan alleen om een ander beeld te krijgen. Bewaar de oorspronkelijke voorkeur als aanpassen niet helpt. Geef ondersteuning het model, de Android-versie, de speler en of alleen video of ook menu's donker lijken. Helderheid herstelt geen ontbrekende stream; deel geen wachtwoorden of privéafspeellijstlinks."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Brilho no 5G Live IPTV: menus escuros ou uma cena pouco iluminada?",
+      "excerpt": "Se a imagem parece escura demais em um Pixel, compare os menus do sistema antes de trocar de plano ou alterar vários controles do reprodutor.",
+      "seo_title": "5G Live IPTV: verificar o brilho em um Pixel",
+      "seo_description": "Compare o brilho da tela Pixel com uma cena escura no 5G Live IPTV, mantendo a iluminação estável e anotando os ajustes originais.",
+      "sections": [
+        {
+          "heading": "Compare o menu com o programa",
+          "paragraphs": [
+            "Para verificar o brilho durante o 5G Live IPTV, observe primeiro a tela inteira. Se uma cena parece escura, abra brevemente os ajustes do telefone e veja se os rótulos também têm pouco brilho. Mantenha a iluminação do ambiente parecida durante a comparação. Uma cena escura com menus legíveis é diferente de uma tela escurecida em vários aplicativos. Nenhuma observação, sozinha, identifica um problema de rede, uma assinatura defeituosa ou um formato de vídeo específico."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use os controles documentados para seu telefone",
+          "paragraphs": [
+            "O Google documenta Nível de brilho e Brilho adaptável em Tela e toque nos Pixel. O brilho adaptável acompanha a luz ao redor e aprende preferências com o tempo; o nível ainda pode ser alterado enquanto ele está ativo. Anote o ajuste atual antes de uma pequena alteração em um nível confortável. Outros fabricantes Android podem usar menus diferentes. Não considere que um controle de imagem do reprodutor e o controle de brilho do telefone sejam a mesma configuração."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: gerenciar a tela do Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Repita uma comparação e descreva o resultado",
+          "paragraphs": [
+            "Volte ao mesmo trecho e compare novamente o menu sem mudar a luz do ambiente ou vários controles juntos. Evite deixar a tela no máximo apenas para obter uma imagem diferente. Preserve a preferência original se o ajuste não ajudar. Ao suporte informe modelo, versão Android, reprodutor e se apenas o vídeo ou também os menus parecem escuros. O brilho não recupera uma transmissão indisponível; não envie senhas nem links privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Яркость 5G Live IPTV: тусклые меню телефона или тёмная сцена?",
+      "excerpt": "Если изображение на Pixel кажется слишком тёмным, сравните системные меню, прежде чем менять тариф или несколько параметров проигрывателя.",
+      "seo_title": "5G Live IPTV: проверка яркости на телефоне Pixel",
+      "seo_description": "Сравните яркость экрана Pixel с тёмной сценой в 5G Live IPTV при одинаковом освещении, сохранив исходные настройки.",
+      "sections": [
+        {
+          "heading": "Сравните меню с программой",
+          "paragraphs": [
+            "Проверку яркости во время 5G Live IPTV начните со всего дисплея. Если сцена выглядит тёмной, ненадолго откройте настройки телефона и посмотрите, тусклые ли там надписи. Сравнивайте при примерно одинаковом освещении комнаты. Тёмная сцена с хорошо читаемыми меню отличается от тусклого экрана в нескольких приложениях. Ни одно наблюдение само по себе не указывает на сетевой сбой, неисправную подписку или определённый видеоформат."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте описанные для телефона регуляторы",
+          "paragraphs": [
+            "Google описывает уровень и адаптивную яркость в настройках экрана и касаний Pixel. Адаптивная яркость учитывает окружающий свет и со временем запоминает предпочтения; уровень можно менять и при включённой функции. Запишите исходное значение перед одной небольшой коррекцией до комфортного уровня. У других производителей Android названия меню могут отличаться. Не считайте регулировку изображения внутри проигрывателя и ползунок яркости телефона одной настройкой."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: настройки экрана Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Повторите одно сравнение и опишите результат",
+          "paragraphs": [
+            "Вернитесь к тому же фрагменту и снова сравните системное меню, не меняя освещение и несколько параметров одновременно. Не оставляйте максимум яркости только ради другого вида картинки. Сохраните исходное предпочтение, если изменение не помогает. Поддержке сообщите модель, версию Android, проигрыватель и тускнеет ли только видео или также меню. Яркость не восстановит недоступный поток; не отправляйте пароли и частные ссылки плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی چمک: فون کے مینو مدھم ہیں یا منظر تاریک ہے؟",
+      "excerpt": "Pixel پر تصویر بہت تاریک لگے تو پلان بدلنے یا پلیئر کے کئی کنٹرول چھیڑنے سے پہلے فون کے نظامی مینو سے موازنہ کریں۔",
+      "seo_title": "5G Live IPTV: Pixel فون پر اسکرین کی چمک جانچیں",
+      "seo_description": "5G Live IPTV کے تاریک منظر کا Pixel کی چمک سے موازنہ کریں، کمرے کی روشنی یکساں رکھیں اور اصل ترتیبات نوٹ کریں۔",
+      "sections": [
+        {
+          "heading": "مینو اور پروگرام کا موازنہ کریں",
+          "paragraphs": [
+            "5G Live IPTV کی چمک جانچتے وقت پہلے پوری اسکرین دیکھیں۔ منظر تاریک لگے تو مختصراً فون کی ترتیبات کھولیں اور دیکھیں کہ وہاں کے الفاظ بھی مدھم ہیں یا نہیں۔ موازنے میں کمرے کی روشنی تقریباً ایک جیسی رکھیں۔ صاف پڑھے جانے والے مینو کے ساتھ تاریک منظر اس صورت سے مختلف ہے جس میں کئی ایپس کی پوری اسکرین مدھم ہو۔ اکیلا کوئی مشاہدہ نیٹ ورک خرابی، خراب سبسکرپشن یا کسی خاص ویڈیو فارمیٹ کی شناخت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اپنے فون کے مستند کنٹرول استعمال کریں",
+          "paragraphs": [
+            "Google کی ہدایات میں Pixel پر چمک کی سطح اور خودکار موافق چمک ڈسپلے اور ٹچ کی ترتیبات میں ہیں۔ موافق چمک اردگرد کی روشنی کے مطابق اسکرین بدلتی اور وقت کے ساتھ ترجیحات سیکھتی ہے؛ فعال ہونے پر بھی سطح بدلی جا سکتی ہے۔ آرام دہ حد تک ایک چھوٹی تبدیلی سے پہلے موجودہ ترتیب لکھیں۔ دوسرے Android بنانے والوں کے مینو مختلف ہو سکتے ہیں۔ پلیئر کی اپنی تصویر کی ترتیب اور فون کی چمک کا سلائیڈر ایک ہی اختیار نہ سمجھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel اسکرین کی ترتیبات",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ایک موازنہ دہرائیں، پھر نتیجہ بتائیں",
+          "paragraphs": [
+            "اسی پروگرام کے حصے پر واپس جائیں اور روشنی یا کئی کنٹرول ایک ساتھ بدلے بغیر نظامی مینو سے دوبارہ موازنہ کریں۔ محض تصویر مختلف دکھانے کے لیے چمک زیادہ سے زیادہ پر نہ چھوڑیں۔ تبدیلی فائدہ نہ دے تو اصل ترجیح برقرار رکھیں۔ معاونت کو فون ماڈل، Android ورژن، پلیئر اور یہ بتائیں کہ صرف ویڈیو یا مینو بھی مدھم ہیں۔ چمک بدلنے سے غیر دستیاب اسٹریم بحال نہیں ہوتی؛ پاس ورڈ اور نجی پلے لسٹ روابط رپورٹ میں نہ دیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "سطوع 5G Live IPTV: قوائم الهاتف خافتة أم المشهد داكن؟",
+      "excerpt": "إذا بدت الصورة شديدة الظلام على Pixel، فقارن قوائم النظام قبل تغيير الباقة أو تعديل عدة عناصر في المشغّل.",
+      "seo_title": "5G Live IPTV: فحص السطوع على هاتف Pixel",
+      "seo_description": "قارن سطوع شاشة Pixel بمشهد داكن أثناء 5G Live IPTV، مع ثبات إضاءة الغرفة وتسجيل الإعدادات الأصلية.",
+      "sections": [
+        {
+          "heading": "قارن القائمة بالبرنامج",
+          "paragraphs": [
+            "ابدأ فحص السطوع أثناء 5G Live IPTV بالشاشة كاملة. إذا بدا مشهد داكنًا، فافتح إعدادات الهاتف قليلًا ولاحظ هل تبدو الكتابة فيها خافتة أيضًا. حافظ على إضاءة محيطة متقاربة أثناء المقارنة. فالمشهد الداكن مع قوائم مقروءة بصورة طبيعية يختلف عن شاشة خافتة عبر عدة تطبيقات. لا تكفي أي ملاحظة بمفردها لتحديد مشكلة في الشبكة أو خلل في الاشتراك أو تنسيق فيديو معين."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم عناصر التحكم الموثقة لهاتفك",
+          "paragraphs": [
+            "يوثّق Google مستوى السطوع والسطوع التكيّفي ضمن إعدادات الشاشة واللمس في Pixel. يضبط السطوع التكيّفي الشاشة بحسب الضوء المحيط ويتعلم التفضيلات بمرور الوقت؛ ويمكن تعديل المستوى مع بقائه مفعّلًا. سجّل الإعداد الحالي قبل تغيير صغير إلى مستوى مريح. قد تختلف القوائم لدى مصنّعي Android الآخرين. لا تفترض أن تحكم الصورة داخل المشغّل ومنزلق سطوع شاشة الهاتف هما الإعداد نفسه."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: إدارة إعدادات شاشة Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "كرّر مقارنة واحدة ثم صف النتيجة",
+          "paragraphs": [
+            "ارجع إلى المقطع نفسه وقارن قائمة النظام مجددًا دون تغيير الإضاءة أو عدة عناصر معًا. تجنّب ترك السطوع عند أقصاه لمجرد جعل الصورة مختلفة. احتفظ بالتفضيل الأصلي إذا لم يفد التعديل. أبلغ الدعم بطراز الهاتف وإصدار Android واسم المشغّل وهل يبدو الفيديو وحده خافتًا أم القوائم أيضًا. تعديل السطوع لا يعيد بثًا غير متاح؛ لا ترسل كلمات المرور أو روابط قوائم التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV की चमक: फ़ोन के मेन्यू मंद हैं या दृश्य अँधेरा है?",
+      "excerpt": "Pixel पर तस्वीर बहुत अँधेरी लगे तो प्लान बदलने या प्लेयर के कई नियंत्रण बदलने से पहले सिस्टम मेन्यू से तुलना करें।",
+      "seo_title": "5G Live IPTV: Pixel फ़ोन की चमक जाँचें",
+      "seo_description": "5G Live IPTV के अँधेरे दृश्य की Pixel की चमक से तुलना करें, कमरे की रोशनी स्थिर रखें और मूल सेटिंग लिखें।",
+      "sections": [
+        {
+          "heading": "मेन्यू और कार्यक्रम की तुलना करें",
+          "paragraphs": [
+            "5G Live IPTV की चमक जाँचते समय पूरी स्क्रीन से शुरुआत करें। कोई दृश्य अँधेरा लगे तो थोड़ी देर फ़ोन की सेटिंग खोलकर देखें कि वहाँ के अक्षर भी मंद हैं या नहीं। तुलना के दौरान कमरे की रोशनी लगभग समान रखें। सामान्य पढ़ने योग्य मेन्यू के साथ अँधेरा दृश्य, कई ऐप में पूरी स्क्रीन मंद होने से अलग अवलोकन है। इनमें से कोई बात अकेले नेटवर्क समस्या, खराब सदस्यता या किसी खास वीडियो फ़ॉर्मैट की पहचान नहीं करती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "अपने फ़ोन के दस्तावेज़ वाले नियंत्रण अपनाएँ",
+          "paragraphs": [
+            "Google के निर्देशों में Pixel पर चमक स्तर और अनुकूल चमक डिस्प्ले और टच सेटिंग में हैं। अनुकूल चमक आसपास की रोशनी के अनुसार स्क्रीन बदलती है और समय के साथ पसंद सीखती है; चालू होने पर भी स्तर बदला जा सकता है। आरामदायक स्तर पर छोटा बदलाव करने से पहले मौजूदा सेटिंग लिखें। दूसरे Android निर्माताओं के मेन्यू अलग हो सकते हैं। प्लेयर की तस्वीर का नियंत्रण और फ़ोन का चमक स्लाइडर एक ही सेटिंग न मानें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel की स्क्रीन सेटिंग",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "एक तुलना दोहराएँ और नतीजा बताएँ",
+          "paragraphs": [
+            "उसी कार्यक्रम अंश पर लौटकर कमरे की रोशनी या कई नियंत्रण साथ बदले बिना सिस्टम मेन्यू से फिर तुलना करें। सिर्फ तस्वीर अलग दिखाने के लिए स्क्रीन अधिकतम चमक पर न छोड़ें। बदलाव उपयोगी न हो तो मूल पसंद बनाए रखें। सहायता को फ़ोन मॉडल, Android संस्करण, प्लेयर और यह बताएँ कि केवल वीडियो या मेन्यू भी मंद दिखते हैं। चमक बदलने से अनुपलब्ध स्ट्रीम वापस नहीं आती; पासवर्ड और निजी प्लेलिस्ट लिंक रिपोर्ट में न दें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: manage screen and display settings on a Pixel phone",
+      "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+    }
+  ]
+}

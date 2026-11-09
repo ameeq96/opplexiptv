@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-09",
+  "topic": "Save a dated public IPTV Subscription plan print preview for comparison without treating a PDF as a reserved price, accepted quotation or payment receipt",
+  "primary_keyword": "IPTV Subscription plan printout",
+  "slug": "iptvsubscription-public-plan-printout-versus-order-proof",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription plan printout: comparison notes or order proof?",
+      "excerpt": "A dated copy of a public plan page can help you compare details later. Preview it carefully and keep it separate from payment receipts and private account documents.",
+      "seo_title": "IPTV Subscription plan printout: save the right context",
+      "seo_description": "Save a dated public plan comparison with provider, duration and currency visible. A printout does not reserve a price or prove payment.",
+      "sections": [
+        {
+          "heading": "Choose a public comparison page",
+          "paragraphs": [
+            "An IPTV Subscription plan printout is useful when you want to review an offer away from the browser. Start with the public plan page, not a private checkout or account screen. Note the viewing date, selected language, provider name and duration beside the displayed amount and currency. Opplex and Filex are separate plan choices; a similar duration does not make their terms interchangeable. Leave any unclear connection allowance as a question rather than filling in an assumed number."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspect the preview before saving",
+          "paragraphs": [
+            "In desktop Chrome, open Print from the menu or use Ctrl+P on Windows and Linux, or Command+P on Mac. Choose the destination, then inspect the preview. If saving a PDF, check that headings, amounts and relevant conditions appear together and that nothing important is cut off. Cancel if the preview includes private information. Print presentation can differ from the live page, so an incomplete copy needs the original page for context."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: printing a page",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Recheck before making a decision",
+          "paragraphs": [
+            "Keep the dated copy as a comparison note, not a quotation accepted by the seller, a price reservation or evidence of payment. Reopen the public page before ordering and confirm the actual provider, duration, currency and current terms. A player-app receipt is separate from a service order. If details differ, ask support about that specific difference without attaching credentials, private playlist addresses or an unredacted checkout document."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Copia de un plan de IPTV Subscription: ¿comparación o comprobante?",
+      "excerpt": "Una copia fechada de una página pública permite comparar detalles después. Revisa la vista previa y guárdala separada de recibos y documentos privados.",
+      "seo_title": "Imprimir un plan de IPTV Subscription con contexto",
+      "seo_description": "Guarda una comparación pública fechada con proveedor, duración y moneda. La copia no reserva el precio ni demuestra un pago.",
+      "sections": [
+        {
+          "heading": "Elige una página pública de comparación",
+          "paragraphs": [
+            "Imprimir un plan de IPTV Subscription resulta útil para revisar una oferta fuera del navegador. Empieza por la página pública del plan, no por una pantalla privada de pago o cuenta. Anota la fecha de consulta, el idioma, el proveedor y la duración junto al importe y la moneda mostrados. Opplex y Filex son opciones distintas: una duración parecida no hace que sus condiciones sean intercambiables. Si el límite de conexiones no está claro, déjalo como pregunta en vez de suponer una cifra."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa antes de guardar",
+          "paragraphs": [
+            "En Chrome para ordenador, abre Imprimir desde el menú o usa Ctrl+P en Windows y Linux, o Comando+P en Mac. Elige el destino y examina la vista previa. Si guardas un PDF, comprueba que títulos, importes y condiciones relevantes aparecen juntos y no quedan cortados. Cancela si se incluye información privada. La presentación impresa puede diferir de la página; una copia incompleta necesita el original para conservar el contexto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Chrome: imprimir una página",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba otra vez antes de decidir",
+          "paragraphs": [
+            "Conserva la copia fechada como nota comparativa, no como presupuesto aceptado por el vendedor, reserva de precio ni prueba de pago. Antes de comprar, vuelve a abrir la página y confirma proveedor, duración, moneda y condiciones actuales. El recibo de una aplicación reproductora es distinto del pedido del servicio. Si hay diferencias, pregunta al soporte por ese detalle sin adjuntar credenciales, direcciones privadas de listas o documentos de pago sin ocultar datos."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Imprimer un forfait IPTV Subscription : comparaison ou preuve de commande ?",
+      "excerpt": "Une copie datée d’une page publique aide à comparer les détails plus tard. Vérifiez l’aperçu et séparez-la des reçus et des documents privés.",
+      "seo_title": "Imprimer un forfait IPTV Subscription avec son contexte",
+      "seo_description": "Gardez une comparaison publique datée avec fournisseur, durée et devise. Cette copie ne réserve aucun tarif et ne prouve pas un paiement.",
+      "sections": [
+        {
+          "heading": "Choisir une page publique de comparaison",
+          "paragraphs": [
+            "Imprimer un forfait IPTV Subscription peut aider à examiner une offre hors du navigateur. Partez de la page publique du forfait, jamais d’un écran privé de paiement ou de compte. Notez la date de consultation, la langue choisie, le fournisseur et la durée à côté du montant et de la devise affichés. Opplex et Filex sont deux choix distincts : une durée similaire ne rend pas leurs conditions interchangeables. Si le nombre de connexions est incertain, gardez cette question ouverte au lieu de supposer une valeur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner l’aperçu avant l’enregistrement",
+          "paragraphs": [
+            "Dans Chrome sur ordinateur, ouvrez Imprimer dans le menu ou utilisez Ctrl+P sous Windows et Linux, ou Commande+P sur Mac. Choisissez la destination et examinez l’aperçu. Pour un PDF, vérifiez que titres, montants et conditions utiles restent ensemble sans être coupés. Annulez si des informations privées apparaissent. La présentation imprimée peut différer de la page en ligne ; une copie incomplète nécessite l’original pour comprendre son contexte."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Chrome : imprimer une page",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier de nouveau avant de décider",
+          "paragraphs": [
+            "Conservez cette copie datée comme note comparative, pas comme devis accepté par le vendeur, réservation de tarif ou preuve de paiement. Avant de commander, rouvrez la page publique et confirmez fournisseur, durée, devise et conditions actuelles. Le reçu d’une application de lecture reste distinct d’une commande de service. En cas de différence, interrogez le support sur ce point précis sans joindre d’identifiants, d’adresses privées de listes ou de document de paiement non masqué."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Stampa di un piano IPTV Subscription: confronto o prova d’ordine?",
+      "excerpt": "Una copia datata della pagina pubblica aiuta a confrontare i dettagli in seguito. Controlla l’anteprima e separala da ricevute e documenti privati.",
+      "seo_title": "Stampare un piano IPTV Subscription con il suo contesto",
+      "seo_description": "Salva un confronto pubblico datato con fornitore, durata e valuta. La stampa non blocca il prezzo e non dimostra un pagamento.",
+      "sections": [
+        {
+          "heading": "Scegli una pagina pubblica di confronto",
+          "paragraphs": [
+            "Stampare un piano di IPTV Subscription è utile per esaminare un’offerta lontano dal browser. Parti dalla pagina pubblica del piano, non da una schermata privata di pagamento o dell’account. Annota data di consultazione, lingua, fornitore e durata accanto all’importo e alla valuta indicati. Opplex e Filex sono scelte distinte: durate simili non rendono intercambiabili le condizioni. Se il limite delle connessioni non è chiaro, lascialo come domanda invece di inventare un numero."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l’anteprima prima di salvare",
+          "paragraphs": [
+            "In Chrome per computer apri Stampa dal menu oppure usa Ctrl+P su Windows e Linux, o Comando+P su Mac. Scegli la destinazione e controlla l’anteprima. Se salvi un PDF, verifica che titoli, importi e condizioni rilevanti siano insieme e non risultino tagliati. Annulla se compaiono informazioni private. La stampa può avere un aspetto diverso dalla pagina online; una copia incompleta richiede l’originale per mantenere il contesto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google Chrome: stampare una pagina",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ricontrolla prima di decidere",
+          "paragraphs": [
+            "Conserva la copia datata come appunto di confronto, non come preventivo accettato dal venditore, prenotazione del prezzo o prova di pagamento. Prima dell’ordine riapri la pagina pubblica e conferma fornitore, durata, valuta e condizioni attuali. La ricevuta di un’app di riproduzione è separata dall’ordine del servizio. Se noti differenze, chiedi assistenza su quel punto senza allegare credenziali, indirizzi privati di playlist o documenti di pagamento con dati non oscurati."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Een IPTV Subscription-plan afdrukken: vergelijking of bestelbewijs?",
+      "excerpt": "Een gedateerde kopie van een openbare planpagina helpt bij later vergelijken. Controleer het voorbeeld en bewaar deze los van betaalbewijzen en privédocumenten.",
+      "seo_title": "Een IPTV Subscription-plan met context afdrukken",
+      "seo_description": "Bewaar een gedateerde openbare vergelijking met aanbieder, looptijd en valuta. Een afdruk reserveert geen prijs en bewijst geen betaling.",
+      "sections": [
+        {
+          "heading": "Kies een openbare vergelijkingspagina",
+          "paragraphs": [
+            "Een afdruk van een IPTV Subscription-plan is handig om een aanbod buiten de browser te bekijken. Begin bij de openbare planpagina, niet bij een privéscherm voor afrekenen of je account. Noteer de bezoekdatum, gekozen taal, aanbieder en looptijd naast het getoonde bedrag en de valuta. Opplex en Filex zijn afzonderlijke keuzes: dezelfde looptijd maakt hun voorwaarden niet uitwisselbaar. Laat een onduidelijk maximumaantal verbindingen als vraag staan in plaats van zelf een aantal in te vullen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk het voorbeeld voordat je opslaat",
+          "paragraphs": [
+            "Open in Chrome op de computer Afdrukken via het menu, of gebruik Ctrl+P in Windows en Linux, of Command+P op een Mac. Kies de bestemming en controleer het voorbeeld. Sla je een PDF op, kijk dan of koppen, bedragen en belangrijke voorwaarden bij elkaar staan en niets is afgesneden. Annuleer wanneer privégegevens zichtbaar zijn. Een afdruk kan afwijken van de webpagina; bij een onvolledige kopie blijft het origineel nodig voor de context."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: een pagina afdrukken",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer opnieuw voordat je beslist",
+          "paragraphs": [
+            "Bewaar de gedateerde kopie als vergelijkingsnotitie, niet als geaccepteerde offerte, prijsreservering of betaalbewijs. Open vóór een bestelling de openbare pagina opnieuw en bevestig aanbieder, looptijd, valuta en actuele voorwaarden. Een ontvangstbewijs voor een spelerapp staat los van een bestelling van de dienst. Vraag ondersteuning naar een concreet verschil zonder inloggegevens, privéafspeellijstadressen of een onbewerkt afrekendocument mee te sturen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Imprimir um plano IPTV Subscription: comparação ou prova da encomenda?",
+      "excerpt": "Uma cópia datada da página pública ajuda a comparar detalhes depois. Confira a pré-visualização e mantenha-a separada de recibos e documentos privados.",
+      "seo_title": "Imprimir um plano IPTV Subscription com contexto",
+      "seo_description": "Guarde uma comparação pública datada com fornecedor, duração e moeda. A impressão não reserva um preço nem comprova pagamento.",
+      "sections": [
+        {
+          "heading": "Escolha uma página pública de comparação",
+          "paragraphs": [
+            "Imprimir um plano da IPTV Subscription pode ajudar a analisar uma oferta fora do navegador. Comece pela página pública do plano, nunca por uma tela privada de pagamento ou conta. Anote a data da consulta, o idioma escolhido, o fornecedor e a duração junto do valor e da moeda apresentados. Opplex e Filex são opções distintas: uma duração semelhante não torna as condições equivalentes. Se o limite de conexões não estiver claro, mantenha a dúvida em vez de pressupor um número."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira antes de guardar",
+          "paragraphs": [
+            "No Chrome para computador, abra Imprimir no menu ou use Ctrl+P no Windows e Linux, ou Command+P no Mac. Escolha o destino e confira a pré-visualização. Ao salvar um PDF, verifique se títulos, valores e condições relevantes aparecem juntos, sem cortes. Cancele se houver informações privadas. A impressão pode ser diferente da página ao vivo; uma cópia incompleta precisa do original para manter o contexto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Chrome: imprimir uma página",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique novamente antes de decidir",
+          "paragraphs": [
+            "Guarde a cópia datada como nota de comparação, não como orçamento aceite pelo vendedor, reserva de preço ou comprovativo de pagamento. Antes de encomendar, reabra a página pública e confirme fornecedor, duração, moeda e condições atuais. O recibo de uma aplicação reprodutora é separado do pedido do serviço. Se houver diferenças, pergunte ao suporte sobre aquele ponto sem anexar credenciais, endereços privados de listas ou documentos de pagamento sem ocultar dados."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Распечатка плана IPTV Subscription: сравнение или подтверждение заказа?",
+      "excerpt": "Копия открытой страницы с датой поможет позже сравнить условия. Проверьте предпросмотр и храните её отдельно от квитанций и личных документов.",
+      "seo_title": "Распечатка плана IPTV Subscription с контекстом",
+      "seo_description": "Сохраните открытое сравнение с датой, поставщиком, сроком и валютой. Распечатка не фиксирует цену и не подтверждает оплату.",
+      "sections": [
+        {
+          "heading": "Выберите открытую страницу сравнения",
+          "paragraphs": [
+            "Распечатка плана IPTV Subscription пригодится, чтобы изучить предложение вне браузера. Начните с открытой страницы плана, а не с личного экрана оплаты или аккаунта. Рядом с суммой и валютой запишите дату просмотра, выбранный язык, поставщика и срок. Opplex и Filex — разные варианты: одинаковый срок не означает взаимозаменяемые условия. Если число допустимых подключений неясно, оставьте этот вопрос открытым, не подставляя предполагаемую цифру."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте предпросмотр перед сохранением",
+          "paragraphs": [
+            "В Chrome на компьютере откройте печать через меню либо нажмите Ctrl+P в Windows и Linux или Command+P на Mac. Выберите назначение и изучите предпросмотр. При сохранении PDF убедитесь, что заголовки, суммы и важные условия видны вместе и ничего не обрезано. Отмените действие, если показаны личные сведения. Печатный вид может отличаться от страницы в интернете; неполной копии нужен оригинал для понимания контекста."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Chrome: печать страницы",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сверьте сведения перед решением",
+          "paragraphs": [
+            "Храните датированную копию как заметку для сравнения, а не как принятый продавцом расчёт, бронирование цены или доказательство оплаты. Перед заказом снова откройте страницу и подтвердите поставщика, срок, валюту и текущие условия. Квитанция за приложение-плеер отделена от заказа услуги. При расхождениях задайте поддержке конкретный вопрос, не прикладывая учётные данные, частные адреса списков воспроизведения или платёжный документ с незакрытыми личными данными."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription پلان کی پرنٹ کاپی: موازنہ یا آرڈر کا ثبوت؟",
+      "excerpt": "عوامی پلان صفحے کی تاریخ والی کاپی بعد میں موازنہ کرنے میں مدد دے سکتی ہے۔ پیش منظر دیکھیں اور اسے رسیدوں اور نجی کاغذات سے الگ رکھیں۔",
+      "seo_title": "IPTV Subscription پلان کو سیاق کے ساتھ پرنٹ کریں",
+      "seo_description": "فراہم کنندہ، مدت، کرنسی اور تاریخ کے ساتھ عوامی موازنہ محفوظ کریں۔ پرنٹ کاپی قیمت محفوظ کرنے یا ادائیگی ہونے کا ثبوت نہیں۔",
+      "sections": [
+        {
+          "heading": "موازنے کے لیے عوامی صفحہ منتخب کریں",
+          "paragraphs": [
+            "IPTV Subscription پلان کی پرنٹ کاپی اس وقت مفید ہے جب آپ براؤزر سے ہٹ کر پیشکش دیکھنا چاہیں۔ عوامی پلان صفحے سے شروع کریں، نجی ادائیگی یا اکاؤنٹ اسکرین سے نہیں۔ دکھائی گئی رقم اور کرنسی کے ساتھ دیکھنے کی تاریخ، منتخب زبان، فراہم کنندہ اور مدت لکھیں۔ Opplex اور Filex الگ انتخاب ہیں؛ ایک جیسی مدت ان کی شرائط کو ایک جیسا نہیں بناتی۔ کنکشن کی اجازت واضح نہ ہو تو اپنی طرف سے تعداد لکھنے کے بجائے اسے سوال رہنے دیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "محفوظ کرنے سے پہلے پیش منظر دیکھیں",
+          "paragraphs": [
+            "کمپیوٹر پر Chrome کے مینو سے پرنٹ کھولیں، یا Windows اور Linux میں Ctrl+P اور Mac میں Command+P دبائیں۔ منزل منتخب کرکے پیش منظر دیکھیں۔ PDF محفوظ کرتے وقت دیکھیں کہ عنوان، رقم اور متعلقہ شرائط ایک ساتھ نظر آ رہی ہیں اور کوئی ضروری حصہ کٹا نہیں۔ نجی معلومات شامل ہوں تو منسوخ کر دیں۔ پرنٹ کی شکل اصل ویب صفحے سے مختلف ہو سکتی ہے؛ نامکمل کاپی کا مطلب سمجھنے کے لیے اصل صفحہ ضروری ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome رہنمائی: صفحہ پرنٹ کرنا",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "فیصلہ کرنے سے پہلے دوبارہ تصدیق کریں",
+          "paragraphs": [
+            "تاریخ والی کاپی موازنے کی یادداشت ہے، فروخت کنندہ کی منظور شدہ پیشکش، قیمت کی بکنگ یا ادائیگی کا ثبوت نہیں۔ آرڈر سے پہلے عوامی صفحہ دوبارہ کھول کر فراہم کنندہ، مدت، کرنسی اور موجودہ شرائط کی تصدیق کریں۔ پلیئر ایپ کی رسید سروس کے آرڈر سے الگ ہوتی ہے۔ فرق ہو تو سپورٹ سے اسی مخصوص بات کے بارے میں پوچھیں؛ لاگ اِن تفصیلات، نجی پلے لسٹ پتے یا ذاتی معلومات والی غیر ترمیم شدہ ادائیگی دستاویز ساتھ نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "نسخة مطبوعة لخطة IPTV Subscription: مقارنة أم إثبات طلب؟",
+      "excerpt": "تساعد نسخة مؤرخة من صفحة الخطة العامة على مقارنة التفاصيل لاحقاً. افحص المعاينة واحتفظ بها منفصلة عن الإيصالات والمستندات الخاصة.",
+      "seo_title": "طباعة خطة IPTV Subscription مع سياقها",
+      "seo_description": "احفظ مقارنة عامة مؤرخة يظهر فيها المزود والمدة والعملة. النسخة المطبوعة لا تحجز السعر ولا تثبت الدفع.",
+      "sections": [
+        {
+          "heading": "اختر صفحة مقارنة عامة",
+          "paragraphs": [
+            "تفيد طباعة خطة IPTV Subscription عند مراجعة عرض بعيداً عن المتصفح. ابدأ بصفحة الخطة العامة، لا بشاشة دفع أو حساب خاصة. دوّن تاريخ الاطلاع واللغة المختارة واسم المزود والمدة بجوار المبلغ والعملة المعروضين. Opplex وFilex خياران منفصلان؛ تشابه المدة لا يجعل شروطهما قابلة للتبادل. إذا كان عدد الاتصالات المسموح بها غير واضح، اتركه سؤالاً بدلاً من افتراض رقم من عندك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص المعاينة قبل الحفظ",
+          "paragraphs": [
+            "في Chrome على الكمبيوتر افتح الطباعة من القائمة، أو استخدم Ctrl+P في Windows وLinux أو Command+P على Mac. اختر الوجهة ثم افحص المعاينة. عند حفظ ملف PDF، تحقق من ظهور العناوين والمبالغ والشروط المهمة معاً دون اقتطاع. ألغِ العملية إذا ظهرت معلومات خاصة. قد يختلف شكل الطباعة عن الصفحة المباشرة؛ والنسخة الناقصة تحتاج إلى الأصل لفهم السياق."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Chrome: طباعة صفحة",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تحقق مجدداً قبل اتخاذ القرار",
+          "paragraphs": [
+            "احتفظ بالنسخة المؤرخة كملاحظة للمقارنة، لا كعرض وافق عليه البائع أو حجز للسعر أو دليل على الدفع. قبل الطلب أعد فتح الصفحة العامة وأكد المزود والمدة والعملة والشروط الحالية. إيصال شراء تطبيق المشغل منفصل عن طلب الخدمة. عند وجود اختلاف، اسأل الدعم عن النقطة المحددة دون إرفاق بيانات دخول أو عناوين قوائم تشغيل خاصة أو مستند دفع لم تُحجب بياناته الشخصية."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription प्लान की प्रिंट कॉपी: तुलना या ऑर्डर का प्रमाण?",
+      "excerpt": "सार्वजनिक प्लान पेज की तारीख वाली कॉपी बाद में विवरण की तुलना में मदद करती है। पूर्वावलोकन जाँचें और इसे रसीदों व निजी दस्तावेज़ों से अलग रखें।",
+      "seo_title": "IPTV Subscription प्लान को संदर्भ सहित प्रिंट करें",
+      "seo_description": "प्रदाता, अवधि, मुद्रा और तारीख वाली सार्वजनिक तुलना सहेजें। प्रिंट कॉपी कीमत आरक्षित करने या भुगतान होने का प्रमाण नहीं है।",
+      "sections": [
+        {
+          "heading": "तुलना के लिए सार्वजनिक पेज चुनें",
+          "paragraphs": [
+            "IPTV Subscription प्लान की प्रिंट कॉपी तब उपयोगी है जब आप ब्राउज़र से अलग किसी ऑफर को देखना चाहें। सार्वजनिक प्लान पेज से शुरू करें, निजी भुगतान या खाते की स्क्रीन से नहीं। दिखाई गई राशि और मुद्रा के साथ देखने की तारीख, चुनी गई भाषा, प्रदाता और अवधि लिखें। Opplex और Filex अलग विकल्प हैं; समान अवधि से उनकी शर्तें एक जैसी नहीं हो जातीं। कनेक्शन सीमा स्पष्ट न हो तो खुद संख्या मानने के बजाय उसे सवाल के रूप में रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सहेजने से पहले पूर्वावलोकन देखें",
+          "paragraphs": [
+            "कंप्यूटर पर Chrome के मेन्यू से प्रिंट खोलें, या Windows और Linux में Ctrl+P तथा Mac पर Command+P दबाएँ। गंतव्य चुनकर पूर्वावलोकन जाँचें। PDF सहेजते समय देखें कि शीर्षक, राशियाँ और जरूरी शर्तें साथ दिख रही हैं और कोई महत्वपूर्ण हिस्सा कटा नहीं है। निजी जानकारी दिखे तो रद्द करें। प्रिंट का रूप लाइव पेज से अलग हो सकता है; अधूरी कॉपी का संदर्भ समझने के लिए मूल पेज जरूरी है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome सहायता: पेज प्रिंट करना",
+              "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "फैसला करने से पहले फिर जाँचें",
+          "paragraphs": [
+            "तारीख वाली कॉपी को तुलना का नोट मानें, विक्रेता का स्वीकार किया हुआ प्रस्ताव, कीमत का आरक्षण या भुगतान का प्रमाण नहीं। ऑर्डर से पहले सार्वजनिक पेज दोबारा खोलकर प्रदाता, अवधि, मुद्रा और मौजूदा शर्तें पक्की करें। प्लेयर ऐप की रसीद सेवा के ऑर्डर से अलग है। अंतर हो तो सहायता से उसी बिंदु पर पूछें; लॉगिन जानकारी, निजी प्लेलिस्ट पते या बिना निजी विवरण छिपाए भुगतान दस्तावेज़ न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: Print from Chrome",
+      "url": "https://support.google.com/chrome/answer/1069693?hl=en"
+    }
+  ]
+}

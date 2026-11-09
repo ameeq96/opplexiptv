@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-09",
+  "topic": "Apple TV Match Content format transitions: distinguish a brief blank screen at playback start or stop from persistent picture loss during Geo IPTV",
+  "primary_keyword": "Geo IPTV brief black screen",
+  "slug": "geo-apple-tv-match-content-brief-blank-transition",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV brief black screen: is Apple TV changing formats?",
+      "excerpt": "If the display goes blank only when a programme starts or stops, check Apple TV’s content-matching settings separately from a picture that never returns.",
+      "seo_title": "Geo IPTV brief black screen at playback changes",
+      "seo_description": "Check Apple TV content matching when Geo IPTV briefly goes blank at playback changes, and record persistent picture loss separately.",
+      "sections": [
+        {
+          "heading": "Note when the picture disappears",
+          "paragraphs": [
+            "A Geo IPTV brief black screen check is more useful when you record its timing. Does the television go blank as playback begins, then show the programme normally? Does it happen again when you return to the menu? Compare that with a screen that stays blank during playback or also loses the Apple TV Home Screen. These are different observations. Keep the same television input while checking rather than changing several cables or player settings together."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspect content matching before changing it",
+          "paragraphs": [
+            "Apple documents Match Content under Settings, Video and Audio. Match Dynamic Range lets supported Apple TV hardware match the content’s original dynamic range; Match Frame Rate matches its frame rate. Apple notes that a television may briefly blank or flicker when switching formats. Record which options are already enabled and your Apple TV model. This explanation is a possibility for a transition, not proof that every black screen is harmless."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: match dynamic range and frame rate",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a useful account of the result",
+          "paragraphs": [
+            "If viewing resumes normally, note the transition and approximate duration without calling it a network outage. If the picture does not return, or disappears at unrelated times, describe that separately for support and consult the television’s documentation. Avoid repeatedly toggling display formats as a general subscription fix. Include the player name, Apple TV model, connected display and whether menus remain visible. Keep account passwords and private playlist addresses out of your report."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pantalla negra breve en Geo IPTV: ¿Apple TV cambia de formato?",
+      "excerpt": "Si la pantalla se queda negra solo al iniciar o detener un programa, revisa la coincidencia de contenido de Apple TV por separado de una pérdida persistente de imagen.",
+      "seo_title": "Geo IPTV: pantalla negra breve al cambiar la reproducción",
+      "seo_description": "Revisa la coincidencia de contenido de Apple TV si Geo IPTV queda brevemente en negro al iniciar o detener la reproducción.",
+      "sections": [
+        {
+          "heading": "Anota cuándo desaparece la imagen",
+          "paragraphs": [
+            "La comprobación de una pantalla negra breve con Geo IPTV resulta más útil si registras el momento. ¿El televisor se queda negro al comenzar y después muestra el programa con normalidad? ¿Ocurre otra vez al volver al menú? Compáralo con una pantalla que permanece negra durante la reproducción o que tampoco muestra el inicio de Apple TV. Son observaciones distintas. Mantén la misma entrada del televisor y evita cambiar varios cables o ajustes a la vez."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la coincidencia antes de modificarla",
+          "paragraphs": [
+            "Apple documenta Ajustar al contenido en Ajustes, Vídeo y audio. Ajustar rango dinámico permite que los equipos compatibles adapten la salida al rango original del contenido; Ajustar frecuencia de fotogramas adapta su frecuencia. Apple advierte que el televisor puede quedarse brevemente negro o parpadear al cambiar de formato. Anota las opciones activadas y el modelo de Apple TV. Es una posible explicación de una transición, no una prueba de que toda pantalla negra sea inocua."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: ajustar rango dinámico y frecuencia",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Describe el resultado de forma útil",
+          "paragraphs": [
+            "Si la imagen vuelve con normalidad, registra la transición y su duración aproximada sin llamarla caída de red. Si no vuelve o desaparece en otros momentos, comunícalo por separado al soporte y consulta la documentación del televisor. No actives y desactives formatos repetidamente como remedio general del abono. Incluye el reproductor, el modelo de Apple TV, la pantalla conectada y si los menús siguen visibles. No adjuntes contraseñas ni direcciones privadas de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écran noir bref sur Geo IPTV : Apple TV change-t-il de format ?",
+      "excerpt": "Si l'écran devient noir uniquement au début ou à la fin d'un programme, examinez l'adaptation au contenu d'Apple TV séparément d'une perte d'image durable.",
+      "seo_title": "Geo IPTV : écran noir bref aux transitions de lecture",
+      "seo_description": "Vérifiez l’adaptation au contenu d’Apple TV lors d’un écran noir bref sur Geo IPTV, puis décrivez séparément toute perte d’image persistante.",
+      "sections": [
+        {
+          "heading": "Noter le moment où l'image disparaît",
+          "paragraphs": [
+            "Pour examiner un écran noir bref pendant Geo IPTV, commencez par son moment d'apparition. Le téléviseur devient-il noir au lancement avant d'afficher normalement le programme ? Cela se reproduit-il en revenant au menu ? Distinguez ce cas d'un écran qui reste noir pendant la lecture ou ne montre plus l'accueil d'Apple TV. Ces observations sont différentes. Gardez la même entrée du téléviseur au lieu de modifier plusieurs câbles ou réglages simultanément."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner l'adaptation avant de la modifier",
+          "paragraphs": [
+            "Apple décrit Adapter au contenu dans Réglages, Vidéo et audio. Adapter à la plage dynamique ajuste la sortie des appareils compatibles à la plage d'origine du contenu ; Adapter à la fréquence d'images ajuste sa cadence. Apple précise qu'un écran noir ou un scintillement bref peut accompagner un changement de format. Notez les options déjà activées et le modèle d'Apple TV. Cette explication possible d'une transition ne prouve pas que tout écran noir soit anodin."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : adapter la plage et la fréquence",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Conserver un compte rendu précis",
+          "paragraphs": [
+            "Si l'image revient normalement, notez la transition et sa durée approximative sans parler de panne réseau. Sinon, ou si elle disparaît à d'autres moments, décrivez ce symptôme séparément au support et consultez la documentation du téléviseur. Ne basculez pas sans cesse les formats comme remède général à l'abonnement. Indiquez le lecteur, le modèle d'Apple TV, l'écran connecté et la visibilité des menus. Excluez mots de passe et adresses privées de listes."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Schermo nero breve su Geo IPTV: Apple TV cambia formato?",
+      "excerpt": "Se lo schermo diventa nero soltanto all'avvio o all'arresto del programma, controlla l'adattamento al contenuto di Apple TV separatamente da una perdita d'immagine persistente.",
+      "seo_title": "Geo IPTV: schermo nero breve nei cambi di riproduzione",
+      "seo_description": "Controlla l’adattamento al contenuto di Apple TV quando Geo IPTV diventa brevemente nero e descrivi separatamente la perdita d’immagine persistente.",
+      "sections": [
+        {
+          "heading": "Annota quando scompare l'immagine",
+          "paragraphs": [
+            "Per valutare uno schermo nero breve durante Geo IPTV, registra prima il momento. Il televisore diventa nero all'avvio e poi mostra normalmente il programma? Succede di nuovo tornando al menu? Confronta questo comportamento con uno schermo che rimane nero durante la riproduzione o che non mostra neppure la schermata iniziale di Apple TV. Sono osservazioni diverse. Mantieni lo stesso ingresso del televisore senza cambiare contemporaneamente più cavi o impostazioni del lettore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l'adattamento prima di modificarlo",
+          "paragraphs": [
+            "Apple documenta Adatta al contenuto in Impostazioni, Video e audio. Adatta all'intervallo dinamico consente ai dispositivi compatibili di usare l'intervallo originale del contenuto; Adatta alla frequenza dei fotogrammi ne adatta la cadenza. Apple segnala che il televisore può diventare brevemente nero o sfarfallare durante il cambio di formato. Annota le opzioni già attive e il modello di Apple TV. È una spiegazione possibile della transizione, non la prova che ogni schermo nero sia innocuo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: adattare intervallo e frequenza",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva una descrizione utile",
+          "paragraphs": [
+            "Se l'immagine ritorna normalmente, annota la transizione e la durata approssimativa senza chiamarla interruzione di rete. Se non ritorna o scompare in altri momenti, descrivi separatamente il problema all'assistenza e consulta la documentazione del televisore. Evita di alternare continuamente i formati come rimedio generale all'abbonamento. Indica lettore, modello di Apple TV, schermo collegato e visibilità dei menu. Non includere password o indirizzi privati delle playlist."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV kort zwart beeld: wisselt Apple TV van formaat?",
+      "excerpt": "Wordt het beeld alleen bij het starten of stoppen van een programma zwart? Bekijk dan de inhoudsafstemming van Apple TV apart van blijvend beeldverlies.",
+      "seo_title": "Geo IPTV: kort zwart beeld bij afspeelovergangen",
+      "seo_description": "Controleer inhoudsafstemming op Apple TV bij kort zwart beeld tijdens Geo IPTV en beschrijf blijvend beeldverlies afzonderlijk.",
+      "sections": [
+        {
+          "heading": "Noteer wanneer het beeld verdwijnt",
+          "paragraphs": [
+            "Een controle van kort zwart beeld bij Geo IPTV begint met het moment waarop het gebeurt. Wordt de televisie zwart zodra de weergave begint en verschijnt het programma daarna normaal? Gebeurt het weer wanneer je naar het menu teruggaat? Vergelijk dit met een scherm dat tijdens het afspelen zwart blijft of ook het beginscherm van Apple TV niet toont. Dat zijn verschillende waarnemingen. Houd dezelfde televisie-ingang aan en wijzig niet tegelijk meerdere kabels of spelerinstellingen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de afstemming voordat je iets wijzigt",
+          "paragraphs": [
+            "Apple beschrijft Match materiaal onder Instellingen, Video en audio. Met de instelling voor dynamisch bereik kan geschikte Apple TV-hardware de uitvoer aan het oorspronkelijke bereik aanpassen; de beeldsnelheidsoptie stemt de uitvoer op de oorspronkelijke beeldsnelheid af. Apple meldt dat het scherm bij een formaatwisseling kort zwart kan worden of flikkeren. Noteer welke opties al aanstaan en welk model je hebt. Dit is een mogelijke verklaring voor een overgang, geen bewijs dat elk zwart scherm onschuldig is."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: dynamisch bereik en beeldsnelheid afstemmen",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Maak een bruikbare beschrijving",
+          "paragraphs": [
+            "Komt het beeld normaal terug, noteer dan de overgang en geschatte duur zonder dit een netwerkstoring te noemen. Blijft het weg of verdwijnt het op andere momenten, beschrijf dat apart voor ondersteuning en raadpleeg de handleiding van je televisie. Wissel niet steeds van formaat als algemene abonnementsoplossing. Vermeld speler, Apple TV-model, aangesloten scherm en of menu's zichtbaar blijven. Laat wachtwoorden en privéafspeellijstadressen weg."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Tela preta breve no Geo IPTV: a Apple TV está mudando o formato?",
+      "excerpt": "Se a tela fica preta apenas ao iniciar ou parar um programa, confira a correspondência de conteúdo da Apple TV separadamente de uma perda contínua de imagem.",
+      "seo_title": "Geo IPTV: tela preta breve nas transições de reprodução",
+      "seo_description": "Confira a correspondência de conteúdo da Apple TV quando o Geo IPTV fica brevemente sem imagem e registre perdas persistentes separadamente.",
+      "sections": [
+        {
+          "heading": "Anote quando a imagem desaparece",
+          "paragraphs": [
+            "Para verificar uma tela preta breve durante o Geo IPTV, registre primeiro o momento. A televisão fica preta ao iniciar e depois mostra o programa normalmente? Isso ocorre novamente ao voltar ao menu? Compare com uma tela que permanece preta durante a reprodução ou que também não mostra o início da Apple TV. São observações diferentes. Mantenha a mesma entrada da televisão em vez de trocar vários cabos ou ajustes do reprodutor ao mesmo tempo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a correspondência antes de alterá-la",
+          "paragraphs": [
+            "A Apple documenta Corresponder ao Conteúdo em Ajustes, Vídeo e Áudio. A correspondência de intervalo dinâmico permite que aparelhos compatíveis adaptem a saída ao intervalo original; a correspondência de taxa de quadros adapta sua cadência. A Apple informa que a televisão pode ficar brevemente preta ou piscar ao mudar de formato. Anote as opções já ativadas e o modelo da Apple TV. É uma explicação possível para uma transição, não uma prova de que toda tela preta seja inofensiva."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: corresponder intervalo e taxa de quadros",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Guarde um relato útil do resultado",
+          "paragraphs": [
+            "Se a imagem volta normalmente, anote a transição e a duração aproximada sem chamá-la de falha de rede. Se não volta ou desaparece em outros momentos, descreva esse sintoma separadamente ao suporte e consulte a documentação da televisão. Evite alternar formatos repetidamente como solução geral da assinatura. Informe o reprodutor, o modelo da Apple TV, a tela conectada e se os menus continuam visíveis. Não inclua senhas nem endereços privados de listas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Краткий чёрный экран Geo IPTV: Apple TV меняет формат?",
+      "excerpt": "Если экран темнеет только в начале или конце просмотра, отдельно проверьте согласование контента Apple TV и постоянную потерю изображения.",
+      "seo_title": "Geo IPTV: краткий чёрный экран при начале просмотра",
+      "seo_description": "Проверьте согласование контента Apple TV при кратком чёрном экране Geo IPTV и отдельно опишите постоянную потерю изображения.",
+      "sections": [
+        {
+          "heading": "Запишите момент исчезновения изображения",
+          "paragraphs": [
+            "Проверку краткого чёрного экрана при просмотре Geo IPTV начните со времени его появления. Телевизор темнеет при запуске, а затем нормально показывает программу? Повторяется ли это при возврате в меню? Сравните с экраном, который остаётся чёрным во время просмотра или не показывает даже главный экран Apple TV. Это разные наблюдения. Сохраните тот же вход телевизора и не меняйте одновременно несколько кабелей и параметров проигрывателя."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Изучите согласование перед изменением",
+          "paragraphs": [
+            "Apple описывает согласование контента в настройках видео и аудио. Согласование динамического диапазона позволяет совместимым устройствам Apple TV подстраивать выход под исходный диапазон материала; согласование частоты кадров меняет соответствующую частоту. Apple предупреждает о возможном кратком потемнении или мерцании при переключении форматов. Запишите включённые параметры и модель Apple TV. Это возможное объяснение перехода, а не доказательство безвредности любого чёрного экрана."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: согласование диапазона и частоты кадров",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "Сохраните полезное описание результата",
+          "paragraphs": [
+            "Если изображение нормально возвращается, отметьте переход и примерную длительность, не называя это сбоем сети. Если оно не возвращается или исчезает в другое время, отдельно опишите симптом поддержке и изучите документацию телевизора. Не переключайте форматы многократно как универсальное исправление подписки. Укажите проигрыватель, модель Apple TV, подключённый экран и видны ли меню. Не передавайте пароли и частные адреса плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV میں لمحاتی سیاہ اسکرین: کیا Apple TV فارمیٹ بدل رہا ہے؟",
+      "excerpt": "اگر پروگرام شروع یا بند ہونے پر ہی تصویر غائب ہوتی ہے تو Apple TV کی مواد سے مطابقت کی ترتیب کو مسلسل غائب رہنے والی تصویر سے الگ جانچیں۔",
+      "seo_title": "Geo IPTV: پلے بیک بدلتے وقت لمحاتی سیاہ اسکرین",
+      "seo_description": "Geo IPTV کی لمحاتی سیاہ اسکرین پر Apple TV کی مواد سے مطابقت دیکھیں اور مسلسل تصویر غائب رہنے کی کیفیت الگ درج کریں۔",
+      "sections": [
+        {
+          "heading": "تصویر غائب ہونے کا وقت نوٹ کریں",
+          "paragraphs": [
+            "Geo IPTV میں لمحاتی سیاہ اسکرین کی جانچ میں وقت اہم ہے۔ کیا پروگرام شروع ہوتے ہی ٹی وی سیاہ ہوتا ہے اور پھر معمول کے مطابق تصویر آ جاتی ہے؟ کیا مینو پر واپسی کے وقت بھی ایسا ہوتا ہے؟ اسے اس صورت سے الگ سمجھیں جس میں پلے بیک کے دوران اسکرین سیاہ رہتی ہے یا Apple TV کی مرکزی اسکرین بھی دکھائی نہیں دیتی۔ یہ مختلف مشاہدات ہیں۔ جانچ کے دوران ٹی وی کا وہی ان پٹ رکھیں اور کئی کیبل یا پلیئر ترتیبات ایک ساتھ نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تبدیلی سے پہلے مواد کی مطابقت دیکھیں",
+          "paragraphs": [
+            "Apple کی ہدایات میں مواد سے مطابقت کا اختیار ترتیبات کے ویڈیو اور آڈیو حصے میں ہے۔ ڈائنامک رینج کی مطابقت معاون Apple TV پر مواد کی اصل رینج کے مطابق آؤٹ پٹ رکھتی ہے؛ فریم ریٹ کی مطابقت اصل فریم رفتار کے مطابق کرتی ہے۔ Apple کے مطابق فارمیٹ بدلتے وقت ٹی وی لمحاتی سیاہ یا جھلملاتا ہو سکتا ہے۔ پہلے سے فعال اختیارات اور Apple TV ماڈل لکھیں۔ یہ صرف منتقلی کی ممکنہ وضاحت ہے، ہر سیاہ اسکرین کے بے ضرر ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: ڈائنامک رینج اور فریم ریٹ کی مطابقت",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "نتیجے کی مفید تفصیل محفوظ رکھیں",
+          "paragraphs": [
+            "اگر تصویر معمول کے مطابق لوٹ آتی ہے تو منتقلی اور اندازاً دورانیہ نوٹ کریں، اسے نیٹ ورک بندش نہ کہیں۔ تصویر واپس نہ آئے یا دوسرے مواقع پر غائب ہو تو معاونت کو یہ کیفیت الگ بتائیں اور ٹی وی کی دستاویزات دیکھیں۔ سبسکرپشن کی عمومی مرمت سمجھ کر فارمیٹ بار بار نہ بدلیں۔ پلیئر کا نام، Apple TV ماڈل، منسلک اسکرین اور مینو دکھائی دینے کی حالت بتائیں۔ پاس ورڈ اور نجی پلے لسٹ پتے رپورٹ میں شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "شاشة سوداء للحظة في Geo IPTV: هل يغيّر Apple TV التنسيق؟",
+      "excerpt": "إذا غابت الصورة عند بدء البرنامج أو إيقافه فقط، فافحص مطابقة المحتوى في Apple TV بشكل منفصل عن فقدان الصورة المستمر.",
+      "seo_title": "Geo IPTV: شاشة سوداء قصيرة عند انتقالات التشغيل",
+      "seo_description": "افحص مطابقة المحتوى في Apple TV عند ظهور شاشة سوداء قصيرة مع Geo IPTV، وسجّل فقدان الصورة المستمر بصورة منفصلة.",
+      "sections": [
+        {
+          "heading": "سجّل وقت اختفاء الصورة",
+          "paragraphs": [
+            "تبدأ مراجعة الشاشة السوداء القصيرة أثناء Geo IPTV بتحديد توقيتها. هل تصبح الشاشة سوداء عند البدء ثم يعرض التلفاز البرنامج بصورة طبيعية؟ هل يتكرر ذلك عند العودة إلى القائمة؟ قارن هذا بشاشة تبقى سوداء أثناء التشغيل أو لا تعرض حتى الشاشة الرئيسية لـ Apple TV. هذه ملاحظات مختلفة. أبقِ مدخل التلفاز نفسه أثناء المقارنة، ولا تغيّر عدة كابلات أو إعدادات للمشغّل معًا."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص مطابقة المحتوى قبل تعديلها",
+          "paragraphs": [
+            "توضح Apple إعداد مطابقة المحتوى ضمن الإعدادات، الفيديو والصوت. تسمح مطابقة النطاق الديناميكي لأجهزة Apple TV المتوافقة بضبط الخرج وفق النطاق الأصلي للمادة؛ وتطابق مطابقة معدل الإطارات معدلها الأصلي. وتذكر Apple احتمال ظهور سواد أو وميض قصير عند تبديل التنسيقات. سجّل الخيارات المفعلة أصلًا وطراز Apple TV. هذا تفسير محتمل للانتقال، وليس إثباتًا أن كل شاشة سوداء أمر غير مؤذٍ."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: مطابقة النطاق ومعدل الإطارات",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "احتفظ بوصف مفيد للنتيجة",
+          "paragraphs": [
+            "إذا عادت الصورة طبيعيًا، سجّل الانتقال ومدته التقريبية دون وصفه بانقطاع للشبكة. وإذا لم تعد أو اختفت في أوقات أخرى، فاشرح ذلك للدعم بشكل منفصل وراجع وثائق التلفاز. تجنّب تبديل التنسيقات مرارًا باعتباره إصلاحًا عامًا للاشتراك. اذكر اسم المشغّل وطراز Apple TV والشاشة المتصلة وهل تبقى القوائم مرئية. لا تُدرج كلمات المرور أو عناوين قوائم التشغيل الخاصة في التقرير."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV पर पल भर काली स्क्रीन: क्या Apple TV फ़ॉर्मैट बदल रहा है?",
+      "excerpt": "अगर कार्यक्रम शुरू या बंद करते समय ही स्क्रीन काली होती है, तो Apple TV की सामग्री मिलान सेटिंग को लगातार गायब तस्वीर से अलग जाँचें।",
+      "seo_title": "Geo IPTV: प्लेबैक बदलते समय थोड़ी देर काली स्क्रीन",
+      "seo_description": "Geo IPTV पर थोड़ी देर काली स्क्रीन आने पर Apple TV का सामग्री मिलान देखें और लगातार गायब तस्वीर की समस्या अलग लिखें।",
+      "sections": [
+        {
+          "heading": "तस्वीर कब गायब होती है, लिखें",
+          "paragraphs": [
+            "Geo IPTV पर थोड़ी देर काली स्क्रीन की जाँच में उसका समय उपयोगी है। क्या प्लेबैक शुरू होते ही टीवी काला होता है और फिर कार्यक्रम सामान्य दिखता है? क्या मेन्यू पर लौटते समय भी ऐसा होता है? इसकी तुलना उस स्क्रीन से करें जो प्लेबैक के दौरान काली ही रहती है या Apple TV की होम स्क्रीन भी नहीं दिखाती। ये अलग अवलोकन हैं। जाँच में टीवी का वही इनपुट रखें और कई केबल या प्लेयर सेटिंग एक साथ न बदलें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "बदलने से पहले सामग्री मिलान देखें",
+          "paragraphs": [
+            "Apple के दस्तावेज़ में सामग्री मिलान का विकल्प सेटिंग के वीडियो और ऑडियो भाग में है। डायनैमिक रेंज मिलान समर्थित Apple TV को सामग्री की मूल रेंज के अनुसार आउटपुट देता है; फ़्रेम दर मिलान मूल फ़्रेम दर से तालमेल रखता है। Apple के अनुसार फ़ॉर्मैट बदलते समय स्क्रीन पल भर काली या झिलमिला सकती है। पहले से चालू विकल्प और Apple TV मॉडल लिखें। यह बदलाव की संभावित वजह है, हर काली स्क्रीन के हानिरहित होने का प्रमाण नहीं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: डायनैमिक रेंज और फ़्रेम दर मिलान",
+              "url": "https://support.apple.com/en-ae/102277"
+            }
+          ]
+        },
+        {
+          "heading": "नतीजे का उपयोगी विवरण रखें",
+          "paragraphs": [
+            "तस्वीर सामान्य लौट आए तो बदलाव और लगभग अवधि लिखें, इसे नेटवर्क बंद होना न कहें। तस्वीर वापस न आए या दूसरे समय गायब हो तो सहायता को यह अलग बताएँ और टीवी के दस्तावेज़ देखें। सदस्यता ठीक करने का सामान्य उपाय समझकर फ़ॉर्मैट बार-बार न बदलें। प्लेयर का नाम, Apple TV मॉडल, जुड़ी स्क्रीन और मेन्यू दिखने की स्थिति बताएँ। रिपोर्ट में पासवर्ड या निजी प्लेलिस्ट पते शामिल न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: turn on Match Dynamic Range or Match Frame Rate",
+      "url": "https://support.apple.com/en-ae/102277"
+    },
+    {
+      "label": "Apple: check a black screen and matching settings",
+      "url": "https://support.apple.com/en-by/108804"
+    }
+  ]
+}

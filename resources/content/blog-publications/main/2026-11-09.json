@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-09",
+  "topic": "Distinguish VLC for Android player control lock from stopped video and restore normal touch input without clearing saved setup",
+  "primary_keyword": "IPTV controls locked",
+  "slug": "main-vlc-android-player-control-lock",
+  "translations": {
+    "en": {
+      "title": "IPTV controls locked? Check VLC before treating playback as frozen",
+      "excerpt": "A moving picture with unresponsive touch controls can mean something different from stalled video. Check VLC for Android’s player lock before resetting anything.",
+      "seo_title": "IPTV controls locked? A VLC for Android check",
+      "seo_description": "Identify VLC for Android’s player control lock separately from frozen video, and restore normal touch controls without clearing your saved setup.",
+      "sections": [
+        {
+          "heading": "Watch what still responds",
+          "paragraphs": [
+            "If IPTV controls locked is the symptom you are describing, first watch the picture rather than repeatedly tapping. Does movement continue and dialogue sound normal while the pause button or swipe gestures do nothing? That combination is worth distinguishing from a picture that has actually stopped. Note whether the phone’s ordinary system navigation still works. Avoid testing by tapping purchase links or repeatedly pressing controls whose effect you cannot see."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Look for VLC’s player unlock prompt",
+          "paragraphs": [
+            "VideoLAN documents a Lock option in VLC for Android’s additional video controls. It disables player controls and gestures to prevent accidental touches; tapping can reveal a slide-to-unlock prompt. If that prompt appears, use the displayed slider, then check a familiar control once. This player lock is separate from screen orientation and the phone’s security lock. Follow the interface actually shown, because wording and placement can differ across versions."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android video-player controls",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a continuing fault separate",
+          "paragraphs": [
+            "Once normal touch controls return, no subscription change is needed to explain that particular symptom. If the video remains still, or the player never shows an unlock prompt, record what happens instead of assuming the same cause. Keep the VLC version, phone model and exact unresponsive action for private support. Clearing application data or reinstalling is a much larger step and can remove saved setup; a control-lock check does not require either."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "¿Controles IPTV bloqueados? Revisa VLC antes de dar el vídeo por congelado",
+      "excerpt": "Una imagen que avanza sin responder a los toques no equivale a un vídeo detenido. Revisa el bloqueo del reproductor de VLC para Android antes de restablecer nada.",
+      "seo_title": "Controles IPTV bloqueados: comprobar VLC para Android",
+      "seo_description": "Distingue el bloqueo de controles de VLC para Android de un vídeo congelado y recupera los toques sin borrar la configuración guardada.",
+      "sections": [
+        {
+          "heading": "Observa qué sigue respondiendo",
+          "paragraphs": [
+            "Si describes unos controles IPTV bloqueados, observa primero la imagen en lugar de tocar repetidamente. ¿El movimiento y el diálogo continúan con normalidad, pero el botón de pausa o los gestos no responden? Conviene diferenciar esta combinación de una imagen realmente detenida. Anota si la navegación habitual del teléfono todavía funciona. Evita probar tocando enlaces de compra o pulsando varias veces controles cuyo efecto no puedes ver."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Busca el aviso para desbloquear VLC",
+          "paragraphs": [
+            "VideoLAN documenta una opción de bloqueo en los controles adicionales de vídeo de VLC para Android. Desactiva los controles y gestos del reproductor para evitar toques accidentales; al tocar puede aparecer un deslizador para desbloquear. Si aparece, utiliza ese deslizador y comprueba una vez un control conocido. Este bloqueo es distinto del bloqueo de orientación y del bloqueo de seguridad del teléfono. Sigue la interfaz visible, porque el texto y la posición varían entre versiones."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controles de vídeo de VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa cualquier fallo que continúe",
+          "paragraphs": [
+            "Cuando vuelven los controles táctiles normales, no hace falta cambiar la suscripción para explicar ese síntoma concreto. Si la imagen permanece inmóvil o nunca aparece un aviso de desbloqueo, registra lo que sucede sin atribuirlo a la misma causa. Guarda la versión de VLC, el modelo del teléfono y la acción que no responde para soporte privado. Borrar datos o reinstalar es una medida mayor que puede eliminar la configuración; comprobar el bloqueo no exige ninguna de ellas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Commandes IPTV verrouillées ? Vérifiez VLC avant de conclure à un blocage",
+      "excerpt": "Une image qui avance malgré des commandes tactiles inactives diffère d’une vidéo figée. Examinez le verrouillage du lecteur VLC pour Android avant toute remise à zéro.",
+      "seo_title": "Commandes IPTV verrouillées : vérifier VLC pour Android",
+      "seo_description": "Distinguez le verrouillage des commandes de VLC pour Android d’une vidéo figée et retrouvez les gestes sans effacer vos réglages.",
+      "sections": [
+        {
+          "heading": "Observer ce qui répond encore",
+          "paragraphs": [
+            "Si vous décrivez des commandes IPTV verrouillées, regardez d’abord l’image au lieu de multiplier les appuis. Les mouvements et les dialogues continuent-ils normalement alors que la pause ou les gestes restent sans effet ? Cette situation mérite d’être distinguée d’une image réellement arrêtée. Notez si la navigation habituelle du téléphone fonctionne toujours. Évitez les essais sur des liens d’achat ou les pressions répétées sur des commandes dont vous ne voyez pas l’effet."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chercher l’invite de déverrouillage de VLC",
+          "paragraphs": [
+            "VideoLAN décrit une option de verrouillage dans les commandes vidéo supplémentaires de VLC pour Android. Elle désactive les commandes et les gestes du lecteur pour éviter les contacts accidentels ; un appui peut faire apparaître un curseur de déverrouillage. S’il apparaît, utilisez-le, puis essayez une fois une commande connue. Ce verrouillage diffère de celui de l’orientation et de la sécurité du téléphone. Suivez l’interface affichée, car les libellés et leur emplacement changent selon la version."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : commandes vidéo de VLC pour Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Isoler un problème qui persiste",
+          "paragraphs": [
+            "Lorsque les commandes tactiles reviennent, aucun changement d’abonnement n’est nécessaire pour expliquer ce symptôme précis. Si l’image reste immobile ou si aucune invite de déverrouillage n’apparaît, notez ce qui se passe sans supposer la même cause. Conservez la version de VLC, le modèle du téléphone et l’action sans réponse pour l’assistance privée. Effacer les données ou réinstaller constitue une intervention plus lourde, susceptible de supprimer la configuration enregistrée ; cette vérification ne l’exige pas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Comandi IPTV bloccati? Controlla VLC prima di considerare fermo il video",
+      "excerpt": "Un’immagine in movimento con comandi tattili inattivi è diversa da un video fermo. Controlla il blocco del lettore VLC per Android prima di ripristinare qualcosa.",
+      "seo_title": "Comandi IPTV bloccati: verifica VLC per Android",
+      "seo_description": "Distingui il blocco dei comandi di VLC per Android da un video fermo e ripristina i tocchi senza cancellare la configurazione salvata.",
+      "sections": [
+        {
+          "heading": "Osserva che cosa risponde ancora",
+          "paragraphs": [
+            "Se descrivi comandi IPTV bloccati, guarda prima l’immagine invece di toccare ripetutamente. Il movimento e i dialoghi continuano normalmente mentre la pausa o i gesti non funzionano? Questa combinazione va distinta da un’immagine davvero ferma. Annota se la normale navigazione del telefono funziona ancora. Evita di fare prove toccando collegamenti per acquisti o premendo più volte comandi dei quali non riesci a vedere l’effetto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Cerca il comando per sbloccare VLC",
+          "paragraphs": [
+            "VideoLAN documenta un’opzione di blocco nei controlli video aggiuntivi di VLC per Android. Disattiva comandi e gesti del lettore per evitare tocchi accidentali; toccando può apparire un cursore per sbloccare. Se compare, usa il cursore visualizzato e poi verifica una volta un comando conosciuto. Questo blocco è diverso da quello dell’orientamento e dal blocco di sicurezza del telefono. Segui l’interfaccia effettiva, perché testo e posizione possono cambiare tra versioni."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: comandi video di VLC per Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa un problema che continua",
+          "paragraphs": [
+            "Quando i comandi tattili tornano normali, non serve cambiare abbonamento per spiegare quel sintomo preciso. Se il video rimane fermo o il lettore non mostra mai lo sblocco, annota ciò che succede senza presumere la stessa causa. Conserva versione di VLC, modello del telefono e azione senza risposta per l’assistenza privata. Cancellare i dati o reinstallare è un intervento maggiore che può rimuovere la configurazione; controllare il blocco non richiede nessuna delle due cose."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-bediening vergrendeld? Controleer VLC voordat je vastlopen vermoedt",
+      "excerpt": "Een bewegend beeld met onbruikbare aanraakbediening is iets anders dan stilstaande video. Bekijk eerst de spelervergrendeling van VLC voor Android.",
+      "seo_title": "Vergrendelde IPTV-bediening controleren in VLC",
+      "seo_description": "Onderscheid de bedieningsvergrendeling van VLC voor Android van stilstaande video en herstel aanrakingen zonder opgeslagen instellingen te wissen.",
+      "sections": [
+        {
+          "heading": "Kijk wat nog reageert",
+          "paragraphs": [
+            "Beschrijf je vergrendelde IPTV-bediening, kijk dan eerst naar het beeld in plaats van telkens te tikken. Gaan beweging en gesprekken normaal door, terwijl pauzeren of vegen niet werkt? Dat is iets anders dan een beeld dat werkelijk stilstaat. Noteer of de gewone systeemnavigatie van de telefoon nog reageert. Probeer niet zomaar aankooplinks uit en druk niet herhaaldelijk op knoppen waarvan je het effect niet kunt zien."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Zoek de ontgrendelmelding van VLC",
+          "paragraphs": [
+            "VideoLAN beschrijft een vergrendeloptie bij de extra videobediening van VLC voor Android. Deze schakelt spelerknoppen en gebaren uit tegen onbedoelde aanrakingen; tikken kan een schuifregelaar voor ontgrendelen tonen. Verschijnt die, gebruik dan de weergegeven schuif en probeer daarna één bekende knop. Deze spelervergrendeling staat los van de schermstand en het beveiligingsslot van de telefoon. Volg de getoonde interface, want tekst en plaats kunnen per versie verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: videobediening van VLC voor Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf een blijvend probleem afzonderlijk",
+          "paragraphs": [
+            "Werkt de aanraakbediening weer normaal, dan is geen abonnementswijziging nodig om dat specifieke verschijnsel te verklaren. Blijft het beeld stilstaan of verschijnt er nooit een ontgrendelmelding, noteer dan wat er gebeurt zonder dezelfde oorzaak aan te nemen. Bewaar de VLC-versie, het telefoonmodel en de precieze niet-reagerende handeling voor privéondersteuning. Gegevens wissen of opnieuw installeren is een grotere ingreep die opgeslagen instellingen kan verwijderen; een vergrendelcontrole vereist geen van beide."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Controlos IPTV bloqueados? Verifique o VLC antes de concluir que o vídeo parou",
+      "excerpt": "Uma imagem em movimento sem resposta ao toque difere de um vídeo parado. Verifique o bloqueio do leitor VLC para Android antes de repor definições.",
+      "seo_title": "Controlos IPTV bloqueados: verificar VLC para Android",
+      "seo_description": "Distinga o bloqueio dos controlos do VLC para Android de um vídeo parado e recupere os toques sem apagar a configuração guardada.",
+      "sections": [
+        {
+          "heading": "Observe o que ainda responde",
+          "paragraphs": [
+            "Se descreve controlos IPTV bloqueados, observe primeiro a imagem em vez de tocar repetidamente. O movimento e os diálogos continuam normalmente, mas a pausa ou os gestos não respondem? Convém distinguir esta combinação de uma imagem realmente parada. Anote se a navegação habitual do telefone ainda funciona. Evite testar tocando em ligações de compra ou premindo repetidamente controlos cujo efeito não consegue ver."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Procure o aviso de desbloqueio do VLC",
+          "paragraphs": [
+            "A VideoLAN documenta uma opção de bloqueio nos controlos adicionais de vídeo do VLC para Android. Desativa os controlos e gestos do leitor para evitar toques acidentais; tocar pode apresentar um deslizador de desbloqueio. Se aparecer, utilize esse deslizador e depois verifique uma vez um controlo conhecido. Este bloqueio distingue-se do bloqueio de orientação e do bloqueio de segurança do telefone. Siga a interface apresentada, porque o texto e a posição podem variar entre versões."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controlos de vídeo do VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separe um problema que continua",
+          "paragraphs": [
+            "Quando os controlos táteis voltam ao normal, não é necessário alterar a subscrição para explicar aquele sintoma concreto. Se o vídeo continuar parado ou nunca surgir o aviso de desbloqueio, registe o que acontece sem presumir a mesma causa. Guarde a versão do VLC, o modelo do telefone e a ação sem resposta para assistência privada. Apagar dados ou reinstalar é uma intervenção maior que pode eliminar a configuração; verificar o bloqueio não exige nenhuma delas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Управление IPTV заблокировано? Проверьте VLC, прежде чем считать видео зависшим",
+      "excerpt": "Движущееся изображение без реакции на касания отличается от остановившегося видео. Проверьте блокировку управления VLC для Android до сброса настроек.",
+      "seo_title": "Блокировка управления IPTV: проверка VLC для Android",
+      "seo_description": "Отличите блокировку кнопок VLC для Android от остановки видео и верните управление касаниями без удаления сохранённых настроек.",
+      "sections": [
+        {
+          "heading": "Посмотрите, что продолжает работать",
+          "paragraphs": [
+            "Если проблема выглядит как заблокированное управление IPTV, сначала понаблюдайте за изображением вместо повторных касаний. Движение и речь продолжаются нормально, а пауза и жесты не действуют? Это стоит отличать от действительно остановившейся картинки. Отметьте, работает ли обычная системная навигация телефона. Не проверяйте реакцию нажатием ссылок покупки и не нажимайте многократно элементы, результат действия которых не виден."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Найдите приглашение разблокировать VLC",
+          "paragraphs": [
+            "VideoLAN описывает блокировку среди дополнительных элементов управления видео VLC для Android. Она отключает кнопки и жесты плеера, предотвращая случайные касания; при касании может появиться ползунок разблокировки. Если он появился, воспользуйтесь им и затем один раз проверьте знакомую кнопку. Эта блокировка отличается от фиксации ориентации и защитной блокировки телефона. Следуйте показанному интерфейсу: названия и расположение могут различаться между версиями."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: управление видео в VLC для Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Отдельно опишите сохраняющийся сбой",
+          "paragraphs": [
+            "Если обычное сенсорное управление восстановилось, для объяснения именно этого симптома не требуется менять подписку. Если изображение всё ещё неподвижно или приглашение разблокировки не появляется, запишите происходящее, не предполагая ту же причину. Для частной поддержки сохраните версию VLC, модель телефона и точное неработающее действие. Очистка данных приложения или переустановка — более серьёзный шаг, способный удалить настройки; проверка блокировки этого не требует."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV کے کنٹرول بند ہیں؟ ویڈیو رک جانے کا فیصلہ کرنے سے پہلے VLC دیکھیں",
+      "excerpt": "چلتی تصویر کے ساتھ لمس والے کنٹرول کام نہ کرنا اور ویڈیو رک جانا الگ باتیں ہیں۔ کچھ مٹانے سے پہلے VLC برائے Android کا پلیئر لاک دیکھیں۔",
+      "seo_title": "IPTV کنٹرول لاک: VLC برائے Android کی جانچ",
+      "seo_description": "VLC برائے Android میں کنٹرول لاک اور رکی ہوئی ویڈیو کو الگ پہچانیں اور محفوظ سیٹ اپ مٹائے بغیر لمس والے کنٹرول واپس لائیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کیا چیز اب بھی کام کر رہی ہے",
+          "paragraphs": [
+            "اگر آپ کا مسئلہ IPTV کے کنٹرول بند ہونا ہے تو بار بار چھونے کے بجائے پہلے تصویر دیکھیں۔ کیا حرکت اور گفتگو معمول کے مطابق جاری ہیں مگر توقف کا بٹن یا انگلی کے اشارے کام نہیں کرتے؟ اس صورت کو واقعی رکی ہوئی تصویر سے الگ پہچاننا ضروری ہے۔ یہ بھی نوٹ کریں کہ فون کی عام نظامی نیویگیشن چل رہی ہے یا نہیں۔ جانچ کے لیے خریداری کے لنک نہ دبائیں اور ایسے بٹن بار بار نہ دبائیں جن کا اثر نظر نہیں آ رہا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "VLC کا کھولنے والا پیغام تلاش کریں",
+          "paragraphs": [
+            "VideoLAN کی ہدایت میں VLC برائے Android کے اضافی ویڈیو کنٹرول میں لاک کا اختیار درج ہے۔ یہ غیر ارادی لمس سے بچانے کے لیے پلیئر کے کنٹرول اور اشارے بند کرتا ہے؛ اسکرین چھونے پر کھولنے کا سلائیڈر دکھائی دے سکتا ہے۔ اگر وہ آئے تو دکھایا گیا سلائیڈر استعمال کریں، پھر کسی مانوس کنٹرول کو ایک بار آزمائیں۔ یہ لاک اسکرین کی سمت اور فون کے حفاظتی لاک سے الگ ہے۔ اپنے سامنے والے طریقے پر عمل کریں کیونکہ الفاظ اور جگہ ورژن کے ساتھ بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC برائے Android کے ویڈیو کنٹرول",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "باقی رہنے والے مسئلے کو الگ لکھیں",
+          "paragraphs": [
+            "جب لمس والے عام کنٹرول واپس آ جائیں تو اس خاص علامت کی وضاحت کے لیے سبسکرپشن بدلنے کی ضرورت نہیں۔ اگر ویڈیو اب بھی ساکن ہے یا کھولنے کا پیغام کبھی نہیں آتا تو وہی کیفیت لکھیں، ایک ہی وجہ فرض نہ کریں۔ نجی مدد کے لیے VLC کا ورژن، فون کا ماڈل اور وہ درست عمل نوٹ رکھیں جو کام نہیں کرتا۔ ایپ کا ڈیٹا صاف کرنا یا دوبارہ نصب کرنا بڑا قدم ہے جس سے محفوظ سیٹ اپ مٹ سکتا ہے؛ لاک کی جانچ میں ان کی ضرورت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "هل قُفلت أدوات IPTV؟ افحص VLC قبل اعتبار الفيديو متجمداً",
+      "excerpt": "استمرار الصورة مع عدم استجابة اللمس يختلف عن توقف الفيديو. افحص قفل مشغل VLC على Android قبل إعادة ضبط أي شيء.",
+      "seo_title": "قفل أدوات IPTV: فحص VLC على Android",
+      "seo_description": "ميّز قفل أدوات VLC على Android عن تجمد الفيديو واستعد التحكم باللمس دون مسح إعداداتك المحفوظة أو تغيير الاشتراك.",
+      "sections": [
+        {
+          "heading": "راقب ما لا يزال يستجيب",
+          "paragraphs": [
+            "إذا كانت المشكلة قفل أدوات IPTV، راقب الصورة أولاً بدلاً من تكرار اللمس. هل تستمر الحركة والحوار بصورة طبيعية بينما لا يعمل زر الإيقاف المؤقت أو إيماءات السحب؟ تستحق هذه الحالة التمييز عن صورة توقفت فعلاً. دوّن أيضاً هل ما زال التنقل العادي في نظام الهاتف يعمل. تجنب اختبار الاستجابة بلمس روابط شراء أو الضغط المتكرر على أدوات لا ترى نتيجة استخدامها."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ابحث عن رسالة إلغاء قفل VLC",
+          "paragraphs": [
+            "توثّق VideoLAN خيار قفل ضمن أدوات الفيديو الإضافية في VLC على Android. يعطّل أدوات المشغل والإيماءات لمنع اللمسات غير المقصودة؛ وقد يظهر شريط سحب لإلغاء القفل عند لمس الشاشة. إن ظهر، استخدم الشريط المعروض ثم اختبر أداة مألوفة مرة واحدة. يختلف قفل المشغل هذا عن قفل اتجاه الشاشة وقفل أمان الهاتف. اتبع الواجهة الموجودة أمامك، فقد تختلف الكلمات والمواقع بين الإصدارات."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: أدوات مشغل الفيديو في VLC على Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "افصل العطل الذي يستمر",
+          "paragraphs": [
+            "عندما تعود أدوات اللمس العادية، لا يلزم تغيير الاشتراك لتفسير هذا العَرَض المحدد. إذا بقيت الصورة ثابتة، أو لم يعرض المشغل رسالة إلغاء القفل، دوّن ما يحدث دون افتراض السبب نفسه. احتفظ بإصدار VLC وطراز الهاتف والإجراء الذي لا يستجيب للدعم الخاص. مسح بيانات التطبيق أو إعادة تثبيته خطوة أكبر قد تزيل الإعدادات المحفوظة؛ ولا يتطلب فحص قفل الأدوات أياً منهما."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV के कंट्रोल लॉक हैं? वीडियो रुका मानने से पहले VLC जाँचें",
+      "excerpt": "चलती तस्वीर के साथ टच कंट्रोल न चलना, वीडियो रुकने से अलग है। कुछ रीसेट करने से पहले Android के VLC प्लेयर का कंट्रोल लॉक देखें।",
+      "seo_title": "IPTV कंट्रोल लॉक: Android पर VLC की जाँच",
+      "seo_description": "Android के VLC में कंट्रोल लॉक और रुके वीडियो को अलग पहचानें। सहेजा सेटअप मिटाए बिना सामान्य टच कंट्रोल वापस लाने की जाँच करें।",
+      "sections": [
+        {
+          "heading": "देखें कि क्या अब भी काम करता है",
+          "paragraphs": [
+            "अगर समस्या IPTV के कंट्रोल लॉक होना है, तो बार-बार टैप करने के बजाय पहले तस्वीर देखें। क्या हलचल और बातचीत सामान्य चल रही हैं, लेकिन पॉज़ बटन या स्वाइप काम नहीं करते? इसे वास्तव में रुकी तस्वीर से अलग पहचानना उपयोगी है। नोट करें कि फ़ोन का सामान्य सिस्टम नेविगेशन अब भी काम करता है या नहीं। जाँच के लिए खरीदारी वाले लिंक न छुएँ और उन कंट्रोल को बार-बार न दबाएँ जिनका असर दिखता नहीं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "VLC में अनलॉक का संदेश देखें",
+          "paragraphs": [
+            "VideoLAN के अनुसार Android के VLC के अतिरिक्त वीडियो कंट्रोल में लॉक का विकल्प है। अनचाहे स्पर्श रोकने के लिए यह प्लेयर के कंट्रोल और इशारे बंद करता है; टैप करने पर अनलॉक करने का स्लाइडर दिख सकता है। यदि दिखे तो उसी स्लाइडर का उपयोग करें, फिर किसी परिचित कंट्रोल को एक बार जाँचें। यह प्लेयर लॉक स्क्रीन की दिशा और फ़ोन के सुरक्षा लॉक से अलग है। दिखाई देने वाले इंटरफ़ेस का पालन करें, क्योंकि शब्द और जगह संस्करण के अनुसार बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android के VLC में वीडियो कंट्रोल",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "बने रहने वाले दोष को अलग दर्ज करें",
+          "paragraphs": [
+            "सामान्य टच कंट्रोल लौटने पर उस खास लक्षण को समझाने के लिए सदस्यता बदलने की ज़रूरत नहीं है। अगर तस्वीर अब भी स्थिर है या अनलॉक संदेश कभी नहीं आता, तो एक ही कारण मानने के बजाय वही स्थिति लिखें। निजी सहायता के लिए VLC का संस्करण, फ़ोन मॉडल और न चलने वाला सटीक काम रखें। ऐप डेटा मिटाना या फिर से इंस्टॉल करना बड़ा कदम है जिससे सहेजा सेटअप हट सकता है; कंट्रोल लॉक की जाँच में दोनों की ज़रूरत नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android video-player controls",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+    }
+  ]
+}
