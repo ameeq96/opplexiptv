@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-10",
+  "topic": "Compare a steady voice-to-picture timing offset with interruptions or progressive drift before adjusting VLC for Android audio delay",
+  "primary_keyword": "IPTV audio delay",
+  "slug": "main-vlc-android-audio-delay-picture-timing",
+  "translations": {
+    "en": {
+      "title": "IPTV audio delay: compare voices with the picture in VLC",
+      "excerpt": "Voices arriving before or after the picture need a different description from missing sound or repeated stops. Make one reversible audio-timing check in VLC for Android.",
+      "seo_title": "IPTV audio delay: a VLC for Android timing check",
+      "seo_description": "Compare voices with visible action, inspect VLC for Android's audio-delay control and keep a steady timing offset separate from interruptions or changing drift.",
+      "sections": [
+        {
+          "heading": "Describe the timing before changing it",
+          "paragraphs": [
+            "IPTV audio delay is easier to investigate when you describe what arrives first. Watch a short passage with a clearly visible speaker or a distinct sound-producing action. Does the voice consistently precede the lips, or follow them? Note whether the gap stays roughly the same. Missing sound, an unfamiliar spoken language and repeated pauses are different symptoms; changing timing alone does not explain them. Keep the listening volume comfortable during comparison."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the audio control, not subtitle timing",
+          "paragraphs": [
+            "VideoLAN documents an Audio delay option within VLC for Android's audio controls. If your installed version exposes it, note the starting value and make a small change while comparing the same kind of visible action. Use the displayed Reset control if the result is worse or unclear. Audio delay and subtitle delay are separate controls. Follow the interface actually present; labels and placement can differ, and there is no single offset to prescribe for every programme."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android audio-delay controls",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a changing problem separate",
+          "paragraphs": [
+            "If a useful adjustment remains consistent, record it with the player version and listening equipment. If alignment gradually drifts, changes after a pause, or differs between programmes, record that pattern rather than stacking more settings. Include whether sound comes from the phone or connected equipment when contacting private support. A timing control cannot establish a service-wide outage or a need to replace a subscription. This comparison does not require clearing saved player data."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Retraso de audio IPTV: compara las voces con la imagen en VLC",
+      "excerpt": "Las voces adelantadas o atrasadas respecto a la imagen no son lo mismo que el silencio o las pausas repetidas. Haz una comprobación reversible del audio en VLC para Android.",
+      "seo_title": "Retraso de audio IPTV: comprobar la sincronía en VLC",
+      "seo_description": "Compara voces y acciones visibles, revisa el ajuste de retraso de audio en VLC para Android y distingue un desfase constante de pausas o desajustes variables.",
+      "sections": [
+        {
+          "heading": "Describe el desfase antes de cambiarlo",
+          "paragraphs": [
+            "El retraso de audio IPTV resulta más fácil de investigar si describes qué llega primero. Observa un fragmento breve con una persona hablando claramente en pantalla o una acción que produzca un sonido reconocible. ¿La voz se adelanta siempre al movimiento de los labios o llega después? Anota si la separación permanece aproximadamente igual. La falta de sonido, un idioma inesperado y las pausas repetidas son síntomas distintos; cambiar solo el tiempo no los explica. Mantén un volumen cómodo durante la comparación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa el ajuste de audio, no el de subtítulos",
+          "paragraphs": [
+            "VideoLAN documenta una opción de retraso de audio en los controles de audio de VLC para Android. Si tu versión la ofrece, anota el valor inicial y haz un cambio pequeño mientras comparas el mismo tipo de acción visible. Usa el control de restablecimiento mostrado si el resultado empeora o no está claro. El retraso de audio y el de subtítulos son controles independientes. Sigue la interfaz que realmente aparece: sus etiquetas y ubicación pueden variar, y no existe un valor único para todos los programas."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controles de retraso de audio en VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue los problemas que cambian",
+          "paragraphs": [
+            "Si un ajuste útil se mantiene estable, anótalo junto con la versión del reproductor y el equipo de escucha. Si la sincronía se desvía gradualmente, cambia después de una pausa o varía entre programas, registra ese patrón en lugar de acumular ajustes. Indica al soporte privado si el sonido sale del teléfono o de un equipo conectado. Un control de sincronía no demuestra una caída general del servicio ni la necesidad de cambiar de suscripción. Esta comparación no exige borrar los datos guardados del reproductor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Décalage audio IPTV : comparer voix et image dans VLC",
+      "excerpt": "Une voix en avance ou en retard sur l'image se décrit autrement qu'un silence ou des arrêts répétés. Faites une vérification réversible dans VLC pour Android.",
+      "seo_title": "Décalage audio IPTV : vérifier la synchronisation dans VLC",
+      "seo_description": "Comparez les voix aux actions visibles, examinez le réglage du décalage audio de VLC pour Android et distinguez un écart stable des coupures ou d'une dérive.",
+      "sections": [
+        {
+          "heading": "Décrire le décalage avant de le modifier",
+          "paragraphs": [
+            "Un décalage audio IPTV s'analyse plus facilement en précisant ce qui arrive en premier. Regardez un court passage montrant clairement une personne qui parle ou une action produisant un son identifiable. La voix précède-t-elle systématiquement les lèvres, ou les suit-elle ? Notez si l'écart reste à peu près constant. L'absence de son, une langue inattendue et des pauses répétées sont des symptômes différents ; modifier uniquement le timing ne les explique pas. Gardez un volume confortable pendant la comparaison."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Choisir le réglage audio, pas celui des sous-titres",
+          "paragraphs": [
+            "VideoLAN documente une option de décalage audio dans les commandes audio de VLC pour Android. Si votre version l'affiche, notez la valeur initiale puis effectuez une petite modification en comparant le même type d'action visible. Utilisez la commande de réinitialisation affichée si le résultat empire ou reste incertain. Le décalage du son et celui des sous-titres sont indépendants. Suivez l'interface réellement présente : les noms et emplacements peuvent varier, et aucune valeur unique ne convient à tous les programmes."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : commandes de décalage audio dans VLC pour Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Isoler un problème qui évolue",
+          "paragraphs": [
+            "Si un réglage utile reste stable, notez-le avec la version du lecteur et l'équipement d'écoute. Si la synchronisation dérive progressivement, change après une pause ou varie selon le programme, décrivez ce comportement plutôt que d'accumuler les réglages. Précisez au support privé si le son vient du téléphone ou d'un appareil connecté. Un réglage de synchronisation ne démontre ni une panne générale du service ni la nécessité de changer d'abonnement. Cette comparaison ne demande pas d'effacer les données enregistrées du lecteur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ritardo audio IPTV: confronta voci e immagini in VLC",
+      "excerpt": "Una voce in anticipo o in ritardo rispetto all'immagine è diversa dall'assenza di audio o dalle pause ripetute. Esegui un controllo reversibile in VLC per Android.",
+      "seo_title": "Ritardo audio IPTV: controllare la sincronizzazione in VLC",
+      "seo_description": "Confronta le voci con le azioni visibili, verifica il ritardo audio di VLC per Android e distingui uno scarto costante da interruzioni o sincronizzazione variabile.",
+      "sections": [
+        {
+          "heading": "Descrivi lo scarto prima di modificarlo",
+          "paragraphs": [
+            "Il ritardo audio IPTV è più semplice da analizzare indicando che cosa arriva prima. Guarda un breve passaggio con una persona chiaramente visibile mentre parla o un'azione che produce un suono riconoscibile. La voce precede sempre il movimento delle labbra oppure arriva dopo? Annota se lo scarto rimane più o meno costante. Audio assente, una lingua inattesa e pause ripetute sono sintomi diversi: cambiare soltanto la sincronizzazione non li spiega. Mantieni un volume confortevole durante il confronto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa il controllo audio, non quello dei sottotitoli",
+          "paragraphs": [
+            "VideoLAN documenta un'opzione per il ritardo audio nei controlli audio di VLC per Android. Se la versione installata la mostra, annota il valore iniziale e apporta una piccola modifica confrontando lo stesso tipo di azione visibile. Usa il comando di ripristino mostrato se il risultato peggiora o non è chiaro. Ritardo audio e ritardo dei sottotitoli sono controlli distinti. Segui l'interfaccia effettivamente disponibile: nomi e posizione possono cambiare e non esiste un valore universale per ogni programma."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controlli del ritardo audio in VLC per Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui un problema che cambia nel tempo",
+          "paragraphs": [
+            "Se una regolazione utile rimane stabile, annotala insieme alla versione del lettore e all'apparecchiatura audio. Se la sincronizzazione peggiora gradualmente, cambia dopo una pausa o varia tra programmi, registra questo andamento invece di sommare altre impostazioni. Indica all'assistenza privata se il suono proviene dal telefono o da un dispositivo collegato. Un controllo di sincronizzazione non dimostra un'interruzione generale del servizio né la necessità di sostituire l'abbonamento. Questo confronto non richiede di cancellare i dati salvati del lettore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-audiovertraging: vergelijk stemmen en beeld in VLC",
+      "excerpt": "Stemmen die vóór of na het beeld komen zijn iets anders dan ontbrekend geluid of herhaalde onderbrekingen. Controleer de audiotiming omkeerbaar in VLC voor Android.",
+      "seo_title": "IPTV-audiovertraging: timing controleren in VLC",
+      "seo_description": "Vergelijk stemmen met zichtbare actie, bekijk de audiovertraging in VLC voor Android en onderscheid een vast tijdsverschil van onderbrekingen of wisselende afwijking.",
+      "sections": [
+        {
+          "heading": "Beschrijf eerst wat eerder komt",
+          "paragraphs": [
+            "IPTV-audiovertraging is makkelijker te onderzoeken als je beschrijft wat het eerst aankomt. Bekijk een kort fragment met een duidelijk zichtbare spreker of een handeling die een herkenbaar geluid veroorzaakt. Komt de stem steeds vóór de lipbeweging, of juist erna? Noteer of het verschil ongeveer gelijk blijft. Ontbrekend geluid, een onverwachte gesproken taal en herhaalde pauzes zijn andere verschijnselen; alleen de timing veranderen verklaart die niet. Houd het luistervolume tijdens het vergelijken prettig."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de audioregeling, niet de ondertiteltiming",
+          "paragraphs": [
+            "VideoLAN beschrijft een optie voor audiovertraging binnen de audiobediening van VLC voor Android. Als jouw versie die toont, noteer dan de beginwaarde en verander die een klein beetje terwijl je hetzelfde soort zichtbare actie vergelijkt. Gebruik de getoonde resetknop als het resultaat slechter of onduidelijk is. Audiovertraging en ondertitelvertraging zijn aparte instellingen. Volg de werkelijk aanwezige interface: namen en plaats kunnen verschillen en er bestaat geen vaste waarde die voor ieder programma geschikt is."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: audiovertraging regelen in VLC voor Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Houd veranderende afwijkingen apart",
+          "paragraphs": [
+            "Blijft een nuttige aanpassing stabiel, noteer die dan met de spelerversie en gebruikte luisterapparatuur. Loopt de synchronisatie geleidelijk uiteen, verandert ze na een pauze of verschilt ze per programma, beschrijf dat patroon dan in plaats van meer instellingen te stapelen. Vertel de particuliere ondersteuning of het geluid uit de telefoon of uit aangesloten apparatuur komt. Een timingregeling bewijst geen algemene dienststoring of noodzaak om een abonnement te vervangen. Voor deze vergelijking hoef je opgeslagen spelergegevens niet te wissen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atraso de áudio IPTV: compare as vozes com a imagem no VLC",
+      "excerpt": "Vozes adiantadas ou atrasadas em relação à imagem são diferentes de silêncio ou pausas repetidas. Faça uma verificação reversível no VLC para Android.",
+      "seo_title": "Atraso de áudio IPTV: verificar a sincronização no VLC",
+      "seo_description": "Compare vozes e ações visíveis, examine o ajuste de atraso de áudio do VLC para Android e diferencie um desfasamento constante de interrupções ou variações.",
+      "sections": [
+        {
+          "heading": "Descreva o desfasamento antes de alterar",
+          "paragraphs": [
+            "O atraso de áudio IPTV é mais fácil de investigar quando se descreve o que chega primeiro. Veja um trecho curto com uma pessoa claramente visível a falar ou uma ação que produza um som identificável. A voz antecede sempre o movimento dos lábios ou surge depois? Anote se a diferença permanece aproximadamente igual. Falta de som, um idioma inesperado e pausas repetidas são sintomas diferentes; alterar apenas a sincronização não os explica. Mantenha um volume confortável durante a comparação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use o ajuste de áudio, não o das legendas",
+          "paragraphs": [
+            "A VideoLAN documenta uma opção de atraso de áudio nos controlos de áudio do VLC para Android. Se a sua versão a apresentar, anote o valor inicial e faça uma pequena alteração enquanto compara o mesmo tipo de ação visível. Use o controlo de reposição mostrado se o resultado piorar ou continuar incerto. O atraso de áudio e o atraso das legendas são ajustes separados. Siga a interface realmente disponível: os nomes e a posição podem variar e não existe um valor universal para todos os programas."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controlos de atraso de áudio do VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separe um problema que muda",
+          "paragraphs": [
+            "Se um ajuste útil continuar estável, registe-o com a versão do leitor e o equipamento usado para ouvir. Se a sincronização se desviar progressivamente, mudar após uma pausa ou variar entre programas, registe esse padrão em vez de acumular definições. Informe o suporte privado se o som sai do telefone ou de equipamento ligado. Um ajuste de tempo não comprova uma falha geral do serviço nem a necessidade de substituir a assinatura. Esta comparação não exige apagar os dados guardados do leitor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Задержка звука IPTV: сравните голос и изображение в VLC",
+      "excerpt": "Голос раньше или позже изображения — не то же самое, что пропавший звук или постоянные остановки. Проверьте синхронизацию в VLC для Android с возможностью отмены.",
+      "seo_title": "Задержка звука IPTV: проверка синхронизации в VLC",
+      "seo_description": "Сравните речь с видимым действием, проверьте настройку задержки звука VLC для Android и отличите постоянный сдвиг от остановок или меняющегося рассогласования.",
+      "sections": [
+        {
+          "heading": "Сначала опишите, что появляется раньше",
+          "paragraphs": [
+            "Задержку звука IPTV проще исследовать, если указать, что опережает другое. Посмотрите короткий фрагмент с хорошо видимым говорящим человеком или действием с узнаваемым звуком. Голос постоянно опережает движение губ или отстаёт? Отметьте, остаётся ли разница примерно одинаковой. Отсутствие звука, неожиданная речь на другом языке и повторяющиеся паузы — отдельные симптомы; изменение только времени их не объясняет. Во время сравнения сохраняйте комфортную громкость."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Выберите настройку звука, а не субтитров",
+          "paragraphs": [
+            "В документации VideoLAN описана настройка задержки звука в звуковых элементах управления VLC для Android. Если она есть в установленной версии, запишите начальное значение и немного измените его, сравнивая похожее видимое действие. Если результат хуже или непонятен, используйте показанную кнопку сброса. Задержка звука и задержка субтитров регулируются отдельно. Ориентируйтесь на фактический интерфейс: названия и расположение могут различаться, а единого смещения для всех передач не существует."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: настройка задержки звука в VLC для Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Отдельно отмечайте меняющийся характер проблемы",
+          "paragraphs": [
+            "Если полезная корректировка остаётся стабильной, запишите её вместе с версией проигрывателя и звуковым оборудованием. Если синхронизация постепенно расходится, меняется после паузы или различается между передачами, зафиксируйте закономерность вместо накопления настроек. При обращении в личную поддержку уточните, идёт ли звук из телефона или подключённого устройства. Регулятор времени не доказывает общий сбой сервиса или необходимость заменить подписку. Для такого сравнения не требуется удалять сохранённые данные проигрывателя."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV آواز میں تاخیر: VLC میں آواز اور تصویر کا وقت ملائیں",
+      "excerpt": "تصویر سے پہلے یا بعد میں آنے والی آواز، خاموشی یا بار بار رکنے سے مختلف مسئلہ ہے۔ VLC برائے Android میں آواز کے وقت کی ایسی جانچ کریں جسے واپس بدلا جا سکے۔",
+      "seo_title": "IPTV آواز میں تاخیر: VLC میں وقت کی جانچ",
+      "seo_description": "آواز کو نظر آنے والے عمل سے ملائیں، VLC برائے Android میں آواز کی تاخیر کا اختیار دیکھیں اور مستقل فرق کو وقفوں یا بدلتے ہوئے عدم توافق سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "تبدیلی سے پہلے وقت کا فرق بیان کریں",
+          "paragraphs": [
+            "IPTV آواز میں تاخیر کی جانچ اس وقت آسان ہوتی ہے جب آپ بتائیں کہ پہلے کیا آتا ہے۔ ایسا مختصر منظر دیکھیں جس میں بولنے والے کے ہونٹ صاف نظر آئیں یا کوئی عمل واضح آواز پیدا کرے۔ کیا آواز ہر بار ہونٹوں سے پہلے آتی ہے یا بعد میں؟ نوٹ کریں کہ فرق تقریباً یکساں رہتا ہے یا نہیں۔ آواز غائب ہونا، غیر متوقع زبان سنائی دینا اور بار بار وقفے آنا الگ علامات ہیں؛ صرف وقت بدلنے سے ان کی وضاحت نہیں ہوتی۔ مقابلے کے دوران آواز کی سطح آرام دہ رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آواز کا اختیار استعمال کریں، ذیلی عنوانات کا نہیں",
+          "paragraphs": [
+            "VideoLAN کی دستاویز میں VLC برائے Android کے آواز والے اختیارات میں آواز کی تاخیر کا اختیار درج ہے۔ اگر آپ کے نصب شدہ ورژن میں یہ موجود ہو تو ابتدائی قدر لکھ لیں اور اسی نوعیت کے نظر آنے والے عمل سے مقابلہ کرتے ہوئے معمولی تبدیلی کریں۔ نتیجہ خراب ہو یا سمجھ نہ آئے تو اسکرین پر دکھایا گیا ری سیٹ اختیار استعمال کریں۔ آواز اور ذیلی عنوانات کی تاخیر الگ الگ ترتیبات ہیں۔ اصل موجود انٹرفیس کی پیروی کریں؛ نام اور جگہ مختلف ہو سکتے ہیں، اور ہر پروگرام کے لیے ایک ہی وقت کا فرق مقرر نہیں کیا جا سکتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC برائے Android میں آواز کی تاخیر کے اختیارات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "بدلتے ہوئے مسئلے کو الگ نوٹ کریں",
+          "paragraphs": [
+            "اگر کوئی مفید تبدیلی مستقل کام کرے تو اسے پلیئر کے ورژن اور آواز سننے کے آلات کے ساتھ لکھ لیں۔ اگر آواز اور تصویر بتدریج الگ ہوں، وقفے کے بعد فرق بدلے یا مختلف پروگراموں میں فرق ہو تو مزید ترتیبات بدلنے کے بجائے یہی انداز نوٹ کریں۔ نجی معاونت سے رابطے میں بتائیں کہ آواز فون سے آ رہی ہے یا منسلک آلے سے۔ وقت کا اختیار پورے سروس کے بند ہونے یا سبسکرپشن تبدیل کرنے کی ضرورت ثابت نہیں کرتا۔ اس مقابلے کے لیے پلیئر کا محفوظ ڈیٹا مٹانا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأخر صوت IPTV: قارن الأصوات بالصورة في VLC",
+      "excerpt": "وصول الصوت قبل الصورة أو بعدها يختلف عن غياب الصوت أو التوقفات المتكررة. أجرِ فحصاً قابلاً للتراجع لتوقيت الصوت في VLC لنظام Android.",
+      "seo_title": "تأخر صوت IPTV: فحص التزامن في VLC لنظام Android",
+      "seo_description": "قارن الكلام بالفعل الظاهر، وافحص ضبط تأخر الصوت في VLC لنظام Android، وميّز الفارق الثابت عن الانقطاعات أو اختلاف التزامن المتغير.",
+      "sections": [
+        {
+          "heading": "صِف الفارق قبل تغييره",
+          "paragraphs": [
+            "يسهل فحص تأخر صوت IPTV عندما تحدد ما الذي يصل أولاً. شاهد مقطعاً قصيراً يظهر فيه المتحدث بوضوح، أو فعلاً ينتج صوتاً يسهل تمييزه. هل يسبق الصوت حركة الشفتين باستمرار أم يأتي بعدها؟ دوّن إن كان الفارق يبقى متقارباً. غياب الصوت، وسماع لغة غير متوقعة، والتوقفات المتكررة أعراض مختلفة؛ تغيير التوقيت وحده لا يفسرها. حافظ على مستوى صوت مريح أثناء المقارنة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم ضبط الصوت بدلاً من توقيت الترجمة",
+          "paragraphs": [
+            "توثّق VideoLAN خياراً لتأخر الصوت ضمن أدوات الصوت في VLC لنظام Android. إذا ظهر في نسختك المثبتة، دوّن القيمة الأصلية وأجرِ تغييراً صغيراً مع مقارنة النوع نفسه من الفعل الظاهر. استخدم أداة إعادة الضبط المعروضة إذا ساءت النتيجة أو لم تتضح. تأخر الصوت وتأخر الترجمة النصية ضبطان منفصلان. اتبع الواجهة الموجودة فعلاً؛ فقد تختلف التسميات والمواضع، ولا توجد قيمة واحدة تناسب جميع البرامج."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: أدوات تأخر الصوت في VLC لنظام Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "افصل المشكلة التي تتغير مع الوقت",
+          "paragraphs": [
+            "إذا استمر ضبط مفيد بصورة ثابتة، فسجّله مع إصدار المشغل ومعدات الاستماع. إذا ازداد اختلاف التزامن تدريجياً، أو تغير بعد توقف مؤقت، أو اختلف بين البرامج، فدوّن هذا النمط بدلاً من تكديس المزيد من الإعدادات. عند التواصل الخاص مع الدعم، حدّد إن كان الصوت يصدر من الهاتف أو من جهاز متصل. أداة التوقيت لا تثبت انقطاع الخدمة على نطاق عام أو ضرورة استبدال الاشتراك. لا تتطلب هذه المقارنة مسح بيانات المشغل المحفوظة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV ऑडियो में देरी: VLC में आवाज़ और तस्वीर का समय मिलाएँ",
+      "excerpt": "तस्वीर से पहले या बाद में आने वाली आवाज़, गायब ध्वनि या बार-बार रुकने से अलग लक्षण है। Android के VLC में ऑडियो के समय की ऐसी जाँच करें जिसे वापस बदला जा सके।",
+      "seo_title": "IPTV ऑडियो में देरी: Android के VLC में समय की जाँच",
+      "seo_description": "आवाज़ को दिखाई देने वाली गतिविधि से मिलाएँ, Android के VLC में ऑडियो देरी का विकल्प देखें और स्थिर अंतर को रुकावट या बदलते तालमेल से अलग पहचानें।",
+      "sections": [
+        {
+          "heading": "बदलने से पहले समय का अंतर बताएँ",
+          "paragraphs": [
+            "IPTV ऑडियो में देरी को समझना आसान होता है जब आप बताएँ कि पहले क्या आता है। ऐसा छोटा दृश्य देखें जिसमें बोलने वाले के होंठ साफ़ दिखाई दें या कोई गतिविधि पहचानने योग्य आवाज़ पैदा करे। क्या आवाज़ लगातार होंठों की गति से पहले आती है या बाद में? लिखें कि अंतर लगभग समान रहता है या नहीं। ध्वनि गायब होना, अनपेक्षित भाषा सुनाई देना और बार-बार रुकना अलग लक्षण हैं; केवल समय बदलने से उनका कारण नहीं समझ आता। तुलना के दौरान आवाज़ आरामदायक स्तर पर रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ऑडियो का नियंत्रण चुनें, उपशीर्षक का नहीं",
+          "paragraphs": [
+            "VideoLAN के दस्तावेज़ में Android के VLC के ऑडियो नियंत्रणों में ऑडियो देरी का विकल्प बताया गया है। यदि आपके इंस्टॉल किए गए संस्करण में यह दिखता है, तो शुरुआती मान लिखें और उसी तरह की दिखाई देने वाली गतिविधि से तुलना करते हुए छोटा बदलाव करें। परिणाम खराब या अस्पष्ट हो तो स्क्रीन पर दिखाया गया रीसेट नियंत्रण इस्तेमाल करें। ऑडियो देरी और उपशीर्षक देरी अलग नियंत्रण हैं। वास्तव में उपलब्ध इंटरफ़ेस का अनुसरण करें; नाम और जगह बदल सकते हैं, और हर कार्यक्रम के लिए एक ही समय का अंतर सुझाना सही नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android के VLC में ऑडियो देरी के नियंत्रण",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "बदलते हुए लक्षण को अलग रखें",
+          "paragraphs": [
+            "यदि कोई उपयोगी बदलाव स्थिर रहता है, तो उसे प्लेयर के संस्करण और सुनने वाले उपकरण के साथ लिख लें। यदि तालमेल धीरे-धीरे बिगड़े, विराम के बाद बदले या अलग कार्यक्रमों में अलग हो, तो और सेटिंग बदलने के बजाय वह क्रम दर्ज करें। निजी सहायता से संपर्क करते समय बताएँ कि आवाज़ फ़ोन से आती है या जुड़े उपकरण से। समय का नियंत्रण पूरी सेवा बंद होने या सदस्यता बदलने की आवश्यकता साबित नहीं करता। इस तुलना के लिए प्लेयर का सहेजा डेटा मिटाना ज़रूरी नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android video-player audio controls",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+    }
+  ]
+}

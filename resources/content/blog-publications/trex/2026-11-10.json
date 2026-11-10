@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-10",
+  "topic": "Identify Fire TV Text Banner focused-item descriptions separately from programme captions during Trex IPTV viewing while preserving the owner's useful reading preferences",
+  "primary_keyword": "Trex IPTV text banner",
+  "slug": "trex-fire-tv-text-banner-versus-programme-captions",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV text banner check: identify Fire TV menu text",
+      "excerpt": "A box describing a highlighted Fire TV item can be a reading aid rather than programme captions. Identify the overlay before changing useful accessibility settings.",
+      "seo_title": "Trex IPTV text banner check on Fire TV",
+      "seo_description": "Distinguish Fire TV Text Banner from programme captions and player errors during Trex IPTV viewing, while preserving the device owner’s reading preferences.",
+      "sections": [
+        {
+          "heading": "Check what the box describes",
+          "paragraphs": [
+            "A Trex IPTV text banner check begins by reading the box rather than dismissing it. Does it name the menu item currently highlighted when you move the remote, or does it follow spoken dialogue? Amazon describes Text Banner as an accessibility feature that displays the focused item’s title and related information. Programme captions serve a different purpose. Note whether the same box appears on Fire TV’s Home screen, not only while the player is open."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review the owner’s accessibility setting",
+          "paragraphs": [
+            "Ask the device owner whether this reading aid is useful before changing it. On supported models, open Settings, then Accessibility and Text Banner. Amazon documents options for font size, colours, banner size and timing; use the available tutorial if the menu is unfamiliar. Exact availability and wording can vary by device. Adjust only a relevant display preference with the owner’s agreement, and keep the earlier choice so it can be restored."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: accessibility features on Fire devices",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Describe a continuing playback problem separately",
+          "paragraphs": [
+            "Removing a menu overlay does not establish that an IPTV player or subscription has been repaired. If video still stops, report that separately with the player version and what happens on screen. For a Trex IPTV 8K support question, distinguish menu text, programme captions and an actual error message. You do not need to clear player data, reinstall an app or share private login details just to identify a text banner."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Trex IPTV: distingue el rótulo de texto de los menús de Fire TV",
+      "excerpt": "Un recuadro que describe el elemento seleccionado de Fire TV puede ser una ayuda de lectura, no subtítulos. Identifícalo antes de cambiar opciones de accesibilidad útiles.",
+      "seo_title": "Trex IPTV: comprobar el rótulo de texto de Fire TV",
+      "seo_description": "Distingue el rótulo de texto de Fire TV de los subtítulos y errores del reproductor al usar Trex IPTV, respetando las preferencias de lectura del propietario.",
+      "sections": [
+        {
+          "heading": "Comprueba qué describe el recuadro",
+          "paragraphs": [
+            "Para comprobar un rótulo de texto al usar Trex IPTV, empieza por leerlo en lugar de descartarlo. ¿Nombra el elemento resaltado al mover el mando o sigue el diálogo del programa? Amazon describe el rótulo de texto como una función de accesibilidad que muestra el título del elemento enfocado e información relacionada. Los subtítulos del programa tienen otra finalidad. Observa si el mismo recuadro aparece en Inicio de Fire TV, no solo dentro del reproductor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la preferencia de accesibilidad del propietario",
+          "paragraphs": [
+            "Pregunta al propietario si utiliza esta ayuda de lectura antes de cambiarla. En modelos compatibles, abre Configuración, Accesibilidad y Rótulo de texto. Amazon documenta ajustes de tamaño de letra, colores, tamaño del recuadro y duración; utiliza el tutorial disponible si desconoces el menú. La disponibilidad y las etiquetas pueden variar según el dispositivo. Cambia únicamente la preferencia pertinente con el consentimiento del propietario y anota el valor anterior para poder recuperarlo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: accesibilidad en los dispositivos Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Describe por separado un fallo de reproducción persistente",
+          "paragraphs": [
+            "Quitar un recuadro de los menús no demuestra que se haya reparado el reproductor ni la suscripción IPTV. Si el vídeo sigue deteniéndose, informa de ello por separado, indicando la versión del reproductor y lo que ocurre en pantalla. Al consultar a soporte de Trex IPTV 8K, distingue entre texto de los menús, subtítulos y un mensaje de error real. No necesitas borrar los datos de la aplicación, reinstalarla ni compartir credenciales privadas para identificar un rótulo de texto."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Trex IPTV : reconnaître le bandeau de texte des menus Fire TV",
+      "excerpt": "Un encadré décrivant l’élément sélectionné sur Fire TV peut être une aide à la lecture, pas des sous-titres. Identifiez-le avant de modifier une option d’accessibilité utile.",
+      "seo_title": "Trex IPTV : vérifier le bandeau de texte Fire TV",
+      "seo_description": "Distinguez le bandeau de texte Fire TV des sous-titres et des erreurs du lecteur avec Trex IPTV, en conservant les préférences de lecture du propriétaire.",
+      "sections": [
+        {
+          "heading": "Vérifiez ce que décrit l’encadré",
+          "paragraphs": [
+            "Pour vérifier un bandeau de texte avec Trex IPTV, commencez par lire l’encadré plutôt que le fermer. Nomme-t-il l’élément sélectionné quand vous utilisez la télécommande, ou suit-il le dialogue ? Amazon décrit le bandeau de texte comme une fonction d’accessibilité affichant le titre de l’élément ciblé et des informations associées. Les sous-titres ont un autre rôle. Observez si l’encadré apparaît aussi sur l’écran d’accueil Fire TV, pas seulement dans le lecteur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respectez le réglage d’accessibilité du propriétaire",
+          "paragraphs": [
+            "Demandez au propriétaire si cette aide à la lecture lui sert avant de la modifier. Sur les modèles compatibles, ouvrez Paramètres, Accessibilité, puis Bandeau de texte. Amazon documente des réglages de taille et de couleur des caractères, de taille du bandeau et de durée ; utilisez le tutoriel disponible si nécessaire. Les options et leurs intitulés varient selon l’appareil. Modifiez seulement le réglage concerné avec l’accord du propriétaire et notez sa valeur précédente pour pouvoir la rétablir."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : accessibilité sur les appareils Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Signalez séparément une difficulté de lecture persistante",
+          "paragraphs": [
+            "Retirer un encadré des menus ne prouve pas que le lecteur ou l’abonnement IPTV a été réparé. Si la vidéo s’arrête toujours, signalez-le séparément avec la version du lecteur et le comportement observé. Pour contacter l’assistance Trex IPTV 8K, distinguez le texte des menus, les sous-titres et un véritable message d’erreur. Identifier un bandeau de texte ne nécessite ni d’effacer les données du lecteur, ni de réinstaller l’application, ni de communiquer des identifiants privés."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Trex IPTV: riconoscere il banner di testo nei menu Fire TV",
+      "excerpt": "Un riquadro che descrive l’elemento selezionato su Fire TV può aiutare la lettura e non essere un sottotitolo. Identificalo prima di cambiare impostazioni utili.",
+      "seo_title": "Trex IPTV: controllare il banner di testo su Fire TV",
+      "seo_description": "Distingui il banner di testo Fire TV dai sottotitoli e dagli errori del lettore durante l’uso di Trex IPTV, rispettando le preferenze di lettura del proprietario.",
+      "sections": [
+        {
+          "heading": "Controlla che cosa descrive il riquadro",
+          "paragraphs": [
+            "Per controllare un banner di testo mentre usi Trex IPTV, leggilo prima di chiuderlo. Mostra il nome dell’elemento evidenziato quando muovi il telecomando oppure segue il dialogo? Amazon descrive il banner di testo come una funzione di accessibilità che visualizza il titolo dell’elemento selezionato e informazioni correlate. I sottotitoli del programma svolgono un’altra funzione. Osserva se lo stesso riquadro appare anche nella schermata iniziale di Fire TV, non soltanto nel lettore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Rispetta la preferenza di accessibilità del proprietario",
+          "paragraphs": [
+            "Chiedi al proprietario se questa guida alla lettura gli serve prima di modificarla. Sui modelli compatibili apri Impostazioni, Accessibilità e Banner di testo. Amazon documenta opzioni per dimensione e colore dei caratteri, dimensione del banner e durata; usa il tutorial disponibile se non conosci il menu. Disponibilità e diciture possono variare secondo il dispositivo. Modifica solo la preferenza pertinente con il consenso del proprietario e annota il valore precedente per poterlo ripristinare."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: accessibilità sui dispositivi Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi separatamente un problema di riproduzione persistente",
+          "paragraphs": [
+            "Rimuovere un riquadro dei menu non dimostra che il lettore o l’abbonamento IPTV sia stato riparato. Se il video continua a fermarsi, segnalalo separatamente indicando la versione del lettore e il comportamento sullo schermo. Per una richiesta all’assistenza Trex IPTV 8K, distingui testo dei menu, sottotitoli e messaggi di errore reali. Non occorre cancellare i dati del lettore, reinstallare un’app o condividere credenziali private per identificare un banner di testo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV: herken de tekstbanner in Fire TV-menu’s",
+      "excerpt": "Een vak dat het geselecteerde Fire TV-onderdeel beschrijft kan een leeshulp zijn, geen ondertiteling. Herken de laag voordat je nuttige toegankelijkheidsopties wijzigt.",
+      "seo_title": "Trex IPTV: tekstbanner op Fire TV controleren",
+      "seo_description": "Onderscheid de Fire TV-tekstbanner van ondertiteling en spelerfouten bij Trex IPTV, en behoud de leesvoorkeuren van de eigenaar van het apparaat.",
+      "sections": [
+        {
+          "heading": "Kijk wat het tekstvak beschrijft",
+          "paragraphs": [
+            "Lees bij een tekstbannercontrole voor Trex IPTV eerst het vak in plaats van het weg te klikken. Noemt het het gemarkeerde menuonderdeel wanneer je de afstandsbediening gebruikt, of volgt het gesproken dialoog? Amazon beschrijft Tekstbanner als een toegankelijkheidsfunctie die de titel van het geselecteerde onderdeel en bijbehorende informatie toont. Ondertiteling heeft een ander doel. Kijk of hetzelfde vak ook op het Fire TV-startscherm verschijnt, niet alleen binnen de speler."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respecteer de toegankelijkheidskeuze van de eigenaar",
+          "paragraphs": [
+            "Vraag de eigenaar eerst of deze leeshulp nuttig is. Open op ondersteunde modellen Instellingen, Toegankelijkheid en Tekstbanner. Amazon beschrijft opties voor lettergrootte, kleuren, bannerformaat en weergaveduur; gebruik de beschikbare uitleg als het menu onbekend is. Beschikbaarheid en benamingen verschillen per apparaat. Pas alleen de betreffende weergavevoorkeur aan met toestemming van de eigenaar en noteer de oude keuze zodat deze kan worden hersteld."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: toegankelijkheid op Fire-apparaten",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf een blijvend afspeelprobleem afzonderlijk",
+          "paragraphs": [
+            "Een tekstvak uit een menu verwijderen bewijst niet dat de IPTV-speler of het abonnement is gerepareerd. Stopt de video nog steeds, meld dat dan apart met de spelerversie en wat op het scherm gebeurt. Maak bij een vraag aan Trex IPTV 8K onderscheid tussen menutekst, ondertiteling en een echte foutmelding. Je hoeft geen spelergegevens te wissen, een app opnieuw te installeren of privé-inloggegevens te delen om een tekstbanner te herkennen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Trex IPTV: identificar a faixa de texto dos menus Fire TV",
+      "excerpt": "Uma caixa que descreve o item selecionado no Fire TV pode ser uma ajuda de leitura, não legendas. Identifique-a antes de alterar opções de acessibilidade úteis.",
+      "seo_title": "Trex IPTV: verificar a faixa de texto no Fire TV",
+      "seo_description": "Distinga a faixa de texto do Fire TV das legendas e dos erros do leitor ao utilizar Trex IPTV, preservando as preferências de leitura do proprietário.",
+      "sections": [
+        {
+          "heading": "Veja o que a caixa descreve",
+          "paragraphs": [
+            "Ao verificar uma faixa de texto com Trex IPTV, comece por ler a caixa em vez de a fechar. Mostra o nome do item destacado ao mover o comando ou acompanha o diálogo? A Amazon descreve a faixa de texto como uma função de acessibilidade que apresenta o título do item selecionado e informação relacionada. As legendas têm outra finalidade. Observe se a mesma caixa também aparece no ecrã inicial do Fire TV, não apenas dentro do leitor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respeite a preferência de acessibilidade do proprietário",
+          "paragraphs": [
+            "Pergunte ao proprietário se esta ajuda de leitura é útil antes de a alterar. Nos modelos compatíveis, abra Definições, Acessibilidade e Faixa de texto. A Amazon documenta opções de tamanho e cor da letra, dimensão da faixa e duração; utilize o tutorial disponível se não conhecer o menu. A disponibilidade e os nomes variam conforme o dispositivo. Altere apenas a preferência relevante com autorização do proprietário e anote a opção anterior para a poder repor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: acessibilidade nos dispositivos Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva separadamente um problema de reprodução persistente",
+          "paragraphs": [
+            "Retirar uma caixa dos menus não demonstra que o leitor ou a subscrição IPTV tenha sido reparado. Se o vídeo continuar a parar, comunique esse problema separadamente, indicando a versão do leitor e o que acontece no ecrã. Ao contactar o apoio Trex IPTV 8K, distinga texto dos menus, legendas e uma mensagem de erro real. Não precisa de apagar dados do leitor, reinstalar uma aplicação nem partilhar credenciais privadas para identificar uma faixa de texto."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Trex IPTV: как отличить текстовый баннер меню Fire TV",
+      "excerpt": "Рамка с описанием выбранного пункта Fire TV может быть средством удобного чтения, а не субтитрами. Определите её назначение перед изменением настроек.",
+      "seo_title": "Trex IPTV: проверка текстового баннера Fire TV",
+      "seo_description": "Отличайте текстовый баннер Fire TV от субтитров и ошибок проигрывателя при просмотре Trex IPTV, сохраняя удобные владельцу настройки чтения.",
+      "sections": [
+        {
+          "heading": "Прочитайте, что описывает рамка",
+          "paragraphs": [
+            "При проверке текстового баннера во время просмотра Trex IPTV сначала прочитайте рамку, а не закрывайте её. Называет ли она выделенный пункт меню при движении пульта или следует за репликами программы? Amazon описывает текстовый баннер как функцию специальных возможностей, показывающую название выбранного элемента и связанную информацию. Субтитры выполняют другую задачу. Посмотрите, появляется ли эта рамка и на главном экране Fire TV, а не только внутри проигрывателя."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Учитывайте предпочтения владельца устройства",
+          "paragraphs": [
+            "Перед изменением спросите владельца, нужна ли ему эта помощь при чтении. На поддерживаемых моделях откройте настройки, специальные возможности и текстовый баннер. Amazon описывает регулировку размера и цвета шрифта, размера баннера и времени показа; при незнакомом меню используйте доступное обучение. Набор возможностей и названия зависят от устройства. Меняйте только соответствующий параметр с согласия владельца и запишите прежнее значение, чтобы его можно было восстановить."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: специальные возможности устройств Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Сообщайте об оставшейся проблеме воспроизведения отдельно",
+          "paragraphs": [
+            "Удаление рамки меню не доказывает, что проигрыватель или подписка IPTV исправлены. Если видео продолжает останавливаться, опишите это отдельно, указав версию проигрывателя и происходящее на экране. При обращении в поддержку Trex IPTV 8K различайте текст меню, субтитры программы и настоящее сообщение об ошибке. Для определения текстового баннера не требуется очищать данные проигрывателя, переустанавливать приложение или передавать личные данные для входа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV: Fire TV کے مینو کا ٹیکسٹ بینر پہچانیں",
+      "excerpt": "Fire TV میں منتخب چیز کی وضاحت کرنے والا خانہ پڑھنے کی سہولت ہو سکتا ہے، پروگرام کے سب ٹائٹلز نہیں۔ مفید ترتیبات بدلنے سے پہلے اسے پہچانیں۔",
+      "seo_title": "Trex IPTV میں Fire TV کا ٹیکسٹ بینر چیک کریں",
+      "seo_description": "Trex IPTV دیکھتے ہوئے Fire TV کے ٹیکسٹ بینر، پروگرام کے سب ٹائٹلز اور پلیئر کی خرابی میں فرق کریں اور مالک کی پڑھنے کی ترجیح برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں خانہ کس چیز کی وضاحت کرتا ہے",
+          "paragraphs": [
+            "Trex IPTV کے ساتھ ٹیکسٹ بینر چیک کرتے وقت پہلے خانے کو پڑھیں، فوراً بند نہ کریں۔ کیا ریموٹ سے آگے بڑھنے پر یہ منتخب مینو آئٹم کا نام دکھاتا ہے، یا پروگرام کے مکالمے کے ساتھ چلتا ہے؟ Amazon کے مطابق ٹیکسٹ بینر رسائی کی سہولت ہے جو منتخب چیز کا عنوان اور متعلقہ معلومات دکھاتی ہے۔ پروگرام کے سب ٹائٹلز کا مقصد الگ ہے۔ دیکھیں یہی خانہ Fire TV کی ہوم اسکرین پر بھی آتا ہے یا صرف پلیئر کے اندر۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مالک کی رسائی والی ترجیح کا احترام کریں",
+          "paragraphs": [
+            "تبدیلی سے پہلے مالک سے پوچھیں کہ کیا پڑھنے کی یہ سہولت اس کے لیے مفید ہے۔ معاون ماڈلز پر ترتیبات، پھر رسائی اور ٹیکسٹ بینر کھولیں۔ Amazon حروف کے سائز اور رنگ، بینر کے سائز اور دکھائی دینے کی مدت کے اختیارات بیان کرتا ہے؛ مینو نیا ہو تو موجود رہنمائی استعمال کریں۔ دستیابی اور نام آلے کے مطابق بدل سکتے ہیں۔ مالک کی رضامندی سے صرف متعلقہ ترجیح بدلیں اور پچھلی ترتیب نوٹ رکھیں تاکہ واپس کی جا سکے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire آلات کی رسائی والی سہولتیں",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "باقی رہنے والی پلے بیک خرابی الگ بیان کریں",
+          "paragraphs": [
+            "مینو کا خانہ ہٹ جانے سے یہ ثابت نہیں ہوتا کہ IPTV پلیئر یا سبسکرپشن درست ہو گئی ہے۔ ویڈیو اب بھی رکتی ہے تو اسے الگ مسئلہ بتائیں، ساتھ پلیئر کا ورژن اور اسکرین پر ہونے والا عمل لکھیں۔ Trex IPTV 8K کی سپورٹ سے سوال کرتے وقت مینو کے متن، پروگرام کے سب ٹائٹلز اور حقیقی خرابی کے پیغام میں فرق کریں۔ ٹیکسٹ بینر پہچاننے کے لیے پلیئر کا ڈیٹا صاف کرنا، ایپ دوبارہ نصب کرنا یا نجی لاگ اِن تفصیلات دینا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Trex IPTV: تعرّف على شريط النص في قوائم Fire TV",
+      "excerpt": "قد يكون المربع الذي يصف العنصر المحدد في Fire TV وسيلة مساعدة للقراءة لا ترجمة للبرنامج. حدّد وظيفته قبل تغيير إعدادات إمكانية الوصول المفيدة.",
+      "seo_title": "Trex IPTV: فحص شريط النص على Fire TV",
+      "seo_description": "ميّز شريط النص في Fire TV من ترجمة البرامج وأخطاء المشغّل أثناء استخدام Trex IPTV، مع الحفاظ على تفضيلات القراءة التي يحتاجها مالك الجهاز.",
+      "sections": [
+        {
+          "heading": "اقرأ ما الذي يصفه المربع",
+          "paragraphs": [
+            "عند فحص شريط النص أثناء استخدام Trex IPTV، ابدأ بقراءة المربع بدل إغلاقه فورًا. هل يعرض اسم عنصر القائمة المحدد عند تحريك جهاز التحكم، أم يتابع حوار البرنامج؟ تصف Amazon شريط النص بأنه ميزة لإمكانية الوصول تعرض عنوان العنصر المحدد ومعلومات مرتبطة به. تؤدي ترجمة البرنامج وظيفة مختلفة. لاحظ ما إذا كان المربع نفسه يظهر أيضًا على شاشة Fire TV الرئيسية، لا داخل المشغّل فقط."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احترم تفضيل إمكانية الوصول لدى المالك",
+          "paragraphs": [
+            "اسأل مالك الجهاز قبل التغيير إن كانت هذه الوسيلة تساعده على القراءة. في الطرز المدعومة، افتح الإعدادات، ثم إمكانية الوصول، ثم شريط النص. توثّق Amazon خيارات لحجم الخط وألوانه وحجم الشريط ومدة ظهوره؛ استخدم الشرح المتاح إذا كانت القائمة غير مألوفة. قد تختلف الخيارات وأسماؤها باختلاف الجهاز. عدّل التفضيل المعني فقط بموافقة المالك، وسجّل الاختيار السابق لتتمكن من استعادته."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: إمكانية الوصول على أجهزة Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "صف مشكلة التشغيل المستمرة بصورة منفصلة",
+          "paragraphs": [
+            "إزالة مربع من القوائم لا تثبت إصلاح مشغّل IPTV أو الاشتراك. إذا استمر توقف الفيديو، فأبلغ عن ذلك بصورة منفصلة مع إصدار المشغّل وما يحدث على الشاشة. عند سؤال دعم Trex IPTV 8K، ميّز نص القوائم من ترجمة البرنامج ومن رسالة خطأ فعلية. لا تحتاج إلى مسح بيانات المشغّل أو إعادة تثبيت التطبيق أو مشاركة تفاصيل تسجيل الدخول الخاصة لمجرد التعرف على شريط النص."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV: Fire TV के मेनू का टेक्स्ट बैनर पहचानें",
+      "excerpt": "Fire TV पर चुनी हुई चीज़ का विवरण देने वाला बॉक्स पढ़ने की सुविधा हो सकता है, कार्यक्रम के सबटाइटल नहीं। उपयोगी सेटिंग बदलने से पहले उसे पहचानें।",
+      "seo_title": "Trex IPTV में Fire TV का टेक्स्ट बैनर जाँचें",
+      "seo_description": "Trex IPTV देखते समय Fire TV के टेक्स्ट बैनर, कार्यक्रम के सबटाइटल और प्लेयर की त्रुटि में अंतर करें तथा मालिक की पढ़ने की पसंद बनाए रखें।",
+      "sections": [
+        {
+          "heading": "देखें बॉक्स किस चीज़ का वर्णन करता है",
+          "paragraphs": [
+            "Trex IPTV के साथ टेक्स्ट बैनर जाँचते समय पहले बॉक्स पढ़ें, उसे तुरंत बंद न करें। क्या रिमोट से आगे बढ़ने पर वह चुने हुए मेनू विकल्प का नाम बताता है, या कार्यक्रम के संवाद का अनुसरण करता है? Amazon के अनुसार टेक्स्ट बैनर सुलभता की सुविधा है, जो चुनी हुई चीज़ का शीर्षक और संबंधित जानकारी दिखाती है। कार्यक्रम के सबटाइटल का उद्देश्य अलग है। देखें कि यही बॉक्स Fire TV की होम स्क्रीन पर भी दिखता है या केवल प्लेयर में।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मालिक की सुलभता संबंधी पसंद का सम्मान करें",
+          "paragraphs": [
+            "बदलाव से पहले मालिक से पूछें कि पढ़ने की यह सुविधा उसके लिए उपयोगी है या नहीं। समर्थित मॉडल पर सेटिंग, फिर सुलभता और टेक्स्ट बैनर खोलें। Amazon अक्षरों के आकार और रंग, बैनर के आकार और दिखने की अवधि के विकल्प बताता है; मेनू नया लगे तो उपलब्ध मार्गदर्शिका देखें। उपलब्धता और विकल्पों के नाम डिवाइस के अनुसार बदल सकते हैं। मालिक की सहमति से केवल संबंधित पसंद बदलें और पुराना विकल्प लिख लें ताकि उसे वापस चुना जा सके।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire डिवाइस की सुलभता सुविधाएँ",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "जारी रहने वाली प्लेबैक समस्या अलग बताएँ",
+          "paragraphs": [
+            "मेनू का बॉक्स हटने से यह साबित नहीं होता कि IPTV प्लेयर या सदस्यता ठीक हो गई है। वीडियो अब भी रुकता है तो उसे अलग समस्या के रूप में बताएँ, साथ में प्लेयर का संस्करण और स्क्रीन पर होने वाला व्यवहार लिखें। Trex IPTV 8K सहायता से सवाल करते समय मेनू के पाठ, कार्यक्रम के सबटाइटल और वास्तविक त्रुटि संदेश में अंतर करें। टेक्स्ट बैनर पहचानने के लिए प्लेयर का डेटा साफ करना, ऐप दोबारा इंस्टॉल करना या निजी लॉगिन जानकारी देना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: accessibility features on Fire devices",
+      "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+    }
+  ]
+}
+

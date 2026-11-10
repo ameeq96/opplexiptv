@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-10",
+  "topic": "Pixel Airplane mode and remembered Wi-Fi preferences: distinguish a status icon, a connected network and an actual playback result during 5G Live IPTV",
+  "primary_keyword": "5G Live IPTV Wi-Fi check",
+  "slug": "5g-pixel-airplane-mode-wifi-connection-check",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV Wi-Fi check: read more than the airplane icon",
+      "excerpt": "The airplane symbol alone does not describe every wireless connection on a Pixel phone. Check the selected Wi-Fi network separately before reporting a player fault.",
+      "seo_title": "5G Live IPTV Wi-Fi check with Pixel Airplane mode",
+      "seo_description": "Check Pixel Wi-Fi separately from the airplane icon during 5G Live IPTV, account for remembered settings, and record a real connection or playback result.",
+      "sections": [
+        {
+          "heading": "Record the network, not just the icon",
+          "paragraphs": [
+            "A 5G Live IPTV Wi-Fi check is more useful when it records both icons and the selected network. If the airplane symbol is visible, do not immediately label the player offline. Look separately for Wi-Fi’s state and whether the phone names a connected network. Also distinguish a connection label from a successfully loaded page; one alone does not prove that the IPTV programme can play."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the remembered wireless preference",
+          "paragraphs": [
+            "Google’s Pixel guidance explains that Wi-Fi and Bluetooth initially turn off with Airplane mode, but the phone can remember a later wireless preference. Wi-Fi may therefore remain on during a subsequent use of Airplane mode. Inspect Settings, Network and internet, then Internet on the supported phone, rather than repeatedly toggling several controls. Labels and availability depend on Android version and device. Use wireless connections only where permitted and keep the owner’s intended settings."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Wi-Fi connections while Airplane mode is on",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separate connectivity from a player error",
+          "paragraphs": [
+            "If you need a simple connection comparison, load a familiar public webpage once on the intended Wi-Fi network, then return to the same player. A working webpage does not establish stream availability; an error inside one player does not establish that every internet connection is down. Record the network type, Wi-Fi connection state and exact error for support, without exposing network passwords or private playlist links. Do not clear saved player data merely to investigate an airplane icon."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comprobación Wi-Fi de 5G Live IPTV: no mires solo el avión",
+      "excerpt": "El símbolo del avión no describe por sí solo todas las conexiones de un Pixel. Revisa la red Wi-Fi seleccionada antes de informar de un fallo del reproductor.",
+      "seo_title": "5G Live IPTV: comprobar Wi-Fi con el modo avión de Pixel",
+      "seo_description": "Comprueba el Wi-Fi de Pixel por separado del icono de avión durante 5G Live IPTV, ten en cuenta los ajustes recordados y registra el resultado real.",
+      "sections": [
+        {
+          "heading": "Anota la red, no solo el icono",
+          "paragraphs": [
+            "Una comprobación Wi-Fi de 5G Live IPTV resulta más útil si registra tanto los iconos como la red seleccionada. Si aparece el avión, no des por hecho que el reproductor está desconectado. Mira por separado el estado del Wi-Fi y si el teléfono indica una red conectada. Distingue también una etiqueta de conexión de una página cargada correctamente: ninguna de esas señales, por sí sola, demuestra que el programa IPTV pueda reproducirse."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la preferencia inalámbrica guardada",
+          "paragraphs": [
+            "La guía de Google para Pixel explica que el Wi-Fi y el Bluetooth se apagan inicialmente con el modo avión, pero el teléfono puede recordar una preferencia inalámbrica posterior. Por eso el Wi-Fi puede seguir encendido la próxima vez que actives ese modo. En un teléfono compatible, revisa Ajustes, Redes e Internet e Internet en vez de cambiar varios controles repetidamente. Los nombres y la disponibilidad dependen del dispositivo y Android. Usa conexiones inalámbricas solo donde esté permitido y respeta los ajustes elegidos por el propietario."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: conexiones Wi-Fi con el modo avión activado",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la conexión del error del reproductor",
+          "paragraphs": [
+            "Para una comparación sencilla, carga una vez una página pública conocida en la red Wi-Fi prevista y vuelve al mismo reproductor. Que funcione una página no demuestra la disponibilidad de la emisión; un error en un reproductor no demuestra que todas las conexiones a Internet hayan fallado. Anota tipo de red, estado del Wi-Fi y error exacto para soporte, sin revelar contraseñas de red ni enlaces privados de listas. No borres los datos guardados del reproductor solo para investigar el icono del avión."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Wi-Fi de 5G Live IPTV : ne regardez pas seulement l’avion",
+      "excerpt": "Le symbole d’avion ne décrit pas à lui seul toutes les connexions d’un Pixel. Vérifiez le réseau Wi-Fi choisi avant de signaler une panne du lecteur.",
+      "seo_title": "5G Live IPTV : vérifier le Wi-Fi en mode Avion sur Pixel",
+      "seo_description": "Vérifiez le Wi-Fi du Pixel indépendamment de l’icône Avion pendant 5G Live IPTV, tenez compte des préférences mémorisées et relevez le résultat réel.",
+      "sections": [
+        {
+          "heading": "Noter le réseau, pas seulement l’icône",
+          "paragraphs": [
+            "Une vérification Wi-Fi pour 5G Live IPTV est plus utile si elle relève les icônes et le réseau sélectionné. Si le symbole d’avion apparaît, ne concluez pas immédiatement que le lecteur est hors ligne. Examinez séparément l’état du Wi-Fi et la présence d’un réseau indiqué comme connecté. Distinguez aussi cette indication d’une page effectivement chargée : aucun de ces seuls éléments ne prouve que le programme IPTV peut être lu."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner la préférence sans fil mémorisée",
+          "paragraphs": [
+            "La documentation Google pour Pixel explique que le Wi-Fi et le Bluetooth se coupent initialement avec le mode Avion, mais que le téléphone peut mémoriser une préférence sans fil ultérieure. Le Wi-Fi peut donc rester activé lors d’une utilisation suivante du mode Avion. Sur un téléphone compatible, consultez Paramètres, Réseau et Internet, puis Internet plutôt que de basculer plusieurs commandes à répétition. Les libellés et fonctions dépendent du modèle et d’Android. N’utilisez les connexions sans fil que là où elles sont autorisées et respectez les réglages du propriétaire."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : connexions Wi-Fi lorsque le mode Avion est activé",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguer connexion et erreur du lecteur",
+          "paragraphs": [
+            "Pour une comparaison simple, chargez une fois une page publique connue sur le Wi-Fi prévu, puis revenez au même lecteur. Une page accessible ne garantit pas la disponibilité du flux ; une erreur dans un lecteur ne prouve pas que toutes les connexions Internet sont coupées. Notez le type de réseau, l’état du Wi-Fi et l’erreur exacte pour l’assistance, sans divulguer de mot de passe réseau ni de lien privé de liste. N’effacez pas les données du lecteur pour examiner une simple icône d’avion."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Wi-Fi di 5G Live IPTV: non guardare soltanto l’aeroplano",
+      "excerpt": "Il simbolo dell’aeroplano non descrive da solo tutte le connessioni di un Pixel. Verifica la rete Wi-Fi scelta prima di segnalare un guasto del lettore.",
+      "seo_title": "5G Live IPTV: controllo Wi-Fi in modalità aereo su Pixel",
+      "seo_description": "Controlla il Wi-Fi di Pixel separatamente dall’icona aereo durante 5G Live IPTV, considera le preferenze memorizzate e annota il risultato effettivo.",
+      "sections": [
+        {
+          "heading": "Annota la rete, non soltanto l’icona",
+          "paragraphs": [
+            "Un controllo Wi-Fi per 5G Live IPTV è più utile se registra sia le icone sia la rete selezionata. Se compare l’aeroplano, non concludere subito che il lettore sia offline. Guarda separatamente lo stato del Wi-Fi e se il telefono indica una rete connessa. Distingui inoltre un’etichetta di connessione da una pagina caricata correttamente: nessuna di queste sole indicazioni dimostra che il programma IPTV possa essere riprodotto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla la preferenza wireless memorizzata",
+          "paragraphs": [
+            "La guida Google per Pixel spiega che Wi-Fi e Bluetooth inizialmente si disattivano con la modalità aereo, ma il telefono può ricordare una successiva preferenza wireless. Il Wi-Fi può quindi rimanere attivo quando riusi la modalità aereo. Sul telefono compatibile controlla Impostazioni, Rete e Internet, poi Internet, invece di attivare e disattivare ripetutamente più comandi. Nomi e disponibilità dipendono da dispositivo e versione Android. Usa le connessioni wireless solo dove consentito e rispetta le impostazioni volute dal proprietario."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: connessioni Wi-Fi con la modalità aereo attiva",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui la connessione dall’errore del lettore",
+          "paragraphs": [
+            "Per un semplice confronto, carica una volta una pagina pubblica conosciuta sulla rete Wi-Fi prevista e torna allo stesso lettore. Una pagina funzionante non dimostra che il flusso sia disponibile; un errore in un lettore non dimostra che tutte le connessioni Internet siano assenti. Annota tipo di rete, stato del Wi-Fi ed errore esatto per l’assistenza, senza mostrare password di rete o collegamenti privati delle playlist. Non cancellare i dati salvati del lettore soltanto per esaminare un’icona aereo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en wifi: kijk verder dan het vliegtuigpictogram",
+      "excerpt": "Het vliegtuigpictogram vertelt niet alles over de verbindingen van een Pixel. Controleer het gekozen wifinetwerk apart voordat je een spelerprobleem meldt.",
+      "seo_title": "5G Live IPTV: wifi controleren in vliegtuigmodus op Pixel",
+      "seo_description": "Controleer Pixel-wifi los van het vliegtuigpictogram tijdens 5G Live IPTV, houd rekening met onthouden voorkeuren en noteer het werkelijke resultaat.",
+      "sections": [
+        {
+          "heading": "Noteer het netwerk naast het pictogram",
+          "paragraphs": [
+            "Een wificontrole voor 5G Live IPTV is nuttiger als je zowel de pictogrammen als het gekozen netwerk noteert. Noem de speler niet meteen offline wanneer je het vliegtuig ziet. Kijk apart of wifi aanstaat en of de telefoon een verbonden netwerk noemt. Onderscheid die verbindingsmelding ook van een daadwerkelijk geladen pagina; geen van deze aanwijzingen bewijst op zichzelf dat het IPTV-programma kan afspelen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de onthouden draadloze voorkeur",
+          "paragraphs": [
+            "Google legt voor Pixel uit dat wifi en Bluetooth aanvankelijk uitgaan met vliegtuigmodus, maar dat de telefoon een latere draadloze voorkeur kan onthouden. Wifi kan daarom bij een volgende keer vliegtuigmodus aan blijven. Bekijk op een ondersteunde telefoon Instellingen, Netwerk en internet en vervolgens Internet, in plaats van meerdere knoppen herhaaldelijk om te zetten. Namen en beschikbaarheid verschillen per apparaat en Android-versie. Gebruik draadloze verbindingen alleen waar dat mag en respecteer de instellingen van de eigenaar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: wifiverbindingen terwijl vliegtuigmodus aanstaat",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid verbinding en spelerfout",
+          "paragraphs": [
+            "Wil je een eenvoudige verbinding vergelijken, laad dan eenmaal een bekende openbare webpagina op het bedoelde wifinetwerk en ga terug naar dezelfde speler. Een werkende pagina bewijst niet dat de stream beschikbaar is; een fout in één speler bewijst niet dat alle internetverbindingen uitgevallen zijn. Noteer netwerktype, wifistatus en de exacte fout voor ondersteuning, zonder netwerkwachtwoorden of privéplaylistlinks te tonen. Wis geen opgeslagen spelergegevens alleen om een vliegtuigpictogram te onderzoeken."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Wi-Fi do 5G Live IPTV: veja além do símbolo de avião",
+      "excerpt": "O símbolo de avião não descreve sozinho todas as conexões de um Pixel. Confira a rede Wi-Fi escolhida antes de relatar uma falha do leitor.",
+      "seo_title": "5G Live IPTV: verificar Wi-Fi no modo avião do Pixel",
+      "seo_description": "Confira o Wi-Fi do Pixel separadamente do ícone de avião durante 5G Live IPTV, considere preferências memorizadas e registre o resultado real.",
+      "sections": [
+        {
+          "heading": "Registre a rede além do ícone",
+          "paragraphs": [
+            "Uma verificação de Wi-Fi para 5G Live IPTV é mais útil quando registra os ícones e a rede selecionada. Se aparecer o avião, não conclua imediatamente que o leitor está sem conexão. Veja separadamente o estado do Wi-Fi e se o telefone indica uma rede conectada. Diferencie também essa indicação de uma página realmente carregada: nenhuma dessas observações isolada prova que o programa IPTV possa ser reproduzido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a preferência sem fio memorizada",
+          "paragraphs": [
+            "A orientação do Google para Pixel explica que Wi-Fi e Bluetooth inicialmente desligam com o modo avião, mas o telefone pode lembrar uma preferência sem fio posterior. Assim, o Wi-Fi pode permanecer ligado na próxima utilização desse modo. Num telefone compatível, confira Configurações, Rede e Internet e depois Internet, em vez de alternar vários controles repetidamente. Nomes e disponibilidade dependem do aparelho e do Android. Use conexões sem fio apenas onde permitido e respeite os ajustes escolhidos pelo proprietário."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: conexões Wi-Fi com o modo avião ativado",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a conexão do erro do leitor",
+          "paragraphs": [
+            "Para uma comparação simples, carregue uma vez uma página pública conhecida na rede Wi-Fi pretendida e volte ao mesmo leitor. Uma página funcionando não comprova a disponibilidade da transmissão; um erro num leitor não comprova que todas as conexões à Internet falharam. Anote tipo de rede, estado do Wi-Fi e erro exato para o suporte, sem expor senhas de rede ou links privados de listas. Não apague os dados guardados do leitor apenas para investigar um ícone de avião."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Wi-Fi для 5G Live IPTV: не ограничивайтесь значком самолёта",
+      "excerpt": "Значок самолёта не описывает все подключения телефона Pixel. Прежде чем сообщать о сбое плеера, отдельно проверьте выбранную сеть Wi-Fi.",
+      "seo_title": "5G Live IPTV: проверка Wi-Fi в авиарежиме на Pixel",
+      "seo_description": "Проверьте Wi-Fi на Pixel отдельно от значка самолёта при просмотре 5G Live IPTV, учтите сохранённые настройки и запишите фактический результат.",
+      "sections": [
+        {
+          "heading": "Запишите сеть, а не только значок",
+          "paragraphs": [
+            "Проверка Wi-Fi для 5G Live IPTV полезнее, если вы фиксируете и значки, и выбранную сеть. Увидев самолёт, не объявляйте плеер сразу отключённым от интернета. Отдельно посмотрите, включён ли Wi-Fi и указана ли подключённая сеть. Также отличайте отметку подключения от действительно загруженной страницы: ни одно из этих наблюдений само по себе не доказывает, что программа IPTV воспроизводится."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте сохранённый выбор беспроводной связи",
+          "paragraphs": [
+            "Google объясняет для Pixel, что при первом включении авиарежима Wi-Fi и Bluetooth выключаются, однако телефон может запомнить последующий выбор беспроводной связи. Поэтому в следующий раз Wi-Fi может остаться включённым. На поддерживаемом телефоне откройте настройки, раздел сети и интернета, затем «Интернет», вместо многократного переключения нескольких параметров. Названия и доступность зависят от устройства и версии Android. Используйте беспроводную связь только там, где это разрешено, и сохраняйте намеренные настройки владельца."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: подключение Wi-Fi при включённом авиарежиме",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Различайте соединение и ошибку плеера",
+          "paragraphs": [
+            "Для простого сравнения один раз загрузите знакомую общедоступную веб-страницу в нужной сети Wi-Fi и вернитесь в тот же плеер. Работающая страница не доказывает доступность потока; ошибка одного плеера не означает отказ всех интернет-подключений. Для поддержки запишите тип сети, состояние Wi-Fi и точную ошибку, не раскрывая сетевые пароли и частные ссылки плейлистов. Не стирайте сохранённые данные плеера лишь ради проверки значка самолёта."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی وائی فائی جانچ: صرف ہوائی جہاز کا نشان نہ دیکھیں",
+      "excerpt": "Pixel فون پر ہوائی جہاز کا نشان تمام وائرلیس رابطوں کی حالت نہیں بتاتا۔ پلیئر کی خرابی بتانے سے پہلے منتخب وائی فائی نیٹ ورک الگ جانچیں۔",
+      "seo_title": "5G Live IPTV: Pixel کے ہوائی جہاز موڈ میں وائی فائی جانچ",
+      "seo_description": "5G Live IPTV کے دوران Pixel کی وائی فائی حالت کو ہوائی جہاز کے نشان سے الگ دیکھیں، یاد رکھی گئی ترجیحات سمجھیں اور اصل نتیجہ لکھیں۔",
+      "sections": [
+        {
+          "heading": "نشان کے ساتھ نیٹ ورک بھی لکھیں",
+          "paragraphs": [
+            "5G Live IPTV کی وائی فائی جانچ تب زیادہ مفید ہوتی ہے جب نشان اور منتخب نیٹ ورک دونوں لکھے جائیں۔ ہوائی جہاز کا نشان دیکھ کر فوراً پلیئر کو آف لائن نہ کہیں۔ الگ سے دیکھیں کہ وائی فائی فعال ہے یا نہیں اور فون کسی جڑے ہوئے نیٹ ورک کا نام دکھاتا ہے یا نہیں۔ رابطے کی تحریر اور واقعی کھل جانے والے ویب صفحے میں بھی فرق کریں؛ ان میں سے کوئی ایک بات اکیلے یہ ثابت نہیں کرتی کہ IPTV پروگرام چل سکتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "یاد رکھی گئی وائرلیس ترجیح دیکھیں",
+          "paragraphs": [
+            "Google کی Pixel رہنمائی بتاتی ہے کہ ہوائی جہاز موڈ پہلی بار فعال کرنے پر وائی فائی اور بلوٹوتھ بند ہوتے ہیں، مگر فون بعد میں چنی گئی وائرلیس ترجیح یاد رکھ سکتا ہے۔ اس لیے اگلی بار اس موڈ کے ساتھ وائی فائی فعال رہ سکتا ہے۔ معاون فون میں سیٹنگز، نیٹ ورک اور انٹرنیٹ، پھر انٹرنیٹ دیکھیں؛ کئی کنٹرول بار بار نہ بدلیں۔ نام اور دستیابی آلے اور Android ورژن کے مطابق بدلتے ہیں۔ وائرلیس رابطہ صرف اجازت والی جگہ استعمال کریں اور مالک کی مطلوبہ ترتیبات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: ہوائی جہاز موڈ میں وائی فائی رابطے",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "رابطے اور پلیئر کی خرابی کو الگ رکھیں",
+          "paragraphs": [
+            "سادہ موازنہ کرنا ہو تو مطلوبہ وائی فائی پر ایک جانی پہچانی عوامی ویب سائٹ ایک بار کھولیں، پھر اسی پلیئر پر واپس آئیں۔ ویب صفحہ کھلنا اسٹریم کی دستیابی ثابت نہیں کرتا؛ ایک پلیئر کی خرابی سے تمام انٹرنیٹ رابطے بند ہونا ثابت نہیں ہوتا۔ مدد کے لیے نیٹ ورک کی قسم، وائی فائی کی حالت اور خرابی کا درست متن لکھیں، مگر نیٹ ورک پاس ورڈ یا نجی پلے لسٹ لنک ظاہر نہ کریں۔ صرف ہوائی جہاز کا نشان جانچنے کے لیے پلیئر کا محفوظ ڈیٹا صاف نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "فحص Wi-Fi في 5G Live IPTV: لا تكتفِ برمز الطائرة",
+      "excerpt": "رمز الطائرة لا يصف وحده جميع اتصالات هاتف Pixel. افحص شبكة Wi-Fi المختارة بشكل مستقل قبل الإبلاغ عن عطل في المشغّل.",
+      "seo_title": "5G Live IPTV: فحص Wi-Fi مع وضع الطيران في Pixel",
+      "seo_description": "افحص Wi-Fi في Pixel منفصلًا عن رمز الطائرة أثناء 5G Live IPTV، وراعِ التفضيلات المحفوظة، وسجّل نتيجة الاتصال أو التشغيل الفعلية.",
+      "sections": [
+        {
+          "heading": "سجّل الشبكة وليس الرمز فقط",
+          "paragraphs": [
+            "يكون فحص Wi-Fi لـ 5G Live IPTV أنفع عندما يسجّل الرموز والشبكة المختارة معًا. إذا ظهر رمز الطائرة، فلا تصف المشغّل فورًا بأنه غير متصل. انظر بشكل مستقل إلى تشغيل Wi-Fi وما إذا كان الهاتف يعرض شبكة متصلة. وميّز أيضًا بين عبارة الاتصال وصفحة حُمّلت فعلًا؛ فلا تكفي أي علامة منفردة لإثبات أن برنامج IPTV قابل للتشغيل."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص تفضيل الاتصال اللاسلكي المحفوظ",
+          "paragraphs": [
+            "توضح إرشادات Google لهواتف Pixel أن Wi-Fi وBluetooth يتوقفان في البداية مع وضع الطيران، لكن الهاتف قد يتذكر تفضيلًا لاسلكيًا لاحقًا. لذلك قد يبقى Wi-Fi نشطًا عند استخدام وضع الطيران مرة أخرى. في الهاتف المدعوم، افحص الإعدادات ثم الشبكة والإنترنت ثم الإنترنت بدل تبديل عدة عناصر مرارًا. تختلف الأسماء والإتاحة حسب الجهاز وإصدار Android. استخدم الاتصالات اللاسلكية حيث يُسمح بها فقط، واحترم الإعدادات المقصودة لمالك الهاتف."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: اتصالات Wi-Fi أثناء تفعيل وضع الطيران",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل حالة الاتصال عن خطأ المشغّل",
+          "paragraphs": [
+            "للمقارنة البسيطة، افتح مرة واحدة صفحة عامة مألوفة على شبكة Wi-Fi المطلوبة، ثم عد إلى المشغّل نفسه. عمل الصفحة لا يثبت توفر البث، وخطأ مشغّل واحد لا يثبت تعطل كل اتصالات الإنترنت. سجّل نوع الشبكة وحالة Wi-Fi ورسالة الخطأ الدقيقة للدعم دون كشف كلمات مرور الشبكة أو روابط قوائم التشغيل الخاصة. لا تمسح بيانات المشغّل المحفوظة لمجرد فحص رمز الطائرة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV वाई-फाई जाँच: सिर्फ हवाई जहाज़ का निशान न देखें",
+      "excerpt": "Pixel पर हवाई जहाज़ का निशान सभी वायरलेस कनेक्शन की स्थिति नहीं बताता। प्लेयर की खराबी बताने से पहले चुना हुआ वाई-फाई नेटवर्क अलग जाँचें।",
+      "seo_title": "5G Live IPTV: Pixel के हवाई जहाज़ मोड में वाई-फाई जाँच",
+      "seo_description": "5G Live IPTV देखते समय Pixel के वाई-फाई को हवाई जहाज़ के निशान से अलग जाँचें, याद रखी गई प्राथमिकताएँ समझें और वास्तविक परिणाम लिखें।",
+      "sections": [
+        {
+          "heading": "निशान के साथ नेटवर्क भी लिखें",
+          "paragraphs": [
+            "5G Live IPTV की वाई-फाई जाँच तब ज्यादा उपयोगी है जब निशान और चुना हुआ नेटवर्क दोनों दर्ज हों। हवाई जहाज़ का निशान दिखने पर तुरंत प्लेयर को ऑफलाइन न मानें। अलग से देखें कि वाई-फाई चालू है या नहीं और फोन किसी जुड़े नेटवर्क का नाम दिखाता है या नहीं। कनेक्शन की लिखी स्थिति और सचमुच खुले वेब पेज में भी अंतर करें; इनमें से कोई एक बात अकेले यह साबित नहीं करती कि IPTV कार्यक्रम चल सकता है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "याद रखी गई वायरलेस प्राथमिकता देखें",
+          "paragraphs": [
+            "Google की Pixel मार्गदर्शिका बताती है कि हवाई जहाज़ मोड पहली बार चालू करने पर वाई-फाई और ब्लूटूथ बंद होते हैं, लेकिन फोन बाद में चुनी वायरलेस प्राथमिकता याद रख सकता है। इसलिए अगली बार उस मोड के साथ वाई-फाई चालू रह सकता है। समर्थित फोन में सेटिंग, नेटवर्क और इंटरनेट, फिर इंटरनेट देखें; कई नियंत्रण बार-बार न बदलें। नाम और उपलब्धता डिवाइस तथा Android संस्करण के अनुसार बदलते हैं। वायरलेस कनेक्शन केवल अनुमति वाली जगह इस्तेमाल करें और मालिक की इच्छित सेटिंग बनाए रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: हवाई जहाज़ मोड में वाई-फाई कनेक्शन",
+              "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "कनेक्शन और प्लेयर की त्रुटि अलग रखें",
+          "paragraphs": [
+            "सरल तुलना के लिए इच्छित वाई-फाई पर कोई परिचित सार्वजनिक वेब पेज एक बार खोलें, फिर उसी प्लेयर पर लौटें। पेज खुलना स्ट्रीम की उपलब्धता साबित नहीं करता; एक प्लेयर की त्रुटि से सभी इंटरनेट कनेक्शन बंद होना साबित नहीं होता। सहायता के लिए नेटवर्क का प्रकार, वाई-फाई की स्थिति और त्रुटि का सही पाठ लिखें, पर नेटवर्क पासवर्ड या निजी प्लेलिस्ट लिंक न दिखाएँ। सिर्फ हवाई जहाज़ का निशान जाँचने के लिए प्लेयर का सहेजा हुआ डेटा साफ न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: Android wireless connections in Airplane mode",
+      "url": "https://support.google.com/pixelphone/answer/12639358?hl=en"
+    }
+  ]
+}

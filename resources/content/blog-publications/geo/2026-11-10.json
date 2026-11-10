@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-10",
+  "topic": "Apple TV 4K one-time sleep timer versus idle sleep and a player fault: identify the countdown before changing Geo IPTV settings",
+  "primary_keyword": "Geo IPTV sleep timer",
+  "slug": "geo-apple-tv-one-time-sleep-timer-check",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV sleep timer: check Apple TV’s countdown first",
+      "excerpt": "An Apple TV that turns off after a chosen interval needs a different check from a player that stops while the device remains awake. Start with the timer.",
+      "seo_title": "Geo IPTV sleep timer: Apple TV countdown or player fault?",
+      "seo_description": "Check Apple TV 4K’s one-time sleep timer during Geo IPTV viewing, distinguish idle sleep, and record a continuing player fault without resetting your setup.",
+      "sections": [
+        {
+          "heading": "Identify what actually turns off",
+          "paragraphs": [
+            "If you are looking for a Geo IPTV sleep timer setting, first identify what stopped. Did the entire Apple TV turn off after roughly the same interval, or did only the programme stop while menus remained available? Note the time you started watching and whether someone intentionally set a timer. A repeated interval is useful context, but it does not prove a subscription or network problem."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspect the one-time countdown",
+          "paragraphs": [
+            "Apple documents a one-time Sleep Timer in Apple TV 4K’s Control Centre. Hold the remote’s TV button, select Sleep Timer and inspect the option shown. To cancel an active timer, select that control again and choose Cancel Timer. This countdown is different from General, Sleep After, which concerns inactivity. Follow the controls on your actual model and software version; do not remove a household member’s intended timer without asking."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K sleep-timer controls",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the result specific",
+          "paragraphs": [
+            "After an agreed timer change, return to the same player and observe one ordinary session. If the device stays awake but playback still stops, report that separate symptom rather than calling every interruption a timer fault. Include the Apple TV model, player version, approximate stopping interval and whether Home Screen navigation worked. Keep passwords and private playlist addresses out of screenshots. Avoid a factory reset for a timer check, and retain sleep preferences that serve your household."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Temporizador de Geo IPTV: revisa la cuenta atrás del Apple TV",
+      "excerpt": "Un Apple TV que se apaga tras un intervalo elegido requiere una comprobación distinta de un reproductor que se detiene con el dispositivo aún activo.",
+      "seo_title": "Geo IPTV: temporizador del Apple TV o fallo del reproductor",
+      "seo_description": "Revisa el temporizador puntual del Apple TV 4K al ver Geo IPTV, distingue el reposo por inactividad y describe un fallo persistente sin restablecer tu equipo.",
+      "sections": [
+        {
+          "heading": "Identifica qué se ha apagado",
+          "paragraphs": [
+            "Si buscas el temporizador de apagado para Geo IPTV, identifica primero qué se detuvo. ¿Se apagó todo el Apple TV después de un intervalo parecido, o solo se paró el programa mientras los menús seguían disponibles? Anota cuándo empezaste a verlo y si alguien activó un temporizador a propósito. Un intervalo repetido aporta contexto, pero no demuestra un problema de suscripción ni de red."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la cuenta atrás puntual",
+          "paragraphs": [
+            "Apple documenta un temporizador puntual en el centro de control del Apple TV 4K. Mantén pulsado el botón TV del mando, selecciona el temporizador de reposo y revisa la opción mostrada. Para cancelar uno activo, selecciona de nuevo ese control y elige cancelar el temporizador. Es distinto del ajuste de reposo de General, que responde a la inactividad. Sigue los controles de tu modelo y versión; consulta antes de quitar un temporizador elegido por otra persona de casa."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: controles del temporizador de reposo del Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Describe un resultado concreto",
+          "paragraphs": [
+            "Después de un cambio acordado, vuelve al mismo reproductor y observa una sesión normal. Si el dispositivo sigue activo pero la reproducción se detiene, informa de ese síntoma por separado en vez de atribuir cada interrupción al temporizador. Incluye modelo del Apple TV, versión del reproductor, intervalo aproximado y si funcionaba la navegación de inicio. Oculta contraseñas y direcciones privadas de listas en las capturas. Esta comprobación no requiere un restablecimiento de fábrica; conserva las preferencias útiles para tu hogar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Minuterie Geo IPTV : vérifier le compte à rebours de l’Apple TV",
+      "excerpt": "Un Apple TV qui s’éteint après une durée choisie ne se vérifie pas comme un lecteur qui s’arrête alors que l’appareil reste éveillé. Commencez par la minuterie.",
+      "seo_title": "Geo IPTV : minuterie Apple TV ou arrêt du lecteur ?",
+      "seo_description": "Vérifiez la minuterie ponctuelle de l’Apple TV 4K pendant Geo IPTV, distinguez la veille après inactivité et décrivez un arrêt persistant sans réinitialisation.",
+      "sections": [
+        {
+          "heading": "Repérer ce qui s’éteint vraiment",
+          "paragraphs": [
+            "Si vous cherchez une minuterie de veille pour Geo IPTV, commencez par identifier ce qui s’est arrêté. L’Apple TV entier s’est-il éteint après un délai semblable, ou seul le programme s’est-il arrêté alors que les menus restaient accessibles ? Notez l’heure de début et demandez si quelqu’un a volontairement réglé une minuterie. Un délai répétitif est un indice utile, sans prouver un problème d’abonnement ou de réseau."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner le compte à rebours ponctuel",
+          "paragraphs": [
+            "Apple décrit une minuterie ponctuelle dans le centre de contrôle de l’Apple TV 4K. Maintenez le bouton TV de la télécommande, choisissez la minuterie de veille et examinez l’option affichée. Pour annuler une minuterie active, sélectionnez à nouveau cette commande puis l’annulation. Ce compte à rebours diffère de la mise en veille après inactivité dans Général. Suivez l’interface de votre modèle et de votre version logicielle ; demandez avant de supprimer une minuterie voulue par une autre personne du foyer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : commandes de minuterie sur Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Décrire précisément le résultat",
+          "paragraphs": [
+            "Après un changement convenu, revenez au même lecteur et observez une séance ordinaire. Si l’appareil reste éveillé mais que la lecture s’arrête encore, signalez ce symptôme séparément au lieu d’attribuer toute interruption à la minuterie. Indiquez le modèle d’Apple TV, la version du lecteur, le délai approximatif et le fonctionnement de l’écran d’accueil. Masquez mots de passe et adresses privées de listes dans les captures. Évitez une réinitialisation pour ce contrôle et conservez les préférences utiles au foyer."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Timer Geo IPTV: controlla il conto alla rovescia di Apple TV",
+      "excerpt": "Un Apple TV che si spegne dopo un intervallo scelto richiede un controllo diverso da un lettore che si ferma mentre il dispositivo rimane attivo.",
+      "seo_title": "Geo IPTV: timer di Apple TV o arresto del lettore?",
+      "seo_description": "Controlla il timer singolo di Apple TV 4K durante Geo IPTV, distinguilo dallo stop per inattività e descrivi un problema persistente senza ripristinare il dispositivo.",
+      "sections": [
+        {
+          "heading": "Individua cosa si spegne davvero",
+          "paragraphs": [
+            "Se cerchi un timer di spegnimento per Geo IPTV, identifica prima cosa si è fermato. L’intero Apple TV si è spento dopo un intervallo simile, oppure si è interrotto solo il programma mentre i menu restavano accessibili? Annota l’ora di inizio e verifica se qualcuno ha impostato intenzionalmente un timer. Un intervallo ripetuto è un’informazione utile, ma non dimostra un problema di abbonamento o di rete."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla il conto alla rovescia singolo",
+          "paragraphs": [
+            "Apple documenta un timer singolo nel Centro di Controllo di Apple TV 4K. Tieni premuto il pulsante TV del telecomando, seleziona il timer di stop e controlla l’opzione mostrata. Per annullare un timer attivo, seleziona nuovamente quel comando e scegli di annullarlo. Il conto alla rovescia è diverso dall’impostazione di stop dopo inattività in Generali. Segui i comandi del tuo modello e della tua versione software; chiedi prima di eliminare un timer voluto da un’altra persona in casa."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: comandi del timer di stop su Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi un risultato preciso",
+          "paragraphs": [
+            "Dopo una modifica concordata, torna allo stesso lettore e osserva una normale sessione. Se il dispositivo resta attivo ma la riproduzione si ferma ancora, segnala separatamente quel sintomo anziché attribuire ogni interruzione al timer. Includi modello di Apple TV, versione del lettore, intervallo approssimativo e funzionamento della schermata Home. Nascondi password e indirizzi privati delle playlist nelle immagini. Per questo controllo evita un ripristino di fabbrica e conserva le preferenze di stop utili alla famiglia."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-slaaptimer: bekijk eerst de aftelling op Apple TV",
+      "excerpt": "Een Apple TV die na een gekozen tijd uitgaat, vraagt om een andere controle dan een speler die stopt terwijl het apparaat wakker blijft. Begin bij de timer.",
+      "seo_title": "Geo IPTV: Apple TV-slaaptimer of een gestopte speler?",
+      "seo_description": "Controleer de eenmalige slaaptimer van Apple TV 4K tijdens Geo IPTV, onderscheid sluimeren na inactiviteit en beschrijf een blijvende spelerfout zonder reset.",
+      "sections": [
+        {
+          "heading": "Stel vast wat echt uitgaat",
+          "paragraphs": [
+            "Zoek je een slaaptimer voor Geo IPTV, bepaal dan eerst wat er stopte. Ging de hele Apple TV na ongeveer dezelfde tijd uit, of stopte alleen het programma terwijl de menu’s bereikbaar bleven? Noteer wanneer je begon te kijken en vraag of iemand bewust een timer instelde. Een terugkerend tijdsinterval is nuttige informatie, maar bewijst geen probleem met het abonnement of netwerk."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de eenmalige aftelling",
+          "paragraphs": [
+            "Apple beschrijft een eenmalige slaaptimer in het bedieningspaneel van Apple TV 4K. Houd de TV-knop op de afstandsbediening ingedrukt, kies de slaaptimer en bekijk de getoonde optie. Selecteer die knop opnieuw en kies annuleren om een actieve timer te stoppen. Deze aftelling verschilt van sluimeren na inactiviteit onder Algemeen. Volg de bediening van jouw model en softwareversie; overleg voordat je een timer verwijdert die een huisgenoot bewust heeft ingesteld."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: de slaaptimer van Apple TV 4K bedienen",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf het resultaat nauwkeurig",
+          "paragraphs": [
+            "Ga na een afgesproken wijziging terug naar dezelfde speler en observeer een gewone kijksessie. Blijft het apparaat wakker maar stopt de weergave opnieuw, meld dat verschijnsel dan apart in plaats van elke onderbreking aan de timer toe te schrijven. Vermeld het Apple TV-model, de spelerversie, de geschatte tijd en of het beginscherm werkte. Verberg wachtwoorden en privéplaylistadressen in schermafbeeldingen. Een fabrieksreset is voor deze controle niet nodig; behoud sluimervoorkeuren die nuttig zijn voor je huishouden."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Temporizador do Geo IPTV: veja a contagem da Apple TV",
+      "excerpt": "Uma Apple TV que desliga após um intervalo escolhido pede uma verificação diferente de um leitor que para enquanto o aparelho continua ativo. Comece pelo temporizador.",
+      "seo_title": "Geo IPTV: temporizador da Apple TV ou falha do leitor?",
+      "seo_description": "Confira o temporizador pontual da Apple TV 4K ao ver Geo IPTV, diferencie o repouso por inatividade e descreva uma falha persistente sem repor o aparelho.",
+      "sections": [
+        {
+          "heading": "Identifique o que realmente desliga",
+          "paragraphs": [
+            "Se procura um temporizador para o Geo IPTV, identifique primeiro o que parou. A Apple TV inteira desligou após um intervalo semelhante, ou apenas o programa parou enquanto os menus continuavam acessíveis? Anote a hora em que começou a assistir e confirme se alguém definiu um temporizador de propósito. Um intervalo repetido fornece contexto útil, mas não prova um problema na assinatura ou na rede."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a contagem pontual",
+          "paragraphs": [
+            "A Apple documenta um temporizador pontual na Central de Controle da Apple TV 4K. Mantenha pressionado o botão TV do comando, selecione o temporizador de repouso e confira a opção exibida. Para cancelar um temporizador ativo, selecione esse controle novamente e escolha o cancelamento. A contagem difere do ajuste de repouso por inatividade em Geral. Siga os controles do seu modelo e da sua versão de software; pergunte antes de retirar um temporizador definido por outra pessoa da casa."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: controles do temporizador da Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva um resultado específico",
+          "paragraphs": [
+            "Depois de uma alteração combinada, volte ao mesmo leitor e observe uma sessão normal. Se o aparelho continuar ativo, mas a reprodução voltar a parar, relate esse sintoma separadamente em vez de atribuir toda interrupção ao temporizador. Inclua modelo da Apple TV, versão do leitor, intervalo aproximado e se a tela inicial respondia. Oculte senhas e endereços privados de listas nas capturas. Evite restaurar os ajustes de fábrica para esta verificação e preserve preferências de repouso úteis para a família."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Таймер Geo IPTV: сначала проверьте отсчёт на Apple TV",
+      "excerpt": "Если Apple TV выключается через выбранное время, проверка отличается от остановки плеера при работающем устройстве. Начните с таймера.",
+      "seo_title": "Geo IPTV: таймер Apple TV или остановка плеера?",
+      "seo_description": "Проверьте разовый таймер сна Apple TV 4K при просмотре Geo IPTV, отличите его от сна при бездействии и опишите сбой без сброса настроек.",
+      "sections": [
+        {
+          "heading": "Определите, что именно выключается",
+          "paragraphs": [
+            "Если вы ищете таймер сна для Geo IPTV, сначала определите, что остановилось. Вся Apple TV выключилась примерно через одинаковое время или прекратился только показ программы, а меню оставались доступны? Запишите время начала просмотра и уточните, не установил ли кто-то таймер намеренно. Повторяющийся интервал полезен для описания, но не доказывает проблему с подпиской или сетью."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте разовый обратный отсчёт",
+          "paragraphs": [
+            "Apple описывает разовый таймер сна в Пункте управления Apple TV 4K. Удерживайте кнопку TV на пульте, выберите таймер сна и проверьте показанный вариант. Чтобы отменить работающий таймер, снова выберите этот элемент и команду отмены. Этот отсчёт отличается от перехода в сон после бездействия в разделе «Основные». Следуйте интерфейсу своей модели и версии системы; прежде чем отменять таймер другого члена семьи, согласуйте это с ним."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: управление таймером сна Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите конкретный результат",
+          "paragraphs": [
+            "После согласованного изменения вернитесь в тот же плеер и понаблюдайте за обычным просмотром. Если устройство остаётся включённым, а воспроизведение снова прекращается, опишите этот симптом отдельно, не связывая каждую остановку с таймером. Укажите модель Apple TV, версию плеера, примерный интервал и доступность главного экрана. Скрывайте пароли и частные адреса плейлистов на снимках. Для такой проверки не нужен сброс к заводским настройкам; сохраните полезные для семьи параметры сна."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کا سلیپ ٹائمر: پہلے Apple TV کی الٹی گنتی دیکھیں",
+      "excerpt": "مقررہ وقت کے بعد Apple TV بند ہونا، آلے کے جاگتے رہنے کے باوجود پلیئر رکنے سے الگ بات ہے۔ پہلے ٹائمر کو جانچیں، سیٹ اپ کو نہیں مٹائیں۔",
+      "seo_title": "Geo IPTV: Apple TV کا سلیپ ٹائمر یا پلیئر کی رکاوٹ؟",
+      "seo_description": "Geo IPTV دیکھتے وقت Apple TV 4K کا ایک بار چلنے والا سلیپ ٹائمر جانچیں، غیر فعالیت والی نیند سے فرق سمجھیں اور سیٹ اپ مٹائے بغیر مسئلہ بیان کریں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ اصل میں کیا بند ہوتا ہے",
+          "paragraphs": [
+            "اگر آپ Geo IPTV کے لیے سلیپ ٹائمر تلاش کر رہے ہیں تو پہلے دیکھیں کہ کیا رکا تھا۔ کیا تقریباً یکساں وقفے کے بعد پورا Apple TV بند ہوا، یا صرف پروگرام رکا جبکہ مینو کھل رہے تھے؟ دیکھنا شروع کرنے کا وقت لکھیں اور معلوم کریں کہ کسی نے جان بوجھ کر ٹائمر تو نہیں لگایا تھا۔ بار بار ایک ہی وقفہ آنا مفید مشاہدہ ہے، مگر اس سے سبسکرپشن یا نیٹ ورک کی خرابی ثابت نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ایک بار کی الٹی گنتی دیکھیں",
+          "paragraphs": [
+            "Apple کی رہنمائی میں Apple TV 4K کے کنٹرول سینٹر میں ایک بار چلنے والا سلیپ ٹائمر موجود ہے۔ ریموٹ کا TV بٹن دبائے رکھیں، سلیپ ٹائمر منتخب کریں اور دکھایا گیا اختیار دیکھیں۔ فعال ٹائمر منسوخ کرنے کے لیے وہی کنٹرول دوبارہ منتخب کرکے منسوخی کا اختیار چنیں۔ یہ الٹی گنتی جنرل میں غیر فعالیت کے بعد سونے والی ترتیب سے مختلف ہے۔ اپنے ماڈل اور سافٹ ویئر کے اصل کنٹرول دیکھیں؛ گھر کے کسی فرد کا لگایا ہوا ٹائمر اس سے پوچھے بغیر نہ ہٹائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K کے سلیپ ٹائمر کے کنٹرول",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "نتیجے کو واضح انداز میں بیان کریں",
+          "paragraphs": [
+            "باہمی رضامندی سے ٹائمر بدلنے کے بعد اسی پلیئر پر عام سیشن دیکھیں۔ اگر آلہ جاگتا رہے مگر ویڈیو پھر رک جائے تو اس علامت کو الگ بتائیں، ہر رکاوٹ کو ٹائمر کی خرابی نہ کہیں۔ Apple TV کا ماڈل، پلیئر کا ورژن، اندازاً وقفہ اور ہوم اسکرین کے کام کرنے کی حالت شامل کریں۔ اسکرین شاٹ میں پاس ورڈ اور نجی پلے لسٹ پتے چھپائیں۔ ٹائمر جانچنے کے لیے فیکٹری ری سیٹ نہ کریں اور گھر کے لیے مفید نیند کی ترجیحات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مؤقت Geo IPTV: افحص العد التنازلي في Apple TV أولًا",
+      "excerpt": "إيقاف Apple TV بعد مدة محددة يحتاج إلى فحص مختلف عن توقف المشغّل مع بقاء الجهاز نشطًا. ابدأ بالمؤقت قبل تغيير الإعدادات الأخرى.",
+      "seo_title": "Geo IPTV: مؤقت Apple TV أم توقف المشغّل؟",
+      "seo_description": "افحص مؤقت النوم لمرة واحدة في Apple TV 4K أثناء Geo IPTV، وميّزه عن النوم بعد الخمول، ووثّق العطل المستمر دون إعادة ضبط جهازك.",
+      "sections": [
+        {
+          "heading": "حدّد ما الذي ينطفئ فعلًا",
+          "paragraphs": [
+            "إذا كنت تبحث عن مؤقت نوم لـ Geo IPTV، فحدّد أولًا ما الذي توقف. هل انطفأ Apple TV بالكامل بعد مدة متقاربة، أم توقف البرنامج فقط بينما بقيت القوائم متاحة؟ دوّن وقت بدء المشاهدة واسأل إن كان أحد قد ضبط مؤقتًا عمدًا. تكرار المدة نفسها معلومة مفيدة، لكنه لا يثبت وجود مشكلة في الاشتراك أو الشبكة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص العد التنازلي لمرة واحدة",
+          "paragraphs": [
+            "توضح Apple وجود مؤقت نوم لمرة واحدة في مركز التحكم على Apple TV 4K. اضغط مطولًا على زر TV في جهاز التحكم، واختر مؤقت النوم، ثم افحص الخيار المعروض. لإلغاء مؤقت نشط، اختر عنصر التحكم نفسه مجددًا ثم أمر إلغاء المؤقت. يختلف هذا العد عن إعداد النوم بعد الخمول ضمن عام. اتبع واجهة طرازك وإصدار نظامك؛ ولا تلغِ مؤقتًا اختاره فرد من المنزل دون سؤاله."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: عناصر مؤقت النوم في Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "صف نتيجة محددة",
+          "paragraphs": [
+            "بعد تعديل متفق عليه للمؤقت، ارجع إلى المشغّل نفسه وراقب جلسة عادية. إن بقي الجهاز نشطًا واستمر توقف التشغيل، فأبلغ عن هذه العلامة منفصلة بدل نسب كل انقطاع إلى المؤقت. اذكر طراز Apple TV وإصدار المشغّل والمدة التقريبية وإمكان التنقل في الشاشة الرئيسية. أخفِ كلمات المرور وعناوين قوائم التشغيل الخاصة في الصور. تجنب إعادة ضبط المصنع لفحص المؤقت، واحتفظ بتفضيلات النوم المفيدة لأفراد المنزل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV स्लीप टाइमर: पहले Apple TV की उलटी गिनती देखें",
+      "excerpt": "चुने हुए समय के बाद Apple TV बंद होना और डिवाइस चालू रहते हुए प्लेयर रुकना अलग बातें हैं। दूसरी सेटिंग बदलने से पहले टाइमर देखें।",
+      "seo_title": "Geo IPTV: Apple TV का टाइमर या प्लेयर की रुकावट?",
+      "seo_description": "Geo IPTV देखते समय Apple TV 4K का एक बार चलने वाला स्लीप टाइमर जाँचें, निष्क्रियता वाली नींद से अंतर समझें और सेटअप मिटाए बिना समस्या बताएँ।",
+      "sections": [
+        {
+          "heading": "पहचानें कि वास्तव में क्या बंद होता है",
+          "paragraphs": [
+            "यदि आप Geo IPTV के लिए स्लीप टाइमर खोज रहे हैं, तो पहले पहचानें कि क्या रुका था। क्या लगभग समान अंतराल के बाद पूरा Apple TV बंद हुआ, या सिर्फ कार्यक्रम रुका जबकि मेनू खुल रहे थे? देखना शुरू करने का समय लिखें और पता करें कि किसी ने जानबूझकर टाइमर तो नहीं लगाया था। एक जैसा अंतराल उपयोगी जानकारी है, लेकिन उससे सदस्यता या नेटवर्क की खराबी साबित नहीं होती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "एक बार की उलटी गिनती देखें",
+          "paragraphs": [
+            "Apple के अनुसार Apple TV 4K के नियंत्रण केंद्र में एक बार चलने वाला स्लीप टाइमर है। रिमोट का TV बटन दबाए रखें, स्लीप टाइमर चुनें और दिखाई गई स्थिति देखें। सक्रिय टाइमर रद्द करने के लिए वही नियंत्रण फिर चुनें और टाइमर रद्द करने का विकल्प लें। यह उलटी गिनती सामान्य सेटिंग में निष्क्रियता के बाद स्लीप वाले विकल्प से अलग है। अपने मॉडल और सॉफ्टवेयर के वास्तविक नियंत्रण देखें; घर के किसी सदस्य का लगाया टाइमर उससे पूछे बिना न हटाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K के स्लीप टाइमर नियंत्रण",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "नतीजा साफ तौर पर बताएँ",
+          "paragraphs": [
+            "सहमति से टाइमर बदलने के बाद उसी प्लेयर पर सामान्य सत्र देखें। यदि डिवाइस चालू रहे लेकिन वीडियो फिर रुक जाए, तो इस लक्षण को अलग बताएँ; हर रुकावट को टाइमर की खराबी न कहें। Apple TV का मॉडल, प्लेयर संस्करण, लगभग अंतराल और होम स्क्रीन पर नेविगेशन की स्थिति शामिल करें। स्क्रीनशॉट में पासवर्ड और निजी प्लेलिस्ट पते छिपाएँ। टाइमर जाँचने के लिए फैक्टरी रीसेट न करें और घर के लिए उपयोगी स्लीप प्राथमिकताएँ बनाए रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: sleep timer in Apple TV 4K Control Centre",
+      "url": "https://support.apple.com/en-gb/guide/tv/atvb18c04fc0/tvos"
+    },
+    {
+      "label": "Apple: automatic sleep after inactivity",
+      "url": "https://support.apple.com/en-gb/guide/tv/atvb7a7550e3/27/tvos/27"
+    }
+  ]
+}

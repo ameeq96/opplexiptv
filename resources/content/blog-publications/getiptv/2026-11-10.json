@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-10",
+  "topic": "Separate Google TV Ambient mode personal-photo sources from Get IPTV player content and review shared-screen privacy without removing saved player setup",
+  "primary_keyword": "Get IPTV screensaver",
+  "slug": "getiptv-google-tv-screensaver-photo-source",
+  "translations": {
+    "en": {
+      "title": "Get IPTV screensaver photos: check Google TV’s idle display",
+      "excerpt": "Family photos or artwork appearing between viewing sessions may come from Google TV’s screensaver. Check the selected source without changing your player or service.",
+      "seo_title": "Get IPTV screensaver photos: Google TV source checks",
+      "seo_description": "Identify Google TV Ambient mode photos separately from player content. Review the screensaver source and keep private albums off a shared display if needed.",
+      "sections": [
+        {
+          "heading": "Identify the screen before changing an app",
+          "paragraphs": [
+            "A Get IPTV screensaver question starts with what the television actually shows. Are personal photos or artwork appearing when nobody is watching, or is an error visible inside the player? Record that difference. Google TV can display a chosen screensaver while it is idle. A photo slideshow alone does not establish that an IPTV plan changed or that the player is showing someone else’s service content."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review the screensaver source",
+          "paragraphs": [
+            "Google’s documented route from the Google TV home screen is Settings, System, Ambient mode, then its Settings and Source. Follow the labels available on your equipment, since layout can vary. Google Photos uses photos or albums from the selected Google Photos account; Art gallery offers featured images and artwork. If personal albums should not appear on a shared television, have the device owner review that source and choose an appropriate available alternative. You do not need to delete the player or remove its saved setup for this check."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: choose a screensaver source",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep idle-display choices separate from playback",
+          "paragraphs": [
+            "After reviewing the idle display, return to the home screen and open the intended player deliberately. Check whether the original issue still occurs there. Changing the screensaver source does not confirm playback compatibility, renew a subscription or settle a payment. If personal photos remain visible, ask the device owner about the selected account and albums without sharing those images publicly. For a separate player error, send only its relevant text and the device model through private support."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Fotos del salvapantallas en Get IPTV: revisa la pantalla inactiva",
+      "excerpt": "Las fotos familiares o ilustraciones entre sesiones pueden proceder del salvapantallas de Google TV. Revisa su origen sin cambiar el reproductor ni el servicio.",
+      "seo_title": "Get IPTV: fotos y origen del salvapantallas de Google TV",
+      "seo_description": "Distingue las fotos de Ambient mode del contenido del reproductor. Revisa el origen del salvapantallas y qué álbumes aparecen en un televisor compartido.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla antes de cambiar una aplicación",
+          "paragraphs": [
+            "Una consulta sobre el salvapantallas con Get IPTV empieza por lo que muestra el televisor. ¿Aparecen fotos personales o ilustraciones cuando nadie está viendo nada, o hay un error dentro del reproductor? Anota la diferencia. Google TV puede mostrar un salvapantallas elegido mientras está inactivo. Una presentación de fotos no demuestra por sí sola un cambio de plan IPTV ni que el reproductor muestre el contenido del servicio de otra persona."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa el origen del salvapantallas",
+          "paragraphs": [
+            "La ruta documentada por Google desde la pantalla principal de Google TV es Ajustes, Sistema, Modo ambiente y, después, sus Ajustes y Fuente. Sigue los nombres disponibles en tu equipo, ya que la distribución puede variar. Google Fotos utiliza fotos o álbumes de la cuenta seleccionada; Galería de arte ofrece imágenes y obras destacadas. Si los álbumes personales no deben verse en un televisor compartido, pide al propietario que revise la fuente y elija una alternativa disponible adecuada. No es necesario borrar el reproductor ni su configuración guardada para esta comprobación."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google TV: elegir el origen del salvapantallas",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la pantalla inactiva de la reproducción",
+          "paragraphs": [
+            "Después de revisar la pantalla inactiva, vuelve al inicio y abre expresamente el reproductor previsto. Comprueba si el problema original sigue ocurriendo allí. Cambiar la fuente del salvapantallas no confirma compatibilidad, renueva una suscripción ni resuelve un pago. Si siguen apareciendo fotos personales, consulta al propietario sobre la cuenta y los álbumes elegidos sin publicar esas imágenes. Si hay otro error del reproductor, envía solo el texto pertinente y el modelo del dispositivo al soporte privado."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Photos d’écran de veille Get IPTV : vérifier Google TV au repos",
+      "excerpt": "Des photos familiales ou des œuvres entre deux séances peuvent venir de l’écran de veille Google TV. Vérifiez la source sans changer le lecteur ni le service.",
+      "seo_title": "Get IPTV : source des photos de veille sur Google TV",
+      "seo_description": "Distinguez les photos du mode ambiant du contenu du lecteur. Vérifiez la source de veille et les albums affichés sur un téléviseur partagé.",
+      "sections": [
+        {
+          "heading": "Identifiez l’écran avant de modifier une application",
+          "paragraphs": [
+            "Une question sur l’écran de veille avec Get IPTV commence par ce que montre le téléviseur. Des photos personnelles ou des œuvres apparaissent-elles quand personne ne regarde, ou voyez-vous une erreur dans le lecteur ? Notez la différence. Google TV peut afficher une veille choisie lorsqu’il est au repos. Un diaporama ne prouve pas à lui seul qu’une offre IPTV a changé ou que le lecteur montre le contenu du service d’une autre personne."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez la source de l’écran de veille",
+          "paragraphs": [
+            "Le parcours documenté par Google depuis l’accueil Google TV est Paramètres, Système, Mode ambiant, puis ses Paramètres et Source. Suivez les libellés disponibles sur votre équipement, car la disposition peut varier. Google Photos utilise les photos ou albums du compte sélectionné ; Galerie d’art propose des images et œuvres choisies. Si les albums personnels ne doivent pas apparaître sur un téléviseur partagé, demandez au propriétaire de vérifier cette source et de choisir une autre option adaptée. Ce contrôle ne nécessite ni suppression du lecteur ni effacement de sa configuration."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google TV : choisir la source de l’écran de veille",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez les choix de veille de la lecture",
+          "paragraphs": [
+            "Après avoir vérifié la veille, revenez à l’accueil et ouvrez volontairement le lecteur voulu. Observez si le problème initial s’y produit encore. Changer la source de veille ne confirme pas la compatibilité de lecture, ne renouvelle aucun abonnement et ne règle aucun paiement. Si des photos personnelles restent visibles, interrogez le propriétaire sur le compte et les albums sans publier ces images. Pour une erreur distincte du lecteur, envoyez seulement le texte utile et le modèle de l’appareil au support privé."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Foto del salvaschermo Get IPTV: controlla Google TV inattiva",
+      "excerpt": "Foto di famiglia o immagini tra una visione e l’altra possono provenire dal salvaschermo di Google TV. Controlla la fonte senza cambiare lettore o servizio.",
+      "seo_title": "Get IPTV: controllare le foto del salvaschermo Google TV",
+      "seo_description": "Distingui le foto della modalità Ambient dai contenuti del lettore. Verifica la fonte del salvaschermo e gli album mostrati su una TV condivisa.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata prima di cambiare un’app",
+          "paragraphs": [
+            "Una domanda sul salvaschermo con Get IPTV parte da ciò che mostra davvero il televisore. Compaiono foto personali o opere quando nessuno sta guardando, oppure un errore dentro il lettore? Annota la differenza. Google TV può mostrare un salvaschermo scelto durante l’inattività. Una presentazione di foto, da sola, non dimostra che il piano IPTV sia cambiato o che il lettore mostri i contenuti del servizio di qualcun altro."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla la fonte del salvaschermo",
+          "paragraphs": [
+            "Il percorso documentato da Google dalla schermata iniziale di Google TV è Impostazioni, Sistema, Modalità Ambient, poi le relative Impostazioni e Fonte. Segui le etichette disponibili sul dispositivo, perché la disposizione può variare. Google Foto usa foto o album dell’account selezionato; Galleria d’arte offre immagini e opere selezionate. Se gli album personali non devono apparire su una TV condivisa, chiedi al proprietario di controllare la fonte e scegliere un’alternativa disponibile adatta. Per questa verifica non serve eliminare il lettore o la configurazione salvata."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google TV: scegliere la fonte del salvaschermo",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la schermata inattiva dalla riproduzione",
+          "paragraphs": [
+            "Dopo la verifica, torna alla schermata iniziale e apri intenzionalmente il lettore previsto. Controlla se il problema originale si presenta ancora lì. Cambiare la fonte del salvaschermo non conferma la compatibilità di riproduzione, rinnova un abbonamento o risolve un pagamento. Se le foto personali restano visibili, chiedi al proprietario dell’account e degli album senza pubblicare le immagini. Per un errore distinto del lettore, invia solo il testo utile e il modello del dispositivo all’assistenza privata."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-schermbeveiliging: controleer de foto’s op Google TV",
+      "excerpt": "Familiefoto’s of kunst tussen kijksessies kunnen uit de Google TV-schermbeveiliging komen. Controleer de bron zonder je speler of dienst te wijzigen.",
+      "seo_title": "Get IPTV: fotobron van de Google TV-schermbeveiliging",
+      "seo_description": "Onderscheid foto’s in de omgevingsmodus van spelerinhoud. Controleer de schermbeveiligingsbron en welke albums op een gedeelde televisie verschijnen.",
+      "sections": [
+        {
+          "heading": "Bepaal het scherm voordat je een app wijzigt",
+          "paragraphs": [
+            "Een vraag over de schermbeveiliging bij Get IPTV begint bij wat de televisie werkelijk toont. Verschijnen persoonlijke foto’s of kunst wanneer niemand kijkt, of staat er een fout binnen de speler? Noteer dat verschil. Google TV kan in rust een gekozen schermbeveiliging tonen. Een fotodiavoorstelling bewijst op zichzelf geen gewijzigd IPTV-abonnement en evenmin dat de speler de dienstinhoud van iemand anders laat zien."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de bron van de schermbeveiliging",
+          "paragraphs": [
+            "Google beschrijft vanaf het Google TV-startscherm de route Instellingen, Systeem, Omgevingsmodus en vervolgens de bijbehorende Instellingen en Bron. Volg de beschikbare labels op je apparaat; de indeling kan verschillen. Google Foto’s gebruikt foto’s of albums van het geselecteerde account; Kunstgalerij biedt geselecteerde beelden en kunst. Moeten persoonlijke albums niet op een gedeelde televisie komen, laat de eigenaar dan de bron bekijken en een geschikte beschikbare optie kiezen. Hiervoor hoef je de speler of zijn opgeslagen instellingen niet te verwijderen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: een schermbeveiligingsbron kiezen",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd rustweergave en afspelen gescheiden",
+          "paragraphs": [
+            "Ga na de controle terug naar het startscherm en open bewust de bedoelde speler. Controleer of het oorspronkelijke probleem daar nog optreedt. Een andere schermbeveiligingsbron bevestigt geen afspeelcompatibiliteit, verlengt geen abonnement en handelt geen betaling af. Blijven persoonlijke foto’s zichtbaar, vraag de eigenaar dan naar het geselecteerde account en de albums zonder die beelden openbaar te delen. Stuur bij een aparte spelerfout alleen de relevante tekst en het apparaatmodel naar privéondersteuning."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Fotos no protetor de tela do Get IPTV: confira o Google TV",
+      "excerpt": "Fotos de família ou obras entre sessões podem vir do protetor de tela do Google TV. Confira a origem sem alterar o aplicativo reprodutor ou o serviço.",
+      "seo_title": "Get IPTV: origem das fotos no protetor de tela do Google TV",
+      "seo_description": "Diferencie fotos do modo ambiente do conteúdo do reprodutor. Confira a origem do protetor de tela e os álbuns exibidos em uma televisão compartilhada.",
+      "sections": [
+        {
+          "heading": "Identifique a tela antes de alterar um aplicativo",
+          "paragraphs": [
+            "Uma dúvida sobre o protetor de tela com Get IPTV começa pelo que a televisão realmente mostra. Fotos pessoais ou obras aparecem quando ninguém está assistindo, ou existe um erro dentro do reprodutor? Anote a diferença. O Google TV pode exibir um protetor de tela escolhido enquanto está ocioso. Uma apresentação de fotos, sozinha, não comprova mudança no plano IPTV nem que o reprodutor esteja mostrando conteúdo do serviço de outra pessoa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a origem do protetor de tela",
+          "paragraphs": [
+            "O caminho documentado pelo Google a partir da tela inicial do Google TV é Configurações, Sistema, Modo ambiente e, depois, suas Configurações e Origem. Siga os nomes disponíveis no equipamento, pois a disposição pode variar. O Google Fotos usa fotos ou álbuns da conta selecionada; a Galeria de arte oferece imagens e obras escolhidas. Se álbuns pessoais não devem aparecer em uma televisão compartilhada, peça ao proprietário que revise a origem e escolha uma alternativa disponível adequada. Não é necessário excluir o reprodutor ou sua configuração salva para essa verificação."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google TV: escolher a origem do protetor de tela",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a tela ociosa da reprodução",
+          "paragraphs": [
+            "Após a revisão, volte à tela inicial e abra deliberadamente o reprodutor pretendido. Veja se o problema original ainda ocorre nele. Alterar a origem do protetor de tela não confirma compatibilidade, renova assinatura nem resolve pagamento. Se fotos pessoais continuarem visíveis, pergunte ao proprietário sobre a conta e os álbuns selecionados sem publicar as imagens. Para outro erro do reprodutor, envie apenas o texto relevante e o modelo do aparelho ao suporte privado."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Фотографии заставки Get IPTV: проверьте экран простоя Google TV",
+      "excerpt": "Семейные снимки или картины между просмотрами могут быть заставкой Google TV. Проверьте источник, не меняя плеер и подписку.",
+      "seo_title": "Get IPTV: источник фотографий заставки Google TV",
+      "seo_description": "Отделяйте фотографии режима Ambient от содержимого плеера. Проверьте источник заставки и альбомы, показываемые на общем телевизоре.",
+      "sections": [
+        {
+          "heading": "Определите экран до изменения приложения",
+          "paragraphs": [
+            "Вопрос о заставке при использовании Get IPTV начинается с того, что действительно показывает телевизор. Личные фотографии или картины появляются, когда никто не смотрит, либо ошибка видна внутри плеера? Отметьте разницу. Google TV может показывать выбранную заставку во время простоя. Само по себе слайд-шоу не доказывает изменение тарифа IPTV или показ плеером содержимого чужого сервиса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте источник заставки",
+          "paragraphs": [
+            "В документации Google указан путь с главного экрана Google TV: Настройки, Система, Режим Ambient, затем его Настройки и Источник. Следуйте доступным надписям на устройстве: расположение пунктов может отличаться. Google Фото использует снимки или альбомы выбранного аккаунта; Художественная галерея предлагает подборку изображений и произведений. Если личные альбомы не должны появляться на общем телевизоре, попросите владельца проверить источник и выбрать подходящую доступную альтернативу. Для этого не требуется удалять плеер или его сохранённые настройки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google TV: выбор источника заставки",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте экран простоя от воспроизведения",
+          "paragraphs": [
+            "После проверки вернитесь на главный экран и намеренно откройте нужный плеер. Посмотрите, сохраняется ли исходная проблема именно там. Смена источника заставки не подтверждает совместимость воспроизведения, не продлевает подписку и не решает вопрос оплаты. Если личные снимки остаются, спросите владельца о выбранном аккаунте и альбомах, не публикуя фотографии. При отдельной ошибке плеера отправьте в частную поддержку только её полезный текст и модель устройства."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV اسکرین سیور کی تصاویر: Google TV کا خالی منظر دیکھیں",
+      "excerpt": "دیکھنے کے وقفے میں خاندانی تصاویر یا فن پارے Google TV کے اسکرین سیور سے آ سکتے ہیں۔ پلیئر یا سروس بدلے بغیر منتخب ماخذ جانچیں۔",
+      "seo_title": "Get IPTV: Google TV اسکرین سیور کی تصاویر کا ماخذ",
+      "seo_description": "Google TV کے ایمبیئنٹ موڈ کی تصاویر کو پلیئر کے مواد سے الگ پہچانیں۔ مشترکہ ٹی وی پر دکھائے جانے والے اسکرین سیور کے ماخذ اور البمز دیکھیں۔",
+      "sections": [
+        {
+          "heading": "ایپ بدلنے سے پہلے اسکرین پہچانیں",
+          "paragraphs": [
+            "Get IPTV کے اسکرین سیور کا سوال اس بات سے شروع ہوتا ہے کہ ٹی وی حقیقت میں کیا دکھا رہا ہے۔ کیا ذاتی تصاویر یا فن پارے اس وقت آتے ہیں جب کوئی کچھ نہیں دیکھ رہا، یا خرابی پلیئر کے اندر نظر آتی ہے؟ یہ فرق نوٹ کریں۔ Google TV غیر استعمال شدہ حالت میں منتخب اسکرین سیور دکھا سکتا ہے۔ صرف تصویروں کی سلائیڈ شو سے IPTV پلان بدلنے یا پلیئر میں کسی اور کی سروس کا مواد دکھنے کا ثبوت نہیں ملتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اسکرین سیور کا ماخذ جانچیں",
+          "paragraphs": [
+            "Google کی دستاویز کے مطابق Google TV کی ہوم اسکرین سے ترتیبات، سسٹم، ایمبیئنٹ موڈ اور پھر اس کی ترتیبات اور ماخذ کھولتے ہیں۔ اپنے آلے پر موجود ناموں کی پیروی کریں کیونکہ ترتیب مختلف ہو سکتی ہے۔ Google Photos منتخب اکاؤنٹ کی تصاویر یا البمز استعمال کرتا ہے؛ آرٹ گیلری منتخب تصویریں اور فن پارے دکھاتی ہے۔ اگر ذاتی البمز مشترکہ ٹی وی پر نہیں آنے چاہییں تو آلے کے مالک سے ماخذ دیکھنے اور مناسب دستیاب متبادل چننے کو کہیں۔ اس جانچ کے لیے پلیئر یا اس کی محفوظ ترتیب حذف کرنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV رہنمائی: اسکرین سیور کا ماخذ چنیں",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "خالی منظر کے انتخاب کو پلے بیک سے الگ رکھیں",
+          "paragraphs": [
+            "اسکرین سیور دیکھنے کے بعد ہوم اسکرین پر واپس جائیں اور مطلوبہ پلیئر خود کھولیں۔ دیکھیں کہ اصل مسئلہ وہاں اب بھی آتا ہے یا نہیں۔ اسکرین سیور کا ماخذ بدلنے سے پلے بیک مطابقت کی تصدیق، سبسکرپشن کی تجدید یا ادائیگی کا فیصلہ نہیں ہوتا۔ ذاتی تصاویر برقرار ہوں تو انہیں عوامی طور پر شیئر کیے بغیر مالک سے منتخب اکاؤنٹ اور البمز پوچھیں۔ پلیئر کی الگ خرابی کے لیے صرف متعلقہ عبارت اور آلے کا ماڈل نجی سپورٹ کو بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "صور شاشة التوقف مع Get IPTV: افحص وضع خمول Google TV",
+      "excerpt": "قد تأتي الصور العائلية أو الأعمال الفنية بين جلسات المشاهدة من شاشة توقف Google TV. افحص المصدر دون تغيير المشغّل أو الخدمة.",
+      "seo_title": "Get IPTV: فحص مصدر صور شاشة توقف Google TV",
+      "seo_description": "ميّز صور الوضع المحيطي في Google TV عن محتوى المشغّل. راجع مصدر شاشة التوقف والألبومات الظاهرة على التلفاز المشترك.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة قبل تغيير تطبيق",
+          "paragraphs": [
+            "يبدأ سؤال شاشة التوقف مع Get IPTV بما يعرضه التلفاز فعلًا. هل تظهر صور شخصية أو أعمال فنية عندما لا يشاهد أحد شيئًا، أم يظهر خطأ داخل المشغّل؟ سجّل الفرق. يمكن لـGoogle TV عرض شاشة توقف مختارة أثناء الخمول. عرض الصور وحده لا يثبت تغيير خطة IPTV أو أن المشغّل يعرض محتوى خدمة شخص آخر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع مصدر شاشة التوقف",
+          "paragraphs": [
+            "المسار الذي توثّقه Google من شاشة Google TV الرئيسية هو الإعدادات ثم النظام ثم الوضع المحيطي، وبعدها إعداداته والمصدر. اتبع التسميات المتاحة على جهازك، فقد يختلف ترتيبها. تستخدم صور Google صورًا أو ألبومات من الحساب المختار؛ ويقدّم المعرض الفني صورًا وأعمالًا منتقاة. إذا كان ينبغي ألا تظهر الألبومات الشخصية على تلفاز مشترك، فاطلب من مالك الجهاز مراجعة المصدر واختيار بديل متاح مناسب. لا تحتاج إلى حذف المشغّل أو إعداداته المحفوظة لإجراء هذا الفحص."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google TV: اختيار مصدر شاشة التوقف",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل خيارات الخمول عن التشغيل",
+          "paragraphs": [
+            "بعد مراجعة شاشة الخمول، عد إلى الشاشة الرئيسية وافتح المشغّل المقصود عمدًا. تحقّق هل ما زالت المشكلة الأصلية تحدث داخله. تغيير مصدر شاشة التوقف لا يؤكّد توافق التشغيل ولا يجدّد اشتراكًا ولا يحسم دفعًا. إذا استمرت الصور الشخصية، فاسأل المالك عن الحساب والألبومات المختارة دون نشر الصور علنًا. ولخطأ منفصل داخل المشغّل، أرسل نصّه المفيد وطراز الجهاز فقط إلى الدعم الخاص."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV स्क्रीनसेवर की तस्वीरें: Google TV का निष्क्रिय दृश्य देखें",
+      "excerpt": "देखने के बीच पारिवारिक तस्वीरें या कलाकृतियाँ Google TV के स्क्रीनसेवर से आ सकती हैं। प्लेयर या सेवा बदले बिना उनका स्रोत जाँचें।",
+      "seo_title": "Get IPTV: Google TV स्क्रीनसेवर की तस्वीरों का स्रोत",
+      "seo_description": "Google TV के परिवेश मोड की तस्वीरों को प्लेयर सामग्री से अलग पहचानें। साझा टीवी पर दिखने वाले स्क्रीनसेवर का स्रोत और एल्बम जाँचें।",
+      "sections": [
+        {
+          "heading": "ऐप बदलने से पहले स्क्रीन पहचानें",
+          "paragraphs": [
+            "Get IPTV के स्क्रीनसेवर का सवाल इस बात से शुरू होता है कि टीवी सच में क्या दिखा रहा है। क्या निजी तस्वीरें या कलाकृतियाँ तब आती हैं जब कोई कुछ नहीं देख रहा, या प्लेयर के अंदर त्रुटि दिखाई देती है? यह अंतर लिखें। Google TV निष्क्रिय रहने पर चुना हुआ स्क्रीनसेवर दिखा सकता है। केवल तस्वीरों का स्लाइडशो IPTV प्लान बदलने या प्लेयर में किसी और की सेवा की सामग्री दिखने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "स्क्रीनसेवर का स्रोत देखें",
+          "paragraphs": [
+            "Google के दस्तावेज़ में Google TV की होम स्क्रीन से सेटिंग, सिस्टम, परिवेश मोड और फिर उसकी सेटिंग तथा स्रोत का रास्ता बताया गया है। अपने उपकरण पर दिए नामों का पालन करें क्योंकि व्यवस्था अलग हो सकती है। Google Photos चुने हुए खाते की तस्वीरें या एल्बम उपयोग करता है; आर्ट गैलरी चुनी हुई तस्वीरें और कलाकृतियाँ देती है। निजी एल्बम साझा टीवी पर नहीं दिखने चाहिए तो उपकरण के मालिक से स्रोत देखकर उपयुक्त उपलब्ध विकल्प चुनने को कहें। इस जाँच के लिए प्लेयर या उसकी सहेजी सेटिंग हटाना ज़रूरी नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV सहायता: स्क्रीनसेवर का स्रोत चुनें",
+              "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "निष्क्रिय दृश्य को प्लेबैक से अलग रखें",
+          "paragraphs": [
+            "निष्क्रिय दृश्य की जाँच के बाद होम स्क्रीन पर लौटें और इच्छित प्लेयर जानबूझकर खोलें। देखें कि मूल समस्या वहाँ अब भी आती है या नहीं। स्क्रीनसेवर का स्रोत बदलने से प्लेबैक की अनुकूलता साबित नहीं होती, सदस्यता नवीनीकृत नहीं होती और भुगतान तय नहीं होता। निजी तस्वीरें बनी रहें तो उन्हें सार्वजनिक रूप से साझा किए बिना मालिक से चुने खाते और एल्बम के बारे में पूछें। अलग प्लेयर त्रुटि के लिए केवल संबंधित संदेश और उपकरण मॉडल निजी सहायता को भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: choose a screensaver source",
+      "url": "https://support.google.com/googletv/answer/10070821?hl=en"
+    }
+  ]
+}
