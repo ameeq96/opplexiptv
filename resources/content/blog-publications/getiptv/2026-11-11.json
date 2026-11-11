@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-11",
+  "topic": "Distinguish Google TV country and language dependent home tabs from channels inside an installed player before interpreting a missing Live tab as a Get IPTV service fault",
+  "primary_keyword": "Get IPTV on Google TV",
+  "slug": "getiptv-google-tv-home-tabs-versus-player-channels",
+  "translations": {
+    "en": {
+      "title": "Get IPTV on Google TV: home tabs are not player channels",
+      "excerpt": "Google TV's home navigation can differ from a setup guide and from the channel list inside a player. Identify which screen is missing something before changing settings.",
+      "seo_title": "Get IPTV on Google TV: home tabs versus player channels",
+      "seo_description": "Identify Google TV's country- and language-dependent home tabs separately from channels inside your player before interpreting a missing Live tab as a service fault.",
+      "sections": [
+        {
+          "heading": "Name the screen you are comparing",
+          "paragraphs": [
+            "For Get IPTV on Google TV, first identify whether you are looking at the television's home screen or an opened player. A Home or For you heading belongs to a different navigation layer from a channel list inside an app. Write down the exact missing heading and whether the intended player still opens. A guide showing a different row of tabs is not enough to establish that your service has stopped."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Allow for documented home-screen differences",
+          "paragraphs": [
+            "Google explains that home-screen tabs depend on country and the device's selected language. Home, For you, Apps and Library are examples; Live is subject to availability and concerns Google TV or its Live-tab partners. It is not a promise that every installed player's channels appear there. A device used outside its purchase country can also have a different experience. Compare the documentation relevant to your device instead of changing regional settings just to imitate a screenshot."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: home-screen tabs and regional differences",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Check the intended player separately",
+          "paragraphs": [
+            "Where available, open the intended installed player from Apps and observe its own screen. If an error appears there, record that exact message separately from the missing home tab. Include the device model, software version, interface language and which screen you compared when asking for private support. A home-menu difference does not renew a plan, establish compatibility or justify another payment. Keep private access details out of public screenshots and preserve the saved setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV en Google TV: las pestañas no son los canales del reproductor",
+      "excerpt": "La navegación de inicio de Google TV puede diferir de una guía y de la lista de canales del reproductor. Identifica primero en qué pantalla falta algo.",
+      "seo_title": "Get IPTV en Google TV: pestañas de inicio y canales",
+      "seo_description": "Distingue las pestañas de Google TV, que dependen del país y del idioma, de los canales del reproductor antes de interpretar que falta Live como un fallo del servicio.",
+      "sections": [
+        {
+          "heading": "Nombra la pantalla que comparas",
+          "paragraphs": [
+            "Para revisar Get IPTV en Google TV, identifica primero si ves la pantalla de inicio del televisor o un reproductor abierto. Inicio o Para ti pertenecen a un nivel de navegación distinto de la lista de canales de una aplicación. Anota el título exacto que falta y si el reproductor previsto todavía abre. Una guía con una fila de pestañas diferente no basta para demostrar que tu servicio se ha detenido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ten en cuenta las diferencias documentadas",
+          "paragraphs": [
+            "Google explica que las pestañas de inicio dependen del país y del idioma elegido para el dispositivo. Inicio, Para ti, Aplicaciones y Biblioteca son ejemplos; Live está sujeto a disponibilidad y corresponde a Google TV o a sus socios de esa pestaña. No promete que allí aparezcan los canales de cada reproductor instalado. Un dispositivo usado fuera del país de compra también puede ofrecer otra experiencia. Consulta la documentación pertinente en vez de cambiar la región solo para imitar una captura."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google TV: pestañas y diferencias regionales",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba el reproductor por separado",
+          "paragraphs": [
+            "Cuando esté disponible, abre el reproductor instalado previsto desde Aplicaciones y observa su propia pantalla. Si aparece un error, anota ese mensaje aparte de la pestaña de inicio ausente. Al pedir soporte privado, indica modelo, versión del sistema, idioma de la interfaz y pantallas comparadas. Una diferencia de menú no renueva un plan, demuestra compatibilidad ni justifica otro pago. No publiques datos privados de acceso en capturas y conserva la configuración guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV sur Google TV : les onglets ne sont pas les chaînes du lecteur",
+      "excerpt": "La navigation d'accueil de Google TV peut différer d'un guide et de la liste de chaînes du lecteur. Identifiez d'abord l'écran auquel il manque un élément.",
+      "seo_title": "Get IPTV sur Google TV : onglets d'accueil et chaînes",
+      "seo_description": "Distinguez les onglets Google TV, variables selon le pays et la langue, des chaînes dans le lecteur avant de considérer un onglet Live absent comme une panne.",
+      "sections": [
+        {
+          "heading": "Nommer l'écran que vous comparez",
+          "paragraphs": [
+            "Pour vérifier Get IPTV sur Google TV, déterminez d'abord si vous regardez l'accueil du téléviseur ou un lecteur ouvert. Accueil ou Pour vous appartient à un autre niveau de navigation qu'une liste de chaînes dans une application. Notez l'intitulé exact qui manque et si le lecteur prévu s'ouvre encore. Une rangée d'onglets différente dans un guide ne suffit pas à établir que le service s'est arrêté."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Tenir compte des différences documentées",
+          "paragraphs": [
+            "Google indique que les onglets d'accueil dépendent du pays et de la langue choisie pour l'appareil. Accueil, Pour vous, Applications et Bibliothèque sont des exemples ; Live dépend de la disponibilité et concerne Google TV ou ses partenaires de cet onglet. Cela ne garantit pas que les chaînes de chaque lecteur installé y figurent. Un appareil utilisé hors du pays d'achat peut aussi proposer une expérience différente. Consultez sa documentation plutôt que de changer de région simplement pour reproduire une capture."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google TV : onglets et différences régionales",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier séparément le lecteur prévu",
+          "paragraphs": [
+            "Lorsque l'option existe, ouvrez le lecteur installé prévu depuis Applications et observez son propre écran. Si une erreur apparaît, notez son message séparément de l'onglet d'accueil absent. Pour une demande privée d'assistance, indiquez modèle, version logicielle, langue d'interface et écrans comparés. Une différence de menu ne renouvelle pas un forfait, ne prouve pas la compatibilité et ne justifie pas un nouveau paiement. Masquez les accès privés dans les captures publiques et conservez la configuration enregistrée."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV su Google TV: le schede iniziali non sono i canali del lettore",
+      "excerpt": "La navigazione iniziale di Google TV può differire da una guida e dall'elenco dei canali nel lettore. Identifica prima la schermata in cui manca qualcosa.",
+      "seo_title": "Get IPTV su Google TV: schede iniziali e canali del lettore",
+      "seo_description": "Distingui le schede di Google TV, variabili per paese e lingua, dai canali nel lettore prima di interpretare l'assenza della scheda Live come un guasto del servizio.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata che stai confrontando",
+          "paragraphs": [
+            "Per controllare Get IPTV su Google TV, identifica prima se stai guardando la schermata iniziale del televisore o un lettore aperto. Home o Per te appartiene a un livello di navigazione diverso dall'elenco dei canali in un'app. Annota il titolo esatto che manca e se il lettore previsto si apre ancora. Una guida con una fila di schede diversa non basta a dimostrare che il servizio si sia interrotto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Considera le differenze documentate",
+          "paragraphs": [
+            "Google spiega che le schede iniziali dipendono dal paese e dalla lingua scelta per il dispositivo. Home, Per te, App e Raccolta sono esempi; Live dipende dalla disponibilità e riguarda Google TV o i partner di quella scheda. Non promette che vi compaiano i canali di ogni lettore installato. Anche un dispositivo usato fuori dal paese d'acquisto può offrire un'esperienza diversa. Consulta la documentazione pertinente invece di cambiare regione soltanto per imitare un'immagine."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google TV: schede e differenze regionali",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla separatamente il lettore previsto",
+          "paragraphs": [
+            "Dove disponibile, apri il lettore installato previsto da App e osserva la sua schermata. Se compare un errore, annota il messaggio separatamente dalla scheda iniziale mancante. Per una richiesta privata di assistenza includi modello, versione del software, lingua dell'interfaccia e schermate confrontate. Una differenza nel menu non rinnova un piano, non dimostra compatibilità e non giustifica un altro pagamento. Tieni gli accessi privati fuori dalle immagini pubbliche e conserva la configurazione salvata."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV op Google TV: starttabbladen zijn geen spelerkanalen",
+      "excerpt": "De startnavigatie van Google TV kan verschillen van een handleiding en van de kanalenlijst in een speler. Bepaal eerst op welk scherm iets ontbreekt.",
+      "seo_title": "Get IPTV op Google TV: starttabbladen en spelerkanalen",
+      "seo_description": "Onderscheid Google TV-tabbladen die per land en taal verschillen van kanalen in de speler, voordat je een ontbrekend Live-tabblad als dienststoring beoordeelt.",
+      "sections": [
+        {
+          "heading": "Benoem het scherm dat je vergelijkt",
+          "paragraphs": [
+            "Bepaal bij Get IPTV op Google TV eerst of je het startscherm van de televisie of een geopende speler bekijkt. Home of Voor jou hoort bij een andere navigatielaag dan een kanalenlijst in een app. Noteer welke kop precies ontbreekt en of de bedoelde speler nog opent. Een handleiding met een andere rij tabbladen bewijst niet dat je dienst is gestopt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd rekening met beschreven verschillen",
+          "paragraphs": [
+            "Google legt uit dat starttabbladen afhangen van het land en de gekozen apparaattaal. Home, Voor jou, Apps en Bibliotheek zijn voorbeelden; Live is afhankelijk van beschikbaarheid en betreft Google TV of partners van dat tabblad. Dat belooft niet dat de kanalen van elke geïnstalleerde speler daar verschijnen. Een apparaat dat buiten het aankoopland wordt gebruikt, kan ook anders werken. Vergelijk de passende documentatie in plaats van alleen voor een schermafbeelding de regio te veranderen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV Help: tabbladen en regionale verschillen",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de bedoelde speler apart",
+          "paragraphs": [
+            "Open waar beschikbaar de bedoelde geïnstalleerde speler via Apps en bekijk het eigen scherm. Verschijnt daar een fout, noteer die melding dan los van het ontbrekende starttabblad. Geef bij particuliere ondersteuning het model, de softwareversie, interfacetaal en vergeleken schermen door. Een ander startmenu verlengt geen abonnement, bewijst geen compatibiliteit en rechtvaardigt geen extra betaling. Houd privétoegangsgegevens buiten openbare schermafbeeldingen en bewaar de opgeslagen instellingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV no Google TV: separadores iniciais não são canais do leitor",
+      "excerpt": "A navegação inicial do Google TV pode diferir de um guia e da lista de canais no leitor. Identifique primeiro o ecrã em que falta alguma coisa.",
+      "seo_title": "Get IPTV no Google TV: separadores iniciais e canais",
+      "seo_description": "Diferencie os separadores do Google TV, variáveis por país e idioma, dos canais no leitor antes de interpretar a falta de Live como uma falha do serviço.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã que está a comparar",
+          "paragraphs": [
+            "Ao verificar Get IPTV no Google TV, identifique primeiro se está no ecrã inicial da televisão ou num leitor aberto. Início ou Para si pertence a uma camada de navegação diferente da lista de canais de uma aplicação. Anote o título exato em falta e se o leitor pretendido ainda abre. Um guia com outra sequência de separadores não basta para demonstrar que o serviço parou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Considere as diferenças documentadas",
+          "paragraphs": [
+            "A Google explica que os separadores iniciais dependem do país e do idioma escolhido no dispositivo. Início, Para si, Aplicações e Biblioteca são exemplos; Live está sujeito à disponibilidade e diz respeito ao Google TV ou aos parceiros desse separador. Não promete que os canais de todos os leitores instalados apareçam ali. Um dispositivo usado fora do país de compra também pode apresentar outra experiência. Consulte a documentação adequada, em vez de mudar a região apenas para imitar uma imagem."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google TV: separadores e diferenças regionais",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique o leitor pretendido separadamente",
+          "paragraphs": [
+            "Quando disponível, abra o leitor instalado pretendido em Aplicações e observe o seu próprio ecrã. Se aparecer um erro, registe a mensagem separadamente do separador inicial ausente. Ao pedir suporte privado, indique modelo, versão do software, idioma da interface e ecrãs comparados. Uma diferença no menu não renova um plano, não comprova compatibilidade e não justifica outro pagamento. Não publique dados privados de acesso em capturas e preserve a configuração guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV на Google TV: вкладки главного экрана не равны каналам плеера",
+      "excerpt": "Главный экран Google TV может отличаться от инструкции и списка каналов внутри плеера. Сначала определите, на каком экране чего-то не хватает.",
+      "seo_title": "Get IPTV на Google TV: вкладки главного экрана и каналы",
+      "seo_description": "Отделите зависящие от страны и языка вкладки Google TV от каналов внутри плеера, прежде чем считать отсутствие вкладки Live неисправностью сервиса.",
+      "sections": [
+        {
+          "heading": "Назовите экран, который сравниваете",
+          "paragraphs": [
+            "Проверяя Get IPTV на Google TV, сначала определите, открыт ли главный экран телевизора или сам плеер. Раздел Главная или Для вас относится к другому уровню навигации, чем список каналов приложения. Запишите точное название отсутствующего раздела и открывается ли нужный плеер. Другая последовательность вкладок в инструкции сама по себе не доказывает остановку сервиса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Учитывайте описанные различия главного экрана",
+          "paragraphs": [
+            "Google объясняет, что вкладки главного экрана зависят от страны и выбранного языка устройства. Главная, Для вас, Приложения и Библиотека — примеры; Live доступна не везде и относится к Google TV или партнёрам этой вкладки. Это не обещание появления там каналов любого установленного плеера. Устройство вне страны покупки тоже может работать иначе. Сверяйтесь с подходящей документацией, а не меняйте регион только ради сходства со снимком экрана."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google TV: вкладки и региональные различия",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отдельно проверьте нужный плеер",
+          "paragraphs": [
+            "Если такой раздел доступен, откройте нужный установленный плеер из Приложений и посмотрите его собственный экран. Возникшую там ошибку запишите отдельно от отсутствующей вкладки главного экрана. При личном обращении в поддержку укажите модель, версию ПО, язык интерфейса и сравниваемые экраны. Разница меню не продлевает тариф, не доказывает совместимость и не оправдывает повторную оплату. Не публикуйте данные доступа на снимках и сохраняйте существующую настройку."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Google TV پر Get IPTV: ہوم کی ٹیبز پلیئر کے چینلز نہیں",
+      "excerpt": "Google TV کا ہوم مینو کسی گائیڈ اور پلیئر کی چینل فہرست سے مختلف ہو سکتا ہے۔ ترتیب بدلنے سے پہلے پہچانیں کہ کس اسکرین پر کیا غائب ہے۔",
+      "seo_title": "Google TV پر Get IPTV: ہوم ٹیبز اور پلیئر کے چینلز",
+      "seo_description": "Google TV کی ملک اور زبان کے مطابق بدلنے والی ہوم ٹیبز کو پلیئر کے چینلز سے الگ جانچیں؛ Live ٹیب نہ دکھنے کو فوراً سروس کی خرابی نہ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "جس اسکرین کا موازنہ کر رہے ہیں اسے پہچانیں",
+          "paragraphs": [
+            "Google TV پر Get IPTV کی جانچ میں پہلے پہچانیں کہ ٹی وی کی ہوم اسکرین دیکھ رہے ہیں یا کھلا ہوا پلیئر۔ ہوم یا آپ کے لیے والی سرخی، ایپ کے اندر چینلز کی فہرست سے الگ مینو کا حصہ ہے۔ عین غائب سرخی لکھیں اور دیکھیں کہ مطلوبہ پلیئر اب بھی کھلتا ہے یا نہیں۔ گائیڈ میں ٹیبز کی مختلف قطار دکھنا اکیلے یہ ثابت نہیں کرتا کہ آپ کی سروس بند ہو گئی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ہوم اسکرین کے بیان کردہ فرق کو سمجھیں",
+          "paragraphs": [
+            "Google بتاتا ہے کہ ہوم ٹیبز ملک اور آلے کی منتخب زبان کے مطابق ہوتی ہیں۔ ہوم، آپ کے لیے، ایپس اور لائبریری مثالیں ہیں؛ Live دستیابی پر منحصر ہے اور Google TV یا اس ٹیب کے شراکت داروں سے متعلق ہے۔ اس کا مطلب یہ وعدہ نہیں کہ ہر نصب شدہ پلیئر کے چینلز وہاں آئیں گے۔ آلہ خریداری والے ملک سے باہر استعمال ہو تو تجربہ بھی مختلف ہو سکتا ہے۔ صرف تصویر جیسا منظر بنانے کے لیے علاقائی ترتیبات بدلنے کے بجائے اپنے آلے کی متعلقہ رہنمائی دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV کی مدد: ہوم ٹیبز اور علاقائی فرق",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "مطلوبہ پلیئر کو الگ جانچیں",
+          "paragraphs": [
+            "جہاں دستیاب ہو، ایپس سے مطلوبہ نصب شدہ پلیئر کھولیں اور اس کی اپنی اسکرین دیکھیں۔ وہاں خرابی آئے تو اس کا درست پیغام ہوم کی غائب ٹیب سے الگ لکھیں۔ نجی مدد مانگتے وقت آلے کا ماڈل، سافٹ ویئر ورژن، انٹرفیس کی زبان اور موازنہ کی گئی اسکرینیں بتائیں۔ ہوم مینو کا فرق پلان کی تجدید، مطابقت کی تصدیق یا دوبارہ ادائیگی کا جواز نہیں بنتا۔ عوامی اسکرین شاٹس سے نجی رسائی کی معلومات باہر رکھیں اور محفوظ سیٹ اپ برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV على Google TV: تبويبات الرئيسية ليست قنوات المشغّل",
+      "excerpt": "قد تختلف واجهة Google TV الرئيسية عن الدليل وعن قائمة القنوات داخل المشغّل. حدّد أولًا الشاشة التي ينقصها عنصر قبل تغيير الإعدادات.",
+      "seo_title": "Get IPTV على Google TV: تبويبات الرئيسية وقنوات المشغّل",
+      "seo_description": "ميّز تبويبات Google TV المتغيرة حسب البلد واللغة عن القنوات داخل المشغّل قبل تفسير غياب تبويب Live باعتباره عطلًا في الخدمة.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة التي تقارنها",
+          "paragraphs": [
+            "عند فحص Get IPTV على Google TV، حدّد أولًا هل تنظر إلى الشاشة الرئيسية للتلفزيون أم إلى مشغّل مفتوح. عنوان الرئيسية أو لك ينتمي إلى طبقة تنقل مختلفة عن قائمة القنوات داخل التطبيق. اكتب العنوان الناقص بدقة، وهل ما زال المشغّل المطلوب يفتح. اختلاف صف التبويبات عن صورة الدليل لا يكفي لإثبات توقف خدمتك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راعِ الاختلافات الموثقة للشاشة الرئيسية",
+          "paragraphs": [
+            "توضح Google أن تبويبات الرئيسية تعتمد على البلد واللغة المحددة للجهاز. الرئيسية ولك والتطبيقات والمكتبة أمثلة؛ أما Live فيخضع للتوفر ويتعلق بـGoogle TV أو شركاء ذلك التبويب. لا يعني هذا وعدًا بظهور قنوات كل مشغّل مثبت فيه. وقد تختلف تجربة جهاز يُستخدم خارج بلد شرائه أيضًا. قارن الوثائق المناسبة لجهازك بدل تغيير المنطقة لمجرد تقليد لقطة شاشة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google TV: التبويبات والاختلافات الإقليمية",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افحص المشغّل المطلوب بصورة منفصلة",
+          "paragraphs": [
+            "حيثما يتوفر الخيار، افتح المشغّل المثبت المطلوب من التطبيقات وراقب شاشته. إن ظهر خطأ هناك، فسجّل رسالته الدقيقة منفصلة عن تبويب الرئيسية الناقص. عند طلب دعم خاص، اذكر طراز الجهاز وإصدار النظام ولغة الواجهة والشاشات المقارنة. اختلاف قائمة الرئيسية لا يجدد الخطة ولا يثبت التوافق ولا يبرر دفعة جديدة. لا تنشر بيانات الوصول الخاصة في الصور، واحتفظ بالإعداد المحفوظ."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Google TV पर Get IPTV: होम टैब प्लेयर के चैनल नहीं हैं",
+      "excerpt": "Google TV का होम नेविगेशन किसी गाइड और प्लेयर की चैनल सूची से अलग हो सकता है। सेटिंग बदलने से पहले पहचानें कि किस स्क्रीन पर क्या गायब है।",
+      "seo_title": "Google TV पर Get IPTV: होम टैब और प्लेयर के चैनल",
+      "seo_description": "Google TV के देश और भाषा के अनुसार बदलते होम टैब को प्लेयर के चैनलों से अलग पहचानें; Live टैब न दिखने को तुरंत सेवा की खराबी न मानें।",
+      "sections": [
+        {
+          "heading": "जिस स्क्रीन की तुलना कर रहे हैं उसे पहचानें",
+          "paragraphs": [
+            "Google TV पर Get IPTV की जाँच में पहले पहचानें कि आप टीवी की होम स्क्रीन देख रहे हैं या खुला हुआ प्लेयर। होम या आपके लिए वाला शीर्षक ऐप के अंदर चैनल सूची से अलग नेविगेशन का हिस्सा है। ठीक कौन-सा शीर्षक गायब है और इच्छित प्लेयर अब भी खुलता है या नहीं, यह लिखें। गाइड में टैब की दूसरी कतार दिखना अकेले साबित नहीं करता कि आपकी सेवा बंद हो गई है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "होम स्क्रीन के बताए गए अंतर समझें",
+          "paragraphs": [
+            "Google बताता है कि होम टैब देश और डिवाइस की चुनी भाषा पर निर्भर होते हैं। होम, आपके लिए, ऐप्स और लाइब्रेरी इसके उदाहरण हैं; Live उपलब्धता पर निर्भर है और Google TV या उस टैब के साझेदारों से जुड़ा है। यह वादा नहीं है कि हर इंस्टॉल किए प्लेयर के चैनल वहाँ दिखेंगे। खरीदे गए देश के बाहर इस्तेमाल होने पर डिवाइस का अनुभव भी बदल सकता है। सिर्फ किसी चित्र जैसा दृश्य बनाने के लिए क्षेत्रीय सेटिंग बदलने के बजाय अपने डिवाइस की संबंधित जानकारी देखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV सहायता: होम टैब और क्षेत्रीय अंतर",
+              "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "इच्छित प्लेयर को अलग जाँचें",
+          "paragraphs": [
+            "जहाँ उपलब्ध हो, ऐप्स से इच्छित इंस्टॉल किया प्लेयर खोलें और उसकी अपनी स्क्रीन देखें। वहाँ त्रुटि आए तो उसका सही संदेश गायब होम टैब से अलग लिखें। निजी सहायता माँगते समय डिवाइस मॉडल, सॉफ्टवेयर संस्करण, इंटरफ़ेस की भाषा और तुलना की गई स्क्रीन बताएँ। होम मेनू का अंतर प्लान नवीनीकृत नहीं करता, अनुकूलता साबित नहीं करता और दूसरा भुगतान उचित नहीं बनाता। सार्वजनिक स्क्रीनशॉट में निजी पहुँच की जानकारी न दिखाएँ और सहेजा सेटअप बनाए रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: discover the home screen",
+      "url": "https://support.google.com/googletv/answer/10467234?hl=en"
+    },
+    {
+      "label": "Google TV Help: how tabs and Live content work",
+      "url": "https://support.google.com/googletv/answer/10267283?hl=en"
+    }
+  ]
+}

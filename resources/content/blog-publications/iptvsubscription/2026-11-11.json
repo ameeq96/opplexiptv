@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-11",
+  "topic": "Use Chrome Find within an IPTV Subscription public plan page to locate a term and read its complete context without treating text matches as product availability",
+  "primary_keyword": "IPTV Subscription page search",
+  "slug": "iptvsubscription-find-plan-term-page-context",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription page search: find a term, then read its context",
+      "excerpt": "Use the browser's page search to locate a plan term without treating highlighted matches as complete offers. Read the provider and surrounding conditions together.",
+      "seo_title": "IPTV Subscription page search: read a match in context",
+      "seo_description": "Find a word on an IPTV plan page in desktop Chrome, then check the surrounding provider, duration and full amount instead of relying on a highlighted match.",
+      "sections": [
+        {
+          "heading": "Search the page you are actually reading",
+          "paragraphs": [
+            "An IPTV Subscription page search is useful when a long comparison makes one detail hard to locate. On a computer in Chrome, open the public page, then use Find from the browser menu or Ctrl+F on Windows and Linux; Mac uses Command+F. Enter a word shown in that page's language, such as a provider name. This searches the current page, rather than opening a new web search."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: find text within a page",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read beyond the highlighted word",
+          "paragraphs": [
+            "Move through the matches and read the complete nearby heading, paragraph or plan card. A match count counts text occurrences, not available plans or connection allowances. Keep Opplex and Filex separate, and read duration, currency and full amount beside the selected provider. A highlighted monthly comparison figure does not explain the total payable now. Finding one familiar word is only a starting point."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Handle a missing match carefully",
+          "paragraphs": [
+            "If a word is not found, check its spelling and the page's actual language before concluding that an offer is unavailable. Read relevant navigation and visible conditions normally, or ask about the precise missing detail. Page search does not reserve a price, confirm an order or change payment status. Keep private checkout details out of screenshots used merely to explain where a term was difficult to find."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Búsqueda en IPTV Subscription: encuentra un término y lee su contexto",
+      "excerpt": "Localiza una condición con la búsqueda del navegador sin confundir una coincidencia resaltada con una oferta completa. Lee juntos proveedor y condiciones cercanas.",
+      "seo_title": "Buscar en IPTV Subscription y leer cada coincidencia",
+      "seo_description": "Encuentra una palabra en una página de planes con Chrome y revisa proveedor, duración e importe completo alrededor de la coincidencia antes de decidir.",
+      "sections": [
+        {
+          "heading": "Busca en la página que estás leyendo",
+          "paragraphs": [
+            "La búsqueda en la página de IPTV Subscription ayuda cuando una comparación larga dificulta localizar un dato. En Chrome para ordenador, abre la página pública y usa Buscar en el menú o Ctrl+F en Windows y Linux; en Mac, Command+F. Introduce una palabra del idioma de esa página, como el nombre del proveedor. Así buscas en la página actual, en lugar de iniciar otra búsqueda en la web."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Chrome: buscar texto dentro de una página",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lee más allá de la palabra resaltada",
+          "paragraphs": [
+            "Recorre las coincidencias y lee el título, párrafo o ficha del plan completos. El contador indica apariciones del texto, no planes disponibles ni conexiones permitidas. Mantén separados Opplex y Filex y lee duración, moneda e importe total junto al proveedor elegido. Una cifra mensual de comparación resaltada no explica el total que se paga ahora. Encontrar una palabra conocida es solo el comienzo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Interpreta con cuidado una búsqueda sin resultados",
+          "paragraphs": [
+            "Si no aparece una palabra, revisa su escritura y el idioma real de la página antes de concluir que una oferta no está disponible. Lee normalmente la navegación y las condiciones visibles, o pregunta por el dato concreto que falta. Buscar en la página no reserva precios, confirma pedidos ni cambia un pago. No muestres datos privados del pago en capturas destinadas solo a explicar dónde costaba encontrar un término."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Recherche IPTV Subscription : trouver un terme puis lire son contexte",
+      "excerpt": "Repérez une condition avec la recherche du navigateur sans prendre un mot surligné pour une offre complète. Lisez ensemble le fournisseur et les précisions proches.",
+      "seo_title": "Recherche dans IPTV Subscription : lire chaque résultat",
+      "seo_description": "Trouvez un mot sur une page de forfaits avec Chrome, puis vérifiez le fournisseur, la durée et le montant total dans le contexte du résultat surligné.",
+      "sections": [
+        {
+          "heading": "Chercher dans la page réellement ouverte",
+          "paragraphs": [
+            "La recherche dans une page IPTV Subscription aide à retrouver un détail dans une longue comparaison. Sur ordinateur, ouvrez la page publique dans Chrome puis utilisez Rechercher dans le menu, ou Ctrl+F sous Windows et Linux ; sur Mac, Command+F. Saisissez un mot dans la langue de la page, par exemple le nom du fournisseur. Cette action cherche dans la page actuelle plutôt que de lancer une nouvelle recherche sur le Web."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Chrome : rechercher du texte dans une page",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lire au-delà du mot surligné",
+          "paragraphs": [
+            "Parcourez les résultats et lisez entièrement le titre, le paragraphe ou la fiche du forfait concerné. Le nombre de résultats compte des occurrences de texte, pas des forfaits disponibles ni des connexions autorisées. Distinguez Opplex de Filex et lisez durée, devise et montant total avec le fournisseur choisi. Un équivalent mensuel surligné n'explique pas la somme à payer maintenant. Un mot familier ne constitue qu'un point de départ."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Interpréter prudemment l'absence de résultat",
+          "paragraphs": [
+            "Si un mot n'est pas trouvé, vérifiez son orthographe et la langue réelle de la page avant de conclure qu'une offre est indisponible. Lisez normalement la navigation et les conditions visibles, ou demandez le détail précis qui manque. La recherche dans la page ne réserve aucun prix, ne confirme aucune commande et ne modifie pas un paiement. Masquez les données privées de paiement dans une capture servant seulement à montrer un terme difficile à repérer."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ricerca nella pagina IPTV Subscription: trova un termine e leggi il contesto",
+      "excerpt": "Usa la ricerca del browser per trovare una condizione senza scambiare una parola evidenziata per un'offerta completa. Leggi insieme fornitore e condizioni vicine.",
+      "seo_title": "Ricerca nella pagina IPTV Subscription: leggere il contesto",
+      "seo_description": "Trova una parola nella pagina di un abbonamento IPTV con Chrome, poi controlla fornitore, durata e importo completo vicino alla corrispondenza evidenziata.",
+      "sections": [
+        {
+          "heading": "Cerca nella pagina che stai leggendo",
+          "paragraphs": [
+            "La ricerca nella pagina IPTV Subscription aiuta a individuare un dettaglio in un confronto lungo. Su computer, apri la pagina pubblica in Chrome e usa Trova nel menu oppure Ctrl+F su Windows e Linux; su Mac, Command+F. Inserisci una parola nella lingua della pagina, per esempio il nome del fornitore. In questo modo cerchi nella pagina corrente anziché avviare una nuova ricerca sul Web."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Chrome: trovare testo in una pagina",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi oltre la parola evidenziata",
+          "paragraphs": [
+            "Scorri le corrispondenze e leggi per intero il titolo, il paragrafo o la scheda del piano vicini. Il conteggio indica occorrenze di testo, non piani disponibili o connessioni consentite. Tieni distinti Opplex e Filex e leggi durata, valuta e importo totale insieme al fornitore scelto. Una cifra mensile di confronto evidenziata non spiega il totale da pagare ora. Una parola familiare è soltanto un punto di partenza."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Valuta con cautela una corrispondenza assente",
+          "paragraphs": [
+            "Se una parola non viene trovata, controlla ortografia e lingua effettiva della pagina prima di concludere che un'offerta non sia disponibile. Leggi normalmente navigazione e condizioni visibili, oppure chiedi il dettaglio preciso che manca. La ricerca nella pagina non riserva prezzi, non conferma ordini e non cambia lo stato del pagamento. Non mostrare dati privati del pagamento in immagini usate solo per spiegare dove un termine era difficile da trovare."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Zoeken op IPTV Subscription: vind een term en lees de context",
+      "excerpt": "Gebruik zoeken op de pagina om een voorwaarde te vinden zonder een gemarkeerd woord voor een volledig aanbod aan te zien. Lees aanbieder en voorwaarden samen.",
+      "seo_title": "Zoeken op IPTV Subscription: lees de context bij een treffer",
+      "seo_description": "Vind een woord op een abonnementspagina in Chrome en controleer daarna aanbieder, looptijd en het volledige bedrag rondom de gemarkeerde treffer.",
+      "sections": [
+        {
+          "heading": "Zoek op de pagina die je werkelijk leest",
+          "paragraphs": [
+            "Zoeken op een IPTV Subscription-pagina helpt wanneer een lange vergelijking een detail lastig vindbaar maakt. Open de openbare pagina in Chrome op een computer en gebruik Zoeken via het menu of Ctrl+F op Windows en Linux; op een Mac gebruik je Command+F. Typ een woord in de taal van de pagina, bijvoorbeeld de aanbieder. Hiermee doorzoek je de huidige pagina in plaats van een nieuwe webzoekopdracht te starten."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome Help: tekst zoeken op een pagina",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lees verder dan het gemarkeerde woord",
+          "paragraphs": [
+            "Loop de treffers langs en lees de volledige bijbehorende kop, alinea of abonnementskaart. Het aantal treffers telt tekstvermeldingen, geen beschikbare abonnementen of toegestane verbindingen. Houd Opplex en Filex uit elkaar en lees looptijd, valuta en totaalbedrag bij de gekozen aanbieder. Een gemarkeerd maandbedrag ter vergelijking verklaart niet het bedrag dat je nu betaalt. Een bekend woord vinden is alleen een beginpunt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Beoordeel een ontbrekende treffer zorgvuldig",
+          "paragraphs": [
+            "Wordt een woord niet gevonden, controleer dan spelling en de werkelijke paginataal voordat je concludeert dat een aanbod ontbreekt. Lees de navigatie en zichtbare voorwaarden gewoon door, of vraag naar het precieze ontbrekende detail. Zoeken op de pagina reserveert geen prijs, bevestigt geen bestelling en verandert geen betaling. Houd privégegevens van het afrekenen buiten schermafbeeldingen die alleen een lastig vindbare term moeten uitleggen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Busca na página IPTV Subscription: encontre o termo e leia o contexto",
+      "excerpt": "Use a busca do navegador para localizar uma condição sem confundir um destaque com uma oferta completa. Leia o fornecedor e as condições próximas em conjunto.",
+      "seo_title": "Busca em IPTV Subscription: leia o contexto do resultado",
+      "seo_description": "Encontre uma palavra numa página de planos no Chrome e confira fornecedor, duração e valor completo em volta do resultado destacado antes de decidir.",
+      "sections": [
+        {
+          "heading": "Pesquise na página que está a ler",
+          "paragraphs": [
+            "A busca na página IPTV Subscription ajuda quando uma comparação longa torna um detalhe difícil de encontrar. Num computador, abra a página pública no Chrome e use Localizar no menu ou Ctrl+F no Windows e Linux; no Mac, Command+F. Introduza uma palavra no idioma dessa página, como o nome do fornecedor. Assim pesquisa na página atual, em vez de iniciar outra pesquisa na Web."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Chrome: procurar texto numa página",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leia além da palavra destacada",
+          "paragraphs": [
+            "Percorra os resultados e leia o título, parágrafo ou cartão do plano por inteiro. A contagem indica ocorrências de texto, não planos disponíveis nem ligações permitidas. Mantenha Opplex e Filex separados e leia duração, moeda e montante total junto do fornecedor selecionado. Uma equivalência mensal destacada não explica o total a pagar agora. Encontrar uma palavra familiar é apenas o ponto de partida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Interprete com cuidado a ausência de resultados",
+          "paragraphs": [
+            "Se uma palavra não aparecer, verifique a grafia e o idioma real da página antes de concluir que uma oferta não está disponível. Leia normalmente a navegação e as condições visíveis ou pergunte pelo detalhe exato em falta. A busca na página não reserva preços, não confirma encomendas e não altera pagamentos. Não exponha dados privados do pagamento em capturas usadas apenas para explicar onde era difícil localizar um termo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Поиск на IPTV Subscription: найдите слово и прочитайте контекст",
+      "excerpt": "Найдите условие поиском браузера, но не принимайте выделенное слово за полное предложение. Читайте название поставщика вместе с окружающими условиями.",
+      "seo_title": "Поиск на странице IPTV Subscription: важен контекст",
+      "seo_description": "Найдите слово на странице тарифа в Chrome, затем проверьте поставщика, срок и полную сумму рядом с совпадением, а не только выделенный текст.",
+      "sections": [
+        {
+          "heading": "Ищите на той странице, которую читаете",
+          "paragraphs": [
+            "Поиск на странице IPTV Subscription полезен, когда в длинном сравнении трудно найти деталь. Откройте общедоступную страницу в Chrome на компьютере и выберите поиск в меню или нажмите Ctrl+F в Windows и Linux; на Mac — Command+F. Введите слово на языке страницы, например название поставщика. Это поиск по текущей странице, а не новый запрос в Интернете."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Chrome: поиск текста на странице",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Прочитайте больше выделенного слова",
+          "paragraphs": [
+            "Переходите между совпадениями и читайте целиком соседний заголовок, абзац или карточку тарифа. Счётчик показывает число упоминаний текста, а не доступных тарифов или разрешённых подключений. Не смешивайте Opplex и Filex; читайте срок, валюту и полную сумму вместе с выбранным поставщиком. Выделенная месячная величина для сравнения не объясняет сумму к оплате сейчас. Знакомое слово — лишь отправная точка."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Осторожно оценивайте отсутствие совпадений",
+          "paragraphs": [
+            "Если слово не найдено, проверьте написание и фактический язык страницы, прежде чем считать предложение недоступным. Прочитайте навигацию и видимые условия обычным способом или уточните конкретную отсутствующую деталь. Поиск на странице не резервирует цену, не подтверждает заказ и не меняет состояние оплаты. Не показывайте личные платёжные сведения на снимках, предназначенных лишь для объяснения, где было трудно найти условие."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کے صفحے میں تلاش: لفظ ڈھونڈیں، پھر سیاق پڑھیں",
+      "excerpt": "براؤزر کی صفحے میں تلاش سے کسی شرط تک پہنچیں، مگر نمایاں لفظ کو مکمل پیشکش نہ سمجھیں۔ فراہم کنندہ اور آس پاس کی شرائط ایک ساتھ پڑھیں۔",
+      "seo_title": "IPTV Subscription: صفحے میں تلاش اور سیاق کی جانچ",
+      "seo_description": "کمپیوٹر پر Chrome سے پلان کے صفحے میں لفظ تلاش کریں، پھر نمایاں نتیجے کے ساتھ فراہم کنندہ، مدت اور مکمل رقم دیکھیں، صرف لفظ پر انحصار نہ کریں۔",
+      "sections": [
+        {
+          "heading": "اسی صفحے میں تلاش کریں جسے پڑھ رہے ہیں",
+          "paragraphs": [
+            "IPTV Subscription کے صفحے میں تلاش اس وقت مفید ہے جب طویل موازنے میں ایک تفصیل ڈھونڈنا مشکل ہو۔ کمپیوٹر پر Chrome میں عوامی صفحہ کھولیں، پھر مینو سے تلاش کا اختیار یا Windows اور Linux پر Ctrl+F استعمال کریں؛ Mac پر Command+F ہوتا ہے۔ صفحے کی زبان میں کوئی لفظ، مثلاً فراہم کنندہ کا نام لکھیں۔ اس سے موجودہ صفحے میں تلاش ہوتی ہے، نئی ویب تلاش شروع نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome کی مدد: صفحے کے اندر متن تلاش کرنا",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "نمایاں لفظ سے آگے بھی پڑھیں",
+          "paragraphs": [
+            "نتائج میں آگے بڑھتے ہوئے متعلقہ مکمل سرخی، پیراگراف یا پلان کا خانہ پڑھیں۔ نتائج کی گنتی متن کے آنے کی تعداد ہے، دستیاب پلانوں یا اجازت یافتہ رابطوں کی تعداد نہیں۔ Opplex اور Filex کو الگ رکھیں اور منتخب فراہم کنندہ کے ساتھ مدت، کرنسی اور مکمل رقم پڑھیں۔ نمایاں ماہانہ تقابلی رقم آج واجب الادا مکمل رقم کی وضاحت نہیں کرتی۔ مانوس لفظ ملنا صرف ابتدائی قدم ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نتیجہ نہ ملنے کو احتیاط سے سمجھیں",
+          "paragraphs": [
+            "لفظ نہ ملے تو پیشکش کو غیر دستیاب سمجھنے سے پہلے ہجے اور صفحے کی اصل زبان دیکھیں۔ متعلقہ مینو اور نظر آنے والی شرائط معمول کے مطابق پڑھیں، یا عین گم شدہ تفصیل پوچھیں۔ صفحے میں تلاش قیمت محفوظ نہیں کرتی، آرڈر کی تصدیق نہیں کرتی اور ادائیگی کی حالت نہیں بدلتی۔ صرف یہ بتانے کے لیے کہ شرط کہاں مشکل سے ملی، اسکرین شاٹ میں نجی ادائیگی کی تفصیلات ظاہر نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "البحث في IPTV Subscription: اعثر على المصطلح ثم اقرأ سياقه",
+      "excerpt": "استخدم بحث الصفحة للوصول إلى شرط، لكن لا تعتبر الكلمة المظللة عرضًا كاملًا. اقرأ اسم المزوّد والشروط المحيطة بها معًا قبل الاختيار.",
+      "seo_title": "البحث في صفحة IPTV Subscription وقراءة سياق النتيجة",
+      "seo_description": "اعثر على كلمة في صفحة اشتراك عبر Chrome، ثم افحص المزوّد والمدة والمبلغ الكامل حول النتيجة بدل الاعتماد على الكلمة المظللة وحدها.",
+      "sections": [
+        {
+          "heading": "ابحث في الصفحة التي تقرؤها فعلًا",
+          "paragraphs": [
+            "يفيد البحث في صفحة IPTV Subscription عندما تصعب ملاحظة تفصيل ضمن مقارنة طويلة. افتح الصفحة العامة في Chrome على الكمبيوتر، ثم استخدم البحث من القائمة أو Ctrl+F في Windows وLinux؛ وعلى Mac استخدم Command+F. أدخل كلمة بلغة الصفحة، مثل اسم المزوّد. بهذا تبحث داخل الصفحة الحالية بدل بدء بحث جديد على الويب."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Chrome: البحث عن نص داخل الصفحة",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ ما وراء الكلمة المظللة",
+          "paragraphs": [
+            "تنقّل بين النتائج واقرأ العنوان أو الفقرة أو بطاقة الخطة المجاورة كاملة. عدد النتائج يحصي مرات ظهور النص، وليس الخطط المتاحة أو الاتصالات المسموحة. افصل Opplex عن Filex، واقرأ المدة والعملة والمبلغ الكامل مع المزوّد المحدد. الرقم الشهري المقارن المظلل لا يوضح الإجمالي المستحق الآن. العثور على كلمة مألوفة مجرد نقطة بداية."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "فسّر غياب النتيجة بحذر",
+          "paragraphs": [
+            "إذا لم تُعثر على كلمة، فتحقق من كتابتها ومن اللغة الفعلية للصفحة قبل اعتبار العرض غير متاح. اقرأ التنقل والشروط الظاهرة بالطريقة المعتادة، أو اسأل عن التفصيل الناقص تحديدًا. البحث في الصفحة لا يحجز سعرًا ولا يؤكد طلبًا ولا يغيّر حالة الدفع. لا تكشف تفاصيل الدفع الخاصة في صور تُستخدم فقط لشرح الموضع الذي صعب العثور فيه على شرط."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription पेज में खोज: शब्द पाएँ, फिर संदर्भ पढ़ें",
+      "excerpt": "ब्राउज़र की पेज खोज से किसी शर्त तक पहुँचें, लेकिन हाइलाइट किए शब्द को पूरा ऑफर न मानें। प्रदाता और आस-पास की शर्तें साथ पढ़ें।",
+      "seo_title": "IPTV Subscription पेज खोज: नतीजे का संदर्भ पढ़ें",
+      "seo_description": "कंप्यूटर के Chrome में प्लान पेज पर शब्द खोजें, फिर हाइलाइट किए नतीजे के साथ प्रदाता, अवधि और पूरी रकम जाँचें; केवल शब्द पर भरोसा न करें।",
+      "sections": [
+        {
+          "heading": "उसी पेज में खोजें जिसे पढ़ रहे हैं",
+          "paragraphs": [
+            "IPTV Subscription पेज में खोज तब उपयोगी है जब लंबी तुलना में कोई जानकारी ढूँढना कठिन हो। कंप्यूटर पर Chrome में सार्वजनिक पेज खोलें, फिर मेनू में खोज विकल्प या Windows और Linux पर Ctrl+F इस्तेमाल करें; Mac पर Command+F होता है। पेज की भाषा में कोई शब्द, जैसे प्रदाता का नाम लिखें। इससे मौजूदा पेज में खोज होती है, नई वेब खोज शुरू नहीं होती।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome सहायता: पेज के अंदर पाठ खोजना",
+              "url": "https://support.google.com/chrome/answer/95440?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "हाइलाइट किए शब्द से आगे पढ़ें",
+          "paragraphs": [
+            "नतीजों में आगे बढ़कर पास का पूरा शीर्षक, अनुच्छेद या प्लान कार्ड पढ़ें। नतीजों की संख्या पाठ के दोहराव की गिनती है, उपलब्ध प्लान या अनुमत कनेक्शन की नहीं। Opplex और Filex को अलग रखें और चुने प्रदाता के साथ अवधि, मुद्रा और पूरी रकम पढ़ें। हाइलाइट की गई मासिक तुलना रकम अभी देय पूरी रकम नहीं समझाती। परिचित शब्द मिलना केवल शुरुआती कदम है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "नतीजा न मिलने का अर्थ सावधानी से निकालें",
+          "paragraphs": [
+            "शब्द न मिले तो ऑफर अनुपलब्ध मानने से पहले वर्तनी और पेज की वास्तविक भाषा देखें। संबंधित नेविगेशन और दिखाई देने वाली शर्तें सामान्य तरीके से पढ़ें, या ठीक उसी गायब जानकारी के बारे में पूछें। पेज खोज कीमत आरक्षित नहीं करती, ऑर्डर की पुष्टि नहीं करती और भुगतान की स्थिति नहीं बदलती। सिर्फ यह समझाने के लिए कि कोई शर्त कहाँ कठिनाई से मिली, स्क्रीनशॉट में निजी भुगतान विवरण न दिखाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: search within the current page",
+      "url": "https://support.google.com/chrome/answer/95440?hl=en"
+    }
+  ]
+}

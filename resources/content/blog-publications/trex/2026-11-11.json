@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-11",
+  "topic": "Check Fire TV and sending-device mirroring compatibility before interpreting a Trex IPTV screen-sharing failure as a native player or account fault",
+  "primary_keyword": "Trex IPTV mirroring check",
+  "slug": "trex-fire-tv-mirroring-compatibility-before-player-changes",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV mirroring check: verify both devices first",
+      "excerpt": "A phone screen that never reaches the television needs a different check from an error inside a TV player. Identify the exact sharing feature before changing your setup.",
+      "seo_title": "Trex IPTV mirroring check: Fire TV compatibility first",
+      "seo_description": "Check the Fire TV model, sending device and supported mirroring route before treating a screen-sharing failure as a Trex IPTV player or subscription problem.",
+      "sections": [
+        {
+          "heading": "Identify the route you are trying to use",
+          "paragraphs": [
+            "A Trex IPTV mirroring check starts with two device names and one clear action. Are you sharing the whole phone screen, using a particular app's cast button, or opening a player directly on Fire TV? Record the phone or computer model and the exact Fire TV model. These routes have different compatibility requirements. A failed screen-sharing connection does not establish that the player installed on the television has stopped working."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Look for actual mirroring support",
+          "paragraphs": [
+            "Amazon's device comparison table lists Miracast support separately for different Fire TV models. Check the relevant model rather than assuming every Fire TV provides the same feature. Amazon's help also directs supported devices to Settings, Display & Sounds, then Enable Display Mirroring; if that option is absent, do not assume a subscription change will add it. The sending device needs compatible mirroring support too. Follow its official instructions and compare on the same Wi-Fi network where supported."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Test one route and keep the result specific",
+          "paragraphs": [
+            "If a shared home screen appears, that alone does not prove a particular player's video will display through that route. Record whether discovery, connection or actual playback failed. For Trex IPTV 8K, retain the confirmed one simultaneous connection: stop the first viewing session before comparing another. Ask about the exact device-and-player combination before purchasing another app. This compatibility check does not require erasing saved player details or exposing private access links."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comprobación de duplicación Trex IPTV: verifica ambos dispositivos",
+      "excerpt": "Que la pantalla del teléfono no llegue al televisor es distinto de un error dentro del reproductor de TV. Identifica la función de compartir antes de cambiar el equipo.",
+      "seo_title": "Trex IPTV: compatibilidad de duplicación en Fire TV",
+      "seo_description": "Comprueba el modelo Fire TV, el dispositivo emisor y la función de duplicación admitida antes de atribuir un fallo al reproductor o la suscripción Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica la forma de conexión que intentas usar",
+          "paragraphs": [
+            "Una comprobación de duplicación Trex IPTV empieza con dos nombres de dispositivos y una acción clara. ¿Compartes toda la pantalla del teléfono, usas el botón de transmitir de una aplicación o abres un reproductor directamente en Fire TV? Anota el modelo del teléfono u ordenador y el modelo exacto del Fire TV. Cada método exige una compatibilidad diferente. Una conexión de duplicación fallida no demuestra que el reproductor instalado en el televisor haya dejado de funcionar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Busca compatibilidad real con la duplicación",
+          "paragraphs": [
+            "La tabla comparativa de Amazon indica por separado la compatibilidad Miracast de cada modelo Fire TV. Consulta tu modelo en lugar de suponer que todos ofrecen lo mismo. La ayuda de Amazon también señala Configuración, Pantalla y sonidos y Activar duplicación de pantalla en equipos compatibles; si la opción falta, cambiar la suscripción no la añadirá. El emisor también debe admitir un método compatible. Sigue sus instrucciones oficiales y compara en la misma red Wi-Fi cuando esté admitido."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Prueba un método y describe el resultado concreto",
+          "paragraphs": [
+            "Ver la pantalla de inicio compartida no demuestra que el vídeo de un reproductor concreto funcione por ese método. Anota si falló la detección, la conexión o la reproducción. En Trex IPTV 8K conserva el límite confirmado de una conexión simultánea: detén la primera sesión antes de comparar otra. Pregunta por la combinación exacta de dispositivo y reproductor antes de comprar otra aplicación. Esta comprobación no exige borrar la configuración guardada ni revelar enlaces privados de acceso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Vérification de recopie Trex IPTV : identifier les deux appareils",
+      "excerpt": "Un écran de téléphone qui n'arrive jamais au téléviseur demande une autre vérification qu'une erreur dans le lecteur TV. Identifiez la fonction de partage avant de modifier votre installation.",
+      "seo_title": "Trex IPTV : vérifier la recopie d'écran sur Fire TV",
+      "seo_description": "Vérifiez le modèle Fire TV, l'appareil émetteur et la recopie prise en charge avant d'attribuer un échec de partage au lecteur ou à l'abonnement Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifier le mode de connexion essayé",
+          "paragraphs": [
+            "Une vérification de recopie Trex IPTV commence par deux noms d'appareils et une action précise. Partagez-vous tout l'écran du téléphone, utilisez-vous le bouton de diffusion d'une application ou ouvrez-vous directement un lecteur sur Fire TV ? Notez le modèle du téléphone ou de l'ordinateur et celui du Fire TV. Ces méthodes ont des exigences différentes. Un partage d'écran qui échoue ne prouve pas que le lecteur installé sur le téléviseur ne fonctionne plus."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifier une compatibilité réellement annoncée",
+          "paragraphs": [
+            "Le tableau comparatif d'Amazon indique séparément la prise en charge de Miracast selon les modèles Fire TV. Consultez le bon modèle sans supposer que tous possèdent cette fonction. L'aide Amazon indique aussi Paramètres, Affichage et sons, puis Activer la recopie d'écran sur les appareils compatibles ; l'absence de cette option ne se corrige pas en changeant d'abonnement. L'appareil émetteur doit également être compatible. Suivez sa documentation officielle et comparez sur le même Wi-Fi lorsque cette méthode est prise en charge."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Essayer une seule méthode et préciser le résultat",
+          "paragraphs": [
+            "L'affichage de l'écran d'accueil partagé ne démontre pas que la vidéo d'un lecteur précis fonctionnera par cette voie. Notez si l'échec concerne la détection, la connexion ou la lecture. Pour Trex IPTV 8K, gardez la limite confirmée d'une connexion simultanée : arrêtez la première session avant d'en comparer une autre. Demandez conseil sur la combinaison exacte avant d'acheter une autre application. Cette vérification n'exige ni effacement des paramètres enregistrés ni divulgation de liens d'accès privés."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Controllo mirroring Trex IPTV: verifica prima entrambi i dispositivi",
+      "excerpt": "Lo schermo del telefono che non arriva al televisore richiede un controllo diverso da un errore nel lettore TV. Identifica la funzione di condivisione prima di cambiare configurazione.",
+      "seo_title": "Trex IPTV: compatibilità del mirroring su Fire TV",
+      "seo_description": "Verifica modello Fire TV, dispositivo sorgente e metodo di mirroring supportato prima di attribuire un errore di condivisione al lettore o all'abbonamento Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica il collegamento che stai provando",
+          "paragraphs": [
+            "Un controllo del mirroring Trex IPTV parte da due nomi di dispositivi e da un'azione chiara. Condividi tutto lo schermo del telefono, usi il pulsante di trasmissione di un'app oppure apri direttamente un lettore su Fire TV? Annota il modello del telefono o computer e quello esatto del Fire TV. Questi metodi hanno requisiti diversi. Un collegamento di condivisione fallito non dimostra che il lettore installato sul televisore abbia smesso di funzionare."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica il supporto effettivo al mirroring",
+          "paragraphs": [
+            "La tabella comparativa Amazon indica separatamente il supporto Miracast dei diversi modelli Fire TV. Controlla il modello pertinente senza presumere che tutti offrano la stessa funzione. La guida Amazon indica anche Impostazioni, Schermo e suoni e Abilita duplicazione schermo sui dispositivi compatibili; se l'opzione manca, cambiare abbonamento non la aggiunge. Anche il dispositivo sorgente deve supportare un metodo compatibile. Segui le sue istruzioni ufficiali e confronta sulla stessa rete Wi-Fi quando previsto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Prova un solo metodo e descrivi l'esito preciso",
+          "paragraphs": [
+            "Vedere la schermata iniziale condivisa non dimostra che il video di un particolare lettore funzioni tramite quel metodo. Annota se il problema riguarda rilevamento, collegamento o riproduzione. Con Trex IPTV 8K mantieni il limite confermato di una connessione simultanea: interrompi la prima sessione prima di confrontarne un'altra. Chiedi della combinazione esatta prima di acquistare un'altra app. Questo controllo non richiede di cancellare i dati salvati del lettore o rivelare link privati di accesso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV spiegelen controleren: begin bij beide apparaten",
+      "excerpt": "Een telefoonscherm dat niet op de televisie verschijnt is iets anders dan een fout in de tv-speler. Bepaal eerst welke deelfunctie je gebruikt voordat je instellingen wijzigt.",
+      "seo_title": "Trex IPTV spiegelen: controleer Fire TV-compatibiliteit",
+      "seo_description": "Controleer het Fire TV-model, het zendende apparaat en de ondersteunde spiegelmethode voordat je een mislukte schermdeling aan Trex IPTV of je speler toeschrijft.",
+      "sections": [
+        {
+          "heading": "Bepaal welke verbindingsroute je probeert",
+          "paragraphs": [
+            "Een Trex IPTV-controle voor spiegelen begint met twee apparaatnamen en één duidelijke handeling. Deel je het hele telefoonscherm, gebruik je de castknop van een bepaalde app of open je een speler rechtstreeks op Fire TV? Noteer het telefoon- of computermodel en het exacte Fire TV-model. Elke route stelt andere eisen. Een mislukte schermverbinding bewijst niet dat de speler die op de televisie is geïnstalleerd niet meer werkt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Zoek naar daadwerkelijk ondersteund spiegelen",
+          "paragraphs": [
+            "Amazons vergelijkingstabel vermeldt Miracast-ondersteuning per Fire TV-model. Zoek het juiste model op in plaats van dezelfde functie op ieder apparaat te verwachten. Amazons hulp noemt voor ondersteunde apparaten ook Instellingen, Beeld en geluid en Schermspiegelen inschakelen; een ontbrekende optie verschijnt niet door een ander abonnement. Ook het zendende apparaat moet een passende spiegelmethode ondersteunen. Volg de officiële instructies en vergelijk op hetzelfde wifi-netwerk wanneer de methode dat ondersteunt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Probeer één route en beschrijf het resultaat",
+          "paragraphs": [
+            "Een gedeeld beginscherm betekent op zichzelf niet dat video van een specifieke speler langs die route wordt weergegeven. Noteer of zoeken, verbinden of werkelijk afspelen mislukte. Behoud bij Trex IPTV 8K de bevestigde limiet van één gelijktijdige verbinding: stop de eerste kijksessie voordat je een andere vergelijkt. Vraag naar de exacte combinatie voordat je nog een app koopt. Voor deze controle hoef je opgeslagen spelergegevens niet te wissen of privétoegangslinks te delen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Espelhamento no Trex IPTV: verifique primeiro os dois aparelhos",
+      "excerpt": "Um ecrã do telefone que não chega à televisão exige uma verificação diferente de um erro dentro do leitor da TV. Identifique a função de partilha antes de mudar a configuração.",
+      "seo_title": "Trex IPTV: verificar espelhamento e compatibilidade Fire TV",
+      "seo_description": "Verifique o modelo Fire TV, o dispositivo de origem e o método de espelhamento suportado antes de atribuir uma falha ao leitor ou à assinatura Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique a ligação que está a tentar",
+          "paragraphs": [
+            "Uma verificação de espelhamento do Trex IPTV começa com dois nomes de aparelhos e uma ação clara. Está a partilhar todo o ecrã do telefone, a usar o botão de transmissão de uma aplicação ou a abrir um leitor diretamente no Fire TV? Registe o modelo do telefone ou computador e o modelo exato do Fire TV. Estes métodos têm requisitos diferentes. Uma ligação de partilha falhada não demonstra que o leitor instalado na televisão deixou de funcionar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confirme o suporte real de espelhamento",
+          "paragraphs": [
+            "A tabela comparativa da Amazon apresenta o suporte Miracast separadamente por modelo Fire TV. Consulte o modelo certo sem presumir que todos incluem a mesma função. A ajuda da Amazon também indica Definições, Ecrã e sons e Ativar espelhamento nos aparelhos compatíveis; se a opção não existir, mudar a assinatura não a acrescenta. O dispositivo de origem também precisa de suporte compatível. Siga as instruções oficiais e compare na mesma rede Wi-Fi quando esse método for suportado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Teste um método e descreva o resultado específico",
+          "paragraphs": [
+            "Ver o ecrã inicial partilhado não prova que o vídeo de um determinado leitor aparecerá por esse método. Registe se falhou a deteção, a ligação ou a reprodução. No Trex IPTV 8K mantenha o limite confirmado de uma ligação simultânea: termine a primeira sessão antes de comparar outra. Pergunte pela combinação exata antes de comprar outra aplicação. Esta verificação não exige apagar dados guardados do leitor nem revelar ligações privadas de acesso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Зеркалирование Trex IPTV: сначала проверьте оба устройства",
+      "excerpt": "Если экран телефона не появляется на телевизоре, это отличается от ошибки внутри ТВ-проигрывателя. Определите способ передачи, прежде чем менять настройки.",
+      "seo_title": "Trex IPTV: совместимость зеркалирования с Fire TV",
+      "seo_description": "Проверьте модель Fire TV, передающее устройство и поддерживаемый способ зеркалирования, прежде чем связывать сбой передачи с проигрывателем или подпиской Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Определите способ, который вы используете",
+          "paragraphs": [
+            "Проверка зеркалирования Trex IPTV начинается с названий двух устройств и конкретного действия. Вы передаёте весь экран телефона, нажимаете кнопку трансляции отдельного приложения или открываете проигрыватель непосредственно на Fire TV? Запишите модель телефона или компьютера и точную модель Fire TV. У этих способов разные требования совместимости. Неудачное подключение для передачи экрана не доказывает, что установленный на телевизоре проигрыватель перестал работать."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте заявленную поддержку зеркалирования",
+          "paragraphs": [
+            "Таблица сравнения Amazon отдельно указывает поддержку Miracast для моделей Fire TV. Найдите нужную модель, не предполагая одинаковые функции у всех устройств. Справка Amazon также указывает настройки, экран и звук, затем включение зеркалирования на совместимых устройствах; отсутствие пункта не исправляется сменой подписки. Передающее устройство тоже должно поддерживать совместимый способ. Следуйте его официальной инструкции и сравнивайте в одной сети Wi-Fi, если способ поддерживается."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "Проверяйте один способ и уточняйте результат",
+          "paragraphs": [
+            "Появление переданного домашнего экрана само по себе не подтверждает вывод видео конкретного проигрывателя тем же способом. Запишите, на каком этапе сбой: обнаружение, подключение или воспроизведение. Для Trex IPTV 8K сохраняйте подтверждённое ограничение в одно одновременное подключение: остановите первую сессию перед сравнением с другой. Уточните совместимость точной пары устройств и приложения до новой покупки. Проверка не требует удаления настроек проигрывателя или раскрытия частных ссылок доступа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کی اسکرین مررنگ: پہلے دونوں آلات کی مطابقت دیکھیں",
+      "excerpt": "فون کی اسکرین ٹی وی پر نہ پہنچنا، ٹی وی پلیئر کے اندر کی خرابی سے الگ مسئلہ ہے۔ سیٹ اپ بدلنے سے پہلے اسکرین شیئر کرنے کا اصل طریقہ پہچانیں۔",
+      "seo_title": "Trex IPTV مررنگ کی جانچ: Fire TV کی مطابقت پہلے",
+      "seo_description": "Fire TV کا ماڈل، بھیجنے والا آلہ اور معاون اسکرین مررنگ طریقہ جانچیں؛ شیئرنگ کی خرابی کو فوراً Trex IPTV پلیئر یا سبسکرپشن کا مسئلہ نہ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کون سا طریقہ استعمال ہو رہا ہے",
+          "paragraphs": [
+            "Trex IPTV کی مررنگ جانچنے کے لیے پہلے دونوں آلات کے نام اور ایک واضح عمل لکھیں۔ کیا آپ فون کی پوری اسکرین دکھا رہے ہیں، کسی خاص ایپ کا کاسٹ بٹن استعمال کرتے ہیں یا Fire TV پر براہِ راست پلیئر کھولتے ہیں؟ فون یا کمپیوٹر کا ماڈل اور Fire TV کا درست ماڈل لکھیں۔ ان طریقوں کی مطابقت کی شرائط مختلف ہیں۔ اسکرین شیئرنگ کا رابطہ ناکام ہونا یہ ثابت نہیں کرتا کہ ٹی وی پر نصب پلیئر بند ہو گیا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اصل معاونت کی تصدیق کریں",
+          "paragraphs": [
+            "Amazon کی موازنے والی جدول میں ہر Fire TV ماڈل کے لیے Miracast معاونت الگ درج ہے۔ یہ فرض کرنے کے بجائے متعلقہ ماڈل دیکھیں کہ سب میں ایک جیسی سہولت ہے۔ Amazon کی مدد میں معاون آلات کے لیے سیٹنگز، ڈسپلے اور ساؤنڈ، پھر اسکرین مررنگ فعال کرنے کا اختیار بھی بتایا گیا ہے؛ یہ اختیار نہ ہو تو سبسکرپشن بدلنے سے شامل نہیں ہوگا۔ بھیجنے والا آلہ بھی موافق مررنگ سہولت رکھتا ہو۔ اس کی سرکاری ہدایات دیکھیں اور معاون صورت میں دونوں کو ایک ہی وائی فائی پر جانچیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "ایک طریقہ جانچیں اور واضح نتیجہ لکھیں",
+          "paragraphs": [
+            "شیئر کی ہوئی ہوم اسکرین نظر آنے سے یہ ثابت نہیں ہوتا کہ کسی خاص پلیئر کی ویڈیو بھی اسی طریقے سے دکھے گی۔ لکھیں کہ آلہ تلاش کرنے، رابطہ بنانے یا اصل ویڈیو چلانے میں خرابی ہوئی۔ Trex IPTV 8K کی تصدیق شدہ ایک بیک وقت کنکشن کی حد برقرار رکھیں: دوسرا مقابلہ کرنے سے پہلے پہلا دیکھنے کا سیشن روکیں۔ دوسری ایپ خریدنے سے پہلے آلات اور پلیئر کی درست جوڑی کے بارے میں پوچھیں۔ اس جانچ کے لیے پلیئر کے محفوظ کوائف مٹانا یا نجی رسائی کے لنک ظاہر کرنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "فحص انعكاس شاشة Trex IPTV: تحقّق من الجهازين أولًا",
+      "excerpt": "عدم وصول شاشة الهاتف إلى التلفاز يختلف عن ظهور خطأ داخل مشغل التلفاز. حدّد ميزة المشاركة المستخدمة قبل تغيير إعدادك.",
+      "seo_title": "Trex IPTV: التحقق من توافق انعكاس الشاشة مع Fire TV",
+      "seo_description": "افحص طراز Fire TV والجهاز المرسل وطريقة الانعكاس المدعومة قبل اعتبار فشل مشاركة الشاشة مشكلة في مشغل Trex IPTV أو الاشتراك.",
+      "sections": [
+        {
+          "heading": "حدّد الطريقة التي تحاول استخدامها",
+          "paragraphs": [
+            "يبدأ فحص انعكاس شاشة Trex IPTV باسمَي جهازين وإجراء واضح. هل تشارك شاشة الهاتف كاملة، أم تستخدم زر البث في تطبيق معين، أم تفتح مشغلاً مباشرة على Fire TV؟ دوّن طراز الهاتف أو الحاسوب وطراز Fire TV الدقيق. تختلف متطلبات التوافق بين هذه الطرق. فشل اتصال مشاركة الشاشة لا يثبت أن المشغل المثبت على التلفاز توقف عن العمل."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ابحث عن دعم فعلي للانعكاس",
+          "paragraphs": [
+            "يسرد جدول المقارنة لدى Amazon دعم Miracast بشكل منفصل بحسب طراز Fire TV. راجع الطراز المناسب بدلاً من افتراض وجود الميزة نفسها في كل الأجهزة. وتشير مساعدة Amazon أيضاً إلى الإعدادات، ثم العرض والصوت، ثم تمكين انعكاس الشاشة في الأجهزة المتوافقة؛ غياب هذا الخيار لن تعالجه بتغيير الاشتراك. يحتاج الجهاز المرسل أيضاً إلى دعم متوافق. اتبع تعليماته الرسمية وقارن على شبكة Wi-Fi نفسها عندما تكون الطريقة مدعومة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "اختبر طريقة واحدة وحدّد النتيجة",
+          "paragraphs": [
+            "ظهور الشاشة الرئيسية المشتركة وحده لا يثبت أن فيديو مشغل معين سيظهر بالطريقة نفسها. سجّل هل حدث الفشل عند اكتشاف الجهاز أو الاتصال أو تشغيل الفيديو فعلياً. حافظ في Trex IPTV 8K على الحد المؤكد لاتصال متزامن واحد: أوقف جلسة المشاهدة الأولى قبل مقارنة أخرى. اسأل عن تركيبة الجهاز والمشغل الدقيقة قبل شراء تطبيق آخر. لا يتطلب هذا الفحص مسح بيانات المشغل المحفوظة أو كشف روابط الوصول الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV स्क्रीन मिररिंग: पहले दोनों डिवाइस की अनुकूलता जाँचें",
+      "excerpt": "फ़ोन की स्क्रीन टीवी तक न पहुँचना, टीवी प्लेयर के भीतर आने वाली त्रुटि से अलग समस्या है। सेटअप बदलने से पहले साझा करने का वास्तविक तरीका पहचानें।",
+      "seo_title": "Trex IPTV मिररिंग जाँच: पहले Fire TV की अनुकूलता",
+      "seo_description": "Fire TV मॉडल, भेजने वाला डिवाइस और समर्थित मिररिंग तरीका जाँचें; स्क्रीन साझा करने की विफलता को तुरंत Trex IPTV प्लेयर या सदस्यता की समस्या न मानें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि आप कौन सा तरीका आज़मा रहे हैं",
+          "paragraphs": [
+            "Trex IPTV मिररिंग जाँच की शुरुआत दो डिवाइस के नाम और एक स्पष्ट काम से होती है। क्या आप फ़ोन की पूरी स्क्रीन साझा करते हैं, किसी ऐप का कास्ट बटन इस्तेमाल करते हैं या सीधे Fire TV पर प्लेयर खोलते हैं? फ़ोन या कंप्यूटर का मॉडल और Fire TV का सटीक मॉडल लिखें। इन तरीकों की अनुकूलता की शर्तें अलग हैं। स्क्रीन साझा करने का कनेक्शन विफल होना यह साबित नहीं करता कि टीवी पर इंस्टॉल प्लेयर काम करना बंद कर चुका है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "वास्तविक मिररिंग समर्थन देखें",
+          "paragraphs": [
+            "Amazon की तुलना तालिका अलग Fire TV मॉडलों के लिए Miracast समर्थन अलग दिखाती है। सबमें एक जैसी सुविधा मानने के बजाय सही मॉडल देखें। Amazon की सहायता में समर्थित डिवाइस पर सेटिंग, डिस्प्ले और साउंड, फिर स्क्रीन मिररिंग चालू करने का विकल्प भी बताया गया है; विकल्प न हो तो सदस्यता बदलने से वह जुड़ नहीं जाएगा। भेजने वाले डिवाइस में भी अनुकूल मिररिंग समर्थन चाहिए। उसके आधिकारिक निर्देश पढ़ें और समर्थित होने पर दोनों को एक ही वाई-फाई पर जाँचें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: compare Fire TV device features",
+              "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+            }
+          ]
+        },
+        {
+          "heading": "एक तरीका जाँचें और स्पष्ट परिणाम लिखें",
+          "paragraphs": [
+            "साझा होम स्क्रीन दिखने से अकेले यह साबित नहीं होता कि किसी विशेष प्लेयर की वीडियो भी उसी तरीके से दिखेगी। लिखें कि खोजने, जुड़ने या वास्तव में चलाने के किस चरण पर समस्या हुई। Trex IPTV 8K की पुष्टि की गई एक साथ एक कनेक्शन की सीमा बनाए रखें: दूसरे से तुलना से पहले पहला देखने वाला सत्र रोकें। दूसरी ऐप खरीदने से पहले डिवाइस और प्लेयर की सही जोड़ी के बारे में पूछें। इस जाँच के लिए सहेजे प्लेयर विवरण मिटाना या निजी पहुँच लिंक बताना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Fire TV device comparison and Miracast support",
+      "url": "https://developer.amazon.com/docs/device-specs/device-specifications-comparison-table.html"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-11",
+  "topic": "Distinguish Pixel split-screen app layout from cropped IPTV video and restore a single app view without changing saved player settings",
+  "primary_keyword": "5G Live IPTV split screen",
+  "slug": "5g-pixel-split-screen-versus-video-crop",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV split screen: restore one app before resizing video",
+      "excerpt": "Two apps sharing a Pixel display are a different situation from a cropped video. Identify the divider and return to one app before changing the player's picture settings.",
+      "seo_title": "5G Live IPTV split screen: Pixel layout checks",
+      "seo_description": "Identify Pixel split-screen mode separately from a cropped programme, return to one app if supported, and preserve saved player and connection settings.",
+      "sections": [
+        {
+          "heading": "Look for two app areas",
+          "paragraphs": [
+            "A 5G Live IPTV split screen question starts with the whole phone display. Can you see two separate apps with a bar between them, or is one video simply missing its edges? A small floating video window is another layout again. Note which app occupies each area before touching a picture-size control. Dividing the phone's interface does not, by itself, show that a programme has the wrong aspect ratio or that the service is unavailable."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the supported Pixel layout control",
+          "paragraphs": [
+            "Google documents split screen for compatible apps on Pixel phones and notes that some steps require Android 14 or later. If two apps are already visible, drag the bar between them to the top or bottom to see one app again. On supported versions, the app icon in Overview can offer Split screen. Follow the options actually present; an absent option does not establish a player or subscription fault. Avoid installing another app merely to reproduce this layout."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel Help: two apps and the split-screen divider",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare playback in the ordinary view",
+          "paragraphs": [
+            "Return to the intended player in its normal single-app view and compare the same symptom. If the picture is still cropped there, report that separately with the phone model, Android version and player name. Two visible app areas do not expand a plan's simultaneous-connection allowance or establish that two streams are permitted. Keep account details private. This layout check does not require clearing player data or replacing your saved setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pantalla dividida con 5G Live IPTV: vuelve a una app antes de redimensionar",
+      "excerpt": "Dos aplicaciones compartiendo la pantalla de un Pixel no equivalen a un vídeo recortado. Identifica el separador y vuelve a una app antes de cambiar la imagen del reproductor.",
+      "seo_title": "5G Live IPTV: comprobar la pantalla dividida del Pixel",
+      "seo_description": "Distingue la pantalla dividida de Pixel de un programa recortado, vuelve a una sola app cuando sea posible y conserva la configuración del reproductor y la conexión.",
+      "sections": [
+        {
+          "heading": "Busca dos zonas de aplicaciones",
+          "paragraphs": [
+            "Una consulta sobre pantalla dividida con 5G Live IPTV empieza por observar toda la pantalla del teléfono. ¿Ves dos aplicaciones distintas con una barra entre ellas, o a un solo vídeo le faltan los bordes? Una ventana flotante pequeña es otro diseño diferente. Anota qué aplicación ocupa cada zona antes de tocar un control de tamaño de imagen. Dividir la interfaz del teléfono no demuestra por sí solo que la proporción del programa sea incorrecta o que el servicio no esté disponible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa el control de diseño compatible del Pixel",
+          "paragraphs": [
+            "Google documenta la pantalla dividida para aplicaciones compatibles en teléfonos Pixel y advierte que algunos pasos requieren Android 14 o posterior. Si ya aparecen dos aplicaciones, arrastra la barra que las separa hasta arriba o abajo para volver a ver una sola. En versiones compatibles, el icono de la aplicación en la vista de recientes puede ofrecer Pantalla dividida. Sigue las opciones realmente presentes; su ausencia no demuestra un fallo del reproductor o de la suscripción. No instales otra app solo para reproducir este diseño."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Pixel: dos apps y el separador de pantalla",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara la reproducción en la vista normal",
+          "paragraphs": [
+            "Vuelve al reproductor deseado en la vista normal de una sola app y compara el mismo síntoma. Si la imagen sigue recortada, informa de ello por separado con el modelo del teléfono, la versión de Android y el nombre del reproductor. Dos zonas visibles no amplían las conexiones simultáneas del plan ni prueban que se permitan dos transmisiones. Mantén privados los datos de la cuenta. Esta comprobación no exige borrar datos del reproductor ni sustituir la configuración guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écran partagé 5G Live IPTV : revenir à une app avant de redimensionner",
+      "excerpt": "Deux applications partageant l’écran d’un Pixel ne sont pas un recadrage vidéo. Repérez la séparation et revenez à une seule app avant de modifier l’image du lecteur.",
+      "seo_title": "5G Live IPTV : vérifier l’écran partagé du Pixel",
+      "seo_description": "Distinguez l’écran partagé Pixel d’une image recadrée, revenez à une seule application si possible et conservez les réglages du lecteur et de connexion.",
+      "sections": [
+        {
+          "heading": "Repérer deux zones d’applications",
+          "paragraphs": [
+            "Une question d’écran partagé avec 5G Live IPTV commence par l’ensemble de l’écran du téléphone. Voyez-vous deux applications distinctes séparées par une barre, ou les bords d’une seule vidéo sont-ils absents ? Une petite fenêtre flottante correspond encore à une autre disposition. Notez l’application de chaque zone avant de toucher au format d’image. Le partage de l’interface ne prouve pas à lui seul que les proportions du programme sont mauvaises ou que le service est indisponible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliser la commande de disposition compatible du Pixel",
+          "paragraphs": [
+            "Google documente l’écran partagé pour les applications compatibles sur Pixel et précise que certaines étapes nécessitent Android 14 ou ultérieur. Si deux applications sont déjà visibles, faites glisser leur barre de séparation tout en haut ou en bas pour n’en afficher qu’une. Sur les versions compatibles, l’icône d’application dans la vue d’ensemble peut proposer l’écran partagé. Suivez les options présentes ; l’absence d’une option ne démontre pas une panne du lecteur ou de l’abonnement. N’installez pas une autre application simplement pour reproduire cette disposition."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Pixel : deux applications et barre de séparation",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer la lecture dans la vue habituelle",
+          "paragraphs": [
+            "Revenez au lecteur voulu en affichage normal d’une seule application et comparez le même symptôme. Si l’image reste recadrée, signalez-le séparément avec le modèle du téléphone, la version Android et le nom du lecteur. Deux zones visibles n’augmentent pas le nombre de connexions simultanées du forfait et ne prouvent pas que deux flux sont autorisés. Gardez les informations du compte privées. Cette vérification ne demande ni d’effacer les données du lecteur ni de remplacer la configuration enregistrée."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Schermo diviso 5G Live IPTV: torna a un’app prima di ridimensionare",
+      "excerpt": "Due app che condividono lo schermo Pixel sono diverse da un video tagliato. Riconosci il divisore e torna a una sola app prima di modificare l’immagine nel lettore.",
+      "seo_title": "5G Live IPTV: controllare lo schermo diviso su Pixel",
+      "seo_description": "Distingui lo schermo diviso Pixel da un programma tagliato, torna a una sola app quando supportato e conserva le impostazioni del lettore e della connessione.",
+      "sections": [
+        {
+          "heading": "Cerca due aree di applicazioni",
+          "paragraphs": [
+            "Una domanda sullo schermo diviso di 5G Live IPTV parte dall’intero display del telefono. Vedi due app distinte con una barra tra loro, oppure mancano i bordi di un solo video? Una piccola finestra mobile rappresenta un’altra disposizione ancora. Annota quale app occupa ciascuna area prima di toccare il formato dell’immagine. Dividere l’interfaccia del telefono non dimostra, da solo, che il programma abbia proporzioni sbagliate o che il servizio non sia disponibile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa il controllo di disposizione supportato da Pixel",
+          "paragraphs": [
+            "Google documenta lo schermo diviso per le app compatibili sui telefoni Pixel e precisa che alcuni passaggi richiedono Android 14 o versioni successive. Se sono già visibili due app, trascina la barra tra loro fino al bordo superiore o inferiore per tornare a una sola. Nelle versioni compatibili, l’icona dell’app nella panoramica può offrire Schermo diviso. Segui le opzioni effettivamente presenti: un’opzione assente non dimostra un guasto del lettore o dell’abbonamento. Non installare un’altra app soltanto per riprodurre questa disposizione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google Pixel: due app e divisore dello schermo",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta la riproduzione nella vista normale",
+          "paragraphs": [
+            "Torna al lettore desiderato nella normale vista di una sola app e confronta lo stesso sintomo. Se l’immagine è ancora tagliata, segnalalo separatamente con modello del telefono, versione Android e nome del lettore. Due aree visibili non aumentano le connessioni simultanee del piano e non dimostrano che due flussi siano consentiti. Mantieni privati i dati dell’account. Questo controllo della disposizione non richiede di cancellare i dati del lettore o sostituire la configurazione salvata."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV in gesplitst scherm: herstel eerst één app",
+      "excerpt": "Twee apps op een Pixel-scherm zijn iets anders dan afgesneden videoranden. Zoek de scheidingsbalk en ga terug naar één app voordat je de beeldinstellingen verandert.",
+      "seo_title": "5G Live IPTV: gesplitst scherm op een Pixel controleren",
+      "seo_description": "Onderscheid een gesplitst Pixel-scherm van afgesneden videobeeld, herstel waar mogelijk één app en behoud de opgeslagen speler- en verbindingsinstellingen.",
+      "sections": [
+        {
+          "heading": "Zoek twee afzonderlijke appgebieden",
+          "paragraphs": [
+            "Een vraag over 5G Live IPTV in gesplitst scherm begint met het hele telefoonscherm. Zie je twee aparte apps met een balk ertussen, of ontbreken alleen de randen van één video? Een klein zwevend videovenster is weer een andere indeling. Noteer welke app in elk deel staat voordat je een beeldformaatregeling aanraakt. Het verdelen van de telefooninterface bewijst op zichzelf niet dat een programma een verkeerde beeldverhouding heeft of dat de dienst niet beschikbaar is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de ondersteunde Pixel-bediening",
+          "paragraphs": [
+            "Google beschrijft gesplitst scherm voor geschikte apps op Pixel-telefoons en meldt dat sommige stappen Android 14 of nieuwer vereisen. Zijn al twee apps zichtbaar, sleep de balk ertussen dan helemaal naar boven of beneden om weer één app te zien. Bij ondersteunde versies kan het apppictogram in het overzicht de optie Gesplitst scherm aanbieden. Volg de werkelijk aanwezige opties; het ontbreken ervan bewijst geen storing in de speler of het abonnement. Installeer geen andere app alleen om deze indeling na te maken."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel Help: twee apps en de scheidingsbalk",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk het afspelen in de gewone weergave",
+          "paragraphs": [
+            "Ga terug naar de bedoelde speler in de normale weergave van één app en vergelijk hetzelfde verschijnsel. Blijft het beeld afgesneden, meld dat dan afzonderlijk met telefoonmodel, Android-versie en spelernaam. Twee zichtbare appgebieden vergroten de toegestane gelijktijdige verbindingen van een abonnement niet en bewijzen niet dat twee streams zijn toegestaan. Houd accountgegevens privé. Voor deze indelingscontrole hoef je geen spelergegevens te wissen of opgeslagen instellingen te vervangen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Ecrã dividido no 5G Live IPTV: volte a uma app antes de redimensionar",
+      "excerpt": "Duas aplicações a partilhar o ecrã do Pixel não são um vídeo cortado. Identifique o separador e volte a uma app antes de alterar a imagem no leitor.",
+      "seo_title": "5G Live IPTV: verificar o ecrã dividido do Pixel",
+      "seo_description": "Distinga o ecrã dividido do Pixel de um programa cortado, volte a uma aplicação quando suportado e preserve as definições do leitor e da ligação.",
+      "sections": [
+        {
+          "heading": "Procure duas áreas de aplicações",
+          "paragraphs": [
+            "Uma dúvida sobre ecrã dividido no 5G Live IPTV começa pelo ecrã completo do telefone. Consegue ver duas aplicações separadas por uma barra, ou falta apenas uma parte das margens de um vídeo? Uma pequena janela flutuante corresponde ainda a outra disposição. Anote qual aplicação ocupa cada área antes de mexer no tamanho da imagem. Dividir a interface do telefone não demonstra, por si só, que o programa tenha proporções erradas ou que o serviço esteja indisponível."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use o controlo de disposição suportado pelo Pixel",
+          "paragraphs": [
+            "A Google documenta o ecrã dividido para aplicações compatíveis em telefones Pixel e informa que alguns passos exigem Android 14 ou posterior. Se já vê duas aplicações, arraste a barra entre elas até ao topo ou fundo para voltar a uma só. Nas versões compatíveis, o ícone da aplicação na vista geral pode oferecer Ecrã dividido. Siga as opções realmente presentes; a ausência de uma delas não prova uma avaria do leitor ou da assinatura. Não instale outra aplicação apenas para reproduzir esta disposição."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda Google Pixel: duas aplicações e barra de separação",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare a reprodução na vista habitual",
+          "paragraphs": [
+            "Volte ao leitor pretendido na vista normal de uma aplicação e compare o mesmo sintoma. Se a imagem continuar cortada, relate esse problema separadamente com o modelo do telefone, a versão Android e o nome do leitor. Duas áreas visíveis não aumentam as ligações simultâneas permitidas pelo plano nem demonstram que duas transmissões são autorizadas. Mantenha os dados da conta privados. Esta verificação da disposição não exige apagar os dados do leitor nem substituir a configuração guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Разделённый экран 5G Live IPTV: сначала верните одно приложение",
+      "excerpt": "Два приложения на экране Pixel — не то же самое, что обрезанное видео. Найдите разделитель и вернитесь к одному приложению, прежде чем менять размер изображения.",
+      "seo_title": "5G Live IPTV: проверка разделённого экрана Pixel",
+      "seo_description": "Отличите разделённый экран Pixel от обрезанного видео, верните одно приложение, если это поддерживается, и сохраните настройки проигрывателя и подключения.",
+      "sections": [
+        {
+          "heading": "Найдите две области приложений",
+          "paragraphs": [
+            "Вопрос о разделённом экране 5G Live IPTV начинается со всего дисплея телефона. Видны два отдельных приложения с полосой между ними или у одного видео просто отсутствуют края? Небольшое плавающее окно — ещё один вариант расположения. Прежде чем менять размер изображения, отметьте, какое приложение находится в каждой области. Само разделение интерфейса телефона не доказывает неправильные пропорции передачи или недоступность сервиса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте поддерживаемую команду Pixel",
+          "paragraphs": [
+            "Google описывает разделённый экран для совместимых приложений на телефонах Pixel и отмечает, что некоторые шаги требуют Android 14 или новее. Если два приложения уже видны, перетащите полосу между ними до верхнего или нижнего края, чтобы снова увидеть одно. В поддерживаемых версиях значок приложения в обзоре может предлагать разделение экрана. Следуйте реально доступным параметрам: отсутствие команды не доказывает сбой проигрывателя или подписки. Не устанавливайте другое приложение только ради воспроизведения такой компоновки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Pixel: два приложения и разделительная полоса",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните воспроизведение в обычном режиме",
+          "paragraphs": [
+            "Вернитесь в нужный проигрыватель в обычном режиме одного приложения и сравните тот же симптом. Если изображение всё ещё обрезано, сообщите об этом отдельно, указав модель телефона, версию Android и название проигрывателя. Две видимые области не увеличивают разрешённое число одновременных подключений тарифа и не доказывают разрешение двух потоков. Не раскрывайте данные аккаунта. Для такой проверки не нужно удалять данные проигрывателя или заменять сохранённые настройки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی تقسیم شدہ اسکرین: ویڈیو کا سائز بدلنے سے پہلے ایک ایپ پر آئیں",
+      "excerpt": "Pixel کی اسکرین پر دو ایپس ہونا ویڈیو کے کنارے کٹنے سے الگ بات ہے۔ درمیان کی لکیر پہچانیں اور تصویر کی ترتیب بدلنے سے پہلے ایک ایپ پر واپس آئیں۔",
+      "seo_title": "5G Live IPTV: Pixel کی تقسیم شدہ اسکرین کی جانچ",
+      "seo_description": "Pixel کی تقسیم شدہ اسکرین کو کٹے ہوئے پروگرام سے الگ پہچانیں، سہولت موجود ہو تو ایک ایپ پر واپس آئیں اور پلیئر و رابطے کی محفوظ ترتیبات برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "دو الگ ایپ حصے تلاش کریں",
+          "paragraphs": [
+            "5G Live IPTV کی تقسیم شدہ اسکرین کا سوال پورے فون ڈسپلے کو دیکھنے سے شروع ہوتا ہے۔ کیا دو الگ ایپس درمیان میں لکیر کے ساتھ نظر آتی ہیں، یا صرف ایک ویڈیو کے کنارے غائب ہیں؟ چھوٹی تیرتی ویڈیو ونڈو ایک اور الگ منظر ہے۔ تصویر کے سائز کا اختیار چھیڑنے سے پہلے لکھیں کہ ہر حصے میں کون سی ایپ ہے۔ فون کے انٹرفیس کی تقسیم اکیلے یہ ثابت نہیں کرتی کہ پروگرام کا تناسب غلط ہے یا سروس دستیاب نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Pixel کا موجود تقسیم والا اختیار استعمال کریں",
+          "paragraphs": [
+            "Google، Pixel فون کی معاون ایپس کے لیے تقسیم شدہ اسکرین بیان کرتا ہے اور بتاتا ہے کہ بعض مراحل Android 14 یا بعد کے ورژن پر چلتے ہیں۔ اگر دو ایپس پہلے ہی نظر آتی ہوں تو ان کی درمیانی لکیر کو بالکل اوپر یا نیچے کھینچ کر ایک ایپ دوبارہ دیکھیں۔ معاون ورژن میں حالیہ ایپس کے منظر میں ایپ کا نشان تقسیم کا اختیار دے سکتا ہے۔ صرف موجود اختیارات استعمال کریں؛ اختیار نہ ہونا پلیئر یا سبسکرپشن کی خرابی کا ثبوت نہیں۔ صرف یہ منظر بنانے کے لیے دوسری ایپ نصب نہ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel مدد: دو ایپس اور اسکرین کی درمیانی لکیر",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "عام منظر میں ویڈیو کا موازنہ کریں",
+          "paragraphs": [
+            "مطلوبہ پلیئر کی ایک ایپ والی عام اسکرین پر واپس آئیں اور وہی علامت دیکھیں۔ اگر تصویر وہاں بھی کٹی ہو تو فون کا ماڈل، Android ورژن اور پلیئر کا نام لکھ کر یہ مسئلہ الگ بتائیں۔ دو ایپ حصے نظر آنا پلان کی بیک وقت کنکشن کی اجازت نہیں بڑھاتا اور دو اسٹریم چلانے کی اجازت ثابت نہیں کرتا۔ اکاؤنٹ کی معلومات نجی رکھیں۔ اس منظر کی جانچ کے لیے پلیئر کا ڈیٹا صاف کرنا یا محفوظ سیٹ اپ بدلنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تقسيم شاشة 5G Live IPTV: عُد إلى تطبيق واحد قبل تغيير الصورة",
+      "excerpt": "اشتراك تطبيقين في شاشة Pixel يختلف عن فيديو مقصوص. حدّد الفاصل وعُد إلى تطبيق واحد قبل تعديل إعدادات صورة المشغل.",
+      "seo_title": "5G Live IPTV: فحص تقسيم الشاشة على Pixel",
+      "seo_description": "ميّز تقسيم شاشة Pixel عن برنامج مقصوص، وعُد إلى تطبيق واحد عند توفر الدعم مع الاحتفاظ بإعدادات المشغل والاتصال المحفوظة.",
+      "sections": [
+        {
+          "heading": "ابحث عن منطقتين للتطبيقات",
+          "paragraphs": [
+            "يبدأ سؤال تقسيم شاشة 5G Live IPTV بالنظر إلى شاشة الهاتف كاملة. هل ترى تطبيقين منفصلين وبينهما شريط، أم أن حواف فيديو واحد مفقودة فقط؟ نافذة الفيديو الصغيرة العائمة ترتيب مختلف أيضًا. دوّن التطبيق الموجود في كل منطقة قبل لمس إعداد حجم الصورة. تقسيم واجهة الهاتف لا يثبت بمفرده أن نسبة أبعاد البرنامج خاطئة أو أن الخدمة غير متاحة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم أداة التخطيط المدعومة في Pixel",
+          "paragraphs": [
+            "تشرح Google تقسيم الشاشة للتطبيقات المتوافقة على هواتف Pixel، وتوضح أن بعض الخطوات تحتاج Android 14 أو أحدث. إذا ظهر تطبيقان بالفعل، اسحب الشريط بينهما إلى أعلى الشاشة أو أسفلها بالكامل لعرض تطبيق واحد مجددًا. في الإصدارات المدعومة، قد يقدم رمز التطبيق في عرض التطبيقات الأخيرة خيار تقسيم الشاشة. اتبع الخيارات الموجودة فعليًا؛ غياب خيار لا يثبت خللًا في المشغل أو الاشتراك. لا تثبّت تطبيقًا آخر لمجرد إعادة إنشاء هذا التخطيط."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Pixel: تطبيقان وشريط تقسيم الشاشة",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن التشغيل في العرض المعتاد",
+          "paragraphs": [
+            "عُد إلى المشغل المطلوب في عرضه المعتاد كتطبيق واحد وقارن العرض نفسه للمشكلة. إذا ظلت الصورة مقصوصة هناك، فأبلغ عن ذلك منفصلًا مع طراز الهاتف وإصدار Android واسم المشغل. ظهور منطقتين للتطبيقات لا يزيد عدد الاتصالات المتزامنة المسموح بها في الخطة ولا يثبت السماح ببثين. احتفظ بتفاصيل الحساب خاصة. لا يتطلب فحص هذا التخطيط مسح بيانات المشغل أو استبدال الإعداد المحفوظ."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV की बँटी स्क्रीन: वीडियो का आकार बदलने से पहले एक ऐप पर लौटें",
+      "excerpt": "Pixel की स्क्रीन पर दो ऐप होना और वीडियो के किनारे कटना अलग बातें हैं। बीच का विभाजक पहचानें और प्लेयर की तस्वीर बदलने से पहले एक ऐप पर लौटें।",
+      "seo_title": "5G Live IPTV: Pixel की विभाजित स्क्रीन की जाँच",
+      "seo_description": "Pixel की विभाजित स्क्रीन को कटे कार्यक्रम से अलग पहचानें, समर्थित होने पर एक ऐप पर लौटें और प्लेयर तथा कनेक्शन की सहेजी सेटिंग बनाए रखें।",
+      "sections": [
+        {
+          "heading": "दो अलग ऐप के हिस्से देखें",
+          "paragraphs": [
+            "5G Live IPTV की विभाजित स्क्रीन का सवाल पूरे फ़ोन डिस्प्ले को देखने से शुरू होता है। क्या बीच की पट्टी के साथ दो अलग ऐप दिखते हैं, या सिर्फ एक वीडियो के किनारे गायब हैं? छोटी तैरती वीडियो विंडो एक और अलग व्यवस्था है। तस्वीर के आकार का नियंत्रण छूने से पहले लिखें कि हर हिस्से में कौन सा ऐप है। फ़ोन का इंटरफ़ेस बँटा होना अकेले यह साबित नहीं करता कि कार्यक्रम का अनुपात गलत है या सेवा उपलब्ध नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Pixel का समर्थित व्यवस्था नियंत्रण इस्तेमाल करें",
+          "paragraphs": [
+            "Google, Pixel फ़ोन के अनुकूल ऐप के लिए विभाजित स्क्रीन बताता है और कहता है कि कुछ चरण Android 14 या बाद के संस्करणों पर काम करते हैं। यदि दो ऐप पहले से दिखें, तो उनके बीच की पट्टी बिल्कुल ऊपर या नीचे खींचकर फिर एक ऐप देखें। समर्थित संस्करणों में हालिया ऐप के दृश्य में ऐप का आइकन विभाजित स्क्रीन का विकल्प दे सकता है। वास्तव में दिख रहे विकल्प अपनाएँ; विकल्प न होना प्लेयर या सदस्यता की खराबी का सबूत नहीं है। केवल यह दृश्य बनाने के लिए कोई दूसरा ऐप इंस्टॉल न करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel सहायता: दो ऐप और बीच की विभाजक पट्टी",
+              "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सामान्य दृश्य में प्लेबैक की तुलना करें",
+          "paragraphs": [
+            "इच्छित प्लेयर के एक ऐप वाले सामान्य दृश्य पर लौटें और वही लक्षण देखें। यदि तस्वीर वहाँ भी कटी हो, तो फ़ोन का मॉडल, Android संस्करण और प्लेयर का नाम देकर यह समस्या अलग बताएँ। दो ऐप के हिस्से दिखाई देना प्लान की एक साथ कनेक्शन की अनुमति नहीं बढ़ाता और दो स्ट्रीम की अनुमति साबित नहीं करता। खाते की जानकारी निजी रखें। इस व्यवस्था की जाँच के लिए प्लेयर का डेटा साफ करना या सहेजा सेटअप बदलना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel Help: split screen and returning to one app",
+      "url": "https://support.google.com/pixelphone/answer/7444033?hl=en"
+    }
+  ]
+}

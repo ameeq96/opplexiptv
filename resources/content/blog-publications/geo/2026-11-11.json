@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-11",
+  "topic": "Check a rechargeable Apple TV remote's displayed battery level and model-specific charging separately from a Geo IPTV playback fault",
+  "primary_keyword": "Geo IPTV remote battery",
+  "slug": "geo-apple-tv-remote-battery-versus-playback",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV remote battery: check the Apple TV control first",
+      "excerpt": "A missed button press does not establish a playback outage. Check the rechargeable Apple TV remote and distinguish unresponsive navigation from a programme that actually stops.",
+      "seo_title": "Geo IPTV remote battery: Apple TV navigation checks",
+      "seo_description": "Check Apple TV remote battery information and the model's charging connection before treating missed navigation input as a Geo IPTV playback fault.",
+      "sections": [
+        {
+          "heading": "Separate input from playback",
+          "paragraphs": [
+            "For a Geo IPTV remote battery check, start with what still responds. Is the picture continuing while a button press is missed, or has the programme actually stopped? Compare one ordinary action on the Apple TV Home Screen with the same remote. Note whether several navigation buttons fail or only one action inside the player. Those observations help describe the problem, but they do not identify the battery as the cause by themselves."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the remote information",
+          "paragraphs": [
+            "Apple documents battery information under Settings, Remotes and Devices, then Remote on Apple TV 4K. Read the displayed Battery Level if you can navigate there. The supplied rechargeable remote uses a USB-C or Lightning charging cable depending on its model. Identify the actual remote and matching connector before following Apple's charging instructions; do not force a different cable. This advice does not describe every older or third-party remote, and the menu can vary with the equipment."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: check and charge the Apple TV 4K remote",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Report the result without resetting setup",
+          "paragraphs": [
+            "After any needed charging, try the same simple navigation action once more. Record the remote model, displayed battery information and whether Home Screen input changed. If navigation works but video still stops, keep that playback symptom separate in a private support request. A working remote does not confirm stream availability or renew a subscription. There is no need to clear saved player data, reset Apple TV or expose private playlist details merely to record a battery check."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Batería del mando de Geo IPTV: revisa primero el control del Apple TV",
+      "excerpt": "Que una pulsación falle no demuestra una caída de reproducción. Revisa el mando recargable del Apple TV y distingue la navegación que no responde de un programa detenido.",
+      "seo_title": "Geo IPTV: batería del mando y navegación del Apple TV",
+      "seo_description": "Consulta la batería del mando del Apple TV y su conexión de carga antes de interpretar una pulsación ignorada como un fallo de reproducción de Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Separa la entrada de la reproducción",
+          "paragraphs": [
+            "Para comprobar la batería del mando al usar Geo IPTV, empieza por lo que todavía responde. ¿La imagen continúa aunque una pulsación se pierda, o el programa se ha detenido realmente? Compara una acción normal en la pantalla de inicio del Apple TV con el mismo mando. Anota si fallan varios botones de navegación o solo una acción dentro del reproductor. Estas observaciones ayudan a describir el problema, pero no demuestran por sí solas que la batería sea la causa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la información del mando",
+          "paragraphs": [
+            "Apple sitúa la información de batería en Ajustes, Mandos y dispositivos y después Mando, en el Apple TV 4K. Si puedes llegar al menú, lee el nivel mostrado. El mando recargable incluido utiliza un cable USB-C o Lightning según su modelo. Identifica el mando y el conector adecuado antes de seguir las instrucciones de carga de Apple; no fuerces otro cable. Esta indicación no describe todos los mandos antiguos o de terceros, y el menú puede variar con el equipo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: consultar y cargar el mando del Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Informa del resultado sin borrar la configuración",
+          "paragraphs": [
+            "Después de la carga necesaria, prueba otra vez la misma acción sencilla de navegación. Registra el modelo del mando, la información de batería y si cambió la respuesta en la pantalla de inicio. Si la navegación funciona pero el vídeo sigue parándose, explica ese síntoma por separado al soporte privado. Un mando operativo no confirma la disponibilidad de una transmisión ni renueva la suscripción. No hace falta borrar datos del reproductor, restablecer el Apple TV ni mostrar direcciones privadas de listas para documentar esta comprobación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Batterie de télécommande Geo IPTV : vérifier d’abord l’Apple TV",
+      "excerpt": "Une pression ignorée ne prouve pas une panne de lecture. Vérifiez la télécommande rechargeable de l’Apple TV et distinguez navigation bloquée et programme réellement arrêté.",
+      "seo_title": "Geo IPTV : batterie de télécommande et navigation Apple TV",
+      "seo_description": "Consultez la batterie et le connecteur de charge de la télécommande Apple TV avant de considérer une commande ignorée comme un problème de lecture Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Distinguer les commandes de la lecture",
+          "paragraphs": [
+            "Pour vérifier la batterie de la télécommande avec Geo IPTV, commencez par ce qui répond encore. L’image continue-t-elle alors qu’une pression est ignorée, ou le programme s’est-il réellement arrêté ? Comparez une action ordinaire sur l’écran d’accueil de l’Apple TV avec la même télécommande. Notez si plusieurs touches de navigation échouent ou si une seule action du lecteur est concernée. Ces observations décrivent le problème sans établir, à elles seules, que la batterie en est la cause."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire les informations de la télécommande",
+          "paragraphs": [
+            "Apple indique les informations de batterie dans Réglages, Télécommandes et appareils, puis Télécommande sur l’Apple TV 4K. Si vous pouvez atteindre ce menu, lisez le niveau affiché. La télécommande rechargeable fournie utilise un câble USB-C ou Lightning selon le modèle. Identifiez la télécommande et le bon connecteur avant de suivre les consignes de charge d’Apple ; ne forcez pas un autre câble. Ces indications ne concernent pas toutes les anciennes télécommandes ou celles d’autres fabricants, et les menus peuvent varier."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : vérifier et charger la télécommande Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Décrire le résultat sans réinitialiser",
+          "paragraphs": [
+            "Après la recharge éventuellement nécessaire, essayez de nouveau la même commande simple. Notez le modèle de télécommande, les informations de batterie et l’évolution de la navigation sur l’écran d’accueil. Si les commandes fonctionnent mais que la vidéo s’arrête encore, décrivez séparément ce symptôme au support privé. Une télécommande opérationnelle ne confirme pas la disponibilité d’un flux et ne renouvelle pas l’abonnement. N’effacez pas les données du lecteur, ne réinitialisez pas l’Apple TV et ne révélez pas d’adresse de playlist privée pour documenter cette vérification."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Batteria del telecomando Geo IPTV: controlla prima Apple TV",
+      "excerpt": "Un tasto che non risponde non dimostra un’interruzione della riproduzione. Controlla il telecomando ricaricabile di Apple TV e distingui la navigazione dal programma fermo.",
+      "seo_title": "Geo IPTV: batteria del telecomando e navigazione Apple TV",
+      "seo_description": "Leggi la batteria del telecomando Apple TV e verifica il connettore di ricarica prima di interpretare un comando ignorato come un problema di riproduzione Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Distingui i comandi dalla riproduzione",
+          "paragraphs": [
+            "Per controllare la batteria del telecomando durante l’uso di Geo IPTV, parti da ciò che risponde ancora. L’immagine continua mentre una pressione viene ignorata, oppure il programma si è davvero fermato? Confronta una normale azione nella schermata Home di Apple TV con lo stesso telecomando. Annota se non funzionano diversi tasti di navigazione o soltanto un’azione nel lettore. Queste osservazioni aiutano a descrivere il problema, ma da sole non dimostrano che la causa sia la batteria."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi le informazioni del telecomando",
+          "paragraphs": [
+            "Apple documenta le informazioni sulla batteria in Impostazioni, Telecomandi e dispositivi, poi Telecomando su Apple TV 4K. Se riesci a raggiungere il menu, leggi il livello mostrato. Il telecomando ricaricabile incluso usa un cavo USB-C o Lightning a seconda del modello. Identifica il telecomando e il connettore corretto prima di seguire le istruzioni Apple per la ricarica; non forzare un cavo diverso. Queste indicazioni non descrivono tutti i telecomandi più vecchi o di terze parti, e i menu possono variare."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: controllare e ricaricare il telecomando Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Comunica il risultato senza cancellare il setup",
+          "paragraphs": [
+            "Dopo l’eventuale ricarica necessaria, riprova la stessa semplice azione di navigazione. Registra modello del telecomando, informazioni sulla batteria e cambiamenti nella risposta della schermata Home. Se la navigazione funziona ma il video continua a fermarsi, descrivi separatamente quel sintomo all’assistenza privata. Un telecomando funzionante non conferma la disponibilità dello streaming e non rinnova l’abbonamento. Non occorre cancellare i dati del lettore, ripristinare Apple TV o mostrare indirizzi privati delle playlist per documentare questo controllo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-afstandsbediening: controleer de Apple TV-batterij",
+      "excerpt": "Een gemiste toetsdruk bewijst geen afspeelstoring. Controleer de oplaadbare Apple TV-afstandsbediening en onderscheid vastlopende navigatie van een werkelijk gestopt programma.",
+      "seo_title": "Geo IPTV: batterij en navigatie van de Apple TV-remote",
+      "seo_description": "Bekijk de batterijstatus en laadconnector van de Apple TV-afstandsbediening voordat je een gemiste toetsdruk als een afspeelprobleem bij Geo IPTV beschrijft.",
+      "sections": [
+        {
+          "heading": "Houd bediening en afspelen uit elkaar",
+          "paragraphs": [
+            "Begin bij een batterijcontrole van de afstandsbediening voor Geo IPTV met wat nog reageert. Blijft het beeld bewegen terwijl een toetsdruk wordt gemist, of is het programma werkelijk gestopt? Vergelijk met dezelfde afstandsbediening een gewone handeling op het Apple TV-beginscherm. Noteer of meerdere navigatietoetsen falen of alleen één handeling in de speler. Deze waarnemingen helpen het probleem te beschrijven, maar bewijzen op zichzelf niet dat de batterij de oorzaak is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de informatie over de afstandsbediening",
+          "paragraphs": [
+            "Apple vermeldt batterij-informatie op Apple TV 4K bij Instellingen, Afstandsbedieningen en apparaten, en vervolgens Afstandsbediening. Lees het getoonde batterijniveau als je dat menu kunt bereiken. De meegeleverde oplaadbare afstandsbediening gebruikt afhankelijk van het model een USB-C- of Lightning-kabel. Controleer het echte model en de passende aansluiting voordat je Apples laadinstructies volgt; forceer geen andere kabel. Dit beschrijft niet iedere oudere afstandsbediening of elk model van een andere fabrikant, en menu’s kunnen verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: de Apple TV 4K-afstandsbediening controleren en opladen",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf het resultaat zonder instellingen te wissen",
+          "paragraphs": [
+            "Probeer na eventueel noodzakelijk opladen dezelfde eenvoudige navigatiehandeling nogmaals. Noteer het model, de batterij-informatie en of de bediening op het beginscherm veranderde. Werkt de navigatie maar stopt de video nog steeds, beschrijf dat afspeelverschijnsel dan afzonderlijk aan de particuliere ondersteuning. Een werkende afstandsbediening bevestigt geen streambeschikbaarheid en verlengt geen abonnement. Voor deze controle hoef je geen opgeslagen spelergegevens te wissen, Apple TV te resetten of privé-adressen van afspeellijsten te delen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Bateria do comando no Geo IPTV: verifique primeiro a Apple TV",
+      "excerpt": "Uma pressão ignorada não comprova uma falha de reprodução. Verifique o comando recarregável da Apple TV e distinga navegação sem resposta de um programa realmente parado.",
+      "seo_title": "Geo IPTV: bateria do comando e navegação da Apple TV",
+      "seo_description": "Consulte a bateria do comando da Apple TV e a ligação de carregamento antes de interpretar uma pressão ignorada como falha de reprodução do Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Separe os comandos da reprodução",
+          "paragraphs": [
+            "Para verificar a bateria do comando ao usar Geo IPTV, comece pelo que ainda responde. A imagem continua enquanto uma pressão é ignorada, ou o programa parou realmente? Compare uma ação normal no ecrã principal da Apple TV com o mesmo comando. Anote se falham vários botões de navegação ou apenas uma ação dentro do leitor. Estas observações ajudam a descrever o problema, mas não demonstram, por si só, que a bateria seja a causa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a informação do comando",
+          "paragraphs": [
+            "A Apple indica a informação da bateria em Definições, Comandos e dispositivos e depois Comando, na Apple TV 4K. Leia o nível apresentado se conseguir chegar ao menu. O comando recarregável incluído utiliza um cabo USB-C ou Lightning consoante o modelo. Identifique o comando e o conector correspondente antes de seguir as instruções de carregamento da Apple; não force outro cabo. Esta indicação não descreve todos os comandos antigos ou de outros fabricantes, e os menus podem variar com o equipamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: verificar e carregar o comando da Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva o resultado sem repor a configuração",
+          "paragraphs": [
+            "Depois do carregamento necessário, volte a experimentar a mesma ação simples de navegação. Registe o modelo do comando, a informação da bateria e se a resposta no ecrã principal mudou. Se a navegação funcionar mas o vídeo continuar a parar, relate esse sintoma separadamente ao suporte privado. Um comando funcional não confirma a disponibilidade da transmissão nem renova a assinatura. Não é necessário apagar os dados guardados do leitor, repor a Apple TV ou expor endereços privados de listas para registar esta verificação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Батарея пульта Geo IPTV: сначала проверьте управление Apple TV",
+      "excerpt": "Пропущенное нажатие не доказывает сбой воспроизведения. Проверьте аккумуляторный пульт Apple TV и отличите неработающую навигацию от действительно остановившейся передачи.",
+      "seo_title": "Geo IPTV: батарея пульта и навигация Apple TV",
+      "seo_description": "Проверьте уровень заряда пульта Apple TV и разъём его модели, прежде чем считать пропущенные команды проблемой воспроизведения Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Отделите управление от воспроизведения",
+          "paragraphs": [
+            "При проверке батареи пульта для Geo IPTV начните с того, что ещё реагирует. Изображение продолжает двигаться, хотя нажатие пропущено, или передача действительно остановилась? Сравните обычное действие на главном экране Apple TV тем же пультом. Отметьте, не работают ли несколько кнопок навигации или только одно действие внутри проигрывателя. Эти наблюдения помогают описать проблему, но сами по себе не доказывают, что её причина — аккумулятор."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте сведения о пульте",
+          "paragraphs": [
+            "Apple описывает сведения о батарее в настройках Apple TV 4K: «Пульты и устройства», затем «Пульт». Если удаётся открыть это меню, прочитайте показанный уровень заряда. Комплектный перезаряжаемый пульт использует кабель USB-C или Lightning в зависимости от модели. Определите настоящий пульт и подходящий разъём до выполнения инструкций Apple по зарядке; не вставляйте другой кабель с усилием. Эти указания не относятся ко всем старым и сторонним пультам, а меню могут различаться в зависимости от оборудования."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: проверка и зарядка пульта Apple TV 4K",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Сообщите результат без сброса настроек",
+          "paragraphs": [
+            "После необходимой зарядки снова проверьте то же простое действие навигации. Запишите модель пульта, сведения о батарее и изменение реакции главного экрана. Если навигация работает, но видео по-прежнему останавливается, отдельно опишите этот симптом в личном обращении в поддержку. Работающий пульт не подтверждает доступность потока и не продлевает подписку. Для записи результата не требуется удалять данные проигрывателя, сбрасывать Apple TV или показывать закрытые адреса плейлистов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV ریموٹ کی بیٹری: پہلے Apple TV کا کنٹرول جانچیں",
+      "excerpt": "کسی بٹن کا جواب نہ آنا پلے بیک بند ہونے کا ثبوت نہیں۔ Apple TV کا چارج ہونے والا ریموٹ جانچیں اور مینو کے جواب کو واقعی رکے ہوئے پروگرام سے الگ رکھیں۔",
+      "seo_title": "Geo IPTV: Apple TV ریموٹ کی بیٹری اور مینو کی جانچ",
+      "seo_description": "Geo IPTV میں بٹن کا جواب نہ آنے کو ویڈیو کی خرابی کہنے سے پہلے Apple TV ریموٹ کی بیٹری کی معلومات اور اس ماڈل کا چارجنگ کنیکٹر دیکھیں۔",
+      "sections": [
+        {
+          "heading": "کنٹرول اور ویڈیو کو الگ دیکھیں",
+          "paragraphs": [
+            "Geo IPTV ریموٹ کی بیٹری جانچتے وقت پہلے دیکھیں کہ کیا چیز اب بھی جواب دیتی ہے۔ کیا بٹن دبانے کا اثر نہ ہونے کے باوجود تصویر چل رہی ہے یا پروگرام واقعی رک گیا ہے؟ اسی ریموٹ سے Apple TV کی ہوم اسکرین پر ایک عام عمل کا موازنہ کریں۔ نوٹ کریں کہ مینو کے کئی بٹن ناکام ہیں یا صرف پلیئر کے اندر ایک عمل کام نہیں کرتا۔ ان مشاہدات سے مسئلہ بیان ہوتا ہے، مگر اکیلے ان سے بیٹری کو وجہ قرار نہیں دیا جا سکتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ریموٹ کی معلومات پڑھیں",
+          "paragraphs": [
+            "Apple کی رہنمائی کے مطابق Apple TV 4K کی سیٹنگز میں ریموٹس اور ڈیوائسز کے بعد ریموٹ کھولنے پر بیٹری کی معلومات ملتی ہیں۔ اگر وہاں پہنچ سکتے ہیں تو دکھایا گیا بیٹری لیول پڑھیں۔ ساتھ آنے والے چارج ہونے والے ریموٹ میں ماڈل کے مطابق USB-C یا Lightning کیبل استعمال ہوتی ہے۔ Apple کی چارجنگ ہدایات پر عمل سے پہلے اصل ریموٹ اور مناسب کنیکٹر پہچانیں؛ مختلف کیبل زبردستی نہ لگائیں۔ یہ ہدایات ہر پرانے یا دوسرے سازندے کے ریموٹ کے لیے نہیں، اور آلات کے لحاظ سے مینو بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K ریموٹ کو جانچنا اور چارج کرنا",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "سیٹ اپ مٹائے بغیر نتیجہ بتائیں",
+          "paragraphs": [
+            "ضرورت کے مطابق چارج کرنے کے بعد وہی آسان مینو والا عمل دوبارہ آزمائیں۔ ریموٹ کا ماڈل، بیٹری کی دکھائی گئی معلومات اور ہوم اسکرین کے جواب میں تبدیلی لکھیں۔ اگر مینو کام کرے مگر ویڈیو اب بھی رکے تو نجی سپورٹ درخواست میں ویڈیو کی علامت الگ بتائیں۔ ریموٹ کام کرنے سے اسٹریم کی دستیابی ثابت نہیں ہوتی اور نہ سبسکرپشن تجدید ہوتی ہے۔ بیٹری کی جانچ لکھنے کے لیے پلیئر کا محفوظ ڈیٹا صاف کرنا، Apple TV ری سیٹ کرنا یا نجی پلے لسٹ پتے ظاہر کرنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "بطارية ريموت Geo IPTV: افحص تحكم Apple TV أولًا",
+      "excerpt": "تجاهل ضغطة زر لا يثبت تعطل التشغيل. افحص ريموت Apple TV القابل للشحن وميّز التنقل الذي لا يستجيب عن برنامج توقف بالفعل.",
+      "seo_title": "Geo IPTV: بطارية الريموت والتنقل في Apple TV",
+      "seo_description": "راجع معلومات بطارية ريموت Apple TV وموصل الشحن الخاص بطرازه قبل اعتبار تجاهل الأوامر مشكلة تشغيل في Geo IPTV.",
+      "sections": [
+        {
+          "heading": "افصل التحكم عن التشغيل",
+          "paragraphs": [
+            "ابدأ فحص بطارية ريموت Geo IPTV بما لا يزال يستجيب. هل تستمر الصورة بينما تُتجاهل ضغطة زر، أم توقف البرنامج بالفعل؟ قارن إجراءً عاديًا على الشاشة الرئيسية لـ Apple TV باستخدام الريموت نفسه. دوّن إن كانت عدة أزرار تنقل لا تعمل، أم أن المشكلة تقتصر على إجراء داخل المشغل. تساعد هذه الملاحظات في وصف المشكلة، لكنها لا تثبت بمفردها أن البطارية هي السبب."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ معلومات الريموت",
+          "paragraphs": [
+            "تذكر Apple معلومات البطارية في إعدادات Apple TV 4K ضمن أجهزة التحكم والأجهزة، ثم جهاز التحكم. اقرأ مستوى البطارية المعروض إن استطعت الوصول إليه. يستخدم الريموت القابل للشحن المرفق كابل USB-C أو Lightning بحسب الطراز. حدّد الريموت الفعلي والموصل المناسب قبل اتباع تعليمات شحن Apple؛ لا تُدخل كابلًا مختلفًا بالقوة. لا تصف هذه النصيحة جميع أجهزة التحكم القديمة أو المصنوعة من جهات أخرى، وقد تختلف القائمة بحسب المعدات."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: فحص ريموت Apple TV 4K وشحنه",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "بلّغ بالنتيجة دون إعادة ضبط الإعداد",
+          "paragraphs": [
+            "بعد الشحن عند الحاجة، جرّب إجراء التنقل البسيط نفسه مرة أخرى. سجّل طراز الريموت ومعلومات البطارية المعروضة وما إذا تغيرت استجابة الشاشة الرئيسية. إذا عمل التنقل لكن الفيديو ظل يتوقف، فافصل عرض التشغيل هذا في طلب دعم خاص. عمل الريموت لا يؤكد توفر البث ولا يجدد الاشتراك. لا تحتاج إلى مسح بيانات المشغل المحفوظة أو إعادة ضبط Apple TV أو كشف عناوين قوائم تشغيل خاصة لمجرد تسجيل فحص البطارية."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV रिमोट की बैटरी: पहले Apple TV का नियंत्रण जाँचें",
+      "excerpt": "बटन का जवाब न मिलना प्लेबैक बंद होने का सबूत नहीं है। Apple TV के रिचार्जेबल रिमोट को जाँचें और रुके नेविगेशन को वास्तव में रुके कार्यक्रम से अलग रखें।",
+      "seo_title": "Geo IPTV: Apple TV रिमोट की बैटरी और नेविगेशन जाँच",
+      "seo_description": "Geo IPTV में अनसुने बटन को प्लेबैक की खराबी कहने से पहले Apple TV रिमोट की बैटरी की जानकारी और उसके मॉडल का चार्जिंग कनेक्टर देखें।",
+      "sections": [
+        {
+          "heading": "नियंत्रण और प्लेबैक को अलग देखें",
+          "paragraphs": [
+            "Geo IPTV रिमोट की बैटरी जाँचते समय पहले देखें कि अभी क्या जवाब देता है। क्या बटन दबाने का असर न होने पर भी तस्वीर चल रही है, या कार्यक्रम सचमुच रुक गया है? उसी रिमोट से Apple TV की होम स्क्रीन पर एक सामान्य काम की तुलना करें। लिखें कि नेविगेशन के कई बटन नहीं चलते या केवल प्लेयर के अंदर एक काम नहीं होता। ये बातें समस्या समझाने में मदद करती हैं, लेकिन अकेले इनसे बैटरी को कारण नहीं कहा जा सकता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रिमोट की जानकारी पढ़ें",
+          "paragraphs": [
+            "Apple के दस्तावेज़ के अनुसार Apple TV 4K की सेटिंग में रिमोट और डिवाइस, फिर रिमोट खोलने पर बैटरी की जानकारी मिलती है। वहाँ पहुँच सकें तो दिखाया गया बैटरी स्तर पढ़ें। साथ मिले रिचार्जेबल रिमोट में मॉडल के अनुसार USB-C या Lightning केबल लगती है। Apple की चार्जिंग हिदायतें अपनाने से पहले असली रिमोट और सही कनेक्टर पहचानें; अलग केबल जबरन न लगाएँ। यह सलाह हर पुराने या दूसरे निर्माता के रिमोट के लिए नहीं है, और उपकरण के अनुसार मेनू अलग हो सकता है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K रिमोट की जाँच और चार्जिंग",
+              "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "सेटअप मिटाए बिना नतीजा बताएँ",
+          "paragraphs": [
+            "ज़रूरत के अनुसार चार्ज करने के बाद वही आसान नेविगेशन काम फिर आज़माएँ। रिमोट का मॉडल, बैटरी की दिखाई गई जानकारी और होम स्क्रीन की प्रतिक्रिया में बदलाव लिखें। यदि नेविगेशन चले लेकिन वीडियो फिर भी रुके, तो निजी सहायता में प्लेबैक का वह लक्षण अलग बताएँ। रिमोट चलने से स्ट्रीम उपलब्ध होना साबित नहीं होता और सदस्यता नवीनीकृत नहीं होती। केवल बैटरी की जाँच दर्ज करने के लिए प्लेयर का सहेजा डेटा साफ करना, Apple TV रीसेट करना या निजी प्लेलिस्ट पते दिखाना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: Apple TV 4K remote battery information and charging",
+      "url": "https://support.apple.com/en-gb/guide/tv/atvb7d4de50d/tvos"
+    }
+  ]
+}
