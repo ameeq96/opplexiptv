@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-12",
+  "topic": "Separate a deliberate VLC for Android seek gesture from an unexplained playback jump and confirm whether the current video supports changing position",
+  "primary_keyword": "IPTV seek controls",
+  "slug": "main-vlc-seek-gesture-versus-playback-jump",
+  "translations": {
+    "en": {
+      "title": "IPTV seek controls: a touch gesture or an unexpected jump?",
+      "excerpt": "A jump after touching the screen needs a different explanation from one with no input. Compare a supported VLC position control without assuming live replay is available.",
+      "seo_title": "IPTV seek controls: deliberate touch or unexplained jump?",
+      "seo_description": "Check whether a VLC for Android gesture moved playback, compare one supported position control and preserve saved setup while describing an unexpected jump.",
+      "sections": [
+        {
+          "heading": "Name what moved",
+          "paragraphs": [
+            "IPTV seek controls change the playback position; they are different from changing playback speed. Before reporting a jump, note whether a finger crossed the video, the progress indicator moved, or the picture changed without any touch. Write down the approximate position before and after, when available. An on-screen movement alone does not tell you why a stream restarted, and a live programme may not offer the same position controls as a saved video."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check one supported control",
+          "paragraphs": [
+            "VideoLAN documents horizontal seeking in VLC for Android. On content where position changes are available, use the visible progress control for one small, deliberate comparison rather than repeating broad swipes. Keep your finger away from the display while observing the next result. If seeking is unavailable or has no useful effect, stop that comparison; do not assume it unlocks replay, catch-up or an earlier part of a live programme. Labels and behaviour depend on the version and content."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android video-player controls",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Describe the result before changing setup",
+          "paragraphs": [
+            "A jump that follows the same touch is a different observation from one that happens with no input. Send that distinction, the player version and the affected programme context to private support. Hide private playback addresses if sharing a screenshot. Preserve the saved account and other settings while collecting the observation; reinstalling the player or purchasing a replacement plan would not explain which action moved the picture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Controles de posición IPTV: ¿un gesto o un salto inesperado?",
+      "excerpt": "Un salto tras tocar la pantalla exige una comprobación distinta de uno sin interacción. Compare un control compatible de VLC sin dar por disponible la repetición del directo.",
+      "seo_title": "Posición IPTV en VLC: gesto o salto inesperado",
+      "seo_description": "Compruebe si un gesto de VLC para Android desplazó la reproducción, pruebe un control de posición compatible y conserve la configuración al describir el salto.",
+      "sections": [
+        {
+          "heading": "Identifique qué se desplazó",
+          "paragraphs": [
+            "Los controles de posición IPTV cambian el punto de reproducción; no equivalen a modificar su velocidad. Antes de comunicar un salto, anote si un dedo cruzó el vídeo, se movió el indicador de progreso o cambió la imagen sin tocar nada. Registre la posición aproximada anterior y posterior cuando esté disponible. Un movimiento en pantalla por sí solo no explica por qué se reinició una transmisión, y un programa en directo puede no ofrecer los mismos controles de posición que un vídeo guardado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compruebe un control compatible",
+          "paragraphs": [
+            "VideoLAN documenta el desplazamiento horizontal en VLC para Android. Si el contenido permite cambiar de posición, utilice el control de progreso visible para una comparación pequeña y deliberada, en lugar de repetir deslizamientos amplios. Aparte el dedo de la pantalla mientras observa el resultado. Si el desplazamiento no está disponible o no resulta útil, detenga esa comparación; no presuponga que habilita repetición, televisión a la carta o una parte anterior del directo. Las etiquetas y el comportamiento dependen de la versión y del contenido."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controles de vídeo de VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Describa el resultado antes de cambiar la configuración",
+          "paragraphs": [
+            "Un salto que sigue al mismo toque es una observación diferente de uno que ocurre sin interacción. Envíe esa distinción, la versión del reproductor y el contexto del programa afectado al soporte privado. Oculte las direcciones privadas de reproducción si comparte una captura. Conserve la cuenta guardada y los demás ajustes mientras reúne la información; reinstalar el reproductor o comprar otro plan no explicaría qué acción desplazó la imagen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Position de lecture IPTV : geste tactile ou saut inattendu ?",
+      "excerpt": "Un saut après un contact ne se vérifie pas comme un saut sans intervention. Comparez une commande disponible de VLC sans présumer que le direct peut être revu.",
+      "seo_title": "Position IPTV dans VLC : geste ou saut inattendu ?",
+      "seo_description": "Vérifiez si un geste dans VLC pour Android a déplacé la lecture, comparez une commande disponible et préservez les réglages en décrivant le saut observé.",
+      "sections": [
+        {
+          "heading": "Identifiez ce qui a bougé",
+          "paragraphs": [
+            "Les commandes de position IPTV changent le point de lecture ; elles ne modifient pas sa vitesse. Avant de signaler un saut, notez si un doigt a traversé la vidéo, si la barre de progression a bougé ou si l’image a changé sans contact. Relevez les positions approximatives avant et après, lorsqu’elles sont disponibles. Un déplacement à l’écran ne suffit pas à expliquer le redémarrage d’un flux, et une émission en direct peut ne pas offrir les mêmes commandes qu’une vidéo enregistrée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez une commande disponible",
+          "paragraphs": [
+            "VideoLAN décrit le déplacement horizontal dans VLC pour Android. Pour un contenu permettant de changer de position, utilisez la barre visible pour une petite comparaison volontaire, plutôt que de répéter de grands balayages. Éloignez ensuite le doigt pendant l’observation. Si cette commande est indisponible ou inutile, arrêtez la comparaison ; ne supposez pas qu’elle donne accès à une rediffusion, au rattrapage ou à une partie antérieure du direct. Les intitulés et le comportement dépendent de la version et du contenu."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : commandes vidéo de VLC pour Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez le résultat avant de modifier les réglages",
+          "paragraphs": [
+            "Un saut qui suit le même contact constitue une observation différente d’un saut sans intervention. Transmettez cette distinction, la version du lecteur et le contexte de l’émission au support privé. Masquez les adresses privées de lecture avant de partager une capture. Conservez le compte enregistré et les autres réglages pendant le recueil des informations ; réinstaller le lecteur ou acheter un autre forfait n’expliquerait pas quel geste a déplacé l’image."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Posizione IPTV: gesto sullo schermo o salto inatteso?",
+      "excerpt": "Un salto dopo un tocco richiede una verifica diversa da uno senza intervento. Confronta un comando disponibile di VLC senza presumere di poter rivedere la diretta.",
+      "seo_title": "Posizione IPTV in VLC: gesto o salto inatteso?",
+      "seo_description": "Verifica se un gesto in VLC per Android ha spostato la riproduzione, confronta un comando supportato e conserva le impostazioni mentre descrivi il salto.",
+      "sections": [
+        {
+          "heading": "Individua che cosa si è spostato",
+          "paragraphs": [
+            "I comandi di posizione IPTV cambiano il punto di riproduzione, non la sua velocità. Prima di segnalare un salto, annota se un dito ha attraversato il video, se l’indicatore di avanzamento si è mosso o se l’immagine è cambiata senza toccare nulla. Registra le posizioni approssimative prima e dopo, quando disponibili. Uno spostamento sullo schermo da solo non spiega perché un flusso sia ripartito, e una trasmissione in diretta può non offrire gli stessi comandi di un video salvato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla un comando supportato",
+          "paragraphs": [
+            "VideoLAN documenta lo spostamento orizzontale in VLC per Android. Se il contenuto consente di cambiare posizione, usa il controllo di avanzamento visibile per un piccolo confronto intenzionale, invece di ripetere scorrimenti ampi. Allontana il dito mentre osservi il risultato successivo. Se il comando non è disponibile o non è utile, interrompi il confronto; non presumere che sblocchi repliche, recupero dei programmi o una parte precedente della diretta. Etichette e comportamento dipendono dalla versione e dal contenuto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: comandi video di VLC per Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi il risultato prima di cambiare configurazione",
+          "paragraphs": [
+            "Un salto che segue lo stesso tocco è un’osservazione diversa da uno che avviene senza intervento. Invia questa distinzione, la versione del lettore e il contesto del programma interessato all’assistenza privata. Nascondi gli indirizzi privati di riproduzione se condividi una schermata. Conserva l’account salvato e le altre impostazioni mentre raccogli le informazioni; reinstallare il lettore o acquistare un altro piano non spiegherebbe quale azione abbia spostato l’immagine."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV afspeelpositie: een veegbeweging of onverwachte sprong?",
+      "excerpt": "Een sprong na aanraking vraagt om een andere controle dan een sprong zonder invoer. Vergelijk één beschikbare VLC-bediening zonder aan te nemen dat live terugkijken kan.",
+      "seo_title": "IPTV afspeelpositie in VLC: veeg of onverwachte sprong?",
+      "seo_description": "Controleer of een gebaar in VLC voor Android de afspeelpositie veranderde, vergelijk één ondersteunde bediening en behoud je opgeslagen instellingen.",
+      "sections": [
+        {
+          "heading": "Benoem wat er verschoof",
+          "paragraphs": [
+            "Bediening van de IPTV afspeelpositie verplaatst het afspeelpunt; dit is iets anders dan de afspeelsnelheid veranderen. Noteer vóór een melding of een vinger over het beeld ging, de voortgangsindicator verschoof of het beeld zonder aanraking veranderde. Schrijf de geschatte positie vóór en na de sprong op als die zichtbaar is. Een beweging op het scherm verklaart op zichzelf niet waarom een stream herstartte. Een liveprogramma biedt mogelijk andere positiebediening dan een opgeslagen video."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer één ondersteunde bediening",
+          "paragraphs": [
+            "VideoLAN beschrijft horizontaal zoeken in VLC voor Android. Gebruik bij inhoud waarbij verplaatsen mogelijk is de zichtbare voortgangsbediening voor één kleine, bewuste vergelijking, in plaats van herhaaldelijk grote veegbewegingen te maken. Houd je vinger daarna weg terwijl je het resultaat bekijkt. Stop deze vergelijking als verplaatsen niet beschikbaar is of niets bruikbaars oplevert. Neem niet aan dat dit herhaling, terugkijken of een eerder deel van een liveprogramma ontsluit. Namen en gedrag hangen af van de versie en inhoud."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: videobediening van VLC voor Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf het resultaat voordat je instellingen wijzigt",
+          "paragraphs": [
+            "Een sprong na dezelfde aanraking is een andere waarneming dan een sprong zonder invoer. Stuur dat onderscheid, de spelerversie en de context van het getroffen programma naar particuliere ondersteuning. Verberg privéafspeeladressen als je een schermafbeelding deelt. Behoud het opgeslagen account en de overige instellingen terwijl je informatie verzamelt. De speler opnieuw installeren of een vervangend pakket kopen verklaart niet welke handeling het beeld verplaatste."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Posição IPTV: um gesto no ecrã ou um salto inesperado?",
+      "excerpt": "Um salto após um toque pede uma verificação diferente de um salto sem interação. Compare um controlo disponível do VLC sem presumir que pode rever a emissão em direto.",
+      "seo_title": "Posição IPTV no VLC: gesto ou salto inesperado?",
+      "seo_description": "Verifique se um gesto no VLC para Android deslocou a reprodução, compare um controlo compatível e preserve as definições ao descrever um salto inesperado.",
+      "sections": [
+        {
+          "heading": "Identifique o que mudou de posição",
+          "paragraphs": [
+            "Os controlos de posição IPTV mudam o ponto de reprodução; não são o mesmo que alterar a velocidade. Antes de comunicar um salto, anote se um dedo passou pelo vídeo, se o indicador de progresso se deslocou ou se a imagem mudou sem qualquer toque. Registe a posição aproximada anterior e posterior, quando disponível. Um movimento no ecrã não explica, por si só, porque uma transmissão recomeçou, e um programa em direto pode não oferecer os mesmos controlos de um vídeo guardado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifique um controlo compatível",
+          "paragraphs": [
+            "A VideoLAN documenta o deslocamento horizontal no VLC para Android. Em conteúdo que permita mudar de posição, use o controlo de progresso visível para uma pequena comparação deliberada, em vez de repetir gestos amplos. Afaste o dedo do ecrã enquanto observa o resultado. Se o controlo estiver indisponível ou não produzir um efeito útil, pare a comparação; não presuma que desbloqueia repetição, programas anteriores ou uma parte anterior do direto. Os nomes e o comportamento dependem da versão e do conteúdo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controlos de vídeo do VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva o resultado antes de mudar a configuração",
+          "paragraphs": [
+            "Um salto que acompanha o mesmo toque é uma observação diferente de um salto sem interação. Envie essa distinção, a versão do leitor e o contexto do programa afetado ao suporte privado. Oculte os endereços privados de reprodução se partilhar uma captura. Preserve a conta guardada e as restantes definições ao recolher informação; reinstalar o leitor ou comprar outro plano não explicaria qual a ação que deslocou a imagem."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Позиция воспроизведения IPTV: жест или неожиданный скачок?",
+      "excerpt": "Скачок после касания проверяют иначе, чем скачок без действий. Сравните доступный элемент VLC, не предполагая, что прямой эфир можно перемотать назад.",
+      "seo_title": "Позиция IPTV в VLC: жест или неожиданный скачок?",
+      "seo_description": "Проверьте, переместил ли жест в VLC для Android позицию видео, сравните один доступный элемент управления и сохраните настройки при описании скачка.",
+      "sections": [
+        {
+          "heading": "Уточните, что именно переместилось",
+          "paragraphs": [
+            "Управление позицией IPTV меняет точку воспроизведения, а не его скорость. Перед сообщением о скачке отметьте, провели ли вы пальцем по видео, сдвинулся ли индикатор или изображение изменилось без касания. Запишите примерную позицию до и после, если она доступна. Само движение на экране не объясняет перезапуск потока. У прямой трансляции могут быть другие возможности перемещения, чем у сохранённого видео."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте один доступный элемент",
+          "paragraphs": [
+            "VideoLAN описывает горизонтальную перемотку в VLC для Android. Если материал допускает изменение позиции, используйте видимую шкалу для одного небольшого осознанного сравнения вместо повторных широких движений. Затем уберите палец от экрана и наблюдайте результат. Если перемещение недоступно или бесполезно, прекратите сравнение. Не предполагайте, что оно открывает повтор, просмотр прошедших передач или раннюю часть прямого эфира. Названия и поведение зависят от версии и материала."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: управление видео в VLC для Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите результат до изменения настроек",
+          "paragraphs": [
+            "Скачок после одинакового касания отличается от скачка без действий. Сообщите это различие, версию проигрывателя и сведения о затронутой передаче через личную поддержку. Скройте частные адреса воспроизведения перед отправкой снимка. Сохраняйте записанную учётную запись и остальные настройки при сборе информации. Переустановка проигрывателя или покупка другого плана не объяснит, какое действие переместило изображение."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV میں آگے پیچھے جانا: لمس کا اشارہ یا اچانک چھلانگ؟",
+      "excerpt": "اسکرین چھونے کے بعد تصویر آگے جانا اور بغیر چھوئے ایسا ہونا الگ صورتیں ہیں۔ VLC کا دستیاب اختیار دیکھیں، مگر براہ راست پروگرام کی پچھلی نشریات ملنے کا مفروضہ نہ بنائیں۔",
+      "seo_title": "IPTV ویڈیو کی جگہ: VLC کا اشارہ یا اچانک تبدیلی؟",
+      "seo_description": "دیکھیں کہ VLC برائے Android میں انگلی کے اشارے سے ویڈیو کی جگہ بدلی یا نہیں، ایک دستیاب اختیار کا موازنہ کریں اور محفوظ سیٹ اپ برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "واضح کریں کہ کیا آگے پیچھے ہوا",
+          "paragraphs": [
+            "IPTV میں آگے پیچھے جانے کے اختیارات ویڈیو کی چلنے والی جگہ بدلتے ہیں؛ یہ رفتار بدلنے سے مختلف ہے۔ چھلانگ کی شکایت سے پہلے لکھیں کہ انگلی ویڈیو پر پھری، پیش رفت کا نشان بدلا یا تصویر بغیر چھوئے بدل گئی۔ اگر دستیاب ہو تو پہلے اور بعد کی اندازاً جگہ لکھیں۔ صرف اسکرین پر حرکت یہ نہیں بتاتی کہ اسٹریم دوبارہ کیوں شروع ہوئی، اور براہ راست پروگرام میں محفوظ ویڈیو جیسے اختیارات لازماً نہیں ہوتے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ایک دستیاب اختیار دیکھیں",
+          "paragraphs": [
+            "VideoLAN کے مطابق VLC برائے Android میں افقی اشارے سے ویڈیو میں آگے پیچھے جا سکتے ہیں۔ جہاں مواد جگہ بدلنے دیتا ہو، بار بار لمبی انگلی پھیرنے کے بجائے نظر آنے والے پیش رفت اختیار سے ایک چھوٹا، سوچا سمجھا موازنہ کریں۔ اگلا نتیجہ دیکھتے وقت انگلی اسکرین سے دور رکھیں۔ اختیار دستیاب یا مفید نہ ہو تو موازنہ روک دیں؛ اسے دوبارہ نشر شدہ، گزشتہ پروگرام یا براہ راست نشریات کا پہلے والا حصہ کھولنے کی سہولت نہ سمجھیں۔ نام اور طریقہ ورژن اور مواد کے مطابق بدلتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC برائے Android کے ویڈیو اختیارات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "سیٹ اپ بدلنے سے پہلے نتیجہ بیان کریں",
+          "paragraphs": [
+            "ایک ہی لمس کے بعد چھلانگ اور بغیر کسی عمل کے چھلانگ الگ مشاہدے ہیں۔ یہ فرق، پلیئر کا ورژن اور متعلقہ پروگرام کا پس منظر نجی معاونت کو بھیجیں۔ اسکرین شاٹ شیئر کریں تو نجی پلے بیک پتے چھپائیں۔ معلومات جمع کرتے وقت محفوظ اکاؤنٹ اور دوسری ترتیبات برقرار رکھیں؛ پلیئر دوبارہ نصب کرنے یا نیا پلان خریدنے سے یہ واضح نہیں ہوگا کہ کس عمل نے تصویر کی جگہ بدلی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "موضع تشغيل IPTV: إيماءة لمس أم قفزة غير متوقعة؟",
+      "excerpt": "القفزة بعد لمس الشاشة تحتاج فحصاً مختلفاً عن القفزة بلا تدخل. قارن أداة متاحة في VLC دون افتراض إمكانية إعادة البث المباشر.",
+      "seo_title": "موضع IPTV في VLC: إيماءة أم قفزة مفاجئة؟",
+      "seo_description": "تحقق مما إذا كانت إيماءة في VLC لنظام Android قد غيّرت موضع التشغيل، وقارن أداة متاحة واحدة مع الاحتفاظ بالإعداد المحفوظ عند وصف القفزة.",
+      "sections": [
+        {
+          "heading": "حدّد ما الذي تحرّك",
+          "paragraphs": [
+            "تغيّر أدوات موضع IPTV نقطة التشغيل، وهي تختلف عن تغيير السرعة. قبل الإبلاغ عن قفزة، دوّن إن مرّ إصبع على الفيديو، أو تحرّك مؤشر التقدم، أو تغيّرت الصورة دون لمس. سجّل الموضع التقريبي قبل القفزة وبعدها إن كان متاحاً. لا تفسّر الحركة على الشاشة وحدها سبب إعادة بدء البث، وقد لا يتيح البرنامج المباشر أدوات الموضع نفسها التي يتيحها فيديو محفوظ."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص أداة متاحة واحدة",
+          "paragraphs": [
+            "توثّق VideoLAN الانتقال الأفقي داخل الفيديو في VLC لنظام Android. عندما يسمح المحتوى بتغيير الموضع، استخدم شريط التقدم الظاهر لإجراء مقارنة صغيرة مقصودة بدلاً من تكرار سحبات واسعة. أبعد إصبعك عن الشاشة أثناء مراقبة النتيجة التالية. إذا كان الانتقال غير متاح أو غير مفيد، فتوقف عن المقارنة؛ لا تفترض أنه يفتح الإعادة أو البرامج السابقة أو جزءاً أقدم من المباشر. تختلف التسميات والاستجابة حسب الإصدار والمحتوى."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: أدوات فيديو VLC لنظام Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "صِف النتيجة قبل تغيير الإعداد",
+          "paragraphs": [
+            "القفزة التي تتبع اللمسة نفسها ملاحظة مختلفة عن قفزة تحدث دون تدخل. أرسل هذا الفرق وإصدار المشغل وسياق البرنامج المتأثر عبر الدعم الخاص. أخفِ عناوين التشغيل الخاصة عند مشاركة لقطة شاشة. احتفظ بالحساب المحفوظ والإعدادات الأخرى أثناء جمع المعلومات؛ إعادة تثبيت المشغل أو شراء خطة بديلة لن يوضّح أي إجراء حرّك الصورة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV में आगे-पीछे करना: स्पर्श का इशारा या अचानक छलाँग?",
+      "excerpt": "स्क्रीन छूने के बाद हुई छलाँग और बिना छुए बदलाव की जाँच अलग है। VLC का उपलब्ध नियंत्रण आज़माएँ, लेकिन लाइव कार्यक्रम दोबारा देखने की सुविधा न मान लें।",
+      "seo_title": "IPTV की स्थिति: VLC का इशारा या अचानक छलाँग?",
+      "seo_description": "जाँचें कि Android के VLC में किसी इशारे ने वीडियो की स्थिति बदली या नहीं, एक उपलब्ध नियंत्रण की तुलना करें और सहेजा सेटअप सुरक्षित रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि क्या आगे-पीछे हुआ",
+          "paragraphs": [
+            "IPTV में आगे-पीछे करने वाले नियंत्रण वीडियो की चलने की स्थिति बदलते हैं; यह गति बदलने से अलग है। छलाँग की शिकायत से पहले लिखें कि उँगली वीडियो पर चली, प्रगति संकेतक खिसका या बिना छुए तस्वीर बदल गई। उपलब्ध हो तो पहले और बाद की लगभग स्थिति लिखें। केवल स्क्रीन पर बदलाव से यह पता नहीं चलता कि स्ट्रीम फिर क्यों शुरू हुई, और लाइव कार्यक्रम में सहेजी वीडियो जैसे नियंत्रण ज़रूरी नहीं हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "एक उपलब्ध नियंत्रण जाँचें",
+          "paragraphs": [
+            "VideoLAN Android के VLC में क्षैतिज इशारे से आगे-पीछे जाने का वर्णन करता है। जहाँ सामग्री स्थिति बदलने देती हो, बार-बार चौड़े स्वाइप करने के बजाय दिखते प्रगति नियंत्रण से एक छोटा, जानबूझकर किया गया मिलान करें। अगला परिणाम देखते समय उँगली स्क्रीन से दूर रखें। सुविधा अनुपलब्ध हो या उपयोगी असर न हो तो तुलना रोक दें; इसे रीप्ले, पिछले कार्यक्रम या लाइव प्रसारण का पुराना हिस्सा खोलने की सुविधा न मानें। नाम और व्यवहार संस्करण तथा सामग्री पर निर्भर हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android के VLC के वीडियो नियंत्रण",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "सेटअप बदलने से पहले परिणाम बताएँ",
+          "paragraphs": [
+            "एक ही स्पर्श के बाद होने वाली छलाँग और बिना किसी क्रिया के होने वाला बदलाव अलग अवलोकन हैं। यह अंतर, प्लेयर संस्करण और प्रभावित कार्यक्रम का संदर्भ निजी सहायता को भेजें। स्क्रीनशॉट साझा करते समय निजी प्लेबैक पते छिपाएँ। जानकारी जुटाते समय सहेजा खाता और बाकी सेटिंग सुरक्षित रखें; प्लेयर दोबारा इंस्टॉल करने या दूसरा प्लान खरीदने से यह नहीं समझ आएगा कि किस क्रिया ने तस्वीर की स्थिति बदली।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android video-player controls",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+    }
+  ]
+}

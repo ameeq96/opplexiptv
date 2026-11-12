@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-12",
+  "topic": "Distinguish an automatic television HDMI input switch triggered by casting and CEC from a Get IPTV player error while preserving original equipment preferences",
+  "primary_keyword": "Get IPTV input switching",
+  "slug": "getiptv-hdmi-cec-automatic-input-switch",
+  "translations": {
+    "en": {
+      "title": "Get IPTV input switching: why the TV changes HDMI source",
+      "excerpt": "A TV changing to another HDMI input is different from an error inside the player. Check the casting event, HDMI-CEC support and the original TV preference before changing setup.",
+      "seo_title": "Get IPTV input switching: check HDMI-CEC and casting",
+      "seo_description": "Trace an automatic television input change during a Get IPTV session, check Google's documented HDMI-CEC conditions and keep source control separate from player access.",
+      "sections": [
+        {
+          "heading": "Watch the television input label",
+          "paragraphs": [
+            "A Get IPTV input switching question starts with the television, not the subscription. If the display moves from a game console or another source to a streaming device when someone starts casting, note the old and new input labels and what happened immediately beforehand. This differs from a player showing an error while the same HDMI source remains selected. Return to the intended source with the television remote before changing saved player details."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check whether HDMI control explains the change",
+          "paragraphs": [
+            "Google explains that HDMI-CEC lets connected equipment respond to control commands. On a compatible TV, starting a cast can switch the input to the HDMI port used by a Google streaming device; some televisions can also turn on. For that documented behaviour, Google specifies a wall power source for the streaming device rather than the television's USB port. Check your equipment manuals: CEC has manufacturer-specific names, and support varies."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google streaming help: what HDMI-CEC does",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Separate convenience controls from viewing access",
+          "paragraphs": [
+            "Decide with the device owner whether automatic input switching is useful before changing any HDMI-control preference. Note the original setting so a change can be reversed. CEC does not select an Opplex or Filex plan, install an IPTV player or establish that a particular app supports casting. If the source stays correct but playback fails, record the player, device model and visible message as a separate support issue; avoid clearing the working setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Cambio de entrada con Get IPTV: por qué cambia la fuente HDMI",
+      "excerpt": "Que el televisor cambie de entrada HDMI no es lo mismo que un error en el reproductor. Revise el inicio de una transmisión, HDMI-CEC y la preferencia original antes de cambiar la configuración.",
+      "seo_title": "Get IPTV: cambio de entrada, HDMI-CEC y transmisión",
+      "seo_description": "Identifique un cambio automático de entrada del televisor durante Get IPTV, revise las condiciones HDMI-CEC documentadas por Google y sepárelo del acceso del reproductor.",
+      "sections": [
+        {
+          "heading": "Observe el nombre de entrada del televisor",
+          "paragraphs": [
+            "Una consulta sobre el cambio de entrada con Get IPTV empieza por el televisor, no por la suscripción. Si la pantalla pasa de una consola u otra fuente a un dispositivo de transmisión cuando alguien empieza a enviar contenido, anote los nombres de entrada anterior y nuevo y lo ocurrido justo antes. Esto es distinto de un error del reproductor mientras sigue seleccionada la misma fuente HDMI. Vuelva a la fuente deseada con el mando del televisor antes de cambiar los datos guardados del reproductor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compruebe si el control HDMI explica el cambio",
+          "paragraphs": [
+            "Google explica que HDMI-CEC permite al equipo conectado responder a órdenes de control. En un televisor compatible, iniciar un envío puede cambiar la entrada al puerto HDMI que utiliza un dispositivo de transmisión de Google; algunos televisores también pueden encenderse. Para ese comportamiento documentado, Google especifica alimentar el dispositivo desde una toma de corriente, no desde el puerto USB del televisor. Consulte los manuales de sus equipos: CEC tiene nombres propios según el fabricante y la compatibilidad varía."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de dispositivos Google: qué hace HDMI-CEC",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Separe los controles de comodidad del acceso al servicio",
+          "paragraphs": [
+            "Decida con el propietario del equipo si el cambio automático de entrada resulta útil antes de modificar una preferencia de control HDMI. Anote el ajuste original para poder revertir el cambio. CEC no selecciona un plan Opplex o Filex, instala un reproductor IPTV ni demuestra que una aplicación admita el envío de contenido. Si la fuente sigue siendo correcta pero falla la reproducción, registre el reproductor, el modelo y el mensaje visible como un problema aparte para soporte; evite borrar la configuración que funciona."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV et changement d'entrée : pourquoi la source HDMI change",
+      "excerpt": "Un téléviseur qui change d'entrée HDMI présente un autre symptôme qu'une erreur du lecteur. Vérifiez le lancement d'une diffusion, HDMI-CEC et le réglage initial avant de modifier la configuration.",
+      "seo_title": "Get IPTV : changement d'entrée, HDMI-CEC et diffusion",
+      "seo_description": "Repérez un changement automatique d'entrée pendant Get IPTV, vérifiez les conditions HDMI-CEC documentées par Google et distinguez la source du téléviseur de l'accès du lecteur.",
+      "sections": [
+        {
+          "heading": "Observez le nom de l'entrée du téléviseur",
+          "paragraphs": [
+            "Une question de changement d'entrée pendant Get IPTV commence par le téléviseur, pas par l'abonnement. Si l'écran passe d'une console ou d'une autre source à un appareil de streaming lorsque quelqu'un lance une diffusion, notez les noms des deux entrées et l'événement immédiatement précédent. Ce phénomène diffère d'une erreur affichée dans le lecteur alors que la même source HDMI reste sélectionnée. Revenez à la source souhaitée avec la télécommande du téléviseur avant de modifier les données enregistrées du lecteur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez si le contrôle HDMI explique le changement",
+          "paragraphs": [
+            "Google explique que HDMI-CEC permet aux appareils connectés de répondre à des commandes. Sur un téléviseur compatible, le lancement d'une diffusion peut sélectionner le port HDMI utilisé par un appareil de streaming Google ; certains téléviseurs peuvent aussi s'allumer. Pour ce comportement documenté, Google précise que l'appareil doit être alimenté par une prise murale plutôt que par le port USB du téléviseur. Consultez les manuels : les noms du CEC dépendent du fabricant et la compatibilité varie."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide des appareils Google : rôle du HDMI-CEC",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez les commandes pratiques de l'accès au service",
+          "paragraphs": [
+            "Décidez avec le propriétaire si le changement automatique d'entrée est utile avant de modifier une préférence de contrôle HDMI. Notez le réglage initial pour pouvoir revenir en arrière. Le CEC ne choisit pas un forfait Opplex ou Filex, n'installe pas un lecteur IPTV et ne prouve pas qu'une application accepte la diffusion. Si la source reste correcte mais que la lecture échoue, relevez le lecteur, le modèle d'appareil et le message visible comme un problème distinct à transmettre au support ; évitez d'effacer la configuration fonctionnelle."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cambio ingresso con Get IPTV: perché cambia la sorgente HDMI",
+      "excerpt": "Un televisore che cambia ingresso HDMI presenta un problema diverso da un errore nel lettore. Controlla l'avvio della trasmissione, HDMI-CEC e l'impostazione originale prima di cambiare configurazione.",
+      "seo_title": "Get IPTV: cambio ingresso, HDMI-CEC e trasmissione",
+      "seo_description": "Individua un cambio automatico dell'ingresso durante Get IPTV, verifica le condizioni HDMI-CEC documentate da Google e separa il controllo della sorgente dall'accesso del lettore.",
+      "sections": [
+        {
+          "heading": "Osserva il nome dell'ingresso del televisore",
+          "paragraphs": [
+            "Una domanda sul cambio ingresso con Get IPTV parte dal televisore, non dall'abbonamento. Se lo schermo passa da una console o un'altra sorgente a un dispositivo di streaming quando qualcuno avvia una trasmissione, annota i nomi del vecchio e del nuovo ingresso e ciò che è successo subito prima. È diverso da un lettore che mostra un errore mentre resta selezionata la stessa sorgente HDMI. Torna alla sorgente desiderata con il telecomando del televisore prima di modificare i dati salvati del lettore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica se il controllo HDMI spiega il cambio",
+          "paragraphs": [
+            "Google spiega che HDMI-CEC permette agli apparecchi collegati di rispondere ai comandi. Su un televisore compatibile, avviare una trasmissione può selezionare la porta HDMI usata da un dispositivo di streaming Google; alcuni televisori possono anche accendersi. Per questo comportamento documentato, Google richiede l'alimentazione del dispositivo da una presa a muro anziché dalla porta USB del televisore. Consulta i manuali: CEC ha nomi specifici secondo il produttore e la compatibilità varia."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida dei dispositivi Google: come funziona HDMI-CEC",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Separa i comandi di comodità dall'accesso al servizio",
+          "paragraphs": [
+            "Decidi con il proprietario del dispositivo se il cambio automatico d'ingresso sia utile prima di modificare le preferenze di controllo HDMI. Annota il valore originale per poter annullare una modifica. CEC non sceglie un piano Opplex o Filex, non installa un lettore IPTV e non prova che una particolare app supporti la trasmissione. Se la sorgente resta corretta ma la riproduzione fallisce, registra lettore, modello e messaggio visibile come problema distinto per l'assistenza; evita di cancellare la configurazione funzionante."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV en ingangen wisselen: waarom de HDMI-bron verandert",
+      "excerpt": "Een televisie die van HDMI-ingang wisselt is iets anders dan een fout in de speler. Controleer een gestarte cast, HDMI-CEC en de oorspronkelijke voorkeur voordat u instellingen wijzigt.",
+      "seo_title": "Get IPTV: ingangswisseling, HDMI-CEC en casten",
+      "seo_description": "Onderzoek een automatische ingangswisseling tijdens Get IPTV, controleer Googles beschreven HDMI-CEC-voorwaarden en scheid bronbediening van toegang tot de speler.",
+      "sections": [
+        {
+          "heading": "Bekijk de ingangsnaam van de televisie",
+          "paragraphs": [
+            "Een vraag over wisselende ingangen bij Get IPTV begint bij de televisie, niet het abonnement. Als het beeld van een spelcomputer of andere bron naar een streamingapparaat gaat wanneer iemand begint te casten, noteer dan de oude en nieuwe ingangsnaam en wat er vlak daarvoor gebeurde. Dit verschilt van een speler die een fout toont terwijl dezelfde HDMI-bron geselecteerd blijft. Keer met de televisieafstandsbediening terug naar de bedoelde bron voordat u opgeslagen spelergegevens wijzigt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer of HDMI-bediening de wisseling verklaart",
+          "paragraphs": [
+            "Google legt uit dat HDMI-CEC aangesloten apparatuur op bedieningsopdrachten laat reageren. Op een geschikte tv kan het starten van een cast de ingang omschakelen naar de HDMI-poort van een Google-streamingapparaat; sommige televisies kunnen ook aangaan. Voor dit beschreven gedrag schrijft Google voeding via een stopcontact voor in plaats van via de USB-poort van de televisie. Raadpleeg de handleidingen: fabrikanten gebruiken verschillende namen voor CEC en ondersteuning verschilt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google-apparaathulp: wat HDMI-CEC doet",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid handige bediening van toegang tot de dienst",
+          "paragraphs": [
+            "Beslis met de eigenaar of automatisch wisselen van ingang nuttig is voordat u een HDMI-bedieningsvoorkeur verandert. Noteer de oorspronkelijke instelling om een wijziging te kunnen terugdraaien. CEC kiest geen Opplex- of Filex-abonnement, installeert geen IPTV-speler en bewijst niet dat een bepaalde app casten ondersteunt. Blijft de bron juist maar mislukt afspelen, noteer dan speler, apparaatmodel en zichtbare melding als afzonderlijke ondersteuningsvraag; wis de werkende configuratie niet."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV e mudança de entrada: porque muda a fonte HDMI",
+      "excerpt": "Uma TV que muda de entrada HDMI é diferente de um erro no leitor. Verifique o início de uma transmissão, o HDMI-CEC e a preferência original antes de alterar a configuração.",
+      "seo_title": "Get IPTV: mudança de entrada, HDMI-CEC e transmissão",
+      "seo_description": "Identifique uma mudança automática de entrada durante Get IPTV, confira as condições HDMI-CEC documentadas pelo Google e separe o controlo da fonte do acesso do leitor.",
+      "sections": [
+        {
+          "heading": "Observe o nome da entrada da televisão",
+          "paragraphs": [
+            "Uma dúvida sobre mudança de entrada com Get IPTV começa pela televisão, não pela assinatura. Se o ecrã passar de uma consola ou outra fonte para um dispositivo de streaming quando alguém inicia uma transmissão, registe os nomes das entradas anterior e nova e o que aconteceu imediatamente antes. Isto difere de um leitor apresentar um erro mantendo a mesma fonte HDMI selecionada. Volte à fonte pretendida com o comando da televisão antes de mudar os dados guardados do leitor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Veja se o controlo HDMI explica a mudança",
+          "paragraphs": [
+            "O Google explica que HDMI-CEC permite que os equipamentos ligados respondam a comandos. Numa TV compatível, iniciar uma transmissão pode mudar a entrada para a porta HDMI usada por um dispositivo de streaming Google; algumas televisões também podem ligar-se. Para esse comportamento documentado, o Google especifica alimentar o dispositivo numa tomada de parede, não na porta USB da televisão. Consulte os manuais: CEC tem nomes próprios conforme o fabricante e a compatibilidade varia."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda dos dispositivos Google: o que faz HDMI-CEC",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Separe os comandos de conveniência do acesso ao serviço",
+          "paragraphs": [
+            "Decida com o proprietário se a mudança automática de entrada é útil antes de alterar uma preferência de controlo HDMI. Registe a configuração original para poder reverter uma mudança. CEC não escolhe um plano Opplex ou Filex, instala um leitor IPTV nem comprova que determinada aplicação suporta transmissão. Se a fonte continuar correta mas a reprodução falhar, registe o leitor, o modelo e a mensagem visível como um problema separado para o apoio; evite apagar a configuração funcional."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Смена входа с Get IPTV: почему телевизор меняет источник HDMI",
+      "excerpt": "Переключение телевизора на другой HDMI-вход отличается от ошибки внутри плеера. Проверьте запуск трансляции, поддержку HDMI-CEC и исходную настройку до изменения конфигурации.",
+      "seo_title": "Get IPTV: смена входа, HDMI-CEC и трансляция",
+      "seo_description": "Разберите автоматическую смену входа во время Get IPTV, проверьте описанные Google условия HDMI-CEC и отделите управление источником от доступа в плеере.",
+      "sections": [
+        {
+          "heading": "Следите за названием входа телевизора",
+          "paragraphs": [
+            "Вопрос о смене входа при Get IPTV начинается с телевизора, а не подписки. Если после запуска трансляции кем-то экран переключается с приставки для игр или другого источника на потоковое устройство, запишите прежнее и новое названия входов и предшествовавшее действие. Это отличается от ошибки плеера, когда тот же источник HDMI остаётся выбранным. Вернитесь к нужному источнику пультом телевизора до изменения сохранённых данных плеера."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте, объясняет ли смену управление HDMI",
+          "paragraphs": [
+            "Google объясняет, что HDMI-CEC позволяет подключённой аппаратуре реагировать на команды управления. На совместимом телевизоре запуск трансляции может выбрать HDMI-порт потокового устройства Google; некоторые телевизоры также могут включаться. Для описанного поведения Google указывает питание устройства от настенной розетки, а не USB-порта телевизора. Сверьтесь с инструкциями: производители используют разные названия CEC, а поддержка различается."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка устройств Google: назначение HDMI-CEC",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте удобство управления от доступа к просмотру",
+          "paragraphs": [
+            "Прежде чем менять параметры управления HDMI, решите с владельцем, полезна ли автоматическая смена входа. Запишите исходную настройку, чтобы изменение можно было отменить. CEC не выбирает план Opplex или Filex, не устанавливает IPTV-плеер и не подтверждает поддержку трансляции определённым приложением. Если источник выбран правильно, но воспроизведение не удаётся, запишите плеер, модель устройства и видимое сообщение как отдельный вопрос поддержке; не стирайте рабочую конфигурацию."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV میں اِن پٹ کی تبدیلی: ٹی وی کا HDMI ذریعہ کیوں بدلتا ہے",
+      "excerpt": "ٹی وی کا دوسرے HDMI اِن پٹ پر جانا پلیئر کے اندر خرابی سے الگ بات ہے۔ سیٹ اپ بدلنے سے پہلے کاسٹ شروع ہونے، HDMI-CEC کی مطابقت اور اصل ترجیح کو دیکھیں۔",
+      "seo_title": "Get IPTV: اِن پٹ کی تبدیلی، HDMI-CEC اور کاسٹنگ",
+      "seo_description": "Get IPTV کے دوران ٹی وی کے خودکار اِن پٹ بدلنے کو پہچانیں، Google کی بتائی HDMI-CEC شرائط دیکھیں اور ذریعے کے کنٹرول کو پلیئر کی رسائی سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "ٹی وی پر اِن پٹ کا نام دیکھیں",
+          "paragraphs": [
+            "Get IPTV میں اِن پٹ بدلنے کا سوال ٹی وی سے شروع ہوتا ہے، سبسکرپشن سے نہیں۔ کوئی کاسٹنگ شروع کرے اور تصویر گیم کنسول یا دوسرے ذریعے سے اسٹریمنگ آلے پر چلی جائے تو پرانے اور نئے اِن پٹ کے نام اور اس سے فوراً پہلے ہونے والا عمل لکھیں۔ یہ اس صورت سے مختلف ہے جس میں وہی HDMI ذریعہ منتخب رہے مگر پلیئر خرابی دکھائے۔ پلیئر کی محفوظ تفصیل بدلنے سے پہلے ٹی وی کے ریموٹ سے مطلوبہ ذریعے پر واپس جائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دیکھیں کیا HDMI کنٹرول تبدیلی کی وجہ سمجھاتا ہے",
+          "paragraphs": [
+            "Google کے مطابق HDMI-CEC منسلک آلات کو کنٹرول کے احکامات پر عمل کرنے دیتا ہے۔ مطابقت رکھنے والے ٹی وی پر کاسٹنگ شروع ہونے سے اِن پٹ اس HDMI پورٹ پر جا سکتا ہے جس پر Google کا اسٹریمنگ آلہ لگا ہو؛ کچھ ٹی وی آن بھی ہو سکتے ہیں۔ اس بیان کردہ عمل کے لیے Google آلے کو ٹی وی کے USB پورٹ کے بجائے دیوار کے برقی ساکٹ سے چلانے کی شرط بتاتا ہے۔ اپنے آلات کی ہدایات دیکھیں: بنانے والے CEC کے مختلف نام رکھتے ہیں اور مطابقت یکساں نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google آلات کی مدد: HDMI-CEC کا کام",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "آسان کنٹرول کو دیکھنے کی رسائی سے الگ رکھیں",
+          "paragraphs": [
+            "HDMI کنٹرول کی ترجیح بدلنے سے پہلے آلے کے مالک کے ساتھ طے کریں کہ خودکار اِن پٹ تبدیلی مفید ہے یا نہیں۔ اصل ترتیب لکھیں تاکہ تبدیلی واپس کی جا سکے۔ CEC نہ Opplex یا Filex منصوبہ منتخب کرتا ہے، نہ IPTV پلیئر نصب کرتا ہے اور نہ یہ ثابت کرتا ہے کہ کوئی خاص ایپ کاسٹنگ کی سہولت دیتی ہے۔ ذریعہ درست رہے مگر پلے بیک ناکام ہو تو پلیئر، آلے کا ماڈل اور دکھائی دینے والا پیغام الگ معاونتی مسئلے کے طور پر لکھیں؛ چلتا ہوا سیٹ اپ مٹانے سے گریز کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تبديل المدخل مع Get IPTV: لماذا يتغير مصدر HDMI في التلفاز",
+      "excerpt": "انتقال التلفاز إلى مدخل HDMI آخر يختلف عن خطأ داخل المشغّل. افحص بدء الإرسال ودعم HDMI-CEC والتفضيل الأصلي قبل تغيير الإعداد.",
+      "seo_title": "Get IPTV: تبديل المدخل وHDMI-CEC والإرسال",
+      "seo_description": "تتبّع التبديل التلقائي لمدخل التلفاز أثناء Get IPTV، وافحص شروط HDMI-CEC الموثقة لدى Google، وافصل التحكم في المصدر عن وصول المشغّل.",
+      "sections": [
+        {
+          "heading": "راقب اسم مدخل التلفاز",
+          "paragraphs": [
+            "يبدأ السؤال عن تبديل المدخل أثناء Get IPTV بالتلفاز، لا بالاشتراك. إذا انتقلت الشاشة من جهاز ألعاب أو مصدر آخر إلى جهاز بث عند بدء شخص ما إرسال المحتوى، فدوّن اسمي المدخل السابق والجديد وما حدث قبله مباشرة. يختلف ذلك عن ظهور خطأ في المشغّل مع بقاء مصدر HDMI نفسه محدداً. عُد إلى المصدر المطلوب بريموت التلفاز قبل تغيير تفاصيل المشغّل المحفوظة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تحقّق مما إذا كان تحكم HDMI يفسّر التغيير",
+          "paragraphs": [
+            "توضح Google أن HDMI-CEC يتيح للأجهزة المتصلة الاستجابة لأوامر التحكم. في تلفاز متوافق، قد يؤدي بدء الإرسال إلى تبديل المدخل إلى منفذ HDMI الذي يستخدمه جهاز بث Google؛ وقد تعمل بعض أجهزة التلفاز أيضاً. لهذا السلوك الموثّق، تحدد Google تغذية جهاز البث من مقبس حائط بدلاً من منفذ USB في التلفاز. راجع أدلة أجهزتك: تختلف أسماء CEC حسب الشركة المصنّعة كما يختلف الدعم."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة أجهزة Google: وظيفة HDMI-CEC",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "افصل وسائل التحكم المريحة عن الوصول للمشاهدة",
+          "paragraphs": [
+            "اتفق مع مالك الجهاز على فائدة التبديل التلقائي للمدخل قبل تغيير أي تفضيل لتحكم HDMI. دوّن الإعداد الأصلي لإمكان التراجع عن التغيير. لا يختار CEC خطة Opplex أو Filex ولا يثبّت مشغّل IPTV ولا يثبت أن تطبيقاً معيناً يدعم الإرسال. إذا بقي المصدر صحيحاً وفشلت المشاهدة، فسجّل المشغّل وطراز الجهاز والرسالة الظاهرة كمسألة دعم منفصلة؛ تجنّب مسح الإعداد العامل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV में इनपुट बदलना: टीवी का HDMI स्रोत क्यों बदलता है",
+      "excerpt": "टीवी का दूसरे HDMI इनपुट पर जाना प्लेयर के अंदर त्रुटि से अलग है। सेटअप बदलने से पहले कास्ट शुरू होने, HDMI-CEC समर्थन और मूल प्राथमिकता की जाँच करें।",
+      "seo_title": "Get IPTV: इनपुट बदलना, HDMI-CEC और कास्टिंग",
+      "seo_description": "Get IPTV के दौरान टीवी का अपने आप इनपुट बदलना पहचानें, Google की बताई HDMI-CEC शर्तें जाँचें और स्रोत नियंत्रण को प्लेयर की पहुँच से अलग रखें।",
+      "sections": [
+        {
+          "heading": "टेलीविज़न पर इनपुट का नाम देखें",
+          "paragraphs": [
+            "Get IPTV में इनपुट बदलने का सवाल टेलीविज़न से शुरू होता है, सदस्यता से नहीं। किसी के कास्ट शुरू करने पर स्क्रीन गेम कंसोल या दूसरे स्रोत से स्ट्रीमिंग डिवाइस पर चली जाए तो पुराने और नए इनपुट के नाम तथा ठीक पहले हुआ काम लिखें। यह उस स्थिति से अलग है जिसमें वही HDMI स्रोत चुना रहता है लेकिन प्लेयर त्रुटि दिखाता है। प्लेयर की सहेजी जानकारी बदलने से पहले टीवी के रिमोट से इच्छित स्रोत पर लौटें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "जाँचें कि क्या HDMI नियंत्रण बदलाव समझाता है",
+          "paragraphs": [
+            "Google के अनुसार HDMI-CEC जुड़े उपकरणों को नियंत्रण आदेशों पर प्रतिक्रिया देने देता है। अनुकूल टीवी पर कास्ट शुरू होने से इनपुट उस HDMI पोर्ट पर जा सकता है जिसे Google का स्ट्रीमिंग डिवाइस उपयोग करता है; कुछ टीवी चालू भी हो सकते हैं। इस बताए व्यवहार के लिए Google डिवाइस को टीवी के USB पोर्ट के बजाय दीवार के बिजली सॉकेट से चलाने की शर्त बताता है। उपकरण की निर्देश पुस्तिका देखें: निर्माता CEC के अलग नाम इस्तेमाल करते हैं और समर्थन अलग होता है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google डिवाइस सहायता: HDMI-CEC का काम",
+              "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "सुविधा वाले नियंत्रण को देखने की पहुँच से अलग रखें",
+          "paragraphs": [
+            "HDMI नियंत्रण की प्राथमिकता बदलने से पहले डिवाइस के मालिक के साथ तय करें कि अपने आप इनपुट बदलना उपयोगी है या नहीं। मूल सेटिंग लिखें ताकि बदलाव वापस किया जा सके। CEC न Opplex या Filex योजना चुनता है, न IPTV प्लेयर इंस्टॉल करता है और न किसी खास ऐप में कास्टिंग समर्थन साबित करता है। स्रोत सही रहे लेकिन वीडियो न चले तो प्लेयर, डिवाइस मॉडल और दिखा संदेश अलग सहायता समस्या के रूप में लिखें; काम कर रहा सेटअप साफ़ न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google streaming help: what HDMI-CEC does",
+      "url": "https://support.google.com/chromecast/answer/7199917?hl=en-GB"
+    }
+  ]
+}

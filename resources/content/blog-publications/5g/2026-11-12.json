@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-12",
+  "topic": "Recognise Pixel Digital Wellbeing daily app-timer closure separately from 5G Live IPTV subscription expiry while respecting owner-managed viewing limits",
+  "primary_keyword": "5G Live IPTV app timer",
+  "slug": "5g-pixel-app-timer-versus-subscription-expiry",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV app timer: a dimmed player icon is a device clue",
+      "excerpt": "A Pixel daily app limit can close a player and dim its icon. Read the phone’s message before confusing a device viewing limit with subscription expiry.",
+      "seo_title": "5G Live IPTV app timer: check Pixel daily limits",
+      "seo_description": "Check Pixel Digital Wellbeing app timers when a player closes and its icon dims, while keeping owner restrictions separate from 5G Live IPTV plan expiry.",
+      "sections": [
+        {
+          "heading": "Read the phone’s message first",
+          "paragraphs": [
+            "A 5G Live IPTV app timer check is useful when a player closes and its icon becomes dimmed on a Pixel phone. Read the message and note when it appeared. That pattern can relate to a device usage limit, but a dim icon by itself is not a diagnosis. Distinguish an app that cannot open from a programme that stops inside an already open player. Neither observation alone confirms subscription expiry."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspect the selected app’s daily limit",
+          "paragraphs": [
+            "Google documents app timers in Settings, Digital Wellbeing, then App timers on supported Pixel devices. Inspect the timer associated with the actual installed player, not an unrelated app. When the allowed time runs out, Google says the app closes and its icon dims; daily timers reset at midnight. Menu wording and availability can differ, and some work or school accounts may not support these timers. Do not alter the phone’s clock to force a reset."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel Digital Wellbeing and daily app timers",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Respect the owner’s viewing limit",
+          "paragraphs": [
+            "If a timer explains the message, follow the owner’s chosen viewing schedule. Ask the parent or device administrator about a managed restriction rather than removing controls or seeking a PIN. If no relevant timer exists, record the exact message, phone model and player name for private support. A device timer is separate from the provider’s plan period and simultaneous-connection allowance. Buying another plan, reinstalling the player or erasing saved access is not a useful first response to a usage-limit notice."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Temporizador de apps con 5G Live IPTV: un icono atenuado es una pista",
+      "excerpt": "Un límite diario de Pixel puede cerrar el reproductor y atenuar su icono. Lee el mensaje del teléfono antes de confundir un límite de uso con la caducidad del plan.",
+      "seo_title": "5G Live IPTV: temporizador de apps y límites de Pixel",
+      "seo_description": "Revisa los temporizadores de Bienestar digital de Pixel si el reproductor se cierra y su icono se atenúa; separa los límites del propietario de la caducidad del plan.",
+      "sections": [
+        {
+          "heading": "Lee primero el mensaje del teléfono",
+          "paragraphs": [
+            "Comprobar el temporizador de apps al usar 5G Live IPTV resulta útil si el reproductor se cierra y su icono se atenúa en un Pixel. Lee el mensaje y anota cuándo apareció. Ese comportamiento puede relacionarse con un límite de uso del dispositivo, pero un icono atenuado por sí solo no permite diagnosticar la causa. Distingue una app que no se abre de un programa que se detiene dentro del reproductor abierto. Ninguna de esas observaciones confirma por sí sola que la suscripción haya caducado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspecciona el límite diario de la app correcta",
+          "paragraphs": [
+            "Google documenta los temporizadores en Ajustes, Bienestar digital y Temporizadores de aplicaciones en dispositivos Pixel compatibles. Mira el temporizador del reproductor realmente instalado, no el de otra app. Según Google, al agotarse el tiempo permitido la app se cierra y su icono se atenúa; los temporizadores diarios se reinician a medianoche. Los nombres y la disponibilidad pueden variar, y algunas cuentas escolares o laborales no admiten estos límites. No cambies el reloj para forzar el reinicio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Bienestar digital de Pixel y temporizadores diarios de apps",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Respeta el límite de uso del propietario",
+          "paragraphs": [
+            "Si un temporizador explica el mensaje, sigue el horario elegido por el propietario. Pregunta al padre, madre o administrador por una restricción gestionada en vez de quitar controles o buscar un PIN. Si no hay un temporizador pertinente, guarda el texto exacto, modelo de teléfono y nombre del reproductor para soporte privado. El temporizador del dispositivo es distinto de la duración del plan y del límite de conexiones simultáneas. Comprar otro plan, reinstalar o borrar el acceso guardado no es una primera respuesta útil a un aviso de límite de uso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Minuteur d’application avec 5G Live IPTV : l’icône grisée est un indice",
+      "excerpt": "Une limite quotidienne de Pixel peut fermer le lecteur et griser son icône. Lisez le message du téléphone avant de confondre une limite d’usage avec l’expiration du forfait.",
+      "seo_title": "5G Live IPTV : minuteur d’application et limites Pixel",
+      "seo_description": "Vérifiez les minuteurs Bien-être numérique de Pixel si le lecteur se ferme et son icône se grise, sans confondre restriction du propriétaire et expiration du forfait.",
+      "sections": [
+        {
+          "heading": "Lire d’abord le message du téléphone",
+          "paragraphs": [
+            "Vérifier le minuteur d’application avec 5G Live IPTV est utile lorsqu’un lecteur se ferme et que son icône se grise sur un Pixel. Lisez le message et notez quand il apparaît. Cela peut être lié à une limite d’usage de l’appareil, mais une icône grisée ne suffit pas à établir un diagnostic. Distinguez une application impossible à ouvrir d’un programme qui s’arrête dans un lecteur déjà ouvert. Aucune de ces observations ne confirme seule l’expiration de l’abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner la limite quotidienne de la bonne application",
+          "paragraphs": [
+            "Google décrit les minuteurs dans Paramètres, Bien-être numérique, puis Minuteurs des applications sur les Pixel compatibles. Consultez celui du lecteur effectivement installé, pas celui d’une autre application. Selon Google, une fois le temps autorisé écoulé, l’application se ferme et son icône se grise ; les minuteurs quotidiens se réinitialisent à minuit. Les intitulés et la disponibilité varient, et certains comptes professionnels ou scolaires ne les prennent pas en charge. Ne modifiez pas l’horloge pour forcer une réinitialisation."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : Bien-être numérique de Pixel et minuteurs quotidiens",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Respecter la limite choisie par le propriétaire",
+          "paragraphs": [
+            "Si un minuteur explique le message, respectez l’horaire choisi par le propriétaire. Demandez au parent ou à l’administrateur de l’appareil de clarifier une restriction gérée plutôt que supprimer les contrôles ou chercher un code. Sans minuteur pertinent, relevez le message exact, le modèle du téléphone et le lecteur pour le support privé. Ce minuteur est distinct de la durée du forfait et du nombre de connexions simultanées. Acheter un autre forfait, réinstaller le lecteur ou effacer l’accès enregistré n’est pas une première réponse utile à un avis de limite d’usage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Timer delle app con 5G Live IPTV: l’icona attenuata è un indizio",
+      "excerpt": "Un limite giornaliero di Pixel può chiudere il lettore e attenuarne l’icona. Leggi il messaggio del telefono prima di confondere un limite d’uso con la scadenza del piano.",
+      "seo_title": "5G Live IPTV: timer delle app e limiti giornalieri Pixel",
+      "seo_description": "Controlla i timer di Benessere digitale di Pixel se il lettore si chiude e l’icona si attenua, distinguendo i limiti del proprietario dalla scadenza del piano IPTV.",
+      "sections": [
+        {
+          "heading": "Leggi prima il messaggio del telefono",
+          "paragraphs": [
+            "Controllare il timer delle app mentre usi 5G Live IPTV è utile se il lettore si chiude e la sua icona si attenua su un Pixel. Leggi il messaggio e annota quando è comparso. Il comportamento può dipendere da un limite d’uso del dispositivo, ma l’icona attenuata da sola non costituisce una diagnosi. Distingui un’app che non si apre da un programma che si ferma dentro un lettore già aperto. Nessuna delle due osservazioni conferma da sola che l’abbonamento sia scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Esamina il limite giornaliero dell’app corretta",
+          "paragraphs": [
+            "Google descrive i timer in Impostazioni, Benessere digitale e Timer delle app sui Pixel compatibili. Esamina il timer del lettore effettivamente installato, non quello di un’altra app. Secondo Google, quando il tempo consentito finisce, l’app si chiude e l’icona si attenua; i timer giornalieri si azzerano a mezzanotte. Nomi e disponibilità variano e alcuni account scolastici o di lavoro non supportano questi timer. Non cambiare l’orologio per forzare l’azzeramento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Benessere digitale di Pixel e timer giornalieri delle app",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Rispetta il limite scelto dal proprietario",
+          "paragraphs": [
+            "Se un timer spiega il messaggio, segui l’orario scelto dal proprietario. Chiedi al genitore o all’amministratore del dispositivo informazioni su una restrizione gestita invece di rimuovere i controlli o cercare un PIN. Se non esiste un timer pertinente, annota messaggio esatto, modello del telefono e lettore per l’assistenza privata. Il timer del dispositivo è distinto dalla durata del piano e dalle connessioni simultanee consentite. Comprare un altro piano, reinstallare o cancellare l’accesso salvato non è una prima risposta utile a un avviso sul limite d’uso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en de apptimer: een gedimd pictogram is een aanwijzing",
+      "excerpt": "Een dagelijkse Pixel-limiet kan de speler sluiten en het pictogram dimmen. Lees de melding voordat u een gebruikslimiet verwart met het verlopen van het abonnement.",
+      "seo_title": "5G Live IPTV-apptimer: dagelijkse Pixel-limieten",
+      "seo_description": "Controleer Pixel-apptimers in Digitaal welzijn wanneer de speler sluit en het pictogram dimt; houd de limiet van de eigenaar gescheiden van het IPTV-abonnement.",
+      "sections": [
+        {
+          "heading": "Lees eerst de melding op de telefoon",
+          "paragraphs": [
+            "Een controle van de apptimer bij 5G Live IPTV is nuttig als een speler sluit en zijn pictogram gedimd wordt op een Pixel. Lees de melding en noteer wanneer die verscheen. Dit kan samenhangen met een gebruikslimiet van het apparaat, maar alleen een gedimd pictogram stelt de oorzaak niet vast. Maak onderscheid tussen een app die niet opent en een programma dat stopt binnen een al geopende speler. Geen van beide waarnemingen bevestigt op zichzelf dat het abonnement is verlopen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de daglimiet van de juiste app",
+          "paragraphs": [
+            "Google beschrijft apptimers onder Instellingen, Digitaal welzijn en Apptimers op ondersteunde Pixel-apparaten. Bekijk de timer van de werkelijk geïnstalleerde speler, niet van een andere app. Als de toegestane tijd op is, sluit volgens Google de app en wordt het pictogram gedimd; dagelijkse timers worden om middernacht opnieuw ingesteld. Menunamen en beschikbaarheid verschillen, en sommige werk- of schoolaccounts ondersteunen deze timers niet. Verander de klok niet om een nieuwe instelling af te dwingen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Digitaal welzijn en dagelijkse apptimers op Pixel",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Respecteer de limiet van de eigenaar",
+          "paragraphs": [
+            "Verklaart een timer de melding, volg dan het kijkrooster dat de eigenaar heeft gekozen. Vraag de ouder of apparaatbeheerder naar een beheerde beperking in plaats van beveiligingen te verwijderen of een pincode te zoeken. Is er geen relevante timer, noteer dan de exacte melding, het telefoonmodel en de speler voor privéondersteuning. Een apparaattimer staat los van de abonnementsduur en het aantal gelijktijdige verbindingen. Een ander abonnement kopen, de speler opnieuw installeren of opgeslagen toegang wissen is geen nuttige eerste reactie op een gebruikslimiet."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Temporizador de aplicações no 5G Live IPTV: um ícone esbatido é uma pista",
+      "excerpt": "Um limite diário do Pixel pode fechar o leitor e esbater o ícone. Leia a mensagem do telefone antes de confundir um limite de utilização com a expiração do plano.",
+      "seo_title": "5G Live IPTV: temporizador e limites diários do Pixel",
+      "seo_description": "Verifique os temporizadores do Bem-estar digital do Pixel se o leitor fechar e o ícone ficar esbatido, distinguindo limites do proprietário da expiração do plano.",
+      "sections": [
+        {
+          "heading": "Leia primeiro a mensagem do telefone",
+          "paragraphs": [
+            "Verificar o temporizador de aplicações ao usar 5G Live IPTV é útil quando o leitor fecha e o ícone fica esbatido num Pixel. Leia a mensagem e anote quando apareceu. Isso pode estar relacionado com um limite de utilização do dispositivo, mas um ícone esbatido, por si só, não estabelece um diagnóstico. Distinga uma aplicação que não abre de um programa que para dentro de um leitor já aberto. Nenhuma destas observações confirma sozinha que a assinatura expirou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte o limite diário da aplicação correta",
+          "paragraphs": [
+            "A Google documenta os temporizadores em Definições, Bem-estar digital e Temporizadores de aplicações nos Pixel compatíveis. Consulte o temporizador do leitor realmente instalado, não o de outra aplicação. Segundo a Google, quando termina o tempo permitido, a aplicação fecha e o ícone fica esbatido; os temporizadores diários reiniciam à meia-noite. Os nomes e a disponibilidade podem variar, e algumas contas escolares ou profissionais não suportam estes temporizadores. Não altere o relógio para forçar o reinício."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Bem-estar digital do Pixel e temporizadores diários",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Respeite o limite escolhido pelo proprietário",
+          "paragraphs": [
+            "Se um temporizador explicar a mensagem, siga o horário escolhido pelo proprietário. Pergunte ao responsável parental ou administrador sobre uma restrição gerida em vez de remover controlos ou procurar um PIN. Sem temporizador relevante, registe a mensagem exata, modelo do telefone e nome do leitor para suporte privado. Um temporizador do dispositivo é diferente da duração do plano e das ligações simultâneas permitidas. Comprar outro plano, reinstalar o leitor ou apagar o acesso guardado não é uma primeira resposta útil a um aviso de limite de utilização."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Таймер приложения с 5G Live IPTV: потускневший значок — подсказка",
+      "excerpt": "Дневной лимит Pixel может закрыть проигрыватель и затемнить его значок. Прочитайте сообщение телефона, прежде чем связывать ограничение использования с окончанием подписки.",
+      "seo_title": "5G Live IPTV: таймер приложения и лимиты Pixel",
+      "seo_description": "Проверьте таймеры цифрового благополучия Pixel, если проигрыватель закрывается и значок тускнеет; отделяйте ограничения владельца от окончания подписки IPTV.",
+      "sections": [
+        {
+          "heading": "Сначала прочитайте сообщение телефона",
+          "paragraphs": [
+            "Проверка таймера приложения при использовании 5G Live IPTV полезна, если проигрыватель закрывается, а его значок на Pixel тускнеет. Прочитайте сообщение и отметьте время появления. Такое поведение может быть связано с ограничением использования устройства, но один потускневший значок не даёт диагноза. Отличайте приложение, которое нельзя открыть, от передачи, останавливающейся в уже открытом проигрывателе. Ни одно из этих наблюдений само по себе не подтверждает окончание подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте дневной лимит нужного приложения",
+          "paragraphs": [
+            "Google описывает таймеры в разделе «Настройки», «Цифровое благополучие», затем «Таймеры приложений» на поддерживаемых Pixel. Проверьте таймер установленного проигрывателя, а не другой программы. По данным Google, когда разрешённое время заканчивается, приложение закрывается и значок тускнеет; дневные таймеры сбрасываются в полночь. Названия и доступность различаются, а некоторые рабочие или учебные аккаунты не поддерживают таймеры. Не меняйте часы телефона ради принудительного сброса."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: цифровое благополучие Pixel и дневные таймеры приложений",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Уважайте ограничение владельца",
+          "paragraphs": [
+            "Если сообщение объясняется таймером, соблюдайте расписание просмотра, выбранное владельцем. Уточните управляемое ограничение у родителя или администратора, а не удаляйте защиту и не ищите PIN-код. Если подходящего таймера нет, запишите точное сообщение, модель телефона и название проигрывателя для личной поддержки. Таймер устройства отличается от срока подписки и числа одновременных соединений. Покупка другого плана, переустановка или стирание сохранённого доступа — не полезный первый ответ на уведомление о лимите использования."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV ایپ ٹائمر: مدھم پلیئر نشان ایک اشارہ ہے",
+      "excerpt": "Pixel کی روزانہ ایپ حد پلیئر بند کر کے اس کا نشان مدھم کر سکتی ہے۔ فون کا پیغام پڑھیں، استعمال کی حد کو سبسکرپشن ختم ہونے سے الگ رکھیں۔",
+      "seo_title": "5G Live IPTV ایپ ٹائمر: Pixel کی روزانہ حد دیکھیں",
+      "seo_description": "پلیئر بند ہو اور نشان مدھم پڑے تو Pixel میں ڈیجیٹل ویلبیئنگ کے ایپ ٹائمر دیکھیں؛ مالک کی پابندی اور 5G Live IPTV پلان کی میعاد الگ ہیں۔",
+      "sections": [
+        {
+          "heading": "پہلے فون کا پیغام پڑھیں",
+          "paragraphs": [
+            "5G Live IPTV کا ایپ ٹائمر دیکھنا اس وقت مفید ہے جب Pixel فون پر پلیئر بند ہو جائے اور اس کا نشان مدھم پڑ جائے۔ پیغام پڑھیں اور آنے کا وقت لکھیں۔ یہ انداز آلے کے استعمال کی حد سے متعلق ہو سکتا ہے، لیکن صرف مدھم نشان وجہ کا فیصلہ نہیں کرتا۔ نہ کھلنے والی ایپ اور کھلے ہوئے پلیئر میں رکنے والے پروگرام کو الگ سمجھیں۔ ان میں سے کوئی مشاہدہ اکیلا سبسکرپشن ختم ہونے کی تصدیق نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "متعلقہ ایپ کی روزانہ حد دیکھیں",
+          "paragraphs": [
+            "Google کے مطابق ہم آہنگ Pixel آلات میں ترتیبات، ڈیجیٹل ویلبیئنگ اور پھر ایپ ٹائمر میں یہ اختیار ملتا ہے۔ اصل نصب شدہ پلیئر کا ٹائمر دیکھیں، کسی دوسری ایپ کا نہیں۔ Google کے مطابق اجازت کا وقت ختم ہو تو ایپ بند ہوتی ہے اور نشان مدھم پڑتا ہے؛ روزانہ کے ٹائمر آدھی رات کو دوبارہ شروع ہوتے ہیں۔ مینو کے نام اور دستیابی بدل سکتے ہیں، اور بعض دفتری یا تعلیمی اکاؤنٹ یہ ٹائمر قبول نہیں کرتے۔ نیا آغاز زبردستی کرنے کے لیے فون کی گھڑی نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel میں ڈیجیٹل ویلبیئنگ اور روزانہ ایپ ٹائمر",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "مالک کی دیکھنے کی حد کا احترام کریں",
+          "paragraphs": [
+            "پیغام کی وجہ ٹائمر ہو تو مالک کا منتخب کردہ وقت مانیں۔ زیرِ انتظام پابندی کے بارے میں والدین یا آلے کے منتظم سے پوچھیں، کنٹرول ہٹانے یا خفیہ کوڈ تلاش کرنے کی کوشش نہ کریں۔ متعلقہ ٹائمر نہ ہو تو نجی معاونت کے لیے اصل پیغام، فون ماڈل اور پلیئر کا نام لکھیں۔ آلے کا ٹائمر، فراہم کنندہ کے پلان کی مدت اور بیک وقت رابطوں کی حد سے الگ ہے۔ استعمال کی حد کے نوٹس پر فوراً دوسرا پلان خریدنا، پلیئر دوبارہ نصب کرنا یا محفوظ رسائی مٹانا مفید پہلا قدم نہیں ہے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مؤقت التطبيق مع 5G Live IPTV: الأيقونة الباهتة إشارة من الجهاز",
+      "excerpt": "قد يغلق الحد اليومي في Pixel المشغل ويجعل أيقونته باهتة. اقرأ رسالة الهاتف قبل الخلط بين حد الاستخدام وانتهاء الاشتراك.",
+      "seo_title": "5G Live IPTV: مؤقت التطبيق والحد اليومي في Pixel",
+      "seo_description": "افحص مؤقتات الرفاهية الرقمية في Pixel عندما يغلق المشغل وتبهت أيقونته، وافصل قيود مالك الجهاز عن انتهاء خطة 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "اقرأ رسالة الهاتف أولاً",
+          "paragraphs": [
+            "يفيد فحص مؤقت التطبيق عند استخدام 5G Live IPTV إذا أغلق المشغل وأصبحت أيقونته باهتة على هاتف Pixel. اقرأ الرسالة وسجّل وقت ظهورها. قد يتعلق ذلك بحد استخدام الجهاز، لكن الأيقونة الباهتة وحدها ليست تشخيصاً. ميّز بين تطبيق لا يمكن فتحه وبرنامج يتوقف داخل مشغل مفتوح بالفعل. لا تؤكد أي من الملاحظتين وحدها انتهاء الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص الحد اليومي للتطبيق الصحيح",
+          "paragraphs": [
+            "توثّق Google مؤقتات التطبيقات في الإعدادات ثم الرفاهية الرقمية ثم مؤقتات التطبيقات على أجهزة Pixel المدعومة. افحص مؤقت المشغل المثبّت فعلاً، لا تطبيقاً آخر. تقول Google إن التطبيق يغلق وأيقونته تبهت عند نفاد الوقت المسموح؛ وتُعاد المؤقتات اليومية عند منتصف الليل. قد تختلف أسماء القوائم والتوافر، وقد لا تدعم بعض حسابات العمل أو الدراسة هذه المؤقتات. لا تغيّر ساعة الهاتف لفرض إعادة الضبط."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: الرفاهية الرقمية في Pixel ومؤقتات التطبيقات اليومية",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "احترم حد المشاهدة الذي اختاره المالك",
+          "paragraphs": [
+            "إذا فسّر المؤقت الرسالة، التزم بجدول المشاهدة الذي اختاره المالك. اسأل الوالد أو مسؤول الجهاز عن القيد المُدار بدلاً من إزالة أدوات التحكم أو البحث عن رمز سري. إذا لم يوجد مؤقت مناسب، فسجّل الرسالة الدقيقة وطراز الهاتف واسم المشغل للدعم الخاص. يختلف مؤقت الجهاز عن مدة خطة المزوّد وعدد الاتصالات المتزامنة المسموح بها. شراء خطة أخرى أو إعادة تثبيت المشغل أو مسح الوصول المحفوظ ليس استجابة أولى مفيدة لإشعار حد الاستخدام."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV ऐप टाइमर: धुंधला प्लेयर आइकन उपकरण का संकेत है",
+      "excerpt": "Pixel की रोज़ की ऐप सीमा प्लेयर बंद करके उसका आइकन धुंधला कर सकती है। फ़ोन का संदेश पढ़ें और उपयोग सीमा को सदस्यता समाप्त होने से अलग रखें।",
+      "seo_title": "5G Live IPTV ऐप टाइमर: Pixel की दैनिक सीमा जाँचें",
+      "seo_description": "प्लेयर बंद हो और आइकन धुंधला पड़े तो Pixel के डिजिटल वेलबीइंग ऐप टाइमर जाँचें; मालिक के उपयोग नियम और IPTV योजना की समाप्ति अलग हैं।",
+      "sections": [
+        {
+          "heading": "पहले फ़ोन का संदेश पढ़ें",
+          "paragraphs": [
+            "5G Live IPTV का ऐप टाइमर जाँचना तब उपयोगी है जब Pixel फ़ोन पर प्लेयर बंद हो जाए और उसका आइकन धुंधला पड़ जाए। संदेश पढ़ें और आने का समय लिखें। ऐसा व्यवहार उपकरण की उपयोग सीमा से जुड़ा हो सकता है, लेकिन अकेला धुंधला आइकन कारण तय नहीं करता। न खुलने वाले ऐप और पहले से खुले प्लेयर में रुकने वाले कार्यक्रम को अलग समझें। इनमें से कोई अवलोकन अकेले सदस्यता समाप्त होने की पुष्टि नहीं करता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सही ऐप की दैनिक सीमा देखें",
+          "paragraphs": [
+            "Google के अनुसार समर्थित Pixel उपकरणों में सेटिंग, डिजिटल वेलबीइंग और फिर ऐप टाइमर में यह सुविधा मिलती है। वास्तव में इंस्टॉल किए गए प्लेयर का टाइमर देखें, किसी दूसरे ऐप का नहीं। Google बताता है कि अनुमत समय खत्म होने पर ऐप बंद होता है और आइकन धुंधला पड़ता है; दैनिक टाइमर आधी रात को फिर शुरू होते हैं। मेनू के नाम और उपलब्धता बदल सकते हैं, और कुछ कार्यालय या विद्यालय खाते ये टाइमर समर्थित नहीं करते। जबरन रीसेट करने के लिए फ़ोन की घड़ी न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Pixel का डिजिटल वेलबीइंग और दैनिक ऐप टाइमर",
+              "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "मालिक की देखने की सीमा का सम्मान करें",
+          "paragraphs": [
+            "संदेश का कारण टाइमर हो तो मालिक का चुना समय मानें। प्रबंधित प्रतिबंध के बारे में माता-पिता या उपकरण प्रशासक से पूछें; नियंत्रण हटाने या पिन खोजने की कोशिश न करें। संबंधित टाइमर न हो तो निजी सहायता के लिए असली संदेश, फ़ोन मॉडल और प्लेयर का नाम लिखें। उपकरण का टाइमर, प्रदाता की योजना अवधि और साथ चलने वाले कनेक्शन की अनुमति से अलग है। उपयोग सीमा के संदेश पर तुरंत दूसरी योजना खरीदना, प्लेयर फिर इंस्टॉल करना या सुरक्षित पहुँच मिटाना उपयोगी पहला कदम नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: Pixel Digital Wellbeing and daily app timers",
+      "url": "https://support.google.com/pixelphone/answer/9137850?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-12",
+  "topic": "Identify a Fire TV notification sender and distinguish the Notification Center from a brief message inside an IPTV player before interpreting it as an account problem",
+  "primary_keyword": "Trex IPTV notifications",
+  "slug": "trex-fire-tv-notification-sender-versus-player-message",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV notifications: identify the message before reacting",
+      "excerpt": "A Fire TV popup may come from a different component than the player. Identify its sender and time before treating a message as an account or playback problem.",
+      "seo_title": "Trex IPTV notifications: check the Fire TV message sender",
+      "seo_description": "Read the sender of a Fire TV notification, compare any saved notice and separate player messages from Trex IPTV account or connection questions.",
+      "sections": [
+        {
+          "heading": "Read the sender and the wording",
+          "paragraphs": [
+            "When Trex IPTV notifications appear to interrupt viewing, first record the exact message and any named app or device component. A corner popup, a notice inside the player and a full-screen error are different observations. Note whether the programme kept moving and whether you had pressed a remote button. Avoid interpreting a message about another app as proof that the viewing account has expired."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Look in the device’s notification history",
+          "paragraphs": [
+            "Amazon documents a Notification Center under Fire TV Settings. If your device offers it, review the recent entry and compare its sender and time with what you saw. A brief message generated inside a player may not appear there, so an empty list does not prove that nothing happened. Menu wording varies with Fire TV software. Read the information before selecting an action that could leave the player; there is no need to disable every notification for this check."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: notifications on Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep access and device messages separate",
+          "paragraphs": [
+            "A notification by itself does not confirm an order, renew a plan or change its allowance. The current Trex plan permits one simultaneous connection; another installed app does not create an extra one. If the message remains unclear, send its wording and the Fire TV model through private support, hiding account details. Keep the original setup while you establish which component sent the notice, and ask about that specific component rather than replacing a subscription blindly."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Notificaciones de Trex IPTV: identifique el mensaje antes de actuar",
+      "excerpt": "Un aviso de Fire TV puede proceder de otro componente distinto del reproductor. Identifique el remitente y la hora antes de atribuirlo a la cuenta o la reproducción.",
+      "seo_title": "Notificaciones de Trex IPTV: identifique quién las envía",
+      "seo_description": "Lea el remitente del aviso de Fire TV, compare las notificaciones guardadas y distinga los mensajes del reproductor de las dudas sobre la cuenta Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Lea el remitente y el texto",
+          "paragraphs": [
+            "Cuando las notificaciones de Trex IPTV parecen interrumpir la visualización, registre primero el mensaje exacto y cualquier aplicación o componente nombrado. Un aviso en una esquina, un mensaje dentro del reproductor y un error a pantalla completa son observaciones distintas. Anote si el programa siguió avanzando y si había pulsado un botón del mando. No interprete un mensaje de otra aplicación como prueba de que la cuenta de visualización ha caducado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte el historial de notificaciones del dispositivo",
+          "paragraphs": [
+            "Amazon documenta un centro de notificaciones en los ajustes de Fire TV. Si su dispositivo lo ofrece, revise la entrada reciente y compare el remitente y la hora con lo observado. Un mensaje breve generado dentro del reproductor puede no aparecer allí; una lista vacía no demuestra que no ocurriera nada. Los nombres de los menús varían según el software. Lea la información antes de elegir una acción que pueda sacar del reproductor; esta comprobación no requiere desactivar todas las notificaciones."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: notificaciones en Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separe el acceso de los mensajes del dispositivo",
+          "paragraphs": [
+            "Una notificación por sí sola no confirma un pedido, renueva un plan ni modifica sus condiciones. El plan Trex actual permite una conexión simultánea; otra aplicación instalada no añade una más. Si el mensaje sigue sin estar claro, envíe su texto y el modelo de Fire TV al soporte privado, ocultando los datos de cuenta. Conserve la configuración original mientras averigua qué componente envió el aviso y pregunte por ese componente concreto en lugar de cambiar la suscripción a ciegas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Notifications Trex IPTV : identifiez le message avant de réagir",
+      "excerpt": "Une alerte Fire TV peut venir d’un autre composant que le lecteur. Identifiez son expéditeur et son heure avant d’y voir un problème de compte ou de lecture.",
+      "seo_title": "Notifications Trex IPTV : vérifiez l’origine de l’alerte",
+      "seo_description": "Lisez l’origine d’une notification Fire TV, comparez les avis enregistrés et distinguez les messages du lecteur des questions de compte ou de connexion Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Lisez l’expéditeur et le texte",
+          "paragraphs": [
+            "Lorsque des notifications Trex IPTV semblent interrompre le visionnage, relevez d’abord le message exact et toute application ou tout composant nommé. Une alerte dans un coin, un avis dans le lecteur et une erreur en plein écran sont des observations différentes. Notez si l’émission continuait et si vous aviez appuyé sur une touche de la télécommande. N’interprétez pas un message concernant une autre application comme la preuve de l’expiration du compte de visionnage."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consultez l’historique des notifications",
+          "paragraphs": [
+            "Amazon décrit un centre de notifications dans les paramètres Fire TV. Si votre appareil le propose, consultez l’entrée récente et comparez son expéditeur et son heure à votre observation. Un bref message créé dans le lecteur peut ne pas y figurer ; une liste vide ne prouve donc pas que rien ne s’est produit. Les intitulés varient selon le logiciel. Lisez les informations avant de choisir une action susceptible de quitter le lecteur ; désactiver toutes les notifications n’est pas nécessaire pour cette vérification."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : notifications sur Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez l’accès et les messages de l’appareil",
+          "paragraphs": [
+            "Une notification ne confirme pas à elle seule une commande, ne renouvelle pas un forfait et ne change pas ses limites. Le forfait Trex actuel autorise une connexion simultanée ; installer une autre application n’en ajoute pas. Si le message reste obscur, transmettez son texte et le modèle Fire TV au support privé en masquant les informations du compte. Conservez les réglages d’origine pendant l’identification de l’expéditeur et posez une question sur ce composant précis plutôt que de remplacer aveuglément l’abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Notifiche Trex IPTV: identifica il messaggio prima di reagire",
+      "excerpt": "Un avviso Fire TV può arrivare da un componente diverso dal lettore. Individua mittente e ora prima di attribuirlo a un problema di account o riproduzione.",
+      "seo_title": "Notifiche Trex IPTV: controlla il mittente su Fire TV",
+      "seo_description": "Leggi il mittente di un avviso Fire TV, confronta le notifiche salvate e distingui i messaggi del lettore dai problemi di account o connessione Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Leggi il mittente e il testo",
+          "paragraphs": [
+            "Quando le notifiche Trex IPTV sembrano interrompere la visione, annota prima il messaggio esatto e ogni app o componente indicato. Un avviso in un angolo, un messaggio nel lettore e un errore a schermo intero sono osservazioni diverse. Scrivi se il programma continuava e se avevi premuto un tasto del telecomando. Non interpretare un messaggio relativo a un’altra app come prova che l’account di visione sia scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta la cronologia delle notifiche del dispositivo",
+          "paragraphs": [
+            "Amazon documenta un centro notifiche nelle impostazioni di Fire TV. Se presente sul dispositivo, consulta la voce recente e confronta mittente e ora con quanto visto. Un messaggio breve generato nel lettore potrebbe non comparire lì; un elenco vuoto non dimostra che non sia successo nulla. I nomi dei menu variano con il software. Leggi le informazioni prima di scegliere un’azione che potrebbe farti uscire dal lettore; per questa verifica non occorre disattivare tutte le notifiche."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: notifiche su Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa l’accesso dai messaggi del dispositivo",
+          "paragraphs": [
+            "Una notifica da sola non conferma un ordine, rinnova un piano o ne cambia i limiti. Il piano Trex attuale consente una connessione simultanea; installare un’altra app non ne aggiunge una. Se il messaggio rimane poco chiaro, invia testo e modello di Fire TV all’assistenza privata, nascondendo i dati dell’account. Mantieni la configurazione originale mentre individui il componente che ha inviato l’avviso e chiedi informazioni su quello, invece di sostituire l’abbonamento alla cieca."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV meldingen: herken het bericht voordat je reageert",
+      "excerpt": "Een Fire TV melding kan van een ander onderdeel dan de speler komen. Controleer afzender en tijd voordat je een account- of afspeelprobleem veronderstelt.",
+      "seo_title": "Trex IPTV meldingen: controleer de Fire TV afzender",
+      "seo_description": "Lees de afzender van een Fire TV melding, vergelijk opgeslagen berichten en onderscheid spelermeldingen van vragen over je Trex IPTV account of verbinding.",
+      "sections": [
+        {
+          "heading": "Lees de afzender en de tekst",
+          "paragraphs": [
+            "Als Trex IPTV meldingen het kijken lijken te onderbreken, noteer dan eerst de precieze tekst en de genoemde app of het apparaatonderdeel. Een melding in een hoek, een bericht in de speler en een fout op het hele scherm zijn verschillende waarnemingen. Noteer of het programma bleef doorlopen en of je een afstandsbedieningsknop had ingedrukt. Zie een bericht over een andere app niet als bewijs dat het kijkaccount verlopen is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de meldingsgeschiedenis van het apparaat",
+          "paragraphs": [
+            "Amazon beschrijft een meldingscentrum onder de Fire TV instellingen. Als je apparaat dat heeft, bekijk de recente vermelding en vergelijk de afzender en tijd met wat je zag. Een kort bericht vanuit de speler verschijnt daar mogelijk niet; een lege lijst bewijst dus niet dat er niets gebeurde. Menunamen verschillen per softwareversie. Lees de informatie voordat je een actie kiest die de speler kan verlaten. Voor deze controle hoef je niet alle meldingen uit te schakelen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: meldingen op Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Houd toegang en apparaatberichten uit elkaar",
+          "paragraphs": [
+            "Een melding bevestigt op zichzelf geen bestelling, verlengt geen pakket en wijzigt geen limiet. Het huidige Trex pakket staat één gelijktijdige verbinding toe; een extra geïnstalleerde app voegt geen verbinding toe. Blijft het bericht onduidelijk, stuur dan de tekst en het Fire TV model naar particuliere ondersteuning en verberg accountgegevens. Behoud de oorspronkelijke instellingen terwijl je vaststelt welk onderdeel het bericht verstuurde. Vraag naar dat onderdeel in plaats van blind een ander abonnement te nemen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Notificações Trex IPTV: identifique a mensagem antes de agir",
+      "excerpt": "Um aviso do Fire TV pode vir de outro componente que não o leitor. Identifique o remetente e a hora antes de o atribuir à conta ou à reprodução.",
+      "seo_title": "Notificações Trex IPTV: verifique o remetente no Fire TV",
+      "seo_description": "Leia o remetente de uma notificação do Fire TV, compare avisos guardados e distinga mensagens do leitor de dúvidas sobre a conta ou ligação Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Leia o remetente e o texto",
+          "paragraphs": [
+            "Quando as notificações Trex IPTV parecem interromper a visualização, registe primeiro a mensagem exata e a aplicação ou componente indicado. Um aviso num canto, uma mensagem dentro do leitor e um erro em ecrã inteiro são observações diferentes. Anote se o programa continuou e se tinha premido algum botão do comando. Não interprete um aviso de outra aplicação como prova de que a conta de visualização expirou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte o histórico de notificações do dispositivo",
+          "paragraphs": [
+            "A Amazon documenta um centro de notificações nas definições do Fire TV. Se o dispositivo o disponibilizar, consulte a entrada recente e compare o remetente e a hora com o que viu. Uma mensagem breve gerada dentro do leitor pode não aparecer ali; uma lista vazia não prova que nada aconteceu. Os nomes dos menus variam com o software. Leia a informação antes de escolher uma ação que possa sair do leitor; esta verificação não exige desativar todas as notificações."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: notificações no Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separe o acesso das mensagens do dispositivo",
+          "paragraphs": [
+            "Uma notificação, por si só, não confirma uma encomenda, renova um plano nem altera os seus limites. O plano Trex atual permite uma ligação em simultâneo; outra aplicação instalada não acrescenta uma ligação. Se a mensagem continuar pouco clara, envie o texto e o modelo do Fire TV ao suporte privado, ocultando os dados da conta. Mantenha a configuração original enquanto identifica o componente que enviou o aviso e pergunte por esse componente, em vez de trocar de assinatura sem saber a causa."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Уведомления Trex IPTV: определите сообщение до действий",
+      "excerpt": "Уведомление Fire TV может прийти не от проигрывателя. Уточните отправителя и время, прежде чем связывать сообщение с учётной записью или воспроизведением.",
+      "seo_title": "Уведомления Trex IPTV: проверьте отправителя Fire TV",
+      "seo_description": "Прочитайте отправителя уведомления Fire TV, сравните сохранённую запись и отличайте сообщения проигрывателя от вопросов доступа или подключения Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Прочитайте отправителя и формулировку",
+          "paragraphs": [
+            "Если уведомления Trex IPTV будто прерывают просмотр, сначала запишите точный текст и названное приложение или компонент устройства. Всплывающее сообщение в углу, надпись внутри проигрывателя и полноэкранная ошибка — разные наблюдения. Отметьте, продолжалась ли передача и нажимали ли вы кнопку пульта. Не считайте сообщение о другом приложении доказательством истечения срока учётной записи для просмотра."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Посмотрите историю уведомлений устройства",
+          "paragraphs": [
+            "Amazon описывает центр уведомлений в настройках Fire TV. Если он доступен на вашем устройстве, найдите недавнюю запись и сравните отправителя и время с увиденным. Короткое сообщение из самого проигрывателя может там отсутствовать, поэтому пустой список не доказывает, что ничего не произошло. Названия меню различаются по версиям. Прочитайте сведения до выбора действия, которое может закрыть экран проигрывателя. Отключать все уведомления для такой проверки не нужно."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: уведомления на Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте доступ и сообщения устройства",
+          "paragraphs": [
+            "Уведомление само по себе не подтверждает заказ, не продлевает план и не меняет ограничения. Текущий план Trex разрешает одно одновременное подключение; установка другого приложения не добавляет ещё одно. Если смысл сообщения неясен, передайте его текст и модель Fire TV через личную поддержку, скрыв сведения учётной записи. Сохраняйте исходные настройки, пока выясняете источник уведомления, и задавайте вопрос об этом компоненте вместо слепой замены подписки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کی اطلاعات: ردعمل سے پہلے پیغام پہچانیں",
+      "excerpt": "Fire TV کا اچانک پیغام پلیئر کے بجائے کسی دوسرے حصے سے آ سکتا ہے۔ اسے اکاؤنٹ یا ویڈیو کا مسئلہ سمجھنے سے پہلے بھیجنے والے اور وقت کی شناخت کریں۔",
+      "seo_title": "Trex IPTV کی اطلاعات: Fire TV پر بھیجنے والا دیکھیں",
+      "seo_description": "Fire TV کی اطلاع کا بھیجنے والا پڑھیں، محفوظ پیغام سے موازنہ کریں اور پلیئر کے پیغام کو Trex IPTV اکاؤنٹ یا کنکشن کے سوال سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "بھیجنے والا اور الفاظ پڑھیں",
+          "paragraphs": [
+            "Trex IPTV کی اطلاعات دیکھنے میں خلل ڈالتی محسوس ہوں تو پہلے اصل عبارت اور بتائی گئی ایپ یا آلے کے حصے کا نام لکھیں۔ کونے میں نمودار ہونے والا پیغام، پلیئر کے اندر اطلاع اور پوری اسکرین پر خرابی الگ مشاہدے ہیں۔ لکھیں کہ پروگرام چلتا رہا یا نہیں اور کیا آپ نے ریموٹ کا بٹن دبایا تھا۔ کسی دوسری ایپ کے پیغام کو دیکھنے والے اکاؤنٹ کی مدت ختم ہونے کا ثبوت نہ سمجھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آلے کی اطلاعات کی تاریخ دیکھیں",
+          "paragraphs": [
+            "Amazon کی رہنمائی میں Fire TV کی ترتیبات کے اندر اطلاعات کا مرکز بیان کیا گیا ہے۔ آپ کے آلے میں ہو تو حالیہ اندراج دیکھ کر بھیجنے والے اور وقت کا اپنے مشاہدے سے موازنہ کریں۔ پلیئر کے اندر بننے والا مختصر پیغام وہاں نہیں بھی آ سکتا، اس لیے خالی فہرست کچھ نہ ہونے کا ثبوت نہیں۔ سافٹ ویئر کے مطابق مینو کے نام بدلتے ہیں۔ پلیئر سے باہر لے جانے والا عمل منتخب کرنے سے پہلے معلومات پڑھیں؛ اس جانچ کے لیے تمام اطلاعات بند کرنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV پر اطلاعات",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "رسائی اور آلے کے پیغامات الگ رکھیں",
+          "paragraphs": [
+            "صرف اطلاع آنے سے آرڈر کی تصدیق، پلان کی تجدید یا اس کی حد میں تبدیلی نہیں ہوتی۔ موجودہ Trex پلان ایک بیک وقت کنکشن کی اجازت دیتا ہے؛ دوسری ایپ نصب کرنے سے اضافی کنکشن نہیں ملتا۔ پیغام واضح نہ ہو تو اکاؤنٹ کی معلومات چھپا کر اس کی عبارت اور Fire TV ماڈل نجی معاونت کو بھیجیں۔ بھیجنے والے حصے کی شناخت تک اصل سیٹ اپ برقرار رکھیں اور بلا وجہ سبسکرپشن بدلنے کے بجائے اسی حصے کے بارے میں پوچھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إشعارات Trex IPTV: حدّد الرسالة قبل الاستجابة",
+      "excerpt": "قد يأتي إشعار Fire TV من مكوّن غير المشغل. حدّد المرسل والوقت قبل اعتباره مشكلة في الحساب أو التشغيل.",
+      "seo_title": "إشعارات Trex IPTV: افحص مرسل رسالة Fire TV",
+      "seo_description": "اقرأ مرسل إشعار Fire TV وقارنه بالرسائل المحفوظة، وافصل رسائل المشغل عن أسئلة حساب Trex IPTV أو الاتصال.",
+      "sections": [
+        {
+          "heading": "اقرأ المرسل والصياغة",
+          "paragraphs": [
+            "عندما تبدو إشعارات Trex IPTV وكأنها تقاطع المشاهدة، سجّل أولاً النص الدقيق وأي تطبيق أو مكوّن مذكور. النافذة في الزاوية، والتنبيه داخل المشغل، والخطأ بملء الشاشة ملاحظات مختلفة. دوّن هل استمر البرنامج في الحركة وهل ضغطت زرّاً في جهاز التحكم. لا تعتبر رسالة تخص تطبيقاً آخر دليلاً على انتهاء حساب المشاهدة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع سجل إشعارات الجهاز",
+          "paragraphs": [
+            "توثّق Amazon مركزاً للإشعارات ضمن إعدادات Fire TV. إن كان جهازك يتيحه، فراجع الإدخال الحديث وقارن مرسله ووقته بما شاهدته. قد لا تظهر هناك رسالة قصيرة أنشأها المشغل داخلياً، لذلك لا تثبت القائمة الفارغة أن شيئاً لم يحدث. تختلف أسماء القوائم حسب البرنامج. اقرأ المعلومات قبل اختيار إجراء قد يغادر المشغل؛ لا حاجة إلى تعطيل كل الإشعارات لإجراء هذا الفحص."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: الإشعارات على Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الوصول عن رسائل الجهاز",
+          "paragraphs": [
+            "لا يؤكد الإشعار وحده طلباً ولا يجدّد خطة ولا يغيّر حدودها. تسمح خطة Trex الحالية باتصال متزامن واحد؛ تثبيت تطبيق آخر لا يضيف اتصالاً. إذا ظلت الرسالة غير واضحة، فأرسل نصها وطراز Fire TV عبر الدعم الخاص مع إخفاء بيانات الحساب. احتفظ بالإعداد الأصلي أثناء تحديد المكوّن الذي أرسل التنبيه، واسأل عن ذلك المكوّن تحديداً بدلاً من استبدال الاشتراك دون معرفة السبب."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV की सूचनाएँ: प्रतिक्रिया से पहले संदेश पहचानें",
+      "excerpt": "Fire TV का पॉपअप प्लेयर के बजाय किसी दूसरे घटक से आ सकता है। उसे खाते या वीडियो की समस्या मानने से पहले भेजने वाला और समय पहचानें।",
+      "seo_title": "Trex IPTV की सूचनाएँ: Fire TV पर भेजने वाला जाँचें",
+      "seo_description": "Fire TV की सूचना का स्रोत पढ़ें, सहेजे संदेश से तुलना करें और प्लेयर के संदेश को Trex IPTV खाते या कनेक्शन के प्रश्न से अलग रखें।",
+      "sections": [
+        {
+          "heading": "भेजने वाला और संदेश पढ़ें",
+          "paragraphs": [
+            "Trex IPTV की सूचनाएँ देखने में बाधा डालती लगें तो पहले ठीक वही संदेश और बताए गए ऐप या डिवाइस घटक का नाम लिखें। कोने का पॉपअप, प्लेयर के अंदर संदेश और पूरी स्क्रीन की त्रुटि अलग अवलोकन हैं। लिखें कि कार्यक्रम चलता रहा या नहीं और क्या आपने रिमोट का बटन दबाया था। दूसरे ऐप के संदेश को देखने वाले खाते की अवधि समाप्त होने का प्रमाण न मानें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "डिवाइस की सूचना सूची देखें",
+          "paragraphs": [
+            "Amazon Fire TV की सेटिंग में सूचना केंद्र का वर्णन करता है। आपके डिवाइस में उपलब्ध हो तो हाल की प्रविष्टि देखें और उसके स्रोत तथा समय की देखे गए संदेश से तुलना करें। प्लेयर के अंदर बनाया गया छोटा संदेश वहाँ नहीं भी दिख सकता, इसलिए खाली सूची का मतलब यह नहीं कि कुछ हुआ ही नहीं। सॉफ़्टवेयर के अनुसार मेनू के नाम बदलते हैं। प्लेयर से बाहर ले जाने वाली क्रिया चुनने से पहले जानकारी पढ़ें; इस जाँच के लिए सभी सूचनाएँ बंद करना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV पर सूचनाएँ",
+              "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+            }
+          ]
+        },
+        {
+          "heading": "पहुँच और डिवाइस के संदेश अलग रखें",
+          "paragraphs": [
+            "अकेली सूचना किसी ऑर्डर की पुष्टि, प्लान का नवीनीकरण या उसकी सीमा नहीं बदलती। मौजूदा Trex प्लान एक साथ एक कनेक्शन देता है; दूसरा ऐप इंस्टॉल करने से अतिरिक्त कनेक्शन नहीं मिलता। संदेश स्पष्ट न हो तो खाते की जानकारी छिपाकर उसका पाठ और Fire TV मॉडल निजी सहायता को भेजें। भेजने वाले घटक की पहचान करते समय मूल सेटअप बनाए रखें और बिना कारण सदस्यता बदलने के बजाय उसी घटक के बारे में पूछें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: notifications on Fire TV",
+      "url": "https://developer.amazon.com/docs/fire-tv/notifications.html"
+    }
+  ]
+}

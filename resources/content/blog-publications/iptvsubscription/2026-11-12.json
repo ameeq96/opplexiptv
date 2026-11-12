@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-12",
+  "topic": "Compare IPTV Subscription provider and duration in clearly labelled public browser tabs while separating private checkout links and unresolved plan conditions",
+  "primary_keyword": "IPTV Subscription plan comparison",
+  "slug": "iptvsubscription-plan-comparison-public-tabs-provider-duration",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription plan comparison: keep provider and duration together",
+      "excerpt": "Compare the same provider and term in clearly identified public tabs. Keep the displayed amount, player costs and unanswered connection questions together before checkout.",
+      "seo_title": "IPTV Subscription plan comparison: provider, term and tabs",
+      "seo_description": "Compare Opplex and Filex terms with clearly identified public Chrome tabs, keep private links out of shared notes and confirm missing plan details before ordering.",
+      "sections": [
+        {
+          "heading": "Match the same service and term",
+          "paragraphs": [
+            "An IPTV Subscription plan comparison is easier when each note begins with the provider and duration. Opplex and Filex are separate options on this website, with one-, three-, six- and twelve-month terms. A short-term amount beside a yearly amount is not a like-for-like comparison. Record the full displayed total and currency, the term and any stated conditions together; do not calculate a final quote from a partial screenshot."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep public comparison pages easy to identify",
+          "paragraphs": [
+            "In desktop Chrome, open a relevant public link in another tab with Ctrl-click on Windows or Linux, or Command-click on Mac. Google also documents naming and grouping tabs. Give a group a plain label such as Plan comparison if that helps you return to the right page. Keep private checkout or account links out of shared notes. An open tab preserves an address, not a reserved offer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: manage tabs on a computer",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Resolve the missing terms before ordering",
+          "paragraphs": [
+            "Confirm which player works with your exact device and whether its own fee is separate. The listed Opplex plan allows one simultaneous connection; do not transfer that allowance to Filex, whose connection terms need confirmation. When two pages appear inconsistent, send the public addresses and your provider-and-duration question to support before paying. Use the final order details as the purchase check, rather than a tab title or an earlier comparison note."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comparar planes de IPTV Subscription: proveedor y duración juntos",
+      "excerpt": "Compare el mismo proveedor y período en pestañas públicas bien identificadas. Reúna el importe mostrado, los costes del reproductor y las dudas sobre conexiones antes de comprar.",
+      "seo_title": "Planes de IPTV Subscription: comparar proveedor y duración",
+      "seo_description": "Compare los períodos de Opplex y Filex en pestañas públicas de Chrome, excluya enlaces privados de las notas compartidas y confirme los detalles pendientes antes de comprar.",
+      "sections": [
+        {
+          "heading": "Compare el mismo servicio y período",
+          "paragraphs": [
+            "Comparar planes de IPTV Subscription resulta más sencillo si cada nota empieza por el proveedor y la duración. Opplex y Filex son opciones distintas en esta web, con períodos de uno, tres, seis y doce meses. Poner un importe de corto plazo junto a uno anual no permite comparar condiciones equivalentes. Anote juntos el total completo mostrado y su moneda, el período y las condiciones indicadas; no calcule una oferta final a partir de una captura incompleta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Identifique claramente las páginas públicas de comparación",
+          "paragraphs": [
+            "En Chrome para ordenador, abra un enlace público pertinente en otra pestaña con Ctrl y clic en Windows o Linux, o Comando y clic en Mac. Google también explica cómo nombrar y agrupar pestañas. Ponga al grupo una etiqueta sencilla, como Comparación de planes, si le ayuda a volver a la página correcta. No incluya enlaces privados de pago o cuenta en notas compartidas. Una pestaña abierta conserva una dirección, no reserva una oferta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Chrome: gestionar pestañas en un ordenador",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Aclare las condiciones pendientes antes de comprar",
+          "paragraphs": [
+            "Confirme qué reproductor sirve para el modelo exacto de su dispositivo y si tiene un coste aparte. El plan Opplex indicado permite una conexión simultánea; no atribuya ese límite a Filex, cuyas condiciones de conexión deben confirmarse. Si dos páginas parecen contradecirse, envíe al soporte sus direcciones públicas y la pregunta sobre proveedor y duración antes de pagar. Compruebe la compra con los detalles finales del pedido, no con el título de una pestaña ni una nota anterior."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Comparer les forfaits IPTV Subscription : fournisseur et durée ensemble",
+      "excerpt": "Comparez le même fournisseur et la même durée dans des onglets publics clairement identifiés. Regroupez montant affiché, coût du lecteur et questions de connexion avant l'achat.",
+      "seo_title": "IPTV Subscription : comparer fournisseur, durée et forfait",
+      "seo_description": "Comparez les durées Opplex et Filex dans des onglets publics Chrome, excluez les liens privés des notes partagées et clarifiez les conditions avant de commander.",
+      "sections": [
+        {
+          "heading": "Comparez le même service sur la même durée",
+          "paragraphs": [
+            "La comparaison des forfaits IPTV Subscription devient plus simple si chaque note commence par le fournisseur et la durée. Opplex et Filex sont deux options distinctes du site, proposées sur un, trois, six et douze mois. Un montant de courte durée placé à côté d'un montant annuel ne constitue pas une comparaison équivalente. Notez ensemble le total complet affiché, sa devise, la durée et les conditions précisées ; ne déduisez pas un devis final d'une capture incomplète."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Identifiez les pages publiques de comparaison",
+          "paragraphs": [
+            "Dans Chrome sur ordinateur, ouvrez un lien public pertinent dans un autre onglet avec Ctrl et un clic sous Windows ou Linux, ou Commande et un clic sur Mac. Google explique aussi comment nommer et regrouper les onglets. Un nom simple, comme Comparaison des forfaits, peut aider à retrouver la bonne page. Excluez les liens privés de paiement ou de compte des notes partagées. Un onglet ouvert conserve une adresse, pas une offre réservée."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Chrome : gérer les onglets sur ordinateur",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Clarifiez les conditions manquantes avant de commander",
+          "paragraphs": [
+            "Confirmez le lecteur adapté au modèle exact de votre appareil et l'existence éventuelle de frais séparés. Le forfait Opplex indiqué autorise une connexion simultanée ; n'attribuez pas cette limite à Filex, dont les conditions doivent être confirmées. Si deux pages semblent incohérentes, envoyez au support leurs adresses publiques et votre question sur le fournisseur et la durée avant de payer. Vérifiez l'achat avec les détails définitifs de la commande, plutôt qu'avec un titre d'onglet ou une ancienne note."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Confronto piani IPTV Subscription: unire fornitore e durata",
+      "excerpt": "Confronta lo stesso fornitore e periodo in schede pubbliche riconoscibili. Tieni insieme importo mostrato, costi del lettore e dubbi sulle connessioni prima dell'acquisto.",
+      "seo_title": "IPTV Subscription: confronto tra fornitore e durata",
+      "seo_description": "Confronta le durate Opplex e Filex in schede pubbliche di Chrome, escludi i collegamenti privati dalle note condivise e chiarisci le condizioni prima di ordinare.",
+      "sections": [
+        {
+          "heading": "Confronta lo stesso servizio e periodo",
+          "paragraphs": [
+            "Il confronto dei piani IPTV Subscription è più semplice se ogni nota inizia con fornitore e durata. Opplex e Filex sono opzioni distinte di questo sito, con periodi di uno, tre, sei e dodici mesi. Un importo per un periodo breve accanto a uno annuale non è un confronto a parità di condizioni. Annota insieme il totale completo mostrato e la valuta, la durata e le condizioni indicate; non ricavare un preventivo finale da una schermata parziale."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Riconosci le pagine pubbliche del confronto",
+          "paragraphs": [
+            "In Chrome per computer, apri un collegamento pubblico pertinente in un'altra scheda con Ctrl e clic su Windows o Linux, oppure Comando e clic su Mac. Google spiega anche come assegnare nomi e raggruppare le schede. Un nome semplice, come Confronto piani, può aiutarti a ritrovare la pagina giusta. Escludi collegamenti privati al pagamento o all'account dalle note condivise. Una scheda aperta conserva un indirizzo, non riserva un'offerta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google Chrome: gestire le schede sul computer",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Chiarisci le condizioni mancanti prima di ordinare",
+          "paragraphs": [
+            "Conferma quale lettore funziona con il modello esatto del dispositivo e se ha un costo separato. Il piano Opplex indicato consente una connessione simultanea; non attribuire questo limite a Filex, le cui condizioni di connessione vanno confermate. Se due pagine sembrano incoerenti, invia all'assistenza gli indirizzi pubblici e la domanda su fornitore e durata prima di pagare. Verifica l'acquisto con i dettagli finali dell'ordine, non con il titolo di una scheda o una vecchia nota di confronto."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-abonnementen vergelijken: aanbieder en looptijd samen",
+      "excerpt": "Vergelijk dezelfde aanbieder en looptijd in herkenbare openbare tabbladen. Houd het getoonde bedrag, spelerkosten en open vragen over verbindingen bijeen voordat u bestelt.",
+      "seo_title": "IPTV Subscription vergelijken: aanbieder en looptijd",
+      "seo_description": "Vergelijk Opplex en Filex in openbare Chrome-tabbladen, houd privélinks buiten gedeelde notities en bevestig ontbrekende voorwaarden voordat u bestelt.",
+      "sections": [
+        {
+          "heading": "Vergelijk dezelfde dienst en looptijd",
+          "paragraphs": [
+            "IPTV Subscription-abonnementen vergelijken wordt eenvoudiger wanneer elke notitie begint met de aanbieder en looptijd. Opplex en Filex zijn afzonderlijke opties op deze website, met perioden van één, drie, zes en twaalf maanden. Een kortlopend bedrag naast een jaarbedrag is geen gelijkwaardige vergelijking. Noteer het volledige getoonde totaal en de valuta, de looptijd en alle vermelde voorwaarden bij elkaar; bereken geen definitieve offerte uit een onvolledige schermafbeelding."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd openbare vergelijkingspagina's herkenbaar",
+          "paragraphs": [
+            "Open in Chrome op een computer een relevante openbare link in een ander tabblad met Ctrl en klikken op Windows of Linux, of Command en klikken op Mac. Google beschrijft ook hoe u tabbladen namen geeft en groepeert. Een eenvoudige groepsnaam, zoals Abonnementen vergelijken, helpt eventueel de juiste pagina terug te vinden. Houd privélinks voor betalen of accounts buiten gedeelde notities. Een open tabblad bewaart een adres, geen gereserveerde aanbieding."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help: tabbladen beheren op een computer",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Bevestig ontbrekende voorwaarden vóór de bestelling",
+          "paragraphs": [
+            "Controleer welke speler met uw exacte apparaatmodel werkt en of daarvoor aparte kosten gelden. Het vermelde Opplex-abonnement staat één gelijktijdige verbinding toe; neem die limiet niet over voor Filex, waarvan de verbindingsvoorwaarden bevestigd moeten worden. Lijken twee pagina's tegenstrijdig, stuur dan hun openbare adressen en uw vraag over aanbieder en looptijd naar ondersteuning voordat u betaalt. Controleer de aankoop aan de hand van de definitieve bestelgegevens, niet een tabbladtitel of een eerdere vergelijkingsnotitie."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Comparar planos IPTV Subscription: fornecedor e duração juntos",
+      "excerpt": "Compare o mesmo fornecedor e período em separadores públicos bem identificados. Reúna o valor apresentado, custos do leitor e dúvidas sobre ligações antes de comprar.",
+      "seo_title": "IPTV Subscription: comparar fornecedor e duração dos planos",
+      "seo_description": "Compare os períodos Opplex e Filex em separadores públicos do Chrome, exclua ligações privadas das notas partilhadas e confirme os detalhes antes de encomendar.",
+      "sections": [
+        {
+          "heading": "Compare o mesmo serviço e período",
+          "paragraphs": [
+            "Comparar planos IPTV Subscription é mais simples quando cada nota começa pelo fornecedor e pela duração. Opplex e Filex são opções distintas neste site, com períodos de um, três, seis e doze meses. Um valor de curto prazo ao lado de um anual não permite comparar condições equivalentes. Registe juntos o total completo apresentado e a moeda, o período e as condições indicadas; não calcule uma proposta final a partir de uma captura incompleta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Identifique as páginas públicas de comparação",
+          "paragraphs": [
+            "No Chrome para computador, abra uma ligação pública relevante noutro separador com Ctrl e clique no Windows ou Linux, ou Comando e clique no Mac. O Google também explica como dar nomes e agrupar separadores. Um nome simples, como Comparação de planos, pode ajudar a regressar à página certa. Exclua ligações privadas de pagamento ou conta das notas partilhadas. Um separador aberto guarda um endereço, não reserva uma oferta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Chrome: gerir separadores num computador",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Esclareça condições em falta antes de encomendar",
+          "paragraphs": [
+            "Confirme o leitor adequado ao modelo exato do seu dispositivo e se tem um custo separado. O plano Opplex indicado permite uma ligação simultânea; não atribua esse limite ao Filex, cujas condições de ligação precisam de confirmação. Se duas páginas parecerem inconsistentes, envie ao apoio os endereços públicos e a pergunta sobre fornecedor e duração antes de pagar. Verifique a compra pelos detalhes finais da encomenda, não pelo título de um separador ou por uma nota anterior de comparação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Сравнение планов IPTV Subscription: провайдер и срок вместе",
+      "excerpt": "Сравнивайте одного провайдера и одинаковый срок в ясно обозначенных открытых вкладках. До покупки соберите сумму, расходы на плеер и вопросы о подключениях.",
+      "seo_title": "IPTV Subscription: сравнение провайдеров и сроков",
+      "seo_description": "Сравнивайте сроки Opplex и Filex в общедоступных вкладках Chrome, исключайте личные ссылки из общих заметок и уточняйте условия до заказа.",
+      "sections": [
+        {
+          "heading": "Сопоставляйте одинаковую услугу и срок",
+          "paragraphs": [
+            "Сравнение планов IPTV Subscription проще, если каждая заметка начинается с провайдера и срока. Opplex и Filex — отдельные варианты на этом сайте со сроками один, три, шесть и двенадцать месяцев. Краткосрочная сумма рядом с годовой не означает сравнение равных условий. Записывайте вместе полную показанную сумму, валюту, срок и указанные условия; не выводите окончательное предложение из неполного снимка экрана."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Различайте общедоступные страницы сравнения",
+          "paragraphs": [
+            "В Chrome на компьютере откройте нужную общедоступную ссылку в другой вкладке сочетанием Ctrl и щелчка в Windows или Linux либо Command и щелчка на Mac. Google также описывает присвоение названий и группировку вкладок. Простое имя группы, например Сравнение планов, поможет вернуться к нужной странице. Не включайте личные ссылки на оплату или аккаунт в общие заметки. Открытая вкладка сохраняет адрес, а не резервирует предложение."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Chrome: управление вкладками на компьютере",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Уточняйте недостающие условия до заказа",
+          "paragraphs": [
+            "Узнайте, какой плеер подходит точной модели устройства и взимается ли за него отдельная плата. Указанный план Opplex допускает одно одновременное подключение; не переносите этот лимит на Filex, условия подключений которого требуют подтверждения. Если две страницы кажутся противоречивыми, отправьте поддержке их общедоступные адреса и вопрос о провайдере и сроке до оплаты. Сверяйте покупку с окончательными сведениями заказа, а не названием вкладки или старой заметкой сравнения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription منصوبوں کا موازنہ: فراہم کنندہ اور مدت ساتھ رکھیں",
+      "excerpt": "واضح شناخت والے عوامی صفحات میں ایک ہی فراہم کنندہ اور مدت کا موازنہ کریں۔ خریداری سے پہلے دکھائی گئی رقم، پلیئر کے اخراجات اور کنکشن کے سوالات ساتھ لکھیں۔",
+      "seo_title": "IPTV Subscription: فراہم کنندہ اور مدت کا موازنہ",
+      "seo_description": "Chrome کے عوامی ٹیبز میں Opplex اور Filex کی مدت کا موازنہ کریں، مشترکہ نوٹس سے نجی روابط الگ رکھیں اور آرڈر سے پہلے نامکمل شرائط کی تصدیق کریں۔",
+      "sections": [
+        {
+          "heading": "ایک ہی سروس اور مدت کا موازنہ کریں",
+          "paragraphs": [
+            "IPTV Subscription منصوبوں کا موازنہ اس وقت آسان ہوتا ہے جب ہر نوٹ فراہم کنندہ اور مدت سے شروع ہو۔ اس ویب سائٹ پر Opplex اور Filex الگ اختیارات ہیں، جن کی مدت ایک، تین، چھ اور بارہ ماہ ہے۔ مختصر مدت کی رقم کو سالانہ رقم کے ساتھ رکھنا یکساں شرائط کا موازنہ نہیں۔ پوری دکھائی گئی مجموعی رقم اور کرنسی، مدت اور بتائی گئی شرائط اکٹھی لکھیں؛ ادھورے اسکرین شاٹ سے حتمی پیشکش کا حساب نہ لگائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "عوامی موازنے والے صفحات کی شناخت واضح رکھیں",
+          "paragraphs": [
+            "کمپیوٹر پر Chrome میں متعلقہ عوامی ربط دوسرے ٹیب میں کھولنے کے لیے Windows یا Linux پر Ctrl کے ساتھ کلک، یا Mac پر Command کے ساتھ کلک کریں۔ Google ٹیبز کو نام دینے اور گروپ بنانے کا طریقہ بھی بتاتا ہے۔ درست صفحے پر واپس آنے میں مدد ہو تو گروپ کا سادہ نام، مثلاً منصوبوں کا موازنہ، رکھیں۔ ادائیگی یا اکاؤنٹ کے نجی روابط مشترکہ نوٹس میں نہ رکھیں۔ کھلا ٹیب ایک پتہ محفوظ رکھتا ہے، کوئی پیشکش مختص نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome کی مدد: کمپیوٹر پر ٹیبز کا انتظام",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "آرڈر سے پہلے نامکمل شرائط واضح کریں",
+          "paragraphs": [
+            "تصدیق کریں کہ آپ کے آلے کے عین ماڈل کے لیے کون سا پلیئر مناسب ہے اور کیا اس کی الگ فیس ہے۔ درج Opplex منصوبے میں ایک بیک وقت کنکشن کی اجازت ہے؛ یہ حد Filex پر لاگو نہ سمجھیں، جس کے کنکشن کی شرائط کی تصدیق ضروری ہے۔ دو صفحات مختلف بات کہیں تو ادائیگی سے پہلے ان کے عوامی پتے اور فراہم کنندہ و مدت کا سوال معاونت کو بھیجیں۔ خریداری کو حتمی آرڈر کی تفصیل سے جانچیں، ٹیب کے عنوان یا پرانے موازنے کے نوٹ سے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مقارنة خطط IPTV Subscription: اجمع المزوّد والمدة معاً",
+      "excerpt": "قارن المزوّد نفسه والمدة نفسها في علامات تبويب عامة واضحة. اجمع المبلغ المعروض وتكاليف المشغّل والأسئلة عن الاتصالات قبل الشراء.",
+      "seo_title": "IPTV Subscription: مقارنة المزوّد ومدة الخطة",
+      "seo_description": "قارن مدد Opplex وFilex في علامات Chrome العامة، واستبعد الروابط الخاصة من الملاحظات المشتركة، وأكّد تفاصيل الخطة الناقصة قبل الطلب.",
+      "sections": [
+        {
+          "heading": "قارن الخدمة نفسها والمدة نفسها",
+          "paragraphs": [
+            "تصبح مقارنة خطط IPTV Subscription أسهل عندما تبدأ كل ملاحظة بالمزوّد والمدة. يُعدّ Opplex وFilex خيارين منفصلين على هذا الموقع، بمدد شهر وثلاثة وستة واثني عشر شهراً. وضع مبلغ لفترة قصيرة بجانب مبلغ سنوي ليس مقارنة لشروط متكافئة. سجّل معاً الإجمالي الكامل المعروض وعملته والمدة والشروط المذكورة؛ ولا تستنتج عرضاً نهائياً من لقطة شاشة جزئية."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ميّز صفحات المقارنة العامة بوضوح",
+          "paragraphs": [
+            "في Chrome على الكمبيوتر، افتح رابطاً عاماً مناسباً في علامة تبويب أخرى بالضغط على Ctrl مع النقر في Windows أو Linux، أو Command مع النقر في Mac. ويوثّق Google أيضاً تسمية علامات التبويب وتجميعها. سمِّ المجموعة اسماً بسيطاً مثل مقارنة الخطط إذا ساعدك على العودة إلى الصفحة الصحيحة. استبعد روابط الدفع أو الحساب الخاصة من الملاحظات المشتركة. تحتفظ علامة التبويب المفتوحة بعنوان، ولا تحجز عرضاً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Chrome: إدارة علامات التبويب على الكمبيوتر",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "وضّح الشروط الناقصة قبل الطلب",
+          "paragraphs": [
+            "أكّد المشغّل المناسب لطراز جهازك بالضبط وما إذا كانت له رسوم منفصلة. تسمح خطة Opplex المذكورة باتصال متزامن واحد؛ لا تنقل هذا الحد إلى Filex، إذ تحتاج شروط اتصالاته إلى تأكيد. إذا بدت صفحتان متعارضتين، أرسل إلى الدعم عنوانيهما العامين وسؤالك عن المزوّد والمدة قبل الدفع. تحقّق من الشراء باستخدام تفاصيل الطلب النهائية، لا عنوان علامة تبويب أو ملاحظة مقارنة سابقة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription योजनाओं की तुलना: प्रदाता और अवधि साथ रखें",
+      "excerpt": "स्पष्ट पहचान वाले सार्वजनिक टैब में समान प्रदाता और अवधि की तुलना करें। खरीदने से पहले दिखी राशि, प्लेयर का खर्च और कनेक्शन संबंधी सवाल साथ लिखें।",
+      "seo_title": "IPTV Subscription: प्रदाता और अवधि की तुलना",
+      "seo_description": "Chrome के सार्वजनिक टैब में Opplex और Filex की अवधि की तुलना करें, साझा नोट्स से निजी लिंक अलग रखें और ऑर्डर से पहले अधूरी शर्तें स्पष्ट करें।",
+      "sections": [
+        {
+          "heading": "समान सेवा और अवधि की तुलना करें",
+          "paragraphs": [
+            "IPTV Subscription योजनाओं की तुलना तब आसान होती है जब हर नोट प्रदाता और अवधि से शुरू हो। इस वेबसाइट पर Opplex और Filex अलग विकल्प हैं, जिनकी अवधि एक, तीन, छह और बारह महीने है। छोटी अवधि की राशि के पास सालाना राशि रखना समान शर्तों की तुलना नहीं है। दिखाई गई पूरी कुल राशि और मुद्रा, अवधि तथा बताई गई शर्तें एक साथ लिखें; अधूरे स्क्रीनशॉट से अंतिम प्रस्ताव की गणना न करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सार्वजनिक तुलना वाले पन्नों को पहचानना आसान रखें",
+          "paragraphs": [
+            "कंप्यूटर के Chrome में संबंधित सार्वजनिक लिंक दूसरे टैब में खोलने के लिए Windows या Linux पर Ctrl के साथ क्लिक, या Mac पर Command के साथ क्लिक करें। Google टैब के नाम रखने और समूह बनाने का तरीका भी बताता है। सही पन्ने पर लौटने में मदद हो तो समूह का सरल नाम, जैसे योजनाओं की तुलना, रखें। भुगतान या खाते के निजी लिंक साझा नोट्स में न जोड़ें। खुला टैब एक पता बचाकर रखता है, कोई प्रस्ताव आरक्षित नहीं करता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome सहायता: कंप्यूटर पर टैब व्यवस्थित करना",
+              "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "ऑर्डर से पहले अधूरी शर्तें स्पष्ट करें",
+          "paragraphs": [
+            "पुष्टि करें कि आपके डिवाइस के सटीक मॉडल के लिए कौन सा प्लेयर उपयुक्त है और उसका शुल्क अलग है या नहीं। दी गई Opplex योजना में एक साथ एक कनेक्शन की अनुमति है; इस सीमा को Filex पर लागू न मानें, जिसकी कनेक्शन शर्तों की पुष्टि चाहिए। दो पन्ने विरोधी लगें तो भुगतान से पहले उनके सार्वजनिक पते और प्रदाता व अवधि वाला सवाल सहायता को भेजें। खरीद को अंतिम ऑर्डर विवरण से जाँचें, किसी टैब के शीर्षक या पुराने तुलना नोट से नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: manage tabs on a computer",
+      "url": "https://support.google.com/chrome/answer/2391819?hl=en&co=GENIE.Platform%3DDesktop"
+    }
+  ]
+}

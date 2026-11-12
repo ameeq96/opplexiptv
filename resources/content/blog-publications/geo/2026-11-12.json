@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-12",
+  "topic": "Check a television or universal remote HDMI-CEC control path to Apple TV separately from Geo IPTV player navigation and playback",
+  "primary_keyword": "Geo IPTV television remote",
+  "slug": "geo-television-remote-hdmi-cec-versus-player",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV television remote: check HDMI-CEC before the player",
+      "excerpt": "A television remote and an Apple TV remote control different parts of your setup. Check the equipment path before interpreting missed navigation as a playback failure.",
+      "seo_title": "Geo IPTV television remote: Apple TV HDMI-CEC checks",
+      "seo_description": "Check television and universal remote navigation, HDMI-CEC support and the connected port before treating an Apple TV control problem as a Geo IPTV outage.",
+      "sections": [
+        {
+          "heading": "Identify which control has stopped",
+          "paragraphs": [
+            "A Geo IPTV television remote check starts with the remote in your hand. A television or universal remote controlling Apple TV is different from the Apple TV remote controlling the television. Note whether the TV still changes its own menus while Apple TV navigation does not respond. Also record whether the programme continues playing. A missing navigation command alone does not demonstrate a service-wide outage or an expired plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the documented equipment path",
+          "paragraphs": [
+            "Apple explains that compatible televisions or receivers can control Apple TV through HDMI-CEC. Check the television or receiver manual for support, the connected HDMI port and the relevant enabled setting. Manufacturers use different labels, including names ending in Link or Sync. Use the equipment’s original remote to inspect its menu. Do not assume every port or universal remote supports the same commands. Ordinary infrared control also needs a clear path to the receiving equipment."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: television and universal remote control of Apple TV",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Keep navigation and viewing results separate",
+          "paragraphs": [
+            "Try one ordinary Home Screen navigation command after an owner-approved equipment adjustment, then compare with the player. If Home Screen input works but playback fails, describe that separate symptom. Give private support the remote, television and receiver models plus the connection path and exact failed action. Hide account and playlist details. Learning a new remote or clearing player data is unnecessary merely to collect these observations; keep useful settings intact."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Mando del televisor con Geo IPTV: comprueba HDMI-CEC antes del reproductor",
+      "excerpt": "El mando del televisor y el del Apple TV controlan partes distintas del equipo. Revisa la conexión antes de interpretar una pulsación ignorada como un fallo de reproducción.",
+      "seo_title": "Geo IPTV: mando del televisor y HDMI-CEC del Apple TV",
+      "seo_description": "Comprueba la navegación del mando universal, la compatibilidad HDMI-CEC y el puerto conectado antes de interpretar un problema de control como una caída de Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica qué control ha dejado de responder",
+          "paragraphs": [
+            "Para comprobar el mando del televisor al usar Geo IPTV, empieza por el mando que tienes en la mano. Controlar el Apple TV con un mando de televisión o universal es distinto de controlar el televisor con el mando del Apple TV. Anota si los menús propios del televisor todavía responden mientras la navegación del Apple TV falla. Indica también si el programa sigue reproduciéndose. Una orden de navegación ignorada no demuestra por sí sola una caída general ni un plan caducado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa la conexión documentada del equipo",
+          "paragraphs": [
+            "Apple explica que los televisores o receptores compatibles pueden controlar el Apple TV mediante HDMI-CEC. Consulta el manual para confirmar la compatibilidad, el puerto HDMI conectado y el ajuste correspondiente activado. Los fabricantes emplean nombres distintos, incluidos algunos terminados en Link o Sync. Usa el mando original del equipo para revisar su menú. No supongas que todos los puertos o mandos universales admiten las mismas órdenes. El control infrarrojo normal también necesita una trayectoria despejada hasta el receptor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: controlar el Apple TV con un mando de televisión o universal",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la navegación del resultado de reproducción",
+          "paragraphs": [
+            "Tras un ajuste del equipo autorizado por su propietario, prueba una orden habitual en la pantalla de inicio y compárala con el reproductor. Si la navegación funciona pero la reproducción falla, describe ese síntoma por separado. Envía al soporte privado los modelos de mando, televisor y receptor, la conexión y la acción exacta que falla. Oculta los datos de cuenta y lista. No hace falta aprender otro mando ni borrar datos del reproductor solo para recoger estas observaciones; conserva los ajustes útiles."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Télécommande du téléviseur avec Geo IPTV : vérifier HDMI-CEC d’abord",
+      "excerpt": "La télécommande du téléviseur et celle de l’Apple TV commandent des éléments différents. Vérifiez leur liaison avant d’interpréter une commande ignorée comme une panne de lecture.",
+      "seo_title": "Geo IPTV : télécommande TV et vérifications HDMI-CEC",
+      "seo_description": "Vérifiez la navigation d’une télécommande universelle, la prise HDMI et la compatibilité HDMI-CEC avant d’attribuer un problème de commande à Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Identifier la commande qui ne répond plus",
+          "paragraphs": [
+            "Pour vérifier la télécommande du téléviseur avec Geo IPTV, commencez par celle que vous tenez. Commander l’Apple TV avec une télécommande TV ou universelle est différent de commander le téléviseur avec la télécommande Apple TV. Notez si les menus propres au téléviseur répondent encore tandis que la navigation de l’Apple TV échoue. Indiquez aussi si le programme continue. Une seule commande ignorée ne démontre ni panne générale du service ni expiration du forfait."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifier la liaison documentée du matériel",
+          "paragraphs": [
+            "Apple indique que les téléviseurs ou amplificateurs compatibles peuvent commander l’Apple TV par HDMI-CEC. Consultez leur manuel pour vérifier la prise utilisée, la compatibilité et le réglage correspondant activé. Les fabricants emploient différents noms, parfois terminés par Link ou Sync. Utilisez la télécommande d’origine pour consulter le menu du matériel. Tous les ports et toutes les télécommandes universelles ne prennent pas en charge les mêmes commandes. L’infrarouge ordinaire exige aussi un passage dégagé vers l’appareil récepteur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : commander l’Apple TV avec une télécommande TV ou universelle",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer navigation et lecture",
+          "paragraphs": [
+            "Après un réglage du matériel autorisé par son propriétaire, essayez une commande habituelle sur l’écran d’accueil, puis comparez avec le lecteur. Si l’accueil répond mais que la vidéo échoue, décrivez ce symptôme séparément. Transmettez au support privé les modèles de télécommande, téléviseur et amplificateur, la liaison et l’action précise qui échoue. Masquez les informations de compte et de liste. Apprendre une autre télécommande ou effacer les données du lecteur n’est pas nécessaire pour recueillir ces observations ; conservez les réglages utiles."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Telecomando del televisore con Geo IPTV: controlla prima HDMI-CEC",
+      "excerpt": "Il telecomando del televisore e quello di Apple TV controllano parti diverse della configurazione. Verifica il collegamento prima di interpretare un comando ignorato come un problema video.",
+      "seo_title": "Geo IPTV: telecomando TV e controlli HDMI-CEC",
+      "seo_description": "Controlla la navigazione del telecomando universale, il supporto HDMI-CEC e la porta collegata prima di attribuire a Geo IPTV un problema di controllo di Apple TV.",
+      "sections": [
+        {
+          "heading": "Individua quale comando non risponde",
+          "paragraphs": [
+            "Per controllare il telecomando del televisore durante l’uso di Geo IPTV, parti da quello che hai in mano. Comandare Apple TV con un telecomando TV o universale è diverso dal comandare il televisore con il telecomando Apple TV. Annota se i menu del televisore rispondono ancora mentre la navigazione di Apple TV non funziona. Indica anche se il programma continua. Un comando ignorato da solo non dimostra un’interruzione generale del servizio o un piano scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica il collegamento documentato",
+          "paragraphs": [
+            "Apple spiega che televisori o ricevitori compatibili possono comandare Apple TV tramite HDMI-CEC. Consulta il manuale del televisore o ricevitore per verificare compatibilità, porta HDMI collegata e impostazione pertinente attiva. I produttori usano nomi diversi, talvolta terminanti in Link o Sync. Usa il telecomando originale per controllare il menu dell’apparecchio. Non presumere che ogni porta o telecomando universale supporti gli stessi comandi. Anche il normale controllo a infrarossi richiede un percorso libero verso il ricevitore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: controllare Apple TV con un telecomando TV o universale",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Separa i risultati di navigazione e riproduzione",
+          "paragraphs": [
+            "Dopo una modifica all’apparecchiatura approvata dal proprietario, prova un normale comando nella schermata Home e confrontalo con il lettore. Se la Home risponde ma il video non funziona, descrivi quel sintomo separatamente. Comunica all’assistenza privata i modelli di telecomando, televisore e ricevitore, il collegamento e l’azione esatta che fallisce. Nascondi i dati di account e playlist. Non occorre configurare un altro telecomando o cancellare i dati del lettore solo per raccogliere queste osservazioni; conserva le impostazioni utili."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV en de tv-afstandsbediening: controleer eerst HDMI-CEC",
+      "excerpt": "Een tv-afstandsbediening en een Apple TV-afstandsbediening bedienen verschillende onderdelen. Controleer de verbinding voordat u een gemiste opdracht als afspeelfout uitlegt.",
+      "seo_title": "Geo IPTV: tv-afstandsbediening en HDMI-CEC controleren",
+      "seo_description": "Controleer navigatie met een universele afstandsbediening, HDMI-CEC-ondersteuning en de aangesloten poort voordat u een bedieningsprobleem aan Geo IPTV toeschrijft.",
+      "sections": [
+        {
+          "heading": "Bepaal welke bediening niet reageert",
+          "paragraphs": [
+            "Begin een controle van de tv-afstandsbediening bij Geo IPTV met het exemplaar in uw hand. Apple TV bedienen met een tv- of universele afstandsbediening is iets anders dan de televisie bedienen met de Apple TV-afstandsbediening. Noteer of de eigen tv-menu’s nog reageren terwijl navigatie op Apple TV niet werkt. Leg ook vast of het programma doorgaat. Eén gemiste navigatieopdracht bewijst geen algemene storing of verlopen abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de beschreven apparatuurverbinding",
+          "paragraphs": [
+            "Apple legt uit dat geschikte televisies of receivers Apple TV via HDMI-CEC kunnen bedienen. Controleer in de handleiding de ondersteuning, de aangesloten HDMI-poort en de relevante ingeschakelde instelling. Fabrikanten gebruiken verschillende namen, waaronder namen die eindigen op Link of Sync. Gebruik de oorspronkelijke afstandsbediening om het apparaatmenu te bekijken. Ga er niet van uit dat iedere poort of universele afstandsbediening dezelfde opdrachten ondersteunt. Gewone infraroodbediening heeft bovendien een vrije baan naar de ontvangende apparatuur nodig."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV bedienen met een tv- of universele afstandsbediening",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Houd navigatie en afspelen uit elkaar",
+          "paragraphs": [
+            "Probeer na een door de eigenaar goedgekeurde apparaatwijziging één gewone navigatieopdracht op het beginscherm en vergelijk die met de speler. Reageert het beginscherm maar mislukt afspelen, beschrijf dat dan afzonderlijk. Geef privéondersteuning de modellen van afstandsbediening, televisie en receiver, de verbinding en de precieze mislukte handeling. Verberg account- en afspeellijstgegevens. Een andere afstandsbediening aanleren of spelergegevens wissen is niet nodig om deze waarnemingen te verzamelen; behoud bruikbare instellingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Comando do televisor com Geo IPTV: verifique primeiro o HDMI-CEC",
+      "excerpt": "O comando do televisor e o do Apple TV controlam partes diferentes da configuração. Verifique a ligação antes de interpretar uma ordem ignorada como falha de reprodução.",
+      "seo_title": "Geo IPTV: comando do televisor e verificações HDMI-CEC",
+      "seo_description": "Verifique a navegação com um comando universal, a compatibilidade HDMI-CEC e a porta ligada antes de atribuir um problema de controlo do Apple TV ao Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique o controlo que deixou de responder",
+          "paragraphs": [
+            "Para verificar o comando do televisor ao usar Geo IPTV, comece pelo comando que tem na mão. Controlar o Apple TV com um comando de televisão ou universal é diferente de controlar a televisão com o comando do Apple TV. Anote se os menus próprios do televisor ainda respondem enquanto a navegação do Apple TV falha. Registe também se o programa continua a reproduzir. Uma ordem de navegação ignorada, por si só, não demonstra uma falha geral nem um plano expirado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a ligação documentada do equipamento",
+          "paragraphs": [
+            "A Apple explica que televisores ou recetores compatíveis podem controlar o Apple TV através de HDMI-CEC. Consulte o manual para verificar a compatibilidade, a porta HDMI ligada e a definição relevante ativada. Os fabricantes usam nomes diferentes, alguns terminados em Link ou Sync. Utilize o comando original para consultar o menu do equipamento. Não suponha que todas as portas ou comandos universais aceitam as mesmas ordens. O controlo por infravermelhos comum também exige um caminho livre até ao equipamento recetor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: controlar o Apple TV com um comando de televisão ou universal",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Separe navegação e reprodução",
+          "paragraphs": [
+            "Depois de um ajuste do equipamento aprovado pelo proprietário, experimente uma ordem normal no ecrã principal e compare com o leitor. Se o ecrã principal responder mas a reprodução falhar, descreva esse sintoma separadamente. Envie ao suporte privado os modelos de comando, televisor e recetor, a ligação e a ação exata que falha. Oculte os dados da conta e da lista. Não é preciso configurar outro comando nem apagar dados do leitor apenas para recolher estas observações; mantenha as definições úteis."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Пульт телевизора с Geo IPTV: сначала проверьте HDMI-CEC",
+      "excerpt": "Пульт телевизора и пульт Apple TV управляют разными частями системы. Проверьте соединение, прежде чем считать пропущенную команду неисправностью воспроизведения.",
+      "seo_title": "Geo IPTV: пульт телевизора и проверка HDMI-CEC",
+      "seo_description": "Проверьте навигацию универсальным пультом, поддержку HDMI-CEC и подключённый порт, прежде чем связывать проблему управления Apple TV со сбоем Geo IPTV.",
+      "sections": [
+        {
+          "heading": "Определите, какая команда не работает",
+          "paragraphs": [
+            "Проверку пульта телевизора при использовании Geo IPTV начните с пульта в руке. Управлять Apple TV пультом телевизора или универсальным пультом — не то же самое, что управлять телевизором пультом Apple TV. Запишите, реагируют ли собственные меню телевизора, когда навигация Apple TV не отвечает. Также отметьте, продолжается ли передача. Одна пропущенная команда сама по себе не доказывает общего сбоя сервиса или окончания подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте соединение по документации",
+          "paragraphs": [
+            "Apple объясняет, что совместимые телевизоры или ресиверы могут управлять Apple TV по HDMI-CEC. В инструкции проверьте поддержку, подключённый порт HDMI и соответствующую включённую настройку. Производители используют разные названия, в том числе заканчивающиеся на Link или Sync. Откройте меню оборудования его штатным пультом. Не считайте, что все порты или универсальные пульты поддерживают одинаковые команды. Обычному инфракрасному управлению также нужен свободный путь до принимающего устройства."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: управление Apple TV пультом телевизора или универсальным пультом",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте навигацию и просмотр",
+          "paragraphs": [
+            "После согласованной с владельцем настройки оборудования проверьте одну обычную команду на главном экране, затем сравните с проигрывателем. Если главный экран отвечает, а видео не работает, опишите этот симптом отдельно. Сообщите в личную поддержку модели пульта, телевизора и ресивера, схему соединения и точное неудавшееся действие. Скройте данные аккаунта и плейлиста. Для сбора этих наблюдений не требуется обучать другой пульт или стирать данные проигрывателя; сохраните полезные настройки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کے ساتھ ٹی وی ریموٹ: پہلے HDMI-CEC دیکھیں",
+      "excerpt": "ٹی وی اور Apple TV کے ریموٹ سیٹ اپ کے مختلف حصے چلاتے ہیں۔ کسی بٹن کا حکم نہ ملنے کو پلے بیک کی خرابی سمجھنے سے پہلے آلات کا رابطہ دیکھیں۔",
+      "seo_title": "Geo IPTV: ٹی وی ریموٹ اور HDMI-CEC کی جانچ",
+      "seo_description": "Apple TV کو چلانے کے مسئلے کو Geo IPTV کی بندش سمجھنے سے پہلے یونیورسل ریموٹ کی نیویگیشن، HDMI-CEC کی سہولت اور منسلک پورٹ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کون سا کنٹرول کام نہیں کر رہا",
+          "paragraphs": [
+            "Geo IPTV کے ساتھ ٹی وی ریموٹ کی جانچ ہاتھ میں موجود ریموٹ سے شروع کریں۔ ٹی وی یا یونیورسل ریموٹ سے Apple TV چلانا، Apple TV کے ریموٹ سے ٹی وی چلانے سے الگ ہے۔ لکھیں کہ کیا ٹی وی کے اپنے مینو اب بھی چلتے ہیں جبکہ Apple TV کی نیویگیشن جواب نہیں دیتی۔ یہ بھی نوٹ کریں کہ پروگرام چلتا رہتا ہے یا نہیں۔ صرف نیویگیشن کا ایک حکم نہ ملنا پوری سروس کی بندش یا پلان ختم ہونے کا ثبوت نہیں ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آلات کا رابطہ ہدایت نامے کے مطابق دیکھیں",
+          "paragraphs": [
+            "Apple کے مطابق ہم آہنگ ٹی وی یا ریسیور HDMI-CEC کے ذریعے Apple TV کو چلا سکتے ہیں۔ سہولت، منسلک HDMI پورٹ اور متعلقہ فعال ترتیب کے لیے ٹی وی یا ریسیور کا ہدایت نامہ دیکھیں۔ بنانے والے مختلف نام استعمال کرتے ہیں، بعض کے آخر میں Link یا Sync آتا ہے۔ آلے کا مینو دیکھنے کے لیے اسی کا اصل ریموٹ استعمال کریں۔ یہ نہ سمجھیں کہ ہر پورٹ یا یونیورسل ریموٹ ایک جیسے حکم قبول کرتا ہے۔ عام انفراریڈ کنٹرول کو بھی وصول کرنے والے آلے تک صاف راستہ چاہیے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: ٹی وی یا یونیورسل ریموٹ سے Apple TV چلانا",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "نیویگیشن اور دیکھنے کا نتیجہ الگ رکھیں",
+          "paragraphs": [
+            "مالک کی منظور کردہ آلے کی تبدیلی کے بعد ہوم اسکرین پر ایک معمول کا نیویگیشن حکم آزمائیں، پھر پلیئر سے موازنہ کریں۔ ہوم اسکرین چلتی ہو لیکن ویڈیو ناکام ہو تو اس علامت کو الگ بیان کریں۔ نجی معاونت کو ریموٹ، ٹی وی اور ریسیور کے ماڈل، رابطے کا طریقہ اور ناکام عمل بتائیں۔ اکاؤنٹ اور پلے لسٹ کی معلومات چھپائیں۔ صرف یہ مشاہدے لینے کے لیے نیا ریموٹ سکھانا یا پلیئر کا ڈیٹا مٹانا ضروری نہیں؛ مفید ترتیبات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "جهاز تحكم التلفاز مع Geo IPTV: افحص HDMI-CEC أولاً",
+      "excerpt": "يتحكم جهاز التلفاز وجهاز Apple TV في أجزاء مختلفة من الإعداد. افحص مسار الاتصال قبل اعتبار الأمر الذي لا يستجيب عطلاً في تشغيل الفيديو.",
+      "seo_title": "Geo IPTV: جهاز تحكم التلفاز وفحص HDMI-CEC",
+      "seo_description": "افحص تنقل جهاز التحكم الشامل ودعم HDMI-CEC والمنفذ المتصل قبل اعتبار مشكلة التحكم في Apple TV انقطاعاً في Geo IPTV.",
+      "sections": [
+        {
+          "heading": "حدّد أي تحكم توقف عن الاستجابة",
+          "paragraphs": [
+            "ابدأ فحص جهاز تحكم التلفاز عند استخدام Geo IPTV بالجهاز الذي في يدك. التحكم في Apple TV بجهاز التلفاز أو جهاز شامل يختلف عن التحكم في التلفاز بجهاز Apple TV. دوّن هل ما زالت قوائم التلفاز نفسها تستجيب بينما لا يعمل التنقل في Apple TV. سجّل أيضاً هل يستمر البرنامج. عدم استجابة أمر تنقل واحد لا يثبت وحده انقطاع الخدمة عموماً أو انتهاء الخطة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع مسار الأجهزة الموثّق",
+          "paragraphs": [
+            "توضح Apple أن التلفزيونات أو أجهزة الاستقبال المتوافقة تستطيع التحكم في Apple TV عبر HDMI-CEC. راجع دليل التلفاز أو جهاز الاستقبال للتأكد من الدعم ومنفذ HDMI المتصل والإعداد المناسب المفعّل. يستخدم المصنعون أسماء مختلفة، منها أسماء تنتهي بـ Link أو Sync. استخدم جهاز التحكم الأصلي لفحص قائمة الجهاز. لا تفترض أن كل منفذ أو جهاز شامل يدعم الأوامر نفسها. يحتاج التحكم العادي بالأشعة تحت الحمراء أيضاً إلى مسار خالٍ نحو جهاز الاستقبال."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: التحكم في Apple TV بجهاز التلفاز أو جهاز تحكم شامل",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "افصل نتائج التنقل عن المشاهدة",
+          "paragraphs": [
+            "بعد تعديل على الأجهزة يوافق عليه مالكها، جرّب أمر تنقل عادياً على الشاشة الرئيسية ثم قارنه بالمشغل. إذا استجابت الشاشة الرئيسية وتعطل الفيديو، فصف ذلك العَرَض منفصلاً. أرسل للدعم الخاص طرازات جهاز التحكم والتلفاز والاستقبال ومسار الاتصال والفعل المحدد الذي لم يعمل. أخفِ بيانات الحساب وقائمة التشغيل. لا يلزم تعليم جهاز تحكم آخر أو مسح بيانات المشغل لمجرد جمع هذه الملاحظات؛ احتفظ بالإعدادات المفيدة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV के साथ टीवी रिमोट: पहले HDMI-CEC जाँचें",
+      "excerpt": "टीवी और Apple TV के रिमोट सेटअप के अलग हिस्से चलाते हैं। किसी बटन का आदेश न मिलने को वीडियो की खराबी मानने से पहले उपकरणों का संपर्क जाँचें।",
+      "seo_title": "Geo IPTV: टीवी रिमोट और HDMI-CEC की जाँच",
+      "seo_description": "Apple TV के नियंत्रण की समस्या को Geo IPTV की बंदी मानने से पहले यूनिवर्सल रिमोट की नेविगेशन, HDMI-CEC समर्थन और जुड़ा पोर्ट जाँचें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन सा नियंत्रण नहीं चल रहा",
+          "paragraphs": [
+            "Geo IPTV के साथ टीवी रिमोट की जाँच हाथ में मौजूद रिमोट से शुरू करें। टीवी या यूनिवर्सल रिमोट से Apple TV चलाना, Apple TV के रिमोट से टीवी चलाने से अलग है। लिखें कि क्या टीवी के अपने मेनू अभी भी चलते हैं, जबकि Apple TV की नेविगेशन जवाब नहीं देती। यह भी दर्ज करें कि कार्यक्रम चलता रहता है या नहीं। नेविगेशन का एक आदेश न मिलना अकेले पूरी सेवा की बंदी या योजना खत्म होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उपकरणों का संपर्क दस्तावेज़ के अनुसार जाँचें",
+          "paragraphs": [
+            "Apple बताता है कि अनुकूल टीवी या रिसीवर HDMI-CEC से Apple TV चला सकते हैं। समर्थन, जुड़े HDMI पोर्ट और संबंधित चालू सेटिंग के लिए टीवी या रिसीवर की पुस्तिका देखें। निर्माता अलग नाम देते हैं, जिनमें कुछ के अंत में Link या Sync होता है। उपकरण का मेनू देखने के लिए उसका असली रिमोट इस्तेमाल करें। यह न मानें कि हर पोर्ट या यूनिवर्सल रिमोट समान आदेश स्वीकार करता है। सामान्य इन्फ्रारेड नियंत्रण को भी संकेत पाने वाले उपकरण तक साफ रास्ता चाहिए।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: टीवी या यूनिवर्सल रिमोट से Apple TV चलाना",
+              "url": "https://support.apple.com/en-us/108789"
+            }
+          ]
+        },
+        {
+          "heading": "नेविगेशन और वीडियो के नतीजे अलग रखें",
+          "paragraphs": [
+            "मालिक की स्वीकृति से उपकरण की सेटिंग बदलने के बाद मुख्य स्क्रीन पर एक सामान्य नेविगेशन आदेश जाँचें, फिर प्लेयर से तुलना करें। मुख्य स्क्रीन चलती हो लेकिन वीडियो न चले तो उस लक्षण को अलग बताएँ। निजी सहायता को रिमोट, टीवी और रिसीवर के मॉडल, संपर्क का तरीका और असफल क्रिया बताएँ। खाते और प्लेलिस्ट की जानकारी छिपाएँ। केवल ये अवलोकन लेने के लिए दूसरा रिमोट सिखाना या प्लेयर डेटा मिटाना आवश्यक नहीं है; उपयोगी सेटिंग सुरक्षित रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: television and universal remote control of Apple TV",
+      "url": "https://support.apple.com/en-us/108789"
+    }
+  ]
+}
