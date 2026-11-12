@@ -95,7 +95,7 @@
                                     }
 
                                     $semanticSlugs = [
-                                        'home' => '', 'about-us' => 'about', 'activation' => 'activate',
+                                        'home' => '', 'iptv-home' => '', 'about-us' => 'about', 'activation' => 'activate',
                                         'activation-guide' => 'activate-info', 'articles' => 'blogs',
                                         'contact-us' => 'contact', 'help-center' => 'faqs',
                                         'iptv-player-apps' => 'iptv-applications', 'entertainment-catalogue' => 'movies',

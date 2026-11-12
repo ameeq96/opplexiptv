@@ -31,7 +31,7 @@ class MainPublicSlugMigrationTest extends TestCase
 
     private const CHANGES = [
         'en' => [
-            'about' => 'about-us', 'activate' => 'activation', 'activate-info' => 'activation-guide',
+            '' => 'iptv-home', 'about' => 'about-us', 'activate' => 'activation', 'activate-info' => 'activation-guide',
             'blogs' => 'articles', 'contact' => 'contact-us', 'faqs' => 'help-center',
             'iptv-applications' => 'iptv-player-apps', 'movies' => 'entertainment-catalogue',
             'packages' => 'subscription-plans', 'pricing' => 'subscription-pricing',
@@ -129,7 +129,7 @@ class MainPublicSlugMigrationTest extends TestCase
                 $count++;
             }
         }
-        $this->assertSame(75, $count);
+        $this->assertSame(76, $count);
     }
 
     public function test_the_85_unlisted_locale_variants_and_private_and_article_routes_keep_their_identity(): void
@@ -163,7 +163,7 @@ class MainPublicSlugMigrationTest extends TestCase
             $account = $this->app['router']->getRoutes()->match(Request::create('/account/login'));
             $this->assertSame('customer.login', $account->getName());
         }
-        $this->assertSame(85, $count);
+        $this->assertSame(84, $count);
     }
 
     public function test_canonical_and_language_alternates_resolve_the_same_page_across_all_locales(): void

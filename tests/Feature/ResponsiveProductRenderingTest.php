@@ -59,7 +59,7 @@ class ResponsiveProductRenderingTest extends TestCase
             'is_active' => true,
         ]);
 
-        $home = $this->get('/');
+        $home = $this->get('/iptv-home');
         $home->assertOk();
         $this->assertMatchesRegularExpression(
             '/<picture class="product-picture">.*?src="[^"]*\/images\/shop\/B08CRV62C4\.webp"/s',

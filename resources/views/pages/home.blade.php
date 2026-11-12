@@ -295,6 +295,6 @@
     {!! jsonld(seo()->service(
         __('document_home.hero.heading'),
         __('document_home.hero.text'),
-        url('/'),
+        app()->getLocale() === 'en' ? route('home') : url('/'),
     )) !!}
 @endpush

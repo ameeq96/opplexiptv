@@ -78,7 +78,7 @@ class PublicSiteApiTest extends TestCase
     {
         $this->withoutMiddleware(\Illuminate\Routing\Middleware\ThrottleRequests::class);
         $migratedPaths = [
-            'en' => ['about' => '/about-us', 'contact' => '/contact-us', 'pricing' => '/subscription-pricing', 'movies' => '/entertainment-catalogue', 'packages' => '/subscription-plans', 'shop' => '/store', 'reseller-panel' => '/reseller-plans', 'iptv-applications' => '/iptv-player-apps', 'faqs' => '/help-center', 'activate' => '/activation', 'activate-info' => '/activation-guide', 'terms-of-service' => '/terms-and-conditions', 'privacy-policy' => '/privacy-notice', 'refund-policy' => '/refund-terms'],
+            'en' => ['home' => '/iptv-home', 'about' => '/about-us', 'contact' => '/contact-us', 'pricing' => '/subscription-pricing', 'movies' => '/entertainment-catalogue', 'packages' => '/subscription-plans', 'shop' => '/store', 'reseller-panel' => '/reseller-plans', 'iptv-applications' => '/iptv-player-apps', 'faqs' => '/help-center', 'activate' => '/activation', 'activate-info' => '/activation-guide', 'terms-of-service' => '/terms-and-conditions', 'privacy-policy' => '/privacy-notice', 'refund-policy' => '/refund-terms'],
             'es' => ['home' => '/es/home', 'about' => '/es/about-us', 'contact' => '/es/contact-us', 'pricing' => '/es/subscription-pricing', 'packages' => '/es/subscription-plans', 'shop' => '/es/store', 'reseller-panel' => '/es/reseller-plans', 'iptv-applications' => '/es/iptv-player-apps', 'faqs' => '/es/help-center', 'refund-policy' => '/es/refund-terms'],
             'fr' => ['home' => '/fr/home', 'packages' => '/fr/subscription-plans', 'iptv-applications' => '/fr/iptv-player-apps', 'activate-info' => '/fr/activation-guide'],
             'it' => ['home' => '/it/home', 'about' => '/it/about-us', 'pricing' => '/it/subscription-pricing', 'movies' => '/it/entertainment-catalogue', 'packages' => '/it/subscription-plans', 'shop' => '/it/store', 'reseller-panel' => '/it/reseller-plans', 'faqs' => '/it/help-center', 'privacy-policy' => '/it/privacy-notice'],
@@ -124,7 +124,7 @@ class PublicSiteApiTest extends TestCase
         $this->get('/api/v1/site/products/affiliate/'.$active->id)->assertOk()
             ->assertJsonPath('data.productName', 'Public device');
         $this->get('/api/v1/site/products/unknown/'.$active->id)->assertNotFound();
-        $this->get('/')->assertOk()->assertSeeText('Public device');
+        $this->get('/iptv-home')->assertOk()->assertSeeText('Public device');
     }
 
     public function test_provider_catalog_is_structured_and_shares_compatibility_data(): void

@@ -32,7 +32,7 @@ class HomeDocumentContentTest extends TestCase
     {
         Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
 
-        $response = $this->get('/');
+        $response = $this->get('/iptv-home');
 
         $response->assertOk();
         $response->assertSeeText('Best IPTV Subscription Service Provider | Live TV, Sports & 4K Streaming');
@@ -131,7 +131,7 @@ class HomeDocumentContentTest extends TestCase
     {
         Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
 
-        $response = $this->get('/');
+        $response = $this->get('/iptv-home');
 
         $response->assertOk();
         $html = $response->getContent();
@@ -210,7 +210,7 @@ class HomeDocumentContentTest extends TestCase
         ShopProduct::query()->delete();
         Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
 
-        $response = $this->get('/');
+        $response = $this->get('/iptv-home');
 
         $response->assertOk();
         $response->assertSeeText('Gear Up for Better Streaming');

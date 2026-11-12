@@ -28,7 +28,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $publicSlugs = [
-            'home' => '',
+            'home' => 'iptv-home',
             'about' => 'about',
             'activate' => 'activate',
             'activate-info' => 'activate-info',
