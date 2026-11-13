@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-13",
+  "topic": "Distinguish Fire TV ADB debugging authorisation from a provider or player sign-in during a Trex IPTV setup enquiry",
+  "primary_keyword": "Trex IPTV setup check",
+  "slug": "trex-setup-prompts-debugging-not-provider-login",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV setup check: sign-in or debugging access?",
+      "excerpt": "An unfamiliar Fire TV debugging prompt is different from player sign-in. Identify the requested access before changing device permissions or saved setup.",
+      "seo_title": "Trex IPTV setup check: sign-in or debugging access?",
+      "seo_description": "Distinguish a Trex IPTV player login from Fire TV ADB debugging authorisation, clarify legitimate support requests and preserve owner-managed settings.",
+      "sections": [
+        {
+          "heading": "Identify the requested access",
+          "paragraphs": [
+            "A Trex IPTV setup check starts by identifying the screen that asks for access. A player’s provider-login form, an Amazon Appstore product page and a Fire TV debugging authorisation prompt are different requests. Note the exact device model, installed player name and prompt wording before deciding what it means. An unexpected developer-access prompt is not evidence that your subscription expired or that playback needs additional permissions."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Understand the documented development tool",
+          "paragraphs": [
+            "Amazon describes Android Debug Bridge (ADB) as a way for a development computer to install, test and debug apps on Fire TV. Its guide includes device debugging settings and authorisation of the computer connection. Those are development actions, not subscription activation controls. Do not enable debugging, allow unknown computers or install developer tools simply because an unfamiliar setup message asks. For a legitimate owner-approved investigation, clarify the purpose separately with the responsible person."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV ADB development connection",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Send a smaller setup question",
+          "paragraphs": [
+            "Start an ordinary viewing enquiry with the player version, device model and any readable error. Keep account credentials and authorisation details out of public screenshots. Ask established support which supported player and setup path match that device, preserving owner-managed settings while you check. The confirmed Trex plan permits one simultaneous connection; a debugging setting does not change that allowance. Resolve what access is requested before buying another plan or changing the saved configuration."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Configuración de Trex IPTV: ¿acceso o depuración?",
+      "excerpt": "Una solicitud de depuración de Fire TV no es el inicio de sesión del reproductor. Identifica el acceso pedido antes de cambiar permisos o configuración.",
+      "seo_title": "Configuración de Trex IPTV: ¿acceso o depuración?",
+      "seo_description": "Distingue el acceso del reproductor Trex IPTV de la autorización ADB de Fire TV, aclara las solicitudes legítimas de soporte y conserva los ajustes del propietario.",
+      "sections": [
+        {
+          "heading": "Identifica el acceso solicitado",
+          "paragraphs": [
+            "La comprobación de configuración de Trex IPTV empieza identificando la pantalla que solicita acceso. El formulario del proveedor del reproductor, una ficha de Amazon Appstore y una autorización de depuración de Fire TV son solicitudes distintas. Anota el modelo exacto del dispositivo, el nombre del reproductor instalado y el texto antes de interpretarlos. Una solicitud inesperada de acceso de desarrollo no demuestra que la suscripción haya caducado ni que la reproducción necesite más permisos."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprende la herramienta documentada",
+          "paragraphs": [
+            "Amazon describe Android Debug Bridge (ADB) como un medio para que un ordenador de desarrollo instale, pruebe y depure aplicaciones en Fire TV. Su guía incluye ajustes de depuración y autorización de la conexión del ordenador. Son acciones de desarrollo, no controles de activación de suscripciones. No habilites depuración, autorices ordenadores desconocidos ni instales herramientas porque lo pida un mensaje de configuración desconocido. Para una investigación legítima aprobada por el propietario, aclara por separado su finalidad con la persona responsable."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: conexión de desarrollo ADB con Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Haz una consulta más concreta",
+          "paragraphs": [
+            "Para una consulta normal de reproducción, indica versión del reproductor, modelo y error legible. No muestres credenciales ni detalles de autorización en capturas públicas. Pregunta al soporte habitual qué reproductor compatible y qué procedimiento corresponden al equipo, conservando los ajustes gestionados por su propietario. El plan Trex confirmado permite una conexión simultánea; un ajuste de depuración no cambia ese límite. Aclara qué acceso se solicita antes de comprar otro plan o cambiar la configuración guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Configuration Trex IPTV : connexion ou accès de débogage ?",
+      "excerpt": "Une demande de débogage Fire TV diffère de la connexion au lecteur. Identifiez l’accès demandé avant de changer des autorisations ou la configuration enregistrée.",
+      "seo_title": "Configuration Trex IPTV : connexion ou accès de débogage ?",
+      "seo_description": "Distinguez la connexion au lecteur Trex IPTV de l’autorisation ADB Fire TV, précisez les demandes légitimes d’assistance et préservez les réglages du propriétaire.",
+      "sections": [
+        {
+          "heading": "Identifier l’accès demandé",
+          "paragraphs": [
+            "La vérification de configuration Trex IPTV commence par l’identification de l’écran demandant un accès. Le formulaire fournisseur du lecteur, une fiche Amazon Appstore et une autorisation de débogage Fire TV constituent des demandes différentes. Notez le modèle exact, le nom du lecteur installé et le texte affiché avant de l’interpréter. Une demande inattendue d’accès développeur ne prouve ni l’expiration de l’abonnement ni le besoin d’autorisations supplémentaires pour lire une vidéo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprendre l’outil documenté",
+          "paragraphs": [
+            "Amazon présente Android Debug Bridge (ADB) comme un moyen pour un ordinateur de développement d’installer, tester et déboguer des applications sur Fire TV. Son guide comprend les paramètres de débogage et l’autorisation de la connexion de l’ordinateur. Il s’agit d’opérations de développement, pas de commandes d’activation d’abonnement. N’activez pas le débogage, n’autorisez pas d’ordinateur inconnu et n’installez pas d’outils sur simple demande d’un message inhabituel. Pour une investigation légitime approuvée par le propriétaire, précisez séparément son objectif avec le responsable."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : connexion de développement ADB à Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Formuler une question plus ciblée",
+          "paragraphs": [
+            "Pour une demande ordinaire de lecture, indiquez la version du lecteur, le modèle et l’erreur lisible. Masquez identifiants et détails d’autorisation sur les captures publiques. Demandez à l’assistance habituelle quel lecteur compatible et quelle procédure conviennent à l’appareil, en conservant les réglages gérés par son propriétaire. L’offre Trex confirmée permet une connexion simultanée ; un réglage de débogage ne change pas cette limite. Clarifiez l’accès demandé avant d’acheter une autre offre ou modifier la configuration."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Configurazione Trex IPTV: accesso o autorizzazione di debug?",
+      "excerpt": "Una richiesta di debug Fire TV è diversa dall’accesso al lettore. Identifica il permesso richiesto prima di modificare autorizzazioni o configurazione salvata.",
+      "seo_title": "Configurazione Trex IPTV: accesso o autorizzazione di debug?",
+      "seo_description": "Distingui l’accesso al lettore Trex IPTV dall’autorizzazione ADB di Fire TV, chiarisci le richieste legittime di assistenza e conserva le impostazioni del proprietario.",
+      "sections": [
+        {
+          "heading": "Identifica l’accesso richiesto",
+          "paragraphs": [
+            "Il controllo della configurazione Trex IPTV inizia identificando la schermata che chiede accesso. Il modulo del fornitore nel lettore, una scheda Amazon Appstore e una richiesta di autorizzazione al debug Fire TV sono richieste diverse. Annota modello esatto, nome del lettore installato e testo visualizzato prima di interpretarli. Una richiesta inattesa di accesso da sviluppatore non prova che l’abbonamento sia scaduto o che la riproduzione richieda altri permessi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprendi lo strumento documentato",
+          "paragraphs": [
+            "Amazon descrive Android Debug Bridge (ADB) come un modo per installare, provare e sottoporre a debug applicazioni Fire TV da un computer di sviluppo. La guida comprende impostazioni di debug e autorizzazione della connessione del computer. Sono operazioni di sviluppo, non comandi di attivazione dell’abbonamento. Non abilitare debug, autorizzare computer sconosciuti o installare strumenti soltanto perché un messaggio insolito lo richiede. Per un’indagine legittima approvata dal proprietario, chiarisci separatamente lo scopo con il responsabile."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: collegamento di sviluppo ADB a Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Formula una domanda più precisa",
+          "paragraphs": [
+            "Per una normale richiesta sulla visione, indica versione del lettore, modello ed errore leggibile. Non mostrare credenziali o dettagli delle autorizzazioni in schermate pubbliche. Chiedi all’assistenza abituale quale lettore compatibile e quale procedura corrispondano al dispositivo, mantenendo le impostazioni gestite dal proprietario. Il piano Trex confermato consente una connessione simultanea: il debug non modifica questo limite. Chiarisci l’accesso richiesto prima di acquistare un altro piano o cambiare la configurazione salvata."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV instellen: aanmelden of foutopsporingsrechten?",
+      "excerpt": "Een onbekende Fire TV-vraag om foutopsporingsrechten is iets anders dan aanmelden bij de speler. Bepaal de gevraagde toegang voordat je rechten of instellingen wijzigt.",
+      "seo_title": "Trex IPTV instellen: aanmelden of foutopsporingsrechten?",
+      "seo_description": "Onderscheid aanmelden bij de Trex IPTV-speler van Fire TV ADB-toestemming, verduidelijk echte ondersteuningsvragen en behoud instellingen van de eigenaar.",
+      "sections": [
+        {
+          "heading": "Bepaal welke toegang wordt gevraagd",
+          "paragraphs": [
+            "Een Trex IPTV-instelcontrole begint bij het herkennen van het scherm dat toegang vraagt. Het aanmeldformulier van de aanbieder in de speler, een Amazon Appstore-productpagina en een Fire TV-vraag om foutopsporingstoestemming zijn verschillende verzoeken. Noteer eerst het precieze apparaatmodel, de geïnstalleerde speler en de tekst. Een onverwacht verzoek om ontwikkelaarstoegang bewijst niet dat je abonnement verlopen is of dat afspelen aanvullende rechten vereist."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Begrijp het gedocumenteerde ontwikkelhulpmiddel",
+          "paragraphs": [
+            "Amazon beschrijft Android Debug Bridge (ADB) als een manier voor een ontwikkelcomputer om Fire TV-apps te installeren, testen en debuggen. De handleiding behandelt foutopsporingsinstellingen en toestemming voor de computerverbinding. Dat zijn ontwikkelhandelingen, geen bediening voor abonnementsactivering. Schakel niet zomaar foutopsporing in, geef onbekende computers geen toegang en installeer geen ontwikkelsoftware omdat een ongebruikelijk instelbericht dit vraagt. Bespreek bij een legitiem onderzoek dat de eigenaar goedkeurt het doel apart met de verantwoordelijke."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: ADB-ontwikkelverbinding met Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Stel een gerichte instelvraag",
+          "paragraphs": [
+            "Begin een gewone afspeelvraag met spelerversie, apparaatmodel en de leesbare foutmelding. Houd inloggegevens en toestemmingsdetails buiten openbare screenshots. Vraag de vaste ondersteuning welke ondersteunde speler en instelroute bij het apparaat horen, terwijl je de door de eigenaar beheerde instellingen behoudt. Het bevestigde Trex-pakket staat één gelijktijdige verbinding toe; een foutopsporingsinstelling verandert dat niet. Verduidelijk eerst de gevraagde toegang voordat je een ander pakket koopt of opgeslagen instellingen wijzigt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Configuração Trex IPTV: início de sessão ou depuração?",
+      "excerpt": "Um pedido inesperado de depuração do Fire TV é diferente do acesso ao leitor. Identifique a autorização antes de alterar permissões ou configuração guardada.",
+      "seo_title": "Configuração Trex IPTV: início de sessão ou depuração?",
+      "seo_description": "Distinga o acesso ao leitor Trex IPTV da autorização ADB do Fire TV, esclareça pedidos legítimos de apoio e preserve os ajustes geridos pelo proprietário.",
+      "sections": [
+        {
+          "heading": "Identifique o acesso pedido",
+          "paragraphs": [
+            "A verificação da configuração Trex IPTV começa por identificar o ecrã que pede acesso. O formulário do fornecedor no leitor, uma página da Amazon Appstore e um pedido de autorização de depuração do Fire TV são solicitações diferentes. Anote o modelo exato, o nome do leitor instalado e o texto apresentado antes de o interpretar. Um pedido inesperado de acesso de desenvolvimento não prova que a subscrição expirou nem que a reprodução precisa de mais permissões."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compreenda a ferramenta documentada",
+          "paragraphs": [
+            "A Amazon descreve o Android Debug Bridge (ADB) como uma forma de um computador de desenvolvimento instalar, testar e depurar aplicações no Fire TV. O guia inclui configurações de depuração e autorização da ligação ao computador. São ações de desenvolvimento, não comandos de ativação de subscrição. Não ative depuração, autorize computadores desconhecidos nem instale ferramentas apenas porque uma mensagem de configuração invulgar o pede. Para uma investigação legítima aprovada pelo proprietário, esclareça separadamente a finalidade com o responsável."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: ligação de desenvolvimento ADB ao Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Faça uma pergunta mais concreta",
+          "paragraphs": [
+            "Numa questão normal sobre reprodução, comece pela versão do leitor, modelo e erro legível. Exclua credenciais e detalhes de autorização de capturas públicas. Pergunte ao apoio habitual qual o leitor compatível e procedimento adequados, conservando os ajustes geridos pelo proprietário. O plano Trex confirmado permite uma ligação simultânea; uma opção de depuração não altera esse limite. Esclareça o acesso pedido antes de comprar outro plano ou modificar a configuração guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Настройка Trex IPTV: вход или разрешение отладки?",
+      "excerpt": "Неожиданный запрос отладки Fire TV отличается от входа в плеер. Определите запрашиваемый доступ, прежде чем менять разрешения и сохранённые настройки.",
+      "seo_title": "Настройка Trex IPTV: вход или разрешение отладки?",
+      "seo_description": "Отличайте вход в плеер Trex IPTV от разрешения ADB на Fire TV, уточняйте цель законных запросов поддержки и сохраняйте настройки владельца.",
+      "sections": [
+        {
+          "heading": "Определите запрашиваемый доступ",
+          "paragraphs": [
+            "Проверка настройки Trex IPTV начинается с определения экрана, запрашивающего доступ. Форма входа провайдера в плеере, карточка Amazon Appstore и запрос разрешения отладки Fire TV — разные запросы. Перед выводами запишите точную модель, название установленного плеера и текст сообщения. Неожиданный запрос доступа разработчика не доказывает, что подписка истекла или что для воспроизведения требуются дополнительные разрешения."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Разберитесь в назначении инструмента",
+          "paragraphs": [
+            "Amazon описывает Android Debug Bridge (ADB) как средство установки, тестирования и отладки приложений Fire TV с компьютера разработчика. Руководство включает настройки отладки устройства и разрешение подключения компьютера. Это действия разработчика, а не элементы активации подписки. Не включайте отладку, не разрешайте неизвестные компьютеры и не устанавливайте инструменты лишь по просьбе незнакомого сообщения настройки. Если владелец одобрил обоснованное исследование, отдельно уточните его цель с ответственным специалистом."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: подключение ADB к Fire TV для разработки",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "Задайте конкретный вопрос о настройке",
+          "paragraphs": [
+            "Обычный вопрос о просмотре начните с версии плеера, модели и читаемого сообщения об ошибке. Не публикуйте данные входа и подробности авторизации на снимках экрана. Уточните у привычной службы поддержки, какой совместимый плеер и способ настройки подходят устройству, сохраняя параметры, управляемые владельцем. Подтверждённый тариф Trex допускает одно одновременное подключение; настройка отладки не меняет это ограничение. Выясните, какой доступ запрашивается, прежде чем покупать другой тариф или менять сохранённую конфигурацию."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV سیٹ اپ: لاگ اِن یا ڈیبگنگ کی اجازت؟",
+      "excerpt": "Fire TV پر ڈیبگنگ کی غیر مانوس درخواست پلیئر کے لاگ اِن سے الگ ہے۔ اجازت یا محفوظ سیٹ اپ بدلنے سے پہلے مطلوبہ رسائی پہچانیں۔",
+      "seo_title": "Trex IPTV سیٹ اپ: لاگ اِن یا ڈیبگنگ کی اجازت؟",
+      "seo_description": "Trex IPTV پلیئر کے لاگ اِن کو Fire TV کی ADB اجازت سے الگ پہچانیں، جائز مدد کی درخواست کا مقصد واضح کریں اور مالک کی ترتیبات برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "مطلوبہ رسائی پہچانیں",
+          "paragraphs": [
+            "Trex IPTV کے سیٹ اپ کی جانچ اس اسکرین کو پہچاننے سے شروع ہوتی ہے جو رسائی مانگ رہی ہے۔ پلیئر میں فراہم کنندہ کا لاگ اِن فارم، Amazon Appstore کی مصنوعات والی اسکرین اور Fire TV کی ڈیبگنگ کی اجازت الگ درخواستیں ہیں۔ مطلب اخذ کرنے سے پہلے آلے کا درست ماڈل، نصب پلیئر کا نام اور پیغام کے الفاظ نوٹ کریں۔ ڈویلپر رسائی کی اچانک درخواست اس بات کا ثبوت نہیں کہ سبسکرپشن ختم ہوگئی یا ویڈیو کے لیے مزید اجازت چاہیے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دستاویز میں درج آلے کا مقصد سمجھیں",
+          "paragraphs": [
+            "Amazon کے مطابق Android Debug Bridge یعنی ADB سے ڈویلپمنٹ کمپیوٹر Fire TV پر ایپس نصب، آزما اور ان کی خرابیوں کی جانچ کر سکتا ہے۔ رہنما میں آلے کی ڈیبگنگ ترتیبات اور کمپیوٹر کے کنکشن کی اجازت شامل ہیں۔ یہ ڈویلپمنٹ کے کام ہیں، سبسکرپشن فعال کرنے کے کنٹرول نہیں۔ کسی غیر مانوس پیغام کے کہنے پر نہ ڈیبگنگ کھولیں، نہ نامعلوم کمپیوٹر منظور کریں، اور نہ ڈویلپر ٹول نصب کریں۔ مالک کی منظور کردہ جائز جانچ ہو تو ذمہ دار شخص سے اس کا مقصد الگ واضح کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: ڈویلپمنٹ کے لیے Fire TV کا ADB کنکشن",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "سیٹ اپ کا محدود سوال پوچھیں",
+          "paragraphs": [
+            "عام ویڈیو دیکھنے کے مسئلے میں پلیئر کا ورژن، آلے کا ماڈل اور پڑھا جانے والا ایرر بتائیں۔ عوامی اسکرین شاٹ میں لاگ اِن معلومات اور اجازت کی تفصیلات نہ دکھائیں۔ معتبر مدد سے پوچھیں کہ اس آلے کے لیے کون سا معاون پلیئر اور سیٹ اپ طریقہ درست ہے، اور اس دوران مالک کی ترتیبات برقرار رکھیں۔ تصدیق شدہ Trex پلان ایک وقت میں ایک کنکشن دیتا ہے؛ ڈیبگنگ کی ترتیب یہ حد نہیں بدلتی۔ دوسرا پلان خریدنے یا محفوظ سیٹ اپ بدلنے سے پہلے مطلوبہ رسائی واضح کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إعداد Trex IPTV: تسجيل دخول أم إذن تصحيح أخطاء؟",
+      "excerpt": "طلب تصحيح أخطاء Fire TV غير المألوف يختلف عن دخول المشغل. حدد الوصول المطلوب قبل تغيير الأذونات أو الإعدادات المحفوظة.",
+      "seo_title": "إعداد Trex IPTV: تسجيل دخول أم إذن تصحيح أخطاء؟",
+      "seo_description": "ميز دخول مشغل Trex IPTV عن تفويض ADB في Fire TV، وحدد غرض طلبات الدعم المشروعة مع الحفاظ على الإعدادات التي يديرها المالك.",
+      "sections": [
+        {
+          "heading": "حدد الوصول المطلوب",
+          "paragraphs": [
+            "تبدأ مراجعة إعداد Trex IPTV بتحديد الشاشة التي تطلب الوصول. نموذج دخول المزود داخل المشغل وصفحة منتج Amazon Appstore وطلب إذن تصحيح أخطاء Fire TV طلبات مختلفة. دوّن طراز الجهاز الدقيق واسم المشغل المثبت ونص الرسالة قبل تفسيرها. لا يثبت طلب مفاجئ لوصول المطور انتهاء الاشتراك أو أن تشغيل الفيديو يحتاج أذونات إضافية."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افهم أداة التطوير الموثقة",
+          "paragraphs": [
+            "تصف Amazon أداة Android Debug Bridge أو ADB بأنها وسيلة يستخدمها حاسوب التطوير لتثبيت التطبيقات واختبارها وتصحيح أخطائها على Fire TV. يتضمن دليلها إعدادات تصحيح الأخطاء وتفويض اتصال الحاسوب. هذه أعمال تطوير وليست أدوات تفعيل اشتراك. لا تفعل التصحيح أو تسمح لحواسيب مجهولة أو تثبت أدوات تطوير لمجرد طلب رسالة إعداد غير مألوفة. إن كان التحقيق مشروعاً وبموافقة المالك، فوضح غرضه بشكل منفصل مع الشخص المسؤول."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: اتصال تطوير ADB بجهاز Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "اطرح سؤال إعداد أكثر تحديداً",
+          "paragraphs": [
+            "ابدأ الاستفسار العادي عن المشاهدة بإصدار المشغل وطراز الجهاز والخطأ المقروء. أبعد بيانات الدخول وتفاصيل التفويض عن لقطات الشاشة العامة. اسأل الدعم المعتاد عن المشغل المدعوم وطريقة الإعداد الملائمة، مع الحفاظ على إعدادات المالك أثناء التحقق. تسمح باقة Trex المؤكدة باتصال متزامن واحد؛ لا يغير إعداد التصحيح هذا الحد. حدد الوصول المطلوب قبل شراء باقة أخرى أو تغيير التهيئة المحفوظة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV सेटअप जाँच: साइन इन या डीबगिंग की अनुमति?",
+      "excerpt": "Fire TV की अनजान डीबगिंग माँग प्लेयर में साइन इन से अलग है। अनुमति या सहेजा सेटअप बदलने से पहले माँगी गई पहुँच पहचानें।",
+      "seo_title": "Trex IPTV सेटअप जाँच: साइन इन या डीबगिंग की अनुमति?",
+      "seo_description": "Trex IPTV प्लेयर में लॉगिन को Fire TV की ADB अनुमति से अलग पहचानें, वैध सहायता अनुरोध का उद्देश्य समझें और मालिक की सेटिंग सुरक्षित रखें।",
+      "sections": [
+        {
+          "heading": "माँगी गई पहुँच पहचानें",
+          "paragraphs": [
+            "Trex IPTV की सेटअप जाँच उस स्क्रीन को पहचानने से शुरू होती है जो पहुँच माँग रही है। प्लेयर में प्रदाता का लॉगिन फ़ॉर्म, Amazon Appstore का उत्पाद पेज और Fire TV का डीबगिंग अनुमति संदेश अलग अनुरोध हैं। अर्थ निकालने से पहले उपकरण का सही मॉडल, इंस्टॉल किए प्लेयर का नाम और संदेश के शब्द नोट करें। अचानक आया डेवलपर पहुँच का अनुरोध यह प्रमाण नहीं है कि सदस्यता समाप्त हुई या वीडियो चलाने के लिए अतिरिक्त अनुमति चाहिए।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ में बताए उपकरण का उद्देश्य समझें",
+          "paragraphs": [
+            "Amazon के अनुसार Android Debug Bridge यानी ADB से डेवलपमेंट कंप्यूटर Fire TV पर ऐप इंस्टॉल, परीक्षण और डीबग कर सकता है। उसकी गाइड में उपकरण की डीबगिंग सेटिंग और कंप्यूटर कनेक्शन की अनुमति शामिल हैं। ये डेवलपमेंट कार्य हैं, सदस्यता सक्रिय करने के नियंत्रण नहीं। किसी अनजान सेटअप संदेश के कहने पर डीबगिंग चालू न करें, अनजान कंप्यूटर स्वीकार न करें और डेवलपर उपकरण न लगाएँ। मालिक की सहमति से वैध जाँच हो तो जिम्मेदार व्यक्ति से उसका उद्देश्य अलग स्पष्ट करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: डेवलपमेंट के लिए Fire TV का ADB कनेक्शन",
+              "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+            }
+          ]
+        },
+        {
+          "heading": "सेटअप का सीमित सवाल पूछें",
+          "paragraphs": [
+            "सामान्य देखने की समस्या बताते समय प्लेयर का संस्करण, उपकरण का मॉडल और पढ़ने योग्य त्रुटि दें। सार्वजनिक स्क्रीनशॉट से खाते की लॉगिन जानकारी और अनुमति विवरण हटाएँ। भरोसेमंद सहायता से पूछें कि इस उपकरण के लिए कौन सा समर्थित प्लेयर और सेटअप तरीका उपयुक्त है, और जाँच के दौरान मालिक की सेटिंग बनाए रखें। पुष्टि किया गया Trex प्लान एक समय में एक कनेक्शन देता है; डीबगिंग की सेटिंग यह सीमा नहीं बदलती। दूसरा प्लान खरीदने या सहेजी व्यवस्था बदलने से पहले माँगी गई पहुँच स्पष्ट करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Fire TV ADB development connection",
+      "url": "https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html"
+    }
+  ]
+}

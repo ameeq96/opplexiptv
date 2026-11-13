@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-13",
+  "topic": "Identify Apple TV hotel captive-network sign-in separately from Geo IPTV player credentials before changing saved setup",
+  "primary_keyword": "Geo IPTV hotel Wi-Fi",
+  "slug": "geo-hotel-wifi-network-sign-in-before-player",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV hotel Wi-Fi: identify the network sign-in first",
+      "excerpt": "A hotel Wi-Fi login and an IPTV player login serve different purposes. Identify the screen asking for access before changing saved provider details.",
+      "seo_title": "Geo IPTV hotel Wi-Fi: Apple TV guest-network sign-in",
+      "seo_description": "Check Apple TV hotel Wi-Fi sign-in prompts, separate guest-network access from player credentials and collect useful observations without resetting saved setup.",
+      "sections": [
+        {
+          "heading": "Identify which login is asking",
+          "paragraphs": [
+            "A Geo IPTV hotel Wi-Fi check begins before opening the player. A hotel or guest network can ask for another sign-in after you select its Wi-Fi name. That screen belongs to the network operator, not automatically to your IPTV provider. Record whether the message appeared in Apple TV network setup or inside the player, and whether other permitted internet use is available. Joining Wi-Fi alone does not prove that the network's internet-access step is complete."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Follow the documented network prompt",
+          "paragraphs": [
+            "Apple documents captive-network support and continuing the sign-in on an iPhone or iPad with up-to-date Apple TV software. Follow only the prompt offered by your equipment; menu wording and availability depend on the setup. Confirm the correct guest-network name with the venue, and ask its staff which sign-in details or access conditions apply. Do not put your IPTV password into a hotel portal or assume room access includes unlimited streaming."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV Wi-Fi and captive-network sign-in",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Separate access from playback",
+          "paragraphs": [
+            "After the venue confirms network access, reopen the same player and note the result without changing saved provider details. If the portal returns, report that to the venue; if internet access works but one player fails, describe that separate symptom to Geo IPTV support. Share the device model, screen wording and time privately, hiding room numbers, passwords and playback addresses. These observations do not establish a service-wide outage or a billing problem."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV y el Wi-Fi del hotel: identifica primero el acceso a la red",
+      "excerpt": "El acceso al Wi-Fi del hotel y el del reproductor cumplen funciones distintas. Identifica qué pantalla solicita acceso antes de cambiar los datos guardados del proveedor.",
+      "seo_title": "Geo IPTV y Wi-Fi de hotel: acceso de Apple TV a la red",
+      "seo_description": "Revisa el acceso al Wi-Fi del hotel en Apple TV, distingue las credenciales de la red y del reproductor y reúne observaciones sin restablecer la configuración.",
+      "sections": [
+        {
+          "heading": "Identifica qué inicio de sesión aparece",
+          "paragraphs": [
+            "La comprobación del Wi-Fi de un hotel para Geo IPTV empieza antes de abrir el reproductor. Una red de invitados puede pedir otro inicio de sesión después de seleccionar su nombre. Esa pantalla corresponde al operador de la red, no necesariamente al proveedor de IPTV. Anota si el mensaje apareció en la configuración de red de Apple TV o dentro del reproductor y si puedes realizar otros usos permitidos de internet. Conectarse al Wi-Fi no demuestra por sí solo que el acceso a internet esté completado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Sigue la indicación documentada de la red",
+          "paragraphs": [
+            "Apple documenta la compatibilidad con redes cautivas y la continuación del acceso en un iPhone o iPad con el software de Apple TV actualizado. Sigue únicamente la indicación que ofrezca tu equipo; los menús y su disponibilidad dependen de la configuración. Confirma con el establecimiento el nombre de la red de invitados y pregunta qué datos o condiciones de acceso corresponden. No introduzcas la contraseña de IPTV en el portal del hotel ni supongas que la habitación incluye reproducción ilimitada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Wi-Fi de Apple TV y acceso a redes cautivas",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Separa el acceso de la reproducción",
+          "paragraphs": [
+            "Cuando el establecimiento confirme el acceso, vuelve a abrir el mismo reproductor y observa el resultado sin cambiar los datos guardados del proveedor. Si reaparece el portal, comunícalo al hotel; si internet funciona pero falla un reproductor, describe ese síntoma por separado al soporte de Geo IPTV. Comparte en privado el modelo, el texto de la pantalla y la hora, ocultando números de habitación, contraseñas y direcciones de reproducción. Estas observaciones no demuestran una caída general ni un problema de facturación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV et Wi-Fi d’hôtel : identifier d’abord la connexion réseau",
+      "excerpt": "La connexion au Wi-Fi d’un hôtel et celle d’un lecteur ont des fonctions différentes. Identifiez l’écran qui demande l’accès avant de modifier les données du fournisseur.",
+      "seo_title": "Geo IPTV et Wi-Fi d’hôtel : connexion réseau sur Apple TV",
+      "seo_description": "Vérifiez les demandes de connexion au Wi-Fi de l’hôtel sur Apple TV, distinguez les identifiants du lecteur et du réseau et conservez la configuration enregistrée.",
+      "sections": [
+        {
+          "heading": "Identifier la connexion demandée",
+          "paragraphs": [
+            "La vérification du Wi-Fi d’un hôtel pour Geo IPTV commence avant d’ouvrir le lecteur. Un réseau invité peut demander une connexion supplémentaire après la sélection de son nom. Cet écran relève de l’opérateur du réseau, pas nécessairement de votre fournisseur IPTV. Notez si le message apparaît dans les réglages réseau de l’Apple TV ou dans le lecteur, et si d’autres usages autorisés d’internet fonctionnent. La simple connexion au Wi-Fi ne prouve pas que l’étape d’accès à internet est terminée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Suivre l’invite réseau documentée",
+          "paragraphs": [
+            "Apple documente la prise en charge des réseaux captifs et la poursuite de la connexion sur un iPhone ou iPad avec un logiciel Apple TV à jour. Suivez uniquement l’invite proposée par votre équipement ; les intitulés et leur disponibilité dépendent de la configuration. Confirmez le nom du réseau invité auprès de l’établissement et demandez les identifiants ou conditions applicables. Ne saisissez pas votre mot de passe IPTV dans le portail de l’hôtel et ne supposez pas que la chambre inclut une diffusion illimitée."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : Wi-Fi de l’Apple TV et connexion aux réseaux captifs",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguer accès et lecture",
+          "paragraphs": [
+            "Lorsque l’établissement confirme l’accès réseau, rouvrez le même lecteur et observez le résultat sans modifier les données du fournisseur. Si le portail revient, signalez-le à l’établissement ; si internet fonctionne mais qu’un lecteur échoue, décrivez séparément ce symptôme au support Geo IPTV. Communiquez en privé le modèle, le texte affiché et l’heure, en masquant chambre, mots de passe et adresses de lecture. Ces observations ne prouvent ni panne générale du service ni problème de facturation."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV sul Wi-Fi dell’hotel: identifica prima l’accesso alla rete",
+      "excerpt": "L’accesso al Wi-Fi dell’hotel e quello al lettore hanno scopi diversi. Individua la schermata che richiede l’accesso prima di modificare i dati salvati del fornitore.",
+      "seo_title": "Geo IPTV e Wi-Fi dell’hotel: accesso alla rete con Apple TV",
+      "seo_description": "Controlla le richieste di accesso al Wi-Fi dell’hotel su Apple TV, distingui le credenziali della rete da quelle del lettore e conserva la configurazione salvata.",
+      "sections": [
+        {
+          "heading": "Identifica quale accesso viene richiesto",
+          "paragraphs": [
+            "Il controllo del Wi-Fi dell’hotel per Geo IPTV inizia prima di aprire il lettore. Una rete per ospiti può richiedere un altro accesso dopo la selezione del suo nome. Quella schermata appartiene al gestore della rete, non necessariamente al fornitore IPTV. Annota se il messaggio compare nelle impostazioni di rete di Apple TV oppure nel lettore e se sono disponibili altri usi consentiti di internet. Collegarsi al Wi-Fi non dimostra da solo che l’accesso a internet sia stato completato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Segui la richiesta di rete documentata",
+          "paragraphs": [
+            "Apple documenta il supporto delle reti captive e la possibilità di proseguire l’accesso su iPhone o iPad con il software di Apple TV aggiornato. Segui solo la richiesta proposta dal dispositivo: diciture e disponibilità dipendono dalla configurazione. Conferma con la struttura il nome corretto della rete per ospiti e chiedi quali credenziali o condizioni si applicano. Non inserire la password IPTV nel portale dell’hotel e non presumere che la camera comprenda streaming illimitato."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Wi-Fi di Apple TV e accesso alle reti captive",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui accesso e riproduzione",
+          "paragraphs": [
+            "Quando la struttura conferma l’accesso alla rete, riapri lo stesso lettore e osserva il risultato senza cambiare i dati salvati del fornitore. Se ricompare il portale, avvisa la struttura; se internet funziona ma un lettore presenta un errore, descrivi separatamente quel sintomo all’assistenza Geo IPTV. Condividi privatamente modello, testo della schermata e orario, nascondendo numeri di camera, password e indirizzi di riproduzione. Queste osservazioni non dimostrano un disservizio generale o un problema di fatturazione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV op hotelwifi: herken eerst de netwerkaanmelding",
+      "excerpt": "Aanmelden bij hotelwifi is iets anders dan inloggen in een IPTV-speler. Bepaal welk scherm toegang vraagt voordat je opgeslagen providergegevens verandert.",
+      "seo_title": "Geo IPTV op hotelwifi: Apple TV bij het gastnetwerk aanmelden",
+      "seo_description": "Controleer aanmeldmeldingen voor hotelwifi op Apple TV, houd netwerk- en spelergegevens uit elkaar en verzamel observaties zonder opgeslagen instellingen te wissen.",
+      "sections": [
+        {
+          "heading": "Bepaal welke aanmelding verschijnt",
+          "paragraphs": [
+            "Een controle van hotelwifi voor Geo IPTV begint voordat je de speler opent. Een gastnetwerk kan na het kiezen van de netwerknaam om een extra aanmelding vragen. Dat scherm hoort bij de netwerkbeheerder, niet automatisch bij je IPTV-provider. Noteer of de melding in de netwerkinstellingen van Apple TV of in de speler verschijnt en of ander toegestaan internetgebruik werkt. Alleen verbinding met wifi bewijst niet dat de stap voor internettoegang voltooid is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Volg de beschreven netwerkmelding",
+          "paragraphs": [
+            "Apple beschrijft ondersteuning voor netwerken met een aanmeldportaal en het voortzetten van de aanmelding op een iPhone of iPad met bijgewerkte Apple TV-software. Volg uitsluitend de melding die jouw apparatuur aanbiedt; menutekst en beschikbaarheid verschillen per opstelling. Controleer de juiste gastnetwerknaam bij het hotel en vraag welke gegevens of toegangsvoorwaarden gelden. Vul je IPTV-wachtwoord niet in op een hotelportaal en neem niet aan dat de kamer onbeperkt streamen omvat."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV met wifi en een aanmeldnetwerk verbinden",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Houd toegang en afspelen uit elkaar",
+          "paragraphs": [
+            "Open na bevestiging van de netwerktoegang dezelfde speler opnieuw en noteer de uitkomst zonder opgeslagen providergegevens te veranderen. Komt het portaal terug, meld dat dan bij het hotel. Werkt internet maar faalt één speler, beschrijf dat afzonderlijke symptoom aan de ondersteuning van Geo IPTV. Deel model, schermtekst en tijdstip privé en verberg kamernummers, wachtwoorden en afspeeladressen. Deze waarnemingen bewijzen geen algemene dienststoring of factureringsprobleem."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV no Wi-Fi do hotel: identifique primeiro o acesso à rede",
+      "excerpt": "O início de sessão no Wi-Fi do hotel e no leitor têm finalidades diferentes. Identifique o ecrã que pede acesso antes de alterar os dados guardados do fornecedor.",
+      "seo_title": "Geo IPTV no Wi-Fi do hotel: acesso de rede na Apple TV",
+      "seo_description": "Verifique os pedidos de acesso ao Wi-Fi do hotel na Apple TV, distinga os dados da rede dos do leitor e recolha observações sem repor a configuração guardada.",
+      "sections": [
+        {
+          "heading": "Identifique qual é o início de sessão",
+          "paragraphs": [
+            "A verificação do Wi-Fi de um hotel para Geo IPTV começa antes de abrir o leitor. Uma rede de convidados pode pedir outro início de sessão depois de selecionar o nome da rede. Esse ecrã pertence ao operador da rede, não necessariamente ao fornecedor IPTV. Registe se a mensagem apareceu nas definições de rede da Apple TV ou dentro do leitor e se outros usos permitidos da internet funcionam. Ligar ao Wi-Fi, por si só, não prova que a etapa de acesso à internet esteja concluída."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Siga o pedido de rede documentado",
+          "paragraphs": [
+            "A Apple documenta o suporte de redes cativas e a continuação do acesso num iPhone ou iPad com o software da Apple TV atualizado. Siga apenas o pedido apresentado pelo equipamento; os nomes dos menus e a disponibilidade dependem da configuração. Confirme com o estabelecimento o nome correto da rede de convidados e pergunte quais os dados ou condições de acesso aplicáveis. Não introduza a palavra-passe IPTV no portal do hotel nem presuma que o quarto inclui transmissão ilimitada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Wi-Fi da Apple TV e acesso a redes cativas",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Separe acesso e reprodução",
+          "paragraphs": [
+            "Depois de o estabelecimento confirmar o acesso à rede, reabra o mesmo leitor e observe o resultado sem alterar os dados guardados do fornecedor. Se o portal regressar, informe o estabelecimento; se a internet funcionar mas um leitor falhar, descreva esse sintoma separadamente ao apoio Geo IPTV. Partilhe em privado o modelo, o texto apresentado e a hora, ocultando números de quarto, palavras-passe e endereços de reprodução. Estas observações não demonstram uma falha geral do serviço nem um problema de faturação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV в Wi-Fi отеля: сначала определите вход в сеть",
+      "excerpt": "Вход в гостевую сеть отеля и в IPTV-плеер решают разные задачи. Определите, какой экран запрашивает доступ, прежде чем менять сохранённые данные провайдера.",
+      "seo_title": "Geo IPTV в Wi-Fi отеля: вход Apple TV в гостевую сеть",
+      "seo_description": "Проверьте запросы входа в гостиничный Wi-Fi на Apple TV, различайте данные сети и плеера и соберите наблюдения без сброса сохранённых настроек.",
+      "sections": [
+        {
+          "heading": "Определите, какой вход запрашивается",
+          "paragraphs": [
+            "Проверка гостиничного Wi-Fi для Geo IPTV начинается до открытия плеера. Гостевая сеть может запросить дополнительный вход после выбора её имени. Этот экран относится к оператору сети, а не обязательно к IPTV-провайдеру. Запишите, появилось ли сообщение в сетевых настройках Apple TV или внутри плеера и работают ли другие разрешённые способы использования интернета. Само подключение к Wi-Fi ещё не доказывает, что этап получения доступа в интернет завершён."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Следуйте описанной подсказке сети",
+          "paragraphs": [
+            "Apple описывает поддержку сетей с порталом авторизации и продолжение входа на iPhone или iPad при актуальном программном обеспечении Apple TV. Следуйте только подсказке, которую предлагает ваше оборудование: названия меню и доступность зависят от конфигурации. Уточните у сотрудников отеля правильное имя гостевой сети и необходимые данные или условия доступа. Не вводите пароль IPTV в гостиничный портал и не считайте, что проживание автоматически включает неограниченную потоковую передачу."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Wi-Fi Apple TV и вход в сеть с порталом авторизации",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте доступ и воспроизведение",
+          "paragraphs": [
+            "После подтверждения доступа сотрудниками отеля снова откройте тот же плеер и запишите результат, не меняя сохранённые данные провайдера. Если портал появляется снова, сообщите об этом отелю; если интернет работает, а один плеер выдаёт ошибку, отдельно опишите этот симптом поддержке Geo IPTV. Передайте приватно модель устройства, текст экрана и время, скрыв номер комнаты, пароли и адреса воспроизведения. Такие наблюдения не доказывают общий сбой сервиса или проблему с оплатой."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اور ہوٹل کا وائی فائی: پہلے نیٹ ورک کا لاگ اِن پہچانیں",
+      "excerpt": "ہوٹل کے وائی فائی اور آئی پی ٹی وی پلیئر کا لاگ اِن الگ مقصد رکھتے ہیں۔ فراہم کنندہ کی محفوظ تفصیل بدلنے سے پہلے دیکھیں کہ رسائی کون سی اسکرین مانگ رہی ہے۔",
+      "seo_title": "Geo IPTV ہوٹل وائی فائی: Apple TV پر مہمان نیٹ ورک میں داخلہ",
+      "seo_description": "Apple TV پر ہوٹل کے وائی فائی کا لاگ اِن دیکھیں، نیٹ ورک اور پلیئر کی اسناد الگ رکھیں اور محفوظ سیٹ اپ مٹائے بغیر مفید مشاہدات جمع کریں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کون سا لاگ اِن مانگا جا رہا ہے",
+          "paragraphs": [
+            "Geo IPTV کے لیے ہوٹل کا وائی فائی جانچنا پلیئر کھولنے سے پہلے شروع ہوتا ہے۔ ہوٹل یا مہمان نیٹ ورک کا نام منتخب کرنے کے بعد ایک اور لاگ اِن مانگا جا سکتا ہے۔ یہ اسکرین نیٹ ورک چلانے والے کی ہوتی ہے، ضروری نہیں کہ آپ کے آئی پی ٹی وی فراہم کنندہ کی ہو۔ نوٹ کریں کہ پیغام Apple TV کی نیٹ ورک سیٹنگز میں آیا یا پلیئر کے اندر، اور کیا انٹرنیٹ کا دوسرا اجازت یافتہ استعمال دستیاب ہے۔ صرف وائی فائی سے جڑ جانا انٹرنیٹ رسائی کا مرحلہ مکمل ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نیٹ ورک کی دستاویزی ہدایت پر عمل کریں",
+          "paragraphs": [
+            "Apple کی دستاویز میں ایسے نیٹ ورک اور تازہ سافٹ ویئر والے Apple TV کے ساتھ iPhone یا iPad پر لاگ اِن آگے بڑھانے کی سہولت بیان ہے۔ صرف اپنے آلات پر آنے والی ہدایت پر عمل کریں؛ مینیو کے الفاظ اور سہولت سیٹ اپ کے مطابق مختلف ہو سکتے ہیں۔ ہوٹل کے عملے سے مہمان نیٹ ورک کا درست نام اور درکار لاگ اِن یا رسائی کی شرائط معلوم کریں۔ ہوٹل کے پورٹل میں آئی پی ٹی وی کا پاس ورڈ نہ دیں اور یہ فرض نہ کریں کہ کمرے کے ساتھ لامحدود اسٹریمنگ بھی شامل ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV کا وائی فائی اور اضافی نیٹ ورک لاگ اِن",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "نیٹ ورک رسائی اور ویڈیو چلنے کو الگ دیکھیں",
+          "paragraphs": [
+            "عملہ نیٹ ورک رسائی کی تصدیق کر دے تو فراہم کنندہ کی محفوظ تفصیل بدلے بغیر وہی پلیئر دوبارہ کھول کر نتیجہ لکھیں۔ پورٹل پھر آ جائے تو ہوٹل کو بتائیں؛ انٹرنیٹ چلتا ہو مگر ایک پلیئر میں خرابی ہو تو یہ الگ علامت Geo IPTV کی معاونت کو سمجھائیں۔ آلے کا ماڈل، اسکرین کے الفاظ اور وقت نجی طور پر دیں، مگر کمرے کے نمبر، پاس ورڈ اور ویڈیو کے نجی پتے چھپائیں۔ ان مشاہدات سے پوری سروس کی بندش یا بل کی خرابی ثابت نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV وواي فاي الفندق: تعرّف أولاً إلى تسجيل دخول الشبكة",
+      "excerpt": "تسجيل الدخول إلى واي فاي الفندق يختلف عن الدخول إلى مشغّل IPTV. حدّد الشاشة التي تطلب الوصول قبل تغيير بيانات المزوّد المحفوظة.",
+      "seo_title": "Geo IPTV وواي فاي الفندق: دخول شبكة الضيوف على Apple TV",
+      "seo_description": "تحقّق من مطالبات دخول واي فاي الفندق على Apple TV، وافصل بيانات الشبكة عن بيانات المشغّل واجمع ملاحظات مفيدة دون إعادة ضبط الإعداد المحفوظ.",
+      "sections": [
+        {
+          "heading": "حدّد أي تسجيل دخول يُطلب",
+          "paragraphs": [
+            "يبدأ فحص واي فاي الفندق لاستخدام Geo IPTV قبل فتح المشغّل. قد تطلب شبكة الفندق أو الضيوف تسجيل دخول إضافياً بعد اختيار اسمها. تخصّ هذه الشاشة مشغّل الشبكة، وليس بالضرورة مزوّد IPTV. دوّن ما إذا كانت الرسالة ظهرت في إعدادات شبكة Apple TV أو داخل المشغّل، وهل تعمل استخدامات الإنترنت الأخرى المسموح بها. الاتصال بالواي فاي وحده لا يثبت اكتمال خطوة الحصول على الوصول إلى الإنترنت."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اتبع مطالبة الشبكة الموثّقة",
+          "paragraphs": [
+            "توضّح Apple دعم الشبكات ذات بوابة الدخول وإمكانية متابعة التسجيل على iPhone أو iPad عند تحديث برنامج Apple TV. اتبع فقط المطالبة التي يعرضها جهازك؛ تختلف أسماء القوائم وتوافر الخيارات باختلاف الإعداد. أكّد اسم شبكة الضيوف الصحيح مع موظفي الفندق واسألهم عن بيانات الدخول أو شروط الوصول المطلوبة. لا تدخل كلمة مرور IPTV في بوابة الفندق ولا تفترض أن حجز الغرفة يتضمّن بثاً غير محدود."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: واي فاي Apple TV وتسجيل الدخول إلى الشبكات ذات البوابة",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الوصول إلى الشبكة عن التشغيل",
+          "paragraphs": [
+            "بعد أن يؤكّد الفندق إتاحة الوصول إلى الشبكة، افتح المشغّل نفسه مجدداً وسجّل النتيجة دون تغيير بيانات المزوّد المحفوظة. إذا عادت البوابة فأبلغ الفندق؛ وإذا عمل الإنترنت وفشل مشغّل واحد، فاشرح هذه العلامة المنفصلة لدعم Geo IPTV. شارك طراز الجهاز ونص الشاشة والوقت بصورة خاصة، مع إخفاء أرقام الغرف وكلمات المرور وعناوين التشغيل. لا تثبت هذه الملاحظات عطلاً عاماً في الخدمة أو مشكلة في الفوترة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV और होटल का वाई-फ़ाई: पहले नेटवर्क का लॉगिन पहचानें",
+      "excerpt": "होटल के वाई-फ़ाई और IPTV प्लेयर के लॉगिन के उद्देश्य अलग हैं। प्रदाता की सहेजी जानकारी बदलने से पहले पहचानें कि कौन-सी स्क्रीन पहुँच माँग रही है।",
+      "seo_title": "Geo IPTV होटल वाई-फ़ाई: Apple TV पर अतिथि नेटवर्क में प्रवेश",
+      "seo_description": "Apple TV पर होटल के वाई-फ़ाई की लॉगिन माँग जाँचें, नेटवर्क और प्लेयर के विवरण अलग रखें और सहेजा सेटअप मिटाए बिना उपयोगी जानकारी जुटाएँ।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन-सा लॉगिन माँगा गया है",
+          "paragraphs": [
+            "Geo IPTV के लिए होटल के वाई-फ़ाई की जाँच प्लेयर खोलने से पहले शुरू होती है। होटल या अतिथि नेटवर्क का नाम चुनने के बाद एक और लॉगिन माँगा जा सकता है। वह स्क्रीन नेटवर्क संचालक की होती है, ज़रूरी नहीं कि आपके IPTV प्रदाता की हो। लिखें कि संदेश Apple TV की नेटवर्क सेटिंग में आया या प्लेयर के भीतर, और क्या इंटरनेट के दूसरे अनुमत उपयोग उपलब्ध हैं। केवल वाई-फ़ाई से जुड़ना यह प्रमाण नहीं है कि इंटरनेट पहुँच का चरण पूरा हो गया।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "नेटवर्क का दस्तावेज़ित निर्देश अपनाएँ",
+          "paragraphs": [
+            "Apple की जानकारी में ऐसे नेटवर्क का समर्थन और अद्यतन Apple TV सॉफ़्टवेयर के साथ iPhone या iPad पर लॉगिन आगे बढ़ाना बताया गया है। केवल अपने उपकरण पर आने वाला निर्देश अपनाएँ; मेन्यू के शब्द और सुविधा सेटअप के अनुसार बदल सकते हैं। होटल के कर्मचारियों से अतिथि नेटवर्क का सही नाम और आवश्यक लॉगिन या पहुँच की शर्तें पूछें। होटल के पोर्टल में IPTV का पासवर्ड न डालें और यह न मानें कि कमरे के साथ असीमित स्ट्रीमिंग भी मिलती है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV का वाई-फ़ाई और अतिरिक्त नेटवर्क लॉगिन",
+              "url": "https://support.apple.com/en-us/102346"
+            }
+          ]
+        },
+        {
+          "heading": "नेटवर्क पहुँच और प्लेबैक अलग जाँचें",
+          "paragraphs": [
+            "होटल नेटवर्क पहुँच की पुष्टि करे तो प्रदाता के सहेजे विवरण बदले बिना वही प्लेयर दोबारा खोलें और परिणाम लिखें। पोर्टल फिर दिखाई दे तो होटल को बताएँ; इंटरनेट चले लेकिन एक प्लेयर में त्रुटि हो तो वह अलग लक्षण Geo IPTV सहायता को समझाएँ। उपकरण का मॉडल, स्क्रीन के शब्द और समय निजी रूप से दें, पर कमरे के नंबर, पासवर्ड और प्लेबैक पते छिपाएँ। इन निरीक्षणों से पूरी सेवा बंद होना या बिल की समस्या साबित नहीं होती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: Apple TV Wi-Fi and captive-network sign-in",
+      "url": "https://support.apple.com/en-us/102346"
+    }
+  ]
+}

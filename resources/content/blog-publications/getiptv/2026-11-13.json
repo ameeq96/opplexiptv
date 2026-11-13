@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-13",
+  "topic": "Identify a documented low-power warning on an external Google streaming device separately from Get IPTV player access while preserving saved setup",
+  "primary_keyword": "Get IPTV power check",
+  "slug": "getiptv-power-warning-external-google-streaming-device",
+  "translations": {
+    "en": {
+      "title": "Get IPTV power check: recognise a Google streamer warning",
+      "excerpt": "Identify a documented power warning on an external Google streamer before changing a player account. Check the supplied power arrangement and keep any remaining playback symptom separate.",
+      "seo_title": "Get IPTV power check: identify the external streamer warning",
+      "seo_description": "Recognise a Chromecast with Google TV or Google TV Streamer power warning, check the documented accessories and separate hardware startup from Get IPTV access.",
+      "sections": [
+        {
+          "heading": "Identify the external device",
+          "paragraphs": [
+            "A Get IPTV power check is useful when an external Google streaming device actually displays Low power or g.co/cast/power. Google's guidance covers Chromecast with Google TV and Google TV Streamer (4K); it is not a universal diagnosis for every television with Google TV built in. Record the exact device model and warning first. A player error with no power warning needs its own description rather than an automatic assumption about the power supply."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the documented power path",
+          "paragraphs": [
+            "Google recommends the supplied power adapter and cable, with the adapter connected to a reliable wall outlet. A television USB port or different accessory may not provide a suitable supply. Inspect this existing arrangement against the instructions for the exact device; do not improvise wiring or assume that an arbitrary replacement adapter is compatible. If a supplied part is missing or the warning remains, use the manufacturer's support guidance."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help: low-power warnings",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Return to the player after the warning is resolved",
+          "paragraphs": [
+            "Once the device starts normally, open the existing player and describe any remaining symptom separately. Preserving the saved setup makes that comparison clearer than immediately reinstalling an app or resetting the device. Get IPTV lists Opplex and Filex as different service options, and the player's own fee is separate from a service plan. A hardware power warning does not confirm provider expiry, payment failure or a need to buy another subscription."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comprobar la alimentación con Get IPTV: reconozca el aviso del dispositivo Google",
+      "excerpt": "Identifique un aviso de alimentación documentado en un dispositivo externo de Google antes de cambiar la cuenta del reproductor. Revise la alimentación suministrada y describa aparte cualquier problema de reproducción restante.",
+      "seo_title": "Get IPTV: comprobar el aviso de alimentación del dispositivo",
+      "seo_description": "Reconozca el aviso de alimentación de Chromecast con Google TV o Google TV Streamer, revise los accesorios documentados y distinga el arranque del acceso a Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique el dispositivo externo",
+          "paragraphs": [
+            "Comprobar la alimentación con Get IPTV resulta útil cuando un dispositivo externo de streaming de Google muestra realmente el aviso de alimentación insuficiente o g.co/cast/power. La guía de Google cubre Chromecast con Google TV y Google TV Streamer (4K); no es un diagnóstico universal para cualquier televisor que incorpore Google TV. Anote primero el modelo exacto y el aviso. Un error del reproductor sin advertencia de alimentación necesita su propia descripción, en lugar de atribuirlo automáticamente a la fuente de energía."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revise la alimentación documentada",
+          "paragraphs": [
+            "Google recomienda el adaptador y el cable suministrados, con el adaptador conectado a un enchufe de pared fiable. El puerto USB del televisor u otro accesorio pueden no proporcionar alimentación adecuada. Compare la instalación existente con las instrucciones del dispositivo concreto; no improvise conexiones ni suponga que cualquier adaptador de repuesto es compatible. Si falta una pieza suministrada o persiste el aviso, utilice la orientación de soporte del fabricante."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Streaming de Google: avisos de alimentación insuficiente",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vuelva al reproductor cuando desaparezca el aviso",
+          "paragraphs": [
+            "Cuando el dispositivo arranque normalmente, abra el reproductor existente y describa por separado cualquier síntoma restante. Conservar la configuración guardada permite comparar mejor que reinstalar inmediatamente una aplicación o restablecer el equipo. Get IPTV presenta Opplex y Filex como servicios distintos, y la tarifa propia del reproductor es independiente del plan de servicio. Un aviso de alimentación del hardware no confirma que el proveedor haya caducado, que un pago fallara ni que deba comprar otra suscripción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : reconnaître une alerte d'alimentation du boîtier Google",
+      "excerpt": "Identifiez l'alerte d'alimentation documentée d'un appareil Google externe avant de modifier le compte du lecteur. Vérifiez les accessoires fournis et distinguez tout problème de lecture restant.",
+      "seo_title": "Get IPTV : vérifier l'alerte d'alimentation du boîtier",
+      "seo_description": "Reconnaissez l'alerte d'alimentation d'un Chromecast avec Google TV ou Google TV Streamer, vérifiez les accessoires documentés et distinguez démarrage et accès au service.",
+      "sections": [
+        {
+          "heading": "Identifiez l'appareil externe",
+          "paragraphs": [
+            "Une vérification de l'alimentation pour Get IPTV est utile lorsqu'un appareil de streaming Google externe affiche réellement une alerte d'alimentation insuffisante ou g.co/cast/power. Les instructions Google concernent Chromecast avec Google TV et Google TV Streamer (4K) ; elles ne constituent pas un diagnostic universel pour chaque téléviseur intégrant Google TV. Notez d'abord le modèle exact et l'alerte. Une erreur du lecteur sans alerte d'alimentation mérite sa propre description, plutôt qu'une conclusion automatique sur la source électrique."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez l'alimentation documentée",
+          "paragraphs": [
+            "Google recommande l'adaptateur et le câble fournis, avec l'adaptateur branché sur une prise murale fiable. Le port USB du téléviseur ou un autre accessoire peut ne pas fournir une alimentation adaptée. Comparez l'installation existante aux instructions de l'appareil précis ; n'improvisez pas de câblage et ne supposez pas qu'un adaptateur de remplacement quelconque est compatible. S'il manque une pièce fournie ou si l'alerte persiste, suivez l'assistance du fabricant."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Streaming Google : alertes d'alimentation insuffisante",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Revenez au lecteur une fois l'alerte résolue",
+          "paragraphs": [
+            "Lorsque l'appareil démarre normalement, ouvrez le lecteur existant et décrivez séparément tout symptôme persistant. Conserver la configuration enregistrée facilite cette comparaison, contrairement à une réinstallation immédiate ou à une réinitialisation de l'appareil. Get IPTV présente Opplex et Filex comme des options de service distinctes ; les frais propres au lecteur sont séparés du forfait. Une alerte matérielle d'alimentation ne confirme ni une expiration du service, ni un échec de paiement, ni la nécessité d'acheter un autre abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: riconosci l'avviso di alimentazione del dispositivo Google",
+      "excerpt": "Identifica un avviso di alimentazione documentato su un dispositivo Google esterno prima di cambiare l'account del lettore. Controlla gli accessori forniti e descrivi separatamente eventuali problemi di riproduzione.",
+      "seo_title": "Get IPTV: controllare l'avviso di alimentazione del dispositivo",
+      "seo_description": "Riconosci l'avviso di alimentazione di Chromecast con Google TV o Google TV Streamer, controlla gli accessori documentati e distingui l'avvio dall'accesso a Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica il dispositivo esterno",
+          "paragraphs": [
+            "Il controllo dell'alimentazione per Get IPTV è utile quando un dispositivo di streaming Google esterno mostra davvero l'avviso di alimentazione insufficiente oppure g.co/cast/power. La guida di Google riguarda Chromecast con Google TV e Google TV Streamer (4K); non è una diagnosi universale per ogni televisore con Google TV integrata. Annota prima il modello esatto e l'avviso. Un errore del lettore senza avvertimenti sull'alimentazione richiede una descrizione propria, anziché attribuirlo automaticamente all'alimentatore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla il collegamento documentato",
+          "paragraphs": [
+            "Google consiglia l'alimentatore e il cavo forniti, collegando l'alimentatore a una presa a muro affidabile. La porta USB del televisore o un accessorio diverso potrebbero non offrire un'alimentazione adeguata. Confronta la disposizione esistente con le istruzioni del dispositivo preciso; non improvvisare cablaggi e non presumere che un alimentatore di ricambio qualsiasi sia compatibile. Se manca un componente fornito o l'avviso persiste, segui l'assistenza del produttore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Assistenza Streaming Google: avvisi di alimentazione insufficiente",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Torna al lettore dopo aver risolto l'avviso",
+          "paragraphs": [
+            "Quando il dispositivo si avvia normalmente, apri il lettore esistente e descrivi a parte ogni sintomo rimasto. Conservare la configurazione salvata rende il confronto più chiaro rispetto a reinstallare subito un'app o ripristinare il dispositivo. Get IPTV elenca Opplex e Filex come servizi diversi e il costo del lettore è separato dal piano del servizio. Un avviso di alimentazione dell'hardware non conferma la scadenza del fornitore, un pagamento fallito o la necessità di acquistare un altro abbonamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: herken de voedingswaarschuwing van een Google-streamer",
+      "excerpt": "Herken een gedocumenteerde voedingswaarschuwing op een extern Google-apparaat voordat je het speleraccount wijzigt. Controleer de meegeleverde voeding en houd resterende afspeelproblemen apart.",
+      "seo_title": "Get IPTV: voedingswaarschuwing van de externe streamer controleren",
+      "seo_description": "Herken de voedingswaarschuwing van Chromecast met Google TV of Google TV Streamer, controleer de beschreven accessoires en houd opstarten gescheiden van toegang tot Get IPTV.",
+      "sections": [
+        {
+          "heading": "Bepaal welk extern apparaat je gebruikt",
+          "paragraphs": [
+            "Een voedingscontrole voor Get IPTV is nuttig wanneer een extern Google-streamingapparaat daadwerkelijk een waarschuwing voor te weinig stroom of g.co/cast/power toont. De Google-instructies gelden voor Chromecast met Google TV en Google TV Streamer (4K); ze zijn geen algemene diagnose voor elke televisie met ingebouwde Google TV. Noteer eerst het precieze model en de waarschuwing. Een spelerfout zonder voedingswaarschuwing vraagt om een eigen beschrijving, in plaats van automatisch de voeding als oorzaak aan te wijzen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de beschreven stroomvoorziening",
+          "paragraphs": [
+            "Google raadt de meegeleverde adapter en kabel aan, met de adapter in een betrouwbaar stopcontact. Een USB-poort van de televisie of een ander accessoire levert mogelijk geen geschikte voeding. Vergelijk de bestaande aansluiting met de instructies voor het precieze apparaat; improviseer geen bedrading en neem niet aan dat een willekeurige vervangende adapter geschikt is. Ontbreekt een meegeleverd onderdeel of blijft de waarschuwing staan, volg dan de ondersteuning van de fabrikant."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help: waarschuwingen voor te weinig stroom",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ga terug naar de speler als de waarschuwing is verholpen",
+          "paragraphs": [
+            "Open de bestaande speler zodra het apparaat normaal opstart en beschrijf een resterend probleem afzonderlijk. De opgeslagen instellingen bewaren maakt de vergelijking duidelijker dan meteen een app opnieuw installeren of het apparaat resetten. Get IPTV vermeldt Opplex en Filex als verschillende diensten; eventuele eigen spelerskosten staan los van het serviceabonnement. Een hardwarewaarschuwing over de voeding bevestigt niet dat toegang bij de provider is verlopen, een betaling mislukte of je een nieuw abonnement moet kopen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: reconheça o aviso de alimentação do dispositivo Google",
+      "excerpt": "Identifique um aviso de alimentação documentado num dispositivo Google externo antes de alterar a conta do leitor. Verifique os acessórios fornecidos e descreva separadamente qualquer problema de reprodução restante.",
+      "seo_title": "Get IPTV: verificar o aviso de alimentação do dispositivo",
+      "seo_description": "Reconheça o aviso de alimentação do Chromecast com Google TV ou Google TV Streamer, verifique os acessórios documentados e separe o arranque do acesso ao Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique o dispositivo externo",
+          "paragraphs": [
+            "A verificação da alimentação para Get IPTV é útil quando um dispositivo externo de streaming do Google mostra realmente um aviso de alimentação insuficiente ou g.co/cast/power. As instruções do Google abrangem Chromecast com Google TV e Google TV Streamer (4K); não são um diagnóstico universal para todas as televisões com Google TV integrada. Registe primeiro o modelo exato e o aviso. Um erro do leitor sem aviso de alimentação exige descrição própria, em vez de atribuição automática à fonte de energia."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifique a alimentação documentada",
+          "paragraphs": [
+            "O Google recomenda o adaptador de alimentação e o cabo fornecidos, com o adaptador ligado a uma tomada de parede fiável. Uma porta USB da televisão ou um acessório diferente pode não fornecer energia adequada. Compare a instalação existente com as instruções do dispositivo exato; não improvise cablagem nem presuma que qualquer adaptador de substituição é compatível. Se faltar uma peça fornecida ou o aviso continuar, recorra às instruções de apoio do fabricante."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Streaming Google: avisos de alimentação insuficiente",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Volte ao leitor depois de resolver o aviso",
+          "paragraphs": [
+            "Quando o dispositivo arrancar normalmente, abra o leitor existente e descreva à parte os sintomas que persistirem. Preservar a configuração guardada torna essa comparação mais clara do que reinstalar imediatamente uma aplicação ou repor o dispositivo. Get IPTV apresenta Opplex e Filex como opções de serviço distintas; a eventual tarifa do leitor é independente do plano de serviço. Um aviso de alimentação do equipamento não confirma expiração do fornecedor, falha de pagamento ou necessidade de comprar outra assinatura."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: как распознать предупреждение о питании устройства Google",
+      "excerpt": "Определите документированное предупреждение о питании внешнего устройства Google, прежде чем менять учётную запись проигрывателя. Проверьте комплектное питание и отдельно опишите оставшиеся проблемы воспроизведения.",
+      "seo_title": "Get IPTV: проверка предупреждения о питании внешнего устройства",
+      "seo_description": "Распознайте предупреждение о питании Chromecast с Google TV или Google TV Streamer, проверьте указанные аксессуары и отделите запуск устройства от доступа к Get IPTV.",
+      "sections": [
+        {
+          "heading": "Определите внешнее устройство",
+          "paragraphs": [
+            "Проверка питания для Get IPTV полезна, когда внешнее потоковое устройство Google действительно показывает предупреждение о недостаточном питании или g.co/cast/power. Инструкция Google касается Chromecast с Google TV и Google TV Streamer (4K); это не универсальный диагноз для любого телевизора со встроенной Google TV. Сначала запишите точную модель и предупреждение. Ошибка проигрывателя без предупреждения о питании требует отдельного описания, а не автоматического вывода о неисправности источника питания."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте питание по инструкции",
+          "paragraphs": [
+            "Google рекомендует комплектные адаптер питания и кабель, подключив адаптер к надёжной настенной розетке. USB-порт телевизора или другой аксессуар может не обеспечить подходящее питание. Сверьте существующее подключение с инструкцией именно к вашему устройству; не переделывайте проводку и не считайте любой запасной адаптер совместимым. Если комплектной детали нет или предупреждение остаётся, обратитесь к рекомендациям службы поддержки производителя."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Streaming: предупреждения о недостаточном питании",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Вернитесь к проигрывателю после устранения предупреждения",
+          "paragraphs": [
+            "Когда устройство запускается нормально, откройте существующий проигрыватель и отдельно опишите оставшиеся симптомы. Сохранённые настройки делают сравнение понятнее, чем немедленная переустановка приложения или сброс устройства. Get IPTV предлагает Opplex и Filex как разные варианты услуги; собственная плата за проигрыватель отделена от сервисного тарифа. Аппаратное предупреждение о питании не подтверждает окончание доступа у поставщика, неудачный платёж или необходимость покупать другую подписку."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: Google اسٹریمنگ آلے کی بجلی کی تنبیہ پہچانیں",
+      "excerpt": "پلیئر کا اکاؤنٹ بدلنے سے پہلے Google کے بیرونی آلے پر درج بجلی کی تنبیہ پہچانیں۔ فراہم کردہ بجلی کے سامان کو جانچیں اور باقی پلے بیک مسئلہ الگ بیان کریں۔",
+      "seo_title": "Get IPTV: بیرونی اسٹریمنگ آلے کی بجلی کی تنبیہ کی جانچ",
+      "seo_description": "Chromecast with Google TV یا Google TV Streamer کی بجلی کی تنبیہ پہچانیں، درج شدہ لوازمات جانچیں اور آلے کے آغاز کو Get IPTV تک رسائی سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "بیرونی آلہ پہچانیں",
+          "paragraphs": [
+            "Get IPTV کے لیے بجلی کی جانچ اس وقت مفید ہے جب Google کا بیرونی اسٹریمنگ آلہ واقعی کم بجلی کی تنبیہ یا g.co/cast/power دکھائے۔ Google کی رہنمائی Chromecast with Google TV اور Google TV Streamer (4K) کے لیے ہے؛ یہ ہر ایسے ٹی وی کی عمومی تشخیص نہیں جس میں Google TV اندر موجود ہو۔ پہلے درست ماڈل اور تنبیہ لکھیں۔ بجلی کی تنبیہ کے بغیر پلیئر کی خرابی کو الگ بیان کرنا چاہیے، بجائے فوراً بجلی کی فراہمی کو وجہ مان لینے کے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "درج شدہ بجلی کا راستہ دیکھیں",
+          "paragraphs": [
+            "Google فراہم کردہ پاور اڈاپٹر اور کیبل تجویز کرتا ہے، جبکہ اڈاپٹر کسی قابل اعتماد دیواری ساکٹ میں لگا ہو۔ ٹی وی کا USB پورٹ یا مختلف لوازمہ مناسب بجلی نہ دے سکے۔ موجودہ بندوبست کو اسی مخصوص آلے کی ہدایات کے ساتھ دیکھیں؛ اپنی طرف سے تاریں تبدیل نہ کریں اور کسی بھی متبادل اڈاپٹر کو لازماً موافق نہ سمجھیں۔ اگر فراہم کردہ کوئی حصہ موجود نہیں یا تنبیہ برقرار ہے تو سازندے کی معاونت کی رہنمائی لیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming کی رہنمائی: کم بجلی کی تنبیہات",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تنبیہ دور ہونے کے بعد پلیئر پر واپس آئیں",
+          "paragraphs": [
+            "جب آلہ معمول کے مطابق شروع ہو تو موجودہ پلیئر کھولیں اور باقی علامت الگ بیان کریں۔ فوراً ایپ دوبارہ نصب کرنے یا آلہ ری سیٹ کرنے کے مقابلے میں محفوظ سیٹ اپ قائم رکھنا تقابل زیادہ واضح بناتا ہے۔ Get IPTV پر Opplex اور Filex الگ خدماتی انتخاب ہیں، اور پلیئر کی اپنی فیس سروس پلان سے الگ ہے۔ آلے کی بجلی کی تنبیہ فراہم کنندہ کی مدت ختم ہونے، ادائیگی ناکام ہونے یا نئی سبسکرپشن خریدنے کی ضرورت کی تصدیق نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: تعرّف على تحذير الطاقة في جهاز Google الخارجي",
+      "excerpt": "حدّد تحذير الطاقة الموثّق في جهاز Google خارجي قبل تغيير حساب المشغّل. راجع ملحقات الطاقة المرفقة، وافصل أي عارض متبقٍ في التشغيل عن مشكلة بدء الجهاز.",
+      "seo_title": "Get IPTV: فحص تحذير طاقة جهاز البث الخارجي",
+      "seo_description": "تعرّف على تحذير طاقة Chromecast with Google TV أو Google TV Streamer، وراجع الملحقات الموثّقة، وافصل بدء الجهاز عن الوصول إلى Get IPTV.",
+      "sections": [
+        {
+          "heading": "حدّد الجهاز الخارجي",
+          "paragraphs": [
+            "يكون فحص الطاقة من أجل Get IPTV مفيداً عندما يعرض جهاز بث Google خارجي فعلاً تحذير انخفاض الطاقة أو g.co/cast/power. تشمل إرشادات Google جهازَي Chromecast with Google TV وGoogle TV Streamer (4K)؛ وهي ليست تشخيصاً عاماً لكل تلفاز يتضمن Google TV داخلياً. سجّل أولاً الطراز الدقيق والتحذير. يحتاج خطأ المشغّل الذي لا يصاحبه تحذير طاقة إلى وصف مستقل، بدلاً من افتراض أن مصدر الطاقة هو السبب تلقائياً."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع توصيل الطاقة الموثّق",
+          "paragraphs": [
+            "توصي Google باستخدام محوّل الطاقة والكابل المرفقين، مع توصيل المحوّل بمقبس حائط موثوق. قد لا يوفر منفذ USB في التلفاز أو ملحق مختلف طاقة مناسبة. قارن الترتيب الحالي بتعليمات طراز الجهاز المحدد؛ لا ترتجل تعديلات في الأسلاك ولا تفترض أن أي محوّل بديل متوافق. إذا كان أحد الأجزاء المرفقة مفقوداً أو استمر التحذير، فاتبع إرشادات دعم الشركة المصنّعة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Streaming: تحذيرات انخفاض الطاقة",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ارجع إلى المشغّل بعد زوال التحذير",
+          "paragraphs": [
+            "عندما يبدأ الجهاز بصورة طبيعية، افتح المشغّل الموجود وصف أي عارض متبقٍ بشكل مستقل. يجعل الحفاظ على الإعداد المحفوظ المقارنة أوضح من إعادة تثبيت التطبيق فوراً أو إعادة ضبط الجهاز. يعرض Get IPTV خدمتي Opplex وFilex كخيارين مختلفين، ورسوم المشغّل نفسه منفصلة عن باقة الخدمة. لا يؤكد تحذير طاقة في الجهاز انتهاء اشتراك المزوّد أو فشل الدفع أو الحاجة إلى شراء اشتراك آخر."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: Google स्ट्रीमिंग डिवाइस की बिजली चेतावनी पहचानें",
+      "excerpt": "प्लेयर का खाता बदलने से पहले बाहरी Google डिवाइस पर बिजली की दस्तावेज़ित चेतावनी पहचानें। साथ मिले बिजली उपकरण जाँचें और बची हुई प्लेबैक समस्या अलग बताएँ।",
+      "seo_title": "Get IPTV: बाहरी स्ट्रीमिंग डिवाइस की बिजली चेतावनी की जाँच",
+      "seo_description": "Chromecast with Google TV या Google TV Streamer की बिजली चेतावनी पहचानें, बताए गए उपकरण जाँचें और डिवाइस शुरू होने को Get IPTV की पहुँच से अलग रखें।",
+      "sections": [
+        {
+          "heading": "बाहरी डिवाइस पहचानें",
+          "paragraphs": [
+            "Get IPTV के लिए बिजली की जाँच तब उपयोगी है जब बाहरी Google स्ट्रीमिंग डिवाइस सचमुच कम बिजली की चेतावनी या g.co/cast/power दिखाए। Google की सहायता Chromecast with Google TV और Google TV Streamer (4K) के लिए है; यह हर उस टेलीविज़न का सामान्य निदान नहीं जिसमें Google TV पहले से बनी हो। पहले सटीक मॉडल और चेतावनी लिखें। बिजली चेतावनी के बिना प्लेयर की त्रुटि को अलग वर्णित करना चाहिए, बिजली की आपूर्ति को अपने आप कारण मानना उचित नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ में बताया गया बिजली संपर्क जाँचें",
+          "paragraphs": [
+            "Google साथ मिला पावर अडैप्टर और केबल इस्तेमाल करने की सलाह देता है, जिसमें अडैप्टर भरोसेमंद दीवार के सॉकेट से जुड़ा हो। टेलीविज़न का USB पोर्ट या अलग उपकरण पर्याप्त उपयुक्त बिजली न दे पाए। मौजूदा व्यवस्था को ठीक उसी डिवाइस के निर्देशों से मिलाएँ; तारों में अपनी ओर से बदलाव न करें और किसी भी बदले हुए अडैप्टर को अनिवार्य रूप से संगत न मानें। साथ मिला हिस्सा गायब हो या चेतावनी बनी रहे, तो निर्माता की सहायता संबंधी जानकारी लें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming सहायता: कम बिजली की चेतावनियाँ",
+              "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "चेतावनी दूर होने पर प्लेयर पर लौटें",
+          "paragraphs": [
+            "डिवाइस सामान्य रूप से शुरू होने पर मौजूदा प्लेयर खोलें और बाकी समस्या अलग बताएँ। तुरंत ऐप दोबारा इंस्टॉल करने या डिवाइस रीसेट करने की अपेक्षा सेव किया हुआ सेटअप रखना तुलना साफ बनाता है। Get IPTV में Opplex और Filex अलग सेवा विकल्प हैं तथा प्लेयर का अपना शुल्क सेवा प्लान से अलग है। हार्डवेयर की बिजली चेतावनी प्रदाता की अवधि समाप्त होने, भुगतान विफल होने या दूसरी सदस्यता खरीदने की जरूरत की पुष्टि नहीं करती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help: low-power warnings",
+      "url": "https://support.google.com/chromecast/answer/10087405?hl=en"
+    }
+  ]
+}

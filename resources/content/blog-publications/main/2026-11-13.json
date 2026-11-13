@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-13",
+  "topic": "Separate VLC for Android playback-history recording and cleanup from media-database deletion and provider account actions",
+  "primary_keyword": "IPTV playback history",
+  "slug": "main-playback-history-records-not-media-database",
+  "translations": {
+    "en": {
+      "title": "IPTV playback history: clear the record, not the media database",
+      "excerpt": "VLC history, its recording preference and the media database are different controls. Identify which record you want to change before touching saved setup.",
+      "seo_title": "IPTV playback history: clear the record, not the media database",
+      "seo_description": "Review VLC for Android history recording and cleanup separately from media-database deletion, while protecting playlists, private addresses and provider access.",
+      "sections": [
+        {
+          "heading": "Identify the record",
+          "paragraphs": [
+            "IPTV playback history is a local player record, not a list of subscription payments. First check whether you are looking at VLC’s History section, a playlist or an account screen. VideoLAN documents a Playback history preference that saves media playback in History. Decide separately whether you want future activity recorded and whether you want existing entries removed. Changing a recording preference is not the same task as clearing a record."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: general settings and history",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Read the exact cleanup label",
+          "paragraphs": [
+            "In its Android 3.5 documentation, VideoLAN separates Clear playback history from Clear media database. The latter removes saved progress and created playlists. If you choose history cleanup, read the confirmation and use only the matching history action. Do not substitute the media-database action, Android app-storage clearing or an uninstall. Labels can differ by version; stop and check the relevant documentation if yours does not match. Leave unrelated advanced performance settings alone."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: advanced settings and cleanup",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the privacy goal precise",
+          "paragraphs": [
+            "Removing local history should not be treated as provider sign-out, subscription cancellation or erasure of records held elsewhere. Before sharing a screen, check for private playback addresses, usernames and programme details even if the history list is empty. For support, describe the player version, which screen showed the entry and the intended change. A narrowly described history question does not require exposing account credentials or replacing a plan."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Historial de reproducción IPTV: no borres la base multimedia",
+      "excerpt": "El historial de VLC, su preferencia de registro y la base multimedia son controles distintos. Identifica qué registro quieres cambiar antes de tocar la configuración.",
+      "seo_title": "Historial de reproducción IPTV: no borres la base multimedia",
+      "seo_description": "Revisa por separado el registro y borrado del historial de VLC para Android y la base multimedia, protegiendo listas, direcciones privadas y acceso del proveedor.",
+      "sections": [
+        {
+          "heading": "Identifica el registro",
+          "paragraphs": [
+            "El historial de reproducción IPTV es un registro local del reproductor, no una lista de pagos de la suscripción. Comprueba primero si estás en Historial de VLC, una lista de reproducción o una pantalla de cuenta. VideoLAN documenta una preferencia de historial que guarda la reproducción multimedia. Decide por separado si quieres registrar actividad futura y si quieres quitar entradas existentes. Cambiar una preferencia de registro no equivale a vaciar un registro."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: ajustes generales e historial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lee la etiqueta exacta",
+          "paragraphs": [
+            "La documentación de Android 3.5 de VideoLAN distingue borrar el historial de reproducción de borrar la base multimedia. Esta última acción elimina el progreso guardado y las listas creadas. Si eliges limpiar el historial, lee la confirmación y usa únicamente esa acción. No la sustituyas por borrar la base, limpiar el almacenamiento de la aplicación en Android o desinstalarla. Las etiquetas varían según la versión: detente y consulta su documentación si no coinciden. Conserva los demás ajustes avanzados de rendimiento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: ajustes avanzados y limpieza",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Precisa el objetivo de privacidad",
+          "paragraphs": [
+            "Quitar el historial local no debe interpretarse como cerrar sesión con el proveedor, cancelar la suscripción o borrar registros de otros sistemas. Antes de compartir una pantalla, revisa direcciones privadas de reproducción, nombres de usuario y detalles del programa aunque el historial esté vacío. Para soporte, indica la versión, qué pantalla mostraba la entrada y qué querías cambiar. Una consulta concreta sobre el historial no exige revelar credenciales ni sustituir el plan."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Historique IPTV : ne supprimez pas la base multimédia",
+      "excerpt": "L’historique VLC, son enregistrement et la base multimédia sont trois commandes différentes. Identifiez le registre concerné avant de toucher à la configuration.",
+      "seo_title": "Historique IPTV : ne supprimez pas la base multimédia",
+      "seo_description": "Distinguez l’enregistrement et l’effacement de l’historique VLC pour Android de la base multimédia afin de préserver listes, adresses privées et accès fournisseur.",
+      "sections": [
+        {
+          "heading": "Identifier le registre",
+          "paragraphs": [
+            "L’historique de lecture IPTV est un registre local du lecteur, pas une liste de paiements d’abonnement. Vérifiez d’abord si vous consultez l’historique VLC, une liste de lecture ou un écran de compte. VideoLAN décrit une préférence qui conserve les lectures dans l’historique. Décidez séparément si les activités futures doivent être enregistrées et si les entrées existantes doivent être retirées. Modifier une préférence d’enregistrement ne revient pas à effacer un registre."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : réglages généraux et historique",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lire le libellé exact",
+          "paragraphs": [
+            "Dans sa documentation Android 3.5, VideoLAN distingue l’effacement de l’historique de celui de la base multimédia. La seconde commande supprime les progressions et listes de lecture créées. Pour nettoyer l’historique, lisez la confirmation et choisissez uniquement la commande correspondante. Ne la remplacez pas par l’effacement de la base, du stockage Android de l’application ou sa désinstallation. Les libellés peuvent varier : consultez la documentation de votre version si nécessaire. Préservez les autres réglages avancés de performances."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : réglages avancés et nettoyage",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Préciser l’objectif de confidentialité",
+          "paragraphs": [
+            "Effacer un historique local ne signifie pas se déconnecter du fournisseur, annuler l’abonnement ou supprimer des registres conservés ailleurs. Avant de partager un écran, vérifiez adresses privées de lecture, identifiants et détails du programme, même si l’historique est vide. Pour l’assistance, précisez la version, l’écran où figurait l’entrée et le changement souhaité. Une question ciblée sur l’historique ne nécessite ni de divulguer des identifiants de connexion ni de remplacer une offre."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cronologia IPTV: non cancellare il database multimediale",
+      "excerpt": "La cronologia di VLC, la preferenza di registrazione e il database multimediale sono controlli distinti. Identifica il registro prima di modificare la configurazione.",
+      "seo_title": "Cronologia IPTV: non cancellare il database multimediale",
+      "seo_description": "Distingui registrazione e pulizia della cronologia VLC per Android dal database multimediale, proteggendo playlist, indirizzi privati e accesso del fornitore.",
+      "sections": [
+        {
+          "heading": "Identifica il registro",
+          "paragraphs": [
+            "La cronologia di riproduzione IPTV è un registro locale del lettore, non un elenco dei pagamenti dell’abbonamento. Controlla prima se stai guardando la cronologia di VLC, una playlist o una schermata dell’account. VideoLAN documenta una preferenza che salva le riproduzioni nella cronologia. Decidi separatamente se registrare le attività future e se rimuovere le voci esistenti. Cambiare una preferenza di registrazione non equivale a svuotare un registro."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: impostazioni generali e cronologia",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi l’etichetta esatta",
+          "paragraphs": [
+            "Nella documentazione Android 3.5, VideoLAN distingue la cancellazione della cronologia da quella del database multimediale. Quest’ultima elimina i progressi salvati e le playlist create. Se vuoi pulire la cronologia, leggi la conferma e usa soltanto il comando corrispondente. Non sostituirlo con la cancellazione del database, dello spazio dati dell’app Android o con la disinstallazione. Le etichette possono cambiare tra versioni: fermati e consulta la documentazione pertinente se non coincidono. Mantieni gli altri parametri avanzati delle prestazioni."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: impostazioni avanzate e pulizia",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Definisci l’obiettivo di riservatezza",
+          "paragraphs": [
+            "Rimuovere la cronologia locale non significa disconnettersi dal fornitore, annullare l’abbonamento o eliminare registri conservati altrove. Prima di condividere lo schermo, controlla indirizzi privati di riproduzione, nomi utente e dettagli del programma anche con la cronologia vuota. All’assistenza comunica versione, schermata che mostrava la voce e modifica desiderata. Una domanda specifica sulla cronologia non richiede di rivelare credenziali né sostituire un piano."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-kijkgeschiedenis: wis niet de mediadatabase",
+      "excerpt": "De VLC-geschiedenis, de registratievoorkeur en de mediadatabase zijn verschillende functies. Bepaal welk overzicht je wilt veranderen voordat je instellingen wijzigt.",
+      "seo_title": "IPTV-kijkgeschiedenis: wis niet de mediadatabase",
+      "seo_description": "Bekijk het bewaren en wissen van VLC-kijkgeschiedenis op Android los van de mediadatabase en bescherm afspeellijsten, privéadressen en toegang bij de aanbieder.",
+      "sections": [
+        {
+          "heading": "Bepaal welk overzicht je ziet",
+          "paragraphs": [
+            "De IPTV-kijkgeschiedenis is een lokaal overzicht van de speler, geen lijst met abonnementsbetalingen. Controleer eerst of je de VLC-geschiedenis, een afspeellijst of een accountscherm bekijkt. VideoLAN beschrijft een voorkeur waarmee afgespeelde media in de geschiedenis worden bewaard. Beslis apart of toekomstige activiteit moet worden vastgelegd en of bestaande vermeldingen weg moeten. Een registratievoorkeur veranderen is niet hetzelfde als een overzicht leegmaken."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: algemene instellingen en geschiedenis",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de precieze naam",
+          "paragraphs": [
+            "In de Android 3.5-documentatie onderscheidt VideoLAN het wissen van de afspeelgeschiedenis van het wissen van de mediadatabase. De laatste actie verwijdert opgeslagen voortgang en gemaakte afspeellijsten. Wil je de geschiedenis opruimen, lees dan de bevestiging en gebruik alleen die functie. Vervang deze niet door de database te wissen, Android-appopslag leeg te maken of de app te verwijderen. Namen verschillen per versie: stop en raadpleeg de juiste documentatie bij afwijkingen. Laat andere geavanceerde prestatie-instellingen intact."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: geavanceerde instellingen en opruimen",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Houd het privacydoel duidelijk",
+          "paragraphs": [
+            "Lokale geschiedenis verwijderen is geen afmelding bij de aanbieder, opzegging van een abonnement of verwijdering van gegevens elders. Controleer vóór schermdeling op privé-afspeeladressen, gebruikersnamen en programmagegevens, ook als de geschiedenislijst leeg is. Vermeld voor ondersteuning de spelerversie, het scherm waarop de vermelding stond en je gewenste wijziging. Een gerichte vraag over geschiedenis vraagt niet om het delen van inloggegevens of vervangen van een pakket."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Histórico IPTV: não apague a base de dados multimédia",
+      "excerpt": "O histórico do VLC, a preferência de registo e a base multimédia são controlos diferentes. Identifique o registo pretendido antes de alterar a configuração.",
+      "seo_title": "Histórico IPTV: não apague a base de dados multimédia",
+      "seo_description": "Separe o registo e a limpeza do histórico do VLC para Android da base multimédia, preservando listas, endereços privados e acesso ao fornecedor.",
+      "sections": [
+        {
+          "heading": "Identifique o registo",
+          "paragraphs": [
+            "O histórico de reprodução IPTV é um registo local do leitor, não uma lista de pagamentos da subscrição. Confirme primeiro se está no histórico do VLC, numa lista de reprodução ou num ecrã de conta. A VideoLAN documenta uma preferência que guarda as reproduções no histórico. Decida separadamente se pretende registar atividade futura e remover entradas existentes. Alterar uma preferência de registo não equivale a esvaziar um registo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: definições gerais e histórico",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Leia o nome exato",
+          "paragraphs": [
+            "Na documentação do Android 3.5, a VideoLAN distingue limpar o histórico de reprodução de limpar a base multimédia. A segunda ação elimina o progresso guardado e as listas criadas. Para limpar o histórico, leia a confirmação e use apenas o comando correspondente. Não o substitua pela limpeza da base, do armazenamento da aplicação Android ou pela desinstalação. Os nomes podem variar entre versões: pare e consulte a documentação relevante se forem diferentes. Preserve os restantes ajustes avançados de desempenho."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: definições avançadas e limpeza",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Defina o objetivo de privacidade",
+          "paragraphs": [
+            "Remover o histórico local não significa terminar sessão no fornecedor, cancelar a subscrição ou eliminar registos mantidos noutros locais. Antes de partilhar um ecrã, procure endereços privados de reprodução, nomes de utilizador e detalhes do programa, mesmo com o histórico vazio. Para o apoio, indique a versão do leitor, o ecrã que mostrava a entrada e a alteração pretendida. Uma pergunta específica sobre histórico não exige divulgar credenciais nem substituir um plano."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "История IPTV: не удаляйте базу мультимедиа",
+      "excerpt": "История VLC, настройка её сохранения и база мультимедиа — разные функции. Сначала определите, какую запись хотите изменить, и сохраните остальную настройку.",
+      "seo_title": "История IPTV: не удаляйте базу мультимедиа",
+      "seo_description": "Разделяйте сохранение и очистку истории VLC для Android и удаление базы мультимедиа, чтобы сохранить списки, личные адреса и доступ провайдера.",
+      "sections": [
+        {
+          "heading": "Определите, какой список открыт",
+          "paragraphs": [
+            "История просмотра IPTV — локальные записи плеера, а не список платежей за подписку. Сначала проверьте, открыт ли раздел истории VLC, список воспроизведения или экран учётной записи. VideoLAN описывает настройку сохранения воспроизведённых материалов в истории. Отдельно решите, нужно ли записывать будущую активность и удалять существующие записи. Изменение настройки сохранения не означает очистку уже созданного списка."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: общие настройки и история",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Прочитайте точное название",
+          "paragraphs": [
+            "В документации Android 3.5 VideoLAN различает очистку истории и очистку базы мультимедиа. Последняя удаляет сохранённый прогресс и созданные списки воспроизведения. Если нужна очистка истории, прочитайте подтверждение и выберите только соответствующую функцию. Не заменяйте её удалением базы, очисткой хранилища приложения в Android или переустановкой. Названия зависят от версии: при несовпадении остановитесь и найдите подходящую документацию. Остальные дополнительные параметры производительности не меняйте."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: дополнительные настройки и очистка",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "Уточните цель конфиденциальности",
+          "paragraphs": [
+            "Удаление локальной истории не является выходом из аккаунта провайдера, отменой подписки или удалением записей в других системах. Перед отправкой снимка экрана проверьте, нет ли личных адресов воспроизведения, имён пользователей и сведений о программе, даже если история пуста. Для поддержки укажите версию плеера, экран с записью и желаемое изменение. Конкретный вопрос об истории не требует раскрывать пароль или покупать другой тариф."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV دیکھنے کی تاریخ: میڈیا ڈیٹابیس حذف نہ کریں",
+      "excerpt": "VLC کی تاریخ، اسے محفوظ کرنے کی ترجیح اور میڈیا ڈیٹابیس الگ کنٹرول ہیں۔ محفوظ سیٹ اپ چھیڑنے سے پہلے مطلوبہ ریکارڈ پہچانیں۔",
+      "seo_title": "IPTV دیکھنے کی تاریخ: میڈیا ڈیٹابیس حذف نہ کریں",
+      "seo_description": "Android پر VLC کی تاریخ محفوظ کرنے اور صاف کرنے کو میڈیا ڈیٹابیس حذف کرنے سے الگ رکھیں، تاکہ پلے لسٹس، نجی پتے اور فراہم کنندہ کی رسائی محفوظ رہیں۔",
+      "sections": [
+        {
+          "heading": "پہلے ریکارڈ پہچانیں",
+          "paragraphs": [
+            "IPTV دیکھنے کی تاریخ پلیئر کا مقامی ریکارڈ ہے، سبسکرپشن کی ادائیگیوں کی فہرست نہیں۔ پہلے دیکھیں کہ آپ VLC کی تاریخ، کسی پلے لسٹ یا اکاؤنٹ کی اسکرین پر ہیں۔ VideoLAN ایک ایسی ترجیح بیان کرتا ہے جو چلایا گیا میڈیا تاریخ میں محفوظ کرتی ہے۔ آئندہ سرگرمی محفوظ کرنا اور پہلے سے موجود اندراجات ہٹانا دو الگ فیصلے ہیں۔ ریکارڈ محفوظ کرنے کی ترجیح بدلنے کا مطلب پرانی فہرست خالی کرنا نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: عمومی ترتیبات اور تاریخ",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "کنٹرول کا درست نام پڑھیں",
+          "paragraphs": [
+            "Android 3.5 کی دستاویز میں VideoLAN نے پلے بیک کی تاریخ صاف کرنے اور میڈیا ڈیٹابیس صاف کرنے کو الگ رکھا ہے۔ دوسری کارروائی محفوظ پیش رفت اور بنائی ہوئی پلے لسٹس ہٹا دیتی ہے۔ اگر تاریخ صاف کرنا مقصود ہو تو تصدیقی پیغام پڑھ کر صرف اسی سے متعلق کنٹرول استعمال کریں۔ اس کی جگہ ڈیٹابیس، Android میں ایپ کا ذخیرہ یا پوری ایپ حذف نہ کریں۔ نام ورژن کے مطابق مختلف ہو تو رک کر متعلقہ دستاویز دیکھیں۔ دوسری جدید کارکردگی کی ترتیبات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: جدید ترتیبات اور صفائی",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "رازداری کا مقصد واضح رکھیں",
+          "paragraphs": [
+            "مقامی تاریخ ہٹانے کو فراہم کنندہ کے اکاؤنٹ سے نکلنا، سبسکرپشن منسوخ کرنا یا دوسرے نظاموں کے ریکارڈ مٹانا نہ سمجھیں۔ اسکرین شیئر کرنے سے پہلے نجی پلے بیک پتے، صارف نام اور پروگرام کی تفصیل دیکھ لیں، خواہ تاریخ خالی ہو۔ مدد کے لیے پلیئر کا ورژن، اندراج والی اسکرین اور مطلوبہ تبدیلی بتائیں۔ تاریخ کے متعلق واضح سوال کے لیے لاگ اِن کی معلومات ظاہر کرنا یا نیا پلان لینا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "سجل مشاهدة IPTV: لا تحذف قاعدة بيانات الوسائط",
+      "excerpt": "سجل VLC وتفضيل حفظه وقاعدة الوسائط أدوات مختلفة. حدد السجل الذي تريد تغييره قبل المساس بإعداداتك المحفوظة.",
+      "seo_title": "سجل مشاهدة IPTV: لا تحذف قاعدة بيانات الوسائط",
+      "seo_description": "افصل حفظ سجل VLC على Android وتنظيفه عن حذف قاعدة الوسائط، مع حماية قوائم التشغيل والعناوين الخاصة ووصول مزود الخدمة.",
+      "sections": [
+        {
+          "heading": "حدد السجل أولاً",
+          "paragraphs": [
+            "سجل مشاهدة IPTV سجل محلي في المشغل، وليس قائمة بمدفوعات الاشتراك. تحقق أولاً هل تنظر إلى سجل VLC أم قائمة تشغيل أم شاشة حساب. توثق VideoLAN تفضيلاً يحفظ تشغيل الوسائط في السجل. قرر بشكل منفصل إن كنت تريد تسجيل النشاط المستقبلي وإزالة الإدخالات الموجودة. تغيير تفضيل التسجيل لا يعني إفراغ سجل محفوظ بالفعل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: الإعدادات العامة والسجل",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ اسم الأداة بدقة",
+          "paragraphs": [
+            "تميز وثائق Android 3.5 من VideoLAN بين مسح سجل التشغيل ومسح قاعدة بيانات الوسائط. يحذف الخيار الثاني التقدم المحفوظ وقوائم التشغيل التي أنشأتها. إن اخترت تنظيف السجل، فاقرأ رسالة التأكيد واستخدم أداته المطابقة فقط. لا تستبدلها بمسح قاعدة البيانات أو تخزين التطبيق في Android أو إزالة التطبيق. قد تختلف الأسماء باختلاف الإصدار؛ توقف وراجع وثائقه عند عدم التطابق. اترك إعدادات الأداء المتقدمة الأخرى كما هي."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: الإعدادات المتقدمة والتنظيف",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "اجعل هدف الخصوصية محدداً",
+          "paragraphs": [
+            "إزالة السجل المحلي ليست تسجيل خروج من المزود أو إلغاء اشتراك أو محواً لسجلات محفوظة في أنظمة أخرى. قبل مشاركة الشاشة، ابحث عن عناوين تشغيل خاصة وأسماء مستخدمين وتفاصيل البرامج حتى لو كانت قائمة السجل فارغة. للدعم، اذكر إصدار المشغل والشاشة التي عرضت الإدخال والتغيير المطلوب. لا يتطلب سؤال محدد عن السجل كشف بيانات الدخول أو استبدال الباقة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV देखने का इतिहास: मीडिया डेटाबेस न मिटाएँ",
+      "excerpt": "VLC का इतिहास, उसे सहेजने की प्राथमिकता और मीडिया डेटाबेस अलग नियंत्रण हैं। सहेजा हुआ सेटअप बदलने से पहले सही रिकॉर्ड पहचानें।",
+      "seo_title": "IPTV देखने का इतिहास: मीडिया डेटाबेस न मिटाएँ",
+      "seo_description": "Android पर VLC का इतिहास सहेजना और साफ करना मीडिया डेटाबेस मिटाने से अलग रखें, ताकि प्लेलिस्ट, निजी पते और प्रदाता की पहुँच सुरक्षित रहें।",
+      "sections": [
+        {
+          "heading": "पहले रिकॉर्ड पहचानें",
+          "paragraphs": [
+            "IPTV देखने का इतिहास प्लेयर का स्थानीय रिकॉर्ड है, सदस्यता के भुगतानों की सूची नहीं। पहले देखें कि आप VLC के इतिहास, किसी प्लेलिस्ट या खाते की स्क्रीन पर हैं। VideoLAN ऐसी प्राथमिकता बताता है जो चलाए गए मीडिया को इतिहास में सहेजती है। भविष्य की गतिविधि सहेजना और मौजूदा प्रविष्टियाँ हटाना अलग फैसले हैं। रिकॉर्डिंग की प्राथमिकता बदलना पहले से सहेजी गई सूची खाली करने के बराबर नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: सामान्य सेटिंग और इतिहास",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "नियंत्रण का सही नाम पढ़ें",
+          "paragraphs": [
+            "Android 3.5 के दस्तावेज़ में VideoLAN प्लेबैक इतिहास साफ करने और मीडिया डेटाबेस साफ करने को अलग रखता है। दूसरा विकल्प सहेजी प्रगति और बनाई गई प्लेलिस्ट हटा देता है। अगर इतिहास साफ करना चाहते हैं तो पुष्टि संदेश पढ़कर केवल उससे मेल खाने वाला विकल्प चुनें। उसकी जगह डेटाबेस मिटाना, Android का ऐप स्टोरेज साफ करना या ऐप हटाना न चुनें। संस्करण के अनुसार नाम अलग हो तो रुकें और संबंधित दस्तावेज़ देखें। बाकी उन्नत प्रदर्शन सेटिंग वैसी ही रहने दें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: उन्नत सेटिंग और सफाई",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+            }
+          ]
+        },
+        {
+          "heading": "निजता का उद्देश्य स्पष्ट रखें",
+          "paragraphs": [
+            "स्थानीय इतिहास हटाने को प्रदाता से साइन आउट होना, सदस्यता रद्द करना या दूसरे सिस्टम के रिकॉर्ड मिटना न समझें। स्क्रीन साझा करने से पहले निजी प्लेबैक पते, उपयोगकर्ता नाम और कार्यक्रम का विवरण देखें, भले इतिहास खाली हो। सहायता के लिए प्लेयर का संस्करण, प्रविष्टि दिखाने वाली स्क्रीन और इच्छित बदलाव बताएँ। इतिहास से जुड़ा स्पष्ट सवाल पूछने के लिए लॉगिन जानकारी उजागर करना या दूसरा प्लान लेना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: general settings and history",
+      "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/general_settings.html"
+    },
+    {
+      "label": "VideoLAN: advanced settings and cleanup",
+      "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_advanced.html"
+    }
+  ]
+}
