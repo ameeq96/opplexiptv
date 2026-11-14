@@ -67,7 +67,7 @@
                                             <span class="icon icon-plus fa fa-plus"></span>
                                             <span class="icon icon-minus fa fa-minus"></span>
                                         </div>
-                                        <span>{{ $item['question'] }}</span>
+                                        <h3><span>{{ $item['question'] }}</span></h3>
                                     </div>
 
                                     <div class="acc-content {{ $isOpen ? 'current' : '' }}">

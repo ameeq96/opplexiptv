@@ -50,6 +50,14 @@
     </script>
 @endsection
 
+@push('schema')
+    {!! jsonld(seo()->breadcrumbList([
+        ['url' => route('home'), 'label' => __('messages.nav_home')],
+        ['url' => route('blogs.index'), 'label' => __('messages.blogs')],
+        ['label' => $currentTranslation->title],
+    ])) !!}
+@endpush
+
 @section('content')
     <div class="blog-progress" aria-hidden="true"><span class="blog-progress__bar" id="blogProgressBar"></span></div>
 
