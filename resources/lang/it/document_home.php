@@ -66,20 +66,20 @@ return [
         'intro' => 'Abbiamo creato Opplex per chi è stanco di buffering, scarsa qualità dell’immagine e canali che semplicemente non funzionano. Ecco cosa ottieni davvero:',
         'features' => [
             [
-                'title' => 'Canali in diretta HD e 4K - Zero buffering',
-                'description' => 'Guarda ogni canale in HD nitido o in 4K completo. Nessun blocco. Nessuna immagine sgranata. Funziona su Smart TV, box Android e lettori IPTV.',
+                'title' => 'HD e 4K: verifica la compatibilità',
+                'description' => 'Qualità e riproduzione dipendono dalla sorgente, dal piano scelto, dal lettore, dal dispositivo e dalla rete. Controlla i requisiti prima di abbonarti.',
             ],
             [
                 'title' => 'Diversi piani con prova gratuita',
                 'description' => 'Non sei ancora sicuro? Provaci prima. La nostra prova gratuita IPTV ti permette di verificare la qualità dei canali sul tuo dispositivo prima di spendere. In seguito scegli il piano mensile, semestrale o annuale.',
             ],
             [
-                'title' => 'Uptime del 99.9% - Scelto in tutta Europa e negli USA',
-                'description' => 'I nostri server restano operativi. Gli spettatori nel Regno Unito (UK), in Francia, in Italia e negli Stati Uniti (US) usano Opplex ogni giorno senza interruzioni. È una costanza che la maggior parte dei fornitori IPTV semplicemente non riesce a eguagliare.',
+                'title' => 'Verifica la disponibilità sul tuo sistema',
+                'description' => 'Chiedi informazioni sui canali e sugli orari che ti servono. La disponibilità varia per fornitore, luogo e rete; una prova non garantisce il tempo di attività.',
             ],
             [
-                'title' => 'Configurazione semplice su qualsiasi dispositivo',
-                'description' => 'Fire TV Stick, box MAG, iOS, Android, Smart TV: li supportiamo tutti. L’installazione richiede meno di cinque minuti e, se necessario, il nostro team ti guida su WhatsApp.',
+                'title' => 'Prepara la configurazione del dispositivo',
+                'description' => 'Conferma modello esatto, sistema operativo e lettore previsto. Installare l\'app, confermare l\'ordine e configurare il servizio sono passaggi distinti; i tempi variano.',
             ],
         ],
     ],
@@ -101,7 +101,7 @@ return [
         ],
     ],
     'devices' => [
-        'heading' => 'Funziona su tutti i dispositivi che già possiedi',
+        'heading' => 'Controlla dispositivo e lettore prima di scegliere',
         'intro' => 'Non devi acquistare nulla di speciale. Opplex funziona su:',
         'items' => [
             'Amazon Firestick e Fire TV',
@@ -114,38 +114,38 @@ return [
         'whatsapp_message' => 'Ciao, ho bisogno di aiuto per scegliere e configurare un lettore IPTV per il mio dispositivo.',
     ],
     'testimonials' => [
-        'title' => 'Recensioni dei clienti - La migliore esperienza IPTV',
-        'heading' => 'Scopri cosa dicono gli spettatori di Opplex IPTV',
-        'intro' => 'Opinioni condivise da utenti che utilizzano Opplex IPTV per TV in diretta e contenuti on demand.',
-        'verified_label' => 'Cliente IPTV verificato',
+        'title' => 'Esempi di pianificazione',
+        'heading' => 'Esempi illustrativi per scegliere un abbonamento',
+        'intro' => 'Sono situazioni ipotetiche per pianificare un abbonamento, non recensioni di clienti o esperienze realmente riferite.',
+        'verified_label' => 'Esempio illustrativo',
         'reviews' => [
             [
-                'author' => 'Alex McCarthy',
-                'text' => 'La migliore IPTV di sempre, merita sicuramente 10 su 10. Mi piace lo streaming HD che non rallenta mai e la varietà di contenuti che posso esplorare.',
+                'author' => 'Controllo di dispositivo e lettore',
+                'text' => 'Esempio illustrativo: prima di scegliere un piano, annota il modello esatto di televisore o telefono e verifica i requisiti del lettore previsto.',
             ],
             [
-                'author' => 'Elsa Houdini',
-                'text' => 'Adoro Aroma IPTV e la loro assistenza WhatsApp. Ottimo dispositivo!',
+                'author' => 'Controllo della durata',
+                'text' => 'Esempio illustrativo: confronta prezzo totale e durata, poi leggi le condizioni di rinnovo e rimborso prima di ordinare.',
             ],
             [
-                'author' => 'Becky Sobers',
-                'text' => '“Sono passato dalla TV via cavo a Opplex IPTV e sono felice di aver fatto la scelta giusta.”',
+                'author' => 'Confronto tra fornitori',
+                'text' => 'Esempio illustrativo: confronta Opplex e Filex separatamente. Chiedi dei contenuti e del dispositivo desiderati senza supporre che i cataloghi coincidano.',
             ],
             [
-                'author' => 'Sarah',
-                'text' => 'Nessun buffering su IPTV smart player, ottima assistenza e funziona senza problemi perfino su Fire TV Stick: ne vale assolutamente la pena!',
+                'author' => 'Controllo del costo del lettore',
+                'text' => 'Esempio illustrativo: verifica se l\'app richiede una licenza separata. L\'abbonamento non comprende automaticamente l\'acquisto di un\'applicazione.',
             ],
             [
-                'author' => 'Ameeq Khan',
-                'text' => 'IPTV di altissima qualità che funziona perfettamente su Android.',
+                'author' => 'Pagamento e configurazione',
+                'text' => 'Esempio illustrativo: aprire il pagamento o tentare di pagare non conferma l\'attivazione. Verifica privatamente lo stato dell\'ordine e della configurazione.',
             ],
             [
-                'author' => 'Giulia Romano',
-                'text' => 'La loro prova IPTV è fantastica! Mi permette di guardare in streaming tutti i miei programmi italiani e francesi preferiti tramite Aroma IPTV.',
+                'author' => 'Pianificazione di una connessione',
+                'text' => 'Esempio illustrativo: Opplex consente una connessione simultanea per linea. Chiedi all\'assistenza il limite di Filex senza presumere che sia uguale.',
             ],
             [
-                'author' => 'Oliver Smith',
-                'text' => 'Questo abbonamento IPTV offre oltre 12k canali, funziona su IPTV smart player ed è estremamente stabile in tutto il Regno Unito (UK).',
+                'author' => 'Note per l\'assistenza',
+                'text' => 'Esempio illustrativo: comunica dispositivo, lettore e problema preciso all\'assistenza. Non pubblicare password, dati di pagamento o indirizzi privati di riproduzione.',
             ],
         ],
     ],
@@ -190,8 +190,8 @@ return [
                 'label' => 'Film e serie',
             ],
             [
-                'value' => '99.9%',
-                'label' => 'Uptime dei server',
+                'value' => 'Verifica',
+                'label' => 'Disponibilità attuale',
             ],
             [
                 'value' => '24/7',

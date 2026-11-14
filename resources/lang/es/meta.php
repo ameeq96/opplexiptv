@@ -3,12 +3,12 @@
 return [
     'home' => [
         'title' => 'Mejor Servicio IPTV - HD, Streaming en Vivo 4K | Opplex IPTV',
-        'description' => 'Obtén la mejor experiencia IPTV con IPTV en vivo 4K, más de 12,000 canales y VOD. Incluye xtreme hd iptv, iptv smart player y prueba gratuita.',
+        'description' => 'Explora los planes de Opplex y Filex para televisión en directo y contenido a la carta. Compara duración, dispositivo y condiciones antes de elegir.',
         'keywords' => 'mejor iptv, caja iptv, xtreme hd iptv, aroma iptv, iptv smart player, prueba gratuita iptv, iptv en vivo 4k',
     ],
     'about' => [
         'title' => 'Acerca de Opplex IPTV - Proveedor Premium de IPTV en Vivo 4K',
-        'description' => 'Opplex IPTV ofrece xtreme hd iptv con streaming 4K compatible, prueba gratuita y soporte 24/7.',
+        'description' => 'Conoce cómo Opplex IPTV reúne planes, guías de dispositivos y atención sobre pedidos. Revisa el siguiente paso antes de comprar.',
         'keywords' => 'mejor iptv, xtreme hd iptv, iptv smart player, aroma iptv, prueba gratuita iptv, iptv en vivo 4k, caja iptv',
     ],
     'pricing' => [
@@ -18,12 +18,12 @@ return [
     ],
     'movies' => [
         'title' => 'Ver Películas y Series IPTV en HD & 4K - Opplex IPTV',
-        'description' => 'Disfruta de más de 50,000 películas IPTV y 5,000 series en 4K. Compatible con iptv smart player, xtreme hd iptv y pruebas gratuitas.',
+        'description' => 'Consulta información sobre películas y series en Opplex IPTV. Confirma la disponibilidad del título, el plan y los requisitos del dispositivo antes de suscribirte.',
         'keywords' => 'iptv smart player, xtreme hd iptv, películas iptv, iptv Netflix, aroma iptv, iptv en vivo 4k, caja iptv',
     ],
     'packages' => [
         'title' => 'Mejores Paquetes IPTV con Prueba Gratis | Streaming 4K',
-        'description' => 'Paquetes IPTV flexibles incluyen xtreme hd iptv, acceso a caja IPTV, canales 4K y compatibilidad con iptv smart player.',
+        'description' => 'Compara los planes actuales de Opplex y Filex. Revisa proveedor, duración, conexiones y total del pedido antes de continuar al pago.',
         'keywords' => 'prueba gratuita iptv, xtreme hd iptv, iptv smart player, iptv en vivo 4k, caja iptv, mejor iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'Conviértete en Reseller IPTV | Acceso al Panel Opplex IPTV',
-        'description' => 'Únete al programa de resellers de Opplex IPTV. Vende xtreme hd iptv y cajas IPTV inteligentes en toda Europa y EE. UU.',
+        'description' => 'Consulta las opciones de reventa de Opplex IPTV. Comprueba proveedor, condiciones de créditos y soporte antes de solicitar una propuesta.',
         'keywords' => 'reseller iptv, xtreme hd iptv, caja iptv, aroma iptv, iptv smart player, iptv en vivo 4k, mejor iptv',
     ],
     'buynow' => [
@@ -48,17 +48,17 @@ return [
     ],
     'iptv-applications' => [
         'title' => 'Principales Apps IPTV: Smarters, Player, Android TV y Más',
-        'description' => 'Descarga aplicaciones IPTV incluyendo iptv smart player y Smarters Pro. Compatible con xtreme hd iptv, Android, iOS y dispositivos 4K.',
+        'description' => 'Consulta las apps y opciones de reproductor de Opplex IPTV. Verifica editor, compatibilidad, plataforma y posibles licencias de pago aparte.',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, caja iptv, mejor iptv, aroma iptv, iptv en vivo 4k',
     ],
     'faqs' => [
         'title' => 'FAQs de Opplex IPTV | Configuración, Soporte y Prueba',
-        'description' => 'Encuentra respuestas sobre xtreme hd iptv, configuración de iptv smart player, streaming 4K y prueba gratuita IPTV.',
+        'description' => 'Resuelve dudas sobre planes de Opplex IPTV, pruebas, dispositivos, reproductores y pedidos. Consulta las condiciones antes de elegir o pedir ayuda.',
         'keywords' => 'soporte iptv, configuración iptv, xtreme hd iptv, iptv smart player, aroma iptv, mejor iptv, iptv en vivo 4k',
     ],
     'contact' => [
         'title' => 'Contacta Opplex IPTV | Prueba Gratuita y Soporte',
-        'description' => '¿Necesitas ayuda con la configuración del mejor IPTV? Contacta a Opplex para prueba gratuita, información para resellers, xtreme hd iptv, streaming 4K y',
+        'description' => 'Contacta con Opplex IPTV por WhatsApp, correo o formulario para consultar dispositivos, planes, pedidos existentes y opciones de reventa.',
         'keywords' => 'soporte iptv, prueba gratuita iptv, contactar iptv, xtreme hd iptv, caja iptv, aroma iptv, iptv smart player',
     ],
     'redirect.ad' => [

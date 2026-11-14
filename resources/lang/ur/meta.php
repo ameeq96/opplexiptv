@@ -8,22 +8,22 @@ return [
     ],
     'about' => [
         'title' => 'Opplex IPTV کے بارے میں - پریمیم 4K لائیو IPTV فراہم کنندہ',
-        'description' => 'Opplex IPTV آپ کو Xtreme HD IPTV کے ساتھ 4K اسٹریمنگ، مفت ٹرائل اور 24/7 سپورٹ فراہم کرتا ہے۔',
+        'description' => 'جانیں کہ Opplex IPTV پلان، ڈیوائس رہنمائی اور آرڈر سپورٹ کیسے یکجا کرتا ہے۔ خریداری سے پہلے اگلے مرحلے کی تصدیق کریں۔',
         'keywords' => 'best iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv free trial, 4k live iptv, iptv box',
     ],
     'pricing' => [
         'title' => 'IPTV سبسکرپشن پلانز | سستا IPTV باکس اور 4K اسٹریمنگ',
-        'description' => 'بہترین IPTV سروسز کے لیے سستے IPTV پیکجز دریافت کریں۔ xtreme hd iptv کے ساتھ iptv اسمارٹ پلیئر، 4K لائیو iptv اور مفت ٹرائل حاصل کریں۔',
+        'description' => 'Opplex اور Filex پلان کی قیمتوں اور مدت کا موازنہ کریں۔ ادائیگی سے پہلے فراہم کنندہ، ڈیوائس کی ضروریات اور آرڈر کی پوری رقم جانچیں۔',
         'keywords' => 'iptv box, xtreme hd iptv, best iptv, aroma iptv, iptv subscription price, 4k live iptv, iptv free trial',
     ],
     'movies' => [
         'title' => 'IPTV موویز اور سیریز دیکھیں HD اور 4K میں - Opplex IPTV',
-        'description' => '50,000+ IPTV موویز اور 5,000+ سیریز 4K میں انجوائے کریں۔ iptv اسمارٹ پلیئر، xtreme hd iptv اور مفت ٹرائل سپورٹ کے ساتھ۔ Netflix، Bollywood اور Hollywood',
+        'description' => 'Opplex IPTV پر فلموں اور سیریز کی معلومات دیکھیں۔ سبسکرپشن سے پہلے مطلوبہ عنوان کی دستیابی، پلان اور ڈیوائس کی ضروریات کی تصدیق کریں۔',
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'بہترین IPTV پیکجز مفت ٹرائل کے ساتھ | 4K اسٹریمنگ یورپ اور',
-        'description' => 'لچکدار IPTV پیکجز میں xtreme hd iptv، iptv باکس ایکسس، 4K چینلز اور iptv اسمارٹ پلیئر مطابقت شامل ہے۔ فرانس، اٹلی، UK، US میں مفت ٹرائل دستیاب۔',
+        'description' => 'Opplex اور Filex کے موجودہ پلان کا موازنہ کریں۔ چیک آؤٹ سے پہلے فراہم کنندہ، مدت، کنکشن اور آرڈر کی پوری رقم جانچیں۔',
         'keywords' => 'iptv free trial, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, best iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'IPTV ریسیلر بنیں | Opplex IPTV پینل ایکسس',
-        'description' => 'Opplex IPTV ریسیلر پروگرام جوائن کریں۔ xtreme hd iptv اور اسمارٹ IPTV باکسز بیچیں یورپ اور USA میں۔ 4K iptv، مفت ٹرائل اور مکمل سپورٹ کے ساتھ پینل ایکسس',
+        'description' => 'Opplex IPTV کی ری سیلنگ سے متعلق معلومات دیکھیں۔ پیشکش مانگنے سے پہلے فراہم کنندہ، کریڈٹ کی شرائط اور سپورٹ کی تصدیق کریں۔',
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, best iptv',
     ],
     'buynow' => [
@@ -48,17 +48,17 @@ return [
     ],
     'iptv-applications' => [
         'title' => 'بہترین IPTV ایپس: Smarters، پلیئر، Android TV اور مزید',
-        'description' => 'IPTV ایپس ڈاؤنلوڈ کریں بشمول iptv اسمارٹ پلیئر اور Smarters Pro۔ xtreme hd iptv، Android، iOS اور 4K ڈیوائسز کے ساتھ مطابقت رکھتی ہیں۔ بہترین IPTV تجربہ',
+        'description' => 'Opplex IPTV کے لیے ایپس اور پلیئر کے اختیارات دیکھیں۔ ناشر، مطابقت، پلیٹ فارم اور ممکنہ الگ لائسنس فیس کی جانچ کریں۔',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, best iptv, aroma iptv, 4k live iptv',
     ],
     'faqs' => [
         'title' => 'Opplex IPTV FAQs | سیٹ اپ، سپورٹ اور مفت ٹرائل مدد',
-        'description' => 'xtreme hd iptv، iptv اسمارٹ پلیئر سیٹ اپ، 4K اسٹریمنگ اور iptv مفت ٹرائل کے بارے میں سوالات کے جواب پائیں۔ USA، UK، فرانس، اٹلی کے لیے مکمل سپورٹ۔',
+        'description' => 'Opplex IPTV پلان، آزمائش، ڈیوائس، پلیئر اور آرڈر کے سوالات کے جواب پائیں۔ انتخاب یا مدد مانگنے سے پہلے شرائط جانچیں۔',
         'keywords' => 'iptv support, iptv setup, xtreme hd iptv, iptv smart player, aroma iptv, best iptv, 4k live iptv',
     ],
     'contact' => [
         'title' => 'Opplex IPTV سے رابطہ کریں | مفت ٹرائل اور سپورٹ',
-        'description' => 'بہترین IPTV سیٹ اپ میں مدد چاہیے؟ Opplex سے رابطہ کریں مفت ٹرائل، ریسیلر معلومات، xtreme hd iptv، 4K اسٹریمنگ اور iptv اسمارٹ پلیئر سپورٹ کے لیے۔',
+        'description' => 'ڈیوائس، پلان، موجودہ آرڈر اور ری سیلنگ کے سوالات کے لیے WhatsApp، ای میل یا فارم کے ذریعے Opplex IPTV سے رابطہ کریں۔',
         'keywords' => 'iptv support, iptv free trial, contact iptv, xtreme hd iptv, iptv box, aroma iptv, iptv smart player',
     ],
     'redirect.ad' => [

@@ -8,22 +8,22 @@ return [
     ],
     'about' => [
         'title' => 'О компании Opplex IPTV - Премиум провайдер 4K IPTV',
-        'description' => 'Opplex IPTV предлагает Xtreme HD IPTV с 4K-трансляциями, бесплатным тестом и круглосуточной поддержкой.',
+        'description' => 'Узнайте, как Opplex IPTV объединяет тарифы, инструкции по устройствам и поддержку заказов. Уточните следующий шаг перед покупкой.',
         'keywords' => 'лучший iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv бесплатный тест, 4k iptv онлайн, iptv приставка',
     ],
     'pricing' => [
         'title' => 'Тарифные планы IPTV | Доступная IPTV приставка и 4K',
-        'description' => 'Изучите доступные цены на IPTV. Получите xtreme hd iptv с iptv smart player, 4K трансляциями и бесплатным тестовым периодом в США, Франции, Италии и',
+        'description' => 'Сравните цены и сроки тарифов Opplex и Filex. Проверьте провайдера, требования устройства и полную сумму заказа до оплаты.',
         'keywords' => 'iptv приставка, xtreme hd iptv, лучший iptv, aroma iptv, цена подписки iptv, 4k iptv онлайн, iptv бесплатный тест',
     ],
     'movies' => [
         'title' => 'Смотрите фильмы и сериалы IPTV в HD и 4K - Opplex IPTV',
-        'description' => 'Наслаждайтесь более чем 50 000 фильмами и 5 000 сериалами в 4K. Поддержка iptv smart player, xtreme hd iptv и бесплатного теста.',
+        'description' => 'Просмотрите сведения о фильмах и сериалах в Opplex IPTV. Уточните наличие нужного названия, тариф и требования устройства до подписки.',
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv фильмы, iptv Netflix, aroma iptv, 4k iptv онлайн, iptv приставка',
     ],
     'packages' => [
         'title' => 'Лучшие IPTV пакеты с бесплатным тестом | 4K трансляции',
-        'description' => 'Гибкие IPTV пакеты включают xtreme hd iptv, доступ с iptv приставок, 4K каналы и совместимость с iptv smart player.',
+        'description' => 'Сравните действующие тарифы Opplex и Filex. Проверьте провайдера, срок, подключения и полную сумму заказа перед переходом к оплате.',
         'keywords' => 'iptv бесплатный тест, xtreme hd iptv, iptv smart player, 4k iptv онлайн, iptv приставка, лучший iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'Станьте реселлером IPTV | Панель Opplex IPTV',
-        'description' => 'Присоединяйтесь к программе реселлеров Opplex IPTV. Продавайте xtreme hd iptv и smart IPTV приставки по всей Европе и США.',
+        'description' => 'Изучите информацию о перепродаже Opplex IPTV. Уточните провайдера, условия кредитов и поддержку до запроса предложения.',
         'keywords' => 'iptv реселлер, xtreme hd iptv, iptv приставка, aroma iptv, iptv smart player, 4k iptv онлайн, лучший iptv',
     ],
     'buynow' => [
@@ -48,17 +48,17 @@ return [
     ],
     'iptv-applications' => [
         'title' => 'Лучшие IPTV приложения: Smarters, Player, Android TV',
-        'description' => 'Скачайте IPTV приложения, включая iptv smart player и Smarters Pro. Совместимы с xtreme hd iptv, Android, iOS и 4K устройствами. Лучший IPTV опыт.',
+        'description' => 'Просмотрите приложения и плееры для Opplex IPTV. Проверьте издателя, совместимость, платформу и возможную отдельную платную лицензию.',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv приставка, лучший iptv, aroma iptv, 4k iptv онлайн',
     ],
     'faqs' => [
         'title' => 'Часто задаваемые вопросы Opplex IPTV | Настройка',
-        'description' => 'Найдите ответы о xtreme hd iptv, настройке iptv smart player, 4K трансляциях и бесплатном тесте IPTV.',
+        'description' => 'Найдите ответы о тарифах Opplex IPTV, пробном доступе, устройствах, плеерах и заказах. Проверьте условия до выбора или обращения за помощью.',
         'keywords' => 'поддержка iptv, настройка iptv, xtreme hd iptv, iptv smart player, aroma iptv, лучший iptv, 4k iptv онлайн',
     ],
     'contact' => [
         'title' => 'Свяжитесь с Opplex IPTV | Бесплатный тест и поддержка',
-        'description' => 'Нужна помощь с настройкой IPTV? Свяжитесь с Opplex для бесплатного теста, информации для реселлеров, xtreme hd iptv, 4K трансляций и поддержки iptv smart',
+        'description' => 'Свяжитесь с Opplex IPTV через WhatsApp, почту или форму по вопросам устройств, тарифов, существующих заказов и перепродажи.',
         'keywords' => 'поддержка iptv, бесплатный тест iptv, контакт iptv, xtreme hd iptv, iptv приставка, aroma iptv, iptv smart player',
     ],
     'redirect.ad' => [

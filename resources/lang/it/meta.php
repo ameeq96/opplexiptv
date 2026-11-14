@@ -3,12 +3,12 @@
 return [
     'home' => [
         'title' => 'Opplex IPTV - TV Live, Film HD con IPTV Smarters',
-        'description' => 'Guarda oltre 12.000 canali live, 50.000+ film e 5.000+ serie TV in HD/4K su IPTV Smarters Pro, Smart IPTV e IPTV Extreme APK in Italia, Francia, UK e',
+        'description' => 'Esplora i piani Opplex e Filex per TV in diretta e contenuti su richiesta. Confronta durata, dispositivo e condizioni prima di scegliere.',
         'keywords' => 'IPTV Italia, IPTV Europa, IPTV streaming, IPTV Extreme APK, Smart IPTV, IPTV Smarters Pro, IPTV m3u gratis, IPTV player, rivenditore IPTV, liste IPTV',
     ],
     'about' => [
         'title' => 'Info Opplex IPTV - Servizio IPTV Premium in Italia',
-        'description' => 'Scopri Opplex IPTV: contenuti IPTV in HD/4K, supporto 24/7, compatibile con IPTV Smarters, IPTV Extreme, IPTV player e app',
+        'description' => 'Scopri come Opplex IPTV riunisce piani, guide ai dispositivi e assistenza sugli ordini. Verifica il passaggio successivo prima di acquistare.',
         'keywords' => 'info IPTV, IPTV Italia, servizio IPTV Smarters Pro, IPTV Extreme APK, IPTV smart player, IPTV gratis, IPTV player Italia',
     ],
     'pricing' => [
@@ -18,12 +18,12 @@ return [
     ],
     'movies' => [
         'title' => 'Guarda 50.000+ film e serie via IPTV Smarters',
-        'description' => 'Film da Netflix, Prime Video, Bollywood e Hollywood – tutto disponibile su IPTV Extreme APK, IPTV Smarters Pro, IPTV streaming player.',
+        'description' => 'Consulta informazioni su film e serie su Opplex IPTV. Conferma disponibilità del titolo, piano scelto e requisiti del dispositivo prima di abbonarti.',
         'keywords' => 'film IPTV, IPTV Netflix, film Bollywood IPTV, IPTV streaming, serie IPTV Italia, IPTV player, Smart IPTV',
     ],
     'packages' => [
         'title' => 'Migliori pacchetti IPTV per l’Italia e l’Europa',
-        'description' => 'Pacchetti IPTV con più di 12.000 canali live e VOD – compatibili con IPTV Smarters, IPTV Extreme, IPTV box e liste IPTV m3u.',
+        'description' => 'Confronta i piani attuali Opplex e Filex. Controlla fornitore, durata, connessioni e totale dell\'ordine prima di procedere al pagamento.',
         'keywords' => 'pacchetti IPTV, abbonamento IPTV Italia, IPTV m3u, IPTV player, IPTV streaming Italia',
     ],
     'iptv-subscription-service' => [
@@ -53,7 +53,7 @@ return [
     ],
     'faqs' => [
         'title' => 'FAQ & Supporto Opplex IPTV',
-        'description' => 'Tutto su IPTV: configurazione app, liste IPTV m3u gratis, supporto per IPTV Smarters e IPTV Extreme, pagamento sicuro e assistenza rapida.',
+        'description' => 'Trova risposte su piani Opplex IPTV, prove, dispositivi, lettori e ordini. Controlla le condizioni prima di scegliere o chiedere assistenza.',
         'keywords' => 'FAQ IPTV, IPTV player, IPTV gratis Italia, IPTV Extreme, lista IPTV, supporto IPTV Smarters, IPTV streaming',
     ],
     'contact' => [

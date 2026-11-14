@@ -3,27 +3,27 @@
 return [
     'home' => [
         'title' => 'Beste IPTV-service - HD, 4K Live Streaming | Opplex IPTV',
-        'description' => 'Krijg de beste IPTV-ervaring met 4K live IPTV, meer dan 12.000 kanalen en VOD. Inclusief xtreme hd iptv, iptv smart player en gratis proefperiode.',
+        'description' => 'Bekijk Opplex- en Filex-abonnementen voor live-tv en inhoud op aanvraag. Vergelijk looptijd, apparaat en voorwaarden voordat je kiest.',
         'keywords' => 'beste iptv, iptv box, xtreme hd iptv, aroma iptv, iptv smart player, iptv gratis proefperiode, 4k live iptv',
     ],
     'about' => [
         'title' => 'Over Opplex IPTV - Premium 4K Live IPTV-provider',
-        'description' => 'Opplex IPTV biedt xtreme hd iptv met 4K-streaming, een gratis proefperiode en 24/7 ondersteuning.',
+        'description' => 'Lees hoe Opplex IPTV abonnementen, apparaathandleidingen en orderondersteuning samenbrengt. Controleer de volgende stap voordat je bestelt.',
         'keywords' => 'beste iptv, xtreme hd iptv, iptv smart player, aroma iptv, iptv gratis proefperiode, 4k live iptv, iptv box',
     ],
     'pricing' => [
         'title' => 'IPTV-abonnementen | Betaalbare IPTV Box & 4K Streaming',
-        'description' => 'Ontdek goedkope IPTV-tarieven voor de beste IPTV-diensten. Krijg xtreme hd iptv met iptv smart player, 4K live iptv en gratis proefopties in de VS,',
+        'description' => 'Vergelijk prijzen en looptijden van Opplex en Filex. Controleer aanbieder, apparaateisen en het volledige orderbedrag vóór het afrekenen.',
         'keywords' => 'iptv box, xtreme hd iptv, beste iptv, aroma iptv, iptv abonnementsprijs, 4k live iptv, iptv gratis proefperiode',
     ],
     'movies' => [
         'title' => 'Kijk IPTV-films en series in HD & 4K - Opplex IPTV',
-        'description' => 'Geniet van meer dan 50.000 IPTV-films en 5.000+ series in 4K. Ondersteunt iptv smart player, xtreme hd iptv en gratis proefperiodes.',
+        'description' => 'Bekijk informatie over films en series bij Opplex IPTV. Controleer titelbeschikbaarheid, je gekozen abonnement en apparaateisen voordat je je abonneert.',
         'keywords' => 'iptv smart player, xtreme hd iptv, iptv films, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'Beste IPTV-pakketten met gratis proefperiode | 4K',
-        'description' => 'Flexibele IPTV-pakketten inclusief xtreme hd iptv, toegang tot iptv box, 4K-kanalen en compatibiliteit met iptv smart player.',
+        'description' => 'Vergelijk de huidige Opplex- en Filex-abonnementen. Controleer aanbieder, looptijd, verbindingen en totaalbedrag voordat je gaat afrekenen.',
         'keywords' => 'iptv gratis proefperiode, xtreme hd iptv, iptv smart player, 4k live iptv, iptv box, beste iptv, aroma iptv',
     ],
     'iptv-subscription-service' => [
@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'Word IPTV-reseller | Opplex IPTV Paneeltoegang',
-        'description' => 'Word lid van het Opplex IPTV-resellerprogramma. Verkoop xtreme hd iptv en smart IPTV-boxen in Europa en de VS.',
+        'description' => 'Bekijk informatie over IPTV-doorverkoop bij Opplex. Controleer aanbieder, kredietvoorwaarden en ondersteuning voordat je een voorstel aanvraagt.',
         'keywords' => 'iptv reseller, xtreme hd iptv, iptv box, aroma iptv, iptv smart player, 4k live iptv, beste iptv',
     ],
     'buynow' => [
@@ -48,17 +48,17 @@ return [
     ],
     'iptv-applications' => [
         'title' => 'Top IPTV-apps: Smarters, Player, Android TV & Meer',
-        'description' => 'Download IPTV-apps zoals iptv smart player en Smarters Pro. Compatibel met xtreme hd iptv, Android, iOS en 4K-apparaten. De beste IPTV-ervaring.',
+        'description' => 'Bekijk Opplex IPTV-apps en speleropties. Controleer uitgever, compatibiliteit, platform en eventuele afzonderlijke licentiekosten.',
         'keywords' => 'iptv smart player, iptv Smarters, xtreme hd iptv, iptv box, beste iptv, aroma iptv, 4k live iptv',
     ],
     'faqs' => [
         'title' => 'Opplex IPTV FAQ | Installatie, Ondersteuning & Gratis',
-        'description' => 'Vind antwoorden over xtreme hd iptv, installatie van iptv smart player, 4K streaming en iptv gratis proefperiode.',
+        'description' => 'Vind antwoorden over Opplex IPTV-abonnementen, proefgebruik, apparaten, spelers en bestellingen. Controleer voorwaarden voordat je kiest of hulp vraagt.',
         'keywords' => 'iptv ondersteuning, iptv installatie, xtreme hd iptv, iptv smart player, aroma iptv, beste iptv, 4k live iptv',
     ],
     'contact' => [
         'title' => 'Contacteer Opplex IPTV | Gratis Proefperiode & Ondersteuning',
-        'description' => 'Hulp nodig bij de installatie van de beste iptv? Neem contact op met Opplex voor gratis proefperiode, reseller-info, xtreme hd iptv, 4K streaming en iptv',
+        'description' => 'Neem via WhatsApp, e-mail of het formulier contact op met Opplex IPTV over apparaten, abonnementen, bestaande bestellingen en doorverkoopvragen.',
         'keywords' => 'iptv ondersteuning, iptv gratis proefperiode, contact iptv, xtreme hd iptv, iptv box, aroma iptv, iptv smart player',
     ],
     'redirect.ad' => [

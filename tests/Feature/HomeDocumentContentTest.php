@@ -35,13 +35,13 @@ class HomeDocumentContentTest extends TestCase
         $response = $this->get('/iptv-home');
 
         $response->assertOk();
-        $response->assertSeeText('Best IPTV Subscription Service Provider | Live TV, Sports & 4K Streaming');
+        $response->assertSeeText('Best IPTV Subscription Service Provider | Live TV & 4K Streaming');
         $response->assertSeeText('Watch What You Want, When You Want');
         $response->assertSeeText('Smart IPTV Plans. No Hidden Fees. Enjoy 4K Streaming & Free Trial');
         $response->assertSeeText('Everything You Need from an IPTV Service');
-        $response->assertSeeText('Works on Every Device You Already Own');
-        $response->assertSeeText('Hear What Viewers Say About Opplex IPTV');
-        $response->assertSeeText('Alex McCarthy');
+        $response->assertSeeText('Check Your Device and Player Before Choosing');
+        $response->assertSeeText('Illustrative Subscription Planning Examples');
+        $response->assertSeeText('Device and player check');
         $response->assertSeeText('What exactly is Opplex IPTV?');
         $response->assertSeeText('Numbers That Speak for Themselves!');
         $response->assertSeeText('Try Opplex IPTV For Free | No Commitment Needed');
@@ -67,7 +67,7 @@ class HomeDocumentContentTest extends TestCase
         }
         $this->assertSame(
             1,
-            substr_count($html, '<h1>Best IPTV Subscription Service Provider | Live TV, Sports &amp; 4K Streaming</h1>'),
+            substr_count($html, '<h1>Best IPTV Subscription Service Provider | Live TV &amp; 4K Streaming</h1>'),
             'The English document hero should render once, even when several slider images are available.'
         );
         $this->assertMarkersAreOrdered($html, [

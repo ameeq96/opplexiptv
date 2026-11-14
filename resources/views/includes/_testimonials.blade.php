@@ -3,32 +3,24 @@
     $usesDocumentTestimonials = in_array(optional(request()->route())->getName(), $documentReviewRoutes, true)
         && in_array(app()->getLocale(), config('app.locales', ['en']), true);
     $documentTestimonials = $usesDocumentTestimonials ? __('document_home.testimonials') : [];
-    $documentReviewImages = [
-        'images/img-test-2.webp',
-        'images/img-test-3.webp',
-        'images/resource/author-1.webp',
-        'images/resource/author-2.webp',
-        'images/img-test.webp',
-        'images/resource/author-5.webp',
-        'images/resource/author-6.webp',
-    ];
     $reviewItems = $usesDocumentTestimonials
         ? collect($documentTestimonials['reviews'])
             ->values()
-            ->map(fn (array $review, int $index) => [
+            ->map(fn (array $review) => [
                 'author_name' => $review['author'],
                 'text' => $review['text'],
-                'image' => $documentReviewImages[$index] ?? null,
             ])
         : collect($testimonials ?? [])
             ->filter(fn ($testimonial) => !empty($testimonial['text']) && !empty($testimonial['author_name']))
             ->take(8)
             ->values();
-    $reviewEyebrow = $reviewEyebrow
-        ?? ($usesDocumentTestimonials ? $documentTestimonials['title'] : __('messages.testimonials_title'));
-    $reviewHeading = $reviewHeading
-        ?? ($usesDocumentTestimonials ? $documentTestimonials['heading'] : __('messages.testimonials_heading'));
-    $reviewIntro = $reviewIntro ?? null;
+    $reviewEyebrow = $usesDocumentTestimonials
+        ? $documentTestimonials['title']
+        : ($reviewEyebrow ?? __('messages.testimonials_title'));
+    $reviewHeading = $usesDocumentTestimonials
+        ? $documentTestimonials['heading']
+        : ($reviewHeading ?? __('messages.testimonials_heading'));
+    $reviewIntro = $usesDocumentTestimonials ? $documentTestimonials['intro'] : ($reviewIntro ?? null);
     $verifiedLabel = $verifiedLabel
         ?? ($usesDocumentTestimonials
             ? $documentTestimonials['verified_label']
@@ -54,21 +46,32 @@
             <div class="review-showcase__grid" role="list">
                 @foreach ($reviewItems as $testimonial)
                     <figure class="testimonial-card review-showcase__card" role="listitem">
-                        <blockquote class="review-showcase__quote">
-                            <span class="review-showcase__quote-mark" aria-hidden="true">&ldquo;</span>
-                            <p>{{ $testimonial['text'] }}</p>
-                        </blockquote>
+                        @if ($usesDocumentTestimonials)
+                            <div class="review-showcase__quote">
+                                <span class="review-showcase__quote-mark" aria-hidden="true"><i class="fa fa-lightbulb-o"></i></span>
+                                <p>{{ $testimonial['text'] }}</p>
+                            </div>
+                        @else
+                            <blockquote class="review-showcase__quote">
+                                <span class="review-showcase__quote-mark" aria-hidden="true">&ldquo;</span>
+                                <p>{{ $testimonial['text'] }}</p>
+                            </blockquote>
+                        @endif
 
                         <figcaption class="review-showcase__author">
-                            <img
-                                src="{{ asset(($testimonial['image'] ?? null) ?: 'images/placeholder.webp') }}"
-                                alt="{{ __('document_ui.home.review_photo_alt', ['name' => $testimonial['author_name']]) }}"
-                                width="56"
-                                height="56"
-                                loading="lazy" decoding="async">
+                            @if ($usesDocumentTestimonials)
+                                <span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; flex: 0 0 56px; width: 56px; height: 56px;"><i class="fa fa-list-alt"></i></span>
+                            @else
+                                <img
+                                    src="{{ asset(($testimonial['image'] ?? null) ?: 'images/placeholder.webp') }}"
+                                    alt="{{ __('document_ui.home.review_photo_alt', ['name' => $testimonial['author_name']]) }}"
+                                    width="56"
+                                    height="56"
+                                    loading="lazy" decoding="async">
+                            @endif
                             <span class="review-showcase__author-copy">
                                 <strong>{{ $testimonial['author_name'] }}</strong>
-                                @if (!empty($testimonial['is_publicly_verified']))
+                                @if (!$usesDocumentTestimonials && !empty($testimonial['is_publicly_verified']))
                                     <small class="testimonial-card__author-role">{{ $verifiedLabel }}</small>
                                 @endif
                             </span>

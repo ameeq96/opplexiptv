@@ -66,20 +66,20 @@ return [
         'intro' => 'We hebben Opplex gebouwd voor mensen die genoeg hebben van buffering, slechte beeldkwaliteit en kanalen die simpelweg niet werken. Dit is wat je daadwerkelijk krijgt:',
         'features' => [
             [
-                'title' => 'HD- en 4K-livekanalen - Geen buffering',
-                'description' => 'Stream elk kanaal in scherp HD of volledig 4K. Geen vastlopers. Geen blokkerig beeld. Werkt op Smart TV\'s, Android-boxen en IPTV-spelers.',
+                'title' => 'HD en 4K: controleer de compatibiliteit',
+                'description' => 'Beeldkwaliteit en afspelen hangen af van de bron, het gekozen abonnement, de speler, het apparaat en het netwerk. Controleer je eisen vóór je een abonnement neemt.',
             ],
             [
                 'title' => 'Verschillende abonnementen met een gratis proefperiode',
                 'description' => 'Nog niet zeker? Probeer ons eerst. Met onze gratis IPTV-proefperiode controleer je de kanaalkwaliteit op je eigen apparaat voordat je iets uitgeeft. Kies daarna maandelijks, halfjaarlijks of jaarlijks.',
             ],
             [
-                'title' => '99.9% uptime - Vertrouwd in Europa en de USA',
-                'description' => 'Onze servers blijven online. Kijkers in de UK, Frankrijk, Italië en de US gebruiken Opplex dagelijks zonder uitval. Die betrouwbaarheid kunnen de meeste IPTV-aanbieders simpelweg niet evenaren.',
+                'title' => 'Controleer de beschikbaarheid op jouw systeem',
+                'description' => 'Vraag naar de zenders en kijktijden die je nodig hebt. Beschikbaarheid verschilt per aanbieder, locatie en netwerk; een proef is geen uptimegarantie.',
             ],
             [
-                'title' => 'Eenvoudige installatie op elk apparaat',
-                'description' => 'Fire TV Stick, MAG-box, iOS, Android, Smart TV: we ondersteunen ze allemaal. De installatie duurt minder dan vijf minuten en ons team begeleidt je indien nodig via WhatsApp.',
+                'title' => 'Bereid de installatie op je apparaat voor',
+                'description' => 'Bevestig het exacte model, besturingssysteem en de beoogde speler. App-installatie, orderbevestiging en service-instelling zijn aparte stappen; de benodigde tijd verschilt.',
             ],
         ],
     ],
@@ -101,7 +101,7 @@ return [
         ],
     ],
     'devices' => [
-        'heading' => 'Werkt op elk apparaat dat je al hebt',
+        'heading' => 'Controleer je apparaat en speler vóór je kiest',
         'intro' => 'Je hoeft niets bijzonders te kopen. Opplex werkt op:',
         'items' => [
             'Amazon Firestick en Fire TV',
@@ -114,38 +114,38 @@ return [
         'whatsapp_message' => 'Hallo, ik heb hulp nodig bij het kiezen en instellen van een IPTV-speler voor mijn apparaat.',
     ],
     'testimonials' => [
-        'title' => 'Klantbeoordelingen - De beste IPTV-ervaring',
-        'heading' => 'Lees wat kijkers zeggen over Opplex IPTV',
-        'intro' => 'Ervaringen gedeeld door kijkers die Opplex IPTV gebruiken voor live-tv en on-demand streaming.',
-        'verified_label' => 'Geverifieerde IPTV-klant',
+        'title' => 'Planningsvoorbeelden',
+        'heading' => 'Illustratieve voorbeelden voor abonnementskeuzes',
+        'intro' => 'Dit zijn denkbeeldige situaties om een abonnement te plannen, geen klantbeoordelingen of gemelde praktijkervaringen.',
+        'verified_label' => 'Illustratief voorbeeld',
         'reviews' => [
             [
-                'author' => 'Alex McCarthy',
-                'text' => 'Beste IPTV ooit, ik geef het zeker een 10 uit 10. Ik houd van de HD-streaming die nooit hapert en van het ruime aanbod waarin ik kan bladeren.',
+                'author' => 'Apparaat en speler controleren',
+                'text' => 'Illustratief voorbeeld: noteer vóór je keuze het exacte tv- of telefoonmodel en controleer de eisen van de beoogde speler.',
             ],
             [
-                'author' => 'Elsa Houdini',
-                'text' => 'Ik ben dol op Aroma IPTV en hun ondersteuning via WhatsApp. Geweldig apparaat!',
+                'author' => 'Looptijd controleren',
+                'text' => 'Illustratief voorbeeld: vergelijk de totaalprijs en looptijd en lees vóór bestellen de voorwaarden voor verlenging en terugbetaling.',
             ],
             [
-                'author' => 'Becky Sobers',
-                'text' => '“Ik ben van kabel-tv overgestapt naar Opplex IPTV en ben blij dat dit de juiste keuze was.”',
+                'author' => 'Aanbieders vergelijken',
+                'text' => 'Illustratief voorbeeld: vergelijk Opplex en Filex afzonderlijk. Vraag naar gewenste inhoud en apparaten in plaats van gelijke catalogi te veronderstellen.',
             ],
             [
-                'author' => 'Sarah',
-                'text' => 'Geen buffering op IPTV smart player, geweldige ondersteuning en het werkt zelfs soepel op Fire TV Stick. Absoluut de moeite waard!',
+                'author' => 'Spelerkosten controleren',
+                'text' => 'Illustratief voorbeeld: controleer of de speler-app een aparte licentie vereist. Een abonnement omvat niet automatisch de aankoop van een app.',
             ],
             [
-                'author' => 'Ameeq Khan',
-                'text' => 'IPTV van topkwaliteit die perfect werkt op Android.',
+                'author' => 'Betaling en installatie',
+                'text' => 'Illustratief voorbeeld: afrekenen openen of een betaling proberen bevestigt geen activering. Controleer de order- en installatiestatus privé.',
             ],
             [
-                'author' => 'Giulia Romano',
-                'text' => 'Hun IPTV-proefperiode is geweldig! Daarmee kan ik al mijn favoriete Italiaanse en Franse programma\'s streamen via Aroma IPTV.',
+                'author' => 'Eén verbinding plannen',
+                'text' => 'Illustratief voorbeeld: Opplex staat één gelijktijdige verbinding per lijn toe. Laat ondersteuning de limiet van Filex bevestigen in plaats van dezelfde limiet aan te nemen.',
             ],
             [
-                'author' => 'Oliver Smith',
-                'text' => 'Dit IPTV-abonnement heeft 12k+ kanalen, werkt op IPTV smart player en is uiterst stabiel in de UK.',
+                'author' => 'Notities voor ondersteuning',
+                'text' => 'Illustratief voorbeeld: geef ondersteuning het apparaat, de speler en het precieze probleem door. Publiceer geen wachtwoorden, betaalgegevens of privé-afspeeladressen.',
             ],
         ],
     ],
@@ -190,8 +190,8 @@ return [
                 'label' => 'Films en series',
             ],
             [
-                'value' => '99.9%',
-                'label' => 'Serveruptime',
+                'value' => 'Controleer',
+                'label' => 'Huidige beschikbaarheid',
             ],
             [
                 'value' => '24/7',

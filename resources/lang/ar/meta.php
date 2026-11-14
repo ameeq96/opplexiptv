@@ -3,27 +3,27 @@
 return [
     'home' => [
         'title' => 'أفضل خدمة IPTV - بث مباشر HD و 4K | Opplex IPTV',
-        'description' => 'احصل على أفضل تجربة IPTV مع بث مباشر بجودة 4K، أكثر من 12,000 قناة و VOD. يشمل Xtreme HD IPTV، مشغل IPTV الذكي وتجربة مجانية.',
+        'description' => 'استكشف خطط Opplex وFilex للتلفاز المباشر والمحتوى عند الطلب. قارن المدة والجهاز والشروط قبل الاختيار.',
         'keywords' => 'أفضل iptv، جهاز iptv، xtreme hd iptv، aroma iptv، مشغل iptv الذكي، تجربة iptv مجانية، iptv مباشر 4k',
     ],
     'about' => [
         'title' => 'حول Opplex IPTV - مزود IPTV مميز بجودة 4K',
-        'description' => 'تقدم Opplex IPTV خدمة Xtreme HD IPTV مع بث 4K وتجربة مجانية ودعم على مدار الساعة.',
+        'description' => 'تعرّف إلى كيفية جمع Opplex IPTV بين الخطط وأدلة الأجهزة ودعم الطلبات. تحقق من الخطوة التالية قبل الشراء.',
         'keywords' => 'أفضل iptv، xtreme hd iptv، مشغل iptv الذكي، aroma iptv، تجربة iptv مجانية، iptv مباشر 4k، جهاز iptv',
     ],
     'pricing' => [
         'title' => 'خطط اشتراك IPTV | أجهزة IPTV وبث مباشر 4K بأسعار مناسبة',
-        'description' => 'استكشف أسعار IPTV الرخيصة لأفضل الخدمات. احصل على Xtreme HD IPTV مع مشغل iptv الذكي، بث مباشر 4K وخيارات التجربة المجانية عبر الولايات المتحدة، فرنسا،',
+        'description' => 'قارن أسعار خطط Opplex وFilex ومددها. تحقق من المزود ومتطلبات الجهاز والمبلغ الكامل للطلب قبل الدفع.',
         'keywords' => 'جهاز iptv، xtreme hd iptv، أفضل iptv، aroma iptv، سعر اشتراك iptv، iptv مباشر 4k، تجربة iptv مجانية',
     ],
     'movies' => [
         'title' => 'شاهد أفلام ومسلسلات IPTV بجودة HD و4K - Opplex IPTV',
-        'description' => 'استمتع بأكثر من 50,000 فيلم و5,000 مسلسل عبر IPTV بجودة 4K. يدعم مشغل iptv الذكي وXtreme HD IPTV مع تجارب مجانية. شاهد محتوى Netflix، بوليوود وهوليوود.',
+        'description' => 'اطلع على معلومات الأفلام والمسلسلات في Opplex IPTV. أكد توفر العنوان والخطة ومتطلبات الجهاز قبل الاشتراك.',
         'keywords' => 'مشغل iptv الذكي، xtreme hd iptv، أفلام iptv، iptv Netflix، aroma iptv، iptv مباشر 4k، جهاز iptv',
     ],
     'packages' => [
         'title' => 'أفضل باقات IPTV مع تجربة مجانية | بث مباشر 4K في أوروبا',
-        'description' => 'باقات IPTV مرنة تشمل Xtreme HD IPTV، أجهزة iptv، قنوات 4K ودعم مشغل iptv الذكي. تجربة مجانية متاحة في فرنسا، إيطاليا، المملكة المتحدة والولايات المتحدة.',
+        'description' => 'قارن خطط Opplex وFilex الحالية. راجع المزود والمدة والاتصالات والمبلغ الكامل للطلب قبل الانتقال إلى الدفع.',
         'keywords' => 'تجربة iptv مجانية، xtreme hd iptv، مشغل iptv الذكي، iptv مباشر 4k، جهاز iptv، أفضل iptv، aroma iptv',
     ],
     'iptv-subscription-service' => [
@@ -33,7 +33,7 @@ return [
     ],
     'reseller-panel' => [
         'title' => 'كن موزع IPTV | وصول إلى لوحة Opplex IPTV',
-        'description' => 'انضم إلى برنامج موزعي Opplex IPTV. قم ببيع Xtreme HD IPTV وأجهزة IPTV الذكية عبر أوروبا والولايات المتحدة.',
+        'description' => 'اطلع على معلومات إعادة البيع لدى Opplex IPTV. تحقق من المزود وشروط الأرصدة والدعم قبل طلب عرض.',
         'keywords' => 'موزع iptv، xtreme hd iptv، جهاز iptv، aroma iptv، مشغل iptv الذكي، iptv مباشر 4k، أفضل iptv',
     ],
     'buynow' => [
@@ -48,17 +48,17 @@ return [
     ],
     'iptv-applications' => [
         'title' => 'أفضل تطبيقات IPTV: Smarters، Player، Android TV والمزيد',
-        'description' => 'قم بتنزيل تطبيقات IPTV بما في ذلك مشغل iptv الذكي وSmarters Pro. متوافقة مع Xtreme HD IPTV، أندرويد، iOS وأجهزة 4K. أفضل تجربة IPTV.',
+        'description' => 'اطلع على تطبيقات Opplex IPTV وخيارات المشغل. تحقق من الناشر والتوافق والمنصة وأي رسوم ترخيص منفصلة.',
         'keywords' => 'مشغل iptv الذكي، iptv Smarters، xtreme hd iptv، جهاز iptv، أفضل iptv، aroma iptv، iptv مباشر 4k',
     ],
     'faqs' => [
         'title' => 'الأسئلة الشائعة حول Opplex IPTV | الإعداد، الدعم والتجربة',
-        'description' => 'ابحث عن إجابات حول Xtreme HD IPTV، إعداد مشغل IPTV الذكي، بث 4K وتجربة IPTV مجانية. دعم كامل للولايات المتحدة، المملكة المتحدة، فرنسا وإيطاليا.',
+        'description' => 'اعثر على إجابات حول خطط Opplex IPTV والتجارب والأجهزة والمشغلات والطلبات. راجع الشروط قبل الاختيار أو طلب المساعدة.',
         'keywords' => 'دعم iptv، إعداد iptv، xtreme hd iptv، مشغل iptv الذكي، aroma iptv، أفضل iptv، iptv مباشر 4k',
     ],
     'contact' => [
         'title' => 'اتصل بـ Opplex IPTV | تجربة مجانية ودعم',
-        'description' => 'هل تحتاج إلى مساعدة في إعداد أفضل IPTV؟ تواصل مع Opplex للحصول على تجربة مجانية، معلومات الموزعين، Xtreme HD IPTV، بث 4K ودعم مشغل iptv الذكي.',
+        'description' => 'تواصل مع Opplex IPTV عبر WhatsApp أو البريد أو النموذج للاستفسار عن الأجهزة والخطط والطلبات القائمة وإعادة البيع.',
         'keywords' => 'دعم iptv، تجربة iptv مجانية، اتصل بـ iptv، xtreme hd iptv، جهاز iptv، aroma iptv، مشغل iptv الذكي',
     ],
     'redirect.ad' => [
