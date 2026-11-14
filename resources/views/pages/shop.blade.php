@@ -153,12 +153,12 @@
                     <h1 id="document-shop-title">{{ $documentPage['hero']['heading'] }}</h1>
                     <p>{{ $documentPage['hero']['text'] }}</p>
                     <p class="document-product-support">
-                        <a href="{{ route('iptv-subscription-service') }}">{{ $documentPage['hero']['note'] }}</a>
+                        <a href="{{ route('packages') }}">{{ $documentPage['hero']['note'] }}</a>
                     </p>
                     <div class="document-product-actions">
                         <a class="document-product-button" href="#devices">{{ $documentPage['hero']['devices'] }}</a>
                         <a class="document-product-button document-product-button--secondary" href="#digital-products">{{ $documentPage['hero']['digital'] }}</a>
-                        <a class="document-product-button document-product-button--outline" href="{{ route('iptv-subscription-service') }}">{{ $documentPage['hero']['plans'] }}</a>
+                        <a class="document-product-button document-product-button--outline" href="{{ route('packages') }}">{{ $documentPage['hero']['plans'] }}</a>
                     </div>
                 </div>
             </section>

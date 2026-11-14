@@ -492,7 +492,7 @@ class UiData
                 $children[] = [
                     'id' => null,
                     'label' => __('messages.nav_iptv_subscription_service'),
-                    'url' => $this->pageUrl('iptv-subscription-service'),
+                    'url' => $this->pageUrl('packages'),
                     'open_new_tab' => false,
                     'children' => [],
                 ];
@@ -600,13 +600,13 @@ class UiData
             '/contact' => 'contact',
             '/blogs' => 'blogs.index',
             '/reseller-panel' => 'reseller-panel',
-            '/pricing' => 'pricing',
+            '/pricing' => 'packages',
             '/movies' => 'movies',
             '/movies/series' => 'movies',
             '/faqs' => 'faqs',
             '/faq' => 'faqs',
             '/packages' => 'packages',
-            '/iptv-subscription-service' => 'iptv-subscription-service',
+            '/iptv-subscription-service' => 'packages',
             '/iptv-applications' => 'iptv-applications',
             '/activate' => 'activate',
         ];
@@ -627,9 +627,9 @@ class UiData
             'contact us' => 'contact',
             'blogs' => 'blogs.index',
             'reseller panel' => 'reseller-panel',
-            'pricing' => 'pricing',
+            'pricing' => 'packages',
             'movies/series' => 'movies',
-            'iptv subscription service' => 'iptv-subscription-service',
+            'iptv subscription service' => 'packages',
         ];
 
         if (isset($labelToRoute[$labelKey])) {

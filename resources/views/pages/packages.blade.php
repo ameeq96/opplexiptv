@@ -11,6 +11,12 @@
 @endif
 
 @section('content')
+    @if (session('event_promotion_activated'))
+        <div class="auto-container mt-4">
+            <div class="alert alert-success">{{ session('event_promotion_activated') }}</div>
+        </div>
+    @endif
+
     @if ($usesDocumentLayout)
         @php
             $page = __('document_commerce.packages');

@@ -25,9 +25,7 @@ class GenerateSitemap extends Command
         $namedRoutes = [
             'home',
             'about',
-            'pricing',
             'packages',
-            'iptv-subscription-service',
             'reseller-panel',
             'iptv-applications',
             'faqs',

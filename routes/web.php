@@ -206,14 +206,12 @@ Route::group(
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.activate'), [HomeController::class, 'activate'])->name('activate');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.activate-info'), [HomeController::class, 'activateInfo'])->name('activate-info');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.contact'), [HomeController::class, 'contact'])->name('contact');
-        Route::get(LaravelLocalization::transRoute('main_public_route_slugs.pricing'), [HomeController::class, 'pricing'])->name('pricing');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.movies'), [HomeController::class, 'movies'])->name('movies');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.packages'), [HomeController::class, 'packages'])->name('packages');
         Route::get('purchase/{package}', [HomeController::class, 'purchase'])
             ->whereNumber('package')
             ->middleware(['signed', 'throttle:30,1'])
             ->name('packages.purchase');
-        Route::get('iptv-subscription-service', [HomeController::class, 'iptvSubscriptionService'])->name('iptv-subscription-service');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.reseller-panel'), [HomeController::class, 'resellerPanel'])->name('reseller-panel');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.iptv-applications'), [HomeController::class, 'iptvApplications'])->name('iptv-applications');
         Route::get(LaravelLocalization::transRoute('main_public_route_slugs.shop'), [HomeController::class, 'shop'])->name('shop');
@@ -242,11 +240,13 @@ Route::group(
 
         $legacyPublicSlugs = [
             '' => 'home', 'about' => 'about', 'faqs' => 'faqs', 'activate' => 'activate',
-            'activate-info' => 'activate-info', 'contact' => 'contact', 'pricing' => 'pricing',
+            'activate-info' => 'activate-info', 'contact' => 'contact', 'pricing' => 'packages',
             'movies' => 'movies', 'packages' => 'packages', 'reseller-panel' => 'reseller-panel',
             'iptv-applications' => 'iptv-applications', 'shop' => 'shop', 'blogs' => 'blogs.index',
             'terms-of-service' => 'terms-of-service', 'privacy-policy' => 'privacy-policy',
             'refund-policy' => 'refund-policy',
+            LaravelLocalization::transRoute('main_public_route_slugs.pricing') => 'packages',
+            'iptv-subscription-service' => 'packages',
         ];
         foreach ($legacyPublicSlugs as $legacySlug => $routeName) {
             $slug = LaravelLocalization::transRoute('main_public_route_slugs.'.$routeName);

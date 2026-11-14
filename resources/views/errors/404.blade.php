@@ -18,7 +18,7 @@
             <a href="{{ route('about') }}">{{ __('interface.not_found.about') }}</a>
             <a href="{{ route('contact') }}">{{ __('interface.not_found.contact') }}</a>
             <a href="{{ route('faqs') }}">{{ __('interface.not_found.faqs') }}</a>
-            <a href="{{ route('pricing') }}">{{ __('interface.not_found.pricing') }}</a>
+            <a href="{{ route('packages') }}">{{ __('interface.not_found.pricing') }}</a>
         </div>
     </div>
 </body>

@@ -29,7 +29,7 @@
                     <h1>{{ $documentPage['hero']['heading'] }}</h1>
                     <p>{{ $documentPage['hero']['text'] }}</p>
                     <div class="document-product-actions">
-                        <a class="document-product-button" href="{{ route('iptv-subscription-service') }}">
+                        <a class="document-product-button" href="{{ route('packages') }}">
                             {{ $documentPage['hero']['plans'] }}
                         </a>
                         <a class="document-product-button document-product-button--secondary"
@@ -286,7 +286,7 @@
                             <a class="document-product-button" href="{{ route('iptv-applications') }}">
                                 {{ $documentPage['devices']['apps'] }}
                             </a>
-                            <a class="document-product-button document-product-button--ghost" href="{{ route('iptv-subscription-service') }}">
+                            <a class="document-product-button document-product-button--ghost" href="{{ route('packages') }}">
                                 {{ $documentPage['devices']['plans'] }}
                             </a>
                         </div>

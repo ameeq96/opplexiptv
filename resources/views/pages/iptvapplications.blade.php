@@ -162,7 +162,7 @@
                         <p>{{ $documentPage['cta']['text'] }}</p>
                     </div>
                     <div class="document-product-actions">
-                        <a class="document-product-button" href="{{ route('iptv-subscription-service') }}">
+                        <a class="document-product-button" href="{{ route('packages') }}">
                             {{ $documentPage['cta']['plans'] }}
                         </a>
                         <a class="document-product-button document-product-button--secondary"

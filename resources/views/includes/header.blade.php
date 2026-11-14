@@ -320,7 +320,7 @@
                                             </li>
                                             <li class="{{ request()->routeIs('pricing') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     @if(request()->routeIs('pricing')) aria-current="page" @endif
-                                                    href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a>
+                                                    href="{{ route('packages') }}">{{ __('messages.nav_pricing') }}</a>
                                             </li>
                                             <li class="{{ request()->routeIs('movies') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     @if(request()->routeIs('movies')) aria-current="page" @endif
@@ -328,7 +328,7 @@
                                             </li>
                                             <li class="{{ request()->routeIs('iptv-subscription-service') ? 'current' : '' }}"><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     @if(request()->routeIs('iptv-subscription-service')) aria-current="page" @endif
-                                                    href="{{ route('iptv-subscription-service') }}">{{ __('messages.nav_iptv_subscription_service') }}</a>
+                                                    href="{{ route('packages') }}">{{ __('messages.nav_iptv_subscription_service') }}</a>
                                             </li>
                                             <li><a class="{{ $isRtl ? 'text-right' : '' }}"
                                                     href="{{ route('shop') }}">{{ __('document_ui.shop.menu_label') }}</a>

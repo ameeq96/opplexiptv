@@ -9,7 +9,7 @@
 
     $assistantRoutes = [
         'home' => route('home'),
-        'pricing' => route('pricing'),
+        'pricing' => route('packages'),
         'packages' => route('packages', ['direct' => 1]),
         'about' => route('about'),
         'reseller' => route('reseller-panel'),

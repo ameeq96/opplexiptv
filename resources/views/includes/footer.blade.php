@@ -319,7 +319,7 @@
     };
     $footerLinkRoutes = [
         '/' => 'home',
-        '/pricing' => 'pricing',
+        '/pricing' => 'packages',
         '/packages' => 'packages',
         '/reseller-panel' => 'reseller-panel',
         '/movies' => 'movies',
@@ -474,7 +474,7 @@
                     @endforeach
                     @if (empty($footerLinks['explore']))
                         <li><a class="fx-link" href="{{ route('home') }}">{{ __('messages.nav_home') }}</a></li>
-                        <li><a class="fx-link" href="{{ route('pricing') }}">{{ __('messages.nav_pricing') }}</a></li>
+                        <li><a class="fx-link" href="{{ route('packages') }}">{{ __('messages.nav_pricing') }}</a></li>
                         <li><a class="fx-link" href="{{ route('packages', ['direct' => 1]) }}">{{ __('messages.nav_packages') }}</a></li>
                         <li><a class="fx-link" href="{{ route('reseller-panel') }}">{{ __('messages.nav_reseller') }}</a></li>
                         <li><a class="fx-link" href="{{ route('movies') }}">{{ __('messages.nav_movies_series') }}</a></li>

@@ -283,7 +283,7 @@ class SendMarketingDelivery implements ShouldQueue, ShouldBeUnique
             return route('customer.orders.renew', ['order' => $delivery->order_id]);
         }
 
-        return route('pricing');
+        return route('packages');
     }
 
     private function preferenceUrl(MarketingDelivery $delivery): string

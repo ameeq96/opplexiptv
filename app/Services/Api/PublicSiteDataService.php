@@ -27,8 +27,8 @@ use Illuminate\Support\Str;
 class PublicSiteDataService
 {
     public const PAGES = [
-        'home', 'about', 'contact', 'pricing', 'movies', 'packages', 'shop',
-        'iptv-subscription-service', 'reseller-panel', 'iptv-applications', 'faqs',
+        'home', 'about', 'contact', 'movies', 'packages', 'shop',
+        'reseller-panel', 'iptv-applications', 'faqs',
         'activate', 'activate-info', 'terms-of-service', 'privacy-policy', 'refund-policy',
     ];
 

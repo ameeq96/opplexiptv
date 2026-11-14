@@ -17,7 +17,7 @@ class ReferralController extends Controller
 
         session(['referral_code' => $referral->code]);
 
-        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Referral applied.', 'redirect_url' => route('pricing')]);
-        return redirect()->route('pricing');
+        if ($request->routeIs('api.browser.*')) return response()->json(['message' => 'Referral applied.', 'redirect_url' => route('packages')]);
+        return redirect()->route('packages');
     }
 }
