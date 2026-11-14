@@ -344,6 +344,38 @@
             {
               "heading": "Quais informações ajudam numa dúvida sobre o plano?",
               "body": "Faça uma anotação curta com fornecedor, período desejado, aparelho e reprodutor, estado atual do pedido e o ponto que precisa esclarecer. Envie uma referência existente por um canal privado. Não inclua senhas, códigos de pagamento nem endereços privados de listas de reprodução."
+            },
+            {
+              "heading": "O que é IPTV Subscription?",
+              "body": "IPTV Subscription é um site de marca para comparar os planos atuais Opplex e Filex. Planos, conta e atendimento usam o sistema principal Opplex, e o pagamento continua na Opplexify. O suporte compartilhado é Opplex IPTV Subscription Services."
+            },
+            {
+              "heading": "O plano inclui um aplicativo reprodutor?",
+              "body": "Não automaticamente. A licença do aplicativo, quando o reprodutor exige uma, é separada da assinatura IPTV, e alguns reprodutores têm custos próprios. Confira a compatibilidade e os requisitos de licença oficiais do reprodutor para o seu aparelho exato antes de comprar."
+            },
+            {
+              "heading": "Onde devo baixar um aplicativo reprodutor?",
+              "body": "Comece pela loja de aplicativos do seu aparelho ou pelo download publicado pelo próprio desenvolvedor. Evite instaladores parecidos e ofertas de ativação não solicitadas. Peça ao suporte que confirme a compatibilidade antes de inserir dados da conta em um aplicativo desconhecido."
+            },
+            {
+              "heading": "O que devo conferir antes de pagar?",
+              "body": "Confirme o modelo exato do aparelho, a versão do reprodutor e eventuais custos separados do aplicativo. Depois confira o pacote selecionado, a moeda e o total completo na Opplexify antes de confirmar."
+            },
+            {
+              "heading": "Abrir o checkout significa que meu pedido está pago e ativo?",
+              "body": "Não. Abrir o checkout não confirma o pagamento, e concluir uma tela de pagamento e ter o serviço pronto para uso são etapas diferentes. Consulte o estado do pedido na sua conta central e pergunte ao suporte se as instruções de ativação não estiverem claras."
+            },
+            {
+              "heading": "Preciso de uma conta separada para este site?",
+              "body": "Este site usa o sistema central de contas Opplex. Sua conta de cliente, o estado do pedido e o suporte permanecem no portal central Opplex."
+            },
+            {
+              "heading": "Posso receber reembolso depois de fazer o pedido?",
+              "body": "Após preço acordado e pedido confirmado, a compra é final e não reembolsável, salvo quando a lei aplicável exige reembolso. Interromper o uso não gera reembolso nem crédito pelo período atual. Para um reembolso exigido por lei, procure o atendimento privado com os dados do pedido e o motivo."
+            },
+            {
+              "heading": "O que devo fazer se a configuração ou a reprodução falhar?",
+              "body": "Instale as atualizações de sistema disponíveis, confirme que o aparelho tem espaço livre e teste a conexão com a internet. Anote o nome e a versão do reprodutor e a mensagem exata exibida. Não reinstale o aplicativo repetidamente, não restaure a TV para as configurações de fábrica nem compre novamente antes de falar com o suporte."
             }
           ],
           "kind": "editorial"
@@ -723,6 +755,34 @@
             {
               "heading": "Preciso comprar outro aparelho quando a reprodução falha?",
               "body": "Identifique primeiro a etapa que falha e confira o acesso habitual à internet no mesmo aparelho. Aplicativo indisponível, interrupção de rede e pedido pendente exigem perguntas diferentes. Compre equipamento apenas para um requisito identificado, depois de verificar as especificações do fabricante e as condições relevantes do serviço."
+            },
+            {
+              "heading": "O que é Get IPTV?",
+              "body": "Get IPTV é um site de marca para preparar seu aparelho e reprodutor antes de comparar os planos atuais Opplex e Filex. Planos, pedidos e ajuda se conectam ao sistema principal Opplex, e a Opplexify recebe o pagamento. O suporte compartilhado é Opplex IPTV Subscription Services."
+            },
+            {
+              "heading": "O equivalente mensal é um pagamento mensal?",
+              "body": "Não. O valor mensal equivalente exibido ao lado de um plano serve para comparar; não é um cronograma de cobrança mensal. Você paga o total completo do plano pelo período escolhido. Compare o preço total e a duração antes de se comprometer com um plano mais longo."
+            },
+            {
+              "heading": "O plano inclui um aplicativo reprodutor?",
+              "body": "Não automaticamente. A licença do aplicativo, quando o reprodutor exige uma, é separada da assinatura IPTV, e alguns reprodutores têm custos próprios. Confira a compatibilidade e os requisitos de licença oficiais do reprodutor para o seu aparelho exato antes de comprar."
+            },
+            {
+              "heading": "Onde devo baixar um aplicativo reprodutor?",
+              "body": "Comece pela loja de aplicativos do seu aparelho ou pelo download publicado pelo próprio desenvolvedor. Evite instaladores parecidos e ofertas de ativação não solicitadas. Peça ao suporte que confirme a compatibilidade antes de inserir dados da conta em um aplicativo desconhecido."
+            },
+            {
+              "heading": "Preciso de uma conta separada para este site?",
+              "body": "Este site usa o sistema central de contas Opplex. Sua conta de cliente, o estado do pedido e o suporte permanecem no portal central Opplex."
+            },
+            {
+              "heading": "Posso receber reembolso depois de fazer o pedido?",
+              "body": "Após preço acordado e pedido confirmado, a compra é final e não reembolsável, salvo quando a lei aplicável exige reembolso. Interromper o uso não gera reembolso nem crédito pelo período atual. Para um reembolso exigido por lei, procure o atendimento privado com os dados do pedido e o motivo."
+            },
+            {
+              "heading": "Como falo com o suporte e o que devo incluir?",
+              "body": "O suporte compartilhado está disponível 24 horas por dia; isso não garante resposta imediata nem um prazo específico de ativação. Informe o modelo do aparelho, o país e o plano que está considerando. Nunca envie senhas, dados de cartão de pagamento ou códigos de verificação."
             }
           ],
           "kind": "editorial"
@@ -1124,6 +1184,46 @@
             {
               "heading": "Quantas ligações simultâneas estão incluídas?",
               "body": "Cada plano Trex inclui uma ligação simultânea. Vários leitores instalados não permitem reproduções ao mesmo tempo. Confirme as condições para mudar de dispositivo; nem o período anual nem o nome 8K aumentam este limite."
+            },
+            {
+              "heading": "O que é a Trex IPTV 8K?",
+              "body": "A Trex IPTV 8K é um site de marca para o plano TREX IPTV de 12 meses. Os planos vêm do sistema principal da Opplex IPTV, o pagamento continua na Opplexify e a conta e o apoio permanecem no portal central de clientes. O nosso apoio partilhado está identificado publicamente como Opplex IPTV Subscription Services."
+            },
+            {
+              "heading": "O equivalente mensal é um pagamento mensal?",
+              "body": "Não. O equivalente mensal apresentado junto de um plano serve para comparar; não é um calendário de pagamentos mensais. Paga o total completo do plano pelo período que escolher. Compare o preço total e a duração antes de se comprometer com um plano anual."
+            },
+            {
+              "heading": "O plano inclui uma aplicação de leitor?",
+              "body": "Não automaticamente. A licença da aplicação, quando o leitor a exige, é separada da subscrição IPTV, e alguns leitores têm custos próprios. Confirme a compatibilidade e os requisitos de licença oficiais do leitor para o seu dispositivo exato antes de comprar."
+            },
+            {
+              "heading": "Onde devo descarregar uma aplicação de leitor?",
+              "body": "Comece pela loja de aplicações do seu dispositivo ou pela transferência publicada pelo próprio programador. Evite instaladores semelhantes e ofertas de ativação não solicitadas. Peça ao apoio que confirme a adequação antes de introduzir dados da conta numa aplicação desconhecida."
+            },
+            {
+              "heading": "O que devo verificar antes de pagar?",
+              "body": "Confirme o modelo exato do dispositivo, a versão do leitor e eventuais custos separados da aplicação. Depois reveja o pacote selecionado, a moeda e o total completo na Opplexify antes de confirmar. Se precisar de reproduzir em mais de um ecrã ao mesmo tempo, pergunte ao apoio antes de pagar."
+            },
+            {
+              "heading": "Abrir o checkout significa que a minha encomenda está paga e ativa?",
+              "body": "Não. Abrir o checkout não confirma o pagamento, e terminar um ecrã de pagamento e ter o serviço pronto a usar são etapas diferentes. Consulte o estado da encomenda na sua conta central e pergunte ao apoio se as instruções de ativação não forem claras."
+            },
+            {
+              "heading": "Preciso de uma conta separada para este site?",
+              "body": "Não. Não precisa de criar outra conta para este site. A sua conta de cliente, o estado da encomenda e o apoio permanecem no portal central Opplex."
+            },
+            {
+              "heading": "Posso obter um reembolso depois de encomendar?",
+              "body": "Após preço acordado e encomenda confirmada, a compra é final e não reembolsável, exceto quando a lei aplicável exige um reembolso. Deixar de usar o serviço não cria direito a reembolso nem a crédito pelo período em curso. Para um reembolso exigido por lei, escreva para info@opplexiptv.com com os dados da encomenda."
+            },
+            {
+              "heading": "Como contacto o apoio e o que devo incluir?",
+              "body": "O apoio ao cliente partilhado está disponível 24 horas por dia; isto não garante uma resposta imediata nem um prazo específico de ativação. Indique o modelo do dispositivo, o país e o plano em análise. Nunca envie palavras-passe, dados de cartão de pagamento ou códigos de verificação."
+            },
+            {
+              "heading": "O que devo fazer se a instalação ou a reprodução falhar?",
+              "body": "Instale as atualizações de sistema disponíveis, confirme que o dispositivo tem espaço livre e teste a ligação à internet. Anote o nome e a versão do leitor e a mensagem exata que aparece. Não reinstale repetidamente a aplicação, não reponha o televisor nas definições de fábrica nem compre novamente antes de pedir ajuda ao apoio."
             }
           ],
           "kind": "editorial"
@@ -1472,6 +1572,42 @@
             {
               "heading": "Um plano mais longo inclui mais ligações?",
               "body": "Não. Cada plano Opplex inclui uma ligação simultânea. Compare duração e preço total sem assumir que mais tempo permite vários ecrãs ao mesmo tempo. Confirme as regras de mudança de dispositivo antes de contar com elas."
+            },
+            {
+              "heading": "O que é a Opplex IPTV Store?",
+              "body": "A Opplex IPTV Store é um site de marca para escolher um plano Opplex IPTV. Está ligada ao catálogo, ao apoio e ao portal de clientes do site principal, e o pagamento continua na Opplexify. O nosso apoio partilhado está identificado publicamente como Opplex IPTV Subscription Services."
+            },
+            {
+              "heading": "O equivalente mensal é um pagamento mensal?",
+              "body": "Não. O equivalente mensal apresentado junto de um plano serve para comparar; não é um calendário de pagamentos mensais. Paga o total completo do plano pelo período que escolher. Compare o preço total e a duração antes de se comprometer com um plano mais longo."
+            },
+            {
+              "heading": "Onde devo descarregar uma aplicação de leitor?",
+              "body": "Comece pela loja de aplicações do seu dispositivo ou pela transferência publicada pelo próprio programador. Evite instaladores semelhantes e ofertas de ativação não solicitadas. Peça ao apoio que confirme a adequação antes de introduzir dados da conta numa aplicação desconhecida."
+            },
+            {
+              "heading": "O que devo verificar antes de pagar?",
+              "body": "Confirme o modelo exato do dispositivo, a versão do leitor e eventuais custos separados da aplicação. Depois reveja o pacote selecionado, a moeda e o total completo na Opplexify antes de confirmar. Se precisar de reproduzir em mais de um ecrã ao mesmo tempo, pergunte ao apoio antes de pagar."
+            },
+            {
+              "heading": "Abrir o checkout significa que a minha encomenda está paga e ativa?",
+              "body": "Não. Abrir o checkout não confirma o pagamento, e terminar um ecrã de pagamento e ter o serviço pronto a usar são etapas diferentes. Consulte o estado da encomenda na sua conta central e pergunte ao apoio se as instruções de ativação não forem claras."
+            },
+            {
+              "heading": "Preciso de uma conta separada para este site?",
+              "body": "Não. Não precisa de criar outra conta para este site. A sua conta de cliente, o estado da encomenda e o apoio permanecem no portal central Opplex."
+            },
+            {
+              "heading": "Posso obter um reembolso depois de encomendar?",
+              "body": "Após preço acordado e encomenda confirmada, a compra é final e não reembolsável, exceto quando a lei aplicável exige um reembolso. Deixar de usar o serviço não cria direito a reembolso nem a crédito pelo período em curso. Para um reembolso exigido por lei, escreva para info@opplexiptv.com com os dados da encomenda."
+            },
+            {
+              "heading": "Como contacto o apoio e o que devo incluir?",
+              "body": "O apoio ao cliente partilhado está disponível 24 horas por dia; isto não garante uma resposta imediata nem um prazo específico de ativação. Indique o modelo do dispositivo, o país e o plano em análise. Nunca envie palavras-passe, dados de cartão de pagamento ou códigos de verificação."
+            },
+            {
+              "heading": "O que devo fazer se a instalação ou a reprodução falhar?",
+              "body": "Instale as atualizações de sistema disponíveis, confirme que o dispositivo tem espaço livre e teste a ligação à internet. Anote o nome e a versão do leitor e a mensagem exata que aparece. Não reinstale repetidamente a aplicação, não reponha o televisor nas definições de fábrica nem compre novamente antes de pedir ajuda ao apoio."
             }
           ],
           "kind": "editorial"
@@ -1816,6 +1952,46 @@
             {
               "heading": "Geo funciona em qualquer lugar?",
               "body": "A marca não promete cobertura universal nem qualquer idioma. Confirme a localização e o equipamento. No checkout Opplexify reveja também moeda, período e total."
+            },
+            {
+              "heading": "O que é a Geo IPTV?",
+              "body": "A Geo IPTV é um site de marca para os planos GEO World IPTV de 1, 3, 6 ou 12 meses. Os planos Geo vêm do catálogo principal da Opplex, o pagamento continua na Opplexify e as encomendas e o apoio utilizam a conta central Opplex. O nosso apoio partilhado está identificado publicamente como Opplex IPTV Subscription Services."
+            },
+            {
+              "heading": "O equivalente mensal é um pagamento mensal?",
+              "body": "Não. O equivalente mensal apresentado junto de um plano serve para comparar; não é um calendário de pagamentos mensais. Paga o total completo do plano pelo período que escolher. Compare o preço total e a duração antes de se comprometer com um plano mais longo."
+            },
+            {
+              "heading": "O plano inclui uma aplicação de leitor?",
+              "body": "Não automaticamente. A licença da aplicação, quando o leitor a exige, é separada da subscrição IPTV, e alguns leitores têm custos próprios. Confirme a compatibilidade e os requisitos de licença oficiais do leitor para o seu dispositivo exato antes de comprar."
+            },
+            {
+              "heading": "Onde devo descarregar uma aplicação de leitor?",
+              "body": "Comece pela loja de aplicações do seu dispositivo ou pela transferência publicada pelo próprio programador. Evite instaladores semelhantes e ofertas de ativação não solicitadas. Peça ao apoio que confirme a adequação antes de introduzir dados da conta numa aplicação desconhecida."
+            },
+            {
+              "heading": "O que devo verificar antes de pagar?",
+              "body": "Confirme o modelo exato do dispositivo, a versão do leitor e eventuais custos separados da aplicação. Depois reveja o pacote selecionado, a moeda e o total completo na Opplexify antes de confirmar. Se precisar de reproduzir em mais de um ecrã ao mesmo tempo, pergunte ao apoio antes de pagar."
+            },
+            {
+              "heading": "Abrir o checkout significa que a minha encomenda está paga e ativa?",
+              "body": "Não. Abrir o checkout não confirma o pagamento, e terminar um ecrã de pagamento e ter o serviço pronto a usar são etapas diferentes. Consulte o estado da encomenda na sua conta central e pergunte ao apoio se as instruções de ativação não forem claras."
+            },
+            {
+              "heading": "Preciso de uma conta separada para este site?",
+              "body": "Não. Não precisa de criar outra conta para este site. A sua conta de cliente, o estado da encomenda e o apoio permanecem no portal central Opplex."
+            },
+            {
+              "heading": "Posso obter um reembolso depois de encomendar?",
+              "body": "Após preço acordado e encomenda confirmada, a compra é final e não reembolsável, exceto quando a lei aplicável exige um reembolso. Deixar de usar o serviço não cria direito a reembolso nem a crédito pelo período em curso. Para um reembolso exigido por lei, escreva para info@opplexiptv.com com os dados da encomenda."
+            },
+            {
+              "heading": "Como contacto o apoio e o que devo incluir?",
+              "body": "O apoio ao cliente partilhado está disponível 24 horas por dia; isto não garante uma resposta imediata nem um prazo específico de ativação. Indique o modelo do dispositivo, o país e o plano em análise. Nunca envie palavras-passe, dados de cartão de pagamento ou códigos de verificação."
+            },
+            {
+              "heading": "O que devo fazer se a instalação ou a reprodução falhar?",
+              "body": "Instale as atualizações de sistema disponíveis, confirme que o dispositivo tem espaço livre e teste a ligação à internet. Anote o nome e a versão do leitor e a mensagem exata que aparece. Não reinstale repetidamente a aplicação, não reponha o televisor nas definições de fábrica nem compre novamente antes de pedir ajuda ao apoio."
             }
           ],
           "kind": "editorial"
@@ -2168,6 +2344,46 @@
             {
               "heading": "Quantas ligações inclui o serviço?",
               "body": "Cada plano 5G Live inclui uma ligação simultânea. Um telefone, hotspot ou outro leitor instalado não acrescenta um fluxo. Pare a primeira reprodução antes de comparar dispositivo ou rede e esclareça as regras de mudança com o apoio."
+            },
+            {
+              "heading": "O que é a 5G Live IPTV?",
+              "body": "A 5G Live IPTV é um site de marca para os planos 5G Live IPTV de 1, 3, 6 ou 12 meses. Os planos vêm do catálogo principal da Opplex, o pagamento continua na Opplexify e a conta e o apoio permanecem centrais. O nosso apoio partilhado está identificado publicamente como Opplex IPTV Subscription Services."
+            },
+            {
+              "heading": "O equivalente mensal é um pagamento mensal?",
+              "body": "Não. O equivalente mensal apresentado junto de um plano serve para comparar; não é um calendário de pagamentos mensais. Paga o total completo do plano pelo período que escolher. Compare o preço total e a duração antes de se comprometer com um plano mais longo."
+            },
+            {
+              "heading": "O plano inclui uma aplicação de leitor?",
+              "body": "Não automaticamente. A licença da aplicação, quando o leitor a exige, é separada da subscrição IPTV, e alguns leitores têm custos próprios. Confirme a compatibilidade e os requisitos de licença oficiais do leitor para o seu dispositivo exato antes de comprar."
+            },
+            {
+              "heading": "Onde devo descarregar uma aplicação de leitor?",
+              "body": "Comece pela loja de aplicações do seu dispositivo ou pela transferência publicada pelo próprio programador. Evite instaladores semelhantes e ofertas de ativação não solicitadas. Peça ao apoio que confirme a adequação antes de introduzir dados da conta numa aplicação desconhecida."
+            },
+            {
+              "heading": "O que devo verificar antes de pagar?",
+              "body": "Confirme o modelo exato do dispositivo, a versão do leitor e eventuais custos separados da aplicação. Depois reveja o pacote selecionado, a moeda e o total completo na Opplexify antes de confirmar. Se precisar de reproduzir em mais de um ecrã ao mesmo tempo, pergunte ao apoio antes de pagar."
+            },
+            {
+              "heading": "Abrir o checkout significa que a minha encomenda está paga e ativa?",
+              "body": "Não. Abrir o checkout não confirma o pagamento, e terminar um ecrã de pagamento e ter o serviço pronto a usar são etapas diferentes. Consulte o estado da encomenda na sua conta central e pergunte ao apoio se as instruções de ativação não forem claras."
+            },
+            {
+              "heading": "Preciso de uma conta separada para este site?",
+              "body": "Não. Não precisa de criar outra conta para este site. A sua conta de cliente, o estado da encomenda e o apoio permanecem no portal central Opplex."
+            },
+            {
+              "heading": "Posso obter um reembolso depois de encomendar?",
+              "body": "Após preço acordado e encomenda confirmada, a compra é final e não reembolsável, exceto quando a lei aplicável exige um reembolso. Deixar de usar o serviço não cria direito a reembolso nem a crédito pelo período em curso. Para um reembolso exigido por lei, escreva para info@opplexiptv.com com os dados da encomenda."
+            },
+            {
+              "heading": "Como contacto o apoio e o que devo incluir?",
+              "body": "O apoio ao cliente partilhado está disponível 24 horas por dia; isto não garante uma resposta imediata nem um prazo específico de ativação. Indique o modelo do dispositivo, o país e o plano em análise. Nunca envie palavras-passe, dados de cartão de pagamento ou códigos de verificação."
+            },
+            {
+              "heading": "O que devo fazer se a instalação ou a reprodução falhar?",
+              "body": "Instale as atualizações de sistema disponíveis, confirme que o dispositivo tem espaço livre e teste a ligação à internet. Anote o nome e a versão do leitor e a mensagem exata que aparece. Não reinstale repetidamente a aplicação, não reponha o televisor nas definições de fábrica nem compre novamente antes de pedir ajuda ao apoio."
             }
           ],
           "kind": "editorial"
