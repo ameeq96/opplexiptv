@@ -949,6 +949,21 @@ class PublicSiteDataService
             ],
         ];
 
+        // The schema may carry no image or the missing placeholder file: use the post's real image, else omit the property.
+        if (is_array($jsonLd)) {
+            $isPlaceholderImage = static fn ($image) => is_string($image) && str_ends_with($image, '/images/placeholder.webp');
+            $schemaImage = $jsonLd['image'] ?? [];
+            if ($isPlaceholderImage($schemaImage)
+                || (is_array($schemaImage) && array_is_list($schemaImage)
+                    && array_filter($schemaImage, static fn ($image) => !$isPlaceholderImage($image)) === [])) {
+                if ($pageMetaImage) {
+                    $jsonLd['image'] = [$pageMetaImage];
+                } else {
+                    unset($jsonLd['image']);
+                }
+            }
+        }
+
         return compact(
             'blog',
             'currentTranslation',

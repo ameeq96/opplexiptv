@@ -114,7 +114,7 @@
                                     <span class="iptva-app__icon">
                                         @if (!empty($app['image_url']))
                                             <img width="40" height="40" loading="lazy" decoding="async"
-                                                 src="{{ $app['image_url'] }}" alt="">
+                                                 src="{{ $app['image_url'] }}" alt="{{ $canonicalTitle }}">
                                         @else
                                             <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                                 <rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3V9Z"/>
