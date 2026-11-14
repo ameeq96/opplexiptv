@@ -13,7 +13,7 @@ return [
                     'icon' => 'fa fa-desktop',
                 ],
                 [
-                    'title' => '12,000+ chaînes en direct',
+                    'title' => 'Des milliers de chaînes en direct',
                     'description' => 'Actualités, divertissement et chaînes internationales dans une seule formule.',
                     'icon' => 'fa fa-globe',
                 ],
@@ -40,7 +40,7 @@ return [
                     'title' => 'Mensuel',
                     'price' => '$2.99/mois',
                     'features' => [
-                        'Regardez 12,000+ chaînes en HD et 4K, sans mise en mémoire tampon',
+                        'Regardez des milliers de chaînes en HD et 4K, sans mise en mémoire tampon',
                         'Tous les films et séries',
                         'Assistance 24/7 via WhatsApp',
                         'Fonctionne sur tous les principaux appareils',
@@ -119,8 +119,8 @@ return [
             'heading' => 'Ce que vous obtenez avec chaque abonnement IPTV',
             'intro' => 'Aucun supplément inattendu ni fonctionnalité verrouillée. Chaque formule, quel que soit son prix, inclut le même forfait complet :',
             'items' => [
-                '12,000+ chaînes de TV en direct (actualités, divertissement, international)',
-                '50,000+ films et 5,000+ séries TV à la demande',
+                'Des milliers de chaînes de TV en direct (actualités, divertissement, international)',
+                'Des milliers de films et de séries TV à la demande',
                 'Qualité de streaming 4K et HD sur les chaînes compatibles',
                 'Guide électronique des programmes (EPG) inclus',
                 'La prise en charge de plusieurs appareils s’utilise sur jusqu’à 2 écrans simultanément',
@@ -162,11 +162,11 @@ return [
             ],
         ],
         'trial' => [
-            'heading' => 'Essayez gratuitement notre IPTV : 12,000+ chaînes en qualité 4K intégrale',
+            'heading' => 'Essayez gratuitement notre IPTV : des milliers de chaînes en qualité 4K intégrale',
             'text' => 'Vous n’êtes pas encore prêt à vous engager ? Testez d’abord Opplex avec un essai gratuit. Regardez les chaînes en direct, vérifiez la qualité d’image et constatez sa stabilité sur votre propre appareil avant de payer.',
             'items' => [
                 'Streaming 4K',
-                '12,000+ chaînes',
+                'Des milliers de chaînes',
                 'Activation en quelques minutes',
             ],
             'cta' => 'Démarrer l’essai IPTV gratuit sur WhatsApp',
@@ -179,7 +179,7 @@ return [
             'eyebrow' => 'Chaque formule inclut le forfait complet. Aucun frais caché.',
             'heading' => 'Tarifs des abonnements IPTV : des formules simples, sans surprise',
             'paragraphs' => [
-                'Choisissez la durée de votre formule, payez une fois et commencez à regarder. Chaque formule Opplex vous donne accès aux mêmes 12,000+ chaînes en direct, 50,000+ films et à la qualité 4K. Les formules plus longues coûtent moins cher par mois ; c’est la seule différence.',
+                'Choisissez la durée de votre formule, payez une fois et commencez à regarder. Chaque formule Opplex vous donne accès aux mêmes milliers de chaînes en direct et de films, ainsi qu’à la qualité 4K. Les formules plus longues coûtent moins cher par mois ; c’est la seule différence.',
                 'Filex est également disponible pour les spectateurs qui souhaitent une sélection de chaînes différente, à un tarif légèrement supérieur. Les deux utilisent le même processus de configuration et les mêmes applications.',
                 'Vous ne savez pas quelle formule vous convient ? Commencez par la formule mensuelle. Vous pourrez toujours passer à l’année par la suite.',
             ],
@@ -188,9 +188,9 @@ return [
             'heading' => 'Chaque formule comprend tout ceci : aucun supplément, aucun niveau',
             'intro' => 'De nombreux services de streaming vous font payer un supplément pour la 4K ou la VOD. Pas Opplex. Voici ce que vous obtenez dès le premier jour avec chaque formule :',
             'items' => [
-                '12,000+ chaînes en direct : actualités, divertissement, Royaume-Uni, États-Unis, international',
-                '50,000+ films à la demande',
-                '5,000+ séries TV, actuelles et classiques',
+                'Des milliers de chaînes en direct : actualités, divertissement, Royaume-Uni, États-Unis, international',
+                'Des milliers de films à la demande',
+                'Des milliers de séries TV, actuelles et classiques',
                 'Qualité HD et 4K sur les chaînes et appareils compatibles',
                 'EPG intégrée pour savoir ce qui est diffusé et à quelle heure',
                 'Catch-up TV sur certaines chaînes',

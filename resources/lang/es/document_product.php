@@ -97,7 +97,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ películas y series: disfruta de HD y 4K en dispositivos compatibles',
+            'heading' => 'Miles de películas y series: disfruta de HD y 4K en dispositivos compatibles',
             'text' => 'Tu suscripción a Opplex incluye una biblioteca completa bajo demanda desde el primer día. Sin coste adicional ni un paquete VOD independiente que comprar. Explora películas, series y dibujos animados o busca algo concreto. Se añade contenido nuevo de forma continua y, si no encuentras un título, solo tienes que preguntarnos por WhatsApp.',
             'plans' => 'Ver planes',
             'trial' => 'Iniciar prueba gratuita',
@@ -188,14 +188,14 @@ return [
             'heading' => 'Servicio de suscripción IPTV: todo lo que quieres ver desde $2.99',
             'paragraphs' => [
                 'Buscas un servicio de streaming que funcione de verdad. Uno que cargue los canales rápidamente, no haga buffering en el peor momento y te ofrezca asistencia real cuando algo falle. Eso es Opplex.',
-                'Una suscripción incluye 12,000+ canales en directo, 50,000+ películas y series, y calidad HD o 4K, todo a través de tu conexión a Internet actual: sin antena, alquiler de decodificador ni contrato anual.',
+                'Una suscripción incluye miles de canales en directo, películas y series, y calidad HD o 4K, todo a través de tu conexión a Internet actual: sin antena, alquiler de decodificador ni contrato anual.',
             ],
             'primary_cta' => 'Crea tu plan IPTV',
             'secondary_cta' => 'Iniciar prueba gratuita por WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'Streaming HD y 4K', 'text' => 'Imagen nítida en todos los dispositivos. Si el canal es compatible con 4K, obtienes 4K. Sin compresión ni límite de calidad.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ canales en directo:', 'text' => 'Acceso a canales disponibles de noticias, entretenimiento y contenido internacional. La disponibilidad puede variar según la fuente y la región.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Películas y series bajo demanda:', 'text' => '50,000+ títulos disponibles desde el momento en que te suscribes. No necesitas ningún paquete VOD adicional.'],
+                ['icon' => 'flaticon-5g', 'title' => 'Miles de canales en directo:', 'text' => 'Acceso a canales disponibles de noticias, entretenimiento y contenido internacional. La disponibilidad puede variar según la fuente y la región.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Películas y series bajo demanda:', 'text' => 'Miles de títulos disponibles desde el momento en que te suscribes. No necesitas ningún paquete VOD adicional.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Configuración en dispositivos compatibles:', 'text' => 'Te ayudamos a empezar en Firestick, Smart TV, Android, iOS o MAG. El tiempo de configuración varía según el dispositivo.'],
             ],
         ],
@@ -221,9 +221,9 @@ return [
             'heading' => 'Todo lo que incluye tu suscripción a Opplex',
             'intro' => 'Sin niveles. Sin funciones bloqueadas. Esto es lo que incluye cada plan desde el primer día:',
             'items' => [
-                '12,000+ canales en directo | Reino Unido, EE. UU., internacionales, noticias e infantiles',
-                '50,000+ películas bajo demanda',
-                '5,000+ series de TV, temporadas actuales y clásicos',
+                'Miles de canales en directo | Reino Unido, EE. UU., internacionales, noticias e infantiles',
+                'Miles de películas bajo demanda',
+                'Miles de series de TV, temporadas actuales y clásicos',
                 'Calidad HD y 4K en el contenido compatible',
                 'EPG integrada para que puedas ver qué se está emitiendo y qué viene después',
                 'Catch-up TV en determinados canales',
@@ -253,7 +253,7 @@ return [
             'intro' => 'Mucha gente se cambia del cable a IPTV y se pregunta por qué esperó tanto. Esto es lo que cambia:',
             'items' => [
                 ['title' => 'Precio:', 'text' => 'Un paquete de cable típico cuesta entre $60 y $120 al mes en EE. UU. y el Reino Unido. Opplex parte de $2.99. Obtienes más canales por una fracción del coste.'],
-                ['title' => 'Contenido', 'text' => 'El cable te ofrece un paquete fijo, a menudo con un 70% de canales que nunca verás. Opplex incluye 12,000+ canales y una biblioteca completa bajo demanda, para que veas lo que quieras cuando quieras.'],
+                ['title' => 'Contenido', 'text' => 'El cable te ofrece un paquete fijo, a menudo con un 70% de canales que nunca verás. Opplex incluye miles de canales y una biblioteca completa bajo demanda, para que veas lo que quieras cuando quieras.'],
                 ['title' => 'Configuración:', 'text' => 'Sin visita de un técnico, franja horaria de instalación ni hardware de alquiler. Regístrate y descarga una aplicación. Eso es todo.'],
                 ['title' => 'Flexibilidad', 'text' => 'El cable suele obligarte a firmar un contrato de 12 o 24 meses. Los planes de Opplex son mensuales, semestrales o anuales y ninguno se renueva automáticamente. Tú tienes el control.'],
             ],

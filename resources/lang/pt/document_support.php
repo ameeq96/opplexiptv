@@ -11,7 +11,7 @@ return [
                 'items' => [
                     [
                         'question' => 'O que é a Opplex IPTV?',
-                        'answer' => 'A Opplex é um serviço de subscrição IPTV que transmite TV em direto, filmes e séries através da sua ligação à Internet. Recebe 12,000+ canais em direto e 50,000+ títulos a pedido, sem antena parabólica, box de cabo ou contrato longo. Os planos começam em $2.99 por mês.',
+                        'answer' => 'A Opplex é um serviço de subscrição IPTV que transmite TV em direto, filmes e séries através da sua ligação à Internet. Recebe milhares de canais em direto e títulos a pedido, sem antena parabólica, box de cabo ou contrato longo. Os planos começam em $2.99 por mês.',
                     ],
                     [
                         'question' => 'Qual é o aspeto da Opplex IPTV num dispositivo?',
@@ -138,8 +138,8 @@ return [
             'trial_cta' => 'Iniciar um teste gratuito',
         ],
         'stats' => [
-            ['value' => '12,000+', 'label' => 'Canais em direto', 'icon' => 'fa fa-desktop'],
-            ['value' => '50,000+', 'label' => 'Filmes e séries', 'icon' => 'fa fa-film'],
+            ['value' => 'Milhares', 'label' => 'Canais em direto', 'icon' => 'fa fa-desktop'],
+            ['value' => 'Milhares', 'label' => 'Filmes e séries', 'icon' => 'fa fa-film'],
             ['value' => '99.9%', 'label' => 'Disponibilidade do servidor', 'icon' => 'fa fa-signal'],
             ['value' => '24/7', 'label' => 'Apoio ao cliente', 'icon' => 'fa fa-comments'],
         ],
@@ -157,7 +157,7 @@ return [
             'items' => [
                 [
                     'title' => 'Estabilidade acima das funcionalidades',
-                    'text' => 'Preferimos ter 12,000 canais que funcionam 99.9% do tempo do que 20,000 que falham nas horas de ponta. Todas as melhorias dos servidores visam a disponibilidade, não números chamativos.',
+                    'text' => 'Preferimos ter menos canais que funcionam 99.9% do tempo do que muitos mais que falham nas horas de ponta. Todas as melhorias dos servidores visam a disponibilidade, não números chamativos.',
                     'icon' => 'fa fa-shield',
                 ],
                 [
@@ -199,9 +199,9 @@ return [
             'heading' => 'Como a Opplex chegou até aqui',
             'items' => [
                 ['year' => '2022', 'text' => 'A Opplex é lançada com as plataformas Opplex e Filex. Chegam os primeiros subscritores no Canadá e Reino Unido.'],
-                ['year' => '2023', 'text' => 'A infraestrutura de servidores é expandida para o tráfego europeu. A biblioteca de canais em direto ultrapassa 10,000 canais.'],
+                ['year' => '2023', 'text' => 'A infraestrutura de servidores é expandida para o tráfego europeu. A biblioteca de canais em direto atinge milhares de canais.'],
                 ['year' => '2024', 'text' => 'Criamos e lançamos a Opplex IPTV App e XTV Live, os nossos próprios leitores, desenvolvidos especificamente para streams Opplex.'],
-                ['year' => '2025', 'text' => 'A biblioteca VOD ultrapassa 50,000 títulos. O site multilingue é lançado em 10 idiomas. O painel de revendedor abre ao público.'],
+                ['year' => '2025', 'text' => 'A biblioteca VOD atinge milhares de títulos. O site multilingue é lançado em 10 idiomas. O painel de revendedor abre ao público.'],
                 ['year' => '2026', 'text' => 'Subscritores ativos em 40+ países. Adicionamos OPPLEX Voice Assistant. Disponibilidade de 99.9% pelo terceiro ano consecutivo.'],
             ],
         ],

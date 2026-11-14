@@ -221,9 +221,9 @@ return [
             'heading' => 'Everything Inside Your Opplex Subscription',
             'intro' => "No tiers. No locked features. Here's what every plan includes from day one:",
             'items' => [
-                '12,000+ live channels | UK, USA, international, news, kids',
-                '50,000+ movies on demand',
-                '5,000+ TV series, current seasons, and classics',
+                'Thousands of live channels | UK, USA, international, news, kids',
+                'Thousands of movies on demand',
+                'Thousands of TV series, current seasons, and classics',
                 'HD and 4K quality on supported content',
                 "Built-in EPG so you can see what's on and what's coming up",
                 'Catch-up TV on selected channels',
@@ -253,7 +253,7 @@ return [
             'intro' => "A lot of people switch from cable to IPTV and wonder why they waited so long. Here's what changes:",
             'items' => [
                 ['title' => 'Price:', 'text' => 'A typical cable package runs $60 to $120 a month in the USA and the UK. Opplex starts at $2.99. You get more channels for a fraction of the cost.'],
-                ['title' => 'Content', 'text' => "Cable gives you a fixed bundle, often with 70% of channels you'll never watch. Opplex includes 12,000+ channels plus a full on-demand library, so you watch what you want, when you want it."],
+                ['title' => 'Content', 'text' => "Cable gives you a fixed bundle, often with 70% of channels you'll never watch. Opplex includes thousands of channels plus a full on-demand library, so you watch what you want, when you want it."],
                 ['title' => 'Setup:', 'text' => "No engineer visit, no installation window, no hardware to rent. Sign up and download an app. That's it."],
                 ['title' => 'Flexibility', 'text' => "Cable usually locks you into a12-2 or 24-month contract. Opplex plans are monthly, half-yearly, or yearly, and none of them auto-renew. You're in control."],
             ],

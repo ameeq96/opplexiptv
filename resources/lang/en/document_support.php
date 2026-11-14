@@ -11,7 +11,7 @@ return [
                 'items' => [
                     [
                         'question' => 'What is Opplex IPTV?',
-                        'answer' => 'Opplex is an IPTV subscription service that streams live TV, movies, and series over your internet connection. You get 12,000+ live channels and 50,000+ on-demand titles, no satellite dish, no cable box, no long contract. Plans start at $2.99 a month.',
+                        'answer' => 'Opplex is an IPTV subscription service that streams live TV, movies, and series over your internet connection. You get thousands of live channels and on-demand titles, no satellite dish, no cable box, no long contract. Plans start at $2.99 a month.',
                     ],
                     [
                         'question' => 'What does Opplex IPTV look like on a device?',
@@ -199,9 +199,9 @@ return [
             'heading' => 'How Opplex Got Here',
             'items' => [
                 ['year' => '2022', 'text' => 'Opplex launches with Opplex and Filex platforms. First subscribers in Canada and the UK.'],
-                ['year' => '2023', 'text' => 'Server infrastructure expanded for European traffic. Live channel library grows past 10,000 channels.'],
+                ['year' => '2023', 'text' => 'Server infrastructure expanded for European traffic. Live channel library grows to thousands of channels.'],
                 ['year' => '2024', 'text' => 'We build and release the Opplex IPTV App and XTV Live, our own players, built specifically for Opplex streams.'],
-                ['year' => '2025', 'text' => 'VOD library crosses 50,000 titles. Multi-language site launches across 10 languages. Reseller panel opens to the public.'],
+                ['year' => '2025', 'text' => 'VOD library grows to thousands of titles. Multi-language site launches across 10 languages. Reseller panel opens to the public.'],
                 ['year' => '2026', 'text' => 'Active subscribers in 40+ countries. OPPLEX Voice Assistant added. Uptime at 99.9% for the third consecutive year.'],
             ],
         ],

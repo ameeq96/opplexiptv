@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'heading' => 'Melhor fornecedor de serviços de subscrição IPTV | TV em direto e streaming 4K',
-        'text' => 'Deixe de pagar por um serviço de cabo que quase não utiliza. Aproveite algumas das melhores ofertas de subscrição IPTV: a Opplex oferece 12,000+ canais em direto, 50,000+ filmes e uma imagem 4K cristalina, tudo nos dispositivos que já possui. Escolha um plano, ligue-se e comece a ver hoje mesmo.',
+        'text' => 'Deixe de pagar por um serviço de cabo que quase não utiliza. Aproveite algumas das melhores ofertas de subscrição IPTV: a Opplex oferece milhares de canais em direto, filmes e uma imagem 4K cristalina, tudo nos dispositivos que já possui. Escolha um plano, ligue-se e comece a ver hoje mesmo.',
         'primary_cta' => 'Iniciar teste gratuito',
         'secondary_cta' => 'Ver planos IPTV',
     ],
@@ -90,7 +90,7 @@ return [
         'cards' => [
             [
                 'title' => 'Os melhores pacotes de subscrição IPTV com acesso Smart Player',
-                'description' => 'Desfrute de vários planos de subscrição IPTV acessíveis, incluindo Xtreme HD IPTV, aroma IPTV e IPTV smart player, com 12k+ canais em direto e suporte 4K.',
+                'description' => 'Desfrute de vários planos de subscrição IPTV acessíveis, incluindo Xtreme HD IPTV, aroma IPTV e IPTV smart player, com milhares de canais em direto e suporte 4K.',
                 'cta' => 'Mais detalhes sobre os planos IPTV',
             ],
             [
@@ -154,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => 'O que é exatamente a Opplex IPTV?',
-                'answer' => 'A Opplex é um serviço de subscrição IPTV. Isso significa que transmite TV em direto, filmes e séries pela sua ligação à Internet. Sem antena parabólica, sem box de cabo e sem contrato. Recebe 12,000+ canais em direto e 50,000+ títulos a pedido numa única aplicação.',
+                'answer' => 'A Opplex é um serviço de subscrição IPTV. Isso significa que transmite TV em direto, filmes e séries pela sua ligação à Internet. Sem antena parabólica, sem box de cabo e sem contrato. Recebe milhares de canais em direto e títulos a pedido numa única aplicação.',
             ],
             [
                 'question' => 'Existe um teste gratuito antes de subscrever?',
@@ -182,11 +182,11 @@ return [
         'heading' => 'Números que falam por si!',
         'items' => [
             [
-                'value' => '12,000+',
+                'value' => 'Milhares',
                 'label' => 'Canais em direto',
             ],
             [
-                'value' => '50,000+',
+                'value' => 'Milhares',
                 'label' => 'Filmes e séries',
             ],
             [
@@ -201,10 +201,10 @@ return [
     ],
     'trial' => [
         'heading' => 'Experimente a Opplex IPTV gratuitamente | Sem compromisso',
-        'text' => 'Veja 12,000+ canais em 4K. Teste a qualidade antes de subscrever. A ativação demora apenas alguns minutos.',
+        'text' => 'Veja milhares de canais em 4K. Teste a qualidade antes de subscrever. A ativação demora apenas alguns minutos.',
         'chips' => [
             'Desfrute de streaming 4K',
-            'Mais de 12K+ canais',
+            'Milhares de canais',
             'Ativação e configuração rápidas',
         ],
         'action_label' => 'Teste pelo WhatsApp',

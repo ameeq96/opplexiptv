@@ -63,14 +63,14 @@ return [
     'yes_subreseller' => 'Créer un sous-revendeur',
     'network_heading' => 'Nous offrons l’illimité — IPTV pro et dev IPTV pro disponibles',
 
-    'feature_50k_movies' => 'Regardez 50k+ Films Hindi et Anglais en Ligne avec IPTV player',
-    'feature_50k_movies_desc' => 'Explorez plus de 50 000 films populaires avec Xtream IPTV sur des lecteurs et appareils compatibles courants, en HD ou 4K lorsque disponible.',
+    'feature_50k_movies' => 'Regardez des Milliers de Films Hindi et Anglais en Ligne avec IPTV player',
+    'feature_50k_movies_desc' => 'Explorez des milliers de films populaires avec Xtream IPTV sur des lecteurs et appareils compatibles courants, en HD ou 4K lorsque disponible.',
 
-    'feature_5k_series' => '5k+ Séries Web (Netflix, Prime Video et plus)',
+    'feature_5k_series' => 'Des Milliers de Séries Web (Netflix, Prime Video et plus)',
     'feature_5k_series_desc' => 'Profitez de séries web populaires - support pour IPTV gratuit sans code et IPTV m3u.',
 
-    'feature_12k_channels' => '12k+ Chaînes IPTV Internationales en Direct',
-    'feature_12k_channels_desc' => 'Regardez plus de 12 000 chaînes IPTV stream player — actus et plus.',
+    'feature_12k_channels' => 'Des Milliers de Chaînes IPTV Internationales en Direct',
+    'feature_12k_channels_desc' => 'Regardez des milliers de chaînes IPTV stream player — actus et plus.',
 
     'feature_hd_4k' => 'Streaming IPTV en Qualité HD et 4K Ultra',
     'feature_hd_4k_desc' => 'Qualité immersive avec IPTV pro et dev IPTV pro — sur Android, iPhone, Firestick, etc.',
@@ -81,7 +81,7 @@ return [
     'reseller_panel' => 'Programme Revendeur IPTV - code IPTV à vendre',
     'reseller_panel_desc' => 'Rejoignez nos revendeurs de code IPTV et IPTV illégal (à vos risques) — parfait pour la France et plus.',
     'iptv_vod' => 'VOD Premium',
-    'iptv_vod_desc' => '50k+ films et séries — Netflix, Prime, Bollywood — via IPTV box et IPTV m3u.',
+    'iptv_vod_desc' => 'Des milliers de films et séries — Netflix, Prime, Bollywood — via IPTV box et IPTV m3u.',
     'iptv_devices' => 'IPTV Multi-Appareils (box, app, player)',
     'iptv_devices_desc' => 'Compatible avec IPTV player, IPTV box, Firestick, Smart TV, Android, MAG.',
     'learn_more' => 'En savoir plus sur IPTV gratuit sans code',
@@ -232,7 +232,7 @@ return [
     'faq.section_title' => 'Foire Aux Questions (FAQ) IPTV - IPTV player, m3u, décodeur, et plus',
 
     'faq.q1' => 'Qu\'est-ce que Opplex IPTV ?',
-    'faq.a1' => 'OPPLEXTV est un service IPTV premium avec plus de <strong>12 000 chaînes en direct, 50 000+ films, 5 000+ séries</strong>. Compatible avec IPTV stream player, IPTV smart player, IPTV box et IPTV player sur Android, iOS, Firestick, etc. Abonnement dès <span style="text-decoration: line-through; color: #999;">$31.99/mois</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mois</span>.',
+    'faq.a1' => 'OPPLEXTV est un service IPTV premium avec <strong>des milliers de chaînes en direct, de films et de séries</strong>. Compatible avec IPTV stream player, IPTV smart player, IPTV box et IPTV player sur Android, iOS, Firestick, etc. Abonnement dès <span style="text-decoration: line-through; color: #999;">$31.99/mois</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mois</span>.',
 
     'faq.q2' => 'À quoi ressemble l\'IPTV ?',
     'faq.a2' => 'Voici des captures d’écran de l’application IPTV sur TV, mobile et IPTV smart player. Fonctionne aussi avec décodeur IPTV avec code.',
@@ -360,7 +360,7 @@ return [
         'secondary_cta' => 'Demarrer un essai gratuit',
         'benefits' => [
             ['icon' => 'flaticon-8k', 'title' => 'Streaming HD et 4K', 'description' => 'Regardez du contenu IPTV premium en qualite HD et 4K sur les ecrans compatibles.'],
-            ['icon' => 'flaticon-5g', 'title' => '12K+ chaines en direct', 'description' => 'Diffusez actualites, divertissement et chaines internationales avec un seul forfait IPTV.'],
+            ['icon' => 'flaticon-5g', 'title' => 'Des milliers de chaines en direct', 'description' => 'Diffusez actualites, divertissement et chaines internationales avec un seul forfait IPTV.'],
             ['icon' => 'flaticon-swimming-pool', 'title' => 'Films et series', 'description' => 'Profitez d une grande bibliotheque VOD avec films, series et contenu famille inclus.'],
             ['icon' => 'flaticon-customer-service', 'title' => 'Aide installation rapide', 'description' => 'Recevez de l aide pour Smart TV, Firestick, Android, iOS, MAG et lecteurs IPTV.'],
         ],
@@ -426,7 +426,7 @@ return [
         [
             'icon' => 'flaticon-8k',
             'title' => 'IPTV fiable dans toute l’Europe',
-            'description' => 'Diffusez plus de 12 000 chaînes avec 99,9 % de disponibilité et sans mise en mémoire tampon. Idéal pour Smart TV, Firestick et appareils Android.',
+            'description' => 'Diffusez des milliers de chaînes avec 99,9 % de disponibilité et sans mise en mémoire tampon. Idéal pour Smart TV, Firestick et appareils Android.',
         ],
         [
             'icon' => 'flaticon-customer-service',
@@ -647,7 +647,7 @@ return [
     'home_trial_eyebrow' => 'Accès instantané',
     'home_trial_text' => 'Regardez en 4K, testez la stabilité des chaînes et découvrez les performances premium de l’IPTV avant de vous engager.',
     'home_trial_chip_streaming' => 'Streaming 4K',
-    'home_trial_chip_channels' => '12K+ chaînes',
+    'home_trial_chip_channels' => 'Des milliers de chaînes',
     'home_trial_chip_activation' => 'Activation rapide',
     'home_trial_action_label' => 'Essai WhatsApp',
     'home_products_digital_title' => 'Produits numériques',
@@ -674,7 +674,7 @@ return [
     'section_title' => 'Questions fréquentes',
     'home' => [
       'q1' => "Qu’est-ce qu’Opplex IPTV ?",
-      'a1' => "Opplex IPTV est un service de streaming premium qui réunit dans une seule application plus de 12,000 chaînes de télévision en direct, plus de 50,000 films et plus de 5,000 séries, sans décodeur câble ni engagement.",
+      'a1' => "Opplex IPTV est un service de streaming premium qui réunit dans une seule application des milliers de chaînes de télévision en direct, de films et de séries, sans décodeur câble ni engagement.",
       'q2' => "Puis-je essayer Opplex IPTV avant de l’acheter ?",
       'a2' => "Oui. Nous proposons un essai à petit prix afin que vous puissiez tester la qualité et la stabilité des chaînes sur votre propre appareil avant de choisir un abonnement complet.",
       'q3' => 'Sur quels appareils puis-je regarder le contenu ?',
@@ -688,7 +688,7 @@ return [
     ],
     'packages' => [
       'q1' => 'Que comprend chaque forfait Opplex IPTV ?',
-      'a1' => "Chaque forfait comprend un accès complet à plus de 12,000 chaînes en direct, à toute la bibliothèque de films et de séries, au guide EPG et au streaming 4K ou HD lorsqu’il est disponible.",
+      'a1' => "Chaque forfait comprend un accès complet à des milliers de chaînes en direct, à toute la bibliothèque de films et de séries, au guide EPG et au streaming 4K ou HD lorsqu’il est disponible.",
       'q2' => 'Quelle est la différence entre les forfaits mensuel et annuel ?',
       'a2' => "Le contenu est identique : les forfaits plus longs coûtent simplement moins cher par mois et vous évitent d’avoir à renouveler aussi souvent.",
       'q3' => "Combien d’appareils puis-je utiliser avec un forfait ?",
@@ -774,7 +774,7 @@ return [
     ],
     'movies' => [
       'q1' => 'Combien de films et de séries sont disponibles ?',
-      'a1' => "Opplex IPTV comprend plus de 50,000 films et plus de 5,000 séries à la demande, des dernières sorties aux grands classiques.",
+      'a1' => "Opplex IPTV comprend des milliers de films et de séries à la demande, des dernières sorties aux grands classiques.",
       'q2' => 'Le contenu est-il disponible en 4K ou en HD ?',
       'a2' => "De nombreux titres sont diffusés en Full HD et en 4K lorsque la source le permet, afin d’obtenir la meilleure image compatible avec votre appareil et votre connexion.",
       'q3' => 'À quelle fréquence du nouveau contenu est-il ajouté ?',

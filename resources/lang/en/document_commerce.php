@@ -13,7 +13,7 @@ return [
                     'icon' => 'fa fa-desktop',
                 ],
                 [
-                    'title' => '12,000+ Live Channels',
+                    'title' => 'Thousands of Live Channels',
                     'description' => 'News, entertainment, and international channels in one plan.',
                     'icon' => 'fa fa-globe',
                 ],
@@ -40,7 +40,7 @@ return [
                     'title' => 'Monthly',
                     'price' => '$2.99/month',
                     'features' => [
-                        'Stream 12,000+ channels in HD and 4K, no buffering',
+                        'Stream thousands of channels in HD and 4K, no buffering',
                         'All movies and series',
                         '24/7 support via WhatsApp',
                         'Works on every major device',
@@ -119,8 +119,8 @@ return [
             'heading' => 'What You Get with Every IPTV Subscription',
             'intro' => 'There are no surprise add-ons or gated features. Every plan, regardless of price, includes the same full package:',
             'items' => [
-                '12,000+ live TV channels (news, entertainment, international)',
-                '50,000+ movies and 5,000+ TV series on demand',
+                'Thousands of live TV channels (news, entertainment, international)',
+                'Thousands of movies and TV series on demand',
                 '4K and HD stream quality on supported channels',
                 'Electronic Programme Guide (EPG) included',
                 'Multi-device support is used on up to 2 screens simultaneously',
@@ -162,11 +162,11 @@ return [
             ],
         ],
         'trial' => [
-            'heading' => 'Try Our IPTV Free Trial  12,000+ Channels, Full 4K Quality',
+            'heading' => 'Try Our IPTV Free Trial  Thousands of Channels, Full 4K Quality',
             'text' => 'Not ready to commit yet? Test Opplex with a free trial first. Stream live channels, check picture quality, and see how stable it is all on your own device, before you pay.',
             'items' => [
                 '4K streaming',
-                '12,000+ channels',
+                'Thousands of channels',
                 'Activates in minutes',
             ],
             'cta' => 'Start Free IPTV Trial on WhatsApp',
@@ -188,9 +188,9 @@ return [
             'heading' => 'Every Plan Includes All of This  No Add-Ons, No Tiers',
             'intro' => "A lot of streaming services make you pay extra for 4K, for VOD. Opplex doesn't. Here's what you get from day one on any plan:",
             'items' => [
-                '12,000+ live channels: news, entertainment, UK, USA, international',
-                '50,000+ movies on demand',
-                '5,000+ TV series, current and classic',
+                'Thousands of live channels: news, entertainment, UK, USA, international',
+                'Thousands of movies on demand',
+                'Thousands of TV series, current and classic',
                 'HD and 4K quality on supported channels and devices',
                 "Built-in EPG so you know what's on and when",
                 'Catch-up TV on selected channels',

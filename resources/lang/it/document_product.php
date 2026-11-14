@@ -97,7 +97,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ film e serie — Streaming in HD e 4K sui dispositivi compatibili più diffusi',
+            'heading' => 'Migliaia di film e serie — Streaming in HD e 4K sui dispositivi compatibili più diffusi',
             'text' => 'Il tuo abbonamento Opplex comprende l’accesso ai contenuti on demand disponibili dopo l’attivazione. Nessun costo aggiuntivo e nessun pacchetto VOD separato da acquistare. La raccolta viene aggiornata regolarmente; la disponibilità varia in base alla sorgente e alla regione. Se cerchi un titolo specifico, chiedici di verificarlo su WhatsApp.',
             'plans' => 'Visualizza i piani',
             'trial' => 'Inizia la prova gratuita',
@@ -188,14 +188,14 @@ return [
             'heading' => 'Servizio di abbonamento IPTV: un’ampia scelta di contenuti, a partire da $2.99',
             'paragraphs' => [
                 'Cerchi un servizio di streaming che funzioni davvero. Che carichi velocemente i canali, non vada in buffering nel momento peggiore e offra un’assistenza concreta quando qualcosa non va. Questo è Opplex.',
-                'Un unico abbonamento comprende 12,000+ canali in diretta, 50,000+ film e serie e qualità HD o 4K, il tutto trasmesso tramite la tua connessione Internet esistente: nessuna parabola, nessun noleggio di decoder, nessun contratto annuale.',
+                'Un unico abbonamento comprende migliaia di canali in diretta, film e serie e qualità HD o 4K, il tutto trasmesso tramite la tua connessione Internet esistente: nessuna parabola, nessun noleggio di decoder, nessun contratto annuale.',
             ],
             'primary_cta' => 'Crea il tuo piano IPTV',
             'secondary_cta' => 'Inizia la prova gratuita su WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'text' => 'Immagini nitide su ogni dispositivo. Se il canale supporta il 4K, ricevi il 4K. Nessuna compressione, nessun limite di qualità.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ canali in diretta:', 'text' => 'Accesso a un’ampia selezione disponibile di notizie, intrattenimento e contenuti internazionali. Chiedici di verificare un canale specifico.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Film e serie on demand:', 'text' => '50,000+ titoli nel catalogo disponibile dopo l’attivazione. La disponibilità varia in base alla sorgente e alla regione.'],
+                ['icon' => 'flaticon-5g', 'title' => 'Migliaia di canali in diretta:', 'text' => 'Accesso a un’ampia selezione disponibile di notizie, intrattenimento e contenuti internazionali. Chiedici di verificare un canale specifico.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Film e serie on demand:', 'text' => 'Migliaia di titoli nel catalogo disponibile dopo l’attivazione. La disponibilità varia in base alla sorgente e alla regione.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Configurazione rapida sui dispositivi compatibili:', 'text' => 'Ti aiutiamo a iniziare su Firestick, Smart TV, Android, iOS o MAG. La maggior parte delle configurazioni richiede meno di cinque minuti.'],
             ],
         ],
@@ -221,9 +221,9 @@ return [
             'heading' => 'Tutto ciò che comprende il tuo abbonamento Opplex',
             'intro' => 'Nessun livello. Nessuna funzionalità bloccata. Ecco cosa comprende ogni piano fin dal primo giorno:',
             'items' => [
-                '12,000+ canali in diretta | Regno Unito (UK), USA, internazionali, notizie, bambini',
-                '50,000+ film on demand',
-                '5,000+ serie TV, stagioni attuali e classici',
+                'Migliaia di canali in diretta | Regno Unito (UK), USA, internazionali, notizie, bambini',
+                'Migliaia di film on demand',
+                'Migliaia di serie TV, stagioni attuali e classici',
                 'Qualità HD e 4K sui contenuti supportati',
                 'EPG integrata per vedere cosa va in onda e quali programmi seguiranno',
                 'Catch-up TV sui canali selezionati',
@@ -253,7 +253,7 @@ return [
             'intro' => 'Molte persone passano dalla TV via cavo all’IPTV e si chiedono perché abbiano aspettato così a lungo. Ecco cosa cambia:',
             'items' => [
                 ['title' => 'Prezzo:', 'text' => 'Un tipico pacchetto via cavo costa da $60 a $120 al mese negli USA e nel Regno Unito (UK). Opplex parte da $2.99. Ottieni più canali a una frazione del costo.'],
-                ['title' => 'Contenuti', 'text' => 'La TV via cavo offre un pacchetto fisso. Opplex offre l’accesso a 12,000+ canali e alla raccolta on demand disponibile; contenuti e riproduzione possono variare in base alla sorgente e alla regione.'],
+                ['title' => 'Contenuti', 'text' => 'La TV via cavo offre un pacchetto fisso. Opplex offre l’accesso a migliaia di canali e alla raccolta on demand disponibile; contenuti e riproduzione possono variare in base alla sorgente e alla regione.'],
                 ['title' => 'Configurazione:', 'text' => 'Nessuna visita di un tecnico, nessuna finestra di installazione, nessun hardware da noleggiare. Iscriviti e scarica un’app. Tutto qui.'],
                 ['title' => 'Flessibilità', 'text' => 'La TV via cavo di solito ti vincola con un contratto di 12 o 24 mesi. I piani Opplex sono mensili, semestrali o annuali e nessuno si rinnova automaticamente. Hai tu il controllo.'],
             ],

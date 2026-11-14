@@ -11,7 +11,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Wat is Opplex IPTV?',
-                        'answer' => 'Opplex is een IPTV-abonnementsdienst die live-tv, films en series via je internetverbinding streamt. Je krijgt 12,000+ livekanalen en 50,000+ on-demandtitels, zonder satellietschotel, kabelbox of langdurig contract. Abonnementen beginnen bij $2.99 per maand.',
+                        'answer' => 'Opplex is een IPTV-abonnementsdienst die live-tv, films en series via je internetverbinding streamt. Je krijgt duizenden livekanalen en on-demandtitels, zonder satellietschotel, kabelbox of langdurig contract. Abonnementen beginnen bij $2.99 per maand.',
                     ],
                     [
                         'question' => 'Hoe ziet Opplex IPTV eruit op een apparaat?',
@@ -138,8 +138,8 @@ return [
             'trial_cta' => 'Start een gratis proefperiode',
         ],
         'stats' => [
-            ['value' => '12,000+', 'label' => 'Livekanalen', 'icon' => 'fa fa-desktop'],
-            ['value' => '50,000+', 'label' => 'Films en series', 'icon' => 'fa fa-film'],
+            ['value' => 'Duizenden', 'label' => 'Livekanalen', 'icon' => 'fa fa-desktop'],
+            ['value' => 'Duizenden', 'label' => 'Films en series', 'icon' => 'fa fa-film'],
             ['value' => '99.9%', 'label' => 'Serveruptime', 'icon' => 'fa fa-signal'],
             ['value' => '24/7', 'label' => 'Klantenservice', 'icon' => 'fa fa-comments'],
         ],
@@ -157,7 +157,7 @@ return [
             'items' => [
                 [
                     'title' => 'Stabiliteit boven functies',
-                    'text' => 'We hebben liever 12,000 kanalen die 99.9% van de tijd werken dan 20,000 die tijdens piekuren uitvallen. Elke serverupgrade die we uitvoeren draait om uptime, niet om indrukwekkende cijfers.',
+                    'text' => 'We hebben liever minder kanalen die 99.9% van de tijd werken dan meer kanalen die tijdens piekuren uitvallen. Elke serverupgrade die we uitvoeren draait om uptime, niet om indrukwekkende cijfers.',
                     'icon' => 'fa fa-shield',
                 ],
                 [
@@ -199,9 +199,9 @@ return [
             'heading' => 'Hoe Opplex hier is gekomen',
             'items' => [
                 ['year' => '2022', 'text' => 'Opplex wordt gelanceerd met de platforms Opplex en Filex. De eerste abonnees bevinden zich in Canada en de UK.'],
-                ['year' => '2023', 'text' => 'De serverinfrastructuur wordt uitgebreid voor Europees verkeer. De bibliotheek met livekanalen groeit tot meer dan 10,000 kanalen.'],
+                ['year' => '2023', 'text' => 'De serverinfrastructuur wordt uitgebreid voor Europees verkeer. De bibliotheek met livekanalen groeit tot duizenden kanalen.'],
                 ['year' => '2024', 'text' => 'We bouwen en lanceren de Opplex IPTV App en XTV Live, onze eigen spelers die speciaal voor Opplex-streams zijn ontwikkeld.'],
-                ['year' => '2025', 'text' => 'De VOD-bibliotheek overschrijdt 50,000 titels. De meertalige site wordt in 10 talen gelanceerd. Het resellerpaneel wordt toegankelijk voor het publiek.'],
+                ['year' => '2025', 'text' => 'De VOD-bibliotheek groeit tot duizenden titels. De meertalige site wordt in 10 talen gelanceerd. Het resellerpaneel wordt toegankelijk voor het publiek.'],
                 ['year' => '2026', 'text' => 'Actieve abonnees in 40+ landen. OPPLEX Voice Assistant toegevoegd. Voor het derde opeenvolgende jaar 99.9% uptime.'],
             ],
         ],

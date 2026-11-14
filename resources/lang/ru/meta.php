@@ -3,7 +3,7 @@
 return [
     'home' => [
         'title' => 'Лучший IPTV сервис - HD, 4K онлайн трансляции | Opplex IPTV',
-        'description' => 'Получите лучший опыт IPTV с 4K трансляциями, более 12 000 каналов и видеотекой (VOD).',
+        'description' => 'Получите лучший опыт IPTV с 4K трансляциями, тысячами каналов и видеотекой (VOD).',
         'keywords' => 'лучший iptv, iptv приставка, xtreme hd iptv, aroma iptv, iptv smart player, iptv бесплатный тест, 4k iptv онлайн',
     ],
     'about' => [

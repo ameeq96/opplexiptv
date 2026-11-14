@@ -17,7 +17,7 @@ return [
         'keywords' => 'prezzi IPTV, IPTV Extreme, piani IPTV, abbonamenti IPTV Italia, IPTV m3u gratis, IPTV Smarters Pro, IPTV smart player',
     ],
     'movies' => [
-        'title' => 'Guarda 50.000+ film e serie via IPTV Smarters',
+        'title' => 'Guarda migliaia di film e serie via IPTV Smarters',
         'description' => 'Consulta informazioni su film e serie su Opplex IPTV. Conferma disponibilità del titolo, piano scelto e requisiti del dispositivo prima di abbonarti.',
         'keywords' => 'film IPTV, IPTV Netflix, film Bollywood IPTV, IPTV streaming, serie IPTV Italia, IPTV player, Smart IPTV',
     ],

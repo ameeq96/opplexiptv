@@ -2,7 +2,7 @@
 
 return [
   'subtitle' => 'Melhor IPTV | Streaming 4K | Teste Gratuito | Smart IPTV Player',
-  'heading-mobile' => 'Assista a mais de 12.000 canais ao vivo e 50k filmes com os melhores apps IPTV',
+  'heading-mobile' => 'Assista a milhares de canais ao vivo e filmes com os melhores apps IPTV',
   'description_prefix' => 'Acesse o melhor IPTV com 4K ao vivo, aroma IPTV e xtreme HD IPTV via',
   'description_suffix' => '— experimente nosso IPTV smart player & IPTV box com teste gratuito na Europa e EUA.',
   'start_trial' => 'Acesso ao Teste Básico',
@@ -47,39 +47,39 @@ return [
   'quality_content' => 'Conteúdo de Qualidade - Filmes, Séries, Canais Ao Vivo',
 
   'network_heading' => 'Oferecemos IPTV Ilimitado em 4K, Teste Gratuito Incluído',
-  'feature_50k_movies' => 'Assista 50k+ Filmes no Melhor IPTV Smart Player',
-  'feature_50k_movies_desc' => 'Explore mais de 50.000 títulos de Bollywood e Hollywood via Xtreme HD IPTV e Aroma IPTV em leitores e dispositivos populares compatíveis, com HD ou 4K quando disponível.',
-  'feature_5k_series' => 'Mais de 5k Séries no IPTV Box (Netflix, Prime, etc.)',
-  'feature_5k_series_desc' => 'Assista a mais de 5.000 séries Netflix e Prime Video usando IPTV smart player e xtreme HD IPTV — inclui teste gratuito e suporte 4K.',
-  'feature_12k_channels' => 'Mais de 12k Canais Ao Vivo via IPTV Box & Smart Player',
-  'feature_12k_channels_desc' => 'Acesse mais de 12.000 canais de TV ao vivo incluindo notícias e entretenimento na US, UK, França e Itália com o melhor serviço IPTV.',
+  'feature_50k_movies' => 'Assista Milhares de Filmes no Melhor IPTV Smart Player',
+  'feature_50k_movies_desc' => 'Explore milhares de títulos de Bollywood e Hollywood via Xtreme HD IPTV e Aroma IPTV em leitores e dispositivos populares compatíveis, com HD ou 4K quando disponível.',
+  'feature_5k_series' => 'Milhares de Séries no IPTV Box (Netflix, Prime, etc.)',
+  'feature_5k_series_desc' => 'Assista a milhares de séries Netflix e Prime Video usando IPTV smart player e xtreme HD IPTV — inclui teste gratuito e suporte 4K.',
+  'feature_12k_channels' => 'Milhares de Canais Ao Vivo via IPTV Box & Smart Player',
+  'feature_12k_channels_desc' => 'Acesse milhares de canais de TV ao vivo incluindo notícias e entretenimento na US, UK, França e Itália com o melhor serviço IPTV.',
   'feature_hd_4k' => 'Assista IPTV em Full HD & Qualidade 4K',
   'feature_hd_4k_desc' => 'Experimente IPTV ao vivo em 4K sem buffering, compatível com smart player, teste gratuito e xtreme HD IPTV na Europa.',
 
   'explore_services' => 'Principais Serviços IPTV com Streaming 4K & Teste Gratuito',
   'iptv_packages' => 'Melhores Pacotes IPTV com Acesso Smart Player',
-  'iptv_packages_desc' => 'Escolha entre planos de assinatura IPTV acessíveis incluindo xtreme HD IPTV, aroma IPTV & IPTV smart player — 12k+ canais ao vivo & suporte 4K.',
+  'iptv_packages_desc' => 'Escolha entre planos de assinatura IPTV acessíveis incluindo xtreme HD IPTV, aroma IPTV & IPTV smart player — milhares de canais ao vivo & suporte 4K.',
   'reseller_panel' => 'Comece a Revender IPTV com Teste Gratuito & Créditos',
   'reseller_panel_desc' => 'Participe do programa de revendedores Opplex IPTV e ganhe vendendo xtreme HD IPTV, caixas IPTV e aroma IPTV na UK, França, Itália & mundialmente.',
-  'iptv_vod' => 'IPTV VOD Premium com 50k+ Filmes & Séries',
-  'iptv_vod_desc' => 'Assista a mais de 50k filmes Hollywood & Bollywood e 5k+ séries web sob demanda via xtreme HD IPTV & aroma IPTV com teste gratuito e qualidade Full HD.',
+  'iptv_vod' => 'IPTV VOD Premium com Milhares de Filmes & Séries',
+  'iptv_vod_desc' => 'Assista a milhares de filmes Hollywood & Bollywood e séries web sob demanda via xtreme HD IPTV & aroma IPTV com teste gratuito e qualidade Full HD.',
   'iptv_devices' => 'IPTV em Dispositivos Populares - Smart Player, Android, Box',
   'iptv_devices_desc' => 'Use IPTV smart player em Smart TV, iPhone, Android, Firestick, MAG box e mais. Inclui acesso xtreme HD IPTV com teste gratuito.',
   'learn_more' => 'Saiba Mais Sobre Nossos Planos IPTV',
 
   'testimonials_title' => 'Avaliações de Clientes - Melhor Experiência IPTV',
   'testimonials_heading' => 'Veja o que usuários reais de IPTV na Europa dizem',
-  'testimonial_1' => 'Este é o melhor IPTV que usei — 12k+ canais, sem buffering e qualidade HD clara via xtreme HD IPTV.',
+  'testimonial_1' => 'Este é o melhor IPTV que usei — milhares de canais, sem buffering e qualidade HD clara via xtreme HD IPTV.',
   'testimonial_2' => 'Eu assisto aroma IPTV na Smart TV e a qualidade é incrível. Melhor alternativa de IPTV box com acesso global.',
   'testimonial_3' => 'Troquei da TV a cabo para Opplex IPTV — xtreme HD IPTV e smart player tornaram tudo mais fácil e melhor.',
   'testimonial_4' => 'Sem buffer no IPTV smart player, ótimo suporte e funciona bem até no Firestick — totalmente vale a pena!',
-  'testimonial_5' => 'Serviço IPTV de alta qualidade com Netflix, Prime e 50k+ VOD. Funciona perfeitamente no IPTV box e Android.',
+  'testimonial_5' => 'Serviço IPTV de alta qualidade com Netflix, Prime e um grande catálogo VOD. Funciona perfeitamente no IPTV box e Android.',
   'testimonial_7' => 'Teste gratuito acessível de IPTV me permitiu assistir todos meus shows italianos e franceses favoritos via aroma IPTV.',
-  'testimonial_8' => 'Esta assinatura IPTV tem 12k+ canais, funciona no IPTV smart player e é super estável na UK.',
+  'testimonial_8' => 'Esta assinatura IPTV tem milhares de canais, funciona no IPTV smart player e é super estável na UK.',
   'testimonial_9' => 'Executando xtreme HD IPTV no mobile e Firestick — streaming contínuo e suporte instantâneo.',
   'testimonial_10' => 'Melhor IPTV na Itália! Fácil de configurar, teste gratuito incluído e IPTV 4K funciona perfeitamente no Android TV.',
 
-  'trial_title' => 'Experimente Nosso Teste Gratuito IPTV com Streaming 4K & 12k Canais!',
+  'trial_title' => 'Experimente Nosso Teste Gratuito IPTV com Streaming 4K & Milhares de Canais!',
   'trial_button' => 'Iniciar Teste Gratuito IPTV Agora',
 
   'header_whatsapp' => 'WhatsApp: :phone',
@@ -105,7 +105,7 @@ return [
   'few_reasons' => 'Por que escolher Opplex - Melhor IPTV com 4K, Smart Player & Teste Gratuito',
 
   'feature_hd' => 'Melhor IPTV com Streaming HD & 4K',
-  'feature_hd_desc' => 'Aproveite o streaming xtreme HD IPTV sem buffering com 12k+ canais ao vivo e filmes Bollywood/Hollywood - funciona em Smart TVs, Firestick e IPTV boxes.',
+  'feature_hd_desc' => 'Aproveite o streaming xtreme HD IPTV sem buffering com milhares de canais ao vivo e filmes Bollywood/Hollywood - funciona em Smart TVs, Firestick e IPTV boxes.',
 
   'feature_flexible' => 'Assinatura IPTV Flexível com Teste Gratuito',
   'feature_flexible_desc' => 'Escolha entre planos mensais, anuais ou revenda IPTV. Todos os pacotes incluem suporte IPTV smart player, aroma IPTV e teste gratuito.',
@@ -123,7 +123,7 @@ return [
   'feature_support_desc' => 'Obtenha ajuda rápida da nossa equipe de suporte IPTV em configuração do smart player, ativação de teste, problemas de box e erros de streaming.',
 
   'feature_sports_movies' => 'Filmes Bollywood & Mais',
-  'feature_sports_movies_desc' => 'Acesse IPTV 4K ao vivo para 50k+ filmes via xtreme HD IPTV, smart players e sistemas IPTV box com teste gratuito.',
+  'feature_sports_movies_desc' => 'Acesse IPTV 4K ao vivo para milhares de filmes via xtreme HD IPTV, smart players e sistemas IPTV box com teste gratuito.',
 
   'reseller_starter' => 'Revendedor Inicial IPTV - Smart Player & Acesso Teste Gratuito',
   'reseller_essential' => 'Revendedor Essencial IPTV - Aroma IPTV, Xtreme HD IPTV, Sem Expiração',
@@ -220,7 +220,7 @@ return [
 
   // Perguntas & Respostas - permanecem 100% inalteradas conforme solicitado
   'faq.q1' => 'O que é Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV é um serviço IPTV que hospeda mais de <strong>12.000 canais ao vivo, 50.000+ FILMES, 5.000+ Séries de TV recentes</strong>. Além de várias opções de VOD. O plano de assinatura padrão OPPLEXTV IPTV custa <span style="text-decoration: line-through; color: #999;">$31.99/mês</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mês</span> e inclui categorias de canais internacionais, PPV, entretenimento, notícias e outros. O IPTV OPPLEXTV pode ser instalado em dispositivos Android / iOS compatíveis, incluindo Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield e mais. O OPPLEX IPTV é o melhor servidor IPTV no Canadá.',
+  'faq.a1' => 'OPPLEXTV é um serviço IPTV que hospeda <strong>milhares de canais ao vivo, FILMES e Séries de TV recentes</strong>. Além de várias opções de VOD. O plano de assinatura padrão OPPLEXTV IPTV custa <span style="text-decoration: line-through; color: #999;">$31.99/mês</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mês</span> e inclui categorias de canais internacionais, PPV, entretenimento, notícias e outros. O IPTV OPPLEXTV pode ser instalado em dispositivos Android / iOS compatíveis, incluindo Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield e mais. O OPPLEX IPTV é o melhor servidor IPTV no Canadá.',
 
   'faq.q2' => 'Como é o IPTV?',
   'faq.a2' => 'Aqui estão algumas capturas de tela mostrando como o aplicativo IPTV se parece em diferentes dispositivos.',
@@ -301,7 +301,7 @@ return [
   'app.iptv_smarters_windows' => 'IPTV Smarters Pro para Windows - IPTV Smart Player',
 
   // Página Filmes
-  'title' => 'Filmes | Opplex IPTV - Assista 50k+ Filmes com Smart Player & IPTV Box',
+  'title' => 'Filmes | Opplex IPTV - Assista Milhares de Filmes com Smart Player & IPTV Box',
   'all' => 'Todos',
   'movies' => 'Filmes - Bollywood, Hollywood & Mais',
   'series' => 'Séries - Netflix, Prime e programas IPTV',
@@ -358,7 +358,7 @@ return [
     'secondary_cta' => 'Iniciar teste gratis',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'description' => 'Assista conteudo IPTV premium em qualidade HD e 4K em telas compativeis.'],
-      ['icon' => 'flaticon-5g', 'title' => '12K+ canais ao vivo', 'description' => 'Veja noticias, entretenimento e canais internacionais em um plano IPTV.'],
+      ['icon' => 'flaticon-5g', 'title' => 'Milhares de canais ao vivo', 'description' => 'Veja noticias, entretenimento e canais internacionais em um plano IPTV.'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e series', 'description' => 'Acesse uma grande biblioteca VOD com filmes, series e conteudo familiar incluido.'],
       ['icon' => 'flaticon-customer-service', 'title' => 'Suporte rapido', 'description' => 'Receba ajuda com Smart TV, Firestick, Android, iOS, MAG e players IPTV.'],
     ],
@@ -427,7 +427,7 @@ return [
     [
       'icon' => 'flaticon-8k',
       'title' => 'IPTV confiável em toda a Europa',
-      'description' => 'Transmita mais de 12.000 canais com 99,9% de disponibilidade e sem travamentos. Ideal para Smart TVs, Firestick e Android.',
+      'description' => 'Transmita milhares de canais com 99,9% de disponibilidade e sem travamentos. Ideal para Smart TVs, Firestick e Android.',
     ],
     [
       'icon' => 'flaticon-customer-service',
@@ -653,7 +653,7 @@ return [
   'home_trial_eyebrow' => 'Acesso instantâneo',
   'home_trial_text' => 'Assista em 4K, teste a estabilidade dos canais e experimente o desempenho premium do IPTV antes de decidir.',
   'home_trial_chip_streaming' => 'Streaming 4K',
-  'home_trial_chip_channels' => '12K+ canais',
+  'home_trial_chip_channels' => 'Milhares de canais',
   'home_trial_chip_activation' => 'Ativação rápida',
   'home_trial_action_label' => 'Teste via WhatsApp',
   'home_products_digital_title' => 'Produtos digitais',
@@ -680,7 +680,7 @@ return [
     'section_title' => 'Perguntas frequentes',
     'home' => [
       'q1' => 'O que é a Opplex IPTV?',
-      'a1' => 'A Opplex IPTV é um serviço de streaming premium que oferece numa só aplicação mais de 12,000 canais de TV em direto, mais de 50,000 filmes e mais de 5,000 séries, sem box de cabo nem contrato.',
+      'a1' => 'A Opplex IPTV é um serviço de streaming premium que oferece numa só aplicação milhares de canais de TV em direto, filmes e séries, sem box de cabo nem contrato.',
       'q2' => 'Posso experimentar a Opplex IPTV antes de comprar?',
       'a2' => 'Sim. Oferecemos um teste de baixo custo para que possa verificar a qualidade e a estabilidade dos canais no seu próprio dispositivo antes de escolher uma subscrição completa.',
       'q3' => 'Em que dispositivos posso ver os conteúdos?',
@@ -780,7 +780,7 @@ return [
     ],
     'movies' => [
       'q1' => 'Quantos filmes e séries estão disponíveis?',
-      'a1' => 'A Opplex IPTV inclui mais de 50,000 filmes e mais de 5,000 séries a pedido, desde os lançamentos mais recentes aos clássicos intemporais.',
+      'a1' => 'A Opplex IPTV inclui milhares de filmes e séries a pedido, desde os lançamentos mais recentes aos clássicos intemporais.',
       'q2' => 'Os conteúdos estão disponíveis em 4K ou HD?',
       'a2' => 'Muitos títulos são transmitidos em Full HD e 4K quando a fonte o permite, para obter a melhor imagem suportada pelo seu dispositivo e ligação.',
       'q3' => 'Com que frequência são adicionados novos conteúdos?',

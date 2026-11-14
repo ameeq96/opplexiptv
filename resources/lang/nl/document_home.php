@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'heading' => 'Beste aanbieder van IPTV-abonnementen | Live-tv en 4K-streaming',
-        'text' => 'Betaal niet langer voor kabel-tv die je nauwelijks gebruikt. Profiteer van enkele van de beste IPTV-abonnementen: Opplex biedt je 12,000+ livekanalen, 50,000+ films en haarscherpe 4K-kwaliteit, allemaal op de apparaten die je al hebt. Kies een abonnement, sluit aan en begin vandaag nog met kijken.',
+        'text' => 'Betaal niet langer voor kabel-tv die je nauwelijks gebruikt. Profiteer van enkele van de beste IPTV-abonnementen: Opplex biedt je duizenden livekanalen, films en haarscherpe 4K-kwaliteit, allemaal op de apparaten die je al hebt. Kies een abonnement, sluit aan en begin vandaag nog met kijken.',
         'primary_cta' => 'Start gratis proefperiode',
         'secondary_cta' => 'Bekijk IPTV-abonnementen',
     ],
@@ -90,7 +90,7 @@ return [
         'cards' => [
             [
                 'title' => 'De beste IPTV-abonnementen met toegang tot een slimme speler',
-                'description' => 'Geniet van een reeks betaalbare IPTV-abonnementen, waaronder Xtreme HD IPTV, aroma IPTV en IPTV smart player met 12k+ livekanalen en 4K-ondersteuning.',
+                'description' => 'Geniet van een reeks betaalbare IPTV-abonnementen, waaronder Xtreme HD IPTV, aroma IPTV en IPTV smart player met duizenden livekanalen en 4K-ondersteuning.',
                 'cta' => 'Meer informatie over IPTV-abonnementen',
             ],
             [
@@ -154,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => 'Wat is Opplex IPTV precies?',
-                'answer' => 'Opplex is een IPTV-abonnementsdienst. Dat betekent dat je live-tv, films en series via je internetverbinding streamt. Geen satellietschotel, geen kabelbox en geen contract. Je krijgt 12,000+ livekanalen en 50,000+ on-demandtitels in één app.',
+                'answer' => 'Opplex is een IPTV-abonnementsdienst. Dat betekent dat je live-tv, films en series via je internetverbinding streamt. Geen satellietschotel, geen kabelbox en geen contract. Je krijgt duizenden livekanalen en on-demandtitels in één app.',
             ],
             [
                 'question' => 'Is er een gratis proefperiode voordat ik een abonnement neem?',
@@ -182,11 +182,11 @@ return [
         'heading' => 'Cijfers die voor zich spreken!',
         'items' => [
             [
-                'value' => '12,000+',
+                'value' => 'Duizenden',
                 'label' => 'Livekanalen',
             ],
             [
-                'value' => '50,000+',
+                'value' => 'Duizenden',
                 'label' => 'Films en series',
             ],
             [
@@ -201,10 +201,10 @@ return [
     ],
     'trial' => [
         'heading' => 'Probeer Opplex IPTV gratis | Geen verplichtingen',
-        'text' => 'Stream 12,000+ kanalen in 4K. Test zelf de kwaliteit voordat je een abonnement neemt. De activering duurt slechts enkele minuten.',
+        'text' => 'Stream duizenden kanalen in 4K. Test zelf de kwaliteit voordat je een abonnement neemt. De activering duurt slechts enkele minuten.',
         'chips' => [
             'Geniet van 4K-streams',
-            'Meer dan 12K+ kanalen',
+            'Duizenden kanalen',
             'Snelle activering',
         ],
         'action_label' => 'Proefperiode via WhatsApp',

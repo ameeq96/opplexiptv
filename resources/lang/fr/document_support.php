@@ -11,7 +11,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Qu’est-ce qu’Opplex IPTV ?',
-                        'answer' => 'Opplex est un service d’abonnement IPTV qui diffuse la TV en direct, les films et les séries via votre connexion Internet. Vous obtenez 12,000+ chaînes en direct et 50,000+ titres à la demande, sans antenne satellite, décodeur câble ni contrat à long terme. Les formules commencent à $2.99 par mois.',
+                        'answer' => 'Opplex est un service d’abonnement IPTV qui diffuse la TV en direct, les films et les séries via votre connexion Internet. Vous obtenez des milliers de chaînes en direct et de titres à la demande, sans antenne satellite, décodeur câble ni contrat à long terme. Les formules commencent à $2.99 par mois.',
                     ],
                     [
                         'question' => 'À quoi ressemble Opplex IPTV sur un appareil ?',
@@ -138,8 +138,8 @@ return [
             'trial_cta' => 'Démarrer un essai gratuit',
         ],
         'stats' => [
-            ['value' => '12,000+', 'label' => 'Chaînes en direct', 'icon' => 'fa fa-desktop'],
-            ['value' => '50,000+', 'label' => 'Films et séries', 'icon' => 'fa fa-film'],
+            ['value' => 'Des milliers', 'label' => 'Chaînes en direct', 'icon' => 'fa fa-desktop'],
+            ['value' => 'Des milliers', 'label' => 'Films et séries', 'icon' => 'fa fa-film'],
             ['value' => '99.9%', 'label' => 'Disponibilité des serveurs', 'icon' => 'fa fa-signal'],
             ['value' => '24/7', 'label' => 'Assistance client', 'icon' => 'fa fa-comments'],
         ],
@@ -157,7 +157,7 @@ return [
             'items' => [
                 [
                     'title' => 'La stabilité avant les fonctionnalités',
-                    'text' => 'Nous préférons 12,000 chaînes qui fonctionnent 99.9% du temps à 20,000 chaînes qui tombent en panne aux heures de pointe. Chaque mise à niveau de nos serveurs vise la disponibilité, pas des chiffres accrocheurs.',
+                    'text' => 'Nous préférons moins de chaînes qui fonctionnent 99.9% du temps à davantage de chaînes qui tombent en panne aux heures de pointe. Chaque mise à niveau de nos serveurs vise la disponibilité, pas des chiffres accrocheurs.',
                     'icon' => 'fa fa-shield',
                 ],
                 [
@@ -199,9 +199,9 @@ return [
             'heading' => 'Le parcours d’Opplex',
             'items' => [
                 ['year' => '2022', 'text' => 'Lancement d’Opplex avec les plateformes Opplex et Filex. Premiers abonnés au Canada et au Royaume-Uni.'],
-                ['year' => '2023', 'text' => 'Extension de l’infrastructure des serveurs pour le trafic européen. La bibliothèque de chaînes en direct dépasse 10,000 chaînes.'],
+                ['year' => '2023', 'text' => 'Extension de l’infrastructure des serveurs pour le trafic européen. La bibliothèque de chaînes en direct atteint des milliers de chaînes.'],
                 ['year' => '2024', 'text' => 'Nous créons et lançons Opplex IPTV App et XTV Live, nos propres lecteurs conçus spécifiquement pour les flux Opplex.'],
-                ['year' => '2025', 'text' => 'La bibliothèque VOD dépasse 50,000 titres. Le site multilingue est lancé en 10 langues. Le panneau revendeur est ouvert au public.'],
+                ['year' => '2025', 'text' => 'La bibliothèque VOD atteint des milliers de titres. Le site multilingue est lancé en 10 langues. Le panneau revendeur est ouvert au public.'],
                 ['year' => '2026', 'text' => 'Abonnés actifs dans 40+ pays. Ajout d’OPPLEX Voice Assistant. Disponibilité de 99.9% pour la troisième année consécutive.'],
             ],
         ],

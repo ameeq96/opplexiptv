@@ -11,7 +11,7 @@ return [
                 'items' => [
                     [
                         'question' => 'Che cos’è Opplex IPTV?',
-                        'answer' => 'Opplex è un servizio in abbonamento IPTV che trasmette TV in diretta, film e serie tramite la tua connessione Internet. Ricevi 12,000+ canali in diretta e 50,000+ titoli on demand, senza parabola satellitare, decoder via cavo o contratti lunghi. I piani partono da $2.99 al mese.',
+                        'answer' => 'Opplex è un servizio in abbonamento IPTV che trasmette TV in diretta, film e serie tramite la tua connessione Internet. Ricevi migliaia di canali in diretta e titoli on demand, senza parabola satellitare, decoder via cavo o contratti lunghi. I piani partono da $2.99 al mese.',
                     ],
                     [
                         'question' => 'Come si presenta Opplex IPTV su un dispositivo?',
@@ -138,8 +138,8 @@ return [
             'trial_cta' => 'Inizia una prova gratuita',
         ],
         'stats' => [
-            ['value' => '12,000+', 'label' => 'Canali in diretta', 'icon' => 'fa fa-desktop'],
-            ['value' => '50,000+', 'label' => 'Film e serie', 'icon' => 'fa fa-film'],
+            ['value' => 'Migliaia', 'label' => 'Canali in diretta', 'icon' => 'fa fa-desktop'],
+            ['value' => 'Migliaia', 'label' => 'Film e serie', 'icon' => 'fa fa-film'],
             ['value' => '99.9%', 'label' => 'Uptime dei server', 'icon' => 'fa fa-signal'],
             ['value' => '24/7', 'label' => 'Assistenza clienti', 'icon' => 'fa fa-comments'],
         ],
@@ -157,7 +157,7 @@ return [
             'items' => [
                 [
                     'title' => 'La stabilità prima delle funzionalità',
-                    'text' => 'Preferiamo avere 12,000 canali che funzionano il 99.9% del tempo piuttosto che 20,000 che si interrompono nelle ore di punta. Ogni upgrade dei server che effettuiamo punta all’uptime, non a numeri sensazionali.',
+                    'text' => 'Preferiamo avere meno canali che funzionano il 99.9% del tempo piuttosto che molti di più che si interrompono nelle ore di punta. Ogni upgrade dei server che effettuiamo punta all’uptime, non a numeri sensazionali.',
                     'icon' => 'fa fa-shield',
                 ],
                 [
@@ -199,9 +199,9 @@ return [
             'heading' => 'Come Opplex è arrivato fin qui',
             'items' => [
                 ['year' => '2022', 'text' => 'Opplex viene lanciato con le piattaforme Opplex e Filex. Arrivano i primi abbonati in Canada e nel Regno Unito (UK).'],
-                ['year' => '2023', 'text' => 'L’infrastruttura dei server viene ampliata per il traffico europeo. La raccolta di canali in diretta supera i 10,000 canali.'],
+                ['year' => '2023', 'text' => 'L’infrastruttura dei server viene ampliata per il traffico europeo. La raccolta di canali in diretta raggiunge migliaia di canali.'],
                 ['year' => '2024', 'text' => 'Creiamo e pubblichiamo Opplex IPTV App e XTV Live, i nostri lettori sviluppati appositamente per gli stream Opplex.'],
-                ['year' => '2025', 'text' => 'La raccolta VOD supera i 50,000 titoli. Il sito multilingue viene lanciato in 10 lingue. Il pannello rivenditori apre al pubblico.'],
+                ['year' => '2025', 'text' => 'La raccolta VOD raggiunge migliaia di titoli. Il sito multilingue viene lanciato in 10 lingue. Il pannello rivenditori apre al pubblico.'],
                 ['year' => '2026', 'text' => 'Abbonati attivi in 40+ Paesi. Viene aggiunto OPPLEX Voice Assistant. Uptime al 99.9% per il terzo anno consecutivo.'],
             ],
         ],

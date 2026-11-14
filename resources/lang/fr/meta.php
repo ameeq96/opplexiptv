@@ -3,7 +3,7 @@
 return [
     'home' => [
         'title' => 'Opplex IPTV - TV en direct, films HD via IPTV',
-        'description' => 'Diffusez plus de 12 000 chaînes, 50 000+ films, 5 000+ séries en HD/4K en France, Italie, Royaume-Uni. Compatible IPTV smart player, Xtream IPTV, IPTV box.',
+        'description' => 'Diffusez des milliers de chaînes, films et séries en HD/4K en France, Italie, Royaume-Uni. Compatible IPTV smart player, Xtream IPTV, IPTV box.',
         'keywords' => 'IPTV Europe, IPTV France, IPTV Italie, IPTV UK, IPTV stream player, IPTV m3u, IPTV gratuit sans code, IPTV smart player, Xtream IPTV, IPTV box, code IPTV',
     ],
     'about' => [
@@ -17,7 +17,7 @@ return [
         'keywords' => 'tarifs IPTV, IPTV stream player, IPTV gratuit sans code, IPTV m3u, IPTV pro, IPTV France Italie UK, code IPTV, IPTV player',
     ],
     'movies' => [
-        'title' => 'Regardez 50 000+ films et séries sur IPTV smart player',
+        'title' => 'Regardez des milliers de films et séries sur IPTV smart player',
         'description' => 'Films récents, Netflix, Prime Video, Bollywood, Hollywood. Compatible avec IPTV stream player et IPTV box.',
         'keywords' => 'films IPTV, IPTV Netflix, IPTV box, room IPTV, IPTV m3u, IPTV gratuit sans code, IPTV smart player',
     ],

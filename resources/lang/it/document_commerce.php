@@ -13,7 +13,7 @@ return [
                     'icon' => 'fa fa-desktop',
                 ],
                 [
-                    'title' => '12,000+ canali in diretta',
+                    'title' => 'Migliaia di canali in diretta',
                     'description' => 'Notizie, intrattenimento e canali internazionali in un unico piano.',
                     'icon' => 'fa fa-globe',
                 ],
@@ -40,7 +40,7 @@ return [
                     'title' => 'Mensile',
                     'price' => '$2.99/mese',
                     'features' => [
-                        'Guarda 12,000+ canali in HD e 4K, senza buffering',
+                        'Guarda migliaia di canali in HD e 4K, senza buffering',
                         'Tutti i film e le serie',
                         'Assistenza 24/7 tramite WhatsApp',
                         'Funziona su tutti i principali dispositivi',
@@ -119,8 +119,8 @@ return [
             'heading' => 'Cosa ottieni con ogni abbonamento IPTV',
             'intro' => 'Non ci sono componenti aggiuntivi inattesi o funzionalità bloccate. Ogni piano, indipendentemente dal prezzo, include lo stesso pacchetto completo:',
             'items' => [
-                '12,000+ canali TV in diretta (notizie, intrattenimento, internazionali)',
-                '50,000+ film e 5,000+ serie TV on demand',
+                'Migliaia di canali TV in diretta (notizie, intrattenimento, internazionali)',
+                'Migliaia di film e serie TV on demand',
                 'Qualità di streaming 4K e HD sui canali supportati',
                 'Guida elettronica ai programmi (EPG) inclusa',
                 'Il supporto multidispositivo viene utilizzato su un massimo di 2 schermi contemporaneamente',
@@ -162,11 +162,11 @@ return [
             ],
         ],
         'trial' => [
-            'heading' => 'Prova gratuitamente il nostro servizio IPTV — 12,000+ canali, qualità 4K completa',
+            'heading' => 'Prova gratuitamente il nostro servizio IPTV — migliaia di canali, qualità 4K completa',
             'text' => 'Non sei ancora pronto a impegnarti? Prova prima Opplex gratuitamente. Guarda i canali in diretta, verifica la qualità dell’immagine e scopri quanto è stabile sul tuo dispositivo prima di pagare.',
             'items' => [
                 'Streaming 4K',
-                '12,000+ canali',
+                'Migliaia di canali',
                 'Attivazione in pochi minuti',
             ],
             'cta' => 'Inizia la prova gratuita IPTV su WhatsApp',
@@ -179,7 +179,7 @@ return [
             'eyebrow' => 'Ogni piano include il pacchetto completo. Nessun costo nascosto.',
             'heading' => 'Prezzi degli abbonamenti IPTV — Piani semplici, nessuna sorpresa',
             'paragraphs' => [
-                'Scegli la durata del piano, paga una sola volta e inizia a guardare. Ogni piano Opplex ti offre gli stessi 12,000+ canali in diretta, 50,000+ film e qualità 4K. I piani più lunghi costano meno al mese: questa è l’unica differenza.',
+                'Scegli la durata del piano, paga una sola volta e inizia a guardare. Ogni piano Opplex ti offre le stesse migliaia di canali in diretta e di film, oltre alla qualità 4K. I piani più lunghi costano meno al mese: questa è l’unica differenza.',
                 'Filex è disponibile anche per chi desidera una selezione diversa di canali a una tariffa leggermente superiore. Entrambi utilizzano la stessa procedura di configurazione e le stesse app.',
                 'Non sai quale piano scegliere? Inizia con quello mensile. Potrai sempre passare all’annuale in seguito.',
             ],
@@ -188,9 +188,9 @@ return [
             'heading' => 'Ogni piano include tutto questo — Nessun componente aggiuntivo, nessun livello',
             'intro' => 'Molti servizi di streaming richiedono un costo extra per il 4K o il VOD. Opplex no. Ecco cosa ottieni dal primo giorno con qualsiasi piano:',
             'items' => [
-                '12,000+ canali in diretta: notizie, intrattenimento, Regno Unito (UK), USA, internazionali',
-                '50,000+ film on demand',
-                '5,000+ serie TV, attuali e classiche',
+                'Migliaia di canali in diretta: notizie, intrattenimento, Regno Unito (UK), USA, internazionali',
+                'Migliaia di film on demand',
+                'Migliaia di serie TV, attuali e classiche',
                 'Qualità HD e 4K sui canali e dispositivi supportati',
                 'EPG integrata per sapere cosa va in onda e quando',
                 'Catch-up TV sui canali selezionati',

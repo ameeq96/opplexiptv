@@ -3,7 +3,7 @@
 return [
     'site_title' => 'Opplex IPTV - Guarda in Modo Intelligente con IPTV Smarters e Smart IPTV',
     'subtitle' => 'Streaming IPTV con accesso ai contenuti disponibili in Europa tramite Smart IPTV e IPTV Smarters Pro',
-    'heading-mobile' => 'Accedi a oltre 12.000 canali live e 50k+ film disponibili dopo l’attivazione',
+    'heading-mobile' => 'Accedi a migliaia di canali live e film disponibili dopo l’attivazione',
     'description_prefix' => 'Scopri l’IPTV premium in Europa con IPTV Smarters, IPTV Extreme e le migliori liste IPTV',
     'description_suffix' => '— contenuti in italiano, hindi, inglese e francese in HD e 4K.',
 
@@ -63,12 +63,12 @@ return [
     'yes_subreseller' => 'Crea sotto-rivenditore',
 
     'network_heading' => 'Accedi ai contenuti IPTV disponibili con app diffuse come IPTV Smarters Pro',
-    'feature_50k_movies' => 'Guarda 50k+ Film Hindi e Inglesi Online',
-    'feature_50k_movies_desc' => 'Streaming di oltre 50.000 film Bollywood e Hollywood su IPTV Smarters e Smart IPTV — perfetto per utenti in Italia.',
-    'feature_5k_series' => '5k+ Serie Web (Netflix, Prime Video e Altri)',
+    'feature_50k_movies' => 'Guarda Migliaia di Film Hindi e Inglesi Online',
+    'feature_50k_movies_desc' => 'Streaming di migliaia di film Bollywood e Hollywood su IPTV Smarters e Smart IPTV — perfetto per utenti in Italia.',
+    'feature_5k_series' => 'Migliaia di Serie Web (Netflix, Prime Video e Altri)',
     'feature_5k_series_desc' => 'Scopri serie popolari da Netflix, Prime Video, disponibili anche tramite liste IPTV m3u gratis.',
-    'feature_12k_channels' => '12k+ Canali IPTV Live da Tutto il Mondo',
-    'feature_12k_channels_desc' => 'Accedi a più di 12.000 canali IPTV - con notizie e intrattenimento da IPTV Extreme APK.',
+    'feature_12k_channels' => 'Migliaia di Canali IPTV Live da Tutto il Mondo',
+    'feature_12k_channels_desc' => 'Accedi a migliaia di canali IPTV - con notizie e intrattenimento da IPTV Extreme APK.',
     'feature_hd_4k' => 'Streaming IPTV in Qualità HD e 4K Ultra',
     'feature_hd_4k_desc' => 'Qualità premium in HD e 4K su dispositivi Smart IPTV, Android, iPhone, Firestick e altro.',
 
@@ -227,7 +227,7 @@ return [
     'faq.section_title' => 'Domande Frequenti (FAQ) su IPTV Player, Streaming e Liste IPTV M3U Gratis',
 
     'faq.q1' => 'Che cos\'è Opplex IPTV?',
-    'faq.a1' => 'OPPLEXTV è un servizio IPTV di alta qualità con oltre <strong>12.000 canali live, 50.000+ FILM, 5.000+ Serie TV</strong> tramite IPTV Smarters Pro e Smart IPTV. Include VOD, è compatibile con IPTV Extreme APK, e costa solo <span style="text-decoration: line-through; color: #999;">$31.99/mese</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mese</span>.',
+    'faq.a1' => 'OPPLEXTV è un servizio IPTV di alta qualità con <strong>migliaia di canali live, FILM e Serie TV</strong> tramite IPTV Smarters Pro e Smart IPTV. Include VOD, è compatibile con IPTV Extreme APK, e costa solo <span style="text-decoration: line-through; color: #999;">$31.99/mese</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mese</span>.',
 
     'faq.q2' => 'Come appare l’IPTV?',
     'faq.a2' => 'Ecco alcuni screenshot che mostrano l’interfaccia di app IPTV popolari come IPTV Smarters, Smart IPTV e IPTV Extreme su diversi dispositivi.',
@@ -356,7 +356,7 @@ return [
         'secondary_cta' => 'Avvia prova gratuita',
         'benefits' => [
             ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'description' => 'Guarda contenuti IPTV premium in qualita HD e 4K su schermi compatibili.'],
-            ['icon' => 'flaticon-5g', 'title' => '12K+ canali live', 'description' => 'Guarda notizie, intrattenimento e canali internazionali con un solo piano IPTV.'],
+            ['icon' => 'flaticon-5g', 'title' => 'Migliaia di canali live', 'description' => 'Guarda notizie, intrattenimento e canali internazionali con un solo piano IPTV.'],
             ['icon' => 'flaticon-swimming-pool', 'title' => 'Film e serie', 'description' => 'Accedi a una grande libreria VOD con film, serie e contenuti per famiglia inclusi.'],
             ['icon' => 'flaticon-customer-service', 'title' => 'Supporto installazione', 'description' => 'Ricevi aiuto per Smart TV, Firestick, Android, iOS, MAG e player IPTV.'],
         ],
@@ -421,7 +421,7 @@ return [
         [
             'icon' => 'flaticon-8k',
             'title' => 'IPTV affidabile in tutta Europa',
-            'description' => 'Guarda oltre 12.000 canali con il 99,9% di uptime e senza buffering. Ideale per Smart TV, Firestick e dispositivi Android.',
+            'description' => 'Guarda migliaia di canali con il 99,9% di uptime e senza buffering. Ideale per Smart TV, Firestick e dispositivi Android.',
         ],
         [
             'icon' => 'flaticon-customer-service',
@@ -649,7 +649,7 @@ return [
   'home_trial_eyebrow' => 'Accesso immediato',
   'home_trial_text' => 'Guarda in 4K, testa la stabilità dei canali e prova le prestazioni premium IPTV prima di scegliere.',
   'home_trial_chip_streaming' => 'Streaming 4K',
-  'home_trial_chip_channels' => '12K+ canali',
+  'home_trial_chip_channels' => 'Migliaia di canali',
   'home_trial_chip_activation' => 'Attivazione rapida',
   'home_trial_action_label' => 'Prova WhatsApp',
   'home_products_digital_title' => 'Prodotti digitali',
@@ -676,7 +676,7 @@ return [
     'section_title' => 'Domande frequenti',
     'home' => [
       'q1' => 'Che cos’è Opplex IPTV?',
-      'a1' => 'Opplex IPTV è un servizio di streaming premium che offre in un’unica app oltre 12,000 canali TV in diretta, più di 50,000 film e oltre 5,000 serie TV, senza decoder via cavo né contratto.',
+      'a1' => 'Opplex IPTV è un servizio di streaming premium che offre in un’unica app migliaia di canali TV in diretta, film e serie TV, senza decoder via cavo né contratto.',
       'q2' => 'Posso provare Opplex IPTV prima di acquistarlo?',
       'a2' => 'Sì. Offriamo una prova a basso costo per verificare la qualità e la stabilità dei canali sul tuo dispositivo prima di scegliere un abbonamento completo.',
       'q3' => 'Su quali dispositivi posso guardare i contenuti?',
@@ -776,7 +776,7 @@ return [
     ],
     'movies' => [
       'q1' => 'Quanti film e serie sono disponibili?',
-      'a1' => 'Opplex IPTV offre accesso a oltre 50,000 film e più di 5,000 serie TV on demand disponibili, con un catalogo aggiornato regolarmente. La disponibilità varia in base alla sorgente e alla regione.',
+      'a1' => 'Opplex IPTV offre accesso a migliaia di film e serie TV on demand disponibili, con un catalogo aggiornato regolarmente. La disponibilità varia in base alla sorgente e alla regione.',
       'q2' => 'I contenuti sono disponibili in 4K o HD?',
       'a2' => 'Molti titoli vengono trasmessi in Full HD e 4K quando la sorgente lo consente, per offrirti la migliore immagine supportata dal tuo dispositivo e dalla connessione.',
       'q3' => 'Con quale frequenza vengono aggiunti nuovi contenuti?',

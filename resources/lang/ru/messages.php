@@ -4,7 +4,7 @@ $homeDocument = require __DIR__ . '/document_home.php';
 
 return [
   'subtitle' => 'Лучшее IPTV | 4K Стриминг | Бесплатный Триал | Умный IPTV Плеер',
-  'heading-mobile' => 'Смотрите 12,000+ ТВ-каналов и 50k фильмов с лучшими IPTV приложениями',
+  'heading-mobile' => 'Смотрите тысячи ТВ-каналов и фильмов с лучшими IPTV приложениями',
   'description_prefix' => 'Получите лучшее IPTV с 4K live IPTV, aroma IPTV и xtreme HD IPTV через',
   'description_suffix' => '— попробуйте наш IPTV Smart Player и IPTV Box с бесплатным тестовым периодом по всей Европе и США.',
   'start_trial' => 'Базовый тестовый доступ',
@@ -49,39 +49,39 @@ return [
   'quality_content' => 'Качественный контент – фильмы, сериалы, телеканалы',
 
   'network_heading' => 'Мы предоставляем безлимитное IPTV в 4K, включая бесплатный тест',
-  'feature_50k_movies' => 'Смотрите 50k+ фильмов на лучшем IPTV Smart Player',
-  'feature_50k_movies_desc' => 'Смотрите более 50,000 фильмов Болливуда и Голливуда через Xtreme HD IPTV и Aroma IPTV на популярных совместимых проигрывателях и устройствах, в HD или 4K там, где это доступно.',
-  'feature_5k_series' => '5k+ сериалов на IPTV Box (Netflix, Prime и другие)',
-  'feature_5k_series_desc' => 'Смотрите более 5,000 сериалов Netflix и Prime Video с IPTV Smart Player и xtreme HD IPTV — с бесплатным тестом и поддержкой 4K.',
-  'feature_12k_channels' => '12k+ ТВ-каналов через IPTV Box и Smart Player',
-  'feature_12k_channels_desc' => 'Получите доступ к 12,000+ ТВ-каналов включая новости и развлечения в США, Великобритании, Франции и Италии с лучшим IPTV сервисом.',
+  'feature_50k_movies' => 'Смотрите тысячи фильмов на лучшем IPTV Smart Player',
+  'feature_50k_movies_desc' => 'Смотрите тысячи фильмов Болливуда и Голливуда через Xtreme HD IPTV и Aroma IPTV на популярных совместимых проигрывателях и устройствах, в HD или 4K там, где это доступно.',
+  'feature_5k_series' => 'Тысячи сериалов на IPTV Box (Netflix, Prime и другие)',
+  'feature_5k_series_desc' => 'Смотрите тысячи сериалов Netflix и Prime Video с IPTV Smart Player и xtreme HD IPTV — с бесплатным тестом и поддержкой 4K.',
+  'feature_12k_channels' => 'Тысячи ТВ-каналов через IPTV Box и Smart Player',
+  'feature_12k_channels_desc' => 'Получите доступ к тысячам ТВ-каналов включая новости и развлечения в США, Великобритании, Франции и Италии с лучшим IPTV сервисом.',
   'feature_hd_4k' => 'Наслаждайтесь IPTV в Full HD и 4K качестве',
   'feature_hd_4k_desc' => 'Кристально чистое 4K IPTV без буферизации, совместимость с Smart Player, бесплатный тест и xtreme HD IPTV стриминг в Европе.',
 
   'explore_services' => 'Топ IPTV сервисы с 4K и бесплатным тестом',
   'iptv_packages' => 'Лучшие IPTV подписки с доступом к Smart Player',
-  'iptv_packages_desc' => 'Выбирайте доступные IPTV тарифы: xtreme HD IPTV, aroma IPTV и Smart Player — 12k+ каналов и поддержка 4K.',
+  'iptv_packages_desc' => 'Выбирайте доступные IPTV тарифы: xtreme HD IPTV, aroma IPTV и Smart Player — тысячи каналов и поддержка 4K.',
   'reseller_panel' => 'Начните реселлинг IPTV с бесплатным тестом и кредитами',
   'reseller_panel_desc' => 'Присоединяйтесь к программе реселлеров Opplex IPTV и зарабатывайте, продавая xtreme HD IPTV, IPTV Box и aroma IPTV в Великобритании, Франции, Италии и по всему миру.',
-  'iptv_vod' => 'Премиум VOD IPTV с 50k+ фильмов и сериалов',
-  'iptv_vod_desc' => 'Смотрите более 50k фильмов и 5k+ веб-сериалов по запросу через xtreme HD IPTV и aroma IPTV с бесплатным тестом и в Full HD.',
+  'iptv_vod' => 'Премиум VOD IPTV с тысячами фильмов и сериалов',
+  'iptv_vod_desc' => 'Смотрите тысячи фильмов и веб-сериалов по запросу через xtreme HD IPTV и aroma IPTV с бесплатным тестом и в Full HD.',
   'iptv_devices' => 'IPTV на популярных устройствах — Smart Player, Android, Box',
   'iptv_devices_desc' => 'Используйте IPTV Smart Player на Smart TV, iPhone, Android, Firestick, MAG Box и других устройствах. Включает xtreme HD IPTV и бесплатный тест.',
   'learn_more' => 'Узнать больше о тарифах IPTV',
 
   'testimonials_title' => 'Отзывы клиентов – Лучший IPTV опыт',
   'testimonials_heading' => 'Отзывы реальных пользователей IPTV по всей Европе',
-  'testimonial_1' => 'Лучшее IPTV, которое я использовал — 12k+ каналов, без буферизации и четкое HD качество через xtreme HD IPTV.',
+  'testimonial_1' => 'Лучшее IPTV, которое я использовал — тысячи каналов, без буферизации и четкое HD качество через xtreme HD IPTV.',
   'testimonial_2' => 'Смотрю aroma IPTV на Smart TV – качество невероятное. Отличная альтернатива IPTV Box с глобальным доступом.',
   'testimonial_3' => 'Перешел с кабеля на Opplex IPTV — xtreme HD IPTV и Smart Player сделали просмотр удобнее.',
   'testimonial_4' => 'IPTV Smart Player без буферизации, отличная поддержка, работает даже на Firestick — полностью доволен!',
-  'testimonial_5' => 'Отличное IPTV с Netflix, Prime и 50k+ VOD. Работает идеально на IPTV Box и Android.',
+  'testimonial_5' => 'Отличное IPTV с Netflix, Prime и большой библиотекой VOD. Работает идеально на IPTV Box и Android.',
   'testimonial_7' => 'Бесплатный тест IPTV позволил смотреть любимые шоу из Италии и Франции через aroma IPTV.',
-  'testimonial_8' => 'Эта IPTV подписка имеет 12k+ каналов, работает на Smart Player и очень стабильна в Великобритании.',
+  'testimonial_8' => 'Эта IPTV подписка имеет тысячи каналов, работает на Smart Player и очень стабильна в Великобритании.',
   'testimonial_9' => 'Использую xtreme HD IPTV на мобильном и Firestick — стриминг плавный, поддержка моментальная.',
   'testimonial_10' => 'Лучшее IPTV в Италии! Простая настройка, бесплатный тест и потрясающее 4K IPTV на Android TV.',
 
-  'trial_title' => 'Попробуйте наш бесплатный IPTV тест с 4K и 12k каналами!',
+  'trial_title' => 'Попробуйте наш бесплатный IPTV тест с 4K и тысячами каналов!',
   'trial_button' => 'Начать бесплатный IPTV тест',
 
   'header_whatsapp' => 'WhatsApp: :phone',
@@ -108,7 +108,7 @@ return [
   'few_reasons' => 'Почему выбрать Opplex – лучшее IPTV с 4K, Smart Player и бесплатным тестом',
 
   'feature_hd' => 'Лучшее IPTV с HD и 4K стримингом',
-  'feature_hd_desc' => 'Наслаждайтесь стабильным xtreme HD IPTV с 12k+ каналами, фильмами и сериалами – работает на Smart TV, Firestick и IPTV Box.',
+  'feature_hd_desc' => 'Наслаждайтесь стабильным xtreme HD IPTV с тысячами каналов, фильмами и сериалами – работает на Smart TV, Firestick и IPTV Box.',
 
   'feature_flexible' => 'Гибкие подписки IPTV с бесплатным тестом',
   'feature_flexible_desc' => 'Выбирайте ежемесячные, годовые или реселлерские планы. Все пакеты включают поддержку Smart Player, aroma IPTV и бесплатный тест.',
@@ -126,7 +126,7 @@ return [
   'feature_support_desc' => 'Получите помощь в настройке Smart Player, активации теста, решении проблем с Box и стримингом.',
 
   'feature_sports_movies' => 'Фильмы Болливуда и другое',
-  'feature_sports_movies_desc' => 'Смотрите 50k+ фильмов в 4K IPTV через xtreme HD IPTV, Smart Player и IPTV Box с бесплатным тестом.',
+  'feature_sports_movies_desc' => 'Смотрите тысячи фильмов в 4K IPTV через xtreme HD IPTV, Smart Player и IPTV Box с бесплатным тестом.',
 
   'reseller_starter' => 'Стартовый IPTV реселлер – Smart Player и бесплатный тест',
   'reseller_essential' => 'Основной реселлер – Aroma IPTV, Xtreme HD IPTV, без сгорания кредитов',
@@ -223,7 +223,7 @@ return [
 
   // Questions & Answers - ostavlyaem v originalnom vide
   'faq.q1' => 'Chto takoye Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV eto IPTV servis kotoriy predlagaet bolee <strong>12,000 pryamih kanalov, 50000+ FILMOV, 5000+ poslednih serialov</strong>. Vmeste s mnogimi VOD variantami. Standartniy plan OPPLEXTV IPTV stoit <span style="text-decoration: line-through; color: #999;">$31.99/mesyats</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mesyats</span> i vklyuchaet mezhdunarodnie, PPV, razvllechenie, novosti i drugie kategorii kanalov. OPPLEXTV IPTV mozhno ustanovit na sovmestimie Android / IOS ustroystva, vklyuchaya Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield i drugie. OPPLEX IPTV yavlyaetsya luchshim IPTV serverom v Kanade.',
+  'faq.a1' => 'OPPLEXTV eto IPTV servis kotoriy predlagaet <strong>tysyachi pryamih kanalov, FILMOV i poslednih serialov</strong>. Vmeste s mnogimi VOD variantami. Standartniy plan OPPLEXTV IPTV stoit <span style="text-decoration: line-through; color: #999;">$31.99/mesyats</span> <span style="color: #000000ff; font-weight:bold;">$2.99/mesyats</span> i vklyuchaet mezhdunarodnie, PPV, razvllechenie, novosti i drugie kategorii kanalov. OPPLEXTV IPTV mozhno ustanovit na sovmestimie Android / IOS ustroystva, vklyuchaya Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield i drugie. OPPLEX IPTV yavlyaetsya luchshim IPTV serverom v Kanade.',
 
   'faq.q2' => 'Kak viglyadit IPTV?',
   'faq.a2' => 'Vot neskolko skrinshotov kak IPTV prilozhenie viglyadit na raznih ustroystvah.',
@@ -303,7 +303,7 @@ return [
   'app.iptv_smarters_windows' => 'IPTV Smarters Pro для Windows — IPTV Smart Player',
 
   // Movies Page
-  'title' => 'Filmi | Opplex IPTV - Smotri 50k+ Filmov s Smart Player & IPTV Box',
+  'title' => 'Filmi | Opplex IPTV - Smotri tysyachi Filmov s Smart Player & IPTV Box',
   'all' => 'Все',
   'movies' => 'Фильмы — Болливуд, Голливуд и другое',
   'series' => 'Сериалы — Netflix, Prime и IPTV-шоу',
@@ -360,7 +360,7 @@ return [
     'secondary_cta' => 'Nachat besplatnyi trial',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'HD i 4K striming', 'description' => 'Smotrite premium IPTV kontent v HD i 4K na sovmestimyh ekranah.'],
-      ['icon' => 'flaticon-5g', 'title' => '12K+ live kanalov', 'description' => 'Novosti, razvlecheniya i mezhdunarodnye kanaly v odnom IPTV plane.'],
+      ['icon' => 'flaticon-5g', 'title' => 'Tysyachi live kanalov', 'description' => 'Novosti, razvlecheniya i mezhdunarodnye kanaly v odnom IPTV plane.'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmy i serialy', 'description' => 'Bolshaya VOD biblioteka s filmami, serialami i semeinym kontentom.'],
       ['icon' => 'flaticon-customer-service', 'title' => 'Bystraya nastroyka', 'description' => 'Pomoshch dlya Smart TV, Firestick, Android, iOS, MAG i IPTV playerov.'],
     ],
@@ -429,7 +429,7 @@ return [
     [
       'icon' => 'flaticon-8k',
       'title' => 'Надёжное IPTV по всей Европе',
-      'description' => 'Более 12 000 каналов с 99,9% доступности и без буферизации. Идеально для Smart TV, Firestick и Android-устройств.',
+      'description' => 'Тысячи каналов с 99,9% доступности и без буферизации. Идеально для Smart TV, Firestick и Android-устройств.',
     ],
     [
       'icon' => 'flaticon-customer-service',
@@ -655,7 +655,7 @@ return [
   'home_trial_eyebrow' => 'Мгновенный доступ',
   'home_trial_text' => 'Смотрите в 4K, проверьте стабильность каналов и оцените премиальную производительность IPTV до покупки.',
   'home_trial_chip_streaming' => '4K-стриминг',
-  'home_trial_chip_channels' => '12K+ каналов',
+  'home_trial_chip_channels' => 'Тысячи каналов',
   'home_trial_chip_activation' => 'Быстрая активация',
   'home_trial_action_label' => 'Пробный WhatsApp',
   'home_products_digital_title' => 'Цифровые товары',
@@ -683,7 +683,7 @@ return [
     'section_title' => 'Часто задаваемые вопросы',
     'home' => [
       'q1' => 'Что такое Opplex IPTV?',
-      'a1' => 'Opplex IPTV — это премиальный стриминговый сервис, который предлагает в одном приложении более 12 000 телеканалов в прямом эфире, более 50 000 фильмов и более 5 000 сериалов — без кабельной приставки и долгосрочного договора.',
+      'a1' => 'Opplex IPTV — это премиальный стриминговый сервис, который предлагает в одном приложении тысячи телеканалов в прямом эфире, фильмов и сериалов — без кабельной приставки и долгосрочного договора.',
       'q2' => 'Можно ли попробовать Opplex IPTV перед покупкой?',
       'a2' => 'Да. Мы предлагаем недорогой пробный доступ, чтобы вы могли проверить качество и стабильность каналов на своем устройстве до выбора полной подписки.',
       'q3' => 'На каких устройствах можно смотреть?',
@@ -783,7 +783,7 @@ return [
     ],
     'movies' => [
       'q1' => 'Сколько фильмов и сериалов доступно?',
-      'a1' => 'В Opplex IPTV доступно по запросу более 50 000 фильмов и более 5 000 сериалов — от новейших премьер до вечной классики.',
+      'a1' => 'В Opplex IPTV доступны по запросу тысячи фильмов и сериалов — от новейших премьер до вечной классики.',
       'q2' => 'Доступен ли контент в 4K или HD?',
       'a2' => 'Многие материалы транслируются в Full HD и 4K, если это поддерживает источник, поэтому вы получите лучшее качество, доступное вашему устройству и подключению.',
       'q3' => 'Как часто добавляется новый контент?',

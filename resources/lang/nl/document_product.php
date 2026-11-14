@@ -97,7 +97,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ films en series — Stream in HD en 4K op populaire compatibele apparaten',
+            'heading' => 'Duizenden films en series — Stream in HD en 4K op populaire compatibele apparaten',
             'text' => 'Je Opplex-abonnement biedt na activering toegang tot beschikbare on-demandcontent. Geen extra kosten en geen afzonderlijk VOD-pakket om te kopen. De bibliotheek wordt regelmatig bijgewerkt; beschikbaarheid verschilt per bron en regio. Zoek je een specifieke titel, vraag ons dan via WhatsApp deze te controleren.',
             'plans' => 'Bekijk abonnementen',
             'trial' => 'Start gratis proefperiode',
@@ -188,14 +188,14 @@ return [
             'heading' => 'IPTV-abonnementsdienst: een ruime contentkeuze, vanaf $2.99',
             'paragraphs' => [
                 'Je zoekt een streamingdienst die echt werkt. Een dienst die kanalen snel laadt, niet op het slechtste moment buffert en je echte ondersteuning biedt als er iets misgaat. Dat is Opplex.',
-                'Eén abonnement omvat 12,000+ livekanalen, 50,000+ films en series en HD- of 4K-kwaliteit, allemaal gestreamd via je bestaande internetverbinding: geen schotel, geen huurbox en geen jaarcontract.',
+                'Eén abonnement omvat duizenden livekanalen, films en series en HD- of 4K-kwaliteit, allemaal gestreamd via je bestaande internetverbinding: geen schotel, geen huurbox en geen jaarcontract.',
             ],
             'primary_cta' => 'Stel je IPTV-abonnement samen',
             'secondary_cta' => 'Start gratis proefperiode via WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'HD- en 4K-streaming', 'text' => 'Scherp beeld op elk apparaat. Ondersteunt het kanaal 4K, dan krijg je 4K. Geen compressie, geen kwaliteitslimiet.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ livekanalen:', 'text' => 'Toegang tot een ruime beschikbare selectie nieuws, entertainment en internationale content. Vraag ons een specifiek kanaal te controleren.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand:', 'text' => '50,000+ titels in de beschikbare catalogus na activering. Beschikbaarheid verschilt per bron en regio.'],
+                ['icon' => 'flaticon-5g', 'title' => 'Duizenden livekanalen:', 'text' => 'Toegang tot een ruime beschikbare selectie nieuws, entertainment en internationale content. Vraag ons een specifiek kanaal te controleren.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series on demand:', 'text' => 'Duizenden titels in de beschikbare catalogus na activering. Beschikbaarheid verschilt per bron en regio.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Snelle installatie op compatibele apparaten:', 'text' => 'We helpen je op weg op Firestick, Smart TV, Android, iOS of MAG. De meeste installaties duren minder dan vijf minuten.'],
             ],
         ],
@@ -221,9 +221,9 @@ return [
             'heading' => 'Alles in je Opplex-abonnement',
             'intro' => 'Geen niveaus. Geen vergrendelde functies. Dit omvat elk abonnement vanaf de eerste dag:',
             'items' => [
-                '12,000+ livekanalen | UK, USA, internationaal, nieuws, kinderen',
-                '50,000+ films on demand',
-                '5,000+ TV-series, huidige seizoenen en klassiekers',
+                'Duizenden livekanalen | UK, USA, internationaal, nieuws, kinderen',
+                'Duizenden films on demand',
+                'Duizenden TV-series, huidige seizoenen en klassiekers',
                 'HD- en 4K-kwaliteit op ondersteunde content',
                 'Ingebouwde EPG, zodat je ziet wat er nu en straks te zien is',
                 'Catch-up-TV op geselecteerde kanalen',
@@ -253,7 +253,7 @@ return [
             'intro' => 'Veel mensen stappen over van kabel naar IPTV en vragen zich af waarom ze zo lang hebben gewacht. Dit verandert er:',
             'items' => [
                 ['title' => 'Prijs:', 'text' => 'Een doorsnee kabelpakket kost in de USA en UK $60 tot $120 per maand. Opplex begint bij $2.99. Je krijgt meer kanalen voor een fractie van de kosten.'],
-                ['title' => 'Inhoud', 'text' => 'Kabel biedt je een vast pakket. Opplex biedt toegang tot 12,000+ kanalen en de beschikbare on-demandbibliotheek; content en weergave kunnen per bron en regio verschillen.'],
+                ['title' => 'Inhoud', 'text' => 'Kabel biedt je een vast pakket. Opplex biedt toegang tot duizenden kanalen en de beschikbare on-demandbibliotheek; content en weergave kunnen per bron en regio verschillen.'],
                 ['title' => 'Installatie:', 'text' => 'Geen bezoek van een monteur, geen installatieafspraak en geen hardware om te huren. Meld je aan en download een app. Dat is alles.'],
                 ['title' => 'Flexibiliteit', 'text' => 'Kabel legt je meestal vast in een contract van 12 of 24 maanden. Opplex-abonnementen zijn maandelijks, halfjaarlijks of jaarlijks en geen ervan wordt automatisch verlengd. Jij houdt de controle.'],
             ],

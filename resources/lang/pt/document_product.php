@@ -97,7 +97,7 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => '50,000+ filmes e séries em HD e 4K em dispositivos suportados',
+            'heading' => 'Milhares de filmes e séries em HD e 4K em dispositivos suportados',
             'text' => 'A sua subscrição Opplex inclui uma biblioteca completa a pedido desde o primeiro dia. Sem custo adicional nem pacote VOD separado para comprar. Explore filmes, séries e desenhos animados ou procure algo específico. Novos conteúdos são adicionados regularmente e, se não encontrar um título, basta perguntar-nos pelo WhatsApp.',
             'plans' => 'Ver planos',
             'trial' => 'Iniciar teste gratuito',
@@ -188,14 +188,14 @@ return [
             'heading' => 'Serviço de subscrição IPTV: tudo o que pretende ver a partir de $2.99',
             'paragraphs' => [
                 'Procura um serviço de streaming que realmente funcione. Um serviço que carregue os canais rapidamente, não faça buffering no pior momento e ofereça apoio real quando algo corre mal. Isso é a Opplex.',
-                'Uma subscrição inclui 12,000+ canais em direto, 50,000+ filmes e séries e qualidade HD ou 4K, tudo transmitido através da sua ligação à Internet atual: sem antena, aluguer de box ou contrato anual.',
+                'Uma subscrição inclui milhares de canais em direto, filmes e séries e qualidade HD ou 4K, tudo transmitido através da sua ligação à Internet atual: sem antena, aluguer de box ou contrato anual.',
             ],
             'primary_cta' => 'Crie o seu plano IPTV',
             'secondary_cta' => 'Iniciar teste gratuito pelo WhatsApp',
             'benefits' => [
                 ['icon' => 'flaticon-8k', 'title' => 'Streaming HD e 4K', 'text' => 'Imagem nítida em todos os dispositivos. Se o canal suportar 4K, recebe 4K. Sem compressão nem limite de qualidade.'],
-                ['icon' => 'flaticon-5g', 'title' => '12,000+ canais em direto:', 'text' => 'Uma ampla seleção de notícias, entretenimento e conteúdo internacional disponíveis. Peça-nos para confirmar um canal específico antes de comprar.'],
-                ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e séries a pedido:', 'text' => '50,000+ títulos disponíveis desde o momento da subscrição. Não precisa de qualquer pacote VOD adicional.'],
+                ['icon' => 'flaticon-5g', 'title' => 'Milhares de canais em direto:', 'text' => 'Uma ampla seleção de notícias, entretenimento e conteúdo internacional disponíveis. Peça-nos para confirmar um canal específico antes de comprar.'],
+                ['icon' => 'flaticon-swimming-pool', 'title' => 'Filmes e séries a pedido:', 'text' => 'Milhares de títulos disponíveis desde o momento da subscrição. Não precisa de qualquer pacote VOD adicional.'],
                 ['icon' => 'flaticon-customer-service', 'title' => 'Configuração rápida em dispositivos suportados:', 'text' => 'Ajudamos a começar em dispositivos Fire TV Stick, Smart TV, Android, iOS ou MAG compatíveis. O tempo de configuração varia conforme o dispositivo.'],
             ],
         ],
@@ -221,9 +221,9 @@ return [
             'heading' => 'Tudo o que está incluído na sua subscrição Opplex',
             'intro' => 'Sem níveis. Sem funcionalidades bloqueadas. Eis o que todos os planos incluem desde o primeiro dia:',
             'items' => [
-                '12,000+ canais em direto | Reino Unido, EUA, internacionais, notícias, crianças',
-                '50,000+ filmes a pedido',
-                '5,000+ séries de TV, temporadas atuais e clássicos',
+                'Milhares de canais em direto | Reino Unido, EUA, internacionais, notícias, crianças',
+                'Milhares de filmes a pedido',
+                'Milhares de séries de TV, temporadas atuais e clássicos',
                 'Qualidade HD e 4K em conteúdos suportados',
                 'EPG integrada para ver o que está a dar e o que vem a seguir',
                 'Catch-up TV em canais selecionados',
@@ -253,7 +253,7 @@ return [
             'intro' => 'Muitas pessoas trocam o cabo pela IPTV e perguntam porque esperaram tanto tempo. Eis o que muda:',
             'items' => [
                 ['title' => 'Preço:', 'text' => 'Um pacote de cabo típico custa entre $60 e $120 por mês nos EUA e no Reino Unido. A Opplex começa em $2.99. Recebe mais canais por uma fração do custo.'],
-                ['title' => 'Conteúdo', 'text' => 'O cabo oferece um pacote fixo, muitas vezes com 70% de canais que nunca verá. A Opplex inclui 12,000+ canais e uma biblioteca completa a pedido, para ver o que quiser quando quiser.'],
+                ['title' => 'Conteúdo', 'text' => 'O cabo oferece um pacote fixo, muitas vezes com 70% de canais que nunca verá. A Opplex inclui milhares de canais e uma biblioteca completa a pedido, para ver o que quiser quando quiser.'],
                 ['title' => 'Configuração:', 'text' => 'Sem visita de técnico, horário de instalação ou hardware para alugar. Subscreva e transfira uma aplicação. É tudo.'],
                 ['title' => 'Flexibilidade', 'text' => 'O cabo normalmente exige um contrato de 12 ou 24 meses. Os planos Opplex são mensais, semestrais ou anuais, e nenhum renova automaticamente. Mantém o controlo.'],
             ],

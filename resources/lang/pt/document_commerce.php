@@ -13,7 +13,7 @@ return [
                     'icon' => 'fa fa-desktop',
                 ],
                 [
-                    'title' => '12,000+ canais em direto',
+                    'title' => 'Milhares de canais em direto',
                     'description' => 'Notícias, entretenimento e canais internacionais num único plano.',
                     'icon' => 'fa fa-globe',
                 ],
@@ -40,7 +40,7 @@ return [
                     'title' => 'Mensal',
                     'price' => '$2.99/mês',
                     'features' => [
-                        'Veja 12,000+ canais em HD e 4K, sem buffering',
+                        'Veja milhares de canais em HD e 4K, sem buffering',
                         'Todos os filmes e séries',
                         'Apoio 24/7 por WhatsApp',
                         'Funciona em todos os principais dispositivos',
@@ -119,8 +119,8 @@ return [
             'heading' => 'O que recebe com cada subscrição IPTV',
             'intro' => 'Não existem extras inesperados nem funcionalidades bloqueadas. Todos os planos, independentemente do preço, incluem o mesmo pacote completo:',
             'items' => [
-                '12,000+ canais de TV em direto (notícias, entretenimento, internacionais)',
-                '50,000+ filmes e 5,000+ séries de TV a pedido',
+                'Milhares de canais de TV em direto (notícias, entretenimento, internacionais)',
+                'Milhares de filmes e séries de TV a pedido',
                 'Qualidade de streaming 4K e HD nos canais suportados',
                 'Guia eletrónico de programação (EPG) incluído',
                 'Suporte para vários dispositivos em até 2 ecrãs simultaneamente',
@@ -162,11 +162,11 @@ return [
             ],
         ],
         'trial' => [
-            'heading' => 'Experimente gratuitamente a nossa IPTV: 12,000+ canais e qualidade 4K integral',
+            'heading' => 'Experimente gratuitamente a nossa IPTV: milhares de canais e qualidade 4K integral',
             'text' => 'Ainda não está preparado para assumir um compromisso? Teste primeiro a Opplex com um teste gratuito. Veja canais em direto, verifique a qualidade de imagem e comprove a estabilidade no seu próprio dispositivo antes de pagar.',
             'items' => [
                 'Streaming 4K',
-                '12,000+ canais',
+                'Milhares de canais',
                 'Ativação em poucos minutos',
             ],
             'cta' => 'Iniciar teste gratuito de IPTV pelo WhatsApp',
@@ -179,7 +179,7 @@ return [
             'eyebrow' => 'Todos os planos incluem o pacote completo. Sem taxas ocultas.',
             'heading' => 'Preços de subscrição IPTV: planos simples, sem surpresas',
             'paragraphs' => [
-                'Escolha a duração do plano, pague uma vez e comece a ver. Todos os planos Opplex oferecem os mesmos 12,000+ canais em direto, 50,000+ filmes e qualidade 4K. Os planos mais longos custam menos por mês; essa é a única diferença.',
+                'Escolha a duração do plano, pague uma vez e comece a ver. Todos os planos Opplex oferecem os mesmos milhares de canais em direto e filmes, além de qualidade 4K. Os planos mais longos custam menos por mês; essa é a única diferença.',
                 'A Filex também está disponível para espectadores que pretendam uma seleção de canais diferente por um preço ligeiramente superior. Ambas utilizam o mesmo processo de configuração e as mesmas aplicações.',
                 'Não sabe qual plano escolher? Comece pelo mensal. Pode sempre mudar para o anual mais tarde.',
             ],
@@ -188,9 +188,9 @@ return [
             'heading' => 'Todos os planos incluem tudo isto: sem extras nem níveis',
             'intro' => 'Muitos serviços de streaming cobram um valor adicional por 4K ou VOD. A Opplex não. Eis o que recebe desde o primeiro dia em qualquer plano:',
             'items' => [
-                '12,000+ canais em direto: notícias, entretenimento, Reino Unido, EUA, internacionais',
-                '50,000+ filmes a pedido',
-                '5,000+ séries de TV atuais e clássicas',
+                'Milhares de canais em direto: notícias, entretenimento, Reino Unido, EUA, internacionais',
+                'Milhares de filmes a pedido',
+                'Milhares de séries de TV atuais e clássicas',
                 'Qualidade HD e 4K nos canais e dispositivos suportados',
                 'EPG integrada para saber o que está a dar e quando',
                 'Catch-up TV em canais selecionados',

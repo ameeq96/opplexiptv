@@ -2,7 +2,7 @@
 
 return [
   'subtitle' => 'Beste IPTV | 4K Streaming | Gratis Proefperiode | Smart IPTV Player',
-  'heading-mobile' => 'Stream 12.000+ Live Kanalen & 50k Films met Beste IPTV Apps',
+  'heading-mobile' => 'Stream Duizenden Live Kanalen & Films met Beste IPTV Apps',
   'description_prefix' => 'Toegang tot de beste IPTV met 4K live IPTV, aroma IPTV en xtreme HD IPTV via',
   'description_suffix' => '— probeer onze IPTV smart player & IPTV box met gratis proefperiode in Europa & de VS.',
   'start_trial' => 'Basis Proeftoegang',
@@ -47,21 +47,21 @@ return [
   'quality_content' => 'Kwaliteitsinhoud - Films, Series, Live Kanalen',
 
   'network_heading' => 'Wij Bieden Onbeperkte IPTV in 4K, Inclusief Gratis Proefperiode',
-  'feature_50k_movies' => 'Bekijk 50k+ Films op Beste IPTV Smart Player',
-  'feature_50k_movies_desc' => 'Stream meer dan 50.000 Bollywood & Hollywood films via xtreme HD IPTV en aroma IPTV. Werkt op elke IPTV box met HD/4K kwaliteit.',
-  'feature_5k_series' => '5k+ Series op IPTV Box (Netflix, Prime, Meer)',
-  'feature_5k_series_desc' => 'Binge meer dan 5.000 Netflix en Prime Video series met IPTV smart player en xtreme HD IPTV — inclusief gratis proefperiode en 4K ondersteuning.',
-  'feature_12k_channels' => '12k+ Live Kanalen via IPTV Box & Smart Player',
-  'feature_12k_channels_desc' => 'Krijg toegang tot 12.000+ live tv-kanalen inclusief nieuws en entertainment in de VS, VK, Frankrijk & Italië met de beste IPTV service.',
+  'feature_50k_movies' => 'Bekijk Duizenden Films op Beste IPTV Smart Player',
+  'feature_50k_movies_desc' => 'Stream duizenden Bollywood & Hollywood films via xtreme HD IPTV en aroma IPTV. Werkt op elke IPTV box met HD/4K kwaliteit.',
+  'feature_5k_series' => 'Duizenden Series op IPTV Box (Netflix, Prime, Meer)',
+  'feature_5k_series_desc' => 'Binge duizenden Netflix en Prime Video series met IPTV smart player en xtreme HD IPTV — inclusief gratis proefperiode en 4K ondersteuning.',
+  'feature_12k_channels' => 'Duizenden Live Kanalen via IPTV Box & Smart Player',
+  'feature_12k_channels_desc' => 'Krijg toegang tot duizenden live tv-kanalen inclusief nieuws en entertainment in de VS, VK, Frankrijk & Italië met de beste IPTV service.',
   'feature_hd_4k' => 'Geniet van IPTV in Full HD & 4K Live IPTV Kwaliteit',
   'feature_hd_4k_desc' => 'Krijg kristalheldere 4K live IPTV zonder buffering, smart player compatibiliteit, gratis proefperiode en de beste xtreme HD IPTV streaming in Europa.',
 
   'explore_services' => 'Top IPTV Diensten met 4K Streaming & Gratis Proefperiode',
   'iptv_packages' => 'Beste IPTV Abonnementspakketten met Smart Player Toegang',
-  'iptv_packages_desc' => 'Kies uit betaalbare IPTV abonnementen inclusief xtreme HD IPTV, aroma IPTV & IPTV smart player — 12k+ live kanalen & 4K ondersteuning.',
+  'iptv_packages_desc' => 'Kies uit betaalbare IPTV abonnementen inclusief xtreme HD IPTV, aroma IPTV & IPTV smart player — duizenden live kanalen & 4K ondersteuning.',
   'reseller_panel' => 'Begin met IPTV doorverkopen met gratis proefperiode en credits',
   'reseller_panel_desc' => 'Doe mee aan het Opplex IPTV reseller programma en verdien door xtreme HD IPTV, IPTV boxen en aroma IPTV te verkopen in VK, Frankrijk, Italië & wereldwijd.',
-  'iptv_vod' => 'Premium IPTV VOD met 50k+ Films & Series',
+  'iptv_vod' => 'Premium IPTV VOD met Duizenden Films & Series',
   'iptv_vod_desc' => 'Stream beschikbare Hollywood- en Bollywoodfilms en series on demand via xtreme HD IPTV en aroma IPTV; kwaliteit hangt af van de bron, het apparaat en de verbinding.',
   'iptv_devices' => 'IPTV op Compatibele Apparaten - Smart Player, Android, Box',
   'iptv_devices_desc' => 'Gebruik een compatibele IPTV-smartplayer op ondersteunde Smart TV, iPhone, Android, Firestick, MAG-box en andere populaire apparaten.',
@@ -69,17 +69,17 @@ return [
 
   'testimonials_title' => 'Klantbeoordelingen - Beste IPTV Ervaring',
   'testimonials_heading' => 'Hoor van Echte IPTV Gebruikers in Europa',
-  'testimonial_1' => 'Dit is de beste IPTV die ik ooit heb gebruikt — 12k+ kanalen, geen buffering, en haarscherpe HD kwaliteit via xtreme HD IPTV.',
+  'testimonial_1' => 'Dit is de beste IPTV die ik ooit heb gebruikt — duizenden kanalen, geen buffering, en haarscherpe HD kwaliteit via xtreme HD IPTV.',
   'testimonial_2' => 'Ik stream aroma IPTV op Smart TV en de kwaliteit is ongelooflijk. Beste alternatief voor IPTV box met wereldwijde toegang.',
   'testimonial_3' => 'Overgestapt van kabel naar Opplex IPTV — xtreme HD IPTV en smart player maakten alles soepeler en beter.',
   'testimonial_4' => 'Geen buffering op IPTV smart player, geweldige ondersteuning, en werkt perfect op Firestick — absoluut de moeite waard!',
-  'testimonial_5' => 'Topkwaliteit IPTV service met Netflix, Prime en 50k+ VOD. Werkt perfect op IPTV box en Android.',
+  'testimonial_5' => 'Topkwaliteit IPTV service met Netflix, Prime en een groot VOD-aanbod. Werkt perfect op IPTV box en Android.',
   'testimonial_7' => 'Betaalbare IPTV gratis proefperiode liet me al mijn favoriete Italiaanse en Franse shows streamen via aroma IPTV.',
-  'testimonial_8' => 'Dit IPTV abonnement heeft 12k+ kanalen, werkt op IPTV smart player, en is super stabiel in het VK.',
+  'testimonial_8' => 'Dit IPTV abonnement heeft duizenden kanalen, werkt op IPTV smart player, en is super stabiel in het VK.',
   'testimonial_9' => 'Draai xtreme HD IPTV op zowel mobiel als Firestick — naadloze streaming en directe ondersteuning.',
   'testimonial_10' => 'Beste IPTV in Italië! Eenvoudig op te zetten, gratis proefperiode inbegrepen, en 4K IPTV werkt geweldig op Android TV.',
 
-  'trial_title' => 'Probeer Onze IPTV Gratis Proefperiode met 4K Streaming & 12k Kanalen!',
+  'trial_title' => 'Probeer Onze IPTV Gratis Proefperiode met 4K Streaming & Duizenden Kanalen!',
   'trial_button' => 'Start Gratis IPTV Proefperiode Nu',
 
   'header_whatsapp' => 'WhatsApp: :phone',
@@ -105,7 +105,7 @@ return [
   'few_reasons' => 'Waarom Kiezen voor Opplex - Beste IPTV met 4K, Smart Player & Gratis Proefperiode',
 
   'feature_hd' => 'Beste IPTV met HD & 4K Live IPTV Streaming',
-  'feature_hd_desc' => 'Geniet van bufferloze xtreme HD IPTV streaming met 12k+ live kanalen en Bollywood/Hollywood films - werkt op Smart TV’s, Firestick en IPTV boxen.',
+  'feature_hd_desc' => 'Geniet van bufferloze xtreme HD IPTV streaming met duizenden live kanalen en Bollywood/Hollywood films - werkt op Smart TV’s, Firestick en IPTV boxen.',
 
   'feature_flexible' => 'Flexibel IPTV Abonnement met Gratis Proefperiode',
   'feature_flexible_desc' => 'Kies tussen maandelijkse, jaarlijkse of reseller IPTV plannen. Alle pakketten bevatten IPTV smart player ondersteuning, aroma IPTV en gratis proefperiode.',
@@ -123,7 +123,7 @@ return [
   'feature_support_desc' => 'Krijg snelle hulp van ons IPTV supportteam bij IPTV smart player installatie, proefactivatie, boxproblemen en streamingfouten.',
 
   'feature_sports_movies' => 'Bollywood Films & Meer',
-  'feature_sports_movies_desc' => 'Toegang tot 4K live IPTV voor 50k+ films via xtreme HD IPTV, smart players en IPTV box systemen met gratis proefperiode.',
+  'feature_sports_movies_desc' => 'Toegang tot 4K live IPTV voor duizenden films via xtreme HD IPTV, smart players en IPTV box systemen met gratis proefperiode.',
 
   'reseller_starter' => 'Starter IPTV Reseller - Smart Player & Gratis Proefperiode Toegang',
   'reseller_essential' => 'Essentieel IPTV Reseller - Aroma IPTV, Xtreme HD IPTV, Geen Verloop',
@@ -220,7 +220,7 @@ return [
 
   // Questions & Answers - remain 100% unchanged as requested
   'faq.q1' => 'Wat is Opplex IPTV',
-  'faq.a1' => 'OPPLEXTV is een IPTV-dienst die meer dan <strong>12.000 live kanalen, 50.000+ FILMS, 5000+ nieuwste TV-series</strong> aanbiedt. Samen met verschillende VOD-opties. Het standaardabonnement van OPPLEXTV IPTV kost <span style="text-decoration: line-through; color: #999;">$31,99/maand</span> <span style="color: #000000ff; font-weight:bold;">$2,99/maand</span> en omvat internationale, PPV-, entertainment-, nieuws- en andere zendercategorieën. OPPLEXTV IPTV kan worden geïnstalleerd op elk Android- / IOS-apparaat, inclusief de Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield en meer. OPPLEX IPTV is de beste IPTV-server in Canada.',
+  'faq.a1' => 'OPPLEXTV is een IPTV-dienst die <strong>duizenden live kanalen, FILMS en nieuwste TV-series</strong> aanbiedt. Samen met verschillende VOD-opties. Het standaardabonnement van OPPLEXTV IPTV kost <span style="text-decoration: line-through; color: #999;">$31,99/maand</span> <span style="color: #000000ff; font-weight:bold;">$2,99/maand</span> en omvat internationale, PPV-, entertainment-, nieuws- en andere zendercategorieën. OPPLEXTV IPTV kan worden geïnstalleerd op elk Android- / IOS-apparaat, inclusief de Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield en meer. OPPLEX IPTV is de beste IPTV-server in Canada.',
 
   'faq.q2' => 'Hoe ziet IPTV eruit?',
   'faq.a2' => 'Hier zijn enkele screenshots van hoe de IPTV-applicatie eruitziet op verschillende apparaten.',
@@ -301,7 +301,7 @@ return [
   'app.iptv_smarters_windows' => 'IPTV Smarters Pro voor Windows - IPTV Smart Player',
 
   // Movies Page
-  'title' => 'Films | Opplex IPTV - Bekijk 50k+ Films met Smart Player & IPTV Box',
+  'title' => 'Films | Opplex IPTV - Bekijk Duizenden Films met Smart Player & IPTV Box',
   'all' => 'Alle',
   'movies' => 'Films - Bollywood, Hollywood & Meer',
   'series' => "Series - Netflix, Prime en IPTV-programma's",
@@ -358,7 +358,7 @@ return [
     'secondary_cta' => 'Start gratis proef',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'HD en 4K streaming', 'description' => 'Bekijk premium IPTV content in scherpe HD en 4K kwaliteit op geschikte schermen.'],
-      ['icon' => 'flaticon-5g', 'title' => '12K+ live kanalen', 'description' => 'Stream nieuws, entertainment en internationale kanalen met een IPTV plan.'],
+      ['icon' => 'flaticon-5g', 'title' => 'Duizenden live kanalen', 'description' => 'Stream nieuws, entertainment en internationale kanalen met een IPTV plan.'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'Films en series', 'description' => 'Geniet van een grote VOD bibliotheek met films, series en familiecontent inbegrepen.'],
       ['icon' => 'flaticon-customer-service', 'title' => 'Snelle setup hulp', 'description' => 'Krijg hulp met Smart TV, Firestick, Android, iOS, MAG en IPTV players.'],
     ],
@@ -427,7 +427,7 @@ return [
     [
       'icon' => 'flaticon-8k',
       'title' => 'Betrouwbare IPTV in heel Europa',
-      'description' => 'Stream meer dan 12.000 zenders met 99,9% uptime en zonder buffering. Ideaal voor Smart TV’s, Firestick en Android-apparaten.',
+      'description' => 'Stream duizenden zenders met 99,9% uptime en zonder buffering. Ideaal voor Smart TV’s, Firestick en Android-apparaten.',
     ],
     [
       'icon' => 'flaticon-customer-service',
@@ -655,7 +655,7 @@ return [
   'home_trial_eyebrow' => 'Directe toegang',
   'home_trial_text' => 'Stream in 4K, test de stabiliteit van zenders en ervaar premium IPTV-prestaties voordat je kiest.',
   'home_trial_chip_streaming' => '4K streaming',
-  'home_trial_chip_channels' => '12K+ kanalen',
+  'home_trial_chip_channels' => 'Duizenden kanalen',
   'home_trial_chip_activation' => 'Snelle activatie',
   'home_trial_action_label' => 'WhatsApp-proef',
   'home_products_digital_title' => 'Digitale producten',
@@ -682,7 +682,7 @@ return [
     'section_title' => 'Veelgestelde vragen',
     'home' => [
       'q1' => 'Wat is Opplex IPTV?',
-      'a1' => 'Opplex IPTV is een premium streamingdienst die je in één app meer dan 12,000 live-tv-zenders, meer dan 50,000 films en ruim 5,000 tv-series biedt, zonder kabelkastje of contract.',
+      'a1' => 'Opplex IPTV is een premium streamingdienst die je in één app duizenden live-tv-zenders, films en tv-series biedt, zonder kabelkastje of contract.',
       'q2' => 'Kan ik Opplex IPTV uitproberen voordat ik het koop?',
       'a2' => 'Ja. We bieden een voordelige proefperiode aan, zodat je de kwaliteit en stabiliteit van de zenders op je eigen apparaat kunt testen voordat je een volledig abonnement kiest.',
       'q3' => 'Op welke apparaten kan ik kijken?',
@@ -782,7 +782,7 @@ return [
     ],
     'movies' => [
       'q1' => 'Hoeveel films en series zijn er beschikbaar?',
-      'a1' => 'Opplex IPTV biedt toegang tot meer dan 50,000 beschikbare films en ruim 5,000 tv-series on demand in een regelmatig bijgewerkte catalogus. Beschikbaarheid verschilt per bron en regio.',
+      'a1' => 'Opplex IPTV biedt toegang tot duizenden beschikbare films en tv-series on demand in een regelmatig bijgewerkte catalogus. Beschikbaarheid verschilt per bron en regio.',
       'q2' => 'Is de content beschikbaar in 4K of HD?',
       'a2' => 'Veel titels worden in Full HD en 4K gestreamd wanneer de bron dat ondersteunt, zodat je het beste beeld krijgt dat je apparaat en verbinding aankunnen.',
       'q3' => 'Hoe vaak wordt nieuwe content toegevoegd?',

@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'heading' => 'Miglior fornitore di servizi in abbonamento IPTV | TV in diretta e streaming 4K',
-        'text' => 'Smetti di pagare per la TV via cavo che usi a malapena. Approfitta di alcune delle migliori offerte di abbonamento IPTV: Opplex ti offre 12,000+ canali in diretta, 50,000+ film e una nitidezza 4K cristallina, tutto sui dispositivi che già possiedi. Scegli un piano, collegati e inizia a guardare oggi stesso.',
+        'text' => 'Smetti di pagare per la TV via cavo che usi a malapena. Approfitta di alcune delle migliori offerte di abbonamento IPTV: Opplex ti offre migliaia di canali in diretta, film e una nitidezza 4K cristallina, tutto sui dispositivi che già possiedi. Scegli un piano, collegati e inizia a guardare oggi stesso.',
         'primary_cta' => 'Inizia la prova gratuita',
         'secondary_cta' => 'Visualizza i piani IPTV',
     ],
@@ -90,7 +90,7 @@ return [
         'cards' => [
             [
                 'title' => 'I migliori pacchetti di abbonamento IPTV con accesso allo Smart Player',
-                'description' => 'Scopri una gamma di convenienti piani in abbonamento IPTV, tra cui Xtreme HD IPTV, aroma IPTV e IPTV smart player, con oltre 12k canali in diretta e supporto 4K.',
+                'description' => 'Scopri una gamma di convenienti piani in abbonamento IPTV, tra cui Xtreme HD IPTV, aroma IPTV e IPTV smart player, con migliaia di canali in diretta e supporto 4K.',
                 'cta' => 'Maggiori dettagli sui piani IPTV',
             ],
             [
@@ -154,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => 'Che cos’è esattamente Opplex IPTV?',
-                'answer' => 'Opplex è un servizio in abbonamento IPTV. Ciò significa che guardi TV in diretta, film e serie tramite la tua connessione Internet. Nessuna parabola satellitare, nessun decoder via cavo, nessun contratto. In un’unica app hai 12,000+ canali in diretta e 50,000+ titoli on demand.',
+                'answer' => 'Opplex è un servizio in abbonamento IPTV. Ciò significa che guardi TV in diretta, film e serie tramite la tua connessione Internet. Nessuna parabola satellitare, nessun decoder via cavo, nessun contratto. In un’unica app hai migliaia di canali in diretta e titoli on demand.',
             ],
             [
                 'question' => 'È disponibile una prova gratuita prima dell’abbonamento?',
@@ -182,11 +182,11 @@ return [
         'heading' => 'Numeri che parlano da soli!',
         'items' => [
             [
-                'value' => '12,000+',
+                'value' => 'Migliaia',
                 'label' => 'Canali in diretta',
             ],
             [
-                'value' => '50,000+',
+                'value' => 'Migliaia',
                 'label' => 'Film e serie',
             ],
             [
@@ -201,10 +201,10 @@ return [
     ],
     'trial' => [
         'heading' => 'Prova Opplex IPTV gratuitamente | Nessun impegno',
-        'text' => 'Guarda 12,000+ canali in 4K. Verifica personalmente la qualità prima di abbonarti. L’attivazione richiede pochi minuti.',
+        'text' => 'Guarda migliaia di canali in 4K. Verifica personalmente la qualità prima di abbonarti. L’attivazione richiede pochi minuti.',
         'chips' => [
             'Goditi lo streaming 4K',
-            'Più di 12K+ canali',
+            'Migliaia di canali',
             'Attivazione rapida',
         ],
         'action_label' => 'Prova su WhatsApp',

@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'heading' => 'Mejor proveedor de servicios de suscripción IPTV | TV en directo y streaming en 4K',
-        'text' => 'Deja de pagar por un servicio de cable que apenas usas. Consigue algunas de las mejores ofertas de suscripción IPTV: Opplex te ofrece 12,000+ canales en directo, 50,000+ películas y una calidad 4K de gran nitidez, todo en los dispositivos que ya tienes. Elige un plan, conéctate y empieza a ver contenido hoy mismo.',
+        'text' => 'Deja de pagar por un servicio de cable que apenas usas. Consigue algunas de las mejores ofertas de suscripción IPTV: Opplex te ofrece miles de canales en directo, películas y una calidad 4K de gran nitidez, todo en los dispositivos que ya tienes. Elige un plan, conéctate y empieza a ver contenido hoy mismo.',
         'primary_cta' => 'Iniciar prueba gratuita',
         'secondary_cta' => 'Ver planes IPTV',
     ],
@@ -90,7 +90,7 @@ return [
         'cards' => [
             [
                 'title' => 'Los mejores paquetes de suscripción IPTV con acceso a Smart Player',
-                'description' => 'Disfruta de una gama de planes de suscripción IPTV asequibles, incluidos Xtreme HD IPTV, aroma IPTV e IPTV smart player, con más de 12k+ canales en directo y compatibilidad con 4K.',
+                'description' => 'Disfruta de una gama de planes de suscripción IPTV asequibles, incluidos Xtreme HD IPTV, aroma IPTV e IPTV smart player, con miles de canales en directo y compatibilidad con 4K.',
                 'cta' => 'Más información sobre los planes IPTV',
             ],
             [
@@ -154,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => '¿Qué es exactamente Opplex IPTV?',
-                'answer' => 'Opplex es un servicio de suscripción IPTV. Esto significa que puedes ver TV en directo, películas y series a través de tu conexión a Internet. Sin antena parabólica, sin decodificador de cable y sin contrato. Obtienes 12,000+ canales en directo y 50,000+ títulos bajo demanda en una sola aplicación.',
+                'answer' => 'Opplex es un servicio de suscripción IPTV. Esto significa que puedes ver TV en directo, películas y series a través de tu conexión a Internet. Sin antena parabólica, sin decodificador de cable y sin contrato. Obtienes miles de canales en directo y títulos bajo demanda en una sola aplicación.',
             ],
             [
                 'question' => '¿Hay una prueba gratuita antes de suscribirme?',
@@ -182,11 +182,11 @@ return [
         'heading' => '¡Cifras que hablan por sí solas!',
         'items' => [
             [
-                'value' => '12,000+',
+                'value' => 'Miles',
                 'label' => 'Canales en directo',
             ],
             [
-                'value' => '50,000+',
+                'value' => 'Miles',
                 'label' => 'Películas y series',
             ],
             [
@@ -201,10 +201,10 @@ return [
     ],
     'trial' => [
         'heading' => 'Prueba Opplex IPTV gratis | Sin compromiso',
-        'text' => 'Disfruta de 12,000+ canales en 4K. Comprueba la calidad por ti mismo antes de suscribirte. La activación tarda solo unos minutos.',
+        'text' => 'Disfruta de miles de canales en 4K. Comprueba la calidad por ti mismo antes de suscribirte. La activación tarda solo unos minutos.',
         'chips' => [
             'Disfruta de streaming en 4K',
-            'Más de 12K+ canales',
+            'Miles de canales',
             'Activación y configuración rápidas',
         ],
         'action_label' => 'Prueba por WhatsApp',

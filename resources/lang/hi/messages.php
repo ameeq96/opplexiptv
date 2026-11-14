@@ -4,7 +4,7 @@ $homeDocument = require __DIR__ . '/document_home.php';
 
 return [
   'subtitle' => 'Best IPTV | 4K स्ट्रीमिंग | Free Trial | Smart IPTV Player',
-  'heading-mobile' => '12,000+ लाइव चैनल्स और 50k मूवीज़ स्ट्रीम करें Best IPTV ऐप्स के साथ',
+  'heading-mobile' => 'हज़ारों लाइव चैनल्स और मूवीज़ स्ट्रीम करें Best IPTV ऐप्स के साथ',
   'description_prefix' => 'सबसे अच्छा IPTV पाएं 4K लाइव IPTV, aroma IPTV और xtreme HD IPTV के साथ',
   'description_suffix' => '— यूरोप और USA में Free Trial के साथ IPTV Smart Player और IPTV Box ट्राई करें।',
   'start_trial' => 'बेसिक ट्रायल एक्सेस',
@@ -49,39 +49,39 @@ return [
   'quality_content' => 'क्वालिटी कंटेंट - मूवीज़, सीरीज़, लाइव चैनल्स',
 
   'network_heading' => 'हम देते हैं अनलिमिटेड IPTV 4K में, Free Trial शामिल',
-  'feature_50k_movies' => 'Best IPTV Smart Player पर 50k+ मूवीज़ देखें',
-  'feature_50k_movies_desc' => 'Xtreme HD IPTV और Aroma IPTV के जरिए लोकप्रिय संगत प्लेयर और डिवाइसों पर 50,000+ बॉलीवुड और हॉलीवुड टाइटल देखें, जहाँ उपलब्ध हो वहाँ HD या 4K में।',
-  'feature_5k_series' => 'IPTV बॉक्स पर 5k+ सीरीज़ (Netflix, Prime, और भी)',
-  'feature_5k_series_desc' => '5,000+ Netflix और Prime Video सीरीज़ देखें IPTV Smart Player और xtreme HD IPTV के साथ — Free Trial और 4K सपोर्ट के साथ।',
-  'feature_12k_channels' => 'IPTV बॉक्स और Smart Player से 12k+ लाइव चैनल्स',
-  'feature_12k_channels_desc' => '12,000+ लाइव टीवी चैनल्स (न्यूज़, एंटरटेनमेंट) US, UK, France और Italy में बेस्ट IPTV सर्विस के साथ पाएं।',
+  'feature_50k_movies' => 'Best IPTV Smart Player पर हज़ारों मूवीज़ देखें',
+  'feature_50k_movies_desc' => 'Xtreme HD IPTV और Aroma IPTV के जरिए लोकप्रिय संगत प्लेयर और डिवाइसों पर हज़ारों बॉलीवुड और हॉलीवुड टाइटल देखें, जहाँ उपलब्ध हो वहाँ HD या 4K में।',
+  'feature_5k_series' => 'IPTV बॉक्स पर हज़ारों सीरीज़ (Netflix, Prime, और भी)',
+  'feature_5k_series_desc' => 'हज़ारों Netflix और Prime Video सीरीज़ देखें IPTV Smart Player और xtreme HD IPTV के साथ — Free Trial और 4K सपोर्ट के साथ।',
+  'feature_12k_channels' => 'IPTV बॉक्स और Smart Player से हज़ारों लाइव चैनल्स',
+  'feature_12k_channels_desc' => 'हज़ारों लाइव टीवी चैनल्स (न्यूज़, एंटरटेनमेंट) US, UK, France और Italy में बेस्ट IPTV सर्विस के साथ पाएं।',
   'feature_hd_4k' => 'Full HD और 4K लाइव IPTV क्वालिटी का मज़ा लें',
   'feature_hd_4k_desc' => 'क्रिस्टल-क्लियर 4K लाइव IPTV बिना बफरिंग, स्मार्ट प्लेयर कम्पैटिबिलिटी, Free Trial और बेस्ट xtreme HD IPTV स्ट्रीमिंग यूरोप में।',
 
   'explore_services' => 'टॉप IPTV सर्विसेज 4K स्ट्रीमिंग और Free Trial के साथ',
   'iptv_packages' => 'Best IPTV सब्सक्रिप्शन पैकेज Smart Player एक्सेस के साथ',
-  'iptv_packages_desc' => 'अफोर्डेबल IPTV सब्सक्रिप्शन प्लान्स चुनें जिनमें xtreme HD IPTV, aroma IPTV और Smart Player शामिल हैं — 12k+ लाइव चैनल्स और 4K सपोर्ट।',
+  'iptv_packages_desc' => 'अफोर्डेबल IPTV सब्सक्रिप्शन प्लान्स चुनें जिनमें xtreme HD IPTV, aroma IPTV और Smart Player शामिल हैं — हज़ारों लाइव चैनल्स और 4K सपोर्ट।',
   'reseller_panel' => 'IPTV Reselling शुरू करें Free Trial और Credits के साथ',
   'reseller_panel_desc' => 'Opplex IPTV Reseller प्रोग्राम जॉइन करें और xtreme HD IPTV, IPTV Boxes और aroma IPTV बेचकर कमाई करें UK, France, Italy और वर्ल्डवाइड।',
-  'iptv_vod' => 'Premium IPTV VOD 50k+ मूवीज़ और सीरीज़ के साथ',
-  'iptv_vod_desc' => '50k+ हॉलीवुड और बॉलीवुड मूवीज़ और 5k+ वेब सीरीज़ ऑन डिमांड देखें xtreme HD IPTV और aroma IPTV के जरिए — Free Trial और Full HD क्वालिटी में।',
+  'iptv_vod' => 'Premium IPTV VOD हज़ारों मूवीज़ और सीरीज़ के साथ',
+  'iptv_vod_desc' => 'हज़ारों हॉलीवुड और बॉलीवुड मूवीज़ और वेब सीरीज़ ऑन डिमांड देखें xtreme HD IPTV और aroma IPTV के जरिए — Free Trial और Full HD क्वालिटी में।',
   'iptv_devices' => 'लोकप्रिय डिवाइसों पर IPTV - Smart Player, Android, Box',
   'iptv_devices_desc' => 'IPTV Smart Player का इस्तेमाल करें Smart TV, iPhone, Android, Firestick, MAG Box और अधिक पर। Xtreme HD IPTV एक्सेस Free Trial के साथ।',
   'learn_more' => 'हमारे IPTV प्लान्स के बारे में और जानें',
 
   'testimonials_title' => 'कस्टमर रिव्यूज़ - बेस्ट IPTV अनुभव',
   'testimonials_heading' => 'यूरोप भर के रियल IPTV यूज़र्स से सुनें',
-  'testimonial_1' => 'यह सबसे अच्छा IPTV है जो मैंने यूज़ किया — 12k+ चैनल्स, Zero Buffer और क्लियर HD क्वालिटी xtreme HD IPTV के जरिए।',
+  'testimonial_1' => 'यह सबसे अच्छा IPTV है जो मैंने यूज़ किया — हज़ारों चैनल्स, Zero Buffer और क्लियर HD क्वालिटी xtreme HD IPTV के जरिए।',
   'testimonial_2' => 'मैं Smart TV पर aroma IPTV स्ट्रीम करता हूँ और क्वालिटी शानदार है। Best IPTV Box अल्टरनेटिव।',
   'testimonial_3' => 'केबल से Opplex IPTV पर स्विच किया — xtreme HD IPTV और Smart Player ने सब कुछ स्मूथ बना दिया।',
   'testimonial_4' => 'IPTV Smart Player पर कोई बफर नहीं, बढ़िया सपोर्ट और Firestick पर भी स्मूद — पूरी तरह से वैल्यू फॉर मनी!',
-  'testimonial_5' => 'टॉप-क्वालिटी IPTV सर्विस Netflix, Prime और 50k+ VOD के साथ। IPTV Box और Android पर परफेक्ट।',
+  'testimonial_5' => 'टॉप-क्वालिटी IPTV सर्विस Netflix, Prime और बड़ी VOD लाइब्रेरी के साथ। IPTV Box और Android पर परफेक्ट।',
   'testimonial_7' => 'अफोर्डेबल IPTV Free Trial ने मुझे मेरी सभी पसंदीदा इटालियन और फ्रेंच शोज़ aroma IPTV पर स्ट्रीम करने दिए।',
-  'testimonial_8' => 'इस IPTV सब्सक्रिप्शन में 12k+ चैनल्स हैं, IPTV Smart Player पर चलता है और UK में सुपर स्टेबल है।',
+  'testimonial_8' => 'इस IPTV सब्सक्रिप्शन में हज़ारों चैनल्स हैं, IPTV Smart Player पर चलता है और UK में सुपर स्टेबल है।',
   'testimonial_9' => 'मोबाइल और Firestick दोनों पर xtreme HD IPTV चला रहा हूँ — स्मूद स्ट्रीमिंग और इंस्टेंट सपोर्ट।',
   'testimonial_10' => 'इटली में Best IPTV! सेटअप आसान, Free Trial शामिल और 4K IPTV Android TV पर शानदार चलता है।',
 
-  'trial_title' => 'हमारा IPTV Free Trial आज़माएं 4K स्ट्रीमिंग और 12k चैनल्स के साथ!',
+  'trial_title' => 'हमारा IPTV Free Trial आज़माएं 4K स्ट्रीमिंग और हज़ारों चैनल्स के साथ!',
   'trial_button' => 'अभी Free IPTV Trial शुरू करें',
 
   'header_whatsapp' => 'WhatsApp: :phone',
@@ -108,7 +108,7 @@ return [
   'few_reasons' => 'क्यों चुनें Opplex - Best IPTV 4K, Smart Player और Free Trial के साथ',
 
   'feature_hd' => 'Best IPTV HD और 4K लाइव IPTV स्ट्रीमिंग के साथ',
-  'feature_hd_desc' => 'Zero Buffer xtreme HD IPTV स्ट्रीमिंग का आनंद लें 12k+ लाइव चैनल्स, बॉलीवुड/हॉलीवुड मूवीज़ के साथ — Smart TVs, Firestick और IPTV Boxes पर।',
+  'feature_hd_desc' => 'Zero Buffer xtreme HD IPTV स्ट्रीमिंग का आनंद लें हज़ारों लाइव चैनल्स, बॉलीवुड/हॉलीवुड मूवीज़ के साथ — Smart TVs, Firestick और IPTV Boxes पर।',
 
   'feature_flexible' => 'फ्लेक्सिबल IPTV सब्सक्रिप्शन Free Trial के साथ',
   'feature_flexible_desc' => 'मासिक, वार्षिक या रिसेलर IPTV प्लान्स चुनें। सभी पैकेजों में IPTV Smart Player सपोर्ट, aroma IPTV और Free Trial शामिल।',
@@ -126,7 +126,7 @@ return [
   'feature_support_desc' => 'हमारी IPTV सपोर्ट टीम से तुरंत मदद पाएं IPTV Smart Player सेटअप, ट्रायल एक्टिवेशन, बॉक्स इश्यूज़ और स्ट्रीमिंग एरर में।',
 
   'feature_sports_movies' => 'बॉलीवुड मूवीज़ और भी बहुत कुछ',
-  'feature_sports_movies_desc' => '50k+ मूवीज़ 4K लाइव IPTV पर देखें xtreme HD IPTV, Smart Players और IPTV Box सिस्टम्स के जरिए Free Trial के साथ।',
+  'feature_sports_movies_desc' => 'हज़ारों मूवीज़ 4K लाइव IPTV पर देखें xtreme HD IPTV, Smart Players और IPTV Box सिस्टम्स के जरिए Free Trial के साथ।',
 
   'reseller_starter' => 'स्टार्टर IPTV रिसेलर - Smart Player और Free Trial एक्सेस',
   'reseller_essential' => 'Essential IPTV रिसेलर - Aroma IPTV, Xtreme HD IPTV, No Expiry',
@@ -222,7 +222,7 @@ return [
 
   // Questions & Answers - remain unchanged as requested
   'faq.q1' => 'Opplex IPTV क्या है',
-  'faq.a1' => 'OPPLEXTV एक IPTV सेवा है जो <strong>12,000 लाइव चैनल, 50000+ मूवीज़, 5000+ नवीनतम टीवी सीरीज़</strong> प्रदान करती है। साथ ही कई VOD विकल्प भी शामिल हैं। OPPLEXTV IPTV का मानक सब्सक्रिप्शन प्लान <span style="text-decoration: line-through; color: #999;">$31.99/महीना</span> <span style="color: #000000ff; font-weight:bold;">$2.99/महीना</span> है और इसमें अंतर्राष्ट्रीय, PPV, मनोरंजन, समाचार और अन्य चैनल श्रेणियाँ शामिल हैं। OPPLEXTV IPTV को संगत Android / iOS डिवाइसों पर इंस्टॉल किया जा सकता है, जिसमें Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield और अन्य शामिल हैं। OPPLEX IPTV कनाडा में बेस्ट IPTV सर्वर है।',
+  'faq.a1' => 'OPPLEXTV एक IPTV सेवा है जो <strong>हज़ारों लाइव चैनल, मूवीज़ और नवीनतम टीवी सीरीज़</strong> प्रदान करती है। साथ ही कई VOD विकल्प भी शामिल हैं। OPPLEXTV IPTV का मानक सब्सक्रिप्शन प्लान <span style="text-decoration: line-through; color: #999;">$31.99/महीना</span> <span style="color: #000000ff; font-weight:bold;">$2.99/महीना</span> है और इसमें अंतर्राष्ट्रीय, PPV, मनोरंजन, समाचार और अन्य चैनल श्रेणियाँ शामिल हैं। OPPLEXTV IPTV को संगत Android / iOS डिवाइसों पर इंस्टॉल किया जा सकता है, जिसमें Amazon Firestick, Fire TV, Fire TV Cube, NVIDIA Shield और अन्य शामिल हैं। OPPLEX IPTV कनाडा में बेस्ट IPTV सर्वर है।',
 
   'faq.q2' => 'IPTV कैसा दिखता है?',
   'faq.a2' => 'यहाँ कुछ स्क्रीनशॉट दिए गए हैं कि IPTV एप्लिकेशन विभिन्न डिवाइसों पर कैसा दिखता है।',
@@ -303,7 +303,7 @@ return [
   'app.iptv_smarters_windows' => 'Windows के लिए IPTV Smarters Pro - IPTV स्मार्ट प्लेयर',
 
   // Movies Page
-  'title' => 'फिल्में | Opplex IPTV - 50,000+ फिल्में स्मार्ट प्लेयर और IPTV बॉक्स के साथ देखें',
+  'title' => 'फिल्में | Opplex IPTV - हज़ारों फिल्में स्मार्ट प्लेयर और IPTV बॉक्स के साथ देखें',
   'all' => 'सभी',
   'movies' => 'फिल्में - बॉलीवुड, हॉलीवुड और अधिक',
   'series' => 'सीरीज़ - Netflix, Prime और IPTV शोज़',
@@ -360,7 +360,7 @@ return [
     'secondary_cta' => 'फ्री ट्रायल शुरू करें',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'HD और 4K स्ट्रीमिंग', 'description' => 'कम्पैटिबल स्क्रीन पर प्रीमियम IPTV कंटेंट HD और 4K क्वालिटी में देखें।'],
-      ['icon' => 'flaticon-5g', 'title' => '12K+ लाइव चैनल', 'description' => 'एक IPTV प्लान में न्यूज, एंटरटेनमेंट और इंटरनेशनल चैनल स्ट्रीम करें।'],
+      ['icon' => 'flaticon-5g', 'title' => 'हज़ारों लाइव चैनल', 'description' => 'एक IPTV प्लान में न्यूज, एंटरटेनमेंट और इंटरनेशनल चैनल स्ट्रीम करें।'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'मूवीज और सीरीज', 'description' => 'मूवीज, सीरीज और फैमिली कंटेंट वाली बड़ी VOD लाइब्रेरी पाएं।'],
       ['icon' => 'flaticon-customer-service', 'title' => 'फास्ट सेटअप सपोर्ट', 'description' => 'Smart TV, Firestick, Android, iOS, MAG और IPTV players के लिए मदद पाएं।'],
     ],
@@ -429,7 +429,7 @@ return [
     [
       'icon' => 'flaticon-8k',
       'title' => 'यूरोप भर में भरोसेमंद IPTV',
-      'description' => '12,000+ चैनल्स देखें 99.9% अपटाइम और बिना बफ़रिंग के। Smart TV, Firestick और Android डिवाइस के लिए परफेक्ट।',
+      'description' => 'हज़ारों चैनल्स देखें 99.9% अपटाइम और बिना बफ़रिंग के। Smart TV, Firestick और Android डिवाइस के लिए परफेक्ट।',
     ],
     [
       'icon' => 'flaticon-customer-service',
@@ -656,7 +656,7 @@ return [
   'home_trial_eyebrow' => 'इंस्टेंट एक्सेस',
   'home_trial_text' => '4K में स्ट्रीम करें, चैनलों की स्थिरता जांचें और खरीदने से पहले प्रीमियम IPTV परफॉर्मेंस का अनुभव लें।',
   'home_trial_chip_streaming' => '4K स्ट्रीमिंग',
-  'home_trial_chip_channels' => '12K+ चैनल्स',
+  'home_trial_chip_channels' => 'हज़ारों चैनल्स',
   'home_trial_chip_activation' => 'तेज एक्टिवेशन',
   'home_trial_action_label' => 'WhatsApp ट्रायल',
   'home_products_digital_title' => 'डिजिटल प्रोडक्ट्स',
@@ -684,7 +684,7 @@ return [
     'section_title' => 'अक्सर पूछे जाने वाले प्रश्न',
     'home' => [
       'q1' => 'Opplex IPTV क्या है?',
-      'a1' => 'Opplex IPTV एक प्रीमियम स्ट्रीमिंग सेवा है, जो एक ही ऐप में 12,000+ लाइव TV चैनल, 50,000+ फ़िल्में और 5,000+ TV सीरीज़ देती है—बिना केबल बॉक्स या अनुबंध के।',
+      'a1' => 'Opplex IPTV एक प्रीमियम स्ट्रीमिंग सेवा है, जो एक ही ऐप में हज़ारों लाइव TV चैनल, फ़िल्में और TV सीरीज़ देती है—बिना केबल बॉक्स या अनुबंध के।',
       'q2' => 'क्या मैं खरीदने से पहले Opplex IPTV आज़मा सकता हूँ?',
       'a2' => 'हाँ। हम कम कीमत वाला ट्रायल देते हैं, ताकि पूरी सदस्यता चुनने से पहले आप अपने डिवाइस पर चैनलों की गुणवत्ता और स्थिरता जाँच सकें।',
       'q3' => 'मैं किन डिवाइस पर देख सकता हूँ?',
@@ -784,7 +784,7 @@ return [
     ],
     'movies' => [
       'q1' => 'कितनी फ़िल्में और सीरीज़ उपलब्ध हैं?',
-      'a1' => 'Opplex IPTV में ऑन-डिमांड 50,000+ फ़िल्में और 5,000+ TV सीरीज़ हैं, जिनमें नवीनतम रिलीज़ से लेकर सदाबहार क्लासिक तक शामिल हैं।',
+      'a1' => 'Opplex IPTV में ऑन-डिमांड हज़ारों फ़िल्में और TV सीरीज़ हैं, जिनमें नवीनतम रिलीज़ से लेकर सदाबहार क्लासिक तक शामिल हैं।',
       'q2' => 'क्या कंटेंट 4K या HD में उपलब्ध है?',
       'a2' => 'जहाँ स्रोत इसका समर्थन करता है, वहाँ कई शीर्षक Full HD और 4K में स्ट्रीम होते हैं, ताकि आपके डिवाइस और कनेक्शन के अनुसार सर्वोत्तम तस्वीर मिले।',
       'q3' => 'नया कंटेंट कितनी बार जोड़ा जाता है?',

@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'heading' => 'Meilleur fournisseur de services d’abonnement IPTV | TV en direct et streaming 4K',
-        'text' => 'Arrêtez de payer pour un câble que vous utilisez à peine. Profitez de certaines des meilleures offres d’abonnement IPTV : Opplex vous propose 12,000+ chaînes en direct, 50,000+ films et une 4K d’une netteté exceptionnelle, sur les appareils que vous possédez déjà. Choisissez une formule, connectez-vous et commencez à regarder dès aujourd’hui.',
+        'text' => 'Arrêtez de payer pour un câble que vous utilisez à peine. Profitez de certaines des meilleures offres d’abonnement IPTV : Opplex vous propose des milliers de chaînes en direct, de films et une 4K d’une netteté exceptionnelle, sur les appareils que vous possédez déjà. Choisissez une formule, connectez-vous et commencez à regarder dès aujourd’hui.',
         'primary_cta' => 'Démarrer l’essai gratuit',
         'secondary_cta' => 'Voir les formules IPTV',
     ],
@@ -90,7 +90,7 @@ return [
         'cards' => [
             [
                 'title' => 'Les meilleurs forfaits d’abonnement IPTV avec accès Smart Player',
-                'description' => 'Profitez d’une gamme de formules d’abonnement IPTV abordables, notamment Xtreme HD IPTV, aroma IPTV et IPTV smart player, avec 12k+ chaînes en direct et la prise en charge de la 4K.',
+                'description' => 'Profitez d’une gamme de formules d’abonnement IPTV abordables, notamment Xtreme HD IPTV, aroma IPTV et IPTV smart player, avec des milliers de chaînes en direct et la prise en charge de la 4K.',
                 'cta' => 'Plus de détails sur les formules IPTV',
             ],
             [
@@ -154,7 +154,7 @@ return [
         'items' => [
             [
                 'question' => 'Qu’est-ce qu’Opplex IPTV exactement ?',
-                'answer' => 'Opplex est un service d’abonnement IPTV. Cela signifie que vous regardez la TV en direct, les films et les séries via votre connexion Internet. Aucune antenne satellite, aucun décodeur câble et aucun contrat. Vous obtenez 12,000+ chaînes en direct et 50,000+ titres à la demande dans une seule application.',
+                'answer' => 'Opplex est un service d’abonnement IPTV. Cela signifie que vous regardez la TV en direct, les films et les séries via votre connexion Internet. Aucune antenne satellite, aucun décodeur câble et aucun contrat. Vous obtenez des milliers de chaînes en direct et de titres à la demande dans une seule application.',
             ],
             [
                 'question' => 'Puis-je profiter d’un essai gratuit avant de m’abonner ?',
@@ -182,11 +182,11 @@ return [
         'heading' => 'Des chiffres qui parlent d’eux-mêmes !',
         'items' => [
             [
-                'value' => '12,000+',
+                'value' => 'Des milliers',
                 'label' => 'Chaînes en direct',
             ],
             [
-                'value' => '50,000+',
+                'value' => 'Des milliers',
                 'label' => 'Films et séries',
             ],
             [
@@ -201,10 +201,10 @@ return [
     ],
     'trial' => [
         'heading' => 'Essayez Opplex IPTV gratuitement | Aucun engagement',
-        'text' => 'Regardez 12,000+ chaînes en 4K. Testez vous-même la qualité avant de vous abonner. L’activation ne prend que quelques minutes.',
+        'text' => 'Regardez des milliers de chaînes en 4K. Testez vous-même la qualité avant de vous abonner. L’activation ne prend que quelques minutes.',
         'chips' => [
             'Profitez du streaming 4K',
-            'Plus de 12K+ chaînes',
+            'Des milliers de chaînes',
             'Activation et configuration rapides',
         ],
         'action_label' => 'Essai WhatsApp',

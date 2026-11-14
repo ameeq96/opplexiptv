@@ -13,7 +13,7 @@ return [
                     'icon' => 'fa fa-desktop',
                 ],
                 [
-                    'title' => '12,000+ livekanalen',
+                    'title' => 'Duizenden livekanalen',
                     'description' => 'Nieuws, entertainment en internationale kanalen in één abonnement.',
                     'icon' => 'fa fa-globe',
                 ],
@@ -40,7 +40,7 @@ return [
                     'title' => 'Maandelijks',
                     'price' => '$2.99/maand',
                     'features' => [
-                        'Stream 12,000+ kanalen in HD en 4K, zonder buffering',
+                        'Stream duizenden kanalen in HD en 4K, zonder buffering',
                         'Alle films en series',
                         '24/7 ondersteuning via WhatsApp',
                         'Werkt op elk belangrijk apparaat',
@@ -119,8 +119,8 @@ return [
             'heading' => 'Wat je bij elk IPTV-abonnement krijgt',
             'intro' => 'Er zijn geen onverwachte extra\'s of afgeschermde functies. Elk abonnement omvat, ongeacht de prijs, hetzelfde volledige pakket:',
             'items' => [
-                '12,000+ live TV-kanalen (nieuws, entertainment, internationaal)',
-                '50,000+ films en 5,000+ TV-series on demand',
+                'Duizenden live TV-kanalen (nieuws, entertainment, internationaal)',
+                'Duizenden films en TV-series on demand',
                 '4K- en HD-streamkwaliteit op ondersteunde kanalen',
                 'Elektronische programmagids (EPG) inbegrepen',
                 'Ondersteuning voor meerdere apparaten, tot 2 schermen tegelijk',
@@ -162,11 +162,11 @@ return [
             ],
         ],
         'trial' => [
-            'heading' => 'Probeer onze gratis IPTV-proefperiode — 12,000+ kanalen, volledige 4K-kwaliteit',
+            'heading' => 'Probeer onze gratis IPTV-proefperiode — duizenden kanalen, volledige 4K-kwaliteit',
             'text' => 'Nog niet klaar om je vast te leggen? Test Opplex dan eerst met een gratis proefperiode. Stream livekanalen, controleer de beeldkwaliteit en ervaar zelf hoe stabiel de dienst is op je eigen apparaat voordat je betaalt.',
             'items' => [
                 '4K-streaming',
-                '12,000+ kanalen',
+                'Duizenden kanalen',
                 'Binnen enkele minuten geactiveerd',
             ],
             'cta' => 'Start gratis IPTV-proefperiode via WhatsApp',
@@ -179,7 +179,7 @@ return [
             'eyebrow' => 'Elk abonnement omvat het volledige pakket. Geen verborgen kosten.',
             'heading' => 'Prijzen van IPTV-abonnementen — Eenvoudige abonnementen, geen verrassingen',
             'paragraphs' => [
-                'Kies de looptijd van een abonnement, betaal één keer en begin met kijken. Elk Opplex-abonnement biedt je dezelfde 12,000+ livekanalen, 50,000+ films en 4K-kwaliteit. Langere abonnementen kosten minder per maand; dat is het enige verschil.',
+                'Kies de looptijd van een abonnement, betaal één keer en begin met kijken. Elk Opplex-abonnement biedt je dezelfde duizenden livekanalen en films, plus 4K-kwaliteit. Langere abonnementen kosten minder per maand; dat is het enige verschil.',
                 'Filex is ook beschikbaar voor kijkers die een ander zenderaanbod willen tegen een iets hoger tarief. Beide gebruiken hetzelfde installatieproces en dezelfde apps.',
                 'Weet je niet zeker welk abonnement bij je past? Begin dan met het maandabonnement. Je kunt later altijd nog jaarlijks kiezen.',
             ],
@@ -188,9 +188,9 @@ return [
             'heading' => 'Elk abonnement omvat dit allemaal — Geen extra\'s, geen niveaus',
             'intro' => 'Veel streamingdiensten laten je extra betalen voor 4K en VOD. Opplex doet dat niet. Dit krijg je vanaf de eerste dag bij elk abonnement:',
             'items' => [
-                '12,000+ livekanalen: nieuws, entertainment, UK, USA, internationaal',
-                '50,000+ films on demand',
-                '5,000+ TV-series, actueel en klassiek',
+                'Duizenden livekanalen: nieuws, entertainment, UK, USA, internationaal',
+                'Duizenden films on demand',
+                'Duizenden TV-series, actueel en klassiek',
                 'HD- en 4K-kwaliteit op ondersteunde kanalen en apparaten',
                 'Ingebouwde EPG, zodat je weet wat er nu en straks te zien is',
                 'Catch-up-TV op geselecteerde kanalen',

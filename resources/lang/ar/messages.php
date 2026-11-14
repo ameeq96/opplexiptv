@@ -4,7 +4,7 @@ $homeDocument = require __DIR__ . '/document_home.php';
 
 return [
   'subtitle' => 'أفضل IPTV | بث 4K | تجربة مجانية | مشغل IPTV ذكي',
-  'heading-mobile' => 'شاهد +12,000 قناة مباشرة و 50,000 فيلم مع أفضل تطبيقات IPTV',
+  'heading-mobile' => 'شاهد آلاف القنوات المباشرة والأفلام مع أفضل تطبيقات IPTV',
   'description_prefix' => 'احصل على أفضل IPTV مع 4K مباشر، Aroma IPTV و Xtreme HD IPTV عبر',
   'description_suffix' => '— جرب مشغل IPTV الذكي وصندوق IPTV مع تجربة مجانية في أوروبا والولايات المتحدة.',
   'start_trial' => 'الوصول التجريبي الأساسي',
@@ -49,39 +49,39 @@ return [
   'quality_content' => 'محتوى عالي الجودة - أفلام، مسلسلات، قنوات مباشرة',
 
   'network_heading' => 'نقدم IPTV غير محدود بدقة 4K مع تجربة مجانية',
-  'feature_50k_movies' => 'شاهد +50,000 فيلم على أفضل مشغل IPTV ذكي',
-  'feature_50k_movies_desc' => 'استكشف أكثر من 50,000 عنوان هندي وهوليوودي عبر Xtreme HD IPTV وAroma IPTV على المشغلات والأجهزة الشائعة المتوافقة، بجودة HD أو 4K حيثما تتوفر.',
-  'feature_5k_series' => '+5000 مسلسل عبر صندوق IPTV (نيتفلكس، برايم، وأكثر)',
-  'feature_5k_series_desc' => 'استمتع بـ 5,000+ مسلسل من نيتفلكس وبرايم فيديو عبر مشغل IPTV الذكي و Xtreme HD IPTV — يشمل التجربة المجانية ودعم 4K.',
-  'feature_12k_channels' => '+12,000 قناة مباشرة عبر صندوق IPTV ومشغل ذكي',
-  'feature_12k_channels_desc' => 'شاهد +12,000 قناة مباشرة تشمل الأخبار، والترفيه في الولايات المتحدة، المملكة المتحدة، فرنسا وإيطاليا مع أفضل خدمة IPTV.',
+  'feature_50k_movies' => 'شاهد آلاف الأفلام على أفضل مشغل IPTV ذكي',
+  'feature_50k_movies_desc' => 'استكشف آلاف العناوين الهندية والهوليوودية عبر Xtreme HD IPTV وAroma IPTV على المشغلات والأجهزة الشائعة المتوافقة، بجودة HD أو 4K حيثما تتوفر.',
+  'feature_5k_series' => 'آلاف المسلسلات عبر صندوق IPTV (نيتفلكس، برايم، وأكثر)',
+  'feature_5k_series_desc' => 'استمتع بآلاف المسلسلات من نيتفلكس وبرايم فيديو عبر مشغل IPTV الذكي و Xtreme HD IPTV — يشمل التجربة المجانية ودعم 4K.',
+  'feature_12k_channels' => 'آلاف القنوات المباشرة عبر صندوق IPTV ومشغل ذكي',
+  'feature_12k_channels_desc' => 'شاهد آلاف القنوات المباشرة تشمل الأخبار، والترفيه في الولايات المتحدة، المملكة المتحدة، فرنسا وإيطاليا مع أفضل خدمة IPTV.',
   'feature_hd_4k' => 'استمتع بـ IPTV بجودة HD & 4K',
   'feature_hd_4k_desc' => 'احصل على IPTV بدقة 4K واضحة بدون تقطيع، متوافق مع المشغلات الذكية، مع تجربة مجانية وأفضل بث Xtreme HD IPTV في أوروبا.',
 
   'explore_services' => 'أفضل خدمات IPTV مع بث 4K وتجربة مجانية',
   'iptv_packages' => 'أفضل باقات اشتراك IPTV مع مشغل ذكي',
-  'iptv_packages_desc' => 'اختر من بين خطط IPTV بأسعار مناسبة تشمل Xtreme HD IPTV، Aroma IPTV ومشغل IPTV الذكي — أكثر من 12,000 قناة مباشرة ودعم 4K.',
+  'iptv_packages_desc' => 'اختر من بين خطط IPTV بأسعار مناسبة تشمل Xtreme HD IPTV، Aroma IPTV ومشغل IPTV الذكي — آلاف القنوات المباشرة ودعم 4K.',
   'reseller_panel' => 'ابدأ إعادة بيع IPTV مع تجربة مجانية وأرصدة',
   'reseller_panel_desc' => 'انضم إلى برنامج الموزعين من Opplex IPTV واربح من بيع Xtreme HD IPTV، أجهزة IPTV و Aroma IPTV في المملكة المتحدة، فرنسا، إيطاليا وجميع أنحاء العالم.',
-  'iptv_vod' => 'فيديو حسب الطلب IPTV مع +50,000 فيلم ومسلسل',
-  'iptv_vod_desc' => 'شاهد +50,000 فيلم هوليوودي وهندي وأكثر من 5,000 مسلسل عند الطلب عبر Xtreme HD IPTV و Aroma IPTV مع تجربة مجانية وجودة HD كاملة.',
+  'iptv_vod' => 'فيديو حسب الطلب IPTV مع آلاف الأفلام والمسلسلات',
+  'iptv_vod_desc' => 'شاهد آلاف الأفلام الهوليوودية والهندية والمسلسلات عند الطلب عبر Xtreme HD IPTV و Aroma IPTV مع تجربة مجانية وجودة HD كاملة.',
   'iptv_devices' => 'IPTV على الأجهزة الشائعة - مشغل ذكي، أندرويد، صندوق',
   'iptv_devices_desc' => 'استخدم مشغل IPTV على التلفزيونات الذكية، آيفون، أندرويد، فايرستيك، MAG Box والمزيد. يشمل Xtreme HD IPTV مع تجربة مجانية.',
   'learn_more' => 'تعرف على المزيد حول خطط IPTV',
 
   'testimonials_title' => 'آراء العملاء - أفضل تجربة IPTV',
   'testimonials_heading' => 'آراء مستخدمي IPTV من جميع أنحاء أوروبا',
-  'testimonial_1' => 'هذا أفضل IPTV استخدمته — أكثر من 12,000 قناة، بدون تقطيع، وجودة HD واضحة عبر Xtreme HD IPTV.',
+  'testimonial_1' => 'هذا أفضل IPTV استخدمته — آلاف القنوات، بدون تقطيع، وجودة HD واضحة عبر Xtreme HD IPTV.',
   'testimonial_2' => 'أستخدم Aroma IPTV على التلفاز الذكي والجودة مذهلة. أفضل بديل لصندوق IPTV مع وصول عالمي.',
   'testimonial_3' => 'انتقلت من الكابل إلى Opplex IPTV — جعل Xtreme HD IPTV والمشغل الذكي كل شيء أسهل وأفضل.',
   'testimonial_4' => 'لا يوجد تقطيع على مشغل IPTV الذكي، دعم رائع، ويعمل بسلاسة حتى على Firestick — يستحق تمامًا!',
-  'testimonial_5' => 'خدمة IPTV عالية الجودة مع Netflix، Prime، وأكثر من 50,000 فيديو عند الطلب. يعمل بشكل مثالي على صندوق IPTV وأندرويد.',
+  'testimonial_5' => 'خدمة IPTV عالية الجودة مع Netflix، Prime، ومكتبة كبيرة من الفيديو عند الطلب. يعمل بشكل مثالي على صندوق IPTV وأندرويد.',
   'testimonial_7' => 'التجربة المجانية الميسورة لـ IPTV سمحت لي بمشاهدة برامجي المفضلة الإيطالية والفرنسية عبر Aroma IPTV.',
-  'testimonial_8' => 'هذا الاشتراك في IPTV يحتوي على أكثر من 12,000 قناة، يعمل على مشغل IPTV الذكي، ومستقر جدًا في المملكة المتحدة.',
+  'testimonial_8' => 'هذا الاشتراك في IPTV يحتوي على آلاف القنوات، يعمل على مشغل IPTV الذكي، ومستقر جدًا في المملكة المتحدة.',
   'testimonial_9' => 'أشغل Xtreme HD IPTV على الهاتف المحمول و Firestick — بث سلس ودعم فوري.',
   'testimonial_10' => 'أفضل IPTV في إيطاليا! سهل الإعداد، يتضمن تجربة مجانية، و IPTV بدقة 4K يعمل بشكل رائع على تلفزيون أندرويد.',
 
-  'trial_title' => 'جرب IPTV مجانًا مع بث 4K وأكثر من 12,000 قناة!',
+  'trial_title' => 'جرب IPTV مجانًا مع بث 4K وآلاف القنوات!',
   'trial_button' => 'ابدأ التجربة المجانية الآن',
 
   'header_whatsapp' => 'واتساب: :phone',
@@ -107,7 +107,7 @@ return [
   'few_reasons' => 'لماذا تختار Opplex - أفضل IPTV مع 4K، مشغل ذكي وتجربة مجانية',
 
   'feature_hd' => 'أفضل IPTV مع بث مباشر HD و 4K',
-  'feature_hd_desc' => 'استمتع ببث Xtreme HD IPTV بدون تقطيع مع أكثر من 12,000 قناة مباشرة، أفلام هوليوود/بوليوود — يعمل على التلفزيونات الذكية، فايرستيك، وأجهزة IPTV.',
+  'feature_hd_desc' => 'استمتع ببث Xtreme HD IPTV بدون تقطيع مع آلاف القنوات المباشرة، أفلام هوليوود/بوليوود — يعمل على التلفزيونات الذكية، فايرستيك، وأجهزة IPTV.',
 
   'feature_flexible' => 'اشتراك IPTV مرن مع تجربة مجانية',
   'feature_flexible_desc' => 'اختر بين الخطط الشهرية، السنوية، أو الموزعين. جميع الباقات تشمل مشغل IPTV الذكي، Aroma IPTV، وتجربة مجانية.',
@@ -125,7 +125,7 @@ return [
   'feature_support_desc' => 'احصل على مساعدة سريعة من فريق دعم IPTV في إعداد المشغل الذكي، تفعيل التجربة، مشاكل الصندوق، وأخطاء البث.',
 
   'feature_sports_movies' => 'أفلام بوليوود وأكثر',
-  'feature_sports_movies_desc' => 'شاهد بث IPTV مباشر بدقة 4K لأكثر من 50,000 فيلم عبر Xtreme HD IPTV، المشغلات الذكية، وأنظمة IPTV مع تجربة مجانية.',
+  'feature_sports_movies_desc' => 'شاهد بث IPTV مباشر بدقة 4K لآلاف الأفلام عبر Xtreme HD IPTV، المشغلات الذكية، وأنظمة IPTV مع تجربة مجانية.',
 
   'reseller_starter' => 'موزع IPTV مبتدئ - مشغل ذكي وتجربة مجانية',
   'reseller_essential' => 'موزع IPTV أساسي - Aroma IPTV، Xtreme HD IPTV، بدون انتهاء صلاحية',
@@ -222,7 +222,7 @@ return [
 
   // Questions & Answers
   'faq.q1' => 'ما هو Opplex IPTV؟',
-  'faq.a1' => 'OPPLEXTV هي خدمة IPTV تحتوي على أكثر من <strong>12,000 قناة مباشرة، 50000+ فيلم، 5000+ أحدث المسلسلات</strong>. مع عدة خيارات VOD. تكلفة الخطة القياسية لـ OPPLEXTV IPTV هي <span style="text-decoration: line-through; color: #999;">$31.99/شهريًا</span> <span style="color: #000000ff; font-weight:bold;">$2.99/شهريًا</span> وتشمل القنوات الدولية، PPV، الترفيه، الأخبار وغيرها. يمكن تثبيت OPPLEXTV IPTV على أجهزة Android / iOS المتوافقة، بما في ذلك Amazon Firestick وFire TV وFire TV Cube وNVIDIA Shield والمزيد. OPPLEX IPTV هو أفضل سيرفر IPTV في كندا.',
+  'faq.a1' => 'OPPLEXTV هي خدمة IPTV تحتوي على <strong>آلاف القنوات المباشرة والأفلام وأحدث المسلسلات</strong>. مع عدة خيارات VOD. تكلفة الخطة القياسية لـ OPPLEXTV IPTV هي <span style="text-decoration: line-through; color: #999;">$31.99/شهريًا</span> <span style="color: #000000ff; font-weight:bold;">$2.99/شهريًا</span> وتشمل القنوات الدولية، PPV، الترفيه، الأخبار وغيرها. يمكن تثبيت OPPLEXTV IPTV على أجهزة Android / iOS المتوافقة، بما في ذلك Amazon Firestick وFire TV وFire TV Cube وNVIDIA Shield والمزيد. OPPLEX IPTV هو أفضل سيرفر IPTV في كندا.',
 
   'faq.q2' => 'كيف يبدو IPTV؟',
   'faq.a2' => 'إليك بعض لقطات الشاشة لتطبيق IPTV على أجهزة مختلفة.',
@@ -302,7 +302,7 @@ return [
   'app.iptv_smarters_windows' => 'IPTV Smarters Pro لـ Windows - مشغل IPTV الذكي',
 
   // Movies Page
-  'title' => 'الأفلام | Opplex IPTV - شاهد +50,000 فيلم مع المشغل الذكي و IPTV Box',
+  'title' => 'الأفلام | Opplex IPTV - شاهد آلاف الأفلام مع المشغل الذكي و IPTV Box',
   'all' => 'الكل',
   'movies' => 'الأفلام - بوليوود، هوليوود والمزيد',
   'series' => 'المسلسلات - نتفلكس، برايم و عروض IPTV',
@@ -359,7 +359,7 @@ return [
     'secondary_cta' => 'ابدأ تجربة مجانية',
     'benefits' => [
       ['icon' => 'flaticon-8k', 'title' => 'بث HD و 4K', 'description' => 'شاهد محتوى IPTV مميز بجودة HD و 4K على الشاشات المتوافقة.'],
-      ['icon' => 'flaticon-5g', 'title' => 'اكثر من 12K قناة مباشرة', 'description' => 'تابع الاخبار والترفيه والقنوات العالمية من خطة IPTV واحدة.'],
+      ['icon' => 'flaticon-5g', 'title' => 'آلاف القنوات المباشرة', 'description' => 'تابع الاخبار والترفيه والقنوات العالمية من خطة IPTV واحدة.'],
       ['icon' => 'flaticon-swimming-pool', 'title' => 'افلام ومسلسلات', 'description' => 'استمتع بمكتبة VOD كبيرة تضم افلاما ومسلسلات ومحتوى عائليا.'],
       ['icon' => 'flaticon-customer-service', 'title' => 'دعم اعداد سريع', 'description' => 'احصل على مساعدة لاجهزة Smart TV و Firestick و Android و iOS و MAG ومشغلات IPTV.'],
     ],
@@ -428,7 +428,7 @@ return [
     [
       'icon' => 'flaticon-8k',
       'title' => 'خدمة IPTV موثوقة في جميع أنحاء أوروبا',
-      'description' => 'شاهد أكثر من 12,000 قناة مع توافر 99.9٪ وبدون تقطيع. مثالية لأجهزة التلفاز الذكية و Firestick وأجهزة Android.',
+      'description' => 'شاهد آلاف القنوات مع توافر 99.9٪ وبدون تقطيع. مثالية لأجهزة التلفاز الذكية و Firestick وأجهزة Android.',
     ],
     [
       'icon' => 'flaticon-customer-service',
@@ -648,7 +648,7 @@ return [
   'home_trial_eyebrow' => 'وصول فوري',
   'home_trial_text' => 'شاهد بدقة 4K واختبر استقرار القنوات وجرّب أداء IPTV المميز قبل الاشتراك.',
   'home_trial_chip_streaming' => 'بث 4K',
-  'home_trial_chip_channels' => '+12 ألف قناة',
+  'home_trial_chip_channels' => 'آلاف القنوات',
   'home_trial_chip_activation' => 'تفعيل سريع',
   'home_trial_action_label' => 'تجربة واتساب',
   'home_products_digital_title' => 'المنتجات الرقمية',
@@ -676,7 +676,7 @@ return [
     'section_title' => 'الأسئلة الشائعة',
     'home' => [
       'q1' => 'ما هي Opplex IPTV؟',
-      'a1' => 'Opplex IPTV هي خدمة بث مميزة توفر لك أكثر من 12,000 قناة تلفزيونية مباشرة و50,000 فيلم و5,000 مسلسل تلفزيوني في تطبيق واحد، من دون جهاز كابل أو عقد.',
+      'a1' => 'Opplex IPTV هي خدمة بث مميزة توفر لك آلاف القنوات التلفزيونية المباشرة والأفلام والمسلسلات التلفزيونية في تطبيق واحد، من دون جهاز كابل أو عقد.',
       'q2' => 'هل يمكنني تجربة Opplex IPTV قبل الشراء؟',
       'a2' => 'نعم. نقدم تجربة منخفضة التكلفة لتتمكن من اختبار جودة القنوات واستقرارها على جهازك قبل اختيار اشتراك كامل.',
       'q3' => 'ما الأجهزة التي يمكنني المشاهدة عليها؟',
@@ -776,7 +776,7 @@ return [
     ],
     'movies' => [
       'q1' => 'كم عدد الأفلام والمسلسلات المتاحة؟',
-      'a1' => 'تتضمن Opplex IPTV أكثر من 50,000 فيلم و5,000 مسلسل تلفزيوني حسب الطلب، من أحدث الإصدارات إلى الأعمال الكلاسيكية الخالدة.',
+      'a1' => 'تتضمن Opplex IPTV آلاف الأفلام والمسلسلات التلفزيونية حسب الطلب، من أحدث الإصدارات إلى الأعمال الكلاسيكية الخالدة.',
       'q2' => 'هل المحتوى متاح بجودة 4K أو HD؟',
       'a2' => 'تُبث عناوين كثيرة بجودة Full HD و4K عندما يدعم المصدر ذلك، لتحصل على أفضل صورة يسمح بها جهازك واتصالك.',
       'q3' => 'كم مرة تتم إضافة محتوى جديد؟',
