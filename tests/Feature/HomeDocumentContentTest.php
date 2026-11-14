@@ -36,7 +36,9 @@ class HomeDocumentContentTest extends TestCase
 
         $response->assertOk();
         $response->assertSeeText('Best IPTV Subscription Service Provider | Live TV & 4K Streaming');
-        $response->assertSeeText('Watch What You Want, When You Want');
+        $document = new \DOMDocument();
+        $document->loadHTML($response->getContent(), LIBXML_NOERROR | LIBXML_NOWARNING);
+        $this->assertSame('Watch What You Want, When You Want', (new \DOMXPath($document))->evaluate('normalize-space(//h2[@id="home-split-heading"])'));
         $response->assertSeeText('Smart IPTV Plans. No Hidden Fees. Enjoy 4K Streaming & Free Trial');
         $response->assertSeeText('Everything You Need from an IPTV Service');
         $response->assertSeeText('Check Your Device and Player Before Choosing');
@@ -51,7 +53,7 @@ class HomeDocumentContentTest extends TestCase
 
         $this->assertStringContainsString('href="'.asset('css/home-document.css'), $html);
         $this->assertStringNotContainsString('id="home-document-styles"', $html);
-        $this->assertStringContainsString('.home-document-devices', $html);
+        $this->assertStringContainsString('class="home-document-devices"', $html);
         foreach ([
             'movie-night-tv-480.webp',
             'movie-night-tv-720.webp',
@@ -98,6 +100,7 @@ class HomeDocumentContentTest extends TestCase
         $html = view('pages.home', [
             'homeProducts' => collect(),
             'homeAffiliateProducts' => collect(),
+            'packages' => [],
             'isRtl' => false,
         ])->render();
         $homeSplitImage = $this->homeSplitImageTag($html);
