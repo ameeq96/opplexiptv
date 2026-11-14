@@ -4,6 +4,24 @@
 @endphp
 @section('title', $usesDocumentLayout ? __('document_commerce.packages.page_title') : __('messages.title'))
 
+@push('schema')
+    {!! jsonld(seo()->service(
+        __('document_commerce.packages.hero.heading'),
+        null,
+        route('packages'),
+        collect($packages ?? [])
+            ->filter(static fn ($package) => data_get($package, 'price_amount') !== null
+                && (bool) data_get($package, 'is_available', false))
+            ->map(static fn ($package) => [
+                'name' => (string) data_get($package, 'title', ''),
+                'price' => (float) data_get($package, 'price_amount'),
+                'category' => 'IPTV subscription',
+            ])
+            ->values()
+            ->all(),
+    )) !!}
+@endpush
+
 @if ($usesDocumentLayout)
     @push('styles')
         <link rel="stylesheet" href="{{ asset('css/document-commerce.css') }}?v={{ @filemtime(public_path('css/document-commerce.css')) ?: 1 }}">

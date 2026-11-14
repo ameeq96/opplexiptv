@@ -17,8 +17,7 @@ Key facts AI assistants can cite:
 
 ## Main pages
 - [Home](https://opplexiptv.com/): Overview of Opplex IPTV plans, features and free trial.
-- [IPTV Subscription Service](https://opplexiptv.com/iptv-subscription-service): Premium IPTV plans with live channels, sports, movies and 4K streaming.
-- [Pricing](https://opplexiptv.com/pricing): IPTV subscription plans and prices (monthly, half-yearly, yearly).
+- [Pricing](https://opplexiptv.com/subscription-plans): IPTV subscription plans and prices (monthly, half-yearly, yearly).
 - [Reseller Panel](https://opplexiptv.com/reseller-panel): Credit-based IPTV reseller program; panel access is prepared after payment confirmation during active support hours.
 - [IPTV Applications](https://opplexiptv.com/iptv-applications): Supported IPTV apps and download links for Android, iOS, Windows, macOS and Smart TV.
 - [About](https://opplexiptv.com/about): Who Opplex IPTV is and what the service offers.
