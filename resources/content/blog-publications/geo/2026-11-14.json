@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-14",
+  "topic": "Distinguish Apple TV 4K navigation animation from actual programme interruptions during Geo IPTV viewing while preserving useful accessibility preferences",
+  "primary_keyword": "Geo IPTV menu motion",
+  "slug": "geo-menu-motion-navigation-not-playback-interruption",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV menu motion: check navigation before playback",
+      "excerpt": "Moving posters or icons and an interrupted programme need different checks. Identify where motion occurs before changing a comfortable Apple TV 4K preference.",
+      "seo_title": "Geo IPTV menu motion: check navigation before playback",
+      "seo_description": "Separate Apple TV 4K navigation animations from programme interruptions during Geo IPTV viewing, preserve useful accessibility choices and prepare a precise support note.",
+      "sections": [
+        {
+          "heading": "Locate the movement",
+          "paragraphs": [
+            "A Geo IPTV menu motion check starts by naming what moves. Watch whether an app icon or poster shifts while you move the highlighted selection, or whether the programme itself pauses after playback begins. These observations describe different parts of the viewing experience. Note which screen is open and what remote action happened immediately beforehand. A moving menu item by itself does not show a network failure, an expired plan or a problem affecting every viewer."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the navigation preference",
+          "paragraphs": [
+            "Apple documents Reduce Motion under Settings, Accessibility, Motion on Apple TV 4K for limiting movement during navigation. Read the current preference before deciding whether the owner wants a calmer interface. If the menu differs, consult the guide for that device and software version rather than copying instructions for the Apple TV app on another television. Preserve an existing accessibility choice that helps someone use the device; this is not a reason to reset the player."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reduce navigation motion on Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep playback evidence separate",
+          "paragraphs": [
+            "If you make an owner-approved comfort adjustment, compare the same menu movement and keep the preferred result. Evaluate any actual playback interruption separately: note whether the picture stops, the sound continues or an error appears inside the player. Leave video-output, network and provider-login settings unchanged during the menu comparison. For support, describe the Apple TV model, the screen and the observed symptom, hiding private playback addresses. A navigation preference does not establish programme availability or change subscription terms."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV: comprueba el movimiento del menú antes de reproducir",
+      "excerpt": "Los pósteres o iconos que se mueven y un programa interrumpido requieren comprobaciones distintas. Localiza el movimiento antes de cambiar una preferencia cómoda de Apple TV 4K.",
+      "seo_title": "Geo IPTV: comprueba el movimiento del menú antes de reproducir",
+      "seo_description": "Distingue las animaciones de navegación de Apple TV 4K de las interrupciones al ver Geo IPTV, conserva la accesibilidad útil y prepara una consulta concreta.",
+      "sections": [
+        {
+          "heading": "Localiza el movimiento",
+          "paragraphs": [
+            "Para revisar el movimiento del menú al usar Geo IPTV, identifica primero qué se mueve. Observa si un icono o póster se desplaza al cambiar la selección resaltada o si el programa se detiene después de empezar. Son partes distintas de la experiencia. Anota la pantalla abierta y la acción inmediatamente anterior del mando. Un elemento de menú en movimiento no demuestra por sí solo un fallo de red, un plan caducado o un problema para todos los usuarios."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la preferencia de navegación",
+          "paragraphs": [
+            "Apple documenta Reducir movimiento en Ajustes, Accesibilidad, Movimiento de Apple TV 4K para limitar el movimiento al navegar. Lee la preferencia actual antes de decidir si el propietario quiere una interfaz más tranquila. Si el menú es distinto, consulta la guía del dispositivo y su versión de software en lugar de copiar instrucciones de la app Apple TV en otro televisor. Conserva cualquier opción de accesibilidad que ayude a alguien; esto no justifica restablecer el reproductor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reducir el movimiento de navegación en Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Separa las pruebas de reproducción",
+          "paragraphs": [
+            "Si haces un ajuste de comodidad autorizado por el propietario, compara el mismo movimiento del menú y conserva el resultado preferido. Evalúa aparte cualquier interrupción real: indica si la imagen se para, el sonido continúa o aparece un error en el reproductor. Durante la comparación no cambies la salida de vídeo, la red ni el acceso al proveedor. Para soporte, describe el modelo, la pantalla y el síntoma y oculta direcciones privadas. Esta preferencia no confirma programas disponibles ni cambia las condiciones de la suscripción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV : distinguer animation du menu et lecture vidéo",
+      "excerpt": "Des affiches ou icônes animées et un programme interrompu demandent des vérifications distinctes. Localisez le mouvement avant de modifier une préférence Apple TV 4K utile.",
+      "seo_title": "Geo IPTV : distinguer animation du menu et lecture vidéo",
+      "seo_description": "Distinguez les animations de navigation Apple TV 4K des interruptions avec Geo IPTV, préservez les réglages d’accessibilité utiles et décrivez précisément le symptôme.",
+      "sections": [
+        {
+          "heading": "Localiser le mouvement",
+          "paragraphs": [
+            "Pour examiner les mouvements du menu avec Geo IPTV, identifiez d’abord l’élément concerné. Une icône ou une affiche bouge-t-elle lorsque la sélection change, ou le programme s’arrête-t-il après le début de la lecture ? Ces observations concernent des parties différentes de l’expérience. Notez l’écran ouvert et l’action précédente sur la télécommande. Un élément de menu animé ne prouve pas une panne réseau, un abonnement expiré ou un incident touchant tous les utilisateurs."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la préférence de navigation",
+          "paragraphs": [
+            "Apple décrit Réduire les animations dans Réglages, Accessibilité, Animation sur Apple TV 4K pour limiter les mouvements de navigation. Lisez la préférence actuelle avant de décider si le propriétaire souhaite une interface plus calme. Si le menu diffère, consultez le guide du matériel et de sa version logicielle plutôt que celui de l’app Apple TV d’un autre téléviseur. Conservez tout réglage d’accessibilité utile à une personne ; il n’y a pas lieu de réinitialiser le lecteur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple : réduire les animations de navigation sur Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer les observations de lecture",
+          "paragraphs": [
+            "Après un ajustement de confort autorisé, comparez le même mouvement du menu et gardez le résultat préféré. Examinez séparément une vraie interruption : image arrêtée, son qui continue ou message dans le lecteur. Ne modifiez ni sortie vidéo, ni réseau, ni identifiants fournisseur pendant cette comparaison. Pour l’assistance, précisez le modèle Apple TV, l’écran et le symptôme en masquant les adresses privées de lecture. Une préférence de navigation ne confirme pas la disponibilité des programmes et ne modifie pas l’abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV: distingui il movimento dei menu dalla riproduzione",
+      "excerpt": "Poster o icone in movimento e un programma interrotto richiedono verifiche diverse. Individua la schermata prima di cambiare una preferenza utile su Apple TV 4K.",
+      "seo_title": "Geo IPTV: distingui il movimento dei menu dalla riproduzione",
+      "seo_description": "Distingui le animazioni dei menu Apple TV 4K dalle interruzioni con Geo IPTV, conserva le impostazioni di accessibilità utili e prepara una richiesta precisa.",
+      "sections": [
+        {
+          "heading": "Individua ciò che si muove",
+          "paragraphs": [
+            "Per controllare il movimento dei menu con Geo IPTV, identifica prima cosa si muove. Un’icona o un poster si sposta quando cambi l’elemento evidenziato, oppure il programma si ferma dopo l’avvio? Sono aspetti diversi dell’esperienza. Annota la schermata aperta e l’azione appena eseguita sul telecomando. Il movimento di una voce del menu, da solo, non dimostra un guasto di rete, un piano scaduto o un problema che coinvolge tutti gli utenti."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la preferenza di navigazione",
+          "paragraphs": [
+            "Apple documenta Riduci movimento in Impostazioni, Accessibilità, Movimento su Apple TV 4K per limitare i movimenti durante la navigazione. Leggi la preferenza attuale prima di decidere se il proprietario desidera un’interfaccia più tranquilla. Se il menu differisce, consulta la guida del dispositivo e della versione software, invece delle istruzioni dell’app Apple TV su un altro televisore. Mantieni le scelte di accessibilità utili a qualcuno; non serve ripristinare il lettore per questa verifica."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: ridurre il movimento durante la navigazione su Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Separa i sintomi della riproduzione",
+          "paragraphs": [
+            "Dopo un cambiamento di comfort autorizzato, confronta lo stesso movimento del menu e conserva il risultato preferito. Valuta separatamente un’interruzione reale: immagine ferma, audio che prosegue o errore nel lettore. Durante il confronto non modificare uscita video, rete o accesso al fornitore. Per l’assistenza indica modello Apple TV, schermata e sintomo, nascondendo gli indirizzi privati di riproduzione. Una preferenza di navigazione non conferma la disponibilità dei programmi e non modifica le condizioni dell’abbonamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV: onderscheid menubeweging van videoweergave",
+      "excerpt": "Bewegende posters of pictogrammen en een onderbroken programma vragen om verschillende controles. Bepaal waar de beweging zit voordat je een nuttige Apple TV 4K-voorkeur wijzigt.",
+      "seo_title": "Geo IPTV: onderscheid menubeweging van videoweergave",
+      "seo_description": "Onderscheid navigatieanimaties op Apple TV 4K van onderbrekingen bij Geo IPTV, behoud nuttige toegankelijkheidskeuzes en beschrijf een duidelijk ondersteuningsprobleem.",
+      "sections": [
+        {
+          "heading": "Bepaal wat er beweegt",
+          "paragraphs": [
+            "Een controle van menubeweging bij Geo IPTV begint met benoemen wat beweegt. Verschuift een pictogram of poster wanneer je de gemarkeerde selectie verplaatst, of stopt het programma nadat het afspelen begint? Dit zijn verschillende onderdelen van de kijkervaring. Noteer het geopende scherm en de direct voorafgaande handeling met de afstandsbediening. Een bewegend menuonderdeel bewijst op zichzelf geen netwerkstoring, verlopen abonnement of probleem dat alle kijkers treft."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de navigatievoorkeur",
+          "paragraphs": [
+            "Apple beschrijft Verminder beweging onder Instellingen, Toegankelijkheid, Beweging op Apple TV 4K om beweging tijdens navigatie te beperken. Lees eerst de huidige voorkeur en bepaal met de eigenaar of een rustiger interface gewenst is. Wijkt het menu af, raadpleeg dan de handleiding voor dat apparaat en die softwareversie, niet de instructies van de Apple TV-app op een andere televisie. Behoud een toegankelijkheidskeuze die iemand helpt; de speler hoeft hiervoor niet opnieuw te worden ingesteld."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: navigatiebeweging op Apple TV 4K verminderen",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Beoordeel afspeelproblemen apart",
+          "paragraphs": [
+            "Vergelijk na een door de eigenaar goedgekeurde comfortaanpassing dezelfde menubeweging en bewaar de gewenste instelling. Beoordeel een echte afspeelonderbreking afzonderlijk: stopt het beeld, loopt geluid door of verschijnt een foutmelding in de speler? Laat video-uitvoer, netwerk en providerinlog tijdens deze vergelijking ongemoeid. Geef ondersteuning het Apple TV-model, scherm en symptoom, zonder privé-afspeeladressen. Een navigatievoorkeur zegt niets over beschikbare programma’s en verandert geen abonnementsvoorwaarden."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV: distingue o movimento dos menus da reprodução",
+      "excerpt": "Cartazes ou ícones em movimento e um programa interrompido exigem verificações diferentes. Identifica o ecrã antes de alterar uma preferência útil da Apple TV 4K.",
+      "seo_title": "Geo IPTV: distingue o movimento dos menus da reprodução",
+      "seo_description": "Distingue as animações de navegação da Apple TV 4K de interrupções com Geo IPTV, mantém opções úteis de acessibilidade e prepara um pedido de apoio preciso.",
+      "sections": [
+        {
+          "heading": "Identifica o que se move",
+          "paragraphs": [
+            "Uma verificação do movimento dos menus com Geo IPTV começa por identificar o que se move. Um ícone ou cartaz desloca-se quando mudas a seleção destacada, ou o programa pára depois de começar? São partes diferentes da experiência. Anota o ecrã aberto e a ação imediatamente anterior no comando. O movimento de um elemento do menu, por si só, não demonstra falha de rede, plano expirado ou um problema que afete todos os espectadores."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lê a preferência de navegação",
+          "paragraphs": [
+            "A Apple documenta Reduzir movimento em Definições, Acessibilidade, Movimento na Apple TV 4K para limitar o movimento durante a navegação. Lê primeiro a preferência atual e confirma se o proprietário quer uma interface mais tranquila. Se o menu diferir, consulta o guia desse equipamento e da versão de software, em vez das instruções da aplicação Apple TV noutro televisor. Preserva qualquer opção de acessibilidade que ajude alguém; esta verificação não exige repor o leitor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: reduzir o movimento de navegação na Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Separa os sinais da reprodução",
+          "paragraphs": [
+            "Após um ajuste de conforto autorizado, compara o mesmo movimento do menu e mantém o resultado preferido. Avalia separadamente uma interrupção real: imagem parada, som que continua ou erro no leitor. Durante a comparação, não alteres a saída de vídeo, a rede nem o acesso ao fornecedor. Para apoio, descreve modelo Apple TV, ecrã e sintoma, ocultando endereços privados de reprodução. Uma preferência de navegação não confirma programas disponíveis nem muda as condições da assinatura."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV: отличайте движение меню от остановок видео",
+      "excerpt": "Движущиеся постеры и значки и прерывающаяся передача требуют разных проверок. Определите экран, прежде чем менять удобную настройку Apple TV 4K.",
+      "seo_title": "Geo IPTV: отличайте движение меню от остановок видео",
+      "seo_description": "Отличайте анимацию навигации Apple TV 4K от прерываний Geo IPTV, сохраняйте полезные настройки доступности и готовьте точное описание для поддержки.",
+      "sections": [
+        {
+          "heading": "Определите, что движется",
+          "paragraphs": [
+            "Проверку движения меню при просмотре Geo IPTV начните с определения объекта. Значок или постер смещается при переходе выделения, или сама передача останавливается после начала просмотра? Это разные части работы устройства. Запишите открытый экран и предыдущее действие пультом. Само движение элемента меню не доказывает неисправность сети, окончание подписки или проблему у всех зрителей. Не объединяйте эти наблюдения в одно предположение о состоянии услуги."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте настройку навигации",
+          "paragraphs": [
+            "Apple описывает уменьшение движения в разделе «Настройки», «Универсальный доступ», «Движение» на Apple TV 4K как ограничение движения при навигации. Сначала прочитайте текущую настройку и выясните, хочет ли владелец более спокойный интерфейс. Если меню отличается, используйте руководство именно для устройства и версии ПО, а не для приложения Apple TV на другом телевизоре. Сохраняйте полезную человеку настройку доступности; сбрасывать проигрыватель ради этой проверки не нужно."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: уменьшение движения при навигации на Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Отдельно оцените воспроизведение",
+          "paragraphs": [
+            "После согласованного с владельцем изменения сравните то же движение меню и оставьте удобный вариант. Реальную остановку просмотра опишите отдельно: замирает ли изображение, продолжается ли звук, появляется ли ошибка в проигрывателе. Во время сравнения не меняйте видеовыход, сеть и данные входа провайдера. Сообщите поддержке модель Apple TV, экран и симптом, скрыв частные адреса воспроизведения. Настройка навигации не подтверждает доступность передач и не меняет условия подписки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کے مینو کی حرکت کو ویڈیو کی رکاوٹ سے الگ دیکھیں",
+      "excerpt": "حرکت کرتے پوسٹر یا آئیکن اور رکتا ہوا پروگرام الگ جانچ چاہتے ہیں۔ Apple TV 4K کی مفید ترجیح بدلنے سے پہلے دیکھیں حرکت کس اسکرین پر ہے۔",
+      "seo_title": "Geo IPTV کے مینو کی حرکت کو ویڈیو کی رکاوٹ سے الگ دیکھیں",
+      "seo_description": "Geo IPTV دیکھتے وقت Apple TV 4K کے مینو کی حرکت اور پروگرام کی رکاوٹ میں فرق کریں، مفید سہولت برقرار رکھیں اور مدد کے لیے واضح مشاہدہ لکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کیا حرکت کرتا ہے",
+          "paragraphs": [
+            "Geo IPTV کے مینو کی حرکت جانچتے وقت پہلے بتائیں کہ حرکت کس چیز میں ہے۔ کیا نمایاں انتخاب بدلنے پر ایپ کا آئیکن یا پوسٹر سرکتا ہے، یا پلے بیک شروع ہونے کے بعد خود پروگرام رک جاتا ہے؟ یہ دیکھنے کے تجربے کے الگ حصے ہیں۔ کھلی اسکرین اور اس سے فوراً پہلے ریموٹ پر کیا گیا عمل نوٹ کریں۔ صرف مینو کے کسی حصے کی حرکت سے نیٹ ورک کی خرابی، پلان کی میعاد ختم ہونا یا تمام ناظرین کا مسئلہ ثابت نہیں ہوتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مینو کی موجودہ ترجیح پڑھیں",
+          "paragraphs": [
+            "Apple نے Apple TV 4K کی ترتیبات میں رسائی کی سہولت، پھر حرکت کے تحت حرکت کم کرنے کی ترجیح بتائی ہے، جو مینو میں آمدورفت کی حرکت محدود کرتی ہے۔ پہلے موجودہ ترجیح پڑھیں اور مالک سے طے کریں کہ زیادہ پرسکون انٹرفیس چاہیے یا نہیں۔ مینو مختلف ہو تو اسی آلے اور سافٹ ویئر کا رہنما دیکھیں، کسی دوسرے ٹی وی کی Apple TV ایپ کی ہدایات نقل نہ کریں۔ کسی کی مدد کرنے والی رسائی کی ترجیح برقرار رکھیں؛ اس جانچ کے لیے پلیئر ری سیٹ کرنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K کے مینو میں حرکت کم کرنا",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "ویڈیو کے مشاہدات الگ رکھیں",
+          "paragraphs": [
+            "مالک کی اجازت سے سہولت کی ترجیح بدلیں تو مینو کی وہی حرکت دوبارہ دیکھ کر پسندیدہ نتیجہ رکھیں۔ اصل ویڈیو کی رکاوٹ الگ جانچیں: تصویر رکتی ہے، آواز چلتی رہتی ہے یا پلیئر کے اندر خطا آتی ہے؟ اس تقابل کے دوران ویڈیو آؤٹ پٹ، نیٹ ورک اور فراہم کنندہ کی محفوظ لاگ ان ترتیبات نہ بدلیں۔ مدد کے لیے Apple TV کا ماڈل، اسکرین اور علامت بتائیں، نجی پلے بیک پتے چھپا دیں۔ مینو کی ترجیح پروگرام کی دستیابی ثابت نہیں کرتی اور نہ سبسکرپشن کی شرائط بدلتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV: ميّز حركة القوائم عن انقطاع الفيديو",
+      "excerpt": "تحرك الملصقات والأيقونات وانقطاع البرنامج يحتاجان إلى فحصين مختلفين. حدّد موضع الحركة قبل تغيير تفضيل مريح على Apple TV 4K.",
+      "seo_title": "Geo IPTV: ميّز حركة القوائم عن انقطاع الفيديو",
+      "seo_description": "ميّز رسوم التنقل في Apple TV 4K عن انقطاع مشاهدة Geo IPTV، واحتفظ بخيارات تسهيلات الاستخدام المفيدة وأعد وصفاً دقيقاً للدعم.",
+      "sections": [
+        {
+          "heading": "حدّد العنصر المتحرك",
+          "paragraphs": [
+            "ابدأ فحص حركة قوائم Geo IPTV بتحديد ما يتحرك. هل تتحرك أيقونة تطبيق أو ملصق عند نقل التحديد، أم يتوقف البرنامج نفسه بعد بدء تشغيله؟ تتعلق هذه الملاحظات بأجزاء مختلفة من تجربة المشاهدة. دوّن الشاشة المفتوحة وإجراء جهاز التحكم الذي سبق الحركة مباشرة. تحرك عنصر في القائمة وحده لا يثبت تعطل الشبكة أو انتهاء الخطة أو وجود مشكلة لدى جميع المشاهدين، لذلك صف كل ملاحظة بصورة منفصلة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ تفضيل التنقل",
+          "paragraphs": [
+            "توضح Apple خيار تقليل الحركة ضمن الإعدادات ثم تسهيلات الاستخدام ثم الحركة على Apple TV 4K للحد من الحركة أثناء التنقل. اقرأ التفضيل الحالي أولاً وحدد مع المالك إن كان يريد واجهة أكثر هدوءاً. إذا اختلفت القائمة، راجع دليل الجهاز وإصدار نظامه بدلاً من نسخ تعليمات تطبيق Apple TV على تلفاز آخر. حافظ على أي تفضيل لتسهيلات الاستخدام يساعد شخصاً على تشغيل الجهاز؛ لا يستدعي هذا الفحص إعادة ضبط المشغّل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: تقليل حركة التنقل على Apple TV 4K",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "افصل أدلة تشغيل الفيديو",
+          "paragraphs": [
+            "بعد تعديل الراحة بموافقة المالك، قارن حركة القائمة نفسها واحتفظ بالنتيجة المفضلة. افحص الانقطاع الفعلي بصورة مستقلة: هل تتوقف الصورة أو يستمر الصوت أو تظهر رسالة داخل المشغّل؟ اترك إعدادات خرج الفيديو والشبكة ودخول المزوّد كما هي أثناء المقارنة. أخبر الدعم بطراز Apple TV والشاشة والعرض الملحوظ، مع إخفاء عناوين التشغيل الخاصة. تفضيل التنقل لا يؤكد توفر البرامج ولا يغيّر شروط الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV: मेनू की हलचल और वीडियो रुकने में फर्क करें",
+      "excerpt": "हिलते पोस्टर या आइकन और रुकते कार्यक्रम की जाँच अलग होती है। Apple TV 4K की उपयोगी पसंद बदलने से पहले पहचानें कि हलचल किस स्क्रीन पर है।",
+      "seo_title": "Geo IPTV: मेनू की हलचल और वीडियो रुकने में फर्क करें",
+      "seo_description": "Geo IPTV देखते समय Apple TV 4K के मेनू एनीमेशन और वीडियो रुकने में अंतर करें, उपयोगी सुलभता विकल्प बचाएँ और सहायता के लिए साफ विवरण दें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि क्या हिल रहा है",
+          "paragraphs": [
+            "Geo IPTV के मेनू की हलचल जाँचते समय पहले पहचानें कि क्या हिल रहा है। चुना हुआ आइटम बदलने पर ऐप का आइकन या पोस्टर खिसकता है, या चलना शुरू होने के बाद कार्यक्रम खुद रुकता है? ये देखने के अनुभव के अलग हिस्से हैं। खुली स्क्रीन और उससे ठीक पहले रिमोट से की गई कार्रवाई लिखें। सिर्फ मेनू का कोई हिस्सा हिलने से नेटवर्क की खराबी, प्लान की समाप्ति या सभी दर्शकों की समस्या साबित नहीं होती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "नेविगेशन की मौजूदा पसंद पढ़ें",
+          "paragraphs": [
+            "Apple ने Apple TV 4K में सेटिंग्ज़, सुलभता, मोशन के भीतर हलचल कम करने वाला विकल्प बताया है, जो नेविगेशन के दौरान गति सीमित करता है। पहले मौजूदा पसंद पढ़ें और मालिक के साथ तय करें कि शांत इंटरफ़ेस चाहिए या नहीं। मेनू अलग हो तो उसी उपकरण और सॉफ़्टवेयर संस्करण का मार्गदर्शक देखें, किसी दूसरे टीवी के Apple TV ऐप के निर्देश न अपनाएँ। किसी व्यक्ति की मदद करने वाला सुलभता विकल्प बनाए रखें; इस जाँच के लिए प्लेयर रीसेट करना आवश्यक नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple: Apple TV 4K पर नेविगेशन की हलचल कम करें",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "वीडियो के संकेत अलग रखें",
+          "paragraphs": [
+            "मालिक की अनुमति से सुविधा की पसंद बदलें तो मेनू की वही हलचल दोबारा देखकर पसंदीदा परिणाम रखें। असली वीडियो रुकावट अलग जाँचें: तस्वीर रुकती है, आवाज़ चलती रहती है या प्लेयर के अंदर त्रुटि आती है? तुलना के दौरान वीडियो आउटपुट, नेटवर्क और प्रदाता के लॉगिन विकल्प न बदलें। सहायता के लिए Apple TV मॉडल, स्क्रीन और लक्षण बताएँ तथा निजी प्लेबैक पते छिपाएँ। नेविगेशन की पसंद कार्यक्रम उपलब्ध होने की पुष्टि नहीं करती और सदस्यता की शर्तें नहीं बदलती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: reduce screen motion on Apple TV 4K",
+      "url": "https://support.apple.com/en-ie/guide/tv/atvb1f949820/tvos"
+    }
+  ]
+}

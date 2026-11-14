@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-14",
+  "topic": "Distinguish VLC for Android Video playlist mode and an automatic next video from a provider catalogue change or an unexpected stop",
+  "primary_keyword": "IPTV next-video playback",
+  "slug": "main-next-video-playback-local-vlc-playlist-mode",
+  "translations": {
+    "en": {
+      "title": "IPTV next-video playback: check VLC’s playlist mode first",
+      "excerpt": "An automatic next video can reflect a local VLC preference. Identify the selected collection before treating the change as a provider catalogue problem.",
+      "seo_title": "IPTV next-video playback: VLC playlist mode explained",
+      "seo_description": "Check VLC for Android video playlist mode separately from a live channel’s behaviour, preserving your collection, player setup and private provider access.",
+      "sections": [
+        {
+          "heading": "Identify what reached the end",
+          "paragraphs": [
+            "IPTV next-video playback is not the same question as a live channel changing its programme. When VLC for Android finishes a video and starts another, first note the title you selected and whether it came from a collection. A broadcast schedule, the provider’s catalogue and VLC’s local playback choices are different layers. Describe the transition before assuming that a channel was removed or that your subscription changed."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android interface preferences",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the documented preference",
+          "paragraphs": [
+            "VideoLAN’s Android 3.5 guide describes Video playlist mode: videos play one after another starting with the current item. If your version exposes this preference, read its label and record its original state before comparing the behaviour with a small collection you are entitled to play. Change only that preference if appropriate, then restore it if the result is unhelpful. Do not assume that every live stream has a normal end or supports automatic advancement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Preserve the provider and playlist details",
+          "paragraphs": [
+            "VLC also documents saving a video to a new or existing playlist; that is not a request to alter a provider’s channel catalogue. Keep saved addresses and access details intact. If playback still stops unexpectedly, report whether the next item appeared, whether the same selection can reopen, and which VLC version you use. Hide private stream addresses in screenshots. An observation about one collection does not establish a service-wide outage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: video controls and Save Playlist",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "es": {
+      "title": "Siguiente vídeo IPTV: revisa el modo de listas de VLC",
+      "excerpt": "El salto automático al siguiente vídeo puede depender de una preferencia local de VLC. Identifica la colección antes de atribuirlo al catálogo del proveedor.",
+      "seo_title": "Siguiente vídeo IPTV: modo de listas de VLC",
+      "seo_description": "Distingue el modo de listas de vídeo de VLC para Android del comportamiento de un canal en directo, conservando la colección y los datos privados de acceso.",
+      "sections": [
+        {
+          "heading": "Identifica qué llegó al final",
+          "paragraphs": [
+            "La reproducción del siguiente vídeo IPTV no equivale a que un canal en directo cambie de programa. Si VLC para Android termina un vídeo e inicia otro, anota primero el título elegido y si procedía de una colección. La programación, el catálogo del proveedor y las decisiones locales de reproducción son niveles distintos. Describe la transición antes de suponer que se eliminó un canal o cambió la suscripción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferencias de interfaz en Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara la preferencia documentada",
+          "paragraphs": [
+            "La guía de VideoLAN para Android 3.5 explica el modo de listas de vídeo: los vídeos se reproducen sucesivamente desde el elemento actual. Si tu versión ofrece esta preferencia, lee su etiqueta y anota el estado original antes de comparar con una colección pequeña que tengas derecho a reproducir. Cambia solo esa preferencia si corresponde y restáurala si no ayuda. No supongas que toda emisión en directo tiene un final normal o permite avanzar automáticamente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Conserva los datos del proveedor y de la lista",
+          "paragraphs": [
+            "VLC también permite guardar un vídeo en una lista nueva o existente; eso no solicita modificar el catálogo de canales del proveedor. Conserva las direcciones y los datos de acceso guardados. Si sigue deteniéndose inesperadamente, informa de si apareció el siguiente elemento, si puedes volver a abrir la misma selección y qué versión de VLC utilizas. Oculta las direcciones privadas en las capturas. Lo observado en una colección no demuestra una caída general del servicio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controles de vídeo y guardar listas",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "fr": {
+      "title": "Vidéo IPTV suivante : vérifiez le mode liste de VLC",
+      "excerpt": "Le passage automatique à une autre vidéo peut venir d’une préférence locale de VLC. Identifiez la collection avant de suspecter le catalogue du fournisseur.",
+      "seo_title": "Vidéo IPTV suivante : comprendre le mode liste VLC",
+      "seo_description": "Distinguez le mode liste vidéo de VLC pour Android du comportement d’une chaîne en direct, en préservant collection, configuration et accès privés.",
+      "sections": [
+        {
+          "heading": "Identifier ce qui s’est terminé",
+          "paragraphs": [
+            "La lecture de la vidéo IPTV suivante ne correspond pas au changement d’émission d’une chaîne en direct. Si VLC pour Android termine une vidéo puis en lance une autre, notez d’abord le titre choisi et son éventuelle collection. La grille des programmes, le catalogue du fournisseur et les choix locaux du lecteur sont distincts. Décrivez la transition avant de conclure à la disparition d’une chaîne ou à une modification d’abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : préférences d’interface Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer la préférence documentée",
+          "paragraphs": [
+            "Le guide Android 3.5 de VideoLAN décrit le mode liste vidéo : les vidéos se suivent à partir de l’élément actuel. Si votre version propose cette préférence, lisez son libellé et notez sa valeur initiale avant de comparer avec une petite collection que vous êtes autorisé à lire. Modifiez uniquement cette préférence si nécessaire, puis restaurez-la si cela n’aide pas. Ne supposez pas que chaque flux en direct possède une fin normale ou un passage automatique."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Préserver la liste et les accès du fournisseur",
+          "paragraphs": [
+            "VLC permet aussi d’enregistrer une vidéo dans une liste nouvelle ou existante ; cela ne modifie pas le catalogue de chaînes du fournisseur. Conservez adresses et accès enregistrés. Si la lecture s’arrête encore sans raison, indiquez si l’élément suivant est apparu, si la même sélection peut être rouverte et votre version de VLC. Masquez les adresses privées sur les captures. Une observation limitée à une collection ne démontre pas une panne générale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : commandes vidéo et enregistrement de liste",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "it": {
+      "title": "Video IPTV successivo: controlla la modalità playlist VLC",
+      "excerpt": "L’avvio automatico di un altro video può dipendere da una preferenza locale di VLC. Identifica la raccolta prima di attribuire il problema al catalogo.",
+      "seo_title": "Video IPTV successivo: modalità playlist di VLC",
+      "seo_description": "Distingui la modalità playlist video di VLC per Android dal comportamento di un canale in diretta, conservando raccolte, impostazioni e accessi privati.",
+      "sections": [
+        {
+          "heading": "Identifica che cosa è finito",
+          "paragraphs": [
+            "La riproduzione del video IPTV successivo non equivale al cambio di programma su un canale in diretta. Quando VLC per Android termina un video e ne avvia un altro, annota il titolo scelto e se apparteneva a una raccolta. Palinsesto, catalogo del fornitore e scelte locali di riproduzione sono livelli diversi. Descrivi il passaggio prima di supporre che un canale sia stato rimosso o che l’abbonamento sia cambiato."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferenze dell’interfaccia Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta la preferenza documentata",
+          "paragraphs": [
+            "La guida Android 3.5 di VideoLAN descrive la modalità playlist video: i video vengono riprodotti uno dopo l’altro a partire dall’elemento attuale. Se la tua versione offre questa preferenza, leggi l’etichetta e annota lo stato originale prima di confrontare una piccola raccolta che hai diritto di riprodurre. Cambia soltanto quella preferenza se opportuno e ripristinala se non aiuta. Non presumere che ogni flusso in diretta abbia una fine normale o supporti l’avanzamento automatico."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Conserva playlist e dati del fornitore",
+          "paragraphs": [
+            "VLC documenta anche il salvataggio di un video in una playlist nuova o esistente; ciò non richiede di modificare il catalogo dei canali del fornitore. Conserva indirizzi e accessi salvati. Se la riproduzione continua a fermarsi in modo inatteso, indica se è apparso l’elemento successivo, se puoi riaprire la stessa selezione e quale versione di VLC usi. Nascondi gli indirizzi privati nelle schermate. Un’osservazione su una raccolta non dimostra un guasto generale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: comandi video e salvataggio playlist",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "nl": {
+      "title": "Volgende IPTV-video: controleer de afspeellijstmodus van VLC",
+      "excerpt": "Automatisch doorgaan naar een andere video kan een lokale VLC-voorkeur zijn. Controleer de gekozen verzameling voordat je de providercatalogus verdenkt.",
+      "seo_title": "Volgende IPTV-video: afspeellijstmodus van VLC",
+      "seo_description": "Onderscheid de video-afspeellijstmodus van VLC voor Android van een livekanaal en behoud je verzameling, spelerinstellingen en privétoegang.",
+      "sections": [
+        {
+          "heading": "Bepaal wat het einde bereikte",
+          "paragraphs": [
+            "De volgende IPTV-video afspelen is iets anders dan een livekanaal dat van programma wisselt. Als VLC voor Android een video beëindigt en een andere start, noteer dan eerst de gekozen titel en of die uit een verzameling kwam. De programmagids, providercatalogus en lokale afspeelkeuzes zijn verschillende lagen. Beschrijf de overgang voordat je aanneemt dat een kanaal is verwijderd of je abonnement is veranderd."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android-interfacevoorkeuren",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk de beschreven voorkeur",
+          "paragraphs": [
+            "De Android 3.5-handleiding van VideoLAN beschrijft de video-afspeellijstmodus: video’s spelen achtereenvolgens vanaf het huidige item. Heeft jouw versie deze voorkeur, lees dan het label en noteer de oorspronkelijke stand voordat je vergelijkt met een kleine verzameling die je mag afspelen. Verander zo nodig alleen deze voorkeur en herstel haar als dat niet helpt. Veronderstel niet dat elke livestream een gewoon einde heeft of automatisch naar een volgend item kan gaan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bewaar lijst en providergegevens",
+          "paragraphs": [
+            "VLC beschrijft ook het opslaan van een video in een nieuwe of bestaande afspeellijst; dat wijzigt de kanaalcatalogus van de provider niet. Bewaar opgeslagen adressen en toegangsgegevens. Stopt het afspelen nog steeds onverwacht, meld dan of het volgende item verscheen, of dezelfde selectie opnieuw opent en welke VLC-versie je gebruikt. Verberg privéadressen in schermafbeeldingen. Een waarneming bij één verzameling bewijst geen storing van de hele dienst."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: videobediening en afspeellijst opslaan",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "pt": {
+      "title": "Próximo vídeo IPTV: verifique o modo de lista do VLC",
+      "excerpt": "A passagem automática a outro vídeo pode resultar de uma preferência local do VLC. Identifique a coleção antes de suspeitar do catálogo do fornecedor.",
+      "seo_title": "Próximo vídeo IPTV: modo de lista do VLC",
+      "seo_description": "Distinga o modo de lista de vídeos do VLC para Android do comportamento de um canal em direto, preservando coleção, definições e acessos privados.",
+      "sections": [
+        {
+          "heading": "Identifique o que chegou ao fim",
+          "paragraphs": [
+            "Reproduzir o próximo vídeo IPTV não é o mesmo que um canal em direto mudar de programa. Quando o VLC para Android termina um vídeo e inicia outro, anote o título selecionado e se pertencia a uma coleção. A programação, o catálogo do fornecedor e as escolhas locais do leitor são camadas diferentes. Descreva a transição antes de concluir que um canal foi removido ou que a subscrição mudou."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferências da interface Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare a preferência documentada",
+          "paragraphs": [
+            "O guia Android 3.5 da VideoLAN descreve o modo de lista de vídeos: os vídeos seguem-se a partir do item atual. Se a sua versão oferecer esta preferência, leia o nome e registe o estado original antes de comparar com uma pequena coleção que tenha direito a reproduzir. Altere apenas essa preferência se adequado e reponha-a se não ajudar. Não suponha que todas as transmissões em direto têm um fim normal ou permitem avançar automaticamente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Preserve a lista e os dados do fornecedor",
+          "paragraphs": [
+            "O VLC também permite guardar um vídeo numa lista nova ou existente; isso não pede uma alteração ao catálogo de canais do fornecedor. Preserve os endereços e acessos guardados. Se a reprodução continuar a parar inesperadamente, indique se apareceu o próximo item, se consegue reabrir a mesma seleção e qual a versão do VLC. Oculte endereços privados nas capturas. Uma observação sobre uma coleção não demonstra uma falha geral do serviço."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: controlos de vídeo e guardar listas",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "ru": {
+      "title": "Следующее IPTV-видео: проверьте режим списка VLC",
+      "excerpt": "Автоматический переход к другому видео может зависеть от локальной настройки VLC. Определите выбранную подборку, прежде чем подозревать каталог провайдера.",
+      "seo_title": "Следующее IPTV-видео: режим списка VLC",
+      "seo_description": "Отличайте режим списка видео VLC для Android от поведения прямого канала, сохраняя подборку, настройки плеера и конфиденциальные данные доступа.",
+      "sections": [
+        {
+          "heading": "Определите, что закончилось",
+          "paragraphs": [
+            "Переход к следующему IPTV-видео — не то же самое, что смена передачи на прямом канале. Если VLC для Android завершает видео и запускает другое, сначала запишите выбранное название и принадлежность к подборке. Программа передач, каталог провайдера и локальные решения плеера — разные уровни. Опишите переход, прежде чем считать, что канал удалён или условия подписки изменились."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: настройки интерфейса Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните описанную настройку",
+          "paragraphs": [
+            "Руководство VideoLAN для Android 3.5 описывает режим списка видео: ролики воспроизводятся последовательно, начиная с текущего. Если такая настройка есть в вашей версии, прочитайте её название и запишите исходное состояние перед сравнением на небольшой подборке, которую вы вправе смотреть. При необходимости измените только эту настройку и верните её, если результат не помогает. Не предполагайте, что любой прямой поток имеет обычное окончание или поддерживает автоматический переход."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сохраните список и данные провайдера",
+          "paragraphs": [
+            "VLC также позволяет сохранить видео в новом или существующем списке; это не меняет каталог каналов провайдера. Сохраните записанные адреса и данные доступа. Если воспроизведение по-прежнему неожиданно останавливается, сообщите, появилось ли следующее видео, открывается ли прежний выбор повторно и какая у вас версия VLC. Скрывайте приватные адреса на снимках экрана. Наблюдение за одной подборкой не доказывает общий сбой сервиса."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: управление видео и сохранение списка",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "ur": {
+      "title": "اگلی IPTV ویڈیو: پہلے VLC کی فہرست والی ترتیب دیکھیں",
+      "excerpt": "خود بخود اگلی ویڈیو چلنا VLC کی مقامی ترجیح ہو سکتی ہے۔ فراہم کنندہ کے کیٹلاگ کو مسئلہ سمجھنے سے پہلے منتخب مجموعہ پہچانیں۔",
+      "seo_title": "اگلی IPTV ویڈیو اور VLC کی فہرست والی ترتیب",
+      "seo_description": "Android پر VLC کی ویڈیو فہرست والی ترتیب اور براہ راست چینل کے رویے میں فرق سمجھیں، اور مجموعہ، پلیئر کی ترتیب اور نجی رسائی محفوظ رکھیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کس چیز کا اختتام ہوا",
+          "paragraphs": [
+            "اگلی IPTV ویڈیو چلنا براہ راست چینل پر پروگرام بدلنے کے برابر نہیں ہے۔ Android کے VLC میں ایک ویڈیو ختم ہو کر دوسری شروع ہو تو پہلے منتخب عنوان اور یہ بات نوٹ کریں کہ وہ کسی مجموعے سے آیا تھا یا نہیں۔ پروگراموں کا شیڈول، فراہم کنندہ کا کیٹلاگ اور پلیئر کے مقامی انتخاب الگ سطحیں ہیں۔ چینل ہٹنے یا رکنیت بدلنے کا نتیجہ نکالنے سے پہلے منتقلی کی کیفیت واضح کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android کی ظاہری ترتیب کی ترجیحات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "دستاویز میں بیان کردہ ترجیح کا موازنہ کریں",
+          "paragraphs": [
+            "VideoLAN کی Android 3.5 رہنمائی میں ویڈیو فہرست کی ایک ترتیب بیان ہے جس سے موجودہ ویڈیو کے بعد باقی ویڈیوز یکے بعد دیگرے چلتی ہیں۔ آپ کے نسخے میں یہ ترجیح ہو تو نام پڑھیں اور اصل حالت نوٹ کریں، پھر ایسے چھوٹے مجموعے پر موازنہ کریں جسے چلانے کی آپ کو اجازت ہے۔ مناسب ہو تو صرف یہی ترجیح بدلیں، اور فائدہ نہ ہو تو اصل حالت بحال کریں۔ ہر براہ راست نشریے کا عام اختتام یا خودکار اگلی ویڈیو ہونا فرض نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "فہرست اور فراہم کنندہ کی تفصیل محفوظ رکھیں",
+          "paragraphs": [
+            "VLC میں ویڈیو کو نئی یا موجودہ فہرست میں محفوظ کرنے کی سہولت بھی بیان ہے؛ اس کا مطلب فراہم کنندہ کے چینل کیٹلاگ میں تبدیلی کی درخواست نہیں ہے۔ محفوظ پتے اور رسائی کی تفصیل برقرار رکھیں۔ پلے بیک پھر بھی اچانک رکے تو بتائیں کہ اگلی ویڈیو آئی یا نہیں، وہی انتخاب دوبارہ کھلتا ہے یا نہیں، اور VLC کا نسخہ کون سا ہے۔ اسکرین شاٹ میں نجی نشریاتی پتے چھپائیں۔ ایک مجموعے کا مشاہدہ پوری سروس کی خرابی ثابت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: ویڈیو کے کنٹرول اور فہرست محفوظ کرنا",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "ar": {
+      "title": "الفيديو التالي في IPTV: تحقّق من وضع قائمة VLC",
+      "excerpt": "قد ينتج الانتقال التلقائي إلى فيديو آخر عن تفضيل محلي في VLC. حدّد المجموعة المختارة قبل اعتبار الأمر مشكلة في كتالوج المزوّد.",
+      "seo_title": "الفيديو التالي في IPTV ووضع قائمة VLC",
+      "seo_description": "ميّز بين وضع قائمة الفيديو في VLC لنظام Android وسلوك القناة المباشرة، مع الحفاظ على المجموعة وإعدادات المشغّل وبيانات الوصول الخاصة.",
+      "sections": [
+        {
+          "heading": "حدّد ما الذي انتهى",
+          "paragraphs": [
+            "تشغيل فيديو IPTV التالي ليس هو تغيّر البرنامج على قناة مباشرة. عندما ينهي VLC لنظام Android فيديو ويبدأ آخر، سجّل أولًا العنوان المختار وما إذا كان ضمن مجموعة. جدول البرامج وكتالوج المزوّد وخيارات التشغيل المحلية مستويات مختلفة. صِف الانتقال قبل افتراض حذف قناة أو تغيير الاشتراك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: تفضيلات واجهة Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن التفضيل الموثّق",
+          "paragraphs": [
+            "يصف دليل VideoLAN لنظام Android 3.5 وضع قائمة الفيديو: تُشغّل المقاطع تباعًا بدءًا من العنصر الحالي. إذا كان إصدارك يعرض هذا التفضيل، فاقرأ اسمه وسجّل حالته الأصلية قبل المقارنة باستخدام مجموعة صغيرة يحق لك تشغيلها. غيّر هذا التفضيل وحده عند الحاجة، ثم أعد حالته إن لم يفدك. لا تفترض أن لكل بث مباشر نهاية عادية أو إمكانية انتقال تلقائي إلى عنصر تالٍ."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احتفظ بالقائمة وبيانات المزوّد",
+          "paragraphs": [
+            "يوثّق VLC أيضًا حفظ الفيديو في قائمة جديدة أو موجودة؛ وهذا لا يطلب تعديل كتالوج قنوات المزوّد. احتفظ بالعناوين وبيانات الوصول المحفوظة. إذا استمر التوقف المفاجئ، فاذكر هل ظهر العنصر التالي، وهل يمكن إعادة فتح الاختيار نفسه، وما إصدار VLC المستخدم. أخفِ عناوين البث الخاصة في لقطات الشاشة. ملاحظة تتعلق بمجموعة واحدة لا تثبت وجود عطل يشمل الخدمة كلها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: عناصر تحكم الفيديو وحفظ القائمة",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "अगला IPTV वीडियो: पहले VLC का प्लेलिस्ट मोड देखें",
+      "excerpt": "अपने आप अगला वीडियो चलना VLC की स्थानीय पसंद का नतीजा हो सकता है। प्रदाता के कैटलॉग को दोष देने से पहले चुना गया संग्रह पहचानें।",
+      "seo_title": "अगला IPTV वीडियो और VLC का प्लेलिस्ट मोड",
+      "seo_description": "Android के VLC में वीडियो प्लेलिस्ट मोड और लाइव चैनल के व्यवहार को अलग समझें। संग्रह, प्लेयर की सेटिंग और निजी प्रदाता पहुँच सुरक्षित रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि किसका अंत हुआ",
+          "paragraphs": [
+            "अगला IPTV वीडियो चलना और किसी लाइव चैनल का कार्यक्रम बदलना एक जैसी बात नहीं हैं। Android के VLC में एक वीडियो खत्म होकर दूसरा शुरू हो तो पहले चुने गए शीर्षक और उसके किसी संग्रह का हिस्सा होने की बात नोट करें। कार्यक्रम सूची, प्रदाता का कैटलॉग और प्लेयर के स्थानीय चुनाव अलग स्तर हैं। चैनल हटने या सदस्यता बदलने का निष्कर्ष निकालने से पहले बदलाव का वर्णन करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android इंटरफ़ेस की पसंद",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "दस्तावेज़ में दी गई पसंद से तुलना करें",
+          "paragraphs": [
+            "VideoLAN की Android 3.5 मार्गदर्शिका वीडियो प्लेलिस्ट मोड बताती है: मौजूदा वीडियो से शुरू करके वीडियो एक के बाद एक चलते हैं। आपके संस्करण में यह पसंद हो तो नाम पढ़ें और मूल स्थिति लिखें। फिर ऐसे छोटे संग्रह पर तुलना करें जिसे चलाने का आपको अधिकार है। ज़रूरी हो तो केवल यही पसंद बदलें और लाभ न हो तो पुरानी स्थिति बहाल करें। यह न मानें कि हर लाइव स्ट्रीम का सामान्य अंत होता है या वह अपने आप अगले वीडियो पर जा सकती है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सूची और प्रदाता की जानकारी सुरक्षित रखें",
+          "paragraphs": [
+            "VLC किसी वीडियो को नई या मौजूदा प्लेलिस्ट में सहेजने की सुविधा भी बताता है; इससे प्रदाता का चैनल कैटलॉग बदलने का अनुरोध नहीं होता। सहेजे गए पते और पहुँच की जानकारी रखें। वीडियो फिर भी अचानक रुके तो बताएँ कि अगला वीडियो दिखा या नहीं, वही चयन दोबारा खुलता है या नहीं और VLC का कौन सा संस्करण है। स्क्रीनशॉट में निजी स्ट्रीम पते छिपाएँ। एक संग्रह का अनुभव पूरी सेवा बंद होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: वीडियो नियंत्रण और प्लेलिस्ट सहेजना",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: Android interface preferences",
+      "url": "https://docs.videolan.me/vlc-user/android/3.5/en/more/settings/extra_interface.html"
+    },
+    {
+      "label": "VideoLAN: video controls and Save Playlist",
+      "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+    }
+  ]
+}

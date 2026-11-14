@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-14",
+  "topic": "Compare Fire TV equipment-specific audio calibration with a steady Trex IPTV sound-to-picture offset without confusing it with buffering or adding viewing sessions",
+  "primary_keyword": "Trex IPTV lip-sync check",
+  "slug": "trex-lip-sync-check-fire-tv-audio-calibration",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV lip-sync check: compare Fire TV’s calibration first",
+      "excerpt": "A steady sound-to-picture offset needs a different check from pauses. Identify the audio path and the Fire TV tool before changing delay settings.",
+      "seo_title": "Trex IPTV lip-sync check on Fire TV",
+      "seo_description": "Compare Fire TV audio calibration with a steady programme delay, respect model-specific controls and preserve the confirmed one simultaneous connection.",
+      "sections": [
+        {
+          "heading": "Describe the sound path and the symptom",
+          "paragraphs": [
+            "A Trex IPTV lip-sync check starts by separating consistently early or late voices from repeated pauses. Note the Fire TV model and whether sound comes from the television, a soundbar, a receiver or Echo speakers. Amazon explains that audio and video must be presented together and that the sound path affects latency. Keep the programme and equipment unchanged during a comparison; one affected player does not establish a wider outage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: audio-video synchronization",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Use the tool for the actual equipment",
+          "paragraphs": [
+            "Amazon’s help describes Settings, Display & Sounds, Audio, then AV Sync Tuning. It warns that the slider is unavailable on some Fire TV Smart TVs; Alexa Home Theater uses separate Lip Sync Tuning guidance. If the appropriate tool exists, record the original setting before an owner-approved adjustment. Its ball bounce, flash and tone should coincide. Follow the displayed controls and compare a small change rather than copying a delay value from another player."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep the comparison limited",
+          "paragraphs": [
+            "Avoid stacking new delay changes in the TV, sound system and player at once. Restore the original value if the comparison is unhelpful. Report whether the calibration itself appears aligned and whether the programme has a steady offset or interruptions. This check does not verify payment, provider access or service-wide health. Trex IPTV retains one simultaneous connection, so do not open additional viewing sessions as a test. Keep private playback addresses and passwords out of support screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Sincronización de Trex IPTV: compara la calibración de Fire TV",
+      "excerpt": "Un desfase constante entre sonido e imagen se comprueba de otra forma que las pausas. Identifica la salida de audio y la herramienta antes de cambiar retardos.",
+      "seo_title": "Comprobación de sincronización Trex IPTV en Fire TV",
+      "seo_description": "Compara la calibración de audio de Fire TV con un desfase constante del programa, respetando los controles del modelo y una sola conexión simultánea.",
+      "sections": [
+        {
+          "heading": "Describe la ruta del sonido y el síntoma",
+          "paragraphs": [
+            "La comprobación de sincronización de Trex IPTV empieza por separar las voces siempre adelantadas o retrasadas de las pausas repetidas. Anota el modelo de Fire TV y si el sonido sale del televisor, una barra, un receptor o altavoces Echo. Amazon explica que audio y vídeo deben presentarse juntos y que la ruta del sonido afecta a la latencia. Mantén el programa y el equipo durante la comparación; un reproductor afectado no demuestra una caída general."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: sincronización de audio y vídeo",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Utiliza la herramienta adecuada al equipo",
+          "paragraphs": [
+            "La ayuda de Amazon describe Configuración, Pantalla y sonido, Audio y ajuste de sincronización audiovisual. Advierte que el control no está disponible en algunos televisores inteligentes Fire TV; Alexa Home Theater utiliza una guía distinta de sincronización labial. Si existe la herramienta apropiada, anota el valor original antes de un cambio autorizado por el propietario. El bote de la pelota, el destello y el tono deben coincidir. Sigue los controles mostrados y compara un cambio pequeño, sin copiar el retardo de otro reproductor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Limita la comparación",
+          "paragraphs": [
+            "Evita acumular ajustes nuevos de retardo en televisor, sistema de sonido y reproductor a la vez. Restaura el valor original si no ayuda. Indica si la calibración parece alineada y si el programa tiene un desfase constante o interrupciones. Esto no verifica pagos, acceso del proveedor ni el estado general del servicio. Trex IPTV mantiene una conexión simultánea: no abras sesiones adicionales como prueba. Oculta direcciones privadas y contraseñas en las capturas de soporte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Synchronisation Trex IPTV : comparez l’étalonnage Fire TV",
+      "excerpt": "Un décalage constant entre son et image ne se vérifie pas comme des pauses. Identifiez la sortie audio et l’outil Fire TV avant de modifier un retard.",
+      "seo_title": "Vérifier la synchronisation Trex IPTV sur Fire TV",
+      "seo_description": "Comparez l’étalonnage audio Fire TV à un décalage constant du programme, en respectant les commandes du modèle et l’unique connexion simultanée.",
+      "sections": [
+        {
+          "heading": "Décrire le trajet du son et le symptôme",
+          "paragraphs": [
+            "La vérification de synchronisation Trex IPTV commence par distinguer des voix toujours en avance ou en retard de pauses répétées. Notez le modèle Fire TV et la sortie utilisée : téléviseur, barre de son, amplificateur ou enceintes Echo. Amazon explique que son et image doivent être présentés ensemble et que le trajet audio influence la latence. Gardez le même programme et le même équipement pendant la comparaison ; un lecteur concerné ne prouve pas une panne générale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : synchronisation audio et vidéo",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Choisir l’outil adapté à l’équipement",
+          "paragraphs": [
+            "L’aide Amazon indique Paramètres, Affichage et sons, Audio, puis réglage de synchronisation audiovisuelle. Elle précise que le curseur manque sur certains téléviseurs connectés Fire TV ; Alexa Home Theater dispose d’un guide distinct de synchronisation labiale. Si l’outil adapté existe, notez la valeur initiale avant une modification approuvée par le propriétaire. Rebond, éclair et tonalité doivent coïncider. Suivez les commandes affichées et comparez un petit changement plutôt que copier le retard d’un autre lecteur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Limiter la comparaison",
+          "paragraphs": [
+            "Évitez d’ajouter simultanément des corrections de retard au téléviseur, au système sonore et au lecteur. Restaurez la valeur initiale si cela n’aide pas. Indiquez si l’étalonnage paraît aligné et si le programme présente un décalage constant ou des interruptions. Cette vérification ne confirme ni paiement, ni accès fournisseur, ni état général du service. Trex IPTV conserve une seule connexion simultanée : n’ouvrez pas d’autres sessions pour tester. Masquez adresses privées et mots de passe sur les captures."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Sincronizzazione Trex IPTV: confronta la calibrazione Fire TV",
+      "excerpt": "Uno scarto costante fra audio e immagine richiede una verifica diversa dalle pause. Identifica uscita audio e strumento Fire TV prima di cambiare ritardi.",
+      "seo_title": "Verifica della sincronizzazione Trex IPTV su Fire TV",
+      "seo_description": "Confronta la calibrazione audio Fire TV con un ritardo costante del programma, rispettando i comandi del modello e l’unica connessione simultanea.",
+      "sections": [
+        {
+          "heading": "Descrivi il percorso audio e il sintomo",
+          "paragraphs": [
+            "La verifica della sincronizzazione Trex IPTV parte dalla distinzione tra voci sempre anticipate o ritardate e pause ripetute. Annota il modello Fire TV e se il suono proviene da televisore, soundbar, ricevitore o altoparlanti Echo. Amazon spiega che audio e video vanno presentati insieme e che il percorso sonoro influisce sulla latenza. Mantieni invariati programma e apparecchi durante il confronto; un solo lettore interessato non dimostra un guasto generale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: sincronizzazione audio e video",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Usa lo strumento adatto agli apparecchi",
+          "paragraphs": [
+            "La guida Amazon indica Impostazioni, Schermo e suoni, Audio e regolazione della sincronizzazione audiovisiva. Avverte che il cursore non è disponibile su alcuni televisori smart Fire TV; Alexa Home Theater segue una guida distinta per la sincronizzazione labiale. Se lo strumento corretto esiste, annota il valore originale prima di una modifica autorizzata dal proprietario. Rimbalzo, lampo e tono devono coincidere. Segui i controlli mostrati e confronta una piccola variazione senza copiare il ritardo da un altro lettore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Mantieni il confronto circoscritto",
+          "paragraphs": [
+            "Evita di sommare nuove correzioni su televisore, impianto audio e lettore contemporaneamente. Ripristina il valore iniziale se non aiuta. Indica se la calibrazione appare allineata e se il programma presenta uno scarto costante o interruzioni. La verifica non conferma pagamento, accesso del fornitore o stato generale del servizio. Trex IPTV mantiene una sola connessione simultanea: non aprire altre sessioni per provare. Nascondi indirizzi privati e password nelle schermate di assistenza."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV lipsynchronisatie: vergelijk eerst de Fire TV-kalibratie",
+      "excerpt": "Een vaste afwijking tussen geluid en beeld vraagt een andere controle dan pauzes. Bepaal het audiopad en het Fire TV-hulpmiddel voordat je vertraging wijzigt.",
+      "seo_title": "Trex IPTV lipsynchronisatie controleren op Fire TV",
+      "seo_description": "Vergelijk Fire TV-audiokalibratie met een vaste programma-afwijking, respecteer de modelafhankelijke bediening en behoud één gelijktijdige verbinding.",
+      "sections": [
+        {
+          "heading": "Beschrijf het geluidspad en het probleem",
+          "paragraphs": [
+            "Een controle van Trex IPTV-lipsynchronisatie begint met het onderscheid tussen steeds vroege of late stemmen en herhaalde pauzes. Noteer het Fire TV-model en of geluid uit de televisie, soundbar, ontvanger of Echo-luidsprekers komt. Amazon legt uit dat beeld en geluid samen moeten verschijnen en dat het geluidspad vertraging beïnvloedt. Houd programma en apparatuur tijdens de vergelijking gelijk; één getroffen speler bewijst geen algemene storing."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: synchronisatie van geluid en beeld",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Gebruik het juiste hulpmiddel",
+          "paragraphs": [
+            "De Amazon-hulp beschrijft Instellingen, Beeld en geluid, Audio en vervolgens audiovisuele synchronisatie afstellen. De schuifregelaar ontbreekt op sommige Fire TV-smarttelevisies; Alexa Home Theater heeft aparte instructies voor lipsynchronisatie. Is het passende hulpmiddel beschikbaar, noteer dan de oorspronkelijke waarde vóór een wijziging met toestemming van de eigenaar. Het stuiteren van de bal, de flits en de toon moeten samenvallen. Volg de getoonde bediening en vergelijk een kleine wijziging; kopieer geen vertraging van een andere speler."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Beperk de vergelijking",
+          "paragraphs": [
+            "Stapel geen nieuwe vertragingsaanpassingen in televisie, geluidsinstallatie en speler tegelijk. Herstel de oude waarde als het niet helpt. Meld of de kalibratie zelf gelijkloopt en of het programma een vaste afwijking of onderbrekingen heeft. Dit controleert geen betaling, providertoegang of algemene dienststatus. Trex IPTV behoudt één gelijktijdige verbinding: open geen extra kijksessies als test. Verberg privéadressen en wachtwoorden op ondersteuningsschermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Sincronização Trex IPTV: compare a calibração do Fire TV",
+      "excerpt": "Um desfasamento constante entre som e imagem pede uma verificação diferente das pausas. Identifique a saída de áudio e a ferramenta antes de alterar atrasos.",
+      "seo_title": "Verificar sincronização Trex IPTV no Fire TV",
+      "seo_description": "Compare a calibração de áudio do Fire TV com um desfasamento constante do programa, respeitando os controlos do modelo e uma ligação simultânea.",
+      "sections": [
+        {
+          "heading": "Descreva o percurso do som e o sintoma",
+          "paragraphs": [
+            "A verificação de sincronização Trex IPTV começa por distinguir vozes sempre adiantadas ou atrasadas de pausas repetidas. Anote o modelo Fire TV e se o som sai do televisor, barra de som, recetor ou colunas Echo. A Amazon explica que áudio e vídeo devem ser apresentados juntos e que o percurso sonoro afeta a latência. Mantenha o programa e o equipamento durante a comparação; um leitor afetado não demonstra uma falha geral."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: sincronização de áudio e vídeo",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Use a ferramenta adequada ao equipamento",
+          "paragraphs": [
+            "A ajuda Amazon descreve Definições, Ecrã e sons, Áudio e ajuste de sincronização audiovisual. Avisa que o controlo não existe em alguns televisores inteligentes Fire TV; o Alexa Home Theater usa uma orientação diferente de sincronização labial. Se a ferramenta adequada existir, registe o valor original antes de uma alteração aprovada pelo proprietário. O ressalto da bola, o clarão e o tom devem coincidir. Siga os controlos apresentados e compare uma pequena mudança, sem copiar o atraso de outro leitor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Mantenha a comparação limitada",
+          "paragraphs": [
+            "Evite acumular novos ajustes de atraso no televisor, sistema de som e leitor ao mesmo tempo. Reponha o valor original se não ajudar. Indique se a calibração parece alinhada e se o programa tem um desfasamento constante ou interrupções. Esta verificação não confirma pagamento, acesso do fornecedor ou estado geral do serviço. O Trex IPTV mantém uma ligação simultânea: não abra outras sessões como teste. Oculte endereços privados e palavras-passe nas capturas de suporte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Синхронизация Trex IPTV: сначала сравните калибровку Fire TV",
+      "excerpt": "Постоянное расхождение звука и изображения проверяют иначе, чем паузы. Определите аудиотракт и нужный инструмент Fire TV до изменения задержки.",
+      "seo_title": "Проверка синхронизации Trex IPTV на Fire TV",
+      "seo_description": "Сравните калибровку звука Fire TV с постоянным сдвигом в передаче, учитывая возможности модели и ограничение одним одновременным подключением.",
+      "sections": [
+        {
+          "heading": "Опишите аудиотракт и проявление",
+          "paragraphs": [
+            "Проверка синхронизации Trex IPTV начинается с различения постоянно ранних или поздних голосов и повторных пауз. Запишите модель Fire TV и источник звука: телевизор, саундбар, ресивер или колонки Echo. Amazon объясняет, что звук и изображение должны воспроизводиться вместе, а аудиотракт влияет на задержку. Сохраняйте программу и оборудование неизменными при сравнении; проблема одного плеера не доказывает общий сбой."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: синхронизация звука и изображения",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "Используйте инструмент для своего оборудования",
+          "paragraphs": [
+            "Справка Amazon описывает путь: настройки, экран и звук, аудио, затем настройка синхронизации аудио и видео. Ползунок отсутствует на некоторых смарт-телевизорах Fire TV; для Alexa Home Theater предусмотрена отдельная инструкция по синхронизации губ. Если подходящий инструмент доступен, запишите исходное значение до изменения с разрешения владельца. Отскок мяча, вспышка и тон должны совпадать. Следуйте показанным элементам управления и сравнивайте небольшое изменение, не копируя задержку из другого плеера."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ограничьте сравнение",
+          "paragraphs": [
+            "Не добавляйте новые коррекции задержки одновременно в телевизоре, аудиосистеме и плеере. Верните исходное значение, если это не помогает. Сообщите, совпадают ли сигналы калибровки и имеет ли передача постоянный сдвиг или прерывания. Проверка не подтверждает оплату, доступ провайдера или состояние всей службы. Trex IPTV сохраняет одно одновременное подключение: не открывайте дополнительные сеансы ради проверки. Скрывайте приватные адреса и пароли на снимках для поддержки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV میں آواز اور تصویر: پہلے Fire TV کی جانچ دیکھیں",
+      "excerpt": "آواز اور تصویر کے مستقل فرق کی جانچ بار بار رکنے سے الگ ہے۔ تاخیر بدلنے سے پہلے آواز کا راستہ اور متعلقہ Fire TV سہولت پہچانیں۔",
+      "seo_title": "Fire TV پر Trex IPTV کی آواز اور تصویر کی ہم آہنگی",
+      "seo_description": "Fire TV کی آواز کی جانچ اور پروگرام کے مستقل فرق کا موازنہ کریں، اپنے ماڈل کی حدود سمجھیں اور ایک بیک وقت کنکشن کی شرط برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "آواز کا راستہ اور علامت بیان کریں",
+          "paragraphs": [
+            "Trex IPTV کی آواز اور تصویر کی ہم آہنگی دیکھتے وقت پہلے مستقل آگے یا پیچھے سنائی دینے والی آواز اور بار بار رکنے میں فرق کریں۔ Fire TV کا ماڈل اور آواز کا راستہ لکھیں: ٹی وی، ساؤنڈ بار، ریسیور یا Echo اسپیکر۔ Amazon کی وضاحت کے مطابق آواز اور تصویر ایک ساتھ پیش ہونی چاہییں اور آواز کا راستہ تاخیر پر اثر ڈالتا ہے۔ موازنے کے دوران پروگرام اور آلات وہی رکھیں؛ ایک پلیئر کا مسئلہ وسیع خرابی ثابت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: آواز اور تصویر کی ہم آہنگی",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "اصل آلات کے مطابق سہولت استعمال کریں",
+          "paragraphs": [
+            "Amazon کی مدد میں ترتیبات، تصویر اور آواز، آڈیو، پھر آواز اور تصویر کی ہم آہنگی درست کرنے والی سہولت کا راستہ دیا گیا ہے۔ کچھ Fire TV اسمارٹ ٹی وی میں یہ سلائیڈر نہیں ہوتا؛ Alexa Home Theater کے لیے ہونٹوں اور آواز کی ہم آہنگی کی الگ رہنمائی ہے۔ مناسب سہولت موجود ہو تو مالک کی اجازت سے تبدیلی سے پہلے اصل قدر لکھیں۔ گیند کا اچھلنا، چمک اور آواز ایک وقت پر ہونے چاہییں۔ ظاہر کنٹرولز کے مطابق معمولی تبدیلی کا موازنہ کریں، دوسرے پلیئر کی تاخیر نقل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "موازنہ محدود رکھیں",
+          "paragraphs": [
+            "ٹی وی، آڈیو نظام اور پلیئر میں ایک ساتھ نئی تاخیری تبدیلیاں جمع نہ کریں۔ فائدہ نہ ہو تو اصل قدر بحال کریں۔ بتائیں کہ خود جانچ کی آواز اور تصویر ملتی ہیں یا نہیں، اور پروگرام میں مستقل فرق ہے یا وقفے آتے ہیں۔ یہ جانچ ادائیگی، فراہم کنندہ کی رسائی یا پوری سروس کی حالت ثابت نہیں کرتی۔ Trex IPTV میں ایک بیک وقت کنکشن برقرار ہے؛ آزمائش کے لیے مزید سیشن نہ کھولیں۔ مدد کے اسکرین شاٹ میں نہ نجی نشریاتی پتے دکھائیں، نہ پاس ورڈ۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مزامنة Trex IPTV: قارن معايرة Fire TV أولًا",
+      "excerpt": "يختلف فحص تأخر الصوت الثابت عن فحص التوقفات. حدّد مسار الصوت وأداة Fire TV المناسبة قبل تعديل قيم التأخير.",
+      "seo_title": "فحص مزامنة Trex IPTV على Fire TV",
+      "seo_description": "قارن معايرة صوت Fire TV باختلاف توقيت ثابت في البرنامج، مع احترام إمكانات الطراز والحفاظ على حد الاتصال المتزامن الواحد.",
+      "sections": [
+        {
+          "heading": "صِف مسار الصوت والعَرَض",
+          "paragraphs": [
+            "ابدأ فحص مزامنة Trex IPTV بالتمييز بين الأصوات المتقدمة أو المتأخرة باستمرار وبين التوقفات المتكررة. سجّل طراز Fire TV وما إذا كان الصوت يخرج من التلفاز أو مكبر شريطي أو جهاز استقبال أو سماعات Echo. توضّح Amazon أن الصوت والصورة يجب أن يُعرضا معًا وأن مسار الصوت يؤثر في التأخير. أبقِ البرنامج والمعدات ثابتة أثناء المقارنة؛ مشكلة مشغّل واحد لا تثبت عطلًا أوسع."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: مزامنة الصوت والصورة",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "استخدم الأداة المناسبة للمعدات",
+          "paragraphs": [
+            "تصف مساعدة Amazon المسار: الإعدادات، العرض والأصوات، الصوت، ثم ضبط المزامنة السمعية البصرية. وتحذّر من غياب شريط الضبط في بعض تلفزيونات Fire TV الذكية؛ أما Alexa Home Theater فله إرشادات منفصلة لمزامنة حركة الشفاه. إن توفرت الأداة المناسبة، فسجّل القيمة الأصلية قبل تعديل يوافق عليه المالك. ينبغي أن يتزامن ارتداد الكرة والوميض والنغمة. اتبع عناصر التحكم المعروضة وقارن تغييرًا صغيرًا بدل نسخ تأخير مشغّل آخر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اجعل المقارنة محدودة",
+          "paragraphs": [
+            "تجنّب إضافة تعديلات تأخير جديدة إلى التلفاز والنظام الصوتي والمشغّل معًا. أعد القيمة الأصلية إن لم تفد المقارنة. اذكر هل تبدو المعايرة نفسها متزامنة، وهل في البرنامج فرق ثابت أم انقطاعات. لا يتحقق هذا الفحص من الدفع أو وصول المزوّد أو سلامة الخدمة كلها. يحتفظ Trex IPTV باتصال متزامن واحد، فلا تفتح جلسات مشاهدة إضافية للاختبار. أخفِ عناوين التشغيل الخاصة وكلمات المرور في صور الدعم."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV में आवाज़ और तस्वीर: पहले Fire TV जाँचें",
+      "excerpt": "आवाज़ और तस्वीर के स्थिर अंतर की जाँच बार-बार रुकने से अलग होती है। देरी बदलने से पहले ऑडियो का रास्ता और Fire TV का सही उपकरण पहचानें।",
+      "seo_title": "Fire TV पर Trex IPTV की आवाज़ और तस्वीर मिलाएँ",
+      "seo_description": "Fire TV की ऑडियो जाँच को कार्यक्रम के स्थिर समय-अंतर से तुलना करें। मॉडल के नियंत्रण और एक साथ केवल एक कनेक्शन की सीमा का ध्यान रखें।",
+      "sections": [
+        {
+          "heading": "आवाज़ का रास्ता और लक्षण बताएँ",
+          "paragraphs": [
+            "Trex IPTV की आवाज़ और तस्वीर मिलाने की जाँच में पहले लगातार जल्दी या देर से सुनाई देने वाली आवाज़ को बार-बार रुकने से अलग करें। Fire TV मॉडल और आवाज़ का स्रोत लिखें: टीवी, साउंडबार, रिसीवर या Echo स्पीकर। Amazon बताता है कि आवाज़ और तस्वीर साथ प्रस्तुत होनी चाहिए और ऑडियो का रास्ता देरी को प्रभावित करता है। तुलना में कार्यक्रम और उपकरण वही रखें; एक प्लेयर का लक्षण बड़े व्यवधान का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: आवाज़ और तस्वीर का समन्वय",
+              "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+            }
+          ]
+        },
+        {
+          "heading": "असल उपकरण के लिए सही सुविधा चुनें",
+          "paragraphs": [
+            "Amazon की सहायता में सेटिंग, डिस्प्ले और साउंड, ऑडियो, फिर आवाज़ और तस्वीर का समय मिलाने वाली सुविधा बताई गई है। कुछ Fire TV स्मार्ट टीवी में इसका स्लाइडर नहीं मिलता; Alexa Home Theater के लिए होंठ और आवाज़ मिलाने की अलग मार्गदर्शिका है। सही सुविधा मिले तो मालिक की मंज़ूरी से बदलाव करने से पहले मूल मान लिखें। गेंद का उछाल, चमक और ध्वनि साथ होने चाहिए। दिख रहे नियंत्रण अपनाकर छोटे बदलाव की तुलना करें; दूसरे प्लेयर की देरी न कॉपी करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "तुलना सीमित रखें",
+          "paragraphs": [
+            "टीवी, साउंड सिस्टम और प्लेयर में एक साथ नई देरी के बदलाव न जोड़ें। लाभ न हो तो मूल मान बहाल करें। बताएँ कि जाँच का प्रदर्शन आपस में मेल खाता है या नहीं और कार्यक्रम में स्थिर अंतर है या रुकावटें। यह भुगतान, प्रदाता की पहुँच या पूरी सेवा की स्थिति सत्यापित नहीं करता। Trex IPTV में एक समय पर एक कनेक्शन रहता है; परीक्षण के लिए अतिरिक्त देखने के सत्र न खोलें। सहायता स्क्रीनशॉट में न निजी स्ट्रीम पते दिखाएँ, न पासवर्ड।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: audio-video synchronization",
+      "url": "https://developer.amazon.com/docs/fire-tv/audio-video-synchronization.html"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-14",
+  "topic": "Identify a paired Google TV Streamer Voice Remote and the documented device-specific locating method separately from Get IPTV player setup or provider access",
+  "primary_keyword": "Get IPTV remote finder",
+  "slug": "getiptv-remote-finder-paired-handset-before-player-changes",
+  "translations": {
+    "en": {
+      "title": "Get IPTV remote finder: check the handset before the player",
+      "excerpt": "A missing remote is a hardware problem to identify first. Check the paired Google TV Streamer Voice Remote and use the locating method documented for your device.",
+      "seo_title": "Get IPTV remote finder: check the handset before the player",
+      "seo_description": "Find the documented remote-locating method for compatible Google equipment before changing Get IPTV player setup, provider access or an existing order.",
+      "sections": [
+        {
+          "heading": "Identify the actual remote",
+          "paragraphs": [
+            "A Get IPTV remote finder question starts with the handset model, not the streaming plan. Google documents Find My Remote for a Google TV Streamer Voice Remote paired with a Google TV Streamer or Chromecast with Google TV. An ordinary television remote does not gain that feature by installing an IPTV player. Identify both device and remote before choosing instructions. A misplaced handset is different from a missing player or a provider sign-in error."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the method for that device",
+          "paragraphs": [
+            "On Google TV Streamer, briefly press the button on the back of the device. Google says the paired remote sounds for 30 seconds; pressing any button on the remote stops it. Use the documented brief press rather than holding the device button. For Chromecast with Google TV, Google specifies a voice assistant or the Google Home app instead of the Streamer hardware-button method. No locating sound alone establishes an IPTV outage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help: Find My Remote",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Return to the existing setup",
+          "paragraphs": [
+            "The finder locates a controller; it does not install a player or activate a subscription. Preserve the existing setup and consult the matching device guidance if pairing is uncertain. For Get IPTV support, distinguish the actual Opplex or Filex provider and duration from any player charge. An unknown Filex connection allowance still needs confirmation. Report device and remote models and the locating result without sending credentials, private playback addresses or payment details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: compruebe el mando antes de buscarlo desde el dispositivo",
+      "excerpt": "Primero identifique el problema de un mando extraviado. Compruebe el Google TV Streamer Voice Remote emparejado y use el método de localización documentado para su equipo.",
+      "seo_title": "Get IPTV: compruebe el mando antes de buscarlo desde el dispositivo",
+      "seo_description": "Encuentre el método documentado para localizar un mando de Google compatible antes de cambiar el reproductor de Get IPTV, el acceso o un pedido existente.",
+      "sections": [
+        {
+          "heading": "Identifique el mando real",
+          "paragraphs": [
+            "Una consulta de Get IPTV sobre cómo encontrar el mando empieza por el modelo del mando, no por el plan de televisión. Google documenta la función de búsqueda para un Google TV Streamer Voice Remote emparejado con Google TV Streamer o Chromecast con Google TV. Instalar un reproductor IPTV no añade esa función a un mando de televisión corriente. Identifique equipo y mando antes de elegir instrucciones. Un mando extraviado no equivale a un reproductor ausente ni a un error de acceso del proveedor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use el método de ese equipo",
+          "paragraphs": [
+            "En Google TV Streamer, pulse brevemente el botón trasero del dispositivo. Google indica que el mando emparejado suena durante 30 segundos; cualquier botón del mando detiene el sonido. Use la pulsación breve documentada en lugar de mantener pulsado el botón del equipo. Para Chromecast con Google TV, Google especifica un asistente de voz o la aplicación Google Home, no el método del botón físico del Streamer. La ausencia de sonido no demuestra por sí sola una caída de IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Streaming: encontrar el mando",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vuelva a la configuración existente",
+          "paragraphs": [
+            "La búsqueda localiza un mando; no instala un reproductor ni activa una suscripción. Conserve la configuración existente y consulte la guía correspondiente si no está seguro del emparejamiento. Para soporte de Get IPTV, distinga el proveedor real, Opplex o Filex, y la duración de cualquier coste del reproductor. Debe confirmar cualquier límite de conexiones de Filex que desconozca. Indique los modelos y el resultado de la búsqueda sin enviar credenciales, direcciones privadas de reproducción ni datos de pago."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : identifier la télécommande avant de la localiser",
+      "excerpt": "Commencez par identifier la télécommande égarée. Vérifiez la Google TV Streamer Voice Remote associée et utilisez la méthode de localisation documentée pour votre appareil.",
+      "seo_title": "Get IPTV : identifier la télécommande avant de la localiser",
+      "seo_description": "Trouvez la méthode documentée pour localiser une télécommande Google compatible avant de modifier le lecteur Get IPTV, l’accès fournisseur ou une commande.",
+      "sections": [
+        {
+          "heading": "Identifier la véritable télécommande",
+          "paragraphs": [
+            "Une question de localisation de télécommande chez Get IPTV commence par le modèle du boîtier de commande, pas par le forfait. Google décrit cette fonction pour une Google TV Streamer Voice Remote associée à Google TV Streamer ou à Chromecast avec Google TV. Installer un lecteur IPTV ne donne pas cette fonction à une télécommande de téléviseur ordinaire. Identifiez appareil et télécommande avant de choisir les instructions. Une télécommande égarée ne signifie ni lecteur disparu ni erreur de connexion fournisseur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliser la méthode du bon appareil",
+          "paragraphs": [
+            "Sur Google TV Streamer, appuyez brièvement sur le bouton au dos de l’appareil. Google indique que la télécommande associée sonne pendant 30 secondes ; toute touche de la télécommande arrête le son. Utilisez l’appui bref documenté plutôt qu’un appui prolongé sur le bouton de l’appareil. Pour Chromecast avec Google TV, Google indique un assistant vocal ou l’application Google Home à la place du bouton physique du Streamer. L’absence de son ne suffit pas à établir une panne IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Streaming : localiser la télécommande",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Revenir à la configuration existante",
+          "paragraphs": [
+            "La recherche localise une télécommande ; elle n’installe aucun lecteur et n’active aucun abonnement. Préservez la configuration et consultez le guide correspondant en cas de doute sur l’association. Pour le support Get IPTV, distinguez le fournisseur réel, Opplex ou Filex, et la durée des éventuels frais du lecteur. Toute limite de connexions Filex inconnue reste à confirmer. Indiquez modèles et résultat de localisation sans envoyer d’identifiants, d’adresses privées de lecture ni de données de paiement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: identifica il telecomando prima di cercarlo",
+      "excerpt": "Prima identifica il telecomando smarrito. Controlla il Google TV Streamer Voice Remote associato e usa il metodo di ricerca documentato per il tuo dispositivo.",
+      "seo_title": "Get IPTV: identifica il telecomando prima di cercarlo",
+      "seo_description": "Consulta il metodo di ricerca del telecomando per dispositivi Google compatibili prima di cambiare configurazione IPTV, accesso al fornitore o ordine Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica il telecomando effettivo",
+          "paragraphs": [
+            "Per trovare un telecomando con Get IPTV, parti dal modello del telecomando, non dall’abbonamento. Google documenta la funzione di ricerca per un Google TV Streamer Voice Remote associato a Google TV Streamer o Chromecast con Google TV. Installare un lettore IPTV non aggiunge questa funzione a un normale telecomando del televisore. Identifica entrambi i dispositivi prima di scegliere le istruzioni. Un telecomando smarrito è un problema diverso da un lettore assente o da un errore di accesso al fornitore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa il metodo del dispositivo corretto",
+          "paragraphs": [
+            "Su Google TV Streamer, premi brevemente il pulsante sul retro del dispositivo. Secondo Google, il telecomando associato emette un suono per 30 secondi; qualsiasi suo tasto lo interrompe. Usa la pressione breve documentata invece di tenere premuto il pulsante del dispositivo. Per Chromecast con Google TV, Google indica un assistente vocale o l’app Google Home, anziché il metodo del pulsante fisico dello Streamer. La sola assenza del suono non dimostra un’interruzione IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google Streaming: trovare il telecomando",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Torna alla configurazione esistente",
+          "paragraphs": [
+            "La ricerca localizza un telecomando: non installa un lettore e non attiva un abbonamento. Conserva la configurazione e consulta la guida del dispositivo se l’associazione è incerta. Quando chiedi assistenza a Get IPTV, distingui il fornitore effettivo, Opplex o Filex, e la durata dagli eventuali costi del lettore. Un limite di connessioni Filex non noto va ancora confermato. Indica i modelli e l’esito della ricerca senza inviare credenziali, indirizzi privati di riproduzione o dati di pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: controleer de afstandsbediening vóór het zoeken",
+      "excerpt": "Identificeer eerst de zoekgeraakte afstandsbediening. Controleer de gekoppelde Google TV Streamer Voice Remote en gebruik de zoekmethode voor uw apparaat.",
+      "seo_title": "Get IPTV: controleer de afstandsbediening vóór het zoeken",
+      "seo_description": "Zoek de gedocumenteerde methode voor een geschikte Google-afstandsbediening voordat u Get IPTV-spelerinstellingen, toegang of een bestaande bestelling wijzigt.",
+      "sections": [
+        {
+          "heading": "Identificeer de echte afstandsbediening",
+          "paragraphs": [
+            "Een vraag aan Get IPTV over het terugvinden van een afstandsbediening begint met het model, niet met het streamingabonnement. Google documenteert de zoekfunctie voor een Google TV Streamer Voice Remote die is gekoppeld aan Google TV Streamer of Chromecast met Google TV. Een gewone televisieafstandsbediening krijgt die functie niet door een IPTV-speler te installeren. Identificeer apparaat en afstandsbediening voordat u instructies kiest. Een zoekgeraakte afstandsbediening is iets anders dan een ontbrekende speler of een aanmeldfout bij de aanbieder."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de methode voor dat apparaat",
+          "paragraphs": [
+            "Druk op Google TV Streamer kort op de knop achter op het apparaat. Volgens Google geeft de gekoppelde afstandsbediening 30 seconden geluid; een willekeurige knop op de afstandsbediening stopt het. Gebruik de beschreven korte druk in plaats van de apparaatknop ingedrukt te houden. Voor Chromecast met Google TV noemt Google een spraakassistent of de Google Home-app in plaats van de fysieke Streamer-knop. Alleen het ontbreken van een zoeksignaal bewijst geen IPTV-storing."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help: afstandsbediening zoeken",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keer terug naar de bestaande instellingen",
+          "paragraphs": [
+            "De zoeker lokaliseert een afstandsbediening; hij installeert geen speler en activeert geen abonnement. Bewaar de instellingen en raadpleeg de passende apparaatuitleg als de koppeling onzeker is. Maak bij Get IPTV-ondersteuning onderscheid tussen de echte aanbieder, Opplex of Filex, de looptijd en eventuele spelerkosten. Een onbekend aantal toegestane Filex-verbindingen moet nog worden bevestigd. Vermeld modellen en het zoekresultaat zonder inloggegevens, privéafspeeladressen of betaalgegevens te sturen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: identifique o comando antes de o localizar",
+      "excerpt": "Comece por identificar o comando perdido. Verifique o Google TV Streamer Voice Remote emparelhado e use o método de localização documentado para o seu dispositivo.",
+      "seo_title": "Get IPTV: identifique o comando antes de o localizar",
+      "seo_description": "Consulte o método documentado para localizar comandos Google compatíveis antes de alterar a configuração Get IPTV, o acesso ao fornecedor ou uma encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique o comando correto",
+          "paragraphs": [
+            "Uma dúvida de Get IPTV sobre localizar o comando começa no modelo do comando, não no plano de televisão. A Google documenta esta função para um Google TV Streamer Voice Remote emparelhado com Google TV Streamer ou Chromecast com Google TV. Instalar um leitor IPTV não acrescenta a função a um comando normal de televisão. Identifique dispositivo e comando antes de escolher instruções. Um comando perdido é diferente de um leitor ausente ou de um erro de início de sessão no fornecedor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use o método desse dispositivo",
+          "paragraphs": [
+            "No Google TV Streamer, prima brevemente o botão na parte traseira do dispositivo. Segundo a Google, o comando emparelhado emite um som durante 30 segundos; qualquer botão do comando interrompe-o. Use a pressão breve documentada em vez de manter premido o botão do dispositivo. Para Chromecast com Google TV, a Google especifica um assistente de voz ou a aplicação Google Home em vez do método do botão físico do Streamer. A ausência de som, por si só, não comprova uma falha IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Streaming: encontrar o comando",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Regresse à configuração existente",
+          "paragraphs": [
+            "A localização encontra um comando; não instala um leitor nem ativa uma assinatura. Preserve a configuração e consulte a orientação correspondente se o emparelhamento for incerto. No apoio de Get IPTV, distinga o fornecedor real, Opplex ou Filex, e a duração de qualquer custo do leitor. Um limite desconhecido de ligações Filex continua a precisar de confirmação. Indique modelos e resultado da localização sem enviar credenciais, endereços privados de reprodução ou dados de pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: определите модель пульта перед его поиском",
+      "excerpt": "Сначала определите, какой пульт потерялся. Проверьте сопряжённый Google TV Streamer Voice Remote и используйте способ поиска, описанный для вашего устройства.",
+      "seo_title": "Get IPTV: определите модель пульта перед его поиском",
+      "seo_description": "Найдите документированный способ поиска совместимого пульта Google, прежде чем менять настройку проигрывателя Get IPTV, доступ провайдера или заказ.",
+      "sections": [
+        {
+          "heading": "Определите настоящий пульт",
+          "paragraphs": [
+            "Вопрос Get IPTV о поиске пульта начинается с модели пульта, а не с тарифа. Google описывает функцию поиска для Google TV Streamer Voice Remote, сопряжённого с Google TV Streamer или Chromecast с Google TV. Установка проигрывателя IPTV не добавляет эту возможность обычному телевизионному пульту. Определите оба устройства перед выбором инструкции. Потерянный пульт — не то же самое, что отсутствующий проигрыватель или ошибка входа к провайдеру."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте способ для своего устройства",
+          "paragraphs": [
+            "На Google TV Streamer кратко нажмите кнопку сзади устройства. По данным Google, сопряжённый пульт подаёт звук 30 секунд; любая кнопка на пульте его останавливает. Используйте описанное короткое нажатие, а не удержание кнопки устройства. Для Chromecast с Google TV Google указывает голосового помощника или приложение Google Home вместо физической кнопки Streamer. Одно отсутствие звукового сигнала поиска не доказывает сбой IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Streaming: поиск пульта",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Вернитесь к существующей настройке",
+          "paragraphs": [
+            "Поиск помогает найти пульт; он не устанавливает проигрыватель и не активирует подписку. Сохраните настройку и обратитесь к инструкции нужного устройства, если сопряжение вызывает сомнения. Для поддержки Get IPTV различайте фактического провайдера, Opplex или Filex, срок и возможную плату за проигрыватель. Неизвестное число разрешённых соединений Filex ещё необходимо уточнить. Сообщайте модели и результат поиска, не отправляя данные входа, частные адреса воспроизведения или платёжные сведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: ریموٹ تلاش کرنے سے پہلے اس کا ماڈل دیکھیں",
+      "excerpt": "پہلے گم شدہ ریموٹ کی شناخت کریں۔ جوڑا گیا Google TV Streamer Voice Remote دیکھیں اور اپنے آلے کے لیے دستاویزی طریقے سے اسے تلاش کریں۔",
+      "seo_title": "Get IPTV: ریموٹ تلاش کرنے سے پہلے اس کا ماڈل دیکھیں",
+      "seo_description": "Get IPTV پلیئر کی ترتیب، فراہم کنندہ کی رسائی یا آرڈر بدلنے سے پہلے موزوں Google ریموٹ تلاش کرنے کا دستاویزی طریقہ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "اصل ریموٹ کی شناخت کریں",
+          "paragraphs": [
+            "Get IPTV میں ریموٹ تلاش کرنے کا سوال اس کے ماڈل سے شروع ہوتا ہے، اسٹریمنگ پیکیج سے نہیں۔ Google یہ سہولت ایسے Google TV Streamer Voice Remote کے لیے بتاتا ہے جو Google TV Streamer یا Chromecast with Google TV کے ساتھ جوڑا گیا ہو۔ IPTV پلیئر نصب کرنے سے عام ٹی وی ریموٹ میں یہ خصوصیت شامل نہیں ہوتی۔ ہدایات چننے سے پہلے آلے اور ریموٹ دونوں کی شناخت کریں۔ ریموٹ گم ہونا پلیئر غائب ہونے یا فراہم کنندہ کے داخلے کی خرابی سے الگ مسئلہ ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اسی آلے کا طریقہ استعمال کریں",
+          "paragraphs": [
+            "Google TV Streamer پر آلے کی پشت والا بٹن مختصر دبائیں۔ Google کے مطابق جوڑا گیا ریموٹ 30 سیکنڈ آواز دیتا ہے؛ ریموٹ کا کوئی بھی بٹن اسے روک دیتا ہے۔ آلے کا بٹن دبا کر رکھنے کے بجائے دستاویزی مختصر دباؤ استعمال کریں۔ Chromecast with Google TV کے لیے Google، Streamer کے جسمانی بٹن کے طریقے کی جگہ صوتی معاون یا Google Home ایپ بتاتا ہے۔ صرف تلاش کی آواز نہ آنا IPTV کی بندش کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming کی مدد: ریموٹ کی تلاش",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "موجودہ ترتیب کی طرف واپس آئیں",
+          "paragraphs": [
+            "یہ سہولت ریموٹ ڈھونڈتی ہے؛ پلیئر نصب یا سبسکرپشن فعال نہیں کرتی۔ موجودہ ترتیب محفوظ رکھیں اور جوڑنے کی حالت واضح نہ ہو تو متعلقہ آلے کی رہنمائی دیکھیں۔ Get IPTV کی معاونت کے لیے اصل فراہم کنندہ، Opplex یا Filex، اور مدت کو پلیئر کی کسی فیس سے الگ رکھیں۔ Filex کی نامعلوم کنکشن حد اب بھی تصدیق طلب ہے۔ ماڈل اور تلاش کا نتیجہ بتائیں مگر اسناد، نجی پلے بیک پتے یا ادائیگی کی معلومات نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: حدد جهاز التحكم قبل البحث عنه",
+      "excerpt": "ابدأ بتحديد جهاز التحكم المفقود. تحقق من Google TV Streamer Voice Remote المقترن واستخدم طريقة العثور الموثقة لجهازك.",
+      "seo_title": "Get IPTV: حدد جهاز التحكم قبل البحث عنه",
+      "seo_description": "اعرف طريقة العثور الموثقة لأجهزة تحكم Google المتوافقة قبل تغيير إعداد مشغّل Get IPTV أو وصول المزوّد أو طلب قائم.",
+      "sections": [
+        {
+          "heading": "حدد جهاز التحكم الفعلي",
+          "paragraphs": [
+            "يبدأ سؤال Get IPTV عن العثور على جهاز التحكم بطرازه، لا بخطة البث. توثق Google هذه الميزة لجهاز Google TV Streamer Voice Remote المقترن بـ Google TV Streamer أو Chromecast with Google TV. لا يكتسب جهاز تحكم تلفزيون عادي هذه الميزة بتثبيت مشغّل IPTV. حدد الجهاز وجهاز التحكم معاً قبل اختيار التعليمات. فقدان جهاز التحكم يختلف عن اختفاء المشغّل أو خطأ تسجيل الدخول لدى المزوّد."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم طريقة الجهاز الصحيح",
+          "paragraphs": [
+            "في Google TV Streamer، اضغط الزر خلف الجهاز ضغطة قصيرة. تقول Google إن جهاز التحكم المقترن يصدر صوتاً لمدة 30 ثانية؛ ويوقفه الضغط على أي زر في جهاز التحكم. استخدم الضغطة القصيرة الموثقة بدلاً من الاستمرار في ضغط زر الجهاز. أما Chromecast with Google TV فتحدد Google مساعداً صوتياً أو تطبيق Google Home بدلاً من طريقة زر Streamer المادي. غياب صوت البحث وحده لا يثبت انقطاع IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Streaming: العثور على جهاز التحكم",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ارجع إلى الإعداد القائم",
+          "paragraphs": [
+            "تحدد الميزة مكان جهاز تحكم؛ ولا تثبت مشغّلاً أو تفعّل اشتراكاً. حافظ على الإعداد وراجع إرشادات الجهاز المطابق إذا كان الاقتران غير مؤكد. عند طلب دعم Get IPTV، ميّز المزوّد الفعلي، Opplex أو Filex، والمدة عن أي رسوم للمشغّل. وأي حد اتصالات غير معروف لدى Filex ما زال يحتاج إلى تأكيد. اذكر الطرازين ونتيجة البحث دون إرسال بيانات الدخول أو عناوين التشغيل الخاصة أو معلومات الدفع."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: रिमोट खोजने से पहले उसका मॉडल पहचानें",
+      "excerpt": "पहले खोए हुए रिमोट की पहचान करें। जोड़े गए Google TV Streamer Voice Remote को जाँचें और अपने उपकरण का दस्तावेज़ित खोज तरीका अपनाएँ।",
+      "seo_title": "Get IPTV: रिमोट खोजने से पहले उसका मॉडल पहचानें",
+      "seo_description": "Get IPTV प्लेयर की सेटिंग, प्रदाता की पहुँच या मौजूदा ऑर्डर बदलने से पहले अनुकूल Google रिमोट खोजने का दस्तावेज़ित तरीका देखें।",
+      "sections": [
+        {
+          "heading": "असली रिमोट की पहचान करें",
+          "paragraphs": [
+            "Get IPTV में रिमोट खोजने का सवाल रिमोट के मॉडल से शुरू होता है, स्ट्रीमिंग योजना से नहीं। Google यह सुविधा ऐसे Google TV Streamer Voice Remote के लिए बताता है जो Google TV Streamer या Chromecast with Google TV से जोड़ा गया हो। IPTV प्लेयर लगाने से सामान्य टीवी रिमोट में यह सुविधा नहीं जुड़ती। निर्देश चुनने से पहले उपकरण और रिमोट दोनों पहचानें। रिमोट खोना, प्लेयर न मिलने या प्रदाता में प्रवेश की त्रुटि से अलग समस्या है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उसी उपकरण का तरीका अपनाएँ",
+          "paragraphs": [
+            "Google TV Streamer में उपकरण के पीछे वाला बटन थोड़ी देर दबाएँ। Google के अनुसार जोड़ा गया रिमोट 30 सेकंड आवाज़ करता है; रिमोट का कोई भी बटन दबाने से आवाज़ रुकती है। उपकरण का बटन दबाए रखने के बजाय दस्तावेज़ित छोटा दबाव दें। Chromecast with Google TV के लिए Google, Streamer के भौतिक बटन की जगह वॉइस असिस्टेंट या Google Home ऐप बताता है। केवल खोज की आवाज़ न आना IPTV बंद होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming सहायता: रिमोट ढूँढना",
+              "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "मौजूदा सेटिंग पर लौटें",
+          "paragraphs": [
+            "यह सुविधा रिमोट ढूँढती है; प्लेयर नहीं लगाती और सदस्यता सक्रिय नहीं करती। मौजूदा सेटिंग सुरक्षित रखें और जोड़े जाने पर संदेह हो तो उसी उपकरण के निर्देश देखें। Get IPTV सहायता में वास्तविक प्रदाता, Opplex या Filex, और अवधि को किसी प्लेयर शुल्क से अलग रखें। Filex की अज्ञात कनेक्शन सीमा की पुष्टि अभी बाकी है। मॉडल और खोज का परिणाम बताएँ, लेकिन प्रवेश विवरण, निजी प्लेबैक पते या भुगतान की जानकारी न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help: Find My Remote",
+      "url": "https://support.google.com/chromecast/answer/15322770?hl=en"
+    }
+  ]
+}

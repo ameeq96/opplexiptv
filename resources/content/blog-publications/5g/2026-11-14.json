@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-14",
+  "topic": "Inspect Android Private DNS mode and distinguish a network connection symptom from 5G Live IPTV player access while preserving configured protection",
+  "primary_keyword": "5G Live IPTV DNS check",
+  "slug": "5g-private-dns-mode-before-player-changes",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV DNS check: read the existing Android mode",
+      "excerpt": "A phone’s Private DNS setting and an IPTV plan are different parts of setup. Record the current mode and exact connection symptom before changing protection.",
+      "seo_title": "5G Live IPTV DNS check: read the existing Android mode",
+      "seo_description": "Inspect Android Private DNS during a 5G Live IPTV connection enquiry, preserve the owner’s configured protection and separate network observations from player access.",
+      "sections": [
+        {
+          "heading": "Describe the connection symptom",
+          "paragraphs": [
+            "Start a 5G Live IPTV DNS check with the exact symptom. Does Android show a connection message, do ordinary websites also fail, or does only one player operation fail? Note the network type and whether the same device has usable internet access. A saved Wi-Fi name alone does not establish that every internet service is reachable. Keep network observations separate from the player’s provider-login screen and from the state of a paid plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the current Private DNS mode",
+          "paragraphs": [
+            "Google places Private DNS under Android Settings, Network & internet; search Settings for Private DNS if the path differs. Read whether Off, Automatic or a provider hostname is selected without changing it. Some instructions depend on Android version and manufacturer. Google recommends leaving Private DNS on where available. Do not disable it, enter a guessed hostname or overwrite a work-managed choice as a routine streaming fix. Ask who configured an unfamiliar entry."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android advanced network settings and Private DNS",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ask the right owner before changing it",
+          "paragraphs": [
+            "If a custom setting is present, ask the device or network owner to verify its intended configuration rather than copying a resolver from an unsolicited message. Private DNS secures DNS questions and answers; it is not protection for all activity or proof of working video. Share only the device model, Android version, network type, selected mode and exact error wording with support. Hide private addresses and credentials. If general access works but playback fails, describe that separate result without resetting saved player details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV y DNS: lee el modo actual de Android",
+      "excerpt": "El DNS privado del teléfono y un plan IPTV son partes distintas de la configuración. Anota el modo y el síntoma exacto antes de cambiar la protección.",
+      "seo_title": "5G Live IPTV y DNS: lee el modo actual de Android",
+      "seo_description": "Revisa el DNS privado de Android al consultar una conexión de 5G Live IPTV, conserva la protección configurada y distingue la red del acceso al reproductor.",
+      "sections": [
+        {
+          "heading": "Describe el síntoma de conexión",
+          "paragraphs": [
+            "Empieza la revisión de DNS para 5G Live IPTV describiendo el síntoma. ¿Android muestra un mensaje de conexión, también fallan las páginas habituales o solo falla una función del reproductor? Anota el tipo de red y si ese dispositivo tiene acceso útil a internet. Un nombre de Wi-Fi guardado no demuestra que todos los servicios sean accesibles. Distingue estas observaciones de la pantalla de acceso al proveedor y del estado de un plan pagado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el modo de DNS privado",
+          "paragraphs": [
+            "Google sitúa DNS privado en Ajustes de Android, Redes e Internet; búscalo en Ajustes si la ruta difiere. Lee si está seleccionado Desactivado, Automático o un nombre de host del proveedor, sin cambiarlo. Algunas instrucciones dependen de la versión y del fabricante. Google recomienda mantener activado el DNS privado cuando esté disponible. No lo desactives, introduzcas un host supuesto ni sustituyas una opción de trabajo como solución habitual para ver vídeo. Pregunta quién configuró una entrada desconocida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: ajustes avanzados de red y DNS privado de Android",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta antes con el responsable",
+          "paragraphs": [
+            "Si hay un ajuste personalizado, pide al propietario o responsable de red que verifique su configuración prevista, en vez de copiar un servidor de un mensaje inesperado. El DNS privado protege consultas y respuestas DNS; no toda la actividad ni garantiza vídeo operativo. Comparte con soporte solo modelo, versión de Android, tipo de red, modo y texto exacto del error. Oculta direcciones privadas y credenciales. Si internet funciona pero la reproducción falla, describe ese resultado aparte sin restablecer los datos del reproductor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV et DNS : lire le mode Android existant",
+      "excerpt": "Le DNS privé du téléphone et l’abonnement IPTV relèvent de réglages différents. Notez le mode actuel et le problème exact avant de modifier la protection.",
+      "seo_title": "5G Live IPTV et DNS : lire le mode Android existant",
+      "seo_description": "Consultez le DNS privé Android lors d’un problème de connexion 5G Live IPTV, préservez la protection configurée et distinguez réseau et accès au lecteur.",
+      "sections": [
+        {
+          "heading": "Décrire le problème de connexion",
+          "paragraphs": [
+            "Commencez la vérification DNS de 5G Live IPTV par le symptôme exact. Android affiche-t-il un message de connexion, les sites habituels échouent-ils aussi ou seule une fonction du lecteur échoue-t-elle ? Notez le type de réseau et si cet appareil dispose d’un accès internet utilisable. Un réseau Wi-Fi enregistré ne prouve pas que tous les services sont accessibles. Distinguez ces observations de l’écran de connexion au fournisseur et de l’état d’un abonnement payé."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le mode DNS privé actuel",
+          "paragraphs": [
+            "Google place DNS privé dans les paramètres Android, Réseau et Internet ; recherchez ce terme si le chemin diffère. Lisez si le mode désactivé, automatique ou un nom d’hôte fournisseur est sélectionné, sans le modifier. Certaines instructions varient selon la version et le fabricant. Google recommande de laisser le DNS privé activé lorsqu’il est disponible. Ne le désactivez pas, ne devinez pas un hôte et ne remplacez pas un réglage professionnel pour tenter de réparer la lecture. Demandez qui a configuré une entrée inconnue."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google : paramètres réseau avancés et DNS privé Android",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulter le responsable avant toute modification",
+          "paragraphs": [
+            "Si un réglage personnalisé existe, demandez au propriétaire ou au responsable réseau d’en vérifier la configuration prévue plutôt que de copier un résolveur reçu sans sollicitation. Le DNS privé sécurise les questions et réponses DNS, pas toute l’activité, et ne prouve pas que la vidéo fonctionne. Communiquez seulement modèle, version Android, réseau, mode et message exact. Masquez adresses privées et identifiants. Si internet fonctionne mais pas la lecture, décrivez ce résultat séparément sans réinitialiser les données du lecteur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV e DNS: leggi la modalità Android esistente",
+      "excerpt": "Il DNS privato del telefono e un piano IPTV sono parti diverse della configurazione. Annota modalità e sintomo preciso prima di modificare la protezione.",
+      "seo_title": "5G Live IPTV e DNS: leggi la modalità Android esistente",
+      "seo_description": "Controlla il DNS privato Android durante una richiesta sulla connessione di 5G Live IPTV, conserva la protezione e distingui rete e accesso al lettore.",
+      "sections": [
+        {
+          "heading": "Descrivi il problema di connessione",
+          "paragraphs": [
+            "Inizia la verifica DNS di 5G Live IPTV descrivendo il sintomo preciso. Android mostra un messaggio di connessione, non funzionano neppure i siti abituali oppure fallisce solo un’operazione del lettore? Annota il tipo di rete e se quel dispositivo dispone di un accesso internet utilizzabile. Un nome Wi-Fi salvato non dimostra che ogni servizio sia raggiungibile. Tieni separate queste osservazioni dalla schermata di accesso al fornitore e dallo stato di un piano pagato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la modalità DNS privato",
+          "paragraphs": [
+            "Google colloca DNS privato nelle Impostazioni Android, Rete e Internet; cerca il termine nelle impostazioni se il percorso cambia. Leggi se è selezionato Disattivato, Automatico o un nome host del fornitore, senza modificarlo. Alcune indicazioni dipendono da versione e produttore. Google consiglia di lasciare attivo il DNS privato quando disponibile. Non disattivarlo, non inventare un host e non sostituire una scelta aziendale per tentare di risolvere lo streaming. Chiedi chi ha configurato una voce sconosciuta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: impostazioni di rete avanzate e DNS privato Android",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta il responsabile prima di modificare",
+          "paragraphs": [
+            "Se è presente un’impostazione personalizzata, chiedi al proprietario o al responsabile di rete di verificarne la configurazione prevista, invece di copiare un resolver da un messaggio inatteso. Il DNS privato protegge domande e risposte DNS, non ogni attività e non dimostra che il video funzioni. Comunica all’assistenza solo modello, versione Android, rete, modalità ed errore esatto. Nascondi indirizzi privati e credenziali. Se internet funziona ma la riproduzione no, descrivi separatamente il risultato senza ripristinare i dati del lettore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en DNS: lees de bestaande Android-instelling",
+      "excerpt": "Privé-DNS op de telefoon en een IPTV-abonnement zijn verschillende onderdelen. Noteer de huidige modus en het precieze verbindingsprobleem voordat je beveiliging wijzigt.",
+      "seo_title": "5G Live IPTV en DNS: lees de bestaande Android-instelling",
+      "seo_description": "Bekijk Android-privé-DNS bij een verbindingsvraag over 5G Live IPTV, behoud de ingestelde beveiliging en onderscheid netwerkwaarnemingen van spelertoegang.",
+      "sections": [
+        {
+          "heading": "Beschrijf het verbindingsprobleem",
+          "paragraphs": [
+            "Begin een DNS-controle voor 5G Live IPTV met het precieze probleem. Toont Android een verbindingsmelding, werken gewone websites ook niet of mislukt alleen één handeling in de speler? Noteer het netwerktype en of hetzelfde apparaat bruikbaar internet heeft. Een opgeslagen wifi-naam bewijst niet dat elke internetdienst bereikbaar is. Houd deze waarnemingen gescheiden van het inlogscherm van de provider en de status van een betaald abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige privé-DNS-modus",
+          "paragraphs": [
+            "Google plaatst Privé-DNS onder Android-instellingen, Netwerk en internet; zoek in Instellingen als het pad afwijkt. Lees of Uit, Automatisch of een hostnaam van een provider is geselecteerd, zonder iets te wijzigen. Sommige instructies verschillen per Android-versie en fabrikant. Google raadt aan privé-DNS ingeschakeld te laten waar het beschikbaar is. Schakel het niet uit, gok geen hostnaam en overschrijf geen beheerde werkinstelling als standaardoplossing voor streaming. Vraag wie een onbekende invoer heeft ingesteld."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: geavanceerde Android-netwerkinstellingen en privé-DNS",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Raadpleeg eerst de verantwoordelijke",
+          "paragraphs": [
+            "Vraag bij een aangepaste instelling aan de apparaat- of netwerkbeheerder om de bedoelde configuratie te controleren. Kopieer geen resolver uit een ongevraagd bericht. Privé-DNS beveiligt DNS-vragen en -antwoorden, niet al het verkeer, en bewijst geen werkende video. Deel met ondersteuning alleen model, Android-versie, netwerktype, modus en exacte fouttekst. Verberg privé-adressen en inloggegevens. Werkt internet wel maar afspelen niet, beschrijf dat afzonderlijke resultaat zonder opgeslagen spelergegevens te resetten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV e DNS: lê o modo atual do Android",
+      "excerpt": "O DNS privado do telefone e um plano IPTV são partes diferentes da configuração. Anota o modo atual e o sintoma exato antes de alterar a proteção.",
+      "seo_title": "5G Live IPTV e DNS: lê o modo atual do Android",
+      "seo_description": "Consulta o DNS privado Android numa dúvida de ligação ao 5G Live IPTV, preserva a proteção configurada e distingue a rede do acesso ao leitor.",
+      "sections": [
+        {
+          "heading": "Descreve o sintoma de ligação",
+          "paragraphs": [
+            "Começa a verificação de DNS do 5G Live IPTV pelo sintoma exato. O Android mostra uma mensagem de ligação, os sites habituais também falham ou apenas uma operação do leitor falha? Anota o tipo de rede e se o mesmo equipamento tem acesso utilizável à internet. Um nome de Wi-Fi guardado não demonstra que todos os serviços são acessíveis. Separa estas observações do ecrã de entrada no fornecedor e do estado de um plano pago."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lê o modo de DNS privado",
+          "paragraphs": [
+            "A Google coloca DNS privado em Definições Android, Rede e Internet; procura o termo nas definições se o caminho diferir. Lê se está selecionado Desativado, Automático ou um nome de anfitrião do fornecedor, sem mudar nada. Algumas instruções dependem da versão e do fabricante. A Google recomenda manter o DNS privado ativo quando disponível. Não o desatives, não adivinhes um anfitrião nem substituas uma escolha profissional gerida como solução habitual para transmissão. Pergunta quem configurou uma entrada desconhecida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: definições de rede avançadas e DNS privado Android",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta primeiro o responsável",
+          "paragraphs": [
+            "Se houver uma opção personalizada, pede ao proprietário ou responsável da rede que confirme a configuração pretendida, em vez de copiar um resolvedor de uma mensagem inesperada. O DNS privado protege perguntas e respostas DNS, não toda a atividade, nem prova que o vídeo funciona. Partilha com o apoio apenas modelo, versão Android, rede, modo e erro exato. Oculta endereços privados e credenciais. Se a internet funcionar mas a reprodução falhar, descreve esse resultado separadamente sem repor os dados do leitor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV и DNS: прочитайте текущий режим Android",
+      "excerpt": "Частный DNS телефона и план IPTV относятся к разным частям настройки. Запишите текущий режим и точный симптом подключения, прежде чем менять защиту.",
+      "seo_title": "5G Live IPTV и DNS: прочитайте текущий режим Android",
+      "seo_description": "Проверьте частный DNS Android при вопросе о подключении 5G Live IPTV, сохраните защиту владельца и отделяйте сетевые наблюдения от доступа к проигрывателю.",
+      "sections": [
+        {
+          "heading": "Опишите симптом подключения",
+          "paragraphs": [
+            "Начните проверку DNS для 5G Live IPTV с точного симптома. Android показывает сообщение о подключении, обычные сайты тоже недоступны или не работает только одна операция проигрывателя? Запишите тип сети и наличие рабочего интернета на том же устройстве. Сохранённое имя Wi-Fi не доказывает доступность каждого интернет-сервиса. Отделяйте сетевые наблюдения от экрана входа к провайдеру и состояния оплаченного плана, не объединяя их в один вывод о подписке."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущий режим частного DNS",
+          "paragraphs": [
+            "Google указывает частный DNS в настройках Android, в разделе сети и интернета; при другом расположении найдите его поиском в настройках. Прочитайте выбранный режим: выключен, автоматически или имя хоста провайдера, ничего не меняя. Инструкции могут зависеть от версии и производителя. Google рекомендует сохранять частный DNS включённым, когда он доступен. Не отключайте его, не угадывайте имя хоста и не заменяйте рабочую управляемую настройку ради обычной проверки видео. Выясните, кто создал неизвестную запись."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: расширенные сетевые настройки Android и частный DNS",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сначала обратитесь к ответственному владельцу",
+          "paragraphs": [
+            "Если есть пользовательская настройка, попросите владельца устройства или сети проверить предусмотренную конфигурацию, а не копируйте резолвер из неожиданного сообщения. Частный DNS защищает DNS-запросы и ответы, а не всю активность, и не доказывает работоспособность видео. Передайте поддержке только модель, версию Android, тип сети, режим и точный текст ошибки. Скройте частные адреса и учётные данные. Если интернет работает, а видео нет, опишите этот отдельный результат без сброса сохранённых данных проигрывателя."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی DNS جانچ: Android کا موجودہ طریقہ پڑھیں",
+      "excerpt": "فون کی نجی DNS ترتیب اور IPTV پلان الگ چیزیں ہیں۔ حفاظتی ترجیح بدلنے سے پہلے موجودہ طریقہ اور رابطے کی درست علامت نوٹ کریں۔",
+      "seo_title": "5G Live IPTV کی DNS جانچ: Android کا موجودہ طریقہ پڑھیں",
+      "seo_description": "5G Live IPTV کے رابطے سے متعلق سوال میں Android کی نجی DNS ترتیب پڑھیں، مالک کی مقررہ حفاظت قائم رکھیں اور نیٹ ورک کو پلیئر کی رسائی سے الگ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "رابطے کی درست علامت بتائیں",
+          "paragraphs": [
+            "5G Live IPTV کی DNS جانچ درست علامت سے شروع کریں۔ کیا Android رابطے کا پیغام دکھاتا ہے، عام ویب سائٹس بھی نہیں کھلتیں، یا پلیئر کا صرف ایک عمل ناکام ہوتا ہے؟ نیٹ ورک کی قسم اور اسی آلے پر قابل استعمال انٹرنیٹ ہونے کا نتیجہ لکھیں۔ محفوظ Wi-Fi نام سے یہ ثابت نہیں ہوتا کہ ہر انٹرنیٹ سہولت دستیاب ہے۔ نیٹ ورک کے مشاہدات کو فراہم کنندہ کی لاگ ان اسکرین اور ادا شدہ پلان کی حالت سے الگ رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نجی DNS کا موجودہ طریقہ پڑھیں",
+          "paragraphs": [
+            "Google نے Android کی ترتیبات میں نیٹ ورک اور انٹرنیٹ کے تحت نجی DNS بتایا ہے؛ راستہ مختلف ہو تو ترتیبات میں اسے تلاش کریں۔ بغیر کچھ بدلے پڑھیں کہ بند، خودکار یا فراہم کنندہ کا میزبان نام منتخب ہے۔ کچھ ہدایات Android کے ورژن اور بنانے والے کے لحاظ سے بدلتی ہیں۔ Google دستیاب ہونے پر نجی DNS فعال رکھنے کی سفارش کرتا ہے۔ معمول کی اسٹریمنگ جانچ کے لیے اسے بند نہ کریں، اندازے سے میزبان نام نہ لکھیں اور دفتری انتظام والی ترجیح نہ بدلیں۔ نامانوس اندراج ترتیب دینے والے کا پتا کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android کی اعلیٰ نیٹ ورک ترتیبات اور نجی DNS",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "بدلنے سے پہلے ذمہ دار مالک سے پوچھیں",
+          "paragraphs": [
+            "اپنی مرضی کی ترتیب ہو تو آلے یا نیٹ ورک کے مالک سے اس کی مطلوبہ ترتیب کی تصدیق مانگیں؛ غیر متوقع پیغام سے کوئی حل کنندہ نقل نہ کریں۔ نجی DNS صرف DNS سوالات اور جوابات محفوظ کرتا ہے، ساری سرگرمی نہیں، اور چلتی ویڈیو کا ثبوت نہیں ہے۔ مدد کے لیے صرف ماڈل، Android ورژن، نیٹ ورک، منتخب طریقہ اور خطا کا درست متن دیں۔ نجی پتے اور اسناد چھپائیں۔ عام انٹرنیٹ چلے مگر ویڈیو نہ چلے تو محفوظ پلیئر تفصیلات ری سیٹ کیے بغیر وہ الگ نتیجہ بتائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV وDNS: اقرأ وضع Android الحالي",
+      "excerpt": "إعداد DNS الخاص في الهاتف وخطة IPTV جزءان مختلفان. دوّن الوضع الحالي وعرض الاتصال الدقيق قبل تغيير إعدادات الحماية الموجودة.",
+      "seo_title": "5G Live IPTV وDNS: اقرأ وضع Android الحالي",
+      "seo_description": "راجع DNS الخاص في Android عند الاستفسار عن اتصال 5G Live IPTV، وحافظ على حماية المالك وافصل ملاحظات الشبكة عن الوصول إلى المشغّل.",
+      "sections": [
+        {
+          "heading": "صف عرض الاتصال بدقة",
+          "paragraphs": [
+            "ابدأ فحص DNS لخدمة 5G Live IPTV بالعرض الدقيق. هل يعرض Android رسالة اتصال، أم تفشل المواقع المعتادة أيضاً، أم تفشل عملية واحدة داخل المشغّل فقط؟ دوّن نوع الشبكة وما إذا كان الجهاز نفسه يملك اتصال إنترنت قابلاً للاستخدام. اسم شبكة Wi-Fi المحفوظ وحده لا يثبت إمكانية الوصول إلى جميع الخدمات. افصل هذه الملاحظات عن شاشة دخول المزوّد وحالة الخطة المدفوعة، ولا تجمعها في استنتاج واحد عن الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ وضع DNS الخاص الحالي",
+          "paragraphs": [
+            "تضع Google خيار DNS الخاص ضمن إعدادات Android، الشبكة والإنترنت؛ ابحث عنه داخل الإعدادات إذا اختلف المسار. اقرأ هل المحدد إيقاف أم تلقائي أم اسم مضيف لمزوّد الخدمة، دون تغييره. تختلف بعض التعليمات حسب إصدار Android والشركة المصنعة. توصي Google بإبقاء DNS الخاص مفعّلاً حيث يتوفر. لا تعطله ولا تخمّن اسم مضيف ولا تستبدل إعداداً تديره جهة العمل باعتباره حلاً اعتيادياً للبث. اسأل عمّن ضبط أي إدخال غير مألوف."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: إعدادات شبكة Android المتقدمة وDNS الخاص",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اسأل المسؤول قبل تغييره",
+          "paragraphs": [
+            "عند وجود إعداد مخصص، اطلب من مالك الجهاز أو مسؤول الشبكة التحقق من التهيئة المقصودة بدلاً من نسخ محلل من رسالة غير متوقعة. يؤمّن DNS الخاص أسئلة DNS وإجاباتها فقط، لا جميع الأنشطة، ولا يثبت عمل الفيديو. شارك الدعم بطراز الجهاز وإصدار Android ونوع الشبكة والوضع ونص الخطأ فقط. أخفِ العناوين الخاصة وبيانات الدخول. إذا عمل الإنترنت ولم تعمل المشاهدة، فصف هذه النتيجة منفصلة دون إعادة ضبط تفاصيل المشغّل المحفوظة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV की DNS जाँच: Android का मौजूदा मोड पढ़ें",
+      "excerpt": "फोन का निजी DNS और IPTV प्लान सेटअप के अलग हिस्से हैं। सुरक्षा बदलने से पहले मौजूदा मोड और कनेक्शन का सही लक्षण लिखें।",
+      "seo_title": "5G Live IPTV की DNS जाँच: Android का मौजूदा मोड पढ़ें",
+      "seo_description": "5G Live IPTV के कनेक्शन संबंधी सवाल में Android का निजी DNS देखें, मालिक की तय सुरक्षा बनाए रखें और नेटवर्क को प्लेयर की पहुँच से अलग समझें।",
+      "sections": [
+        {
+          "heading": "कनेक्शन का सही लक्षण बताएँ",
+          "paragraphs": [
+            "5G Live IPTV की DNS जाँच सही लक्षण से शुरू करें। क्या Android कनेक्शन संदेश दिखाता है, सामान्य वेबसाइट भी नहीं खुलतीं, या प्लेयर का सिर्फ एक काम विफल होता है? नेटवर्क का प्रकार और उसी उपकरण पर उपयोग योग्य इंटरनेट मिलने का परिणाम लिखें। सहेजा हुआ Wi-Fi नाम यह साबित नहीं करता कि हर इंटरनेट सेवा उपलब्ध है। नेटवर्क के संकेतों को प्रदाता की लॉगिन स्क्रीन और भुगतान किए गए प्लान की स्थिति से अलग रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "निजी DNS का मौजूदा मोड पढ़ें",
+          "paragraphs": [
+            "Google ने Android की सेटिंग्ज़ में नेटवर्क और इंटरनेट के भीतर निजी DNS बताया है; रास्ता अलग हो तो सेटिंग्ज़ में इसे खोजें। बिना बदलाव पढ़ें कि बंद, अपने-आप या प्रदाता का होस्टनाम चुना गया है। कुछ निर्देश Android संस्करण और निर्माता के अनुसार बदलते हैं। Google उपलब्ध होने पर निजी DNS चालू रखने की सलाह देता है। सामान्य स्ट्रीमिंग जाँच के लिए इसे बंद न करें, अनुमान से होस्टनाम न भरें और काम की प्रबंधित पसंद न बदलें। अपरिचित प्रविष्टि किसने बनाई, यह पूछें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google: Android की उन्नत नेटवर्क सेटिंग्ज़ और निजी DNS",
+              "url": "https://support.google.com/android/answer/9654714?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "बदलने से पहले जिम्मेदार मालिक से पूछें",
+          "paragraphs": [
+            "कस्टम सेटिंग मौजूद हो तो उपकरण या नेटवर्क के मालिक से उसके तय कॉन्फ़िगरेशन की पुष्टि माँगें; अनचाहे संदेश से रिज़ॉल्वर कॉपी न करें। निजी DNS सिर्फ DNS सवाल और जवाब सुरक्षित करता है, सारी गतिविधि नहीं, और वीडियो चलने का प्रमाण नहीं है। सहायता को केवल मॉडल, Android संस्करण, नेटवर्क, चुना मोड और त्रुटि का सही पाठ दें। निजी पते और लॉगिन जानकारी छिपाएँ। सामान्य इंटरनेट चले लेकिन वीडियो न चले तो प्लेयर की सहेजी जानकारी रीसेट किए बिना यह अलग परिणाम बताएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: Android advanced network settings and Private DNS",
+      "url": "https://support.google.com/android/answer/9654714?hl=en"
+    }
+  ]
+}
