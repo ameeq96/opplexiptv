@@ -75,6 +75,7 @@
         }
     @endphp
 
+    <main>
     @include('includes._slider', ['useNativeCarousel' => $useNativeHomeCarousel])
 
     @if ($isDocumentEnglish)
@@ -277,6 +278,7 @@
     @include('includes._home-map')
 
     @include('includes._check-trail')
+    </main>
 
 
 @stop

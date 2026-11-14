@@ -21,7 +21,7 @@
             </div>
             <div class="col-lg-6" style="text-align: {{ $isRtl ? 'right' : 'left' }};">
                 <div class="home-split-section__eyebrow mb-2">{{ $isDocumentEnglish ? $documentSplit['eyebrow'] : __('messages.home_split_eyebrow') }}</div>
-                <h3 id="home-split-heading" class="mb-3">{{ $isDocumentEnglish ? $documentSplit['heading'] : __('messages.home_split_heading') }}</h3>
+                <h2 id="home-split-heading" class="mb-3">{{ $isDocumentEnglish ? $documentSplit['heading'] : __('messages.home_split_heading') }}</h2>
                 <p class="home-split-section__text mb-0">{{ $isDocumentEnglish ? $documentSplit['text'] : __('messages.home_split_text') }}</p>
             </div>
         </div>
