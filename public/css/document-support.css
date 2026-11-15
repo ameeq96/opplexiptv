@@ -867,7 +867,7 @@ html[dir="rtl"] .document-support__contact-card .fa-arrow-right {
 
 .document-support__figure {
     max-width: 920px;
-    margin: 40px auto 0;
+    margin: 40px auto 56px;
 }
 
 .document-support__figure img {
