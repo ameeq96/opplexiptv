@@ -99,6 +99,12 @@ class SchemaService
             'telephone'   => (string) config('services.whatsapp.display'),
             'email'       => self::EMAIL,
             'areaServed'  => 'Multiple supported regions',
+            'address'     => [
+                '@type'           => 'PostalAddress',
+                'addressLocality' => 'Saskatoon',
+                'addressRegion'   => 'SK',
+                'addressCountry'  => 'CA',
+            ],
             'contactPoint' => [
                 '@type'             => 'ContactPoint',
                 'telephone'         => (string) config('services.whatsapp.display'),

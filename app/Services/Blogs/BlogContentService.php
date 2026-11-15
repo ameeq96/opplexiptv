@@ -10,6 +10,9 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class BlogContentService
 {
+    // Author named in the landing blog API responses only; stored posts, revisions and build snapshots are unchanged.
+    private const API_AUTHOR = ['name' => 'Muhammad Ameeq Khan', 'type' => 'Person'];
+
     public function __construct(private readonly BlogQualityService $quality)
     {
     }
@@ -24,7 +27,7 @@ class BlogContentService
         $last = max(1, (int) ceil($total / $perPage));
         abort_if($page < 1 || $page > $last, 404);
         $rows = $this->publishedQuery($site)?->offset(($page - 1) * $perPage)->limit($perPage)->get() ?? collect();
-        $snapshot['posts'] = $rows->map(fn ($run) => $run->payload['post'])->values()->all();
+        $snapshot['posts'] = $rows->map(fn ($run) => array_replace($run->payload['post'], ['author' => self::API_AUTHOR]))->values()->all();
         abort_unless(hash_equals($snapshot['revision'], $this->inventory($site)['revision']), 409, 'The blog inventory changed while reading this page.');
         $snapshot['pagination'] = ['current_page' => $page, 'last_page' => $last, 'total' => $total, 'per_page' => $perPage];
         return $snapshot;
@@ -40,6 +43,7 @@ class BlogContentService
         abort_unless(hash_equals($snapshot['revision'], $this->inventory($site)['revision']), 409, 'The blog article changed while reading it.');
         $translation = $post['translations'][$locale];
         unset($post['translations']);
+        $post['author'] = self::API_AUTHOR;
         $post['translation'] = $translation;
         return ['site_key' => $site, 'domain' => $snapshot['domain'], 'locale' => $locale, 'revision' => $snapshot['revision'], 'post' => $post];
     }

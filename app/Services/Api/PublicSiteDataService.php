@@ -962,6 +962,9 @@ class PublicSiteDataService
                     unset($jsonLd['image']);
                 }
             }
+            if (($jsonLd['@type'] ?? null) === 'BlogPosting') {
+                $jsonLd['author'] = ['@type' => 'Person', 'name' => 'Muhammad Ameeq Khan'];
+            }
         }
 
         return compact(
