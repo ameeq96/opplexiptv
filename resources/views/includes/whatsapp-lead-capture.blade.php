@@ -458,7 +458,7 @@
                 <div class="whatsapp-lead-capture__phone" dir="ltr">
                     <div class="whatsapp-lead-capture__country-control">
                         <img class="whatsapp-lead-capture__country-flag" data-whatsapp-lead-country-flag
-                            src="https://flagcdn.io/flags/4x3/pk.svg" alt="" width="24" height="18"
+                            src="https://flagcdn.io/flags/4x3/pk.svg" alt="Country flag" width="24" height="18"
                             decoding="async" referrerpolicy="no-referrer" aria-hidden="true">
                         <select id="whatsapp-lead-country" class="whatsapp-lead-capture__country" name="dial_code"
                             autocomplete="tel-country-code" aria-label="{{ __('interface.phone.country_list_aria') }}"

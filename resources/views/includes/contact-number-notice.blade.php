@@ -140,7 +140,7 @@
             aria-label="{{ __('interface.contact_number_notice.close_label') }}">&times;</button>
 
         <span class="contact-number-notice__icon" aria-hidden="true">
-            <img src="{{ asset('images/whatsapp.webp') }}" width="38" height="38" alt="">
+            <img src="{{ asset('images/whatsapp.webp') }}" width="38" height="38" alt="WhatsApp">
         </span>
         <p class="contact-number-notice__eyebrow">{{ __('interface.contact_number_notice.eyebrow') }}</p>
         <h2 id="contact-number-notice-title" class="contact-number-notice__title">

@@ -41,6 +41,26 @@ class GenerateSitemap extends Command
             'refund-policy',
         ];
 
+        // Blade view rendered by each named route (HomeController, BlogController, Route::view),
+        // used only to date the static entries below.
+        $routeViews = [
+            'home'              => 'pages/home',
+            'about'             => 'pages/about',
+            'packages'          => 'pages/packages',
+            'reseller-panel'    => 'pages/resellerpanel',
+            'iptv-applications' => 'pages/iptvapplications',
+            'faqs'              => 'pages/faq',
+            'contact'           => 'pages/contact',
+            'shop'              => 'pages/shop',
+            'movies'            => 'pages/movies',
+            'activate'          => 'pages/activate',
+            'activate-info'     => 'pages/activate-info',
+            'blogs.index'       => 'blogs/index',
+            'terms-of-service'  => 'policies/terms',
+            'privacy-policy'    => 'policies/privacy',
+            'refund-policy'     => 'policies/refund',
+        ];
+
         // XML init - correct namespaces (note: xmlns:xhtml on root only)
         $xml = new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"/>');
 
@@ -93,6 +113,10 @@ class GenerateSitemap extends Command
                 }
                 $urlNode = $xml->addChild('url');
                 $urlNode->addChild('loc', htmlspecialchars($loc, ENT_QUOTES, 'UTF-8'));
+                $lastmod = $this->staticLastmod($routeViews[$routeName] ?? null, $locale);
+                if ($lastmod !== null) {
+                    $urlNode->addChild('lastmod', $lastmod);
+                }
                 $urlNode->addChild('changefreq', $routeName === 'home' ? 'daily' : 'weekly');
                 $urlNode->addChild('priority', $routeName === 'home' ? '1.0' : '0.8');
 
@@ -240,6 +264,32 @@ class GenerateSitemap extends Command
         $urlNode->addChild('lastmod', $lastmod);
         $urlNode->addChild('changefreq', 'weekly');
         $urlNode->addChild('priority', $priority);
+    }
+
+    /**
+     * lastmod for a static page: newest file modification time among the page's
+     * Blade view and the locale's language files, never later than now.
+     */
+    private function staticLastmod(?string $view, string $locale): ?string
+    {
+        $files = glob(lang_path($locale) . '/*.php') ?: [];
+        if ($view !== null) {
+            $files[] = resource_path('views/' . $view . '.blade.php');
+        }
+
+        $mtimes = [];
+        foreach ($files as $file) {
+            $mtime = is_file($file) ? filemtime($file) : false;
+            if ($mtime !== false) {
+                $mtimes[] = $mtime;
+            }
+        }
+
+        if ($mtimes === []) {
+            return null;
+        }
+
+        return now()->setTimestamp(min(max($mtimes), time()))->toAtomString();
     }
 
     private function hasTable(string $table): bool
