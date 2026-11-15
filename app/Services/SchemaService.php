@@ -115,7 +115,8 @@ class SchemaService
             ],
         ];
 
-        $sameAs = $this->sameAs($socials);
+        // Google Business Profile for Opplex IPTV Subscription Services (owner-supplied share link).
+        $sameAs = array_values(array_unique(array_merge($this->sameAs($socials), ['https://share.google/ivzk8xTPB40q8jD06'])));
         if ($sameAs !== []) {
             $node['sameAs'] = $sameAs;
         }
