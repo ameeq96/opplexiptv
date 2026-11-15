@@ -864,3 +864,23 @@ html[dir="rtl"] .document-support__contact-card .fa-arrow-right {
         padding-right: 0;
     }
 }
+
+.document-support__figure {
+    max-width: 920px;
+    margin: 40px auto 0;
+}
+
+.document-support__figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 14px;
+}
+
+.document-support__figure figcaption {
+    margin-top: 12px;
+    font-size: 0.92rem;
+    text-align: center;
+    opacity: 0.75;
+}

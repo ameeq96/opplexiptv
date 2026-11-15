@@ -96,6 +96,16 @@
                 @endforeach
             </div>
 
+            @if (app()->getLocale() === 'en')
+                <div class="auto-container">
+                    <figure class="document-support__figure">
+                        <img src="{{ asset('images/guides/plan-builder.webp') }}" width="1100" height="1051" loading="lazy" decoding="async"
+                             alt="The Opplex IPTV plan builder with three steps: choose a subscription length, choose a provider and choose a device, with the order summary on the right">
+                        <figcaption>The plan builder: choose a term, a provider and your device. The order summary updates before checkout.</figcaption>
+                    </figure>
+                </div>
+            @endif
+
             <section class="document-support__cta" aria-labelledby="document-faq-cta-title">
                 <div class="auto-container document-support__cta-inner">
                     <div>
