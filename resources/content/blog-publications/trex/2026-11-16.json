@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-16",
+  "topic": "Identify a PIN request at app launch or inside a player without confusing development-environment documentation with a consumer recovery procedure",
+  "primary_keyword": "Trex IPTV PIN prompt",
+  "slug": "trex-pin-prompt-device-restriction-or-player-access",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV PIN prompt: identify the screen before entering anything",
+      "excerpt": "A PIN request can belong to device restrictions rather than provider access. Read the screen and let the authorised owner handle protected settings.",
+      "seo_title": "Trex IPTV PIN prompt: identify the screen before entering anything",
+      "seo_description": "A PIN request can belong to device restrictions rather than provider access. Read the screen and let the authorised owner handle protected settings.",
+      "sections": [
+        {
+          "heading": "Locate the request",
+          "paragraphs": [
+            "A Trex IPTV PIN prompt needs context before anyone guesses a code. Note whether it appears before the player opens, inside the player, or during an account action. Record the exact heading without recording the code itself. A request appearing at app launch can concern a different layer from a provider username or password. Do not treat an unfamiliar prompt as proof that another subscription is required."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Keep development instructions separate",
+          "paragraphs": [
+            "Amazon documents app-launch PIN protection in its Vega Virtual Device developer guide. That reference describes a development environment, not a universal consumer recovery route. Do not copy its emulator menus or developer commands onto your television to remove a restriction. Ask the device owner to identify the applicable official device guidance. Leave parental controls enabled and avoid guessing, sharing or bypassing the PIN."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Ask a focused support question",
+          "paragraphs": [
+            "For help, provide the Fire TV model, the player name and the point at which the request appeared. Hide account identifiers in screenshots and never send a PIN to support. Keep the existing installation and saved access while the owner checks the restriction. The currently confirmed Trex plan allows one simultaneous connection; opening another viewing session is not a useful way to investigate a PIN gate."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Aviso de PIN en Trex IPTV: identifica primero la pantalla",
+      "excerpt": "Una petición de PIN puede proceder de restricciones del dispositivo. Lee la pantalla y deja los ajustes protegidos al propietario autorizado.",
+      "seo_title": "Aviso de PIN en Trex IPTV: identifica primero la pantalla",
+      "seo_description": "Una petición de PIN puede proceder de restricciones del dispositivo. Lee la pantalla y deja los ajustes protegidos al propietario autorizado.",
+      "sections": [
+        {
+          "heading": "Localiza la petición",
+          "paragraphs": [
+            "Antes de probar un código, observa si el aviso aparece antes de abrir el reproductor, dentro de este o durante una acción de cuenta. Anota el encabezado exacto sin guardar el propio PIN. Una petición al iniciar una aplicación puede pertenecer a otra capa distinta del usuario y la contraseña del proveedor. Un aviso desconocido no demuestra que necesites otra suscripción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Separa las instrucciones de desarrollo",
+          "paragraphs": [
+            "Amazon documenta la protección del inicio de aplicaciones mediante PIN en su guía de desarrollo de Vega Virtual Device. Describe un entorno de desarrollo, no una recuperación universal para consumidores. No traslades los menús del emulador ni sus comandos al televisor para eliminar restricciones. El propietario debe localizar la guía oficial correspondiente a su dispositivo. Mantén los controles parentales y no adivines, compartas ni eludas el PIN."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta con precisión",
+          "paragraphs": [
+            "Indica modelo de Fire TV, nombre del reproductor y momento en que aparece la solicitud. Oculta identificadores en capturas y nunca envíes el PIN al soporte. Conserva la instalación y los accesos mientras el propietario revisa la restricción. El plan Trex confirmado permite una conexión simultánea; abrir otra sesión de reproducción no ayuda a investigar este bloqueo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Demande de code PIN Trex IPTV : identifier d’abord l’écran",
+      "excerpt": "Une demande de code peut venir des restrictions de l’appareil. Lisez l’écran et laissez les réglages protégés au propriétaire autorisé.",
+      "seo_title": "Demande de code PIN Trex IPTV : identifier d’abord l’écran",
+      "seo_description": "Une demande de code peut venir des restrictions de l’appareil. Lisez l’écran et laissez les réglages protégés au propriétaire autorisé.",
+      "sections": [
+        {
+          "heading": "Repérer la demande",
+          "paragraphs": [
+            "Avant d’essayer un code, notez si la demande apparaît avant l’ouverture du lecteur, dans celui-ci ou pendant une opération du compte. Relevez le titre exact sans enregistrer le code. Une demande au lancement peut relever d’un autre niveau que les identifiants du fournisseur. Un message inconnu ne prouve pas qu’un autre abonnement soit nécessaire."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguer les instructions de développement",
+          "paragraphs": [
+            "Amazon documente une protection du lancement par code dans son guide de développement Vega Virtual Device. Il s’agit d’un environnement de développement, pas d’une procédure universelle de récupération pour les particuliers. Ne transposez pas les menus de l’émulateur ou ses commandes au téléviseur pour retirer une restriction. Le propriétaire doit consulter les instructions officielles adaptées à son appareil. Conservez les contrôles parentaux et ne devinez, partagez ou contournez pas le code."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Formuler une demande précise",
+          "paragraphs": [
+            "Communiquez le modèle Fire TV, le nom du lecteur et le moment où la demande apparaît. Masquez les identifiants sur les captures et n’envoyez jamais le code au support. Préservez l’installation et les accès pendant la vérification du propriétaire. Le forfait Trex confirmé autorise une connexion simultanée ; lancer une seconde lecture n’aide pas à comprendre ce verrouillage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Richiesta PIN Trex IPTV: identifica prima la schermata",
+      "excerpt": "La richiesta di un PIN può dipendere dai limiti del dispositivo. Leggi la schermata e affida le impostazioni protette al proprietario autorizzato.",
+      "seo_title": "Richiesta PIN Trex IPTV: identifica prima la schermata",
+      "seo_description": "La richiesta di un PIN può dipendere dai limiti del dispositivo. Leggi la schermata e affida le impostazioni protette al proprietario autorizzato.",
+      "sections": [
+        {
+          "heading": "Individua la richiesta",
+          "paragraphs": [
+            "Prima di tentare un codice, osserva se la richiesta compare prima dell’apertura del lettore, al suo interno o durante un’operazione sull’account. Annota il titolo esatto senza registrare il PIN. Un avviso all’avvio di un’app può appartenere a un livello diverso dalle credenziali del fornitore. Un messaggio sconosciuto non dimostra che serva un altro abbonamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui le istruzioni per sviluppatori",
+          "paragraphs": [
+            "Amazon documenta la protezione dell’avvio mediante PIN nella guida per sviluppatori Vega Virtual Device. È un ambiente di sviluppo, non una procedura universale di recupero per utenti domestici. Non copiare sul televisore menu dell’emulatore o comandi per rimuovere restrizioni. Il proprietario deve individuare la guida ufficiale adatta al dispositivo. Mantieni i controlli parentali: non indovinare, condividere o aggirare il PIN."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chiedi assistenza mirata",
+          "paragraphs": [
+            "Indica modello Fire TV, nome del lettore e momento in cui appare la richiesta. Nascondi gli identificativi nelle immagini e non inviare mai il PIN all’assistenza. Conserva installazione e accessi mentre il proprietario verifica il limite. Il piano Trex confermato consente una connessione simultanea; aprire un’altra sessione di visione non aiuta a capire questo blocco."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-pincode gevraagd: bepaal eerst welk scherm dit is",
+      "excerpt": "Een pincodevraag kan bij apparaatbeperkingen horen. Lees het scherm en laat beveiligde instellingen aan de bevoegde eigenaar over.",
+      "seo_title": "Trex IPTV-pincode gevraagd: bepaal eerst welk scherm dit is",
+      "seo_description": "Een pincodevraag kan bij apparaatbeperkingen horen. Lees het scherm en laat beveiligde instellingen aan de bevoegde eigenaar over.",
+      "sections": [
+        {
+          "heading": "Bepaal waar de vraag verschijnt",
+          "paragraphs": [
+            "Ga niet zomaar codes proberen. Noteer of de vraag vóór het openen van de speler, in de speler of bij een accounthandeling verschijnt. Schrijf de exacte kop op, zonder de code vast te leggen. Een vraag bij het starten kan een andere laag betreffen dan de gebruikersnaam en het wachtwoord van de aanbieder. Een onbekende melding bewijst niet dat je nog een abonnement nodig hebt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Houd ontwikkelinstructies apart",
+          "paragraphs": [
+            "Amazon beschrijft pincodebeveiliging bij appstart in de ontwikkelaarsgids voor Vega Virtual Device. Die gaat over een ontwikkelomgeving, niet over een universele herstelroute voor consumenten. Kopieer geen emulatormenu’s of ontwikkelcommando’s naar je televisie om een beperking te verwijderen. Laat de eigenaar de officiële uitleg voor het eigen apparaat zoeken. Behoud ouderlijk toezicht en raad, deel of omzeil de code niet."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Stel een gerichte ondersteuningsvraag",
+          "paragraphs": [
+            "Vermeld Fire TV-model, spelernaam en het moment waarop de vraag verscheen. Verberg accountidentificatie op afbeeldingen en stuur nooit een pincode naar ondersteuning. Behoud installatie en toegang tijdens de controle door de eigenaar. Het bevestigde Trex-abonnement staat één gelijktijdige verbinding toe; een tweede kijksessie starten helpt niet om deze toegangspoort te onderzoeken."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Pedido de PIN no Trex IPTV: identifique primeiro o ecrã",
+      "excerpt": "Um pedido de PIN pode pertencer às restrições do dispositivo. Leia o ecrã e deixe as definições protegidas ao proprietário autorizado.",
+      "seo_title": "Pedido de PIN no Trex IPTV: identifique primeiro o ecrã",
+      "seo_description": "Um pedido de PIN pode pertencer às restrições do dispositivo. Leia o ecrã e deixe as definições protegidas ao proprietário autorizado.",
+      "sections": [
+        {
+          "heading": "Localize o pedido",
+          "paragraphs": [
+            "Antes de experimentar um código, veja se o pedido aparece antes de abrir o leitor, dentro dele ou durante uma operação da conta. Anote o título exato sem guardar o próprio PIN. Um aviso ao iniciar uma aplicação pode pertencer a outra camada, diferente dos dados do fornecedor. Uma mensagem desconhecida não prova que seja necessária outra subscrição."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Separe as instruções de desenvolvimento",
+          "paragraphs": [
+            "A Amazon documenta a proteção do arranque de aplicações por PIN no guia de desenvolvimento Vega Virtual Device. Trata-se de um ambiente de desenvolvimento, não de um processo universal de recuperação para consumidores. Não copie menus do emulador nem comandos para o televisor para retirar restrições. O proprietário deve consultar a documentação oficial adequada ao dispositivo. Preserve os controlos parentais; não tente adivinhar, partilhar ou contornar o PIN."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Faça uma pergunta concreta",
+          "paragraphs": [
+            "Indique modelo Fire TV, nome do leitor e momento em que surgiu o pedido. Oculte identificadores nas imagens e nunca envie o PIN ao suporte. Mantenha instalação e acessos enquanto o proprietário verifica a restrição. O plano Trex confirmado permite uma ligação simultânea; iniciar outra sessão de visualização não ajuda a investigar este bloqueio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Запрос PIN в Trex IPTV: сначала определите экран",
+      "excerpt": "Запрос PIN может относиться к ограничениям устройства. Прочитайте сообщение и оставьте защищённые настройки уполномоченному владельцу.",
+      "seo_title": "Запрос PIN в Trex IPTV: сначала определите экран",
+      "seo_description": "Запрос PIN может относиться к ограничениям устройства. Прочитайте сообщение и оставьте защищённые настройки уполномоченному владельцу.",
+      "sections": [
+        {
+          "heading": "Определите место запроса",
+          "paragraphs": [
+            "Не начинайте с подбора кода. Отметьте, появляется ли запрос до открытия проигрывателя, внутри него или при операции с учётной записью. Запишите точный заголовок без самого PIN. Защита запуска приложения может относиться к другому уровню, чем имя пользователя и пароль поставщика. Незнакомое сообщение не доказывает необходимость покупать другую подписку."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "Отделите инструкции разработчика",
+          "paragraphs": [
+            "Amazon описывает PIN-защиту запуска в руководстве для разработчиков Vega Virtual Device. Это среда разработки, а не универсальный способ восстановления для владельца телевизора. Не переносите меню эмулятора и команды разработчика на телевизор для снятия ограничений. Владелец должен найти официальное руководство именно для своего устройства. Оставьте родительский контроль включённым; не подбирайте, не передавайте и не обходите код."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сформулируйте точный вопрос",
+          "paragraphs": [
+            "Для поддержки укажите модель Fire TV, название проигрывателя и момент появления запроса. Скройте идентификаторы на снимках и никогда не отправляйте PIN сотрудникам поддержки. Сохраните установку и доступ, пока владелец проверяет ограничение. Подтверждённый план Trex разрешает одно одновременное подключение; запуск второго просмотра не помогает исследовать такой запрос."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV میں پن کی درخواست: پہلے اسکرین پہچانیں",
+      "excerpt": "پن کی درخواست آلے کی پابندی سے متعلق ہو سکتی ہے۔ اسکرین پڑھیں اور محفوظ ترتیبات مجاز مالک کے سپرد کریں۔",
+      "seo_title": "Trex IPTV میں پن کی درخواست: پہلے اسکرین پہچانیں",
+      "seo_description": "پن کی درخواست آلے کی پابندی سے متعلق ہو سکتی ہے۔ اسکرین پڑھیں اور محفوظ ترتیبات مجاز مالک کے سپرد کریں۔",
+      "sections": [
+        {
+          "heading": "درخواست کہاں آ رہی ہے",
+          "paragraphs": [
+            "کوڈ آزمانے سے پہلے دیکھیں کہ درخواست پلیئر کھلنے سے پہلے، اس کے اندر یا اکاؤنٹ کا کوئی کام کرتے وقت آتی ہے۔ پن لکھے بغیر اسکرین کا اصل عنوان نوٹ کریں۔ ایپ کھلنے پر آنے والی درخواست فراہم کنندہ کے صارف نام اور پاس ورڈ سے الگ سطح کی ہو سکتی ہے۔ اجنبی پیغام یہ ثابت نہیں کرتا کہ دوسری رکنیت خریدنا ضروری ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "ترقیاتی رہنمائی الگ رکھیں",
+          "paragraphs": [
+            "Amazon کی Vega Virtual Device والی ترقیاتی دستاویز میں ایپ کھولنے کی پن حفاظت بیان ہوئی ہے۔ یہ ترقیاتی ماحول ہے، ہر گھریلو صارف کے لیے بحالی کا راستہ نہیں۔ پابندی ہٹانے کے لیے ایمولیٹر کے مینو یا ترقیاتی کمانڈ ٹی وی پر نقل نہ کریں۔ آلے کا مالک اپنے ماڈل کے مطابق سرکاری رہنمائی دیکھے۔ والدین کی پابندیاں برقرار رکھیں؛ پن کا اندازہ نہ لگائیں، اسے کسی کو نہ دیں اور اسے بائی پاس نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مدد کے لیے واضح سوال بھیجیں",
+          "paragraphs": [
+            "Fire TV کا ماڈل، پلیئر کا نام اور درخواست آنے کا مرحلہ بتائیں۔ تصویر میں اکاؤنٹ شناخت چھپائیں اور مدد دینے والے کو پن کبھی نہ بھیجیں۔ مالک کی جانچ کے دوران موجودہ انسٹالیشن اور رسائی محفوظ رکھیں۔ تصدیق شدہ Trex منصوبے میں ایک وقت میں ایک کنکشن ہے؛ پن کی تحقیق کے لیے دوسری ویڈیو نشست شروع کرنا مفید نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "طلب PIN في Trex IPTV: حدّد الشاشة قبل إدخال أي شيء",
+      "excerpt": "قد يخص طلب الرمز قيود الجهاز لا بيانات المزوّد. اقرأ الشاشة واترك الإعدادات المحمية للمالك المخوّل.",
+      "seo_title": "طلب PIN في Trex IPTV: حدّد الشاشة قبل إدخال أي شيء",
+      "seo_description": "قد يخص طلب الرمز قيود الجهاز لا بيانات المزوّد. اقرأ الشاشة واترك الإعدادات المحمية للمالك المخوّل.",
+      "sections": [
+        {
+          "heading": "حدّد موضع الطلب",
+          "paragraphs": [
+            "قبل تجربة أي رمز، لاحظ هل يظهر الطلب قبل فتح المشغّل أم داخله أم أثناء إجراء متعلق بالحساب. دوّن العنوان الدقيق دون تسجيل الرمز نفسه. قد تتعلق الحماية عند فتح التطبيق بطبقة مختلفة عن اسم المستخدم وكلمة مرور المزوّد. ظهور طلب غير مألوف لا يثبت أنك تحتاج إلى اشتراك آخر."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "افصل إرشادات التطوير",
+          "paragraphs": [
+            "تشرح Amazon حماية تشغيل التطبيقات بالرمز في دليل مطوري Vega Virtual Device. هذا بيئة تطوير وليس مسار استرداد عاماً للمستهلكين. لا تنقل قوائم المحاكي أو أوامر المطور إلى التلفاز لإزالة قيد. على مالك الجهاز تحديد الدليل الرسمي المناسب لطرازه. أبقِ الرقابة الأبوية مفعّلة ولا تخمّن الرمز أو تشاركه أو تتجاوزه."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قدّم سؤال دعم محدداً",
+          "paragraphs": [
+            "اذكر طراز Fire TV واسم المشغّل والمرحلة التي ظهر فيها الطلب. أخفِ معرّفات الحساب في الصور ولا ترسل الرمز إلى الدعم مطلقاً. احتفظ بالتثبيت وبيانات الوصول أثناء مراجعة المالك للقيد. تتيح خطة Trex المؤكدة اتصالاً واحداً في الوقت نفسه؛ فتح جلسة مشاهدة إضافية لا يساعد على فحص بوابة الرمز."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV में PIN माँगा जाए तो पहले स्क्रीन पहचानें",
+      "excerpt": "PIN की माँग उपकरण के प्रतिबंध से जुड़ी हो सकती है। स्क्रीन पढ़ें और सुरक्षित सेटिंग अधिकृत मालिक को सँभालने दें।",
+      "seo_title": "Trex IPTV में PIN माँगा जाए तो पहले स्क्रीन पहचानें",
+      "seo_description": "PIN की माँग उपकरण के प्रतिबंध से जुड़ी हो सकती है। स्क्रीन पढ़ें और सुरक्षित सेटिंग अधिकृत मालिक को सँभालने दें।",
+      "sections": [
+        {
+          "heading": "पहले माँग का स्थान पहचानें",
+          "paragraphs": [
+            "कोड आजमाने से पहले देखें कि माँग प्लेयर खुलने से पहले, उसके अंदर या खाते से जुड़ा कोई काम करते समय आती है। PIN लिखे बिना स्क्रीन का सही शीर्षक नोट करें। ऐप शुरू करते समय आने वाली माँग प्रदाता के उपयोगकर्ता नाम और पासवर्ड से अलग स्तर की हो सकती है। अनजान संदेश दूसरी सदस्यता खरीदने की आवश्यकता साबित नहीं करता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+            }
+          ]
+        },
+        {
+          "heading": "विकास वाली हिदायतें अलग रखें",
+          "paragraphs": [
+            "Amazon की Vega Virtual Device विकास मार्गदर्शिका में ऐप शुरू करने की PIN सुरक्षा बताई गई है। यह विकास का वातावरण है, हर घरेलू उपयोगकर्ता के लिए पुनर्प्राप्ति का रास्ता नहीं। प्रतिबंध हटाने के लिए एमुलेटर के मेनू या डेवलपर कमांड टीवी पर न दोहराएँ। मालिक अपने उपकरण की सही आधिकारिक सहायता देखे। अभिभावकीय नियंत्रण चालू रखें; PIN का अनुमान न लगाएँ, साझा न करें और उसे बायपास न करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सहायता के लिए स्पष्ट सवाल रखें",
+          "paragraphs": [
+            "Fire TV का मॉडल, प्लेयर का नाम और माँग आने का चरण बताएँ। स्क्रीनशॉट में खाता पहचान छिपाएँ और PIN सहायता कर्मचारी को कभी न भेजें। मालिक की जाँच के दौरान मौजूदा इंस्टॉलेशन और पहुँच सुरक्षित रखें। पुष्टि किए गए Trex प्लान में एक समय में एक कनेक्शन मिलता है; PIN की समस्या समझने के लिए दूसरी देखने वाली सत्र शुरू करना उपयोगी नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Vega Virtual Device app-launch PIN protection (developer reference)",
+      "url": "https://developer.amazon.com/docs/vega/0.24/run-apps"
+    }
+  ]
+}

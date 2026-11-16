@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-16",
+  "topic": "Distinguish desktop Chrome tab casting from whole-screen sharing, protect private pages and separate receiver behaviour from Opplex or Filex plan and setup state.",
+  "primary_keyword": "Get IPTV tab casting",
+  "slug": "getiptv-tab-casting-shared-screen-scope",
+  "translations": {
+    "en": {
+      "title": "Get IPTV tab casting: choose what your television receives",
+      "excerpt": "Check Chrome tab casting versus screen sharing, receiver names and privacy before treating a casting problem as a subscription fault.",
+      "seo_title": "Get IPTV tab casting: choose what your television receives",
+      "seo_description": "Check Chrome tab casting versus screen sharing, receiver names and privacy before treating a casting problem as a subscription fault.",
+      "sections": [
+        {
+          "heading": "Start with the sharing scope",
+          "paragraphs": [
+            "Get IPTV tab casting questions should start with what you want to display: one Chrome tab or the whole computer screen. These are different sharing choices. Close private order, billing and account pages before sharing. A harmless public page is a better first check than a screen containing provider credentials. This guide concerns desktop Chrome casting, not a promise that a mobile player supports casting."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Check Chrome and the receiver",
+          "paragraphs": [
+            "Google documents casting from an updated Chrome browser on a supported computer to a compatible Chromecast, Google TV Streamer or television with Google Cast. The computer and receiver need the same Wi-Fi network. Read the Sources choice and the actual receiver name before connecting. Casting to a receiver already in use replaces its current content, so obtain its owner’s permission. Tab audio and whole-screen audio behave differently; Google notes that screen audio may remain on the computer. Unsupported content or plug-ins may not cast."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate casting from your plan",
+          "paragraphs": [
+            "A casting failure does not establish a Get IPTV account problem. Confirm whether your order names Opplex or Filex, its duration and its setup state. A player licence can cost separately; do not assume unconfirmed Filex connection allowances. Stop casting through Chrome’s Cast control when finished. Report the computer, browser and receiver models without sending passwords or private payment pages."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: elige qué recibe el televisor al transmitir una pestaña",
+      "excerpt": "Distingue una pestaña de Chrome de la pantalla completa y revisa el receptor y la privacidad antes de culpar a la suscripción.",
+      "seo_title": "Get IPTV: elige qué recibe el televisor al transmitir una pestaña",
+      "seo_description": "Distingue una pestaña de Chrome de la pantalla completa y revisa el receptor y la privacidad antes de culpar a la suscripción.",
+      "sections": [
+        {
+          "heading": "Empieza por el alcance de la transmisión",
+          "paragraphs": [
+            "Para transmitir una pestaña con Get IPTV, primero decide qué quieres mostrar: una pestaña de Chrome o toda la pantalla del ordenador. Son opciones distintas. Cierra las páginas privadas de pedidos, facturación y cuentas antes de compartir. Una página pública sin datos personales sirve mejor para la primera comprobación que una pantalla con credenciales del proveedor. Esta guía trata de Chrome en ordenador; no garantiza que un reproductor móvil admita la transmisión."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba Chrome y el receptor",
+          "paragraphs": [
+            "Google documenta la transmisión desde Chrome actualizado en un ordenador compatible hacia un Chromecast, Google TV Streamer o televisor con Google Cast compatible. Ambos equipos deben estar en la misma red wifi. Lee la opción Fuentes y el nombre real del receptor antes de conectar. Usar un receptor ocupado sustituye su contenido actual: pide permiso al propietario. El audio de una pestaña y el de toda la pantalla funcionan de forma diferente; Google indica que el segundo puede quedarse en el ordenador. Algunos contenidos y complementos no se pueden transmitir."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa la transmisión de tu plan",
+          "paragraphs": [
+            "Un fallo de transmisión no demuestra un problema de cuenta de Get IPTV. Comprueba si el pedido indica Opplex o Filex, su duración y el estado de configuración. La licencia del reproductor puede cobrarse aparte; no supongas límites de conexiones de Filex sin confirmar. Al terminar, detén la transmisión desde el control de Chrome. Informa de los modelos del ordenador y receptor y de la versión del navegador, sin contraseñas ni páginas privadas de pago."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : choisissez ce que le téléviseur reçoit depuis Chrome",
+      "excerpt": "Distinguez un onglet Chrome du partage de tout l’écran et vérifiez le récepteur et la confidentialité avant de mettre l’abonnement en cause.",
+      "seo_title": "Get IPTV : choisissez ce que le téléviseur reçoit depuis Chrome",
+      "seo_description": "Distinguez un onglet Chrome du partage de tout l’écran et vérifiez le récepteur et la confidentialité avant de mettre l’abonnement en cause.",
+      "sections": [
+        {
+          "heading": "Commencez par le périmètre du partage",
+          "paragraphs": [
+            "Pour diffuser un onglet avec Get IPTV, déterminez d’abord ce que vous souhaitez afficher : un onglet Chrome ou tout l’écran de l’ordinateur. Ces choix sont différents. Fermez les pages privées de commande, de facturation et de compte avant le partage. Une page publique sans données personnelles convient mieux au premier essai qu’un écran contenant les identifiants du fournisseur. Ce guide concerne Chrome sur ordinateur ; il ne garantit pas la diffusion depuis un lecteur mobile."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez Chrome et le récepteur",
+          "paragraphs": [
+            "Google décrit la diffusion depuis Chrome à jour sur un ordinateur compatible vers un Chromecast, Google TV Streamer ou téléviseur compatible Google Cast. Les deux appareils doivent utiliser le même réseau Wi-Fi. Lisez le choix Sources et le nom exact du récepteur avant la connexion. Un récepteur déjà utilisé verra son contenu remplacé : demandez l’accord de son propriétaire. Le son d’un onglet et celui de l’écran entier ne fonctionnent pas pareil ; selon Google, le second peut rester sur l’ordinateur. Certains contenus ou modules ne sont pas diffusables."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez diffusion et forfait",
+          "paragraphs": [
+            "Un échec de diffusion ne prouve pas un problème de compte Get IPTV. Vérifiez si la commande mentionne Opplex ou Filex, sa durée et son état de configuration. La licence du lecteur peut être facturée séparément ; ne supposez pas les limites de connexion Filex non confirmées. Arrêtez la diffusion via la commande Cast de Chrome après utilisation. Communiquez les modèles de l’ordinateur et du récepteur et la version du navigateur, sans mots de passe ni pages de paiement privées."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: scegli cosa riceve la TV quando trasmetti una scheda",
+      "excerpt": "Distingui una scheda Chrome dall’intero schermo e controlla ricevitore e privacy prima di attribuire un problema all’abbonamento.",
+      "seo_title": "Get IPTV: scegli cosa riceve la TV quando trasmetti una scheda",
+      "seo_description": "Distingui una scheda Chrome dall’intero schermo e controlla ricevitore e privacy prima di attribuire un problema all’abbonamento.",
+      "sections": [
+        {
+          "heading": "Inizia dall’ambito della condivisione",
+          "paragraphs": [
+            "Per trasmettere una scheda con Get IPTV, decidi prima cosa vuoi mostrare: una scheda Chrome oppure tutto lo schermo del computer. Sono scelte diverse. Chiudi le pagine private di ordini, fatturazione e account prima di condividere. Una pagina pubblica senza dati personali è più adatta alla prima verifica di una schermata con le credenziali del fornitore. Questa guida riguarda Chrome sul computer; non garantisce che un lettore mobile supporti la trasmissione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla Chrome e il ricevitore",
+          "paragraphs": [
+            "Google documenta la trasmissione da Chrome aggiornato su un computer compatibile verso Chromecast, Google TV Streamer o un televisore compatibile con Google Cast. Computer e ricevitore devono usare la stessa rete Wi-Fi. Leggi la scelta Origini e il nome effettivo del ricevitore prima del collegamento. Collegarsi a un ricevitore già utilizzato sostituisce il contenuto attuale: chiedi il permesso al proprietario. L’audio della scheda e quello dell’intero schermo funzionano diversamente; Google segnala che il secondo può restare sul computer. Contenuti o componenti aggiuntivi non supportati potrebbero non essere trasmessi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui la trasmissione dal piano",
+          "paragraphs": [
+            "Un errore di trasmissione non dimostra un problema dell’account Get IPTV. Verifica se l’ordine indica Opplex o Filex, la durata e lo stato della configurazione. La licenza del lettore può avere un costo separato; non presumere limiti di connessione Filex non confermati. Al termine interrompi la trasmissione dal controllo Cast di Chrome. Comunica modelli di computer e ricevitore e versione del browser, senza password o pagine private di pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: kies wat je televisie ontvangt bij tabbladen casten",
+      "excerpt": "Onderscheid een Chrome-tabblad van je hele scherm en controleer ontvanger en privacy voordat je het abonnement als oorzaak aanwijst.",
+      "seo_title": "Get IPTV: kies wat je televisie ontvangt bij tabbladen casten",
+      "seo_description": "Onderscheid een Chrome-tabblad van je hele scherm en controleer ontvanger en privacy voordat je het abonnement als oorzaak aanwijst.",
+      "sections": [
+        {
+          "heading": "Begin met wat je wilt delen",
+          "paragraphs": [
+            "Bij vragen over Get IPTV en tabbladen casten bepaal je eerst wat je wilt tonen: één Chrome-tabblad of het hele computerscherm. Dat zijn verschillende keuzes. Sluit privépagina’s voor bestellingen, facturering en accounts voordat je deelt. Een openbare pagina zonder persoonlijke gegevens is geschikter voor de eerste controle dan een scherm met inloggegevens van de aanbieder. Deze uitleg gaat over Chrome op een computer en belooft geen ondersteuning door een mobiele speler."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer Chrome en de ontvanger",
+          "paragraphs": [
+            "Google beschrijft casten vanuit bijgewerkt Chrome op een ondersteunde computer naar een geschikte Chromecast, Google TV Streamer of televisie met Google Cast. Computer en ontvanger moeten hetzelfde wifi-netwerk gebruiken. Lees de keuze Bronnen en de werkelijke naam van de ontvanger voordat je verbinding maakt. Een ontvanger die al wordt gebruikt, krijgt andere inhoud: vraag toestemming aan de eigenaar. Geluid van een tabblad werkt anders dan geluid van het hele scherm; volgens Google kan dat laatste op de computer blijven. Niet-ondersteunde inhoud of plug-ins kunnen mogelijk niet worden gecast."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd casten en je abonnement apart",
+          "paragraphs": [
+            "Een castfout bewijst geen probleem met een Get IPTV-account. Controleer of je bestelling Opplex of Filex vermeldt, welke looptijd geldt en hoe de installatie ervoor staat. Een spelerlicentie kan apart geld kosten; neem geen onbevestigde Filex-verbindingslimieten aan. Stop na afloop via de Cast-bediening in Chrome. Geef computer- en ontvangermodel en browserversie door, zonder wachtwoorden of persoonlijke betaalpagina’s."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: escolha o que a televisão recebe ao transmitir um separador",
+      "excerpt": "Distinga um separador do Chrome do ecrã inteiro e confirme o recetor e a privacidade antes de culpar a assinatura.",
+      "seo_title": "Get IPTV: escolha o que a televisão recebe ao transmitir um separador",
+      "seo_description": "Distinga um separador do Chrome do ecrã inteiro e confirme o recetor e a privacidade antes de culpar a assinatura.",
+      "sections": [
+        {
+          "heading": "Comece pelo que pretende partilhar",
+          "paragraphs": [
+            "Para transmitir um separador com Get IPTV, decida primeiro o que quer mostrar: um separador do Chrome ou o ecrã inteiro do computador. São opções diferentes. Feche páginas privadas de encomendas, faturação e contas antes de partilhar. Uma página pública sem dados pessoais é mais adequada para a primeira verificação do que um ecrã com credenciais do fornecedor. Este guia aborda o Chrome no computador; não promete compatibilidade de transmissão num leitor móvel."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confira o Chrome e o recetor",
+          "paragraphs": [
+            "A Google documenta a transmissão do Chrome atualizado num computador compatível para Chromecast, Google TV Streamer ou televisão compatível com Google Cast. O computador e o recetor precisam da mesma rede Wi-Fi. Leia a escolha Fontes e o nome real do recetor antes de ligar. Usar um recetor já ocupado substitui o conteúdo atual: peça autorização ao proprietário. O áudio de um separador e o do ecrã inteiro comportam-se de forma diferente; a Google indica que o segundo pode ficar no computador. Certos conteúdos ou extensões não são compatíveis com transmissão."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe a transmissão do plano",
+          "paragraphs": [
+            "Uma falha de transmissão não comprova um problema na conta Get IPTV. Confirme se a encomenda identifica Opplex ou Filex, a duração e o estado da configuração. A licença do leitor pode ter custo separado; não presuma limites de ligações Filex sem confirmação. No fim, pare a transmissão pelo controlo Cast do Chrome. Informe os modelos do computador e recetor e a versão do navegador, sem palavras-passe nem páginas privadas de pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: выберите, что телевизор получает при трансляции вкладки",
+      "excerpt": "Различайте вкладку Chrome и весь экран, проверяйте приёмник и конфиденциальность, прежде чем связывать сбой с подпиской.",
+      "seo_title": "Get IPTV: выберите, что телевизор получает при трансляции вкладки",
+      "seo_description": "Различайте вкладку Chrome и весь экран, проверяйте приёмник и конфиденциальность, прежде чем связывать сбой с подпиской.",
+      "sections": [
+        {
+          "heading": "Сначала определите область трансляции",
+          "paragraphs": [
+            "При вопросах о трансляции вкладки с Get IPTV сначала решите, что показать: одну вкладку Chrome или весь экран компьютера. Это разные варианты. Перед передачей закройте личные страницы заказов, оплаты и учётных записей. Для первой проверки лучше подходит общедоступная страница без личных данных, чем экран с реквизитами доступа провайдера. Руководство относится к Chrome на компьютере и не обещает поддержку трансляции мобильным проигрывателем."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте Chrome и приёмник",
+          "paragraphs": [
+            "Google описывает трансляцию из обновлённого Chrome на совместимом компьютере на подходящий Chromecast, Google TV Streamer или телевизор с Google Cast. Компьютер и приёмник должны находиться в одной сети Wi-Fi. До подключения прочитайте выбор источника и настоящее имя приёмника. Подключение к занятому приёмнику заменит его текущее содержимое: получите разрешение владельца. Звук вкладки и всего экрана передаётся по-разному; Google предупреждает, что во втором случае он может остаться на компьютере. Неподдерживаемое содержимое и плагины могут не передаваться."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отделяйте трансляцию от тарифа",
+          "paragraphs": [
+            "Ошибка трансляции не доказывает проблему учётной записи Get IPTV. Уточните, указан ли в заказе Opplex или Filex, срок и состояние настройки. Лицензия проигрывателя может оплачиваться отдельно; не предполагайте неподтверждённые ограничения подключений Filex. После просмотра остановите передачу через управление Cast в Chrome. Сообщите модели компьютера и приёмника и версию браузера, не отправляя пароли или личные платёжные страницы."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: ٹیب کاسٹ کرتے وقت منتخب کریں ٹی وی پر کیا دکھانا ہے",
+      "excerpt": "کروم کے ایک ٹیب اور پوری اسکرین کی نشریات میں فرق، وصول کنندہ اور رازداری دیکھیں؛ فوراً سبسکرپشن کو خرابی کی وجہ نہ سمجھیں۔",
+      "seo_title": "Get IPTV: ٹیب کاسٹ کرتے وقت منتخب کریں ٹی وی پر کیا دکھانا ہے",
+      "seo_description": "کروم کے ایک ٹیب اور پوری اسکرین کی نشریات میں فرق، وصول کنندہ اور رازداری دیکھیں؛ فوراً سبسکرپشن کو خرابی کی وجہ نہ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے اشتراک کی حد طے کریں",
+          "paragraphs": [
+            "Get IPTV کے ساتھ ٹیب کاسٹ کرنے کا سوال ہو تو پہلے طے کریں کہ کروم کا ایک ٹیب دکھانا ہے یا کمپیوٹر کی پوری اسکرین۔ یہ دو الگ انتخاب ہیں۔ اشتراک سے پہلے آرڈر، بل اور اکاؤنٹ کے نجی صفحات بند کریں۔ پہلی جانچ کے لیے ذاتی معلومات کے بغیر عام عوامی صفحہ، فراہم کنندہ کی لاگ اِن تفصیل والی اسکرین سے بہتر ہے۔ یہ رہنمائی کمپیوٹر پر کروم کے لیے ہے؛ موبائل پلیئر میں کاسٹنگ کی سہولت کا وعدہ نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "کروم اور وصول کنندہ دیکھیں",
+          "paragraphs": [
+            "گوگل کی دستاویز کے مطابق موزوں کمپیوٹر پر تازہ کروم سے موافق Chromecast، Google TV Streamer یا Google Cast والے ٹی وی پر نشریات ممکن ہیں۔ کمپیوٹر اور وصول کنندہ ایک ہی وائی فائی پر ہونے چاہییں۔ رابطے سے پہلے ذرائع کا انتخاب اور وصول کنندہ کا اصل نام پڑھیں۔ زیرِ استعمال وصول کنندہ پر رابطہ اس کا موجودہ مواد بدل دیتا ہے، اس لیے مالک کی اجازت لیں۔ ٹیب اور پوری اسکرین کی آواز کا رویہ مختلف ہے؛ گوگل کے مطابق پوری اسکرین کی آواز کمپیوٹر پر رہ سکتی ہے۔ غیر معاون مواد یا پلگ اِن شاید منتقل نہ ہوں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "کاسٹنگ کو اپنے پلان سے الگ رکھیں",
+          "paragraphs": [
+            "کاسٹنگ کی ناکامی Get IPTV اکاؤنٹ کی خرابی ثابت نہیں کرتی۔ آرڈر میں Opplex یا Filex کا نام، مدت اور سیٹ اپ کی حالت دیکھیں۔ پلیئر کا لائسنس الگ قیمت رکھ سکتا ہے؛ Filex کے غیر مصدقہ بیک وقت رابطوں کی حد فرض نہ کریں۔ آخر میں کروم کے کاسٹ کنٹرول سے نشریات روکیں۔ کمپیوٹر اور وصول کنندہ کے ماڈل اور براؤزر کا ورژن بتائیں، پاس ورڈ یا ادائیگی کے نجی صفحات نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: اختر ما يستقبله التلفاز عند بث علامة تبويب",
+      "excerpt": "ميّز بين علامة تبويب Chrome والشاشة كاملة، وتحقق من جهاز الاستقبال والخصوصية قبل ربط مشكلة البث بالاشتراك.",
+      "seo_title": "Get IPTV: اختر ما يستقبله التلفاز عند بث علامة تبويب",
+      "seo_description": "ميّز بين علامة تبويب Chrome والشاشة كاملة، وتحقق من جهاز الاستقبال والخصوصية قبل ربط مشكلة البث بالاشتراك.",
+      "sections": [
+        {
+          "heading": "ابدأ بتحديد نطاق المشاركة",
+          "paragraphs": [
+            "عند السؤال عن بث علامة تبويب مع Get IPTV، حدّد أولاً ما تريد عرضه: علامة تبويب واحدة في Chrome أم شاشة الكمبيوتر كاملة. هذان خياران مختلفان. أغلق صفحات الطلبات والفوترة والحسابات الخاصة قبل المشاركة. الصفحة العامة الخالية من البيانات الشخصية أنسب للفحص الأول من شاشة تعرض بيانات دخول المزوّد. يخص هذا الدليل Chrome على الكمبيوتر، ولا يعد بدعم البث في مشغّل الهاتف."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تحقق من Chrome وجهاز الاستقبال",
+          "paragraphs": [
+            "توثّق Google البث من Chrome المحدّث على كمبيوتر مدعوم إلى Chromecast أو Google TV Streamer أو تلفاز متوافق مع Google Cast. يجب أن يتصل الكمبيوتر وجهاز الاستقبال بشبكة Wi-Fi نفسها. اقرأ خيار المصادر واسم جهاز الاستقبال الفعلي قبل الاتصال. الاتصال بجهاز مستخدم بالفعل يستبدل محتواه الحالي، لذلك احصل على موافقة مالكه. يختلف صوت علامة التبويب عن صوت الشاشة كاملة؛ وتوضح Google أن صوت الشاشة قد يبقى على الكمبيوتر. قد لا يُبث المحتوى أو المكوّنات الإضافية غير المدعومة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل البث عن خطتك",
+          "paragraphs": [
+            "فشل البث لا يثبت وجود مشكلة في حساب Get IPTV. تأكد هل يذكر طلبك Opplex أم Filex، ومدته وحالة إعداده. قد تكون رخصة المشغّل بتكلفة منفصلة؛ لا تفترض حدود اتصالات Filex غير المؤكدة. أوقف البث من أداة Cast في Chrome عند الانتهاء. أبلغ عن طرازَي الكمبيوتر وجهاز الاستقبال وإصدار المتصفح، دون إرسال كلمات مرور أو صفحات دفع خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: टैब कास्ट करते समय चुनें कि टीवी पर क्या दिखेगा",
+      "excerpt": "Chrome के एक टैब और पूरी स्क्रीन में अंतर समझें; सदस्यता को दोष देने से पहले रिसीवर और गोपनीयता जाँचें।",
+      "seo_title": "Get IPTV: टैब कास्ट करते समय चुनें कि टीवी पर क्या दिखेगा",
+      "seo_description": "Chrome के एक टैब और पूरी स्क्रीन में अंतर समझें; सदस्यता को दोष देने से पहले रिसीवर और गोपनीयता जाँचें।",
+      "sections": [
+        {
+          "heading": "पहले साझा करने का दायरा चुनें",
+          "paragraphs": [
+            "Get IPTV के साथ टैब कास्ट करने के सवाल में पहले तय करें कि Chrome का एक टैब दिखाना है या कंप्यूटर की पूरी स्क्रीन। ये अलग विकल्प हैं। साझा करने से पहले ऑर्डर, बिल और खाते के निजी पेज बंद करें। पहली जाँच के लिए व्यक्तिगत जानकारी रहित सार्वजनिक पेज, प्रदाता के लॉगिन विवरण वाली स्क्रीन से बेहतर है। यह मार्गदर्शिका कंप्यूटर पर Chrome के लिए है; मोबाइल प्लेयर में कास्टिंग का समर्थन होने का वादा नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chromecast/answer/3228332?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Chrome और रिसीवर जाँचें",
+          "paragraphs": [
+            "Google के दस्तावेज़ के अनुसार समर्थित कंप्यूटर पर अपडेट किए गए Chrome से उपयुक्त Chromecast, Google TV Streamer या Google Cast वाले टीवी पर कास्ट किया जा सकता है। कंप्यूटर और रिसीवर एक ही वाई-फाई नेटवर्क पर होने चाहिए। जोड़ने से पहले स्रोत का विकल्प और रिसीवर का वास्तविक नाम पढ़ें। पहले से उपयोग हो रहे रिसीवर को चुनने पर उसका वर्तमान कंटेंट बदलता है, इसलिए मालिक की अनुमति लें। टैब और पूरी स्क्रीन की आवाज़ का व्यवहार अलग है; Google के अनुसार स्क्रीन की आवाज़ कंप्यूटर पर रह सकती है। असमर्थित कंटेंट या प्लगइन कास्ट नहीं भी हो सकते हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "कास्टिंग को अपने प्लान से अलग रखें",
+          "paragraphs": [
+            "कास्टिंग की विफलता Get IPTV खाते की खराबी साबित नहीं करती। ऑर्डर में Opplex या Filex का नाम, अवधि और सेटअप की स्थिति जाँचें। प्लेयर लाइसेंस का खर्च अलग हो सकता है; Filex की अपुष्ट कनेक्शन सीमा न मानें। काम पूरा होने पर Chrome के Cast नियंत्रण से कास्टिंग रोकें। कंप्यूटर और रिसीवर के मॉडल और ब्राउज़र संस्करण बताएँ, पासवर्ड या निजी भुगतान पेज न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/chromecast/answer/3228332?hl=en",
+      "label": "Google Chromecast Help: cast from Chrome to your TV"
+    }
+  ]
+}

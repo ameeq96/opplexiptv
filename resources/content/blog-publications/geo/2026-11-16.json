@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-16",
+  "topic": "Distinguish Apple TV App Store redownload, in-app purchases and Geo IPTV provider access before repeating payment or removing saved setup",
+  "primary_keyword": "Geo IPTV app recovery",
+  "slug": "geo-app-recovery-redownload-or-provider-access",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV app recovery: redownload the player or renew the service?",
+      "excerpt": "An App Store download and provider access are separate records. Check the Apple TV model and purchase history before paying again or removing saved setup.",
+      "seo_title": "Geo IPTV app recovery: redownload the player or renew the service?",
+      "seo_description": "An App Store download and provider access are separate records. Check the Apple TV model and purchase history before paying again or removing saved setup.",
+      "sections": [
+        {
+          "heading": "Name the missing item",
+          "paragraphs": [
+            "A Geo IPTV app recovery question should identify whether the missing item is an installed player, an app purchase or provider access inside that player. Restoring an app icon does not establish that a service payment was made or that an account has been activated. Record the exact app name and Apple TV model. Leave other working apps and saved provider details intact while you find the relevant purchase record."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Use the documented Apple route",
+          "paragraphs": [
+            "Apple describes redownloading on Apple TV 4K and Apple TV HD through App Store, Purchased, then Not on This TV. Select the previously obtained app and its Redownload button if available. This route is not supported on Apple TV third generation or earlier. Availability can differ by device, so an app associated with another Apple product is not automatic proof of a compatible television version."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate purchases before requesting help",
+          "paragraphs": [
+            "Use the Apple Account that holds the relevant purchase, without sharing its password. Apple also distinguishes redownloading an app from restoring some in-app purchases. If the player returns but service access does not, ask which product the receipt covers and whether the remaining issue belongs to the app publisher or provider. Keep receipts private, obscure identifiers in screenshots and do not delete app data merely to make the purchase list look different."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Recuperar la app de Geo IPTV: ¿descargar el reproductor o renovar?",
+      "excerpt": "La descarga de App Store y el acceso del proveedor son registros distintos. Revisa modelo e historial antes de pagar otra vez o borrar la configuración.",
+      "seo_title": "Recuperar la app de Geo IPTV: ¿descargar el reproductor o renovar?",
+      "seo_description": "La descarga de App Store y el acceso del proveedor son registros distintos. Revisa modelo e historial antes de pagar otra vez o borrar la configuración.",
+      "sections": [
+        {
+          "heading": "Identifica lo que falta",
+          "paragraphs": [
+            "Aclara si falta el reproductor instalado, una compra de la aplicación o el acceso del proveedor dentro de ella. Recuperar un icono no demuestra que hayas pagado el servicio ni que la cuenta esté activada. Anota el nombre exacto de la app y el modelo de Apple TV. Conserva las otras aplicaciones que funcionan y los datos guardados mientras buscas el comprobante pertinente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Sigue la ruta documentada por Apple",
+          "paragraphs": [
+            "Apple explica la descarga repetida en Apple TV 4K y Apple TV HD mediante App Store, Comprado y No en este TV. Selecciona la app obtenida anteriormente y el botón de descarga, si aparece. Este procedimiento no es compatible con Apple TV de tercera generación o anteriores. La disponibilidad cambia según el dispositivo: una app comprada para otro producto Apple no garantiza una versión para el televisor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa las compras al pedir ayuda",
+          "paragraphs": [
+            "Utiliza la cuenta Apple que contiene la compra sin compartir su contraseña. Apple también distingue volver a descargar la app de restaurar algunas compras dentro de ella. Si recuperas el reproductor pero no el servicio, pregunta qué producto cubre el recibo y si el problema corresponde al editor o al proveedor. Guarda los recibos en privado, oculta identificadores y no borres datos para intentar cambiar el historial."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Récupération d’app Geo IPTV : retélécharger ou renouveler ?",
+      "excerpt": "Le téléchargement App Store et l’accès fournisseur sont distincts. Vérifiez le modèle et les achats avant de repayer ou d’effacer la configuration.",
+      "seo_title": "Récupération d’app Geo IPTV : retélécharger ou renouveler ?",
+      "seo_description": "Le téléchargement App Store et l’accès fournisseur sont distincts. Vérifiez le modèle et les achats avant de repayer ou d’effacer la configuration.",
+      "sections": [
+        {
+          "heading": "Identifier ce qui manque",
+          "paragraphs": [
+            "Précisez s’il manque le lecteur installé, un achat de l’application ou l’accès fournisseur à l’intérieur de celle-ci. Rétablir une icône ne prouve ni le paiement du service ni l’activation d’un compte. Notez le nom exact de l’app et le modèle Apple TV. Préservez les autres applications fonctionnelles et les accès enregistrés pendant la recherche de l’achat pertinent."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Suivre le parcours documenté",
+          "paragraphs": [
+            "Apple décrit le retéléchargement sur Apple TV 4K et Apple TV HD via App Store, Achats, puis Pas sur cette TV. Sélectionnez l’app précédemment obtenue et son bouton de téléchargement, s’il est proposé. Cette méthode n’est pas disponible sur Apple TV troisième génération ou antérieure. La compatibilité varie : un achat pour un autre produit Apple ne garantit pas une version pour le téléviseur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguer les achats pour demander de l’aide",
+          "paragraphs": [
+            "Utilisez le compte Apple lié à l’achat sans partager son mot de passe. Apple distingue aussi le retéléchargement de l’app de la restauration de certains achats intégrés. Si le lecteur revient sans l’accès au service, demandez quel produit couvre le reçu et si le problème relève de l’éditeur ou du fournisseur. Gardez les reçus privés, masquez les identifiants et n’effacez pas les données pour modifier l’apparence de l’historique."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Recupero app Geo IPTV: riscaricare il lettore o rinnovare?",
+      "excerpt": "Il download da App Store e l’accesso del fornitore sono distinti. Controlla modello e cronologia prima di pagare ancora o cancellare il setup.",
+      "seo_title": "Recupero app Geo IPTV: riscaricare il lettore o rinnovare?",
+      "seo_description": "Il download da App Store e l’accesso del fornitore sono distinti. Controlla modello e cronologia prima di pagare ancora o cancellare il setup.",
+      "sections": [
+        {
+          "heading": "Identifica ciò che manca",
+          "paragraphs": [
+            "Chiarisci se manca il lettore installato, un acquisto dell’app o l’accesso del fornitore al suo interno. Ripristinare un’icona non prova che il servizio sia stato pagato o che l’account sia attivo. Annota nome esatto dell’app e modello Apple TV. Mantieni le altre app funzionanti e i dati del fornitore mentre cerchi la registrazione dell’acquisto pertinente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Usa il percorso documentato",
+          "paragraphs": [
+            "Apple descrive il nuovo download su Apple TV 4K e Apple TV HD tramite App Store, Acquistate e Non su questa TV. Seleziona l’app già ottenuta e il relativo pulsante di download, se disponibile. Questo percorso non è supportato su Apple TV di terza generazione o precedenti. La compatibilità varia: un’app acquistata per un altro prodotto Apple non garantisce una versione per il televisore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui gli acquisti prima dell’assistenza",
+          "paragraphs": [
+            "Usa l’Apple Account associato all’acquisto senza condividere la password. Apple distingue inoltre il download dell’app dal ripristino di alcuni acquisti al suo interno. Se torna il lettore ma non il servizio, chiedi quale prodotto copre la ricevuta e se il problema riguarda editore o fornitore. Mantieni private le ricevute, oscura gli identificativi e non cancellare dati per cambiare l’aspetto della cronologia."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-app herstellen: speler opnieuw downloaden of verlengen?",
+      "excerpt": "Een App Store-download en toegang bij de aanbieder zijn aparte gegevens. Controleer model en aankopen voordat je opnieuw betaalt of instellingen wist.",
+      "seo_title": "Geo IPTV-app herstellen: speler opnieuw downloaden of verlengen?",
+      "seo_description": "Een App Store-download en toegang bij de aanbieder zijn aparte gegevens. Controleer model en aankopen voordat je opnieuw betaalt of instellingen wist.",
+      "sections": [
+        {
+          "heading": "Benoem wat ontbreekt",
+          "paragraphs": [
+            "Bepaal of je de geïnstalleerde speler, een appaankoop of toegang bij de aanbieder in die speler mist. Een hersteld appicoon bewijst niet dat de dienst betaald of het account geactiveerd is. Noteer de exacte appnaam en het Apple TV-model. Laat andere werkende apps en opgeslagen toegang intact terwijl je het juiste aankoopbewijs zoekt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Gebruik de gedocumenteerde Apple-route",
+          "paragraphs": [
+            "Apple beschrijft opnieuw downloaden op Apple TV 4K en Apple TV HD via App Store, Aankopen en Niet op deze tv. Selecteer de eerder verkregen app en de downloadknop als die beschikbaar is. Deze route werkt niet op Apple TV derde generatie of ouder. Beschikbaarheid verschilt per apparaat: een aankoop voor een ander Apple-product bewijst niet dat er een geschikte televisievariant bestaat."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd aankopen uit elkaar",
+          "paragraphs": [
+            "Gebruik het Apple Account met de betreffende aankoop zonder het wachtwoord te delen. Apple onderscheidt ook het downloaden van de app van het herstellen van bepaalde in-appaankopen. Werkt de speler weer maar ontbreekt de dienst, vraag dan welk product op het bewijs staat en of de uitgever of aanbieder moet helpen. Bewaar bewijzen privé, verberg identificatie en wis geen appgegevens om de aankooplijst anders te laten lijken."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Recuperar a app Geo IPTV: descarregar o leitor ou renovar?",
+      "excerpt": "Uma descarga da App Store e o acesso do fornecedor são registos distintos. Confirme modelo e compras antes de pagar novamente ou apagar definições.",
+      "seo_title": "Recuperar a app Geo IPTV: descarregar o leitor ou renovar?",
+      "seo_description": "Uma descarga da App Store e o acesso do fornecedor são registos distintos. Confirme modelo e compras antes de pagar novamente ou apagar definições.",
+      "sections": [
+        {
+          "heading": "Identifique o que falta",
+          "paragraphs": [
+            "Esclareça se falta o leitor instalado, uma compra da aplicação ou o acesso do fornecedor dentro dela. Recuperar um ícone não comprova pagamento do serviço nem ativação da conta. Anote nome exato da aplicação e modelo Apple TV. Preserve as outras aplicações funcionais e os dados guardados enquanto procura o registo da compra correspondente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Use o percurso documentado",
+          "paragraphs": [
+            "A Apple explica como voltar a descarregar aplicações na Apple TV 4K e Apple TV HD através da App Store, Comprado e Não nesta TV. Selecione a aplicação obtida anteriormente e o botão de descarga, se disponível. Este processo não funciona na Apple TV de terceira geração ou anterior. A disponibilidade varia; uma aplicação comprada para outro produto Apple não garante uma versão compatível com o televisor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe as compras ao pedir apoio",
+          "paragraphs": [
+            "Use a conta Apple que contém a compra sem partilhar a palavra-passe. A Apple distingue também descarregar a aplicação de restaurar certas compras integradas. Se o leitor regressar mas o serviço não, pergunte que produto consta do recibo e se a questão pertence ao editor ou ao fornecedor. Mantenha recibos privados, oculte identificadores nas imagens e não apague dados para tentar alterar o histórico."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Восстановление приложения Geo IPTV: загрузка или продление?",
+      "excerpt": "Загрузка из App Store и доступ поставщика — разные записи. Проверьте модель и покупки, прежде чем платить повторно или удалять настройки.",
+      "seo_title": "Восстановление приложения Geo IPTV: загрузка или продление?",
+      "seo_description": "Загрузка из App Store и доступ поставщика — разные записи. Проверьте модель и покупки, прежде чем платить повторно или удалять настройки.",
+      "sections": [
+        {
+          "heading": "Уточните, что пропало",
+          "paragraphs": [
+            "Определите, отсутствует ли установленный проигрыватель, покупка приложения или доступ поставщика внутри него. Возвращение значка не подтверждает оплату услуги либо активацию учётной записи. Запишите точное название приложения и модель Apple TV. Сохраните другие работающие приложения и настройки поставщика, пока ищете соответствующую запись о покупке."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Используйте описанный Apple путь",
+          "paragraphs": [
+            "Для Apple TV 4K и Apple TV HD Apple описывает повторную загрузку через App Store, раздел покупок и список приложений не на этом телевизоре. Выберите ранее полученное приложение и кнопку повторной загрузки, если она доступна. Этот путь не поддерживается на Apple TV третьего поколения и старше. Совместимость различается: покупка для другого устройства Apple не гарантирует существования телевизионной версии."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Разделите покупки перед обращением",
+          "paragraphs": [
+            "Используйте учётную запись Apple, которой принадлежит покупка, не передавая пароль. Apple также отличает повторную загрузку приложения от восстановления некоторых встроенных покупок. Если проигрыватель вернулся, а услуга недоступна, уточните продукт в чеке и сторону, отвечающую за оставшуюся проблему: издателя или поставщика. Храните чеки в тайне, скрывайте идентификаторы на снимках и не удаляйте данные ради изменения вида истории покупок."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کی ایپ بحال کرنا: پلیئر ڈاؤن لوڈ کریں یا رکنیت بڑھائیں؟",
+      "excerpt": "App Store سے ایپ لینا اور فراہم کنندہ کی رسائی الگ ریکارڈ ہیں۔ دوبارہ ادائیگی یا ترتیب مٹانے سے پہلے ماڈل اور خریداری کی تاریخ دیکھیں۔",
+      "seo_title": "Geo IPTV کی ایپ بحال کرنا: پلیئر ڈاؤن لوڈ کریں یا رکنیت بڑھائیں؟",
+      "seo_description": "App Store سے ایپ لینا اور فراہم کنندہ کی رسائی الگ ریکارڈ ہیں۔ دوبارہ ادائیگی یا ترتیب مٹانے سے پہلے ماڈل اور خریداری کی تاریخ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے غائب چیز پہچانیں",
+          "paragraphs": [
+            "واضح کریں کہ نصب شدہ پلیئر، ایپ کی خریداری یا اس کے اندر فراہم کنندہ کی رسائی میں سے کیا غائب ہے۔ آئیکن واپس آنا سروس کی ادائیگی یا اکاؤنٹ فعال ہونے کا ثبوت نہیں۔ ایپ کا صحیح نام اور Apple TV کا ماڈل لکھیں۔ متعلقہ خریداری کا ریکارڈ تلاش کرتے ہوئے باقی چلتی ایپس اور فراہم کنندہ کی محفوظ تفصیل برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Apple کا بتایا ہوا راستہ دیکھیں",
+          "paragraphs": [
+            "Apple TV 4K اور Apple TV HD کے لیے Apple نے App Store، خریدی گئی ایپس اور اس ٹی وی پر موجود نہ ہونے والی ایپس کی فہرست سے دوبارہ ڈاؤن لوڈ بیان کیا ہے۔ پہلے حاصل کردہ ایپ اور دستیاب ہو تو دوبارہ ڈاؤن لوڈ کا بٹن منتخب کریں۔ تیسری نسل یا پرانے Apple TV میں یہ طریقہ دستیاب نہیں۔ دوسرے Apple آلے کی ایپ خریدنا ٹی وی کے لیے موافق نسخے کا ثبوت نہیں؛ دستیابی آلے کے لحاظ سے مختلف ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مدد لیتے وقت خریداری الگ رکھیں",
+          "paragraphs": [
+            "متعلقہ خریداری والے Apple اکاؤنٹ کو اس کا پاس ورڈ بتائے بغیر استعمال کریں۔ Apple ایپ دوبارہ ڈاؤن لوڈ کرنے اور بعض اندرونی خریداریوں کی بحالی میں بھی فرق کرتا ہے۔ پلیئر واپس آ جائے مگر سروس نہ آئے تو رسید کا پروڈکٹ دیکھیں اور پوچھیں کہ مسئلہ ایپ ناشر کا ہے یا فراہم کنندہ کا۔ رسیدیں نجی رکھیں، تصاویر میں شناخت چھپائیں اور فہرست بدلنے کے لیے ایپ کا ڈیٹا نہ مٹائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "استعادة تطبيق Geo IPTV: تنزيل المشغّل أم تجديد الخدمة؟",
+      "excerpt": "تنزيل App Store والوصول لدى المزوّد سجلان منفصلان. تحقّق من طراز Apple TV والمشتريات قبل الدفع مجدداً أو حذف الإعدادات.",
+      "seo_title": "استعادة تطبيق Geo IPTV: تنزيل المشغّل أم تجديد الخدمة؟",
+      "seo_description": "تنزيل App Store والوصول لدى المزوّد سجلان منفصلان. تحقّق من طراز Apple TV والمشتريات قبل الدفع مجدداً أو حذف الإعدادات.",
+      "sections": [
+        {
+          "heading": "سمّ العنصر المفقود",
+          "paragraphs": [
+            "حدّد هل المفقود هو المشغّل المثبّت أم شراء التطبيق أم الوصول إلى المزوّد داخله. عودة الأيقونة لا تثبت دفع الخدمة أو تفعيل الحساب. سجّل اسم التطبيق الدقيق وطراز Apple TV. أبقِ التطبيقات الأخرى العاملة وبيانات المزوّد المحفوظة سليمة أثناء البحث عن سجل الشراء الصحيح."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "اتبع المسار الذي توثقه Apple",
+          "paragraphs": [
+            "تشرح Apple إعادة التنزيل على Apple TV 4K وApple TV HD عبر App Store ثم المشتريات ثم التطبيقات غير الموجودة على هذا التلفاز. حدّد التطبيق الذي حصلت عليه سابقاً وزر إعادة التنزيل إن توفر. لا تدعم أجهزة Apple TV من الجيل الثالث أو الأقدم هذا المسار. تختلف الإتاحة بين الأجهزة؛ شراء تطبيق لمنتج Apple آخر لا يضمن وجود إصدار متوافق مع التلفاز."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل المشتريات عند طلب المساعدة",
+          "paragraphs": [
+            "استخدم حساب Apple الذي يملك الشراء دون مشاركة كلمة مروره. تميّز Apple أيضاً بين إعادة تنزيل التطبيق واستعادة بعض المشتريات داخله. إن عاد المشغّل دون الخدمة، اسأل أي منتج يغطيه الإيصال وهل المشكلة لدى ناشر التطبيق أم المزوّد. احتفظ بالإيصالات بصورة خاصة وأخفِ المعرّفات في اللقطات، ولا تحذف بيانات التطبيق لمجرد تغيير مظهر قائمة المشتريات."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV ऐप की बहाली: प्लेयर डाउनलोड करें या सेवा बढ़ाएँ?",
+      "excerpt": "App Store का डाउनलोड और प्रदाता की पहुँच अलग रिकॉर्ड हैं। दोबारा भुगतान या सेटअप मिटाने से पहले Apple TV मॉडल और खरीदारी देखें।",
+      "seo_title": "Geo IPTV ऐप की बहाली: प्लेयर डाउनलोड करें या सेवा बढ़ाएँ?",
+      "seo_description": "App Store का डाउनलोड और प्रदाता की पहुँच अलग रिकॉर्ड हैं। दोबारा भुगतान या सेटअप मिटाने से पहले Apple TV मॉडल और खरीदारी देखें।",
+      "sections": [
+        {
+          "heading": "पहले गायब चीज पहचानें",
+          "paragraphs": [
+            "तय करें कि इंस्टॉल किया हुआ प्लेयर, ऐप की खरीदारी या उसके अंदर प्रदाता की पहुँच में से क्या गायब है। आइकन लौटना सेवा का भुगतान या खाता सक्रिय होने का प्रमाण नहीं है। ऐप का सही नाम और Apple TV मॉडल लिखें। संबंधित खरीदारी ढूँढते समय दूसरे काम करते ऐप और प्रदाता की सहेजी जानकारी सुरक्षित रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.apple.com/en-us/102417"
+            }
+          ]
+        },
+        {
+          "heading": "Apple का बताया रास्ता अपनाएँ",
+          "paragraphs": [
+            "Apple TV 4K और Apple TV HD पर Apple ने App Store, खरीदे गए ऐप और इस टीवी पर न होने वाले ऐप की सूची से दोबारा डाउनलोड बताया है। पहले प्राप्त ऐप और उपलब्ध हो तो पुनः डाउनलोड बटन चुनें। तीसरी पीढ़ी या पुराने Apple TV पर यह तरीका समर्थित नहीं है। उपलब्धता उपकरण के अनुसार बदलती है; दूसरे Apple उत्पाद का ऐप खरीदना टीवी के अनुकूल संस्करण का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सहायता में खरीदारी का अंतर बताएँ",
+          "paragraphs": [
+            "उसी Apple खाते का उपयोग करें जिससे खरीद हुई थी, लेकिन उसका पासवर्ड साझा न करें। Apple ऐप दोबारा डाउनलोड करने और कुछ इन-ऐप खरीदारी बहाल करने में भी अंतर करता है। प्लेयर लौटे लेकिन सेवा नहीं तो रसीद में उत्पाद देखें और पूछें कि समस्या ऐप प्रकाशक की है या प्रदाता की। रसीद निजी रखें, चित्रों में पहचान छिपाएँ और खरीद सूची बदलने के लिए ऐप डेटा न मिटाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: redownload apps on Apple TV 4K and Apple TV HD",
+      "url": "https://support.apple.com/en-us/102417"
+    }
+  ]
+}

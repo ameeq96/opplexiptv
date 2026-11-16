@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-16",
+  "topic": "Evaluate a5G Live IPTV APK search result by actual publisher and device compatibility while preserving Android protections and distinguishing a player licence from service access",
+  "primary_keyword": "5G Live IPTV APK",
+  "slug": "5g-apk-search-check-publisher-before-installing",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV APK searches: verify the publisher before downloading",
+      "excerpt": "A matching name or logo does not identify an app publisher. Check the official listing and device fit before installing a file from a search result.",
+      "seo_title": "5G Live IPTV APK searches: verify the publisher before downloading",
+      "seo_description": "A matching name or logo does not identify an app publisher. Check the official listing and device fit before installing a file from a search result.",
+      "sections": [
+        {
+          "heading": "Treat the name as a question",
+          "paragraphs": [
+            "A 5G Live IPTV APK search result is not evidence that this service publishes a proprietary app. A familiar logo, filename or download-page heading does not establish who made the software or whether it supports your television. Start with the exact device model and operating system, then identify the player named in the public setup instructions. Keep that question separate from whether an existing service account can connect."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Check the documented distribution source",
+          "paragraphs": [
+            "Google recommends getting Android apps from Google Play and warns that unknown-source downloads can put devices and personal information at risk. Review the actual app listing, publisher information and stated device compatibility before installation. Ratings and reviews are additional context, not proof that a lookalike is an official product. A phone app and a television app can require different compatibility checks, even when their names are similar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Preserve protections and ask for evidence",
+          "paragraphs": [
+            "Keep Play Protect enabled. If an unfamiliar page asks you to weaken protection, install another downloader or provide provider credentials first, stop and verify the intended app with support. Share only its public listing link, device model and relevant message; omit passwords and private playback addresses. Confirm any player licence cost separately from the service plan. Neither an APK filename nor a download button proves activation or guaranteed playback."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Búsquedas de APK de 5G Live IPTV: verifica primero el editor",
+      "excerpt": "Un nombre o logotipo coincidente no identifica al editor. Revisa la ficha oficial y la compatibilidad antes de instalar un archivo de una búsqueda.",
+      "seo_title": "Búsquedas de APK de 5G Live IPTV: verifica primero el editor",
+      "seo_description": "Un nombre o logotipo coincidente no identifica al editor. Revisa la ficha oficial y la compatibilidad antes de instalar un archivo de una búsqueda.",
+      "sections": [
+        {
+          "heading": "El nombre es una pregunta",
+          "paragraphs": [
+            "Un resultado de búsqueda de APK de 5G Live IPTV no demuestra que el servicio publique una aplicación propia. Un logotipo conocido, el nombre del archivo o el título de una página no acreditan autoría ni compatibilidad con el televisor. Identifica modelo y sistema operativo, y después el reproductor indicado en las instrucciones públicas. Sepáralo de la conexión de una cuenta de servicio existente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba el origen de distribución",
+          "paragraphs": [
+            "Google recomienda obtener aplicaciones Android de Google Play y advierte de los riesgos para el dispositivo y la información personal al usar fuentes desconocidas. Revisa la ficha real, los datos del editor y la compatibilidad declarada antes de instalar. Las valoraciones y reseñas aportan contexto, pero no prueban que una copia de apariencia similar sea oficial. Una app para móvil y otra para televisión pueden requerir comprobaciones diferentes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Conserva las protecciones",
+          "paragraphs": [
+            "Mantén Play Protect activado. Si una página desconocida pide debilitar la protección, instalar otro descargador o entregar credenciales del proveedor, detente y confirma la app con soporte. Comparte solo el enlace público de la ficha, modelo y mensaje pertinente; omite contraseñas y direcciones privadas. Confirma el coste de licencia del reproductor por separado del plan. Un nombre APK o botón de descarga no garantiza activación ni reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "APK 5G Live IPTV : vérifier l’éditeur avant le téléchargement",
+      "excerpt": "Un nom ou logo similaire n’identifie pas l’éditeur. Vérifiez la fiche officielle et la compatibilité avant d’installer un fichier trouvé en ligne.",
+      "seo_title": "APK 5G Live IPTV : vérifier l’éditeur avant le téléchargement",
+      "seo_description": "Un nom ou logo similaire n’identifie pas l’éditeur. Vérifiez la fiche officielle et la compatibilité avant d’installer un fichier trouvé en ligne.",
+      "sections": [
+        {
+          "heading": "Ne pas déduire l’origine du nom",
+          "paragraphs": [
+            "Un résultat de recherche APK 5G Live IPTV ne prouve pas que le service édite sa propre application. Un logo familier, un nom de fichier ou un titre de page ne garantit ni l’auteur ni la compatibilité avec votre téléviseur. Relevez modèle et système, puis identifiez le lecteur mentionné dans les instructions publiques. Cette question reste distincte de l’accès d’un compte fournisseur existant."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier la source de distribution",
+          "paragraphs": [
+            "Google recommande les applications Android de Google Play et avertit que les sources inconnues peuvent mettre en danger l’appareil et les données personnelles. Consultez la fiche réelle, l’éditeur et la compatibilité annoncée avant l’installation. Notes et avis apportent du contexte mais ne prouvent pas qu’une imitation soit officielle. Une application mobile et une version télévision peuvent nécessiter des vérifications différentes malgré des noms proches."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Préserver les protections",
+          "paragraphs": [
+            "Gardez Play Protect actif. Si une page inconnue demande de réduire la protection, d’ajouter un téléchargeur ou de fournir les identifiants du service, arrêtez-vous et faites confirmer l’app par le support. Partagez uniquement la fiche publique, le modèle et le message utile, sans mots de passe ni adresses privées. Vérifiez séparément la licence du lecteur et le forfait. Un fichier APK ou un bouton ne prouve ni activation ni lecture garantie."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "APK 5G Live IPTV: verifica l’editore prima del download",
+      "excerpt": "Un nome o logo simile non identifica chi pubblica l’app. Controlla scheda ufficiale e compatibilità prima di installare un file trovato online.",
+      "seo_title": "APK 5G Live IPTV: verifica l’editore prima del download",
+      "seo_description": "Un nome o logo simile non identifica chi pubblica l’app. Controlla scheda ufficiale e compatibilità prima di installare un file trovato online.",
+      "sections": [
+        {
+          "heading": "Il nome non prova la provenienza",
+          "paragraphs": [
+            "Un risultato per APK 5G Live IPTV non dimostra che il servizio pubblichi un’app proprietaria. Logo familiare, nome del file e titolo della pagina non provano autore o compatibilità con il televisore. Parti da modello e sistema operativo, quindi identifica il lettore indicato nelle istruzioni pubbliche. È una verifica distinta dalla possibilità di collegare un account del servizio già esistente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla la fonte di distribuzione",
+          "paragraphs": [
+            "Google consiglia di ottenere le app Android da Google Play e avverte dei rischi per dispositivo e informazioni personali con fonti sconosciute. Leggi la scheda effettiva, l’editore e i dispositivi supportati prima dell’installazione. Valutazioni e recensioni danno contesto ma non dimostrano che un’imitazione sia ufficiale. App per telefono e televisore possono richiedere verifiche diverse anche con nomi simili."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Mantieni le protezioni",
+          "paragraphs": [
+            "Lascia Play Protect attivo. Se una pagina sconosciuta chiede di ridurre la protezione, installare un altro programma di download o fornire credenziali del servizio, fermati e verifica l’app con l’assistenza. Condividi solo scheda pubblica, modello e messaggio utile, senza password o indirizzi privati. Verifica la licenza del lettore separatamente dal piano. Nome APK e pulsante di download non provano attivazione o riproduzione garantita."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-APK zoeken: controleer eerst de uitgever",
+      "excerpt": "Een overeenkomstige naam of logo bewijst niet wie de app uitgeeft. Controleer officiële vermelding en apparaatgeschiktheid vóór installatie.",
+      "seo_title": "5G Live IPTV-APK zoeken: controleer eerst de uitgever",
+      "seo_description": "Een overeenkomstige naam of logo bewijst niet wie de app uitgeeft. Controleer officiële vermelding en apparaatgeschiktheid vóór installatie.",
+      "sections": [
+        {
+          "heading": "De naam is geen herkomstbewijs",
+          "paragraphs": [
+            "Een zoekresultaat voor een 5G Live IPTV-APK bewijst niet dat de dienst een eigen app uitgeeft. Een bekend logo, bestandsnaam of paginakop toont niet wie de software maakte of dat je televisie wordt ondersteund. Begin met model en besturingssysteem en bepaal welke speler in de openbare instructies wordt genoemd. Dit staat los van toegang met een bestaand serviceaccount."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de distributiebron",
+          "paragraphs": [
+            "Google beveelt Android-apps uit Google Play aan en waarschuwt dat onbekende bronnen apparaten en persoonlijke gegevens in gevaar kunnen brengen. Bekijk de echte appvermelding, uitgever en opgegeven compatibiliteit vóór installatie. Beoordelingen geven extra context, maar bewijzen niet dat een gelijkende app officieel is. Telefoon- en televisieapps kunnen verschillende compatibiliteitscontroles vragen, zelfs wanneer de namen overeenkomen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Behoud beveiliging en vraag bewijs",
+          "paragraphs": [
+            "Laat Play Protect aan. Vraagt een onbekende pagina beveiliging te verzwakken, nog een downloader te installeren of eerst aanbiedergegevens af te geven, stop dan en verifieer de bedoelde app bij ondersteuning. Deel alleen de openbare appvermelding, het model en de relevante melding; geen wachtwoorden of privéafspeeladressen. Controleer spelerlicenties los van het abonnement. Een APK-naam of downloadknop bewijst geen activering of gegarandeerde weergave."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "APK de 5G Live IPTV: confirme o editor antes de descarregar",
+      "excerpt": "Um nome ou logótipo semelhante não identifica o editor. Verifique a ficha oficial e a compatibilidade antes de instalar um ficheiro encontrado online.",
+      "seo_title": "APK de 5G Live IPTV: confirme o editor antes de descarregar",
+      "seo_description": "Um nome ou logótipo semelhante não identifica o editor. Verifique a ficha oficial e a compatibilidade antes de instalar um ficheiro encontrado online.",
+      "sections": [
+        {
+          "heading": "O nome não comprova a origem",
+          "paragraphs": [
+            "Um resultado de pesquisa de APK de 5G Live IPTV não prova que o serviço publique uma aplicação própria. Um logótipo familiar, nome de ficheiro ou título de página não identifica o autor nem garante compatibilidade com o televisor. Comece pelo modelo e sistema operativo, depois identifique o leitor indicado nas instruções públicas. Essa verificação é diferente do acesso através de uma conta de serviço existente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme a distribuição documentada",
+          "paragraphs": [
+            "A Google recomenda aplicações Android do Google Play e alerta que fontes desconhecidas podem pôr em risco o aparelho e os dados pessoais. Examine a ficha real, o editor e os dispositivos suportados antes da instalação. Classificações e comentários ajudam como contexto, mas não provam que uma imitação seja oficial. Aplicações para telefone e televisão podem exigir verificações diferentes apesar de nomes semelhantes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Mantenha as proteções",
+          "paragraphs": [
+            "Deixe o Play Protect ativo. Se uma página desconhecida pedir menos proteção, outro programa de descarga ou credenciais do fornecedor, pare e confirme a aplicação com o suporte. Partilhe apenas a ficha pública, modelo e mensagem pertinente; exclua palavras-passe e endereços privados. Confirme a licença do leitor separadamente do plano. Um nome APK ou botão de descarga não demonstra ativação nem reprodução garantida."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "APK для 5G Live IPTV: сначала проверьте издателя",
+      "excerpt": "Знакомые название и логотип не определяют издателя. Проверьте официальную карточку и совместимость, прежде чем устанавливать найденный файл.",
+      "seo_title": "APK для 5G Live IPTV: сначала проверьте издателя",
+      "seo_description": "Знакомые название и логотип не определяют издателя. Проверьте официальную карточку и совместимость, прежде чем устанавливать найденный файл.",
+      "sections": [
+        {
+          "heading": "Название не доказывает происхождение",
+          "paragraphs": [
+            "Результат поиска APK для 5G Live IPTV не означает, что сервис выпускает собственное приложение. Знакомый логотип, имя файла и заголовок страницы не подтверждают автора программы или поддержку вашего телевизора. Начните с модели и операционной системы, затем определите проигрыватель из публичных инструкций. Это отдельный вопрос от подключения уже существующей учётной записи поставщика."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте источник распространения",
+          "paragraphs": [
+            "Google рекомендует получать приложения Android в Google Play и предупреждает, что неизвестные источники могут угрожать устройству и личной информации. До установки проверьте настоящую карточку, издателя и указанную совместимость. Оценки и отзывы дают дополнительный контекст, но не доказывают официальный статус похожего приложения. Телефонная и телевизионная версии могут требовать разных проверок даже при сходных названиях."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сохраните защиту и запросите сведения",
+          "paragraphs": [
+            "Оставьте Play Protect включённым. Если незнакомая страница требует ослабить защиту, установить ещё один загрузчик или сначала сообщить доступ поставщика, остановитесь и уточните нужное приложение у поддержки. Передавайте только публичную ссылку на карточку, модель и текст сообщения без паролей и частных адресов. Проверяйте лицензию проигрывателя отдельно от подписки. Имя APK и кнопка загрузки не подтверждают активацию и не гарантируют воспроизведение."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی APK تلاش: ڈاؤن لوڈ سے پہلے ناشر کی تصدیق کریں",
+      "excerpt": "ملتا جلتا نام یا لوگو ایپ کے ناشر کی شناخت نہیں کرتا۔ سرچ سے ملنے والی فائل نصب کرنے سے پہلے سرکاری اندراج اور موافقت دیکھیں۔",
+      "seo_title": "5G Live IPTV کی APK تلاش: ڈاؤن لوڈ سے پہلے ناشر کی تصدیق کریں",
+      "seo_description": "ملتا جلتا نام یا لوگو ایپ کے ناشر کی شناخت نہیں کرتا۔ سرچ سے ملنے والی فائل نصب کرنے سے پہلے سرکاری اندراج اور موافقت دیکھیں۔",
+      "sections": [
+        {
+          "heading": "نام کو سوال سمجھیں",
+          "paragraphs": [
+            "5G Live IPTV کی APK کا سرچ نتیجہ یہ ثبوت نہیں کہ سروس اپنی مخصوص ایپ بناتی ہے۔ جانا پہچانا لوگو، فائل کا نام یا صفحے کی سرخی سافٹ ویئر بنانے والے اور ٹی وی کی موافقت کی تصدیق نہیں کرتے۔ پہلے آلے کا درست ماڈل اور نظام معلوم کریں، پھر عوامی ہدایات میں درج پلیئر پہچانیں۔ موجودہ سروس اکاؤنٹ کے چلنے کا سوال اس سے الگ رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تقسیم کا اصل ذریعہ دیکھیں",
+          "paragraphs": [
+            "Google اینڈرائیڈ ایپس Google Play سے لینے کا مشورہ دیتا ہے اور نامعلوم ذرائع سے آلے اور ذاتی معلومات کو خطرہ ہونے کی تنبیہ کرتا ہے۔ تنصیب سے پہلے اصل اندراج، ناشر کی تفصیل اور بتائی گئی موافقت پڑھیں۔ ستارے اور تبصرے اضافی معلومات ہیں، ملتی جلتی ایپ کے سرکاری ہونے کا ثبوت نہیں۔ فون اور ٹی وی کی ایپ کے لیے ایک جیسے نام کے باوجود الگ موافقت درکار ہو سکتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "حفاظت برقرار رکھ کر ثبوت مانگیں",
+          "paragraphs": [
+            "Play Protect چلتا رہنے دیں۔ اجنبی صفحہ حفاظت کم کرنے، دوسرا ڈاؤن لوڈر لگانے یا پہلے فراہم کنندہ کی اسناد دینے کو کہے تو رکیں اور مدد سے درست ایپ کی تصدیق کریں۔ صرف عوامی اندراج کا لنک، ماڈل اور متعلقہ پیغام دیں؛ پاس ورڈ اور نجی ویڈیو پتے نہ دیں۔ پلیئر کی لائسنس فیس سروس منصوبے سے الگ معلوم کریں۔ APK کے نام یا ڈاؤن لوڈ بٹن سے فعالیت یا یقینی پلے بیک ثابت نہیں ہوتا۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "APK لخدمة 5G Live IPTV: تحقّق من الناشر قبل التنزيل",
+      "excerpt": "الاسم أو الشعار المشابه لا يحدّد ناشر التطبيق. افحص صفحته الرسمية وتوافق جهازك قبل تثبيت ملف من نتائج البحث.",
+      "seo_title": "APK لخدمة 5G Live IPTV: تحقّق من الناشر قبل التنزيل",
+      "seo_description": "الاسم أو الشعار المشابه لا يحدّد ناشر التطبيق. افحص صفحته الرسمية وتوافق جهازك قبل تثبيت ملف من نتائج البحث.",
+      "sections": [
+        {
+          "heading": "اعتبر الاسم سؤالاً",
+          "paragraphs": [
+            "نتيجة البحث عن APK لخدمة 5G Live IPTV لا تثبت أن الخدمة تنشر تطبيقاً خاصاً بها. الشعار المألوف واسم الملف وعنوان صفحة التنزيل لا تثبت هوية المطوّر أو دعم التلفاز. ابدأ بالطراز الدقيق ونظام التشغيل، ثم حدّد المشغّل المذكور في الإرشادات العامة. افصل ذلك عن قدرة حساب خدمة موجود على الاتصال."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افحص مصدر التوزيع",
+          "paragraphs": [
+            "توصي Google بتنزيل تطبيقات Android من Google Play وتحذّر من مخاطر المصادر المجهولة على الجهاز والبيانات الشخصية. راجع صفحة التطبيق الفعلية وبيانات الناشر والتوافق المعلن قبل التثبيت. التقييمات والمراجعات سياق إضافي وليست دليلاً على رسمية تطبيق مشابه. وقد تختلف متطلبات تطبيق الهاتف والتلفاز حتى إن تشابه الاسمان."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احتفظ بالحماية واطلب الدليل",
+          "paragraphs": [
+            "أبقِ Play Protect مفعّلاً. إذا طلبت صفحة مجهولة إضعاف الحماية أو تثبيت برنامج تنزيل آخر أو تقديم بيانات المزوّد أولاً، فتوقف وتحقّق من التطبيق المقصود مع الدعم. شارك رابط الصفحة العامة والطراز والرسالة المطلوبة فقط، دون كلمات المرور والعناوين الخاصة. تأكد من تكلفة ترخيص المشغّل منفصلة عن خطة الخدمة. اسم APK وزر التنزيل لا يثبتان التفعيل أو يضمنان التشغيل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV की APK खोज: डाउनलोड से पहले प्रकाशक जाँचें",
+      "excerpt": "मिलता नाम या लोगो ऐप का प्रकाशक प्रमाणित नहीं करता। खोज से मिली फ़ाइल इंस्टॉल करने से पहले आधिकारिक सूची और उपकरण की अनुकूलता देखें।",
+      "seo_title": "5G Live IPTV की APK खोज: डाउनलोड से पहले प्रकाशक जाँचें",
+      "seo_description": "मिलता नाम या लोगो ऐप का प्रकाशक प्रमाणित नहीं करता। खोज से मिली फ़ाइल इंस्टॉल करने से पहले आधिकारिक सूची और उपकरण की अनुकूलता देखें।",
+      "sections": [
+        {
+          "heading": "नाम को प्रमाण न मानें",
+          "paragraphs": [
+            "5G Live IPTV की APK का खोज परिणाम यह प्रमाण नहीं है कि सेवा अपना अलग ऐप प्रकाशित करती है। जाना-पहचाना लोगो, फ़ाइल नाम या पृष्ठ शीर्षक सॉफ्टवेयर के निर्माता और टीवी समर्थन की पुष्टि नहीं करता। पहले उपकरण का सही मॉडल और ऑपरेटिंग सिस्टम पहचानें, फिर सार्वजनिक निर्देशों में दिए प्लेयर को देखें। मौजूदा सेवा खाते के जुड़ने का प्रश्न इससे अलग है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/android/answer/9457058?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "वितरण का वास्तविक स्रोत देखें",
+          "paragraphs": [
+            "Google Android ऐप Google Play से लेने की सलाह देता है और अनजान स्रोतों से उपकरण तथा निजी जानकारी को खतरे की चेतावनी देता है। इंस्टॉल करने से पहले वास्तविक ऐप सूची, प्रकाशक और बताई गई अनुकूलता पढ़ें। रेटिंग और समीक्षाएँ अतिरिक्त संदर्भ हैं, नकल जैसे दिखने वाले ऐप के आधिकारिक होने का प्रमाण नहीं। समान नाम के बावजूद फोन और टीवी संस्करण की जाँच अलग हो सकती है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सुरक्षा रखकर जानकारी माँगें",
+          "paragraphs": [
+            "Play Protect चालू रखें। अनजान पृष्ठ सुरक्षा कम करने, दूसरा डाउनलोडर लगाने या पहले प्रदाता की लॉगिन जानकारी देने को कहे तो रुकें और सहायता से सही ऐप की पुष्टि करें। सिर्फ सार्वजनिक सूची का लिंक, मॉडल और संबंधित संदेश साझा करें; पासवर्ड और निजी वीडियो पते न दें। प्लेयर लाइसेंस का खर्च सेवा प्लान से अलग समझें। APK नाम या डाउनलोड बटन सक्रियण अथवा निश्चित प्लेबैक का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google: download apps to your Android device",
+      "url": "https://support.google.com/android/answer/9457058?hl=en"
+    }
+  ]
+}

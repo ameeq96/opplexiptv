@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-16",
+  "topic": "Distinguish a VLC for Android Sleep timer countdown from device sleep, a video ending and a provider-account fault",
+  "primary_keyword": "IPTV sleep timer",
+  "slug": "main-sleep-timer-playback-interval-vlc",
+  "translations": {
+    "en": {
+      "title": "IPTV sleep timer: check VLC before changing your account",
+      "excerpt": "A repeatable stop can come from a local playback timer. Record the interval and inspect VLC for Android without erasing saved access.",
+      "seo_title": "IPTV sleep timer: check VLC before changing your account",
+      "seo_description": "A repeatable stop can come from a local playback timer. Record the interval and inspect VLC for Android without erasing saved access.",
+      "sections": [
+        {
+          "heading": "Measure the interval, not just the interruption",
+          "paragraphs": [
+            "An IPTV sleep timer check starts with a simple observation: does playback close after roughly the same elapsed time, while Android and other apps remain usable? Write down when you started, when it stopped, and what appeared afterwards. A local countdown, device sleep and a video ending are separate possibilities. That pattern alone does not establish that your provider account expired or that every viewer lost service."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Read the player’s own setting",
+          "paragraphs": [
+            "VideoLAN’s Android 3.5 guide describes a Sleep timer that closes video playback after a chosen period. If your installed version offers it, inspect the displayed value before changing anything. Record the original state. Only the device owner should compare a different timer setting when appropriate; keep parental limits and device security unchanged. Menu names may differ, so avoid treating another app’s screenshot as an exact map."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep a useful support note",
+          "paragraphs": [
+            "If the stop continues, report the player version, measured interval and whether the app stayed open or returned to another screen. Hide account details and private playback addresses. Do not erase app data, remove a playlist or buy another plan merely because a timer seems plausible. Change one relevant preference at a time and preserve your saved setup so that the comparison remains understandable."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Temporizador IPTV: revisa VLC antes de cambiar tu cuenta",
+      "excerpt": "Una parada repetida puede proceder de un temporizador local. Anota el intervalo y revisa VLC para Android sin borrar los datos de acceso.",
+      "seo_title": "Temporizador IPTV: revisa VLC antes de cambiar tu cuenta",
+      "seo_description": "Una parada repetida puede proceder de un temporizador local. Anota el intervalo y revisa VLC para Android sin borrar los datos de acceso.",
+      "sections": [
+        {
+          "heading": "Mide el intervalo",
+          "paragraphs": [
+            "Comprueba si la reproducción se cierra tras un tiempo parecido y si Android y otras aplicaciones siguen funcionando. Anota el inicio, la parada y la pantalla posterior. Una cuenta atrás local, la suspensión del dispositivo y el final del vídeo son situaciones distintas. Ese patrón no demuestra por sí solo que haya caducado la cuenta del proveedor o que todos los usuarios hayan perdido el servicio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta el ajuste del reproductor",
+          "paragraphs": [
+            "La guía de VideoLAN para Android 3.5 describe un temporizador que cierra la reproducción después del periodo elegido. Si tu versión lo incluye, lee el valor mostrado y registra su estado original. Solo el propietario debe comparar otro ajuste cuando corresponda. Conserva los límites parentales y la seguridad del dispositivo. Los nombres de los menús pueden variar; una captura de otra aplicación no es una guía exacta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prepara una consulta útil",
+          "paragraphs": [
+            "Si vuelve a detenerse, comunica la versión, el intervalo medido y si la aplicación permaneció abierta o mostró otra pantalla. Oculta los datos de cuenta y las direcciones privadas. No borres datos, elimines listas ni compres otro plan por una sospecha de temporizador. Cambia una preferencia pertinente cada vez y conserva la configuración para poder comparar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Minuterie IPTV : vérifier VLC avant de modifier le compte",
+      "excerpt": "Un arrêt régulier peut venir d’une minuterie locale. Notez la durée et examinez VLC pour Android sans effacer vos accès enregistrés.",
+      "seo_title": "Minuterie IPTV : vérifier VLC avant de modifier le compte",
+      "seo_description": "Un arrêt régulier peut venir d’une minuterie locale. Notez la durée et examinez VLC pour Android sans effacer vos accès enregistrés.",
+      "sections": [
+        {
+          "heading": "Mesurer la durée",
+          "paragraphs": [
+            "Observez si la lecture se ferme après une durée comparable, alors qu’Android et les autres applications restent utilisables. Notez le début, l’arrêt et l’écran affiché ensuite. Un compte à rebours local, la veille de l’appareil et la fin d’une vidéo sont des situations différentes. Ce seul comportement ne prouve ni l’expiration du compte fournisseur ni une interruption pour tous les utilisateurs."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lire le réglage du lecteur",
+          "paragraphs": [
+            "Le guide VideoLAN pour Android 3.5 décrit une minuterie qui ferme la lecture après la durée choisie. Si votre version la propose, lisez la valeur affichée et notez l’état initial. Seul le propriétaire doit comparer un autre réglage si cela convient. Conservez les restrictions parentales et la sécurité. Les menus peuvent différer : une capture d’une autre application ne constitue pas un itinéraire exact."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Préparer une demande précise",
+          "paragraphs": [
+            "Si l’arrêt persiste, indiquez la version du lecteur, la durée mesurée et si l’application est restée ouverte ou a changé d’écran. Masquez les identifiants et adresses privées. N’effacez pas les données, ne retirez pas de liste et n’achetez pas un autre forfait sur cette seule hypothèse. Comparez une préférence pertinente à la fois en conservant la configuration."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Timer IPTV: controlla VLC prima di modificare l’account",
+      "excerpt": "Un arresto regolare può dipendere da un timer locale. Annota l’intervallo e verifica VLC per Android senza cancellare gli accessi salvati.",
+      "seo_title": "Timer IPTV: controlla VLC prima di modificare l’account",
+      "seo_description": "Un arresto regolare può dipendere da un timer locale. Annota l’intervallo e verifica VLC per Android senza cancellare gli accessi salvati.",
+      "sections": [
+        {
+          "heading": "Misura l’intervallo",
+          "paragraphs": [
+            "Osserva se la riproduzione si chiude dopo un tempo simile mentre Android e le altre app restano utilizzabili. Annota inizio, arresto e schermata successiva. Un conto alla rovescia locale, la sospensione del dispositivo e la fine del video sono casi diversi. Questo andamento, da solo, non dimostra che l’account del fornitore sia scaduto o che il servizio manchi a tutti."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi l’impostazione del lettore",
+          "paragraphs": [
+            "La guida VideoLAN per Android 3.5 descrive un timer che chiude la riproduzione trascorso il periodo scelto. Se la tua versione lo offre, leggi il valore e registra lo stato iniziale. Solo il proprietario dovrebbe confrontare un’altra impostazione quando opportuno. Mantieni i limiti parentali e le protezioni del dispositivo. I menu possono cambiare: una schermata di un’altra app non è una mappa precisa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prepara una richiesta chiara",
+          "paragraphs": [
+            "Se l’arresto continua, comunica versione del lettore, intervallo misurato e se l’app resta aperta oppure passa a un’altra schermata. Nascondi dati dell’account e indirizzi privati. Non cancellare dati, rimuovere playlist o comprare un altro piano solo per questa ipotesi. Confronta una preferenza pertinente alla volta, conservando la configurazione salvata."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-slaaptimer: controleer VLC voordat je je account wijzigt",
+      "excerpt": "Een terugkerende stop kan door een lokale timer komen. Noteer het tijdsinterval en bekijk VLC voor Android zonder opgeslagen toegang te wissen.",
+      "seo_title": "IPTV-slaaptimer: controleer VLC voordat je je account wijzigt",
+      "seo_description": "Een terugkerende stop kan door een lokale timer komen. Noteer het tijdsinterval en bekijk VLC voor Android zonder opgeslagen toegang te wissen.",
+      "sections": [
+        {
+          "heading": "Meet het tijdsinterval",
+          "paragraphs": [
+            "Controleer of afspelen telkens na ongeveer dezelfde tijd sluit terwijl Android en andere apps bruikbaar blijven. Noteer begin, stop en het scherm daarna. Een lokale aftelling, slaapstand van het apparaat en het einde van een video zijn verschillende situaties. Dat patroon bewijst op zichzelf niet dat het abonnement verlopen is of dat alle kijkers een storing hebben."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de instelling van de speler",
+          "paragraphs": [
+            "VideoLAN beschrijft voor Android 3.5 een slaaptimer die het afspelen na een gekozen periode sluit. Bekijk de getoonde waarde als jouw versie deze optie heeft en noteer de oorspronkelijke stand. Alleen de eigenaar hoort een andere instelling te vergelijken wanneer dat passend is. Behoud ouderlijke limieten en apparaatbeveiliging. Menunamen kunnen verschillen; een schermafbeelding van een andere app is geen exacte route."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Maak een bruikbare ondersteuningsnotitie",
+          "paragraphs": [
+            "Blijft het stoppen optreden, vermeld dan spelerversie, gemeten interval en of de app openbleef of een ander scherm toonde. Verberg accountgegevens en privéafspeeladressen. Wis geen appgegevens, verwijder geen afspeellijst en koop niet zomaar een nieuw abonnement vanwege deze mogelijkheid. Vergelijk één relevante voorkeur tegelijk en behoud de opgeslagen configuratie."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Temporizador IPTV: verifique o VLC antes de alterar a conta",
+      "excerpt": "Uma paragem regular pode resultar de um temporizador local. Anote o intervalo e consulte o VLC para Android sem apagar os acessos guardados.",
+      "seo_title": "Temporizador IPTV: verifique o VLC antes de alterar a conta",
+      "seo_description": "Uma paragem regular pode resultar de um temporizador local. Anote o intervalo e consulte o VLC para Android sem apagar os acessos guardados.",
+      "sections": [
+        {
+          "heading": "Meça o intervalo",
+          "paragraphs": [
+            "Observe se a reprodução fecha após um período semelhante enquanto o Android e outras aplicações continuam utilizáveis. Registe início, paragem e ecrã seguinte. Uma contagem decrescente local, a suspensão do dispositivo e o fim de um vídeo são situações diferentes. Este padrão não prova, por si só, que a conta do fornecedor expirou ou que todos os utilizadores perderam o serviço."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Leia a opção do leitor",
+          "paragraphs": [
+            "O guia VideoLAN para Android 3.5 descreve um temporizador que fecha a reprodução depois do período escolhido. Se a sua versão o disponibilizar, consulte o valor e registe o estado inicial. Apenas o proprietário deve comparar outra definição quando apropriado. Preserve os limites parentais e a segurança do aparelho. Os menus variam; uma captura de outra aplicação não indica um percurso exato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prepare uma informação útil",
+          "paragraphs": [
+            "Se a paragem continuar, indique versão do leitor, intervalo medido e se a aplicação permaneceu aberta ou mudou de ecrã. Oculte dados da conta e endereços privados. Não apague dados, remova listas ou compre outro plano apenas por esta hipótese. Compare uma preferência relevante de cada vez e mantenha a configuração guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Таймер IPTV: проверьте VLC до изменения учётной записи",
+      "excerpt": "Остановка через одинаковое время может быть связана с местным таймером. Проверьте VLC для Android, сохранив параметры доступа.",
+      "seo_title": "Таймер IPTV: проверьте VLC до изменения учётной записи",
+      "seo_description": "Остановка через одинаковое время может быть связана с местным таймером. Проверьте VLC для Android, сохранив параметры доступа.",
+      "sections": [
+        {
+          "heading": "Измерьте промежуток времени",
+          "paragraphs": [
+            "Отметьте, закрывается ли воспроизведение через примерно одинаковое время, когда Android и другие приложения продолжают работать. Запишите начало, остановку и появившийся затем экран. Местный обратный отсчёт, переход устройства в сон и окончание видео — разные ситуации. Одного такого наблюдения недостаточно, чтобы считать подписку истёкшей или объявлять перебой у всех зрителей."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Прочитайте настройку проигрывателя",
+          "paragraphs": [
+            "В руководстве VideoLAN для Android 3.5 описан таймер сна, закрывающий воспроизведение после выбранного периода. Если он есть в вашей версии, прочитайте значение и запишите исходное состояние. Сравнивать другую настройку при необходимости должен владелец устройства. Сохраните родительские ограничения и защиту. Названия меню различаются, поэтому снимок другого приложения не является точной инструкцией."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Подготовьте полезное обращение",
+          "paragraphs": [
+            "Если остановка повторяется, сообщите версию проигрывателя, измеренный интервал и осталось ли приложение открытым либо показало другой экран. Скройте данные учётной записи и частные адреса воспроизведения. Не очищайте данные приложения, не удаляйте список и не покупайте новый план только из-за предположения о таймере. Сравнивайте одну подходящую настройку за раз, сохраняя первоначальную конфигурацию."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "آئی پی ٹی وی کا ٹائمر: اکاؤنٹ بدلنے سے پہلے VLC دیکھیں",
+      "excerpt": "مقررہ وقفے کے بعد ویڈیو رکنے کی وجہ مقامی ٹائمر بھی ہو سکتا ہے۔ وقت نوٹ کریں اور محفوظ رسائی مٹائے بغیر Android کا VLC دیکھیں۔",
+      "seo_title": "آئی پی ٹی وی کا ٹائمر: اکاؤنٹ بدلنے سے پہلے VLC دیکھیں",
+      "seo_description": "مقررہ وقفے کے بعد ویڈیو رکنے کی وجہ مقامی ٹائمر بھی ہو سکتا ہے۔ وقت نوٹ کریں اور محفوظ رسائی مٹائے بغیر Android کا VLC دیکھیں۔",
+      "sections": [
+        {
+          "heading": "رکنے کا وقفہ ناپیں",
+          "paragraphs": [
+            "دیکھیں کہ کیا ویڈیو تقریباً اتنے ہی وقت بعد بند ہوتی ہے جبکہ Android اور دوسری ایپس چل رہی ہوتی ہیں۔ شروع ہونے کا وقت، رکنے کا وقت اور اگلی اسکرین لکھیں۔ ایپ کی مقامی الٹی گنتی، آلے کا سونا اور ویڈیو ختم ہونا الگ صورتیں ہیں۔ صرف اس مشاہدے سے یہ ثابت نہیں ہوتا کہ فراہم کنندہ کا اکاؤنٹ ختم ہو گیا یا تمام صارفین کی سروس بند ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "پلیئر کی اپنی ترتیب پڑھیں",
+          "paragraphs": [
+            "Android 3.5 کے لیے VideoLAN کی رہنمائی میں ایسا نیند کا ٹائمر درج ہے جو منتخب مدت کے بعد ویڈیو بند کرتا ہے۔ آپ کے نسخے میں یہ اختیار ہو تو دکھائی گئی قدر اور اصل حالت نوٹ کریں۔ ضرورت کے مطابق دوسری ترتیب کا موازنہ صرف آلے کا مالک کرے۔ والدین کی پابندیاں اور حفاظتی ترتیبات برقرار رکھیں۔ مینو کے نام بدل سکتے ہیں؛ دوسری ایپ کی تصویر کو عین راستہ نہ سمجھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مدد کے لیے واضح نوٹ بنائیں",
+          "paragraphs": [
+            "رکنا جاری رہے تو پلیئر کا نسخہ، ناپا ہوا وقفہ اور یہ بتائیں کہ ایپ کھلی رہی یا دوسری اسکرین آئی۔ اکاؤنٹ کی تفصیل اور نجی ویڈیو پتے چھپائیں۔ محض ٹائمر کے شبہے پر ایپ کا ڈیٹا نہ مٹائیں، فہرست نہ ہٹائیں اور نیا منصوبہ نہ خریدیں۔ ایک وقت میں صرف متعلقہ ترجیح کا موازنہ کریں اور محفوظ ترتیب برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مؤقت IPTV: افحص VLC قبل تغيير حسابك",
+      "excerpt": "قد ينتج التوقف المتكرر عن مؤقت محلي. سجّل المدة وافحص VLC على Android دون حذف بيانات الوصول المحفوظة.",
+      "seo_title": "مؤقت IPTV: افحص VLC قبل تغيير حسابك",
+      "seo_description": "قد ينتج التوقف المتكرر عن مؤقت محلي. سجّل المدة وافحص VLC على Android دون حذف بيانات الوصول المحفوظة.",
+      "sections": [
+        {
+          "heading": "قس مدة التشغيل",
+          "paragraphs": [
+            "راقب هل يغلق التشغيل بعد مدة متشابهة بينما يبقى Android والتطبيقات الأخرى قابلة للاستخدام. سجّل البداية والتوقف والشاشة التي ظهرت بعده. العد التنازلي المحلي وسكون الجهاز وانتهاء الفيديو حالات مختلفة. هذا النمط وحده لا يثبت انتهاء حساب المزوّد أو انقطاع الخدمة عن جميع المشاهدين."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ إعداد المشغّل",
+          "paragraphs": [
+            "يوضح دليل VideoLAN لإصدار Android 3.5 مؤقت سكون يغلق تشغيل الفيديو بعد المدة المختارة. إذا كان إصدارك يتيحه، اقرأ القيمة الظاهرة وسجّل الحالة الأصلية. لا يقارن إعداداً آخر إلا مالك الجهاز وعندما يكون ذلك مناسباً. أبقِ القيود الأبوية وحماية الجهاز كما هي. قد تختلف القوائم، لذا لا تعتبر لقطة تطبيق آخر خريطة دقيقة لإصدارك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "جهّز ملاحظة مفيدة للدعم",
+          "paragraphs": [
+            "إذا استمر التوقف، اذكر إصدار المشغّل والمدة المقاسة وهل بقي التطبيق مفتوحاً أم انتقل إلى شاشة أخرى. أخفِ بيانات الحساب وعناوين التشغيل الخاصة. لا تمسح بيانات التطبيق ولا تحذف قائمة ولا تشترِ خطة أخرى لمجرد احتمال وجود مؤقت. قارن تفضيلاً مناسباً واحداً كل مرة واحتفظ بإعدادك المحفوظ حتى تظل المقارنة واضحة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV स्लीप टाइमर: खाता बदलने से पहले VLC जाँचें",
+      "excerpt": "नियमित अंतराल पर वीडियो रुकने का कारण स्थानीय टाइमर हो सकता है। समय लिखें और सुरक्षित पहुँच मिटाए बिना Android वाला VLC देखें।",
+      "seo_title": "IPTV स्लीप टाइमर: खाता बदलने से पहले VLC जाँचें",
+      "seo_description": "नियमित अंतराल पर वीडियो रुकने का कारण स्थानीय टाइमर हो सकता है। समय लिखें और सुरक्षित पहुँच मिटाए बिना Android वाला VLC देखें।",
+      "sections": [
+        {
+          "heading": "रुकने का अंतराल मापें",
+          "paragraphs": [
+            "देखें कि क्या वीडियो लगभग समान समय के बाद बंद होता है जबकि Android और दूसरे ऐप चलते रहते हैं। शुरू होने का समय, रुकने का समय और उसके बाद दिखी स्क्रीन लिखें। ऐप की स्थानीय उलटी गिनती, उपकरण का स्लीप मोड और वीडियो समाप्त होना अलग स्थितियाँ हैं। केवल इस व्यवहार से प्रदाता का खाता समाप्त होने या सभी दर्शकों की सेवा बंद होने का निष्कर्ष नहीं निकलता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेयर की अपनी सेटिंग पढ़ें",
+          "paragraphs": [
+            "Android 3.5 के VideoLAN मार्गदर्शक में ऐसा स्लीप टाइमर बताया गया है जो चुनी अवधि के बाद वीडियो बंद करता है। आपके संस्करण में यह विकल्प हो तो दिखाई गई अवधि और मूल स्थिति लिखें। उचित होने पर दूसरी सेटिंग का मिलान केवल उपकरण का मालिक करे। अभिभावकीय सीमाएँ और सुरक्षा बनाए रखें। मेनू अलग हो सकते हैं; दूसरे ऐप का चित्र आपके संस्करण का सही रास्ता नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सहायता के लिए उपयोगी विवरण रखें",
+          "paragraphs": [
+            "समस्या बनी रहे तो प्लेयर संस्करण, मापा अंतराल और ऐप खुला रहा या दूसरी स्क्रीन आई, यह बताएँ। खाते की जानकारी और निजी वीडियो पते छिपाएँ। केवल टाइमर की आशंका पर ऐप का डेटा न मिटाएँ, सूची न हटाएँ और नया प्लान न खरीदें। एक बार में एक संबंधित विकल्प का मिलान करें और सहेजा सेटअप सुरक्षित रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android video-player Sleep timer",
+      "url": "https://docs.videolan.me/vlc-user/android/3.5/en/video/video_player.html"
+    }
+  ]
+}

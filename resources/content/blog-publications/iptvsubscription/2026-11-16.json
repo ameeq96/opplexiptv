@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-16",
+  "topic": "Separate Chrome payment autofill from a verified IPTV Subscription payment while checking Opplex or Filex plan terms and preserving payment authentication",
+  "primary_keyword": "IPTV Subscription payment autofill",
+  "slug": "iptvsubscription-payment-autofill-saved-details-not-receipt",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription payment autofill: saved details are not a receipt",
+      "excerpt": "Chrome can fill stored information without proving an order was paid. Confirm provider, duration and the existing order state before repeating checkout.",
+      "seo_title": "IPTV Subscription payment autofill: saved details are not a receipt",
+      "seo_description": "Chrome can fill stored information without proving an order was paid. Confirm provider, duration and the existing order state before repeating checkout.",
+      "sections": [
+        {
+          "heading": "Identify what Chrome supplied",
+          "paragraphs": [
+            "An IPTV Subscription payment autofill suggestion describes information the browser can place in a form. It is not confirmation from the payment processor that a charge succeeded. Google documents autofill for information such as names, addresses and payment details; availability can vary. Read which fields were filled and which page is asking for confirmation. A saved card name or a completed-looking form is not a payment receipt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Review the purchase independently",
+          "paragraphs": [
+            "Before approving a payment, check the website address and the selected Opplex or Filex provider, duration, currency and displayed total. The service choice and any separate player licence are different products. Ask about connection terms that remain unconfirmed rather than assuming the same allowance for both providers. Let the card owner handle any authentication privately. Keep browser verification and security protections in place; never send a card security code or one-time code to support."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Resolve the existing order first",
+          "paragraphs": [
+            "If a page returns to a filled form after an error, use the existing order-status route or ask support whether that order is pending, failed or paid. Do not repeat a charge with another card merely because Chrome offers autofill again. Describe the visible status without sharing private payment links or full financial details. Confirm the recorded payment and the service setup separately, since saved browser information cannot establish either outcome."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Autorrelleno de pago en IPTV Subscription: no equivale a un recibo",
+      "excerpt": "Chrome puede completar datos guardados sin demostrar un pago. Confirma proveedor, duración y estado del pedido antes de repetir la compra.",
+      "seo_title": "Autorrelleno de pago en IPTV Subscription: no equivale a un recibo",
+      "seo_description": "Chrome puede completar datos guardados sin demostrar un pago. Confirma proveedor, duración y estado del pedido antes de repetir la compra.",
+      "sections": [
+        {
+          "heading": "Identifica los datos de Chrome",
+          "paragraphs": [
+            "Una sugerencia de autorrelleno de pago indica qué información puede colocar Chrome en un formulario. No es confirmación del procesador de que un cargo haya terminado correctamente. Google documenta el rellenado de nombres, direcciones y datos de pago; la disponibilidad puede variar. Lee los campos completados y qué página solicita confirmación. Un nombre de tarjeta guardado o un formulario aparentemente completo no son un recibo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa la compra por separado",
+          "paragraphs": [
+            "Antes de aprobar, comprueba dirección web y proveedor Opplex o Filex, duración, moneda y total mostrado. El servicio y una posible licencia del reproductor son productos distintos. Pregunta por condiciones de conexión no confirmadas sin asumir las mismas para ambos proveedores. La autenticación corresponde al titular de la tarjeta en privado. Mantén las verificaciones del navegador; nunca envíes códigos de seguridad o de un solo uso a soporte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Resuelve primero el pedido existente",
+          "paragraphs": [
+            "Si un error devuelve el formulario rellenado, consulta la ruta de estado del pedido existente o pregunta si está pendiente, fallido o pagado. No repitas el cargo con otra tarjeta porque Chrome vuelva a ofrecer datos. Describe el estado sin compartir enlaces privados ni datos financieros completos. Confirma pago registrado y configuración del servicio por separado; el autorrelleno no acredita ninguno."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Paiement IPTV Subscription : le préremplissage n’est pas un reçu",
+      "excerpt": "Chrome peut remplir des données enregistrées sans confirmer un paiement. Vérifiez fournisseur, durée et état de commande avant de recommencer.",
+      "seo_title": "Paiement IPTV Subscription : le préremplissage n’est pas un reçu",
+      "seo_description": "Chrome peut remplir des données enregistrées sans confirmer un paiement. Vérifiez fournisseur, durée et état de commande avant de recommencer.",
+      "sections": [
+        {
+          "heading": "Identifier les données fournies par Chrome",
+          "paragraphs": [
+            "Une suggestion de préremplissage indique les informations que le navigateur peut placer dans un formulaire. Elle ne confirme pas qu’un prestataire de paiement a accepté le débit. Google décrit notamment le remplissage des noms, adresses et coordonnées de paiement ; la disponibilité varie. Vérifiez les champs remplis et la page qui demande confirmation. Un nom de carte enregistré ou un formulaire apparemment complet n’est pas un reçu."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Examiner l’achat indépendamment",
+          "paragraphs": [
+            "Avant d’approuver, contrôlez l’adresse du site, le fournisseur Opplex ou Filex choisi, la durée, la devise et le total affiché. Le service et une éventuelle licence de lecteur sont des produits distincts. Demandez les conditions de connexion non confirmées sans supposer les mêmes pour les deux fournisseurs. Le titulaire doit effectuer l’authentification en privé. Conservez les vérifications du navigateur et ne communiquez jamais de code de sécurité ou à usage unique au support."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Résoudre d’abord la commande existante",
+          "paragraphs": [
+            "Si une erreur ramène au formulaire rempli, consultez l’état de la commande existante ou demandez si elle est en attente, échouée ou payée. Ne recommencez pas avec une autre carte parce que Chrome propose encore des données. Décrivez le statut sans liens privés ni informations financières complètes. Confirmez séparément le paiement enregistré et la configuration du service : le préremplissage ne prouve aucun des deux."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Pagamento IPTV Subscription: la compilazione automatica non è ricevuta",
+      "excerpt": "Chrome può inserire dati salvati senza provare il pagamento. Conferma fornitore, durata e stato dell’ordine prima di ripetere il checkout.",
+      "seo_title": "Pagamento IPTV Subscription: la compilazione automatica non è ricevuta",
+      "seo_description": "Chrome può inserire dati salvati senza provare il pagamento. Conferma fornitore, durata e stato dell’ordine prima di ripetere il checkout.",
+      "sections": [
+        {
+          "heading": "Identifica i dati inseriti da Chrome",
+          "paragraphs": [
+            "Un suggerimento di compilazione automatica riguarda informazioni che il browser può inserire nel modulo. Non conferma che il gestore del pagamento abbia completato l’addebito. Google documenta la compilazione di nomi, indirizzi e dati di pagamento; la disponibilità varia. Leggi quali campi sono compilati e quale pagina chiede conferma. Un nome di carta salvato o un modulo apparentemente completo non costituiscono ricevuta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla l’acquisto separatamente",
+          "paragraphs": [
+            "Prima di approvare, verifica indirizzo del sito, fornitore Opplex o Filex, durata, valuta e totale mostrato. Servizio ed eventuale licenza del lettore sono prodotti diversi. Chiedi le condizioni di connessione non confermate senza presumere gli stessi limiti per entrambi. L’autenticazione deve essere svolta privatamente dal titolare. Mantieni le verifiche del browser e non inviare mai codici di sicurezza o monouso all’assistenza."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Risolvi prima l’ordine esistente",
+          "paragraphs": [
+            "Se un errore riporta al modulo compilato, consulta lo stato dell’ordine esistente o chiedi se sia in attesa, fallito o pagato. Non ripetere l’addebito con un’altra carta soltanto perché Chrome suggerisce ancora i dati. Descrivi lo stato senza link privati o informazioni finanziarie complete. Verifica separatamente pagamento registrato e configurazione del servizio: i dati del browser non provano nessuno dei due."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-autofill: opgeslagen gegevens zijn geen betaalbewijs",
+      "excerpt": "Chrome kan gegevens invullen zonder een betaling te bevestigen. Controleer aanbieder, looptijd en bestaande orderstatus voordat je opnieuw afrekent.",
+      "seo_title": "IPTV Subscription-autofill: opgeslagen gegevens zijn geen betaalbewijs",
+      "seo_description": "Chrome kan gegevens invullen zonder een betaling te bevestigen. Controleer aanbieder, looptijd en bestaande orderstatus voordat je opnieuw afrekent.",
+      "sections": [
+        {
+          "heading": "Bepaal wat Chrome heeft ingevuld",
+          "paragraphs": [
+            "Een autofillvoorstel gaat over gegevens die de browser in een formulier kan plaatsen. Het is geen bevestiging van de betaalverwerker dat een bedrag succesvol is afgeschreven. Google beschrijft automatisch invullen van onder meer namen, adressen en betaalgegevens; beschikbaarheid verschilt. Bekijk welke velden ingevuld zijn en welke pagina om bevestiging vraagt. Een opgeslagen kaartnaam of compleet ogend formulier is geen betaalbewijs."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de aankoop apart",
+          "paragraphs": [
+            "Controleer vóór goedkeuring het websiteadres, de gekozen aanbieder Opplex of Filex, looptijd, valuta en het getoonde totaal. Het abonnement en een eventuele spelerlicentie zijn aparte producten. Vraag naar onbevestigde verbindingsvoorwaarden en neem geen gelijke limieten aan. Laat de kaarthouder verificatie privé uitvoeren. Behoud browserverificatie en beveiliging; stuur nooit een kaartbeveiligingscode of eenmalige code naar ondersteuning."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Los de bestaande bestelling eerst op",
+          "paragraphs": [
+            "Keert een pagina na een fout terug naar een ingevuld formulier, bekijk dan de bestaande orderstatus of vraag of die bestelling wacht, mislukt of betaald is. Herhaal geen afschrijving met een andere kaart omdat Chrome opnieuw invullen aanbiedt. Beschrijf de status zonder privébetaallinks of volledige financiële gegevens. Bevestig betaling en service-instelling afzonderlijk; opgeslagen browsergegevens bewijzen geen van beide."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Pagamento IPTV Subscription: preenchimento automático não é recibo",
+      "excerpt": "O Chrome pode preencher dados guardados sem provar um pagamento. Confirme fornecedor, duração e estado do pedido antes de repetir a compra.",
+      "seo_title": "Pagamento IPTV Subscription: preenchimento automático não é recibo",
+      "seo_description": "O Chrome pode preencher dados guardados sem provar um pagamento. Confirme fornecedor, duração e estado do pedido antes de repetir a compra.",
+      "sections": [
+        {
+          "heading": "Identifique o que o Chrome forneceu",
+          "paragraphs": [
+            "Uma sugestão de preenchimento automático refere-se à informação que o navegador pode colocar num formulário. Não confirma que o processador concluiu uma cobrança. A Google documenta o preenchimento de nomes, moradas e dados de pagamento; a disponibilidade pode variar. Leia os campos preenchidos e identifique a página que pede confirmação. Um nome de cartão guardado ou um formulário aparentemente completo não são recibos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Reveja a compra separadamente",
+          "paragraphs": [
+            "Antes de aprovar, confirme endereço do site, fornecedor Opplex ou Filex, duração, moeda e total apresentado. O serviço e uma eventual licença do leitor são produtos diferentes. Esclareça condições de ligação ainda não confirmadas sem assumir limites iguais para ambos. Deixe a autenticação ao titular, em privado. Mantenha as verificações do navegador e nunca envie códigos de segurança ou de utilização única ao suporte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Resolva primeiro o pedido existente",
+          "paragraphs": [
+            "Se um erro devolver o formulário preenchido, consulte o estado do pedido existente ou pergunte se está pendente, falhou ou foi pago. Não repita a cobrança com outro cartão porque o Chrome voltou a sugerir dados. Descreva o estado sem ligações privadas ou informação financeira completa. Confirme pagamento registado e configuração do serviço separadamente; dados guardados não comprovam nenhum dos dois."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Оплата IPTV Subscription: автозаполнение не заменяет чек",
+      "excerpt": "Chrome может заполнить сохранённые данные, не подтверждая оплату. Проверьте поставщика, срок и статус заказа, прежде чем повторять платёж.",
+      "seo_title": "Оплата IPTV Subscription: автозаполнение не заменяет чек",
+      "seo_description": "Chrome может заполнить сохранённые данные, не подтверждая оплату. Проверьте поставщика, срок и статус заказа, прежде чем повторять платёж.",
+      "sections": [
+        {
+          "heading": "Определите, что подставил Chrome",
+          "paragraphs": [
+            "Предложение автозаполнения относится к сведениям, которые браузер может внести в форму. Это не подтверждение платёжного оператора об успешном списании. Google описывает заполнение имён, адресов и платёжных данных; доступность функций различается. Прочитайте заполненные поля и определите страницу, запрашивающую согласие. Название сохранённой карты и внешне завершённая форма не являются квитанцией."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте покупку независимо",
+          "paragraphs": [
+            "До подтверждения проверьте адрес сайта, выбранного поставщика Opplex или Filex, срок, валюту и итоговую сумму. Услуга и возможная лицензия проигрывателя — разные продукты. Уточните неизвестные условия подключений, не предполагая одинаковых ограничений. Владелец карты должен пройти проверку самостоятельно и конфиденциально. Сохраните защитные проверки браузера; никогда не передавайте поддержке код карты или одноразовый код."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сначала выясните статус заказа",
+          "paragraphs": [
+            "Если после ошибки вернулась заполненная форма, откройте статус существующего заказа или уточните, ожидается ли оплата, произошёл сбой либо платёж подтверждён. Не повторяйте списание другой картой только из-за нового предложения Chrome. Опишите статус без частных платёжных ссылок и полных финансовых данных. Проверяйте регистрацию платежа и настройку услуги отдельно: сохранённые сведения не подтверждают ни одно из этих состояний."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی خودکار ادائیگی تفصیل رسید نہیں ہے",
+      "excerpt": "Chrome محفوظ معلومات بھر سکتا ہے مگر یہ ادائیگی کا ثبوت نہیں۔ دوبارہ خریدنے سے پہلے فراہم کنندہ، مدت اور موجودہ آرڈر کی حالت دیکھیں۔",
+      "seo_title": "IPTV Subscription کی خودکار ادائیگی تفصیل رسید نہیں ہے",
+      "seo_description": "Chrome محفوظ معلومات بھر سکتا ہے مگر یہ ادائیگی کا ثبوت نہیں۔ دوبارہ خریدنے سے پہلے فراہم کنندہ، مدت اور موجودہ آرڈر کی حالت دیکھیں۔",
+      "sections": [
+        {
+          "heading": "Chrome کی بھری معلومات پہچانیں",
+          "paragraphs": [
+            "ادائیگی کے خودکار اندراج کی تجویز ان معلومات کے بارے میں ہے جو براؤزر فارم میں بھر سکتا ہے۔ یہ ادائیگی پراسیسر کی طرف سے رقم کامیابی سے کٹنے کی تصدیق نہیں۔ Google نام، پتے اور ادائیگی کی تفصیل خودکار بھرنے کی وضاحت کرتا ہے؛ دستیابی مختلف ہو سکتی ہے۔ دیکھیں کون سے خانے بھرے ہیں اور کون سا صفحہ تصدیق مانگ رہا ہے۔ محفوظ کارڈ کا نام یا بھرا ہوا نظر آنے والا فارم رسید نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "خریداری الگ سے جانچیں",
+          "paragraphs": [
+            "منظوری سے پہلے ویب پتہ، منتخب Opplex یا Filex، مدت، کرنسی اور دکھایا گیا کل دیکھیں۔ سروس اور ممکنہ پلیئر لائسنس الگ مصنوعات ہیں۔ غیر مصدقہ کنکشن شرائط پوچھیں؛ دونوں فراہم کنندگان کی اجازت ایک جیسی فرض نہ کریں۔ کارڈ کا مالک نجی طور پر تصدیق کرے۔ براؤزر کی حفاظتی جانچ برقرار رکھیں؛ کارڈ کا حفاظتی یا یک وقتی کوڈ مدد دینے والے کو کبھی نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "پہلے موجودہ آرڈر حل کریں",
+          "paragraphs": [
+            "خرابی کے بعد بھرا فارم واپس آئے تو موجودہ آرڈر کی حالت دیکھیں یا پوچھیں کہ آرڈر زیر انتظار، ناکام یا ادا شدہ ہے۔ Chrome دوبارہ معلومات پیش کرے تو محض اس وجہ سے دوسرے کارڈ سے رقم نہ کٹوائیں۔ نجی ادائیگی لنکس یا مکمل مالی معلومات دیے بغیر حالت بیان کریں۔ ادائیگی ریکارڈ ہونے اور سروس کی ترتیب کی تصدیق الگ کریں؛ محفوظ براؤزر معلومات کسی بھی نتیجے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ملء دفع IPTV Subscription تلقائياً ليس إيصالاً",
+      "excerpt": "قد يملأ Chrome بيانات محفوظة دون إثبات الدفع. تحقّق من المزوّد والمدة وحالة الطلب القائم قبل تكرار الشراء.",
+      "seo_title": "ملء دفع IPTV Subscription تلقائياً ليس إيصالاً",
+      "seo_description": "قد يملأ Chrome بيانات محفوظة دون إثبات الدفع. تحقّق من المزوّد والمدة وحالة الطلب القائم قبل تكرار الشراء.",
+      "sections": [
+        {
+          "heading": "حدّد ما قدّمه Chrome",
+          "paragraphs": [
+            "اقتراح الملء التلقائي يصف معلومات يستطيع المتصفح وضعها في النموذج، وليس تأكيداً من معالج الدفع على نجاح الخصم. توثّق Google ملء بيانات مثل الأسماء والعناوين ووسائل الدفع، وقد يختلف التوفر. اقرأ الحقول المعبأة وحدّد الصفحة التي تطلب التأكيد. اسم بطاقة محفوظ أو نموذج يبدو مكتملاً لا يعد إيصال دفع."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "راجع الشراء بشكل مستقل",
+          "paragraphs": [
+            "قبل الموافقة، راجع عنوان الموقع والمزوّد المختار Opplex أو Filex والمدة والعملة والمجموع المعروض. الخدمة وأي ترخيص منفصل للمشغّل منتجان مختلفان. اسأل عن شروط الاتصال غير المؤكدة ولا تفترض تساويها لدى المزوّدين. اترك التحقق لمالك البطاقة بصورة خاصة. احتفظ بتحقق المتصفح وحمايته ولا ترسل رمز أمان البطاقة أو رمزاً لمرة واحدة إلى الدعم."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احسم حالة الطلب الموجود أولاً",
+          "paragraphs": [
+            "إذا أعادتك الصفحة إلى نموذج معبأ بعد خطأ، افتح حالة الطلب القائم أو اسأل هل هو معلّق أم فاشل أم مدفوع. لا تكرر الخصم ببطاقة أخرى لمجرد أن Chrome يعرض الملء مجدداً. صف الحالة دون مشاركة روابط دفع خاصة أو تفاصيل مالية كاملة. تحقّق من تسجيل الدفع وإعداد الخدمة كلٍّ على حدة؛ المعلومات المحفوظة لا تثبت أياً منهما."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription भुगतान ऑटोफिल: सहेजे विवरण रसीद नहीं हैं",
+      "excerpt": "Chrome जानकारी भर सकता है, पर उससे भुगतान प्रमाणित नहीं होता। दोबारा खरीदने से पहले प्रदाता, अवधि और मौजूदा ऑर्डर की स्थिति जाँचें।",
+      "seo_title": "IPTV Subscription भुगतान ऑटोफिल: सहेजे विवरण रसीद नहीं हैं",
+      "seo_description": "Chrome जानकारी भर सकता है, पर उससे भुगतान प्रमाणित नहीं होता। दोबारा खरीदने से पहले प्रदाता, अवधि और मौजूदा ऑर्डर की स्थिति जाँचें।",
+      "sections": [
+        {
+          "heading": "Chrome के भरे विवरण पहचानें",
+          "paragraphs": [
+            "भुगतान ऑटोफिल का सुझाव उन जानकारियों के बारे में है जिन्हें ब्राउज़र फॉर्म में भर सकता है। यह भुगतान संसाधक से रकम सफलतापूर्वक कटने की पुष्टि नहीं है। Google नाम, पते और भुगतान जानकारी भरने की सुविधा बताता है; उपलब्धता बदल सकती है। देखें कौन से खाने भरे हैं और कौन सा पृष्ठ पुष्टि माँगता है। सहेजा कार्ड नाम या पूरा दिखता फॉर्म भुगतान की रसीद नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chrome/answer/142893?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "खरीद को अलग से जाँचें",
+          "paragraphs": [
+            "स्वीकृति से पहले वेबसाइट पता, चुना Opplex या Filex प्रदाता, अवधि, मुद्रा और दिखाया कुल देखें। सेवा तथा अलग प्लेयर लाइसेंस अलग उत्पाद हैं। अपुष्ट कनेक्शन शर्तें पूछें; दोनों की अनुमति समान न मानें। कार्ड का मालिक निजी तौर पर प्रमाणीकरण करे। ब्राउज़र सत्यापन और सुरक्षा बनाए रखें; कार्ड सुरक्षा कोड या एक बार वाला कोड सहायता को कभी न दें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहले मौजूदा ऑर्डर स्पष्ट करें",
+          "paragraphs": [
+            "त्रुटि के बाद भरा फॉर्म लौटे तो पहले मौजूदा ऑर्डर की स्थिति देखें या पूछें कि वह लंबित, विफल या भुगतान किया हुआ है। Chrome फिर सुझाव दे तो केवल इस कारण दूसरे कार्ड से दोबारा भुगतान न करें। निजी भुगतान लिंक या पूरे वित्तीय विवरण के बिना स्थिति बताएँ। भुगतान का दर्ज होना और सेवा का सेटअप अलग से जाँचें; सहेजी ब्राउज़र जानकारी दोनों में से किसी का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome: fill out forms automatically",
+      "url": "https://support.google.com/chrome/answer/142893?hl=en"
+    }
+  ]
+}
