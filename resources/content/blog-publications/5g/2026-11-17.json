@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-17",
+  "topic": "Identify a missed Android notification versus an in-player message and use previously enabled Pixel history without exposing private adjacent alerts.",
+  "primary_keyword": "5G Live IPTV notification history",
+  "slug": "5g-notification-history-versus-player-message",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV notification history: recover context, not a service verdict",
+      "excerpt": "A missed Android notification and a brief message inside a player are different. On a supported Pixel, existing notification history can help identify the sender.",
+      "seo_title": "5G Live IPTV notification history: recover context, not a service verdict",
+      "seo_description": "A missed Android notification and a brief message inside a player are different. On a supported Pixel, existing notification history can help identify the sender.",
+      "sections": [
+        {
+          "heading": "Was it an Android notification?",
+          "paragraphs": [
+            "A 5G Live IPTV notification history check starts by identifying where the message appeared. Was it in Android’s notification area, or only inside the player’s picture? Note the app icon, approximate time and what you were doing. A disappearing message alone does not establish subscription expiry, successful payment or an outage. Android notification history does not promise recovery of every message drawn inside an app."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read the device-specific history",
+          "paragraphs": [
+            "Google’s Pixel guide explains Settings, Notifications, then Notification history. History must already have been turned on to find past alerts; when enabled, Pixel keeps dismissed notifications from the last 24 hours. Other Android devices may have different menus or lack this feature. If the relevant history was not being recorded, do not expect a later switch to reconstruct it. Review privacy before enabling ongoing storage, and avoid unknown notification-recovery apps."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Share only the useful detail",
+          "paragraphs": [
+            "Copy the relevant sender, time and error wording into a short support note. Do not post the full history screen: neighbouring entries may contain private messages, verification codes or account links. A displayed app name is context, not proof that a payment request is genuine. Keep security controls and saved player data intact while the actual playback symptom is checked separately."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Historial de notificaciones de 5G Live IPTV: recupera el contexto",
+      "excerpt": "Una notificación perdida de Android no es igual a un mensaje dentro del reproductor. El historial ya activo de un Pixel compatible puede identificar al remitente.",
+      "seo_title": "Historial de notificaciones de 5G Live IPTV: recupera el contexto",
+      "seo_description": "Una notificación perdida de Android no es igual a un mensaje dentro del reproductor. El historial ya activo de un Pixel compatible puede identificar al remitente.",
+      "sections": [
+        {
+          "heading": "¿Era una notificación de Android?",
+          "paragraphs": [
+            "Empieza por localizar dónde apareció el mensaje relacionado con 5G Live IPTV: ¿en el área de notificaciones de Android o solo dentro de la imagen del reproductor? Anota el icono de la aplicación, la hora aproximada y lo que estabas haciendo. Un mensaje que desaparece no demuestra caducidad, pago correcto ni caída del servicio. El historial de Android no garantiza recuperar cada mensaje mostrado dentro de una aplicación."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta el historial de tu dispositivo",
+          "paragraphs": [
+            "La guía de Google para Pixel indica Ajustes, Notificaciones e Historial de notificaciones. El historial debe haber estado activado para encontrar avisos anteriores; Pixel conserva las notificaciones descartadas de las últimas 24 horas mientras está habilitado. Otros Android pueden tener menús distintos o carecer de esta función. Activarla después no reconstruye registros que no se guardaban. Revisa la privacidad antes de habilitar almacenamiento continuo y evita aplicaciones desconocidas de recuperación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparte solo el dato necesario",
+          "paragraphs": [
+            "Copia remitente, hora y texto del error pertinente en una consulta breve. No publiques toda la pantalla: otras entradas pueden contener mensajes privados, códigos de verificación o enlaces de cuenta. El nombre mostrado de una aplicación aporta contexto, pero no prueba que una solicitud de pago sea auténtica. Conserva la seguridad y los datos del reproductor mientras se comprueba aparte el síntoma de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Historique des notifications 5G Live IPTV : retrouvez le contexte",
+      "excerpt": "Une notification Android manquée diffère d’un message dans le lecteur. L’historique déjà actif d’un Pixel compatible peut aider à identifier l’expéditeur.",
+      "seo_title": "Historique des notifications 5G Live IPTV : retrouvez le contexte",
+      "seo_description": "Une notification Android manquée diffère d’un message dans le lecteur. L’historique déjà actif d’un Pixel compatible peut aider à identifier l’expéditeur.",
+      "sections": [
+        {
+          "heading": "Était-ce une notification Android ?",
+          "paragraphs": [
+            "Commencez par situer le message lié à 5G Live IPTV : dans la zone de notifications Android ou uniquement dans l’image du lecteur ? Notez l’icône de l’application, l’heure approximative et votre action à ce moment-là. Un message disparu ne prouve ni expiration, ni paiement réussi, ni panne. L’historique Android ne garantit pas la récupération de tous les messages affichés à l’intérieur d’une application."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consultez l’historique adapté à l’appareil",
+          "paragraphs": [
+            "Le guide Google pour Pixel indique Paramètres, Notifications, puis Historique des notifications. L’historique devait déjà être activé pour retrouver les anciennes alertes ; Pixel conserve alors les notifications ignorées des dernières 24 heures. D’autres appareils Android peuvent proposer des menus différents ou ne pas avoir cette fonction. L’activer ensuite ne reconstruit pas des données non enregistrées. Examinez la confidentialité avant d’activer un stockage continu et évitez les applications de récupération inconnues."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Partagez uniquement l’information utile",
+          "paragraphs": [
+            "Recopiez l’expéditeur, l’heure et le texte pertinent de l’erreur dans une courte demande. Ne publiez pas l’écran complet : les entrées voisines peuvent contenir messages privés, codes de vérification ou liens de compte. Un nom d’application affiché donne un contexte, sans authentifier une demande de paiement. Préservez la sécurité et les données du lecteur pendant la vérification séparée du problème de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cronologia notifiche 5G Live IPTV: recupera il contesto",
+      "excerpt": "Una notifica Android persa è diversa da un messaggio nel lettore. Su un Pixel compatibile, la cronologia già attiva può aiutare a trovare il mittente.",
+      "seo_title": "Cronologia notifiche 5G Live IPTV: recupera il contesto",
+      "seo_description": "Una notifica Android persa è diversa da un messaggio nel lettore. Su un Pixel compatibile, la cronologia già attiva può aiutare a trovare il mittente.",
+      "sections": [
+        {
+          "heading": "Era una notifica di Android?",
+          "paragraphs": [
+            "Per una notifica relativa a 5G Live IPTV, identifica prima dove compariva: nell’area notifiche Android oppure soltanto nell’immagine del lettore? Annota l’icona dell’app, l’ora approssimativa e cosa stavi facendo. Un messaggio scomparso non dimostra scadenza, pagamento riuscito o interruzione del servizio. La cronologia Android non garantisce di recuperare ogni messaggio visualizzato all’interno di un’app."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi la cronologia del dispositivo",
+          "paragraphs": [
+            "La guida Google per Pixel indica Impostazioni, Notifiche e Cronologia notifiche. La funzione doveva essere già attiva per ritrovare gli avvisi precedenti; quando abilitata, Pixel conserva quelli ignorati nelle ultime 24 ore. Altri dispositivi Android possono avere menu diversi o non offrire la funzione. Attivarla dopo non ricostruisce dati mai registrati. Valuta la privacy prima di abilitare una conservazione continua ed evita app sconosciute di recupero notifiche."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Condividi solo il dettaglio utile",
+          "paragraphs": [
+            "Riporta mittente, ora e testo pertinente dell’errore in una breve richiesta. Non pubblicare tutta la schermata: altre voci possono contenere messaggi privati, codici di verifica o link dell’account. Il nome visualizzato di un’app dà contesto, ma non autentica una richiesta di pagamento. Mantieni protezioni e dati salvati del lettore mentre il problema di riproduzione viene verificato separatamente."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-meldingsgeschiedenis: herstel de context",
+      "excerpt": "Een gemiste Android-melding verschilt van tekst in de speler. Op een geschikte Pixel kan al ingeschakelde meldingsgeschiedenis de afzender helpen vinden.",
+      "seo_title": "5G Live IPTV-meldingsgeschiedenis: herstel de context",
+      "seo_description": "Een gemiste Android-melding verschilt van tekst in de speler. Op een geschikte Pixel kan al ingeschakelde meldingsgeschiedenis de afzender helpen vinden.",
+      "sections": [
+        {
+          "heading": "Was het een Android-melding?",
+          "paragraphs": [
+            "Bepaal bij een melding rond 5G Live IPTV eerst waar deze verscheen: in Androids meldingengebied of alleen binnen het spelerbeeld? Noteer het appicoon, het geschatte tijdstip en wat je deed. Een verdwenen bericht bewijst geen verlopen abonnement, geslaagde betaling of storing. Androids meldingsgeschiedenis garandeert geen herstel van ieder bericht dat een app binnen het eigen scherm tekent."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de geschiedenis voor jouw apparaat",
+          "paragraphs": [
+            "Google beschrijft voor Pixel Instellingen, Meldingen en Meldingsgeschiedenis. De geschiedenis moet al ingeschakeld zijn geweest om eerdere meldingen terug te vinden; Pixel bewaart dan weggeveegde meldingen uit de laatste 24 uur. Andere Android-apparaten kunnen andere menu’s hebben of de functie missen. Later inschakelen reconstrueert geen nooit opgeslagen gegevens. Beoordeel privacy voordat je doorlopende opslag aanzet en vermijd onbekende herstelapps."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Deel alleen het nuttige detail",
+          "paragraphs": [
+            "Neem de relevante afzender, tijd en fouttekst over in een korte ondersteuningsvraag. Plaats niet het hele geschiedenisvenster: andere regels kunnen privéberichten, verificatiecodes of accountlinks bevatten. Een getoonde appnaam geeft context, maar bewijst niet dat een betaalverzoek echt is. Bewaar beveiliging en spelergegevens terwijl het afspeelprobleem afzonderlijk wordt onderzocht."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Histórico de notificações 5G Live IPTV: recupere o contexto",
+      "excerpt": "Uma notificação Android perdida difere de uma mensagem no leitor. Num Pixel compatível, o histórico já ativo pode ajudar a identificar o remetente.",
+      "seo_title": "Histórico de notificações 5G Live IPTV: recupere o contexto",
+      "seo_description": "Uma notificação Android perdida difere de uma mensagem no leitor. Num Pixel compatível, o histórico já ativo pode ajudar a identificar o remetente.",
+      "sections": [
+        {
+          "heading": "Era uma notificação do Android?",
+          "paragraphs": [
+            "Comece por identificar onde apareceu a mensagem relacionada com 5G Live IPTV: na área de notificações do Android ou apenas dentro da imagem do leitor? Anote o ícone da aplicação, a hora aproximada e o que estava a fazer. Uma mensagem desaparecida não prova expiração, pagamento concluído nem falha geral. O histórico do Android não garante recuperar todas as mensagens apresentadas dentro de uma aplicação."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Consulte o histórico do aparelho",
+          "paragraphs": [
+            "O guia da Google para Pixel indica Definições, Notificações e Histórico de notificações. A função tinha de estar ativa para encontrar alertas anteriores; quando ligada, Pixel conserva notificações dispensadas das últimas 24 horas. Outros Android podem ter menus diferentes ou não disponibilizar esta função. Ativá-la depois não reconstrói registos que não foram guardados. Avalie a privacidade antes de permitir armazenamento contínuo e evite aplicações desconhecidas de recuperação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Partilhe só o detalhe útil",
+          "paragraphs": [
+            "Copie remetente, hora e texto relevante do erro para um pedido breve de apoio. Não publique todo o ecrã: outras entradas podem conter mensagens privadas, códigos de verificação ou ligações de conta. O nome apresentado de uma aplicação dá contexto, mas não autentica um pedido de pagamento. Preserve a segurança e os dados do leitor enquanto o problema de reprodução é verificado separadamente."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "История уведомлений 5G Live IPTV: восстановите контекст",
+      "excerpt": "Пропущенное уведомление Android отличается от сообщения внутри проигрывателя. Уже включённая история на подходящем Pixel поможет определить отправителя.",
+      "seo_title": "История уведомлений 5G Live IPTV: восстановите контекст",
+      "seo_description": "Пропущенное уведомление Android отличается от сообщения внутри проигрывателя. Уже включённая история на подходящем Pixel поможет определить отправителя.",
+      "sections": [
+        {
+          "heading": "Было ли это уведомление Android?",
+          "paragraphs": [
+            "Сначала выясните, где появилось сообщение о 5G Live IPTV: в области уведомлений Android или только внутри изображения проигрывателя? Запишите значок приложения, примерное время и своё действие. Исчезнувшее сообщение не доказывает истечение подписки, успешную оплату или общий сбой. История Android не обещает восстановить каждое сообщение, показанное приложением внутри собственного окна."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте историю своего устройства",
+          "paragraphs": [
+            "Руководство Google для Pixel указывает разделы настроек уведомлений и истории уведомлений. Чтобы найти прошлые оповещения, история должна была быть включена заранее; Pixel тогда хранит отклонённые уведомления за последние 24 часа. На других Android меню может отличаться или функции может не быть. Более позднее включение не восстановит незаписанные данные. Перед постоянным хранением оцените конфиденциальность и избегайте неизвестных приложений восстановления."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Передайте только нужные сведения",
+          "paragraphs": [
+            "Перепишите относящиеся к ошибке имя отправителя, время и текст в короткое обращение. Не публикуйте весь экран истории: рядом могут быть личные сообщения, коды подтверждения и ссылки на аккаунты. Показанное имя приложения даёт контекст, но не подтверждает подлинность запроса оплаты. Сохраните защиту и данные проигрывателя, пока отдельно проверяется сам симптом воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی اطلاع کی تاریخ: پہلے درست سیاق سمجھیں",
+      "excerpt": "چھوٹی ہوئی اینڈرائڈ اطلاع اور پلیئر کے اندر عارضی پیغام الگ ہیں۔ معاون Pixel میں پہلے سے فعال تاریخ اطلاع بھیجنے والی ایپ بتا سکتی ہے۔",
+      "seo_title": "5G Live IPTV کی اطلاع کی تاریخ: پہلے درست سیاق سمجھیں",
+      "seo_description": "چھوٹی ہوئی اینڈرائڈ اطلاع اور پلیئر کے اندر عارضی پیغام الگ ہیں۔ معاون Pixel میں پہلے سے فعال تاریخ اطلاع بھیجنے والی ایپ بتا سکتی ہے۔",
+      "sections": [
+        {
+          "heading": "کیا یہ اینڈرائڈ کی اطلاع تھی؟",
+          "paragraphs": [
+            "5G Live IPTV کے پیغام کی جانچ میں پہلے دیکھیں وہ کہاں آیا: اینڈرائڈ کے اطلاع والے حصے میں یا صرف پلیئر کی تصویر کے اندر؟ ایپ کا نشان، اندازاً وقت اور اس وقت کیا کر رہے تھے لکھیں۔ غائب پیغام اکیلا سبسکرپشن ختم ہونے، ادائیگی کامیاب ہونے یا عمومی بندش کا ثبوت نہیں۔ اینڈرائڈ کی اطلاع کی تاریخ ایپ کے اپنے منظر میں آنے والا ہر پیغام واپس لانے کا وعدہ نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اپنے آلے کی تاریخ دیکھیں",
+          "paragraphs": [
+            "گوگل کی Pixel رہنمائی میں ترتیبات، اطلاعات اور پھر اطلاعات کی تاریخ کا راستہ ہے۔ پرانی اطلاع ملنے کے لیے تاریخ پہلے سے فعال ہونی چاہیے؛ فعال ہونے پر Pixel گزشتہ 24 گھنٹوں کی ہٹائی ہوئی اطلاعات رکھتا ہے۔ دوسرے اینڈرائڈ آلات میں مینو مختلف یا سہولت غائب ہو سکتی ہے۔ بعد میں فعال کرنے سے پہلے نہ لکھا گیا ریکارڈ نہیں بنتا۔ مسلسل ریکارڈ رکھنے سے پہلے رازداری دیکھیں اور نامعلوم اطلاع بحال کرنے والی ایپس سے بچیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صرف ضروری تفصیل بھیجیں",
+          "paragraphs": [
+            "متعلقہ بھیجنے والی ایپ، وقت اور خرابی کے الفاظ ایک مختصر مدد کی درخواست میں لکھیں۔ پوری تاریخ کی تصویر عوامی طور پر نہ ڈالیں؛ ساتھ نجی پیغامات، تصدیقی کوڈ یا اکاؤنٹ کے لنک ہو سکتے ہیں۔ ایپ کا دکھائی دیا نام صرف سیاق ہے، ادائیگی کے مطالبے کی اصلیت کا ثبوت نہیں۔ اصل پلے بیک مسئلہ الگ جانچتے ہوئے حفاظتی کنٹرول اور محفوظ پلیئر ڈیٹا برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "سجل إشعارات 5G Live IPTV: استعد السياق لا حكماً على الخدمة",
+      "excerpt": "إشعار Android الفائت يختلف عن رسالة داخل المشغّل. قد يساعد السجل المفعّل مسبقاً على جهاز Pixel مدعوم في تحديد المرسِل.",
+      "seo_title": "سجل إشعارات 5G Live IPTV: استعد السياق لا حكماً على الخدمة",
+      "seo_description": "إشعار Android الفائت يختلف عن رسالة داخل المشغّل. قد يساعد السجل المفعّل مسبقاً على جهاز Pixel مدعوم في تحديد المرسِل.",
+      "sections": [
+        {
+          "heading": "هل كان إشعار Android؟",
+          "paragraphs": [
+            "ابدأ بتحديد موضع الرسالة المتعلقة بـ5G Live IPTV: هل ظهرت في منطقة إشعارات Android أم داخل صورة المشغّل فقط؟ دوّن رمز التطبيق والوقت التقريبي وما كنت تفعله. اختفاء رسالة وحده لا يثبت انتهاء الاشتراك أو نجاح الدفع أو انقطاعاً عاماً. لا يضمن سجل Android استعادة كل رسالة يعرضها التطبيق داخل واجهته."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ سجل جهازك تحديداً",
+          "paragraphs": [
+            "يشرح دليل Google لهواتف Pixel المسار: الإعدادات ثم الإشعارات ثم سجل الإشعارات. يجب أن يكون السجل مفعّلاً مسبقاً للعثور على التنبيهات السابقة؛ عند تفعيله يحتفظ Pixel بالإشعارات المرفوضة خلال آخر 24 ساعة. قد تختلف القوائم أو تغيب الوظيفة في أجهزة Android الأخرى. تفعيلها لاحقاً لا يعيد إنشاء بيانات لم تُسجّل. راجع الخصوصية قبل تشغيل التخزين المستمر وتجنب تطبيقات استعادة الإشعارات المجهولة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "شارك التفصيل المفيد فقط",
+          "paragraphs": [
+            "انسخ المرسِل والوقت وعبارة الخطأ ذات الصلة في طلب دعم قصير. لا تنشر شاشة السجل كاملة، فقد تحتوي الإدخالات المجاورة على رسائل خاصة أو رموز تحقق أو روابط حساب. اسم التطبيق المعروض سياق وليس إثباتاً لصحة طلب دفع. حافظ على إعدادات الحماية وبيانات المشغّل أثناء فحص عَرَض التشغيل بصورة منفصلة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV सूचना इतिहास: पहले संदेश का संदर्भ समझें",
+      "excerpt": "छूटी हुई Android सूचना और प्लेयर के भीतर का संदेश अलग हैं। समर्थित Pixel में पहले से चालू इतिहास भेजने वाले ऐप को पहचानने में मदद कर सकता है।",
+      "seo_title": "5G Live IPTV सूचना इतिहास: पहले संदेश का संदर्भ समझें",
+      "seo_description": "छूटी हुई Android सूचना और प्लेयर के भीतर का संदेश अलग हैं। समर्थित Pixel में पहले से चालू इतिहास भेजने वाले ऐप को पहचानने में मदद कर सकता है।",
+      "sections": [
+        {
+          "heading": "क्या यह Android की सूचना थी?",
+          "paragraphs": [
+            "5G Live IPTV से जुड़े संदेश में पहले देखें कि वह कहाँ दिखा: Android के सूचना क्षेत्र में या सिर्फ़ प्लेयर की तस्वीर के भीतर? ऐप का चिह्न, लगभग समय और उस वक्त का काम लिखें। गायब संदेश अकेले सदस्यता खत्म होने, भुगतान सफल होने या व्यापक बंदी का प्रमाण नहीं है। Android का सूचना इतिहास ऐप के अपने दृश्य में दिखने वाले हर संदेश को वापस लाने का वादा नहीं करता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/pixelphone/answer/16785488?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अपने डिवाइस का इतिहास देखें",
+          "paragraphs": [
+            "Google की Pixel मार्गदर्शिका में सेटिंग, सूचनाएँ और फिर सूचना इतिहास का रास्ता है। पुराने अलर्ट पाने के लिए इतिहास पहले से चालू होना चाहिए; चालू होने पर Pixel पिछले 24 घंटों में खारिज की गई सूचनाएँ रखता है। दूसरे Android उपकरणों के मेन्यू अलग हो सकते हैं या यह सुविधा नहीं भी हो सकती है। बाद में चालू करने से पहले न दर्ज हुआ रिकॉर्ड नहीं बनता। लगातार रिकॉर्ड रखने से पहले गोपनीयता समझें और अनजान सूचना वापस लाने वाले ऐप से बचें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सिर्फ़ उपयोगी विवरण साझा करें",
+          "paragraphs": [
+            "संबंधित भेजने वाला ऐप, समय और त्रुटि के शब्द छोटी सहायता टिप्पणी में लिखें। पूरे इतिहास की स्क्रीन सार्वजनिक न करें; दूसरी पंक्तियों में निजी संदेश, सत्यापन कोड या खाते के लिंक हो सकते हैं। दिखता ऐप नाम संदर्भ है, भुगतान माँग असली होने का प्रमाण नहीं। असल प्लेबैक समस्या अलग जाँचते समय सुरक्षा और सहेजा प्लेयर डेटा बनाए रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/pixelphone/answer/16785488?hl=en",
+      "label": "Google Pixel Help: find missed or past notifications"
+    }
+  ]
+}

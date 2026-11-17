@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-17",
+  "topic": "Distinguish VLC for Android Play as audio from an unexplained black video screen while preserving saved access and documenting the actual playback interface.",
+  "primary_keyword": "IPTV audio-only mode",
+  "slug": "main-audio-only-playback-choice-vlc",
+  "translations": {
+    "en": {
+      "title": "IPTV audio-only mode: check how VLC opened the video",
+      "excerpt": "Sound without a picture can follow a player choice. Check VLC’s normal Play option before changing saved access or buying another plan.",
+      "seo_title": "IPTV audio-only mode: check how VLC opened the video",
+      "seo_description": "Sound without a picture can follow a player choice. Check VLC’s normal Play option before changing saved access or buying another plan.",
+      "sections": [
+        {
+          "heading": "Identify the screen that opened",
+          "paragraphs": [
+            "An IPTV audio-only mode check is useful when sound continues but the familiar video screen is missing. Note whether VLC for Android opened an audio-style interface after you selected a video. This is different from a black picture inside the normal video player. Neither observation alone proves that an account expired or that every customer lost service."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the correct playback choice",
+          "paragraphs": [
+            "VideoLAN’s Android 3.X guide lists both Play and Play as audio in Video Explorer options. The latter intentionally plays a video as sound only. For a video already available in that list, read the item’s options and choose ordinary Play when offered. Menus vary with version and context; do not assume that a network stream has the same options as a listed file. Use only media you are authorised to access."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Preserve setup while reporting the result",
+          "paragraphs": [
+            "If ordinary playback still has no picture, record whether controls remain visible, sound continues and another permitted video behaves similarly. This comparison does not establish a service-wide outage. Share the player version and the visible symptom with support, keeping passwords and private playback addresses hidden. Avoid clearing app data, deleting playlists or repeating payment merely because an audio-only option exists."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Modo IPTV solo audio: revisa cómo abrió VLC el vídeo",
+      "excerpt": "El sonido sin imagen puede deberse a una opción del reproductor. Revisa la reproducción normal de VLC antes de borrar accesos o pagar otro plan.",
+      "seo_title": "Modo IPTV solo audio: revisa cómo abrió VLC el vídeo",
+      "seo_description": "El sonido sin imagen puede deberse a una opción del reproductor. Revisa la reproducción normal de VLC antes de borrar accesos o pagar otro plan.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla que apareció",
+          "paragraphs": [
+            "Si el sonido continúa pero falta la pantalla habitual del vídeo, comprueba si VLC para Android abrió una interfaz de audio después de seleccionar el vídeo. Eso difiere de una imagen negra dentro del reproductor de vídeo normal. Ninguna de las dos situaciones demuestra por sí sola que haya caducado la cuenta o que todos los clientes hayan perdido el servicio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara la opción de reproducción correcta",
+          "paragraphs": [
+            "La guía de VideoLAN para Android 3.X distingue Reproducir de Reproducir como audio en las opciones del explorador de vídeos. La segunda reproduce deliberadamente solo el sonido. En un vídeo ya presente en esa lista, lee sus opciones y elige la reproducción normal si está disponible. Los menús varían por versión y contexto; una transmisión de red no tiene necesariamente las mismas opciones que un archivo listado. Usa únicamente contenido al que tengas acceso autorizado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Conserva la configuración al consultar",
+          "paragraphs": [
+            "Si la reproducción normal sigue sin imagen, anota si aparecen los controles, continúa el sonido y ocurre algo parecido con otro vídeo permitido. Esa comparación no demuestra una caída general. Comunica la versión y el síntoma visible, ocultando contraseñas y direcciones privadas de reproducción. No borres datos de la aplicación ni listas, ni repitas el pago solo porque exista una opción de audio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Mode IPTV audio seul : vérifiez comment VLC ouvre la vidéo",
+      "excerpt": "Du son sans image peut suivre un choix du lecteur. Vérifiez la lecture normale dans VLC avant d’effacer vos accès ou de payer un autre forfait.",
+      "seo_title": "Mode IPTV audio seul : vérifiez comment VLC ouvre la vidéo",
+      "seo_description": "Du son sans image peut suivre un choix du lecteur. Vérifiez la lecture normale dans VLC avant d’effacer vos accès ou de payer un autre forfait.",
+      "sections": [
+        {
+          "heading": "Identifiez l’écran affiché",
+          "paragraphs": [
+            "Si le son continue mais que l’écran vidéo habituel manque, notez si VLC pour Android a ouvert une interface audio après la sélection d’une vidéo. Cela diffère d’une image noire dans le lecteur vidéo normal. Aucune de ces observations ne prouve à elle seule une expiration du compte ou une interruption pour tous les clients."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez les options de lecture",
+          "paragraphs": [
+            "Le guide VideoLAN pour Android 3.X distingue Lire et Lire en audio dans les options de l’explorateur vidéo. La seconde option lit volontairement uniquement le son. Pour une vidéo déjà présente dans cette liste, consultez ses options et choisissez la lecture normale si elle est proposée. Les menus dépendent de la version et du contexte ; un flux réseau n’a pas forcément les options d’un fichier répertorié. Utilisez seulement des médias auxquels vous avez accès de façon autorisée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Préservez la configuration pour le diagnostic",
+          "paragraphs": [
+            "Si la lecture normale reste sans image, notez si les commandes apparaissent, si le son continue et si une autre vidéo autorisée se comporte pareil. Cette comparaison ne prouve pas une panne générale. Transmettez la version du lecteur et le symptôme visible, en masquant mots de passe et adresses privées de lecture. N’effacez ni données ni listes et ne répétez pas le paiement simplement parce qu’une option audio existe."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Modalità IPTV solo audio: controlla come VLC apre il video",
+      "excerpt": "L’audio senza immagine può dipendere da una scelta del lettore. Controlla la riproduzione normale in VLC prima di cancellare accessi o pagare un altro piano.",
+      "seo_title": "Modalità IPTV solo audio: controlla come VLC apre il video",
+      "seo_description": "L’audio senza immagine può dipendere da una scelta del lettore. Controlla la riproduzione normale in VLC prima di cancellare accessi o pagare un altro piano.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata aperta",
+          "paragraphs": [
+            "Se senti l’audio ma manca la consueta schermata video, osserva se VLC per Android ha aperto un’interfaccia audio dopo la selezione del video. È diverso da un’immagine nera nel lettore video normale. Nessuna delle due osservazioni dimostra da sola che l’account sia scaduto o che il servizio sia interrotto per tutti."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta la scelta di riproduzione",
+          "paragraphs": [
+            "La guida VideoLAN per Android 3.X distingue Riproduci da Riproduci come audio nelle opzioni dell’esploratore video. La seconda opzione riproduce intenzionalmente solo il suono. Per un video già presente nell’elenco, leggi le opzioni e scegli la riproduzione normale quando disponibile. I menu dipendono da versione e contesto: un flusso di rete non ha necessariamente le stesse opzioni di un file elencato. Usa soltanto contenuti ai quali sei autorizzato ad accedere."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Conserva la configurazione durante la verifica",
+          "paragraphs": [
+            "Se la riproduzione normale resta senza immagine, annota se i comandi sono visibili, se l’audio continua e se un altro video consentito si comporta allo stesso modo. Il confronto non prova un guasto generale. Comunica versione e sintomo, nascondendo password e indirizzi privati di riproduzione. Non cancellare dati o playlist e non ripetere il pagamento solo perché esiste una modalità audio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV met alleen geluid: controleer hoe VLC de video opent",
+      "excerpt": "Geluid zonder beeld kan door een spelerkeuze komen. Controleer normaal afspelen in VLC voordat je opgeslagen toegang wist of een ander abonnement betaalt.",
+      "seo_title": "IPTV met alleen geluid: controleer hoe VLC de video opent",
+      "seo_description": "Geluid zonder beeld kan door een spelerkeuze komen. Controleer normaal afspelen in VLC voordat je opgeslagen toegang wist of een ander abonnement betaalt.",
+      "sections": [
+        {
+          "heading": "Herken het geopende scherm",
+          "paragraphs": [
+            "Blijft het geluid spelen maar ontbreekt het gebruikelijke videoscherm? Noteer of VLC voor Android na het kiezen van de video een audio-interface opende. Dat verschilt van een zwart beeld binnen de normale videospeler. Geen van beide waarnemingen bewijst op zichzelf dat je account verlopen is of dat alle klanten een storing hebben."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk de juiste afspeelkeuze",
+          "paragraphs": [
+            "De Android 3.X-handleiding van VideoLAN noemt zowel Afspelen als Afspelen als audio in de opties van de videoverkenner. Die laatste keuze speelt bewust alleen geluid. Lees bij een video die al in de lijst staat de opties en kies normaal afspelen als dat wordt aangeboden. Menu’s verschillen per versie en situatie; een netwerkstream heeft niet vanzelf dezelfde opties als een vermeld bestand. Gebruik alleen media waarvoor je toegestane toegang hebt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bewaar je instellingen bij het melden",
+          "paragraphs": [
+            "Blijft normaal afspelen zonder beeld, noteer dan of de knoppen zichtbaar zijn, het geluid doorgaat en een andere toegestane video hetzelfde doet. Dat bewijst geen algemene storing. Geef de spelerversie en het zichtbare probleem door zonder wachtwoorden of privéafspeeladressen. Wis geen appgegevens of afspeellijsten en betaal niet opnieuw alleen omdat er een audiomodus bestaat."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Modo IPTV só áudio: confirme como o VLC abriu o vídeo",
+      "excerpt": "Som sem imagem pode resultar de uma escolha do leitor. Confira a reprodução normal no VLC antes de apagar acessos ou pagar outro plano.",
+      "seo_title": "Modo IPTV só áudio: confirme como o VLC abriu o vídeo",
+      "seo_description": "Som sem imagem pode resultar de uma escolha do leitor. Confira a reprodução normal no VLC antes de apagar acessos ou pagar outro plano.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã apresentado",
+          "paragraphs": [
+            "Se o som continua mas falta o ecrã habitual do vídeo, observe se o VLC para Android abriu uma interface de áudio depois de selecionar o vídeo. É diferente de uma imagem preta dentro do leitor de vídeo normal. Nenhuma dessas observações prova, por si só, que a conta expirou ou que todos os clientes ficaram sem serviço."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare a opção de reprodução",
+          "paragraphs": [
+            "O guia VideoLAN para Android 3.X distingue Reproduzir de Reproduzir como áudio nas opções do explorador de vídeos. A segunda opção reproduz intencionalmente apenas o som. Num vídeo já presente nessa lista, leia as opções e escolha a reprodução normal quando disponível. Os menus variam com a versão e o contexto; uma transmissão de rede pode não ter as mesmas opções de um ficheiro listado. Utilize apenas conteúdo a que tenha acesso autorizado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Preserve a configuração ao comunicar",
+          "paragraphs": [
+            "Se a reprodução normal continuar sem imagem, anote se os controlos aparecem, se o som continua e se outro vídeo permitido apresenta o mesmo comportamento. A comparação não prova uma falha geral. Comunique a versão e o sintoma, ocultando palavras-passe e endereços privados de reprodução. Não apague dados ou listas nem repita o pagamento apenas porque existe uma opção de áudio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV только со звуком: проверьте способ открытия видео в VLC",
+      "excerpt": "Звук без изображения может быть следствием выбора режима. Проверьте обычное воспроизведение VLC, прежде чем удалять настройки доступа или оплачивать другой тариф.",
+      "seo_title": "IPTV только со звуком: проверьте способ открытия видео в VLC",
+      "seo_description": "Звук без изображения может быть следствием выбора режима. Проверьте обычное воспроизведение VLC, прежде чем удалять настройки доступа или оплачивать другой тариф.",
+      "sections": [
+        {
+          "heading": "Определите открывшийся экран",
+          "paragraphs": [
+            "Если звук продолжается, но привычного видеоэкрана нет, проверьте, не открыл ли VLC для Android аудиоинтерфейс после выбора видео. Это отличается от чёрного изображения внутри обычного видеопроигрывателя. Ни одно наблюдение само по себе не доказывает истечение подписки или перебой у всех клиентов."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните варианты воспроизведения",
+          "paragraphs": [
+            "В руководстве VideoLAN для Android 3.X среди опций видеообозревателя перечислены обычное воспроизведение и воспроизведение как аудио. Второй вариант намеренно оставляет только звук. Для видео, уже находящегося в списке, прочитайте параметры и выберите обычное воспроизведение, если оно доступно. Меню зависит от версии и контекста: сетевой поток может иметь другие параметры, чем файл из списка. Используйте лишь медиа, доступ к которым вам разрешён."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сохраните настройки при обращении",
+          "paragraphs": [
+            "Если обычное воспроизведение остаётся без изображения, запишите, видны ли элементы управления, продолжается ли звук и повторяется ли это с другим разрешённым видео. Сравнение не доказывает общий сбой. Сообщите версию и наблюдаемый симптом, скрыв пароли и приватные адреса воспроизведения. Не очищайте данные приложения, не удаляйте списки и не повторяйте оплату только из-за наличия аудиорежима."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV میں صرف آواز: دیکھیں VLC نے ویڈیو کیسے کھولی",
+      "excerpt": "تصویر کے بغیر آواز پلیئر کے انتخاب سے آ سکتی ہے۔ محفوظ رسائی مٹانے یا دوسرا پلان خریدنے سے پہلے VLC میں عام پلے کا اختیار دیکھیں۔",
+      "seo_title": "IPTV میں صرف آواز: دیکھیں VLC نے ویڈیو کیسے کھولی",
+      "seo_description": "تصویر کے بغیر آواز پلیئر کے انتخاب سے آ سکتی ہے۔ محفوظ رسائی مٹانے یا دوسرا پلان خریدنے سے پہلے VLC میں عام پلے کا اختیار دیکھیں۔",
+      "sections": [
+        {
+          "heading": "کھلنے والی اسکرین پہچانیں",
+          "paragraphs": [
+            "اگر آواز چل رہی ہے لیکن معمول کی ویڈیو اسکرین نہیں تو نوٹ کریں کہ ویڈیو منتخب کرنے کے بعد VLC برائے اینڈرائڈ نے آڈیو والا منظر تو نہیں کھولا۔ یہ عام ویڈیو پلیئر کے اندر سیاہ تصویر آنے سے الگ حالت ہے۔ دونوں میں سے کوئی مشاہدہ اکیلا اکاؤنٹ ختم ہونے یا سب صارفین کی سروس بند ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "چلانے کا درست اختیار دیکھیں",
+          "paragraphs": [
+            "VideoLAN کی اینڈرائڈ 3.X رہنمائی ویڈیو فہرست کے اختیارات میں عام پلے اور صرف آڈیو کے طور پر پلے کو الگ بتاتی ہے۔ دوسرے اختیار میں جان بوجھ کر صرف آواز چلتی ہے۔ جو ویڈیو پہلے ہی فہرست میں موجود ہو، اس کے اختیارات پڑھیں اور دستیاب ہو تو عام پلے منتخب کریں۔ ورژن اور سیاق کے ساتھ مینو بدلتے ہیں؛ نیٹ ورک اسٹریم کے اختیارات کسی فائل جیسے ہونا ضروری نہیں۔ صرف مجاز رسائی والا مواد استعمال کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رپورٹ کرتے وقت ترتیب محفوظ رکھیں",
+          "paragraphs": [
+            "عام پلے میں بھی تصویر نہ آئے تو لکھیں کہ کنٹرول نظر آتے ہیں یا نہیں، آواز جاری ہے یا نہیں، اور کسی دوسری مجاز ویڈیو کا نتیجہ کیا ہے۔ یہ موازنہ عمومی بندش ثابت نہیں کرتا۔ پلیئر ورژن اور مسئلہ بتائیں، پاس ورڈ اور نجی پلے بیک پتے چھپائیں۔ محض آڈیو اختیار کی موجودگی پر نہ ایپ ڈیٹا مٹائیں، نہ فہرستیں حذف کریں، اور نہ دوبارہ ادائیگی کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "وضع IPTV الصوتي فقط: تحقق كيف فتح VLC الفيديو",
+      "excerpt": "قد ينتج الصوت بلا صورة عن خيار في المشغّل. افحص التشغيل العادي في VLC قبل حذف الوصول المحفوظ أو شراء خطة أخرى.",
+      "seo_title": "وضع IPTV الصوتي فقط: تحقق كيف فتح VLC الفيديو",
+      "seo_description": "قد ينتج الصوت بلا صورة عن خيار في المشغّل. افحص التشغيل العادي في VLC قبل حذف الوصول المحفوظ أو شراء خطة أخرى.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة التي ظهرت",
+          "paragraphs": [
+            "إذا استمر الصوت وغابت شاشة الفيديو المعتادة، لاحظ هل فتح VLC لنظام Android واجهة صوتية بعد اختيار الفيديو. يختلف ذلك عن صورة سوداء داخل مشغّل الفيديو العادي. لا تثبت أي من الملاحظتين وحدها انتهاء الحساب أو انقطاع الخدمة عن جميع العملاء."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن خيار التشغيل المناسب",
+          "paragraphs": [
+            "يميّز دليل VideoLAN لنظام Android 3.X بين التشغيل العادي والتشغيل كصوت ضمن خيارات مستكشف الفيديو. الخيار الثاني يشغّل الصوت فقط عن قصد. لفيديو موجود بالفعل في القائمة، اقرأ خيارات العنصر واختر التشغيل العادي إن كان متاحاً. تتغير القوائم بحسب الإصدار والسياق؛ لا تفترض أن للبث الشبكي خيارات الملف المدرج نفسها. استخدم فقط وسائط تملك حق الوصول إليها."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احفظ الإعدادات أثناء الإبلاغ",
+          "paragraphs": [
+            "إذا بقي التشغيل العادي بلا صورة، دوّن هل تظهر أدوات التحكم وهل يستمر الصوت وهل يتكرر الأمر مع فيديو آخر مسموح. هذه المقارنة لا تثبت انقطاعاً عاماً. أرسل إصدار المشغّل والعَرَض الظاهر مع إخفاء كلمات المرور وعناوين التشغيل الخاصة. لا تمسح بيانات التطبيق أو تحذف القوائم أو تكرر الدفع لمجرد وجود خيار صوتي."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV में सिर्फ़ आवाज़: देखें VLC ने वीडियो कैसे खोला",
+      "excerpt": "बिना तस्वीर की आवाज़ प्लेयर के चुनाव से आ सकती है। सहेजा हुआ एक्सेस मिटाने या दूसरा प्लान लेने से पहले VLC का सामान्य प्ले विकल्प देखें।",
+      "seo_title": "IPTV में सिर्फ़ आवाज़: देखें VLC ने वीडियो कैसे खोला",
+      "seo_description": "बिना तस्वीर की आवाज़ प्लेयर के चुनाव से आ सकती है। सहेजा हुआ एक्सेस मिटाने या दूसरा प्लान लेने से पहले VLC का सामान्य प्ले विकल्प देखें।",
+      "sections": [
+        {
+          "heading": "खुली हुई स्क्रीन पहचानें",
+          "paragraphs": [
+            "अगर आवाज़ चल रही है लेकिन सामान्य वीडियो स्क्रीन नहीं है, तो देखें कि वीडियो चुनने के बाद Android के VLC ने ऑडियो वाला इंटरफ़ेस तो नहीं खोला। यह सामान्य वीडियो प्लेयर के भीतर काली तस्वीर आने से अलग स्थिति है। इनमें से कोई बात अकेले खाते की अवधि खत्म होने या सभी ग्राहकों की सेवा बंद होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "चलाने के सही विकल्प की तुलना करें",
+          "paragraphs": [
+            "Android 3.X की VideoLAN मार्गदर्शिका वीडियो सूची के विकल्पों में सामान्य प्ले और ऑडियो के रूप में प्ले को अलग बताती है। दूसरा विकल्प जानबूझकर सिर्फ़ आवाज़ चलाता है। सूची में पहले से मौजूद वीडियो के विकल्प पढ़ें और उपलब्ध हो तो सामान्य प्ले चुनें। संस्करण और संदर्भ के साथ मेन्यू बदलते हैं; नेटवर्क स्ट्रीम के विकल्प किसी सूचीबद्ध फ़ाइल जैसे होना ज़रूरी नहीं। केवल अधिकृत पहुँच वाला मीडिया इस्तेमाल करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रिपोर्ट करते समय सेटअप बचाएँ",
+          "paragraphs": [
+            "सामान्य प्ले में भी तस्वीर न आए तो लिखें कि नियंत्रण दिखते हैं या नहीं, आवाज़ जारी है या नहीं और दूसरे अनुमत वीडियो का व्यवहार कैसा है। इससे व्यापक सेवा बंद होना सिद्ध नहीं होता। प्लेयर संस्करण और दिख रहा लक्षण बताएँ; पासवर्ड और निजी प्लेबैक पते छिपाएँ। सिर्फ़ ऑडियो विकल्प मौजूद होने पर न ऐप डेटा मिटाएँ, न प्लेलिस्ट हटाएँ और न दोबारा भुगतान करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html",
+      "label": "VideoLAN Android Video Explorer guide"
+    }
+  ]
+}

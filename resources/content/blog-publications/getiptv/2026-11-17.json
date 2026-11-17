@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-17",
+  "topic": "Separate Google TV saved-title watchlists and shared Google profiles from Get IPTV provider catalogue availability, player costs and Opplex or Filex order state.",
+  "primary_keyword": "Get IPTV watchlist",
+  "slug": "getiptv-google-tv-watchlist-versus-provider-catalogue",
+  "translations": {
+    "en": {
+      "title": "Get IPTV watchlist questions: what Google TV actually saves",
+      "excerpt": "Saving a title in Google TV records interest, not a Get IPTV purchase. Separate the Google profile, provider catalogue and actual order state.",
+      "seo_title": "Get IPTV watchlist questions: what Google TV actually saves",
+      "seo_description": "Saving a title in Google TV records interest, not a Get IPTV purchase. Separate the Google profile, provider catalogue and actual order state.",
+      "sections": [
+        {
+          "heading": "Identify whose list you opened",
+          "paragraphs": [
+            "A Get IPTV watchlist question may concern Google TV’s own saved-title list rather than a feature inside your installed player. Google says watchlist additions update across devices signed into the same account. Check the selected Google profile first on a shared television. Saving a title is not evidence that your IPTV provider offers it, that you bought it or that a subscription has been activated."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Use the documented controls in context",
+          "paragraphs": [
+            "On a Google TV device, Google describes finding a title, holding the remote’s Select button and choosing Add to watchlist. Some services’ content cannot be added. In a web browser, you can save titles and find them in Google’s Interests page, but direct playback from that browser watchlist is not supported. These instructions describe Google’s list; do not assume identical buttons or catalogue integration inside another player. Respect parent-managed profiles and preferences."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check access and costs separately",
+          "paragraphs": [
+            "Confirm whether your Get IPTV order names Opplex or Filex, its duration and its current payment and setup state. Player licensing costs may be separate, and unconfirmed Filex connection allowances need a direct answer. A Google TV rental, purchase or saved title is a different action from that provider order. Ask about a must-have title before paying without sharing passwords or private order links publicly."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Lista de seguimiento y Get IPTV: qué guarda realmente Google TV",
+      "excerpt": "Guardar un título en Google TV registra interés, no una compra de Get IPTV. Distingue el perfil, el catálogo del proveedor y el estado real del pedido.",
+      "seo_title": "Lista de seguimiento y Get IPTV: qué guarda realmente Google TV",
+      "seo_description": "Guardar un título en Google TV registra interés, no una compra de Get IPTV. Distingue el perfil, el catálogo del proveedor y el estado real del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica de quién es la lista",
+          "paragraphs": [
+            "La consulta sobre una lista de Get IPTV puede referirse a la lista propia de Google TV y no a una función del reproductor instalado. Según Google, los títulos guardados se sincronizan entre dispositivos con la misma cuenta. Revisa primero el perfil elegido en un televisor compartido. Guardar un título no demuestra que el proveedor IPTV lo ofrezca, que lo hayas comprado ni que la suscripción esté activada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Usa los controles en su contexto",
+          "paragraphs": [
+            "En un dispositivo Google TV, Google indica buscar un título, mantener pulsado Seleccionar en el mando y añadirlo a la lista. Ciertos contenidos de algunos servicios no se pueden añadir. Desde un navegador puedes guardar títulos y encontrarlos en Intereses de Google, pero esa lista web no permite reproducción directa. Son instrucciones para la lista de Google; no supongas que otro reproductor tiene botones idénticos o el mismo catálogo. Respeta los perfiles y ajustes gestionados por padres."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba acceso y costes por separado",
+          "paragraphs": [
+            "Confirma si el pedido Get IPTV corresponde a Opplex o Filex, su duración y sus estados de pago y configuración. La licencia del reproductor puede costar aparte; los límites de conexiones Filex no confirmados requieren una respuesta directa. Alquilar o comprar en Google TV, o guardar un título, es distinto del pedido al proveedor. Consulta un título imprescindible antes de pagar y no publiques contraseñas ni enlaces privados del pedido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Liste à regarder et Get IPTV : ce que Google TV enregistre",
+      "excerpt": "Enregistrer un titre dans Google TV marque un intérêt, pas un achat Get IPTV. Distinguez profil, catalogue du fournisseur et état réel de la commande.",
+      "seo_title": "Liste à regarder et Get IPTV : ce que Google TV enregistre",
+      "seo_description": "Enregistrer un titre dans Google TV marque un intérêt, pas un achat Get IPTV. Distinguez profil, catalogue du fournisseur et état réel de la commande.",
+      "sections": [
+        {
+          "heading": "Identifiez à qui appartient la liste",
+          "paragraphs": [
+            "Une question sur une liste Get IPTV peut concerner les titres enregistrés par Google TV plutôt qu’une fonction du lecteur installé. Google indique que les ajouts se synchronisent entre appareils connectés au même compte. Vérifiez d’abord le profil sélectionné sur un téléviseur partagé. Enregistrer un titre ne prouve ni sa disponibilité chez le fournisseur IPTV, ni son achat, ni l’activation d’un abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Utilisez les commandes dans leur contexte",
+          "paragraphs": [
+            "Sur Google TV, Google explique comment trouver un titre, maintenir le bouton de sélection de la télécommande et l’ajouter à la liste. Certains contenus de certains services ne peuvent pas être ajoutés. Dans un navigateur, les titres peuvent être enregistrés puis retrouvés dans les centres d’intérêt Google, mais cette liste web ne permet pas la lecture directe. Ces instructions concernent la liste Google, pas forcément les boutons ou le catalogue d’un autre lecteur. Respectez les profils et préférences gérés par les parents."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vérifiez séparément accès et coûts",
+          "paragraphs": [
+            "Confirmez si la commande Get IPTV désigne Opplex ou Filex, sa durée et ses états de paiement et de configuration. La licence du lecteur peut coûter séparément ; les limites de connexion Filex non confirmées exigent une réponse précise. Une location, un achat Google TV ou un titre enregistré diffèrent de la commande fournisseur. Renseignez-vous sur un titre indispensable avant de payer, sans publier mots de passe ni liens privés de commande."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV e lista da guardare: cosa salva davvero Google TV",
+      "excerpt": "Salvare un titolo in Google TV esprime interesse, non un acquisto Get IPTV. Distingui profilo, catalogo del fornitore e stato reale dell’ordine.",
+      "seo_title": "Get IPTV e lista da guardare: cosa salva davvero Google TV",
+      "seo_description": "Salvare un titolo in Google TV esprime interesse, non un acquisto Get IPTV. Distingui profilo, catalogo del fornitore e stato reale dell’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica a chi appartiene la lista",
+          "paragraphs": [
+            "Una domanda sulla lista di Get IPTV può riguardare i titoli salvati da Google TV, non una funzione del lettore installato. Google spiega che le aggiunte si sincronizzano tra dispositivi collegati allo stesso account. Su una TV condivisa controlla prima il profilo selezionato. Salvare un titolo non prova che il fornitore IPTV lo offra, che tu lo abbia acquistato o che l’abbonamento sia attivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Usa i comandi nel contesto corretto",
+          "paragraphs": [
+            "Su un dispositivo Google TV, Google indica di trovare un titolo, tenere premuto Seleziona sul telecomando e aggiungerlo alla lista. Alcuni contenuti di certi servizi non possono essere aggiunti. Nel browser puoi salvare titoli e ritrovarli negli interessi di Google, ma la lista web non supporta la riproduzione diretta. Le istruzioni riguardano Google: non presumere pulsanti identici o cataloghi integrati in un altro lettore. Rispetta profili e preferenze gestiti dai genitori."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Verifica separatamente accesso e costi",
+          "paragraphs": [
+            "Conferma se l’ordine Get IPTV indica Opplex o Filex, la durata e gli stati di pagamento e configurazione. La licenza del lettore può costare a parte; i limiti di connessione Filex non confermati richiedono una risposta esplicita. Noleggiare o acquistare su Google TV, o salvare un titolo, è diverso dall’ordine al fornitore. Chiedi di un titolo indispensabile prima di pagare, senza pubblicare password o link privati dell’ordine."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV en de kijklijst: wat Google TV werkelijk bewaart",
+      "excerpt": "Een titel in Google TV bewaren toont interesse en is geen Get IPTV-aankoop. Onderscheid Google-profiel, providercatalogus en echte bestelstatus.",
+      "seo_title": "Get IPTV en de kijklijst: wat Google TV werkelijk bewaart",
+      "seo_description": "Een titel in Google TV bewaren toont interesse en is geen Get IPTV-aankoop. Onderscheid Google-profiel, providercatalogus en echte bestelstatus.",
+      "sections": [
+        {
+          "heading": "Herken van wie de lijst is",
+          "paragraphs": [
+            "Een vraag over een Get IPTV-kijklijst kan gaan over Google TV’s eigen opgeslagen titels in plaats van een functie van je speler. Google meldt dat toevoegingen worden bijgewerkt op apparaten met hetzelfde account. Controleer op een gedeelde tv eerst het gekozen profiel. Een titel bewaren bewijst niet dat je IPTV-aanbieder deze levert, dat je hem hebt gekocht of dat een abonnement is geactiveerd."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Gebruik de bediening in de juiste context",
+          "paragraphs": [
+            "Google beschrijft op Google TV het zoeken van een titel, ingedrukt houden van Selecteren op de afstandsbediening en toevoegen aan de kijklijst. Bepaalde inhoud van sommige diensten kan niet worden toegevoegd. In een browser kun je titels bewaren en terugvinden bij Google-interesses, maar direct afspelen vanuit die browserlijst wordt niet ondersteund. Dit beschrijft Google’s lijst, geen gegarandeerd gelijke knoppen of cataloguskoppeling in een andere speler. Respecteer door ouders beheerde profielen en voorkeuren."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer toegang en kosten apart",
+          "paragraphs": [
+            "Bevestig of je Get IPTV-bestelling Opplex of Filex noemt, de looptijd en de actuele betaal- en installatiestatus. Een spelerlicentie kan apart kosten; onbevestigde Filex-verbindingslimieten vragen een direct antwoord. Een Google TV-aankoop, huur of bewaarde titel verschilt van die providerbestelling. Vraag vóór betaling naar een noodzakelijke titel en deel geen wachtwoorden of privébestellinks openbaar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV e lista para ver: o que o Google TV realmente guarda",
+      "excerpt": "Guardar um título no Google TV regista interesse, não uma compra Get IPTV. Separe perfil, catálogo do fornecedor e estado real da encomenda.",
+      "seo_title": "Get IPTV e lista para ver: o que o Google TV realmente guarda",
+      "seo_description": "Guardar um título no Google TV regista interesse, não uma compra Get IPTV. Separe perfil, catálogo do fornecedor e estado real da encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique de quem é a lista",
+          "paragraphs": [
+            "Uma pergunta sobre uma lista Get IPTV pode referir-se aos títulos guardados pelo próprio Google TV, não a uma função do leitor instalado. A Google explica que as adições se sincronizam entre aparelhos com a mesma conta. Numa televisão partilhada, confira primeiro o perfil selecionado. Guardar um título não comprova que o fornecedor IPTV o disponibiliza, que o comprou ou que a assinatura foi ativada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Use os controlos no contexto certo",
+          "paragraphs": [
+            "Num dispositivo Google TV, a Google descreve encontrar um título, manter Selecionar premido no comando e adicioná-lo à lista. Certos conteúdos de alguns serviços não podem ser adicionados. Num navegador, pode guardar títulos e encontrá-los nos Interesses da Google, mas essa lista web não permite reprodução direta. São instruções para a lista Google; não presuma botões iguais ou integração do catálogo noutro leitor. Respeite perfis e preferências geridos pelos pais."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira acesso e custos separadamente",
+          "paragraphs": [
+            "Confirme se a encomenda Get IPTV identifica Opplex ou Filex, a duração e os estados atuais de pagamento e configuração. A licença do leitor pode ter custo separado; limites de ligações Filex não confirmados precisam de resposta direta. Alugar, comprar no Google TV ou guardar um título difere da encomenda ao fornecedor. Pergunte por um título essencial antes de pagar e não publique palavras-passe nem ligações privadas de encomenda."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Список Get IPTV и Google TV: что действительно сохраняется",
+      "excerpt": "Сохранённый в Google TV фильм означает интерес, а не покупку Get IPTV. Различайте профиль, каталог провайдера и настоящий статус заказа.",
+      "seo_title": "Список Get IPTV и Google TV: что действительно сохраняется",
+      "seo_description": "Сохранённый в Google TV фильм означает интерес, а не покупку Get IPTV. Различайте профиль, каталог провайдера и настоящий статус заказа.",
+      "sections": [
+        {
+          "heading": "Определите, чей список открыт",
+          "paragraphs": [
+            "Вопрос о списке Get IPTV может касаться сохранённых названий самого Google TV, а не функции установленного проигрывателя. Google сообщает, что добавления обновляются на устройствах с одним аккаунтом. На общем телевизоре сначала проверьте выбранный профиль. Сохранённое название не доказывает наличие у IPTV-провайдера, покупку или активацию подписки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Используйте команды в верном контексте",
+          "paragraphs": [
+            "На Google TV инструкция предлагает найти название, удержать кнопку выбора пульта и добавить его в список. Некоторые материалы отдельных сервисов добавить нельзя. В браузере названия можно сохранять и находить в интересах Google, но прямое воспроизведение из браузерного списка не поддерживается. Инструкция описывает список Google; не предполагайте одинаковых кнопок или связи с каталогом другого проигрывателя. Соблюдайте родительские настройки и управление профилями."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отдельно проверьте доступ и расходы",
+          "paragraphs": [
+            "Уточните, указан ли в заказе Get IPTV Opplex или Filex, срок и текущие статусы оплаты и настройки. Лицензия проигрывателя может оплачиваться отдельно; неподтверждённые ограничения подключений Filex требуют прямого ответа. Аренда, покупка Google TV и сохранение названия отличаются от заказа у провайдера. До оплаты уточните нужный фильм или сериал, не публикуя пароли и приватные ссылки заказа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV اور دیکھنے کی فہرست: Google TV اصل میں کیا محفوظ کرتا ہے",
+      "excerpt": "Google TV میں عنوان محفوظ کرنا دلچسپی ظاہر کرتا ہے، Get IPTV کی خریداری نہیں۔ گوگل پروفائل، فراہم کنندہ کا کیٹلاگ اور اصل آرڈر الگ دیکھیں۔",
+      "seo_title": "Get IPTV اور دیکھنے کی فہرست: Google TV اصل میں کیا محفوظ کرتا ہے",
+      "seo_description": "Google TV میں عنوان محفوظ کرنا دلچسپی ظاہر کرتا ہے، Get IPTV کی خریداری نہیں۔ گوگل پروفائل، فراہم کنندہ کا کیٹلاگ اور اصل آرڈر الگ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں فہرست کس کی ہے",
+          "paragraphs": [
+            "Get IPTV کی دیکھنے کی فہرست کا سوال ممکن ہے نصب پلیئر کی سہولت کے بجائے Google TV کی اپنی محفوظ فہرست کے بارے میں ہو۔ گوگل کے مطابق ایک ہی اکاؤنٹ والے آلات پر شامل کیے گئے عنوانات کی فہرست اپ ڈیٹ ہوتی ہے۔ مشترکہ ٹی وی پر پہلے منتخب پروفائل دیکھیں۔ عنوان محفوظ کرنا اس کے IPTV فراہم کنندہ کے پاس ہونے، خرید لیے جانے یا سبسکرپشن فعال ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "درست سیاق میں کنٹرول استعمال کریں",
+          "paragraphs": [
+            "Google TV پر گوگل عنوان تلاش کرنے، ریموٹ کا انتخاب والا بٹن دبائے رکھنے اور فہرست میں شامل کرنے کو بیان کرتا ہے۔ کچھ سروسز کا بعض مواد شامل نہیں ہو سکتا۔ ویب براؤزر میں عنوان محفوظ کر کے گوگل کے دلچسپیوں والے صفحے پر دیکھ سکتے ہیں، مگر اسی براؤزر فہرست سے براہ راست پلے بیک معاون نہیں۔ یہ گوگل کی فہرست کی ہدایت ہے؛ دوسرے پلیئر میں وہی بٹن یا کیٹلاگ کا تعلق فرض نہ کریں۔ والدین کی مقرر کردہ پروفائل اور ترجیحات کا احترام کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی اور قیمت الگ جانچیں",
+          "paragraphs": [
+            "Get IPTV آرڈر میں Opplex یا Filex، مدت اور موجودہ ادائیگی و سیٹ اپ کی حالت تصدیق کریں۔ پلیئر لائسنس الگ قیمت رکھ سکتا ہے؛ Filex کی غیر مصدقہ بیک وقت کنکشن کی حد براہ راست پوچھیں۔ Google TV پر کرایہ، خریداری یا عنوان محفوظ کرنا فراہم کنندہ کے اس آرڈر سے الگ کام ہیں۔ ادائیگی سے پہلے ضروری عنوان پوچھیں اور پاس ورڈ یا آرڈر کے نجی لنک عوامی طور پر نہ دیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "قائمة Get IPTV وما يحفظه Google TV فعلياً",
+      "excerpt": "حفظ عنوان في Google TV يسجّل اهتماماً وليس شراء Get IPTV. افصل ملف Google وكتالوج المزوّد وحالة الطلب الفعلية.",
+      "seo_title": "قائمة Get IPTV وما يحفظه Google TV فعلياً",
+      "seo_description": "حفظ عنوان في Google TV يسجّل اهتماماً وليس شراء Get IPTV. افصل ملف Google وكتالوج المزوّد وحالة الطلب الفعلية.",
+      "sections": [
+        {
+          "heading": "حدّد صاحب القائمة المفتوحة",
+          "paragraphs": [
+            "قد يتعلق سؤال قائمة Get IPTV بقائمة Google TV الخاصة بالعناوين المحفوظة، وليس بميزة داخل المشغّل المثبت. تقول Google إن الإضافات تتزامن عبر الأجهزة المسجّلة بالحساب نفسه. تحقق أولاً من الملف المحدد على التلفاز المشترك. حفظ عنوان لا يثبت توفره لدى مزوّد IPTV أو شراءه أو تفعيل الاشتراك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "استخدم الأدوات في سياقها",
+          "paragraphs": [
+            "على جهاز Google TV، تصف Google العثور على عنوان والضغط المستمر على زر الاختيار في جهاز التحكم ثم إضافته إلى القائمة. لا يمكن إضافة بعض محتوى بعض الخدمات. في المتصفح يمكن حفظ العناوين والعثور عليها في صفحة اهتمامات Google، لكن التشغيل المباشر من قائمة المتصفح غير مدعوم. تخص التعليمات قائمة Google؛ لا تفترض أدوات مطابقة أو تكاملاً مع كتالوج مشغّل آخر. احترم الملفات والتفضيلات التي يديرها الوالدان."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص الوصول والتكاليف منفصلين",
+          "paragraphs": [
+            "أكد هل يذكر طلب Get IPTV المزوّد Opplex أم Filex، ومدته وحالتي الدفع والإعداد. قد تكلف رخصة المشغّل بصورة منفصلة، وحدود اتصالات Filex غير المؤكدة تحتاج جواباً مباشراً. استئجار عنوان أو شراؤه في Google TV أو حفظه يختلف عن طلب المزوّد. اسأل عن العنوان الضروري قبل الدفع دون نشر كلمات مرور أو روابط طلب خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV और देखने की सूची: Google TV असल में क्या सहेजता है",
+      "excerpt": "Google TV में शीर्षक सहेजना रुचि बताता है, Get IPTV की खरीद नहीं। Google प्रोफ़ाइल, प्रदाता कैटलॉग और असल ऑर्डर की स्थिति अलग देखें।",
+      "seo_title": "Get IPTV और देखने की सूची: Google TV असल में क्या सहेजता है",
+      "seo_description": "Google TV में शीर्षक सहेजना रुचि बताता है, Get IPTV की खरीद नहीं। Google प्रोफ़ाइल, प्रदाता कैटलॉग और असल ऑर्डर की स्थिति अलग देखें।",
+      "sections": [
+        {
+          "heading": "पहचानें खुली सूची किसकी है",
+          "paragraphs": [
+            "Get IPTV की देखने की सूची का सवाल स्थापित प्लेयर की सुविधा के बजाय Google TV की अपनी सहेजी सूची के बारे में हो सकता है। Google के अनुसार एक ही खाते से जुड़े उपकरणों पर जोड़े गए शीर्षक अपडेट होते हैं। साझा टीवी पर पहले चुनी प्रोफ़ाइल देखें। शीर्षक सहेजना प्रदाता के पास उसकी उपलब्धता, उसकी खरीद या सदस्यता चालू होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/googletv/answer/10059391?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सही संदर्भ में नियंत्रण इस्तेमाल करें",
+          "paragraphs": [
+            "Google TV डिवाइस पर Google शीर्षक ढूँढने, रिमोट का चुनने वाला बटन दबाए रखने और सूची में जोड़ने का तरीका बताता है। कुछ सेवाओं का कुछ कंटेंट नहीं जोड़ा जा सकता। ब्राउज़र में शीर्षक सहेजकर Google के रुचि वाले पेज पर मिल सकता है, लेकिन उस ब्राउज़र सूची से सीधा प्लेबैक समर्थित नहीं है। ये Google की सूची के निर्देश हैं; दूसरे प्लेयर में वही बटन या कैटलॉग का संबंध न मानें। माता-पिता की तय प्रोफ़ाइल और पसंद का सम्मान करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहुँच और खर्च अलग जाँचें",
+          "paragraphs": [
+            "Get IPTV ऑर्डर में Opplex या Filex प्रदाता, अवधि तथा भुगतान और सेटअप की वर्तमान स्थिति पुष्टि करें। प्लेयर लाइसेंस का खर्च अलग हो सकता है; Filex की अपुष्ट कनेक्शन सीमा सीधे पूछें। Google TV में किराया, खरीद या शीर्षक सहेजना प्रदाता के ऑर्डर से अलग काम है। भुगतान से पहले ज़रूरी शीर्षक के बारे में पूछें, लेकिन पासवर्ड या ऑर्डर के निजी लिंक सार्वजनिक न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/googletv/answer/10059391?hl=en",
+      "label": "Google TV Help: save movies and shows to watch later"
+    }
+  ]
+}

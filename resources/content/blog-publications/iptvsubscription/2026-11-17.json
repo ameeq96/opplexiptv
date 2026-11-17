@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-17",
+  "topic": "Distinguish Chrome Android Standard reading from AI-generated page narration and verify written IPTV Subscription provider, plan terms and order state.",
+  "primary_keyword": "IPTV Subscription page narration",
+  "slug": "iptvsubscription-page-narration-versus-written-plan",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription page narration: listen, then verify the written plan",
+      "excerpt": "Chrome can read some Android web pages aloud, but narration is not a payment receipt. Verify the written provider, duration, currency and total.",
+      "seo_title": "IPTV Subscription page narration: listen, then verify the written plan",
+      "seo_description": "Chrome can read some Android web pages aloud, but narration is not a payment receipt. Verify the written provider, duration, currency and total.",
+      "sections": [
+        {
+          "heading": "Identify the browser feature",
+          "paragraphs": [
+            "IPTV Subscription page narration is a reading aid, not programme audio or an order confirmation. Google describes Listen to this page in Chrome on Android, with Standard playback that reads page text and AI playback that generates a conversation. These are different modes. If available, check which mode is selected before relying on what you hear; a generated conversation is not evidence of a purchased plan."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Check availability without changing privacy blindly",
+          "paragraphs": [
+            "The feature does not work on every website or in every language, and its availability depends on supported settings. When it is already offered, Chrome’s More menu opens Listen to this page; the player provides a playback-mode control. If the option is absent, continue with the written page or an accessibility method you already trust. Read any privacy-related prerequisite before deciding whether to enable it. Do not assume every site translation has a matching voice."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare the actual order details",
+          "paragraphs": [
+            "Read the written Opplex or Filex provider, duration, currency and total together. A player licence may cost separately; ask about unconfirmed Filex connection allowances. Recheck these details in the actual order flow rather than treating narration as a reserved price or successful payment. Keep account and payment pages private, and confirm recorded payment and setup state separately."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Narración de IPTV Subscription: escucha y verifica el plan escrito",
+      "excerpt": "Chrome puede leer algunas páginas de Android, pero la narración no es un recibo. Comprueba proveedor, duración, moneda e importe en el texto.",
+      "seo_title": "Narración de IPTV Subscription: escucha y verifica el plan escrito",
+      "seo_description": "Chrome puede leer algunas páginas de Android, pero la narración no es un recibo. Comprueba proveedor, duración, moneda e importe en el texto.",
+      "sections": [
+        {
+          "heading": "Identifica la función del navegador",
+          "paragraphs": [
+            "La narración de una página de IPTV Subscription ayuda a leer; no es el audio de un programa ni confirma un pedido. Google distingue la reproducción estándar de Chrome para Android, que lee el texto, de la reproducción con IA, que genera una conversación. Comprueba el modo seleccionado cuando esté disponible. Una conversación generada no demuestra que hayas comprado un plan."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba la disponibilidad y la privacidad",
+          "paragraphs": [
+            "La función no admite todas las webs ni todos los idiomas y depende de los ajustes compatibles. Si ya se ofrece, el menú Más de Chrome permite escuchar la página y el reproductor incluye un control para cambiar el modo. Si falta la opción, usa el texto o un método de accesibilidad que ya conozcas. Lee cualquier requisito de privacidad antes de decidir activarlo. No supongas que todas las traducciones del sitio tienen voz disponible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara los datos reales del pedido",
+          "paragraphs": [
+            "Lee juntos proveedor Opplex o Filex, duración, moneda e importe total escritos. La licencia del reproductor puede cobrarse aparte; consulta los límites de conexiones Filex no confirmados. Revisa estos datos en el proceso real del pedido: la narración no reserva un precio ni demuestra un pago. Mantén privadas las páginas de cuenta y pago y confirma por separado el pago registrado y la configuración."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Lecture vocale IPTV Subscription : vérifiez ensuite le forfait écrit",
+      "excerpt": "Chrome peut lire certaines pages sur Android, mais ce n’est pas un reçu. Vérifiez dans le texte fournisseur, durée, devise et montant total.",
+      "seo_title": "Lecture vocale IPTV Subscription : vérifiez ensuite le forfait écrit",
+      "seo_description": "Chrome peut lire certaines pages sur Android, mais ce n’est pas un reçu. Vérifiez dans le texte fournisseur, durée, devise et montant total.",
+      "sections": [
+        {
+          "heading": "Identifiez la fonction du navigateur",
+          "paragraphs": [
+            "La lecture vocale d’une page IPTV Subscription aide à lire ; ce n’est ni le son d’un programme ni une confirmation de commande. Google distingue dans Chrome pour Android la lecture standard du texte et la lecture par IA qui génère une conversation. Si la fonction est disponible, vérifiez le mode choisi avant de vous fier à l’écoute. Une conversation générée ne prouve pas l’achat d’un forfait."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Examinez disponibilité et confidentialité",
+          "paragraphs": [
+            "La fonction ne prend pas en charge tous les sites ou toutes les langues et dépend de paramètres compatibles. Lorsqu’elle est déjà proposée, le menu Plus de Chrome ouvre la lecture de page et le lecteur permet de changer de mode. Si elle manque, utilisez le texte ou une méthode d’accessibilité déjà fiable pour vous. Lisez tout préalable lié à la confidentialité avant de l’activer. Ne supposez pas que chaque traduction possède une voix adaptée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez les vraies données de commande",
+          "paragraphs": [
+            "Lisez ensemble fournisseur Opplex ou Filex, durée, devise et total écrits. La licence du lecteur peut coûter séparément ; demandez les limites de connexion Filex non confirmées. Vérifiez ces données dans le parcours de commande réel : la narration ne réserve pas un tarif et ne prouve pas un paiement. Gardez les pages de compte et de paiement privées et confirmez séparément paiement enregistré et configuration."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Abbonamento IPTV: ascolta la pagina e verifica il piano scritto",
+      "excerpt": "Chrome può leggere alcune pagine su Android, ma la voce non è una ricevuta. Verifica nel testo fornitore, durata, valuta e totale.",
+      "seo_title": "Abbonamento IPTV: ascolta la pagina e verifica il piano scritto",
+      "seo_description": "Chrome può leggere alcune pagine su Android, ma la voce non è una ricevuta. Verifica nel testo fornitore, durata, valuta e totale.",
+      "sections": [
+        {
+          "heading": "Riconosci la funzione del browser",
+          "paragraphs": [
+            "La lettura vocale di una pagina IPTV Subscription è un aiuto, non l’audio di un programma né una conferma d’ordine. Google distingue in Chrome per Android la riproduzione standard, che legge il testo, da quella con IA, che genera una conversazione. Se disponibile, controlla il modo selezionato prima di affidarti all’ascolto. Una conversazione generata non dimostra l’acquisto di un abbonamento IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla disponibilità e privacy",
+          "paragraphs": [
+            "La funzione non supporta ogni sito o lingua e dipende dalle impostazioni compatibili. Quando è già disponibile, il menu Altro di Chrome apre la lettura della pagina e il lettore consente di cambiare modalità. Se l’opzione manca, continua con il testo o un metodo di accessibilità già affidabile per te. Leggi gli eventuali requisiti di privacy prima di decidere se attivarli. Non presumere che ogni traduzione abbia una voce corrispondente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta i veri dati dell’ordine",
+          "paragraphs": [
+            "Leggi insieme fornitore Opplex o Filex, durata, valuta e totale scritti. La licenza del lettore può avere un costo separato; chiedi i limiti di connessione Filex non confermati. Ricontrolla tutto nel vero percorso d’ordine: la voce non riserva un prezzo e non prova il pagamento. Mantieni private le pagine di account e pagamento e conferma separatamente pagamento registrato e configurazione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription voorlezen: controleer daarna het geschreven abonnement",
+      "excerpt": "Chrome kan sommige Android-webpagina’s voorlezen, maar de stem is geen betaalbewijs. Controleer aanbieder, looptijd, valuta en totaal in de tekst.",
+      "seo_title": "IPTV Subscription voorlezen: controleer daarna het geschreven abonnement",
+      "seo_description": "Chrome kan sommige Android-webpagina’s voorlezen, maar de stem is geen betaalbewijs. Controleer aanbieder, looptijd, valuta en totaal in de tekst.",
+      "sections": [
+        {
+          "heading": "Herken de browserfunctie",
+          "paragraphs": [
+            "Het voorlezen van een IPTV Subscription-pagina is een leeshulp, geen programm geluid of bestelbevestiging. Google onderscheidt in Chrome voor Android standaardweergave die de paginawoorden leest en AI-weergave die een gesprek genereert. Controleer de gekozen modus als de functie beschikbaar is voordat je op het gehoorde vertrouwt. Een gegenereerd gesprek bewijst geen gekocht abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer beschikbaarheid en privacy",
+          "paragraphs": [
+            "De functie werkt niet op iedere website of in iedere taal en hangt af van ondersteunde instellingen. Als deze al beschikbaar is, opent Chrome’s menu Meer het voorlezen en biedt de speler een moduskeuze. Ontbreekt de optie, gebruik dan de geschreven pagina of een toegankelijkheidsmethode die je al vertrouwt. Lees privacyvoorwaarden bij een vereiste instelling voordat je beslist die aan te zetten. Neem niet aan dat iedere sitevertaling een passende stem heeft."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk de echte bestelgegevens",
+          "paragraphs": [
+            "Lees de geschreven aanbieder Opplex of Filex, looptijd, valuta en totaal samen. Een spelerlicentie kan apart kosten; vraag naar onbevestigde Filex-verbindingslimieten. Controleer deze gegevens in het echte bestelproces: voorlezen reserveert geen prijs en bewijst geen geslaagde betaling. Houd account- en betaalpagina’s privé en bevestig vastgelegde betaling en installatie afzonderlijk."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Narração da IPTV Subscription: ouça e confirme o plano escrito",
+      "excerpt": "O Chrome pode ler algumas páginas no Android, mas a narração não é recibo. Confira fornecedor, duração, moeda e total no texto.",
+      "seo_title": "Narração da IPTV Subscription: ouça e confirme o plano escrito",
+      "seo_description": "O Chrome pode ler algumas páginas no Android, mas a narração não é recibo. Confira fornecedor, duração, moeda e total no texto.",
+      "sections": [
+        {
+          "heading": "Identifique a função do navegador",
+          "paragraphs": [
+            "A narração de uma página IPTV Subscription ajuda a ler; não é o áudio de um programa nem confirma uma encomenda. A Google distingue no Chrome para Android a reprodução padrão, que lê o texto, da reprodução com IA, que gera uma conversa. Se disponível, confira o modo selecionado antes de confiar no que ouve. Uma conversa gerada não comprova a compra de uma assinatura IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique disponibilidade e privacidade",
+          "paragraphs": [
+            "A função não abrange todos os sites ou idiomas e depende de definições compatíveis. Quando já é oferecida, o menu Mais do Chrome abre a leitura da página e o leitor permite trocar o modo. Se faltar, continue com o texto ou um método de acessibilidade em que já confie. Leia qualquer requisito de privacidade antes de decidir ativá-lo. Não presuma que cada tradução tem uma voz correspondente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare os dados reais da encomenda",
+          "paragraphs": [
+            "Leia em conjunto fornecedor Opplex ou Filex, duração, moeda e total escritos. A licença do leitor pode ter custo separado; pergunte pelos limites de ligações Filex não confirmados. Confira esses dados no processo real da encomenda: a narração não reserva preço nem prova pagamento. Mantenha privadas as páginas de conta e pagamento e confirme separadamente pagamento registado e configuração."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Озвучивание страницы IPTV Subscription: проверьте письменные условия",
+      "excerpt": "Chrome умеет озвучивать некоторые страницы на Android, но речь не является чеком. Сверьте в тексте провайдера, срок, валюту и итог.",
+      "seo_title": "Озвучивание страницы IPTV Subscription: проверьте письменные условия",
+      "seo_description": "Chrome умеет озвучивать некоторые страницы на Android, но речь не является чеком. Сверьте в тексте провайдера, срок, валюту и итог.",
+      "sections": [
+        {
+          "heading": "Определите функцию браузера",
+          "paragraphs": [
+            "Озвучивание страницы IPTV Subscription помогает чтению, а не воспроизводит программу и не подтверждает заказ. Google различает стандартное чтение текста в Chrome для Android и режим ИИ, генерирующий разговор. Если функция доступна, проверьте выбранный режим, прежде чем доверять услышанному. Сгенерированный разговор не доказывает покупку тарифа."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте доступность и конфиденциальность",
+          "paragraphs": [
+            "Функция работает не на всех сайтах и языках и зависит от поддерживаемых настроек. Если она уже предлагается, меню Chrome открывает чтение страницы, а в проигрывателе есть переключатель режима. При отсутствии опции используйте письменную страницу или привычный надёжный способ доступности. Прочитайте требования, связанные с конфиденциальностью, прежде чем решать, включать ли их. Не предполагайте наличие подходящего голоса для каждого перевода сайта."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сверьте настоящие данные заказа",
+          "paragraphs": [
+            "Прочитайте вместе указанные письменно провайдера Opplex или Filex, срок, валюту и итог. Лицензия проигрывателя может оплачиваться отдельно; уточните неподтверждённые ограничения подключений Filex. Перепроверьте данные в реальном оформлении: озвучивание не резервирует цену и не доказывает оплату. Держите страницы аккаунта и платежа в тайне и подтверждайте зарегистрированную оплату и настройку отдельно."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی صفحہ خوانی: سن کر تحریری پلان بھی دیکھیں",
+      "excerpt": "کروم اینڈرائڈ پر بعض صفحات پڑھ سکتا ہے، مگر یہ ادائیگی کی رسید نہیں۔ فراہم کنندہ، مدت، کرنسی اور کل رقم تحریر میں دیکھیں۔",
+      "seo_title": "IPTV Subscription کی صفحہ خوانی: سن کر تحریری پلان بھی دیکھیں",
+      "seo_description": "کروم اینڈرائڈ پر بعض صفحات پڑھ سکتا ہے، مگر یہ ادائیگی کی رسید نہیں۔ فراہم کنندہ، مدت، کرنسی اور کل رقم تحریر میں دیکھیں۔",
+      "sections": [
+        {
+          "heading": "براؤزر کی سہولت پہچانیں",
+          "paragraphs": [
+            "IPTV Subscription کا صفحہ آواز میں سننا پڑھنے کی مدد ہے، پروگرام کی آواز یا آرڈر کی تصدیق نہیں۔ گوگل اینڈرائڈ کروم میں عام خواندگی، جو صفحے کے الفاظ پڑھتی ہے، اور مصنوعی ذہانت کی بنائی گفتگو کو الگ بتاتا ہے۔ سہولت دستیاب ہو تو سنائی بات پر انحصار سے پہلے منتخب طریقہ دیکھیں۔ بنائی گئی گفتگو خریدے ہوئے پلان کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "دستیابی اور رازداری دیکھیں",
+          "paragraphs": [
+            "یہ سہولت ہر ویب سائٹ یا ہر زبان میں نہیں چلتی اور معاون ترتیبات پر منحصر ہے۔ پہلے سے موجود ہو تو کروم کے مزید والے مینو سے صفحہ سننے کا اختیار کھلتا ہے اور پلیئر میں طریقہ بدلنے کا کنٹرول ہوتا ہے۔ اختیار نہ ہو تو تحریری صفحہ یا پہلے سے قابل اعتماد رسائی کی سہولت استعمال کریں۔ رازداری سے متعلق شرط فعال کرنے کا فیصلہ کرنے سے پہلے اسے پڑھیں۔ ہر ترجمے کے لیے اسی زبان کی آواز فرض نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اصل آرڈر کی تفصیل ملائیں",
+          "paragraphs": [
+            "تحریر میں Opplex یا Filex، مدت، کرنسی اور کل رقم ساتھ دیکھیں۔ پلیئر لائسنس کی قیمت الگ ہو سکتی ہے؛ Filex کے غیر مصدقہ کنکشن کی حد پوچھیں۔ اصل آرڈر کے مرحلے میں دوبارہ ملائیں؛ صفحہ خوانی قیمت محفوظ یا ادائیگی کامیاب ہونے کا ثبوت نہیں۔ اکاؤنٹ اور ادائیگی کے صفحات نجی رکھیں، ریکارڈ شدہ ادائیگی اور سیٹ اپ کی حالت الگ تصدیق کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "القراءة الصوتية لـIPTV Subscription: تحقق من الخطة المكتوبة",
+      "excerpt": "يمكن لـChrome قراءة بعض الصفحات على Android، لكن الصوت ليس إيصال دفع. راجع المزوّد والمدة والعملة والإجمالي في النص المكتوب.",
+      "seo_title": "القراءة الصوتية لـIPTV Subscription: تحقق من الخطة المكتوبة",
+      "seo_description": "يمكن لـChrome قراءة بعض الصفحات على Android، لكن الصوت ليس إيصال دفع. راجع المزوّد والمدة والعملة والإجمالي في النص المكتوب.",
+      "sections": [
+        {
+          "heading": "حدّد ميزة المتصفح",
+          "paragraphs": [
+            "القراءة الصوتية لصفحة IPTV Subscription وسيلة مساعدة وليست صوت برنامج أو تأكيد طلب. تميّز Google بين التشغيل القياسي في Chrome على Android الذي يقرأ النص، وتشغيل الذكاء الاصطناعي الذي ينشئ حواراً. إذا كانت الميزة متاحة، تحقق من الوضع المحدد قبل الاعتماد على المسموع. الحوار المُنشأ لا يثبت شراء خطة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "افحص التوفر والخصوصية",
+          "paragraphs": [
+            "لا تدعم الميزة كل المواقع أو اللغات وتعتمد على الإعدادات المدعومة. عندما تكون متاحة بالفعل، يفتحها خيار الاستماع إلى الصفحة من قائمة المزيد في Chrome، ويتضمن المشغّل أداة تبديل الوضع. إن غاب الخيار، استخدم النص أو طريقة وصول تثق بها مسبقاً. اقرأ أي متطلب يتعلق بالخصوصية قبل اتخاذ قرار تفعيله. لا تفترض وجود صوت مطابق لكل ترجمة في الموقع."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن تفاصيل الطلب الفعلية",
+          "paragraphs": [
+            "اقرأ معاً المزوّد Opplex أو Filex والمدة والعملة والإجمالي المكتوب. قد تكون رخصة المشغّل بتكلفة منفصلة؛ اسأل عن حدود اتصالات Filex غير المؤكدة. أعد الفحص في مسار الطلب الفعلي؛ القراءة الصوتية لا تحجز سعراً ولا تثبت نجاح الدفع. حافظ على خصوصية صفحات الحساب والدفع، وأكد الدفع المسجل وحالة الإعداد كلّاً على حدة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription की पेज वाचन सुविधा: लिखे प्लान की भी जाँच करें",
+      "excerpt": "Chrome Android पर कुछ पेज पढ़ सकता है, लेकिन आवाज़ भुगतान रसीद नहीं है। प्रदाता, अवधि, मुद्रा और कुल रकम लिखे पाठ में मिलाएँ।",
+      "seo_title": "IPTV Subscription की पेज वाचन सुविधा: लिखे प्लान की भी जाँच करें",
+      "seo_description": "Chrome Android पर कुछ पेज पढ़ सकता है, लेकिन आवाज़ भुगतान रसीद नहीं है। प्रदाता, अवधि, मुद्रा और कुल रकम लिखे पाठ में मिलाएँ।",
+      "sections": [
+        {
+          "heading": "ब्राउज़र की सुविधा पहचानें",
+          "paragraphs": [
+            "IPTV Subscription का पेज सुनना पढ़ने में मदद है, कार्यक्रम की आवाज़ या ऑर्डर पुष्टि नहीं। Google Android के Chrome में मानक वाचन, जो पेज का पाठ पढ़ता है, और एआई वाचन, जो बातचीत बनाता है, को अलग बताता है। सुविधा हो तो सुनी बात पर भरोसा करने से पहले चुना मोड देखें। बनाई गई बातचीत खरीदे हुए प्लान का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY"
+            }
+          ]
+        },
+        {
+          "heading": "उपलब्धता और गोपनीयता देखें",
+          "paragraphs": [
+            "यह सुविधा हर वेबसाइट या भाषा में नहीं चलती और समर्थित सेटिंग पर निर्भर करती है। पहले से उपलब्ध हो तो Chrome के अधिक मेन्यू से पेज सुनने का विकल्प खुलता है और प्लेयर में मोड बदलने का नियंत्रण मिलता है। विकल्प न हो तो लिखा पेज या पहले से भरोसेमंद सुलभता तरीका इस्तेमाल करें। गोपनीयता से जुड़ी कोई शर्त चालू करने का फैसला करने से पहले उसे पढ़ें। हर साइट अनुवाद के लिए उसी भाषा की आवाज़ न मानें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "असल ऑर्डर का विवरण मिलाएँ",
+          "paragraphs": [
+            "लिखे हुए Opplex या Filex प्रदाता, अवधि, मुद्रा और कुल रकम को साथ पढ़ें। प्लेयर लाइसेंस का खर्च अलग हो सकता है; Filex की अपुष्ट कनेक्शन सीमा पूछें। असल ऑर्डर प्रक्रिया में इन्हें फिर जाँचें; वाचन न कीमत सुरक्षित करता है न भुगतान सफल होने का प्रमाण है। खाते और भुगतान के पेज निजी रखें तथा दर्ज भुगतान और सेटअप की स्थिति अलग पुष्टि करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/chrome/answer/14768725?hl=en-BY",
+      "label": "Google Chrome Help: Listen to this page modes"
+    }
+  ]
+}

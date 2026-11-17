@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-17",
+  "topic": "Separate VLC for Android local network storage discovery and SMB share credentials from Trex IPTV provider access and an actual service error.",
+  "primary_keyword": "Trex IPTV local network",
+  "slug": "trex-local-network-list-versus-provider-access",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV local network: an empty VLC list is not an outage test",
+      "excerpt": "Separate VLC’s nearby storage browser from provider access. An empty Local Network list does not establish that Trex IPTV has stopped working.",
+      "seo_title": "Trex IPTV local network: an empty VLC list is not an outage test",
+      "seo_description": "Separate VLC’s nearby storage browser from provider access. An empty Local Network list does not establish that Trex IPTV has stopped working.",
+      "sections": [
+        {
+          "heading": "Identify which list is empty",
+          "paragraphs": [
+            "A Trex IPTV local network question can start with the wrong screen. In an existing VLC for Android installation, Local Network concerns media storage reachable on the nearby network. It is different from an error when opening your configured provider access. Record the exact heading, device and player version before treating an empty list as a missing subscription catalogue."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Understand what discovery can show",
+          "paragraphs": [
+            "VideoLAN documents automatic discovery when network storage is connected and visible to the device. Its guide also describes adding an authorised network share manually and supplying that share’s credentials if it is password protected. Those are storage-server details, not automatically Trex account details. Do not guess server names, enter provider passwords into unfamiliar share prompts or weaken network protections to make a list appear. Ask the network owner if access is restricted."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Report the provider symptom separately",
+          "paragraphs": [
+            "If the issue is actually inside your configured player session, describe the error and when it appears instead of sending a screenshot of an unrelated storage list. Preserve saved settings and hide passwords, private addresses and share names from public posts. The confirmed Trex plan permits one simultaneous connection; do not start another viewing session as a discovery test. An empty local browser alone does not prove a service-wide outage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Red local de Trex IPTV: una lista vacía en VLC no demuestra una caída",
+      "excerpt": "Distingue el explorador de almacenamiento cercano de VLC del acceso del proveedor. Una lista de red local vacía no demuestra una avería de Trex IPTV.",
+      "seo_title": "Red local de Trex IPTV: una lista vacía en VLC no demuestra una caída",
+      "seo_description": "Distingue el explorador de almacenamiento cercano de VLC del acceso del proveedor. Una lista de red local vacía no demuestra una avería de Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica qué lista está vacía",
+          "paragraphs": [
+            "Una consulta sobre la red local de Trex IPTV puede partir de la pantalla equivocada. En una instalación existente de VLC para Android, Red local se refiere al almacenamiento multimedia accesible en la red cercana. Es distinto de un error al abrir el acceso configurado del proveedor. Anota el encabezado exacto, el dispositivo y la versión antes de interpretar una lista vacía como ausencia del catálogo contratado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Entiende qué puede descubrir VLC",
+          "paragraphs": [
+            "VideoLAN documenta la detección automática del almacenamiento conectado y visible para el dispositivo. También explica cómo añadir manualmente un recurso de red autorizado y usar sus credenciales si está protegido. Esos datos pertenecen al servidor de almacenamiento; no son automáticamente los de Trex. No adivines servidores, no introduzcas contraseñas del proveedor en solicitudes desconocidas ni reduzcas la protección de la red para mostrar una lista. Consulta al propietario si hay restricciones."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Describe el síntoma del proveedor aparte",
+          "paragraphs": [
+            "Si el problema ocurre en la sesión configurada del reproductor, explica el error y cuándo aparece, en lugar de enviar una lista de almacenamiento ajena. Conserva los ajustes y oculta contraseñas, direcciones privadas y nombres de recursos en publicaciones públicas. El plan Trex confirmado permite una conexión simultánea; no abras otra sesión de visionado para probar la detección. Una lista local vacía no demuestra una caída general."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Réseau local Trex IPTV : une liste VLC vide ne prouve pas une panne",
+      "excerpt": "Distinguez le stockage voisin affiché par VLC de l’accès au fournisseur. Une liste Réseau local vide ne prouve pas une panne de Trex IPTV.",
+      "seo_title": "Réseau local Trex IPTV : une liste VLC vide ne prouve pas une panne",
+      "seo_description": "Distinguez le stockage voisin affiché par VLC de l’accès au fournisseur. Une liste Réseau local vide ne prouve pas une panne de Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifiez la liste concernée",
+          "paragraphs": [
+            "Une question sur le réseau local Trex IPTV peut commencer sur le mauvais écran. Dans une installation existante de VLC pour Android, Réseau local concerne le stockage multimédia accessible sur le réseau voisin. Ce n’est pas une erreur lors de l’ouverture de l’accès fournisseur configuré. Notez l’intitulé exact, l’appareil et la version avant d’interpréter une liste vide comme un catalogue d’abonnement manquant."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comprenez la détection du stockage",
+          "paragraphs": [
+            "VideoLAN décrit la détection automatique lorsque le stockage réseau est connecté et visible pour l’appareil. Son guide explique aussi l’ajout manuel d’un partage autorisé et la saisie de ses identifiants s’il est protégé. Ceux-ci appartiennent au serveur de stockage, pas automatiquement au compte Trex. Ne devinez pas les serveurs, ne saisissez pas le mot de passe fournisseur dans une demande inconnue et ne réduisez pas la protection réseau. Consultez son propriétaire en cas de restriction."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Décrivez séparément le problème fournisseur",
+          "paragraphs": [
+            "Si le problème concerne la session configurée du lecteur, indiquez l’erreur et son moment d’apparition plutôt qu’une liste de stockage sans rapport. Conservez les réglages et masquez mots de passe, adresses privées et noms de partages dans les publications publiques. Le forfait Trex confirmé permet une connexion simultanée ; n’ouvrez pas une autre session de visionnage pour tester la détection. Une liste locale vide ne prouve pas une panne générale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Rete locale Trex IPTV: un elenco VLC vuoto non prova un disservizio",
+      "excerpt": "Distingui l’archivio vicino mostrato da VLC dall’accesso del fornitore. Un elenco Rete locale vuoto non dimostra un guasto di Trex IPTV.",
+      "seo_title": "Rete locale Trex IPTV: un elenco VLC vuoto non prova un disservizio",
+      "seo_description": "Distingui l’archivio vicino mostrato da VLC dall’accesso del fornitore. Un elenco Rete locale vuoto non dimostra un guasto di Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica quale elenco è vuoto",
+          "paragraphs": [
+            "Una domanda sulla rete locale di Trex IPTV può partire dalla schermata sbagliata. In un’installazione esistente di VLC per Android, Rete locale riguarda gli archivi multimediali raggiungibili nella rete vicina. È diverso da un errore nell’accesso configurato del fornitore. Annota intestazione esatta, dispositivo e versione del lettore prima di interpretare l’elenco vuoto come assenza del catalogo dell’abbonamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comprendi cosa può rilevare VLC",
+          "paragraphs": [
+            "VideoLAN descrive il rilevamento automatico quando l’archivio di rete è collegato e visibile al dispositivo. Spiega anche come aggiungere manualmente una condivisione autorizzata e usare le sue credenziali se protetta. Sono dati del server di archiviazione, non automaticamente dell’account Trex. Non indovinare nomi di server, non inserire password del fornitore in richieste sconosciute e non ridurre le protezioni di rete per popolare l’elenco. Chiedi al proprietario se esistono restrizioni."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descrivi separatamente il problema del servizio",
+          "paragraphs": [
+            "Se l’errore avviene nella sessione configurata del lettore, indica messaggio e momento invece di inviare una lista di archivi estranea. Conserva le impostazioni e nascondi password, indirizzi privati e nomi delle condivisioni nei messaggi pubblici. Il piano Trex confermato consente una connessione simultanea: non avviare un’altra sessione di visione come prova di rilevamento. Un elenco locale vuoto non dimostra un guasto generale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV lokaal netwerk: een lege VLC-lijst bewijst geen storing",
+      "excerpt": "Onderscheid VLC’s browser voor opslag in de buurt van providertoegang. Een lege lijst Lokaal netwerk bewijst geen uitval bij Trex IPTV.",
+      "seo_title": "Trex IPTV lokaal netwerk: een lege VLC-lijst bewijst geen storing",
+      "seo_description": "Onderscheid VLC’s browser voor opslag in de buurt van providertoegang. Een lege lijst Lokaal netwerk bewijst geen uitval bij Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Bepaal welke lijst leeg is",
+          "paragraphs": [
+            "Een vraag over Trex IPTV en het lokale netwerk kan op het verkeerde scherm beginnen. In een bestaande VLC-installatie voor Android gaat Lokaal netwerk over bereikbare mediaopslag op het nabije netwerk. Dat verschilt van een fout bij je ingestelde providertoegang. Noteer de precieze titel, het apparaat en de spelerversie voordat je een lege lijst uitlegt als een ontbrekende abonnementscatalogus."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Begrijp wat ontdekking laat zien",
+          "paragraphs": [
+            "VideoLAN beschrijft automatische ontdekking wanneer netwerkopslag verbonden en zichtbaar is voor het apparaat. De handleiding noemt ook handmatig toevoegen van een toegestane netwerkshare en de bijbehorende inloggegevens als deze beveiligd is. Dat zijn opslagservergegevens, niet automatisch Trex-gegevens. Raad geen servernamen, vul geen providerwachtwoorden in onbekende shareverzoeken in en verzwak geen netwerkbeveiliging om een lijst te vullen. Vraag de netwerkeigenaar naar beperkingen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Meld de providerfout afzonderlijk",
+          "paragraphs": [
+            "Gaat het probleem over je ingestelde spelersessie, beschrijf dan de fout en het moment in plaats van een ongerelateerde opslaglijst te delen. Bewaar instellingen en houd wachtwoorden, privéadressen en sharenamen buiten openbare berichten. Het bevestigde Trex-abonnement staat één gelijktijdige verbinding toe; begin geen tweede kijksessie om ontdekking te testen. Een lege lokale browser bewijst geen algemene uitval."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Rede local Trex IPTV: uma lista vazia no VLC não prova uma falha",
+      "excerpt": "Separe o explorador de armazenamento próximo do VLC do acesso ao fornecedor. Uma lista de rede local vazia não comprova uma falha da Trex IPTV.",
+      "seo_title": "Rede local Trex IPTV: uma lista vazia no VLC não prova uma falha",
+      "seo_description": "Separe o explorador de armazenamento próximo do VLC do acesso ao fornecedor. Uma lista de rede local vazia não comprova uma falha da Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique a lista vazia",
+          "paragraphs": [
+            "Uma dúvida sobre a rede local Trex IPTV pode começar no ecrã errado. Numa instalação existente do VLC para Android, Rede local refere-se ao armazenamento multimédia acessível na rede próxima. É diferente de um erro ao abrir o acesso configurado do fornecedor. Registe o título exato, o aparelho e a versão antes de interpretar a lista vazia como ausência do catálogo da assinatura."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Entenda o que a deteção mostra",
+          "paragraphs": [
+            "A VideoLAN documenta a deteção automática quando o armazenamento de rede está ligado e visível ao aparelho. O guia também explica a adição manual de uma partilha autorizada e o uso das suas credenciais se estiver protegida. São dados do servidor de armazenamento, não automaticamente da conta Trex. Não adivinhe servidores, não introduza palavras-passe do fornecedor em pedidos desconhecidos e não enfraqueça a proteção da rede para preencher a lista. Consulte o proprietário sobre restrições."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comunique o problema do fornecedor separadamente",
+          "paragraphs": [
+            "Se o erro ocorre na sessão configurada do leitor, descreva a mensagem e o momento em vez de enviar uma lista de armazenamento sem relação. Preserve os ajustes e oculte palavras-passe, endereços privados e nomes de partilhas em publicações públicas. O plano Trex confirmado permite uma ligação simultânea; não inicie outra sessão de visualização para testar a deteção. Uma lista local vazia não comprova uma interrupção geral."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Локальная сеть Trex IPTV: пустой список VLC не доказывает сбой",
+      "excerpt": "Отделяйте поиск соседних хранилищ в VLC от доступа провайдера. Пустой раздел локальной сети не доказывает остановку Trex IPTV.",
+      "seo_title": "Локальная сеть Trex IPTV: пустой список VLC не доказывает сбой",
+      "seo_description": "Отделяйте поиск соседних хранилищ в VLC от доступа провайдера. Пустой раздел локальной сети не доказывает остановку Trex IPTV.",
+      "sections": [
+        {
+          "heading": "Определите, какой список пуст",
+          "paragraphs": [
+            "Вопрос о локальной сети Trex IPTV может начинаться не на том экране. В уже установленном VLC для Android раздел локальной сети относится к медиахранилищам, доступным в соседней сети. Это не то же самое, что ошибка открытия настроенного доступа провайдера. Запишите точное название раздела, устройство и версию, прежде чем считать пустой список отсутствующим каталогом подписки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "Учитывайте назначение обнаружения",
+          "paragraphs": [
+            "VideoLAN описывает автоматическое обнаружение подключённого сетевого хранилища, видимого устройству. Руководство также объясняет ручное добавление разрешённого сетевого ресурса и ввод его реквизитов, если он защищён паролем. Это данные сервера хранения, а не обязательно аккаунта Trex. Не угадывайте серверы, не вводите пароль провайдера в незнакомые запросы ресурса и не ослабляйте сетевую защиту ради списка. Ограничения уточняйте у владельца сети."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отдельно сообщайте о проблеме провайдера",
+          "paragraphs": [
+            "Если ошибка возникает внутри настроенной сессии проигрывателя, опишите сообщение и момент появления, а не присылайте посторонний список хранилищ. Сохраните настройки и скройте пароли, приватные адреса и имена ресурсов в публичных сообщениях. Подтверждённый тариф Trex допускает одно одновременное подключение: не запускайте вторую сессию просмотра для проверки обнаружения. Пустой локальный список сам по себе не доказывает общий сбой."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کا مقامی نیٹ ورک: VLC کی خالی فہرست بندش کا ثبوت نہیں",
+      "excerpt": "VLC کے قریبی اسٹوریج والے حصے کو فراہم کنندہ کی رسائی سے الگ سمجھیں۔ مقامی نیٹ ورک کی خالی فہرست Trex IPTV بند ہونے کا ثبوت نہیں۔",
+      "seo_title": "Trex IPTV کا مقامی نیٹ ورک: VLC کی خالی فہرست بندش کا ثبوت نہیں",
+      "seo_description": "VLC کے قریبی اسٹوریج والے حصے کو فراہم کنندہ کی رسائی سے الگ سمجھیں۔ مقامی نیٹ ورک کی خالی فہرست Trex IPTV بند ہونے کا ثبوت نہیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کون سی فہرست خالی ہے",
+          "paragraphs": [
+            "Trex IPTV کے مقامی نیٹ ورک کا سوال غلط اسکرین سے شروع ہو سکتا ہے۔ پہلے سے نصب VLC برائے اینڈرائڈ میں مقامی نیٹ ورک کا حصہ اسی نیٹ ورک پر قابل رسائی میڈیا اسٹوریج دکھاتا ہے۔ یہ فراہم کنندہ کی محفوظ ترتیب کھولنے کی خرابی سے الگ ہے۔ فہرست کو سبسکرپشن کا غائب کیٹلاگ سمجھنے سے پہلے اصل عنوان، آلہ اور پلیئر ورژن لکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "سمجھیں دریافت کس چیز کی ہوتی ہے",
+          "paragraphs": [
+            "VideoLAN کے مطابق منسلک نیٹ ورک اسٹوریج آلے کو نظر آئے تو خودکار دریافت ہو سکتی ہے۔ رہنمائی مجاز مشترکہ فولڈر دستی شامل کرنے اور محفوظ ہونے پر اسی کی اسناد دینے کو بھی بیان کرتی ہے۔ یہ اسٹوریج سرور کی تفصیل ہے، لازماً Trex اکاؤنٹ کی نہیں۔ نہ سرور کے نام اندازے سے دیں، نہ نامعلوم مشترکہ فولڈر کے پیغام میں فراہم کنندہ کا پاس ورڈ لکھیں، اور نہ فہرست دکھانے کے لیے نیٹ ورک کی حفاظت کم کریں۔ پابندی ہو تو مالک سے پوچھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "فراہم کنندہ کا مسئلہ الگ بتائیں",
+          "paragraphs": [
+            "اگر اصل خرابی پلیئر کی ترتیب شدہ نشست میں ہے تو غیر متعلقہ اسٹوریج فہرست کے بجائے پیغام اور اس کے وقت کی وضاحت کریں۔ ترتیبات محفوظ رکھیں اور عوامی پوسٹ میں پاس ورڈ، نجی پتے اور مشترکہ فولڈر کے نام چھپائیں۔ مصدقہ Trex پلان میں ایک وقت میں ایک کنکشن ہے؛ دریافت جانچنے کے لیے دوسری دیکھنے کی نشست نہ چلائیں۔ مقامی خالی فہرست اکیلی عمومی بندش ثابت نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "شبكة Trex IPTV المحلية: قائمة VLC الفارغة لا تثبت انقطاعاً",
+      "excerpt": "افصل متصفح التخزين القريب في VLC عن وصول المزوّد. فراغ قائمة الشبكة المحلية لا يثبت توقف خدمة Trex IPTV.",
+      "seo_title": "شبكة Trex IPTV المحلية: قائمة VLC الفارغة لا تثبت انقطاعاً",
+      "seo_description": "افصل متصفح التخزين القريب في VLC عن وصول المزوّد. فراغ قائمة الشبكة المحلية لا يثبت توقف خدمة Trex IPTV.",
+      "sections": [
+        {
+          "heading": "حدّد القائمة الفارغة",
+          "paragraphs": [
+            "قد يبدأ سؤال شبكة Trex IPTV المحلية من الشاشة الخطأ. في تثبيت VLC الحالي على Android، يخص قسم الشبكة المحلية مخازن الوسائط التي يمكن الوصول إليها على الشبكة القريبة. يختلف هذا عن خطأ فتح وصول المزوّد المُعدّ مسبقاً. دوّن عنوان القسم بدقة والجهاز وإصدار المشغّل قبل اعتبار القائمة الفارغة غياباً لكتالوج الاشتراك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "افهم ما الذي يُكتشف",
+          "paragraphs": [
+            "يوثّق VideoLAN الاكتشاف التلقائي عندما يكون التخزين الشبكي متصلاً ومرئياً للجهاز. ويشرح إضافة مورد شبكة مصرح به يدوياً وإدخال بياناته إذا كان محمياً. هذه بيانات خادم التخزين وليست بالضرورة بيانات حساب Trex. لا تخمّن أسماء الخوادم، ولا تدخل كلمة مرور المزوّد في طلب مشاركة مجهول، ولا تضعف حماية الشبكة لإظهار القائمة. اسأل مالك الشبكة عن القيود."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "أبلغ عن عَرَض المزوّد بصورة منفصلة",
+          "paragraphs": [
+            "إذا كانت المشكلة داخل جلسة المشغّل المُعدّة، اشرح الخطأ ووقت ظهوره بدلاً من إرسال قائمة تخزين غير مرتبطة. حافظ على الإعدادات وأخف كلمات المرور والعناوين الخاصة وأسماء المشاركات في المنشورات العامة. تسمح خطة Trex المؤكدة باتصال متزامن واحد؛ لا تبدأ جلسة مشاهدة ثانية لاختبار الاكتشاف. فراغ المتصفح المحلي وحده لا يثبت انقطاع الخدمة للجميع."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV लोकल नेटवर्क: VLC की खाली सूची सेवा बंद होने का प्रमाण नहीं",
+      "excerpt": "VLC के पास के स्टोरेज वाले हिस्से को प्रदाता की पहुँच से अलग समझें। खाली लोकल नेटवर्क सूची Trex IPTV बंद होने का प्रमाण नहीं है।",
+      "seo_title": "Trex IPTV लोकल नेटवर्क: VLC की खाली सूची सेवा बंद होने का प्रमाण नहीं",
+      "seo_description": "VLC के पास के स्टोरेज वाले हिस्से को प्रदाता की पहुँच से अलग समझें। खाली लोकल नेटवर्क सूची Trex IPTV बंद होने का प्रमाण नहीं है।",
+      "sections": [
+        {
+          "heading": "पहचानें कौन सी सूची खाली है",
+          "paragraphs": [
+            "Trex IPTV के लोकल नेटवर्क का सवाल गलत स्क्रीन से शुरू हो सकता है। पहले से स्थापित Android के VLC में लोकल नेटवर्क वाला हिस्सा पास के नेटवर्क पर उपलब्ध मीडिया स्टोरेज के लिए है। यह प्रदाता की सेट की हुई पहुँच खोलने की त्रुटि से अलग है। खाली सूची को गायब सदस्यता कैटलॉग मानने से पहले सही शीर्षक, डिवाइस और प्लेयर संस्करण लिखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html"
+            }
+          ]
+        },
+        {
+          "heading": "समझें कि खोज में क्या दिखता है",
+          "paragraphs": [
+            "VideoLAN के अनुसार जुड़ा हुआ नेटवर्क स्टोरेज डिवाइस को दिखाई देने पर अपने आप खोजा जा सकता है। मार्गदर्शिका अधिकृत साझा स्टोरेज को हाथ से जोड़ने और सुरक्षित होने पर उसी के लॉगिन विवरण देने को भी समझाती है। ये स्टोरेज सर्वर के विवरण हैं, अपने आप Trex खाते के नहीं। न सर्वर नाम का अंदाज़ा लगाएँ, न अपरिचित साझा स्टोरेज के संदेश में प्रदाता का पासवर्ड भरें और न सूची दिखाने के लिए नेटवर्क सुरक्षा कम करें। पाबंदी हो तो नेटवर्क मालिक से पूछें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "प्रदाता का लक्षण अलग बताएँ",
+          "paragraphs": [
+            "यदि समस्या असल में सेट की हुई प्लेयर सत्र के भीतर है, तो असंबंधित स्टोरेज सूची के बजाय त्रुटि और उसके समय का विवरण दें। सेटिंग बचाएँ और सार्वजनिक पोस्ट में पासवर्ड, निजी पते और साझा स्टोरेज के नाम छिपाएँ। पुष्टि किए गए Trex प्लान में एक समय पर एक कनेक्शन है; खोज की जाँच के लिए दूसरी देखने की सत्र न शुरू करें। खाली लोकल सूची अकेले व्यापक सेवा बंद होना सिद्ध नहीं करती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://docs.videolan.me/vlc-user/android/3.5/en/browse/local_network.html",
+      "label": "VideoLAN Android Local Network guide"
+    }
+  ]
+}

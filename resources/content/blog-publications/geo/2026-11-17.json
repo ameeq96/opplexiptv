@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-17",
+  "topic": "Identify an Apple TV text-entry keyboard notification separately from Geo IPTV activation and protect account information visible on a shared television.",
+  "primary_keyword": "Geo IPTV keyboard notification",
+  "slug": "geo-keyboard-notification-check-the-television-field",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV keyboard notification: check the television before typing",
+      "excerpt": "An Apple TV keyboard prompt on an iPhone concerns text entry, not Geo IPTV activation. Check the real television field and protect shared-screen privacy.",
+      "seo_title": "Geo IPTV keyboard notification: check the television before typing",
+      "seo_description": "An Apple TV keyboard prompt on an iPhone concerns text entry, not Geo IPTV activation. Check the real television field and protect shared-screen privacy.",
+      "sections": [
+        {
+          "heading": "Match the prompt to a visible field",
+          "paragraphs": [
+            "A Geo IPTV keyboard notification question may arise when Apple TV 4K shows a text field and a nearby iPhone offers typing. Before entering anything, look at the television: which app and field are actually selected, and whose profile is active? An unexpected prompt is not proof that support requested information or that your provider account needs renewal. Stop if you cannot identify the destination."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Keep device requirements separate from provider access",
+          "paragraphs": [
+            "Apple’s Apple TV 4K accessibility report describes nearby iOS devices on the same Wi-Fi network and iCloud account receiving keyboard access when the on-screen keyboard appears. This is a device-level convenience, not a Geo IPTV sign-in service. Eligibility and current controls depend on the equipment and software. Use only devices you are authorised to control; do not borrow another person’s Apple account or disable account protection to make a keyboard appear."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Treat television text as shared information",
+          "paragraphs": [
+            "Text entry reaches the television, so check who can see the screen before using a private field. Avoid public screenshots containing credentials, verification codes or private playback addresses. A keyboard notification does not confirm payment, renewal or player compatibility. If typing fails, report the Apple TV model, phone software version and visible field label without its private contents. Keep saved player setup intact while this input issue is investigated."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Aviso de teclado y Geo IPTV: mira el televisor antes de escribir",
+      "excerpt": "El aviso de teclado del Apple TV en un iPhone sirve para introducir texto, no para activar Geo IPTV. Verifica el campo real y protege la privacidad.",
+      "seo_title": "Aviso de teclado y Geo IPTV: mira el televisor antes de escribir",
+      "seo_description": "El aviso de teclado del Apple TV en un iPhone sirve para introducir texto, no para activar Geo IPTV. Verifica el campo real y protege la privacidad.",
+      "sections": [
+        {
+          "heading": "Relaciona el aviso con un campo visible",
+          "paragraphs": [
+            "La consulta sobre un aviso de teclado de Geo IPTV puede surgir cuando Apple TV 4K muestra un campo y un iPhone cercano ofrece escribir. Antes de hacerlo, mira el televisor: ¿qué aplicación y campo están seleccionados y de quién es el perfil activo? Un aviso inesperado no demuestra que soporte pida datos ni que debas renovar. Detente si no reconoces el destino."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Separa los requisitos del dispositivo del servicio",
+          "paragraphs": [
+            "El informe de accesibilidad de Apple TV 4K describe dispositivos iOS cercanos, en la misma red wifi y cuenta iCloud, que reciben acceso al teclado cuando aparece el teclado del televisor. Es una comodidad del dispositivo, no un acceso de Geo IPTV. La compatibilidad y los controles actuales dependen del equipo y software. Usa solo dispositivos que puedas controlar legítimamente; no tomes prestada otra cuenta Apple ni desactives protecciones para mostrar el teclado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Considera compartido el texto del televisor",
+          "paragraphs": [
+            "Lo escrito llega al televisor: comprueba quién puede verlo antes de usar un campo privado. No publiques capturas con credenciales, códigos o direcciones privadas de reproducción. El aviso no confirma pago, renovación ni compatibilidad del reproductor. Si falla la escritura, comunica modelo del Apple TV, versión del teléfono y etiqueta del campo sin su contenido privado. Conserva la configuración del reproductor durante la investigación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Notification clavier et Geo IPTV : regardez le téléviseur avant de saisir",
+      "excerpt": "La notification clavier Apple TV sur iPhone concerne la saisie, pas l’activation Geo IPTV. Vérifiez le champ réel et la confidentialité de l’écran partagé.",
+      "seo_title": "Notification clavier et Geo IPTV : regardez le téléviseur avant de saisir",
+      "seo_description": "La notification clavier Apple TV sur iPhone concerne la saisie, pas l’activation Geo IPTV. Vérifiez le champ réel et la confidentialité de l’écran partagé.",
+      "sections": [
+        {
+          "heading": "Reliez la notification à un champ visible",
+          "paragraphs": [
+            "Une question de clavier Geo IPTV peut survenir lorsqu’Apple TV 4K affiche un champ et qu’un iPhone proche propose de saisir du texte. Regardez d’abord le téléviseur : quelle application et quel champ sont sélectionnés, et à qui appartient le profil actif ? Une notification inattendue ne prouve pas une demande du support ou un besoin de renouvellement. Arrêtez si vous n’identifiez pas la destination."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguez les conditions de l’appareil du fournisseur",
+          "paragraphs": [
+            "Le rapport d’accessibilité Apple TV 4K décrit des appareils iOS proches, sur le même Wi-Fi et compte iCloud, recevant l’accès au clavier lorsqu’il apparaît à l’écran. C’est une fonction de l’appareil, pas une connexion Geo IPTV. La compatibilité et les commandes actuelles dépendent du matériel et du logiciel. Utilisez uniquement les appareils que vous êtes autorisé à contrôler ; n’empruntez pas un compte Apple et ne désactivez pas ses protections pour faire apparaître un clavier."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Considérez le texte télévisé comme partagé",
+          "paragraphs": [
+            "La saisie arrive sur le téléviseur : vérifiez qui voit l’écran avant un champ privé. Ne publiez pas de captures avec identifiants, codes ou adresses privées de lecture. La notification ne confirme ni paiement, ni renouvellement, ni compatibilité. Si la saisie échoue, indiquez modèle Apple TV, version du téléphone et libellé du champ sans son contenu privé. Préservez la configuration du lecteur pendant le diagnostic."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Notifica tastiera e Geo IPTV: guarda la TV prima di scrivere",
+      "excerpt": "La notifica tastiera Apple TV sull’iPhone riguarda il testo, non l’attivazione Geo IPTV. Controlla il campo reale e la privacy dello schermo condiviso.",
+      "seo_title": "Notifica tastiera e Geo IPTV: guarda la TV prima di scrivere",
+      "seo_description": "La notifica tastiera Apple TV sull’iPhone riguarda il testo, non l’attivazione Geo IPTV. Controlla il campo reale e la privacy dello schermo condiviso.",
+      "sections": [
+        {
+          "heading": "Collega la notifica a un campo visibile",
+          "paragraphs": [
+            "Una domanda sulla tastiera Geo IPTV può nascere quando Apple TV 4K mostra un campo e un iPhone vicino offre di scrivere. Guarda prima la televisione: quale app e campo sono selezionati e di chi è il profilo attivo? Una notifica inattesa non prova una richiesta dell’assistenza o la necessità di rinnovare. Fermati se non riconosci la destinazione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Separa requisiti del dispositivo e accesso al servizio",
+          "paragraphs": [
+            "Il rapporto di accessibilità Apple TV 4K descrive dispositivi iOS vicini sulla stessa rete Wi-Fi e account iCloud che ricevono accesso alla tastiera quando questa appare sul televisore. È una funzione del dispositivo, non un accesso Geo IPTV. Compatibilità e comandi attuali dipendono da hardware e software. Usa solo apparecchi che sei autorizzato a controllare; non prendere in prestito account Apple e non disattivare protezioni per far comparire una tastiera."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Considera condiviso il testo sulla TV",
+          "paragraphs": [
+            "Il testo arriva sul televisore: controlla chi vede lo schermo prima di usare un campo privato. Non pubblicare immagini con credenziali, codici o indirizzi privati di riproduzione. La notifica non conferma pagamento, rinnovo o compatibilità. Se la digitazione non funziona, comunica modello Apple TV, versione del telefono ed etichetta del campo senza il contenuto privato. Conserva il setup del lettore durante la verifica."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-toetsenbordmelding: kijk vóór het typen naar de televisie",
+      "excerpt": "Een Apple TV-toetsenbordmelding op een iPhone gaat over tekstinvoer en niet over Geo IPTV-activering. Controleer het echte veld en de schermprivacy.",
+      "seo_title": "Geo IPTV-toetsenbordmelding: kijk vóór het typen naar de televisie",
+      "seo_description": "Een Apple TV-toetsenbordmelding op een iPhone gaat over tekstinvoer en niet over Geo IPTV-activering. Controleer het echte veld en de schermprivacy.",
+      "sections": [
+        {
+          "heading": "Koppel de melding aan een zichtbaar veld",
+          "paragraphs": [
+            "Een vraag over Geo IPTV en een toetsenbordmelding kan ontstaan als Apple TV 4K een tekstveld toont en een iPhone in de buurt typen aanbiedt. Kijk eerst naar de televisie: welke app en welk veld zijn geselecteerd en van wie is het actieve profiel? Een onverwachte melding bewijst geen ondersteuningsverzoek of noodzakelijke verlenging. Stop als je de bestemming niet herkent."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Houd apparaateisen en providertoegang apart",
+          "paragraphs": [
+            "Apple’s toegankelijkheidsrapport voor Apple TV 4K beschrijft iOS-apparaten in de buurt op hetzelfde wifi-netwerk en iCloud-account die toetsenbordtoegang krijgen zodra het schermtoetsenbord verschijnt. Dit is apparaatgemak en geen Geo IPTV-aanmelding. Ondersteuning en huidige bediening hangen af van apparatuur en software. Gebruik alleen apparaten die je mag bedienen; leen geen ander Apple-account en zet geen accountbeveiliging uit om een toetsenbord te krijgen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Behandel televisietekst als gedeelde informatie",
+          "paragraphs": [
+            "Invoer bereikt de televisie: controleer wie het scherm ziet voordat je een privéveld gebruikt. Publiceer geen schermafbeeldingen met inloggegevens, codes of privéafspeeladressen. Een toetsenbordmelding bevestigt geen betaling, verlenging of spelercompatibiliteit. Werkt typen niet, meld dan het Apple TV-model, de telefoonsoftware en de veldnaam zonder privéinhoud. Bewaar de spelerinstellingen tijdens het onderzoek."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Notificação de teclado e Geo IPTV: olhe para a TV antes de escrever",
+      "excerpt": "O aviso de teclado Apple TV no iPhone refere-se à escrita, não à ativação Geo IPTV. Confirme o campo real e a privacidade do ecrã partilhado.",
+      "seo_title": "Notificação de teclado e Geo IPTV: olhe para a TV antes de escrever",
+      "seo_description": "O aviso de teclado Apple TV no iPhone refere-se à escrita, não à ativação Geo IPTV. Confirme o campo real e a privacidade do ecrã partilhado.",
+      "sections": [
+        {
+          "heading": "Relacione o aviso com um campo visível",
+          "paragraphs": [
+            "Uma dúvida sobre o teclado Geo IPTV pode surgir quando Apple TV 4K mostra um campo e um iPhone próximo oferece escrita. Primeiro veja a televisão: que aplicação e campo estão selecionados e de quem é o perfil ativo? Um aviso inesperado não comprova um pedido do apoio nem necessidade de renovar. Pare se não reconhecer o destino."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Separe requisitos do aparelho e acesso ao fornecedor",
+          "paragraphs": [
+            "O relatório de acessibilidade Apple TV 4K descreve dispositivos iOS próximos na mesma rede Wi-Fi e conta iCloud que recebem acesso ao teclado quando este aparece no ecrã. É uma conveniência do aparelho, não um início de sessão Geo IPTV. A compatibilidade e os controlos atuais dependem do equipamento e software. Use apenas aparelhos que está autorizado a controlar; não peça uma conta Apple emprestada nem desative proteção para mostrar um teclado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Trate o texto da TV como informação partilhada",
+          "paragraphs": [
+            "O que escreve chega à televisão: confirme quem vê o ecrã antes de usar um campo privado. Não publique capturas com credenciais, códigos ou endereços privados de reprodução. A notificação não confirma pagamento, renovação ou compatibilidade. Se a escrita falhar, informe o modelo Apple TV, a versão do telefone e o nome do campo sem conteúdo privado. Preserve a configuração do leitor durante a verificação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Уведомление клавиатуры Geo IPTV: перед вводом посмотрите на телевизор",
+      "excerpt": "Предложение клавиатуры Apple TV на iPhone относится к вводу текста, а не активации Geo IPTV. Проверьте настоящее поле и приватность общего экрана.",
+      "seo_title": "Уведомление клавиатуры Geo IPTV: перед вводом посмотрите на телевизор",
+      "seo_description": "Предложение клавиатуры Apple TV на iPhone относится к вводу текста, а не активации Geo IPTV. Проверьте настоящее поле и приватность общего экрана.",
+      "sections": [
+        {
+          "heading": "Свяжите уведомление с видимым полем",
+          "paragraphs": [
+            "Вопрос о клавиатуре Geo IPTV может возникнуть, когда Apple TV 4K показывает поле, а ближайший iPhone предлагает ввод. Сначала посмотрите на телевизор: какое приложение и поле выбраны, чей профиль активен? Неожиданное уведомление не доказывает запрос поддержки или необходимость продления. Остановитесь, если не узнаёте место назначения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "Отделите требования устройства от провайдера",
+          "paragraphs": [
+            "В отчёте Apple TV 4K о доступности описаны соседние устройства iOS в одной сети Wi-Fi и аккаунте iCloud, получающие доступ к клавиатуре при её появлении на телевизоре. Это функция устройства, а не вход в Geo IPTV. Доступность и современные элементы управления зависят от оборудования и ПО. Управляйте только разрешёнными устройствами; не одалживайте чужой Apple-аккаунт и не отключайте его защиту ради клавиатуры."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Считайте телевизионный текст общим",
+          "paragraphs": [
+            "Ввод попадает на телевизор: проверьте, кто видит экран, прежде чем использовать приватное поле. Не публикуйте снимки с реквизитами входа, кодами или закрытыми адресами воспроизведения. Уведомление не подтверждает оплату, продление или совместимость проигрывателя. При сбое ввода сообщите модель Apple TV, версию ПО телефона и название поля без его частного содержимого. Сохраните настройки проигрывателя во время проверки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کی کی بورڈ اطلاع: لکھنے سے پہلے ٹی وی دیکھیں",
+      "excerpt": "آئی فون پر Apple TV کی کی بورڈ اطلاع متن لکھنے کے لیے ہے، Geo IPTV فعال کرنے کے لیے نہیں۔ اصل خانہ اور مشترکہ اسکرین کی رازداری دیکھیں۔",
+      "seo_title": "Geo IPTV کی کی بورڈ اطلاع: لکھنے سے پہلے ٹی وی دیکھیں",
+      "seo_description": "آئی فون پر Apple TV کی کی بورڈ اطلاع متن لکھنے کے لیے ہے، Geo IPTV فعال کرنے کے لیے نہیں۔ اصل خانہ اور مشترکہ اسکرین کی رازداری دیکھیں۔",
+      "sections": [
+        {
+          "heading": "اطلاع کو سامنے کے خانے سے ملائیں",
+          "paragraphs": [
+            "Geo IPTV کی کی بورڈ اطلاع کا سوال تب آ سکتا ہے جب Apple TV 4K پر متن کا خانہ کھلے اور قریب آئی فون لکھنے کی پیشکش کرے۔ پہلے ٹی وی دیکھیں: کون سی ایپ اور خانہ منتخب ہے اور فعال پروفائل کس کا ہے؟ غیر متوقع اطلاع سپورٹ کی درخواست یا سبسکرپشن کی تجدید ضروری ہونے کا ثبوت نہیں۔ منزل پہچان نہ آئے تو رک جائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "آلے کی شرط کو سروس کی رسائی سے الگ رکھیں",
+          "paragraphs": [
+            "Apple TV 4K کی رسائی کی سہولتوں کی رپورٹ قریب iOS آلات، ایک ہی وائی فائی اور iCloud اکاؤنٹ پر ٹی وی کا کی بورڈ ظاہر ہونے سے فون پر کی بورڈ ملنے کو بیان کرتی ہے۔ یہ آلے کی سہولت ہے، Geo IPTV کا لاگ اِن نہیں۔ موجودہ دستیابی اور کنٹرول آلے اور سافٹ ویئر پر منحصر ہیں۔ صرف اپنے مجاز آلات چلائیں؛ کی بورڈ لانے کے لیے نہ کسی اور کا Apple اکاؤنٹ ادھار لیں اور نہ اکاؤنٹ کی حفاظت بند کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ٹی وی کے متن کو مشترکہ معلومات سمجھیں",
+          "paragraphs": [
+            "لکھا ہوا متن ٹی وی تک پہنچتا ہے، اس لیے نجی خانہ استعمال کرنے سے پہلے دیکھیں اسکرین کون دیکھ سکتا ہے۔ لاگ اِن تفصیل، تصدیقی کوڈ یا نجی پلے بیک پتوں کی تصویر عوامی طور پر نہ دیں۔ اطلاع ادائیگی، تجدید یا پلیئر کی مطابقت ثابت نہیں کرتی۔ لکھنا ناکام ہو تو Apple TV کا ماڈل، فون کا سافٹ ویئر ورژن اور خانے کا نام بتائیں، نجی متن نہیں۔ جانچ کے دوران پلیئر کی محفوظ ترتیب برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إشعار لوحة مفاتيح Geo IPTV: انظر إلى التلفاز قبل الكتابة",
+      "excerpt": "إشعار لوحة مفاتيح Apple TV على iPhone يخص إدخال النص لا تفعيل Geo IPTV. افحص الحقل الحقيقي وخصوصية الشاشة المشتركة أولاً.",
+      "seo_title": "إشعار لوحة مفاتيح Geo IPTV: انظر إلى التلفاز قبل الكتابة",
+      "seo_description": "إشعار لوحة مفاتيح Apple TV على iPhone يخص إدخال النص لا تفعيل Geo IPTV. افحص الحقل الحقيقي وخصوصية الشاشة المشتركة أولاً.",
+      "sections": [
+        {
+          "heading": "اربط الإشعار بحقل ظاهر",
+          "paragraphs": [
+            "قد يظهر سؤال لوحة مفاتيح Geo IPTV عندما يعرض Apple TV 4K حقل نص ويقترح iPhone قريب الكتابة. انظر أولاً إلى التلفاز: ما التطبيق والحقل المحددان، ولمن الملف النشط؟ الإشعار غير المتوقع لا يثبت طلب معلومات من الدعم أو ضرورة تجديد الاشتراك. توقف إن لم تعرف وجهة النص."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "افصل متطلبات الجهاز عن وصول المزوّد",
+          "paragraphs": [
+            "يصف تقرير إتاحة Apple TV 4K حصول أجهزة iOS القريبة على لوحة مفاتيح عند ظهورها على التلفاز إذا كانت على شبكة Wi-Fi وحساب iCloud نفسيهما. هذه ميزة للجهاز وليست خدمة تسجيل دخول Geo IPTV. تعتمد الأهلية والأدوات الحالية على المعدات والبرمجيات. استخدم الأجهزة المصرّح لك بالتحكم بها فقط؛ لا تستعر حساب Apple لشخص آخر ولا تعطّل حماية الحساب لإظهار لوحة مفاتيح."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اعتبر نص التلفاز معلومات مشتركة",
+          "paragraphs": [
+            "يصل الإدخال إلى التلفاز، لذلك تحقق ممن يرى الشاشة قبل استخدام حقل خاص. لا تنشر لقطات تحتوي بيانات دخول أو رموز تحقق أو عناوين تشغيل خاصة. إشعار لوحة المفاتيح لا يؤكد دفعاً أو تجديداً أو توافق المشغّل. إذا فشلت الكتابة، أبلغ عن طراز Apple TV وإصدار نظام الهاتف واسم الحقل دون محتواه الخاص. حافظ على إعداد المشغّل المحفوظ أثناء الفحص."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV की कीबोर्ड सूचना: लिखने से पहले टीवी देखें",
+      "excerpt": "iPhone पर Apple TV की कीबोर्ड सूचना टेक्स्ट लिखने के लिए है, Geo IPTV चालू करने के लिए नहीं। असल फ़ील्ड और साझा स्क्रीन की गोपनीयता देखें।",
+      "seo_title": "Geo IPTV की कीबोर्ड सूचना: लिखने से पहले टीवी देखें",
+      "seo_description": "iPhone पर Apple TV की कीबोर्ड सूचना टेक्स्ट लिखने के लिए है, Geo IPTV चालू करने के लिए नहीं। असल फ़ील्ड और साझा स्क्रीन की गोपनीयता देखें।",
+      "sections": [
+        {
+          "heading": "सूचना को दिख रहे फ़ील्ड से मिलाएँ",
+          "paragraphs": [
+            "Geo IPTV की कीबोर्ड सूचना का सवाल तब हो सकता है जब Apple TV 4K पर टेक्स्ट फ़ील्ड खुले और पास का iPhone लिखने का विकल्प दे। पहले टीवी देखें: कौन सा ऐप और फ़ील्ड चुना है तथा सक्रिय प्रोफ़ाइल किसकी है? अनपेक्षित सूचना सहायता टीम के माँगने या सदस्यता नवीनीकरण ज़रूरी होने का प्रमाण नहीं। गंतव्य न पहचानें तो रुकें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf"
+            }
+          ]
+        },
+        {
+          "heading": "डिवाइस की शर्तें प्रदाता से अलग रखें",
+          "paragraphs": [
+            "Apple TV 4K की सुलभता रिपोर्ट में पास के iOS उपकरणों को एक ही वाई-फाई और iCloud खाते पर टीवी की स्क्रीन कीबोर्ड खुलने पर फ़ोन कीबोर्ड मिलने का वर्णन है। यह डिवाइस की सुविधा है, Geo IPTV लॉगिन सेवा नहीं। मौजूदा उपलब्धता और नियंत्रण उपकरण और सॉफ़्टवेयर पर निर्भर करते हैं। सिर्फ़ अधिकृत उपकरण चलाएँ; कीबोर्ड लाने के लिए न किसी और का Apple खाता लें और न खाते की सुरक्षा बंद करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "टीवी के टेक्स्ट को साझा जानकारी मानें",
+          "paragraphs": [
+            "लिखा टेक्स्ट टीवी तक जाता है, इसलिए निजी फ़ील्ड इस्तेमाल करने से पहले देखें कि स्क्रीन कौन देख सकता है। लॉगिन विवरण, सत्यापन कोड या निजी प्लेबैक पते वाली तस्वीर सार्वजनिक न करें। कीबोर्ड सूचना भुगतान, नवीनीकरण या प्लेयर अनुकूलता की पुष्टि नहीं करती। लिखना न चले तो Apple TV मॉडल, फ़ोन सॉफ़्टवेयर संस्करण और फ़ील्ड का नाम बताएँ, निजी सामग्री नहीं। जाँच के दौरान सहेजा प्लेयर सेटअप बचाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.apple.com/content/dam/edam/applecare/images/en_US/otherassets/accessibility/VPAT_Apple_TV_4K.pdf",
+      "label": "Apple TV 4K accessibility report: keyboard notifications"
+    }
+  ]
+}
