@@ -44,23 +44,33 @@
                 position: relative;
                 display: grid;
                 grid-template-columns: minmax(380px, .9fr) minmax(0, 1.1fr);
-                align-items: start;
+                align-items: center;
                 gap: clamp(34px, 4vw, 58px);
             }
 
-            .unlimited-showcase__media {
-                min-height: 690px;
+            .unlimited-showcase .unlimited-showcase__media {
+                display: grid;
+                place-items: center;
+                width: 100%;
+                max-width: 560px;
+                min-height: 0;
+                aspect-ratio: 4 / 3;
+                padding: clamp(18px, 3vw, 32px);
+                margin-inline: auto;
                 border: 1px solid rgba(15, 23, 42, .1);
                 border-radius: 28px;
                 background: linear-gradient(180deg, #f8fbff, #e9f0fa);
                 box-shadow: 0 24px 54px rgba(15, 23, 42, .14);
             }
 
-            .unlimited-showcase__main {
-                inset: 18px auto 18px 18px;
+            .unlimited-showcase .unlimited-showcase__main {
+                position: relative;
+                inset: auto;
+                width: 100%;
+                max-width: 480px;
                 overflow: hidden;
                 border-radius: 22px;
-                box-shadow: 0 20px 38px rgba(15, 23, 42, .16);
+                box-shadow: none;
             }
 
             .unlimited-showcase__screen {
@@ -253,7 +263,7 @@
                 }
 
                 .unlimited-showcase__media {
-                    min-height: 540px;
+                    min-height: 0;
                 }
 
                 .unlimited-showcase__list {
@@ -277,7 +287,7 @@
                 }
 
                 .unlimited-showcase__media {
-                    min-height: 420px;
+                    min-height: 0;
                     border-radius: 22px;
                 }
 
@@ -311,12 +321,12 @@
                 }
 
                 .unlimited-showcase__media {
-                    min-height: 335px;
+                    min-height: 0;
                     border-radius: 18px;
                 }
 
                 .unlimited-showcase__main {
-                    inset: 10px auto 10px 10px;
+                    inset: auto;
                     border-radius: 15px;
                 }
 
@@ -400,12 +410,12 @@
                 @unless ($isMobile)
                     <div class="unlimited-showcase__media" aria-hidden="true">
                         <div class="unlimited-showcase__main">
-                            <svg viewBox="0 0 396 527" width="396" height="527" aria-hidden="true" focusable="false"
-                                style="width: 100%; height: 100%;">
-                                <rect width="396" height="527" rx="28" fill="#132e44" />
-                                <rect x="28" y="112" width="340" height="228" rx="18" fill="#1e5162" />
-                                <path d="M168 164 260 226 168 288Z" fill="#86d8cd" />
-                                <path d="M198 340V396M132 396H264" fill="none" stroke="#86d8cd" stroke-width="14" stroke-linecap="round" />
+                            <svg viewBox="0 0 640 440" width="640" height="440" aria-hidden="true" focusable="false"
+                                style="display: block; width: 100%; height: auto;">
+                                <rect x="52" y="54" width="536" height="298" rx="24" fill="#132e44" />
+                                <rect x="72" y="74" width="496" height="258" rx="12" fill="#1e5162" />
+                                <path d="M290 150 390 203 290 256Z" fill="#86d8cd" />
+                                <path d="M320 352V396M236 396H404" fill="none" stroke="#132e44" stroke-width="16" stroke-linecap="round" />
                             </svg>
                         </div>
                     </div>
