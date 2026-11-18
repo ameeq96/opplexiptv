@@ -81,15 +81,14 @@
                         @endforeach
                     </div>
                     <div class="document-support__network-art">
-                        <img class="document-support__network-main"
-                            src="{{ asset('images/resource/network-4.webp') }}"
-                            alt="{{ $documentAbout['story']['image_alt'] }}"
-                            loading="lazy" decoding="async">
-                        <img class="document-support__network-screen"
-                            src="{{ asset('images/resource/network-5.webp') }}"
-                            alt=""
-                            aria-hidden="true"
-                            loading="lazy" decoding="async">
+                        <svg class="document-support__network-main" viewBox="0 0 480 480" width="480" height="480"
+                            aria-hidden="true" focusable="false">
+                            <rect width="480" height="480" rx="32" fill="#e8f6f5" />
+                            <rect x="40" y="104" width="400" height="248" rx="20" fill="#132e44" />
+                            <rect x="60" y="124" width="360" height="208" rx="8" fill="#1e5162" />
+                            <path d="M216 172 296 228 216 284Z" fill="#86d8cd" />
+                            <path d="M240 352V392M176 392H304" fill="none" stroke="#132e44" stroke-width="16" stroke-linecap="round" />
+                        </svg>
                     </div>
                 </div>
             </section>

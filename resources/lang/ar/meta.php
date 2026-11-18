@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'شاهد أفلام ومسلسلات IPTV بجودة HD و4K - Opplex IPTV',
         'description' => 'اطلع على معلومات الأفلام والمسلسلات في Opplex IPTV. أكد توفر العنوان والخطة ومتطلبات الجهاز قبل الاشتراك.',
-        'keywords' => 'مشغل iptv الذكي، xtreme hd iptv، أفلام iptv، iptv Netflix، aroma iptv، iptv مباشر 4k، جهاز iptv',
+        'keywords' => 'مشغل iptv الذكي، xtreme hd iptv، أفلام iptv، aroma iptv، iptv مباشر 4k، جهاز iptv',
     ],
     'packages' => [
         'title' => 'أفضل باقات IPTV مع تجربة مجانية | بث مباشر 4K في أوروبا',

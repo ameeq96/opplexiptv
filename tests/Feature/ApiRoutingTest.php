@@ -206,20 +206,18 @@ class ApiRoutingTest extends TestCase
         }
     }
 
-    public function test_media_aliases_return_the_existing_payload_without_external_requests(): void
+    public function test_media_aliases_return_empty_payloads_without_external_requests(): void
     {
         $this->mock(TmdbService::class, function ($mock): void {
-            $mock->shouldReceive('trailerUrl')->with(17, 'movie')->twice()
-                ->andReturn('https://www.youtube.com/watch?v=fixture');
-            $mock->shouldReceive('trending')->with('all', 'day', 2)->twice()
-                ->andReturn(['results' => [], 'page' => 2, 'total_pages' => 5]);
+            $mock->shouldNotReceive('trailerUrl');
+            $mock->shouldNotReceive('trending');
         });
 
         foreach (['', '/api'] as $prefix) {
-            $this->get($prefix.'/movies/movie/17/trailer')->assertOk()
-                ->assertExactJson(['url' => 'https://www.youtube.com/watch?v=fixture']);
+            $this->get($prefix.'/movies/movie/17/trailer')->assertNotFound()
+                ->assertExactJson(['url' => null]);
             $this->get($prefix.'/trending?page=2')->assertOk()
-                ->assertExactJson(['results' => [], 'page' => 2, 'total_pages' => 5]);
+                ->assertExactJson(['results' => [], 'page' => 2, 'total_pages' => 1]);
         }
 
         Http::assertNothingSent();
@@ -242,18 +240,8 @@ class ApiRoutingTest extends TestCase
     public function test_public_api_locale_is_validated_from_the_query_and_localizes_the_response(): void
     {
         $this->mock(TmdbService::class, function ($mock): void {
-            $mock->shouldReceive('trailerUrl')->with(17, 'movie')->once()->andReturnUsing(function (): string {
-                $this->assertSame('es', app()->getLocale());
-                $this->assertSame('es', LaravelLocalization::getCurrentLocale());
-
-                return 'https://www.youtube.com/watch?v=localized-fixture';
-            });
-            $mock->shouldReceive('trending')->with('all', 'day', 1)->once()->andReturnUsing(function (): array {
-                $this->assertSame('es', app()->getLocale());
-                $this->assertSame('es', LaravelLocalization::getCurrentLocale());
-
-                return ['results' => [], 'page' => 1, 'total_pages' => 1];
-            });
+            $mock->shouldNotReceive('trailerUrl');
+            $mock->shouldNotReceive('trending');
         });
         $package = $this->package();
         $package->translations()->create([
@@ -268,10 +256,16 @@ class ApiRoutingTest extends TestCase
             $this->get($path.'?locale%5B%5D=es')->assertUnprocessable()->assertJsonValidationErrors('locale');
         }
 
-        $this->get($paths[0].'?locale=es')->assertOk()->assertHeader('Content-Language', 'es');
+        $this->get($paths[0].'?locale=es')->assertNotFound()->assertHeader('Content-Language', 'es')
+            ->assertExactJson(['url' => null]);
+        $this->assertSame('es', app()->getLocale());
+        $this->assertSame('es', LaravelLocalization::getCurrentLocale());
         $this->call('GET', $paths[1].'?locale=es', [], [], [], [
             'CONTENT_TYPE' => 'application/json',
-        ], '{"locale":"en-US"}')->assertOk()->assertHeader('Content-Language', 'es');
+        ], '{"locale":"en-US"}')->assertOk()->assertHeader('Content-Language', 'es')
+            ->assertExactJson(['results' => [], 'page' => 1, 'total_pages' => 1]);
+        $this->assertSame('es', app()->getLocale());
+        $this->assertSame('es', LaravelLocalization::getCurrentLocale());
         $response = $this->get($paths[2].'?locale=es')->assertOk()->assertHeader('Content-Language', 'es');
         $this->assertStringContainsString('Función localizada de prueba', $response->json('html'));
         Http::assertNothingSent();

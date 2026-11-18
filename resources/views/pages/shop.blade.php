@@ -88,9 +88,6 @@
             }
 
             $digitalNames = [
-                'netflix' => 'Netflix',
-                'prime-video' => 'Prime Video',
-                'hbo-max-premium' => 'HBO Max Premium',
                 'nordvpn' => 'NordVPN',
             ];
             $digitalFallbacks = collect($documentPage['product_descriptions']['digital'])
@@ -211,10 +208,16 @@
                                             data-whatsapp-currency="{{ data_get($product, 'currency', 'USD') ?: 'USD' }}"
                                             data-whatsapp-intent="purchase" data-whatsapp-placement="shop_digital_product"
                                         @endif>
-                                        <a class="unified-card__media" href="{{ $productUrl }}"
+                                        <a class="unified-card__media" href="{{ $productUrl }}" aria-label="{{ $displayName }}"
                                             @if ($target !== '') target="{{ $target }}" @endif
                                             @if ($rel !== '') rel="{{ $rel }}" @endif>
-                                            @if (data_get($product, 'image'))
+                                            @if ($productType === 'affiliate')
+                                                <svg viewBox="0 0 320 200" width="320" height="200" aria-hidden="true" focusable="false">
+                                                    <rect x="40" y="20" width="240" height="140" rx="12" fill="#132e44" />
+                                                    <rect x="52" y="32" width="216" height="116" rx="5" fill="#86d8cd" />
+                                                    <path d="M160 160V184M120 184H200" stroke="#132e44" stroke-width="10" stroke-linecap="round" />
+                                                </svg>
+                                            @elseif (data_get($product, 'image'))
                                                 <x-product-picture :image="data_get($product, 'image_sources', data_get($product, 'image'))"
                                                     :alt="$displayName"
                                                     sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1199px) 45vw, 300px" />

@@ -31,6 +31,10 @@ class GenerateWebpImage implements ShouldQueue, ShouldBeUnique
 
     public function handle(): void
     {
+        if (strtolower((string) parse_url($this->imageUrl, PHP_URL_HOST)) === 'image.tmdb.org') {
+            return;
+        }
+
         $fullPath = public_path($this->webpPath);
         $dir      = dirname($fullPath);
 

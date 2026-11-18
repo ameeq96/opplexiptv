@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'What does Opplex IPTV look like on a device?',
-                        'answer' => 'It looks just like a regular streaming app. You\'ll see a home screen with sections for live channels, movies, and series. On a Smart TV, it fills the full screen. On a phone,e it\'s laid out like a mobile app. The screenshots on this page show what the interface looks like across different devices.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'On Samsung TV'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'On Mobile Phone'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Front Page Interface'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Movies Section Interface'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Live Channels Section Interface'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Movie Play Section Interface'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Live News Section Interface'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Application Settings Section Interface'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Playing Series Interface'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Series Section Interface'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'On-Screen Settings Interface'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Series Playlist Section Interface'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Some Main Devices'],
-                        ],
+                        'answer' => 'The layout depends on the player and device you choose. A player may organize live channels, movies and series into separate sections, with controls adapted for a television or phone. Check the selected player\'s current instructions for its actual menus.',
                     ],
                     [
                         'question' => 'Is Opplex IPTV available in my country?',

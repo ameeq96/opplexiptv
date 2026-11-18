@@ -400,22 +400,13 @@
                 @unless ($isMobile)
                     <div class="unlimited-showcase__media" aria-hidden="true">
                         <div class="unlimited-showcase__main">
-                            <img src="{{ asset('images/resource/network-4.webp') }}" alt="{{ __('document_ui.home.network_main_alt') }}"
-                                loading="lazy" decoding="async" width="396" height="527" />
-                        </div>
-                        <div class="unlimited-showcase__screen">
-                            <img src="{{ asset('images/resource/network-5.webp') }}" alt="{{ __('document_ui.home.network_screen_alt') }}"
-                                loading="lazy" decoding="async" width="312" height="173" />
-                        </div>
-                        <div class="unlimited-showcase__person-wrap">
-                            <div class="unlimited-showcase__person">
-                                <img src="{{ asset('images/resource/network-3.webp') }}" alt="{{ __('document_ui.home.network_person_alt') }}"
-                                    loading="lazy" decoding="async" width="345" height="285" />
-                            </div>
-                        </div>
-                        <div class="unlimited-showcase__signal">
-                            <img src="{{ asset('images/icons/service-4.webp') }}" alt="" aria-hidden="true"
-                                loading="lazy" decoding="async" width="80" height="70" />
+                            <svg viewBox="0 0 396 527" width="396" height="527" aria-hidden="true" focusable="false"
+                                style="width: 100%; height: 100%;">
+                                <rect width="396" height="527" rx="28" fill="#132e44" />
+                                <rect x="28" y="112" width="340" height="228" rx="18" fill="#1e5162" />
+                                <path d="M168 164 260 226 168 288Z" fill="#86d8cd" />
+                                <path d="M198 340V396M132 396H264" fill="none" stroke="#86d8cd" stroke-width="14" stroke-linecap="round" />
+                            </svg>
                         </div>
                     </div>
                 @endunless

@@ -107,25 +107,25 @@ return [
             'items' => [
                 [
                     'title' => 'Movies Hollywood, Bollywood and Beyond',
-                    'text' => "The movie section covers all major genres: action, thriller, drama, comedy, horror, sci-fi, romance, and documentary. Hollywood blockbusters sit alongside Bollywood releases, European cinema, and international titles. New releases are added regularly; you won't find yourself stuck rewatching the same ten films.",
+                    'text' => 'For a film enquiry, provide its title and release year. Confirm availability for your plan and region before ordering.',
                 ],
                 [
                     'title' => 'Series Current Shows and Classic TV',
-                    'text' => "From ongoing US and UK series to older shows you've been meaning to catch up on, the series library is updated as new episodes air. Think prestige dramas, crime shows, comedies, reality, and international productions, all in one place without needing five separate streaming subscriptions.",
+                    'text' => 'Confirm the season and episode you need. New broadcasts elsewhere do not establish that your plan includes them.',
                 ],
                 [
                     'title' => 'Cartoons Something for the Whole Household',
-                    'text' => "A dedicated cartoon section covers animated content for kids and families. If you've got children at home, this means the whole family gets what they want from a single Opplex subscription.",
+                    'text' => 'Check the exact title, language and age suitability. A category label alone does not confirm content or viewing permissions.',
                 ],
             ],
         ],
         'how_to_watch' => [
             'heading' => 'How to Browse and Watch Movies on Opplex',
-            'intro' => "VOD is built into every subscription; there's nothing extra to activate. Once you're logged in to your IPTV app:",
+            'intro' => 'Confirm the on-demand access and activation terms of your selected plan. Available controls depend on the compatible player:',
             'steps' => [
                 'Open the Movies, Series, or Cartoons tab from the app home screen',
                 'Browse by genre or use the search bar to find a title by name',
-                'Tap to play content loads in seconds',
+                'Choose an available title; loading time depends on its source, your connection and device.',
                 'Pause, rewind, and fast-forward just like any regular streaming app',
             ],
             'devices' => 'It works the same way on Firestick, Smart TV, Android TV box, Android and iOS phones, MAG devices, and Windows or Mac via any supported IPTV player.',
@@ -170,12 +170,12 @@ return [
                     'answer' => 'Send support the title and, for a series, the season and episode. We can check availability; a request does not guarantee that content will be added or provide a release date.',
                 ],
                 [
-                    'question' => 'Is the content the same quality as Netflix or Prime Video?',
-                    'answer' => "The source quality varies by title, as on any streaming service. Many titles are in Full HD or 4K. Some older content is in SD. If picture quality matters for a specific film, message us first and we'll confirm what's available.",
+                    'question' => 'What picture quality is available?',
+                    'answer' => 'Quality varies by title and source. Confirm the specific video format, audio and subtitles before ordering; device specifications alone do not confirm the available content quality.',
                 ],
                 [
                     'question' => 'Does VOD access cost anything extra?',
-                    'answer' => "No. The complete movie and series library is included in every Opplex subscription from day one. There's no VOD add-on, no content tier, and no extra charge; it's all part of the same plan.",
+                    'answer' => 'Check the selected provider’s written plan details, on-demand inclusions, separate player fees and total price before ordering. Do not assume every plan includes the same content or all access without extra charges.',
                 ],
             ],
         ],
@@ -277,7 +277,7 @@ return [
         'hero' => [
             'eyebrow' => 'Everything you need to get set up and streaming',
             'heading' => 'Streaming Devices, Accessories, and Digital Subscriptions | All in One Place',
-            'text' => "The Opplex shop has two things: hardware that makes IPTV streaming better, and digital subscriptions at prices you won't find retail. Affiliate devices link straight to Amazon. Digital products like Netflix, Prime Video, HBO Max, and NordVPN are available at competitive rates. Tap Buy Now and complete your order on WhatsApp.",
+            'text' => 'Browse streaming devices through affiliate links to Amazon and review the digital products currently listed in this shop. Check the product details and contact support on WhatsApp before ordering.',
             'note' => 'Already have a device and just need Opplex? Head to the Packages page instead.',
             'devices' => 'Browse Devices',
             'digital' => 'View Digital Products',
@@ -297,9 +297,6 @@ return [
                 'B00SFSU53G' => ['label' => 'Mounting Dream TV Wall Mount (32 to 65 inches, MD2380)', 'text' => "is a full-motion mount with swivel and tilt; it holds up to 99 lbs and covers most modern TV sizes. VESA 400x400 compatible. Useful if you're tidying up a room or mounting in a spot where the viewing angle isn't straight on."],
             ],
             'digital' => [
-                'netflix' => ['price_label' => '(from $2.29):', 'text' => 'Standard Netflix access at a rate well below retail. Same content as a regular subscription. Complete your order via WhatsApp after clicking Buy Now.'],
-                'prime-video' => ['price_label' => '(from $1.54):', 'text' => 'Prime Video at a discounted rate. Access the full Prime Video library, same as a standard subscription, at a better price. Order through WhatsApp.'],
-                'hbo-max-premium' => ['price_label' => '(from $1.89):', 'text' => 'Full HBO Max Premium access, including all Max Originals and licensed content. Message us on WhatsApp after purchase to get your details.'],
                 'nordvpn' => ['price_label' => '(from $1.89)', 'text' => "Useful if you want extra privacy while streaming or need to access content that's region-locked in your country. NordVPN is one of the more reliable VPN options available. Order via WhatsApp."],
             ],
         ],
@@ -316,7 +313,7 @@ return [
         ],
         'digital_orders' => [
             'heading' => 'How Digital Product Orders Work',
-            'intro' => "Digital subscriptions like Netflix, Prime Video, HBO Max, and NordVPN don't go through standard checkout. Here's how to order:",
+            'intro' => 'Orders for the listed digital products are arranged through WhatsApp instead of the standard checkout. Here is how to enquire:',
             'steps' => [
                 'Tap the Buy Now button on the product card',
                 'It opens a WhatsApp chat with us',

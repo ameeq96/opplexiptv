@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'Kijk IPTV-films en series in HD & 4K - Opplex IPTV',
         'description' => 'Bekijk informatie over films en series bij Opplex IPTV. Controleer titelbeschikbaarheid, je gekozen abonnement en apparaateisen voordat je je abonneert.',
-        'keywords' => 'iptv smart player, xtreme hd iptv, iptv films, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
+        'keywords' => 'iptv smart player, xtreme hd iptv, iptv films, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'Beste IPTV-pakketten met gratis proefperiode | 4K',

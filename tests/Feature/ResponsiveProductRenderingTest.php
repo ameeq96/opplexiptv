@@ -23,10 +23,10 @@ class ResponsiveProductRenderingTest extends TestCase
             ->firstWhere('id', $product->id);
 
         $this->assertIsArray($item);
-        $this->assertSame(asset('images/digital-products/netflix.webp'), $item['image']);
+        $this->assertSame(asset('images/digital-products/nordvpn.webp'), $item['image']);
         $this->assertSame($item['image'], $item['image_sources']['src']);
-        $this->assertStringContainsString('netflix-webp-320.avif 320w', $item['image_sources']['avif_srcset']);
-        $this->assertStringContainsString('netflix-webp-960.webp 960w', $item['image_sources']['webp_srcset']);
+        $this->assertStringContainsString('nordvpn-webp-320.avif 320w', $item['image_sources']['avif_srcset']);
+        $this->assertStringContainsString('nordvpn-webp-960.webp 960w', $item['image_sources']['webp_srcset']);
     }
 
     public function test_active_product_share_uses_modern_sources_and_original_fallback(): void
@@ -41,8 +41,8 @@ class ResponsiveProductRenderingTest extends TestCase
 
         $this->assertStringContainsString('<picture class="product-picture">', $html);
         $this->assertTrue(strpos($html, 'type="image/avif"') < strpos($html, 'type="image/webp"'));
-        $this->assertStringContainsString('netflix-webp-320.avif 320w', $html);
-        $this->assertStringContainsString('src="' . asset('images/digital-products/netflix.webp') . '"', $html);
+        $this->assertStringContainsString('nordvpn-webp-320.avif 320w', $html);
+        $this->assertStringContainsString('src="' . asset('images/digital-products/nordvpn.webp') . '"', $html);
     }
 
     public function test_active_home_and_shop_cards_render_through_the_picture_component(): void
@@ -61,16 +61,14 @@ class ResponsiveProductRenderingTest extends TestCase
 
         $home = $this->get('/iptv-home');
         $home->assertOk();
-        $this->assertMatchesRegularExpression(
-            '/<picture class="product-picture">.*?src="[^"]*\/images\/shop\/B08CRV62C4\.webp"/s',
-            $home->getContent()
-        );
+        $home->assertSeeText('Android TV Box');
+        $this->assertStringNotContainsString('/images/shop/B08CRV62C4.webp', $home->getContent());
 
         Cache::flush();
         $shop = $this->get('/store');
         $shop->assertOk();
         $this->assertMatchesRegularExpression(
-            '/<picture class="product-picture">.*?netflix-webp-320\.avif 320w.*?src="[^"]*\/images\/digital-products\/netflix\.webp"/s',
+            '/<picture class="product-picture">.*?nordvpn-webp-320\.avif 320w.*?src="[^"]*\/images\/digital-products\/nordvpn\.webp"/s',
             $shop->getContent()
         );
     }
@@ -78,11 +76,11 @@ class ResponsiveProductRenderingTest extends TestCase
     private function digitalProduct(): DigitalProduct
     {
         return DigitalProduct::query()->create([
-            'title' => 'Netflix',
-            'slug' => 'netflix',
+            'title' => 'NordVPN',
+            'slug' => 'nordvpn',
             'price' => 3,
             'currency' => 'USD',
-            'image' => 'netflix.webp',
+            'image' => 'nordvpn.webp',
             'is_active' => true,
             'sort_order' => 1,
             'delivery_type' => 'manual',

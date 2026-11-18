@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'IPTV मूवीज़ और सीरीज़ देखें HD और 4K में - Opplex IPTV',
         'description' => 'Opplex IPTV पर फ़िल्मों और सीरीज़ की जानकारी देखें। सदस्यता से पहले शीर्षक की उपलब्धता, चुना प्लान और डिवाइस की ज़रूरतें जाँचें।',
-        'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
+        'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'Best IPTV पैकेजेज़ मुफ्त ट्रायल के साथ | 4K स्ट्रीमिंग',

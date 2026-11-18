@@ -127,18 +127,7 @@
 @endif
 @stack('preloads')
 
-@if ($routeName === 'home' && empty($isMobile) && !empty($displayMovies[0]['webp_image_url'] ?? null))
-    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
-    <link rel="preload" as="image" href="{{ $displayMovies[0]['webp_image_url'] }}" fetchpriority="high">
-@endif
 @if ($routeName === 'home')
-    <link rel="preload" as="image" href="{{ asset('images/resource/movie-night-tv-1024.webp') }}"
-        imagesrcset="{{ asset('images/resource/movie-night-tv-480.webp') }} 480w,
-            {{ asset('images/resource/movie-night-tv-720.webp') }} 720w,
-            {{ asset('images/resource/movie-night-tv-1024.webp') }} 1024w,
-            {{ asset('images/resource/movie-night-tv-1280.webp') }} 1280w"
-        imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"
-        fetchpriority="high">
     {{-- Discover homepage fonts before parsing the large inline critical-style block. --}}
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-regular.woff2') }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ Vite::asset('public/fonts/poppins/poppins-v21-latin-700.woff2') }}" as="font" type="font/woff2" crossorigin>
@@ -146,9 +135,6 @@
     <link rel="preload" href="{{ Vite::asset('public/fonts/fontawesome-webfont.woff2') }}?v=4.3.0" as="font" type="font/woff2" crossorigin fetchpriority="low">
     <link rel="preload" href="{{ Vite::asset('public/fonts/flaticon.woff') }}" as="font" type="font/woff" crossorigin media="(max-width: 767px)" fetchpriority="low">
     <link rel="preload" href="{{ Vite::asset('public/fonts/Linearicons-Free.woff2') }}" as="font" type="font/woff2" crossorigin media="(min-width: 768px)" fetchpriority="low">
-@endif
-@if ($isMoviesRoute)
-    <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 @endif
 
 <title>{{ $metaTitle }}</title>

@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'Assista Filmes e Séries IPTV em HD & 4K - Opplex IPTV',
         'description' => 'Consulte informações sobre filmes e séries na Opplex IPTV. Confirme disponibilidade do título, plano e requisitos do dispositivo antes de assinar.',
-        'keywords' => 'iptv smart player, xtreme hd iptv, filmes iptv, Netflix iptv, aroma iptv, iptv ao vivo 4k, iptv box',
+        'keywords' => 'iptv smart player, xtreme hd iptv, filmes iptv, aroma iptv, iptv ao vivo 4k, iptv box',
     ],
     'packages' => [
         'title' => 'Melhores Pacotes IPTV com Teste Gratuito | Streaming 4K',

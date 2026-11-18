@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'À quoi ressemble Opplex IPTV sur un appareil ?',
-                        'answer' => 'L’interface ressemble à celle d’une application de streaming classique. L’écran d’accueil comporte des sections pour les chaînes en direct, les films et les séries. Sur une Smart TV, elle occupe tout l’écran. Sur un téléphone, elle est présentée comme une application mobile. Les captures de cette page montrent l’apparence de l’interface sur différents appareils.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Sur un téléviseur Samsung'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'Sur un téléphone mobile'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Interface de la page d’accueil'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interface de la section Films'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interface de la section Chaînes en direct'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interface de lecture des films'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interface de la section Actualités en direct'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interface de la section Paramètres de l’application'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interface de lecture des séries'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Interface de la section Séries'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'Interface des paramètres à l’écran'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Interface de la section Liste de lecture des séries'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Quelques appareils principaux'],
-                        ],
+                        'answer' => 'La présentation dépend du lecteur et de l’appareil choisis. Un lecteur peut répartir les chaînes en direct, les films et les séries dans des sections distinctes, avec des commandes adaptées au téléviseur ou au téléphone. Consultez la documentation actuelle du lecteur choisi pour connaître ses menus.',
                     ],
                     [
                         'question' => 'Opplex IPTV est-il disponible dans mon pays ?',

@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'ڈیوائس پر Opplex IPTV کیسا نظر آتا ہے؟',
-                        'answer' => 'یہ عام اسٹریمنگ ایپ جیسا نظر آتا ہے۔ ہوم اسکرین پر لائیو چینلز، فلموں اور سیریز کے حصے ہوتے ہیں۔ Smart TV پر پوری اسکرین بھرتا ہے۔ فون پر موبائل ایپ کی طرح ترتیب پاتا ہے۔ اس صفحے کے اسکرین شاٹس مختلف ڈیوائسز پر انٹرفیس دکھاتے ہیں۔',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Samsung TV پر'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'موبائل فون پر'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'مرکزی صفحے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'فلموں کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'لائیو چینلز کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'فلم چلانے کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'لائیو خبروں کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'ایپلی کیشن ترتیبات کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'سیریز چلانے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'سیریز کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'آن اسکرین ترتیبات کا انٹرفیس'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'سیریز پلے لسٹ کے حصے کا انٹرفیس'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'چند اہم ڈیوائسز'],
-                        ],
+                        'answer' => 'ترتیب آپ کے منتخب کردہ پلیئر اور ڈیوائس پر منحصر ہے۔ پلیئر میں لائیو چینلز، فلموں اور سیریز کے الگ حصے ہو سکتے ہیں، جبکہ کنٹرول ٹی وی یا فون کے مطابق ہوتے ہیں۔ اصل مینو جاننے کے لیے منتخب پلیئر کی موجودہ ہدایات دیکھیں۔',
                     ],
                     [
                         'question' => 'کیا Opplex IPTV میرے ملک میں دستیاب ہے؟',

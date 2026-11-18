@@ -97,8 +97,8 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => 'Milhares de filmes e séries em HD e 4K em dispositivos suportados',
-            'text' => 'A sua subscrição Opplex inclui uma biblioteca completa a pedido desde o primeiro dia. Sem custo adicional nem pacote VOD separado para comprar. Explore filmes, séries e desenhos animados ou procure algo específico. Novos conteúdos são adicionados regularmente e, se não encontrar um título, basta perguntar-nos pelo WhatsApp.',
+            'heading' => 'Filmes e séries Opplex IPTV: confirme a disponibilidade antes de escolher um plano',
+            'text' => 'Antes de encomendar, peça ao apoio que confirme o título, a temporada, o áudio, as legendas e o formato disponíveis no plano escolhido. Uma referência ou data de lançamento noutro local não confirma a disponibilidade.',
             'plans' => 'Ver planos',
             'trial' => 'Iniciar teste gratuito',
         ],
@@ -107,25 +107,25 @@ return [
             'items' => [
                 [
                     'title' => 'Filmes: Hollywood, Bollywood e muito mais',
-                    'text' => 'A secção de filmes abrange todos os principais géneros: ação, suspense, drama, comédia, terror, ficção científica, romance e documentários. Os êxitos de Hollywood estão ao lado de lançamentos de Bollywood, cinema europeu e títulos internacionais. Novos lançamentos são adicionados regularmente; não terá de rever sempre os mesmos dez filmes.',
+                    'text' => 'Para perguntar por um filme, indique o título e o ano de lançamento. Confirme a disponibilidade para o seu plano e região antes de encomendar.',
                 ],
                 [
                     'title' => 'Séries: programas atuais e clássicos de TV',
-                    'text' => 'Desde séries atuais dos EUA e Reino Unido até programas antigos que queria acompanhar, a biblioteca de séries é atualizada à medida que novos episódios são transmitidos. Dramas de prestígio, séries policiais, comédias, reality shows e produções internacionais estão todos num único lugar, sem precisar de cinco subscrições de streaming diferentes.',
+                    'text' => 'Confirme a temporada e o episódio pretendidos. A emissão de novos episódios noutro local não comprova a inclusão no seu plano.',
                 ],
                 [
                     'title' => 'Desenhos animados: algo para toda a família',
-                    'text' => 'Uma secção dedicada a desenhos animados reúne conteúdos de animação para crianças e famílias. Se tem crianças em casa, toda a família encontra o que pretende com uma única subscrição Opplex.',
+                    'text' => 'Verifique o título exato, o idioma e a adequação à idade. Uma categoria, por si só, não confirma o conteúdo nem as permissões de visualização.',
                 ],
             ],
         ],
         'how_to_watch' => [
             'heading' => 'Como explorar e ver filmes na Opplex',
-            'intro' => 'A VOD está incluída em todas as subscrições; não existe nada adicional para ativar.',
+            'intro' => 'Confirme o acesso a pedido e as condições de ativação do plano escolhido. Os controlos disponíveis dependem do leitor compatível:',
             'steps' => [
                 'Abra o separador Filmes, Séries ou Desenhos animados no ecrã inicial da aplicação',
                 'Explore por género ou utilize a barra de pesquisa para encontrar um título pelo nome',
-                'Toque para reproduzir: o conteúdo carrega em segundos',
+                'Escolha um título disponível; o carregamento depende da fonte, da ligação e do dispositivo.',
                 'Coloque em pausa, retroceda e avance rapidamente, tal como em qualquer aplicação de streaming',
             ],
             'devices' => 'Funciona da mesma forma em Firestick, Smart TV, Android TV box, telemóveis Android e iOS, dispositivos MAG e Windows ou Mac através de qualquer leitor IPTV suportado.',
@@ -155,7 +155,7 @@ return [
                 ],
                 [
                     'question' => 'Existem novos lançamentos disponíveis?',
-                    'answer' => 'Sim. Novos filmes e episódios de séries são adicionados regularmente. Alguns títulos aparecem poucos dias depois do lançamento nas principais plataformas. Se procurar algo específico que ainda não esteja disponível, envie-nos uma mensagem pelo WhatsApp e daremos prioridade.',
+                    'answer' => 'Antes de comprar, peça ao apoio que confirme o título, a temporada, o áudio e as legendas. Um lançamento noutro local não confirma a disponibilidade.',
                 ],
                 [
                     'question' => 'Posso transferir conteúdos para ver offline?',
@@ -167,15 +167,15 @@ return [
                 ],
                 [
                     'question' => 'Posso pedir um título que não esteja na biblioteca?',
-                    'answer' => 'Sim. Envie-nos o nome do filme ou série pelo WhatsApp; verificaremos a disponibilidade e adicionaremos quando for possível. A maioria dos pedidos é tratada num ou dois dias.',
+                    'answer' => 'Envie o título exato e, no caso de séries, a temporada e o episódio. Um pedido não garante disponibilidade nem uma data de inclusão.',
                 ],
                 [
-                    'question' => 'O conteúdo tem a mesma qualidade da Netflix ou Prime Video?',
-                    'answer' => 'A qualidade da fonte varia conforme o título, tal como em qualquer serviço de streaming. Muitos títulos estão em Full HD ou 4K. Alguns conteúdos antigos estão em SD. Se a qualidade de imagem for importante num filme específico, envie-nos primeiro uma mensagem e confirmaremos o que está disponível.',
+                    'question' => 'Que qualidade de imagem está disponível?',
+                    'answer' => 'A qualidade varia consoante o título e a fonte. Confirme o formato de vídeo, o áudio e as legendas antes de encomendar; as especificações do dispositivo não confirmam, por si só, a qualidade do conteúdo disponível.',
                 ],
                 [
                     'question' => 'O acesso à VOD tem algum custo adicional?',
-                    'answer' => 'Não. A biblioteca completa de filmes e séries está incluída em todas as subscrições Opplex desde o primeiro dia. Sem extra VOD, níveis de conteúdo ou custos adicionais; tudo faz parte do mesmo plano.',
+                    'answer' => 'Antes de encomendar, consulte as condições escritas do fornecedor e do plano escolhidos, os conteúdos a pedido incluídos, os custos separados do leitor e o preço total. Não presuma que todos os planos incluem o mesmo conteúdo ou todo o acesso sem encargos adicionais.',
                 ],
             ],
         ],
@@ -277,7 +277,7 @@ return [
         'hero' => [
             'eyebrow' => 'Tudo o que precisa para configurar e começar a ver',
             'heading' => 'Dispositivos de streaming, acessórios e subscrições digitais | Tudo num único lugar',
-            'text' => 'A loja Opplex oferece duas coisas: hardware que melhora o streaming IPTV e subscrições digitais a preços que não encontra no comércio. Os dispositivos afiliados ligam diretamente à Amazon. Produtos digitais como Netflix, Prime Video, HBO Max e NordVPN estão disponíveis a preços competitivos. Toque em Comprar agora e conclua o pedido pelo WhatsApp.',
+            'text' => 'Consulte os dispositivos de streaming através de ligações de afiliados para a Amazon e os produtos digitais atualmente apresentados nesta loja. Leia os detalhes do produto e contacte o apoio pelo WhatsApp antes de encomendar.',
             'note' => 'Já tem um dispositivo e precisa apenas da Opplex? Visite a página Pacotes.',
             'devices' => 'Explorar dispositivos',
             'digital' => 'Ver produtos digitais',
@@ -297,9 +297,6 @@ return [
                 'B00SFSU53G' => ['label' => 'Suporte de parede para TV Mounting Dream (32 a 65 polegadas, MD2380)', 'text' => 'Um suporte totalmente articulado com rotação e inclinação; suporta até 99 lbs e abrange a maioria dos tamanhos de televisão modernos. Compatível com VESA 400x400. Útil para organizar uma divisão ou montar a televisão num local onde o ângulo de visão não seja frontal.'],
             ],
             'digital' => [
-                'netflix' => ['price_label' => 'A partir de $2.29', 'text' => 'Acesso padrão à Netflix por um preço muito inferior ao de venda ao público. O mesmo conteúdo de uma subscrição normal. Conclua o pedido pelo WhatsApp depois de clicar em Comprar agora.'],
-                'prime-video' => ['price_label' => 'A partir de $1.54', 'text' => 'Prime Video a um preço reduzido. Aceda à biblioteca completa da Prime Video, tal como numa subscrição padrão, mas por um preço melhor. Faça o pedido pelo WhatsApp.'],
-                'hbo-max-premium' => ['price_label' => 'A partir de $1.89', 'text' => 'Acesso completo ao HBO Max Premium, incluindo todos os Max Originals e conteúdos licenciados. Envie-nos uma mensagem pelo WhatsApp após a compra para receber os seus dados.'],
                 'nordvpn' => ['price_label' => 'A partir de $1.89', 'text' => 'Útil para quem pretende maior privacidade durante o streaming ou precisa de aceder a conteúdo com bloqueio regional no seu país. A NordVPN é uma das opções de VPN mais fiáveis disponíveis. Faça o pedido pelo WhatsApp.'],
             ],
         ],
@@ -316,7 +313,7 @@ return [
         ],
         'digital_orders' => [
             'heading' => 'Como funcionam os pedidos de produtos digitais',
-            'intro' => 'Subscrições digitais como Netflix, Prime Video, HBO Max e NordVPN não utilizam o processo de pagamento padrão. Veja como fazer o pedido:',
+            'intro' => 'As encomendas dos produtos digitais apresentados são combinadas pelo WhatsApp em vez do processo de pagamento padrão. Saiba como pedir informações:',
             'steps' => [
                 'Toque no botão Comprar agora no cartão do produto',
                 'Será aberta uma conversa connosco no WhatsApp',

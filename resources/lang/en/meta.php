@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'Movies & Series Guide | Browse Titles on Opplex IPTV',
         'description' => 'Browse movie and series information on Opplex IPTV. Check current title availability, your selected plan and device requirements before subscribing.',
-        'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, iptv Netflix, aroma iptv, 4k live iptv, iptv box',
+        'keywords' => 'iptv smart player, xtreme hd iptv, iptv movies, aroma iptv, 4k live iptv, iptv box',
     ],
     'packages' => [
         'title' => 'Most In-Demand IPTV Subscription Service | Opplex Packages',

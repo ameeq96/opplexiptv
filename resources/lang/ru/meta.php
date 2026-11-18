@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'Смотрите фильмы и сериалы IPTV в HD и 4K - Opplex IPTV',
         'description' => 'Просмотрите сведения о фильмах и сериалах в Opplex IPTV. Уточните наличие нужного названия, тариф и требования устройства до подписки.',
-        'keywords' => 'iptv smart player, xtreme hd iptv, iptv фильмы, iptv Netflix, aroma iptv, 4k iptv онлайн, iptv приставка',
+        'keywords' => 'iptv smart player, xtreme hd iptv, iptv фильмы, aroma iptv, 4k iptv онлайн, iptv приставка',
     ],
     'packages' => [
         'title' => 'Лучшие IPTV пакеты с бесплатным тестом | 4K трансляции',

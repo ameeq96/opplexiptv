@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'Как Opplex IPTV выглядит на устройстве?',
-                        'answer' => 'Как обычное потоковое приложение. На главном экране есть разделы каналов в прямом эфире, фильмов и сериалов. На Smart TV интерфейс занимает весь экран, а на телефоне выглядит как мобильное приложение. Снимки экрана на этой странице показывают интерфейс на разных устройствах.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'На Samsung TV'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'На мобильном телефоне'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Интерфейс главной страницы'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Интерфейс раздела фильмов'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Интерфейс раздела каналов в прямом эфире'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Интерфейс воспроизведения фильма'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Интерфейс раздела новостей в прямом эфире'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Интерфейс раздела настроек приложения'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Интерфейс воспроизведения сериала'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Интерфейс раздела сериалов'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'Интерфейс экранных настроек'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Интерфейс раздела плейлистов сериалов'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Основные поддерживаемые устройства'],
-                        ],
+                        'answer' => 'Внешний вид зависит от выбранного проигрывателя и устройства. В проигрывателе могут быть отдельные разделы прямого эфира, фильмов и сериалов с управлением, адаптированным для телевизора или телефона. Конкретные меню уточняйте в актуальной инструкции выбранного проигрывателя.',
                     ],
                     [
                         'question' => 'Доступен ли Opplex IPTV в моей стране?',

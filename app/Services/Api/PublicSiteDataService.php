@@ -32,6 +32,12 @@ class PublicSiteDataService
         'activate', 'activate-info', 'terms-of-service', 'privacy-policy', 'refund-policy',
     ];
 
+    private const UNVERIFIED_STREAMING_PRODUCT_SLUGS = [
+        'netflix', 'prime-video', 'hbo-max-premium', 'crunchyroll-premium',
+        'youtube-premium', 'hulu', 'paramount-plus', 'curiosity-stream',
+        'jiocinema-with-vpn', 'hotstar', 'espn-plus', 'zee5-premium', 'sling-tv',
+    ];
+
     private const LANDING_BRANDS = [
         'trex' => ['name' => 'TREX IPTV', 'plans' => ['TREX IPTV - Yearly' => 12]],
         'opplex' => ['name' => 'Opplex iptv', 'plans' => [
@@ -222,10 +228,17 @@ class PublicSiteDataService
 
     private function localizedProducts(): \Illuminate\Support\Collection
     {
-        return $this->unifiedProducts->frontendProducts()->map(function (array $product): array {
-            $product['share_url'] = $this->pageUrl('products.share', ['type' => $product['type'], 'id' => $product['id']]);
-            return $product;
-        });
+        return $this->unifiedProducts->frontendProducts()
+            ->reject(static fn (array $product): bool => ($product['type'] ?? null) === 'digital'
+                && in_array((string) ($product['slug'] ?? $product['identifier'] ?? ''), self::UNVERIFIED_STREAMING_PRODUCT_SLUGS, true))
+            ->map(function (array $product): array {
+                if (($product['type'] ?? null) === 'affiliate') {
+                    $product['image'] = null;
+                    $product['image_sources'] = null;
+                }
+                $product['share_url'] = $this->pageUrl('products.share', ['type' => $product['type'], 'id' => $product['id']]);
+                return $product;
+            })->values();
     }
 
     public function product(string $type, int $id): array
@@ -242,6 +255,7 @@ class PublicSiteDataService
             $product = DigitalProduct::query()
                 ->where('id', $id)
                 ->where('is_active', true)
+                ->whereNotIn('slug', self::UNVERIFIED_STREAMING_PRODUCT_SLUGS)
                 ->firstOrFail();
 
             $name = $product->title;
@@ -269,8 +283,8 @@ class PublicSiteDataService
                 ->firstOrFail();
 
             $name = $product->translation()?->name ?: $product->name;
-            $imagePath = $product->image ? 'images/shop/' . $product->image : 'images/placeholder.webp';
-            $image = asset($imagePath);
+            $imagePath = null;
+            $image = null;
             $price = null;
             $actionUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
                 __('interface.product.affiliate_purchase_message', [
@@ -802,7 +816,7 @@ class PublicSiteDataService
             });
         }
 
-        $featured = $featuredQuery->orderByDesc('published_at')->first();
+        $featured = $this->suppressUnverifiedBlogCovers($featuredQuery->orderByDesc('published_at')->first());
         $featuredCoverImage = $featured?->cover_image
             ? $coverImages->featured($featured->cover_image)
             : null;
@@ -838,6 +852,7 @@ class PublicSiteDataService
         }
 
         $blogs = $blogsQuery->orderByDesc('published_at')->paginate(12)->withQueryString();
+        $blogs->setCollection($blogs->getCollection()->map(fn (Blog $blog) => $this->suppressUnverifiedBlogCovers($blog)));
 
         $categories = BlogCategory::query()
             ->with(['translations' => function ($q) use ($locale) {
@@ -892,7 +907,9 @@ class PublicSiteDataService
             return ['redirect_url' => $target];
         }
 
-        $blog = Blog::with(['translations', 'author'])->forSite('main')->findOrFail($translation->blog_id);
+        $blog = $this->suppressUnverifiedBlogCovers(
+            Blog::with(['translations', 'author'])->forSite('main')->findOrFail($translation->blog_id)
+        );
 
         if ($blog->status !== 'published' || ($blog->published_at && $blog->published_at->isFuture())) {
             abort(404);
@@ -915,7 +932,8 @@ class PublicSiteDataService
             }])
             ->orderByDesc('published_at')
             ->limit(3)
-            ->get();
+            ->get()
+            ->map(fn (Blog $blog) => $this->suppressUnverifiedBlogCovers($blog));
 
         $pageMetaTitle = $currentTranslation->seo_title ?: $currentTranslation->title;
         $pageMetaDescription = $currentTranslation->seo_description ?: Str::limit(strip_tags($currentTranslation->excerpt ?: $currentTranslation->content), 155);
@@ -982,6 +1000,60 @@ class PublicSiteDataService
             'pageOgDescription',
             'jsonLd'
         );
+    }
+
+    private function suppressUnverifiedBlogCovers(?Blog $blog): ?Blog
+    {
+        if ($blog === null) {
+            return null;
+        }
+
+        $isUnverifiedImage = static function ($image): bool {
+            if (!is_string($image)) {
+                return false;
+            }
+            $path = ltrim((string) parse_url($image, PHP_URL_PATH), '/');
+            $path = str_starts_with($path, 'storage/') ? substr($path, 8) : $path;
+            return in_array($path, [
+                'blogs/0wmReYEoRa3kQ7Ig6alMQshVPLovXBTt8C6mA0TG.jpg',
+                'blogs/izN5fgSPAT26N74Z6BrxyOZWxC5wmPq2BzfDMPR4.jpg',
+                'blogs/v5Fg96cMN7YWRz9ZAVlXhnl32B6d1k1hmSm9J9Rv.jpg',
+            ], true);
+        };
+        $sanitizeSchema = static function (array $schema) use (&$sanitizeSchema, $isUnverifiedImage): array {
+            $isList = array_is_list($schema);
+            foreach ($schema as $key => $value) {
+                if ($isUnverifiedImage($value)) {
+                    unset($schema[$key]);
+                } elseif (is_array($value)) {
+                    if (in_array('ImageObject', (array) ($value['@type'] ?? []), true)
+                        && ($isUnverifiedImage($value['url'] ?? null) || $isUnverifiedImage($value['contentUrl'] ?? null))) {
+                        unset($schema[$key]);
+                    } else {
+                        $schema[$key] = $sanitizeSchema($value);
+                    }
+                }
+            }
+            return $isList ? array_values($schema) : $schema;
+        };
+
+        $blog = clone $blog;
+        if ($isUnverifiedImage($blog->cover_image)) {
+            $blog->cover_image = null;
+        }
+        if ($blog->relationLoaded('translations')) {
+            $blog->setRelation('translations', $blog->translations->map(static function (BlogTranslation $translation) use ($isUnverifiedImage, $sanitizeSchema): BlogTranslation {
+                $translation = clone $translation;
+                if ($isUnverifiedImage($translation->og_image)) {
+                    $translation->og_image = null;
+                }
+                if (is_array($translation->schema_json)) {
+                    $translation->schema_json = $sanitizeSchema($translation->schema_json);
+                }
+                return $translation;
+            }));
+        }
+        return $blog;
     }
 
     private function packageServiceName(Package $package): string

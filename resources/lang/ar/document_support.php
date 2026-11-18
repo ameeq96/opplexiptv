@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'كيف تبدو Opplex IPTV على الجهاز؟',
-                        'answer' => 'تبدو مثل أي تطبيق بث عادي. سترى شاشة رئيسية تضم أقسامًا للقنوات المباشرة والأفلام والمسلسلات. تملأ الشاشة بالكامل على Smart TV، وتُعرض كتطبيق جوال على الهاتف. توضح لقطات الشاشة في هذه الصفحة شكل الواجهة على أجهزة مختلفة.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'على تلفزيون Samsung'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'على هاتف محمول'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'واجهة الصفحة الرئيسية'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'واجهة قسم الأفلام'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'واجهة قسم القنوات المباشرة'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'واجهة تشغيل الأفلام'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'واجهة قسم الأخبار المباشرة'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'واجهة قسم إعدادات التطبيق'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'واجهة تشغيل المسلسلات'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'واجهة قسم المسلسلات'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'واجهة الإعدادات على الشاشة'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'واجهة قسم قائمة تشغيل المسلسلات'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'بعض الأجهزة الرئيسية'],
-                        ],
+                        'answer' => 'يعتمد شكل الواجهة على المشغّل والجهاز اللذين تختارهما. قد ينظّم المشغّل القنوات المباشرة والأفلام والمسلسلات في أقسام منفصلة، مع أدوات تحكم ملائمة للتلفزيون أو الهاتف. راجع التعليمات الحالية للمشغّل المختار للتعرّف على قوائمه الفعلية.',
                     ],
                     [
                         'question' => 'هل تتوفر Opplex IPTV في بلدي؟',

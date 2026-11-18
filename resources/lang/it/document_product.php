@@ -97,8 +97,8 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => 'Migliaia di film e serie — Streaming in HD e 4K sui dispositivi compatibili più diffusi',
-            'text' => 'Il tuo abbonamento Opplex comprende l’accesso ai contenuti on demand disponibili dopo l’attivazione. Nessun costo aggiuntivo e nessun pacchetto VOD separato da acquistare. La raccolta viene aggiornata regolarmente; la disponibilità varia in base alla sorgente e alla regione. Se cerchi un titolo specifico, chiedici di verificarlo su WhatsApp.',
+            'heading' => 'Film e serie Opplex IPTV: verifica la disponibilità prima di scegliere un piano',
+            'text' => 'Prima di ordinare, chiedi all’assistenza di confermare titolo, stagione, audio, sottotitoli e formato disponibili per il piano scelto. Una scheda o una data di uscita altrove non ne conferma la disponibilità.',
             'plans' => 'Visualizza i piani',
             'trial' => 'Inizia la prova gratuita',
         ],
@@ -107,25 +107,25 @@ return [
             'items' => [
                 [
                     'title' => 'Film — Hollywood, Bollywood e non solo',
-                    'text' => 'La sezione film comprende tutti i principali generi: azione, thriller, dramma, commedia, horror, fantascienza, romanticismo e documentari. I blockbuster di Hollywood sono affiancati dalle uscite di Bollywood, dal cinema europeo e dai titoli internazionali. Le nuove uscite vengono aggiunte regolarmente: non dovrai riguardare sempre gli stessi dieci film.',
+                    'text' => 'Per informazioni su un film, indica titolo e anno di uscita. Conferma la disponibilità per il tuo piano e la tua regione prima di ordinare.',
                 ],
                 [
                     'title' => 'Serie — Programmi attuali e classici della TV',
-                    'text' => 'Dalle serie statunitensi (US) e britanniche (UK) ancora in corso ai programmi meno recenti che desideravi recuperare, la raccolta di serie viene aggiornata regolarmente. Comprende drammi, serie poliziesche, commedie, reality e produzioni internazionali; la disponibilità di episodi e titoli varia in base alla sorgente e alla regione.',
+                    'text' => 'Conferma la stagione e l’episodio che cerchi. La trasmissione di nuovi episodi altrove non dimostra che siano inclusi nel tuo piano.',
                 ],
                 [
                     'title' => 'Cartoni animati — Qualcosa per tutta la famiglia',
-                    'text' => 'Una sezione dedicata ai cartoni animati raccoglie contenuti per bambini e famiglie. Se hai figli a casa, tutta la famiglia trova ciò che desidera con un unico abbonamento Opplex.',
+                    'text' => 'Controlla il titolo preciso, la lingua e l’idoneità per età. Una categoria da sola non conferma i contenuti o i diritti di visione.',
                 ],
             ],
         ],
         'how_to_watch' => [
             'heading' => 'Come esplorare e guardare film su Opplex',
-            'intro' => 'Il VOD è integrato in ogni abbonamento: non devi attivare nulla in più. Dopo aver effettuato l’accesso alla tua app IPTV:',
+            'intro' => 'Conferma l’accesso on demand e le condizioni di attivazione del piano scelto. I comandi disponibili dipendono dal lettore compatibile:',
             'steps' => [
                 'Apri la scheda Film, Serie o Cartoni animati dalla schermata iniziale dell’app',
                 'Esplora per genere oppure usa la barra di ricerca per trovare un titolo per nome',
-                'Tocca per riprodurre — il contenuto viene caricato in pochi secondi',
+                'Scegli un titolo disponibile; il caricamento dipende dalla sorgente, dalla connessione e dal dispositivo.',
                 'Metti in pausa, riavvolgi e vai avanti velocemente proprio come in qualsiasi normale app di streaming',
             ],
             'devices' => 'Funziona allo stesso modo su Firestick, Smart TV, box Android TV, telefoni Android e iOS, dispositivi MAG e Windows o Mac tramite qualsiasi lettore IPTV supportato.',
@@ -155,7 +155,7 @@ return [
                 ],
                 [
                     'question' => 'Sono disponibili le nuove uscite?',
-                    'answer' => 'Nuovi film ed episodi delle serie vengono aggiunti regolarmente quando disponibili. La disponibilità e i tempi variano in base alla sorgente e alla regione. Se cerchi qualcosa di specifico, scrivici su WhatsApp e verificheremo se è disponibile.',
+                    'answer' => 'Prima dell’acquisto, chiedi all’assistenza di confermare titolo, stagione, audio e sottotitoli. Un’uscita altrove non ne conferma la disponibilità.',
                 ],
                 [
                     'question' => 'Posso scaricare i contenuti per guardarli offline?',
@@ -167,15 +167,15 @@ return [
                 ],
                 [
                     'question' => 'Posso richiedere un titolo che non è presente nella raccolta?',
-                    'answer' => 'Sì. Scrivici su WhatsApp il nome del film o della serie: verificheremo la disponibilità e lo aggiungeremo, se possibile. La maggior parte delle richieste viene gestita entro uno o due giorni.',
+                    'answer' => 'Invia il titolo esatto e, per una serie, stagione ed episodio. Una richiesta non garantisce la disponibilità o una data di aggiunta.',
                 ],
                 [
-                    'question' => 'La qualità dei contenuti è uguale a quella di Netflix o Prime Video?',
-                    'answer' => 'La qualità della sorgente varia in base al titolo, come in qualsiasi servizio di streaming. Molti titoli sono disponibili in Full HD o 4K. Alcuni contenuti meno recenti sono in SD. Se per un film specifico la qualità dell’immagine è importante, scrivici prima e ti confermeremo cosa è disponibile.',
+                    'question' => 'Quale qualità video è disponibile?',
+                    'answer' => 'La qualità varia in base al titolo e alla sorgente. Conferma formato video, audio e sottotitoli prima di ordinare; le specifiche del dispositivo da sole non confermano la qualità dei contenuti disponibili.',
                 ],
                 [
                     'question' => 'L’accesso VOD comporta un costo aggiuntivo?',
-                    'answer' => 'No. L’accesso alla raccolta disponibile è incluso in ogni abbonamento Opplex dopo l’attivazione. Non serve un componente aggiuntivo VOD; la disponibilità dei titoli varia in base alla sorgente e alla regione.',
+                    'answer' => 'Prima di ordinare, controlla le condizioni scritte del fornitore e del piano scelti, i contenuti on demand inclusi, gli eventuali costi del lettore e il prezzo totale. Non presumere che tutti i piani includano gli stessi contenuti o ogni accesso senza costi aggiuntivi.',
                 ],
             ],
         ],
@@ -277,7 +277,7 @@ return [
         'hero' => [
             'eyebrow' => 'Tutto ciò che ti serve per configurare e iniziare lo streaming',
             'heading' => 'Dispositivi di streaming, accessori e abbonamenti digitali | Tutto in un unico posto',
-            'text' => 'Lo Shop Opplex offre due tipi di prodotti: hardware che migliora lo streaming IPTV e abbonamenti digitali a prezzi che non troverai nei normali negozi. I dispositivi affiliati rimandano direttamente ad Amazon. Prodotti digitali come Netflix, Prime Video, HBO Max e NordVPN sono disponibili a tariffe competitive. Tocca Acquista ora e completa l’ordine su WhatsApp.',
+            'text' => 'Consulta i dispositivi di streaming tramite i link affiliati ad Amazon e i prodotti digitali attualmente presenti in questo negozio. Leggi i dettagli del prodotto e contatta l’assistenza su WhatsApp prima di ordinare.',
             'note' => 'Hai già un dispositivo e ti serve solo Opplex? Vai invece alla pagina Pacchetti.',
             'devices' => 'Esplora i dispositivi',
             'digital' => 'Visualizza i prodotti digitali',
@@ -297,9 +297,6 @@ return [
                 'B00SFSU53G' => ['label' => 'Supporto da parete per TV Mounting Dream (da 32 a 65 pollici, MD2380)', 'text' => 'è un supporto completamente orientabile, inclinabile e girevole; regge fino a 99 lbs ed è adatto alla maggior parte dei televisori moderni. Compatibile con VESA 400x400. Utile per riordinare una stanza o montare la TV in un punto in cui l’angolo di visione non è frontale.'],
             ],
             'digital' => [
-                'netflix' => ['price_label' => '(da $2.29):', 'text' => 'Accesso Netflix Standard ai contenuti disponibili a una tariffa scontata. La disponibilità dipende dal servizio e dalla regione. Completa l’ordine tramite WhatsApp dopo aver cliccato su Acquista ora.'],
-                'prime-video' => ['price_label' => '(da $1.54):', 'text' => 'Accesso ai contenuti Prime Video disponibili a una tariffa scontata. La disponibilità dipende dal servizio e dalla regione. Ordina tramite WhatsApp.'],
-                'hbo-max-premium' => ['price_label' => '(da $1.89):', 'text' => 'Accesso ai contenuti HBO Max Premium disponibili, soggetto alla disponibilità del servizio e della regione. Dopo la conferma del pagamento, scrivici su WhatsApp per ricevere i dati durante l’orario di assistenza attivo.'],
                 'nordvpn' => ['price_label' => '(da $1.89)', 'text' => 'Utile se desideri maggiore privacy durante lo streaming o devi accedere a contenuti con restrizioni regionali nel tuo Paese. NordVPN è una delle opzioni VPN più affidabili disponibili. Ordina tramite WhatsApp.'],
             ],
         ],
@@ -316,7 +313,7 @@ return [
         ],
         'digital_orders' => [
             'heading' => 'Come funzionano gli ordini di prodotti digitali',
-            'intro' => 'Gli abbonamenti digitali come Netflix, Prime Video, HBO Max e NordVPN non utilizzano il normale pagamento. Ecco come ordinare:',
+            'intro' => 'Gli ordini dei prodotti digitali elencati vengono concordati su WhatsApp anziché tramite il normale pagamento. Ecco come chiedere informazioni:',
             'steps' => [
                 'Tocca il pulsante Acquista ora sulla scheda del prodotto',
                 'Si aprirà una chat WhatsApp con noi',

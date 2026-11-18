@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'किसी डिवाइस पर Opplex IPTV कैसी दिखती है?',
-                        'answer' => 'यह सामान्य स्ट्रीमिंग ऐप जैसी दिखती है। होम स्क्रीन पर लाइव चैनल, फ़िल्में और सीरीज़ के सेक्शन मिलेंगे। Smart TV पर यह पूरी स्क्रीन भरती है। फ़ोन पर मोबाइल ऐप जैसा लेआउट है। इस पेज के स्क्रीनशॉट अलग-अलग डिवाइसों पर इंटरफ़ेस दिखाते हैं।',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Samsung TV पर'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'मोबाइल फ़ोन पर'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'मुख्य पेज इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'फ़िल्म सेक्शन इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'लाइव चैनल सेक्शन इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'फ़िल्म प्लेबैक इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'लाइव समाचार सेक्शन इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'ऐप सेटिंग सेक्शन इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'सीरीज़ प्लेबैक इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'सीरीज़ सेक्शन इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'ऑन-स्क्रीन सेटिंग इंटरफ़ेस'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'सीरीज़ प्लेलिस्ट सेक्शन इंटरफ़ेस'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'कुछ प्रमुख डिवाइस'],
-                        ],
+                        'answer' => 'लेआउट आपके चुने हुए प्लेयर और डिवाइस पर निर्भर करता है। किसी प्लेयर में लाइव चैनल, फ़िल्में और सीरीज़ अलग-अलग सेक्शन में हो सकते हैं, और नियंत्रण टीवी या फ़ोन के अनुसार होते हैं। वास्तविक मेन्यू जानने के लिए चुने हुए प्लेयर के मौजूदा निर्देश देखें।',
                     ],
                     [
                         'question' => 'क्या Opplex IPTV मेरे देश में उपलब्ध है?',

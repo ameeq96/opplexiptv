@@ -191,14 +191,22 @@ class EnglishDocumentPagesTest extends TestCase
         $response = $this->get('/store');
 
         $response->assertOk();
-        $response->assertSeeText('Android TV Box (4GB RAM, 32GB ROM, 6K, Wi-Fi 5.0, Bluetooth 5.0)');
-        $response->assertSeeText('Amazon Fire TV Stick 4K Max (Wi-Fi 6E)');
-        $response->assertSeeText('Roku Streaming Stick HD 2025');
-        $response->assertSeeText('Mounting Dream TV Wall Mount');
-        $response->assertSeeText('From $2.29');
-        $response->assertSeeText('From $1.54');
-        $response->assertSeeText('Full HBO Max Premium access');
-        $response->assertSeeText('NordVPN is one of the more reliable VPN options');
-        $response->assertDontSeeText('Extra Device 1');
+        $document = new \DOMDocument();
+        $this->assertTrue($document->loadHTML($response->getContent(), LIBXML_NONET | LIBXML_NOERROR | LIBXML_NOWARNING));
+        $xpath = new \DOMXPath($document);
+        $productNames = [];
+        foreach ($xpath->query('//h3[contains(@class, "unified-card__title")]/a') as $name) {
+            $productNames[] = trim(preg_replace('/\s+/u', ' ', $name->textContent));
+        }
+        $this->assertContains('Android TV Box (4GB RAM, 32GB ROM, 6K, Wi-Fi 5.0, Bluetooth 5.0)', $productNames);
+        $this->assertContains('Amazon Fire TV Stick 4K Max (Wi-Fi 6E)', $productNames);
+        $this->assertContains('Roku Streaming Stick HD 2025:', $productNames);
+        $this->assertContains('Mounting Dream TV Wall Mount (32 to 65 inches, MD2380)', $productNames);
+        $this->assertNotContains('Netflix', $productNames);
+        $this->assertNotContains('Prime Video', $productNames);
+        $this->assertNotContains('HBO Max Premium', $productNames);
+        $this->assertStringContainsString('NordVPN is one of the more reliable VPN options', $xpath->query('//main')->item(0)->textContent);
+        $this->assertContains('Extra Device 1', $productNames);
+        $this->assertNotContains('Extra Device 4', $productNames);
     }
 }

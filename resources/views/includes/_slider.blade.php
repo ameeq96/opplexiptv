@@ -47,9 +47,11 @@
 @else
     @php
         $locale = app()->getLocale();
-        $sliderMovies = collect($movies ?? [])
-            ->filter(static fn ($movie) => !empty($movie['webp_image_url']))
-            ->values();
+        $sliderMovies = collect([[
+            'webp_image_url' => null,
+            'safe_title' => $documentHero['heading'],
+            'safe_overview' => $documentHero['text'],
+        ]]);
 
         if ($isDocumentEnglish) {
             $sliderMovies = $sliderMovies->take(1)->values();
@@ -75,9 +77,9 @@
                                 data-native-slide
                                 data-bg="{{ $imageUrl }}"
                                 aria-hidden="{{ $index === 0 ? 'false' : 'true' }}"
-                                @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
+                                @if ($index === 0) style="background-color: #010c3a; @if ($imageUrl) background-image: url('{{ $imageUrl }}'); @endif" @endif>
 
-                                @if ($index === 0)
+                                @if ($index === 0 && $imageUrl)
                                     <x-product-picture :image="$imageSources"
                                         :alt="__('document_ui.home.poster_aria', ['title' => $movie['safe_title']])"
                                         aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
@@ -90,39 +92,6 @@
                                         <div class="inner-box slider-font {{ textAlignment($isRtl) }}">
                                             @if ($index === 0)
                                                 <h1>{{ $isDocumentEnglish ? $documentHero['heading'] : __('messages.home_hero_watch_live', ['title' => $movie['safe_title']]) }}</h1>
-                                                <span class="d-none">
-                                                    @switch($locale)
-                                                        @case('ar')
-                                                            شاهد {{ $movie['safe_title'] }} مباشرة بجودة HD
-                                                        @break
-                                                        @case('es')
-                                                            Mira {{ $movie['safe_title'] }} en vivo en HD
-                                                        @break
-                                                        @case('fr')
-                                                            Regardez {{ $movie['safe_title'] }} en direct en HD
-                                                        @break
-                                                        @case('hi')
-                                                            देखें {{ $movie['safe_title'] }} लाइव एचडी में
-                                                        @break
-                                                        @case('it')
-                                                            Guarda {{ $movie['safe_title'] }} in diretta in HD
-                                                        @break
-                                                        @case('nl')
-                                                            Kijk {{ $movie['safe_title'] }} live in HD
-                                                        @break
-                                                        @case('pt')
-                                                            Assista {{ $movie['safe_title'] }} ao vivo em HD
-                                                        @break
-                                                        @case('ru')
-                                                            Смотрите {{ $movie['safe_title'] }} в прямом эфире в HD
-                                                        @break
-                                                        @case('ur')
-                                                            دیکھیں {{ $movie['safe_title'] }} براہ راست ایچ ڈی میں
-                                                        @break
-                                                        @default
-                                                            Watch {{ $movie['safe_title'] }} Live in HD
-                                                    @endswitch
-                                                </span>
                                             @else
                                                 <h3 class="text-white">{{ $isDocumentEnglish ? $documentHero['heading'] : $movie['safe_title'] }}</h3>
                                             @endif
@@ -173,9 +142,9 @@
                     @endphp
                     <div class="slide {{ $index !== 0 ? 'lazy-background' : '' }}"
                         data-bg="{{ $imageUrl }}"
-                        @if ($index === 0) style="background-image: url('{{ $imageUrl }}');" @endif>
+                        @if ($index === 0) style="background-color: #010c3a; @if ($imageUrl) background-image: url('{{ $imageUrl }}'); @endif" @endif>
 
-                        @if ($index === 0)
+                        @if ($index === 0 && $imageUrl)
                             <x-product-picture :image="$imageSources"
                                 :alt="__('document_ui.home.poster_aria', ['title' => $movie['safe_title']])"
                                 aria-label="{{ __('document_ui.home.poster_aria', ['title' => $movie['safe_title']]) }}"
@@ -188,39 +157,6 @@
                                 <div class="inner-box slider-font {{ textAlignment($isRtl) }}">
                                     @if ($index === 0)
                                         <h1>{{ $isDocumentEnglish ? $documentHero['heading'] : __('messages.home_hero_watch_live', ['title' => $movie['safe_title']]) }}</h1>
-                                        <span class="d-none">
-                                            @switch($locale)
-                                                @case('ar')
-                                                    شاهد {{ $movie['safe_title'] }} مباشرة بجودة HD
-                                                @break
-                                                @case('es')
-                                                    Mira {{ $movie['safe_title'] }} en vivo en HD
-                                                @break
-                                                @case('fr')
-                                                    Regardez {{ $movie['safe_title'] }} en direct en HD
-                                                @break
-                                                @case('hi')
-                                                    देखें {{ $movie['safe_title'] }} लाइव एचडी में
-                                                @break
-                                                @case('it')
-                                                    Guarda {{ $movie['safe_title'] }} in diretta in HD
-                                                @break
-                                                @case('nl')
-                                                    Kijk {{ $movie['safe_title'] }} live in HD
-                                                @break
-                                                @case('pt')
-                                                    Assista {{ $movie['safe_title'] }} ao vivo em HD
-                                                @break
-                                                @case('ru')
-                                                    Смотрите {{ $movie['safe_title'] }} в прямом эфире в HD
-                                                @break
-                                                @case('ur')
-                                                    دیکھیں {{ $movie['safe_title'] }} براہ راست ایچ ڈی میں
-                                                @break
-                                                @default
-                                                    Watch {{ $movie['safe_title'] }} Live in HD
-                                            @endswitch
-                                        </span>
                                     @else
                                         <h3 class="text-white">{{ $isDocumentEnglish ? $documentHero['heading'] : $movie['safe_title'] }}</h3>
                                     @endif

@@ -97,8 +97,8 @@ return [
 
     'movies' => [
         'hero' => [
-            'heading' => 'Duizenden films en series — Stream in HD en 4K op populaire compatibele apparaten',
-            'text' => 'Je Opplex-abonnement biedt na activering toegang tot beschikbare on-demandcontent. Geen extra kosten en geen afzonderlijk VOD-pakket om te kopen. De bibliotheek wordt regelmatig bijgewerkt; beschikbaarheid verschilt per bron en regio. Zoek je een specifieke titel, vraag ons dan via WhatsApp deze te controleren.',
+            'heading' => 'Opplex IPTV films en series: controleer de beschikbaarheid voordat je een abonnement kiest',
+            'text' => 'Vraag ondersteuning vóór je bestelt om de titel, het seizoen, de audio, de ondertitels en het beschikbare formaat voor je gekozen abonnement te bevestigen. Een vermelding of releasedatum elders bevestigt de beschikbaarheid niet.',
             'plans' => 'Bekijk abonnementen',
             'trial' => 'Start gratis proefperiode',
         ],
@@ -107,25 +107,25 @@ return [
             'items' => [
                 [
                     'title' => 'Films — Hollywood, Bollywood en verder',
-                    'text' => 'De filmsectie omvat alle belangrijke genres: actie, thriller, drama, komedie, horror, sciencefiction, romantiek en documentaires. Hollywood-blockbusters staan naast Bollywood-releases, Europese cinema en internationale titels. Nieuwe releases worden regelmatig toegevoegd; je hoeft niet steeds dezelfde tien films opnieuw te bekijken.',
+                    'text' => 'Vermeld bij een vraag over een film de titel en het verschijningsjaar. Bevestig vóór je bestelt de beschikbaarheid voor je abonnement en regio.',
                 ],
                 [
                     'title' => 'Series — Actuele programma\'s en klassieke TV',
-                    'text' => 'Van lopende series uit de US en UK tot oudere programma\'s die je nog wilde inhalen: de seriebibliotheek wordt regelmatig bijgewerkt. Deze bevat drama\'s, misdaadseries, komedies, reality en internationale producties; de beschikbaarheid van afleveringen en titels verschilt per bron en regio.',
+                    'text' => 'Bevestig het gewenste seizoen en de gewenste aflevering. Nieuwe uitzendingen elders bewijzen niet dat ze bij je abonnement horen.',
                 ],
                 [
                     'title' => 'Tekenfilms — Iets voor het hele huishouden',
-                    'text' => 'Een speciale cartoonsectie biedt geanimeerde content voor kinderen en gezinnen. Heb je kinderen thuis, dan krijgt het hele gezin met één Opplex-abonnement wat het wil.',
+                    'text' => 'Controleer de precieze titel, de taal en de geschiktheid voor de leeftijd. Een categorie alleen bevestigt geen inhoud of kijkrechten.',
                 ],
             ],
         ],
         'how_to_watch' => [
             'heading' => 'Films zoeken en bekijken op Opplex',
-            'intro' => 'VOD is in elk abonnement ingebouwd; je hoeft niets extra\'s te activeren.',
+            'intro' => 'Bevestig de toegang op aanvraag en de activeringsvoorwaarden van je gekozen abonnement. Welke bediening beschikbaar is, hangt af van de compatibele speler:',
             'steps' => [
                 'Open op het startscherm van de app het tabblad Films, Series of Tekenfilms',
                 'Blader op genre of gebruik de zoekbalk om een titel op naam te vinden',
-                'Tik om af te spelen — content wordt binnen enkele seconden geladen',
+                'Kies een beschikbare titel; de laadtijd hangt af van de bron, je verbinding en het apparaat.',
                 'Pauzeer, spoel terug en vooruit, net als bij elke gewone streamingapp',
             ],
             'devices' => 'Het werkt op dezelfde manier op Firestick, Smart TV, Android TV-box, Android- en iOS-telefoons, MAG-apparaten en Windows of Mac via elke ondersteunde IPTV-speler.',
@@ -155,7 +155,7 @@ return [
                 ],
                 [
                     'question' => 'Zijn nieuwe releases beschikbaar?',
-                    'answer' => 'Nieuwe films en afleveringen van series worden regelmatig toegevoegd wanneer ze beschikbaar zijn. Beschikbaarheid en timing verschillen per bron en regio. Zoek je iets specifieks, stuur ons dan via WhatsApp een bericht en wij controleren of het beschikbaar is.',
+                    'answer' => 'Vraag ondersteuning vóór aankoop om de titel, het seizoen, de audio en de ondertitels te bevestigen. Een release elders bevestigt de beschikbaarheid niet.',
                 ],
                 [
                     'question' => 'Kan ik content downloaden om offline te bekijken?',
@@ -167,15 +167,15 @@ return [
                 ],
                 [
                     'question' => 'Kan ik een titel aanvragen die niet in de bibliotheek staat?',
-                    'answer' => 'Ja. Stuur ons via WhatsApp de naam van de film of serie. Wij controleren de beschikbaarheid en voegen deze toe waar dat mogelijk is. De meeste verzoeken worden binnen een dag of twee afgehandeld.',
+                    'answer' => 'Stuur de precieze titel en bij een serie het seizoen en de aflevering. Een verzoek garandeert geen beschikbaarheid of datum van toevoeging.',
                 ],
                 [
-                    'question' => 'Is de content van dezelfde kwaliteit als Netflix of Prime Video?',
-                    'answer' => 'De bronkwaliteit verschilt per titel, net als bij elke streamingdienst. Veel titels zijn in Full HD of 4K. Sommige oudere content is in SD. Is de beeldkwaliteit voor een bepaalde film belangrijk, stuur ons dan eerst een bericht en wij bevestigen wat beschikbaar is.',
+                    'question' => 'Welke beeldkwaliteit is beschikbaar?',
+                    'answer' => 'De kwaliteit verschilt per titel en bron. Bevestig vóór je bestelt het videoformaat, de audio en de ondertitels; de apparaatspecificaties alleen bevestigen de kwaliteit van beschikbare inhoud niet.',
                 ],
                 [
                     'question' => 'Kost toegang tot VOD extra?',
-                    'answer' => 'Nee. Toegang tot de beschikbare bibliotheek is na activering bij elk Opplex-abonnement inbegrepen. Er is geen extra VOD-pakket nodig; de beschikbaarheid van titels verschilt per bron en regio.',
+                    'answer' => 'Controleer vóór je bestelt de schriftelijke voorwaarden van de gekozen aanbieder en het abonnement, inbegrepen inhoud op aanvraag, afzonderlijke spelerskosten en de totaalprijs. Neem niet aan dat elk abonnement dezelfde inhoud of alle toegang zonder extra kosten bevat.',
                 ],
             ],
         ],
@@ -277,7 +277,7 @@ return [
         'hero' => [
             'eyebrow' => 'Alles wat je nodig hebt om te installeren en te streamen',
             'heading' => 'Streamingapparaten, accessoires en digitale abonnementen | Alles op één plek',
-            'text' => 'De Opplex-winkel heeft twee soorten producten: hardware die IPTV-streaming beter maakt en digitale abonnementen tegen prijzen die je niet in de gewone winkel vindt. Affiliate-apparaten linken rechtstreeks naar Amazon. Digitale producten zoals Netflix, Prime Video, HBO Max en NordVPN zijn beschikbaar tegen scherpe tarieven. Tik op Nu kopen en voltooi je bestelling via WhatsApp.',
+            'text' => 'Bekijk streamingapparaten via affiliatelinks naar Amazon en de digitale producten die momenteel in deze winkel staan. Lees de productgegevens en neem vóór het bestellen via WhatsApp contact op met de ondersteuning.',
             'note' => 'Heb je al een apparaat en heb je alleen Opplex nodig? Ga dan naar de pagina Packages.',
             'devices' => 'Bekijk apparaten',
             'digital' => 'Bekijk digitale producten',
@@ -297,9 +297,6 @@ return [
                 'B00SFSU53G' => ['label' => 'Mounting Dream TV Wall Mount (32 tot 65 inch, MD2380)', 'text' => 'Een volledig beweegbare beugel die kan draaien en kantelen; hij draagt tot 99 lbs en past bij de meeste moderne TV-formaten. Compatibel met VESA 400x400. Handig als je een kamer wilt opruimen of de TV op een plek bevestigt waar de kijkhoek niet recht van voren is.'],
             ],
             'digital' => [
-                'netflix' => ['price_label' => 'Vanaf $2.29', 'text' => 'Standaard Netflix-toegang tot beschikbare content tegen een lager tarief. Beschikbaarheid hangt af van de dienst en regio. Rond je bestelling via WhatsApp af nadat je op Nu kopen hebt geklikt.'],
-                'prime-video' => ['price_label' => 'Vanaf $1.54', 'text' => 'Toegang tot beschikbare Prime Video-content tegen een lager tarief. Beschikbaarheid hangt af van de dienst en regio. Bestel via WhatsApp.'],
-                'hbo-max-premium' => ['price_label' => 'Vanaf $1.89', 'text' => 'Toegang tot beschikbare HBO Max Premium-content, afhankelijk van de dienst en regio. Stuur ons na bevestiging van de betaling via WhatsApp een bericht om tijdens actieve ondersteuningsuren je gegevens te ontvangen.'],
                 'nordvpn' => ['price_label' => 'Vanaf $1.89', 'text' => 'Handig als je tijdens het streamen extra privacy wilt of toegang nodig hebt tot content die in jouw land regiogebonden is. NordVPN is een van de betrouwbaardere beschikbare VPN-opties. Bestel via WhatsApp.'],
             ],
         ],
@@ -316,7 +313,7 @@ return [
         ],
         'digital_orders' => [
             'heading' => 'Hoe bestellingen van digitale producten werken',
-            'intro' => 'Digitale abonnementen zoals Netflix, Prime Video, HBO Max en NordVPN lopen niet via de standaardbetaling. Zo bestel je:',
+            'intro' => 'Bestellingen voor de vermelde digitale producten worden via WhatsApp geregeld in plaats van via de standaardbetaling. Zo vraag je informatie aan:',
             'steps' => [
                 'Tik op de knop Nu kopen op de productkaart',
                 'Er wordt een WhatsApp-chat met ons geopend',

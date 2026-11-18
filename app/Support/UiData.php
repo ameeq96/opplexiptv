@@ -46,10 +46,7 @@ class UiData
         $isRtl          = $this->locale->isRtl();
         $containerClass = $isMobile ? 'centered' : 'sec-title centered';
 
-        $logos = $this->remember('logos', now()->addDay(), function () {
-            $dbLogos = app(\App\Services\ProductCatalogService::class)->getLogos();
-            return !empty($dbLogos) ? $dbLogos : $this->images->logos();
-        }, $this->images->logos());
+        $logos = [];
 
         $a = 0;
         $b = 0;
@@ -68,48 +65,6 @@ class UiData
         $query = trim((string) $this->request->input('search', ''));
         $pagination = $this->computePagination(page: $page, totalPages: 1, window: 5);
 
-        if ($this->routeIs($routeName, ['home', 'movies'])) {
-            if ($routeName === 'movies' && $query !== '') {
-                $payload    = $this->searchTmdb($query, $page);
-                $results    = $payload['results'] ?? [];
-                $totalPages = max(1, (int) ($payload['total_pages'] ?? 1));
-            } else {
-                $results    = $this->fetchTrendingMovies($routeName === 'movies' ? $page : 1);
-                $totalPages = $routeName === 'movies' ? 10 : 1;
-            }
-
-            $rawLimited     = \array_slice($results, 0, $routeName === 'home' ? 20 : 10);
-            $prepared       = $this->prepareMovies($rawLimited, $isMobile);
-
-            if ($routeName === 'home') {
-                $prepared = $prepared
-                    ->filter(static fn (array $movie) => !empty($movie['webp_image_url']))
-                    ->take(10)
-                    ->values();
-
-                if ($prepared->isEmpty()) {
-                    $prepared = $this->fallbackHeroMovies();
-                }
-            }
-
-            $movies         = $prepared->values();
-            $displayMovies  = $isMobile ? $movies->take(3)->values() : $movies;
-
-            if ($routeName === 'movies') {
-                $normalized     = $this->normalizeMovies($movies);
-                $filteredMovies = [
-                    'movies'   => $normalized->where('media_type', 'movie')->values(),
-                    'series'   => $normalized->where('media_type', 'tv')->values(),
-                    'cartoons' => $normalized->filter(static fn($m) => \in_array(16, $m['genre_ids'] ?? [], true))->values(),
-                ];
-            }
-
-            $pagination = $this->computePagination(
-                page: $page,
-                totalPages: $totalPages,
-                window: 5
-            );
-        }
 
         $needsFeatures = $this->routeIs($routeName, ['home', 'about', 'packages', 'pricing', 'reseller-panel', 'iptv-subscription-service']);
         $needsPricing = $this->routeIs($routeName, ['home', 'packages', 'pricing', 'reseller-panel', 'iptv-subscription-service']);
@@ -131,7 +86,7 @@ class UiData
         $packages = $packageGroups['iptv'];
         $iptvProviders = $packageGroups['iptvProviders'];
         $resellerPlans = $packageGroups['reseller'];
-        $testimonials  = $needsTestimonials ? $this->remember('testimonials', now()->addMinutes(30), fn () => $this->testimonials(), $this->fallbackTestimonials()) : [];
+        $testimonials  = [];
         $faqs          = $routeName === 'faqs' ? $this->faqs() : [];
 
         $pageFaqRoutes = ['home', 'packages', 'pricing', 'about', 'reseller-panel', 'iptv-subscription-service', 'iptv-applications', 'contact', 'movies', 'shop'];
@@ -928,22 +883,8 @@ class UiData
             ],
             [
                 'question' => __('messages.faq.q2'),
-                'answer'   => __('messages.faq.a2'),
-                'images'   => [
-                    ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => __('messages.faq.samsung')],
-                    ['url' => 'images/resource/mobileimg1.webp',   'caption' => __('messages.faq.mobile')],
-                    ['url' => 'images/resource/onmobile.webp',     'caption' => __('messages.faq.front')],
-                    ['url' => 'images/resource/onmobile2.webp',    'caption' => __('messages.faq.movies')],
-                    ['url' => 'images/resource/onmobile3.webp',    'caption' => __('messages.faq.live')],
-                    ['url' => 'images/resource/onmobile4.webp',    'caption' => __('messages.faq.play')],
-                    ['url' => 'images/resource/onmobile7.webp',    'caption' => __('messages.faq.news')],
-                    ['url' => 'images/resource/onmobile8.webp',    'caption' => __('messages.faq.settings')],
-                    ['url' => 'images/resource/onmobile9.webp',    'caption' => __('messages.faq.series_play')],
-                    ['url' => 'images/resource/onmobile10.webp',   'caption' => __('messages.faq.series_section')],
-                    ['url' => 'images/resource/onmobile11.webp',   'caption' => __('messages.faq.on_screen')],
-                    ['url' => 'images/resource/onmobile12.webp',   'caption' => __('messages.faq.series_playlist')],
-                    ['url' => 'images/resource/alldevices.webp',   'caption' => __('messages.faq.devices')],
-                ],
+                'answer'   => __('document_support.faq.groups.0.items.1.answer'),
+                'images'   => [],
             ],
             ['question' => __('messages.faq.q4'),  'answer' => __('messages.faq.a4'),  'images' => []],
             ['question' => __('messages.faq.q5'),  'answer' => __('messages.faq.a5'),  'images' => []],

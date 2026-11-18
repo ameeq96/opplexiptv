@@ -19,7 +19,7 @@ return [
     'movies' => [
         'title' => 'Guarda migliaia di film e serie via IPTV Smarters',
         'description' => 'Consulta informazioni su film e serie su Opplex IPTV. Conferma disponibilità del titolo, piano scelto e requisiti del dispositivo prima di abbonarti.',
-        'keywords' => 'film IPTV, IPTV Netflix, film Bollywood IPTV, IPTV streaming, serie IPTV Italia, IPTV player, Smart IPTV',
+        'keywords' => 'film IPTV, film Bollywood IPTV, IPTV streaming, serie IPTV Italia, IPTV player, Smart IPTV',
     ],
     'packages' => [
         'title' => 'Migliori pacchetti IPTV per l’Italia e l’Europa',

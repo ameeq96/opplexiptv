@@ -55,22 +55,19 @@ class HomeDocumentContentTest extends TestCase
         $this->assertStringNotContainsString('id="home-document-styles"', $html);
         $this->assertStringContainsString('class="home-document-devices"', $html);
         foreach ([
-            'movie-night-tv-480.webp',
-            'movie-night-tv-720.webp',
-            'movie-night-tv-1024.webp',
-            'movie-night-tv-1280.webp',
-            'sizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"',
-            'loading="eager"',
-            'fetchpriority="high"',
-            'decoding="async"',
-            'width="1024" height="1024"',
+            'viewBox="0 0 640 640"',
+            'width="640" height="640"',
+            'aria-hidden="true"',
+            'focusable="false"',
         ] as $expected) {
             $this->assertStringContainsString($expected, $homeSplitImage);
         }
+        $this->assertStringNotContainsString('movie-night-tv-', $html);
+        $this->assertStringNotContainsString('<image', $homeSplitImage);
         $this->assertSame(
             1,
             substr_count($html, '<h1>Best IPTV Subscription Service Provider | Live TV &amp; 4K Streaming</h1>'),
-            'The English document hero should render once, even when several slider images are available.'
+            'The English document hero should render once without a third-party poster.'
         );
         $this->assertMarkersAreOrdered($html, [
             '<section class="main-slider-two native-home-hero',
@@ -115,8 +112,8 @@ class HomeDocumentContentTest extends TestCase
         foreach (['Mensual', '3 meses', 'Semestral', 'Anual'] as $translatedPlanTitle) {
             $this->assertStringContainsString($translatedPlanTitle, $html);
         }
-        $this->assertStringContainsString('loading="eager"', $homeSplitImage);
-        $this->assertStringContainsString('fetchpriority="high"', $homeSplitImage);
+        $this->assertStringContainsString('viewBox="0 0 640 640"', $homeSplitImage);
+        $this->assertStringNotContainsString('<image', $homeSplitImage);
         $this->assertMarkersAreOrdered($html, [
             '<section class="main-slider-two native-home-hero',
             '<section class="home-split-section',
@@ -235,10 +232,10 @@ class HomeDocumentContentTest extends TestCase
 
     private function homeSplitImageTag(string $html): string
     {
-        $matched = preg_match('/<img[^>]+movie-night-tv-1024\.webp[^>]*>/s', $html, $matches);
+        $matched = preg_match('/<section[^>]+class="home-split-section[^"]*"[^>]*>.*?(<svg\b[^>]*>.*?<\/svg>)/s', $html, $matches);
 
-        $this->assertSame(1, $matched, 'The responsive homepage split image is missing.');
+        $this->assertSame(1, $matched, 'The original homepage split graphic is missing.');
 
-        return $matches[0];
+        return $matches[1];
     }
 }

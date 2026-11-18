@@ -18,8 +18,8 @@ return [
     ],
     'movies' => [
         'title' => 'Regardez des milliers de films et séries sur IPTV smart player',
-        'description' => 'Films récents, Netflix, Prime Video, Bollywood, Hollywood. Compatible avec IPTV stream player et IPTV box.',
-        'keywords' => 'films IPTV, IPTV Netflix, IPTV box, room IPTV, IPTV m3u, IPTV gratuit sans code, IPTV smart player',
+        'description' => 'Consultez les informations sur les films et séries d’Opplex IPTV. Confirmez la disponibilité du titre, la formule et les exigences de l’appareil avant de vous abonner.',
+        'keywords' => 'films IPTV, IPTV box, room IPTV, IPTV m3u, IPTV gratuit sans code, IPTV smart player',
     ],
     'packages' => [
         'title' => 'Meilleurs forfaits IPTV Europe avec code IPTV inclus',

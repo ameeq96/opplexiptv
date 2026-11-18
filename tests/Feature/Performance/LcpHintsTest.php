@@ -50,7 +50,7 @@ class LcpHintsTest extends TestCase
         ])->render();
     }
 
-    public function test_home_preloads_first_hero_image_and_skips_phone_assets(): void
+    public function test_home_skips_removed_movie_image_hints_and_phone_assets(): void
     {
         Cache::put('ui:tmdb:trending:all:day:en:p1', [], now()->addMinutes(10));
 
@@ -60,19 +60,19 @@ class LcpHintsTest extends TestCase
             ]]),
         ]);
 
-        $this->assertStringContainsString('rel="preconnect" href="https://image.tmdb.org"', $html);
-        $this->assertStringContainsString('href="https://image.tmdb.org/t/p/w780/speed-check.jpg"', $html);
-        $this->assertStringContainsString('fetchpriority="high"', $html);
-        $this->assertSame(1, substr_count($html, 'href="https://image.tmdb.org/t/p/w780/speed-check.jpg"'));
-        $this->assertSame(1, substr_count($html, 'href="https://image.tmdb.org"'));
+        $this->assertStringNotContainsString('rel="preconnect" href="https://image.tmdb.org"', $html);
+        $this->assertStringNotContainsString('href="https://image.tmdb.org/t/p/w780/speed-check.jpg"', $html);
+        $this->assertStringNotContainsString('<link rel="preload" as="image"', $html);
+        $this->assertSame(0, substr_count($html, 'href="https://image.tmdb.org/t/p/w780/speed-check.jpg"'));
+        $this->assertSame(0, substr_count($html, 'href="https://image.tmdb.org"'));
         $this->assertStringNotContainsString('intl-tel-input@19.5.7', $html);
     }
 
-    public function test_english_home_preloads_the_responsive_split_lcp_image(): void
+    public function test_home_does_not_preload_removed_split_images(): void
     {
         $html = $this->renderHeadForRoute('home');
 
-        $this->assertMatchesRegularExpression(
+        $this->assertDoesNotMatchRegularExpression(
             '/<link rel="preload" as="image" href="[^"]*movie-night-tv-1024\.webp"[^>]+fetchpriority="high">/s',
             $html
         );
@@ -83,12 +83,12 @@ class LcpHintsTest extends TestCase
             'movie-night-tv-1280.webp',
             'imagesizes="(min-width: 1340px) 640px, (min-width: 992px) calc(50vw - 30px), calc(100vw - 30px)"',
         ] as $expected) {
-            $this->assertStringContainsString($expected, $html);
+            $this->assertStringNotContainsString($expected, $html);
         }
 
         app()->setLocale('es');
 
-        $this->assertStringContainsString(
+        $this->assertStringNotContainsString(
             'movie-night-tv-1024.webp',
             $this->renderHeadForRoute('home')
         );
@@ -176,7 +176,7 @@ class LcpHintsTest extends TestCase
         $this->assertStringNotContainsString('skeleton-section', $mobileHtml.$desktopHtml);
     }
 
-    public function test_first_desktop_hero_image_keeps_priority_attributes_in_both_sliders(): void
+    public function test_desktop_hero_keeps_heading_and_actions_without_posters_in_both_sliders(): void
     {
         foreach ([true, false] as $useNativeCarousel) {
             $html = view('includes._slider', [
@@ -190,10 +190,13 @@ class LcpHintsTest extends TestCase
                 ]]),
             ])->render();
 
-            $this->assertMatchesRegularExpression(
-                '/<img[^>]+width="960"[^>]+height="540"[^>]+loading="eager"[^>]+decoding="async"[^>]+fetchpriority="high"[^>]*>/s',
-                $html
+            $this->assertSame(
+                1,
+                substr_count($html, '<h1>'.e(__('document_home.hero.heading')).'</h1>')
             );
+            $this->assertStringContainsString('href="#pricing-section"', $html);
+            $this->assertStringNotContainsString('<img', $html);
+            $this->assertStringNotContainsString('https://image.tmdb.org', $html);
             $this->assertStringNotContainsString('loading="lazy"', $html);
         }
     }
@@ -385,7 +388,10 @@ class LcpHintsTest extends TestCase
             'useNativeCarousel' => true,
         ])->render();
 
-        foreach ([$unlimited, $services, $channels, $testimonials] as $html) {
+        $this->assertStringContainsString('<svg', $unlimited);
+        $this->assertStringNotContainsString('<img', $unlimited);
+        $this->assertSame('', trim($channels));
+        foreach ([$services, $testimonials] as $html) {
             $this->assertStringContainsString('loading="lazy" decoding="async"', $html);
         }
 

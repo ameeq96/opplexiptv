@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'Come si presenta Opplex IPTV su un dispositivo?',
-                        'answer' => 'Si presenta proprio come una normale app di streaming. Vedrai una schermata iniziale con sezioni dedicate a canali in diretta, film e serie. Su una Smart TV occupa tutto lo schermo. Su un telefono, il layout è quello di un’app mobile. Le schermate presenti in questa pagina mostrano l’interfaccia sui diversi dispositivi.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Su Samsung TV'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'Su telefono cellulare'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Interfaccia della pagina principale'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interfaccia della sezione Film'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interfaccia della sezione Canali in diretta'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interfaccia di riproduzione dei film'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interfaccia della sezione Notizie in diretta'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interfaccia della sezione Impostazioni dell’applicazione'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interfaccia di riproduzione delle serie'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Interfaccia della sezione Serie'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'Interfaccia delle impostazioni su schermo'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Interfaccia della sezione Playlist delle serie'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Alcuni dei principali dispositivi'],
-                        ],
+                        'answer' => 'L’aspetto dipende dal lettore e dal dispositivo scelti. Un lettore può suddividere canali in diretta, film e serie in sezioni separate, con comandi adatti al televisore o al telefono. Consulta le istruzioni aggiornate del lettore scelto per conoscere i suoi menu.',
                     ],
                     [
                         'question' => 'Opplex IPTV è disponibile nel mio Paese?',

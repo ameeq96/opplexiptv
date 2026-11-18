@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => '¿Qué aspecto tiene Opplex IPTV en un dispositivo?',
-                        'answer' => 'Se parece a cualquier aplicación de streaming normal. Verás una pantalla de inicio con secciones para canales en directo, películas y series. En una Smart TV ocupa toda la pantalla. En un teléfono, tiene el diseño de una aplicación móvil. Las capturas de esta página muestran el aspecto de la interfaz en distintos dispositivos.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'En un televisor Samsung'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'En un teléfono móvil'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Interfaz de la página principal'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interfaz de la sección Películas'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interfaz de la sección Canales en directo'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interfaz de reproducción de películas'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interfaz de la sección Noticias en directo'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interfaz de la sección de ajustes de la aplicación'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interfaz de reproducción de series'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Interfaz de la sección Series'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'Interfaz de ajustes en pantalla'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Interfaz de la sección de listas de reproducción de series'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Algunos de los dispositivos principales'],
-                        ],
+                        'answer' => 'El diseño depende del reproductor y del dispositivo que elijas. Un reproductor puede organizar los canales en directo, las películas y las series en secciones separadas, con controles adaptados al televisor o al móvil. Consulta las instrucciones actuales del reproductor elegido para conocer sus menús.',
                     ],
                     [
                         'question' => '¿Opplex IPTV está disponible en mi país?',

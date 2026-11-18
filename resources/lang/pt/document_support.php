@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'Qual é o aspeto da Opplex IPTV num dispositivo?',
-                        'answer' => 'É semelhante a qualquer aplicação de streaming normal. Verá um ecrã inicial com secções para canais em direto, filmes e séries. Numa Smart TV, ocupa o ecrã inteiro. Num telemóvel, tem a disposição de uma aplicação móvel. As capturas desta página mostram o aspeto da interface em vários dispositivos.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Numa televisão Samsung'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'Num telemóvel'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Interface da página inicial'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interface da secção Filmes'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interface da secção Canais em direto'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interface de reprodução de filmes'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interface da secção Notícias em direto'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interface da secção de definições da aplicação'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interface de reprodução de séries'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Interface da secção Séries'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'Interface das definições no ecrã'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Interface da secção de listas de reprodução de séries'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Alguns dos principais dispositivos'],
-                        ],
+                        'answer' => 'A apresentação depende do leitor e do dispositivo escolhidos. Um leitor pode organizar canais em direto, filmes e séries em secções separadas, com controlos adaptados ao televisor ou telemóvel. Consulte as instruções atuais do leitor escolhido para conhecer os seus menus.',
                     ],
                     [
                         'question' => 'A Opplex IPTV está disponível no meu país?',

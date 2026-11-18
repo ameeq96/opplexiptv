@@ -15,22 +15,7 @@ return [
                     ],
                     [
                         'question' => 'Hoe ziet Opplex IPTV eruit op een apparaat?',
-                        'answer' => 'Het ziet eruit als een gewone streamingapp. Je ziet een startscherm met secties voor livekanalen, films en series. Op een Smart TV vult het het volledige scherm. Op een telefoon is het ingericht als een mobiele app. De screenshots op deze pagina laten zien hoe de interface er op verschillende apparaten uitziet.',
-                        'images' => [
-                            ['url' => 'images/resource/samsung-tv-2.webp', 'caption' => 'Op Samsung TV'],
-                            ['url' => 'images/resource/mobileimg1.webp', 'caption' => 'Op mobiele telefoon'],
-                            ['url' => 'images/resource/onmobile.webp', 'caption' => 'Interface van de startpagina'],
-                            ['url' => 'images/resource/onmobile2.webp', 'caption' => 'Interface van de filmsectie'],
-                            ['url' => 'images/resource/onmobile3.webp', 'caption' => 'Interface van de livekanalensectie'],
-                            ['url' => 'images/resource/onmobile4.webp', 'caption' => 'Interface voor het afspelen van films'],
-                            ['url' => 'images/resource/onmobile7.webp', 'caption' => 'Interface van de livenieuwssectie'],
-                            ['url' => 'images/resource/onmobile8.webp', 'caption' => 'Interface van de appinstellingen'],
-                            ['url' => 'images/resource/onmobile9.webp', 'caption' => 'Interface voor het afspelen van series'],
-                            ['url' => 'images/resource/onmobile10.webp', 'caption' => 'Interface van de seriesectie'],
-                            ['url' => 'images/resource/onmobile11.webp', 'caption' => 'Interface van de scherminstellingen'],
-                            ['url' => 'images/resource/onmobile12.webp', 'caption' => 'Interface van de afspeellijst voor series'],
-                            ['url' => 'images/resource/alldevices.webp', 'caption' => 'Enkele belangrijke apparaten'],
-                        ],
+                        'answer' => 'De indeling hangt af van de gekozen speler en het apparaat. Een speler kan livekanalen, films en series in aparte secties indelen, met bediening voor een televisie of telefoon. Raadpleeg de actuele instructies van de gekozen speler voor de menu’s.',
                     ],
                     [
                         'question' => 'Is Opplex IPTV beschikbaar in mijn land?',
