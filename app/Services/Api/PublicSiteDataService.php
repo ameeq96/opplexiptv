@@ -232,10 +232,6 @@ class PublicSiteDataService
             ->reject(static fn (array $product): bool => ($product['type'] ?? null) === 'digital'
                 && in_array((string) ($product['slug'] ?? $product['identifier'] ?? ''), self::UNVERIFIED_STREAMING_PRODUCT_SLUGS, true))
             ->map(function (array $product): array {
-                if (($product['type'] ?? null) === 'affiliate') {
-                    $product['image'] = null;
-                    $product['image_sources'] = null;
-                }
                 $product['share_url'] = $this->pageUrl('products.share', ['type' => $product['type'], 'id' => $product['id']]);
                 return $product;
             })->values();
@@ -283,8 +279,8 @@ class PublicSiteDataService
                 ->firstOrFail();
 
             $name = $product->translation()?->name ?: $product->name;
-            $imagePath = null;
-            $image = null;
+            $imagePath = $product->image ? 'images/shop/' . $product->image : 'images/placeholder.webp';
+            $image = asset($imagePath);
             $price = null;
             $actionUrl = 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . rawurlencode(
                 __('interface.product.affiliate_purchase_message', [

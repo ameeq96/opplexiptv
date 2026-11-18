@@ -196,11 +196,11 @@
                                 <div class="native-carousel__slide px-2">
                                     <article class="home-product-card h-100">
                                         <a class="home-product-media" href="{{ $p['url'] }}" aria-label="{{ $p['name'] }}" @if(!empty($p['target'])) target="{{ $p['target'] }}" rel="{{ $p['rel'] }}" @endif>
-                                            <svg viewBox="0 0 320 200" width="320" height="200" aria-hidden="true" focusable="false">
-                                                <rect x="40" y="20" width="240" height="140" rx="12" fill="#132e44" />
-                                                <rect x="52" y="32" width="216" height="116" rx="5" fill="#86d8cd" />
-                                                <path d="M160 160V184M120 184H200" stroke="#132e44" stroke-width="10" stroke-linecap="round" />
-                                            </svg>
+                                            @if(!empty($p['image']))
+                                                <x-product-picture :image="$p['image_sources'] ?? $p['image']"
+                                                    :alt="$p['name']"
+                                                    sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1199px) 45vw, 280px" />
+                                            @endif
                                         </a>
                                         <div class="home-product-body">
                                             <div class="d-flex justify-content-between align-items-start gap-2 mb-1">

@@ -50,7 +50,7 @@ class ResponsiveProductRenderingTest extends TestCase
         Cache::flush();
         Cache::put('ui:tmdb:v2:trending:all:day:en:p1', [], now()->addMinutes(10));
         $this->digitalProduct();
-        ShopProduct::query()->create([
+        $affiliate = ShopProduct::query()->create([
             'name' => 'Android TV Box',
             'asin' => 'B08CRV62C4',
             'link' => 'https://example.com/product',
@@ -62,7 +62,10 @@ class ResponsiveProductRenderingTest extends TestCase
         $home = $this->get('/iptv-home');
         $home->assertOk();
         $home->assertSeeText('Android TV Box');
-        $this->assertStringNotContainsString('/images/shop/B08CRV62C4.webp', $home->getContent());
+        $this->assertMatchesRegularExpression(
+            '/<picture class="product-picture">.*?src="[^"]*\/images\/shop\/B08CRV62C4\.webp"/s',
+            $home->getContent()
+        );
 
         Cache::flush();
         $shop = $this->get('/store');
@@ -70,6 +73,12 @@ class ResponsiveProductRenderingTest extends TestCase
         $this->assertMatchesRegularExpression(
             '/<picture class="product-picture">.*?nordvpn-webp-320\.avif 320w.*?src="[^"]*\/images\/digital-products\/nordvpn\.webp"/s',
             $shop->getContent()
+        );
+        $this->assertStringContainsString('/images/shop/B08CRV62C4.webp', $shop->getContent());
+        $share = $this->get(route('products.share', ['type' => 'affiliate', 'id' => $affiliate->id]))->assertOk();
+        $this->assertMatchesRegularExpression(
+            '/<picture class="product-picture">.*?src="[^"]*\/images\/shop\/B08CRV62C4\.webp"/s',
+            $share->getContent()
         );
     }
 

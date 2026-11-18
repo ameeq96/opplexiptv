@@ -8,19 +8,11 @@
                 <div class="row g-0 align-items-stretch">
                     <div class="col-lg-6">
                         <div class="product-share-media">
-                            @if ($productType === 'affiliate')
-                                <svg viewBox="0 0 320 200" width="320" height="200" aria-hidden="true" focusable="false">
-                                    <rect x="40" y="20" width="240" height="140" rx="12" fill="#132e44" />
-                                    <rect x="52" y="32" width="216" height="116" rx="5" fill="#86d8cd" />
-                                    <path d="M160 160V184M120 184H200" stroke="#132e44" stroke-width="10" stroke-linecap="round" />
-                                </svg>
-                            @else
-                                <x-product-picture :image="$productImageSources ?? $productImage"
-                                    :alt="$productName"
-                                    loading="eager"
-                                    fetchpriority="high"
-                                    sizes="(max-width: 991px) calc(100vw - 48px), 50vw" />
-                            @endif
+                            <x-product-picture :image="$productImageSources ?? $productImage"
+                                :alt="$productName"
+                                loading="eager"
+                                fetchpriority="high"
+                                sizes="(max-width: 991px) calc(100vw - 48px), 50vw" />
                         </div>
                     </div>
                     <div class="col-lg-6">

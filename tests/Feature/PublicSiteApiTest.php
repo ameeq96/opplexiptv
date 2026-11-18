@@ -114,20 +114,22 @@ class PublicSiteApiTest extends TestCase
             'link' => 'https://example.test/hidden', 'image' => 'hidden-device.webp', 'is_active' => false,
         ]);
         $home = $this->get('/api/v1/site/pages/home')->assertOk()
-            ->assertJsonPath('data.homeAffiliateProducts.0.image', null)
-            ->assertJsonPath('data.homeAffiliateProducts.0.image_sources', null);
+            ->assertJsonPath('data.homeAffiliateProducts.0.image', asset('images/shop/test-device.webp'))
+            ->assertJsonPath('data.homeAffiliateProducts.0.image_sources.src', asset('images/shop/test-device.webp'));
         $this->assertContains($active->id, collect($home->json('data.homeAffiliateProducts'))->pluck('id')->all());
         $this->assertStringNotContainsString('Hidden device', $home->getContent());
         $products = $this->get('/api/v1/site/products?type=affiliate&per_page=1')->assertOk()
             ->assertJsonPath('meta.per_page', 1)->assertJsonPath('data.0.name', 'Public device')
-            ->assertJsonPath('data.0.image', null)->assertJsonPath('data.0.image_sources', null);
+            ->assertJsonPath('data.0.image', asset('images/shop/test-device.webp'))
+            ->assertJsonPath('data.0.image_sources.src', asset('images/shop/test-device.webp'));
         $this->assertStringNotContainsString('Hidden device', $products->getContent());
         $this->get('/api/v1/site/products?per_page=101')->assertUnprocessable();
         $this->get('/api/v1/site/products?type=unapproved')->assertUnprocessable();
         $this->get('/api/v1/site/products/affiliate/'.$active->id)->assertOk()
             ->assertJsonPath('data.productName', 'Public device')
-            ->assertJsonPath('data.productImage', null)->assertJsonPath('data.productImageSources', null)
-            ->assertJsonPath('data.pageMetaImage', null);
+            ->assertJsonPath('data.productImage', asset('images/shop/test-device.webp'))
+            ->assertJsonPath('data.productImageSources.src', asset('images/shop/test-device.webp'))
+            ->assertJsonPath('data.pageMetaImage', asset('images/shop/test-device.webp'));
         $this->get('/api/v1/site/products/unknown/'.$active->id)->assertNotFound();
         $this->get('/iptv-home')->assertOk()->assertSeeText('Public device');
     }

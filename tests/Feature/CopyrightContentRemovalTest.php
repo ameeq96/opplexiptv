@@ -130,6 +130,9 @@ class CopyrightContentRemovalTest extends TestCase
             if (in_array($page, ['home', 'movies'], true)) {
                 $api->assertJsonPath('data.movies', [])->assertJsonPath('data.displayMovies', []);
             }
+            if (in_array($page, ['home', 'shop'], true)) {
+                $this->assertStringContainsString('/images/shop/B08CRV62C4.webp', $html->getContent());
+            }
         }
 
         Http::assertNothingSent();
@@ -149,8 +152,8 @@ class CopyrightContentRemovalTest extends TestCase
             $affiliate = collect($response->json('data'))->firstWhere('type', 'affiliate');
             $this->assertSame('Text-only device fixture', $affiliate['name']);
             $this->assertSame('https://example.test/affiliate-device', $affiliate['url']);
-            $this->assertNull($affiliate['image']);
-            $this->assertNull($affiliate['image_sources']);
+            $this->assertSame(asset('images/shop/B08CRV62C4.webp'), $affiliate['image']);
+            $this->assertSame($affiliate['image'], $affiliate['image_sources']['src']);
         }
 
         app()->setLocale('en');
@@ -164,10 +167,11 @@ class CopyrightContentRemovalTest extends TestCase
             ->assertOk()->assertJsonPath('data.productName', 'NordVPN fixture');
         $this->get('/product-share/digital/'.$offers['vpn']->id)->assertOk()->assertSeeText('NordVPN fixture');
         $share = $this->getJson('/api/v1/site/products/affiliate/'.$offers['affiliate']->id.'?locale=en')
-            ->assertOk()->assertJsonPath('data.productImage', null)->assertJsonPath('data.productImageSources', null);
+            ->assertOk()->assertJsonPath('data.productImage', asset('images/shop/B08CRV62C4.webp'))
+            ->assertJsonPath('data.productImageSources.src', asset('images/shop/B08CRV62C4.webp'));
         $this->assertStringContainsString('Text-only device fixture', $share->json('data.productName'));
         $this->get('/product-share/affiliate/'.$offers['affiliate']->id)->assertOk()
-            ->assertSeeText('Text-only device fixture')->assertDontSee('images/shop/', false);
+            ->assertSeeText('Text-only device fixture')->assertSee('images/shop/B08CRV62C4.webp', false);
         $home = $this->get('/iptv-home')->assertOk();
         $home->assertSee('https://example.test/affiliate-device', false)->assertSeeText('Text-only device fixture');
         $plans = $this->getJson('/api/v1/site/brands/iptvsubscription/plans?locale=en')->assertOk();
@@ -288,7 +292,6 @@ class CopyrightContentRemovalTest extends TestCase
         $resource = 'samsung-tv-2|mobileimg1|onmobile(?:2|3|4|7|8|9|10|11|12)?|alldevices|[2-9]|network-[3-5]|movie-night-tv(?:-(?:480|720|1024|1280))?|fastx|squidgame|extraction2';
         $this->assertDoesNotMatchRegularExpression('~/images/resource/(?:responsive/)?(?:'.$resource.')(?:-webp-(?:320|640|960))?\.(?:webp|avif)~', $body);
         $this->assertDoesNotMatchRegularExpression('~/images/digital-products/(?:responsive/)?(?:'.implode('|', self::RETIRED_OFFERS).')(?:-(?:png|webp)-(?:320|640|960))?\.(?:png|webp|avif)~', $body);
-        $this->assertStringNotContainsString('/images/shop/', $body);
         $this->assertStringNotContainsString('/webp_images/', $body);
         $this->assertStringNotContainsString('image.tmdb.org', $body);
         $this->assertStringNotContainsString('Retired offer fixture', $body);
