@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-18",
+  "topic": "Distinguish oversaturated SDR video and Google streaming-device HDR output from Get IPTV provider access, original source quality and Opplex or Filex order state.",
+  "primary_keyword": "Get IPTV HDR colours",
+  "slug": "getiptv-hdr-colours-check-device-output",
+  "translations": {
+    "en": {
+      "title": "Get IPTV HDR colours: check the device output first",
+      "excerpt": "Overly strong colours can involve Google streaming-device output. Compare SDR and HDR settings separately from provider access and paid plan details.",
+      "seo_title": "Get IPTV HDR colours: check the device output first",
+      "seo_description": "Overly strong colours can involve Google streaming-device output. Compare SDR and HDR settings separately from provider access and paid plan details.",
+      "sections": [
+        {
+          "heading": "Describe the colour problem",
+          "paragraphs": [
+            "For Get IPTV HDR colours that look unusually strong, first note whether the problem affects one video, the whole player or other permitted apps. Identify the exact television and streaming-device models. A colour difference alone does not establish an expired account or a service-wide outage. Keep a record of the original settings before making a small comparison; do not reset the television or erase your player setup."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the documented format control",
+          "paragraphs": [
+            "Google’s display guide covers Chromecast with Google TV and Google TV Streamer. In All settings, open Display & Sound; the available formats depend on the television. Google specifically describes oversaturated SDR video when HDR output is enabled and recommends Match content for that situation. Check the controls actually offered by your device rather than forcing every video into HDR. Brightness is a separate television adjustment; consult its manufacturer’s instructions. Selecting an output format does not upgrade the source programme’s quality."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep access questions separate",
+          "paragraphs": [
+            "If the effect remains, report the affected app, content type and visible settings privately, without passwords or playback addresses. Confirm whether the Get IPTV order is Opplex or Filex and check its payment and setup state separately. Player licensing may cost extra, and Filex connection allowances remain to be confirmed. Buying another subscription is not a demonstrated remedy for a television colour setting."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Colores HDR con Get IPTV: revisa primero la salida del dispositivo",
+      "excerpt": "Los colores demasiado intensos pueden depender de la salida del dispositivo de Google. Separa los ajustes SDR y HDR del acceso y de los datos del plan pagado.",
+      "seo_title": "Colores HDR con Get IPTV: revisa primero la salida del dispositivo",
+      "seo_description": "Los colores demasiado intensos pueden depender de la salida del dispositivo de Google. Separa los ajustes SDR y HDR del acceso y de los datos del plan pagado.",
+      "sections": [
+        {
+          "heading": "Describe el problema de color",
+          "paragraphs": [
+            "Si los colores HDR con Get IPTV parecen demasiado intensos, observa primero si ocurre en un vídeo, en todo el reproductor o en otras aplicaciones permitidas. Identifica los modelos exactos del televisor y del dispositivo de streaming. Una diferencia de color no demuestra una cuenta vencida ni una caída general. Anota los ajustes originales antes de hacer una comparación pequeña; no restablezcas el televisor ni borres la configuración del reproductor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara el control de formato documentado",
+          "paragraphs": [
+            "La guía de pantalla de Google cubre Chromecast con Google TV y Google TV Streamer. En Todos los ajustes, abre Pantalla y sonido; los formatos disponibles dependen del televisor. Google describe específicamente la sobresaturación de vídeo SDR cuando está activada la salida HDR y recomienda adaptar el contenido para esa situación. Comprueba los controles que realmente ofrece tu dispositivo en lugar de forzar todos los vídeos a HDR. El brillo es un ajuste distinto del televisor; consulta al fabricante. Elegir un formato de salida no mejora la calidad original del programa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa las dudas de acceso",
+          "paragraphs": [
+            "Si el efecto continúa, comunica en privado la aplicación, el tipo de contenido y los ajustes visibles, sin contraseñas ni direcciones de reproducción. Confirma si el pedido de Get IPTV corresponde a Opplex o Filex y revisa aparte su pago y configuración. La licencia del reproductor puede costar más y las conexiones permitidas de Filex requieren confirmación. Comprar otra suscripción no es una solución demostrada para un ajuste de color del televisor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Couleurs HDR avec Get IPTV : vérifiez d’abord la sortie de l’appareil",
+      "excerpt": "Des couleurs trop fortes peuvent dépendre de la sortie de l’appareil Google. Distinguez les réglages SDR et HDR de l’accès fournisseur et des détails de l’offre payée.",
+      "seo_title": "Couleurs HDR avec Get IPTV : vérifiez d’abord la sortie de l’appareil",
+      "seo_description": "Des couleurs trop fortes peuvent dépendre de la sortie de l’appareil Google. Distinguez les réglages SDR et HDR de l’accès fournisseur et des détails de l’offre payée.",
+      "sections": [
+        {
+          "heading": "Décrivez le problème de couleur",
+          "paragraphs": [
+            "Si les couleurs HDR avec Get IPTV semblent excessives, notez d’abord si cela concerne une vidéo, tout le lecteur ou d’autres applications autorisées. Identifiez les modèles exacts du téléviseur et de l’appareil de streaming. Une différence de couleur ne prouve ni l’expiration du compte ni une panne générale. Conservez les réglages d’origine avant une petite comparaison ; ne réinitialisez pas le téléviseur et n’effacez pas la configuration du lecteur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez le réglage de format documenté",
+          "paragraphs": [
+            "Le guide d’affichage Google concerne Chromecast avec Google TV et Google TV Streamer. Dans Tous les paramètres, ouvrez Affichage et son ; les formats disponibles dépendent du téléviseur. Google décrit précisément une saturation excessive des vidéos SDR lorsque la sortie HDR est active et recommande l’adaptation au contenu dans ce cas. Vérifiez les commandes réellement proposées au lieu de forcer toutes les vidéos en HDR. La luminosité est un réglage distinct du téléviseur : consultez son fabricant. Choisir un format de sortie n’améliore pas la qualité du programme source."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Séparez les questions d’accès",
+          "paragraphs": [
+            "Si l’effet persiste, indiquez en privé l’application, le type de contenu et les réglages visibles, sans mot de passe ni adresse de lecture. Confirmez si la commande Get IPTV concerne Opplex ou Filex et vérifiez séparément son paiement et sa configuration. La licence du lecteur peut être payante en supplément ; les connexions Filex restent à confirmer. Acheter un autre abonnement n’est pas un remède démontré à un réglage de couleur du téléviseur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Colori HDR con Get IPTV: controlla prima l’uscita del dispositivo",
+      "excerpt": "Colori troppo intensi possono dipendere dall’uscita del dispositivo Google. Separa le impostazioni SDR e HDR dall’accesso del fornitore e dall’abbonamento pagato.",
+      "seo_title": "Colori HDR con Get IPTV: controlla prima l’uscita del dispositivo",
+      "seo_description": "Colori troppo intensi possono dipendere dall’uscita del dispositivo Google. Separa le impostazioni SDR e HDR dall’accesso del fornitore e dall’abbonamento pagato.",
+      "sections": [
+        {
+          "heading": "Descrivi il problema dei colori",
+          "paragraphs": [
+            "Se i colori HDR con Get IPTV sembrano eccessivi, osserva prima se il problema riguarda un video, tutto il lettore o altre app consentite. Identifica i modelli esatti del televisore e del dispositivo di streaming. Una differenza di colore non dimostra un account scaduto o un’interruzione generale. Annota le impostazioni originali prima di un piccolo confronto; non ripristinare il televisore e non cancellare la configurazione del lettore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta il controllo di formato documentato",
+          "paragraphs": [
+            "La guida video di Google riguarda Chromecast con Google TV e Google TV Streamer. In Tutte le impostazioni, apri Display e audio; i formati disponibili dipendono dal televisore. Google descrive in particolare video SDR troppo saturi quando l’uscita HDR è attiva e consiglia l’adattamento al contenuto in quel caso. Controlla i comandi effettivamente disponibili invece di forzare ogni video in HDR. La luminosità è una regolazione distinta del televisore: consulta le istruzioni del produttore. Scegliere un formato di uscita non migliora la qualità del programma originale."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Tieni separate le domande sull’accesso",
+          "paragraphs": [
+            "Se l’effetto rimane, comunica privatamente app, tipo di contenuto e impostazioni visibili, senza password o indirizzi di riproduzione. Conferma se l’ordine Get IPTV riguarda Opplex o Filex e verifica separatamente pagamento e configurazione. La licenza del lettore può costare a parte; le connessioni Filex devono essere confermate. Comprare un altro abbonamento non è un rimedio dimostrato per un’impostazione dei colori del televisore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "HDR-kleuren bij Get IPTV: controleer eerst de apparaatuitvoer",
+      "excerpt": "Te sterke kleuren kunnen samenhangen met de uitvoer van je Google-apparaat. Bekijk SDR en HDR apart van toegang bij de aanbieder en je betaalde abonnement.",
+      "seo_title": "HDR-kleuren bij Get IPTV: controleer eerst de apparaatuitvoer",
+      "seo_description": "Te sterke kleuren kunnen samenhangen met de uitvoer van je Google-apparaat. Bekijk SDR en HDR apart van toegang bij de aanbieder en je betaalde abonnement.",
+      "sections": [
+        {
+          "heading": "Beschrijf het kleurprobleem",
+          "paragraphs": [
+            "Lijken HDR-kleuren bij Get IPTV overdreven, noteer dan eerst of dit één video, de hele speler of andere toegestane apps betreft. Zoek de exacte modellen van televisie en streamingapparaat op. Een kleurverschil bewijst geen verlopen account of algemene storing. Noteer de oorspronkelijke instellingen voordat je iets kleins vergelijkt; herstel de televisie niet naar fabrieksinstellingen en wis je spelerconfiguratie niet."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk de beschreven formaatinstelling",
+          "paragraphs": [
+            "Googles beeldschermgids geldt voor Chromecast met Google TV en Google TV Streamer. Open bij Alle instellingen Beeld en geluid; beschikbare formaten hangen af van de televisie. Google beschrijft specifiek oververzadigde SDR-video wanneer HDR-uitvoer ingeschakeld is en adviseert hiervoor afstemming op de content. Bekijk welke bediening je apparaat werkelijk biedt in plaats van alle video naar HDR te dwingen. Helderheid is een afzonderlijke televisie-instelling; raadpleeg de fabrikant. Een gekozen uitvoerformaat verbetert de kwaliteit van het bronprogramma niet."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd toegangsvragen apart",
+          "paragraphs": [
+            "Blijft het effect, meld dan privé de betreffende app, het soort inhoud en de zichtbare instellingen, zonder wachtwoorden of afspeeladressen. Controleer of je Get IPTV-bestelling Opplex of Filex betreft en bekijk betaling en configuratie afzonderlijk. Een spelerlicentie kan extra kosten; de toegestane Filex-verbindingen moeten worden bevestigd. Een ander abonnement kopen is geen bewezen oplossing voor een kleurinstelling van je televisie."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Cores HDR no Get IPTV: verifique primeiro a saída do dispositivo",
+      "excerpt": "Cores demasiado intensas podem depender da saída do dispositivo Google. Separe os ajustes SDR e HDR do acesso do fornecedor e dos detalhes do plano pago.",
+      "seo_title": "Cores HDR no Get IPTV: verifique primeiro a saída do dispositivo",
+      "seo_description": "Cores demasiado intensas podem depender da saída do dispositivo Google. Separe os ajustes SDR e HDR do acesso do fornecedor e dos detalhes do plano pago.",
+      "sections": [
+        {
+          "heading": "Descreva o problema de cor",
+          "paragraphs": [
+            "Se as cores HDR no Get IPTV parecerem excessivas, observe primeiro se acontece num vídeo, em todo o leitor ou noutras aplicações permitidas. Identifique os modelos exatos do televisor e do dispositivo de streaming. Uma diferença de cor não prova uma conta expirada nem uma falha geral. Registe os ajustes originais antes de uma pequena comparação; não reponha o televisor nem apague a configuração do leitor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare o controlo de formato documentado",
+          "paragraphs": [
+            "O guia de ecrã da Google abrange Chromecast com Google TV e Google TV Streamer. Em Todas as definições, abra Ecrã e som; os formatos disponíveis dependem do televisor. A Google descreve especificamente vídeo SDR demasiado saturado quando a saída HDR está ativa e recomenda a correspondência ao conteúdo nessa situação. Confira os controlos realmente disponíveis em vez de forçar todos os vídeos para HDR. O brilho é um ajuste separado do televisor; consulte o fabricante. Escolher um formato de saída não melhora a qualidade do programa original."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe as questões de acesso",
+          "paragraphs": [
+            "Se o efeito continuar, comunique em privado a aplicação, o tipo de conteúdo e as definições visíveis, sem palavras-passe nem endereços de reprodução. Confirme se o pedido Get IPTV é Opplex ou Filex e verifique pagamento e configuração separadamente. A licença do leitor pode ter custo adicional; as ligações permitidas da Filex precisam de confirmação. Comprar outra assinatura não é um remédio comprovado para uma definição de cor do televisor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Цвета HDR в Get IPTV: сначала проверьте видеовыход устройства",
+      "excerpt": "Слишком яркие цвета могут зависеть от выхода устройства Google. Проверяйте SDR и HDR отдельно от доступа провайдера и условий оплаченного тарифа.",
+      "seo_title": "Цвета HDR в Get IPTV: сначала проверьте видеовыход устройства",
+      "seo_description": "Слишком яркие цвета могут зависеть от выхода устройства Google. Проверяйте SDR и HDR отдельно от доступа провайдера и условий оплаченного тарифа.",
+      "sections": [
+        {
+          "heading": "Опишите проблему с цветом",
+          "paragraphs": [
+            "Если цвета HDR в Get IPTV выглядят чрезмерно насыщенными, сначала отметьте, касается ли это одного видео, всего плеера или других разрешённых приложений. Уточните точные модели телевизора и стримингового устройства. Разница в цвете сама по себе не доказывает окончание подписки или общий сбой. Запишите исходные настройки перед небольшим сравнением; не сбрасывайте телевизор и не удаляйте настройки плеера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните описанный регулятор формата",
+          "paragraphs": [
+            "Руководство Google по экрану относится к Chromecast с Google TV и Google TV Streamer. В общих настройках откройте раздел экрана и звука; доступные форматы зависят от телевизора. Google отдельно описывает перенасыщенное SDR-видео при включённом выходе HDR и рекомендует соответствие содержимому в такой ситуации. Проверяйте реальные параметры устройства, а не принудительно переводите все видео в HDR. Яркость настраивается отдельно на телевизоре: обратитесь к его производителю. Выбор выходного формата не улучшает качество исходной программы."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отделите вопросы доступа",
+          "paragraphs": [
+            "Если эффект остаётся, приватно сообщите приложение, тип содержимого и видимые настройки, без паролей и адресов воспроизведения. Уточните, относится заказ Get IPTV к Opplex или Filex, и отдельно проверьте оплату и настройку. Лицензия плеера может стоить дополнительно; подключения Filex требуют подтверждения. Покупка другой подписки не является доказанным решением проблемы цветовой настройки телевизора."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کے HDR رنگ: پہلے ڈیوائس کا آؤٹ پٹ دیکھیں",
+      "excerpt": "بہت تیز رنگ Google کی اسٹریمنگ ڈیوائس کے آؤٹ پٹ سے متعلق ہو سکتے ہیں۔ SDR اور HDR کی ترتیب کو فراہم کنندہ کی رسائی اور خریدے ہوئے پلان سے الگ دیکھیں۔",
+      "seo_title": "Get IPTV کے HDR رنگ: پہلے ڈیوائس کا آؤٹ پٹ دیکھیں",
+      "seo_description": "بہت تیز رنگ Google کی اسٹریمنگ ڈیوائس کے آؤٹ پٹ سے متعلق ہو سکتے ہیں۔ SDR اور HDR کی ترتیب کو فراہم کنندہ کی رسائی اور خریدے ہوئے پلان سے الگ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "رنگوں کا مسئلہ بیان کریں",
+          "paragraphs": [
+            "Get IPTV کے HDR رنگ غیر معمولی تیز لگیں تو پہلے لکھیں کہ مسئلہ ایک ویڈیو میں ہے، پورے پلیئر میں یا دوسری مجاز ایپس میں بھی۔ ٹی وی اور اسٹریمنگ ڈیوائس کے درست ماڈل پہچانیں۔ صرف رنگ کا فرق اکاؤنٹ ختم ہونے یا سب کی سروس بند ہونے کا ثبوت نہیں۔ چھوٹا موازنہ کرنے سے پہلے اصل ترتیب نوٹ کریں؛ نہ ٹی وی ری سیٹ کریں اور نہ پلیئر کی محفوظ ترتیب مٹائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "دستاویزی فارمیٹ اختیار سے موازنہ کریں",
+          "paragraphs": [
+            "Google کی ڈسپلے رہنمائی Google TV والے Chromecast اور Google TV Streamer کے لیے ہے۔ تمام سیٹنگز میں ڈسپلے اور ساؤنڈ کھولیں؛ دستیاب فارمیٹ ٹی وی پر منحصر ہیں۔ Google خاص طور پر بتاتا ہے کہ HDR آؤٹ پٹ فعال ہو تو SDR ویڈیو کے رنگ حد سے تیز ہو سکتے ہیں اور اس صورت میں مواد کے مطابق آؤٹ پٹ رکھنے کی تجویز دیتا ہے۔ ہر ویڈیو کو زبردستی HDR بنانے کے بجائے اپنے آلے کے اصل اختیارات دیکھیں۔ روشنی ٹی وی کی الگ ترتیب ہے؛ اس کے سازندے کی ہدایت پڑھیں۔ آؤٹ پٹ فارمیٹ منتخب کرنے سے اصل پروگرام کا معیار نہیں بڑھتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی کے سوال الگ رکھیں",
+          "paragraphs": [
+            "اثر برقرار ہو تو متاثرہ ایپ، مواد کی قسم اور نظر آنے والی ترتیب نجی طور پر بتائیں؛ پاس ورڈ اور پلے بیک پتے شامل نہ کریں۔ دیکھیں Get IPTV کا آرڈر Opplex کا ہے یا Filex کا اور اس کی ادائیگی اور سیٹ اپ الگ تصدیق کریں۔ پلیئر لائسنس کی اضافی قیمت ہو سکتی ہے اور Filex کے کنکشن کی اجازت تصدیق طلب ہے۔ ٹی وی کے رنگ کی ترتیب کے لیے دوسری سبسکرپشن خریدنا ثابت شدہ حل نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ألوان HDR في Get IPTV: افحص خرج الجهاز أولاً",
+      "excerpt": "قد ترتبط الألوان المبالغ فيها بخرج جهاز Google للبث. افحص إعدادات SDR وHDR بعيداً عن وصول المزوّد وتفاصيل الخطة المدفوعة.",
+      "seo_title": "ألوان HDR في Get IPTV: افحص خرج الجهاز أولاً",
+      "seo_description": "قد ترتبط الألوان المبالغ فيها بخرج جهاز Google للبث. افحص إعدادات SDR وHDR بعيداً عن وصول المزوّد وتفاصيل الخطة المدفوعة.",
+      "sections": [
+        {
+          "heading": "صِف مشكلة الألوان",
+          "paragraphs": [
+            "إذا بدت ألوان HDR في Get IPTV قوية بشكل غير معتاد، فسجّل أولاً هل يحدث ذلك مع فيديو واحد أو المشغّل كله أو تطبيقات أخرى مسموحة. حدّد طراز التلفزيون وجهاز البث بدقة. اختلاف اللون وحده لا يثبت انتهاء الحساب أو انقطاع الخدمة عموماً. احفظ الإعدادات الأصلية قبل مقارنة بسيطة؛ لا تعِد ضبط التلفزيون ولا تمسح إعداد المشغّل المحفوظ."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن خيار التنسيق الموثّق",
+          "paragraphs": [
+            "يشمل دليل عرض Google كلاً من Chromecast مع Google TV وGoogle TV Streamer. من جميع الإعدادات، افتح العرض والصوت؛ وتعتمد التنسيقات المتاحة على التلفزيون. تصف Google تحديداً زيادة تشبّع فيديو SDR عند تفعيل خرج HDR، وتقترح مطابقة المحتوى لهذه الحالة. افحص الخيارات الموجودة فعلاً في جهازك بدلاً من فرض HDR على كل فيديو. السطوع إعداد منفصل في التلفزيون؛ راجع تعليمات الشركة المصنّعة. اختيار تنسيق للخرج لا يرفع جودة البرنامج الأصلي."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل أسئلة الوصول",
+          "paragraphs": [
+            "إذا بقي التأثير، فأبلغ بصورة خاصة عن التطبيق ونوع المحتوى والإعدادات الظاهرة، دون كلمات مرور أو عناوين تشغيل. تحقّق هل طلب Get IPTV يخص Opplex أم Filex، وافحص حالة الدفع والإعداد بشكل منفصل. قد تضاف تكلفة لرخصة المشغّل، واتصالات Filex المسموحة ما زالت تحتاج تأكيداً. شراء اشتراك آخر ليس علاجاً مثبتاً لإعداد لون في التلفزيون."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV के HDR रंग: पहले डिवाइस का आउटपुट जाँचें",
+      "excerpt": "बहुत तेज़ रंग Google स्ट्रीमिंग डिवाइस के आउटपुट से जुड़े हो सकते हैं। SDR और HDR की सेटिंग को प्रदाता की पहुँच और खरीदे हुए प्लान से अलग देखें।",
+      "seo_title": "Get IPTV के HDR रंग: पहले डिवाइस का आउटपुट जाँचें",
+      "seo_description": "बहुत तेज़ रंग Google स्ट्रीमिंग डिवाइस के आउटपुट से जुड़े हो सकते हैं। SDR और HDR की सेटिंग को प्रदाता की पहुँच और खरीदे हुए प्लान से अलग देखें।",
+      "sections": [
+        {
+          "heading": "रंगों की समस्या बताएँ",
+          "paragraphs": [
+            "Get IPTV के HDR रंग असामान्य रूप से तेज़ लगें तो पहले नोट करें कि समस्या एक वीडियो में है, पूरे प्लेयर में या दूसरे अनुमत ऐप में भी। टेलीविज़न और स्ट्रीमिंग डिवाइस के सही मॉडल पहचानें। रंग का अंतर अकेले खाता समाप्त होने या सभी की सेवा बंद होने का प्रमाण नहीं है। छोटी तुलना से पहले मूल सेटिंग लिखें; न टेलीविज़न रीसेट करें और न प्लेयर का सहेजा हुआ सेटअप मिटाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "दस्तावेज़ वाले फ़ॉर्मैट नियंत्रण की तुलना करें",
+          "paragraphs": [
+            "Google की डिस्प्ले मार्गदर्शिका Google TV वाले Chromecast और Google TV Streamer के लिए है। सभी सेटिंग में डिस्प्ले और साउंड खोलें; उपलब्ध फ़ॉर्मैट टेलीविज़न पर निर्भर हैं। Google खास तौर पर बताता है कि HDR आउटपुट चालू होने पर SDR वीडियो के रंग ज़रूरत से अधिक तेज़ हो सकते हैं और उस स्थिति में सामग्री से मिलान की सलाह देता है। हर वीडियो को ज़बरदस्ती HDR बनाने के बजाय डिवाइस के वास्तविक विकल्प देखें। चमक टेलीविज़न का अलग समायोजन है; निर्माता की हिदायत पढ़ें। आउटपुट फ़ॉर्मैट चुनने से मूल कार्यक्रम की गुणवत्ता नहीं बढ़ती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहुँच के सवाल अलग रखें",
+          "paragraphs": [
+            "असर बना रहे तो संबंधित ऐप, सामग्री की किस्म और दिख रही सेटिंग निजी रूप से बताएँ; पासवर्ड और प्लेबैक पते शामिल न करें। पुष्टि करें कि Get IPTV का ऑर्डर Opplex का है या Filex का और उसका भुगतान तथा सेटअप अलग जाँचें। प्लेयर लाइसेंस का अतिरिक्त शुल्क हो सकता है और Filex कनेक्शन की अनुमति की पुष्टि चाहिए। टेलीविज़न के रंग की सेटिंग के लिए दूसरी सदस्यता खरीदना सिद्ध समाधान नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/chromecast/answer/10117046?co=GENIE.Platform%3DAndroid&hl=en",
+      "label": "Google streaming-device display settings and SDR saturation"
+    }
+  ]
+}

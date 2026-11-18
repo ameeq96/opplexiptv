@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-18",
+  "topic": "Read the installed player publisher’s release notes separately from a changed interface, installed version and Trex IPTV viewing entitlements.",
+  "primary_keyword": "Trex IPTV update notes",
+  "slug": "trex-player-update-notes-publisher-changes",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV update notes: what did the player publisher change?",
+      "excerpt": "Read the actual player’s release notes before linking a new interface or playback symptom to Trex IPTV. Keep the version, provider plan and account access separate.",
+      "seo_title": "Trex IPTV update notes: what did the player publisher change?",
+      "seo_description": "Read the actual player’s release notes before linking a new interface or playback symptom to Trex IPTV. Keep the version, provider plan and account access separate.",
+      "sections": [
+        {
+          "heading": "Match the note to the installed player",
+          "paragraphs": [
+            "A changed button after an update can make a familiar setup look different. Start with the exact player name and publisher on your Fire TV, not an app with a similar icon. Amazon explains that Appstore release notes appear in the listing’s Latest updates section. Where available, read those notes for the player you already use. This does not establish that Trex IPTV has a proprietary app or that an update is available for your device."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Record the particular change",
+          "paragraphs": [
+            "If the player shows its installed version, note it alongside the dated release note. Describe one observable difference: a renamed menu, a moved control, or a message at launch. A note saying fixes were made does not prove your specific symptom was fixed. Do not treat a store version number as confirmation of the version installed on the television. If the information is missing, say so rather than guessing."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep service terms and access separate",
+          "paragraphs": [
+            "A player update does not add provider viewing connections or confirm an account renewal. Trex IPTV 8K permits one simultaneous connection; finish playback before comparing another viewing device. Do not uninstall the player, erase saved setup, or pay again merely because a note looks new. For help, provide the app name, visible version and changed behaviour, leaving passwords and private playback addresses out of screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Notas de actualización de Trex IPTV: ¿qué cambió en el reproductor?",
+      "excerpt": "Lee las notas del reproductor real antes de relacionar una interfaz nueva o un fallo con Trex IPTV. Separa versión, condiciones del proveedor y acceso a la cuenta.",
+      "seo_title": "Notas de actualización de Trex IPTV: ¿qué cambió en el reproductor?",
+      "seo_description": "Lee las notas del reproductor real antes de relacionar una interfaz nueva o un fallo con Trex IPTV. Separa versión, condiciones del proveedor y acceso a la cuenta.",
+      "sections": [
+        {
+          "heading": "Relaciona la nota con el reproductor instalado",
+          "paragraphs": [
+            "Un botón cambiado tras actualizar puede hacer que una configuración conocida parezca distinta. Empieza por el nombre y editor exactos del reproductor de tu Fire TV, no por una aplicación con un icono parecido. Amazon explica que las notas aparecen en la sección de últimas actualizaciones de la ficha de Appstore. Si están disponibles, consulta las del reproductor que ya utilizas. Eso no demuestra que Trex IPTV tenga una aplicación propia ni que exista una actualización para tu dispositivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Anota el cambio concreto",
+          "paragraphs": [
+            "Si el reproductor muestra la versión instalada, anótala junto a la nota de actualización fechada. Describe una diferencia observable: un menú renombrado, un control desplazado o un mensaje al iniciar. Una nota que menciona correcciones no prueba que se haya resuelto tu síntoma concreto. El número de versión de la tienda no confirma cuál está instalado en el televisor. Si falta información, indícalo en lugar de adivinar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa condiciones del servicio y acceso",
+          "paragraphs": [
+            "Actualizar el reproductor no añade conexiones del proveedor ni confirma una renovación. Trex IPTV 8K permite una conexión simultánea; termina la reproducción antes de comparar otro dispositivo. No desinstales el reproductor, no borres la configuración guardada ni pagues de nuevo solo porque una nota parezca reciente. Para pedir ayuda, facilita nombre de la aplicación, versión visible y cambio observado, ocultando contraseñas y direcciones privadas de reproducción en las capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Notes de mise à jour Trex IPTV : qu’a changé l’éditeur du lecteur ?",
+      "excerpt": "Lisez les notes du lecteur réellement installé avant de relier une nouvelle interface ou un problème à Trex IPTV. Distinguez version, formule et accès au compte.",
+      "seo_title": "Notes de mise à jour Trex IPTV : qu’a changé l’éditeur du lecteur ?",
+      "seo_description": "Lisez les notes du lecteur réellement installé avant de relier une nouvelle interface ou un problème à Trex IPTV. Distinguez version, formule et accès au compte.",
+      "sections": [
+        {
+          "heading": "Associez la note au lecteur installé",
+          "paragraphs": [
+            "Un bouton modifié après une mise à jour peut rendre inhabituelle une configuration connue. Partez du nom exact du lecteur et de son éditeur sur votre Fire TV, sans choisir une application à l’icône ressemblante. Amazon explique que les notes figurent dans la rubrique des dernières mises à jour de la fiche Appstore. Si elles sont disponibles, lisez celles du lecteur que vous utilisez déjà. Cela ne prouve ni que Trex IPTV possède une application propriétaire, ni qu’une mise à jour existe pour votre appareil."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Notez le changement précis",
+          "paragraphs": [
+            "Si le lecteur affiche sa version installée, relevez-la avec la note datée. Décrivez une différence observable : menu renommé, commande déplacée ou message au lancement. Une note annonçant des corrections ne prouve pas que votre problème particulier est résolu. Le numéro indiqué dans la boutique ne confirme pas la version installée sur le téléviseur. Si une information manque, dites-le au lieu de la deviner."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez conditions du service et accès",
+          "paragraphs": [
+            "Une mise à jour du lecteur n’ajoute pas de connexions et ne confirme pas le renouvellement d’un compte. Trex IPTV 8K autorise une connexion simultanée ; terminez la lecture avant de comparer un autre appareil. Ne désinstallez pas le lecteur, n’effacez pas les réglages enregistrés et ne payez pas à nouveau parce qu’une note semble récente. Pour obtenir de l’aide, indiquez application, version visible et comportement modifié, en masquant mots de passe et adresses privées de lecture sur les captures."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Note di aggiornamento Trex IPTV: cosa ha cambiato l’editore del lettore?",
+      "excerpt": "Leggi le note del lettore effettivo prima di collegare una nuova interfaccia o un problema a Trex IPTV. Distingui versione, piano del fornitore e accesso all’account.",
+      "seo_title": "Note di aggiornamento Trex IPTV: cosa ha cambiato l’editore del lettore?",
+      "seo_description": "Leggi le note del lettore effettivo prima di collegare una nuova interfaccia o un problema a Trex IPTV. Distingui versione, piano del fornitore e accesso all’account.",
+      "sections": [
+        {
+          "heading": "Abbina la nota al lettore installato",
+          "paragraphs": [
+            "Un pulsante cambiato dopo un aggiornamento può far sembrare diversa una configurazione familiare. Parti dal nome esatto del lettore e dal suo editore sul Fire TV, senza scegliere un’app con un’icona simile. Amazon spiega che le note compaiono nella sezione degli ultimi aggiornamenti della scheda Appstore. Se disponibili, leggi quelle del lettore che usi già. Questo non dimostra che Trex IPTV abbia un’app proprietaria né che sia disponibile un aggiornamento per il tuo dispositivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Annota la modifica specifica",
+          "paragraphs": [
+            "Se il lettore mostra la versione installata, annotala insieme alla nota datata. Descrivi una differenza osservabile: un menu rinominato, un comando spostato o un messaggio all’avvio. Una nota che annuncia correzioni non prova che il tuo sintomo specifico sia risolto. Il numero di versione nel negozio non conferma quello installato sul televisore. Se manca un’informazione, dichiaralo invece di indovinare."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa condizioni del servizio e accesso",
+          "paragraphs": [
+            "Aggiornare il lettore non aggiunge connessioni del fornitore e non conferma un rinnovo. Trex IPTV 8K consente una connessione simultanea; termina la riproduzione prima di confrontare un altro dispositivo. Non disinstallare il lettore, non cancellare la configurazione salvata e non pagare nuovamente soltanto perché una nota sembra recente. Per assistenza, comunica nome dell’app, versione visibile e comportamento cambiato, escludendo password e indirizzi privati di riproduzione dalle schermate."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-updatenotities: wat veranderde de uitgever van de speler?",
+      "excerpt": "Lees de notities van de echte speler voordat je een nieuwe interface of afspeelprobleem aan Trex IPTV koppelt. Houd versie, abonnement en accounttoegang uit elkaar.",
+      "seo_title": "Trex IPTV-updatenotities: wat veranderde de uitgever van de speler?",
+      "seo_description": "Lees de notities van de echte speler voordat je een nieuwe interface of afspeelprobleem aan Trex IPTV koppelt. Houd versie, abonnement en accounttoegang uit elkaar.",
+      "sections": [
+        {
+          "heading": "Controleer bij welke speler de notitie hoort",
+          "paragraphs": [
+            "Een gewijzigde knop na een update kan een vertrouwde inrichting anders laten lijken. Begin met de exacte spelernaam en uitgever op je Fire TV, niet met een app met een vergelijkbaar pictogram. Amazon legt uit dat releasenotities bij de nieuwste updates op de Appstore-detailpagina staan. Lees, indien beschikbaar, die van de speler die je al gebruikt. Dat bewijst niet dat Trex IPTV een eigen app heeft of dat er voor jouw apparaat een update klaarstaat."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Noteer de concrete verandering",
+          "paragraphs": [
+            "Toont de speler zijn geïnstalleerde versie, schrijf die dan op naast de gedateerde releasenotitie. Beschrijf één zichtbare verandering: een hernoemd menu, verplaatste knop of melding bij het openen. Een algemene vermelding van oplossingen bewijst niet dat jouw specifieke probleem is opgelost. Het versienummer in de winkel bevestigt niet welke versie op de televisie staat. Vermeld ontbrekende informatie als onbekend in plaats van te gokken."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Houd voorwaarden en toegang apart",
+          "paragraphs": [
+            "Een spelerupdate voegt geen providerverbindingen toe en bevestigt geen verlenging. Trex IPTV 8K staat één gelijktijdige verbinding toe; beëindig afspelen voordat je een ander kijkapparaat vergelijkt. Verwijder de speler of opgeslagen instellingen niet en betaal niet opnieuw omdat een notitie nieuw lijkt. Geef voor hulp de appnaam, zichtbare versie en veranderd gedrag door. Laat wachtwoorden en privéafspeeladressen buiten schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Notas de atualização Trex IPTV: o que mudou no leitor?",
+      "excerpt": "Leia as notas do leitor realmente instalado antes de associar uma nova interface ou falha ao Trex IPTV. Separe versão, plano do fornecedor e acesso à conta.",
+      "seo_title": "Notas de atualização Trex IPTV: o que mudou no leitor?",
+      "seo_description": "Leia as notas do leitor realmente instalado antes de associar uma nova interface ou falha ao Trex IPTV. Separe versão, plano do fornecedor e acesso à conta.",
+      "sections": [
+        {
+          "heading": "Associe a nota ao leitor instalado",
+          "paragraphs": [
+            "Um botão alterado após atualizar pode tornar diferente uma configuração conhecida. Comece pelo nome e pelo editor exatos do leitor no Fire TV, não por uma aplicação com ícone semelhante. A Amazon explica que as notas aparecem na secção das últimas atualizações da ficha Appstore. Quando disponíveis, leia as do leitor que já utiliza. Isso não demonstra que o Trex IPTV tenha uma aplicação própria nem que exista uma atualização para o seu dispositivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Registe a alteração concreta",
+          "paragraphs": [
+            "Se o leitor apresentar a versão instalada, anote-a juntamente com a nota datada. Descreva uma diferença observável: um menu com outro nome, um controlo deslocado ou uma mensagem ao iniciar. Uma nota sobre correções não prova que o seu sintoma específico ficou resolvido. O número de versão na loja não confirma qual está instalado no televisor. Quando faltar informação, indique essa ausência em vez de adivinhar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe condições do serviço e acesso",
+          "paragraphs": [
+            "Uma atualização do leitor não acrescenta ligações do fornecedor nem confirma a renovação da conta. O Trex IPTV 8K permite uma ligação simultânea; termine a reprodução antes de comparar outro dispositivo. Não desinstale o leitor, não apague a configuração guardada e não repita o pagamento só porque uma nota parece recente. Para obter ajuda, indique nome da aplicação, versão visível e comportamento alterado, ocultando palavras-passe e endereços privados de reprodução nas capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Примечания к обновлению Trex IPTV: что изменил издатель плеера?",
+      "excerpt": "Читайте примечания именно своего проигрывателя, прежде чем связывать новый интерфейс или сбой с Trex IPTV. Разделяйте версию приложения, тариф и доступ к аккаунту.",
+      "seo_title": "Примечания к обновлению Trex IPTV: что изменил издатель плеера?",
+      "seo_description": "Читайте примечания именно своего проигрывателя, прежде чем связывать новый интерфейс или сбой с Trex IPTV. Разделяйте версию приложения, тариф и доступ к аккаунту.",
+      "sections": [
+        {
+          "heading": "Сопоставьте примечание с установленным плеером",
+          "paragraphs": [
+            "Изменившаяся после обновления кнопка может сделать знакомую настройку непривычной. Сначала уточните точное название проигрывателя и его издателя на Fire TV, не выбирая приложение по похожему значку. Amazon поясняет, что примечания доступны в разделе последних обновлений страницы Appstore. Если они есть, прочитайте описание именно используемого плеера. Это не доказывает наличие собственного приложения Trex IPTV или доступность обновления для вашего устройства."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "Запишите конкретное изменение",
+          "paragraphs": [
+            "Если проигрыватель показывает установленную версию, запишите её вместе с датированным примечанием. Опишите одно наблюдаемое отличие: переименованное меню, перемещённую кнопку или сообщение при запуске. Упоминание исправлений не доказывает устранение именно вашего симптома. Номер версии в магазине не подтверждает, что она установлена на телевизоре. Если сведений нет, сообщите об этом вместо предположений."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отделяйте условия сервиса от доступа",
+          "paragraphs": [
+            "Обновление проигрывателя не добавляет подключений провайдера и не подтверждает продление аккаунта. Trex IPTV 8K допускает одно одновременное подключение; завершайте воспроизведение перед сравнением другого устройства. Не удаляйте проигрыватель, не стирайте сохранённые настройки и не платите повторно только потому, что примечание выглядит новым. Для помощи укажите приложение, видимую версию и изменившееся поведение, исключив пароли и приватные адреса воспроизведения со снимков экрана."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کی تازہ کاری کے نوٹس: پلیئر کے ناشر نے کیا بدلا؟",
+      "excerpt": "نئے انٹرفیس یا پلے بیک مسئلے کو Trex IPTV سے جوڑنے سے پہلے اصل پلیئر کے نوٹس پڑھیں۔ ورژن، فراہم کنندہ کے پلان اور اکاؤنٹ رسائی کو الگ سمجھیں۔",
+      "seo_title": "Trex IPTV کی تازہ کاری کے نوٹس: پلیئر کے ناشر نے کیا بدلا؟",
+      "seo_description": "نئے انٹرفیس یا پلے بیک مسئلے کو Trex IPTV سے جوڑنے سے پہلے اصل پلیئر کے نوٹس پڑھیں۔ ورژن، فراہم کنندہ کے پلان اور اکاؤنٹ رسائی کو الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "نوٹ کو نصب شدہ پلیئر سے ملائیں",
+          "paragraphs": [
+            "تازہ کاری کے بعد بدلا ہوا بٹن مانوس ترتیب کو مختلف دکھا سکتا ہے۔ اپنے Fire TV پر پلیئر کا درست نام اور ناشر دیکھیں، ملتے جلتے نشان والی دوسری ایپ نہیں۔ Amazon کے مطابق Appstore کی تفصیلی فہرست میں تازہ ترین اپ ڈیٹس کے حصے میں تبدیلیوں کے نوٹس ملتے ہیں۔ دستیاب ہوں تو اسی پلیئر کے نوٹس پڑھیں جو آپ استعمال کرتے ہیں۔ اس سے نہ Trex IPTV کی ذاتی ایپ ثابت ہوتی ہے، نہ آپ کے آلے کے لیے تازہ کاری دستیاب ہونا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "خاص تبدیلی نوٹ کریں",
+          "paragraphs": [
+            "پلیئر نصب شدہ ورژن دکھائے تو اسے تاریخ والے تبدیلی نوٹ کے ساتھ لکھیں۔ ایک نظر آنے والا فرق بیان کریں: بدلا ہوا مینو نام، منتقل کیا گیا کنٹرول یا آغاز کا پیغام۔ اصلاحات کا عمومی ذکر آپ کے خاص مسئلے کے حل کا ثبوت نہیں۔ اسٹور میں لکھا ورژن ٹی وی پر نصب ورژن کی تصدیق نہیں کرتا۔ معلومات نہ ملیں تو اندازہ لگانے کے بجائے یہ بات واضح کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "سروس کی شرائط اور رسائی الگ رکھیں",
+          "paragraphs": [
+            "پلیئر کی تازہ کاری فراہم کنندہ کے مزید کنکشن نہیں دیتی اور اکاؤنٹ کی تجدید ثابت نہیں کرتی۔ Trex IPTV 8K میں ایک وقت میں ایک کنکشن ہے؛ دوسرے آلے کا موازنہ کرنے سے پہلے پلے بیک ختم کریں۔ صرف نوٹ نیا دکھنے پر نہ پلیئر اَن انسٹال کریں، نہ محفوظ ترتیب مٹائیں اور نہ دوبارہ ادائیگی کریں۔ مدد لیتے وقت ایپ کا نام، نظر آنے والا ورژن اور بدلا ہوا رویہ بتائیں؛ اسکرین شاٹ میں پاس ورڈ اور نجی پلے بیک پتے شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ملاحظات تحديث Trex IPTV: ماذا غيّر ناشر المشغّل؟",
+      "excerpt": "اقرأ ملاحظات المشغّل الفعلي قبل ربط واجهة جديدة أو مشكلة تشغيل بـ Trex IPTV. افصل إصدار التطبيق عن خطة المزوّد والوصول إلى الحساب.",
+      "seo_title": "ملاحظات تحديث Trex IPTV: ماذا غيّر ناشر المشغّل؟",
+      "seo_description": "اقرأ ملاحظات المشغّل الفعلي قبل ربط واجهة جديدة أو مشكلة تشغيل بـ Trex IPTV. افصل إصدار التطبيق عن خطة المزوّد والوصول إلى الحساب.",
+      "sections": [
+        {
+          "heading": "طابق الملاحظة مع المشغّل المثبّت",
+          "paragraphs": [
+            "قد يجعل زر تغيّر بعد التحديث الإعداد المألوف يبدو مختلفاً. ابدأ باسم المشغّل وناشره بدقة على Fire TV، لا بتطبيق ذي رمز مشابه. توضح Amazon أن ملاحظات الإصدار تظهر في قسم آخر التحديثات بصفحة تفاصيل Appstore. اقرأ ملاحظات المشغّل الذي تستخدمه فعلاً إن توفرت. لا يثبت هذا أن لدى Trex IPTV تطبيقاً خاصاً أو أن تحديثاً متاح لجهازك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "دوّن التغيير المحدد",
+          "paragraphs": [
+            "إذا عرض المشغّل إصداره المثبّت، فاكتبه إلى جانب ملاحظة الإصدار المؤرخة. صف فرقاً واحداً قابلاً للملاحظة: قائمة تغيّر اسمها أو أداة نُقلت أو رسالة عند البدء. ذكر إصلاحات لا يثبت معالجة العَرَض المحدد لديك. رقم الإصدار في المتجر لا يؤكد الإصدار المثبّت على التلفزيون. إذا غابت المعلومات، فاذكر غيابها بدلاً من التخمين."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل شروط الخدمة عن الوصول",
+          "paragraphs": [
+            "لا يضيف تحديث المشغّل اتصالات مشاهدة لدى المزوّد ولا يؤكد تجديد الحساب. يسمح Trex IPTV 8K باتصال متزامن واحد؛ أنهِ التشغيل قبل المقارنة بجهاز مشاهدة آخر. لا تحذف المشغّل ولا تمسح الإعداد المحفوظ ولا تكرر الدفع لمجرد أن الملاحظة تبدو جديدة. لطلب المساعدة، قدّم اسم التطبيق والإصدار الظاهر والسلوك المتغيّر، مع إبعاد كلمات المرور وعناوين التشغيل الخاصة عن لقطات الشاشة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV अपडेट के नोट: प्लेयर के प्रकाशक ने क्या बदला?",
+      "excerpt": "नई स्क्रीन या प्लेबैक की समस्या को Trex IPTV से जोड़ने से पहले असली प्लेयर के बदलाव पढ़ें। संस्करण, प्रदाता का प्लान और खाते का एक्सेस अलग रखें।",
+      "seo_title": "Trex IPTV अपडेट के नोट: प्लेयर के प्रकाशक ने क्या बदला?",
+      "seo_description": "नई स्क्रीन या प्लेबैक की समस्या को Trex IPTV से जोड़ने से पहले असली प्लेयर के बदलाव पढ़ें। संस्करण, प्रदाता का प्लान और खाते का एक्सेस अलग रखें।",
+      "sections": [
+        {
+          "heading": "नोट को इंस्टॉल किए हुए प्लेयर से मिलाएँ",
+          "paragraphs": [
+            "अपडेट के बाद बदला बटन परिचित सेटअप को अलग दिखा सकता है। अपने Fire TV पर प्लेयर का सही नाम और प्रकाशक देखें, मिलते-जुलते आइकन वाला दूसरा ऐप नहीं। Amazon बताता है कि Appstore विवरण में नवीनतम अपडेट वाले भाग में संस्करण के नोट मिलते हैं। उपलब्ध हों तो उसी प्लेयर के नोट पढ़ें जिसे आप इस्तेमाल करते हैं। इससे न Trex IPTV का अपना ऐप होना सिद्ध होता है, न आपके उपकरण के लिए अपडेट उपलब्ध होना।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html"
+            }
+          ]
+        },
+        {
+          "heading": "खास बदलाव दर्ज करें",
+          "paragraphs": [
+            "प्लेयर इंस्टॉल किया संस्करण दिखाए तो उसे तारीख वाले नोट के साथ लिखें। एक दिखाई देने वाला अंतर बताएँ: बदला मेन्यू नाम, दूसरी जगह पहुँचा नियंत्रण या शुरू होने का संदेश। सुधार किए जाने की बात आपके खास लक्षण के ठीक होने का प्रमाण नहीं है। स्टोर में लिखा संस्करण टीवी पर इंस्टॉल संस्करण की पुष्टि नहीं करता। जानकारी न मिले तो अनुमान लगाने के बजाय यही बताएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सेवा की शर्तें और एक्सेस अलग रखें",
+          "paragraphs": [
+            "प्लेयर अपडेट प्रदाता के अधिक देखने वाले कनेक्शन नहीं देता और खाते का नवीनीकरण साबित नहीं करता। Trex IPTV 8K में एक समय पर एक कनेक्शन है; दूसरे उपकरण की तुलना से पहले प्लेबैक समाप्त करें। केवल नोट नया दिखने पर न प्लेयर अनइंस्टॉल करें, न सहेजा सेटअप मिटाएँ और न दोबारा भुगतान करें। सहायता के लिए ऐप का नाम, दिखाई देने वाला संस्करण और बदला व्यवहार बताएँ; स्क्रीनशॉट में पासवर्ड और निजी प्लेबैक पते शामिल न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://developer.amazon.com/docs/app-submission/add-release-details.html",
+      "label": "Amazon Appstore: release notes and listing details"
+    }
+  ]
+}

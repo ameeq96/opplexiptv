@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-18",
+  "topic": "Interpret a changed local calendar expiry display during travel separately from the confirmed IPTV Subscription provider timestamp, renewal order and payment state.",
+  "primary_keyword": "IPTV Subscription expiry time",
+  "slug": "iptvsubscription-expiry-time-zone-before-renewal",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription expiry time: check the time zone first",
+      "excerpt": "A local calendar can display a different hour after travel. Compare the provider’s confirmed expiry and time zone before assuming your plan changed.",
+      "seo_title": "IPTV Subscription expiry time: check the time zone first",
+      "seo_description": "A local calendar can display a different hour after travel. Compare the provider’s confirmed expiry and time zone before assuming your plan changed.",
+      "sections": [
+        {
+          "heading": "Keep the original timestamp",
+          "paragraphs": [
+            "An IPTV Subscription expiry time should come from the actual provider record, with its date and named time zone. Identify whether your order is Opplex or Filex before asking about a deadline. If a message gives only a date, ask what that means instead of inventing a midnight cutoff. A payment date alone does not establish when access started or ends; activation timing must be confirmed separately."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read the calendar display correctly",
+          "paragraphs": [
+            "Google explains that Calendar events appear in your local time zone, including when you travel. The same event can therefore show another hour without a provider extending or shortening access. On a computer, open the event’s editing screen and inspect its Time zone field before comparing it with the original confirmation. Record the location or named zone alongside the time. Do not infer an exact deadline from a vague label or manually add an assumed daylight-saving offset."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Resolve uncertainty before another order",
+          "paragraphs": [
+            "Send support the two dates and time-zone labels privately, without passwords or payment-card details. Ask which provider timestamp controls access and whether an existing renewal is already recorded. Review the current duration, currency and total before paying again. Player licensing can cost separately; Filex connection allowances need confirmation. Changing a calendar display neither renews your service nor proves a payment failed."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Hora de vencimiento de IPTV Subscription: comprueba la zona horaria",
+      "excerpt": "Al viajar, el calendario puede mostrar otra hora. Compara el vencimiento y la zona horaria confirmados por el proveedor antes de suponer un cambio de plan.",
+      "seo_title": "Hora de vencimiento de IPTV Subscription: comprueba la zona horaria",
+      "seo_description": "Al viajar, el calendario puede mostrar otra hora. Compara el vencimiento y la zona horaria confirmados por el proveedor antes de suponer un cambio de plan.",
+      "sections": [
+        {
+          "heading": "Conserva la fecha y hora originales",
+          "paragraphs": [
+            "La hora de vencimiento de IPTV Subscription debe proceder del registro del proveedor, con fecha y zona horaria identificada. Comprueba si el pedido corresponde a Opplex o Filex antes de preguntar por el límite. Si el mensaje solo indica una fecha, pide que la aclaren en lugar de inventar un corte a medianoche. La fecha del pago no demuestra cuándo comenzó o termina el acceso; el momento de activación requiere confirmación aparte."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Interpreta bien el calendario",
+          "paragraphs": [
+            "Google explica que los eventos de Calendar aparecen en tu zona horaria local, también al viajar. Por eso un mismo evento puede mostrar otra hora sin que el proveedor amplíe o reduzca el acceso. En un ordenador, abre la edición del evento y revisa el campo Zona horaria antes de compararlo con la confirmación original. Anota la ubicación o la zona identificada junto a la hora. Una etiqueta imprecisa no establece el vencimiento exacto; tampoco añadas un ajuste supuesto de horario de verano."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Aclara la duda antes de otro pedido",
+          "paragraphs": [
+            "Envía a soporte ambas fechas y sus zonas horarias en privado, sin contraseñas ni datos de tarjeta. Pregunta qué registro del proveedor determina el acceso y si ya consta una renovación. Revisa duración, moneda y total actuales antes de pagar otra vez. La licencia del reproductor puede cobrarse aparte; confirma las conexiones permitidas de Filex. Cambiar la visualización del calendario no renueva el servicio ni demuestra un pago fallido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Heure d’expiration IPTV Subscription : vérifiez le fuseau horaire",
+      "excerpt": "Un calendrier peut afficher une autre heure après un voyage. Comparez l’expiration et le fuseau confirmés par le fournisseur avant de supposer un changement d’offre.",
+      "seo_title": "Heure d’expiration IPTV Subscription : vérifiez le fuseau horaire",
+      "seo_description": "Un calendrier peut afficher une autre heure après un voyage. Comparez l’expiration et le fuseau confirmés par le fournisseur avant de supposer un changement d’offre.",
+      "sections": [
+        {
+          "heading": "Conservez l’horodatage d’origine",
+          "paragraphs": [
+            "L’heure d’expiration IPTV Subscription doit provenir du dossier du fournisseur, avec sa date et son fuseau horaire identifié. Vérifiez si la commande concerne Opplex ou Filex avant de demander l’échéance. Si un message indique seulement une date, demandez une précision au lieu d’inventer une coupure à minuit. La date du paiement ne prouve pas quand l’accès commence ou se termine ; l’heure d’activation doit être confirmée séparément."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Interprétez correctement le calendrier",
+          "paragraphs": [
+            "Google indique que les événements de Calendar s’affichent dans votre fuseau local, notamment lorsque vous voyagez. Le même événement peut donc présenter une autre heure sans prolongation ni réduction de l’accès par le fournisseur. Sur ordinateur, ouvrez la modification de l’événement et vérifiez son champ Fuseau horaire avant de comparer avec la confirmation d’origine. Notez le lieu ou le fuseau identifié à côté de l’heure. Ne déduisez pas une échéance précise d’un libellé vague et n’ajoutez pas un décalage saisonnier supposé."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Clarifiez avant une nouvelle commande",
+          "paragraphs": [
+            "Transmettez en privé au support les deux dates et leurs fuseaux, sans mot de passe ni données de carte. Demandez quel horodatage du fournisseur détermine l’accès et si un renouvellement est déjà enregistré. Vérifiez la durée, la devise et le total actuels avant de repayer. La licence du lecteur peut être distincte ; les connexions autorisées de Filex restent à confirmer. Modifier l’affichage du calendrier ne renouvelle pas le service et ne prouve pas l’échec d’un paiement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Scadenza di IPTV Subscription: controlla prima il fuso orario",
+      "excerpt": "Dopo un viaggio il calendario può mostrare un’altra ora. Confronta scadenza e fuso confermati dal fornitore prima di pensare che l’abbonamento sia cambiato.",
+      "seo_title": "Scadenza di IPTV Subscription: controlla prima il fuso orario",
+      "seo_description": "Dopo un viaggio il calendario può mostrare un’altra ora. Confronta scadenza e fuso confermati dal fornitore prima di pensare che l’abbonamento sia cambiato.",
+      "sections": [
+        {
+          "heading": "Conserva data e ora originali",
+          "paragraphs": [
+            "L’orario di scadenza dell’abbonamento IPTV Subscription deve provenire dal registro del fornitore, con data e fuso identificato. Verifica se l’ordine riguarda Opplex o Filex prima di chiedere il termine. Se un messaggio riporta soltanto una data, chiedi una spiegazione invece di inventare un’interruzione a mezzanotte. La data del pagamento non stabilisce quando l’accesso inizia o finisce; l’attivazione va confermata separatamente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi correttamente il calendario",
+          "paragraphs": [
+            "Google spiega che gli eventi di Calendar vengono visualizzati nel fuso locale, anche durante un viaggio. Lo stesso evento può quindi mostrare un’altra ora senza che il fornitore prolunghi o accorci l’accesso. Da computer, apri la modifica dell’evento e controlla il campo Fuso orario prima del confronto con la conferma originale. Annota la località o il fuso identificato accanto all’ora. Non ricavare una scadenza esatta da un’etichetta vaga e non aggiungere uno scarto presunto per l’ora legale."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chiarisci prima di un altro ordine",
+          "paragraphs": [
+            "Invia privatamente all’assistenza le due date e i relativi fusi, senza password o dati della carta. Chiedi quale orario del fornitore determina l’accesso e se risulta già un rinnovo. Controlla durata, valuta e totale attuali prima di pagare di nuovo. La licenza del lettore può avere un costo separato; le connessioni Filex vanno confermate. Cambiare la visualizzazione del calendario non rinnova il servizio e non dimostra un pagamento fallito."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Eindtijd van IPTV Subscription: controleer eerst de tijdzone",
+      "excerpt": "Een kalender kan na een reis een ander uur tonen. Vergelijk de bevestigde eindtijd en tijdzone van de aanbieder voordat je een gewijzigd abonnement veronderstelt.",
+      "seo_title": "Eindtijd van IPTV Subscription: controleer eerst de tijdzone",
+      "seo_description": "Een kalender kan na een reis een ander uur tonen. Vergelijk de bevestigde eindtijd en tijdzone van de aanbieder voordat je een gewijzigd abonnement veronderstelt.",
+      "sections": [
+        {
+          "heading": "Bewaar de oorspronkelijke tijdsaanduiding",
+          "paragraphs": [
+            "De eindtijd van IPTV Subscription moet uit de administratie van de aanbieder komen, inclusief datum en benoemde tijdzone. Controleer of je bestelling Opplex of Filex betreft voordat je naar de termijn vraagt. Noemt een bericht alleen een datum, vraag dan wat die betekent in plaats van een afsluiting om middernacht te verzinnen. De betaaldatum bewijst niet wanneer toegang begon of eindigt; het activeringsmoment moet apart worden bevestigd."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de kalenderweergave goed",
+          "paragraphs": [
+            "Google legt uit dat afspraken in Calendar in je lokale tijdzone verschijnen, ook wanneer je reist. Dezelfde afspraak kan daardoor een ander uur tonen zonder dat de aanbieder toegang verlengt of verkort. Open op een computer de bewerkingsweergave van de afspraak en bekijk het veld Tijdzone voordat je met de oorspronkelijke bevestiging vergelijkt. Noteer de plaats of benoemde zone naast het tijdstip. Leid geen precieze eindtijd af uit een vaag label en tel geen veronderstelde zomertijdcorrectie op."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Los twijfel op vóór een volgende bestelling",
+          "paragraphs": [
+            "Stuur de twee datums met tijdzones privé naar ondersteuning, zonder wachtwoorden of kaartgegevens. Vraag welke tijdsaanduiding van de aanbieder de toegang bepaalt en of een verlenging al geregistreerd staat. Bekijk actuele looptijd, valuta en totaal voordat je opnieuw betaalt. Een spelerlicentie kan apart kosten; vraag bevestiging van Filex-verbindingen. Een gewijzigde kalenderweergave verlengt je dienst niet en bewijst geen mislukte betaling."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Hora de expiração da IPTV Subscription: confirme o fuso horário",
+      "excerpt": "Depois de viajar, o calendário pode mostrar outra hora. Compare a expiração e o fuso confirmados pelo fornecedor antes de presumir uma alteração do plano.",
+      "seo_title": "Hora de expiração da IPTV Subscription: confirme o fuso horário",
+      "seo_description": "Depois de viajar, o calendário pode mostrar outra hora. Compare a expiração e o fuso confirmados pelo fornecedor antes de presumir uma alteração do plano.",
+      "sections": [
+        {
+          "heading": "Guarde a data e a hora originais",
+          "paragraphs": [
+            "A hora de expiração da IPTV Subscription deve vir do registo do fornecedor, com a data e o fuso horário identificado. Confirme se o pedido é Opplex ou Filex antes de perguntar pelo prazo. Se uma mensagem indicar apenas uma data, peça esclarecimentos em vez de inventar um corte à meia-noite. A data de pagamento não estabelece quando o acesso começou ou termina; o momento da ativação precisa de confirmação separada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Interprete corretamente o calendário",
+          "paragraphs": [
+            "A Google explica que os eventos do Calendário aparecem no fuso local, incluindo durante viagens. Assim, o mesmo evento pode mostrar outra hora sem que o fornecedor prolongue ou reduza o acesso. Num computador, abra a edição do evento e verifique o campo Fuso horário antes de comparar com a confirmação original. Anote o local ou o fuso identificado junto da hora. Não deduza um prazo exato de uma indicação vaga nem acrescente uma diferença presumida de horário de verão."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Esclareça antes de outro pedido",
+          "paragraphs": [
+            "Envie ao suporte as duas datas e os respetivos fusos em privado, sem palavras-passe nem dados do cartão. Pergunte qual registo horário do fornecedor determina o acesso e se já consta uma renovação. Reveja duração, moeda e total atuais antes de pagar novamente. A licença do leitor pode ser cobrada à parte; confirme as ligações permitidas da Filex. Alterar a apresentação do calendário não renova o serviço nem prova uma falha de pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Время окончания IPTV Subscription: сначала проверьте часовой пояс",
+      "excerpt": "После поездки календарь может показывать другой час. Сравните подтверждённое время окончания и часовой пояс провайдера, прежде чем считать тариф изменённым.",
+      "seo_title": "Время окончания IPTV Subscription: сначала проверьте часовой пояс",
+      "seo_description": "После поездки календарь может показывать другой час. Сравните подтверждённое время окончания и часовой пояс провайдера, прежде чем считать тариф изменённым.",
+      "sections": [
+        {
+          "heading": "Сохраните исходную дату и время",
+          "paragraphs": [
+            "Время окончания IPTV Subscription нужно брать из записи провайдера вместе с датой и указанным часовым поясом. Перед уточнением срока определите, относится заказ к Opplex или Filex. Если в сообщении есть только дата, спросите её значение, а не придумывайте отключение в полночь. Дата оплаты не устанавливает начало и конец доступа; момент активации требует отдельного подтверждения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Правильно прочитайте календарь",
+          "paragraphs": [
+            "Google объясняет, что события Календаря показываются в местном часовом поясе, в том числе во время поездок. Поэтому одно событие может отображаться в другой час, хотя провайдер не продлевал и не сокращал доступ. На компьютере откройте редактирование события и проверьте поле часового пояса перед сравнением с исходным подтверждением. Запишите рядом со временем место или название пояса. Не выводите точный срок из неясной подписи и не добавляйте предполагаемую поправку на летнее время."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Уточните перед новым заказом",
+          "paragraphs": [
+            "Передайте поддержке обе даты и их часовые пояса приватно, без паролей и данных карты. Спросите, какое время в записи провайдера определяет доступ и зарегистрировано ли уже продление. Перед повторной оплатой проверьте актуальные срок, валюту и итог. Лицензия плеера может оплачиваться отдельно; допустимые подключения Filex нужно уточнить. Изменение отображения календаря не продлевает услугу и не доказывает сбой платежа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی میعاد کا وقت: پہلے ٹائم زون دیکھیں",
+      "excerpt": "سفر کے بعد کیلنڈر مختلف گھنٹہ دکھا سکتا ہے۔ پلان میں تبدیلی سمجھنے سے پہلے فراہم کنندہ کی تصدیق شدہ میعاد اور ٹائم زون کا موازنہ کریں۔",
+      "seo_title": "IPTV Subscription کی میعاد کا وقت: پہلے ٹائم زون دیکھیں",
+      "seo_description": "سفر کے بعد کیلنڈر مختلف گھنٹہ دکھا سکتا ہے۔ پلان میں تبدیلی سمجھنے سے پہلے فراہم کنندہ کی تصدیق شدہ میعاد اور ٹائم زون کا موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "اصل تاریخ اور وقت محفوظ رکھیں",
+          "paragraphs": [
+            "IPTV Subscription کی میعاد ختم ہونے کا وقت فراہم کنندہ کے اصل ریکارڈ سے لیں، جس میں تاریخ اور واضح ٹائم زون ہو۔ آخری وقت پوچھنے سے پہلے دیکھیں کہ آرڈر Opplex کا ہے یا Filex کا۔ پیغام میں صرف تاریخ ہو تو اس کا مطلب پوچھیں؛ خود سے آدھی رات کو بندش فرض نہ کریں۔ ادائیگی کی تاریخ سے رسائی کا آغاز یا اختتام ثابت نہیں ہوتا؛ ایکٹیویشن کا وقت الگ تصدیق طلب ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "کیلنڈر کی نمائش درست سمجھیں",
+          "paragraphs": [
+            "Google کے مطابق کیلنڈر کے ایونٹس مقامی ٹائم زون میں دکھتے ہیں، سفر کے دوران بھی۔ اس لیے ایک ہی ایونٹ دوسرا گھنٹہ دکھا سکتا ہے، چاہے فراہم کنندہ نے رسائی نہ بڑھائی ہو نہ گھٹائی ہو۔ کمپیوٹر پر ایونٹ کی ترمیم کھولیں اور اصل تصدیق سے ملانے سے پہلے اس کا ٹائم زون دیکھیں۔ وقت کے ساتھ مقام یا زون کا نام لکھیں۔ مبہم لیبل سے قطعی آخری وقت نہ نکالیں اور اپنی طرف سے گرمیوں کے وقت کا فرق شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دوسرے آرڈر سے پہلے شک دور کریں",
+          "paragraphs": [
+            "دونوں تاریخیں اور ان کے ٹائم زون سپورٹ کو نجی طور پر بھیجیں؛ پاس ورڈ اور کارڈ کی تفصیل شامل نہ کریں۔ پوچھیں کہ رسائی کس تصدیق شدہ وقت کے مطابق ختم ہوتی ہے اور کوئی تجدید پہلے سے درج تو نہیں۔ دوبارہ ادائیگی سے پہلے موجودہ مدت، کرنسی اور کل رقم دیکھیں۔ پلیئر لائسنس کی الگ قیمت ہو سکتی ہے؛ Filex کے کنکشن کی اجازت تصدیق طلب ہے۔ کیلنڈر کی نمائش بدلنے سے نہ سروس کی تجدید ہوتی ہے نہ ادائیگی کی ناکامی ثابت ہوتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "وقت انتهاء IPTV Subscription: تحقّق من المنطقة الزمنية أولاً",
+      "excerpt": "قد يعرض التقويم ساعة مختلفة بعد السفر. قارن وقت الانتهاء والمنطقة الزمنية اللذين أكدهما المزوّد قبل افتراض تغيّر الخطة.",
+      "seo_title": "وقت انتهاء IPTV Subscription: تحقّق من المنطقة الزمنية أولاً",
+      "seo_description": "قد يعرض التقويم ساعة مختلفة بعد السفر. قارن وقت الانتهاء والمنطقة الزمنية اللذين أكدهما المزوّد قبل افتراض تغيّر الخطة.",
+      "sections": [
+        {
+          "heading": "احتفظ بالتاريخ والوقت الأصليين",
+          "paragraphs": [
+            "ينبغي أخذ وقت انتهاء IPTV Subscription من سجل المزوّد الفعلي، مع التاريخ والمنطقة الزمنية المحددة. اعرف هل طلبك يخص Opplex أم Filex قبل الاستفسار عن الموعد. إذا ذكرت الرسالة تاريخاً فقط، فاطلب توضيحه بدلاً من افتراض قطع الخدمة عند منتصف الليل. تاريخ الدفع وحده لا يحدد بداية الوصول أو نهايته؛ يجب تأكيد توقيت التفعيل بصورة منفصلة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افهم طريقة عرض التقويم",
+          "paragraphs": [
+            "توضح Google أن أحداث التقويم تظهر وفق منطقتك الزمنية المحلية، حتى أثناء السفر. لذلك قد يظهر الحدث نفسه بساعة مختلفة دون أن يمدّد المزوّد الوصول أو يقصّره. على الكمبيوتر، افتح تعديل الحدث وافحص حقل المنطقة الزمنية قبل مقارنته بالتأكيد الأصلي. دوّن الموقع أو اسم المنطقة بجوار الوقت. لا تستنتج موعداً دقيقاً من تسمية مبهمة، ولا تضف فرقاً مفترضاً للتوقيت الصيفي من عندك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "أزل الالتباس قبل طلب جديد",
+          "paragraphs": [
+            "أرسل للدعم التاريخين وتسميتي المنطقتين الزمنيتين بصورة خاصة، دون كلمات مرور أو بيانات بطاقة. اسأل أي توقيت في سجل المزوّد يحدد الوصول، وهل سُجل تجديد بالفعل. راجع المدة والعملة والإجمالي الحالي قبل تكرار الدفع. قد تكون لرخصة المشغّل تكلفة منفصلة؛ وعدد اتصالات Filex يحتاج تأكيداً. تغيير عرض التقويم لا يجدّد الخدمة ولا يثبت فشل دفعة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription की समाप्ति का समय: पहले टाइम ज़ोन जाँचें",
+      "excerpt": "यात्रा के बाद कैलेंडर अलग घंटा दिखा सकता है। प्लान बदला मानने से पहले प्रदाता की पुष्टि वाली समाप्ति और टाइम ज़ोन की तुलना करें।",
+      "seo_title": "IPTV Subscription की समाप्ति का समय: पहले टाइम ज़ोन जाँचें",
+      "seo_description": "यात्रा के बाद कैलेंडर अलग घंटा दिखा सकता है। प्लान बदला मानने से पहले प्रदाता की पुष्टि वाली समाप्ति और टाइम ज़ोन की तुलना करें।",
+      "sections": [
+        {
+          "heading": "मूल तारीख और समय सुरक्षित रखें",
+          "paragraphs": [
+            "IPTV Subscription की समाप्ति का समय प्रदाता के वास्तविक रिकॉर्ड से लें, जिसमें तारीख और स्पष्ट टाइम ज़ोन हो। अंतिम समय पूछने से पहले देखें कि ऑर्डर Opplex का है या Filex का। संदेश में केवल तारीख हो तो उसका मतलब पूछें; अपने आप आधी रात को सेवा बंद होना न मानें। भुगतान की तारीख अकेले पहुँच का आरंभ या अंत तय नहीं करती; सक्रिय होने का समय अलग से पुष्ट होना चाहिए।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/calendar/answer/37064?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "कैलेंडर का प्रदर्शन ठीक समझें",
+          "paragraphs": [
+            "Google के अनुसार Calendar के इवेंट स्थानीय टाइम ज़ोन में दिखते हैं, यात्रा के दौरान भी। इसलिए वही इवेंट अलग घंटा दिखा सकता है, भले प्रदाता ने पहुँच बढ़ाई या घटाई न हो। कंप्यूटर पर इवेंट का संपादन खोलें और मूल पुष्टि से तुलना करने से पहले उसका टाइम ज़ोन वाला फ़ील्ड देखें। समय के साथ स्थान या ज़ोन का नाम लिखें। अस्पष्ट लेबल से सटीक अंतिम समय न निकालें और अपने आप डेलाइट सेविंग का अनुमानित अंतर न जोड़ें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दूसरे ऑर्डर से पहले संदेह दूर करें",
+          "paragraphs": [
+            "दोनों तारीखें और उनके टाइम ज़ोन सहायता को निजी रूप से भेजें; पासवर्ड और कार्ड विवरण शामिल न करें। पूछें कि प्रदाता का कौन-सा समय पहुँच निर्धारित करता है और कोई नवीनीकरण पहले से दर्ज तो नहीं है। दोबारा भुगतान से पहले वर्तमान अवधि, मुद्रा और कुल राशि देखें। प्लेयर लाइसेंस का अलग शुल्क हो सकता है; Filex कनेक्शन की अनुमति की पुष्टि चाहिए। कैलेंडर का प्रदर्शन बदलना सेवा का नवीनीकरण नहीं करता और भुगतान विफल होना साबित नहीं करता।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/calendar/answer/37064?hl=en",
+      "label": "Google Calendar time zones and local event display"
+    }
+  ]
+}

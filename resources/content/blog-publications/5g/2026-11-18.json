@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-18",
+  "topic": "Identify a dual-SIM Pixel mobile data preference separately from its calling line during 5G Live IPTV viewing without erasing eSIM access or assuming identical call behaviour across phone models.",
+  "primary_keyword": "5G Live IPTV mobile data SIM",
+  "slug": "5g-mobile-data-sim-check-the-selected-line",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV mobile data SIM: check which line carries data",
+      "excerpt": "On a dual-SIM Pixel, the line used for calls can differ from the data choice. Read the existing selection before blaming the player or buying extra data.",
+      "seo_title": "5G Live IPTV mobile data SIM: check which line carries data",
+      "seo_description": "On a dual-SIM Pixel, the line used for calls can differ from the data choice. Read the existing selection before blaming the player or buying extra data.",
+      "sections": [
+        {
+          "heading": "Identify the connection you are comparing",
+          "paragraphs": [
+            "A useful 5G Live IPTV mobile data SIM check starts with the phone, not a replacement subscription. If your Pixel has two active lines, note whether the affected viewing session uses Wi-Fi or mobile data. Then distinguish the SIM chosen for calls from the one selected for data. A familiar carrier name alone is not enough to identify the data preference."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read the current Pixel preference",
+          "paragraphs": [
+            "Google's dual-SIM guide lists Settings, Network and internet, then SIMs, with separate preferences for calls, texts and mobile data. Only one SIM can be the default for data. Read the existing choice first; labels and options depend on the phone and Android version. Also note whether the interruption occurs during a call. Call-related data behaviour varies by model and carrier, so do not apply another phone's instructions blindly."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keep the account and billing details safe",
+          "paragraphs": [
+            "If you choose to compare a different data line, first check its allowance and possible charges with your carrier. Keep the comparison short and record the previous preference. Do not erase an eSIM, change roaming or buy a new IPTV plan just to identify the selected line. Share the phone model, network type and visible error without SIM identifiers, account passwords or private stream links. One comparison cannot establish a service-wide outage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "SIM de datos de 5G Live IPTV: comprueba qué línea los transporta",
+      "excerpt": "En un Pixel con dos SIM, la línea de llamadas puede diferir de la de datos. Revisa la selección antes de culpar al reproductor o comprar más datos.",
+      "seo_title": "SIM de datos de 5G Live IPTV: comprueba qué línea los transporta",
+      "seo_description": "En un Pixel con dos SIM, la línea de llamadas puede diferir de la de datos. Revisa la selección antes de culpar al reproductor o comprar más datos.",
+      "sections": [
+        {
+          "heading": "Identifica la conexión que comparas",
+          "paragraphs": [
+            "Para comprobar la SIM de datos al usar 5G Live IPTV, empieza por el teléfono, no por sustituir la suscripción. Si tu Pixel tiene dos líneas activas, anota si la sesión afectada usa Wi-Fi o datos móviles. Distingue después la SIM elegida para llamadas de la seleccionada para datos. Reconocer el nombre del operador no basta para conocer la preferencia de datos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lee la preferencia actual del Pixel",
+          "paragraphs": [
+            "La guía de Google para dos SIM indica Ajustes, Redes e Internet y SIMs, con preferencias separadas para llamadas, mensajes y datos móviles. Solo una SIM puede ser la predeterminada para datos. Lee primero la elección existente: los nombres y opciones dependen del teléfono y Android. Anota también si el corte coincide con una llamada. El comportamiento de los datos durante llamadas varía según el modelo y el operador; no copies a ciegas instrucciones de otro teléfono."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Protege la cuenta y la facturación",
+          "paragraphs": [
+            "Si decides comparar otra línea de datos, consulta antes su franquicia y los posibles cargos con el operador. Haz una comparación breve y registra la preferencia anterior. No borres una eSIM, cambies la itinerancia ni compres otro plan IPTV solo para identificar la línea seleccionada. Comparte modelo, tipo de red y error visible sin identificadores SIM, contraseñas ni enlaces privados. Una comparación no demuestra una caída general."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "SIM de données 5G Live IPTV : vérifiez la ligne utilisée",
+      "excerpt": "Sur un Pixel à deux SIM, la ligne des appels peut différer de celle des données. Lisez le choix actuel avant d'accuser le lecteur ou d'acheter des données.",
+      "seo_title": "SIM de données 5G Live IPTV : vérifiez la ligne utilisée",
+      "seo_description": "Sur un Pixel à deux SIM, la ligne des appels peut différer de celle des données. Lisez le choix actuel avant d'accuser le lecteur ou d'acheter des données.",
+      "sections": [
+        {
+          "heading": "Identifiez la connexion comparée",
+          "paragraphs": [
+            "Pour vérifier la SIM de données pendant l'utilisation de 5G Live IPTV, commencez par le téléphone plutôt que par un nouvel abonnement. Si votre Pixel possède deux lignes actives, notez si la séance concernée utilise le Wi-Fi ou les données mobiles. Distinguez ensuite la SIM des appels de celle sélectionnée pour les données. Un nom d'opérateur familier ne suffit pas à identifier cette préférence."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lisez la préférence actuelle du Pixel",
+          "paragraphs": [
+            "Le guide Google sur deux SIM indique Paramètres, Réseau et Internet, puis Cartes SIM, avec des préférences distinctes pour appels, messages et données mobiles. Une seule SIM peut être celle par défaut pour les données. Lisez d'abord le choix existant : les libellés et options dépendent du téléphone et d'Android. Notez aussi si l'interruption survient pendant un appel. Le comportement des données en appel varie selon le modèle et l'opérateur ; n'appliquez pas aveuglément les consignes d'un autre téléphone."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Protégez le compte et la facturation",
+          "paragraphs": [
+            "Si vous choisissez de comparer une autre ligne de données, vérifiez d'abord son enveloppe et les frais possibles auprès de l'opérateur. Limitez la comparaison et notez la préférence précédente. N'effacez pas une eSIM, ne changez pas l'itinérance et n'achetez pas un autre forfait IPTV simplement pour identifier la ligne. Communiquez modèle, type de réseau et erreur visible sans identifiant SIM, mot de passe ni lien privé. Une comparaison ne prouve pas une panne générale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "SIM dati per 5G Live IPTV: controlla quale linea li trasporta",
+      "excerpt": "Su un Pixel con due SIM, la linea per chiamare può differire da quella dati. Leggi la scelta attuale prima di accusare il lettore o acquistare altri dati.",
+      "seo_title": "SIM dati per 5G Live IPTV: controlla quale linea li trasporta",
+      "seo_description": "Su un Pixel con due SIM, la linea per chiamare può differire da quella dati. Leggi la scelta attuale prima di accusare il lettore o acquistare altri dati.",
+      "sections": [
+        {
+          "heading": "Identifica la connessione da confrontare",
+          "paragraphs": [
+            "Per controllare la SIM dati durante l'uso di 5G Live IPTV, parti dal telefono anziché sostituire l'abbonamento. Se il Pixel ha due linee attive, annota se la sessione interessata usa Wi-Fi o dati mobili. Distingui poi la SIM delle chiamate da quella scelta per i dati. Il nome familiare di un operatore non basta a identificare la preferenza dati."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi la preferenza attuale del Pixel",
+          "paragraphs": [
+            "La guida Google sulle due SIM indica Impostazioni, Rete e Internet, poi SIM, con preferenze separate per chiamate, messaggi e dati mobili. Solo una SIM può essere quella predefinita per i dati. Leggi prima la scelta esistente: nomi e opzioni dipendono dal telefono e da Android. Annota anche se l'interruzione avviene durante una chiamata. Il comportamento dei dati in chiamata varia per modello e operatore; non applicare alla cieca le istruzioni di un altro telefono."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Proteggi account e costi",
+          "paragraphs": [
+            "Se scegli di confrontare un'altra linea dati, verifica prima la sua disponibilità e gli eventuali costi con l'operatore. Mantieni breve il confronto e annota la preferenza precedente. Non cancellare una eSIM, cambiare il roaming o acquistare un altro abbonamento IPTV soltanto per identificare la linea selezionata. Condividi modello, tipo di rete ed errore visibile senza identificativi SIM, password o collegamenti privati. Un confronto non dimostra un'interruzione generale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en de datasim: controleer welke lijn data gebruikt",
+      "excerpt": "Bij een Pixel met twee simkaarten kan bellen een andere lijn gebruiken dan data. Lees de bestaande keuze voordat je de speler verdenkt of extra data koopt.",
+      "seo_title": "5G Live IPTV en de datasim: controleer welke lijn data gebruikt",
+      "seo_description": "Bij een Pixel met twee simkaarten kan bellen een andere lijn gebruiken dan data. Lees de bestaande keuze voordat je de speler verdenkt of extra data koopt.",
+      "sections": [
+        {
+          "heading": "Herken de verbinding die je vergelijkt",
+          "paragraphs": [
+            "Een nuttige controle van de datasim voor 5G Live IPTV begint bij de telefoon, niet bij een vervangend abonnement. Heeft je Pixel twee actieve lijnen, noteer dan of de betrokken kijksessie wifi of mobiele data gebruikt. Onderscheid daarna de sim voor bellen van de sim die voor data is gekozen. Alleen een bekende providernaam vertelt je de datavoorkeur niet."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de huidige Pixel-voorkeur",
+          "paragraphs": [
+            "De Google-handleiding voor twee simkaarten noemt Instellingen, Netwerk en internet en vervolgens Simkaarten, met aparte voorkeuren voor bellen, berichten en mobiele data. Slechts één sim kan standaard voor data zijn. Lees eerst de bestaande keuze; namen en opties verschillen per telefoon en Android-versie. Noteer ook of de onderbreking tijdens een gesprek optreedt. Datagebruik tijdens bellen verschilt per model en provider, dus volg aanwijzingen voor een andere telefoon niet blindelings."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bescherm account en kosten",
+          "paragraphs": [
+            "Wil je een andere datalijn vergelijken, controleer dan eerst de bundel en eventuele kosten bij je provider. Houd de vergelijking kort en noteer de vorige voorkeur. Wis geen eSIM, verander roaming niet en koop geen nieuw IPTV-abonnement alleen om de gekozen lijn te herkennen. Deel model, netwerktype en zichtbare fout zonder simidentificatienummers, wachtwoorden of privéstreamlinks. Eén vergelijking bewijst geen algemene storing."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "SIM de dados do 5G Live IPTV: confira qual linha os utiliza",
+      "excerpt": "Num Pixel com dois SIM, a linha das chamadas pode ser diferente da linha de dados. Leia a escolha atual antes de culpar o leitor ou comprar mais dados.",
+      "seo_title": "SIM de dados do 5G Live IPTV: confira qual linha os utiliza",
+      "seo_description": "Num Pixel com dois SIM, a linha das chamadas pode ser diferente da linha de dados. Leia a escolha atual antes de culpar o leitor ou comprar mais dados.",
+      "sections": [
+        {
+          "heading": "Identifique a ligação que vai comparar",
+          "paragraphs": [
+            "Uma verificação útil do SIM de dados ao usar 5G Live IPTV começa pelo telefone, não por substituir a assinatura. Se o Pixel tem duas linhas ativas, anote se a sessão afetada usa Wi-Fi ou dados móveis. Depois distinga o SIM escolhido para chamadas daquele selecionado para dados. Reconhecer o nome da operadora não basta para identificar a preferência de dados."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leia a preferência atual do Pixel",
+          "paragraphs": [
+            "O guia Google para dois SIM indica Definições, Rede e Internet e depois SIMs, com preferências separadas para chamadas, mensagens e dados móveis. Apenas um SIM pode ser o predefinido para dados. Leia primeiro a escolha existente; nomes e opções dependem do telefone e do Android. Anote também se a interrupção ocorre durante uma chamada. O comportamento dos dados em chamada varia conforme o modelo e a operadora; não aplique cegamente instruções de outro telefone."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Proteja a conta e os custos",
+          "paragraphs": [
+            "Se decidir comparar outra linha de dados, confirme antes a franquia e os possíveis custos com a operadora. Faça uma comparação curta e registe a preferência anterior. Não apague um eSIM, não altere o roaming nem compre outra assinatura IPTV apenas para identificar a linha escolhida. Partilhe modelo, tipo de rede e erro visível sem identificadores SIM, palavras-passe ou ligações privadas. Uma comparação não demonstra uma falha geral."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "SIM для данных 5G Live IPTV: проверьте выбранную линию",
+      "excerpt": "В Pixel с двумя SIM линия звонков может отличаться от линии данных. Проверьте текущий выбор, прежде чем винить проигрыватель или покупать дополнительный трафик.",
+      "seo_title": "SIM для данных 5G Live IPTV: проверьте выбранную линию",
+      "seo_description": "В Pixel с двумя SIM линия звонков может отличаться от линии данных. Проверьте текущий выбор, прежде чем винить проигрыватель или покупать дополнительный трафик.",
+      "sections": [
+        {
+          "heading": "Определите сравниваемое подключение",
+          "paragraphs": [
+            "Полезная проверка SIM для мобильных данных при просмотре 5G Live IPTV начинается с телефона, а не с замены подписки. Если в Pixel активны две линии, запишите, использует ли проблемный сеанс Wi-Fi или мобильные данные. Затем отличите SIM для звонков от выбранной для данных. Одного знакомого названия оператора недостаточно, чтобы определить предпочтение передачи данных."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Прочитайте текущую настройку Pixel",
+          "paragraphs": [
+            "В руководстве Google для двух SIM указаны настройки, раздел сети и интернета, затем SIM-карты с отдельными предпочтениями для звонков, сообщений и мобильных данных. Только одна SIM может быть основной для данных. Сначала прочитайте существующий выбор: названия и возможности зависят от телефона и Android. Также отметьте, совпадает ли прерывание со звонком. Передача данных во время разговора зависит от модели и оператора; не переносите инструкции другого телефона вслепую."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Берегите учётную запись и расходы",
+          "paragraphs": [
+            "Если решите сравнить другую линию данных, сначала уточните у оператора доступный пакет и возможную плату. Сделайте сравнение коротким и запишите прежний выбор. Не стирайте eSIM, не меняйте роуминг и не покупайте новый тариф IPTV только ради определения выбранной линии. Сообщите модель, тип сети и видимую ошибку без идентификаторов SIM, паролей и приватных ссылок. Одно сравнение не доказывает общий сбой."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کے موبائل ڈیٹا کی سم: منتخب لائن دیکھیں",
+      "excerpt": "دو سم والے Pixel میں کال اور ڈیٹا کی لائن الگ ہو سکتی ہے۔ پلیئر کو قصوروار سمجھنے یا مزید ڈیٹا خریدنے سے پہلے موجودہ انتخاب پڑھیں۔",
+      "seo_title": "5G Live IPTV کے موبائل ڈیٹا کی سم: منتخب لائن دیکھیں",
+      "seo_description": "دو سم والے Pixel میں کال اور ڈیٹا کی لائن الگ ہو سکتی ہے۔ پلیئر کو قصوروار سمجھنے یا مزید ڈیٹا خریدنے سے پہلے موجودہ انتخاب پڑھیں۔",
+      "sections": [
+        {
+          "heading": "موازنے والا کنکشن پہچانیں",
+          "paragraphs": [
+            "5G Live IPTV کے لیے موبائل ڈیٹا کی سم جانچنے کا مفید آغاز فون سے ہوتا ہے، نئی سبسکرپشن سے نہیں۔ Pixel میں دو فعال لائنیں ہوں تو نوٹ کریں متاثرہ سیشن وائی فائی استعمال کرتا ہے یا موبائل ڈیٹا۔ پھر کال کے لیے منتخب سم کو ڈیٹا والی سم سے الگ پہچانیں۔ صرف کسی مانوس موبائل کمپنی کا نام دیکھنا ڈیٹا کی ترجیح جاننے کے لیے کافی نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Pixel کی موجودہ ترجیح پڑھیں",
+          "paragraphs": [
+            "Google کی دو سم والی رہنمائی ترتیبات، نیٹ ورک اور انٹرنیٹ، پھر سمز میں کال، پیغام اور موبائل ڈیٹا کی الگ ترجیحات بتاتی ہے۔ صرف ایک سم ڈیٹا کی طے شدہ سم ہو سکتی ہے۔ پہلے موجودہ انتخاب پڑھیں؛ نام اور اختیارات فون اور اینڈرائڈ کے مطابق بدلتے ہیں۔ یہ بھی لکھیں رکاوٹ کال کے دوران آتی ہے یا نہیں۔ کال کے وقت ڈیٹا کا رویہ ماڈل اور کمپنی کے مطابق مختلف ہوتا ہے، اس لیے دوسرے فون کی ہدایات بلا سوچے نہ اپنائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اکاؤنٹ اور بل کی معلومات محفوظ رکھیں",
+          "paragraphs": [
+            "دوسری ڈیٹا لائن کا موازنہ کرنا چاہیں تو پہلے کمپنی سے اس کی دستیاب مقدار اور ممکنہ چارجز پوچھیں۔ موازنہ مختصر رکھیں اور پرانی ترجیح لکھ لیں۔ صرف منتخب لائن پہچاننے کے لیے نہ ای سم مٹائیں، نہ رومنگ بدلیں اور نہ نیا IPTV پلان خریدیں۔ فون ماڈل، نیٹ ورک کی قسم اور نظر آنے والی خرابی بتائیں؛ سم کے شناختی نمبر، پاس ورڈ اور نجی اسٹریم لنک شامل نہ کریں۔ ایک موازنہ عمومی سروس بندش ثابت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "شريحة بيانات 5G Live IPTV: تحقق من الخط الذي ينقل البيانات",
+      "excerpt": "في Pixel بشريحتين قد يختلف خط المكالمات عن خط البيانات. اقرأ الاختيار الحالي قبل اتهام المشغّل أو شراء بيانات إضافية.",
+      "seo_title": "شريحة بيانات 5G Live IPTV: تحقق من الخط الذي ينقل البيانات",
+      "seo_description": "في Pixel بشريحتين قد يختلف خط المكالمات عن خط البيانات. اقرأ الاختيار الحالي قبل اتهام المشغّل أو شراء بيانات إضافية.",
+      "sections": [
+        {
+          "heading": "حدّد الاتصال الذي تقارنه",
+          "paragraphs": [
+            "يبدأ فحص شريحة بيانات الهاتف أثناء استخدام 5G Live IPTV من الهاتف، لا من استبدال الاشتراك. إذا كان في Pixel خطان نشطان، فدوّن هل تستخدم الجلسة المتأثرة Wi-Fi أم بيانات الهاتف. ثم ميّز الشريحة المختارة للمكالمات عن الشريحة المحددة للبيانات. لا يكفي اسم شركة اتصالات مألوف وحده لمعرفة تفضيل البيانات."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ تفضيل Pixel الحالي",
+          "paragraphs": [
+            "يوضح دليل Google للشريحتين مسار الإعدادات ثم الشبكة والإنترنت ثم شرائح SIM، مع تفضيلات منفصلة للمكالمات والرسائل وبيانات الهاتف. يمكن أن تكون شريحة واحدة فقط هي الافتراضية للبيانات. اقرأ الاختيار الموجود أولاً؛ تختلف التسميات والخيارات حسب الهاتف وإصدار Android. دوّن أيضاً هل يحدث الانقطاع أثناء مكالمة. يختلف سلوك البيانات خلال المكالمات بحسب الطراز وشركة الاتصالات، فلا تطبق تعليمات هاتف آخر دون تحقق."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احفظ معلومات الحساب والتكاليف",
+          "paragraphs": [
+            "إذا اخترت مقارنة خط بيانات آخر، فتحقق أولاً من باقته والتكاليف المحتملة مع شركة الاتصالات. اجعل المقارنة قصيرة وسجّل التفضيل السابق. لا تمسح eSIM ولا تغيّر التجوال ولا تشتر خطة IPTV جديدة لمجرد تحديد الخط المختار. شارك طراز الهاتف ونوع الشبكة والخطأ الظاهر دون معرّفات الشريحة أو كلمات المرور أو روابط البث الخاصة. لا تثبت مقارنة واحدة انقطاعاً عاماً للخدمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV की मोबाइल डेटा SIM: देखें डेटा किस लाइन से जाता है",
+      "excerpt": "दो SIM वाले Pixel में कॉल और डेटा की लाइन अलग हो सकती है। प्लेयर को दोष देने या अतिरिक्त डेटा खरीदने से पहले मौजूदा चुनाव पढ़ें।",
+      "seo_title": "5G Live IPTV की मोबाइल डेटा SIM: देखें डेटा किस लाइन से जाता है",
+      "seo_description": "दो SIM वाले Pixel में कॉल और डेटा की लाइन अलग हो सकती है। प्लेयर को दोष देने या अतिरिक्त डेटा खरीदने से पहले मौजूदा चुनाव पढ़ें।",
+      "sections": [
+        {
+          "heading": "तुलना वाला कनेक्शन पहचानें",
+          "paragraphs": [
+            "5G Live IPTV के लिए मोबाइल डेटा SIM की उपयोगी जाँच फोन से शुरू होती है, नई सदस्यता से नहीं। Pixel में दो सक्रिय लाइनें हों तो लिखें कि प्रभावित सत्र वाई-फ़ाई इस्तेमाल करता है या मोबाइल डेटा। फिर कॉल के लिए चुनी SIM को डेटा वाली SIM से अलग पहचानें। सिर्फ़ परिचित मोबाइल कंपनी का नाम देखना डेटा की प्राथमिकता जानने के लिए काफ़ी नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/pixelphone/answer/9449293?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Pixel की मौजूदा प्राथमिकता पढ़ें",
+          "paragraphs": [
+            "Google की दो SIM वाली मार्गदर्शिका सेटिंग, नेटवर्क और इंटरनेट, फिर SIM में कॉल, संदेश और मोबाइल डेटा की अलग प्राथमिकताएँ बताती है। केवल एक SIM डेटा की डिफ़ॉल्ट SIM हो सकती है। पहले मौजूदा चुनाव पढ़ें; नाम और विकल्प फोन व Android के अनुसार बदलते हैं। यह भी लिखें कि रुकावट कॉल के दौरान आती है या नहीं। कॉल के समय डेटा का व्यवहार मॉडल और कंपनी के अनुसार बदलता है, इसलिए दूसरे फोन के निर्देश बिना जाँचे न अपनाएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "खाते और खर्च की जानकारी सुरक्षित रखें",
+          "paragraphs": [
+            "दूसरी डेटा लाइन की तुलना करना चाहें तो पहले कंपनी से उसकी उपलब्ध मात्रा और संभावित शुल्क पूछें। तुलना छोटी रखें और पिछली प्राथमिकता लिख लें। सिर्फ़ चुनी लाइन पहचानने के लिए न eSIM मिटाएँ, न रोमिंग बदलें और न नया IPTV प्लान खरीदें। फोन मॉडल, नेटवर्क का प्रकार और दिख रही त्रुटि बताएँ; SIM पहचान नंबर, पासवर्ड और निजी स्ट्रीम लिंक न जोड़ें। एक तुलना पूरी सेवा में खराबी साबित नहीं करती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.google.com/pixelphone/answer/9449293?hl=en",
+      "label": "Google Pixel dual-SIM preferences guide"
+    }
+  ]
+}

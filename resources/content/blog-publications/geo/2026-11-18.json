@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-18",
+  "topic": "Distinguish Apple TV Bluetooth headphone connection loss from a frozen Geo IPTV picture and record accessory range, charge and connection state before changing saved player setup.",
+  "primary_keyword": "Geo IPTV Bluetooth headphones",
+  "slug": "geo-bluetooth-headphones-check-the-accessory",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV Bluetooth headphones: check the accessory before the stream",
+      "excerpt": "If Apple TV video keeps moving but headphones fall silent, check the Bluetooth accessory and record what changes before replacing your player setup.",
+      "seo_title": "Geo IPTV Bluetooth headphones: check the accessory before the stream",
+      "seo_description": "If Apple TV video keeps moving but headphones fall silent, check the Bluetooth accessory and record what changes before replacing your player setup.",
+      "sections": [
+        {
+          "heading": "Notice what actually stops",
+          "paragraphs": [
+            "During Geo IPTV viewing, headphone silence and a frozen picture are different observations. Watch whether the programme continues moving and whether the headphones still appear connected. If the television speakers are also involved, note which output you expected to hear. A single silent accessory does not establish that the provider is down or that your subscription needs renewing."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Inspect the existing Bluetooth connection",
+          "paragraphs": [
+            "On Apple TV, open Settings, then Remotes and Devices, then Bluetooth to find the named accessory. Apple's guidance recommends checking its power, charge, range and nearby interference when a Bluetooth connection is unreliable. Follow the accessory maker's instructions for its model. Do not pair with an unfamiliar device simply because it appears nearby, and avoid repeatedly forgetting a working pairing before noting its state."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Describe a useful comparison",
+          "paragraphs": [
+            "With the owner's permission, check whether another permitted video behaves the same way through that accessory. Record whether only the sound stops, whether moving nearer changes it, and the Apple TV and headphone models. Keep volume at a comfortable level. Send those observations without account passwords or private playback addresses. This separates an accessory enquiry from a player report; it does not prove the cause. Preserve saved player details rather than resetting the whole television setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Auriculares Bluetooth con Geo IPTV: revisa el accesorio antes del servicio",
+      "excerpt": "Si el vídeo del Apple TV sigue avanzando pero los auriculares quedan en silencio, revisa el accesorio Bluetooth y anota los cambios antes de sustituir la configuración.",
+      "seo_title": "Auriculares Bluetooth con Geo IPTV: revisa el accesorio antes del servicio",
+      "seo_description": "Si el vídeo del Apple TV sigue avanzando pero los auriculares quedan en silencio, revisa el accesorio Bluetooth y anota los cambios antes de sustituir la configuración.",
+      "sections": [
+        {
+          "heading": "Observa qué se detiene",
+          "paragraphs": [
+            "Al ver Geo IPTV, el silencio de los auriculares y una imagen congelada son observaciones distintas. Comprueba si el programa sigue avanzando y si los auriculares aún figuran como conectados. Si también intervienen los altavoces del televisor, anota por qué salida esperabas escuchar. Un solo accesorio sin sonido no demuestra una caída del proveedor ni que debas renovar la suscripción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa la conexión Bluetooth existente",
+          "paragraphs": [
+            "En Apple TV, abre Ajustes, Mandos y dispositivos y después Bluetooth para localizar el accesorio por su nombre. Apple recomienda comprobar la alimentación, la carga, la distancia y las interferencias cercanas cuando la conexión Bluetooth es inestable. Sigue las instrucciones del fabricante para ese modelo. No enlaces un dispositivo desconocido solo porque aparezca cerca y evita olvidar repetidamente un enlace que funcionaba antes de registrar su estado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Prepara una comparación útil",
+          "paragraphs": [
+            "Con permiso del propietario, comprueba si otro vídeo autorizado se comporta igual con ese accesorio. Anota si solo se corta el sonido, si acercarte cambia el resultado y los modelos de Apple TV y auriculares. Mantén un volumen cómodo. Envía esas observaciones sin contraseñas ni direcciones privadas de reproducción. Así distingues una consulta sobre el accesorio de un informe del reproductor; no demuestra la causa. Conserva los datos guardados en vez de restablecer toda la instalación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Casque Bluetooth et Geo IPTV : vérifiez l'accessoire avant le flux",
+      "excerpt": "Si l'image Apple TV continue mais que le casque devient silencieux, examinez l'accessoire Bluetooth et notez les changements avant de remplacer la configuration.",
+      "seo_title": "Casque Bluetooth et Geo IPTV : vérifiez l'accessoire avant le flux",
+      "seo_description": "Si l'image Apple TV continue mais que le casque devient silencieux, examinez l'accessoire Bluetooth et notez les changements avant de remplacer la configuration.",
+      "sections": [
+        {
+          "heading": "Repérez ce qui s'arrête",
+          "paragraphs": [
+            "Pendant une séance Geo IPTV, un casque silencieux et une image figée constituent deux observations différentes. Regardez si le programme continue et si le casque apparaît toujours connecté. Si les haut-parleurs du téléviseur interviennent aussi, notez la sortie que vous vouliez entendre. Un accessoire muet ne prouve ni une panne du fournisseur ni la nécessité de renouveler l'abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Examinez la connexion Bluetooth existante",
+          "paragraphs": [
+            "Sur Apple TV, ouvrez Réglages, Télécommandes et appareils, puis Bluetooth pour retrouver l'accessoire nommé. Apple conseille de vérifier son alimentation, sa charge, sa portée et les interférences proches lorsqu'une connexion Bluetooth manque de fiabilité. Suivez les instructions du fabricant pour ce modèle. Ne jumelez pas un appareil inconnu simplement parce qu'il apparaît à proximité et évitez d'oublier plusieurs fois un jumelage fonctionnel avant d'en relever l'état."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Décrivez une comparaison utile",
+          "paragraphs": [
+            "Avec l'accord du propriétaire, voyez si une autre vidéo autorisée présente le même comportement avec cet accessoire. Notez si seul le son s'arrête, si vous rapprocher change le résultat et les modèles du casque et de l'Apple TV. Gardez un volume confortable. Transmettez ces observations sans mot de passe ni adresse privée de lecture. Cela distingue une question sur l'accessoire d'un signalement concernant le lecteur, sans prouver la cause. Préservez les accès enregistrés plutôt que de réinitialiser toute l'installation."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cuffie Bluetooth con Geo IPTV: controlla l'accessorio prima del flusso",
+      "excerpt": "Se il video di Apple TV continua ma le cuffie diventano mute, controlla l'accessorio Bluetooth e annota i cambiamenti prima di sostituire la configurazione.",
+      "seo_title": "Cuffie Bluetooth con Geo IPTV: controlla l'accessorio prima del flusso",
+      "seo_description": "Se il video di Apple TV continua ma le cuffie diventano mute, controlla l'accessorio Bluetooth e annota i cambiamenti prima di sostituire la configurazione.",
+      "sections": [
+        {
+          "heading": "Osserva che cosa si interrompe",
+          "paragraphs": [
+            "Durante la visione di Geo IPTV, cuffie senza suono e immagine bloccata sono due osservazioni diverse. Guarda se il programma continua e se le cuffie risultano ancora collegate. Se entrano in gioco anche gli altoparlanti del televisore, annota quale uscita volevi ascoltare. Un solo accessorio muto non dimostra un guasto del fornitore né la necessità di rinnovare l'abbonamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Esamina il collegamento Bluetooth esistente",
+          "paragraphs": [
+            "Su Apple TV apri Impostazioni, Telecomandi e dispositivi, poi Bluetooth per trovare l'accessorio con il suo nome. Per un collegamento instabile, Apple consiglia di controllare alimentazione, carica, distanza e interferenze vicine. Segui le istruzioni del produttore per quel modello. Non abbinare un dispositivo sconosciuto soltanto perché compare nelle vicinanze ed evita di dimenticare ripetutamente un abbinamento funzionante prima di averne annotato lo stato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descrivi un confronto utile",
+          "paragraphs": [
+            "Con il permesso del proprietario, verifica se un altro video autorizzato si comporta allo stesso modo con quell'accessorio. Annota se si ferma soltanto l'audio, se avvicinarti cambia il risultato e i modelli di Apple TV e cuffie. Mantieni un volume confortevole. Invia le osservazioni senza password o indirizzi privati di riproduzione. Questo distingue una richiesta sull'accessorio da una segnalazione sul lettore, ma non dimostra la causa. Conserva i dati del lettore invece di ripristinare l'intera installazione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV met een Bluetooth-koptelefoon: controleer eerst het accessoire",
+      "excerpt": "Blijft het Apple TV-beeld bewegen terwijl de koptelefoon stilvalt? Bekijk het Bluetooth-accessoire en noteer veranderingen voordat je de speler opnieuw instelt.",
+      "seo_title": "Geo IPTV met een Bluetooth-koptelefoon: controleer eerst het accessoire",
+      "seo_description": "Blijft het Apple TV-beeld bewegen terwijl de koptelefoon stilvalt? Bekijk het Bluetooth-accessoire en noteer veranderingen voordat je de speler opnieuw instelt.",
+      "sections": [
+        {
+          "heading": "Bekijk wat precies stopt",
+          "paragraphs": [
+            "Tijdens Geo IPTV kijken zijn een stille koptelefoon en een vastgelopen beeld verschillende waarnemingen. Kijk of het programma blijft bewegen en of de koptelefoon nog verbonden lijkt. Spelen de televisieluidsprekers ook een rol, noteer dan welke uitgang je wilde horen. Eén stil accessoire bewijst geen storing bij de aanbieder en betekent niet dat je abonnement vernieuwd moet worden."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de bestaande Bluetooth-verbinding",
+          "paragraphs": [
+            "Open op Apple TV Instellingen, Afstandsbedieningen en apparaten en daarna Bluetooth om het genoemde accessoire te vinden. Apple adviseert bij een onbetrouwbare Bluetooth-verbinding voeding, acculading, afstand en storing in de omgeving te controleren. Volg de instructies van de fabrikant voor dat model. Koppel geen onbekend apparaat alleen omdat het dichtbij verschijnt. Laat een werkende koppeling ook niet herhaaldelijk vergeten voordat je de toestand hebt genoteerd."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Beschrijf een bruikbare vergelijking",
+          "paragraphs": [
+            "Controleer met toestemming van de eigenaar of een andere toegestane video hetzelfde doet via dat accessoire. Noteer of alleen het geluid stopt, of dichterbij komen verschil maakt en welke modellen Apple TV en koptelefoon je gebruikt. Houd het volume aangenaam. Deel de waarnemingen zonder wachtwoorden of privéafspeeladressen. Zo onderscheid je een accessoirevraag van een spelermelding; de oorzaak is daarmee niet bewezen. Bewaar de spelergegevens in plaats van de hele televisieopstelling te herstellen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Auscultadores Bluetooth e Geo IPTV: verifique primeiro o acessório",
+      "excerpt": "Se o vídeo da Apple TV continua mas os auscultadores ficam sem som, confira o acessório Bluetooth e anote as mudanças antes de substituir a configuração.",
+      "seo_title": "Auscultadores Bluetooth e Geo IPTV: verifique primeiro o acessório",
+      "seo_description": "Se o vídeo da Apple TV continua mas os auscultadores ficam sem som, confira o acessório Bluetooth e anote as mudanças antes de substituir a configuração.",
+      "sections": [
+        {
+          "heading": "Observe o que realmente para",
+          "paragraphs": [
+            "Durante a visualização de Geo IPTV, auscultadores sem som e uma imagem parada são observações diferentes. Veja se o programa continua a avançar e se os auscultadores ainda aparecem ligados. Se os altifalantes do televisor também estiverem envolvidos, anote a saída que esperava ouvir. Um acessório silencioso não prova uma falha do fornecedor nem que a assinatura precisa de renovação."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Inspecione a ligação Bluetooth existente",
+          "paragraphs": [
+            "Na Apple TV, abra Definições, Comandos e dispositivos e depois Bluetooth para encontrar o acessório pelo nome. A Apple recomenda verificar alimentação, carga, distância e interferências próximas quando uma ligação Bluetooth é instável. Siga as instruções do fabricante para esse modelo. Não emparelhe um dispositivo desconhecido só por aparecer nas proximidades e evite esquecer repetidamente um emparelhamento que funcionava antes de registar o estado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descreva uma comparação útil",
+          "paragraphs": [
+            "Com autorização do proprietário, veja se outro vídeo permitido se comporta da mesma forma através desse acessório. Anote se apenas o som para, se aproximar-se muda o resultado e os modelos da Apple TV e dos auscultadores. Mantenha um volume confortável. Envie as observações sem palavras-passe nem endereços privados de reprodução. Isto distingue uma questão sobre o acessório de um relato sobre o leitor, mas não prova a causa. Preserve os dados guardados em vez de repor toda a instalação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Bluetooth-наушники и Geo IPTV: сначала проверьте аксессуар",
+      "excerpt": "Если видео Apple TV продолжается, а наушники замолкают, проверьте Bluetooth-аксессуар и запишите изменения, прежде чем заново настраивать проигрыватель.",
+      "seo_title": "Bluetooth-наушники и Geo IPTV: сначала проверьте аксессуар",
+      "seo_description": "Если видео Apple TV продолжается, а наушники замолкают, проверьте Bluetooth-аксессуар и запишите изменения, прежде чем заново настраивать проигрыватель.",
+      "sections": [
+        {
+          "heading": "Определите, что именно останавливается",
+          "paragraphs": [
+            "При просмотре Geo IPTV тишина в наушниках и застывшее изображение — разные наблюдения. Посмотрите, продолжается ли движение в программе и остаются ли наушники подключёнными. Если участвуют динамики телевизора, запишите, через какой выход вы ожидали звук. Один молчащий аксессуар не доказывает сбой провайдера и не означает, что подписку пора продлевать."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте существующее соединение Bluetooth",
+          "paragraphs": [
+            "На Apple TV откройте настройки, раздел пультов и устройств, затем Bluetooth и найдите аксессуар по имени. При нестабильном соединении Apple рекомендует проверить питание, заряд, расстояние и помехи поблизости. Следуйте инструкции производителя для конкретной модели. Не подключайте незнакомое устройство только потому, что оно появилось рядом, и не удаляйте многократно работавшую пару, пока не записали её состояние."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Опишите полезное сравнение",
+          "paragraphs": [
+            "С разрешения владельца проверьте, повторяется ли поведение с другим разрешённым видео через тот же аксессуар. Запишите, исчезает ли только звук, помогает ли приблизиться, а также модели Apple TV и наушников. Сохраняйте комфортную громкость. Передайте наблюдения без паролей и приватных адресов воспроизведения. Это отделяет вопрос об аксессуаре от сообщения о проигрывателе, но не доказывает причину. Сохраните настройки доступа вместо сброса всей телевизионной системы."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کے ساتھ بلوٹوتھ ہیڈفون: پہلے لوازمہ دیکھیں",
+      "excerpt": "Apple TV کی تصویر چلتی رہے مگر ہیڈفون خاموش ہو جائیں تو پلیئر کی ترتیب بدلنے سے پہلے بلوٹوتھ لوازمہ دیکھیں اور تبدیلیاں نوٹ کریں۔",
+      "seo_title": "Geo IPTV کے ساتھ بلوٹوتھ ہیڈفون: پہلے لوازمہ دیکھیں",
+      "seo_description": "Apple TV کی تصویر چلتی رہے مگر ہیڈفون خاموش ہو جائیں تو پلیئر کی ترتیب بدلنے سے پہلے بلوٹوتھ لوازمہ دیکھیں اور تبدیلیاں نوٹ کریں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں اصل میں کیا رکتا ہے",
+          "paragraphs": [
+            "Geo IPTV دیکھتے وقت ہیڈفون کی خاموشی اور تصویر کا جم جانا الگ مشاہدے ہیں۔ دیکھیں پروگرام میں حرکت جاری ہے یا نہیں اور ہیڈفون اب بھی جڑے ہوئے دکھتے ہیں یا نہیں۔ ٹی وی کے اسپیکر بھی شامل ہوں تو لکھیں آپ کس آؤٹ پٹ سے آواز سننا چاہتے تھے۔ صرف ایک لوازمہ خاموش ہونے سے نہ فراہم کنندہ کی عمومی بندش ثابت ہوتی ہے، نہ سبسکرپشن دوبارہ خریدنے کی ضرورت۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "موجودہ بلوٹوتھ کنکشن دیکھیں",
+          "paragraphs": [
+            "Apple TV کی ترتیبات میں ریموٹ اور ڈیوائسز، پھر بلوٹوتھ کھول کر لوازمے کا نام دیکھیں۔ غیر مستحکم بلوٹوتھ کنکشن پر Apple بجلی، چارج، فاصلہ اور آس پاس کی مداخلت جانچنے کا مشورہ دیتا ہے۔ اپنے ماڈل کے لیے بنانے والے کی ہدایات پڑھیں۔ صرف قریب نظر آنے پر کسی نامعلوم ڈیوائس سے جوڑا نہ بنائیں، اور حالت لکھنے سے پہلے کام کرنے والی جوڑی بار بار نہ بھلائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مفید موازنہ بیان کریں",
+          "paragraphs": [
+            "مالک کی اجازت سے دیکھیں کہ اسی لوازمے پر کوئی دوسری مجاز ویڈیو بھی ایسا کرتی ہے یا نہیں۔ لکھیں صرف آواز رکتی ہے یا نہیں، قریب آنے سے فرق پڑتا ہے یا نہیں، اور Apple TV اور ہیڈفون کے ماڈل کیا ہیں۔ آواز آرام دہ سطح پر رکھیں۔ مشاہدات بھیجتے وقت پاس ورڈ اور نجی پلے بیک پتے شامل نہ کریں۔ اس سے لوازمے کا سوال پلیئر کی رپورٹ سے الگ ہوتا ہے، وجہ ثابت نہیں ہوتی۔ پوری ٹی وی ترتیب ری سیٹ کرنے کے بجائے محفوظ پلیئر تفصیلات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "سماعات Bluetooth مع Geo IPTV: افحص الملحق قبل البث",
+      "excerpt": "إذا استمر فيديو Apple TV وصمتت السماعات، افحص ملحق Bluetooth وسجّل ما يتغير قبل استبدال إعداد المشغّل المحفوظ.",
+      "seo_title": "سماعات Bluetooth مع Geo IPTV: افحص الملحق قبل البث",
+      "seo_description": "إذا استمر فيديو Apple TV وصمتت السماعات، افحص ملحق Bluetooth وسجّل ما يتغير قبل استبدال إعداد المشغّل المحفوظ.",
+      "sections": [
+        {
+          "heading": "لاحظ ما الذي يتوقف",
+          "paragraphs": [
+            "أثناء مشاهدة Geo IPTV، صمت السماعات وتجمد الصورة ملاحظتان مختلفتان. راقب هل يستمر البرنامج في الحركة وهل ما زالت السماعات تظهر متصلة. إذا كانت مكبرات التلفاز ضمن التوصيل، فدوّن المخرج الذي توقعت سماعه. لا يثبت صمت ملحق واحد تعطل المزوّد ولا يعني ضرورة تجديد الاشتراك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "افحص اتصال Bluetooth الحالي",
+          "paragraphs": [
+            "في Apple TV، افتح الإعدادات ثم أجهزة التحكم والأجهزة ثم Bluetooth للعثور على الملحق باسمه. توصي Apple بفحص الطاقة والشحن والمسافة والتداخل القريب عندما يكون اتصال Bluetooth غير مستقر. اتبع تعليمات الشركة المصنّعة لطراز الملحق. لا تقرن جهازاً مجهولاً لمجرد ظهوره قريباً، وتجنب نسيان اقتران كان يعمل مراراً قبل تدوين حالته."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صِف مقارنة مفيدة",
+          "paragraphs": [
+            "بإذن المالك، افحص هل يتكرر السلوك مع فيديو آخر مسموح عبر الملحق نفسه. دوّن هل يتوقف الصوت وحده، وهل يغير الاقتراب النتيجة، وطرازَي Apple TV والسماعات. حافظ على مستوى صوت مريح. أرسل الملاحظات دون كلمات مرور أو عناوين تشغيل خاصة. يفصل ذلك سؤال الملحق عن بلاغ المشغّل، لكنه لا يثبت السبب. احتفظ بتفاصيل المشغّل المحفوظة بدلاً من إعادة ضبط إعداد التلفاز كله."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV के साथ ब्लूटूथ हेडफ़ोन: पहले ऐक्सेसरी जाँचें",
+      "excerpt": "Apple TV का वीडियो चलता रहे लेकिन हेडफ़ोन चुप हो जाएँ, तो प्लेयर की सेटिंग बदलने से पहले ब्लूटूथ ऐक्सेसरी और बदलावों की जाँच करें।",
+      "seo_title": "Geo IPTV के साथ ब्लूटूथ हेडफ़ोन: पहले ऐक्सेसरी जाँचें",
+      "seo_description": "Apple TV का वीडियो चलता रहे लेकिन हेडफ़ोन चुप हो जाएँ, तो प्लेयर की सेटिंग बदलने से पहले ब्लूटूथ ऐक्सेसरी और बदलावों की जाँच करें।",
+      "sections": [
+        {
+          "heading": "देखें वास्तव में क्या रुकता है",
+          "paragraphs": [
+            "Geo IPTV देखते समय हेडफ़ोन की खामोशी और तस्वीर का जम जाना अलग बातें हैं। देखें कि कार्यक्रम में हलचल जारी है या नहीं और हेडफ़ोन अभी भी जुड़े दिखते हैं या नहीं। अगर टीवी के स्पीकर भी जुड़े हैं, तो लिखें कि किस आउटपुट से आवाज़ सुननी थी। अकेली एक ऐक्सेसरी का चुप होना न प्रदाता की व्यापक खराबी साबित करता है, न सदस्यता दोबारा लेने की ज़रूरत।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.apple.com/en-au/102227"
+            }
+          ]
+        },
+        {
+          "heading": "मौजूदा ब्लूटूथ कनेक्शन देखें",
+          "paragraphs": [
+            "Apple TV की सेटिंग में रिमोट और डिवाइस, फिर ब्लूटूथ खोलकर ऐक्सेसरी का नाम ढूँढें। अस्थिर ब्लूटूथ कनेक्शन के लिए Apple बिजली, चार्ज, दूरी और आसपास के हस्तक्षेप की जाँच बताता है। अपने मॉडल के लिए निर्माता के निर्देश पढ़ें। पास दिखने भर से किसी अनजान डिवाइस को न जोड़ें और स्थिति लिखने से पहले काम कर रही जोड़ी को बार-बार न भूलें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उपयोगी तुलना बताएँ",
+          "paragraphs": [
+            "मालिक की अनुमति से जाँचें कि उसी ऐक्सेसरी पर दूसरा अधिकृत वीडियो भी ऐसा करता है या नहीं। लिखें कि केवल आवाज़ रुकती है या नहीं, पास जाने से फ़र्क पड़ता है या नहीं और Apple TV व हेडफ़ोन के मॉडल क्या हैं। आवाज़ आरामदायक रखें। जानकारी भेजते समय पासवर्ड और निजी प्लेबैक पते न जोड़ें। इससे ऐक्सेसरी का सवाल प्लेयर की रिपोर्ट से अलग होता है; कारण साबित नहीं होता। पूरा टीवी सेटअप रीसेट करने के बजाय सहेजी हुई प्लेयर जानकारी बचाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://support.apple.com/en-au/102227",
+      "label": "Apple Support Bluetooth accessory connection checks"
+    }
+  ]
+}

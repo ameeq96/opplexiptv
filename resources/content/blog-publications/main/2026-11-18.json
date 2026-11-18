@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-18",
+  "topic": "Distinguish a VLC for Android brightness gesture adjustment from a dark scene or an absent video picture without erasing saved player setup.",
+  "primary_keyword": "IPTV brightness control",
+  "slug": "main-brightness-gesture-versus-dark-picture",
+  "translations": {
+    "en": {
+      "title": "IPTV brightness control: a VLC gesture or a dark picture?",
+      "excerpt": "Check whether a touch changed VLC brightness before blaming the video. Compare the picture and controls without resetting your saved player setup.",
+      "seo_title": "IPTV brightness control: a VLC gesture or a dark picture?",
+      "seo_description": "Check whether a touch changed VLC brightness before blaming the video. Compare the picture and controls without resetting your saved player setup.",
+      "sections": [
+        {
+          "heading": "Notice what changed on screen",
+          "paragraphs": [
+            "If the picture becomes dim immediately after touching your Android phone, first describe what happened. Did the whole player view become harder to see, or is only one scene dark while the buttons remain readable? VideoLAN documents a vertical gesture at the left edge for brightness. An accidental adjustment is one possibility, not a diagnosis of every dark image or a reason to change your subscription."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Make one deliberate comparison",
+          "paragraphs": [
+            "On a phone using that documented VLC control, note the starting brightness and make one small adjustment while the controls are visible. Stop at a comfortable level. Keep the same permitted video open so that changing the programme does not confuse the comparison. If your version or interface lacks that gesture, read its available controls instead of repeatedly swiping or changing unrelated Android settings."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate darkness from missing video",
+          "paragraphs": [
+            "A visible but dim picture is different from no video image at all. If brightness changes the interface but the picture stays black, report those two observations separately. Note the player version, whether sound continues, and whether the issue follows a particular scene. Do not erase app data, delete saved access, or buy another plan merely to test brightness. This small check cannot establish a service-wide outage or guarantee a picture-quality improvement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Brillo en IPTV: ¿un gesto de VLC o una imagen oscura?",
+      "excerpt": "Comprueba si un toque cambió el brillo de VLC antes de culpar al vídeo. Compara imagen y controles sin restablecer la configuración guardada del reproductor.",
+      "seo_title": "Brillo en IPTV: ¿un gesto de VLC o una imagen oscura?",
+      "seo_description": "Comprueba si un toque cambió el brillo de VLC antes de culpar al vídeo. Compara imagen y controles sin restablecer la configuración guardada del reproductor.",
+      "sections": [
+        {
+          "heading": "Observa qué cambió en la pantalla",
+          "paragraphs": [
+            "Si la imagen se atenúa justo después de tocar tu teléfono Android, describe primero lo ocurrido. ¿Cuesta ver toda la vista del reproductor o solo está oscura una escena mientras los botones siguen legibles? VideoLAN documenta un gesto vertical en el borde izquierdo para ajustar el brillo. Un cambio accidental es una posibilidad, no el diagnóstico de cualquier imagen oscura ni un motivo para cambiar la suscripción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Haz una sola comparación deliberada",
+          "paragraphs": [
+            "En un teléfono que utilice ese control documentado de VLC, anota el brillo inicial y realiza un pequeño ajuste con los controles visibles. Detente en un nivel cómodo. Mantén abierto el mismo vídeo permitido para que cambiar de programa no confunda la comparación. Si tu versión o interfaz no tiene ese gesto, consulta sus controles disponibles en vez de deslizar repetidamente o cambiar ajustes de Android ajenos al problema."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingue oscuridad de ausencia de vídeo",
+          "paragraphs": [
+            "Una imagen visible pero tenue es distinta de no tener imagen alguna. Si el brillo cambia la interfaz pero la imagen permanece negra, comunica ambas observaciones por separado. Anota la versión del reproductor, si continúa el sonido y si ocurre en una escena concreta. No borres los datos de la aplicación ni el acceso guardado, ni compres otro plan solo para probar el brillo. Esta comprobación no demuestra una caída general ni garantiza mejorar la calidad de imagen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Luminosité IPTV : un geste VLC ou une image sombre ?",
+      "excerpt": "Vérifiez si un toucher a modifié la luminosité de VLC avant de mettre la vidéo en cause. Comparez image et commandes sans réinitialiser vos réglages enregistrés.",
+      "seo_title": "Luminosité IPTV : un geste VLC ou une image sombre ?",
+      "seo_description": "Vérifiez si un toucher a modifié la luminosité de VLC avant de mettre la vidéo en cause. Comparez image et commandes sans réinitialiser vos réglages enregistrés.",
+      "sections": [
+        {
+          "heading": "Repérez ce qui a changé à l’écran",
+          "paragraphs": [
+            "Si l’image s’assombrit juste après un toucher sur votre téléphone Android, décrivez d’abord ce qui s’est passé. Toute la vue du lecteur devient-elle difficile à voir, ou une seule scène est-elle sombre alors que les boutons restent lisibles ? VideoLAN décrit un geste vertical sur le bord gauche pour la luminosité. Un réglage accidentel est une possibilité, sans expliquer toutes les images sombres ni justifier un changement d’abonnement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Faites une comparaison volontaire",
+          "paragraphs": [
+            "Sur un téléphone utilisant cette commande documentée de VLC, notez la luminosité de départ puis effectuez un petit réglage avec les commandes visibles. Arrêtez-vous à un niveau confortable. Gardez la même vidéo autorisée ouverte pour ne pas fausser la comparaison en changeant de programme. Si votre version ou interface ne propose pas ce geste, consultez les commandes disponibles au lieu de multiplier les glissements ou de modifier des réglages Android sans rapport."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguez image sombre et absence d’image",
+          "paragraphs": [
+            "Une image visible mais peu lumineuse diffère d’une absence totale de vidéo. Si le réglage modifie l’interface mais que l’image reste noire, signalez ces observations séparément. Notez la version du lecteur, la poursuite éventuelle du son et le lien avec une scène précise. N’effacez ni les données de l’application ni les accès enregistrés, et n’achetez pas une autre formule pour tester la luminosité. Ce contrôle ne prouve pas une panne générale et ne garantit aucune amélioration de qualité."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Luminosità IPTV: un gesto di VLC o un’immagine scura?",
+      "excerpt": "Controlla se un tocco ha cambiato la luminosità di VLC prima di attribuire il problema al video. Confronta immagine e comandi senza azzerare le impostazioni salvate.",
+      "seo_title": "Luminosità IPTV: un gesto di VLC o un’immagine scura?",
+      "seo_description": "Controlla se un tocco ha cambiato la luminosità di VLC prima di attribuire il problema al video. Confronta immagine e comandi senza azzerare le impostazioni salvate.",
+      "sections": [
+        {
+          "heading": "Osserva cosa è cambiato sullo schermo",
+          "paragraphs": [
+            "Se l’immagine si scurisce subito dopo un tocco sul telefono Android, descrivi prima l’accaduto. È diventata meno visibile tutta la schermata del lettore oppure è scura solo una scena, mentre i pulsanti restano leggibili? VideoLAN documenta un gesto verticale sul bordo sinistro per regolare la luminosità. Una modifica involontaria è una possibilità, non la spiegazione di ogni immagine scura né un motivo per cambiare abbonamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Fai un confronto intenzionale",
+          "paragraphs": [
+            "Su un telefono che utilizza quel comando documentato di VLC, annota la luminosità iniziale ed esegui una piccola regolazione con i comandi visibili. Fermati a un livello confortevole. Lascia aperto lo stesso video consentito, evitando che un cambio di programma confonda il confronto. Se la tua versione o interfaccia non offre quel gesto, leggi i comandi disponibili invece di scorrere ripetutamente o modificare impostazioni Android non pertinenti."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui il buio dall’assenza di video",
+          "paragraphs": [
+            "Un’immagine visibile ma fioca è diversa dalla totale assenza di immagine. Se il comando cambia l’interfaccia ma il video resta nero, segnala separatamente le due osservazioni. Annota versione del lettore, eventuale continuazione dell’audio e presenza del problema in una scena precisa. Non cancellare dati dell’app o accessi salvati e non acquistare un altro piano solo per provare la luminosità. Questa verifica non dimostra un guasto generale né garantisce un miglioramento della qualità."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-helderheid: een VLC-gebaar of een donker beeld?",
+      "excerpt": "Controleer of een aanraking de helderheid in VLC veranderde voordat je de video aanwijst. Vergelijk beeld en knoppen zonder je opgeslagen spelerinstellingen te wissen.",
+      "seo_title": "IPTV-helderheid: een VLC-gebaar of een donker beeld?",
+      "seo_description": "Controleer of een aanraking de helderheid in VLC veranderde voordat je de video aanwijst. Vergelijk beeld en knoppen zonder je opgeslagen spelerinstellingen te wissen.",
+      "sections": [
+        {
+          "heading": "Kijk wat er op het scherm veranderde",
+          "paragraphs": [
+            "Wordt het beeld meteen donkerder nadat je je Android-telefoon aanraakt? Beschrijf dan eerst wat er gebeurde. Is de hele spelerweergave moeilijker te zien of alleen één scène, terwijl de knoppen leesbaar blijven? VideoLAN beschrijft een verticaal gebaar langs de linkerrand voor helderheid. Een onbedoelde aanpassing is één mogelijkheid; dat verklaart niet ieder donker beeld en is geen reden om je abonnement te veranderen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één bewuste aanpassing",
+          "paragraphs": [
+            "Noteer op een telefoon met die beschreven VLC-bediening de beginstand en maak één kleine aanpassing terwijl de knoppen zichtbaar zijn. Stop bij een prettig niveau. Houd dezelfde toegestane video open, zodat een ander programma de vergelijking niet verstoort. Ontbreekt het gebaar in jouw versie of interface, bekijk dan de beschikbare bediening in plaats van herhaaldelijk te vegen of andere Android-instellingen te wijzigen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Onderscheid donker beeld van ontbrekend beeld",
+          "paragraphs": [
+            "Een zichtbaar maar zwak verlicht beeld is iets anders dan helemaal geen videobeeld. Verandert de helderheid de interface maar blijft de video zwart, meld die waarnemingen dan afzonderlijk. Noteer de spelerversie, of geluid doorgaat en of een bepaalde scène het probleem vertoont. Wis geen appgegevens of opgeslagen toegang en koop geen ander pakket om de helderheid te testen. Deze controle bewijst geen algemene storing en garandeert geen betere beeldkwaliteit."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Brilho no IPTV: um gesto do VLC ou uma imagem escura?",
+      "excerpt": "Veja se um toque alterou o brilho do VLC antes de atribuir o problema ao vídeo. Compare imagem e controlos sem repor a configuração guardada do leitor.",
+      "seo_title": "Brilho no IPTV: um gesto do VLC ou uma imagem escura?",
+      "seo_description": "Veja se um toque alterou o brilho do VLC antes de atribuir o problema ao vídeo. Compare imagem e controlos sem repor a configuração guardada do leitor.",
+      "sections": [
+        {
+          "heading": "Observe o que mudou no ecrã",
+          "paragraphs": [
+            "Se a imagem escurece logo após tocar no telefone Android, descreva primeiro o sucedido. Toda a vista do leitor ficou difícil de ver ou apenas uma cena está escura, mantendo-se os botões legíveis? A VideoLAN documenta um gesto vertical na margem esquerda para ajustar o brilho. Uma alteração acidental é uma possibilidade, não a explicação de todas as imagens escuras nem um motivo para mudar de subscrição."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Faça uma comparação deliberada",
+          "paragraphs": [
+            "Num telefone com esse controlo documentado do VLC, anote o brilho inicial e faça um pequeno ajuste com os controlos visíveis. Pare num nível confortável. Mantenha aberto o mesmo vídeo permitido para que uma mudança de programa não confunda a comparação. Se a versão ou interface não tiver esse gesto, consulte os controlos disponíveis em vez de deslizar repetidamente ou alterar definições Android sem relação com o caso."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe escuridão de falta de imagem",
+          "paragraphs": [
+            "Uma imagem visível mas pouco iluminada é diferente de não existir imagem de vídeo. Se o brilho altera a interface mas o vídeo continua preto, comunique essas duas observações separadamente. Anote a versão do leitor, se o som continua e se o problema acompanha uma cena específica. Não apague dados da aplicação ou acessos guardados, nem compre outro plano só para testar o brilho. Esta verificação não prova uma falha geral nem garante melhorar a qualidade de imagem."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Яркость IPTV: жест VLC или тёмное изображение?",
+      "excerpt": "Проверьте, не изменило ли касание яркость VLC, прежде чем искать причину в видео. Сравните картинку и кнопки, сохранив настройки и доступ в проигрывателе.",
+      "seo_title": "Яркость IPTV: жест VLC или тёмное изображение?",
+      "seo_description": "Проверьте, не изменило ли касание яркость VLC, прежде чем искать причину в видео. Сравните картинку и кнопки, сохранив настройки и доступ в проигрывателе.",
+      "sections": [
+        {
+          "heading": "Заметьте, что изменилось на экране",
+          "paragraphs": [
+            "Если изображение потемнело сразу после касания телефона Android, сначала опишите событие. Стало хуже видно всё окно проигрывателя или темна только одна сцена, а кнопки остаются читаемыми? VideoLAN описывает вертикальный жест у левого края для регулировки яркости. Случайное изменение — лишь возможная причина, а не объяснение любого тёмного кадра и не повод менять подписку."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сделайте одно осознанное сравнение",
+          "paragraphs": [
+            "На телефоне с этим описанным управлением VLC запомните исходную яркость и немного измените её при видимых кнопках. Остановитесь на комфортном уровне. Оставьте открытым то же разрешённое видео, чтобы смена программы не исказила сравнение. Если ваша версия или интерфейс не поддерживает этот жест, изучите доступные элементы управления вместо многократных свайпов и изменения посторонних настроек Android."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Отличайте темноту от отсутствия видео",
+          "paragraphs": [
+            "Видимая, но тусклая картинка отличается от полного отсутствия изображения. Если яркость интерфейса меняется, а видео остаётся чёрным, сообщите об этих наблюдениях отдельно. Запишите версию проигрывателя, продолжается ли звук и связана ли проблема с конкретной сценой. Не очищайте данные приложения, не удаляйте сохранённый доступ и не покупайте другой тариф только ради проверки яркости. Такой контроль не доказывает общий сбой и не гарантирует улучшения качества изображения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV کی چمک: VLC کا اشارہ یا ویڈیو کی تاریک تصویر؟",
+      "excerpt": "ویڈیو کو مسئلے کی وجہ سمجھنے سے پہلے دیکھیں کہ چھونے سے VLC کی چمک تو نہیں بدلی۔ محفوظ پلیئر ترتیب مٹائے بغیر تصویر اور کنٹرول کا موازنہ کریں۔",
+      "seo_title": "IPTV کی چمک: VLC کا اشارہ یا ویڈیو کی تاریک تصویر؟",
+      "seo_description": "ویڈیو کو مسئلے کی وجہ سمجھنے سے پہلے دیکھیں کہ چھونے سے VLC کی چمک تو نہیں بدلی۔ محفوظ پلیئر ترتیب مٹائے بغیر تصویر اور کنٹرول کا موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں اسکرین پر کیا بدلا",
+          "paragraphs": [
+            "اینڈرائڈ فون چھونے کے فوراً بعد تصویر مدھم ہو جائے تو پہلے واقعہ بیان کریں۔ کیا پورا پلیئر منظر دیکھنا مشکل ہوا یا صرف ایک منظر تاریک ہے جبکہ بٹن صاف پڑھے جا رہے ہیں؟ VideoLAN چمک بدلنے کے لیے بائیں کنارے پر عمودی انگلی پھیرنے کا طریقہ بتاتا ہے۔ اتفاقی تبدیلی ایک امکان ہے، ہر تاریک تصویر کی تشخیص یا سبسکرپشن بدلنے کی وجہ نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "جان بوجھ کر ایک موازنہ کریں",
+          "paragraphs": [
+            "جس فون میں VLC کا یہ دستاویزی کنٹرول ہو، وہاں ابتدائی چمک نوٹ کریں اور کنٹرول نظر آتے ہوئے معمولی تبدیلی کریں۔ آنکھوں کے لیے آرام دہ سطح پر رک جائیں۔ وہی مجاز ویڈیو کھلی رکھیں تاکہ پروگرام بدلنے سے موازنہ نہ الجھے۔ آپ کے ورژن یا منظر میں یہ اشارہ نہ ہو تو بار بار انگلی پھیرنے یا غیر متعلقہ اینڈرائڈ ترتیب بدلنے کے بجائے موجود کنٹرول پڑھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تاریکی اور ویڈیو نہ آنے کو الگ رکھیں",
+          "paragraphs": [
+            "نظر آنے والی مدھم تصویر اور بالکل تصویر نہ آنا الگ حالتیں ہیں۔ چمک سے انٹرفیس بدلے لیکن ویڈیو سیاہ رہے تو دونوں مشاہدات الگ بتائیں۔ پلیئر ورژن، آواز جاری رہنے اور کسی خاص منظر سے مسئلے کا تعلق نوٹ کریں۔ صرف چمک آزمانے کے لیے نہ ایپ ڈیٹا مٹائیں، نہ محفوظ رسائی حذف کریں اور نہ دوسرا پلان خریدیں۔ یہ مختصر جانچ عمومی بندش ثابت نہیں کرتی اور تصویر کے معیار میں بہتری کی ضمانت نہیں دیتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "سطوع IPTV: إيماءة في VLC أم صورة داكنة؟",
+      "excerpt": "تحقق مما إذا كانت لمسة قد غيّرت سطوع VLC قبل لوم الفيديو. قارن الصورة وأدوات التحكم دون إعادة ضبط إعدادات المشغّل المحفوظة.",
+      "seo_title": "سطوع IPTV: إيماءة في VLC أم صورة داكنة؟",
+      "seo_description": "تحقق مما إذا كانت لمسة قد غيّرت سطوع VLC قبل لوم الفيديو. قارن الصورة وأدوات التحكم دون إعادة ضبط إعدادات المشغّل المحفوظة.",
+      "sections": [
+        {
+          "heading": "لاحظ ما تغيّر على الشاشة",
+          "paragraphs": [
+            "إذا أصبحت الصورة خافتة فور لمس هاتف Android، صف أولاً ما حدث. هل صارت واجهة المشغّل كلها أصعب رؤية، أم أن مشهداً واحداً داكن والأزرار ما زالت مقروءة؟ توثّق VideoLAN إيماءة عمودية عند الحافة اليسرى لضبط السطوع. التعديل غير المقصود احتمال واحد، وليس تفسيراً لكل صورة داكنة أو سبباً لتغيير الاشتراك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "أجرِ مقارنة مقصودة واحدة",
+          "paragraphs": [
+            "على هاتف يستخدم أداة VLC الموثّقة هذه، دوّن مستوى السطوع الأول ثم أجرِ تعديلاً صغيراً وأدوات التحكم ظاهرة. توقف عند مستوى مريح. اترك الفيديو المسموح نفسه مفتوحاً حتى لا يربك تغيير البرنامج المقارنة. إذا غابت الإيماءة عن إصدارك أو واجهتك، فاقرأ أدوات التحكم المتاحة بدلاً من السحب المتكرر أو تغيير إعدادات Android غير المتعلقة بالمشكلة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل العتمة عن غياب الفيديو",
+          "paragraphs": [
+            "الصورة المرئية الخافتة تختلف عن غياب صورة الفيديو تماماً. إذا غيّر السطوع الواجهة وبقي الفيديو أسود، فأبلغ عن الملاحظتين كل على حدة. دوّن إصدار المشغّل واستمرار الصوت وما إذا كانت المشكلة مرتبطة بمشهد محدد. لا تمسح بيانات التطبيق ولا تحذف الوصول المحفوظ ولا تشترِ خطة أخرى لمجرد اختبار السطوع. لا يثبت هذا الفحص البسيط انقطاعاً عاماً، ولا يضمن تحسناً في جودة الصورة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV की चमक: VLC का इशारा या वीडियो की अँधेरी तस्वीर?",
+      "excerpt": "वीडियो को कारण मानने से पहले देखें कि छूने से VLC की चमक तो नहीं बदली। सहेजा हुआ प्लेयर सेटअप मिटाए बिना तस्वीर और नियंत्रण की तुलना करें।",
+      "seo_title": "IPTV की चमक: VLC का इशारा या वीडियो की अँधेरी तस्वीर?",
+      "seo_description": "वीडियो को कारण मानने से पहले देखें कि छूने से VLC की चमक तो नहीं बदली। सहेजा हुआ प्लेयर सेटअप मिटाए बिना तस्वीर और नियंत्रण की तुलना करें।",
+      "sections": [
+        {
+          "heading": "देखें स्क्रीन पर क्या बदला",
+          "paragraphs": [
+            "Android फ़ोन छूने के तुरंत बाद तस्वीर मंद हो जाए तो पहले घटना समझें। क्या पूरे प्लेयर का दृश्य देखना कठिन हुआ या केवल एक दृश्य अँधेरा है जबकि बटन पढ़े जा रहे हैं? VideoLAN चमक के लिए बाएँ किनारे पर ऊपर-नीचे उँगली चलाने का तरीका बताता है। अनजाने में हुआ बदलाव एक संभावना है, हर अँधेरी तस्वीर का निदान या सदस्यता बदलने का कारण नहीं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "जानबूझकर एक तुलना करें",
+          "paragraphs": [
+            "उस दस्तावेज़ वाले VLC नियंत्रण का उपयोग करने वाले फ़ोन पर शुरुआती चमक नोट करें और नियंत्रण दिखाई देते समय थोड़ा बदलाव करें। आँखों के लिए आरामदायक स्तर पर रुकें। वही अनुमत वीडियो खुला रखें, ताकि कार्यक्रम बदलने से तुलना न उलझे। आपके संस्करण या इंटरफ़ेस में यह इशारा न हो तो बार-बार स्वाइप करने या असंबंधित Android सेटिंग बदलने की जगह उपलब्ध नियंत्रण पढ़ें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "अँधेरे और वीडियो न आने को अलग रखें",
+          "paragraphs": [
+            "दिखाई देने वाली मंद तस्वीर और बिल्कुल तस्वीर न आना अलग स्थितियाँ हैं। चमक बदलने से इंटरफ़ेस बदले लेकिन वीडियो काला रहे तो दोनों बातें अलग बताएँ। प्लेयर संस्करण, आवाज़ जारी रहने और किसी खास दृश्य से समस्या का संबंध नोट करें। सिर्फ़ चमक जाँचने के लिए न ऐप डेटा मिटाएँ, न सहेजा एक्सेस हटाएँ और न दूसरा प्लान खरीदें। यह छोटी जाँच व्यापक सेवा बंद होने का प्रमाण नहीं और तस्वीर की गुणवत्ता सुधरने की गारंटी नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html",
+      "label": "VideoLAN: VLC for Android video player gestures"
+    }
+  ]
+}
