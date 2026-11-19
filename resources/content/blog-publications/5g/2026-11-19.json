@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-19",
+  "topic": "Identify an Android archived-player badge and the supported restoration requirements separately from 5G Live IPTV expiry while preserving saved app data.",
+  "primary_keyword": "5G Live IPTV archived player",
+  "slug": "5g-archived-player-android-icon-before-access",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV archived player: read the Android icon first",
+      "excerpt": "A faded player icon can describe Android archiving rather than service expiry. Check the app identity and supported restoration path before replacing saved setup.",
+      "seo_title": "5G Live IPTV archived player: read the Android icon first",
+      "seo_description": "A faded player icon can describe Android archiving rather than service expiry. Check the app identity and supported restoration path before replacing saved setup.",
+      "sections": [
+        {
+          "heading": "Identify the app and the badge",
+          "paragraphs": [
+            "If your usual player icon has faded and gained an archive badge, inspect the app name before searching for a replacement. During 5G Live IPTV setup, the service brand and the installed player publisher are separate details. Google documents archived-app indicators on supported Android devices; some steps require Android 15 or later and suitable hardware. A faded icon alone is not proof that service access has expired."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Android app archiving guide",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Restore the existing installation carefully",
+          "paragraphs": [
+            "Archiving removes app software, permissions and temporary files while retaining its icon and data; notifications also stop. Google describes tapping the faded icon to reinstall. Restoration requires the relevant app store to remain installed and the app to remain available there. If storage is insufficient, read the displayed storage prompt instead of clearing the player’s data. Follow your device’s available controls rather than assuming every Android model has identical options."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separate restoration from access",
+          "paragraphs": [
+            "After restoration, review any new permission request for the feature you intend to use. Check whether the saved setup remains available before entering private details again. Do not uninstall the app or erase its storage as an archive check. If the original app is unavailable, ask its verified publisher rather than installing an unknown APK. Record the Android version, app name and restoration message without credentials. Restoring a player does not renew the viewing service or include a separate paid player licence."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV y reproductor archivado: revisa primero el icono de Android",
+      "excerpt": "Un icono atenuado puede indicar archivado de Android, no caducidad del servicio. Comprueba la aplicación y su recuperación antes de sustituir la configuración.",
+      "seo_title": "5G Live IPTV y reproductor archivado: revisa primero el icono de Android",
+      "seo_description": "Un icono atenuado puede indicar archivado de Android, no caducidad del servicio. Comprueba la aplicación y su recuperación antes de sustituir la configuración.",
+      "sections": [
+        {
+          "heading": "Identifica la aplicación y el distintivo",
+          "paragraphs": [
+            "Si el icono de tu reproductor habitual se ha atenuado y muestra un distintivo de archivo, revisa su nombre antes de buscar un sustituto. Al configurar 5G Live IPTV, la marca del servicio y el editor del reproductor instalado son datos distintos. Google documenta estos indicadores en dispositivos Android compatibles; algunos pasos requieren Android 15 o posterior y hardware adecuado. Un icono atenuado por sí solo no demuestra que el acceso haya vencido."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía de Google para archivar aplicaciones Android",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Recupera con cuidado la instalación existente",
+          "paragraphs": [
+            "El archivado elimina el software, los permisos y los archivos temporales, pero conserva el icono y los datos; también detiene las notificaciones. Google explica que se toca el icono atenuado para reinstalar. La tienda correspondiente debe seguir instalada y la aplicación debe continuar disponible allí. Si falta espacio, lee el aviso de almacenamiento en lugar de borrar los datos del reproductor. Sigue los controles de tu dispositivo sin suponer que todos los modelos Android tienen opciones idénticas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separa recuperación y acceso",
+          "paragraphs": [
+            "Tras recuperarlo, revisa cada nueva solicitud de permiso según la función que quieras usar. Comprueba si continúa disponible la configuración guardada antes de volver a introducir datos privados. No desinstales la aplicación ni borres su almacenamiento para comprobar el archivado. Si la aplicación original ya no está disponible, consulta a su editor verificado en vez de instalar un APK desconocido. Anota la versión de Android, el nombre y el mensaje de recuperación sin credenciales. Recuperar el reproductor no renueva el servicio ni incluye una licencia independiente de pago."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Lecteur archivé et 5G Live IPTV : examiner l’icône Android",
+      "excerpt": "Une icône atténuée peut signaler un archivage Android, sans prouver l’expiration du service. Vérifiez l’application et sa restauration avant de remplacer vos réglages.",
+      "seo_title": "Lecteur archivé et 5G Live IPTV : examiner l’icône Android",
+      "seo_description": "Une icône atténuée peut signaler un archivage Android, sans prouver l’expiration du service. Vérifiez l’application et sa restauration avant de remplacer vos réglages.",
+      "sections": [
+        {
+          "heading": "Identifier l’application et son badge",
+          "paragraphs": [
+            "Si l’icône du lecteur habituel est atténuée avec un badge d’archivage, vérifiez le nom de l’application avant de chercher un remplacement. Pour configurer 5G Live IPTV, la marque du service et l’éditeur du lecteur installé sont deux informations distinctes. Google décrit ces indicateurs sur les appareils Android compatibles ; certaines étapes nécessitent Android 15 ou une version ultérieure et du matériel adapté. Une icône atténuée ne prouve pas à elle seule l’expiration de l’accès."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide Google de l’archivage Android",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Restaurer prudemment l’installation existante",
+          "paragraphs": [
+            "L’archivage retire le logiciel, ses autorisations et fichiers temporaires, mais conserve l’icône et les données ; les notifications s’arrêtent aussi. Google indique de toucher l’icône atténuée pour réinstaller. La boutique concernée doit toujours être installée et l’application encore disponible. Si l’espace manque, lisez l’invite de stockage au lieu d’effacer les données du lecteur. Suivez les commandes de votre appareil sans supposer que tous les modèles Android proposent les mêmes options."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distinguer restauration et accès",
+          "paragraphs": [
+            "Après restauration, examinez toute nouvelle demande d’autorisation selon la fonction voulue. Vérifiez la présence des réglages enregistrés avant de ressaisir des informations privées. Ne désinstallez pas l’application et n’effacez pas son stockage pour vérifier un archivage. Si l’application d’origine est indisponible, contactez son éditeur vérifié plutôt que d’installer un APK inconnu. Notez la version Android, le nom et le message de restauration sans identifiants. Restaurer le lecteur ne renouvelle pas le service et n’inclut pas une licence de lecteur payante distincte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV e lettore archiviato: controlla prima l’icona Android",
+      "excerpt": "Un’icona sbiadita può indicare l’archiviazione Android, non la scadenza del servizio. Verifica app e ripristino prima di sostituire la configurazione salvata.",
+      "seo_title": "5G Live IPTV e lettore archiviato: controlla prima l’icona Android",
+      "seo_description": "Un’icona sbiadita può indicare l’archiviazione Android, non la scadenza del servizio. Verifica app e ripristino prima di sostituire la configurazione salvata.",
+      "sections": [
+        {
+          "heading": "Identifica l’app e il simbolo",
+          "paragraphs": [
+            "Se l’icona del lettore abituale è sbiadita e presenta il simbolo di archiviazione, controlla il nome dell’app prima di cercare un sostituto. Nella configurazione di 5G Live IPTV, il marchio del servizio e lo sviluppatore del lettore installato sono informazioni distinte. Google descrive questi indicatori sui dispositivi Android compatibili; alcuni passaggi richiedono Android 15 o successivo e hardware adatto. Un’icona sbiadita da sola non dimostra la scadenza dell’accesso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google all’archiviazione delle app Android",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ripristina con cautela l’installazione esistente",
+          "paragraphs": [
+            "L’archiviazione rimuove software, autorizzazioni e file temporanei, conservando icona e dati; interrompe anche le notifiche. Google indica di toccare l’icona sbiadita per reinstallare. Lo store pertinente deve essere ancora installato e l’app ancora disponibile. Se manca spazio, leggi l’avviso di archiviazione anziché cancellare i dati del lettore. Segui i controlli del tuo dispositivo senza presumere che tutti i modelli Android offrano opzioni identiche."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Distingui il ripristino dall’accesso",
+          "paragraphs": [
+            "Dopo il ripristino, valuta ogni nuova autorizzazione rispetto alla funzione che vuoi utilizzare. Controlla se la configurazione salvata è ancora presente prima di inserire nuovamente dati privati. Non disinstallare l’app e non cancellarne i dati per verificare l’archiviazione. Se l’app originale non è disponibile, contatta il suo sviluppatore verificato anziché installare un APK sconosciuto. Annota versione Android, nome dell’app e messaggio di ripristino senza credenziali. Ripristinare il lettore non rinnova il servizio e non include una licenza separata del lettore a pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en een gearchiveerde speler: bekijk eerst het Android-pictogram",
+      "excerpt": "Een vervaagd spelerpictogram kan op Android-archivering wijzen. Controleer app en herstelmogelijkheid voordat je opgeslagen instellingen vervangt.",
+      "seo_title": "5G Live IPTV en een gearchiveerde speler: bekijk eerst het Android-pictogram",
+      "seo_description": "Een vervaagd spelerpictogram kan op Android-archivering wijzen. Controleer app en herstelmogelijkheid voordat je opgeslagen instellingen vervangt.",
+      "sections": [
+        {
+          "heading": "Herken de app en het symbool",
+          "paragraphs": [
+            "Is het pictogram van je gewone speler vervaagd en voorzien van een archiefsymbool, controleer dan eerst de appnaam voordat je een vervanger zoekt. Bij het instellen van 5G Live IPTV zijn het servicemerk en de uitgever van de geïnstalleerde speler afzonderlijke gegevens. Google beschrijft deze aanwijzingen voor ondersteunde Android-apparaten; sommige stappen vereisen Android 15 of nieuwer en geschikte hardware. Alleen een vervaagd pictogram bewijst geen verlopen toegang."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google-handleiding voor Android-apparchivering",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Herstel de bestaande installatie zorgvuldig",
+          "paragraphs": [
+            "Archiveren verwijdert appsoftware, machtigingen en tijdelijke bestanden, maar bewaart pictogram en gegevens; ook meldingen stoppen. Google beschrijft dat je op het vervaagde pictogram tikt om opnieuw te installeren. De betreffende appwinkel moet nog geïnstalleerd zijn en de app daar beschikbaar blijven. Lees bij ruimtegebrek de opslagmelding in plaats van spelergegevens te wissen. Volg de beschikbare bediening van jouw apparaat; niet elk Android-model biedt dezelfde opties."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Scheid herstel van toegang",
+          "paragraphs": [
+            "Beoordeel na herstel iedere nieuwe machtigingsvraag op basis van de gewenste functie. Controleer of je opgeslagen instellingen er nog zijn voordat je privégegevens opnieuw invoert. Verwijder de app niet en wis de opslag niet om archivering te controleren. Is de oorspronkelijke app niet meer beschikbaar, vraag het dan aan de geverifieerde uitgever in plaats van een onbekende APK te installeren. Noteer Android-versie, appnaam en herstelmelding zonder inloggegevens. Spelerherstel verlengt de kijkdienst niet en omvat geen afzonderlijke betaalde spelerlicentie."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV e leitor arquivado: veja primeiro o ícone Android",
+      "excerpt": "Um ícone esbatido pode indicar arquivo no Android, sem provar que o serviço expirou. Verifique a aplicação e a recuperação antes de substituir os dados guardados.",
+      "seo_title": "5G Live IPTV e leitor arquivado: veja primeiro o ícone Android",
+      "seo_description": "Um ícone esbatido pode indicar arquivo no Android, sem provar que o serviço expirou. Verifique a aplicação e a recuperação antes de substituir os dados guardados.",
+      "sections": [
+        {
+          "heading": "Identifique a aplicação e o símbolo",
+          "paragraphs": [
+            "Se o ícone do leitor habitual ficou esbatido e apresenta um símbolo de arquivo, confirme o nome antes de procurar um substituto. Na configuração de 5G Live IPTV, a marca do serviço e o editor do leitor instalado são informações distintas. A Google documenta estes indicadores em dispositivos Android compatíveis; alguns passos exigem Android 15 ou posterior e hardware adequado. Um ícone esbatido, por si só, não prova que o acesso expirou."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia Google de arquivo de aplicações Android",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Recupere cuidadosamente a instalação existente",
+          "paragraphs": [
+            "O arquivo remove software, permissões e ficheiros temporários, mas conserva o ícone e os dados; as notificações também param. A Google indica tocar no ícone esbatido para reinstalar. A loja correspondente tem de continuar instalada e a aplicação disponível nela. Se faltar espaço, leia o aviso de armazenamento em vez de apagar os dados do leitor. Siga os controlos do seu dispositivo sem presumir opções iguais em todos os modelos Android."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Separe recuperação e acesso",
+          "paragraphs": [
+            "Após a recuperação, avalie cada novo pedido de permissão segundo a funcionalidade pretendida. Verifique se a configuração guardada continua disponível antes de voltar a introduzir informações privadas. Não desinstale a aplicação nem apague o armazenamento para verificar o arquivo. Se a aplicação original estiver indisponível, consulte o editor verificado em vez de instalar um APK desconhecido. Registe a versão Android, o nome e a mensagem de recuperação sem credenciais. Recuperar o leitor não renova o serviço nem inclui uma licença de leitor paga em separado."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV и архивированный плеер: сначала проверьте значок Android",
+      "excerpt": "Бледный значок может означать архивацию Android, а не окончание доступа. Проверьте приложение и способ восстановления до замены сохранённых настроек.",
+      "seo_title": "5G Live IPTV и архивированный плеер: сначала проверьте значок Android",
+      "seo_description": "Бледный значок может означать архивацию Android, а не окончание доступа. Проверьте приложение и способ восстановления до замены сохранённых настроек.",
+      "sections": [
+        {
+          "heading": "Определите приложение и метку",
+          "paragraphs": [
+            "Если значок привычного плеера побледнел и получил метку архива, проверьте название приложения до поиска замены. При настройке 5G Live IPTV название услуги и разработчик установленного плеера — разные сведения. Google описывает такие признаки для поддерживаемых устройств Android; некоторые действия требуют Android 15 или новее и подходящего оборудования. Один бледный значок не доказывает, что доступ к услуге истёк."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Руководство Google по архивации приложений Android",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Осторожно восстановите существующую установку",
+          "paragraphs": [
+            "Архивация удаляет программу, разрешения и временные файлы, сохраняя значок и данные; уведомления также прекращаются. Google предлагает нажать бледный значок для повторной установки. Соответствующий магазин должен оставаться установленным, а приложение — доступным в нём. При нехватке места прочитайте сообщение о хранилище вместо удаления данных плеера. Следуйте доступным элементам своего устройства: не все модели Android имеют одинаковые возможности."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Разделяйте восстановление и доступ",
+          "paragraphs": [
+            "После восстановления оценивайте каждый новый запрос разрешения с учётом нужной функции. До повторного ввода личных сведений проверьте, сохранилась ли настройка. Не удаляйте приложение и не очищайте его хранилище ради проверки архивации. Если исходное приложение недоступно, обратитесь к проверенному разработчику вместо установки неизвестного APK. Запишите версию Android, название и сообщение восстановления без учётных данных. Восстановление плеера не продлевает услугу и не включает отдельную платную лицензию плеера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کا آرکائیو شدہ پلیئر: پہلے Android کا آئیکن دیکھیں",
+      "excerpt": "مدھم پلیئر آئیکن Android میں آرکائیو ہونے کی علامت ہو سکتا ہے، سروس ختم ہونے کی نہیں۔ محفوظ ترتیب بدلنے سے پہلے ایپ اور بحالی کا درست راستہ دیکھیں۔",
+      "seo_title": "5G Live IPTV کا آرکائیو شدہ پلیئر: پہلے Android کا آئیکن دیکھیں",
+      "seo_description": "مدھم پلیئر آئیکن Android میں آرکائیو ہونے کی علامت ہو سکتا ہے، سروس ختم ہونے کی نہیں۔ محفوظ ترتیب بدلنے سے پہلے ایپ اور بحالی کا درست راستہ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "ایپ اور نشان کی شناخت کریں",
+          "paragraphs": [
+            "اگر معمول کے پلیئر کا آئیکن مدھم ہو گیا ہے اور اس پر آرکائیو کا نشان ہے تو متبادل تلاش کرنے سے پہلے ایپ کا نام دیکھیں۔ 5G Live IPTV کی ترتیب میں سروس کا برانڈ اور نصب شدہ پلیئر کا ناشر الگ معلومات ہیں۔ Google یہ نشان معاون Android آلات کے لیے بیان کرتا ہے؛ بعض مراحل کے لیے Android 15 یا بعد کا ورژن اور مناسب ہارڈ ویئر چاہیے۔ صرف مدھم آئیکن سروس کی رسائی ختم ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android ایپ آرکائیو کرنے کی Google ہدایت",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "موجودہ تنصیب احتیاط سے بحال کریں",
+          "paragraphs": [
+            "آرکائیو کرنے سے ایپ کا سافٹ ویئر، اجازتیں اور عارضی فائلیں ہٹتی ہیں، مگر آئیکن اور ڈیٹا رہتے ہیں؛ اطلاعات بھی رک جاتی ہیں۔ Google دوبارہ نصب کرنے کے لیے مدھم آئیکن دبانے کی ہدایت دیتا ہے۔ متعلقہ ایپ اسٹور نصب رہنا اور ایپ کا وہاں دستیاب ہونا ضروری ہے۔ جگہ کم ہو تو پلیئر کا ڈیٹا صاف کرنے کے بجائے اسٹوریج کا پیغام پڑھیں۔ اپنے آلے کے دستیاب اختیارات دیکھیں، ہر Android ماڈل پر ایک جیسے اختیارات فرض نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "بحالی اور رسائی الگ رکھیں",
+          "paragraphs": [
+            "بحالی کے بعد نئی اجازت کی درخواست کو اس کام کے مطابق پرکھیں جو آپ کرنا چاہتے ہیں۔ نجی تفصیلات دوبارہ درج کرنے سے پہلے دیکھیں کہ محفوظ ترتیب موجود ہے یا نہیں۔ آرکائیو کی جانچ کے لیے نہ ایپ اَن انسٹال کریں اور نہ اس کا اسٹوریج مٹائیں۔ اصل ایپ دستیاب نہ ہو تو نامعلوم APK نصب کرنے کے بجائے تصدیق شدہ ناشر سے پوچھیں۔ Android ورژن، ایپ کا نام اور بحالی کا پیغام لکھیں، رسائی کی تفصیلات نہیں۔ پلیئر بحال کرنے سے سروس کی تجدید نہیں ہوتی اور الگ بامعاوضہ پلیئر لائسنس شامل نہیں ہوتا۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "المشغّل المؤرشف مع 5G Live IPTV: افحص رمز Android أولاً",
+      "excerpt": "قد يشير رمز المشغّل الباهت إلى أرشفة Android لا انتهاء الخدمة. تحقق من هوية التطبيق وطريقة استعادته قبل استبدال الإعدادات المحفوظة.",
+      "seo_title": "المشغّل المؤرشف مع 5G Live IPTV: افحص رمز Android أولاً",
+      "seo_description": "قد يشير رمز المشغّل الباهت إلى أرشفة Android لا انتهاء الخدمة. تحقق من هوية التطبيق وطريقة استعادته قبل استبدال الإعدادات المحفوظة.",
+      "sections": [
+        {
+          "heading": "حدّد التطبيق وشارة الأرشفة",
+          "paragraphs": [
+            "إذا أصبح رمز المشغّل المعتاد باهتاً وظهرت عليه شارة أرشفة، فافحص اسم التطبيق قبل البحث عن بديل. عند إعداد 5G Live IPTV، تُعد علامة الخدمة وناشر المشغّل المثبّت معلومتين منفصلتين. توثق Google مؤشرات الأرشفة على أجهزة Android المدعومة؛ وبعض الخطوات تتطلب Android 15 أو أحدث وأجهزة متوافقة. ولا يثبت الرمز الباهت وحده انتهاء صلاحية الوصول إلى الخدمة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل Google لأرشفة تطبيقات Android",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "استعد التثبيت الحالي بحذر",
+          "paragraphs": [
+            "تزيل الأرشفة برنامج التطبيق وأذوناته وملفاته المؤقتة، مع الاحتفاظ بالرمز والبيانات؛ وتتوقف الإشعارات أيضاً. توضح Google أن النقر على الرمز الباهت يعيد التثبيت. يجب أن يظل متجر التطبيقات المعني مثبّتاً وأن يبقى التطبيق متاحاً فيه. إذا لم تكفِ المساحة، فاقرأ رسالة التخزين بدلاً من مسح بيانات المشغّل. اتبع الخيارات الموجودة في جهازك ولا تفترض تطابقها في جميع طرز Android."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افصل الاستعادة عن الوصول",
+          "paragraphs": [
+            "بعد الاستعادة، راجع أي طلب إذن جديد وفق الميزة التي تريد استخدامها. تحقق من بقاء الإعدادات المحفوظة قبل إدخال بيانات خاصة مجدداً. لا تُزل التطبيق ولا تمسح مساحة تخزينه لمجرد فحص الأرشفة. إذا تعذر العثور على التطبيق الأصلي، فاسأل ناشره المتحقق منه بدلاً من تثبيت ملف APK مجهول. دوّن إصدار Android واسم التطبيق ورسالة الاستعادة دون بيانات الدخول. استعادة المشغّل لا تجدد خدمة المشاهدة ولا تشمل ترخيص مشغّل مدفوعاً منفصلاً."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV का संग्रहित प्लेयर: पहले Android आइकन जाँचें",
+      "excerpt": "धुंधला प्लेयर आइकन Android में संग्रहित ऐप का संकेत हो सकता है, सेवा समाप्त होने का नहीं। सहेजी सेटिंग बदलने से पहले ऐप और बहाली का तरीका जाँचें।",
+      "seo_title": "5G Live IPTV का संग्रहित प्लेयर: पहले Android आइकन जाँचें",
+      "seo_description": "धुंधला प्लेयर आइकन Android में संग्रहित ऐप का संकेत हो सकता है, सेवा समाप्त होने का नहीं। सहेजी सेटिंग बदलने से पहले ऐप और बहाली का तरीका जाँचें।",
+      "sections": [
+        {
+          "heading": "ऐप और निशान पहचानें",
+          "paragraphs": [
+            "सामान्य प्लेयर का आइकन धुंधला हो और उस पर संग्रह का निशान दिखे तो विकल्प खोजने से पहले ऐप का नाम देखें। 5G Live IPTV सेटअप में सेवा का ब्रांड और इंस्टॉल किए प्लेयर का प्रकाशक अलग जानकारी हैं। Google समर्थित Android डिवाइसों पर ऐसे संकेत बताता है; कुछ चरणों के लिए Android 15 या नया संस्करण और उपयुक्त हार्डवेयर चाहिए। सिर्फ धुंधला आइकन सेवा की पहुँच समाप्त होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android ऐप संग्रह की Google गाइड",
+              "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "मौजूदा इंस्टॉलेशन सावधानी से बहाल करें",
+          "paragraphs": [
+            "संग्रह करने से ऐप का सॉफ़्टवेयर, अनुमतियाँ और अस्थायी फ़ाइलें हटती हैं, जबकि आइकन और डेटा सुरक्षित रहते हैं; सूचनाएँ भी रुक जाती हैं। Google दोबारा इंस्टॉल करने के लिए धुंधले आइकन को टैप करना बताता है। संबंधित ऐप स्टोर इंस्टॉल रहना चाहिए और ऐप वहाँ उपलब्ध होना चाहिए। जगह कम हो तो प्लेयर का डेटा साफ करने के बजाय स्टोरेज संदेश पढ़ें। अपने डिवाइस के विकल्प अपनाएँ, हर Android मॉडल पर एक जैसे विकल्प न मानें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "बहाली और सेवा पहुँच अलग रखें",
+          "paragraphs": [
+            "बहाली के बाद किसी नई अनुमति की माँग को उस सुविधा के अनुसार परखें जिसका उपयोग करना है। निजी जानकारी फिर दर्ज करने से पहले देखें कि सहेजा सेटअप उपलब्ध है या नहीं। संग्रह की जाँच के लिए ऐप अनइंस्टॉल न करें और न ही उसका स्टोरेज मिटाएँ। मूल ऐप उपलब्ध न हो तो अनजान APK इंस्टॉल करने के बजाय सत्यापित प्रकाशक से पूछें। Android संस्करण, ऐप का नाम और बहाली का संदेश लिखें, लॉगिन जानकारी नहीं। प्लेयर बहाल करने से सेवा का नवीनीकरण नहीं होता और अलग सशुल्क प्लेयर लाइसेंस शामिल नहीं होता।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play Help: Archive unused apps on Android",
+      "url": "https://support.google.com/googleplay/answer/15523443?hl=en"
+    }
+  ]
+}

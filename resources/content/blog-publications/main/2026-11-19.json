@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-19",
+  "topic": "Compare VLC for Android subtitle text size, colour and background for readability without confusing appearance with missing tracks or subtitle timing.",
+  "primary_keyword": "IPTV subtitle size",
+  "slug": "main-subtitle-size-colour-background-readability",
+  "translations": {
+    "en": {
+      "title": "IPTV subtitle size: make VLC text easier to read",
+      "excerpt": "Compare VLC subtitle size, colour and background without changing the programme timing. Keep useful settings and describe text that remains difficult to read.",
+      "seo_title": "IPTV subtitle size: make VLC text easier to read",
+      "seo_description": "Compare VLC subtitle size, colour and background without changing the programme timing. Keep useful settings and describe text that remains difficult to read.",
+      "sections": [
+        {
+          "heading": "Start with a visible subtitle",
+          "paragraphs": [
+            "If subtitles are visible but hard to read during IPTV viewing, first identify the difficulty: tiny letters, poor contrast against a bright scene, or words appearing at the wrong moment. An IPTV subtitle size adjustment addresses the first problem. It cannot supply a missing language track or correct dialogue timing. Keep the same permitted video and subtitle track selected while comparing, so a different programme does not confuse the result."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Change one appearance option",
+          "paragraphs": [
+            "VideoLAN documents subtitle size, colour, background and bold options for VLC for Android. Open the subtitle settings available in your installed version and note the starting choice. Try one larger size, then return to the video to judge readability from your usual viewing position. If contrast remains the issue, separately compare the documented subtitle background option. Avoid changing several preferences together, and restore the earlier value when a change is unhelpful."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official VideoLAN subtitle settings",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Report what still differs",
+          "paragraphs": [
+            "Check whether text becomes clearer without covering important picture details or wrapping awkwardly. If your interface lacks the documented option, record the device and VLC version rather than assuming another player has identical controls. Describe whether the problem is size, contrast or timing when asking for help. Keep private playback addresses out of screenshots. You do not need to erase app data, remove saved access or buy another subscription to compare subtitle appearance."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Tamaño de subtítulos IPTV: lee mejor el texto de VLC",
+      "excerpt": "Compara tamaño, color y fondo de los subtítulos de VLC sin cambiar la sincronización. Conserva los ajustes útiles y describe el texto que siga siendo difícil de leer.",
+      "seo_title": "Tamaño de subtítulos IPTV: lee mejor el texto de VLC",
+      "seo_description": "Compara tamaño, color y fondo de los subtítulos de VLC sin cambiar la sincronización. Conserva los ajustes útiles y describe el texto que siga siendo difícil de leer.",
+      "sections": [
+        {
+          "heading": "Empieza con un subtítulo visible",
+          "paragraphs": [
+            "Si ves subtítulos durante la reproducción IPTV pero cuesta leerlos, identifica primero la dificultad: letras diminutas, poco contraste sobre una escena clara o palabras que aparecen en el momento equivocado. Ajustar el tamaño resuelve la primera cuestión. No añade una pista de idioma ausente ni corrige la sincronización del diálogo. Mantén el mismo vídeo autorizado y la misma pista de subtítulos al comparar para que otro programa no confunda el resultado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Cambia una opción de apariencia",
+          "paragraphs": [
+            "VideoLAN documenta opciones de tamaño, color, fondo y negrita en VLC para Android. Abre los ajustes de subtítulos disponibles en tu versión y anota la selección inicial. Prueba un tamaño mayor y vuelve al vídeo para valorar la lectura desde tu posición habitual. Si el problema sigue siendo el contraste, compara por separado la opción de fondo documentada. Evita cambiar varias preferencias a la vez y recupera el valor anterior si el cambio no ayuda."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajustes oficiales de subtítulos de VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Describe lo que siga siendo diferente",
+          "paragraphs": [
+            "Comprueba si el texto resulta más claro sin tapar detalles importantes de la imagen ni dividir las líneas de forma incómoda. Si tu interfaz no incluye la opción documentada, anota el dispositivo y la versión de VLC; otro reproductor puede tener controles distintos. Al pedir ayuda, distingue tamaño, contraste y sincronización. Excluye las direcciones privadas de reproducción de las capturas. Para comparar la apariencia no necesitas borrar datos de la aplicación, quitar el acceso guardado ni comprar otra suscripción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Taille des sous-titres IPTV : mieux lire le texte dans VLC",
+      "excerpt": "Comparez taille, couleur et fond des sous-titres VLC sans modifier leur synchronisation. Gardez les réglages utiles et décrivez ce qui reste difficile à lire.",
+      "seo_title": "Taille des sous-titres IPTV : mieux lire le texte dans VLC",
+      "seo_description": "Comparez taille, couleur et fond des sous-titres VLC sans modifier leur synchronisation. Gardez les réglages utiles et décrivez ce qui reste difficile à lire.",
+      "sections": [
+        {
+          "heading": "Partez de sous-titres visibles",
+          "paragraphs": [
+            "Si les sous-titres sont visibles pendant une lecture IPTV mais difficiles à lire, identifiez le problème : lettres trop petites, contraste insuffisant sur une scène claire ou mots affichés au mauvais moment. La taille agit sur le premier point. Elle ne fournit pas une piste de langue absente et ne corrige pas la synchronisation du dialogue. Conservez la même vidéo autorisée et la même piste pendant la comparaison afin de ne pas brouiller le résultat."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Modifiez un seul réglage visuel",
+          "paragraphs": [
+            "VideoLAN documente des options de taille, couleur, fond et gras dans VLC pour Android. Ouvrez les réglages de sous-titres proposés par votre version et notez le choix initial. Essayez une taille supérieure, puis revenez à la vidéo pour juger la lecture depuis votre place habituelle. Si le contraste pose encore problème, comparez séparément le fond documenté. Évitez plusieurs modifications simultanées et rétablissez la valeur précédente si le changement ne sert à rien."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Réglages officiels des sous-titres VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez ce qui reste différent",
+          "paragraphs": [
+            "Vérifiez que le texte devient plus clair sans masquer des détails importants ni former des lignes mal adaptées. Si votre interface ne propose pas le réglage documenté, relevez le modèle et la version de VLC ; un autre lecteur peut avoir des commandes différentes. Pour demander de l’aide, distinguez taille, contraste et synchronisation. Masquez les adresses privées de lecture dans les captures. Cette comparaison ne nécessite ni d’effacer les données de l’application, ni de supprimer les accès enregistrés, ni d’acheter un autre abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Dimensione sottotitoli IPTV: rendi leggibile il testo in VLC",
+      "excerpt": "Confronta dimensione, colore e sfondo dei sottotitoli VLC senza cambiarne la sincronizzazione. Conserva le impostazioni utili e descrivi il testo poco leggibile.",
+      "seo_title": "Dimensione sottotitoli IPTV: rendi leggibile il testo in VLC",
+      "seo_description": "Confronta dimensione, colore e sfondo dei sottotitoli VLC senza cambiarne la sincronizzazione. Conserva le impostazioni utili e descrivi il testo poco leggibile.",
+      "sections": [
+        {
+          "heading": "Parti da sottotitoli visibili",
+          "paragraphs": [
+            "Se durante la visione IPTV i sottotitoli compaiono ma sono difficili da leggere, identifica il problema: lettere minuscole, scarso contrasto su una scena chiara oppure parole mostrate nel momento sbagliato. La dimensione riguarda il primo caso. Non aggiunge una traccia linguistica mancante e non corregge la sincronizzazione dei dialoghi. Mantieni selezionati lo stesso video autorizzato e la stessa traccia mentre confronti, per non confondere il risultato con un altro programma."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Modifica una sola opzione grafica",
+          "paragraphs": [
+            "VideoLAN documenta dimensione, colore, sfondo e grassetto per VLC su Android. Apri le impostazioni dei sottotitoli disponibili nella versione installata e annota la scelta iniziale. Prova una dimensione maggiore, poi torna al video e valuta la leggibilità dalla tua posizione abituale. Se il problema resta il contrasto, confronta separatamente lo sfondo documentato. Evita di cambiare più preferenze insieme e ripristina il valore precedente quando una modifica non aiuta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Impostazioni ufficiali dei sottotitoli VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi cosa resta diverso",
+          "paragraphs": [
+            "Controlla che il testo sia più chiaro senza coprire dettagli importanti o andare a capo in modo scomodo. Se manca l’opzione documentata, annota dispositivo e versione di VLC senza presumere che un altro lettore abbia gli stessi comandi. Quando chiedi assistenza, distingui dimensione, contrasto e sincronizzazione. Escludi gli indirizzi privati di riproduzione dalle schermate. Per confrontare l’aspetto non serve cancellare i dati dell’app, eliminare gli accessi salvati o acquistare un altro abbonamento IPTV."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-ondertiteling vergroten: leesbare tekst in VLC",
+      "excerpt": "Vergelijk grootte, kleur en achtergrond van VLC-ondertiteling zonder de timing te wijzigen. Bewaar nuttige instellingen en beschrijf wat moeilijk leesbaar blijft.",
+      "seo_title": "IPTV-ondertiteling vergroten: leesbare tekst in VLC",
+      "seo_description": "Vergelijk grootte, kleur en achtergrond van VLC-ondertiteling zonder de timing te wijzigen. Bewaar nuttige instellingen en beschrijf wat moeilijk leesbaar blijft.",
+      "sections": [
+        {
+          "heading": "Begin met zichtbare ondertiteling",
+          "paragraphs": [
+            "Is ondertiteling tijdens IPTV zichtbaar maar lastig te lezen? Bepaal eerst het probleem: kleine letters, weinig contrast tegen een lichte scène of woorden die op het verkeerde moment verschijnen. Tekst vergroten helpt bij het eerste punt. Het levert geen ontbrekend taalspoor en corrigeert geen dialoogtiming. Houd bij het vergelijken dezelfde toegestane video en hetzelfde ondertitelspoor geselecteerd, zodat een ander programma het resultaat niet verwarrend maakt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Wijzig één weergaveoptie",
+          "paragraphs": [
+            "VideoLAN beschrijft grootte, kleur, achtergrond en vetgedrukte ondertiteling voor VLC voor Android. Open de ondertitelinstellingen van jouw geïnstalleerde versie en noteer de beginwaarde. Probeer één grotere tekstgrootte en keer terug naar de video om vanaf je gebruikelijke plek te beoordelen. Blijft contrast het probleem, vergelijk dan afzonderlijk de beschreven achtergrondoptie. Wijzig niet meerdere voorkeuren tegelijk en herstel de vorige waarde als een aanpassing niet helpt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële ondertitelinstellingen van VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf wat nog afwijkt",
+          "paragraphs": [
+            "Controleer of de tekst duidelijker wordt zonder belangrijke beelddetails te bedekken of onhandig af te breken. Ontbreekt de beschreven optie, noteer dan apparaat en VLC-versie; een andere speler kan andere bediening hebben. Maak bij hulpvragen onderscheid tussen grootte, contrast en timing. Laat privéafspeeladressen weg uit schermafbeeldingen. Je hoeft geen appgegevens te wissen, opgeslagen toegang te verwijderen of een ander abonnement te kopen om de weergave van ondertitels te vergelijken."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Tamanho das legendas IPTV: leia melhor o texto no VLC",
+      "excerpt": "Compare tamanho, cor e fundo das legendas do VLC sem mudar a sincronização. Preserve ajustes úteis e descreva o texto que continuar difícil de ler.",
+      "seo_title": "Tamanho das legendas IPTV: leia melhor o texto no VLC",
+      "seo_description": "Compare tamanho, cor e fundo das legendas do VLC sem mudar a sincronização. Preserve ajustes úteis e descreva o texto que continuar difícil de ler.",
+      "sections": [
+        {
+          "heading": "Comece com uma legenda visível",
+          "paragraphs": [
+            "Se as legendas aparecem durante a reprodução IPTV, mas são difíceis de ler, identifique a dificuldade: letras pequenas, pouco contraste numa cena clara ou palavras no momento errado. Ajustar o tamanho trata do primeiro problema. Não cria uma faixa de idioma ausente nem corrige a sincronização do diálogo. Mantenha o mesmo vídeo autorizado e a mesma faixa de legendas ao comparar, para que outro programa não confunda o resultado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Altere uma opção de aparência",
+          "paragraphs": [
+            "A VideoLAN documenta tamanho, cor, fundo e negrito nas legendas do VLC para Android. Abra as opções disponíveis na versão instalada e anote a escolha inicial. Experimente um tamanho maior e volte ao vídeo para avaliar a leitura a partir do lugar habitual. Se o contraste continuar a ser o problema, compare separadamente a opção de fundo documentada. Evite alterar várias preferências ao mesmo tempo e restaure o valor anterior quando a mudança não ajudar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Definições oficiais de legendas da VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva o que ainda está diferente",
+          "paragraphs": [
+            "Verifique se o texto fica mais claro sem esconder detalhes importantes da imagem nem criar quebras de linha incómodas. Se a interface não apresentar a opção documentada, registe dispositivo e versão do VLC; outro leitor pode usar comandos diferentes. Ao pedir ajuda, diferencie tamanho, contraste e sincronização. Exclua endereços privados de reprodução das capturas. Não precisa de apagar dados da aplicação, remover acessos guardados ou comprar outra assinatura IPTV para comparar a aparência das legendas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Размер субтитров IPTV: сделайте текст в VLC удобнее",
+      "excerpt": "Сравните размер, цвет и фон субтитров VLC, не меняя синхронизацию. Сохраните полезные настройки и опишите текст, который по-прежнему трудно читать.",
+      "seo_title": "Размер субтитров IPTV: сделайте текст в VLC удобнее",
+      "seo_description": "Сравните размер, цвет и фон субтитров VLC, не меняя синхронизацию. Сохраните полезные настройки и опишите текст, который по-прежнему трудно читать.",
+      "sections": [
+        {
+          "heading": "Начните с видимых субтитров",
+          "paragraphs": [
+            "Если при просмотре IPTV субтитры видны, но их трудно читать, сначала определите причину: мелкие буквы, слабый контраст на светлой сцене или слова не в тот момент. Размер текста относится к первой проблеме. Он не добавляет отсутствующую языковую дорожку и не исправляет синхронизацию диалога. При сравнении оставьте ту же разрешённую видеозапись и ту же дорожку субтитров, чтобы другая передача не исказила результат."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Измените один параметр оформления",
+          "paragraphs": [
+            "VideoLAN описывает размер, цвет, фон и жирное начертание субтитров в VLC для Android. Откройте настройки, доступные в установленной версии, и запишите исходный выбор. Попробуйте один больший размер, затем вернитесь к видео и оцените текст с привычного места. Если дело всё ещё в контрасте, отдельно сравните описанную настройку фона. Не меняйте несколько параметров сразу и возвращайте прежнее значение, если изменение не помогает."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальные настройки субтитров VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите оставшееся различие",
+          "paragraphs": [
+            "Проверьте, стал ли текст яснее, не закрывая важные детали изображения и не перенося строки неудобным образом. Если описанной настройки нет, укажите устройство и версию VLC: другой проигрыватель может иметь иные элементы управления. Обращаясь за помощью, различайте размер, контраст и синхронизацию. Убирайте частные адреса воспроизведения со снимков экрана. Для сравнения оформления не нужно стирать данные приложения, удалять сохранённый доступ или покупать другую подписку."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV ذیلی عنوانات کا سائز: VLC میں متن واضح پڑھیں",
+      "excerpt": "وقت کی مطابقت بدلے بغیر VLC کے ذیلی عنوانات کا سائز، رنگ اور پس منظر دیکھیں۔ مفید ترتیبات محفوظ رکھیں اور مشکل سے پڑھے جانے والے متن کی وضاحت کریں۔",
+      "seo_title": "IPTV ذیلی عنوانات کا سائز: VLC میں متن واضح پڑھیں",
+      "seo_description": "وقت کی مطابقت بدلے بغیر VLC کے ذیلی عنوانات کا سائز، رنگ اور پس منظر دیکھیں۔ مفید ترتیبات محفوظ رکھیں اور مشکل سے پڑھے جانے والے متن کی وضاحت کریں۔",
+      "sections": [
+        {
+          "heading": "پہلے موجود ذیلی عنوانات دیکھیں",
+          "paragraphs": [
+            "اگر IPTV دیکھتے ہوئے ذیلی عنوانات موجود ہیں مگر پڑھنا مشکل ہے تو پہلے مسئلہ پہچانیں: حروف بہت چھوٹے ہیں، روشن منظر پر نمایاں نہیں، یا الفاظ غلط وقت پر آتے ہیں؟ سائز بدلنے کا تعلق پہلے مسئلے سے ہے۔ اس سے غائب زبان کا ٹریک نہیں ملتا اور مکالمے کی زمانی مطابقت درست نہیں ہوتی۔ موازنہ کرتے ہوئے وہی مجاز ویڈیو اور ذیلی عنوانات کا وہی ٹریک منتخب رکھیں تاکہ دوسرا پروگرام نتیجہ مبہم نہ کرے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ظاہری شکل کی ایک ترتیب بدلیں",
+          "paragraphs": [
+            "VideoLAN نے Android کے لیے VLC میں ذیلی عنوانات کے سائز، رنگ، پس منظر اور موٹے حروف کی ترتیبات بیان کی ہیں۔ نصب شدہ نسخے میں دستیاب ترتیبات کھولیں اور ابتدائی انتخاب نوٹ کریں۔ ایک درجہ بڑا سائز آزمائیں، پھر ویڈیو پر واپس آ کر معمول کی جگہ سے پڑھنے کا جائزہ لیں۔ اگر نمایاں ہونے کا مسئلہ باقی ہو تو بیان کردہ پس منظر کی ترتیب الگ سے دیکھیں۔ کئی ترجیحات اکٹھی نہ بدلیں اور تبدیلی فائدہ نہ دے تو پچھلی قدر بحال کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN کی ذیلی عنوانات کی سرکاری رہنمائی",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "باقی رہنے والا فرق بتائیں",
+          "paragraphs": [
+            "دیکھیں کہ متن تصویر کی اہم تفصیل چھپائے یا سطروں کو نامناسب طور پر توڑے بغیر واضح ہوا ہے یا نہیں۔ بیان کردہ اختیار موجود نہ ہو تو آلہ اور VLC کا نسخہ نوٹ کریں؛ دوسرے پلیئر کے کنٹرول مختلف ہو سکتے ہیں۔ مدد مانگتے ہوئے سائز، نمایاں ہونے اور وقت کی مطابقت میں فرق واضح کریں۔ اسکرین شاٹ میں نجی پلے بیک پتے شامل نہ کریں۔ ذیلی عنوانات کی شکل کا موازنہ کرنے کے لیے نہ ایپ کا ڈیٹا مٹائیں، نہ محفوظ رسائی ہٹائیں، اور نہ دوسری رکنیت خریدیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "حجم ترجمة IPTV: اجعل النص أوضح في VLC",
+      "excerpt": "قارن حجم ترجمة VLC ولونها وخلفيتها دون تغيير التزامن. احتفظ بالإعدادات المفيدة وصف النص الذي تظل قراءته صعبة.",
+      "seo_title": "حجم ترجمة IPTV: اجعل النص أوضح في VLC",
+      "seo_description": "قارن حجم ترجمة VLC ولونها وخلفيتها دون تغيير التزامن. احتفظ بالإعدادات المفيدة وصف النص الذي تظل قراءته صعبة.",
+      "sections": [
+        {
+          "heading": "ابدأ بترجمة ظاهرة على الشاشة",
+          "paragraphs": [
+            "إذا ظهرت الترجمة أثناء مشاهدة IPTV لكن قراءتها صعبة، فحدّد المشكلة أولاً: أحرف صغيرة، أم تباين ضعيف فوق مشهد ساطع، أم كلمات في توقيت خاطئ؟ تعديل الحجم يعالج السؤال الأول. لا يوفّر مسار لغة مفقوداً ولا يصحّح تزامن الحوار. أبقِ الفيديو المسموح نفسه ومسار الترجمة نفسه محدّدين أثناء المقارنة حتى لا يربك اختلاف البرنامج النتيجة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "غيّر خيار مظهر واحداً",
+          "paragraphs": [
+            "توثّق VideoLAN خيارات الحجم واللون والخلفية والخط العريض لترجمة VLC على Android. افتح إعدادات الترجمة المتاحة في نسختك المثبتة ودوّن الاختيار الأصلي. جرّب حجماً أكبر واحداً، ثم عُد إلى الفيديو لتقييم القراءة من مكان جلوسك المعتاد. إن استمرت مشكلة التباين، فقارن خيار الخلفية الموثّق على حدة. تجنّب تغيير تفضيلات عدة معاً وأعِد القيمة السابقة إذا لم يفد التعديل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "إعدادات الترجمة الرسمية من VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "صف الفرق الذي بقي",
+          "paragraphs": [
+            "تحقّق من أن النص أوضح دون حجب تفاصيل مهمة أو التفاف السطور بصورة مزعجة. إذا لم يظهر الخيار الموثّق في واجهتك، فسجّل الجهاز ونسخة VLC؛ فقد تختلف أدوات مشغّل آخر. عند طلب المساعدة، فرّق بين الحجم والتباين والتوقيت. أبعد عناوين التشغيل الخاصة عن لقطات الشاشة. لا تحتاج إلى مسح بيانات التطبيق أو حذف الوصول المحفوظ أو شراء اشتراك آخر لمقارنة مظهر الترجمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV उपशीर्षक का आकार: VLC में पाठ साफ़ पढ़ें",
+      "excerpt": "समय का तालमेल बदले बिना VLC उपशीर्षक का आकार, रंग और पृष्ठभूमि देखें। उपयोगी सेटिंग सुरक्षित रखें और जो पाठ पढ़ना कठिन रहे उसका वर्णन करें।",
+      "seo_title": "IPTV उपशीर्षक का आकार: VLC में पाठ साफ़ पढ़ें",
+      "seo_description": "समय का तालमेल बदले बिना VLC उपशीर्षक का आकार, रंग और पृष्ठभूमि देखें। उपयोगी सेटिंग सुरक्षित रखें और जो पाठ पढ़ना कठिन रहे उसका वर्णन करें।",
+      "sections": [
+        {
+          "heading": "पहले दिख रहे उपशीर्षक देखें",
+          "paragraphs": [
+            "IPTV देखते समय उपशीर्षक दिख रहे हों लेकिन पढ़ना कठिन हो, तो पहले समस्या पहचानें: अक्षर छोटे हैं, चमकीले दृश्य पर स्पष्ट नहीं हैं, या शब्द गलत समय पर आते हैं? आकार बदलना पहली समस्या से संबंधित है। इससे गायब भाषा ट्रैक नहीं मिलता और संवाद का समय ठीक नहीं होता। तुलना में वही अधिकृत वीडियो और वही उपशीर्षक ट्रैक चुनकर रखें, ताकि दूसरा कार्यक्रम परिणाम को उलझाए नहीं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रूप की एक सेटिंग बदलें",
+          "paragraphs": [
+            "VideoLAN ने Android के VLC में उपशीर्षक का आकार, रंग, पृष्ठभूमि और मोटे अक्षर वाली सेटिंग बताई हैं। अपने स्थापित संस्करण में उपलब्ध उपशीर्षक सेटिंग खोलें और शुरुआती चयन लिख लें। एक बड़ा आकार आज़माएँ, फिर वीडियो में लौटकर अपनी सामान्य जगह से पढ़ने का आकलन करें। यदि स्पष्टता की समस्या बनी रहे, तो बताई गई पृष्ठभूमि सेटिंग अलग से देखें। कई विकल्प एक साथ न बदलें और बदलाव उपयोगी न हो तो पुराना मान वापस रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN की आधिकारिक उपशीर्षक सेटिंग",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "बचा हुआ अंतर बताएँ",
+          "paragraphs": [
+            "देखें कि पाठ महत्वपूर्ण दृश्य ढके बिना और पंक्तियाँ असुविधाजनक ढंग से टूटे बिना साफ़ हुआ या नहीं। बताया गया विकल्प न मिले तो उपकरण और VLC संस्करण लिखें; दूसरे प्लेयर के नियंत्रण अलग हो सकते हैं। सहायता माँगते समय आकार, स्पष्टता और समय के तालमेल को अलग बताएँ। स्क्रीनशॉट में निजी प्लेबैक पते न रखें। उपशीर्षक का रूप देखने के लिए न ऐप का डेटा मिटाएँ, न सहेजी पहुँच हटाएँ और न दूसरी सदस्यता खरीदें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android subtitle appearance settings",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+    }
+  ]
+}

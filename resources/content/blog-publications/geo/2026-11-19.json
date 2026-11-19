@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-19",
+  "topic": "Identify Apple TV idle screen saver imagery and its start delay separately from a paused Geo IPTV programme, device power-off and a provider fault.",
+  "primary_keyword": "Geo IPTV screen saver",
+  "slug": "geo-screen-saver-idle-display-or-programme",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV screen saver: an idle Apple TV or a changed programme?",
+      "excerpt": "If an idle picture replaces a paused player, identify the display and its start delay before changing Geo IPTV access or resetting your setup.",
+      "seo_title": "Geo IPTV screen saver: an idle Apple TV or a changed programme?",
+      "seo_description": "If an idle picture replaces a paused player, identify the display and its start delay before changing Geo IPTV access or resetting your setup.",
+      "sections": [
+        {
+          "heading": "Recognise the display before the fault",
+          "paragraphs": [
+            "A moving landscape after a pause does not necessarily belong to the programme. During Geo IPTV viewing, note whether you paused the player, returned to the Home screen or were still watching. Apple TV can show its own screen saver after an idle interval. A different picture alone does not establish a new channel, an expired subscription or a provider outage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple screen saver guide",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Read the existing start delay",
+          "paragraphs": [
+            "Apple documents Settings, Screen Saver, then Start After for the idle delay. Read the current value and compare it with the approximate interval you observed. Menu labels can differ with software, so follow the guide for your device. Keep the household preference unless the owner wants a change; disabling every idle safeguard is unnecessary just to identify the screen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Return and record the result",
+          "paragraphs": [
+            "Use the normal remote controls to return to the player and check whether the same paused video is still there. Record what you pressed, whether sound continued and whether playback resumes. If the whole device turns off, describe that separately from a visible screen saver. If the picture belongs to the television or the app, name that screen rather than assuming Apple TV caused it. Keep saved player access intact and share observations without passwords or private playback links."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Protector de pantalla y Geo IPTV: ¿Apple TV inactivo u otro programa?",
+      "excerpt": "Si una imagen de inactividad sustituye al reproductor pausado, identifica la pantalla y su demora antes de cambiar el acceso de Geo IPTV o restablecer el equipo.",
+      "seo_title": "Protector de pantalla y Geo IPTV: ¿Apple TV inactivo u otro programa?",
+      "seo_description": "Si una imagen de inactividad sustituye al reproductor pausado, identifica la pantalla y su demora antes de cambiar el acceso de Geo IPTV o restablecer el equipo.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla antes de atribuir una avería",
+          "paragraphs": [
+            "Un paisaje en movimiento después de una pausa no tiene por qué formar parte del programa. Al ver Geo IPTV, anota si pausaste el reproductor, volviste a la pantalla de inicio o seguías mirando. Apple TV puede mostrar su propio protector tras un intervalo de inactividad. Una imagen distinta por sí sola no demuestra un canal nuevo, una suscripción vencida ni una caída del proveedor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía de protectores de pantalla de Apple",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Consulta la demora actual",
+          "paragraphs": [
+            "Apple indica Ajustes, Protector de pantalla y después Iniciar tras para configurar la espera. Lee el valor actual y compáralo con el intervalo aproximado observado. Los nombres pueden variar según el software; sigue la guía de tu dispositivo. Conserva la preferencia del hogar salvo que su propietario quiera cambiarla: no hace falta desactivar todas las protecciones de inactividad para identificar una pantalla."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vuelve y anota el resultado",
+          "paragraphs": [
+            "Utiliza los controles habituales del mando para volver al reproductor y comprobar si sigue allí el mismo vídeo pausado. Anota qué pulsaste, si el sonido continuó y si la reproducción se reanuda. Si todo el dispositivo se apaga, descríbelo por separado de un protector visible. Si la imagen pertenece al televisor o a la aplicación, identifica esa pantalla sin atribuirla automáticamente al Apple TV. Conserva el acceso guardado y comparte observaciones sin contraseñas ni enlaces privados de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écran de veille Geo IPTV : Apple TV inactif ou autre programme ?",
+      "excerpt": "Si une image de veille remplace le lecteur en pause, identifiez son origine et son délai avant de modifier votre accès Geo IPTV ou de réinitialiser l’appareil.",
+      "seo_title": "Écran de veille Geo IPTV : Apple TV inactif ou autre programme ?",
+      "seo_description": "Si une image de veille remplace le lecteur en pause, identifiez son origine et son délai avant de modifier votre accès Geo IPTV ou de réinitialiser l’appareil.",
+      "sections": [
+        {
+          "heading": "Identifier l’affichage avant la panne",
+          "paragraphs": [
+            "Un paysage animé après une pause ne fait pas forcément partie du programme. Pendant une séance Geo IPTV, notez si vous avez mis le lecteur en pause, rejoint l’écran d’accueil ou continué à regarder. Apple TV peut afficher son propre écran de veille après une période d’inactivité. Une autre image ne prouve à elle seule ni nouvelle chaîne, ni abonnement expiré, ni panne du fournisseur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide Apple des écrans de veille",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Consulter le délai existant",
+          "paragraphs": [
+            "Apple indique Réglages, Économiseur d’écran, puis Démarrer après pour le délai d’inactivité. Lisez la valeur actuelle et comparez-la à l’intervalle approximatif observé. Les intitulés peuvent varier selon le logiciel : suivez le guide de votre appareil. Conservez la préférence du foyer sauf si son propriétaire souhaite la modifier ; désactiver toutes les protections de veille n’est pas nécessaire pour identifier l’affichage."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revenir et noter le résultat",
+          "paragraphs": [
+            "Revenez au lecteur avec les commandes habituelles de la télécommande et vérifiez si la même vidéo est toujours en pause. Notez la touche utilisée, la poursuite éventuelle du son et la reprise de la lecture. Si tout l’appareil s’éteint, décrivez cela séparément d’un écran de veille visible. Si l’image vient du téléviseur ou de l’application, nommez cet écran sans l’attribuer automatiquement à Apple TV. Préservez les accès enregistrés et transmettez vos observations sans mot de passe ni lien privé de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Salvaschermo Geo IPTV: Apple TV inattiva o programma diverso?",
+      "excerpt": "Se un’immagine di inattività sostituisce il lettore in pausa, verifica schermo e ritardo prima di modificare l’accesso Geo IPTV o inizializzare il dispositivo.",
+      "seo_title": "Salvaschermo Geo IPTV: Apple TV inattiva o programma diverso?",
+      "seo_description": "Se un’immagine di inattività sostituisce il lettore in pausa, verifica schermo e ritardo prima di modificare l’accesso Geo IPTV o inizializzare il dispositivo.",
+      "sections": [
+        {
+          "heading": "Riconosci lo schermo prima del guasto",
+          "paragraphs": [
+            "Un paesaggio in movimento dopo una pausa non appartiene necessariamente al programma. Mentre guardi Geo IPTV, annota se hai messo in pausa il lettore, aperto la schermata Home o continuato a guardare. Apple TV può mostrare il proprio salvaschermo dopo un intervallo di inattività. Un’immagine diversa da sola non dimostra un nuovo canale, un abbonamento scaduto o un disservizio del fornitore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Apple ai salvaschermo",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi il ritardo già impostato",
+          "paragraphs": [
+            "Apple indica Impostazioni, Salvaschermo, quindi Avvia dopo per il ritardo di inattività. Leggi il valore attuale e confrontalo con l’intervallo approssimativo osservato. Le etichette possono cambiare secondo il software: segui la guida del tuo dispositivo. Mantieni la preferenza della famiglia salvo una modifica voluta dal proprietario; per identificare la schermata non occorre disattivare ogni protezione di inattività."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Torna al lettore e annota il risultato",
+          "paragraphs": [
+            "Usa i normali comandi del telecomando per tornare al lettore e controlla se trovi ancora lo stesso video in pausa. Annota cosa hai premuto, se l’audio continuava e se la riproduzione riprende. Se si spegne l’intero dispositivo, descrivilo separatamente da un salvaschermo visibile. Se l’immagine appartiene al televisore o all’app, identifica quella schermata senza attribuirla automaticamente ad Apple TV. Conserva gli accessi salvati e condividi osservazioni senza password o collegamenti privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-schermbeveiliging: inactieve Apple TV of ander programma?",
+      "excerpt": "Vervangt een rustbeeld de gepauzeerde speler? Controleer de herkomst en wachttijd voordat je Geo IPTV-toegang wijzigt of het apparaat opnieuw instelt.",
+      "seo_title": "Geo IPTV-schermbeveiliging: inactieve Apple TV of ander programma?",
+      "seo_description": "Vervangt een rustbeeld de gepauzeerde speler? Controleer de herkomst en wachttijd voordat je Geo IPTV-toegang wijzigt of het apparaat opnieuw instelt.",
+      "sections": [
+        {
+          "heading": "Herken eerst het beeld",
+          "paragraphs": [
+            "Een bewegend landschap na een pauze hoort niet vanzelf bij het programma. Noteer tijdens Geo IPTV of je de speler pauzeerde, naar het beginscherm ging of nog keek. Apple TV kan na een periode zonder activiteit zijn eigen schermbeveiliging tonen. Alleen een ander beeld bewijst geen nieuw kanaal, verlopen abonnement of storing bij de aanbieder."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple-handleiding voor schermbeveiliging",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Lees de bestaande wachttijd",
+          "paragraphs": [
+            "Apple noemt Instellingen, Schermbeveiliging en daarna Begin na voor de wachttijd. Lees de huidige waarde en vergelijk die met het ongeveer waargenomen interval. Namen kunnen per softwareversie verschillen; volg de handleiding voor jouw apparaat. Behoud de gezinsvoorkeur tenzij de eigenaar die wil wijzigen. Alle rustbeveiligingen uitschakelen is niet nodig om het scherm te herkennen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Keer terug en noteer het resultaat",
+          "paragraphs": [
+            "Ga met de gewone afstandsbediening terug naar de speler en controleer of dezelfde gepauzeerde video er nog staat. Noteer welke knop je indrukte, of het geluid doorging en of afspelen hervat. Gaat het hele apparaat uit, beschrijf dat dan apart van zichtbare schermbeveiliging. Komt het beeld van de televisie of de app, benoem dat scherm dan zonder automatisch Apple TV als oorzaak te zien. Bewaar de opgeslagen spelertoegang en deel je waarnemingen zonder wachtwoorden of privéafspeellinks."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Proteção de ecrã Geo IPTV: Apple TV inativa ou outro programa?",
+      "excerpt": "Se uma imagem de repouso substituir o leitor em pausa, identifique a origem e o intervalo antes de alterar o acesso Geo IPTV ou repor o equipamento.",
+      "seo_title": "Proteção de ecrã Geo IPTV: Apple TV inativa ou outro programa?",
+      "seo_description": "Se uma imagem de repouso substituir o leitor em pausa, identifique a origem e o intervalo antes de alterar o acesso Geo IPTV ou repor o equipamento.",
+      "sections": [
+        {
+          "heading": "Identifique a imagem antes da avaria",
+          "paragraphs": [
+            "Uma paisagem em movimento depois de uma pausa não pertence necessariamente ao programa. Ao ver Geo IPTV, anote se colocou o leitor em pausa, voltou ao ecrã principal ou continuava a ver. A Apple TV pode mostrar a sua proteção de ecrã após um período de inatividade. Uma imagem diferente, por si só, não demonstra um canal novo, uma assinatura expirada ou uma falha do fornecedor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia Apple de proteção de ecrã",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Leia o intervalo existente",
+          "paragraphs": [
+            "A Apple indica Definições, Proteção de ecrã e depois Iniciar após para o intervalo de inatividade. Leia o valor atual e compare-o com o intervalo aproximado observado. As designações podem variar com o software; siga o guia do seu equipamento. Mantenha a preferência da casa, salvo se o proprietário quiser alterá-la. Não é necessário desativar todas as proteções de repouso para identificar o ecrã."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Regresse e registe o resultado",
+          "paragraphs": [
+            "Use os comandos habituais do telecomando para voltar ao leitor e verifique se o mesmo vídeo continua em pausa. Anote o botão utilizado, se o som continuou e se a reprodução retoma. Se todo o equipamento se desligar, descreva isso separadamente de uma proteção de ecrã visível. Se a imagem vier do televisor ou da aplicação, identifique esse ecrã sem atribuir automaticamente a causa à Apple TV. Preserve os acessos guardados e partilhe observações sem palavras-passe nem ligações privadas de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Заставка Geo IPTV: бездействие Apple TV или другая передача?",
+      "excerpt": "Если вместо проигрывателя на паузе появилась заставка, проверьте её источник и задержку до изменения доступа Geo IPTV или сброса устройства.",
+      "seo_title": "Заставка Geo IPTV: бездействие Apple TV или другая передача?",
+      "seo_description": "Если вместо проигрывателя на паузе появилась заставка, проверьте её источник и задержку до изменения доступа Geo IPTV или сброса устройства.",
+      "sections": [
+        {
+          "heading": "Сначала определите, что показано",
+          "paragraphs": [
+            "Движущийся пейзаж после паузы не обязательно относится к передаче. При просмотре Geo IPTV отметьте, ставили ли вы проигрыватель на паузу, открывали главный экран или продолжали смотреть. После периода бездействия Apple TV может показать собственную заставку. Другая картинка сама по себе не доказывает появление нового канала, окончание подписки или сбой провайдера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Руководство Apple по заставкам",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "Посмотрите текущую задержку",
+          "paragraphs": [
+            "В инструкции Apple задержка задаётся через настройки заставки и пункт начала показа после определённого интервала. Прочитайте текущее значение и сравните с примерным временем наблюдения. Названия зависят от версии ПО, поэтому пользуйтесь руководством своего устройства. Сохраните семейную настройку, если владелец не хочет её менять: для определения экрана не нужно отключать все функции защиты при бездействии."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Вернитесь и запишите результат",
+          "paragraphs": [
+            "Обычными кнопками пульта вернитесь в проигрыватель и проверьте, осталась ли там та же запись на паузе. Отметьте нажатую кнопку, продолжался ли звук и возобновляется ли воспроизведение. Если выключается всё устройство, опишите это отдельно от видимой заставки. Если изображение относится к телевизору или приложению, назовите этот экран, не приписывая причину автоматически Apple TV. Сохраните данные доступа проигрывателя и передавайте наблюдения без паролей и закрытых ссылок воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اسکرین سیور: Apple TV غیرفعال ہے یا پروگرام بدلا ہے؟",
+      "excerpt": "اگر رکے ہوئے پلیئر کی جگہ انتظار کی تصویر آئے تو Geo IPTV کی رسائی بدلنے یا آلہ ری سیٹ کرنے سے پہلے تصویر کا ماخذ اور شروع ہونے کا وقفہ پہچانیں۔",
+      "seo_title": "Geo IPTV اسکرین سیور: Apple TV غیرفعال ہے یا پروگرام بدلا ہے؟",
+      "seo_description": "اگر رکے ہوئے پلیئر کی جگہ انتظار کی تصویر آئے تو Geo IPTV کی رسائی بدلنے یا آلہ ری سیٹ کرنے سے پہلے تصویر کا ماخذ اور شروع ہونے کا وقفہ پہچانیں۔",
+      "sections": [
+        {
+          "heading": "خرابی سمجھنے سے پہلے تصویر پہچانیں",
+          "paragraphs": [
+            "وقفے کے بعد چلتا ہوا منظر ضروری نہیں کہ پروگرام کا حصہ ہو۔ Geo IPTV دیکھتے وقت نوٹ کریں کہ آپ نے پلیئر روکا تھا، مرکزی اسکرین کھولی تھی یا اب بھی دیکھ رہے تھے۔ Apple TV کچھ دیر غیرفعال رہنے پر اپنا اسکرین سیور دکھا سکتا ہے۔ صرف تصویر بدلنا نئے چینل، ختم شدہ سبسکرپشن یا فراہم کنندہ کی بندش کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple کی اسکرین سیور ہدایت",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "موجودہ انتظار کا وقفہ پڑھیں",
+          "paragraphs": [
+            "Apple کی ہدایت میں ترتیبات، اسکرین سیور اور پھر شروع ہونے سے پہلے کے وقفے کا اختیار ہے۔ موجودہ قدر پڑھیں اور مشاہدے کے اندازاً وقت سے ملائیں۔ سافٹ ویئر کے لحاظ سے نام مختلف ہو سکتے ہیں، اس لیے اپنے آلے کی ہدایت دیکھیں۔ گھر کی پسند برقرار رکھیں، جب تک مالک تبدیلی نہ چاہے؛ اسکرین پہچاننے کے لیے غیرفعال حالت کی تمام حفاظتی سہولتیں بند کرنا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "واپس جا کر نتیجہ نوٹ کریں",
+          "paragraphs": [
+            "ریموٹ کے معمول کے بٹنوں سے پلیئر پر واپس جائیں اور دیکھیں کہ وہی رکی ہوئی ویڈیو موجود ہے یا نہیں۔ کون سا بٹن دبایا، آواز جاری تھی یا نہیں اور پلے بیک دوبارہ چلتا ہے یا نہیں، یہ لکھیں۔ پورا آلہ بند ہو تو اسے نظر آنے والے اسکرین سیور سے الگ بیان کریں۔ تصویر ٹی وی یا ایپ کی ہو تو اسی اسکرین کا نام بتائیں، خودبخود Apple TV کو وجہ نہ سمجھیں۔ پلیئر کی محفوظ رسائی برقرار رکھیں اور مشاہدات شیئر کرتے وقت پاس ورڈ یا نجی پلے بیک روابط شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "شاشة توقف Geo IPTV: خمول Apple TV أم برنامج مختلف؟",
+      "excerpt": "إذا حلت صورة خمول محل المشغّل المتوقف مؤقتاً، فتحقق من مصدرها ومدة انتظارها قبل تغيير وصول Geo IPTV أو إعادة ضبط الجهاز.",
+      "seo_title": "شاشة توقف Geo IPTV: خمول Apple TV أم برنامج مختلف؟",
+      "seo_description": "إذا حلت صورة خمول محل المشغّل المتوقف مؤقتاً، فتحقق من مصدرها ومدة انتظارها قبل تغيير وصول Geo IPTV أو إعادة ضبط الجهاز.",
+      "sections": [
+        {
+          "heading": "تعرّف على العرض قبل افتراض العطل",
+          "paragraphs": [
+            "ليس المشهد المتحرك بعد الإيقاف المؤقت جزءاً من البرنامج بالضرورة. أثناء مشاهدة Geo IPTV، دوّن هل أوقفت المشغّل مؤقتاً أم رجعت إلى الشاشة الرئيسية أم كنت ما زلت تشاهد. يمكن أن يعرض Apple TV شاشة التوقف الخاصة به بعد فترة خمول. ولا تثبت صورة مختلفة وحدها وجود قناة جديدة أو انتهاء الاشتراك أو تعطل المزوّد."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل Apple لشاشات التوقف",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "اقرأ مدة الانتظار الحالية",
+          "paragraphs": [
+            "توضح Apple المسار: الإعدادات، ثم شاشة التوقف، ثم البدء بعد، لضبط مدة الخمول. اقرأ القيمة الحالية وقارنها بالفترة التقريبية التي لاحظتها. قد تختلف التسميات باختلاف البرنامج، فاتبع دليل جهازك. حافظ على تفضيل الأسرة ما لم يرغب المالك في تغييره؛ لا يلزم تعطيل جميع وسائل الحماية أثناء الخمول لمجرد تحديد الشاشة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ارجع وسجّل النتيجة",
+          "paragraphs": [
+            "استخدم أزرار جهاز التحكم المعتادة للرجوع إلى المشغّل وتحقق من بقاء الفيديو نفسه متوقفاً مؤقتاً. دوّن ما ضغطته وهل استمر الصوت وهل يُستأنف التشغيل. إذا انطفأ الجهاز بالكامل، فصف ذلك منفصلاً عن شاشة توقف ظاهرة. وإذا كانت الصورة من التلفاز أو التطبيق، فسمّ تلك الشاشة بدلاً من افتراض أن Apple TV هو السبب. احتفظ ببيانات وصول المشغّل المحفوظة وشارك الملاحظات دون كلمات مرور أو روابط تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV स्क्रीन सेवर: Apple TV निष्क्रिय है या कार्यक्रम बदला?",
+      "excerpt": "रुके प्लेयर की जगह निष्क्रियता वाली तस्वीर आए तो Geo IPTV की पहुँच बदलने या डिवाइस रीसेट करने से पहले उसका स्रोत और शुरू होने का अंतराल पहचानें।",
+      "seo_title": "Geo IPTV स्क्रीन सेवर: Apple TV निष्क्रिय है या कार्यक्रम बदला?",
+      "seo_description": "रुके प्लेयर की जगह निष्क्रियता वाली तस्वीर आए तो Geo IPTV की पहुँच बदलने या डिवाइस रीसेट करने से पहले उसका स्रोत और शुरू होने का अंतराल पहचानें।",
+      "sections": [
+        {
+          "heading": "खराबी मानने से पहले स्क्रीन पहचानें",
+          "paragraphs": [
+            "पॉज़ के बाद चलता हुआ प्राकृतिक दृश्य ज़रूरी नहीं कि कार्यक्रम का हिस्सा हो। Geo IPTV देखते समय नोट करें कि आपने प्लेयर रोका था, होम स्क्रीन खोली थी या अब भी देख रहे थे। कुछ समय निष्क्रिय रहने पर Apple TV अपना स्क्रीन सेवर दिखा सकता है। सिर्फ तस्वीर बदलना नए चैनल, समाप्त सदस्यता या सेवा प्रदाता की बंदी का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple की स्क्रीन सेवर गाइड",
+              "url": "https://support.apple.com/en-us/106002"
+            }
+          ]
+        },
+        {
+          "heading": "मौजूदा प्रतीक्षा समय पढ़ें",
+          "paragraphs": [
+            "Apple की गाइड में सेटिंग्स, स्क्रीन सेवर और फिर कितनी देर बाद शुरू हो वाला विकल्प दिया है। मौजूदा मान पढ़ें और देखे गए अनुमानित अंतराल से तुलना करें। सॉफ़्टवेयर के साथ नाम बदल सकते हैं, इसलिए अपने डिवाइस की गाइड देखें। घर की पसंद बनाए रखें, जब तक मालिक बदलाव न चाहे; स्क्रीन पहचानने के लिए निष्क्रियता की सभी सुरक्षा सुविधाएँ बंद करना ज़रूरी नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "वापस जाकर नतीजा लिखें",
+          "paragraphs": [
+            "रिमोट के सामान्य बटनों से प्लेयर पर वापस जाएँ और जाँचें कि वही रुका हुआ वीडियो मौजूद है या नहीं। कौन-सा बटन दबाया, आवाज़ चलती रही या नहीं और प्लेबैक फिर शुरू होता है या नहीं, यह लिखें। पूरा डिवाइस बंद हो तो उसे दिखते स्क्रीन सेवर से अलग बताएँ। तस्वीर टीवी या ऐप की हो तो उसी स्क्रीन का नाम दें, अपने-आप Apple TV को कारण न मानें। प्लेयर की सहेजी पहुँच बनाए रखें और जानकारी साझा करते समय पासवर्ड या निजी प्लेबैक लिंक शामिल न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple Support: Screen savers on your Apple TV",
+      "url": "https://support.apple.com/en-us/106002"
+    }
+  ]
+}

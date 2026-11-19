@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-19",
+  "topic": "Identify desktop Chrome website notification senders and per-site permissions separately from IPTV Subscription renewal reminders and Opplex or Filex order state.",
+  "primary_keyword": "IPTV Subscription browser notifications",
+  "slug": "iptvsubscription-browser-notifications-check-the-sender",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription browser notifications: review the sender first",
+      "excerpt": "A browser alert is a separate permission from a service order. Check its website sender and Chrome settings before interpreting missing notifications as an expired plan.",
+      "seo_title": "IPTV Subscription browser notifications: review the sender first",
+      "seo_description": "A browser alert is a separate permission from a service order. Check its website sender and Chrome settings before interpreting missing notifications as an expired plan.",
+      "sections": [
+        {
+          "heading": "Identify the alert you received",
+          "paragraphs": [
+            "An IPTV Subscription browser notifications check starts with the website named on the alert. A notification permission lets a website send browser messages; it does not establish that the message is an official invoice or that a renewal is due. Record the displayed sender and wording without opening an unexpected offer. This guide does not claim that IPTV Subscription currently provides browser renewal alerts."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review the specific website permission",
+          "paragraphs": [
+            "On desktop Chrome, open Settings, then Privacy and security, Site settings and Notifications. Google documents reviewing allowed and blocked website entries there. Check the exact address associated with an unwanted alert before blocking that entry, rather than changing unrelated sites. Missing alerts are not conclusive either: Chrome can remove permissions from sites not visited recently, and private browsing does not deliver notifications. Do not enable an unfamiliar sender just to test a reminder."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm the actual plan separately",
+          "paragraphs": [
+            "Use your existing trusted order-access route to check whether your IPTV Subscription purchase is Opplex or Filex, its duration and its recorded order state. An absent browser alert does not confirm expiry, failed payment or cancellation. Keep any player licence fee separate from the service plan; ask about any unstated Filex connection allowance. If a notification is confusing, send support its redacted wording and sender privately, without access details or payment links."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Notificaciones de IPTV Subscription: revisa primero el remitente",
+      "excerpt": "Una alerta del navegador depende de un permiso distinto del pedido. Comprueba el sitio remitente y Chrome antes de interpretar la falta de avisos como un plan vencido.",
+      "seo_title": "Notificaciones de IPTV Subscription: revisa primero el remitente",
+      "seo_description": "Una alerta del navegador depende de un permiso distinto del pedido. Comprueba el sitio remitente y Chrome antes de interpretar la falta de avisos como un plan vencido.",
+      "sections": [
+        {
+          "heading": "Identifica la alerta recibida",
+          "paragraphs": [
+            "Para revisar las notificaciones del navegador relacionadas con IPTV Subscription, empieza por el sitio que aparece en la alerta. El permiso permite enviar mensajes; no demuestra que el aviso sea una factura oficial ni que toque renovar. Anota el remitente y el texto sin abrir ofertas inesperadas. Esta guía no afirma que IPTV Subscription ofrezca actualmente recordatorios de renovación mediante el navegador."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa el permiso del sitio concreto",
+          "paragraphs": [
+            "En Chrome para ordenador, abre Configuración, Privacidad y seguridad, Configuración de sitios y Notificaciones. Google explica cómo revisar allí las entradas permitidas y bloqueadas. Comprueba la dirección exacta de un aviso no deseado antes de bloquearla, sin cambiar otros sitios. La ausencia de alertas tampoco es concluyente: Chrome puede retirar permisos a sitios poco visitados y la navegación privada no entrega notificaciones. No habilites un remitente desconocido solo para probar un recordatorio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Confirma el plan por separado",
+          "paragraphs": [
+            "Utiliza la vía de acceso al pedido que ya conoces para comprobar si la compra de IPTV Subscription es Opplex o Filex, su duración y el estado registrado. La falta de una alerta no confirma vencimiento, pago fallido ni cancelación. Separa cualquier licencia del reproductor del plan y consulta las conexiones de Filex que no estén indicadas. Si un aviso confunde, envía a soporte su texto y remitente censurados en privado, sin datos de acceso ni enlaces de pago."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Notifications IPTV Subscription : vérifiez d’abord l’expéditeur",
+      "excerpt": "Une alerte du navigateur dépend d’une autorisation distincte de la commande. Vérifiez le site expéditeur et Chrome avant de conclure que votre offre a expiré.",
+      "seo_title": "Notifications IPTV Subscription : vérifiez d’abord l’expéditeur",
+      "seo_description": "Une alerte du navigateur dépend d’une autorisation distincte de la commande. Vérifiez le site expéditeur et Chrome avant de conclure que votre offre a expiré.",
+      "sections": [
+        {
+          "heading": "Identifiez l’alerte reçue",
+          "paragraphs": [
+            "Pour vérifier les notifications du navigateur liées à IPTV Subscription, commencez par le site nommé dans l’alerte. Cette autorisation permet l’envoi de messages ; elle ne prouve ni une facture officielle ni un renouvellement dû. Notez l’expéditeur et le texte affichés sans ouvrir une offre inattendue. Ce guide n’affirme pas qu’IPTV Subscription propose actuellement des rappels de renouvellement par navigateur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consultez l’autorisation du site concerné",
+          "paragraphs": [
+            "Dans Chrome sur ordinateur, ouvrez Paramètres, Confidentialité et sécurité, Paramètres des sites, puis Notifications. Google y décrit les listes de sites autorisés et bloqués. Vérifiez l’adresse exacte d’une alerte indésirable avant de bloquer cette entrée, sans modifier les autres sites. L’absence d’alertes ne suffit pas non plus : Chrome peut retirer les permissions des sites peu consultés et la navigation privée ne fournit pas de notifications. N’autorisez pas un expéditeur inconnu pour tester un rappel."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez l’offre indépendamment",
+          "paragraphs": [
+            "Utilisez votre accès habituel et fiable à la commande pour vérifier le fournisseur Opplex ou Filex, la durée et l’état enregistré de l’achat IPTV Subscription. Une alerte absente ne confirme ni expiration, ni échec de paiement, ni annulation. Séparez la licence éventuelle du lecteur du service et faites préciser toute limite Filex non indiquée. En cas de doute, transmettez en privé à l’assistance le texte et l’expéditeur expurgés, sans identifiants ni liens de paiement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Notifiche IPTV Subscription: controlla prima il mittente",
+      "excerpt": "Un avviso del browser dipende da un permesso distinto dall’ordine. Controlla il sito mittente e Chrome prima di considerare scaduto il tuo abbonamento IPTV.",
+      "seo_title": "Notifiche IPTV Subscription: controlla prima il mittente",
+      "seo_description": "Un avviso del browser dipende da un permesso distinto dall’ordine. Controlla il sito mittente e Chrome prima di considerare scaduto il tuo abbonamento IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica l’avviso ricevuto",
+          "paragraphs": [
+            "Per controllare le notifiche del browser relative a IPTV Subscription, parti dal sito indicato nell’avviso. Il permesso consente di inviare messaggi; non dimostra che siano fatture ufficiali o che sia necessario rinnovare. Annota mittente e testo senza aprire offerte inattese. Questa guida non afferma che IPTV Subscription offra attualmente promemoria di rinnovo tramite browser."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla il permesso del sito specifico",
+          "paragraphs": [
+            "In Chrome per computer apri Impostazioni, Privacy e sicurezza, Impostazioni sito e Notifiche. Google descrive qui gli elenchi dei siti consentiti e bloccati. Verifica l’indirizzo esatto di un avviso indesiderato prima di bloccare quella voce, senza cambiare gli altri siti. Nemmeno l’assenza di avvisi è conclusiva: Chrome può revocare i permessi ai siti poco visitati e la navigazione privata non invia notifiche. Non autorizzare un mittente sconosciuto solo per provare un promemoria."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Verifica separatamente l’abbonamento",
+          "paragraphs": [
+            "Usa il percorso affidabile già noto per accedere all’ordine e verificare se l’abbonamento IPTV Subscription è Opplex o Filex, la durata e lo stato registrato. Un avviso assente non conferma scadenza, pagamento fallito o annullamento. Separa l’eventuale licenza del lettore dal servizio e chiedi conferma delle connessioni Filex non indicate. Se una notifica è ambigua, invia privatamente all’assistenza testo e mittente oscurati, senza credenziali o collegamenti di pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-browsermeldingen: controleer eerst de afzender",
+      "excerpt": "Een browsermelding gebruikt een andere toestemming dan een bestelling. Controleer de afzender en Chrome voordat ontbrekende meldingen een verlopen abonnement lijken.",
+      "seo_title": "IPTV Subscription-browsermeldingen: controleer eerst de afzender",
+      "seo_description": "Een browsermelding gebruikt een andere toestemming dan een bestelling. Controleer de afzender en Chrome voordat ontbrekende meldingen een verlopen abonnement lijken.",
+      "sections": [
+        {
+          "heading": "Bepaal welke melding u ontving",
+          "paragraphs": [
+            "Controleer bij browsermeldingen over IPTV Subscription eerst welke website als afzender wordt genoemd. De toestemming laat een site berichten versturen; ze bewijst niet dat een bericht een officiële factuur is of dat verlenging nodig is. Noteer afzender en tekst zonder een onverwacht aanbod te openen. Deze gids beweert niet dat IPTV Subscription momenteel verlengingsherinneringen via de browser aanbiedt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de toestemming van die website",
+          "paragraphs": [
+            "Open in Chrome op de computer Instellingen, Privacy en beveiliging, Site-instellingen en Meldingen. Google beschrijft daar de toegestane en geblokkeerde websites. Controleer het exacte adres van een ongewenste melding voordat u die vermelding blokkeert; verander andere sites niet. Ook ontbrekende berichten zijn geen sluitend bewijs: Chrome kan toestemmingen van weinig bezochte sites verwijderen en tijdens privébrowsen ontvangt u geen meldingen. Sta geen onbekende afzender toe om een herinnering te testen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer het abonnement afzonderlijk",
+          "paragraphs": [
+            "Gebruik uw bestaande vertrouwde toegang tot de bestelling om bij IPTV Subscription de aanbieder Opplex of Filex, looptijd en geregistreerde bestelstatus na te kijken. Een ontbrekende melding bevestigt geen vervaldatum, mislukte betaling of annulering. Houd een eventuele spelerlicentie apart van het abonnement en vraag naar niet vermelde Filex-verbindingslimieten. Stuur bij twijfel de afgeschermde tekst en afzender privé naar ondersteuning, zonder inloggegevens of betaallinks."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Notificações do IPTV Subscription: confira primeiro o remetente",
+      "excerpt": "Um alerta do navegador depende de uma permissão diferente do pedido. Confira o site remetente e o Chrome antes de interpretar a falta de avisos como assinatura vencida.",
+      "seo_title": "Notificações do IPTV Subscription: confira primeiro o remetente",
+      "seo_description": "Um alerta do navegador depende de uma permissão diferente do pedido. Confira o site remetente e o Chrome antes de interpretar a falta de avisos como assinatura vencida.",
+      "sections": [
+        {
+          "heading": "Identifique o alerta recebido",
+          "paragraphs": [
+            "Ao verificar notificações do navegador relacionadas ao IPTV Subscription, comece pelo site indicado no alerta. A permissão permite enviar mensagens; não comprova uma fatura oficial nem uma renovação devida. Anote o remetente e o texto sem abrir ofertas inesperadas. Este guia não afirma que o IPTV Subscription ofereça atualmente lembretes de renovação pelo navegador."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a permissão do site específico",
+          "paragraphs": [
+            "No Chrome para computador, abra Configurações, Privacidade e segurança, Configurações do site e Notificações. O Google documenta ali as listas de sites permitidos e bloqueados. Confira o endereço exato de um aviso indesejado antes de bloquear essa entrada, sem alterar outros sites. A ausência de alertas também não é conclusiva: o Chrome pode remover permissões de sites pouco visitados e a navegação privada não entrega notificações. Não autorize um remetente desconhecido apenas para testar um lembrete."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme a assinatura separadamente",
+          "paragraphs": [
+            "Use o caminho confiável já conhecido para acessar o pedido e conferir se a compra no IPTV Subscription é Opplex ou Filex, sua duração e o estado registrado. A falta de um alerta não confirma vencimento, falha de pagamento ou cancelamento. Separe qualquer licença do reprodutor do serviço e confirme limites Filex não informados. Se uma notificação for confusa, envie em particular ao suporte o texto e remetente com dados ocultados, sem credenciais ou links de pagamento."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Уведомления IPTV Subscription: сначала проверьте отправителя",
+      "excerpt": "Разрешение на уведомления браузера отличается от состояния заказа. Проверьте сайт-отправитель и Chrome, прежде чем считать отсутствие сообщений истечением подписки.",
+      "seo_title": "Уведомления IPTV Subscription: сначала проверьте отправителя",
+      "seo_description": "Разрешение на уведомления браузера отличается от состояния заказа. Проверьте сайт-отправитель и Chrome, прежде чем считать отсутствие сообщений истечением подписки.",
+      "sections": [
+        {
+          "heading": "Определите полученное уведомление",
+          "paragraphs": [
+            "Проверку уведомлений браузера об IPTV Subscription начните с сайта, указанного отправителем. Разрешение позволяет сайту отправлять сообщения, но не подтверждает официальный счёт или необходимость продления. Запишите отправителя и текст, не открывая неожиданное предложение. Эта инструкция не утверждает, что IPTV Subscription сейчас предоставляет напоминания о продлении через браузер."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте разрешение конкретного сайта",
+          "paragraphs": [
+            "В Chrome на компьютере откройте Настройки, Конфиденциальность и безопасность, Настройки сайтов, затем Уведомления. Google описывает там списки разрешённых и заблокированных сайтов. Уточните точный адрес нежелательного сообщения перед блокировкой этой записи, не меняя другие сайты. Отсутствие сообщений тоже не даёт вывода: Chrome может отзывать разрешения редко посещаемых сайтов, а в режиме инкогнито уведомления не поступают. Не разрешайте незнакомого отправителя ради проверки напоминания."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Подтвердите подписку отдельно",
+          "paragraphs": [
+            "Через привычный доверенный доступ к заказу проверьте поставщика Opplex или Filex, срок и записанное состояние покупки IPTV Subscription. Отсутствие уведомления не подтверждает истечение срока, неудачный платёж или отмену. Отделяйте возможную лицензию проигрывателя от услуги; неуказанный лимит соединений Filex уточняйте. Если уведомление непонятно, отправьте поддержке его очищенный текст и отправителя лично, без данных доступа и платёжных ссылок."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی براؤزر اطلاعات: پہلے بھیجنے والا دیکھیں",
+      "excerpt": "براؤزر کی اطلاع کی اجازت آرڈر کی حالت سے الگ ہے۔ اطلاع نہ آنے کو پیکیج ختم ہونا سمجھنے سے پہلے بھیجنے والی ویب سائٹ اور Chrome کی ترتیب دیکھیں۔",
+      "seo_title": "IPTV Subscription کی براؤزر اطلاعات: پہلے بھیجنے والا دیکھیں",
+      "seo_description": "براؤزر کی اطلاع کی اجازت آرڈر کی حالت سے الگ ہے۔ اطلاع نہ آنے کو پیکیج ختم ہونا سمجھنے سے پہلے بھیجنے والی ویب سائٹ اور Chrome کی ترتیب دیکھیں۔",
+      "sections": [
+        {
+          "heading": "موصول ہونے والی اطلاع پہچانیں",
+          "paragraphs": [
+            "IPTV Subscription سے متعلق براؤزر کی اطلاع دیکھتے وقت پہلے اس میں درج ویب سائٹ کا نام پڑھیں۔ اجازت ویب سائٹ کو پیغام بھیجنے دیتی ہے؛ اس سے نہ سرکاری بل ثابت ہوتا ہے اور نہ تجدید واجب ہونا۔ غیر متوقع پیشکش کھولے بغیر بھیجنے والا اور عبارت نوٹ کریں۔ یہ رہنما دعویٰ نہیں کرتا کہ IPTV Subscription اس وقت براؤزر کے ذریعے تجدید کی یاد دہانیاں فراہم کرتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اسی ویب سائٹ کی اجازت دیکھیں",
+          "paragraphs": [
+            "کمپیوٹر پر Chrome کی ترتیبات میں رازداری اور تحفظ، ویب سائٹ کی ترتیبات اور پھر اطلاعات کھولیں۔ Google یہاں اجازت یافتہ اور مسدود ویب سائٹس کی فہرستیں سمجھاتا ہے۔ غیر مطلوب اطلاع کی مخصوص ویب سائٹ مسدود کرنے سے پہلے پورا پتہ دیکھیں؛ دوسری سائٹس کی اجازت نہ بدلیں۔ اطلاع نہ آنا بھی حتمی ثبوت نہیں: Chrome کم دیکھی گئی سائٹس کی اجازت ہٹا سکتا ہے اور نجی براؤزنگ میں اطلاعات نہیں ملتیں۔ یاد دہانی آزمانے کے لیے نامعلوم بھیجنے والے کو اجازت نہ دیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "اصل پیکیج کی الگ تصدیق کریں",
+          "paragraphs": [
+            "آرڈر کھولنے کے اپنے پہلے سے قابل اعتماد طریقے سے دیکھیں کہ IPTV Subscription کی خریداری Opplex ہے یا Filex، مدت کیا ہے اور درج حالت کیا ہے۔ اطلاع نہ آنا میعاد ختم ہونے، ادائیگی ناکام ہونے یا منسوخی کی تصدیق نہیں کرتا۔ پلیئر کی ممکنہ لائسنس فیس سروس سے الگ رکھیں؛ Filex کی غیر درج کنکشن حد پوچھیں۔ الجھن ہو تو حساس معلومات چھپا کر اطلاع کی عبارت اور بھیجنے والا نجی طور پر معاونت کو دیں، رسائی کی تفصیل یا ادائیگی کے روابط نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إشعارات IPTV Subscription في المتصفح: تحقق من المرسل أولاً",
+      "excerpt": "إذن إشعارات المتصفح مستقل عن حالة الطلب. تحقق من الموقع المرسل وإعدادات Chrome قبل اعتبار غياب التنبيهات دليلاً على انتهاء الاشتراك.",
+      "seo_title": "إشعارات IPTV Subscription في المتصفح: تحقق من المرسل أولاً",
+      "seo_description": "إذن إشعارات المتصفح مستقل عن حالة الطلب. تحقق من الموقع المرسل وإعدادات Chrome قبل اعتبار غياب التنبيهات دليلاً على انتهاء الاشتراك.",
+      "sections": [
+        {
+          "heading": "حدد الإشعار الذي تلقيته",
+          "paragraphs": [
+            "ابدأ فحص إشعارات المتصفح المتعلقة بـ IPTV Subscription باسم الموقع الظاهر في التنبيه. يسمح الإذن للموقع بإرسال رسائل؛ لكنه لا يثبت أن الرسالة فاتورة رسمية أو أن التجديد مستحق. دوّن المرسل والنص دون فتح عرض غير متوقع. لا يدّعي هذا الدليل أن IPTV Subscription يوفر حالياً تذكيرات تجديد عبر المتصفح."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع إذن الموقع المحدد",
+          "paragraphs": [
+            "في Chrome على الكمبيوتر، افتح الإعدادات ثم الخصوصية والأمان وإعدادات المواقع ثم الإشعارات. توضح Google قوائم المواقع المسموح لها والمحظورة هناك. تحقق من العنوان الدقيق للتنبيه المزعج قبل حظر ذلك الإدخال، دون تغيير مواقع أخرى. غياب التنبيهات ليس حاسماً أيضاً: قد يسحب Chrome أذونات المواقع قليلة الزيارة، ولا تصل الإشعارات أثناء التصفح الخاص. لا تسمح لمرسل مجهول لمجرد تجربة تذكير."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "تحقق من الباقة بشكل مستقل",
+          "paragraphs": [
+            "استخدم طريقتك الموثوقة المعتادة للوصول إلى الطلب للتحقق من كون شراء IPTV Subscription تابعاً لـ Opplex أو Filex، ومدته وحالته المسجلة. غياب إشعار لا يؤكد انتهاء المدة أو فشل الدفع أو الإلغاء. افصل أي رسم لترخيص المشغل عن الخدمة، واسأل عن حد اتصالات Filex إن لم يكن مذكوراً. إذا كان الإشعار محيراً، أرسل نصه واسم مرسله بعد حجب البيانات إلى الدعم بشكل خاص، دون بيانات الدخول أو روابط الدفع."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription ब्राउज़र सूचनाएँ: पहले भेजने वाला देखें",
+      "excerpt": "ब्राउज़र सूचना की अनुमति ऑर्डर की स्थिति से अलग है। सूचना न मिलने को प्लान की समाप्ति मानने से पहले भेजने वाली वेबसाइट और Chrome की सेटिंग देखें।",
+      "seo_title": "IPTV Subscription ब्राउज़र सूचनाएँ: पहले भेजने वाला देखें",
+      "seo_description": "ब्राउज़र सूचना की अनुमति ऑर्डर की स्थिति से अलग है। सूचना न मिलने को प्लान की समाप्ति मानने से पहले भेजने वाली वेबसाइट और Chrome की सेटिंग देखें।",
+      "sections": [
+        {
+          "heading": "मिली हुई सूचना पहचानें",
+          "paragraphs": [
+            "IPTV Subscription से जुड़ी ब्राउज़र सूचना की जाँच उसमें लिखी वेबसाइट से शुरू करें। अनुमति वेबसाइट को संदेश भेजने देती है; इससे आधिकारिक बिल या नवीनीकरण की आवश्यकता साबित नहीं होती। अनपेक्षित ऑफ़र खोले बिना भेजने वाला और संदेश लिख लें। यह मार्गदर्शिका दावा नहीं करती कि IPTV Subscription अभी ब्राउज़र से नवीनीकरण की याद दिलाता है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उसी वेबसाइट की अनुमति जाँचें",
+          "paragraphs": [
+            "कंप्यूटर के Chrome में सेटिंग, निजता और सुरक्षा, साइट की सेटिंग और फिर सूचनाएँ खोलें। Google यहाँ अनुमत और ब्लॉक वेबसाइटों की सूचियाँ समझाता है। अनचाही सूचना की प्रविष्टि ब्लॉक करने से पहले उसका पूरा पता देखें; अन्य वेबसाइटों की अनुमति न बदलें। सूचना न मिलना भी निर्णायक नहीं है: Chrome कम देखी गई साइटों की अनुमति हटा सकता है और निजी ब्राउज़िंग में सूचनाएँ नहीं आतीं। याद दिलाने वाला संदेश जाँचने के लिए अनजान भेजने वाले को अनुमति न दें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "असल प्लान अलग से पक्का करें",
+          "paragraphs": [
+            "ऑर्डर खोलने के अपने मौजूदा भरोसेमंद तरीके से जाँचें कि IPTV Subscription की खरीद Opplex है या Filex, अवधि क्या है और दर्ज स्थिति क्या है। सूचना न मिलना समाप्ति, भुगतान की विफलता या रद्द होने की पुष्टि नहीं करता। प्लेयर के संभावित लाइसेंस शुल्क को सेवा से अलग रखें; Filex की अनबताई कनेक्शन सीमा पूछें। उलझन हो तो संवेदनशील जानकारी छिपाकर सूचना का पाठ और भेजने वाला निजी रूप से सहायता को दें, प्रवेश विवरण या भुगतान के लिंक नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: website notification permissions",
+      "url": "https://support.google.com/chrome/answer/3220216?hl=en&co=GENIE.Platform%3DDesktop"
+    }
+  ]
+}

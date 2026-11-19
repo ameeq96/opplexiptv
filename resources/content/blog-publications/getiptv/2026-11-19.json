@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-19",
+  "topic": "Distinguish Google Voice Remote speech input and listed searchable apps from a Get IPTV player catalogue and the selected Opplex or Filex service setup.",
+  "primary_keyword": "Get IPTV voice search",
+  "slug": "getiptv-voice-search-check-searchable-apps",
+  "translations": {
+    "en": {
+      "title": "Get IPTV voice search: check which apps Google can search",
+      "excerpt": "Voice search and a player’s own catalogue can show different results. Check the Voice Remote and searchable-app list before changing your Get IPTV setup.",
+      "seo_title": "Get IPTV voice search: check which apps Google can search",
+      "seo_description": "Voice search and a player’s own catalogue can show different results. Check the Voice Remote and searchable-app list before changing your Get IPTV setup.",
+      "sections": [
+        {
+          "heading": "Name the search screen",
+          "paragraphs": [
+            "For a Get IPTV voice search question, first note whether the result appeared on Google TV or inside your installed player. Google documents pressing and holding the Assistant button on a Chromecast or Google TV Streamer Voice Remote while speaking. Saying the wake phrase first is unnecessary with that remote. Use an ordinary non-private search phrase; never speak a password or a private playlist address aloud in a shared room."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the documented searchable-app list",
+          "paragraphs": [
+            "On the documented Google TV interface, open All settings, Privacy, Google Assistant and Searchable apps. Review the apps actually listed and the owner’s existing choices. This menu does not establish that every IPTV player integrates its catalogue with Google search. Names and availability can differ by device and software. If voice input fails, Google suggests the keyboard instead. Compare the same harmless phrase once using text, and record whether speech was misheard or a relevant result was absent."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Check player access on its own",
+          "paragraphs": [
+            "Open the intended player directly and inspect its own search function, where provided. A missing Google result does not prove that an item is unavailable through your provider or that an account expired. For Get IPTV orders, confirm the selected Opplex or Filex service and setup state separately. A player licence can be a separate cost, and an unstated Filex connection allowance needs confirmation. Send support the device, player version and search location without private access details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Búsqueda por voz con Get IPTV: qué aplicaciones puede consultar Google",
+      "excerpt": "La búsqueda por voz y el catálogo del reproductor pueden dar resultados distintos. Revisa el mando y las aplicaciones consultables antes de cambiar Get IPTV.",
+      "seo_title": "Búsqueda por voz con Get IPTV: qué aplicaciones puede consultar Google",
+      "seo_description": "La búsqueda por voz y el catálogo del reproductor pueden dar resultados distintos. Revisa el mando y las aplicaciones consultables antes de cambiar Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla de búsqueda",
+          "paragraphs": [
+            "Si consultas sobre la búsqueda por voz con Get IPTV, anota primero si el resultado aparece en Google TV o dentro del reproductor instalado. Google explica que debes mantener pulsado el botón del Asistente del mando Chromecast o Google TV Streamer mientras hablas. Con ese mando no hace falta decir antes la frase de activación. Usa una consulta normal sin información privada; nunca digas contraseñas ni direcciones privadas de listas en una habitación compartida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta la lista de aplicaciones documentada",
+          "paragraphs": [
+            "En la interfaz de Google TV descrita, abre Todos los ajustes, Privacidad, Asistente de Google y Aplicaciones en las que se puede buscar. Revisa las aplicaciones que realmente aparecen y las opciones del propietario. El menú no demuestra que todos los reproductores IPTV integren su catálogo con Google. Los nombres y la disponibilidad pueden variar según dispositivo y versión. Si falla la voz, Google sugiere el teclado. Compara una vez la misma frase inocua escrita y anota si se entendió mal la voz o faltó un resultado pertinente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba el acceso al reproductor por separado",
+          "paragraphs": [
+            "Abre directamente el reproductor previsto y consulta su búsqueda, si existe. La falta de un resultado de Google no demuestra que el proveedor carezca del contenido o que la cuenta haya vencido. Para pedidos de Get IPTV, confirma por separado el servicio Opplex o Filex elegido y su configuración. La licencia del reproductor puede tener otro coste y las conexiones Filex no indicadas requieren confirmación. Envía a soporte modelo, versión del reproductor y lugar de búsqueda, sin datos privados de acceso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Recherche vocale Get IPTV : quelles applications Google peut-il consulter ?",
+      "excerpt": "La recherche vocale et le catalogue du lecteur peuvent différer. Vérifiez la télécommande et les applications consultables avant de modifier votre installation Get IPTV.",
+      "seo_title": "Recherche vocale Get IPTV : quelles applications Google peut-il consulter ?",
+      "seo_description": "La recherche vocale et le catalogue du lecteur peuvent différer. Vérifiez la télécommande et les applications consultables avant de modifier votre installation Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifiez l’écran de recherche",
+          "paragraphs": [
+            "Pour une question de recherche vocale avec Get IPTV, notez d’abord si le résultat apparaît dans Google TV ou dans le lecteur installé. Google décrit un appui maintenu sur le bouton Assistant de la télécommande Chromecast ou Google TV Streamer pendant que vous parlez. La phrase de réveil est inutile avec cette télécommande. Utilisez une demande ordinaire sans données privées ; ne prononcez jamais de mot de passe ou d’adresse de liste privée dans une pièce partagée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consultez la liste d’applications documentée",
+          "paragraphs": [
+            "Dans l’interface Google TV décrite, ouvrez Tous les paramètres, Confidentialité, Assistant Google, puis Applications dans lesquelles effectuer une recherche. Examinez les applications réellement listées et les choix du propriétaire. Ce menu ne signifie pas que tous les lecteurs IPTV intègrent leur catalogue à Google. Les noms et la disponibilité varient selon l’appareil et le logiciel. Si la voix échoue, Google conseille le clavier. Comparez une fois la même expression anodine par écrit et notez si elle a été mal entendue ou si un résultat pertinent manque."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez séparément l’accès au lecteur",
+          "paragraphs": [
+            "Ouvrez directement le lecteur prévu et sa propre recherche, si elle existe. Un résultat Google absent ne prouve ni l’indisponibilité chez le fournisseur ni l’expiration du compte. Pour Get IPTV, confirmez séparément le service Opplex ou Filex choisi et l’état de configuration. La licence du lecteur peut être payante séparément et toute limite Filex non indiquée reste à confirmer. Transmettez à l’assistance l’appareil, la version du lecteur et l’écran de recherche, sans identifiants privés."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ricerca vocale Get IPTV: quali app può consultare Google?",
+      "excerpt": "La ricerca vocale e il catalogo del lettore possono dare risultati diversi. Controlla telecomando e app ricercabili prima di modificare la configurazione Get IPTV.",
+      "seo_title": "Ricerca vocale Get IPTV: quali app può consultare Google?",
+      "seo_description": "La ricerca vocale e il catalogo del lettore possono dare risultati diversi. Controlla telecomando e app ricercabili prima di modificare la configurazione Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata di ricerca",
+          "paragraphs": [
+            "Per una domanda sulla ricerca vocale con Get IPTV, annota prima se il risultato appare su Google TV oppure nel lettore installato. Google descrive come tenere premuto il tasto Assistente del telecomando Chromecast o Google TV Streamer mentre parli. Con quel telecomando non serve pronunciare prima la frase di attivazione. Usa una richiesta normale senza dati privati; non dire mai password o indirizzi privati di playlist ad alta voce in una stanza condivisa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l’elenco documentato delle app",
+          "paragraphs": [
+            "Nell’interfaccia Google TV descritta apri Tutte le impostazioni, Privacy, Assistente Google e App ricercabili. Esamina le app effettivamente presenti e le scelte del proprietario. Il menu non dimostra che ogni lettore IPTV integri il proprio catalogo nella ricerca Google. Nomi e disponibilità possono cambiare secondo dispositivo e software. Se la voce non funziona, Google suggerisce la tastiera. Confronta una volta la stessa frase innocua scritta e annota se la voce è stata fraintesa o se manca un risultato pertinente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Verifica il lettore separatamente",
+          "paragraphs": [
+            "Apri direttamente il lettore previsto e la sua ricerca interna, se disponibile. Un risultato Google mancante non prova l’assenza del contenuto presso il fornitore o la scadenza dell’account. Per gli ordini Get IPTV, verifica separatamente il servizio Opplex o Filex scelto e lo stato della configurazione. La licenza del lettore può avere un costo distinto e un limite Filex non indicato richiede conferma. Comunica all’assistenza dispositivo, versione del lettore e schermata di ricerca, senza credenziali private."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-spraakzoeken: welke apps kan Google doorzoeken?",
+      "excerpt": "Spraakzoeken en de catalogus van de speler kunnen verschillen. Controleer de afstandsbediening en doorzoekbare apps voordat u de Get IPTV-instellingen wijzigt.",
+      "seo_title": "Get IPTV-spraakzoeken: welke apps kan Google doorzoeken?",
+      "seo_description": "Spraakzoeken en de catalogus van de speler kunnen verschillen. Controleer de afstandsbediening en doorzoekbare apps voordat u de Get IPTV-instellingen wijzigt.",
+      "sections": [
+        {
+          "heading": "Benoem het zoekscherm",
+          "paragraphs": [
+            "Noteer bij vragen over Get IPTV-spraakzoeken eerst of het resultaat op Google TV of in uw geïnstalleerde speler verschijnt. Google beschrijft dat u de Assistent-knop op de Chromecast- of Google TV Streamer-afstandsbediening ingedrukt houdt terwijl u spreekt. De activeringszin vooraf is bij die afstandsbediening niet nodig. Gebruik een gewone zoekterm zonder privégegevens; spreek nooit een wachtwoord of privéafspeellijstadres hardop uit in een gedeelde kamer."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de beschreven lijst met doorzoekbare apps",
+          "paragraphs": [
+            "Open in de beschreven Google TV-interface Alle instellingen, Privacy, Google Assistent en Doorzoekbare apps. Bekijk de werkelijk vermelde apps en de bestaande keuzes van de eigenaar. Dit menu bewijst niet dat elke IPTV-speler zijn catalogus met Google-zoeken integreert. Namen en beschikbaarheid kunnen per apparaat en softwareversie verschillen. Werkt spraakinvoer niet, dan adviseert Google het toetsenbord. Vergelijk dezelfde onschuldige zoekterm eenmaal als tekst en noteer of spraak verkeerd is verstaan of een passend resultaat ontbreekt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de spelertoegang afzonderlijk",
+          "paragraphs": [
+            "Open de bedoelde speler rechtstreeks en bekijk zijn eigen zoekfunctie, indien aanwezig. Een ontbrekend Google-resultaat bewijst niet dat uw aanbieder het item niet aanbiedt of dat de account is verlopen. Controleer bij Get IPTV afzonderlijk de gekozen dienst Opplex of Filex en de installatiestatus. Een spelerlicentie kan apart kosten; een niet vermelde Filex-verbindingslimiet vereist bevestiging. Geef ondersteuning apparaat, spelerversie en zoeklocatie door zonder privétoegangsgegevens."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Busca por voz no Get IPTV: quais apps o Google pode pesquisar?",
+      "excerpt": "A busca por voz e o catálogo do reprodutor podem mostrar resultados diferentes. Confira o controle e os apps pesquisáveis antes de mudar a configuração Get IPTV.",
+      "seo_title": "Busca por voz no Get IPTV: quais apps o Google pode pesquisar?",
+      "seo_description": "A busca por voz e o catálogo do reprodutor podem mostrar resultados diferentes. Confira o controle e os apps pesquisáveis antes de mudar a configuração Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique a tela de busca",
+          "paragraphs": [
+            "Para uma dúvida sobre busca por voz no Get IPTV, anote primeiro se o resultado apareceu no Google TV ou dentro do reprodutor instalado. O Google documenta manter pressionado o botão do Assistente no controle Chromecast ou Google TV Streamer enquanto fala. Nesse controle, não é necessário dizer antes a frase de ativação. Use uma busca comum sem dados privados; nunca fale senhas ou endereços privados de listas em um ambiente compartilhado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confira a lista documentada de aplicativos",
+          "paragraphs": [
+            "Na interface Google TV descrita, abra Todas as configurações, Privacidade, Google Assistente e Apps pesquisáveis. Examine os aplicativos realmente listados e as escolhas existentes do proprietário. Esse menu não demonstra que todo reprodutor IPTV integra seu catálogo à busca do Google. Nomes e disponibilidade variam conforme aparelho e software. Se a voz falhar, o Google sugere o teclado. Compare uma vez a mesma frase inofensiva escrita e anote se a fala foi entendida incorretamente ou se faltou um resultado relevante."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique o acesso ao reprodutor separadamente",
+          "paragraphs": [
+            "Abra diretamente o reprodutor pretendido e veja sua própria busca, quando disponível. Um resultado ausente no Google não prova falta do item no provedor nem conta vencida. Nos pedidos Get IPTV, confirme separadamente o serviço Opplex ou Filex selecionado e o estado da configuração. A licença do reprodutor pode ter custo à parte e limites Filex não informados precisam de confirmação. Envie ao suporte o aparelho, a versão do reprodutor e o local da busca, sem dados privados de acesso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Голосовой поиск Get IPTV: какие приложения доступны Google?",
+      "excerpt": "Голосовой поиск и каталог проигрывателя могут давать разные результаты. Проверьте пульт и доступные поиску приложения перед изменением настройки Get IPTV.",
+      "seo_title": "Голосовой поиск Get IPTV: какие приложения доступны Google?",
+      "seo_description": "Голосовой поиск и каталог проигрывателя могут давать разные результаты. Проверьте пульт и доступные поиску приложения перед изменением настройки Get IPTV.",
+      "sections": [
+        {
+          "heading": "Уточните экран поиска",
+          "paragraphs": [
+            "При вопросе о голосовом поиске Get IPTV сначала укажите, появился результат на Google TV или внутри установленного проигрывателя. Google описывает нажатие и удержание кнопки Ассистента на пульте Chromecast или Google TV Streamer во время речи. С этим пультом предварительная фраза активации не нужна. Используйте обычный запрос без личных данных; никогда не произносите пароль или приватный адрес плейлиста вслух в общей комнате."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте описанный список приложений",
+          "paragraphs": [
+            "В описанном интерфейсе Google TV откройте Все настройки, Конфиденциальность, Google Ассистент и Доступные для поиска приложения. Проверьте фактически перечисленные приложения и выбор владельца. Это меню не подтверждает, что любой IPTV-проигрыватель передаёт свой каталог поиску Google. Названия и доступность зависят от устройства и ПО. Если голосовой ввод не работает, Google советует клавиатуру. Один раз сравните тот же безобидный запрос текстом и отметьте: речь распознана неверно или подходящего результата нет."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте доступ к проигрывателю отдельно",
+          "paragraphs": [
+            "Откройте нужный проигрыватель напрямую и его собственный поиск, если он есть. Отсутствие результата Google не доказывает недоступность материала у поставщика или истечение подписки. Для заказов Get IPTV отдельно подтвердите выбранную услугу Opplex или Filex и состояние настройки. Лицензия проигрывателя может оплачиваться отдельно; неуказанный лимит соединений Filex следует уточнить. Сообщите поддержке устройство, версию проигрывателя и место поиска без приватных данных доступа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کی صوتی تلاش: Google کن ایپس میں تلاش کر سکتا ہے؟",
+      "excerpt": "آواز سے تلاش اور پلیئر کی اپنی فہرست کے نتائج الگ ہو سکتے ہیں۔ Get IPTV کی ترتیب بدلنے سے پہلے ریموٹ اور تلاش کے لیے دستیاب ایپس دیکھیں۔",
+      "seo_title": "Get IPTV کی صوتی تلاش: Google کن ایپس میں تلاش کر سکتا ہے؟",
+      "seo_description": "آواز سے تلاش اور پلیئر کی اپنی فہرست کے نتائج الگ ہو سکتے ہیں۔ Get IPTV کی ترتیب بدلنے سے پہلے ریموٹ اور تلاش کے لیے دستیاب ایپس دیکھیں۔",
+      "sections": [
+        {
+          "heading": "تلاش کی اسکرین پہچانیں",
+          "paragraphs": [
+            "Get IPTV میں آواز سے تلاش کا سوال ہو تو پہلے لکھیں کہ نتیجہ Google TV پر آیا یا نصب شدہ پلیئر کے اندر۔ Google کے مطابق Chromecast یا Google TV Streamer کے صوتی ریموٹ کا اسسٹنٹ بٹن بولتے وقت دبا کر رکھا جاتا ہے۔ اس ریموٹ کے ساتھ پہلے جگانے والا فقرہ کہنا ضروری نہیں۔ عام، غیر نجی الفاظ تلاش کریں؛ مشترکہ کمرے میں پاس ورڈ یا نجی پلے لسٹ کا پتہ کبھی بلند آواز سے نہ کہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دستاویز میں دی گئی ایپس کی فہرست دیکھیں",
+          "paragraphs": [
+            "دستاویز میں بیان کردہ Google TV انٹرفیس میں تمام ترتیبات، رازداری، Google اسسٹنٹ اور تلاش کے قابل ایپس کھولیں۔ اصل میں درج ایپس اور مالک کے موجودہ انتخاب دیکھیں۔ یہ مینو ثابت نہیں کرتا کہ ہر IPTV پلیئر کی فہرست Google کی تلاش کے ساتھ مربوط ہے۔ نام اور دستیابی آلے اور سافٹ ویئر کے مطابق بدل سکتے ہیں۔ صوتی اندراج ناکام ہو تو Google کی بورڈ استعمال کرنے کا کہتا ہے۔ وہی بے ضرر فقرہ ایک بار لکھ کر دیکھیں اور نوٹ کریں کہ آواز غلط سمجھی گئی یا موزوں نتیجہ نہیں ملا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پلیئر کی رسائی الگ دیکھیں",
+          "paragraphs": [
+            "مطلوبہ پلیئر براہ راست کھولیں اور، اگر موجود ہو، اس کی اپنی تلاش دیکھیں۔ Google کا نتیجہ نہ ملنا نہ فراہم کنندہ کے پاس مواد کی عدم دستیابی ثابت کرتا ہے اور نہ اکاؤنٹ کی میعاد ختم ہونا۔ Get IPTV کے آرڈر میں منتخب Opplex یا Filex سروس اور ترتیب کی حالت الگ تصدیق کریں۔ پلیئر کے لائسنس کی الگ قیمت ہو سکتی ہے اور Filex کی غیر درج کنکشن حد پوچھنی ہوگی۔ معاونت کو آلہ، پلیئر کا نسخہ اور تلاش کی جگہ بتائیں، نجی رسائی کی تفصیل نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "البحث الصوتي في Get IPTV: ما التطبيقات التي يستطيع Google البحث فيها؟",
+      "excerpt": "قد تختلف نتائج البحث الصوتي عن فهرس المشغل. تحقق من جهاز التحكم والتطبيقات القابلة للبحث قبل تغيير إعداد Get IPTV.",
+      "seo_title": "البحث الصوتي في Get IPTV: ما التطبيقات التي يستطيع Google البحث فيها؟",
+      "seo_description": "قد تختلف نتائج البحث الصوتي عن فهرس المشغل. تحقق من جهاز التحكم والتطبيقات القابلة للبحث قبل تغيير إعداد Get IPTV.",
+      "sections": [
+        {
+          "heading": "حدد شاشة البحث",
+          "paragraphs": [
+            "عند الاستفسار عن البحث الصوتي مع Get IPTV، دوّن أولاً هل ظهرت النتيجة على Google TV أم داخل المشغل المثبت. توضح Google الضغط المستمر على زر المساعد في جهاز التحكم الصوتي Chromecast أو Google TV Streamer أثناء الكلام. لا يلزم قول عبارة التنبيه أولاً مع هذا الجهاز. استخدم عبارة بحث عادية غير خاصة؛ ولا تنطق أبداً بكلمة مرور أو عنوان قائمة تشغيل خاصة في غرفة مشتركة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع قائمة التطبيقات الموثقة",
+          "paragraphs": [
+            "في واجهة Google TV الموصوفة، افتح جميع الإعدادات ثم الخصوصية ومساعد Google ثم التطبيقات القابلة للبحث. راجع التطبيقات المدرجة فعلاً واختيارات المالك الحالية. لا يثبت هذا الإعداد أن كل مشغل IPTV يدمج فهرسه مع بحث Google. قد تختلف الأسماء والإتاحة بحسب الجهاز والبرنامج. إذا فشل الإدخال الصوتي، تقترح Google استخدام لوحة المفاتيح. قارن العبارة البسيطة نفسها مرة واحدة كتابياً، وسجل هل فُهم الكلام خطأ أم غابت نتيجة مناسبة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تحقق من الوصول إلى المشغل مستقلاً",
+          "paragraphs": [
+            "افتح المشغل المقصود مباشرة وراجع بحثه الداخلي إن وُجد. غياب نتيجة Google لا يثبت أن المادة غير متاحة لدى المزود أو أن الحساب انتهى. لطلبات Get IPTV، أكد خدمة Opplex أو Filex المحددة وحالة الإعداد بشكل مستقل. قد تكون لترخيص المشغل تكلفة منفصلة، ويجب تأكيد حد اتصالات Filex غير المذكور. أرسل للدعم طراز الجهاز ونسخة المشغل ومكان البحث دون بيانات وصول خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV की आवाज़ से खोज: Google किन ऐप में खोज सकता है?",
+      "excerpt": "आवाज़ से खोज और प्लेयर की अपनी सूची के परिणाम अलग हो सकते हैं। Get IPTV सेटअप बदलने से पहले रिमोट और खोज में शामिल ऐप जाँचें।",
+      "seo_title": "Get IPTV की आवाज़ से खोज: Google किन ऐप में खोज सकता है?",
+      "seo_description": "आवाज़ से खोज और प्लेयर की अपनी सूची के परिणाम अलग हो सकते हैं। Get IPTV सेटअप बदलने से पहले रिमोट और खोज में शामिल ऐप जाँचें।",
+      "sections": [
+        {
+          "heading": "खोज वाली स्क्रीन पहचानें",
+          "paragraphs": [
+            "Get IPTV में आवाज़ से खोज का सवाल हो तो पहले लिखें कि परिणाम Google TV पर आया या स्थापित प्लेयर के अंदर। Google के निर्देश में Chromecast या Google TV Streamer वॉइस रिमोट का Assistant बटन बोलते समय दबाकर रखना है। इस रिमोट के साथ पहले जगाने वाला वाक्य कहना ज़रूरी नहीं। साधारण, गैरनिजी शब्द खोजें; साझा कमरे में पासवर्ड या निजी प्लेलिस्ट का पता कभी ज़ोर से न बोलें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ में बताई ऐप सूची देखें",
+          "paragraphs": [
+            "बताए गए Google TV इंटरफ़ेस में सभी सेटिंग, निजता, Google Assistant और खोज में शामिल ऐप खोलें। वास्तव में सूचीबद्ध ऐप और मालिक के मौजूदा चुनाव देखें। यह मेनू साबित नहीं करता कि हर IPTV प्लेयर की सूची Google की खोज से जुड़ी है। नाम और उपलब्धता डिवाइस तथा सॉफ़्टवेयर के अनुसार बदल सकते हैं। आवाज़ से इनपुट न चले तो Google कीबोर्ड सुझाता है। वही साधारण वाक्य एक बार लिखकर तुलना करें और नोट करें कि बोली गलत समझी गई या संबंधित परिणाम नहीं मिला।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेयर की पहुँच अलग से जाँचें",
+          "paragraphs": [
+            "चाहे गए प्लेयर को सीधे खोलें और, यदि हो, उसकी अपनी खोज देखें। Google पर परिणाम न मिलना यह साबित नहीं करता कि प्रदाता के पास सामग्री नहीं है या खाते की अवधि खत्म हो गई। Get IPTV ऑर्डर में चुनी Opplex या Filex सेवा और सेटअप की स्थिति अलग से पक्की करें। प्लेयर लाइसेंस का अलग शुल्क हो सकता है और Filex की अनबताई कनेक्शन सीमा की पुष्टि चाहिए। सहायता को डिवाइस, प्लेयर संस्करण और खोज की जगह बताएँ, निजी प्रवेश विवरण नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help: Voice Remote and searchable apps",
+      "url": "https://support.google.com/chromecast/answer/10115165?hl=en"
+    }
+  ]
+}

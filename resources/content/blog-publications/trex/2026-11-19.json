@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-19",
+  "topic": "Compare clipped Fire TV menu edges and television overscan with programme-only cropping before changing Trex IPTV player picture fit.",
+  "primary_keyword": "Trex IPTV screen edges",
+  "slug": "trex-screen-edges-overscan-versus-video-cropping",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV screen edges: check Fire TV overscan before cropping",
+      "excerpt": "Compare clipped Fire TV menus with programme-only cropping. Check existing picture sizing carefully, keep the original setting and retain one simultaneous connection.",
+      "seo_title": "Trex IPTV screen edges: check Fire TV overscan before cropping",
+      "seo_description": "Compare clipped Fire TV menus with programme-only cropping. Check existing picture sizing carefully, keep the original setting and retain one simultaneous connection.",
+      "sections": [
+        {
+          "heading": "Check more than the programme",
+          "paragraphs": [
+            "When a Trex IPTV screen edges problem hides buttons or text, return to Fire TV Home and inspect the outer menu labels. Are those edges missing too, or is only the programme cropped inside the player? Amazon explains that television overscan can place part of an app outside the visible screen, and that behaviour varies by television. Cropped menu edges are therefore a different clue from a video with deliberate black bars or an unsuitable player picture-fit choice."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV overscan and the visible safe area",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare one supported sizing choice",
+          "paragraphs": [
+            "Note the connected television model, Fire TV model and current television picture-size setting before changing anything. Consult the normal display controls and the television manual for a supported screen-fit option. Some equipment offers display calibration; do not assume every model has the same control or remote shortcut. Compare one reversible sizing choice with the same menu visible, then restore the earlier setting if it does not help. Do not stretch a correctly proportioned programme merely to remove its black bars."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Describe the edges that remain missing",
+          "paragraphs": [
+            "Return to the player and report separately whether menu labels, player buttons or only the video remain cut off. Include the affected edge and the device models, rather than treating a cropped image as evidence of an account problem. Trex IPTV 8K retains one simultaneous connection, so keep the comparison on one viewing session. There is no need to clear credentials, enable debugging or reset the device for this screen-fit check."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Bordes de Trex IPTV: revisa el sobreescaneo de Fire TV",
+      "excerpt": "Compara menús recortados de Fire TV con un recorte solo del programa. Revisa el tamaño de imagen con cuidado y conserva una sola conexión simultánea.",
+      "seo_title": "Bordes de Trex IPTV: revisa el sobreescaneo de Fire TV",
+      "seo_description": "Compara menús recortados de Fire TV con un recorte solo del programa. Revisa el tamaño de imagen con cuidado y conserva una sola conexión simultánea.",
+      "sections": [
+        {
+          "heading": "Comprueba algo más que el programa",
+          "paragraphs": [
+            "Si un problema de bordes en Trex IPTV oculta botones o texto, vuelve a Inicio de Fire TV y mira las etiquetas exteriores del menú. ¿También faltan esos bordes o solo se recorta el programa dentro del reproductor? Amazon explica que el sobreescaneo del televisor puede dejar parte de una aplicación fuera de la pantalla visible y varía según el televisor. Los menús recortados son una pista distinta de un vídeo con bandas negras intencionadas o un ajuste de imagen inadecuado del reproductor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: sobreescaneo y área visible de Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara un ajuste de tamaño compatible",
+          "paragraphs": [
+            "Anota el modelo del televisor, el de Fire TV y el tamaño de imagen actual antes de cambiar nada. Consulta los controles normales de pantalla y el manual del televisor para encontrar una opción compatible de ajuste. Algunos equipos ofrecen calibración; no presupongas que todos tienen el mismo control o atajo del mando. Compara una opción reversible manteniendo visible el mismo menú y restaura la anterior si no ayuda. No estires un programa bien proporcionado solo para eliminar las bandas negras."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Describe qué bordes siguen faltando",
+          "paragraphs": [
+            "Vuelve al reproductor e indica por separado si siguen recortadas las etiquetas del menú, los botones o únicamente el vídeo. Incluye el borde afectado y los modelos, sin interpretar el recorte como prueba de un problema de cuenta. Trex IPTV 8K mantiene una conexión simultánea: compara dentro de una sola sesión. Para esta comprobación no necesitas borrar credenciales, activar depuración ni restablecer el dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Bords de Trex IPTV : vérifiez le surbalayage de Fire TV",
+      "excerpt": "Distinguez les menus Fire TV coupés du seul cadrage d’une vidéo. Comparez prudemment le format d’image en gardant une seule connexion simultanée.",
+      "seo_title": "Bords de Trex IPTV : vérifiez le surbalayage de Fire TV",
+      "seo_description": "Distinguez les menus Fire TV coupés du seul cadrage d’une vidéo. Comparez prudemment le format d’image en gardant une seule connexion simultanée.",
+      "sections": [
+        {
+          "heading": "Regardez au-delà du programme",
+          "paragraphs": [
+            "Si des bords coupés dans Trex IPTV cachent boutons ou texte, revenez à l’accueil Fire TV et observez les libellés extérieurs du menu. Sont-ils coupés aussi, ou seul le programme dans le lecteur l’est-il ? Amazon explique que le surbalayage du téléviseur peut placer une partie d’une application hors de la zone visible et qu’il varie selon le téléviseur. Des menus coupés constituent donc un indice différent des bandes noires voulues ou d’un mauvais réglage de cadrage dans le lecteur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : surbalayage et zone visible de Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez un réglage de taille compatible",
+          "paragraphs": [
+            "Notez les modèles du téléviseur et de Fire TV ainsi que le format d’image actuel avant toute modification. Consultez les réglages d’affichage ordinaires et le manuel du téléviseur pour une option adaptée. Certains appareils proposent un calibrage ; ne supposez pas que tous partagent la même commande ou le même raccourci. Comparez un choix réversible avec le même menu affiché et rétablissez l’ancien réglage si cela n’aide pas. N’étirez pas une image correctement proportionnée pour supprimer ses bandes noires."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Décrivez les bords encore manquants",
+          "paragraphs": [
+            "Revenez au lecteur et indiquez séparément si les libellés, les boutons ou seulement la vidéo restent coupés. Précisez le bord concerné et les modèles, sans considérer le cadrage comme une preuve de problème de compte. Trex IPTV 8K conserve une seule connexion simultanée : comparez dans une seule session. Cette vérification ne demande ni d’effacer les identifiants, ni d’activer le débogage, ni de réinitialiser l’appareil."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Bordi di Trex IPTV: controlla l’overscan di Fire TV",
+      "excerpt": "Distingui i menu tagliati di Fire TV dal ritaglio del solo video. Confronta con cautela il formato dell’immagine mantenendo una sola connessione simultanea.",
+      "seo_title": "Bordi di Trex IPTV: controlla l’overscan di Fire TV",
+      "seo_description": "Distingui i menu tagliati di Fire TV dal ritaglio del solo video. Confronta con cautela il formato dell’immagine mantenendo una sola connessione simultanea.",
+      "sections": [
+        {
+          "heading": "Controlla anche fuori dal programma",
+          "paragraphs": [
+            "Se i bordi in Trex IPTV nascondono pulsanti o testo, torna alla schermata iniziale di Fire TV e osserva le etichette esterne del menu. Mancano anche quei bordi oppure è ritagliato soltanto il programma nel lettore? Amazon spiega che l’overscan del televisore può portare parte di un’app fuori dallo schermo visibile e varia secondo il televisore. I menu tagliati sono quindi un indizio diverso dalle bande nere intenzionali o da una scelta errata del formato nel lettore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: overscan e area visibile di Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta un formato supportato",
+          "paragraphs": [
+            "Prima di cambiare qualcosa, annota modello del televisore, modello Fire TV e formato immagine attuale. Consulta i normali controlli dello schermo e il manuale del televisore per un’opzione compatibile. Alcuni apparecchi offrono una calibrazione: non presumere che tutti abbiano lo stesso comando o scorciatoia del telecomando. Confronta una scelta reversibile mantenendo visibile lo stesso menu e ripristina quella precedente se non aiuta. Non allungare un programma proporzionato correttamente solo per eliminare le bande nere."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descrivi i bordi ancora mancanti",
+          "paragraphs": [
+            "Torna al lettore e segnala separatamente se restano tagliati etichette, pulsanti o soltanto il video. Indica il bordo interessato e i modelli senza trattare il ritaglio come prova di un problema dell’account. Trex IPTV 8K mantiene una connessione simultanea: esegui il confronto in una sola sessione. Per questo controllo non occorre cancellare credenziali, abilitare il debug o ripristinare il dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-beeldranden: controleer Fire TV-overscan",
+      "excerpt": "Vergelijk afgesneden Fire TV-menu’s met een video die alleen in de speler is bijgesneden. Controleer de beeldmaat voorzichtig en behoud één gelijktijdige verbinding.",
+      "seo_title": "Trex IPTV-beeldranden: controleer Fire TV-overscan",
+      "seo_description": "Vergelijk afgesneden Fire TV-menu’s met een video die alleen in de speler is bijgesneden. Controleer de beeldmaat voorzichtig en behoud één gelijktijdige verbinding.",
+      "sections": [
+        {
+          "heading": "Bekijk meer dan het programma",
+          "paragraphs": [
+            "Verdwijnen knoppen of tekst langs de beeldranden bij Trex IPTV? Ga terug naar Fire TV Home en bekijk de buitenste menuteksten. Ontbreken die randen ook, of is alleen de video in de speler bijgesneden? Amazon beschrijft hoe televisieoverscan een deel van een app buiten het zichtbare scherm kan plaatsen; dit verschilt per televisie. Afgesneden menu’s wijzen dus op iets anders dan bedoelde zwarte balken of een ongeschikte beeldvulling in de speler."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: overscan en het zichtbare gebied op Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één ondersteunde beeldmaat",
+          "paragraphs": [
+            "Noteer eerst het televisiemodel, Fire TV-model en de huidige beeldmaatinstelling. Raadpleeg gewone weergaveopties en de televisiehandleiding voor een ondersteunde manier om het beeld passend te maken. Sommige apparaten bieden schermkalibratie; ga niet uit van dezelfde bediening of afstandsbedieningssneltoets op ieder model. Vergelijk één omkeerbare instelling terwijl hetzelfde menu zichtbaar blijft en herstel de oude keuze als het niet helpt. Rek een correct geproportioneerd programma niet uit om zwarte balken te verwijderen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Beschrijf welke randen ontbreken",
+          "paragraphs": [
+            "Keer terug naar de speler en beschrijf afzonderlijk of menutekst, spelerknoppen of alleen de video afgesneden blijven. Noem de betrokken rand en apparaatmodellen; een afgesneden beeld bewijst geen accountprobleem. Trex IPTV 8K behoudt één gelijktijdige verbinding, dus vergelijk binnen één kijksessie. Voor deze controle hoef je geen inloggegevens te wissen, foutopsporing aan te zetten of het apparaat terug te zetten."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Bordas no Trex IPTV: verifique o overscan do Fire TV",
+      "excerpt": "Diferencie menus cortados do Fire TV de um corte apenas no vídeo. Compare o tamanho da imagem com cuidado e mantenha uma única ligação simultânea.",
+      "seo_title": "Bordas no Trex IPTV: verifique o overscan do Fire TV",
+      "seo_description": "Diferencie menus cortados do Fire TV de um corte apenas no vídeo. Compare o tamanho da imagem com cuidado e mantenha uma única ligação simultânea.",
+      "sections": [
+        {
+          "heading": "Observe também fora do programa",
+          "paragraphs": [
+            "Se as bordas no Trex IPTV esconderem botões ou texto, volte ao início do Fire TV e observe as etiquetas exteriores do menu. Essas bordas também desaparecem ou só o programa está cortado dentro do leitor? A Amazon explica que o overscan do televisor pode deixar parte de uma aplicação fora da área visível e varia entre televisores. Menus cortados são, portanto, uma pista diferente de barras pretas intencionais ou de um ajuste inadequado da imagem no leitor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: overscan e área visível do Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare um ajuste de tamanho compatível",
+          "paragraphs": [
+            "Antes de alterar algo, anote o modelo do televisor, o modelo Fire TV e o tamanho de imagem atual. Consulte os controlos normais do ecrã e o manual do televisor para uma opção compatível. Alguns equipamentos têm calibração: não suponha que todos usam o mesmo controlo ou atalho do comando. Compare uma escolha reversível com o mesmo menu visível e restaure a anterior se não ajudar. Não estique um programa corretamente proporcionado só para eliminar barras pretas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Descreva as bordas ainda em falta",
+          "paragraphs": [
+            "Regresse ao leitor e indique separadamente se continuam cortadas as etiquetas, os botões ou apenas o vídeo. Inclua a borda afetada e os modelos, sem tratar o corte como prova de problema na conta. O Trex IPTV 8K mantém uma única ligação simultânea; compare na mesma sessão. Esta verificação não exige apagar credenciais, ativar depuração nem repor o dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Края экрана Trex IPTV: проверьте overscan на Fire TV",
+      "excerpt": "Отличайте обрезанные меню Fire TV от кадрирования только видео. Осторожно сравнивайте размер изображения, сохраняя одно одновременное подключение.",
+      "seo_title": "Края экрана Trex IPTV: проверьте overscan на Fire TV",
+      "seo_description": "Отличайте обрезанные меню Fire TV от кадрирования только видео. Осторожно сравнивайте размер изображения, сохраняя одно одновременное подключение.",
+      "sections": [
+        {
+          "heading": "Посмотрите не только программу",
+          "paragraphs": [
+            "Если у краёв экрана Trex IPTV исчезают кнопки или текст, вернитесь на главный экран Fire TV и посмотрите на крайние подписи меню. Они тоже обрезаны или только программа внутри проигрывателя? Amazon объясняет, что телевизионный overscan может выводить часть приложения за видимую область и различается у телевизоров. Обрезанные меню поэтому отличаются от намеренных чёрных полос и неподходящего режима заполнения кадра в проигрывателе."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: overscan и видимая область Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните один доступный размер изображения",
+          "paragraphs": [
+            "Прежде чем менять настройки, запишите модель телевизора, модель Fire TV и текущий размер изображения телевизора. Найдите подходящий режим в обычных настройках экрана и руководстве телевизора. Некоторые устройства поддерживают калибровку, но одинаковые команды и сочетания кнопок есть не у всех моделей. Сравните один обратимый вариант с тем же открытым меню и верните прежнее значение, если пользы нет. Не растягивайте правильные пропорции программы только ради удаления чёрных полос."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Опишите оставшиеся обрезанные края",
+          "paragraphs": [
+            "Вернитесь в проигрыватель и отдельно сообщите, обрезаны ли подписи меню, кнопки или только видео. Укажите край и модели устройств, не считая обрезанный кадр доказательством проблемы учётной записи. У Trex IPTV 8K остаётся одно одновременное подключение: сравнивайте в рамках одного сеанса просмотра. Для этой проверки не нужно удалять учётные данные, включать отладку или сбрасывать устройство."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کے کٹے کنارے: Fire TV کا اووراسکین دیکھیں",
+      "excerpt": "Fire TV کے کٹے مینو اور صرف ویڈیو کے کٹنے میں فرق کریں۔ تصویر کا سائز احتیاط سے دیکھیں، پرانی ترتیب محفوظ رکھیں اور ایک ہی بیک وقت کنکشن برقرار رکھیں۔",
+      "seo_title": "Trex IPTV کے کٹے کنارے: Fire TV کا اووراسکین دیکھیں",
+      "seo_description": "Fire TV کے کٹے مینو اور صرف ویڈیو کے کٹنے میں فرق کریں۔ تصویر کا سائز احتیاط سے دیکھیں، پرانی ترتیب محفوظ رکھیں اور ایک ہی بیک وقت کنکشن برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "پروگرام کے علاوہ مینو بھی دیکھیں",
+          "paragraphs": [
+            "اگر Trex IPTV میں تصویر کے کناروں پر بٹن یا متن چھپ رہا ہو تو Fire TV کی ابتدائی اسکرین پر واپس آ کر مینو کے بیرونی نام دیکھیں۔ کیا وہاں بھی کنارے غائب ہیں یا صرف پلیئر کے اندر پروگرام کٹا ہوا ہے؟ Amazon کے مطابق ٹی وی کا اووراسکین ایپ کا کچھ حصہ نظر آنے والی اسکرین سے باہر کر سکتا ہے اور یہ مختلف ٹی وی میں مختلف ہوتا ہے۔ اس لیے کٹے مینو، جان بوجھ کر موجود سیاہ پٹیوں اور پلیئر کی نامناسب تصویری ترتیب الگ نشانیاں ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV کا اووراسکین اور نظر آنے والا حصہ",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "ایک دستیاب سائز کا موازنہ کریں",
+          "paragraphs": [
+            "کوئی تبدیلی کرنے سے پہلے ٹی وی کا ماڈل، Fire TV کا ماڈل اور ٹی وی پر تصویر کے سائز کی موجودہ ترتیب نوٹ کریں۔ اسکرین کے عام کنٹرول اور ٹی وی کی کتابِ رہنمائی میں موزوں اختیار دیکھیں۔ کچھ آلات پر اسکرین کی پیمائش درست کرنے کا اختیار ہوتا ہے؛ ہر ماڈل پر ایک سا کنٹرول یا ریموٹ شارٹ کٹ فرض نہ کریں۔ وہی مینو کھلا رکھ کر ایک قابلِ واپسی انتخاب دیکھیں، فائدہ نہ ہو تو پچھلی ترتیب بحال کریں۔ صرف سیاہ پٹیاں ہٹانے کے لیے درست تناسب والے پروگرام کو مت کھینچیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "جو کنارے غائب رہیں ان کی وضاحت کریں",
+          "paragraphs": [
+            "پلیئر پر واپس آ کر الگ بتائیں کہ مینو کے نام، پلیئر کے بٹن یا صرف ویڈیو اب بھی کٹ رہی ہے۔ متاثرہ کنارا اور آلات کے ماڈل بتائیں؛ کٹی تصویر کو اکاؤنٹ کی خرابی کا ثبوت نہ سمجھیں۔ Trex IPTV 8K میں ایک ہی بیک وقت کنکشن برقرار ہے، اس لیے موازنہ ایک دیکھنے کے سیشن میں کریں۔ اس جانچ کے لیے نہ محفوظ اسناد مٹائیں، نہ ڈیبگنگ فعال کریں، اور نہ آلہ ری سیٹ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "حواف Trex IPTV: افحص تجاوز المسح في Fire TV",
+      "excerpt": "فرّق بين قوائم Fire TV المقطوعة واقتصاص الفيديو وحده. قارن حجم الصورة بحذر واحتفظ بالإعداد الأصلي وباتصال متزامن واحد.",
+      "seo_title": "حواف Trex IPTV: افحص تجاوز المسح في Fire TV",
+      "seo_description": "فرّق بين قوائم Fire TV المقطوعة واقتصاص الفيديو وحده. قارن حجم الصورة بحذر واحتفظ بالإعداد الأصلي وباتصال متزامن واحد.",
+      "sections": [
+        {
+          "heading": "افحص ما هو خارج البرنامج أيضاً",
+          "paragraphs": [
+            "إذا أخفت حواف شاشة Trex IPTV أزراراً أو نصاً، فعُد إلى الصفحة الرئيسية في Fire TV وافحص تسميات القوائم الخارجية. هل تختفي تلك الحواف أيضاً أم يُقتص البرنامج وحده داخل المشغّل؟ توضّح Amazon أن تجاوز المسح في التلفاز قد يضع جزءاً من التطبيق خارج المنطقة المرئية، ويختلف بحسب التلفاز. لذا فالقوائم المقطوعة قرينة مختلفة عن الأشرطة السوداء المقصودة أو اختيار ملاءمة صورة غير مناسب في المشغّل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: تجاوز المسح والمساحة المرئية في Fire TV",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن خيار حجم مدعوماً واحداً",
+          "paragraphs": [
+            "دوّن طراز التلفاز وطراز Fire TV وإعداد حجم صورة التلفاز الحالي قبل التغيير. راجع أدوات العرض العادية ودليل التلفاز للعثور على خيار ملاءمة مدعوم. تتيح بعض الأجهزة معايرة الشاشة؛ لا تفترض أن كل الطرز لها الأداة أو اختصار الريموت نفسه. قارن اختياراً قابلاً للتراجع مع بقاء القائمة نفسها ظاهرة، واستعِد الإعداد السابق إن لم يفد. لا تمدّد برنامجاً ذا أبعاد صحيحة لمجرد إزالة أشرطته السوداء."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صف الحواف التي ما زالت مفقودة",
+          "paragraphs": [
+            "عُد إلى المشغّل واذكر منفصلاً هل ما زالت تسميات القوائم أو أزرار المشغّل أو الفيديو وحده مقطوعة. حدّد الحافة المتأثرة وطرز الأجهزة بدلاً من اعتبار الصورة المقتصة دليلاً على مشكلة حساب. يحتفظ Trex IPTV 8K باتصال متزامن واحد، فأجرِ المقارنة ضمن جلسة مشاهدة واحدة. لا تحتاج هذه الخطوة إلى مسح بيانات الدخول أو تفعيل تصحيح الأخطاء أو إعادة ضبط الجهاز."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV के कटे किनारे: Fire TV का ओवरस्कैन जाँचें",
+      "excerpt": "Fire TV के कटे मेनू और केवल वीडियो के कटने में अंतर करें। चित्र का आकार सावधानी से देखें, पुरानी सेटिंग रखें और एक ही समकालिक कनेक्शन बनाए रखें।",
+      "seo_title": "Trex IPTV के कटे किनारे: Fire TV का ओवरस्कैन जाँचें",
+      "seo_description": "Fire TV के कटे मेनू और केवल वीडियो के कटने में अंतर करें। चित्र का आकार सावधानी से देखें, पुरानी सेटिंग रखें और एक ही समकालिक कनेक्शन बनाए रखें।",
+      "sections": [
+        {
+          "heading": "कार्यक्रम के बाहर भी देखें",
+          "paragraphs": [
+            "यदि Trex IPTV में किनारों पर बटन या पाठ छिपते हैं, तो Fire TV के मुख्य पृष्ठ पर लौटकर मेनू के बाहरी नाम देखें। क्या वहाँ भी किनारे गायब हैं या केवल प्लेयर के अंदर कार्यक्रम कट रहा है? Amazon बताता है कि टीवी का ओवरस्कैन ऐप का हिस्सा दिखाई देने वाली स्क्रीन से बाहर कर सकता है और यह टीवी के अनुसार बदलता है। इसलिए कटे मेनू, जानबूझकर रखी काली पट्टियाँ और प्लेयर का गलत चित्र-अनुपात अलग संकेत हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire TV ओवरस्कैन और दिखाई देने वाला क्षेत्र",
+              "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+            }
+          ]
+        },
+        {
+          "heading": "आकार का एक समर्थित विकल्प तुलना करें",
+          "paragraphs": [
+            "बदलाव से पहले टीवी मॉडल, Fire TV मॉडल और टीवी के चित्र के आकार की मौजूदा सेटिंग लिखें। समर्थित विकल्प के लिए सामान्य डिस्प्ले नियंत्रण और टीवी की मार्गदर्शिका देखें। कुछ उपकरण स्क्रीन का माप ठीक करने का विकल्प देते हैं; हर मॉडल में वही नियंत्रण या रिमोट शॉर्टकट मानकर न चलें। वही मेनू दिखाते हुए एक ऐसा विकल्प तुलना करें जिसे वापस किया जा सके और लाभ न हो तो पुरानी सेटिंग रखें। केवल काली पट्टियाँ हटाने के लिए सही अनुपात वाले कार्यक्रम को न खींचें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "जो किनारे कटे रहें उनका वर्णन करें",
+          "paragraphs": [
+            "प्लेयर पर लौटकर अलग बताएँ कि मेनू के नाम, प्लेयर बटन या केवल वीडियो अब भी कट रहा है। प्रभावित किनारा और उपकरण मॉडल बताएँ; कटे चित्र को खाते की समस्या का प्रमाण न समझें। Trex IPTV 8K में एक ही समकालिक कनेक्शन रहता है, इसलिए एक देखने वाले सत्र में तुलना करें। इस जाँच के लिए न सहेजे लॉगिन मिटाएँ, न डिबगिंग चालू करें और न उपकरण रीसेट करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon Fire TV design guidelines: Overscan and the Safe Zone",
+      "url": "https://developer.amazon.com/docs/fire-tv/design-and-user-experience-guidelines.html"
+    }
+  ]
+}
