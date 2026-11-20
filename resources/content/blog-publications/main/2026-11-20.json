@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-20",
+  "topic": "Distinguish VLC for Android audio-track selection and unavailable spoken languages from volume, subtitle choices and an account fault.",
+  "primary_keyword": "IPTV audio track",
+  "slug": "main-audio-track-available-language-before-volume",
+  "translations": {
+    "en": {
+      "title": "IPTV audio track: choose the available language in VLC",
+      "excerpt": "Check the selected VLC audio track before changing volume or subtitle settings. Record missing language choices without erasing your saved player setup.",
+      "seo_title": "IPTV audio track: choose the available language in VLC",
+      "seo_description": "Check the selected VLC audio track before changing volume or subtitle settings. Record missing language choices without erasing your saved player setup.",
+      "sections": [
+        {
+          "heading": "Identify what is wrong",
+          "paragraphs": [
+            "An IPTV audio track check is useful when the picture plays but speech is in an unexpected language, or sound disappears after a menu change. First distinguish that from quiet dialogue and from voices arriving late. Keep the same permitted programme open and note the current audio label. Increasing television volume will not turn one recorded language into another, and changing a subtitle track does not replace spoken audio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Select only a listed track",
+          "paragraphs": [
+            "VideoLAN documents VLC for Android’s Audio and Subtitles window, opened from the control near the lower-left corner during video playback. It lets you select an available audio track or disable audio. Check whether Disable is selected, then choose one listed track and listen to a short section at a comfortable volume. Record the original choice first. Labels and layout can vary; use the controls actually present in your installed version."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official VideoLAN audio-track controls",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Record what is missing",
+          "paragraphs": [
+            "If the wanted language is absent, report the available labels instead of assuming that changing the app language will add it. A limited audio list does not by itself establish a service-wide fault. If a listed track stays silent, note whether another listed track works on that same video, without changing several settings together. Keep private playback addresses out of screenshots. Preserve saved player access while support checks the specific programme and player version."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pista de audio IPTV: elige el idioma disponible en VLC",
+      "excerpt": "Revisa la pista de audio de VLC antes de cambiar el volumen o los subtítulos. Anota los idiomas ausentes sin borrar la configuración guardada del reproductor.",
+      "seo_title": "Pista de audio IPTV: elige el idioma disponible en VLC",
+      "seo_description": "Revisa la pista de audio de VLC antes de cambiar el volumen o los subtítulos. Anota los idiomas ausentes sin borrar la configuración guardada del reproductor.",
+      "sections": [
+        {
+          "heading": "Identifica el problema",
+          "paragraphs": [
+            "Comprobar la pista de audio IPTV resulta útil cuando hay imagen, pero las voces están en un idioma inesperado, o el sonido desaparece después de cambiar una opción. Distingue eso de un diálogo bajo o de voces retrasadas. Mantén abierto el mismo programa autorizado y anota la etiqueta de audio actual. Subir el volumen del televisor no cambia el idioma grabado, y cambiar los subtítulos no sustituye el audio hablado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Selecciona una pista de la lista",
+          "paragraphs": [
+            "VideoLAN describe la ventana de audio y subtítulos de VLC para Android, que se abre con el control cercano a la esquina inferior izquierda durante la reproducción. Permite seleccionar una pista disponible o desactivar el audio. Comprueba si está desactivado; después elige una pista de la lista y escucha un fragmento a un volumen cómodo. Anota primero la selección original. Las etiquetas y la distribución pueden variar: utiliza los controles de tu versión instalada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Controles de pistas de audio de VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Anota lo que falta",
+          "paragraphs": [
+            "Si falta el idioma deseado, comunica las etiquetas disponibles en lugar de suponer que cambiar el idioma de la aplicación lo añadirá. Una lista limitada no demuestra por sí sola un fallo general del servicio. Si una pista está en silencio, anota si otra funciona en ese mismo vídeo, sin modificar varios ajustes juntos. Oculta las direcciones privadas de reproducción en las capturas. Conserva el acceso guardado mientras soporte revisa el programa y la versión del reproductor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Piste audio IPTV : choisir la langue disponible dans VLC",
+      "excerpt": "Vérifiez la piste audio de VLC avant le volume ou les sous-titres. Notez les langues absentes sans effacer la configuration enregistrée du lecteur.",
+      "seo_title": "Piste audio IPTV : choisir la langue disponible dans VLC",
+      "seo_description": "Vérifiez la piste audio de VLC avant le volume ou les sous-titres. Notez les langues absentes sans effacer la configuration enregistrée du lecteur.",
+      "sections": [
+        {
+          "heading": "Identifier le problème",
+          "paragraphs": [
+            "Vérifier la piste audio IPTV est utile si l’image fonctionne mais les voix utilisent une langue inattendue, ou si le son disparaît après un changement de menu. Distinguez cela de dialogues faibles ou de voix décalées. Gardez le même programme autorisé ouvert et relevez le libellé audio actuel. Augmenter le volume du téléviseur ne change pas la langue enregistrée ; sélectionner d’autres sous-titres ne remplace pas les voix."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Choisir une piste proposée",
+          "paragraphs": [
+            "VideoLAN décrit la fenêtre Audio et sous-titres de VLC pour Android, accessible avec la commande proche du coin inférieur gauche pendant la lecture. Elle permet de choisir une piste disponible ou de désactiver le son. Vérifiez si la désactivation est sélectionnée, puis écoutez brièvement une piste proposée à un volume confortable. Notez d’abord le choix initial. Les libellés et la disposition peuvent varier : utilisez les commandes de votre version installée."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Commandes des pistes audio documentées par VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Noter ce qui manque",
+          "paragraphs": [
+            "Si la langue souhaitée manque, indiquez les libellés disponibles plutôt que de supposer qu’un changement de langue de l’application l’ajoutera. Une liste limitée ne prouve pas une panne générale du service. Si une piste reste muette, notez si une autre fonctionne sur cette même vidéo, sans modifier plusieurs réglages ensemble. Masquez les adresses privées de lecture dans les captures. Conservez l’accès enregistré pendant que l’assistance examine le programme et la version du lecteur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Traccia audio IPTV: scegli la lingua disponibile in VLC",
+      "excerpt": "Controlla la traccia audio di VLC prima del volume o dei sottotitoli. Annota le lingue mancanti senza cancellare la configurazione salvata del lettore.",
+      "seo_title": "Traccia audio IPTV: scegli la lingua disponibile in VLC",
+      "seo_description": "Controlla la traccia audio di VLC prima del volume o dei sottotitoli. Annota le lingue mancanti senza cancellare la configurazione salvata del lettore.",
+      "sections": [
+        {
+          "heading": "Identifica il problema",
+          "paragraphs": [
+            "Controllare la traccia audio IPTV è utile quando il video si vede ma le voci sono in una lingua inattesa, oppure il suono sparisce dopo una modifica nel menu. Distingui questi casi dai dialoghi bassi e dalle voci in ritardo. Tieni aperto lo stesso programma autorizzato e annota l’etichetta audio attuale. Aumentare il volume del televisore non cambia la lingua registrata; cambiare i sottotitoli non sostituisce l’audio parlato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Seleziona una traccia presente",
+          "paragraphs": [
+            "VideoLAN documenta la finestra Audio e sottotitoli di VLC per Android, accessibile dal comando vicino all’angolo inferiore sinistro durante la riproduzione. Consente di scegliere una traccia disponibile o disattivare l’audio. Verifica se è selezionata la disattivazione, poi ascolta brevemente una traccia dell’elenco a volume confortevole. Annota prima la scelta originale. Nomi e disposizione possono variare: usa i comandi effettivamente presenti nella tua versione installata."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Comandi delle tracce audio documentati da VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Annota ciò che manca",
+          "paragraphs": [
+            "Se manca la lingua desiderata, segnala le etichette disponibili invece di presumere che cambiare la lingua dell’app la aggiunga. Un elenco limitato non dimostra da solo un guasto generale del servizio. Se una traccia resta muta, annota se un’altra funziona sullo stesso video, senza cambiare più impostazioni insieme. Nascondi gli indirizzi privati di riproduzione nelle schermate. Conserva l’accesso salvato mentre l’assistenza controlla il programma e la versione del lettore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-audiospoor: kies de beschikbare taal in VLC",
+      "excerpt": "Controleer het VLC-audiospoor voordat je volume of ondertitels wijzigt. Noteer ontbrekende talen zonder de opgeslagen spelerinstellingen te wissen.",
+      "seo_title": "IPTV-audiospoor: kies de beschikbare taal in VLC",
+      "seo_description": "Controleer het VLC-audiospoor voordat je volume of ondertitels wijzigt. Noteer ontbrekende talen zonder de opgeslagen spelerinstellingen te wissen.",
+      "sections": [
+        {
+          "heading": "Bepaal wat er misgaat",
+          "paragraphs": [
+            "Een IPTV-audiospoor controleren helpt wanneer het beeld werkt maar de stemmen een onverwachte taal gebruiken, of wanneer geluid na een menuwijziging verdwijnt. Onderscheid dit van zachte dialogen en vertraagde stemmen. Laat hetzelfde toegestane programma openstaan en noteer het huidige audiolabel. Het televisievolume verhogen verandert de opgenomen taal niet, en een ander ondertitelspoor kiezen vervangt de gesproken tekst niet."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Kies alleen een vermeld spoor",
+          "paragraphs": [
+            "VideoLAN beschrijft het venster voor audio en ondertitels in VLC voor Android, bereikbaar via de bediening linksonder tijdens videoweergave. Je kunt een beschikbaar audiospoor kiezen of audio uitschakelen. Controleer of uitschakelen geselecteerd is; kies daarna één vermeld spoor en luister kort op een prettig volume. Noteer eerst de oorspronkelijke keuze. Labels en indeling kunnen verschillen: gebruik de bediening die jouw geïnstalleerde versie daadwerkelijk toont."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële VideoLAN-bediening voor audiosporen",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Noteer wat ontbreekt",
+          "paragraphs": [
+            "Ontbreekt de gewenste taal, geef dan de beschikbare labels door in plaats van aan te nemen dat een andere app-taal deze toevoegt. Een beperkte audiolijst bewijst op zichzelf geen algemene storing. Blijft een vermeld spoor stil, noteer dan of een ander spoor bij dezelfde video werkt, zonder meerdere instellingen tegelijk te wijzigen. Houd privéafspeeladressen buiten schermafbeeldingen. Bewaar de opgeslagen toegang terwijl ondersteuning het betreffende programma en de spelerversie controleert."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Faixa de áudio IPTV: escolha o idioma disponível no VLC",
+      "excerpt": "Confira a faixa de áudio do VLC antes do volume ou das legendas. Anote os idiomas ausentes sem apagar a configuração salva do reprodutor.",
+      "seo_title": "Faixa de áudio IPTV: escolha o idioma disponível no VLC",
+      "seo_description": "Confira a faixa de áudio do VLC antes do volume ou das legendas. Anote os idiomas ausentes sem apagar a configuração salva do reprodutor.",
+      "sections": [
+        {
+          "heading": "Identifique o problema",
+          "paragraphs": [
+            "Verificar a faixa de áudio IPTV ajuda quando a imagem funciona, mas as vozes estão em um idioma inesperado, ou o som desaparece após uma alteração no menu. Diferencie isso de diálogos baixos e de vozes atrasadas. Mantenha o mesmo programa autorizado aberto e anote a identificação do áudio atual. Aumentar o volume da televisão não muda o idioma gravado; trocar as legendas não substitui as vozes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Escolha uma faixa da lista",
+          "paragraphs": [
+            "A VideoLAN documenta a janela de áudio e legendas do VLC para Android, aberta pelo controle próximo ao canto inferior esquerdo durante o vídeo. Ela permite escolher uma faixa disponível ou desativar o áudio. Veja se a desativação está selecionada; depois escolha uma faixa da lista e ouça um trecho em volume confortável. Anote primeiro a opção original. Nomes e disposição podem variar: use os controles presentes na versão instalada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Controles de faixas de áudio da VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Registre o que está faltando",
+          "paragraphs": [
+            "Se o idioma desejado não aparecer, informe os nomes disponíveis em vez de presumir que mudar o idioma do aplicativo o adicionará. Uma lista limitada não comprova, sozinha, uma falha geral do serviço. Se uma faixa continuar sem som, anote se outra funciona no mesmo vídeo, sem alterar várias configurações juntas. Oculte endereços privados de reprodução nas capturas. Preserve o acesso salvo enquanto o suporte verifica o programa e a versão do reprodutor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Аудиодорожка IPTV: выберите доступный язык в VLC",
+      "excerpt": "Проверьте аудиодорожку VLC до изменения громкости или субтитров. Запишите отсутствующие языки, сохранив настройки и доступ проигрывателя.",
+      "seo_title": "Аудиодорожка IPTV: выберите доступный язык в VLC",
+      "seo_description": "Проверьте аудиодорожку VLC до изменения громкости или субтитров. Запишите отсутствующие языки, сохранив настройки и доступ проигрывателя.",
+      "sections": [
+        {
+          "heading": "Определите характер проблемы",
+          "paragraphs": [
+            "Проверка аудиодорожки IPTV полезна, когда изображение есть, но речь звучит на неожиданном языке, либо звук исчез после изменения меню. Отличайте это от тихих диалогов и запаздывающих голосов. Оставьте открытой ту же разрешённую передачу и запишите название текущей дорожки. Повышение громкости телевизора не меняет язык записи, а выбор других субтитров не заменяет звучащую речь."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Выберите дорожку из списка",
+          "paragraphs": [
+            "VideoLAN описывает окно аудио и субтитров VLC для Android, открываемое кнопкой около нижнего левого угла во время видео. В нём можно выбрать доступную аудиодорожку или отключить звук. Проверьте, не выбрано ли отключение, затем прослушайте небольшой фрагмент одной дорожки из списка на комфортной громкости. Сначала запишите исходный выбор. Названия и расположение могут различаться: используйте элементы своей установленной версии."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальные элементы выбора аудиодорожки VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "Запишите, чего не хватает",
+          "paragraphs": [
+            "Если нужного языка нет, сообщите доступные названия, а не рассчитывайте добавить его сменой языка приложения. Ограниченный список сам по себе не доказывает общий сбой сервиса. Если выбранная дорожка остаётся беззвучной, отметьте, работает ли другая в том же видео, не меняя сразу несколько настроек. Скройте частные адреса воспроизведения на снимках. Сохраните настроенный доступ, пока поддержка проверяет конкретную передачу и версию проигрывателя."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV آڈیو ٹریک: VLC میں دستیاب زبان منتخب کریں",
+      "excerpt": "آواز یا ذیلی عنوانات کی ترتیب بدلنے سے پہلے VLC کا آڈیو ٹریک دیکھیں۔ محفوظ پلیئر ترتیب مٹائے بغیر غیر موجود زبانوں کے نام نوٹ کریں۔",
+      "seo_title": "IPTV آڈیو ٹریک: VLC میں دستیاب زبان منتخب کریں",
+      "seo_description": "آواز یا ذیلی عنوانات کی ترتیب بدلنے سے پہلے VLC کا آڈیو ٹریک دیکھیں۔ محفوظ پلیئر ترتیب مٹائے بغیر غیر موجود زبانوں کے نام نوٹ کریں۔",
+      "sections": [
+        {
+          "heading": "پہلے مسئلہ پہچانیں",
+          "paragraphs": [
+            "IPTV آڈیو ٹریک کی جانچ تب مفید ہے جب تصویر چل رہی ہو لیکن گفتگو غیر متوقع زبان میں ہو، یا مینو میں تبدیلی کے بعد آواز غائب ہو جائے۔ اسے دھیمی گفتگو اور دیر سے آنے والی آواز سے الگ سمجھیں۔ وہی اجازت یافتہ پروگرام کھلا رکھیں اور موجودہ آڈیو کا نام نوٹ کریں۔ ٹی وی کی آواز بڑھانے سے ریکارڈ شدہ زبان نہیں بدلتی، اور ذیلی عنوانات بدلنے سے بولی جانے والی آواز تبدیل نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صرف فہرست میں موجود ٹریک چنیں",
+          "paragraphs": [
+            "VideoLAN کے مطابق VLC برائے Android میں ویڈیو کے دوران نیچے بائیں کونے کے قریب کنٹرول سے آڈیو اور ذیلی عنوانات کی ونڈو کھلتی ہے۔ اس سے دستیاب آڈیو ٹریک منتخب یا آواز بند کی جا سکتی ہے۔ دیکھیں کہ آواز بند کرنے والا اختیار منتخب تو نہیں؛ پھر فہرست کا ایک ٹریک چن کر آرام دہ آواز پر مختصر حصہ سنیں۔ پہلے اصل انتخاب لکھ لیں۔ نام اور ترتیب مختلف ہو سکتے ہیں، اس لیے اپنے نصب شدہ نسخے کے موجود کنٹرول استعمال کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN کی آڈیو ٹریک کنٹرول کی دستاویز",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "جو چیز موجود نہیں اسے نوٹ کریں",
+          "paragraphs": [
+            "مطلوبہ زبان موجود نہ ہو تو دستیاب نام بتائیں؛ یہ نہ سمجھیں کہ ایپ کی زبان بدلنے سے وہ شامل ہو جائے گی۔ محدود آڈیو فہرست اکیلی پوری سروس کی خرابی ثابت نہیں کرتی۔ کوئی درج ٹریک خاموش رہے تو کئی ترتیبات ایک ساتھ بدلے بغیر دیکھیں کہ اسی ویڈیو کا دوسرا درج ٹریک چلتا ہے یا نہیں۔ اسکرین شاٹ میں نجی پلے بیک پتے شامل نہ کریں۔ معاونت کے پروگرام اور پلیئر کے نسخے کی جانچ تک محفوظ رسائی برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "المسار الصوتي في IPTV: اختر اللغة المتاحة في VLC",
+      "excerpt": "راجع مسار VLC الصوتي قبل تغيير مستوى الصوت أو الترجمة. سجّل اللغات الغائبة دون مسح إعدادات المشغّل المحفوظة أو بيانات الوصول.",
+      "seo_title": "المسار الصوتي في IPTV: اختر اللغة المتاحة في VLC",
+      "seo_description": "راجع مسار VLC الصوتي قبل تغيير مستوى الصوت أو الترجمة. سجّل اللغات الغائبة دون مسح إعدادات المشغّل المحفوظة أو بيانات الوصول.",
+      "sections": [
+        {
+          "heading": "حدّد طبيعة المشكلة",
+          "paragraphs": [
+            "يفيد فحص المسار الصوتي في IPTV عندما تعمل الصورة لكن الكلام بلغة غير متوقعة، أو يختفي الصوت بعد تعديل في القائمة. ميّز ذلك عن الحوار المنخفض وتأخر الأصوات. أبقِ البرنامج المسموح نفسه مفتوحًا وسجّل اسم المسار الحالي. رفع صوت التلفاز لا يغيّر لغة التسجيل، واختيار ترجمة مكتوبة أخرى لا يستبدل الكلام المسموع."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اختر مسارًا من القائمة فقط",
+          "paragraphs": [
+            "توثّق VideoLAN نافذة الصوت والترجمة في VLC لنظام Android، وتُفتح من عنصر التحكم قرب الزاوية السفلية اليسرى أثناء الفيديو. يمكن اختيار مسار متاح أو تعطيل الصوت. تحقّق مما إذا كان التعطيل محددًا، ثم اختر مسارًا مدرجًا واستمع إلى جزء قصير بمستوى مريح. سجّل الاختيار الأصلي أولًا. قد تختلف الأسماء والتخطيطات؛ استخدم عناصر التحكم الموجودة فعلًا في إصدارك المثبّت."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "توثيق VideoLAN الرسمي لاختيار المسارات الصوتية",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "سجّل ما هو غير متاح",
+          "paragraphs": [
+            "إذا غابت اللغة المطلوبة، أبلغ عن الأسماء المتاحة بدل افتراض أن تغيير لغة التطبيق سيضيفها. القائمة المحدودة وحدها لا تثبت عطلًا عامًا في الخدمة. إذا ظل مسار مدرج صامتًا، سجّل إن كان مسار آخر يعمل في الفيديو نفسه دون تغيير عدة إعدادات معًا. أخفِ عناوين التشغيل الخاصة في لقطات الشاشة. احتفظ بالوصول المحفوظ بينما يراجع الدعم البرنامج المحدد وإصدار المشغّل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV ऑडियो ट्रैक: VLC में उपलब्ध भाषा चुनें",
+      "excerpt": "आवाज़ या उपशीर्षक बदलने से पहले VLC का ऑडियो ट्रैक जाँचें। सहेजा प्लेयर सेटअप मिटाए बिना अनुपलब्ध भाषाओं की जानकारी लिखें।",
+      "seo_title": "IPTV ऑडियो ट्रैक: VLC में उपलब्ध भाषा चुनें",
+      "seo_description": "आवाज़ या उपशीर्षक बदलने से पहले VLC का ऑडियो ट्रैक जाँचें। सहेजा प्लेयर सेटअप मिटाए बिना अनुपलब्ध भाषाओं की जानकारी लिखें।",
+      "sections": [
+        {
+          "heading": "पहले समस्या पहचानें",
+          "paragraphs": [
+            "IPTV ऑडियो ट्रैक की जाँच तब उपयोगी है जब चित्र चलता हो लेकिन बातचीत अनचाही भाषा में हो, या मेनू में बदलाव के बाद आवाज़ गायब हो जाए। इसे धीमे संवाद और देर से आने वाली आवाज़ से अलग समझें। वही अनुमति प्राप्त कार्यक्रम खुला रखें और वर्तमान ऑडियो का नाम लिखें। टीवी की आवाज़ बढ़ाने से रिकॉर्ड की गई भाषा नहीं बदलती, और उपशीर्षक बदलने से बोली गई आवाज़ नहीं बदलती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "केवल सूची में मौजूद ट्रैक चुनें",
+          "paragraphs": [
+            "VideoLAN के अनुसार Android के लिए VLC में वीडियो के दौरान नीचे बाएँ कोने के पास के नियंत्रण से ऑडियो और उपशीर्षक की विंडो खुलती है। उससे उपलब्ध ऑडियो ट्रैक चुन सकते हैं या आवाज़ बंद कर सकते हैं। देखें कि आवाज़ बंद करने का विकल्प चुना तो नहीं है; फिर सूची का एक ट्रैक चुनकर आरामदायक आवाज़ पर छोटा हिस्सा सुनें। पहले मूल चुनाव लिखें। नाम और स्थान अलग हो सकते हैं, इसलिए स्थापित संस्करण के वास्तविक नियंत्रण ही इस्तेमाल करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN के आधिकारिक ऑडियो ट्रैक नियंत्रण",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+            }
+          ]
+        },
+        {
+          "heading": "जो उपलब्ध नहीं है उसे लिखें",
+          "paragraphs": [
+            "चाही गई भाषा न हो तो उपलब्ध नाम बताएँ; यह न मानें कि ऐप की भाषा बदलने से वह जुड़ जाएगी। सीमित ऑडियो सूची अकेले पूरी सेवा की खराबी साबित नहीं करती। सूची का कोई ट्रैक चुप रहे तो कई सेटिंग साथ बदले बिना देखें कि उसी वीडियो का दूसरा ट्रैक चलता है या नहीं। स्क्रीनशॉट में निजी प्लेबैक पते न रखें। सहायता द्वारा कार्यक्रम और प्लेयर संस्करण की जाँच तक सहेजी पहुँच बनाए रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android available audio-track selection",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_player.html"
+    }
+  ]
+}

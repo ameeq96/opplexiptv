@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-20",
+  "topic": "Identify Apple TV VoiceOver menu speech separately from programme narration while preserving useful accessibility settings and saved Geo IPTV player access.",
+  "primary_keyword": "Geo IPTV VoiceOver",
+  "slug": "geo-voiceover-menu-speech-or-programme-narration",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV VoiceOver: is Apple TV reading the menus?",
+      "excerpt": "Listen for menu labels before changing programme audio. Identify Apple TV VoiceOver, preserve useful accessibility choices and report where the speech occurs.",
+      "seo_title": "Geo IPTV VoiceOver: is Apple TV reading the menus?",
+      "seo_description": "Listen for menu labels before changing programme audio. Identify Apple TV VoiceOver, preserve useful accessibility choices and report where the speech occurs.",
+      "sections": [
+        {
+          "heading": "Identify the screen that speaks",
+          "paragraphs": [
+            "A voice naming highlighted buttons during Geo IPTV viewing may be a screen reader rather than programme narration. Return to a familiar Apple TV menu and move the highlight once. Note whether the spoken words follow the selected item. Apple documents that VoiceOver reads highlighted menu and text items on Apple TV 4K. This observation does not establish a provider outage or a changed audio track."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing VoiceOver setting",
+          "paragraphs": [
+            "On the documented Apple TV interface, open Settings, Accessibility, then VoiceOver to read its current state. Keep an accessibility feature that someone in the household relies on; turning it off is not required just to identify it. If the owner wants a change, use the documented control and retain the original choice. Navigation can work differently with VoiceOver, so avoid repeated unfamiliar remote gestures."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Describe programme speech separately",
+          "paragraphs": [
+            "If speech occurs only within the programme, describe that instead of assuming the menu reader caused it. Audio description narrates on-screen action, while dialogue language is another question. A third-party player may provide its own controls and available tracks. Record the Apple TV and player versions, the screen involved and what triggers the voice. Keep saved access intact; neither a device reset nor sharing private playback addresses is needed for this report."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Geo IPTV y VoiceOver: ¿Apple TV está leyendo los menús?",
+      "excerpt": "Escucha si la voz lee etiquetas del menú antes de cambiar el audio. Identifica VoiceOver de Apple TV y conserva las opciones de accesibilidad útiles.",
+      "seo_title": "Geo IPTV y VoiceOver: ¿Apple TV está leyendo los menús?",
+      "seo_description": "Escucha si la voz lee etiquetas del menú antes de cambiar el audio. Identifica VoiceOver de Apple TV y conserva las opciones de accesibilidad útiles.",
+      "sections": [
+        {
+          "heading": "Identifica qué pantalla habla",
+          "paragraphs": [
+            "Una voz que nombra botones resaltados al usar Geo IPTV puede ser un lector de pantalla y no la narración del programa. Vuelve a un menú conocido de Apple TV y mueve el resaltado una vez. Observa si las palabras siguen al elemento seleccionado. Apple documenta que VoiceOver lee los elementos de menú y texto resaltados en Apple TV 4K. Esto no demuestra una avería del proveedor ni un cambio de pista de audio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta el ajuste actual de VoiceOver",
+          "paragraphs": [
+            "En la interfaz documentada de Apple TV, abre Ajustes, Accesibilidad y después VoiceOver para consultar su estado. Conserva una función de accesibilidad que alguien de casa necesite; no hace falta desactivarla para identificarla. Si el propietario desea un cambio, usa el control documentado y anota la elección original. La navegación puede funcionar de otra manera con VoiceOver, por lo que conviene evitar gestos desconocidos repetidos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Describe aparte la voz del programa",
+          "paragraphs": [
+            "Si la voz aparece solo dentro del programa, indícalo en lugar de atribuirla al lector de menús. La audiodescripción narra la acción en pantalla; el idioma de los diálogos es otra cuestión. Un reproductor de terceros puede tener controles y pistas propios. Anota las versiones de Apple TV y del reproductor, la pantalla y qué activa la voz. Conserva el acceso guardado; para este informe no necesitas restablecer el dispositivo ni compartir direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV et VoiceOver : Apple TV lit-il les menus ?",
+      "excerpt": "Écoutez si la voix nomme les menus avant de changer le son du programme. Identifiez VoiceOver sur Apple TV et conservez les réglages utiles à votre foyer.",
+      "seo_title": "Geo IPTV et VoiceOver : Apple TV lit-il les menus ?",
+      "seo_description": "Écoutez si la voix nomme les menus avant de changer le son du programme. Identifiez VoiceOver sur Apple TV et conservez les réglages utiles à votre foyer.",
+      "sections": [
+        {
+          "heading": "Repérez quel écran parle",
+          "paragraphs": [
+            "Une voix qui nomme les boutons surlignés pendant une utilisation de Geo IPTV peut être un lecteur d’écran plutôt que la narration du programme. Revenez à un menu Apple TV connu et déplacez une fois la sélection. Notez si les mots suivent l’élément choisi. Apple indique que VoiceOver lit les éléments de menu et de texte surlignés sur Apple TV 4K. Cette observation ne prouve ni une panne du fournisseur ni un changement de piste audio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le réglage actuel de VoiceOver",
+          "paragraphs": [
+            "Dans l’interface Apple TV documentée, ouvrez Réglages, Accessibilité, puis VoiceOver pour lire son état. Préservez une fonction d’accessibilité dont une personne du foyer dépend ; il est inutile de la désactiver pour l’identifier. Si le propriétaire souhaite un changement, utilisez la commande documentée et notez le choix initial. La navigation peut différer avec VoiceOver : évitez de répéter des gestes inconnus sur la télécommande."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez séparément la voix du programme",
+          "paragraphs": [
+            "Si la voix intervient uniquement dans le programme, précisez-le sans l’attribuer au lecteur des menus. L’audiodescription raconte l’action à l’écran ; la langue des dialogues est une autre question. Un lecteur tiers peut proposer ses propres commandes et pistes disponibles. Notez les versions d’Apple TV et du lecteur, l’écran concerné et le déclencheur de la voix. Conservez l’accès enregistré ; ce signalement ne nécessite ni réinitialisation ni partage d’adresses privées de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV e VoiceOver: Apple TV sta leggendo i menu?",
+      "excerpt": "Ascolta se la voce legge le voci del menu prima di cambiare l’audio. Identifica VoiceOver su Apple TV e conserva le impostazioni di accessibilità utili.",
+      "seo_title": "Geo IPTV e VoiceOver: Apple TV sta leggendo i menu?",
+      "seo_description": "Ascolta se la voce legge le voci del menu prima di cambiare l’audio. Identifica VoiceOver su Apple TV e conserva le impostazioni di accessibilità utili.",
+      "sections": [
+        {
+          "heading": "Individua la schermata che parla",
+          "paragraphs": [
+            "Una voce che nomina i pulsanti evidenziati mentre usi Geo IPTV può essere un lettore dello schermo anziché la narrazione del programma. Torna a un menu Apple TV conosciuto e sposta una volta la selezione. Nota se le parole seguono l’elemento selezionato. Apple documenta che VoiceOver legge le voci di menu e i testi evidenziati su Apple TV 4K. Questa osservazione non dimostra un guasto del fornitore o un cambio di traccia audio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi lo stato attuale di VoiceOver",
+          "paragraphs": [
+            "Nell’interfaccia Apple TV documentata, apri Impostazioni, Accessibilità e poi VoiceOver per leggerne lo stato. Conserva una funzione di accessibilità necessaria a qualcuno in casa: non serve disattivarla per identificarla. Se il proprietario vuole modificarla, usa il comando documentato e annota la scelta iniziale. La navigazione può funzionare diversamente con VoiceOver; evita quindi di ripetere gesti sconosciuti sul telecomando."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi separatamente la voce del programma",
+          "paragraphs": [
+            "Se la voce compare soltanto nel programma, specificalo senza attribuirla al lettore dei menu. L’audiodescrizione racconta l’azione sullo schermo, mentre la lingua dei dialoghi è una questione diversa. Un lettore di terze parti può avere comandi e tracce propri. Annota le versioni di Apple TV e del lettore, la schermata e ciò che attiva la voce. Conserva l’accesso salvato: questa segnalazione non richiede né un ripristino né la condivisione di indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV en VoiceOver: leest Apple TV de menu’s voor?",
+      "excerpt": "Luister of de stem menunamen voorleest voordat je programma-audio verandert. Herken VoiceOver op Apple TV en behoud nuttige toegankelijkheidsinstellingen.",
+      "seo_title": "Geo IPTV en VoiceOver: leest Apple TV de menu’s voor?",
+      "seo_description": "Luister of de stem menunamen voorleest voordat je programma-audio verandert. Herken VoiceOver op Apple TV en behoud nuttige toegankelijkheidsinstellingen.",
+      "sections": [
+        {
+          "heading": "Bepaal welk scherm spreekt",
+          "paragraphs": [
+            "Een stem die gemarkeerde knoppen benoemt tijdens Geo IPTV-gebruik kan een schermlezer zijn in plaats van een verteller in het programma. Ga terug naar een bekend Apple TV-menu en verplaats de markering eenmaal. Let erop of de woorden het geselecteerde onderdeel volgen. Apple beschrijft dat VoiceOver gemarkeerde menu- en tekstonderdelen op Apple TV 4K voorleest. Deze waarneming bewijst geen storing bij de aanbieder of gewijzigde audiotrack."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige VoiceOver-instelling",
+          "paragraphs": [
+            "Open in de beschreven Apple TV-interface Instellingen, Toegankelijkheid en vervolgens VoiceOver om de huidige status te lezen. Behoud een toegankelijkheidsfunctie waarop iemand thuis vertrouwt; uitschakelen is niet nodig om haar te herkennen. Wil de eigenaar iets veranderen, gebruik dan de beschreven bediening en noteer de oorspronkelijke keuze. Navigatie kan met VoiceOver anders werken, dus herhaal geen onbekende gebaren op de afstandsbediening."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf gesproken programma-audio apart",
+          "paragraphs": [
+            "Klinkt de stem alleen in het programma, beschrijf dat dan zonder automatisch de menulezer aan te wijzen. Audiodescriptie vertelt wat er op het scherm gebeurt; de taal van de dialoog is een andere kwestie. Een externe speler kan eigen bediening en beschikbare tracks hebben. Noteer de Apple TV- en spelerversies, het betreffende scherm en wat de stem activeert. Behoud opgeslagen toegang; voor deze melding zijn een apparaatreset en het delen van privé-afspeeladressen niet nodig."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV e VoiceOver: a Apple TV está a ler os menus?",
+      "excerpt": "Ouça se a voz lê nomes dos menus antes de mudar o áudio. Identifique o VoiceOver na Apple TV e preserve as opções de acessibilidade úteis para a casa.",
+      "seo_title": "Geo IPTV e VoiceOver: a Apple TV está a ler os menus?",
+      "seo_description": "Ouça se a voz lê nomes dos menus antes de mudar o áudio. Identifique o VoiceOver na Apple TV e preserve as opções de acessibilidade úteis para a casa.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã que fala",
+          "paragraphs": [
+            "Uma voz que diz os nomes dos botões destacados durante o uso de Geo IPTV pode ser um leitor de ecrã, em vez da narração do programa. Volte a um menu conhecido da Apple TV e mova o destaque uma vez. Observe se as palavras acompanham o elemento selecionado. A Apple documenta que o VoiceOver lê itens de menu e texto destacados na Apple TV 4K. Esta observação não prova uma falha do fornecedor nem uma mudança de faixa áudio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a definição atual do VoiceOver",
+          "paragraphs": [
+            "Na interface documentada da Apple TV, abra Definições, Acessibilidade e depois VoiceOver para consultar o estado atual. Preserve uma função de acessibilidade de que alguém em casa precise; não é necessário desligá-la para a identificar. Se o proprietário quiser mudar algo, use o controlo documentado e anote a escolha original. A navegação pode funcionar de outra forma com o VoiceOver, por isso evite repetir gestos desconhecidos no comando."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva a voz do programa separadamente",
+          "paragraphs": [
+            "Se a voz aparecer apenas no programa, descreva isso sem a atribuir ao leitor dos menus. A audiodescrição narra a ação no ecrã; o idioma dos diálogos é outra questão. Um leitor de terceiros pode ter controlos e faixas próprios. Anote as versões da Apple TV e do leitor, o ecrã envolvido e o que desencadeia a voz. Preserve o acesso guardado; este relato não exige repor o dispositivo nem partilhar endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV и VoiceOver: Apple TV озвучивает меню?",
+      "excerpt": "Прежде чем менять звук передачи, послушайте, называет ли голос пункты меню. Определите работу VoiceOver на Apple TV и сохраните нужные настройки доступности.",
+      "seo_title": "Geo IPTV и VoiceOver: Apple TV озвучивает меню?",
+      "seo_description": "Прежде чем менять звук передачи, послушайте, называет ли голос пункты меню. Определите работу VoiceOver на Apple TV и сохраните нужные настройки доступности.",
+      "sections": [
+        {
+          "heading": "Определите, какой экран говорит",
+          "paragraphs": [
+            "Голос, называющий выделенные кнопки при использовании Geo IPTV, может принадлежать экранному диктору, а не передаче. Вернитесь в знакомое меню Apple TV и один раз переместите выделение. Отметьте, следуют ли произносимые слова за выбранным пунктом. Apple указывает, что VoiceOver читает выделенные пункты меню и текст на Apple TV 4K. Такое наблюдение не доказывает сбой поставщика или изменение звуковой дорожки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Посмотрите текущее состояние VoiceOver",
+          "paragraphs": [
+            "В описанном интерфейсе Apple TV откройте «Настройки», «Универсальный доступ», затем VoiceOver и посмотрите его состояние. Сохраните функцию доступности, на которую рассчитывает кто-либо дома: для определения причины отключать её не требуется. Если владелец хочет изменить настройку, используйте документированный переключатель и запишите исходный выбор. С VoiceOver навигация может работать иначе, поэтому не повторяйте незнакомые жесты на пульте."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Отдельно опишите голос в передаче",
+          "paragraphs": [
+            "Если голос слышен только внутри передачи, так и сообщите, не приписывая его диктору меню. Аудиодескрипция описывает действие на экране, а язык диалогов — отдельный вопрос. Сторонний проигрыватель может иметь собственные элементы управления и доступные дорожки. Запишите версии Apple TV и проигрывателя, нужный экран и действие, вызывающее голос. Сохраните доступ в приложении: для такого сообщения не нужны сброс устройства и передача личных адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV اور VoiceOver: کیا Apple TV مینو پڑھ رہا ہے؟",
+      "excerpt": "پروگرام کی آواز بدلنے سے پہلے سنیں کہ آواز مینو کے نام تو نہیں پڑھ رہی۔ Apple TV کے VoiceOver کو پہچانیں اور مفید رسائی کی ترتیبات برقرار رکھیں۔",
+      "seo_title": "Geo IPTV اور VoiceOver: کیا Apple TV مینو پڑھ رہا ہے؟",
+      "seo_description": "پروگرام کی آواز بدلنے سے پہلے سنیں کہ آواز مینو کے نام تو نہیں پڑھ رہی۔ Apple TV کے VoiceOver کو پہچانیں اور مفید رسائی کی ترتیبات برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کون سی اسکرین بول رہی ہے",
+          "paragraphs": [
+            "Geo IPTV استعمال کرتے ہوئے نمایاں بٹنوں کے نام سنائی دیں تو یہ پروگرام کی کمنٹری کے بجائے اسکرین ریڈر ہو سکتا ہے۔ Apple TV کے کسی مانوس مینو پر واپس جائیں اور انتخاب ایک بار آگے کریں۔ نوٹ کریں کہ بولے گئے الفاظ منتخب شے کے ساتھ بدلتے ہیں یا نہیں۔ Apple کے مطابق VoiceOver، Apple TV 4K پر نمایاں مینو اور متن پڑھتا ہے۔ یہ مشاہدہ فراہم کنندہ کی بندش یا آڈیو ٹریک بدلنے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "VoiceOver کی موجودہ حالت پڑھیں",
+          "paragraphs": [
+            "Apple TV کے بیان کردہ انٹرفیس میں ترتیبات، رسائی اور پھر VoiceOver کھول کر اس کی موجودہ حالت دیکھیں۔ گھر میں کسی کے لیے ضروری رسائی کی سہولت برقرار رکھیں؛ اسے پہچاننے کے لیے بند کرنا ضروری نہیں۔ مالک تبدیلی چاہے تو بیان کردہ کنٹرول استعمال کریں اور اصل انتخاب نوٹ کر لیں۔ VoiceOver کے ساتھ نیویگیشن مختلف ہو سکتی ہے، اس لیے ریموٹ پر نامانوس اشارے بار بار نہ آزمائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "پروگرام کی آواز الگ بیان کریں",
+          "paragraphs": [
+            "آواز صرف پروگرام کے اندر ہو تو یہی بات بتائیں، اسے خودبخود مینو ریڈر سے منسوب نہ کریں۔ آڈیو وضاحت اسکرین پر ہونے والے عمل کو بیان کرتی ہے؛ مکالمے کی زبان الگ سوال ہے۔ دوسرے ناشر کے پلیئر کے اپنے کنٹرول اور دستیاب ٹریک ہو سکتے ہیں۔ Apple TV اور پلیئر کے نسخے، متعلقہ اسکرین اور آواز شروع کرنے والا عمل لکھیں۔ محفوظ رسائی برقرار رکھیں؛ اس رپورٹ کے لیے نہ آلہ ری سیٹ کریں اور نہ نجی پلے بیک پتے شیئر کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV وVoiceOver: هل يقرأ Apple TV القوائم؟",
+      "excerpt": "استمع إلى أسماء عناصر القوائم قبل تغيير صوت البرنامج. ميّز VoiceOver على Apple TV، وحافظ على خيارات تسهيلات الاستخدام المفيدة لأفراد المنزل.",
+      "seo_title": "Geo IPTV وVoiceOver: هل يقرأ Apple TV القوائم؟",
+      "seo_description": "استمع إلى أسماء عناصر القوائم قبل تغيير صوت البرنامج. ميّز VoiceOver على Apple TV، وحافظ على خيارات تسهيلات الاستخدام المفيدة لأفراد المنزل.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة التي تتكلم",
+          "paragraphs": [
+            "قد يكون الصوت الذي يسمّي الأزرار المحددة أثناء استخدام Geo IPTV قارئ شاشة، وليس تعليقًا ضمن البرنامج. ارجع إلى قائمة مألوفة في Apple TV وانقل التحديد مرة واحدة. لاحظ هل تتبع الكلمات المنطوقة العنصر المحدد. توضح Apple أن VoiceOver يقرأ عناصر القوائم والنصوص المحددة على Apple TV 4K. هذه الملاحظة لا تثبت انقطاع خدمة المزوّد أو تبدّل المسار الصوتي."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ حالة VoiceOver الحالية",
+          "paragraphs": [
+            "في واجهة Apple TV الموثقة، افتح الإعدادات، ثم تسهيلات الاستخدام، ثم VoiceOver للاطلاع على حالته الحالية. حافظ على ميزة يعتمد عليها أحد أفراد المنزل؛ لا يلزم إيقافها لمجرد التعرف عليها. إذا أراد المالك تغييرًا، فاستخدم عنصر التحكم الموثق وسجّل الخيار الأصلي. قد تعمل طريقة التنقل بشكل مختلف مع VoiceOver، لذا تجنب تكرار إيماءات غير مألوفة على جهاز التحكم."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "صف صوت البرنامج بصورة منفصلة",
+          "paragraphs": [
+            "إذا ظهر الصوت داخل البرنامج فقط، فاذكر ذلك بدل افتراض أن قارئ القوائم سببه. يصف الوصف الصوتي الأحداث المعروضة، أما لغة الحوار فهي مسألة أخرى. قد تكون لمشغّل تابع لجهة أخرى عناصر تحكم ومسارات متاحة خاصة به. دوّن إصدار Apple TV والمشغّل، والشاشة المعنية، وما الذي يبدأ الصوت. احتفظ ببيانات الوصول المحفوظة؛ لا تحتاج لهذا البلاغ إلى إعادة ضبط الجهاز أو مشاركة عناوين تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV और VoiceOver: क्या Apple TV मेनू पढ़ रहा है?",
+      "excerpt": "कार्यक्रम की आवाज़ बदलने से पहले सुनें कि क्या आवाज़ मेनू के नाम पढ़ रही है। Apple TV पर VoiceOver पहचानें और उपयोगी सुलभता सेटिंग बनाए रखें।",
+      "seo_title": "Geo IPTV और VoiceOver: क्या Apple TV मेनू पढ़ रहा है?",
+      "seo_description": "कार्यक्रम की आवाज़ बदलने से पहले सुनें कि क्या आवाज़ मेनू के नाम पढ़ रही है। Apple TV पर VoiceOver पहचानें और उपयोगी सुलभता सेटिंग बनाए रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन-सी स्क्रीन बोलती है",
+          "paragraphs": [
+            "Geo IPTV इस्तेमाल करते समय चुने बटनों के नाम सुनाई दें तो वह कार्यक्रम का वर्णन नहीं, स्क्रीन रीडर हो सकता है। Apple TV के किसी परिचित मेनू पर लौटें और चयन एक बार आगे बढ़ाएँ। देखें कि बोले गए शब्द चुनी चीज़ के साथ बदलते हैं या नहीं। Apple के अनुसार VoiceOver, Apple TV 4K पर चुने मेनू और पाठ को पढ़ता है। यह अवलोकन प्रदाता की सेवा बंद होने या ऑडियो ट्रैक बदलने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "VoiceOver की मौजूदा स्थिति पढ़ें",
+          "paragraphs": [
+            "Apple TV के बताए इंटरफ़ेस में सेटिंग, सुलभता और फिर VoiceOver खोलकर उसकी मौजूदा स्थिति देखें। घर में किसी के लिए ज़रूरी सुलभता सुविधा बनाए रखें; उसे पहचानने के लिए बंद करना आवश्यक नहीं। मालिक बदलाव चाहता हो तो बताए नियंत्रण का उपयोग करें और मूल विकल्प लिख लें। VoiceOver के साथ नेविगेशन अलग हो सकता है, इसलिए रिमोट पर अनजान इशारे बार-बार न आज़माएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple VoiceOver",
+              "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "कार्यक्रम की आवाज़ अलग बताएँ",
+          "paragraphs": [
+            "आवाज़ केवल कार्यक्रम के भीतर आती हो तो यही बताएँ; उसे अपने-आप मेनू रीडर का असर न मानें। ऑडियो विवरण स्क्रीन पर हो रही घटनाएँ बताता है; संवाद की भाषा अलग सवाल है। किसी दूसरे प्रकाशक के प्लेयर के अपने नियंत्रण और उपलब्ध ट्रैक हो सकते हैं। Apple TV और प्लेयर के संस्करण, संबंधित स्क्रीन और आवाज़ शुरू करने वाला काम लिखें। सहेजी पहुँच बनाए रखें; इस रिपोर्ट के लिए न डिवाइस रीसेट करें और न निजी प्लेबैक पते साझा करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: VoiceOver on Apple TV 4K",
+      "url": "https://support.apple.com/en-ie/guide/tv/atvbfa4ff6cd/tvos"
+    },
+    {
+      "label": "Apple: audio descriptions on Apple TV 4K",
+      "url": "https://support.apple.com/en-mide/guide/tv/atvb372a82a4/tvos"
+    }
+  ]
+}

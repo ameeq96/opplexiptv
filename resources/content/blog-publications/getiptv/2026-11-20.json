@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-20",
+  "topic": "Identify built-in Google TV Streamer Ethernet versus a compatible Chromecast adapter before comparing Get IPTV network connectivity and provider setup.",
+  "primary_keyword": "Get IPTV Ethernet setup",
+  "slug": "getiptv-ethernet-identify-device-before-adapter",
+  "translations": {
+    "en": {
+      "title": "Get IPTV Ethernet setup: identify the Google TV device first",
+      "excerpt": "Check the Google TV hardware before assuming a network socket is available. Keep a Get IPTV wired-connection check separate from provider access and player costs.",
+      "seo_title": "Get IPTV Ethernet setup: identify the Google TV device first",
+      "seo_description": "Check the Google TV hardware before assuming a network socket is available. Keep a Get IPTV wired-connection check separate from provider access and player costs.",
+      "sections": [
+        {
+          "heading": "Identify the physical network connection",
+          "paragraphs": [
+            "A Get IPTV Ethernet setup question starts with the exact device, not only the Google TV name on screen. Google lists a built-in Ethernet socket for Google TV Streamer (4K). Chromecast with Google TV models use a compatible Ethernet adapter instead; an adapter may be a separate purchase. A television running Google TV can have different hardware, so consult its manufacturer rather than applying streaming-box instructions automatically."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Check the complete cable path",
+          "paragraphs": [
+            "For equipment that supports it, trace the network cable from a working router’s LAN port to the device’s Ethernet socket or its correctly matched adapter. Keep the power arrangement specified for that model. Google notes that Chromecast adapters differ by device, and an adapter cannot provide internet from a router that has no working internet connection. Read compatibility before obtaining accessories; a matching-looking plug alone is insufficient. Preserve the existing setup and note the displayed network message."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare connectivity and service separately",
+          "paragraphs": [
+            "If checking playback after a supported connection change, keep the player and permitted video the same and record the result. A cable does not guarantee uninterrupted playback, higher source resolution or restored account access. Confirm the selected Opplex or Filex service and order/setup state separately for Get IPTV. Any paid player licence can be a separate cost; ask about an unstated Filex connection allowance. Share the device model and connection path with support, without network passwords or private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV por Ethernet: identifica primero el dispositivo Google TV",
+      "excerpt": "Revisa el hardware Google TV antes de suponer que tiene puerto de red. Separa la conexión por cable de Get IPTV del acceso del proveedor y los costes del reproductor.",
+      "seo_title": "Get IPTV por Ethernet: identifica primero el dispositivo Google TV",
+      "seo_description": "Revisa el hardware Google TV antes de suponer que tiene puerto de red. Separa la conexión por cable de Get IPTV del acceso del proveedor y los costes del reproductor.",
+      "sections": [
+        {
+          "heading": "Identifica la conexión física de red",
+          "paragraphs": [
+            "Una consulta sobre Get IPTV por Ethernet empieza por el modelo exacto, no solo por el nombre Google TV de la pantalla. Google indica que Google TV Streamer (4K) incorpora un puerto Ethernet. Los modelos Chromecast con Google TV usan un adaptador Ethernet compatible; puede venderse aparte. Un televisor con Google TV puede tener otro hardware: consulta a su fabricante en vez de aplicar automáticamente las instrucciones de un dispositivo externo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Revisa todo el recorrido del cable",
+          "paragraphs": [
+            "En equipos compatibles, sigue el cable desde un puerto LAN de un router con internet hasta el puerto Ethernet del dispositivo o su adaptador adecuado. Conserva la alimentación indicada para ese modelo. Google advierte que los adaptadores Chromecast varían según el dispositivo y que no pueden proporcionar internet si el router carece de conexión. Comprueba la compatibilidad antes de adquirir accesorios: que un conector se parezca no basta. Conserva la configuración y anota el mensaje de red mostrado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara por separado conexión y servicio",
+          "paragraphs": [
+            "Si compruebas la reproducción tras un cambio de conexión compatible, mantén el mismo reproductor y vídeo permitido y anota el resultado. Un cable no garantiza reproducción ininterrumpida, mayor resolución de origen ni recuperación del acceso. Para Get IPTV, confirma aparte Opplex o Filex y el estado del pedido y la configuración. La licencia del reproductor puede tener coste separado; pregunta por los límites de conexiones Filex no indicados. Comparte el modelo y el recorrido de conexión con soporte, sin contraseñas de red ni direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV par Ethernet : identifier d’abord l’appareil Google TV",
+      "excerpt": "Vérifiez le matériel Google TV avant de supposer qu’un port réseau existe. Séparez la connexion filaire Get IPTV de l’accès fournisseur et des frais du lecteur.",
+      "seo_title": "Get IPTV par Ethernet : identifier d’abord l’appareil Google TV",
+      "seo_description": "Vérifiez le matériel Google TV avant de supposer qu’un port réseau existe. Séparez la connexion filaire Get IPTV de l’accès fournisseur et des frais du lecteur.",
+      "sections": [
+        {
+          "heading": "Identifier le raccordement réseau physique",
+          "paragraphs": [
+            "Une question Get IPTV par Ethernet commence par le modèle exact, pas seulement par le nom Google TV à l’écran. Google indique un port Ethernet intégré au Google TV Streamer (4K). Les modèles Chromecast avec Google TV utilisent un adaptateur Ethernet compatible, éventuellement vendu séparément. Un téléviseur sous Google TV peut avoir un matériel différent : consultez son fabricant au lieu d’appliquer automatiquement les instructions d’un boîtier externe."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifier tout le parcours du câble",
+          "paragraphs": [
+            "Pour un appareil compatible, suivez le câble depuis un port LAN d’un routeur ayant accès à internet jusqu’au port Ethernet de l’appareil ou à son adaptateur adapté. Conservez l’alimentation prévue pour ce modèle. Google précise que les adaptateurs Chromecast varient selon l’appareil et qu’un adaptateur ne fournit pas internet si le routeur n’y accède pas. Vérifiez la compatibilité avant d’acquérir un accessoire ; une prise ressemblante ne suffit pas. Préservez la configuration existante et notez le message réseau affiché."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer séparément connexion et service",
+          "paragraphs": [
+            "Lors d’un contrôle après un changement de connexion compatible, gardez le même lecteur et la même vidéo autorisée, puis notez le résultat. Un câble ne garantit ni lecture sans interruption, ni meilleure résolution source, ni rétablissement d’accès. Pour Get IPTV, vérifiez séparément Opplex ou Filex et l’état de commande et de configuration. Une licence du lecteur peut coûter séparément ; demandez les limites de connexions Filex non indiquées. Transmettez le modèle et le raccordement au support sans mot de passe réseau ni adresse privée de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Configurare Get IPTV via Ethernet: identifica prima il dispositivo Google TV",
+      "excerpt": "Controlla l’hardware Google TV prima di presumere che abbia una presa di rete. Separa il collegamento cablato Get IPTV dall’accesso del fornitore e dai costi del lettore.",
+      "seo_title": "Configurare Get IPTV via Ethernet: identifica prima il dispositivo Google TV",
+      "seo_description": "Controlla l’hardware Google TV prima di presumere che abbia una presa di rete. Separa il collegamento cablato Get IPTV dall’accesso del fornitore e dai costi del lettore.",
+      "sections": [
+        {
+          "heading": "Identifica la connessione di rete fisica",
+          "paragraphs": [
+            "Per configurare Get IPTV via Ethernet parti dal modello esatto, non soltanto dal nome Google TV sullo schermo. Google indica una porta Ethernet integrata in Google TV Streamer (4K). I modelli Chromecast con Google TV usano invece un adattatore Ethernet compatibile, eventualmente venduto a parte. Un televisore con Google TV può avere hardware diverso: consulta il produttore anziché applicare automaticamente le istruzioni di un dispositivo esterno."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla l’intero percorso del cavo",
+          "paragraphs": [
+            "Sui dispositivi compatibili segui il cavo da una porta LAN di un router con internet alla presa Ethernet del dispositivo o al suo adattatore corretto. Mantieni l’alimentazione prevista per quel modello. Google precisa che gli adattatori Chromecast variano secondo il dispositivo e non forniscono internet se il router non ha una connessione funzionante. Verifica la compatibilità prima di procurarti accessori: un connettore simile non basta. Conserva la configurazione esistente e annota il messaggio di rete visualizzato."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta separatamente connessione e servizio",
+          "paragraphs": [
+            "Se controlli la riproduzione dopo un cambio di collegamento supportato, usa lo stesso lettore e video consentito e annota il risultato. Un cavo non garantisce continuità, maggiore risoluzione della sorgente o ripristino dell’accesso. Per Get IPTV verifica separatamente Opplex o Filex e lo stato dell’ordine e della configurazione. La licenza del lettore può avere un costo distinto: chiedi i limiti di connessione Filex non indicati. Comunica all’assistenza modello e percorso della connessione senza password di rete o indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV via Ethernet: herken eerst het Google TV-apparaat",
+      "excerpt": "Controleer de Google TV-hardware voordat je een netwerkaansluiting verwacht. Houd een Get IPTV-kabelcontrole apart van aanbiederstoegang en spelerkosten.",
+      "seo_title": "Get IPTV via Ethernet: herken eerst het Google TV-apparaat",
+      "seo_description": "Controleer de Google TV-hardware voordat je een netwerkaansluiting verwacht. Houd een Get IPTV-kabelcontrole apart van aanbiederstoegang en spelerkosten.",
+      "sections": [
+        {
+          "heading": "Herken de fysieke netwerkaansluiting",
+          "paragraphs": [
+            "Een vraag over Get IPTV via Ethernet begint bij het exacte apparaat, niet alleen bij de naam Google TV op het scherm. Google vermeldt een ingebouwde Ethernetpoort op Google TV Streamer (4K). Chromecast met Google TV-modellen gebruiken een passende Ethernetadapter, mogelijk apart verkocht. Een televisie met Google TV kan andere hardware hebben: raadpleeg de fabrikant in plaats van automatisch instructies voor een losse streamer te volgen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de volledige kabelroute",
+          "paragraphs": [
+            "Volg bij ondersteunde apparatuur de kabel van een LAN-poort op een router met werkend internet naar de Ethernetpoort van het apparaat of de juiste adapter. Behoud de voeding die voor dat model is bedoeld. Google vermeldt dat Chromecast-adapters per apparaat verschillen en geen internet leveren wanneer de router geen werkende internetverbinding heeft. Controleer compatibiliteit voordat je accessoires aanschaft: een stekker die lijkt te passen is onvoldoende. Behoud de bestaande instellingen en noteer de getoonde netwerkmelding."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk verbinding en dienst afzonderlijk",
+          "paragraphs": [
+            "Gebruik bij een afspeelcontrole na een ondersteunde verbindingswijziging dezelfde speler en toegestane video en noteer het resultaat. Een kabel garandeert geen ononderbroken beeld, hogere bronresolutie of herstelde toegang. Controleer voor Get IPTV apart de gekozen Opplex- of Filex-dienst en bestel- en instelstatus. Een betaalde spelerlicentie kan apart kosten; vraag naar niet-vermelde Filex-verbindingslimieten. Deel model en aansluitroute met ondersteuning zonder netwerkwachtwoorden of privéafspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV por Ethernet: identifique primeiro o dispositivo Google TV",
+      "excerpt": "Confira o hardware Google TV antes de presumir que existe uma porta de rede. Separe a ligação por cabo Get IPTV do acesso do fornecedor e dos custos do leitor.",
+      "seo_title": "Get IPTV por Ethernet: identifique primeiro o dispositivo Google TV",
+      "seo_description": "Confira o hardware Google TV antes de presumir que existe uma porta de rede. Separe a ligação por cabo Get IPTV do acesso do fornecedor e dos custos do leitor.",
+      "sections": [
+        {
+          "heading": "Identifique a ligação física à rede",
+          "paragraphs": [
+            "Uma dúvida sobre Get IPTV por Ethernet começa pelo modelo exato, não apenas pelo nome Google TV no ecrã. A Google indica uma porta Ethernet integrada no Google TV Streamer (4K). Os modelos Chromecast com Google TV usam um adaptador Ethernet compatível, que pode ser vendido separadamente. Um televisor com Google TV pode ter outro hardware: consulte o fabricante em vez de aplicar automaticamente instruções de um aparelho externo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique todo o percurso do cabo",
+          "paragraphs": [
+            "Em equipamentos compatíveis, siga o cabo de uma porta LAN de um router com internet até à porta Ethernet do dispositivo ou ao adaptador correto. Mantenha a alimentação especificada para esse modelo. A Google esclarece que os adaptadores Chromecast variam conforme o aparelho e não fornecem internet se o router não tiver uma ligação funcional. Confira a compatibilidade antes de adquirir acessórios: uma ficha semelhante não basta. Preserve a configuração existente e anote a mensagem de rede apresentada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare ligação e serviço separadamente",
+          "paragraphs": [
+            "Se verificar a reprodução depois de uma alteração de ligação compatível, mantenha o mesmo leitor e vídeo permitido e registe o resultado. Um cabo não garante reprodução contínua, maior resolução da origem nem recuperação do acesso. Para Get IPTV, confirme separadamente Opplex ou Filex e o estado do pedido e da configuração. A licença do leitor pode ter custo separado; pergunte pelos limites de ligações Filex não indicados. Partilhe com o apoio o modelo e o percurso da ligação, sem palavras-passe de rede nem endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV по Ethernet: сначала определите устройство Google TV",
+      "excerpt": "Проверьте оборудование Google TV, прежде чем искать сетевой разъём. Отделяйте проводное подключение Get IPTV от доступа провайдера и оплаты плеера.",
+      "seo_title": "Get IPTV по Ethernet: сначала определите устройство Google TV",
+      "seo_description": "Проверьте оборудование Google TV, прежде чем искать сетевой разъём. Отделяйте проводное подключение Get IPTV от доступа провайдера и оплаты плеера.",
+      "sections": [
+        {
+          "heading": "Определите физическое подключение к сети",
+          "paragraphs": [
+            "Вопрос о Get IPTV по Ethernet начинается с точной модели, а не только с названия Google TV на экране. Google указывает встроенный порт Ethernet у Google TV Streamer (4K). Моделям Chromecast с Google TV нужен совместимый Ethernet-адаптер, который может продаваться отдельно. Телевизор с Google TV может иметь другое оборудование: обратитесь к его производителю вместо автоматического применения инструкций для внешней приставки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте весь путь кабеля",
+          "paragraphs": [
+            "Для совместимого оборудования проследите кабель от порта LAN роутера с работающим интернетом до Ethernet-порта устройства или правильно подобранного адаптера. Сохраните предусмотренное для модели питание. Google отмечает, что адаптеры Chromecast различаются по устройствам и не дают интернет, если у роутера нет рабочего подключения. До приобретения аксессуара проверьте совместимость: похожего штекера недостаточно. Сохраните существующую настройку и запишите сообщение о сети на экране."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравнивайте соединение и услугу отдельно",
+          "paragraphs": [
+            "Проверяя просмотр после поддерживаемой смены подключения, оставьте тот же плеер и разрешённое видео и запишите результат. Кабель не гарантирует непрерывность, повышение исходного разрешения или восстановление доступа. Для Get IPTV отдельно уточните выбранную услугу Opplex или Filex, статус заказа и настройки. Лицензия плеера может оплачиваться отдельно; неуказанное число подключений Filex нужно уточнить. Передайте поддержке модель и схему подключения без сетевых паролей и закрытых адресов просмотра."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کی ایتھرنیٹ ترتیب: پہلے Google TV آلہ پہچانیں",
+      "excerpt": "نیٹ ورک پورٹ فرض کرنے سے پہلے Google TV کا ہارڈویئر دیکھیں۔ Get IPTV کی تار والی کنکشن جانچ کو فراہم کنندہ کی رسائی اور پلیئر کی قیمت سے الگ رکھیں۔",
+      "seo_title": "Get IPTV کی ایتھرنیٹ ترتیب: پہلے Google TV آلہ پہچانیں",
+      "seo_description": "نیٹ ورک پورٹ فرض کرنے سے پہلے Google TV کا ہارڈویئر دیکھیں۔ Get IPTV کی تار والی کنکشن جانچ کو فراہم کنندہ کی رسائی اور پلیئر کی قیمت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "نیٹ ورک کا جسمانی کنکشن پہچانیں",
+          "paragraphs": [
+            "Get IPTV کی ایتھرنیٹ ترتیب کا سوال آلے کے عین ماڈل سے شروع ہوتا ہے، صرف اسکرین پر Google TV کے نام سے نہیں۔ Google کے مطابق Google TV Streamer (4K) میں ایتھرنیٹ پورٹ پہلے سے موجود ہے۔ Chromecast with Google TV کے ماڈل مطابقت رکھنے والا ایتھرنیٹ اڈاپٹر استعمال کرتے ہیں، جو الگ خریدنا پڑ سکتا ہے۔ Google TV چلانے والے ٹی وی کا ہارڈویئر مختلف ہو سکتا ہے؛ بیرونی آلے کی ہدایات خودبخود لاگو کرنے کے بجائے اس کے سازندے سے رجوع کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "کیبل کا پورا راستہ دیکھیں",
+          "paragraphs": [
+            "مطابقت رکھنے والے آلے میں کیبل کا راستہ کام کرتے انٹرنیٹ والے راؤٹر کی LAN پورٹ سے آلے کی ایتھرنیٹ پورٹ یا درست اڈاپٹر تک دیکھیں۔ اسی ماڈل کے لیے مقررہ بجلی کا انتظام برقرار رکھیں۔ Google بتاتا ہے کہ Chromecast کے اڈاپٹر ماڈل کے مطابق مختلف ہوتے ہیں، اور راؤٹر کا انٹرنیٹ نہ چلے تو اڈاپٹر انٹرنیٹ مہیا نہیں کر سکتا۔ سامان لینے سے پہلے مطابقت پڑھیں؛ صرف ملتا جلتا پلگ کافی نہیں۔ موجودہ ترتیب محفوظ رکھیں اور نظر آنے والا نیٹ ورک پیغام نوٹ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "کنکشن اور سروس الگ جانچیں",
+          "paragraphs": [
+            "مطابقت رکھنے والا کنکشن بدلنے کے بعد پلے بیک دیکھیں تو وہی پلیئر اور اجازت یافتہ ویڈیو رکھیں اور نتیجہ لکھیں۔ کیبل بلا تعطل پلے بیک، ماخذ کی زیادہ ریزولیوشن یا اکاؤنٹ کی رسائی کی بحالی کی ضمانت نہیں۔ Get IPTV کے لیے منتخب Opplex یا Filex سروس اور آرڈر و ترتیب کی حالت الگ تصدیق کریں۔ بامعاوضہ پلیئر لائسنس کی الگ قیمت ہو سکتی ہے؛ Filex کی غیر درج کنکشن حد پوچھیں۔ معاونت کو آلے کا ماڈل اور کنکشن کا راستہ بتائیں، نیٹ ورک کے پاس ورڈ یا نجی پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "توصيل Get IPTV عبر Ethernet: حدّد جهاز Google TV أولًا",
+      "excerpt": "افحص عتاد Google TV قبل افتراض وجود منفذ شبكة. افصل فحص اتصال Get IPTV السلكي عن وصول المزود وتكاليف المشغّل.",
+      "seo_title": "توصيل Get IPTV عبر Ethernet: حدّد جهاز Google TV أولًا",
+      "seo_description": "افحص عتاد Google TV قبل افتراض وجود منفذ شبكة. افصل فحص اتصال Get IPTV السلكي عن وصول المزود وتكاليف المشغّل.",
+      "sections": [
+        {
+          "heading": "حدّد وصلة الشبكة الفعلية",
+          "paragraphs": [
+            "يبدأ سؤال توصيل Get IPTV عبر Ethernet بطراز الجهاز الدقيق، لا باسم Google TV على الشاشة فقط. تذكر Google وجود منفذ Ethernet مدمج في Google TV Streamer (4K). تستخدم طرازات Chromecast مع Google TV محول Ethernet متوافقًا قد يُباع منفصلًا. وقد يختلف عتاد تلفاز يعمل بـ Google TV؛ راجع الشركة المصنعة بدل تطبيق تعليمات الجهاز الخارجي تلقائيًا."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افحص مسار الكابل كاملًا",
+          "paragraphs": [
+            "في الأجهزة المدعومة، تتبّع الكابل من منفذ LAN في موجه ذي إنترنت يعمل إلى منفذ Ethernet بالجهاز أو محوله المطابق. حافظ على توصيل الطاقة المحدد لهذا الطراز. توضح Google اختلاف محولات Chromecast حسب الجهاز، وأن المحول لا يوفر الإنترنت إذا كان اتصال الموجه نفسه لا يعمل. اقرأ التوافق قبل اقتناء الملحقات؛ تشابه شكل القابس لا يكفي. احتفظ بالإعداد الحالي ودوّن رسالة الشبكة المعروضة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن الاتصال والخدمة كلًا على حدة",
+          "paragraphs": [
+            "عند فحص التشغيل بعد تغيير اتصال مدعوم، استخدم المشغّل نفسه والفيديو المسموح نفسه وسجّل النتيجة. لا يضمن الكابل تشغيلًا متواصلًا أو دقة مصدر أعلى أو استعادة وصول الحساب. تحقق منفصلًا لـ Get IPTV من خدمة Opplex أو Filex المختارة وحالة الطلب والإعداد. قد تكون لترخيص المشغّل المدفوع تكلفة مستقلة؛ اسأل عن حد اتصالات Filex غير المعلن. شارك الدعم طراز الجهاز ومسار الاتصال دون كلمات مرور الشبكة أو عناوين تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV का Ethernet सेटअप: पहले Google TV डिवाइस पहचानें",
+      "excerpt": "नेटवर्क पोर्ट मान लेने से पहले Google TV हार्डवेयर जाँचें। Get IPTV के तार वाले कनेक्शन की जाँच को प्रदाता की पहुँच और प्लेयर की लागत से अलग रखें।",
+      "seo_title": "Get IPTV का Ethernet सेटअप: पहले Google TV डिवाइस पहचानें",
+      "seo_description": "नेटवर्क पोर्ट मान लेने से पहले Google TV हार्डवेयर जाँचें। Get IPTV के तार वाले कनेक्शन की जाँच को प्रदाता की पहुँच और प्लेयर की लागत से अलग रखें।",
+      "sections": [
+        {
+          "heading": "नेटवर्क का भौतिक कनेक्शन पहचानें",
+          "paragraphs": [
+            "Get IPTV के Ethernet सेटअप का सवाल सटीक डिवाइस मॉडल से शुरू होता है, केवल स्क्रीन पर Google TV नाम से नहीं। Google के अनुसार Google TV Streamer (4K) में Ethernet पोर्ट बना होता है। Chromecast with Google TV मॉडल संगत Ethernet अडैप्टर इस्तेमाल करते हैं, जो अलग बिक सकता है। Google TV वाले टेलीविज़न का हार्डवेयर अलग हो सकता है; बाहरी डिवाइस की हिदायतें अपने-आप लागू करने के बजाय उसके निर्माता से जानकारी लें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "केबल का पूरा रास्ता देखें",
+          "paragraphs": [
+            "संगत उपकरण में केबल को चालू इंटरनेट वाले राउटर के LAN पोर्ट से डिवाइस के Ethernet पोर्ट या सही अडैप्टर तक देखें। उस मॉडल के लिए तय बिजली की व्यवस्था बनाए रखें। Google बताता है कि Chromecast अडैप्टर मॉडल के अनुसार अलग होते हैं और राउटर का इंटरनेट बंद हो तो अडैप्टर इंटरनेट नहीं दे सकता। सामान लेने से पहले संगतता पढ़ें; केवल मिलता-जुलता प्लग पर्याप्त नहीं। मौजूदा सेटअप बचाएँ और स्क्रीन पर नेटवर्क संदेश लिखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "कनेक्शन और सेवा अलग जाँचें",
+          "paragraphs": [
+            "संगत कनेक्शन बदलने के बाद प्लेबैक जाँचें तो वही प्लेयर और अनुमत वीडियो रखें और नतीजा लिखें। केबल निर्बाध प्लेबैक, स्रोत की अधिक रिज़ॉल्यूशन या खाते की पहुँच बहाल होने की गारंटी नहीं है। Get IPTV के लिए चुनी Opplex या Filex सेवा तथा ऑर्डर और सेटअप की स्थिति अलग पक्की करें। सशुल्क प्लेयर लाइसेंस की अलग लागत हो सकती है; Filex की अनबताई कनेक्शन सीमा पूछें। सहायता को डिवाइस मॉडल और कनेक्शन का रास्ता बताएँ, नेटवर्क पासवर्ड या निजी प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help: Chromecast and Google TV Streamer specifications",
+      "url": "https://support.google.com/chromecast/answer/3046409?hl=en"
+    },
+    {
+      "label": "Google Streaming Help: compatible Chromecast Ethernet adapters",
+      "url": "https://support.google.com/chromecast/answer/6178505?hl=en"
+    }
+  ]
+}

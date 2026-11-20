@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-20",
+  "topic": "Read the existing Pixel roaming option and confirm carrier conditions before chargeable data use, separately from 5G Live IPTV player access or viewing-service availability.",
+  "primary_keyword": "5G Live IPTV roaming check",
+  "slug": "5g-roaming-check-carrier-setting-before-travel",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV roaming check: read the carrier setting before travel",
+      "excerpt": "Check the Pixel roaming setting and your carrier’s terms before using data away from home coverage. Keep network access separate from the viewing service.",
+      "seo_title": "5G Live IPTV roaming check: read the carrier setting before travel",
+      "seo_description": "Check the Pixel roaming setting and your carrier’s terms before using data away from home coverage. Keep network access separate from the viewing service.",
+      "sections": [
+        {
+          "heading": "Name the connection you are using",
+          "paragraphs": [
+            "A 5G Live IPTV roaming check starts with the phone’s connection, not a replacement player. After travelling, note whether you are using Wi-Fi or mobile data and whether ordinary internet access works on that same phone. Google describes roaming as sending data through another carrier’s network outside your carrier’s coverage. The service brand does not supply that mobile connection or establish that roaming is included."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read roaming without enabling it",
+          "paragraphs": [
+            "For a supported Pixel, open Settings, Network and internet, then SIMs and inspect the relevant SIM’s Roaming option. Read its present state rather than turning it on as a playback test. Options vary with the phone and Android version. Google warns that some carriers charge extra for roaming. Confirm the destination, coverage, allowance and charges with your carrier before permitting chargeable data use; retain any owner-managed limits."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Ask the right provider",
+          "paragraphs": [
+            "If ordinary mobile internet is unavailable, give the carrier the location and connection symptom. If internet works but the player shows an error, record the player name, version and exact message for service support. A working network alone does not confirm viewing-service availability at that location. Keep carrier terms separate from the IPTV order. There is no need to reset network settings, remove an eSIM or reinstall the player for this initial check. Exclude passwords and SIM identifiers from shared screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Roaming de 5G Live IPTV: consulta el ajuste antes de viajar",
+      "excerpt": "Consulta el roaming del Pixel y las condiciones del operador antes de usar datos fuera de su cobertura habitual. Separa la conexión de la suscripción de televisión.",
+      "seo_title": "Roaming de 5G Live IPTV: consulta el ajuste antes de viajar",
+      "seo_description": "Consulta el roaming del Pixel y las condiciones del operador antes de usar datos fuera de su cobertura habitual. Separa la conexión de la suscripción de televisión.",
+      "sections": [
+        {
+          "heading": "Identifica la conexión que utilizas",
+          "paragraphs": [
+            "Una comprobación del roaming para 5G Live IPTV empieza por la conexión del teléfono, no por sustituir el reproductor. Después de viajar, anota si usas Wi-Fi o datos móviles y si funciona el acceso normal a internet en ese mismo teléfono. Google describe el roaming como el envío de datos por la red de otro operador fuera de la cobertura del tuyo. La marca del servicio no proporciona esa conexión ni confirma que el roaming esté incluido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta el roaming sin activarlo",
+          "paragraphs": [
+            "En un Pixel compatible, abre Ajustes, Redes e Internet y después SIMs; consulta la opción de roaming de la SIM correspondiente. Lee su estado actual sin activarla como prueba de reproducción. Las opciones varían según el teléfono y Android. Google advierte de posibles cargos adicionales. Confirma con el operador el destino, la cobertura, el límite y los costes antes de permitir datos de pago; conserva los límites establecidos por el propietario."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Pregunta al proveedor adecuado",
+          "paragraphs": [
+            "Si no funciona internet móvil normal, comunica al operador la ubicación y el síntoma de conexión. Si internet funciona pero el reproductor muestra un error, anota su nombre, versión y mensaje exacto para el soporte del servicio. Una red operativa no confirma la disponibilidad del servicio de televisión en ese lugar. Separa las condiciones del operador del pedido IPTV. Para esta comprobación inicial no hace falta restablecer la red, eliminar una eSIM ni reinstalar el reproductor. Oculta contraseñas e identificadores SIM en las capturas compartidas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Itinérance 5G Live IPTV : lisez le réglage avant le voyage",
+      "excerpt": "Consultez l’itinérance du Pixel et les conditions de l’opérateur avant d’utiliser des données hors de sa couverture. Distinguez connexion et service de télévision.",
+      "seo_title": "Itinérance 5G Live IPTV : lisez le réglage avant le voyage",
+      "seo_description": "Consultez l’itinérance du Pixel et les conditions de l’opérateur avant d’utiliser des données hors de sa couverture. Distinguez connexion et service de télévision.",
+      "sections": [
+        {
+          "heading": "Identifiez la connexion utilisée",
+          "paragraphs": [
+            "Une vérification de l’itinérance pour 5G Live IPTV commence par la connexion du téléphone, pas par un autre lecteur. Après un déplacement, notez si vous utilisez le Wi-Fi ou les données mobiles et si l’accès habituel à internet fonctionne sur ce même téléphone. Google décrit l’itinérance comme l’envoi de données via le réseau d’un autre opérateur hors de la couverture du vôtre. La marque du service ne fournit pas cette connexion et ne prouve pas que l’itinérance est incluse."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le réglage sans activer l’itinérance",
+          "paragraphs": [
+            "Sur un Pixel compatible, ouvrez Paramètres, Réseau et Internet, puis Cartes SIM et consultez l’option d’itinérance de la SIM concernée. Lisez son état actuel sans l’activer pour tester la lecture. Les options varient selon le téléphone et Android. Google signale que certains opérateurs facturent l’itinérance en supplément. Confirmez destination, couverture, quota et frais auprès de l’opérateur avant tout usage payant ; conservez les limites définies par le propriétaire."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Interrogez le bon fournisseur",
+          "paragraphs": [
+            "Si l’accès mobile ordinaire ne fonctionne pas, indiquez à l’opérateur le lieu et le symptôme de connexion. Si internet fonctionne mais que le lecteur affiche une erreur, notez son nom, sa version et le message exact pour le support du service. Un réseau fonctionnel ne confirme pas la disponibilité du service de télévision à cet endroit. Distinguez contrat mobile et commande IPTV. Ce premier contrôle ne nécessite ni réinitialisation réseau, ni suppression d’eSIM, ni réinstallation. Masquez mots de passe et identifiants SIM dans les captures partagées."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Roaming di 5G Live IPTV: leggi l’impostazione prima del viaggio",
+      "excerpt": "Controlla il roaming del Pixel e le condizioni dell’operatore prima di usare dati fuori copertura. Tieni distinta la connessione dal servizio televisivo.",
+      "seo_title": "Roaming di 5G Live IPTV: leggi l’impostazione prima del viaggio",
+      "seo_description": "Controlla il roaming del Pixel e le condizioni dell’operatore prima di usare dati fuori copertura. Tieni distinta la connessione dal servizio televisivo.",
+      "sections": [
+        {
+          "heading": "Identifica la connessione in uso",
+          "paragraphs": [
+            "Un controllo del roaming per 5G Live IPTV parte dalla connessione del telefono, non da un altro lettore. Dopo un viaggio, annota se usi Wi-Fi o dati mobili e se su quello stesso telefono funziona il normale accesso a internet. Google descrive il roaming come l’invio di dati attraverso la rete di un altro operatore fuori dalla copertura del proprio. Il marchio del servizio non fornisce questa connessione e non dimostra che il roaming sia incluso."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi il roaming senza attivarlo",
+          "paragraphs": [
+            "Su un Pixel supportato, apri Impostazioni, Rete e Internet, quindi SIM e consulta l’opzione Roaming della SIM interessata. Leggi lo stato attuale senza attivarla per provare la riproduzione. Le opzioni cambiano secondo telefono e Android. Google avverte che alcuni operatori applicano costi aggiuntivi. Conferma destinazione, copertura, quantità disponibile e costi con l’operatore prima di consentire dati a pagamento; conserva i limiti impostati dal proprietario."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Chiedi al fornitore giusto",
+          "paragraphs": [
+            "Se il normale internet mobile non funziona, comunica all’operatore luogo e problema di connessione. Se internet funziona ma il lettore mostra un errore, annota nome, versione e messaggio esatto per l’assistenza del servizio. Una rete funzionante non conferma la disponibilità del servizio televisivo in quel luogo. Separa le condizioni mobili dall’ordine IPTV. Per questa prima verifica non serve reimpostare la rete, eliminare una eSIM o reinstallare il lettore. Nascondi password e identificativi SIM negli screenshot condivisi."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-roaming: lees de instelling vóór vertrek",
+      "excerpt": "Controleer de roaminginstelling van je Pixel en de voorwaarden van de provider voordat je buiten het eigen bereik data gebruikt. Houd verbinding en kijkdienst apart.",
+      "seo_title": "5G Live IPTV-roaming: lees de instelling vóór vertrek",
+      "seo_description": "Controleer de roaminginstelling van je Pixel en de voorwaarden van de provider voordat je buiten het eigen bereik data gebruikt. Houd verbinding en kijkdienst apart.",
+      "sections": [
+        {
+          "heading": "Bepaal welke verbinding je gebruikt",
+          "paragraphs": [
+            "Een roamingcontrole voor 5G Live IPTV begint bij de telefoonverbinding, niet bij een vervangende speler. Noteer na een reis of je wifi of mobiele data gebruikt en of gewone internettoegang op dezelfde telefoon werkt. Google omschrijft roaming als gegevensverkeer via het netwerk van een andere provider buiten het bereik van je eigen provider. De dienstnaam levert die mobiele verbinding niet en bewijst niet dat roaming inbegrepen is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees roaming zonder het in te schakelen",
+          "paragraphs": [
+            "Open op een ondersteunde Pixel Instellingen, Netwerk en internet en vervolgens Simkaarten; bekijk Roaming bij de betreffende simkaart. Lees de huidige status zonder roaming als afspeeltest aan te zetten. Opties verschillen per telefoon en Android-versie. Google waarschuwt dat providers extra roamingkosten kunnen rekenen. Bevestig bestemming, dekking, databundel en kosten bij de provider voordat je betaalde data toestaat; behoud door de eigenaar ingestelde limieten."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Stel de juiste aanbieder je vraag",
+          "paragraphs": [
+            "Werkt gewoon mobiel internet niet, geef de provider dan de locatie en het verbindingsprobleem. Werkt internet wel maar toont de speler een fout, noteer dan naam, versie en exacte melding voor de ondersteuning van de kijkdienst. Een werkend netwerk bevestigt geen beschikbaarheid van de kijkdienst op die locatie. Houd mobiele voorwaarden en de IPTV-bestelling gescheiden. Voor deze eerste controle hoef je geen netwerkinstellingen te resetten, eSIM te verwijderen of speler opnieuw te installeren. Verberg wachtwoorden en sim-identificatie in gedeelde schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Roaming do 5G Live IPTV: consulte a definição antes de viajar",
+      "excerpt": "Consulte o roaming do Pixel e as condições da operadora antes de usar dados fora da cobertura habitual. Separe o acesso à rede do serviço de televisão.",
+      "seo_title": "Roaming do 5G Live IPTV: consulte a definição antes de viajar",
+      "seo_description": "Consulte o roaming do Pixel e as condições da operadora antes de usar dados fora da cobertura habitual. Separe o acesso à rede do serviço de televisão.",
+      "sections": [
+        {
+          "heading": "Identifique a ligação que está a usar",
+          "paragraphs": [
+            "Uma verificação de roaming para 5G Live IPTV começa pela ligação do telefone, não por outro leitor. Depois de viajar, anote se usa Wi-Fi ou dados móveis e se o acesso normal à internet funciona nesse mesmo telefone. A Google descreve roaming como o envio de dados pela rede de outra operadora fora da cobertura da sua. A marca do serviço não fornece essa ligação móvel nem confirma que o roaming esteja incluído."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o roaming sem o ativar",
+          "paragraphs": [
+            "Num Pixel compatível, abra Definições, Rede e Internet e depois SIMs; consulte a opção Roaming do SIM relevante. Leia o estado atual sem a ativar para testar a reprodução. As opções variam com o telefone e o Android. A Google avisa que algumas operadoras cobram custos adicionais. Confirme destino, cobertura, franquia de dados e custos com a operadora antes de permitir dados pagos; preserve os limites definidos pelo proprietário."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Pergunte ao fornecedor certo",
+          "paragraphs": [
+            "Se a internet móvel normal não funcionar, informe a operadora sobre a localização e o sintoma de ligação. Se a internet funcionar mas o leitor mostrar um erro, anote o nome, a versão e a mensagem exata para o suporte do serviço. Uma rede funcional não confirma a disponibilidade do serviço de televisão nesse local. Separe as condições móveis da encomenda IPTV. Esta primeira verificação não exige repor a rede, remover um eSIM nem reinstalar o leitor. Oculte palavras-passe e identificadores SIM nas capturas partilhadas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Роуминг 5G Live IPTV: проверьте настройку до поездки",
+      "excerpt": "Посмотрите настройку роуминга Pixel и условия оператора до использования данных вне домашней зоны покрытия. Разделяйте мобильную сеть и услугу просмотра.",
+      "seo_title": "Роуминг 5G Live IPTV: проверьте настройку до поездки",
+      "seo_description": "Посмотрите настройку роуминга Pixel и условия оператора до использования данных вне домашней зоны покрытия. Разделяйте мобильную сеть и услугу просмотра.",
+      "sections": [
+        {
+          "heading": "Определите используемое подключение",
+          "paragraphs": [
+            "Проверка роуминга для 5G Live IPTV начинается с подключения телефона, а не с замены проигрывателя. После поездки отметьте, используете ли вы Wi-Fi или мобильные данные и работает ли обычный интернет на этом же телефоне. Google описывает роуминг как передачу данных через сеть другого оператора вне зоны покрытия своего. Название сервиса не предоставляет такую мобильную связь и не подтверждает включённый роуминг."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Посмотрите роуминг, не включая его",
+          "paragraphs": [
+            "На поддерживаемом Pixel откройте «Настройки», «Сеть и интернет», затем «SIM-карты» и посмотрите пункт роуминга нужной SIM. Прочитайте текущее состояние, не включая его ради проверки видео. Пункты различаются по телефону и версии Android. Google предупреждает о возможной дополнительной плате у некоторых операторов. До разрешения платной передачи данных уточните страну назначения, покрытие, объём и стоимость у оператора; сохраните установленные владельцем ограничения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Обратитесь к нужному поставщику",
+          "paragraphs": [
+            "Если обычный мобильный интернет недоступен, сообщите оператору местоположение и симптом подключения. Если интернет работает, но проигрыватель выдаёт ошибку, запишите название, версию и точный текст для поддержки сервиса. Работающая сеть сама по себе не подтверждает доступность услуги просмотра в этом месте. Отделяйте мобильные условия от заказа IPTV. Для начальной проверки не нужны сброс сети, удаление eSIM или переустановка проигрывателя. Скрывайте пароли и идентификаторы SIM на передаваемых снимках экрана."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV رومنگ: سفر سے پہلے آپریٹر کی ترتیب پڑھیں",
+      "excerpt": "اپنی کوریج سے باہر ڈیٹا استعمال کرنے سے پہلے Pixel کی رومنگ ترتیب اور آپریٹر کی شرائط دیکھیں۔ موبائل نیٹ ورک کی رسائی کو دیکھنے کی سروس سے الگ رکھیں۔",
+      "seo_title": "5G Live IPTV رومنگ: سفر سے پہلے آپریٹر کی ترتیب پڑھیں",
+      "seo_description": "اپنی کوریج سے باہر ڈیٹا استعمال کرنے سے پہلے Pixel کی رومنگ ترتیب اور آپریٹر کی شرائط دیکھیں۔ موبائل نیٹ ورک کی رسائی کو دیکھنے کی سروس سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "استعمال ہونے والا کنکشن پہچانیں",
+          "paragraphs": [
+            "5G Live IPTV کی رومنگ جانچ فون کے کنکشن سے شروع ہوتی ہے، متبادل پلیئر سے نہیں۔ سفر کے بعد نوٹ کریں کہ Wi-Fi استعمال ہو رہا ہے یا موبائل ڈیٹا، اور اسی فون پر عام انٹرنیٹ چل رہا ہے یا نہیں۔ Google کے مطابق اپنے آپریٹر کی کوریج سے باہر دوسرے آپریٹر کے نیٹ ورک پر ڈیٹا بھیجنا رومنگ ہے۔ سروس کا نام یہ موبائل کنکشن فراہم نہیں کرتا اور نہ ثابت کرتا ہے کہ رومنگ شامل ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رومنگ فعال کیے بغیر اس کی حالت پڑھیں",
+          "paragraphs": [
+            "معاونت یافتہ Pixel پر ترتیبات، نیٹ ورک اور انٹرنیٹ، پھر SIMs کھول کر متعلقہ سم کا رومنگ اختیار دیکھیں۔ پلے بیک آزمانے کے لیے اسے فعال نہ کریں؛ صرف موجودہ حالت پڑھیں۔ فون اور Android کے نسخے کے مطابق اختیارات بدل سکتے ہیں۔ Google کے مطابق کچھ آپریٹر رومنگ کی اضافی رقم لیتے ہیں۔ بامعاوضہ ڈیٹا کی اجازت سے پہلے آپریٹر سے منزل، کوریج، دستیاب ڈیٹا اور اخراجات کی تصدیق کریں؛ مالک کی مقرر کردہ حدود برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "درست فراہم کنندہ سے پوچھیں",
+          "paragraphs": [
+            "عام موبائل انٹرنیٹ دستیاب نہ ہو تو آپریٹر کو مقام اور کنکشن کی علامت بتائیں۔ انٹرنیٹ چل رہا ہو مگر پلیئر خطا دکھائے تو سروس معاونت کے لیے پلیئر کا نام، نسخہ اور اصل پیغام لکھیں۔ چلتا نیٹ ورک اکیلا اس مقام پر دیکھنے کی سروس کی دستیابی ثابت نہیں کرتا۔ آپریٹر کی شرائط IPTV آرڈر سے الگ رکھیں۔ ابتدائی جانچ کے لیے نہ نیٹ ورک ری سیٹ کریں، نہ eSIM ہٹائیں اور نہ پلیئر دوبارہ نصب کریں۔ شیئر کیے گئے اسکرین شاٹس میں پاس ورڈ اور سم کی شناختی تفصیلات چھپائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تجوال 5G Live IPTV: اقرأ إعداد المشغّل قبل السفر",
+      "excerpt": "راجع إعداد التجوال على Pixel وشروط شركة الاتصالات قبل استخدام البيانات خارج التغطية المعتادة. افصل اتصال الشبكة عن خدمة المشاهدة.",
+      "seo_title": "تجوال 5G Live IPTV: اقرأ إعداد المشغّل قبل السفر",
+      "seo_description": "راجع إعداد التجوال على Pixel وشروط شركة الاتصالات قبل استخدام البيانات خارج التغطية المعتادة. افصل اتصال الشبكة عن خدمة المشاهدة.",
+      "sections": [
+        {
+          "heading": "حدّد الاتصال الذي تستخدمه",
+          "paragraphs": [
+            "يبدأ فحص التجوال لاستخدام 5G Live IPTV باتصال الهاتف، لا باستبدال المشغّل. بعد السفر، دوّن هل تستخدم Wi-Fi أم بيانات الهاتف، وهل يعمل الإنترنت المعتاد على الهاتف نفسه. تصف Google التجوال بأنه إرسال البيانات عبر شبكة شركة أخرى خارج نطاق تغطية شركتك. اسم الخدمة لا يوفّر هذا الاتصال المحمول، ولا يؤكد أن التجوال مشمول في الباقة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ التجوال دون تفعيله",
+          "paragraphs": [
+            "على هاتف Pixel مدعوم، افتح الإعدادات، ثم الشبكة والإنترنت، ثم شرائح SIM، واقرأ خيار التجوال للشريحة المعنية. اطّلع على حالته الحالية دون تشغيله لاختبار الفيديو. تختلف الخيارات حسب الهاتف وإصدار Android. تنبّه Google إلى أن بعض الشركات تفرض رسومًا إضافية للتجوال. تأكد مع شركة الاتصالات من الوجهة والتغطية والحصة والتكاليف قبل السماح باستخدام بيانات مدفوعة؛ وحافظ على الحدود التي وضعها المالك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اسأل المزوّد المناسب",
+          "paragraphs": [
+            "إذا لم يعمل الإنترنت المحمول المعتاد، فأخبر شركة الاتصالات بالموقع وعارض الاتصال. وإذا عمل الإنترنت لكن ظهر خطأ في المشغّل، فسجّل اسم المشغّل وإصداره ونص الرسالة لدعم الخدمة. عمل الشبكة وحده لا يثبت توفر خدمة المشاهدة في ذلك الموقع. افصل شروط شركة الاتصالات عن طلب IPTV. لا يلزم لهذا الفحص الأولي إعادة ضبط الشبكة، أو حذف eSIM، أو إعادة تثبيت المشغّل. أخفِ كلمات المرور ومعرّفات الشريحة في لقطات الشاشة المشتركة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV रोमिंग: यात्रा से पहले ऑपरेटर की सेटिंग पढ़ें",
+      "excerpt": "अपनी सामान्य कवरेज से बाहर डेटा इस्तेमाल करने से पहले Pixel की रोमिंग सेटिंग और ऑपरेटर की शर्तें देखें। नेटवर्क पहुँच को देखने की सेवा से अलग रखें।",
+      "seo_title": "5G Live IPTV रोमिंग: यात्रा से पहले ऑपरेटर की सेटिंग पढ़ें",
+      "seo_description": "अपनी सामान्य कवरेज से बाहर डेटा इस्तेमाल करने से पहले Pixel की रोमिंग सेटिंग और ऑपरेटर की शर्तें देखें। नेटवर्क पहुँच को देखने की सेवा से अलग रखें।",
+      "sections": [
+        {
+          "heading": "इस्तेमाल हो रहा कनेक्शन पहचानें",
+          "paragraphs": [
+            "5G Live IPTV की रोमिंग जाँच फोन के कनेक्शन से शुरू होती है, किसी दूसरे प्लेयर से नहीं। यात्रा के बाद लिखें कि Wi-Fi इस्तेमाल हो रहा है या मोबाइल डेटा और क्या उसी फोन पर सामान्य इंटरनेट चल रहा है। Google के अनुसार अपने ऑपरेटर की कवरेज से बाहर दूसरे ऑपरेटर के नेटवर्क से डेटा भेजना रोमिंग है। सेवा का नाम यह मोबाइल कनेक्शन नहीं देता और न साबित करता है कि रोमिंग शामिल है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "रोमिंग चालू किए बिना उसकी स्थिति पढ़ें",
+          "paragraphs": [
+            "समर्थित Pixel पर सेटिंग, नेटवर्क और इंटरनेट, फिर SIM खोलकर संबंधित सिम का रोमिंग विकल्प देखें। वीडियो आज़माने के लिए उसे चालू न करें; केवल मौजूदा स्थिति पढ़ें। फोन और Android संस्करण के अनुसार विकल्प बदल सकते हैं। Google बताता है कि कुछ ऑपरेटर रोमिंग के अतिरिक्त शुल्क लेते हैं। सशुल्क डेटा की अनुमति से पहले ऑपरेटर से गंतव्य, कवरेज, डेटा सीमा और लागत पक्की करें; मालिक की लगाई सीमाएँ बनाए रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सही प्रदाता से पूछें",
+          "paragraphs": [
+            "सामान्य मोबाइल इंटरनेट उपलब्ध न हो तो ऑपरेटर को स्थान और कनेक्शन का लक्षण बताएँ। इंटरनेट चलता हो लेकिन प्लेयर त्रुटि दिखाए तो सेवा सहायता के लिए उसका नाम, संस्करण और ठीक संदेश लिखें। चलता नेटवर्क अकेले उस जगह देखने की सेवा की उपलब्धता साबित नहीं करता। ऑपरेटर की शर्तों को IPTV ऑर्डर से अलग रखें। शुरुआती जाँच के लिए न नेटवर्क रीसेट करें, न eSIM हटाएँ और न प्लेयर दोबारा इंस्टॉल करें। साझा स्क्रीनशॉट में पासवर्ड और सिम पहचान विवरण छिपाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel: mobile network and roaming settings",
+      "url": "https://support.google.com/pixelphone/answer/2926415?hl=en"
+    },
+    {
+      "label": "Google Pixel: roaming charges and mobile data",
+      "url": "https://support.google.com/pixelphone/answer/2819524?hl=en"
+    }
+  ]
+}

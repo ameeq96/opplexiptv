@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-20",
+  "topic": "Inspect one website’s Chrome cookie storage without deleting all sessions or confusing browser preferences with an Opplex or Filex IPTV Subscription order.",
+  "primary_keyword": "IPTV Subscription cookies",
+  "slug": "iptvsubscription-cookies-inspect-one-site-before-clearing",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription cookies: inspect one site before clearing data",
+      "excerpt": "Review one website’s stored data before clearing browser sessions. Keep your IPTV Subscription provider, order state and player costs in a separate record.",
+      "seo_title": "IPTV Subscription cookies: inspect one site before clearing data",
+      "seo_description": "Review one website’s stored data before clearing browser sessions. Keep your IPTV Subscription provider, order state and player costs in a separate record.",
+      "sections": [
+        {
+          "heading": "Separate browser memory from a plan",
+          "paragraphs": [
+            "If a website forgets a preference after a browser cleanup, note exactly what changed before placing another order. Cookies can preserve sign-in sessions and website preferences; they are browser records, not the purchased viewing term. An IPTV Subscription cookies check should therefore start with the affected website and browser. A missing remembered choice does not establish cancellation, failed payment or a need to renew your service."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspect the specific website first",
+          "paragraphs": [
+            "On desktop Chrome, Google documents opening the site-information control beside the address, then Cookies and site data and Manage on-device site data. Read the listed website before taking action; labels may vary by version. Inspection does not require deletion. Removing cookies can sign you out and remove preferences, so keep a trusted way to reopen your order available first. Do not clear every site or allow all third-party cookies simply to investigate one problem."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official documentation",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the service record separate",
+          "paragraphs": [
+            "Confirm whether the actual IPTV Subscription order is for Opplex or Filex, its duration and its recorded state through your existing trusted access route. Browser storage does not establish those terms. Keep any separate player licence cost distinct, and ask about an unstated Filex connection allowance. If help is needed, describe the changed preference and browser version without sending cookies, passwords or private order links."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Cookies de IPTV Subscription: revisa un sitio antes de borrar datos",
+      "excerpt": "Revisa los datos guardados de un sitio antes de borrar sesiones. Anota aparte el proveedor, el estado del pedido de IPTV Subscription y los costes del reproductor.",
+      "seo_title": "Cookies de IPTV Subscription: revisa un sitio antes de borrar datos",
+      "seo_description": "Revisa los datos guardados de un sitio antes de borrar sesiones. Anota aparte el proveedor, el estado del pedido de IPTV Subscription y los costes del reproductor.",
+      "sections": [
+        {
+          "heading": "Distingue la memoria del navegador del plan",
+          "paragraphs": [
+            "Si un sitio olvida una preferencia después de limpiar el navegador, anota qué cambió antes de hacer otro pedido. Las cookies pueden conservar sesiones iniciadas y preferencias; son registros del navegador, no el periodo de televisión comprado. Para revisar las cookies relacionadas con IPTV Subscription, identifica primero el sitio afectado y el navegador. Que desaparezca una opción recordada no demuestra una cancelación, un pago fallido ni la necesidad de renovar el servicio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa primero ese sitio concreto",
+          "paragraphs": [
+            "En Chrome para ordenador, Google explica cómo abrir la información del sitio junto a la dirección y después Cookies y datos de sitios y Gestionar datos de sitios en el dispositivo. Lee el sitio listado antes de actuar; los nombres pueden variar según la versión. Revisar no exige borrar. Eliminar cookies puede cerrar sesiones y quitar preferencias: conserva antes una forma fiable de abrir tu pedido. No borres todos los sitios ni permitas todas las cookies de terceros para investigar un solo problema."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentación oficial",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva aparte los datos del servicio",
+          "paragraphs": [
+            "Confirma mediante tu acceso habitual y fiable si el pedido de IPTV Subscription corresponde a Opplex o Filex, su duración y su estado registrado. El almacenamiento del navegador no determina esas condiciones. Separa cualquier licencia de pago del reproductor y pregunta por los límites de conexiones de Filex que no estén indicados. Para pedir ayuda, describe la preferencia modificada y la versión del navegador sin enviar cookies, contraseñas ni enlaces privados del pedido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Cookies IPTV Subscription : vérifier un site avant d’effacer les données",
+      "excerpt": "Consultez les données d’un site avant d’effacer les sessions. Notez séparément le fournisseur, l’état de commande IPTV Subscription et les frais du lecteur.",
+      "seo_title": "Cookies IPTV Subscription : vérifier un site avant d’effacer les données",
+      "seo_description": "Consultez les données d’un site avant d’effacer les sessions. Notez séparément le fournisseur, l’état de commande IPTV Subscription et les frais du lecteur.",
+      "sections": [
+        {
+          "heading": "Distinguer la mémoire du navigateur de l’offre",
+          "paragraphs": [
+            "Si un site oublie une préférence après un nettoyage du navigateur, notez le changement précis avant de repasser commande. Les cookies peuvent conserver une session connectée et des préférences ; ce sont des données du navigateur, pas la durée de télévision achetée. Pour examiner les cookies liés à IPTV Subscription, commencez par identifier le site concerné et le navigateur. Une préférence oubliée ne prouve ni une annulation, ni un paiement échoué, ni la nécessité de renouveler le service."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner d’abord le site concerné",
+          "paragraphs": [
+            "Dans Chrome sur ordinateur, Google indique d’ouvrir les informations du site près de l’adresse, puis Cookies et données des sites et Gérer les données des sites sur l’appareil. Lisez le site affiché avant toute action ; les libellés peuvent varier. Consulter ne nécessite aucune suppression. Effacer des cookies peut vous déconnecter et supprimer des préférences : gardez d’abord un moyen fiable de retrouver la commande. N’effacez pas tous les sites et n’autorisez pas tous les cookies tiers pour examiner un seul problème."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentation officielle",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Garder un relevé distinct du service",
+          "paragraphs": [
+            "Vérifiez par votre accès habituel et fiable si la commande IPTV Subscription concerne Opplex ou Filex, sa durée et son état enregistré. Le stockage du navigateur ne détermine pas ces conditions. Distinguez les éventuels frais de licence du lecteur et demandez les limites de connexions Filex non précisées. Pour obtenir de l’aide, décrivez la préférence modifiée et la version du navigateur sans envoyer de cookies, mots de passe ou liens privés de commande."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Cookie di IPTV Subscription: controlla un sito prima di cancellare dati",
+      "excerpt": "Esamina i dati di un sito prima di cancellare le sessioni. Annota separatamente fornitore, stato dell’ordine IPTV Subscription ed eventuali costi del lettore.",
+      "seo_title": "Cookie di IPTV Subscription: controlla un sito prima di cancellare dati",
+      "seo_description": "Esamina i dati di un sito prima di cancellare le sessioni. Annota separatamente fornitore, stato dell’ordine IPTV Subscription ed eventuali costi del lettore.",
+      "sections": [
+        {
+          "heading": "Distingui la memoria del browser dall’abbonamento",
+          "paragraphs": [
+            "Se un sito dimentica una preferenza dopo la pulizia del browser, annota cosa è cambiato prima di effettuare un altro ordine. I cookie possono conservare sessioni di accesso e preferenze: sono dati del browser, non la durata dell’abbonamento IPTV acquistato. Per controllare i cookie relativi a IPTV Subscription, identifica prima il sito interessato e il browser. Una scelta non più ricordata non dimostra annullamento, pagamento fallito o necessità di rinnovare il servizio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Esamina prima il singolo sito",
+          "paragraphs": [
+            "Su Chrome per computer, Google descrive il comando delle informazioni sul sito accanto all’indirizzo, seguito da Cookie e dati dei siti e Gestisci dati dei siti sul dispositivo. Leggi il sito elencato prima di agire; le etichette possono cambiare con la versione. Per controllare non serve cancellare. Rimuovere cookie può disconnetterti ed eliminare preferenze: conserva prima un modo affidabile per riaprire l’ordine. Non cancellare tutti i siti e non consentire tutti i cookie di terze parti per indagare un solo problema."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentazione ufficiale",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Tieni separati i dati del servizio",
+          "paragraphs": [
+            "Verifica dal tuo consueto accesso affidabile se l’ordine IPTV Subscription riguarda Opplex o Filex, la durata e lo stato registrato. I dati del browser non stabiliscono queste condizioni. Separa l’eventuale licenza a pagamento del lettore e chiedi i limiti di connessione Filex non indicati. Per ricevere aiuto, descrivi la preferenza cambiata e la versione del browser senza inviare cookie, password o collegamenti privati dell’ordine."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-cookies: bekijk één site voordat je gegevens wist",
+      "excerpt": "Bekijk de opgeslagen gegevens van één website voordat je sessies wist. Houd aanbieder, bestelstatus van IPTV Subscription en eventuele spelerkosten apart.",
+      "seo_title": "IPTV Subscription-cookies: bekijk één site voordat je gegevens wist",
+      "seo_description": "Bekijk de opgeslagen gegevens van één website voordat je sessies wist. Houd aanbieder, bestelstatus van IPTV Subscription en eventuele spelerkosten apart.",
+      "sections": [
+        {
+          "heading": "Onderscheid browsergeheugen van een abonnement",
+          "paragraphs": [
+            "Vergeet een website een voorkeur na het opschonen van de browser, noteer dan precies wat veranderde voordat je opnieuw bestelt. Cookies kunnen aanmeldsessies en sitevoorkeuren bewaren; het zijn browsergegevens, niet de gekochte kijkperiode. Begin een controle van cookies rond IPTV Subscription daarom bij de betreffende website en browser. Een verdwenen onthouden keuze bewijst geen opzegging, mislukte betaling of noodzaak om de dienst te verlengen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk eerst de betreffende website",
+          "paragraphs": [
+            "Voor Chrome op een computer beschrijft Google de site-informatie naast het adres, gevolgd door Cookies en sitegegevens en Sitegegevens op apparaat beheren. Lees eerst welke website wordt genoemd; benamingen kunnen per versie verschillen. Alleen bekijken vereist geen verwijdering. Cookies wissen kan je afmelden en voorkeuren verwijderen: zorg eerst voor een vertrouwde manier om je bestelling opnieuw te openen. Wis niet alle websites en sta niet alle cookies van derden toe om één probleem te onderzoeken."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële documentatie",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Bewaar dienstgegevens afzonderlijk",
+          "paragraphs": [
+            "Controleer via je bestaande vertrouwde toegang of de IPTV Subscription-bestelling Opplex of Filex betreft, wat de looptijd is en welke status is vastgelegd. Browseropslag bepaalt die voorwaarden niet. Houd eventuele afzonderlijke licentiekosten van de speler apart en vraag naar niet-vermelde Filex-verbindingslimieten. Beschrijf bij een hulpvraag de gewijzigde voorkeur en browserversie zonder cookies, wachtwoorden of privébestellinks te versturen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Cookies da IPTV Subscription: examine um site antes de apagar dados",
+      "excerpt": "Consulte os dados de um site antes de apagar sessões. Registe à parte o fornecedor, o estado do pedido IPTV Subscription e eventuais custos do leitor.",
+      "seo_title": "Cookies da IPTV Subscription: examine um site antes de apagar dados",
+      "seo_description": "Consulte os dados de um site antes de apagar sessões. Registe à parte o fornecedor, o estado do pedido IPTV Subscription e eventuais custos do leitor.",
+      "sections": [
+        {
+          "heading": "Separe a memória do navegador da assinatura",
+          "paragraphs": [
+            "Se um site esquecer uma preferência após uma limpeza do navegador, anote exatamente o que mudou antes de fazer outro pedido. Os cookies podem guardar sessões iniciadas e preferências; são dados do navegador, não o período de televisão comprado. A verificação dos cookies relacionados com IPTV Subscription começa, por isso, no site afetado e no navegador. Uma escolha esquecida não demonstra cancelamento, pagamento falhado nem necessidade de renovar a assinatura IPTV."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examine primeiro o site específico",
+          "paragraphs": [
+            "No Chrome para computador, a Google descreve o controlo de informações do site junto ao endereço, seguido de Cookies e dados de sites e Gerir dados de sites no dispositivo. Leia o site listado antes de agir; os nomes podem variar conforme a versão. Consultar não exige apagar. Remover cookies pode terminar sessões e eliminar preferências: guarde primeiro uma forma fiável de voltar ao pedido. Não apague todos os sites nem permita todos os cookies de terceiros para investigar um único problema."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Documentação oficial",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Guarde separadamente o registo do serviço",
+          "paragraphs": [
+            "Confirme pelo seu acesso habitual e fiável se o pedido IPTV Subscription corresponde a Opplex ou Filex, a duração e o estado registado. O armazenamento do navegador não define essas condições. Separe uma eventual licença paga do leitor e pergunte pelos limites de ligações Filex não indicados. Para pedir ajuda, descreva a preferência alterada e a versão do navegador sem enviar cookies, palavras-passe ou ligações privadas do pedido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Файлы cookie IPTV Subscription: проверьте один сайт перед очисткой",
+      "excerpt": "Сначала изучите данные одного сайта, сохранив сеансы браузера. Отдельно запишите провайдера, статус заказа IPTV Subscription и возможную плату за плеер.",
+      "seo_title": "Файлы cookie IPTV Subscription: проверьте один сайт перед очисткой",
+      "seo_description": "Сначала изучите данные одного сайта, сохранив сеансы браузера. Отдельно запишите провайдера, статус заказа IPTV Subscription и возможную плату за плеер.",
+      "sections": [
+        {
+          "heading": "Отделите память браузера от подписки",
+          "paragraphs": [
+            "Если после очистки браузера сайт забыл настройку, сначала запишите, что именно изменилось, а не оформляйте новый заказ. Файлы cookie могут сохранять вход и предпочтения сайта; это данные браузера, а не оплаченный срок просмотра. Поэтому проверку cookie, связанных с IPTV Subscription, начинайте с конкретного сайта и браузера. Исчезновение сохранённого выбора не доказывает отмену, неудачный платёж или необходимость продления услуги."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сначала изучите конкретный сайт",
+          "paragraphs": [
+            "Для Chrome на компьютере Google описывает значок информации о сайте рядом с адресом, затем разделы файлов cookie и данных сайтов и управления данными сайтов на устройстве. Прежде чем действовать, прочитайте название сайта; подписи зависят от версии. Просмотр не требует удаления. Очистка cookie может завершить вход и удалить настройки: заранее сохраните надёжный способ снова открыть заказ. Не очищайте все сайты и не разрешайте все сторонние cookie ради проверки одной проблемы."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная документация",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Храните сведения об услуге отдельно",
+          "paragraphs": [
+            "Через привычный надёжный способ доступа уточните, относится ли заказ IPTV Subscription к Opplex или Filex, каковы срок и записанный статус. Хранилище браузера не определяет эти условия. Отдельно учитывайте возможную лицензию плеера и уточняйте неуказанное число подключений Filex. Обращаясь за помощью, опишите изменившуюся настройку и версию браузера, не отправляя cookie, пароли или закрытые ссылки заказа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی کوکیز: ڈیٹا مٹانے سے پہلے ایک سائٹ دیکھیں",
+      "excerpt": "براؤزر کے سیشن مٹانے سے پہلے ایک ویب سائٹ کا محفوظ ڈیٹا دیکھیں۔ IPTV Subscription کے فراہم کنندہ، آرڈر کی حالت اور پلیئر کی قیمت الگ نوٹ کریں۔",
+      "seo_title": "IPTV Subscription کی کوکیز: ڈیٹا مٹانے سے پہلے ایک سائٹ دیکھیں",
+      "seo_description": "براؤزر کے سیشن مٹانے سے پہلے ایک ویب سائٹ کا محفوظ ڈیٹا دیکھیں۔ IPTV Subscription کے فراہم کنندہ، آرڈر کی حالت اور پلیئر کی قیمت الگ نوٹ کریں۔",
+      "sections": [
+        {
+          "heading": "براؤزر کی یادداشت اور پیکیج الگ رکھیں",
+          "paragraphs": [
+            "براؤزر کی صفائی کے بعد ویب سائٹ کوئی ترجیح بھول جائے تو دوسرا آرڈر دینے سے پہلے واضح لکھیں کہ کیا بدلا۔ کوکیز سائن اِن سیشن اور سائٹ کی ترجیحات محفوظ رکھ سکتی ہیں؛ یہ براؤزر کا ریکارڈ ہے، خریدی ہوئی دیکھنے کی مدت نہیں۔ اس لیے IPTV Subscription سے متعلق کوکیز کی جانچ متاثرہ ویب سائٹ اور براؤزر سے شروع کریں۔ محفوظ انتخاب غائب ہونا نہ منسوخی ثابت کرتا ہے، نہ ادائیگی کی ناکامی، اور نہ سروس کی تجدید کی ضرورت۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "پہلے متعلقہ ویب سائٹ کا معائنہ کریں",
+          "paragraphs": [
+            "کمپیوٹر کے Chrome کے لیے Google پتے کے پاس سائٹ کی معلومات، پھر کوکیز اور سائٹ کا ڈیٹا، اور آلے پر سائٹ کے ڈیٹا کے انتظام کا راستہ بتاتا ہے۔ کارروائی سے پہلے درج سائٹ پڑھیں؛ ورژن کے مطابق نام بدل سکتے ہیں۔ صرف دیکھنے کے لیے کچھ مٹانا ضروری نہیں۔ کوکیز ہٹانے سے سائن آؤٹ ہو سکتا ہے اور ترجیحات مٹ سکتی ہیں؛ پہلے آرڈر دوبارہ کھولنے کا قابل اعتماد طریقہ محفوظ رکھیں۔ ایک مسئلے کی جانچ کے لیے نہ تمام سائٹس کا ڈیٹا مٹائیں اور نہ تمام تیسرے فریق کی کوکیز کی اجازت دیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "سرکاری دستاویزات",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "سروس کا ریکارڈ الگ محفوظ رکھیں",
+          "paragraphs": [
+            "اپنے پہلے سے قابل اعتماد رسائی کے طریقے سے تصدیق کریں کہ IPTV Subscription کا اصل آرڈر Opplex کا ہے یا Filex کا، مدت کیا ہے اور درج حالت کیا ہے۔ براؤزر کا محفوظ ڈیٹا یہ شرائط طے نہیں کرتا۔ پلیئر کی ممکنہ الگ لائسنس فیس کو الگ رکھیں اور Filex کی غیر درج کنکشن حد پوچھیں۔ مدد چاہیے تو بدلی ہوئی ترجیح اور براؤزر کا ورژن بتائیں؛ کوکیز، پاس ورڈ یا آرڈر کے نجی روابط نہ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ملفات ارتباط IPTV Subscription: افحص موقعًا قبل مسح البيانات",
+      "excerpt": "راجع بيانات موقع واحد قبل حذف جلسات المتصفح. سجّل منفصلًا مزود IPTV Subscription وحالة الطلب وأي تكلفة لترخيص المشغّل.",
+      "seo_title": "ملفات ارتباط IPTV Subscription: افحص موقعًا قبل مسح البيانات",
+      "seo_description": "راجع بيانات موقع واحد قبل حذف جلسات المتصفح. سجّل منفصلًا مزود IPTV Subscription وحالة الطلب وأي تكلفة لترخيص المشغّل.",
+      "sections": [
+        {
+          "heading": "افصل ذاكرة المتصفح عن الاشتراك",
+          "paragraphs": [
+            "إذا نسي موقع تفضيلًا بعد تنظيف المتصفح، فدوّن ما تغيّر تحديدًا قبل تقديم طلب آخر. قد تحتفظ ملفات الارتباط بجلسات الدخول وتفضيلات الموقع؛ وهي سجلات للمتصفح وليست مدة المشاهدة المشتراة. لذلك ابدأ فحص ملفات الارتباط المتعلقة بـ IPTV Subscription بتحديد الموقع المتأثر والمتصفح. اختفاء اختيار محفوظ لا يثبت إلغاء الاشتراك أو فشل الدفع أو ضرورة تجديد الخدمة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "افحص الموقع المعني أولًا",
+          "paragraphs": [
+            "تشرح Google في Chrome للكمبيوتر فتح معلومات الموقع بجانب العنوان، ثم ملفات تعريف الارتباط وبيانات المواقع، ثم إدارة بيانات المواقع على الجهاز. اقرأ الموقع المدرج قبل اتخاذ إجراء؛ قد تختلف المسميات حسب الإصدار. الفحص وحده لا يتطلب الحذف. قد يؤدي حذف ملفات الارتباط إلى تسجيل خروجك وإزالة التفضيلات؛ احتفظ أولًا بطريقة موثوقة لإعادة فتح طلبك. لا تمسح بيانات جميع المواقع ولا تسمح بكل ملفات ارتباط الجهات الخارجية لمجرد بحث مشكلة واحدة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الوثائق الرسمية",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "احتفظ بسجل الخدمة منفصلًا",
+          "paragraphs": [
+            "تحقق عبر وسيلة وصولك الموثوقة المعتادة مما إذا كان طلب IPTV Subscription يخص Opplex أو Filex، ومن مدته وحالته المسجلة. تخزين المتصفح لا يحدد هذه الشروط. افصل أي تكلفة مستقلة لترخيص المشغّل، واسأل عن حد اتصالات Filex غير المذكور. عند طلب المساعدة، صف التفضيل المتغير وإصدار المتصفح دون إرسال ملفات ارتباط أو كلمات مرور أو روابط طلب خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription कुकीज़: डेटा मिटाने से पहले एक साइट जाँचें",
+      "excerpt": "ब्राउज़र सत्र मिटाने से पहले एक वेबसाइट का सहेजा डेटा देखें। IPTV Subscription प्रदाता, ऑर्डर की स्थिति और प्लेयर की लागत अलग लिखें।",
+      "seo_title": "IPTV Subscription कुकीज़: डेटा मिटाने से पहले एक साइट जाँचें",
+      "seo_description": "ब्राउज़र सत्र मिटाने से पहले एक वेबसाइट का सहेजा डेटा देखें। IPTV Subscription प्रदाता, ऑर्डर की स्थिति और प्लेयर की लागत अलग लिखें।",
+      "sections": [
+        {
+          "heading": "ब्राउज़र की याददाश्त और प्लान अलग रखें",
+          "paragraphs": [
+            "ब्राउज़र साफ़ करने के बाद वेबसाइट कोई पसंद भूल जाए तो नया ऑर्डर देने से पहले ठीक-ठीक लिखें कि क्या बदला। कुकीज़ लॉगिन सत्र और वेबसाइट की पसंद सहेज सकती हैं; वे ब्राउज़र के रिकॉर्ड हैं, खरीदी हुई देखने की अवधि नहीं। इसलिए IPTV Subscription से जुड़ी कुकीज़ की जाँच प्रभावित वेबसाइट और ब्राउज़र पहचानने से शुरू करें। सहेजा विकल्प गायब होना न रद्द होने, न भुगतान विफल होने और न सेवा के नवीनीकरण की ज़रूरत का प्रमाण है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहले उसी वेबसाइट को देखें",
+          "paragraphs": [
+            "कंप्यूटर के Chrome के लिए Google पते के पास साइट की जानकारी, फिर कुकीज़ और साइट डेटा तथा डिवाइस पर साइट डेटा प्रबंधित करने का रास्ता बताता है। कार्रवाई से पहले सूची में साइट का नाम पढ़ें; संस्करण के अनुसार शब्द बदल सकते हैं। केवल देखने के लिए मिटाना ज़रूरी नहीं। कुकीज़ हटाने से लॉगआउट हो सकता है और पसंद मिट सकती हैं; पहले अपना ऑर्डर फिर खोलने का भरोसेमंद तरीका सहेजें। एक समस्या जाँचने के लिए न सभी साइटों का डेटा मिटाएँ और न सभी तीसरे पक्ष की कुकीज़ की अनुमति दें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "आधिकारिक दस्तावेज़",
+              "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "सेवा का रिकॉर्ड अलग रखें",
+          "paragraphs": [
+            "अपने मौजूदा भरोसेमंद पहुँच तरीके से पुष्टि करें कि IPTV Subscription का असल ऑर्डर Opplex का है या Filex का, अवधि और दर्ज स्थिति क्या है। ब्राउज़र का सहेजा डेटा ये शर्तें तय नहीं करता। प्लेयर के संभावित अलग लाइसेंस शुल्क को अलग रखें और Filex की अनबताई कनेक्शन सीमा पूछें। मदद चाहिए तो बदली पसंद और ब्राउज़र संस्करण बताएँ; कुकीज़, पासवर्ड या निजी ऑर्डर लिंक न भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: cookies and site data controls",
+      "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"
+    }
+  ]
+}
