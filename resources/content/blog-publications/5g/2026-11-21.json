@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-21",
+  "topic": "Read Pixel media volume and audio output separately from ring, call and vibration settings during a 5G Live IPTV sound check without erasing saved player data.",
+  "primary_keyword": "5G Live IPTV media volume",
+  "slug": "5g-media-volume-ring-call-and-output-controls",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV media volume: a ringtone is a different control",
+      "excerpt": "Read the Pixel media slider and audio destination before changing unrelated sound settings. Keep a quiet programme separate from service access.",
+      "seo_title": "5G Live IPTV media volume: a ringtone is a different control",
+      "seo_description": "Read the Pixel media slider and audio destination before changing unrelated sound settings. Keep a quiet programme separate from service access.",
+      "sections": [
+        {
+          "heading": "Identify the sound you are comparing",
+          "paragraphs": [
+            "A 5G Live IPTV media volume check starts with the control label. A loud ringtone does not show how loudly a video will play. Keep the same permitted programme selected and note whether sound is expected from the phone speaker or headphones. Distinguish quiet audio from a missing language track and from a player that cannot open. Those observations need different questions, not an immediate replacement subscription."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the labelled media control",
+          "paragraphs": [
+            "On a supported Pixel, Google documents pressing a volume button and opening the Menu or More control to see separate sliders. Media volume covers videos and other media; call, ring, notification and alarm levels are separate. Note the displayed media level before one small adjustment at a comfortable volume. Do not raise every slider or alter important alerts just to hear a programme. Google also distinguishes Media vibration from media audio volume. Labels and controls can vary by device."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel volume controls",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare one result at a time",
+          "paragraphs": [
+            "Return to the same player and record whether the sound changed. Check the displayed audio destination rather than assuming the phone speaker is selected. If comparing another permitted clip, pause the first one and keep the output consistent. If only the player remains silent, report that narrower result with the phone, Android and player versions. Exclude private playback addresses. Volume changes do not add unavailable tracks or renew service access, and this check does not require erasing saved player data."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Volumen multimedia de 5G Live IPTV: el tono es otro control",
+      "excerpt": "Lee el regulador multimedia y el destino de audio del Pixel antes de cambiar otros sonidos. Separa un programa bajo del acceso al servicio.",
+      "seo_title": "Volumen multimedia de 5G Live IPTV: el tono es otro control",
+      "seo_description": "Lee el regulador multimedia y el destino de audio del Pixel antes de cambiar otros sonidos. Separa un programa bajo del acceso al servicio.",
+      "sections": [
+        {
+          "heading": "Identifica el sonido que comparas",
+          "paragraphs": [
+            "Una comprobación del volumen multimedia de 5G Live IPTV empieza por la etiqueta del control. Un tono fuerte no indica a qué volumen se reproducirá un vídeo. Mantén seleccionado el mismo programa permitido y anota si esperas oírlo por el altavoz del teléfono o los auriculares. Distingue un audio bajo de una pista de idioma ausente y de un reproductor que no abre. Son observaciones que requieren preguntas diferentes, no otra suscripción inmediata."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el control multimedia etiquetado",
+          "paragraphs": [
+            "En un Pixel compatible, Google indica pulsar un botón de volumen y abrir Menú o Más para ver reguladores separados. El volumen multimedia corresponde a vídeos y otros medios; llamada, timbre, notificaciones y alarma tienen niveles distintos. Anota el nivel multimedia mostrado antes de un pequeño ajuste a un volumen cómodo. No subas todos los reguladores ni cambies avisos importantes solo para oír un programa. Google también distingue la vibración multimedia del volumen de audio. Las etiquetas y los controles pueden variar según el dispositivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Controles de volumen de Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara un resultado cada vez",
+          "paragraphs": [
+            "Vuelve al mismo reproductor y anota si cambió el sonido. Comprueba el destino de audio mostrado en vez de suponer que está seleccionado el altavoz del teléfono. Si comparas otro clip permitido, pausa el primero y mantén la misma salida. Si solo el reproductor sigue sin sonido, comunica ese resultado concreto junto con las versiones del teléfono, Android y el reproductor. Omite las direcciones privadas de reproducción. Cambiar el volumen no añade pistas ausentes ni renueva el servicio; esta comprobación no exige borrar datos guardados del reproductor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Volume multimédia de 5G Live IPTV : la sonnerie a son propre réglage",
+      "excerpt": "Lisez le curseur multimédia et la sortie audio du Pixel avant de modifier d’autres sons. Distinguez un programme faible de l’accès au service.",
+      "seo_title": "Volume multimédia de 5G Live IPTV : la sonnerie a son propre réglage",
+      "seo_description": "Lisez le curseur multimédia et la sortie audio du Pixel avant de modifier d’autres sons. Distinguez un programme faible de l’accès au service.",
+      "sections": [
+        {
+          "heading": "Identifier le son comparé",
+          "paragraphs": [
+            "Une vérification du volume multimédia de 5G Live IPTV commence par le nom du réglage. Une sonnerie forte ne montre pas à quel niveau une vidéo sera lue. Gardez le même programme autorisé et notez si le son doit sortir du haut-parleur du téléphone ou du casque. Distinguez un son faible, une piste de langue absente et un lecteur qui ne s’ouvre pas. Ces observations appellent des questions différentes, pas un nouvel abonnement immédiat."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le réglage multimédia nommé",
+          "paragraphs": [
+            "Sur un Pixel compatible, Google indique d’appuyer sur une touche de volume puis d’ouvrir Menu ou Plus pour afficher des curseurs séparés. Le volume multimédia concerne les vidéos et autres médias ; appel, sonnerie, notification et alarme ont des niveaux distincts. Notez le niveau multimédia affiché avant un petit ajustement à un volume confortable. N’augmentez pas tous les curseurs et ne modifiez pas les alertes importantes pour entendre un programme. Google distingue aussi la vibration multimédia du volume audio. Les noms et commandes varient selon l’appareil."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Commandes de volume Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer un résultat à la fois",
+          "paragraphs": [
+            "Revenez au même lecteur et notez si le son a changé. Vérifiez la destination audio affichée sans supposer que le haut-parleur du téléphone est choisi. Pour comparer un autre extrait autorisé, mettez le premier en pause et gardez la même sortie. Si seul le lecteur reste muet, signalez ce résultat précis avec les versions du téléphone, d’Android et du lecteur. Excluez les adresses de lecture privées. Le volume n’ajoute pas de pistes absentes et ne renouvelle pas le service ; cette vérification ne nécessite pas d’effacer les données enregistrées du lecteur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Volume multimediale di 5G Live IPTV: la suoneria è un altro controllo",
+      "excerpt": "Leggi il cursore multimediale e l’uscita audio del Pixel prima di cambiare altri suoni. Separa un programma basso dall’accesso al servizio.",
+      "seo_title": "Volume multimediale di 5G Live IPTV: la suoneria è un altro controllo",
+      "seo_description": "Leggi il cursore multimediale e l’uscita audio del Pixel prima di cambiare altri suoni. Separa un programma basso dall’accesso al servizio.",
+      "sections": [
+        {
+          "heading": "Identifica il suono che confronti",
+          "paragraphs": [
+            "Un controllo del volume multimediale di 5G Live IPTV parte dall’etichetta del comando. Una suoneria alta non indica il volume di riproduzione di un video. Mantieni selezionato lo stesso programma consentito e annota se il suono deve uscire dall’altoparlante del telefono o dalle cuffie. Distingui un audio basso da una traccia linguistica assente e da un lettore che non si apre. Sono osservazioni che richiedono domande diverse, non subito un altro abbonamento."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi il controllo multimediale indicato",
+          "paragraphs": [
+            "Su un Pixel supportato, Google descrive la pressione di un tasto volume e l’apertura di Menu o Altro per vedere cursori separati. Il volume multimediale riguarda video e altri contenuti; chiamata, suoneria, notifiche e sveglia hanno livelli distinti. Annota il livello multimediale visualizzato prima di un piccolo aggiustamento a un volume confortevole. Non alzare ogni cursore né modificare avvisi importanti solo per sentire un programma. Google distingue inoltre la vibrazione multimediale dal volume audio. Etichette e comandi possono variare secondo il dispositivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Controlli del volume di Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta un risultato alla volta",
+          "paragraphs": [
+            "Torna allo stesso lettore e annota se il suono è cambiato. Controlla la destinazione audio visualizzata senza presumere che sia selezionato l’altoparlante del telefono. Per confrontare un’altra clip consentita, metti in pausa la prima e mantieni la stessa uscita. Se resta muto solo il lettore, comunica quel risultato specifico con le versioni del telefono, di Android e del lettore. Escludi indirizzi privati di riproduzione. Il volume non aggiunge tracce mancanti e non rinnova il servizio; questo controllo non richiede di cancellare i dati salvati del lettore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-mediavolume: een beltoon heeft een andere regelaar",
+      "excerpt": "Lees de Pixel-medieregelaar en audio-uitgang voordat je andere geluiden wijzigt. Houd een zacht programma apart van toegang tot de dienst.",
+      "seo_title": "5G Live IPTV-mediavolume: een beltoon heeft een andere regelaar",
+      "seo_description": "Lees de Pixel-medieregelaar en audio-uitgang voordat je andere geluiden wijzigt. Houd een zacht programma apart van toegang tot de dienst.",
+      "sections": [
+        {
+          "heading": "Herken welk geluid je vergelijkt",
+          "paragraphs": [
+            "Een controle van het 5G Live IPTV-mediavolume begint bij de naam van de regelaar. Een luide beltoon laat niet zien hoe luid een video afspeelt. Houd hetzelfde toegestane programma geselecteerd en noteer of het geluid uit de telefoonluidspreker of hoofdtelefoon moet komen. Onderscheid zacht geluid van een ontbrekende taaltrack en van een speler die niet opent. Dat zijn verschillende waarnemingen die andere vragen vragen, geen onmiddellijke vervangende abonnementen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de benoemde mediaregelaar",
+          "paragraphs": [
+            "Op een ondersteunde Pixel beschrijft Google het indrukken van een volumeknop en openen van Menu of Meer om aparte schuifregelaars te zien. Mediavolume geldt voor video en andere media; bellen, beltoon, meldingen en alarmen hebben eigen niveaus. Noteer het getoonde mediavolume voordat je één kleine wijziging op een comfortabel niveau maakt. Zet niet alle regelaars hoger en verander geen belangrijke waarschuwingen om een programma te horen. Google onderscheidt mediatrilling ook van het audiovolume. Namen en bediening kunnen per apparaat verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Volumeregelaars van Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één resultaat tegelijk",
+          "paragraphs": [
+            "Ga terug naar dezelfde speler en noteer of het geluid veranderde. Controleer de getoonde audiobestemming in plaats van aan te nemen dat de telefoonluidspreker gekozen is. Pauzeer de eerste clip als je een andere toegestane clip vergelijkt en gebruik dezelfde uitgang. Blijft alleen de speler stil, meld dan dat specifieke resultaat met telefoon-, Android- en spelerversies. Laat privéafspeeladressen weg. Volumewijzigingen voegen geen ontbrekende tracks toe en verlengen geen dienst; voor deze controle hoef je opgeslagen spelergegevens niet te wissen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Volume multimédia do 5G Live IPTV: o toque tem outro controlo",
+      "excerpt": "Leia o regulador multimédia e o destino de áudio do Pixel antes de alterar outros sons. Separe um programa baixo do acesso ao serviço.",
+      "seo_title": "Volume multimédia do 5G Live IPTV: o toque tem outro controlo",
+      "seo_description": "Leia o regulador multimédia e o destino de áudio do Pixel antes de alterar outros sons. Separe um programa baixo do acesso ao serviço.",
+      "sections": [
+        {
+          "heading": "Identifique o som que compara",
+          "paragraphs": [
+            "Uma verificação do volume multimédia do 5G Live IPTV começa pelo nome do controlo. Um toque alto não indica o volume de reprodução de um vídeo. Mantenha o mesmo programa permitido e anote se espera ouvir pelo altifalante do telefone ou pelos auscultadores. Distinga áudio baixo de uma faixa de idioma ausente e de um leitor que não abre. Estas observações exigem perguntas diferentes, não outra assinatura imediata."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o controlo multimédia identificado",
+          "paragraphs": [
+            "Num Pixel compatível, a Google descreve premir um botão de volume e abrir Menu ou Mais para ver reguladores separados. O volume multimédia abrange vídeos e outros conteúdos; chamada, toque, notificações e alarme têm níveis distintos. Anote o nível multimédia apresentado antes de um pequeno ajuste a um volume confortável. Não aumente todos os reguladores nem altere alertas importantes apenas para ouvir um programa. A Google também distingue a vibração multimédia do volume de áudio. Nomes e controlos podem variar conforme o dispositivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Controlos de volume do Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare um resultado de cada vez",
+          "paragraphs": [
+            "Regresse ao mesmo leitor e anote se o som mudou. Verifique o destino de áudio mostrado em vez de presumir que o altifalante do telefone está selecionado. Ao comparar outro excerto permitido, pause o primeiro e mantenha a mesma saída. Se apenas o leitor continuar sem som, comunique esse resultado específico com as versões do telefone, Android e leitor. Omita endereços privados de reprodução. O volume não acrescenta faixas ausentes nem renova o serviço; esta verificação não exige apagar dados guardados do leitor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Громкость медиа в 5G Live IPTV: звонок регулируется отдельно",
+      "excerpt": "Проверьте ползунок мультимедиа и вывод звука на Pixel, прежде чем менять другие сигналы. Отличайте тихую передачу от доступа к сервису.",
+      "seo_title": "Громкость медиа в 5G Live IPTV: звонок регулируется отдельно",
+      "seo_description": "Проверьте ползунок мультимедиа и вывод звука на Pixel, прежде чем менять другие сигналы. Отличайте тихую передачу от доступа к сервису.",
+      "sections": [
+        {
+          "heading": "Определите сравниваемый звук",
+          "paragraphs": [
+            "Проверка громкости мультимедиа в 5G Live IPTV начинается с подписи регулятора. Громкий звонок не показывает, насколько громко будет идти видео. Оставьте ту же разрешённую передачу и отметьте, ожидаете ли звук из динамика телефона или наушников. Отличайте тихий звук от отсутствующей языковой дорожки и плеера, который не открывается. Эти наблюдения требуют разных вопросов, а не немедленной покупки другой подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Найдите подписанный регулятор медиа",
+          "paragraphs": [
+            "Для поддерживаемого Pixel Google описывает нажатие кнопки громкости и открытие Меню или Ещё с отдельными ползунками. Громкость мультимедиа относится к видео и другим медиа; разговор, звонок, уведомления и будильник имеют отдельные уровни. Запишите показанный уровень медиа до одного небольшого изменения при комфортной громкости. Не повышайте все ползунки и не меняйте важные оповещения ради звука передачи. Google также отличает вибрацию мультимедиа от громкости аудио. Названия и управление зависят от устройства."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Регуляторы громкости Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравнивайте по одному результату",
+          "paragraphs": [
+            "Вернитесь к тому же плееру и отметьте, изменился ли звук. Проверьте показанное место вывода, не предполагая, что выбран динамик телефона. Сравнивая другой разрешённый ролик, приостановите первый и оставьте тот же вывод. Если молчит только плеер, сообщите именно этот результат вместе с версиями телефона, Android и плеера. Исключите частные адреса воспроизведения. Громкость не добавляет отсутствующие дорожки и не продлевает сервис; эта проверка не требует удаления сохранённых данных плеера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی میڈیا آواز: رنگ ٹون کا کنٹرول الگ ہے",
+      "excerpt": "دوسری آوازیں بدلنے سے پہلے Pixel کا میڈیا سلائیڈر اور آڈیو کی منزل پڑھیں۔ دھیمی پروگرام آواز اور سروس کی رسائی کو الگ رکھیں۔",
+      "seo_title": "5G Live IPTV کی میڈیا آواز: رنگ ٹون کا کنٹرول الگ ہے",
+      "seo_description": "دوسری آوازیں بدلنے سے پہلے Pixel کا میڈیا سلائیڈر اور آڈیو کی منزل پڑھیں۔ دھیمی پروگرام آواز اور سروس کی رسائی کو الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "جس آواز کا موازنہ ہے اسے پہچانیں",
+          "paragraphs": [
+            "5G Live IPTV کی میڈیا آواز کی جانچ کنٹرول کے نام سے شروع ہوتی ہے۔ اونچی رنگ ٹون یہ نہیں بتاتی کہ ویڈیو کتنی آواز سے چلے گی۔ وہی اجازت یافتہ پروگرام منتخب رکھیں اور نوٹ کریں کہ آواز فون کے اسپیکر سے چاہیے یا ہیڈ فون سے۔ دھیمی آواز، مطلوبہ زبان کا ٹریک نہ ہونا اور پلیئر نہ کھلنا الگ باتیں ہیں۔ ان کے سوالات بھی الگ ہیں؛ فوراً دوسری رکنیت خریدنا جواب نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "میڈیا کے نام والا کنٹرول پڑھیں",
+          "paragraphs": [
+            "مطابقت رکھنے والے Pixel پر Google آواز کا بٹن دبانے اور مینو یا مزید کھول کر الگ سلائیڈر دیکھنے کی ہدایت دیتا ہے۔ میڈیا کی آواز ویڈیو اور دوسرے میڈیا کے لیے ہے؛ کال، رنگ ٹون، اطلاع اور الارم کی سطحیں الگ ہیں۔ آرام دہ آواز پر ایک معمولی تبدیلی سے پہلے دکھائی گئی میڈیا سطح نوٹ کریں۔ صرف پروگرام سننے کے لیے نہ ہر سلائیڈر بڑھائیں اور نہ اہم انتباہات بدلیں۔ Google میڈیا کی تھرتھراہٹ اور میڈیا کی آڈیو آواز میں بھی فرق کرتا ہے۔ نام اور کنٹرول آلے کے لحاظ سے بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel کی آواز کے کنٹرول",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ایک وقت میں ایک نتیجہ دیکھیں",
+          "paragraphs": [
+            "اسی پلیئر پر واپس جا کر نوٹ کریں کہ آواز بدلی یا نہیں۔ یہ فرض کرنے کے بجائے کہ فون کا اسپیکر منتخب ہے، دکھائی گئی آڈیو منزل دیکھیں۔ کسی اور اجازت یافتہ کلپ سے موازنہ کریں تو پہلے کلپ کو روکیں اور وہی آؤٹ پٹ رکھیں۔ صرف پلیئر خاموش رہے تو فون، Android اور پلیئر کے نسخوں کے ساتھ یہی محدود نتیجہ بتائیں۔ نجی پلے بیک پتے نہ دیں۔ آواز بدلنے سے غائب ٹریک شامل نہیں ہوتے اور سروس کی تجدید نہیں ہوتی؛ اس جانچ کے لیے پلیئر کا محفوظ ڈیٹا مٹانا ضروری نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "صوت الوسائط في 5G Live IPTV: نغمة الرنين لها تحكم مختلف",
+      "excerpt": "اقرأ منزلق الوسائط ووجهة الصوت في Pixel قبل تغيير أصوات أخرى. افصل انخفاض صوت البرنامج عن الوصول إلى الخدمة.",
+      "seo_title": "صوت الوسائط في 5G Live IPTV: نغمة الرنين لها تحكم مختلف",
+      "seo_description": "اقرأ منزلق الوسائط ووجهة الصوت في Pixel قبل تغيير أصوات أخرى. افصل انخفاض صوت البرنامج عن الوصول إلى الخدمة.",
+      "sections": [
+        {
+          "heading": "حدّد الصوت الذي تقارنه",
+          "paragraphs": [
+            "تبدأ مراجعة صوت الوسائط في 5G Live IPTV باسم عنصر التحكم. لا تدل نغمة رنين مرتفعة على مستوى صوت الفيديو. أبقِ البرنامج المسموح نفسه محددًا ودوّن هل تتوقع الصوت من سماعة الهاتف أم سماعات الرأس. ميّز الصوت المنخفض عن غياب مسار لغة وعن مشغل لا يفتح. هذه ملاحظات تحتاج إلى أسئلة مختلفة، لا إلى اشتراك بديل فورًا."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ التحكم المسمى للوسائط",
+          "paragraphs": [
+            "على جهاز Pixel مدعوم، توضح Google الضغط على زر الصوت وفتح القائمة أو المزيد لرؤية منزلقات منفصلة. يشمل صوت الوسائط الفيديو والوسائط الأخرى، بينما للمكالمات والرنين والإشعارات والمنبه مستويات مستقلة. دوّن مستوى الوسائط الظاهر قبل تعديل صغير واحد عند مستوى مريح. لا ترفع كل المنزلقات ولا تغير تنبيهات مهمة لمجرد سماع برنامج. وتفصل Google أيضًا اهتزاز الوسائط عن مستوى الصوت. قد تختلف التسميات وعناصر التحكم حسب الجهاز."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "عناصر التحكم بالصوت في Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن نتيجة واحدة في كل مرة",
+          "paragraphs": [
+            "عُد إلى المشغل نفسه وسجّل هل تغير الصوت. تحقق من وجهة الصوت المعروضة بدلاً من افتراض اختيار سماعة الهاتف. إذا قارنت مقطعًا آخر مسموحًا، فأوقف الأول مؤقتًا واحتفظ بالمخرج نفسه. إن بقي المشغل وحده صامتًا، فأبلغ عن هذه النتيجة المحددة مع إصدارات الهاتف وAndroid والمشغل. استبعد عناوين التشغيل الخاصة. تغيير الصوت لا يضيف مسارات غائبة ولا يجدد الخدمة، ولا يتطلب هذا الفحص مسح بيانات المشغل المحفوظة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV मीडिया वॉल्यूम: रिंगटोन का नियंत्रण अलग है",
+      "excerpt": "दूसरी आवाज़ें बदलने से पहले Pixel का मीडिया स्लाइडर और ऑडियो की जगह पढ़ें। धीमे कार्यक्रम और सेवा की पहुँच को अलग रखें।",
+      "seo_title": "5G Live IPTV मीडिया वॉल्यूम: रिंगटोन का नियंत्रण अलग है",
+      "seo_description": "दूसरी आवाज़ें बदलने से पहले Pixel का मीडिया स्लाइडर और ऑडियो की जगह पढ़ें। धीमे कार्यक्रम और सेवा की पहुँच को अलग रखें।",
+      "sections": [
+        {
+          "heading": "जिस आवाज़ की तुलना है उसे पहचानें",
+          "paragraphs": [
+            "5G Live IPTV मीडिया वॉल्यूम की जाँच नियंत्रण के नाम से शुरू होती है। तेज़ रिंगटोन यह नहीं बताती कि वीडियो कितनी आवाज़ में चलेगा। वही अनुमत कार्यक्रम चुना रखें और लिखें कि आवाज़ फ़ोन के स्पीकर से चाहिए या हेडफ़ोन से। धीमी आवाज़, भाषा का ट्रैक न होना और प्लेयर न खुलना अलग बातें हैं। इनके सवाल भी अलग हैं; तुरंत दूसरी सदस्यता खरीदना जवाब नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मीडिया नाम वाला नियंत्रण पढ़ें",
+          "paragraphs": [
+            "संगत Pixel पर Google वॉल्यूम बटन दबाने और मेनू या अधिक खोलकर अलग स्लाइडर देखने का तरीका बताता है। मीडिया वॉल्यूम वीडियो और दूसरे मीडिया का है; कॉल, रिंगटोन, सूचनाओं और अलार्म के स्तर अलग हैं। आरामदायक स्तर पर एक छोटा बदलाव करने से पहले दिखा मीडिया स्तर लिखें। केवल कार्यक्रम सुनने के लिए न हर स्लाइडर बढ़ाएँ और न जरूरी चेतावनियाँ बदलें। Google मीडिया कंपन और मीडिया की ऑडियो आवाज़ में भी अंतर करता है। नाम और नियंत्रण डिवाइस के अनुसार बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel के वॉल्यूम नियंत्रण",
+              "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "एक बार में एक नतीजा देखें",
+          "paragraphs": [
+            "उसी प्लेयर पर लौटकर लिखें कि आवाज़ बदली या नहीं। फ़ोन का स्पीकर चुना मान लेने के बजाय दिखाई गई ऑडियो जगह जाँचें। किसी दूसरे अनुमत क्लिप से तुलना करें तो पहले को रोकें और वही आउटपुट रखें। केवल प्लेयर चुप रहे तो फ़ोन, Android और प्लेयर संस्करणों के साथ यही सीमित नतीजा बताएँ। निजी प्लेबैक पते न दें। आवाज़ बदलने से गायब ट्रैक नहीं जुड़ते और सेवा का नवीनीकरण नहीं होता; इस जाँच के लिए प्लेयर का सहेजा डेटा मिटाना जरूरी नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel: volume, sound and vibration controls",
+      "url": "https://support.google.com/pixelphone/answer/2819577?hl=en"
+    }
+  ]
+}

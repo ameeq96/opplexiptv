@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-21",
+  "topic": "Compare VLC for Android subtitle text encoding for garbled characters separately from language, size and timing while preserving saved player access.",
+  "primary_keyword": "IPTV subtitle encoding",
+  "slug": "main-subtitle-encoding-garbled-characters-check",
+  "translations": {
+    "en": {
+      "title": "IPTV subtitle encoding: check garbled characters in VLC",
+      "excerpt": "If subtitle letters look wrong, separate text encoding from size, language and timing. Compare one documented VLC option while keeping your saved setup.",
+      "seo_title": "IPTV subtitle encoding: check garbled characters in VLC",
+      "seo_description": "If subtitle letters look wrong, separate text encoding from size, language and timing. Compare one documented VLC option while keeping your saved setup.",
+      "sections": [
+        {
+          "heading": "Identify the text problem",
+          "paragraphs": [
+            "An IPTV subtitle encoding check is different from making small captions larger. If the selected subtitle contains unexpected symbols or broken accented letters, note one short example and the intended language. Keep the same permitted video and subtitle selected. A wrong-language track, late dialogue text and unreadably small letters are separate observations; changing their settings together makes the comparison less useful."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing encoding choice",
+          "paragraphs": [
+            "VideoLAN documents a Subtitle text encoding setting in VLC for Android. Encoding describes how stored text becomes characters, and VLC normally chooses it automatically. The documentation says the default suits most subtitles. Record the current choice first. If you know the subtitle’s expected character encoding from its trusted source, compare that supported option once in your installed version rather than cycling through every entry or changing unrelated display settings."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the result specific",
+          "paragraphs": [
+            "Return to the same short passage and check whether the letters improve. Restore the previous choice if it does not help. Encoding is not a timing control and does not supply a missing language. If the source encoding is unknown, report the language, visible symptom and VLC version rather than guessing or downloading an unknown replacement. Preserve saved player access and keep private playback addresses out of support screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Codificación de subtítulos IPTV: revise caracteres extraños en VLC",
+      "excerpt": "Si las letras se ven mal, distinga codificación, tamaño, idioma y sincronización. Compare una opción documentada de VLC conservando su configuración.",
+      "seo_title": "Codificación de subtítulos IPTV: revise caracteres extraños en VLC",
+      "seo_description": "Si las letras se ven mal, distinga codificación, tamaño, idioma y sincronización. Compare una opción documentada de VLC conservando su configuración.",
+      "sections": [
+        {
+          "heading": "Identifique el problema del texto",
+          "paragraphs": [
+            "Revisar la codificación de subtítulos IPTV es distinto de aumentar letras pequeñas. Si el subtítulo elegido muestra símbolos inesperados o acentos rotos, anote un ejemplo breve y el idioma previsto. Mantenga el mismo vídeo autorizado y subtítulo. Un idioma equivocado, texto retrasado y letras demasiado pequeñas son observaciones diferentes; cambiar varios ajustes juntos dificulta la comparación."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lea la codificación actual",
+          "paragraphs": [
+            "VideoLAN documenta un ajuste de codificación del texto de subtítulos en VLC para Android. La codificación determina cómo el texto guardado se convierte en caracteres y VLC suele elegirla automáticamente. Según la documentación, el valor predeterminado sirve para la mayoría. Anote primero la opción actual. Si conoce la codificación esperada por una fuente fiable del subtítulo, compare una vez esa opción compatible en su versión, sin recorrer toda la lista ni cambiar ajustes de pantalla ajenos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Conserve un resultado concreto",
+          "paragraphs": [
+            "Vuelva al mismo pasaje breve y compruebe si mejoran las letras. Restaure la opción anterior si no ayuda. La codificación no controla el tiempo ni añade un idioma ausente. Si desconoce la codificación de origen, comunique el idioma, el síntoma visible y la versión de VLC en vez de adivinar o descargar un reemplazo desconocido. Conserve el acceso guardado y oculte direcciones privadas de reproducción en las capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Encodage des sous-titres IPTV : vérifier les caractères dans VLC",
+      "excerpt": "Des lettres incorrectes demandent de distinguer encodage, taille, langue et décalage. Comparez une option documentée de VLC en conservant votre configuration.",
+      "seo_title": "Encodage des sous-titres IPTV : vérifier les caractères dans VLC",
+      "seo_description": "Des lettres incorrectes demandent de distinguer encodage, taille, langue et décalage. Comparez une option documentée de VLC en conservant votre configuration.",
+      "sections": [
+        {
+          "heading": "Identifier le problème du texte",
+          "paragraphs": [
+            "Vérifier l’encodage des sous-titres IPTV diffère de l’agrandissement de petites lettres. Si la piste choisie affiche des symboles inattendus ou des accents incorrects, notez un court exemple et la langue attendue. Gardez la même vidéo autorisée et le même sous-titre. Mauvaise langue, texte décalé et lettres trop petites sont des observations distinctes ; modifier plusieurs réglages ensemble rend la comparaison moins utile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le choix d’encodage actuel",
+          "paragraphs": [
+            "VideoLAN décrit un réglage d’encodage du texte des sous-titres dans VLC pour Android. L’encodage détermine la conversion du texte enregistré en caractères et VLC le choisit généralement automatiquement. La documentation indique que le choix par défaut convient à la plupart des sous-titres. Notez d’abord la valeur actuelle. Si une source fiable fournit l’encodage attendu, comparez une seule fois cette option prise en charge par votre version, sans parcourir toute la liste ni modifier d’autres réglages d’affichage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Décrire un résultat précis",
+          "paragraphs": [
+            "Revenez au même court passage et vérifiez si les lettres s’améliorent. Rétablissez le choix précédent si cela n’aide pas. L’encodage ne règle pas le décalage et n’ajoute pas de langue absente. Si l’encodage d’origine reste inconnu, signalez la langue, le défaut visible et la version de VLC au lieu de deviner ou de télécharger un remplacement inconnu. Préservez les accès enregistrés et masquez les adresses privées dans les captures."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Codifica sottotitoli IPTV: controllare i caratteri errati in VLC",
+      "excerpt": "Se le lettere sono sbagliate, distingui codifica, dimensione, lingua e sincronizzazione. Confronta un’opzione documentata di VLC conservando la configurazione.",
+      "seo_title": "Codifica sottotitoli IPTV: controllare i caratteri errati in VLC",
+      "seo_description": "Se le lettere sono sbagliate, distingui codifica, dimensione, lingua e sincronizzazione. Confronta un’opzione documentata di VLC conservando la configurazione.",
+      "sections": [
+        {
+          "heading": "Identifica il problema del testo",
+          "paragraphs": [
+            "Controllare la codifica dei sottotitoli IPTV è diverso dall’ingrandire caratteri piccoli. Se il sottotitolo selezionato presenta simboli inattesi o accenti errati, annota un breve esempio e la lingua prevista. Mantieni lo stesso video autorizzato e lo stesso sottotitolo. Lingua sbagliata, testo in ritardo e lettere troppo piccole sono osservazioni separate; cambiare più impostazioni insieme rende meno utile il confronto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la codifica attuale",
+          "paragraphs": [
+            "VideoLAN documenta l’impostazione di codifica del testo dei sottotitoli in VLC per Android. La codifica stabilisce come il testo salvato diventa caratteri e normalmente VLC la sceglie automaticamente. La documentazione indica che il valore predefinito funziona per la maggior parte dei sottotitoli. Annota prima la scelta attuale. Se una fonte affidabile del sottotitolo ne indica la codifica prevista, confronta una volta quell’opzione supportata dalla tua versione, senza scorrere tutte le voci o cambiare impostazioni estranee."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Mantieni il risultato specifico",
+          "paragraphs": [
+            "Torna allo stesso breve passaggio e verifica se le lettere migliorano. Ripristina la scelta precedente se non aiuta. La codifica non controlla il tempo e non aggiunge una lingua assente. Se la codifica originale è sconosciuta, comunica lingua, sintomo visibile e versione di VLC invece di indovinare o scaricare un sostituto sconosciuto. Conserva l’accesso salvato e nascondi gli indirizzi privati di riproduzione nelle schermate."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-ondertitelcodering: controleer vreemde tekens in VLC",
+      "excerpt": "Verkeerde letters vragen om onderscheid tussen codering, grootte, taal en timing. Vergelijk één gedocumenteerde VLC-optie en bewaar uw instellingen.",
+      "seo_title": "IPTV-ondertitelcodering: controleer vreemde tekens in VLC",
+      "seo_description": "Verkeerde letters vragen om onderscheid tussen codering, grootte, taal en timing. Vergelijk één gedocumenteerde VLC-optie en bewaar uw instellingen.",
+      "sections": [
+        {
+          "heading": "Herken het tekstprobleem",
+          "paragraphs": [
+            "IPTV-ondertitelcodering controleren is iets anders dan kleine letters vergroten. Toont de gekozen ondertitel onverwachte symbolen of beschadigde accenttekens, noteer dan een kort voorbeeld en de bedoelde taal. Houd dezelfde toegestane video en ondertitel geselecteerd. Een verkeerde taal, vertraagde tekst en te kleine letters zijn aparte waarnemingen; meerdere instellingen tegelijk wijzigen maakt vergelijken minder nuttig."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige codering",
+          "paragraphs": [
+            "VideoLAN beschrijft een instelling voor tekstcodering van ondertitels in VLC voor Android. Codering bepaalt hoe opgeslagen tekst tekens wordt; VLC kiest die doorgaans automatisch. Volgens de documentatie past de standaard bij de meeste ondertitels. Noteer eerst de huidige keuze. Kent u de verwachte codering via de betrouwbare bron van de ondertitel, vergelijk die ondersteunde optie dan één keer in uw versie. Probeer niet alle vermeldingen en wijzig geen ongerelateerde scherminstellingen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Houd het resultaat concreet",
+          "paragraphs": [
+            "Ga terug naar hetzelfde korte fragment en controleer of de letters verbeteren. Herstel de vorige keuze als het niet helpt. Codering regelt geen timing en voegt geen ontbrekende taal toe. Is de oorspronkelijke codering onbekend, meld dan taal, zichtbaar probleem en VLC-versie in plaats van te gokken of een onbekende vervanging te downloaden. Bewaar opgeslagen toegang en verberg privéafspeeladressen in schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Codificação das legendas IPTV: verifique caracteres errados no VLC",
+      "excerpt": "Se as letras aparecem erradas, separe codificação, tamanho, idioma e sincronização. Compare uma opção documentada do VLC preservando a configuração.",
+      "seo_title": "Codificação das legendas IPTV: verifique caracteres errados no VLC",
+      "seo_description": "Se as letras aparecem erradas, separe codificação, tamanho, idioma e sincronização. Compare uma opção documentada do VLC preservando a configuração.",
+      "sections": [
+        {
+          "heading": "Identifique o problema do texto",
+          "paragraphs": [
+            "Verificar a codificação das legendas IPTV é diferente de aumentar letras pequenas. Se a legenda selecionada mostrar símbolos inesperados ou acentos incorretos, anote um exemplo curto e o idioma esperado. Mantenha o mesmo vídeo autorizado e a mesma legenda. Idioma errado, texto atrasado e letras pequenas são observações distintas; alterar várias definições juntas prejudica a comparação."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a codificação atual",
+          "paragraphs": [
+            "A VideoLAN documenta uma definição de codificação do texto das legendas no VLC para Android. A codificação determina como o texto guardado se transforma em caracteres e o VLC costuma escolhê-la automaticamente. A documentação indica que a opção predefinida serve para a maioria das legendas. Registe primeiro a escolha atual. Se uma fonte fiável da legenda indicar a codificação esperada, compare uma vez essa opção suportada pela sua versão, sem percorrer todas as entradas ou alterar definições de imagem sem relação."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Mantenha o resultado específico",
+          "paragraphs": [
+            "Volte ao mesmo trecho curto e verifique se as letras melhoraram. Restaure a escolha anterior se não ajudar. A codificação não controla o tempo nem acrescenta um idioma em falta. Se desconhecer a codificação original, informe o idioma, o sintoma visível e a versão do VLC em vez de adivinhar ou descarregar uma substituição desconhecida. Preserve o acesso guardado e oculte endereços privados de reprodução nas capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Кодировка субтитров IPTV: проверьте неверные символы в VLC",
+      "excerpt": "Если буквы отображаются неправильно, отделите кодировку от размера, языка и задержки. Сравните один документированный параметр VLC, сохранив настройки.",
+      "seo_title": "Кодировка субтитров IPTV: проверьте неверные символы в VLC",
+      "seo_description": "Если буквы отображаются неправильно, отделите кодировку от размера, языка и задержки. Сравните один документированный параметр VLC, сохранив настройки.",
+      "sections": [
+        {
+          "heading": "Определите проблему текста",
+          "paragraphs": [
+            "Проверка кодировки субтитров IPTV отличается от увеличения мелких букв. Если выбранные субтитры показывают неожиданные символы или неправильные буквы с диакритикой, запишите короткий пример и ожидаемый язык. Оставьте то же разрешённое видео и те же субтитры. Другой язык, запаздывающий текст и слишком мелкие буквы — разные наблюдения; одновременное изменение нескольких настроек мешает сравнению."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущую кодировку",
+          "paragraphs": [
+            "VideoLAN описывает настройку кодировки текста субтитров в VLC для Android. Кодировка определяет преобразование сохранённого текста в символы, обычно VLC выбирает её автоматически. По документации исходный вариант подходит большинству субтитров. Сначала запишите текущий выбор. Если надёжный источник субтитров сообщает ожидаемую кодировку, один раз сравните соответствующий поддерживаемый вариант в своей версии, не перебирая весь список и не меняя посторонние параметры изображения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите конкретный результат",
+          "paragraphs": [
+            "Вернитесь к тому же короткому фрагменту и проверьте, улучшились ли буквы. Если нет, восстановите прежний выбор. Кодировка не регулирует задержку и не добавляет отсутствующий язык. Когда исходная кодировка неизвестна, сообщите язык, видимый дефект и версию VLC вместо догадок или загрузки неизвестной замены. Сохраните доступ в плеере и скройте частные адреса воспроизведения на снимках."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV ذیلی عنوانات کی انکوڈنگ: VLC میں بگڑے حروف دیکھیں",
+      "excerpt": "حروف غلط دکھیں تو متن کی انکوڈنگ کو سائز، زبان اور وقت سے الگ پہچانیں۔ محفوظ ترتیب برقرار رکھتے ہوئے VLC کا ایک بیان کردہ اختیار دیکھیں۔",
+      "seo_title": "IPTV ذیلی عنوانات کی انکوڈنگ: VLC میں بگڑے حروف دیکھیں",
+      "seo_description": "حروف غلط دکھیں تو متن کی انکوڈنگ کو سائز، زبان اور وقت سے الگ پہچانیں۔ محفوظ ترتیب برقرار رکھتے ہوئے VLC کا ایک بیان کردہ اختیار دیکھیں۔",
+      "sections": [
+        {
+          "heading": "متن کا مسئلہ پہچانیں",
+          "paragraphs": [
+            "IPTV ذیلی عنوانات کی انکوڈنگ دیکھنا چھوٹے حروف بڑے کرنے سے مختلف ہے۔ منتخب ذیلی عنوان میں غیر متوقع نشان یا بگڑے ہوئے حروف ہوں تو مختصر مثال اور مطلوبہ زبان نوٹ کریں۔ وہی اجازت یافتہ ویڈیو اور ذیلی عنوان منتخب رکھیں۔ غلط زبان، دیر سے آنے والا متن اور بہت چھوٹے حروف الگ مشاہدات ہیں؛ کئی ترتیبات ایک ساتھ بدلنے سے موازنہ کم مفید رہتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "انکوڈنگ کا موجودہ انتخاب پڑھیں",
+          "paragraphs": [
+            "VideoLAN، Android کے VLC میں ذیلی عنوانات کے متن کی انکوڈنگ کی ترتیب بتاتا ہے۔ انکوڈنگ طے کرتی ہے کہ محفوظ متن حروف میں کیسے بدلے، اور عموماً VLC اسے خود چنتا ہے۔ دستاویز کے مطابق پہلے سے منتخب اختیار اکثر ذیلی عنوانات کے لیے مناسب ہے۔ پہلے موجودہ انتخاب لکھیں۔ ذیلی عنوان کے قابل اعتماد ماخذ سے متوقع انکوڈنگ معلوم ہو تو اپنے نسخے میں اس سے مطابقت رکھنے والا اختیار ایک بار دیکھیں؛ پوری فہرست نہ آزمائیں اور نہ غیر متعلقہ تصویر کی ترتیبات بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "نتیجہ واضح اور محدود رکھیں",
+          "paragraphs": [
+            "اسی مختصر حصے پر واپس جا کر دیکھیں کہ حروف بہتر ہوئے یا نہیں۔ فائدہ نہ ہو تو پچھلا انتخاب بحال کریں۔ انکوڈنگ وقت کی مطابقت کا کنٹرول نہیں اور غائب زبان شامل نہیں کرتی۔ اصل انکوڈنگ معلوم نہ ہو تو اندازہ لگانے یا نامعلوم متبادل ڈاؤن لوڈ کرنے کے بجائے زبان، نظر آنے والا مسئلہ اور VLC کا نسخہ بتائیں۔ پلیئر کی محفوظ رسائی برقرار رکھیں اور معاونت کے اسکرین شاٹس میں نجی پلے بیک پتے چھپائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ترميز ترجمة IPTV: تحقق من الحروف المشوهة في VLC",
+      "excerpt": "إذا ظهرت الحروف بشكل خاطئ، فافصل الترميز عن الحجم واللغة والتوقيت. قارن خياراً موثقاً في VLC مع الحفاظ على إعداداتك المحفوظة.",
+      "seo_title": "ترميز ترجمة IPTV: تحقق من الحروف المشوهة في VLC",
+      "seo_description": "إذا ظهرت الحروف بشكل خاطئ، فافصل الترميز عن الحجم واللغة والتوقيت. قارن خياراً موثقاً في VLC مع الحفاظ على إعداداتك المحفوظة.",
+      "sections": [
+        {
+          "heading": "حدد مشكلة النص",
+          "paragraphs": [
+            "فحص ترميز ترجمة IPTV يختلف عن تكبير الحروف الصغيرة. إذا أظهرت الترجمة المحددة رموزاً غير متوقعة أو حروفاً مشوهة، دوّن مثالاً قصيراً واللغة المطلوبة. أبق الفيديو المسموح نفسه والترجمة نفسها محددين. اللغة الخاطئة والنص المتأخر والحروف الصغيرة ملاحظات منفصلة؛ تغيير عدة إعدادات معاً يقلل فائدة المقارنة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ خيار الترميز الحالي",
+          "paragraphs": [
+            "توثق VideoLAN إعداد ترميز نص الترجمة في VLC لنظام Android. يحدد الترميز طريقة تحويل النص المحفوظ إلى حروف، ويختاره VLC عادة تلقائياً. وتوضح الوثائق أن الخيار الافتراضي يناسب معظم الترجمات. سجل الاختيار الحالي أولاً. إذا عرفت الترميز المتوقع من مصدر الترجمة الموثوق، فقارن ذلك الخيار المدعوم مرة واحدة في نسختك، دون تجربة القائمة كلها أو تغيير إعدادات عرض غير مرتبطة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "اجعل النتيجة محددة",
+          "paragraphs": [
+            "عد إلى المقطع القصير نفسه وتحقق من تحسن الحروف. أعد الاختيار السابق إن لم يساعد التغيير. الترميز ليس تحكماً في التوقيت ولا يضيف لغة غير موجودة. إن كان الترميز الأصلي مجهولاً، فأبلغ باللغة والمشكلة الظاهرة ونسخة VLC بدلاً من التخمين أو تنزيل بديل مجهول. احتفظ بالوصول المحفوظ في المشغل وأخف عناوين التشغيل الخاصة من لقطات الدعم."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV उपशीर्षक एन्कोडिंग: VLC में बिगड़े अक्षर जाँचें",
+      "excerpt": "अक्षर गलत दिखें तो एन्कोडिंग को आकार, भाषा और समय से अलग पहचानें। सहेजा सेटअप रखते हुए VLC के एक दस्तावेज़ित विकल्प की तुलना करें।",
+      "seo_title": "IPTV उपशीर्षक एन्कोडिंग: VLC में बिगड़े अक्षर जाँचें",
+      "seo_description": "अक्षर गलत दिखें तो एन्कोडिंग को आकार, भाषा और समय से अलग पहचानें। सहेजा सेटअप रखते हुए VLC के एक दस्तावेज़ित विकल्प की तुलना करें।",
+      "sections": [
+        {
+          "heading": "पाठ की समस्या पहचानें",
+          "paragraphs": [
+            "IPTV उपशीर्षक की एन्कोडिंग जाँचना छोटे अक्षर बड़े करने से अलग है। चुने उपशीर्षक में अनचाहे चिह्न या बिगड़े मात्रायुक्त अक्षर हों तो छोटा उदाहरण और अपेक्षित भाषा लिखें। वही अनुमत वीडियो और उपशीर्षक चुना रखें। गलत भाषा, देर से आने वाला पाठ और बहुत छोटे अक्षर अलग बातें हैं; कई सेटिंग साथ बदलने से तुलना कम उपयोगी होती है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "वर्तमान एन्कोडिंग पढ़ें",
+          "paragraphs": [
+            "VideoLAN, Android के VLC में उपशीर्षक पाठ की एन्कोडिंग सेटिंग बताता है। एन्कोडिंग तय करती है कि सहेजा पाठ अक्षरों में कैसे बदले और VLC आम तौर पर इसे अपने-आप चुनता है। दस्तावेज़ के अनुसार मूल विकल्प अधिकतर उपशीर्षकों के लिए ठीक रहता है। पहले वर्तमान चुनाव लिखें। विश्वसनीय उपशीर्षक स्रोत से अपेक्षित एन्कोडिंग मालूम हो तो अपने संस्करण में वह समर्थित विकल्प एक बार तुलना करें; पूरी सूची न आजमाएँ और न असंबंधित चित्र सेटिंग बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+            }
+          ]
+        },
+        {
+          "heading": "नतीजा स्पष्ट रखें",
+          "paragraphs": [
+            "उसी छोटे अंश पर लौटकर देखें कि अक्षर सुधरे या नहीं। मदद न मिले तो पिछला चुनाव बहाल करें। एन्कोडिंग समय का नियंत्रण नहीं और गायब भाषा नहीं जोड़ती। मूल एन्कोडिंग अनजान हो तो अनुमान लगाने या अनजान विकल्प डाउनलोड करने के बजाय भाषा, दिखाई देने वाली समस्या और VLC संस्करण बताएँ। प्लेयर की सहेजी पहुँच बनाए रखें और सहायता के स्क्रीनशॉट में निजी प्लेबैक पते छिपाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android subtitle text encoding",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_subtitles.html"
+    }
+  ]
+}

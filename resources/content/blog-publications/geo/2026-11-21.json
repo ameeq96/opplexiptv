@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-21",
+  "topic": "Identify an Apple TV AirPlay access-code request separately from Geo IPTV provider sign-in while preserving household sharing protections.",
+  "primary_keyword": "Geo IPTV AirPlay code",
+  "slug": "geo-airplay-code-identify-the-request-before-typing",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV AirPlay code: identify the request before typing",
+      "excerpt": "Check whether a television code belongs to AirPlay or the installed player. Keep household sharing protections and provider access separate.",
+      "seo_title": "Geo IPTV AirPlay code: identify the request before typing",
+      "seo_description": "Check whether a television code belongs to AirPlay or the installed player. Keep household sharing protections and provider access separate.",
+      "sections": [
+        {
+          "heading": "Name the screen asking",
+          "paragraphs": [
+            "A Geo IPTV AirPlay code question begins with the screen requesting it. Note whether the television names AirPlay, a sending device or the installed player. A local sharing request is different from a provider sign-in. It does not establish subscription activation or a payment requirement. If nobody intended to share, pause before typing and identify the television and the request rather than entering account details into an unfamiliar page."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read who can connect",
+          "paragraphs": [
+            "For the documented Apple TV 4K interface, open Settings, AirPlay and Apple Home, then Allow Access. Some software uses the AirPlay and HomeKit label. Read the existing permitted audience and password requirement with the owner. Keep useful household protections; selecting Everyone or removing a password is unnecessary just to identify a prompt. Apple describes a first-use onscreen password for an intended AirPlay session."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple AirPlay access settings",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Return to the intended player",
+          "paragraphs": [
+            "For planned sharing that you are allowed to perform, confirm the receiving television name and follow Apple’s instructions on the intended sending device. Never post the displayed code publicly. If you were opening a native player instead, describe that different action and the unexpected prompt to support. Include the device models, sharing method and stage reached, without codes or private access details. This check neither diagnoses a provider outage nor requires resetting the television or erasing saved player setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Código AirPlay con Geo IPTV: identifica la solicitud antes de escribir",
+      "excerpt": "Comprueba si el código del televisor corresponde a AirPlay o al reproductor. Conserva las protecciones del hogar y separa el acceso del proveedor.",
+      "seo_title": "Código AirPlay con Geo IPTV: identifica la solicitud antes de escribir",
+      "seo_description": "Comprueba si el código del televisor corresponde a AirPlay o al reproductor. Conserva las protecciones del hogar y separa el acceso del proveedor.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla que pregunta",
+          "paragraphs": [
+            "Una consulta sobre un código AirPlay con Geo IPTV empieza por la pantalla que lo solicita. Anota si el televisor menciona AirPlay, un dispositivo emisor o el reproductor instalado. Compartir localmente es distinto de iniciar sesión con el proveedor. No confirma la activación de una suscripción ni una obligación de pago. Si nadie quería compartir, detente antes de escribir e identifica el televisor y la solicitud, sin introducir datos de cuenta en una página desconocida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee quién puede conectarse",
+          "paragraphs": [
+            "En la interfaz documentada del Apple TV 4K, abre Ajustes, AirPlay y Apple Home y después Permitir acceso. Algunas versiones usan el nombre AirPlay y HomeKit. Revisa con el propietario el público autorizado y el requisito de contraseña actuales. Conserva las protecciones útiles del hogar; no hace falta seleccionar Todos ni quitar una contraseña para identificar un aviso. Apple describe una contraseña en pantalla al usar AirPlay por primera vez en una sesión prevista."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajustes de acceso AirPlay de Apple",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Vuelve al reproductor previsto",
+          "paragraphs": [
+            "Para compartir de forma prevista y permitida, confirma el nombre del televisor receptor y sigue las instrucciones de Apple en el dispositivo emisor correcto. Nunca publiques el código mostrado. Si estabas abriendo un reproductor nativo, describe esa acción diferente y el aviso inesperado a soporte. Incluye los modelos, el método de transmisión y el punto alcanzado, sin códigos ni datos privados de acceso. Esta comprobación no diagnostica una caída del proveedor ni exige restablecer el televisor o borrar la configuración guardada del reproductor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Code AirPlay avec Geo IPTV : identifier la demande avant de saisir",
+      "excerpt": "Vérifiez si le code du téléviseur concerne AirPlay ou le lecteur. Conservez les protections du foyer et distinguez l’accès au fournisseur.",
+      "seo_title": "Code AirPlay avec Geo IPTV : identifier la demande avant de saisir",
+      "seo_description": "Vérifiez si le code du téléviseur concerne AirPlay ou le lecteur. Conservez les protections du foyer et distinguez l’accès au fournisseur.",
+      "sections": [
+        {
+          "heading": "Identifier l’écran qui demande",
+          "paragraphs": [
+            "Une question de code AirPlay avec Geo IPTV commence par l’écran qui le demande. Notez si le téléviseur nomme AirPlay, un appareil émetteur ou le lecteur installé. Un partage local diffère d’une connexion au fournisseur. Il ne prouve ni l’activation d’un abonnement ni un paiement nécessaire. Si personne ne souhaitait partager, attendez avant de saisir et identifiez le téléviseur et la demande, sans donner vos identifiants à une page inconnue."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire qui peut se connecter",
+          "paragraphs": [
+            "Sur l’interface documentée de l’Apple TV 4K, ouvrez Réglages, AirPlay et Apple Home, puis Autoriser l’accès. Certaines versions emploient AirPlay et HomeKit. Lisez avec le propriétaire le public actuellement autorisé et l’exigence de mot de passe. Gardez les protections utiles du foyer ; choisir Tout le monde ou retirer un mot de passe est inutile pour reconnaître une demande. Apple décrit un mot de passe à l’écran lors d’une première utilisation AirPlay prévue."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Réglages Apple d’accès AirPlay",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Revenir au lecteur prévu",
+          "paragraphs": [
+            "Pour un partage prévu et autorisé, confirmez le nom du téléviseur récepteur et suivez les instructions Apple sur le bon appareil émetteur. Ne publiez jamais le code affiché. Si vous ouvriez plutôt un lecteur natif, décrivez cette autre action et la demande inattendue à l’assistance. Indiquez les modèles, la méthode et l’étape atteinte, sans codes ni accès privés. Cette vérification ne diagnostique pas une panne du fournisseur et ne demande ni réinitialisation du téléviseur ni effacement des réglages du lecteur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Codice AirPlay con Geo IPTV: identifica la richiesta prima di digitare",
+      "excerpt": "Controlla se il codice sul televisore riguarda AirPlay o il lettore. Conserva le protezioni domestiche e separa l’accesso del fornitore.",
+      "seo_title": "Codice AirPlay con Geo IPTV: identifica la richiesta prima di digitare",
+      "seo_description": "Controlla se il codice sul televisore riguarda AirPlay o il lettore. Conserva le protezioni domestiche e separa l’accesso del fornitore.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata che lo chiede",
+          "paragraphs": [
+            "Una domanda sul codice AirPlay con Geo IPTV parte dalla schermata che lo richiede. Annota se il televisore indica AirPlay, un dispositivo trasmittente o il lettore installato. La condivisione locale è diversa dall’accesso al fornitore. Non dimostra l’attivazione dell’abbonamento né un pagamento necessario. Se nessuno voleva condividere, fermati prima di digitare e identifica televisore e richiesta, senza inserire credenziali in una pagina sconosciuta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi chi può collegarsi",
+          "paragraphs": [
+            "Nell’interfaccia documentata di Apple TV 4K, apri Impostazioni, AirPlay e Apple Home, quindi Consenti accesso. Alcune versioni usano il nome AirPlay e HomeKit. Leggi con il proprietario il pubblico attualmente ammesso e il requisito della password. Mantieni le protezioni utili della casa: non occorre scegliere Tutti o eliminare una password solo per identificare un avviso. Apple descrive una password sullo schermo al primo utilizzo di una sessione AirPlay prevista."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Impostazioni Apple per l’accesso AirPlay",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Torna al lettore previsto",
+          "paragraphs": [
+            "Per una condivisione prevista e consentita, conferma il nome del televisore ricevente e segui le istruzioni Apple sul dispositivo trasmittente corretto. Non pubblicare mai il codice visualizzato. Se stavi invece aprendo un lettore nativo, descrivi all’assistenza quella diversa azione e l’avviso inatteso. Indica modelli, metodo di condivisione e fase raggiunta, senza codici o accessi privati. Il controllo non diagnostica un’interruzione del fornitore e non richiede di ripristinare il televisore o cancellare la configurazione salvata del lettore."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV AirPlay-code: herken de vraag voordat je iets invoert",
+      "excerpt": "Controleer of de tv-code bij AirPlay of de speler hoort. Bewaar de beveiliging voor delen thuis en houd toegang tot de aanbieder apart.",
+      "seo_title": "Geo IPTV AirPlay-code: herken de vraag voordat je iets invoert",
+      "seo_description": "Controleer of de tv-code bij AirPlay of de speler hoort. Bewaar de beveiliging voor delen thuis en houd toegang tot de aanbieder apart.",
+      "sections": [
+        {
+          "heading": "Herken welk scherm de vraag stelt",
+          "paragraphs": [
+            "Een vraag over een Geo IPTV AirPlay-code begint bij het scherm dat erom vraagt. Noteer of de televisie AirPlay, een verzendend apparaat of de geïnstalleerde speler noemt. Lokaal delen is iets anders dan aanmelden bij de aanbieder. Het bewijst geen activering van een abonnement of betalingsverplichting. Als niemand wilde delen, wacht dan met invoeren en herken eerst de televisie en de vraag; vul geen accountgegevens in op een onbekende pagina."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees wie verbinding mag maken",
+          "paragraphs": [
+            "Open op de gedocumenteerde Apple TV 4K-interface Instellingen, AirPlay en Apple Home en vervolgens Sta toegang toe. Sommige versies gebruiken de naam AirPlay en HomeKit. Lees samen met de eigenaar wie momenteel toegang heeft en of een wachtwoord vereist is. Bewaar nuttige beveiliging thuis; Iedereen kiezen of een wachtwoord verwijderen is niet nodig om een melding te herkennen. Apple beschrijft een wachtwoord op het scherm bij het eerste gebruik van een bedoelde AirPlay-sessie."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple-instellingen voor AirPlay-toegang",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Ga terug naar de bedoelde speler",
+          "paragraphs": [
+            "Bevestig bij gepland en toegestaan delen de naam van de ontvangende televisie en volg Apples instructies op het juiste verzendende apparaat. Plaats de getoonde code nooit openbaar. Opende je juist een eigen spelerapp, beschrijf dan die andere handeling en de onverwachte melding aan ondersteuning. Vermeld modellen, deelmethode en bereikte stap, zonder codes of privétoegang. Deze controle stelt geen storing bij de aanbieder vast en vereist geen tv-reset of wissen van opgeslagen spelerinstellingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Código AirPlay com Geo IPTV: identifique o pedido antes de escrever",
+      "excerpt": "Veja se o código do televisor pertence ao AirPlay ou ao leitor. Preserve as proteções de partilha em casa e separe o acesso do fornecedor.",
+      "seo_title": "Código AirPlay com Geo IPTV: identifique o pedido antes de escrever",
+      "seo_description": "Veja se o código do televisor pertence ao AirPlay ou ao leitor. Preserve as proteções de partilha em casa e separe o acesso do fornecedor.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã que pede o código",
+          "paragraphs": [
+            "Uma dúvida sobre um código AirPlay com Geo IPTV começa no ecrã que o solicita. Anote se o televisor menciona AirPlay, um dispositivo emissor ou o leitor instalado. Uma partilha local é diferente do início de sessão no fornecedor. Não comprova ativação de assinatura nem necessidade de pagamento. Se ninguém pretendia partilhar, pare antes de escrever e identifique o televisor e o pedido, sem introduzir dados de conta numa página desconhecida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia quem se pode ligar",
+          "paragraphs": [
+            "Na interface documentada do Apple TV 4K, abra Definições, AirPlay e Apple Home e depois Permitir acesso. Algumas versões usam o nome AirPlay e HomeKit. Leia com o proprietário o público autorizado e a exigência atual de palavra-passe. Mantenha as proteções úteis da casa: selecionar Todos ou retirar uma palavra-passe é desnecessário para identificar um aviso. A Apple descreve uma palavra-passe no ecrã na primeira utilização de uma sessão AirPlay pretendida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Definições Apple de acesso AirPlay",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Regresse ao leitor pretendido",
+          "paragraphs": [
+            "Numa partilha planeada e permitida, confirme o nome do televisor recetor e siga as instruções Apple no dispositivo emissor correto. Nunca publique o código apresentado. Se estava a abrir um leitor nativo, descreva essa ação diferente e o aviso inesperado ao apoio. Indique modelos, método de partilha e etapa alcançada, sem códigos nem acessos privados. Esta verificação não diagnostica uma falha do fornecedor nem exige repor o televisor ou apagar a configuração guardada do leitor."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Код AirPlay при Geo IPTV: определите запрос перед вводом",
+      "excerpt": "Проверьте, относится ли код на телевизоре к AirPlay или плееру. Сохраните домашнюю защиту общего доступа и отдельно проверяйте вход к провайдеру.",
+      "seo_title": "Код AirPlay при Geo IPTV: определите запрос перед вводом",
+      "seo_description": "Проверьте, относится ли код на телевизоре к AirPlay или плееру. Сохраните домашнюю защиту общего доступа и отдельно проверяйте вход к провайдеру.",
+      "sections": [
+        {
+          "heading": "Определите экран с запросом",
+          "paragraphs": [
+            "Вопрос о коде AirPlay при просмотре Geo IPTV начинается с экрана, который его запрашивает. Отметьте, указаны ли AirPlay, передающее устройство или установленный плеер. Локальная передача отличается от входа к провайдеру. Она не подтверждает активацию подписки или необходимость оплаты. Если никто не собирался передавать изображение, не спешите вводить данные: сначала определите телевизор и запрос, не сообщая данные аккаунта незнакомой странице."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Посмотрите, кому разрешено подключаться",
+          "paragraphs": [
+            "В документированном интерфейсе Apple TV 4K откройте Настройки, AirPlay и Apple Home, затем Разрешить доступ. В некоторых версиях используется название AirPlay и HomeKit. Вместе с владельцем прочитайте, кому сейчас разрешено подключение и требуется ли пароль. Сохраните полезную домашнюю защиту: выбирать Все или убирать пароль ради распознавания уведомления не нужно. Apple описывает пароль на экране при первом использовании запланированного сеанса AirPlay."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Настройки Apple для доступа AirPlay",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Вернитесь к нужному плееру",
+          "paragraphs": [
+            "Для запланированной и разрешённой передачи подтвердите имя принимающего телевизора и следуйте инструкции Apple на нужном передающем устройстве. Никогда не публикуйте показанный код. Если вы открывали обычное приложение-плеер, опишите поддержке это другое действие и неожиданный запрос. Укажите модели, способ передачи и достигнутый этап, без кодов и частных данных доступа. Эта проверка не диагностирует сбой провайдера и не требует сброса телевизора или удаления сохранённых настроек плеера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کا AirPlay کوڈ: لکھنے سے پہلے درخواست پہچانیں",
+      "excerpt": "دیکھیں کہ ٹی وی کا کوڈ AirPlay کا ہے یا پلیئر کا۔ گھر میں شیئرنگ کی حفاظت برقرار رکھیں اور فراہم کنندہ کی رسائی الگ جانچیں۔",
+      "seo_title": "Geo IPTV کا AirPlay کوڈ: لکھنے سے پہلے درخواست پہچانیں",
+      "seo_description": "دیکھیں کہ ٹی وی کا کوڈ AirPlay کا ہے یا پلیئر کا۔ گھر میں شیئرنگ کی حفاظت برقرار رکھیں اور فراہم کنندہ کی رسائی الگ جانچیں۔",
+      "sections": [
+        {
+          "heading": "کوڈ مانگنے والی اسکرین پہچانیں",
+          "paragraphs": [
+            "Geo IPTV کے دوران AirPlay کوڈ کے سوال کی ابتدا اسے مانگنے والی اسکرین سے ہوتی ہے۔ نوٹ کریں کہ ٹی وی پر AirPlay، بھیجنے والا آلہ یا نصب پلیئر لکھا ہے۔ مقامی شیئرنگ کی درخواست فراہم کنندہ میں سائن اِن سے مختلف ہے۔ یہ رکنیت فعال ہونے یا ادائیگی لازم ہونے کا ثبوت نہیں۔ کسی نے شیئر کرنے کا ارادہ نہ کیا ہو تو لکھنے سے پہلے رکیں اور ٹی وی اور درخواست پہچانیں؛ نامانوس صفحے میں اکاؤنٹ کی تفصیلات درج نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دیکھیں کون جڑ سکتا ہے",
+          "paragraphs": [
+            "Apple TV 4K کے بیان کردہ انٹرفیس میں ترتیبات، AirPlay اور Apple Home، پھر رسائی کی اجازت کھولیں۔ کچھ نسخوں میں AirPlay اور HomeKit نام ہوتا ہے۔ مالک کے ساتھ موجودہ اجازت یافتہ افراد اور پاس ورڈ کی شرط پڑھیں۔ گھر کی مفید حفاظت برقرار رکھیں؛ صرف پیغام پہچاننے کے لیے سب کو اجازت دینا یا پاس ورڈ ہٹانا ضروری نہیں۔ Apple ارادی AirPlay سیشن کے پہلے استعمال پر اسکرین پر پاس ورڈ دکھانے کی وضاحت کرتا ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple کی AirPlay رسائی کی ترتیبات",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "مطلوبہ پلیئر پر واپس جائیں",
+          "paragraphs": [
+            "ارادی اور اجازت یافتہ شیئرنگ کے لیے وصول کرنے والے ٹی وی کا نام پکا کریں اور درست بھیجنے والے آلے پر Apple کی ہدایات مانیں۔ دکھایا ہوا کوڈ کبھی عوامی طور پر نہ دیں۔ اگر آپ مقامی پلیئر ایپ کھول رہے تھے تو معاونت کو وہ الگ عمل اور غیر متوقع درخواست بتائیں۔ ماڈل، شیئرنگ کا طریقہ اور پہنچنے والا مرحلہ دیں، کوڈ یا نجی رسائی کی تفصیلات نہیں۔ یہ جانچ فراہم کنندہ کی بندش کی تشخیص نہیں کرتی اور نہ ٹی وی ری سیٹ کرنے یا پلیئر کی محفوظ ترتیب مٹانے کا تقاضا کرتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "رمز AirPlay مع Geo IPTV: تعرّف على الطلب قبل الكتابة",
+      "excerpt": "تحقق هل رمز التلفاز يخص AirPlay أم المشغل. احتفظ بحماية المشاركة المنزلية وافصلها عن بيانات دخول مزود الخدمة.",
+      "seo_title": "رمز AirPlay مع Geo IPTV: تعرّف على الطلب قبل الكتابة",
+      "seo_description": "تحقق هل رمز التلفاز يخص AirPlay أم المشغل. احتفظ بحماية المشاركة المنزلية وافصلها عن بيانات دخول مزود الخدمة.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة التي تطلب الرمز",
+          "paragraphs": [
+            "يبدأ سؤال رمز AirPlay أثناء مشاهدة Geo IPTV بالشاشة التي تطلبه. دوّن هل يذكر التلفاز AirPlay أم جهاز الإرسال أم المشغل المثبت. طلب المشاركة المحلية يختلف عن تسجيل الدخول لدى المزود. ولا يثبت تفعيل الاشتراك أو وجوب الدفع. إذا لم يقصد أحد المشاركة، فتوقف قبل الكتابة وحدد التلفاز والطلب بدلاً من إدخال بيانات الحساب في صفحة غير مألوفة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ من يُسمح له بالاتصال",
+          "paragraphs": [
+            "في واجهة Apple TV 4K الموثقة، افتح الإعدادات ثم AirPlay وApple Home ثم السماح بالوصول. تستخدم بعض الإصدارات اسم AirPlay وHomeKit. اقرأ مع المالك الجمهور المسموح له حاليًا وشرط كلمة السر. احتفظ بالحماية المنزلية المفيدة؛ اختيار الجميع أو إزالة كلمة السر غير ضروري لمجرد التعرف على التنبيه. توضح Apple ظهور كلمة سر على الشاشة عند الاستخدام الأول لجلسة AirPlay مقصودة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "إعدادات Apple للوصول عبر AirPlay",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "عُد إلى المشغل المقصود",
+          "paragraphs": [
+            "للمشاركة المخططة والمسموح بها، أكد اسم التلفاز المستقبل واتبع تعليمات Apple على جهاز الإرسال المقصود. لا تنشر الرمز المعروض علنًا أبدًا. وإذا كنت تفتح تطبيق مشغل محليًا بدلاً من المشاركة، فصف للدعم ذلك الإجراء المختلف والطلب المفاجئ. اذكر الطرز وطريقة المشاركة والمرحلة التي وصلت إليها، دون رموز أو بيانات وصول خاصة. لا تشخّص هذه الخطوة انقطاع المزود ولا تتطلب إعادة ضبط التلفاز أو مسح إعداد المشغل المحفوظ."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV का AirPlay कोड: लिखने से पहले अनुरोध पहचानें",
+      "excerpt": "देखें कि टीवी का कोड AirPlay का है या प्लेयर का। घर में साझा करने की सुरक्षा बनाए रखें और प्रदाता की पहुँच अलग जाँचें।",
+      "seo_title": "Geo IPTV का AirPlay कोड: लिखने से पहले अनुरोध पहचानें",
+      "seo_description": "देखें कि टीवी का कोड AirPlay का है या प्लेयर का। घर में साझा करने की सुरक्षा बनाए रखें और प्रदाता की पहुँच अलग जाँचें।",
+      "sections": [
+        {
+          "heading": "कोड माँगने वाली स्क्रीन पहचानें",
+          "paragraphs": [
+            "Geo IPTV देखते समय AirPlay कोड का सवाल उसे माँगने वाली स्क्रीन से शुरू होता है। लिखें कि टीवी AirPlay, भेजने वाले डिवाइस या इंस्टॉल किए प्लेयर का नाम दिखा रहा है। स्थानीय साझाकरण का अनुरोध प्रदाता में साइन इन करने से अलग है। यह सदस्यता सक्रिय होने या भुगतान जरूरी होने का प्रमाण नहीं है। किसी ने साझा करने का इरादा न किया हो तो लिखने से पहले रुकें और टीवी तथा अनुरोध पहचानें; अनजान पेज में खाते की जानकारी न डालें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पढ़ें कि कौन जुड़ सकता है",
+          "paragraphs": [
+            "Apple TV 4K के बताए इंटरफ़ेस में सेटिंग, AirPlay और Apple Home, फिर पहुँच की अनुमति खोलें। कुछ संस्करणों में AirPlay और HomeKit नाम आता है। मालिक के साथ अभी अनुमति पाए लोगों और पासवर्ड की शर्त पढ़ें। घर की उपयोगी सुरक्षा बनाए रखें; केवल संदेश पहचानने के लिए सभी को अनुमति देना या पासवर्ड हटाना जरूरी नहीं है। Apple इरादे से शुरू किए AirPlay सत्र के पहले उपयोग पर स्क्रीन पर पासवर्ड दिखने का वर्णन करता है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple की AirPlay पहुँच सेटिंग",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "चाहे गए प्लेयर पर लौटें",
+          "paragraphs": [
+            "योजना के अनुसार और अनुमति से साझा करने के लिए पाने वाले टीवी का नाम पक्का करें और सही भेजने वाले डिवाइस पर Apple के निर्देश मानें। दिखा कोड कभी सार्वजनिक न करें। यदि आप स्थानीय प्लेयर ऐप खोल रहे थे तो सहायता को वह अलग काम और अनचाहा अनुरोध बताएँ। मॉडल, साझा करने का तरीका और पहुँचा चरण दें, कोड या निजी पहुँच विवरण नहीं। यह जाँच प्रदाता की सेवा बंद होने का निदान नहीं करती और न टीवी रीसेट करने या प्लेयर का सहेजा सेटअप मिटाने की जरूरत पैदा करती है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple TV: AirPlay access settings",
+      "url": "https://support.apple.com/en-am/guide/tv/atvb0342111f/tvos"
+    },
+    {
+      "label": "Apple: an AirPlay password on the television",
+      "url": "https://support.apple.com/en-mide/102324"
+    }
+  ]
+}

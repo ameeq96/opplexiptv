@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-21",
+  "topic": "Inspect a Google TV handset software-update option separately from Get IPTV player navigation, system updates and Opplex or Filex order state.",
+  "primary_keyword": "Get IPTV remote update",
+  "slug": "getiptv-remote-update-check-the-actual-handset",
+  "translations": {
+    "en": {
+      "title": "Get IPTV remote update: check the Google TV handset",
+      "excerpt": "Identify the Google TV remote and its update prompt before changing the player. Keep handset software separate from your Get IPTV provider and order state.",
+      "seo_title": "Get IPTV remote update: check the Google TV handset",
+      "seo_description": "Identify the Google TV remote and its update prompt before changing the player. Keep handset software separate from your Get IPTV provider and order state.",
+      "sections": [
+        {
+          "heading": "Identify which controls fail",
+          "paragraphs": [
+            "Before treating a navigation problem as a Get IPTV remote update issue, compare the same ordinary button on Google TV Home and inside the intended player. Note whether both screens respond, only one app fails, or the handset is missing from the accessory list. Remote software, the television’s system software and the installed player are different components. A stopped programme alone does not prove that the remote needs an update."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the actual handset entry",
+          "paragraphs": [
+            "Google documents opening Settings from Google TV Home, then selecting the remote under Remote & Accessories. Choose the handset actually in use, not an unrelated Bluetooth accessory. If an update is available, follow the displayed installation instructions. Availability and labels depend on the equipment and software; do not assume every remote offers the same option. Record the remote name and the prompt, and follow any displayed power or connection instructions rather than guessing battery-removal or reset steps."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official Google TV troubleshooting",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the result without erasing setup",
+          "paragraphs": [
+            "After any offered update finishes, compare that same button on Home and in the player again. Report which screen still fails instead of claiming that remote firmware repairs every playback problem. Keep saved pairing and player access intact for this check. Confirm the selected Opplex or Filex service and Get IPTV order/setup state separately. A player licence can cost extra, and an unstated Filex connection allowance needs confirmation. Send support the device and remote names, without passwords or private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Actualización del mando para Get IPTV: compruebe el dispositivo de Google TV",
+      "excerpt": "Identifique el mando de Google TV y su aviso de actualización antes de cambiar el reproductor. Separe su software del proveedor y del estado del pedido Get IPTV.",
+      "seo_title": "Actualización del mando para Get IPTV: compruebe el dispositivo de Google TV",
+      "seo_description": "Identifique el mando de Google TV y su aviso de actualización antes de cambiar el reproductor. Separe su software del proveedor y del estado del pedido Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique qué controles fallan",
+          "paragraphs": [
+            "Antes de atribuir un problema de navegación a una actualización del mando al usar Get IPTV, compare el mismo botón habitual en Inicio de Google TV y dentro del reproductor. Anote si responden ambas pantallas, si falla solo una aplicación o si el mando no aparece entre los accesorios. El software del mando, el sistema del televisor y el reproductor son componentes distintos. Un programa detenido no demuestra por sí solo que el mando necesite actualizarse."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lea la entrada del mando real",
+          "paragraphs": [
+            "Google documenta abrir Ajustes desde Inicio de Google TV y seleccionar el mando en Mandos y accesorios. Elija el que está usando, no otro accesorio Bluetooth. Si existe una actualización, siga las instrucciones de instalación mostradas. La disponibilidad y los nombres dependen del equipo y del software; no todos los mandos ofrecen la misma opción. Registre el nombre del mando y el aviso, y respete las instrucciones de alimentación o conexión en vez de improvisar extracciones de pilas o restablecimientos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Solución de problemas oficial de Google TV",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare el resultado sin borrar la configuración",
+          "paragraphs": [
+            "Cuando termine la actualización ofrecida, compare otra vez ese mismo botón en Inicio y en el reproductor. Indique qué pantalla sigue fallando sin afirmar que el firmware soluciona cualquier problema de reproducción. Conserve el emparejamiento y el acceso guardado al reproductor. Confirme aparte el servicio Opplex o Filex y el estado del pedido y la configuración de Get IPTV. La licencia del reproductor puede tener un coste adicional; consulte cualquier límite de conexiones Filex no indicado. Facilite los nombres del dispositivo y del mando, sin contraseñas ni direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Mise à jour de télécommande Get IPTV : vérifiez le modèle Google TV",
+      "excerpt": "Identifiez la télécommande Google TV et son message de mise à jour avant de modifier le lecteur. Séparez son logiciel du fournisseur et de la commande Get IPTV.",
+      "seo_title": "Mise à jour de télécommande Get IPTV : vérifiez le modèle Google TV",
+      "seo_description": "Identifiez la télécommande Google TV et son message de mise à jour avant de modifier le lecteur. Séparez son logiciel du fournisseur et de la commande Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifiez les commandes qui échouent",
+          "paragraphs": [
+            "Avant d’attribuer un problème de navigation à une mise à jour de télécommande pendant Get IPTV, comparez une même touche habituelle sur l’accueil Google TV et dans le lecteur. Notez si les deux écrans répondent, si une seule application échoue ou si la télécommande manque dans les accessoires. Son logiciel, le système du téléviseur et le lecteur installé sont distincts. Un programme arrêté ne prouve pas que la télécommande doit être mise à jour."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez l’entrée de la bonne télécommande",
+          "paragraphs": [
+            "Google indique d’ouvrir Paramètres depuis l’accueil Google TV, puis de sélectionner la télécommande dans Télécommandes et accessoires. Choisissez celle réellement utilisée, pas un autre accessoire Bluetooth. Si une mise à jour est proposée, suivez les consignes affichées. La disponibilité et les intitulés dépendent du matériel et du logiciel ; toutes les télécommandes n’offrent pas la même option. Notez son nom et le message, puis respectez les indications d’alimentation ou de connexion sans improviser un retrait des piles ou une réinitialisation."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide officielle au dépannage Google TV",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez sans effacer la configuration",
+          "paragraphs": [
+            "Une fois la mise à jour proposée terminée, comparez encore la même touche sur l’accueil et dans le lecteur. Précisez quel écran échoue encore sans prétendre que le micrologiciel résout tous les problèmes vidéo. Conservez l’association et l’accès enregistrés au lecteur. Confirmez séparément le service Opplex ou Filex choisi et l’état de la commande et de la configuration Get IPTV. Une licence du lecteur peut être payante ; demandez toute limite de connexions Filex non précisée. Transmettez les noms de l’appareil et de la télécommande, sans mot de passe ni adresse privée de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: aggiornamento del telecomando e modello Google TV",
+      "excerpt": "Identifica il telecomando Google TV e l’avviso di aggiornamento prima di cambiare il lettore. Separa il suo software dal fornitore e dallo stato dell’ordine Get IPTV.",
+      "seo_title": "Get IPTV: aggiornamento del telecomando e modello Google TV",
+      "seo_description": "Identifica il telecomando Google TV e l’avviso di aggiornamento prima di cambiare il lettore. Separa il suo software dal fornitore e dallo stato dell’ordine Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifica i comandi che non rispondono",
+          "paragraphs": [
+            "Prima di attribuire un problema di navigazione durante Get IPTV a un aggiornamento del telecomando, confronta lo stesso normale pulsante nella schermata iniziale Google TV e nel lettore. Annota se rispondono entrambe, se fallisce solo un’app o se il telecomando manca nell’elenco accessori. Software del telecomando, sistema del televisore e lettore installato sono componenti diversi. Un programma fermo non dimostra da solo la necessità di aggiornare il telecomando."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la voce del telecomando corretto",
+          "paragraphs": [
+            "Google indica di aprire Impostazioni dalla schermata iniziale Google TV e selezionare il telecomando in Telecomandi e accessori. Scegli quello in uso, non un altro accessorio Bluetooth. Se è disponibile un aggiornamento, segui le istruzioni mostrate per installarlo. Disponibilità e nomi dipendono da apparecchio e software: non tutti i telecomandi hanno la stessa opzione. Annota nome e avviso e rispetta le indicazioni sull’alimentazione o sul collegamento, senza improvvisare rimozioni di batterie o ripristini."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Risoluzione dei problemi ufficiale Google TV",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta senza cancellare la configurazione",
+          "paragraphs": [
+            "Al termine dell’aggiornamento proposto, confronta di nuovo quel pulsante sulla schermata iniziale e nel lettore. Indica quale schermata continua a non rispondere senza sostenere che il firmware risolva ogni problema di riproduzione. Conserva abbinamento e accesso salvato al lettore. Conferma separatamente il servizio Opplex o Filex scelto e lo stato dell’ordine e della configurazione Get IPTV. La licenza del lettore può costare a parte; chiedi i limiti Filex non indicati. Comunica i nomi di dispositivo e telecomando senza password o indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-afstandsbediening bijwerken: controleer de Google TV-handset",
+      "excerpt": "Herken de Google TV-afstandsbediening en updatevraag voordat u de speler wijzigt. Houd handsetsoftware apart van de aanbieder en Get IPTV-bestelstatus.",
+      "seo_title": "Get IPTV-afstandsbediening bijwerken: controleer de Google TV-handset",
+      "seo_description": "Herken de Google TV-afstandsbediening en updatevraag voordat u de speler wijzigt. Houd handsetsoftware apart van de aanbieder en Get IPTV-bestelstatus.",
+      "sections": [
+        {
+          "heading": "Bepaal welke bediening niet werkt",
+          "paragraphs": [
+            "Vergelijk voordat u een navigatieprobleem bij Get IPTV aan een afstandsbedieningsupdate wijt dezelfde gewone knop op Google TV Home en in de bedoelde speler. Noteer of beide schermen reageren, slechts één app faalt of de handset ontbreekt in de accessoirelijst. Software van de afstandsbediening, het televisiesysteem en de speler zijn aparte onderdelen. Een gestopt programma bewijst op zichzelf niet dat een update nodig is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de juiste handsetvermelding",
+          "paragraphs": [
+            "Google beschrijft hoe u vanaf Google TV Home Instellingen opent en de afstandsbediening bij Afstandsbedieningen en accessoires selecteert. Kies de handset die u gebruikt, niet een ander Bluetooth-accessoire. Volg bij een beschikbare update de getoonde installatie-instructies. Beschikbaarheid en namen verschillen per apparaat en software; niet elke afstandsbediening biedt dezelfde optie. Noteer de naam en melding en volg eventuele voedings- of verbindingsinstructies in plaats van zelf batterijen te verwijderen of te resetten."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële Google TV-probleemoplossing",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk zonder instellingen te wissen",
+          "paragraphs": [
+            "Vergelijk na voltooiing van een aangeboden update dezelfde knop opnieuw op Home en in de speler. Meld welk scherm nog faalt zonder te beweren dat firmware elk afspeelprobleem verhelpt. Bewaar koppeling en opgeslagen spelertoegang voor deze controle. Bevestig de gekozen Opplex- of Filex-dienst en de Get IPTV-bestel- en instelstatus apart. Een spelerlicentie kan apart geld kosten; vraag naar een niet genoemde Filex-verbindingslimiet. Deel apparaat- en handsetnaam zonder wachtwoorden of privéafspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atualização do comando Get IPTV: confira o modelo Google TV",
+      "excerpt": "Identifique o comando Google TV e o aviso de atualização antes de alterar o leitor. Separe o software do comando do fornecedor e da encomenda Get IPTV.",
+      "seo_title": "Atualização do comando Get IPTV: confira o modelo Google TV",
+      "seo_description": "Identifique o comando Google TV e o aviso de atualização antes de alterar o leitor. Separe o software do comando do fornecedor e da encomenda Get IPTV.",
+      "sections": [
+        {
+          "heading": "Identifique os controlos que falham",
+          "paragraphs": [
+            "Antes de atribuir um problema de navegação durante Get IPTV à atualização do comando, compare o mesmo botão habitual no ecrã inicial Google TV e no leitor pretendido. Registe se ambos respondem, se falha apenas uma aplicação ou se o comando não aparece nos acessórios. O software do comando, o sistema do televisor e o leitor instalado são componentes diferentes. Um programa parado não prova, por si só, que o comando precisa de atualização."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a entrada do comando correto",
+          "paragraphs": [
+            "O Google indica que deve abrir Definições no ecrã inicial Google TV e selecionar o comando em Comandos e acessórios. Escolha o que utiliza, não outro acessório Bluetooth. Se existir uma atualização, siga as instruções de instalação apresentadas. A disponibilidade e os nomes variam com o equipamento e software; nem todos oferecem a mesma opção. Registe o nome e o aviso e siga as indicações de alimentação ou ligação, em vez de improvisar remoções de pilhas ou reposições."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Resolução de problemas oficial do Google TV",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare sem apagar a configuração",
+          "paragraphs": [
+            "Depois de concluir a atualização proposta, compare novamente o mesmo botão no ecrã inicial e no leitor. Indique qual continua a falhar sem afirmar que o firmware resolve qualquer problema de reprodução. Preserve o emparelhamento e o acesso guardado ao leitor. Confirme separadamente o serviço Opplex ou Filex escolhido e o estado da encomenda e configuração Get IPTV. A licença do leitor pode ter custo separado; pergunte por um limite Filex não indicado. Partilhe os nomes do dispositivo e comando sem palavras-passe ou endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Обновление пульта для Get IPTV: проверьте устройство Google TV",
+      "excerpt": "Определите пульт Google TV и его запрос обновления, прежде чем менять плеер. Отделяйте ПО пульта от провайдера и статуса заказа Get IPTV.",
+      "seo_title": "Обновление пульта для Get IPTV: проверьте устройство Google TV",
+      "seo_description": "Определите пульт Google TV и его запрос обновления, прежде чем менять плеер. Отделяйте ПО пульта от провайдера и статуса заказа Get IPTV.",
+      "sections": [
+        {
+          "heading": "Определите неработающие кнопки",
+          "paragraphs": [
+            "Прежде чем связывать проблему навигации при Get IPTV с обновлением пульта, сравните одну обычную кнопку на главном экране Google TV и в нужном плеере. Отметьте, отвечают ли оба экрана, не работает ли только одно приложение или пульт отсутствует среди аксессуаров. Программное обеспечение пульта, система телевизора и установленный плеер — разные компоненты. Остановка передачи сама по себе не доказывает необходимость обновления пульта."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Откройте запись нужного пульта",
+          "paragraphs": [
+            "Google описывает открытие настроек с главного экрана Google TV и выбор пульта в разделе пультов и аксессуаров. Выберите используемый пульт, а не другое устройство Bluetooth. Если доступно обновление, следуйте показанным инструкциям установки. Названия и доступность зависят от оборудования и ПО: одинаковая возможность есть не у всех пультов. Запишите название и запрос, соблюдайте показанные требования к питанию или соединению, а не придумывайте извлечение батареек или сброс."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная справка Google TV",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните результат без удаления настроек",
+          "paragraphs": [
+            "После завершения предложенного обновления снова сравните ту же кнопку на главном экране и в плеере. Сообщите, какой экран по-прежнему не отвечает, не утверждая, что прошивка устраняет любую проблему воспроизведения. Сохраните сопряжение и доступ к плееру. Отдельно уточните выбранный сервис Opplex или Filex и состояние заказа и настройки Get IPTV. Лицензия плеера может оплачиваться отдельно; неуказанный лимит Filex нужно уточнить. Передайте названия устройства и пульта без паролей и закрытых адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV ریموٹ اپ ڈیٹ: پہلے Google TV کا ہینڈ سیٹ دیکھیں",
+      "excerpt": "پلیئر بدلنے سے پہلے Google TV کا ریموٹ اور اپ ڈیٹ کا پیغام پہچانیں۔ ریموٹ کا سافٹ ویئر، Get IPTV کا فراہم کنندہ اور آرڈر کی حالت الگ رکھیں۔",
+      "seo_title": "Get IPTV ریموٹ اپ ڈیٹ: پہلے Google TV کا ہینڈ سیٹ دیکھیں",
+      "seo_description": "پلیئر بدلنے سے پہلے Google TV کا ریموٹ اور اپ ڈیٹ کا پیغام پہچانیں۔ ریموٹ کا سافٹ ویئر، Get IPTV کا فراہم کنندہ اور آرڈر کی حالت الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "دیکھیں کون سے کنٹرول نہیں چلتے",
+          "paragraphs": [
+            "نیویگیشن کی خرابی کو Get IPTV کے ریموٹ اپ ڈیٹ کا مسئلہ سمجھنے سے پہلے ایک ہی عام بٹن Google TV کے ہوم اور مطلوبہ پلیئر میں آزمائیں۔ نوٹ کریں کہ دونوں اسکرین جواب دیتی ہیں، صرف ایک ایپ ناکام ہے یا ریموٹ لوازمات کی فہرست میں موجود نہیں۔ ریموٹ کا سافٹ ویئر، ٹی وی کا نظام اور نصب پلیئر الگ اجزا ہیں۔ صرف پروگرام رکنا ریموٹ کی اپ ڈیٹ ضروری ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اصل ریموٹ کی معلومات پڑھیں",
+          "paragraphs": [
+            "Google کی ہدایت کے مطابق Google TV ہوم سے ترتیبات کھول کر ریموٹ اور لوازمات میں اپنا ریموٹ منتخب کریں۔ استعمال ہونے والا ہینڈ سیٹ چنیں، غیر متعلقہ Bluetooth آلہ نہیں۔ اپ ڈیٹ موجود ہو تو دکھائی گئی تنصیب کی ہدایات پر چلیں۔ دستیابی اور نام آلے اور سافٹ ویئر کے مطابق بدلتے ہیں؛ ہر ریموٹ میں ایک جیسا اختیار فرض نہ کریں۔ نام اور پیغام نوٹ کریں اور بیٹری نکالنے یا ری سیٹ کا طریقہ خود بنانے کے بجائے بجلی یا کنکشن کی دکھائی گئی ہدایات پر چلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV کی سرکاری خرابیوں کی رہنمائی",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ترتیب مٹائے بغیر نتیجہ دیکھیں",
+          "paragraphs": [
+            "پیش کردہ اپ ڈیٹ مکمل ہو تو وہی بٹن دوبارہ ہوم اور پلیئر میں آزمائیں۔ بتائیں کون سی اسکرین اب بھی ناکام ہے؛ یہ دعویٰ نہ کریں کہ ریموٹ کا سافٹ ویئر ہر پلے بیک مسئلہ حل کرتا ہے۔ جانچ کے لیے محفوظ جوڑی اور پلیئر کی رسائی برقرار رکھیں۔ منتخب Opplex یا Filex سروس اور Get IPTV آرڈر و ترتیب کی حالت الگ تصدیق کریں۔ پلیئر لائسنس کی الگ قیمت ہو سکتی ہے اور Filex کی غیر درج کنکشن حد پوچھنی ہوگی۔ معاونت کو آلے اور ریموٹ کے نام دیں، پاس ورڈ یا نجی پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تحديث جهاز تحكم Get IPTV: تحقق من وحدة Google TV أولاً",
+      "excerpt": "حدد جهاز تحكم Google TV ورسالة تحديثه قبل تغيير المشغل. افصل برنامج وحدة التحكم عن مزود Get IPTV وحالة الطلب.",
+      "seo_title": "تحديث جهاز تحكم Get IPTV: تحقق من وحدة Google TV أولاً",
+      "seo_description": "حدد جهاز تحكم Google TV ورسالة تحديثه قبل تغيير المشغل. افصل برنامج وحدة التحكم عن مزود Get IPTV وحالة الطلب.",
+      "sections": [
+        {
+          "heading": "حدد الأزرار التي لا تستجيب",
+          "paragraphs": [
+            "قبل اعتبار مشكلة التنقل أثناء Get IPTV مشكلة تحديث لجهاز التحكم، قارن الزر العادي نفسه على الشاشة الرئيسية لـ Google TV وداخل المشغل المقصود. دوّن هل تستجيب الشاشتان، أم يفشل تطبيق واحد، أم تغيب وحدة التحكم عن قائمة الملحقات. برنامج جهاز التحكم ونظام التلفزيون والمشغل المثبت مكونات مختلفة. توقف برنامج المشاهدة وحده لا يثبت حاجة جهاز التحكم إلى تحديث."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ بيانات وحدة التحكم الفعلية",
+          "paragraphs": [
+            "توضح Google فتح الإعدادات من الشاشة الرئيسية لـ Google TV، ثم اختيار جهاز التحكم ضمن أجهزة التحكم والملحقات. حدد الوحدة المستخدمة فعلاً وليس ملحق Bluetooth آخر. إذا توفر تحديث، فاتبع تعليمات التثبيت المعروضة. تختلف الخيارات وتسمياتها بحسب المعدات والبرنامج؛ فلا تفترض تطابقها في كل الوحدات. سجّل اسم الوحدة والرسالة، والتزم بتعليمات الطاقة أو الاتصال الظاهرة بدلاً من تخمين خطوات نزع البطاريات أو إعادة الضبط."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "استكشاف أخطاء Google TV الرسمي",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن النتيجة دون مسح الإعدادات",
+          "paragraphs": [
+            "بعد اكتمال التحديث المعروض، قارن الزر نفسه على الشاشة الرئيسية وداخل المشغل مجدداً. أبلغ عن الشاشة التي ما زالت تفشل، ولا تدّعِ أن البرنامج الثابت يصلح كل مشكلات التشغيل. احتفظ بالاقتران والوصول المحفوظ للمشغل أثناء هذا الفحص. أكد خدمة Opplex أو Filex المختارة وحالة طلب وإعداد Get IPTV بصورة مستقلة. قد تكون رخصة المشغل مدفوعة على حدة، ويحتاج حد اتصالات Filex غير المذكور إلى تأكيد. أرسل أسماء الجهاز ووحدة التحكم دون كلمات مرور أو عناوين تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV रिमोट अपडेट: पहले Google TV हैंडसेट जाँचें",
+      "excerpt": "प्लेयर बदलने से पहले Google TV रिमोट और उसका अपडेट संदेश पहचानें। हैंडसेट सॉफ्टवेयर को Get IPTV प्रदाता और ऑर्डर की स्थिति से अलग रखें।",
+      "seo_title": "Get IPTV रिमोट अपडेट: पहले Google TV हैंडसेट जाँचें",
+      "seo_description": "प्लेयर बदलने से पहले Google TV रिमोट और उसका अपडेट संदेश पहचानें। हैंडसेट सॉफ्टवेयर को Get IPTV प्रदाता और ऑर्डर की स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कौन-से नियंत्रण नहीं चलते",
+          "paragraphs": [
+            "नेविगेशन की समस्या को Get IPTV के रिमोट अपडेट की समस्या मानने से पहले वही सामान्य बटन Google TV होम और चाहे गए प्लेयर में जाँचें। नोट करें कि दोनों स्क्रीन जवाब देती हैं, केवल एक ऐप विफल है या हैंडसेट एक्सेसरी सूची में नहीं है। रिमोट का सॉफ्टवेयर, टीवी का सिस्टम और इंस्टॉल किया प्लेयर अलग घटक हैं। केवल कार्यक्रम रुकना यह साबित नहीं करता कि रिमोट को अपडेट चाहिए।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "असल हैंडसेट की जानकारी पढ़ें",
+          "paragraphs": [
+            "Google के निर्देश में Google TV होम से सेटिंग खोलकर रिमोट और एक्सेसरी में अपना रिमोट चुनना बताया गया है। इस्तेमाल हो रहा हैंडसेट चुनें, कोई असंबंधित Bluetooth एक्सेसरी नहीं। अपडेट उपलब्ध हो तो दिखाई गई इंस्टॉलेशन हिदायतें मानें। उपलब्धता और नाम उपकरण तथा सॉफ्टवेयर पर निर्भर हैं; हर रिमोट में एक ही विकल्प न मानें। रिमोट का नाम और संदेश लिखें तथा बैटरी निकालने या रीसेट के कदम खुद बनाने के बजाय दिखे बिजली और कनेक्शन संबंधी निर्देश मानें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV की आधिकारिक समस्या सहायता",
+              "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सेटअप मिटाए बिना नतीजा जाँचें",
+          "paragraphs": [
+            "दिया गया अपडेट पूरा हो तो उसी बटन को फिर होम और प्लेयर में जाँचें। बताएँ कौन-सी स्क्रीन अब भी विफल है; यह दावा न करें कि रिमोट फर्मवेयर हर प्लेबैक समस्या ठीक करता है। इस जाँच में सहेड़ी हुई पेयरिंग और प्लेयर पहुँच बनाए रखें। चुनी Opplex या Filex सेवा तथा Get IPTV ऑर्डर और सेटअप की स्थिति अलग पक्की करें। प्लेयर लाइसेंस का अलग शुल्क हो सकता है और Filex की अनबताई कनेक्शन सीमा पूछनी होगी। सहायता को डिवाइस और रिमोट के नाम दें, पासवर्ड या निजी प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: remote-control update checks",
+      "url": "https://support.google.com/googletv/answer/10070482?hl=en"
+    }
+  ]
+}

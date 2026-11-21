@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-21",
+  "topic": "Record VLC for Android hardware acceleration and compare one documented reversible decoding option for unstable Trex IPTV playback without resetting saved access.",
+  "primary_keyword": "Trex IPTV decoding check",
+  "slug": "trex-decoding-check-vlc-acceleration-baseline",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV decoding check: record VLC acceleration before changing it",
+      "excerpt": "Inspect the installed VLC hardware-acceleration choice before a controlled comparison. Keep the original setting, saved access and one simultaneous connection.",
+      "seo_title": "Trex IPTV decoding check: record VLC acceleration before changing it",
+      "seo_description": "Inspect the installed VLC hardware-acceleration choice before a controlled comparison. Keep the original setting, saved access and one simultaneous connection.",
+      "sections": [
+        {
+          "heading": "Name the player and symptom",
+          "paragraphs": [
+            "A Trex IPTV decoding check should start with the actual player, not a television-wide reset. If you use VLC for Android and video playback is unstable, record whether the app closes, the picture stalls or sound continues without a picture. Note the device and VLC version. A symptom on one player does not establish a service-wide outage, and another app may use different controls."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the current acceleration option",
+          "paragraphs": [
+            "VideoLAN documents Hardware Acceleration in VLC for Android, with Automatic as the default and other choices including Disabled, Decoding acceleration and Full acceleration. Read the option available in your installed version and record its current value; keep Automatic as the baseline if that is already selected. For instability, the documentation identifies Disabled as an option to compare. Make only one reversible change with the same permitted video, rather than assuming the strongest-sounding option is always better."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Restore an unhelpful change",
+          "paragraphs": [
+            "Watch a short section and describe whether the original symptom changed, including any new problem. Restore the earlier option if the comparison does not help. Decoding preferences do not add source resolution, renew access or guarantee uninterrupted playback. Trex IPTV 8K permits one simultaneous connection, so keep this check within one viewing session. If the setting is missing or instability remains, ask the player publisher about your version. Preserve credentials; clearing app data, enabling debugging and factory resets are unnecessary for this comparison."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comprobación de decodificación Trex IPTV: anote la aceleración de VLC",
+      "excerpt": "Revise la aceleración de hardware del VLC instalado antes de comparar. Conserve el ajuste original, el acceso guardado y una sola conexión simultánea.",
+      "seo_title": "Comprobación de decodificación Trex IPTV: anote la aceleración de VLC",
+      "seo_description": "Revise la aceleración de hardware del VLC instalado antes de comparar. Conserve el ajuste original, el acceso guardado y una sola conexión simultánea.",
+      "sections": [
+        {
+          "heading": "Identifique el reproductor y el síntoma",
+          "paragraphs": [
+            "Una comprobación de decodificación Trex IPTV debe empezar por el reproductor real, no por reiniciar de fábrica el televisor. Si utiliza VLC para Android y el vídeo es inestable, anote si la aplicación se cierra, la imagen se detiene o el sonido continúa sin imagen. Registre dispositivo y versión de VLC. Un síntoma en un reproductor no demuestra una caída general; otra aplicación puede tener controles distintos."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lea la aceleración actual",
+          "paragraphs": [
+            "VideoLAN documenta la aceleración de hardware en VLC para Android: Automática es la opción predeterminada y también existen Desactivada, aceleración de decodificación y aceleración completa. Lea las opciones de su versión y anote el valor actual; mantenga Automática como referencia si ya está seleccionada. Para la inestabilidad, la documentación señala Desactivada como una opción que comparar. Haga un solo cambio reversible con el mismo vídeo autorizado, sin asumir que el nombre más potente siempre sea mejor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Restaure un cambio que no ayude",
+          "paragraphs": [
+            "Observe un fragmento corto y describa si cambia el síntoma inicial o aparece otro problema. Restaure la opción anterior si no ayuda. La decodificación no añade resolución, renueva el acceso ni garantiza reproducción continua. Trex IPTV 8K permite una conexión simultánea: mantenga la prueba en una sola sesión. Si falta el ajuste o persiste la inestabilidad, consulte al editor sobre su versión. Conserve credenciales; borrar datos, activar depuración o restablecer de fábrica es innecesario para esta comparación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Décodage Trex IPTV : noter l’accélération de VLC avant de la modifier",
+      "excerpt": "Lisez le choix d’accélération matérielle du VLC installé avant de comparer. Gardez le réglage initial, les accès enregistrés et une seule connexion simultanée.",
+      "seo_title": "Décodage Trex IPTV : noter l’accélération de VLC avant de la modifier",
+      "seo_description": "Lisez le choix d’accélération matérielle du VLC installé avant de comparer. Gardez le réglage initial, les accès enregistrés et une seule connexion simultanée.",
+      "sections": [
+        {
+          "heading": "Nommer le lecteur et le symptôme",
+          "paragraphs": [
+            "Une vérification du décodage Trex IPTV commence par le lecteur réellement utilisé, pas par une réinitialisation du téléviseur. Si VLC pour Android lit la vidéo de façon instable, notez si l’application se ferme, l’image se bloque ou le son continue sans image. Relevez appareil et version de VLC. Un symptôme dans un lecteur ne prouve pas une panne générale ; une autre application peut proposer des commandes différentes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire l’option d’accélération actuelle",
+          "paragraphs": [
+            "VideoLAN décrit l’accélération matérielle de VLC pour Android : Automatique est le choix par défaut, avec notamment Désactivée, accélération du décodage et accélération complète. Lisez les options de votre version et notez la valeur actuelle ; gardez Automatique comme référence si elle est déjà sélectionnée. Pour l’instabilité, la documentation propose Désactivée comme option à comparer. Effectuez un seul changement réversible avec la même vidéo autorisée, sans supposer que le nom le plus puissant soit toujours préférable."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Rétablir un changement inutile",
+          "paragraphs": [
+            "Regardez un court passage et décrivez l’évolution du symptôme initial, ainsi que tout nouveau problème. Rétablissez l’option précédente si cela n’aide pas. Le décodage n’ajoute pas de résolution, ne renouvelle pas l’accès et ne garantit pas une lecture continue. Trex IPTV 8K autorise une connexion simultanée : restez dans une seule session. Si le réglage manque ou le défaut persiste, interrogez l’éditeur sur votre version. Préservez les identifiants ; effacement des données, débogage et réinitialisation sont inutiles pour cette comparaison."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Decodifica Trex IPTV: annota l’accelerazione di VLC prima di cambiarla",
+      "excerpt": "Leggi l’accelerazione hardware del VLC installato prima di confrontare. Conserva impostazione originale, accesso salvato e una sola connessione simultanea.",
+      "seo_title": "Decodifica Trex IPTV: annota l’accelerazione di VLC prima di cambiarla",
+      "seo_description": "Leggi l’accelerazione hardware del VLC installato prima di confrontare. Conserva impostazione originale, accesso salvato e una sola connessione simultanea.",
+      "sections": [
+        {
+          "heading": "Identifica il lettore e il sintomo",
+          "paragraphs": [
+            "Un controllo della decodifica Trex IPTV parte dal lettore effettivo, non dal ripristino del televisore. Se usi VLC per Android e il video è instabile, annota se l’app si chiude, l’immagine si blocca oppure l’audio continua senza immagine. Registra dispositivo e versione di VLC. Un sintomo in un lettore non dimostra un guasto generale; altre app possono avere controlli diversi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’accelerazione attuale",
+          "paragraphs": [
+            "VideoLAN documenta l’accelerazione hardware di VLC per Android: Automatica è il valore predefinito; tra le altre scelte ci sono Disabilitata, accelerazione della decodifica e accelerazione completa. Leggi le opzioni della tua versione e annota il valore attuale; mantieni Automatica come riferimento se è già selezionata. Per l’instabilità, la documentazione indica Disabilitata come opzione da confrontare. Fai un solo cambiamento reversibile con lo stesso video autorizzato, senza presumere che il nome più potente sia sempre migliore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Ripristina un cambiamento inutile",
+          "paragraphs": [
+            "Guarda un breve tratto e descrivi se il sintomo iniziale cambia o compaiono altri problemi. Ripristina la scelta precedente se non aiuta. La decodifica non aumenta la risoluzione della fonte, non rinnova l’accesso e non garantisce continuità. Trex IPTV 8K consente una connessione simultanea: resta in una sola sessione. Se l’opzione manca o il problema continua, chiedi all’editore indicazioni per la versione. Conserva le credenziali; cancellare dati, attivare il debug o ripristinare il dispositivo non serve a questo confronto."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-decodering: noteer VLC-versnelling voordat u die wijzigt",
+      "excerpt": "Lees de hardwareversnelling van de geïnstalleerde VLC vóór vergelijking. Bewaar de oorspronkelijke instelling, opgeslagen toegang en één gelijktijdige verbinding.",
+      "seo_title": "Trex IPTV-decodering: noteer VLC-versnelling voordat u die wijzigt",
+      "seo_description": "Lees de hardwareversnelling van de geïnstalleerde VLC vóór vergelijking. Bewaar de oorspronkelijke instelling, opgeslagen toegang en één gelijktijdige verbinding.",
+      "sections": [
+        {
+          "heading": "Benoem de speler en het probleem",
+          "paragraphs": [
+            "Een controle van Trex IPTV-decodering begint bij de gebruikte speler, niet bij een fabrieksreset van de televisie. Gebruikt u VLC voor Android en is video instabiel, noteer dan of de app sluit, het beeld vastloopt of geluid zonder beeld doorgaat. Noteer apparaat en VLC-versie. Eén probleem in een speler bewijst geen algemene storing; een andere app kan andere bediening hebben."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige versnellingsoptie",
+          "paragraphs": [
+            "VideoLAN beschrijft hardwareversnelling in VLC voor Android. Automatisch is standaard; andere keuzes zijn Uitgeschakeld, decoderingsversnelling en volledige versnelling. Lees de opties van uw versie en noteer de huidige waarde; behoud Automatisch als uitgangspunt wanneer dat al is gekozen. Bij instabiliteit noemt de documentatie Uitgeschakeld als vergelijkingsoptie. Verander één omkeerbare instelling met dezelfde toegestane video, zonder aan te nemen dat de krachtigst klinkende naam altijd beter is."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Herstel een onbruikbare wijziging",
+          "paragraphs": [
+            "Bekijk een kort fragment en beschrijf of het oorspronkelijke probleem verandert en of iets nieuws misgaat. Herstel de eerdere optie wanneer het niet helpt. Decodering voegt geen bronresolutie toe, verlengt geen toegang en garandeert geen ononderbroken weergave. Trex IPTV 8K staat één gelijktijdige verbinding toe; houd deze controle binnen één sessie. Ontbreekt de optie of blijft het probleem, vraag de uitgever naar uw versie. Bewaar toegangsgegevens; appgegevens wissen, debugging activeren en fabrieksresets zijn voor deze vergelijking niet nodig."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Descodificação Trex IPTV: registe a aceleração do VLC antes de mudar",
+      "excerpt": "Leia a aceleração de hardware do VLC instalado antes de comparar. Guarde a definição original, o acesso e uma única ligação simultânea.",
+      "seo_title": "Descodificação Trex IPTV: registe a aceleração do VLC antes de mudar",
+      "seo_description": "Leia a aceleração de hardware do VLC instalado antes de comparar. Guarde a definição original, o acesso e uma única ligação simultânea.",
+      "sections": [
+        {
+          "heading": "Identifique o leitor e o sintoma",
+          "paragraphs": [
+            "Uma verificação da descodificação Trex IPTV começa pelo leitor utilizado, não por repor o televisor. Se usa VLC para Android e o vídeo é instável, anote se a aplicação fecha, a imagem para ou o som continua sem imagem. Registe dispositivo e versão do VLC. Um sintoma num leitor não demonstra falha geral; outra aplicação pode ter controlos diferentes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a aceleração atual",
+          "paragraphs": [
+            "A VideoLAN documenta a aceleração de hardware no VLC para Android. Automática é a opção predefinida; existem também Desativada, aceleração de descodificação e aceleração completa. Leia as opções da sua versão e registe o valor atual; mantenha Automática como referência se já estiver escolhida. Para instabilidade, a documentação aponta Desativada como opção a comparar. Faça uma única alteração reversível com o mesmo vídeo autorizado, sem assumir que a opção de nome mais forte é sempre melhor."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Reponha uma alteração inútil",
+          "paragraphs": [
+            "Veja um trecho curto e descreva se o sintoma inicial mudou ou apareceu outro problema. Reponha a opção anterior se não ajudar. A descodificação não acrescenta resolução à fonte, não renova o acesso nem garante reprodução contínua. Trex IPTV 8K permite uma ligação simultânea: mantenha a verificação numa só sessão. Se a opção faltar ou a falha continuar, consulte o editor sobre a versão. Preserve as credenciais; apagar dados, ativar depuração e repor o dispositivo são desnecessários nesta comparação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Декодирование Trex IPTV: запишите ускорение VLC перед изменением",
+      "excerpt": "Прочитайте режим аппаратного ускорения установленного VLC перед сравнением. Сохраните прежнюю настройку, доступ и одно одновременное подключение.",
+      "seo_title": "Декодирование Trex IPTV: запишите ускорение VLC перед изменением",
+      "seo_description": "Прочитайте режим аппаратного ускорения установленного VLC перед сравнением. Сохраните прежнюю настройку, доступ и одно одновременное подключение.",
+      "sections": [
+        {
+          "heading": "Назовите плеер и симптом",
+          "paragraphs": [
+            "Проверка декодирования Trex IPTV начинается с используемого плеера, а не сброса телевизора. Если в VLC для Android видео работает нестабильно, отметьте закрытие приложения, остановку картинки или продолжение звука без изображения. Запишите устройство и версию VLC. Симптом в одном плеере не доказывает общую аварию; другое приложение может иметь иные настройки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущий режим ускорения",
+          "paragraphs": [
+            "VideoLAN описывает аппаратное ускорение VLC для Android. Автоматический режим установлен по умолчанию; также доступны отключение, ускорение декодирования и полное ускорение. Прочитайте варианты своей версии и запишите текущий; оставьте автоматический режим исходной точкой, если он уже выбран. При нестабильности документация называет отключение вариантом для сравнения. Сделайте одно обратимое изменение с тем же разрешённым видео, не считая самый мощно звучащий режим всегда лучшим."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Верните неудачную настройку",
+          "paragraphs": [
+            "Посмотрите короткий фрагмент и опишите изменение исходного симптома и новые проблемы. Если улучшения нет, верните прежний режим. Декодирование не повышает разрешение источника, не продлевает доступ и не гарантирует непрерывность. Trex IPTV 8K допускает одно одновременное подключение: проводите проверку в одной сессии. Если настройки нет или сбой остался, уточните версию у разработчика плеера. Сохраните учётные данные; удаление данных, включение отладки и сброс устройства для такого сравнения не нужны."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV ڈی کوڈنگ: VLC کی ایکسلریشن بدلنے سے پہلے لکھیں",
+      "excerpt": "موازنہ کرنے سے پہلے نصب شدہ VLC کی ہارڈویئر ایکسلریشن دیکھیں۔ اصل ترتیب، محفوظ رسائی اور ایک ہی بیک وقت کنکشن برقرار رکھیں۔",
+      "seo_title": "Trex IPTV ڈی کوڈنگ: VLC کی ایکسلریشن بدلنے سے پہلے لکھیں",
+      "seo_description": "موازنہ کرنے سے پہلے نصب شدہ VLC کی ہارڈویئر ایکسلریشن دیکھیں۔ اصل ترتیب، محفوظ رسائی اور ایک ہی بیک وقت کنکشن برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "پلیئر اور علامت کا نام بتائیں",
+          "paragraphs": [
+            "Trex IPTV کی ڈی کوڈنگ کی جانچ اصل پلیئر سے شروع ہونی چاہیے، پورا ٹی وی ری سیٹ کرنے سے نہیں۔ Android کا VLC استعمال کرتے وقت ویڈیو غیر مستحکم ہو تو لکھیں کہ ایپ بند ہوتی ہے، تصویر رکتی ہے یا تصویر کے بغیر آواز جاری رہتی ہے۔ آلہ اور VLC کا نسخہ نوٹ کریں۔ ایک پلیئر کی علامت پوری سروس کی بندش ثابت نہیں کرتی؛ دوسری ایپ کے کنٹرول مختلف ہو سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ایکسلریشن کا موجودہ اختیار پڑھیں",
+          "paragraphs": [
+            "VideoLAN، Android کے VLC میں ہارڈویئر ایکسلریشن بیان کرتا ہے۔ خودکار پہلے سے منتخب اختیار ہے؛ دیگر میں بند، ڈی کوڈنگ ایکسلریشن اور مکمل ایکسلریشن شامل ہیں۔ اپنے نصب نسخے کے اختیارات دیکھ کر موجودہ قدر لکھیں؛ خودکار پہلے سے منتخب ہو تو اسے ابتدائی حوالہ رکھیں۔ عدم استحکام کے لیے دستاویز بند والا اختیار موازنے کے لیے بتاتی ہے۔ وہی اجازت یافتہ ویڈیو رکھتے ہوئے صرف ایک قابل واپسی تبدیلی کریں؛ زیادہ طاقتور سنائی دینے والا نام ہمیشہ بہتر نہ سمجھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "بے فائدہ تبدیلی واپس کریں",
+          "paragraphs": [
+            "مختصر حصہ دیکھ کر بتائیں کہ اصل علامت بدلی یا کوئی نیا مسئلہ آیا۔ فائدہ نہ ہو تو پچھلا اختیار بحال کریں۔ ڈی کوڈنگ ماخذ کی ریزولیوشن نہیں بڑھاتی، رسائی کی تجدید نہیں کرتی اور بلا تعطل پلے بیک کی ضمانت نہیں۔ Trex IPTV 8K میں ایک ہی بیک وقت کنکشن ہے، اس لیے ایک دیکھنے والے سیشن میں جانچیں۔ ترتیب موجود نہ ہو یا مسئلہ جاری رہے تو پلیئر کے ناشر سے اپنے نسخے کے بارے میں پوچھیں۔ اسناد محفوظ رکھیں؛ اس موازنے کے لیے نہ ایپ کا ڈیٹا مٹائیں، نہ ڈیبگنگ فعال کریں اور نہ آلہ فیکٹری ری سیٹ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "فحص فك ترميز Trex IPTV: دوّن تسريع VLC قبل تغييره",
+      "excerpt": "اقرأ خيار تسريع العتاد في VLC المثبت قبل المقارنة. احتفظ بالإعداد الأصلي والوصول المحفوظ واتصال متزامن واحد.",
+      "seo_title": "فحص فك ترميز Trex IPTV: دوّن تسريع VLC قبل تغييره",
+      "seo_description": "اقرأ خيار تسريع العتاد في VLC المثبت قبل المقارنة. احتفظ بالإعداد الأصلي والوصول المحفوظ واتصال متزامن واحد.",
+      "sections": [
+        {
+          "heading": "حدد المشغل والعرض",
+          "paragraphs": [
+            "يبدأ فحص فك ترميز Trex IPTV بالمشغل المستخدم، لا بإعادة ضبط التلفاز. إذا استخدمت VLC لنظام Android وكان الفيديو غير مستقر، فسجل هل يغلق التطبيق أو تتوقف الصورة أو يستمر الصوت دون صورة. دوّن الجهاز ونسخة VLC. ظهور مشكلة في مشغل واحد لا يثبت عطلاً عاماً، وقد يستخدم تطبيق آخر عناصر تحكم مختلفة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ خيار التسريع الحالي",
+          "paragraphs": [
+            "توثق VideoLAN تسريع العتاد في VLC لنظام Android. التلقائي هو الخيار الافتراضي، وتشمل الخيارات الأخرى التعطيل وتسريع فك الترميز والتسريع الكامل. اقرأ خيارات نسختك وسجل القيمة الحالية؛ احتفظ بالتلقائي مرجعاً إن كان محدداً بالفعل. عند عدم الاستقرار، تذكر الوثائق التعطيل كخيار للمقارنة. أجر تغييراً واحداً قابلاً للعكس مع الفيديو المسموح نفسه، ولا تفترض أن الاسم الذي يبدو أقوى هو الأفضل دائماً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "استعد الإعداد إن لم يساعد",
+          "paragraphs": [
+            "شاهد مقطعاً قصيراً وصف تغير المشكلة الأصلية وأي مشكلة جديدة. أعد الخيار السابق إن لم تتحسن النتيجة. تفضيلات فك الترميز لا تزيد دقة المصدر ولا تجدد الوصول ولا تضمن التشغيل المتواصل. يسمح Trex IPTV 8K باتصال متزامن واحد؛ أبق الفحص ضمن جلسة مشاهدة واحدة. إن غاب الإعداد أو استمر الخلل، فاسأل ناشر المشغل عن نسختك. احفظ بيانات الدخول؛ مسح بيانات التطبيق وتفعيل التصحيح وإعادة ضبط المصنع غير ضرورية لهذه المقارنة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV डिकोडिंग: VLC का एक्सेलरेशन बदलने से पहले लिखें",
+      "excerpt": "तुलना से पहले इंस्टॉल किए VLC का हार्डवेयर एक्सेलरेशन देखें। मूल सेटिंग, सहेजी पहुँच और एक ही समकालिक कनेक्शन बनाए रखें।",
+      "seo_title": "Trex IPTV डिकोडिंग: VLC का एक्सेलरेशन बदलने से पहले लिखें",
+      "seo_description": "तुलना से पहले इंस्टॉल किए VLC का हार्डवेयर एक्सेलरेशन देखें। मूल सेटिंग, सहेजी पहुँच और एक ही समकालिक कनेक्शन बनाए रखें।",
+      "sections": [
+        {
+          "heading": "प्लेयर और लक्षण पहचानें",
+          "paragraphs": [
+            "Trex IPTV डिकोडिंग की जाँच असल प्लेयर से शुरू होनी चाहिए, पूरे टीवी को रीसेट करने से नहीं। Android का VLC इस्तेमाल करते समय वीडियो अस्थिर हो तो लिखें कि ऐप बंद होता है, चित्र अटकता है या बिना चित्र आवाज़ चलती है। डिवाइस और VLC संस्करण लिखें। एक प्लेयर का लक्षण पूरी सेवा बंद होने का प्रमाण नहीं; दूसरे ऐप के नियंत्रण अलग हो सकते हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "वर्तमान एक्सेलरेशन पढ़ें",
+          "paragraphs": [
+            "VideoLAN, Android के VLC में हार्डवेयर एक्सेलरेशन बताता है। अपने-आप वाला विकल्प मूल चुनाव है; अन्य में बंद, डिकोडिंग एक्सेलरेशन और पूरा एक्सेलरेशन हैं। अपने इंस्टॉल संस्करण के विकल्प पढ़कर वर्तमान मान लिखें; अपने-आप पहले से चुना हो तो उसे शुरुआती आधार रखें। अस्थिरता के लिए दस्तावेज़ बंद विकल्प की तुलना बताते हैं। वही अनुमत वीडियो रखकर केवल एक वापस की जा सकने वाली सेटिंग बदलें; अधिक शक्तिशाली सुनाई देने वाला नाम हमेशा बेहतर न मानें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "बिना लाभ वाला बदलाव बहाल करें",
+          "paragraphs": [
+            "छोटा अंश देखकर बताएँ कि मूल लक्षण बदला या नई समस्या आई। मदद न मिले तो पिछला विकल्प बहाल करें। डिकोडिंग स्रोत का रिज़ॉल्यूशन नहीं बढ़ाती, पहुँच नहीं नवीनीकृत करती और निर्बाध प्लेबैक की गारंटी नहीं देती। Trex IPTV 8K में एक ही समकालिक कनेक्शन है, इसलिए एक देखने वाले सत्र में जाँचें। विकल्प न मिले या समस्या रहे तो प्रकाशक से अपने संस्करण के बारे में पूछें। लॉगिन सँभालें; इस तुलना के लिए न ऐप डेटा मिटाएँ, न डिबगिंग चालू करें और न फ़ैक्टरी रीसेट करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android hardware acceleration settings",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+    }
+  ]
+}

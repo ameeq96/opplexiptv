@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-21",
+  "topic": "Distinguish Chrome offline page-loading errors from IPTV Subscription expiry and an unresolved Opplex or Filex order before repeating a payment.",
+  "primary_keyword": "IPTV Subscription offline error",
+  "slug": "iptvsubscription-offline-error-before-repeating-an-order",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription offline error: read Chrome’s message before reordering",
+      "excerpt": "Check Chrome’s connection message before repeating an order. Separate a device going offline from your IPTV Subscription provider, payment and player access.",
+      "seo_title": "IPTV Subscription offline error: read Chrome’s message before reordering",
+      "seo_description": "Check Chrome’s connection message before repeating an order. Separate a device going offline from your IPTV Subscription provider, payment and player access.",
+      "sections": [
+        {
+          "heading": "Identify the browser error",
+          "paragraphs": [
+            "If a public plan page stops loading, write down the exact Chrome error before changing anything. Google describes ERR_INTERNET_DISCONNECTED as a device without an internet connection. An IPTV Subscription offline error on that browser is different from a programme stopping inside a player. Note whether the message appeared before you selected a plan or after you had already submitted an order; that sequence matters when asking for help."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare one ordinary public page",
+          "paragraphs": [
+            "Read your device’s normal network status and try one familiar public page in a separate tab. Keep any unfinished order tab available. If both pages fail, describe the connection symptom rather than assuming that a subscription expired. If only one page fails, report its address and error without declaring a service-wide outage. Do not reset network settings, clear browser storage or disable security protections for this first comparison. Avoid reloading a submitted payment or sending it again simply to test connectivity."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official Chrome error guide",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm the order after reconnecting",
+          "paragraphs": [
+            "When normal browsing returns, use your existing trusted order-access route to confirm the selected Opplex or Filex service, duration and recorded order state. A browser error alone does not establish success or failure of payment. Keep any separate player licence fee distinct, and ask about an unstated Filex connection allowance. Share the error code, time and browser version with support, without passwords or private order links."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "IPTV Subscription sin conexión: lea el mensaje de Chrome antes de repetir el pedido",
+      "excerpt": "Compruebe el aviso de conexión de Chrome antes de repetir un pedido. Distinga la desconexión del dispositivo del proveedor, el pago y el acceso al reproductor.",
+      "seo_title": "IPTV Subscription sin conexión: lea el mensaje de Chrome antes de repetir el pedido",
+      "seo_description": "Compruebe el aviso de conexión de Chrome antes de repetir un pedido. Distinga la desconexión del dispositivo del proveedor, el pago y el acceso al reproductor.",
+      "sections": [
+        {
+          "heading": "Identifique el error del navegador",
+          "paragraphs": [
+            "Si una página pública de planes deja de cargar, anote el error exacto de Chrome antes de cambiar nada. Google describe ERR_INTERNET_DISCONNECTED como un dispositivo sin conexión a Internet. Este aviso al consultar IPTV Subscription es distinto de un programa detenido dentro del reproductor. Anote si apareció antes de elegir un plan o después de enviar un pedido; esa secuencia ayuda al solicitar asistencia."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare una página pública habitual",
+          "paragraphs": [
+            "Consulte el estado de red normal del dispositivo y pruebe una página pública conocida en otra pestaña. Conserve la pestaña del pedido pendiente. Si fallan ambas páginas, describa el problema de conexión sin asumir que caducó la suscripción. Si falla solo una, indique su dirección y el error sin declarar una caída general. Para esta primera comparación no restablezca la red, no borre los datos del navegador ni desactive las protecciones. No recargue ni vuelva a enviar un pago ya presentado solo para comprobar la conexión."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía oficial de errores de Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme el pedido al recuperar la conexión",
+          "paragraphs": [
+            "Cuando vuelva la navegación normal, utilice su vía de acceso habitual y fiable para confirmar el servicio Opplex o Filex elegido, su duración y el estado registrado del pedido. Un error del navegador no confirma si el pago tuvo éxito o falló. Separe la posible licencia del reproductor y consulte cualquier límite de conexiones de Filex no indicado. Envíe a asistencia el código, la hora y la versión del navegador, sin contraseñas ni enlaces privados del pedido."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV Subscription hors connexion : lisez Chrome avant de refaire la commande",
+      "excerpt": "Vérifiez le message de connexion de Chrome avant de renouveler une tentative. Distinguez un appareil hors ligne du fournisseur, du paiement et du lecteur.",
+      "seo_title": "IPTV Subscription hors connexion : lisez Chrome avant de refaire la commande",
+      "seo_description": "Vérifiez le message de connexion de Chrome avant de renouveler une tentative. Distinguez un appareil hors ligne du fournisseur, du paiement et du lecteur.",
+      "sections": [
+        {
+          "heading": "Identifiez l’erreur du navigateur",
+          "paragraphs": [
+            "Si une page publique de forfaits ne charge plus, notez l’erreur exacte de Chrome avant toute modification. Google décrit ERR_INTERNET_DISCONNECTED comme un appareil sans connexion Internet. Ce message pendant une consultation IPTV Subscription diffère d’un programme arrêté dans le lecteur. Précisez s’il est apparu avant le choix du forfait ou après l’envoi d’une commande : cet ordre des événements aide l’assistance."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez une page publique habituelle",
+          "paragraphs": [
+            "Consultez l’état réseau normal de l’appareil et ouvrez une page publique connue dans un autre onglet. Conservez l’onglet de la commande inachevée. Si les deux pages échouent, décrivez le problème de connexion sans supposer un abonnement expiré. Si une seule échoue, communiquez son adresse et son erreur sans conclure à une panne générale. Pour ce premier contrôle, ne réinitialisez pas le réseau, n’effacez pas les données du navigateur et ne désactivez pas les protections. Ne rechargez ni ne renvoyez un paiement déjà soumis pour tester la connexion."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide officiel des erreurs Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirmez la commande après la reconnexion",
+          "paragraphs": [
+            "Une fois la navigation rétablie, utilisez votre accès habituel et fiable pour vérifier le service Opplex ou Filex choisi, sa durée et l’état enregistré de la commande. Une erreur du navigateur ne prouve ni la réussite ni l’échec du paiement. Distinguez les éventuels frais de licence du lecteur et demandez toute limite de connexions Filex non précisée. Transmettez le code, l’heure et la version du navigateur sans mot de passe ni lien privé de commande."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription senza connessione: leggi Chrome prima di ripetere l’ordine",
+      "excerpt": "Controlla il messaggio di connessione di Chrome prima di ripetere un ordine. Distingui il dispositivo offline dal servizio, dal pagamento e dall’accesso al lettore.",
+      "seo_title": "IPTV Subscription senza connessione: leggi Chrome prima di ripetere l’ordine",
+      "seo_description": "Controlla il messaggio di connessione di Chrome prima di ripetere un ordine. Distingui il dispositivo offline dal servizio, dal pagamento e dall’accesso al lettore.",
+      "sections": [
+        {
+          "heading": "Identifica l’errore del browser",
+          "paragraphs": [
+            "Se una pagina pubblica dei piani non si carica, annota l’errore preciso di Chrome prima di cambiare qualcosa. Google descrive ERR_INTERNET_DISCONNECTED come un dispositivo privo di connessione Internet. Questo avviso durante una consultazione di IPTV Subscription è diverso da un programma fermo nel lettore. Segna se è apparso prima di scegliere l’abbonamento IPTV o dopo aver già inviato l’ordine: la sequenza è utile all’assistenza."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta una normale pagina pubblica",
+          "paragraphs": [
+            "Leggi il normale stato di rete del dispositivo e prova una pagina pubblica conosciuta in un’altra scheda. Conserva la scheda dell’ordine incompleto. Se entrambe non funzionano, descrivi il problema di connessione senza presumere la scadenza dell’abbonamento. Se fallisce solo una pagina, comunica indirizzo ed errore senza dichiarare un guasto generale. Per questo primo confronto non ripristinare la rete, non cancellare i dati del browser e non disattivare le protezioni. Non ricaricare né reinviare un pagamento già inoltrato solo per provare la connessione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida ufficiale agli errori di Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Conferma l’ordine dopo la riconnessione",
+          "paragraphs": [
+            "Quando la navigazione riprende, usa il tuo accesso abituale e affidabile per verificare il servizio Opplex o Filex scelto, la durata e lo stato registrato dell’ordine. L’errore del browser non dimostra che il pagamento sia riuscito o fallito. Tieni separata l’eventuale licenza del lettore e chiedi ogni limite di connessioni Filex non specificato. Invia all’assistenza codice, ora e versione del browser, senza password o collegamenti privati dell’ordine."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription offline: lees Chrome voordat u opnieuw bestelt",
+      "excerpt": "Controleer de verbindingsmelding van Chrome voordat u een bestelling herhaalt. Onderscheid een offline apparaat van de aanbieder, betaling en toegang tot de speler.",
+      "seo_title": "IPTV Subscription offline: lees Chrome voordat u opnieuw bestelt",
+      "seo_description": "Controleer de verbindingsmelding van Chrome voordat u een bestelling herhaalt. Onderscheid een offline apparaat van de aanbieder, betaling en toegang tot de speler.",
+      "sections": [
+        {
+          "heading": "Herken de browserfout",
+          "paragraphs": [
+            "Laadt een openbare pakketpagina niet meer, noteer dan de exacte Chrome-fout voordat u iets wijzigt. Google omschrijft ERR_INTERNET_DISCONNECTED als een apparaat zonder internetverbinding. Deze melding bij IPTV Subscription verschilt van een programma dat binnen de speler stopt. Noteer of dit vóór de pakketkeuze of na het verzenden van een bestelling gebeurde; die volgorde helpt bij ondersteuning."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk één gewone openbare pagina",
+          "paragraphs": [
+            "Lees de normale netwerkstatus van het apparaat en probeer een bekende openbare pagina in een apart tabblad. Houd het tabblad met de onafgeronde bestelling beschikbaar. Werken beide pagina’s niet, beschrijf dan het verbindingsprobleem zonder aan te nemen dat het abonnement verlopen is. Werkt slechts één pagina niet, meld dan adres en fout zonder een algemene storing te veronderstellen. Herstel hiervoor niet de netwerkinstellingen, wis geen browsergegevens en schakel geen beveiliging uit. Vernieuw of verstuur een ingediende betaling niet opnieuw om de verbinding te testen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële Chrome-foutengids",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de bestelling na herstel",
+          "paragraphs": [
+            "Gebruik zodra normaal browsen terugkeert uw bestaande vertrouwde toegang om de gekozen Opplex- of Filex-dienst, looptijd en geregistreerde bestelstatus te controleren. Een browserfout bewijst geen geslaagde of mislukte betaling. Houd eventuele spelerlicentiekosten apart en vraag naar een niet vermelde Filex-verbindingslimiet. Deel foutcode, tijd en browserversie met ondersteuning, zonder wachtwoorden of privébestellinks."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV Subscription offline: leia o Chrome antes de repetir a encomenda",
+      "excerpt": "Verifique a mensagem de ligação do Chrome antes de repetir uma encomenda. Distinga um dispositivo sem Internet do fornecedor, pagamento e acesso ao leitor.",
+      "seo_title": "IPTV Subscription offline: leia o Chrome antes de repetir a encomenda",
+      "seo_description": "Verifique a mensagem de ligação do Chrome antes de repetir uma encomenda. Distinga um dispositivo sem Internet do fornecedor, pagamento e acesso ao leitor.",
+      "sections": [
+        {
+          "heading": "Identifique o erro do navegador",
+          "paragraphs": [
+            "Se uma página pública de planos deixar de carregar, anote o erro exato do Chrome antes de alterar algo. O Google descreve ERR_INTERNET_DISCONNECTED como um dispositivo sem ligação à Internet. Este aviso ao consultar IPTV Subscription é diferente de um programa parado dentro do leitor. Registe se surgiu antes de escolher a assinatura IPTV ou depois de enviar uma encomenda; essa sequência ajuda o suporte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare uma página pública habitual",
+          "paragraphs": [
+            "Consulte o estado normal da rede do dispositivo e abra uma página pública conhecida noutro separador. Mantenha disponível o separador da encomenda incompleta. Se ambas falharem, descreva o problema de ligação sem presumir que a assinatura expirou. Se falhar apenas uma página, indique o endereço e o erro sem concluir que existe uma falha geral. Neste primeiro teste não reponha a rede, não apague dados do navegador nem desative proteções. Não recarregue nem reenvie um pagamento já submetido apenas para testar a ligação."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia oficial de erros do Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme a encomenda após voltar a ligar",
+          "paragraphs": [
+            "Quando a navegação normal regressar, use o acesso habitual e fiável para confirmar o serviço Opplex ou Filex escolhido, a duração e o estado registado da encomenda. Um erro do navegador não comprova o sucesso ou a falha do pagamento. Separe qualquer licença paga do leitor e pergunte por um limite de ligações Filex não indicado. Partilhe código, hora e versão do navegador com o suporte, sem palavras-passe nem ligações privadas da encomenda."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV Subscription без сети: прочитайте ошибку Chrome перед повторным заказом",
+      "excerpt": "Проверьте сообщение Chrome о соединении, прежде чем повторять заказ. Отделяйте отсутствие сети на устройстве от провайдера, оплаты и доступа к плееру.",
+      "seo_title": "IPTV Subscription без сети: прочитайте ошибку Chrome перед повторным заказом",
+      "seo_description": "Проверьте сообщение Chrome о соединении, прежде чем повторять заказ. Отделяйте отсутствие сети на устройстве от провайдера, оплаты и доступа к плееру.",
+      "sections": [
+        {
+          "heading": "Определите ошибку браузера",
+          "paragraphs": [
+            "Если открытая страница тарифов перестала загружаться, сначала запишите точную ошибку Chrome. Google объясняет ERR_INTERNET_DISCONNECTED отсутствием интернет-соединения на устройстве. Такое сообщение при просмотре IPTV Subscription отличается от остановки передачи внутри плеера. Укажите, появилось ли оно до выбора тарифа или после отправки заказа: эта последовательность важна для поддержки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сравните с обычной открытой страницей",
+          "paragraphs": [
+            "Посмотрите обычное состояние сети устройства и откройте знакомую общедоступную страницу в другой вкладке. Сохраните вкладку незавершённого заказа. Если не открываются обе страницы, опишите соединение, а не предполагайте окончание подписки. Если не работает только одна, сообщите её адрес и ошибку, не объявляя общий сбой сервиса. Для первой проверки не сбрасывайте сеть, не очищайте хранилище браузера и не отключайте защиту. Не обновляйте отправленный платёж и не отправляйте его повторно только ради проверки связи."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная справка об ошибках Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Уточните заказ после восстановления связи",
+          "paragraphs": [
+            "Когда обычный просмотр возобновится, через привычный доверенный способ доступа проверьте выбранный сервис Opplex или Filex, срок и записанный статус заказа. Ошибка браузера сама по себе не подтверждает успешную или неудачную оплату. Отделяйте возможную платную лицензию плеера и уточняйте неуказанный лимит подключений Filex. Передайте поддержке код, время и версию браузера без паролей и закрытых ссылок заказа."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription آف لائن: دوبارہ آرڈر سے پہلے Chrome کا پیغام پڑھیں",
+      "excerpt": "آرڈر دہرانے سے پہلے Chrome کا کنکشن پیغام دیکھیں۔ آلے کا انٹرنیٹ بند ہونا، IPTV Subscription کا فراہم کنندہ، ادائیگی اور پلیئر کی رسائی الگ باتیں ہیں۔",
+      "seo_title": "IPTV Subscription آف لائن: دوبارہ آرڈر سے پہلے Chrome کا پیغام پڑھیں",
+      "seo_description": "آرڈر دہرانے سے پہلے Chrome کا کنکشن پیغام دیکھیں۔ آلے کا انٹرنیٹ بند ہونا، IPTV Subscription کا فراہم کنندہ، ادائیگی اور پلیئر کی رسائی الگ باتیں ہیں۔",
+      "sections": [
+        {
+          "heading": "براؤزر کی خطا پہچانیں",
+          "paragraphs": [
+            "عوامی پیکیج صفحہ لوڈ نہ ہو تو کچھ بدلنے سے پہلے Chrome کی اصل خطا لکھیں۔ Google کے مطابق ERR_INTERNET_DISCONNECTED کا مطلب آلے پر انٹرنیٹ کنکشن نہ ہونا ہے۔ IPTV Subscription دیکھتے وقت یہ پیغام، پلیئر کے اندر پروگرام رکنے سے مختلف ہے۔ نوٹ کریں کہ یہ پیکیج منتخب کرنے سے پہلے آیا یا آرڈر بھیجنے کے بعد؛ معاونت کے لیے یہ ترتیب اہم ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ایک عام عوامی صفحے سے موازنہ کریں",
+          "paragraphs": [
+            "آلے کی معمول کی نیٹ ورک حالت دیکھیں اور الگ ٹیب میں ایک مانوس عوامی صفحہ آزمائیں۔ نامکمل آرڈر کا ٹیب محفوظ رکھیں۔ دونوں صفحے نہ کھلیں تو کنکشن کی علامت بتائیں، رکنیت ختم ہونا فرض نہ کریں۔ صرف ایک صفحہ ناکام ہو تو اس کا پتہ اور خطا بتائیں، پوری سروس بند ہونے کا فیصلہ نہ کریں۔ اس ابتدائی موازنے کے لیے نہ نیٹ ورک ری سیٹ کریں، نہ براؤزر کا محفوظ ڈیٹا مٹائیں اور نہ حفاظتی انتظام بند کریں۔ کنکشن آزمانے کے لیے بھیجی ہوئی ادائیگی نہ دوبارہ لوڈ کریں اور نہ پھر بھیجیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome کی خطاؤں کی سرکاری رہنمائی",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "کنکشن بحال ہونے پر آرڈر کی تصدیق کریں",
+          "paragraphs": [
+            "عام براؤزنگ واپس آئے تو اپنے پہلے سے قابل اعتماد رسائی کے طریقے سے منتخب Opplex یا Filex سروس، مدت اور آرڈر کی درج حالت دیکھیں۔ اکیلی براؤزر خطا ادائیگی کی کامیابی یا ناکامی ثابت نہیں کرتی۔ پلیئر کی ممکنہ الگ لائسنس فیس الگ رکھیں اور Filex کی غیر درج کنکشن حد پوچھیں۔ معاونت کو خطا کا کوڈ، وقت اور براؤزر ورژن دیں، پاس ورڈ یا آرڈر کے نجی روابط نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "انقطاع اتصال IPTV Subscription: اقرأ رسالة Chrome قبل تكرار الطلب",
+      "excerpt": "تحقق من رسالة اتصال Chrome قبل تكرار الطلب. افصل انقطاع الإنترنت عن الجهاز عن مزود IPTV Subscription وحالة الدفع والوصول إلى المشغل.",
+      "seo_title": "انقطاع اتصال IPTV Subscription: اقرأ رسالة Chrome قبل تكرار الطلب",
+      "seo_description": "تحقق من رسالة اتصال Chrome قبل تكرار الطلب. افصل انقطاع الإنترنت عن الجهاز عن مزود IPTV Subscription وحالة الدفع والوصول إلى المشغل.",
+      "sections": [
+        {
+          "heading": "حدد خطأ المتصفح",
+          "paragraphs": [
+            "إذا توقفت صفحة الباقات العامة عن التحميل، فدوّن خطأ Chrome كما يظهر قبل تغيير أي شيء. تفسر Google الرمز ERR_INTERNET_DISCONNECTED بأنه عدم اتصال الجهاز بالإنترنت. يختلف ظهوره عند تصفح IPTV Subscription عن توقف برنامج داخل المشغل. سجّل هل ظهر قبل اختيار الباقة أم بعد إرسال الطلب بالفعل؛ فهذا التسلسل مفيد للدعم."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن بصفحة عامة معتادة",
+          "paragraphs": [
+            "اقرأ حالة الشبكة العادية على الجهاز وافتح صفحة عامة مألوفة في علامة تبويب أخرى. احتفظ بعلامة الطلب غير المكتمل. إذا فشلت الصفحتان، فصف مشكلة الاتصال ولا تفترض انتهاء الاشتراك. وإذا فشلت واحدة فقط، فأبلغ بعنوانها وخطئها دون إعلان عطل شامل. لا تعِد ضبط الشبكة، ولا تمسح بيانات المتصفح، ولا توقف وسائل الحماية لهذا الفحص الأول. ولا تعِد تحميل دفعة أرسلتها أو إرسالها مرة أخرى لمجرد اختبار الاتصال."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل أخطاء Chrome الرسمي",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "أكد الطلب بعد عودة الاتصال",
+          "paragraphs": [
+            "بعد عودة التصفح العادي، استخدم طريق الوصول المعتاد والموثوق لتأكيد خدمة Opplex أو Filex المختارة ومدتها وحالة الطلب المسجلة. لا يثبت خطأ المتصفح وحده نجاح الدفع أو فشله. افصل أي رسم مستقل لترخيص المشغل، واسأل عن حد اتصالات Filex غير المذكور. شارك رمز الخطأ والوقت وإصدار المتصفح مع الدعم دون كلمات مرور أو روابط طلب خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription ऑफलाइन: फिर ऑर्डर करने से पहले Chrome का संदेश पढ़ें",
+      "excerpt": "ऑर्डर दोहराने से पहले Chrome का कनेक्शन संदेश देखें। डिवाइस का इंटरनेट बंद होना, IPTV Subscription प्रदाता, भुगतान और प्लेयर की पहुँच अलग बातें हैं।",
+      "seo_title": "IPTV Subscription ऑफलाइन: फिर ऑर्डर करने से पहले Chrome का संदेश पढ़ें",
+      "seo_description": "ऑर्डर दोहराने से पहले Chrome का कनेक्शन संदेश देखें। डिवाइस का इंटरनेट बंद होना, IPTV Subscription प्रदाता, भुगतान और प्लेयर की पहुँच अलग बातें हैं।",
+      "sections": [
+        {
+          "heading": "ब्राउज़र की त्रुटि पहचानें",
+          "paragraphs": [
+            "सार्वजनिक प्लान पेज लोड न हो तो कुछ बदलने से पहले Chrome की ठीक त्रुटि लिखें। Google के अनुसार ERR_INTERNET_DISCONNECTED का अर्थ डिवाइस का इंटरनेट से जुड़ा न होना है। IPTV Subscription देखते समय यह संदेश, प्लेयर के भीतर कार्यक्रम रुकने से अलग है। नोट करें कि यह प्लान चुनने से पहले आया या ऑर्डर भेजने के बाद; सहायता के लिए यह क्रम महत्वपूर्ण है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "एक सामान्य सार्वजनिक पेज से तुलना करें",
+          "paragraphs": [
+            "डिवाइस की सामान्य नेटवर्क स्थिति देखें और अलग टैब में एक परिचित सार्वजनिक पेज खोलें। अधूरे ऑर्डर का टैब उपलब्ध रखें। दोनों पेज न खुलें तो कनेक्शन का लक्षण बताएँ, सदस्यता खत्म होना न मानें। केवल एक पेज विफल हो तो उसका पता और त्रुटि बताएँ, पूरी सेवा बंद होने का निष्कर्ष न निकालें। इस शुरुआती तुलना के लिए न नेटवर्क रीसेट करें, न ब्राउज़र का सहेजा डेटा मिटाएँ और न सुरक्षा बंद करें। कनेक्शन जाँचने के लिए भेजे गए भुगतान को न दोबारा लोड करें और न फिर भेजें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome त्रुटियों की आधिकारिक मदद",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "कनेक्शन लौटने पर ऑर्डर की पुष्टि करें",
+          "paragraphs": [
+            "सामान्य ब्राउज़िंग लौटने पर अपने मौजूदा भरोसेमंद पहुँच तरीके से चुनी Opplex या Filex सेवा, अवधि और ऑर्डर की दर्ज स्थिति जाँचें। अकेली ब्राउज़र त्रुटि भुगतान की सफलता या विफलता साबित नहीं करती। प्लेयर के संभावित अलग लाइसेंस शुल्क को अलग रखें और Filex की अनबताई कनेक्शन सीमा पूछें। सहायता को त्रुटि कोड, समय और ब्राउज़र संस्करण दें, पासवर्ड या निजी ऑर्डर लिंक नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: connection error messages",
+      "url": "https://support.google.com/chrome/answer/95669?hl=en"
+    }
+  ]
+}
