@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-22",
+  "topic": "Inspect a desktop Chrome extension’s current site-data permission without broadening access or confusing it with IPTV Subscription provider terms and order state.",
+  "primary_keyword": "IPTV Subscription extensions",
+  "slug": "iptvsubscription-extensions-read-existing-site-access",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription extensions: read Chrome’s site access first",
+      "excerpt": "Review an existing Chrome extension’s website access before blaming a changed plan page. Keep permissions, provider terms and order state separate.",
+      "seo_title": "IPTV Subscription extensions: read Chrome’s site access first",
+      "seo_description": "Review an existing Chrome extension’s website access before blaming a changed plan page. Keep permissions, provider terms and order state separate.",
+      "sections": [
+        {
+          "heading": "Identify what changed",
+          "paragraphs": [
+            "If a public plan page looks different or an unfamiliar request appears, note the exact change before ordering again. An IPTV Subscription extensions check means identifying the browser component involved, not installing another tool. Record the extension name and the website address. A message beside an extension icon is a different clue from a notice inside the website, and neither alone establishes that your viewing plan changed."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspect the current site access",
+          "paragraphs": [
+            "On desktop Chrome, Google documents opening Extensions, then the extension’s More menu and its site-data access entry. Read the existing choice, such as access when selected, on the current site or on all sites; wording can vary. Inspection does not require granting broader access. Preserve managed security controls and ask the device owner if a setting is locked. This permission control does not govern lower-level VPN or proxy network access, so it is not a complete connection diagnosis."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official extension access guide",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the service record separate",
+          "paragraphs": [
+            "Confirm the selected Opplex or Filex service, duration and recorded order state through your existing trusted access route. Browser-extension permissions do not establish payment success, expiry or provider terms. Keep any separate player licence fee distinct, and ask about an unstated Filex connection allowance. Give support the extension name, browser version and redacted symptom without passwords or private order links. Do not repeat a payment to test a browser change."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Extensiones e IPTV Subscription: revisa el acceso de Chrome",
+      "excerpt": "Revisa el acceso de una extensión de Chrome al sitio antes de atribuirle un cambio al plan. Separa los permisos, las condiciones y el estado del pedido.",
+      "seo_title": "Extensiones e IPTV Subscription: revisa el acceso de Chrome",
+      "seo_description": "Revisa el acceso de una extensión de Chrome al sitio antes de atribuirle un cambio al plan. Separa los permisos, las condiciones y el estado del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica qué cambió",
+          "paragraphs": [
+            "Si una página pública de planes cambia de aspecto o muestra una petición desconocida, anota el cambio antes de pedir otra vez. Revisar las extensiones al usar IPTV Subscription significa identificar el componente del navegador, no instalar otra herramienta. Anota el nombre de la extensión y la dirección del sitio. Un mensaje junto al icono de una extensión es distinto de un aviso dentro de la web; ninguno demuestra por sí solo que tu plan haya cambiado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Inspecciona el acceso actual al sitio",
+          "paragraphs": [
+            "En Chrome de escritorio, Google documenta abrir Extensiones, el menú Más de la extensión y la opción de acceso a los datos del sitio. Lee la opción actual: al seleccionarla, en el sitio actual o en todos los sitios; los nombres pueden variar. Inspeccionar no exige ampliar el acceso. Conserva los controles de seguridad administrados y consulta al propietario si hay un ajuste bloqueado. Este permiso no controla el acceso de red de bajo nivel mediante VPN o proxy, por lo que no diagnostica toda la conexión."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía oficial de acceso de extensiones",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa el registro del servicio",
+          "paragraphs": [
+            "Confirma el servicio Opplex o Filex elegido, su duración y el estado registrado del pedido mediante tu acceso habitual de confianza. Los permisos de una extensión no prueban el pago, el vencimiento ni las condiciones del proveedor. Separa la posible licencia del reproductor y pregunta por un límite de conexiones Filex no indicado. Comunica a soporte el nombre de la extensión, la versión del navegador y el síntoma sin datos sensibles; no envíes contraseñas ni enlaces privados. No repitas un pago para probar un cambio del navegador."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Extensions et IPTV Subscription : lire les accès de Chrome",
+      "excerpt": "Examinez l’accès d’une extension Chrome au site avant d’attribuer une page modifiée au forfait. Séparez permissions, conditions et état de commande.",
+      "seo_title": "Extensions et IPTV Subscription : lire les accès de Chrome",
+      "seo_description": "Examinez l’accès d’une extension Chrome au site avant d’attribuer une page modifiée au forfait. Séparez permissions, conditions et état de commande.",
+      "sections": [
+        {
+          "heading": "Identifier ce qui a changé",
+          "paragraphs": [
+            "Si une page publique de forfaits change ou affiche une demande inconnue, notez précisément le changement avant de commander à nouveau. Examiner les extensions pendant l’utilisation d’IPTV Subscription consiste à identifier le composant du navigateur, pas à installer un nouvel outil. Relevez le nom de l’extension et l’adresse du site. Un message près de son icône diffère d’un avis dans la page ; aucun ne prouve seul que votre forfait a changé."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire l’accès actuel au site",
+          "paragraphs": [
+            "Dans Chrome sur ordinateur, Google décrit l’ouverture d’Extensions, du menu Plus de l’extension puis de son accès aux données du site. Lisez le choix actuel : lors de la sélection, sur le site actuel ou sur tous les sites ; les libellés varient. Cette lecture n’exige pas d’élargir l’accès. Conservez les protections administrées et consultez le propriétaire si un réglage est verrouillé. Cette permission ne régit pas les accès réseau de bas niveau des VPN ou proxys ; elle ne constitue donc pas un diagnostic complet."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide officiel des accès des extensions",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer le dossier du service",
+          "paragraphs": [
+            "Vérifiez le service Opplex ou Filex choisi, la durée et l’état enregistré de la commande par votre accès habituel fiable. Les permissions d’une extension ne prouvent ni paiement, ni expiration, ni conditions du fournisseur. Distinguez les éventuels frais de licence du lecteur et demandez toute limite Filex non précisée. Donnez au support le nom de l’extension, la version du navigateur et le symptôme expurgé, sans mot de passe ni lien privé. Ne répétez pas un paiement pour tester le navigateur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Estensioni e IPTV Subscription: leggi gli accessi di Chrome",
+      "excerpt": "Controlla l’accesso al sito di un’estensione Chrome prima di attribuire una pagina diversa all’abbonamento. Separa permessi, condizioni e stato dell’ordine.",
+      "seo_title": "Estensioni e IPTV Subscription: leggi gli accessi di Chrome",
+      "seo_description": "Controlla l’accesso al sito di un’estensione Chrome prima di attribuire una pagina diversa all’abbonamento. Separa permessi, condizioni e stato dell’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica che cosa è cambiato",
+          "paragraphs": [
+            "Se una pagina pubblica degli abbonamenti appare diversa o mostra una richiesta sconosciuta, annota il cambiamento prima di ordinare ancora. Verificare le estensioni durante l’uso di IPTV Subscription significa identificare il componente del browser, non installare un altro strumento. Annota nome dell’estensione e indirizzo del sito. Un messaggio accanto all’icona è diverso da un avviso nella pagina; nessuno dei due dimostra da solo che l’abbonamento sia cambiato."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’accesso attuale al sito",
+          "paragraphs": [
+            "In Chrome per computer, Google documenta l’apertura di Estensioni, del menu Altro dell’estensione e della relativa voce di accesso ai dati del sito. Leggi la scelta attuale: quando selezionata, sul sito corrente o su tutti i siti; le etichette possono variare. Non serve ampliare i permessi per controllarli. Mantieni le protezioni gestite e chiedi al proprietario se un’impostazione è bloccata. Questo permesso non governa l’accesso di rete di basso livello tramite VPN o proxy, quindi non diagnostica l’intera connessione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida ufficiale agli accessi delle estensioni",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Tieni separato il servizio",
+          "paragraphs": [
+            "Conferma servizio Opplex o Filex, durata e stato registrato dell’ordine attraverso il tuo accesso abituale affidabile. I permessi delle estensioni non provano pagamento, scadenza o condizioni del fornitore. Separa l’eventuale licenza del lettore e chiedi un limite di connessioni Filex non dichiarato. Comunica all’assistenza nome dell’estensione, versione del browser e sintomo ripulito dai dati sensibili, senza password o link privati. Non ripetere un pagamento per provare il browser."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription en extensies: lees Chromes sitetoegang",
+      "excerpt": "Bekijk de toegang van een bestaande Chrome-extensie voordat je een gewijzigde planpagina aan je abonnement koppelt. Houd rechten, voorwaarden en bestelstatus apart.",
+      "seo_title": "IPTV Subscription en extensies: lees Chromes sitetoegang",
+      "seo_description": "Bekijk de toegang van een bestaande Chrome-extensie voordat je een gewijzigde planpagina aan je abonnement koppelt. Houd rechten, voorwaarden en bestelstatus apart.",
+      "sections": [
+        {
+          "heading": "Benoem wat er veranderde",
+          "paragraphs": [
+            "Als een openbare planpagina er anders uitziet of een onbekend verzoek toont, noteer dan de verandering voordat je opnieuw bestelt. Een extensiecontrole bij IPTV Subscription betekent vaststellen welk browseronderdeel betrokken is, niet nog een hulpmiddel installeren. Noteer de extensienaam en het websiteadres. Een melding naast een extensiepictogram verschilt van een bericht op de website; geen van beide bewijst op zichzelf dat je kijkabonnement veranderde."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de bestaande sitetoegang",
+          "paragraphs": [
+            "Google beschrijft voor Chrome op de computer het openen van Extensies, het menu Meer van de extensie en de toegang tot sitegegevens. Lees de bestaande keuze: bij selecteren, op de huidige site of op alle sites; de namen kunnen verschillen. Hiervoor hoef je geen ruimere toegang te geven. Behoud beheerde beveiliging en vraag de eigenaar als een instelling vergrendeld is. Dit recht beheert geen netwerktoegang op lager niveau via VPN of proxy en vormt dus geen volledige verbindingsdiagnose."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële uitleg over extensietoegang",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd de servicegegevens apart",
+          "paragraphs": [
+            "Controleer de gekozen Opplex- of Filex-service, looptijd en geregistreerde bestelstatus via je bestaande vertrouwde toegang. Extensierechten bewijzen geen betaling, afloopdatum of providervoorwaarden. Houd een eventuele spelerlicentie apart en vraag naar een niet vermelde Filex-verbindingslimiet. Geef ondersteuning de extensienaam, browserversie en afgeschermde klacht, zonder wachtwoorden of privébestellinks. Herhaal geen betaling om een browserwijziging te testen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Extensões e IPTV Subscription: leia o acesso no Chrome",
+      "excerpt": "Veja o acesso de uma extensão Chrome ao site antes de atribuir uma página diferente à assinatura. Separe permissões, condições e estado do pedido.",
+      "seo_title": "Extensões e IPTV Subscription: leia o acesso no Chrome",
+      "seo_description": "Veja o acesso de uma extensão Chrome ao site antes de atribuir uma página diferente à assinatura. Separe permissões, condições e estado do pedido.",
+      "sections": [
+        {
+          "heading": "Identifique o que mudou",
+          "paragraphs": [
+            "Se uma página pública de planos parecer diferente ou mostrar um pedido desconhecido, anote a mudança antes de encomendar novamente. Verificar extensões ao usar IPTV Subscription significa identificar o componente do navegador, não instalar outra ferramenta. Registe o nome da extensão e o endereço do site. Uma mensagem junto ao ícone difere de um aviso dentro da página; nenhuma prova, isoladamente, que a assinatura mudou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o acesso atual ao site",
+          "paragraphs": [
+            "No Chrome para computador, o Google descreve abrir Extensões, o menu Mais da extensão e a opção de acesso aos dados do site. Leia a escolha atual: ao selecionar, no site atual ou em todos os sites; os nomes podem variar. A inspeção não exige ampliar o acesso. Preserve as proteções geridas e consulte o proprietário se houver uma definição bloqueada. Esta permissão não controla o acesso de rede de baixo nível por VPN ou proxy, portanto não é um diagnóstico completo da ligação."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia oficial de acesso das extensões",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe o registo do serviço",
+          "paragraphs": [
+            "Confirme o serviço Opplex ou Filex escolhido, a duração e o estado registado do pedido pelo seu acesso habitual de confiança. Permissões de extensões não provam pagamento, vencimento ou condições do fornecedor. Separe uma eventual licença do leitor e pergunte por limites Filex não indicados. Envie ao suporte o nome da extensão, a versão do navegador e o sintoma sem dados sensíveis, nunca palavras-passe ou links privados. Não repita um pagamento para testar o navegador."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Расширения и IPTV Subscription: проверьте доступ Chrome",
+      "excerpt": "Посмотрите доступ расширения Chrome к сайту, прежде чем связывать изменённую страницу с тарифом. Разделяйте разрешения, условия и состояние заказа.",
+      "seo_title": "Расширения и IPTV Subscription: проверьте доступ Chrome",
+      "seo_description": "Посмотрите доступ расширения Chrome к сайту, прежде чем связывать изменённую страницу с тарифом. Разделяйте разрешения, условия и состояние заказа.",
+      "sections": [
+        {
+          "heading": "Определите, что изменилось",
+          "paragraphs": [
+            "Если публичная страница тарифов выглядит иначе или показывает незнакомый запрос, запишите изменение до повторного заказа. Проверка расширений при использовании IPTV Subscription означает определение компонента браузера, а не установку новой программы. Запишите название расширения и адрес сайта. Сообщение возле значка расширения отличается от уведомления внутри страницы; ни одно само по себе не доказывает изменение подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущий доступ к сайту",
+          "paragraphs": [
+            "Для настольного Chrome Google описывает открытие раздела расширений, меню дополнительных действий нужного расширения и пункта доступа к данным сайта. Прочитайте выбранный вариант: при выборе расширения, на текущем сайте или на всех сайтах; названия могут отличаться. Просмотр не требует расширять доступ. Сохраняйте управляемые средства защиты и спросите владельца, если настройка заблокирована. Это разрешение не управляет низкоуровневым сетевым доступом VPN или прокси, поэтому не является полной проверкой соединения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная справка о доступе расширений",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверяйте услугу отдельно",
+          "paragraphs": [
+            "Через привычный доверенный способ доступа уточните выбранную услугу Opplex или Filex, срок и записанное состояние заказа. Разрешения расширения не подтверждают оплату, окончание подписки или условия поставщика. Отдельно учитывайте возможную лицензию плеера и уточняйте неуказанный лимит подключений Filex. Передайте поддержке название расширения, версию браузера и очищенное от личных данных описание, без паролей и закрытых ссылок заказа. Не повторяйте платёж ради проверки браузера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی ایکسٹینشنز: پہلے Chrome کی سائٹ رسائی پڑھیں",
+      "excerpt": "پلان کے صفحے کی تبدیلی کو سروس سے منسوب کرنے سے پہلے Chrome ایکسٹینشن کی رسائی دیکھیں۔ اجازتیں، فراہم کنندہ کی شرائط اور آرڈر کی حالت الگ رکھیں۔",
+      "seo_title": "IPTV Subscription کی ایکسٹینشنز: پہلے Chrome کی سائٹ رسائی پڑھیں",
+      "seo_description": "پلان کے صفحے کی تبدیلی کو سروس سے منسوب کرنے سے پہلے Chrome ایکسٹینشن کی رسائی دیکھیں۔ اجازتیں، فراہم کنندہ کی شرائط اور آرڈر کی حالت الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "کیا بدلا ہے، یہ پہچانیں",
+          "paragraphs": [
+            "پبلک پلان کا صفحہ مختلف لگے یا غیر مانوس درخواست دکھائے تو دوبارہ آرڈر دینے سے پہلے اصل تبدیلی لکھیں۔ IPTV Subscription استعمال کرتے ہوئے ایکسٹینشن کی جانچ کا مطلب متعلقہ براؤزر جزو پہچاننا ہے، نیا ٹول نصب کرنا نہیں۔ ایکسٹینشن کا نام اور ویب پتا نوٹ کریں۔ اس کے آئیکن کے ساتھ پیغام، ویب صفحے کے اندر اطلاع سے الگ ہے؛ کوئی ایک اکیلا دیکھنے کی رکنیت بدلنے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "سائٹ کی موجودہ رسائی پڑھیں",
+          "paragraphs": [
+            "کمپیوٹر کے Chrome میں Google ایکسٹینشنز، متعلقہ ایکسٹینشن کا مزید اختیارات والا مینو اور سائٹ ڈیٹا کی رسائی کھولنے کا طریقہ بتاتا ہے۔ موجودہ انتخاب پڑھیں: منتخب کرنے پر، اسی سائٹ پر یا تمام سائٹس پر؛ نام مختلف ہو سکتے ہیں۔ دیکھنے کے لیے زیادہ رسائی دینا ضروری نہیں۔ انتظامی حفاظتی کنٹرول برقرار رکھیں اور ترتیب مقفل ہو تو مالک سے پوچھیں۔ یہ اجازت VPN یا پراکسی کی نچلی سطح کی نیٹ ورک رسائی نہیں چلاتی، اس لیے مکمل کنکشن تشخیص نہیں ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "ایکسٹینشن کی رسائی کی سرکاری ہدایت",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "سروس کا ریکارڈ الگ رکھیں",
+          "paragraphs": [
+            "اپنے پہلے سے قابل اعتماد رسائی کے طریقے سے منتخب Opplex یا Filex سروس، مدت اور آرڈر کی درج حالت دیکھیں۔ ایکسٹینشن کی اجازتیں ادائیگی، میعاد ختم ہونے یا فراہم کنندہ کی شرائط ثابت نہیں کرتیں۔ پلیئر کی ممکنہ الگ لائسنس فیس الگ رکھیں اور Filex کی غیر درج کنکشن حد پوچھیں۔ معاونت کو ایکسٹینشن کا نام، براؤزر ورژن اور حساس معلومات سے پاک علامت دیں، پاس ورڈ یا نجی آرڈر روابط نہیں۔ براؤزر کی تبدیلی آزمانے کے لیے ادائیگی دوبارہ نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إضافات IPTV Subscription: اقرأ وصول Chrome إلى الموقع",
+      "excerpt": "راجع وصول إضافة Chrome إلى الموقع قبل ربط تغير صفحة الخطة بالاشتراك. افصل الأذونات وشروط المزود وحالة الطلب.",
+      "seo_title": "إضافات IPTV Subscription: اقرأ وصول Chrome إلى الموقع",
+      "seo_description": "راجع وصول إضافة Chrome إلى الموقع قبل ربط تغير صفحة الخطة بالاشتراك. افصل الأذونات وشروط المزود وحالة الطلب.",
+      "sections": [
+        {
+          "heading": "حدد ما الذي تغير",
+          "paragraphs": [
+            "إذا بدت صفحة الخطط العامة مختلفة أو ظهر طلب غير مألوف، فسجل التغيير قبل إعادة الطلب. فحص الإضافات عند استخدام IPTV Subscription يعني تحديد مكون المتصفح المعني، وليس تثبيت أداة أخرى. سجل اسم الإضافة وعنوان الموقع. الرسالة بجوار رمز الإضافة تختلف عن إشعار داخل الصفحة؛ ولا تثبت أي منهما وحدها أن اشتراك المشاهدة تغير."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الوصول الحالي إلى الموقع",
+          "paragraphs": [
+            "يشرح Google في Chrome للكمبيوتر فتح الإضافات، ثم قائمة المزيد الخاصة بالإضافة وبند وصولها إلى بيانات الموقع. اقرأ الخيار الحالي، مثل الوصول عند اختيارها أو على الموقع الحالي أو جميع المواقع؛ قد تختلف التسميات. لا تتطلب المعاينة منح وصول أوسع. احتفظ بضوابط الأمان المدارة واسأل المالك إذا كان الإعداد مقفلا. هذا الإذن لا يدير وصول الشبكة منخفض المستوى عبر VPN أو الوكيل، ولذلك لا يشكل تشخيصا كاملا للاتصال."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الدليل الرسمي لوصول الإضافات",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل سجل الخدمة",
+          "paragraphs": [
+            "أكد خدمة Opplex أو Filex المختارة ومدتها وحالة الطلب المسجلة عبر طريقة الوصول الموثوقة المعتادة. أذونات الإضافة لا تثبت الدفع أو انتهاء الاشتراك أو شروط المزود. افصل أي رسم مستقل لترخيص المشغل، واسأل عن حد اتصالات Filex غير المذكور. أعط الدعم اسم الإضافة وإصدار المتصفح ووصفا منزوع البيانات الحساسة، دون كلمات مرور أو روابط طلب خاصة. لا تكرر الدفع لاختبار تغيير في المتصفح."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription एक्सटेंशन: पहले Chrome की साइट पहुँच पढ़ें",
+      "excerpt": "प्लान पेज के बदलाव को सेवा से जोड़ने से पहले Chrome एक्सटेंशन की साइट पहुँच देखें। अनुमतियाँ, प्रदाता की शर्तें और ऑर्डर की स्थिति अलग रखें।",
+      "seo_title": "IPTV Subscription एक्सटेंशन: पहले Chrome की साइट पहुँच पढ़ें",
+      "seo_description": "प्लान पेज के बदलाव को सेवा से जोड़ने से पहले Chrome एक्सटेंशन की साइट पहुँच देखें। अनुमतियाँ, प्रदाता की शर्तें और ऑर्डर की स्थिति अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि क्या बदला",
+          "paragraphs": [
+            "सार्वजनिक प्लान पेज अलग दिखे या अनजान अनुरोध आए तो दोबारा ऑर्डर देने से पहले सही बदलाव लिखें। IPTV Subscription इस्तेमाल करते हुए एक्सटेंशन जाँचने का मतलब संबंधित ब्राउज़र हिस्से को पहचानना है, नया टूल इंस्टॉल करना नहीं। एक्सटेंशन का नाम और वेबसाइट पता लिखें। उसके आइकन के पास संदेश, पेज के भीतर सूचना से अलग है; अकेला कोई भी देखने की सदस्यता बदलने का प्रमाण नहीं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "साइट की मौजूदा पहुँच पढ़ें",
+          "paragraphs": [
+            "कंप्यूटर के Chrome में Google एक्सटेंशन, संबंधित एक्सटेंशन का अधिक विकल्प वाला मेनू और साइट डेटा पहुँच खोलने का तरीका बताता है। मौजूदा विकल्प पढ़ें: चुनने पर, इसी साइट पर या सभी साइटों पर; नाम अलग हो सकते हैं। देखने के लिए ज्यादा पहुँच देना जरूरी नहीं। प्रबंधित सुरक्षा नियंत्रण बनाए रखें और सेटिंग बंद हो तो मालिक से पूछें। यह अनुमति VPN या प्रॉक्सी की निचले स्तर की नेटवर्क पहुँच नहीं चलाती, इसलिए पूरी कनेक्शन जाँच नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "एक्सटेंशन पहुँच की आधिकारिक सहायता",
+              "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "सेवा का रिकॉर्ड अलग रखें",
+          "paragraphs": [
+            "अपने मौजूदा भरोसेमंद पहुँच तरीके से चुनी Opplex या Filex सेवा, अवधि और ऑर्डर की दर्ज स्थिति पक्की करें। एक्सटेंशन अनुमतियाँ भुगतान, समाप्ति या प्रदाता की शर्तें साबित नहीं करतीं। प्लेयर के संभावित अलग लाइसेंस शुल्क को अलग रखें और Filex की अनबताई कनेक्शन सीमा पूछें। सहायता को एक्सटेंशन नाम, ब्राउज़र संस्करण और संवेदनशील जानकारी रहित लक्षण दें, पासवर्ड या निजी ऑर्डर लिंक नहीं। ब्राउज़र बदलाव जाँचने के लिए भुगतान दोबारा न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Web Store Help: extension site-data access",
+      "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en"
+    }
+  ]
+}

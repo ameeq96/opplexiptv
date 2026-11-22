@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-22",
+  "topic": "Distinguish VLC for Android Resume Playback and Play from start for a permitted seekable video from any unconfirmed provider catch-up entitlement.",
+  "primary_keyword": "IPTV resume playback",
+  "slug": "main-resume-playback-reopen-the-intended-video",
+  "translations": {
+    "en": {
+      "title": "IPTV resume playback: reopen the intended video in VLC",
+      "excerpt": "Compare VLC’s last-video shortcut with starting a chosen video again. Keep saved progress separate from any provider catch-up feature or viewing entitlement.",
+      "seo_title": "IPTV resume playback: reopen the intended video in VLC",
+      "seo_description": "Compare VLC’s last-video shortcut with starting a chosen video again. Keep saved progress separate from any provider catch-up feature or viewing entitlement.",
+      "sections": [
+        {
+          "heading": "Identify the reopening route",
+          "paragraphs": [
+            "A saved position can look like an unexpected start. For an IPTV resume playback question, first note whether you tapped VLC’s Resume Playback icon or selected a particular video. VideoLAN describes that icon as reopening the last played video. Check the title before allowing it to continue, especially on a shared screen. This player shortcut does not establish that your provider offers programme catch-up."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare the same permitted video",
+          "paragraphs": [
+            "For a seekable video you are allowed to play, note its name and approximate position first. In the documented VLC for Android Video Explorer menu, Play from start begins that item at the beginning instead of resuming. Use the controls actually present in your version and compare one deliberate entry route at a time. Some streams do not support seeking or remembered positions; a player button does not prove that a live channel can rewind."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a precise support note",
+          "paragraphs": [
+            "Record the item selected, the control used and the position reached. If another title opens, describe that route separately from a failure to play the intended video. Preserve the library and saved access; clearing history or erasing app data is unnecessary for identifying an entry control. Stop earlier playback before another comparison. Share the player version and a redacted description, without private playback addresses or account details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Reanudar IPTV: abre el vídeo deseado en VLC",
+      "excerpt": "Compara el acceso al último vídeo de VLC con iniciar de nuevo un vídeo elegido. Separa el progreso guardado de cualquier función de recuperación del proveedor.",
+      "seo_title": "Reanudar IPTV: abre el vídeo deseado en VLC",
+      "seo_description": "Compara el acceso al último vídeo de VLC con iniciar de nuevo un vídeo elegido. Separa el progreso guardado de cualquier función de recuperación del proveedor.",
+      "sections": [
+        {
+          "heading": "Identifica cómo vuelves al vídeo",
+          "paragraphs": [
+            "Una posición guardada puede parecer un inicio inesperado. Al consultar cómo reanudar IPTV, anota si pulsaste el icono de reanudación de VLC o elegiste un vídeo concreto. VideoLAN describe ese icono como una forma de abrir el último vídeo reproducido. Comprueba el título antes de dejarlo continuar, sobre todo en una pantalla compartida. Ese acceso del reproductor no demuestra que el proveedor ofrezca recuperación de programas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara el mismo vídeo permitido",
+          "paragraphs": [
+            "Para un vídeo que tengas permiso para reproducir y que permita desplazarse, anota primero su nombre y posición aproximada. En el menú documentado del explorador de vídeos de VLC para Android, reproducir desde el principio inicia ese elemento desde cero en vez de reanudarlo. Usa los controles presentes en tu versión y compara una vía de entrada cada vez. Algunas transmisiones no permiten desplazarse ni recordar posiciones; un botón no demuestra que un canal en directo pueda retroceder."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Prepara una nota de soporte precisa",
+          "paragraphs": [
+            "Anota el elemento elegido, el control utilizado y la posición alcanzada. Si se abre otro título, describe esa vía por separado de un fallo al reproducir el vídeo deseado. Conserva la biblioteca y el acceso guardado; no hace falta borrar el historial ni los datos de la aplicación para identificar un control de entrada. Detén la reproducción anterior antes de comparar otra vez. Comparte la versión y una descripción sin direcciones privadas ni datos de cuenta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Reprise IPTV : rouvrir la bonne vidéo dans VLC",
+      "excerpt": "Comparez le raccourci vers la dernière vidéo de VLC avec le redémarrage d’une vidéo choisie. Distinguez la progression mémorisée d’un éventuel rattrapage du fournisseur.",
+      "seo_title": "Reprise IPTV : rouvrir la bonne vidéo dans VLC",
+      "seo_description": "Comparez le raccourci vers la dernière vidéo de VLC avec le redémarrage d’une vidéo choisie. Distinguez la progression mémorisée d’un éventuel rattrapage du fournisseur.",
+      "sections": [
+        {
+          "heading": "Identifiez le chemin de réouverture",
+          "paragraphs": [
+            "Une position mémorisée peut donner l’impression d’un départ inattendu. Pour une question de reprise IPTV, notez si vous avez touché l’icône de reprise de VLC ou sélectionné une vidéo précise. VideoLAN décrit cette icône comme permettant de rouvrir la dernière vidéo lue. Vérifiez le titre avant de la laisser continuer, surtout sur un écran partagé. Ce raccourci du lecteur ne prouve pas que le fournisseur propose le rattrapage des programmes."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez la même vidéo autorisée",
+          "paragraphs": [
+            "Pour une vidéo que vous pouvez légalement lire et qui permet le déplacement, notez son nom et sa position approximative. Dans le menu documenté de l’explorateur vidéo de VLC pour Android, la lecture depuis le début démarre cet élément au commencement au lieu de le reprendre. Utilisez les commandes présentes dans votre version et comparez un seul chemin d’entrée à la fois. Certains flux ne permettent ni déplacement ni mémorisation ; un bouton ne prouve pas qu’une chaîne en direct peut revenir en arrière."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Préparez une note précise",
+          "paragraphs": [
+            "Notez l’élément sélectionné, la commande employée et la position atteinte. Si un autre titre s’ouvre, décrivez ce chemin séparément d’un échec de lecture de la vidéo souhaitée. Conservez la bibliothèque et l’accès enregistré ; effacer l’historique ou les données de l’application est inutile pour identifier une commande d’entrée. Arrêtez la lecture précédente avant une nouvelle comparaison. Communiquez la version et une description expurgée, sans adresse privée ni identifiants."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ripresa IPTV: riapri il video desiderato in VLC",
+      "excerpt": "Confronta il collegamento all’ultimo video di VLC con l’avvio dall’inizio di un video scelto. Separa il progresso salvato dalle funzioni di recupero del fornitore.",
+      "seo_title": "Ripresa IPTV: riapri il video desiderato in VLC",
+      "seo_description": "Confronta il collegamento all’ultimo video di VLC con l’avvio dall’inizio di un video scelto. Separa il progresso salvato dalle funzioni di recupero del fornitore.",
+      "sections": [
+        {
+          "heading": "Identifica il percorso di riapertura",
+          "paragraphs": [
+            "Una posizione salvata può sembrare un avvio imprevisto. Per una domanda sulla ripresa IPTV, annota se hai toccato l’icona di ripresa di VLC o selezionato un video preciso. VideoLAN descrive quell’icona come un modo per riaprire l’ultimo video riprodotto. Controlla il titolo prima di lasciarlo continuare, soprattutto su uno schermo condiviso. Questo collegamento del lettore non dimostra che il fornitore offra il recupero dei programmi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta lo stesso video consentito",
+          "paragraphs": [
+            "Per un video che sei autorizzato a riprodurre e che consente lo spostamento, annota nome e posizione approssimativa. Nel menu documentato dell’esploratore video di VLC per Android, la riproduzione dall’inizio avvia quell’elemento dal principio invece di riprenderlo. Usa i controlli presenti nella tua versione e confronta un solo percorso alla volta. Alcuni flussi non consentono spostamenti o posizioni memorizzate; un pulsante non dimostra che un canale in diretta possa tornare indietro."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Prepara una nota precisa per l’assistenza",
+          "paragraphs": [
+            "Annota elemento scelto, comando usato e posizione raggiunta. Se si apre un altro titolo, descrivi quel percorso separatamente da un errore del video desiderato. Conserva libreria e accesso salvato: non serve cancellare cronologia o dati dell’app per identificare un comando di ingresso. Interrompi la riproduzione precedente prima di un altro confronto. Condividi versione e descrizione senza indirizzi di riproduzione privati o dati dell’account."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV hervatten: open de bedoelde video in VLC",
+      "excerpt": "Vergelijk VLC’s snelkoppeling naar de laatste video met opnieuw beginnen bij een gekozen video. Houd bewaarde voortgang gescheiden van terugkijkrechten bij de aanbieder.",
+      "seo_title": "IPTV hervatten: open de bedoelde video in VLC",
+      "seo_description": "Vergelijk VLC’s snelkoppeling naar de laatste video met opnieuw beginnen bij een gekozen video. Houd bewaarde voortgang gescheiden van terugkijkrechten bij de aanbieder.",
+      "sections": [
+        {
+          "heading": "Herken de manier van openen",
+          "paragraphs": [
+            "Een bewaarde positie kan als een onverwacht begin overkomen. Noteer bij een vraag over IPTV hervatten eerst of je VLC’s hervatpictogram aantikte of een bepaalde video koos. VideoLAN beschrijft dit pictogram als het opnieuw openen van de laatst afgespeelde video. Controleer de titel voordat je deze laat doorgaan, vooral op een gedeeld scherm. Deze snelkoppeling van de speler bewijst niet dat de aanbieder programma’s laat terugkijken."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk dezelfde toegestane video",
+          "paragraphs": [
+            "Noteer bij een video die je mag afspelen en waarin je kunt zoeken eerst de naam en de geschatte positie. In het beschreven menu van VLC voor Android begint afspelen vanaf het begin dat item opnieuw in plaats van verder te gaan. Gebruik de aanwezige bediening van jouw versie en vergelijk één bewuste openingsroute tegelijk. Sommige streams ondersteunen geen zoeken of bewaarde posities; een knop bewijst niet dat een livekanaal kan terugspoelen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Maak een nauwkeurige ondersteuningsnotitie",
+          "paragraphs": [
+            "Noteer het gekozen item, de gebruikte knop en de bereikte positie. Opent een andere titel, beschrijf die route dan los van een afspeelfout bij de bedoelde video. Bewaar de bibliotheek en opgeslagen toegang; geschiedenis of appgegevens wissen is onnodig om een openingsknop te herkennen. Stop eerdere weergave vóór een volgende vergelijking. Deel de spelerversie en een opgeschoonde beschrijving zonder privéafspeeladressen of accountgegevens."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Retomar IPTV: abra o vídeo pretendido no VLC",
+      "excerpt": "Compare o atalho do VLC para o último vídeo com iniciar novamente um vídeo escolhido. Separe o progresso guardado de qualquer função de recuperação do fornecedor.",
+      "seo_title": "Retomar IPTV: abra o vídeo pretendido no VLC",
+      "seo_description": "Compare o atalho do VLC para o último vídeo com iniciar novamente um vídeo escolhido. Separe o progresso guardado de qualquer função de recuperação do fornecedor.",
+      "sections": [
+        {
+          "heading": "Identifique como voltou ao vídeo",
+          "paragraphs": [
+            "Uma posição guardada pode parecer um início inesperado. Numa dúvida sobre retomar IPTV, anote se tocou no ícone de retoma do VLC ou selecionou um vídeo específico. A VideoLAN descreve esse ícone como uma forma de reabrir o último vídeo reproduzido. Confirme o título antes de o deixar continuar, sobretudo num ecrã partilhado. Este atalho do leitor não demonstra que o fornecedor disponibiliza recuperação de programas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare o mesmo vídeo permitido",
+          "paragraphs": [
+            "Para um vídeo que está autorizado a reproduzir e que permite procurar posições, anote primeiro o nome e a posição aproximada. No menu documentado do explorador de vídeo do VLC para Android, reproduzir desde o início começa esse elemento no princípio em vez de o retomar. Use os controlos presentes na sua versão e compare uma entrada de cada vez. Alguns fluxos não permitem procurar ou memorizar posições; um botão não prova que um canal em direto possa recuar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Prepare uma nota de apoio precisa",
+          "paragraphs": [
+            "Registe o elemento escolhido, o controlo usado e a posição alcançada. Se abrir outro título, descreva esse percurso separadamente de uma falha no vídeo pretendido. Preserve a biblioteca e o acesso guardado; apagar histórico ou dados da aplicação é desnecessário para identificar uma entrada. Pare a reprodução anterior antes de outra comparação. Partilhe a versão do leitor e uma descrição sem endereços privados de reprodução ou dados da conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Возобновление IPTV: откройте нужное видео в VLC",
+      "excerpt": "Сравните переход к последнему видео в VLC с запуском выбранного ролика с начала. Не путайте сохранённую позицию с возможностью просмотра архива у провайдера.",
+      "seo_title": "Возобновление IPTV: откройте нужное видео в VLC",
+      "seo_description": "Сравните переход к последнему видео в VLC с запуском выбранного ролика с начала. Не путайте сохранённую позицию с возможностью просмотра архива у провайдера.",
+      "sections": [
+        {
+          "heading": "Определите способ открытия",
+          "paragraphs": [
+            "Сохранённая позиция может выглядеть как неожиданное начало. Разбирая возобновление IPTV, сначала отметьте, нажали ли вы значок продолжения VLC или выбрали конкретное видео. По документации VideoLAN этот значок открывает последнее воспроизведённое видео. Проверьте название, прежде чем продолжать, особенно на общем экране. Такой переход внутри плеера не подтверждает наличие архива программ у провайдера."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сравните одно разрешённое видео",
+          "paragraphs": [
+            "Для видео, которое вам разрешено смотреть и которое поддерживает перемотку, запишите название и примерную позицию. В описанном меню видеобиблиотеки VLC для Android запуск с начала воспроизводит выбранный элемент сначала, а не продолжает его. Используйте доступные в вашей версии команды и сравнивайте один способ открытия за раз. Некоторые потоки не поддерживают перемотку или сохранённые позиции; наличие кнопки не доказывает возможность отмотать прямой эфир."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Подготовьте точное описание",
+          "paragraphs": [
+            "Запишите выбранный элемент, использованную команду и полученную позицию. Если открылось другое название, опишите этот переход отдельно от ошибки нужного видео. Сохраните библиотеку и данные доступа: удалять историю или данные приложения для определения команды открытия не требуется. Остановите прежнее воспроизведение перед новым сравнением. Сообщите версию плеера и описание без личных адресов воспроизведения и данных учётной записи."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV دوبارہ چلانا: VLC میں مطلوبہ ویڈیو کھولیں",
+      "excerpt": "VLC کے آخری ویڈیو والے شارٹ کٹ اور منتخب ویڈیو کو شروع سے چلانے کا فرق دیکھیں۔ محفوظ مقام کو فراہم کنندہ کی پروگرام دوبارہ دیکھنے کی سہولت سے الگ رکھیں۔",
+      "seo_title": "IPTV دوبارہ چلانا: VLC میں مطلوبہ ویڈیو کھولیں",
+      "seo_description": "VLC کے آخری ویڈیو والے شارٹ کٹ اور منتخب ویڈیو کو شروع سے چلانے کا فرق دیکھیں۔ محفوظ مقام کو فراہم کنندہ کی پروگرام دوبارہ دیکھنے کی سہولت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "دوبارہ کھولنے کا راستہ پہچانیں",
+          "paragraphs": [
+            "محفوظ مقام کبھی غیر متوقع آغاز لگ سکتا ہے۔ IPTV دوبارہ چلانے کے سوال میں پہلے نوٹ کریں کہ آپ نے VLC کا جاری رکھنے والا آئیکن دبایا یا کوئی مخصوص ویڈیو منتخب کی۔ VideoLAN کے مطابق یہ آئیکن آخری چلائی گئی ویڈیو دوبارہ کھولتا ہے۔ اسے جاری رہنے دینے سے پہلے عنوان دیکھیں، خاص طور پر مشترکہ اسکرین پر۔ پلیئر کا یہ شارٹ کٹ فراہم کنندہ کی پروگرام دوبارہ دیکھنے کی سہولت ثابت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اسی اجازت یافتہ ویڈیو سے موازنہ کریں",
+          "paragraphs": [
+            "جس ویڈیو کو دیکھنے کی اجازت ہو اور جس میں آگے پیچھے جا سکیں، پہلے اس کا نام اور اندازاً مقام لکھیں۔ VLC برائے Android کے بیان کردہ ویڈیو مینو میں شروع سے چلانے کا اختیار اسی چیز کو جاری رکھنے کے بجائے ابتدا سے چلاتا ہے۔ اپنے نسخے کے موجود کنٹرول استعمال کریں اور ایک وقت میں کھولنے کے ایک راستے کا موازنہ کریں۔ بعض اسٹریم آگے پیچھے جانے یا مقام یاد رکھنے کی سہولت نہیں دیتیں؛ پلیئر کا بٹن براہ راست چینل کو پیچھے لے جانے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "معاونت کے لیے واضح نوٹ رکھیں",
+          "paragraphs": [
+            "منتخب ویڈیو، استعمال کیا ہوا کنٹرول اور پہنچنے والا مقام لکھیں۔ دوسرا عنوان کھلے تو اس راستے کو مطلوبہ ویڈیو نہ چلنے کی خطا سے الگ بیان کریں۔ لائبریری اور محفوظ رسائی برقرار رکھیں؛ کھولنے کا کنٹرول پہچاننے کے لیے نہ ہسٹری صاف کریں اور نہ ایپ کا ڈیٹا مٹائیں۔ دوسرے موازنے سے پہلے پچھلا پلے بیک روکیں۔ پلیئر کا نسخہ اور حساس معلومات سے پاک وضاحت دیں، نجی پلے بیک پتے یا اکاؤنٹ کی تفصیلات نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "استئناف IPTV: افتح الفيديو المقصود في VLC",
+      "excerpt": "قارن اختصار آخر فيديو في VLC ببدء فيديو تختاره من جديد. افصل الموضع المحفوظ عن أي ميزة لإعادة البرامج أو صلاحية مشاهدة لدى المزوّد.",
+      "seo_title": "استئناف IPTV: افتح الفيديو المقصود في VLC",
+      "seo_description": "قارن اختصار آخر فيديو في VLC ببدء فيديو تختاره من جديد. افصل الموضع المحفوظ عن أي ميزة لإعادة البرامج أو صلاحية مشاهدة لدى المزوّد.",
+      "sections": [
+        {
+          "heading": "حدّد طريقة إعادة الفتح",
+          "paragraphs": [
+            "قد يبدو الموضع المحفوظ كبداية غير متوقعة. عند الاستفسار عن استئناف IPTV، دوّن أولاً هل ضغطت رمز الاستئناف في VLC أم اخترت فيديو محدداً. تصف VideoLAN هذا الرمز بأنه يعيد فتح آخر فيديو تم تشغيله. تحقّق من العنوان قبل تركه يستمر، خصوصاً على شاشة مشتركة. اختصار المشغّل هذا لا يثبت أن المزوّد يتيح إعادة مشاهدة البرامج."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن الفيديو المسموح نفسه",
+          "paragraphs": [
+            "لفيديو مسموح لك بمشاهدته ويدعم الانتقال بين المواضع، دوّن اسمه وموضعه التقريبي أولاً. في قائمة مستكشف الفيديو الموثّقة لـ VLC على Android، يبدأ خيار التشغيل من البداية ذلك العنصر من أوله بدلاً من استئنافه. استخدم عناصر التحكم الموجودة في إصدارك وقارن طريقة دخول واحدة كل مرة. بعض التدفقات لا تدعم التنقّل أو حفظ المواضع؛ وجود زر لا يثبت إمكان إرجاع قناة مباشرة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "احتفظ بملاحظة دعم دقيقة",
+          "paragraphs": [
+            "دوّن العنصر المختار والأداة المستخدمة والموضع الذي وصلت إليه. إذا فُتح عنوان آخر، فصف هذا المسار بصورة منفصلة عن تعذّر تشغيل الفيديو المقصود. حافظ على المكتبة والوصول المحفوظ؛ لا حاجة لمسح السجل أو بيانات التطبيق لتحديد أداة الفتح. أوقف التشغيل السابق قبل مقارنة أخرى. شارك إصدار المشغّل ووصفاً منقّحاً دون عناوين تشغيل خاصة أو تفاصيل الحساب."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV फिर चलाना: VLC में सही वीडियो खोलें",
+      "excerpt": "VLC के पिछले वीडियो वाले शॉर्टकट और चुने वीडियो को शुरू से चलाने में अंतर देखें। सहेजी स्थिति को प्रदाता की कार्यक्रम दोबारा देखने की सुविधा से अलग रखें।",
+      "seo_title": "IPTV फिर चलाना: VLC में सही वीडियो खोलें",
+      "seo_description": "VLC के पिछले वीडियो वाले शॉर्टकट और चुने वीडियो को शुरू से चलाने में अंतर देखें। सहेजी स्थिति को प्रदाता की कार्यक्रम दोबारा देखने की सुविधा से अलग रखें।",
+      "sections": [
+        {
+          "heading": "दोबारा खोलने का रास्ता पहचानें",
+          "paragraphs": [
+            "सहेजी स्थिति कभी अनचाही शुरुआत लग सकती है। IPTV फिर चलाने के सवाल में पहले लिखें कि आपने VLC का जारी रखने वाला चिह्न दबाया या कोई खास वीडियो चुना। VideoLAN के अनुसार यह चिह्न आखिरी चलाया गया वीडियो फिर खोलता है। उसे जारी रखने से पहले नाम देखें, खासकर साझा स्क्रीन पर। प्लेयर का यह शॉर्टकट प्रदाता की कार्यक्रम दोबारा देखने की सुविधा साबित नहीं करता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उसी अनुमत वीडियो से तुलना करें",
+          "paragraphs": [
+            "जिस वीडियो को देखने की अनुमति हो और जिसमें आगे-पीछे जा सकें, उसका नाम और लगभग स्थिति पहले लिखें। Android के लिए VLC के बताए वीडियो मेनू में शुरू से चलाने का विकल्प उसी चीज़ को जारी रखने के बजाय आरंभ से चलाता है। अपने संस्करण के उपलब्ध नियंत्रण लें और एक बार में खोलने के एक रास्ते की तुलना करें। कुछ स्ट्रीम आगे-पीछे जाने या स्थिति याद रखने की सुविधा नहीं देतीं; प्लेयर का बटन लाइव चैनल को पीछे ले जाने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "सहायता के लिए सही जानकारी लिखें",
+          "paragraphs": [
+            "चुना वीडियो, इस्तेमाल किया नियंत्रण और पहुँची स्थिति लिखें। दूसरा शीर्षक खुले तो उस रास्ते को सही वीडियो न चलने की त्रुटि से अलग बताएँ। लाइब्रेरी और सहेजी पहुँच बनाए रखें; खोलने का नियंत्रण पहचानने के लिए न इतिहास साफ करें और न ऐप का डेटा मिटाएँ। दूसरे मिलान से पहले पिछला प्लेबैक रोकें। प्लेयर संस्करण और संवेदनशील जानकारी हटाकर विवरण दें, निजी प्लेबैक पते या खाते की जानकारी नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android Video Explorer controls",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+    }
+  ]
+}

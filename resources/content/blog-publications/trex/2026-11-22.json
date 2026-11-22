@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-22",
+  "topic": "Identify VLC for Android indexed-library Search Media and existing media-folder scope separately from a Trex IPTV provider list or missing service access.",
+  "primary_keyword": "Trex IPTV library search",
+  "slug": "trex-library-search-know-what-vlc-is-searching",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV library search: know what VLC is searching",
+      "excerpt": "VLC’s library search concerns indexed media, not an automatic provider catalogue. Identify the search screen and existing folders before interpreting missing results.",
+      "seo_title": "Trex IPTV library search: know what VLC is searching",
+      "seo_description": "VLC’s library search concerns indexed media, not an automatic provider catalogue. Identify the search screen and existing folders before interpreting missing results.",
+      "sections": [
+        {
+          "heading": "Identify the search screen",
+          "paragraphs": [
+            "When a Trex IPTV library search returns no match, first note the heading and player. VideoLAN documents Search Media in VLC for Android’s Video Explorer as searching media already indexed by VLC. That is a defined player-library scope, not evidence that every provider programme is indexed there. Do not interpret one empty search as a removed channel or a service-wide outage."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Inspect the existing library scope",
+          "paragraphs": [
+            "Check the wording searched and which screen supplied the result. VideoLAN separately documents Media library folders and an Auto rescan preference in general settings. Read the existing folder selection before assuming a storage item was included. You do not need to select the entire device, grant broad storage access or erase a database for this inspection. Menus can vary by version; use documentation matching the installed player."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Report the correct missing result",
+          "paragraphs": [
+            "If the question concerns your provider’s configured list, return through your usual trusted route and inspect that player’s own available search controls. They need not behave like VLC’s indexed library. Describe whether the missing item is a local file, library result or provider entry, plus the device and player version. Preserve saved settings and private addresses. Trex IPTV 8K permits one simultaneous connection; extra playback sessions are not a useful library-search test."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Búsqueda de biblioteca de Trex IPTV: qué busca VLC",
+      "excerpt": "La búsqueda de biblioteca de VLC abarca medios indexados, no un catálogo automático del proveedor. Identifica la pantalla y las carpetas existentes antes de interpretar resultados ausentes.",
+      "seo_title": "Búsqueda de biblioteca de Trex IPTV: qué busca VLC",
+      "seo_description": "La búsqueda de biblioteca de VLC abarca medios indexados, no un catálogo automático del proveedor. Identifica la pantalla y las carpetas existentes antes de interpretar resultados ausentes.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla de búsqueda",
+          "paragraphs": [
+            "Si una búsqueda de biblioteca de Trex IPTV no encuentra coincidencias, anota primero el encabezado y el reproductor. VideoLAN documenta que la búsqueda multimedia del explorador de vídeos de VLC para Android consulta medios ya indexados por VLC. Ese alcance de biblioteca no demuestra que todos los programas del proveedor estén indexados allí. Una búsqueda vacía no prueba que se haya eliminado un canal ni que exista una caída general."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Inspecciona el alcance actual de la biblioteca",
+          "paragraphs": [
+            "Revisa el texto buscado y la pantalla que mostró el resultado. VideoLAN documenta por separado las carpetas de biblioteca y una preferencia de reexploración automática en los ajustes generales. Lee la selección actual antes de suponer que un archivo estaba incluido. No necesitas seleccionar todo el dispositivo, conceder acceso amplio al almacenamiento ni borrar una base de datos para inspeccionarlo. Los menús varían; usa documentación que corresponda al reproductor instalado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Describe el resultado que realmente falta",
+          "paragraphs": [
+            "Si la pregunta afecta a la lista configurada del proveedor, vuelve por tu vía habitual de confianza y revisa la búsqueda disponible en ese reproductor. No tiene por qué funcionar como la biblioteca indexada de VLC. Indica si falta un archivo local, un resultado de biblioteca o una entrada del proveedor, junto con el dispositivo y la versión. Conserva ajustes y direcciones privadas. Trex IPTV 8K permite una conexión simultánea; abrir sesiones adicionales no es una prueba útil de búsqueda."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Recherche de bibliothèque Trex IPTV : ce que VLC examine",
+      "excerpt": "La recherche de bibliothèque VLC concerne les médias indexés, pas un catalogue automatique du fournisseur. Identifiez l’écran et les dossiers avant d’interpréter des résultats absents.",
+      "seo_title": "Recherche de bibliothèque Trex IPTV : ce que VLC examine",
+      "seo_description": "La recherche de bibliothèque VLC concerne les médias indexés, pas un catalogue automatique du fournisseur. Identifiez l’écran et les dossiers avant d’interpréter des résultats absents.",
+      "sections": [
+        {
+          "heading": "Identifiez l’écran de recherche",
+          "paragraphs": [
+            "Si une recherche de bibliothèque Trex IPTV ne trouve rien, notez d’abord le titre de l’écran et le lecteur. VideoLAN précise que la recherche multimédia de l’explorateur vidéo de VLC pour Android porte sur les médias déjà indexés par VLC. Ce périmètre ne prouve pas que tous les programmes du fournisseur y figurent. Une recherche vide ne signifie pas qu’une chaîne a été supprimée ou que tout le service est indisponible."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Examinez le périmètre existant",
+          "paragraphs": [
+            "Vérifiez les mots recherchés et l’écran ayant fourni le résultat. VideoLAN décrit séparément les dossiers de bibliothèque et la préférence de nouvelle analyse automatique dans les réglages généraux. Lisez la sélection actuelle avant de supposer qu’un fichier était inclus. Inutile de sélectionner tout l’appareil, d’accorder un accès étendu au stockage ou d’effacer une base de données pour cette inspection. Les menus varient ; consultez la documentation de votre version."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Décrivez le résultat réellement absent",
+          "paragraphs": [
+            "Si la question concerne la liste configurée du fournisseur, revenez par votre chemin habituel de confiance et examinez la recherche proposée dans ce lecteur. Elle peut différer de la bibliothèque indexée de VLC. Précisez s’il manque un fichier local, un résultat de bibliothèque ou une entrée du fournisseur, avec l’appareil et la version. Préservez réglages et adresses privées. Trex IPTV 8K autorise une connexion simultanée ; des sessions supplémentaires ne constituent pas un test utile de recherche."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ricerca nella libreria Trex IPTV: cosa cerca VLC",
+      "excerpt": "La ricerca nella libreria VLC riguarda i contenuti indicizzati, non un catalogo automatico del fornitore. Identifica schermata e cartelle esistenti prima di interpretare risultati mancanti.",
+      "seo_title": "Ricerca nella libreria Trex IPTV: cosa cerca VLC",
+      "seo_description": "La ricerca nella libreria VLC riguarda i contenuti indicizzati, non un catalogo automatico del fornitore. Identifica schermata e cartelle esistenti prima di interpretare risultati mancanti.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata di ricerca",
+          "paragraphs": [
+            "Se una ricerca nella libreria Trex IPTV non trova risultati, annota prima il titolo della schermata e il lettore. VideoLAN documenta che la ricerca multimediale nell’esploratore video di VLC per Android cerca contenuti già indicizzati da VLC. Questo ambito non dimostra che ogni programma del fornitore sia presente. Una ricerca vuota non prova la rimozione di un canale né un’interruzione generale del servizio."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla l’ambito esistente della libreria",
+          "paragraphs": [
+            "Verifica le parole cercate e la schermata che ha mostrato il risultato. VideoLAN documenta separatamente le cartelle della libreria e la preferenza di nuova scansione automatica nelle impostazioni generali. Leggi la selezione corrente prima di presumere che un file fosse incluso. Non serve selezionare l’intero dispositivo, concedere accesso esteso alla memoria o cancellare un database per questa verifica. I menu variano: usa documentazione adatta alla versione installata."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descrivi il risultato che manca davvero",
+          "paragraphs": [
+            "Se la domanda riguarda la lista configurata del fornitore, torna dal tuo consueto percorso affidabile e controlla la ricerca disponibile in quel lettore. Può funzionare diversamente dalla libreria indicizzata di VLC. Specifica se manca un file locale, un risultato della libreria o una voce del fornitore, indicando dispositivo e versione. Conserva impostazioni e indirizzi privati. Trex IPTV 8K consente una connessione simultanea; sessioni aggiuntive non sono una prova utile per la ricerca."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-bibliotheek zoeken: wat doorzoekt VLC?",
+      "excerpt": "VLC’s bibliotheekzoekfunctie doorzoekt geïndexeerde media, geen automatische aanbiederscatalogus. Herken het zoekscherm en de bestaande mappen voordat je ontbrekende resultaten beoordeelt.",
+      "seo_title": "Trex IPTV-bibliotheek zoeken: wat doorzoekt VLC?",
+      "seo_description": "VLC’s bibliotheekzoekfunctie doorzoekt geïndexeerde media, geen automatische aanbiederscatalogus. Herken het zoekscherm en de bestaande mappen voordat je ontbrekende resultaten beoordeelt.",
+      "sections": [
+        {
+          "heading": "Herken het zoekscherm",
+          "paragraphs": [
+            "Levert zoeken in de Trex IPTV-bibliotheek geen overeenkomst op, noteer dan eerst het schermopschrift en de speler. VideoLAN beschrijft de mediazoekfunctie in VLC voor Android als zoeken in media die VLC al heeft geïndexeerd. Dat bereik van de spelersbibliotheek bewijst niet dat alle programma’s van de aanbieder daarin staan. Eén lege zoekopdracht bewijst geen verwijderde zender of storing van de hele dienst."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Bekijk het bestaande bibliotheekbereik",
+          "paragraphs": [
+            "Controleer de zoektekst en het scherm dat het resultaat gaf. VideoLAN beschrijft bibliotheekmappen en automatisch opnieuw scannen afzonderlijk bij algemene instellingen. Lees de huidige mapselectie voordat je aanneemt dat een bestand is opgenomen. Je hoeft hiervoor niet het hele apparaat te selecteren, brede opslagtoegang te geven of een database te wissen. Menu’s verschillen per versie; gebruik documentatie die past bij de geïnstalleerde speler."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Beschrijf het werkelijk ontbrekende resultaat",
+          "paragraphs": [
+            "Gaat de vraag over de ingestelde aanbiederslijst, keer dan via je vertrouwde route terug en bekijk de beschikbare zoekfunctie van die speler. Die hoeft niet zoals VLC’s geïndexeerde bibliotheek te werken. Beschrijf of een lokaal bestand, bibliotheekresultaat of aanbiedersitem ontbreekt, met apparaat en spelerversie. Bewaar instellingen en privéadressen. Trex IPTV 8K staat één gelijktijdige verbinding toe; extra afspeelsessies zijn geen nuttige test voor bibliotheekzoeken."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Pesquisa na biblioteca Trex IPTV: o que o VLC procura",
+      "excerpt": "A pesquisa da biblioteca do VLC abrange conteúdos indexados, não um catálogo automático do fornecedor. Identifique o ecrã e as pastas antes de interpretar resultados ausentes.",
+      "seo_title": "Pesquisa na biblioteca Trex IPTV: o que o VLC procura",
+      "seo_description": "A pesquisa da biblioteca do VLC abrange conteúdos indexados, não um catálogo automático do fornecedor. Identifique o ecrã e as pastas antes de interpretar resultados ausentes.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã de pesquisa",
+          "paragraphs": [
+            "Se uma pesquisa na biblioteca Trex IPTV não encontrar correspondências, anote primeiro o título do ecrã e o leitor. A VideoLAN documenta que a pesquisa multimédia do explorador de vídeo do VLC para Android procura conteúdos já indexados pelo VLC. Esse âmbito não prova que todos os programas do fornecedor estejam presentes. Uma pesquisa vazia não demonstra a remoção de um canal nem uma falha geral do serviço."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Inspecione o âmbito existente da biblioteca",
+          "paragraphs": [
+            "Confirme as palavras pesquisadas e o ecrã que apresentou o resultado. A VideoLAN documenta separadamente as pastas da biblioteca e a preferência de nova análise automática nas definições gerais. Leia a seleção atual antes de assumir que um ficheiro foi incluído. Não precisa de selecionar todo o dispositivo, dar acesso amplo ao armazenamento ou apagar uma base de dados. Os menus variam; use documentação correspondente ao leitor instalado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva o resultado realmente em falta",
+          "paragraphs": [
+            "Se a questão respeita à lista configurada do fornecedor, volte pela sua via habitual de confiança e veja a pesquisa disponível nesse leitor. Pode não funcionar como a biblioteca indexada do VLC. Diga se falta um ficheiro local, um resultado da biblioteca ou uma entrada do fornecedor, indicando dispositivo e versão. Preserve definições e endereços privados. Trex IPTV 8K permite uma ligação simultânea; sessões adicionais não são um teste útil de pesquisa."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Поиск в библиотеке Trex IPTV: что именно ищет VLC",
+      "excerpt": "Поиск библиотеки VLC относится к индексированным медиа, а не к автоматическому каталогу провайдера. Определите экран поиска и выбранные папки до оценки отсутствующих результатов.",
+      "seo_title": "Поиск в библиотеке Trex IPTV: что именно ищет VLC",
+      "seo_description": "Поиск библиотеки VLC относится к индексированным медиа, а не к автоматическому каталогу провайдера. Определите экран поиска и выбранные папки до оценки отсутствующих результатов.",
+      "sections": [
+        {
+          "heading": "Определите экран поиска",
+          "paragraphs": [
+            "Если поиск в библиотеке Trex IPTV не дал совпадений, сначала запишите заголовок экрана и название плеера. VideoLAN описывает поиск медиа в видеобиблиотеке VLC для Android как поиск уже индексированных VLC материалов. Такой охват не подтверждает наличие там всех программ провайдера. Один пустой результат не доказывает удаление канала или сбой всей службы."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте существующий охват библиотеки",
+          "paragraphs": [
+            "Уточните введённые слова и экран, который показал результат. VideoLAN отдельно описывает папки медиабиблиотеки и автоматическое повторное сканирование в общих настройках. Прочитайте текущий выбор папок, прежде чем считать, что файл включён. Для проверки не нужно выбирать всё устройство, выдавать широкий доступ к хранилищу или стирать базу данных. Меню различаются по версиям; используйте документацию установленного плеера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "Опишите, какого результата не хватает",
+          "paragraphs": [
+            "Если вопрос касается настроенного списка провайдера, вернитесь привычным доверенным способом и проверьте поиск в этом плеере. Он может отличаться от индексированной библиотеки VLC. Укажите, отсутствует ли локальный файл, результат библиотеки или запись провайдера, и сообщите устройство с версией плеера. Сохраните настройки и личные адреса. Trex IPTV 8K допускает одно одновременное подключение; дополнительные сеансы не являются полезной проверкой поиска."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV لائبریری کی تلاش: VLC کیا تلاش کرتا ہے؟",
+      "excerpt": "VLC کی لائبریری میں درج شدہ میڈیا تلاش ہوتا ہے، فراہم کنندہ کا خودکار کیٹلاگ نہیں۔ نتیجہ غائب سمجھنے سے پہلے تلاش کی اسکرین اور موجودہ فولڈر پہچانیں۔",
+      "seo_title": "Trex IPTV لائبریری کی تلاش: VLC کیا تلاش کرتا ہے؟",
+      "seo_description": "VLC کی لائبریری میں درج شدہ میڈیا تلاش ہوتا ہے، فراہم کنندہ کا خودکار کیٹلاگ نہیں۔ نتیجہ غائب سمجھنے سے پہلے تلاش کی اسکرین اور موجودہ فولڈر پہچانیں۔",
+      "sections": [
+        {
+          "heading": "تلاش کی اسکرین پہچانیں",
+          "paragraphs": [
+            "Trex IPTV لائبریری کی تلاش میں کچھ نہ ملے تو پہلے اسکرین کا عنوان اور پلیئر کا نام لکھیں۔ VideoLAN کے مطابق VLC برائے Android کے ویڈیو ایکسپلورر کی میڈیا تلاش صرف VLC میں پہلے سے فہرست بند میڈیا دیکھتی ہے۔ یہ دائرہ ثابت نہیں کرتا کہ فراہم کنندہ کے تمام پروگرام وہاں درج ہیں۔ ایک خالی تلاش نہ چینل ہٹنے کا ثبوت ہے اور نہ پوری سروس بند ہونے کا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "لائبریری کا موجودہ دائرہ دیکھیں",
+          "paragraphs": [
+            "تلاش کیے گئے الفاظ اور نتیجہ دکھانے والی اسکرین دیکھیں۔ VideoLAN عمومی ترتیبات میں میڈیا لائبریری کے فولڈر اور خودکار دوبارہ اسکین کو الگ بیان کرتا ہے۔ یہ فرض کرنے سے پہلے کہ کوئی فائل شامل تھی، موجودہ منتخب فولڈر پڑھیں۔ اس جانچ کے لیے نہ پورا آلہ منتخب کریں، نہ اسٹوریج کی وسیع رسائی دیں اور نہ ڈیٹابیس مٹائیں۔ مینو نسخے کے مطابق بدل سکتے ہیں؛ نصب پلیئر کی دستاویز دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "اصل غائب نتیجہ بیان کریں",
+          "paragraphs": [
+            "سوال فراہم کنندہ کی ترتیب دی گئی فہرست کا ہو تو اپنے معمول کے قابل اعتماد راستے سے واپس جا کر اسی پلیئر کی دستیاب تلاش دیکھیں۔ اس کا طریقہ VLC کی درج شدہ لائبریری جیسا ہونا ضروری نہیں۔ بتائیں کہ مقامی فائل، لائبریری کا نتیجہ یا فراہم کنندہ کی چیز غائب ہے، ساتھ آلہ اور پلیئر کا نسخہ دیں۔ ترتیبات اور نجی پتے محفوظ رکھیں۔ Trex IPTV 8K میں ایک ہی بیک وقت کنکشن ہے؛ اضافی پلے بیک سیشن لائبریری کی تلاش کی مفید جانچ نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "بحث مكتبة Trex IPTV: ما الذي يبحث فيه VLC؟",
+      "excerpt": "بحث مكتبة VLC يخص الوسائط المفهرسة، لا كتالوجاً تلقائياً للمزوّد. حدّد شاشة البحث والمجلدات الموجودة قبل تفسير النتائج المفقودة.",
+      "seo_title": "بحث مكتبة Trex IPTV: ما الذي يبحث فيه VLC؟",
+      "seo_description": "بحث مكتبة VLC يخص الوسائط المفهرسة، لا كتالوجاً تلقائياً للمزوّد. حدّد شاشة البحث والمجلدات الموجودة قبل تفسير النتائج المفقودة.",
+      "sections": [
+        {
+          "heading": "حدّد شاشة البحث",
+          "paragraphs": [
+            "إذا لم يُظهر بحث مكتبة Trex IPTV نتيجة، فدوّن أولاً عنوان الشاشة واسم المشغّل. توثّق VideoLAN أن بحث الوسائط في مستكشف فيديو VLC على Android يبحث في وسائط فهرسها VLC بالفعل. هذا النطاق لا يثبت أن كل برامج المزوّد مفهرسة هناك. نتيجة بحث فارغة واحدة لا تعني حذف قناة أو تعطّل الخدمة بأكملها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "افحص نطاق المكتبة الموجود",
+          "paragraphs": [
+            "راجع الكلمات التي بحثت عنها والشاشة التي عرضت النتيجة. توثّق VideoLAN بصورة منفصلة مجلدات مكتبة الوسائط وخيار إعادة الفحص التلقائي في الإعدادات العامة. اقرأ اختيار المجلدات الحالي قبل افتراض إدراج ملف ما. لا تحتاج إلى اختيار الجهاز كله أو منح وصول واسع إلى التخزين أو محو قاعدة بيانات لهذا الفحص. تختلف القوائم حسب الإصدار؛ استخدم وثائق المشغّل المثبّت."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "صف النتيجة المفقودة الصحيحة",
+          "paragraphs": [
+            "إذا كان السؤال عن قائمة المزوّد المهيّأة، فعد عبر مسارك المعتاد الموثوق وافحص أدوات البحث المتاحة في ذلك المشغّل. ليس ضرورياً أن تعمل مثل مكتبة VLC المفهرسة. بيّن هل المفقود ملف محلي أم نتيجة مكتبة أم عنصر لدى المزوّد، مع الجهاز وإصدار المشغّل. حافظ على الإعدادات والعناوين الخاصة. يسمح Trex IPTV 8K باتصال متزامن واحد؛ جلسات تشغيل إضافية ليست اختباراً مفيداً لبحث المكتبة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV लाइब्रेरी खोज: VLC क्या खोज रहा है?",
+      "excerpt": "VLC की लाइब्रेरी खोज सूचीबद्ध मीडिया में होती है, प्रदाता के अपने-आप बने कैटलॉग में नहीं। परिणाम गायब मानने से पहले खोज स्क्रीन और मौजूदा फ़ोल्डर पहचानें।",
+      "seo_title": "Trex IPTV लाइब्रेरी खोज: VLC क्या खोज रहा है?",
+      "seo_description": "VLC की लाइब्रेरी खोज सूचीबद्ध मीडिया में होती है, प्रदाता के अपने-आप बने कैटलॉग में नहीं। परिणाम गायब मानने से पहले खोज स्क्रीन और मौजूदा फ़ोल्डर पहचानें।",
+      "sections": [
+        {
+          "heading": "खोज स्क्रीन पहचानें",
+          "paragraphs": [
+            "Trex IPTV लाइब्रेरी खोज में कुछ न मिले तो पहले स्क्रीन का शीर्षक और प्लेयर लिखें। VideoLAN के अनुसार Android के लिए VLC का वीडियो एक्सप्लोरर उस मीडिया में खोजता है जिसे VLC पहले ही सूचीबद्ध कर चुका है। इसका दायरा यह साबित नहीं करता कि प्रदाता के सभी कार्यक्रम वहाँ दर्ज हैं। एक खाली खोज न चैनल हटने का प्रमाण है और न पूरी सेवा बंद होने का।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "लाइब्रेरी का मौजूदा दायरा देखें",
+          "paragraphs": [
+            "खोजे गए शब्द और परिणाम दिखाने वाली स्क्रीन देखें। VideoLAN सामान्य सेटिंग में मीडिया लाइब्रेरी फ़ोल्डर और अपने-आप फिर स्कैन करने की पसंद अलग बताता है। कोई फ़ाइल शामिल मानने से पहले मौजूदा फ़ोल्डर चयन पढ़ें। इस जाँच के लिए न पूरा डिवाइस चुनें, न स्टोरेज की व्यापक पहुँच दें और न डेटाबेस मिटाएँ। मेनू संस्करण के साथ बदलते हैं; अपने इंस्टॉल किए प्लेयर के दस्तावेज़ देखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+            }
+          ]
+        },
+        {
+          "heading": "असल गायब परिणाम बताएँ",
+          "paragraphs": [
+            "सवाल प्रदाता की सेट की गई सूची का हो तो अपने सामान्य भरोसेमंद रास्ते से लौटकर उसी प्लेयर की उपलब्ध खोज देखें। वह VLC की सूचीबद्ध लाइब्रेरी की तरह काम करे, यह जरूरी नहीं। बताएँ कि स्थानीय फ़ाइल, लाइब्रेरी परिणाम या प्रदाता की प्रविष्टि गायब है, साथ में डिवाइस और प्लेयर संस्करण दें। सेटिंग और निजी पते सँभालें। Trex IPTV 8K में एक ही समकालिक कनेक्शन है; अतिरिक्त प्लेबैक सत्र लाइब्रेरी खोज की उपयोगी जाँच नहीं हैं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android Video Explorer search",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+    },
+    {
+      "label": "VideoLAN: VLC for Android media library folder settings",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/general_settings.html"
+    }
+  ]
+}

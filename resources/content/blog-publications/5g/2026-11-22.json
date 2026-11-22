@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-22",
+  "topic": "Inspect Google Play automatic-update network preferences for the actual installed player during 5G Live IPTV setup without authorising chargeable mobile downloads.",
+  "primary_keyword": "5G Live IPTV app updates",
+  "slug": "5g-app-updates-read-play-store-network-choice",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV app updates: read the Play Store network choice",
+      "excerpt": "Review the actual player and Play Store network preference before using mobile data. Keep app updates separate from viewing-plan renewal.",
+      "seo_title": "5G Live IPTV app updates: read the Play Store network choice",
+      "seo_description": "Review the actual player and Play Store network preference before using mobile data. Keep app updates separate from viewing-plan renewal.",
+      "sections": [
+        {
+          "heading": "Identify the actual app",
+          "paragraphs": [
+            "Questions about 5G Live IPTV app updates should identify the installed player and its publisher, not assume there is a proprietary installer. If an update waits while ordinary mobile browsing works, record the Play Store message and whether the phone is using Wi-Fi or mobile data. Waiting for a permitted download network is different from a service-expiry message inside the player."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the permitted update network",
+          "paragraphs": [
+            "Google documents the Play Store profile picture, Settings, Network preferences, then Auto-update apps. Read the current choice before changing it. Updating over Wi-Fi only is one option; other choices may use mobile data. Keep the owner’s existing data-allowance decision rather than enabling chargeable downloads for a test. Labels and available options can vary. Google may deliver certain critical-security fixes regardless of update preferences, so this setting is not an absolute block."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep updating and renewal separate",
+          "paragraphs": [
+            "On the player’s verified store page, distinguish an available Update button from the status of an update already requested. Do not clear Play Store data or uninstall the player to inspect a network preference. When an allowed update finishes, check the installed version and review any new permission request. Updating a player does not renew the viewing plan or include a separate paid player licence. Give support the app, Android version, network type and redacted message."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Actualizaciones de apps para 5G Live IPTV: consulta la red de Play Store",
+      "excerpt": "Revisa el reproductor real y la preferencia de red de Play Store antes de usar datos móviles. Distingue actualizar la app de renovar el servicio.",
+      "seo_title": "Actualizaciones de apps para 5G Live IPTV: consulta la red de Play Store",
+      "seo_description": "Revisa el reproductor real y la preferencia de red de Play Store antes de usar datos móviles. Distingue actualizar la app de renovar el servicio.",
+      "sections": [
+        {
+          "heading": "Identifica la aplicación real",
+          "paragraphs": [
+            "Las preguntas sobre actualizaciones para 5G Live IPTV deben identificar el reproductor instalado y su editor, sin suponer un instalador propio. Si una actualización espera mientras la navegación móvil normal funciona, anota el mensaje de Play Store y si el teléfono usa wifi o datos móviles. Esperar una red permitida para descargar es diferente de un aviso de caducidad dentro del reproductor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta la red permitida",
+          "paragraphs": [
+            "Google documenta la imagen de perfil de Play Store, Ajustes, Preferencias de red y Actualizar aplicaciones automáticamente. Lee la opción actual antes de cambiarla. Actualizar solo por wifi es una posibilidad; otras pueden usar datos móviles. Conserva la decisión del propietario sobre su consumo en lugar de habilitar descargas con coste como prueba. Los nombres y opciones pueden variar. Google puede distribuir ciertas correcciones de seguridad críticas independientemente de estas preferencias: no son un bloqueo absoluto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa actualización y renovación",
+          "paragraphs": [
+            "En la ficha verificada del reproductor, distingue el botón Actualizar disponible del estado de una actualización ya solicitada. No borres datos de Play Store ni desinstales el reproductor para consultar una preferencia de red. Tras una actualización permitida, comprueba la versión instalada y revisa permisos nuevos. Actualizar el reproductor no renueva el plan de visualización ni incluye una licencia de pago independiente. Da a soporte la app, versión de Android, tipo de red y mensaje censurado."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Mises à jour pour 5G Live IPTV : lisez le choix de réseau du Play Store",
+      "excerpt": "Vérifiez le lecteur réel et la préférence réseau du Play Store avant d’utiliser des données mobiles. Séparez mise à jour et renouvellement du service.",
+      "seo_title": "Mises à jour pour 5G Live IPTV : lisez le choix de réseau du Play Store",
+      "seo_description": "Vérifiez le lecteur réel et la préférence réseau du Play Store avant d’utiliser des données mobiles. Séparez mise à jour et renouvellement du service.",
+      "sections": [
+        {
+          "heading": "Identifier l’application réelle",
+          "paragraphs": [
+            "Une question sur les mises à jour pour 5G Live IPTV doit identifier le lecteur installé et son éditeur, sans supposer un programme d’installation propriétaire. Si une mise à jour attend alors que la navigation mobile fonctionne, notez le message du Play Store et la connexion utilisée : Wi-Fi ou données mobiles. Attendre un réseau de téléchargement autorisé diffère d’un message d’expiration du service dans le lecteur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le réseau de mise à jour autorisé",
+          "paragraphs": [
+            "Google décrit le chemin depuis l’image de profil du Play Store : Paramètres, Préférences réseau, puis Mise à jour automatique des applications. Lisez le choix actuel avant de le modifier. Le Wi-Fi uniquement est une option ; d’autres utilisent les données mobiles. Conservez le choix du propriétaire concernant son forfait plutôt que d’autoriser un téléchargement payant pour tester. Les libellés et options varient. Google peut fournir certains correctifs de sécurité critiques indépendamment de ces préférences : ce n’est pas un blocage absolu."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer mise à jour et renouvellement",
+          "paragraphs": [
+            "Sur la fiche vérifiée du lecteur, distinguez le bouton Mettre à jour disponible de l’état d’une mise à jour déjà demandée. Ne supprimez pas les données du Play Store et ne désinstallez pas le lecteur pour inspecter une préférence réseau. Après une mise à jour autorisée, vérifiez la version et les nouvelles demandes d’autorisation. Cela ne renouvelle pas le service et n’inclut pas une licence payante distincte du lecteur. Fournissez à l’assistance l’app, la version Android, le réseau et le message expurgé."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Aggiornamenti per 5G Live IPTV: controlla la rete scelta in Play Store",
+      "excerpt": "Verifica il lettore reale e la preferenza di rete di Play Store prima di usare dati mobili. Distingui l’aggiornamento dal rinnovo del servizio.",
+      "seo_title": "Aggiornamenti per 5G Live IPTV: controlla la rete scelta in Play Store",
+      "seo_description": "Verifica il lettore reale e la preferenza di rete di Play Store prima di usare dati mobili. Distingui l’aggiornamento dal rinnovo del servizio.",
+      "sections": [
+        {
+          "heading": "Identifica l’app effettiva",
+          "paragraphs": [
+            "Le domande sugli aggiornamenti per 5G Live IPTV devono identificare il lettore installato e il suo sviluppatore, senza presumere un programma di installazione proprietario. Se un aggiornamento attende mentre la normale navigazione mobile funziona, annota il messaggio di Play Store e se il telefono usa Wi-Fi o dati mobili. Attendere una rete consentita per scaricare è diverso da un avviso di scadenza dentro il lettore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la rete consentita per aggiornare",
+          "paragraphs": [
+            "Google documenta l’immagine del profilo di Play Store, Impostazioni, Preferenze di rete e Aggiornamento automatico app. Leggi la scelta attuale prima di cambiarla. Aggiornare solo tramite Wi-Fi è un’opzione; altre possono usare dati mobili. Mantieni la decisione del proprietario sul consumo, senza abilitare download a pagamento per una prova. Nomi e opzioni possono variare. Google può distribuire alcune correzioni di sicurezza critiche indipendentemente dalle preferenze: questa impostazione non è un blocco assoluto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa aggiornamento e rinnovo",
+          "paragraphs": [
+            "Nella scheda verificata del lettore, distingui il pulsante Aggiorna disponibile dallo stato di un aggiornamento già richiesto. Non cancellare i dati di Play Store né disinstallare il lettore per controllare una preferenza di rete. Dopo un aggiornamento consentito, verifica la versione e valuta eventuali nuove autorizzazioni. Aggiornare il lettore non rinnova il piano di visione né include una licenza a pagamento separata. Comunica all’assistenza app, versione Android, tipo di rete e messaggio privato dei dati sensibili."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "App-updates voor 5G Live IPTV: lees de netwerkkeuze van Play Store",
+      "excerpt": "Bekijk de echte speler en de netwerkvoorkeur van Play Store voordat je mobiele data gebruikt. Houd app-updates en abonnementsverlenging apart.",
+      "seo_title": "App-updates voor 5G Live IPTV: lees de netwerkkeuze van Play Store",
+      "seo_description": "Bekijk de echte speler en de netwerkvoorkeur van Play Store voordat je mobiele data gebruikt. Houd app-updates en abonnementsverlenging apart.",
+      "sections": [
+        {
+          "heading": "Herken de echte app",
+          "paragraphs": [
+            "Bij vragen over app-updates voor 5G Live IPTV moet je de geïnstalleerde speler en uitgever herkennen, zonder een eigen installatieprogramma te veronderstellen. Wacht een update terwijl gewoon mobiel internet werkt, noteer dan de Play Store-melding en of de telefoon wifi of mobiele data gebruikt. Wachten op een toegestaan downloadnetwerk is iets anders dan een vervalmelding van de dienst binnen de speler."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees het toegestane updatenetwerk",
+          "paragraphs": [
+            "Google beschrijft de profielfoto in Play Store, Instellingen, Netwerkvoorkeuren en Apps automatisch updaten. Lees de huidige keuze voordat je iets wijzigt. Alleen via wifi bijwerken is één optie; andere opties kunnen mobiele data gebruiken. Bewaar de keuze van de eigenaar over dataverbruik in plaats van betaalde downloads voor een test toe te staan. Namen en opties kunnen verschillen. Google kan bepaalde kritieke beveiligingsoplossingen ongeacht deze voorkeuren leveren: de instelling blokkeert dus niet absoluut alle updates."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd bijwerken en verlengen apart",
+          "paragraphs": [
+            "Onderscheid op de geverifieerde winkelpagina van de speler een beschikbare updateknop van de status van een al aangevraagde update. Wis geen Play Store-gegevens en verwijder de speler niet om een netwerkvoorkeur te bekijken. Controleer na een toegestane update de geïnstalleerde versie en nieuwe toestemmingsverzoeken. Een spelerupdate verlengt de kijkdienst niet en omvat geen aparte betaalde spelerlicentie. Geef ondersteuning de app, Android-versie, het netwerktype en de melding zonder privégegevens."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atualizações para 5G Live IPTV: leia a rede escolhida na Play Store",
+      "excerpt": "Verifique o leitor real e a preferência de rede da Play Store antes de usar dados móveis. Separe atualizar a aplicação de renovar o serviço.",
+      "seo_title": "Atualizações para 5G Live IPTV: leia a rede escolhida na Play Store",
+      "seo_description": "Verifique o leitor real e a preferência de rede da Play Store antes de usar dados móveis. Separe atualizar a aplicação de renovar o serviço.",
+      "sections": [
+        {
+          "heading": "Identifique a aplicação real",
+          "paragraphs": [
+            "As dúvidas sobre atualizações para 5G Live IPTV devem identificar o leitor instalado e o seu editor, sem presumir um instalador próprio. Se uma atualização aguardar enquanto a navegação móvel normal funciona, anote a mensagem da Play Store e se o telefone usa Wi-Fi ou dados móveis. Esperar por uma rede permitida para descarregar é diferente de uma mensagem de expiração do serviço dentro do leitor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a rede permitida para atualizar",
+          "paragraphs": [
+            "A Google documenta a imagem de perfil da Play Store, Definições, Preferências de rede e Atualizar aplicações automaticamente. Leia a opção atual antes de a alterar. Atualizar apenas por Wi-Fi é uma opção; outras podem usar dados móveis. Preserve a decisão do proprietário sobre o consumo, em vez de permitir descarregamentos com custos para um teste. Os nomes e opções podem variar. A Google pode fornecer algumas correções de segurança críticas independentemente destas preferências: não são um bloqueio absoluto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe atualização e renovação",
+          "paragraphs": [
+            "Na ficha verificada do leitor, distinga um botão Atualizar disponível do estado de uma atualização já pedida. Não apague dados da Play Store nem desinstale o leitor para consultar uma preferência de rede. Após uma atualização permitida, confirme a versão e reveja novas permissões. Atualizar o leitor não renova o plano de visualização nem inclui uma licença paga separada. Dê ao suporte a aplicação, versão Android, tipo de rede e mensagem sem informações privadas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Обновления приложений для 5G Live IPTV: проверьте сеть в Google Play",
+      "excerpt": "Перед использованием мобильного трафика проверьте сам плеер и сетевую настройку Google Play. Отделяйте обновление приложения от продления услуги.",
+      "seo_title": "Обновления приложений для 5G Live IPTV: проверьте сеть в Google Play",
+      "seo_description": "Перед использованием мобильного трафика проверьте сам плеер и сетевую настройку Google Play. Отделяйте обновление приложения от продления услуги.",
+      "sections": [
+        {
+          "heading": "Определите настоящее приложение",
+          "paragraphs": [
+            "Вопрос об обновлениях приложений для 5G Live IPTV должен указывать установленный плеер и его издателя, а не предполагать фирменный установщик. Если обновление ожидает, хотя обычный мобильный интернет работает, запишите сообщение Google Play и тип подключения: Wi-Fi или мобильные данные. Ожидание разрешённой сети для загрузки отличается от сообщения об истечении услуги внутри плеера."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте разрешённую сеть обновления",
+          "paragraphs": [
+            "Google описывает путь через значок профиля Google Play: Настройки, Настройки подключения, затем Автообновление приложений. Прочитайте текущий выбор перед изменением. Обновление только по Wi-Fi — один вариант; другие могут использовать мобильный трафик. Сохраните решение владельца об использовании пакета данных, не разрешая платную загрузку ради теста. Названия и варианты могут отличаться. Google может доставлять некоторые критические исправления безопасности независимо от этих предпочтений, поэтому настройка не является абсолютной блокировкой."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте обновление и продление",
+          "paragraphs": [
+            "На проверенной странице плеера в магазине различайте доступную кнопку обновления и состояние уже запрошенного обновления. Не очищайте данные Google Play и не удаляйте плеер для просмотра сетевой настройки. После разрешённого обновления проверьте установленную версию и новые запросы разрешений. Обновление плеера не продлевает услугу просмотра и не включает отдельную платную лицензию. Передайте поддержке приложение, версию Android, тип сети и сообщение без личных данных."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV ایپ اپ ڈیٹس: Play Store کی نیٹ ورک ترجیح پڑھیں",
+      "excerpt": "موبائل ڈیٹا استعمال کرنے سے پہلے اصل پلیئر اور Play Store کی نیٹ ورک ترجیح دیکھیں۔ ایپ کی اپ ڈیٹ کو دیکھنے کی سروس کی تجدید سے الگ رکھیں۔",
+      "seo_title": "5G Live IPTV ایپ اپ ڈیٹس: Play Store کی نیٹ ورک ترجیح پڑھیں",
+      "seo_description": "موبائل ڈیٹا استعمال کرنے سے پہلے اصل پلیئر اور Play Store کی نیٹ ورک ترجیح دیکھیں۔ ایپ کی اپ ڈیٹ کو دیکھنے کی سروس کی تجدید سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "اصل ایپ پہچانیں",
+          "paragraphs": [
+            "5G Live IPTV کی ایپ اپ ڈیٹس کے سوال میں نصب پلیئر اور اس کے ناشر کو پہچانیں، یہ فرض نہ کریں کہ کوئی اپنا انسٹالر موجود ہے۔ عام موبائل براؤزنگ چلنے کے باوجود اپ ڈیٹ رکی ہو تو Play Store کا پیغام لکھیں اور دیکھیں کہ فون وائی فائی پر ہے یا موبائل ڈیٹا پر۔ ڈاؤن لوڈ کے لیے اجازت یافتہ نیٹ ورک کا انتظار پلیئر کے اندر سروس کی میعاد ختم ہونے کے پیغام سے الگ ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اپ ڈیٹ کے لیے اجازت یافتہ نیٹ ورک پڑھیں",
+          "paragraphs": [
+            "Google نے Play Store کی پروفائل تصویر، ترتیبات، نیٹ ورک ترجیحات اور ایپس کی خودکار اپ ڈیٹ کا راستہ بتایا ہے۔ بدلنے سے پہلے موجودہ انتخاب پڑھیں۔ صرف وائی فائی پر اپ ڈیٹ ایک اختیار ہے؛ دوسرے موبائل ڈیٹا استعمال کر سکتے ہیں۔ آزمائش کے لیے بامعاوضہ ڈاؤن لوڈ کھولنے کے بجائے ڈیٹا کے بارے میں مالک کا فیصلہ برقرار رکھیں۔ نام اور اختیارات مختلف ہو سکتے ہیں۔ Google ان ترجیحات کے باوجود بعض نہایت اہم حفاظتی اصلاحات دے سکتا ہے، اس لیے یہ مکمل پابندی نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اپ ڈیٹ اور تجدید الگ رکھیں",
+          "paragraphs": [
+            "پلیئر کے تصدیق شدہ اسٹور صفحے پر دستیاب اپ ڈیٹ بٹن اور پہلے مانگی ہوئی اپ ڈیٹ کی حالت الگ سمجھیں۔ نیٹ ورک ترجیح دیکھنے کے لیے نہ Play Store کا ڈیٹا مٹائیں اور نہ پلیئر اَن انسٹال کریں۔ اجازت یافتہ اپ ڈیٹ مکمل ہو تو نصب نسخہ دیکھیں اور نئی اجازت کی درخواست پر غور کریں۔ پلیئر اپ ڈیٹ کرنے سے دیکھنے کی سروس کی تجدید نہیں ہوتی اور الگ بامعاوضہ لائسنس شامل نہیں ہوتا۔ معاونت کو ایپ، Android نسخہ، نیٹ ورک اور حساس معلومات چھپا کر پیغام دیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تحديثات تطبيقات 5G Live IPTV: اقرأ اختيار الشبكة في Play Store",
+      "excerpt": "تحقق من المشغّل الفعلي وتفضيل الشبكة في Play Store قبل استخدام بيانات الهاتف. افصل تحديث التطبيق عن تجديد خدمة المشاهدة.",
+      "seo_title": "تحديثات تطبيقات 5G Live IPTV: اقرأ اختيار الشبكة في Play Store",
+      "seo_description": "تحقق من المشغّل الفعلي وتفضيل الشبكة في Play Store قبل استخدام بيانات الهاتف. افصل تحديث التطبيق عن تجديد خدمة المشاهدة.",
+      "sections": [
+        {
+          "heading": "حدّد التطبيق الفعلي",
+          "paragraphs": [
+            "ينبغي أن تحدّد أسئلة تحديثات التطبيقات مع 5G Live IPTV المشغّل المثبت وناشره، دون افتراض وجود برنامج تثبيت خاص بالخدمة. إذا انتظر تحديث بينما يعمل التصفح العادي عبر الهاتف، فدوّن رسالة Play Store وهل يستخدم الهاتف Wi-Fi أم بيانات الهاتف. انتظار شبكة تنزيل مسموح بها يختلف عن رسالة انتهاء الخدمة داخل المشغّل."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ شبكة التحديث المسموح بها",
+          "paragraphs": [
+            "توثّق Google المسار من صورة الملف الشخصي في Play Store إلى الإعدادات ثم الإعدادات المفضّلة للشبكة ثم التحديث التلقائي للتطبيقات. اقرأ الاختيار الحالي قبل تغييره. التحديث عبر Wi-Fi فقط أحد الخيارات؛ وقد تستخدم خيارات أخرى بيانات الهاتف. احتفظ بقرار المالك بشأن باقته بدلاً من إتاحة تنزيلات مدفوعة لاختبارها. قد تختلف الأسماء والخيارات. وقد تصل بعض إصلاحات الأمان الحرجة من Google بغض النظر عن هذه التفضيلات، لذا فهي ليست حظراً مطلقاً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل التحديث عن التجديد",
+          "paragraphs": [
+            "في صفحة المتجر الموثّقة للمشغّل، ميّز زر التحديث المتاح عن حالة تحديث سبق طلبه. لا تمسح بيانات Play Store ولا تزل المشغّل لفحص تفضيل الشبكة. بعد انتهاء تحديث مسموح به، تحقق من الإصدار المثبت وراجع أي طلب إذن جديد. تحديث المشغّل لا يجدّد خدمة المشاهدة ولا يشمل ترخيصاً مدفوعاً منفصلاً للمشغّل. أعط الدعم اسم التطبيق وإصدار Android ونوع الشبكة والرسالة بعد إخفاء المعلومات الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV ऐप अपडेट: Play Store की नेटवर्क पसंद पढ़ें",
+      "excerpt": "मोबाइल डेटा इस्तेमाल करने से पहले असल प्लेयर और Play Store की नेटवर्क पसंद देखें। ऐप अपडेट और देखने की सेवा का नवीनीकरण अलग रखें।",
+      "seo_title": "5G Live IPTV ऐप अपडेट: Play Store की नेटवर्क पसंद पढ़ें",
+      "seo_description": "मोबाइल डेटा इस्तेमाल करने से पहले असल प्लेयर और Play Store की नेटवर्क पसंद देखें। ऐप अपडेट और देखने की सेवा का नवीनीकरण अलग रखें।",
+      "sections": [
+        {
+          "heading": "असल ऐप पहचानें",
+          "paragraphs": [
+            "5G Live IPTV के ऐप अपडेट का सवाल करते समय इंस्टॉल किया प्लेयर और उसका प्रकाशक पहचानें; अपना अलग इंस्टॉलर होने का अनुमान न लगाएँ। सामान्य मोबाइल ब्राउज़िंग चलने के बावजूद अपडेट रुका हो तो Play Store का संदेश लिखें और देखें कि फ़ोन Wi-Fi पर है या मोबाइल डेटा पर। डाउनलोड के लिए अनुमत नेटवर्क का इंतज़ार प्लेयर में सेवा समाप्त होने के संदेश से अलग है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "अपडेट के लिए अनुमत नेटवर्क पढ़ें",
+          "paragraphs": [
+            "Google Play Store की प्रोफ़ाइल तस्वीर, सेटिंग, नेटवर्क प्राथमिकताएँ और ऐप अपने-आप अपडेट करने का रास्ता बताता है। बदलने से पहले मौजूदा चुनाव पढ़ें। केवल Wi-Fi पर अपडेट एक विकल्प है; दूसरे मोबाइल डेटा इस्तेमाल कर सकते हैं। जाँच के लिए शुल्क वाला डाउनलोड खोलने के बजाय डेटा खर्च पर मालिक का चुनाव बनाए रखें। नाम और विकल्प अलग हो सकते हैं। Google इन पसंदों के बावजूद कुछ गंभीर सुरक्षा सुधार दे सकता है, इसलिए यह पूरी रोक नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अपडेट और नवीनीकरण अलग रखें",
+          "paragraphs": [
+            "प्लेयर के सत्यापित स्टोर पेज पर उपलब्ध अपडेट बटन और पहले माँगे गए अपडेट की स्थिति अलग समझें। नेटवर्क पसंद देखने के लिए न Play Store का डेटा मिटाएँ और न प्लेयर अनइंस्टॉल करें। अनुमत अपडेट पूरा हो तो इंस्टॉल संस्करण देखें और नई अनुमति की माँग परखें। प्लेयर अपडेट करने से देखने की सेवा नवीनीकृत नहीं होती और अलग सशुल्क प्लेयर लाइसेंस शामिल नहीं होता। सहायता को ऐप, Android संस्करण, नेटवर्क और निजी जानकारी छिपाकर संदेश दें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play: Android app updates and network preferences",
+      "url": "https://support.google.com/googleplay/answer/113412?hl=en"
+    }
+  ]
+}

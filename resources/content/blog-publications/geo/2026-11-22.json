@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-22",
+  "topic": "Identify an existing Apple TV household profile separately from a Geo IPTV player sign-in and provider viewing allowance without changing household accounts.",
+  "primary_keyword": "Geo IPTV Apple TV profile",
+  "slug": "geo-apple-tv-profile-identify-household-screen",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV Apple TV profile: identify the household screen first",
+      "excerpt": "Read the existing Apple TV profile before changing player access. Keep household names, provider sign-in and viewing allowances separate.",
+      "seo_title": "Geo IPTV Apple TV profile: identify the household screen first",
+      "seo_description": "Read the existing Apple TV profile before changing player access. Keep household names, provider sign-in and viewing allowances separate.",
+      "sections": [
+        {
+          "heading": "Identify the profile screen",
+          "paragraphs": [
+            "If Apple TV asks you to choose a name before opening the player, identify whether this is its profile screen or a sign-in inside an app. Note the current profile without photographing personal account details. Apple describes the current profile as the one selected in Control Center, and says only one profile can be active on Apple TV 4K at a time. A Geo IPTV Apple TV profile check does not establish a different viewing allowance."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing selection",
+          "paragraphs": [
+            "On the documented interface, Settings, Profiles and Accounts, then Switch Current Profile shows the available names. Read the existing selection first; no switch is required simply to identify it. If the owner intends to use another existing profile, follow Apple’s onscreen instructions and stop at an unfamiliar sign-in. Menu names vary with software. Do not create an account, remove a household member or sign out to test playback."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the player account separate",
+          "paragraphs": [
+            "Open the intended player normally and note its own sign-in or access message separately. A household profile change does not confirm provider activation, payment or another simultaneous viewing session. Keep saved player access intact. Report the Apple TV model, software version and the stage at which the prompt appears, without profile emails, passwords or private playback addresses. Ask support which account layer the message belongs to before changing setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Perfil de Apple TV para Geo IPTV: identifica primero la pantalla del hogar",
+      "excerpt": "Consulta el perfil actual de Apple TV antes de cambiar el acceso del reproductor. Distingue nombres del hogar, inicio de sesión y conexiones permitidas.",
+      "seo_title": "Perfil de Apple TV para Geo IPTV: identifica primero la pantalla del hogar",
+      "seo_description": "Consulta el perfil actual de Apple TV antes de cambiar el acceso del reproductor. Distingue nombres del hogar, inicio de sesión y conexiones permitidas.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla de perfiles",
+          "paragraphs": [
+            "Si Apple TV pide elegir un nombre antes de abrir el reproductor, identifica si es su pantalla de perfiles o un inicio de sesión dentro de una aplicación. Anota el perfil actual sin fotografiar datos personales. Apple describe el perfil actual como el seleccionado en el Centro de control e indica que solo puede haber uno activo a la vez en Apple TV 4K. Esta comprobación para Geo IPTV no demuestra una autorización de visualización diferente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta la selección actual",
+          "paragraphs": [
+            "En la interfaz documentada, Ajustes, Perfiles y cuentas y Cambiar perfil actual muestran los nombres disponibles. Consulta primero la selección existente; no hace falta cambiarla para identificarla. Si el propietario quiere usar otro perfil ya creado, sigue las instrucciones de Apple y detente ante un inicio de sesión desconocido. Los nombres de los menús varían según el software. No crees cuentas, elimines miembros del hogar ni cierres sesión para probar la reproducción."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la cuenta del reproductor",
+          "paragraphs": [
+            "Abre normalmente el reproductor previsto y anota por separado su propio mensaje de acceso. Cambiar el perfil del hogar no confirma activación, pago ni otra sesión simultánea. Conserva el acceso guardado. Indica el modelo de Apple TV, la versión del software y cuándo aparece la solicitud, sin correos de perfiles, contraseñas ni direcciones privadas de reproducción. Antes de modificar la configuración, pregunta a soporte a qué nivel de cuenta pertenece el mensaje."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Profil Apple TV pour Geo IPTV : identifiez d’abord l’écran du foyer",
+      "excerpt": "Consultez le profil Apple TV actuel avant de modifier l’accès du lecteur. Distinguez noms du foyer, connexion du fournisseur et sessions autorisées.",
+      "seo_title": "Profil Apple TV pour Geo IPTV : identifiez d’abord l’écran du foyer",
+      "seo_description": "Consultez le profil Apple TV actuel avant de modifier l’accès du lecteur. Distinguez noms du foyer, connexion du fournisseur et sessions autorisées.",
+      "sections": [
+        {
+          "heading": "Identifier l’écran des profils",
+          "paragraphs": [
+            "Si Apple TV demande de choisir un nom avant l’ouverture du lecteur, déterminez s’il s’agit de son écran de profils ou d’une connexion dans une app. Notez le profil actuel sans photographier de données personnelles. Apple décrit ce profil comme celui sélectionné dans le Centre de contrôle et précise qu’un seul peut être actif à la fois sur Apple TV 4K. Cette vérification pour Geo IPTV ne prouve pas une autorisation de visionnage différente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la sélection actuelle",
+          "paragraphs": [
+            "Dans l’interface documentée, Réglages, Profils et comptes, puis Changer de profil actuel affichent les noms disponibles. Lisez d’abord la sélection existante : aucun changement n’est nécessaire pour l’identifier. Si le propriétaire veut utiliser un autre profil déjà présent, suivez les instructions d’Apple et arrêtez-vous devant une connexion inconnue. Les intitulés varient selon le logiciel. Ne créez pas de compte, ne supprimez pas de membre du foyer et ne vous déconnectez pas pour tester la lecture."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer le compte du lecteur",
+          "paragraphs": [
+            "Ouvrez normalement le lecteur prévu et relevez séparément son propre message de connexion ou d’accès. Changer le profil du foyer ne confirme ni activation, ni paiement, ni session simultanée supplémentaire. Conservez l’accès enregistré. Indiquez le modèle d’Apple TV, la version logicielle et l’étape d’apparition du message, sans adresse e-mail du profil, mot de passe ni adresse privée de lecture. Demandez à l’assistance de quel niveau de compte il s’agit avant de modifier la configuration."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Profilo Apple TV per Geo IPTV: riconosci prima la schermata di casa",
+      "excerpt": "Leggi il profilo Apple TV attuale prima di cambiare l’accesso del lettore. Distingui nomi domestici, accesso del fornitore e sessioni consentite.",
+      "seo_title": "Profilo Apple TV per Geo IPTV: riconosci prima la schermata di casa",
+      "seo_description": "Leggi il profilo Apple TV attuale prima di cambiare l’accesso del lettore. Distingui nomi domestici, accesso del fornitore e sessioni consentite.",
+      "sections": [
+        {
+          "heading": "Riconosci la schermata dei profili",
+          "paragraphs": [
+            "Se Apple TV chiede di scegliere un nome prima di aprire il lettore, identifica se è la schermata dei profili oppure un accesso dentro un’app. Annota il profilo attuale senza fotografare dati personali. Apple lo descrive come quello selezionato nel Centro di Controllo e indica che su Apple TV 4K può esserne attivo solo uno alla volta. Questa verifica per Geo IPTV non dimostra un diverso diritto di visione."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la selezione attuale",
+          "paragraphs": [
+            "Nell’interfaccia documentata, Impostazioni, Profili e account e Cambia profilo attuale mostrano i nomi disponibili. Leggi prima la selezione esistente: non serve cambiarla soltanto per identificarla. Se il proprietario vuole usare un altro profilo già presente, segui le istruzioni Apple e fermati davanti a un accesso sconosciuto. I nomi dei menu variano con il software. Non creare account, rimuovere membri della casa o disconnetterti per provare la riproduzione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui l’account del lettore",
+          "paragraphs": [
+            "Apri normalmente il lettore previsto e annota separatamente il suo messaggio di accesso. Cambiare profilo domestico non conferma attivazione, pagamento o un’ulteriore sessione contemporanea. Conserva l’accesso salvato. Comunica modello Apple TV, versione software e fase in cui compare la richiesta, senza email dei profili, password o indirizzi privati di riproduzione. Prima di modificare la configurazione, chiedi all’assistenza a quale livello di account appartiene il messaggio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Apple TV-profiel voor Geo IPTV: herken eerst het huishoudscherm",
+      "excerpt": "Bekijk het huidige Apple TV-profiel voordat je de spelertoegang wijzigt. Houd huishoudnamen, de provideraanmelding en toegestane sessies uit elkaar.",
+      "seo_title": "Apple TV-profiel voor Geo IPTV: herken eerst het huishoudscherm",
+      "seo_description": "Bekijk het huidige Apple TV-profiel voordat je de spelertoegang wijzigt. Houd huishoudnamen, de provideraanmelding en toegestane sessies uit elkaar.",
+      "sections": [
+        {
+          "heading": "Herken het profielscherm",
+          "paragraphs": [
+            "Vraagt Apple TV vóór het openen van de speler om een naam te kiezen, stel dan vast of dit het profielscherm is of een aanmelding binnen een app. Noteer het huidige profiel zonder persoonlijke accountgegevens te fotograferen. Apple omschrijft het huidige profiel als het profiel dat in het bedieningspaneel is geselecteerd en vermeldt dat op Apple TV 4K slechts één profiel tegelijk actief kan zijn. Deze Geo IPTV-controle bewijst geen andere kijkrechten."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige selectie",
+          "paragraphs": [
+            "In de beschreven interface tonen Instellingen, Profielen en accounts en Wissel huidig profiel de beschikbare namen. Lees eerst de bestaande selectie; alleen voor herkenning hoef je niets te wisselen. Wil de eigenaar een ander bestaand profiel gebruiken, volg dan de Apple-instructies en stop bij een onbekende aanmelding. Menunamen verschillen per softwareversie. Maak geen account aan, verwijder geen huisgenoot en meld je niet af om afspelen te testen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Houd het speleraccount apart",
+          "paragraphs": [
+            "Open de bedoelde speler normaal en noteer de eigen aanmeld- of toegangsmelding afzonderlijk. Een ander huishoudprofiel bevestigt geen activering, betaling of extra gelijktijdige kijksessie. Bewaar de opgeslagen spelertoegang. Vermeld het Apple TV-model, de softwareversie en wanneer de melding verschijnt, zonder profielmailadressen, wachtwoorden of privéafspeeladressen. Vraag ondersteuning bij welke accountlaag de melding hoort voordat je de configuratie wijzigt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Perfil da Apple TV para Geo IPTV: identifique primeiro o ecrã doméstico",
+      "excerpt": "Consulte o perfil atual da Apple TV antes de alterar o acesso do leitor. Separe nomes da casa, início de sessão do fornecedor e sessões permitidas.",
+      "seo_title": "Perfil da Apple TV para Geo IPTV: identifique primeiro o ecrã doméstico",
+      "seo_description": "Consulte o perfil atual da Apple TV antes de alterar o acesso do leitor. Separe nomes da casa, início de sessão do fornecedor e sessões permitidas.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã de perfis",
+          "paragraphs": [
+            "Se a Apple TV pedir um nome antes de abrir o leitor, identifique se é o ecrã de perfis ou um início de sessão dentro de uma aplicação. Anote o perfil atual sem fotografar dados pessoais. A Apple descreve-o como o perfil selecionado na Central de controlo e indica que só um pode estar ativo de cada vez na Apple TV 4K. Esta verificação do Geo IPTV não comprova uma autorização de visualização diferente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a seleção atual",
+          "paragraphs": [
+            "Na interface documentada, Definições, Perfis e contas e Mudar perfil atual mostram os nomes disponíveis. Leia primeiro a seleção existente; não é necessário mudar apenas para a identificar. Se o proprietário pretender outro perfil já existente, siga as instruções da Apple e pare perante um início de sessão desconhecido. Os nomes dos menus variam com o software. Não crie contas, não remova membros da casa nem termine sessão para testar a reprodução."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a conta do leitor",
+          "paragraphs": [
+            "Abra normalmente o leitor pretendido e anote separadamente a sua própria mensagem de acesso. Mudar o perfil doméstico não confirma ativação, pagamento nem outra sessão simultânea. Mantenha o acesso guardado. Informe o modelo da Apple TV, a versão do software e a fase da solicitação, sem emails de perfis, palavras-passe ou endereços privados de reprodução. Antes de alterar a configuração, pergunte ao suporte a que nível de conta pertence a mensagem."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Профиль Apple TV для Geo IPTV: сначала определите экран выбора",
+      "excerpt": "Проверьте текущий профиль Apple TV перед изменением доступа плеера. Разделяйте имена домашних профилей, вход провайдера и разрешённые сеансы.",
+      "seo_title": "Профиль Apple TV для Geo IPTV: сначала определите экран выбора",
+      "seo_description": "Проверьте текущий профиль Apple TV перед изменением доступа плеера. Разделяйте имена домашних профилей, вход провайдера и разрешённые сеансы.",
+      "sections": [
+        {
+          "heading": "Определите экран профилей",
+          "paragraphs": [
+            "Если перед открытием плеера Apple TV предлагает выбрать имя, определите, является ли это экраном профилей устройства или входом внутри приложения. Запишите текущий профиль, не фотографируя личные данные. Apple называет текущим профиль, выбранный в Пункте управления, и указывает, что на Apple TV 4K одновременно активен только один профиль. Такая проверка Geo IPTV не подтверждает другие права просмотра."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущий выбор",
+          "paragraphs": [
+            "В описанном интерфейсе откройте Настройки, Профили и учётные записи, затем смену текущего профиля, чтобы увидеть доступные имена. Сначала прочитайте существующий выбор: для его определения переключение не требуется. Если владелец хочет использовать другой существующий профиль, следуйте указаниям Apple и остановитесь при незнакомом запросе входа. Названия меню зависят от ПО. Не создавайте учётную запись, не удаляйте члена семьи и не выходите из аккаунта ради проверки воспроизведения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Отделите учётную запись плеера",
+          "paragraphs": [
+            "Откройте нужный плеер обычным способом и отдельно запишите его собственное сообщение входа или доступа. Смена домашнего профиля не подтверждает активацию, оплату или дополнительный одновременный сеанс. Сохраните данные доступа плеера. Сообщите модель Apple TV, версию ПО и этап появления запроса без адресов почты профилей, паролей и личных ссылок воспроизведения. Прежде чем менять настройку, спросите поддержку, к какому уровню учётной записи относится сообщение."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کے لیے Apple TV پروفائل: پہلے گھر کی اسکرین پہچانیں",
+      "excerpt": "پلیئر کی رسائی بدلنے سے پہلے Apple TV کا موجودہ پروفائل پڑھیں۔ گھر کے نام، فراہم کنندہ کا سائن اِن اور بیک وقت سیشن کی حد الگ رکھیں۔",
+      "seo_title": "Geo IPTV کے لیے Apple TV پروفائل: پہلے گھر کی اسکرین پہچانیں",
+      "seo_description": "پلیئر کی رسائی بدلنے سے پہلے Apple TV کا موجودہ پروفائل پڑھیں۔ گھر کے نام، فراہم کنندہ کا سائن اِن اور بیک وقت سیشن کی حد الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پروفائل والی اسکرین پہچانیں",
+          "paragraphs": [
+            "Apple TV پلیئر کھولنے سے پہلے نام چننے کو کہے تو پہچانیں کہ یہ آلے کی پروفائل اسکرین ہے یا کسی ایپ کے اندر سائن اِن۔ ذاتی اکاؤنٹ معلومات کی تصویر لیے بغیر موجودہ پروفائل نوٹ کریں۔ Apple موجودہ پروفائل کو کنٹرول سینٹر میں منتخب پروفائل کہتا ہے اور بتاتا ہے کہ Apple TV 4K پر ایک وقت میں صرف ایک پروفائل فعال ہو سکتا ہے۔ Geo IPTV کے لیے یہ جانچ دیکھنے کی مختلف اجازت ثابت نہیں کرتی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "موجودہ انتخاب پڑھیں",
+          "paragraphs": [
+            "بیان کردہ انٹرفیس میں ترتیبات، پروفائلز اور اکاؤنٹس، پھر موجودہ پروفائل بدلنے کا اختیار دستیاب نام دکھاتا ہے۔ پہلے موجودہ انتخاب پڑھیں؛ صرف پہچاننے کے لیے اسے بدلنا ضروری نہیں۔ مالک کوئی دوسرا موجودہ پروفائل استعمال کرنا چاہے تو Apple کی اسکرین پر ہدایات مانیں اور نامانوس سائن اِن پر رک جائیں۔ مینو کے نام سافٹ ویئر سے بدل سکتے ہیں۔ پلے بیک جانچنے کے لیے نہ نیا اکاؤنٹ بنائیں، نہ گھر کا فرد ہٹائیں اور نہ سائن آؤٹ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "پلیئر کا اکاؤنٹ الگ رکھیں",
+          "paragraphs": [
+            "مطلوبہ پلیئر معمول کے مطابق کھول کر اس کا اپنا سائن اِن یا رسائی کا پیغام الگ نوٹ کریں۔ گھر کا پروفائل بدلنے سے فراہم کنندہ کی فعالی، ادائیگی یا ایک اور بیک وقت سیشن کی تصدیق نہیں ہوتی۔ پلیئر کی محفوظ رسائی برقرار رکھیں۔ پروفائل کی ای میل، پاس ورڈ اور نجی پلے بیک پتے دیے بغیر Apple TV کا ماڈل، سافٹ ویئر ورژن اور درخواست آنے والا مرحلہ بتائیں۔ ترتیب بدلنے سے پہلے معاونت سے پوچھیں کہ پیغام اکاؤنٹ کی کس سطح سے متعلق ہے۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "ملف Apple TV مع Geo IPTV: حدّد أولاً شاشة أفراد المنزل",
+      "excerpt": "اقرأ ملف Apple TV الحالي قبل تغيير دخول المشغّل. افصل أسماء أفراد المنزل عن تسجيل دخول المزوّد وعدد الجلسات المسموح بها.",
+      "seo_title": "ملف Apple TV مع Geo IPTV: حدّد أولاً شاشة أفراد المنزل",
+      "seo_description": "اقرأ ملف Apple TV الحالي قبل تغيير دخول المشغّل. افصل أسماء أفراد المنزل عن تسجيل دخول المزوّد وعدد الجلسات المسموح بها.",
+      "sections": [
+        {
+          "heading": "حدّد شاشة الملفات الشخصية",
+          "paragraphs": [
+            "إذا طلب Apple TV اختيار اسم قبل فتح المشغّل، فحدّد هل هذه شاشة ملفات الجهاز أم تسجيل دخول داخل تطبيق. دوّن الملف الحالي دون تصوير معلومات الحساب الشخصية. تصف Apple الملف الحالي بأنه المحدد في مركز التحكم، وتوضح أن ملفاً واحداً فقط يمكن أن يكون نشطاً في كل مرة على Apple TV 4K. هذا الفحص المتعلق بـGeo IPTV لا يثبت صلاحية مشاهدة مختلفة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الاختيار الحالي",
+          "paragraphs": [
+            "في الواجهة الموثقة، تعرض الإعدادات ثم الملفات الشخصية والحسابات ثم تبديل الملف الحالي الأسماء المتاحة. اقرأ الاختيار الموجود أولاً؛ لا يلزم التبديل لمجرد التعرف عليه. إذا أراد المالك استخدام ملف آخر موجود، فاتبع تعليمات Apple على الشاشة وتوقف عند تسجيل دخول غير مألوف. تختلف أسماء القوائم بحسب البرنامج. لا تنشئ حساباً ولا تزل فرداً من المنزل ولا تسجّل الخروج لاختبار التشغيل."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "افصل حساب المشغّل",
+          "paragraphs": [
+            "افتح المشغّل المقصود بالطريقة المعتادة ودوّن رسالة دخوله أو وصوله بشكل منفصل. تغيير ملف المنزل لا يؤكد تفعيل المزوّد أو الدفع أو جلسة مشاهدة متزامنة إضافية. احتفظ بوصول المشغّل المحفوظ. اذكر طراز Apple TV وإصدار البرنامج ومرحلة ظهور الطلب دون بريد الملف أو كلمات المرور أو روابط التشغيل الخاصة. اسأل الدعم عن مستوى الحساب الذي تخصه الرسالة قبل تغيير الإعداد."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV के लिए Apple TV प्रोफ़ाइल: पहले घर की स्क्रीन पहचानें",
+      "excerpt": "प्लेयर की पहुँच बदलने से पहले Apple TV की मौजूदा प्रोफ़ाइल पढ़ें। घर के नाम, प्रदाता का साइन-इन और अनुमत सत्र अलग रखें।",
+      "seo_title": "Geo IPTV के लिए Apple TV प्रोफ़ाइल: पहले घर की स्क्रीन पहचानें",
+      "seo_description": "प्लेयर की पहुँच बदलने से पहले Apple TV की मौजूदा प्रोफ़ाइल पढ़ें। घर के नाम, प्रदाता का साइन-इन और अनुमत सत्र अलग रखें।",
+      "sections": [
+        {
+          "heading": "प्रोफ़ाइल वाली स्क्रीन पहचानें",
+          "paragraphs": [
+            "Apple TV प्लेयर खोलने से पहले नाम चुनने को कहे तो पहचानें कि यह डिवाइस की प्रोफ़ाइल स्क्रीन है या ऐप के भीतर साइन-इन। निजी खाता जानकारी की तस्वीर लिए बिना मौजूदा प्रोफ़ाइल लिखें। Apple मौजूदा प्रोफ़ाइल को कंट्रोल सेंटर में चुनी प्रोफ़ाइल बताता है और कहता है कि Apple TV 4K पर एक समय में केवल एक प्रोफ़ाइल सक्रिय हो सकती है। Geo IPTV की यह जाँच देखने की अलग अनुमति साबित नहीं करती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मौजूदा चुनाव पढ़ें",
+          "paragraphs": [
+            "बताए गए इंटरफ़ेस में सेटिंग, प्रोफ़ाइल और खाते, फिर मौजूदा प्रोफ़ाइल बदलने का विकल्प उपलब्ध नाम दिखाता है। पहले मौजूदा चुनाव पढ़ें; सिर्फ पहचानने के लिए बदलना जरूरी नहीं। मालिक दूसरा मौजूदा प्रोफ़ाइल इस्तेमाल करना चाहे तो Apple के स्क्रीन निर्देश मानें और अनजान साइन-इन पर रुकें। मेनू नाम सॉफ़्टवेयर के अनुसार बदलते हैं। प्लेबैक जाँचने के लिए न खाता बनाएँ, न घर का सदस्य हटाएँ और न साइन आउट करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेयर का खाता अलग रखें",
+          "paragraphs": [
+            "चाहे गए प्लेयर को सामान्य तरीके से खोलें और उसका अपना साइन-इन या पहुँच संदेश अलग लिखें। घर की प्रोफ़ाइल बदलना प्रदाता की सक्रियता, भुगतान या एक और समकालिक सत्र की पुष्टि नहीं करता। प्लेयर की सहेजी पहुँच बनाए रखें। प्रोफ़ाइल ईमेल, पासवर्ड और निजी प्लेबैक पते दिए बिना Apple TV मॉडल, सॉफ़्टवेयर संस्करण और अनुरोध आने का चरण बताएँ। सेटअप बदलने से पहले सहायता से पूछें कि संदेश खाते की किस परत से जुड़ा है।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: switch the current profile on Apple TV 4K",
+      "url": "https://support.apple.com/en-tm/guide/tv/atvb07c60378/tvos"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-22",
+  "topic": "Check the intended compatible Google Play installation device separately from a phone installation and Get IPTV provider access or Opplex and Filex setup state.",
+  "primary_keyword": "Get IPTV app installation",
+  "slug": "getiptv-app-installation-check-selected-play-device",
+  "translations": {
+    "en": {
+      "title": "Get IPTV app installation: check the selected Google Play device",
+      "excerpt": "A phone installation does not show that a player reached your television. Review the compatible device selected in Google Play before changing Get IPTV access.",
+      "seo_title": "Get IPTV app installation: check the selected Google Play device",
+      "seo_description": "A phone installation does not show that a player reached your television. Review the compatible device selected in Google Play before changing Get IPTV access.",
+      "sections": [
+        {
+          "heading": "Identify the intended television",
+          "paragraphs": [
+            "If a player appears on your phone but not on the television, record the intended TV or streaming-device model first. A Get IPTV app installation question is different from a provider sign-in problem. Confirm the exact app name and publisher, then check whether its listing supports that television. Installing an Android app on one device does not mean that it has also been installed on every other device you own."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the device choice before installing",
+          "paragraphs": [
+            "Google documents using a computer’s Google Play website to open an app listing, select Install and choose the destination from a device dropdown. The listing indicates whether the item is available for some, all or none of your devices. Select only the intended device you own or manage, if it is actually offered, and read the displayed result. Do not select every device, enable broad app syncing or repeat a paid purchase simply to locate one missing TV app."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official Google Play device-selection guide",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Check installation and service separately",
+          "paragraphs": [
+            "Look for the intended app on the television itself and verify its publisher before entering access details. If the television is not offered, ask the app publisher about that model instead of using an unknown APK. Confirm the selected Opplex or Filex service and Get IPTV order/setup state separately. A player licence can be a separate cost, and an unstated Filex connection allowance needs confirmation. Installation does not add simultaneous viewing access. Share device and app names with support without private Google-account or playback details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Instalar Get IPTV: comprueba el dispositivo elegido en Google Play",
+      "excerpt": "Instalar un reproductor en el teléfono no confirma que haya llegado al televisor. Revisa el dispositivo compatible elegido en Google Play antes de cambiar el acceso.",
+      "seo_title": "Instalar Get IPTV: comprueba el dispositivo elegido en Google Play",
+      "seo_description": "Instalar un reproductor en el teléfono no confirma que haya llegado al televisor. Revisa el dispositivo compatible elegido en Google Play antes de cambiar el acceso.",
+      "sections": [
+        {
+          "heading": "Identifica el televisor de destino",
+          "paragraphs": [
+            "Si el reproductor aparece en el teléfono pero no en el televisor, anota primero el modelo del televisor o dispositivo de streaming previsto. Una duda sobre instalar una app para Get IPTV es distinta de un problema de acceso al proveedor. Confirma el nombre y el editor exactos y comprueba si la ficha admite ese televisor. Instalar una app Android en un equipo no significa que se haya instalado en todos los demás que posees."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el dispositivo elegido antes de instalar",
+          "paragraphs": [
+            "Google documenta abrir la ficha de la app en Google Play desde un ordenador, seleccionar Instalar y elegir el destino en el desplegable de dispositivos. La ficha indica si está disponible para algunos, todos o ninguno de tus equipos. Selecciona solo el dispositivo previsto que posees o administras, si realmente aparece, y lee el resultado mostrado. No selecciones todos los equipos, actives una sincronización general ni repitas una compra para localizar una app que falta en la TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía oficial para elegir un dispositivo",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Separa instalación y servicio",
+          "paragraphs": [
+            "Busca la app en el propio televisor y verifica su editor antes de introducir datos de acceso. Si el televisor no se ofrece, consulta al editor sobre el modelo en lugar de usar un APK desconocido. Confirma por separado el servicio Opplex o Filex y el estado del pedido y configuración de Get IPTV. La licencia del reproductor puede costar aparte; pregunta por un límite Filex no indicado. Instalar no añade acceso simultáneo. Da a soporte nombres del dispositivo y la app, sin datos privados de Google o reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Installation Get IPTV : vérifier l’appareil choisi dans Google Play",
+      "excerpt": "Une installation sur téléphone ne confirme pas celle du lecteur sur la télévision. Vérifiez l’appareil compatible sélectionné dans Google Play avant de changer l’accès.",
+      "seo_title": "Installation Get IPTV : vérifier l’appareil choisi dans Google Play",
+      "seo_description": "Une installation sur téléphone ne confirme pas celle du lecteur sur la télévision. Vérifiez l’appareil compatible sélectionné dans Google Play avant de changer l’accès.",
+      "sections": [
+        {
+          "heading": "Identifier la télévision visée",
+          "paragraphs": [
+            "Si le lecteur apparaît sur le téléphone mais pas sur la télévision, notez d’abord le modèle du téléviseur ou du boîtier concerné. Une question d’installation d’application pour Get IPTV diffère d’un problème d’identification auprès du fournisseur. Confirmez le nom exact et l’éditeur de l’application, puis sa compatibilité avec cette télévision. Installer une application Android sur un appareil ne signifie pas qu’elle est aussi installée sur tous vos autres équipements."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le choix avant d’installer",
+          "paragraphs": [
+            "Google décrit l’ouverture de la fiche sur son site Google Play depuis un ordinateur, la sélection d’Installer puis de l’appareil destinataire dans une liste déroulante. La fiche indique la disponibilité pour certains, tous ou aucun de vos appareils. Choisissez seulement l’appareil prévu que vous possédez ou gérez, s’il est réellement proposé, puis lisez le résultat. Ne sélectionnez pas tous les appareils, n’activez pas de synchronisation générale et ne répétez pas un achat pour trouver une application absente de la télévision."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide officiel de sélection de l’appareil",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer installation et service",
+          "paragraphs": [
+            "Cherchez l’application sur la télévision elle-même et vérifiez son éditeur avant de saisir un accès. Si le téléviseur n’est pas proposé, demandez à l’éditeur sa compatibilité plutôt que d’utiliser un APK inconnu. Confirmez séparément le service Opplex ou Filex et l’état de commande et de configuration Get IPTV. La licence du lecteur peut coûter séparément ; demandez toute limite Filex non précisée. L’installation n’ajoute pas d’accès simultané. Communiquez les noms d’appareil et d’application, sans données privées Google ou de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Come installare Get IPTV: verifica il dispositivo scelto in Google Play",
+      "excerpt": "Installare un lettore sul telefono non conferma che sia arrivato sul televisore. Controlla il dispositivo compatibile selezionato in Google Play prima di cambiare l’accesso.",
+      "seo_title": "Come installare Get IPTV: verifica il dispositivo scelto in Google Play",
+      "seo_description": "Installare un lettore sul telefono non conferma che sia arrivato sul televisore. Controlla il dispositivo compatibile selezionato in Google Play prima di cambiare l’accesso.",
+      "sections": [
+        {
+          "heading": "Identifica il televisore desiderato",
+          "paragraphs": [
+            "Se il lettore appare sul telefono ma non sul televisore, annota prima il modello della TV o del dispositivo di streaming desiderato. Una domanda su come installare un’app per Get IPTV è diversa da un problema di accesso al fornitore. Conferma nome esatto ed editore dell’app, poi verifica se la scheda supporta quel televisore. Installare un’app Android su un dispositivo non significa averla installata anche su tutti gli altri apparecchi che possiedi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la destinazione prima di installare",
+          "paragraphs": [
+            "Google documenta l’apertura della scheda sul sito Google Play da computer, la selezione di Installa e la scelta della destinazione nel menu dei dispositivi. La scheda indica se l’app è disponibile per alcuni, tutti o nessuno dei tuoi dispositivi. Scegli solo l’apparecchio desiderato che possiedi o gestisci, se è effettivamente proposto, e leggi il risultato mostrato. Non selezionare tutti i dispositivi, attivare sincronizzazioni generali o ripetere un acquisto per trovare un’app mancante sulla TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida ufficiale alla scelta del dispositivo",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Separa installazione e servizio",
+          "paragraphs": [
+            "Cerca l’app sul televisore stesso e controlla l’editore prima di inserire dati di accesso. Se la TV non è proposta, chiedi all’editore informazioni sul modello invece di usare APK sconosciuti. Conferma separatamente servizio Opplex o Filex e stato dell’ordine e della configurazione Get IPTV. La licenza del lettore può avere un costo distinto; chiedi un limite Filex non dichiarato. Installare non aggiunge accessi simultanei. Comunica nomi di dispositivo e app senza dettagli privati di Google o riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV installeren: controleer het gekozen Google Play-apparaat",
+      "excerpt": "Een installatie op je telefoon bewijst niet dat de speler op je televisie staat. Bekijk het gekozen compatibele apparaat in Google Play voordat je toegang wijzigt.",
+      "seo_title": "Get IPTV installeren: controleer het gekozen Google Play-apparaat",
+      "seo_description": "Een installatie op je telefoon bewijst niet dat de speler op je televisie staat. Bekijk het gekozen compatibele apparaat in Google Play voordat je toegang wijzigt.",
+      "sections": [
+        {
+          "heading": "Bepaal de bedoelde televisie",
+          "paragraphs": [
+            "Als de speler op je telefoon verschijnt maar niet op de televisie, noteer dan eerst het bedoelde tv- of streamingapparaatmodel. Een installatievraag bij Get IPTV verschilt van een probleem met de provideraanmelding. Controleer de exacte appnaam en uitgever en kijk of de vermelding deze televisie ondersteunt. Een Android-app op één apparaat installeren betekent niet dat deze ook op ieder ander apparaat dat je bezit is geïnstalleerd."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de apparaatkeuze voor installatie",
+          "paragraphs": [
+            "Google beschrijft hoe je op een computer de appvermelding op de Google Play-website opent, Installeren kiest en de bestemming in de apparatenlijst selecteert. De vermelding toont of de app voor sommige, alle of geen van je apparaten beschikbaar is. Kies alleen het bedoelde apparaat dat je bezit of beheert, als het werkelijk wordt aangeboden, en lees de uitkomst. Selecteer niet alle apparaten, schakel geen algemene appsynchronisatie in en herhaal geen betaalde aankoop om één ontbrekende tv-app te vinden."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële uitleg over apparaatkeuze",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer installatie en service apart",
+          "paragraphs": [
+            "Zoek de app op de televisie zelf en controleer de uitgever voordat je toegangsgegevens invoert. Staat de tv niet in de lijst, vraag de uitgever dan naar dat model in plaats van een onbekende APK te gebruiken. Controleer Opplex of Filex en de Get IPTV-bestel- en instelstatus afzonderlijk. Een spelerlicentie kan apart kosten; vraag naar een niet vermelde Filex-verbindingslimiet. Installatie voegt geen gelijktijdige kijktoegang toe. Deel apparaat- en appnamen met ondersteuning zonder privégegevens van Google of afspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Instalar Get IPTV: confirme o dispositivo escolhido no Google Play",
+      "excerpt": "Instalar um leitor no telefone não confirma que chegou à televisão. Reveja o dispositivo compatível selecionado no Google Play antes de mudar o acesso.",
+      "seo_title": "Instalar Get IPTV: confirme o dispositivo escolhido no Google Play",
+      "seo_description": "Instalar um leitor no telefone não confirma que chegou à televisão. Reveja o dispositivo compatível selecionado no Google Play antes de mudar o acesso.",
+      "sections": [
+        {
+          "heading": "Identifique a televisão pretendida",
+          "paragraphs": [
+            "Se o leitor aparece no telefone mas não na televisão, anote primeiro o modelo da TV ou do dispositivo de streaming pretendido. Uma dúvida de instalação de uma aplicação para Get IPTV difere de um problema de entrada no fornecedor. Confirme o nome exato e o editor da aplicação e veja se a ficha suporta essa televisão. Instalar uma aplicação Android num dispositivo não significa que também foi instalada em todos os outros equipamentos que possui."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o destino antes de instalar",
+          "paragraphs": [
+            "O Google descreve abrir a ficha da aplicação no site Google Play num computador, selecionar Instalar e escolher o destino na lista de dispositivos. A ficha indica se está disponível para alguns, todos ou nenhum dos seus dispositivos. Escolha apenas o aparelho pretendido que possui ou gere, se for realmente apresentado, e leia o resultado. Não selecione todos os dispositivos, ative sincronização geral nem repita uma compra paga só para encontrar uma aplicação em falta na TV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia oficial de seleção do dispositivo",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Separe instalação e serviço",
+          "paragraphs": [
+            "Procure a aplicação na própria televisão e confirme o editor antes de introduzir dados de acesso. Se a TV não for apresentada, pergunte ao editor sobre o modelo em vez de usar um APK desconhecido. Confirme separadamente Opplex ou Filex e o estado do pedido e configuração Get IPTV. A licença do leitor pode ter custo separado; pergunte por um limite Filex não indicado. Instalar não acrescenta acesso simultâneo. Dê ao suporte nomes do aparelho e da aplicação, sem dados privados Google ou de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Установка Get IPTV: проверьте выбранное устройство Google Play",
+      "excerpt": "Установка плеера на телефон не подтверждает его установку на телевизор. Проверьте выбранное совместимое устройство в Google Play до изменения доступа.",
+      "seo_title": "Установка Get IPTV: проверьте выбранное устройство Google Play",
+      "seo_description": "Установка плеера на телефон не подтверждает его установку на телевизор. Проверьте выбранное совместимое устройство в Google Play до изменения доступа.",
+      "sections": [
+        {
+          "heading": "Определите нужный телевизор",
+          "paragraphs": [
+            "Если плеер появился на телефоне, но отсутствует на телевизоре, сначала запишите модель нужного телевизора или приставки. Вопрос установки приложения для Get IPTV отличается от проблемы входа к поставщику. Уточните точное название приложения и издателя, затем проверьте поддержку этого телевизора в карточке. Установка приложения Android на одно устройство не означает, что оно одновременно установлено на все остальные ваши устройства."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте выбор до установки",
+          "paragraphs": [
+            "Google описывает открытие карточки приложения на сайте Google Play с компьютера, выбор установки и нужного устройства в выпадающем списке. Карточка показывает доступность для некоторых, всех или ни одного из ваших устройств. Выберите только нужное устройство, которым владеете или управляете, если оно действительно предложено, и прочитайте результат. Не выбирайте все устройства, не включайте общую синхронизацию приложений и не повторяйте платную покупку ради поиска отсутствующего плеера на телевизоре."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальная справка о выборе устройства",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте установку и услугу",
+          "paragraphs": [
+            "Найдите приложение на самом телевизоре и проверьте издателя до ввода данных доступа. Если телевизор не предложен, уточните совместимость у издателя, а не используйте неизвестный APK. Отдельно подтвердите Opplex или Filex и состояние заказа и настройки Get IPTV. Лицензия плеера может оплачиваться отдельно; уточните неуказанный лимит подключений Filex. Установка не добавляет одновременных просмотров. Передавайте поддержке названия устройства и приложения, без личных данных Google или закрытых адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کی ایپ تنصیب: Google Play کا منتخب آلہ دیکھیں",
+      "excerpt": "فون پر پلیئر نصب ہونا، ٹی وی پر پہنچنے کی تصدیق نہیں۔ رسائی بدلنے سے پہلے Google Play میں منتخب مطابقت رکھنے والا آلہ دیکھیں۔",
+      "seo_title": "Get IPTV کی ایپ تنصیب: Google Play کا منتخب آلہ دیکھیں",
+      "seo_description": "فون پر پلیئر نصب ہونا، ٹی وی پر پہنچنے کی تصدیق نہیں۔ رسائی بدلنے سے پہلے Google Play میں منتخب مطابقت رکھنے والا آلہ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "مطلوبہ ٹی وی پہچانیں",
+          "paragraphs": [
+            "پلیئر فون پر ہو مگر ٹی وی پر نہ ہو تو پہلے مطلوبہ ٹی وی یا اسٹریمنگ آلے کا ماڈل لکھیں۔ Get IPTV کے لیے ایپ نصب کرنے کا سوال، فراہم کنندہ میں داخل ہونے کے مسئلے سے الگ ہے۔ ایپ کا درست نام اور ناشر پکا کریں، پھر دیکھیں کہ اس کی فہرست اس ٹی وی کو سہارا دیتی ہے یا نہیں۔ ایک Android آلے پر ایپ نصب ہونے کا مطلب یہ نہیں کہ آپ کے ہر دوسرے آلے پر بھی نصب ہو گئی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تنصیب سے پہلے منتخب آلہ پڑھیں",
+          "paragraphs": [
+            "Google کمپیوٹر پر اپنی Play ویب سائٹ سے ایپ کی فہرست کھولنے، نصب کرنے کا اختیار چننے اور آلات کے ڈراپ ڈاؤن سے منزل منتخب کرنے کا طریقہ بتاتا ہے۔ فہرست بتاتی ہے کہ ایپ آپ کے کچھ، تمام یا کسی بھی آلے کے لیے دستیاب ہے یا نہیں۔ صرف اپنا یا اپنے زیر انتظام مطلوبہ آلہ چنیں، بشرطیکہ وہ واقعی پیش کیا گیا ہو، پھر نتیجہ پڑھیں۔ ٹی وی کی ایک غائب ایپ تلاش کرنے کے لیے نہ تمام آلات منتخب کریں، نہ عمومی ایپ ہم وقت سازی فعال کریں اور نہ بامعاوضہ خریداری دہرائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "آلہ منتخب کرنے کی سرکاری ہدایت",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "تنصیب اور سروس الگ جانچیں",
+          "paragraphs": [
+            "خود ٹی وی پر مطلوبہ ایپ دیکھیں اور رسائی کی تفصیل دینے سے پہلے ناشر کی تصدیق کریں۔ ٹی وی پیش نہ کیا گیا ہو تو نامعلوم APK کے بجائے ناشر سے ماڈل کی مطابقت پوچھیں۔ منتخب Opplex یا Filex سروس اور Get IPTV آرڈر و ترتیب کی حالت الگ دیکھیں۔ پلیئر کے لائسنس کی الگ قیمت ہو سکتی ہے؛ Filex کی غیر درج کنکشن حد پوچھیں۔ تنصیب سے بیک وقت دیکھنے کی اضافی رسائی نہیں ملتی۔ معاونت کو آلے اور ایپ کے نام دیں، Google اکاؤنٹ یا پلے بیک کی نجی تفصیل نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تثبيت تطبيق Get IPTV: راجع جهاز Google Play المحدد",
+      "excerpt": "تثبيت المشغل على الهاتف لا يؤكد وصوله إلى التلفزيون. راجع الجهاز المتوافق المحدد في Google Play قبل تغيير الوصول إلى الخدمة.",
+      "seo_title": "تثبيت تطبيق Get IPTV: راجع جهاز Google Play المحدد",
+      "seo_description": "تثبيت المشغل على الهاتف لا يؤكد وصوله إلى التلفزيون. راجع الجهاز المتوافق المحدد في Google Play قبل تغيير الوصول إلى الخدمة.",
+      "sections": [
+        {
+          "heading": "حدد التلفزيون المقصود",
+          "paragraphs": [
+            "إذا ظهر المشغل على الهاتف وليس على التلفزيون، فسجل أولا طراز التلفزيون أو جهاز البث المقصود. سؤال تثبيت تطبيق لاستخدام Get IPTV يختلف عن مشكلة تسجيل الدخول لدى المزود. أكد اسم التطبيق وناشره بدقة، ثم تحقق مما إذا كانت صفحته تدعم ذلك التلفزيون. تثبيت تطبيق Android على جهاز واحد لا يعني أنه ثبت أيضا على كل جهاز آخر تملكه."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ اختيار الجهاز قبل التثبيت",
+          "paragraphs": [
+            "يشرح Google فتح صفحة التطبيق على موقع Google Play من الكمبيوتر، واختيار التثبيت ثم تحديد الوجهة من قائمة الأجهزة. توضح الصفحة التوفر لبعض أجهزتك أو كلها أو لا شيء منها. اختر فقط الجهاز المقصود الذي تملكه أو تديره إن كان معروضا بالفعل، واقرأ النتيجة. لا تحدد جميع الأجهزة ولا تفعل المزامنة العامة للتطبيقات ولا تكرر شراء مدفوعا لمجرد العثور على تطبيق مفقود في التلفزيون."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "الدليل الرسمي لاختيار الجهاز",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "افحص التثبيت والخدمة منفصلين",
+          "paragraphs": [
+            "ابحث عن التطبيق على التلفزيون نفسه وتحقق من الناشر قبل إدخال بيانات الوصول. إذا لم يعرض التلفزيون، فاسأل الناشر عن الطراز بدلا من استخدام APK مجهول. أكد خدمة Opplex أو Filex وحالة طلب وإعداد Get IPTV منفصلة. قد يكلف ترخيص المشغل رسما مستقلا؛ اسأل عن حد اتصالات Filex غير المذكور. التثبيت لا يضيف وصولا متزامنا للمشاهدة. شارك أسماء الجهاز والتطبيق مع الدعم دون تفاصيل حساب Google الخاصة أو عناوين التشغيل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV ऐप इंस्टॉलेशन: Google Play में चुना डिवाइस देखें",
+      "excerpt": "फ़ोन पर प्लेयर इंस्टॉल होना टीवी पर पहुँचने की पुष्टि नहीं करता। Get IPTV पहुँच बदलने से पहले Google Play में चुने संगत डिवाइस को देखें।",
+      "seo_title": "Get IPTV ऐप इंस्टॉलेशन: Google Play में चुना डिवाइस देखें",
+      "seo_description": "फ़ोन पर प्लेयर इंस्टॉल होना टीवी पर पहुँचने की पुष्टि नहीं करता। Get IPTV पहुँच बदलने से पहले Google Play में चुने संगत डिवाइस को देखें।",
+      "sections": [
+        {
+          "heading": "चाहा गया टेलीविज़न पहचानें",
+          "paragraphs": [
+            "प्लेयर फ़ोन पर दिखे लेकिन टीवी पर नहीं तो पहले चाहे गए टीवी या स्ट्रीमिंग डिवाइस का मॉडल लिखें। Get IPTV के लिए ऐप इंस्टॉल करने का सवाल प्रदाता में साइन इन करने की समस्या से अलग है। ऐप का सही नाम और प्रकाशक पक्का करें, फिर देखें कि सूची उस टीवी को समर्थन देती है या नहीं। एक Android डिवाइस पर ऐप इंस्टॉल होने का मतलब यह नहीं कि आपके हर दूसरे डिवाइस पर भी इंस्टॉल हो गया है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "इंस्टॉल करने से पहले डिवाइस का चुनाव पढ़ें",
+          "paragraphs": [
+            "Google कंप्यूटर पर अपनी Play वेबसाइट से ऐप सूची खोलने, इंस्टॉल चुनने और डिवाइस सूची से गंतव्य चुनने का तरीका बताता है। सूची बताती है कि ऐप आपके कुछ, सभी या किसी भी डिवाइस के लिए उपलब्ध है या नहीं। केवल अपना या अपने प्रबंधन वाला चाहा डिवाइस चुनें, यदि सच में दिया गया हो, फिर दिखा नतीजा पढ़ें। टीवी के एक गायब ऐप को ढूँढने के लिए न सभी डिवाइस चुनें, न सामान्य ऐप सिंक चालू करें और न सशुल्क खरीद दोहराएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "डिवाइस चुनने की आधिकारिक सहायता",
+              "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+            }
+          ]
+        },
+        {
+          "heading": "इंस्टॉलेशन और सेवा अलग जाँचें",
+          "paragraphs": [
+            "टीवी पर ही चाहे गए ऐप को ढूँढें और प्रवेश जानकारी देने से पहले प्रकाशक पक्का करें। टीवी सूची में न हो तो अनजान APK के बजाय प्रकाशक से मॉडल की संगतता पूछें। चुनी Opplex या Filex सेवा तथा Get IPTV ऑर्डर और सेटअप की स्थिति अलग देखें। प्लेयर लाइसेंस की अलग लागत हो सकती है; Filex की अनबताई कनेक्शन सीमा पूछें। इंस्टॉलेशन से साथ देखने की अतिरिक्त पहुँच नहीं मिलती। सहायता को डिवाइस और ऐप के नाम दें, निजी Google खाते या प्लेबैक की जानकारी नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play Help: install apps on another device",
+      "url": "https://support.google.com/googleplay/answer/16671014?hl=en&co=GENIE.Platform%3DDesktop"
+    }
+  ]
+}
