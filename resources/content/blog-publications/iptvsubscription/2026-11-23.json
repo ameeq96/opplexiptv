@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-23",
+  "topic": "Distinguish a Chrome certificate-date and device-clock warning from IPTV Subscription expiry or an unresolved Opplex or Filex order without bypassing browser protection.",
+  "primary_keyword": "IPTV Subscription clock warning",
+  "slug": "iptvsubscription-clock-warning-read-certificate-date-error",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription clock warning: read the certificate date error",
+      "excerpt": "A Chrome clock warning is separate from a viewing-plan expiry. Check the exact message and device date without bypassing browser protection or repeating payment.",
+      "seo_title": "IPTV Subscription clock warning: read the certificate date error",
+      "seo_description": "A Chrome clock warning is separate from a viewing-plan expiry. Check the exact message and device date without bypassing browser protection or repeating payment.",
+      "sections": [
+        {
+          "heading": "Read the exact warning",
+          "paragraphs": [
+            "If a browser stops at a warning instead of opening a plan page, record the message before ordering again. An IPTV Subscription clock warning is not a service-expiry notice. Google groups NET::ERR_CERT_DATE_INVALID with messages saying the clock is ahead or behind, and explains that an inaccurate device date or time can cause them. This identifies one documented possibility, not the cause of every certificate warning."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare the device clock",
+          "paragraphs": [
+            "Open the device’s normal clock or date-and-time display and check whether its date and time are correct. Use a trusted time reference and the device owner’s normal settings; do not deliberately change the clock to make a warning disappear. Keep the original error available. If the displayed time is correct or the warning remains, contact the website owner or your device administrator rather than clicking past protection, installing an unfamiliar certificate or clearing saved browser data."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official Chrome clock-error guide",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the order question separate",
+          "paragraphs": [
+            "Once you can use your trusted access route normally, confirm whether the IPTV Subscription order is Opplex or Filex, its duration and recorded state. A certificate-date warning does not establish payment failure or a need to renew. Keep a separate player licence cost distinct and ask about an unstated Filex connection allowance. Give support the error code, device and time observed, without passwords or private order links; do not repeat payment as a clock test."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Aviso de reloj en IPTV Subscription: revisa el error de fecha",
+      "excerpt": "Un aviso del reloj en Chrome es distinto del vencimiento del servicio. Comprueba el mensaje y la fecha del dispositivo sin omitir la protección ni repetir el pago.",
+      "seo_title": "Aviso de reloj en IPTV Subscription: revisa el error de fecha",
+      "seo_description": "Un aviso del reloj en Chrome es distinto del vencimiento del servicio. Comprueba el mensaje y la fecha del dispositivo sin omitir la protección ni repetir el pago.",
+      "sections": [
+        {
+          "heading": "Lee el aviso exacto",
+          "paragraphs": [
+            "Si el navegador muestra un aviso en lugar de abrir la página del plan, anota el mensaje antes de volver a comprar. Un aviso de reloj de IPTV Subscription no es un aviso de vencimiento del servicio. Google relaciona NET::ERR_CERT_DATE_INVALID con mensajes que indican que el reloj está adelantado o atrasado; una fecha u hora incorrecta puede causarlos. Es una posibilidad documentada, no la explicación de todo aviso de certificado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara el reloj del dispositivo",
+          "paragraphs": [
+            "Abre el reloj o la pantalla habitual de fecha y hora y comprueba los valores. Usa una referencia horaria fiable y los ajustes normales del propietario; no cambies la hora deliberadamente para ocultar el aviso. Conserva el error original. Si la hora es correcta o el aviso continúa, consulta al propietario de la web o al administrador del dispositivo. No omitas la protección, instales un certificado desconocido ni borres los datos guardados del navegador."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía oficial de errores de Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la consulta del pedido",
+          "paragraphs": [
+            "Cuando puedas utilizar con normalidad tu vía de acceso de confianza, confirma si el pedido de IPTV Subscription es Opplex o Filex, su duración y su estado registrado. El aviso no demuestra un pago fallido ni que debas renovar. Distingue el posible coste de licencia del reproductor y pregunta por cualquier límite de conexiones de Filex no indicado. Comunica código, dispositivo y hora, sin contraseñas ni enlaces privados; no repitas el pago para probar el reloj."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Alerte d’horloge IPTV Subscription : vérifier l’erreur de date",
+      "excerpt": "Une alerte d’horloge Chrome est distincte de l’expiration du service. Vérifiez le message et la date de l’appareil sans contourner la protection ni répéter le paiement.",
+      "seo_title": "Alerte d’horloge IPTV Subscription : vérifier l’erreur de date",
+      "seo_description": "Une alerte d’horloge Chrome est distincte de l’expiration du service. Vérifiez le message et la date de l’appareil sans contourner la protection ni répéter le paiement.",
+      "sections": [
+        {
+          "heading": "Lire l’alerte exacte",
+          "paragraphs": [
+            "Si le navigateur affiche une alerte au lieu du forfait, relevez son texte avant de commander à nouveau. Une alerte d’horloge IPTV Subscription n’annonce pas l’expiration du service. Google associe NET::ERR_CERT_DATE_INVALID aux messages indiquant une horloge en avance ou en retard ; une date ou heure incorrecte peut les provoquer. C’est une possibilité documentée, pas l’explication de toute alerte de certificat."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparer l’horloge de l’appareil",
+          "paragraphs": [
+            "Ouvrez l’affichage habituel de l’heure et de la date pour contrôler les valeurs. Utilisez une référence fiable et les réglages habituels du propriétaire ; ne modifiez pas volontairement l’heure pour masquer l’alerte. Conservez l’erreur initiale. Si l’heure est correcte ou l’alerte persiste, contactez le propriétaire du site ou l’administrateur. Ne contournez pas la protection, n’installez pas de certificat inconnu et n’effacez pas les données enregistrées du navigateur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide officiel des erreurs Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer la question de commande",
+          "paragraphs": [
+            "Une fois votre accès habituel de confiance utilisable, confirmez si la commande IPTV Subscription concerne Opplex ou Filex, sa durée et son état enregistré. L’alerte ne prouve ni un échec de paiement ni un besoin de renouvellement. Distinguez le coût éventuel de licence du lecteur et demandez toute limite Filex non précisée. Transmettez code, appareil et heure, sans mots de passe ni liens privés ; ne payez pas à nouveau pour tester l’horloge."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Avviso dell’orologio IPTV Subscription: controlla l’errore di data",
+      "excerpt": "Un avviso dell’orologio di Chrome è distinto dalla scadenza del servizio. Controlla messaggio e data del dispositivo senza superare la protezione o ripetere il pagamento.",
+      "seo_title": "Avviso dell’orologio IPTV Subscription: controlla l’errore di data",
+      "seo_description": "Un avviso dell’orologio di Chrome è distinto dalla scadenza del servizio. Controlla messaggio e data del dispositivo senza superare la protezione o ripetere il pagamento.",
+      "sections": [
+        {
+          "heading": "Leggi l’avviso esatto",
+          "paragraphs": [
+            "Se il browser mostra un avviso invece della pagina del piano, annota il messaggio prima di ordinare di nuovo. Un avviso dell’orologio di IPTV Subscription non indica la scadenza dell’abbonamento. Google associa NET::ERR_CERT_DATE_INVALID ai messaggi di orologio avanti o indietro: data od ora inesatte possono causarli. È una possibilità documentata, non la causa di ogni avviso sui certificati."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta l’orologio del dispositivo",
+          "paragraphs": [
+            "Apri il normale orologio o la schermata di data e ora e verifica i valori. Usa un riferimento affidabile e le impostazioni abituali del proprietario; non cambiare apposta l’ora per nascondere l’avviso. Conserva l’errore originale. Se l’ora è corretta o il problema continua, contatta il gestore del sito o l’amministratore del dispositivo. Non superare la protezione, installare certificati sconosciuti o cancellare i dati salvati del browser."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida ufficiale agli errori Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la questione dell’ordine",
+          "paragraphs": [
+            "Quando puoi usare normalmente il tuo accesso fidato, verifica se l’ordine IPTV Subscription riguarda Opplex o Filex, la durata e lo stato registrato. L’avviso non dimostra pagamento fallito o necessità di rinnovare l’abbonamento IPTV. Distingui l’eventuale licenza a pagamento del lettore e chiedi la quota di connessioni Filex non dichiarata. Comunica codice, dispositivo e ora senza password o link privati; non ripetere il pagamento per provare l’orologio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-klokwaarschuwing: lees de certificaatdatumfout",
+      "excerpt": "Een klokwaarschuwing van Chrome is iets anders dan een verlopen kijkabonnement. Controleer melding en apparaatdatum zonder beveiliging te omzeilen of opnieuw te betalen.",
+      "seo_title": "IPTV Subscription-klokwaarschuwing: lees de certificaatdatumfout",
+      "seo_description": "Een klokwaarschuwing van Chrome is iets anders dan een verlopen kijkabonnement. Controleer melding en apparaatdatum zonder beveiliging te omzeilen of opnieuw te betalen.",
+      "sections": [
+        {
+          "heading": "Lees de precieze waarschuwing",
+          "paragraphs": [
+            "Verschijnt er een waarschuwing in plaats van de pakketpagina, noteer dan eerst de tekst voordat je opnieuw bestelt. Een IPTV Subscription-klokwaarschuwing meldt geen verlopen dienst. Google noemt NET::ERR_CERT_DATE_INVALID samen met meldingen over een klok die voor- of achterloopt; een onjuiste apparaatdatum of tijd kan die veroorzaken. Dat is één gedocumenteerde mogelijkheid, geen verklaring voor iedere certificaatwaarschuwing."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk de apparaatklok",
+          "paragraphs": [
+            "Open de gebruikelijke klok of datum- en tijdweergave en controleer de waarden. Gebruik een betrouwbare tijdbron en de normale instellingen van de eigenaar; verander de klok niet opzettelijk om de waarschuwing te laten verdwijnen. Bewaar de oorspronkelijke fout. Is de tijd correct of blijft de melding, neem dan contact op met de website-eigenaar of apparaatbeheerder. Omzeil geen beveiliging, installeer geen onbekend certificaat en wis geen opgeslagen browsergegevens."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële Chrome-foutengids",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd de bestelvraag apart",
+          "paragraphs": [
+            "Controleer zodra je vertrouwde toegangsroute normaal werkt of de IPTV Subscription-bestelling Opplex of Filex betreft, de duur en de vastgelegde status. De waarschuwing bewijst geen mislukte betaling of verlengingsplicht. Houd een mogelijke spelerlicentie apart en vraag naar een niet-vermelde Filex-verbindingslimiet. Geef code, apparaat en tijd door zonder wachtwoorden of privélinks; betaal niet opnieuw om de klok te testen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Aviso de relógio IPTV Subscription: confira o erro de data",
+      "excerpt": "Um aviso de relógio do Chrome é diferente do vencimento do serviço. Confira mensagem e data do aparelho sem ignorar a proteção nem repetir o pagamento.",
+      "seo_title": "Aviso de relógio IPTV Subscription: confira o erro de data",
+      "seo_description": "Um aviso de relógio do Chrome é diferente do vencimento do serviço. Confira mensagem e data do aparelho sem ignorar a proteção nem repetir o pagamento.",
+      "sections": [
+        {
+          "heading": "Leia o aviso exato",
+          "paragraphs": [
+            "Se o navegador mostrar um aviso em vez da página do plano, anote a mensagem antes de comprar novamente. Um aviso de relógio da IPTV Subscription não informa vencimento do serviço. O Google relaciona NET::ERR_CERT_DATE_INVALID a mensagens de relógio adiantado ou atrasado; data ou hora incorretas podem causá-las. É uma possibilidade documentada, não a causa de todo aviso de certificado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare o relógio do aparelho",
+          "paragraphs": [
+            "Abra o relógio ou a tela normal de data e hora e confira os valores. Use uma referência confiável e as configurações habituais do proprietário; não mude a hora de propósito para esconder o aviso. Preserve o erro original. Se a hora estiver correta ou o aviso continuar, procure o responsável pelo site ou o administrador do aparelho. Não ignore a proteção, instale certificado desconhecido nem apague dados salvos do navegador."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia oficial de erros do Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a questão do pedido",
+          "paragraphs": [
+            "Quando seu acesso habitual de confiança funcionar normalmente, confirme se o pedido IPTV Subscription é Opplex ou Filex, sua duração e o estado registrado. O aviso não comprova pagamento falho nem necessidade de renovar a assinatura IPTV. Separe eventual licença paga do reprodutor e pergunte por limite Filex não informado. Envie código, aparelho e hora sem senhas ou links privados; não repita pagamento para testar o relógio."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Предупреждение часов IPTV Subscription: проверьте ошибку даты",
+      "excerpt": "Предупреждение часов Chrome не равно окончанию подписки. Проверьте сообщение и дату устройства, не обходя защиту и не повторяя платёж.",
+      "seo_title": "Предупреждение часов IPTV Subscription: проверьте ошибку даты",
+      "seo_description": "Предупреждение часов Chrome не равно окончанию подписки. Проверьте сообщение и дату устройства, не обходя защиту и не повторяя платёж.",
+      "sections": [
+        {
+          "heading": "Прочитайте точное предупреждение",
+          "paragraphs": [
+            "Если вместо страницы тарифа браузер показывает предупреждение, запишите текст до нового заказа. Предупреждение часов при работе с IPTV Subscription не сообщает об окончании услуги. Google связывает NET::ERR_CERT_DATE_INVALID с сообщениями о спешащих или отстающих часах: причиной могут быть неверные дата или время устройства. Это одна документированная возможность, а не объяснение любого предупреждения сертификата."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сверьте часы устройства",
+          "paragraphs": [
+            "Откройте обычные часы или экран даты и времени и проверьте значения. Пользуйтесь надёжным источником времени и привычными настройками владельца; не меняйте часы специально ради исчезновения предупреждения. Сохраните исходную ошибку. Если время верно либо сообщение остаётся, обратитесь к владельцу сайта или администратору устройства. Не обходите защиту, не устанавливайте неизвестный сертификат и не стирайте сохранённые данные браузера."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальное руководство Chrome",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделите вопрос о заказе",
+          "paragraphs": [
+            "Когда привычный доверенный доступ снова работает нормально, уточните, относится ли заказ IPTV Subscription к Opplex или Filex, его срок и записанное состояние. Предупреждение не доказывает неудачный платёж или необходимость продления. Отдельно учитывайте возможную платную лицензию плеера и уточняйте неуказанный лимит Filex. Передайте код, устройство и время без паролей и закрытых ссылок; не повторяйте платёж ради проверки часов."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی گھڑی کی تنبیہ: سرٹیفکیٹ کی تاریخ دیکھیں",
+      "excerpt": "Chrome کی گھڑی کی تنبیہ سروس کی میعاد سے الگ ہے۔ تحفظ نظرانداز کیے یا ادائیگی دہرائے بغیر اصل پیغام اور آلے کی تاریخ دیکھیں۔",
+      "seo_title": "IPTV Subscription کی گھڑی کی تنبیہ: سرٹیفکیٹ کی تاریخ دیکھیں",
+      "seo_description": "Chrome کی گھڑی کی تنبیہ سروس کی میعاد سے الگ ہے۔ تحفظ نظرانداز کیے یا ادائیگی دہرائے بغیر اصل پیغام اور آلے کی تاریخ دیکھیں۔",
+      "sections": [
+        {
+          "heading": "اصل تنبیہ پڑھیں",
+          "paragraphs": [
+            "براؤزر پلان کھولنے کے بجائے تنبیہ دکھائے تو دوبارہ آرڈر سے پہلے اس کا متن لکھیں۔ IPTV Subscription کی گھڑی کی تنبیہ سروس کی میعاد ختم ہونے کا پیغام نہیں۔ Google، NET::ERR_CERT_DATE_INVALID کو گھڑی آگے یا پیچھے ہونے والے پیغامات کے ساتھ بیان کرتا ہے؛ آلے کی غلط تاریخ یا وقت اس کی وجہ ہو سکتے ہیں۔ یہ ایک بیان کردہ امکان ہے، ہر سرٹیفکیٹ تنبیہ کی وجہ نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آلے کی گھڑی کا موازنہ کریں",
+          "paragraphs": [
+            "معمول کی گھڑی یا تاریخ و وقت کی اسکرین کھول کر درستگی دیکھیں۔ معتبر وقت اور مالک کی معمول کی ترتیبات استعمال کریں؛ تنبیہ چھپانے کے لیے جان بوجھ کر وقت نہ بدلیں۔ اصل خطا محفوظ رکھیں۔ وقت درست ہو یا تنبیہ باقی رہے تو ویب سائٹ کے مالک یا آلے کے منتظم سے رابطہ کریں۔ نہ تحفظ نظرانداز کریں، نہ نامعلوم سرٹیفکیٹ نصب کریں، اور نہ براؤزر کا محفوظ ڈیٹا مٹائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome کی سرکاری خطا رہنمائی",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "آرڈر کا سوال الگ رکھیں",
+          "paragraphs": [
+            "قابل اعتماد معمول کا رسائی راستہ درست چلنے پر دیکھیں کہ IPTV Subscription کا آرڈر Opplex ہے یا Filex، مدت اور درج حالت کیا ہے۔ تنبیہ ادائیگی ناکام ہونے یا تجدید کی ضرورت ثابت نہیں کرتی۔ پلیئر کی ممکنہ الگ لائسنس فیس الگ رکھیں اور Filex کی غیر درج کنکشن حد پوچھیں۔ معاونت کو کوڈ، آلہ اور دیکھا ہوا وقت دیں، پاس ورڈ یا نجی آرڈر روابط نہیں؛ گھڑی آزمانے کے لیے ادائیگی دوبارہ نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تحذير ساعة IPTV Subscription: افهم خطأ تاريخ الشهادة",
+      "excerpt": "تحذير ساعة Chrome مختلف عن انتهاء خدمة المشاهدة. افحص الرسالة وتاريخ الجهاز دون تجاوز الحماية أو تكرار الدفع.",
+      "seo_title": "تحذير ساعة IPTV Subscription: افهم خطأ تاريخ الشهادة",
+      "seo_description": "تحذير ساعة Chrome مختلف عن انتهاء خدمة المشاهدة. افحص الرسالة وتاريخ الجهاز دون تجاوز الحماية أو تكرار الدفع.",
+      "sections": [
+        {
+          "heading": "اقرأ التحذير بدقة",
+          "paragraphs": [
+            "إذا عرض المتصفح تحذيراً بدلاً من صفحة الخطة، دوّن الرسالة قبل طلب جديد. تحذير الساعة أثناء استخدام IPTV Subscription ليس إشعار انتهاء الخدمة. تربط Google الرمز NET::ERR_CERT_DATE_INVALID برسائل تقدّم الساعة أو تأخرها؛ وقد يسببه تاريخ أو وقت غير صحيحين في الجهاز. هذا احتمال موثق، وليس تفسيراً لكل تحذير شهادة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن ساعة الجهاز",
+          "paragraphs": [
+            "افتح الساعة المعتادة أو شاشة التاريخ والوقت وتحقق من القيم. استخدم مرجع وقت موثوقاً وإعدادات المالك المعتادة؛ لا تغيّر الساعة عمداً لإخفاء التحذير. احتفظ بالخطأ الأصلي. إذا كان الوقت صحيحاً أو استمر التحذير، فاتصل بمالك الموقع أو مسؤول الجهاز. لا تتجاوز الحماية، ولا تثبّت شهادة مجهولة، ولا تمسح بيانات المتصفح المحفوظة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل أخطاء Chrome الرسمي",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل سؤال الطلب",
+          "paragraphs": [
+            "عندما يعمل مسار وصولك المعتاد والموثوق طبيعياً، تحقق هل طلب IPTV Subscription هو Opplex أم Filex ومدته وحالته المسجلة. التحذير لا يثبت فشل الدفع أو ضرورة التجديد. افصل تكلفة ترخيص المشغّل المحتملة واسأل عن حد اتصالات Filex غير المذكور. أعط الدعم الرمز والجهاز والوقت دون كلمات مرور أو روابط طلب خاصة؛ لا تكرر الدفع لاختبار الساعة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription घड़ी की चेतावनी: प्रमाणपत्र की तारीख जाँचें",
+      "excerpt": "Chrome की घड़ी की चेतावनी सेवा की समाप्ति से अलग है। सुरक्षा को पार किए या भुगतान दोहराए बिना संदेश और डिवाइस की तारीख जाँचें।",
+      "seo_title": "IPTV Subscription घड़ी की चेतावनी: प्रमाणपत्र की तारीख जाँचें",
+      "seo_description": "Chrome की घड़ी की चेतावनी सेवा की समाप्ति से अलग है। सुरक्षा को पार किए या भुगतान दोहराए बिना संदेश और डिवाइस की तारीख जाँचें।",
+      "sections": [
+        {
+          "heading": "ठीक चेतावनी पढ़ें",
+          "paragraphs": [
+            "ब्राउज़र प्लान पेज की जगह चेतावनी दिखाए तो दोबारा ऑर्डर से पहले उसका पाठ लिखें। IPTV Subscription की घड़ी की चेतावनी सेवा समाप्त होने का संदेश नहीं है। Google, NET::ERR_CERT_DATE_INVALID को घड़ी आगे या पीछे होने वाले संदेशों के साथ रखता है; गलत तारीख या समय इसका कारण हो सकते हैं। यह एक दर्ज संभावना है, हर प्रमाणपत्र चेतावनी का कारण नहीं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "डिवाइस की घड़ी मिलाएँ",
+          "paragraphs": [
+            "सामान्य घड़ी या तारीख और समय की स्क्रीन खोलकर सही मान जाँचें। भरोसेमंद समय स्रोत और मालिक की सामान्य सेटिंग अपनाएँ; चेतावनी छिपाने के लिए जानबूझकर समय न बदलें। मूल त्रुटि बनाए रखें। समय सही हो या चेतावनी रहे तो वेबसाइट मालिक या डिवाइस प्रशासक से पूछें। न सुरक्षा पार करें, न अनजान प्रमाणपत्र इंस्टॉल करें और न ब्राउज़र का सहेजा डेटा मिटाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Chrome की आधिकारिक त्रुटि मार्गदर्शिका",
+              "url": "https://support.google.com/chrome/answer/95669?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "ऑर्डर का सवाल अलग रखें",
+          "paragraphs": [
+            "अपना सामान्य भरोसेमंद पहुँच तरीका सही चलने पर जाँचें कि IPTV Subscription ऑर्डर Opplex है या Filex, अवधि और दर्ज स्थिति क्या है। चेतावनी भुगतान विफल होने या नवीनीकरण की जरूरत साबित नहीं करती। प्लेयर के संभावित अलग लाइसेंस शुल्क को अलग रखें और Filex की अनबताई कनेक्शन सीमा पूछें। सहायता को कोड, डिवाइस और देखा समय दें, पासवर्ड या निजी ऑर्डर लिंक नहीं; घड़ी जाँचने के लिए भुगतान दोबारा न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: clock and certificate-date errors",
+      "url": "https://support.google.com/chrome/answer/95669?hl=en"
+    }
+  ]
+}

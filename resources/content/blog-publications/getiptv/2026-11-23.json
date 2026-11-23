@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-23",
+  "topic": "Inspect Google TV held-key repeat delay with harmless text separately from repeated presses, player navigation faults and Get IPTV Opplex or Filex access.",
+  "primary_keyword": "Get IPTV key repeat delay",
+  "slug": "getiptv-key-repeat-delay-held-key-or-separate-presses",
+  "translations": {
+    "en": {
+      "title": "Get IPTV key repeat delay: a held key or separate presses?",
+      "excerpt": "Repeated letters need a different check from a frozen programme. Read Google TV’s held-key delay using harmless text and keep player access separate.",
+      "seo_title": "Get IPTV key repeat delay: a held key or separate presses?",
+      "seo_description": "Repeated letters need a different check from a frozen programme. Read Google TV’s held-key delay using harmless text and keep player access separate.",
+      "sections": [
+        {
+          "heading": "Describe the repeated input",
+          "paragraphs": [
+            "If a search field fills with repeated letters, first note whether you held one remote key down or pressed it several times. A Get IPTV key repeat delay check concerns that input pattern, not the number of viewing sessions. Compare a harmless search word on Google TV and inside the intended player, where a text field exists. Never use a password, payment field or private playlist address as test text."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the documented delay setting",
+          "paragraphs": [
+            "Google documents Settings, Accessibility, then Key repeat delay on Google TV. The option adjusts the delay before repeated characters appear while a key is held. Read the current value and use the control actually offered by your equipment. If the owner wants a comparison, change only that supported delay, repeat the same harmless input once and restore the original value if it does not help. Preserve other accessibility preferences; labels and effects can differ between devices and apps."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Official Google TV accessibility guide",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separate input from service access",
+          "paragraphs": [
+            "Record whether the repeat occurs on Home, only inside the player or only with a held key. This does not prove that firmware, a subscription or a programme is faulty. Do not erase pairing or player data for this first check. Confirm the actual Opplex or Filex service and Get IPTV order/setup state separately. A player licence can cost extra; ask about an unstated Filex connection allowance. Share device, player and input observations without private account details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Retardo de repetición en Get IPTV: ¿tecla mantenida o varias pulsaciones?",
+      "excerpt": "Las letras repetidas requieren otra comprobación que un programa congelado. Revisa el retardo de Google TV con texto inocuo y separa el acceso del reproductor.",
+      "seo_title": "Retardo de repetición en Get IPTV: ¿tecla mantenida o varias pulsaciones?",
+      "seo_description": "Las letras repetidas requieren otra comprobación que un programa congelado. Revisa el retardo de Google TV con texto inocuo y separa el acceso del reproductor.",
+      "sections": [
+        {
+          "heading": "Describe la entrada repetida",
+          "paragraphs": [
+            "Si un campo de búsqueda se llena de letras repetidas, anota si mantuviste una tecla del mando o la pulsaste varias veces. La revisión del retardo en Get IPTV trata ese patrón de entrada, no el número de sesiones permitidas. Compara una palabra de búsqueda inocua en Google TV y dentro del reproductor, si hay campo de texto. Nunca uses contraseñas, campos de pago ni direcciones privadas de listas como prueba."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el ajuste documentado",
+          "paragraphs": [
+            "Google documenta Ajustes, Accesibilidad y Retardo de repetición de teclas en Google TV. Esta opción controla cuánto tarda en repetirse un carácter al mantener una tecla. Lee el valor actual y usa el control que realmente ofrezca tu equipo. Si el propietario desea comparar, cambia solo ese retardo, repite una vez la misma entrada inocua y restablece el valor original si no ayuda. Conserva las demás preferencias de accesibilidad; nombres y efectos pueden variar por aparato y aplicación."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía oficial de accesibilidad de Google TV",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa entrada y acceso al servicio",
+          "paragraphs": [
+            "Anota si la repetición ocurre en Inicio, solo en el reproductor o únicamente al mantener la tecla. No demuestra un fallo del firmware, del abono ni del programa. No borres el emparejamiento o los datos del reproductor para esta primera comprobación. Confirma aparte el servicio Opplex o Filex y el estado del pedido y configuración Get IPTV. La licencia del reproductor puede costar aparte; pregunta por un límite Filex no indicado. Comunica aparato, reproductor y observaciones sin datos privados."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Délai de répétition Get IPTV : touche maintenue ou pressions distinctes ?",
+      "excerpt": "Des lettres répétées demandent un autre contrôle qu’un programme figé. Lisez le délai Google TV avec un texte anodin et séparez l’accès au lecteur.",
+      "seo_title": "Délai de répétition Get IPTV : touche maintenue ou pressions distinctes ?",
+      "seo_description": "Des lettres répétées demandent un autre contrôle qu’un programme figé. Lisez le délai Google TV avec un texte anodin et séparez l’accès au lecteur.",
+      "sections": [
+        {
+          "heading": "Décrire la saisie répétée",
+          "paragraphs": [
+            "Si un champ de recherche se remplit de lettres répétées, notez si vous mainteniez une touche de la télécommande ou appuyiez plusieurs fois. Le contrôle du délai Get IPTV concerne cette saisie, pas le nombre de sessions autorisées. Comparez un mot anodin sur Google TV et dans le lecteur, lorsqu’un champ existe. N’utilisez jamais de mot de passe, de champ de paiement ou d’adresse privée de liste pour le test."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le réglage documenté",
+          "paragraphs": [
+            "Google indique Paramètres, Accessibilité, puis Délai de répétition des touches sur Google TV. L’option règle le délai avant la répétition des caractères quand une touche reste enfoncée. Lisez la valeur actuelle et utilisez le contrôle réellement proposé par l’appareil. Si le propriétaire souhaite comparer, changez seulement ce délai, répétez une fois la même saisie anodine et rétablissez la valeur initiale si rien ne s’améliore. Conservez les autres préférences d’accessibilité ; intitulés et effets varient selon appareils et applications."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide officiel d’accessibilité Google TV",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer saisie et accès au service",
+          "paragraphs": [
+            "Précisez si la répétition survient sur l’accueil, seulement dans le lecteur ou uniquement avec une touche maintenue. Cela ne prouve pas un défaut du micrologiciel, de l’abonnement ou du programme. N’effacez ni appairage ni données du lecteur pour ce premier contrôle. Confirmez séparément le service Opplex ou Filex et l’état de commande/configuration Get IPTV. Une licence de lecteur peut coûter en plus ; demandez toute limite Filex non précisée. Transmettez appareil, lecteur et observations sans données privées."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ritardo di ripetizione Get IPTV: tasto premuto o pressioni separate?",
+      "excerpt": "Le lettere ripetute richiedono una verifica diversa da un programma bloccato. Leggi il ritardo di Google TV con testo innocuo e separa l’accesso del lettore.",
+      "seo_title": "Ritardo di ripetizione Get IPTV: tasto premuto o pressioni separate?",
+      "seo_description": "Le lettere ripetute richiedono una verifica diversa da un programma bloccato. Leggi il ritardo di Google TV con testo innocuo e separa l’accesso del lettore.",
+      "sections": [
+        {
+          "heading": "Descrivi l’immissione ripetuta",
+          "paragraphs": [
+            "Se una ricerca si riempie di lettere ripetute, annota se tenevi premuto un tasto del telecomando o lo premevi più volte. La verifica del ritardo Get IPTV riguarda l’immissione, non il numero di sessioni consentite. Confronta una parola innocua su Google TV e nel lettore, dove esiste un campo di testo. Non usare mai password, campi di pagamento o indirizzi privati di playlist come testo di prova."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’impostazione documentata",
+          "paragraphs": [
+            "Google indica Impostazioni, Accessibilità e Ritardo di ripetizione dei tasti su Google TV. L’opzione regola il tempo prima che i caratteri si ripetano tenendo premuto un tasto. Leggi il valore attuale e usa il comando realmente disponibile sul dispositivo. Se il proprietario vuole confrontare, cambia solo quel ritardo, ripeti una volta lo stesso testo innocuo e ripristina il valore originale se non aiuta. Conserva le altre preferenze di accessibilità; nomi ed effetti possono variare fra dispositivi e app."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida ufficiale all’accessibilità Google TV",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa immissione e accesso al servizio",
+          "paragraphs": [
+            "Annota se la ripetizione avviene nella schermata Home, solo nel lettore o soltanto tenendo premuto il tasto. Non dimostra guasti a firmware, abbonamento o programma. Non cancellare associazioni o dati del lettore per questa prima verifica. Conferma separatamente servizio Opplex o Filex e stato di ordine e configurazione Get IPTV. La licenza del lettore può costare a parte; chiedi la quota Filex non dichiarata. Comunica dispositivo, lettore e osservazioni senza dati privati dell’account."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-toetsherhaalvertraging: vasthouden of losse drukken?",
+      "excerpt": "Herhaalde letters vragen een andere controle dan een vastgelopen programma. Lees Google TV’s vertraging met onschuldige tekst en houd spelertoegang apart.",
+      "seo_title": "Get IPTV-toetsherhaalvertraging: vasthouden of losse drukken?",
+      "seo_description": "Herhaalde letters vragen een andere controle dan een vastgelopen programma. Lees Google TV’s vertraging met onschuldige tekst en houd spelertoegang apart.",
+      "sections": [
+        {
+          "heading": "Beschrijf de herhaalde invoer",
+          "paragraphs": [
+            "Loopt een zoekvak vol met herhaalde letters, noteer dan of je één afstandsbedieningstoets vasthield of herhaaldelijk indrukte. Een Get IPTV-toetsherhaalcontrole betreft dat invoerpatroon, niet het aantal toegestane kijksessies. Vergelijk een onschuldig zoekwoord op Google TV en in de speler, waar een tekstvak bestaat. Gebruik nooit een wachtwoord, betaalveld of privéplaylistadres als testtekst."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de gedocumenteerde vertraging",
+          "paragraphs": [
+            "Google beschrijft Instellingen, Toegankelijkheid en Toetsherhaalvertraging op Google TV. Daarmee stel je in hoe lang het duurt voordat tekens worden herhaald bij een ingedrukte toets. Lees de huidige waarde en gebruik de optie die je apparaat werkelijk biedt. Wil de eigenaar vergelijken, verander dan alleen die vertraging, herhaal eenmaal dezelfde onschuldige invoer en herstel de oude waarde als het niet helpt. Behoud andere toegankelijkheidsvoorkeuren; namen en effecten kunnen per apparaat en app verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Officiële Google TV-toegankelijkheidsgids",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid invoer van diensttoegang",
+          "paragraphs": [
+            "Noteer of herhaling op Home, alleen in de speler of uitsluitend bij vasthouden voorkomt. Dat bewijst geen fout in firmware, abonnement of programma. Wis voor deze eerste controle geen koppeling of spelergegevens. Controleer de daadwerkelijke Opplex- of Filex-dienst en Get IPTV-bestel-/installatiestatus apart. Een spelerlicentie kan extra kosten; vraag naar een niet-vermelde Filex-limiet. Deel apparaat, speler en invoerwaarnemingen zonder privéaccountgegevens."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atraso de repetição Get IPTV: tecla segurada ou toques separados?",
+      "excerpt": "Letras repetidas pedem uma verificação diferente de um programa travado. Leia o atraso do Google TV com texto inofensivo e separe o acesso do reprodutor.",
+      "seo_title": "Atraso de repetição Get IPTV: tecla segurada ou toques separados?",
+      "seo_description": "Letras repetidas pedem uma verificação diferente de um programa travado. Leia o atraso do Google TV com texto inofensivo e separe o acesso do reprodutor.",
+      "sections": [
+        {
+          "heading": "Descreva a entrada repetida",
+          "paragraphs": [
+            "Se uma busca fica cheia de letras repetidas, anote se manteve uma tecla do controle pressionada ou tocou várias vezes. A verificação do atraso Get IPTV trata desse padrão de entrada, não do número de sessões permitidas. Compare uma palavra inofensiva no Google TV e dentro do reprodutor, onde houver campo de texto. Nunca use senha, campo de pagamento ou endereço privado de lista como teste."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o ajuste documentado",
+          "paragraphs": [
+            "O Google documenta Configurações, Acessibilidade e Atraso de repetição de teclas no Google TV. A opção ajusta a espera até os caracteres se repetirem com uma tecla segurada. Leia o valor atual e use o controle realmente oferecido pelo aparelho. Se o proprietário quiser comparar, altere só esse atraso, repita uma vez a mesma entrada inofensiva e restaure o valor original se não ajudar. Preserve outras preferências de acessibilidade; nomes e efeitos variam entre aparelhos e aplicativos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia oficial de acessibilidade do Google TV",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe entrada e acesso ao serviço",
+          "paragraphs": [
+            "Registre se a repetição ocorre na tela inicial, só no reprodutor ou apenas com a tecla segurada. Isso não comprova defeito de firmware, assinatura ou programa. Não apague pareamento ou dados do reprodutor nesta primeira verificação. Confirme separadamente serviço Opplex ou Filex e estado do pedido/configuração Get IPTV. A licença do reprodutor pode custar à parte; pergunte por limite Filex não informado. Envie aparelho, reprodutor e observações sem dados privados da conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Задержка повтора Get IPTV: удержание кнопки или отдельные нажатия?",
+      "excerpt": "Повтор букв требует другой проверки, чем зависшая передача. Посмотрите задержку Google TV на безобидном тексте и отдельно проверяйте доступ плеера.",
+      "seo_title": "Задержка повтора Get IPTV: удержание кнопки или отдельные нажатия?",
+      "seo_description": "Повтор букв требует другой проверки, чем зависшая передача. Посмотрите задержку Google TV на безобидном тексте и отдельно проверяйте доступ плеера.",
+      "sections": [
+        {
+          "heading": "Опишите повторяющийся ввод",
+          "paragraphs": [
+            "Если строка поиска заполняется повторяющимися буквами, отметьте, удерживали ли вы одну кнопку пульта или нажимали её несколько раз. Проверка задержки Get IPTV касается способа ввода, а не числа разрешённых сеансов. Сравните безобидное слово в Google TV и внутри плеера, если там есть текстовое поле. Никогда не проверяйте ввод паролем, платёжным полем или закрытым адресом плейлиста."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте настройку задержки",
+          "paragraphs": [
+            "Google описывает путь Настройки, Специальные возможности, Задержка повтора клавиш на Google TV. Параметр меняет паузу перед повторением символов при удержании кнопки. Запишите текущее значение и используйте реально доступный элемент. Если владелец хочет сравнить, измените только эту задержку, один раз повторите тот же безобидный ввод и верните исходное значение, если улучшения нет. Сохраните другие специальные настройки; названия и результат могут различаться между устройствами и приложениями."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Официальное руководство специальных возможностей Google TV",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделите ввод от доступа к услуге",
+          "paragraphs": [
+            "Укажите, возникает ли повтор на главном экране, только в плеере или лишь при удержании. Это не доказывает неисправность прошивки, подписки или передачи. Для первой проверки не стирайте сопряжение и данные плеера. Отдельно уточняйте услугу Opplex либо Filex и состояние заказа/настройки Get IPTV. Лицензия плеера может оплачиваться отдельно; спросите о неуказанном лимите Filex. Передайте устройство, плеер и наблюдения без закрытых данных аккаунта."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV میں بٹن دہرانے کی تاخیر: دبائے رکھا یا الگ دبایا؟",
+      "excerpt": "دہرائے گئے حروف کی جانچ رکے ہوئے پروگرام سے الگ ہے۔ بے ضرر متن کے ساتھ Google TV کی تاخیر دیکھیں اور پلیئر کی رسائی الگ رکھیں۔",
+      "seo_title": "Get IPTV میں بٹن دہرانے کی تاخیر: دبائے رکھا یا الگ دبایا؟",
+      "seo_description": "دہرائے گئے حروف کی جانچ رکے ہوئے پروگرام سے الگ ہے۔ بے ضرر متن کے ساتھ Google TV کی تاخیر دیکھیں اور پلیئر کی رسائی الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "دہرائی گئی تحریر بیان کریں",
+          "paragraphs": [
+            "تلاش کے خانے میں حروف بار بار آئیں تو پہلے نوٹ کریں کہ ریموٹ کا ایک بٹن دبائے رکھا یا کئی بار دبایا تھا۔ Get IPTV کی بٹن دہرانے کی تاخیر کی جانچ اس طریقۂ تحریر سے متعلق ہے، دیکھنے والے سیشن کی تعداد سے نہیں۔ Google TV اور، جہاں متن کا خانہ ہو، مطلوبہ پلیئر میں بے ضرر لفظ کا موازنہ کریں۔ پاس ورڈ، ادائیگی کا خانہ یا نجی پلے لسٹ پتہ کبھی آزمائشی متن نہ بنائیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "بیان کردہ تاخیر پڑھیں",
+          "paragraphs": [
+            "Google، Google TV میں ترتیبات، رسائی پذیری اور بٹن دہرانے کی تاخیر کا راستہ بیان کرتا ہے۔ بٹن دبائے رکھنے پر حروف دہرائے جانے سے پہلے کا وقفہ یہ اختیار بدلتا ہے۔ موجودہ قدر نوٹ کریں اور صرف آلے میں واقعی موجود کنٹرول استعمال کریں۔ مالک موازنہ چاہے تو صرف یہی تاخیر بدلیں، وہی بے ضرر متن ایک بار آزمائیں اور فائدہ نہ ہو تو اصل قدر بحال کریں۔ دوسری رسائی پذیری کی ترجیحات محفوظ رکھیں؛ نام اور اثرات آلے یا ایپ کے لحاظ سے بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV کی سرکاری رسائی پذیری رہنمائی",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تحریر اور سروس کی رسائی الگ رکھیں",
+          "paragraphs": [
+            "لکھیں کہ تکرار ہوم پر، صرف پلیئر میں یا صرف بٹن دبائے رکھنے پر ہوتی ہے۔ یہ فرم ویئر، رکنیت یا پروگرام کی خرابی ثابت نہیں کرتی۔ ابتدائی جانچ میں نہ محفوظ جوڑی مٹائیں اور نہ پلیئر کا ڈیٹا۔ اصل Opplex یا Filex سروس اور Get IPTV آرڈر و ترتیب کی حالت الگ دیکھیں۔ پلیئر لائسنس کی الگ قیمت ہو سکتی ہے؛ Filex کی غیر درج کنکشن حد پوچھیں۔ معاونت کو آلہ، پلیئر اور تحریر کا مشاہدہ دیں، نجی اکاؤنٹ تفصیلات نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأخير تكرار المفاتيح في Get IPTV: ضغط مطوّل أم ضغطات منفصلة؟",
+      "excerpt": "تكرار الحروف يحتاج فحصاً مختلفاً عن توقف البرنامج. اقرأ تأخير Google TV بنص غير حساس وافصل ذلك عن وصول المشغّل.",
+      "seo_title": "تأخير تكرار المفاتيح في Get IPTV: ضغط مطوّل أم ضغطات منفصلة؟",
+      "seo_description": "تكرار الحروف يحتاج فحصاً مختلفاً عن توقف البرنامج. اقرأ تأخير Google TV بنص غير حساس وافصل ذلك عن وصول المشغّل.",
+      "sections": [
+        {
+          "heading": "صِف الإدخال المتكرر",
+          "paragraphs": [
+            "إذا امتلأ حقل البحث بحروف متكررة، فلاحظ هل أبقيت زر الريموت مضغوطاً أم ضغطته مرات منفصلة. فحص تأخير التكرار في Get IPTV يتعلق بنمط الإدخال لا بعدد جلسات المشاهدة المسموح بها. قارن كلمة غير حساسة على Google TV وداخل المشغّل عندما يتوفر حقل نص. لا تستخدم كلمة مرور أو حقل دفع أو عنوان قائمة تشغيل خاصاً للاختبار مطلقاً."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ التأخير الموثق",
+          "paragraphs": [
+            "توثّق Google مسار الإعدادات ثم تسهيل الاستخدام ثم تأخير تكرار المفاتيح على Google TV. يضبط الخيار المدة قبل تكرار الحروف عند إبقاء الزر مضغوطاً. اقرأ القيمة الحالية واستخدم التحكم الموجود فعلاً في جهازك. إذا أراد المالك المقارنة فغيّر هذا التأخير وحده، وكرر النص غير الحساس مرة واحدة، وأعد القيمة الأصلية إن لم يتحسن الوضع. احتفظ بتفضيلات تسهيل الاستخدام الأخرى؛ الأسماء والتأثير قد يختلفان حسب الجهاز والتطبيق."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل تسهيل الاستخدام الرسمي من Google TV",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الإدخال عن وصول الخدمة",
+          "paragraphs": [
+            "دوّن هل يحدث التكرار على الشاشة الرئيسية أم داخل المشغّل فقط أم عند الضغط المطوّل فقط. لا يثبت ذلك خللاً في البرنامج الثابت أو الاشتراك أو المحتوى. لا تمسح الاقتران أو بيانات المشغّل لهذا الفحص الأول. تحقق منفصلاً من خدمة Opplex أو Filex الفعلية وحالة طلب وإعداد Get IPTV. قد يكون ترخيص المشغّل بتكلفة إضافية؛ اسأل عن حد اتصالات Filex غير المذكور. أعط الدعم الجهاز والمشغّل والملاحظات دون تفاصيل حساب خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV की कुंजी दोहराव देरी: बटन दबाए रखा या अलग दबाया?",
+      "excerpt": "दोहराए अक्षरों की जाँच रुके कार्यक्रम से अलग है। सामान्य पाठ से Google TV की दबाए-बटन देरी देखें और प्लेयर की पहुँच अलग रखें।",
+      "seo_title": "Get IPTV की कुंजी दोहराव देरी: बटन दबाए रखा या अलग दबाया?",
+      "seo_description": "दोहराए अक्षरों की जाँच रुके कार्यक्रम से अलग है। सामान्य पाठ से Google TV की दबाए-बटन देरी देखें और प्लेयर की पहुँच अलग रखें।",
+      "sections": [
+        {
+          "heading": "दोहराए इनपुट का वर्णन करें",
+          "paragraphs": [
+            "खोज के खाने में अक्षर बार-बार आएँ तो पहले लिखें कि रिमोट का एक बटन दबाए रखा था या कई बार दबाया था। Get IPTV की कुंजी दोहराव देरी की जाँच उस इनपुट तरीके की है, देखने वाले सत्रों की संख्या की नहीं। Google TV और, जहाँ पाठ का खाना हो, चाहे गए प्लेयर में एक साधारण शब्द की तुलना करें। पासवर्ड, भुगतान का खाना या निजी प्लेलिस्ट पता कभी परीक्षण पाठ न बनाएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दर्ज देरी सेटिंग पढ़ें",
+          "paragraphs": [
+            "Google, Google TV में सेटिंग, सुलभता और कुंजी दोहराव देरी का रास्ता बताता है। बटन दबाए रखने पर अक्षर दोहरने से पहले की प्रतीक्षा यह विकल्प बदलता है। वर्तमान मान लिखें और केवल डिवाइस पर उपलब्ध नियंत्रण अपनाएँ। मालिक तुलना चाहे तो केवल वही देरी बदलें, वही सामान्य पाठ एक बार दोहराएँ और मदद न मिले तो मूल मान बहाल करें। दूसरी सुलभता पसंदें बनाए रखें; नाम और असर डिवाइस तथा ऐप के अनुसार अलग हो सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV की आधिकारिक सुलभता मार्गदर्शिका",
+              "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "इनपुट और सेवा की पहुँच अलग रखें",
+          "paragraphs": [
+            "लिखें कि दोहराव होम पर, केवल प्लेयर में या सिर्फ बटन दबाए रखने पर होता है। यह फर्मवेयर, सदस्यता या कार्यक्रम की खराबी साबित नहीं करता। शुरुआती जाँच में न सहेजी पेयरिंग मिटाएँ और न प्लेयर का डेटा। असल Opplex या Filex सेवा तथा Get IPTV ऑर्डर और सेटअप की स्थिति अलग जाँचें। प्लेयर लाइसेंस का अलग शुल्क हो सकता है; Filex की अनबताई कनेक्शन सीमा पूछें। सहायता को डिवाइस, प्लेयर और इनपुट के अवलोकन दें, निजी खाता विवरण नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: key repeat delay and accessibility controls",
+      "url": "https://support.google.com/googletv/answer/10070337?hl=en"
+    }
+  ]
+}

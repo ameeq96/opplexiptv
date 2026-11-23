@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-23",
+  "topic": "Compare VLC for Android single-line title ellipsis display choices separately from a renamed file, missing Trex IPTV provider entry or changed viewing access.",
+  "primary_keyword": "Trex IPTV title display",
+  "slug": "trex-title-display-read-the-ellipsis",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV title display: an ellipsis is not a removed item",
+      "excerpt": "Check how VLC shortens a long media label before treating it as a missing programme. Compare one title-display option while keeping the underlying item intact.",
+      "seo_title": "Trex IPTV title display: an ellipsis is not a removed item",
+      "seo_description": "Check how VLC shortens a long media label before treating it as a missing programme. Compare one title-display option while keeping the underlying item intact.",
+      "sections": [
+        {
+          "heading": "Identify what is shortened",
+          "paragraphs": [
+            "When a Trex IPTV title display ends in dots, first identify the player and the screen. Is an item still visible with a shortened label, or is it absent from the list altogether? VideoLAN documents a VLC for Android setting that controls how long media titles are shortened in Browse view. An ellipsis in that interface does not by itself establish that a provider entry disappeared or that access expired."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare the documented title setting",
+          "paragraphs": [
+            "In the documented Interface settings, read Single line list title ellipsize and note the current choice. VideoLAN lists options including Left, Right, Middle and Marquee, with Default using the marquee behaviour. Compare one offered display option using the same long, permitted media title, then restore the earlier choice if it is unhelpful. Names and availability can vary by version. This VLC preference is not a universal Fire TV remote shortcut, and changing a displayed label does not rename the underlying file."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Report the actual missing information",
+          "paragraphs": [
+            "Read available item information, where provided, before deciding that two shortened labels identify the same video. If another player or a provider list is involved, use its own documented controls. Do not rename files, grant wider storage permissions or delete a library for this comparison. Trex IPTV 8K permits one simultaneous connection; keep any viewing check within that allowance. Report the player, version and shortened label without private playback addresses or credentials."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Títulos en Trex IPTV: los puntos no indican un elemento eliminado",
+      "excerpt": "Comprueba cómo acorta VLC una etiqueta larga antes de dar un programa por perdido. Compara una opción visual sin modificar el elemento original.",
+      "seo_title": "Títulos en Trex IPTV: los puntos no indican un elemento eliminado",
+      "seo_description": "Comprueba cómo acorta VLC una etiqueta larga antes de dar un programa por perdido. Compara una opción visual sin modificar el elemento original.",
+      "sections": [
+        {
+          "heading": "Identifica qué se ha acortado",
+          "paragraphs": [
+            "Si un título de Trex IPTV termina en puntos, identifica primero el reproductor y la pantalla. ¿El elemento sigue visible con un nombre abreviado o falta por completo? VideoLAN documenta un ajuste de VLC para Android que determina cómo se acortan los títulos largos en la vista de exploración. Unos puntos suspensivos no demuestran por sí solos que haya desaparecido una entrada del proveedor o caducado el acceso."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara la opción documentada",
+          "paragraphs": [
+            "En los ajustes de Interfaz documentados, lee la opción que abrevia títulos de una sola línea y anota el valor actual. VideoLAN enumera izquierda, derecha, centro y desplazamiento; el valor predeterminado usa desplazamiento. Compara una opción disponible con el mismo título largo de un contenido permitido y restaura la anterior si no ayuda. Nombres y disponibilidad varían según la versión. Esta preferencia de VLC no es un atajo universal de Fire TV ni cambia el nombre del archivo original."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comunica la información que falta",
+          "paragraphs": [
+            "Lee la información del elemento cuando exista antes de concluir que dos etiquetas abreviadas identifican el mismo vídeo. Para otro reproductor o una lista del proveedor, usa sus propios controles documentados. No renombres archivos, amplíes permisos de almacenamiento ni borres una biblioteca para comparar. Trex IPTV 8K permite una conexión simultánea; mantén cualquier prueba de reproducción dentro de ese límite. Indica reproductor, versión y etiqueta, sin direcciones privadas ni credenciales."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Titres Trex IPTV : des points ne signalent pas un élément supprimé",
+      "excerpt": "Vérifiez comment VLC abrège un long libellé avant de conclure à un programme manquant. Comparez une option d’affichage sans modifier l’élément.",
+      "seo_title": "Titres Trex IPTV : des points ne signalent pas un élément supprimé",
+      "seo_description": "Vérifiez comment VLC abrège un long libellé avant de conclure à un programme manquant. Comparez une option d’affichage sans modifier l’élément.",
+      "sections": [
+        {
+          "heading": "Identifiez ce qui est abrégé",
+          "paragraphs": [
+            "Lorsqu’un titre Trex IPTV se termine par des points, identifiez d’abord le lecteur et l’écran. L’élément reste-t-il visible sous un libellé abrégé ou manque-t-il entièrement ? VideoLAN documente un réglage de VLC pour Android qui détermine comment raccourcir les longs titres dans la vue de navigation. Des points de suspension ne prouvent seuls ni la disparition d’une entrée du fournisseur ni l’expiration de l’accès."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez le réglage documenté",
+          "paragraphs": [
+            "Dans les paramètres Interface décrits, repérez le réglage d’abréviation des titres sur une ligne et notez son état. VideoLAN propose notamment gauche, droite, milieu et défilement ; le choix par défaut utilise le défilement. Comparez une option disponible sur le même long titre d’un contenu autorisé, puis rétablissez l’ancien choix si cela n’aide pas. Les noms et options varient selon la version. Cette préférence VLC n’est pas un raccourci universel de Fire TV et ne renomme pas le fichier."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Précisez l’information manquante",
+          "paragraphs": [
+            "Lisez les informations de l’élément lorsqu’elles existent avant de considérer deux libellés abrégés comme le même fichier vidéo. Pour un autre lecteur ou une liste du fournisseur, utilisez ses propres commandes documentées. Ne renommez pas les fichiers, n’élargissez pas les autorisations de stockage et ne supprimez pas de médiathèque pour comparer. Trex IPTV 8K permet une connexion simultanée ; respectez cette limite pour toute lecture de contrôle. Indiquez lecteur, version et libellé sans adresse privée ni identifiants."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Titoli Trex IPTV: i puntini non indicano un elemento rimosso",
+      "excerpt": "Controlla come VLC abbrevia un nome lungo prima di considerare assente un programma. Confronta un’opzione visiva senza cambiare l’elemento originale.",
+      "seo_title": "Titoli Trex IPTV: i puntini non indicano un elemento rimosso",
+      "seo_description": "Controlla come VLC abbrevia un nome lungo prima di considerare assente un programma. Confronta un’opzione visiva senza cambiare l’elemento originale.",
+      "sections": [
+        {
+          "heading": "Riconosci ciò che è abbreviato",
+          "paragraphs": [
+            "Se un titolo Trex IPTV termina con puntini, identifica prima lettore e schermata. L’elemento è ancora visibile con un nome abbreviato oppure manca del tutto? VideoLAN documenta un’impostazione di VLC per Android che decide come accorciare i titoli lunghi nella vista di esplorazione. I puntini da soli non dimostrano che una voce del fornitore sia scomparsa o che l’accesso sia scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta l’opzione documentata",
+          "paragraphs": [
+            "Nelle impostazioni Interfaccia descritte, leggi l’opzione che abbrevia i titoli su una riga e annota la scelta attuale. VideoLAN elenca sinistra, destra, centro e scorrimento; il valore predefinito usa lo scorrimento. Confronta un’opzione disponibile con lo stesso lungo titolo di un contenuto consentito, poi ripristina la precedente se non aiuta. Nomi e disponibilità possono variare. Questa preferenza VLC non è una scorciatoia universale di Fire TV e non rinomina il file originale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Segnala l’informazione realmente mancante",
+          "paragraphs": [
+            "Leggi le informazioni dell’elemento, dove presenti, prima di concludere che due nomi abbreviati siano lo stesso video. Se usi un altro lettore o una lista del fornitore, segui i suoi controlli documentati. Non rinominare file, ampliare permessi di archiviazione o cancellare una libreria per confrontare. Trex IPTV 8K consente una connessione simultanea: rispettala in ogni verifica di riproduzione. Comunica lettore, versione e nome abbreviato senza indirizzi privati o credenziali."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-titels: puntjes betekenen niet dat een item is verwijderd",
+      "excerpt": "Bekijk hoe VLC een lange naam afkort voordat je een programma als ontbrekend beschouwt. Vergelijk één weergaveoptie zonder het oorspronkelijke item te wijzigen.",
+      "seo_title": "Trex IPTV-titels: puntjes betekenen niet dat een item is verwijderd",
+      "seo_description": "Bekijk hoe VLC een lange naam afkort voordat je een programma als ontbrekend beschouwt. Vergelijk één weergaveoptie zonder het oorspronkelijke item te wijzigen.",
+      "sections": [
+        {
+          "heading": "Bepaal wat er is afgekort",
+          "paragraphs": [
+            "Als een Trex IPTV-titel op puntjes eindigt, herken dan eerst de speler en het scherm. Staat het item er nog met een verkorte naam, of ontbreekt het volledig? VideoLAN beschrijft een VLC voor Android-instelling voor het afkorten van lange mediatitels in de bladerweergave. Een beletselteken bewijst op zichzelf niet dat een vermelding van de aanbieder verdwenen is of de toegang verlopen is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk de beschreven titeloptie",
+          "paragraphs": [
+            "Lees in de beschreven Interface-instellingen de optie voor het afkorten van titels op één regel en noteer de huidige keuze. VideoLAN noemt onder meer links, rechts, midden en lopende tekst; de standaardkeuze gebruikt lopende tekst. Vergelijk één aangeboden optie bij dezelfde lange titel van toegestane media en herstel de eerdere keuze als het niet helpt. Namen en beschikbaarheid verschillen per versie. Deze VLC-voorkeur is geen universele Fire TV-sneltoets en hernoemt het bestand niet."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Meld welke informatie echt ontbreekt",
+          "paragraphs": [
+            "Lees beschikbare iteminformatie voordat je twee afgekorte namen als dezelfde video beschouwt. Gebruik bij een andere speler of aanbiederlijst de eigen beschreven bediening. Hernoem geen bestanden, geef geen ruimere opslagrechten en wis geen bibliotheek voor deze vergelijking. Trex IPTV 8K staat één gelijktijdige verbinding toe; houd een kijkcontrole binnen die grens. Meld speler, versie en verkorte naam zonder privéafspeeladressen of inloggegevens."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Títulos no Trex IPTV: os pontos não significam um item removido",
+      "excerpt": "Veja como o VLC abrevia um nome longo antes de considerar um programa em falta. Compare uma opção visual sem alterar o elemento original.",
+      "seo_title": "Títulos no Trex IPTV: os pontos não significam um item removido",
+      "seo_description": "Veja como o VLC abrevia um nome longo antes de considerar um programa em falta. Compare uma opção visual sem alterar o elemento original.",
+      "sections": [
+        {
+          "heading": "Identifique o que está abreviado",
+          "paragraphs": [
+            "Se um título do Trex IPTV terminar em pontos, identifique primeiro o leitor e o ecrã. O elemento continua visível com um nome abreviado ou está completamente ausente? A VideoLAN documenta uma definição do VLC para Android que controla os títulos longos na vista de exploração. Reticências não provam, por si só, que uma entrada do fornecedor desapareceu ou que o acesso expirou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare a opção documentada",
+          "paragraphs": [
+            "Nas definições de Interface descritas, leia a opção de abreviação de títulos numa linha e anote a escolha atual. A VideoLAN enumera esquerda, direita, meio e deslocamento; a opção predefinida usa deslocamento. Compare uma opção disponível com o mesmo título longo de conteúdo permitido e reponha a anterior se não ajudar. Nomes e disponibilidade variam conforme a versão. Esta preferência do VLC não é um atalho universal do Fire TV e não muda o nome do ficheiro."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Descreva a informação em falta",
+          "paragraphs": [
+            "Leia as informações do elemento, quando existirem, antes de concluir que dois nomes abreviados representam o mesmo vídeo. Se usar outro leitor ou uma lista do fornecedor, siga os respetivos controlos documentados. Não renomeie ficheiros, alargue permissões de armazenamento nem apague uma biblioteca para comparar. O Trex IPTV 8K permite uma ligação simultânea; respeite esse limite em qualquer verificação de reprodução. Indique leitor, versão e nome abreviado sem endereços privados ou credenciais."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Названия Trex IPTV: многоточие не означает удаление элемента",
+      "excerpt": "Проверьте сокращение длинной подписи в VLC, прежде чем считать программу пропавшей. Сравните один вариант отображения без изменения самого элемента.",
+      "seo_title": "Названия Trex IPTV: многоточие не означает удаление элемента",
+      "seo_description": "Проверьте сокращение длинной подписи в VLC, прежде чем считать программу пропавшей. Сравните один вариант отображения без изменения самого элемента.",
+      "sections": [
+        {
+          "heading": "Определите, что сокращено",
+          "paragraphs": [
+            "Если название Trex IPTV заканчивается точками, сначала определите плеер и экран. Элемент виден с сокращённой подписью или полностью отсутствует? VideoLAN описывает настройку VLC для Android, управляющую сокращением длинных названий в режиме обзора. Само многоточие не доказывает исчезновение записи поставщика или окончание доступа."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сравните описанную настройку",
+          "paragraphs": [
+            "В описанном разделе интерфейса прочитайте настройку сокращения однострочных названий и запишите текущий выбор. VideoLAN перечисляет варианты слева, справа, посередине и бегущую строку; вариант по умолчанию использует бегущую строку. Сравните один доступный вариант на том же длинном названии разрешённого материала и верните прежний, если улучшения нет. Названия и доступность зависят от версии. Это настройка VLC, а не универсальная команда пульта Fire TV; она не переименовывает сам файл."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сообщите, каких сведений не хватает",
+          "paragraphs": [
+            "Прочитайте доступные сведения об элементе, прежде чем считать две сокращённые подписи одним видео. Для другого плеера или списка поставщика используйте его собственные описанные команды. Не переименовывайте файлы, не расширяйте права доступа к хранилищу и не удаляйте медиатеку ради сравнения. Trex IPTV 8K допускает одно одновременное подключение; соблюдайте этот предел при проверке просмотра. Укажите плеер, версию и подпись без частных адресов и учётных данных."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کے عنوانات: نقطے چیز ہٹ جانے کا ثبوت نہیں",
+      "excerpt": "کسی پروگرام کو غائب سمجھنے سے پہلے دیکھیں کہ VLC لمبا نام کیسے مختصر دکھاتا ہے۔ اصل چیز بدلے بغیر عنوان دکھانے کے ایک اختیار کا موازنہ کریں۔",
+      "seo_title": "Trex IPTV کے عنوانات: نقطے چیز ہٹ جانے کا ثبوت نہیں",
+      "seo_description": "کسی پروگرام کو غائب سمجھنے سے پہلے دیکھیں کہ VLC لمبا نام کیسے مختصر دکھاتا ہے۔ اصل چیز بدلے بغیر عنوان دکھانے کے ایک اختیار کا موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کیا مختصر ہوا ہے",
+          "paragraphs": [
+            "Trex IPTV کا عنوان نقطوں پر ختم ہو تو پہلے پلیئر اور اسکرین پہچانیں۔ کیا چیز مختصر نام کے ساتھ اب بھی نظر آ رہی ہے یا فہرست سے بالکل غائب ہے؟ VideoLAN نے VLC برائے Android کی ایک ترتیب بیان کی ہے جو براؤز منظر میں لمبے نام مختصر کرنے کا طریقہ طے کرتی ہے۔ اکیلے نقطے فراہم کنندہ کی چیز ہٹ جانے یا رسائی ختم ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "بیان کردہ اختیار کا موازنہ کریں",
+          "paragraphs": [
+            "انٹرفیس کی بیان کردہ ترتیبات میں ایک سطر کے عنوان کو مختصر کرنے والا اختیار پڑھیں اور موجودہ انتخاب لکھیں۔ VideoLAN بائیں، دائیں، درمیان اور چلتے متن کے اختیارات بتاتا ہے؛ پہلے سے طے شدہ انتخاب چلتا متن ہے۔ اسی اجازت یافتہ مواد کے لمبے نام پر ایک موجود اختیار آزمائیں اور فائدہ نہ ہو تو سابق انتخاب بحال کریں۔ نام اور دستیابی نسخے کے مطابق بدل سکتے ہیں۔ یہ VLC کی ترجیح ہے، Fire TV کے ہر ریموٹ کا شارٹ کٹ نہیں؛ اصل فائل کا نام نہیں بدلتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "اصل نامکمل معلومات بتائیں",
+          "paragraphs": [
+            "دو مختصر ناموں کو ایک ہی ویڈیو سمجھنے سے پہلے، جہاں موجود ہوں، چیز کی تفصیلات پڑھیں۔ دوسرا پلیئر یا فراہم کنندہ کی فہرست ہو تو اسی کے بیان کردہ کنٹرول استعمال کریں۔ اس موازنے کے لیے نہ فائلوں کے نام بدلیں، نہ اسٹوریج کی وسیع اجازت دیں اور نہ لائبریری مٹائیں۔ Trex IPTV 8K میں ایک ہی بیک وقت کنکشن ہے؛ دیکھنے کی جانچ اسی حد میں رکھیں۔ پلیئر، نسخہ اور مختصر نام بتائیں، نجی پلے بیک پتے یا اسناد نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "عناوين Trex IPTV: النقاط لا تعني حذف العنصر",
+      "excerpt": "تحقّق من طريقة اختصار VLC للاسم الطويل قبل اعتبار البرنامج مفقودًا. قارن خيار عرض واحدًا دون تغيير العنصر الأصلي.",
+      "seo_title": "عناوين Trex IPTV: النقاط لا تعني حذف العنصر",
+      "seo_description": "تحقّق من طريقة اختصار VLC للاسم الطويل قبل اعتبار البرنامج مفقودًا. قارن خيار عرض واحدًا دون تغيير العنصر الأصلي.",
+      "sections": [
+        {
+          "heading": "حدّد ما الذي اختُصر",
+          "paragraphs": [
+            "إذا انتهى عنوان Trex IPTV بنقاط، فحدّد المشغّل والشاشة أولًا. هل ما زال العنصر ظاهرًا باسم مختصر أم أنه غائب تمامًا؟ توثّق VideoLAN إعدادًا في VLC لنظام Android يحدّد كيفية اختصار أسماء الوسائط الطويلة في عرض التصفح. علامة الحذف وحدها لا تثبت اختفاء عنصر من قائمة المزوّد أو انتهاء الوصول."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن إعداد العنوان الموثّق",
+          "paragraphs": [
+            "في إعدادات الواجهة الموصوفة، اقرأ خيار اختصار العنوان ذي السطر الواحد ودوّن الاختيار الحالي. تسرد VideoLAN خيارات اليسار واليمين والوسط والنص المتحرك؛ ويستخدم الاختيار الافتراضي النص المتحرك. قارن خيارًا متاحًا على العنوان الطويل نفسه لمحتوى مسموح، ثم استعد السابق إن لم يفد. تختلف الأسماء والإتاحة حسب الإصدار. هذا تفضيل في VLC وليس اختصارًا عامًا لكل جهاز تحكم Fire TV، ولا يعيد تسمية الملف الأصلي."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "بلّغ عن المعلومات الناقصة فعلًا",
+          "paragraphs": [
+            "اقرأ معلومات العنصر المتاحة قبل اعتبار اسمين مختصرين للفيديو نفسه. إذا كان الأمر في مشغّل آخر أو قائمة المزوّد، فاتبع عناصر التحكم الموثّقة الخاصة به. لا تعد تسمية الملفات ولا تمنح أذونات تخزين أوسع ولا تحذف مكتبة لهذه المقارنة. يسمح Trex IPTV 8K باتصال متزامن واحد؛ أبق أي فحص للمشاهدة ضمن هذا الحد. أرسل اسم المشغّل والإصدار والعنوان المختصر دون عناوين تشغيل خاصة أو بيانات دخول."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV के शीर्षक: बिंदुओं का मतलब आइटम हटना नहीं है",
+      "excerpt": "कार्यक्रम गायब मानने से पहले देखें कि VLC लंबे नाम को कैसे छोटा दिखाता है। असल आइटम बदले बिना शीर्षक दिखाने के एक विकल्प की तुलना करें।",
+      "seo_title": "Trex IPTV के शीर्षक: बिंदुओं का मतलब आइटम हटना नहीं है",
+      "seo_description": "कार्यक्रम गायब मानने से पहले देखें कि VLC लंबे नाम को कैसे छोटा दिखाता है। असल आइटम बदले बिना शीर्षक दिखाने के एक विकल्प की तुलना करें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि क्या छोटा हुआ है",
+          "paragraphs": [
+            "Trex IPTV का शीर्षक बिंदुओं पर खत्म हो तो पहले प्लेयर और स्क्रीन पहचानें। आइटम छोटे नाम के साथ दिख रहा है या सूची से पूरी तरह गायब है? VideoLAN ने Android के VLC में वह सेटिंग बताई है जो ब्राउज़ दृश्य के लंबे नामों को छोटा करती है। अकेले बिंदु प्रदाता की प्रविष्टि हटने या पहुँच समाप्त होने का प्रमाण नहीं हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "बताए गए शीर्षक विकल्प की तुलना करें",
+          "paragraphs": [
+            "बताई गई इंटरफ़ेस सेटिंग में एक पंक्ति के शीर्षक को छोटा करने वाला विकल्प पढ़ें और मौजूदा चुनाव लिखें। VideoLAN बायाँ, दायाँ, बीच और चलता पाठ बताता है; डिफ़ॉल्ट में चलता पाठ इस्तेमाल होता है। उसी अनुमत सामग्री के लंबे शीर्षक पर एक उपलब्ध विकल्प मिलाएँ और लाभ न हो तो पिछला बहाल करें। नाम और उपलब्धता संस्करण के अनुसार बदल सकते हैं। यह VLC की पसंद है, हर Fire TV रिमोट का शॉर्टकट नहीं; असल फ़ाइल का नाम नहीं बदलता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "असल अधूरी जानकारी बताएँ",
+          "paragraphs": [
+            "दो छोटे नामों को एक ही वीडियो मानने से पहले, जहाँ उपलब्ध हों, आइटम की जानकारी पढ़ें। दूसरा प्लेयर या प्रदाता की सूची हो तो उसी के बताए नियंत्रण इस्तेमाल करें। इस तुलना के लिए न फ़ाइलों के नाम बदलें, न स्टोरेज की व्यापक अनुमति दें और न लाइब्रेरी मिटाएँ। Trex IPTV 8K में एक ही समकालिक कनेक्शन है; देखने की जाँच इसी सीमा में रखें। प्लेयर, संस्करण और छोटा नाम बताएँ, निजी प्लेबैक पते या लॉगिन नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android single-line title display options",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+    }
+  ]
+}

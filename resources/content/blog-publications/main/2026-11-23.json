@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-23",
+  "topic": "Identify VLC for Android TV interface on a touchscreen and its documented return path separately from a different app, provider access and non-touch television behaviour.",
+  "primary_keyword": "IPTV player layout",
+  "slug": "main-player-layout-touchscreen-or-tv-interface",
+  "translations": {
+    "en": {
+      "title": "IPTV player layout: did VLC switch to its TV interface?",
+      "excerpt": "Identify VLC’s TV-style interface on a touchscreen before changing saved access. Compare a documented layout preference rather than reinstalling the player.",
+      "seo_title": "IPTV player layout: did VLC switch to its TV interface?",
+      "seo_description": "Identify VLC’s TV-style interface on a touchscreen before changing saved access. Compare a documented layout preference rather than reinstalling the player.",
+      "sections": [
+        {
+          "heading": "Identify the interface before the fault",
+          "paragraphs": [
+            "If VLC opens with large remote-style tiles on an Android phone or tablet, first identify the app and the screen. A different IPTV player layout is not proof that the app was replaced or that service access expired. Note the device model, VLC version and whether it has a touchscreen. VideoLAN documents an Android TV interface preference; on devices without a touchscreen that interface is forced and cannot be changed."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the preference on a supported touchscreen",
+          "paragraphs": [
+            "For an accidentally enabled TV layout on a suitable touchscreen device, VideoLAN describes scrolling to Other, opening Settings and then Interface, unchecking Android TV interface and quitting. The regular interface returns on the next launch. Read the existing choice first and change it only if the owner wants the touch layout back. Keep a useful large-screen preference if it was intentional. Follow controls actually available in your version."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Check navigation after reopening",
+          "paragraphs": [
+            "Reopen VLC normally and compare the menu layout, rather than judging a video’s quality. If the setting is absent, report that fact instead of applying phone instructions to every television. Keep saved player access and the media library intact; clearing data or installing another APK is unnecessary for this preference check. Share the device, version and screen involved without private playback addresses or account details."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Diseño del reproductor IPTV: ¿VLC cambió a la interfaz de TV?",
+      "excerpt": "Identifica la interfaz de TV de VLC en una pantalla táctil antes de cambiar el acceso guardado. Compara una preferencia documentada sin reinstalar.",
+      "seo_title": "Diseño del reproductor IPTV: ¿VLC cambió a la interfaz de TV?",
+      "seo_description": "Identifica la interfaz de TV de VLC en una pantalla táctil antes de cambiar el acceso guardado. Compara una preferencia documentada sin reinstalar.",
+      "sections": [
+        {
+          "heading": "Identifica primero la interfaz",
+          "paragraphs": [
+            "Si VLC muestra grandes mosaicos pensados para mando en un móvil o tableta Android, identifica primero la aplicación y la pantalla. Otro diseño del reproductor IPTV no demuestra que se haya sustituido la aplicación ni que el servicio haya caducado. Anota el modelo, la versión de VLC y si hay pantalla táctil. VideoLAN documenta una preferencia de interfaz Android TV; sin pantalla táctil es obligatoria y no se puede cambiar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la preferencia en una pantalla compatible",
+          "paragraphs": [
+            "Para un diseño de TV activado por accidente en un equipo táctil adecuado, VideoLAN indica desplazarse a Otros, abrir Ajustes e Interfaz, desmarcar la interfaz Android TV y salir. La interfaz habitual vuelve al iniciar de nuevo. Lee primero la selección y cámbiala solo si el propietario quiere recuperar el diseño táctil. Conserva una preferencia útil de pantalla grande si era intencionada. Sigue los controles presentes en tu versión."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba la navegación al volver",
+          "paragraphs": [
+            "Abre VLC normalmente y compara los menús, no la calidad del vídeo. Si falta el ajuste, comunica ese dato en lugar de aplicar instrucciones de móvil a cualquier televisor. Conserva el acceso y la biblioteca; borrar datos o instalar otro APK no es necesario para revisar esta preferencia. Indica dispositivo, versión y pantalla, sin direcciones privadas de reproducción ni datos de la cuenta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Présentation du lecteur IPTV : VLC affiche-t-il son interface TV ?",
+      "excerpt": "Identifiez l’interface TV de VLC sur un écran tactile avant de modifier les accès enregistrés. Comparez un réglage documenté sans réinstaller le lecteur.",
+      "seo_title": "Présentation du lecteur IPTV : VLC affiche-t-il son interface TV ?",
+      "seo_description": "Identifiez l’interface TV de VLC sur un écran tactile avant de modifier les accès enregistrés. Comparez un réglage documenté sans réinstaller le lecteur.",
+      "sections": [
+        {
+          "heading": "Identifiez d’abord l’interface",
+          "paragraphs": [
+            "Si VLC présente de grandes vignettes prévues pour une télécommande sur un téléphone ou une tablette Android, identifiez d’abord l’application et l’écran. Une autre présentation du lecteur IPTV ne prouve ni un remplacement de l’application ni une expiration du service. Notez le modèle, la version de VLC et la présence d’un écran tactile. VideoLAN documente une préférence d’interface Android TV ; elle est imposée sur les appareils sans écran tactile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez la préférence sur un appareil adapté",
+          "paragraphs": [
+            "Pour une interface TV activée par erreur sur un appareil tactile compatible, VideoLAN décrit le passage par Autres, Paramètres puis Interface, la désactivation de l’interface Android TV et la fermeture de l’application. L’affichage habituel revient au lancement suivant. Lisez d’abord le choix actuel et ne le changez que si le propriétaire souhaite retrouver l’interface tactile. Gardez une préférence grand écran utile lorsqu’elle est volontaire. Suivez les commandes disponibles dans votre version."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez la navigation au retour",
+          "paragraphs": [
+            "Rouvrez VLC normalement et comparez les menus, plutôt que la qualité d’une vidéo. Si le réglage manque, signalez-le au lieu d’appliquer des instructions de téléphone à tous les téléviseurs. Conservez les accès et la médiathèque ; effacer les données ou installer un autre APK est inutile pour cette vérification. Communiquez appareil, version et écran concerné sans adresse privée de lecture ni informations de compte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Interfaccia del lettore IPTV: VLC è passato alla modalità TV?",
+      "excerpt": "Riconosci l’interfaccia TV di VLC su un touchscreen prima di cambiare gli accessi salvati. Confronta una preferenza documentata senza reinstallare.",
+      "seo_title": "Interfaccia del lettore IPTV: VLC è passato alla modalità TV?",
+      "seo_description": "Riconosci l’interfaccia TV di VLC su un touchscreen prima di cambiare gli accessi salvati. Confronta una preferenza documentata senza reinstallare.",
+      "sections": [
+        {
+          "heading": "Riconosci prima l’interfaccia",
+          "paragraphs": [
+            "Se VLC mostra grandi riquadri adatti al telecomando su un telefono o tablet Android, identifica prima app e schermata. Un’interfaccia IPTV diversa non dimostra che l’app sia stata sostituita o che il servizio sia scaduto. Annota modello, versione di VLC e presenza del touchscreen. VideoLAN documenta una preferenza per l’interfaccia Android TV; sui dispositivi senza touchscreen è imposta e non modificabile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la preferenza su un touchscreen adatto",
+          "paragraphs": [
+            "Per un’interfaccia TV attivata per errore su un dispositivo tattile compatibile, VideoLAN descrive il percorso Altro, Impostazioni, Interfaccia, la disattivazione dell’interfaccia Android TV e l’uscita dall’app. L’interfaccia normale ritorna all’avvio successivo. Leggi prima la scelta attuale e cambiala solo se il proprietario vuole tornare ai controlli tattili. Mantieni una preferenza utile per schermi grandi se era intenzionale. Usa i controlli presenti nella tua versione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla la navigazione alla riapertura",
+          "paragraphs": [
+            "Riapri VLC normalmente e confronta i menu, non la qualità di un video. Se manca l’opzione, segnala questo fatto invece di applicare istruzioni per telefoni a ogni televisore. Conserva accessi e libreria: cancellare dati o installare un altro APK non serve per verificare questa preferenza. Comunica dispositivo, versione e schermata, senza indirizzi privati di riproduzione o dati dell’account."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-spelerindeling: gebruikt VLC ineens de tv-interface?",
+      "excerpt": "Herken de tv-interface van VLC op een aanraakscherm voordat je opgeslagen toegang wijzigt. Vergelijk een beschreven voorkeur zonder de speler opnieuw te installeren.",
+      "seo_title": "IPTV-spelerindeling: gebruikt VLC ineens de tv-interface?",
+      "seo_description": "Herken de tv-interface van VLC op een aanraakscherm voordat je opgeslagen toegang wijzigt. Vergelijk een beschreven voorkeur zonder de speler opnieuw te installeren.",
+      "sections": [
+        {
+          "heading": "Herken eerst de interface",
+          "paragraphs": [
+            "Als VLC op een Android-telefoon of -tablet grote tegels voor afstandsbediening toont, herken dan eerst de app en het scherm. Een andere IPTV-spelerindeling bewijst niet dat de app is vervangen of de dienst verlopen is. Noteer model, VLC-versie en aanwezigheid van een aanraakscherm. VideoLAN beschrijft een voorkeur voor de Android TV-interface; op apparaten zonder aanraakscherm is die verplicht en niet te wijzigen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de voorkeur op een geschikt aanraakscherm",
+          "paragraphs": [
+            "Voor een per ongeluk ingeschakelde tv-indeling op een geschikt aanraakapparaat beschrijft VideoLAN: naar Overige scrollen, Instellingen en Interface openen, Android TV-interface uitvinken en de app afsluiten. Bij de volgende start keert de gewone indeling terug. Lees eerst de huidige keuze en verander die alleen als de eigenaar de aanraakindeling terug wil. Behoud een nuttige voorkeur voor grote schermen wanneer die bewust gekozen is. Gebruik de aanwezige bediening in jouw versie."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de navigatie na heropenen",
+          "paragraphs": [
+            "Open VLC normaal opnieuw en vergelijk de menu’s, niet de videokwaliteit. Ontbreekt de optie, meld dat dan in plaats van telefooninstructies op elke televisie toe te passen. Bewaar toegang en mediabibliotheek; gegevens wissen of een andere APK installeren is hiervoor niet nodig. Geef apparaat, versie en betrokken scherm door zonder privéafspeeladressen of accountgegevens."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Aspeto do leitor IPTV: o VLC mudou para a interface de TV?",
+      "excerpt": "Identifique a interface de TV do VLC num ecrã tátil antes de alterar acessos guardados. Compare uma preferência documentada sem reinstalar o leitor.",
+      "seo_title": "Aspeto do leitor IPTV: o VLC mudou para a interface de TV?",
+      "seo_description": "Identifique a interface de TV do VLC num ecrã tátil antes de alterar acessos guardados. Compare uma preferência documentada sem reinstalar o leitor.",
+      "sections": [
+        {
+          "heading": "Identifique primeiro a interface",
+          "paragraphs": [
+            "Se o VLC apresentar grandes mosaicos para comando num telemóvel ou tablet Android, identifique primeiro a aplicação e o ecrã. Um aspeto diferente do leitor IPTV não prova que a aplicação foi substituída ou que o serviço expirou. Anote modelo, versão do VLC e existência de ecrã tátil. A VideoLAN documenta uma preferência de interface Android TV; em dispositivos sem ecrã tátil é obrigatória e não pode ser alterada."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a preferência num ecrã compatível",
+          "paragraphs": [
+            "Para uma interface de TV ativada por engano num dispositivo tátil adequado, a VideoLAN descreve entrar em Outros, Definições e Interface, desmarcar a interface Android TV e sair da aplicação. A interface normal regressa no lançamento seguinte. Leia primeiro a escolha atual e altere-a apenas se o proprietário quiser recuperar o aspeto tátil. Mantenha uma preferência útil para ecrãs grandes quando for intencional. Siga os controlos disponíveis na sua versão."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique a navegação ao voltar",
+          "paragraphs": [
+            "Reabra normalmente o VLC e compare os menus, não a qualidade de um vídeo. Se a opção não existir, comunique esse facto em vez de aplicar instruções de telemóvel a qualquer televisão. Preserve acessos e biblioteca; apagar dados ou instalar outro APK é desnecessário nesta verificação. Indique dispositivo, versão e ecrã envolvido sem endereços privados de reprodução ou dados da conta."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Интерфейс IPTV-плеера: VLC переключился в режим телевизора?",
+      "excerpt": "Определите телевизионный интерфейс VLC на сенсорном экране до изменения сохранённого доступа. Сравните описанную настройку без переустановки.",
+      "seo_title": "Интерфейс IPTV-плеера: VLC переключился в режим телевизора?",
+      "seo_description": "Определите телевизионный интерфейс VLC на сенсорном экране до изменения сохранённого доступа. Сравните описанную настройку без переустановки.",
+      "sections": [
+        {
+          "heading": "Сначала определите интерфейс",
+          "paragraphs": [
+            "Если VLC показывает на телефоне или планшете Android крупные плитки для пульта, сначала определите приложение и экран. Иной интерфейс IPTV-плеера не доказывает замену приложения или окончание услуги. Запишите модель, версию VLC и наличие сенсорного экрана. VideoLAN описывает настройку интерфейса Android TV; на устройствах без сенсорного экрана этот интерфейс обязателен и не изменяется."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте настройку на подходящем устройстве",
+          "paragraphs": [
+            "Для случайно включённого телевизионного интерфейса на совместимом сенсорном устройстве VideoLAN описывает переход в раздел прочих функций, затем настройки и интерфейс, отключение интерфейса Android TV и выход из приложения. Обычный вид возвращается при следующем запуске. Сначала прочитайте текущий выбор и меняйте его лишь по желанию владельца. Сохраните удобный крупный интерфейс, если его выбрали намеренно. Используйте доступные элементы своей версии."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте навигацию после открытия",
+          "paragraphs": [
+            "Откройте VLC обычным способом и сравните меню, а не качество видео. Если настройки нет, сообщите об этом вместо применения телефонных инструкций к каждому телевизору. Сохраните доступ и медиатеку: очищать данные или устанавливать другой APK для этой проверки не нужно. Укажите устройство, версию и нужный экран без частных адресов воспроизведения и данных учётной записи."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV پلیئر کی ترتیب: کیا VLC ٹی وی انٹرفیس پر آ گیا ہے؟",
+      "excerpt": "محفوظ رسائی بدلنے سے پہلے ٹچ اسکرین پر VLC کا ٹی وی انٹرفیس پہچانیں۔ پلیئر دوبارہ نصب کیے بغیر بیان کردہ ترجیح کا موازنہ کریں۔",
+      "seo_title": "IPTV پلیئر کی ترتیب: کیا VLC ٹی وی انٹرفیس پر آ گیا ہے؟",
+      "seo_description": "محفوظ رسائی بدلنے سے پہلے ٹچ اسکرین پر VLC کا ٹی وی انٹرفیس پہچانیں۔ پلیئر دوبارہ نصب کیے بغیر بیان کردہ ترجیح کا موازنہ کریں۔",
+      "sections": [
+        {
+          "heading": "پہلے انٹرفیس پہچانیں",
+          "paragraphs": [
+            "Android فون یا ٹیبلٹ پر VLC ریموٹ کے لیے بڑے خانے دکھائے تو پہلے ایپ اور اسکرین پہچانیں۔ IPTV پلیئر کی بدلی ترتیب ایپ بدل جانے یا سروس ختم ہونے کا ثبوت نہیں۔ آلے کا ماڈل، VLC کا نسخہ اور ٹچ اسکرین کی موجودگی لکھیں۔ VideoLAN نے Android TV انٹرفیس کی ترجیح بیان کی ہے؛ بغیر ٹچ اسکرین کے آلات پر یہی انٹرفیس لازم ہے اور بدلا نہیں جا سکتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مناسب ٹچ اسکرین پر ترجیح پڑھیں",
+          "paragraphs": [
+            "مناسب ٹچ آلے پر غلطی سے ٹی وی ترتیب فعال ہو تو VideoLAN کے مطابق دیگر اختیارات، ترتیبات اور انٹرفیس میں جائیں، Android TV انٹرفیس کا انتخاب ہٹائیں اور ایپ بند کریں۔ معمول کا انٹرفیس اگلی بار کھولنے پر لوٹتا ہے۔ پہلے موجودہ انتخاب پڑھیں اور صرف مالک کی خواہش پر ٹچ ترتیب بحال کریں۔ بڑی اسکرین کی مفید ترجیح ارادی ہو تو اسے برقرار رکھیں۔ اپنے نسخے میں موجود کنٹرول ہی استعمال کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "دوبارہ کھول کر مینو دیکھیں",
+          "paragraphs": [
+            "VLC معمول کے مطابق کھول کر مینو کی ترتیب کا موازنہ کریں، ویڈیو کے معیار کا نہیں۔ اختیار موجود نہ ہو تو یہ بتائیں؛ ہر ٹی وی پر فون کی ہدایات لاگو نہ کریں۔ محفوظ رسائی اور لائبریری برقرار رکھیں؛ اس ترجیح کی جانچ کے لیے نہ ڈیٹا مٹائیں اور نہ دوسرا APK نصب کریں۔ آلہ، نسخہ اور متعلقہ اسکرین بتائیں، نجی پلے بیک پتے یا اکاؤنٹ کی تفصیلات نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "واجهة مشغّل IPTV: هل تحوّل VLC إلى واجهة التلفاز؟",
+      "excerpt": "حدّد واجهة التلفاز في VLC على الشاشة اللمسية قبل تغيير الوصول المحفوظ. قارن إعدادًا موثقًا دون إعادة تثبيت المشغّل.",
+      "seo_title": "واجهة مشغّل IPTV: هل تحوّل VLC إلى واجهة التلفاز؟",
+      "seo_description": "حدّد واجهة التلفاز في VLC على الشاشة اللمسية قبل تغيير الوصول المحفوظ. قارن إعدادًا موثقًا دون إعادة تثبيت المشغّل.",
+      "sections": [
+        {
+          "heading": "حدّد الواجهة أولًا",
+          "paragraphs": [
+            "إذا عرض VLC مربعات كبيرة مناسبة لجهاز التحكم على هاتف أو جهاز لوحي بنظام Android، فحدّد التطبيق والشاشة أولًا. اختلاف واجهة مشغّل IPTV لا يثبت استبدال التطبيق أو انتهاء الخدمة. دوّن الطراز وإصدار VLC ووجود شاشة لمس. توثّق VideoLAN تفضيل واجهة Android TV؛ وتكون هذه الواجهة مفروضة وغير قابلة للتغيير على الأجهزة التي لا تملك شاشة لمس."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ التفضيل على جهاز لمسي مناسب",
+          "paragraphs": [
+            "عند تفعيل واجهة التلفاز بالخطأ على جهاز لمسي مناسب، تصف VideoLAN الانتقال إلى الخيارات الأخرى ثم الإعدادات والواجهة، وإلغاء تحديد واجهة Android TV والخروج من التطبيق. تعود الواجهة العادية في التشغيل التالي. اقرأ الاختيار الحالي أولًا ولا تغيّره إلا إذا أراد المالك استعادة الواجهة اللمسية. احتفظ بتفضيل الشاشة الكبيرة المفيد إذا كان مقصودًا. اتبع عناصر التحكم الموجودة في إصدارك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "تحقّق من التنقل بعد الفتح",
+          "paragraphs": [
+            "أعد فتح VLC بصورة عادية وقارن القوائم بدل الحكم على جودة الفيديو. إذا غاب الخيار، أبلغ عن ذلك بدل تطبيق تعليمات الهاتف على كل تلفاز. احتفظ بالوصول والمكتبة؛ لا يلزم مسح البيانات أو تثبيت APK آخر لفحص هذا التفضيل. شارك الجهاز والإصدار والشاشة المعنية دون عناوين تشغيل خاصة أو معلومات الحساب."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV प्लेयर का रूप: क्या VLC टीवी इंटरफ़ेस पर आ गया है?",
+      "excerpt": "सहेजी पहुँच बदलने से पहले टचस्क्रीन पर VLC का टीवी इंटरफ़ेस पहचानें। प्लेयर फिर इंस्टॉल किए बिना बताए गए विकल्प की तुलना करें।",
+      "seo_title": "IPTV प्लेयर का रूप: क्या VLC टीवी इंटरफ़ेस पर आ गया है?",
+      "seo_description": "सहेजी पहुँच बदलने से पहले टचस्क्रीन पर VLC का टीवी इंटरफ़ेस पहचानें। प्लेयर फिर इंस्टॉल किए बिना बताए गए विकल्प की तुलना करें।",
+      "sections": [
+        {
+          "heading": "पहले इंटरफ़ेस पहचानें",
+          "paragraphs": [
+            "Android फ़ोन या टैबलेट पर VLC रिमोट के लिए बड़े खाने दिखाए तो पहले ऐप और स्क्रीन पहचानें। IPTV प्लेयर का बदला रूप ऐप बदलने या सेवा खत्म होने का प्रमाण नहीं है। डिवाइस मॉडल, VLC संस्करण और टचस्क्रीन की मौजूदगी लिखें। VideoLAN ने Android TV इंटरफ़ेस का विकल्प बताया है; बिना टचस्क्रीन वाले उपकरणों पर यही इंटरफ़ेस अनिवार्य है और बदला नहीं जा सकता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उपयुक्त टचस्क्रीन पर विकल्प पढ़ें",
+          "paragraphs": [
+            "उपयुक्त टच डिवाइस पर टीवी रूप गलती से चालू हो तो VideoLAN के अनुसार अन्य विकल्प, सेटिंग और इंटरफ़ेस में जाएँ, Android TV इंटरफ़ेस का चयन हटाएँ और ऐप बंद करें। सामान्य रूप अगली बार खोलने पर लौटता है। पहले मौजूदा चुनाव पढ़ें और केवल मालिक की इच्छा पर टच रूप लौटाएँ। बड़ी स्क्रीन का उपयोगी विकल्प जानबूझकर चुना हो तो बनाए रखें। अपने संस्करण के उपलब्ध नियंत्रण ही इस्तेमाल करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+            }
+          ]
+        },
+        {
+          "heading": "दोबारा खोलकर नेविगेशन देखें",
+          "paragraphs": [
+            "VLC सामान्य तरीके से खोलकर मेनू का रूप मिलाएँ, वीडियो की गुणवत्ता नहीं। विकल्प न हो तो यही बताएँ; हर टीवी पर फ़ोन की हिदायत न लगाएँ। सहेजी पहुँच और लाइब्रेरी बनाए रखें; इस विकल्प की जाँच के लिए न डेटा मिटाएँ और न दूसरा APK इंस्टॉल करें। डिवाइस, संस्करण और संबंधित स्क्रीन बताएँ, निजी प्लेबैक पते या खाते की जानकारी नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android interface and TV-layout settings",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_interface.html"
+    }
+  ]
+}

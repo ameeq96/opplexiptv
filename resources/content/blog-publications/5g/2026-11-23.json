@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-23",
+  "topic": "Read Pixel Smooth Display and Battery Saver separately from 5G Live IPTV source frame rate, preserving owner power settings and saved player access.",
+  "primary_keyword": "5G Live IPTV refresh rate",
+  "slug": "5g-refresh-rate-pixel-display-versus-source-frames",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV refresh rate: read Pixel Smooth Display separately",
+      "excerpt": "Inspect Pixel Smooth Display and Battery Saver without confusing screen refresh with programme frame rate. Preserve the owner’s existing power preferences.",
+      "seo_title": "5G Live IPTV refresh rate: read Pixel Smooth Display separately",
+      "seo_description": "Inspect Pixel Smooth Display and Battery Saver without confusing screen refresh with programme frame rate. Preserve the owner’s existing power preferences.",
+      "sections": [
+        {
+          "heading": "Name the measurement",
+          "paragraphs": [
+            "A 5G Live IPTV refresh rate question needs two different measurements: how often the phone screen refreshes and how many frames the permitted video contains. A smoother menu does not establish a higher source frame rate. Note whether the concern is scrolling, movement inside one programme or repeated playback pauses before changing a subscription."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing Pixel preference",
+          "paragraphs": [
+            "For a supported Pixel, Google documents Settings, Display and touch, then Smooth Display. Read the current choice and the phone model first. Google lists different supported refresh ranges across models, and says the feature uses more battery. It also states that Battery Saver disables Smooth Display. Keep the owner’s power-saving choice; do not switch Battery Saver off merely to chase a number."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Observe the screen and player separately",
+          "paragraphs": [
+            "Return to the same interface and permitted clip, keeping player, output and network unchanged while recording the observation. A display preference does not add frames to a source, increase its resolution or renew service access. If the option is absent, consult the guide for your actual model rather than installing an unknown settings tool. Report the Pixel model, Android and player versions, current display choice and whether Battery Saver was active. Preserve saved player access and omit private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Frecuencia de actualización de 5G Live IPTV: revisa Pantalla fluida en Pixel",
+      "excerpt": "Revisa Pantalla fluida y Ahorro de batería de Pixel sin confundir la pantalla con los fotogramas del programa. Conserva las preferencias de energía del propietario.",
+      "seo_title": "Frecuencia de actualización de 5G Live IPTV: revisa Pantalla fluida en Pixel",
+      "seo_description": "Revisa Pantalla fluida y Ahorro de batería de Pixel sin confundir la pantalla con los fotogramas del programa. Conserva las preferencias de energía del propietario.",
+      "sections": [
+        {
+          "heading": "Identifica qué estás midiendo",
+          "paragraphs": [
+            "Una consulta sobre la frecuencia de actualización de 5G Live IPTV requiere distinguir dos medidas: cuántas veces se actualiza la pantalla y cuántos fotogramas contiene el vídeo autorizado. Un menú más fluido no demuestra que la fuente tenga más fotogramas por segundo. Antes de cambiar de suscripción, identifica si el problema es el desplazamiento, el movimiento de un programa o las pausas repetidas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta la preferencia actual del Pixel",
+          "paragraphs": [
+            "Para un Pixel compatible, Google documenta Ajustes, Pantalla y funciones táctiles y después Pantalla fluida. Consulta primero la opción actual y el modelo. Google enumera distintos intervalos de actualización según el teléfono e indica que esta función consume más batería. También explica que Ahorro de batería desactiva Pantalla fluida. Conserva la elección del propietario; no desactives el ahorro solo para alcanzar una cifra."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Observa pantalla y reproductor por separado",
+          "paragraphs": [
+            "Vuelve a la misma interfaz y al mismo clip autorizado, manteniendo reproductor, salida y red mientras anotas el resultado. Una preferencia de pantalla no añade fotogramas a la fuente, aumenta su resolución ni renueva el servicio. Si falta la opción, consulta el modelo real en vez de instalar herramientas desconocidas. Indica modelo Pixel, versiones de Android y del reproductor, opción actual y si estaba activo Ahorro de batería. Conserva el acceso guardado y omite direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Fréquence d’affichage de 5G Live IPTV : consultez Affichage fluide sur Pixel",
+      "excerpt": "Consultez Affichage fluide et l’économiseur de batterie Pixel sans confondre écran et cadence du programme. Gardez les préférences d’énergie du propriétaire.",
+      "seo_title": "Fréquence d’affichage de 5G Live IPTV : consultez Affichage fluide sur Pixel",
+      "seo_description": "Consultez Affichage fluide et l’économiseur de batterie Pixel sans confondre écran et cadence du programme. Gardez les préférences d’énergie du propriétaire.",
+      "sections": [
+        {
+          "heading": "Identifiez la mesure concernée",
+          "paragraphs": [
+            "Une question de fréquence d’affichage pour 5G Live IPTV nécessite deux mesures distinctes : le renouvellement de l’écran et le nombre d’images contenues dans la vidéo autorisée. Un menu plus fluide ne prouve pas une cadence supérieure à la source. Avant de changer d’abonnement, précisez si le problème concerne le défilement, le mouvement dans un programme ou des pauses répétées."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consultez la préférence Pixel actuelle",
+          "paragraphs": [
+            "Pour un Pixel compatible, Google indique Paramètres, Écran et commandes tactiles, puis Affichage fluide. Consultez d’abord le choix actuel et le modèle. Google décrit différentes plages selon les modèles et précise que cette fonction consomme davantage de batterie. L’économiseur de batterie désactive aussi Affichage fluide. Conservez le choix d’économie du propriétaire ; ne le désactivez pas simplement pour obtenir un chiffre."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Observez écran et lecteur séparément",
+          "paragraphs": [
+            "Revenez à la même interface et au même extrait autorisé, en gardant lecteur, sortie et réseau inchangés pendant l’observation. Une préférence d’écran n’ajoute pas d’images à la source, n’augmente pas sa résolution et ne renouvelle pas l’accès. Si l’option manque, consultez le guide du modèle réel plutôt qu’un outil inconnu. Indiquez modèle Pixel, versions Android et du lecteur, choix actuel et état de l’économiseur. Préservez l’accès enregistré et omettez les adresses privées de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Frequenza di aggiornamento di 5G Live IPTV: leggi Display fluido su Pixel",
+      "excerpt": "Controlla Display fluido e Risparmio energetico di Pixel senza confondere schermo e fotogrammi del programma. Conserva le preferenze del proprietario.",
+      "seo_title": "Frequenza di aggiornamento di 5G Live IPTV: leggi Display fluido su Pixel",
+      "seo_description": "Controlla Display fluido e Risparmio energetico di Pixel senza confondere schermo e fotogrammi del programma. Conserva le preferenze del proprietario.",
+      "sections": [
+        {
+          "heading": "Identifica la misura",
+          "paragraphs": [
+            "Una domanda sulla frequenza di aggiornamento di 5G Live IPTV richiede due misure diverse: quanto spesso si aggiorna lo schermo e quanti fotogrammi contiene il video autorizzato. Un menu più fluido non dimostra una maggiore frequenza dei fotogrammi della fonte. Prima di cambiare abbonamento, chiarisci se il problema riguarda scorrimento, movimento nel programma o pause ripetute."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la preferenza attuale del Pixel",
+          "paragraphs": [
+            "Per un Pixel compatibile, Google documenta Impostazioni, Display e tocco, quindi Display fluido. Leggi prima la scelta corrente e il modello. Google elenca intervalli diversi secondo il dispositivo e segnala un maggiore consumo di batteria. Specifica inoltre che Risparmio energetico disattiva Display fluido. Conserva la scelta del proprietario; non disattivare il risparmio soltanto per inseguire un numero."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Osserva schermo e lettore separatamente",
+          "paragraphs": [
+            "Torna alla stessa interfaccia e allo stesso filmato autorizzato, mantenendo lettore, uscita e rete invariati mentre annoti il risultato. Una preferenza dello schermo non aggiunge fotogrammi alla fonte, non aumenta la risoluzione e non rinnova il servizio. Se manca l’opzione, consulta il modello reale invece di installare strumenti sconosciuti. Comunica modello Pixel, versioni Android e del lettore, scelta corrente e stato del risparmio energetico. Conserva l’accesso salvato ed escludi indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-verversingssnelheid: bekijk Pixel Vloeiende weergave apart",
+      "excerpt": "Bekijk Vloeiende weergave en Batterijbesparing op Pixel zonder schermverversing met programmabeelden te verwarren. Bewaar de energievoorkeuren van de eigenaar.",
+      "seo_title": "5G Live IPTV-verversingssnelheid: bekijk Pixel Vloeiende weergave apart",
+      "seo_description": "Bekijk Vloeiende weergave en Batterijbesparing op Pixel zonder schermverversing met programmabeelden te verwarren. Bewaar de energievoorkeuren van de eigenaar.",
+      "sections": [
+        {
+          "heading": "Benoem de gemeten waarde",
+          "paragraphs": [
+            "Een vraag over de verversingssnelheid bij 5G Live IPTV betreft twee verschillende waarden: hoe vaak het telefoonscherm ververst en hoeveel beelden de toegestane video bevat. Een vloeiender menu bewijst geen hogere beeldsnelheid van de bron. Noteer vóór een ander abonnement of het om scrollen, beweging in één programma of herhaalde afspeelpauzes gaat."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de bestaande Pixel-voorkeur",
+          "paragraphs": [
+            "Voor een ondersteunde Pixel beschrijft Google Instellingen, Scherm en aanraken, en daarna Vloeiende weergave. Lees eerst de huidige keuze en het model. Google noemt verschillende bereiken per toestel en zegt dat de functie meer batterij gebruikt. Batterijbesparing schakelt Vloeiende weergave bovendien uit. Behoud de energiekeuze van de eigenaar; schakel besparing niet uitsluitend uit om een getal te behalen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Observeer scherm en speler apart",
+          "paragraphs": [
+            "Ga terug naar dezelfde interface en toegestane clip en houd speler, uitvoer en netwerk gelijk terwijl je de waarneming noteert. Een schermvoorkeur voegt geen bronbeelden toe, verhoogt de resolutie niet en vernieuwt geen toegang. Ontbreekt de optie, lees dan de handleiding voor het echte model in plaats van onbekende hulpmiddelen te installeren. Vermeld Pixel-model, Android- en spelerversie, huidige keuze en of Batterijbesparing actief was. Bewaar opgeslagen toegang en laat privéafspeeladressen weg."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Taxa de atualização de 5G Live IPTV: consulte o Ecrã suave do Pixel",
+      "excerpt": "Consulte o Ecrã suave e a Poupança de bateria do Pixel sem confundir ecrã com fotogramas do programa. Preserve as preferências de energia do proprietário.",
+      "seo_title": "Taxa de atualização de 5G Live IPTV: consulte o Ecrã suave do Pixel",
+      "seo_description": "Consulte o Ecrã suave e a Poupança de bateria do Pixel sem confundir ecrã com fotogramas do programa. Preserve as preferências de energia do proprietário.",
+      "sections": [
+        {
+          "heading": "Identifique a medida",
+          "paragraphs": [
+            "Uma pergunta sobre a taxa de atualização de 5G Live IPTV exige duas medidas diferentes: quantas vezes o ecrã do telefone atualiza e quantos fotogramas contém o vídeo autorizado. Um menu mais suave não demonstra maior frequência de fotogramas na fonte. Antes de mudar de assinatura, anote se a dificuldade é deslocamento, movimento num programa ou pausas repetidas."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte a preferência atual do Pixel",
+          "paragraphs": [
+            "Para um Pixel compatível, a Google documenta Definições, Ecrã e toque e depois Ecrã suave. Consulte primeiro a escolha atual e o modelo. A Google apresenta intervalos diferentes conforme o telefone e indica maior consumo de bateria. Explica também que a Poupança de bateria desativa o Ecrã suave. Preserve a escolha do proprietário; não desligue a poupança apenas para alcançar um número."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Observe ecrã e reprodutor separadamente",
+          "paragraphs": [
+            "Volte à mesma interface e ao mesmo excerto autorizado, mantendo reprodutor, saída e rede enquanto regista o resultado. Uma preferência do ecrã não acrescenta fotogramas à fonte, aumenta a resolução nem renova o serviço. Se a opção faltar, consulte o modelo real em vez de instalar ferramentas desconhecidas. Informe modelo Pixel, versões Android e do reprodutor, escolha atual e estado da poupança de bateria. Preserve o acesso guardado e omita endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Частота обновления 5G Live IPTV: отдельно проверьте плавность экрана Pixel",
+      "excerpt": "Проверьте плавность экрана и энергосбережение Pixel, не путая обновление дисплея с кадрами программы. Сохраните предпочтения владельца по питанию.",
+      "seo_title": "Частота обновления 5G Live IPTV: отдельно проверьте плавность экрана Pixel",
+      "seo_description": "Проверьте плавность экрана и энергосбережение Pixel, не путая обновление дисплея с кадрами программы. Сохраните предпочтения владельца по питанию.",
+      "sections": [
+        {
+          "heading": "Определите измеряемую величину",
+          "paragraphs": [
+            "Вопрос о частоте обновления при просмотре 5G Live IPTV требует различать две величины: как часто обновляется экран телефона и сколько кадров содержит разрешённое видео. Более плавное меню не доказывает повышенную кадровую частоту источника. Прежде чем менять подписку, отметьте, относится ли проблема к прокрутке, движению в одной программе или повторным остановкам воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущую настройку Pixel",
+          "paragraphs": [
+            "Для поддерживаемого Pixel Google описывает путь: «Настройки», «Экран и касания», затем «Плавный экран». Сначала прочитайте текущий выбор и модель телефона. Google указывает разные диапазоны для разных моделей и повышенное потребление батареи. При включённом энергосбережении плавный экран отключается. Сохраните выбор владельца; не выключайте энергосбережение только ради желаемого числа."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Наблюдайте экран и плеер отдельно",
+          "paragraphs": [
+            "Вернитесь к тому же интерфейсу и разрешённому ролику, не меняя плеер, вывод и сеть во время наблюдения. Настройка экрана не добавляет кадров в источник, не повышает его разрешение и не продлевает доступ. Если пункта нет, прочитайте руководство своей модели вместо установки неизвестных инструментов. Сообщите модель Pixel, версии Android и плеера, текущий выбор и состояние энергосбережения. Сохраните доступ и не передавайте частные адреса воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV ریفریش ریٹ: Pixel کا ہموار ڈسپلے الگ دیکھیں",
+      "excerpt": "Pixel کے ہموار ڈسپلے اور بیٹری سیور کو پروگرام کے فریم ریٹ سے الگ دیکھیں۔ اسکرین کی جانچ کرتے ہوئے مالک کی موجودہ توانائی کی ترجیحات برقرار رکھیں۔",
+      "seo_title": "5G Live IPTV ریفریش ریٹ: Pixel کا ہموار ڈسپلے الگ دیکھیں",
+      "seo_description": "Pixel کے ہموار ڈسپلے اور بیٹری سیور کو پروگرام کے فریم ریٹ سے الگ دیکھیں۔ اسکرین کی جانچ کرتے ہوئے مالک کی موجودہ توانائی کی ترجیحات برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "پیمائش کی پہچان کریں",
+          "paragraphs": [
+            "5G Live IPTV کے ریفریش ریٹ کے سوال میں دو الگ پیمائشیں ہیں: فون کی اسکرین کتنی بار تازہ ہوتی ہے اور اجازت یافتہ ویڈیو میں کتنے فریم ہیں۔ زیادہ ہموار مینو ماخذ کے زیادہ فریم ریٹ کا ثبوت نہیں۔ رکنیت بدلنے سے پہلے لکھیں کہ مسئلہ اسکرولنگ میں ہے، ایک پروگرام کی حرکت میں ہے یا پلے بیک بار بار رکتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Pixel کی موجودہ ترجیح پڑھیں",
+          "paragraphs": [
+            "مطابقت رکھنے والے Pixel کے لیے Google ترتیبات، ڈسپلے اور ٹچ، پھر ہموار ڈسپلے کا راستہ بتاتا ہے۔ پہلے موجودہ انتخاب اور فون کا ماڈل پڑھیں۔ Google مختلف ماڈلوں کے لیے الگ حدیں اور اس خصوصیت سے زیادہ بیٹری استعمال ہونے کا ذکر کرتا ہے۔ بیٹری سیور فعال ہو تو ہموار ڈسپلے بند ہوتا ہے۔ مالک کا توانائی بچانے کا انتخاب برقرار رکھیں؛ صرف ایک عدد حاصل کرنے کے لیے بیٹری سیور بند نہ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اسکرین اور پلیئر الگ دیکھیں",
+          "paragraphs": [
+            "وہی انٹرفیس اور اجازت یافتہ کلپ کھولیں اور مشاہدہ لکھتے وقت پلیئر، آؤٹ پٹ اور نیٹ ورک ایک جیسے رکھیں۔ ڈسپلے کی ترجیح ماخذ میں فریم شامل نہیں کرتی، ریزولیوشن نہیں بڑھاتی اور سروس کی تجدید نہیں کرتی۔ اختیار موجود نہ ہو تو نامعلوم ترتیب کے ٹول نصب کرنے کے بجائے اصل ماڈل کا رہنما پڑھیں۔ Pixel ماڈل، Android اور پلیئر کے نسخے، موجودہ انتخاب اور بیٹری سیور کی حالت بتائیں۔ محفوظ رسائی برقرار رکھیں اور نجی پلے بیک پتے نہ دیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "معدل تحديث 5G Live IPTV: اقرأ إعداد سلاسة العرض في Pixel بشكل منفصل",
+      "excerpt": "راجع سلاسة العرض وتوفير البطارية في Pixel دون الخلط بين تحديث الشاشة وإطارات البرنامج. حافظ على تفضيلات الطاقة الحالية للمالك.",
+      "seo_title": "معدل تحديث 5G Live IPTV: اقرأ إعداد سلاسة العرض في Pixel بشكل منفصل",
+      "seo_description": "راجع سلاسة العرض وتوفير البطارية في Pixel دون الخلط بين تحديث الشاشة وإطارات البرنامج. حافظ على تفضيلات الطاقة الحالية للمالك.",
+      "sections": [
+        {
+          "heading": "حدد القياس المقصود",
+          "paragraphs": [
+            "يتطلب سؤال معدل التحديث في 5G Live IPTV قياسين مختلفين: عدد مرات تحديث شاشة الهاتف وعدد الإطارات الموجودة في الفيديو المسموح. لا تثبت سلاسة القوائم زيادة معدل إطارات المصدر. قبل تغيير الاشتراك، دوّن هل المشكلة في التمرير أم الحركة داخل برنامج واحد أم توقف التشغيل المتكرر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ تفضيل Pixel الحالي",
+          "paragraphs": [
+            "بالنسبة إلى جهاز Pixel مدعوم، توضح Google المسار: الإعدادات، الشاشة واللمس، ثم سلاسة العرض. اقرأ الاختيار الحالي وطراز الهاتف أولاً. تذكر Google نطاقات مختلفة بحسب الطراز وتوضح أن الميزة تستهلك بطارية أكثر. وتوضح أيضاً أن توفير البطارية يعطل سلاسة العرض. احتفظ باختيار المالك لتوفير الطاقة؛ لا توقفه لمجرد الوصول إلى رقم."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "راقب الشاشة والمشغل بشكل منفصل",
+          "paragraphs": [
+            "عد إلى الواجهة نفسها والمقطع المسموح نفسه مع إبقاء المشغل والمخرج والشبكة دون تغيير أثناء تسجيل الملاحظة. لا يضيف تفضيل العرض إطارات إلى المصدر ولا يزيد دقته ولا يجدد الوصول. إذا غاب الخيار، راجع دليل الطراز الفعلي بدلاً من تثبيت أداة إعدادات مجهولة. اذكر طراز Pixel وإصداري Android والمشغل والاختيار الحالي وهل كان توفير البطارية نشطاً. حافظ على الوصول المحفوظ ولا تشارك عناوين التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV रिफ्रेश दर: Pixel का स्मूद डिस्प्ले अलग पढ़ें",
+      "excerpt": "Pixel के स्मूद डिस्प्ले और बैटरी सेवर को कार्यक्रम की फ्रेम दर से अलग जाँचें। स्क्रीन देखते समय मालिक की मौजूदा ऊर्जा पसंद बनाए रखें।",
+      "seo_title": "5G Live IPTV रिफ्रेश दर: Pixel का स्मूद डिस्प्ले अलग पढ़ें",
+      "seo_description": "Pixel के स्मूद डिस्प्ले और बैटरी सेवर को कार्यक्रम की फ्रेम दर से अलग जाँचें। स्क्रीन देखते समय मालिक की मौजूदा ऊर्जा पसंद बनाए रखें।",
+      "sections": [
+        {
+          "heading": "माप पहचानें",
+          "paragraphs": [
+            "5G Live IPTV की रिफ्रेश दर के सवाल में दो अलग माप हैं: फ़ोन की स्क्रीन कितनी बार ताज़ा होती है और अनुमत वीडियो में कितने फ्रेम हैं। ज्यादा सहज मेनू स्रोत की अधिक फ्रेम दर साबित नहीं करता। सदस्यता बदलने से पहले लिखें कि समस्या स्क्रॉलिंग में है, एक कार्यक्रम की गति में या बार-बार प्लेबैक रुकने में।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Pixel की मौजूदा पसंद पढ़ें",
+          "paragraphs": [
+            "संगत Pixel के लिए Google सेटिंग, डिस्प्ले और टच, फिर स्मूद डिस्प्ले का रास्ता बताता है। पहले मौजूदा चुनाव और फ़ोन मॉडल पढ़ें। Google अलग मॉडलों की अलग सीमाएँ और सुविधा से ज्यादा बैटरी खर्च होने की बात बताता है। बैटरी सेवर चालू होने पर स्मूद डिस्प्ले बंद होता है। मालिक की ऊर्जा बचाने की पसंद बनाए रखें; केवल कोई संख्या पाने के लिए बैटरी सेवर बंद न करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "स्क्रीन और प्लेयर अलग देखें",
+          "paragraphs": [
+            "उसी इंटरफ़ेस और अनुमत क्लिप पर लौटें तथा नतीजा लिखते समय प्लेयर, आउटपुट और नेटवर्क समान रखें। डिस्प्ले पसंद स्रोत में फ्रेम नहीं जोड़ती, रिज़ॉल्यूशन नहीं बढ़ाती और सेवा का नवीनीकरण नहीं करती। विकल्प न मिले तो अनजान सेटिंग टूल इंस्टॉल करने के बजाय असल मॉडल की गाइड पढ़ें। Pixel मॉडल, Android और प्लेयर संस्करण, मौजूदा चुनाव तथा बैटरी सेवर की स्थिति बताएँ। सहेजी पहुँच बनाए रखें और निजी प्लेबैक पते न दें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel: screen settings and Smooth Display",
+      "url": "https://support.google.com/pixelphone/answer/6111557?hl=en"
+    },
+    {
+      "label": "Google Pixel: Smooth Display in battery settings",
+      "url": "https://support.google.com/pixelphone/answer/6090612?hl=en"
+    }
+  ]
+}

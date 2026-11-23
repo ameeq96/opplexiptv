@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-23",
+  "topic": "Inspect Apple TV system caption styles separately from a Geo IPTV player’s subtitle tracks, preserving household accessibility preferences and saved access.",
+  "primary_keyword": "Geo IPTV caption style",
+  "slug": "geo-caption-style-system-preference-or-player-track",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV caption style: read the Apple TV setting first",
+      "excerpt": "Inspect the existing Apple TV caption style before changing player tracks. Keep readable text, available languages and subtitle timing as separate questions.",
+      "seo_title": "Geo IPTV caption style: read the Apple TV setting first",
+      "seo_description": "Inspect the existing Apple TV caption style before changing player tracks. Keep readable text, available languages and subtitle timing as separate questions.",
+      "sections": [
+        {
+          "heading": "Identify the text already visible",
+          "paragraphs": [
+            "A Geo IPTV caption style check starts with captions that are visible but difficult to read. Describe size, contrast or background separately from missing text. Apple TV 4K has a system caption-style preference; that is a different layer from the installed player’s available subtitle track. Keep the same permitted video and caption selection so the comparison does not become a search for another programme."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing system style",
+          "paragraphs": [
+            "Apple documents Settings, Accessibility, Subtitles and Captioning, then Style. Read the existing choice first. The guide lists font, size, colour and background controls. If the owner wants a change, compare one existing style and record the original choice. Preserve accessibility preferences useful to other viewers; there is no need to create several new styles or change account details."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Check the player separately",
+          "paragraphs": [
+            "Return to the player and note whether that particular caption changes. Do not assume every third-party player follows the system style; use its own documented controls if offered. A style preference cannot add a missing language or correct subtitle timing. If nothing changes, report the Apple TV model, software, player version and the two screens compared. Restore an unhelpful choice and preserve saved player access. Keep private playback addresses out of screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Estilo de subtítulos de Geo IPTV: consulta primero Apple TV",
+      "excerpt": "Consulta el estilo de subtítulos actual de Apple TV antes de cambiar pistas. Distingue legibilidad, idiomas disponibles y sincronización del texto.",
+      "seo_title": "Estilo de subtítulos de Geo IPTV: consulta primero Apple TV",
+      "seo_description": "Consulta el estilo de subtítulos actual de Apple TV antes de cambiar pistas. Distingue legibilidad, idiomas disponibles y sincronización del texto.",
+      "sections": [
+        {
+          "heading": "Identifica el texto que ya aparece",
+          "paragraphs": [
+            "Para revisar el estilo de subtítulos de Geo IPTV, parte de un texto visible pero difícil de leer. Describe tamaño, contraste o fondo por separado de la ausencia de texto. Apple TV 4K tiene una preferencia de estilo del sistema, distinta de la pista disponible en el reproductor instalado. Mantén el mismo vídeo autorizado y los mismos subtítulos para no convertir la comparación en la búsqueda de otro programa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta el estilo actual del sistema",
+          "paragraphs": [
+            "Apple documenta Ajustes, Accesibilidad, Subtítulos y subtítulos opcionales y después Estilo. Consulta primero la opción actual. La guía enumera controles de fuente, tamaño, color y fondo. Si el propietario desea un cambio, compara un estilo existente y anota la selección original. Conserva las preferencias de accesibilidad útiles para otros espectadores; no hace falta crear varios estilos ni cambiar datos de la cuenta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba el reproductor por separado",
+          "paragraphs": [
+            "Vuelve al reproductor y observa si ese subtítulo cambia. No supongas que todos los reproductores de terceros siguen el estilo del sistema; utiliza sus controles documentados si existen. Un estilo no añade idiomas ausentes ni corrige la sincronización. Si nada cambia, indica modelo de Apple TV, software, versión del reproductor y las dos pantallas comparadas. Restaura una opción que no ayude y conserva el acceso guardado. Oculta las direcciones privadas de reproducción en las capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Style des sous-titres Geo IPTV : consultez d’abord Apple TV",
+      "excerpt": "Consultez le style de sous-titres actuel sur Apple TV avant de changer de piste. Distinguez lisibilité, langues disponibles et synchronisation du texte.",
+      "seo_title": "Style des sous-titres Geo IPTV : consultez d’abord Apple TV",
+      "seo_description": "Consultez le style de sous-titres actuel sur Apple TV avant de changer de piste. Distinguez lisibilité, langues disponibles et synchronisation du texte.",
+      "sections": [
+        {
+          "heading": "Identifiez le texte déjà visible",
+          "paragraphs": [
+            "Pour vérifier le style des sous-titres Geo IPTV, partez d’un texte visible mais difficile à lire. Décrivez taille, contraste ou arrière-plan séparément d’une absence de texte. Apple TV 4K possède une préférence de style système, distincte de la piste disponible dans le lecteur installé. Gardez la même vidéo autorisée et les mêmes sous-titres afin de ne pas transformer la comparaison en recherche d’un autre programme."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consultez le style système actuel",
+          "paragraphs": [
+            "Apple indique Réglages, Accessibilité, Sous-titres et sous-titrage, puis Style. Consultez d’abord le choix actuel. Le guide décrit police, taille, couleur et arrière-plan. Si le propriétaire souhaite un changement, comparez un style existant et notez le choix initial. Conservez les préférences d’accessibilité utiles aux autres spectateurs ; inutile de créer plusieurs styles ou de modifier le compte."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Vérifiez le lecteur séparément",
+          "paragraphs": [
+            "Revenez au lecteur et observez si ce sous-titre change. Ne supposez pas que tous les lecteurs tiers suivent le style système ; utilisez leurs propres commandes documentées si elles existent. Un style n’ajoute pas une langue absente et ne corrige pas le décalage temporel. Si rien ne change, indiquez modèle Apple TV, logiciel, version du lecteur et les deux écrans comparés. Rétablissez un choix inutile et préservez l’accès enregistré. Masquez les adresses privées de lecture dans les captures."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Stile dei sottotitoli Geo IPTV: controlla prima Apple TV",
+      "excerpt": "Controlla lo stile attuale dei sottotitoli su Apple TV prima di cambiare traccia. Distingui leggibilità, lingue disponibili e sincronizzazione del testo.",
+      "seo_title": "Stile dei sottotitoli Geo IPTV: controlla prima Apple TV",
+      "seo_description": "Controlla lo stile attuale dei sottotitoli su Apple TV prima di cambiare traccia. Distingui leggibilità, lingue disponibili e sincronizzazione del testo.",
+      "sections": [
+        {
+          "heading": "Identifica il testo già visibile",
+          "paragraphs": [
+            "Per controllare lo stile dei sottotitoli Geo IPTV, parti da un testo visibile ma difficile da leggere. Descrivi dimensioni, contrasto o sfondo separatamente dal testo assente. Apple TV 4K offre una preferenza di stile del sistema, distinta dalla traccia disponibile nel lettore installato. Mantieni lo stesso video autorizzato e gli stessi sottotitoli, senza trasformare il confronto nella ricerca di un altro programma."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi lo stile di sistema attuale",
+          "paragraphs": [
+            "Apple documenta Impostazioni, Accessibilità, Sottotitoli e sottotitoli per non udenti, quindi Stile. Leggi prima la scelta attuale. La guida elenca carattere, dimensioni, colore e sfondo. Se il proprietario desidera una modifica, confronta uno stile esistente e annota la scelta iniziale. Conserva le preferenze di accessibilità utili agli altri spettatori; non occorre creare diversi stili né modificare i dati dell’account."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Controlla il lettore separatamente",
+          "paragraphs": [
+            "Torna al lettore e osserva se quel sottotitolo cambia. Non presumere che tutti i lettori di terze parti seguano lo stile del sistema; usa i loro controlli documentati, se presenti. Uno stile non aggiunge lingue mancanti né corregge la sincronizzazione. Se nulla cambia, comunica modello Apple TV, software, versione del lettore e le due schermate confrontate. Ripristina una scelta inutile e conserva l’accesso salvato. Nascondi gli indirizzi privati di riproduzione nelle schermate condivise."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-ondertitelstijl: bekijk eerst de Apple TV-instelling",
+      "excerpt": "Bekijk de bestaande ondertitelstijl op Apple TV voordat je andere sporen kiest. Houd leesbaarheid, beschikbare talen en de timing van tekst uit elkaar.",
+      "seo_title": "Geo IPTV-ondertitelstijl: bekijk eerst de Apple TV-instelling",
+      "seo_description": "Bekijk de bestaande ondertitelstijl op Apple TV voordat je andere sporen kiest. Houd leesbaarheid, beschikbare talen en de timing van tekst uit elkaar.",
+      "sections": [
+        {
+          "heading": "Benoem de tekst die al zichtbaar is",
+          "paragraphs": [
+            "Een controle van de Geo IPTV-ondertitelstijl begint bij tekst die zichtbaar maar lastig leesbaar is. Beschrijf grootte, contrast of achtergrond los van ontbrekende tekst. Apple TV 4K heeft een systeemvoorkeur voor ondertitelstijl; dat is een andere laag dan het beschikbare spoor in de geïnstalleerde speler. Houd dezelfde toegestane video en ondertitels geselecteerd, zodat je niet ondertussen een ander programma gaat zoeken."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige systeemstijl",
+          "paragraphs": [
+            "Apple beschrijft Instellingen, Toegankelijkheid, Ondertiteling en bijschriften, en vervolgens Stijl. Lees eerst de huidige keuze. De handleiding noemt lettertype, grootte, kleur en achtergrond. Wil de eigenaar iets wijzigen, vergelijk dan één bestaande stijl en noteer de oorspronkelijke keuze. Bewaar toegankelijkheidsvoorkeuren die andere kijkers nodig hebben; meerdere nieuwe stijlen of gewijzigde accountgegevens zijn niet nodig."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de speler afzonderlijk",
+          "paragraphs": [
+            "Ga terug naar de speler en bekijk of die ondertitel verandert. Neem niet aan dat iedere externe speler de systeemstijl volgt; gebruik indien beschikbaar zijn eigen gedocumenteerde bediening. Een stijl voegt geen ontbrekende taal toe en herstelt geen verkeerde timing. Verandert niets, vermeld dan Apple TV-model, software, spelerversie en de twee vergeleken schermen. Zet een onbruikbare keuze terug en behoud opgeslagen toegang. Verberg privéafspeeladressen in schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Estilo das legendas Geo IPTV: consulte primeiro o Apple TV",
+      "excerpt": "Consulte o estilo atual das legendas no Apple TV antes de mudar de faixa. Separe legibilidade, idiomas disponíveis e sincronização do texto.",
+      "seo_title": "Estilo das legendas Geo IPTV: consulte primeiro o Apple TV",
+      "seo_description": "Consulte o estilo atual das legendas no Apple TV antes de mudar de faixa. Separe legibilidade, idiomas disponíveis e sincronização do texto.",
+      "sections": [
+        {
+          "heading": "Identifique o texto que já aparece",
+          "paragraphs": [
+            "Uma verificação do estilo das legendas Geo IPTV começa com texto visível, mas difícil de ler. Descreva tamanho, contraste ou fundo separadamente da ausência de texto. O Apple TV 4K possui uma preferência de estilo do sistema, diferente da faixa disponível no reprodutor instalado. Mantenha o mesmo vídeo autorizado e as mesmas legendas, sem transformar a comparação na procura de outro programa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte o estilo atual do sistema",
+          "paragraphs": [
+            "A Apple documenta Definições, Acessibilidade, Legendas e legendagem, e depois Estilo. Leia primeiro a opção atual. O guia apresenta fonte, tamanho, cor e fundo. Se o proprietário quiser uma alteração, compare um estilo existente e anote a escolha original. Preserve preferências de acessibilidade úteis aos outros espectadores; não precisa de criar vários estilos nem de alterar dados da conta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Verifique o reprodutor separadamente",
+          "paragraphs": [
+            "Volte ao reprodutor e veja se aquela legenda muda. Não presuma que todos os reprodutores de terceiros seguem o estilo do sistema; utilize os respetivos controlos documentados, se existirem. Um estilo não acrescenta idiomas ausentes nem corrige a sincronização. Se nada mudar, informe modelo do Apple TV, software, versão do reprodutor e os dois ecrãs comparados. Restaure uma escolha sem efeito útil e preserve o acesso guardado. Oculte endereços privados de reprodução nas capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Стиль субтитров Geo IPTV: сначала проверьте настройку Apple TV",
+      "excerpt": "Сначала посмотрите текущий стиль субтитров Apple TV, затем меняйте дорожки. Различайте читаемость, доступные языки и время появления текста.",
+      "seo_title": "Стиль субтитров Geo IPTV: сначала проверьте настройку Apple TV",
+      "seo_description": "Сначала посмотрите текущий стиль субтитров Apple TV, затем меняйте дорожки. Различайте читаемость, доступные языки и время появления текста.",
+      "sections": [
+        {
+          "heading": "Опишите уже видимый текст",
+          "paragraphs": [
+            "Проверку стиля субтитров Geo IPTV начинайте с текста, который виден, но плохо читается. Размер, контраст и фон описывайте отдельно от отсутствующего текста. В Apple TV 4K есть системная настройка стиля субтитров; она отличается от доступной дорожки установленного плеера. Оставьте ту же разрешённую видеозапись и те же субтитры, чтобы сравнение не превратилось в поиск другой программы."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Посмотрите текущий системный стиль",
+          "paragraphs": [
+            "Apple описывает путь: «Настройки», «Универсальный доступ», «Субтитры и скрытые субтитры», затем «Стиль». Сначала прочитайте текущий выбор. В руководстве перечислены шрифт, размер, цвет и фон. Если владелец хочет изменение, сравните один существующий стиль и запишите исходный. Сохраните настройки доступности, нужные другим зрителям; создавать несколько стилей или менять данные учётной записи не требуется."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте плеер отдельно",
+          "paragraphs": [
+            "Вернитесь в плеер и посмотрите, изменились ли эти субтитры. Не считайте, что любой сторонний плеер использует системный стиль; при наличии следуйте его собственной документации. Стиль не добавляет отсутствующий язык и не исправляет задержку текста. Если изменений нет, сообщите модель Apple TV, программное обеспечение, версию плеера и два сравниваемых экрана. Верните бесполезное изменение и сохраните доступ. Убирайте частные адреса воспроизведения со снимков экрана."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV ذیلی عنوانات کا انداز: پہلے Apple TV کی ترتیب دیکھیں",
+      "excerpt": "پلیئر کا ٹریک بدلنے سے پہلے Apple TV پر ذیلی عنوانات کا موجودہ انداز دیکھیں۔ پڑھنے کی آسانی، دستیاب زبان اور متن کے وقت کو الگ رکھیں۔",
+      "seo_title": "Geo IPTV ذیلی عنوانات کا انداز: پہلے Apple TV کی ترتیب دیکھیں",
+      "seo_description": "پلیئر کا ٹریک بدلنے سے پہلے Apple TV پر ذیلی عنوانات کا موجودہ انداز دیکھیں۔ پڑھنے کی آسانی، دستیاب زبان اور متن کے وقت کو الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے سے نظر آنے والا متن پہچانیں",
+          "paragraphs": [
+            "Geo IPTV کے ذیلی عنوانات کا انداز جانچتے وقت ایسے متن سے شروع کریں جو نظر آ رہا ہو مگر پڑھنا مشکل ہو۔ سائز، نمایاں ہونے یا پس منظر کو غائب متن سے الگ بیان کریں۔ Apple TV 4K میں سسٹم کے ذیلی عنوانات کے انداز کی ترجیح ہے؛ یہ نصب پلیئر کے دستیاب ٹریک سے الگ سطح ہے۔ وہی اجازت یافتہ ویڈیو اور وہی ذیلی عنوانات منتخب رکھیں تاکہ موازنہ کسی اور پروگرام کی تلاش نہ بن جائے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "سسٹم کا موجودہ انداز پڑھیں",
+          "paragraphs": [
+            "Apple کی ہدایت میں ترتیبات، رسائی پذیری، ذیلی عنوانات اور بند کیپشننگ، پھر انداز شامل ہیں۔ پہلے موجودہ انتخاب پڑھیں۔ رہنما میں فونٹ، سائز، رنگ اور پس منظر کے اختیار ہیں۔ مالک تبدیلی چاہے تو ایک موجودہ انداز کا موازنہ کریں اور اصل انتخاب نوٹ کریں۔ دوسرے دیکھنے والوں کے لیے مفید رسائی پذیری کی ترجیحات برقرار رکھیں؛ کئی نئے انداز بنانے یا اکاؤنٹ کی تفصیلات بدلنے کی ضرورت نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "پلیئر کو الگ جانچیں",
+          "paragraphs": [
+            "پلیئر پر واپس جا کر دیکھیں کہ وہ ذیلی عنوانات بدلے یا نہیں۔ یہ فرض نہ کریں کہ ہر دوسرے ناشر کا پلیئر سسٹم کے انداز کی پیروی کرتا ہے؛ اس کے اپنے مستند کنٹرول ہوں تو انہیں دیکھیں۔ انداز غائب زبان شامل نہیں کرتا اور متن کا وقت درست نہیں کرتا۔ کچھ نہ بدلے تو Apple TV کا ماڈل، سافٹ ویئر، پلیئر کا نسخہ اور دونوں اسکرینیں بتائیں۔ بے فائدہ تبدیلی واپس کریں اور محفوظ رسائی برقرار رکھیں۔ اسکرین شاٹس میں نجی پلے بیک پتے چھپائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "نمط ترجمة Geo IPTV: اقرأ إعداد Apple TV أولاً",
+      "excerpt": "راجع نمط الترجمة الحالي في Apple TV قبل تغيير مسار المشغل. ميّز بين سهولة القراءة واللغات المتاحة وتوقيت ظهور النص.",
+      "seo_title": "نمط ترجمة Geo IPTV: اقرأ إعداد Apple TV أولاً",
+      "seo_description": "راجع نمط الترجمة الحالي في Apple TV قبل تغيير مسار المشغل. ميّز بين سهولة القراءة واللغات المتاحة وتوقيت ظهور النص.",
+      "sections": [
+        {
+          "heading": "حدد النص الظاهر بالفعل",
+          "paragraphs": [
+            "ابدأ فحص نمط ترجمة Geo IPTV بنص ظاهر يصعب قراءته. صِف الحجم أو التباين أو الخلفية بشكل منفصل عن غياب النص. يتضمن Apple TV 4K تفضيلاً لنمط الترجمة على مستوى النظام، وهو مستوى مختلف عن المسار المتاح داخل المشغل المثبت. أبقِ الفيديو المسموح نفسه والترجمة نفسها محددين، كي لا يتحول الفحص إلى البحث عن برنامج آخر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ نمط النظام الحالي",
+          "paragraphs": [
+            "توضح Apple المسار: الإعدادات، تسهيلات الاستخدام، الترجمة والشرح المكتوب، ثم النمط. اقرأ الاختيار الحالي أولاً. يذكر الدليل الخط والحجم واللون والخلفية. إذا أراد المالك تغييراً، فقارن نمطاً موجوداً واحداً وسجل الاختيار الأصلي. حافظ على تفضيلات تسهيلات الاستخدام المفيدة للمشاهدين الآخرين؛ لا حاجة لإنشاء أنماط متعددة أو تغيير بيانات الحساب."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "افحص المشغل بشكل منفصل",
+          "paragraphs": [
+            "عد إلى المشغل ولاحظ هل تغيرت تلك الترجمة. لا تفترض أن كل مشغل تابع لجهة خارجية يتبع نمط النظام؛ استخدم عناصره الموثقة إن توفرت. لا يضيف النمط لغة مفقودة ولا يصحح توقيت النص. إذا لم يتغير شيء، أبلغ عن طراز Apple TV والبرنامج وإصدار المشغل والشاشتين المقارنتين. أعد الاختيار السابق إن لم يفد واحتفظ بالوصول المحفوظ. أخفِ عناوين التشغيل الخاصة من لقطات الشاشة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV उपशीर्षक शैली: पहले Apple TV की सेटिंग देखें",
+      "excerpt": "प्लेयर का ट्रैक बदलने से पहले Apple TV की मौजूदा उपशीर्षक शैली देखें। पढ़ने की आसानी, उपलब्ध भाषाएँ और पाठ का समय अलग रखें।",
+      "seo_title": "Geo IPTV उपशीर्षक शैली: पहले Apple TV की सेटिंग देखें",
+      "seo_description": "प्लेयर का ट्रैक बदलने से पहले Apple TV की मौजूदा उपशीर्षक शैली देखें। पढ़ने की आसानी, उपलब्ध भाषाएँ और पाठ का समय अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहले से दिखता पाठ पहचानें",
+          "paragraphs": [
+            "Geo IPTV उपशीर्षक शैली की जाँच उस पाठ से शुरू करें जो दिखता है लेकिन पढ़ना कठिन है। आकार, स्पष्टता या पृष्ठभूमि को गायब पाठ से अलग बताएँ। Apple TV 4K में सिस्टम की उपशीर्षक शैली की पसंद होती है; यह इंस्टॉल प्लेयर के उपलब्ध ट्रैक से अलग स्तर है। वही अनुमत वीडियो और वही उपशीर्षक चुने रखें, ताकि तुलना किसी दूसरे कार्यक्रम की खोज न बन जाए।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सिस्टम की मौजूदा शैली पढ़ें",
+          "paragraphs": [
+            "Apple का बताया रास्ता सेटिंग, ऐक्सेसिबिलिटी, उपशीर्षक और क्लोज़्ड कैप्शनिंग, फिर शैली है। पहले मौजूदा पसंद पढ़ें। गाइड में फ़ॉन्ट, आकार, रंग और पृष्ठभूमि के विकल्प हैं। मालिक बदलाव चाहे तो एक मौजूदा शैली की तुलना करें और मूल चुनाव लिखें। दूसरे दर्शकों के लिए उपयोगी ऐक्सेसिबिलिटी पसंद बनाए रखें; कई नई शैलियाँ बनाने या खाते की जानकारी बदलने की जरूरत नहीं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेयर अलग से जाँचें",
+          "paragraphs": [
+            "प्लेयर पर लौटकर देखें कि वही उपशीर्षक बदला या नहीं। यह न मानें कि हर दूसरे प्रकाशक का प्लेयर सिस्टम शैली अपनाता है; उसके अपने लिखित नियंत्रण हों तो उन्हें देखें। शैली गायब भाषा नहीं जोड़ती और पाठ का समय नहीं सुधारती। कुछ न बदले तो Apple TV मॉडल, सॉफ़्टवेयर, प्लेयर संस्करण और दोनों स्क्रीन बताएँ। बेकार बदलाव वापस करें और सहेजी पहुँच बनाए रखें। स्क्रीनशॉट में निजी प्लेबैक पते छिपाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple: subtitle and caption styles on Apple TV 4K",
+      "url": "https://support.apple.com/en-ca/guide/tv/atvb1d61ca06/tvos"
+    }
+  ]
+}
