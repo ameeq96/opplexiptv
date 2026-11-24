@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-24",
+  "topic": "Check Google Play Family Library eligibility for a purchased player separately from in-app charges, Opplex or Filex service allowances and the actual Get IPTV order/setup state.",
+  "primary_keyword": "Get IPTV player purchase sharing",
+  "slug": "getiptv-player-purchase-family-library-eligibility",
+  "translations": {
+    "en": {
+      "title": "Get IPTV player purchase sharing: check Family Library eligibility",
+      "excerpt": "Check whether a purchased Google Play player is eligible for Family Library. Keep app purchase sharing separate from in-app charges, Opplex or Filex access and order status.",
+      "seo_title": "Get IPTV player purchase sharing: check Family Library eligibility",
+      "seo_description": "Check whether a purchased Google Play player is eligible for Family Library. Keep app purchase sharing separate from in-app charges, Opplex or Filex access and order status.",
+      "sections": [
+        {
+          "heading": "Identify the purchase you want to share",
+          "paragraphs": [
+            "Get IPTV player purchase sharing starts with the actual app purchase, not a viewing-plan promise. Check the Google Play profile used, exact player name and publisher. Google’s Family Library supports eligible purchased apps, while in-app purchases and apps obtained at no charge cannot be shared through this feature. A free download or a paid upgrade inside a player is therefore a different case from purchasing an eligible app."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read eligibility on that player’s listing",
+          "paragraphs": [
+            "Look for the Family Library icon on the purchased player’s details page. Google also describes checking About this app and More info for an eligibility statement. In an existing, properly configured family setup, its documented route for an individual app is Manage apps and devices, Installed, then the purchased app and its Family Library control. Read what your listing actually offers. Do not change family membership, payment settings or parental controls just to investigate an absent option."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep viewing access and setup separate",
+          "paragraphs": [
+            "Sharing an eligible app purchase does not establish permission to share an Opplex or Filex viewing plan. Confirm the selected provider, duration and recorded Get IPTV order/setup state separately. Player costs and service payments remain different; ask about any unstated Filex connection allowance. An app receipt is not confirmation that the service order is paid or activated. Tell support which purchase or listing is involved without exposing account details, private receipts or playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Get IPTV: comprueba si puedes compartir la compra del reproductor",
+      "excerpt": "Comprueba si un reproductor comprado en Google Play admite la Biblioteca familiar. Separa esa compra de los cargos internos, el acceso Opplex o Filex y el estado del pedido.",
+      "seo_title": "Get IPTV: comprueba si puedes compartir la compra del reproductor",
+      "seo_description": "Comprueba si un reproductor comprado en Google Play admite la Biblioteca familiar. Separa esa compra de los cargos internos, el acceso Opplex o Filex y el estado del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica la compra que quieres compartir",
+          "paragraphs": [
+            "Compartir la compra de un reproductor para Get IPTV empieza por la aplicación concreta, no por una promesa sobre el plan de televisión. Comprueba el perfil de Google Play, el nombre exacto y el editor. La Biblioteca familiar admite aplicaciones compradas que cumplen los requisitos; las compras internas y las aplicaciones obtenidas gratis no se comparten mediante esta función. Una descarga gratuita o una mejora pagada dentro del reproductor son casos distintos de comprar una aplicación apta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee los requisitos de esa ficha",
+          "paragraphs": [
+            "Busca el icono de Biblioteca familiar en los detalles del reproductor comprado. Google también indica revisar Acerca de esta aplicación y Más información para consultar si es apta. En una familia ya configurada correctamente, la ruta documentada para una aplicación es Gestionar aplicaciones y dispositivo, Instaladas, la aplicación comprada y su control de Biblioteca familiar. Lee lo que ofrece esa ficha. No cambies miembros, pagos ni controles parentales solo para investigar una opción ausente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa el acceso y la configuración",
+          "paragraphs": [
+            "Compartir una aplicación apta no demuestra permiso para compartir un plan Opplex o Filex. Confirma por separado proveedor, duración y estado registrado del pedido y configuración de Get IPTV. Costes del reproductor y pagos del servicio son distintos; pregunta por cualquier límite Filex no indicado. Un recibo de aplicación no confirma pago ni activación del servicio. Explica qué compra o ficha consultas sin revelar cuentas, recibos privados ni direcciones de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Get IPTV : vérifier le partage de l’achat d’un lecteur",
+      "excerpt": "Vérifiez si un lecteur acheté sur Google Play est éligible à la bibliothèque famille. Distinguez cet achat des paiements intégrés, de l’accès Opplex ou Filex et de la commande.",
+      "seo_title": "Get IPTV : vérifier le partage de l’achat d’un lecteur",
+      "seo_description": "Vérifiez si un lecteur acheté sur Google Play est éligible à la bibliothèque famille. Distinguez cet achat des paiements intégrés, de l’accès Opplex ou Filex et de la commande.",
+      "sections": [
+        {
+          "heading": "Identifiez l’achat à partager",
+          "paragraphs": [
+            "Le partage de l’achat d’un lecteur pour Get IPTV concerne d’abord l’application exacte, pas une promesse sur le forfait de télévision. Vérifiez le profil Google Play utilisé, le nom et l’éditeur. La bibliothèque famille accepte les applications achetées éligibles ; les achats intégrés et les applications obtenues gratuitement ne se partagent pas par cette fonction. Un téléchargement gratuit ou une option payée dans le lecteur constitue donc un autre cas qu’une application éligible achetée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez l’éligibilité de cette fiche",
+          "paragraphs": [
+            "Cherchez l’icône de bibliothèque famille dans les détails du lecteur acheté. Google indique aussi de consulter À propos de cette application puis Plus d’informations pour vérifier l’éligibilité. Pour une famille déjà correctement configurée, le parcours documenté passe par Gérer les applications et l’appareil, Installées, puis l’application achetée et son réglage de bibliothèque famille. Lisez les possibilités réelles de la fiche. Ne modifiez ni les membres, ni les paiements, ni le contrôle parental pour examiner une option absente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguez accès et configuration du service",
+          "paragraphs": [
+            "Partager une application éligible ne prouve pas l’autorisation de partager un forfait Opplex ou Filex. Confirmez séparément fournisseur, durée et état enregistré de la commande et de la configuration Get IPTV. Les frais du lecteur restent distincts du service ; demandez toute limite Filex non précisée. Un reçu d’application ne confirme ni paiement ni activation du service. Expliquez la fiche ou l’achat concerné sans divulguer comptes, reçus privés ou adresses de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Get IPTV: controlla la condivisione dell’acquisto del lettore",
+      "excerpt": "Verifica se un lettore acquistato su Google Play è idoneo alla Raccolta di famiglia. Distingui l’acquisto da costi interni all’app, accesso Opplex o Filex e stato dell’ordine.",
+      "seo_title": "Get IPTV: controlla la condivisione dell’acquisto del lettore",
+      "seo_description": "Verifica se un lettore acquistato su Google Play è idoneo alla Raccolta di famiglia. Distingui l’acquisto da costi interni all’app, accesso Opplex o Filex e stato dell’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica l’acquisto da condividere",
+          "paragraphs": [
+            "La condivisione dell’acquisto di un lettore per Get IPTV parte dall’app concreta, non da una promessa sull’abbonamento televisivo. Controlla profilo Google Play utilizzato, nome preciso ed editore. La Raccolta di famiglia supporta app acquistate idonee; acquisti in-app e applicazioni ottenute gratuitamente non si condividono tramite questa funzione. Un download gratuito o un aggiornamento a pagamento dentro il lettore è quindi diverso dall’acquisto di un’app idonea."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’idoneità nella scheda del lettore",
+          "paragraphs": [
+            "Cerca l’icona della Raccolta di famiglia nei dettagli del lettore acquistato. Google indica anche Informazioni su questa app e Altre informazioni per verificare l’idoneità. Per una famiglia già configurata correttamente, il percorso documentato della singola app passa da Gestisci app e dispositivo, Installate, poi dall’app acquistata e dal relativo controllo della Raccolta di famiglia. Leggi cosa offre davvero la scheda. Non cambiare membri, pagamenti o controlli parentali solo per esaminare un’opzione assente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa accesso e configurazione del servizio",
+          "paragraphs": [
+            "Condividere un’app idonea non dimostra il permesso di condividere un abbonamento Opplex o Filex. Conferma separatamente fornitore, durata e stato registrato dell’ordine e della configurazione Get IPTV. Costi del lettore e pagamenti del servizio sono distinti; chiedi eventuali limiti Filex non dichiarati. Una ricevuta dell’app non conferma pagamento o attivazione del servizio. Descrivi acquisto o scheda senza esporre account, ricevute private o indirizzi di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV: controleer het delen van een gekochte speler",
+      "excerpt": "Controleer of een op Google Play gekochte speler geschikt is voor de gezinsbibliotheek. Houd de appaankoop apart van in-appkosten, Opplex- of Filex-toegang en bestelstatus.",
+      "seo_title": "Get IPTV: controleer het delen van een gekochte speler",
+      "seo_description": "Controleer of een op Google Play gekochte speler geschikt is voor de gezinsbibliotheek. Houd de appaankoop apart van in-appkosten, Opplex- of Filex-toegang en bestelstatus.",
+      "sections": [
+        {
+          "heading": "Bepaal welke aankoop je wilt delen",
+          "paragraphs": [
+            "Het delen van een gekochte speler voor Get IPTV begint bij de echte appaankoop, niet bij een belofte over het kijkabonnement. Controleer het gebruikte Google Play-profiel, de exacte spelernaam en uitgever. De gezinsbibliotheek ondersteunt geschikte gekochte apps; in-appaankopen en gratis verkregen apps kun je niet via deze functie delen. Een gratis download of betaalde uitbreiding binnen een speler is dus iets anders dan een geschikte app kopen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de geschiktheid op die apppagina",
+          "paragraphs": [
+            "Zoek het pictogram van de gezinsbibliotheek bij de details van de gekochte speler. Google noemt ook Over deze app en Meer informatie om geschiktheid te controleren. Binnen een al correct ingesteld gezin loopt de beschreven route via Apps en apparaat beheren, Geïnstalleerd, de gekochte app en de bijbehorende gezinsbibliotheekoptie. Lees wat de concrete apppagina biedt. Wijzig geen gezinsleden, betaalinstellingen of ouderlijk toezicht alleen om een ontbrekende optie te onderzoeken."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd kijktoegang en instelling apart",
+          "paragraphs": [
+            "Een geschikte appaankoop delen betekent geen toestemming om een Opplex- of Filex-kijkabonnement te delen. Bevestig aanbieder, looptijd en geregistreerde Get IPTV-bestel- en instelstatus afzonderlijk. Spelerkosten en servicebetalingen blijven verschillend; vraag naar een niet-vermelde Filex-verbindingslimiet. Een appbon bevestigt niet dat de dienst is betaald of geactiveerd. Meld welke aankoop of apppagina je bedoelt zonder accountgegevens, privébonnen of afspeeladressen te delen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Get IPTV: verifique a partilha da compra do leitor",
+      "excerpt": "Verifique se um leitor comprado no Google Play é elegível para a Biblioteca da família. Separe a compra de custos internos, acesso Opplex ou Filex e estado da encomenda.",
+      "seo_title": "Get IPTV: verifique a partilha da compra do leitor",
+      "seo_description": "Verifique se um leitor comprado no Google Play é elegível para a Biblioteca da família. Separe a compra de custos internos, acesso Opplex ou Filex e estado da encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique a compra que pretende partilhar",
+          "paragraphs": [
+            "A partilha da compra de um leitor para Get IPTV começa pela aplicação concreta, não por uma promessa sobre o plano de televisão. Confirme o perfil Google Play utilizado, nome exato e editor. A Biblioteca da família permite aplicações compradas elegíveis; compras na aplicação e aplicações obtidas gratuitamente não são partilhadas por esta função. Um download gratuito ou uma melhoria paga dentro do leitor é, portanto, diferente de comprar uma aplicação elegível."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a elegibilidade na ficha do leitor",
+          "paragraphs": [
+            "Procure o ícone da Biblioteca da família nos detalhes do leitor comprado. A Google também indica Acerca desta aplicação e Mais informações para verificar a elegibilidade. Numa família já corretamente configurada, o percurso documentado passa por Gerir aplicações e dispositivo, Instaladas, a aplicação comprada e o respetivo controlo da Biblioteca da família. Leia o que a ficha realmente permite. Não altere membros, pagamentos ou controlos parentais apenas para investigar uma opção ausente."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe acesso e configuração do serviço",
+          "paragraphs": [
+            "Partilhar uma aplicação elegível não comprova autorização para partilhar um plano Opplex ou Filex. Confirme separadamente fornecedor, duração e estado registado da encomenda e configuração Get IPTV. Custos do leitor e pagamentos do serviço são distintos; pergunte por limites de ligações Filex não indicados. Um recibo da aplicação não confirma pagamento ou ativação do serviço. Explique a compra ou ficha sem divulgar contas, recibos privados ou endereços de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Get IPTV: проверьте возможность семейного доступа к покупке плеера",
+      "excerpt": "Проверьте, подходит ли купленный в Google Play плеер для Семейной библиотеки. Отделяйте покупку приложения от внутренних платежей, доступа Opplex или Filex и заказа.",
+      "seo_title": "Get IPTV: проверьте возможность семейного доступа к покупке плеера",
+      "seo_description": "Проверьте, подходит ли купленный в Google Play плеер для Семейной библиотеки. Отделяйте покупку приложения от внутренних платежей, доступа Opplex или Filex и заказа.",
+      "sections": [
+        {
+          "heading": "Определите, какую покупку хотите открыть семье",
+          "paragraphs": [
+            "Семейный доступ к покупке плеера для Get IPTV начинается с конкретного приложения, а не с обещания о телевизионном тарифе. Проверьте использованный профиль Google Play, точное название и издателя. Семейная библиотека поддерживает подходящие купленные приложения; покупки внутри приложений и бесплатно полученные приложения через эту функцию не передаются. Бесплатная загрузка или платное расширение внутри плеера — другой случай, чем покупка подходящего приложения."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте условия в карточке приложения",
+          "paragraphs": [
+            "Ищите значок Семейной библиотеки в карточке купленного плеера. Google также предлагает проверять сведения о доступности в разделах «Об этом приложении» и дополнительной информации. Для уже правильно настроенной семьи описан путь через управление приложениями и устройством, установленные приложения, выбранное купленное приложение и его переключатель Семейной библиотеки. Смотрите, что действительно предлагает конкретная карточка. Не меняйте состав семьи, платёжные настройки или родительский контроль только ради поиска отсутствующей функции."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте доступ к просмотру от настройки",
+          "paragraphs": [
+            "Семейный доступ к подходящему приложению не подтверждает разрешение делиться тарифом Opplex или Filex. Отдельно уточните провайдера, срок и зарегистрированное состояние заказа и настройки Get IPTV. Плата за плеер и оплата услуги различаются; неизвестный лимит подключений Filex необходимо уточнить. Чек приложения не подтверждает оплату или активацию услуги. Сообщайте поддержке, о какой покупке или карточке идёт речь, без данных аккаунта, закрытых чеков и адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV: پلیئر کی خریداری کا خاندانی اشتراک پہلے جانچیں",
+      "excerpt": "جانچیں کہ Google Play سے خریدا ہوا پلیئر خاندانی لائبریری کے لیے اہل ہے یا نہیں۔ ایپ کی خریداری کو اندرونی فیس، Opplex یا Filex رسائی اور آرڈر سے الگ رکھیں۔",
+      "seo_title": "Get IPTV: پلیئر کی خریداری کا خاندانی اشتراک پہلے جانچیں",
+      "seo_description": "جانچیں کہ Google Play سے خریدا ہوا پلیئر خاندانی لائبریری کے لیے اہل ہے یا نہیں۔ ایپ کی خریداری کو اندرونی فیس، Opplex یا Filex رسائی اور آرڈر سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "معلوم کریں کون سی خریداری بانٹنی ہے",
+          "paragraphs": [
+            "Get IPTV کے لیے پلیئر کی خریداری بانٹنے کا سوال اصل ایپ سے شروع ہوتا ہے، دیکھنے کے پلان کے کسی وعدے سے نہیں۔ استعمال شدہ Google Play پروفائل، پلیئر کا پورا نام اور ناشر دیکھیں۔ خاندانی لائبریری اہل خریدی ہوئی ایپس کی سہولت دیتی ہے؛ ایپ کے اندر کی خریداری اور مفت حاصل کردہ ایپس اس سہولت سے شیئر نہیں ہوتیں۔ اس لیے مفت ڈاؤن لوڈ یا پلیئر کے اندر خریدا گیا اضافہ، اہل ایپ خریدنے سے مختلف معاملہ ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اسی پلیئر کی فہرست میں اہلیت پڑھیں",
+          "paragraphs": [
+            "خریدے ہوئے پلیئر کی تفصیل میں خاندانی لائبریری کا نشان دیکھیں۔ Google ایپ کے بارے میں اور مزید معلومات والے حصے میں بھی اہلیت دیکھنے کی ہدایت دیتا ہے۔ پہلے سے درست قائم شدہ خاندان میں انفرادی ایپ کے لیے بیان کردہ راستہ ایپس اور آلے کا انتظام، انسٹال شدہ ایپس، پھر خریدی ہوئی ایپ اور اس کی خاندانی لائبریری کی ترتیب ہے۔ دیکھیں اصل فہرست کیا سہولت دیتی ہے۔ صرف غائب اختیار جانچنے کے لیے خاندان کے ارکان، ادائیگی یا والدین کے کنٹرول نہ بدلیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "دیکھنے کی رسائی اور سیٹ اپ الگ رکھیں",
+          "paragraphs": [
+            "اہل ایپ کی خریداری بانٹنے سے Opplex یا Filex کا دیکھنے والا پلان بانٹنے کی اجازت ثابت نہیں ہوتی۔ فراہم کنندہ، مدت اور Get IPTV آرڈر اور سیٹ اپ کی درج شدہ حالت الگ تصدیق کریں۔ پلیئر کی فیس اور سروس کی ادائیگی مختلف ہیں؛ Filex کے غیر واضح کنکشن کی حد پوچھیں۔ ایپ کی رسید سروس کی ادائیگی یا فعال ہونے کا ثبوت نہیں۔ سپورٹ کو متعلقہ خریداری یا فہرست بتائیں، اکاؤنٹ کی معلومات، نجی رسید یا پلے بیک پتہ ظاہر نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Get IPTV: تحقّق من أهلية مشاركة شراء المشغّل عائلياً",
+      "excerpt": "تحقق من أهلية مشغّل اشتريته من Google Play لمكتبة العائلة. افصل شراء التطبيق عن الرسوم الداخلية ووصول Opplex أو Filex وحالة طلب الخدمة.",
+      "seo_title": "Get IPTV: تحقّق من أهلية مشاركة شراء المشغّل عائلياً",
+      "seo_description": "تحقق من أهلية مشغّل اشتريته من Google Play لمكتبة العائلة. افصل شراء التطبيق عن الرسوم الداخلية ووصول Opplex أو Filex وحالة طلب الخدمة.",
+      "sections": [
+        {
+          "heading": "حدّد عملية الشراء المراد مشاركتها",
+          "paragraphs": [
+            "تبدأ مشاركة شراء مشغّل لاستخدام Get IPTV بالتطبيق الفعلي، لا بوعد يتعلق بباقة المشاهدة. تحقق من ملف Google Play المستخدم واسم المشغّل والناشر بدقة. تدعم مكتبة العائلة التطبيقات المشتراة المؤهلة، بينما لا تُشارك المشتريات داخل التطبيقات ولا التطبيقات التي حصلت عليها مجاناً عبر هذه الميزة. لذا يختلف التنزيل المجاني أو شراء ترقية داخل المشغّل عن شراء تطبيق مؤهل للمشاركة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الأهلية في صفحة هذا المشغّل",
+          "paragraphs": [
+            "ابحث عن رمز مكتبة العائلة في تفاصيل المشغّل المشترى. تشرح Google أيضاً التحقق من الأهلية ضمن لمحة عن هذا التطبيق والمزيد من المعلومات. داخل عائلة أُعدّت مسبقاً بشكل صحيح، يمر المسار الموثّق للتطبيق الفردي عبر إدارة التطبيقات والجهاز، ثم التطبيقات المثبتة، ثم التطبيق المشترى وإعداد مكتبة العائلة الخاص به. اقرأ ما تتيحه الصفحة فعلاً. لا تغيّر أفراد العائلة أو إعدادات الدفع أو الرقابة الأبوية لمجرد فحص خيار مفقود."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل وصول المشاهدة عن إعداد التطبيق",
+          "paragraphs": [
+            "لا تثبت مشاركة شراء تطبيق مؤهل وجود إذن لمشاركة باقة مشاهدة Opplex أو Filex. تحقّق منفصلاً من المزود والمدة وحالة طلب Get IPTV وإعداده المسجلة. تكاليف المشغّل ومدفوعات الخدمة مختلفة؛ اسأل عن حد اتصالات Filex غير المذكور. إيصال التطبيق لا يؤكد دفع الخدمة أو تفعيلها. أخبر الدعم بالشراء أو صفحة التطبيق المقصودة دون كشف بيانات الحساب أو الإيصالات الخاصة أو عناوين التشغيل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV: प्लेयर की खरीद परिवार से साझा करने की पात्रता जाँचें",
+      "excerpt": "जाँचें कि Google Play से खरीदा प्लेयर परिवार लाइब्रेरी के योग्य है या नहीं। ऐप की खरीद को अंदरूनी शुल्क, Opplex या Filex पहुँच और सेवा के ऑर्डर से अलग रखें।",
+      "seo_title": "Get IPTV: प्लेयर की खरीद परिवार से साझा करने की पात्रता जाँचें",
+      "seo_description": "जाँचें कि Google Play से खरीदा प्लेयर परिवार लाइब्रेरी के योग्य है या नहीं। ऐप की खरीद को अंदरूनी शुल्क, Opplex या Filex पहुँच और सेवा के ऑर्डर से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन सी खरीद साझा करनी है",
+          "paragraphs": [
+            "Get IPTV के लिए प्लेयर की खरीद साझा करने का सवाल वास्तविक ऐप से शुरू होता है, देखने के प्लान के किसी वादे से नहीं। इस्तेमाल किया गया Google Play प्रोफ़ाइल, प्लेयर का पूरा नाम और प्रकाशक जाँचें। परिवार लाइब्रेरी योग्य खरीदे गए ऐप का समर्थन करती है; ऐप के अंदर की खरीद और मुफ़्त मिले ऐप इस सुविधा से साझा नहीं होते। इसलिए मुफ़्त डाउनलोड या प्लेयर के भीतर खरीदा अपग्रेड, योग्य ऐप खरीदने से अलग मामला है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "उसी प्लेयर की सूची में पात्रता पढ़ें",
+          "paragraphs": [
+            "खरीदे गए प्लेयर की जानकारी में परिवार लाइब्रेरी का चिह्न देखें। Google ऐप के बारे में और ज़्यादा जानकारी वाले भाग में भी पात्रता जाँचने को कहता है। पहले से सही तरह स्थापित परिवार में किसी एक ऐप का बताया गया रास्ता ऐप और डिवाइस प्रबंधित करें, इंस्टॉल किए गए ऐप, फिर खरीदा ऐप और उसका परिवार लाइब्रेरी विकल्प है। देखें कि वास्तविक सूची क्या सुविधा देती है। केवल गायब विकल्प जाँचने के लिए परिवार के सदस्य, भुगतान सेटिंग या अभिभावकीय नियंत्रण न बदलें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "देखने की पहुँच और सेटअप अलग रखें",
+          "paragraphs": [
+            "योग्य ऐप की खरीद साझा करना Opplex या Filex का देखने वाला प्लान साझा करने की अनुमति साबित नहीं करता। प्रदाता, अवधि और Get IPTV के ऑर्डर तथा सेटअप की दर्ज स्थिति अलग से पुष्टि करें। प्लेयर का खर्च और सेवा का भुगतान अलग हैं; Filex की अघोषित कनेक्शन सीमा पूछें। ऐप की रसीद सेवा का भुगतान या सक्रिय होना प्रमाणित नहीं करती। सहायता को संबंधित खरीद या सूची बताएँ, खाते की जानकारी, निजी रसीद या प्लेबैक पते न दिखाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Play Help: Family Library app eligibility and exclusions",
+      "url": "https://support.google.com/googleplay/answer/7007852?hl=en"
+    }
+  ]
+}

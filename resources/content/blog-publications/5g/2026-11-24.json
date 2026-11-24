@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-24",
+  "topic": "Identify Android screen pinning and its navigation-specific owner-authorised exit separately from a player lock, daily timer and 5G Live IPTV provider access while retaining device security.",
+  "primary_keyword": "5G Live IPTV pinned screen",
+  "slug": "5g-android-pinned-screen-and-authorised-navigation-exit",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV pinned screen: why can’t you leave the player?",
+      "excerpt": "Identify Android screen pinning before treating restricted navigation as a player fault. Use the owner’s documented exit and keep device-lock protections.",
+      "seo_title": "5G Live IPTV pinned screen: why can’t you leave the player?",
+      "seo_description": "Identify Android screen pinning before treating restricted navigation as a player fault. Use the owner’s documented exit and keep device-lock protections.",
+      "sections": [
+        {
+          "heading": "Identify what is restricted",
+          "paragraphs": [
+            "A 5G Live IPTV pinned screen check concerns an Android device that stays inside one app when you try to return to other apps. Google describes app pinning as keeping one app visible until it is unpinned. That is different from a player’s own control lock or a daily app timer. Note the device model, Android version and navigation style before following instructions intended for another phone."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the matching owner-authorised exit",
+          "paragraphs": [
+            "Google lists different unpinning actions: with gesture navigation, swipe up and hold; with two-button navigation, hold Back and Home; with three-button navigation, hold Back and Overview. Use only the method matching the device. If Android requests a PIN, pattern or password, let the owner enter it privately. Do not disable the screen lock, share that secret with support or look for a bypass. Device manufacturers may use different menus."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android screen pinning help",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Compare navigation after leaving",
+          "paragraphs": [
+            "Once the owner has unpinned the screen, check whether normal app switching returns. Then reopen the existing player without deleting its data. Record a remaining playback symptom separately from restricted system navigation. Screen pinning does not establish that a plan expired, and leaving it does not add viewing access or improve a source. If the expected controls are absent, consult the manufacturer’s guide rather than install an unknown unlocking tool. Keep account details and private playback addresses out of screenshots."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pantalla fijada con 5G Live IPTV: ¿por qué no puedes salir?",
+      "excerpt": "Identifica la fijación de pantalla de Android antes de culpar al reproductor. Usa la salida documentada con el propietario y conserva el bloqueo del dispositivo.",
+      "seo_title": "Pantalla fijada con 5G Live IPTV: ¿por qué no puedes salir?",
+      "seo_description": "Identifica la fijación de pantalla de Android antes de culpar al reproductor. Usa la salida documentada con el propietario y conserva el bloqueo del dispositivo.",
+      "sections": [
+        {
+          "heading": "Identifica qué está limitado",
+          "paragraphs": [
+            "La revisión de una pantalla fijada con 5G Live IPTV corresponde a un dispositivo Android que permanece en una aplicación al intentar volver a las demás. Google explica que fijar una aplicación la mantiene visible hasta desfijarla. No es el bloqueo de controles del reproductor ni un temporizador diario. Anota modelo, versión de Android y tipo de navegación antes de seguir instrucciones para otro teléfono."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa la salida adecuada con autorización",
+          "paragraphs": [
+            "Google distingue varias acciones: con gestos, desliza hacia arriba y mantén; con dos botones, mantén Atrás e Inicio; con tres, mantén Atrás y Vista general. Usa solo el método correspondiente al dispositivo. Si Android pide PIN, patrón o contraseña, deja que el propietario lo introduzca en privado. No desactives el bloqueo, compartas ese secreto con soporte ni busques eludirlo. Los fabricantes pueden usar menús distintos."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de fijación de pantalla Android",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Compara la navegación después de salir",
+          "paragraphs": [
+            "Cuando el propietario desfije la pantalla, comprueba si vuelve el cambio normal entre aplicaciones. Abre después el reproductor existente sin borrar datos. Registra cualquier problema de reproducción por separado de la navegación del sistema. La fijación no demuestra que el plan haya caducado, ni salir de ella añade acceso o mejora la fuente. Si faltan los controles previstos, consulta al fabricante en lugar de instalar una herramienta desconocida de desbloqueo. Evita datos de cuenta y direcciones privadas en capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écran épinglé avec 5G Live IPTV : pourquoi ne pouvez-vous pas sortir ?",
+      "excerpt": "Identifiez l’épinglage Android avant d’accuser le lecteur. Utilisez la sortie documentée avec le propriétaire et conservez les protections de verrouillage.",
+      "seo_title": "Écran épinglé avec 5G Live IPTV : pourquoi ne pouvez-vous pas sortir ?",
+      "seo_description": "Identifiez l’épinglage Android avant d’accuser le lecteur. Utilisez la sortie documentée avec le propriétaire et conservez les protections de verrouillage.",
+      "sections": [
+        {
+          "heading": "Identifiez la restriction",
+          "paragraphs": [
+            "La vérification d’un écran épinglé avec 5G Live IPTV concerne un appareil Android qui reste dans une application lorsque vous tentez d’en ouvrir d’autres. Google décrit l’épinglage comme le maintien d’une application à l’écran jusqu’à son désépinglage. Cela diffère du verrouillage des commandes du lecteur ou d’une limite quotidienne. Notez modèle, version Android et mode de navigation avant d’appliquer les instructions d’un autre téléphone."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utilisez la sortie adaptée avec le propriétaire",
+          "paragraphs": [
+            "Google distingue plusieurs actions : avec les gestes, balayez vers le haut et maintenez ; avec deux boutons, maintenez Retour et Accueil ; avec trois, Retour et Aperçu. Choisissez uniquement la méthode correspondant à l’appareil. Si Android demande un code, un schéma ou un mot de passe, laissez le propriétaire le saisir en privé. Ne désactivez pas le verrouillage, ne communiquez pas ce secret au support et ne cherchez pas à le contourner. Les menus peuvent varier selon le fabricant."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide à l’épinglage Android",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez ensuite la navigation",
+          "paragraphs": [
+            "Après le désépinglage par le propriétaire, vérifiez si le passage habituel entre applications revient. Rouvrez le lecteur existant sans effacer ses données. Consignez séparément tout problème de lecture et la restriction de navigation système. L’épinglage ne prouve pas l’expiration d’un forfait ; le quitter n’ajoute ni accès ni qualité à une source. Si les commandes attendues manquent, consultez le fabricant plutôt qu’installer un outil de déverrouillage inconnu. Écartez des captures les comptes et adresses de lecture privées."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Schermata bloccata con 5G Live IPTV: perché non puoi uscire?",
+      "excerpt": "Riconosci il blocco di un’app sullo schermo Android prima di attribuirlo al lettore. Usa l’uscita prevista con il proprietario e conserva le protezioni.",
+      "seo_title": "Schermata bloccata con 5G Live IPTV: perché non puoi uscire?",
+      "seo_description": "Riconosci il blocco di un’app sullo schermo Android prima di attribuirlo al lettore. Usa l’uscita prevista con il proprietario e conserva le protezioni.",
+      "sections": [
+        {
+          "heading": "Identifica che cosa è limitato",
+          "paragraphs": [
+            "La verifica di una schermata bloccata con 5G Live IPTV riguarda un dispositivo Android che resta in un’app quando tenti di tornare alle altre. Google descrive il fissaggio come il mantenimento di un’app visibile finché non viene sbloccata. È diverso dal blocco dei comandi del lettore o da un limite giornaliero. Annota modello, versione Android e tipo di navigazione prima di seguire istruzioni per un altro telefono."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa l’uscita corretta con il proprietario",
+          "paragraphs": [
+            "Google elenca azioni diverse: con i gesti, scorri verso l’alto e tieni premuto; con due pulsanti, tieni premuti Indietro e Home; con tre, Indietro e Panoramica. Usa solo il metodo del dispositivo. Se Android richiede PIN, sequenza o password, lascia che il proprietario li inserisca in privato. Non disattivare il blocco, non condividere il segreto con l’assistenza e non cercare di aggirarlo. I menu possono variare tra produttori."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida al blocco schermo di un’app Android",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta la navigazione dopo l’uscita",
+          "paragraphs": [
+            "Dopo che il proprietario ha liberato lo schermo, verifica il normale passaggio tra app. Riapri il lettore esistente senza eliminarne i dati. Registra un eventuale problema di riproduzione separatamente dalla navigazione di sistema limitata. Il fissaggio non dimostra la scadenza del piano; uscirne non aggiunge accesso né migliora la fonte. Se mancano i comandi previsti, consulta il produttore anziché installare strumenti sconosciuti di sblocco. Escludi dalle schermate dati dell’account e indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-scherm vastgezet: waarom kun je de speler niet verlaten?",
+      "excerpt": "Herken Android-schermvastzetting voordat je beperkte navigatie als spelerfout ziet. Gebruik de gedocumenteerde uitgang met de eigenaar en behoud vergrendeling.",
+      "seo_title": "5G Live IPTV-scherm vastgezet: waarom kun je de speler niet verlaten?",
+      "seo_description": "Herken Android-schermvastzetting voordat je beperkte navigatie als spelerfout ziet. Gebruik de gedocumenteerde uitgang met de eigenaar en behoud vergrendeling.",
+      "sections": [
+        {
+          "heading": "Bepaal wat beperkt is",
+          "paragraphs": [
+            "Bij een controle van een vastgezet 5G Live IPTV-scherm blijft een Android-apparaat in één app wanneer je naar andere apps wilt. Google beschrijft appvastzetting als één app zichtbaar houden tot deze wordt losgemaakt. Dat verschilt van een bedieningsslot in de speler of een dagelijkse apptimer. Noteer toestelmodel, Android-versie en navigatietype voordat je instructies voor een andere telefoon volgt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de juiste uitgang met toestemming",
+          "paragraphs": [
+            "Google noemt verschillende handelingen: bij gebaren omhoog vegen en vasthouden; bij twee knoppen Terug en Home vasthouden; bij drie knoppen Terug en Overzicht vasthouden. Gebruik alleen de methode voor dit apparaat. Vraagt Android om pincode, patroon of wachtwoord, laat de eigenaar dit privé invoeren. Schakel de schermvergrendeling niet uit, deel het geheim niet met ondersteuning en zoek geen omweg. Fabrikanten kunnen andere menu’s gebruiken."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Hulp bij Android-schermvastzetting",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk de navigatie na afloop",
+          "paragraphs": [
+            "Controleer na het losmaken door de eigenaar of normaal wisselen tussen apps terugkomt. Open daarna de bestaande speler zonder gegevens te wissen. Noteer een resterend afspeelprobleem los van beperkte systeemnavigatie. Vastzetting bewijst niet dat een abonnement verlopen is; stoppen ermee voegt geen kijktoegang toe en verbetert de bron niet. Ontbreken de verwachte knoppen, raadpleeg dan de fabrikant in plaats van een onbekend ontgrendelprogramma te installeren. Houd accountgegevens en privéafspeeladressen buiten schermafbeeldingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Tela fixada com 5G Live IPTV: por que não consegue sair?",
+      "excerpt": "Identifique a fixação de tela do Android antes de culpar o reprodutor. Use a saída documentada com o proprietário e mantenha as proteções de bloqueio.",
+      "seo_title": "Tela fixada com 5G Live IPTV: por que não consegue sair?",
+      "seo_description": "Identifique a fixação de tela do Android antes de culpar o reprodutor. Use a saída documentada com o proprietário e mantenha as proteções de bloqueio.",
+      "sections": [
+        {
+          "heading": "Identifique a restrição",
+          "paragraphs": [
+            "A verificação de uma tela fixada com 5G Live IPTV envolve um Android que permanece em um aplicativo quando você tenta voltar aos demais. O Google descreve a fixação como manter um aplicativo visível até desafixá-lo. Isso difere do bloqueio dos controles do reprodutor ou de um limite diário. Anote modelo, versão do Android e tipo de navegação antes de seguir instruções de outro telefone."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use a saída correta com autorização",
+          "paragraphs": [
+            "O Google diferencia as ações: com gestos, deslize para cima e segure; com dois botões, segure Voltar e Início; com três, Voltar e Visão geral. Use somente o método correspondente ao aparelho. Se o Android pedir PIN, padrão ou senha, deixe o proprietário digitar em particular. Não desative o bloqueio, compartilhe esse segredo com o suporte nem procure contorná-lo. Fabricantes podem usar menus diferentes."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda de fixação de tela no Android",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Compare a navegação depois de sair",
+          "paragraphs": [
+            "Depois que o proprietário desafixar a tela, veja se a troca normal entre aplicativos retorna. Reabra o reprodutor existente sem apagar dados. Registre qualquer sintoma de reprodução separadamente da navegação limitada do sistema. A fixação não prova que o plano venceu; sair dela não acrescenta acesso nem melhora a fonte. Se os controles esperados não aparecerem, consulte o fabricante em vez de instalar uma ferramenta desconhecida de desbloqueio. Não inclua dados de conta ou endereços privados de reprodução nas capturas."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Закреплённый экран 5G Live IPTV: почему нельзя выйти из приложения?",
+      "excerpt": "Распознайте закрепление экрана Android, прежде чем винить проигрыватель. Используйте выход с разрешения владельца и сохраняйте защиту блокировки устройства.",
+      "seo_title": "Закреплённый экран 5G Live IPTV: почему нельзя выйти из приложения?",
+      "seo_description": "Распознайте закрепление экрана Android, прежде чем винить проигрыватель. Используйте выход с разрешения владельца и сохраняйте защиту блокировки устройства.",
+      "sections": [
+        {
+          "heading": "Определите ограничение",
+          "paragraphs": [
+            "Проверка закреплённого экрана 5G Live IPTV нужна, когда Android остаётся в одном приложении при попытке перейти к другим. Google описывает закрепление как удержание приложения на экране до открепления. Это отличается от блокировки кнопок проигрывателя или дневного таймера приложения. Запишите модель, версию Android и тип навигации, прежде чем применять инструкцию для другого телефона."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте подходящий выход с владельцем",
+          "paragraphs": [
+            "Google указывает разные действия: при жестах проведите вверх и удерживайте; при двух кнопках удерживайте «Назад» и «Главная»; при трёх — «Назад» и «Обзор». Используйте только метод для этого устройства. Если Android запрашивает PIN, графический ключ или пароль, пусть владелец введёт его конфиденциально. Не отключайте блокировку, не сообщайте секрет поддержке и не ищите обход. Меню производителей могут различаться."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка по закреплению экрана Android",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните навигацию после выхода",
+          "paragraphs": [
+            "После открепления владельцем проверьте обычное переключение приложений. Затем откройте существующий проигрыватель, не удаляя данные. Оставшийся симптом воспроизведения запишите отдельно от ограниченной системной навигации. Закрепление не доказывает истечение тарифа, а выход не добавляет доступ и не улучшает источник. Если ожидаемых элементов нет, обратитесь к руководству производителя вместо установки неизвестного средства разблокировки. Не показывайте данные учётной записи и частные адреса воспроизведения на снимках."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی پِن شدہ اسکرین: پلیئر سے باہر کیوں نہیں جا سکتے؟",
+      "excerpt": "محدود نیویگیشن کو پلیئر کی خرابی سمجھنے سے پہلے Android کی اسکرین پِننگ پہچانیں۔ مالک کے ساتھ دستاویزی طریقے سے نکلیں اور فون کا لاک محفوظ رکھیں۔",
+      "seo_title": "5G Live IPTV کی پِن شدہ اسکرین: پلیئر سے باہر کیوں نہیں جا سکتے؟",
+      "seo_description": "محدود نیویگیشن کو پلیئر کی خرابی سمجھنے سے پہلے Android کی اسکرین پِننگ پہچانیں۔ مالک کے ساتھ دستاویزی طریقے سے نکلیں اور فون کا لاک محفوظ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ پابندی کہاں ہے",
+          "paragraphs": [
+            "5G Live IPTV کی پِن شدہ اسکرین کی جانچ ایسے Android فون کے لیے ہے جو دوسری ایپس پر جانے کی کوشش کے باوجود ایک ہی ایپ میں رہتا ہے۔ Google کے مطابق ایپ پِننگ ایک ایپ کو ہٹانے تک سامنے رکھتی ہے۔ یہ پلیئر کے اپنے کنٹرول لاک یا روزانہ کے ایپ ٹائمر سے الگ ہے۔ دوسرے فون کی ہدایات اپنانے سے پہلے ماڈل، Android ورژن اور نیویگیشن کا انداز لکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مالک کی اجازت سے درست طریقے سے نکلیں",
+          "paragraphs": [
+            "Google مختلف طریقے بتاتا ہے: اشاروں والی نیویگیشن میں اوپر سوائپ کر کے روکے رکھیں؛ دو بٹن ہوں تو واپس اور ہوم کو دبائے رکھیں؛ تین بٹن ہوں تو واپس اور حالیہ ایپس کو دبائے رکھیں۔ صرف اپنے فون والا طریقہ استعمال کریں۔ Android پِن، پیٹرن یا پاس ورڈ مانگے تو مالک اسے نجی طور پر درج کرے۔ نہ اسکرین لاک بند کریں، نہ راز معاونت کو بتائیں اور نہ اسے بائی پاس کرنے کا طریقہ ڈھونڈیں۔ مختلف بنانے والوں کے مینیو الگ ہو سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android اسکرین پِننگ کی رہنمائی",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "باہر آنے کے بعد نیویگیشن کا موازنہ کریں",
+          "paragraphs": [
+            "مالک اسکرین کی پِننگ ہٹا دے تو دیکھیں کہ ایپس بدلنا معمول پر آیا یا نہیں۔ پھر ڈیٹا صاف کیے بغیر موجودہ پلیئر کھولیں۔ باقی رہنے والی پلے بیک علامت کو نظام کی محدود نیویگیشن سے الگ لکھیں۔ پِننگ منصوبہ ختم ہونے کا ثبوت نہیں؛ اس سے نکلنے پر نہ دیکھنے کی رسائی بڑھتی ہے نہ ماخذ بہتر ہوتا ہے۔ متوقع کنٹرول نہ ملیں تو نامعلوم اَن لاکنگ ٹول نصب کرنے کے بجائے بنانے والے کی رہنمائی دیکھیں۔ اسکرین شاٹس میں اکاؤنٹ تفصیل یا نجی پلے بیک پتے شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "شاشة مثبّتة مع 5G Live IPTV: لماذا لا تستطيع مغادرة المشغّل؟",
+      "excerpt": "تعرّف على تثبيت الشاشة في Android قبل اعتبار التنقل المحدود عطلاً بالمشغّل. استخدم الخروج الموثّق مع المالك وحافظ على حماية قفل الجهاز.",
+      "seo_title": "شاشة مثبّتة مع 5G Live IPTV: لماذا لا تستطيع مغادرة المشغّل؟",
+      "seo_description": "تعرّف على تثبيت الشاشة في Android قبل اعتبار التنقل المحدود عطلاً بالمشغّل. استخدم الخروج الموثّق مع المالك وحافظ على حماية قفل الجهاز.",
+      "sections": [
+        {
+          "heading": "حدّد ما الذي أصبح مقيّداً",
+          "paragraphs": [
+            "يتعلق فحص الشاشة المثبّتة مع 5G Live IPTV بجهاز Android يبقى داخل تطبيق واحد عند محاولة الانتقال إلى غيره. يوضح Google أن تثبيت التطبيق يبقيه ظاهراً حتى إلغاء تثبيته على الشاشة. يختلف ذلك عن قفل أزرار المشغّل أو المؤقت اليومي للتطبيق. سجّل طراز الجهاز وإصدار Android وأسلوب التنقل قبل اتباع إرشادات لهاتف آخر."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم الخروج المناسب بإذن المالك",
+          "paragraphs": [
+            "يسرد Google إجراءات مختلفة: عند استخدام الإيماءات اسحب لأعلى مع الاستمرار؛ ومع زرّين اضغط مطولاً على الرجوع والرئيسية؛ ومع ثلاثة أزرار اضغط مطولاً على الرجوع ونظرة عامة. استخدم طريقة الجهاز فقط. إذا طلب Android رمزاً أو نمطاً أو كلمة مرور، فليدخلها المالك بشكل خاص. لا تعطّل قفل الشاشة، ولا تشارك السر مع الدعم، ولا تبحث عن تجاوز له. قد تختلف قوائم الشركات المصنّعة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة تثبيت شاشة Android",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "قارن التنقل بعد الخروج",
+          "paragraphs": [
+            "بعد أن يلغي المالك تثبيت الشاشة، افحص عودة التبديل المعتاد بين التطبيقات. ثم افتح المشغّل الموجود دون حذف بياناته. سجّل أي عَرَض تشغيل متبقٍ منفصلاً عن التنقل المقيّد للنظام. لا يثبت التثبيت انتهاء الخطة، ولا يضيف الخروج منه صلاحية مشاهدة أو يحسّن المصدر. إن غابت عناصر التحكم المتوقعة، فراجع دليل المصنّع بدلاً من تثبيت أداة فتح مجهولة. لا تضمّن بيانات الحساب أو عناوين التشغيل الخاصة في لقطات الشاشة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV पिन की गई स्क्रीन: प्लेयर से बाहर क्यों नहीं जा सकते?",
+      "excerpt": "सीमित नेविगेशन को प्लेयर की खराबी मानने से पहले Android स्क्रीन पिनिंग पहचानें। मालिक के साथ बताए तरीके से बाहर आएँ और डिवाइस लॉक सुरक्षित रखें।",
+      "seo_title": "5G Live IPTV पिन की गई स्क्रीन: प्लेयर से बाहर क्यों नहीं जा सकते?",
+      "seo_description": "सीमित नेविगेशन को प्लेयर की खराबी मानने से पहले Android स्क्रीन पिनिंग पहचानें। मालिक के साथ बताए तरीके से बाहर आएँ और डिवाइस लॉक सुरक्षित रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि रोक कहाँ है",
+          "paragraphs": [
+            "5G Live IPTV पिन की गई स्क्रीन की जाँच उस Android डिवाइस के लिए है जो दूसरी ऐप पर जाने की कोशिश पर भी एक ऐप में रहता है। Google के अनुसार ऐप पिनिंग किसी ऐप को अनपिन करने तक सामने रखती है। यह प्लेयर के कंट्रोल लॉक या रोज़ के ऐप टाइमर से अलग है। दूसरे फोन के निर्देश अपनाने से पहले मॉडल, Android संस्करण और नेविगेशन का तरीका लिखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मालिक की अनुमति से सही तरीके से बाहर आएँ",
+          "paragraphs": [
+            "Google अलग तरीके बताता है: जेस्चर नेविगेशन में ऊपर स्वाइप करके रोकें; दो बटन में वापस और होम दबाए रखें; तीन बटन में वापस और हाल की ऐप्स दबाए रखें। केवल अपने डिवाइस का तरीका अपनाएँ। Android पिन, पैटर्न या पासवर्ड माँगे तो मालिक उसे निजी रूप से दर्ज करे। न स्क्रीन लॉक बंद करें, न सहायता को यह रहस्य बताएँ और न इसे बायपास करने का तरीका खोजें। निर्माता के अनुसार मेनू बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android स्क्रीन पिनिंग सहायता",
+              "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+            }
+          ]
+        },
+        {
+          "heading": "बाहर आने के बाद नेविगेशन की तुलना करें",
+          "paragraphs": [
+            "मालिक स्क्रीन अनपिन कर दे तो देखें कि सामान्य ऐप बदलना लौटा या नहीं। फिर डेटा हटाए बिना मौजूदा प्लेयर खोलें। बची हुई प्लेबैक समस्या को सीमित सिस्टम नेविगेशन से अलग लिखें। पिनिंग योजना समाप्त होने का प्रमाण नहीं; उससे निकलना देखने की पहुँच नहीं बढ़ाता और स्रोत बेहतर नहीं बनाता। अपेक्षित कंट्रोल न मिलें तो अज्ञात अनलॉकिंग टूल लगाने के बजाय निर्माता का मार्गदर्शन पढ़ें। स्क्रीनशॉट में खाते का विवरण या निजी प्लेबैक पते न दिखाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Android Help: pin and unpin screens",
+      "url": "https://support.google.com/android/answer/9455138?hl=en-GB"
+    }
+  ]
+}

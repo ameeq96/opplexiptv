@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-24",
+  "topic": "Inspect existing Apple TV display colour filters across menus and permitted video separately from a Geo IPTV player or provider fault while preserving useful accessibility preferences.",
+  "primary_keyword": "Geo IPTV colour filters",
+  "slug": "geo-apple-tv-colour-filters-and-system-menu-comparison",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV colour filters: check Apple TV menus before the programme",
+      "excerpt": "Compare Apple TV menus and a permitted video before changing picture settings. Preserve useful accessibility filters and separate them from provider access.",
+      "seo_title": "Geo IPTV colour filters: check Apple TV menus before the programme",
+      "seo_description": "Compare Apple TV menus and a permitted video before changing picture settings. Preserve useful accessibility filters and separate them from provider access.",
+      "sections": [
+        {
+          "heading": "Compare more than one screen",
+          "paragraphs": [
+            "A Geo IPTV colour filters check starts with the Apple TV interface, not a different subscription. If the picture looks grey or tinted, compare a familiar system menu with the same permitted video. Note whether both look different or only one programme does. A screen-wide change is a reason to inspect existing display preferences; it does not by itself identify a player or provider fault."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing accessibility choice",
+          "paragraphs": [
+            "Apple documents Display Accommodations for Apple TV 4K and Apple TV HD under Settings, Accessibility, then Display. Read the selected colour filter and record its current state before changing anything. The options include greyscale and filters intended for different colour-vision needs. Intensity is adjustable for the colour filters other than greyscale. Keep any setting that helps a household member; a useful accessibility choice is not an error."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV display support",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Make a reversible comparison",
+          "paragraphs": [
+            "If the owner wants a comparison, change only that identified preference and revisit the same menu and clip. Restore the original choice if the result is unhelpful. Do not reset the television, clear player data or renew a plan for this check. A filter cannot add programme detail or alter viewing access. If the symptom remains, report the Apple TV model, software, player version and which screens were affected, without private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Filtros de color de Geo IPTV: revisa los menús del Apple TV",
+      "excerpt": "Compara los menús del Apple TV con un vídeo permitido antes de cambiar la imagen. Conserva los filtros de accesibilidad útiles y separa el acceso al servicio.",
+      "seo_title": "Filtros de color de Geo IPTV: revisa los menús del Apple TV",
+      "seo_description": "Compara los menús del Apple TV con un vídeo permitido antes de cambiar la imagen. Conserva los filtros de accesibilidad útiles y separa el acceso al servicio.",
+      "sections": [
+        {
+          "heading": "Compara más de una pantalla",
+          "paragraphs": [
+            "La revisión de los filtros de color de Geo IPTV empieza en la interfaz del Apple TV, no en otra suscripción. Si la imagen parece gris o teñida, compara un menú conocido del sistema con el mismo vídeo permitido. Anota si ambos se ven distintos o solo un programa. Un cambio general justifica revisar las preferencias de imagen existentes; por sí solo no identifica un fallo del reproductor ni del proveedor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la opción de accesibilidad actual",
+          "paragraphs": [
+            "Apple documenta las adaptaciones de pantalla para Apple TV 4K y Apple TV HD en Ajustes, Accesibilidad y Pantalla. Lee el filtro seleccionado y anota su estado antes de cambiar nada. Hay escala de grises y filtros para distintas necesidades de visión cromática. Se puede ajustar la intensidad de los filtros salvo la escala de grises. Conserva cualquier opción útil para alguien del hogar; una ayuda de accesibilidad no es un error."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de pantalla de Apple TV",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Haz una comparación reversible",
+          "paragraphs": [
+            "Si el propietario quiere comparar, cambia únicamente esa preferencia y vuelve al mismo menú y vídeo. Restablece la opción original si no ayuda. No restablezcas el televisor, borres datos del reproductor ni renueves un plan para esta revisión. Un filtro no añade detalle al programa ni modifica el acceso. Si persiste el síntoma, indica modelo, software y versión del reproductor, y qué pantallas afectaba, sin direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Filtres de couleur Geo IPTV : vérifiez les menus de l’Apple TV",
+      "excerpt": "Comparez les menus de l’Apple TV et une vidéo autorisée avant de modifier l’image. Préservez les filtres utiles et distinguez-les de l’accès au service.",
+      "seo_title": "Filtres de couleur Geo IPTV : vérifiez les menus de l’Apple TV",
+      "seo_description": "Comparez les menus de l’Apple TV et une vidéo autorisée avant de modifier l’image. Préservez les filtres utiles et distinguez-les de l’accès au service.",
+      "sections": [
+        {
+          "heading": "Comparez plusieurs écrans",
+          "paragraphs": [
+            "Pour examiner les filtres de couleur Geo IPTV, commencez par l’interface de l’Apple TV plutôt que par un autre abonnement. Si l’image paraît grise ou teintée, comparez un menu système familier à la même vidéo autorisée. Notez si les deux sont différents ou si un seul programme est concerné. Un changement général invite à vérifier les préférences d’affichage existantes ; il ne désigne pas, à lui seul, une panne du lecteur ou du fournisseur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le réglage d’accessibilité existant",
+          "paragraphs": [
+            "Apple décrit les adaptations d’affichage de l’Apple TV 4K et de l’Apple TV HD dans Réglages, Accessibilité, puis Affichage. Lisez le filtre sélectionné et notez son état avant toute modification. Les choix comprennent les nuances de gris et des filtres répondant à différents besoins de perception des couleurs. L’intensité est réglable sauf pour les nuances de gris. Conservez les réglages utiles à un membre du foyer : une aide d’accessibilité n’est pas une erreur."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide à l’affichage Apple TV",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Faites une comparaison réversible",
+          "paragraphs": [
+            "Si le propriétaire souhaite comparer, modifiez uniquement cette préférence et retrouvez le même menu et la même vidéo. Rétablissez le choix initial si le résultat n’aide pas. Ne réinitialisez pas le téléviseur, n’effacez pas les données du lecteur et ne renouvelez pas un forfait pour cette vérification. Un filtre n’ajoute pas de détails ni de droits d’accès. Si le problème persiste, indiquez modèle, logiciel, version du lecteur et écrans concernés, sans adresse privée de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Filtri colore Geo IPTV: controlla prima i menu di Apple TV",
+      "excerpt": "Confronta i menu di Apple TV con un video consentito prima di cambiare l’immagine. Conserva i filtri utili e distinguili dall’accesso al servizio.",
+      "seo_title": "Filtri colore Geo IPTV: controlla prima i menu di Apple TV",
+      "seo_description": "Confronta i menu di Apple TV con un video consentito prima di cambiare l’immagine. Conserva i filtri utili e distinguili dall’accesso al servizio.",
+      "sections": [
+        {
+          "heading": "Confronta più di una schermata",
+          "paragraphs": [
+            "Il controllo dei filtri colore Geo IPTV parte dall’interfaccia di Apple TV, non da un altro abbonamento. Se l’immagine appare grigia o colorata in modo insolito, confronta un menu di sistema familiare con lo stesso video consentito. Annota se cambia tutto oppure soltanto un programma. Un cambiamento generale suggerisce di leggere le preferenze dello schermo già impostate; da solo non dimostra un guasto del lettore o del fornitore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la scelta di accessibilità attuale",
+          "paragraphs": [
+            "Apple documenta le regolazioni dello schermo per Apple TV 4K e Apple TV HD in Impostazioni, Accessibilità e Schermo. Leggi il filtro selezionato e annotane lo stato prima di intervenire. Le opzioni comprendono la scala di grigi e filtri per diverse esigenze di percezione dei colori. L’intensità è regolabile tranne per la scala di grigi. Mantieni le impostazioni utili a chi vive in casa: una scelta di accessibilità non è un errore."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Assistenza schermo Apple TV",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Esegui un confronto reversibile",
+          "paragraphs": [
+            "Se il proprietario desidera confrontare, cambia solo quella preferenza e torna allo stesso menu e filmato. Ripristina la scelta originale se il risultato non aiuta. Non reimpostare il televisore, cancellare i dati del lettore o rinnovare un piano per questa verifica. Un filtro non aggiunge dettagli al programma né modifica l’accesso. Se il sintomo continua, comunica modello, software, versione del lettore e schermate coinvolte, senza indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-kleurfilters: controleer eerst de Apple TV-menu’s",
+      "excerpt": "Vergelijk Apple TV-menu’s en een toegestane video voordat je beeldinstellingen wijzigt. Behoud nuttige toegankelijkheidsfilters en onderscheid ze van toegang.",
+      "seo_title": "Geo IPTV-kleurfilters: controleer eerst de Apple TV-menu’s",
+      "seo_description": "Vergelijk Apple TV-menu’s en een toegestane video voordat je beeldinstellingen wijzigt. Behoud nuttige toegankelijkheidsfilters en onderscheid ze van toegang.",
+      "sections": [
+        {
+          "heading": "Vergelijk meerdere schermen",
+          "paragraphs": [
+            "Een controle van Geo IPTV-kleurfilters begint bij de Apple TV-interface, niet bij een ander abonnement. Lijkt het beeld grijs of verkleurd, vergelijk dan een vertrouwd systeemmenu met dezelfde toegestane video. Noteer of beide anders ogen of slechts één programma. Een verandering over het hele scherm is aanleiding om bestaande weergavevoorkeuren te bekijken; op zichzelf bewijst dit geen storing bij de speler of aanbieder."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de bestaande toegankelijkheidskeuze",
+          "paragraphs": [
+            "Apple beschrijft aangepaste weergave voor Apple TV 4K en Apple TV HD via Instellingen, Toegankelijkheid en Weergave. Bekijk het geselecteerde kleurfilter en noteer de huidige stand voordat je iets wijzigt. Er zijn grijstinten en filters voor verschillende behoeften bij kleurwaarneming. De intensiteit kan worden aangepast, behalve bij grijstinten. Behoud instellingen die een huisgenoot helpen; een nuttige toegankelijkheidskeuze is geen fout."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV-weergavehulp",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Maak een omkeerbare vergelijking",
+          "paragraphs": [
+            "Wil de eigenaar vergelijken, wijzig dan alleen die vastgestelde voorkeur en bekijk hetzelfde menu en fragment opnieuw. Herstel de oorspronkelijke keuze als het resultaat niet helpt. Reset de televisie niet, wis geen spelergegevens en verleng geen abonnement voor deze controle. Een filter voegt geen programmadetails toe en verandert geen kijktoegang. Blijft het verschijnsel bestaan, vermeld dan Apple TV-model, software, spelerversie en betrokken schermen, zonder privéafspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Filtros de cor Geo IPTV: confira primeiro os menus da Apple TV",
+      "excerpt": "Compare os menus da Apple TV com um vídeo permitido antes de mudar a imagem. Preserve filtros de acessibilidade úteis e separe-os do acesso ao serviço.",
+      "seo_title": "Filtros de cor Geo IPTV: confira primeiro os menus da Apple TV",
+      "seo_description": "Compare os menus da Apple TV com um vídeo permitido antes de mudar a imagem. Preserve filtros de acessibilidade úteis e separe-os do acesso ao serviço.",
+      "sections": [
+        {
+          "heading": "Compare mais de uma tela",
+          "paragraphs": [
+            "A verificação dos filtros de cor Geo IPTV começa na interface da Apple TV, não em outra assinatura. Se a imagem parecer cinza ou tingida, compare um menu conhecido do sistema com o mesmo vídeo permitido. Anote se ambos parecem diferentes ou apenas um programa. Uma mudança na tela inteira justifica consultar as preferências existentes; sozinha não identifica defeito no reprodutor nem no provedor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a opção de acessibilidade atual",
+          "paragraphs": [
+            "A Apple documenta as adaptações de tela da Apple TV 4K e Apple TV HD em Ajustes, Acessibilidade e Tela. Leia o filtro escolhido e registre seu estado antes de alterar qualquer coisa. Há tons de cinza e filtros para diferentes necessidades de percepção de cores. É possível ajustar a intensidade, exceto nos tons de cinza. Preserve qualquer opção que ajude alguém da casa; um recurso útil de acessibilidade não é um erro."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda de tela da Apple TV",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Faça uma comparação reversível",
+          "paragraphs": [
+            "Se o proprietário quiser comparar, altere somente essa preferência e volte ao mesmo menu e vídeo. Restaure a escolha original se o resultado não ajudar. Não redefina a televisão, apague dados do reprodutor ou renove um plano para esta verificação. Um filtro não acrescenta detalhes nem modifica o acesso. Se o sintoma continuar, informe modelo da Apple TV, software, versão do reprodutor e telas afetadas, sem endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Цветовые фильтры Geo IPTV: сначала проверьте меню Apple TV",
+      "excerpt": "Сравните меню Apple TV и разрешённое видео перед изменением изображения. Сохраните полезные настройки доступности и отделите их от доступа к услуге.",
+      "seo_title": "Цветовые фильтры Geo IPTV: сначала проверьте меню Apple TV",
+      "seo_description": "Сравните меню Apple TV и разрешённое видео перед изменением изображения. Сохраните полезные настройки доступности и отделите их от доступа к услуге.",
+      "sections": [
+        {
+          "heading": "Сравните несколько экранов",
+          "paragraphs": [
+            "Проверку цветовых фильтров Geo IPTV начинайте с интерфейса Apple TV, а не с другой подписки. Если изображение стало серым или приобрело оттенок, сравните знакомое системное меню с тем же разрешённым видео. Отметьте, изменились ли оба экрана или только одна передача. Общее изменение — повод посмотреть существующие параметры отображения; само по себе оно не определяет сбой проигрывателя или поставщика."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущую настройку доступности",
+          "paragraphs": [
+            "Apple описывает адаптацию дисплея Apple TV 4K и Apple TV HD в настройках универсального доступа, в разделе дисплея. Перед изменениями посмотрите выбранный цветовой фильтр и запишите его состояние. Есть оттенки серого и фильтры для разных особенностей цветового зрения. Интенсивность регулируется у фильтров, кроме оттенков серого. Сохраняйте настройки, помогающие членам семьи: полезная функция доступности не является ошибкой."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Поддержка дисплея Apple TV",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "Сделайте обратимое сравнение",
+          "paragraphs": [
+            "Если владелец хочет сравнить, измените только установленную настройку и вернитесь к тому же меню и ролику. Восстановите исходный выбор, если результат не помогает. Не сбрасывайте телевизор, не очищайте данные проигрывателя и не продлевайте тариф ради этой проверки. Фильтр не добавляет деталей передаче и не меняет доступ. Если симптом остаётся, сообщите модель Apple TV, ПО, версию проигрывателя и затронутые экраны, без частных адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کے رنگوں کے فلٹر: پہلے Apple TV کے مینیو دیکھیں",
+      "excerpt": "تصویر کی ترتیبات بدلنے سے پہلے Apple TV کے مینیو اور اجازت یافتہ ویڈیو کا موازنہ کریں۔ مفید رسائی کے فلٹر محفوظ رکھیں اور انہیں سروس تک رسائی سے الگ سمجھیں۔",
+      "seo_title": "Geo IPTV کے رنگوں کے فلٹر: پہلے Apple TV کے مینیو دیکھیں",
+      "seo_description": "تصویر کی ترتیبات بدلنے سے پہلے Apple TV کے مینیو اور اجازت یافتہ ویڈیو کا موازنہ کریں۔ مفید رسائی کے فلٹر محفوظ رکھیں اور انہیں سروس تک رسائی سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "ایک سے زیادہ اسکرینوں کا موازنہ کریں",
+          "paragraphs": [
+            "Geo IPTV کے رنگوں کے فلٹر کی جانچ دوسری رکنیت سے نہیں بلکہ Apple TV کے انٹرفیس سے شروع ہوتی ہے۔ اگر تصویر سرمئی یا کسی رنگ میں ڈھلی نظر آئے تو نظام کے کسی مانوس مینیو کو اسی اجازت یافتہ ویڈیو سے ملائیں۔ لکھیں کہ دونوں بدلے ہوئے لگتے ہیں یا صرف ایک پروگرام۔ پوری اسکرین کی تبدیلی موجودہ ڈسپلے ترجیحات دیکھنے کی وجہ ہے؛ صرف اس سے پلیئر یا فراہم کنندہ کی خرابی ثابت نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی کی موجودہ ترجیح پڑھیں",
+          "paragraphs": [
+            "Apple کی دستاویز میں Apple TV 4K اور Apple TV HD کے لیے ترتیبات، رسائی پذیری، پھر ڈسپلے میں بصری سہولتوں کا ذکر ہے۔ کچھ بدلنے سے پہلے منتخب رنگوں کا فلٹر اور اس کی موجودہ حالت لکھ لیں۔ اختیارات میں سرمئی درجے اور رنگ پہچاننے کی مختلف ضروریات کے فلٹر شامل ہیں۔ سرمئی درجات کے سوا فلٹروں کی شدت بدلی جا سکتی ہے۔ گھر کے کسی فرد کی مدد کرنے والی ترتیب برقرار رکھیں؛ مفید رسائی کی ترجیح غلطی نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV ڈسپلے کی رہنمائی",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "واپس پلٹ سکنے والا موازنہ کریں",
+          "paragraphs": [
+            "اگر مالک موازنہ چاہے تو صرف شناخت شدہ ترجیح بدل کر وہی مینیو اور ویڈیو دیکھیں۔ فائدہ نہ ہو تو اصل انتخاب بحال کریں۔ اس جانچ کے لیے نہ ٹی وی ری سیٹ کریں، نہ پلیئر کا ڈیٹا صاف کریں اور نہ منصوبہ تجدید کریں۔ فلٹر پروگرام میں تفصیل نہیں بڑھاتا اور دیکھنے کی رسائی نہیں بدلتا۔ مسئلہ رہے تو Apple TV کا ماڈل، سافٹ ویئر، پلیئر ورژن اور متاثرہ اسکرینیں بتائیں، نجی پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مرشحات ألوان Geo IPTV: افحص قوائم Apple TV أولاً",
+      "excerpt": "قارن قوائم Apple TV بفيديو مسموح قبل تغيير الصورة. حافظ على مرشحات تسهيلات الاستخدام المفيدة وافصلها عن صلاحية الوصول إلى الخدمة.",
+      "seo_title": "مرشحات ألوان Geo IPTV: افحص قوائم Apple TV أولاً",
+      "seo_description": "قارن قوائم Apple TV بفيديو مسموح قبل تغيير الصورة. حافظ على مرشحات تسهيلات الاستخدام المفيدة وافصلها عن صلاحية الوصول إلى الخدمة.",
+      "sections": [
+        {
+          "heading": "قارن أكثر من شاشة",
+          "paragraphs": [
+            "يبدأ فحص مرشحات ألوان Geo IPTV بواجهة Apple TV، لا باشتراك آخر. إذا بدت الصورة رمادية أو ملوّنة بصبغة غريبة، فقارن قائمة نظام مألوفة بالفيديو المسموح نفسه. سجّل هل تغيّر الاثنان أم برنامج واحد فقط. التغيّر العام سبب لمراجعة تفضيلات العرض الحالية؛ ولا يحدّد وحده عطلاً في المشغّل أو لدى المزوّد."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ خيار تسهيلات الاستخدام الحالي",
+          "paragraphs": [
+            "توضح Apple تسهيلات العرض على Apple TV 4K وApple TV HD ضمن الإعدادات، ثم تسهيلات الاستخدام، ثم العرض. اقرأ مرشح اللون المختار وسجّل حالته قبل أي تعديل. تشمل الخيارات تدرج الرمادي ومرشحات لاحتياجات مختلفة في تمييز الألوان. يمكن ضبط الشدة للمرشحات باستثناء تدرج الرمادي. حافظ على الإعداد الذي يساعد أحد أفراد المنزل؛ فالخيار المفيد لتسهيلات الاستخدام ليس خطأ."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دعم عرض Apple TV",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "أجرِ مقارنة يمكن التراجع عنها",
+          "paragraphs": [
+            "إذا أراد المالك المقارنة، فغيّر هذا التفضيل المحدد وحده ثم ارجع إلى القائمة والمقطع نفسيهما. أعد الخيار الأصلي إن لم تفد النتيجة. لا تعِد ضبط التلفاز، ولا تمسح بيانات المشغّل، ولا تجدّد خطة لإجراء هذا الفحص. لا يضيف المرشح تفاصيل للبرنامج ولا يغيّر صلاحية المشاهدة. إذا استمر العَرَض، فاذكر طراز Apple TV والبرنامج وإصدار المشغّل والشاشات المتأثرة، دون عناوين تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV रंग फ़िल्टर: पहले Apple TV के मेनू जाँचें",
+      "excerpt": "चित्र सेटिंग बदलने से पहले Apple TV के मेनू और अनुमति वाले वीडियो की तुलना करें। उपयोगी सुगम्यता फ़िल्टर बनाए रखें और उन्हें सेवा की पहुँच से अलग समझें।",
+      "seo_title": "Geo IPTV रंग फ़िल्टर: पहले Apple TV के मेनू जाँचें",
+      "seo_description": "चित्र सेटिंग बदलने से पहले Apple TV के मेनू और अनुमति वाले वीडियो की तुलना करें। उपयोगी सुगम्यता फ़िल्टर बनाए रखें और उन्हें सेवा की पहुँच से अलग समझें।",
+      "sections": [
+        {
+          "heading": "एक से अधिक स्क्रीन की तुलना करें",
+          "paragraphs": [
+            "Geo IPTV रंग फ़िल्टर की जाँच किसी दूसरी सदस्यता से नहीं, Apple TV के इंटरफ़ेस से शुरू होती है। चित्र धूसर या किसी रंग में रंगा लगे तो परिचित सिस्टम मेनू की तुलना उसी अनुमति वाले वीडियो से करें। लिखें कि दोनों बदले हैं या केवल एक कार्यक्रम। पूरी स्क्रीन में बदलाव मौजूदा प्रदर्शन प्राथमिकताएँ देखने का कारण है; इससे अकेले प्लेयर या प्रदाता की खराबी तय नहीं होती।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मौजूदा सुगम्यता विकल्प पढ़ें",
+          "paragraphs": [
+            "Apple के दस्तावेज़ में Apple TV 4K और Apple TV HD के लिए सेटिंग, सुगम्यता, फिर प्रदर्शन में दृश्य सुविधाएँ दी गई हैं। कुछ बदलने से पहले चुना हुआ रंग फ़िल्टर और उसकी स्थिति लिखें। विकल्पों में धूसर स्तर और रंग पहचानने की अलग ज़रूरतों के फ़िल्टर हैं। धूसर स्तर के अलावा फ़िल्टर की तीव्रता बदली जा सकती है। घर के किसी व्यक्ति के लिए उपयोगी सेटिंग बनाए रखें; सहायक सुगम्यता विकल्प गलती नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV प्रदर्शन सहायता",
+              "url": "https://support.apple.com/en-gb/102052"
+            }
+          ]
+        },
+        {
+          "heading": "वापस बदली जा सकने वाली तुलना करें",
+          "paragraphs": [
+            "मालिक तुलना चाहे तो केवल पहचानी गई प्राथमिकता बदलें और वही मेनू तथा क्लिप दोबारा देखें। लाभ न हो तो मूल विकल्प लौटा दें। इस जाँच के लिए न टीवी रीसेट करें, न प्लेयर का डेटा साफ करें और न योजना नवीनीकृत करें। फ़िल्टर कार्यक्रम में विवरण नहीं जोड़ता और देखने की पहुँच नहीं बदलता। समस्या रहे तो Apple TV मॉडल, सॉफ़्टवेयर, प्लेयर संस्करण और प्रभावित स्क्रीन बताएँ; निजी प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple Support: Display Accommodations",
+      "url": "https://support.apple.com/en-gb/102052"
+    }
+  ]
+}

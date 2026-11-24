@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-24",
+  "topic": "Identify Fire TV experimental high-contrast menu text separately from Text Banner, programme captions and video quality while preserving useful accessibility choices and one Trex viewing session.",
+  "primary_keyword": "Trex IPTV menu contrast",
+  "slug": "trex-menu-contrast-fire-tv-text-accessibility-check",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV menu contrast: read Fire TV labels before changing video",
+      "excerpt": "Check Fire TV high-contrast text separately from programme captions and picture brightness. Preserve useful accessibility choices and one simultaneous Trex viewing connection.",
+      "seo_title": "Trex IPTV menu contrast: read Fire TV labels before changing video",
+      "seo_description": "Check Fire TV high-contrast text separately from programme captions and picture brightness. Preserve useful accessibility choices and one simultaneous Trex viewing connection.",
+      "sections": [
+        {
+          "heading": "Identify the lettering that changed",
+          "paragraphs": [
+            "A Trex IPTV menu contrast check begins with ordinary labels on Fire TV Home. Do letters have an unfamiliar outline, or are they simply difficult to read against the background? Compare the same menu item outside the player before changing video settings. A separate box describing the highlighted item can be Text Banner; dialogue following the programme can be captions. Record which kind of text is affected rather than treating every display difference as a service fault."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing accessibility choice",
+          "paragraphs": [
+            "Amazon lists High Contrast Text for Fire TV as an experimental accessibility feature. Read the existing high-contrast choice among the accessibility options actually offered by your device. Availability and results can vary. Ask the owner whether the current appearance helps them before changing it. If a comparison is wanted, record the earlier choice and compare one change with the same menu visible. Do not assume every player label or word inside an image will change."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: accessibility features on Fire devices",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Return to the player on one connection",
+          "paragraphs": [
+            "Return to the player and describe whether its labels changed too; this does not measure the quality of the programme picture. Keep the useful preference, or restore the earlier choice if navigation becomes harder. Trex IPTV 8K allows one simultaneous connection, so keep this check on one viewing session. Report device model, software, player and affected labels without credentials. Resetting the television or clearing saved player data is unnecessary for this comparison."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Contraste de menús de Trex IPTV: revisa el texto de Fire TV",
+      "excerpt": "Comprueba el texto de alto contraste de Fire TV aparte de los subtítulos y el brillo del vídeo. Conserva las opciones útiles y una conexión simultánea de Trex.",
+      "seo_title": "Contraste de menús de Trex IPTV: revisa el texto de Fire TV",
+      "seo_description": "Comprueba el texto de alto contraste de Fire TV aparte de los subtítulos y el brillo del vídeo. Conserva las opciones útiles y una conexión simultánea de Trex.",
+      "sections": [
+        {
+          "heading": "Identifica el texto que cambió",
+          "paragraphs": [
+            "La revisión del contraste de menús de Trex IPTV comienza con las etiquetas habituales de Inicio en Fire TV. ¿Las letras tienen un contorno extraño o cuesta leerlas sobre el fondo? Compara el mismo elemento fuera del reproductor antes de cambiar el vídeo. Un recuadro aparte que describe el elemento resaltado puede ser el banner de texto; el diálogo que sigue el programa puede ser subtítulos. Anota el tipo de texto afectado sin considerar cada diferencia visual un fallo del servicio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la opción de accesibilidad actual",
+          "paragraphs": [
+            "Amazon incluye el texto de alto contraste de Fire TV como función de accesibilidad experimental. Lee la elección actual entre las opciones de accesibilidad que realmente ofrece tu equipo. La disponibilidad y los resultados pueden variar. Pregunta al propietario si el aspecto actual le ayuda antes de cambiarlo. Si desea comparar, anota la elección anterior y modifica una sola opción con el mismo menú visible. No supongas que cambiarán todas las etiquetas del reproductor o las palabras dentro de imágenes."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: accesibilidad de dispositivos Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Vuelve al reproductor con una conexión",
+          "paragraphs": [
+            "Vuelve al reproductor y describe si sus etiquetas también cambiaron; esto no mide la calidad de la imagen del programa. Conserva la preferencia útil o restaura la anterior si navegar resulta más difícil. Trex IPTV 8K permite una conexión simultánea: realiza la comprobación en una sola sesión. Indica modelo, software, reproductor y etiquetas afectadas sin credenciales. No hace falta restablecer el televisor ni borrar los datos guardados del reproductor para esta comparación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Contraste des menus Trex IPTV : lisez les libellés de Fire TV",
+      "excerpt": "Vérifiez le texte à contraste élevé de Fire TV séparément des sous-titres et de la luminosité vidéo. Préservez les réglages utiles et une connexion Trex simultanée.",
+      "seo_title": "Contraste des menus Trex IPTV : lisez les libellés de Fire TV",
+      "seo_description": "Vérifiez le texte à contraste élevé de Fire TV séparément des sous-titres et de la luminosité vidéo. Préservez les réglages utiles et une connexion Trex simultanée.",
+      "sections": [
+        {
+          "heading": "Repérez les caractères concernés",
+          "paragraphs": [
+            "La vérification du contraste des menus Trex IPTV commence par les libellés ordinaires de l’accueil Fire TV. Les lettres ont-elles un contour inhabituel ou sont-elles simplement difficiles à lire sur le fond ? Comparez le même élément hors du lecteur avant de modifier la vidéo. Un encadré distinct décrivant l’élément sélectionné peut être la bannière de texte ; le dialogue suivant le programme peut être des sous-titres. Notez le type de texte concerné sans assimiler toute différence d’affichage à une panne du service."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le choix d’accessibilité actuel",
+          "paragraphs": [
+            "Amazon classe le texte à contraste élevé de Fire TV parmi les fonctions d’accessibilité expérimentales. Lisez le choix actuel dans les options réellement proposées par votre appareil. Disponibilité et résultats peuvent varier. Demandez au propriétaire si l’apparence actuelle l’aide avant de la modifier. S’il souhaite comparer, notez le choix précédent et changez une seule option avec le même menu visible. Ne supposez pas que tous les libellés du lecteur ou les mots intégrés aux images changeront."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon : accessibilité des appareils Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Revenez au lecteur avec une connexion",
+          "paragraphs": [
+            "Revenez au lecteur et indiquez si ses libellés ont aussi changé ; cela ne mesure pas la qualité de l’image du programme. Gardez la préférence utile ou rétablissez le choix précédent si la navigation devient plus difficile. Trex IPTV 8K autorise une connexion simultanée : gardez une seule session pour cette vérification. Indiquez modèle, logiciel, lecteur et libellés concernés sans identifiants. Réinitialiser le téléviseur ou effacer les données du lecteur est inutile pour cette comparaison."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Contrasto dei menu Trex IPTV: leggi prima le etichette Fire TV",
+      "excerpt": "Controlla il testo ad alto contrasto di Fire TV separatamente da sottotitoli e luminosità video. Conserva le preferenze utili e una connessione Trex simultanea.",
+      "seo_title": "Contrasto dei menu Trex IPTV: leggi prima le etichette Fire TV",
+      "seo_description": "Controlla il testo ad alto contrasto di Fire TV separatamente da sottotitoli e luminosità video. Conserva le preferenze utili e una connessione Trex simultanea.",
+      "sections": [
+        {
+          "heading": "Individua il testo cambiato",
+          "paragraphs": [
+            "Il controllo del contrasto dei menu Trex IPTV parte dalle normali etichette nella schermata iniziale di Fire TV. Le lettere hanno un contorno insolito o sono semplicemente difficili da leggere sullo sfondo? Confronta la stessa voce fuori dal lettore prima di cambiare il video. Un riquadro separato che descrive la voce evidenziata può essere il banner di testo; il dialogo che segue il programma può essere sottotitoli. Annota il tipo di testo interessato senza considerare ogni differenza visiva un guasto del servizio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la scelta di accessibilità attuale",
+          "paragraphs": [
+            "Amazon elenca il testo ad alto contrasto di Fire TV come funzione di accessibilità sperimentale. Leggi la scelta attuale tra le opzioni realmente offerte dal dispositivo. Disponibilità e risultati possono variare. Chiedi al proprietario se l’aspetto attuale lo aiuta prima di modificarlo. Se vuole confrontare, annota la scelta precedente e cambia una sola opzione con lo stesso menu visibile. Non presumere che cambino tutte le etichette del lettore o le parole contenute nelle immagini."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: accessibilità dei dispositivi Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Torna al lettore con una connessione",
+          "paragraphs": [
+            "Torna al lettore e descrivi se anche le sue etichette sono cambiate; questo non misura la qualità dell’immagine del programma. Mantieni la preferenza utile o ripristina quella precedente se navigare diventa più difficile. Trex IPTV 8K consente una connessione simultanea: esegui il controllo in una sola sessione. Comunica modello, software, lettore ed etichette interessate senza credenziali. Ripristinare il televisore o cancellare i dati del lettore non serve per questo confronto."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-menucontrast: lees eerst de Fire TV-labels",
+      "excerpt": "Controleer tekst met hoog contrast op Fire TV los van ondertitels en videohelderheid. Behoud nuttige toegankelijkheidskeuzes en één gelijktijdige Trex-verbinding.",
+      "seo_title": "Trex IPTV-menucontrast: lees eerst de Fire TV-labels",
+      "seo_description": "Controleer tekst met hoog contrast op Fire TV los van ondertitels en videohelderheid. Behoud nuttige toegankelijkheidskeuzes en één gelijktijdige Trex-verbinding.",
+      "sections": [
+        {
+          "heading": "Herken welke letters zijn veranderd",
+          "paragraphs": [
+            "Een controle van Trex IPTV-menucontrast begint bij gewone labels op Fire TV Home. Hebben letters een ongebruikelijke omlijning, of zijn ze moeilijk leesbaar tegen de achtergrond? Vergelijk hetzelfde menu-item buiten de speler voordat je video-instellingen wijzigt. Een apart vak dat het geselecteerde item beschrijft kan de tekstbanner zijn; dialoog die het programma volgt kan ondertiteling zijn. Noteer welk soort tekst is getroffen in plaats van elk weergaveverschil als dienststoring te zien."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de huidige toegankelijkheidskeuze",
+          "paragraphs": [
+            "Amazon noemt tekst met hoog contrast voor Fire TV een experimentele toegankelijkheidsfunctie. Lees de huidige keuze bij de toegankelijkheidsopties die jouw apparaat daadwerkelijk aanbiedt. Beschikbaarheid en resultaten kunnen verschillen. Vraag de eigenaar eerst of de huidige weergave helpt. Is een vergelijking gewenst, noteer de vorige keuze en vergelijk één wijziging terwijl hetzelfde menu zichtbaar blijft. Neem niet aan dat elk spelerlabel of woord binnen een afbeelding verandert."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: toegankelijkheid op Fire-apparaten",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Keer terug naar de speler met één verbinding",
+          "paragraphs": [
+            "Keer terug naar de speler en beschrijf of ook zijn labels veranderden; dat meet niet de beeldkwaliteit van het programma. Behoud de nuttige voorkeur of herstel de eerdere keuze als navigeren moeilijker wordt. Trex IPTV 8K staat één gelijktijdige verbinding toe, dus gebruik één afspeelsessie voor deze controle. Meld model, software, speler en getroffen labels zonder inloggegevens. De televisie herstellen of opgeslagen spelergegevens wissen is voor deze vergelijking niet nodig."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Contraste dos menus Trex IPTV: leia primeiro as etiquetas Fire TV",
+      "excerpt": "Verifique o texto de alto contraste do Fire TV separadamente das legendas e do brilho do vídeo. Preserve preferências úteis e uma ligação Trex simultânea.",
+      "seo_title": "Contraste dos menus Trex IPTV: leia primeiro as etiquetas Fire TV",
+      "seo_description": "Verifique o texto de alto contraste do Fire TV separadamente das legendas e do brilho do vídeo. Preserve preferências úteis e uma ligação Trex simultânea.",
+      "sections": [
+        {
+          "heading": "Identifique as letras que mudaram",
+          "paragraphs": [
+            "A verificação do contraste dos menus Trex IPTV começa pelas etiquetas habituais do ecrã inicial do Fire TV. As letras têm um contorno invulgar ou são apenas difíceis de ler sobre o fundo? Compare o mesmo item fora do leitor antes de alterar o vídeo. Uma caixa separada que descreve o item realçado pode ser o banner de texto; o diálogo que acompanha o programa pode ser legendas. Anote o tipo de texto afetado, sem tratar qualquer diferença visual como falha do serviço."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a escolha atual de acessibilidade",
+          "paragraphs": [
+            "A Amazon apresenta o texto de alto contraste do Fire TV como funcionalidade de acessibilidade experimental. Leia a escolha atual entre as opções realmente disponíveis no seu dispositivo. A disponibilidade e os resultados podem variar. Pergunte ao proprietário se o aspeto atual o ajuda antes de o alterar. Se quiser comparar, registe a escolha anterior e mude uma única opção com o mesmo menu visível. Não presuma que todas as etiquetas do leitor ou palavras dentro de imagens vão mudar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: acessibilidade nos dispositivos Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Volte ao leitor com uma ligação",
+          "paragraphs": [
+            "Volte ao leitor e descreva se as suas etiquetas também mudaram; isto não mede a qualidade da imagem do programa. Mantenha a preferência útil ou restaure a anterior se a navegação ficar mais difícil. O Trex IPTV 8K permite uma ligação simultânea: faça esta verificação numa única sessão. Indique modelo, software, leitor e etiquetas afetadas sem credenciais. Repor o televisor ou apagar dados guardados do leitor é desnecessário para esta comparação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Контраст меню Trex IPTV: сначала прочитайте подписи Fire TV",
+      "excerpt": "Проверьте высококонтрастный текст Fire TV отдельно от субтитров и яркости видео. Сохраните полезные настройки и одно одновременное подключение Trex.",
+      "seo_title": "Контраст меню Trex IPTV: сначала прочитайте подписи Fire TV",
+      "seo_description": "Проверьте высококонтрастный текст Fire TV отдельно от субтитров и яркости видео. Сохраните полезные настройки и одно одновременное подключение Trex.",
+      "sections": [
+        {
+          "heading": "Определите изменившиеся надписи",
+          "paragraphs": [
+            "Проверка контраста меню Trex IPTV начинается с обычных подписей на главном экране Fire TV. У букв появилась необычная обводка или их просто трудно читать на фоне? Сравните тот же пункт вне плеера до изменения видео. Отдельное поле с описанием выделенного пункта может быть текстовым баннером, а диалог вслед за программой — субтитрами. Запишите, какой текст затронут, вместо того чтобы считать любое отличие изображения неисправностью услуги."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте текущую настройку доступности",
+          "paragraphs": [
+            "Amazon относит высококонтрастный текст Fire TV к экспериментальным функциям доступности. Прочитайте текущий выбор среди параметров, действительно предлагаемых вашим устройством. Доступность и результаты могут различаться. До изменения спросите владельца, помогает ли нынешний вид. Если нужно сравнение, запишите прежний выбор и измените один параметр при том же открытом меню. Не предполагайте, что изменятся все подписи плеера или слова внутри изображений."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: доступность устройств Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "Вернитесь в плеер с одним подключением",
+          "paragraphs": [
+            "Вернитесь в плеер и опишите, изменились ли его подписи; это не измеряет качество изображения программы. Сохраните полезную настройку либо восстановите прежнюю, если навигация стала сложнее. Trex IPTV 8K разрешает одно одновременное подключение, поэтому выполняйте проверку в одном сеансе. Сообщите модель, ПО, плеер и затронутые подписи без учётных данных. Для этого сравнения не нужно сбрасывать телевизор или очищать сохранённые данные плеера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV مینو کا تضاد: پہلے Fire TV کی تحریر پڑھیں",
+      "excerpt": "Fire TV کی زیادہ نمایاں تحریر کو پروگرام کے ذیلی عنوانات اور ویڈیو کی روشنی سے الگ جانچیں۔ مفید ترجیحات اور Trex کا ایک بیک وقت کنکشن برقرار رکھیں۔",
+      "seo_title": "Trex IPTV مینو کا تضاد: پہلے Fire TV کی تحریر پڑھیں",
+      "seo_description": "Fire TV کی زیادہ نمایاں تحریر کو پروگرام کے ذیلی عنوانات اور ویڈیو کی روشنی سے الگ جانچیں۔ مفید ترجیحات اور Trex کا ایک بیک وقت کنکشن برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "بدلی ہوئی تحریر پہچانیں",
+          "paragraphs": [
+            "Trex IPTV مینو کے تضاد کی جانچ Fire TV کی ہوم اسکرین پر عام تحریر سے شروع کریں۔ کیا حروف کے گرد غیر معمولی کنارہ ہے یا پس منظر پر پڑھنا مشکل ہے؟ ویڈیو کی ترتیبات بدلنے سے پہلے پلیئر سے باہر وہی مینو دیکھیں۔ منتخب چیز کی وضاحت کرتا الگ خانہ متنی بینر ہو سکتا ہے؛ پروگرام کے ساتھ آنے والا مکالمہ ذیلی عنوانات ہو سکتا ہے۔ ہر ظاہری فرق کو سروس کی خرابی سمجھنے کے بجائے متعلقہ تحریر کی قسم لکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "رسائی آسان بنانے کا موجودہ انتخاب پڑھیں",
+          "paragraphs": [
+            "Amazon نے Fire TV کی زیادہ تضاد والی تحریر کو رسائی آسان بنانے کی تجرباتی سہولت بتایا ہے۔ اپنے آلے میں واقعی موجود متعلقہ اختیارات میں موجودہ انتخاب پڑھیں۔ دستیابی اور نتائج مختلف ہو سکتے ہیں۔ بدلنے سے پہلے مالک سے پوچھیں کہ موجودہ صورت پڑھنے میں مدد دیتی ہے یا نہیں۔ موازنہ مطلوب ہو تو پہلے والا انتخاب لکھیں اور وہی مینو سامنے رکھ کر ایک تبدیلی دیکھیں۔ یہ فرض نہ کریں کہ پلیئر کی ہر تحریر یا تصویر کے اندر الفاظ بدل جائیں گے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire آلات کی رسائی کی سہولتیں",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "ایک کنکشن پر پلیئر میں واپس آئیں",
+          "paragraphs": [
+            "پلیئر میں واپس آ کر بتائیں کہ اس کی تحریر بھی بدلی یا نہیں؛ اس سے پروگرام کی تصویر کا معیار نہیں ناپا جاتا۔ مفید ترجیح برقرار رکھیں، یا مینو چلانا مشکل ہو تو پچھلا انتخاب بحال کریں۔ Trex IPTV 8K ایک بیک وقت کنکشن دیتا ہے، اس لیے ایک ہی سیشن میں جانچیں۔ اسناد کے بغیر آلے کا ماڈل، سافٹ ویئر، پلیئر اور متاثرہ تحریر بتائیں۔ اس موازنے کے لیے نہ ٹی وی ری سیٹ کریں اور نہ پلیئر کا محفوظ ڈیٹا مٹائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تباين قوائم Trex IPTV: اقرأ تسميات Fire TV أولًا",
+      "excerpt": "افحص النص عالي التباين في Fire TV منفصلًا عن الترجمة وسطوع الفيديو. احتفظ بتفضيلات الإتاحة المفيدة واتصال Trex متزامن واحد.",
+      "seo_title": "تباين قوائم Trex IPTV: اقرأ تسميات Fire TV أولًا",
+      "seo_description": "افحص النص عالي التباين في Fire TV منفصلًا عن الترجمة وسطوع الفيديو. احتفظ بتفضيلات الإتاحة المفيدة واتصال Trex متزامن واحد.",
+      "sections": [
+        {
+          "heading": "حدّد الحروف التي تغيّرت",
+          "paragraphs": [
+            "يبدأ فحص تباين قوائم Trex IPTV بالتسميات العادية في شاشة Fire TV الرئيسية. هل للحروف حدّ غير مألوف، أم يصعب قراءتها على الخلفية؟ قارن عنصر القائمة نفسه خارج المشغّل قبل تعديل الفيديو. قد يكون المربع المنفصل الذي يصف العنصر المحدّد لافتة نصية، وقد يكون الحوار المتابع للبرنامج ترجمة. دوّن نوع النص المتأثر بدل اعتبار كل اختلاف في العرض عطلًا في الخدمة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ اختيار الإتاحة الحالي",
+          "paragraphs": [
+            "تدرج Amazon النص عالي التباين في Fire TV ضمن ميزات الإتاحة التجريبية. اقرأ الاختيار الحالي ضمن الخيارات التي يعرضها جهازك فعلًا. قد يختلف التوفر والنتائج. اسأل المالك إن كان الشكل الحالي يساعده قبل تغييره. إذا أراد المقارنة، فدوّن الاختيار السابق وقارن تغييرًا واحدًا مع بقاء القائمة نفسها ظاهرة. لا تفترض تغيّر كل تسميات المشغّل أو الكلمات الموجودة داخل صورة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: إتاحة أجهزة Fire",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "ارجع إلى المشغّل باتصال واحد",
+          "paragraphs": [
+            "ارجع إلى المشغّل وبيّن إن تغيّرت تسمياته أيضًا؛ فهذا لا يقيس جودة صورة البرنامج. احتفظ بالتفضيل المفيد، أو أعد الاختيار السابق إذا أصبح التنقل أصعب. يتيح Trex IPTV 8K اتصالًا متزامنًا واحدًا، لذا افحص ضمن جلسة مشاهدة واحدة. أبلغ عن الطراز والبرنامج والمشغّل والتسميات المتأثرة دون بيانات الدخول. لا يلزم إعادة ضبط التلفاز أو مسح بيانات المشغّل المحفوظة لهذه المقارنة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV मेनू का कंट्रास्ट: पहले Fire TV का पाठ पढ़ें",
+      "excerpt": "Fire TV के अधिक कंट्रास्ट वाले पाठ को कार्यक्रम के उपशीर्षक और वीडियो की चमक से अलग जाँचें। उपयोगी सुविधाएँ और Trex का एक साथ एक कनेक्शन बनाए रखें।",
+      "seo_title": "Trex IPTV मेनू का कंट्रास्ट: पहले Fire TV का पाठ पढ़ें",
+      "seo_description": "Fire TV के अधिक कंट्रास्ट वाले पाठ को कार्यक्रम के उपशीर्षक और वीडियो की चमक से अलग जाँचें। उपयोगी सुविधाएँ और Trex का एक साथ एक कनेक्शन बनाए रखें।",
+      "sections": [
+        {
+          "heading": "बदला हुआ पाठ पहचानें",
+          "paragraphs": [
+            "Trex IPTV मेनू के कंट्रास्ट की जाँच Fire TV की होम स्क्रीन के सामान्य पाठ से शुरू करें। क्या अक्षरों की अनोखी रूपरेखा है या पृष्ठभूमि पर पढ़ना कठिन है? वीडियो सेटिंग बदलने से पहले प्लेयर के बाहर वही मेनू देखें। चुनी चीज़ का वर्णन करने वाला अलग खाना टेक्स्ट बैनर हो सकता है; कार्यक्रम के साथ आने वाला संवाद उपशीर्षक हो सकता है। हर दृश्य अंतर को सेवा की खराबी मानने के बजाय प्रभावित पाठ की किस्म लिखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सुलभता का मौजूदा चुनाव पढ़ें",
+          "paragraphs": [
+            "Amazon ने Fire TV के अधिक कंट्रास्ट वाले पाठ को प्रयोगात्मक सुलभता सुविधा बताया है। अपने डिवाइस में सचमुच उपलब्ध सुलभता विकल्पों में मौजूदा चुनाव पढ़ें। उपलब्धता और नतीजे बदल सकते हैं। कुछ बदलने से पहले मालिक से पूछें कि मौजूदा रूप पढ़ने में मदद करता है या नहीं। तुलना चाहिए तो पुराना चुनाव लिखें और वही मेनू सामने रखकर एक बदलाव देखें। यह न मानें कि प्लेयर का हर पाठ या तस्वीर के भीतर शब्द बदलेंगे।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Amazon: Fire उपकरणों की सुलभता",
+              "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+            }
+          ]
+        },
+        {
+          "heading": "एक कनेक्शन पर प्लेयर में लौटें",
+          "paragraphs": [
+            "प्लेयर में लौटकर बताएँ कि उसका पाठ भी बदला या नहीं; इससे कार्यक्रम की तस्वीर की गुणवत्ता नहीं मापी जाती। उपयोगी प्राथमिकता रखें, या नेविगेशन कठिन हो तो पुराना चुनाव लौटाएँ। Trex IPTV 8K एक साथ एक कनेक्शन देता है, इसलिए एक ही देखने के सत्र में जाँचें। लॉगिन जानकारी के बिना मॉडल, सॉफ़्टवेयर, प्लेयर और प्रभावित पाठ बताएँ। इस तुलना के लिए न टीवी रीसेट करें और न प्लेयर का सहेजा डेटा मिटाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Amazon: Fire device accessibility and experimental High Contrast Text",
+      "url": "https://developer.amazon.com/apps-and-games/blogs/2025/11/guide-to-accessibility-on-amazon-fire-devices"
+    }
+  ]
+}

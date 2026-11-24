@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-24",
+  "topic": "Interpret a Chrome blocked-download warning before obtaining a player, preserving browser protection and separating publisher verification from Opplex or Filex plan and order state.",
+  "primary_keyword": "IPTV Subscription download warning",
+  "slug": "iptvsubscription-player-download-warning-and-source-check",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription download warning: check the player file first",
+      "excerpt": "Read Chrome’s blocked-download message before obtaining a player. Check its publisher and source while keeping browser protection, provider terms and order status separate.",
+      "seo_title": "IPTV Subscription download warning: check the player file first",
+      "seo_description": "Read Chrome’s blocked-download message before obtaining a player. Check its publisher and source while keeping browser protection, provider terms and order status separate.",
+      "sections": [
+        {
+          "heading": "Identify what Chrome blocked",
+          "paragraphs": [
+            "An IPTV Subscription download warning concerns a file, not necessarily a viewing account. Note the file name, intended player and exact browser message before trying another download. Google distinguishes dangerous, suspicious, unverified and insecure downloads; these labels describe different concerns. A warning does not prove that your plan expired, and a familiar player name alone does not establish that a file came from its real publisher."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the warning without bypassing it",
+          "paragraphs": [
+            "Check Chrome’s recent download history for the blocked item and its message. Keep Safe Browsing enabled and leave a blocked file unopened while you verify the actual publisher’s official distribution route and device compatibility. Do not follow a message asking you to disable protection or use a renamed replacement file. Google explains that an insecure download can originate from an otherwise secure page, so the page’s HTTPS address is not sufficient evidence about the file."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separate the player from the service order",
+          "paragraphs": [
+            "Confirm whether the IPTV Subscription plan is Opplex or Filex, its duration and recorded order/setup state through your trusted access route. A player licence or app charge is separate from viewing-service payment. Ask about any unstated Filex connection allowance rather than inferring it from a download. Give support the warning wording, device and player name, without credentials or private order links; do not repeat payment as a download test."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "IPTV Subscription: aviso al descargar un reproductor",
+      "excerpt": "Lee el aviso de descarga bloqueada en Chrome. Comprueba editor y procedencia sin desactivar la protección ni confundir el archivo con el plan o el estado del pedido.",
+      "seo_title": "IPTV Subscription: aviso al descargar un reproductor",
+      "seo_description": "Lee el aviso de descarga bloqueada en Chrome. Comprueba editor y procedencia sin desactivar la protección ni confundir el archivo con el plan o el estado del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica qué bloqueó Chrome",
+          "paragraphs": [
+            "Un aviso de descarga de IPTV Subscription se refiere a un archivo, no necesariamente a la cuenta de televisión. Anota su nombre, el reproductor previsto y el mensaje exacto antes de intentar otra descarga. Google distingue archivos peligrosos, sospechosos, no verificados e inseguros; cada categoría señala una preocupación distinta. El aviso no demuestra que el plan haya caducado, ni un nombre conocido demuestra que el archivo proceda del editor auténtico."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee el aviso sin eludirlo",
+          "paragraphs": [
+            "Busca el elemento bloqueado y su mensaje en el historial reciente de descargas de Chrome. Mantén activada la Navegación segura y no abras el archivo mientras verificas la vía oficial del editor y la compatibilidad del dispositivo. No sigas instrucciones para desactivar la protección o usar un archivo de sustitución renombrado. Google explica que una descarga insegura puede partir de una página segura: la dirección HTTPS de esa página no basta para verificar el archivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa reproductor y pedido del servicio",
+          "paragraphs": [
+            "Confirma por tu vía de acceso habitual si el plan de IPTV Subscription es Opplex o Filex, su duración y el estado registrado del pedido y la configuración. La licencia o el cobro de una aplicación es independiente del servicio. Pregunta por cualquier límite de conexiones Filex no indicado; no lo deduzcas de una descarga. Comunica el aviso, dispositivo y reproductor, sin credenciales ni enlaces privados. No repitas el pago para probar la descarga."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "IPTV Subscription : avertissement de téléchargement du lecteur",
+      "excerpt": "Lisez le message de Chrome avant de télécharger un lecteur. Vérifiez son éditeur et sa provenance en conservant la protection et en distinguant fichier, forfait et commande.",
+      "seo_title": "IPTV Subscription : avertissement de téléchargement du lecteur",
+      "seo_description": "Lisez le message de Chrome avant de télécharger un lecteur. Vérifiez son éditeur et sa provenance en conservant la protection et en distinguant fichier, forfait et commande.",
+      "sections": [
+        {
+          "heading": "Identifiez le fichier bloqué",
+          "paragraphs": [
+            "Un avertissement de téléchargement lié à IPTV Subscription concerne un fichier, pas forcément le compte de télévision. Notez son nom, le lecteur recherché et le message exact avant un nouvel essai. Google distingue les téléchargements dangereux, suspects, non vérifiés et non sécurisés, qui correspondent à des problèmes différents. Cet avertissement ne prouve pas une expiration du forfait. Un nom de lecteur connu ne garantit pas non plus une provenance authentique."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le message sans contourner la protection",
+          "paragraphs": [
+            "Repérez le fichier et son message dans l’historique récent des téléchargements de Chrome. Gardez la navigation sécurisée activée et n’ouvrez pas le fichier bloqué pendant la vérification du circuit officiel de l’éditeur et de la compatibilité de l’appareil. Refusez les consignes demandant de désactiver la protection ou d’utiliser un fichier de remplacement renommé. Google précise qu’une page sécurisée peut proposer un téléchargement non sécurisé : son adresse HTTPS ne suffit donc pas à vérifier le fichier."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguez lecteur et commande du service",
+          "paragraphs": [
+            "Vérifiez par votre accès habituel si le forfait IPTV Subscription est Opplex ou Filex, sa durée et l’état enregistré de la commande et de la configuration. Une licence ou un paiement d’application reste distinct du service. Demandez toute limite Filex non précisée, sans la déduire du téléchargement. Transmettez le message, l’appareil et le lecteur, sans identifiants ni lien privé de commande. Ne payez pas à nouveau pour tester une récupération de fichier."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription: avviso durante il download del lettore",
+      "excerpt": "Leggi il messaggio di Chrome prima di scaricare un lettore. Verifica editore e provenienza mantenendo le protezioni e distinguendo file, abbonamento e stato dell’ordine.",
+      "seo_title": "IPTV Subscription: avviso durante il download del lettore",
+      "seo_description": "Leggi il messaggio di Chrome prima di scaricare un lettore. Verifica editore e provenienza mantenendo le protezioni e distinguendo file, abbonamento e stato dell’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica il file bloccato",
+          "paragraphs": [
+            "Un avviso di download relativo a IPTV Subscription riguarda un file, non necessariamente l’account televisivo. Annota nome del file, lettore desiderato e messaggio esatto prima di riprovare. Google distingue download pericolosi, sospetti, non verificati e non sicuri: sono problemi differenti. L’avviso non dimostra che l’abbonamento sia scaduto. Anche un nome di lettore noto non prova che il file provenga dal suo vero editore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’avviso senza aggirarlo",
+          "paragraphs": [
+            "Controlla il file bloccato e il messaggio nella cronologia recente dei download di Chrome. Mantieni attiva Navigazione sicura e non aprire il file mentre verifichi il canale ufficiale dell’editore e la compatibilità del dispositivo. Non seguire richieste di disattivare la protezione o usare un file sostitutivo rinominato. Google spiega che una pagina sicura può avviare un download non sicuro: il solo indirizzo HTTPS della pagina non verifica il file."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui lettore e ordine del servizio",
+          "paragraphs": [
+            "Dal tuo accesso abituale, conferma se l’abbonamento IPTV Subscription è Opplex o Filex, la durata e lo stato registrato dell’ordine e della configurazione. Licenza e costo dell’app sono separati dal pagamento del servizio. Chiedi i limiti di connessione Filex non dichiarati, senza dedurli dal download. Comunica avviso, dispositivo e lettore senza credenziali o collegamenti privati dell’ordine. Non ripetere il pagamento per provare un download."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription: waarschuwing bij een spelerdownload",
+      "excerpt": "Lees de downloadwaarschuwing van Chrome voordat je een speler ophaalt. Controleer uitgever en herkomst met behoud van bescherming en houd bestand, abonnement en bestelling apart.",
+      "seo_title": "IPTV Subscription: waarschuwing bij een spelerdownload",
+      "seo_description": "Lees de downloadwaarschuwing van Chrome voordat je een speler ophaalt. Controleer uitgever en herkomst met behoud van bescherming en houd bestand, abonnement en bestelling apart.",
+      "sections": [
+        {
+          "heading": "Bepaal welk bestand is geblokkeerd",
+          "paragraphs": [
+            "Een downloadwaarschuwing bij IPTV Subscription gaat over een bestand, niet noodzakelijk over je kijkaccount. Noteer de bestandsnaam, bedoelde speler en exacte melding voordat je opnieuw probeert. Google onderscheidt gevaarlijke, verdachte, niet-geverifieerde en onveilige downloads; deze categorieën hebben verschillende betekenissen. De waarschuwing bewijst geen verlopen abonnement. Een bekende spelernaam bewijst evenmin dat het bestand van de echte uitgever afkomstig is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de melding zonder bescherming te omzeilen",
+          "paragraphs": [
+            "Zoek het geblokkeerde bestand en de melding in de recente downloadgeschiedenis van Chrome. Laat Safe Browsing aan en open het bestand niet terwijl je het officiële distributiekanaal van de uitgever en apparaatcompatibiliteit controleert. Volg geen verzoek om de bescherming uit te schakelen of een hernoemd vervangend bestand te gebruiken. Volgens Google kan een beveiligde pagina een onveilige download aanbieden. Het HTTPS-adres van de pagina alleen verifieert dus niet het bestand."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid speler en servicebestelling",
+          "paragraphs": [
+            "Controleer via je vertrouwde toegangsroute of het IPTV Subscription-abonnement Opplex of Filex betreft, met welke looptijd en geregistreerde bestel- en instelstatus. Een spelerlicentie of appbetaling staat los van de kijkdienst. Vraag naar een niet-vermelde Filex-verbindingslimiet in plaats van die uit een download af te leiden. Geef ondersteuning melding, apparaat en spelernaam, zonder inloggegevens of privébestellinks. Betaal niet opnieuw om een download te testen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV Subscription: aviso ao descarregar um leitor",
+      "excerpt": "Leia o aviso de download bloqueado no Chrome antes de obter um leitor. Verifique o editor e a origem, preservando a proteção e separando ficheiro, plano e encomenda.",
+      "seo_title": "IPTV Subscription: aviso ao descarregar um leitor",
+      "seo_description": "Leia o aviso de download bloqueado no Chrome antes de obter um leitor. Verifique o editor e a origem, preservando a proteção e separando ficheiro, plano e encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique o ficheiro bloqueado",
+          "paragraphs": [
+            "Um aviso de download relacionado com IPTV Subscription diz respeito a um ficheiro, não necessariamente à conta de televisão. Anote o nome, o leitor pretendido e a mensagem exata antes de tentar outra transferência. A Google distingue downloads perigosos, suspeitos, não verificados e inseguros, com significados diferentes. O aviso não prova que a assinatura terminou. Um nome de leitor conhecido também não confirma que o ficheiro veio do verdadeiro editor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o aviso sem contornar a proteção",
+          "paragraphs": [
+            "Localize o ficheiro bloqueado e a mensagem no histórico recente de downloads do Chrome. Mantenha a Navegação segura ativa e não abra o ficheiro enquanto verifica o canal oficial do editor e a compatibilidade do dispositivo. Não siga pedidos para desativar a proteção ou usar um ficheiro de substituição com outro nome. A Google explica que uma página segura pode iniciar um download inseguro; o endereço HTTPS da página, por si só, não verifica o ficheiro."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe o leitor da encomenda do serviço",
+          "paragraphs": [
+            "Confirme pelo acesso habitual se o plano IPTV Subscription é Opplex ou Filex, a duração e o estado registado da encomenda e configuração. Uma licença ou cobrança da aplicação é independente do serviço. Pergunte pelos limites de ligações Filex não indicados, sem os deduzir do download. Informe o apoio sobre mensagem, dispositivo e leitor, sem credenciais nem ligações privadas. Não repita o pagamento para testar uma transferência."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "IPTV Subscription: предупреждение при загрузке плеера",
+      "excerpt": "Прочитайте предупреждение Chrome перед загрузкой плеера. Проверьте издателя и источник, сохранив защиту и отделив файл от тарифа, оплаты и состояния заказа.",
+      "seo_title": "IPTV Subscription: предупреждение при загрузке плеера",
+      "seo_description": "Прочитайте предупреждение Chrome перед загрузкой плеера. Проверьте издателя и источник, сохранив защиту и отделив файл от тарифа, оплаты и состояния заказа.",
+      "sections": [
+        {
+          "heading": "Уточните, какой файл заблокирован",
+          "paragraphs": [
+            "Предупреждение о загрузке при использовании IPTV Subscription относится к файлу, а не обязательно к телевизионной учётной записи. Запишите имя файла, нужный плеер и точный текст сообщения до новой попытки. Google различает опасные, подозрительные, непроверенные и небезопасные загрузки: это разные причины для осторожности. Такое сообщение не доказывает окончание подписки. Знакомое название плеера также не подтверждает, что файл получен от настоящего издателя."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте сообщение, не обходя защиту",
+          "paragraphs": [
+            "Найдите заблокированный файл и сообщение в недавней истории загрузок Chrome. Оставьте Безопасный просмотр включённым и не открывайте файл, пока проверяете официальный канал издателя и совместимость устройства. Не выполняйте просьбы отключить защиту или взять переименованный файл на замену. Google поясняет, что даже защищённая страница может предлагать небезопасную загрузку. Поэтому одного HTTPS-адреса страницы недостаточно для проверки самого файла."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделите плеер от заказа услуги",
+          "paragraphs": [
+            "Через привычный надёжный способ доступа уточните, относится ли тариф IPTV Subscription к Opplex или Filex, каковы срок и зарегистрированное состояние заказа и настройки. Лицензия плеера или платёж за приложение не равны оплате просмотра. Не выводите неизвестный лимит подключений Filex из возможности загрузки: задайте этот вопрос отдельно. Сообщите поддержке текст предупреждения, устройство и плеер без паролей и закрытых ссылок на заказ. Не повторяйте платёж ради проверки загрузки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription: پلیئر ڈاؤن لوڈ کی تنبیہ پہلے پڑھیں",
+      "excerpt": "پلیئر حاصل کرنے سے پہلے Chrome کی ڈاؤن لوڈ تنبیہ پڑھیں۔ ناشر اور ماخذ کی تصدیق کریں، براؤزر کا تحفظ برقرار رکھیں اور فائل کو پلان اور آرڈر سے الگ سمجھیں۔",
+      "seo_title": "IPTV Subscription: پلیئر ڈاؤن لوڈ کی تنبیہ پہلے پڑھیں",
+      "seo_description": "پلیئر حاصل کرنے سے پہلے Chrome کی ڈاؤن لوڈ تنبیہ پڑھیں۔ ناشر اور ماخذ کی تصدیق کریں، براؤزر کا تحفظ برقرار رکھیں اور فائل کو پلان اور آرڈر سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "معلوم کریں کون سی فائل روکی گئی",
+          "paragraphs": [
+            "IPTV Subscription کے سلسلے میں ڈاؤن لوڈ کی تنبیہ کسی فائل سے متعلق ہوتی ہے، ضروری نہیں کہ دیکھنے والے اکاؤنٹ سے ہو۔ دوبارہ کوشش سے پہلے فائل کا نام، مطلوبہ پلیئر اور براؤزر کا پورا پیغام نوٹ کریں۔ Google خطرناک، مشکوک، غیر تصدیق شدہ اور غیر محفوظ ڈاؤن لوڈ میں فرق کرتا ہے؛ ان کی وجوہ مختلف ہیں۔ یہ تنبیہ پلان ختم ہونے کا ثبوت نہیں۔ معروف پلیئر کا نام بھی فائل کے اصل ناشر سے آنے کی ضمانت نہیں بنتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "تحفظ کو نظرانداز کیے بغیر پیغام پڑھیں",
+          "paragraphs": [
+            "Chrome کی حالیہ ڈاؤن لوڈ ہسٹری میں روکی گئی فائل اور اس کا پیغام دیکھیں۔ محفوظ براؤزنگ فعال رکھیں اور فائل نہ کھولیں جب تک اصل ناشر کے سرکاری تقسیم کے ذریعے اور اپنے آلے کی مطابقت کی جانچ نہ کر لیں۔ تحفظ بند کرنے یا نام بدلی ہوئی متبادل فائل لینے والے پیغام پر عمل نہ کریں۔ Google کے مطابق محفوظ صفحے سے بھی غیر محفوظ ڈاؤن لوڈ آ سکتا ہے؛ اس لیے صفحے کا HTTPS پتہ اکیلا فائل کی تصدیق نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پلیئر اور سروس کے آرڈر کو الگ رکھیں",
+          "paragraphs": [
+            "اپنے قابل اعتماد راستے سے تصدیق کریں کہ IPTV Subscription پلان Opplex ہے یا Filex، مدت کیا ہے اور آرڈر اور سیٹ اپ کی درج شدہ حالت کیا ہے۔ پلیئر لائسنس یا ایپ کی فیس دیکھنے کی سروس کی ادائیگی سے الگ ہے۔ Filex کے غیر واضح کنکشن کی حد ڈاؤن لوڈ سے اخذ کرنے کے بجائے پوچھیں۔ سپورٹ کو تنبیہ، آلے اور پلیئر کا نام بتائیں، پاس ورڈ یا نجی آرڈر لنک نہیں۔ ڈاؤن لوڈ آزمانے کے لیے دوبارہ ادائیگی نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "IPTV Subscription: اقرأ تحذير تنزيل المشغّل أولاً",
+      "excerpt": "اقرأ رسالة حظر التنزيل في Chrome قبل الحصول على المشغّل. تحقق من الناشر والمصدر مع إبقاء الحماية، وافصل الملف عن الباقة والدفع وحالة الطلب.",
+      "seo_title": "IPTV Subscription: اقرأ تحذير تنزيل المشغّل أولاً",
+      "seo_description": "اقرأ رسالة حظر التنزيل في Chrome قبل الحصول على المشغّل. تحقق من الناشر والمصدر مع إبقاء الحماية، وافصل الملف عن الباقة والدفع وحالة الطلب.",
+      "sections": [
+        {
+          "heading": "حدّد الملف الذي حظره المتصفح",
+          "paragraphs": [
+            "يتعلق تحذير التنزيل أثناء استخدام IPTV Subscription بملف، وليس بالضرورة بحساب المشاهدة. دوّن اسم الملف والمشغّل المقصود ورسالة المتصفح بدقة قبل محاولة تنزيل أخرى. تفرّق Google بين التنزيلات الخطيرة والمشبوهة وغير المتحقق منها وغير الآمنة؛ ولكل وصف دلالة مختلفة. لا يثبت التحذير انتهاء الباقة، كما أن ظهور اسم مشغّل معروف لا يؤكد أن الملف وصل من ناشره الحقيقي."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الرسالة من دون تجاوز الحماية",
+          "paragraphs": [
+            "ابحث عن الملف المحظور ورسالته في سجل التنزيلات الأخيرة في Chrome. أبقِ التصفح الآمن مفعّلاً ولا تفتح الملف أثناء التحقق من قناة التوزيع الرسمية للناشر وتوافق جهازك. لا تتبع رسالة تطلب تعطيل الحماية أو استخدام ملف بديل أُعيدت تسميته. توضّح Google أن صفحة آمنة قد تبدأ تنزيلاً غير آمن؛ ولذلك لا يكفي عنوان HTTPS للصفحة وحده للتحقق من الملف نفسه."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل المشغّل عن طلب الخدمة",
+          "paragraphs": [
+            "تحقق عبر مسار وصولك الموثوق مما إذا كانت باقة IPTV Subscription من Opplex أو Filex، ومن مدتها وحالة الطلب والإعداد المسجلة. ترخيص المشغّل أو رسوم التطبيق منفصلة عن دفع خدمة المشاهدة. اسأل عن حد اتصالات Filex غير المذكور بدلاً من استنتاجه من التنزيل. أرسل للدعم نص التحذير ونوع الجهاز واسم المشغّل، دون بيانات الدخول أو روابط الطلب الخاصة. لا تكرر الدفع لاختبار تنزيل ملف."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription: प्लेयर डाउनलोड की चेतावनी पहले पढ़ें",
+      "excerpt": "प्लेयर लेने से पहले Chrome की अवरुद्ध डाउनलोड चेतावनी पढ़ें। प्रकाशक और स्रोत जाँचें, ब्राउज़र की सुरक्षा बनाए रखें और फ़ाइल को प्लान व ऑर्डर से अलग समझें।",
+      "seo_title": "IPTV Subscription: प्लेयर डाउनलोड की चेतावनी पहले पढ़ें",
+      "seo_description": "प्लेयर लेने से पहले Chrome की अवरुद्ध डाउनलोड चेतावनी पढ़ें। प्रकाशक और स्रोत जाँचें, ब्राउज़र की सुरक्षा बनाए रखें और फ़ाइल को प्लान व ऑर्डर से अलग समझें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन सी फ़ाइल रोकी गई",
+          "paragraphs": [
+            "IPTV Subscription से जुड़ी डाउनलोड चेतावनी किसी फ़ाइल के बारे में होती है, ज़रूरी नहीं कि देखने वाले खाते के बारे में हो। फिर से प्रयास करने से पहले फ़ाइल का नाम, इच्छित प्लेयर और ब्राउज़र का पूरा संदेश लिखें। Google खतरनाक, संदिग्ध, अपुष्ट और असुरक्षित डाउनलोड में अंतर करता है; हर श्रेणी अलग चिंता बताती है। चेतावनी से प्लान समाप्त होना साबित नहीं होता। किसी परिचित प्लेयर का नाम भी फ़ाइल के वास्तविक प्रकाशक से आने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सुरक्षा को दरकिनार किए बिना संदेश पढ़ें",
+          "paragraphs": [
+            "Chrome के हाल के डाउनलोड इतिहास में रोकी गई फ़ाइल और संदेश देखें। सुरक्षित ब्राउज़िंग चालू रखें और फ़ाइल तब तक न खोलें जब तक प्रकाशक के आधिकारिक वितरण मार्ग और अपने डिवाइस की अनुकूलता की जाँच न कर लें। सुरक्षा बंद करने या बदले हुए नाम वाली वैकल्पिक फ़ाइल लेने के निर्देश न मानें। Google बताता है कि सुरक्षित पेज से भी असुरक्षित डाउनलोड शुरू हो सकता है; इसलिए पेज का HTTPS पता अकेले फ़ाइल की पुष्टि नहीं करता।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेयर और सेवा का ऑर्डर अलग रखें",
+          "paragraphs": [
+            "अपने विश्वसनीय पहुँच मार्ग से पुष्टि करें कि IPTV Subscription प्लान Opplex है या Filex, उसकी अवधि और ऑर्डर तथा सेटअप की दर्ज स्थिति क्या है। प्लेयर लाइसेंस या ऐप शुल्क देखने की सेवा के भुगतान से अलग है। Filex की अघोषित कनेक्शन सीमा डाउनलोड से निकालने के बजाय पूछें। सहायता को चेतावनी, डिवाइस और प्लेयर का नाम बताएँ, पासवर्ड या निजी ऑर्डर लिंक नहीं। डाउनलोड जाँचने के लिए भुगतान दोबारा न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: blocked downloads and warning categories",
+      "url": "https://support.google.com/chrome/answer/6261569?hl=en"
+    }
+  ]
+}

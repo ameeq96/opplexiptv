@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-24",
+  "topic": "Inspect VLC for Android headset detection and its dependent resume-on-insertion preference separately from an ongoing playback fault, keeping manual listening choices and saved access intact.",
+  "primary_keyword": "IPTV headset detection",
+  "slug": "main-headset-detection-pause-and-resume-preferences",
+  "translations": {
+    "en": {
+      "title": "IPTV headset detection: why did VLC pause when you unplugged?",
+      "excerpt": "Read VLC for Android headset preferences when a connection change pauses playback. Keep automatic resume, accessory behaviour and saved service access separate.",
+      "seo_title": "IPTV headset detection: why did VLC pause when you unplugged?",
+      "seo_description": "Read VLC for Android headset preferences when a connection change pauses playback. Keep automatic resume, accessory behaviour and saved service access separate.",
+      "sections": [
+        {
+          "heading": "Record the exact connection change",
+          "paragraphs": [
+            "An IPTV headset detection check starts with timing: did playback pause exactly when you removed the headset, or was the video already stopping beforehand? Note the phone model, VLC version and accessory involved. A pause following that action is different from ongoing video with no sound. Neither symptom alone establishes an expired subscription or a fault affecting every viewer. Keep the same permitted video for comparison."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read both headset preferences",
+          "paragraphs": [
+            "VideoLAN documents headset detection in VLC for Android Audio settings. Read the existing choices for Detect headset and Resume on headset insertion before changing either. Detection recognises insertion and removal; the separate resume preference can restart playback when a headset is inserted during a playback session. That resume feature requires detection to be enabled. Follow the options actually present in your version, without assuming every Bluetooth accessory behaves identically."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: headset audio preferences",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare once without erasing setup",
+          "paragraphs": [
+            "Keep volume comfortable and check where sound will play before reconnecting anything. If the owner prefers manual control, preserve that preference rather than enabling automatic resume merely to remove a pause. Compare one authorised playback session and record the action and result. If the symptom persists without any headset change, report it separately. Preserve saved player access; clearing app data, buying another plan or sending private playback addresses is unnecessary for this setting check."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Detección de auriculares IPTV: ¿por qué VLC se pausó al desconectar?",
+      "excerpt": "Revisa las preferencias de auriculares de VLC para Android cuando una conexión pausa el vídeo. Separa reanudación automática, accesorio y acceso al servicio.",
+      "seo_title": "Detección de auriculares IPTV: ¿por qué VLC se pausó al desconectar?",
+      "seo_description": "Revisa las preferencias de auriculares de VLC para Android cuando una conexión pausa el vídeo. Separa reanudación automática, accesorio y acceso al servicio.",
+      "sections": [
+        {
+          "heading": "Anota el cambio de conexión exacto",
+          "paragraphs": [
+            "La comprobación de detección de auriculares durante IPTV empieza por el momento exacto: ¿la reproducción se pausó al retirarlos o el vídeo ya se detenía antes? Anota el modelo del móvil, la versión de VLC y el accesorio. Una pausa tras esa acción es distinta de un vídeo que continúa sin sonido. Ningún síntoma demuestra por sí solo que la suscripción haya caducado o exista un fallo para todos. Usa el mismo vídeo autorizado para comparar."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee las dos preferencias de auriculares",
+          "paragraphs": [
+            "VideoLAN documenta la detección de auriculares en los ajustes de Audio de VLC para Android. Lee las opciones actuales de detección y reanudación al insertar auriculares antes de cambiarlas. La primera reconoce su inserción y retirada; la segunda puede reanudar la reproducción al insertarlos durante una sesión. La reanudación requiere que la detección esté activada. Sigue las opciones presentes en tu versión, sin suponer un comportamiento idéntico en todos los accesorios Bluetooth."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferencias de auriculares",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara una vez sin borrar la configuración",
+          "paragraphs": [
+            "Mantén un volumen cómodo y comprueba por dónde saldrá el sonido antes de reconectar. Si el propietario prefiere control manual, respétalo en lugar de activar la reanudación automática solo para evitar una pausa. Compara una sesión autorizada y anota acción y resultado. Si el problema persiste sin cambiar los auriculares, comunícalo por separado. Conserva el acceso guardado: no hace falta borrar datos, comprar otro plan ni enviar direcciones privadas de reproducción para revisar este ajuste."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Détection du casque IPTV : pourquoi VLC se met-il en pause au retrait ?",
+      "excerpt": "Lisez les préférences du casque dans VLC pour Android après une pause liée au branchement. Distinguez reprise automatique, accessoire et accès au service.",
+      "seo_title": "Détection du casque IPTV : pourquoi VLC se met-il en pause au retrait ?",
+      "seo_description": "Lisez les préférences du casque dans VLC pour Android après une pause liée au branchement. Distinguez reprise automatique, accessoire et accès au service.",
+      "sections": [
+        {
+          "heading": "Notez le changement de connexion exact",
+          "paragraphs": [
+            "La vérification de la détection du casque pendant IPTV commence par le moment précis : la lecture se met-elle en pause au retrait du casque, ou la vidéo s’arrêtait-elle déjà ? Notez le modèle du téléphone, la version de VLC et l’accessoire. Une pause après ce geste diffère d’une vidéo qui continue sans son. Aucun de ces signes ne prouve à lui seul une expiration de l’abonnement ou une panne générale. Comparez avec la même vidéo autorisée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez les deux préférences du casque",
+          "paragraphs": [
+            "VideoLAN décrit la détection du casque dans les réglages Audio de VLC pour Android. Lisez les choix actuels de détection et de reprise à l’insertion avant de les modifier. La détection reconnaît l’insertion et le retrait ; la préférence distincte de reprise peut relancer la lecture lors de l’insertion pendant une session. Elle exige que la détection soit activée. Suivez les options de votre version, sans supposer que tous les accessoires Bluetooth réagissent de façon identique."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : préférences du casque",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez une fois sans effacer les réglages",
+          "paragraphs": [
+            "Gardez un volume confortable et vérifiez la sortie du son avant de rebrancher. Si le propriétaire préfère une commande manuelle, respectez ce choix plutôt que d’activer la reprise automatique pour supprimer une pause. Comparez une session autorisée et notez l’action et le résultat. Si le problème persiste sans changement de casque, signalez-le séparément. Conservez l’accès enregistré : effacer les données, acheter un autre forfait ou transmettre des adresses privées de lecture est inutile pour ce réglage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Rilevamento cuffie IPTV: perché VLC si mette in pausa scollegandole?",
+      "excerpt": "Leggi le preferenze delle cuffie in VLC per Android quando il collegamento interrompe la riproduzione. Distingui ripresa automatica, accessorio e accesso al servizio.",
+      "seo_title": "Rilevamento cuffie IPTV: perché VLC si mette in pausa scollegandole?",
+      "seo_description": "Leggi le preferenze delle cuffie in VLC per Android quando il collegamento interrompe la riproduzione. Distingui ripresa automatica, accessorio e accesso al servizio.",
+      "sections": [
+        {
+          "heading": "Annota il cambiamento di collegamento",
+          "paragraphs": [
+            "Il controllo del rilevamento delle cuffie durante IPTV parte dal momento esatto: la riproduzione si è fermata quando le hai scollegate oppure il video si interrompeva già prima? Annota modello del telefono, versione di VLC e accessorio. Una pausa dopo quel gesto è diversa da un video che continua senza audio. Nessun sintomo dimostra da solo la scadenza dell’abbonamento o un guasto per tutti. Usa lo stesso video autorizzato per il confronto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi entrambe le preferenze delle cuffie",
+          "paragraphs": [
+            "VideoLAN descrive il rilevamento delle cuffie nelle impostazioni Audio di VLC per Android. Leggi le scelte attuali di rilevamento e ripresa all’inserimento prima di cambiarle. Il rilevamento riconosce inserimento e rimozione; la preferenza separata di ripresa può riavviare la riproduzione quando inserisci le cuffie durante una sessione. Richiede che il rilevamento sia attivo. Segui le opzioni presenti nella tua versione, senza presumere un comportamento identico per tutti gli accessori Bluetooth."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferenze delle cuffie",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta una volta senza cancellare i dati",
+          "paragraphs": [
+            "Mantieni un volume confortevole e controlla dove uscirà l’audio prima di ricollegare qualcosa. Se il proprietario preferisce il controllo manuale, rispettalo invece di attivare la ripresa automatica solo per evitare una pausa. Confronta una sessione autorizzata e annota azione e risultato. Se il problema persiste senza cambiare le cuffie, segnalalo separatamente. Conserva l’accesso salvato: non occorre cancellare i dati, acquistare un altro piano o inviare indirizzi privati di riproduzione per questa verifica."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-headsetdetectie: waarom pauzeert VLC bij loskoppelen?",
+      "excerpt": "Lees de headsetvoorkeuren van VLC voor Android wanneer een verbinding de weergave pauzeert. Houd automatisch hervatten, accessoires en diensttoegang uit elkaar.",
+      "seo_title": "IPTV-headsetdetectie: waarom pauzeert VLC bij loskoppelen?",
+      "seo_description": "Lees de headsetvoorkeuren van VLC voor Android wanneer een verbinding de weergave pauzeert. Houd automatisch hervatten, accessoires en diensttoegang uit elkaar.",
+      "sections": [
+        {
+          "heading": "Noteer de precieze verbindingswijziging",
+          "paragraphs": [
+            "Een controle van IPTV-headsetdetectie begint bij het tijdstip: pauzeerde het afspelen precies toen je de headset loskoppelde, of stopte de video daarvoor al? Noteer telefoonmodel, VLC-versie en accessoire. Een pauze na die handeling is iets anders dan doorlopende video zonder geluid. Geen van beide bewijst op zichzelf een verlopen abonnement of een storing voor iedereen. Vergelijk met dezelfde toegestane video."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees beide headsetvoorkeuren",
+          "paragraphs": [
+            "VideoLAN beschrijft headsetdetectie in de Audio-instellingen van VLC voor Android. Lees de huidige keuzes voor detectie en hervatten bij aansluiten voordat je iets wijzigt. Detectie herkent aansluiten en verwijderen; de afzonderlijke hervatvoorkeur kan afspelen hervatten wanneer tijdens een afspeelsessie een headset wordt aangesloten. Daarvoor moet detectie zijn ingeschakeld. Gebruik de opties van jouw versie en neem niet aan dat alle Bluetooth-accessoires hetzelfde reageren."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: headsetvoorkeuren",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk eenmaal zonder gegevens te wissen",
+          "paragraphs": [
+            "Houd het volume aangenaam en controleer de geluidsuitgang voordat je iets opnieuw aansluit. Verkiest de eigenaar handmatige bediening, behoud dat dan in plaats van automatisch hervatten in te schakelen alleen om een pauze weg te nemen. Vergelijk één toegestane sessie en noteer handeling en resultaat. Blijft het probleem zonder headsetwijziging bestaan, meld het afzonderlijk. Bewaar opgeslagen toegang; appgegevens wissen, een ander abonnement kopen of privéafspeeladressen versturen is voor deze instelling niet nodig."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Deteção de auscultadores IPTV: porque pausa o VLC ao desligá-los?",
+      "excerpt": "Leia as preferências de auscultadores do VLC para Android quando uma ligação pausa a reprodução. Separe retoma automática, acessório e acesso ao serviço.",
+      "seo_title": "Deteção de auscultadores IPTV: porque pausa o VLC ao desligá-los?",
+      "seo_description": "Leia as preferências de auscultadores do VLC para Android quando uma ligação pausa a reprodução. Separe retoma automática, acessório e acesso ao serviço.",
+      "sections": [
+        {
+          "heading": "Anote a alteração exata da ligação",
+          "paragraphs": [
+            "A verificação da deteção de auscultadores durante IPTV começa pelo momento exato: a reprodução pausou ao retirá-los ou o vídeo já parava antes? Anote modelo do telemóvel, versão do VLC e acessório. Uma pausa após essa ação é diferente de um vídeo que continua sem som. Nenhum sintoma comprova, por si só, a expiração da subscrição ou uma falha para todos. Compare com o mesmo vídeo autorizado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia as duas preferências dos auscultadores",
+          "paragraphs": [
+            "A VideoLAN documenta a deteção de auscultadores nas definições de Áudio do VLC para Android. Leia as escolhas atuais de deteção e retoma ao inserir antes de as alterar. A deteção reconhece inserção e remoção; a preferência separada de retoma pode reiniciar a reprodução ao inserir auscultadores durante uma sessão. Esta exige que a deteção esteja ativa. Siga as opções da sua versão, sem presumir comportamento idêntico em todos os acessórios Bluetooth."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: preferências de auscultadores",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare uma vez sem apagar a configuração",
+          "paragraphs": [
+            "Mantenha um volume confortável e confirme a saída de som antes de voltar a ligar. Se o proprietário preferir controlo manual, respeite-o em vez de ativar a retoma automática apenas para eliminar uma pausa. Compare uma sessão autorizada e anote ação e resultado. Se o problema persistir sem alterar os auscultadores, comunique-o separadamente. Preserve o acesso guardado: apagar dados, comprar outro plano ou enviar endereços privados de reprodução é desnecessário para esta verificação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Обнаружение гарнитуры IPTV: почему VLC ставит паузу при отключении?",
+      "excerpt": "Прочитайте настройки гарнитуры в VLC для Android, если подключение меняет воспроизведение. Разделяйте автовозобновление, аксессуар и доступ к услуге.",
+      "seo_title": "Обнаружение гарнитуры IPTV: почему VLC ставит паузу при отключении?",
+      "seo_description": "Прочитайте настройки гарнитуры в VLC для Android, если подключение меняет воспроизведение. Разделяйте автовозобновление, аксессуар и доступ к услуге.",
+      "sections": [
+        {
+          "heading": "Запишите точное изменение подключения",
+          "paragraphs": [
+            "Проверка обнаружения гарнитуры при IPTV начинается с момента события: пауза возникла именно при отключении гарнитуры или видео останавливалось и раньше? Запишите модель телефона, версию VLC и аксессуар. Пауза после этого действия отличается от продолжающегося видео без звука. Ни один признак сам по себе не доказывает окончание подписки или общую неисправность. Для сравнения оставьте то же разрешённое видео."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте обе настройки гарнитуры",
+          "paragraphs": [
+            "VideoLAN описывает обнаружение гарнитуры в настройках аудио VLC для Android. До изменений прочитайте текущие параметры обнаружения и возобновления при подключении. Обнаружение распознаёт подключение и отключение; отдельная настройка возобновления может продолжить воспроизведение при подключении гарнитуры во время сеанса. Для неё необходимо включённое обнаружение. Используйте параметры своей версии, не предполагая одинаковую работу всех аксессуаров Bluetooth."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: настройки гарнитуры",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните один раз без удаления данных",
+          "paragraphs": [
+            "Сохраняйте комфортную громкость и проверяйте выход звука до повторного подключения. Если владелец предпочитает ручное управление, уважайте этот выбор вместо включения автовозобновления только ради устранения паузы. Сравните один разрешённый сеанс, запишите действие и результат. Если проблема остаётся без изменения подключения гарнитуры, сообщите о ней отдельно. Сохраните доступ плеера: удалять данные приложения, покупать другой тариф или отправлять частные адреса воспроизведения для этой проверки не требуется."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV ہیڈسیٹ کی شناخت: نکالنے پر VLC کیوں رک گیا؟",
+      "excerpt": "کنکشن بدلنے پر پلے بیک رک جائے تو Android کے VLC میں ہیڈسیٹ کی ترجیحات پڑھیں۔ خودکار بحالی، لوازمے کے رویے اور سروس کی رسائی کو الگ سمجھیں۔",
+      "seo_title": "IPTV ہیڈسیٹ کی شناخت: نکالنے پر VLC کیوں رک گیا؟",
+      "seo_description": "کنکشن بدلنے پر پلے بیک رک جائے تو Android کے VLC میں ہیڈسیٹ کی ترجیحات پڑھیں۔ خودکار بحالی، لوازمے کے رویے اور سروس کی رسائی کو الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "کنکشن کی درست تبدیلی لکھیں",
+          "paragraphs": [
+            "IPTV ہیڈسیٹ کی شناخت کی جانچ میں پہلے وقت پر توجہ دیں: کیا ہیڈسیٹ نکالتے ہی پلے بیک رکا، یا ویڈیو پہلے بھی رک رہی تھی؟ فون کا ماڈل، VLC کا نسخہ اور متعلقہ لوازمہ لکھیں۔ اس عمل کے بعد وقفہ آنا، آواز کے بغیر ویڈیو چلتے رہنے سے مختلف ہے۔ ان میں سے کوئی علامت اکیلے سبسکرپشن ختم ہونے یا سب ناظرین کی خرابی کا ثبوت نہیں۔ موازنے کے لیے وہی مجاز ویڈیو رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "ہیڈسیٹ کی دونوں ترجیحات پڑھیں",
+          "paragraphs": [
+            "VideoLAN نے Android کے VLC کی آڈیو ترتیبات میں ہیڈسیٹ کی شناخت بیان کی ہے۔ کچھ بدلنے سے پہلے شناخت اور ہیڈسیٹ لگانے پر پلے بیک بحال کرنے کے موجودہ انتخاب پڑھیں۔ شناخت لگانے اور نکالنے کو پہچانتی ہے؛ بحالی کی الگ ترجیح چلتے سیشن میں ہیڈسیٹ لگنے پر پلے بیک دوبارہ چلا سکتی ہے۔ اس کے لیے شناخت فعال ہونا ضروری ہے۔ اپنے نسخے میں موجود اختیارات دیکھیں اور ہر Bluetooth لوازمے کا رویہ یکساں فرض نہ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: ہیڈسیٹ کی ترجیحات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "محفوظ ترتیب مٹائے بغیر ایک بار موازنہ کریں",
+          "paragraphs": [
+            "آواز مناسب سطح پر رکھیں اور دوبارہ جوڑنے سے پہلے دیکھیں کہ آواز کہاں سے آئے گی۔ مالک دستی کنٹرول چاہتا ہو تو محض وقفہ ختم کرنے کے لیے خودکار بحالی فعال نہ کریں۔ ایک مجاز سیشن کا موازنہ کرکے عمل اور نتیجہ لکھیں۔ ہیڈسیٹ بدلے بغیر بھی علامت برقرار ہو تو اسے الگ رپورٹ کریں۔ پلیئر کی محفوظ رسائی برقرار رکھیں؛ اس جانچ کے لیے نہ ایپ کا ڈیٹا مٹائیں، نہ دوسرا منصوبہ خریدیں، اور نہ نجی پلے بیک پتے بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "اكتشاف سماعة IPTV: لماذا يتوقف VLC مؤقتًا عند فصلها؟",
+      "excerpt": "اقرأ تفضيلات السماعة في VLC لنظام Android إذا تغيّر التشغيل مع التوصيل. افصل بين الاستئناف التلقائي وسلوك الملحق والوصول إلى الخدمة.",
+      "seo_title": "اكتشاف سماعة IPTV: لماذا يتوقف VLC مؤقتًا عند فصلها؟",
+      "seo_description": "اقرأ تفضيلات السماعة في VLC لنظام Android إذا تغيّر التشغيل مع التوصيل. افصل بين الاستئناف التلقائي وسلوك الملحق والوصول إلى الخدمة.",
+      "sections": [
+        {
+          "heading": "دوّن تغيير الاتصال بدقة",
+          "paragraphs": [
+            "يبدأ فحص اكتشاف السماعة أثناء IPTV بتوقيت الحدث: هل توقف التشغيل مؤقتًا لحظة فصل السماعة، أم كانت الفيديوهات تتوقف قبل ذلك؟ دوّن طراز الهاتف وإصدار VLC والملحق. التوقف بعد هذا الفعل يختلف عن استمرار الصورة بلا صوت. لا يثبت أي عرض وحده انتهاء الاشتراك أو وجود عطل لدى جميع المشاهدين. استخدم الفيديو المسموح نفسه للمقارنة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ تفضيلي السماعة",
+          "paragraphs": [
+            "توثّق VideoLAN اكتشاف السماعة ضمن إعدادات الصوت في VLC لنظام Android. اقرأ الاختيار الحالي للاكتشاف والاستئناف عند إدخال السماعة قبل تعديل أي منهما. يتعرف الاكتشاف على التوصيل والفصل؛ أما تفضيل الاستئناف المنفصل فيمكنه متابعة التشغيل عند إدخال السماعة أثناء جلسة تشغيل. ويتطلب ذلك تفعيل الاكتشاف. اتبع الخيارات الموجودة في إصدارك دون افتراض سلوك متطابق لكل ملحقات Bluetooth."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: تفضيلات السماعة",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن مرة واحدة دون مسح الإعداد",
+          "paragraphs": [
+            "حافظ على مستوى صوت مريح وتحقق من مخرج الصوت قبل إعادة التوصيل. إذا فضّل المالك التحكم اليدوي، فاحترم ذلك بدل تفعيل الاستئناف التلقائي لمجرد إزالة وقفة. قارن جلسة مسموحة واحدة ودوّن الفعل والنتيجة. إذا استمر العرض دون تغيير السماعة، فأبلغ عنه منفصلًا. احتفظ بالوصول المحفوظ؛ لا يلزم مسح بيانات التطبيق أو شراء خطة أخرى أو إرسال عناوين تشغيل خاصة لفحص هذا الإعداد."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV हेडसेट पहचान: निकालने पर VLC क्यों रुक गया?",
+      "excerpt": "कनेक्शन बदलने पर प्लेबैक रुके तो Android के VLC में हेडसेट की प्राथमिकताएँ पढ़ें। अपने-आप फिर चलना, एक्सेसरी का व्यवहार और सेवा की पहुँच अलग समझें।",
+      "seo_title": "IPTV हेडसेट पहचान: निकालने पर VLC क्यों रुक गया?",
+      "seo_description": "कनेक्शन बदलने पर प्लेबैक रुके तो Android के VLC में हेडसेट की प्राथमिकताएँ पढ़ें। अपने-आप फिर चलना, एक्सेसरी का व्यवहार और सेवा की पहुँच अलग समझें।",
+      "sections": [
+        {
+          "heading": "कनेक्शन का ठीक बदलाव लिखें",
+          "paragraphs": [
+            "IPTV हेडसेट पहचान की जाँच समय से शुरू होती है: क्या हेडसेट निकालते ही प्लेबैक रुका या वीडियो पहले भी रुक रहा था? फ़ोन मॉडल, VLC संस्करण और एक्सेसरी लिखें। उस काम के बाद विराम आना, बिना आवाज़ के वीडियो चलते रहने से अलग है। कोई भी लक्षण अकेले सदस्यता खत्म होने या सभी दर्शकों की खराबी का प्रमाण नहीं है। तुलना के लिए वही अधिकृत वीडियो रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "हेडसेट की दोनों प्राथमिकताएँ पढ़ें",
+          "paragraphs": [
+            "VideoLAN ने Android के VLC की ऑडियो सेटिंग में हेडसेट पहचान बताई है। कुछ बदलने से पहले पहचान और हेडसेट लगाने पर फिर चलाने के मौजूदा चुनाव पढ़ें। पहचान लगाने और निकालने को समझती है; फिर चलाने की अलग प्राथमिकता चलते सत्र में हेडसेट लगाने पर प्लेबैक शुरू कर सकती है। इसके लिए पहचान चालू होना ज़रूरी है। अपने संस्करण के विकल्प अपनाएँ; हर Bluetooth एक्सेसरी का व्यवहार एक जैसा न मानें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: हेडसेट प्राथमिकताएँ",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "सेटअप मिटाए बिना एक बार तुलना करें",
+          "paragraphs": [
+            "आवाज़ आरामदायक रखें और फिर जोड़ने से पहले देखें कि आवाज़ कहाँ से आएगी। मालिक हाथ से नियंत्रण चाहता हो तो केवल विराम हटाने के लिए अपने-आप फिर चलाना चालू न करें। एक अधिकृत सत्र की तुलना करके काम और नतीजा लिखें। हेडसेट बदले बिना भी समस्या हो तो अलग बताएँ। प्लेयर की सहेजी पहुँच बनाए रखें; इस जाँच के लिए न ऐप का डेटा मिटाएँ, न दूसरा प्लान खरीदें और न निजी प्लेबैक पते भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android Audio headset settings",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+    }
+  ]
+}
