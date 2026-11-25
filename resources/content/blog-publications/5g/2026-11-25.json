@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-25",
+  "topic": "Identify Android Live Caption device-generated speech text separately from player subtitle tracks and 5G Live IPTV plan expiry, with device and language support checks.",
+  "primary_keyword": "5G Live IPTV Live Caption",
+  "slug": "5g-live-caption-device-text-versus-player-subtitles",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV Live Caption: device text or player subtitles?",
+      "excerpt": "Identify Android’s generated speech captions separately from player subtitle tracks. Check device and language support while preserving useful accessibility choices.",
+      "seo_title": "5G Live IPTV Live Caption: device text or player subtitles?",
+      "seo_description": "Identify Android’s generated speech captions separately from player subtitle tracks. Check device and language support while preserving useful accessibility choices.",
+      "sections": [
+        {
+          "heading": "Identify the caption box first",
+          "paragraphs": [
+            "A 5G Live IPTV Live Caption check starts with the words on screen: are they in a separate Android caption box or selected inside the player? Google describes Live Caption as automatically captioning speech playing on the device. That is different from choosing a programme’s supplied subtitle track. Note the phone model, Android version and spoken language. Keep an existing caption preference that helps the viewer."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Check the documented device setting",
+          "paragraphs": [
+            "Google documents Settings, Accessibility, then Live Caption; searching Settings or consulting the manufacturer can help if the option is missing. Support and languages vary by device, so do not assume every Android phone has the feature. On first use, Google says Wi-Fi is needed to download the default language pack. Read the current setting before enabling it for an owner-requested comparison, rather than installing an unknown caption app."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Android Live Caption help",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare speech without changing the plan",
+          "paragraphs": [
+            "Use the same permitted clip with clear speech and little background noise. Google notes that captions may be unavailable in some media apps. Do not assume generated words are an official programme transcript or that every language is supported. Check the player’s own subtitle choices separately. Neither a missing box nor imperfect captions establishes subscription expiry. Do not reset the phone, erase player data or renew a plan for this check. Report device, version and language without private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Live Caption con 5G Live IPTV: ¿texto del dispositivo o subtítulos?",
+      "excerpt": "Distingue los subtítulos de voz generados por Android de las pistas del reproductor. Comprueba dispositivo e idioma y conserva las opciones de accesibilidad útiles.",
+      "seo_title": "Live Caption con 5G Live IPTV: ¿texto del dispositivo o subtítulos?",
+      "seo_description": "Distingue los subtítulos de voz generados por Android de las pistas del reproductor. Comprueba dispositivo e idioma y conserva las opciones de accesibilidad útiles.",
+      "sections": [
+        {
+          "heading": "Identifica primero el cuadro de subtítulos",
+          "paragraphs": [
+            "Una comprobación de Live Caption con 5G Live IPTV empieza por las palabras en pantalla: ¿aparecen en un cuadro de Android o se seleccionaron dentro del reproductor? Google describe Live Caption como subtitulado automático del habla que se reproduce en el dispositivo. Es distinto de elegir una pista suministrada por el programa. Anota modelo del móvil, versión de Android e idioma hablado. Conserva una preferencia que ayude al espectador."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comprueba el ajuste documentado del dispositivo",
+          "paragraphs": [
+            "Google indica Ajustes, Accesibilidad y Live Caption; buscar en Ajustes o consultar al fabricante puede ayudar si falta la opción. La compatibilidad y los idiomas varían según el dispositivo: no todos los móviles Android tienen esta función. Google señala que el primer uso requiere Wi-Fi para descargar el paquete de idioma predeterminado. Lee el ajuste actual antes de activarlo para una comparación solicitada por el propietario, en vez de instalar una aplicación desconocida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google sobre Live Caption en Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara el habla sin cambiar el plan",
+          "paragraphs": [
+            "Utiliza el mismo vídeo permitido, con habla clara y poco ruido. Google advierte que algunas aplicaciones multimedia no ofrecen estos subtítulos. No supongas que el texto generado es una transcripción oficial ni que se admiten todos los idiomas. Comprueba por separado los subtítulos del reproductor. Un cuadro ausente o texto imperfecto no demuestra caducidad. No restablezcas el móvil, borres datos ni renueves el plan para esta prueba. Comunica dispositivo, versión e idioma, sin direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Live Caption avec 5G Live IPTV : texte Android ou sous-titres du lecteur ?",
+      "excerpt": "Distinguez les paroles sous-titrées par Android des pistes du lecteur. Vérifiez appareil et langue en conservant les réglages d’accessibilité utiles.",
+      "seo_title": "Live Caption avec 5G Live IPTV : texte Android ou sous-titres du lecteur ?",
+      "seo_description": "Distinguez les paroles sous-titrées par Android des pistes du lecteur. Vérifiez appareil et langue en conservant les réglages d’accessibilité utiles.",
+      "sections": [
+        {
+          "heading": "Identifier d’abord la zone de sous-titres",
+          "paragraphs": [
+            "Une vérification de Live Caption avec 5G Live IPTV commence par les mots à l’écran : sont-ils dans une zone Android distincte ou sélectionnés dans le lecteur ? Google décrit Live Caption comme un sous-titrage automatique de la parole diffusée sur l’appareil. Cela diffère du choix d’une piste fournie avec le programme. Notez le modèle du téléphone, la version d’Android et la langue parlée. Gardez le réglage qui aide la personne."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulter le réglage documenté de l’appareil",
+          "paragraphs": [
+            "Google indique Paramètres, Accessibilité, puis Live Caption ; recherchez dans les paramètres ou consultez le fabricant si l’option manque. La compatibilité et les langues varient selon l’appareil : la fonction n’existe pas sur tous les téléphones Android. Pour la première utilisation, Google demande le Wi-Fi afin de télécharger le pack de langue par défaut. Lisez le réglage actuel avant de l’activer pour une comparaison souhaitée par le propriétaire, sans installer d’application inconnue."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google sur Live Caption pour Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer la parole sans changer de forfait",
+          "paragraphs": [
+            "Utilisez la même vidéo autorisée, avec une parole claire et peu de bruit. Google précise que certaines applications multimédias peuvent ne pas afficher ces sous-titres. Ne supposez pas que le texte généré est une transcription officielle ou que toutes les langues sont prises en charge. Examinez séparément les pistes du lecteur. Une zone absente ou un texte imparfait ne prouve pas une expiration. Ne réinitialisez pas le téléphone, n’effacez pas les données et ne renouvelez pas le forfait pour cela. Signalez appareil, version et langue sans adresse privée de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Live Caption con 5G Live IPTV: testo Android o sottotitoli del lettore?",
+      "excerpt": "Distingui i sottotitoli vocali generati da Android dalle tracce del lettore. Verifica dispositivo e lingua conservando le preferenze di accessibilità utili.",
+      "seo_title": "Live Caption con 5G Live IPTV: testo Android o sottotitoli del lettore?",
+      "seo_description": "Distingui i sottotitoli vocali generati da Android dalle tracce del lettore. Verifica dispositivo e lingua conservando le preferenze di accessibilità utili.",
+      "sections": [
+        {
+          "heading": "Identifica prima il riquadro dei sottotitoli",
+          "paragraphs": [
+            "Una verifica di Live Caption con 5G Live IPTV parte dalle parole sullo schermo: compaiono in un riquadro Android separato o sono state selezionate nel lettore? Google descrive Live Caption come sottotitolazione automatica del parlato riprodotto sul dispositivo. È diverso dalla scelta di una traccia fornita con il programma. Annota modello del telefono, versione di Android e lingua parlata. Conserva una preferenza che aiuta chi guarda."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controlla l’impostazione documentata",
+          "paragraphs": [
+            "Google indica Impostazioni, Accessibilità e Live Caption; se manca l’opzione, cercala nelle impostazioni o consulta il produttore. Supporto e lingue dipendono dal dispositivo: non tutti i telefoni Android offrono la funzione. Google richiede il Wi-Fi al primo utilizzo per scaricare il pacchetto della lingua predefinita. Leggi l’impostazione attuale prima di attivarla per un confronto richiesto dal proprietario, anziché installare un’app sconosciuta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google a Live Caption su Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta il parlato senza cambiare piano",
+          "paragraphs": [
+            "Usa lo stesso video consentito, con parlato chiaro e poco rumore. Google segnala che i sottotitoli possono mancare in alcune app multimediali. Non considerare il testo generato una trascrizione ufficiale e non presumere che tutte le lingue siano supportate. Controlla separatamente le tracce del lettore. Un riquadro assente o parole imperfette non provano la scadenza. Non ripristinare il telefono, non cancellare i dati e non rinnovare il piano per questa verifica. Comunica dispositivo, versione e lingua senza indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Live Caption bij 5G Live IPTV: Android-tekst of ondertitels van de speler?",
+      "excerpt": "Onderscheid door Android gemaakte spraakondertitels van ondertitelsporen in de speler. Controleer apparaat en taal en behoud nuttige toegankelijkheidskeuzes.",
+      "seo_title": "Live Caption bij 5G Live IPTV: Android-tekst of ondertitels van de speler?",
+      "seo_description": "Onderscheid door Android gemaakte spraakondertitels van ondertitelsporen in de speler. Controleer apparaat en taal en behoud nuttige toegankelijkheidskeuzes.",
+      "sections": [
+        {
+          "heading": "Herken eerst het ondertitelvak",
+          "paragraphs": [
+            "Een controle van Live Caption bij 5G Live IPTV begint bij de woorden op het scherm: staan ze in een apart Android-vak of zijn ze in de speler gekozen? Google beschrijft Live Caption als automatische ondertiteling van spraak die op het apparaat wordt afgespeeld. Dat is iets anders dan een meegeleverd ondertitelspoor kiezen. Noteer telefoonmodel, Android-versie en gesproken taal. Behoud een bestaande voorkeur die de kijker helpt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Controleer de beschreven apparaatinstelling",
+          "paragraphs": [
+            "Google noemt Instellingen, Toegankelijkheid en Live Caption; zoek in Instellingen of raadpleeg de fabrikant als de optie ontbreekt. Ondersteuning en talen verschillen per apparaat: niet elke Android-telefoon heeft de functie. Volgens Google is bij het eerste gebruik wifi nodig om het standaardtaalpakket te downloaden. Lees de huidige instelling voordat je die op verzoek van de eigenaar voor een vergelijking inschakelt; installeer geen onbekende ondertitelapp."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google-hulp voor Live Caption op Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk spraak zonder het abonnement te wijzigen",
+          "paragraphs": [
+            "Gebruik dezelfde toegestane video met duidelijke spraak en weinig achtergrondgeluid. Google zegt dat ondertitels in sommige media-apps kunnen ontbreken. Beschouw gegenereerde woorden niet als officieel transcript en neem niet aan dat elke taal wordt ondersteund. Bekijk de ondertitelkeuzes van de speler apart. Een ontbrekend vak of onvolmaakte tekst bewijst geen verlopen abonnement. Reset de telefoon niet, wis geen spelergegevens en verleng hiervoor geen abonnement. Meld apparaat, versie en taal zonder privé-afspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Live Caption no 5G Live IPTV: texto do Android ou legendas do leitor?",
+      "excerpt": "Distinga legendas de fala geradas pelo Android das faixas do leitor. Confirme dispositivo e idioma preservando preferências de acessibilidade úteis.",
+      "seo_title": "Live Caption no 5G Live IPTV: texto do Android ou legendas do leitor?",
+      "seo_description": "Distinga legendas de fala geradas pelo Android das faixas do leitor. Confirme dispositivo e idioma preservando preferências de acessibilidade úteis.",
+      "sections": [
+        {
+          "heading": "Identifique primeiro a caixa de legendas",
+          "paragraphs": [
+            "Uma verificação do Live Caption no 5G Live IPTV começa pelas palavras no ecrã: estão numa caixa separada do Android ou foram escolhidas no leitor? O Google descreve o Live Caption como legendagem automática da fala reproduzida no dispositivo. É diferente de escolher uma faixa fornecida pelo programa. Anote modelo do telemóvel, versão do Android e idioma falado. Preserve uma preferência existente que ajude quem vê."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confirme a definição documentada do dispositivo",
+          "paragraphs": [
+            "O Google indica Definições, Acessibilidade e Live Caption; procurar nas definições ou consultar o fabricante ajuda se faltar a opção. A compatibilidade e os idiomas variam por dispositivo: nem todos os telemóveis Android têm a função. No primeiro uso, o Google exige Wi-Fi para descarregar o pacote de idioma predefinido. Leia a definição atual antes de a ativar numa comparação pedida pelo proprietário, em vez de instalar uma aplicação desconhecida."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda Google para Live Caption no Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare a fala sem alterar o plano",
+          "paragraphs": [
+            "Use o mesmo vídeo autorizado com fala clara e pouco ruído. O Google avisa que algumas aplicações multimédia podem não apresentar estas legendas. Não suponha que o texto gerado é uma transcrição oficial ou que todos os idiomas são suportados. Veja separadamente as faixas do leitor. Uma caixa ausente ou palavras imperfeitas não provam que o plano expirou. Não reponha o telemóvel, não apague dados do leitor nem renove o plano para esta verificação. Informe dispositivo, versão e idioma sem endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Live Caption в 5G Live IPTV: текст Android или субтитры плеера?",
+      "excerpt": "Отличайте распознанную Android речь от дорожек субтитров плеера. Проверьте поддержку устройства и языка, сохраняя полезные специальные возможности.",
+      "seo_title": "Live Caption в 5G Live IPTV: текст Android или субтитры плеера?",
+      "seo_description": "Отличайте распознанную Android речь от дорожек субтитров плеера. Проверьте поддержку устройства и языка, сохраняя полезные специальные возможности.",
+      "sections": [
+        {
+          "heading": "Сначала определите источник окна субтитров",
+          "paragraphs": [
+            "Проверка Live Caption в 5G Live IPTV начинается со слов на экране: они появляются в отдельном окне Android или выбраны внутри плеера? Google описывает Live Caption как автоматические субтитры к речи, воспроизводимой на устройстве. Это отличается от выбора дорожки, предоставленной с программой. Запишите модель телефона, версию Android и язык речи. Сохраните существующую настройку, если она помогает зрителю."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте документированную настройку устройства",
+          "paragraphs": [
+            "Google указывает разделы «Настройки», «Специальные возможности», затем Live Caption; если пункта нет, воспользуйтесь поиском настроек или руководством производителя. Поддержка и языки зависят от устройства: функция есть не на каждом Android-телефоне. По данным Google, при первом использовании нужен Wi-Fi для загрузки стандартного языкового пакета. Сначала прочитайте текущее значение и включайте функцию для сравнения только по желанию владельца, не устанавливая неизвестное приложение."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google по Live Caption для Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните речь без изменения тарифа",
+          "paragraphs": [
+            "Используйте то же разрешённое видео с чёткой речью и небольшим фоновым шумом. Google отмечает, что некоторые медиаприложения могут не поддерживать такие субтитры. Не считайте созданный текст официальной расшифровкой и не предполагайте поддержку любого языка. Отдельно проверьте дорожки плеера. Отсутствие окна или неточный текст не доказывают истечение подписки. Не сбрасывайте телефон, не стирайте данные и не продлевайте тариф ради этой проверки. Сообщите устройство, версию и язык без закрытых адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی براہ راست کیپشننگ: آلے کا متن یا پلیئر کے ذیلی عنوانات؟",
+      "excerpt": "Android کی خودکار گفتاری کیپشننگ کو پلیئر کے ذیلی عنوانات سے الگ پہچانیں۔ آلے اور زبان کی سہولت دیکھیں اور مفید رسائی کی ترجیحات برقرار رکھیں۔",
+      "seo_title": "5G Live IPTV کی براہ راست کیپشننگ: آلے کا متن یا پلیئر کے ذیلی عنوانات؟",
+      "seo_description": "Android کی خودکار گفتاری کیپشننگ کو پلیئر کے ذیلی عنوانات سے الگ پہچانیں۔ آلے اور زبان کی سہولت دیکھیں اور مفید رسائی کی ترجیحات برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے کیپشن کا خانہ پہچانیں",
+          "paragraphs": [
+            "5G Live IPTV کی براہ راست کیپشننگ کی جانچ اسکرین کے الفاظ سے شروع ہوتی ہے: کیا یہ Android کے الگ خانے میں ہیں یا پلیئر میں منتخب ہوئے ہیں؟ Google کے مطابق یہ سہولت آلے پر چلنے والی گفتگو کے خودکار ذیلی عنوانات بناتی ہے۔ یہ پروگرام کے ساتھ فراہم کردہ ذیلی عنوانات کی ٹریک منتخب کرنے سے مختلف ہے۔ فون کا ماڈل، Android نسخہ اور بولی جانے والی زبان لکھیں۔ ناظر کی مدد کرنے والی موجودہ ترجیح برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آلے کی بیان کردہ ترتیب دیکھیں",
+          "paragraphs": [
+            "Google ترتیبات، رسائی پذیری، پھر براہ راست کیپشننگ کا راستہ بتاتا ہے؛ اختیار نہ ملے تو ترتیبات میں تلاش یا بنانے والے کی رہنمائی دیکھیں۔ آلے کے مطابق سہولت اور زبانیں بدلتی ہیں؛ ہر Android فون میں یہ موجود فرض نہ کریں۔ Google کے مطابق پہلی بار بنیادی زبان کا پیک ڈاؤن لوڈ کرنے کے لیے Wi-Fi درکار ہے۔ نامعلوم کیپشن ایپ نصب کرنے کے بجائے پہلے موجودہ ترتیب پڑھیں، اور مالک کے کہنے پر ہی موازنے کے لیے سہولت فعال کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android کی براہ راست کیپشننگ کی Google رہنمائی",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "منصوبہ بدلے بغیر گفتگو کا موازنہ کریں",
+          "paragraphs": [
+            "اسی مجاز ویڈیو میں واضح گفتگو اور کم پس منظر شور استعمال کریں۔ Google بتاتا ہے کہ بعض میڈیا ایپس میں کیپشن دستیاب نہیں ہوتے۔ خودکار الفاظ کو پروگرام کی سرکاری تحریر نہ سمجھیں اور ہر زبان کی سہولت فرض نہ کریں۔ پلیئر کے اپنے ذیلی عنوانات الگ دیکھیں۔ خانہ غائب ہونا یا ناقص الفاظ رکنیت ختم ہونے کا ثبوت نہیں۔ اس جانچ کے لیے نہ فون ری سیٹ کریں، نہ پلیئر کا ڈیٹا مٹائیں اور نہ منصوبہ تجدید کریں۔ نجی پلے بیک پتوں کے بغیر آلہ، نسخہ اور زبان بتائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "النص التلقائي مع 5G Live IPTV: من Android أم من مسارات المشغّل؟",
+      "excerpt": "ميّز تسميات الكلام التي ينشئها Android عن مسارات الترجمة في المشغّل. تحقّق من دعم الجهاز واللغة مع الحفاظ على خيارات تسهيل الاستخدام المفيدة.",
+      "seo_title": "النص التلقائي مع 5G Live IPTV: من Android أم من مسارات المشغّل؟",
+      "seo_description": "ميّز تسميات الكلام التي ينشئها Android عن مسارات الترجمة في المشغّل. تحقّق من دعم الجهاز واللغة مع الحفاظ على خيارات تسهيل الاستخدام المفيدة.",
+      "sections": [
+        {
+          "heading": "حدّد مربع النص أولاً",
+          "paragraphs": [
+            "تبدأ مراجعة النص التلقائي مع 5G Live IPTV بالكلمات الظاهرة: هل هي في مربع Android مستقل أم جرى اختيارها داخل المشغّل؟ تصف Google الميزة بأنها تنشئ تسميات تلقائية للكلام الجاري تشغيله على الجهاز. يختلف ذلك عن اختيار مسار ترجمة يقدّمه البرنامج. دوّن طراز الهاتف وإصدار Android واللغة المنطوقة. احتفظ بخيار قائم يساعد المشاهد."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع إعداد الجهاز الموثّق",
+          "paragraphs": [
+            "توضح Google المسار: الإعدادات ثم تسهيل الاستخدام ثم النص التلقائي؛ ابحث في الإعدادات أو راجع الشركة المصنّعة إذا غاب الخيار. يختلف الدعم واللغات حسب الجهاز، فلا تفترض وجود الميزة في كل هاتف Android. تذكر Google أن الاستخدام الأول يحتاج Wi-Fi لتنزيل حزمة اللغة الافتراضية. اقرأ الحالة الحالية قبل التفعيل لمقارنة يطلبها المالك، بدلاً من تثبيت تطبيق تسميات مجهول."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google للنص التلقائي على Android",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن الكلام دون تغيير الخطة",
+          "paragraphs": [
+            "استخدم المقطع المسموح نفسه بكلام واضح وضجيج خلفي قليل. تشير Google إلى احتمال عدم توفر التسميات في بعض تطبيقات الوسائط. لا تفترض أن الكلمات المولّدة نص رسمي للبرنامج أو أن كل لغة مدعومة. راجع خيارات ترجمة المشغّل بشكل منفصل. غياب المربع أو عدم دقة الكلمات لا يثبت انتهاء الاشتراك. لا تعِد ضبط الهاتف، ولا تمسح بيانات المشغّل، ولا تجدّد الخطة لهذا الفحص. أبلغ عن الجهاز والإصدار واللغة دون عناوين تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV का लाइव कैप्शन: डिवाइस का पाठ या प्लेयर के उपशीर्षक?",
+      "excerpt": "Android के बनाए बोलचाल के कैप्शन को प्लेयर के उपशीर्षक ट्रैक से अलग पहचानें। डिवाइस और भाषा की सुविधा जाँचें तथा उपयोगी सुगम्यता विकल्प बनाए रखें।",
+      "seo_title": "5G Live IPTV का लाइव कैप्शन: डिवाइस का पाठ या प्लेयर के उपशीर्षक?",
+      "seo_description": "Android के बनाए बोलचाल के कैप्शन को प्लेयर के उपशीर्षक ट्रैक से अलग पहचानें। डिवाइस और भाषा की सुविधा जाँचें तथा उपयोगी सुगम्यता विकल्प बनाए रखें।",
+      "sections": [
+        {
+          "heading": "पहले कैप्शन का बॉक्स पहचानें",
+          "paragraphs": [
+            "5G Live IPTV का लाइव कैप्शन जाँचना स्क्रीन के शब्दों से शुरू होता है: वे अलग Android बॉक्स में हैं या प्लेयर के भीतर चुने गए हैं? Google के अनुसार यह सुविधा डिवाइस पर चल रही बोली के अपने-आप कैप्शन बनाती है। यह कार्यक्रम के साथ मिले उपशीर्षक ट्रैक को चुनने से अलग है। फोन मॉडल, Android संस्करण और बोली जाने वाली भाषा लिखें। दर्शक के लिए उपयोगी मौजूदा प्राथमिकता बनाए रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "डिवाइस की बताई गई सेटिंग जाँचें",
+          "paragraphs": [
+            "Google सेटिंग, सुगम्यता, फिर लाइव कैप्शन का रास्ता बताता है; विकल्प न मिले तो सेटिंग में खोजें या निर्माता का मार्गदर्शन देखें। सुविधा और भाषाएँ डिवाइस के अनुसार बदलती हैं; हर Android फोन में इसे मौजूद न मानें। Google के अनुसार पहली बार डिफ़ॉल्ट भाषा पैक डाउनलोड करने के लिए Wi-Fi चाहिए। अज्ञात कैप्शन ऐप लगाने के बजाय पहले मौजूदा सेटिंग पढ़ें और मालिक के अनुरोध पर ही तुलना के लिए सुविधा चालू करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Android लाइव कैप्शन का Google मार्गदर्शन",
+              "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "योजना बदले बिना बोली की तुलना करें",
+          "paragraphs": [
+            "उसी अधिकृत क्लिप में स्पष्ट बोली और कम पृष्ठभूमि शोर रखें। Google बताता है कि कुछ मीडिया ऐप में कैप्शन उपलब्ध नहीं हो सकते। अपने-आप बने शब्दों को कार्यक्रम का आधिकारिक लिखित रूप न मानें और हर भाषा का समर्थन न मानें। प्लेयर के अपने उपशीर्षक अलग जाँचें। बॉक्स गायब होना या गलत शब्द सदस्यता समाप्त होने का प्रमाण नहीं है। इस जाँच के लिए न फोन रीसेट करें, न प्लेयर डेटा मिटाएँ और न योजना नवीनीकृत करें। निजी प्लेबैक पते दिए बिना डिवाइस, संस्करण और भाषा बताएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Android Help: Live Caption speech and device support",
+      "url": "https://support.google.com/accessibility/android/answer/9350862?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-25",
+  "topic": "Check compatible Apple TV 4K headphone audio sharing from one Geo IPTV playback session separately from additional viewing connections or changes to plan device allowances.",
+  "primary_keyword": "Geo IPTV shared listening",
+  "slug": "geo-shared-listening-apple-tv-compatible-headphones",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV shared listening: check Apple TV 4K headphone compatibility",
+      "excerpt": "Check compatible Apple TV 4K headphones before sharing audio. Keep one playback session and separate a hardware feature from your viewing-plan allowance.",
+      "seo_title": "Geo IPTV shared listening: check Apple TV 4K headphone compatibility",
+      "seo_description": "Check compatible Apple TV 4K headphones before sharing audio. Keep one playback session and separate a hardware feature from your viewing-plan allowance.",
+      "sections": [
+        {
+          "heading": "Identify one source and compatible headphones",
+          "paragraphs": [
+            "Geo IPTV shared listening concerns the sound from one Apple TV 4K, not another television or an extra account. Before pairing, identify the Apple TV model and exact headphone models. Apple’s guide describes Share Audio for compatible AirPods or Beats, and explicitly excludes Apple TV HD. Ordinary Bluetooth pairing alone does not prove that two arbitrary headsets support this feature."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the documented sharing control",
+          "paragraphs": [
+            "With the first compatible pair already connected, press and hold the remote’s TV button to open Control Center. Navigate to the headphones icon, then look for Share Audio and follow Apple’s on-screen instructions for the second compatible pair. Use the controls actually present in your tvOS version. Keep listening levels comfortable for each listener, and stop to check compatibility if the option is absent."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV headphone audio guide",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Keep playback and plan terms separate",
+          "paragraphs": [
+            "Compare sound from the same permitted video without starting another player. This remains a single playback session; connecting headphones does not change a plan’s device allowance or establish permission for another viewing session. Record which headphone pair receives audio and any message shown. Do not reset the television, remove saved player access or buy a second plan merely to test an audio-output option. Share device and accessory models with support, not account details or private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Escucha compartida de Geo IPTV: comprueba los auriculares del Apple TV 4K",
+      "excerpt": "Comprueba auriculares compatibles con Apple TV 4K antes de compartir audio. Mantén una sola reproducción y distingue la función del límite de tu plan.",
+      "seo_title": "Escucha compartida de Geo IPTV: comprueba los auriculares del Apple TV 4K",
+      "seo_description": "Comprueba auriculares compatibles con Apple TV 4K antes de compartir audio. Mantén una sola reproducción y distingue la función del límite de tu plan.",
+      "sections": [
+        {
+          "heading": "Identifica una fuente y auriculares compatibles",
+          "paragraphs": [
+            "La escucha compartida de Geo IPTV trata del sonido de un Apple TV 4K, no de otro televisor ni de una cuenta adicional. Antes de enlazar, identifica el modelo del Apple TV y los modelos exactos de auriculares. La guía de Apple describe Compartir audio con AirPods o Beats compatibles y excluye expresamente el Apple TV HD. El enlace Bluetooth habitual no demuestra que dos auriculares cualesquiera admitan esta función."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliza el control documentado para compartir",
+          "paragraphs": [
+            "Con el primer par compatible ya conectado, mantén pulsado el botón TV del mando para abrir el Centro de control. Ve al icono de auriculares, busca Compartir audio y sigue las instrucciones de Apple para el segundo par compatible. Utiliza los controles presentes en tu versión de tvOS. Mantén un volumen cómodo para cada oyente y, si falta la opción, comprueba la compatibilidad antes de continuar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía de audio con auriculares del Apple TV",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la reproducción de las condiciones del plan",
+          "paragraphs": [
+            "Compara el sonido del mismo vídeo permitido sin iniciar otro reproductor. Sigue siendo una sola sesión: conectar auriculares no cambia el límite de dispositivos del plan ni autoriza otra reproducción. Anota qué par recibe sonido y cualquier mensaje. No restablezcas el televisor, elimines el acceso guardado ni compres otro plan solo para probar una salida de audio. Comunica los modelos del equipo y accesorios, no datos de cuenta ni direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écoute partagée Geo IPTV : vérifier les écouteurs de l’Apple TV 4K",
+      "excerpt": "Vérifiez les écouteurs compatibles avec l’Apple TV 4K avant de partager le son. Gardez une seule lecture et distinguez cette fonction des limites du forfait.",
+      "seo_title": "Écoute partagée Geo IPTV : vérifier les écouteurs de l’Apple TV 4K",
+      "seo_description": "Vérifiez les écouteurs compatibles avec l’Apple TV 4K avant de partager le son. Gardez une seule lecture et distinguez cette fonction des limites du forfait.",
+      "sections": [
+        {
+          "heading": "Identifier une source et des écouteurs compatibles",
+          "paragraphs": [
+            "L’écoute partagée Geo IPTV concerne le son d’une seule Apple TV 4K, pas un autre téléviseur ni un compte supplémentaire. Avant le jumelage, relevez le modèle de l’Apple TV et ceux des écouteurs. Le guide Apple décrit Partager l’audio avec des AirPods ou Beats compatibles et exclut explicitement l’Apple TV HD. Un jumelage Bluetooth ordinaire ne prouve pas que deux casques quelconques prennent cette fonction en charge."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliser la commande de partage documentée",
+          "paragraphs": [
+            "Le premier casque compatible étant déjà connecté, maintenez le bouton TV de la télécommande pour ouvrir le centre de contrôle. Allez sur l’icône des écouteurs, cherchez Partager l’audio et suivez les instructions Apple pour la seconde paire compatible. Utilisez les commandes présentes dans votre version de tvOS. Gardez un volume confortable pour chaque personne et vérifiez la compatibilité avant de poursuivre si l’option manque."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide audio des écouteurs sur Apple TV",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer la lecture des conditions du forfait",
+          "paragraphs": [
+            "Comparez le son de la même vidéo autorisée sans lancer un autre lecteur. Il s’agit toujours d’une seule session : brancher des écouteurs ne modifie pas le nombre d’appareils du forfait et n’autorise pas une autre lecture. Notez quelle paire reçoit le son et les messages affichés. Ne réinitialisez pas le téléviseur, ne supprimez pas l’accès enregistré et n’achetez pas un second forfait pour tester une sortie audio. Indiquez les modèles, sans données de compte ni adresses privées de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Ascolto condiviso Geo IPTV: verifica le cuffie per Apple TV 4K",
+      "excerpt": "Verifica cuffie compatibili con Apple TV 4K prima di condividere l’audio. Mantieni una sola riproduzione e distingui questa funzione dai limiti del piano.",
+      "seo_title": "Ascolto condiviso Geo IPTV: verifica le cuffie per Apple TV 4K",
+      "seo_description": "Verifica cuffie compatibili con Apple TV 4K prima di condividere l’audio. Mantieni una sola riproduzione e distingui questa funzione dai limiti del piano.",
+      "sections": [
+        {
+          "heading": "Identifica una sorgente e cuffie compatibili",
+          "paragraphs": [
+            "L’ascolto condiviso Geo IPTV riguarda l’audio di una sola Apple TV 4K, non un altro televisore o un account aggiuntivo. Prima dell’abbinamento, identifica il modello di Apple TV e i modelli esatti delle cuffie. La guida Apple descrive Condividi audio per AirPods o Beats compatibili ed esclude espressamente Apple TV HD. Un normale abbinamento Bluetooth non dimostra che due cuffie qualsiasi supportino questa funzione."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa il comando di condivisione documentato",
+          "paragraphs": [
+            "Con il primo paio compatibile già collegato, tieni premuto il tasto TV del telecomando per aprire Centro di Controllo. Vai all’icona delle cuffie, cerca Condividi audio e segui le istruzioni Apple per il secondo paio compatibile. Usa i comandi effettivamente presenti nella tua versione di tvOS. Mantieni un volume comodo per ogni ascoltatore e, se manca l’opzione, verifica la compatibilità prima di continuare."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida all’audio in cuffia su Apple TV",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la riproduzione dalle condizioni del piano",
+          "paragraphs": [
+            "Confronta il suono dello stesso video consentito senza avviare un altro lettore. Rimane un’unica sessione: collegare cuffie non modifica il limite di dispositivi del piano né autorizza un’altra visione. Annota quale paio riceve l’audio e gli eventuali messaggi. Non ripristinare il televisore, non eliminare l’accesso salvato e non acquistare un secondo piano solo per provare un’uscita audio. Comunica i modelli dei dispositivi e accessori, non dati dell’account o indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV samen luisteren: controleer hoofdtelefoons voor Apple TV 4K",
+      "excerpt": "Controleer geschikte hoofdtelefoons voor Apple TV 4K voordat je audio deelt. Houd één afspeelsessie aan en onderscheid de functie van je abonnementsvoorwaarden.",
+      "seo_title": "Geo IPTV samen luisteren: controleer hoofdtelefoons voor Apple TV 4K",
+      "seo_description": "Controleer geschikte hoofdtelefoons voor Apple TV 4K voordat je audio deelt. Houd één afspeelsessie aan en onderscheid de functie van je abonnementsvoorwaarden.",
+      "sections": [
+        {
+          "heading": "Herken één bron en geschikte hoofdtelefoons",
+          "paragraphs": [
+            "Samen luisteren bij Geo IPTV gaat over het geluid van één Apple TV 4K, niet over een tweede televisie of extra account. Controleer vóór het koppelen het Apple TV-model en de precieze hoofdtelefoonmodellen. Apple beschrijft Deel audio voor geschikte AirPods of Beats en sluit Apple TV HD uitdrukkelijk uit. Gewoon via Bluetooth kunnen koppelen bewijst niet dat twee willekeurige hoofdtelefoons deze functie ondersteunen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de beschreven deelknop",
+          "paragraphs": [
+            "Houd, met de eerste geschikte hoofdtelefoon al verbonden, de TV-knop van de afstandsbediening ingedrukt om het bedieningspaneel te openen. Ga naar het hoofdtelefoonsymbool, zoek Deel audio en volg Apples instructies voor de tweede geschikte hoofdtelefoon. Gebruik de knoppen die jouw tvOS-versie werkelijk heeft. Houd het volume voor elke luisteraar comfortabel en controleer eerst de geschiktheid als de optie ontbreekt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV-handleiding voor hoofdtelefoonaudio",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Houd afspelen en abonnementsvoorwaarden apart",
+          "paragraphs": [
+            "Vergelijk het geluid van dezelfde toegestane video zonder een andere speler te starten. Dit blijft één afspeelsessie: hoofdtelefoons aansluiten verandert de apparaatlimiet van een abonnement niet en geeft geen toestemming voor nog een kijksessie. Noteer welke hoofdtelefoon geluid ontvangt en welke melding verschijnt. Reset de televisie niet, wis geen opgeslagen toegang en koop geen tweede abonnement alleen om een audio-uitgang te testen. Geef apparaat- en accessoiremodellen door, geen accountgegevens of privé-afspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Escuta partilhada Geo IPTV: confirme os auscultadores da Apple TV 4K",
+      "excerpt": "Confirme auscultadores compatíveis com Apple TV 4K antes de partilhar áudio. Mantenha uma reprodução e separe esta função dos limites do plano.",
+      "seo_title": "Escuta partilhada Geo IPTV: confirme os auscultadores da Apple TV 4K",
+      "seo_description": "Confirme auscultadores compatíveis com Apple TV 4K antes de partilhar áudio. Mantenha uma reprodução e separe esta função dos limites do plano.",
+      "sections": [
+        {
+          "heading": "Identifique uma origem e auscultadores compatíveis",
+          "paragraphs": [
+            "A escuta partilhada Geo IPTV refere-se ao som de uma Apple TV 4K, não a outra televisão ou conta adicional. Antes de emparelhar, identifique o modelo da Apple TV e os modelos exatos dos auscultadores. O guia Apple descreve Partilhar áudio com AirPods ou Beats compatíveis e exclui expressamente a Apple TV HD. O emparelhamento Bluetooth normal não prova que dois auscultadores quaisquer suportam esta função."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utilize o controlo de partilha documentado",
+          "paragraphs": [
+            "Com o primeiro par compatível já ligado, mantenha premido o botão TV do comando para abrir a central de controlo. Vá ao ícone dos auscultadores, procure Partilhar áudio e siga as instruções Apple para o segundo par compatível. Utilize os controlos realmente disponíveis na sua versão do tvOS. Mantenha um volume confortável para cada pessoa e confirme a compatibilidade antes de continuar se a opção não aparecer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia Apple TV para áudio com auscultadores",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a reprodução das condições do plano",
+          "paragraphs": [
+            "Compare o som do mesmo vídeo autorizado sem iniciar outro leitor. Continua a ser uma única sessão: ligar auscultadores não altera o limite de dispositivos do plano nem autoriza outra sessão de visualização. Anote qual par recebe som e as mensagens apresentadas. Não reponha a televisão, não remova o acesso guardado nem compre outro plano apenas para testar uma saída de áudio. Informe os modelos do equipamento e acessórios, não dados da conta ou endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Совместное прослушивание Geo IPTV: проверьте наушники для Apple TV 4K",
+      "excerpt": "Проверьте совместимые наушники для Apple TV 4K перед передачей звука. Сохраняйте один сеанс и отличайте функцию устройства от ограничений тарифа.",
+      "seo_title": "Совместное прослушивание Geo IPTV: проверьте наушники для Apple TV 4K",
+      "seo_description": "Проверьте совместимые наушники для Apple TV 4K перед передачей звука. Сохраняйте один сеанс и отличайте функцию устройства от ограничений тарифа.",
+      "sections": [
+        {
+          "heading": "Определите источник и совместимость наушников",
+          "paragraphs": [
+            "Совместное прослушивание Geo IPTV касается звука с одной Apple TV 4K, а не второго телевизора или дополнительной учётной записи. До сопряжения уточните модель Apple TV и точные модели наушников. Руководство Apple описывает общий доступ к аудио для совместимых AirPods или Beats и прямо исключает Apple TV HD. Обычное Bluetooth-сопряжение не доказывает, что функция работает с двумя любыми гарнитурами."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте документированное управление",
+          "paragraphs": [
+            "Когда первая совместимая пара уже подключена, удерживайте кнопку TV на пульте, чтобы открыть Пункт управления. Перейдите к значку наушников, найдите общий доступ к аудио и следуйте указаниям Apple для второй совместимой пары. Используйте элементы, доступные именно в вашей версии tvOS. Сохраняйте комфортную громкость для каждого слушателя; если пункта нет, сначала проверьте совместимость."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Руководство Apple TV по звуку в наушниках",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте воспроизведение и условия тарифа",
+          "paragraphs": [
+            "Сравните звук одного разрешённого видео, не запуская другой плеер. Это по-прежнему один сеанс: подключение наушников не меняет лимит устройств тарифа и не даёт разрешения на ещё один просмотр. Отметьте, какая пара получает звук и какие сообщения появляются. Не сбрасывайте телевизор, не удаляйте сохранённый доступ и не покупайте второй тариф ради проверки аудиовыхода. Сообщайте поддержке модели устройств и аксессуаров, но не данные учётной записи или закрытые адреса воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کی مشترکہ سماعت: Apple TV 4K کے ہیڈفون کی مطابقت دیکھیں",
+      "excerpt": "آڈیو بانٹنے سے پہلے Apple TV 4K کے موافق ہیڈفون دیکھیں۔ ایک پلے بیک سیشن رکھیں اور آلے کی سہولت کو منصوبے کی حد سے الگ سمجھیں۔",
+      "seo_title": "Geo IPTV کی مشترکہ سماعت: Apple TV 4K کے ہیڈفون کی مطابقت دیکھیں",
+      "seo_description": "آڈیو بانٹنے سے پہلے Apple TV 4K کے موافق ہیڈفون دیکھیں۔ ایک پلے بیک سیشن رکھیں اور آلے کی سہولت کو منصوبے کی حد سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "ایک ماخذ اور موافق ہیڈفون پہچانیں",
+          "paragraphs": [
+            "Geo IPTV کی مشترکہ سماعت ایک Apple TV 4K کی آواز سے متعلق ہے، دوسرے ٹی وی یا اضافی اکاؤنٹ سے نہیں۔ جوڑنے سے پہلے Apple TV اور ہیڈفون کے درست ماڈل معلوم کریں۔ Apple کی رہنمائی موافق AirPods یا Beats کے ساتھ آڈیو بانٹنے کی سہولت بتاتی ہے اور Apple TV HD کو واضح طور پر خارج کرتی ہے۔ عام Bluetooth جوڑ بن جانا یہ ثابت نہیں کرتا کہ کوئی بھی دو ہیڈفون اس سہولت کے موافق ہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "بیان کردہ اشتراک کا کنٹرول استعمال کریں",
+          "paragraphs": [
+            "پہلا موافق جوڑا پہلے سے منسلک ہو تو ریموٹ کا TV بٹن دبا کر رکھیں تاکہ کنٹرول سینٹر کھلے۔ ہیڈفون کی علامت پر جائیں، آڈیو بانٹنے کا اختیار دیکھیں اور دوسرے موافق جوڑے کے لیے Apple کی اسکرین پر ہدایات اپنائیں۔ اپنے tvOS نسخے میں واقعی موجود کنٹرول استعمال کریں۔ ہر سننے والے کے لیے آواز آرام دہ رکھیں اور اختیار نہ ملے تو آگے بڑھنے سے پہلے مطابقت دیکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV پر ہیڈفون آڈیو کی رہنمائی",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "پلے بیک اور منصوبے کی شرائط الگ رکھیں",
+          "paragraphs": [
+            "دوسرا پلیئر شروع کیے بغیر اسی مجاز ویڈیو کی آواز کا موازنہ کریں۔ یہ اب بھی ایک سیشن ہے؛ ہیڈفون جوڑنے سے منصوبے کی آلے کی حد نہیں بدلتی اور مزید دیکھنے کے سیشن کی اجازت ثابت نہیں ہوتی۔ لکھیں کون سا جوڑا آواز لیتا ہے اور کیا پیغام آتا ہے۔ صرف آڈیو آؤٹ پٹ جانچنے کے لیے نہ ٹی وی ری سیٹ کریں، نہ محفوظ پلیئر رسائی ہٹائیں اور نہ دوسرا منصوبہ خریدیں۔ معاونت کو آلے اور لوازمے کے ماڈل بتائیں، اکاؤنٹ کی تفصیل یا نجی پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "الاستماع المشترك مع Geo IPTV: تحقّق من سماعات Apple TV 4K",
+      "excerpt": "تحقّق من سماعات متوافقة مع Apple TV 4K قبل مشاركة الصوت. احتفظ بجلسة تشغيل واحدة وافصل ميزة الجهاز عن حدود خطة المشاهدة.",
+      "seo_title": "الاستماع المشترك مع Geo IPTV: تحقّق من سماعات Apple TV 4K",
+      "seo_description": "تحقّق من سماعات متوافقة مع Apple TV 4K قبل مشاركة الصوت. احتفظ بجلسة تشغيل واحدة وافصل ميزة الجهاز عن حدود خطة المشاهدة.",
+      "sections": [
+        {
+          "heading": "حدّد مصدراً واحداً وسماعات متوافقة",
+          "paragraphs": [
+            "الاستماع المشترك مع Geo IPTV يتعلق بصوت جهاز Apple TV 4K واحد، لا بتلفاز آخر أو حساب إضافي. قبل الاقتران، حدّد طراز Apple TV وطرازات السماعات بدقة. يشرح دليل Apple مشاركة الصوت مع AirPods أو Beats المتوافقة ويستثني Apple TV HD صراحة. نجاح الاقتران العادي عبر Bluetooth لا يثبت أن أي سماعتين تدعمان هذه الميزة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم أداة المشاركة الموثّقة",
+          "paragraphs": [
+            "بعد توصيل الزوج المتوافق الأول، اضغط مطولاً زر TV في جهاز التحكم لفتح مركز التحكم. انتقل إلى رمز السماعات، وابحث عن مشاركة الصوت واتبع تعليمات Apple على الشاشة للزوج المتوافق الثاني. استخدم الأدوات الموجودة فعلاً في إصدار tvOS لديك. اجعل مستوى الصوت مريحاً لكل مستمع، وإذا غاب الخيار فتحقّق من التوافق قبل المتابعة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل صوت السماعات على Apple TV",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "افصل التشغيل عن شروط الخطة",
+          "paragraphs": [
+            "قارن صوت الفيديو المسموح نفسه دون تشغيل مشغّل آخر. تظل هذه جلسة واحدة؛ توصيل السماعات لا يغيّر حد أجهزة الخطة ولا يثبت السماح بجلسة مشاهدة إضافية. سجّل أي زوج يستقبل الصوت وأي رسالة تظهر. لا تعِد ضبط التلفاز، ولا تحذف وصول المشغّل المحفوظ، ولا تشترِ خطة ثانية لمجرد اختبار مخرج صوت. أخبر الدعم بطرازات الجهاز والملحقات، لا ببيانات الحساب أو عناوين التشغيل الخاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV पर साझा सुनना: Apple TV 4K के हेडफ़ोन की अनुकूलता जाँचें",
+      "excerpt": "ऑडियो साझा करने से पहले Apple TV 4K के अनुकूल हेडफ़ोन जाँचें। एक प्लेबैक सत्र रखें और डिवाइस की सुविधा को योजना की सीमा से अलग समझें।",
+      "seo_title": "Geo IPTV पर साझा सुनना: Apple TV 4K के हेडफ़ोन की अनुकूलता जाँचें",
+      "seo_description": "ऑडियो साझा करने से पहले Apple TV 4K के अनुकूल हेडफ़ोन जाँचें। एक प्लेबैक सत्र रखें और डिवाइस की सुविधा को योजना की सीमा से अलग समझें।",
+      "sections": [
+        {
+          "heading": "एक स्रोत और अनुकूल हेडफ़ोन पहचानें",
+          "paragraphs": [
+            "Geo IPTV पर साझा सुनना एक Apple TV 4K की आवाज़ से संबंधित है, दूसरे टीवी या अतिरिक्त खाते से नहीं। जोड़ने से पहले Apple TV और हेडफ़ोन के सही मॉडल पहचानें। Apple का मार्गदर्शन अनुकूल AirPods या Beats के साथ ऑडियो साझा करना बताता है और Apple TV HD को साफ़ तौर पर अलग रखता है। सामान्य Bluetooth जोड़ी बनना यह प्रमाण नहीं कि कोई भी दो हेडफ़ोन यह सुविधा देते हैं।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "बताया गया साझा करने का कंट्रोल इस्तेमाल करें",
+          "paragraphs": [
+            "पहला अनुकूल जोड़ा पहले से जुड़ा हो तो कंट्रोल सेंटर खोलने के लिए रिमोट का TV बटन दबाए रखें। हेडफ़ोन के चिह्न पर जाएँ, ऑडियो साझा करने का विकल्प खोजें और दूसरे अनुकूल जोड़े के लिए Apple के स्क्रीन निर्देश अपनाएँ। अपने tvOS संस्करण में मौजूद कंट्रोल ही इस्तेमाल करें। हर सुनने वाले के लिए आवाज़ आरामदायक रखें; विकल्प न मिले तो आगे बढ़ने से पहले अनुकूलता जाँचें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV पर हेडफ़ोन ऑडियो का मार्गदर्शन",
+              "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "प्लेबैक और योजना की शर्तें अलग रखें",
+          "paragraphs": [
+            "दूसरा प्लेयर शुरू किए बिना उसी अधिकृत वीडियो की आवाज़ की तुलना करें। यह अब भी एक सत्र है; हेडफ़ोन जोड़ने से योजना की डिवाइस सीमा नहीं बदलती और अतिरिक्त देखने के सत्र की अनुमति साबित नहीं होती। लिखें कि किस जोड़े में आवाज़ आती है और क्या संदेश दिखता है। केवल ऑडियो आउटपुट जाँचने के लिए न टीवी रीसेट करें, न प्लेयर की सहेजी पहुँच हटाएँ और न दूसरी योजना खरीदें। सहायता को डिवाइस और एक्सेसरी के मॉडल बताएँ, खाते की जानकारी या निजी प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple TV guide: compatible headphones and Share Audio",
+      "url": "https://support.apple.com/en-am/guide/tv/atvb9b4521cf/26/tvos/26"
+    }
+  ]
+}

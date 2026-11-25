@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "main",
+  "publishing_date": "2026-11-25",
+  "topic": "Use VLC desktop custom bookmarks on Windows with a permitted seekable clip, keeping manual position notes separate from Android resume behaviour and unconfirmed provider catch-up access.",
+  "primary_keyword": "IPTV playback bookmarks",
+  "slug": "main-windows-vlc-playback-bookmarks-and-position-notes",
+  "translations": {
+    "en": {
+      "title": "IPTV playback bookmarks: mark a position in VLC on Windows",
+      "excerpt": "Use documented VLC desktop bookmarks with a permitted seekable clip. Keep a position note separate from Android resume behaviour and provider viewing access.",
+      "seo_title": "IPTV playback bookmarks: mark a position in VLC on Windows",
+      "seo_description": "Use documented VLC desktop bookmarks with a permitted seekable clip. Keep a position note separate from Android resume behaviour and provider viewing access.",
+      "sections": [
+        {
+          "heading": "Choose a suitable video first",
+          "paragraphs": [
+            "For an IPTV playback bookmarks question, first confirm that you are using VLC on Windows, rather than Android or a browser. VideoLAN’s desktop documentation describes custom bookmarks for particular positions in audio or video files. Use a short seekable clip that you have permission to play, and note the VLC version. A bookmark marks a position; it does not make an unavailable live programme replayable or add a subscription entitlement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Create one position note",
+          "paragraphs": [
+            "In the documented desktop menu, open Playback, Custom Bookmarks, then Manage. At the position you want to note, Create adds a bookmark to the dialog. Check the displayed entry before relying on it; follow the controls available in your installed version. Do not borrow these menu instructions for a phone. Keep a written timestamp if you need a separate support note rather than assuming that every player preserves bookmarks in the same way."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separate file navigation from service access",
+          "paragraphs": [
+            "Compare one known position in the same permitted clip and record whether navigation reaches it. Do not interpret a missing bookmark as an expired plan or failed payment. A provider’s live service is a separate case with different seeking capabilities. Preserve saved access and the existing library; reinstalling VLC or clearing its database is unnecessary for this check. Share the version, menu wording and timestamp, without private file paths or playback URLs."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Marcadores de reproducción IPTV: señala una posición en VLC para Windows",
+      "excerpt": "Usa los marcadores documentados de VLC para escritorio con un vídeo autorizado que permita avanzar. Distingue esa nota de la reanudación en Android y del acceso al servicio.",
+      "seo_title": "Marcadores de reproducción IPTV: señala una posición en VLC para Windows",
+      "seo_description": "Usa los marcadores documentados de VLC para escritorio con un vídeo autorizado que permita avanzar. Distingue esa nota de la reanudación en Android y del acceso al servicio.",
+      "sections": [
+        {
+          "heading": "Elige primero un vídeo adecuado",
+          "paragraphs": [
+            "Si consultas los marcadores de reproducción IPTV, confirma primero que utilizas VLC en Windows, no Android ni un navegador. La documentación de escritorio de VideoLAN describe marcadores personalizados para posiciones concretas de archivos de audio o vídeo. Usa un clip corto que tengas permiso para reproducir y que permita desplazarse; anota la versión de VLC. Un marcador señala una posición: no vuelve disponible un programa en directo anterior ni amplía una suscripción."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Crea una sola nota de posición",
+          "paragraphs": [
+            "En el menú de escritorio documentado, abre Reproducción, Marcadores personalizados y Administrar. En la posición deseada, Crear añade un marcador al cuadro. Comprueba la entrada antes de confiar en ella y sigue los controles de tu versión instalada. No apliques estas instrucciones de menú a un teléfono. Guarda una marca de tiempo por escrito si necesitas una nota independiente para soporte, sin asumir que todos los reproductores conservan los marcadores igual."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la navegación del archivo del acceso",
+          "paragraphs": [
+            "Compara una posición conocida del mismo clip autorizado y anota si la navegación llega allí. Un marcador ausente no demuestra que el plan haya caducado ni que el pago haya fallado. El servicio en directo del proveedor es otro caso y puede tener distintas posibilidades de desplazamiento. Conserva el acceso y la biblioteca; no hace falta reinstalar VLC ni borrar su base de datos. Comparte versión, texto del menú y tiempo, sin rutas privadas ni direcciones de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Repères de lecture IPTV : noter une position dans VLC sous Windows",
+      "excerpt": "Utilisez les repères documentés de VLC pour ordinateur avec une vidéo autorisée et navigable. Distinguez cette note de la reprise Android et de l’accès au service.",
+      "seo_title": "Repères de lecture IPTV : noter une position dans VLC sous Windows",
+      "seo_description": "Utilisez les repères documentés de VLC pour ordinateur avec une vidéo autorisée et navigable. Distinguez cette note de la reprise Android et de l’accès au service.",
+      "sections": [
+        {
+          "heading": "Choisir d’abord une vidéo adaptée",
+          "paragraphs": [
+            "Pour une question sur les repères de lecture IPTV, vérifiez d’abord que vous utilisez VLC sous Windows, et non Android ou un navigateur. La documentation de bureau de VideoLAN décrit des signets personnalisés pour des positions précises de fichiers audio ou vidéo. Prenez un court extrait dont la lecture est autorisée et qui permet de se déplacer, puis notez la version de VLC. Un signet marque une position ; il ne rend pas disponible un ancien direct et n’ajoute aucun droit d’abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Créer une seule note de position",
+          "paragraphs": [
+            "Dans le menu de bureau documenté, ouvrez Lecture, Signets personnalisés, puis Gérer. À la position voulue, Créer ajoute un signet à la fenêtre. Vérifiez l’entrée affichée avant de vous y fier et suivez les commandes de votre version. N’appliquez pas ces menus à un téléphone. Gardez un horodatage écrit si vous avez besoin d’une note indépendante pour l’assistance, sans supposer que tous les lecteurs conservent les signets de la même façon."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer navigation et accès au service",
+          "paragraphs": [
+            "Comparez une position connue du même extrait autorisé et notez si la navigation l’atteint. Un signet absent ne prouve ni expiration du forfait ni échec de paiement. Le direct du fournisseur constitue un autre cas, avec des possibilités de déplacement différentes. Conservez l’accès enregistré et la bibliothèque : cette vérification ne nécessite ni réinstallation de VLC ni effacement de sa base. Indiquez version, libellé du menu et temps, sans chemin privé ni adresse de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Segnalibri di riproduzione IPTV: indica un punto in VLC per Windows",
+      "excerpt": "Usa i segnalibri documentati di VLC per computer con un video autorizzato e navigabile. Distingui la nota dalla ripresa su Android e dall’accesso al servizio.",
+      "seo_title": "Segnalibri di riproduzione IPTV: indica un punto in VLC per Windows",
+      "seo_description": "Usa i segnalibri documentati di VLC per computer con un video autorizzato e navigabile. Distingui la nota dalla ripresa su Android e dall’accesso al servizio.",
+      "sections": [
+        {
+          "heading": "Scegli prima un video adatto",
+          "paragraphs": [
+            "Per una domanda sui segnalibri di riproduzione IPTV, verifica prima di usare VLC su Windows, non Android o un browser. La documentazione desktop di VideoLAN descrive segnalibri personalizzati per punti specifici di file audio o video. Usa un breve filmato che puoi riprodurre legittimamente e nel quale sia possibile spostarsi; annota la versione di VLC. Un segnalibro indica un punto: non rende rivedibile una diretta non disponibile e non aggiunge diritti all’abbonamento."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Crea una sola nota di posizione",
+          "paragraphs": [
+            "Nel menu desktop documentato apri Riproduzione, Segnalibri personalizzati, quindi Gestisci. Nel punto desiderato, Crea aggiunge un segnalibro alla finestra. Controlla la voce visualizzata prima di farvi affidamento e segui i comandi della versione installata. Non applicare questi menu a un telefono. Conserva un tempo scritto se ti serve una nota separata per l’assistenza, senza presumere che tutti i lettori mantengano i segnalibri allo stesso modo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la navigazione dall’accesso al servizio",
+          "paragraphs": [
+            "Confronta un punto noto nello stesso filmato autorizzato e annota se la navigazione lo raggiunge. Un segnalibro assente non prova che il piano sia scaduto o il pagamento fallito. La diretta del fornitore è un caso diverso, con differenti possibilità di spostamento. Mantieni accesso salvato e raccolta: non occorre reinstallare VLC o cancellarne il database. Comunica versione, diciture dei menu e tempo, senza percorsi privati o indirizzi di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV-afspeelbladwijzers: markeer een positie in VLC op Windows",
+      "excerpt": "Gebruik gedocumenteerde VLC-desktopbladwijzers bij een toegestane video waarin u kunt zoeken. Onderscheid de notitie van Android-hervatten en toegang tot de dienst.",
+      "seo_title": "IPTV-afspeelbladwijzers: markeer een positie in VLC op Windows",
+      "seo_description": "Gebruik gedocumenteerde VLC-desktopbladwijzers bij een toegestane video waarin u kunt zoeken. Onderscheid de notitie van Android-hervatten en toegang tot de dienst.",
+      "sections": [
+        {
+          "heading": "Kies eerst een geschikte video",
+          "paragraphs": [
+            "Controleer bij een vraag over IPTV-afspeelbladwijzers eerst of u VLC op Windows gebruikt, niet Android of een browser. De desktopdocumentatie van VideoLAN beschrijft aangepaste bladwijzers voor bepaalde posities in audio- of videobestanden. Gebruik een korte clip die u mag afspelen en waarin u kunt zoeken; noteer de VLC-versie. Een bladwijzer markeert een positie. Hij maakt een niet-beschikbare eerdere live-uitzending niet opnieuw afspeelbaar en voegt geen abonnementsrechten toe."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Maak één positienotitie",
+          "paragraphs": [
+            "Open in het gedocumenteerde desktopmenu Afspelen, Aangepaste bladwijzers en Beheren. Op de gewenste positie voegt Maken een bladwijzer aan het venster toe. Controleer de weergegeven vermelding voordat u erop vertrouwt en volg de bediening van uw geïnstalleerde versie. Pas deze menu-instructies niet op een telefoon toe. Bewaar een tijdstip op papier als afzonderlijke ondersteuningsnotitie; neem niet aan dat elke speler bladwijzers op dezelfde manier bewaart."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid bestandsnavigatie van diensttoegang",
+          "paragraphs": [
+            "Vergelijk één bekende positie in dezelfde toegestane clip en noteer of de navigatie daar uitkomt. Een ontbrekende bladwijzer bewijst geen verlopen abonnement of mislukte betaling. Een live-dienst van de aanbieder is een ander geval met andere zoekmogelijkheden. Bewaar ingestelde toegang en bibliotheek; VLC opnieuw installeren of de database wissen is hiervoor niet nodig. Deel versie, menutekst en tijdstip, zonder privébestandspaden of afspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Marcadores de reprodução IPTV: assinale um ponto no VLC para Windows",
+      "excerpt": "Use os marcadores documentados do VLC para computador num vídeo autorizado com navegação. Separe essa nota da retoma no Android e do acesso ao serviço.",
+      "seo_title": "Marcadores de reprodução IPTV: assinale um ponto no VLC para Windows",
+      "seo_description": "Use os marcadores documentados do VLC para computador num vídeo autorizado com navegação. Separe essa nota da retoma no Android e do acesso ao serviço.",
+      "sections": [
+        {
+          "heading": "Escolha primeiro um vídeo adequado",
+          "paragraphs": [
+            "Para uma dúvida sobre marcadores de reprodução IPTV, confirme primeiro que usa o VLC no Windows, não no Android nem num navegador. A documentação de computador da VideoLAN descreve marcadores personalizados para posições específicas de ficheiros de áudio ou vídeo. Use um pequeno vídeo que tenha autorização para reproduzir e no qual possa navegar; anote a versão do VLC. Um marcador assinala uma posição: não permite rever uma emissão em direto indisponível nem acrescenta direitos à subscrição."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Crie uma única nota de posição",
+          "paragraphs": [
+            "No menu de computador documentado, abra Reprodução, Marcadores personalizados e Gerir. Na posição pretendida, Criar acrescenta um marcador à janela. Verifique a entrada apresentada antes de confiar nela e siga os controlos da versão instalada. Não aplique estes menus a um telemóvel. Guarde um tempo por escrito se precisar de uma nota independente para o apoio, sem presumir que todos os leitores conservam os marcadores da mesma forma."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a navegação do acesso ao serviço",
+          "paragraphs": [
+            "Compare uma posição conhecida no mesmo vídeo autorizado e registe se a navegação a alcança. A ausência de um marcador não prova expiração do plano nem falha de pagamento. O serviço em direto do fornecedor é outro caso, com diferentes possibilidades de navegação. Preserve o acesso guardado e a biblioteca: não é necessário reinstalar o VLC nem apagar a sua base de dados. Indique versão, texto do menu e tempo, sem caminhos privados ou endereços de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Закладки IPTV: отметьте позицию в VLC для Windows",
+      "excerpt": "Используйте описанные закладки настольного VLC с разрешённым видео, допускающим перемотку. Отличайте заметку от возобновления Android и доступа к услуге.",
+      "seo_title": "Закладки IPTV: отметьте позицию в VLC для Windows",
+      "seo_description": "Используйте описанные закладки настольного VLC с разрешённым видео, допускающим перемотку. Отличайте заметку от возобновления Android и доступа к услуге.",
+      "sections": [
+        {
+          "heading": "Сначала выберите подходящее видео",
+          "paragraphs": [
+            "Разбираясь с закладками IPTV, сначала убедитесь, что используете VLC для Windows, а не Android или браузер. Документация VideoLAN для компьютеров описывает пользовательские закладки определённых позиций в аудио- и видеофайлах. Возьмите короткий ролик, который разрешено воспроизводить и перематывать, и запишите версию VLC. Закладка отмечает позицию: она не делает недоступную прямую передачу доступной повторно и не добавляет прав подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Создайте одну отметку позиции",
+          "paragraphs": [
+            "В описанном меню настольной версии откройте «Воспроизведение», «Пользовательские закладки», затем «Управление». В нужной позиции команда создания добавляет закладку в окно. Проверьте появившуюся запись и следуйте элементам установленной версии. Не переносите эти меню на телефон. Если нужна отдельная заметка для поддержки, запишите время вручную, не предполагая, что все проигрыватели одинаково сохраняют закладки."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте навигацию от доступа к услуге",
+          "paragraphs": [
+            "Сравните одну известную позицию того же разрешённого ролика и отметьте, достигает ли её переход. Отсутствие закладки не доказывает окончание тарифа или ошибку оплаты. Прямой эфир провайдера — другой случай с иными возможностями перемотки. Сохраните настроенный доступ и медиатеку: переустанавливать VLC или очищать базу для этой проверки не нужно. Сообщите версию, названия меню и время, не раскрывая личные пути файлов и адреса воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV پلے بیک بک مارکس: Windows کے VLC میں مقام نشان زد کریں",
+      "excerpt": "مجاز اور آگے پیچھے کی جا سکنے والی ویڈیو میں VLC کے دستاویزی ڈیسک ٹاپ بک مارکس دیکھیں۔ انہیں Android کی بحالی یا سروس کی رسائی سے الگ رکھیں۔",
+      "seo_title": "IPTV پلے بیک بک مارکس: Windows کے VLC میں مقام نشان زد کریں",
+      "seo_description": "مجاز اور آگے پیچھے کی جا سکنے والی ویڈیو میں VLC کے دستاویزی ڈیسک ٹاپ بک مارکس دیکھیں۔ انہیں Android کی بحالی یا سروس کی رسائی سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے موزوں ویڈیو منتخب کریں",
+          "paragraphs": [
+            "IPTV پلے بیک بک مارکس کے سوال میں پہلے تصدیق کریں کہ VLC، Windows پر چل رہا ہے، Android یا براؤزر میں نہیں۔ VideoLAN کی کمپیوٹر والی دستاویز آڈیو یا ویڈیو فائل کے مخصوص مقام کے لیے ذاتی بک مارکس بیان کرتی ہے۔ مختصر ویڈیو لیں جسے چلانے کی اجازت ہو اور جس میں آگے پیچھے جا سکیں؛ VLC کا نسخہ لکھیں۔ بک مارک صرف مقام دکھاتا ہے؛ نہ غیر دستیاب براہ راست پروگرام دوبارہ دستیاب کرتا ہے، نہ رکنیت کا حق بڑھاتا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "مقام کی ایک نشان دہی بنائیں",
+          "paragraphs": [
+            "دستاویزی کمپیوٹر مینیو میں پلے بیک، ذاتی بک مارکس، پھر انتظام کھولیں۔ مطلوبہ مقام پر تخلیق کا اختیار مکالماتی خانے میں بک مارک شامل کرتا ہے۔ بھروسا کرنے سے پہلے ظاہر ہونے والی سطر دیکھیں اور اپنے نصب شدہ نسخے کے کنٹرول استعمال کریں۔ یہ مینیو ہدایات فون پر لاگو نہ کریں۔ معاونت کے لیے الگ نوٹ چاہیے تو وقت لکھ لیں؛ یہ فرض نہ کریں کہ ہر پلیئر بک مارکس یکساں انداز میں محفوظ رکھتا ہے۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "فائل میں آمدورفت اور سروس کی رسائی الگ رکھیں",
+          "paragraphs": [
+            "اسی مجاز ویڈیو کے ایک معلوم مقام کا موازنہ کریں اور لکھیں کہ وہاں پہنچ پاتے ہیں یا نہیں۔ بک مارک نہ ملنا منصوبہ ختم ہونے یا ادائیگی ناکام ہونے کا ثبوت نہیں۔ فراہم کنندہ کی براہ راست سروس الگ صورت ہے جس میں آگے پیچھے جانے کی صلاحیت مختلف ہو سکتی ہے۔ محفوظ رسائی اور موجودہ لائبریری برقرار رکھیں؛ نہ VLC دوبارہ نصب کریں، نہ اس جانچ کے لیے اس کا ڈیٹا بیس صاف کریں۔ نسخہ، مینیو کے الفاظ اور وقت بتائیں، نجی فائل راستے یا پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إشارات تشغيل IPTV: حدّد موضعًا في VLC على Windows",
+      "excerpt": "استخدم إشارات VLC المكتبي الموثقة مع مقطع مسموح يمكن التنقل فيه. افصل ملاحظة الموضع عن استئناف Android وعن صلاحية الوصول إلى الخدمة.",
+      "seo_title": "إشارات تشغيل IPTV: حدّد موضعًا في VLC على Windows",
+      "seo_description": "استخدم إشارات VLC المكتبي الموثقة مع مقطع مسموح يمكن التنقل فيه. افصل ملاحظة الموضع عن استئناف Android وعن صلاحية الوصول إلى الخدمة.",
+      "sections": [
+        {
+          "heading": "اختر فيديو مناسبًا أولًا",
+          "paragraphs": [
+            "عند السؤال عن إشارات تشغيل IPTV، تأكد أولًا من استخدام VLC على Windows، وليس Android أو المتصفح. تصف وثائق VideoLAN المكتبية إشارات مخصصة لمواضع معينة في ملفات الصوت والفيديو. استخدم مقطعًا قصيرًا مسموحًا لك بتشغيله ويمكن التنقل داخله، وسجّل إصدار VLC. الإشارة تحدد موضعًا فقط؛ لا تجعل برنامجًا مباشرًا غير متاح قابلًا للإعادة، ولا تضيف حقًا إلى الاشتراك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "أنشئ ملاحظة موضع واحدة",
+          "paragraphs": [
+            "في قائمة سطح المكتب الموثقة افتح التشغيل، ثم الإشارات المخصصة، ثم الإدارة. عند الموضع المطلوب يضيف خيار الإنشاء إشارة إلى النافذة. تحقق من السطر المعروض قبل الاعتماد عليه، واتبع عناصر إصدارك المثبت. لا تطبق تعليمات هذه القوائم على هاتف. احتفظ بتوقيت مكتوب إذا احتجت ملاحظة مستقلة للدعم، ولا تفترض أن جميع المشغلات تحفظ الإشارات بالطريقة نفسها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "افصل التنقل في الملف عن الوصول للخدمة",
+          "paragraphs": [
+            "قارن موضعًا معروفًا في المقطع المسموح نفسه وسجّل هل يصل التنقل إليه. غياب الإشارة لا يثبت انتهاء الخطة أو فشل الدفع. البث المباشر لدى المزوّد حالة أخرى قد تختلف فيها إمكانات التنقل. احتفظ بالوصول المحفوظ والمكتبة الحالية؛ لا تحتاج إلى إعادة تثبيت VLC أو مسح قاعدة بياناته لهذه المراجعة. اذكر الإصدار وأسماء القوائم والتوقيت، دون مسارات ملفات خاصة أو عناوين تشغيل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV प्लेबैक बुकमार्क: Windows के VLC में स्थान चिह्नित करें",
+      "excerpt": "अनुमति वाले और आगे-पीछे किए जा सकने वाले वीडियो में VLC के दस्तावेज़ित डेस्कटॉप बुकमार्क देखें। इन्हें Android पर फिर चलने और सेवा की पहुँच से अलग रखें।",
+      "seo_title": "IPTV प्लेबैक बुकमार्क: Windows के VLC में स्थान चिह्नित करें",
+      "seo_description": "अनुमति वाले और आगे-पीछे किए जा सकने वाले वीडियो में VLC के दस्तावेज़ित डेस्कटॉप बुकमार्क देखें। इन्हें Android पर फिर चलने और सेवा की पहुँच से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहले उपयुक्त वीडियो चुनें",
+          "paragraphs": [
+            "IPTV प्लेबैक बुकमार्क के सवाल में पहले पुष्टि करें कि VLC Windows पर है, Android या ब्राउज़र में नहीं। VideoLAN का डेस्कटॉप दस्तावेज़ ऑडियो या वीडियो फ़ाइल के खास स्थानों के लिए अपने बुकमार्क बताता है। छोटा वीडियो लें जिसे चलाने की अनुमति हो और जिसमें आगे-पीछे जा सकें; VLC संस्करण लिखें। बुकमार्क केवल स्थान चिह्नित करता है; वह अनुपलब्ध लाइव कार्यक्रम को दोबारा उपलब्ध नहीं बनाता और सदस्यता का अधिकार नहीं बढ़ाता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "स्थान की एक निशानी बनाएँ",
+          "paragraphs": [
+            "दस्तावेज़ित कंप्यूटर मेनू में प्लेबैक, अपने बुकमार्क और फिर प्रबंधन खोलें। इच्छित स्थान पर बनाएँ का विकल्प संवाद में बुकमार्क जोड़ता है। भरोसा करने से पहले दिखी प्रविष्टि जाँचें और अपने स्थापित संस्करण के कंट्रोल अपनाएँ। ये मेनू निर्देश फोन पर लागू न करें। सहायता के लिए अलग नोट चाहिए तो समय लिख लें; यह न मानें कि हर प्लेयर बुकमार्क एक ही तरह रखता है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC desktop custom bookmarks",
+              "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+            }
+          ]
+        },
+        {
+          "heading": "फ़ाइल में नेविगेशन और सेवा की पहुँच अलग रखें",
+          "paragraphs": [
+            "उसी अनुमति वाले वीडियो के ज्ञात स्थान की तुलना करें और लिखें कि नेविगेशन वहाँ पहुँचता है या नहीं। बुकमार्क न मिलना प्लान समाप्त होने या भुगतान विफल होने का प्रमाण नहीं है। प्रदाता की लाइव सेवा अलग मामला है जिसमें आगे-पीछे जाने की क्षमता अलग हो सकती है। सहेजी पहुँच और मौजूदा लाइब्रेरी बनाए रखें; इस जाँच के लिए न VLC फिर स्थापित करें, न उसका डेटाबेस साफ करें। संस्करण, मेनू के शब्द और समय बताएँ, निजी फ़ाइल पथ या प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC desktop custom bookmarks",
+      "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/basic/playback.html"
+    },
+    {
+      "label": "VideoLAN: Windows VLC menu bar",
+      "url": "https://docs.videolan.me/vlc-user/desktop/3.0/en/gettingstarted/desktopoverview/windows_and_linux/menu_bar.html"
+    }
+  ]
+}

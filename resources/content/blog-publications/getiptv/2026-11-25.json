@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-25",
+  "topic": "Compare a manufacturer-compatible existing Bluetooth keyboard connection and system text entry separately from a Get IPTV player field and Opplex or Filex plan, payment and setup state.",
+  "primary_keyword": "Get IPTV Bluetooth keyboard",
+  "slug": "getiptv-bluetooth-keyboard-pairing-versus-player-text-input",
+  "translations": {
+    "en": {
+      "title": "Get IPTV Bluetooth keyboard: check pairing before player input",
+      "excerpt": "Check a compatible existing keyboard’s Google TV connection before judging a player’s text field. Keep accessory behaviour separate from Opplex or Filex plans, app costs and order state.",
+      "seo_title": "Get IPTV Bluetooth keyboard: check pairing before player input",
+      "seo_description": "Check a compatible existing keyboard’s Google TV connection before judging a player’s text field. Keep accessory behaviour separate from Opplex or Filex plans, app costs and order state.",
+      "sections": [
+        {
+          "heading": "Confirm the actual accessory and television",
+          "paragraphs": [
+            "A Get IPTV Bluetooth keyboard check has two parts: whether the television connects to that accessory, and whether the player accepts its input. Confirm compatibility in the keyboard and television manufacturers’ guidance first; Google’s general Bluetooth instructions do not promise that every keyboard works. Note both models and the existing connection state. Keep the normal remote available and use an accessory the owner recognises."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare system input with the player",
+          "paragraphs": [
+            "For a compatible accessory, Google documents Settings, Remote and Accessories, then Pair remote or accessory. Follow the keyboard manufacturer’s pairing-mode instructions, select the correct device name and confirm the request. An already paired accessory can instead be selected under Accessories and connected. With the owner’s agreement, compare harmless letters in a system search field and then the intended player field. Avoid passwords or private account text. Successful pairing does not establish support in every app form."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Report the result without changing the plan",
+          "paragraphs": [
+            "If letters work in the system but not the player, record that difference alongside the player version instead of treating it as subscription expiry. Confirm the selected Opplex or Filex provider, duration and recorded Get IPTV order/setup state separately. Player purchase costs remain separate from service payment; an unstated Filex connection allowance needs confirmation. Do not reset the television, clear saved player data or buy another plan merely to compare keyboard input."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Teclado Bluetooth para Get IPTV: comprueba la conexión antes del reproductor",
+      "excerpt": "Comprueba la conexión de un teclado compatible a Google TV antes de juzgar un campo del reproductor. Separa el accesorio de los planes Opplex o Filex, el coste de la app y el pedido.",
+      "seo_title": "Teclado Bluetooth para Get IPTV: comprueba la conexión antes del reproductor",
+      "seo_description": "Comprueba la conexión de un teclado compatible a Google TV antes de juzgar un campo del reproductor. Separa el accesorio de los planes Opplex o Filex, el coste de la app y el pedido.",
+      "sections": [
+        {
+          "heading": "Confirma el accesorio y el televisor concretos",
+          "paragraphs": [
+            "La comprobación de un teclado Bluetooth para Get IPTV tiene dos partes: si el televisor conecta el accesorio y si el reproductor acepta su entrada. Confirma primero la compatibilidad en las guías de ambos fabricantes; las instrucciones Bluetooth generales de Google no prometen que funcione cualquier teclado. Anota los modelos y el estado de conexión actual. Conserva el mando habitual y usa un accesorio que el propietario reconozca."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compara la escritura del sistema y del reproductor",
+          "paragraphs": [
+            "Para un accesorio compatible, Google indica Ajustes, Mando y accesorios y Emparejar mando o accesorio. Sigue las instrucciones del fabricante para activar el modo de vinculación, selecciona el nombre correcto y confirma la solicitud. Si ya está vinculado, puedes elegirlo en Accesorios y conectarlo. Con permiso del propietario, compara letras inofensivas en una búsqueda del sistema y en el campo previsto del reproductor. Evita contraseñas y datos de cuenta privados. Vincularlo no demuestra que todos los formularios sean compatibles."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Informa del resultado sin cambiar el plan",
+          "paragraphs": [
+            "Si las letras funcionan en el sistema pero no en el reproductor, registra esa diferencia y la versión de la app, sin interpretarla como caducidad. Confirma por separado el proveedor Opplex o Filex, la duración y el estado registrado del pedido y la configuración de Get IPTV. Comprar el reproductor y pagar el servicio son gastos distintos; un límite Filex no indicado necesita confirmación. No restablezcas el televisor, borres datos guardados ni compres otro plan solo para comparar el teclado."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Clavier Bluetooth Get IPTV : vérifiez la connexion avant la saisie du lecteur",
+      "excerpt": "Vérifiez la connexion Google TV d’un clavier compatible avant d’évaluer un champ du lecteur. Distinguez l’accessoire des forfaits Opplex ou Filex, du prix de l’application et de la commande.",
+      "seo_title": "Clavier Bluetooth Get IPTV : vérifiez la connexion avant la saisie du lecteur",
+      "seo_description": "Vérifiez la connexion Google TV d’un clavier compatible avant d’évaluer un champ du lecteur. Distinguez l’accessoire des forfaits Opplex ou Filex, du prix de l’application et de la commande.",
+      "sections": [
+        {
+          "heading": "Identifiez le clavier et le téléviseur",
+          "paragraphs": [
+            "La vérification d’un clavier Bluetooth Get IPTV comporte deux étapes : la connexion de l’accessoire au téléviseur et l’acceptation de sa saisie par le lecteur. Confirmez d’abord la compatibilité dans les guides des deux fabricants ; les consignes Bluetooth générales de Google ne garantissent pas tous les claviers. Notez les modèles et l’état de connexion actuel. Gardez la télécommande habituelle et utilisez un accessoire reconnu par son propriétaire."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Comparez la saisie du système et du lecteur",
+          "paragraphs": [
+            "Pour un accessoire compatible, Google indique Paramètres, Télécommande et accessoires, puis Associer une télécommande ou un accessoire. Suivez le mode d’association du fabricant, choisissez le bon nom et confirmez la demande. Un accessoire déjà associé peut être choisi dans Accessoires puis connecté. Avec l’accord du propriétaire, comparez des lettres sans importance dans une recherche système puis dans le champ voulu du lecteur. Évitez mots de passe et données privées. Une association réussie ne garantit pas tous les formulaires."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Rapportez le résultat sans changer le forfait",
+          "paragraphs": [
+            "Si les lettres fonctionnent dans le système mais pas dans le lecteur, notez cette différence et sa version plutôt que de conclure à une expiration. Confirmez séparément le fournisseur Opplex ou Filex, la durée et l’état enregistré de la commande et de la configuration Get IPTV. L’achat du lecteur reste distinct du paiement du service ; une limite de connexions Filex non précisée doit être confirmée. Ne réinitialisez pas le téléviseur, n’effacez pas les données et n’achetez pas un autre forfait pour ce seul essai."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Tastiera Bluetooth per Get IPTV: controlla prima la connessione",
+      "excerpt": "Controlla la connessione a Google TV di una tastiera compatibile prima del campo del lettore. Distingui l’accessorio dai piani Opplex o Filex, dal costo dell’app e dallo stato dell’ordine.",
+      "seo_title": "Tastiera Bluetooth per Get IPTV: controlla prima la connessione",
+      "seo_description": "Controlla la connessione a Google TV di una tastiera compatibile prima del campo del lettore. Distingui l’accessorio dai piani Opplex o Filex, dal costo dell’app e dallo stato dell’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica l’accessorio e il televisore",
+          "paragraphs": [
+            "Il controllo di una tastiera Bluetooth per Get IPTV distingue la connessione al televisore dall’accettazione dei tasti nel lettore. Verifica prima la compatibilità nelle guide dei produttori di entrambi: le istruzioni Bluetooth generali di Google non promettono che funzioni ogni tastiera. Annota modelli e stato attuale della connessione. Tieni disponibile il telecomando abituale e usa un accessorio riconosciuto dal proprietario."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Confronta la scrittura nel sistema e nel lettore",
+          "paragraphs": [
+            "Per un accessorio compatibile Google indica Impostazioni, Telecomando e accessori e Accoppia telecomando o accessorio. Segui le istruzioni del produttore per la modalità di abbinamento, scegli il nome corretto e conferma la richiesta. Un accessorio già associato può essere scelto in Accessori e collegato. Con il consenso del proprietario, confronta lettere innocue in una ricerca di sistema e nel campo previsto del lettore. Evita password e dati privati. L’abbinamento riuscito non conferma il supporto in ogni modulo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comunica il risultato senza cambiare piano",
+          "paragraphs": [
+            "Se i caratteri funzionano nel sistema ma non nel lettore, annota la differenza e la versione dell’app senza dedurne la scadenza dell’abbonamento. Conferma separatamente fornitore Opplex o Filex, durata e stato registrato dell’ordine e della configurazione Get IPTV. L’acquisto del lettore resta separato dal pagamento del servizio; un limite Filex non dichiarato va confermato. Non ripristinare il televisore, non cancellare dati salvati e non comprare un altro piano solo per confrontare la tastiera."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV met een Bluetooth-toetsenbord: controleer eerst de verbinding",
+      "excerpt": "Controleer een compatibel toetsenbord op Google TV voordat je een invoerveld beoordeelt. Onderscheid het accessoire van Opplex- of Filex-abonnementen, appkosten en de bestelstatus.",
+      "seo_title": "Get IPTV met een Bluetooth-toetsenbord: controleer eerst de verbinding",
+      "seo_description": "Controleer een compatibel toetsenbord op Google TV voordat je een invoerveld beoordeelt. Onderscheid het accessoire van Opplex- of Filex-abonnementen, appkosten en de bestelstatus.",
+      "sections": [
+        {
+          "heading": "Controleer het echte accessoire en de televisie",
+          "paragraphs": [
+            "Een controle van een Bluetooth-toetsenbord voor Get IPTV heeft twee delen: verbinding met de televisie en invoer die de speler accepteert. Bevestig eerst de compatibiliteit in de handleidingen van beide fabrikanten; Googles algemene Bluetooth-stappen beloven niet dat ieder toetsenbord werkt. Noteer beide modellen en de huidige verbindingsstatus. Houd de gewone afstandsbediening bij de hand en gebruik een accessoire dat de eigenaar herkent."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Vergelijk invoer in het systeem en de speler",
+          "paragraphs": [
+            "Voor een compatibel accessoire beschrijft Google Instellingen, Afstandsbediening en accessoires en Afstandsbediening of accessoire koppelen. Volg de koppelmodus van de fabrikant, kies de juiste apparaatnaam en bevestig het verzoek. Een eerder gekoppeld accessoire kun je onder Accessoires kiezen en verbinden. Vergelijk met toestemming van de eigenaar onschuldige letters in een systeemzoekveld en vervolgens in het bedoelde spelerveld. Gebruik geen wachtwoorden of privégegevens. Koppelen bewijst niet dat ieder appformulier wordt ondersteund."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Meld het resultaat zonder het abonnement te wijzigen",
+          "paragraphs": [
+            "Werken letters in het systeem maar niet in de speler, noteer dan dat verschil en de spelerversie in plaats van een verlopen abonnement te veronderstellen. Controleer apart de aanbieder Opplex of Filex, looptijd en vastgelegde Get IPTV-bestel- en instelstatus. Speleraankoop en dienstbetaling blijven aparte kosten; een niet-vermelde Filex-verbindingslimiet moet worden bevestigd. Reset de televisie niet, wis geen opgeslagen spelergegevens en koop geen ander abonnement alleen om toetsenbordinvoer te vergelijken."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Teclado Bluetooth para Get IPTV: confirme primeiro a ligação",
+      "excerpt": "Verifique a ligação de um teclado compatível ao Google TV antes de avaliar um campo do leitor. Separe o acessório dos planos Opplex ou Filex, custo da aplicação e estado da encomenda.",
+      "seo_title": "Teclado Bluetooth para Get IPTV: confirme primeiro a ligação",
+      "seo_description": "Verifique a ligação de um teclado compatível ao Google TV antes de avaliar um campo do leitor. Separe o acessório dos planos Opplex ou Filex, custo da aplicação e estado da encomenda.",
+      "sections": [
+        {
+          "heading": "Confirme o acessório e o televisor",
+          "paragraphs": [
+            "A verificação de um teclado Bluetooth para Get IPTV distingue a ligação ao televisor da aceitação da escrita no leitor. Confirme primeiro a compatibilidade nas instruções dos dois fabricantes; as orientações Bluetooth gerais da Google não prometem que todos os teclados funcionem. Anote os modelos e o estado atual da ligação. Mantenha disponível o comando habitual e use um acessório reconhecido pelo proprietário."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Compare a escrita no sistema e no leitor",
+          "paragraphs": [
+            "Para um acessório compatível, a Google indica Definições, Comando e acessórios e Sincronizar comando ou acessório. Siga o modo de emparelhamento do fabricante, escolha o nome correto e confirme o pedido. Um acessório já emparelhado pode ser escolhido em Acessórios e ligado. Com autorização do proprietário, compare letras inofensivas numa pesquisa do sistema e depois no campo do leitor. Evite palavras-passe e dados privados. Emparelhar não comprova o suporte de todos os formulários."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comunique o resultado sem mudar o plano",
+          "paragraphs": [
+            "Se as letras funcionarem no sistema mas não no leitor, registe a diferença e a versão da aplicação sem concluir que a subscrição expirou. Confirme separadamente o fornecedor Opplex ou Filex, a duração e o estado registado da encomenda e configuração Get IPTV. Comprar o leitor e pagar o serviço são despesas diferentes; um limite Filex não indicado exige confirmação. Não reponha o televisor, não apague dados guardados e não compre outro plano apenas para comparar o teclado."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Bluetooth-клавиатура Get IPTV: сначала проверьте подключение",
+      "excerpt": "Проверьте подключение совместимой клавиатуры к Google TV до проверки поля плеера. Отделяйте аксессуар от тарифа Opplex или Filex, стоимости приложения и состояния заказа.",
+      "seo_title": "Bluetooth-клавиатура Get IPTV: сначала проверьте подключение",
+      "seo_description": "Проверьте подключение совместимой клавиатуры к Google TV до проверки поля плеера. Отделяйте аксессуар от тарифа Opplex или Filex, стоимости приложения и состояния заказа.",
+      "sections": [
+        {
+          "heading": "Уточните модель клавиатуры и телевизора",
+          "paragraphs": [
+            "Проверка Bluetooth-клавиатуры Get IPTV состоит из двух частей: подключается ли аксессуар к телевизору и принимает ли плеер его ввод. Сначала подтвердите совместимость по руководствам обоих производителей: общие инструкции Google не обещают поддержку любой клавиатуры. Запишите модели и текущее состояние подключения. Держите обычный пульт под рукой и используйте аксессуар, который узнаёт владелец."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сравните ввод в системе и плеере",
+          "paragraphs": [
+            "Для совместимого аксессуара Google описывает «Настройки», раздел пульта и аксессуаров и добавление пульта или аксессуара. Включите режим сопряжения по инструкции производителя, выберите правильное имя и подтвердите запрос. Ранее сопряжённое устройство можно выбрать в разделе аксессуаров и подключить. С разрешения владельца сравните безобидные буквы в системном поиске и нужном поле плеера. Не вводите пароли и частные данные. Успешное сопряжение не доказывает поддержку всех форм приложения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сообщите результат без смены тарифа",
+          "paragraphs": [
+            "Если буквы работают в системе, но не в плеере, запишите разницу и версию приложения, не считая это истечением подписки. Отдельно подтвердите поставщика Opplex или Filex, срок и записанное состояние заказа и настройки Get IPTV. Покупка плеера отличается от оплаты сервиса; неуказанный лимит подключений Filex нужно уточнять. Не сбрасывайте телевизор, не удаляйте сохранённые данные и не покупайте другой тариф только ради проверки клавиатуры."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کا Bluetooth کی بورڈ: پہلے کنکشن کی جانچ کریں",
+      "excerpt": "پلیئر کے خانے کو جانچنے سے پہلے موافق کی بورڈ کا Google TV کنکشن دیکھیں۔ لوازمے کو Opplex یا Filex پلان، ایپ کی قیمت اور آرڈر کی حالت سے الگ رکھیں۔",
+      "seo_title": "Get IPTV کا Bluetooth کی بورڈ: پہلے کنکشن کی جانچ کریں",
+      "seo_description": "پلیئر کے خانے کو جانچنے سے پہلے موافق کی بورڈ کا Google TV کنکشن دیکھیں۔ لوازمے کو Opplex یا Filex پلان، ایپ کی قیمت اور آرڈر کی حالت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "اصل کی بورڈ اور ٹی وی کی تصدیق کریں",
+          "paragraphs": [
+            "Get IPTV کے Bluetooth کی بورڈ کی جانچ کے دو حصے ہیں: ٹی وی کا لوازمے سے جڑنا اور پلیئر کا اس کی تحریر قبول کرنا۔ پہلے دونوں بنانے والوں کی رہنمائی میں مطابقت کی تصدیق کریں؛ Google کی عمومی Bluetooth ہدایات ہر کی بورڈ کے چلنے کا وعدہ نہیں کرتیں۔ ماڈل اور موجودہ کنکشن کی حالت لکھیں۔ عام ریموٹ پاس رکھیں اور ایسا لوازمہ استعمال کریں جسے مالک پہچانتا ہو۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "نظام اور پلیئر میں تحریر کا موازنہ کریں",
+          "paragraphs": [
+            "موافق لوازمے کے لیے Google ترتیبات، ریموٹ اور لوازمات، پھر ریموٹ یا لوازمہ جوڑنے کا راستہ بتاتا ہے۔ کی بورڈ بنانے والے کی ہدایت کے مطابق جوڑنے کا انداز فعال کریں، درست نام چنیں اور درخواست کی تصدیق کریں۔ پہلے سے جوڑا لوازمہ لوازمات میں منتخب کر کے منسلک کیا جا سکتا ہے۔ مالک کی اجازت سے پہلے نظام کی تلاش اور پھر پلیئر کے متعلقہ خانے میں بے ضرر حروف آزمائیں۔ نہ پاس ورڈ لکھیں اور نہ نجی اکاؤنٹ کی معلومات۔ کامیاب جوڑ ہر ایپ کے خانے کی مطابقت ثابت نہیں کرتا۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پلان بدلے بغیر نتیجہ بتائیں",
+          "paragraphs": [
+            "حروف نظام میں چلیں مگر پلیئر میں نہ چلیں تو سبسکرپشن ختم سمجھنے کے بجائے فرق اور پلیئر ورژن لکھیں۔ Opplex یا Filex فراہم کنندہ، مدت اور Get IPTV آرڈر اور سیٹ اپ کی درج حالت الگ تصدیق کریں۔ پلیئر کی قیمت سروس کی ادائیگی سے الگ ہے؛ Filex کے غیر واضح کنکشن کی حد پوچھنا ضروری ہے۔ صرف کی بورڈ کا موازنہ کرنے کے لیے نہ ٹی وی ری سیٹ کریں، نہ محفوظ پلیئر ڈیٹا مٹائیں اور نہ دوسرا پلان خریدیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "لوحة مفاتيح Bluetooth مع Get IPTV: تحقق من الاتصال أولاً",
+      "excerpt": "تحقق من اتصال لوحة مفاتيح متوافقة بـ Google TV قبل تقييم حقل المشغل. افصل سلوك الملحق عن خطة Opplex أو Filex وتكلفة التطبيق وحالة الطلب.",
+      "seo_title": "لوحة مفاتيح Bluetooth مع Get IPTV: تحقق من الاتصال أولاً",
+      "seo_description": "تحقق من اتصال لوحة مفاتيح متوافقة بـ Google TV قبل تقييم حقل المشغل. افصل سلوك الملحق عن خطة Opplex أو Filex وتكلفة التطبيق وحالة الطلب.",
+      "sections": [
+        {
+          "heading": "تحقق من لوحة المفاتيح والتلفزيون الفعليين",
+          "paragraphs": [
+            "يتكون فحص لوحة مفاتيح Bluetooth مع Get IPTV من جزأين: اتصال التلفزيون بالملحق، وقبول المشغل لكتابته. أكد التوافق أولاً في إرشادات مصنّعي الجهازين؛ فتعليمات Google العامة لا تعد بأن كل لوحة ستعمل. سجل الطرازين وحالة الاتصال الحالية. أبق جهاز التحكم المعتاد متاحاً واستخدم ملحقاً يعرفه المالك."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "قارن الكتابة في النظام والمشغل",
+          "paragraphs": [
+            "للملحق المتوافق، تشرح Google فتح الإعدادات ثم جهاز التحكم والملحقات ثم إقران جهاز تحكم أو ملحق. اتبع تعليمات المصنع لوضع الإقران، واختر الاسم الصحيح وأكد الطلب. ويمكن اختيار ملحق مقترن سابقاً من الملحقات ثم توصيله. بموافقة المالك، قارن أحرفاً غير حساسة في بحث النظام ثم حقل المشغل المقصود. لا تكتب كلمات مرور أو معلومات حساب خاصة. نجاح الإقران لا يثبت دعم كل نموذج داخل التطبيقات."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "أبلغ عن النتيجة دون تغيير الخطة",
+          "paragraphs": [
+            "إذا عملت الأحرف في النظام دون المشغل، فسجل هذا الفرق وإصدار المشغل بدلاً من اعتباره انتهاء اشتراك. أكد مزود Opplex أو Filex والمدة وحالة طلب Get IPTV وإعداده المسجلة بصورة منفصلة. تكلفة شراء المشغل منفصلة عن دفع الخدمة، وحد اتصالات Filex غير المعلن يحتاج إلى تأكيد. لا تعِد ضبط التلفزيون ولا تمسح بيانات المشغل المحفوظة ولا تشتر خطة أخرى لمجرد مقارنة إدخال لوحة المفاتيح."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV Bluetooth कीबोर्ड: पहले कनेक्शन की जाँच करें",
+      "excerpt": "प्लेयर के टेक्स्ट खाने को जाँचने से पहले संगत कीबोर्ड का Google TV कनेक्शन देखें। एक्सेसरी को Opplex या Filex प्लान, ऐप की कीमत और ऑर्डर की स्थिति से अलग रखें।",
+      "seo_title": "Get IPTV Bluetooth कीबोर्ड: पहले कनेक्शन की जाँच करें",
+      "seo_description": "प्लेयर के टेक्स्ट खाने को जाँचने से पहले संगत कीबोर्ड का Google TV कनेक्शन देखें। एक्सेसरी को Opplex या Filex प्लान, ऐप की कीमत और ऑर्डर की स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "असली कीबोर्ड और टीवी की पुष्टि करें",
+          "paragraphs": [
+            "Get IPTV Bluetooth कीबोर्ड की जाँच के दो भाग हैं: टीवी का एक्सेसरी से जुड़ना और प्लेयर का उसका इनपुट स्वीकार करना। पहले दोनों निर्माताओं के निर्देशों में संगतता की पुष्टि करें; Google के सामान्य Bluetooth निर्देश हर कीबोर्ड के चलने का वादा नहीं करते। मॉडल और मौजूदा कनेक्शन स्थिति लिखें। सामान्य रिमोट पास रखें और मालिक की पहचानी एक्सेसरी इस्तेमाल करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सिस्टम और प्लेयर में टाइपिंग की तुलना करें",
+          "paragraphs": [
+            "संगत एक्सेसरी के लिए Google सेटिंग, रिमोट और एक्सेसरी, फिर रिमोट या एक्सेसरी पेयर करने का रास्ता बताता है। निर्माता के निर्देश से कीबोर्ड पेयरिंग मोड में रखें, सही नाम चुनें और अनुरोध की पुष्टि करें। पहले से पेयर एक्सेसरी को एक्सेसरी सूची में चुनकर कनेक्ट कर सकते हैं। मालिक की अनुमति से पहले सिस्टम खोज और फिर प्लेयर के इच्छित खाने में साधारण अक्षर आजमाएँ। न पासवर्ड लिखें और न निजी खाते की जानकारी। सफल पेयरिंग हर ऐप फॉर्म का समर्थन साबित नहीं करती।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV",
+              "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "प्लान बदले बिना नतीजा बताएँ",
+          "paragraphs": [
+            "अक्षर सिस्टम में चलें लेकिन प्लेयर में न चलें तो सदस्यता खत्म मानने के बजाय अंतर और प्लेयर संस्करण लिखें। Opplex या Filex प्रदाता, अवधि और Get IPTV ऑर्डर तथा सेटअप की दर्ज स्थिति अलग पुष्टि करें। प्लेयर की खरीद सेवा के भुगतान से अलग है; Filex की अघोषित कनेक्शन सीमा पूछनी होगी। केवल कीबोर्ड की तुलना के लिए न टीवी रीसेट करें, न सहेजा प्लेयर डेटा मिटाएँ और न दूसरा प्लान खरीदें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV Help: connect and reconnect Bluetooth accessories",
+      "url": "https://support.google.com/googletv/answer/10049908?hl=en"
+    },
+    {
+      "label": "Android Developers: TV keyboard and controller connection handling",
+      "url": "https://developer.android.com/training/tv/get-started/controllers"
+    }
+  ]
+}

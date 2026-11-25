@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-25",
+  "topic": "Inspect VLC for Android library grouping by name or folder separately from missing local files and the Trex IPTV provider catalogue, preserving saved access and one simultaneous connection.",
+  "primary_keyword": "Trex IPTV video groups",
+  "slug": "trex-video-library-groups-and-individual-file-view",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV video groups: check VLC’s library arrangement",
+      "excerpt": "Check VLC for Android grouping by name or folder before treating one library entry as missing files. Keep the display choice separate from the provider catalogue.",
+      "seo_title": "Trex IPTV video groups: check VLC’s library arrangement",
+      "seo_description": "Check VLC for Android grouping by name or folder before treating one library entry as missing files. Keep the display choice separate from the provider catalogue.",
+      "sections": [
+        {
+          "heading": "Identify the grouped library screen",
+          "paragraphs": [
+            "When Trex IPTV video groups appear as one entry in VLC for Android, identify whether you are looking at Video Explorer rather than a provider list. VideoLAN documents grouping library videos by Name or Folder. A group may contain several entries; seeing one group does not establish that files were deleted or programmes removed by a provider. Note the player version and the group label actually visible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the arrangement before changing files",
+          "paragraphs": [
+            "In the documented Video Explorer options, Group videos offers name-based or folder-based organisation. Do not group videos shows items individually. Read the current choice and, if the owner wants a comparison, use that display option before moving or renaming files. Compare the same familiar item, then retain the useful arrangement or restore the previous choice. Context-menu options can vary with sorting, grouping, screen size and orientation."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Keep a display check separate from viewing access",
+          "paragraphs": [
+            "Record whether the expected item appears individually after the comparison. If it is still absent, report that separately rather than treating grouping as proof of deletion or subscription expiry. Preserve saved player access and the existing media database; do not delete a folder to change its presentation. Trex IPTV 8K permits one simultaneous connection, so extra viewing sessions are unnecessary. Share the version, group label and observation without private file paths or playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Grupos de vídeo Trex IPTV: revisa la organización de VLC",
+      "excerpt": "Revisa la agrupación por nombre o carpeta en VLC para Android antes de dar archivos por perdidos. Distingue la vista de biblioteca del catálogo del proveedor.",
+      "seo_title": "Grupos de vídeo Trex IPTV: revisa la organización de VLC",
+      "seo_description": "Revisa la agrupación por nombre o carpeta en VLC para Android antes de dar archivos por perdidos. Distingue la vista de biblioteca del catálogo del proveedor.",
+      "sections": [
+        {
+          "heading": "Identifica la biblioteca agrupada",
+          "paragraphs": [
+            "Si los grupos de vídeo Trex IPTV aparecen como una sola entrada en VLC para Android, comprueba si estás en el Explorador de vídeos y no en una lista del proveedor. VideoLAN documenta agrupar vídeos por Nombre o Carpeta. Un grupo puede contener varias entradas; ver uno solo no demuestra que se hayan borrado archivos ni retirado programas. Anota la versión del reproductor y la etiqueta de grupo visible."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la organización antes de cambiar archivos",
+          "paragraphs": [
+            "En las opciones documentadas del Explorador de vídeos, Agrupar vídeos ofrece organización por nombre o carpeta. No agrupar vídeos muestra los elementos por separado. Lee la selección actual y, si el propietario quiere comparar, usa esa opción de visualización antes de mover o renombrar archivos. Compara el mismo elemento conocido y conserva la organización útil o restaura la anterior. Los menús pueden variar con orden, agrupación, tamaño y orientación de pantalla."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la vista del acceso al servicio",
+          "paragraphs": [
+            "Anota si el elemento esperado aparece individualmente después de comparar. Si sigue ausente, comunícalo aparte sin tomar la agrupación como prueba de borrado o caducidad. Conserva el acceso y la base de datos; no borres una carpeta para cambiar cómo aparece. Trex IPTV 8K permite una conexión simultánea, por lo que no hacen falta sesiones adicionales. Comparte versión, etiqueta y observación, sin rutas privadas ni direcciones de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Groupes vidéo Trex IPTV : vérifier l’organisation de VLC",
+      "excerpt": "Vérifiez les groupes par nom ou dossier dans VLC pour Android avant de croire des fichiers absents. Distinguez l’affichage de la bibliothèque du catalogue fournisseur.",
+      "seo_title": "Groupes vidéo Trex IPTV : vérifier l’organisation de VLC",
+      "seo_description": "Vérifiez les groupes par nom ou dossier dans VLC pour Android avant de croire des fichiers absents. Distinguez l’affichage de la bibliothèque du catalogue fournisseur.",
+      "sections": [
+        {
+          "heading": "Identifier la bibliothèque regroupée",
+          "paragraphs": [
+            "Si les groupes vidéo Trex IPTV apparaissent comme une seule entrée dans VLC pour Android, vérifiez s’il s’agit de l’Explorateur vidéo plutôt que d’une liste du fournisseur. VideoLAN décrit le regroupement par Nom ou Dossier. Un groupe peut contenir plusieurs entrées : le voir seul ne prouve ni suppression de fichiers ni retrait de programmes. Notez la version du lecteur et le nom du groupe réellement affiché."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire l’organisation avant de modifier les fichiers",
+          "paragraphs": [
+            "Dans les options documentées de l’Explorateur vidéo, Grouper les vidéos propose une organisation par nom ou dossier. Ne pas grouper les vidéos affiche les éléments séparément. Lisez le choix actuel et, si le propriétaire souhaite comparer, utilisez cet affichage avant de déplacer ou renommer des fichiers. Comparez le même élément connu, puis gardez l’organisation utile ou rétablissez l’ancienne. Les menus varient selon tri, regroupement, taille et orientation d’écran."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer affichage et accès au service",
+          "paragraphs": [
+            "Notez si l’élément attendu apparaît individuellement après la comparaison. S’il manque toujours, signalez-le séparément sans considérer le regroupement comme preuve de suppression ou d’expiration. Conservez l’accès et la base multimédia ; ne supprimez pas un dossier pour changer sa présentation. Trex IPTV 8K permet une connexion simultanée : des sessions supplémentaires sont inutiles. Indiquez version, groupe et observation, sans chemin privé ni adresse de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Gruppi video Trex IPTV: controlla l’organizzazione di VLC",
+      "excerpt": "Controlla i gruppi per nome o cartella in VLC per Android prima di considerare mancanti i file. Distingui la vista della raccolta dal catalogo del fornitore.",
+      "seo_title": "Gruppi video Trex IPTV: controlla l’organizzazione di VLC",
+      "seo_description": "Controlla i gruppi per nome o cartella in VLC per Android prima di considerare mancanti i file. Distingui la vista della raccolta dal catalogo del fornitore.",
+      "sections": [
+        {
+          "heading": "Identifica la raccolta raggruppata",
+          "paragraphs": [
+            "Se i gruppi video Trex IPTV compaiono come una sola voce in VLC per Android, verifica di essere nell’Esplora video e non in una lista del fornitore. VideoLAN documenta il raggruppamento per Nome o Cartella. Un gruppo può contenere più voci: vederne uno solo non prova che siano stati cancellati file o rimossi programmi. Annota la versione del lettore e l’etichetta del gruppo effettivamente visibile."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’organizzazione prima di modificare file",
+          "paragraphs": [
+            "Nelle opzioni documentate di Esplora video, Raggruppa video offre l’organizzazione per nome o cartella. Non raggruppare video mostra gli elementi singolarmente. Leggi la scelta attuale e, se il proprietario vuole confrontare, usa questa visualizzazione prima di spostare o rinominare file. Confronta lo stesso elemento noto e mantieni l’organizzazione utile o ripristina quella precedente. I menu possono variare con ordinamento, gruppi, dimensioni e orientamento dello schermo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la visualizzazione dall’accesso",
+          "paragraphs": [
+            "Annota se dopo il confronto l’elemento atteso appare singolarmente. Se manca ancora, segnalalo separatamente senza considerare i gruppi prova di cancellazione o scadenza. Conserva accesso e database multimediale; non eliminare una cartella per cambiarne la presentazione. Trex IPTV 8K consente una connessione simultanea, quindi non servono ulteriori sessioni. Comunica versione, etichetta e osservazione, senza percorsi privati o indirizzi di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-videogroepen: controleer de indeling van VLC",
+      "excerpt": "Controleer groeperen op naam of map in VLC voor Android voordat u bestanden als vermist beschouwt. Onderscheid de bibliotheekweergave van de aanbiedercatalogus.",
+      "seo_title": "Trex IPTV-videogroepen: controleer de indeling van VLC",
+      "seo_description": "Controleer groeperen op naam of map in VLC voor Android voordat u bestanden als vermist beschouwt. Onderscheid de bibliotheekweergave van de aanbiedercatalogus.",
+      "sections": [
+        {
+          "heading": "Herken het gegroepeerde bibliotheekscherm",
+          "paragraphs": [
+            "Verschijnen Trex IPTV-videogroepen als één vermelding in VLC voor Android, controleer dan of u de Videoverkenner bekijkt in plaats van een aanbiederslijst. VideoLAN beschrijft groeperen op Naam of Map. Een groep kan meerdere vermeldingen bevatten; één zichtbare groep bewijst geen verwijderde bestanden of weggehaalde programma’s. Noteer de spelerversie en het groepslabel dat werkelijk zichtbaar is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de indeling voordat u bestanden wijzigt",
+          "paragraphs": [
+            "In de gedocumenteerde Videoverkenner biedt Video’s groeperen een indeling op naam of map. Video’s niet groeperen toont de items afzonderlijk. Lees de huidige keuze en gebruik, als de eigenaar wil vergelijken, die weergave voordat u bestanden verplaatst of hernoemt. Vergelijk hetzelfde bekende item en bewaar de nuttige indeling of herstel de vorige keuze. Contextmenu’s kunnen verschillen door sortering, groepering, schermgrootte en stand."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Scheid de weergavecontrole van kijktoegang",
+          "paragraphs": [
+            "Noteer of het verwachte item na de vergelijking afzonderlijk verschijnt. Ontbreekt het nog steeds, meld dat apart in plaats van groepering als bewijs van verwijdering of een verlopen abonnement te zien. Bewaar toegang en mediadatabase; verwijder geen map om de presentatie te veranderen. Trex IPTV 8K staat één gelijktijdige verbinding toe, dus extra kijksessies zijn onnodig. Deel versie, groepslabel en waarneming zonder privébestandspaden of afspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Grupos de vídeo Trex IPTV: confira a organização do VLC",
+      "excerpt": "Confira os grupos por nome ou pasta no VLC para Android antes de considerar ficheiros em falta. Separe a vista da biblioteca do catálogo do fornecedor.",
+      "seo_title": "Grupos de vídeo Trex IPTV: confira a organização do VLC",
+      "seo_description": "Confira os grupos por nome ou pasta no VLC para Android antes de considerar ficheiros em falta. Separe a vista da biblioteca do catálogo do fornecedor.",
+      "sections": [
+        {
+          "heading": "Identifique a biblioteca agrupada",
+          "paragraphs": [
+            "Quando os grupos de vídeo Trex IPTV surgem como uma só entrada no VLC para Android, confirme se está no Explorador de vídeos e não numa lista do fornecedor. A VideoLAN documenta o agrupamento por Nome ou Pasta. Um grupo pode conter várias entradas; ver apenas um não prova eliminação de ficheiros nem retirada de programas. Anote a versão do leitor e o nome do grupo realmente visível."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a organização antes de alterar ficheiros",
+          "paragraphs": [
+            "Nas opções documentadas do Explorador, Agrupar vídeos permite organizar por nome ou pasta. Não agrupar vídeos mostra os itens individualmente. Leia a escolha atual e, se o proprietário quiser comparar, use essa opção de apresentação antes de mover ou mudar nomes de ficheiros. Compare o mesmo item conhecido e mantenha a organização útil ou restaure a anterior. Os menus podem variar com ordenação, grupos, tamanho e orientação do ecrã."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a apresentação do acesso ao serviço",
+          "paragraphs": [
+            "Registe se o item esperado surge individualmente depois da comparação. Se continuar ausente, comunique isso separadamente, sem tratar o agrupamento como prova de eliminação ou expiração. Preserve o acesso guardado e a base multimédia; não elimine uma pasta para mudar a sua apresentação. Trex IPTV 8K permite uma ligação simultânea, pelo que sessões adicionais são desnecessárias. Indique versão, grupo e observação, sem caminhos privados ou endereços de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Группы видео Trex IPTV: проверьте представление медиатеки VLC",
+      "excerpt": "Проверьте группировку по имени или папке в VLC для Android, прежде чем считать файлы пропавшими. Отличайте вид медиатеки от каталога провайдера.",
+      "seo_title": "Группы видео Trex IPTV: проверьте представление медиатеки VLC",
+      "seo_description": "Проверьте группировку по имени или папке в VLC для Android, прежде чем считать файлы пропавшими. Отличайте вид медиатеки от каталога провайдера.",
+      "sections": [
+        {
+          "heading": "Определите экран сгруппированной медиатеки",
+          "paragraphs": [
+            "Если группы видео Trex IPTV показаны одной записью в VLC для Android, уточните, открыт ли Видеообозреватель, а не список провайдера. VideoLAN описывает группировку по имени или папке. Группа может содержать несколько записей; одна видимая группа не доказывает удаление файлов или программ провайдером. Запишите версию проигрывателя и действительно показанное имя группы."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Изучите представление перед изменением файлов",
+          "paragraphs": [
+            "В описанных параметрах Видеообозревателя группировка видео предлагает организацию по имени или папке. Команда без группировки показывает элементы отдельно. Прочитайте текущий выбор и, если владелец хочет сравнить, измените представление до перемещения или переименования файлов. Сравните тот же знакомый элемент и сохраните удобный вид либо восстановите прежний. Контекстные меню зависят от сортировки, группировки, размера и ориентации экрана."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте проверку вида от доступа",
+          "paragraphs": [
+            "Отметьте, появился ли ожидаемый элемент отдельно после сравнения. Если его по-прежнему нет, сообщите об этом отдельно, не считая группировку доказательством удаления или окончания подписки. Сохраните настроенный доступ и базу медиатеки; не удаляйте папку ради изменения её представления. Trex IPTV 8K допускает одно одновременное подключение, поэтому лишние сеансы не нужны. Сообщите версию, группу и наблюдение, не раскрывая личные пути файлов и адреса воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV ویڈیو گروپس: VLC کی لائبریری کی ترتیب دیکھیں",
+      "excerpt": "فائلیں غائب سمجھنے سے پہلے Android کے VLC میں نام یا فولڈر کے مطابق گروپ دیکھیں۔ لائبریری کی ظاہری ترتیب کو فراہم کنندہ کی فہرست سے الگ رکھیں۔",
+      "seo_title": "Trex IPTV ویڈیو گروپس: VLC کی لائبریری کی ترتیب دیکھیں",
+      "seo_description": "فائلیں غائب سمجھنے سے پہلے Android کے VLC میں نام یا فولڈر کے مطابق گروپ دیکھیں۔ لائبریری کی ظاہری ترتیب کو فراہم کنندہ کی فہرست سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "گروپ والی لائبریری کی اسکرین پہچانیں",
+          "paragraphs": [
+            "Trex IPTV ویڈیو گروپس، Android کے VLC میں ایک اندراج کی صورت دکھائی دیں تو پہلے دیکھیں کہ یہ ویڈیو ایکسپلورر ہے یا فراہم کنندہ کی فہرست۔ VideoLAN نام یا فولڈر کے مطابق لائبریری ویڈیوز کے گروپ بیان کرتا ہے۔ ایک گروپ میں کئی اندراج ہو سکتے ہیں؛ ایک گروپ دکھنا فائلیں حذف ہونے یا فراہم کنندہ کی جانب سے پروگرام ہٹنے کا ثبوت نہیں۔ پلیئر کا نسخہ اور واقعی نظر آنے والا گروپ نام لکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "فائلیں بدلنے سے پہلے ترتیب پڑھیں",
+          "paragraphs": [
+            "دستاویزی ویڈیو ایکسپلورر میں ویڈیوز کے گروپ کا اختیار نام یا فولڈر کے مطابق ترتیب دیتا ہے۔ گروپ نہ بنائیں کا اختیار اشیا الگ الگ دکھاتا ہے۔ موجودہ انتخاب پڑھیں اور مالک موازنہ چاہے تو فائلیں منتقل کرنے یا نام بدلنے سے پہلے یہی ظاہری اختیار استعمال کریں۔ وہی مانوس چیز ملائیں؛ مفید ترتیب رکھیں یا پچھلا انتخاب بحال کریں۔ متعلقہ مینیو چھانٹی، گروپ، اسکرین کے حجم اور رخ کے مطابق مختلف ہو سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "ظاہری جانچ اور دیکھنے کی رسائی الگ رکھیں",
+          "paragraphs": [
+            "لکھیں کہ موازنے کے بعد مطلوبہ چیز الگ نظر آئی یا نہیں۔ پھر بھی غائب ہو تو اسے الگ بتائیں؛ گروپ کو حذف ہونے یا رکنیت ختم ہونے کا ثبوت نہ سمجھیں۔ محفوظ پلیئر رسائی اور موجودہ میڈیا ڈیٹا بیس برقرار رکھیں؛ ظاہری ترتیب بدلنے کے لیے فولڈر حذف نہ کریں۔ Trex IPTV 8K ایک بیک وقت کنکشن کی اجازت دیتا ہے، اس لیے اضافی سیشن ضروری نہیں۔ نسخہ، گروپ نام اور نتیجہ بتائیں، نجی فائل راستے یا پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "مجموعات فيديو Trex IPTV: افحص ترتيب مكتبة VLC",
+      "excerpt": "افحص التجميع بالاسم أو المجلد في VLC على Android قبل اعتبار الملفات مفقودة. افصل طريقة عرض المكتبة عن قائمة برامج المزوّد.",
+      "seo_title": "مجموعات فيديو Trex IPTV: افحص ترتيب مكتبة VLC",
+      "seo_description": "افحص التجميع بالاسم أو المجلد في VLC على Android قبل اعتبار الملفات مفقودة. افصل طريقة عرض المكتبة عن قائمة برامج المزوّد.",
+      "sections": [
+        {
+          "heading": "تعرّف على شاشة المكتبة المجمّعة",
+          "paragraphs": [
+            "إذا ظهرت مجموعات فيديو Trex IPTV كعنصر واحد في VLC على Android، فتأكد هل تنظر إلى مستكشف الفيديو أم إلى قائمة المزوّد. توثق VideoLAN تجميع فيديوهات المكتبة بالاسم أو المجلد. قد تحتوي المجموعة عدة عناصر؛ ظهور مجموعة واحدة لا يثبت حذف ملفات أو إزالة المزوّد برامج. سجّل إصدار المشغل واسم المجموعة الظاهر فعلًا."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الترتيب قبل تغيير الملفات",
+          "paragraphs": [
+            "في خيارات مستكشف الفيديو الموثقة يتيح تجميع الفيديوهات التنظيم بالاسم أو المجلد. ويعرض خيار عدم التجميع العناصر منفردة. اقرأ الاختيار الحالي، وإذا أراد المالك المقارنة فاستخدم خيار العرض هذا قبل نقل الملفات أو إعادة تسميتها. قارن العنصر المعروف نفسه، ثم احتفظ بالترتيب المفيد أو أعد الاختيار السابق. قد تتغير القوائم السياقية حسب الفرز والتجميع وحجم الشاشة واتجاهها."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "افصل فحص العرض عن صلاحية المشاهدة",
+          "paragraphs": [
+            "سجّل هل ظهر العنصر المتوقع منفردًا بعد المقارنة. إن بقي غائبًا فأبلغ عنه بشكل مستقل، ولا تعتبر التجميع دليل حذف أو انتهاء اشتراك. احتفظ بوصول المشغل المحفوظ وقاعدة الوسائط الحالية؛ لا تحذف مجلدًا لتغيير طريقة عرضه. يسمح Trex IPTV 8K باتصال متزامن واحد، لذا لا حاجة إلى جلسات مشاهدة إضافية. اذكر الإصدار واسم المجموعة والملاحظة دون مسارات ملفات خاصة أو عناوين تشغيل."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV वीडियो समूह: VLC की लाइब्रेरी का क्रम देखें",
+      "excerpt": "फ़ाइलें गायब मानने से पहले Android के VLC में नाम या फ़ोल्डर के अनुसार समूह देखें। लाइब्रेरी के प्रदर्शन को प्रदाता की सूची से अलग रखें।",
+      "seo_title": "Trex IPTV वीडियो समूह: VLC की लाइब्रेरी का क्रम देखें",
+      "seo_description": "फ़ाइलें गायब मानने से पहले Android के VLC में नाम या फ़ोल्डर के अनुसार समूह देखें। लाइब्रेरी के प्रदर्शन को प्रदाता की सूची से अलग रखें।",
+      "sections": [
+        {
+          "heading": "समूह वाली लाइब्रेरी स्क्रीन पहचानें",
+          "paragraphs": [
+            "Trex IPTV वीडियो समूह Android के VLC में एक प्रविष्टि की तरह दिखें तो पहले पहचानें कि यह वीडियो एक्सप्लोरर है या प्रदाता की सूची। VideoLAN नाम या फ़ोल्डर के अनुसार लाइब्रेरी वीडियो समूह बताता है। एक समूह में कई प्रविष्टियाँ हो सकती हैं; एक समूह दिखना फ़ाइलें हटने या प्रदाता द्वारा कार्यक्रम हटाने का प्रमाण नहीं है। प्लेयर संस्करण और वास्तव में दिखा समूह नाम लिखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "फ़ाइलें बदलने से पहले क्रम पढ़ें",
+          "paragraphs": [
+            "दस्तावेज़ित वीडियो एक्सप्लोरर में वीडियो समूह का विकल्प नाम या फ़ोल्डर के अनुसार संगठन देता है। वीडियो समूह न बनाएँ का विकल्प चीज़ें अलग दिखाता है। मौजूदा चुनाव पढ़ें और मालिक तुलना चाहे तो फ़ाइलें स्थानांतरित करने या नाम बदलने से पहले यह प्रदर्शन विकल्प अपनाएँ। उसी परिचित चीज़ की तुलना करें; उपयोगी क्रम रखें या पिछला चुनाव लौटा दें। संदर्भ मेनू छँटाई, समूह, स्क्रीन के आकार और दिशा से बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android Video Explorer grouping",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+            }
+          ]
+        },
+        {
+          "heading": "प्रदर्शन की जाँच और देखने की पहुँच अलग रखें",
+          "paragraphs": [
+            "लिखें कि तुलना के बाद अपेक्षित चीज़ अलग दिखाई दी या नहीं। फिर भी गायब हो तो अलग बताएँ; समूह को हटने या सदस्यता समाप्त होने का प्रमाण न मानें। सहेजी प्लेयर पहुँच और मौजूदा मीडिया डेटाबेस बनाए रखें; दिखाने का तरीका बदलने के लिए फ़ोल्डर न हटाएँ। Trex IPTV 8K एक साथ एक कनेक्शन की अनुमति देता है, इसलिए अतिरिक्त सत्र ज़रूरी नहीं हैं। संस्करण, समूह नाम और नतीजा बताएँ, निजी फ़ाइल पथ या प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android Video Explorer grouping",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/video/video_explorer.html"
+    }
+  ]
+}

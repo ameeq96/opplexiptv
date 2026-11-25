@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-25",
+  "topic": "Share only a verified public IPTV Subscription plan page through Chrome QR code while separating the encoded address from activation and Opplex or Filex payment and setup state.",
+  "primary_keyword": "IPTV Subscription QR code",
+  "slug": "iptvsubscription-public-plan-page-qr-sharing-and-destination-check",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription QR code: move a public plan page to your phone",
+      "excerpt": "Use Chrome to move a verified public plan page to your own phone. Keep QR sharing separate from activation, private order links, player charges and Opplex or Filex payment state.",
+      "seo_title": "IPTV Subscription QR code: move a public plan page to your phone",
+      "seo_description": "Use Chrome to move a verified public plan page to your own phone. Keep QR sharing separate from activation, private order links, player charges and Opplex or Filex payment state.",
+      "sections": [
+        {
+          "heading": "Choose the public page first",
+          "paragraphs": [
+            "An IPTV Subscription QR code can help move a public plan comparison from your computer to your phone. First check the website address and the visible provider, duration and currency. Use a page that is intended for everyone to read. Do not create a code from a checkout, account, payment or private order page; a shareable image can expose the address it contains."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use Chrome’s documented sharing option",
+          "paragraphs": [
+            "On a computer, Google documents opening the page in Chrome, choosing More, then Cast, save, and share, followed by Create QR code. The code can be scanned with another device’s camera. For this comparison, use your own phone and read its destination preview before opening it. Follow the options actually present in your browser. A QR image is a way of carrying a link, not proof that a page is trustworthy or an IPTV activation code."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read the plan again on the phone",
+          "paragraphs": [
+            "After opening the public page, confirm whether the plan is Opplex or Filex and reread the duration and current conditions. Sharing a page neither reserves its price nor confirms an order, payment or activation. A separate player purchase remains a separate charge, and any unstated Filex connection allowance still needs confirmation. Keep credentials and private order links out of shared images; do not repeat payment to test a QR code."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Código QR de IPTV Subscription: lleva una página pública al móvil",
+      "excerpt": "Usa Chrome para llevar una página pública verificada a tu móvil. Distingue el enlace QR de la activación, los pedidos privados, el coste del reproductor y el pago de Opplex o Filex.",
+      "seo_title": "Código QR de IPTV Subscription: lleva una página pública al móvil",
+      "seo_description": "Usa Chrome para llevar una página pública verificada a tu móvil. Distingue el enlace QR de la activación, los pedidos privados, el coste del reproductor y el pago de Opplex o Filex.",
+      "sections": [
+        {
+          "heading": "Elige primero la página pública",
+          "paragraphs": [
+            "Un código QR de IPTV Subscription puede trasladar una comparación pública de planes del ordenador al móvil. Comprueba primero la dirección y el proveedor, la duración y la moneda visibles. Elige una página destinada a cualquier lector. No crees el código desde una página de pago, cuenta, cobro o pedido privado: una imagen compartida puede revelar la dirección que contiene."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliza la opción documentada de Chrome",
+          "paragraphs": [
+            "Google indica que, en un ordenador, abras la página en Chrome y selecciones Más, Enviar, guardar y compartir y Crear código QR. Puedes escanearlo con la cámara de otro dispositivo. Para esta comparación, usa tu propio móvil y lee la vista previa del destino antes de abrirlo. Sigue las opciones presentes en tu navegador. La imagen transporta un enlace; no demuestra que la página sea fiable ni constituye un código de activación de IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vuelve a leer el plan en el móvil",
+          "paragraphs": [
+            "Al abrir la página pública, confirma si el plan es Opplex o Filex y revisa de nuevo la duración y las condiciones actuales. Compartirla no reserva el precio ni confirma pedido, pago o activación. La compra del reproductor sigue siendo un cargo distinto y cualquier límite de conexiones de Filex no indicado necesita confirmación. Excluye credenciales y enlaces privados de las imágenes; no repitas el pago para probar un QR."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Code QR IPTV Subscription : ouvrez une page publique sur votre téléphone",
+      "excerpt": "Utilisez Chrome pour transférer une page publique vérifiée sur votre téléphone. Distinguez le lien QR de l’activation, des commandes privées et des paiements Opplex, Filex ou du lecteur.",
+      "seo_title": "Code QR IPTV Subscription : ouvrez une page publique sur votre téléphone",
+      "seo_description": "Utilisez Chrome pour transférer une page publique vérifiée sur votre téléphone. Distinguez le lien QR de l’activation, des commandes privées et des paiements Opplex, Filex ou du lecteur.",
+      "sections": [
+        {
+          "heading": "Choisissez d’abord une page publique",
+          "paragraphs": [
+            "Un code QR IPTV Subscription peut transférer un comparatif public de forfaits de l’ordinateur au téléphone. Vérifiez d’abord l’adresse ainsi que le fournisseur, la durée et la devise affichés. Choisissez une page destinée à tous les lecteurs. Ne créez pas de code depuis une page de règlement, de compte, de paiement ou de commande privée : une image partagée peut révéler l’adresse contenue."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utilisez le partage documenté de Chrome",
+          "paragraphs": [
+            "Sur ordinateur, Google indique d’ouvrir la page dans Chrome, puis de choisir Plus, Caster, enregistrer et partager et Créer un code QR. La caméra d’un autre appareil peut le scanner. Pour cette comparaison, utilisez votre propre téléphone et lisez l’aperçu de destination avant d’ouvrir le lien. Suivez les options présentes dans votre navigateur. Une image QR transporte un lien ; elle ne prouve ni la fiabilité de la page ni l’activation IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Relisez le forfait sur le téléphone",
+          "paragraphs": [
+            "Après ouverture de la page publique, confirmez si le forfait relève d’Opplex ou de Filex, puis relisez sa durée et les conditions actuelles. Le partage ne réserve aucun tarif et ne confirme ni commande, ni paiement, ni activation. L’achat du lecteur reste une dépense distincte ; toute limite de connexions Filex non précisée doit être confirmée. Excluez identifiants et liens de commande privés des images ; ne répétez pas un paiement pour tester le code."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Codice QR IPTV Subscription: porta una pagina pubblica sul telefono",
+      "excerpt": "Usa Chrome per aprire sul tuo telefono una pagina pubblica verificata. Distingui il collegamento QR da attivazione, ordini privati, costo del lettore e pagamento Opplex o Filex.",
+      "seo_title": "Codice QR IPTV Subscription: porta una pagina pubblica sul telefono",
+      "seo_description": "Usa Chrome per aprire sul tuo telefono una pagina pubblica verificata. Distingui il collegamento QR da attivazione, ordini privati, costo del lettore e pagamento Opplex o Filex.",
+      "sections": [
+        {
+          "heading": "Scegli prima la pagina pubblica",
+          "paragraphs": [
+            "Un codice QR IPTV Subscription può portare un confronto pubblico di abbonamenti dal computer al telefono. Controlla prima indirizzo, fornitore, durata e valuta mostrati. Scegli una pagina destinata a tutti. Non creare il codice da pagine di acquisto, account, pagamento o ordine privato: un’immagine condivisa può rivelare l’indirizzo che contiene."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa la condivisione documentata di Chrome",
+          "paragraphs": [
+            "Su computer Google indica di aprire la pagina in Chrome, scegliere Altro, Trasmetti, salva e condividi e poi Crea codice QR. La fotocamera di un altro dispositivo può scansionarlo. Per questo confronto usa il tuo telefono e leggi l’anteprima della destinazione prima di aprirla. Segui le opzioni presenti nel tuo browser. L’immagine trasporta un collegamento: non dimostra l’affidabilità della pagina e non è un codice di attivazione IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Rileggi il piano sul telefono",
+          "paragraphs": [
+            "Una volta aperta la pagina pubblica, conferma se il piano è Opplex o Filex e rileggi durata e condizioni attuali. Condividere non riserva il prezzo e non conferma ordine, pagamento o attivazione. L’acquisto del lettore rimane un costo separato; un limite di connessioni Filex non indicato va ancora confermato. Non includere credenziali o collegamenti privati nelle immagini e non ripetere un pagamento per provare il codice QR."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-QR-code: open een openbare planpagina op je telefoon",
+      "excerpt": "Verplaats met Chrome een gecontroleerde openbare planpagina naar je eigen telefoon. Onderscheid QR-delen van activering, privébestellingen, spelerkosten en Opplex- of Filex-betalingen.",
+      "seo_title": "IPTV Subscription-QR-code: open een openbare planpagina op je telefoon",
+      "seo_description": "Verplaats met Chrome een gecontroleerde openbare planpagina naar je eigen telefoon. Onderscheid QR-delen van activering, privébestellingen, spelerkosten en Opplex- of Filex-betalingen.",
+      "sections": [
+        {
+          "heading": "Kies eerst de openbare pagina",
+          "paragraphs": [
+            "Een IPTV Subscription-QR-code kan een openbare vergelijking van abonnementen van je computer naar je telefoon brengen. Controleer eerst het webadres en de getoonde aanbieder, looptijd en valuta. Kies een pagina die iedereen mag lezen. Maak geen code van een afreken-, account-, betaal- of privébestelpagina: een gedeelde afbeelding kan het ingesloten adres onthullen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de beschreven Chrome-optie",
+          "paragraphs": [
+            "Google beschrijft op een computer: open de pagina in Chrome, kies Meer, Casten, opslaan en delen en vervolgens QR-code maken. Je kunt de code met de camera van een ander apparaat scannen. Gebruik voor deze vergelijking je eigen telefoon en lees het bestemmingsvoorbeeld voordat je de link opent. Volg de opties die jouw browser biedt. Een QR-afbeelding draagt een link over; zij bewijst geen betrouwbaarheid en is geen IPTV-activeringscode."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lees het abonnement opnieuw op de telefoon",
+          "paragraphs": [
+            "Controleer na het openen van de openbare pagina of het om Opplex of Filex gaat en lees de looptijd en actuele voorwaarden opnieuw. Delen reserveert geen prijs en bevestigt geen bestelling, betaling of activering. Een speleraankoop blijft een aparte uitgave; een niet-vermelde Filex-verbindingslimiet vraagt nog om bevestiging. Houd inloggegevens en privébestellinks buiten gedeelde afbeeldingen; betaal niet opnieuw om een QR-code te testen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Código QR da IPTV Subscription: leve uma página pública ao telemóvel",
+      "excerpt": "Use o Chrome para levar uma página pública verificada ao seu telemóvel. Separe o código QR de ativação, encomendas privadas, custo do leitor e pagamento Opplex ou Filex.",
+      "seo_title": "Código QR da IPTV Subscription: leve uma página pública ao telemóvel",
+      "seo_description": "Use o Chrome para levar uma página pública verificada ao seu telemóvel. Separe o código QR de ativação, encomendas privadas, custo do leitor e pagamento Opplex ou Filex.",
+      "sections": [
+        {
+          "heading": "Escolha primeiro a página pública",
+          "paragraphs": [
+            "Um código QR da IPTV Subscription pode levar uma comparação pública de planos do computador ao telemóvel. Confirme primeiro o endereço e o fornecedor, a duração e a moeda apresentados. Escolha uma página destinada a todos. Não crie o código a partir de páginas de compra, conta, pagamento ou encomenda privada: uma imagem partilhada pode revelar o endereço que contém."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use a partilha documentada do Chrome",
+          "paragraphs": [
+            "Num computador, a Google descreve abrir a página no Chrome e escolher Mais, Transmitir, guardar e partilhar e Criar código QR. A câmara de outro dispositivo pode lê-lo. Para esta comparação, use o seu próprio telemóvel e leia a pré-visualização do destino antes de abrir. Siga as opções realmente disponíveis no navegador. A imagem transporta uma ligação; não comprova a confiança da página nem constitui um código de ativação IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Releia o plano no telemóvel",
+          "paragraphs": [
+            "Depois de abrir a página pública, confirme se o plano é Opplex ou Filex e releia a duração e as condições atuais. Partilhar não reserva o preço nem confirma encomenda, pagamento ou ativação. A compra do leitor continua a ser uma despesa distinta; um limite de ligações Filex não indicado exige confirmação. Exclua credenciais e ligações privadas das imagens; não repita um pagamento para testar o código QR."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "QR-код IPTV Subscription: откройте публичную страницу на телефоне",
+      "excerpt": "Перенесите проверенную публичную страницу тарифа на свой телефон через Chrome. Отличайте QR-ссылку от активации, частного заказа, покупки плеера и оплаты Opplex или Filex.",
+      "seo_title": "QR-код IPTV Subscription: откройте публичную страницу на телефоне",
+      "seo_description": "Перенесите проверенную публичную страницу тарифа на свой телефон через Chrome. Отличайте QR-ссылку от активации, частного заказа, покупки плеера и оплаты Opplex или Filex.",
+      "sections": [
+        {
+          "heading": "Сначала выберите публичную страницу",
+          "paragraphs": [
+            "QR-код IPTV Subscription помогает перенести публичное сравнение тарифов с компьютера на телефон. Сначала проверьте адрес, указанного поставщика, срок и валюту. Выбирайте страницу, доступную всем читателям. Не создавайте код со страницы оформления покупки, учётной записи, платежа или частного заказа: опубликованное изображение может раскрыть содержащийся в нём адрес."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте описанную функцию Chrome",
+          "paragraphs": [
+            "Google предлагает на компьютере открыть страницу в Chrome, выбрать «Ещё», затем раздел трансляции, сохранения и отправки и создание QR-кода. Его можно отсканировать камерой другого устройства. Для сравнения используйте собственный телефон и прочитайте предварительный адрес назначения перед открытием. Ориентируйтесь на пункты вашего браузера. Изображение QR передаёт ссылку, но не доказывает надёжность страницы и не является кодом активации IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Прочитайте тариф на телефоне повторно",
+          "paragraphs": [
+            "Открыв публичную страницу, подтвердите, относится ли тариф к Opplex или Filex, и перечитайте срок и действующие условия. Отправка ссылки не закрепляет цену и не подтверждает заказ, оплату или активацию. Покупка плеера остаётся отдельным расходом; неуказанный лимит подключений Filex необходимо уточнить. Не помещайте учётные данные и частные ссылки заказов в общие изображения; не повторяйте платёж ради проверки QR-кода."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کا QR کوڈ: عوامی پلان کا صفحہ فون پر کھولیں",
+      "excerpt": "Chrome سے تصدیق شدہ عوامی پلان کا صفحہ اپنے فون پر لائیں۔ QR لنک کو فعال ہونے، نجی آرڈر، پلیئر کی فیس اور Opplex یا Filex کی ادائیگی سے الگ سمجھیں۔",
+      "seo_title": "IPTV Subscription کا QR کوڈ: عوامی پلان کا صفحہ فون پر کھولیں",
+      "seo_description": "Chrome سے تصدیق شدہ عوامی پلان کا صفحہ اپنے فون پر لائیں۔ QR لنک کو فعال ہونے، نجی آرڈر، پلیئر کی فیس اور Opplex یا Filex کی ادائیگی سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے عوامی صفحہ منتخب کریں",
+          "paragraphs": [
+            "IPTV Subscription کا QR کوڈ عوامی منصوبوں کا موازنہ کمپیوٹر سے فون پر لانے میں مدد دے سکتا ہے۔ پہلے ویب پتہ، درج فراہم کنندہ، مدت اور کرنسی دیکھیں۔ ایسا صفحہ چنیں جو ہر شخص کے پڑھنے کے لیے ہو۔ نہ خریداری مکمل کرنے کے صفحے کا کوڈ بنائیں، نہ اکاؤنٹ، ادائیگی یا نجی آرڈر کے صفحے کا؛ بانٹی گئی تصویر اپنا اندرونی پتہ ظاہر کر سکتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chrome کا بیان کردہ طریقہ استعمال کریں",
+          "paragraphs": [
+            "Google کے مطابق کمپیوٹر پر صفحہ Chrome میں کھول کر مزید، پھر کاسٹ، محفوظ اور شیئر کرنے کا حصہ، اور QR کوڈ بنانے کا اختیار منتخب کریں۔ دوسرے آلے کے کیمرے سے اسے پڑھ سکتے ہیں۔ اس موازنے کے لیے اپنا فون استعمال کریں اور کھولنے سے پہلے منزل کا دکھایا گیا پتہ پڑھیں۔ اپنے براؤزر میں موجود اختیارات اپنائیں۔ QR تصویر صرف لنک پہنچاتی ہے؛ یہ نہ صفحے کے قابل اعتماد ہونے کا ثبوت ہے اور نہ IPTV فعال کرنے کا کوڈ۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "فون پر منصوبہ دوبارہ پڑھیں",
+          "paragraphs": [
+            "عوامی صفحہ کھلنے پر تصدیق کریں کہ منصوبہ Opplex ہے یا Filex، پھر مدت اور موجودہ شرائط دوبارہ پڑھیں۔ صفحہ بانٹنے سے نہ قیمت محفوظ ہوتی ہے، نہ آرڈر، ادائیگی یا فعال ہونا ثابت ہوتا ہے۔ پلیئر کی خرید الگ خرچ ہے؛ Filex کے غیر واضح کنکشن کی حد کی تصدیق اب بھی ضروری ہے۔ مشترکہ تصاویر میں نہ لاگ اِن تفصیل دیں اور نہ نجی آرڈر لنک؛ QR آزمانے کے لیے دوبارہ ادائیگی نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "رمز QR في IPTV Subscription: انقل صفحة عامة إلى هاتفك",
+      "excerpt": "استخدم Chrome لنقل صفحة عامة موثوقة الخِيار إلى هاتفك. افصل مشاركة رابط QR عن التفعيل والطلبات الخاصة وتكلفة المشغل وحالة دفع Opplex أو Filex.",
+      "seo_title": "رمز QR في IPTV Subscription: انقل صفحة عامة إلى هاتفك",
+      "seo_description": "استخدم Chrome لنقل صفحة عامة موثوقة الخِيار إلى هاتفك. افصل مشاركة رابط QR عن التفعيل والطلبات الخاصة وتكلفة المشغل وحالة دفع Opplex أو Filex.",
+      "sections": [
+        {
+          "heading": "اختر الصفحة العامة أولاً",
+          "paragraphs": [
+            "قد يساعد رمز QR في IPTV Subscription على نقل مقارنة عامة للخطط من الحاسوب إلى الهاتف. تحقق أولاً من العنوان والمزود والمدة والعملة الظاهرة. اختر صفحة مخصصة للجميع. لا تنشئ الرمز من صفحة إتمام شراء أو حساب أو دفع أو طلب خاص؛ فقد تكشف الصورة المشتركة العنوان الذي تتضمنه."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم خيار Chrome الموثق",
+          "paragraphs": [
+            "توضح Google على الحاسوب فتح الصفحة في Chrome ثم اختيار المزيد، وقسم البث والحفظ والمشاركة، ثم إنشاء رمز QR. يمكن مسحه بكاميرا جهاز آخر. استخدم هاتفك الخاص لهذه المقارنة واقرأ معاينة الوجهة قبل فتح الرابط. اتبع الخيارات الموجودة فعلاً في متصفحك. تحمل صورة QR رابطاً فقط؛ فهي ليست دليلاً على موثوقية الصفحة ولا رمز تفعيل لخدمة IPTV."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "أعد قراءة الخطة على الهاتف",
+          "paragraphs": [
+            "بعد فتح الصفحة العامة، تحقق هل الخطة من Opplex أم Filex ثم أعد قراءة المدة والشروط الحالية. المشاركة لا تحجز السعر ولا تؤكد الطلب أو الدفع أو التفعيل. شراء المشغل تكلفة منفصلة، وأي حد اتصالات غير مذكور لدى Filex ما زال يحتاج إلى تأكيد. لا تضع بيانات الدخول أو روابط الطلبات الخاصة في الصور المشتركة، ولا تكرر الدفع لاختبار رمز QR."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription QR कोड: सार्वजनिक प्लान पेज अपने फोन पर खोलें",
+      "excerpt": "Chrome से जाँचा हुआ सार्वजनिक प्लान पेज अपने फोन पर लाएँ। QR लिंक को सक्रियण, निजी ऑर्डर, प्लेयर शुल्क और Opplex या Filex के भुगतान की स्थिति से अलग रखें।",
+      "seo_title": "IPTV Subscription QR कोड: सार्वजनिक प्लान पेज अपने फोन पर खोलें",
+      "seo_description": "Chrome से जाँचा हुआ सार्वजनिक प्लान पेज अपने फोन पर लाएँ। QR लिंक को सक्रियण, निजी ऑर्डर, प्लेयर शुल्क और Opplex या Filex के भुगतान की स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहले सार्वजनिक पेज चुनें",
+          "paragraphs": [
+            "IPTV Subscription QR कोड सार्वजनिक प्लान की तुलना कंप्यूटर से फोन पर ले जाने में मदद कर सकता है। पहले वेबसाइट का पता, दिखाया प्रदाता, अवधि और मुद्रा जाँचें। ऐसा पेज चुनें जो सबके पढ़ने के लिए हो। न चेकआउट पेज का कोड बनाएँ, न खाते, भुगतान या निजी ऑर्डर के पेज का; साझा तस्वीर उसमें मौजूद पता उजागर कर सकती है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chrome का बताया तरीका इस्तेमाल करें",
+          "paragraphs": [
+            "Google कंप्यूटर पर पेज Chrome में खोलकर ज़्यादा, फिर कास्ट, सेव और शेयर वाला भाग और QR कोड बनाने का विकल्प चुनने को बताता है। दूसरे डिवाइस के कैमरे से उसे स्कैन कर सकते हैं। इस तुलना के लिए अपना फोन इस्तेमाल करें और खोलने से पहले गंतव्य का पूर्वावलोकन पढ़ें। अपने ब्राउज़र में मौजूद विकल्प अपनाएँ। QR तस्वीर केवल लिंक पहुँचाती है; वह न पेज की विश्वसनीयता का प्रमाण है और न IPTV सक्रिय करने का कोड।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "फोन पर प्लान फिर पढ़ें",
+          "paragraphs": [
+            "सार्वजनिक पेज खोलने के बाद पुष्टि करें कि प्लान Opplex है या Filex और अवधि तथा मौजूदा शर्तें फिर पढ़ें। पेज साझा करना न कीमत सुरक्षित करता है और न ऑर्डर, भुगतान या सक्रियण की पुष्टि करता है। प्लेयर की खरीद अलग खर्च है; Filex की अघोषित कनेक्शन सीमा अभी भी पूछनी होगी। साझा तस्वीर में न लॉगिन जानकारी दें, न निजी ऑर्डर लिंक; QR जाँचने के लिए भुगतान दोबारा न करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: share a page with a QR code",
+      "url": "https://support.google.com/chrome/answer/10051760?hl=en"
+    }
+  ]
+}
