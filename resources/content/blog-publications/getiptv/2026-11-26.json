@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-26",
+  "topic": "Read model-specific Chromecast Voice Remote LED patterns and preceding actions separately from Get IPTV player symptoms, Opplex or Filex access and order/setup state.",
+  "primary_keyword": "Get IPTV remote lights",
+  "slug": "getiptv-chromecast-voice-remote-lights-and-preceding-actions",
+  "translations": {
+    "en": {
+      "title": "Get IPTV remote lights: read the Chromecast Voice Remote pattern",
+      "excerpt": "Identify the remote model and what happened before its light appeared. Distinguish Chromecast Voice Remote LED patterns from player behaviour, Opplex or Filex access and order state.",
+      "seo_title": "Get IPTV remote lights: read the Chromecast Voice Remote pattern",
+      "seo_description": "Identify the remote model and what happened before its light appeared. Distinguish Chromecast Voice Remote LED patterns from player behaviour, Opplex or Filex access and order state.",
+      "sections": [
+        {
+          "heading": "Identify the remote before the light",
+          "paragraphs": [
+            "A Get IPTV remote lights check starts with the handset model, not a different viewing plan. Google publishes separate LED tables for Chromecast Voice Remote and Google TV Streamer Voice Remote. Use the matching table; do not confuse a light on the remote with one on the streaming device. For a Chromecast Voice Remote, note the action immediately before the light and whether it flashes, pulses or stays steady."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the Chromecast pattern in context",
+          "paragraphs": [
+            "Google describes two quick flashes when batteries are installed and also after successful pairing; the latter follows a pulsing light. A slow pulse means readiness to pair and may indicate that an attempted pairing did not succeed. A steady light can indicate microphone use or a firmware update. Google explicitly says the microphone is not open during firmware updates. One light alone therefore cannot identify every cause. Do not hold reset buttons merely to reproduce a pattern."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the observation separate from service access",
+          "paragraphs": [
+            "Record the model, preceding action and light sequence, then describe any remaining player symptom separately. An LED does not establish subscription expiry or confirm activation. Check the selected Opplex or Filex provider, duration and recorded Get IPTV order/setup state independently. Player costs remain separate from service payment, and an unstated Filex connection allowance needs confirmation. Do not reset the television, erase player data or repeat payment just to interpret a remote light."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Luces del mando de Get IPTV: interpreta el patrón de Chromecast Voice Remote",
+      "excerpt": "Identifica el modelo del mando y qué ocurrió antes de encenderse la luz. Distingue sus patrones del reproductor, del acceso Opplex o Filex y del estado del pedido.",
+      "seo_title": "Luces del mando de Get IPTV: interpreta el patrón de Chromecast Voice Remote",
+      "seo_description": "Identifica el modelo del mando y qué ocurrió antes de encenderse la luz. Distingue sus patrones del reproductor, del acceso Opplex o Filex y del estado del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica el mando antes de la luz",
+          "paragraphs": [
+            "La revisión de las luces del mando para Get IPTV empieza por el modelo, no por otro plan. Google publica tablas LED distintas para Chromecast Voice Remote y Google TV Streamer Voice Remote. Usa la correspondiente y no confundas la luz del mando con la del dispositivo de streaming. En Chromecast Voice Remote, anota la acción anterior y si la luz parpadea, pulsa o permanece fija."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Interpreta el patrón de Chromecast en contexto",
+          "paragraphs": [
+            "Google describe dos destellos rápidos al instalar las pilas y también tras emparejar correctamente; en este último caso, antes había una luz pulsante. Una pulsación lenta indica que está listo para emparejar y puede señalar un intento fallido. Una luz fija puede indicar uso del micrófono o actualización del firmware. Google aclara que el micrófono no está abierto durante las actualizaciones. Una luz aislada no identifica todas las causas. No mantengas botones de restablecimiento pulsados solo para reproducir el patrón."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa la observación del acceso al servicio",
+          "paragraphs": [
+            "Anota el modelo, la acción anterior y la secuencia; describe aparte cualquier síntoma del reproductor. Un LED no prueba caducidad ni confirma activación. Revisa por separado Opplex o Filex, la duración y el estado registrado del pedido y la configuración de Get IPTV. El coste del reproductor es distinto del servicio; un límite Filex no indicado requiere confirmación. No restablezcas el televisor, borres datos ni repitas pagos solo para interpretar una luz."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Voyants de télécommande Get IPTV : lire ceux de Chromecast Voice Remote",
+      "excerpt": "Identifiez le modèle et l’action précédant le voyant. Distinguez les signaux de Chromecast Voice Remote du lecteur, de l’accès Opplex ou Filex et de l’état de commande.",
+      "seo_title": "Voyants de télécommande Get IPTV : lire ceux de Chromecast Voice Remote",
+      "seo_description": "Identifiez le modèle et l’action précédant le voyant. Distinguez les signaux de Chromecast Voice Remote du lecteur, de l’accès Opplex ou Filex et de l’état de commande.",
+      "sections": [
+        {
+          "heading": "Identifiez la télécommande avant le voyant",
+          "paragraphs": [
+            "La vérification des voyants pour Get IPTV commence par le modèle, pas par un autre forfait. Google fournit des tableaux distincts pour Chromecast Voice Remote et Google TV Streamer Voice Remote. Utilisez le bon ; ne confondez pas le voyant de la télécommande avec celui de l’appareil de streaming. Sur Chromecast Voice Remote, notez l’action précédente et si la lumière clignote, pulse ou reste fixe."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez le signal Chromecast dans son contexte",
+          "paragraphs": [
+            "Google décrit deux clignotements rapides lors de l’installation des piles et après une association réussie ; dans ce dernier cas, la lumière pulsait auparavant. Une pulsation lente indique la disponibilité pour l’association et peut signaler un essai échoué. Un voyant fixe peut correspondre au microphone ou à une mise à jour du micrologiciel. Google précise que le microphone n’est pas ouvert pendant les mises à jour. Un seul voyant ne permet donc pas de tout conclure. Ne maintenez pas de boutons de réinitialisation pour reproduire un signal."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparez l’observation de l’accès au service",
+          "paragraphs": [
+            "Notez modèle, action précédente et séquence, puis décrivez séparément le symptôme du lecteur. Un voyant ne prouve pas l’expiration et ne confirme pas l’activation. Vérifiez séparément Opplex ou Filex, la durée et l’état enregistré de la commande et de la configuration Get IPTV. Le lecteur et le service ont des coûts distincts ; une limite Filex non précisée reste à confirmer. Ne réinitialisez pas le téléviseur, n’effacez pas les données et ne repayez pas pour interpréter un voyant."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Spie del telecomando Get IPTV: leggi il segnale di Chromecast Voice Remote",
+      "excerpt": "Identifica modello e azione precedente alla spia. Distingui i segnali di Chromecast Voice Remote dal lettore, dall’accesso Opplex o Filex e dallo stato dell’ordine.",
+      "seo_title": "Spie del telecomando Get IPTV: leggi il segnale di Chromecast Voice Remote",
+      "seo_description": "Identifica modello e azione precedente alla spia. Distingui i segnali di Chromecast Voice Remote dal lettore, dall’accesso Opplex o Filex e dallo stato dell’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica il telecomando prima della spia",
+          "paragraphs": [
+            "Il controllo delle spie per Get IPTV inizia dal modello, non da un piano diverso. Google pubblica tabelle LED separate per Chromecast Voice Remote e Google TV Streamer Voice Remote. Usa quella corretta; non confondere la spia del telecomando con quella del dispositivo di streaming. Per Chromecast Voice Remote annota l’azione precedente e se la luce lampeggia, pulsa o resta fissa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi il segnale Chromecast nel contesto",
+          "paragraphs": [
+            "Google descrive due lampeggi rapidi quando si inseriscono le batterie e dopo un abbinamento riuscito; nel secondo caso la luce prima pulsava. Una pulsazione lenta indica disponibilità all’abbinamento e può segnalare un tentativo non riuscito. Una luce fissa può indicare uso del microfono o aggiornamento del firmware. Google precisa che il microfono non è aperto durante gli aggiornamenti. Una sola spia non identifica quindi ogni causa. Non tenere premuti pulsanti di ripristino solo per riprodurre il segnale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa l’osservazione dall’accesso al servizio",
+          "paragraphs": [
+            "Registra modello, azione precedente e sequenza, poi descrivi separatamente il problema del lettore. Un LED non dimostra scadenza né conferma attivazione. Controlla separatamente Opplex o Filex, durata e stato registrato dell’ordine e della configurazione Get IPTV. Il lettore ha costi distinti dal servizio; un limite Filex non dichiarato richiede conferma. Non ripristinare il televisore, cancellare dati o ripetere il pagamento solo per interpretare una spia."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-afstandsbedieningslampjes: lees het Chromecast Voice Remote-patroon",
+      "excerpt": "Bepaal het model en wat er vóór het lampje gebeurde. Onderscheid Chromecast Voice Remote-signalen van de speler, Opplex- of Filex-toegang en de bestelstatus.",
+      "seo_title": "Get IPTV-afstandsbedieningslampjes: lees het Chromecast Voice Remote-patroon",
+      "seo_description": "Bepaal het model en wat er vóór het lampje gebeurde. Onderscheid Chromecast Voice Remote-signalen van de speler, Opplex- of Filex-toegang en de bestelstatus.",
+      "sections": [
+        {
+          "heading": "Bepaal eerst welke afstandsbediening je hebt",
+          "paragraphs": [
+            "Een controle van afstandsbedieningslampjes voor Get IPTV begint bij het model, niet bij een ander abonnement. Google publiceert aparte ledtabellen voor Chromecast Voice Remote en Google TV Streamer Voice Remote. Gebruik de juiste en verwar een lampje op de afstandsbediening niet met dat op het streamingapparaat. Noteer bij Chromecast Voice Remote de voorafgaande handeling en of het lampje knippert, pulseert of blijft branden."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees het Chromecast-patroon in context",
+          "paragraphs": [
+            "Google beschrijft twee snelle flitsen bij het plaatsen van batterijen en na geslaagde koppeling; bij het laatste pulseerde het lampje eerst. Langzaam pulseren betekent gereed voor koppelen en kan wijzen op een mislukte poging. Continu branden kan microfoongebruik of een firmware-update aangeven. Google zegt uitdrukkelijk dat de microfoon tijdens updates niet openstaat. Eén lampje verklaart dus niet iedere oorzaak. Houd geen resetknoppen ingedrukt om alleen een patroon na te bootsen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd waarneming en servicetoegang apart",
+          "paragraphs": [
+            "Noteer model, voorafgaande handeling en lichtvolgorde en beschrijf het resterende spelerprobleem apart. Een led bewijst geen verlopen abonnement of activering. Controleer Opplex of Filex, looptijd en vastgelegde bestel- en instelstatus van Get IPTV afzonderlijk. Spelerkosten staan los van servicebetaling; een niet genoemde Filex-verbindingslimiet vereist bevestiging. Reset de televisie niet, wis geen spelergegevens en betaal niet opnieuw om een lampje uit te leggen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Luzes do comando Get IPTV: leia o padrão do Chromecast Voice Remote",
+      "excerpt": "Identifique o modelo e a ação anterior à luz. Distinga os sinais do Chromecast Voice Remote do leitor, do acesso Opplex ou Filex e do estado do pedido.",
+      "seo_title": "Luzes do comando Get IPTV: leia o padrão do Chromecast Voice Remote",
+      "seo_description": "Identifique o modelo e a ação anterior à luz. Distinga os sinais do Chromecast Voice Remote do leitor, do acesso Opplex ou Filex e do estado do pedido.",
+      "sections": [
+        {
+          "heading": "Identifique o comando antes da luz",
+          "paragraphs": [
+            "A verificação das luzes do comando para Get IPTV começa pelo modelo, não por outro plano. A Google publica tabelas LED separadas para Chromecast Voice Remote e Google TV Streamer Voice Remote. Use a correspondente; não confunda a luz do comando com a do aparelho de streaming. No Chromecast Voice Remote, anote a ação anterior e se a luz pisca, pulsa ou fica acesa."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o padrão Chromecast no contexto",
+          "paragraphs": [
+            "A Google descreve dois sinais rápidos ao colocar pilhas e após um emparelhamento bem-sucedido; neste último caso, a luz pulsava antes. Uma pulsação lenta indica disponibilidade para emparelhar e pode indicar uma tentativa falhada. Uma luz fixa pode indicar utilização do microfone ou atualização de firmware. A Google esclarece que o microfone não está aberto durante atualizações. Uma luz isolada não identifica todas as causas. Não mantenha botões de reposição premidos apenas para reproduzir um padrão."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe a observação do acesso ao serviço",
+          "paragraphs": [
+            "Registe modelo, ação anterior e sequência e descreva separadamente o sintoma restante do leitor. Um LED não prova que a subscrição expirou nem confirma ativação. Verifique separadamente Opplex ou Filex, duração e estado registado do pedido e da configuração Get IPTV. O leitor tem custos distintos do serviço; um limite Filex não indicado exige confirmação. Não reponha a televisão, apague dados do leitor ou repita pagamentos apenas para interpretar uma luz."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Индикаторы пульта Get IPTV: различайте сигналы Chromecast Voice Remote",
+      "excerpt": "Уточните модель пульта и действие перед появлением сигнала. Отличайте индикаторы Chromecast Voice Remote от работы плеера, доступа Opplex или Filex и состояния заказа.",
+      "seo_title": "Индикаторы пульта Get IPTV: различайте сигналы Chromecast Voice Remote",
+      "seo_description": "Уточните модель пульта и действие перед появлением сигнала. Отличайте индикаторы Chromecast Voice Remote от работы плеера, доступа Opplex или Filex и состояния заказа.",
+      "sections": [
+        {
+          "heading": "Сначала определите модель пульта",
+          "paragraphs": [
+            "Проверка индикаторов пульта для Get IPTV начинается с модели, а не с другого тарифа. Google публикует отдельные таблицы для Chromecast Voice Remote и Google TV Streamer Voice Remote. Выберите подходящую; не путайте светодиод пульта с индикатором самого устройства. Для Chromecast Voice Remote запишите предыдущее действие и характер света: мигание, пульсация или постоянное свечение."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Учитывайте контекст сигнала Chromecast",
+          "paragraphs": [
+            "Google описывает две быстрые вспышки при установке батареек и после успешного сопряжения; во втором случае перед ними была пульсация. Медленная пульсация означает готовность к сопряжению и может указывать на неудачную попытку. Постоянный свет бывает при работе микрофона или обновлении прошивки. Google прямо отмечает, что во время обновления микрофон не открыт. Один сигнал поэтому не определяет любую причину. Не удерживайте кнопки сброса лишь ради воспроизведения сигнала."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте наблюдение от доступа к услуге",
+          "paragraphs": [
+            "Запишите модель, предыдущее действие и последовательность сигнала; оставшийся симптом плеера опишите отдельно. Индикатор не доказывает окончания подписки и не подтверждает активацию. Независимо проверьте Opplex или Filex, срок и записанное состояние заказа и настройки Get IPTV. Плата за плеер отличается от оплаты услуги; неуказанный лимит подключений Filex нужно подтвердить. Не сбрасывайте телевизор, не стирайте данные плеера и не повторяйте оплату ради объяснения индикатора."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کے ریموٹ کی روشنیاں: Chromecast Voice Remote کا انداز پڑھیں",
+      "excerpt": "ریموٹ کا ماڈل اور روشنی سے پہلے ہونے والا عمل پہچانیں۔ Chromecast Voice Remote کے اشارے پلیئر، Opplex یا Filex کی رسائی اور آرڈر کی حالت سے الگ رکھیں۔",
+      "seo_title": "Get IPTV کے ریموٹ کی روشنیاں: Chromecast Voice Remote کا انداز پڑھیں",
+      "seo_description": "ریموٹ کا ماڈل اور روشنی سے پہلے ہونے والا عمل پہچانیں۔ Chromecast Voice Remote کے اشارے پلیئر، Opplex یا Filex کی رسائی اور آرڈر کی حالت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "روشنی سے پہلے ریموٹ پہچانیں",
+          "paragraphs": [
+            "Get IPTV کے ریموٹ کی روشنیوں کی جانچ ماڈل سے شروع ہوتی ہے، دوسرے پلان سے نہیں۔ Google، Chromecast Voice Remote اور Google TV Streamer Voice Remote کے لیے الگ جدول دیتا ہے۔ درست جدول دیکھیں؛ ریموٹ کی روشنی کو اسٹریمنگ آلے کی روشنی نہ سمجھیں۔ Chromecast Voice Remote میں روشنی سے فوراً پہلے کا عمل لکھیں اور دیکھیں کہ وہ ٹمٹماتی ہے، آہستہ دھڑکتی ہے یا مسلسل جلتی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chromecast کا انداز سیاق کے ساتھ پڑھیں",
+          "paragraphs": [
+            "Google کے مطابق بیٹری لگنے پر دو تیز چمکیں آتی ہیں اور کامیاب جوڑ کے بعد بھی؛ دوسری صورت میں پہلے روشنی دھڑک رہی ہوتی ہے۔ آہستہ دھڑکنا جوڑنے کی تیاری ہے اور ناکام کوشش کا اشارہ بھی ہو سکتا ہے۔ مسلسل روشنی مائیک کے استعمال یا فرم ویئر اپ ڈیٹ کی وجہ سے ہو سکتی ہے۔ Google واضح کرتا ہے کہ اپ ڈیٹ کے دوران مائیک کھلا نہیں ہوتا۔ صرف ایک روشنی ہر وجہ نہیں بتاتی۔ محض انداز دہرانے کے لیے ری سیٹ کے بٹن دبائے نہ رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "مشاہدہ اور سروس کی رسائی الگ رکھیں",
+          "paragraphs": [
+            "ماڈل، پچھلا عمل اور روشنی کی ترتیب لکھیں؛ پلیئر کی باقی علامت الگ بتائیں۔ LED نہ سبسکرپشن ختم ہونے کا ثبوت ہے اور نہ فعال ہونے کی تصدیق۔ Opplex یا Filex فراہم کنندہ، مدت اور Get IPTV آرڈر اور سیٹ اپ کی درج حالت الگ دیکھیں۔ پلیئر کی فیس سروس کی ادائیگی سے الگ ہے؛ Filex کے غیر واضح کنکشن کی حد کی تصدیق ضروری ہے۔ صرف روشنی سمجھنے کے لیے نہ ٹی وی ری سیٹ کریں، نہ پلیئر کا ڈیٹا مٹائیں اور نہ دوبارہ ادائیگی کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "أضواء جهاز تحكم Get IPTV: اقرأ نمط Chromecast Voice Remote",
+      "excerpt": "حدّد طراز جهاز التحكم والفعل السابق للضوء. افصل إشارات Chromecast Voice Remote عن سلوك المشغّل والوصول عبر Opplex أو Filex وحالة الطلب.",
+      "seo_title": "أضواء جهاز تحكم Get IPTV: اقرأ نمط Chromecast Voice Remote",
+      "seo_description": "حدّد طراز جهاز التحكم والفعل السابق للضوء. افصل إشارات Chromecast Voice Remote عن سلوك المشغّل والوصول عبر Opplex أو Filex وحالة الطلب.",
+      "sections": [
+        {
+          "heading": "حدّد جهاز التحكم قبل تفسير الضوء",
+          "paragraphs": [
+            "يبدأ فحص أضواء جهاز تحكم Get IPTV بتحديد الطراز، لا بخطة مشاهدة أخرى. تنشر Google جدولين منفصلين لجهازي Chromecast Voice Remote وGoogle TV Streamer Voice Remote. استخدم الجدول المطابق ولا تخلط ضوء جهاز التحكم بضوء جهاز البث نفسه. في Chromecast Voice Remote دوّن الفعل السابق مباشرة وهل الضوء يومض أم ينبض أم يبقى ثابتاً."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ نمط Chromecast ضمن سياقه",
+          "paragraphs": [
+            "تصف Google ومضتين سريعتين عند تركيب البطاريات وكذلك بعد نجاح الاقتران؛ وفي الحالة الثانية يسبقهما ضوء نابض. النبض البطيء يعني الاستعداد للاقتران وقد يدل على محاولة لم تنجح. قد يشير الضوء الثابت إلى استخدام الميكروفون أو تحديث البرنامج الثابت. وتوضح Google أن الميكروفون ليس مفتوحاً أثناء التحديث. لذلك لا يكشف ضوء واحد كل الأسباب. لا تضغط أزرار إعادة الضبط مطولاً لمجرد تكرار نمط الضوء."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الملاحظة عن الوصول إلى الخدمة",
+          "paragraphs": [
+            "سجّل الطراز والفعل السابق وتسلسل الضوء، ثم صف عَرَض المشغّل المتبقي بشكل مستقل. لا يثبت المؤشر انتهاء الاشتراك ولا يؤكد التفعيل. تحقق منفصلاً من مزوّد Opplex أو Filex والمدة وحالة طلب Get IPTV وإعداده المسجلة. رسوم المشغّل منفصلة عن دفع الخدمة، وحد اتصالات Filex غير المعلن يحتاج تأكيداً. لا تعِد ضبط التلفاز ولا تمسح بيانات المشغّل ولا تكرر الدفع لمجرد تفسير ضوء جهاز التحكم."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV रिमोट की लाइट: Chromecast Voice Remote का संकेत पढ़ें",
+      "excerpt": "रिमोट मॉडल और लाइट से पहले हुआ काम पहचानें। Chromecast Voice Remote के संकेतों को प्लेयर, Opplex या Filex पहुँच और ऑर्डर स्थिति से अलग रखें।",
+      "seo_title": "Get IPTV रिमोट की लाइट: Chromecast Voice Remote का संकेत पढ़ें",
+      "seo_description": "रिमोट मॉडल और लाइट से पहले हुआ काम पहचानें। Chromecast Voice Remote के संकेतों को प्लेयर, Opplex या Filex पहुँच और ऑर्डर स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "लाइट से पहले रिमोट पहचानें",
+          "paragraphs": [
+            "Get IPTV रिमोट की लाइट की जाँच मॉडल से शुरू होती है, दूसरे प्लान से नहीं। Google, Chromecast Voice Remote और Google TV Streamer Voice Remote के लिए अलग तालिकाएँ देता है। सही तालिका लें; रिमोट की लाइट को स्ट्रीमिंग डिवाइस की लाइट न समझें। Chromecast Voice Remote में लाइट से ठीक पहले का काम और उसका झपकना, धड़कना या लगातार जलना लिखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Chromecast का संकेत संदर्भ के साथ पढ़ें",
+          "paragraphs": [
+            "Google के अनुसार बैटरी लगाने पर दो तेज़ चमकें आती हैं और सफल पेयरिंग के बाद भी; दूसरी स्थिति में पहले लाइट धड़क रही होती है। धीमी धड़कन पेयरिंग के लिए तैयार होने का संकेत है और असफल प्रयास भी बता सकती है। लगातार लाइट माइक्रोफ़ोन उपयोग या फ़र्मवेयर अपडेट की वजह से हो सकती है। Google साफ़ करता है कि अपडेट के दौरान माइक खुला नहीं होता। अकेली लाइट हर कारण नहीं बताती। केवल पैटर्न दोहराने के लिए रीसेट बटन दबाए न रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अवलोकन और सेवा की पहुँच अलग रखें",
+          "paragraphs": [
+            "मॉडल, पहले का काम और लाइट क्रम लिखें; प्लेयर की बाकी समस्या अलग बताएँ। LED न सदस्यता समाप्त होने का प्रमाण है और न सक्रियण की पुष्टि। Opplex या Filex प्रदाता, अवधि और Get IPTV ऑर्डर तथा सेटअप की दर्ज स्थिति अलग जाँचें। प्लेयर शुल्क सेवा के भुगतान से अलग है; Filex की अघोषित कनेक्शन सीमा पूछनी होगी। केवल लाइट समझने के लिए न टीवी रीसेट करें, न प्लेयर डेटा मिटाएँ और न भुगतान दोहराएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help: model-specific Voice Remote LED states",
+      "url": "https://support.google.com/chromecast/answer/10089333?hl=en"
+    }
+  ]
+}

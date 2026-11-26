@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-26",
+  "topic": "Inspect VLC for Android AudioTrack and OpenSL ES audio output with its documented passthrough dependency, separately from Trex IPTV account access and universal playback-fix claims.",
+  "primary_keyword": "Trex IPTV audio output",
+  "slug": "trex-vlc-android-audio-output-api-and-passthrough-check",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV audio output: read VLC’s AudioTrack and OpenSL ES choices",
+      "excerpt": "Read VLC for Android’s documented audio-output choices before changing sound. Keep passthrough dependencies, one viewing session and provider access separate.",
+      "seo_title": "Trex IPTV audio output: read VLC’s AudioTrack and OpenSL ES choices",
+      "seo_description": "Read VLC for Android’s documented audio-output choices before changing sound. Keep passthrough dependencies, one viewing session and provider access separate.",
+      "sections": [
+        {
+          "heading": "Identify the player and listening equipment",
+          "paragraphs": [
+            "A Trex IPTV audio output check starts with the actual VLC for Android installation, its version and connected listening equipment. Note whether the picture continues without sound or the entire video stops. Keep media volume comfortable and use one permitted clip. An output choice belongs to the player’s sound-rendering path; it is not a provider sign-in, a new subscription or proof of a service-wide fault."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the output and its dependency",
+          "paragraphs": [
+            "VideoLAN’s Audio guide documents an Advanced Audio output choice with AudioTrack and OpenSL ES. AudioTrack uses Android’s built-in audio processing; OpenSL ES is another documented audio API. Read and record the existing selection first. The guide also states that digital audio passthrough requires AudioTrack, so do not assume both choices support that feature in the same way. Leave other processing options unchanged."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare only a suitable output preference",
+          "paragraphs": [
+            "If passthrough is in use, keep its required output. Otherwise, if the owner requests a comparison and the version offers both choices, use the same clip and equipment and change only the output preference. Note the result and restore the earlier choice if it does not help. No API is a universal fix. Trex IPTV 8K permits one simultaneous connection; keep one viewing session. Report version, accessory and selections without credentials. Do not erase player data or buy another plan for this check."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Salida de audio de Trex IPTV: revisa AudioTrack y OpenSL ES en VLC",
+      "excerpt": "Lee las opciones de salida de audio documentadas de VLC para Android. Separa la dependencia del paso directo, una sesión de reproducción y el acceso al proveedor.",
+      "seo_title": "Salida de audio de Trex IPTV: revisa AudioTrack y OpenSL ES en VLC",
+      "seo_description": "Lee las opciones de salida de audio documentadas de VLC para Android. Separa la dependencia del paso directo, una sesión de reproducción y el acceso al proveedor.",
+      "sections": [
+        {
+          "heading": "Identifica el reproductor y el equipo de escucha",
+          "paragraphs": [
+            "La revisión de la salida de audio de Trex IPTV empieza por la instalación real de VLC para Android, su versión y el equipo conectado. Anota si la imagen sigue sin sonido o si todo el vídeo se detiene. Mantén un volumen cómodo y utiliza un vídeo autorizado. La salida pertenece al procesamiento de sonido del reproductor; no es un inicio de sesión del proveedor, una suscripción nueva ni prueba de una avería general del servicio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la salida y su dependencia",
+          "paragraphs": [
+            "La guía de audio de VideoLAN documenta la opción avanzada Salida de audio con AudioTrack y OpenSL ES. AudioTrack utiliza el procesamiento integrado de Android; OpenSL ES es otra API de audio documentada. Lee y registra primero la selección actual. La guía también indica que el paso directo de audio digital requiere AudioTrack; no supongas que ambas opciones admiten esa función de igual manera. Mantén los demás ajustes de procesamiento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara solo una preferencia adecuada",
+          "paragraphs": [
+            "Si utilizas paso directo, conserva su salida necesaria. En caso contrario, si el propietario pide comparar y la versión ofrece ambas opciones, utiliza el mismo vídeo y equipo y cambia solo la salida. Anota el resultado y restaura la opción anterior si no ayuda. Ninguna API soluciona todos los casos. Trex IPTV 8K permite una conexión simultánea; mantén una sesión. Comunica versión, accesorio y elecciones sin credenciales. No borres datos del reproductor ni compres otro plan para esta comprobación."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Sortie audio Trex IPTV : lire les choix AudioTrack et OpenSL ES de VLC",
+      "excerpt": "Lisez les sorties audio documentées de VLC pour Android avant de modifier le son. Distinguez les contraintes du transfert direct, une session et l’accès au fournisseur.",
+      "seo_title": "Sortie audio Trex IPTV : lire les choix AudioTrack et OpenSL ES de VLC",
+      "seo_description": "Lisez les sorties audio documentées de VLC pour Android avant de modifier le son. Distinguez les contraintes du transfert direct, une session et l’accès au fournisseur.",
+      "sections": [
+        {
+          "heading": "Identifier le lecteur et le matériel d’écoute",
+          "paragraphs": [
+            "Le contrôle de la sortie audio Trex IPTV commence par l’installation réelle de VLC pour Android, sa version et le matériel connecté. Notez si l’image continue sans son ou si toute la vidéo s’arrête. Gardez un volume confortable et utilisez un extrait autorisé. Le choix de sortie relève du traitement sonore du lecteur ; il ne constitue ni une connexion au fournisseur, ni un nouvel abonnement, ni la preuve d’une panne générale."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la sortie et sa dépendance",
+          "paragraphs": [
+            "Le guide audio de VideoLAN documente le choix avancé Sortie audio avec AudioTrack et OpenSL ES. AudioTrack utilise le traitement intégré d’Android ; OpenSL ES est une autre API audio documentée. Lisez et notez d’abord la sélection actuelle. Le guide précise aussi que le transfert direct audio numérique exige AudioTrack : ne supposez pas que les deux choix prennent cette fonction en charge de la même manière. Conservez les autres options de traitement."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer seulement une préférence adaptée",
+          "paragraphs": [
+            "Si le transfert direct est utilisé, gardez la sortie qu’il exige. Sinon, si le propriétaire souhaite comparer et que la version propose les deux choix, utilisez le même extrait et matériel et ne changez que la sortie. Notez le résultat et rétablissez l’ancien choix si cela n’aide pas. Aucune API ne règle tous les cas. Trex IPTV 8K autorise une connexion simultanée ; gardez une session. Indiquez version, accessoire et choix sans identifiants. N’effacez pas les données et n’achetez pas un autre abonnement pour ce contrôle."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Uscita audio Trex IPTV: leggi le opzioni AudioTrack e OpenSL ES di VLC",
+      "excerpt": "Leggi le uscite audio documentate di VLC per Android prima di cambiare il suono. Separa requisiti del passthrough, singola sessione e accesso al fornitore.",
+      "seo_title": "Uscita audio Trex IPTV: leggi le opzioni AudioTrack e OpenSL ES di VLC",
+      "seo_description": "Leggi le uscite audio documentate di VLC per Android prima di cambiare il suono. Separa requisiti del passthrough, singola sessione e accesso al fornitore.",
+      "sections": [
+        {
+          "heading": "Identifica il lettore e l’apparecchiatura audio",
+          "paragraphs": [
+            "La verifica dell’uscita audio Trex IPTV parte dall’installazione effettiva di VLC per Android, dalla versione e dall’apparecchiatura collegata. Annota se l’immagine continua senza suono oppure si ferma tutto il video. Mantieni un volume confortevole e usa una clip autorizzata. La scelta dell’uscita riguarda il percorso audio del lettore; non è un accesso al fornitore, un nuovo abbonamento o la prova di un guasto generale del servizio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’uscita e il relativo requisito",
+          "paragraphs": [
+            "La guida audio di VideoLAN documenta l’opzione avanzata Uscita audio con AudioTrack e OpenSL ES. AudioTrack usa l’elaborazione integrata di Android; OpenSL ES è un’altra API audio documentata. Leggi e annota prima la scelta attuale. La guida precisa anche che il passthrough audio digitale richiede AudioTrack: non presumere che entrambe le opzioni supportino allo stesso modo questa funzione. Mantieni le altre impostazioni di elaborazione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta solo una preferenza adatta",
+          "paragraphs": [
+            "Se usi il passthrough, conserva l’uscita richiesta. Altrimenti, se il proprietario desidera confrontare e la versione offre entrambe le opzioni, usa la stessa clip e apparecchiatura cambiando solo l’uscita. Annota il risultato e ripristina la scelta precedente se non aiuta. Nessuna API risolve ogni caso. Trex IPTV 8K consente una connessione simultanea; mantieni una sessione. Comunica versione, accessorio e scelte senza credenziali. Non cancellare dati del lettore e non acquistare un altro piano per questa verifica."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-audio-uitvoer: lees de AudioTrack- en OpenSL ES-keuzes van VLC",
+      "excerpt": "Lees de gedocumenteerde audio-uitvoer van VLC voor Android voordat je geluid wijzigt. Onderscheid passthroughvereisten, één kijksessie en toegang bij de aanbieder.",
+      "seo_title": "Trex IPTV-audio-uitvoer: lees de AudioTrack- en OpenSL ES-keuzes van VLC",
+      "seo_description": "Lees de gedocumenteerde audio-uitvoer van VLC voor Android voordat je geluid wijzigt. Onderscheid passthroughvereisten, één kijksessie en toegang bij de aanbieder.",
+      "sections": [
+        {
+          "heading": "Bepaal de speler en de luisterapparatuur",
+          "paragraphs": [
+            "Een controle van Trex IPTV-audio-uitvoer begint bij de echte VLC voor Android-installatie, de versie en aangesloten luisterapparatuur. Noteer of het beeld zonder geluid doorgaat of de hele video stopt. Houd het volume comfortabel en gebruik één toegestane clip. De uitvoerkeuze hoort bij het geluidspad van de speler; het is geen aanmelding bij de aanbieder, nieuw abonnement of bewijs van een storing voor alle kijkers."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de uitvoer en de bijbehorende voorwaarde",
+          "paragraphs": [
+            "De audiogids van VideoLAN beschrijft de geavanceerde keuze Audio-uitvoer met AudioTrack en OpenSL ES. AudioTrack gebruikt de ingebouwde Android-audioverwerking; OpenSL ES is een andere gedocumenteerde audio-API. Lees en noteer eerst de huidige keuze. De gids zegt ook dat digitale audiopassthrough AudioTrack vereist. Neem dus niet aan dat beide keuzes die functie hetzelfde ondersteunen. Laat de overige verwerkingsopties staan."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk alleen een geschikte uitvoervoorkeur",
+          "paragraphs": [
+            "Gebruik je passthrough, behoud dan de vereiste uitvoer. Anders kun je, als de eigenaar wil vergelijken en de versie beide keuzes biedt, dezelfde clip en apparatuur gebruiken en alleen de uitvoer wijzigen. Noteer het resultaat en herstel de eerdere keuze als het niet helpt. Geen API lost alles op. Trex IPTV 8K staat één gelijktijdige verbinding toe; houd één kijksessie. Meld versie, accessoire en keuzes zonder inloggegevens. Wis geen spelergegevens en koop geen ander abonnement voor deze controle."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Saída de áudio Trex IPTV: leia as opções AudioTrack e OpenSL ES do VLC",
+      "excerpt": "Leia as saídas de áudio documentadas do VLC para Android antes de alterar o som. Separe requisitos de passagem direta, uma sessão e acesso ao fornecedor.",
+      "seo_title": "Saída de áudio Trex IPTV: leia as opções AudioTrack e OpenSL ES do VLC",
+      "seo_description": "Leia as saídas de áudio documentadas do VLC para Android antes de alterar o som. Separe requisitos de passagem direta, uma sessão e acesso ao fornecedor.",
+      "sections": [
+        {
+          "heading": "Identifique o leitor e o equipamento de som",
+          "paragraphs": [
+            "A verificação da saída de áudio Trex IPTV começa pela instalação real do VLC para Android, versão e equipamento ligado. Registe se a imagem continua sem som ou se todo o vídeo para. Mantenha um volume confortável e utilize um vídeo autorizado. A escolha da saída pertence ao processamento de som do leitor; não é uma entrada na conta do fornecedor, uma nova subscrição nem prova de uma falha geral do serviço."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a saída e o seu requisito",
+          "paragraphs": [
+            "O guia de áudio da VideoLAN documenta a opção avançada Saída de áudio com AudioTrack e OpenSL ES. O AudioTrack usa o processamento integrado do Android; OpenSL ES é outra API de áudio documentada. Leia e registe primeiro a seleção atual. O guia também indica que a passagem direta de áudio digital exige AudioTrack; não suponha que ambas as opções suportam essa função da mesma forma. Mantenha as restantes opções de processamento."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare apenas uma preferência adequada",
+          "paragraphs": [
+            "Se utiliza passagem direta, conserve a saída exigida. Caso contrário, se o proprietário quiser comparar e a versão oferecer ambas as opções, utilize o mesmo vídeo e equipamento alterando apenas a saída. Registe o resultado e restaure a escolha anterior se não ajudar. Nenhuma API resolve todos os casos. Trex IPTV 8K permite uma ligação simultânea; mantenha uma sessão. Comunique versão, acessório e escolhas sem credenciais. Não apague dados do leitor nem compre outro plano para esta verificação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Вывод звука Trex IPTV: прочитайте параметры AudioTrack и OpenSL ES в VLC",
+      "excerpt": "Прочитайте документированные варианты вывода звука VLC для Android. Разделяйте требования сквозной передачи, один сеанс просмотра и доступ у провайдера.",
+      "seo_title": "Вывод звука Trex IPTV: прочитайте параметры AudioTrack и OpenSL ES в VLC",
+      "seo_description": "Прочитайте документированные варианты вывода звука VLC для Android. Разделяйте требования сквозной передачи, один сеанс просмотра и доступ у провайдера.",
+      "sections": [
+        {
+          "heading": "Определите проигрыватель и звуковое оборудование",
+          "paragraphs": [
+            "Проверка вывода звука Trex IPTV начинается с установленного VLC для Android, его версии и подключённого оборудования. Запишите, продолжается ли изображение без звука или останавливается всё видео. Сохраняйте комфортную громкость и используйте разрешённый ролик. Выбор вывода относится к обработке звука проигрывателем; это не вход к провайдеру, не новая подписка и не доказательство общей неисправности сервиса."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте вариант вывода и его условие",
+          "paragraphs": [
+            "В аудиоруководстве VideoLAN описан расширенный параметр Вывод звука с AudioTrack и OpenSL ES. AudioTrack использует встроенную обработку Android; OpenSL ES является другим документированным аудио-API. Сначала прочитайте и запишите текущий выбор. Руководство также требует AudioTrack для сквозной передачи цифрового звука: не предполагайте одинаковую поддержку этой функции обоими вариантами. Остальные параметры обработки оставьте прежними."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните только подходящий вариант вывода",
+          "paragraphs": [
+            "При использовании сквозной передачи сохраните требуемый вывод. Иначе, если владелец хочет сравнить и версия предлагает оба варианта, используйте тот же ролик и оборудование, меняя только вывод. Запишите результат и верните прежний выбор, если улучшения нет. Универсального исправления через API не существует. Trex IPTV 8K допускает одно одновременное подключение; сохраняйте один сеанс. Сообщите версию, аксессуар и выбор без учётных данных. Не стирайте данные проигрывателя и не покупайте другой тариф ради этой проверки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV آڈیو آؤٹ پٹ: VLC کے AudioTrack اور OpenSL ES اختیارات پڑھیں",
+      "excerpt": "آواز بدلنے سے پہلے Android کے VLC کے بیان کردہ آڈیو آؤٹ پٹ پڑھیں۔ پاس تھرو کی شرط، ایک دیکھنے کا سیشن اور فراہم کنندہ کی رسائی الگ رکھیں۔",
+      "seo_title": "Trex IPTV آڈیو آؤٹ پٹ: VLC کے AudioTrack اور OpenSL ES اختیارات پڑھیں",
+      "seo_description": "آواز بدلنے سے پہلے Android کے VLC کے بیان کردہ آڈیو آؤٹ پٹ پڑھیں۔ پاس تھرو کی شرط، ایک دیکھنے کا سیشن اور فراہم کنندہ کی رسائی الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پلیئر اور سننے کا سامان پہچانیں",
+          "paragraphs": [
+            "Trex IPTV آڈیو آؤٹ پٹ کی جانچ اصل نصب شدہ Android کے VLC، اس کے نسخے اور جڑے ہوئے سننے کے سامان سے شروع ہوتی ہے۔ لکھیں کہ تصویر آواز کے بغیر چلتی رہتی ہے یا پوری ویڈیو رکتی ہے۔ میڈیا کی آواز آرام دہ رکھیں اور ایک مجاز ویڈیو استعمال کریں۔ آؤٹ پٹ کا انتخاب پلیئر کی آواز بنانے کے عمل سے متعلق ہے؛ یہ نہ فراہم کنندہ کا لاگ اِن ہے، نہ نئی رکنیت اور نہ تمام صارفین کی خرابی کا ثبوت۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آؤٹ پٹ اور اس کی شرط پڑھیں",
+          "paragraphs": [
+            "VideoLAN کی آڈیو رہنمائی میں اعلی درجے کے آڈیو آؤٹ پٹ کے تحت AudioTrack اور OpenSL ES بیان ہیں۔ AudioTrack، Android کی اندرونی آڈیو عمل کاری استعمال کرتا ہے؛ OpenSL ES ایک دوسری بیان کردہ آڈیو API ہے۔ پہلے موجودہ انتخاب پڑھ کر لکھیں۔ رہنمائی یہ بھی بتاتی ہے کہ ڈیجیٹل آڈیو پاس تھرو کے لیے AudioTrack ضروری ہے؛ دونوں اختیارات میں اس سہولت کی یکساں حمایت فرض نہ کریں۔ باقی عمل کاری کے اختیارات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "صرف موزوں آؤٹ پٹ کا موازنہ کریں",
+          "paragraphs": [
+            "پاس تھرو استعمال ہو رہا ہو تو اس کا ضروری آؤٹ پٹ برقرار رکھیں۔ ورنہ مالک موازنہ چاہے اور نسخہ دونوں اختیارات دے تو وہی ویڈیو اور سامان استعمال کر کے صرف آؤٹ پٹ بدلیں۔ نتیجہ لکھیں اور فائدہ نہ ہو تو پچھلا انتخاب بحال کریں۔ کوئی API ہر خرابی کا حل نہیں۔ Trex IPTV 8K ایک بیک وقت کنکشن کی اجازت دیتا ہے؛ ایک ہی سیشن رکھیں۔ نسخہ، لوازمہ اور انتخاب بتائیں، لاگ اِن تفصیل نہیں۔ اس جانچ کے لیے نہ پلیئر کا ڈیٹا مٹائیں اور نہ دوسرا منصوبہ خریدیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إخراج صوت Trex IPTV: اقرأ خياري AudioTrack وOpenSL ES في VLC",
+      "excerpt": "اقرأ خيارات إخراج الصوت الموثقة في VLC لأندرويد قبل تغيير الصوت. افصل بين متطلبات التمرير المباشر وجلسة مشاهدة واحدة والوصول لدى المزود.",
+      "seo_title": "إخراج صوت Trex IPTV: اقرأ خياري AudioTrack وOpenSL ES في VLC",
+      "seo_description": "اقرأ خيارات إخراج الصوت الموثقة في VLC لأندرويد قبل تغيير الصوت. افصل بين متطلبات التمرير المباشر وجلسة مشاهدة واحدة والوصول لدى المزود.",
+      "sections": [
+        {
+          "heading": "حدد المشغل ومعدات الاستماع",
+          "paragraphs": [
+            "ابدأ فحص إخراج صوت Trex IPTV بتحديد تثبيت VLC الفعلي على أندرويد وإصداره ومعدات الاستماع المتصلة. سجل هل تستمر الصورة بلا صوت أم يتوقف الفيديو كله. اجعل مستوى الصوت مريحاً واستخدم مقطعاً مسموحاً. اختيار الإخراج يخص مسار معالجة الصوت في المشغل؛ وليس تسجيل دخول لدى المزود أو اشتراكاً جديداً أو دليلاً على عطل يشمل الجميع."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الإخراج ومتطلبه",
+          "paragraphs": [
+            "يوثق دليل الصوت من VideoLAN خيار إخراج صوت متقدماً يتضمن AudioTrack وOpenSL ES. يستخدم AudioTrack معالجة الصوت المدمجة في أندرويد؛ أما OpenSL ES فهو واجهة صوت أخرى موثقة. اقرأ الاختيار الحالي وسجله أولاً. ويذكر الدليل أن تمرير الصوت الرقمي المباشر يتطلب AudioTrack؛ فلا تفترض دعم الخيارين لهذه الميزة بالطريقة نفسها. احتفظ ببقية خيارات المعالجة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن تفضيل إخراج مناسباً فقط",
+          "paragraphs": [
+            "إذا كان التمرير المباشر مستخدماً، فاحتفظ بالإخراج المطلوب له. وإلا، إذا أراد المالك المقارنة وكان الإصدار يوفر الخيارين، فاستخدم المقطع والمعدات نفسيهما وغير الإخراج فقط. سجل النتيجة وأعد الاختيار السابق إن لم يفد. لا توجد واجهة تصلح كل الأعطال. يسمح Trex IPTV 8K باتصال متزامن واحد؛ احتفظ بجلسة واحدة. أبلغ عن الإصدار والملحق والاختيارات دون بيانات الدخول. لا تمسح بيانات المشغل ولا تشتر باقة أخرى لهذا الفحص."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV ऑडियो आउटपुट: VLC के AudioTrack और OpenSL ES विकल्प पढ़ें",
+      "excerpt": "आवाज़ बदलने से पहले Android के VLC के दस्तावेज़ित ऑडियो आउटपुट पढ़ें। पासथ्रू की शर्त, एक देखने का सत्र और प्रदाता की पहुँच अलग रखें।",
+      "seo_title": "Trex IPTV ऑडियो आउटपुट: VLC के AudioTrack और OpenSL ES विकल्प पढ़ें",
+      "seo_description": "आवाज़ बदलने से पहले Android के VLC के दस्तावेज़ित ऑडियो आउटपुट पढ़ें। पासथ्रू की शर्त, एक देखने का सत्र और प्रदाता की पहुँच अलग रखें।",
+      "sections": [
+        {
+          "heading": "प्लेयर और सुनने का उपकरण पहचानें",
+          "paragraphs": [
+            "Trex IPTV ऑडियो आउटपुट की जाँच Android पर वास्तव में स्थापित VLC, उसके संस्करण और जुड़े उपकरण से शुरू होती है। लिखें कि चित्र बिना आवाज़ चलता रहता है या पूरा वीडियो रुकता है। मीडिया की आवाज़ आरामदायक रखें और एक अधिकृत क्लिप इस्तेमाल करें। आउटपुट का चुनाव प्लेयर की ध्वनि-प्रक्रिया से संबंधित है; यह न प्रदाता का लॉगिन है, न नई सदस्यता और न सभी दर्शकों की खराबी का प्रमाण।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "आउटपुट और उसकी शर्त पढ़ें",
+          "paragraphs": [
+            "VideoLAN की ऑडियो मार्गदर्शिका उन्नत ऑडियो आउटपुट में AudioTrack और OpenSL ES बताती है। AudioTrack, Android की अंतर्निहित ऑडियो प्रक्रिया इस्तेमाल करता है; OpenSL ES दूसरी दस्तावेज़ित ऑडियो API है। पहले मौजूदा चुनाव पढ़कर लिखें। मार्गदर्शिका डिजिटल ऑडियो पासथ्रू के लिए AudioTrack ज़रूरी बताती है; दोनों विकल्प इस सुविधा को समान रूप से देते हैं, ऐसा न मानें। बाकी प्रसंस्करण विकल्प बनाए रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+            }
+          ]
+        },
+        {
+          "heading": "केवल उपयुक्त आउटपुट की तुलना करें",
+          "paragraphs": [
+            "पासथ्रू इस्तेमाल हो रहा हो तो उसका आवश्यक आउटपुट बनाए रखें। अन्यथा मालिक तुलना चाहे और संस्करण दोनों विकल्प दे तो वही क्लिप और उपकरण इस्तेमाल करके केवल आउटपुट बदलें। नतीजा लिखें और लाभ न हो तो पुराना चुनाव लौटाएँ। कोई API हर खराबी का समाधान नहीं है। Trex IPTV 8K एक साथ एक कनेक्शन की अनुमति देता है; एक ही सत्र रखें। संस्करण, एक्सेसरी और चुनाव बताएँ, लॉगिन जानकारी नहीं। इस जाँच के लिए न प्लेयर डेटा मिटाएँ और न दूसरा प्लान खरीदें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android audio output APIs",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_audio.html"
+    }
+  ]
+}

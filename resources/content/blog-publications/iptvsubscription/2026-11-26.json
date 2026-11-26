@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-26",
+  "topic": "Read desktop Chrome version and available update status separately from IPTV Subscription player updates, Opplex or Filex plan terms and recorded order/setup state.",
+  "primary_keyword": "IPTV Subscription browser version",
+  "slug": "iptvsubscription-desktop-chrome-version-and-planned-relaunch",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription browser version: check Chrome before relaunching",
+      "excerpt": "Read desktop Chrome’s actual version and update message. Keep a browser relaunch separate from player updates, Opplex or Filex terms and the recorded order state.",
+      "seo_title": "IPTV Subscription browser version: check Chrome before relaunching",
+      "seo_description": "Read desktop Chrome’s actual version and update message. Keep a browser relaunch separate from player updates, Opplex or Filex terms and the recorded order state.",
+      "sections": [
+        {
+          "heading": "Identify the program you are checking",
+          "paragraphs": [
+            "An IPTV Subscription browser version check concerns the computer browser displaying the website, not the player installed on a television. Note the operating system and confirm that the window is Chrome. A changed page or an update prompt does not by itself establish an expired viewing plan. Keep a public plan page available for comparison, without exposing a private account or order address."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read About Google Chrome",
+          "paragraphs": [
+            "Google documents More, Help, then About Google Chrome on a computer. The current version number appears beneath the Google Chrome heading, and Chrome checks for updates on that page. Record the displayed status rather than guessing from the appearance of a toolbar. If Relaunch is offered, use it only when the owner is ready. Google notes that Incognito windows do not reopen after a restart; preserve any work appropriately before continuing."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare the page and the order separately",
+          "paragraphs": [
+            "After a planned relaunch, reopen the public page and describe any remaining symptom. A browser update does not update a separate IPTV player or confirm payment. Check the selected Opplex or Filex provider, duration and recorded IPTV Subscription order/setup state independently. Player charges remain separate from service payment, and an unstated Filex connection allowance still needs confirmation. Do not repeat payment as a browser-version test or send private order links to explain the version number."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Versión del navegador de IPTV Subscription: revisa Chrome antes de reiniciar",
+      "excerpt": "Lee la versión y el mensaje de actualización reales de Chrome para ordenador. Distingue el reinicio del navegador de las condiciones de Opplex o Filex y del estado del pedido.",
+      "seo_title": "Versión del navegador de IPTV Subscription: revisa Chrome antes de reiniciar",
+      "seo_description": "Lee la versión y el mensaje de actualización reales de Chrome para ordenador. Distingue el reinicio del navegador de las condiciones de Opplex o Filex y del estado del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica el programa que estás revisando",
+          "paragraphs": [
+            "La revisión de la versión del navegador para IPTV Subscription se refiere al navegador del ordenador que muestra la web, no al reproductor instalado en el televisor. Anota el sistema operativo y confirma que la ventana es de Chrome. Un cambio en la página o un aviso de actualización no demuestra por sí solo que el plan haya caducado. Conserva una página pública del plan para comparar, sin mostrar direcciones privadas de cuenta o pedido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee Información de Google Chrome",
+          "paragraphs": [
+            "Google indica Más, Ayuda e Información de Google Chrome en un ordenador. El número de versión aparece bajo el encabezado Google Chrome y el navegador busca actualizaciones en esa página. Anota el estado mostrado en lugar de deducirlo por la barra de herramientas. Si aparece Reiniciar, úsalo solo cuando el propietario esté preparado. Google advierte que las ventanas de incógnito no vuelven a abrirse al reiniciar; conserva debidamente el trabajo antes de continuar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara por separado la página y el pedido",
+          "paragraphs": [
+            "Tras un reinicio previsto, abre la página pública y describe cualquier síntoma restante. Actualizar el navegador no actualiza otro reproductor IPTV ni confirma un pago. Comprueba por separado el proveedor Opplex o Filex, la duración y el estado registrado del pedido y la configuración de IPTV Subscription. El coste del reproductor es distinto del servicio y cualquier límite de conexiones de Filex no indicado requiere confirmación. No repitas un pago para probar la versión ni envíes enlaces privados del pedido para explicar el número."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Version du navigateur IPTV Subscription : vérifiez Chrome avant de le relancer",
+      "excerpt": "Lisez la version et le message de mise à jour de Chrome sur ordinateur. Séparez sa relance des mises à jour du lecteur, des conditions Opplex ou Filex et de la commande.",
+      "seo_title": "Version du navigateur IPTV Subscription : vérifiez Chrome avant de le relancer",
+      "seo_description": "Lisez la version et le message de mise à jour de Chrome sur ordinateur. Séparez sa relance des mises à jour du lecteur, des conditions Opplex ou Filex et de la commande.",
+      "sections": [
+        {
+          "heading": "Identifiez le programme concerné",
+          "paragraphs": [
+            "La vérification de la version du navigateur pour IPTV Subscription concerne le navigateur de l’ordinateur affichant le site, pas le lecteur installé sur un téléviseur. Notez le système et vérifiez que la fenêtre est bien Chrome. Une page modifiée ou une proposition de mise à jour ne prouve pas à elle seule l’expiration du forfait. Gardez une page publique de l’offre pour comparer, sans exposer une adresse privée de compte ou de commande."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez À propos de Google Chrome",
+          "paragraphs": [
+            "Sur ordinateur, Google indique Plus, Aide, puis À propos de Google Chrome. Le numéro de version apparaît sous le titre Google Chrome et le navigateur recherche les mises à jour sur cette page. Relevez l’état affiché au lieu de le déduire de la barre d’outils. Si Relancer est proposé, attendez que le propriétaire soit prêt. Google précise que les fenêtres de navigation privée ne se rouvrent pas après un redémarrage ; préservez le travail utile avant de continuer."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparez séparément la page et la commande",
+          "paragraphs": [
+            "Après une relance prévue, rouvrez la page publique et décrivez le symptôme restant. Une mise à jour du navigateur ne met pas à jour un autre lecteur IPTV et ne confirme pas le paiement. Vérifiez séparément le fournisseur Opplex ou Filex, la durée et l’état enregistré de la commande et de la configuration IPTV Subscription. Le lecteur et le service ont des coûts distincts ; une limite Filex non précisée reste à confirmer. Ne payez pas à nouveau pour tester la version et n’envoyez pas de lien privé de commande pour l’expliquer."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Versione del browser IPTV Subscription: controlla Chrome prima del riavvio",
+      "excerpt": "Leggi la versione e il messaggio di aggiornamento di Chrome sul computer. Distingui il riavvio dagli aggiornamenti del lettore, dalle condizioni Opplex o Filex e dall’ordine.",
+      "seo_title": "Versione del browser IPTV Subscription: controlla Chrome prima del riavvio",
+      "seo_description": "Leggi la versione e il messaggio di aggiornamento di Chrome sul computer. Distingui il riavvio dagli aggiornamenti del lettore, dalle condizioni Opplex o Filex e dall’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica il programma da controllare",
+          "paragraphs": [
+            "Il controllo della versione del browser per IPTV Subscription riguarda il browser del computer che mostra il sito, non il lettore installato sul televisore. Annota il sistema operativo e verifica che la finestra sia di Chrome. Una pagina diversa o una richiesta di aggiornamento non dimostra da sola che il piano sia scaduto. Conserva una pagina pubblica del piano per il confronto, senza mostrare indirizzi privati di account o ordine."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi Informazioni su Google Chrome",
+          "paragraphs": [
+            "Sul computer Google indica Altro, Guida e Informazioni su Google Chrome. Il numero della versione corrente compare sotto il titolo Google Chrome e il browser cerca aggiornamenti in quella pagina. Registra lo stato mostrato invece di dedurlo dall’aspetto della barra degli strumenti. Se viene proposto Riavvia, usalo solo quando il proprietario è pronto. Google precisa che le finestre in incognito non si riaprono dopo il riavvio; conserva correttamente il lavoro prima di proseguire."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta separatamente pagina e ordine",
+          "paragraphs": [
+            "Dopo un riavvio programmato riapri la pagina pubblica e descrivi il problema restante. Aggiornare il browser non aggiorna un altro lettore IPTV e non conferma il pagamento. Controlla separatamente il fornitore Opplex o Filex, la durata e lo stato registrato dell’ordine e della configurazione IPTV Subscription. Il costo del lettore è distinto dal servizio; un limite Filex non dichiarato richiede conferma. Non ripetere il pagamento come prova della versione e non inviare link privati dell’ordine per spiegare il numero."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription-browserversie: controleer Chrome vóór herstarten",
+      "excerpt": "Lees de echte versie en updatemelding van Chrome op de computer. Houd herstarten apart van spelerupdates, Opplex- of Filex-voorwaarden en de geregistreerde bestelstatus.",
+      "seo_title": "IPTV Subscription-browserversie: controleer Chrome vóór herstarten",
+      "seo_description": "Lees de echte versie en updatemelding van Chrome op de computer. Houd herstarten apart van spelerupdates, Opplex- of Filex-voorwaarden en de geregistreerde bestelstatus.",
+      "sections": [
+        {
+          "heading": "Bepaal welk programma je controleert",
+          "paragraphs": [
+            "Een controle van de browserversie voor IPTV Subscription gaat over de computerbrowser die de website toont, niet over de speler op een televisie. Noteer het besturingssysteem en controleer dat het venster Chrome is. Een gewijzigde pagina of updateverzoek bewijst op zichzelf geen verlopen kijkabonnement. Houd een openbare pakketpagina bij de hand voor vergelijking, zonder privé-adressen van accounts of bestellingen te tonen."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees Over Google Chrome",
+          "paragraphs": [
+            "Google beschrijft op een computer Meer, Help en Over Google Chrome. Het huidige versienummer staat onder de kop Google Chrome en de browser controleert op die pagina op updates. Noteer de getoonde status in plaats van die af te leiden uit de werkbalk. Gebruik Opnieuw starten alleen wanneer dit wordt aangeboden en de eigenaar klaar is. Volgens Google openen incognitovensters niet opnieuw na een herstart; bewaar het nodige werk voordat je verdergaat."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk pagina en bestelling afzonderlijk",
+          "paragraphs": [
+            "Open na een geplande herstart de openbare pagina opnieuw en beschrijf het resterende probleem. Een browserupdate werkt een andere IPTV-speler niet bij en bevestigt geen betaling. Controleer Opplex of Filex, de looptijd en de vastgelegde bestel- en instelstatus van IPTV Subscription apart. Spelerkosten en servicebetaling blijven verschillend; een niet vermelde Filex-verbindingslimiet moet worden bevestigd. Betaal niet opnieuw als versietest en stuur geen privé-bestellinks om het versienummer uit te leggen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Versão do navegador IPTV Subscription: verifique o Chrome antes de reiniciar",
+      "excerpt": "Leia a versão e o aviso de atualização do Chrome no computador. Separe o reinício das atualizações do leitor, das condições Opplex ou Filex e do estado registado do pedido.",
+      "seo_title": "Versão do navegador IPTV Subscription: verifique o Chrome antes de reiniciar",
+      "seo_description": "Leia a versão e o aviso de atualização do Chrome no computador. Separe o reinício das atualizações do leitor, das condições Opplex ou Filex e do estado registado do pedido.",
+      "sections": [
+        {
+          "heading": "Identifique o programa que está a verificar",
+          "paragraphs": [
+            "A verificação da versão do navegador para IPTV Subscription refere-se ao navegador do computador que apresenta o site, não ao leitor instalado na televisão. Anote o sistema operativo e confirme que a janela é do Chrome. Uma página alterada ou um aviso de atualização não prova, por si só, que o plano expirou. Tenha uma página pública do plano para comparar, sem expor endereços privados da conta ou do pedido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia Acerca do Google Chrome",
+          "paragraphs": [
+            "No computador, a Google indica Mais, Ajuda e Acerca do Google Chrome. O número da versão atual aparece sob o título Google Chrome e o navegador procura atualizações nessa página. Registe o estado apresentado em vez de o deduzir pela barra de ferramentas. Se surgir Reiniciar, use-o apenas quando o proprietário estiver preparado. A Google informa que as janelas de navegação anónima não reabrem depois de reiniciar; preserve devidamente o trabalho antes de continuar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare a página e o pedido separadamente",
+          "paragraphs": [
+            "Depois de um reinício planeado, abra novamente a página pública e descreva o sintoma restante. Atualizar o navegador não atualiza outro leitor IPTV nem confirma o pagamento. Verifique separadamente o fornecedor Opplex ou Filex, a duração e o estado registado do pedido e da configuração de IPTV Subscription. O custo do leitor é diferente do serviço; um limite Filex não indicado ainda precisa de confirmação. Não repita pagamentos para testar a versão nem envie ligações privadas do pedido para explicar o número."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Версия браузера IPTV Subscription: проверьте Chrome перед перезапуском",
+      "excerpt": "Посмотрите версию Chrome на компьютере и сообщение об обновлении. Отличайте перезапуск браузера от обновления плеера, условий Opplex или Filex и состояния заказа.",
+      "seo_title": "Версия браузера IPTV Subscription: проверьте Chrome перед перезапуском",
+      "seo_description": "Посмотрите версию Chrome на компьютере и сообщение об обновлении. Отличайте перезапуск браузера от обновления плеера, условий Opplex или Filex и состояния заказа.",
+      "sections": [
+        {
+          "heading": "Уточните, какую программу проверяете",
+          "paragraphs": [
+            "Проверка версии браузера для IPTV Subscription относится к браузеру компьютера, показывающему сайт, а не к плееру на телевизоре. Запишите операционную систему и убедитесь, что это окно Chrome. Изменение страницы или предложение обновиться само по себе не доказывает окончания подписки. Для сравнения держите открытую страницу тарифа, не раскрывая частные адреса аккаунта или заказа."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Откройте сведения о Google Chrome",
+          "paragraphs": [
+            "На компьютере Google указывает меню «Ещё», «Справка», затем «О браузере Google Chrome». Текущий номер версии находится под заголовком Google Chrome; на этой странице браузер проверяет обновления. Запишите показанное состояние, не определяя его по виду панели инструментов. Если предложен перезапуск, выполняйте его только когда владелец готов. Google отмечает, что окна инкогнито после перезапуска не открываются вновь; заранее сохраните нужную работу подходящим способом."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверяйте страницу и заказ отдельно",
+          "paragraphs": [
+            "После запланированного перезапуска снова откройте публичную страницу и опишите оставшийся симптом. Обновление браузера не обновляет отдельный IPTV-плеер и не подтверждает оплату. Отдельно уточните провайдера Opplex или Filex, срок и записанное состояние заказа и настройки IPTV Subscription. Плата за плеер отличается от оплаты услуги; неуказанный лимит подключений Filex нужно подтвердить. Не повторяйте оплату ради проверки версии и не отправляйте частные ссылки заказа для объяснения номера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کے براؤزر کا نسخہ: دوبارہ کھولنے سے پہلے Chrome دیکھیں",
+      "excerpt": "کمپیوٹر کے Chrome کا اصل نسخہ اور اپ ڈیٹ کا پیغام پڑھیں۔ براؤزر دوبارہ کھولنے کو پلیئر کی اپ ڈیٹ، Opplex یا Filex کی شرائط اور آرڈر کی درج حالت سے الگ رکھیں۔",
+      "seo_title": "IPTV Subscription کے براؤزر کا نسخہ: دوبارہ کھولنے سے پہلے Chrome دیکھیں",
+      "seo_description": "کمپیوٹر کے Chrome کا اصل نسخہ اور اپ ڈیٹ کا پیغام پڑھیں۔ براؤزر دوبارہ کھولنے کو پلیئر کی اپ ڈیٹ، Opplex یا Filex کی شرائط اور آرڈر کی درج حالت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کس پروگرام کی جانچ ہے",
+          "paragraphs": [
+            "IPTV Subscription کے براؤزر کے نسخے کی جانچ اس کمپیوٹر براؤزر سے متعلق ہے جو ویب سائٹ دکھاتا ہے، ٹی وی پر نصب پلیئر سے نہیں۔ نظام کا نام لکھیں اور تصدیق کریں کہ کھڑکی Chrome کی ہے۔ صفحہ بدلنا یا اپ ڈیٹ کا پیغام آنا اکیلے دیکھنے کا پلان ختم ہونے کا ثبوت نہیں۔ موازنے کے لیے پلان کا عوامی صفحہ رکھیں، اکاؤنٹ یا آرڈر کا نجی پتہ ظاہر نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Google Chrome کے بارے میں حصہ پڑھیں",
+          "paragraphs": [
+            "Google کمپیوٹر پر مزید، مدد، پھر Google Chrome کے بارے میں حصہ بتاتا ہے۔ موجودہ نسخے کا نمبر Google Chrome کے عنوان کے نیچے ہوتا ہے اور اسی صفحے پر اپ ڈیٹ کی جانچ ہوتی ہے۔ ٹول بار کی شکل سے اندازہ لگانے کے بجائے دکھائی گئی حالت لکھیں۔ دوبارہ کھولنے کا اختیار ملے تو مالک کے تیار ہونے پر ہی استعمال کریں۔ Google کے مطابق پوشیدہ کھڑکیاں دوبارہ شروع ہونے پر واپس نہیں کھلتیں؛ آگے بڑھنے سے پہلے ضروری کام مناسب طور پر محفوظ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "صفحہ اور آرڈر الگ جانچیں",
+          "paragraphs": [
+            "طے شدہ طور پر دوبارہ کھولنے کے بعد عوامی صفحہ کھولیں اور باقی علامت بتائیں۔ براؤزر کی اپ ڈیٹ نہ الگ IPTV پلیئر کو اپ ڈیٹ کرتی ہے اور نہ ادائیگی ثابت کرتی ہے۔ Opplex یا Filex فراہم کنندہ، مدت اور IPTV Subscription آرڈر اور سیٹ اپ کی درج حالت الگ تصدیق کریں۔ پلیئر کی فیس سروس کی ادائیگی سے الگ ہے؛ Filex کے غیر واضح کنکشن کی حد کی تصدیق ابھی درکار ہے۔ نسخہ آزمانے کے لیے نہ دوبارہ ادائیگی کریں اور نہ نمبر سمجھانے کے لیے آرڈر کا نجی لنک بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إصدار متصفح IPTV Subscription: افحص Chrome قبل إعادة تشغيله",
+      "excerpt": "اقرأ إصدار Chrome الفعلي ورسالة التحديث على الكمبيوتر. افصل إعادة تشغيل المتصفح عن تحديث المشغّل وشروط Opplex أو Filex وحالة الطلب المسجلة.",
+      "seo_title": "إصدار متصفح IPTV Subscription: افحص Chrome قبل إعادة تشغيله",
+      "seo_description": "اقرأ إصدار Chrome الفعلي ورسالة التحديث على الكمبيوتر. افصل إعادة تشغيل المتصفح عن تحديث المشغّل وشروط Opplex أو Filex وحالة الطلب المسجلة.",
+      "sections": [
+        {
+          "heading": "حدّد البرنامج الذي تفحصه",
+          "paragraphs": [
+            "يتعلق فحص إصدار متصفح IPTV Subscription بمتصفح الكمبيوتر الذي يعرض الموقع، لا بالمشغّل المثبت على التلفاز. دوّن نظام التشغيل وتأكد أن النافذة تخص Chrome. تغيّر الصفحة أو ظهور طلب تحديث لا يثبت وحده انتهاء خطة المشاهدة. احتفظ بصفحة عامة للخطة للمقارنة، دون كشف عنوان خاص بالحساب أو الطلب."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ معلومات Google Chrome",
+          "paragraphs": [
+            "توضح Google على الكمبيوتر المسار: المزيد ثم المساعدة ثم معلومات Google Chrome. يظهر رقم الإصدار الحالي تحت عنوان Google Chrome ويبحث المتصفح عن التحديثات في هذه الصفحة. سجّل الحالة المعروضة بدلاً من استنتاجها من شكل شريط الأدوات. إذا ظهر خيار إعادة التشغيل فاستخدمه عندما يكون المالك مستعداً فقط. تذكر Google أن نوافذ التصفح المتخفي لا تُفتح مجدداً بعد إعادة التشغيل؛ احفظ العمل الضروري بالطريقة المناسبة قبل المتابعة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن الصفحة والطلب كلّاً على حدة",
+          "paragraphs": [
+            "بعد إعادة تشغيل مخطط لها، افتح الصفحة العامة مجدداً وصف العَرَض المتبقي. تحديث المتصفح لا يحدّث مشغّل IPTV منفصلاً ولا يؤكد الدفع. تحقق بشكل مستقل من مزوّد Opplex أو Filex والمدة وحالة طلب IPTV Subscription وإعداده المسجلة. رسوم المشغّل منفصلة عن دفع الخدمة، وأي حد غير معلن لاتصالات Filex ما زال يحتاج تأكيداً. لا تكرر الدفع لاختبار الإصدار ولا ترسل روابط طلب خاصة لشرح رقم النسخة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription ब्राउज़र संस्करण: फिर खोलने से पहले Chrome जाँचें",
+      "excerpt": "कंप्यूटर के Chrome का वास्तविक संस्करण और अपडेट संदेश पढ़ें। ब्राउज़र फिर खोलने को प्लेयर अपडेट, Opplex या Filex की शर्तों और दर्ज ऑर्डर स्थिति से अलग रखें।",
+      "seo_title": "IPTV Subscription ब्राउज़र संस्करण: फिर खोलने से पहले Chrome जाँचें",
+      "seo_description": "कंप्यूटर के Chrome का वास्तविक संस्करण और अपडेट संदेश पढ़ें। ब्राउज़र फिर खोलने को प्लेयर अपडेट, Opplex या Filex की शर्तों और दर्ज ऑर्डर स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि किस प्रोग्राम की जाँच है",
+          "paragraphs": [
+            "IPTV Subscription के ब्राउज़र संस्करण की जाँच उस कंप्यूटर ब्राउज़र से संबंधित है जो वेबसाइट दिखाता है, टीवी पर स्थापित प्लेयर से नहीं। ऑपरेटिंग सिस्टम लिखें और पुष्टि करें कि विंडो Chrome की है। पेज बदलना या अपडेट संदेश आना अकेले देखने वाला प्लान समाप्त होने का प्रमाण नहीं है। तुलना के लिए सार्वजनिक प्लान पेज रखें; खाते या ऑर्डर का निजी पता न दिखाएँ।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Google Chrome के बारे में भाग पढ़ें",
+          "paragraphs": [
+            "Google कंप्यूटर पर ज़्यादा, सहायता और फिर Google Chrome के बारे में वाला भाग बताता है। मौजूदा संस्करण का नंबर Google Chrome शीर्षक के नीचे होता है और उसी पेज पर अपडेट की जाँच होती है। टूलबार की शक्ल से अनुमान लगाने के बजाय दिखाई स्थिति लिखें। फिर शुरू करने का विकल्प मिले तो मालिक तैयार होने पर ही इस्तेमाल करें। Google के अनुसार गुप्त विंडो दोबारा शुरू करने पर वापस नहीं खुलतीं; आगे बढ़ने से पहले ज़रूरी काम उचित तरीके से सुरक्षित करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome",
+              "url": "https://support.google.com/chrome/answer/95414?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "पेज और ऑर्डर अलग जाँचें",
+          "paragraphs": [
+            "योजनाबद्ध ढंग से फिर शुरू करने के बाद सार्वजनिक पेज खोलें और बची समस्या बताएँ। ब्राउज़र अपडेट न अलग IPTV प्लेयर को अपडेट करता है और न भुगतान की पुष्टि करता है। Opplex या Filex प्रदाता, अवधि और IPTV Subscription ऑर्डर तथा सेटअप की दर्ज स्थिति अलग पुष्टि करें। प्लेयर शुल्क सेवा के भुगतान से अलग है; Filex की अघोषित कनेक्शन सीमा अभी पूछनी होगी। संस्करण जाँचने के लिए न फिर भुगतान करें और न नंबर समझाने के लिए निजी ऑर्डर लिंक भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help: version and browser updates",
+      "url": "https://support.google.com/chrome/answer/95414?hl=en"
+    }
+  ]
+}

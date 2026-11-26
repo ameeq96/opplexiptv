@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-26",
+  "topic": "Check Apple TV 4K HDMI connection support for current display settings separately from network access, programme-only symptoms and Geo IPTV plan state without resetting saved preferences.",
+  "primary_keyword": "Geo IPTV HDMI connection check",
+  "slug": "geo-apple-tv-hdmi-connection-check-and-display-link-result",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV HDMI connection check: record the current display link",
+      "excerpt": "Use Apple TV 4K’s documented HDMI connection check for the existing display setup. Keep its result separate from network access and viewing-plan state.",
+      "seo_title": "Geo IPTV HDMI connection check: record the current display link",
+      "seo_description": "Use Apple TV 4K’s documented HDMI connection check for the existing display setup. Keep its result separate from network access and viewing-plan state.",
+      "sections": [
+        {
+          "heading": "Identify the display chain first",
+          "paragraphs": [
+            "A Geo IPTV HDMI connection check concerns the link between Apple TV 4K and its display, not the internet connection. Note the Apple TV model, television and any receiver or switch between them. Record whether the picture issue appears in system menus as well as the player, or only during one programme. These observations help describe the problem without declaring that a cable or provider has failed."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the documented test option",
+          "paragraphs": [
+            "Apple’s Apple TV 4K guide lists Check HDMI Connection under Settings, then Video and Audio. Its stated purpose is to check whether the HDMI connection supports the current settings. Available options vary with the model, connected display and selected format. With the owner’s agreement, follow the on-screen check and record the result. Avoid changing format, colour and audio settings at the same time; if the option is absent, report that instead."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the result within its scope",
+          "paragraphs": [
+            "Write down the actual message, not an assumed diagnosis. A successful display-link check does not test the home network or guarantee that a programme will play. Compare the same permitted clip afterwards and describe any remaining symptom separately. Preserve saved player access and existing preferences; resetting the television or erasing app data is unnecessary merely to read this result. Give support the equipment chain, software and observation without private playback addresses."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Comprobación HDMI de Geo IPTV: anota la conexión de pantalla actual",
+      "excerpt": "Usa la comprobación HDMI documentada del Apple TV 4K para la pantalla actual. Distingue su resultado del acceso a internet y del estado del plan.",
+      "seo_title": "Comprobación HDMI de Geo IPTV: anota la conexión de pantalla actual",
+      "seo_description": "Usa la comprobación HDMI documentada del Apple TV 4K para la pantalla actual. Distingue su resultado del acceso a internet y del estado del plan.",
+      "sections": [
+        {
+          "heading": "Identifica primero la cadena de pantalla",
+          "paragraphs": [
+            "La comprobación HDMI de Geo IPTV trata del enlace entre el Apple TV 4K y la pantalla, no de internet. Anota el modelo del Apple TV, el televisor y cualquier receptor o conmutador intermedio. Indica si el problema de imagen aparece también en los menús del sistema o solo durante un programa. Estas observaciones describen el síntoma sin afirmar que haya fallado un cable o el proveedor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la opción de prueba documentada",
+          "paragraphs": [
+            "La guía del Apple TV 4K sitúa Comprobar conexión HDMI en Ajustes y después Vídeo y audio. Su finalidad es comprobar si la conexión admite los ajustes actuales. Las opciones varían según el modelo, la pantalla y el formato seleccionado. Con permiso del propietario, sigue la comprobación en pantalla y anota el resultado. Evita cambiar formato, color y audio a la vez; si falta la opción, comunica ese dato."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Respeta el alcance del resultado",
+          "paragraphs": [
+            "Copia el mensaje real, no un diagnóstico supuesto. Una comprobación correcta del enlace de pantalla no prueba la red doméstica ni garantiza que se reproduzca un programa. Compara después el mismo vídeo permitido y describe por separado cualquier síntoma restante. Conserva el acceso del reproductor y las preferencias; no hace falta restablecer el televisor ni borrar datos de la aplicación solo para leer el resultado. Comunica equipos, software y observación sin direcciones privadas de reproducción."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Vérification HDMI de Geo IPTV : notez la liaison d’affichage actuelle",
+      "excerpt": "Utilisez la vérification HDMI documentée de l’Apple TV 4K pour l’écran actuel. Séparez son résultat de l’accès réseau et de l’état de l’abonnement.",
+      "seo_title": "Vérification HDMI de Geo IPTV : notez la liaison d’affichage actuelle",
+      "seo_description": "Utilisez la vérification HDMI documentée de l’Apple TV 4K pour l’écran actuel. Séparez son résultat de l’accès réseau et de l’état de l’abonnement.",
+      "sections": [
+        {
+          "heading": "Identifiez d’abord la chaîne d’affichage",
+          "paragraphs": [
+            "La vérification HDMI de Geo IPTV concerne la liaison entre l’Apple TV 4K et l’écran, pas la connexion internet. Notez le modèle, le téléviseur et tout ampli ou commutateur intermédiaire. Précisez si le défaut apparaît aussi dans les menus système ou seulement pendant un programme. Ces observations décrivent le problème sans conclure qu’un câble ou le fournisseur est défaillant."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lisez l’option de test documentée",
+          "paragraphs": [
+            "Le guide Apple TV 4K place Vérifier la connexion HDMI dans Réglages, puis Vidéo et audio. Cette option vérifie si la liaison prend en charge les réglages actuels. Les options dépendent du modèle, de l’écran et du format choisi. Avec l’accord du propriétaire, suivez le contrôle affiché et notez le résultat. Ne modifiez pas simultanément format, couleur et audio ; si l’option manque, signalez-le."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Gardez le résultat dans son périmètre",
+          "paragraphs": [
+            "Relevez le message réel plutôt qu’un diagnostic supposé. Un contrôle réussi de la liaison d’affichage ne teste pas le réseau domestique et ne garantit pas la lecture d’un programme. Comparez ensuite le même extrait autorisé et décrivez séparément tout symptôme persistant. Conservez l’accès du lecteur et les préférences ; réinitialiser le téléviseur ou effacer les données de l’application n’est pas nécessaire pour lire ce résultat. Transmettez équipements, logiciel et observation sans adresses privées de lecture."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Controllo HDMI di Geo IPTV: annota il collegamento attuale allo schermo",
+      "excerpt": "Usa il controllo HDMI documentato di Apple TV 4K per lo schermo esistente. Distingui il risultato dalla rete e dallo stato del piano di visione.",
+      "seo_title": "Controllo HDMI di Geo IPTV: annota il collegamento attuale allo schermo",
+      "seo_description": "Usa il controllo HDMI documentato di Apple TV 4K per lo schermo esistente. Distingui il risultato dalla rete e dallo stato del piano di visione.",
+      "sections": [
+        {
+          "heading": "Identifica prima la catena dello schermo",
+          "paragraphs": [
+            "Il controllo HDMI di Geo IPTV riguarda il collegamento fra Apple TV 4K e lo schermo, non internet. Annota il modello, il televisore ed eventuali ricevitori o commutatori intermedi. Indica se il difetto compare anche nei menu di sistema oppure solo durante un programma. Queste osservazioni descrivono il problema senza affermare che un cavo o il fornitore siano guasti."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’opzione di verifica documentata",
+          "paragraphs": [
+            "La guida di Apple TV 4K colloca Verifica connessione HDMI in Impostazioni, poi Video e audio. Serve a controllare se il collegamento supporta le impostazioni attuali. Le opzioni variano con modello, schermo e formato scelto. Con il consenso del proprietario, segui il controllo sullo schermo e annota il risultato. Non cambiare insieme formato, colore e audio; se l’opzione manca, riferisci questo fatto."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Rispetta i limiti del risultato",
+          "paragraphs": [
+            "Scrivi il messaggio effettivo, non una diagnosi presunta. Un controllo riuscito del collegamento allo schermo non verifica la rete domestica né garantisce la riproduzione di un programma. Confronta poi lo stesso filmato consentito e descrivi separatamente eventuali sintomi rimasti. Conserva accesso del lettore e preferenze: non occorre ripristinare il televisore o cancellare i dati dell’app solo per leggere il risultato. Comunica apparecchi, software e osservazione senza indirizzi privati di riproduzione."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV HDMI-controle: noteer de huidige verbinding met het scherm",
+      "excerpt": "Gebruik de gedocumenteerde HDMI-controle van Apple TV 4K voor je huidige scherm. Houd de uitkomst apart van internettoegang en de status van je kijkpakket.",
+      "seo_title": "Geo IPTV HDMI-controle: noteer de huidige verbinding met het scherm",
+      "seo_description": "Gebruik de gedocumenteerde HDMI-controle van Apple TV 4K voor je huidige scherm. Houd de uitkomst apart van internettoegang en de status van je kijkpakket.",
+      "sections": [
+        {
+          "heading": "Bepaal eerst de beeldketen",
+          "paragraphs": [
+            "Een Geo IPTV HDMI-controle gaat over de verbinding tussen Apple TV 4K en het scherm, niet over internet. Noteer het model, de televisie en eventuele receiver of schakelaar ertussen. Beschrijf of het beeldprobleem ook in systeemmenu’s zichtbaar is of alleen tijdens één programma. Daarmee beschrijf je de klacht zonder te stellen dat een kabel of aanbieder defect is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de gedocumenteerde testoptie",
+          "paragraphs": [
+            "Apple noemt Controleer HDMI-verbinding bij Instellingen en vervolgens Video en audio op Apple TV 4K. Hiermee wordt gecontroleerd of de verbinding de huidige instellingen ondersteunt. Opties verschillen per model, scherm en gekozen formaat. Volg met toestemming van de eigenaar de controle op het scherm en noteer de uitkomst. Verander formaat, kleur en geluid niet tegelijk; meld het als de optie ontbreekt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Beperk de conclusie tot de controle",
+          "paragraphs": [
+            "Noteer de echte melding in plaats van een vermoedelijke diagnose. Een geslaagde beeldverbindingstest controleert het thuisnetwerk niet en garandeert geen programmaweergave. Vergelijk daarna dezelfde toegestane clip en beschrijf resterende klachten afzonderlijk. Behoud de opgeslagen spelertoegang en voorkeuren; een televisiereset of het wissen van appgegevens is niet nodig om deze uitslag te lezen. Deel apparatuur, software en waarneming met ondersteuning, zonder privé-afspeeladressen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Verificação HDMI da Geo IPTV: anote a ligação atual ao ecrã",
+      "excerpt": "Use a verificação HDMI documentada da Apple TV 4K no ecrã existente. Separe o resultado do acesso à internet e do estado do plano de visualização.",
+      "seo_title": "Verificação HDMI da Geo IPTV: anote a ligação atual ao ecrã",
+      "seo_description": "Use a verificação HDMI documentada da Apple TV 4K no ecrã existente. Separe o resultado do acesso à internet e do estado do plano de visualização.",
+      "sections": [
+        {
+          "heading": "Identifique primeiro a cadeia de imagem",
+          "paragraphs": [
+            "Uma verificação HDMI da Geo IPTV trata da ligação entre a Apple TV 4K e o ecrã, não da internet. Anote o modelo, o televisor e qualquer recetor ou comutador intermédio. Indique se o problema aparece também nos menus do sistema ou apenas durante um programa. Estas observações descrevem o sintoma sem concluir que um cabo ou o fornecedor falhou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a opção de teste documentada",
+          "paragraphs": [
+            "O guia da Apple TV 4K apresenta Verificar ligação HDMI em Definições, depois Vídeo e áudio. A finalidade é verificar se a ligação suporta as definições atuais. As opções variam conforme o modelo, o ecrã e o formato selecionado. Com autorização do proprietário, siga o teste apresentado e anote o resultado. Não altere formato, cor e áudio ao mesmo tempo; se a opção não existir, comunique isso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Respeite o alcance do resultado",
+          "paragraphs": [
+            "Registe a mensagem real, não um diagnóstico presumido. Um teste bem-sucedido da ligação ao ecrã não verifica a rede doméstica nem garante a reprodução de um programa. Compare depois o mesmo vídeo autorizado e descreva separadamente qualquer sintoma persistente. Preserve o acesso do leitor e as preferências: não é necessário repor o televisor ou apagar dados da aplicação só para ler este resultado. Partilhe equipamentos, software e observação sem endereços privados de reprodução."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Проверка HDMI для Geo IPTV: запишите текущее подключение экрана",
+      "excerpt": "Используйте описанную Apple проверку HDMI на Apple TV 4K. Отделяйте её результат от доступа к сети и состояния подписки на просмотр.",
+      "seo_title": "Проверка HDMI для Geo IPTV: запишите текущее подключение экрана",
+      "seo_description": "Используйте описанную Apple проверку HDMI на Apple TV 4K. Отделяйте её результат от доступа к сети и состояния подписки на просмотр.",
+      "sections": [
+        {
+          "heading": "Сначала определите цепочку подключения",
+          "paragraphs": [
+            "Проверка HDMI для Geo IPTV касается связи между Apple TV 4K и экраном, а не интернета. Запишите модель приставки, телевизор и промежуточный ресивер или переключатель. Укажите, заметен ли дефект также в системных меню либо только в одной программе. Эти наблюдения помогают описать проблему, но не доказывают неисправность кабеля или сбой поставщика."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте описание проверки",
+          "paragraphs": [
+            "Руководство Apple TV 4K указывает «Проверить подключение HDMI» в разделе «Настройки», затем «Видео и аудио». Функция проверяет, поддерживает ли соединение текущие параметры. Набор пунктов зависит от модели, экрана и выбранного формата. С согласия владельца выполните экранные указания и запишите результат. Не меняйте одновременно формат, цвет и звук; если пункта нет, сообщите об этом."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Учитывайте границы результата",
+          "paragraphs": [
+            "Запишите фактическое сообщение, а не предполагаемый диагноз. Успешная проверка связи с экраном не проверяет домашнюю сеть и не гарантирует воспроизведение программы. Затем сравните тот же разрешённый ролик и отдельно опишите оставшийся симптом. Сохраните доступ плеера и настройки: для чтения результата не нужны сброс телевизора или очистка данных приложения. Передайте поддержке состав оборудования, версию ПО и наблюдение без частных адресов воспроизведения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV کی HDMI جانچ: اسکرین کا موجودہ کنکشن لکھیں",
+      "excerpt": "موجودہ اسکرین کے لیے Apple TV 4K کی دستاویزی HDMI جانچ دیکھیں۔ اس کے نتیجے کو انٹرنیٹ رسائی اور دیکھنے والے منصوبے کی حالت سے الگ رکھیں۔",
+      "seo_title": "Geo IPTV کی HDMI جانچ: اسکرین کا موجودہ کنکشن لکھیں",
+      "seo_description": "موجودہ اسکرین کے لیے Apple TV 4K کی دستاویزی HDMI جانچ دیکھیں۔ اس کے نتیجے کو انٹرنیٹ رسائی اور دیکھنے والے منصوبے کی حالت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہلے اسکرین تک آلات کی ترتیب پہچانیں",
+          "paragraphs": [
+            "Geo IPTV کی HDMI جانچ Apple TV 4K اور اسکرین کے رابطے سے متعلق ہے، انٹرنیٹ کنکشن سے نہیں۔ ماڈل، ٹی وی اور درمیان کے ریسیور یا سوئچ کا نام لکھیں۔ دیکھیں کہ تصویر کی خرابی نظام کے مینیو میں بھی آتی ہے یا صرف ایک پروگرام میں۔ یہ مشاہدات مسئلہ بیان کرتے ہیں؛ ان سے کیبل خراب ہونے یا فراہم کنندہ کی ناکامی کا فیصلہ نہیں ہوتا۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دستاویزی جانچ کا اختیار پڑھیں",
+          "paragraphs": [
+            "Apple TV 4K کی رہنمائی ترتیبات، پھر ویڈیو اور آڈیو میں HDMI کنکشن کی جانچ کا اختیار بتاتی ہے۔ اس کا مقصد دیکھنا ہے کہ رابطہ موجودہ ترتیبات کے موافق ہے یا نہیں۔ اختیارات ماڈل، اسکرین اور منتخب فارمیٹ کے مطابق بدلتے ہیں۔ مالک کی اجازت سے اسکرین کی ہدایات اپنائیں اور نتیجہ لکھیں۔ نہ فارمیٹ، رنگ اور آواز ایک ساتھ بدلیں؛ اختیار نہ ملے تو یہی بات بتائیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "نتیجے کی حد برقرار رکھیں",
+          "paragraphs": [
+            "اصل پیغام لکھیں، فرض کیا ہوا سبب نہیں۔ اسکرین کے رابطے کی کامیاب جانچ نہ گھر کی نیٹ ورک جانچتی ہے اور نہ پروگرام چلنے کی ضمانت دیتی ہے۔ بعد میں وہی مجاز ویڈیو دیکھیں اور باقی علامت الگ بیان کریں۔ محفوظ پلیئر رسائی اور ترجیحات برقرار رکھیں؛ صرف نتیجہ پڑھنے کے لیے نہ ٹی وی ری سیٹ کریں اور نہ ایپ کا ڈیٹا مٹائیں۔ معاونت کو آلات کی ترتیب، سافٹ ویئر اور مشاہدہ بتائیں، نجی پلے بیک پتے نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "فحص HDMI مع Geo IPTV: سجّل اتصال الشاشة الحالي",
+      "excerpt": "استخدم فحص HDMI الموثق من Apple TV 4K للشاشة الحالية. افصل نتيجته عن الوصول إلى الإنترنت وحالة خطة المشاهدة.",
+      "seo_title": "فحص HDMI مع Geo IPTV: سجّل اتصال الشاشة الحالي",
+      "seo_description": "استخدم فحص HDMI الموثق من Apple TV 4K للشاشة الحالية. افصل نتيجته عن الوصول إلى الإنترنت وحالة خطة المشاهدة.",
+      "sections": [
+        {
+          "heading": "حدّد سلسلة أجهزة العرض أولاً",
+          "paragraphs": [
+            "يتعلق فحص HDMI مع Geo IPTV بالوصلة بين Apple TV 4K والشاشة، لا باتصال الإنترنت. سجّل الطراز والتلفزيون وأي مستقبل أو محوّل بينهما. حدّد هل يظهر عيب الصورة في قوائم النظام أيضاً أم في برنامج واحد فقط. تساعد هذه الملاحظات على وصف المشكلة، لكنها لا تثبت تعطل كابل أو إخفاق المزوّد."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ خيار الفحص الموثّق",
+          "paragraphs": [
+            "يسرد دليل Apple TV 4K خيار التحقق من اتصال HDMI ضمن الإعدادات، ثم الفيديو والصوت. غرضه التحقق من دعم الوصلة للإعدادات الحالية. تختلف الخيارات باختلاف الطراز والشاشة والتنسيق المحدد. بموافقة المالك، اتبع الفحص الظاهر وسجّل النتيجة. لا تغيّر التنسيق واللون والصوت معاً؛ وإذا غاب الخيار، فأبلغ عن غيابه."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "التزم بنطاق النتيجة",
+          "paragraphs": [
+            "دوّن الرسالة الفعلية، لا تشخيصاً مفترضاً. نجاح فحص وصلة الشاشة لا يفحص الشبكة المنزلية ولا يضمن تشغيل برنامج. قارن بعدها المقطع المسموح نفسه، وصف أي عَرَض باقٍ بصورة منفصلة. احتفظ بوصول المشغّل المحفوظ والتفضيلات؛ لا حاجة لإعادة ضبط التلفزيون أو مسح بيانات التطبيق لمجرد قراءة النتيجة. أرسل للدعم سلسلة الأجهزة والبرنامج والملاحظة دون عناوين تشغيل خاصة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV की HDMI जाँच: स्क्रीन का मौजूदा कनेक्शन लिखें",
+      "excerpt": "मौजूदा स्क्रीन के लिए Apple TV 4K की दस्तावेज़ित HDMI जाँच देखें। नतीजे को इंटरनेट पहुँच और देखने वाले प्लान की स्थिति से अलग रखें।",
+      "seo_title": "Geo IPTV की HDMI जाँच: स्क्रीन का मौजूदा कनेक्शन लिखें",
+      "seo_description": "मौजूदा स्क्रीन के लिए Apple TV 4K की दस्तावेज़ित HDMI जाँच देखें। नतीजे को इंटरनेट पहुँच और देखने वाले प्लान की स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "पहले स्क्रीन तक उपकरणों की श्रृंखला पहचानें",
+          "paragraphs": [
+            "Geo IPTV की HDMI जाँच Apple TV 4K और स्क्रीन के बीच के संपर्क के बारे में है, इंटरनेट के बारे में नहीं। मॉडल, टीवी और बीच के रिसीवर या स्विच को लिखें। बताएँ कि चित्र की समस्या सिस्टम मेनू में भी है या केवल एक कार्यक्रम में। ये बातें समस्या समझाती हैं; इनसे केबल खराब होने या प्रदाता के विफल होने का निष्कर्ष नहीं निकलता।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ित जाँच का विकल्प पढ़ें",
+          "paragraphs": [
+            "Apple TV 4K का मार्गदर्शन सेटिंग, फिर वीडियो और ऑडियो में HDMI कनेक्शन जाँचने का विकल्प बताता है। इसका उद्देश्य देखना है कि संपर्क मौजूदा सेटिंग का समर्थन करता है या नहीं। विकल्प मॉडल, स्क्रीन और चुने प्रारूप से बदलते हैं। मालिक की अनुमति से स्क्रीन के निर्देश अपनाएँ और नतीजा लिखें। प्रारूप, रंग और ऑडियो एक साथ न बदलें; विकल्प न मिले तो यही बताएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV HDMI guide",
+              "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "नतीजे की सीमा बनाए रखें",
+          "paragraphs": [
+            "असली संदेश लिखें, अनुमानित कारण नहीं। स्क्रीन संपर्क की सफल जाँच न घरेलू नेटवर्क जाँचती है और न कार्यक्रम चलने की गारंटी देती है। बाद में उसी अधिकृत क्लिप की तुलना करें और बची समस्या अलग बताएँ। सहेजी प्लेयर पहुँच और प्राथमिकताएँ बनाए रखें; केवल नतीजा पढ़ने के लिए न टीवी रीसेट करें और न ऐप डेटा मिटाएँ। सहायता को उपकरणों की श्रृंखला, सॉफ़्टवेयर और अनुभव बताएँ, निजी प्लेबैक पते नहीं।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple TV guide: video settings and Check HDMI Connection",
+      "url": "https://support.apple.com/en-uz/guide/tv/atvb553e7afe/tvos"
+    }
+  ]
+}

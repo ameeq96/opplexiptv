@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-26",
+  "topic": "Identify Pixel heat warnings during 5G Live IPTV playback and follow documented cooling guidance before interpreting reduced connections or shutdown as subscription expiry.",
+  "primary_keyword": "5G Live IPTV phone temperature",
+  "slug": "5g-pixel-phone-temperature-warning-and-cooling-guidance",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV phone temperature: read a Pixel heat warning",
+      "excerpt": "Recognise a Pixel heat warning during playback. Follow Google’s cooling guidance and separate device protection from a player or subscription fault.",
+      "seo_title": "5G Live IPTV phone temperature: read a Pixel heat warning",
+      "seo_description": "Recognise a Pixel heat warning during playback. Follow Google’s cooling guidance and separate device protection from a player or subscription fault.",
+      "sections": [
+        {
+          "heading": "Record the actual device warning",
+          "paragraphs": [
+            "A 5G Live IPTV phone temperature check starts with the actual warning, not a subscription renewal. Note the Pixel model, whether the phone is charging and the wording displayed. Google says video playback, hotspot use and other demanding activities can warm a phone, especially while charging. Warmth alone does not establish which app caused a problem or whether a viewing service has expired."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respect temperature protection first",
+          "paragraphs": [
+            "Google describes protection that may limit performance, charging or mobile data and Wi-Fi. If the phone gets too hot, its guidance is to disconnect power if plugged in, move it to a cooler place and not use it until it has cooled down. Keep it out of direct sunlight. Do not force streaming to continue or try to bypass the warning. No specific cooling time or viewing duration is promised."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Use the model-specific help route",
+          "paragraphs": [
+            "For Pixel 6 and later, Google documents Settings, Battery, Battery diagnostics, then Phone is very warm for device guidance. Follow the options actually present instead of applying this path to every Android phone. If it turned off, let it cool before restarting; repeated shutdowns warrant Pixel support. Preserve player data and account access. Record any remaining playback symptom after cooling; do not clear app data or buy another plan merely to explain a heat warning."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Temperatura del móvil con 5G Live IPTV: lee el aviso del Pixel",
+      "excerpt": "Reconoce un aviso de calor del Pixel durante la reproducción. Sigue las indicaciones de Google y distingue la protección del móvil del estado del servicio.",
+      "seo_title": "Temperatura del móvil con 5G Live IPTV: lee el aviso del Pixel",
+      "seo_description": "Reconoce un aviso de calor del Pixel durante la reproducción. Sigue las indicaciones de Google y distingue la protección del móvil del estado del servicio.",
+      "sections": [
+        {
+          "heading": "Anota el aviso real del dispositivo",
+          "paragraphs": [
+            "La revisión de temperatura del móvil con 5G Live IPTV empieza por el aviso real, no por renovar la suscripción. Anota el modelo Pixel, si está cargando y el mensaje mostrado. Google explica que reproducir vídeos, usar el punto de acceso y otras tareas exigentes pueden calentar el móvil, sobre todo al cargarlo. El calor por sí solo no identifica la aplicación causante ni demuestra que el servicio haya caducado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respeta primero la protección térmica",
+          "paragraphs": [
+            "Google describe protecciones que pueden limitar rendimiento, carga, datos móviles o Wi-Fi. Si el teléfono se calienta demasiado, recomienda desconectarlo de la corriente si está enchufado, llevarlo a un lugar más fresco y no usarlo hasta que se enfríe. Evita la luz solar directa. No fuerces la reproducción ni intentes eludir el aviso. No se promete un tiempo concreto de enfriamiento ni de visualización."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Usa la ayuda correspondiente al modelo",
+          "paragraphs": [
+            "Para Pixel 6 y posteriores, Google documenta Ajustes, Batería, Diagnóstico de batería y El teléfono está muy caliente. Sigue las opciones presentes, sin aplicar esta ruta a cualquier Android. Si se apagó, deja que se enfríe antes de reiniciarlo; si ocurre repetidamente, contacta con asistencia de Pixel. Conserva datos del reproductor y acceso. Describe los síntomas restantes tras enfriarse; no borres datos ni compres otro plan solo para explicar el aviso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Température du téléphone avec 5G Live IPTV : lisez l’alerte Pixel",
+      "excerpt": "Identifiez une alerte de chaleur Pixel pendant la lecture. Suivez les conseils de Google et distinguez la protection du téléphone de l’état du service.",
+      "seo_title": "Température du téléphone avec 5G Live IPTV : lisez l’alerte Pixel",
+      "seo_description": "Identifiez une alerte de chaleur Pixel pendant la lecture. Suivez les conseils de Google et distinguez la protection du téléphone de l’état du service.",
+      "sections": [
+        {
+          "heading": "Relevez l’alerte réelle de l’appareil",
+          "paragraphs": [
+            "Une vérification de température avec 5G Live IPTV commence par l’alerte affichée, pas par un renouvellement. Notez le modèle Pixel, s’il est en charge et le message exact. Google indique que vidéo, partage de connexion et autres activités exigeantes peuvent chauffer le téléphone, surtout pendant la charge. La chaleur seule ne désigne pas l’application responsable et ne prouve pas l’expiration du service."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respectez d’abord la protection thermique",
+          "paragraphs": [
+            "Google décrit une protection pouvant limiter performances, charge, données mobiles ou Wi-Fi. Si le téléphone chauffe trop, ses conseils sont de débrancher l’alimentation s’il est branché, de le déplacer dans un endroit plus frais et de ne pas l’utiliser avant refroidissement. Évitez le soleil direct. Ne forcez pas la diffusion et ne contournez pas l’alerte. Aucun délai précis de refroidissement ou de visionnage n’est promis."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Utilisez l’aide adaptée au modèle",
+          "paragraphs": [
+            "Pour Pixel 6 et suivants, Google documente Réglages, Batterie, Diagnostic de la batterie, puis Le téléphone est très chaud. Suivez les options présentes sans généraliser ce chemin à tout Android. S’il s’est éteint, laissez-le refroidir avant de redémarrer ; des arrêts répétés nécessitent l’assistance Pixel. Conservez données du lecteur et accès. Décrivez les symptômes restants après refroidissement ; n’effacez pas les données et n’achetez pas un autre forfait simplement pour expliquer l’alerte."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Temperatura del telefono con 5G Live IPTV: leggi l’avviso Pixel",
+      "excerpt": "Riconosci un avviso di calore del Pixel durante la riproduzione. Segui le indicazioni di Google e distingui la protezione del telefono dallo stato del servizio.",
+      "seo_title": "Temperatura del telefono con 5G Live IPTV: leggi l’avviso Pixel",
+      "seo_description": "Riconosci un avviso di calore del Pixel durante la riproduzione. Segui le indicazioni di Google e distingui la protezione del telefono dallo stato del servizio.",
+      "sections": [
+        {
+          "heading": "Annota l’avviso effettivo del dispositivo",
+          "paragraphs": [
+            "Il controllo della temperatura con 5G Live IPTV parte dall’avviso reale, non dal rinnovo dell’abbonamento. Annota modello Pixel, eventuale ricarica e messaggio visualizzato. Google spiega che video, hotspot e altre attività impegnative possono scaldare il telefono, soprattutto durante la ricarica. Il calore da solo non identifica l’app responsabile né dimostra che il servizio sia scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Rispetta prima la protezione termica",
+          "paragraphs": [
+            "Google descrive protezioni che possono limitare prestazioni, ricarica, dati mobili o Wi-Fi. Se il telefono diventa troppo caldo, consiglia di scollegare l’alimentazione se collegata, spostarlo in un luogo più fresco e non usarlo finché non si è raffreddato. Evita il sole diretto. Non forzare lo streaming e non aggirare l’avviso. Non viene promesso un tempo preciso di raffreddamento o visione."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Usa l’assistenza adatta al modello",
+          "paragraphs": [
+            "Per Pixel 6 e successivi, Google documenta Impostazioni, Batteria, Diagnostica della batteria e Il telefono è molto caldo. Segui le opzioni effettive senza applicare il percorso a ogni Android. Se si è spento, lascialo raffreddare prima di riavviarlo; per spegnimenti ripetuti contatta l’assistenza Pixel. Conserva dati del lettore e accesso. Descrivi eventuali sintomi dopo il raffreddamento; non cancellare dati o comprare un altro piano solo per spiegare l’avviso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Telefoontemperatuur bij 5G Live IPTV: lees de Pixel-hittewaarschuwing",
+      "excerpt": "Herken een Pixel-hittewaarschuwing tijdens het kijken. Volg Googles koeladvies en onderscheid toestelbeveiliging van een spelerprobleem of verlopen abonnement.",
+      "seo_title": "Telefoontemperatuur bij 5G Live IPTV: lees de Pixel-hittewaarschuwing",
+      "seo_description": "Herken een Pixel-hittewaarschuwing tijdens het kijken. Volg Googles koeladvies en onderscheid toestelbeveiliging van een spelerprobleem of verlopen abonnement.",
+      "sections": [
+        {
+          "heading": "Noteer de echte toestelmelding",
+          "paragraphs": [
+            "Een controle van de telefoontemperatuur bij 5G Live IPTV begint met de melding, niet met abonnementsverlenging. Noteer het Pixel-model, of de telefoon oplaadt en de getoonde tekst. Google zegt dat video, hotspotgebruik en andere zware taken een telefoon kunnen opwarmen, vooral tijdens opladen. Warmte alleen bewijst niet welke app de oorzaak is of dat een kijkdienst verlopen is."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respecteer eerst de temperatuurbeveiliging",
+          "paragraphs": [
+            "Google beschrijft beveiliging die prestaties, opladen, mobiele data of wifi kan beperken. Wordt de telefoon te heet, dan adviseert Google de voeding los te koppelen indien aangesloten, hem naar een koelere plek te brengen en niet te gebruiken totdat hij afgekoeld is. Houd hem uit direct zonlicht. Forceer streaming niet en omzeil de waarschuwing niet. Er wordt geen vaste afkoel- of kijktijd beloofd."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Gebruik de hulp voor jouw model",
+          "paragraphs": [
+            "Voor Pixel 6 en nieuwer beschrijft Google Instellingen, Batterij, Batterijdiagnose en Telefoon is erg warm. Volg aanwezige opties; pas deze route niet op elke Android toe. Is hij uitgeschakeld, laat hem afkoelen voor herstarten; neem bij herhaald uitschakelen contact op met Pixel-ondersteuning. Behoud spelergegevens en toegang. Beschrijf klachten die na afkoelen overblijven; wis geen appgegevens en koop geen ander pakket alleen om de hittemelding te verklaren."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Temperatura do telefone com 5G Live IPTV: leia o aviso do Pixel",
+      "excerpt": "Reconheça um aviso de calor do Pixel durante a reprodução. Siga as orientações da Google e distinga a proteção do telefone do estado do serviço.",
+      "seo_title": "Temperatura do telefone com 5G Live IPTV: leia o aviso do Pixel",
+      "seo_description": "Reconheça um aviso de calor do Pixel durante a reprodução. Siga as orientações da Google e distinga a proteção do telefone do estado do serviço.",
+      "sections": [
+        {
+          "heading": "Registe o aviso real do dispositivo",
+          "paragraphs": [
+            "A verificação da temperatura com 5G Live IPTV começa pelo aviso apresentado, não pela renovação. Anote o modelo Pixel, se está a carregar e a mensagem exata. A Google explica que vídeos, ponto de acesso e outras tarefas exigentes podem aquecer o telefone, sobretudo durante o carregamento. O calor por si só não identifica a aplicação responsável nem prova que o serviço expirou."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Respeite primeiro a proteção térmica",
+          "paragraphs": [
+            "A Google descreve proteções que podem limitar desempenho, carregamento, dados móveis ou Wi-Fi. Se o telefone ficar demasiado quente, recomenda desligar a alimentação se estiver ligado, levá-lo para um local mais fresco e não o usar até arrefecer. Evite a luz solar direta. Não force a transmissão nem tente contornar o aviso. Não é prometido um tempo específico de arrefecimento ou visualização."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Use a ajuda adequada ao modelo",
+          "paragraphs": [
+            "Para Pixel 6 e posteriores, a Google documenta Definições, Bateria, Diagnóstico da bateria e O telefone está muito quente. Siga as opções presentes, sem aplicar este caminho a qualquer Android. Se desligou, deixe arrefecer antes de reiniciar; desligamentos repetidos justificam contactar o apoio Pixel. Preserve dados do leitor e acesso. Registe sintomas restantes após arrefecer; não apague dados nem compre outro plano apenas para explicar o aviso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Температура телефона с 5G Live IPTV: прочитайте предупреждение Pixel",
+      "excerpt": "Распознайте предупреждение Pixel о нагреве при просмотре. Следуйте советам Google и отличайте защиту устройства от сбоя плеера или состояния подписки.",
+      "seo_title": "Температура телефона с 5G Live IPTV: прочитайте предупреждение Pixel",
+      "seo_description": "Распознайте предупреждение Pixel о нагреве при просмотре. Следуйте советам Google и отличайте защиту устройства от сбоя плеера или состояния подписки.",
+      "sections": [
+        {
+          "heading": "Запишите реальное предупреждение",
+          "paragraphs": [
+            "Проверка температуры телефона с 5G Live IPTV начинается с сообщения, а не продления подписки. Запишите модель Pixel, заряжается ли телефон и точный текст. Google отмечает, что видео, работа точки доступа и другие ресурсоёмкие задачи могут нагревать телефон, особенно при зарядке. Сам нагрев не устанавливает виновное приложение и не доказывает истечение подписки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Сначала соблюдайте температурную защиту",
+          "paragraphs": [
+            "Google описывает защиту, которая может ограничить производительность, зарядку, мобильные данные или Wi-Fi. Если телефон слишком горячий, рекомендуется отключить питание, если оно подключено, перенести его в более прохладное место и не использовать до остывания. Избегайте прямых солнечных лучей. Не продолжайте просмотр принудительно и не обходите предупреждение. Конкретное время охлаждения или просмотра не обещается."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Используйте помощь для своей модели",
+          "paragraphs": [
+            "Для Pixel 6 и новее Google указывает «Настройки», «Батарея», «Диагностика батареи», затем «Телефон очень тёплый». Следуйте имеющимся пунктам, не перенося путь на любой Android. Если устройство выключилось, дайте ему остыть перед перезапуском; при повторных выключениях обратитесь в поддержку Pixel. Сохраните данные плеера и доступ. Опишите симптомы после охлаждения; не очищайте данные и не покупайте другой план лишь для объяснения предупреждения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV میں فون کا درجۂ حرارت: Pixel کی گرمی کی تنبیہ پڑھیں",
+      "excerpt": "پلے بیک کے دوران Pixel کی گرمی کی تنبیہ پہچانیں۔ Google کی ٹھنڈا کرنے کی ہدایت اپنائیں اور آلے کے تحفظ کو پلیئر یا رکنیت کی خرابی سے الگ رکھیں۔",
+      "seo_title": "5G Live IPTV میں فون کا درجۂ حرارت: Pixel کی گرمی کی تنبیہ پڑھیں",
+      "seo_description": "پلے بیک کے دوران Pixel کی گرمی کی تنبیہ پہچانیں۔ Google کی ٹھنڈا کرنے کی ہدایت اپنائیں اور آلے کے تحفظ کو پلیئر یا رکنیت کی خرابی سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "آلے کی اصل تنبیہ لکھیں",
+          "paragraphs": [
+            "5G Live IPTV میں فون کے درجۂ حرارت کی جانچ اصل تنبیہ سے شروع ہوتی ہے، رکنیت کی تجدید سے نہیں۔ Pixel کا ماڈل، چارج ہونے کی حالت اور ظاہر پیغام لکھیں۔ Google کے مطابق ویڈیو، ہاٹ اسپاٹ اور بھاری کام فون گرم کر سکتے ہیں، خصوصاً چارج کے دوران۔ صرف گرمی یہ ثابت نہیں کرتی کہ کون سی ایپ وجہ ہے یا دیکھنے کی سروس ختم ہو گئی ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "پہلے حرارت کے تحفظ کا احترام کریں",
+          "paragraphs": [
+            "Google ایسا تحفظ بیان کرتا ہے جو کارکردگی، چارج، موبائل ڈیٹا یا Wi-Fi محدود کر سکتا ہے۔ فون بہت گرم ہو تو اس کی ہدایت ہے کہ بجلی لگی ہو تو منقطع کریں، ٹھنڈی جگہ لے جائیں اور ٹھنڈا ہونے تک استعمال نہ کریں۔ براہ راست دھوپ سے بچائیں۔ نہ زبردستی اسٹریمنگ جاری رکھیں اور نہ تنبیہ کو بائی پاس کریں۔ ٹھنڈا ہونے یا دیکھنے کے کسی مقرر وقت کا وعدہ نہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اپنے ماڈل کے لیے مدد دیکھیں",
+          "paragraphs": [
+            "Pixel 6 اور بعد کے ماڈل کے لیے Google ترتیبات، بیٹری، بیٹری کی تشخیص، پھر فون بہت گرم ہے کا راستہ بتاتا ہے۔ موجود اختیارات اپنائیں؛ اسے ہر Android پر لاگو نہ کریں۔ فون بند ہوا ہو تو دوبارہ چلانے سے پہلے ٹھنڈا ہونے دیں؛ بار بار بند ہو تو Pixel معاونت سے رابطہ کریں۔ پلیئر ڈیٹا اور رسائی محفوظ رکھیں۔ ٹھنڈا ہونے کے بعد باقی علامت لکھیں؛ صرف گرمی کی تنبیہ سمجھنے کے لیے نہ ایپ ڈیٹا مٹائیں اور نہ دوسرا منصوبہ خریدیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "حرارة الهاتف مع 5G Live IPTV: اقرأ تحذير Pixel",
+      "excerpt": "تعرّف إلى تحذير حرارة Pixel أثناء التشغيل. اتبع إرشادات Google للتبريد وافصل حماية الجهاز عن عطل المشغّل أو حالة الاشتراك.",
+      "seo_title": "حرارة الهاتف مع 5G Live IPTV: اقرأ تحذير Pixel",
+      "seo_description": "تعرّف إلى تحذير حرارة Pixel أثناء التشغيل. اتبع إرشادات Google للتبريد وافصل حماية الجهاز عن عطل المشغّل أو حالة الاشتراك.",
+      "sections": [
+        {
+          "heading": "سجّل تحذير الجهاز الفعلي",
+          "paragraphs": [
+            "يبدأ فحص حرارة الهاتف مع 5G Live IPTV بالتحذير الفعلي، لا بتجديد الاشتراك. سجّل طراز Pixel، وهل الهاتف قيد الشحن، ونص الرسالة. تقول Google إن الفيديو ونقطة الاتصال والمهام الثقيلة قد تدفئ الهاتف، خصوصاً أثناء الشحن. الدفء وحده لا يحدّد التطبيق المسبّب ولا يثبت انتهاء خدمة المشاهدة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "احترم الحماية الحرارية أولاً",
+          "paragraphs": [
+            "تصف Google حماية قد تقيّد الأداء أو الشحن أو بيانات الهاتف أو Wi-Fi. إذا أصبح الهاتف ساخناً جداً، فتوصيتها فصل مصدر الطاقة إن كان موصولاً، ونقله إلى مكان أبرد وعدم استخدامه حتى يبرد. أبعده عن الشمس المباشرة. لا تُجبر البث على الاستمرار ولا تحاول تجاوز التحذير. لا يوجد وعد بمدة تبريد أو مشاهدة محددة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "استخدم مساعدة الطراز المناسب",
+          "paragraphs": [
+            "لهواتف Pixel 6 والأحدث، توثّق Google مسار الإعدادات، البطارية، تشخيص البطارية، ثم الهاتف دافئ جداً. اتبع الخيارات الموجودة ولا تعمّم المسار على كل Android. إذا انطفأ الهاتف، دعه يبرد قبل إعادة تشغيله؛ يستدعي الانطفاء المتكرر دعم Pixel. احتفظ ببيانات المشغّل والوصول. سجّل الأعراض المتبقية بعد التبريد؛ لا تمسح البيانات ولا تشترِ خطة أخرى لمجرد تفسير التحذير."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV में फोन का तापमान: Pixel की गर्मी की चेतावनी पढ़ें",
+      "excerpt": "प्लेबैक के दौरान Pixel की गर्मी की चेतावनी पहचानें। Google के ठंडा करने वाले निर्देश अपनाएँ और डिवाइस सुरक्षा को प्लेयर या सदस्यता की समस्या से अलग रखें।",
+      "seo_title": "5G Live IPTV में फोन का तापमान: Pixel की गर्मी की चेतावनी पढ़ें",
+      "seo_description": "प्लेबैक के दौरान Pixel की गर्मी की चेतावनी पहचानें। Google के ठंडा करने वाले निर्देश अपनाएँ और डिवाइस सुरक्षा को प्लेयर या सदस्यता की समस्या से अलग रखें।",
+      "sections": [
+        {
+          "heading": "डिवाइस की असली चेतावनी लिखें",
+          "paragraphs": [
+            "5G Live IPTV में फोन के तापमान की जाँच असली चेतावनी से शुरू होती है, सदस्यता नवीनीकरण से नहीं। Pixel मॉडल, चार्ज होने की स्थिति और दिखा संदेश लिखें। Google के अनुसार वीडियो, हॉटस्पॉट और भारी काम फोन को गर्म कर सकते हैं, खासकर चार्ज करते समय। केवल गर्मी यह नहीं बताती कि कौन सी ऐप वजह है या देखने की सेवा समाप्त हुई है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "पहले तापमान सुरक्षा का सम्मान करें",
+          "paragraphs": [
+            "Google ऐसी सुरक्षा बताता है जो प्रदर्शन, चार्जिंग, मोबाइल डेटा या Wi-Fi सीमित कर सकती है। फोन बहुत गर्म हो तो निर्देश है कि बिजली लगी हो तो हटाएँ, ठंडी जगह ले जाएँ और ठंडा होने तक इस्तेमाल न करें। सीधी धूप से बचाएँ। न जबरन स्ट्रीमिंग जारी रखें और न चेतावनी को बायपास करें। ठंडा होने या देखने के किसी तय समय का वादा नहीं है।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel temperature guide",
+              "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अपने मॉडल के लिए सहायता देखें",
+          "paragraphs": [
+            "Pixel 6 और बाद के मॉडल के लिए Google सेटिंग, बैटरी, बैटरी निदान और फिर फोन बहुत गर्म है का रास्ता बताता है। उपलब्ध विकल्प अपनाएँ; उसे हर Android पर लागू न करें। फोन बंद हुआ हो तो चालू करने से पहले ठंडा होने दें; बार-बार बंद हो तो Pixel सहायता लें। प्लेयर डेटा और पहुँच बचाए रखें। ठंडा होने के बाद बची समस्या लिखें; केवल गर्मी की चेतावनी समझने के लिए न ऐप डेटा मिटाएँ और न दूसरा प्लान खरीदें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel Help: phone temperature and overheating guidance",
+      "url": "https://support.google.com/pixelphone/answer/3333708?hl=en"
+    }
+  ]
+}
