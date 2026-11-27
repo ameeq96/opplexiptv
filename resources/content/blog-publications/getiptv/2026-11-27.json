@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-27",
+  "topic": "Inspect the Google TV Streamer Voice Remote customizable star-button shortcut separately from Get IPTV app faults, Opplex or Filex provider access and recorded order/setup state.",
+  "primary_keyword": "Get IPTV remote shortcut",
+  "slug": "getiptv-google-tv-streamer-star-button-shortcut-choice",
+  "translations": {
+    "en": {
+      "title": "Get IPTV remote shortcut: check the Streamer remote’s star button",
+      "excerpt": "Identify the Google TV Streamer Voice Remote’s customizable button before changing a shortcut. Keep an app launch separate from player purchases, provider access and recorded order state.",
+      "seo_title": "Get IPTV remote shortcut: check the Streamer remote’s star button",
+      "seo_description": "Identify the Google TV Streamer Voice Remote’s customizable button before changing a shortcut. Keep an app launch separate from player purchases, provider access and recorded order state.",
+      "sections": [
+        {
+          "heading": "Identify the handset and what the button opens",
+          "paragraphs": [
+            "A Get IPTV remote shortcut check starts with the actual handset. Google’s guide here describes the Google TV Streamer Voice Remote’s star-marked customizable button; do not assume every television or older Chromecast remote has it. Record whether pressing it opens an app, the Google Home panel or device inputs. Reaching a different destination does not establish a player installation fault or an expired viewing plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the documented shortcut choices",
+          "paragraphs": [
+            "Google documents those three shortcut types. For a favorite app, select an app from the displayed list and choose Create shortcut; use an existing compatible player only if it is listed. To edit a shortcut, the guide describes holding the star button for one to two seconds. An existing input shortcut has a specific route: All Settings, Remotes & Accessories, Set up remote buttons, Customizable button. Keep the path between the remote and display unobstructed as directed. Let the owner choose before changing a shared shortcut."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirm the destination rather than buying access",
+          "paragraphs": [
+            "Try the owner’s chosen shortcut and note which screen opens. Opening a player does not buy its licence, activate Opplex or Filex, or confirm a Get IPTV order. Check the actual provider, duration and recorded payment/setup state separately; player costs are distinct and unstated Filex connection allowances need confirmation. If the documented option is absent, record the device and remote models. Do not install a button remapper, erase player data or repeat payment just to obtain a shortcut."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Atajo del mando para Get IPTV: comprueba el botón estrella de Streamer",
+      "excerpt": "Identifica el botón personalizable de Google TV Streamer Voice Remote antes de cambiar su atajo. Separa abrir una aplicación de comprar el reproductor, acceder al proveedor y confirmar el pedido.",
+      "seo_title": "Atajo del mando para Get IPTV: comprueba el botón estrella de Streamer",
+      "seo_description": "Identifica el botón personalizable de Google TV Streamer Voice Remote antes de cambiar su atajo. Separa abrir una aplicación de comprar el reproductor, acceder al proveedor y confirmar el pedido.",
+      "sections": [
+        {
+          "heading": "Identifica el mando y qué abre el botón",
+          "paragraphs": [
+            "Una comprobación del atajo del mando para Get IPTV comienza por el modelo real. Esta guía de Google describe el botón personalizable con estrella de Google TV Streamer Voice Remote; no supongas que todos los televisores o mandos Chromecast antiguos lo tienen. Anota si al pulsarlo abre una aplicación, el panel Google Home o las entradas del dispositivo. Llegar a otro destino no demuestra un fallo de instalación del reproductor ni un plan caducado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliza las opciones documentadas",
+          "paragraphs": [
+            "Google documenta esos tres tipos de atajo. Para una aplicación favorita, elige una de la lista y selecciona Crear acceso directo; usa un reproductor compatible ya instalado solo si aparece. Para editar un atajo, la guía indica mantener la estrella pulsada durante uno o dos segundos. Si el atajo actual controla entradas, la ruta específica es Todos los ajustes, Mandos y accesorios, Configurar botones del mando, Botón personalizable. Mantén despejado el espacio entre mando y pantalla, según las instrucciones. Deja que el propietario decida antes de cambiar un atajo compartido."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de streaming de Google",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comprueba el destino sin comprar acceso",
+          "paragraphs": [
+            "Prueba el atajo elegido por el propietario y anota qué pantalla abre. Abrir un reproductor no compra su licencia, no activa Opplex o Filex ni confirma un pedido Get IPTV. Comprueba aparte el proveedor, la duración y el estado registrado de pago y configuración. El reproductor tiene costes separados y una cantidad de conexiones Filex no declarada requiere confirmación. Si falta la opción documentada, anota los modelos del dispositivo y mando. No instales reasignadores de botones, borres datos del reproductor ni repitas el pago solo para conseguir un atajo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Raccourci de télécommande Get IPTV : vérifier la touche étoile de Streamer",
+      "excerpt": "Identifiez la touche personnalisable de Google TV Streamer Voice Remote avant de modifier son raccourci. Distinguez ouverture d’application, achat du lecteur, accès fournisseur et commande.",
+      "seo_title": "Raccourci de télécommande Get IPTV : vérifier la touche étoile de Streamer",
+      "seo_description": "Identifiez la touche personnalisable de Google TV Streamer Voice Remote avant de modifier son raccourci. Distinguez ouverture d’application, achat du lecteur, accès fournisseur et commande.",
+      "sections": [
+        {
+          "heading": "Identifier la télécommande et la destination",
+          "paragraphs": [
+            "La vérification d’un raccourci pour Get IPTV commence par le modèle réel de télécommande. Ce guide Google décrit la touche personnalisable étoilée de Google TV Streamer Voice Remote ; tous les téléviseurs ou anciennes télécommandes Chromecast n’en disposent pas forcément. Notez si elle ouvre une application, le panneau Google Home ou les entrées de l’appareil. Une autre destination ne prouve ni défaut d’installation du lecteur ni expiration du forfait."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliser les choix documentés",
+          "paragraphs": [
+            "Google décrit ces trois types de raccourci. Pour une application favorite, choisissez une application dans la liste et créez le raccourci ; utilisez un lecteur compatible déjà présent uniquement s’il figure dans la liste. Pour modifier un raccourci, le guide indique de maintenir la touche étoile une à deux secondes. Si le raccourci existant commande les entrées, suivez Tous les paramètres, Télécommandes et accessoires, Configurer les boutons de la télécommande, Bouton personnalisable. Gardez le trajet entre télécommande et écran dégagé, comme indiqué. Laissez le propriétaire choisir avant de modifier un raccourci partagé."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Streaming",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirmer la destination sans acheter d’accès",
+          "paragraphs": [
+            "Essayez le choix du propriétaire et notez l’écran ouvert. Ouvrir un lecteur n’achète pas sa licence, n’active pas Opplex ou Filex et ne confirme pas une commande Get IPTV. Vérifiez séparément fournisseur, durée et état enregistré du paiement et de la configuration. Le coût du lecteur reste distinct ; les limites Filex non précisées sont à confirmer. Si l’option manque, relevez les modèles d’appareil et de télécommande. N’installez pas de logiciel de réaffectation, n’effacez pas les données du lecteur et ne payez pas de nouveau pour obtenir un raccourci."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Scorciatoia telecomando Get IPTV: controlla il tasto stella di Streamer",
+      "excerpt": "Identifica il tasto personalizzabile di Google TV Streamer Voice Remote prima di modificare la scorciatoia. Separa apertura dell’app, acquisto del lettore, accesso al fornitore e ordine.",
+      "seo_title": "Scorciatoia telecomando Get IPTV: controlla il tasto stella di Streamer",
+      "seo_description": "Identifica il tasto personalizzabile di Google TV Streamer Voice Remote prima di modificare la scorciatoia. Separa apertura dell’app, acquisto del lettore, accesso al fornitore e ordine.",
+      "sections": [
+        {
+          "heading": "Identifica il telecomando e la destinazione",
+          "paragraphs": [
+            "Il controllo di una scorciatoia del telecomando per Get IPTV parte dal modello reale. Questa guida Google descrive il tasto personalizzabile con stella di Google TV Streamer Voice Remote; non presumere che ogni televisore o vecchio telecomando Chromecast lo possieda. Annota se apre un’app, il pannello Google Home o gli ingressi del dispositivo. Una destinazione diversa non dimostra un problema di installazione del lettore né un piano scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa le opzioni documentate",
+          "paragraphs": [
+            "Google descrive questi tre tipi di scorciatoia. Per un’app preferita, seleziona un’app dall’elenco e crea la scorciatoia; usa un lettore compatibile già presente solo se compare. Per modificare una scorciatoia, la guida indica di tenere premuta la stella per uno o due secondi. Se quella esistente gestisce gli ingressi, segui Tutte le impostazioni, Telecomandi e accessori, Configura pulsanti del telecomando, Pulsante personalizzabile. Mantieni libero il percorso tra telecomando e schermo, come indicato. Lascia decidere al proprietario prima di modificare una scorciatoia condivisa."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida allo streaming di Google",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Conferma la destinazione senza acquistare accesso",
+          "paragraphs": [
+            "Prova la scelta del proprietario e annota la schermata aperta. Aprire un lettore non ne acquista la licenza, non attiva Opplex o Filex e non conferma un ordine Get IPTV. Verifica separatamente fornitore, durata e stato registrato di pagamento e configurazione. I costi del lettore sono distinti e i limiti Filex non dichiarati vanno confermati. Se l’opzione manca, annota i modelli di dispositivo e telecomando. Non installare programmi per rimappare i tasti, non cancellare dati del lettore e non pagare di nuovo per ottenere una scorciatoia."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Afstandsbedieningssnelkoppeling voor Get IPTV: bekijk de sterknop van Streamer",
+      "excerpt": "Herken de aanpasbare knop van Google TV Streamer Voice Remote voordat je een snelkoppeling wijzigt. Scheid het openen van een app van spelerkosten, providertoegang en bestelstatus.",
+      "seo_title": "Afstandsbedieningssnelkoppeling voor Get IPTV: bekijk de sterknop van Streamer",
+      "seo_description": "Herken de aanpasbare knop van Google TV Streamer Voice Remote voordat je een snelkoppeling wijzigt. Scheid het openen van een app van spelerkosten, providertoegang en bestelstatus.",
+      "sections": [
+        {
+          "heading": "Herken de afstandsbediening en bestemming",
+          "paragraphs": [
+            "Een controle van een afstandsbedieningssnelkoppeling voor Get IPTV begint bij het echte model. Deze Google-handleiding beschrijft de aanpasbare sterknop van Google TV Streamer Voice Remote; neem niet aan dat elke televisie of oudere Chromecast-afstandsbediening die heeft. Noteer of de knop een app, het Google Home-paneel of apparaatingangen opent. Een andere bestemming bewijst geen installatiefout van de speler of verlopen abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de beschreven keuzen",
+          "paragraphs": [
+            "Google beschrijft deze drie soorten snelkoppelingen. Kies voor een favoriete app een app uit de lijst en maak de snelkoppeling; gebruik een bestaande geschikte speler alleen als die wordt vermeld. Voor bewerken noemt de handleiding het één tot twee seconden ingedrukt houden van de sterknop. Bij een bestaande ingangssnelkoppeling volg je Alle instellingen, Afstandsbedieningen en accessoires, Afstandsbedieningsknoppen instellen, Aanpasbare knop. Houd volgens de instructie het pad tussen afstandsbediening en scherm vrij. Laat de eigenaar kiezen voordat je een gedeelde snelkoppeling wijzigt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Streaming Help",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer de bestemming zonder toegang te kopen",
+          "paragraphs": [
+            "Probeer de keuze van de eigenaar en noteer welk scherm opent. Een speler openen koopt geen licentie, activeert Opplex of Filex niet en bevestigt geen Get IPTV-bestelling. Controleer apart provider, looptijd en vastgelegde betaal- en instelstatus. Spelerkosten staan los daarvan; niet genoemde Filex-verbindingslimieten vereisen bevestiging. Ontbreekt de beschreven optie, noteer dan apparaat- en afstandsbedieningsmodel. Installeer geen knoptoewijzingsprogramma, wis geen spelergegevens en betaal niet opnieuw alleen om een snelkoppeling te krijgen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Atalho do comando para Get IPTV: verifique o botão estrela do Streamer",
+      "excerpt": "Identifique o botão personalizável do Google TV Streamer Voice Remote antes de alterar o atalho. Separe abrir uma aplicação de comprar o leitor, aceder ao fornecedor e confirmar a encomenda.",
+      "seo_title": "Atalho do comando para Get IPTV: verifique o botão estrela do Streamer",
+      "seo_description": "Identifique o botão personalizável do Google TV Streamer Voice Remote antes de alterar o atalho. Separe abrir uma aplicação de comprar o leitor, aceder ao fornecedor e confirmar a encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique o comando e o destino",
+          "paragraphs": [
+            "A verificação de um atalho do comando para Get IPTV começa pelo modelo real. Este guia da Google descreve o botão personalizável com estrela do Google TV Streamer Voice Remote; não pressuponha que todas as televisões ou comandos Chromecast antigos o têm. Anote se abre uma aplicação, o painel Google Home ou as entradas do dispositivo. Outro destino não demonstra falha de instalação do leitor nem um plano expirado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utilize as opções documentadas",
+          "paragraphs": [
+            "A Google descreve estes três tipos de atalho. Para uma aplicação favorita, escolha uma da lista e crie o atalho; utilize um leitor compatível já existente apenas se estiver listado. Para editar, o guia indica manter a estrela premida durante um a dois segundos. Se o atalho existente controlar entradas, siga Todas as definições, Comandos e acessórios, Configurar botões do comando, Botão personalizável. Mantenha desimpedido o percurso entre o comando e o ecrã, conforme indicado. Deixe o proprietário decidir antes de alterar um atalho partilhado."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda de streaming da Google",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confirme o destino sem comprar acesso",
+          "paragraphs": [
+            "Experimente a escolha do proprietário e anote o ecrã aberto. Abrir um leitor não compra a licença, não ativa Opplex ou Filex nem confirma uma encomenda Get IPTV. Verifique separadamente fornecedor, duração e estado registado do pagamento e configuração. Os custos do leitor são distintos; limites Filex não indicados precisam de confirmação. Se a opção não aparecer, registe os modelos do dispositivo e comando. Não instale um programa de reatribuição de botões, não apague dados do leitor nem repita o pagamento apenas para obter um atalho."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Ярлык пульта Get IPTV: проверьте кнопку со звездой на пульте Streamer",
+      "excerpt": "Определите настраиваемую кнопку Google TV Streamer Voice Remote перед изменением ярлыка. Отличайте запуск приложения от покупки плеера, доступа поставщика и состояния заказа.",
+      "seo_title": "Ярлык пульта Get IPTV: проверьте кнопку со звездой на пульте Streamer",
+      "seo_description": "Определите настраиваемую кнопку Google TV Streamer Voice Remote перед изменением ярлыка. Отличайте запуск приложения от покупки плеера, доступа поставщика и состояния заказа.",
+      "sections": [
+        {
+          "heading": "Определите пульт и действие кнопки",
+          "paragraphs": [
+            "Проверка ярлыка пульта для Get IPTV начинается с реальной модели. Это руководство Google описывает настраиваемую кнопку со звездой на Google TV Streamer Voice Remote; не считайте, что она есть у любого телевизора или старого пульта Chromecast. Запишите, открывает ли она приложение, панель Google Home или входы устройства. Другой результат не доказывает сбой установки плеера или истечение тарифа."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте описанные варианты",
+          "paragraphs": [
+            "Google описывает эти три вида ярлыков. Для любимого приложения выберите его в показанном списке и создайте ярлык; используйте уже имеющийся совместимый плеер, только если он указан. Для изменения руководство предлагает удерживать звезду одну-две секунды. Если существующий ярлык управляет входами, откройте «Все настройки», «Пульты и аксессуары», настройку кнопок пульта, затем настраиваемую кнопку. По инструкции путь между пультом и экраном должен быть свободен. Прежде чем менять общую кнопку, дайте владельцу сделать выбор."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка по стримингу Google",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверьте назначение, не покупая доступ",
+          "paragraphs": [
+            "Попробуйте выбранный владельцем ярлык и запишите открывшийся экран. Запуск плеера не покупает лицензию, не активирует Opplex или Filex и не подтверждает заказ Get IPTV. Отдельно проверьте поставщика, срок и записанное состояние оплаты и настройки. Стоимость плеера отдельная; неуказанные лимиты подключений Filex нужно подтвердить. Если описанной опции нет, запишите модели устройства и пульта. Не устанавливайте переназначатель кнопок, не стирайте данные плеера и не платите повторно ради ярлыка."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کا ریموٹ شارٹ کٹ: Streamer کا ستارے والا بٹن دیکھیں",
+      "excerpt": "شارٹ کٹ بدلنے سے پہلے Google TV Streamer Voice Remote کا قابل تخصیص بٹن پہچانیں۔ ایپ کھلنے کو پلیئر کی خریداری، فراہم کنندہ کی رسائی اور آرڈر کی حالت سے الگ سمجھیں۔",
+      "seo_title": "Get IPTV کا ریموٹ شارٹ کٹ: Streamer کا ستارے والا بٹن دیکھیں",
+      "seo_description": "شارٹ کٹ بدلنے سے پہلے Google TV Streamer Voice Remote کا قابل تخصیص بٹن پہچانیں۔ ایپ کھلنے کو پلیئر کی خریداری، فراہم کنندہ کی رسائی اور آرڈر کی حالت سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "ریموٹ اور بٹن کی منزل پہچانیں",
+          "paragraphs": [
+            "Get IPTV کے ریموٹ شارٹ کٹ کی جانچ اصل ریموٹ ماڈل سے شروع ہوتی ہے۔ Google کی یہ رہنمائی Google TV Streamer Voice Remote کے ستارے والے قابل تخصیص بٹن کی ہے؛ ہر ٹیلی وژن یا پرانے Chromecast ریموٹ میں اس کی موجودگی فرض نہ کریں۔ نوٹ کریں کہ اسے دبانے سے ایپ، Google Home پینل یا آلے کے اِن پٹ کھلتے ہیں۔ دوسری منزل کھلنا پلیئر کی تنصیب میں خرابی یا پلان کی میعاد ختم ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دستاویزی شارٹ کٹ اختیارات استعمال کریں",
+          "paragraphs": [
+            "Google انہی تین قسم کے شارٹ کٹ بیان کرتا ہے۔ پسندیدہ ایپ کے لیے دکھائی گئی فہرست سے ایپ چن کر شارٹ کٹ بنائیں؛ پہلے سے موجود مطابقت رکھنے والا پلیئر صرف تب چنیں جب وہ فہرست میں ہو۔ تبدیلی کے لیے رہنمائی ستارے کا بٹن ایک سے دو سیکنڈ دبائے رکھنے کو کہتی ہے۔ موجودہ شارٹ کٹ اِن پٹ کا ہو تو تمام ترتیبات، ریموٹ اور لوازمات، ریموٹ بٹن ترتیب دیں، قابل تخصیص بٹن کے راستے پر جائیں۔ ہدایت کے مطابق ریموٹ اور اسکرین کے درمیان رکاوٹ نہ ہو۔ مشترکہ شارٹ کٹ بدلنے سے پہلے مالک کو انتخاب کرنے دیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google اسٹریمنگ کی مدد",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "منزل جانچیں، رسائی دوبارہ نہ خریدیں",
+          "paragraphs": [
+            "مالک کا منتخب شارٹ کٹ آزمائیں اور کھلنے والی اسکرین نوٹ کریں۔ پلیئر کھلنے سے نہ اس کا لائسنس خریدا جاتا ہے، نہ Opplex یا Filex فعال ہوتے ہیں، اور نہ Get IPTV آرڈر کی تصدیق ہوتی ہے۔ اصل فراہم کنندہ، مدت اور درج شدہ ادائیگی و سیٹ اپ کی حالت الگ دیکھیں۔ پلیئر کی قیمت الگ ہے؛ Filex کی غیر درج شدہ کنکشن حد کی تصدیق چاہیے۔ متعلقہ اختیار نہ ملے تو آلے اور ریموٹ کے ماڈل لکھیں۔ صرف شارٹ کٹ بنانے کے لیے نہ بٹن تبدیل کرنے والا پروگرام نصب کریں، نہ پلیئر کا ڈیٹا مٹائیں، اور نہ دوبارہ ادائیگی کریں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "اختصار ريموت Get IPTV: افحص زر النجمة في جهاز Streamer",
+      "excerpt": "حدد الزر القابل للتخصيص في Google TV Streamer Voice Remote قبل تغيير اختصاره. افصل فتح التطبيق عن شراء المشغل والوصول إلى المزود وحالة الطلب المسجلة.",
+      "seo_title": "اختصار ريموت Get IPTV: افحص زر النجمة في جهاز Streamer",
+      "seo_description": "حدد الزر القابل للتخصيص في Google TV Streamer Voice Remote قبل تغيير اختصاره. افصل فتح التطبيق عن شراء المشغل والوصول إلى المزود وحالة الطلب المسجلة.",
+      "sections": [
+        {
+          "heading": "حدد الريموت والوجهة التي يفتحها",
+          "paragraphs": [
+            "يبدأ فحص اختصار ريموت Get IPTV بطراز الريموت الفعلي. يشرح دليل Google هنا زر النجمة القابل للتخصيص في Google TV Streamer Voice Remote؛ لا تفترض وجوده في كل تلفزيون أو ريموت Chromecast أقدم. دوّن هل يفتح تطبيقًا أم لوحة Google Home أم مداخل الجهاز. الوصول إلى وجهة أخرى لا يثبت خلل تثبيت المشغل أو انتهاء الباقة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم خيارات الاختصار الموثقة",
+          "paragraphs": [
+            "توثق Google هذه الأنواع الثلاثة. للتطبيق المفضل، اختر تطبيقًا من القائمة المعروضة ثم أنشئ الاختصار؛ استخدم مشغلًا متوافقًا موجودًا فقط إذا ظهر في القائمة. لتعديل اختصار، يذكر الدليل الضغط المطول على النجمة لمدة ثانية إلى ثانيتين. إذا كان الاختصار الحالي للمداخل، فاتبع جميع الإعدادات، أجهزة التحكم عن بعد والملحقات، إعداد أزرار الريموت، الزر القابل للتخصيص. أبق المسار بين الريموت والشاشة خاليًا من العوائق وفق التعليمات. دع المالك يقرر قبل تغيير اختصار مشترك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة البث من Google",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "تحقق من الوجهة دون شراء الوصول",
+          "paragraphs": [
+            "جرّب اختيار المالك ودوّن الشاشة المفتوحة. فتح المشغل لا يشتري رخصته ولا يفعّل Opplex أو Filex ولا يؤكد طلب Get IPTV. تحقق بصورة مستقلة من المزود والمدة وحالة الدفع والإعداد المسجلة. تكلفة المشغل منفصلة وحدود اتصالات Filex غير المذكورة تحتاج إلى تأكيد. إذا غاب الخيار الموثق، فسجل طرازي الجهاز والريموت. لا تثبت برنامجًا لإعادة تعيين الأزرار، ولا تمسح بيانات المشغل، ولا تكرر الدفع لمجرد الحصول على اختصار."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV रिमोट शॉर्टकट: Streamer रिमोट का तारा बटन जाँचें",
+      "excerpt": "शॉर्टकट बदलने से पहले Google TV Streamer Voice Remote का अनुकूलित किया जा सकने वाला बटन पहचानें। ऐप खुलने को प्लेयर खरीद, प्रदाता पहुँच और दर्ज ऑर्डर स्थिति से अलग रखें।",
+      "seo_title": "Get IPTV रिमोट शॉर्टकट: Streamer रिमोट का तारा बटन जाँचें",
+      "seo_description": "शॉर्टकट बदलने से पहले Google TV Streamer Voice Remote का अनुकूलित किया जा सकने वाला बटन पहचानें। ऐप खुलने को प्लेयर खरीद, प्रदाता पहुँच और दर्ज ऑर्डर स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "रिमोट और बटन की मंज़िल पहचानें",
+          "paragraphs": [
+            "Get IPTV रिमोट शॉर्टकट की जाँच वास्तविक रिमोट मॉडल से शुरू होती है। Google की यह गाइड Google TV Streamer Voice Remote के तारे वाले अनुकूलन बटन की है; यह हर टेलीविज़न या पुराने Chromecast रिमोट में होने की धारणा न बनाएँ। लिखें कि दबाने पर ऐप, Google Home पैनल या डिवाइस के इनपुट खुलते हैं। दूसरी मंज़िल खुलना प्लेयर स्थापना की खराबी या प्लान समाप्त होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ में दिए विकल्प इस्तेमाल करें",
+          "paragraphs": [
+            "Google इन्हीं तीन प्रकार के शॉर्टकट बताता है। पसंदीदा ऐप के लिए दिखाई गई सूची से ऐप चुनकर शॉर्टकट बनाएँ; पहले से मौजूद संगत प्लेयर तभी चुनें जब वह सूची में हो। बदलने के लिए गाइड तारा बटन एक से दो सेकंड दबाए रखने को कहती है। मौजूदा शॉर्टकट इनपुट का हो तो सभी सेटिंग, रिमोट और ऐक्सेसरी, रिमोट के बटन सेट करें, अनुकूलित किया जा सकने वाला बटन खोलें। निर्देश के अनुसार रिमोट और स्क्रीन के बीच रुकावट न हो। साझा शॉर्टकट बदलने से पहले मालिक को निर्णय लेने दें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google स्ट्रीमिंग सहायता",
+              "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "मंज़िल जाँचें, पहुँच दोबारा न खरीदें",
+          "paragraphs": [
+            "मालिक का चुना शॉर्टकट आज़माएँ और खुलने वाली स्क्रीन लिखें। प्लेयर खुलने से न उसका लाइसेंस खरीदा जाता है, न Opplex या Filex सक्रिय होते हैं और न Get IPTV ऑर्डर की पुष्टि होती है। वास्तविक प्रदाता, अवधि और दर्ज भुगतान तथा सेटअप स्थिति अलग जाँचें। प्लेयर की लागत अलग है; Filex की अनकही कनेक्शन सीमा की पुष्टि चाहिए। दस्तावेज़ वाला विकल्प न मिले तो डिवाइस और रिमोट के मॉडल लिखें। केवल शॉर्टकट पाने के लिए न बटन बदलने वाला प्रोग्राम स्थापित करें, न प्लेयर का डेटा मिटाएँ और न दोबारा भुगतान करें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Streaming Help",
+      "url": "https://support.google.com/chromecast/answer/15157668?hl=en"
+    }
+  ]
+}

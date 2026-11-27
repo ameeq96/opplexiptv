@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-27",
+  "topic": "Identify VLC for Android’s new-video title and controls overlay using its Video transition preference, separately from programme subtitles, embedded graphics and Trex IPTV provider access.",
+  "primary_keyword": "Trex IPTV video overlay",
+  "slug": "trex-vlc-android-new-video-transition-title-controls",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV video overlay: check VLC’s new-video transition",
+      "excerpt": "Check a brief title-and-controls overlay when VLC for Android starts the next video. Keep the player preference separate from subtitles and Trex account access.",
+      "seo_title": "Trex IPTV video overlay: check VLC’s new-video transition",
+      "seo_description": "Check a brief title-and-controls overlay when VLC for Android starts the next video. Keep the player preference separate from subtitles and Trex account access.",
+      "sections": [
+        {
+          "heading": "Record when the overlay appears",
+          "paragraphs": [
+            "A Trex IPTV video overlay check starts with the actual player name and version. Note whether the title and playback buttons appear briefly when the next playlist item begins, or remain visible throughout the picture. Programme subtitles and graphics embedded in a video are different things. A brief player overlay alone does not establish that an advertisement was inserted or that the provider changed its catalogue."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the documented preference",
+          "paragraphs": [
+            "VideoLAN’s VLC for Android guide describes Video transition under video settings. When enabled, this preference shows the video title and player controls when a new video in the playlist plays. Read and record its present state before changing anything. This description concerns that transition overlay; it does not promise to hide every label, caption or graphic displayed by a programme. Setting names and availability can differ by installed version."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: VLC for Android video settings",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare without resetting access",
+          "paragraphs": [
+            "If the owner wants a comparison and the option is available, use the same permitted playlist and change only this preference. Observe the next item, record the result and restore the earlier state if the change is unhelpful. Trex IPTV 8K permits one simultaneous connection, so keep one viewing session. Report the player version, overlay timing and setting without credentials. Do not erase player data, reinstall it or buy another plan for this display check."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Superposición de vídeo en Trex IPTV: revisa la transición de VLC",
+      "excerpt": "Revisa el título y los controles que aparecen al empezar el siguiente vídeo en VLC para Android. Separa esa opción de los subtítulos y del acceso a Trex.",
+      "seo_title": "Superposición de vídeo en Trex IPTV: revisa la transición de VLC",
+      "seo_description": "Revisa el título y los controles que aparecen al empezar el siguiente vídeo en VLC para Android. Separa esa opción de los subtítulos y del acceso a Trex.",
+      "sections": [
+        {
+          "heading": "Anota cuándo aparece",
+          "paragraphs": [
+            "La revisión de una superposición de vídeo en Trex IPTV empieza por el nombre y la versión reales del reproductor. Anota si el título y los botones aparecen brevemente al comenzar el siguiente elemento de la lista o si permanecen en pantalla. Los subtítulos del programa y los gráficos integrados en el vídeo son distintos. Una aparición breve del reproductor no demuestra por sí sola que se haya insertado publicidad ni que el proveedor haya cambiado su catálogo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la opción documentada",
+          "paragraphs": [
+            "La guía de VLC para Android de VideoLAN describe Transición de vídeo dentro de los ajustes de vídeo. Al activarla, se muestran el título y los controles cuando se reproduce un nuevo vídeo de la lista. Lee y anota su estado actual antes de cambiar nada. La descripción se refiere a esa superposición de transición; no promete ocultar todas las etiquetas, los subtítulos ni los gráficos del programa. Los nombres y la disponibilidad pueden variar según la versión instalada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: ajustes de vídeo de VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara sin restablecer el acceso",
+          "paragraphs": [
+            "Si el propietario quiere comparar y la opción está disponible, utiliza la misma lista autorizada y cambia solo esa preferencia. Observa el siguiente elemento, anota el resultado y restaura el estado anterior si no ayuda. Trex IPTV 8K permite una conexión simultánea: mantén una sola sesión. Comunica la versión, el momento de aparición y el ajuste sin credenciales. No borres datos, reinstales el reproductor ni compres otro plan para esta comprobación visual."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Superposition vidéo Trex IPTV : vérifier la transition de VLC",
+      "excerpt": "Vérifiez le titre et les commandes au début de la vidéo suivante dans VLC pour Android. Distinguez ce réglage des sous-titres et de l’accès au compte Trex.",
+      "seo_title": "Superposition vidéo Trex IPTV : vérifier la transition de VLC",
+      "seo_description": "Vérifiez le titre et les commandes au début de la vidéo suivante dans VLC pour Android. Distinguez ce réglage des sous-titres et de l’accès au compte Trex.",
+      "sections": [
+        {
+          "heading": "Noter le moment d’apparition",
+          "paragraphs": [
+            "Pour examiner une superposition vidéo avec Trex IPTV, commencez par le nom et la version réels du lecteur. Notez si le titre et les boutons apparaissent brièvement au début de l’élément suivant de la liste, ou restent visibles pendant toute l’image. Les sous-titres du programme et les graphismes intégrés à la vidéo sont différents. Une brève superposition du lecteur ne prouve à elle seule ni l’ajout d’une publicité ni une modification du catalogue du fournisseur."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire le réglage documenté",
+          "paragraphs": [
+            "Le guide VideoLAN de VLC pour Android décrit la transition vidéo dans les paramètres vidéo. Lorsqu’elle est activée, cette préférence affiche le titre et les commandes au lancement d’une nouvelle vidéo de la liste. Relevez son état actuel avant toute modification. Cette description concerne la superposition de transition ; elle ne promet pas de masquer tous les libellés, sous-titres ou graphismes du programme. Les noms et la disponibilité peuvent varier selon la version installée."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN : paramètres vidéo de VLC pour Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer sans réinitialiser l’accès",
+          "paragraphs": [
+            "Si le propriétaire souhaite comparer et que l’option existe, utilisez la même liste autorisée et ne changez que cette préférence. Observez l’élément suivant, notez le résultat et rétablissez l’état précédent si le changement n’aide pas. Trex IPTV 8K permet une connexion simultanée : gardez une seule session. Communiquez la version, le moment d’apparition et le réglage sans identifiants. N’effacez pas les données, ne réinstallez pas le lecteur et n’achetez pas un autre forfait pour cette vérification visuelle."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Sovrimpressione video Trex IPTV: controlla la transizione di VLC",
+      "excerpt": "Controlla titolo e comandi all’avvio del video successivo in VLC per Android. Distingui questa preferenza dai sottotitoli e dall’accesso all’account Trex.",
+      "seo_title": "Sovrimpressione video Trex IPTV: controlla la transizione di VLC",
+      "seo_description": "Controlla titolo e comandi all’avvio del video successivo in VLC per Android. Distingui questa preferenza dai sottotitoli e dall’accesso all’account Trex.",
+      "sections": [
+        {
+          "heading": "Annota quando compare",
+          "paragraphs": [
+            "Per controllare una sovrimpressione video con Trex IPTV, parti dal nome e dalla versione effettivi del lettore. Annota se titolo e pulsanti compaiono brevemente quando inizia l’elemento successivo della playlist oppure restano sempre visibili. I sottotitoli del programma e la grafica incorporata nel video sono elementi diversi. Una breve sovrimpressione del lettore, da sola, non dimostra l’inserimento di pubblicità né una modifica del catalogo del fornitore."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la preferenza documentata",
+          "paragraphs": [
+            "La guida VideoLAN per VLC su Android descrive la transizione video nelle impostazioni video. Quando è attiva, questa preferenza mostra il titolo e i comandi all’avvio di un nuovo video nella playlist. Leggi e annota lo stato attuale prima di modificare qualcosa. La descrizione riguarda quella sovrimpressione di transizione; non promette di nascondere ogni etichetta, sottotitolo o elemento grafico del programma. Nomi e disponibilità possono variare con la versione installata."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: impostazioni video di VLC per Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta senza reimpostare l’accesso",
+          "paragraphs": [
+            "Se il proprietario desidera un confronto e l’opzione è disponibile, usa la stessa playlist autorizzata e modifica solo questa preferenza. Osserva l’elemento successivo, annota il risultato e ripristina lo stato precedente se non aiuta. Trex IPTV 8K consente una connessione simultanea: mantieni una sola sessione. Comunica versione, momento di comparsa e impostazione senza credenziali. Non cancellare dati, non reinstallare il lettore e non acquistare un altro piano per questa verifica visiva."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Trex IPTV-video-overlay: controleer de overgang van VLC",
+      "excerpt": "Controleer de titel en bediening bij het volgende filmpje in VLC voor Android. Houd deze voorkeur gescheiden van ondertitels en toegang tot je Trex-account.",
+      "seo_title": "Trex IPTV-video-overlay: controleer de overgang van VLC",
+      "seo_description": "Controleer de titel en bediening bij het volgende filmpje in VLC voor Android. Houd deze voorkeur gescheiden van ondertitels en toegang tot je Trex-account.",
+      "sections": [
+        {
+          "heading": "Noteer wanneer de overlay verschijnt",
+          "paragraphs": [
+            "Begin een controle van een Trex IPTV-video-overlay met de werkelijke spelernaam en versie. Noteer of de titel en afspeelknoppen kort verschijnen wanneer het volgende afspeellijstitem begint, of gedurende het hele beeld zichtbaar blijven. Programmaondertitels en in de video verwerkte afbeeldingen zijn iets anders. Een korte speler-overlay bewijst op zichzelf niet dat reclame is ingevoegd of dat de aanbieder zijn catalogus heeft gewijzigd."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de beschreven voorkeur",
+          "paragraphs": [
+            "De VideoLAN-handleiding voor VLC op Android beschrijft Video-overgang bij de video-instellingen. Als deze voorkeur aanstaat, verschijnen de videotitel en spelerbediening wanneer een nieuwe video uit de afspeellijst wordt afgespeeld. Lees en noteer de huidige stand voordat je iets wijzigt. De beschrijving gaat over die overgangsweergave; zij belooft niet alle labels, ondertitels of programma-afbeeldingen te verbergen. Namen en beschikbaarheid kunnen per geïnstalleerde versie verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: video-instellingen van VLC voor Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk zonder toegang opnieuw in te stellen",
+          "paragraphs": [
+            "Wil de eigenaar vergelijken en is de optie beschikbaar, gebruik dan dezelfde toegestane afspeellijst en wijzig alleen deze voorkeur. Bekijk het volgende item, noteer het resultaat en herstel de eerdere stand als het niet helpt. Trex IPTV 8K staat één gelijktijdige verbinding toe: houd één kijksessie aan. Meld versie, verschijningsmoment en instelling zonder inloggegevens. Wis geen spelergegevens, installeer de speler niet opnieuw en koop hiervoor geen ander abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Sobreposição de vídeo Trex IPTV: confira a transição do VLC",
+      "excerpt": "Confira o título e os controles ao iniciar o vídeo seguinte no VLC para Android. Separe essa preferência das legendas e do acesso à conta Trex.",
+      "seo_title": "Sobreposição de vídeo Trex IPTV: confira a transição do VLC",
+      "seo_description": "Confira o título e os controles ao iniciar o vídeo seguinte no VLC para Android. Separe essa preferência das legendas e do acesso à conta Trex.",
+      "sections": [
+        {
+          "heading": "Anote quando a sobreposição aparece",
+          "paragraphs": [
+            "Uma verificação da sobreposição de vídeo no Trex IPTV começa pelo nome e pela versão reais do reprodutor. Anote se o título e os botões aparecem brevemente quando começa o próximo item da lista ou se permanecem visíveis durante toda a imagem. Legendas do programa e elementos gráficos incorporados ao vídeo são coisas diferentes. Uma breve sobreposição do reprodutor não prova, por si só, a inserção de publicidade nem uma mudança no catálogo do fornecedor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a preferência documentada",
+          "paragraphs": [
+            "O guia da VideoLAN para o VLC no Android descreve a transição de vídeo nas configurações de vídeo. Quando ativada, essa preferência mostra o título e os controles ao reproduzir um novo vídeo da lista. Leia e registre o estado atual antes de alterar algo. A descrição trata dessa sobreposição de transição; não promete ocultar todos os rótulos, legendas ou gráficos do programa. Os nomes e a disponibilidade podem variar conforme a versão instalada."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: configurações de vídeo do VLC para Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare sem redefinir o acesso",
+          "paragraphs": [
+            "Se o proprietário desejar comparar e a opção estiver disponível, use a mesma lista autorizada e altere apenas essa preferência. Observe o próximo item, anote o resultado e restaure o estado anterior se a mudança não ajudar. O Trex IPTV 8K permite uma conexão simultânea: mantenha uma única sessão. Informe versão, momento da exibição e configuração sem credenciais. Não apague os dados do reprodutor, não o reinstale e não compre outro plano para essa verificação visual."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Наложение поверх видео Trex IPTV: переходы в VLC",
+      "excerpt": "Проверьте название и кнопки при запуске следующего видео в VLC для Android. Отделяйте эту настройку от субтитров и доступа к учётной записи Trex.",
+      "seo_title": "Наложение поверх видео Trex IPTV: переходы в VLC",
+      "seo_description": "Проверьте название и кнопки при запуске следующего видео в VLC для Android. Отделяйте эту настройку от субтитров и доступа к учётной записи Trex.",
+      "sections": [
+        {
+          "heading": "Запишите момент появления",
+          "paragraphs": [
+            "Проверку наложения поверх видео Trex IPTV начните с настоящего названия и версии проигрывателя. Отметьте, ненадолго ли появляются название и кнопки при запуске следующего элемента списка или остаются на всём протяжении видео. Субтитры передачи и графика, встроенная в видеоряд, — другие элементы. Краткое наложение проигрывателя само по себе не доказывает ни вставку рекламы, ни изменение каталога поставщика."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте описание настройки",
+          "paragraphs": [
+            "Руководство VideoLAN для VLC на Android описывает переход видео в настройках видео. Если эта настройка включена, название и кнопки проигрывателя появляются при воспроизведении нового видео из списка. Сначала прочитайте и запишите её текущее состояние. Описание относится именно к наложению при переходе; оно не обещает скрыть все подписи, субтитры или графику передачи. Названия и доступность могут зависеть от установленной версии."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: настройки видео VLC для Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните без сброса доступа",
+          "paragraphs": [
+            "Если владелец хочет сравнить и настройка доступна, используйте тот же разрешённый список и измените только её. Посмотрите следующий элемент, запишите результат и верните прежнее состояние, если изменение не помогло. Trex IPTV 8K допускает одно одновременное подключение: оставьте один сеанс просмотра. Сообщите версию, момент появления и состояние настройки без учётных данных. Не стирайте данные, не переустанавливайте проигрыватель и не покупайте другой тариф ради этой проверки отображения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV ویڈیو پر عنوان اور کنٹرول: VLC کی منتقلی دیکھیں",
+      "excerpt": "Android کے VLC میں اگلی ویڈیو شروع ہونے پر آنے والا عنوان اور کنٹرول دیکھیں۔ اس ترجیح کو ذیلی عنوانات اور Trex اکاؤنٹ تک رسائی سے الگ سمجھیں۔",
+      "seo_title": "Trex IPTV ویڈیو پر عنوان اور کنٹرول: VLC کی منتقلی دیکھیں",
+      "seo_description": "Android کے VLC میں اگلی ویڈیو شروع ہونے پر آنے والا عنوان اور کنٹرول دیکھیں۔ اس ترجیح کو ذیلی عنوانات اور Trex اکاؤنٹ تک رسائی سے الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "ظاہر ہونے کا وقت لکھیں",
+          "paragraphs": [
+            "Trex IPTV کی ویڈیو پر آنے والے عنوان اور بٹن کی جانچ اصل پلیئر کے نام اور ورژن سے شروع کریں۔ لکھیں کہ کیا پلے لسٹ کا اگلا حصہ شروع ہوتے وقت عنوان اور بٹن مختصر طور پر دکھتے ہیں یا پوری ویڈیو میں رہتے ہیں۔ پروگرام کے ذیلی عنوانات اور خود ویڈیو میں شامل تصویری نشان الگ چیزیں ہیں۔ پلیئر کا مختصر طور پر کچھ دکھانا اکیلے اس بات کا ثبوت نہیں کہ اشتہار شامل ہوا یا فراہم کنندہ نے فہرست بدل دی۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دستاویزی ترجیح پڑھیں",
+          "paragraphs": [
+            "VideoLAN کی Android کے VLC کی رہنمائی ویڈیو کی ترتیبات میں ویڈیو منتقلی کی ترجیح بیان کرتی ہے۔ اسے فعال کرنے پر پلے لسٹ کی نئی ویڈیو چلتے وقت عنوان اور پلیئر کے کنٹرول دکھتے ہیں۔ کچھ بدلنے سے پہلے موجودہ حالت پڑھ کر لکھ لیں۔ یہ وضاحت منتقلی کے وقت نظر آنے والے عنوان اور کنٹرول کے بارے میں ہے؛ یہ پروگرام کے ہر لیبل، ذیلی عنوان یا تصویری نشان کو چھپانے کا وعدہ نہیں۔ نصب ورژن کے مطابق نام اور دستیابی بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android کے VLC کی ویڈیو ترتیبات",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "رسائی کی ترتیبات مٹائے بغیر موازنہ کریں",
+          "paragraphs": [
+            "اگر مالک موازنہ چاہے اور اختیار موجود ہو تو وہی مجاز پلے لسٹ استعمال کریں اور صرف یہی ترجیح بدلیں۔ اگلا حصہ دیکھیں، نتیجہ لکھیں اور فائدہ نہ ہو تو پچھلی حالت بحال کریں۔ Trex IPTV 8K میں ایک وقت میں ایک کنکشن کی اجازت ہے، اس لیے ایک ہی سیشن رکھیں۔ خفیہ معلومات کے بغیر ورژن، ظاہر ہونے کا وقت اور ترتیب بتائیں۔ اس ظاہری جانچ کے لیے نہ پلیئر کا ڈیٹا مٹائیں، نہ اسے دوبارہ نصب کریں، اور نہ دوسرا پلان خریدیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "العنوان والأزرار فوق فيديو Trex IPTV: افحص انتقال VLC",
+      "excerpt": "تحقق من ظهور العنوان والأزرار عند بدء الفيديو التالي في VLC على Android. افصل هذا التفضيل عن الترجمة النصية والوصول إلى حساب Trex.",
+      "seo_title": "العنوان والأزرار فوق فيديو Trex IPTV: افحص انتقال VLC",
+      "seo_description": "تحقق من ظهور العنوان والأزرار عند بدء الفيديو التالي في VLC على Android. افصل هذا التفضيل عن الترجمة النصية والوصول إلى حساب Trex.",
+      "sections": [
+        {
+          "heading": "سجّل وقت الظهور",
+          "paragraphs": [
+            "ابدأ فحص العناصر الظاهرة فوق فيديو Trex IPTV باسم المشغّل الفعلي وإصداره. سجّل هل يظهر العنوان وأزرار التشغيل لفترة قصيرة عند بدء العنصر التالي في قائمة التشغيل، أم تظل ظاهرة طوال الفيديو. الترجمة النصية والرسومات المدمجة داخل الفيديو عناصر مختلفة. ظهور عناصر المشغّل لفترة قصيرة لا يثبت وحده إدراج إعلان أو تغيير المزوّد لفهرسه."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ التفضيل الموثق",
+          "paragraphs": [
+            "يصف دليل VideoLAN لتطبيق VLC على Android تفضيل انتقال الفيديو ضمن إعدادات الفيديو. عند تفعيله، يعرض عنوان الفيديو وأزرار المشغّل عند تشغيل فيديو جديد من القائمة. اقرأ حالته الحالية وسجّلها قبل تغيير أي شيء. يتعلق الوصف بالعناصر الظاهرة وقت الانتقال؛ ولا يعد بإخفاء كل تسمية أو ترجمة أو رسم داخل البرنامج. قد تختلف الأسماء وإتاحة الخيار بحسب الإصدار المثبّت."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: إعدادات الفيديو في VLC على Android",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن دون إعادة ضبط الوصول",
+          "paragraphs": [
+            "إذا أراد المالك المقارنة وكان الخيار متاحًا، فاستخدم قائمة التشغيل المسموح بها نفسها وغيّر هذا التفضيل فقط. راقب العنصر التالي وسجّل النتيجة وأعد الحالة السابقة إذا لم يفد التغيير. يسمح Trex IPTV 8K باتصال متزامن واحد، لذا أبقِ جلسة مشاهدة واحدة. أبلغ عن الإصدار ووقت الظهور والإعداد دون بيانات الدخول. لا تمسح بيانات المشغّل، ولا تعِد تثبيته، ولا تشترِ باقة أخرى من أجل فحص العرض هذا."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV वीडियो पर शीर्षक और बटन: VLC का बदलाव जाँचें",
+      "excerpt": "Android के VLC में अगला वीडियो शुरू होने पर दिखने वाला शीर्षक और नियंत्रण जाँचें। इस विकल्प को उपशीर्षकों और Trex खाते की पहुँच से अलग समझें।",
+      "seo_title": "Trex IPTV वीडियो पर शीर्षक और बटन: VLC का बदलाव जाँचें",
+      "seo_description": "Android के VLC में अगला वीडियो शुरू होने पर दिखने वाला शीर्षक और नियंत्रण जाँचें। इस विकल्प को उपशीर्षकों और Trex खाते की पहुँच से अलग समझें।",
+      "sections": [
+        {
+          "heading": "दिखने का समय लिखें",
+          "paragraphs": [
+            "Trex IPTV वीडियो के ऊपर दिखने वाले शीर्षक और बटन की जाँच वास्तविक प्लेयर के नाम और संस्करण से शुरू करें। लिखें कि क्या प्लेलिस्ट का अगला आइटम शुरू होने पर वे थोड़ी देर दिखते हैं या पूरे वीडियो में बने रहते हैं। कार्यक्रम के उपशीर्षक और वीडियो में पहले से शामिल चित्र अलग चीज़ें हैं। प्लेयर के नियंत्रण थोड़ी देर दिखना अपने आप में विज्ञापन जोड़े जाने या प्रदाता की सूची बदलने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ में दिया विकल्प पढ़ें",
+          "paragraphs": [
+            "Android के VLC की VideoLAN मार्गदर्शिका वीडियो सेटिंग में वीडियो ट्रांज़िशन विकल्प बताती है। इसे चालू करने पर प्लेलिस्ट का नया वीडियो चलने के समय उसका शीर्षक और प्लेयर के नियंत्रण दिखते हैं। कुछ बदलने से पहले मौजूदा स्थिति पढ़कर लिख लें। यह विवरण वीडियो बदलते समय दिखने वाले शीर्षक और नियंत्रण का है; यह कार्यक्रम के हर लेबल, उपशीर्षक या चित्र को छिपाने का वादा नहीं करता। स्थापित संस्करण के अनुसार नाम और उपलब्धता अलग हो सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN: Android पर VLC की वीडियो सेटिंग",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "पहुँच रीसेट किए बिना तुलना करें",
+          "paragraphs": [
+            "अगर मालिक तुलना चाहे और विकल्प उपलब्ध हो, तो उसी अनुमति वाली प्लेलिस्ट का उपयोग करके केवल यही विकल्प बदलें। अगला आइटम देखें, परिणाम लिखें और लाभ न हो तो पुरानी स्थिति वापस करें। Trex IPTV 8K एक समय में एक कनेक्शन की अनुमति देता है, इसलिए एक ही देखने का सत्र रखें। लॉगिन जानकारी दिए बिना संस्करण, दिखने का समय और सेटिंग बताएँ। इस दृश्य जाँच के लिए न प्लेयर का डेटा मिटाएँ, न उसे दोबारा स्थापित करें और न ही दूसरा प्लान खरीदें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN: VLC for Android video settings",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+    }
+  ]
+}

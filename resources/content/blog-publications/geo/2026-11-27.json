@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-27",
+  "topic": "Identify Apple TV 4K purchase restriction passcode prompts separately from Geo IPTV orders and app-specific controls while preserving household protection.",
+  "primary_keyword": "Geo IPTV purchase restrictions",
+  "slug": "geo-apple-tv-purchase-restrictions-and-passcode-prompt",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV purchase restrictions: identify an Apple TV passcode prompt",
+      "excerpt": "Identify Apple TV 4K purchase restrictions before treating a passcode prompt as a Geo IPTV account fault. Keep household protections and provider payments separate.",
+      "seo_title": "Geo IPTV purchase restrictions: identify an Apple TV passcode prompt",
+      "seo_description": "Identify Apple TV 4K purchase restrictions before treating a passcode prompt as a Geo IPTV account fault. Keep household protections and provider payments separate.",
+      "sections": [
+        {
+          "heading": "Record where the prompt appears",
+          "paragraphs": [
+            "A Geo IPTV purchase restrictions check begins with the screen requesting approval. Note whether it appears in Apple TV settings, the App Store, the Apple TV app or the installed player. Record the app name and action, such as opening an app or attempting a purchase. A device passcode request alone does not establish that the viewing plan has expired. Do not include passcodes or account details in screenshots sent for support."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the device restriction setting",
+          "paragraphs": [
+            "Apple documents Settings, then General, then Restrictions on Apple TV 4K. With the household owner's permission, inspect the existing choices; enter the passcode only privately on the device if required. Restrictions can cover app purchases and in-app purchases as well as content ratings. The settings available depend on software, hardware and region. Reading a restriction is different from authorising a transaction. Do not switch protections off merely to dismiss a prompt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Keep app and provider approval distinct",
+          "paragraphs": [
+            "Apple cautions that device restrictions may not apply to downloaded apps; their controls may be inside the app or its settings. Therefore, do not promise one system switch will govern every player. Ask the owner to review the specific blocked action. An Apple purchase approval is separate from a Geo IPTV order or player licence. Verify any actual payment or plan message with the relevant seller before repeating payment. Preserve existing player setup."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Restricciones de compra de Geo IPTV: identifica el código del Apple TV",
+      "excerpt": "Identifica las restricciones de compra del Apple TV 4K antes de interpretar un código como un fallo de Geo IPTV. Separa la protección familiar y los pagos al proveedor.",
+      "seo_title": "Restricciones de compra de Geo IPTV: identifica el código del Apple TV",
+      "seo_description": "Identifica las restricciones de compra del Apple TV 4K antes de interpretar un código como un fallo de Geo IPTV. Separa la protección familiar y los pagos al proveedor.",
+      "sections": [
+        {
+          "heading": "Anota dónde aparece la solicitud",
+          "paragraphs": [
+            "La revisión de restricciones de compra de Geo IPTV empieza por la pantalla que pide autorización. Anota si es en Ajustes del Apple TV, App Store, la app Apple TV o el reproductor instalado. Registra la app y la acción, como abrirla o intentar comprar. Una solicitud de código del dispositivo no demuestra por sí sola que haya vencido el plan. No incluyas códigos ni datos de cuenta en capturas para soporte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la restricción del dispositivo",
+          "paragraphs": [
+            "Apple documenta Ajustes, General y Restricciones en Apple TV 4K. Con permiso del responsable del hogar, revisa las opciones actuales; introduce el código en privado en el dispositivo si hace falta. Las restricciones pueden abarcar compras de apps, compras dentro de apps y clasificaciones de contenido. Las opciones dependen del software, equipo y región. Leer una restricción no autoriza una transacción. No desactives las protecciones solo para cerrar el aviso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Distingue la app y el proveedor",
+          "paragraphs": [
+            "Apple advierte que las restricciones del dispositivo pueden no aplicarse a apps descargadas; sus controles pueden estar dentro de la app o en sus ajustes. No prometas que un único interruptor controle todos los reproductores. Pide al responsable revisar la acción bloqueada. Autorizar una compra de Apple es distinto de un pedido de Geo IPTV o una licencia del reproductor. Confirma cualquier mensaje de pago o plan con el vendedor correspondiente antes de volver a pagar. Conserva la configuración guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Restrictions d’achat Geo IPTV : identifier le code demandé par Apple TV",
+      "excerpt": "Identifiez les restrictions d’achat de l’Apple TV 4K avant de confondre un code demandé avec une panne Geo IPTV. Séparez protection du foyer et paiement au fournisseur.",
+      "seo_title": "Restrictions d’achat Geo IPTV : identifier le code demandé par Apple TV",
+      "seo_description": "Identifiez les restrictions d’achat de l’Apple TV 4K avant de confondre un code demandé avec une panne Geo IPTV. Séparez protection du foyer et paiement au fournisseur.",
+      "sections": [
+        {
+          "heading": "Repérer l’écran qui demande un accord",
+          "paragraphs": [
+            "La vérification des restrictions d’achat Geo IPTV commence par l’écran demandant une autorisation. Notez s’il s’agit des Réglages de l’Apple TV, de l’App Store, de l’app Apple TV ou du lecteur installé. Relevez l’app et l’action, par exemple son ouverture ou une tentative d’achat. Une demande de code de l’appareil ne prouve pas à elle seule que le forfait a expiré. Ne montrez ni codes ni coordonnées de compte dans les captures envoyées à l’assistance."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la restriction de l’appareil",
+          "paragraphs": [
+            "Apple indique Réglages, Général, puis Restrictions sur Apple TV 4K. Avec l’accord du responsable du foyer, consultez les choix existants ; saisissez le code uniquement en privé sur l’appareil si nécessaire. Les restrictions peuvent concerner les achats d’apps, les achats intégrés et les classifications du contenu. Les options dépendent du logiciel, du matériel et du pays. Consulter une restriction n’autorise aucun paiement. Ne désactivez pas les protections simplement pour fermer un message."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Distinguer l’app du fournisseur",
+          "paragraphs": [
+            "Apple précise que les restrictions de l’appareil peuvent ne pas s’appliquer aux apps téléchargées ; leurs contrôles peuvent être dans l’app ou ses réglages. Ne promettez donc pas qu’un seul réglage contrôle tous les lecteurs. Demandez au responsable d’examiner l’action bloquée. L’autorisation d’un achat Apple diffère d’une commande Geo IPTV ou d’une licence de lecteur. Vérifiez tout message de paiement ou de forfait auprès du vendeur concerné avant de payer à nouveau. Conservez la configuration enregistrée."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Restrizioni agli acquisti Geo IPTV: riconoscere il codice su Apple TV",
+      "excerpt": "Riconosci le restrizioni agli acquisti di Apple TV 4K prima di interpretare un codice come un problema di Geo IPTV. Distingui protezioni familiari e pagamenti al fornitore.",
+      "seo_title": "Restrizioni agli acquisti Geo IPTV: riconoscere il codice su Apple TV",
+      "seo_description": "Riconosci le restrizioni agli acquisti di Apple TV 4K prima di interpretare un codice come un problema di Geo IPTV. Distingui protezioni familiari e pagamenti al fornitore.",
+      "sections": [
+        {
+          "heading": "Annota dove compare la richiesta",
+          "paragraphs": [
+            "Il controllo delle restrizioni agli acquisti per Geo IPTV parte dalla schermata che chiede l’approvazione. Annota se si tratta delle Impostazioni di Apple TV, dell’App Store, dell’app Apple TV o del lettore installato. Registra l’app e l’azione, come aprirla o tentare un acquisto. La richiesta di un codice del dispositivo, da sola, non dimostra che il piano sia scaduto. Non includere codici o dati dell’account nelle schermate inviate all’assistenza."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la restrizione del dispositivo",
+          "paragraphs": [
+            "Apple indica Impostazioni, Generali e Restrizioni su Apple TV 4K. Con il permesso del responsabile della casa, consulta le scelte esistenti; se necessario, inserisci il codice in privato sul dispositivo. Le restrizioni possono riguardare acquisti di app, acquisti in-app e classificazioni dei contenuti. Le opzioni dipendono da software, hardware e regione. Leggere una restrizione non autorizza una transazione. Non disattivare le protezioni solo per chiudere un avviso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Distingui app e fornitore",
+          "paragraphs": [
+            "Apple avverte che le restrizioni del dispositivo potrebbero non valere per le app scaricate; i relativi controlli possono trovarsi nell’app o nelle sue impostazioni. Non promettere quindi che un solo interruttore controlli tutti i lettori. Chiedi al responsabile di esaminare l’azione bloccata. Approvare un acquisto Apple è diverso da un ordine Geo IPTV o dalla licenza del lettore. Verifica ogni messaggio sul pagamento o sul piano con il venditore pertinente prima di pagare di nuovo. Conserva la configurazione salvata."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV-aankoopbeperkingen: herken een toegangscodevraag op Apple TV",
+      "excerpt": "Herken aankoopbeperkingen op Apple TV 4K voordat je een toegangscodevraag als Geo IPTV-accountprobleem ziet. Houd gezinsbeveiliging en betalingen aan de aanbieder apart.",
+      "seo_title": "Geo IPTV-aankoopbeperkingen: herken een toegangscodevraag op Apple TV",
+      "seo_description": "Herken aankoopbeperkingen op Apple TV 4K voordat je een toegangscodevraag als Geo IPTV-accountprobleem ziet. Houd gezinsbeveiliging en betalingen aan de aanbieder apart.",
+      "sections": [
+        {
+          "heading": "Noteer waar de vraag verschijnt",
+          "paragraphs": [
+            "Een controle van Geo IPTV-aankoopbeperkingen begint bij het scherm dat toestemming vraagt. Noteer of dit in Instellingen van Apple TV, de App Store, de Apple TV-app of de geïnstalleerde speler gebeurt. Vermeld de app en handeling, zoals openen of een aankoop proberen. Alleen een toegangscodevraag van het apparaat bewijst niet dat het kijkabonnement verlopen is. Deel geen toegangscodes of accountgegevens in schermafbeeldingen voor ondersteuning."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de apparaatbeperking",
+          "paragraphs": [
+            "Apple beschrijft Instellingen, Algemeen en Beperkingen op Apple TV 4K. Bekijk met toestemming van de verantwoordelijke huisgenoot de bestaande keuzes; voer de code zo nodig uitsluitend privé op het apparaat in. Beperkingen kunnen appaankopen, aankopen in apps en leeftijdsclassificaties betreffen. Beschikbare opties hangen af van software, hardware en regio. Een beperking lezen geeft geen toestemming voor een transactie. Schakel beveiligingen niet uit om alleen een melding te sluiten."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Houd app en aanbieder uit elkaar",
+          "paragraphs": [
+            "Apple waarschuwt dat apparaatbeperkingen mogelijk niet voor gedownloade apps gelden; hun bediening kan in de app of de appinstellingen zitten. Beloof daarom niet dat één systeemschakelaar iedere speler beheert. Laat de eigenaar de specifieke geblokkeerde handeling bekijken. Goedkeuring van een Apple-aankoop staat los van een Geo IPTV-bestelling of spelerslicentie. Controleer een echte betalings- of abonnementsmelding bij de betreffende verkoper voordat je opnieuw betaalt. Bewaar de bestaande spelerinstellingen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Restrições de compra Geo IPTV: identifique o código na Apple TV",
+      "excerpt": "Identifique restrições de compra na Apple TV 4K antes de confundir um código pedido com uma falha Geo IPTV. Separe a proteção familiar dos pagamentos ao fornecedor.",
+      "seo_title": "Restrições de compra Geo IPTV: identifique o código na Apple TV",
+      "seo_description": "Identifique restrições de compra na Apple TV 4K antes de confundir um código pedido com uma falha Geo IPTV. Separe a proteção familiar dos pagamentos ao fornecedor.",
+      "sections": [
+        {
+          "heading": "Registe onde aparece o pedido",
+          "paragraphs": [
+            "A verificação das restrições de compra Geo IPTV começa no ecrã que pede aprovação. Anote se é nas Definições da Apple TV, na App Store, na aplicação Apple TV ou no leitor instalado. Registe a aplicação e a ação, como abrir ou tentar comprar. Um pedido de código do dispositivo, por si só, não comprova que o plano expirou. Não inclua códigos nem dados de conta nas capturas enviadas ao apoio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a restrição do dispositivo",
+          "paragraphs": [
+            "A Apple documenta Definições, Geral e Restrições na Apple TV 4K. Com autorização do responsável da casa, consulte as opções atuais; introduza o código apenas em privado no dispositivo, se necessário. As restrições podem abranger compras de aplicações, compras integradas e classificações de conteúdo. As opções variam com o software, o equipamento e a região. Consultar uma restrição não autoriza uma transação. Não desligue as proteções apenas para fechar um aviso."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Distinga a aplicação e o fornecedor",
+          "paragraphs": [
+            "A Apple alerta que as restrições do dispositivo podem não se aplicar a aplicações descarregadas; os controlos podem estar na aplicação ou nas suas definições. Não prometa, portanto, que um único interruptor controle todos os leitores. Peça ao responsável que analise a ação bloqueada. Aprovar uma compra Apple é diferente de uma encomenda Geo IPTV ou da licença do leitor. Confirme mensagens de pagamento ou do plano com o vendedor relevante antes de voltar a pagar. Preserve a configuração guardada."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Ограничения покупок Geo IPTV: определите запрос кода на Apple TV",
+      "excerpt": "Проверьте ограничения покупок Apple TV 4K, прежде чем считать запрос кода ошибкой Geo IPTV. Разделяйте защиту семьи и платежи поставщику.",
+      "seo_title": "Ограничения покупок Geo IPTV: определите запрос кода на Apple TV",
+      "seo_description": "Проверьте ограничения покупок Apple TV 4K, прежде чем считать запрос кода ошибкой Geo IPTV. Разделяйте защиту семьи и платежи поставщику.",
+      "sections": [
+        {
+          "heading": "Запишите, где появляется запрос",
+          "paragraphs": [
+            "Проверка ограничений покупок при использовании Geo IPTV начинается с экрана, запрашивающего разрешение. Отметьте, где он появляется: в настройках Apple TV, App Store, приложении Apple TV или установленном проигрывателе. Запишите приложение и действие, например открытие или попытку покупки. Один лишь запрос кода устройства не доказывает, что срок тарифа истёк. Не включайте коды и данные учётной записи в снимки экрана для поддержки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте ограничение устройства",
+          "paragraphs": [
+            "Apple указывает путь «Настройки», «Основные», «Ограничения» на Apple TV 4K. С разрешения ответственного за домашнее устройство просмотрите текущие параметры; при необходимости вводите код только конфиденциально на самом устройстве. Ограничения могут касаться покупки приложений, встроенных покупок и возрастных категорий контента. Доступность зависит от системы, оборудования и региона. Просмотр ограничения не разрешает платёж. Не отключайте защиту только ради закрытия сообщения."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте приложение и поставщика",
+          "paragraphs": [
+            "Apple предупреждает, что ограничения устройства могут не действовать в загруженных приложениях; собственные средства управления могут находиться в приложении или его настройках. Не обещайте, что один системный переключатель управляет всеми проигрывателями. Попросите владельца проверить конкретное заблокированное действие. Разрешение покупки Apple отличается от заказа Geo IPTV или лицензии проигрывателя. Подтвердите сообщение об оплате или тарифе у соответствующего продавца перед повторным платежом. Сохраните существующие настройки проигрывателя."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV خریداری کی پابندیاں: Apple TV کے پاس کوڈ کا مطالبہ پہچانیں",
+      "excerpt": "Apple TV 4K کی خریداری کی پابندیاں پہچانیں؛ پاس کوڈ کے مطالبے کو فوراً Geo IPTV اکاؤنٹ کی خرابی نہ سمجھیں۔ گھریلو تحفظ اور فراہم کنندہ کی ادائیگی الگ ہیں۔",
+      "seo_title": "Geo IPTV خریداری کی پابندیاں: Apple TV کے پاس کوڈ کا مطالبہ پہچانیں",
+      "seo_description": "Apple TV 4K کی خریداری کی پابندیاں پہچانیں؛ پاس کوڈ کے مطالبے کو فوراً Geo IPTV اکاؤنٹ کی خرابی نہ سمجھیں۔ گھریلو تحفظ اور فراہم کنندہ کی ادائیگی الگ ہیں۔",
+      "sections": [
+        {
+          "heading": "مطالبہ کہاں آتا ہے، لکھیں",
+          "paragraphs": [
+            "Geo IPTV کی خریداری کی پابندیوں کی جانچ اس اسکرین سے شروع ہوتی ہے جو اجازت مانگتی ہے۔ لکھیں کہ یہ Apple TV کی ترتیبات، App Store، Apple TV ایپ یا نصب پلیئر میں ہے۔ ایپ کا نام اور کام، مثلاً کھولنا یا خریدنے کی کوشش، نوٹ کریں۔ صرف آلے کا پاس کوڈ مانگنا اس بات کا ثبوت نہیں کہ دیکھنے کا پلان ختم ہو گیا ہے۔ مدد کے لیے بھیجے گئے اسکرین شاٹ میں پاس کوڈ یا اکاؤنٹ کی تفصیلات شامل نہ کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "آلے کی پابندی پڑھیں",
+          "paragraphs": [
+            "Apple، Apple TV 4K پر ترتیبات، پھر عمومی، پھر پابندیوں کا راستہ بتاتا ہے۔ گھر کے ذمہ دار مالک کی اجازت سے موجودہ انتخاب دیکھیں؛ ضرورت پڑے تو پاس کوڈ صرف آلے پر نجی طور پر درج کریں۔ پابندیاں ایپ خریدنے، ایپ کے اندر خریداری اور مواد کی عمر کی درجہ بندی پر لگ سکتی ہیں۔ دستیاب اختیارات سافٹ ویئر، آلے اور علاقے کے مطابق بدلتے ہیں۔ پابندی پڑھنا ادائیگی کی اجازت دینا نہیں ہے۔ محض پیغام بند کرنے کے لیے تحفظ بند نہ کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "ایپ اور فراہم کنندہ کی منظوری الگ رکھیں",
+          "paragraphs": [
+            "Apple خبردار کرتا ہے کہ آلے کی پابندیاں ڈاؤن لوڈ کردہ ایپس پر لاگو نہ بھی ہوں؛ ان کے اپنے کنٹرول ایپ یا اس کی ترتیبات میں ہو سکتے ہیں۔ اس لیے یہ وعدہ نہ کریں کہ ایک ہی نظامی اختیار ہر پلیئر کو قابو کرے گا۔ مالک سے مخصوص رکے ہوئے کام کا جائزہ لینے کو کہیں۔ Apple کی خریداری کی منظوری، Geo IPTV کے آرڈر یا پلیئر کے لائسنس سے الگ ہے۔ دوبارہ ادائیگی سے پہلے اصل ادائیگی یا پلان کا پیغام متعلقہ فروخت کنندہ سے تصدیق کریں۔ پلیئر کی محفوظ ترتیب برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "قيود شراء Geo IPTV: تعرّف على طلب رمز الدخول في Apple TV",
+      "excerpt": "تعرّف على قيود الشراء في Apple TV 4K قبل اعتبار طلب الرمز خللًا في حساب Geo IPTV. افصل حماية المنزل عن المدفوعات لمزوّد الخدمة.",
+      "seo_title": "قيود شراء Geo IPTV: تعرّف على طلب رمز الدخول في Apple TV",
+      "seo_description": "تعرّف على قيود الشراء في Apple TV 4K قبل اعتبار طلب الرمز خللًا في حساب Geo IPTV. افصل حماية المنزل عن المدفوعات لمزوّد الخدمة.",
+      "sections": [
+        {
+          "heading": "سجّل موضع ظهور الطلب",
+          "paragraphs": [
+            "يبدأ فحص قيود الشراء عند استخدام Geo IPTV بالشاشة التي تطلب الموافقة. دوّن إن كان الطلب في إعدادات Apple TV أو App Store أو تطبيق Apple TV أو المشغّل المثبّت. سجّل اسم التطبيق والإجراء، مثل فتحه أو محاولة الشراء. طلب رمز الجهاز وحده لا يثبت انتهاء خطة المشاهدة. لا تُدرج رموز الدخول أو تفاصيل الحساب في لقطات الشاشة المرسلة للدعم."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ قيد الجهاز",
+          "paragraphs": [
+            "توضّح Apple المسار: الإعدادات، ثم عام، ثم القيود على Apple TV 4K. بإذن المسؤول عن جهاز المنزل، راجع الخيارات الحالية؛ وأدخل الرمز على الجهاز بصورة خاصة فقط عند الحاجة. قد تشمل القيود شراء التطبيقات والمشتريات داخلها وتصنيفات المحتوى العمرية. تختلف الخيارات حسب النظام والجهاز والمنطقة. قراءة القيد لا تعني الموافقة على معاملة مالية. لا توقف وسائل الحماية لمجرد إغلاق رسالة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "افصل موافقة التطبيق عن المزوّد",
+          "paragraphs": [
+            "تنبّه Apple إلى أن قيود الجهاز قد لا تنطبق على التطبيقات المنزّلة؛ وقد توجد عناصر التحكم الخاصة بها داخل التطبيق أو إعداداته. لذلك لا تَعِد بأن مفتاحًا واحدًا في النظام سيضبط كل المشغّلات. اطلب من المسؤول مراجعة الإجراء المحظور تحديدًا. الموافقة على شراء من Apple منفصلة عن طلب Geo IPTV أو ترخيص المشغّل. تحقّق من أي رسالة دفع أو خطة لدى البائع المعني قبل تكرار الدفع. احتفظ بإعداد المشغّل المحفوظ."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV खरीदारी प्रतिबंध: Apple TV पर पासकोड का अनुरोध पहचानें",
+      "excerpt": "Apple TV 4K के खरीदारी प्रतिबंध पहचानें; पासकोड के अनुरोध को तुरंत Geo IPTV खाते की खराबी न समझें। घरेलू सुरक्षा और प्रदाता को भुगतान अलग रखें।",
+      "seo_title": "Geo IPTV खरीदारी प्रतिबंध: Apple TV पर पासकोड का अनुरोध पहचानें",
+      "seo_description": "Apple TV 4K के खरीदारी प्रतिबंध पहचानें; पासकोड के अनुरोध को तुरंत Geo IPTV खाते की खराबी न समझें। घरेलू सुरक्षा और प्रदाता को भुगतान अलग रखें।",
+      "sections": [
+        {
+          "heading": "अनुरोध कहाँ आता है, लिखें",
+          "paragraphs": [
+            "Geo IPTV खरीदारी प्रतिबंधों की जाँच उस स्क्रीन से शुरू होती है जो अनुमति माँगती है। लिखें कि वह Apple TV की सेटिंग, App Store, Apple TV ऐप या स्थापित प्लेयर में है। ऐप का नाम और काम, जैसे खोलना या खरीदने की कोशिश, नोट करें। केवल डिवाइस का पासकोड माँगा जाना देखने का प्लान समाप्त होने का प्रमाण नहीं है। सहायता के लिए भेजे गए स्क्रीनशॉट में पासकोड या खाते की जानकारी शामिल न करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "डिवाइस का प्रतिबंध पढ़ें",
+          "paragraphs": [
+            "Apple, Apple TV 4K पर सेटिंग, सामान्य और फिर प्रतिबंध का रास्ता बताता है। घर के जिम्मेदार मालिक की अनुमति से मौजूदा विकल्प देखें; आवश्यकता हो तो पासकोड केवल डिवाइस पर निजी तौर पर दर्ज करें। प्रतिबंध ऐप की खरीदारी, ऐप के अंदर खरीदारी और सामग्री की आयु श्रेणी पर लागू हो सकते हैं। उपलब्ध विकल्प सॉफ़्टवेयर, डिवाइस और क्षेत्र पर निर्भर हैं। प्रतिबंध पढ़ना किसी भुगतान की अनुमति देना नहीं है। सिर्फ संदेश बंद करने के लिए सुरक्षा बंद न करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV parental controls",
+              "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+            }
+          ]
+        },
+        {
+          "heading": "ऐप और प्रदाता की मंजूरी अलग रखें",
+          "paragraphs": [
+            "Apple सावधान करता है कि डिवाइस के प्रतिबंध डाउनलोड किए गए ऐप पर लागू न भी हों; उनके अपने नियंत्रण ऐप या उसकी सेटिंग में हो सकते हैं। इसलिए यह वादा न करें कि सिस्टम का एक विकल्प हर प्लेयर को नियंत्रित करेगा। मालिक से उस खास रोके गए काम की समीक्षा करने को कहें। Apple की खरीदारी की मंजूरी, Geo IPTV के ऑर्डर या प्लेयर लाइसेंस से अलग है। फिर भुगतान करने से पहले वास्तविक भुगतान या प्लान के संदेश की पुष्टि संबंधित विक्रेता से करें। प्लेयर की सहेजी हुई सेटिंग बनाए रखें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple TV parental controls",
+      "url": "https://support.apple.com/guide/tv/set-up-parental-controls-atvbbaf126df/tvos"
+    }
+  ]
+}

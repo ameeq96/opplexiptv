@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-27",
+  "topic": "Inspect a desktop Chrome camera or microphone permission request separately from IPTV Subscription provider verification, plan terms and recorded Opplex or Filex order/setup state.",
+  "primary_keyword": "IPTV Subscription microphone permission",
+  "slug": "iptvsubscription-chrome-camera-and-microphone-permission-request",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription microphone permission: inspect Chrome’s request",
+      "excerpt": "Inspect a camera or microphone request in desktop Chrome without granting unexpected access. Keep browser hardware permissions separate from provider verification and an IPTV Subscription order.",
+      "seo_title": "IPTV Subscription microphone permission: inspect Chrome’s request",
+      "seo_description": "Inspect a camera or microphone request in desktop Chrome without granting unexpected access. Keep browser hardware permissions separate from provider verification and an IPTV Subscription order.",
+      "sections": [
+        {
+          "heading": "Identify the request before allowing access",
+          "paragraphs": [
+            "If an IPTV Subscription microphone permission prompt appears in desktop Chrome, first read the website address and identify the feature you deliberately opened. A browser hardware request is different from a player’s sound output, a plan’s connection allowance or an order confirmation. Do not grant camera or microphone access merely because an unexpected message calls it activation. This check does not assume the public plan page currently requests either permission."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review the current permission without changing it",
+          "paragraphs": [
+            "Google documents Chrome’s camera and microphone controls under More, Settings, Privacy and security, Site settings, then Camera or Microphone. Review the allowed and blocked site lists and match the exact site involved. Note the displayed permission rather than changing the browser-wide default or allowing every website. Work or school management may control these settings; ask the administrator about a managed restriction instead of trying to bypass it."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep permissions and the order separate",
+          "paragraphs": [
+            "If the request’s purpose remains unclear, leave access ungranted and ask support which feature needs it, using the public page address and prompt wording without private account details. Check the actual Opplex or Filex provider, selected duration and recorded order/setup state separately. A player licence may cost extra, and an unstated Filex connection allowance still needs confirmation. Hardware permission does not confirm payment or service activation; do not repeat payment or erase player data to answer a browser prompt."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Permiso de micrófono de IPTV Subscription: revisa la solicitud de Chrome",
+      "excerpt": "Revisa una solicitud de cámara o micrófono en Chrome para ordenador sin conceder acceso inesperado. Separa los permisos del navegador, la verificación del proveedor y el pedido.",
+      "seo_title": "Permiso de micrófono de IPTV Subscription: revisa la solicitud de Chrome",
+      "seo_description": "Revisa una solicitud de cámara o micrófono en Chrome para ordenador sin conceder acceso inesperado. Separa los permisos del navegador, la verificación del proveedor y el pedido.",
+      "sections": [
+        {
+          "heading": "Identifica la solicitud antes de permitir acceso",
+          "paragraphs": [
+            "Si aparece una solicitud de permiso de micrófono durante una consulta de IPTV Subscription en Chrome para ordenador, lee primero la dirección del sitio e identifica la función que abriste voluntariamente. El acceso al equipo solicitado por el navegador es distinto de la salida de sonido del reproductor, las conexiones del plan y la confirmación del pedido. No autorices cámara ni micrófono porque un mensaje inesperado lo llame activación. Esta revisión no supone que la página pública de planes solicite esos permisos actualmente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta el permiso actual sin modificarlo",
+          "paragraphs": [
+            "Google sitúa los controles de cámara y micrófono en Más, Configuración, Privacidad y seguridad, Configuración de sitios y después Cámara o Micrófono. Consulta las listas de sitios permitidos y bloqueados y comprueba el sitio exacto. Anota el permiso mostrado sin cambiar el valor general ni autorizar todos los sitios. La administración del trabajo o del centro educativo puede controlar estos ajustes; consulta al administrador sobre una restricción gestionada, sin intentar eludirla."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ayuda de Google Chrome",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa los permisos del pedido",
+          "paragraphs": [
+            "Si no entiendes la finalidad de la solicitud, deja el acceso sin conceder y pregunta al soporte qué función lo necesita. Comparte la dirección pública y el texto del aviso, sin datos privados. Comprueba aparte el proveedor real Opplex o Filex, la duración y el estado registrado del pedido y la configuración. La licencia del reproductor puede cobrarse aparte, y una cantidad de conexiones Filex no indicada requiere confirmación. El permiso no acredita pago ni activación; no repitas el pago ni borres datos del reproductor para responder al aviso."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Autorisation du microphone IPTV Subscription : examiner la demande de Chrome",
+      "excerpt": "Examinez une demande de caméra ou de microphone dans Chrome sur ordinateur sans autoriser un accès inattendu. Distinguez permissions, vérification du fournisseur et commande.",
+      "seo_title": "Autorisation du microphone IPTV Subscription : examiner la demande de Chrome",
+      "seo_description": "Examinez une demande de caméra ou de microphone dans Chrome sur ordinateur sans autoriser un accès inattendu. Distinguez permissions, vérification du fournisseur et commande.",
+      "sections": [
+        {
+          "heading": "Identifier la demande avant d’autoriser",
+          "paragraphs": [
+            "Si une demande d’accès au microphone apparaît pendant une consultation IPTV Subscription dans Chrome sur ordinateur, lisez d’abord l’adresse du site et identifiez la fonction que vous avez volontairement ouverte. Une demande matérielle du navigateur diffère de la sortie audio du lecteur, du nombre de connexions du forfait et d’une confirmation de commande. N’accordez pas l’accès à la caméra ou au microphone simplement parce qu’un message inattendu parle d’activation. Cette vérification ne suppose pas que la page publique des forfaits demande actuellement ces autorisations."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la permission actuelle sans la modifier",
+          "paragraphs": [
+            "Google situe les commandes sous Plus, Paramètres, Confidentialité et sécurité, Paramètres des sites, puis Caméra ou Microphone. Consultez les listes de sites autorisés et bloqués et repérez exactement le site concerné. Notez la permission affichée sans modifier le réglage général ni autoriser tous les sites. Une organisation professionnelle ou scolaire peut gérer ces paramètres ; interrogez son administrateur sur une restriction gérée au lieu de la contourner."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Aide Google Chrome",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer les permissions de la commande",
+          "paragraphs": [
+            "Si l’objectif reste incertain, laissez l’accès non accordé et demandez au support quelle fonction en a besoin. Fournissez l’adresse publique et le texte du message sans détails privés. Vérifiez séparément le fournisseur Opplex ou Filex, la durée et l’état enregistré de commande et de configuration. La licence du lecteur peut être payante séparément ; une limite Filex non précisée reste à confirmer. La permission ne prouve ni paiement ni activation : ne payez pas de nouveau et n’effacez pas les données du lecteur pour répondre au navigateur."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Permesso microfono IPTV Subscription: controlla la richiesta di Chrome",
+      "excerpt": "Esamina una richiesta di fotocamera o microfono in Chrome per computer senza concedere accessi inattesi. Distingui i permessi del browser dalla verifica del fornitore e dall’ordine.",
+      "seo_title": "Permesso microfono IPTV Subscription: controlla la richiesta di Chrome",
+      "seo_description": "Esamina una richiesta di fotocamera o microfono in Chrome per computer senza concedere accessi inattesi. Distingui i permessi del browser dalla verifica del fornitore e dall’ordine.",
+      "sections": [
+        {
+          "heading": "Identifica la richiesta prima di autorizzare",
+          "paragraphs": [
+            "Se durante la consultazione di IPTV Subscription compare una richiesta del microfono in Chrome per computer, leggi prima l’indirizzo del sito e identifica la funzione che hai aperto volontariamente. La richiesta hardware del browser è diversa dall’uscita audio del lettore, dalle connessioni del piano e dalla conferma d’ordine. Non autorizzare fotocamera o microfono solo perché un messaggio inatteso parla di attivazione. Questo controllo non presume che la pagina pubblica dei piani richieda attualmente questi permessi."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi il permesso attuale senza modificarlo",
+          "paragraphs": [
+            "Google documenta i controlli in Altro, Impostazioni, Privacy e sicurezza, Impostazioni sito e quindi Fotocamera o Microfono. Consulta gli elenchi dei siti consentiti e bloccati, verificando il sito esatto. Annota il permesso visualizzato senza cambiare l’impostazione generale né consentire tutti i siti. La gestione aziendale o scolastica può controllare queste opzioni: chiedi all’amministratore informazioni su una restrizione gestita, senza tentare di aggirarla."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida di Google Chrome",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa i permessi dall’ordine",
+          "paragraphs": [
+            "Se lo scopo resta poco chiaro, lascia l’accesso non concesso e chiedi all’assistenza quale funzione lo richiede. Fornisci l’indirizzo pubblico e il testo dell’avviso senza dati privati. Controlla separatamente il fornitore Opplex o Filex, la durata e lo stato registrato di ordine e configurazione. La licenza del lettore può avere un costo distinto; un limite Filex non dichiarato va confermato. Il permesso non conferma pagamento o attivazione: non pagare di nuovo e non cancellare i dati del lettore per rispondere al browser."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Microfoontoestemming bij IPTV Subscription: bekijk het verzoek van Chrome",
+      "excerpt": "Bekijk een camera- of microfoonverzoek in Chrome op de computer zonder onverwachte toegang te verlenen. Houd browserrechten, providercontrole en de bestelling uit elkaar.",
+      "seo_title": "Microfoontoestemming bij IPTV Subscription: bekijk het verzoek van Chrome",
+      "seo_description": "Bekijk een camera- of microfoonverzoek in Chrome op de computer zonder onverwachte toegang te verlenen. Houd browserrechten, providercontrole en de bestelling uit elkaar.",
+      "sections": [
+        {
+          "heading": "Herken het verzoek voordat je toegang geeft",
+          "paragraphs": [
+            "Verschijnt tijdens het bekijken van IPTV Subscription een microfoonverzoek in Chrome op de computer, lees dan eerst het websiteadres en herken de functie die je bewust hebt geopend. Een hardwareverzoek van de browser verschilt van de geluidsuitvoer van de speler, het aantal verbindingen van een abonnement en een bestelbevestiging. Geef camera of microfoon geen toegang alleen omdat een onverwacht bericht dit activering noemt. Deze controle veronderstelt niet dat de openbare abonnementspagina deze rechten momenteel vraagt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk de huidige toestemming zonder wijzigingen",
+          "paragraphs": [
+            "Google beschrijft de bediening via Meer, Instellingen, Privacy en beveiliging, Site-instellingen en vervolgens Camera of Microfoon. Bekijk de lijsten met toegestane en geblokkeerde sites en controleer het precieze adres. Noteer de getoonde toestemming zonder de algemene standaard te wijzigen of alle websites toegang te geven. Een werk- of schoolbeheerder kan deze instellingen beheren; vraag naar een beheerde beperking in plaats van die te omzeilen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome Help",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd rechten en bestelling apart",
+          "paragraphs": [
+            "Blijft het doel onduidelijk, laat toegang dan onverleend en vraag ondersteuning welke functie die nodig heeft. Deel het openbare adres en de melding zonder privégegevens. Controleer apart de daadwerkelijke provider Opplex of Filex, de looptijd en de vastgelegde bestel- en instelstatus. Een spelerslicentie kan apart kosten; een niet genoemde Filex-verbindingslimiet moet worden bevestigd. Toestemming bewijst geen betaling of activering. Betaal niet opnieuw en wis geen spelergegevens om een browsermelding te beantwoorden."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Permissão de microfone na IPTV Subscription: examine o pedido do Chrome",
+      "excerpt": "Examine um pedido de câmara ou microfone no Chrome para computador sem conceder acesso inesperado. Separe permissões do navegador, verificação do fornecedor e encomenda.",
+      "seo_title": "Permissão de microfone na IPTV Subscription: examine o pedido do Chrome",
+      "seo_description": "Examine um pedido de câmara ou microfone no Chrome para computador sem conceder acesso inesperado. Separe permissões do navegador, verificação do fornecedor e encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique o pedido antes de autorizar",
+          "paragraphs": [
+            "Se surgir um pedido de microfone ao consultar a IPTV Subscription no Chrome para computador, leia primeiro o endereço do site e identifique a função que abriu deliberadamente. Um pedido de acesso ao equipamento pelo navegador é diferente da saída de som do leitor, das ligações do plano e da confirmação da encomenda. Não autorize câmara ou microfone só porque uma mensagem inesperada lhe chama ativação. Esta verificação não pressupõe que a página pública dos planos peça atualmente essas permissões."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulte a permissão atual sem a alterar",
+          "paragraphs": [
+            "A Google documenta os controlos em Mais, Definições, Privacidade e segurança, Definições de sites e depois Câmara ou Microfone. Consulte as listas de sites autorizados e bloqueados e confirme o site exato. Anote a permissão apresentada sem alterar a predefinição geral nem autorizar todos os sites. A administração do trabalho ou da escola pode controlar estas opções; pergunte ao administrador sobre uma restrição gerida, sem tentar contorná-la."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Ajuda do Google Chrome",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe as permissões da encomenda",
+          "paragraphs": [
+            "Se o objetivo continuar pouco claro, deixe o acesso por autorizar e pergunte ao apoio qual a função que precisa dele. Partilhe o endereço público e o texto do aviso sem dados privados. Verifique separadamente o fornecedor Opplex ou Filex, a duração e o estado registado da encomenda e configuração. A licença do leitor pode ter um custo separado; um limite Filex não indicado precisa de confirmação. A permissão não confirma pagamento nem ativação. Não pague novamente nem apague dados do leitor para responder ao navegador."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Разрешение микрофона IPTV Subscription: проверьте запрос Chrome",
+      "excerpt": "Проверьте запрос камеры или микрофона в Chrome на компьютере, не предоставляя неожиданный доступ. Отделяйте разрешения браузера от проверки поставщика и заказа.",
+      "seo_title": "Разрешение микрофона IPTV Subscription: проверьте запрос Chrome",
+      "seo_description": "Проверьте запрос камеры или микрофона в Chrome на компьютере, не предоставляя неожиданный доступ. Отделяйте разрешения браузера от проверки поставщика и заказа.",
+      "sections": [
+        {
+          "heading": "Определите запрос до предоставления доступа",
+          "paragraphs": [
+            "Если при просмотре IPTV Subscription в Chrome на компьютере появляется запрос микрофона, сначала прочитайте адрес сайта и определите функцию, которую вы намеренно открыли. Аппаратный доступ браузера отличается от вывода звука плеера, числа подключений тарифа и подтверждения заказа. Не разрешайте камеру или микрофон только потому, что неожиданное сообщение называет это активацией. Такая проверка не означает, что публичная страница тарифов сейчас запрашивает эти разрешения."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Посмотрите разрешение, ничего не меняя",
+          "paragraphs": [
+            "Google описывает управление через меню «Ещё», «Настройки», «Конфиденциальность и безопасность», «Настройки сайтов», затем «Камера» или «Микрофон». Просмотрите списки разрешённых и заблокированных сайтов и найдите точный адрес. Запишите показанное разрешение, не меняя общий вариант по умолчанию и не разрешая доступ всем сайтам. На рабочем или учебном компьютере параметры может задавать администратор: уточните управляемое ограничение у него вместо попыток обхода."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Справка Google Chrome",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Отделяйте разрешения от заказа",
+          "paragraphs": [
+            "Если назначение запроса непонятно, оставьте доступ непредоставленным и спросите поддержку, какой функции он нужен. Передайте публичный адрес и текст запроса без личных сведений. Отдельно проверьте поставщика Opplex или Filex, срок и записанное состояние заказа и настройки. Лицензия плеера может оплачиваться отдельно; неуказанный лимит подключений Filex требует подтверждения. Разрешение не подтверждает оплату или активацию. Не платите повторно и не стирайте данные плеера ради ответа на запрос браузера."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کی مائیکروفون اجازت: Chrome کی درخواست دیکھیں",
+      "excerpt": "کمپیوٹر کے Chrome میں کیمرے یا مائیکروفون کی درخواست دیکھیں، غیر متوقع رسائی نہ دیں۔ براؤزر کی اجازت، فراہم کنندہ کی تصدیق اور آرڈر کو الگ سمجھیں۔",
+      "seo_title": "IPTV Subscription کی مائیکروفون اجازت: Chrome کی درخواست دیکھیں",
+      "seo_description": "کمپیوٹر کے Chrome میں کیمرے یا مائیکروفون کی درخواست دیکھیں، غیر متوقع رسائی نہ دیں۔ براؤزر کی اجازت، فراہم کنندہ کی تصدیق اور آرڈر کو الگ سمجھیں۔",
+      "sections": [
+        {
+          "heading": "اجازت دینے سے پہلے درخواست پہچانیں",
+          "paragraphs": [
+            "کمپیوٹر کے Chrome میں IPTV Subscription دیکھتے ہوئے مائیکروفون کی اجازت مانگی جائے تو پہلے ویب پتا پڑھیں اور وہ خصوصیت پہچانیں جو آپ نے خود کھولی تھی۔ براؤزر کی ہارڈویئر درخواست، پلیئر کی آواز کے اخراج، پلان کی کنکشن حد اور آرڈر کی تصدیق سے الگ ہے۔ صرف اس لیے کیمرے یا مائیکروفون کی رسائی نہ دیں کہ کوئی غیر متوقع پیغام اسے ایکٹیویشن کہتا ہے۔ اس جانچ کا مطلب یہ نہیں کہ عوامی پلان صفحہ اس وقت یہ اجازتیں مانگ رہا ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "موجودہ اجازت بدلنے کے بغیر دیکھیں",
+          "paragraphs": [
+            "Google کے مطابق Chrome میں مزید، ترتیبات، رازداری اور سیکیورٹی، سائٹ کی ترتیبات، پھر کیمرا یا مائیکروفون کے تحت یہ کنٹرول ہیں۔ اجازت یافتہ اور مسدود سائٹوں کی فہرستیں دیکھیں اور متعلقہ سائٹ کا عین پتا ملائیں۔ دکھائی گئی اجازت نوٹ کریں؛ پورے براؤزر کی طے شدہ ترتیب نہ بدلیں اور تمام ویب سائٹوں کو رسائی نہ دیں۔ دفتر یا تعلیمی ادارے کا منتظم یہ ترتیبات چلا سکتا ہے۔ پابندی کو نظرانداز کرنے کے بجائے اسی منتظم سے پوچھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome کی مدد",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اجازت اور آرڈر الگ رکھیں",
+          "paragraphs": [
+            "مقصد واضح نہ ہو تو رسائی کی اجازت دیے بغیر سپورٹ سے پوچھیں کہ کس خصوصیت کو اس کی ضرورت ہے۔ عوامی صفحے کا پتا اور درخواست کے الفاظ بتائیں، نجی اکاؤنٹ معلومات نہیں۔ اصل Opplex یا Filex فراہم کنندہ، مدت، اور درج شدہ آرڈر و سیٹ اپ کی حالت الگ جانچیں۔ پلیئر لائسنس کی قیمت الگ ہو سکتی ہے؛ Filex کی غیر درج شدہ کنکشن حد کی تصدیق ضروری ہے۔ ہارڈویئر کی اجازت ادائیگی یا سروس ایکٹیویشن کی تصدیق نہیں۔ براؤزر کی درخواست کا جواب دینے کے لیے نہ دوبارہ ادائیگی کریں، نہ پلیئر کا ڈیٹا مٹائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "إذن الميكروفون مع IPTV Subscription: افحص طلب Chrome",
+      "excerpt": "افحص طلب الكاميرا أو الميكروفون في Chrome على الكمبيوتر دون منح وصول غير متوقع. افصل أذونات المتصفح عن التحقق من المزود وحالة الطلب.",
+      "seo_title": "إذن الميكروفون مع IPTV Subscription: افحص طلب Chrome",
+      "seo_description": "افحص طلب الكاميرا أو الميكروفون في Chrome على الكمبيوتر دون منح وصول غير متوقع. افصل أذونات المتصفح عن التحقق من المزود وحالة الطلب.",
+      "sections": [
+        {
+          "heading": "حدد الطلب قبل منح الوصول",
+          "paragraphs": [
+            "إذا ظهر طلب إذن الميكروفون أثناء تصفح IPTV Subscription في Chrome على الكمبيوتر، فاقرأ عنوان الموقع أولاً وحدد الميزة التي فتحتها بنفسك. طلب المتصفح للوصول إلى العتاد يختلف عن إخراج صوت المشغل وعدد اتصالات الباقة وتأكيد الطلب. لا تسمح بالكاميرا أو الميكروفون لمجرد أن رسالة غير متوقعة تسمي ذلك تفعيلًا. لا يفترض هذا الفحص أن صفحة الباقات العامة تطلب هذين الإذنين حاليًا."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع الإذن الحالي دون تغييره",
+          "paragraphs": [
+            "توضح Google أن التحكم يوجد ضمن المزيد، الإعدادات، الخصوصية والأمان، إعدادات المواقع، ثم الكاميرا أو الميكروفون. راجع قائمتي المواقع المسموح لها والمحظورة وطابق الموقع المعني بدقة. دوّن الإذن المعروض دون تغيير الإعداد الافتراضي العام أو السماح لجميع المواقع. قد تتحكم جهة العمل أو الدراسة في هذه الإعدادات؛ اسأل المسؤول عن القيد المُدار بدل محاولة تجاوزه."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "مساعدة Google Chrome",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الأذونات عن الطلب",
+          "paragraphs": [
+            "إذا بقي الغرض غير واضح، فلا تمنح الوصول، واسأل الدعم عن الميزة التي تحتاج إليه. شارك عنوان الصفحة العامة ونص الطلب دون تفاصيل الحساب الخاصة. تحقق بصورة مستقلة من مزود Opplex أو Filex الفعلي والمدة وحالة الطلب والإعداد المسجلة. قد تكون رخصة المشغل بتكلفة منفصلة، وحد اتصالات Filex غير المذكور يحتاج إلى تأكيد. إذن العتاد لا يثبت الدفع أو تفعيل الخدمة. لا تكرر الدفع ولا تمسح بيانات المشغل للرد على طلب المتصفح."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription माइक्रोफ़ोन अनुमति: Chrome का अनुरोध जाँचें",
+      "excerpt": "कंप्यूटर के Chrome में कैमरा या माइक्रोफ़ोन अनुरोध देखें और अनपेक्षित पहुँच न दें। ब्राउज़र अनुमति, प्रदाता की पुष्टि और ऑर्डर की स्थिति को अलग रखें।",
+      "seo_title": "IPTV Subscription माइक्रोफ़ोन अनुमति: Chrome का अनुरोध जाँचें",
+      "seo_description": "कंप्यूटर के Chrome में कैमरा या माइक्रोफ़ोन अनुरोध देखें और अनपेक्षित पहुँच न दें। ब्राउज़र अनुमति, प्रदाता की पुष्टि और ऑर्डर की स्थिति को अलग रखें।",
+      "sections": [
+        {
+          "heading": "अनुमति देने से पहले अनुरोध पहचानें",
+          "paragraphs": [
+            "कंप्यूटर के Chrome में IPTV Subscription देखते समय माइक्रोफ़ोन अनुमति माँगी जाए, तो पहले वेबसाइट का पता पढ़ें और पहचानें कि आपने कौन सी सुविधा जानबूझकर खोली थी। ब्राउज़र का हार्डवेयर अनुरोध, प्लेयर की ऑडियो आउटपुट, प्लान की कनेक्शन सीमा और ऑर्डर की पुष्टि से अलग है। केवल इसलिए कैमरा या माइक्रोफ़ोन पहुँच न दें कि कोई अनपेक्षित संदेश इसे सक्रियण कहता है। इस जाँच का अर्थ यह नहीं कि सार्वजनिक प्लान पेज अभी ये अनुमतियाँ माँगता है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "मौजूदा अनुमति बिना बदले देखें",
+          "paragraphs": [
+            "Google के अनुसार Chrome में ज़्यादा, सेटिंग, निजता और सुरक्षा, साइट की सेटिंग, फिर कैमरा या माइक्रोफ़ोन के अंतर्गत ये नियंत्रण मिलते हैं। अनुमति वाली और ब्लॉक की गई साइटों की सूचियाँ देखें और संबंधित साइट का सही पता मिलाएँ। दिखाई गई अनुमति लिखें; पूरे ब्राउज़र का डिफ़ॉल्ट न बदलें और सभी वेबसाइटों को पहुँच न दें। कार्यस्थल या स्कूल का व्यवस्थापक इन्हें नियंत्रित कर सकता है। प्रबंधित रोक को दरकिनार करने के बजाय व्यवस्थापक से पूछें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome सहायता",
+              "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अनुमतियाँ और ऑर्डर अलग रखें",
+          "paragraphs": [
+            "उद्देश्य स्पष्ट न हो तो पहुँच की अनुमति दिए बिना सहायता से पूछें कि किस सुविधा को इसकी ज़रूरत है। सार्वजनिक पेज का पता और संदेश के शब्द दें, निजी खाता जानकारी नहीं। वास्तविक Opplex या Filex प्रदाता, अवधि और दर्ज ऑर्डर तथा सेटअप की स्थिति अलग जाँचें। प्लेयर लाइसेंस का शुल्क अलग हो सकता है; Filex की अनकही कनेक्शन सीमा की पुष्टि चाहिए। हार्डवेयर अनुमति भुगतान या सेवा सक्रियण की पुष्टि नहीं है। ब्राउज़र अनुरोध का उत्तर देने के लिए न दोबारा भुगतान करें और न ही प्लेयर का डेटा मिटाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/2693767?hl=en"
+    }
+  ]
+}

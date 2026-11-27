@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-27",
+  "topic": "Distinguish one-app touch failure from model-specific Pixel touchscreen diagnostics and sensitivity during 5G Live IPTV use without erasing saved access or applying another model's menu path.",
+  "primary_keyword": "5G Live IPTV touch response",
+  "slug": "5g-pixel-touch-response-model-specific-diagnostics-and-sensitivity",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV touch response: check the Pixel model before a setting",
+      "excerpt": "Separate a frozen player from Pixel touchscreen sensitivity. Read the model-specific diagnostics before changing a setting, while preserving saved 5G Live IPTV access.",
+      "seo_title": "5G Live IPTV touch response: check the Pixel model before a setting",
+      "seo_description": "Separate a frozen player from Pixel touchscreen sensitivity. Read the model-specific diagnostics before changing a setting, while preserving saved 5G Live IPTV access.",
+      "sections": [
+        {
+          "heading": "Describe the affected touch area",
+          "paragraphs": [
+            "A 5G Live IPTV touch response check starts by identifying what still responds. With the owner's permission, compare the player controls with a system screen, without starting another viewing session. Note whether taps fail in one app, one part of the display or across the phone. Record the Pixel model, Android version and whether a screen protector is fitted. Touch behaviour alone does not establish a provider outage or expired plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use only instructions matching the model",
+          "paragraphs": [
+            "Google's touchscreen guide lists Touch diagnostics for Pixel 9, Pixel 9 Pro and Pixel 9 Pro XL under Settings, then Display and touch. Follow its displayed instructions if available. For Pixel 8a and earlier, including Fold, the guide instead describes Screen protector mode under Display and touch, then Touch sensitivity. Do not apply one model's menu path to every Pixel. Note the existing choice before any owner-approved comparison; restore it if the change does not help."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep the next step proportionate",
+          "paragraphs": [
+            "If the problem happens only in one app, Google directs users to the app developer. Send the app version and a plain description without private playback addresses or credentials. Leave useful accessibility and security settings intact. Do not remove a screen protector, erase player data or buy another plan merely to inspect these options. This check concerns touch input; it does not test network speed, viewing entitlements or every possible display fault."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Respuesta táctil de 5G Live IPTV: identifica el modelo Pixel primero",
+      "excerpt": "Distingue un reproductor bloqueado de la sensibilidad táctil del Pixel. Lee las instrucciones del modelo antes de cambiar ajustes y conserva el acceso guardado a 5G Live IPTV.",
+      "seo_title": "Respuesta táctil de 5G Live IPTV: identifica el modelo Pixel primero",
+      "seo_description": "Distingue un reproductor bloqueado de la sensibilidad táctil del Pixel. Lee las instrucciones del modelo antes de cambiar ajustes y conserva el acceso guardado a 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Describe la zona que no responde",
+          "paragraphs": [
+            "La revisión de la respuesta táctil de 5G Live IPTV empieza por identificar qué responde todavía. Con permiso del propietario, compara los controles del reproductor con una pantalla del sistema, sin iniciar otra sesión. Anota si los toques fallan en una app, en una parte de la pantalla o en todo el teléfono. Registra el modelo Pixel, la versión de Android y si lleva protector de pantalla. El comportamiento táctil no demuestra por sí solo una caída del proveedor ni un plan vencido."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa instrucciones para ese modelo",
+          "paragraphs": [
+            "La guía táctil de Google incluye Diagnóstico táctil para Pixel 9, Pixel 9 Pro y Pixel 9 Pro XL en Ajustes, Pantalla y funciones táctiles. Sigue las instrucciones que aparezcan si está disponible. Para Pixel 8a y anteriores, incluido Fold, describe en cambio el modo de protector de pantalla dentro de Sensibilidad táctil. No apliques la ruta de un modelo a todos los Pixel. Anota la opción actual antes de una comparación autorizada por el propietario y restáurala si no ayuda."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Elige un siguiente paso proporcionado",
+          "paragraphs": [
+            "Si el problema aparece solo en una app, Google remite a su desarrollador. Envía la versión y una descripción sin direcciones privadas de reproducción ni credenciales. Conserva los ajustes útiles de accesibilidad y seguridad. No retires el protector, borres los datos del reproductor ni compres otro plan solo para revisar estas opciones. Esta comprobación trata la entrada táctil; no prueba velocidad de red, derechos del plan ni todas las averías de pantalla."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Réponse tactile 5G Live IPTV : vérifier d’abord le modèle Pixel",
+      "excerpt": "Distinguez un lecteur figé de la sensibilité tactile du Pixel. Consultez les instructions du modèle avant de changer un réglage et conservez l’accès enregistré à 5G Live IPTV.",
+      "seo_title": "Réponse tactile 5G Live IPTV : vérifier d’abord le modèle Pixel",
+      "seo_description": "Distinguez un lecteur figé de la sensibilité tactile du Pixel. Consultez les instructions du modèle avant de changer un réglage et conservez l’accès enregistré à 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Décrire la zone tactile concernée",
+          "paragraphs": [
+            "La vérification de la réponse tactile de 5G Live IPTV commence par ce qui répond encore. Avec l’accord du propriétaire, comparez les commandes du lecteur à un écran du système, sans ouvrir une autre session de visionnage. Notez si les pressions échouent dans une app, une partie de l’écran ou tout le téléphone. Relevez le modèle Pixel, la version d’Android et la présence d’une protection d’écran. Ce comportement ne prouve pas une panne du fournisseur ni un forfait expiré."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Suivre les instructions du bon modèle",
+          "paragraphs": [
+            "Le guide tactile de Google indique le diagnostic tactile des Pixel 9, Pixel 9 Pro et Pixel 9 Pro XL dans Paramètres, puis Écran et commandes tactiles. Suivez les instructions affichées si l’option existe. Pour le Pixel 8a et les modèles antérieurs, y compris Fold, il décrit plutôt le mode protection d’écran dans Sensibilité tactile. N’appliquez pas le chemin d’un modèle à tous les Pixel. Notez le choix actuel avant toute comparaison autorisée et rétablissez-le si cela n’aide pas."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Garder une suite adaptée",
+          "paragraphs": [
+            "Si le problème concerne une seule app, Google recommande de contacter son développeur. Transmettez sa version et une description, sans adresse privée de lecture ni identifiants. Conservez les réglages utiles d’accessibilité et de sécurité. Ne retirez pas la protection d’écran, n’effacez pas les données du lecteur et n’achetez pas un autre forfait simplement pour consulter ces options. Ce contrôle concerne la saisie tactile ; il ne teste ni le débit réseau, ni les droits du forfait, ni toutes les pannes d’écran."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Risposta al tocco di 5G Live IPTV: verifica prima il modello Pixel",
+      "excerpt": "Distingui un lettore bloccato dalla sensibilità del touchscreen Pixel. Leggi le istruzioni del modello prima di modificare le impostazioni e conserva l’accesso a 5G Live IPTV.",
+      "seo_title": "Risposta al tocco di 5G Live IPTV: verifica prima il modello Pixel",
+      "seo_description": "Distingui un lettore bloccato dalla sensibilità del touchscreen Pixel. Leggi le istruzioni del modello prima di modificare le impostazioni e conserva l’accesso a 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Descrivi l’area che non risponde",
+          "paragraphs": [
+            "Il controllo della risposta al tocco di 5G Live IPTV inizia da ciò che risponde ancora. Con il permesso del proprietario, confronta i comandi del lettore con una schermata di sistema, senza avviare un’altra sessione. Annota se i tocchi non funzionano in una sola app, in una zona del display o su tutto il telefono. Registra modello Pixel, versione Android e presenza di una pellicola protettiva. Il comportamento tattile da solo non dimostra un guasto del fornitore o un piano scaduto."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Segui le istruzioni del modello giusto",
+          "paragraphs": [
+            "La guida Google indica la diagnostica del tocco per Pixel 9, Pixel 9 Pro e Pixel 9 Pro XL in Impostazioni, Display e tocco. Segui le istruzioni mostrate se disponibili. Per Pixel 8a e precedenti, incluso Fold, descrive invece la modalità protezione schermo sotto Sensibilità al tocco. Non applicare il percorso di un modello a tutti i Pixel. Annota la scelta attuale prima di un confronto autorizzato dal proprietario e ripristinala se non aiuta."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Scegli un passo successivo proporzionato",
+          "paragraphs": [
+            "Se il problema riguarda una sola app, Google invita a contattare lo sviluppatore. Comunica versione e descrizione senza indirizzi privati di riproduzione né credenziali. Conserva le impostazioni utili di accessibilità e sicurezza. Non rimuovere la protezione, non cancellare i dati del lettore e non comprare un altro piano solo per consultare queste opzioni. Il controllo riguarda l’input tattile: non misura velocità della rete, diritti del piano o ogni possibile guasto del display."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV-aanraakreactie: controleer eerst het Pixel-model",
+      "excerpt": "Onderscheid een vastgelopen speler van Pixel-aanraakgevoeligheid. Lees de instructies voor het model voordat je iets wijzigt en bewaar de opgeslagen toegang tot 5G Live IPTV.",
+      "seo_title": "5G Live IPTV-aanraakreactie: controleer eerst het Pixel-model",
+      "seo_description": "Onderscheid een vastgelopen speler van Pixel-aanraakgevoeligheid. Lees de instructies voor het model voordat je iets wijzigt en bewaar de opgeslagen toegang tot 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Beschrijf het getroffen aanraakgebied",
+          "paragraphs": [
+            "Een controle van de aanraakreactie bij 5G Live IPTV begint met wat nog reageert. Vergelijk met toestemming van de eigenaar de spelerknoppen met een systeemscherm, zonder een extra kijksessie te starten. Noteer of tikken in één app, een deel van het scherm of op de hele telefoon mislukken. Vermeld het Pixel-model, de Android-versie en een eventuele schermbeschermer. Aanraakgedrag alleen bewijst geen storing bij de aanbieder of verlopen abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de instructies voor het model",
+          "paragraphs": [
+            "Google noemt aanraakdiagnose voor Pixel 9, Pixel 9 Pro en Pixel 9 Pro XL onder Instellingen, Scherm en aanraken. Volg de weergegeven instructies als de optie beschikbaar is. Voor Pixel 8a en eerdere modellen, waaronder Fold, beschrijft de gids juist Schermbeschermermodus onder Aanraakgevoeligheid. Pas de menuroute van één model niet toe op alle Pixels. Noteer de bestaande keuze voordat de eigenaar een vergelijking goedkeurt en herstel die als de wijziging niet helpt."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd de volgende stap passend",
+          "paragraphs": [
+            "Gebeurt het probleem alleen in één app, dan verwijst Google naar de appontwikkelaar. Stuur de appversie en een beschrijving zonder privéafspeeladressen of inloggegevens. Behoud nuttige toegankelijkheids- en beveiligingsinstellingen. Verwijder geen schermbeschermer, wis geen spelergegevens en koop geen ander abonnement alleen om deze opties te bekijken. Deze controle gaat over aanraakinvoer; hij test geen netwerksnelheid, kijkrechten of iedere mogelijke schermstoring."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Resposta ao toque de 5G Live IPTV: confirme primeiro o modelo Pixel",
+      "excerpt": "Distinga um leitor bloqueado da sensibilidade tátil do Pixel. Leia as instruções do modelo antes de alterar definições e preserve o acesso guardado a 5G Live IPTV.",
+      "seo_title": "Resposta ao toque de 5G Live IPTV: confirme primeiro o modelo Pixel",
+      "seo_description": "Distinga um leitor bloqueado da sensibilidade tátil do Pixel. Leia as instruções do modelo antes de alterar definições e preserve o acesso guardado a 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Descreva a área que não responde",
+          "paragraphs": [
+            "A verificação da resposta ao toque de 5G Live IPTV começa por identificar o que ainda responde. Com autorização do proprietário, compare os controlos do leitor com um ecrã do sistema, sem iniciar outra sessão. Anote se os toques falham numa aplicação, numa parte do ecrã ou em todo o telefone. Registe o modelo Pixel, a versão do Android e a presença de uma película protetora. O comportamento tátil, por si só, não prova uma falha do fornecedor nem um plano expirado."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use instruções para o modelo certo",
+          "paragraphs": [
+            "O guia da Google indica Diagnóstico tátil para Pixel 9, Pixel 9 Pro e Pixel 9 Pro XL em Definições, Ecrã e toque. Siga as instruções apresentadas se a opção existir. Para Pixel 8a e anteriores, incluindo Fold, descreve antes o modo de proteção de ecrã em Sensibilidade ao toque. Não aplique o caminho de um modelo a todos os Pixel. Registe a opção atual antes de uma comparação autorizada e restaure-a se a alteração não ajudar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Mantenha o próximo passo proporcional",
+          "paragraphs": [
+            "Se o problema ocorrer só numa aplicação, a Google recomenda contactar o programador. Envie a versão e uma descrição sem endereços privados de reprodução nem credenciais. Preserve definições úteis de acessibilidade e segurança. Não remova a película, não apague dados do leitor nem compre outro plano apenas para consultar estas opções. A verificação trata da entrada tátil; não testa velocidade da rede, direitos de visualização nem todas as falhas possíveis do ecrã."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Отклик на касания в 5G Live IPTV: сначала проверьте модель Pixel",
+      "excerpt": "Отличайте зависший проигрыватель от чувствительности сенсора Pixel. Перед изменением параметров прочитайте инструкции модели и сохраните доступ к 5G Live IPTV.",
+      "seo_title": "Отклик на касания в 5G Live IPTV: сначала проверьте модель Pixel",
+      "seo_description": "Отличайте зависший проигрыватель от чувствительности сенсора Pixel. Перед изменением параметров прочитайте инструкции модели и сохраните доступ к 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Опишите область без отклика",
+          "paragraphs": [
+            "Проверка отклика на касания в 5G Live IPTV начинается с того, что ещё работает. С разрешения владельца сравните кнопки проигрывателя с системным экраном, не запуская дополнительный сеанс просмотра. Отметьте, не срабатывают ли касания в одном приложении, части дисплея или на всём телефоне. Запишите модель Pixel, версию Android и наличие защитной плёнки. Одно лишь поведение сенсора не доказывает сбой поставщика или истечение тарифа."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Следуйте инструкции своей модели",
+          "paragraphs": [
+            "Руководство Google указывает диагностику касаний для Pixel 9, Pixel 9 Pro и Pixel 9 Pro XL в настройках, в разделе экрана и касаний. Следуйте показанным инструкциям, если этот пункт доступен. Для Pixel 8a и более ранних моделей, включая Fold, описан режим защитной плёнки в разделе чувствительности к касаниям. Не применяйте путь меню одной модели ко всем Pixel. Перед согласованным с владельцем сравнением запишите текущий выбор и верните его, если изменение не помогает."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Выберите соразмерный следующий шаг",
+          "paragraphs": [
+            "Если проблема возникает только в одном приложении, Google рекомендует обратиться к его разработчику. Сообщите версию и описание без частных адресов воспроизведения и учётных данных. Сохраните полезные настройки доступности и безопасности. Не снимайте защитную плёнку, не стирайте данные проигрывателя и не покупайте другой тариф лишь ради просмотра этих параметров. Проверка касается сенсорного ввода, а не скорости сети, прав просмотра или всех возможных неисправностей дисплея."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کے لمس کا ردعمل: پہلے Pixel کا ماڈل دیکھیں",
+      "excerpt": "رکے ہوئے پلیئر کو Pixel کی اسکرین کی لمس کی حساسیت سے الگ پہچانیں۔ ترتیب بدلنے سے پہلے ماڈل کی ہدایات پڑھیں اور 5G Live IPTV کی محفوظ رسائی برقرار رکھیں۔",
+      "seo_title": "5G Live IPTV کے لمس کا ردعمل: پہلے Pixel کا ماڈل دیکھیں",
+      "seo_description": "رکے ہوئے پلیئر کو Pixel کی اسکرین کی لمس کی حساسیت سے الگ پہچانیں۔ ترتیب بدلنے سے پہلے ماڈل کی ہدایات پڑھیں اور 5G Live IPTV کی محفوظ رسائی برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "متاثرہ حصے کی کیفیت لکھیں",
+          "paragraphs": [
+            "5G Live IPTV کے لمس کے ردعمل کی جانچ میں پہلے دیکھیں کہ کون سی چیز اب بھی جواب دیتی ہے۔ مالک کی اجازت سے پلیئر کے بٹنوں کا نظام کی کسی اسکرین سے موازنہ کریں، مگر دیکھنے کا دوسرا سیشن شروع نہ کریں۔ نوٹ کریں کہ لمس صرف ایک ایپ، اسکرین کے ایک حصے یا پورے فون پر ناکام ہے۔ Pixel کا ماڈل، Android کا ورژن اور اسکرین پروٹیکٹر کی موجودگی لکھیں۔ صرف لمس کا رویہ فراہم کنندہ کی بندش یا پلان کی میعاد ختم ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "صرف متعلقہ ماڈل کی ہدایات استعمال کریں",
+          "paragraphs": [
+            "Google کی ٹچ اسکرین گائیڈ Pixel 9، Pixel 9 Pro اور Pixel 9 Pro XL کے لیے ترتیبات، پھر ڈسپلے اور لمس میں لمس کی تشخیص بتاتی ہے۔ اختیار ملے تو اسکرین کی ہدایات پر عمل کریں۔ Pixel 8a اور اس سے پہلے کے ماڈلز، بشمول Fold، کے لیے گائیڈ لمس کی حساسیت میں اسکرین پروٹیکٹر موڈ بتاتی ہے۔ ایک ماڈل کا مینو راستہ ہر Pixel پر لاگو نہ کریں۔ مالک کی منظور شدہ تبدیلی سے پہلے موجودہ انتخاب لکھیں؛ فائدہ نہ ہو تو اسے بحال کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اگلا قدم مسئلے کے مطابق رکھیں",
+          "paragraphs": [
+            "اگر مسئلہ صرف ایک ایپ میں ہو تو Google اس کے ڈویلپر سے رابطے کی ہدایت دیتا ہے۔ ایپ کا ورژن اور سادہ تفصیل دیں، نجی پلے بیک پتے یا لاگ اِن معلومات نہیں۔ کارآمد رسائی اور حفاظتی ترتیبات برقرار رکھیں۔ صرف یہ اختیارات دیکھنے کے لیے نہ اسکرین پروٹیکٹر اتاریں، نہ پلیئر کا ڈیٹا مٹائیں، اور نہ دوسرا پلان خریدیں۔ یہ جانچ لمس کے لیے ہے؛ اس سے نیٹ ورک رفتار، دیکھنے کا حق یا اسکرین کی ہر ممکن خرابی کی جانچ نہیں ہوتی۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "استجابة لمس 5G Live IPTV: تحقّق من طراز Pixel قبل تغيير الإعداد",
+      "excerpt": "افصل تجمّد المشغّل عن حساسية شاشة Pixel للمس. اقرأ تعليمات الطراز قبل تعديل الإعدادات واحتفظ بالوصول المحفوظ إلى 5G Live IPTV.",
+      "seo_title": "استجابة لمس 5G Live IPTV: تحقّق من طراز Pixel قبل تغيير الإعداد",
+      "seo_description": "افصل تجمّد المشغّل عن حساسية شاشة Pixel للمس. اقرأ تعليمات الطراز قبل تعديل الإعدادات واحتفظ بالوصول المحفوظ إلى 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "صِف المنطقة التي لا تستجيب",
+          "paragraphs": [
+            "يبدأ فحص استجابة اللمس في 5G Live IPTV بتحديد ما يزال يستجيب. بإذن المالك، قارن أزرار المشغّل بشاشة من النظام دون بدء جلسة مشاهدة إضافية. دوّن إن كانت اللمسات تفشل في تطبيق واحد أو جزء من الشاشة أو الهاتف كله. سجّل طراز Pixel وإصدار Android ووجود واقٍ للشاشة. سلوك اللمس وحده لا يثبت تعطل المزوّد أو انتهاء الخطة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم تعليمات الطراز المناسب فقط",
+          "paragraphs": [
+            "يسرد دليل Google للشاشة اللمسية تشخيص اللمس لأجهزة Pixel 9 وPixel 9 Pro وPixel 9 Pro XL ضمن الإعدادات ثم الشاشة واللمس. اتبع التعليمات المعروضة إذا توفر الخيار. أما Pixel 8a والطرازات الأقدم، بما فيها Fold، فيصف الدليل وضع واقي الشاشة ضمن حساسية اللمس. لا تطبّق مسار قائمة طراز واحد على جميع أجهزة Pixel. سجّل الاختيار الحالي قبل أي مقارنة يوافق عليها المالك، وأعِده إذا لم يساعد التغيير."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "اجعل الخطوة التالية متناسبة",
+          "paragraphs": [
+            "إذا ظهر الخلل في تطبيق واحد فقط، توجّه Google إلى مطوّر التطبيق. أرسل الإصدار ووصفًا بسيطًا دون عناوين تشغيل خاصة أو بيانات دخول. احتفظ بإعدادات تسهيل الاستخدام والأمان المفيدة. لا تزل واقي الشاشة، ولا تمسح بيانات المشغّل، ولا تشترِ خطة أخرى لمجرد فحص هذه الخيارات. يتعلق هذا الفحص بإدخال اللمس؛ ولا يختبر سرعة الشبكة أو صلاحيات المشاهدة أو جميع أعطال الشاشة المحتملة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV में स्पर्श की प्रतिक्रिया: पहले Pixel मॉडल जाँचें",
+      "excerpt": "रुके हुए प्लेयर को Pixel स्क्रीन की स्पर्श संवेदनशीलता से अलग पहचानें। सेटिंग बदलने से पहले मॉडल के निर्देश पढ़ें और 5G Live IPTV की सहेजी पहुँच बनाए रखें।",
+      "seo_title": "5G Live IPTV में स्पर्श की प्रतिक्रिया: पहले Pixel मॉडल जाँचें",
+      "seo_description": "रुके हुए प्लेयर को Pixel स्क्रीन की स्पर्श संवेदनशीलता से अलग पहचानें। सेटिंग बदलने से पहले मॉडल के निर्देश पढ़ें और 5G Live IPTV की सहेजी पहुँच बनाए रखें।",
+      "sections": [
+        {
+          "heading": "प्रभावित हिस्से की स्थिति लिखें",
+          "paragraphs": [
+            "5G Live IPTV में स्पर्श की प्रतिक्रिया जाँचते समय पहले पहचानें कि क्या अभी काम कर रहा है। मालिक की अनुमति से प्लेयर के बटनों की तुलना सिस्टम की किसी स्क्रीन से करें, लेकिन दूसरा देखने का सत्र शुरू न करें। नोट करें कि टैप केवल एक ऐप, स्क्रीन के एक हिस्से या पूरे फ़ोन पर विफल हैं। Pixel मॉडल, Android संस्करण और स्क्रीन प्रोटेक्टर की मौजूदगी लिखें। केवल स्पर्श का व्यवहार प्रदाता की सेवा बंद होने या प्लान समाप्त होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "सिर्फ संबंधित मॉडल के निर्देश अपनाएँ",
+          "paragraphs": [
+            "Google की टचस्क्रीन गाइड Pixel 9, Pixel 9 Pro और Pixel 9 Pro XL के लिए सेटिंग, फिर डिस्प्ले और स्पर्श में स्पर्श निदान बताती है। विकल्प मिले तो दिखने वाले निर्देश अपनाएँ। Pixel 8a और उससे पुराने मॉडल, Fold सहित, के लिए गाइड स्पर्श संवेदनशीलता में स्क्रीन प्रोटेक्टर मोड बताती है। एक मॉडल का मेनू रास्ता हर Pixel पर लागू न करें। मालिक की मंजूरी से तुलना करने से पहले मौजूदा विकल्प लिखें; लाभ न हो तो उसे वापस करें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel touchscreen help",
+              "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "अगला कदम समस्या के अनुसार रखें",
+          "paragraphs": [
+            "यदि समस्या केवल एक ऐप में हो, तो Google उसके डेवलपर से संपर्क करने को कहता है। ऐप का संस्करण और साधारण विवरण भेजें, निजी प्लेबैक पते या लॉगिन जानकारी नहीं। उपयोगी सुलभता और सुरक्षा सेटिंग बनाए रखें। केवल ये विकल्प देखने के लिए न स्क्रीन प्रोटेक्टर हटाएँ, न प्लेयर का डेटा मिटाएँ और न दूसरा प्लान खरीदें। यह जाँच स्पर्श इनपुट की है; इससे नेटवर्क की गति, देखने के अधिकार या स्क्रीन की हर संभव खराबी की जाँच नहीं होती।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel touchscreen help",
+      "url": "https://support.google.com/pixelphone/answer/6010316?hl=en"
+    }
+  ]
+}
