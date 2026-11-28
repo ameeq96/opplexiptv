@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "iptvsubscription",
+  "publishing_date": "2026-11-28",
+  "topic": "Distinguish desktop Chrome full-screen mode from page zoom and hidden browser controls while checking IPTV Subscription public plan addresses and Opplex or Filex order state.",
+  "primary_keyword": "IPTV Subscription full-screen view",
+  "slug": "iptvsubscription-desktop-chrome-full-screen-and-address-bar",
+  "translations": {
+    "en": {
+      "title": "IPTV Subscription full-screen view: restore Chrome’s address bar",
+      "excerpt": "Identify desktop Chrome full-screen mode before treating hidden browser controls as a changed plan page. Verify the public address and keep display choices separate from order state.",
+      "seo_title": "IPTV Subscription full-screen view: restore Chrome’s address bar",
+      "seo_description": "Identify desktop Chrome full-screen mode before treating hidden browser controls as a changed plan page. Verify the public address and keep display choices separate from order state.",
+      "sections": [
+        {
+          "heading": "Identify which window changed",
+          "paragraphs": [
+            "An IPTV Subscription full-screen view check starts with the actual browser and computer. Note whether the address bar and tab controls disappeared while the page remains visible. Browser full-screen mode, enlarged page text and a video’s own full-screen control are different features. A changed window layout alone does not establish that a plan disappeared or expired. Before deliberately entering full screen, verify the public website address."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use the shortcut for the documented platform",
+          "paragraphs": [
+            "Google’s desktop Chrome guide lists F11 for turning full-screen mode on and off on Windows and Linux. If Chrome is already in that mode and the owner wants to leave it, use the documented toggle once and observe the window. This instruction is not a Mac shortcut. Page zoom uses separate controls; changing zoom does not serve the same purpose as leaving browser full screen. Preserve the owner’s useful display preferences."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome keyboard shortcuts",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Read the address and order separately",
+          "paragraphs": [
+            "Once browser controls are visible, check the exact public address before comparing offers. Do not share private account or checkout addresses in a screenshot. Confirm the actual Opplex or Filex provider, duration and recorded order/setup state separately. A player licence may cost extra, and unstated Filex connection allowances need confirmation. Restoring browser controls does not verify payment or activate a plan. Do not repeat payment or erase player data merely to recover the address bar."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Vista de pantalla completa de IPTV Subscription: recupera la barra de Chrome",
+      "excerpt": "Identifica la pantalla completa de Chrome para ordenador antes de confundir sus controles ocultos con un cambio de plan. Comprueba la dirección pública y separa la presentación del pedido.",
+      "seo_title": "Vista de pantalla completa de IPTV Subscription: recupera la barra de Chrome",
+      "seo_description": "Identifica la pantalla completa de Chrome para ordenador antes de confundir sus controles ocultos con un cambio de plan. Comprueba la dirección pública y separa la presentación del pedido.",
+      "sections": [
+        {
+          "heading": "Identifica qué ventana cambió",
+          "paragraphs": [
+            "La revisión de la vista de pantalla completa de IPTV Subscription empieza por el navegador y el ordenador reales. Anota si desaparecieron la barra de direcciones y las pestañas mientras la página sigue visible. La pantalla completa del navegador, el texto ampliado y la pantalla completa de un vídeo son funciones distintas. Un cambio de ventana por sí solo no demuestra que un plan haya desaparecido o caducado. Antes de entrar voluntariamente en pantalla completa, verifica la dirección pública."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa el atajo de la plataforma documentada",
+          "paragraphs": [
+            "La guía de Chrome para ordenador de Google indica F11 para activar y desactivar la pantalla completa en Windows y Linux. Si Chrome ya está en ese modo y el propietario quiere salir, usa una vez ese interruptor y observa la ventana. Esta instrucción no es un atajo para Mac. El zoom tiene controles separados; cambiarlo no equivale a salir de la pantalla completa del navegador. Conserva las preferencias de visualización útiles del propietario."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Atajos de teclado de Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lee la dirección y el pedido por separado",
+          "paragraphs": [
+            "Cuando los controles vuelvan a verse, comprueba la dirección pública exacta antes de comparar ofertas. No compartas direcciones privadas de cuenta o pago en capturas. Confirma por separado el proveedor real Opplex o Filex, la duración y el estado registrado del pedido y la configuración. La licencia del reproductor puede costar aparte; los límites de conexiones de Filex no indicados necesitan confirmación. Recuperar los controles no verifica un pago ni activa un plan. No repitas el pago ni borres datos del reproductor para recuperar la barra."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Plein écran IPTV Subscription : retrouver la barre d’adresse de Chrome",
+      "excerpt": "Identifiez le plein écran de Chrome sur ordinateur avant de confondre les commandes masquées avec un changement d’offre. Vérifiez l’adresse publique et distinguez affichage et commande.",
+      "seo_title": "Plein écran IPTV Subscription : retrouver la barre d’adresse de Chrome",
+      "seo_description": "Identifiez le plein écran de Chrome sur ordinateur avant de confondre les commandes masquées avec un changement d’offre. Vérifiez l’adresse publique et distinguez affichage et commande.",
+      "sections": [
+        {
+          "heading": "Identifier la fenêtre qui a changé",
+          "paragraphs": [
+            "La vérification du plein écran IPTV Subscription commence par le navigateur et l’ordinateur utilisés. Notez si la barre d’adresse et les onglets ont disparu alors que la page reste visible. Le plein écran du navigateur, le texte agrandi et le plein écran propre à une vidéo sont différents. Une modification de la fenêtre ne prouve pas qu’une offre a disparu ou expiré. Avant de passer volontairement en plein écran, vérifiez l’adresse publique du site."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Utiliser le raccourci de la plateforme indiquée",
+          "paragraphs": [
+            "Le guide de Chrome sur ordinateur de Google indique F11 pour activer ou désactiver le plein écran sous Windows et Linux. Si Chrome est déjà dans ce mode et que le propriétaire souhaite le quitter, utilisez une fois cette commande et observez la fenêtre. Ce n’est pas un raccourci pour Mac. Le zoom possède des commandes séparées : le modifier ne remplace pas la sortie du plein écran du navigateur. Préservez les préférences d’affichage utiles."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Raccourcis clavier de Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Lire séparément l’adresse et la commande",
+          "paragraphs": [
+            "Lorsque les commandes réapparaissent, vérifiez l’adresse publique exacte avant de comparer les offres. Ne partagez pas d’adresses privées de compte ou de paiement dans une capture. Confirmez séparément le fournisseur réel Opplex ou Filex, la durée et l’état enregistré de la commande et de la configuration. La licence du lecteur peut être facturée à part ; les limites de connexions Filex non précisées restent à confirmer. Rétablir les commandes ne confirme aucun paiement et n’active aucune offre. Ne payez pas à nouveau et n’effacez pas les données du lecteur pour retrouver la barre."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "IPTV Subscription a schermo intero: ritrova la barra degli indirizzi di Chrome",
+      "excerpt": "Riconosci lo schermo intero di Chrome sul computer prima di scambiare i controlli nascosti per una modifica del piano. Verifica l’indirizzo pubblico e separa visualizzazione e ordine.",
+      "seo_title": "IPTV Subscription a schermo intero: ritrova la barra degli indirizzi di Chrome",
+      "seo_description": "Riconosci lo schermo intero di Chrome sul computer prima di scambiare i controlli nascosti per una modifica del piano. Verifica l’indirizzo pubblico e separa visualizzazione e ordine.",
+      "sections": [
+        {
+          "heading": "Individua la finestra che è cambiata",
+          "paragraphs": [
+            "Il controllo di IPTV Subscription a schermo intero parte dal browser e dal computer effettivi. Annota se la barra degli indirizzi e le schede sono scomparse mentre la pagina rimane visibile. Lo schermo intero del browser, il testo ingrandito e il comando a schermo intero di un video sono funzioni diverse. Un cambiamento della finestra non dimostra che un piano sia sparito o scaduto. Prima di attivare volontariamente lo schermo intero, verifica l’indirizzo pubblico."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Usa il comando della piattaforma documentata",
+          "paragraphs": [
+            "La guida Google di Chrome per computer indica F11 per attivare e disattivare lo schermo intero su Windows e Linux. Se Chrome è già in questa modalità e il proprietario vuole uscirne, usa una volta il comando e osserva la finestra. Non è una scorciatoia per Mac. Lo zoom dispone di controlli separati: modificarlo non equivale a uscire dallo schermo intero del browser. Conserva le preferenze di visualizzazione utili del proprietario."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Scorciatoie da tastiera di Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leggi indirizzo e ordine separatamente",
+          "paragraphs": [
+            "Quando i controlli tornano visibili, verifica l’esatto indirizzo pubblico prima di confrontare le offerte. Non condividere indirizzi privati di account o pagamento nelle schermate. Conferma separatamente il vero fornitore Opplex o Filex, la durata e lo stato registrato di ordine e configurazione. La licenza del lettore può avere un costo separato; i limiti di connessione Filex non dichiarati richiedono conferma. Ripristinare i controlli non conferma un pagamento e non attiva un piano. Non ripetere il pagamento e non cancellare i dati del lettore per ritrovare la barra."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "IPTV Subscription op volledig scherm: herstel de adresbalk van Chrome",
+      "excerpt": "Herken de volledigschermmodus van Chrome op de computer voordat je verborgen knoppen als een gewijzigd aanbod ziet. Controleer het openbare adres en houd weergave en bestelling gescheiden.",
+      "seo_title": "IPTV Subscription op volledig scherm: herstel de adresbalk van Chrome",
+      "seo_description": "Herken de volledigschermmodus van Chrome op de computer voordat je verborgen knoppen als een gewijzigd aanbod ziet. Controleer het openbare adres en houd weergave en bestelling gescheiden.",
+      "sections": [
+        {
+          "heading": "Bepaal welk venster veranderde",
+          "paragraphs": [
+            "Een controle van IPTV Subscription op volledig scherm begint bij de gebruikte browser en computer. Noteer of de adresbalk en tabbladen verdwenen terwijl de pagina zichtbaar bleef. Volledig scherm van de browser, vergrote tekst en de eigen volledigschermknop van een video zijn verschillende functies. Een andere vensterindeling bewijst niet dat een abonnement verdwenen of verlopen is. Controleer het openbare websiteadres voordat je bewust volledig scherm inschakelt."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Gebruik de sneltoets voor het juiste platform",
+          "paragraphs": [
+            "Google vermeldt in de handleiding voor Chrome op de computer F11 om volledig scherm onder Windows en Linux in en uit te schakelen. Staat Chrome al in die modus en wil de eigenaar eruit, gebruik de schakeltoets dan eenmaal en bekijk het venster. Dit is geen Mac-sneltoets. Paginazoom heeft aparte knoppen; zoomen is iets anders dan volledig scherm verlaten. Behoud nuttige weergavevoorkeuren van de eigenaar."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Sneltoetsen voor Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Controleer adres en bestelling afzonderlijk",
+          "paragraphs": [
+            "Controleer het exacte openbare adres zodra de browserknoppen zichtbaar zijn, voordat je aanbiedingen vergelijkt. Deel geen privé-adressen van accounts of betalingen in een schermafbeelding. Controleer apart de werkelijke aanbieder Opplex of Filex, de looptijd en de geregistreerde bestel- en instelstatus. Een spelerlicentie kan apart kosten; niet-vermelde Filex-verbindingslimieten vragen bevestiging. Herstelde browserknoppen bevestigen geen betaling en activeren geen abonnement. Betaal niet opnieuw en wis geen spelergegevens om de adresbalk terug te krijgen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "IPTV Subscription em ecrã inteiro: recuperar a barra de endereços do Chrome",
+      "excerpt": "Identifique o ecrã inteiro do Chrome no computador antes de confundir controlos ocultos com alterações ao plano. Verifique o endereço público e separe apresentação e estado da encomenda.",
+      "seo_title": "IPTV Subscription em ecrã inteiro: recuperar a barra de endereços do Chrome",
+      "seo_description": "Identifique o ecrã inteiro do Chrome no computador antes de confundir controlos ocultos com alterações ao plano. Verifique o endereço público e separe apresentação e estado da encomenda.",
+      "sections": [
+        {
+          "heading": "Identifique a janela que mudou",
+          "paragraphs": [
+            "A verificação de IPTV Subscription em ecrã inteiro começa pelo navegador e computador utilizados. Anote se a barra de endereços e os separadores desapareceram enquanto a página continua visível. O ecrã inteiro do navegador, o texto ampliado e o controlo de ecrã inteiro de um vídeo são funções diferentes. Uma mudança de janela não prova que um plano desapareceu ou expirou. Antes de entrar voluntariamente em ecrã inteiro, verifique o endereço público."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Use o atalho da plataforma documentada",
+          "paragraphs": [
+            "O guia do Chrome para computador da Google indica F11 para ativar e desativar o ecrã inteiro no Windows e Linux. Se o Chrome já estiver nesse modo e o proprietário quiser sair, use o atalho uma vez e observe a janela. Esta instrução não é um atalho para Mac. O zoom tem controlos separados; alterá-lo não equivale a sair do ecrã inteiro do navegador. Preserve as preferências de apresentação úteis do proprietário."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Atalhos de teclado do Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Leia o endereço e a encomenda separadamente",
+          "paragraphs": [
+            "Quando os controlos regressarem, confira o endereço público exato antes de comparar ofertas. Não partilhe endereços privados de conta ou pagamento em capturas. Confirme separadamente o fornecedor real Opplex ou Filex, a duração e o estado registado da encomenda e configuração. A licença do leitor pode ter um custo separado; os limites de ligações Filex não indicados precisam de confirmação. Recuperar os controlos não confirma pagamentos nem ativa planos. Não repita o pagamento nem apague dados do leitor para recuperar a barra."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Полный экран IPTV Subscription: верните адресную строку Chrome",
+      "excerpt": "Распознайте полноэкранный режим Chrome на компьютере, прежде чем считать скрытые элементы управления изменением тарифа. Проверьте публичный адрес и отделите отображение от заказа.",
+      "seo_title": "Полный экран IPTV Subscription: верните адресную строку Chrome",
+      "seo_description": "Распознайте полноэкранный режим Chrome на компьютере, прежде чем считать скрытые элементы управления изменением тарифа. Проверьте публичный адрес и отделите отображение от заказа.",
+      "sections": [
+        {
+          "heading": "Определите, какое окно изменилось",
+          "paragraphs": [
+            "Проверка полноэкранного просмотра IPTV Subscription начинается с используемых браузера и компьютера. Отметьте, исчезли ли адресная строка и вкладки, пока страница остаётся видна. Полный экран браузера, увеличенный текст и полноэкранная кнопка самого видео — разные функции. Изменение окна само по себе не доказывает, что тариф исчез или истёк. Прежде чем намеренно включать полный экран, проверьте публичный адрес сайта."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Используйте сочетание для указанной платформы",
+          "paragraphs": [
+            "В руководстве Google для Chrome на компьютере клавиша F11 включает и выключает полноэкранный режим в Windows и Linux. Если Chrome уже работает в этом режиме и владелец хочет выйти, нажмите документированную клавишу один раз и посмотрите на окно. Это не сочетание для Mac. Масштаб страницы имеет отдельные команды; его изменение не заменяет выход из полного экрана браузера. Сохраните полезные настройки отображения владельца."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Сочетания клавиш Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Проверяйте адрес и заказ отдельно",
+          "paragraphs": [
+            "Когда элементы браузера снова видны, проверьте точный публичный адрес перед сравнением предложений. Не передавайте приватные адреса аккаунта или оплаты на снимках экрана. Отдельно подтвердите фактического поставщика Opplex или Filex, срок и зарегистрированное состояние заказа и настройки. Лицензия проигрывателя может оплачиваться отдельно; неуказанные ограничения подключений Filex требуют подтверждения. Возвращение элементов браузера не подтверждает платёж и не активирует тариф. Не платите повторно и не стирайте данные проигрывателя ради адресной строки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "IPTV Subscription کا مکمل اسکرین منظر: Chrome کی پتا بار واپس لائیں",
+      "excerpt": "کمپیوٹر کے Chrome میں مکمل اسکرین حالت پہچانیں؛ چھپے ہوئے کنٹرول کو پلان کی تبدیلی نہ سمجھیں۔ عوامی پتا جانچیں اور ظاہری ترتیب کو آرڈر کی حالت سے الگ رکھیں۔",
+      "seo_title": "IPTV Subscription کا مکمل اسکرین منظر: Chrome کی پتا بار واپس لائیں",
+      "seo_description": "کمپیوٹر کے Chrome میں مکمل اسکرین حالت پہچانیں؛ چھپے ہوئے کنٹرول کو پلان کی تبدیلی نہ سمجھیں۔ عوامی پتا جانچیں اور ظاہری ترتیب کو آرڈر کی حالت سے الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "بدلی ہوئی ونڈو پہچانیں",
+          "paragraphs": [
+            "IPTV Subscription کے مکمل اسکرین منظر کی جانچ اصل براؤزر اور کمپیوٹر سے شروع ہوتی ہے۔ نوٹ کریں کہ صفحہ نظر آنے کے باوجود پتا بار اور ٹیب کے کنٹرول غائب ہوئے ہیں یا نہیں۔ براؤزر کی مکمل اسکرین حالت، بڑا کیا گیا متن اور ویڈیو کا اپنا مکمل اسکرین بٹن الگ خصوصیات ہیں۔ صرف ونڈو بدلنے سے پلان غائب یا ختم ہونا ثابت نہیں ہوتا۔ جان بوجھ کر مکمل اسکرین کھولنے سے پہلے ویب سائٹ کا عوامی پتا تصدیق کریں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "متعلقہ نظام کا درج شدہ شارٹ کٹ استعمال کریں",
+          "paragraphs": [
+            "Google کی کمپیوٹر پر Chrome کی رہنمائی میں Windows اور Linux پر مکمل اسکرین حالت کھولنے اور بند کرنے کے لیے F11 درج ہے۔ Chrome پہلے ہی اس حالت میں ہو اور مالک نکلنا چاہے تو یہ بٹن ایک بار دبا کر ونڈو دیکھیں۔ یہ ہدایت Mac کا شارٹ کٹ نہیں ہے۔ صفحے کے زوم کے الگ کنٹرول ہیں؛ زوم بدلنا براؤزر کی مکمل اسکرین حالت سے نکلنے کے برابر نہیں۔ مالک کی کارآمد ظاہری ترجیحات برقرار رکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome کے کی بورڈ شارٹ کٹ",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "پتا اور آرڈر الگ جانچیں",
+          "paragraphs": [
+            "براؤزر کے کنٹرول نظر آنے لگیں تو پیشکشوں کے موازنے سے پہلے عین عوامی پتا دیکھیں۔ اسکرین شاٹ میں اکاؤنٹ یا ادائیگی کے نجی پتے شیئر نہ کریں۔ اصل Opplex یا Filex فراہم کنندہ، مدت اور درج شدہ آرڈر و سیٹ اپ کی حالت الگ تصدیق کریں۔ پلیئر لائسنس کی قیمت الگ ہو سکتی ہے؛ Filex کی غیر درج شدہ کنکشن حد کی تصدیق چاہیے۔ کنٹرول واپس آنے سے ادائیگی ثابت نہیں ہوتی اور پلان فعال نہیں ہوتا۔ صرف پتا بار واپس لانے کے لیے نہ دوبارہ ادائیگی کریں، نہ پلیئر کا ڈیٹا مٹائیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "عرض IPTV Subscription بملء الشاشة: أعد شريط عناوين Chrome",
+      "excerpt": "تعرّف على وضع ملء الشاشة في Chrome على الكمبيوتر قبل اعتبار عناصر التحكم المخفية تغييراً في الباقة. تحقّق من العنوان العام وافصل العرض عن حالة الطلب.",
+      "seo_title": "عرض IPTV Subscription بملء الشاشة: أعد شريط عناوين Chrome",
+      "seo_description": "تعرّف على وضع ملء الشاشة في Chrome على الكمبيوتر قبل اعتبار عناصر التحكم المخفية تغييراً في الباقة. تحقّق من العنوان العام وافصل العرض عن حالة الطلب.",
+      "sections": [
+        {
+          "heading": "حدّد النافذة التي تغيّرت",
+          "paragraphs": [
+            "يبدأ فحص عرض IPTV Subscription بملء الشاشة بتحديد المتصفح والكمبيوتر المستخدمين. دوّن ما إذا اختفى شريط العناوين وعناصر علامات التبويب مع بقاء الصفحة مرئية. وضع المتصفح بملء الشاشة وتكبير النص وزر ملء الشاشة الخاص بالفيديو وظائف مختلفة. تغيّر النافذة وحده لا يثبت اختفاء الباقة أو انتهاءها. قبل الدخول عمداً في وضع ملء الشاشة، تحقّق من عنوان الموقع العام."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "استخدم اختصار النظام الموثّق",
+          "paragraphs": [
+            "تذكر إرشادات Google لمتصفح Chrome على الكمبيوتر المفتاح F11 لتشغيل وضع ملء الشاشة وإيقافه على Windows وLinux. إذا كان Chrome في هذا الوضع بالفعل وأراد المالك الخروج، فاستخدم المفتاح الموثّق مرة واحدة وراقب النافذة. هذه ليست تعليمات اختصار لجهاز Mac. لتكبير الصفحة عناصر منفصلة؛ تغييره لا يعادل الخروج من ملء شاشة المتصفح. احتفظ بتفضيلات العرض المفيدة للمالك."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "اختصارات لوحة مفاتيح Google Chrome",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افحص العنوان والطلب بشكل منفصل",
+          "paragraphs": [
+            "عندما تظهر عناصر المتصفح، تحقّق من العنوان العام الدقيق قبل مقارنة العروض. لا تشارك عناوين الحساب أو الدفع الخاصة في لقطة شاشة. أكّد بشكل منفصل المزوّد الفعلي Opplex أو Filex والمدة وحالة الطلب والإعداد المسجّلة. قد تكون رخصة المشغّل برسوم منفصلة؛ حدود اتصالات Filex غير المذكورة تحتاج إلى تأكيد. استعادة عناصر المتصفح لا تؤكد الدفع ولا تفعّل الباقة. لا تكرّر الدفع ولا تمسح بيانات المشغّل لمجرد استعادة شريط العناوين."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "IPTV Subscription का पूर्ण स्क्रीन दृश्य: Chrome की पता पट्टी लौटाएँ",
+      "excerpt": "कंप्यूटर पर Chrome का पूर्ण स्क्रीन मोड पहचानें; छिपे नियंत्रण को प्लान में बदलाव न समझें। सार्वजनिक पता जाँचें और दृश्य सेटिंग को ऑर्डर की स्थिति से अलग रखें।",
+      "seo_title": "IPTV Subscription का पूर्ण स्क्रीन दृश्य: Chrome की पता पट्टी लौटाएँ",
+      "seo_description": "कंप्यूटर पर Chrome का पूर्ण स्क्रीन मोड पहचानें; छिपे नियंत्रण को प्लान में बदलाव न समझें। सार्वजनिक पता जाँचें और दृश्य सेटिंग को ऑर्डर की स्थिति से अलग रखें।",
+      "sections": [
+        {
+          "heading": "बदली हुई विंडो पहचानें",
+          "paragraphs": [
+            "IPTV Subscription के पूर्ण स्क्रीन दृश्य की जाँच वास्तविक ब्राउज़र और कंप्यूटर से शुरू होती है। लिखें कि पेज दिखाई देने के बावजूद पता पट्टी और टैब के नियंत्रण गायब हुए हैं या नहीं। ब्राउज़र का पूर्ण स्क्रीन मोड, बड़ा किया गया पाठ और वीडियो का अपना पूर्ण स्क्रीन बटन अलग सुविधाएँ हैं। केवल विंडो बदलने से प्लान गायब या समाप्त होना साबित नहीं होता। जानबूझकर पूर्ण स्क्रीन खोलने से पहले वेबसाइट का सार्वजनिक पता सत्यापित करें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "संबंधित प्लेटफ़ॉर्म का दर्ज शॉर्टकट इस्तेमाल करें",
+          "paragraphs": [
+            "Google की कंप्यूटर पर Chrome की गाइड में Windows और Linux पर पूर्ण स्क्रीन चालू और बंद करने के लिए F11 दिया है। Chrome पहले से इस मोड में हो और मालिक बाहर आना चाहे, तो दर्ज बटन एक बार दबाकर विंडो देखें। यह Mac का शॉर्टकट नहीं है। पेज के ज़ूम के अलग नियंत्रण हैं; ज़ूम बदलना ब्राउज़र के पूर्ण स्क्रीन मोड से बाहर आने के समान नहीं है। मालिक की उपयोगी दृश्य पसंद बनाए रखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Chrome के कीबोर्ड शॉर्टकट",
+              "url": "https://support.google.com/chrome/answer/157179?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "पता और ऑर्डर अलग जाँचें",
+          "paragraphs": [
+            "ब्राउज़र के नियंत्रण दिखने पर ऑफ़र की तुलना से पहले सही सार्वजनिक पता जाँचें। स्क्रीनशॉट में खाते या भुगतान के निजी पते साझा न करें। वास्तविक Opplex या Filex प्रदाता, अवधि और दर्ज ऑर्डर तथा सेटअप स्थिति अलग सत्यापित करें। प्लेयर लाइसेंस का शुल्क अलग हो सकता है; Filex की अनकही कनेक्शन सीमा की पुष्टि चाहिए। नियंत्रण लौटने से भुगतान साबित नहीं होता और प्लान सक्रिय नहीं होता। केवल पता पट्टी वापस पाने के लिए न दोबारा भुगतान करें और न ही प्लेयर का डेटा मिटाएँ।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Chrome keyboard shortcuts",
+      "url": "https://support.google.com/chrome/answer/157179?hl=en"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "5g",
+  "publishing_date": "2026-11-28",
+  "topic": "Inspect a supported Pixel Quick Tap action separately from a 5G Live IPTV pause or app switch, preserving owner preferences and saved player access.",
+  "primary_keyword": "5G Live IPTV Quick Tap",
+  "slug": "5g-pixel-quick-tap-back-gesture-and-playback-actions",
+  "translations": {
+    "en": {
+      "title": "5G Live IPTV Quick Tap: inspect a Pixel back-tap action",
+      "excerpt": "Check a supported Pixel’s Quick Tap action before treating a pause or app switch as a player fault. Preserve owner preferences and saved 5G Live IPTV setup.",
+      "seo_title": "5G Live IPTV Quick Tap: inspect a Pixel back-tap action",
+      "seo_description": "Check a supported Pixel’s Quick Tap action before treating a pause or app switch as a player fault. Preserve owner preferences and saved 5G Live IPTV setup.",
+      "sections": [
+        {
+          "heading": "Record the event and its timing",
+          "paragraphs": [
+            "A 5G Live IPTV Quick Tap check starts with a simple observation: did media pause, notifications appear or another app open just after the back of the phone was tapped? Note the Pixel model, Android version and what was on screen. This timing is a clue, not proof that the gesture caused the event or that provider access failed. Keep one permitted viewing session."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the existing gesture assignment",
+          "paragraphs": [
+            "Google documents Quick Tap for Pixel 4a (5G) and later phones. In Settings, open System, Gestures, then Quick Tap and read the selected action. Two taps on the back can perform tasks such as playing or pausing media, showing notifications or opening an app. The regular Pixel 4a is not the same model as Pixel 4a (5G). Menus can vary, so use the installed phone’s displayed options."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel gesture guide",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare one owner-approved preference",
+          "paragraphs": [
+            "With the owner’s agreement, record the existing choice and compare one harmless action while the phone is safely held. If a temporary preference change is needed, change only that gesture and restore it when finished. Do not install a gesture-remapping app, erase player data or buy another plan for this check. If pauses continue without the relevant tap, report that result and the player version without credentials; do not label one-device behaviour a service-wide outage."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "5G Live IPTV y Toque rápido: revisa la acción trasera del Pixel",
+      "excerpt": "Revisa Toque rápido en un Pixel compatible antes de atribuir una pausa o cambio de app al reproductor. Conserva las preferencias y la configuración de 5G Live IPTV.",
+      "seo_title": "5G Live IPTV y Toque rápido: revisa la acción trasera del Pixel",
+      "seo_description": "Revisa Toque rápido en un Pixel compatible antes de atribuir una pausa o cambio de app al reproductor. Conserva las preferencias y la configuración de 5G Live IPTV.",
+      "sections": [
+        {
+          "heading": "Anota el suceso y su momento",
+          "paragraphs": [
+            "La revisión de Toque rápido con 5G Live IPTV empieza con una observación: ¿se pausó el contenido, aparecieron notificaciones o se abrió otra app justo después de tocar la parte trasera del teléfono? Anota el modelo de Pixel, la versión de Android y lo que mostraba la pantalla. Esa coincidencia es una pista, no prueba de que el gesto causara el suceso o fallara el acceso al proveedor. Mantén una sola sesión autorizada."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la acción asignada actualmente",
+          "paragraphs": [
+            "Google documenta Toque rápido para Pixel 4a (5G) y modelos posteriores. En Ajustes, abre Sistema, Gestos y Toque rápido para leer la acción seleccionada. Dos toques detrás pueden reproducir o pausar contenido, mostrar notificaciones o abrir una app. El Pixel 4a normal no es el mismo modelo que el Pixel 4a (5G). Los menús pueden variar; utiliza las opciones que muestra ese teléfono."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía de gestos de Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compara una preferencia aprobada por el propietario",
+          "paragraphs": [
+            "Con permiso del propietario, anota la opción actual y compara una acción inocua sujetando el teléfono con seguridad. Si hace falta cambiar temporalmente una preferencia, cambia solo ese gesto y restáuralo al terminar. No instales una app para reasignar gestos, no borres datos del reproductor ni compres otro plan para esta revisión. Si las pausas siguen sin el toque correspondiente, comunica ese resultado y la versión sin credenciales; no declares una caída general por el comportamiento de un dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "5G Live IPTV et Appui rapide : vérifier le geste au dos du Pixel",
+      "excerpt": "Vérifiez Appui rapide sur un Pixel compatible avant d’attribuer une pause ou un changement d’application au lecteur. Gardez les préférences et la configuration enregistrées.",
+      "seo_title": "5G Live IPTV et Appui rapide : vérifier le geste au dos du Pixel",
+      "seo_description": "Vérifiez Appui rapide sur un Pixel compatible avant d’attribuer une pause ou un changement d’application au lecteur. Gardez les préférences et la configuration enregistrées.",
+      "sections": [
+        {
+          "heading": "Noter l’événement et son moment",
+          "paragraphs": [
+            "La vérification d’Appui rapide avec 5G Live IPTV part d’une observation : le contenu s’est-il arrêté, des notifications sont-elles apparues ou une autre application s’est-elle ouverte juste après un appui au dos du téléphone ? Notez le modèle Pixel, la version d’Android et l’écran affiché. Ce moment est un indice, pas la preuve que le geste est responsable ou que l’accès au fournisseur a échoué. Gardez une seule session autorisée."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire l’action actuellement attribuée",
+          "paragraphs": [
+            "Google documente Appui rapide pour le Pixel 4a (5G) et les modèles ultérieurs. Dans Paramètres, ouvrez Système, Gestes puis Appui rapide et lisez l’action choisie. Deux appuis au dos peuvent lancer ou suspendre un média, afficher les notifications ou ouvrir une application. Le Pixel 4a standard n’est pas le Pixel 4a (5G). Les menus peuvent varier ; utilisez les options affichées sur le téléphone concerné."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide Google Pixel des gestes",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer une préférence approuvée par le propriétaire",
+          "paragraphs": [
+            "Avec son accord, notez le choix existant et comparez une action sans conséquence en tenant le téléphone sûrement. Si une modification temporaire est nécessaire, changez uniquement ce geste puis restaurez-le. N’installez pas d’application de réattribution des gestes, n’effacez pas les données du lecteur et n’achetez pas un autre forfait pour ce contrôle. Si les pauses continuent sans l’appui concerné, communiquez ce résultat et la version du lecteur sans identifiants ; un seul appareil ne démontre pas une panne générale."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "5G Live IPTV e Tocco rapido: controlla il gesto sul retro del Pixel",
+      "excerpt": "Controlla Tocco rapido su un Pixel compatibile prima di attribuire pause o cambi di app al lettore. Mantieni le preferenze del proprietario e la configurazione salvata.",
+      "seo_title": "5G Live IPTV e Tocco rapido: controlla il gesto sul retro del Pixel",
+      "seo_description": "Controlla Tocco rapido su un Pixel compatibile prima di attribuire pause o cambi di app al lettore. Mantieni le preferenze del proprietario e la configurazione salvata.",
+      "sections": [
+        {
+          "heading": "Annota l’evento e il momento",
+          "paragraphs": [
+            "La verifica di Tocco rapido con 5G Live IPTV parte da un’osservazione: la riproduzione si è fermata, sono apparse notifiche o si è aperta un’altra app subito dopo un tocco sul retro del telefono? Annota modello Pixel, versione Android e schermata presente. La coincidenza è un indizio, non prova che il gesto abbia causato l’evento o che l’accesso al fornitore sia guasto. Mantieni una sola sessione consentita."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi l’azione attualmente assegnata",
+          "paragraphs": [
+            "Google documenta Tocco rapido per Pixel 4a (5G) e telefoni successivi. In Impostazioni, apri Sistema, Gesti e Tocco rapido e leggi l’azione selezionata. Due tocchi sul retro possono avviare o sospendere contenuti, mostrare notifiche o aprire un’app. Pixel 4a standard non è lo stesso modello di Pixel 4a (5G). I menu possono variare: usa le opzioni visualizzate sul telefono effettivo."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Google Pixel ai gesti",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta una preferenza approvata dal proprietario",
+          "paragraphs": [
+            "Con il suo consenso, annota la scelta esistente e confronta un’azione innocua tenendo il telefono in sicurezza. Se occorre una modifica temporanea, cambia solo quel gesto e ripristinalo al termine. Non installare app per riassegnare gesti, non cancellare i dati del lettore e non acquistare un altro piano per questa verifica. Se le pause continuano senza il tocco corrispondente, comunica il risultato e la versione senza credenziali; non definire un guasto generale il comportamento di un dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "5G Live IPTV en Snel tikken: controleer de tikactie achter op je Pixel",
+      "excerpt": "Controleer Snel tikken op een geschikte Pixel voordat je een pauze of appwissel als spelerfout ziet. Behoud de voorkeuren van de eigenaar en de opgeslagen instellingen.",
+      "seo_title": "5G Live IPTV en Snel tikken: controleer de tikactie achter op je Pixel",
+      "seo_description": "Controleer Snel tikken op een geschikte Pixel voordat je een pauze of appwissel als spelerfout ziet. Behoud de voorkeuren van de eigenaar en de opgeslagen instellingen.",
+      "sections": [
+        {
+          "heading": "Noteer wat er gebeurde en wanneer",
+          "paragraphs": [
+            "Een controle van Snel tikken bij 5G Live IPTV begint met een waarneming: pauzeerde de video, verschenen meldingen of opende een andere app direct na tikken op de achterkant van de telefoon? Noteer het Pixel-model, de Android-versie en het getoonde scherm. Dat tijdstip is een aanwijzing, geen bewijs dat het gebaar de oorzaak was of toegang tot de aanbieder mislukte. Houd één toegestane kijksessie aan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de bestaande gebaartoewijzing",
+          "paragraphs": [
+            "Google beschrijft Snel tikken voor Pixel 4a (5G) en latere telefoons. Open in Instellingen de onderdelen Systeem, Gebaren en Snel tikken en lees de gekozen actie. Tweemaal achterop tikken kan media afspelen of pauzeren, meldingen tonen of een app openen. De gewone Pixel 4a is niet hetzelfde model als de Pixel 4a (5G). Menu’s kunnen verschillen; gebruik de opties die op deze telefoon staan."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel-handleiding voor gebaren",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één goedgekeurde voorkeur",
+          "paragraphs": [
+            "Noteer met toestemming van de eigenaar de huidige keuze en vergelijk één onschuldige actie terwijl je de telefoon veilig vasthoudt. Is een tijdelijke wijziging nodig, verander dan alleen dat gebaar en herstel het daarna. Installeer geen app om gebaren opnieuw toe te wijzen, wis geen spelergegevens en koop geen ander abonnement voor deze controle. Blijven pauzes zonder de betreffende tik bestaan, meld dan die uitkomst en de spelerversie zonder inloggegevens; één apparaat bewijst geen algemene storing."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "5G Live IPTV e Toque rápido: reveja a ação na traseira do Pixel",
+      "excerpt": "Reveja o Toque rápido num Pixel compatível antes de atribuir uma pausa ou mudança de aplicação ao leitor. Preserve as preferências e a configuração guardada.",
+      "seo_title": "5G Live IPTV e Toque rápido: reveja a ação na traseira do Pixel",
+      "seo_description": "Reveja o Toque rápido num Pixel compatível antes de atribuir uma pausa ou mudança de aplicação ao leitor. Preserve as preferências e a configuração guardada.",
+      "sections": [
+        {
+          "heading": "Registe o evento e o momento",
+          "paragraphs": [
+            "A verificação do Toque rápido com 5G Live IPTV começa por uma observação: o conteúdo parou, surgiram notificações ou abriu outra aplicação logo após tocar na traseira do telefone? Anote o modelo Pixel, a versão Android e o ecrã apresentado. Essa coincidência é uma pista, não prova de que o gesto causou o evento ou de que falhou o acesso ao fornecedor. Mantenha apenas uma sessão permitida."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a ação atualmente atribuída",
+          "paragraphs": [
+            "A Google documenta o Toque rápido para Pixel 4a (5G) e telefones posteriores. Em Definições, abra Sistema, Gestos e Toque rápido para ler a ação selecionada. Dois toques na traseira podem reproduzir ou pausar conteúdos, mostrar notificações ou abrir uma aplicação. O Pixel 4a normal não é o mesmo modelo que o Pixel 4a (5G). Os menus podem variar; use as opções apresentadas nesse telefone."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia de gestos do Google Pixel",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Compare uma preferência autorizada pelo proprietário",
+          "paragraphs": [
+            "Com o seu acordo, registe a escolha atual e compare uma ação inofensiva segurando o telefone com segurança. Se precisar de uma mudança temporária, altere apenas esse gesto e restaure-o no fim. Não instale uma aplicação para reatribuir gestos, não apague dados do leitor nem compre outro plano para esta verificação. Se as pausas continuarem sem o toque correspondente, comunique o resultado e a versão sem credenciais; não conclua uma falha geral a partir de um só dispositivo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "5G Live IPTV и быстрое касание: проверьте жест на задней панели Pixel",
+      "excerpt": "Проверьте быстрое касание на совместимом Pixel, прежде чем считать паузу или смену приложения ошибкой плеера. Сохраните предпочтения владельца и настройки.",
+      "seo_title": "5G Live IPTV и быстрое касание: проверьте жест на задней панели Pixel",
+      "seo_description": "Проверьте быстрое касание на совместимом Pixel, прежде чем считать паузу или смену приложения ошибкой плеера. Сохраните предпочтения владельца и настройки.",
+      "sections": [
+        {
+          "heading": "Запишите событие и время",
+          "paragraphs": [
+            "Проверка быстрого касания при использовании 5G Live IPTV начинается с наблюдения: остановилось ли воспроизведение, появились ли уведомления или открылось другое приложение сразу после касания задней панели телефона? Запишите модель Pixel, версию Android и открытый экран. Совпадение по времени — подсказка, а не доказательство причины или сбоя доступа к провайдеру. Оставьте один разрешённый сеанс просмотра."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте назначенное действие",
+          "paragraphs": [
+            "Google описывает быстрое касание для Pixel 4a (5G) и более новых телефонов. В Настройках откройте Система, Жесты и Быстрое касание, затем прочитайте выбранное действие. Два касания задней панели могут включать или приостанавливать медиа, показывать уведомления либо открывать приложение. Обычный Pixel 4a — не та же модель, что Pixel 4a (5G). Меню могут отличаться; пользуйтесь вариантами на конкретном телефоне."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Руководство Google Pixel по жестам",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните одну настройку с согласия владельца",
+          "paragraphs": [
+            "С его согласия запишите текущий выбор и сравните одно безобидное действие, надёжно удерживая телефон. Если нужна временная настройка, измените только этот жест и затем восстановите его. Не устанавливайте приложение для переназначения жестов, не стирайте данные плеера и не покупайте другой тариф ради проверки. Если паузы продолжаются без нужного касания, сообщите результат и версию плеера без учётных данных; поведение одного устройства не доказывает общий сбой сервиса."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "5G Live IPTV کی کوئک ٹیپ جانچ: Pixel کے پچھلے حصے کا عمل دیکھیں",
+      "excerpt": "مطابقت رکھنے والے Pixel کی کوئک ٹیپ ترتیب دیکھیں؛ وقفے یا ایپ بدلنے کو فوراً پلیئر کی خرابی نہ سمجھیں۔ مالک کی ترجیحات اور محفوظ سیٹ اپ برقرار رکھیں۔",
+      "seo_title": "5G Live IPTV کی کوئک ٹیپ جانچ: Pixel کے پچھلے حصے کا عمل دیکھیں",
+      "seo_description": "مطابقت رکھنے والے Pixel کی کوئک ٹیپ ترتیب دیکھیں؛ وقفے یا ایپ بدلنے کو فوراً پلیئر کی خرابی نہ سمجھیں۔ مالک کی ترجیحات اور محفوظ سیٹ اپ برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "واقعہ اور اس کا وقت لکھیں",
+          "paragraphs": [
+            "5G Live IPTV کی کوئک ٹیپ جانچ ایک مشاہدے سے شروع ہوتی ہے: کیا فون کے پچھلے حصے پر تھپتھپانے کے فوراً بعد ویڈیو رکی، اطلاعات آئیں یا دوسری ایپ کھلی؟ Pixel کا ماڈل، Android کا ورژن اور کھلی اسکرین لکھیں۔ وقت کا یہ تعلق ایک اشارہ ہے؛ یہ ثبوت نہیں کہ اشارے نے واقعہ پیدا کیا یا فراہم کنندہ کی رسائی خراب ہوئی۔ ایک ہی مجاز سیشن رکھیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اشارے کا موجودہ کام پڑھیں",
+          "paragraphs": [
+            "Google، Pixel 4a (5G) اور بعد کے فونز کے لیے کوئک ٹیپ بیان کرتا ہے۔ ترتیبات میں نظام، اشارے، پھر کوئک ٹیپ کھول کر منتخب کام پڑھیں۔ پچھلے حصے پر دو بار تھپتھپانے سے میڈیا چل یا رک سکتا ہے، اطلاعات دکھائی جا سکتی ہیں یا ایپ کھل سکتی ہے۔ عام Pixel 4a، Pixel 4a (5G) والا ماڈل نہیں ہے۔ مینو بدل سکتے ہیں؛ اسی فون پر دکھائی دینے والے اختیارات استعمال کریں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel کے اشاروں کی رہنمائی",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "مالک کی منظور شدہ ایک ترجیح کا موازنہ کریں",
+          "paragraphs": [
+            "مالک کی رضامندی سے موجودہ انتخاب لکھیں اور فون محفوظ پکڑ کر ایک بے ضرر کام کا موازنہ کریں۔ عارضی تبدیلی درکار ہو تو صرف یہی اشارہ بدلیں اور آخر میں اسے بحال کریں۔ اس جانچ کے لیے نہ اشارے بدلنے والی ایپ نصب کریں، نہ پلیئر کا ڈیٹا مٹائیں، اور نہ دوسرا پلان خریدیں۔ متعلقہ تھپتھپاہٹ کے بغیر بھی وقفے آئیں تو نتیجہ اور پلیئر کا ورژن لاگ اِن معلومات کے بغیر بتائیں؛ ایک آلے کے رویے کو پوری سروس کی بندش نہ کہیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "5G Live IPTV والنقر السريع: افحص إجراء النقر خلف هاتف Pixel",
+      "excerpt": "افحص إجراء النقر السريع في هاتف Pixel متوافق قبل اعتبار التوقف أو تبديل التطبيق عطلًا في المشغّل. حافظ على تفضيلات المالك والإعدادات المحفوظة.",
+      "seo_title": "5G Live IPTV والنقر السريع: افحص إجراء النقر خلف هاتف Pixel",
+      "seo_description": "افحص إجراء النقر السريع في هاتف Pixel متوافق قبل اعتبار التوقف أو تبديل التطبيق عطلًا في المشغّل. حافظ على تفضيلات المالك والإعدادات المحفوظة.",
+      "sections": [
+        {
+          "heading": "سجّل الحدث وتوقيته",
+          "paragraphs": [
+            "يبدأ فحص النقر السريع مع 5G Live IPTV بملاحظة بسيطة: هل توقفت الوسائط أو ظهرت إشعارات أو فُتح تطبيق آخر مباشرة بعد النقر خلف الهاتف؟ سجّل طراز Pixel وإصدار Android وما كان ظاهرًا على الشاشة. التزامن مؤشر، وليس دليلًا على أن الإيماءة سببت الحدث أو أن الوصول إلى المزوّد تعطل. أبقِ جلسة مشاهدة واحدة مسموحًا بها."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ الإجراء المعيّن حاليًا",
+          "paragraphs": [
+            "تشرح Google النقر السريع لهواتف Pixel 4a (5G) وما بعدها. في الإعدادات افتح النظام، ثم الإيماءات، ثم النقر السريع، واقرأ الإجراء المحدد. قد تؤدي نقرتان خلف الهاتف إلى تشغيل الوسائط أو إيقافها مؤقتًا أو إظهار الإشعارات أو فتح تطبيق. هاتف Pixel 4a العادي ليس طراز Pixel 4a (5G) نفسه. قد تختلف القوائم؛ استخدم الخيارات المعروضة على الهاتف المعني."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل Google Pixel للإيماءات",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "قارن تفضيلًا واحدًا بموافقة المالك",
+          "paragraphs": [
+            "بموافقته، سجّل الاختيار الحالي وقارن إجراءً غير ضار مع إمساك الهاتف بأمان. إذا لزم تغيير مؤقت، فغيّر هذه الإيماءة وحدها وأعِدها عند الانتهاء. لا تثبّت تطبيقًا لإعادة تعيين الإيماءات، ولا تمسح بيانات المشغّل، ولا تشترِ خطة أخرى لهذا الفحص. إذا استمر التوقف دون النقر المعني، فأبلغ بالنتيجة وإصدار المشغّل دون بيانات الدخول؛ ولا تصف سلوك جهاز واحد بأنه انقطاع شامل للخدمة."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "5G Live IPTV की क्विक टैप जाँच: Pixel के पीछे टैप करने की क्रिया देखें",
+      "excerpt": "संगत Pixel की क्विक टैप क्रिया देखें; रुकने या ऐप बदलने को तुरंत प्लेयर की खराबी न समझें। मालिक की पसंद और सहेजा सेटअप बनाए रखें।",
+      "seo_title": "5G Live IPTV की क्विक टैप जाँच: Pixel के पीछे टैप करने की क्रिया देखें",
+      "seo_description": "संगत Pixel की क्विक टैप क्रिया देखें; रुकने या ऐप बदलने को तुरंत प्लेयर की खराबी न समझें। मालिक की पसंद और सहेजा सेटअप बनाए रखें।",
+      "sections": [
+        {
+          "heading": "घटना और उसका समय लिखें",
+          "paragraphs": [
+            "5G Live IPTV की क्विक टैप जाँच एक सामान्य अवलोकन से शुरू होती है: क्या फोन के पीछे टैप करने के तुरंत बाद मीडिया रुका, सूचनाएँ आईं या दूसरा ऐप खुला? Pixel मॉडल, Android संस्करण और खुली स्क्रीन लिखें। समय का यह संबंध एक संकेत है; यह प्रमाण नहीं कि जेस्चर ने घटना पैदा की या प्रदाता की पहुँच खराब हुई। एक ही अनुमति वाला देखने का सत्र रखें।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "जेस्चर की मौजूदा क्रिया पढ़ें",
+          "paragraphs": [
+            "Google, Pixel 4a (5G) और बाद के फोन के लिए क्विक टैप बताता है। सेटिंग में सिस्टम, जेस्चर और फिर क्विक टैप खोलकर चुनी क्रिया पढ़ें। पीछे दो बार टैप करने से मीडिया चल या रुक सकता है, सूचनाएँ दिखाई जा सकती हैं या ऐप खुल सकता है। सामान्य Pixel 4a, Pixel 4a (5G) वाला मॉडल नहीं है। मेन्यू बदल सकते हैं; उसी फोन पर दिखने वाले विकल्प अपनाएँ।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google Pixel जेस्चर गाइड",
+              "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "मालिक की मंजूरी से एक पसंद की तुलना करें",
+          "paragraphs": [
+            "मालिक की सहमति से मौजूदा चुनाव लिखें और फोन सुरक्षित पकड़कर एक हानिरहित क्रिया की तुलना करें। अस्थायी बदलाव चाहिए तो केवल वही जेस्चर बदलें और अंत में उसे बहाल करें। इस जाँच के लिए न जेस्चर बदलने वाला ऐप स्थापित करें, न प्लेयर का डेटा मिटाएँ और न दूसरा प्लान खरीदें। संबंधित टैप के बिना भी रुकावट जारी हो तो परिणाम और प्लेयर का संस्करण लॉगिन जानकारी के बिना बताएँ; एक डिवाइस के व्यवहार को पूरी सेवा की बंदी न कहें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google Pixel gesture guide",
+      "url": "https://support.google.com/pixelphone/answer/7443425?hl=en"
+    }
+  ]
+}

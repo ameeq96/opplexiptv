@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "trex",
+  "publishing_date": "2026-11-28",
+  "topic": "Inspect VLC for Android’s Prefer clone setting for an existing secondary display, distinguishing phone-side remote controls from picture mirroring and Trex IPTV viewing allowances.",
+  "primary_keyword": "Trex IPTV secondary display",
+  "slug": "trex-vlc-android-secondary-display-prefer-clone-controls",
+  "translations": {
+    "en": {
+      "title": "Trex IPTV secondary display: understand VLC’s Prefer clone setting",
+      "excerpt": "Check why VLC for Android shows controls on a phone while video appears on a connected screen. Separate its Prefer clone preference from provider access and viewing limits.",
+      "seo_title": "Trex IPTV secondary display: understand VLC’s Prefer clone setting",
+      "seo_description": "Check why VLC for Android shows controls on a phone while video appears on a connected screen. Separate its Prefer clone preference from provider access and viewing limits.",
+      "sections": [
+        {
+          "heading": "Describe what each screen shows",
+          "paragraphs": [
+            "A Trex IPTV secondary display check starts with the actual VLC for Android version and the existing connection. Note whether the external screen shows video while the phone shows playback controls, or whether both screens show a picture. Record the connection method and whether ordinary player buttons still respond. A phone acting as a remote control alone does not establish a provider fault or a missing video track."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the secondary-display preference",
+          "paragraphs": [
+            "VideoLAN’s video-settings guide describes Prefer clone under Secondary display. With a secondary screen connected through HDMI, Chromecast or another method, VLC for Android can act as a remote for playback on that screen. The documented preference instead selects screen cloning. This describes an interface choice, not a promise that every phone, receiver, cable or programme supports every output method. Read the existing setting before considering a change."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare one preference without resetting access",
+          "paragraphs": [
+            "If the owner wants a comparison and the installed version offers the preference, use one permitted clip and change only that setting. Note both screens’ behaviour and restore the earlier choice if it is unhelpful. Trex IPTV 8K permits one simultaneous connection; keep one active playback session. Cloning does not expand the plan allowance. Report versions, equipment and the result without credentials. Do not erase player data, reinstall the app or buy another plan for this check."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pantalla secundaria de Trex IPTV: comprende Preferir clonación en VLC",
+      "excerpt": "Comprueba por qué VLC para Android muestra controles en el teléfono y vídeo en otra pantalla. Separa la preferencia de clonación del acceso al proveedor y sus límites.",
+      "seo_title": "Pantalla secundaria de Trex IPTV: comprende Preferir clonación en VLC",
+      "seo_description": "Comprueba por qué VLC para Android muestra controles en el teléfono y vídeo en otra pantalla. Separa la preferencia de clonación del acceso al proveedor y sus límites.",
+      "sections": [
+        {
+          "heading": "Describe lo que muestra cada pantalla",
+          "paragraphs": [
+            "Una revisión de la pantalla secundaria de Trex IPTV empieza por la versión real de VLC para Android y la conexión existente. Anota si la pantalla externa muestra vídeo y el teléfono controles de reproducción, o si ambas muestran una imagen. Registra el método de conexión y si los botones habituales responden. Que el teléfono funcione como mando no demuestra por sí solo una avería del proveedor ni una pista de vídeo ausente."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lee la preferencia de pantalla secundaria",
+          "paragraphs": [
+            "La guía de ajustes de vídeo de VideoLAN describe Preferir clonación en Pantalla secundaria. Si hay otra pantalla conectada por HDMI, Chromecast u otro método, VLC para Android puede servir de mando para reproducir en ella. La preferencia documentada selecciona, en cambio, la clonación de pantalla. Describe una elección de interfaz; no promete que todos los teléfonos, receptores, cables o programas admitan cualquier salida. Lee primero el ajuste actual."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compara una opción sin restablecer el acceso",
+          "paragraphs": [
+            "Si el propietario quiere comparar y la versión instalada ofrece esa preferencia, usa un vídeo autorizado y cambia solo esa opción. Anota el comportamiento de ambas pantallas y recupera la elección anterior si no ayuda. Trex IPTV 8K permite una conexión simultánea; mantén una sola sesión activa. Clonar no amplía los límites del plan. Comunica versiones, equipo y resultado sin credenciales. No borres datos del reproductor, no reinstales la aplicación ni compres otro plan para esta revisión."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Écran secondaire Trex IPTV : comprendre Préférer le clonage dans VLC",
+      "excerpt": "Comprenez les commandes sur le téléphone et la vidéo sur un écran connecté dans VLC pour Android. Distinguez le clonage, l’accès au fournisseur et les limites du forfait.",
+      "seo_title": "Écran secondaire Trex IPTV : comprendre Préférer le clonage dans VLC",
+      "seo_description": "Comprenez les commandes sur le téléphone et la vidéo sur un écran connecté dans VLC pour Android. Distinguez le clonage, l’accès au fournisseur et les limites du forfait.",
+      "sections": [
+        {
+          "heading": "Décrire ce que montre chaque écran",
+          "paragraphs": [
+            "Une vérification de l’écran secondaire Trex IPTV commence par la version réelle de VLC pour Android et la connexion existante. Notez si l’écran externe montre la vidéo et le téléphone les commandes, ou si les deux montrent une image. Relevez le mode de connexion et la réponse des boutons habituels. Un téléphone utilisé comme télécommande ne prouve pas, à lui seul, une panne du fournisseur ni l’absence d’une piste vidéo."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lire la préférence de l’écran secondaire",
+          "paragraphs": [
+            "Le guide des réglages vidéo de VideoLAN décrit Préférer le clonage dans Écran secondaire. Lorsqu’un autre écran est connecté par HDMI, Chromecast ou une autre méthode, VLC pour Android peut servir de télécommande pour sa lecture. La préférence documentée choisit plutôt le clonage d’écran. Il s’agit d’un choix d’interface, sans promesse que tous les téléphones, récepteurs, câbles ou programmes acceptent chaque sortie. Lisez d’abord le réglage existant."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Comparer une option sans réinitialiser l’accès",
+          "paragraphs": [
+            "Si le propriétaire souhaite comparer et si la version installée propose cette préférence, utilisez un extrait autorisé et ne changez que ce réglage. Notez le comportement des deux écrans et rétablissez l’ancien choix si cela n’aide pas. Trex IPTV 8K autorise une connexion simultanée ; gardez une seule lecture active. Le clonage n’élargit pas cette limite. Indiquez versions, matériel et résultat sans identifiants. N’effacez pas les données du lecteur, ne le réinstallez pas et n’achetez pas un autre forfait pour ce contrôle."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Schermo secondario Trex IPTV: capire Preferisci clonazione in VLC",
+      "excerpt": "Controlla perché VLC per Android mostra i comandi sul telefono e il video su uno schermo collegato. Distingui la clonazione dall’accesso al fornitore e dai limiti del piano.",
+      "seo_title": "Schermo secondario Trex IPTV: capire Preferisci clonazione in VLC",
+      "seo_description": "Controlla perché VLC per Android mostra i comandi sul telefono e il video su uno schermo collegato. Distingui la clonazione dall’accesso al fornitore e dai limiti del piano.",
+      "sections": [
+        {
+          "heading": "Descrivi cosa appare su ciascuno schermo",
+          "paragraphs": [
+            "Un controllo dello schermo secondario Trex IPTV parte dalla versione effettiva di VLC per Android e dal collegamento esistente. Annota se lo schermo esterno mostra il video e il telefono i comandi, oppure se entrambi mostrano un’immagine. Registra il metodo di collegamento e se i normali pulsanti rispondono. Il solo uso del telefono come telecomando non dimostra un guasto del fornitore o una traccia video mancante."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la preferenza dello schermo secondario",
+          "paragraphs": [
+            "La guida alle impostazioni video di VideoLAN descrive Preferisci clonazione in Schermo secondario. Con uno schermo collegato tramite HDMI, Chromecast o un altro metodo, VLC per Android può funzionare da telecomando per la riproduzione su quello schermo. La preferenza documentata seleziona invece la clonazione. È una scelta dell’interfaccia, non una promessa che ogni telefono, ricevitore, cavo o programma supporti qualsiasi uscita. Leggi prima l’impostazione attuale."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Confronta una scelta senza azzerare l’accesso",
+          "paragraphs": [
+            "Se il proprietario vuole confrontare e la versione installata offre la preferenza, usa un filmato autorizzato e cambia solo questa impostazione. Annota il comportamento dei due schermi e ripristina la scelta precedente se non aiuta. Trex IPTV 8K consente una connessione simultanea: mantieni una sola riproduzione attiva. La clonazione non amplia il limite del piano. Comunica versioni, apparecchi e risultato senza credenziali. Non cancellare i dati del lettore, non reinstallarlo e non acquistare un altro piano per questo controllo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Tweede scherm bij Trex IPTV: begrijp VLC’s voorkeur voor klonen",
+      "excerpt": "Bekijk waarom VLC voor Android bediening op de telefoon en video op een aangesloten scherm toont. Houd de kloonvoorkeur, toegang tot de aanbieder en abonnementsgrenzen apart.",
+      "seo_title": "Tweede scherm bij Trex IPTV: begrijp VLC’s voorkeur voor klonen",
+      "seo_description": "Bekijk waarom VLC voor Android bediening op de telefoon en video op een aangesloten scherm toont. Houd de kloonvoorkeur, toegang tot de aanbieder en abonnementsgrenzen apart.",
+      "sections": [
+        {
+          "heading": "Beschrijf wat elk scherm toont",
+          "paragraphs": [
+            "Een controle van een tweede scherm bij Trex IPTV begint met de werkelijke versie van VLC voor Android en de bestaande verbinding. Noteer of het externe scherm video toont en de telefoon bediening, of dat beide een beeld tonen. Leg de verbindingsmethode vast en controleer of gewone afspeelknoppen reageren. Een telefoon die als afstandsbediening werkt, bewijst op zichzelf geen storing bij de aanbieder of een ontbrekend videospoor."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de voorkeur voor het tweede scherm",
+          "paragraphs": [
+            "De videoinstellingengids van VideoLAN beschrijft Klonen verkiezen onder Tweede scherm. Bij een scherm dat via HDMI, Chromecast of een andere methode is aangesloten, kan VLC voor Android als afstandsbediening voor het afspelen op dat scherm dienen. De beschreven voorkeur kiest juist voor schermklonen. Dit is een interfacekeuze en geen belofte dat iedere telefoon, ontvanger, kabel of programma elke uitvoermethode ondersteunt. Lees eerst de huidige instelling."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Vergelijk één keuze zonder toegang te wissen",
+          "paragraphs": [
+            "Als de eigenaar wil vergelijken en de geïnstalleerde versie deze voorkeur biedt, gebruik dan één toegestaan fragment en wijzig alleen die instelling. Noteer het gedrag van beide schermen en herstel de eerdere keuze als het niet helpt. Trex IPTV 8K staat één gelijktijdige verbinding toe; houd één afspeelsessie actief. Klonen verruimt de abonnementsgrens niet. Meld versies, apparatuur en resultaat zonder inloggegevens. Wis geen spelergegevens, installeer de app niet opnieuw en koop voor deze controle geen ander abonnement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Ecrã secundário Trex IPTV: compreender Preferir clonagem no VLC",
+      "excerpt": "Veja por que o VLC para Android apresenta controlos no telemóvel e vídeo num ecrã ligado. Separe a preferência de clonagem do acesso ao fornecedor e dos limites do plano.",
+      "seo_title": "Ecrã secundário Trex IPTV: compreender Preferir clonagem no VLC",
+      "seo_description": "Veja por que o VLC para Android apresenta controlos no telemóvel e vídeo num ecrã ligado. Separe a preferência de clonagem do acesso ao fornecedor e dos limites do plano.",
+      "sections": [
+        {
+          "heading": "Descreva o que aparece em cada ecrã",
+          "paragraphs": [
+            "Uma verificação do ecrã secundário Trex IPTV começa pela versão real do VLC para Android e pela ligação existente. Anote se o ecrã externo apresenta vídeo e o telemóvel os controlos, ou se ambos apresentam imagem. Registe o método de ligação e se os botões habituais respondem. O telemóvel funcionar como comando não demonstra, por si só, uma falha do fornecedor nem uma faixa de vídeo em falta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia a preferência do ecrã secundário",
+          "paragraphs": [
+            "O guia de definições de vídeo da VideoLAN descreve Preferir clonagem em Ecrã secundário. Com outro ecrã ligado por HDMI, Chromecast ou outro método, o VLC para Android pode servir de comando para a reprodução nesse ecrã. A preferência documentada seleciona antes a clonagem do ecrã. Trata-se de uma opção da interface, não de uma promessa de compatibilidade de todos os telemóveis, recetores, cabos ou programas com qualquer saída. Leia primeiro a definição atual."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Compare uma escolha sem repor o acesso",
+          "paragraphs": [
+            "Se o proprietário quiser comparar e a versão instalada disponibilizar a preferência, utilize um vídeo autorizado e altere apenas essa definição. Anote o comportamento de ambos os ecrãs e reponha a escolha anterior se não ajudar. O Trex IPTV 8K permite uma ligação simultânea; mantenha uma só sessão ativa. A clonagem não aumenta o limite do plano. Comunique versões, equipamento e resultado sem credenciais. Não apague dados do leitor, não reinstale a aplicação nem compre outro plano para esta verificação."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Второй экран Trex IPTV: разберитесь с клонированием в VLC",
+      "excerpt": "Проверьте, почему VLC для Android показывает управление на телефоне, а видео на подключённом экране. Отделяйте настройку клонирования от доступа к провайдеру и лимитов тарифа.",
+      "seo_title": "Второй экран Trex IPTV: разберитесь с клонированием в VLC",
+      "seo_description": "Проверьте, почему VLC для Android показывает управление на телефоне, а видео на подключённом экране. Отделяйте настройку клонирования от доступа к провайдеру и лимитов тарифа.",
+      "sections": [
+        {
+          "heading": "Опишите изображение на каждом экране",
+          "paragraphs": [
+            "Проверку второго экрана Trex IPTV начните с фактической версии VLC для Android и существующего подключения. Отметьте, показывает ли внешний экран видео, а телефон — управление, или изображение видно на обоих. Запишите способ подключения и реагируют ли обычные кнопки воспроизведения. Сам по себе телефон в роли пульта не доказывает сбой провайдера или отсутствие видеодорожки."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте настройку второго экрана",
+          "paragraphs": [
+            "В руководстве VideoLAN по настройкам видео описан пункт предпочтительного клонирования в разделе второго экрана. При подключении экрана через HDMI, Chromecast или иным способом VLC для Android может работать как пульт воспроизведения на нём. Описанная настройка вместо этого выбирает клонирование экрана. Это вариант интерфейса, а не обещание поддержки любого выхода каждым телефоном, приёмником, кабелем или программой. Сначала прочитайте текущее значение."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "Сравните одну настройку без сброса доступа",
+          "paragraphs": [
+            "Если владелец хочет сравнить и установленная версия предлагает такую настройку, используйте один разрешённый ролик и измените только её. Запишите поведение обоих экранов и восстановите прежний выбор, если улучшения нет. Trex IPTV 8K допускает одно одновременное подключение; оставьте один активный сеанс. Клонирование не расширяет лимит тарифа. Сообщите версии, оборудование и результат без учётных данных. Не стирайте данные плеера, не переустанавливайте приложение и не покупайте другой тариф ради этой проверки."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Trex IPTV کا دوسرا ڈسپلے: VLC میں اسکرین نقل کرنے کی ترجیح سمجھیں",
+      "excerpt": "جانچیں کہ Android کے VLC میں فون پر کنٹرول اور جڑی اسکرین پر ویڈیو کیوں ہے۔ اسکرین نقل کرنے کی ترجیح، فراہم کنندہ کی رسائی اور پلان کی حد الگ رکھیں۔",
+      "seo_title": "Trex IPTV کا دوسرا ڈسپلے: VLC میں اسکرین نقل کرنے کی ترجیح سمجھیں",
+      "seo_description": "جانچیں کہ Android کے VLC میں فون پر کنٹرول اور جڑی اسکرین پر ویڈیو کیوں ہے۔ اسکرین نقل کرنے کی ترجیح، فراہم کنندہ کی رسائی اور پلان کی حد الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "بتائیں کہ ہر اسکرین پر کیا ہے",
+          "paragraphs": [
+            "Trex IPTV کے دوسرے ڈسپلے کی جانچ اصل VLC برائے Android کے ورژن اور موجودہ کنکشن سے شروع کریں۔ نوٹ کریں کہ باہر جڑی اسکرین پر ویڈیو اور فون پر پلے بیک کنٹرول ہیں، یا دونوں پر تصویر ہے۔ کنکشن کا طریقہ لکھیں اور دیکھیں کہ عام پلے بیک بٹن جواب دیتے ہیں یا نہیں۔ صرف فون کا ریموٹ کنٹرول کی طرح کام کرنا فراہم کنندہ کی خرابی یا ویڈیو ٹریک غائب ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دوسرے ڈسپلے کی ترجیح پڑھیں",
+          "paragraphs": [
+            "VideoLAN کی ویڈیو ترتیبات کی رہنمائی دوسرے ڈسپلے میں اسکرین کی نقل کو ترجیح دینے کا اختیار بتاتی ہے۔ HDMI، Chromecast یا کسی دوسرے طریقے سے اسکرین جڑی ہو تو Android کا VLC اس پر چلنے والی ویڈیو کا ریموٹ بن سکتا ہے۔ مذکورہ ترجیح اس کے بجائے اسکرین کی نقل دکھانے کا انتخاب کرتی ہے۔ یہ انٹرفیس کا اختیار ہے؛ ہر فون، ریسیور، کیبل یا پروگرام میں ہر آؤٹ پٹ چلنے کا وعدہ نہیں۔ پہلے موجودہ ترتیب پڑھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "رسائی مٹائے بغیر ایک ترجیح کا موازنہ کریں",
+          "paragraphs": [
+            "مالک موازنہ چاہے اور نصب ورژن میں اختیار ہو تو ایک مجاز ویڈیو استعمال کریں اور صرف یہی ترجیح بدلیں۔ دونوں اسکرینوں کا رویہ لکھیں؛ فائدہ نہ ہو تو پچھلا انتخاب بحال کریں۔ Trex IPTV 8K میں ایک وقت میں ایک کنکشن کی اجازت ہے؛ ایک ہی پلے بیک سیشن فعال رکھیں۔ اسکرین کی نقل سے پلان کی حد نہیں بڑھتی۔ ورژن، آلات اور نتیجہ بتائیں، لاگ اِن معلومات نہیں۔ اس جانچ کے لیے نہ پلیئر کا ڈیٹا مٹائیں، نہ ایپ دوبارہ نصب کریں، اور نہ دوسرا پلان خریدیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "الشاشة الثانوية في Trex IPTV: افهم تفضيل نسخ الشاشة في VLC",
+      "excerpt": "تحقق من ظهور أدوات VLC لأندرويد على الهاتف والفيديو على شاشة متصلة. افصل تفضيل نسخ الشاشة عن وصول المزود وحدود الخطة.",
+      "seo_title": "الشاشة الثانوية في Trex IPTV: افهم تفضيل نسخ الشاشة في VLC",
+      "seo_description": "تحقق من ظهور أدوات VLC لأندرويد على الهاتف والفيديو على شاشة متصلة. افصل تفضيل نسخ الشاشة عن وصول المزود وحدود الخطة.",
+      "sections": [
+        {
+          "heading": "صف ما يظهر على كل شاشة",
+          "paragraphs": [
+            "ابدأ فحص الشاشة الثانوية في Trex IPTV بإصدار VLC لأندرويد الفعلي والاتصال الموجود. دوّن هل تعرض الشاشة الخارجية الفيديو بينما يعرض الهاتف أدوات التشغيل، أم تظهر صورة على الشاشتين. سجّل طريقة الاتصال وما إذا كانت أزرار التشغيل المعتادة تستجيب. عمل الهاتف كجهاز تحكم لا يثبت وحده وجود عطل لدى المزود أو غياب مسار الفيديو."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ تفضيل الشاشة الثانوية",
+          "paragraphs": [
+            "يشرح دليل إعدادات الفيديو من VideoLAN تفضيل نسخ الشاشة ضمن قسم الشاشة الثانوية. عند توصيل شاشة عبر HDMI أو Chromecast أو طريقة أخرى، يمكن استخدام VLC لأندرويد كجهاز تحكم لتشغيل الفيديو عليها. أما التفضيل الموثق فيختار نسخ الشاشة بدلاً من ذلك. إنه خيار للواجهة، وليس وعداً بأن كل هاتف أو مستقبل أو كابل أو برنامج يدعم جميع طرق الإخراج. اقرأ الإعداد الحالي أولاً."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "قارن خياراً واحداً دون مسح الوصول",
+          "paragraphs": [
+            "إذا أراد المالك المقارنة وكان الإصدار المثبت يوفر الخيار، فاستخدم مقطعاً مسموحاً وغيّر هذا الإعداد فقط. دوّن سلوك الشاشتين وأعد الاختيار السابق إن لم يفد التغيير. يسمح Trex IPTV 8K باتصال متزامن واحد؛ أبق جلسة تشغيل واحدة نشطة. نسخ الشاشة لا يوسّع حد الخطة. أبلغ عن الإصدارات والأجهزة والنتيجة دون بيانات الدخول. لا تمسح بيانات المشغل، ولا تعِد تثبيت التطبيق، ولا تشتر خطة أخرى لهذا الفحص."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Trex IPTV का दूसरा डिस्प्ले: VLC की स्क्रीन क्लोन प्राथमिकता समझें",
+      "excerpt": "जाँचें कि Android के VLC में फोन पर नियंत्रण और जुड़ी स्क्रीन पर वीडियो क्यों है। स्क्रीन क्लोन की प्राथमिकता, प्रदाता की पहुँच और प्लान की सीमा अलग रखें।",
+      "seo_title": "Trex IPTV का दूसरा डिस्प्ले: VLC की स्क्रीन क्लोन प्राथमिकता समझें",
+      "seo_description": "जाँचें कि Android के VLC में फोन पर नियंत्रण और जुड़ी स्क्रीन पर वीडियो क्यों है। स्क्रीन क्लोन की प्राथमिकता, प्रदाता की पहुँच और प्लान की सीमा अलग रखें।",
+      "sections": [
+        {
+          "heading": "बताएँ कि हर स्क्रीन पर क्या दिखता है",
+          "paragraphs": [
+            "Trex IPTV के दूसरे डिस्प्ले की जाँच वास्तविक VLC for Android संस्करण और मौजूदा कनेक्शन से शुरू करें। लिखें कि बाहरी स्क्रीन पर वीडियो और फोन पर प्लेबैक नियंत्रण हैं, या दोनों पर तस्वीर है। कनेक्शन का तरीका और सामान्य प्लेबैक बटनों की प्रतिक्रिया दर्ज करें। केवल फोन का रिमोट नियंत्रण की तरह काम करना प्रदाता की खराबी या वीडियो ट्रैक गायब होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दूसरे डिस्प्ले की प्राथमिकता पढ़ें",
+          "paragraphs": [
+            "VideoLAN की वीडियो सेटिंग गाइड दूसरे डिस्प्ले में स्क्रीन क्लोन को प्राथमिकता देने का विकल्प बताती है। HDMI, Chromecast या किसी अन्य तरीके से स्क्रीन जुड़ी हो, तो Android का VLC उस पर वीडियो चलाने का रिमोट बन सकता है। दस्तावेज़ वाला विकल्प इसके बजाय स्क्रीन क्लोन चुनता है। यह इंटरफ़ेस का चुनाव है, हर फोन, रिसीवर, केबल या कार्यक्रम में हर आउटपुट चलने का वादा नहीं। पहले मौजूदा सेटिंग पढ़ें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "VideoLAN",
+              "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+            }
+          ]
+        },
+        {
+          "heading": "पहुँच मिटाए बिना एक प्राथमिकता की तुलना करें",
+          "paragraphs": [
+            "मालिक तुलना चाहे और स्थापित संस्करण में विकल्प हो, तो एक अनुमति वाला वीडियो इस्तेमाल करें और केवल यही प्राथमिकता बदलें। दोनों स्क्रीन का व्यवहार लिखें और लाभ न हो तो पुराना विकल्प वापस करें। Trex IPTV 8K एक समय में एक कनेक्शन की अनुमति देता है; एक ही प्लेबैक सत्र सक्रिय रखें। स्क्रीन क्लोन से प्लान की सीमा नहीं बढ़ती। संस्करण, उपकरण और परिणाम बताएँ, लॉगिन जानकारी नहीं। इस जाँच के लिए न प्लेयर का डेटा मिटाएँ, न ऐप दोबारा स्थापित करें और न दूसरा प्लान खरीदें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "VideoLAN",
+      "url": "https://docs.videolan.me/vlc-user/android/3.X/en/more/settings/extra_video.html"
+    }
+  ]
+}

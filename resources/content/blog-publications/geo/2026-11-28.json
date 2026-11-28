@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "geo",
+  "publishing_date": "2026-11-28",
+  "topic": "Identify Apple TV 4K Conference Room Display instructions separately from a Geo IPTV player fault, preserving shared-screen privacy and household access controls.",
+  "primary_keyword": "Geo IPTV conference display",
+  "slug": "geo-apple-tv-conference-display-airplay-instructions-and-preview",
+  "translations": {
+    "en": {
+      "title": "Geo IPTV conference display check: recognise Apple TV’s AirPlay screen",
+      "excerpt": "Recognise Apple TV 4K Conference Room Display before treating AirPlay instructions as a player fault. Protect visible network details and household access controls.",
+      "seo_title": "Geo IPTV conference display check: recognise Apple TV’s AirPlay screen",
+      "seo_description": "Recognise Apple TV 4K Conference Room Display before treating AirPlay instructions as a player fault. Protect visible network details and household access controls.",
+      "sections": [
+        {
+          "heading": "Record which screen is showing",
+          "paragraphs": [
+            "A Geo IPTV conference display check begins with what the television actually shows. If it presents AirPlay connection instructions and wireless-network details instead of the expected player, record that description and the Apple TV model. Do not send an unredacted screen photo: network information or a displayed PIN may be visible. That screen alone does not establish a provider outage or an expired viewing plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Read the documented display mode",
+          "paragraphs": [
+            "Apple’s tvOS 26 guide documents Conference Room Display on Apple TV 4K under Settings, AirPlay and Apple Home. With the owner’s permission, read its existing state rather than turning it on as a test. The feature is intended for AirPlay screen sharing. Its Preview can be exited with the remote’s Back or Menu button. Labels and availability can vary by software, hardware and region."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV Conference Room Display guide",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Leave household protection intact",
+          "paragraphs": [
+            "If the screen is only a preview, use the documented preview exit and reopen the existing player normally. A locked Conference Room Display can require the household Restrictions passcode; let the authorised owner handle it privately. Do not weaken Require PIN Every Time, bypass a lock or reset the device to reach the player. Compare the player’s actual access message separately from this display mode, preserving saved setup and the current order."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Pantalla de conferencias y Geo IPTV: reconoce las instrucciones de AirPlay",
+      "excerpt": "Reconoce el modo de sala de conferencias del Apple TV 4K antes de atribuir las instrucciones de AirPlay al reproductor. Protege la red y los controles del hogar.",
+      "seo_title": "Pantalla de conferencias y Geo IPTV: reconoce las instrucciones de AirPlay",
+      "seo_description": "Reconoce el modo de sala de conferencias del Apple TV 4K antes de atribuir las instrucciones de AirPlay al reproductor. Protege la red y los controles del hogar.",
+      "sections": [
+        {
+          "heading": "Identifica la pantalla que aparece",
+          "paragraphs": [
+            "La revisión de la pantalla de conferencias con Geo IPTV empieza por lo que muestra el televisor. Si aparecen instrucciones de conexión AirPlay y datos de la red inalámbrica en vez del reproductor esperado, anota esa descripción y el modelo de Apple TV. No envíes una foto sin ocultar los datos: pueden verse información de red o un PIN. Esa pantalla por sí sola no demuestra una caída del proveedor ni el vencimiento del plan."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulta el modo documentado",
+          "paragraphs": [
+            "La guía de Apple para tvOS 26 sitúa Pantalla de sala de conferencias en Ajustes, AirPlay y Casa de Apple, en Apple TV 4K. Con permiso del propietario, revisa el estado actual sin activarlo como prueba. La función sirve para compartir la pantalla mediante AirPlay. Para salir de su vista previa se usa el botón Atrás o Menú del mando. Los nombres y la disponibilidad pueden variar según software, equipo y región."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía de Apple TV sobre la pantalla de conferencias",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Conserva la protección del hogar",
+          "paragraphs": [
+            "Si solo es una vista previa, sal de ella como indica la guía y abre normalmente el reproductor existente. Un modo de conferencias bloqueado puede exigir el código de Restricciones del hogar; debe introducirlo el propietario autorizado en privado. No debilites la opción de solicitar siempre un PIN, no eludas bloqueos ni restablezcas el dispositivo para llegar al reproductor. Comprueba por separado el mensaje real de acceso y conserva la configuración y el pedido actuales."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Geo IPTV : reconnaître l’écran de conférence AirPlay de l’Apple TV",
+      "excerpt": "Reconnaissez le mode de conférence de l’Apple TV 4K avant d’attribuer les consignes AirPlay au lecteur. Protégez les données réseau et les contrôles du foyer.",
+      "seo_title": "Geo IPTV : reconnaître l’écran de conférence AirPlay de l’Apple TV",
+      "seo_description": "Reconnaissez le mode de conférence de l’Apple TV 4K avant d’attribuer les consignes AirPlay au lecteur. Protégez les données réseau et les contrôles du foyer.",
+      "sections": [
+        {
+          "heading": "Identifier l’écran affiché",
+          "paragraphs": [
+            "La vérification de l’écran de conférence avec Geo IPTV commence par ce que montre le téléviseur. Si des consignes de connexion AirPlay et des informations sur le réseau sans fil remplacent le lecteur attendu, notez cette description et le modèle d’Apple TV. N’envoyez pas de photo non masquée : des données réseau ou un code PIN peuvent apparaître. Cet écran seul ne prouve ni une panne du fournisseur ni l’expiration du forfait."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Consulter le mode documenté",
+          "paragraphs": [
+            "Le guide Apple pour tvOS 26 décrit l’affichage de salle de conférence sur Apple TV 4K dans Réglages, AirPlay et Maison d’Apple. Avec l’accord du propriétaire, lisez l’état existant sans activer la fonction pour essayer. Elle sert au partage d’écran par AirPlay. Son aperçu se ferme avec le bouton Retour ou Menu de la télécommande. Les intitulés et la disponibilité varient selon le logiciel, le matériel et la région."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide Apple TV de l’affichage de salle de conférence",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Conserver la protection du foyer",
+          "paragraphs": [
+            "S’il s’agit seulement d’un aperçu, quittez-le comme indiqué puis ouvrez normalement le lecteur existant. Un affichage de conférence verrouillé peut demander le code des Restrictions du foyer ; laissez le propriétaire autorisé le saisir en privé. Ne réduisez pas la protection demandant un PIN à chaque fois, ne contournez aucun verrou et ne réinitialisez pas l’appareil pour atteindre le lecteur. Vérifiez séparément son message réel d’accès en conservant la configuration et la commande actuelles."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Geo IPTV: riconosci la schermata AirPlay per sale conferenze di Apple TV",
+      "excerpt": "Riconosci la modalità sala conferenze di Apple TV 4K prima di attribuire le istruzioni AirPlay al lettore. Proteggi i dati di rete e i controlli domestici.",
+      "seo_title": "Geo IPTV: riconosci la schermata AirPlay per sale conferenze di Apple TV",
+      "seo_description": "Riconosci la modalità sala conferenze di Apple TV 4K prima di attribuire le istruzioni AirPlay al lettore. Proteggi i dati di rete e i controlli domestici.",
+      "sections": [
+        {
+          "heading": "Identifica la schermata visualizzata",
+          "paragraphs": [
+            "La verifica della schermata per conferenze con Geo IPTV parte da ciò che mostra il televisore. Se compaiono istruzioni di connessione AirPlay e dettagli della rete wireless invece del lettore previsto, annota questa descrizione e il modello di Apple TV. Non inviare una foto senza oscuramenti: potrebbero essere visibili dati di rete o un PIN. Quella schermata, da sola, non dimostra un guasto del fornitore o la scadenza del piano."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leggi la modalità documentata",
+          "paragraphs": [
+            "La guida Apple per tvOS 26 descrive Schermo sala conferenze su Apple TV 4K in Impostazioni, AirPlay e Casa di Apple. Con il consenso del proprietario, leggi lo stato attuale senza attivarlo per prova. La funzione serve a condividere lo schermo tramite AirPlay. Per uscire dalla sua anteprima si usa il tasto Indietro o Menu del telecomando. Nomi e disponibilità possono variare in base a software, dispositivo e area geografica."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida Apple TV allo schermo sala conferenze",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Mantieni le protezioni domestiche",
+          "paragraphs": [
+            "Se si tratta solo di un’anteprima, esci come documentato e apri normalmente il lettore esistente. La modalità conferenze bloccata può richiedere il codice delle Restrizioni domestiche: lascia che il proprietario autorizzato lo inserisca in privato. Non indebolire la richiesta del PIN ogni volta, non aggirare blocchi e non ripristinare il dispositivo per raggiungere il lettore. Controlla separatamente il suo vero messaggio di accesso, conservando configurazione e ordine attuali."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Geo IPTV: herken het AirPlay-scherm voor vergaderruimten op Apple TV",
+      "excerpt": "Herken de vergaderruimtemodus van Apple TV 4K voordat je AirPlay-instructies als spelerfout ziet. Bescherm netwerkgegevens en de beveiliging van het huishouden.",
+      "seo_title": "Geo IPTV: herken het AirPlay-scherm voor vergaderruimten op Apple TV",
+      "seo_description": "Herken de vergaderruimtemodus van Apple TV 4K voordat je AirPlay-instructies als spelerfout ziet. Bescherm netwerkgegevens en de beveiliging van het huishouden.",
+      "sections": [
+        {
+          "heading": "Stel vast welk scherm verschijnt",
+          "paragraphs": [
+            "Een controle van het vergaderscherm bij Geo IPTV begint met wat de televisie werkelijk toont. Verschijnen AirPlay-verbindingsinstructies en gegevens van het draadloze netwerk in plaats van de verwachte speler, noteer dan die beschrijving en het Apple TV-model. Stuur geen onbewerkte schermfoto: netwerkgegevens of een pincode kunnen zichtbaar zijn. Dit scherm alleen bewijst geen storing bij de aanbieder of verlopen abonnement."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Lees de beschreven weergavemodus",
+          "paragraphs": [
+            "Apples handleiding voor tvOS 26 beschrijft Vergaderruimteweergave op Apple TV 4K onder Instellingen, AirPlay en Apple Woning. Lees met toestemming van de eigenaar de bestaande stand zonder deze als proef in te schakelen. De functie is bedoeld voor schermdelen via AirPlay. Het voorbeeld sluit je met de Terug- of Menu-knop op de afstandsbediening. Namen en beschikbaarheid kunnen per software, apparaat en regio verschillen."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV-handleiding voor vergaderruimteweergave",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Behoud de beveiliging van het huishouden",
+          "paragraphs": [
+            "Is het alleen een voorbeeld, sluit dat dan zoals beschreven en open de bestaande speler normaal. Een vergrendelde vergaderruimteweergave kan de toegangscode voor Beperkingen vragen; laat de bevoegde eigenaar die privé invoeren. Verzwak de instelling voor telkens een pincode niet, omzeil geen vergrendeling en stel het apparaat niet opnieuw in om de speler te bereiken. Controleer de echte toegangsmelding van de speler afzonderlijk en behoud de opgeslagen instellingen en huidige bestelling."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Geo IPTV: reconheça o ecrã AirPlay de sala de conferências na Apple TV",
+      "excerpt": "Reconheça o modo de sala de conferências da Apple TV 4K antes de atribuir as instruções AirPlay ao leitor. Proteja os dados de rede e os controlos da casa.",
+      "seo_title": "Geo IPTV: reconheça o ecrã AirPlay de sala de conferências na Apple TV",
+      "seo_description": "Reconheça o modo de sala de conferências da Apple TV 4K antes de atribuir as instruções AirPlay ao leitor. Proteja os dados de rede e os controlos da casa.",
+      "sections": [
+        {
+          "heading": "Identifique o ecrã apresentado",
+          "paragraphs": [
+            "Uma verificação do ecrã de conferências com Geo IPTV começa pelo que a televisão mostra. Se surgirem instruções de ligação AirPlay e detalhes da rede sem fios em vez do leitor esperado, anote essa descrição e o modelo de Apple TV. Não envie uma fotografia sem ocultar dados: podem estar visíveis informações de rede ou um PIN. Esse ecrã, por si só, não demonstra uma falha do fornecedor nem a expiração do plano."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Leia o modo documentado",
+          "paragraphs": [
+            "O guia da Apple para tvOS 26 descreve a apresentação de sala de conferências na Apple TV 4K em Definições, AirPlay e Casa Apple. Com autorização do proprietário, leia o estado atual sem ativar a função como teste. Destina-se à partilha de ecrã por AirPlay. Pode sair da pré-visualização com o botão Voltar ou Menu do comando. Os nomes e a disponibilidade variam conforme o software, o equipamento e a região."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia da Apple TV para apresentação de sala de conferências",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Mantenha a proteção da casa",
+          "paragraphs": [
+            "Se for apenas uma pré-visualização, saia conforme documentado e abra normalmente o leitor existente. Um modo de conferências bloqueado pode exigir o código das Restrições da casa; deixe o proprietário autorizado introduzi-lo em privado. Não enfraqueça a exigência de PIN em cada utilização, não contorne bloqueios nem reponha o dispositivo para chegar ao leitor. Confira separadamente a mensagem real de acesso, mantendo a configuração guardada e a encomenda atual."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Geo IPTV: распознайте экран AirPlay для конференц-зала на Apple TV",
+      "excerpt": "Распознайте режим конференц-зала Apple TV 4K, прежде чем считать инструкции AirPlay ошибкой плеера. Защитите сведения о сети и домашние ограничения.",
+      "seo_title": "Geo IPTV: распознайте экран AirPlay для конференц-зала на Apple TV",
+      "seo_description": "Распознайте режим конференц-зала Apple TV 4K, прежде чем считать инструкции AirPlay ошибкой плеера. Защитите сведения о сети и домашние ограничения.",
+      "sections": [
+        {
+          "heading": "Определите, какой экран открыт",
+          "paragraphs": [
+            "Проверка экрана конференц-зала при использовании Geo IPTV начинается с изображения на телевизоре. Если вместо ожидаемого плеера видны инструкции подключения AirPlay и сведения о беспроводной сети, запишите это описание и модель Apple TV. Не отправляйте снимок без скрытия данных: на нём могут быть сведения о сети или PIN-код. Один такой экран не доказывает сбой провайдера или окончание срока тарифа."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Прочитайте описание режима",
+          "paragraphs": [
+            "В руководстве Apple для tvOS 26 режим конференц-зала на Apple TV 4K находится в Настройках, разделе AirPlay и Дом Apple. С разрешения владельца посмотрите текущее состояние, не включая режим ради проверки. Он предназначен для показа экрана через AirPlay. Предпросмотр закрывается кнопкой «Назад» или Menu на пульте. Названия и доступность зависят от программы, оборудования и региона."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Руководство Apple TV по режиму конференц-зала",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "Сохраните домашнюю защиту",
+          "paragraphs": [
+            "Если открыт только предпросмотр, выйдите из него описанным способом и обычно откройте установленный плеер. Заблокированный режим конференц-зала может потребовать домашний код Ограничений; пусть уполномоченный владелец введёт его конфиденциально. Не ослабляйте запрос PIN-кода при каждом подключении, не обходите блокировку и не сбрасывайте устройство ради доступа к плееру. Отдельно проверьте его настоящее сообщение о доступе, сохранив настройки и текущий заказ."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Geo IPTV: Apple TV کی کانفرنس ڈسپلے والی AirPlay اسکرین پہچانیں",
+      "excerpt": "Apple TV 4K کی کانفرنس ڈسپلے حالت پہچانیں؛ AirPlay کی ہدایات کو فوراً پلیئر کی خرابی نہ سمجھیں۔ نیٹ ورک کی معلومات اور گھر کا تحفظ برقرار رکھیں۔",
+      "seo_title": "Geo IPTV: Apple TV کی کانفرنس ڈسپلے والی AirPlay اسکرین پہچانیں",
+      "seo_description": "Apple TV 4K کی کانفرنس ڈسپلے حالت پہچانیں؛ AirPlay کی ہدایات کو فوراً پلیئر کی خرابی نہ سمجھیں۔ نیٹ ورک کی معلومات اور گھر کا تحفظ برقرار رکھیں۔",
+      "sections": [
+        {
+          "heading": "پہچانیں کہ کون سی اسکرین کھلی ہے",
+          "paragraphs": [
+            "Geo IPTV کے کانفرنس ڈسپلے کی جانچ اس بات سے شروع ہوتی ہے کہ ٹیلی وژن پر اصل میں کیا نظر آ رہا ہے۔ متوقع پلیئر کے بجائے AirPlay سے جڑنے کی ہدایات اور وائرلیس نیٹ ورک کی تفصیل ہو تو یہ وضاحت اور Apple TV کا ماڈل لکھیں۔ معلومات چھپائے بغیر اسکرین کی تصویر نہ بھیجیں؛ نیٹ ورک کی معلومات یا پن دکھائی دے سکتا ہے۔ صرف یہ اسکرین فراہم کنندہ کی بندش یا پلان کی میعاد ختم ہونے کا ثبوت نہیں۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "دستاویزی ڈسپلے حالت پڑھیں",
+          "paragraphs": [
+            "Apple کی tvOS 26 گائیڈ میں Apple TV 4K کا کانفرنس روم ڈسپلے، ترتیبات، پھر AirPlay اور Apple Home میں ہے۔ مالک کی اجازت سے موجودہ حالت دیکھیں؛ جانچ کے لیے اسے خود آن نہ کریں۔ یہ خصوصیت AirPlay کے ذریعے اسکرین بانٹنے کے لیے ہے۔ اس کا پیش منظر ریموٹ کے واپس یا مینو بٹن سے بند ہوتا ہے۔ نام اور دستیابی سافٹ ویئر، آلے اور علاقے کے مطابق بدل سکتے ہیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV کی کانفرنس ڈسپلے رہنمائی",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "گھر کا تحفظ برقرار رکھیں",
+          "paragraphs": [
+            "اگر صرف پیش منظر کھلا ہو تو دستاویزی طریقے سے اس سے نکلیں اور پہلے سے موجود پلیئر عام طریقے سے کھولیں۔ بند کانفرنس ڈسپلے میں گھر کی پابندیوں کا پاس کوڈ درکار ہو سکتا ہے؛ مجاز مالک کو اسے نجی طور پر درج کرنے دیں۔ نہ ہر بار پن مانگنے کا تحفظ کمزور کریں، نہ لاک کو نظرانداز کریں، اور نہ پلیئر تک پہنچنے کے لیے آلہ ری سیٹ کریں۔ محفوظ ترتیب اور موجودہ آرڈر برقرار رکھتے ہوئے پلیئر کے اصل رسائی پیغام کو الگ جانچیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "Geo IPTV: تعرّف إلى شاشة AirPlay لقاعات المؤتمرات على Apple TV",
+      "excerpt": "تعرّف إلى وضع قاعة المؤتمرات في Apple TV 4K قبل اعتبار إرشادات AirPlay عطلًا في المشغّل. احمِ تفاصيل الشبكة وضوابط الوصول المنزلية.",
+      "seo_title": "Geo IPTV: تعرّف إلى شاشة AirPlay لقاعات المؤتمرات على Apple TV",
+      "seo_description": "تعرّف إلى وضع قاعة المؤتمرات في Apple TV 4K قبل اعتبار إرشادات AirPlay عطلًا في المشغّل. احمِ تفاصيل الشبكة وضوابط الوصول المنزلية.",
+      "sections": [
+        {
+          "heading": "حدّد الشاشة المعروضة",
+          "paragraphs": [
+            "يبدأ فحص شاشة المؤتمرات مع Geo IPTV بما يعرضه التلفاز فعلًا. إذا ظهرت إرشادات اتصال AirPlay وتفاصيل الشبكة اللاسلكية بدل المشغّل المتوقع، فسجّل هذا الوصف وطراز Apple TV. لا ترسل صورة للشاشة دون حجب البيانات؛ فقد تظهر معلومات الشبكة أو رمز PIN. هذه الشاشة وحدها لا تثبت تعطل المزوّد أو انتهاء خطة المشاهدة."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "اقرأ وضع العرض الموثّق",
+          "paragraphs": [
+            "يوضّح دليل Apple لنظام tvOS 26 وضع شاشة قاعة المؤتمرات على Apple TV 4K ضمن الإعدادات، ثم AirPlay ومنزل Apple. بإذن المالك، اقرأ الحالة الحالية بدل تشغيله لمجرد التجربة. الغرض منه مشاركة الشاشة عبر AirPlay. يمكن إنهاء المعاينة بزر الرجوع أو القائمة في جهاز التحكم. قد تختلف الأسماء والتوافر بحسب البرنامج والجهاز والمنطقة."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "دليل Apple TV لشاشة قاعة المؤتمرات",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "حافظ على الحماية المنزلية",
+          "paragraphs": [
+            "إذا كانت الشاشة مجرد معاينة، فاخرج منها بالطريقة الموثّقة وافتح المشغّل الموجود كالمعتاد. قد يتطلب وضع المؤتمرات المقفل رمز قيود المنزل؛ دع المالك المخوّل يدخله على نحو خاص. لا تضعف طلب رمز PIN في كل مرة، ولا تتجاوز قفلًا، ولا تعِد ضبط الجهاز للوصول إلى المشغّل. افحص رسالة الوصول الفعلية في المشغّل بشكل منفصل، مع إبقاء الإعدادات المحفوظة والطلب الحالي."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Geo IPTV: Apple TV की कॉन्फ़्रेंस डिस्प्ले वाली AirPlay स्क्रीन पहचानें",
+      "excerpt": "Apple TV 4K का कॉन्फ़्रेंस डिस्प्ले पहचानें; AirPlay के निर्देशों को तुरंत प्लेयर की खराबी न समझें। नेटवर्क विवरण और घर की सुरक्षा बनाए रखें।",
+      "seo_title": "Geo IPTV: Apple TV की कॉन्फ़्रेंस डिस्प्ले वाली AirPlay स्क्रीन पहचानें",
+      "seo_description": "Apple TV 4K का कॉन्फ़्रेंस डिस्प्ले पहचानें; AirPlay के निर्देशों को तुरंत प्लेयर की खराबी न समझें। नेटवर्क विवरण और घर की सुरक्षा बनाए रखें।",
+      "sections": [
+        {
+          "heading": "पहचानें कि कौन सी स्क्रीन खुली है",
+          "paragraphs": [
+            "Geo IPTV की कॉन्फ़्रेंस डिस्प्ले जाँच इस बात से शुरू होती है कि टेलीविज़न पर वास्तव में क्या दिख रहा है। अपेक्षित प्लेयर के बजाय AirPlay से जुड़ने के निर्देश और वायरलेस नेटवर्क विवरण हों, तो यह विवरण और Apple TV मॉडल लिखें। जानकारी छिपाए बिना स्क्रीन की तस्वीर न भेजें; उसमें नेटवर्क जानकारी या पिन दिख सकता है। सिर्फ यह स्क्रीन प्रदाता की बंदी या प्लान समाप्त होने का प्रमाण नहीं है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "दस्तावेज़ वाला डिस्प्ले मोड पढ़ें",
+          "paragraphs": [
+            "Apple की tvOS 26 गाइड में Apple TV 4K का कॉन्फ़्रेंस रूम डिस्प्ले, सेटिंग, फिर AirPlay और Apple Home में है। मालिक की अनुमति से मौजूदा स्थिति देखें; जाँच के लिए उसे चालू न करें। यह सुविधा AirPlay से स्क्रीन साझा करने के लिए है। इसका पूर्वावलोकन रिमोट के वापस या मेन्यू बटन से बंद होता है। नाम और उपलब्धता सॉफ़्टवेयर, डिवाइस और क्षेत्र के अनुसार बदल सकते हैं।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Apple TV कॉन्फ़्रेंस डिस्प्ले गाइड",
+              "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+            }
+          ]
+        },
+        {
+          "heading": "घर की सुरक्षा बनाए रखें",
+          "paragraphs": [
+            "यदि केवल पूर्वावलोकन खुला है, तो बताए तरीके से उससे निकलें और पहले से मौजूद प्लेयर सामान्य रूप से खोलें। बंद कॉन्फ़्रेंस डिस्प्ले के लिए घर के प्रतिबंधों का पासकोड चाहिए हो सकता है; अधिकृत मालिक को उसे निजी तौर पर दर्ज करने दें। न हर बार पिन माँगने की सुरक्षा कमज़ोर करें, न लॉक को दरकिनार करें और न प्लेयर तक पहुँचने के लिए डिवाइस रीसेट करें। सहेजी सेटिंग और मौजूदा ऑर्डर बनाए रखते हुए प्लेयर का वास्तविक पहुँच संदेश अलग जाँचें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Apple TV Conference Room Display guide",
+      "url": "https://support.apple.com/en-ca/guide/tv/atvbf5c9acea/26/tvos/26"
+    }
+  ]
+}

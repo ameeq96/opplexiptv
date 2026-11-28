@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "site_key": "getiptv",
+  "publishing_date": "2026-11-28",
+  "topic": "Review Google TV feedback recipients and optional diagnostic attachments separately from Get IPTV provider support, Opplex or Filex orders and private account information.",
+  "primary_keyword": "Get IPTV feedback report",
+  "slug": "getiptv-google-tv-feedback-and-optional-diagnostic-attachments",
+  "translations": {
+    "en": {
+      "title": "Get IPTV feedback report: review the recipient and optional attachments",
+      "excerpt": "Read Google TV’s feedback and diagnostic-sharing choices before sending a device report. Keep personal information, provider support and the recorded Get IPTV order state separate.",
+      "seo_title": "Get IPTV feedback report: review the recipient and optional attachments",
+      "seo_description": "Read Google TV’s feedback and diagnostic-sharing choices before sending a device report. Keep personal information, provider support and the recorded Get IPTV order state separate.",
+      "sections": [
+        {
+          "heading": "Choose the right recipient",
+          "paragraphs": [
+            "A Get IPTV feedback report starts with the affected screen and the organisation that can investigate it. Note whether the issue concerns Google TV system menus, one installed player or a provider order. Record the device model, software version and a short description without private playback addresses or credentials. Google TV device feedback is different from asking the player developer or the actual service seller about an account."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Review diagnostic attachments before sending",
+          "paragraphs": [
+            "Google’s TV feedback guide describes optional system logs, screenshots and a bug report. It warns that including these shares personal information about the device or app with Google. Read the displayed choices and inspect visible attachments before the owner decides what to include. On a Google TV device offering the documented controls, the guide uses the Assistant or microphone button and the spoken request to send feedback. If that route is absent, record the model rather than installing an unofficial reporting tool."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV feedback guidance",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Keep feedback and plan confirmation separate",
+          "paragraphs": [
+            "Google states that its feedback process does not provide an individual response. Do not treat submission as a resolved provider complaint or confirmed activation. Check the actual Opplex or Filex provider, selected duration and recorded order/setup state separately. Player licence costs are distinct, and unstated Filex connection allowances need confirmation. Do not repeat payment, erase player data or send repeated reports merely to seek an acknowledgement."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "es": {
+      "title": "Informe para Get IPTV: revisa el destinatario y los adjuntos opcionales",
+      "excerpt": "Lee las opciones de comentarios y diagnóstico de Google TV antes de enviar un informe del dispositivo. Separa datos personales, asistencia del proveedor y estado registrado del pedido.",
+      "seo_title": "Informe para Get IPTV: revisa el destinatario y los adjuntos opcionales",
+      "seo_description": "Lee las opciones de comentarios y diagnóstico de Google TV antes de enviar un informe del dispositivo. Separa datos personales, asistencia del proveedor y estado registrado del pedido.",
+      "sections": [
+        {
+          "heading": "Elige el destinatario adecuado",
+          "paragraphs": [
+            "Un informe relacionado con Get IPTV empieza por la pantalla afectada y la organización que puede investigarla. Anota si el problema afecta a los menús de Google TV, a un reproductor instalado o a un pedido del proveedor. Registra el modelo, la versión y una descripción breve sin direcciones privadas de reproducción ni credenciales. Los comentarios sobre el dispositivo Google TV son distintos de consultar al desarrollador o al vendedor real del servicio sobre una cuenta."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Revisa los adjuntos antes de enviarlos",
+          "paragraphs": [
+            "La guía de comentarios de Google TV describe registros del sistema, capturas y un informe de errores opcionales. Advierte que incluirlos comparte información personal del dispositivo o la aplicación con Google. Lee las opciones e inspecciona los adjuntos visibles antes de que el propietario decida qué incluir. En un dispositivo Google TV que ofrezca los controles documentados, la guía utiliza el botón del Asistente o micrófono y la petición hablada de enviar comentarios. Si falta esa vía, anota el modelo en vez de instalar herramientas no oficiales."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guía de comentarios de Google TV",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa los comentarios de la confirmación del plan",
+          "paragraphs": [
+            "Google indica que su proceso de comentarios no proporciona una respuesta individual. No consideres el envío una reclamación resuelta del proveedor ni una activación confirmada. Comprueba aparte el proveedor real Opplex o Filex, la duración y el estado registrado del pedido y la configuración. Los costes de la licencia del reproductor son distintos; los límites de conexiones Filex no indicados requieren confirmación. No repitas pagos, no borres datos del reproductor ni envíes informes repetidos solo para buscar acuse de recibo."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "fr": {
+      "title": "Rapport Get IPTV : vérifier le destinataire et les pièces jointes facultatives",
+      "excerpt": "Lisez les choix de commentaires et de diagnostic Google TV avant un rapport sur l’appareil. Distinguez données personnelles, assistance du fournisseur et état enregistré de la commande.",
+      "seo_title": "Rapport Get IPTV : vérifier le destinataire et les pièces jointes facultatives",
+      "seo_description": "Lisez les choix de commentaires et de diagnostic Google TV avant un rapport sur l’appareil. Distinguez données personnelles, assistance du fournisseur et état enregistré de la commande.",
+      "sections": [
+        {
+          "heading": "Choisir le bon destinataire",
+          "paragraphs": [
+            "Un rapport concernant Get IPTV commence par l’écran touché et l’organisme capable de l’examiner. Notez si le problème concerne les menus Google TV, un lecteur installé ou une commande fournisseur. Indiquez le modèle, la version et une courte description sans adresse privée de lecture ni identifiants. Les commentaires sur l’appareil Google TV diffèrent d’une demande au développeur du lecteur ou au véritable vendeur du service concernant un compte."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Examiner les pièces jointes avant l’envoi",
+          "paragraphs": [
+            "Le guide Google TV décrit des journaux système, captures d’écran et un rapport de bug facultatifs. Il avertit que leur inclusion transmet à Google des informations personnelles sur l’appareil ou l’application. Lisez les choix et examinez les pièces visibles avant que le propriétaire décide quoi inclure. Sur un appareil Google TV proposant les commandes documentées, le guide utilise le bouton Assistant ou microphone et une demande vocale d’envoi de commentaires. Si cette méthode manque, notez le modèle au lieu d’installer un outil non officiel."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guide des commentaires Google TV",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Séparer commentaires et confirmation de l’offre",
+          "paragraphs": [
+            "Google précise que son processus de commentaires ne fournit pas de réponse individuelle. Ne considérez pas l’envoi comme une réclamation fournisseur résolue ou une activation confirmée. Vérifiez séparément le fournisseur réel Opplex ou Filex, la durée et l’état enregistré de commande et de configuration. Les frais de licence du lecteur sont distincts ; les limites de connexions Filex non précisées nécessitent confirmation. Ne payez pas à nouveau, n’effacez pas les données du lecteur et ne renvoyez pas plusieurs rapports pour obtenir un accusé de réception."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "it": {
+      "title": "Segnalazione Get IPTV: verifica destinatario e allegati facoltativi",
+      "excerpt": "Leggi le opzioni di feedback e diagnostica di Google TV prima di inviare una segnalazione. Distingui dati personali, assistenza del fornitore e stato registrato dell’ordine.",
+      "seo_title": "Segnalazione Get IPTV: verifica destinatario e allegati facoltativi",
+      "seo_description": "Leggi le opzioni di feedback e diagnostica di Google TV prima di inviare una segnalazione. Distingui dati personali, assistenza del fornitore e stato registrato dell’ordine.",
+      "sections": [
+        {
+          "heading": "Scegli il destinatario corretto",
+          "paragraphs": [
+            "Una segnalazione relativa a Get IPTV parte dalla schermata interessata e dall’organizzazione che può esaminarla. Annota se il problema riguarda i menu Google TV, un lettore installato o un ordine del fornitore. Registra modello, versione e breve descrizione senza indirizzi privati di riproduzione o credenziali. Il feedback sul dispositivo Google TV è diverso da una richiesta sul conto allo sviluppatore del lettore o al vero venditore del servizio."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Esamina gli allegati prima dell’invio",
+          "paragraphs": [
+            "La guida di Google TV descrive registri di sistema, schermate e rapporto di errore facoltativi. Avverte che includerli condivide con Google informazioni personali sul dispositivo o sull’app. Leggi le opzioni ed esamina gli allegati visibili prima che il proprietario decida cosa includere. Su un dispositivo Google TV con i comandi documentati, la guida usa il pulsante Assistente o microfono e una richiesta vocale di invio del feedback. Se il percorso manca, annota il modello invece di installare strumenti non ufficiali."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guida al feedback di Google TV",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separa feedback e conferma del piano",
+          "paragraphs": [
+            "Google dichiara che il processo di feedback non offre una risposta individuale. Non considerare l’invio un reclamo al fornitore risolto o un’attivazione confermata. Controlla separatamente il vero fornitore Opplex o Filex, la durata e lo stato registrato di ordine e configurazione. I costi della licenza del lettore sono distinti; i limiti di connessione Filex non dichiarati richiedono conferma. Non ripetere pagamenti, non cancellare dati del lettore e non inviare segnalazioni ripetute solo per ricevere una conferma."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "nl": {
+      "title": "Get IPTV-feedbackrapport: controleer ontvanger en optionele bijlagen",
+      "excerpt": "Lees de feedback- en diagnosekeuzes van Google TV voordat je een apparaatrapport verstuurt. Houd persoonlijke informatie, aanbiederhulp en de geregistreerde bestelling gescheiden.",
+      "seo_title": "Get IPTV-feedbackrapport: controleer ontvanger en optionele bijlagen",
+      "seo_description": "Lees de feedback- en diagnosekeuzes van Google TV voordat je een apparaatrapport verstuurt. Houd persoonlijke informatie, aanbiederhulp en de geregistreerde bestelling gescheiden.",
+      "sections": [
+        {
+          "heading": "Kies de juiste ontvanger",
+          "paragraphs": [
+            "Een feedbackrapport over Get IPTV begint bij het betreffende scherm en de organisatie die het kan onderzoeken. Noteer of het probleem gaat over Google TV-menu’s, één geïnstalleerde speler of een bestelling bij de aanbieder. Vermeld model, softwareversie en een korte beschrijving zonder privé-afspeeladressen of inloggegevens. Apparaatfeedback voor Google TV is iets anders dan een accountvraag aan de spelerontwikkelaar of de werkelijke verkoper van de dienst."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Bekijk diagnosebijlagen vóór verzending",
+          "paragraphs": [
+            "Google TV beschrijft optionele systeemlogboeken, schermafbeeldingen en een bugrapport. De handleiding waarschuwt dat je daarmee persoonlijke informatie over het apparaat of de app met Google deelt. Lees de keuzes en bekijk zichtbare bijlagen voordat de eigenaar beslist wat meegaat. Op een Google TV-apparaat met de beschreven bediening gebruikt de handleiding de Assistent- of microfoonknop en een gesproken verzoek om feedback te verzenden. Ontbreekt die route, noteer het model in plaats van een onofficieel rapportageprogramma te installeren."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV-feedbackhandleiding",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Houd feedback en abonnementbevestiging gescheiden",
+          "paragraphs": [
+            "Google vermeldt dat dit feedbackproces geen persoonlijk antwoord oplevert. Beschouw verzending niet als een opgeloste aanbiedersklacht of bevestigde activering. Controleer apart de werkelijke aanbieder Opplex of Filex, looptijd en geregistreerde bestel- en instelstatus. Spelerlicentiekosten staan apart; niet-vermelde Filex-verbindingslimieten vragen bevestiging. Betaal niet opnieuw, wis geen spelergegevens en stuur geen herhaalde rapporten alleen om een ontvangstbevestiging te krijgen."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "pt": {
+      "title": "Relatório Get IPTV: confira o destinatário e os anexos opcionais",
+      "excerpt": "Leia as opções de comentários e diagnóstico do Google TV antes de enviar um relatório. Separe informação pessoal, apoio do fornecedor e estado registado da encomenda.",
+      "seo_title": "Relatório Get IPTV: confira o destinatário e os anexos opcionais",
+      "seo_description": "Leia as opções de comentários e diagnóstico do Google TV antes de enviar um relatório. Separe informação pessoal, apoio do fornecedor e estado registado da encomenda.",
+      "sections": [
+        {
+          "heading": "Escolha o destinatário correto",
+          "paragraphs": [
+            "Um relatório relacionado com Get IPTV começa pelo ecrã afetado e pela organização que o pode investigar. Anote se o problema envolve menus do Google TV, um leitor instalado ou uma encomenda ao fornecedor. Registe modelo, versão e descrição breve sem endereços privados de reprodução ou credenciais. Os comentários sobre o dispositivo Google TV são diferentes de uma pergunta sobre a conta ao programador do leitor ou ao verdadeiro vendedor do serviço."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Reveja os anexos antes de enviar",
+          "paragraphs": [
+            "O guia do Google TV descreve registos do sistema, capturas de ecrã e relatório de erros opcionais. Avisa que a sua inclusão partilha com a Google informação pessoal sobre o dispositivo ou a aplicação. Leia as opções e reveja os anexos visíveis antes de o proprietário decidir o que incluir. Num dispositivo Google TV com os controlos documentados, o guia usa o botão do Assistente ou microfone e um pedido de voz para enviar comentários. Se esse caminho não existir, registe o modelo em vez de instalar uma ferramenta não oficial."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Guia de comentários do Google TV",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Separe os comentários da confirmação do plano",
+          "paragraphs": [
+            "A Google informa que este processo de comentários não fornece uma resposta individual. Não trate o envio como reclamação ao fornecedor resolvida ou ativação confirmada. Confira separadamente o fornecedor real Opplex ou Filex, a duração e o estado registado da encomenda e configuração. Os custos da licença do leitor são distintos; os limites de ligações Filex não indicados exigem confirmação. Não repita pagamentos, não apague dados do leitor nem envie relatórios repetidos apenas para procurar confirmação de receção."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ru": {
+      "title": "Отзыв о Get IPTV: проверьте получателя и необязательные вложения",
+      "excerpt": "Изучите параметры отзывов и диагностики Google TV перед отправкой отчёта. Отделяйте личные данные, поддержку поставщика и зарегистрированное состояние заказа.",
+      "seo_title": "Отзыв о Get IPTV: проверьте получателя и необязательные вложения",
+      "seo_description": "Изучите параметры отзывов и диагностики Google TV перед отправкой отчёта. Отделяйте личные данные, поддержку поставщика и зарегистрированное состояние заказа.",
+      "sections": [
+        {
+          "heading": "Выберите правильного получателя",
+          "paragraphs": [
+            "Отчёт, связанный с Get IPTV, начинается с проблемного экрана и организации, способной его исследовать. Укажите, затронуты ли меню Google TV, один установленный проигрыватель или заказ поставщику. Запишите модель, версию и краткое описание без приватных адресов воспроизведения и учётных данных. Отзыв об устройстве Google TV отличается от обращения по аккаунту к разработчику проигрывателя или фактическому продавцу услуги."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "Проверьте вложения до отправки",
+          "paragraphs": [
+            "Руководство Google TV описывает необязательные системные журналы, снимки экрана и отчёт об ошибке. Оно предупреждает, что их включение передаёт Google личную информацию об устройстве или приложении. Прочитайте варианты и проверьте видимые вложения до решения владельца о составе отчёта. На устройстве Google TV с указанными элементами управления руководство использует кнопку Ассистента или микрофона и голосовую просьбу отправить отзыв. Если такого пути нет, запишите модель вместо установки неофициального инструмента."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Руководство по отзывам Google TV",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "Разделяйте отзыв и подтверждение тарифа",
+          "paragraphs": [
+            "Google сообщает, что этот процесс отзывов не предусматривает индивидуального ответа. Не считайте отправку решённой претензией к поставщику или подтверждённой активацией. Отдельно проверьте фактического поставщика Opplex или Filex, срок и зарегистрированное состояние заказа и настройки. Стоимость лицензии проигрывателя отдельная; неуказанные ограничения подключений Filex требуют подтверждения. Не платите повторно, не стирайте данные проигрывателя и не отправляйте повторные отчёты только ради подтверждения получения."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ur": {
+      "title": "Get IPTV کی فیڈبیک رپورٹ: وصول کنندہ اور اختیاری منسلکات دیکھیں",
+      "excerpt": "آلے کی رپورٹ بھیجنے سے پہلے Google TV کی فیڈبیک اور تشخیصی معلومات کے اختیارات پڑھیں۔ نجی معلومات، فراہم کنندہ کی مدد اور درج شدہ آرڈر کی حالت الگ رکھیں۔",
+      "seo_title": "Get IPTV کی فیڈبیک رپورٹ: وصول کنندہ اور اختیاری منسلکات دیکھیں",
+      "seo_description": "آلے کی رپورٹ بھیجنے سے پہلے Google TV کی فیڈبیک اور تشخیصی معلومات کے اختیارات پڑھیں۔ نجی معلومات، فراہم کنندہ کی مدد اور درج شدہ آرڈر کی حالت الگ رکھیں۔",
+      "sections": [
+        {
+          "heading": "درست وصول کنندہ چنیں",
+          "paragraphs": [
+            "Get IPTV سے متعلق فیڈبیک رپورٹ کی ابتدا متاثرہ اسکرین اور اس ادارے سے ہوتی ہے جو جانچ سکتا ہو۔ نوٹ کریں کہ مسئلہ Google TV کے مینو، کسی ایک نصب پلیئر یا فراہم کنندہ کے آرڈر سے متعلق ہے۔ آلے کا ماڈل، سافٹ ویئر ورژن اور مختصر تفصیل لکھیں؛ نجی پلے بیک پتے یا لاگ اِن معلومات نہیں۔ Google TV کے آلے کی فیڈبیک، پلیئر ڈویلپر یا اصل سروس فروخت کنندہ سے اکاؤنٹ کے بارے میں پوچھنے سے الگ ہے۔"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "بھیجنے سے پہلے تشخیصی منسلکات دیکھیں",
+          "paragraphs": [
+            "Google TV کی رہنمائی نظامی لاگز، اسکرین شاٹس اور خرابی کی رپورٹ کو اختیاری منسلکات بتاتی ہے۔ وہ خبردار کرتی ہے کہ انہیں شامل کرنے سے آلے یا ایپ کی ذاتی معلومات Google کے ساتھ شیئر ہوتی ہیں۔ مالک کے فیصلہ کرنے سے پہلے دکھائی گئی ترجیحات اور نظر آنے والے منسلکات دیکھیں۔ متعلقہ کنٹرول رکھنے والے Google TV آلے پر رہنمائی اسسٹنٹ یا مائیکروفون بٹن اور فیڈبیک بھیجنے کی زبانی درخواست استعمال کرتی ہے۔ یہ راستہ نہ ملے تو غیر سرکاری رپورٹنگ پروگرام نصب کرنے کے بجائے ماڈل لکھیں۔"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV کی فیڈبیک رہنمائی",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "فیڈبیک اور پلان کی تصدیق الگ رکھیں",
+          "paragraphs": [
+            "Google بتاتا ہے کہ اس فیڈبیک طریقے میں انفرادی جواب نہیں دیا جاتا۔ رپورٹ بھیجنے کو فراہم کنندہ کی شکایت حل ہونے یا ایکٹیویشن کی تصدیق نہ سمجھیں۔ اصل Opplex یا Filex فراہم کنندہ، منتخب مدت اور درج شدہ آرڈر و سیٹ اپ کی حالت الگ دیکھیں۔ پلیئر لائسنس کی قیمت الگ ہے؛ Filex کی غیر درج شدہ کنکشن حد کی تصدیق چاہیے۔ صرف رسید یا جواب حاصل کرنے کے لیے نہ دوبارہ ادائیگی کریں، نہ پلیئر کا ڈیٹا مٹائیں، اور نہ بار بار رپورٹ بھیجیں۔"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "ar": {
+      "title": "تقرير Get IPTV: راجع الجهة المستلمة والمرفقات الاختيارية",
+      "excerpt": "اقرأ خيارات ملاحظات Google TV ومشاركة التشخيص قبل إرسال تقرير عن الجهاز. افصل المعلومات الشخصية ودعم المزوّد وحالة طلب Get IPTV المسجّلة.",
+      "seo_title": "تقرير Get IPTV: راجع الجهة المستلمة والمرفقات الاختيارية",
+      "seo_description": "اقرأ خيارات ملاحظات Google TV ومشاركة التشخيص قبل إرسال تقرير عن الجهاز. افصل المعلومات الشخصية ودعم المزوّد وحالة طلب Get IPTV المسجّلة.",
+      "sections": [
+        {
+          "heading": "اختر الجهة المستلمة الصحيحة",
+          "paragraphs": [
+            "يبدأ تقرير متعلق بـ Get IPTV بالشاشة المتأثرة والجهة القادرة على فحص المشكلة. دوّن هل تخص قوائم Google TV أم مشغّلاً واحداً مثبتاً أم طلباً لدى المزوّد. سجّل الطراز وإصدار البرنامج ووصفاً موجزاً دون عناوين تشغيل خاصة أو بيانات دخول. ملاحظات جهاز Google TV تختلف عن سؤال مطوّر المشغّل أو البائع الفعلي للخدمة عن الحساب."
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "راجع المرفقات التشخيصية قبل الإرسال",
+          "paragraphs": [
+            "تصف إرشادات Google TV سجلات النظام ولقطات الشاشة وتقرير الأخطاء كمرفقات اختيارية. وتحذّر من أن تضمينها يشارك معلومات شخصية عن الجهاز أو التطبيق مع Google. اقرأ الخيارات المعروضة وافحص المرفقات الظاهرة قبل أن يقرر المالك ما يضمّه. على جهاز Google TV الذي يوفر عناصر التحكم الموثّقة، تستخدم الإرشادات زر المساعد أو الميكروفون وطلباً صوتياً لإرسال ملاحظات. إذا غاب هذا المسار، سجّل الطراز بدلاً من تثبيت أداة إبلاغ غير رسمية."
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "إرشادات ملاحظات Google TV",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "افصل الملاحظات عن تأكيد الباقة",
+          "paragraphs": [
+            "تذكر Google أن عملية الملاحظات هذه لا توفر رداً فردياً. لا تعتبر الإرسال حلاً لشكوى المزوّد أو تأكيداً للتفعيل. افحص بشكل منفصل المزوّد الفعلي Opplex أو Filex والمدة المختارة وحالة الطلب والإعداد المسجّلة. تكاليف رخصة المشغّل منفصلة؛ حدود اتصالات Filex غير المذكورة تحتاج إلى تأكيد. لا تكرّر الدفع ولا تمسح بيانات المشغّل ولا ترسل تقارير متكررة لمجرد طلب إقرار بالاستلام."
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    },
+    "hi": {
+      "title": "Get IPTV फ़ीडबैक रिपोर्ट: प्राप्तकर्ता और वैकल्पिक संलग्नक जाँचें",
+      "excerpt": "डिवाइस रिपोर्ट भेजने से पहले Google TV के फ़ीडबैक और निदान साझा करने के विकल्प पढ़ें। निजी जानकारी, प्रदाता सहायता और दर्ज ऑर्डर की स्थिति अलग रखें।",
+      "seo_title": "Get IPTV फ़ीडबैक रिपोर्ट: प्राप्तकर्ता और वैकल्पिक संलग्नक जाँचें",
+      "seo_description": "डिवाइस रिपोर्ट भेजने से पहले Google TV के फ़ीडबैक और निदान साझा करने के विकल्प पढ़ें। निजी जानकारी, प्रदाता सहायता और दर्ज ऑर्डर की स्थिति अलग रखें।",
+      "sections": [
+        {
+          "heading": "सही प्राप्तकर्ता चुनें",
+          "paragraphs": [
+            "Get IPTV से जुड़ी फ़ीडबैक रिपोर्ट की शुरुआत प्रभावित स्क्रीन और जाँच कर सकने वाले संगठन से होती है। लिखें कि समस्या Google TV के मेनू, किसी एक स्थापित प्लेयर या प्रदाता के ऑर्डर से जुड़ी है। डिवाइस मॉडल, सॉफ़्टवेयर संस्करण और संक्षिप्त विवरण लिखें; निजी प्लेबैक पते या लॉगिन जानकारी नहीं। Google TV डिवाइस का फ़ीडबैक, प्लेयर डेवलपर या सेवा के वास्तविक विक्रेता से खाते के बारे में पूछने से अलग है।"
+          ],
+          "items": [],
+          "links": []
+        },
+        {
+          "heading": "भेजने से पहले निदान के संलग्नक देखें",
+          "paragraphs": [
+            "Google TV की गाइड सिस्टम लॉग, स्क्रीनशॉट और बग रिपोर्ट को वैकल्पिक संलग्नक बताती है। वह चेतावनी देती है कि इन्हें शामिल करने पर डिवाइस या ऐप की निजी जानकारी Google के साथ साझा होती है। मालिक के निर्णय से पहले दिखाई गई पसंद और दिखाई देने वाले संलग्नक जाँचें। दर्ज नियंत्रण देने वाले Google TV डिवाइस पर गाइड असिस्टेंट या माइक्रोफ़ोन बटन और फ़ीडबैक भेजने का बोलकर अनुरोध इस्तेमाल करती है। रास्ता न मिले तो अनधिकृत रिपोर्टिंग प्रोग्राम स्थापित करने के बजाय मॉडल लिखें।"
+          ],
+          "items": [],
+          "links": [
+            {
+              "label": "Google TV फ़ीडबैक मार्गदर्शन",
+              "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+            }
+          ]
+        },
+        {
+          "heading": "फ़ीडबैक और प्लान की पुष्टि अलग रखें",
+          "paragraphs": [
+            "Google बताता है कि इस फ़ीडबैक प्रक्रिया में व्यक्तिगत जवाब नहीं मिलता। रिपोर्ट भेजने को प्रदाता की शिकायत का समाधान या सक्रियण की पुष्टि न मानें। वास्तविक Opplex या Filex प्रदाता, चुनी अवधि और दर्ज ऑर्डर तथा सेटअप की स्थिति अलग जाँचें। प्लेयर लाइसेंस की लागत अलग है; Filex की अनकही कनेक्शन सीमा की पुष्टि चाहिए। केवल प्राप्ति की पुष्टि पाने के लिए न दोबारा भुगतान करें, न प्लेयर का डेटा मिटाएँ और न बार-बार रिपोर्ट भेजें।"
+          ],
+          "items": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Google TV feedback guidance",
+      "url": "https://support.google.com/googletv/answer/9654581?hl=en"
+    }
+  ]
+}
